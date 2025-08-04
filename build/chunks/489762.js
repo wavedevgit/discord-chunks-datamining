@@ -35,8 +35,8 @@ var r = n(255367),
   D = n(419922),
   L = n(1450),
   x = n(491173),
-  k = n(515005),
-  M = n(981631),
+  M = n(515005),
+  k = n(981631),
   j = n(957825),
   U = n(388032),
   G = n(230584),
@@ -140,7 +140,7 @@ let Y = (0, T.Mg)(s.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREAKPOINT_SMALL),
         } = e;
         if (null == s) return;
         let l = H(F({}, a.location), {
-          object: "" === o ? M.qAy.STICKER_PICKER_VIEW_ALL : M.qAy.STICKER_SEARCH_VIEW_ALL
+          object: "" === o ? k.qAy.STICKER_PICKER_VIEW_ALL : k.qAy.STICKER_SEARCH_VIEW_ALL
         });
         if (null != s && !(0, A.kl)(s, r, n)) {
           let e = (0, w.J8)(s);
@@ -150,7 +150,7 @@ let Y = (0, T.Mg)(s.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREAKPOINT_SMALL),
         if (i) return void((0, w.gM)(s.id) ? (0, N.hW)(s.id) : ((0, C.cQ)({
           sticker: s,
           location: H(F({}, l), {
-            object: M.qAy.STICKER
+            object: k.qAy.STICKER
           })
         }), (0, N.SA)(s.id)));
         t(e)
@@ -184,7 +184,7 @@ let Y = (0, T.Mg)(s.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREAKPOINT_SMALL),
       y._O.updateSetting(Array.from(e))
     }, []), Z = i.useCallback(e => {
       let t = m[e];
-      return null != t ? (0, r.jsx)(k.Z, {
+      return null != t ? (0, r.jsx)(M.Z, {
         getStickerItemProps: s,
         getStickerRowProps: c,
         gutterWidth: d,
@@ -209,7 +209,7 @@ let Y = (0, T.Mg)(s.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREAKPOINT_SMALL),
       let {
         isStickerPack: n = !0
       } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}, r = new Set(t), i = t.has(e);
-      i ? r.delete(e) : r.add(e), I.default.track(M.rMx.EXPRESSION_PICKER_CATEGORY_COLLAPSE_TOGGLED, {
+      i ? r.delete(e) : r.add(e), I.default.track(k.rMx.EXPRESSION_PICKER_CATEGORY_COLLAPSE_TOGGLED, {
         location: null == A ? void 0 : A.location,
         tab: j.X1.STICKER,
         collapsed: !i,
@@ -357,8 +357,8 @@ let Y = (0, T.Mg)(s.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREAKPOINT_SMALL),
     } = e, A = i.useRef(!1), N = i.useRef(null), [C, P] = h.ZN.useStore(e => [e.activeCategoryIndex, e.inspectedExpressionPosition], a.X), {
       analyticsLocations: w
     } = (0, f.ZP)(d.Z.STICKER_PICKER), D = (0, m.Iu)(e => e.searchQuery), L = (0, o.e7)([R.Z], () => R.Z.getPremiumPacks()), {
-      renderRow: k,
-      renderSection: M,
+      renderRow: M,
+      renderSection: k,
       renderSectionFooter: j,
       sectionFooterHeight: V,
       renderSectionHeader: F,
@@ -441,8 +441,8 @@ let Y = (0, T.Mg)(s.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREAKPOINT_SMALL),
           role: "none presentation",
           listPadding: null != l ? el : es,
           onScroll: H,
-          renderRow: k,
-          renderSection: null == l ? M : void 0,
+          renderRow: M,
+          renderSection: null == l ? k : void 0,
           renderSectionHeader: F,
           renderSectionFooter: j,
           rowCount: O,

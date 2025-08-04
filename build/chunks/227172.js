@@ -36,9 +36,9 @@ var r = n(255367),
   D = n(410441),
   L = n(797342),
   x = n(981631),
-  k = n(388032);
+  M = n(388032);
 
-function M(e, t, n) {
+function k(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -54,7 +54,7 @@ function j(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      M(e, t, n[t])
+      k(e, t, n[t])
     })
   }
   return e
@@ -75,7 +75,7 @@ let U = {
       entry: n,
       disableGameProfileLinks: E,
       onReaction: b,
-      onVoiceChannelPreview: M,
+      onVoiceChannelPreview: k,
       onUserPopoutClosed: G,
       trackRankingItemInteraction: B
     } = e, {
@@ -131,9 +131,9 @@ let U = {
         headerIcons: null == er ? null : (0, r.jsx)(D.Z, {
           onClick: ea,
           Icon: er,
-          "aria-label": k.intl.string(k.t.YR4cHB)
+          "aria-label": M.intl.string(M.t.YR4cHB)
         }),
-        userDescription: (0, T.kr)(n) ? k.t.vPg1JS : k.t.rPqqtr,
+        userDescription: (0, T.kr)(n) ? M.t.vPg1JS : M.t.rPqqtr,
         title: H,
         subtitle: Z,
         badges: eu,
@@ -146,7 +146,7 @@ let U = {
         title: n.extra.game_name,
         subtitle: Z,
         badges: eu,
-        userDescription: k.t["6oWFUF"],
+        userDescription: M.t["6oWFUF"],
         entry: n,
         stream: Q,
         onUserPopoutClosed: G,
@@ -175,7 +175,7 @@ let U = {
       children: [ed, (0, r.jsx)(w.St, {
         children: (0, r.jsx)(w.WT, {
           onReaction: b,
-          onVoiceChannelPreview: M,
+          onVoiceChannelPreview: k,
           user: F,
           channel: t,
           generateReactionImage: ec,

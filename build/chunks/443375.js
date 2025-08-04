@@ -35,8 +35,8 @@ var r = n(255367),
   D = n(64621),
   L = n(979038),
   x = n(448980),
-  k = n(336383),
-  M = n(194811),
+  M = n(336383),
+  k = n(194811),
   j = n(373826),
   U = n(668700),
   G = n(262210),
@@ -336,7 +336,7 @@ function q(e) {
           onShowToolbar: () => ec({
             action: "HOVER_ACTIVITY_CARD"
           }),
-          children: (0, r.jsxs)(k.Z, {
+          children: (0, r.jsxs)(M.Z, {
             ref: eu,
             className: o()($, {
               [W.hoisted]: eA
@@ -344,7 +344,7 @@ function q(e) {
             onAction: ec,
             onClose: ee,
             "aria-labelledby": ef ? "".concat(en, " ").concat(et) : et,
-            children: [(0, r.jsx)(M.Z, z({
+            children: [(0, r.jsx)(k.Z, z({
               textId: en
             }, ed)), (0, r.jsxs)("div", {
               className: W.body,

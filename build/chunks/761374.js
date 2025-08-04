@@ -24,8 +24,8 @@ var i = n(255367),
   E = n(804570),
   _ = n(350663),
   x = n(461393),
-  I = n(340101),
-  S = n(501787),
+  S = n(340101),
+  I = n(501787),
   j = n(388032),
   C = n(832985);
 
@@ -71,16 +71,16 @@ let Z = [],
   }),
   T = P(_.bt, _.fd);
 
-function k(e, t, n, i, r) {
+function A(e, t, n, i, r) {
   let {
     padding: o,
     sizeOffset: l
   } = r, a = Math.max(1, i), s = (a - 1) * o, c = t * a + s, u = n * a + s;
-  return e === I.C5.HORIZONTAL ? u = n : c = t, P(c + l, u + l)
+  return e === S.C5.HORIZONTAL ? u = n : c = t, P(c + l, u + l)
 }
 
-function A(e, t, n) {
-  return k(e, _.bt, _.fd, t, n)
+function k(e, t, n) {
+  return A(e, _.bt, _.fd, t, n)
 }
 let D = e => {
   let {
@@ -175,8 +175,8 @@ function L(e) {
     padding: U,
     borderWidth: V,
     opacity: W,
-    horizontal: G,
-    pinned: F,
+    horizontal: F,
+    pinned: G,
     anchorTop: B,
     anchorLeft: H,
     showEmpty: Y = !0
@@ -193,12 +193,12 @@ function L(e) {
   } = (0, c.ZP)(), et = (0, o.e7)([y.Z], () => {
     var e;
     let t = y.Z.getWidget(D);
-    return !!(0, I.ZL)(t) && !z && (null == (e = t.meta.showAllStreams) || e)
-  }, [D, z]), en = !G, ei = (0, o.e7)([g.Z], () => g.Z.getChannel(J)), er = (0, o.e7)([m.default], () => m.default.getId()), {
+    return !!(0, S.ZL)(t) && !z && (null == (e = t.meta.showAllStreams) || e)
+  }, [D, z]), en = !F, ei = (0, o.e7)([g.Z], () => g.Z.getChannel(J)), er = (0, o.e7)([m.default], () => m.default.getId()), {
     streamParticipants: eo,
     activeStreams: el,
     participantsVersion: ea
-  } = (x = B && en || H && G, P = !B && en || !H && G, (0, o.cj)([h.Z, d.Z], () => {
+  } = (x = B && en || H && F, P = !B && en || !H && F, (0, o.cj)([h.Z, d.Z], () => {
     if (null == J) return {
       streamParticipants: Z,
       participantsVersion: -1,
@@ -221,7 +221,7 @@ function L(e) {
       activeStreams: e,
       participantsVersion: d.Z.getParticipantsVersion(J)
     }
-  }, [J, er, et, x, P])), es = eo.length, ec = null == ei || 0 === el.size && z || 0 === es && !z, eu = G ? I.C5.HORIZONTAL : I.C5.VERTICAL, ed = {
+  }, [J, er, et, x, P])), es = eo.length, ec = null == ei || 0 === el.size && z || 0 === es && !z, eu = F ? S.C5.HORIZONTAL : S.C5.VERTICAL, ed = {
     containerWidth: q,
     containerHeight: $
   }, {
@@ -238,7 +238,7 @@ function L(e) {
       tileWidth: e ? l : i,
       tileHeight: e ? s : o
     }
-  }(z, ed, eu), eh = (0, o.e7)([f.Z], () => f.Z.getWindowState(S.$J)), em = {
+  }(z, ed, eu), eh = (0, o.e7)([f.Z], () => f.Z.getWindowState(I.$J)), em = {
     id: D,
     widget: L,
     layout: eu,
@@ -294,7 +294,7 @@ function L(e) {
       if (0 === l) return void R(N({
         widgetId: t,
         size: T,
-        minSize: A(a, 1, {
+        minSize: k(a, 1, {
           padding: s,
           sizeOffset: r
         }),
@@ -307,11 +307,11 @@ function L(e) {
       } = i;
       R(N({
         widgetId: t,
-        size: k(a, d, p, l, {
+        size: A(a, d, p, l, {
           padding: s,
           sizeOffset: r
         }),
-        minSize: A(a, l, {
+        minSize: k(a, l, {
           padding: s,
           sizeOffset: r
         }),
@@ -332,11 +332,11 @@ function L(e) {
         c = w(e, ["id", "sizeOffset", "containerSize", "padding", "participants", "widget"]);
       null != s && R(N({
         widgetId: t,
-        size: A(n, a, {
+        size: k(n, a, {
           padding: l,
           sizeOffset: i
         }),
-        minSize: A(n, a, {
+        minSize: k(n, a, {
           padding: l,
           sizeOffset: i
         }),
@@ -355,7 +355,7 @@ function L(e) {
       null != r && R(N({
         widgetId: t,
         size: T,
-        minSize: A(n, 0, {
+        minSize: k(n, 0, {
           padding: l,
           sizeOffset: i
         }),
@@ -368,7 +368,7 @@ function L(e) {
     streamParticipants: eo,
     layout: eu,
     widgetLayoutSpecs: em
-  }), (ec || !F) && z) ? null : ec && !z ? Y ? z ? null : (0, i.jsx)(E.E, {
+  }), (ec || !G) && z) ? null : ec && !z ? Y ? z ? null : (0, i.jsx)(E.E, {
     emptyText: j.intl.string(j.t["T6+rX1"]),
     icon: l.hGI,
     absolute: !0
@@ -387,7 +387,7 @@ function L(e) {
       activeStreams: el,
       streamParticipants: eo,
       participantsVersion: ea,
-      pinned: F,
+      pinned: G,
       padding: U,
       sizeOffset: Q
     })

@@ -36,8 +36,8 @@ var r = n(255367),
   D = n(811334),
   L = n(553797),
   x = n(346071),
-  k = n(927699),
-  M = n(987716),
+  M = n(927699),
+  k = n(987716),
   j = n(311821),
   U = n(459965),
   G = n(811616),
@@ -199,8 +199,8 @@ function ee(e) {
       excludeReverseTrial: !1,
       excludeReverseTrialFromCountdown: !0
     }),
-    ek = null != eA && V.nG[eA.trial_id].skus.includes(b),
-    eM = null != eC && J.some(e => null == eP ? void 0 : eP.includes(e)) && null != eC.discount,
+    eM = null != eA && V.nG[eA.trial_id].skus.includes(b),
+    ek = null != eC && J.some(e => null == eP ? void 0 : eP.includes(e)) && null != eC.discount,
     ej = (0, v.aS)(V.Xh.PREMIUM_MONTH_TIER_2, !1, e_, eL);
   i.useEffect(() => {
     ee && S.ZP.trackExposure({
@@ -219,7 +219,7 @@ function ee(e) {
   }, [eU, e_, J, eT, eD]), i.useEffect(() => {
     eI && null != eb && eb.length > 0 && ey(eb[0])
   }, [eb, ey, eI]);
-  let eG = !ev && (e_ || !ek && !eM) && eU && er,
+  let eG = !ev && (e_ || !eM && !ek) && eU && er,
     eB = (0, u.arW)(),
     {
       ref: eV
@@ -232,7 +232,7 @@ function ee(e) {
     eY = "HR" === eH && null != eZ && eZ.currency === Z.pK.EUR,
     eW = (0, v.Ap)(eL.paymentSourceId),
     eK = i.useMemo(() => (null == eN ? void 0 : eN.interval) === V.rV.DAY ? (null == eN ? void 0 : eN.interval_count) > 7 ? H.intl.string(H.t.Z1V2cn) : H.intl.string(H.t.MI1rHh) : H.intl.string(H.t["+S5lra"]), [eN]),
-    ez = !e_ && (eM || null != eN && ek && null != en),
+    ez = !e_ && (ek || null != eN && eM && null != en),
     eq = null == ei || null == (s = ei.find(e => e.subscriptionPlanId === V.Xh.PREMIUM_MONTH_TIER_2)) || null == (a = s.discounts) || null == (n = a.find(e => e.type === f.eW.SUBSCRIPTION_PLAN)) ? void 0 : n.amount,
     eX = (e, t, n) => {
       if (ev) return (0, r.jsx)(u.vwX, {
@@ -277,7 +277,7 @@ function ee(e) {
       })
     },
     eQ = () => {
-      if (eO === y.xr.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD && null != eg) return (0, r.jsx)(k.Z, {
+      if (eO === y.xr.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD && null != eg) return (0, r.jsx)(M.Z, {
         sectionTitle: H.intl.string(H.t.B3miEx),
         className: o()(W.customGiftMessageWrapper, {
           [W.compactCustomGiftMessageWrapper]: ea
@@ -297,10 +297,10 @@ function ee(e) {
     }),
     e$ = eE === V.Wt.DM_CHANNEL && eJ,
     e0 = e$ ? W.bodyColumnLeft : W.bodyColumnMiddle,
-    e1 = () => ev && null != eh ? e$ ? (0, r.jsx)(M.q, {
+    e1 = () => ev && null != eh ? e$ ? (0, r.jsx)(k.q, {
       className: Y.adjustedGiftMainAnimation,
       optionsContainerClassName: Y.adjustedGiftBoxOptionContainer
-    }) : (0, r.jsx)(M.q, {}) : null,
+    }) : (0, r.jsx)(k.q, {}) : null,
     e2 = () => (0, r.jsx)("div", X(z({
       ref: eV
     }, eF), {
@@ -311,12 +311,12 @@ function ee(e) {
         selected: (null == ew ? void 0 : ew.id) === e,
         priceOptions: eL,
         shouldShowUpdatedPaymentModal: ez,
-        isEligibleForDiscount: eM,
+        isEligibleForDiscount: ek,
         discountAmountOff: eq,
-        isEligibleForTrial: ek
+        isEligibleForTrial: eM
       }, e))
     })),
-    e3 = () => eX(eA, ek, eM),
+    e3 = () => eX(eA, eM, ek),
     e4 = () => eY ? (0, r.jsx)(d.Z, {
       message: H.intl.formatToPlainString(H.t["9hnZoK"], {
         kunaPriceWithCurrency: (0, I.T4)(7.5345 * eZ.amount, Z.pK.HRK)

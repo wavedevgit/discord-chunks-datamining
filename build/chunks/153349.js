@@ -122,7 +122,7 @@ let w = i.memo(function(e) {
       (0, p.jW)(e, async () => {
         let {
           default: e
-        } = await Promise.all([n.e("79695"), n.e("98783"), n.e("97589"), n.e("7717"), n.e("74800")]).then(n.bind(n, 757387));
+        } = await Promise.all([n.e("79695"), n.e("98783"), n.e("8982"), n.e("7717"), n.e("74800")]).then(n.bind(n, 757387));
         return t => (0, r.jsx)(e, A(N({}, t), {
           user: o.user,
           guildId: P,

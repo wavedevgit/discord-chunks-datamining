@@ -38,8 +38,8 @@ var i, a = n(392711),
   D = n(823379),
   L = n(358085),
   x = n(998502),
-  k = n(145597),
-  M = n(581567),
+  M = n(145597),
+  k = n(581567),
   j = n(981631),
   U = n(987650);
 
@@ -247,7 +247,7 @@ function ev() {
         orig_game_name: n.origGameName,
         game_id: null == r ? void 0 : r.id,
         distributor: n.distributor,
-        verified: (0, M.vp)(n.exePath, null != (t = null == r ? void 0 : r.executables) ? t : []),
+        verified: (0, k.vp)(n.exePath, null != (t = null == r ? void 0 : r.executables) ? t : []),
         game_platform: j.M7m.DESKTOP,
         is_launcher: n.isLauncher,
         detection_method: "process_observer",
@@ -322,7 +322,7 @@ function eA(e) {
       overlayMethod: y.gl.Disabled
     }
   }
-  let a = (0, O.NW)("getRawOverlayGameStatus") && (0, k.supportsOutOfProcess)() && !t,
+  let a = (0, O.NW)("getRawOverlayGameStatus") && (0, M.supportsOutOfProcess)() && !t,
     o = eS(null != i ? i : e),
     s = b.v.legacyEnabled,
     l = a && !o,
@@ -431,7 +431,7 @@ function ex() {
   }
 }
 
-function ek(e) {
+function eM(e) {
   null != e && 0 !== e.length && (e.forEach(e => {
     if (ei.gamesSeen.some(t => {
         if (t.name === e.name) {
@@ -448,10 +448,10 @@ function ek(e) {
       if (e.hidden) return;
       ei.gamesSeen.unshift(eE(e))
     }
-  }), ei.gamesSeen.sort((e, t) => t.lastFocused - e.lastFocused), eP(), w.Z.setRecentGames(eM().map(e => ew(e, e3, A.Z, N.Z))))
+  }), ei.gamesSeen.sort((e, t) => t.lastFocused - e.lastFocused), eP(), w.Z.setRecentGames(ek().map(e => ew(e, e3, A.Z, N.Z))))
 }
 
-function eM() {
+function ek() {
   let e = o().values(ei.gameOverrides);
   return ei.gamesSeen.filter(e => void 0 === ei.gameOverrides[eI(e)]).concat(e)
 }
@@ -469,11 +469,11 @@ function ej(e, t) {
 }
 
 function eU() {
-  ee = ($ = $.map(e => e.distributor === j.GQo.ROBLOX ? (0, T.ON)(e, S.Z.getCurrentSubgameInfo()) : e)).length > 0 ? $[0] : null, ek($)
+  ee = ($ = $.map(e => e.distributor === j.GQo.ROBLOX ? (0, T.ON)(e, S.Z.getCurrentSubgameInfo()) : e)).length > 0 ? $[0] : null, eM($)
 }
 
 function eG(e) {
-  ek($)
+  eM($)
 }
 
 function eB(e) {
@@ -512,7 +512,7 @@ function eY(e) {
   } else t = eI(r), r.hidden && (er[t] = !0), r.hidden = !1;
   (null == r.lastFocused || 0 === r.lastFocused) && (r.lastFocused = Math.floor(Date.now() / 1e3)), ei.gameOverrides[t] = F(B({}, r), {
     add: !0
-  }), ek($), ex(), eP(), ev()
+  }), eM($), ex(), eP(), ev()
 }
 
 function eW() {
@@ -599,13 +599,13 @@ function e0(e) {
 }
 
 function e1() {
-  m.Z.hasLoadedExperiments && W.length > 0 && (ek(W), W = [])
+  m.Z.hasLoadedExperiments && W.length > 0 && (eM(W), W = [])
 }!__OVERLAY__ && ((0, L.isDesktop)() || U.iP) && (ea = function() {
   let e = [],
     t = new Set;
   r = {};
   let n = A.Z.games,
-    i = (0, O.NW)("handleGamesDatabaseUpdate") && (0, k.supportsOutOfProcess)();
+    i = (0, O.NW)("handleGamesDatabaseUpdate") && (0, M.supportsOutOfProcess)();
   for (let e of n) {
     var a, o, s, l;
     let t = eS(e),
@@ -714,7 +714,7 @@ class e2 extends(i = c.ZP.Store) {
   }
   getGamesSeen(e) {
     let t = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1],
-      n = eM();
+      n = ek();
     if (e) {
       let e = this.getVisibleGame();
       if (null != e) {

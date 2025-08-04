@@ -320,7 +320,7 @@ class m extends a.Z {
                 preemptiveExpanded: t.opPreemptiveExpand,
                 cng: t.opCNG
               },
-              k = {
+              M = {
                 passthroughCount: null != (l = t.passthroughCount) ? l : 0,
                 decryptSuccessCount: null != (c = t.decryptSuccessCount) ? c : 0,
                 decryptFailureCount: null != (u = t.decryptFailureCount) ? u : 0,
@@ -335,7 +335,7 @@ class m extends a.Z {
                 a = N - e.packetsLost,
                 o = 0,
                 s = e.mosBuckets,
-                l = null != (m = e.decryptFailureBeforeSuccessCount) ? m : k.decryptSuccessCount > 0 ? k.decryptFailureCount : void 0;
+                l = null != (m = e.decryptFailureBeforeSuccessCount) ? m : M.decryptSuccessCount > 0 ? M.decryptFailureCount : void 0;
               r > 0 && a >= 0 && (o = this.calculateMos(S + D, i().clamp(a / (r + a), 0, 1)), s[Math.floor(o)]++), this.inboundStats[n] = d({
                 packetsReceived: A,
                 bytesReceived: C,
@@ -350,7 +350,7 @@ class m extends a.Z {
                 bufferStats: L,
                 frameOpStats: x,
                 decryptFailureBeforeSuccessCount: l
-              }, k), this.periodicInboundStats[n] = {
+              }, M), this.periodicInboundStats[n] = {
                 previousTimestampMs: this.periodicInboundStats[n].previousTimestampMs,
                 previous: this.periodicInboundStats[n].previous,
                 currentTimestampMs: performance.now(),
@@ -374,7 +374,7 @@ class m extends a.Z {
               mosBuckets: [0, 0, 0, 0, 0],
               bufferStats: L,
               frameOpStats: x
-            }, k), this.periodicInboundStats[n] = {
+            }, M), this.periodicInboundStats[n] = {
               previousTimestampMs: performance.now(),
               previous: x,
               currentTimestampMs: performance.now(),

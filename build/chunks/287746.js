@@ -112,8 +112,8 @@ var r = n(255367),
   e2 = n(1397),
   e3 = n(641861),
   e7 = n(981631),
-  e5 = n(959517),
-  e8 = n(388032),
+  e8 = n(959517),
+  e5 = n(388032),
   e6 = n(100658),
   e4 = n(672);
 
@@ -540,7 +540,7 @@ class ta extends i.PureComponent {
           confettiPotionEmoji: i,
           scheduledTimestamp: null == (a = this.props.pendingScheduledMessage) ? void 0 : a.scheduledTimestamp
         });
-        if (j.location = e5.dy.CHAT_INPUT, null != c && (j.announcementSendOptions = c), null != s && (j.flags = (0, eG.pj)(null != (_ = j.flags) ? _ : 0, e7.iLy.IS_COMPONENTS_V2)), o) return f.Z.sendMessage(d.id, v, void 0, j), (0, ey.A6)(d.id), {
+        if (j.location = e8.dy.CHAT_INPUT, null != c && (j.announcementSendOptions = c), null != s && (j.flags = (0, eG.pj)(null != (_ = j.flags) ? _ : 0, e7.iLy.IS_COMPONENTS_V2)), o) return f.Z.sendMessage(d.id, v, void 0, j), (0, ey.A6)(d.id), {
           shouldClear: !1,
           shouldRefocus: !0
         };
@@ -667,7 +667,7 @@ class to extends i.PureComponent {
         textAreaHighlighted: L
       } = this.state,
       B = d === U.Ie.SIDEBAR;
-    n = B && i.type === e7.d4z.GUILD_VOICE ? e8.t.pnnyFR : B && i.type === e7.d4z.GUILD_STAGE_VOICE ? e8.t.YInSkp : u.T.THREADS.has(i.type) ? e8.t["OkzL+f"] : e8.t.UbNmGR;
+    n = B && i.type === e7.d4z.GUILD_VOICE ? e5.t.pnnyFR : B && i.type === e7.d4z.GUILD_STAGE_VOICE ? e5.t.YInSkp : u.T.THREADS.has(i.type) ? e5.t["OkzL+f"] : e5.t.UbNmGR;
     let F = (0, r.jsx)("div", {
         className: e6.channelBottomBarArea,
         children: (0, r.jsx)(e0.Z, {})
@@ -746,7 +746,7 @@ class to extends i.PureComponent {
                 [J.e3]: Y ? null == N ? void 0 : N.isViewable : void 0,
                 [null != (e = (0, p.QeD)(T)) ? e : ""]: Y ? null == N ? void 0 : N.isViewable : void 0
               }),
-              "aria-label": e8.intl.formatToPlainString(n, {
+              "aria-label": e5.intl.formatToPlainString(n, {
                 channelName: i.name
               }),
               onMouseDown: this.handleChatInteract,
@@ -765,7 +765,7 @@ class to extends i.PureComponent {
               }), (0, r.jsxs)(p.y5t, {
                 component: (0, r.jsx)(p.nn4, {
                   children: (0, r.jsx)(p.H, {
-                    children: e8.intl.format(e8.t.eTzKk5, {
+                    children: e5.intl.format(e5.t.eTzKk5, {
                       channelName: i.name
                     })
                   })

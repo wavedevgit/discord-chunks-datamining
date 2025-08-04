@@ -8,7 +8,7 @@ n.d(t, {
   JQ: () => A,
   NE: () => b,
   RG: () => L,
-  Xb: () => M,
+  Xb: () => k,
   Xu: () => O,
   Y: () => G,
   cD: () => v,
@@ -119,7 +119,7 @@ function R(e, t, n) {
 
 function P(e) {
   let t = (0, o.e7)([p.Z], () => C(e, p.Z)),
-    n = M(e);
+    n = k(e);
   return R(e, t, n)
 }
 
@@ -145,18 +145,18 @@ function x(e) {
   return e.isArchivedLockedThread() && !t
 }
 
-function k(e, t) {
+function M(e, t) {
   return null != e && t.can(g.Plq.MANAGE_THREADS, e)
 }
 
-function M(e) {
+function k(e) {
   return (0, o.e7)([p.Z], () => j(e, [p.Z]))
 }
 
 function j(e) {
   let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : [p.Z],
     [n] = t;
-  return k(e, n)
+  return M(e, n)
 }
 
 function U(e) {
@@ -183,6 +183,6 @@ function G(e) {
 }
 
 function B(e) {
-  let t = M(e);
+  let t = k(e);
   return e.isLockedThread() && !t
 }

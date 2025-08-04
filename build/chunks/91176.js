@@ -1,21 +1,21 @@
-/** Chunk was on 97589 **/
-n.d(t, {
-  Z: () => a
+/** Chunk was on 76233 **/
+e.d(n, {
+  Z: () => s
 });
-var l = n(913527),
-  i = n.n(l),
-  r = n(749210);
-let a = {
-  async setCommunicationDisabledDuration(e, t, n, l, a, o) {
-    let u = null != n ? i()().add(n, "s").toISOString() : null;
-    await r.Z.setCommunicationDisabledUntil({
-      guildId: e,
-      userId: t,
-      communicationDisabledUntilTimestamp: u,
-      duration: n,
+var l = e(913527),
+  i = e.n(l),
+  a = e(749210);
+let s = {
+  async setCommunicationDisabledDuration(t, n, e, l, s, r) {
+    let o = null != e ? i()().add(e, "s").toISOString() : null;
+    await a.Z.setCommunicationDisabledUntil({
+      guildId: t,
+      userId: n,
+      communicationDisabledUntilTimestamp: o,
+      duration: e,
       reason: l,
-      location: a,
-      moderatorReportId: o
+      location: s,
+      moderatorReportId: r
     })
   }
 }

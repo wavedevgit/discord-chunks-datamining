@@ -35,8 +35,8 @@ var r = n(255367),
   D = n(489762),
   L = n(31543),
   x = n(15350),
-  k = n(151189),
-  M = n(611480),
+  M = n(151189),
+  k = n(611480),
   j = n(981631),
   U = n(655304);
 
@@ -182,7 +182,7 @@ let Z = (0, v.Mg)(c.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREAKPOINT_SMALL),
         onGridItemSelect: eC,
         store: p.ZN,
         setInspectedStickerPosition: p.ZN.setInspectedExpressionPosition,
-        gridNavigatorId: M.Vr
+        gridNavigatorId: k.Vr
       });
     i.useEffect(() => p.ZN.resetStoreState, []);
     let ex = () => {
@@ -211,7 +211,7 @@ let Z = (0, v.Mg)(c.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREAKPOINT_SMALL),
       var e;
       null == (e = er.current) || e.focus()
     }, []);
-    let ek = i.useCallback(() => {
+    let eM = i.useCallback(() => {
       G(), O.default.track(j.rMx.PREMIUM_PROMOTION_OPENED, {
         location_section: j.jXE.STICKER_PICKER_UPSELL
       }), (0, g.z)()
@@ -233,7 +233,7 @@ let Z = (0, v.Mg)(c.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREAKPOINT_SMALL),
         children: [(0, r.jsx)("div", F(B({
           ref: X,
           className: U.listWrapper,
-          id: M.Vr
+          id: k.Vr
         }, ew), {
           children: null != eu ? (0, r.jsx)(D.Z, {
             ref: ee,
@@ -255,15 +255,15 @@ let Z = (0, v.Mg)(c.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREAKPOINT_SMALL),
           stickersListRef: ee,
           channel: c
         })]
-      }), ei && (0, r.jsx)(k.C, {
-        onLearnMore: ek
+      }), ei && (0, r.jsx)(M.C, {
+        onLearnMore: eM
       })]
     })
   }),
   ei = (e, t) => ((0, A.fP)(), (0, r.jsx)("div", {
     className: U.wrapper,
-    id: M.nZ,
-    "aria-labelledby": M.ED,
+    id: k.nZ,
+    "aria-labelledby": k.ED,
     role: "tabpanel",
     children: e.isLoading ? (0, r.jsx)(u.$jN, {
       className: U.loadingIndicator

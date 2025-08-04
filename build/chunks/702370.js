@@ -673,7 +673,7 @@ let eN = e => {
     let {
       pdpBackground: I,
       logo: T
-    } = (0, eP.OR)(o, i);
+    } = (0, eP.OR)(o);
     a.useEffect(() => {
       null != b && (0, N.Z)(b.id, b.getAvatarURL(void 0, 80))
     }, [b]);

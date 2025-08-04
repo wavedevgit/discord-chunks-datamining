@@ -44,8 +44,8 @@ let A = {
       showPlaceholderUser: D,
       pendingGlobalName: L,
       nameplatePreviewSize: x = "default",
-      isPurchased: k = !1
-    } = e, M = (0, s.e7)([E.Z], () => (0, l.wj)(E.Z.theme)), j = null != a ? (0, O.EU)(a) : N, U = (0, s.e7)([y.Z], () => null != t ? y.Z.getStatus(t.id) : c.Skl.ONLINE), G = M ? "#706F74" : "#aaaab2", B = i.useRef(null), V = (0, s.e7)([b.ZP], () => null != n && null != t ? b.ZP.getMember(n, t.id) : null), F = null != t ? (0, g.Ly)({
+      isPurchased: M = !1
+    } = e, k = (0, s.e7)([E.Z], () => (0, l.wj)(E.Z.theme)), j = null != a ? (0, O.EU)(a) : N, U = (0, s.e7)([y.Z], () => null != t ? y.Z.getStatus(t.id) : c.Skl.ONLINE), G = k ? "#706F74" : "#aaaab2", B = i.useRef(null), V = (0, s.e7)([b.ZP], () => null != n && null != t ? b.ZP.getMember(n, t.id) : null), F = null != t ? (0, g.Ly)({
       pendingNickname: void 0,
       pendingGlobalName: L,
       user: t,
@@ -55,12 +55,12 @@ let A = {
       role: "img",
       "aria-label": v.intl.string(v.t.SZeUdX),
       style: {
-        color: M ? "white" : "black",
+        color: k ? "white" : "black",
         width: "100%"
       },
       children: (0, r.jsxs)(c.Rny, {
         className: o()(C, I.nameplatePreview, {
-          [I.nameplatePurchased]: k && !P,
+          [I.nameplatePurchased]: M && !P,
           [I.large]: "large" === x,
           [I.xlarge]: "xlarge" === x
         }),
@@ -97,7 +97,7 @@ let A = {
           }) : null, (0, r.jsxs)("div", {
             className: o()(I.avatarContainer, D && I.avatarVisible),
             children: [(0, r.jsx)(c.qEK, {
-              src: M ? T : S,
+              src: k ? T : S,
               size: Z,
               "aria-hidden": !0,
               status: c.Skl.ONLINE,

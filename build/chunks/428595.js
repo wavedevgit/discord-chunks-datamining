@@ -44,7 +44,7 @@ function x(e, t, n) {
   }) : e[t] = n, e
 }
 
-function k(e) {
+function M(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -57,7 +57,7 @@ function k(e) {
   return e
 }
 
-function M(e, t) {
+function k(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -69,7 +69,7 @@ function M(e, t) {
 }
 
 function j(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : M(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : k(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -107,10 +107,10 @@ let H = e => {
   W = {
     newline: o().defaultRules.newline,
     paragraph: o().defaultRules.paragraph,
-    escape: j(k({}, o().defaultRules.escape), {
+    escape: j(M({}, o().defaultRules.escape), {
       match: (e, t, n) => !1 === t.allowEscape ? null : o().defaultRules.escape.match(e, t, n)
     }),
-    blockQuote: j(k({}, o().defaultRules.blockQuote), {
+    blockQuote: j(M({}, o().defaultRules.blockQuote), {
       requiredFirstCharacters: [" ", ">"],
       match(e, t) {
         let {
@@ -142,14 +142,14 @@ let H = e => {
       }
     }),
     link: v.ZP,
-    autolink: j(k({}, o().defaultRules.autolink), {
+    autolink: j(M({}, o().defaultRules.autolink), {
       parse: Z
     }),
-    mailto: j(k({}, o().defaultRules.mailto), {
+    mailto: j(M({}, o().defaultRules.mailto), {
       match: o().inlineRegex(/^<([^\s<>@]+@[^\s<>@]+\.[^\s<>@]+)>/),
       requiredFirstCharacters: ["<"]
     }),
-    tel: j(k({}, o().defaultRules.mailto), {
+    tel: j(M({}, o().defaultRules.mailto), {
       requiredFirstCharacters: ["<"],
       match: o().inlineRegex(/^<((?:(?:tel|sms):\+?|\+)(?:(?:[0-9]|\([0-9]+\)))(?:[- .\/]?(?:[0-9]|\([0-9]+\)))+)>/),
       parse(e) {
@@ -165,7 +165,7 @@ let H = e => {
         }
       }
     }),
-    url: j(k({}, o().defaultRules.url), {
+    url: j(M({}, o().defaultRules.url), {
       requiredFirstCharacters: ["h", "s"],
       match(e, t) {
         if (!t.inline) return null;
@@ -192,10 +192,10 @@ let H = e => {
     u: o().defaultRules.u,
     br: o().defaultRules.br,
     text: A.ZP,
-    inlineCode: j(k({}, o().defaultRules.inlineCode), {
+    inlineCode: j(M({}, o().defaultRules.inlineCode), {
       parse(e, t, n) {
         let r = o().defaultRules.inlineCode.parse(e, t, n);
-        return !0 === n.parseInlineCodeChildContent ? j(k({}, r), {
+        return !0 === n.parseInlineCodeChildContent ? j(M({}, r), {
           validationChildContent: t(r.content, n)
         }) : r
       }
@@ -488,7 +488,7 @@ let er = 10,
       parse(e, t, n) {
         var r;
         let i = null != (r = n.parseDepth) ? r : 0,
-          a = j(k({}, n), {
+          a = j(M({}, n), {
             parseDepth: i + 1
           }),
           o = t(e[2], a),

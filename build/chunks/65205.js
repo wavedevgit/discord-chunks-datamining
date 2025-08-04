@@ -1,4 +1,4 @@
-/** Chunk was on 69866 **/
+/** Chunk was on 82096 **/
 function r(e, t, n) {
   return (n.y - e.y) * (t.x - e.x) > (t.y - e.y) * (n.x - e.x)
 }
@@ -15,7 +15,7 @@ function i(e, t, n) {
   }
 }
 
-function o(e, t, n) {
+function s(e, t, n) {
   let r = {
       x: n.x,
       y: n.y
@@ -24,17 +24,17 @@ function o(e, t, n) {
       x: n.x + n.width,
       y: n.y
     },
-    o = {
+    s = {
       x: n.x,
       y: n.y + n.height
     },
-    s = {
+    a = {
       x: n.x + n.width,
       y: n.y + n.height
     };
-  return l(e, t, r, i) || l(e, t, i, s) || l(e, t, s, o) || l(e, t, o, r)
+  return l(e, t, r, i) || l(e, t, i, a) || l(e, t, a, s) || l(e, t, s, r)
 }
 n.d(t, {
-  Vr: () => o,
+  Vr: () => s,
   ld: () => i
 })

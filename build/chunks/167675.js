@@ -1,29 +1,29 @@
-/** Chunk was on 80125 **/
+/** Chunk was on 94470 **/
 n.d(t, {
   Z: () => f
 }), n(388685);
 var r = n(255367);
 n(73800);
-var i = n(442837),
-  o = n(481060),
-  l = n(740492),
-  c = n(27584),
+var l = n(442837),
+  i = n(481060),
+  o = n(740492),
+  u = n(27584),
   a = n(295510),
-  u = n(394059),
-  s = n(65154),
-  d = n(388032);
+  c = n(394059),
+  d = n(65154),
+  s = n(388032);
 
 function f(e) {
-  let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : s.Yn.DEFAULT,
-    [n, f, b] = (0, c.Z)(e, t),
-    g = (0, i.e7)([l.ZP], () => l.ZP.disableHideSelfStreamAndVideoConfirmationAlert);
-  return n ? (0, r.jsx)(o.S89, {
+  let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : d.Yn.DEFAULT,
+    [n, f, b] = (0, u.Z)(e, t),
+    g = (0, l.e7)([o.ZP], () => o.ZP.disableHideSelfStreamAndVideoConfirmationAlert);
+  return n ? (0, r.jsx)(i.S89, {
     id: "self-video-hide",
-    label: d.intl.string(d.t.MH8ESU),
+    label: s.intl.string(s.t.MH8ESU),
     checked: !f,
     action: () => {
       if (g || f) return b(!f);
-      (0, o.h7j)(e => {
+      (0, i.h7j)(e => {
         var t, n;
         return (0, r.jsx)(a.Z, (t = function(e) {
           for (var t = 1; t < arguments.length; t++) {
@@ -43,7 +43,7 @@ function f(e) {
           }
           return e
         }({}, e), n = n = {
-          type: u.K.VIDEO,
+          type: c.K.VIDEO,
           onConfirm: () => b(!f)
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
           var n = Object.keys(e);

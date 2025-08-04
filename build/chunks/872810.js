@@ -4,9 +4,9 @@ n.d(t, {
   L6: () => V,
   Rc: () => G,
   WH: () => R,
-  aP: () => M,
+  aP: () => k,
   dV: () => B,
-  g: () => k,
+  g: () => M,
   iV: () => x,
   n9: () => j,
   pR: () => L,
@@ -128,17 +128,17 @@ function x(e, t) {
   i && a === r || (0, u.Z)(e)
 }
 
-function k(e) {
+function M(e) {
   let t = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1],
     n = !(arguments.length > 2) || void 0 === arguments[2] || arguments[2];
-  n && M(e, t), s.Z.dispatch({
+  n && k(e, t), s.Z.dispatch({
     type: "STREAM_STOP",
     streamKey: e,
     appContext: __OVERLAY__ ? T.IlC.OVERLAY : T.IlC.APP
   })
 }
 
-function M(e) {
+function k(e) {
   let t = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1];
   s.Z.dispatch({
     type: "STREAM_CLOSE",
@@ -214,5 +214,5 @@ function B(e, t) {
 function V() {
   let e = !(arguments.length > 0) || void 0 === arguments[0] || arguments[0],
     t = _.Z.getCurrentUserActiveStream();
-  null != t && k((0, c.V9)(t), e)
+  null != t && M((0, c.V9)(t), e)
 }

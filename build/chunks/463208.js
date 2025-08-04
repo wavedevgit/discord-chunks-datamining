@@ -113,11 +113,11 @@ function b(e) {
     defaultDirty: S
   }), {
     setShouldValidate: x
-  } = L, k = e => {
+  } = L, M = e => {
     var t, n;
     let r = e.currentTarget.value;
     null == (t = w.onChange) || t.call(w, r, p), x(!0), null == (n = D.setHasValue) || n.call(D, "" !== r)
-  }, M = e => {
+  }, k = e => {
     var t, n;
     null == (t = w.onFocus) || t.call(w, e), null == (n = D.setIsFocused) || n.call(D, !0)
   }, j = e => {
@@ -148,9 +148,9 @@ function b(e) {
         defaultValue: v
       }, w), {
         "aria-labelledby": null != (t = w["aria-labelledby"]) ? t : D.titleId,
-        onChange: k,
+        onChange: M,
         onBlur: j,
-        onFocus: M,
+        onFocus: k,
         ref: l
       }))
     })), N]

@@ -7,7 +7,7 @@ n.d(t, {
   CW: () => eD,
   Cr: () => eh,
   DC: () => eo,
-  Ex: () => eM,
+  Ex: () => ek,
   Fg: () => $,
   G6: () => ef,
   H1: () => x,
@@ -33,7 +33,7 @@ n.d(t, {
   UP: () => eu,
   Wp: () => eR,
   Xc: () => V,
-  Xk: () => k,
+  Xk: () => M,
   Xr: () => ed,
   YC: () => eK,
   YT: () => S,
@@ -68,8 +68,8 @@ n.d(t, {
   l4: () => eY,
   mX: () => K,
   nc: () => eO,
-  no: () => ek,
-  qF: () => M,
+  no: () => eM,
+  qF: () => k,
   rN: () => ev,
   tU: () => eg,
   uL: () => G,
@@ -169,13 +169,13 @@ let S = (0, d.Zc)("notifications", "gameActivityNotifications", e => null != e ?
   }, e => o.D5.create({
     value: e
   })),
-  k = (0, d.Zc)("textAndImages", "showCommandSuggestions", e => {
+  M = (0, d.Zc)("textAndImages", "showCommandSuggestions", e => {
     var t;
     return null == (t = null == e ? void 0 : e.value) || t
   }, e => o.D5.create({
     value: e
   })),
-  M = (0, d.Zc)("voiceAndVideo", "alwaysPreviewVideo", e => {
+  k = (0, d.Zc)("voiceAndVideo", "alwaysPreviewVideo", e => {
     var t;
     return null != (t = null == e ? void 0 : e.value) && t
   }, e => o.D5.create({
@@ -476,14 +476,14 @@ let eS = (0, d.KM)((0, d.Zc)("appearance", "developerMode", e => null != e && e,
   ineligibleDefault: a.E5.OFF,
   eligibleDefault: () => a.E5.ON_FOR_LARGE_GUILDS
 });
-let ek = (0, d.TG)({
+let eM = (0, d.TG)({
     baseSetting: (0, d.Zc)("privacy", "defaultGuildsActivityRestrictedV2", e => e, e => null != e ? e : a.GI.ACTIVITY_STATUS_OFF),
     isEligible: () => (0, c.o0)("user_settings"),
     useIsEligible: () => (0, c.Yd)("user_settings"),
     ineligibleDefault: a.GI.ACTIVITY_STATUS_OFF,
     eligibleDefault: () => a.GI.ACTIVITY_STATUS_ON_FOR_LARGE_GUILDS
   }),
-  eM = (0, d.Zc)("privacy", "familyCenterEnabledV2", e => null == e ? void 0 : e.value, e => o.D5.create({
+  ek = (0, d.Zc)("privacy", "familyCenterEnabledV2", e => null == e ? void 0 : e.value, e => o.D5.create({
     value: e
   })),
   ej = (0, d.Zc)("privacy", "hideLegacyUsername", e => {

@@ -1,6 +1,6 @@
-/** Chunk was on 72374 **/
+/** Chunk was on 94470 **/
 n.d(t, {
-  Z: () => v
+  Z: () => O
 });
 var r = n(255367),
   l = n(73800),
@@ -12,39 +12,39 @@ var r = n(255367),
   d = n(667204),
   s = n(826298),
   f = n(276022),
-  g = n(978983),
-  _ = n(430824),
-  b = n(594174),
-  p = n(981631),
+  b = n(978983),
+  g = n(430824),
+  p = n(594174),
+  _ = n(981631),
   E = n(689079),
   h = n(388032),
   y = n(547607);
-let v = e => {
+let O = e => {
   let t, {
       commandType: n,
       commandTargetId: i,
-      channel: v,
-      guildId: O,
-      onHeightUpdate: m,
+      channel: O,
+      guildId: m,
+      onHeightUpdate: v,
       context: A
     } = e,
-    T = (0, u.e7)([_.Z], () => _.Z.getGuild(null != O ? O : v.guild_id)),
-    S = (0, u.e7)([b.default], () => b.default.getUser(i)),
+    S = (0, u.e7)([g.Z], () => g.Z.getGuild(null != m ? m : O.guild_id)),
+    T = (0, u.e7)([p.default], () => p.default.getUser(i)),
     P = (0, f.Z)({
-      user: S,
-      guildId: null == T ? void 0 : T.id,
+      user: T,
+      guildId: null == S ? void 0 : S.id,
       context: A
     }),
-    I = l.useMemo(() => ({
-      channel: v,
+    j = l.useMemo(() => ({
+      channel: O,
       type: "channel"
-    }), [v]),
+    }), [O]),
     {
-      commands: Z,
-      sectionDescriptors: M,
-      loading: j
+      commands: I,
+      sectionDescriptors: Z,
+      loading: M
     } = c.wi({
-      context: I,
+      context: j,
       filters: {
         commandTypes: [n]
       },
@@ -57,25 +57,25 @@ let v = e => {
       sections: C
     } = l.useMemo(() => {
       let e = {};
-      return M.forEach(t => {
+      return Z.forEach(t => {
         e[t.id] = t
       }), {
         sections: e
       }
-    }, [M]),
-    D = l.useRef(j);
+    }, [Z]),
+    D = l.useRef(M);
   l.useEffect(() => {
-    j !== D.current && (D.current = j, null == m || m())
-  }, [j, m]);
-  let N = l.useCallback(e => {
-    o()(null != v, "menu item should not show if channel is null");
+    M !== D.current && (D.current = M, null == v || v())
+  }, [M, v]);
+  let w = l.useCallback(e => {
+    o()(null != O, "menu item should not show if channel is null");
     let t = C[e.applicationId],
       n = null != t ? (0, s.ky)(t) : void 0;
     return (0, r.jsx)(a.sNh, {
       id: e.id,
       label: e.displayName,
       iconLeft: () => null != n ? (0, r.jsx)(n, {
-        channel: v,
+        channel: O,
         section: t,
         width: 18,
         height: 18,
@@ -86,25 +86,25 @@ let v = e => {
           command: e,
           optionValues: {},
           context: {
-            channel: v,
-            guild: T
+            channel: O,
+            guild: S
           },
           commandTargetId: i
         })
       }
     }, e.id)
-  }, [v, T, i, C]);
-  if (j ? t = (0, r.jsx)(a.sNh, {
+  }, [O, S, i, C]);
+  if (M ? t = (0, r.jsx)(a.sNh, {
       id: "menu-commands-placeholder",
-      render: () => (0, r.jsx)(g.Z, {}),
+      render: () => (0, r.jsx)(b.Z, {}),
       disabled: !0
-    }, "menu-commands-placeholder") : (t = 0 === Z.length ? (0, r.jsx)(a.sNh, {
+    }, "menu-commands-placeholder") : (t = 0 === I.length ? (0, r.jsx)(a.sNh, {
       id: "menu-commands-empty",
       label: h.intl.string(h.t.YSNlV1),
       disabled: !0
-    }, "menu-commands-empty") : Z.map(N), null != P && P.length > 0 && (t = (0, r.jsxs)(r.Fragment, {
+    }, "menu-commands-empty") : I.map(w), null != P && P.length > 0 && (t = (0, r.jsxs)(r.Fragment, {
       children: [t, (0, r.jsx)(a.Clw, {}, "separator"), P]
-    }))), !p.TPd.TEXTUAL.has(v.type))
+    }))), !_.TPd.TEXTUAL.has(O.type))
     if (null == P) return null;
     else t = P;
   return (0, r.jsx)(a.sNh, {

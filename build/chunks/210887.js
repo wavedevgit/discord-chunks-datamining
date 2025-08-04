@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => k
+  Z: () => M
 });
 var r, i = n(442837),
   a = n(780384),
@@ -128,7 +128,7 @@ m(N, "displayName", "ThemeStore"), m(N, "persistKey", "ThemeStore"), m(N, "migra
     theme: t
   })
 }, e => e]);
-let k = new N(o.Z, {
+let M = new N(o.Z, {
   CACHE_LOADED: A,
   CONNECTION_OPEN: C,
   LOGOUT: P,

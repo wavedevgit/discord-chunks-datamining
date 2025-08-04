@@ -46,8 +46,8 @@ var r = n(255367),
   D = n(328908),
   L = n(913663),
   x = n(268350),
-  k = n(378233),
-  M = n(665906),
+  M = n(378233),
+  k = n(665906),
   j = n(695346),
   U = n(271383),
   G = n(496675),
@@ -205,7 +205,7 @@ function eb(e) {
   } = (0, b.ZP)();
   return i.useCallback((e, i) => {
     var c, u;
-    n || (o === q.Ie.CREATE_ANNOUNCEMENT_POST || (0, k.Hc)(i, r, a, o.drafts.type) ? ((0, J._H)({
+    n || (o === q.Ie.CREATE_ANNOUNCEMENT_POST || (0, M.Hc)(i, r, a, o.drafts.type) ? ((0, J._H)({
       sticker: e,
       stickerSelectLocation: i,
       isReplacement: null != L.Z.getStickerPreview(a, o.drafts.type),
@@ -318,7 +318,7 @@ function eA(e, t, n, r) {
         u = (!(null == (i = t.permissions) ? void 0 : i.requireCreateTherads) || c) && (!(null == (a = t.permissions) ? void 0 : a.requireSendMessages) || f.e$(l, ea.Plq.SEND_MESSAGES)),
         d = u && f.e$(l, ea.Plq.ATTACH_FILES),
         _ = null != n,
-        p = (0, M.xl)(e);
+        p = (0, k.xl)(e);
       return {
         disabled: r || o || !s && !u || p,
         canAttachFiles: !0 === t.attachments && (s || o || d || _),
@@ -383,8 +383,8 @@ function eR(e, t) {
     required: D,
     disabled: L,
     placeholder: x,
-    accessibilityLabel: k,
-    channel: M,
+    accessibilityLabel: M,
+    channel: k,
     type: U,
     focused: G,
     error: B,
@@ -407,8 +407,8 @@ function eR(e, t) {
     allowNewLines: eD = !0,
     characterCountClassName: eL,
     "aria-describedby": ex,
-    "aria-labelledby": ek,
-    setEditorRef: eM,
+    "aria-labelledby": eM,
+    setEditorRef: ek,
     autoCompletePosition: ej,
     children: eU,
     disableThemedBackground: eG = !1,
@@ -421,8 +421,8 @@ function eR(e, t) {
   let {
     analyticsLocations: eH
   } = (0, b.ZP)(E.Z.CHANNEL_TEXT_AREA), eY = eT(t), eW = i.useRef(null), eK = i.useRef(null), ez = i.useRef(null), eq = i.useRef(null);
-  null == eM || eM(eK.current);
-  let eX = (0, I.Q)(M.id),
+  null == ek || ek(eK.current);
+  let eX = (0, I.Q)(k.id),
     [eQ, eJ] = i.useState(!eX);
   (0, m.PM)(eY, e => {
     let {
@@ -436,8 +436,8 @@ function eR(e, t) {
   } = (0, _.cj)([O.Z], () => {
     var e, t;
     return {
-      activeCommand: (null == (e = U.commands) ? void 0 : e.enabled) ? O.Z.getActiveCommand(M.id) : null,
-      activeCommandSection: (null == (t = U.commands) ? void 0 : t.enabled) ? O.Z.getActiveCommandSection(M.id) : null
+      activeCommand: (null == (e = U.commands) ? void 0 : e.enabled) ? O.Z.getActiveCommand(k.id) : null,
+      activeCommandSection: (null == (t = U.commands) ? void 0 : t.enabled) ? O.Z.getActiveCommandSection(k.id) : null
     }
   }), {
     isLurking: e1,
@@ -446,7 +446,7 @@ function eR(e, t) {
     canAttachFiles: e4,
     canCreateThreads: e5,
     canEveryoneSendMessages: e6
-  } = eA(M, U, e$, L), e8 = U.toolbarType === q.OW.STATIC, e7 = !j.dN.useSetting() && !(0, K.isAndroidWeb)() && null != window.ResizeObserver, e9 = !e7 || !(null == (n = U.commands) ? void 0 : n.enabled) || !G || f !== eo.GI, te = (0, P.Z)(), {
+  } = eA(k, U, e$, L), e8 = U.toolbarType === q.OW.STATIC, e7 = !j.dN.useSetting() && !(0, K.isAndroidWeb)() && null != window.ResizeObserver, e9 = !e7 || !(null == (n = U.commands) ? void 0 : n.enabled) || !G || f !== eo.GI, te = (0, P.Z)(), {
     fontSize: tt
   } = (0, _.cj)([g.Z], () => ({
     fontSize: g.Z.fontSize
@@ -464,7 +464,7 @@ function eR(e, t) {
     submitting: ts,
     submit: tl,
     handleSubmit: tc
-  } = em(ed, U, eK, eq, M.id), {
+  } = em(ed, U, eK, eq, k.id), {
     autocompleteRef: tu,
     handleMaybeShowAutocomplete: td,
     handleHideAutocomplete: tf
@@ -472,10 +472,10 @@ function eR(e, t) {
     editorRef: eK,
     disabled: e3,
     textValue: f,
-    channelId: M.id,
+    channelId: k.id,
     chatInputType: U,
     submit: ed
-  }), tm = ey(eK, M), tg = i.useCallback(() => {
+  }), tm = ey(eK, k), tg = i.useCallback(() => {
     var e;
     return null == eq || null == (e = eq.current) ? void 0 : e.hide()
   }, []), {
@@ -491,7 +491,7 @@ function eR(e, t) {
     handleAutocompleteVisibilityChange: tS,
     handleOuterClick: tA
   } = eN(U, ta, eK);
-  (0, z.S)(ta, M.guild_id, M.id);
+  (0, z.S)(ta, k.guild_id, k.id);
   let tN = null != Y,
     tC = e3 && !((e1 || e2) && e6) || ts && (null == (s = U.submit) ? void 0 : s.useDisabledStylesOnSubmit),
     tR = null;
@@ -499,7 +499,7 @@ function eR(e, t) {
   let tP = e7 && null != h && !e3 && U.showCharacterCount && null == e$,
     tw = e7 && !__OVERLAY__ && null != h && null == e$ && U.toolbarType !== q.OW.NONE,
     tD = (0, $.c)({
-      channel: M,
+      channel: k,
       type: U,
       activeCommand: e$,
       pendingReply: Y,
@@ -507,11 +507,11 @@ function eR(e, t) {
     }),
     tL = 0 === f.trim().length,
     tx = U.layout === q.gy.INLINE,
-    tk = U.layout === q.gy.FLUSH,
-    tM = (0, r.jsx)(ee.Z, {
+    tM = U.layout === q.gy.FLUSH,
+    tk = (0, r.jsx)(ee.Z, {
       type: U,
       disabled: e3,
-      channel: M,
+      channel: k,
       handleSubmit: tc,
       isEmpty: tL,
       showAllButtons: eQ,
@@ -531,7 +531,7 @@ function eR(e, t) {
       children: [tw && e8 ? (0, r.jsx)(ei.Z, {
         editorRef: eK,
         options: U.markdown,
-        channel: M
+        channel: k
       }) : tw ? (0, r.jsx)(er.Z, {
         ref: eq,
         editorRef: eK,
@@ -545,10 +545,10 @@ function eR(e, t) {
           [el.highlighted]: ep,
           [el.textAreaMobileThemed]: d.tq,
           [el.inlineContainer]: tx,
-          [el.flushContainer]: tk,
+          [el.flushContainer]: tM,
           [el.error]: null != B
         }),
-        children: [tx || tk ? null : (0, r.jsx)($.Z, {
+        children: [tx || tM ? null : (0, r.jsx)($.Z, {
           bars: tD
         }), (0, r.jsxs)("div", {
           ref: ez,
@@ -559,10 +559,10 @@ function eR(e, t) {
             [el.hasStackedBar]: tD.stacked.length > 0
           }),
           children: [(0, r.jsx)(Q.Z, {
-            channelId: M.id,
+            channelId: k.id,
             chatInputType: U
           }), U.hideAttachmentArea ? null : (0, r.jsx)(et.Z, {
-            channelId: M.id,
+            channelId: k.id,
             type: U,
             canAttachFiles: e4
           }), (0, r.jsxs)("div", {
@@ -587,9 +587,9 @@ function eR(e, t) {
                 disabled: e3,
                 placeholder: x,
                 required: D,
-                accessibilityLabel: k,
+                accessibilityLabel: M,
                 isPreviewing: (e1 || e2) && e6,
-                channel: M,
+                channel: k,
                 type: U,
                 canPasteFiles: e4,
                 uploadPromptCharacterCount: ea.en1,
@@ -617,17 +617,17 @@ function eR(e, t) {
                   [el.profileBioInput]: U === q.Ie.PROFILE_BIO_INPUT,
                   [el.overlayInlineReply]: U === q.Ie.OVERLAY_INLINE_REPLY
                 }, C),
-                "aria-labelledby": ek
+                "aria-labelledby": eM
               })
-            }), tM]
+            }), tk]
           })]
         }), e9 ? null : (0, r.jsx)(v.Z, {
           ref: eW,
-          channel: M,
+          channel: k,
           canOnlyUseTextCommands: tN
         }), (0, r.jsx)(T.Z, {
           ref: tu,
-          channel: M,
+          channel: k,
           canMentionRoles: eh,
           canMentionChannels: eR,
           useNewSlashCommands: e7,
@@ -651,7 +651,7 @@ function eR(e, t) {
         }), (0, r.jsx)(w.Z, {
           textValue: f,
           editorHeight: tE,
-          channelId: M.id
+          channelId: k.id
         }), tj, eU]
       }), (0, r.jsx)(p.pdY, {
         error: B
@@ -662,7 +662,7 @@ function eR(e, t) {
         onSelectEmoji: tp,
         onSelectSticker: th,
         onSelectSound: tm,
-        channel: M,
+        channel: k,
         closeOnModalOuterClick: eB,
         parentModalKey: eV,
         position: "top",

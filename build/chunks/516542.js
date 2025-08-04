@@ -29,8 +29,8 @@ function O(e) {
     accessibilityLabel: _
   } = (0, c.Z)({
     channel: O
-  }), [x, I] = r.useState(() => (0, d.H2)()), {
-    textValue: S,
+  }), [x, S] = r.useState(() => (0, d.H2)()), {
+    textValue: I,
     richValue: j
   } = x, [C, N] = r.useState(!1), w = r.useCallback(() => N(!0), []), Z = r.useCallback(() => N(!1), []);
   (0, s.ZP)(() => {
@@ -41,7 +41,7 @@ function O(e) {
     }, !0, !0, n)
   });
   let P = r.useCallback((e, t, n) => {
-      I({
+      S({
         textValue: t,
         richValue: n
       })
@@ -49,10 +49,10 @@ function O(e) {
     T = r.useCallback(e => {
       "Escape" === e.key && l.Z.updateNotificationStatus(t, g._1z.ACTIVE)
     }, [t]),
-    k = r.useCallback(() => (S.length > v || (o.Z.sendMessage(O.id, f.ZP.parse(O, S), !1), l.Z.setInputLocked(!0, (0, m.getPID)()), l.Z.updateNotificationStatus(t, g._1z.DISMISSED), null == b || b(S)), Promise.resolve({
+    A = r.useCallback(() => (I.length > v || (o.Z.sendMessage(O.id, f.ZP.parse(O, I), !1), l.Z.setInputLocked(!0, (0, m.getPID)()), l.Z.updateNotificationStatus(t, g._1z.DISMISSED), null == b || b(I)), Promise.resolve({
       shouldClear: !1,
       shouldRefocus: !0
-    })), [S, v, O, t, b]);
+    })), [I, v, O, t, b]);
   return (0, i.jsx)("div", {
     className: y.container,
     children: (0, i.jsx)(p.ZP, {
@@ -61,14 +61,14 @@ function O(e) {
       placeholder: E,
       accessibilityLabel: _,
       channel: O,
-      textValue: S,
+      textValue: I,
       richValue: j,
       type: u.Ie.OVERLAY_INLINE_REPLY,
       allowNewLines: !1,
       onBlur: Z,
       onFocus: w,
       focused: C,
-      onSubmit: k,
+      onSubmit: A,
       onKeyDown: T,
       autoCompletePosition: "bottom",
       disableThemedBackground: !0

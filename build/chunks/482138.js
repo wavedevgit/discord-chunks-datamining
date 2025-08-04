@@ -32,8 +32,8 @@ var r, i = n(98405),
   D = Math.pow,
   L = c("".charAt),
   x = c(/./.exec),
-  k = c([].join),
-  M = c(1..toString),
+  M = c([].join),
+  k = c(1..toString),
   j = c([].pop),
   U = c([].push),
   G = c("".replace),
@@ -136,10 +136,10 @@ var r, i = n(98405),
     var t, n, r, i;
     if ("number" == typeof e) {
       for (n = 0, t = []; n < 4; n++) H(t, e % 256), e = w(e / 256);
-      return k(t, ".")
+      return M(t, ".")
     }
     if ("object" == typeof e) {
-      for (n = 0, t = "", r = ec(e); n < 8; n++)(!i || 0 !== e[n]) && (i && (i = !1), r === n ? (t += n ? ":" : "::", i = !0) : (t += M(e[n], 16), n < 7 && (t += ":")));
+      for (n = 0, t = "", r = ec(e); n < 8; n++)(!i || 0 !== e[n]) && (i && (i = !1), r === n ? (t += n ? ":" : "::", i = !0) : (t += k(e[n], 16), n < 7 && (t += ":")));
       return "[" + t + "]"
     }
     return e
@@ -210,8 +210,8 @@ var r, i = n(98405),
   eD = {},
   eL = {},
   ex = {},
-  ek = {},
   eM = {},
+  ek = {},
   ej = {},
   eU = {},
   eG = {},
@@ -333,7 +333,7 @@ eF.prototype = {
         case ew:
         case eD:
           if (t && "file" === l.scheme) {
-            c = eM;
+            c = ek;
             continue
           }
           if (":" !== a || p)
@@ -365,7 +365,7 @@ eF.prototype = {
           }
           break;
         case ex:
-          if (l.scheme = "file", "/" === a || "\\" === a) c = ek;
+          if (l.scheme = "file", "/" === a || "\\" === a) c = eM;
           else if (n && "file" === n.scheme) switch (a) {
             case r:
               l.host = n.host, l.path = m(n.path), l.query = n.query;
@@ -377,21 +377,21 @@ eF.prototype = {
               l.host = n.host, l.path = m(n.path), l.query = n.query, l.fragment = "", c = eV;
               break;
             default:
-              eE(k(m(i, u), "")) || (l.host = n.host, l.path = m(n.path), l.shortenPath()), c = eU;
+              eE(M(m(i, u), "")) || (l.host = n.host, l.path = m(n.path), l.shortenPath()), c = eU;
               continue
           } else {
             c = eU;
             continue
           }
           break;
-        case ek:
+        case eM:
           if ("/" === a || "\\" === a) {
-            c = eM;
+            c = ek;
             break
           }
-          n && "file" === n.scheme && !eE(k(m(i, u), "")) && (eg(n.path[0], !0) ? U(l.path, n.path[0]) : l.host = n.host), c = eU;
+          n && "file" === n.scheme && !eE(M(m(i, u), "")) && (eg(n.path[0], !0) ? U(l.path, n.path[0]) : l.host = n.host), c = eU;
           continue;
-        case eM:
+        case ek:
           if (a === r || "/" === a || "\\" === a || "?" === a || "#" === a) {
             if (!t && eg(d)) c = eU;
             else if ("" === d) {
@@ -473,7 +473,7 @@ eF.prototype = {
       s = e.query,
       l = e.fragment,
       c = t + ":";
-    return null !== i ? (c += "//", e.includesCredentials() && (c += n + (r ? ":" + r : "") + "@"), c += eu(i), null !== a && (c += ":" + a)) : "file" === t && (c += "//"), c += e.cannotBeABaseURL ? o[0] : o.length ? "/" + k(o, "/") : "", null !== s && (c += "?" + s), null !== l && (c += "#" + l), c
+    return null !== i ? (c += "//", e.includesCredentials() && (c += n + (r ? ":" + r : "") + "@"), c += eu(i), null !== a && (c += ":" + a)) : "file" === t && (c += "//"), c += e.cannotBeABaseURL ? o[0] : o.length ? "/" + M(o, "/") : "", null !== s && (c += "?" + s), null !== l && (c += "#" + l), c
   },
   setHref: function(e) {
     var t = this.parse(e);
@@ -540,7 +540,7 @@ eF.prototype = {
   },
   getPathname: function() {
     var e = this.path;
-    return this.cannotBeABaseURL ? e[0] : e.length ? "/" + k(e, "/") : ""
+    return this.cannotBeABaseURL ? e[0] : e.length ? "/" + M(e, "/") : ""
   },
   setPathname: function(e) {
     this.cannotBeABaseURL || (this.path = [], this.parse(e, ej))

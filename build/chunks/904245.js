@@ -35,8 +35,8 @@ var r = n(278074),
   D = n(366980),
   L = n(467512),
   x = n(779832),
-  k = n(786761),
-  M = n(459618),
+  M = n(786761),
+  k = n(459618),
   j = n(541288),
   U = n(3148),
   G = n(48854),
@@ -149,7 +149,7 @@ function ex(e) {
       code: c,
       url: u
     } = e;
-    if (t === b.g.INVITE) ek({
+    if (t === b.g.INVITE) eM({
       inviteKey: c,
       channelId: n,
       messageId: r,
@@ -197,7 +197,7 @@ function ex(e) {
   })
 }
 
-function ek(e) {
+function eM(e) {
   var t, n;
   let {
     inviteKey: r,
@@ -246,7 +246,7 @@ function ek(e) {
   }
 }
 
-function eM(e, t, n, r, i) {
+function ek(e, t, n, r, i) {
   (0, eh.Q_)(e).forEach(e => {
     let a = ea.Z.getChannel(t);
     null != a && d.ZP.trackWithMetadata(eO.rMx.GIFT_CODE_SENT, {
@@ -514,7 +514,7 @@ let eG = {
         oldFormErrors: !0,
         rejectWithError: !1
       }).then(e => {
-        if (e.body.length > 0) return (0, k.e5)(e.body[0])
+        if (e.body.length > 0) return (0, M.e5)(e.body[0])
       })
     },
     fetchMessages(e) {
@@ -713,7 +713,7 @@ let eG = {
       });
       let s = () => eB._sendMessage(e, t, i),
         l = x.ZP.backgroundify(s, void 0);
-      return (M.Z.recordMessageSendAttempt(e, o), es.Z.isReady(e)) ? l() : r && e !== E.V ? (ew.info("Waiting for channel ".concat(e, " to be ready before sending.")), new Promise((t, n) => {
+      return (k.Z.recordMessageSendAttempt(e, o), es.Z.isReady(e)) ? l() : r && e !== E.V ? (ew.info("Waiting for channel ".concat(e, " to be ready before sending.")), new Promise((t, n) => {
         es.Z.whenReady(e, () => {
           ew.info("Channel ".concat(e, " is ready for sending now.")), l().then(t, n)
         })
@@ -881,8 +881,8 @@ let eG = {
           announcementSendOptions: w
         } = n,
         D = null != (i = n.flags) ? i : 0,
-        [x, k] = (0, ee.Z)(d);
-      x && (d = k, D = (0, ep.pj)(D, eO.iLy.SUPPRESS_NOTIFICATIONS));
+        [x, M] = (0, ee.Z)(d);
+      x && (d = M, D = (0, ep.pj)(D, eO.iLy.SUPPRESS_NOTIFICATIONS));
       let Y = !1,
         Q = (null == (r = n.messageReference) ? void 0 : r.type) === eO.Uvt.FORWARD;
       if ("" === d && null == h && null == E && null == I && null == T && !Q && (null == S || 0 === S.length) && (null == t.components || 0 === t.components.length))
@@ -926,10 +926,11 @@ let eG = {
       };
       if (null != t.components && (ea.message.components = t.components), null != w && (ea.message.create_thread = w.createThread, ea.message.title = w.threadName, ea.message.publish = null != (o = w.publish) && o), null != h) {
         let e, t = null == h ? void 0 : h.activity.session_id;
-        if (null != (e = h.type === eO.mFx.JOIN_REQUEST || null != t ? t : ei.default.getSessionId())) {
+        if (null != (e = h.type === eO.mFx.JOIN_REQUEST || h.type === eO.mFx.STREAM_REQUEST || null != t ? t : ei.default.getSessionId())) {
           let t = {
               type: h.type,
-              session_id: e
+              session_id: e,
+              target_user_id: h.targetUserId
             },
             {
               activity: n
@@ -998,7 +999,7 @@ let eG = {
                 joinRequestUserId: n
               })
             }
-            M.Z.recordMessageSendApiResponse(et), s.Z.dispatch({
+            k.Z.recordMessageSendApiResponse(et), s.Z.dispatch({
               type: "SLOWMODE_RESET_COOLDOWN",
               slowmodeType: ed.S.SendMessage,
               channelId: e
@@ -1020,7 +1021,7 @@ let eG = {
               messageId: o.body.id,
               location: null != m ? m : "chat_input",
               suggested: g
-            }), eM(d, e, o.body.id, null != m ? m : "chat_input", !!n.isGiftLinkSentOnBehalfOfUser), null != l && s.Z.dispatch({
+            }), ek(d, e, o.body.id, null != m ? m : "chat_input", !!n.isGiftLinkSentOnBehalfOfUser), null != l && s.Z.dispatch({
               type: "UPLOAD_COMPLETE",
               channelId: e,
               file: l._file,
@@ -1238,6 +1239,6 @@ let eG = {
         confirmText: eT.intl.string(eT.t.BddRzc)
       })
     }),
-    trackInvite: ek
+    trackInvite: eM
   },
   eV = eB

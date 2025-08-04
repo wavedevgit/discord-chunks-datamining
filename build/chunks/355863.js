@@ -485,7 +485,7 @@ function x(e, t, n, r, a) {
   })
 }
 
-function k(e) {
+function M(e) {
   let {
     widgetId: t
   } = e;
@@ -501,7 +501,7 @@ function k(e) {
   })
 }
 
-function M(e) {
+function k(e) {
   let {
     layoutId: t
   } = e, n = r[t];
@@ -795,8 +795,8 @@ let Y = new H(d.Z, {
   LAYOUT_SET_PINNED: L,
   LAYOUT_UPDATE_WIDGET: C,
   LAYOUT_SET_TOP_WIDGET: R,
-  LAYOUT_DELETE_WIDGET: k,
-  LAYOUT_DELETE_ALL_WIDGETS: M,
+  LAYOUT_DELETE_WIDGET: M,
+  LAYOUT_DELETE_ALL_WIDGETS: k,
   LAYOUT_CREATE_WIDGETS: j,
   LAYOUT_SET_WIDGET_META: w
 })

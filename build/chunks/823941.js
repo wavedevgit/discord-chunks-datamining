@@ -17,24 +17,24 @@ var l = r(255367),
   m = r(594174),
   v = r(451478),
   O = r(754347),
-  f = r(74538),
-  p = r(884697),
+  p = r(74538),
+  f = r(884697),
   y = r(624377),
   j = r(141011),
-  h = r(813083),
-  B = r(372654),
+  B = r(813083),
+  h = r(372654),
   _ = r(794324),
   S = r(474936),
   T = r(388032),
   k = r(544348);
-let P = (0, p.IC)(90),
+let P = (0, f.IC)(90),
   A = e => {
     let {
       category: n
     } = e, {
       analyticsLocations: r
     } = (0, d.ZP)(), o = t.useRef(null), a = (0, i.e7)([m.default], () => m.default.getCurrentUser());
-    return f.ZP.canUseCollectibles(a) ? n.summary : T.intl.format(T.t["9hafRk"], {
+    return p.ZP.canUseCollectibles(a) ? n.summary : T.intl.format(T.t["9hafRk"], {
       getPremium: e => (0, l.jsx)(s.P3F, {
         innerRef: o,
         className: k.getPremiumHook,
@@ -81,17 +81,17 @@ function L(e) {
   } = (0, y.Z)(n.styles), d = (0, i.e7)([c.Z], () => c.Z.useReducedMotion), g = (0, i.e7)([v.Z], () => v.Z.isFocused()), {
     bannerOverrides: b,
     shopAllBannerStatic: m,
-    shopAllBannerAnimated: f
+    shopAllBannerAnimated: p
   } = (0, _.t0)(n), S = !!(null == b ? void 0 : b.showDarkBannerText);
   return (0, l.jsxs)(j.Z, {
     asset: m,
     className: a()(k.shopBanner, r),
     style: null != o ? {
-      background: "".concat((0, B.nH)(o), " border-box border-box"),
+      background: "".concat((0, h.nH)(o), " border-box border-box"),
       outlineColor: o.border.toHslString()
     } : void 0,
-    children: [!d && null != f && g && (0, l.jsx)(E, {
-      src: f
+    children: [!d && null != p && g && (0, l.jsx)(E, {
+      src: p
     }), (null == b ? void 0 : b.addAttributionLogo) ? (0, l.jsxs)("div", {
       className: k.discordLogo,
       children: [(0, l.jsx)(s.gw7, {
@@ -107,7 +107,7 @@ function L(e) {
       size: 28
     }), (null == b ? void 0 : b.addLogo) ? (0, l.jsx)("img", {
       className: k.categoryLogo,
-      src: (0, p.uV)(n.logo, {
+      src: (0, f.uV)(n.logo, {
         size: P
       }),
       alt: n.name,
@@ -127,7 +127,7 @@ function L(e) {
       children: n.skuId === u.T.DISXCORE ? (0, l.jsx)(A, {
         category: n
       }) : n.summary
-    }), !t && (0, l.jsx)(h.Z, {
+    }), !t && (0, l.jsx)(B.Z, {
       category: n,
       className: k.limitedTimeBadge,
       display: "banner"

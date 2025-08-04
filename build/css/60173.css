@@ -1,6 +1,6 @@
 /**
   Module ID: 60173
-  Original File Name: 057f9c2b6601b65b
+  Original File Name: 330c63fe99df12fb
 **/
 @keyframes placeholderPulse_c8ffbb {
     0% {
@@ -1262,6 +1262,46 @@ strong {
     border-radius: 8px;
     margin-top: var(--space-16);
     padding: var(--space-8) var(--space-12)
+}
+
+.root_e2a426 {
+    background: var(--background-surface-high);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-md);
+    display: flex;
+    flex-direction: column;
+    min-width: 240px
+}
+
+.userHeader_e2a426 {
+    align-items: center;
+    background: var(--background-mod-subtle);
+    display: flex;
+    gap: var(--space-8);
+    padding: var(--space-12) var(--space-16)
+}
+
+.activityList_e2a426 {
+    padding: 0 var(--space-16)
+}
+
+.activityRow_e2a426 {
+    align-items: stretch;
+    border-bottom: 1px solid var(--border-subtle);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-8);
+    padding: var(--space-12) 0
+}
+
+.activityRowContent_e2a426 {
+    align-items: center;
+    display: flex;
+    gap: var(--space-12)
+}
+
+.activityRow_e2a426:last-child {
+    border-bottom: none
 }
 
 .draggable__55bab {
@@ -13100,4 +13140,4 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
     position: relative
 }
 
-/*# sourceMappingURL=057f9c2b6601b65b.css.map*/
+/*# sourceMappingURL=330c63fe99df12fb.css.map*/

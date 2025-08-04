@@ -47,8 +47,8 @@ var r = n(990547),
   D = n(592125),
   L = n(430824),
   x = n(496675),
-  k = n(594174),
-  M = n(979651),
+  M = n(594174),
+  k = n(979651),
   j = n(626135),
   U = n(630388),
   G = n(823379),
@@ -140,7 +140,7 @@ async function eo(e) {
         referrerId: g
       }
     });
-    let t = k.default.getCurrentUser();
+    let t = M.default.getCurrentUser();
     if (null != t && (0, q.Z)({
         type: o ? J.q5t.LAUNCH : J.q5t.JOIN,
         userId: null == t ? void 0 : t.id,
@@ -260,7 +260,7 @@ async function el(e) {
     let e, n = E.Z.getApplication(t),
       r = F.ZP.getCurrentEmbeddedActivity();
     (null == r ? void 0 : r.applicationId) != null && (e = E.Z.getApplication(null == r ? void 0 : r.applicationId));
-    let i = k.default.getCurrentUser();
+    let i = M.default.getCurrentUser();
     if (null != i && !await (0, Z.p)({
         applicationId: t,
         application: n,
@@ -325,7 +325,7 @@ async function ec(e) {
       guildId: s
     } = e,
     c = w.default.getSessionId(),
-    u = k.default.getCurrentUser(),
+    u = M.default.getCurrentUser(),
     d = n;
   if (null == d) return {
     result: "failure",
@@ -350,7 +350,7 @@ async function ec(e) {
     ChannelStore: D.Z,
     GuildStore: L.Z,
     PermissionStore: x.Z,
-    VoiceStateStore: M.Z
+    VoiceStateStore: k.Z
   });
   if (p !== W.jy.CAN_LAUNCH) {
     let e = 4;
@@ -436,7 +436,7 @@ function eu(e) {
   if (null != a) {
     var o;
     let e = O.Z.getSelectedParticipantId(a),
-      t = null == (o = k.default.getCurrentUser()) ? void 0 : o.id,
+      t = null == (o = M.default.getCurrentUser()) ? void 0 : o.id,
       r = F.ZP.getEmbeddedActivitiesForChannel(a).find(e => e.applicationId === n);
     if (null == r || null == t || "" === t) return;
     e === (0, y.gN)({

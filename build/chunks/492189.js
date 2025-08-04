@@ -32,8 +32,8 @@ var r = n(98405),
   D = n(840991),
   L = n(335024),
   x = n(199838),
-  k = n(176682),
-  M = x.get,
+  M = n(176682),
+  k = x.get,
   j = x.set,
   U = x.enforce,
   G = w.f,
@@ -53,7 +53,7 @@ var r = n(98405),
     P(e, t, {
       configurable: !0,
       get: function() {
-        return M(this)[t]
+        return k(this)[t]
       }
     })
   },
@@ -87,11 +87,11 @@ o ? (Y || (D.f = et, w.f = en, J(z, "buffer"), J(z, "byteOffset"), J(z, "byteLen
     b = E && E.prototype,
     y = {},
     v = function(e, t) {
-      var n = M(e);
+      var n = k(e);
       return n.view[c](t * o + n.byteOffset, !0)
     },
     T = function(e, t, r) {
-      var i = M(e);
+      var i = k(e);
       i.view[d](t * o + i.byteOffset, n ? g(r) : r, !0)
     },
     P = function(e, t) {
@@ -106,7 +106,7 @@ o ? (Y || (D.f = et, w.f = en, J(z, "buffer"), J(z, "byteOffset"), J(z, "byteLen
       })
     };
   Y ? s && (E = t(function(e, t, n, r) {
-    return u(e, b), k(function() {
+    return u(e, b), M(function() {
       return O(t) ? $(t) ? void 0 !== r ? new _(t, m(n, o), r) : void 0 !== n ? new _(t, m(n, o)) : new _(t) : q(t) ? L(E, t) : a(N, E, t) : new _(h(t))
     }(), e, E)
   }), S && S(E, K), C(A(_), function(e) {

@@ -1,6 +1,6 @@
 /** Chunk was on 78223 **/
 r.d(n, {
-  Z: () => p
+  Z: () => f
 }), r(35282);
 var l = r(255367),
   t = r(73800),
@@ -46,18 +46,18 @@ function v(e, n) {
   }), e
 }
 let O = e => null != e && /^http/i.test(e),
-  f = e => null != e && /^blob:https?:\/\/[^\/]+\//i.test(e),
-  p = e => {
+  p = e => null != e && /^blob:https?:\/\/[^\/]+\//i.test(e),
+  f = e => {
     let {
       asset: n,
       size: r = g.yV,
       className: o,
-      style: p,
+      style: f,
       children: y,
       categoryBannerOverride: j
-    } = e, h = (0, u.e7)([s.Z], () => s.Z.saturation), B = t.useMemo(() => {
-      if (null == n) return p;
-      let e = O(n) || f(n) ? n : (0, d.uV)(n, {
+    } = e, B = (0, u.e7)([s.Z], () => s.Z.saturation), h = t.useMemo(() => {
+      if (null == n) return f;
+      let e = O(n) || p(n) ? n : (0, d.uV)(n, {
           size: r,
           format: "jpg"
         }),
@@ -65,23 +65,23 @@ let O = e => null != e && /^http/i.test(e),
           filter: "blur(2px)",
           transform: "scale(1.02)"
         } : {};
-      if (1 === h) return m(v(m({}, p), {
+      if (1 === B) return m(v(m({}, f), {
         backgroundImage: (null == j ? void 0 : j.addGradient) ? "url(".concat(e, "), linear-gradient(180deg, rgba(0, 71, 94, 0.6) 5%, rgba(9, 33, 65, 0.6) 95%)") : "url(".concat(e, ")"),
         backgroundBlendMode: "multiply",
         backgroundSize: "cover",
         backgroundPosition: "center"
       }), l);
-      let t = (0, c.aD)(i.Z.unsafe_rawColors.BLACK_500.resolve().hex(), 1 - h);
-      return m(v(m({}, p), {
+      let t = (0, c.aD)(i.Z.unsafe_rawColors.BLACK_500.resolve().hex(), 1 - B);
+      return m(v(m({}, f), {
         backgroundImage: "linear-gradient(".concat(t, ", ").concat(t, "), url(").concat(e, ")"),
         backgroundBlendMode: "saturation",
         backgroundSize: "cover",
         backgroundPosition: "center"
       }), l)
-    }, [n, r, h, p, null == j ? void 0 : j.blur, null == j ? void 0 : j.addGradient]);
+    }, [n, r, B, f, null == j ? void 0 : j.blur, null == j ? void 0 : j.addGradient]);
     return (0, l.jsx)("div", {
       className: a()(b.banner, o),
-      style: B,
+      style: h,
       children: y
     })
   }

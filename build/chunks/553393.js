@@ -35,9 +35,9 @@ var r = n(255367),
   D = n(981631),
   L = n(231338),
   x = n(388032),
-  k = n(777444);
+  M = n(777444);
 
-function M(e, t, n) {
+function k(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -53,7 +53,7 @@ function j(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      M(e, t, n[t])
+      k(e, t, n[t])
     })
   }
   return e
@@ -71,7 +71,7 @@ function F(e) {
   let {
     quest: v,
     memberListItemRef: N,
-    applicationStream: M,
+    applicationStream: k,
     position: F,
     closePopout: Z,
     updatePosition: H,
@@ -79,7 +79,7 @@ function F(e) {
     name: W
   } = e, K = (0, s.e7)([b.Z], () => {
     var e;
-    return null != (e = b.Z.getChannel(null == M ? void 0 : M.channelId)) ? e : null
+    return null != (e = b.Z.getChannel(null == k ? void 0 : k.channelId)) ? e : null
   }), z = (0, P.hf)({
     quest: v,
     questContent: S.jn.MEMBERS_LIST,
@@ -130,7 +130,7 @@ function F(e) {
       eo.dispatch(D.CkL.POPOUT_CLOSE)
     },
     ed = "top" === F ? "".concat(U, " ").concat(U, " 0 0") : "0 0 ".concat(U, " ").concat(U);
-  if (null == v || q || X && !V(M, K)) return null;
+  if (null == v || q || X && !V(k, K)) return null;
   let ef = () => {
       (0, I._3)({
         questId: v.id,
@@ -160,7 +160,7 @@ function F(e) {
       e.stopPropagation(), ef()
     },
     eh = () => {
-      V(M, K) && null != K ? ((0, I._3)({
+      V(k, K) && null != K ? ((0, I._3)({
         questId: v.id,
         questContent: S.jn.MEMBERS_LIST,
         questContentCTA: I.jZ.WATCH_STREAM,
@@ -178,7 +178,7 @@ function F(e) {
             questContentCTA: I.jZ.WATCH_STREAM_CONFIRM,
             trackGuildAndChannelMetadata: !0,
             sourceQuestContent: S.jn.MEMBERS_LIST
-          }), d.default.selectVoiceChannel(K.id), (0, f.iV)(M))
+          }), d.default.selectVoiceChannel(K.id), (0, f.iV)(k))
         }, t))
       })) : e_()
     },
@@ -192,7 +192,7 @@ function F(e) {
       ctaText: x.intl.string(x.t.VN1Ajo),
       handleClickCta: e_,
       tileAssetType: "reward"
-    } : V(M, K) ? {
+    } : V(k, K) ? {
       headerText: x.intl.string(x.t.Bz6SkJ),
       ctaText: x.intl.string(x.t.BXFP39),
       handleClickCta: eh,
@@ -208,7 +208,7 @@ function F(e) {
       Y.current = e
     },
     "aria-expanded": ei,
-    className: k.wrapper,
+    className: M.wrapper,
     style: {
       width: null != (O = null == (y = N.current) ? void 0 : y.clientWidth) ? O : B,
       height: el.height,
@@ -219,53 +219,53 @@ function F(e) {
       ref: e => {
         en.current = e
       },
-      className: k.container,
+      className: M.container,
       style: {
         borderRadius: ed
       },
       children: [(0, r.jsxs)("div", {
-        className: k.top,
+        className: M.top,
         children: [(0, r.jsxs)("div", {
-          className: k.left,
+          className: M.left,
           children: [(0, r.jsx)(u.X6q, {
             variant: "heading-sm/semibold",
             children: em.headerText
           }), (0, r.jsxs)(u.P3F, {
-            className: k.help,
+            className: M.help,
             onClick: e => {
               eu(), ep(e)
             },
             children: [(0, r.jsx)(u.Text, {
               variant: "text-xs/medium",
               color: "text-muted",
-              className: k.helpText,
+              className: M.helpText,
               children: x.intl.format(x.t["Lm8/mJ"], {
                 gamePublisher: v.config.messages.gamePublisher
               })
             }), (0, r.jsx)(u.idN, {
               size: "custom",
-              className: k.helpIcon,
+              className: M.helpIcon,
               width: G,
               height: G,
               color: u.TVs.colors.INTERACTIVE_NORMAL
             })]
           })]
         }), (0, r.jsx)("div", {
-          className: k.right,
+          className: M.right,
           children: (0, r.jsxs)("div", {
-            className: k.imgWrapper,
+            className: M.imgWrapper,
             children: [ec((e, t) => t && (0, r.jsx)(a.animated.div, {
               style: e,
-              className: k.imgUnderlay
+              className: M.imgUnderlay
             })), "game" === em.tileAssetType && (0, r.jsx)("img", {
               alt: x.intl.formatToPlainString(x.t.IskzPj, {
                 gameTitle: v.config.messages.gameTitle,
                 gamePublisher: v.config.messages.gamePublisher
               }),
-              className: k.assetTile,
+              className: M.assetTile,
               src: (0, A.fh)(v, A.eC.GAME_TILE, ee).url
             }), "reward" === em.tileAssetType && (0, r.jsx)(C.Z, {
-              className: k.assetTile,
+              className: M.assetTile,
               quest: v,
               questContent: S.jn.MEMBERS_LIST,
               learnMoreStyle: "icon",
@@ -280,7 +280,7 @@ function F(e) {
           eu(), em.handleClickCta()
         },
         color: c.zx.Colors.CUSTOM,
-        className: k.ctaButton,
+        className: M.ctaButton,
         children: em.ctaText
       })]
     })

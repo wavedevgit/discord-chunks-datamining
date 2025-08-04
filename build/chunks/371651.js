@@ -85,8 +85,8 @@ let C = new c.Z("OverlayRenderStore"),
   D = !1,
   L = null,
   x = {},
-  k = null,
   M = null,
+  k = null,
   j = new Set([l.Jx.FULLSCREEN, l.Jx.BORDERLESS_FULLSCREEN, l.Jx.UNKNOWN, l.Jx.MINIMIZED]),
   U = new Set([l.Jx.MINIMIZED, l.Jx.UNKNOWN]),
   G = !1,
@@ -294,7 +294,7 @@ async function ee(e) {
   if (null == t) return void C.error("Failed to track game ".concat(e));
   q(e, "state", m.mM.WAITING_FOR_SCREEN_TYPE_RESOLUTION), eD.emitChange(), C.verbose("Determining initial overlay method for pid ".concat(e));
   let n = await er(e);
-  C.verbose("Overlay method for pid ".concat(e, ": ").concat((0, b.P_)(n.overlayMethod))), Q(e, m.zE.SCREEN_TYPE_RESOLUTION), await ei(e, n), eu(b.HD), M = n.overlayMethod, eD.emitChange(), await s.Z.updateTrackedGame(e, t)
+  C.verbose("Overlay method for pid ".concat(e, ": ").concat((0, b.P_)(n.overlayMethod))), Q(e, m.zE.SCREEN_TYPE_RESOLUTION), await ei(e, n), eu(b.HD), k = n.overlayMethod, eD.emitChange(), await s.Z.updateTrackedGame(e, t)
 }
 async function et(e) {
   var t, n, r;
@@ -416,8 +416,8 @@ async function ec(e) {
 }
 
 function eu(e) {
-  null == k && (__OVERLAY__ && C.error("Running Polling While in Overlay Context!"), k = setTimeout(async () => {
-    k = null;
+  null == M && (__OVERLAY__ && C.error("Running Polling While in Overlay Context!"), M = setTimeout(async () => {
+    M = null;
     let e = Y();
     e.length > 0 && (eu(b.HD), await ec(new Set(e)))
   }, e))
@@ -442,7 +442,7 @@ async function ed(e, t) {
 }
 
 function ef() {
-  ea(), D = !1, M = null, eC()
+  ea(), D = !1, k = null, eC()
 }
 
 function e_(e) {
@@ -556,11 +556,11 @@ function eC() {
 }
 
 function eR() {
-  D = !1, M = null
+  D = !1, k = null
 }
 
 function eP() {
-  D = !1, M = null, eE()
+  D = !1, k = null, eE()
 }
 class ew extends(r = i.ZP.Store) {
   initialize() {
@@ -631,7 +631,7 @@ class ew extends(r = i.ZP.Store) {
     if (null != e) return null != (n = null == (t = H(e)) ? void 0 : t.overlayMethod) ? n : void 0
   }
   getMostRecentOverlayRenderMethod() {
-    return M
+    return k
   }
   getOverlayRenderingTrackedGames() {
     return Object.values(x).filter(e => e.overlayMethod !== m.gl.Disabled && e.state === m.mM.OVERLAY_RENDERING)

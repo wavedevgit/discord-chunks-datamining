@@ -246,7 +246,7 @@ function x(e, t) {
   }
 }
 
-function k(e, t, n) {
+function M(e, t, n) {
   let r = (null != e ? e.getFullMatch() : "").trim(),
     i = [];
   return null != r && "" !== r && (A(t).forEach(r => {
@@ -259,10 +259,10 @@ function k(e, t, n) {
       tokens: n
     });
     null != a && i.push(a)
-  }), i.push(M(e, t))), 5 > (0, m.BU)(i) && i.push(x(e, t)), i
+  }), i.push(k(e, t))), 5 > (0, m.BU)(i) && i.push(x(e, t)), i
 }
 
-function M(e, t) {
+function k(e, t) {
   let n = (null != e ? e.getFullMatch() : "").trim();
   if (null != n && "" !== n) {
     var r, i, a, o, s, l, c, u, d;
@@ -313,7 +313,7 @@ function U(e, t, n) {
     searchContext: e,
     maxResults: I,
     tokens: n
-  })) : t.type === E.Sap.FILTER_ALL ? r = k(t.token, e, n) : t.type === E.Sap.EMPTY && (r.push(x(t.token, e)), r.push(j(e))), r
+  })) : t.type === E.Sap.FILTER_ALL ? r = M(t.token, e, n) : t.type === E.Sap.EMPTY && (r.push(x(t.token, e)), r.push(j(e))), r
 }
 
 function G() {

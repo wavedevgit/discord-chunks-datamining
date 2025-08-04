@@ -42,8 +42,8 @@ function P(e) {
     invoiceError: D,
     planError: L,
     onPurchaseError: x,
-    baseAnalyticsData: k,
-    flowStartTime: M,
+    baseAnalyticsData: M,
+    flowStartTime: k,
     trialId: j,
     planGroup: U,
     analyticsLocation: G,
@@ -113,10 +113,10 @@ function P(e) {
       hasRedirectURL: eT,
       setHasRedirectURL: eS,
       isGift: el,
-      baseAnalyticsData: k,
+      baseAnalyticsData: M,
       analyticsLocation: G,
       analyticsLocations: ey,
-      flowStartTime: M,
+      flowStartTime: k,
       subscriptionPlan: K,
       planGroup: U,
       trialId: j,
@@ -136,9 +136,9 @@ function P(e) {
       invoicePreview: ea,
       orderId: eP
     })
-  }, ek = {
-    baseAnalyticsData: k,
-    flowStartTime: M,
+  }, eM = {
+    baseAnalyticsData: M,
+    flowStartTime: k,
     makePurchase: ex,
     onNext: s,
     onPurchaseError: x,
@@ -146,13 +146,13 @@ function P(e) {
     paymentSourceId: J,
     purchaseTokenAuthState: B,
     setPurchaseState: n
-  }, eM = i.useRef(ek);
+  }, ek = i.useRef(eM);
   i.useEffect(() => {
-    eM.current = ek
+    ek.current = eM
   }), i.useEffect(() => {
     let {
       makePurchase: e
-    } = eM.current;
+    } = ek.current;
     eb && !el && null == t && e()
   }, [eb, el, t]);
   let ej = null != V || Q === C.GZQ.ONE_TIME && !el;

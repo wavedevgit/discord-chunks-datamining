@@ -1,7 +1,7 @@
-/** Chunk was on 72374 **/
+/** Chunk was on 94470 **/
 n.d(t, {
-  Z: () => b,
-  q: () => _
+  Z: () => p,
+  q: () => g
 }), n(388685);
 var r = n(255367);
 n(73800);
@@ -14,9 +14,9 @@ var l = n(442837),
   d = n(585483),
   s = n(51144),
   f = n(981631),
-  g = n(388032);
+  b = n(388032);
 
-function _(e, t) {
+function g(e, t) {
   let {
     id: n
   } = e, r = "@".concat(s.ZP.getUserTag(e, {
@@ -28,7 +28,7 @@ function _(e, t) {
   }), null != t && o.Z.startTyping(t)
 }
 
-function b(e, t, n) {
+function p(e, t, n) {
   let [o, d] = (0, l.Wu)([c.Z, u.Z, a.Z], () => {
     let e = c.Z.getChannelId(t),
       n = u.Z.getChannel(e);
@@ -36,9 +36,9 @@ function b(e, t, n) {
   }, [t]), s = n === f.IlC.POPOUT;
   return !d || s ? null : (0, r.jsx)(i.sNh, {
     id: "mention",
-    label: g.intl.string(g.t.P8tvKC),
+    label: b.intl.string(b.t.P8tvKC),
     action: function() {
-      _(e, o)
+      g(e, o)
     }
   })
 }

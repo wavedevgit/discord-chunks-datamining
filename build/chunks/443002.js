@@ -45,7 +45,7 @@ let T = function(e) {
       guild_id: n.id,
       duration_open_ms: Date.now() - C
     })
-  }, [T, t, R, C, n.id]), k = i.useCallback(e => {
+  }, [T, t, R, C, n.id]), M = i.useCallback(e => {
     e && !N.current && (f.default.track(O.rMx.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
       type: O.ZY5.PREMIUM_GUILD_USER_MODAL,
       location_stack: R,
@@ -124,7 +124,7 @@ let T = function(e) {
         })]
       }), (0, r.jsx)(a.$, {
         innerRef: P,
-        onChange: k,
+        onChange: M,
         children: (0, r.jsx)("div", {
           ref: P,
           className: I.persistentCtaSpacer

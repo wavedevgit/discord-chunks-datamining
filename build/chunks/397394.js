@@ -4,7 +4,7 @@ n.d(t, {
   $0: () => B,
   Lk: () => F,
   Xg: () => Z,
-  ZP: () => M,
+  ZP: () => k,
   c7: () => j,
   j3: () => H,
   jO: () => U,
@@ -79,7 +79,7 @@ function L(e, t) {
 
 function x(e, t) {
   if (null == e) return {};
-  var n, r, i = k(e, t);
+  var n, r, i = M(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -87,7 +87,7 @@ function x(e, t) {
   return i
 }
 
-function k(e, t) {
+function M(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -95,7 +95,7 @@ function k(e, t) {
   return i
 }
 
-function M(e) {
+function k(e) {
   let {
     message: t,
     footer: n,
@@ -123,7 +123,7 @@ function M(e) {
 }
 
 function j(e) {
-  return (0, r.jsx)(M, L(w({}, e), {
+  return (0, r.jsx)(k, L(w({}, e), {
     headerClassName: R.headerSuccess
   }))
 }
@@ -271,7 +271,7 @@ function V(e) {
 }
 
 function F(e) {
-  return (0, r.jsx)(M, L(w({}, e), {
+  return (0, r.jsx)(k, L(w({}, e), {
     headerClassName: R.headerFailure
   }))
 }

@@ -178,8 +178,8 @@ let ee = [K.fO.ACTIVITY],
         null == M || M(D, e, t, n)
       }, [M, D]),
       e3 = null,
-      e4 = null,
-      e6 = "";
+      e6 = null,
+      e4 = "";
     switch (D.type) {
       case K.fO.STREAM:
         e3 = (0, r.jsx)(V.Z, {
@@ -192,14 +192,14 @@ let ee = [K.fO.ACTIVITY],
           inPopout: ec,
           focused: eg,
           inOverlayPopout: ev
-        }), e4 = (0, r.jsx)(V._, {
+        }), e6 = (0, r.jsx)(V._, {
           participant: D,
           selected: eh,
           width: es,
           focused: eg,
           idle: ej,
           premiumIndicator: !1
-        }), e6 = X.intl.formatToPlainString(X.t.gHPz3d, {
+        }), e4 = X.intl.formatToPlainString(X.t.gHPz3d, {
           streamerName: D.user.username
         });
         break;
@@ -218,10 +218,10 @@ let ee = [K.fO.ACTIVITY],
           noVideoRender: ef || eL,
           pulseSpeakingIndicator: ey,
           inOverlayPopout: ev
-        }), e4 = (0, r.jsx)(F.T, {
+        }), e6 = (0, r.jsx)(F.T, {
           participant: D,
           channelId: ea.id
-        }), e6 = X.intl.formatToPlainString(X.t["iC/x/f"], {
+        }), e4 = X.intl.formatToPlainString(X.t["iC/x/f"], {
           username: D.user.username
         });
         break;
@@ -232,7 +232,7 @@ let ee = [K.fO.ACTIVITY],
           selected: eh,
           channel: ea,
           width: es
-        }), e6 = X.intl.formatToPlainString(X.t.YCvOsL, {
+        }), e4 = X.intl.formatToPlainString(X.t.YCvOsL, {
           activityName: null == eZ ? void 0 : eZ.name
         });
         break;
@@ -279,7 +279,7 @@ let ee = [K.fO.ACTIVITY],
             style: el,
             participantUserId: eT,
             children: (0, r.jsxs)(u.kL8, {
-              "aria-label": e6,
+              "aria-label": e4,
               className: Q.tileChild,
               onDoubleClick: e0,
               onContextMenu: e => e1(e, D.type === K.fO.STREAM),
@@ -306,7 +306,7 @@ let ee = [K.fO.ACTIVITY],
                 })
               }) : null, e3, ep ? null : (0, r.jsx)("div", {
                 className: Q.indicators,
-                children: e4
+                children: e6
               }), eh ? (0, r.jsx)("div", {
                 className: Q.selectedScreen,
                 children: (0, r.jsx)(e5, {

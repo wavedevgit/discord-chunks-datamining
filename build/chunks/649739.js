@@ -1,9 +1,8 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Hr: () => i,
-  Ku: () => a,
-  ZP: () => o
+  Ku: () => i,
+  ZP: () => a
 });
 let r = (0, n(818083).B)({
   kind: "user",
@@ -24,17 +23,6 @@ let r = (0, n(818083).B)({
 function i(e, t) {
   let {
     showGameIcon: n
-  } = r.useExperiment({
-    location: e
-  }, {
-    autoTrackExposure: t
-  });
-  return n
-}
-
-function a(e, t) {
-  let {
-    showGameIcon: n
   } = r.getCurrentConfig({
     location: e
   }, {
@@ -42,4 +30,4 @@ function a(e, t) {
   });
   return n
 }
-let o = r
+let a = r

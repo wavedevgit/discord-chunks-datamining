@@ -35,8 +35,8 @@ var r = n(255367),
   D = n(877865),
   L = n(536847),
   x = n(981631),
-  k = n(921944),
-  M = n(474936),
+  M = n(921944),
+  k = n(474936),
   j = n(671147),
   U = n(388032),
   G = n(882903);
@@ -99,7 +99,7 @@ function Y(e) {
     children: (0, r.jsx)(u.P, {
       size: "sm",
       onClick: () => {
-        null == t || t(k.L.USER_DISMISS), (0, y.Ll)()
+        null == t || t(M.L.USER_DISMISS), (0, y.Ll)()
       }
     })
   })
@@ -138,7 +138,7 @@ function K(e) {
 function z(e) {
   let {
     markAsDismissed: t
-  } = e, n = (0, T.m)(M.p9.TIER_2);
+  } = e, n = (0, T.m)(k.p9.TIER_2);
   return (0, r.jsxs)("div", {
     className: G.coachmarkHeaderContainer,
     children: [(0, r.jsxs)("div", {
@@ -273,7 +273,7 @@ function $(e) {
   let {
     onSaveTheme: t,
     canApply: n
-  } = e, i = (0, T.m)(M.p9.TIER_2);
+  } = e, i = (0, T.m)(k.p9.TIER_2);
   return (0, w.hf)(i, E.Z.CUSTOM_THEMES_EDITOR_COACHMARK), (0, r.jsxs)("div", {
     className: G.coachmarkFooterContainer,
     children: [(0, r.jsx)(Q, {
@@ -290,7 +290,7 @@ function $(e) {
       textOptions: {
         subscribeText: U.intl.string(U.t.JST6jo)
       },
-      subscriptionTier: M.Si.TIER_2,
+      subscriptionTier: k.Si.TIER_2,
       showGradient: !0,
       color: _.Tt.BRAND
     })]
@@ -302,7 +302,7 @@ function ee(e) {
     onSaveTheme: t,
     canApply: n,
     metadata: i
-  } = e, a = (0, T.m)(M.p9.TIER_2);
+  } = e, a = (0, T.m)(k.p9.TIER_2);
   (0, w.hf)(a, E.Z.CUSTOM_THEMES_EDITOR);
   let o = () => {
     (0, w.Vb)(), (0, O.Q3)(l.z.CUSTOM_THEME_COACHMARK), (null == i ? void 0 : i.from) === y.tE.SETTING ? (m.Z.open(), (0, y.Ll)()) : (null == i ? void 0 : i.from) === y.tE.CLIENT_THEMES_EDITOR ? (0, y.XO)(y.wh.CLIENT_THEMES) : (0, y.Ll)()
@@ -321,7 +321,7 @@ function ee(e) {
     }) : (0, r.jsx)(I.Z, {
       className: G.subscribeButton,
       size: _.zx.Sizes.MEDIUM,
-      subscriptionTier: M.Si.TIER_2,
+      subscriptionTier: k.Si.TIER_2,
       showGradient: !0,
       premiumModalAnalyticsLocation: {
         page: x.ZY5.PREMIUM_UPSELL_CUSTOM_THEMES,
@@ -349,7 +349,7 @@ function et(e) {
     setColors: I,
     setChassisMixAmount: T,
     setGradientAngle: C
-  } = (0, N.Ig)(), [x, M] = i.useState(null != (t = _[0]) ? t : N.Dp), j = (0, s.e7)([A.Z], () => A.Z.theme), B = (0, O.Nj)(l.z.CUSTOM_THEME_ENTRYPOINT_GRADIENT), {
+  } = (0, N.Ig)(), [x, k] = i.useState(null != (t = _[0]) ? t : N.Dp), j = (0, s.e7)([A.Z], () => A.Z.theme), B = (0, O.Nj)(l.z.CUSTOM_THEME_ENTRYPOINT_GRADIENT), {
     analyticsLocations: V
   } = (0, b.ZP)(E.Z.CUSTOM_THEMES_EDITOR), F = async () => {
     f.current = !0, await (0, h.ZI)({
@@ -360,7 +360,7 @@ function et(e) {
         gradientAngle: v,
         baseMix: m
       }
-    }), (0, w.u7)(_, m, v, j, V), null == a || a(k.L.TAKE_ACTION), B || (0, O.Q3)(l.z.CUSTOM_THEME_ENTRYPOINT_GRADIENT), (0, y.Ll)(), (0, S.UD)()
+    }), (0, w.u7)(_, m, v, j, V), null == a || a(M.L.TAKE_ACTION), B || (0, O.Q3)(l.z.CUSTOM_THEME_ENTRYPOINT_GRADIENT), (0, y.Ll)(), (0, S.UD)()
   }, Z = () => {
     d(R._m.RESET_BUTTON), (0, w.uf)()
   }, H = _.length > 0;
@@ -381,7 +381,7 @@ function et(e) {
             isCoachmark: o
           }), (0, r.jsx)(L.o, {}), (0, r.jsx)(D.U, {
             onChange: e => {
-              M(e), 0 === _.length && (0, R.lT)(_, e, I)
+              k(e), 0 === _.length && (0, R.lT)(_, e, I)
             },
             value: x,
             colors: _,
