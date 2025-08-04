@@ -18,6 +18,9 @@ let c = [{
   getDueAt: () => a()().add(1, "day").startOf("day").add(9, "hours").toDate(),
   getLabel: () => i.intl.string(i.t["7MKr2N"])
 }, {
-  getDueAt: () => a()().day(8).startOf("day").add(9, "hours").toDate(),
+  getDueAt: () => {
+    let e, t = a()().day();
+    return e = 0 === t || 1 === t && a()().startOf("day").add(9, "hours").isAfter(a()()) ? 1 : 8, a()().day(e).startOf("day").add(9, "hours").toDate()
+  },
   getLabel: () => i.intl.string(i.t["q+Ls09"])
 }]

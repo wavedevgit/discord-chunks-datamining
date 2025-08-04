@@ -1,6 +1,6 @@
 /**
   Module ID: 22243
-  Original File Name: 639e96782d58a61c
+  Original File Name: 9917a0a19946c843
 **/
 .upsellOuter__50e68 {
     border-radius: var(--radius-sm);
@@ -2406,13 +2406,6 @@ h1.title_feb59c,h2.title_feb59c {
     height: 86px
 }
 
-.ctaButton_b4f99f {
-    border-radius: 8px;
-    height: 40px;
-    margin-bottom: 16px;
-    width: 100%
-}
-
 .sectionDivider_b4f99f {
     background-color: var(--divider-subtle);
     border: 0;
@@ -2426,7 +2419,8 @@ h1.title_feb59c,h2.title_feb59c {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center
+    justify-content: center;
+    margin-top: 16px
 }
 
 .linkPreText_b4f99f {
@@ -19920,4 +19914,4 @@ html .invoiceCancelRow__968a4 {
     overflow: visible
 }
 
-/*# sourceMappingURL=639e96782d58a61c.css.map*/
+/*# sourceMappingURL=9917a0a19946c843.css.map*/

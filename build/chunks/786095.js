@@ -61,13 +61,13 @@ function S(e, t) {
     errorMessage: _
   } = (0, d.w)(), {
     createNewEditingRule: P
-  } = (0, d.V)(), [Z, T] = i.useState(!1), [I, N] = (0, s.I2)(t), {
-    rulesByTriggerType: A,
+  } = (0, d.V)(), [Z, T] = i.useState(!1), [I, A] = (0, s.I2)(t), {
+    rulesByTriggerType: N,
     updateRule: w
   } = (0, s.pH)(t), x = i.useMemo(() => {
     var e;
-    return null != (e = A[j]) ? e : []
-  }, [A]), M = 0 === x.length, D = n > x.length && !M;
+    return null != (e = N[j]) ? e : []
+  }, [N]), M = 0 === x.length, D = n > x.length && !M;
   if (!i.useMemo(() => (0, u.ze)(t), [t]) || null == e || 0 === e.length || null == t) return null;
   let C = e.split(" "),
     R = C.length;
@@ -146,7 +146,7 @@ function S(e, t) {
       keywordCount: R
     }),
     onFocus: () => {
-      Z || (T(!0), N())
+      Z || (T(!0), A())
     },
     children: G
   })

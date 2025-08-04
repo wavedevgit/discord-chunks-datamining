@@ -1,21 +1,21 @@
 /** Chunk was on 89001 **/
 r.d(t, {
   A3: () => A,
-  f9: () => N,
-  gY: () => g
+  f9: () => v,
+  gY: () => h
 });
 var n = r(255367),
-  l = r(755721),
+  l = r(159691),
   i = r(481060),
   o = r(224550),
-  s = r(672971),
-  a = r(128069),
+  a = r(672971),
+  s = r(128069),
   c = r(600164),
   u = r(612853),
   d = r(712297),
   p = r(982204),
-  b = r(811334),
-  O = r(152521),
+  O = r(811334),
+  b = r(152521),
   y = r(960919),
   m = r(981631),
   E = r(388032),
@@ -69,9 +69,9 @@ let j = e => {
     var {
       orbBalance: t,
       orbPriceAmount: r,
-      submitting: o,
-      onClick: s
-    } = e, a = function(e, t) {
+      loading: o,
+      onClick: a
+    } = e, s = function(e, t) {
       if (null == e) return {};
       var r, n, l = function(e, t) {
         if (null == e) return {};
@@ -85,27 +85,26 @@ let j = e => {
         for (n = 0; n < i.length; n++) r = i[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (l[r] = e[r])
       }
       return l
-    }(e, ["orbBalance", "orbPriceAmount", "submitting", "onClick"]);
-    let c = E.intl.string(E.t.wmcDys),
-      u = x({
-        color: l.zx.Colors.GREEN,
-        type: "submit",
-        "data-testid": "submitButton",
-        children: c
-      }, a);
+    }(e, ["orbBalance", "orbPriceAmount", "loading", "onClick"]);
+    let c = x({
+      variant: "active",
+      type: "submit",
+      "data-testid": "submitButton",
+      text: E.intl.string(E.t.wmcDys)
+    }, s);
     return null === r ? (0, n.jsx)(i.ua7, {
       text: E.intl.string(E.t["c/rcUl"]),
-      children: e => (0, n.jsx)(l.zx, f(x({}, e, u), {
+      children: e => (0, n.jsx)(l.zx, f(x({}, e, c), {
         disabled: !0
       }))
     }) : null === t || r > t ? (0, n.jsx)(i.ua7, {
       text: E.intl.string(E.t.keFvXF),
-      children: e => (0, n.jsx)(l.zx, f(x({}, e, u), {
+      children: e => (0, n.jsx)(l.zx, f(x({}, e, c), {
         disabled: !0
       }))
-    }) : (0, n.jsx)(l.zx, f(x({}, u), {
-      submitting: o,
-      onClick: s
+    }) : (0, n.jsx)(l.zx, f(x({}, c), {
+      loading: o,
+      onClick: a
     }))
   },
   C = e => {
@@ -115,13 +114,13 @@ let j = e => {
     } = e, {
       skusById: l
     } = (0, d.Z)({
-      applicationId: (0, O.N)(r),
+      applicationId: (0, b.N)(r),
       skuIDs: [r],
       isGift: !1,
       currentPaymentSourceId: null,
       excludeSKUPurchasePreviews: !0
     }), o = l[r];
-    return void 0 === o ? (0, n.jsx)(b.aO, {
+    return void 0 === o ? (0, n.jsx)(O.aO, {
       children: (0, n.jsx)(i.$jN, {
         type: i.$jN.Type.PULSING_ELLIPSIS,
         className: _.purchaseDetailsSpinner
@@ -133,7 +132,7 @@ let j = e => {
       })
     })
   },
-  h = e => {
+  g = e => {
     let {
       orbBalance: t
     } = e;
@@ -158,13 +157,13 @@ let j = e => {
       })]
     })
   },
-  g = e => {
+  h = e => {
     let {
       error: t
     } = e;
     if (null == t) return;
     let r = "";
-    return r = t.code === a.SM.VIRTUAL_CURRENCY_INSUFFICIENT_BALANCE ? E.intl.string(E.t.keFvXF) : t.code === a.SM.ALREADY_PURCHASED ? E.intl.string(E.t.m371Mz) : E.intl.string(E.t.fqJZ19), (0, n.jsx)("div", {
+    return r = t.code === s.SM.VIRTUAL_CURRENCY_INSUFFICIENT_BALANCE ? E.intl.string(E.t.keFvXF) : t.code === s.SM.ALREADY_PURCHASED ? E.intl.string(E.t.m371Mz) : E.intl.string(E.t.fqJZ19), (0, n.jsx)("div", {
       className: _.formErrorContainer,
       children: (0, n.jsx)(i.kzN, {
         children: r
@@ -185,9 +184,9 @@ let j = e => {
       }), (0, n.jsx)(C, {
         skuId: t,
         orbPriceAmount: r
-      }), (0, n.jsx)(h, {
+      }), (0, n.jsx)(g, {
         orbBalance: l
-      }), (0, n.jsx)(s.Z, {
+      }), (0, n.jsx)(a.Z, {
         forceShow: !0,
         onChange: m.dG4,
         finePrint: (0, n.jsx)(o.Z, {
@@ -198,7 +197,7 @@ let j = e => {
       })]
     })
   },
-  N = e => {
+  v = e => {
     let {
       orbPriceAmount: t,
       orbBalance: r,
@@ -210,7 +209,7 @@ let j = e => {
       children: [(0, n.jsx)(P, {
         orbBalance: r,
         orbPriceAmount: t,
-        submitting: l,
+        loading: l,
         onClick: o
       }), (0, n.jsx)(u.Z, {})]
     })
