@@ -39,11 +39,12 @@ function f(e) {
 function _(e) {
   let {
     cost: t,
-    status: n,
-    className: o
-  } = e, i = void 0 !== t ? m.labelContainer : m.labelContainerEnd;
+    costDecorator: n,
+    status: o,
+    className: i
+  } = e, a = void 0 !== t ? m.labelContainer : m.labelContainerEnd;
   return (0, r.jsxs)("div", {
-    className: l()(i, o),
+    className: l()(a, i),
     children: [void 0 !== t && (0, r.jsxs)("div", {
       className: l()(m.inline, m.inlineBoost),
       children: [(0, r.jsx)(s.$Eu, {
@@ -55,12 +56,13 @@ function _(e) {
         variant: "heading-md/semibold",
         color: "text-secondary",
         children: p.intl.formatToPlainString(p.t.t2Wbo6, {
-          required: t
+          required: t,
+          decorator: null != n ? n : ""
         })
       })]
-    }), (null == n ? void 0 : n.type) === "expiring" && (0, r.jsx)(f, {
-      dateString: n.expiringAt
-    }), (null == n ? void 0 : n.type) === "removing" && (0, r.jsxs)("div", {
+    }), (null == o ? void 0 : o.type) === "expiring" && (0, r.jsx)(f, {
+      dateString: o.expiringAt
+    }), (null == o ? void 0 : o.type) === "removing" && (0, r.jsxs)("div", {
       className: m.rollbackInline,
       children: [(0, r.jsx)(s.Mgn, {
         size: "xs",
@@ -69,10 +71,10 @@ function _(e) {
         color: "status-warning",
         variant: "text-sm/bold",
         children: p.intl.formatToPlainString(d.default["6e2ry8"], {
-          dateString: (0, u.Z)(n.removingAt)
+          dateString: (0, u.Z)(o.removingAt)
         })
       })]
-    }), (null == n ? void 0 : n.type) === "active" && (0, r.jsxs)("div", {
+    }), (null == o ? void 0 : o.type) === "active" && (0, r.jsxs)("div", {
       className: m.inline,
       children: [(0, r.jsx)(s.owK, {
         size: "xs",
@@ -80,7 +82,7 @@ function _(e) {
       }), (0, r.jsx)(s.Text, {
         color: "text-feedback-positive",
         variant: "text-sm/bold",
-        children: n.statusText
+        children: o.statusText
       })]
     })]
   })
