@@ -146,14 +146,15 @@ function W(e) {
         channelId: et.id,
         maxUsers: k.W,
         size: l.EFr.SIZE_16,
-        onClick: e => {
+        onClickOverflow: e => {
           null == e || e.stopPropagation(), null == ea || ea({
             action: "PRESS_VOICE_CHANNEL_AVATARS"
           })
         },
         onUserClick: e => e.stopPropagation(),
         disableUserPopout: e => e === t.id,
-        overflowCountColor: "text-muted"
+        overflowCountColor: "text-muted",
+        "aria-label": V.intl.string(V.t.jNqDh4)
       }), X === G.lY.MODAL_V2 && eE()]
     }),
     eg = () => X === G.lY.MODAL || X === G.lY.MODAL_V2 ? null : (0, r.jsx)(k.Z, {

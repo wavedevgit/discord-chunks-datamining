@@ -1,6 +1,6 @@
 /** Chunk was on 6850 **/
 n.d(t, {
-  Z: () => _
+  Z: () => H
 }), n(388685), n(539854);
 var r = n(255367),
   l = n(73800),
@@ -21,14 +21,14 @@ var r = n(255367),
   g = n(285173),
   x = n(388032),
   v = n(506192),
-  O = n(350381);
-let y = new Set;
+  y = n(350381);
+let O = new Set;
 
-function _(e) {
+function H(e) {
   let {
     guildId: t,
     onClose: n
-  } = e, o = (0, f.BG)(t), a = (0, m.e7)([h.Z], () => h.Z.getSearchStateByGuildId(t), [t], C()), [c, d] = l.useState(a.selectedRoleIds), _ = (0, p.h)(t, y, !0), H = (e, n) => {
+  } = e, o = (0, f.BG)(t), a = (0, m.e7)([h.Z], () => h.Z.getSearchStateByGuildId(t), [t], C()), [c, d] = l.useState(a.selectedRoleIds), H = (0, p.h)(t, O, !0), _ = (e, n) => {
     let {
       record: l
     } = e;
@@ -42,7 +42,7 @@ function _(e) {
             className: i()(v.labelBackground, n && v.selected)
           }), (0, r.jsx)(b.lo1.Label, {
             children: (0, r.jsx)(g.Z, {
-              className: O.roleTooltipItem,
+              className: y.roleTooltipItem,
               role: l,
               guildId: t
             }, l.id)
@@ -55,24 +55,24 @@ function _(e) {
         })]
       })
     }, l.id)
-  }, w = (e, t) => _.reduce((n, r) => {
+  }, w = (e, t) => H.reduce((n, r) => {
     let {
       record: l
     } = r, o = e.has(l.id);
-    return s()(t.toLowerCase(), l.name.toLowerCase()) ? n.push(H(r, o)) : o && n.push(H(r, o)), n
-  }, []), N = l.useCallback(e => {
+    return s()(t.toLowerCase(), l.name.toLowerCase()) ? n.push(_(r, o)) : o && n.push(_(r, o)), n
+  }, []), S = l.useCallback(e => {
     (0, j.Dr)(t, {
       selectedRoleIds: e
     }), o(e)
-  }, [t, o]), S = l.useMemo(() => u()(N, 300), [N]), D = l.useCallback(e => {
+  }, [t, o]), N = l.useMemo(() => u()(S, 300), [S]), Z = l.useCallback(e => {
     let t;
-    d(t = new Set(c.has(e) ? [...c].filter(t => t !== e) : [...c, e])), S(t)
-  }, [c, S]);
+    d(t = new Set(c.has(e) ? [...c].filter(t => t !== e) : [...c, e])), N(t)
+  }, [c, N]);
   return (0, r.jsx)(b.DBG, {
     className: v.rolePopout,
     placeholder: x.intl.string(x.t.ZveC7e),
     value: c,
-    onChange: D,
+    onChange: Z,
     onClose: () => {
       n()
     },

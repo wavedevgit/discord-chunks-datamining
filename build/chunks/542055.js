@@ -62,9 +62,9 @@ function E(e) {
     channelId: t,
     onClose: a,
     transitionState: o
-  } = e, [E, S] = l.useState(""), [k, Z] = l.useState("descending"), [L, D] = l.useState(!0), [I, T] = l.useState(null), M = l.useDeferredValue(E), _ = (0, u.e7)([j.Z], () => j.Z.getClips()), R = (0, u.e7)([j.Z], () => j.Z.getPendingClips()), z = (0, u.e7)([j.Z], () => j.Z.getSettings().storageLocation), A = (0, u.Wu)([j.Z], () => j.Z.getNewClipIds()), {
+  } = e, [E, S] = l.useState(""), [k, Z] = l.useState("descending"), [L, D] = l.useState(!0), [I, T] = l.useState(null), M = l.useDeferredValue(E), _ = (0, u.e7)([j.Z], () => j.Z.getClips()), z = (0, u.e7)([j.Z], () => j.Z.getPendingClips()), R = (0, u.e7)([j.Z], () => j.Z.getSettings().storageLocation), A = (0, u.Wu)([j.Z], () => j.Z.getNewClipIds()), {
     analyticsLocations: H
-  } = (0, f.ZP)(m.Z.CLIPS_GALLERY), V = l.useMemo(() => [...R, ..._], [_, R]);
+  } = (0, f.ZP)(m.Z.CLIPS_GALLERY), V = l.useMemo(() => [...z, ..._], [_, z]);
   (0, b.Z)({
     type: c.ImpressionTypes.MODAL,
     name: c.ImpressionNames.CLIP_GALLERY_VIEWED,
@@ -85,12 +85,12 @@ function E(e) {
     !async function() {
       D(!0);
       try {
-        await y.jv(z)
+        await y.jv(R)
       } finally {
         D(!1)
       }
     }()
-  }, [z]);
+  }, [R]);
   let F = l.useCallback(e => {
       (0, p.ZDy)(async () => {
         let {

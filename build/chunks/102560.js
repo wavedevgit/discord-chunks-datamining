@@ -25,7 +25,7 @@ let p = e => {
   l.useEffect(() => {
     v()
   }, [v]);
-  let O = (0, a.Wu)([C.Z, d.Z], () => {
+  let y = (0, a.Wu)([C.Z, d.Z], () => {
     let e = C.Z.getHighestRole(t);
     return i()(d.Z.getSortedRoles(t.id)).filter(n => !(0, u.fI)(n) && C.Z.isRoleHigher(t, e, n)).map(e => {
       let {
@@ -81,7 +81,7 @@ let p = e => {
             multi: !0,
             value: g,
             onChange: e => x(e),
-            options: O
+            options: y
           })
         })
       }), (0, r.jsx)(s.R94, {
