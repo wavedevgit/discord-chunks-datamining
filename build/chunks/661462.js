@@ -1,69 +1,71 @@
 /** Chunk was on 43473 **/
 n.d(t, {
-  Z: () => p
+  Z: () => m
 }), n(388685);
 var r = n(255367),
   o = n(73800),
   i = n(481060),
-  a = n(785717),
-  l = n(128156),
+  l = n(785717),
+  a = n(128156),
   c = n(311044),
   s = n(408986),
-  d = n(778414),
-  u = n(228168),
+  u = n(778414),
+  d = n(228168),
   f = n(662776);
 
-function m(e) {
+function p(e) {
   let {
     user: t,
     currentUser: n,
     section: o,
     subsection: i,
-    displayProfile: a,
+    displayProfile: l,
     guildId: f,
-    channelId: m,
-    onClose: p
+    channelId: p,
+    onClose: m
   } = e;
-  return o === u.oh.ACTIVITY ? (0, r.jsx)(l.Z, {
+  return o === d.oh.ACTIVITY ? (0, r.jsx)(a.Z, {
     user: t,
     currentUser: n,
-    displayProfile: a,
+    displayProfile: l,
     guildId: f,
-    channelId: m,
+    channelId: p,
     subsection: i,
-    onClose: p
-  }) : o === u.oh.MUTUAL_FRIENDS ? (0, r.jsx)(c.Z, {
+    onClose: m
+  }) : o === d.oh.MUTUAL_FRIENDS ? (0, r.jsx)(c.Z, {
     user: t,
     guildId: f,
-    channelId: m,
-    onClose: p
-  }) : o === u.oh.MUTUAL_GUILDS ? (0, r.jsx)(s.Z, {
+    channelId: p,
+    onClose: m
+  }) : o === d.oh.MUTUAL_GUILDS ? (0, r.jsx)(s.Z, {
     user: t,
-    onClose: p
-  }) : o === u.oh.WIDGETS ? (0, r.jsx)(d.Z, {
-    user: t
+    onClose: m
+  }) : o === d.oh.WIDGETS ? (0, r.jsx)(u.Z, {
+    user: t,
+    guildId: f,
+    channelId: p
   }) : null
 }
 
-function p(e) {
-  var t, n, l;
+function m(e) {
+  var t, n, a;
   let {
     user: c,
     currentUser: s,
-    displayProfile: d,
-    guildId: u,
-    channelId: p,
-    items: g,
-    initialSection: b,
-    initialSubsection: x,
-    onClose: _
+    displayProfile: u,
+    guildId: d,
+    channelId: m,
+    items: b,
+    initialSection: g,
+    initialSubsection: y,
+    onClose: j
   } = e, {
-    trackUserProfileAction: j
-  } = (0, a.KZ)(), [{
-    section: h,
-    subsection: y,
-    text: v
-  }, I] = o.useState((n = function(e) {
+    trackUserProfileAction: O
+  } = (0, l.KZ)(), [{
+    section: x,
+    subsection: h,
+    text: _
+  }, v] = o.useState((n = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -80,22 +82,22 @@ function p(e) {
       })
     }
     return e
-  }({}, null != (t = g.find(e => {
+  }({}, null != (t = b.find(e => {
     let {
       section: t
     } = e;
-    return t === b
-  })) ? t : g[0]), l = l = {
-    subsection: x
-  }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
+    return t === g
+  })) ? t : b[0]), a = a = {
+    subsection: y
+  }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
       var r = Object.getOwnPropertySymbols(e);
       n.push.apply(n, r)
     }
     return n
-  })(Object(l)).forEach(function(e) {
-    Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(l, e))
+  })(Object(a)).forEach(function(e) {
+    Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(a, e))
   }), n));
   return (0, r.jsxs)("div", {
     className: f.container,
@@ -107,17 +109,17 @@ function p(e) {
       children: (0, r.jsx)(i.njP, {
         type: "top",
         look: "custom",
-        selectedItem: h,
+        selectedItem: x,
         onItemSelect: e => {
-          j({
+          O({
             action: "PRESS_SECTION",
             section: e
-          }), I(t => {
+          }), v(t => {
             var n;
-            return null != (n = g.find(t => t.section === e)) ? n : t
+            return null != (n = b.find(t => t.section === e)) ? n : t
           })
         },
-        children: g.map(e => (0, r.jsx)(i.njP.Item, {
+        children: b.map(e => (0, r.jsx)(i.njP.Item, {
           className: f.tabBarItem,
           id: e.section,
           "aria-label": e.text,
@@ -125,18 +127,18 @@ function p(e) {
         }, e.section))
       })
     }), (0, r.jsx)(i.njP.Panel, {
-      id: h,
-      "aria-label": v,
+      id: x,
+      "aria-label": _,
       className: f.tabBarPanel,
-      children: (0, r.jsx)(m, {
+      children: (0, r.jsx)(p, {
         user: c,
         currentUser: s,
-        displayProfile: d,
-        guildId: u,
-        channelId: p,
-        section: h,
-        subsection: y,
-        onClose: _
+        displayProfile: u,
+        guildId: d,
+        channelId: m,
+        section: x,
+        subsection: h,
+        onClose: j
       })
     })]
   })

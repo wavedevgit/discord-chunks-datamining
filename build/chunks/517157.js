@@ -5,12 +5,12 @@ n.d(t, {
 var r = n(924322),
   o = n(379405),
   i = n(296009),
-  a = n(442837),
-  l = n(187162),
+  l = n(442837),
+  a = n(187162),
   c = n(570911);
 
 function s() {
-  let e = (0, a.e7)([l.Z], () => l.Z.getOverrideWidgets());
+  let e = (0, l.e7)([a.Z], () => a.Z.getOverrideWidgets());
   if (null !== e) return e;
   let t = {
       applicationId: c.J6["23"],
@@ -41,7 +41,7 @@ function s() {
     }, {
       applicationId: c.J6["6"]
     }],
-    d = [{
+    u = [{
       applicationId: c.J6["14"]
     }, {
       applicationId: c.J6["15"]
@@ -75,6 +75,6 @@ function s() {
     id: "4",
     type: i.l.GAME,
     gameWidgetType: r.g.PLAYED,
-    games: d
+    games: u
   }]
 }

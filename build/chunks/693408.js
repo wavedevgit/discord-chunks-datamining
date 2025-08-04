@@ -6,8 +6,8 @@ var r = n(255367);
 n(73800);
 var o = n(120356),
   i = n.n(o),
-  a = n(678738),
-  l = n(362258);
+  l = n(678738),
+  a = n(362258);
 
 function c(e) {
   var {
@@ -27,7 +27,7 @@ function c(e) {
     }
     return o
   }(e, ["className"]);
-  return (0, r.jsx)(a.Z, function(e) {
+  return (0, r.jsx)(l.Z, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -45,7 +45,7 @@ function c(e) {
     }
     return e
   }({
-    className: i()(l.section, t),
+    className: i()(a.section, t),
     headingVariant: "text-xs/medium",
     headingColor: "currentColor"
   }, n))

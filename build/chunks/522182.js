@@ -6,8 +6,8 @@ var r = n(255367);
 n(73800);
 var o = n(481060),
   i = n(906732),
-  a = n(335131),
-  l = n(475413),
+  l = n(335131),
+  a = n(475413),
   c = n(388032);
 
 function s(e) {
@@ -30,9 +30,9 @@ function s(e) {
   }(e, ["onClose"]);
   let {
     analyticsLocations: s,
-    newestAnalyticsLocation: d
+    newestAnalyticsLocation: u
   } = (0, i.ZP)();
-  return (0, r.jsx)(l.ef, function(e) {
+  return (0, r.jsx)(a.ef, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -55,10 +55,10 @@ function s(e) {
     tooltipText: c.intl.string(c.t.b2d0Nz),
     themeColor: "secondary",
     onClick: () => {
-      (0, a.mK)({
+      (0, l.mK)({
         analyticsLocations: s,
         openInLayer: !1,
-        analyticsSource: d
+        analyticsSource: u
       }), null == t || t()
     }
   }, n))

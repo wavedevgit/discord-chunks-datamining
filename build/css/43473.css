@@ -1,6 +1,6 @@
 /**
   Module ID: 43473
-  Original File Name: b227fa7ac50be797
+  Original File Name: 3c34c6d5b808d299
 **/
 .scroller__95bea {
     display: flex;
@@ -1228,6 +1228,28 @@
     padding: 4px 8px
 }
 
+.container__12191 {
+    align-items: center;
+    display: flex;
+    gap: 4px
+}
+
+.overflowButton__12191 {
+    background-color: var(--background-mod-normal);
+    border: 1px solid var(--border-faint)
+}
+
+.container_fc1255 {
+    align-items: center;
+    display: flex;
+    gap: 4px
+}
+
+.overflowButton_fc1255 {
+    background-color: var(--background-mod-normal);
+    border: 1px solid var(--border-faint)
+}
+
 .card_e1364f {
     align-items: start;
     display: grid;
@@ -1273,6 +1295,16 @@
     display: flex;
     flex-direction: column;
     gap: 16px
+}
+
+.container_a62a28 {
+    position: relative
+}
+
+.socialProof_a62a28 {
+    bottom: 8px;
+    left: 8px;
+    position: absolute
 }
 
 .coverList__1094b {
@@ -1519,4 +1551,4 @@
     border-color: var(--input-focused-border)
 }
 
-/*# sourceMappingURL=b227fa7ac50be797.css.map*/
+/*# sourceMappingURL=3c34c6d5b808d299.css.map*/

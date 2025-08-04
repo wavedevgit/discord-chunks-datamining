@@ -1,6 +1,6 @@
 /** Chunk was on 43473 **/
 n.d(t, {
-  z: () => a
+  z: () => l
 });
 var r = n(379405),
   o = n(481060);
@@ -38,7 +38,7 @@ let i = {
       icon: o.lbB
     }
   },
-  a = e => {
+  l = e => {
     let t = i[e];
     return null != t ? t : null
   }

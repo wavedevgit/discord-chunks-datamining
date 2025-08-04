@@ -1,14 +1,14 @@
 /** Chunk was on 43473 **/
 n.d(t, {
-  Z: () => l
+  Z: () => a
 }), n(361932), n(187205);
 var r = n(255367);
 n(73800);
 var o = n(481060),
   i = n(286957),
-  a = n(300695);
+  l = n(300695);
 
-function l(e) {
+function a(e) {
   let {
     tags: t
   } = e;
@@ -21,7 +21,7 @@ function l(e) {
     }] : []
   });
   return 0 === n.length ? null : (0, r.jsx)("ul", {
-    className: a.tagList,
+    className: l.tagList,
     "aria-label": "Tags",
     children: n.map(e => {
       let {
@@ -29,11 +29,11 @@ function l(e) {
         metadata: n
       } = e, {
         text: i,
-        icon: l
+        icon: a
       } = n;
       return (0, r.jsxs)("li", {
-        className: a.tag,
-        children: [(0, r.jsx)(l, {
+        className: l.tag,
+        children: [(0, r.jsx)(a, {
           size: "xs"
         }), (0, r.jsx)(o.Text, {
           variant: "text-xxs/medium",
