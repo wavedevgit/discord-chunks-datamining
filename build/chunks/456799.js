@@ -4,22 +4,22 @@ n.d(t, {
 });
 var r = n(255367);
 n(73800);
-var o = n(120356),
-  s = n.n(o),
+var s = n(120356),
+  o = n.n(s),
   a = n(481060),
   i = n(409667);
 let l = function(e) {
   let {
     allowClicks: t = !1,
     children: n,
-    withBorder: o = !1
+    withBorder: s = !1
   } = e;
   return (0, r.jsx)(a.Rny, {
     children: (0, r.jsx)(a.Zbd, {
-      className: s()(i.componentPreviewWrapper, {
-        [i.componentPreviewWrapperBordered]: o
+      className: o()(i.componentPreviewWrapper, {
+        [i.componentPreviewWrapperBordered]: s
       }),
-      outline: o,
+      outline: s,
       children: (0, r.jsx)("div", {
         className: i.componentPreview,
         onClickCapture: t ? void 0 : function(e) {

@@ -3,8 +3,8 @@ n.d(t, {
   Z: () => i
 });
 var r = n(255367),
-  o = n(73800),
-  s = n(66546),
+  s = n(73800),
+  o = n(66546),
   a = n(613087);
 
 function i(e) {
@@ -15,8 +15,8 @@ function i(e) {
     animatedComponentProps: i,
     recalculateAnimationPositions: l,
     mountPoints: c
-  } = o.useContext(a.B$);
-  return o.useEffect(() => {
+  } = s.useContext(a.B$);
+  return s.useEffect(() => {
     l()
   }, [l, n]), (0, r.jsx)("div", {
     style: {
@@ -32,13 +32,13 @@ function i(e) {
     children: i.map(e => {
       let {
         id: n,
-        collapsedLeft: o,
+        collapsedLeft: s,
         expandedLeft: a,
         collapsedTop: i,
         expandedTop: l,
         width: u
       } = e, d = c.get(n);
-      return (0, r.jsx)(s.animated.div, {
+      return (0, r.jsx)(o.animated.div, {
         ref: d,
         style: {
           zIndex: 2,
@@ -46,9 +46,9 @@ function i(e) {
           top: 0,
           left: 0,
           width: u,
-          transform: (0, s.to)([t.to({
+          transform: (0, o.to)([t.to({
             range: [0, 1],
-            output: [o, a]
+            output: [s, a]
           }), t.to({
             range: [0, 1],
             output: [i, l]

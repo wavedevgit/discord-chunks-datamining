@@ -44,6 +44,7 @@ function v(a) {
     b || (null == l ? ((0, h.dA)({
       questId: c,
       event: z.rMx.QUEST_SHARE_LINK_DEEP_LINKED_INTO_DESKTOP_CLIENT,
+      properties: {},
       sourceQuestContent: j.jn.QUEST_HOME_DESKTOP
     }), o.Z.openNativeAppModal("quests", z.Etm.DEEP_LINK, {
       type: u.jE.QUEST_HOME,

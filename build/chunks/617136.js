@@ -82,15 +82,15 @@ function C(e) {
   return (null == (t = e.userStatus) ? void 0 : t.claimedAt) != null ? "COMPLETED_CLAIMED" : (null == (n = e.userStatus) ? void 0 : n.completedAt) != null ? "COMPLETED" : (null == (r = e.userStatus) ? void 0 : r.enrolledAt) != null ? "ENROLLED" : "NONE"
 }
 
-function R(e, t) {
-  let n = E.r.build(e.config);
-  return {
+function R(e, t, n) {
+  let r = E.r.build(e.config);
+  return v({
     quest_id: e.id,
-    quest_type: n.questType,
-    game_id: n.application.id,
-    game_name: n.application.name,
-    client_ad_session_id: (0, o.Gy)(t).uuid
-  }
+    quest_type: r.questType,
+    game_id: r.application.id,
+    game_name: r.application.name,
+    client_ad_session_id: (0, o.Gy)(n).uuid
+  }, (0, p.qe)(e.id, t))
 }
 
 function P(e, t, n) {
@@ -107,14 +107,14 @@ function w(e) {
     questId: t,
     event: n,
     properties: r,
-    trackGuildAndChannelMetadata: i = !1,
+    trackGuildAndChannelMetadata: i,
     shouldExtendSession: a = !1,
     sourceQuestContent: o
   } = e, l = h.Z.quests.get(t);
   if (null == l || (0, g.X7)({
       location: b.dr.QUEST_PREVIEW_TOOL
     }) && u.Z.getLayers().includes(y.S9g.USER_SETTINGS)) return;
-  let _ = v({}, R(l, a), (0, p.qe)(t, o), r);
+  let _ = v({}, R(l, o, a), r);
   if (c.default.isLoggingAnalyticsEvents && console.info("[Quest] AnalyticsUtils.track", n, _), l.preview) return;
   let f = A.has(n);
   if (i) return s.ZP.trackWithMetadata(n, _, f);
@@ -159,42 +159,29 @@ function x(e) {
     questId: r,
     mode: i,
     prevMode: a
-  } = e;
+  } = e, o = P(t);
   w({
     questId: r,
     event: y.rMx.QUEST_BAR_MODE_CHANGED,
-    properties: T(v({}, P(t)), {
+    properties: {
+      content_id: o.content_id,
+      content_name: o.content_name,
       mode: i,
       previous_mode: a
-    }),
+    },
     sourceQuestContent: n
   })
 }
 
 function M() {
   let e = (0, f.WD)();
-
-  function t(t) {
-    let {
-      questId: n,
-      event: r,
-      properties: i,
-      trackGuildAndChannelMetadata: a = !1,
-      shouldExtendSession: o = !1,
-      sourceQuestContent: s
-    } = t;
-    w({
-      questId: n,
-      event: r,
-      properties: T(v({}, i), {
+  return r.useCallback(t => {
+    w(T(v({}, t), {
+      properties: T(v({}, t.properties), {
         impression_id: null == e ? void 0 : e.getId()
-      }),
-      trackGuildAndChannelMetadata: a,
-      shouldExtendSession: o,
-      sourceQuestContent: s
-    })
-  }
-  return r.useCallback(t, [e])
+      })
+    }))
+  }, [e])
 }
 
 function k() {

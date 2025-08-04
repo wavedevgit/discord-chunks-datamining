@@ -11,7 +11,7 @@ n.d(t, {
   PK: () => L,
   R7: () => H,
   TT: () => q,
-  UE: () => G,
+  UE: () => F,
   XZ: () => Y,
   Xo: () => en,
   _T: () => Z,
@@ -178,10 +178,10 @@ function U(e, t) {
   let n = (0, S.Z)(t, e);
   return D(e, "channelAccessFormat", r.useMemo(() => null == n ? _.I.SOME_CHANNELS_ACCESS : (0, y.yt)(n) ? _.I.ALL_CHANNELS_ACCESS : _.I.SOME_CHANNELS_ACCESS, [n]))
 }
-let F = [];
+let G = [];
 
-function G(e) {
-  let t = I(e, e => null == e ? F : e.role_benefits.benefits.filter(b.rC));
+function F(e) {
+  let t = I(e, e => null == e ? G : e.role_benefits.benefits.filter(b.rC));
   return D(e, "channelBenefits", t)
 }
 let W = [];

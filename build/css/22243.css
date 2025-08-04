@@ -1,6 +1,6 @@
 /**
   Module ID: 22243
-  Original File Name: 9917a0a19946c843
+  Original File Name: 57f986c96b11af08
 **/
 .upsellOuter__50e68 {
     border-radius: var(--radius-sm);
@@ -14886,38 +14886,6 @@ div.nagbar_d74ef8 {
     margin-bottom: 0
 }
 
-.rowContainer__0e124 {
-    align-items: center;
-    display: flex;
-    gap: var(--space-8);
-    margin-right: var(--space-4)
-}
-
-.settingHeader_d81ffd {
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-4)
-}
-
-.subSettingContainer_d81ffd {
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-16)
-}
-
-.selectItemTitle_d81ffd {
-    margin-bottom: var(--space-4)
-}
-
-.selectItemRow_d81ffd {
-    align-items: center;
-    border-bottom: 1px solid var(--border-subtle);
-    display: flex;
-    flex-direction: row;
-    gap: var(--space-8);
-    justify-content: space-between
-}
-
 .guildSelectOptionIcon_b476ba {
     border-radius: var(--radius-sm)
 }
@@ -15036,6 +15004,38 @@ div.nagbar_d74ef8 {
     padding-bottom: var(--space-4);
     padding-top: var(--space-4);
     width: 40%
+}
+
+.rowContainer__0e124 {
+    align-items: center;
+    display: flex;
+    gap: var(--space-8);
+    margin-right: var(--space-4)
+}
+
+.settingHeader_d81ffd {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4)
+}
+
+.subSettingContainer_d81ffd {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-16)
+}
+
+.selectItemTitle_d81ffd {
+    margin-bottom: var(--space-4)
+}
+
+.selectItemRow_d81ffd {
+    align-items: center;
+    border-bottom: 1px solid var(--border-subtle);
+    display: flex;
+    flex-direction: row;
+    gap: var(--space-8);
+    justify-content: space-between
 }
 
 .card__2023f {
@@ -19914,4 +19914,4 @@ html .invoiceCancelRow__968a4 {
     overflow: visible
 }
 
-/*# sourceMappingURL=9917a0a19946c843.css.map*/
+/*# sourceMappingURL=57f986c96b11af08.css.map*/

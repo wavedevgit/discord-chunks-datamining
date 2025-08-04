@@ -3,9 +3,9 @@ n.d(t, {
   Z: () => M
 }), n(953529);
 var r = n(255367),
-  o = n(73800),
-  s = n(120356),
-  a = n.n(s),
+  s = n(73800),
+  o = n(120356),
+  a = n.n(o),
   i = n(66546),
   l = n(442837),
   c = n(950104),
@@ -21,12 +21,12 @@ var r = n(255367),
   j = n(272008),
   _ = n(113434),
   v = n(569984),
-  y = n(497505),
-  C = n(865364),
+  C = n(497505),
+  y = n(865364),
   O = n(373370),
   E = n(475595),
-  w = n(566078),
-  S = n(340100),
+  S = n(566078),
+  w = n(340100),
   T = n(611855),
   P = n(644646),
   A = n(78826),
@@ -75,7 +75,7 @@ function L(e) {
     style: t,
     onClick: n
   } = e;
-  return (0, C.O)({
+  return (0, y.O)({
     location: B.dr.QUESTS_BAR,
     autoTrackExposure: !0
   }) ? (0, r.jsx)(d.zx, {
@@ -88,10 +88,10 @@ function L(e) {
     children: q.intl.string(q.t.lwQdjI)
   }) : null
 }
-let M = o.forwardRef(function(e, t) {
-  var n, s;
+let M = s.forwardRef(function(e, t) {
+  var n, o;
   let {
-    children: C,
+    children: y,
     className: M,
     collapsedHeight: W,
     expansionSpring: Z,
@@ -102,31 +102,31 @@ let M = o.forwardRef(function(e, t) {
     onCtxMenuSelect: X,
     quest: K,
     useReducedMotion: Y
-  } = e, G = (0, l.e7)([v.Z], () => v.Z.isEnrolling(K.id), [K]), J = (0, h.aM)(), $ = (0, _.B6)(K.config.expiresAt), ee = w.r.build(K.config), et = (0, _.B6)(ee.rewardsExpireAt), en = o.useMemo(() => (0, E.fh)(K, E.eC.HERO), [K]), er = (0, R.tP)(ee.application.id), eo = ee.features.has(B.S7.START_QUEST_CTA) ? x.jZ.START_QUEST : x.jZ.ACCEPT_QUEST, es = ee.features.has(B.S7.START_QUEST_CTA) ? q.intl.string(q.t.E80Bdn) : q.intl.string(q.t.l7E81t), ea = o.useCallback(() => {
+  } = e, G = (0, l.e7)([v.Z], () => v.Z.isEnrolling(K.id), [K]), J = (0, h.aM)(), $ = (0, _.B6)(K.config.expiresAt), ee = S.r.build(K.config), et = (0, _.B6)(ee.rewardsExpireAt), en = s.useMemo(() => (0, E.fh)(K, E.eC.HERO), [K]), er = (0, R.tP)(ee.application.id), es = ee.features.has(B.S7.START_QUEST_CTA) ? x.jZ.START_QUEST : x.jZ.ACCEPT_QUEST, eo = ee.features.has(B.S7.START_QUEST_CTA) ? q.intl.string(q.t.E80Bdn) : q.intl.string(q.t.l7E81t), ea = s.useCallback(() => {
     (0, j.AH)(K.id, {
-      questContent: y.jn.QUEST_BAR,
-      questContentCTA: eo,
-      sourceQuestContent: y.jn.QUEST_BAR
+      questContent: C.jn.QUEST_BAR,
+      questContentCTA: es,
+      sourceQuestContent: C.jn.QUEST_BAR
     }), ee.features.has(B.S7.START_QUEST_CTA) && (0, f.uL)(k.Z5c.ACTIVITY_DETAILS(I.In), void 0)
-  }, [K, eo, ee.features]), ei = (0, R.hf)({
+  }, [K, es, ee.features]), ei = (0, R.hf)({
     quest: K,
-    questContent: y.jn.QUEST_BAR,
-    sourceQuestContent: y.jn.QUEST_BAR
-  }), el = o.useCallback(() => {
+    questContent: C.jn.QUEST_BAR,
+    sourceQuestContent: C.jn.QUEST_BAR
+  }), el = s.useCallback(() => {
     (0, b.nc)(K, {
-      content: y.jn.QUEST_BAR,
+      content: C.jn.QUEST_BAR,
       ctaContent: x.jZ.OPEN_GAME_LINK,
       impressionId: J,
-      sourceQuestContent: y.jn.QUEST_BAR
+      sourceQuestContent: C.jn.QUEST_BAR
     })
-  }, [J, K]), ec = ee.features.has(B.S7.POST_ENROLLMENT_CTA), eu = (0, _.Rf)(K), ed = (0, _.Jf)(K), ep = null != ed ? ed.progress > 0 : eu.progressSeconds > 0, em = (null == (n = K.userStatus) ? void 0 : n.enrolledAt) != null, ef = (null == (s = K.userStatus) ? void 0 : s.completedAt) != null, eg = o.useMemo(() => (0, b.Xv)(K.config), [K.config]), ex = U && H, eh = (0, O.DD)({
+  }, [J, K]), ec = ee.features.has(B.S7.POST_ENROLLMENT_CTA), eu = (0, _.Rf)(K), ed = (0, _.Jf)(K), ep = null != ed ? ed.progress > 0 : eu.progressSeconds > 0, em = (null == (n = K.userStatus) ? void 0 : n.enrolledAt) != null, ef = (null == (o = K.userStatus) ? void 0 : o.completedAt) != null, eg = s.useMemo(() => (0, b.Xv)(K.config), [K.config]), ex = U && H, eh = (0, O.DD)({
     quest: K,
     taskDetails: eu,
     location: B.dr.QUESTS_BAR,
-    questContent: y.jn.QUEST_BAR,
+    questContent: C.jn.QUEST_BAR,
     thirdPartyTaskDetails: null != ed ? ed : void 0,
-    sourceQuestContent: y.jn.QUEST_BAR
-  }), eb = (0, g.isWeb)(), ej = o.useMemo(() => {
+    sourceQuestContent: C.jn.QUEST_BAR
+  }), eb = (0, g.isWeb)(), ej = s.useMemo(() => {
     let e = (0, u.Qg)(K.config.colors.primary, {
       base: "#ffffff",
       contrastRatio: u.S3.Text
@@ -151,7 +151,7 @@ let M = o.forwardRef(function(e, t) {
         output: [0, W]
       })], (e, t) => "translateY(calc(".concat(e, "% + ").concat(t, "px))"))
     },
-    children: [C, (0, r.jsx)("div", {
+    children: [y, (0, r.jsx)("div", {
       "aria-hidden": !ex,
       children: em ? (0, r.jsxs)("div", {
         className: D.questAcceptedContent,
@@ -164,9 +164,9 @@ let M = o.forwardRef(function(e, t) {
               className: D.questProgressRewardTile,
               learnMoreStyle: "icon",
               quest: K,
-              questContent: y.jn.QUEST_BAR,
+              questContent: C.jn.QUEST_BAR,
               location: B.dr.QUESTS_BAR,
-              sourceQuestContent: y.jn.QUEST_BAR
+              sourceQuestContent: C.jn.QUEST_BAR
             }), (0, r.jsxs)("div", {
               children: [(0, r.jsx)(p.X6q, {
                 color: "always-white",
@@ -191,11 +191,11 @@ let M = o.forwardRef(function(e, t) {
             onOpen: z,
             onClose: F,
             onSelect: X,
-            questContent: y.jn.QUEST_BAR,
+            questContent: C.jn.QUEST_BAR,
             quest: K,
             shouldShowDisclosure: !1,
             showShareLink: !0,
-            sourceQuestContent: y.jn.QUEST_BAR,
+            sourceQuestContent: C.jn.QUEST_BAR,
             children: e => (0, r.jsx)(p.P3F, V(Q({}, e), {
               className: D.submenuWrapper,
               "aria-label": q.intl.string(q.t.DEoVWV),
@@ -219,7 +219,7 @@ let M = o.forwardRef(function(e, t) {
           color: "always-white",
           variant: "text-xs/normal",
           children: eh
-        }), (0, r.jsx)(S.Z, {
+        }), (0, r.jsx)(w.Z, {
           quest: K
         }), !eb && !ep && !er && ec && (0, r.jsx)(L, {
           onClick: ex ? el : void 0
@@ -236,11 +236,11 @@ let M = o.forwardRef(function(e, t) {
               onOpen: z,
               onClose: F,
               onSelect: X,
-              questContent: y.jn.QUEST_BAR,
+              questContent: C.jn.QUEST_BAR,
               quest: K,
               shouldShowDisclosure: !0,
               showShareLink: !0,
-              sourceQuestContent: y.jn.QUEST_BAR,
+              sourceQuestContent: C.jn.QUEST_BAR,
               children: e => (0, r.jsx)(p.P3F, V(Q({}, e), {
                 className: D.submenuWrapper,
                 "aria-label": q.intl.string(q.t.DEoVWV),
@@ -257,9 +257,9 @@ let M = o.forwardRef(function(e, t) {
               className: D.rewardTile,
               learnMoreStyle: "text",
               quest: K,
-              questContent: y.jn.QUEST_BAR,
+              questContent: C.jn.QUEST_BAR,
               location: B.dr.QUESTS_BAR,
-              sourceQuestContent: y.jn.QUEST_BAR
+              sourceQuestContent: C.jn.QUEST_BAR
             }), (0, r.jsx)(p.X6q, {
               className: D.title,
               color: "always-white",
@@ -281,7 +281,7 @@ let M = o.forwardRef(function(e, t) {
             onClick: ex ? ea : void 0,
             size: d.zx.Sizes.NONE,
             submitting: G,
-            children: es
+            children: eo
           })]
         }), (0, r.jsx)("div", {
           className: D.heroAssetWrapper,

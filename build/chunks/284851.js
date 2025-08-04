@@ -4,8 +4,8 @@ n.d(t, {
 });
 var r = n(255367);
 n(73800);
-var o = n(481060),
-  s = n(46140),
+var s = n(481060),
+  o = n(46140),
   a = n(388032);
 
 function i(e) {
@@ -14,23 +14,23 @@ function i(e) {
     onSelect: n,
     quest: i
   } = e;
-  return (0, r.jsx)(o.v2r, {
+  return (0, r.jsx)(s.v2r, {
     variant: "fixed",
     onSelect: t,
     navId: "quest-home-platform-select-".concat(i.id),
     "aria-label": a.intl.string(a.t.ogxXGh),
     onClose: t,
-    children: (0, r.jsxs)(o.kSQ, {
-      children: [(0, r.jsx)(o.sNh, {
+    children: (0, r.jsxs)(s.kSQ, {
+      children: [(0, r.jsx)(s.sNh, {
         id: "desktop",
         label: a.intl.string(a.t.QXc019),
-        action: () => n(s.cd.DESKTOP),
-        icon: o.pzj
-      }), (0, r.jsx)(o.sNh, {
+        action: () => n(o.cd.DESKTOP),
+        icon: s.pzj
+      }), (0, r.jsx)(s.sNh, {
         id: "console",
         label: a.intl.string(a.t["8lAfuL"]),
-        action: () => n(s.cd.CONSOLE),
-        icon: o.iWm
+        action: () => n(o.cd.CONSOLE),
+        icon: s.iWm
       })]
     }, "actions")
   })
@@ -41,27 +41,27 @@ function l(e) {
     children: t
   } = e, n = function(e, t) {
     if (null == e) return {};
-    var n, r, o = function(e, t) {
+    var n, r, s = function(e, t) {
       if (null == e) return {};
-      var n, r, o = {},
-        s = Object.keys(e);
-      for (r = 0; r < s.length; r++) n = s[r], t.indexOf(n) >= 0 || (o[n] = e[n]);
-      return o
+      var n, r, s = {},
+        o = Object.keys(e);
+      for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (s[n] = e[n]);
+      return s
     }(e, t);
     if (Object.getOwnPropertySymbols) {
-      var s = Object.getOwnPropertySymbols(e);
-      for (r = 0; r < s.length; r++) n = s[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (o[n] = e[n])
+      var o = Object.getOwnPropertySymbols(e);
+      for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (s[n] = e[n])
     }
-    return o
+    return s
   }(e, ["children"]);
-  return (0, r.jsx)(o.yRy, {
+  return (0, r.jsx)(s.yRy, {
     targetElementRef: e.popoutTargetRef,
     position: "bottom",
     align: "right",
     renderPopout: e => {
-      var t, o;
+      var t, s;
       let {
-        closePopout: s
+        closePopout: o
       } = e;
       return (0, r.jsx)(i, (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
@@ -80,17 +80,17 @@ function l(e) {
           })
         }
         return e
-      }({}, n), o = o = {
-        onClose: s
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
+      }({}, n), s = s = {
+        onClose: o
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(s)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
           var r = Object.getOwnPropertySymbols(e);
           n.push.apply(n, r)
         }
         return n
-      })(Object(o)).forEach(function(e) {
-        Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(o, e))
+      })(Object(s)).forEach(function(e) {
+        Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(s, e))
       }), t))
     },
     children: t
