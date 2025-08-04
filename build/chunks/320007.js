@@ -42,10 +42,10 @@ function _(e) {
     hasAnyClipAnimations: p.Z.hasAnyClipAnimations()
   })), N = null != I && I.newClipIds.length > 0, T = (0, f.n)(e => e.clipsButtonRef), P = (0, f.n)(e => e.setClipsButtonRef), j = (0, l.e7)([c.Z], () => c.Z.hasLayers()), {
     preventIdle: A,
-    allowIdle: x
+    allowIdle: Z
   } = (0, s.Y)("animation");
 
-  function Z() {
+  function x() {
     (0, a.ZDy)(async () => {
       let {
         default: e
@@ -72,11 +72,11 @@ function _(e) {
       modalKey: m.Qr
     })
   }
-  return (i.useEffect(() => (S ? A() : x(), () => x()), [S, A, x]), E && O && y) ? (0, r.jsxs)(r.Fragment, {
+  return (i.useEffect(() => (S ? A() : Z(), () => Z()), [S, A, Z]), E && O && y) ? (0, r.jsxs)(r.Fragment, {
     children: [null != T && t && C && N && !(0, a.$sL)() && !j && (0, r.jsx)(g.Z, {
       clipIconRef: T,
       lastClipsSession: I,
-      onOpenClipsGallery: Z
+      onOpenClipsGallery: x
     }), (0, r.jsx)("div", {
       ref: P,
       children: (0, r.jsx)(o.JO, {
@@ -84,7 +84,7 @@ function _(e) {
         icon: a.AlX,
         showBadge: v,
         tooltip: b.intl.string(b.t.MXaLEB),
-        onClick: Z
+        onClick: x
       })
     })]
   }) : null

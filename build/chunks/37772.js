@@ -78,8 +78,8 @@ let G = i.memo(function e(t) {
       className: L,
       onContextMenu: G,
       onClick: V,
-      disableInteraction: H = !1,
-      hasThread: F,
+      disableInteraction: F = !1,
+      hasThread: H,
       treatSpam: z
     } = t,
     W = R.OBS.has(s.type) ? s.messageReference : void 0,
@@ -129,7 +129,7 @@ let G = i.memo(function e(t) {
     compact: A,
     className: o()(L, {
       [M.ephemeral]: (0, O.Pv)(s),
-      [M.disableInteraction]: H,
+      [M.disableInteraction]: F,
       [M.groupStart]: t.isGroupStart
     }),
     childrenRepliedMessage: (0, Z.Z)(s, l, W, K, A),
@@ -148,7 +148,7 @@ let G = i.memo(function e(t) {
       disableReactionCreates: et,
       disableComponentInteractivity: !0,
       disableReactionUpdates: !1,
-      renderThreadAccessory: F,
+      renderThreadAccessory: H,
       inlineAttachmentMedia: q,
       inlineEmbedMedia: X,
       renderEmbeds: Q,
@@ -165,7 +165,7 @@ let G = i.memo(function e(t) {
     childrenSystemMessage: (0, w.Z)(t),
     onContextMenu: G,
     onClick: V,
-    hasThread: !1 !== F && null != el && s.hasFlag(R.iLy.HAS_THREAD),
+    hasThread: !1 !== H && null != el && s.hasFlag(R.iLy.HAS_THREAD),
     hasReply: s.type === R.uaV.REPLY,
     isSystemMessage: (0, C.Z)(s),
     messageRef: es,

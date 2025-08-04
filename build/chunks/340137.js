@@ -27,23 +27,17 @@ function E(e) {
     popoutProps: l,
     ref: o,
     focusSectionProps: s
-  } = e, [d, h] = i.useState(!1), g = (0, f.D)(), {
-    unreadRecentMentionsCount: m,
-    unreadChannelIds: b
-  } = (0, f.O4)(), E = m > 0 ? {
-    type: "mentions",
-    count: m
-  } : b.length > 0 ? {
-    type: "unread",
-    count: b.length
-  } : {
-    type: null
-  }, y = n || n || g, v = (0, r.jsx)(c.Dkj, {
+  } = e, [d, h] = i.useState(!1), m = (0, f.D)(), b = n || m, E = n || b, y = (0, r.jsx)(c.Dkj, {
     className: O.icon,
-    color: d || y ? c.TVs.colors.ICON_PRIMARY : c.TVs.colors.ICON_TERTIARY,
+    color: d || E ? c.TVs.colors.ICON_PRIMARY : c.TVs.colors.ICON_TERTIARY,
     size: "custom",
     height: 20,
     width: 20
+  }), {
+    badge: v,
+    badgeType: I
+  } = (0, g.h6)({
+    isSelected: b
   });
   return (0, r.jsxs)(c.Kqy, {
     gap: 0,
@@ -52,10 +46,10 @@ function E(e) {
       size: (0, p.isMac)() ? 4 : 72,
       horizontal: !0
     }), " ", (0, r.jsx)(c.ua7, {
-      shouldShow: !y,
+      shouldShow: !E,
       text: _.intl.string(_.t.HcoRu7),
       children: e => {
-        var n, i, d;
+        var n, i;
         return (0, r.jsxs)(c.P3F, (n = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
@@ -91,22 +85,17 @@ function E(e) {
           },
           children: [(0, r.jsx)("div", {
             className: a()(O.iconWrapper, null),
-            children: "unread" === E.type ? (0, r.jsxs)(r.Fragment, {
+            children: "unread" === I ? (0, r.jsxs)(r.Fragment, {
               children: [(0, r.jsx)(u.ZP, {
                 width: 20,
                 height: 20,
                 mask: u.ZP.Masks.HEADER_BAR_BADGE_BOTTOM,
-                children: v
+                children: y
               }), (0, r.jsx)("div", {
                 className: O.unreadDot
               })]
-            }) : v
-          }), "mentions" === E.type && null != E.count && (0, r.jsx)(c.mAB, {
-            count: E.count
-          }), "unread" === E.type && null != E.count && (0, r.jsx)(c.Text, {
-            variant: "eyebrow",
-            children: (d = E.count) > 50 ? "".concat(50, "+") : d.toString()
-          })]
+            }) : y
+          }), v]
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
@@ -129,7 +118,7 @@ function y() {
     notificationCenterVariant: n
   } = h.Lk.useExperiment({
     location: "NotificationsInboxButton"
-  }), l = (0, s.e7)([d.Z], () => d.Z.getChannelId()), a = i.useMemo(() => b.Z5c.CHANNEL(b.STv, null != l ? l : void 0), [l]), c = (0, g.m)();
+  }), l = (0, s.e7)([d.Z], () => d.Z.getChannelId()), a = i.useMemo(() => b.Z5c.CHANNEL(b.STv, null != l ? l : void 0), [l]), c = (0, g.mv)();
   return n === h.jP.SIDEBAR ? (0, r.jsx)(E, {
     onClick: () => {
       c(), (0, o.uL)(a)

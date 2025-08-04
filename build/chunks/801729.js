@@ -94,16 +94,17 @@ let g = e => {
       disableColor: i = !1,
       shape: l = p.ROUND,
       className: u,
-      style: f
-    } = e, g = _(e, ["count", "color", "disableColor", "shape", "className", "style"]);
+      style: f,
+      renderBadgeCount: g = m
+    } = e, E = _(e, ["count", "color", "disableColor", "shape", "className", "style", "renderBadgeCount"]);
     return (0, r.jsx)("div", d(c({
       className: a()(u, s.numberBadge, l),
       style: c({
         backgroundColor: i ? void 0 : n,
         width: h(t)
       }, f)
-    }, g), {
-      children: m(t)
+    }, E), {
+      children: g(t)
     }))
   },
   E = e => {

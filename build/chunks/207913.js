@@ -73,7 +73,7 @@ function V(e, t) {
   }), e
 }
 
-function H(e) {
+function F(e) {
   let {
     message: t,
     channel: n,
@@ -223,7 +223,7 @@ function H(e) {
             marginTop: 4,
             marginBottom: 4
           },
-          children: (0, r.jsx)(F, {
+          children: (0, r.jsx)(H, {
             overflowMessages: d
           })
         })]
@@ -232,7 +232,7 @@ function H(e) {
   }))
 }
 
-function F(e) {
+function H(e) {
   let {
     overflowMessages: t
   } = e, n = (0, a.uniqBy)(t.map(e => e.author), e => e.id).slice(0, 3);
@@ -418,7 +418,7 @@ let K = (0, i.memo)(function(e) {
         disableClickTrap: !0
       })
     },
-    children: (0, r.jsx)(H, {
+    children: (0, r.jsx)(F, {
       message: p,
       channel: m,
       isSelected: p.id === g.messageId,

@@ -1,6 +1,6 @@
 /**
   Module ID: 27638
-  Original File Name: d50acdab09bfdeec
+  Original File Name: dc1b1c2563511bdb
 **/
 .ragingDemon_ac6454 {
     color: var(--white-500);
@@ -1775,6 +1775,34 @@
 
 .isOverlayTag__394db {
     margin: 0
+}
+
+.pill__4f4b6 {
+    left: 0;
+    position: absolute;
+    top: 0
+}
+
+.notificationsIcon__4f4b6 {
+    display: block
+}
+
+div:has(>.positionLayer__4f4b6) {
+    translate: 0 -3rem
+}
+
+.full-motion .badgeTransition__4f4b6 {
+    transition: all .2s cubic-bezier(0,0,.2,1.1)
+}
+
+.grayBadge__4f4b6 {
+    background-color: var(--primary-500)!important;
+    font-size: 10px
+}
+
+.grayBadge__4f4b6.selected__4f4b6 {
+    background-color: var(--primary-100)!important;
+    color: var(--primary-600)
 }
 
 .filters_c485a2 {
@@ -6111,34 +6139,6 @@ div:has(>.repositionLayerTitlebarPopout_fc71d3) {
     border-width: 2px
 }
 
-.pill__4f4b6 {
-    left: 0;
-    position: absolute;
-    top: 0
-}
-
-.notificationsIcon__4f4b6 {
-    display: block
-}
-
-div:has(>.positionLayer__4f4b6) {
-    translate: 0 -3rem
-}
-
-.full-motion .badgeTransition__4f4b6 {
-    transition: all .2s cubic-bezier(0,0,.2,1.1)
-}
-
-.grayBadge__4f4b6 {
-    background-color: var(--primary-500)!important;
-    font-size: 10px
-}
-
-.grayBadge__4f4b6.selected__4f4b6 {
-    background-color: var(--primary-100)!important;
-    color: var(--primary-600)
-}
-
 .listItemWrapper__91816:active {
     transform: translateY(1px) translateZ(0)
 }
@@ -8459,4 +8459,4 @@ div:has(>.positionLayer__4f4b6) {
     width: 96px
 }
 
-/*# sourceMappingURL=d50acdab09bfdeec.css.map*/
+/*# sourceMappingURL=dc1b1c2563511bdb.css.map*/

@@ -17,12 +17,13 @@ var n = r(255367),
 let h = e => {
   let {
     user: t,
-    selectedNameplate: r,
-    purchased: a
-  } = e, h = (0, i.e7)([s.Z], () => s.Z.getProduct(null == r ? void 0 : r.skuId)), f = (0, i.e7)([d.Z], () => d.Z.getPendingGlobalName());
+    guildId: r,
+    selectedNameplate: a,
+    purchased: h
+  } = e, f = (0, i.e7)([s.Z], () => s.Z.getProduct(null == a ? void 0 : a.skuId)), v = (0, i.e7)([d.Z], () => d.Z.getPendingGlobalName());
   return (0, n.jsxs)("div", {
     className: l()(b.previewBorder, {
-      [b.upsell]: !a && null != r
+      [b.upsell]: !h && null != a
     }),
     children: [(0, n.jsx)("div", {
       className: b.previewBox,
@@ -36,8 +37,9 @@ let h = e => {
           opacity: .9
         }), (0, n.jsx)(u.Z, {
           user: t,
-          nameplate: r,
-          pendingGlobalName: f,
+          guildId: r,
+          nameplate: a,
+          pendingGlobalName: v,
           isHighlighted: !0
         }), (0, n.jsx)(c.d, {
           width: 124,
@@ -47,12 +49,12 @@ let h = e => {
           opacity: .9
         })]
       })
-    }), null != r ? (0, n.jsxs)("div", {
+    }), null != a ? (0, n.jsxs)("div", {
       className: b.previewDescription,
       children: [(0, n.jsx)(o.Text, {
         variant: "text-sm/semibold",
-        children: null == h ? void 0 : h.name
-      }), a ? null : (0, n.jsx)(o.Text, {
+        children: null == f ? void 0 : f.name
+      }), h ? null : (0, n.jsx)(o.Text, {
         variant: "text-sm/normal",
         children: p.intl.string(p.t.fEGjVV)
       })]

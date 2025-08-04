@@ -112,6 +112,7 @@ function j(e) {
         purchased: O
       }), (0, n.jsx)(m.Z, {
         user: f,
+        guildId: P,
         selectedNameplate: I,
         purchased: k
       })]

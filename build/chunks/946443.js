@@ -42,8 +42,8 @@ function P(e) {
     loadState: B,
     channels: V
   } = U, {
-    maybeLoadMore: H,
-    markAllRead: F
+    maybeLoadMore: F,
+    markAllRead: H
   } = G;
   t = k, n = U, l = G, i.useLayoutEffect(() => {
     var e;
@@ -122,7 +122,7 @@ function P(e) {
       closePopout: L,
       children: (0, r.jsx)(y.Z, {
         type: "top-header",
-        onClick: F
+        onClick: H
       })
     }), (0, r.jsx)(c.bG, {
       navigator: K,
@@ -169,7 +169,7 @@ function P(e) {
               k.current = e, i.current = null != (t = null == e ? void 0 : e.getScrollerNode()) ? t : null
             }
           }, l), n = n = {
-            onScroll: B === E.jd.Done ? void 0 : H,
+            onScroll: B === E.jd.Done ? void 0 : F,
             className: I.scroller,
             children: [R ? (0, r.jsx)(N, {
               setSeenTutorial: D

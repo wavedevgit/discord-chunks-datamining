@@ -67,8 +67,8 @@ async function N(e, t, n) {
     scope: P,
     permissions: j,
     guild_id: A,
-    channel_id: x,
-    prompt: Z,
+    channel_id: Z,
+    prompt: x,
     disable_guild_select: w,
     integration_type: L,
     pid: R,
@@ -120,7 +120,7 @@ async function N(e, t, n) {
       errorCode: v.lTL.OAUTH2_ERROR
     }, "OAuth2 Authorization Error: ".concat((null == e ? void 0 : e.message) || "Unknown Error"))
   }
-  if (Z === f.s.NONE && null != o && o.authorized && c) try {
+  if (x === f.s.NONE && null != o && o.authorized && c) try {
     return (await (0, h.Iq)({
       authorize: !0,
       clientId: u,
@@ -141,7 +141,7 @@ async function N(e, t, n) {
       errorCode: v.lTL.OAUTH2_ERROR
     }, "OAuth2 Authorize Error: ".concat((null == e ? void 0 : e.message) || "Unknown Error"))
   }
-  null == n || n(o.application, x, R);
+  null == n || n(o.application, Z, R);
   let U = O.Hn;
   try {
     U = a.vB(null != j ? j : 0)
@@ -157,8 +157,8 @@ async function N(e, t, n) {
     codeChallengeMethod: S,
     state: N,
     guildId: A,
-    channelId: x,
-    prompt: Z,
+    channelId: Z,
+    prompt: x,
     disableGuildSelect: w,
     disclosures: s,
     integrationType: l,

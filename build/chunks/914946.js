@@ -44,9 +44,9 @@ var r, i, l = n(729594),
   P = n(996106),
   j = n(863141),
   A = n(186901),
-  x = n(981631);
+  Z = n(981631);
 
-function Z(e) {
+function x(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -105,10 +105,10 @@ function V(e) {
 function H(e, t) {
   let n = [],
     r = e.getGuildId();
-  return [x.d4z.GUILD_CATEGORY, ...g.tx].includes(e.type) || n.push(new Promise(t => {
+  return [Z.d4z.GUILD_CATEGORY, ...g.tx].includes(e.type) || n.push(new Promise(t => {
     E.Z.whenReady(e.id, () => t()), c.Z.fetchMessages({
       channelId: e.id,
-      limit: x.AQB
+      limit: Z.AQB
     })
   })), Promise.all(n).then(() => {
     var n;
@@ -197,8 +197,8 @@ function z(e, t) {
 
 function W(e, t) {
   var n;
-  return null == t ? e : w(Z({}, e), {
-    presence: w(Z({}, e.presence), {
+  return null == t ? e : w(x({}, e), {
+    presence: w(x({}, e.presence), {
       activity: null != (n = y.Z.getApplicationActivity(e.user.id, t)) ? n : null
     })
   })
@@ -224,9 +224,9 @@ function K(e, t, n) {
 
 function q(e) {
   switch (e) {
-    case x.hes.RTC_CONNECTED:
-    case x.hes.RTC_CONNECTING:
-    case x.hes.RTC_DISCONNECTED:
+    case Z.hes.RTC_CONNECTED:
+    case Z.hes.RTC_CONNECTING:
+    case Z.hes.RTC_DISCONNECTED:
       return e.replace(/^RTC_/, "VOICE_");
     default:
       return e
@@ -234,12 +234,12 @@ function q(e) {
 }
 
 function Q(e, t, n) {
-  return e === x.mFx.JOIN && null != t && null != t.id && null != n.join
+  return e === Z.mFx.JOIN && null != t && null != t.id && null != n.join
 }
 
 function X(e) {
   return o.tn.get({
-    url: x.ANM.APPLICATION_RPC(e),
+    url: Z.ANM.APPLICATION_RPC(e),
     oldFormErrors: !0,
     retries: 3,
     rejectWithError: !0
@@ -250,7 +250,7 @@ function X(e) {
     return t
   }, () => {
     throw new P.Z({
-      closeCode: x.$VG.INVALID_CLIENTID
+      closeCode: Z.$VG.INVALID_CLIENTID
     }, "Invalid Client ID")
   })
 }
@@ -260,12 +260,12 @@ async function J(e, t, n) {
     if (e.transport === A.He.POST_MESSAGE) {
       let e = (0, u.ZP)(t);
       if (null == e || !V(n, [e])) throw new P.Z({
-        closeCode: x.$VG.INVALID_ORIGIN
+        closeCode: Z.$VG.INVALID_ORIGIN
       }, "Invalid Origin")
     } else {
       let e = await X(t);
       if (r = f.ZP.createFromServer(e), !V(n, e.rpc_origins)) throw new P.Z({
-        closeCode: x.$VG.INVALID_ORIGIN
+        closeCode: Z.$VG.INVALID_ORIGIN
       }, "Invalid Origin")
     } null == r && (r = f.ZP.createFromServer(await X(t)));
   let {
@@ -344,13 +344,13 @@ function en(e, t) {
 
 function er(e) {
   if (e !== A.He.POST_MESSAGE) throw new P.Z({
-    errorCode: x.lTL.INVALID_COMMAND
+    errorCode: Z.lTL.INVALID_COMMAND
   }, 'command not available from "'.concat(e, " transport"))
 }
 
 function ei(e) {
   if (null == e.id) throw new P.Z({
-    errorCode: x.lTL.INVALID_COMMAND
+    errorCode: Z.lTL.INVALID_COMMAND
   }, "Invalid application");
   return e.id
 }

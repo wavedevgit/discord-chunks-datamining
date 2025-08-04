@@ -42,8 +42,8 @@ var r = n(255367),
   G = n(474109),
   B = n(741616),
   V = n(187835),
-  H = n(118122),
-  F = n(193154),
+  F = n(118122),
+  H = n(193154),
   z = n(602147),
   W = n(222059),
   K = n(751277),
@@ -208,7 +208,7 @@ function ec(e) {
   } = e, [a] = (0, h.Wu)([L.ZP], () => {
     let e = L.ZP.getGuildsTree();
     return [e, e.version]
-  }), s = a.getRoots(), c = (0, h.Wu)([A.Z], () => A.Z.getGeoRestrictedGuilds()).map(e => (0, r.jsx)(F.Z, {
+  }), s = a.getRoots(), c = (0, h.Wu)([A.Z], () => A.Z.getGeoRestrictedGuilds()).map(e => (0, r.jsx)(H.Z, {
     id: e.id,
     name: e.name,
     icon: e.icon
@@ -219,7 +219,7 @@ function ec(e) {
       "aria-label": et.intl.string(et.t["7hB4kp"]),
       gap: "xs",
       children: s.map((e, t) => l(e, t, s.length))
-    }), c, (0, r.jsx)(q.Z, {}), i ? null : (0, r.jsx)(H.Z, {
+    }), c, (0, r.jsx)(q.Z, {}), i ? null : (0, r.jsx)(F.Z, {
       disableTooltip: o.length > 0,
       lastTargetNode: s[s.length - 1]
     }), i ? null : t, n ? null : (0, r.jsx)(V.Z, {})]
@@ -236,8 +236,8 @@ function eu(e) {
     let e = L.ZP.getGuildsTree();
     return [e, e.version]
   }), d = (0, h.e7)([x.Z], () => x.Z.lurkingGuildIds()), p = i.useMemo(() => n ? [] : d, [d, n]), b = (0, h.e7)([v.Z], () => v.Z.isFullscreenInContext()), [O, j] = i.useState(!1), E = i.useCallback(() => j(!0), []), S = i.useCallback(() => j(!1), []), A = i.useRef(!1), [R] = i.useState(() => new f.V7), D = i.useRef(null), B = i.useRef(null), V = (0, u.OP)(), {
-    ref: H
-  } = V, F = function(e, t) {
+    ref: F
+  } = V, H = function(e, t) {
     if (null == e) return {};
     var n, r, i = function(e, t) {
       if (null == e) return {};
@@ -374,8 +374,8 @@ function eu(e) {
             className: en.unreadMentionsIndicatorTop,
             barClassName: en.unreadMentionsBar
           }), (0, r.jsx)("ul", (i = ei({
-            ref: H
-          }, F, W), a = a = {
+            ref: F
+          }, H, W), a = a = {
             role: "tree",
             className: en.tree,
             children: (0, r.jsxs)("div", {

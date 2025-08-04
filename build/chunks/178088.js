@@ -74,8 +74,8 @@ function S(e) {
     inInbox: V
   } = h.Z.useExperiment({
     location: "RecentsPopout"
-  }), H = (0, o.e7)([p.Z], () => p.Z.hasOverdueReminder(), []) && B && V, {
-    enabled: F
+  }), F = (0, o.e7)([p.Z], () => p.Z.hasOverdueReminder(), []) && B && V, {
+    enabled: H
   } = d.Z.useExperiment({
     location: "RecentsPopout"
   });
@@ -108,7 +108,7 @@ function S(e) {
             onJump: z,
             badgeState: x,
             closePopout: U
-          }) : F && D === a.X.GAME_INVITES ? (0, r.jsx)(v.Z, {
+          }) : H && D === a.X.GAME_INVITES ? (0, r.jsx)(v.Z, {
             setTab: L,
             badgeState: x,
             closePopout: U
@@ -143,7 +143,7 @@ function S(e) {
         let {
           isShown: n
         } = t;
-        return S(G, n, e, H)
+        return S(G, n, e, F)
       }
     })
   })

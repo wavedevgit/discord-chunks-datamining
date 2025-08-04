@@ -32,8 +32,8 @@ var r, i = n(255367),
   P = n(151864),
   j = n(835184),
   A = n(725436),
-  x = n(497656),
-  Z = n(79874),
+  Z = n(497656),
+  x = n(79874),
   w = n(554747),
   L = n(230900),
   R = n(854698),
@@ -160,7 +160,7 @@ function F(e) {
   } = e, a = (0, L.cS)(n), s = null != a ? (0, A.m)(a, !0) : null, u = (0, L.nE)(n), p = (0, d.KS)(u), {
     startTime: h,
     endTime: f
-  } = (0, Z.ZP)(n), {
+  } = (0, x.ZP)(n), {
     startDateTimeString: g,
     upcomingEvent: m,
     diffMinutes: b
@@ -389,7 +389,7 @@ let X = l.memo(function(e) {
     guild: t
   } = e, {
     showRedesignedLiveChannelNotice: n
-  } = (0, p.o)(!0), r = (0, x.y)(t.id), l = (0, w.k5)(t.id), a = (0, w.Vm)(t.id), o = (0, s.e7)([O.Z], () => O.Z.getStageInstanceByChannel(null == r ? void 0 : r.id), [r]), {
+  } = (0, p.o)(!0), r = (0, Z.y)(t.id), l = (0, w.k5)(t.id), a = (0, w.Vm)(t.id), o = (0, s.e7)([O.Z], () => O.Z.getStageInstanceByChannel(null == r ? void 0 : r.id), [r]), {
     isStageNoticeHidden: c,
     isEventNoticeHidden: u
   } = (0, s.cj)([P.Z], () => ({
