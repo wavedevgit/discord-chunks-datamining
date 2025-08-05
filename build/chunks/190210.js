@@ -258,7 +258,7 @@ let en = i.memo(i.forwardRef(function(e, t) {
     editorHeaderHeight: ts,
     paddingTop: tc
   } = (0, h.q_F)({
-    editorHeaderHeight: 120 * !!to,
+    editorHeaderHeight: 122 * !!to,
     paddingTop: 16 * !!to,
     config: {
       tension: 120,

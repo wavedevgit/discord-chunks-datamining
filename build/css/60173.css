@@ -1,6 +1,6 @@
 /**
   Module ID: 60173
-  Original File Name: 2ab6d46b9f04276a
+  Original File Name: 1098099c50502cba
 **/
 @keyframes placeholderPulse_c8ffbb {
     0% {
@@ -4798,16 +4798,16 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
 .titleInput__36c1b {
     background-color: transparent;
     border: none!important;
-    border-radius: 8px;
     color: var(--header-primary);
     font-family: var(--font-display);
     font-size: 20px;
     font-weight: 700;
+    height: 26px;
     line-height: 24px;
-    margin-bottom: -8px;
     margin-top: 16px;
     padding-bottom: 0;
-    padding-left: 0
+    padding-left: 0;
+    width: 100%
 }
 
 .titleInput__36c1b::-moz-placeholder {
@@ -13141,4 +13141,4 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
     position: relative
 }
 
-/*# sourceMappingURL=2ab6d46b9f04276a.css.map*/
+/*# sourceMappingURL=1098099c50502cba.css.map*/
