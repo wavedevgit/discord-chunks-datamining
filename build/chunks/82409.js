@@ -82,13 +82,13 @@ function U(e) {
     guildId: e.guildId,
     ReadStateStore_: y.ZP,
     GuildStore_: _.Z
-  }) && C.default.compare(e.id, P) > 0 && e.id !== x.Z.lastClickedUnreadMessageId)), D = (0, s.Wu)([y.ZP, _.Z, x.Z], () => N.filter(e => (0, I.YH)({
+  }) && C.default.compare(e.id, P) > 0 && !(0, I.Tj)(e, x.Z.selectedItemInfo))), D = (0, s.Wu)([y.ZP, _.Z, x.Z], () => N.filter(e => (0, I.YH)({
     messageId: e.id,
     channelId: e.channelId,
     guildId: e.guildId,
     ReadStateStore_: y.ZP,
     GuildStore_: _.Z
-  }) || e.id === x.Z.lastClickedUnreadMessageId)), U = i.useCallback(e => {
+  }) || (0, I.Tj)(e, x.Z.selectedItemInfo))), U = i.useCallback(e => {
     p !== A.V5.BOOKMARKS && j.Z.loadMoreInbox({
       viewId: a,
       loadingTrigger: e
@@ -167,7 +167,7 @@ function U(e) {
         isUnread: !1
       } : {
         message: {
-          id: u,
+          id: C.default.atNextMillisecond(u),
           channel_id: c
         },
         isUnread: null != (i = y.ZP.hasUnread(c)) && i

@@ -167,7 +167,8 @@ let x = {
       onClick: e => {
         a.Z.dispatch({
           type: "NOTIFICATIONS_INBOX_ITEM_ACK",
-          messageId: e.id
+          messageId: e.id,
+          channelId: e.channel_id
         }), s.In(e.channel_id, {
           object: b.qAy.MARK_MESSAGE_AS_READ_BUTTON,
           objectType: b.Qqv.ACK_MANUAL

@@ -25,6 +25,9 @@ let s = {
   atPreviousMillisecond: function(e) {
     return a.cO(e)
   },
+  atNextMillisecond: function(e) {
+    return a.sd(e)
+  },
   fromTimestamp: function(e) {
     return a.Ol(e)
   },

@@ -1,6 +1,6 @@
 /**
   Module ID: 1906
-  Original File Name: c0bf7b2a048a57f2
+  Original File Name: 44441f9e8aed392e
 **/
 .container__26abc {
     background-color: var(--background-surface-high);
@@ -61,27 +61,4 @@
     margin-left: 12px
 }
 
-.content_ed987b {
-    padding: 24px
-}
-
-.header_ed987b {
-    display: flex;
-    flex-direction: column;
-    text-align: center
-}
-
-.footer_ed987b {
-    justify-content: space-between
-}
-
-.description_ed987b {
-    margin-top: var(--space-8);
-    text-align: center
-}
-
-.theme-dark .footer_ed987b {
-    background-color: var(--background-base-lowest)
-}
-
-/*# sourceMappingURL=c0bf7b2a048a57f2.css.map*/
+/*# sourceMappingURL=44441f9e8aed392e.css.map*/

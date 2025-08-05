@@ -153,6 +153,7 @@ let A = {
     i.Z.dispatch({
       type: "NOTIFICATIONS_INBOX_ITEM_CLICK",
       messageId: t.id,
+      channelId: n.id,
       isUnread: r
     }), u && (0, f.Qz)({
       interactionType: f.s_.CLICK,
