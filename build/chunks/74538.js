@@ -169,55 +169,57 @@ function H(e) {
   let n = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
     r = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
     i = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : void 0,
-    a = null != (t = g.Z.defaultPaymentSourceId) ? t : void 0,
-    o = b.Z.getPremiumTypeSubscription();
-  return null != o && null != o.paymentSourceId && (a = o.paymentSourceId), Y(e, n, r, {
-    paymentSourceId: a,
+    a = !(arguments.length > 4) || void 0 === arguments[4] || arguments[4],
+    o = null != (t = g.Z.defaultPaymentSourceId) ? t : void 0,
+    s = b.Z.getPremiumTypeSubscription();
+  return null != s && null != s.paymentSourceId && (o = s.paymentSourceId), Y(e, n, r, {
+    paymentSourceId: o,
     currency: i
-  })
+  }, a)
 }
 
 function Y(e) {
   let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
     n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
     r = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : {},
+    i = !(arguments.length > 4) || void 0 === arguments[4] || arguments[4],
     {
-      paymentSourceId: i,
-      currency: a
+      paymentSourceId: a,
+      currency: o
     } = r;
   if (null != E.Z.get(e)) {
     let r = C.tuJ.DEFAULT;
     n ? r = C.tuJ.GIFT : t && (r = C.tuJ.PREMIUM_TIER_1);
-    let o = z(e, {
-      paymentSourceId: i,
+    let s = z(e, {
+      paymentSourceId: a,
       purchaseType: r,
-      currency: a
+      currency: o
     });
-    if (null == o) {
+    if (null == s) {
       let t = Error("Couldn't find price");
-      throw (0, y.q2)(t, {
+      throw i && (0, y.q2)(t, {
         extra: {
-          paymentSourceId: i
+          paymentSourceId: a
         },
         tags: {
           purchaseType: r.toString(),
           planId: e,
-          currency: null != a ? a : "unknown"
+          currency: null != o ? o : "unknown"
         }
       }), t
     }
-    return o
+    return s
   }
-  let o = Error("Plan not found");
-  throw (0, y.q2)(o, {
+  let s = Error("Plan not found");
+  throw i && (0, y.q2)(s, {
     tags: {
       planId: e,
-      currency: null != a ? a : "unknown"
+      currency: null != o ? o : "unknown"
     },
     extra: j(x({}, r), {
       isGift: n
     })
-  }), o
+  }), s
 }
 
 function W(e, t) {
@@ -1334,7 +1336,7 @@ function eK(e) {
     if (i === _.R.TREATMENT_1) {
       let e = P.pK.USD;
       try {
-        e = H(R.Xh.PREMIUM_MONTH_TIER_2).currency
+        e = H(R.Xh.PREMIUM_MONTH_TIER_2, !1, !1, void 0, !1).currency
       } catch (e) {}
       let r = (0, N.T4)(0, e, {
         maximumFractionDigits: 0
