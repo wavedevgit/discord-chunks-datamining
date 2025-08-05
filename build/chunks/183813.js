@@ -3,9 +3,9 @@ n.d(t, {
   S: () => y
 });
 var i = n(255367),
-  r = n(73800),
-  l = n(512722),
-  s = n.n(l),
+  l = n(73800),
+  r = n(512722),
+  s = n.n(r),
   a = n(442837),
   o = n(481060),
   C = n(204418),
@@ -14,8 +14,8 @@ var i = n(255367),
   u = n(594174),
   p = n(626135),
   x = n(987209),
-  h = n(563132),
-  f = n(409813),
+  f = n(563132),
+  h = n(409813),
   j = n(27034),
   m = n(981631),
   _ = n(388032),
@@ -26,33 +26,33 @@ function y(e) {
     handleStepChange: t,
     handleClose: n
   } = e, {
-    selectedPlan: l,
+    selectedPlan: r,
     selectedSkuId: y,
     step: E
-  } = (0, h.JL)(), {
+  } = (0, f.JL)(), {
     setSelectedGiftingPromotionReward: g,
-    selectedGiftingPromotionReward: b,
-    claimableRewards: S
+    selectedGiftingPromotionReward: S,
+    claimableRewards: b
   } = (0, x.wD)(), v = (0, a.e7)([u.default], () => u.default.getCurrentUser());
-  r.useEffect(() => {
-    let e = null != S && S.length > 0;
-    null == b && e && g(S[0])
-  }, [S, b, g]);
+  l.useEffect(() => {
+    let e = null != b && b.length > 0;
+    null == S && e && g(b[0])
+  }, [b, S, g]);
   let O = e => {
     let t = e.skuId;
     return (0, i.jsx)(d.Z, {
       skuId: t,
       price: _.intl.string(_.t.QQsaCQ),
-      isSelected: t === (null == b ? void 0 : b.skuId),
+      isSelected: t === (null == S ? void 0 : S.skuId),
       onSelect: () => g(e),
       className: L.giftSelectItem
     }, t)
   };
-  s()(null != l, "Expected plan to selected"), s()(null != y, "Expected selectedSkuId"), s()(null != E, "Step should be set");
-  let P = null == S ? void 0 : S.map(e => O(e)),
-    w = null != b && null != v ? (0, i.jsx)(C.Z, {
+  s()(null != r, "Expected plan to selected"), s()(null != y, "Expected selectedSkuId"), s()(null != E, "Step should be set");
+  let w = null == b ? void 0 : b.map(e => O(e)),
+    I = null != S && null != v ? (0, i.jsx)(C.Z, {
       avatarDecorationOverride: {
-        asset: b.assetId
+        asset: S.assetId
       },
       user: v,
       guildId: null,
@@ -63,20 +63,20 @@ function y(e) {
         className: L.modalFooter,
         children: (0, i.jsx)(c.y, {
           onStepChange: e => {
-            null != v && null != b && p.default.track(m.rMx.GIFT_PROMOTION_REWARD_SELECTED, {
+            null != v && null != S && p.default.track(m.rMx.GIFT_PROMOTION_REWARD_SELECTED, {
               user_id: v.id,
-              reward_sku_id: b.skuId
+              reward_sku_id: S.skuId
             }), t(e)
           },
-          onBackClick: () => t(f.h8.PLAN_SELECT),
+          onBackClick: () => t(h.h8.PLAN_SELECT),
           shouldRenderUpdatedPaymentModal: !0,
           showBackButton: !0,
-          planOptions: [l.id],
-          selectedPlanId: l.id
+          planOptions: [r.id],
+          selectedPlanId: r.id
         })
       })
     }),
-    I = (0, i.jsx)(o.X6q, {
+    P = (0, i.jsx)(o.X6q, {
       variant: "heading-lg/bold",
       color: "header-primary",
       children: _.intl.string(_.t["Rp0+ZG"])
@@ -88,7 +88,7 @@ function y(e) {
         direction: "horizontal",
         justify: "space-between",
         align: "center",
-        children: [I, (0, i.jsx)(o.olH, {
+        children: [P, (0, i.jsx)(o.olH, {
           onClick: n
         })]
       })
@@ -99,12 +99,12 @@ function y(e) {
         padding: {
           top: 24
         },
-        children: [w, (0, i.jsx)(o.Kqy, {
+        children: [I, (0, i.jsx)(o.Kqy, {
           gap: 8,
           padding: {
             top: 12
           },
-          children: P
+          children: w
         })]
       })
     }), Z]

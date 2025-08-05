@@ -1,80 +1,68 @@
 /** Chunk was on 54433 **/
 n.d(t, {
-  Z: () => f
-}), n(388685), n(190126), n(368063), n(65234), n(111804), n(490233), n(97749);
+  Z: () => p
+}), n(388685);
 var i = n(255367),
-  r = n(73800),
-  l = n(120356),
-  s = n.n(l),
-  a = n(544891),
+  l = n(73800),
+  r = n(120356),
+  s = n.n(r),
+  a = n(570140),
   o = n(70097),
   C = n(585483),
-  d = n(981631),
-  c = n(794503),
-  u = n(279421),
-  p = n(410401),
-  x = n(701262);
-let h = async e => {
-  let [t, n, i] = await Promise.all([a.tn.get({
-    url: u.Z,
-    binary: !0,
-    rejectWithError: !0
-  }), a.tn.get({
-    url: p.Z,
-    binary: !0,
-    rejectWithError: !0
-  }), a.tn.get({
-    url: x.Z,
-    binary: !0,
-    rejectWithError: !0
-  })]);
-  e({
-    modalGlowEntry: window.URL.createObjectURL(t.body),
-    modalGlowExit: window.URL.createObjectURL(n.body),
-    modalGlowIdle: window.URL.createObjectURL(i.body)
-  })
-}, f = e => {
+  d = n(402426),
+  c = n(981631),
+  u = n(794503);
+let p = e => {
   let {
     children: t,
-    visible: n,
-    shouldPrefetchWowMoment: l
-  } = e, [a, u] = (0, r.useState)({
-    modalGlowEntry: void 0,
-    modalGlowIdle: void 0,
-    modalGlowExit: void 0
-  }), [p, x] = (0, r.useState)("entry"), f = (0, r.useRef)(null), j = (0, r.useRef)(null), m = () => {
-    x("exit"), null != j.current && j.current.play()
-  }, _ = (0, r.useRef)(!0);
-  return ((0, r.useEffect)(() => (_.current = !0, () => {
-    _.current = !1
-  }), []), (0, r.useEffect)(() => () => {
-    null != a.modalGlowEntry && window.URL.revokeObjectURL(a.modalGlowEntry), null != a.modalGlowIdle && window.URL.revokeObjectURL(a.modalGlowIdle), null != a.modalGlowExit && window.URL.revokeObjectURL(a.modalGlowExit)
-  }, [a.modalGlowEntry, a.modalGlowIdle, a.modalGlowExit]), (0, r.useEffect)(() => {
-    l && h(e => {
-      _.current && u(e)
-    })
-  }, [l]), (0, r.useEffect)(() => {
+    isConfirmationStep: n,
+    isWowMomentConfirmationEligible: r
+  } = e, [p, x] = (0, l.useState)("entry"), f = (0, l.useRef)(null), h = (0, l.useRef)(null), j = () => {
+    if (x("exit"), null != h.current) {
+      var e;
+      null == (e = h.current) || e.play()
+    }
+  }, {
+    mediaUrls: m,
+    isSuccess: _
+  } = (0, d.Z)(r);
+  (0, l.useEffect)(() => {
     function e() {
-      m()
+      j()
     }
-    return C.S.subscribe(d.CkL.PREMIUM_PAYMENT_MODAL_CLOSED, e), () => {
-      C.S.unsubscribe(d.CkL.PREMIUM_PAYMENT_MODAL_CLOSED, e)
+    return C.S.subscribe(c.CkL.PREMIUM_PAYMENT_MODAL_CLOSED, e), () => {
+      C.S.unsubscribe(c.CkL.PREMIUM_PAYMENT_MODAL_CLOSED, e)
     }
-  }, []), n) ? (0, i.jsxs)("div", {
+  }, []);
+  let L = r && n && _;
+  return ((0, l.useEffect)(() => {
+    L && a.Z.dispatch({
+      type: "WOW_MOMENT_CONFIRMATION_SET_IS_DISPLAYING_WOW_MOMENT_CONFIRMATION",
+      value: L
+    })
+  }, [L]), (0, l.useEffect)(() => () => {
+    a.Z.dispatch({
+      type: "WOW_MOMENT_CONFIRMATION_SET_IS_DISPLAYING_WOW_MOMENT_CONFIRMATION",
+      value: !1
+    })
+  }, []), L) ? (0, i.jsxs)("div", {
     children: [(0, i.jsxs)("div", {
-      className: c.videoContainer,
+      className: u.videoContainer,
       children: [(0, i.jsx)("div", {
-        className: c.entryAnimationContainer,
+        className: u.entryAnimationContainer,
         children: (0, i.jsx)(o.Z, {
           playsInline: !0,
           muted: !0,
           autoPlay: !0,
           onEnded: () => {
-            x("idle"), null != f.current && f.current.play()
+            if (x("idle"), null != f.current) {
+              var e;
+              null == (e = f.current) || e.play()
+            }
           },
-          className: s()(c.video, "entry" === p ? c.visible : c.hidden),
+          className: s()(u.video, "entry" === p ? u.visible : u.hidden),
           children: (0, i.jsx)("source", {
-            src: a.modalGlowEntry
+            src: m.modalGlowEntry
           })
         })
       }), (0, i.jsx)(o.Z, {
@@ -82,21 +70,21 @@ let h = async e => {
         playsInline: !0,
         muted: !0,
         loop: !0,
-        className: s()(c.video, "idle" === p ? c.visible : c.hidden),
+        className: s()(u.video, "idle" === p ? u.visible : u.hidden),
         children: (0, i.jsx)("source", {
-          src: a.modalGlowIdle
+          src: m.modalGlowIdle
         })
       }), (0, i.jsx)(o.Z, {
-        ref: j,
+        ref: h,
         playsInline: !0,
         muted: !0,
-        className: s()(c.video, "exit" === p ? c.visible : c.hidden),
+        className: s()(u.video, "exit" === p ? u.visible : u.hidden),
         children: (0, i.jsx)("source", {
-          src: a.modalGlowExit
+          src: m.modalGlowExit
         })
       })]
     }), (0, i.jsx)("div", {
-      className: c.entryAnimationContainer,
+      className: u.entryAnimationContainer,
       children: t
     })]
   }) : t

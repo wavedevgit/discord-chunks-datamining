@@ -1,42 +1,44 @@
 /** Chunk was on 37979 **/
-r.d(t, {
-  H: () => f,
-  Z: () => h
-}), r(388685), r(539854), r(290780);
-var n = r(255367),
-  l = r(73800),
-  a = r(481060),
-  i = r(594174),
-  u = r(5192),
-  s = r(738018),
-  o = r(607802),
-  c = r(532428);
+l.d(t, {
+  HJ: () => h,
+  Z2: () => g,
+  Zc: () => p
+}), l(388685), l(539854), l(290780);
+var n = l(255367),
+  r = l(73800),
+  a = l(481060),
+  i = l(594174),
+  u = l(5192),
+  s = l(738018),
+  o = l(607802),
+  c = l(532428),
+  d = l(981631);
 
-function d(e) {
+function f(e) {
   let {
     user: t,
-    guildId: r,
+    guildId: l,
     channelId: n
-  } = e, l = u.ZP.getName(r, n, t);
+  } = e, r = u.ZP.getName(l, n, t);
   return {
     value: t.id,
-    label: l,
+    label: r,
     key: t.id
   }
 }
 
-function f(e, t) {
-  let r = l.useMemo(() => (0, o.s5)(e), [e]),
-    n = l.useMemo(() => (0, o.AH)(e), [e]),
-    [a, u] = l.useState([]),
-    [f, h] = l.useState(""),
-    p = l.useMemo(() => {
-      let l = s.Z.getFilterResults(e, t, f);
-      if (0 === l.length) return [];
+function h(e, t) {
+  let l = r.useMemo(() => (0, o.s5)(e), [e]),
+    n = r.useMemo(() => (0, o.AH)(e), [e]),
+    [a, u] = r.useState([]),
+    [d, h] = r.useState(""),
+    p = r.useMemo(() => {
+      let r = s.Z.getFilterResults(e, t, d);
+      if (0 === r.length) return [];
       let u = [],
-        o = l.map(e => d({
+        o = r.map(e => f({
           user: e.user,
-          guildId: r,
+          guildId: l,
           channelId: n
         })),
         c = new Set(o.map(e => null == e ? void 0 : e.value));
@@ -44,23 +46,23 @@ function f(e, t) {
         if (c.has(e)) return;
         let t = i.default.getUser(e);
         if (null == t) return;
-        let l = d({
+        let r = f({
           user: t,
-          guildId: r,
+          guildId: l,
           channelId: n
         });
-        u.unshift(l)
+        u.unshift(r)
       }), u
-    }, [e, t, f, a, r, n]),
-    g = l.useCallback(() => {
+    }, [e, t, d, a, l, n]),
+    g = r.useCallback(() => {
       u([]), h("")
     }, []),
-    b = l.useCallback(e => {
+    b = r.useCallback(e => {
       if (0 === a.length) return null;
       let t = c.ZP[e];
       return a.map(e => {
-        let r = i.default.getUser(e);
-        return "".concat(t.key, " ").concat(null == r ? void 0 : r.username)
+        let l = i.default.getUser(e);
+        return "".concat(t.key, " ").concat(null == l ? void 0 : l.username)
       }).join(" ")
     }, [a]);
   return {
@@ -73,23 +75,23 @@ function f(e, t) {
   }
 }
 
-function h(e) {
+function p(e) {
   return {
     filter: !1,
     closeOnSelect: !1,
-    renderOptionPrefix: l.useCallback(t => {
-      var r;
+    renderOptionPrefix: r.useCallback(t => {
+      var l;
       if (null == t) return;
-      let l = i.default.getUser(t.value);
-      if (null == l) return;
-      let u = null != (r = l.getAvatarURL(e, 80)) ? r : l.avatar;
+      let r = i.default.getUser(t.value);
+      if (null == r) return;
+      let u = null != (l = r.getAvatarURL(e, 80)) ? l : r.avatar;
       return (0, n.jsx)(a.qEK, {
         src: u,
         size: a.EFr.SIZE_16,
         "aria-hidden": !0
       })
     }, [e]),
-    renderOptionSuffix: l.useCallback(e => {
+    renderOptionSuffix: r.useCallback(e => {
       if (null == e) return;
       let t = i.default.getUser(e.value);
       if (null != t) return (0, n.jsx)(a.Text, {
@@ -98,5 +100,36 @@ function h(e) {
         children: t.username
       })
     }, [])
+  }
+}
+
+function g(e) {
+  let [t, l] = r.useState([]), n = r.useMemo(() => {
+    let t = s.Z.getFilterResults(e, d.dCx.FILTER_HAS, "");
+    if (0 === t.length) return [];
+    let l = [];
+    return l.push(...t.map(e => {
+      let {
+        text: t
+      } = e;
+      return {
+        value: t,
+        label: t,
+        key: t
+      }
+    })), l
+  }, [e]), a = r.useCallback(() => {
+    l([])
+  }, []), i = r.useCallback(e => {
+    if (0 === t.length) return null;
+    let l = c.ZP[e];
+    return t.map(e => "".concat(l.key, " ").concat(e)).join(" ")
+  }, [t]);
+  return {
+    options: n,
+    query: t,
+    setQuery: l,
+    handleClearFilter: a,
+    getApplyQueryString: i
   }
 }

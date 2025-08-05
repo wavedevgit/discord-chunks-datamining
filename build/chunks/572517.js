@@ -3,8 +3,8 @@ n.d(t, {
   c: () => x
 });
 var i = n(255367),
-  r = n(442837),
-  l = n(780384),
+  l = n(442837),
+  r = n(780384),
   s = n(481060),
   a = n(410030),
   o = n(607070),
@@ -16,16 +16,16 @@ var i = n(255367),
 
 function x() {
   var e;
-  let t = (0, r.e7)([o.Z], () => o.Z.useReducedMotion),
+  let t = (0, l.e7)([o.Z], () => o.Z.useReducedMotion),
     n = (0, a.ZP)(),
-    x = (0, l.wj)(n),
-    h = (0, c.Z)(),
-    f = null == h ? void 0 : h.planSelectionBanner,
+    x = (0, r.wj)(n),
+    f = (0, c.Z)(),
+    h = null == f ? void 0 : f.planSelectionBanner,
     {
       claimableRewards: j
     } = (0, C.wD)();
-  if (null == f || null == j) return null;
-  let m = null == (e = f.gradientConfig) ? void 0 : e.call(f, {
+  if (null == h || null == j) return null;
+  let m = null == (e = h.gradientConfig) ? void 0 : e.call(h, {
       isDarkMode: x,
       isAndroid: !1
     }),
@@ -35,12 +35,12 @@ function x() {
     style: _,
     children: [(0, i.jsx)(u.Z, {
       claimableRewards: j,
-      maxRewardImageSrc: f.getImageUrl(x, t),
+      maxRewardImageSrc: h.getImageUrl(x, t),
       size: s.EFr.SIZE_40
     }), (0, i.jsx)(s.Text, {
       variant: "text-md/medium",
       className: p.bannerText,
-      children: f.desktopBannerText(j.length)
+      children: h.desktopBannerText(j.length)
     })]
   })
 }
