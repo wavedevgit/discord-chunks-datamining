@@ -1,6 +1,6 @@
 /**
   Module ID: 31924
-  Original File Name: 283beb9724036221
+  Original File Name: fe0bd3b6db76b222
 **/
 .icon_f4b9b5 {
     filter: saturate(var(--saturation-factor,1))
@@ -141,7 +141,8 @@
 
 .image_bc32e9 {
     background: var(--background-base-lowest);
-    border-radius: var(--radius-sm)
+    border-radius: var(--radius-sm);
+    max-height: 205px
 }
 
-/*# sourceMappingURL=283beb9724036221.css.map*/
+/*# sourceMappingURL=fe0bd3b6db76b222.css.map*/

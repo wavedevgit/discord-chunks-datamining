@@ -6,8 +6,8 @@ r.d(t, {
 var n = r(255367);
 r(73800);
 var l = r(120356),
-  i = r.n(l),
-  a = r(481060),
+  a = r.n(l),
+  i = r(481060),
   o = r(937615),
   s = r(388032),
   c = r(843819);
@@ -20,10 +20,10 @@ let u = e => {
     className: l,
     variant: u = "heading-md/semibold"
   } = e, d = (0, o.qr)(t, r);
-  return (0, n.jsxs)(a.Text, {
+  return (0, n.jsxs)(i.Text, {
     variant: u,
-    className: i()(c.striked, l),
-    children: [(0, n.jsx)(a.nn4, {
+    className: a()(c.striked, l),
+    children: [(0, n.jsx)(i.nn4, {
       children: s.intl.format(s.t["2CEGlp"], {
         price: d
       })

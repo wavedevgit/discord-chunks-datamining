@@ -5,8 +5,8 @@ r.d(t, {
 });
 var n = r(255367),
   l = r(409116),
-  i = r(755007),
-  a = r(231338),
+  a = r(755007),
+  i = r(231338),
   o = r(858022);
 
 function s(e) {
@@ -17,7 +17,7 @@ function s(e) {
     hasSufficientOrbs: c,
     discountOfferAmount: u
   } = e;
-  return t.currency === a.pK.DISCORD_ORB ? (0, n.jsx)(i.Z, {
+  return t.currency === i.pK.DISCORD_ORB ? (0, n.jsx)(a.Z, {
     orbAmount: t.amount,
     className: c ? void 0 : o.disabled
   }) : (0, n.jsx)(l.F, {
@@ -34,8 +34,8 @@ function c(e) {
     displayPrices: t,
     isPremiumUser: r,
     discount: l,
-    hasSufficientOrbs: i,
-    discountOfferAmount: a
+    hasSufficientOrbs: a,
+    discountOfferAmount: i
   } = e;
   return (0, n.jsx)("div", {
     className: o.priceLine,
@@ -43,8 +43,8 @@ function c(e) {
       price: e,
       isPremiumUser: r,
       discount: l,
-      hasSufficientOrbs: i,
-      discountOfferAmount: a
+      hasSufficientOrbs: a,
+      discountOfferAmount: i
     }, t))
   })
 }

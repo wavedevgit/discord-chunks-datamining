@@ -1,17 +1,17 @@
 /** Chunk was on 45620 **/
 "use strict";
 r.d(t, {
-  T: () => a,
+  T: () => i,
   v: () => o
 });
 var n = r(255367);
 r(73800);
 var l = r(481060);
-let i = "collectibles shop product details modal",
-  a = e => {
+let a = "collectibles shop product details modal",
+  i = e => {
     let {
       product: t,
-      category: a,
+      category: i,
       shouldCheckoutWithOrbs: o,
       analyticsSource: s,
       analyticsLocations: c,
@@ -23,7 +23,7 @@ let i = "collectibles shop product details modal",
         default: e
       } = await Promise.all([r.e("25292"), r.e("31978"), r.e("40694"), r.e("78223"), r.e("60432")]).then(r.bind(r, 702370));
       return r => {
-        var l, i;
+        var l, a;
         return (0, n.jsx)(e, (l = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var r = null != arguments[t] ? arguments[t] : {},
@@ -41,29 +41,29 @@ let i = "collectibles shop product details modal",
             })
           }
           return e
-        }({}, r), i = i = {
+        }({}, r), a = a = {
           product: t,
-          category: a,
+          category: i,
           shouldCheckoutWithOrbs: o,
           analyticsSource: s,
           analyticsLocations: c,
           returnRef: u,
           tab: d
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
           var r = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
             var n = Object.getOwnPropertySymbols(e);
             r.push.apply(r, n)
           }
           return r
-        })(Object(i)).forEach(function(e) {
-          Object.defineProperty(l, e, Object.getOwnPropertyDescriptor(i, e))
+        })(Object(a)).forEach(function(e) {
+          Object.defineProperty(l, e, Object.getOwnPropertyDescriptor(a, e))
         }), l))
       }
     }, {
-      modalKey: i
+      modalKey: a
     })
   },
   o = () => {
-    (0, l.Mr3)(i)
+    (0, l.Mr3)(a)
   }

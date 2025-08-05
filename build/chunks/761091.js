@@ -41,6 +41,8 @@ function O(e) {
     } = l.Z.getCurrentConfig({
       guildId: e.id,
       location: "useGuildActionRows"
+    }, {
+      autoTrackExposure: !0
     });
     x.push(b.z.GUILD_MOD_DASH_MEMBER_SAFETY)
   }

@@ -20,6 +20,8 @@ function u(e) {
     } = r.Z.getCurrentConfig({
       guildId: e,
       location: "getChannelIdForGuildTransition"
+    }, {
+      autoTrackExposure: !1
     });
   return (n !== c.oC.GUILD_ONBOARDING || i.ZP.shouldShowOnboarding(e)) && (n !== c.oC.GUILD_HOME || (0, a.s)(e)) ? null == o.Z.getChannel(n) ? u : n : u
 }

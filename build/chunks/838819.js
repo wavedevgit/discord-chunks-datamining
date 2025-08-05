@@ -5,23 +5,23 @@ r.r(t), r.d(t, {
 }), r(388685);
 var n = r(255367),
   l = r(73800),
-  i = r(120356),
-  a = r.n(i),
+  a = r(120356),
+  i = r.n(a),
   o = r(772848),
   s = r(399606),
   c = r(952265),
   u = r(481060),
   d = r(150063),
   p = r(211266),
-  f = r(906732),
-  g = r(977395),
+  g = r(906732),
+  f = r(977395),
   h = r(214852),
   b = r(238359),
-  m = r(511050),
-  _ = r(819640),
-  O = r(594174),
-  v = r(381585),
-  C = r(597688),
+  _ = r(511050),
+  m = r(819640),
+  v = r(594174),
+  C = r(381585),
+  O = r(597688),
   E = r(780475),
   S = r(223143),
   y = r(298228),
@@ -41,31 +41,31 @@ let R = e => {
       children: t,
       shouldAddEventListener: r,
       onClose: n
-    } = e, i = (0, c.f9)();
+    } = e, a = (0, c.f9)();
     return l.useEffect(() => {
-      if (!r || i) return;
+      if (!r || a) return;
       let e = e => {
         e.key === w.mR.Escape && n()
       };
       return window.addEventListener("keydown", e), () => window.removeEventListener("keydown", e)
-    }, [r, i, n]), t
+    }, [r, a, n]), t
   },
   Z = function(e) {
     let {
       isFullScreen: t = !0,
       tab: r = N.AW.HOME
     } = e;
-    (0, h.z)(g.f);
-    let i = (0, p.Z)((0, o.Z)()),
-      c = (0, s.e7)([O.default], () => O.default.getCurrentUser()),
+    (0, h.z)(f.f);
+    let a = (0, p.Z)((0, o.Z)()),
+      c = (0, s.e7)([v.default], () => v.default.getCurrentUser()),
       {
         closeIntroToOrbsClaimedCoachmark: w
-      } = (0, m.Z)({
+      } = (0, _.Z)({
         location: "CollectiblesShop"
       });
     l.useEffect(() => () => {
       w()
-    }, [i, w]);
+    }, [a, w]);
     let {
       onClose: Z
     } = (0, I.Db)(), {
@@ -78,28 +78,28 @@ let R = e => {
       location: "CollectiblesShop.web",
       logPerf: !0
     }, {
-      sessionId: i,
+      sessionId: a,
       tab: M,
       isFullScreen: t
     });
     (0, b.D)();
     let V = (0, y.O)(H),
-      [U, G] = l.useState(),
-      z = (0, s.e7)([C.Z], () => {
+      [U, z] = l.useState(),
+      G = (0, s.e7)([O.Z], () => {
         var e;
-        return null == (e = C.Z.getCategory(U)) ? void 0 : e.name
+        return null == (e = O.Z.getCategory(U)) ? void 0 : e.name
       }),
       [q, K] = l.useState();
     (0, T.Kp)();
     let Y = l.useCallback((e, t) => {
-        K(e), G(t)
+        K(e), z(t)
       }, []),
       {
         selectedTab: X,
         transitionState: J,
         transitionToTab: Q
       } = (0, x.B)(M, t);
-    (0, E.q3)(i, X, z, J, q), (0, E.EB)(X, c);
+    (0, E.q3)(a, X, G, J, q), (0, E.EB)(X, c);
     let {
       dismissShopButtonDC: $
     } = (0, k.Z)();
@@ -108,7 +108,7 @@ let R = e => {
     }, [$]), l.useEffect(() => {
       t || (0, d.Y)(A.Z5c.COLLECTIBLES_SHOP)
     }, [t]);
-    let ee = (0, s.e7)([_.Z], () => _.Z.getLayers().includes(A.S9g.COLLECTIBLES_SHOP)),
+    let ee = (0, s.e7)([m.Z], () => m.Z.getLayers().includes(A.S9g.COLLECTIBLES_SHOP)),
       et = l.useRef(null),
       er = l.useRef(null);
     (0, u.Tbt)(et);
@@ -124,14 +124,14 @@ let R = e => {
       }
     }, [t, en]);
     let {
-      analyticsLocations: ei
+      analyticsLocations: ea
     } = (0, E.MV)(X);
-    return el && !t ? null : (0, n.jsx)(f.Gt, {
-      value: ei,
-      children: (0, n.jsx)(v.k0, {
+    return el && !t ? null : (0, n.jsx)(g.Gt, {
+      value: ea,
+      children: (0, n.jsx)(C.k0, {
         newValue: {
-          sessionId: i,
-          pageCategory: z,
+          sessionId: a,
+          pageCategory: G,
           pageSize: N.kN
         },
         children: (0, n.jsx)(R, {
@@ -142,7 +142,7 @@ let R = e => {
             ref: t ? et : er,
             tabIndex: -1,
             children: (0, n.jsxs)("div", {
-              className: a()(B.shopViewWrapper, {
+              className: i()(B.shopViewWrapper, {
                 [B.visible]: J === N.f7.VISIBLE,
                 [B.in]: J === N.f7.IN,
                 [B.out]: J === N.f7.OUT

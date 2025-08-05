@@ -713,7 +713,7 @@ let eG = {
       });
       let s = () => eB._sendMessage(e, t, i),
         l = x.ZP.backgroundify(s, void 0);
-      return (k.Z.recordMessageSendAttempt(e, o), es.Z.isReady(e)) ? l() : r && e !== E.V ? (ew.info("Waiting for channel ".concat(e, " to be ready before sending.")), new Promise((t, n) => {
+      return (k.Z.recordMessageSendAttempt(e, o, i), es.Z.isReady(e)) ? l() : r && e !== E.V ? (ew.info("Waiting for channel ".concat(e, " to be ready before sending.")), new Promise((t, n) => {
         es.Z.whenReady(e, () => {
           ew.info("Channel ".concat(e, " is ready for sending now.")), l().then(t, n)
         })

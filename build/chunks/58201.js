@@ -1,11 +1,11 @@
 /** Chunk was on 45620 **/
 "use strict";
 r.d(t, {
-  W: () => i
+  W: () => a
 });
 var n = r(979554),
   l = r(597688);
-let i = (e, t) => {
-  var r, i, a;
-  return e.type === n.Z.VARIANTS_GROUP && null != t && null != (a = l.Z.getProduct(null == (i = e.variants) || null == (r = i[t]) ? void 0 : r.skuId)) ? a : e
+let a = (e, t) => {
+  var r, a, i;
+  return e.type === n.Z.VARIANTS_GROUP && null != t && null != (i = l.Z.getProduct(null == (a = e.variants) || null == (r = a[t]) ? void 0 : r.skuId)) ? i : e
 }

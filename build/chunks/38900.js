@@ -2,20 +2,20 @@
 "use strict";
 r.d(t, {
   K: () => p,
-  Z: () => f
+  Z: () => g
 });
 var n = r(255367);
 r(73800);
 var l = r(120356),
-  i = r.n(l),
-  a = r(484920),
+  a = r.n(l),
+  i = r(484920),
   o = r(544348),
   s = r(556559),
   c = r(33588);
 let u = () => 4 * Math.random() + 8,
   d = [u(), u(), u()],
   p = () => (0, n.jsx)("div", {
-    className: i()(s.skeleton, c.shopCard),
+    className: a()(s.skeleton, c.shopCard),
     children: (0, n.jsxs)("div", {
       className: s.cardBody,
       children: [(0, n.jsx)("div", {
@@ -29,12 +29,12 @@ let u = () => 4 * Math.random() + 8,
       })]
     })
   }),
-  f = () => (0, n.jsx)("div", {
-    className: a.skeletons,
+  g = () => (0, n.jsx)("div", {
+    className: i.skeletons,
     children: d.map(e => (0, n.jsxs)("div", {
-      className: a.cardsContainer,
+      className: i.cardsContainer,
       children: [(0, n.jsx)("div", {
-        className: i()(s.skeleton, o.shopBanner),
+        className: a()(s.skeleton, o.shopBanner),
         children: (0, n.jsx)("div", {
           className: s.bannerBody
         })

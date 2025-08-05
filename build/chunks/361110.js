@@ -1,11 +1,11 @@
 /** Chunk was on 45620 **/
 "use strict";
 r.d(t, {
-  f: () => i
+  f: () => a
 }), r(388685);
 var n = r(73800),
   l = r(979554);
-let i = e => {
+let a = e => {
   let [t, r] = (0, n.useState)(null);
   return {
     previewingVariantIndex: t,

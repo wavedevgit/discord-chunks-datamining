@@ -1,12 +1,12 @@
 /** Chunk was on 45620 **/
 "use strict";
 r.d(t, {
-  J: () => g
+  J: () => f
 }), r(539854), r(35282);
 var n = r(255367),
   l = r(73800),
-  i = r(120356),
-  a = r.n(i),
+  a = r(120356),
+  i = r.n(a),
   o = r(66546),
   s = r(873546),
   c = r(435935),
@@ -14,25 +14,25 @@ var n = r(255367),
   d = r(774078),
   p = r(698921);
 
-function f(e) {
+function g(e) {
   let {
     endDate: t
   } = e, {
     days: r,
     hours: l,
-    minutes: i
+    minutes: a
   } = (0, d.Z)(t), o = function(e, t, r) {
     let n = e => "".concat(e.toString().padStart(2, "0")),
       l = [];
     return l.push(n(e)), l.push(n(t)), l.push(n(r)), l.join(":")
-  }(r, l, i);
+  }(r, l, a);
   return (0, n.jsx)("div", {
     className: p.timerNumContainer,
     role: "timer",
     "aria-relevant": "all",
     children: o.split("").map((e, t) => (0, n.jsx)(u.X6q, {
       variant: "heading-md/medium",
-      className: a()({
+      className: i()({
         [p.timerDelineator]: ":" === e,
         [p.timerNum]: ":" !== e
       }),
@@ -40,12 +40,12 @@ function f(e) {
     }, t))
   })
 }
-let g = l.memo(function(e) {
+let f = l.memo(function(e) {
   let {
     record: t,
     isVisible: r,
     isFullScreen: l
-  } = e, i = (0, u.q_F)({
+  } = e, a = (0, u.q_F)({
     transform: "translateX(-50%) ".concat(r ? "translateY(-75%)" : "translateY(0%)"),
     opacity: +!!r,
     config: {
@@ -54,7 +54,7 @@ let g = l.memo(function(e) {
     }
   });
   return (0, n.jsxs)(o.animated.div, {
-    className: a()([p.countDownWrapper, l && p.fullScreenWrapper, s.tq && p.mobileWrapper]),
+    className: i()([p.countDownWrapper, l && p.fullScreenWrapper, s.tq && p.mobileWrapper]),
     role: "status",
     style: function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -73,7 +73,7 @@ let g = l.memo(function(e) {
         })
       }
       return e
-    }({}, i, null != t.bannerUrl && "" !== t.bannerUrl && {
+    }({}, a, null != t.bannerUrl && "" !== t.bannerUrl && {
       backgroundImage: "url(".concat(t.bannerUrl, ")"),
       backgroundSize: "cover",
       backgroundPosition: "top"
@@ -95,7 +95,7 @@ let g = l.memo(function(e) {
         } : void 0,
         children: t.body
       })]
-    }), (0, n.jsx)(f, {
+    }), (0, n.jsx)(g, {
       endDate: t.endTime
     })]
   })
