@@ -5,9 +5,9 @@ n.d(t, {
 }), n(388685);
 var r = n(255367);
 n(73800);
-var i = n(481060),
-  a = n(570140),
-  o = n(468026),
+var i = n(82659),
+  a = n(481060),
+  o = n(570140),
   s = n(522474),
   l = n(788983),
   c = n(359110),
@@ -47,31 +47,41 @@ let v = !1,
   I = !1;
 class T extends f.Z {
   _initialize() {
-    super._initialize(), s.Z.addChangeListener(this.handlePopoutWindowUpdate), a.Z.subscribe("POPOUT_WINDOW_OPEN", this.handlePopoutWindowOpen)
+    super._initialize(), s.Z.addChangeListener(this.handlePopoutWindowUpdate), o.Z.subscribe("POPOUT_WINDOW_OPEN", this.handlePopoutWindowOpen)
   }
   _terminate() {
-    super._terminate(), s.Z.removeChangeListener(this.handlePopoutWindowUpdate), a.Z.unsubscribe("POPOUT_WINDOW_OPEN", this.handlePopoutWindowOpen)
+    super._terminate(), s.Z.removeChangeListener(this.handlePopoutWindowUpdate), o.Z.unsubscribe("POPOUT_WINDOW_OPEN", this.handlePopoutWindowOpen)
   }
   showErrorModal(e) {
     let {
       code: t,
       message: n
     } = e;
-    (0, i.ZDy)(async () => e => (0, r.jsx)(o.default, O({
+    (0, a.ZDy)(async () => e => (0, r.jsx)(i.Modal, O({
       title: b.intl.formatToPlainString(b.t.hbiAOz, {
         code: t
       }),
-      body: n
+      subtitle: n,
+      actions: [{
+        text: b.intl.string(b.t.BddRzc),
+        onClick: e.onClose,
+        variant: "primary"
+      }]
     }, e)))
   }
   showLaunchErrorModal(e) {
-    (0, i.ZDy)(async () => t => (0, r.jsx)(o.default, O({
+    (0, a.ZDy)(async () => t => (0, r.jsx)(i.Modal, O({
       title: b.intl.string(b.t.PtobXV),
-      body: e
+      subtitle: e,
+      actions: [{
+        text: b.intl.string(b.t.BddRzc),
+        onClick: t.onClose,
+        variant: "primary"
+      }]
     }, t)))
   }
   showDevShelfOverrideEnabled() {
-    (0, i.showToast)((0, i.createToast)(b.intl.string(b.t.JfA7IC), i.ToastType.SUCCESS))
+    (0, a.showToast)((0, a.createToast)(b.intl.string(b.t.JfA7IC), a.ToastType.SUCCESS))
   }
   leaveActivity(e) {
     let {
@@ -80,7 +90,7 @@ class T extends f.Z {
       showFeedback: r,
       shouldClosePopout: i = !0
     } = e;
-    a.Z.wait(() => {
+    o.Z.wait(() => {
       (0, d.mW)({
         location: t,
         applicationId: n,

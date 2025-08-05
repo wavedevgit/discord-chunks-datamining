@@ -14,18 +14,14 @@ var r = n(544891),
 let s = async (e, t) => (await r.tn.get({
   url: o.ANM.APPLICATION_SUBSCRIPTION_GROUP_LISTING(e, t),
   rejectWithError: !1
-})).body, l = async function(e) {
-  let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
-  return (await r.tn.get({
-    url: o.ANM.GUILD_ENTITLEMENTS(e),
-    query: {
-      with_sku: !0,
-      with_application: !0,
-      exclude_deleted: t
-    },
-    rejectWithError: !1
-  })).body
-}, c = async e => (await r.tn.get({
+})).body, l = async e => (await r.tn.get({
+  url: o.ANM.GUILD_ENTITLEMENTS(e),
+  query: {
+    with_sku: !0,
+    with_application: !0
+  },
+  rejectWithError: !1
+})).body, c = async e => (await r.tn.get({
   url: o.ANM.SUBSCRIPTION_PLAN_GROUP_LISTING(e),
   rejectWithError: !1
 })).body;

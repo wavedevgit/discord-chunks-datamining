@@ -1,6 +1,6 @@
 /**
   Module ID: 13653
-  Original File Name: 9ac38da7b41490ca
+  Original File Name: ea45b27171a37e73
 **/
 .slowModeIcon_b21699 {
     display: block;
@@ -94,6 +94,7 @@
 .base_b88801 .typingDots_b88801 {
     align-items: center;
     display: flex;
+    flex: 1 1 auto;
     overflow: hidden;
     text-overflow: ellipsis
 }
@@ -2711,4 +2712,4 @@
     pointer-events: none
 }
 
-/*# sourceMappingURL=9ac38da7b41490ca.css.map*/
+/*# sourceMappingURL=ea45b27171a37e73.css.map*/

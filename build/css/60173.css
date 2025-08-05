@@ -1,6 +1,6 @@
 /**
   Module ID: 60173
-  Original File Name: 330c63fe99df12fb
+  Original File Name: 2ab6d46b9f04276a
 **/
 @keyframes placeholderPulse_c8ffbb {
     0% {
@@ -449,6 +449,7 @@
 .base_b88801 .typingDots_b88801 {
     align-items: center;
     display: flex;
+    flex: 1 1 auto;
     overflow: hidden;
     text-overflow: ellipsis
 }
@@ -13140,4 +13141,4 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
     position: relative
 }
 
-/*# sourceMappingURL=330c63fe99df12fb.css.map*/
+/*# sourceMappingURL=2ab6d46b9f04276a.css.map*/
