@@ -1,4 +1,4 @@
-/** Chunk was on 70663 **/
+/** Chunk was on 92357 **/
 n.d(t, {
   RB: () => j,
   VH: () => y,
@@ -10,8 +10,8 @@ var r = n(692547),
   i = n(497089),
   l = n(650473),
   o = n(389765),
-  a = n(137492),
-  s = n(387661),
+  s = n(137492),
+  a = n(387661),
   c = n(659953),
   u = n(319707),
   d = n(584914),
@@ -21,9 +21,9 @@ var r = n(692547),
   g = n(549931),
   m = n(178561),
   b = n(39863),
-  _ = n(130312);
-let O = {
-    CHECKED: s,
+  O = n(130312);
+let _ = {
+    CHECKED: a,
     FRIENDS: u,
     SHARE_SCREEN: b,
     NEW_MESSAGE: g,
@@ -34,8 +34,8 @@ let O = {
     FRIEND_REQUEST_REMINDER: d,
     SCHEDULED_GUILD_EVENT: c,
     TOP_MESSAGES: p,
-    NOTIFICATION_CENTER: a,
-    UPDATE_PROFILE: _,
+    NOTIFICATION_CENTER: s,
+    UPDATE_PROFILE: O,
     FIND_FRIENDS: o,
     ADD_FRIEND: o,
     FIRST_MESSAGE: m
@@ -75,31 +75,31 @@ let O = {
     switch (e) {
       case i.DY.GO_LIVE_PUSH:
         return {
-          icon: O.SHARE_SCREEN, color: r.Z.colors.BACKGROUND_ACCENT
+          icon: _.SHARE_SCREEN, color: r.Z.colors.BACKGROUND_ACCENT
         };
       case i.DY.FRIEND_REQUEST_ACCEPTED:
       case i.DY.GAME_FRIEND_REQUEST_ACCEPTED:
         return {
-          icon: O.CHECKED, color: r.Z.colors.STATUS_POSITIVE_BACKGROUND
+          icon: _.CHECKED, color: r.Z.colors.STATUS_POSITIVE_BACKGROUND
         };
       case i.DY.FRIEND_REQUEST_PENDING:
       case i.DY.FRIEND_SUGGESTION_CREATED:
         return {
-          icon: O.FRIENDS, color: r.Z.colors.BACKGROUND_ACCENT
+          icon: _.FRIENDS, color: r.Z.colors.BACKGROUND_ACCENT
         };
       case i.DY.DM_FRIEND_NUDGE:
         return {
-          icon: O.NEW_MESSAGE, color: r.Z.colors.BACKGROUND_ACCENT
+          icon: _.NEW_MESSAGE, color: r.Z.colors.BACKGROUND_ACCENT
         };
       case i.O7.INCOMING_FRIEND_REQUESTS:
       case i.O7.INCOMING_FRIEND_REQUESTS_ACCEPTED:
         return {
-          icon: O.FRIENDS, color: r.Z.colors.BACKGROUND_ACCENT
+          icon: _.FRIENDS, color: r.Z.colors.BACKGROUND_ACCENT
         };
       case i.O7.INCOMING_GAME_FRIEND_REQUESTS:
       case i.O7.INCOMING_GAME_FRIEND_REQUESTS_ACCEPTED:
         return {
-          icon: O.GAME_RELATIONSHIP, color: r.Z.colors.BACKGROUND_ACCENT
+          icon: _.GAME_RELATIONSHIP, color: r.Z.colors.BACKGROUND_ACCENT
         };
       default:
         return null

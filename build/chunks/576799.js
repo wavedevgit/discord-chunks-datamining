@@ -1,67 +1,70 @@
-/** Chunk was on 94313 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
-  Z: () => f
+  Z: () => p
 });
 var r = n(255367),
   i = n(73800),
-  l = n(442837),
-  a = n(616780),
-  o = n(905405),
-  s = n(937889),
+  a = n(442837),
+  o = n(616780),
+  s = n(905405),
+  l = n(937889),
   c = n(267128),
   u = n(123145),
   d = n(699516),
-  p = n(217702),
-  m = n(848697);
+  f = n(217702),
+  _ = n(848697);
 
-function f(e) {
+function p(e) {
   let {
     message: t,
     channel: n
   } = e, {
-    isBlocked: f,
-    isIgnored: g
-  } = (0, l.cj)([d.Z], () => ({
+    isBlocked: c,
+    isIgnored: f
+  } = (0, a.cj)([d.Z], () => ({
     isBlocked: d.Z.isBlockedForMessage(t),
     isIgnored: d.Z.isIgnoredForMessage(t)
-  }), [t]), _ = (0, o.p)(), h = i.useMemo(() => ({
+  }), [t]), p = (0, s.p)(), m = i.useMemo(() => ({
     [n.guild_id]: [t.author.id]
   }), [n.guild_id, t.author.id]);
-  (0, a.$)(h);
-  let b = i.useMemo(() => null != t.content && "" !== t.content ? (0, s.ZP)(t, {
+  (0, o.$)(m);
+  let g = i.useMemo(() => null != t.content && "" !== t.content ? (0, l.ZP)(t, {
     formatInline: !0,
-    shouldFilterKeywords: _
-  }).content : null, [t, _]);
+    shouldFilterKeywords: p
+  }).content : null, [t, p]);
   return (0, r.jsxs)("div", {
-    className: m.threadMessageAccessory,
+    className: _.threadMessageAccessory,
     children: [(0, r.jsx)("img", {
       alt: "",
       src: t.author.getAvatarURL(n.guild_id, 16),
-      className: m.threadMessageAccessoryAvatar
+      className: _.threadMessageAccessoryAvatar
     }), (0, r.jsx)(u.Z, {
       message: t,
       channel: n,
       compact: !0
     }), (0, r.jsx)("div", {
-      className: m.threadMessageAccessoryPreview,
-      children: function(e, t, n, i) {
-        let {
-          contentPlaceholder: l,
-          renderedContent: a,
-          leadingIcon: o,
-          trailingIcon: s
-        } = (0, c.f)(e, t, n, i, m.threadMessageAccessoryContent, {
-          trailingIconClass: m.threadMessageAccessoryContentTrailingIcon,
-          leadingIconClass: m.threadMessageAccessoryContentLeadingIcon,
-          iconSize: p.WW
-        });
-        return (0, r.jsxs)(r.Fragment, {
-          children: [o, null != a ? a : (0, r.jsx)("span", {
-            className: m.threadMessageAccessoryPlaceholder,
-            children: l
-          }), s]
-        })
-      }(t, b, f, g)
+      className: _.threadMessageAccessoryPreview,
+      children: h(t, g, c, f)
     })]
+  })
+}
+
+function h(e, t, n, i) {
+  let {
+    contentPlaceholder: a,
+    renderedContent: o,
+    leadingIcon: s,
+    trailingIcon: l
+  } = (0, c.f)(e, t, n, i, _.threadMessageAccessoryContent, {
+    trailingIconClass: _.threadMessageAccessoryContentTrailingIcon,
+    leadingIconClass: _.threadMessageAccessoryContentLeadingIcon,
+    iconSize: f.WW
+  });
+  return (0, r.jsxs)(r.Fragment, {
+    children: [s, null != o ? o : (0, r.jsx)("span", {
+      className: _.threadMessageAccessoryPlaceholder,
+      children: a
+    }), l]
   })
 }

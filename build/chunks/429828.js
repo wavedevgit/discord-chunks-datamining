@@ -1,12 +1,13 @@
-/** Chunk was on 24022 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
-  Z: () => l
+  Z: () => a
 });
 var r = n(73800),
-  s = n(192720);
+  i = n(192720);
 
-function l() {
+function a() {
   r.useEffect(() => {
-    (0, s.sE)()
+    (0, i.sE)()
   }, [])
 }

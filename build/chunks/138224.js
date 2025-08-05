@@ -1,11 +1,12 @@
-/** Chunk was on 95355 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
-  i: () => o
+  i: () => a
 });
 var r = n(365449),
   i = n(73800);
 
-function o(e) {
+function a(e) {
   let t = (0, i.useRef)(null);
   return (0, r.b)(() => {
     t.current = e

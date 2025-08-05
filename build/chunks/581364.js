@@ -1,21 +1,21 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  $z: () => R,
+  $z: () => w,
   BH: () => N,
-  BO: () => w,
+  BO: () => P,
   D7: () => x,
   Dd: () => C,
   Ft: () => D,
   TK: () => B,
-  X0: () => k,
-  XA: () => j,
+  X0: () => j,
+  XA: () => M,
   Z8: () => v,
-  bD: () => P,
+  bD: () => R,
   nG: () => A,
   qJ: () => U,
   t0: () => G,
-  tI: () => M
+  tI: () => k
 }), n(388685), n(953529), n(539854), n(361932), n(187205), n(35282), n(781311);
 var r = n(654861),
   i = n.n(r),
@@ -224,7 +224,7 @@ function C(e, t, n, r) {
   }), i.slice(0, r)
 }
 
-function R(e) {
+function w(e) {
   let t = e.type === u.jw.STRING,
     n = e.type === u.jw.CHANNEL,
     r = e.type === u.jw.USER || e.type === u.jw.MENTIONABLE,
@@ -240,10 +240,10 @@ function R(e) {
   }
 }
 
-function P(e) {
+function R(e) {
   return i()(e).subtract(1).toString()
 }
-let w = c.vB(0);
+let P = c.vB(0);
 
 function D(e) {
   let {
@@ -261,7 +261,7 @@ function D(e) {
     if ("boolean" == typeof e) return e
   }
   let l = L(r, s, i);
-  return ("boolean" != typeof l || !!l) && (null == o || !c.fS(o, w) && t.can(o, n))
+  return ("boolean" != typeof l || !!l) && (null == o || !c.fS(o, P) && t.can(o, n))
 }
 
 function L(e, t, n) {
@@ -300,14 +300,14 @@ function x(e) {
   }
 }
 
-function M(e) {
+function k(e) {
   if (null != e)
     if (e.id === h.bi.BUILT_IN) return p.ub.BUILT_IN;
     else if (e.id === h.bi.FRECENCY) return p.ub.FRECENCY;
   else return p.ub.APP
 }
 
-function k(e, t) {
+function j(e, t) {
   var n, r;
   return {
     type: p.Qi.APPLICATION,
@@ -319,7 +319,7 @@ function k(e, t) {
   }
 }
 
-function j(e) {
+function M(e) {
   let t = e.id,
     n = e.options,
     r = null == n ? void 0 : n.find(e => e.type === u.jw.SUB_COMMAND_GROUP);

@@ -1,7 +1,7 @@
-/** Chunk was on 8381 **/
+/** Chunk was on web.js **/
 "use strict";
-var n = r(458545);
-t.exports = function(t, e) {
-  if (t._latestEditorState.getSelection().isCollapsed()) return void e.preventDefault();
-  t.setClipboard(n(t._latestEditorState))
+var r = n(458545);
+e.exports = function(e, t) {
+  if (e._latestEditorState.getSelection().isCollapsed()) return void t.preventDefault();
+  e.setClipboard(r(e._latestEditorState))
 }

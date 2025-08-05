@@ -1,4 +1,4 @@
-/** Chunk was on 60173 **/
+/** Chunk was on 49152 **/
 e.exports = {
   gatedContent: "gatedContent__7184c",
   image: "image__7184c",

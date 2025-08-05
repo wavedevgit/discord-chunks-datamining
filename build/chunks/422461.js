@@ -1,4 +1,5 @@
-/** Chunk was on 94313 **/
+/** Chunk was on web.js **/
+"use strict";
 e.exports = {
   centeringContainer: "centeringContainer__0d97c",
   titleContainer: "titleContainer__0d97c centeringContainer__0d97c",

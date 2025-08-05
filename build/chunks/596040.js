@@ -1,17 +1,18 @@
-/** Chunk was on 60173 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
-  Z: () => s
+  Z: () => l
 });
 var r = n(73800),
   i = n(566620),
-  l = n(790920),
-  a = n(451576);
-let o = e => null != e && "" !== e;
+  a = n(790920),
+  o = n(451576);
+let s = e => null != e && "" !== e;
 
-function s(e, t) {
-  let n = (0, l.z)(),
-    s = (0, a.Z)(t),
-    c = o(e) || s;
+function l(e, t) {
+  let n = (0, a.z)(),
+    l = (0, o.Z)(t),
+    c = s(e) || l;
   return r.useEffect(() => {
     c && n && (0, i.w1)({
       guildId: e

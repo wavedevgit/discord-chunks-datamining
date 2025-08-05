@@ -1,4 +1,5 @@
-/** Chunk was on 60173 **/
+/** Chunk was on web.js **/
+"use strict";
 e.exports = {
   popoutContainer: "popoutContainer__02e2b",
   image: "image__02e2b",

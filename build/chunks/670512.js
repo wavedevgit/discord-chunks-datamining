@@ -1,12 +1,12 @@
-/** Chunk was on 70663 **/
+/** Chunk was on 92357 **/
 n.d(t, {
-  Z: () => _
+  Z: () => O
 }), n(388685);
 var r, i = n(255367),
   l = n(73800),
   o = n(120356),
-  a = n.n(o),
-  s = n(748780),
+  s = n.n(o),
+  a = n(748780),
   c = n(846519),
   u = n(481060),
   d = n(585483),
@@ -45,7 +45,7 @@ class b extends(r = l.PureComponent) {
     let {
       reducedMotion: t
     } = this.context;
-    !0 !== t.enabled && s.Z.spring(this.state.translateY, function(e) {
+    !0 !== t.enabled && a.Z.spring(this.state.translateY, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -62,9 +62,9 @@ class b extends(r = l.PureComponent) {
   }
   renderArrowGroup(e) {
     return (0, i.jsxs)("div", {
-      className: a()(f.arrowGroup, e),
-      children: [(0, i.jsx)(s.Z.div, {
-        className: a()(f.arrowContainer, f.horizontal),
+      className: s()(f.arrowGroup, e),
+      children: [(0, i.jsx)(a.Z.div, {
+        className: s()(f.arrowContainer, f.horizontal),
         style: this.getStyle(),
         children: (0, i.jsx)("img", {
           alt: "",
@@ -72,14 +72,14 @@ class b extends(r = l.PureComponent) {
           className: f.arrowIcon
         })
       }), (0, i.jsx)("div", {
-        className: a()(f.arrowContainer, f.diag1),
+        className: s()(f.arrowContainer, f.diag1),
         children: (0, i.jsx)("img", {
           alt: "",
           src: n(536404),
           className: f.arrowIcon
         })
       }), (0, i.jsx)("div", {
-        className: a()(f.arrowContainer, f.diag2),
+        className: s()(f.arrowContainer, f.diag2),
         children: (0, i.jsx)("img", {
           alt: "",
           src: n(569347),
@@ -108,7 +108,7 @@ class b extends(r = l.PureComponent) {
     } = this.state;
     return (0, i.jsxs)("div", {
       ref: this.rootRef,
-      className: a()(f.tutorial, {
+      className: s()(f.tutorial, {
         [f.shown]: t,
         [f.hasQuery]: e
       }),
@@ -134,7 +134,7 @@ class b extends(r = l.PureComponent) {
   constructor(...e) {
     super(...e), g(this, "state", {
       shown: !1,
-      translateY: new s.Z.Value(0)
+      translateY: new a.Z.Value(0)
     }), g(this, "rootRef", l.createRef()), g(this, "focusTimeout", new c.V7), g(this, "handleResultFocus", e => {
       let {
         node: t
@@ -153,4 +153,4 @@ class b extends(r = l.PureComponent) {
   }
 }
 g(b, "contextType", u.Sfi);
-let _ = b
+let O = b

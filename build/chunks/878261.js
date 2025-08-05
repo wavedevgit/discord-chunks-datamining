@@ -1,19 +1,23 @@
-/** Chunk was on 8381 **/
+/** Chunk was on web.js **/
 "use strict";
-t.exports = function(t) {
-  function e() {
-    return t.apply(this, arguments) || this
+
+function r(e, t) {
+  e.prototype = Object.create(t.prototype), e.prototype.constructor = e, e.__proto__ = t
+}
+e.exports = function(e) {
+  function t() {
+    return e.apply(this, arguments) || this
   }
-  e.prototype = Object.create(t.prototype), e.prototype.constructor = e, e.__proto__ = t;
-  var r = e.prototype;
-  return r.getType = function() {
+  r(t, e);
+  var n = t.prototype;
+  return n.getType = function() {
     return this.get("type")
-  }, r.getMutability = function() {
+  }, n.getMutability = function() {
     return this.get("mutability")
-  }, r.getData = function() {
+  }, n.getData = function() {
     return this.get("data")
-  }, e
-}((0, r(65183).Record)({
+  }, t
+}((0, n(65183).Record)({
   type: "TOKEN",
   mutability: "IMMUTABLE",
   data: Object

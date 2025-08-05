@@ -1,29 +1,29 @@
 /** Chunk was on 89311 **/
 r.d(t, {
-  Z: () => u
+  Z: () => d
 });
 var n = r(255367),
-  i = r(73800),
-  a = r(481060),
+  a = r(73800),
+  i = r(481060),
   l = r(239091),
-  s = r(299206),
-  o = r(858042),
+  o = r(299206),
+  s = r(858042),
   c = r(388032);
 
-function u(e) {
+function d(e) {
   let {
     applicationId: t,
     className: r,
-    viewId: u
-  } = e, d = i.useRef(null), m = (0, s.Z)({
+    viewId: d
+  } = e, u = a.useRef(null), m = (0, o.Z)({
     id: t,
     label: c.intl.string(c.t["FfCL+/"])
-  }), g = (0, o.M)({
+  }), g = (0, s.M)({
     applicationId: t,
-    viewId: u
+    viewId: d
   });
-  return null == m && null == g ? null : (0, n.jsx)(a.yRy, {
-    targetElementRef: d,
+  return null == m && null == g ? null : (0, n.jsx)(i.yRy, {
+    targetElementRef: u,
     align: "top",
     position: "right",
     disablePointerEvents: !1,
@@ -31,7 +31,7 @@ function u(e) {
       let {
         closePopout: t
       } = e;
-      return (0, n.jsx)(a.v2r, {
+      return (0, n.jsx)(i.v2r, {
         navId: "game-profile-context",
         onClose: () => {
           (0, l.Zy)(), t()
@@ -39,19 +39,19 @@ function u(e) {
         "aria-label": c.intl.string(c.t.PNeFgY),
         onSelect: () => {},
         children: (0, n.jsxs)(n.Fragment, {
-          children: [(0, n.jsx)(a.kSQ, {
+          children: [(0, n.jsx)(i.kSQ, {
             children: m
-          }), (0, n.jsx)(a.kSQ, {
+          }), (0, n.jsx)(i.kSQ, {
             children: g
           })]
         })
       })
     },
-    children: e => (0, n.jsx)(a.ua7, {
+    children: e => (0, n.jsx)(i.ua7, {
       text: c.intl.string(c.t.UKOtz8),
       children: t => {
-        var i, l;
-        return (0, n.jsx)(a.P3F, (i = function(e) {
+        var a, l;
+        return (0, n.jsx)(i.P3F, (a = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var r = null != arguments[t] ? arguments[t] : {},
               n = Object.keys(r);
@@ -69,14 +69,14 @@ function u(e) {
           }
           return e
         }({
-          innerRef: d,
+          innerRef: u,
           className: r
         }, t, e), l = l = {
-          children: (0, n.jsx)(a.xhG, {
+          children: (0, n.jsx)(i.xhG, {
             size: "xs",
-            color: a.TVs.colors.WHITE
+            color: i.TVs.colors.WHITE
           })
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(a, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
           var r = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
             var n = Object.getOwnPropertySymbols(e);
@@ -84,8 +84,8 @@ function u(e) {
           }
           return r
         })(Object(l)).forEach(function(e) {
-          Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(l, e))
-        }), i))
+          Object.defineProperty(a, e, Object.getOwnPropertyDescriptor(l, e))
+        }), a))
       }
     })
   })

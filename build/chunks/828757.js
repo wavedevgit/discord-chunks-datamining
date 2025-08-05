@@ -1,2 +1,2 @@
-/** Chunk was on 79521 **/
+/** Chunk was on 76495 **/
 p.exports = JSON.parse('{"i9e/u7":"Toning","2akt9v":"Wumpus","x68b1N":"Neon","OpWJ3d":"Stabil","rN7cub":"Sakura","JOpi7+":"V\xe4lj f\xe4rg","cVTpnp":"L\xe4gg till f\xe4rger f\xf6rst","NOGFdn":"\xd6verraska mig"}')

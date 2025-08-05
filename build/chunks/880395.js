@@ -1,63 +1,71 @@
-/** Chunk was on 93239 **/
-r.d(t, {
+/** Chunk was on web.js **/
+"use strict";
+n.d(t, {
   D: () => c
 });
-var n = r(255367);
-r(73800);
-var i = r(239091);
+var r = n(255367);
+n(73800);
+var i = n(239091);
 
-function s(e) {
+function a(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: !0,
+    configurable: !0,
+    writable: !0
+  }) : e[t] = n, e
+}
+
+function o(e) {
   for (var t = 1; t < arguments.length; t++) {
-    var r = null != arguments[t] ? arguments[t] : {},
-      n = Object.keys(r);
-    "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(r, e).enumerable
-    }))), n.forEach(function(t) {
-      var n;
-      n = r[t], t in e ? Object.defineProperty(e, t, {
-        value: n,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
-      }) : e[t] = n
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      a(e, t, n[t])
     })
   }
   return e
 }
 
-function a(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-    var r = Object.keys(e);
-    if (Object.getOwnPropertySymbols) {
-      var n = Object.getOwnPropertySymbols(e);
-      r.push.apply(r, n)
-    }
-    return r
-  })(Object(t)).forEach(function(r) {
-    Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r))
+function s(e, t) {
+  var n = Object.keys(e);
+  if (Object.getOwnPropertySymbols) {
+    var r = Object.getOwnPropertySymbols(e);
+    t && (r = r.filter(function(t) {
+      return Object.getOwnPropertyDescriptor(e, t).enumerable
+    })), n.push.apply(n, r)
+  }
+  return n
+}
+
+function l(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : s(Object(t)).forEach(function(n) {
+    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function c(e, t, c, l, o) {
-  let u = c.getGuildId();
+function c(e, t, a, s, c) {
+  let u = a.getGuildId();
   return null != u ? (0, i.jW)(e, async () => {
     let {
       default: e
-    } = await Promise.all([r.e("70274"), r.e("8982"), r.e("80125"), r.e("99665")]).then(r.bind(r, 357823));
-    return r => (0, n.jsx)(e, a(s({}, r), {
+    } = await Promise.all([n.e("8982"), n.e("80125"), n.e("61866")]).then(n.bind(n, 357823));
+    return n => (0, r.jsx)(e, l(o({}, n), {
       user: t,
-      channel: c,
+      channel: a,
       guildId: u,
-      onInteraction: e => o("GuildVoiceUserContextMenu", e)
+      onInteraction: e => c("GuildVoiceUserContextMenu", e)
     }))
-  }, l) : (0, i.jW)(e, async () => {
+  }, s) : (0, i.jW)(e, async () => {
     let {
       default: e
-    } = await Promise.all([r.e("80125"), r.e("47452")]).then(r.bind(r, 238296));
-    return r => (0, n.jsx)(e, a(s({}, r), {
+    } = await Promise.all([n.e("80125"), n.e("47452")]).then(n.bind(n, 238296));
+    return n => (0, r.jsx)(e, l(o({}, n), {
       user: t,
-      channel: c,
-      onInteraction: e => o("BaseVoiceUserContextMenu", e)
+      channel: a,
+      onInteraction: e => c("BaseVoiceUserContextMenu", e)
     }))
-  }, l)
+  }, s)
 }

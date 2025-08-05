@@ -1,4 +1,5 @@
-/** Chunk was on 60173 **/
+/** Chunk was on web.js **/
+"use strict";
 e.exports = {
   gradientBackground: "gradientBackground__41626",
   leftDarkEllipse: "leftDarkEllipse__41626",

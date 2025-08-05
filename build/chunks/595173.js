@@ -1,4 +1,4 @@
-/** Chunk was on 98786 **/
+/** Chunk was on web.js **/
 var r = {
   "./2017-11-16.mp4": "221825",
   "./channel-following.png": "247815",
@@ -20,17 +20,17 @@ var r = {
   "./store.jpg": "926213"
 };
 
-function o(e) {
-  return n(i(e))
+function i(e) {
+  return n(a(e))
 }
 
-function i(e) {
+function a(e) {
   if (!n.o(r, e)) {
     var t = Error("Cannot find module '" + e + "'");
     throw t.code = "MODULE_NOT_FOUND", t
   }
   return r[e]
 }
-o.keys = function() {
+i.keys = function() {
   return Object.keys(r)
-}, o.resolve = i, e.exports = o, o.id = 595173
+}, i.resolve = a, e.exports = i, i.id = 595173

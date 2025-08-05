@@ -1,11 +1,12 @@
-/** Chunk was on 69150 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
-  Z: () => r
+  Z: () => i
 });
-var i = n(570140);
+var r = n(570140);
 
-function r(e) {
-  i.Z.dispatch({
+function i(e) {
+  r.Z.dispatch({
     type: "DETECTED_OFF_PLATFORM_PREMIUM_PERKS_DISMISS",
     skuId: e
   })

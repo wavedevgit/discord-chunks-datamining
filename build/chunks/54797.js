@@ -1,12 +1,35 @@
-/** Chunk was on 94313 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
-  x: () => l
+  x: () => s
 });
 var r = n(255367);
 n(73800);
 var i = n(481060);
 
-function l(e) {
+function a(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: !0,
+    configurable: !0,
+    writable: !0
+  }) : e[t] = n, e
+}
+
+function o(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      a(e, t, n[t])
+    })
+  }
+  return e
+}
+
+function s(e) {
   let {
     listing: t
   } = e;
@@ -14,24 +37,7 @@ function l(e) {
     let {
       default: e
     } = await n.e("95480").then(n.bind(n, 275869));
-    return n => (0, r.jsx)(e, function(e) {
-      for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-          r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-          return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-          var r;
-          r = n[t], t in e ? Object.defineProperty(e, t, {
-            value: r,
-            enumerable: !0,
-            configurable: !0,
-            writable: !0
-          }) : e[t] = r
-        })
-      }
-      return e
-    }({
+    return n => (0, r.jsx)(e, o({
       listing: t
     }, n))
   })

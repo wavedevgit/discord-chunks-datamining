@@ -1,23 +1,24 @@
-/** Chunk was on 35755 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
-  Z: () => s
+  Z: () => l
 }), n(539854);
-var l = n(73800),
+var r = n(73800),
   i = n(442837),
-  r = n(835473),
-  a = n(541099),
-  o = n(695676);
+  a = n(835473),
+  o = n(541099),
+  s = n(695676);
 
-function s() {
-  let e = (0, i.e7)([a.Z], () => a.Z.initialState(), []),
-    t = (0, r.q)(null == e ? void 0 : e.applicationId);
-  return l.useMemo(() => {
+function l() {
+  let e = (0, i.e7)([o.Z], () => o.Z.initialState(), []),
+    t = (0, a.q)(null == e ? void 0 : e.applicationId);
+  return r.useMemo(() => {
     if (null == e) return;
     let n = [{
-      type: o.gc.HOME
+      type: s.gc.HOME
     }];
     return null != e.applicationId && null != t && n.push({
-      type: o.gc.APPLICATION,
+      type: s.gc.APPLICATION,
       application: t
     }), n
   }, [e, t])

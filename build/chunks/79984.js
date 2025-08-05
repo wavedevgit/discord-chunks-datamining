@@ -1,18 +1,19 @@
-/** Chunk was on 35755 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
   Z: () => d
 });
-var l = n(255367),
+var r = n(255367),
   i = n(73800),
-  r = n(120356),
-  a = n.n(r),
-  o = n(442837),
-  s = n(481060),
+  a = n(120356),
+  o = n.n(a),
+  s = n(442837),
+  l = n(481060),
   c = n(607070),
   u = n(847800);
 
 function d() {
-  let e = (0, o.e7)([c.Z], () => c.Z.useReducedMotion),
+  let e = (0, s.e7)([c.Z], () => c.Z.useReducedMotion),
     {
       styleLarge: t,
       styleSmall: n
@@ -24,28 +25,28 @@ function d() {
         width: "".concat(30 + 60 * Math.random(), "%")
       }
     }), []);
-  return (0, l.jsxs)("div", {
-    className: a()(u.container, {
+  return (0, r.jsxs)("div", {
+    className: o()(u.container, {
       [u.noAnimation]: e
     }),
-    children: [(0, l.jsx)("div", {
+    children: [(0, r.jsx)("div", {
       className: u.iconPlaceholder
-    }), (0, l.jsxs)("div", {
+    }), (0, r.jsxs)("div", {
       className: u.textContainer,
-      children: [(0, l.jsx)("div", {
+      children: [(0, r.jsx)("div", {
         className: u.textPlaceholder,
         style: t,
-        children: (0, l.jsx)(s.X6q, {
+        children: (0, r.jsx)(l.X6q, {
           className: u.hidden,
           variant: "heading-md/semibold",
           color: "header-primary",
           lineClamp: 1,
           children: "_"
         })
-      }), (0, l.jsx)("div", {
+      }), (0, r.jsx)("div", {
         className: u.textPlaceholder,
         style: n,
-        children: (0, l.jsx)(s.Text, {
+        children: (0, r.jsx)(l.Text, {
           className: u.hidden,
           variant: "text-sm/normal",
           color: "text-secondary",
@@ -53,7 +54,7 @@ function d() {
           children: "_"
         })
       })]
-    }), (0, l.jsx)("div", {
+    }), (0, r.jsx)("div", {
       className: u.underline
     })]
   })

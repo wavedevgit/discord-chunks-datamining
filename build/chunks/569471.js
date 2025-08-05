@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => M
+  Z: () => k
 }), n(388685), n(997841);
 var r, i = n(392711),
   a = n.n(i),
@@ -155,7 +155,7 @@ function C(e) {
   })
 }
 
-function R(e) {
+function w(e) {
   let {
     channel: t
   } = e;
@@ -163,7 +163,7 @@ function R(e) {
   h = f({}, h), delete h[t.id]
 }
 
-function P(e) {
+function R(e) {
   if (u.default.getId() !== e.userId) return !1;
   h[e.id] = {
     threadId: e.id,
@@ -175,7 +175,7 @@ function P(e) {
   }, O(e.id)
 }
 
-function w(e) {
+function P(e) {
   let {
     id: t,
     userId: n,
@@ -247,9 +247,9 @@ let x = new L(s.Z, {
     MOD_VIEW_SEARCH_MESSAGES_SUCCESS: C,
     LOAD_THREADS_SUCCESS: N,
     LOAD_ARCHIVED_THREADS_SUCCESS: N,
-    THREAD_DELETE: R,
-    THREAD_MEMBER_UPDATE: P,
-    THREAD_MEMBER_LOCAL_UPDATE: w,
+    THREAD_DELETE: w,
+    THREAD_MEMBER_UPDATE: R,
+    THREAD_MEMBER_LOCAL_UPDATE: P,
     THREAD_MEMBERS_UPDATE: D
   }),
-  M = x
+  k = x

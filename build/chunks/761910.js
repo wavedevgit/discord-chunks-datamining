@@ -1,15 +1,15 @@
-/** Chunk was on 31978 **/
+/** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => o
+  Z: () => a
 });
 var r = n(255367);
 n(73800);
-var l = n(739754);
+var i = n(739754);
 
-function o(e) {
+function a(e) {
   return {
-    content: (0, r.jsx)(l.ZP, {
+    content: (0, r.jsx)(i.ZP, {
       message: e
     }),
     hasSpoilerEmbeds: !1

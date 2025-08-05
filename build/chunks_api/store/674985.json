@@ -1,1 +1,1 @@
-{"id":"674985","type":"store","data":{"name":"HypeSquadStore","functions":[{"name":"getHouseMembership","args":[]}],"events":["CONNECTION_OPEN","HYPESQUAD_ONLINE_MEMBERSHIP_LEAVE_SUCCESS","HYPESQUAD_ONLINE_MEMBERSHIP_JOIN_SUCCESS"]},"fromModule":{"id":"85438"}}
+{"id":"674985","type":"store","data":{"name":"HypeSquadStore","functions":[{"name":"getHouseMembership","args":[]}],"events":["CONNECTION_OPEN","HYPESQUAD_ONLINE_MEMBERSHIP_LEAVE_SUCCESS","HYPESQUAD_ONLINE_MEMBERSHIP_JOIN_SUCCESS"]},"fromModule":{"id":"75708"}}

@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => w
+  Z: () => P
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -67,7 +67,7 @@ let C = (e, t) => (0, r.jsx)(b.G0, {
   columns: e
 }, t);
 
-function R(e) {
+function w(e) {
   var t;
   let n = l().sample(l().values(e));
   return {
@@ -78,7 +78,7 @@ function R(e) {
     format: null != (t = null == n ? void 0 : n.format) ? t : u.EO.IMAGE
   }
 }
-class P extends i.PureComponent {
+class R extends i.PureComponent {
   componentDidMount() {
     0 === this.props.trendingCategories.length && (0, _.Tg)()
   }
@@ -120,7 +120,7 @@ class P extends i.PureComponent {
   }
   constructor(...e) {
     super(...e), T(this, "_masonryRef", i.createRef()), T(this, "state", {
-      favoritesTile: R(this.props.favorites),
+      favoritesTile: w(this.props.favorites),
       selectedIndex: {
         column: 0,
         row: 0
@@ -209,11 +209,11 @@ class P extends i.PureComponent {
   }
 }
 
-function w(e) {
+function P(e) {
   let t = (0, c.e7)([h.Z], () => h.Z.getTrendingCategories()),
     n = (0, g.gG)(),
     i = (0, y.PY)();
-  return (0, r.jsx)(P, N(S({}, e, i), {
+  return (0, r.jsx)(R, N(S({}, e, i), {
     trendingCategories: t,
     favorites: n
   }))

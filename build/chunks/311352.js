@@ -1,4 +1,4 @@
-/** Chunk was on 70663 **/
+/** Chunk was on 92357 **/
 n.d(t, {
   Z: () => E
 });
@@ -6,8 +6,8 @@ var r = n(255367),
   i = n(73800),
   l = n(399606),
   o = n(704215),
-  a = n(481060),
-  s = n(239091),
+  s = n(481060),
+  a = n(239091),
   c = n(906732),
   u = n(522651),
   d = n(765585),
@@ -17,13 +17,13 @@ var r = n(255367),
   g = n(13140),
   m = n(924557),
   b = n(435064),
-  _ = n(39604),
-  O = n(981631),
+  O = n(39604),
+  _ = n(981631),
   y = n(388032),
   C = n(856587);
 
 function v(e) {
-  (0, s.jW)(e, async () => {
+  (0, a.jW)(e, async () => {
     let {
       default: e
     } = await n.e("21960").then(n.bind(n, 999466));
@@ -55,7 +55,7 @@ let j = e => {
     } = e, l = (e, t) => {
       e.stopPropagation(), e.preventDefault(), null == t || t()
     };
-    return (0, r.jsx)(a.yRy, {
+    return (0, r.jsx)(s.yRy, {
       targetElementRef: i,
       shouldShow: !1,
       position: "top",
@@ -76,7 +76,7 @@ let j = e => {
               keybind: t,
               keybindHook: () => (0, r.jsx)("span", {
                 className: C.keybindHintKeys,
-                children: (0, r.jsx)(a.M2$, {
+                children: (0, r.jsx)(s.M2$, {
                   className: C.keybindShortcut,
                   shortcut: t
                 })
@@ -84,7 +84,7 @@ let j = e => {
             })
           }),
           headerClassName: C.clipsEducationHeader,
-          body: (0, r.jsx)(a.Text, {
+          body: (0, r.jsx)(s.Text, {
             variant: "text-sm/normal",
             color: "always-white",
             className: C.bodyText,
@@ -112,14 +112,14 @@ let j = e => {
       n = (0, l.e7)([p.Z], () => p.Z.hasLayers()),
       o = (0, m.Go)(),
       {
-        clipsEnabled: s,
+        clipsEnabled: a,
         isAtMaxSavingClipsOperations: d
       } = (0, l.cj)([b.Z], () => ({
         clipsEnabled: b.Z.getSettings().clipsEnabled,
         isAtMaxSavingClipsOperations: b.Z.getIsAtMaxSaveClipOperations()
       })),
-      C = (0, l.e7)([f.ZP], () => f.ZP.getKeybindForAction(O.kg4.SAVE_CLIP));
-    if (!(o && s) || null == C || n) return null;
+      C = (0, l.e7)([f.ZP], () => f.ZP.getKeybindForAction(_.kg4.SAVE_CLIP));
+    if (!(o && a) || null == C || n) return null;
     let E = g.BB(C.shortcut, !0);
     return (0, r.jsx)(j, {
       keybindString: E,
@@ -131,10 +131,10 @@ let j = e => {
           hotkey: g.BB(null == C ? void 0 : C.shortcut, !0)
         }) : y.intl.string(y.t.s52pjo),
         onClick: () => {
-          (0, _.C1)(), (0, u.v)(t, u.d.CLIP)
+          (0, O.C1)(), (0, u.v)(t, u.d.CLIP)
         },
         onContextMenu: v,
-        icon: a.AlX
+        icon: s.AlX
       })
     })
   }

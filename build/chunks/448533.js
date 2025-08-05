@@ -1,4 +1,4 @@
-/** Chunk was on 94312 **/
+/** Chunk was on 22988 **/
 e.exports = {
   root: "root__759ac",
   carouselCaret: "carouselCaret__759ac",

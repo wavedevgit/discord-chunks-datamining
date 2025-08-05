@@ -1,18 +1,18 @@
-/** Chunk was on 31978 **/
+/** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  p: () => o
+  p: () => a
 });
 var r = n(592204),
-  l = n(712950);
-let o = () => {
+  i = n(712950);
+let a = () => {
   var e;
   let {
     profanity: t,
     sexualContent: n,
-    slurs: o
-  } = (0, l.g)();
+    slurs: a
+  } = (0, i.g)();
   return !!(0, r.Xo)({
     location: "use-should-filter-keywords"
-  }) && null != (e = t || n || o) && e
+  }) && null != (e = t || n || a) && e
 }

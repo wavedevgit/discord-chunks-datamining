@@ -1,24 +1,26 @@
-/** Chunk was on 60173 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
-  p: () => c
+  p: () => u
 });
 var r = n(73800),
   i = n(442837),
-  l = n(416587),
-  a = n(566620),
-  o = n(317381);
-let s = e => null == e || new Date(e).getTime() < Date.now() - 432e5,
-  c = e => {
+  a = n(416587),
+  o = n(566620),
+  s = n(317381);
+let l = 432e5,
+  c = e => null == e || new Date(e).getTime() < Date.now() - l,
+  u = e => {
     let {
       surface: t,
       skipFetchingShelf: n = !0
-    } = e, c = (0, i.e7)([o.ZP], () => o.ZP.getState());
+    } = e, l = (0, i.e7)([s.ZP], () => s.ZP.getState());
     return (0, r.useEffect)(() => {
-      s(c.lastCheckedForBadgeableActivities) && !n && (0, a.w1)({
+      c(l.lastCheckedForBadgeableActivities) && !n && (0, o.w1)({
         guildId: null
       })
-    }, [c.lastCheckedForBadgeableActivities, n]), (0, r.useMemo)(() => (0, l.O)({
-      storeState: c,
+    }, [l.lastCheckedForBadgeableActivities, n]), (0, r.useMemo)(() => (0, a.O)({
+      storeState: l,
       surface: t
-    }), [c, t])
+    }), [l, t])
   }

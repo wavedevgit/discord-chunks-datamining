@@ -1,4 +1,5 @@
-/** Chunk was on 93886 **/
+/** Chunk was on web.js **/
+"use strict";
 e.exports = {
   searchResultsWrap: "searchResultsWrap_a9e706",
   scroller: "scroller_a9e706",

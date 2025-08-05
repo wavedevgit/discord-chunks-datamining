@@ -1,12 +1,16 @@
-/** Chunk was on 24255 **/
-function r(e) {
-  return e <= 220
+/** Chunk was on web.js **/
+"use strict";
+n.d(t, {
+  K: () => a,
+  N: () => o
+});
+let r = 124,
+  i = 220;
+
+function a(e) {
+  return e <= i
 }
 
-function l(e) {
-  return e <= 124
+function o(e) {
+  return e <= r
 }
-n.d(t, {
-  K: () => r,
-  N: () => l
-})

@@ -1,37 +1,37 @@
-/** Chunk was on 71881 **/
-a.d(t, {
-  default: () => g
+/** Chunk was on 95345 **/
+n.d(e, {
+  default: () => f
 });
-var n = a(255367);
-a(73800);
-var r = a(481060),
-  i = a(546957),
-  o = a(190014),
-  c = a(301812),
-  s = a(988043),
-  l = a(919539),
-  u = a(526761),
-  d = a(388032),
-  p = a(671364);
+var i = n(255367);
+n(73800);
+var l = n(481060),
+  r = n(546957),
+  a = n(190014),
+  s = n(301812),
+  o = n(988043),
+  u = n(919539),
+  c = n(526761),
+  d = n(388032),
+  g = n(671364);
 
-function _(e) {
+function _(t) {
   let {
-    guildId: t
-  } = e;
-  return (0, n.jsxs)(i.Z, {
-    children: [(0, n.jsx)(s.Z, {
-      ingress: u.f4.SERVER_PRIVACY_MODAL,
-      guildId: t
-    }), (0, n.jsx)(l.Z, {
-      ingress: u.f4.SERVER_PRIVACY_MODAL,
-      guildId: t
-    }), (0, n.jsx)(c.Z, {
-      ingress: u.f4.SERVER_PRIVACY_MODAL,
-      guildId: t
-    }), (0, n.jsx)(o.Z, {
-      ingress: u.f4.SERVER_PRIVACY_MODAL,
-      guildId: t
-    }), (0, n.jsx)(r.Text, {
+    guildId: e
+  } = t;
+  return (0, i.jsxs)(r.Z, {
+    children: [(0, i.jsx)(o.Z, {
+      ingress: c.f4.SERVER_PRIVACY_MODAL,
+      guildId: e
+    }), (0, i.jsx)(u.Z, {
+      ingress: c.f4.SERVER_PRIVACY_MODAL,
+      guildId: e
+    }), (0, i.jsx)(s.Z, {
+      ingress: c.f4.SERVER_PRIVACY_MODAL,
+      guildId: e
+    }), (0, i.jsx)(a.Z, {
+      ingress: c.f4.SERVER_PRIVACY_MODAL,
+      guildId: e
+    }), (0, i.jsx)(l.Text, {
       color: "header-secondary",
       variant: "text-sm/normal",
       children: d.intl.format(d.t.LNsV09, {
@@ -41,32 +41,32 @@ function _(e) {
   })
 }
 
-function g(e) {
+function f(t) {
   let {
-    guild: t,
-    transitionState: a,
-    onClose: i
-  } = e, o = "".concat(d.intl.string(d.t.BayiAg), "—").concat(null != t ? t.name : "??");
-  return (0, n.jsxs)(r.Y0X, {
-    transitionState: a,
-    size: r.CgR.SMALL,
-    "aria-label": o,
+    guild: e,
+    transitionState: n,
+    onClose: r
+  } = t, a = "".concat(d.intl.string(d.t.BayiAg), "—").concat(null != e ? e.name : "??");
+  return (0, i.jsxs)(l.Y0X, {
+    transitionState: n,
+    size: l.CgR.SMALL,
+    "aria-label": a,
     parentComponent: "PrivacySettings",
-    children: [(0, n.jsx)(r.xBx, {
-      children: (0, n.jsx)(r.X6q, {
+    children: [(0, i.jsx)(l.xBx, {
+      children: (0, i.jsx)(l.X6q, {
         variant: "heading-lg/semibold",
-        children: o
+        children: a
       })
-    }), (0, n.jsx)(r.hzk, {
-      className: p.content,
-      children: (0, n.jsx)(_, {
-        guildId: t.id
+    }), (0, i.jsx)(l.hzk, {
+      className: g.content,
+      children: (0, i.jsx)(_, {
+        guildId: e.id
       })
-    }), (0, n.jsx)(r.mzw, {
-      children: (0, n.jsx)(r.zxk, {
+    }), (0, i.jsx)(l.mzw, {
+      children: (0, i.jsx)(l.zxk, {
         variant: "primary",
         text: d.intl.string(d.t.i4jeWV),
-        onClick: () => i()
+        onClick: () => r()
       })
     })]
   })

@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => j
+  Z: () => M
 }), n(388685), n(35282), n(415506);
 var r = n(664751),
   i = n(990547),
@@ -29,9 +29,9 @@ var r = n(664751),
   A = n(58642),
   N = n(254854),
   C = n(981631),
-  R = n(701488),
-  P = n(388032);
-let w = 3,
+  w = n(701488),
+  R = n(388032);
+let P = 3,
   D = 20;
 
 function L(e) {
@@ -39,13 +39,13 @@ function L(e) {
     applicationId: t,
     secret: n,
     channelId: r,
-    intent: i = R.Ws.PLAY,
+    intent: i = w.Ws.PLAY,
     embedded: a = !1,
     source: o,
     locationObject: s,
     analyticsLocations: c
   } = e;
-  k({
+  j({
     applicationId: t,
     channelId: r,
     embedded: a,
@@ -73,7 +73,7 @@ function x(e, t) {
   }
 }
 
-function M(e) {
+function k(e) {
   return o.tn.post({
     url: C.ANM.OAUTH2_AUTHORIZE,
     query: {
@@ -101,7 +101,7 @@ function M(e) {
     throw e
   })
 }
-async function k(e) {
+async function j(e) {
   let {
     applicationId: t,
     branchId: n,
@@ -135,7 +135,7 @@ async function k(e) {
     if (null == e) throw Error("Missing dispatch game when launching");
     let i = E.Z.getLibraryApplication(t, n);
     if (null == i) throw Error("Missing library application when launching");
-    d = M(t).then(t => v.Z.launchDispatchApplication(e, t, h.default.locale, i.getBranchName(), r))
+    d = k(t).then(t => v.Z.launchDispatchApplication(e, t, h.default.locale, i.getBranchName(), r))
   } else {
     let e = u.Z.getApplication(t);
     d = null != e ? v.Z.launch(e) : v.Z.launchGame(t)
@@ -155,7 +155,7 @@ async function k(e) {
       pids: e
     })
   }).catch(e => {
-    N.Z.show(C.kVF.LAUNCH_GAME_FAILURE, P.intl.string(P.t.YZEBdn)), l.Z.dispatch({
+    N.Z.show(C.kVF.LAUNCH_GAME_FAILURE, R.intl.string(R.t.YZEBdn)), l.Z.dispatch({
       type: "GAME_LAUNCH_FAIL",
       applicationId: t,
       error: p
@@ -166,7 +166,7 @@ async function k(e) {
     error: p
   }), Promise.reject(p))
 }
-let j = {
+let M = {
   addGame(e, t) {
     l.Z.dispatch({
       type: "RUNNING_GAME_ADD_OVERRIDE",
@@ -318,7 +318,7 @@ let j = {
         distributor_application: x(i, a),
         executable: c,
         publisher: r,
-        report_version: w
+        report_version: P
       },
       retries: 1,
       oldFormErrors: !0,
@@ -358,7 +358,7 @@ let j = {
       game: e
     })
   },
-  launch: k,
+  launch: j,
   async join(e) {
     let {
       userId: t,
@@ -366,7 +366,7 @@ let j = {
       applicationId: r,
       channelId: i,
       messageId: a,
-      intent: o = R.Ws.PLAY,
+      intent: o = w.Ws.PLAY,
       embedded: s = !1,
       source: c,
       locationObject: u,

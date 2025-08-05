@@ -1,4 +1,5 @@
-/** Chunk was on 60173 **/
+/** Chunk was on web.js **/
+"use strict";
 e.exports = {
   "text-sm/normal": "text-sm/normal__6ec1a",
   topic: "topic__6ec1a text-sm/normal__6ec1a",

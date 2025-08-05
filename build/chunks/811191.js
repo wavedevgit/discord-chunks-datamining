@@ -1,4 +1,5 @@
-/** Chunk was on 60173 **/
+/** Chunk was on web.js **/
+"use strict";
 e.exports = {
   clipsEnabledIndicator: "clipsEnabledIndicator__8c88a",
   clipBadgeText: "clipBadgeText__8c88a " + n(760858).liveLarge,

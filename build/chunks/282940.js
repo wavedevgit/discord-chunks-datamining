@@ -1,4 +1,5 @@
-/** Chunk was on 94313 **/
+/** Chunk was on web.js **/
+"use strict";
 e.exports = {
   clickableSticker: "clickableSticker_abd7a8",
   stickerName: "stickerName_abd7a8",

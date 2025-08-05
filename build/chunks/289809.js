@@ -1,33 +1,33 @@
-/** Chunk was on 53 **/
+/** Chunk was on 54844 **/
 n.d(t, {
-  Z: () => s
+  Z: () => o
 });
 var r = n(255367),
-  a = n(73800),
+  l = n(73800),
   i = n(481060),
-  o = n(454585),
-  l = n(126694);
+  a = n(454585),
+  s = n(126694);
 
-function s(e) {
+function o(e) {
   let {
     element: {
       data: {
         header: t,
         body: n,
-        is_localized: s
+        is_localized: o
       }
     }
-  } = e, c = a.useRef(o.Z.reactParserFor(o.Z.defaultRules));
-  return s && (null != t || null != n) ? (0, r.jsxs)("div", {
-    className: l.container,
+  } = e, c = l.useRef(a.Z.reactParserFor(a.Z.defaultRules));
+  return o && (null != t || null != n) ? (0, r.jsxs)("div", {
+    className: s.container,
     children: [null != t && (0, r.jsx)(i.X6q, {
       variant: "heading-sm/semibold",
       color: "header-secondary",
-      className: l.header,
+      className: s.header,
       children: t
     }), null != n && (0, r.jsx)(i.Text, {
       variant: "text-sm/normal",
-      className: l.bodyText,
+      className: s.bodyText,
       children: c.current(n)
     })]
   }) : null

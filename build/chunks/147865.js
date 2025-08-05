@@ -1,9 +1,10 @@
-/** Chunk was on 35755 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
   lY: () => i
 });
-var l = n(388032);
+var r = n(388032);
 
 function i(e) {
-  return e > 0 ? "1-".concat(e) : l.intl.string(l.t.zMNEiI)
+  return e > 0 ? "1-".concat(e) : r.intl.string(r.t.zMNEiI)
 }

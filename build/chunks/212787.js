@@ -1,4 +1,4 @@
-/** Chunk was on 94312 **/
+/** Chunk was on 22988 **/
 e.exports = {
   editCard: "editCard_a25a68",
   toggled: "toggled_a25a68",

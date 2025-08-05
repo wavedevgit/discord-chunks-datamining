@@ -1,4 +1,5 @@
-/** Chunk was on 60173 **/
+/** Chunk was on web.js **/
+"use strict";
 e.exports = {
   menu: "menu__77820",
   optionLabel: "optionLabel__77820",

@@ -1,5 +1,5 @@
-/** Chunk was on 7210 **/
-A.exports = {
+/** Chunk was on 71824 **/
+e.exports = {
   inviteContainer: "inviteContainer__23437",
   inviterTooltipContainer: "inviterTooltipContainer__23437",
   linkedChannelContainer: "linkedChannelContainer__23437",

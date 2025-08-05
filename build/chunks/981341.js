@@ -1,5 +1,7 @@
-/** Chunk was on 94313 **/
-n.r(e.exports = {
+/** Chunk was on web.js **/
+"use strict";
+var r = {
   effect: "effect__263e4",
   effects: "effects__263e4"
-})
+};
+n.r(e.exports = r)

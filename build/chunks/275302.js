@@ -1,4 +1,4 @@
-/** Chunk was on 94312 **/
+/** Chunk was on 22988 **/
 e.exports = {
   scroller: "scroller__981c8",
   colorPicker: "colorPicker__981c8",

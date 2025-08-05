@@ -27,7 +27,7 @@ let h = e => {
         return "UNKNOWN TYPE:"
     }
   },
-  b = [{
+  f = [{
     key: "events",
     render(e) {
       let {
@@ -37,7 +37,7 @@ let h = e => {
       return "".concat(t, " ").concat(s.z[a])
     }
   }],
-  f = [{
+  b = [{
     key: "candidates",
     render(e) {
       let {
@@ -53,7 +53,7 @@ function v() {
     a = (0, u.ZP)(e => e.lastWinnerTime),
     r = 0 !== a ? l()(a).fromNow() : "n/a",
     v = (0, u.ZP)(e => e.recentlyShown[0]),
-    g = e.map(e => {
+    j = e.map(e => {
       let {
         eventType: t,
         dismissibleContent: a
@@ -64,7 +64,7 @@ function v() {
         dismissibleContent: a
       }
     }),
-    j = Array.from(t.keys()).map(e => ({
+    g = Array.from(t.keys()).map(e => ({
       key: e.toString(),
       dismissibleContent: e
     }));
@@ -107,12 +107,12 @@ function v() {
       className: p.candidatesTableContainer,
       children: (0, n.jsx)(x.Z, {
         className: p.candidatesTable,
-        columns: f,
-        data: j
+        columns: b,
+        data: g
       })
     }), (0, n.jsx)("br", {}), (0, n.jsx)(x.Z, {
-      columns: b,
-      data: g
+      columns: f,
+      data: j
     })]
   })
 }

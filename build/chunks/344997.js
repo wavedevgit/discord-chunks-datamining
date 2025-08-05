@@ -1,54 +1,55 @@
-/** Chunk was on 94313 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
-  g: () => b
+  g: () => E
 });
 var r = n(255367);
 n(73800);
 var i = n(913527),
-  l = n.n(i),
-  a = n(692547),
-  o = n(481060),
-  s = n(788080),
+  a = n.n(i),
+  o = n(692547),
+  s = n(481060),
+  l = n(788080),
   c = n(800530),
   u = n(388032),
   d = n(94740);
-let p = e => l()().diff(l().unix(e), "days");
+let f = e => a()().diff(a().unix(e), "days");
 
-function m(e) {
+function _(e) {
   let {
     classificationId: t
-  } = e;
-  return (0, r.jsx)(o.eee, {
-    onClick: () => {
-      (0, o.ZDy)(async () => {
-        let {
-          default: e
-        } = await Promise.all([n.e("25183"), n.e("3940"), n.e("18831"), n.e("68464")]).then(n.bind(n, 41164));
-        return n => (0, r.jsx)(e, {
-          classificationId: t,
-          source: c.s.SystemDM,
-          transitionState: n.transitionState,
-          onClose: n.onClose
-        })
+  } = e, i = () => {
+    (0, s.ZDy)(async () => {
+      let {
+        default: e
+      } = await Promise.all([n.e("25183"), n.e("3940"), n.e("18831"), n.e("68464")]).then(n.bind(n, 41164));
+      return n => (0, r.jsx)(e, {
+        classificationId: t,
+        source: c.s.SystemDM,
+        transitionState: n.transitionState,
+        onClose: n.onClose
       })
-    },
+    })
+  };
+  return (0, r.jsx)(s.eee, {
+    onClick: i,
     className: d.detailsButton,
     children: u.intl.string(u.t.QsqdXF)
   })
 }
 
-function f(e) {
+function p(e) {
   let {
     learnMoreLink: t
   } = e;
-  return (0, r.jsx)(o.eee, {
+  return (0, r.jsx)(s.eee, {
     className: d.detailsButton,
     href: t,
     children: u.intl.string(u.t["8/GdRE"])
   })
 }
 
-function g(e) {
+function h(e) {
   let {
     ctaType: t,
     classificationId: n,
@@ -57,12 +58,12 @@ function g(e) {
   switch (t) {
     case c.wo.POLICY_VIOLATION_DETAIL:
       if (null == n) return null;
-      return (0, r.jsx)(m, {
+      return (0, r.jsx)(_, {
         classificationId: n
       });
     case c.wo.LEARN_MORE_LINK:
       if (null == i) return null;
-      return (0, r.jsx)(f, {
+      return (0, r.jsx)(p, {
         learnMoreLink: i
       });
     default:
@@ -70,16 +71,16 @@ function g(e) {
   }
 }
 
-function _(e) {
+function m(e) {
   let {
     iconType: t
   } = e, n = {
-    default: (0, r.jsx)(o.MqZ, {
+    default: (0, r.jsx)(s.MqZ, {
       size: "xs",
-      color: a.Z.colors.TEXT_LINK.css
+      color: o.Z.colors.TEXT_LINK.css
     }),
-    danger: (0, r.jsx)(o.aNP, {
-      color: a.Z.colors.STATUS_DANGER
+    danger: (0, r.jsx)(s.aNP, {
+      color: o.Z.colors.STATUS_DANGER
     })
   };
   return null != t && t in n ? (0, r.jsx)("div", {
@@ -88,7 +89,7 @@ function _(e) {
   }) : null
 }
 
-function h(e) {
+function g(e) {
   let {
     children: t,
     theme: n
@@ -102,41 +103,41 @@ function h(e) {
   })
 }
 
-function b(e) {
+function E(e) {
   var t, n;
   if (null == e.embed || null == e.embed.fields) return null;
-  let i = (0, s.fr)(e.embed);
-  return null == i ? null : (0, r.jsxs)(o.P3F, {
+  let i = (0, l.fr)(e.embed);
+  return null == i ? null : (0, r.jsxs)(s.P3F, {
     className: d.safetyPolicyNoticeContainer,
     children: [(0, r.jsxs)("div", {
       className: d.noticeContent,
       children: [(0, r.jsxs)("div", {
         className: d.headerRow,
-        children: [(0, r.jsx)(_, {
+        children: [(0, r.jsx)(m, {
           iconType: i.icon
-        }), (0, r.jsx)(o.Text, {
+        }), (0, r.jsx)(s.Text, {
           variant: "text-md/semibold",
           children: i.header
         })]
       }), (0, r.jsx)("div", {
         className: d.incidentTiming,
-        children: (0, r.jsx)(o.Text, {
+        children: (0, r.jsx)(s.Text, {
           variant: "text-xs/medium",
           children: u.intl.format(u.t.eevFb2, {
-            daysAgo: p(null != (n = i.timestamp) ? n : 0)
+            daysAgo: f(null != (n = i.timestamp) ? n : 0)
           })
         })
       }), (0, r.jsx)("div", {
         className: d.noticeBody,
-        children: (0, r.jsx)(o.Text, {
+        children: (0, r.jsx)(s.Text, {
           variant: "text-md/normal",
           color: "text-muted",
           children: i.body
         })
       })]
-    }), (0, r.jsx)(h, {
+    }), (0, r.jsx)(g, {
       theme: i.theme,
-      children: null == (t = i.ctas) ? void 0 : t.map(e => (0, r.jsx)(g, {
+      children: null == (t = i.ctas) ? void 0 : t.map(e => (0, r.jsx)(h, {
         ctaType: e,
         classificationId: i.classification_id,
         learnMoreLink: i.learn_more_link

@@ -1,39 +1,40 @@
-/** Chunk was on 69150 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
-  Z: () => a
+  Z: () => l
 }), n(388685);
-var i = n(544891),
-  r = n(570140),
-  l = n(981631);
-let o = "".concat(l.dGm, "/api/v2/scheduled-maintenances"),
-  s = "".concat(l.dGm, "/api/v2/incidents/unresolved.json"),
-  a = {
+var r = n(544891),
+  i = n(570140),
+  a = n(981631);
+let o = "".concat(a.dGm, "/api/v2/scheduled-maintenances"),
+  s = "".concat(a.dGm, "/api/v2/incidents/unresolved.json"),
+  l = {
     checkIncidents() {
-      Promise.all([i.tn.get({
+      Promise.all([r.tn.get({
         url: "".concat(o, "/active.json"),
         rejectWithError: !0
-      }), i.tn.get(s)]).then(e => {
-        let [t, n] = e, [i] = t.body.scheduled_maintenances, [l] = n.body.incidents;
-        r.Z.dispatch({
+      }), r.tn.get(s)]).then(e => {
+        let [t, n] = e, [r] = t.body.scheduled_maintenances, [a] = n.body.incidents;
+        i.Z.dispatch({
           type: "STATUS_PAGE_INCIDENT",
-          incident: l || i
+          incident: a || r
         })
       })
     },
     checkScheduledMaintenances() {
-      i.tn.get({
+      r.tn.get({
         url: "".concat(o, "/upcoming.json"),
         rejectWithError: !0
       }).then(e => {
         let [t] = e.body.scheduled_maintenances;
-        r.Z.dispatch({
+        i.Z.dispatch({
           type: "STATUS_PAGE_SCHEDULED_MAINTENANCE",
           maintenance: t
         })
       })
     },
     ackScheduledMaintenance() {
-      r.Z.dispatch({
+      i.Z.dispatch({
         type: "STATUS_PAGE_SCHEDULED_MAINTENANCE_ACK"
       })
     }

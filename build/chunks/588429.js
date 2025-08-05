@@ -1,5 +1,6 @@
-/** Chunk was on 94313 **/
-n.r(e.exports = {
+/** Chunk was on web.js **/
+"use strict";
+var r = {
   reactions: "reactions__23977",
   icon: "icon__23977",
   reactionBtn: "reactionBtn__23977",
@@ -18,4 +19,5 @@ n.r(e.exports = {
   premiumIcon: "premiumIcon__23977",
   sparkles: "sparkles__23977",
   burstGlow: "burstGlow__23977"
-})
+};
+n.r(e.exports = r)

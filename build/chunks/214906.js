@@ -1,12 +1,12 @@
-/** Chunk was on 78650 **/
+/** Chunk was on 46154 **/
 e.d(n, {
   Z: () => h
 }), e(388685);
 var i = e(255367);
 e(73800);
-var r = e(913527),
-  l = e.n(r),
-  a = e(442837),
+var a = e(913527),
+  l = e.n(a),
+  r = e(442837),
   o = e(481060),
   s = e(777861),
   d = e(569471),
@@ -15,14 +15,14 @@ var r = e(913527),
   f = e(388032);
 
 function h(t) {
-  let [n, e, r] = (0, a.Wu)([d.Z], () => [d.Z.isMuted(t.id), d.Z.getMuteConfig(t.id), d.Z.hasJoined(t.id)]), h = (0, s.U)(e);
+  let [n, e, a] = (0, r.Wu)([d.Z], () => [d.Z.isMuted(t.id), d.Z.getMuteConfig(t.id), d.Z.hasJoined(t.id)]), h = (0, s.U)(e);
 
   function v(n) {
     u.Z.setNotificationSettings(t, {
       muted: n
     })
   }
-  return r ? n ? (0, i.jsx)(o.sNh, {
+  return a ? n ? (0, i.jsx)(o.sNh, {
     id: "unmute-channel",
     label: t.isForumPost() ? f.intl.string(f.t["0JQfsL"]) : f.intl.string(f.t["Cq/TzM"]),
     subtext: h,
@@ -34,11 +34,11 @@ function h(t) {
     children: (0, c.k)().map(n => {
       let {
         value: e,
-        label: r
+        label: a
       } = n;
       return (0, i.jsx)(o.sNh, {
         id: "".concat(e),
-        label: r,
+        label: a,
         action: () => (function(n) {
           let e = n > 0 ? l()().add(n, "second").toISOString() : null;
           u.Z.setNotificationSettings(t, {

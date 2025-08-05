@@ -1,8 +1,9 @@
-/** Chunk was on 93239 **/
-r.d(t, {
-  P: () => n
+/** Chunk was on web.js **/
+"use strict";
+n.d(t, {
+  P: () => r
 });
-let n = (0, r(818083).B)({
+let r = (0, n(818083).B)({
   kind: "user",
   id: "2025-07_remove_voice_user_overflow_menu",
   label: "Remove Voice User Overflow Menu",

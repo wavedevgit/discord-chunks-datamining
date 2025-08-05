@@ -1,12 +1,12 @@
-/** Chunk was on 78650 **/
+/** Chunk was on 46154 **/
 e.d(n, {
   Z: () => f
 });
 var i = e(255367);
 e(73800);
-var r = e(399606),
+var a = e(399606),
   l = e(481060),
-  a = e(228392),
+  r = e(228392),
   o = e(592125),
   s = e(934415),
   d = e(572004),
@@ -14,12 +14,12 @@ var r = e(399606),
   c = e(388032);
 
 function f(t, n, e) {
-  let f = (0, r.e7)([o.Z], () => null != t ? o.Z.getChannel(t.parent_id) : null);
+  let f = (0, a.e7)([o.Z], () => null != t ? o.Z.getChannel(t.parent_id) : null);
   return null == t ? null : (0, i.jsx)(l.sNh, {
     id: "channel-copy-link",
     label: c.intl.string(c.t.WqhZsr),
     action: () => {
-      t.isForumPost() && (0, a.B)({
+      t.isForumPost() && (0, r.B)({
         postId: t.id,
         location: {
           section: u.jXE.CONTEXT_MENU

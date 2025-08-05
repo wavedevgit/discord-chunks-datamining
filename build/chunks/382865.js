@@ -1,13 +1,13 @@
-/** Chunk was on 70663 **/
+/** Chunk was on 92357 **/
 n.d(t, {
-  c: () => a
+  c: () => s
 }), n(388685), n(539854);
 var r = n(73800),
   i = n(835473),
   l = n(497089);
 let o = new Set([l.O7.INCOMING_GAME_FRIEND_REQUESTS, l.O7.INCOMING_GAME_FRIEND_REQUESTS_ACCEPTED, l.O7.INCOMING_FRIEND_REQUESTS, l.O7.INCOMING_FRIEND_REQUESTS_ACCEPTED]);
 
-function a(e) {
+function s(e) {
   let t = r.useMemo(() => {
     let t = new Set,
       n = [];

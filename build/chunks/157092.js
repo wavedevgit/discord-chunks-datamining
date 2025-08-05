@@ -1,5 +1,5 @@
-/** Chunk was on 7210 **/
-A.exports = {
+/** Chunk was on 71824 **/
+e.exports = {
   container: "container__34940",
   topRow: "topRow__34940",
   memberNameAndTagContainer: "memberNameAndTagContainer__34940",

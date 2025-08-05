@@ -76,12 +76,12 @@ function S(e) {
     config: {
       duration: I
     }
-  })), R = e => {
+  })), w = e => {
     f(), O(1), null != p && d.default.track(h.rMx.QUEST_SURVEY_SUBMITTED, v(y({}, C(p, n)), {
       choice: e.text,
       choice_id: e.key
     }))
-  }, P = async e => {
+  }, R = async e => {
     1 === e && (await N({
       width: "100%"
     }), o())
@@ -96,7 +96,7 @@ function S(e) {
     children: (0, r.jsxs)(l.MyZ, {
       activeSlide: b,
       width: T,
-      onSlideReady: P,
+      onSlideReady: R,
       children: [(0, r.jsxs)(l.Mi4, {
         id: 0,
         children: [(0, r.jsxs)(l.xBx, {
@@ -122,7 +122,7 @@ function S(e) {
           className: g.modalContent,
           children: n.choices.map(e => (0, r.jsx)(A, {
             choice: e,
-            onClick: R
+            onClick: w
           }, e.key))
         })]
       }), (0, r.jsxs)(l.Mi4, {

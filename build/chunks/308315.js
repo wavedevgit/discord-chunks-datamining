@@ -1,4 +1,5 @@
-/** Chunk was on 94313 **/
+/** Chunk was on web.js **/
+"use strict";
 e.exports = {
   inline: "inline__6c706",
   hiddenMosaicItem: "hiddenMosaicItem__6c706",

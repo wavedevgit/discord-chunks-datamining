@@ -1,6 +1,6 @@
-/** Chunk was on 60173 **/
+/** Chunk was on 49152 **/
 n.d(t, {
-  Z: () => o
+  Z: () => s
 });
 var r = n(255367);
 n(73800);
@@ -8,27 +8,27 @@ var i = n(27457),
   l = n(131951),
   a = n(938243);
 
-function o(e) {
+function s(e) {
   var {
     aspectRatio: t,
     blocked: n,
-    ignored: o,
-    channel: s,
+    ignored: s,
+    channel: o,
     className: c,
-    focused: u,
-    children: d,
-    inCall: p,
-    inPopout: h,
+    focused: d,
+    children: u,
+    inCall: h,
+    inPopout: p,
     noBorder: f,
-    onClick: m,
-    onContextMenu: g,
+    onClick: g,
+    onContextMenu: m,
     onDoubleClick: b,
     onVideoResize: _,
     paused: y,
-    pulseSpeakingIndicator: C,
-    participant: x,
-    width: v
-  } = e, j = function(e, t) {
+    pulseSpeakingIndicator: j,
+    participant: O,
+    width: x
+  } = e, v = function(e, t) {
     if (null == e) return {};
     var n, r, i = function(e, t) {
       if (null == e) return {};
@@ -43,10 +43,10 @@ function o(e) {
     }
     return i
   }(e, ["aspectRatio", "blocked", "ignored", "channel", "className", "focused", "children", "inCall", "inPopout", "noBorder", "onClick", "onContextMenu", "onDoubleClick", "onVideoResize", "paused", "pulseSpeakingIndicator", "participant", "width"]);
-  let O = l.Z.getVideoComponent();
+  let C = l.Z.getVideoComponent();
   return (0, r.jsx)("div", {
     style: {
-      width: v
+      width: x
     },
     className: a.spaceBetweenTiles,
     children: (0, r.jsxs)("div", {
@@ -73,23 +73,23 @@ function o(e) {
         return e
       }({
         blocked: n,
-        ignored: o,
-        channel: s,
+        ignored: s,
+        channel: o,
         className: c,
-        focused: u,
-        inCall: p,
-        inPopout: h,
+        focused: d,
+        inCall: h,
+        inPopout: p,
         noBorder: f,
-        onClick: m,
-        onContextMenu: g,
+        onClick: g,
+        onContextMenu: m,
         onDoubleClick: b,
         onVideoResize: _,
-        participant: x,
+        participant: O,
         paused: y,
-        pulseSpeakingIndicator: C,
-        videoComponent: O,
-        width: v
-      }, j)), d]
+        pulseSpeakingIndicator: j,
+        videoComponent: C,
+        width: x
+      }, v)), u]
     })
   })
 }

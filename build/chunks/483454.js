@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   M: () => D,
-  h: () => R
+  h: () => w
 }), n(467055), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -203,7 +203,7 @@ let S = [d.h8.PAYMENT_ELEMENT],
       })]
     })
   },
-  R = e => {
+  w = e => {
     var {
       onSetupError: t
     } = e, n = I(e, ["onSetupError"]);
@@ -227,8 +227,8 @@ let S = [d.h8.PAYMENT_ELEMENT],
       children: (0, r.jsx)(C, y({}, n))
     })
   },
-  P = ["city", "country", "line1"],
-  w = ["link"],
+  R = ["city", "country", "line1"],
+  P = ["link"],
   D = e => {
     let {
       step: t,
@@ -242,7 +242,7 @@ let S = [d.h8.PAYMENT_ELEMENT],
       onChange: e => {
         s && null != a && a.log("PaymentElements onChange event:", e), _(e.complete), m((0, h.hR)(e.value.type))
       },
-      wallets: w
+      wallets: P
     }), [a, s]), y = i.useMemo(() => ({
       onChange: e => {
         var t;
@@ -260,7 +260,7 @@ let S = [d.h8.PAYMENT_ELEMENT],
           line2: null != (t = r.line2) ? t : "",
           state: r.state,
           postalCode: r.postal_code
-        }, s = P.every(e => {
+        }, s = R.every(e => {
           let t = a[e];
           return null != t && "" !== t
         }) && n;

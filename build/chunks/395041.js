@@ -1,22 +1,23 @@
-/** Chunk was on 24022 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
-  O: () => i,
-  w: () => o
+  O: () => l,
+  w: () => s
 });
 var r = n(255367);
 n(73800);
-var s = n(481060),
-  l = n(277640);
+var i = n(481060),
+  a = n(277640);
 
-function a(e, t) {
+function o(e, t) {
   let {
     children: n
   } = e;
-  return (0, r.jsx)(s.Text, {
+  return (0, r.jsx)(i.Text, {
     variant: "text-sm/medium",
     className: t,
     children: n
   })
 }
-let o = e => a(e, l.searchFilter),
-  i = e => a(e, l.searchAnswer)
+let s = e => o(e, a.searchFilter),
+  l = e => o(e, a.searchAnswer)

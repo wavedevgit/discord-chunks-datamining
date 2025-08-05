@@ -1,4 +1,5 @@
-/** Chunk was on 94313 **/
+/** Chunk was on web.js **/
+"use strict";
 e.exports = {
   dropdownArrowHitbox: "dropdownArrowHitbox_e8c23e",
   dropdownArrow: "dropdownArrow_e8c23e",

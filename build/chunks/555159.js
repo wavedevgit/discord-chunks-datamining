@@ -1,6 +1,6 @@
-/** Chunk was on 8381 **/
+/** Chunk was on web.js **/
 "use strict";
-var e = RegExp("\r", "g");
-t.exports = function(t) {
-  return t.replace(e, "")
+var t = RegExp("\r", "g");
+e.exports = function(e) {
+  return e.replace(t, "")
 }

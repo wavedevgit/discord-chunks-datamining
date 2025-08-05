@@ -1,12 +1,12 @@
-/** Chunk was on 78650 **/
+/** Chunk was on 46154 **/
 e.d(n, {
   Z: () => d
 });
 var i = e(255367);
 e(73800);
-var r = e(481060),
+var a = e(481060),
   l = e(216572),
-  a = e(346479),
+  r = e(346479),
   o = e(665906),
   s = e(388032);
 
@@ -15,13 +15,13 @@ function d(t) {
   let e = (0, l.HL)(t),
     d = (0, o.C7)(t),
     u = (0, o.tc)(t);
-  if ((t.isArchivedThread() ? u : d) && !e) return (null == (n = t.threadMetadata) ? void 0 : n.archived) ? (0, i.jsx)(r.sNh, {
+  if ((t.isArchivedThread() ? u : d) && !e) return (null == (n = t.threadMetadata) ? void 0 : n.archived) ? (0, i.jsx)(a.sNh, {
     id: "unarchive-thread",
     label: t.isForumPost() ? s.intl.string(s.t.cnRubW) : s.intl.string(s.t.S9E4Gx),
-    action: () => a.Z.unarchiveThread(t, !1)
-  }) : (0, i.jsx)(r.sNh, {
+    action: () => r.Z.unarchiveThread(t, !1)
+  }) : (0, i.jsx)(a.sNh, {
     id: "archive-thread",
     label: t.isForumPost() ? s.intl.string(s.t.BTs4KS) : s.intl.string(s.t.wiIevb),
-    action: () => a.Z.archiveThread(t, !1)
+    action: () => r.Z.archiveThread(t, !1)
   })
 }

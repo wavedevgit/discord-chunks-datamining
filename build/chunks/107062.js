@@ -49,11 +49,11 @@ function C(e) {
   }
   return e
 }
-let R = (e, t) => A.intl.formatToPlainString(A.t.tAwI1t, {
+let w = (e, t) => A.intl.formatToPlainString(A.t.tAwI1t, {
     username: t.username,
     activity: e.extra.activity_name
   }),
-  P = (e, t, n) => {
+  R = (e, t, n) => {
     let r = A.t["bES+y8"],
       i = m.ZP.getName(t.guild_id, t.id, n),
       a = e.extra.activity_name;
@@ -62,7 +62,7 @@ let R = (e, t) => A.intl.formatToPlainString(A.t.tAwI1t, {
       userName: i
     }).replaceAll("*", "")
   },
-  w = e => {
+  P = e => {
     let {
       entry: t,
       channel: n,
@@ -90,16 +90,16 @@ let R = (e, t) => A.intl.formatToPlainString(A.t.tAwI1t, {
       showCoverImage: !1
     }), {
       user: x,
-      details: M,
-      activity: k,
-      embeddedActivity: j
+      details: k,
+      activity: j,
+      embeddedActivity: M
     } = (0, T.n)(n), {
       primaryColor: U,
       secondaryColor: G
     } = (0, O.Z)(null == L ? void 0 : L.src), B = (0, a.e7)([p.default], () => p.default.locale), {
-      displayParticipants: V,
+      displayParticipants: Z,
       participant1: F,
-      participant2: Z,
+      participant2: V,
       numOtherParticipants: H
     } = (0, E.Z)(n, 3), Y = () => {
       d.__(f._b.TEXT, _.Ie.NORMAL, {
@@ -107,22 +107,22 @@ let R = (e, t) => A.intl.formatToPlainString(A.t.tAwI1t, {
       })
     }, W = i.useCallback(e => {
       if ((null == L ? void 0 : L.src) == null || null == t || null == x) return;
-      let r = H > 0 ? w({
+      let r = H > 0 ? P({
         entry: n,
         channel: t,
-        users: [F, Z],
+        users: [F, V],
         countOthers: H
-      }) : P(n, t, x);
+      }) : R(n, t, x);
       return (0, y.C4)({
         entry: n,
         applicationImageSrc: null == L ? void 0 : L.src,
-        avatarSrcs: V.map(e => e.getAvatarURL(t.guild_id, 128)),
+        avatarSrcs: Z.map(e => e.getAvatarURL(t.guild_id, 128)),
         description: r,
         timestamp: (0, b.yh)(n, B),
         colors: [U, G],
         channelId: e
       })
-    }, [null == L ? void 0 : L.src, t, V, n, B, H, F, Z, U, G, x]), {
+    }, [null == L ? void 0 : L.src, t, Z, n, B, H, F, V, U, G, x]), {
       enabled: K
     } = s.c.useExperiment({
       location: "MemberListAcitivtyContentPopout"
@@ -138,7 +138,7 @@ let R = (e, t) => A.intl.formatToPlainString(A.t.tAwI1t, {
         channel: t,
         userDescription: (0, b.kr)(n) ? A.t.vPg1JS : A.t.rPqqtr,
         title: n.extra.activity_name,
-        subtitle: M,
+        subtitle: k,
         badges: z,
         entry: n,
         showCoverImage: !1,
@@ -146,22 +146,22 @@ let R = (e, t) => A.intl.formatToPlainString(A.t.tAwI1t, {
         onClickSubtitle: D ? void 0 : Y,
         onClickThumbnail: D ? void 0 : Y
       }),
-      X = (0, l.Z)(k, S.xjy.JOIN) || (0, c.Z)(k),
-      Q = X ? (0, r.jsx)(u.Z, {
-        embeddedActivity: j,
-        activity: k,
+      $ = (0, l.Z)(j, S.xjy.JOIN) || (0, c.Z)(j),
+      X = $ ? (0, r.jsx)(u.Z, {
+        embeddedActivity: M,
+        activity: j,
         user: x,
         ButtonComponent: e => (0, r.jsx)(I.Ll, C({
           IconComponent: o.YVR
         }, e))
       }) : null,
-      J = K ? o.iWm : o.jje,
-      $ = D ? null : (0, r.jsx)(I.Ll, {
+      Q = K ? o.iWm : o.jje,
+      J = D ? null : (0, r.jsx)(I.Ll, {
         onClick: Y,
-        IconComponent: J,
+        IconComponent: Q,
         children: A.intl.string(A.t.GDWYR0)
       }),
-      ee = [X && !D ? Q : $].filter(h.lm);
+      ee = [$ && !D ? X : J].filter(h.lm);
     return (0, r.jsxs)(I.yR, {
       children: [q, (0, r.jsx)(I.St, {
         children: (0, r.jsx)(I.WT, {
@@ -170,7 +170,7 @@ let R = (e, t) => A.intl.formatToPlainString(A.t.tAwI1t, {
           user: x,
           channel: t,
           generateReactionImage: W,
-          reactionImageAltText: R(n, x),
+          reactionImageAltText: w(n, x),
           entry: n,
           buttons: ee
         })

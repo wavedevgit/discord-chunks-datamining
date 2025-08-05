@@ -1,6 +1,6 @@
-/** Chunk was on 99226 **/
+/** Chunk was on 13616 **/
 n.d(t, {
-  Z: () => E
+  Z: () => Z
 }), n(388685), n(539854);
 var i = n(255367),
   r = n(73800),
@@ -26,9 +26,9 @@ var i = n(255367),
   C = n(108053),
   N = n(981631),
   S = n(388032),
-  Z = n(498181);
+  I = n(498181);
 
-function I(e, t) {
+function w(e, t) {
   switch (e) {
     case N.b4C.APPLICATION:
       var n;
@@ -49,21 +49,21 @@ function I(e, t) {
       return ""
   }
 }
-let E = r.memo(function(e) {
+let Z = r.memo(function(e) {
   let {
     section: t,
     sectionId: n,
     guild: l,
-    channel: E,
-    integrations: w,
-    editedIntegration: T,
-    webhooks: P,
+    channel: Z,
+    integrations: E,
+    editedIntegration: P,
+    webhooks: T,
     editedWebhook: k,
     isFetchingWebhooks: A,
-    refToScroller: D,
-    errors: R,
+    refToScroller: R,
+    errors: D,
     hasChanges: L
-  } = e, M = (0, a.e7)([g.ZP], () => null != l ? g.ZP.getDefaultChannel(l.id) : null), B = (0, a.cj)([g.ZP], () => g.ZP.getChannels(null == l ? void 0 : l.id)), U = (0, a.cj)([f.Z], () => o().keyBy(B.SELECTABLE.map(e => e.channel).filter(e => f.Z.can(N.Plq.MANAGE_WEBHOOKS, e)), "id")), W = (0, a.cj)([f.Z], () => o().keyBy(B.VOCAL.map(e => e.channel).filter(e => e.isGuildVocal() && f.Z.can(N.Plq.MANAGE_WEBHOOKS, e)), "id")), H = null != E ? E : M, G = t === N.b4C.APPLICATION ? n : null, [z, F] = r.useState(d.$x), V = r.useCallback(() => L() ? (h.S.dispatch(N.CkL.SHAKE_APP, {
+  } = e, M = (0, a.e7)([g.ZP], () => null != l ? g.ZP.getDefaultChannel(l.id) : null), B = (0, a.cj)([g.ZP], () => g.ZP.getChannels(null == l ? void 0 : l.id)), U = (0, a.cj)([f.Z], () => o().keyBy(B.SELECTABLE.map(e => e.channel).filter(e => f.Z.can(N.Plq.MANAGE_WEBHOOKS, e)), "id")), W = (0, a.cj)([f.Z], () => o().keyBy(B.VOCAL.map(e => e.channel).filter(e => e.isGuildVocal() && f.Z.can(N.Plq.MANAGE_WEBHOOKS, e)), "id")), H = null != Z ? Z : M, G = t === N.b4C.APPLICATION ? n : null, [z, F] = r.useState(d.$x), V = r.useCallback(() => L() ? (h.S.dispatch(N.CkL.SHAKE_APP, {
     duration: 300,
     intensity: z
   }), F(Math.min(z + d.d7, d.w6)), h.S.dispatch(N.CkL.EMPHASIZE_NOTICE), !1) : (F(d.$x), !0), [L, z]), K = r.useCallback(e => !!V() && (c.Z.setSection(e), !0), [V]), {
@@ -78,8 +78,8 @@ let E = r.memo(function(e) {
       n = {},
       i = [],
       r = [];
-    if (null != w)
-      for (let i of w)
+    if (null != E)
+      for (let i of E)
         if ("discord" === i.type) {
           if (null != i.application) {
             var l;
@@ -90,7 +90,7 @@ let E = r.memo(function(e) {
             }, (null == (l = i.application.bot) ? void 0 : l.id) !== void 0 && (t[i.application.bot.id] = i.application.id)
           }
         } else i.type in n || (n[i.type] = []), n[i.type].push(i);
-    for (let t of P)(t.channel_id in U || t.channel_id in W) && (null != t.application_id && t.application_id in e ? e[t.application_id].webhooks.push(t) : t.type === N.ylB.CHANNEL_FOLLOWER ? r.push(t) : i.push(t));
+    for (let t of T)(t.channel_id in U || t.channel_id in W) && (null != t.application_id && t.application_id in e ? e[t.application_id].webhooks.push(t) : t.type === N.ylB.CHANNEL_FOLLOWER ? r.push(t) : i.push(t));
     return {
       applicationIntegrations: e,
       applicationBotIds: t,
@@ -98,7 +98,7 @@ let E = r.memo(function(e) {
       customWebhooks: i,
       followedChannelWebhooks: r
     }
-  }, [w, U, W, P]);
+  }, [E, U, W, T]);
   r.useEffect(() => {
     if (!A) switch (t) {
       case N.b4C.TWITCH:
@@ -121,7 +121,7 @@ let E = r.memo(function(e) {
       null != X[N.ABu.TWITCH] && (Q = (0, i.jsx)(v.Z, {
         guild: l,
         integrations: X[N.ABu.TWITCH],
-        editedIntegration: T,
+        editedIntegration: P,
         labelText: S.intl.string(S.t.q4pBGx),
         platformType: N.ABu.TWITCH,
         descriptionText: S.intl.string(S.t.V9kNqq),
@@ -139,7 +139,7 @@ let E = r.memo(function(e) {
       null != X[N.ABu.YOUTUBE] && (Q = (0, i.jsx)(v.Z, {
         guild: l,
         integrations: X[N.ABu.YOUTUBE],
-        editedIntegration: T,
+        editedIntegration: P,
         labelText: S.intl.string(S.t.aS6cKy),
         platformType: N.ABu.YOUTUBE,
         descriptionText: S.intl.string(S.t["7Tv7JC"]),
@@ -160,7 +160,7 @@ let E = r.memo(function(e) {
         applicationIntegration: et,
         editedWebhook: k,
         selectableWebhookChannels: U,
-        errors: R,
+        errors: D,
         canNavigate: V
       }));
       break;
@@ -170,13 +170,13 @@ let E = r.memo(function(e) {
         editedWebhook: k,
         selectableWebhookChannels: U,
         canNavigate: V,
-        errors: R
+        errors: D
       });
       break;
     case N.b4C.WEBHOOKS:
       Q = (0, i.jsx)(C.Z, {
         guild: l,
-        channel: E,
+        channel: Z,
         customWebhooks: $,
         editedWebhook: k,
         selectableWebhookChannels: function(e) {
@@ -198,8 +198,8 @@ let E = r.memo(function(e) {
           return e
         }({}, U, W),
         canNavigate: V,
-        refToScroller: D,
-        errors: R
+        refToScroller: R,
+        errors: D
       });
       break;
     case N.b4C.LOBBIES_LINKED:
@@ -210,7 +210,7 @@ let E = r.memo(function(e) {
     default:
       Q = (0, i.jsx)(_.Z, {
         guild: l,
-        channel: E,
+        channel: Z,
         applicationIntegrations: q,
         builtInIntegrations: X,
         customWebhooks: $,
@@ -243,22 +243,22 @@ let E = r.memo(function(e) {
   return (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(p.Z, {
       align: p.Z.Align.CENTER,
-      className: Z.breadcrumbs,
+      className: I.breadcrumbs,
       children: t === N.b4C.OVERVIEW ? (0, i.jsx)(s.vwX, {
         tag: "h1",
-        children: I(N.b4C.OVERVIEW)
+        children: w(N.b4C.OVERVIEW)
       }) : (0, i.jsx)(s.OoM, {
         activeId: t.toString(),
         breadcrumbs: [N.b4C.OVERVIEW, t].map(e => ({
           id: e.toString(),
-          label: I(e, q[G])
+          label: w(e, q[G])
         })),
         onBreadcrumbClick: e => {
           t !== parseInt(e.id) && K(parseInt(e.id))
         },
         renderCustomBreadcrumb: (e, t) => (0, i.jsx)(s.vwX, {
           tag: "h1",
-          className: t ? Z.breadcrumbActive : Z.breadcrumbInactive,
+          className: t ? I.breadcrumbActive : I.breadcrumbInactive,
           children: e.label
         })
       })

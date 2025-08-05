@@ -1,4 +1,5 @@
-/** Chunk was on 94313 **/
+/** Chunk was on web.js **/
+"use strict";
 e.exports = {
   oneByOneGrid: "oneByOneGrid_f4758a",
   oneByOneGridSingle: "oneByOneGridSingle_f4758a",

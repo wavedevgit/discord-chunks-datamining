@@ -1,10 +1,10 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Ds: () => j,
-  YB: () => M,
+  Ds: () => M,
+  YB: () => k,
   of: () => U,
-  q5: () => k
+  q5: () => j
 });
 var r = n(255367);
 n(73800);
@@ -33,9 +33,9 @@ var i = n(120356),
   A = n(636449),
   N = n(884338),
   C = n(617552),
-  R = n(981631),
-  P = n(231338),
-  w = n(388032),
+  w = n(981631),
+  R = n(231338),
+  P = n(388032),
   D = n(816083),
   L = n(992955);
 
@@ -50,11 +50,11 @@ function x(e) {
     }),
     onClick: t,
     iconComponent: s.CJ0,
-    label: n ? w.intl.string(w.t["2TiKgY"]) : w.intl.string(w.t.oN8bqa)
+    label: n ? P.intl.string(P.t["2TiKgY"]) : P.intl.string(P.t.oN8bqa)
   })
 }
 
-function M(e) {
+function k(e) {
   var t, n, i;
   let {
     channel: a,
@@ -62,18 +62,18 @@ function M(e) {
     onMouseDown: y,
     onMouseMove: I,
     onMouseLeave: N,
-    onJumpToChannel: w,
+    onJumpToChannel: P,
     idle: x,
-    selectedParticipant: M,
-    embeddedActivity: k
-  } = e, j = (0, c.bp)() === R.IlC.POPOUT, U = (0, o.e7)([S.Z], () => S.Z.isVideoEnabled()), G = (0, o.e7)([S.Z], () => Object.values(S.Z.getVideoDevices())[0]), B = !1 === (null == (t = null == G ? void 0 : G.disabled) || t), V = (0, d.Z)([s])[0], F = (0, m.Z)(a), {
-    parentAnalyticsLocation: Z
+    selectedParticipant: k,
+    embeddedActivity: j
+  } = e, M = (0, c.bp)() === w.IlC.POPOUT, U = (0, o.e7)([S.Z], () => S.Z.isVideoEnabled()), G = (0, o.e7)([S.Z], () => Object.values(S.Z.getVideoDevices())[0]), B = !1 === (null == (t = null == G ? void 0 : G.disabled) || t), Z = (0, d.Z)([s])[0], F = (0, m.Z)(a), {
+    parentAnalyticsLocation: V
   } = (0, u.ZP)(), H = e => {
-    (0, _.v)(Z, _.d.CAMERA, e), l.Z.setVideoEnabled(e)
+    (0, _.v)(V, _.d.CAMERA, e), l.Z.setVideoEnabled(e)
   }, Y = () => {
     B ? H(!0) : (0, g.Z)()
   }, W = () => {
-    (0, _.v)(Z, _.d.POPOUT, !0), null != a && (0, C.Z)({
+    (0, _.v)(V, _.d.POPOUT, !0), null != a && (0, C.Z)({
       onConfirm: () => h.hP(a)
     })
   };
@@ -86,8 +86,8 @@ function M(e) {
       className: L.topControls,
       children: (0, r.jsx)(b.r, {
         idle: x,
-        title: null != (i = null != (n = null == V ? void 0 : V.name) ? n : null == a ? void 0 : a.name) ? i : "",
-        onJumpToChannel: w,
+        title: null != (i = null != (n = null == Z ? void 0 : Z.name) ? n : null == a ? void 0 : a.name) ? i : "",
+        onJumpToChannel: P,
         preventIdleComponent: E.Z
       })
     }), (0, r.jsxs)("div", {
@@ -109,7 +109,7 @@ function M(e) {
             channelId: a.id,
             guildId: a.getGuildId(),
             className: L.__invalid_leftTrayIcon,
-            participant: M,
+            participant: k,
             compact: !0
           })
         })]
@@ -119,14 +119,14 @@ function M(e) {
         justify: p.Z.Justify.END,
         basis: "50%",
         align: p.Z.Align.CENTER,
-        children: [j || (0, A.R)() ? null : (0, r.jsx)(v.Z, {
+        children: [M || (0, A.R)() ? null : (0, r.jsx)(v.Z, {
           className: D.rightPipIcon,
           popoutOpen: !1,
           onOpenPopout: W,
-          onClosePopout: P.Vq
+          onClosePopout: R.Vq
         }), (0, r.jsx)(O.Z, {
           applicationId: s,
-          location: k.location,
+          location: j.location,
           className: D.rightPipIcon
         })]
       })]
@@ -134,7 +134,7 @@ function M(e) {
   })
 }
 
-function k(e) {
+function j(e) {
   var t, n;
   let {
     channel: i,
@@ -179,7 +179,7 @@ function k(e) {
   })
 }
 
-function j(e) {
+function M(e) {
   let {
     channelId: t,
     participantsOpen: n,

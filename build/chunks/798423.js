@@ -1,11 +1,10 @@
-/** Chunk was on 67501 **/
-"use strict";
-n.d(t, {
+/** Chunk was on 4192 **/
+t.d(n, {
   Q: () => i
 });
-var r = n(863750);
+var l = t(863750);
 
 function i() {
-  return r.Z.get("enable_recently_active")
+  return l.Z.get("enable_recently_active")
 }
-n(238428)
+t(238428)

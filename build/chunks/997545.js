@@ -64,9 +64,9 @@ function A(e, t) {
 }
 let N = 50,
   C = .9,
-  R = .1,
-  P = 0,
-  w = {
+  w = .1,
+  R = 0,
+  P = {
     fec: !0,
     packetLossRate: .3
   };
@@ -225,7 +225,7 @@ class x extends _.Z {
       i = e === v.ad.RED ? {
         fec: !1,
         packetLossRate: 0
-      } : w;
+      } : P;
     this.conn.setTransportOptions(T({}, r, i)), this.videoEncoderFallbackPending && (this.videoEncoderFallbackPending = !1)
   }
   getStats() {
@@ -781,7 +781,7 @@ class x extends _.Z {
       inputModeOptions: this.createInputModeOptions(),
       minimumJitterBufferLevel: this.minimumJitterBufferLevel,
       postponeDecodeLevel: this.postponeDecodeLevel
-    }, this.getAttenuationOptions(), w), {
+    }, this.getAttenuationOptions(), P), {
       qos: this.qos,
       prioritySpeakerDucking: v.jg,
       encodingVoiceBitRate: this.voiceBitrate,
@@ -849,7 +849,7 @@ class x extends _.Z {
     this.conn.mergeUsers(e), this.emit(m.Sh.UsersMerged, e)
   }
   constructor(e, t, n) {
-    super(e, t), I(this, "mediaEngineConnectionId", "Native-".concat(P++)), I(this, "goLiveSourceIdentifier", void 0), I(this, "selfVideo", !1), I(this, "forceAudioNormal", !1), I(this, "forceAudioPriority", !1), I(this, "codecs", []), I(this, "videoEncoderFallbackPending", !1), I(this, "desktopDegradationPreference", (0, b.zS)().DegradationPreference.MAINTAIN_FRAMERATE), I(this, "sourceDesktopDegradationPreference", (0, b.zS)().DegradationPreference.DISABLED), I(this, "videoDegradationPreference", (0, b.zS)().DegradationPreference.BALANCED), I(this, "localPans", {}), I(this, "remoteAudioSSRCs", {}), I(this, "remoteVideoSSRCs", {}), I(this, "inputMode", v.pM.VOICE_ACTIVITY), I(this, "vadThreshold", -40), I(this, "vadAutoThreshold", !0), I(this, "vadKrispActivationThreshold", .5), I(this, "vadUseKrisp", !0), I(this, "vadLeading", 5), I(this, "vadTrailing", 25), I(this, "pttReleaseDelay", 20), I(this, "soundshareActive", !1), I(this, "soundshareId", null), I(this, "soundshareSentSpeakingEvent", !1), I(this, "echoCancellation", !0), I(this, "noiseSuppression", !0), I(this, "automaticGainControl", {
+    super(e, t), I(this, "mediaEngineConnectionId", "Native-".concat(R++)), I(this, "goLiveSourceIdentifier", void 0), I(this, "selfVideo", !1), I(this, "forceAudioNormal", !1), I(this, "forceAudioPriority", !1), I(this, "codecs", []), I(this, "videoEncoderFallbackPending", !1), I(this, "desktopDegradationPreference", (0, b.zS)().DegradationPreference.MAINTAIN_FRAMERATE), I(this, "sourceDesktopDegradationPreference", (0, b.zS)().DegradationPreference.DISABLED), I(this, "videoDegradationPreference", (0, b.zS)().DegradationPreference.BALANCED), I(this, "localPans", {}), I(this, "remoteAudioSSRCs", {}), I(this, "remoteVideoSSRCs", {}), I(this, "inputMode", v.pM.VOICE_ACTIVITY), I(this, "vadThreshold", -40), I(this, "vadAutoThreshold", !0), I(this, "vadKrispActivationThreshold", .5), I(this, "vadUseKrisp", !0), I(this, "vadLeading", 5), I(this, "vadTrailing", 25), I(this, "pttReleaseDelay", 20), I(this, "soundshareActive", !1), I(this, "soundshareId", null), I(this, "soundshareSentSpeakingEvent", !1), I(this, "echoCancellation", !0), I(this, "noiseSuppression", !0), I(this, "automaticGainControl", {
       enabled: !0
     }), I(this, "noiseCancellation", !1), I(this, "voiceFilterId", null), I(this, "experimentalEncoders", !1), I(this, "hardwareH264", !0), I(this, "softwareH264", !0), I(this, "attenuationFactor", .5), I(this, "attenuateWhileSpeakingSelf", !1), I(this, "attenuateWhileSpeakingOthers", !0), I(this, "qos", !0), I(this, "conn", void 0), I(this, "minimumJitterBufferLevel", 0), I(this, "postponeDecodeLevel", 100), I(this, "reconnectInterval", 6e4), I(this, "keyframeInterval", 0), I(this, "clipsKeyFrameInterval", 0), I(this, "videoQualityMeasurement", ""), I(this, "videoEncoderExperiments", ""), I(this, "numFastUdpReconnects", 0), I(this, "simulcastLQDisabledSsrc", void 0), I(this, "lastPreparedTransitionId", -1), I(this, "lastExecutedTransitionId", -1), I(this, "logger", void 0), I(this, "transportInfo", void 0), I(this, "onConnectStarted", void 0), I(this, "handleSpeakingNative", (e, t) => {
       let n = v.Dg.NONE;
@@ -880,7 +880,7 @@ class x extends _.Z {
             let n = Math.floor(e.bitrate * C);
             n = i()(n, null != (r = s.minBitrate) ? r : 0, null != (a = s.maxBitrate) ? a : n);
             let l = null != (o = s.targetBitrate) ? o : 0;
-            (Math.abs(n - l) / ((n + l) / 2) > R || void 0 === s.targetBitrate) && (this.logger.info("Updating target bitrate for SSRC ".concat(t, " from ").concat(s.targetBitrate, " to ").concat(n)), this.videoQualityManager.setGoLiveSimulcastLQTargetBitrate(n), this.updateVideoQuality())
+            (Math.abs(n - l) / ((n + l) / 2) > w || void 0 === s.targetBitrate) && (this.logger.info("Updating target bitrate for SSRC ".concat(t, " from ").concat(s.targetBitrate, " to ").concat(n)), this.videoQualityManager.setGoLiveSimulcastLQTargetBitrate(n), this.updateVideoQuality())
           }
         })
       }

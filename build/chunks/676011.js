@@ -1,5 +1,6 @@
-/** Chunk was on 94313 **/
-n.r(e.exports = {
+/** Chunk was on web.js **/
+"use strict";
+var r = {
   wrapper: "wrapper_d5f3cd",
   header: "header_d5f3cd",
   content: "content_d5f3cd",
@@ -38,4 +39,5 @@ n.r(e.exports = {
   resolving: "resolving_d5f3cd",
   resolvingBackground: "resolvingBackground_d5f3cd",
   resolvingFakeButton: "resolvingFakeButton_d5f3cd"
-})
+};
+n.r(e.exports = r)

@@ -1,12 +1,11 @@
-/** Chunk was on 44947 **/
-"use strict";
-n.d(t, {
-  s: () => i
+/** Chunk was on 92078 **/
+t.d(r, {
+  s: () => o
 });
-var r = n(73800);
+var e = t(73800);
 
-function i(e) {
-  return (0, r.useMemo)(function() {
-    return e.hooks.dropTarget()
-  }, [e])
+function o(n) {
+  return (0, e.useMemo)(function() {
+    return n.hooks.dropTarget()
+  }, [n])
 }

@@ -1,4 +1,4 @@
-/** Chunk was on 34113 **/
+/** Chunk was on 24329 **/
 e.exports = {
   whatYouLoseButtonContainer: "whatYouLoseButtonContainer__1fb50"
 }

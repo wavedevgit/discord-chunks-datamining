@@ -1,4 +1,4 @@
-/** Chunk was on 70663 **/
+/** Chunk was on 92357 **/
 n.d(t, {
   Z: () => S
 }), n(388685);
@@ -6,8 +6,8 @@ var r = n(255367),
   i = n(73800),
   l = n(120356),
   o = n.n(l),
-  a = n(66546),
-  s = n(893999),
+  s = n(66546),
+  a = n(893999),
   c = n(442837),
   u = n(481060),
   d = n(570140),
@@ -17,8 +17,8 @@ var r = n(255367),
   g = n(592125),
   m = n(259580),
   b = n(617379),
-  _ = n(324081),
-  O = n(305248),
+  O = n(324081),
+  _ = n(305248),
   y = n(520116),
   C = n(981631),
   v = n(388032),
@@ -47,7 +47,7 @@ let S = i.memo(function(e) {
       channel: t,
       deleteChannel: n
     } = e, l = i.useRef(null), [
-      [o, s], c
+      [o, a], c
     ] = i.useState([0, 0]), d = t.deleted && o > 0;
     if (t.deleted && 0 === o && null != l.current) {
       let e = l.current.offsetHeight,
@@ -74,10 +74,10 @@ let S = i.memo(function(e) {
       opacity: h,
       height: p.to(e => {
         var t, n;
-        return d ? (t = o, (n = s) + (t - n) * e) : "auto"
+        return d ? (t = o, (n = a) + (t - n) * e) : "auto"
       })
     };
-    return (0, r.jsx)(a.animated.div, {
+    return (0, r.jsx)(s.animated.div, {
       ref: l,
       style: f,
       children: (0, r.jsx)(x, E({}, e))
@@ -89,17 +89,17 @@ let S = i.memo(function(e) {
       onJump: n,
       deleteChannel: l,
       toggle: o
-    } = e, a = (0, c.e7)([g.Z], () => g.Z.getChannel(t.channelId));
+    } = e, s = (0, c.e7)([g.Z], () => g.Z.getChannel(t.channelId));
     if (i.useEffect(() => {
-        null == a || !t.isFullyLoaded || t.hasError || t.collapsed || "messages" !== t.type || 0 !== t.messages.length || d.Z.wait(() => {
+        null == s || !t.isFullyLoaded || t.hasError || t.collapsed || "messages" !== t.type || 0 !== t.messages.length || d.Z.wait(() => {
           (0, h.In)(t.channelId, {
             section: C.jXE.INBOX,
             object: C.qAy.ACK_INBOX_CHANNEL_NO_MESSAGES,
             objectType: C.Qqv.ACK_AUTOMATIC
           }, !0), l(t.channelId)
         })
-      }), null == a || !t.hasLoadedAnything) return null;
-    let s = (e, r) => {
+      }), null == s || !t.hasLoadedAnything) return null;
+    let a = (e, r) => {
       (0, p.yw)(C.rMx.INBOX_CHANNEL_CLICKED, {
         channel_id: t.channelId,
         guild_id: t.guildId
@@ -110,23 +110,23 @@ let S = i.memo(function(e) {
     return (0, r.jsx)("div", {
       className: j.channel,
       children: (0, r.jsx)(u.y5t, {
-        component: (0, r.jsxs)(_.Z, {
-          channel: a,
-          gotoChannel: s,
+        component: (0, r.jsxs)(O.Z, {
+          channel: s,
+          gotoChannel: a,
           mentionCount: t.mentionCount,
           toggleCollapsed: o,
           channelState: t,
           children: [(0, r.jsx)(b.Z, {
-            channel: a
+            channel: s
           }), (0, r.jsx)(I, E({}, e)), "nsfw" === t.type ? null : (0, r.jsx)(P, E({}, e))]
         }),
         children: t.collapsed ? null : "messages" === t.type ? (0, r.jsx)(y.Z, {
           channel: t,
-          channelRecord: a,
-          gotoChannel: s
-        }) : "forum" === t.type ? (0, r.jsx)(O.Z, {
+          channelRecord: s,
+          gotoChannel: a
+        }) : "forum" === t.type ? (0, r.jsx)(_.Z, {
           channel: t,
-          channelRecord: a,
+          channelRecord: s,
           deleteChannel: l
         }) : null
       })
@@ -139,7 +139,7 @@ function I(e) {
     markChannelRead: n,
     markGuildRead: i,
     getNumUnreadChannels: l
-  } = e, o = (0, s.Z)() && null != t.guildId;
+  } = e, o = (0, a.Z)() && null != t.guildId;
   return (0, r.jsx)(u.M0o, {
     className: j.markReadButton,
     tooltip: o ? v.intl.string(v.t["5lLMhI"]) : v.intl.string(v.t.e6RscX),

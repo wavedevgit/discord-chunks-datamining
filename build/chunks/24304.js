@@ -1,4 +1,4 @@
-/** Chunk was on 94312 **/
+/** Chunk was on 22988 **/
 e.exports = {
   developerPortalCtaWrapper: "developerPortalCtaWrapper_bf485f",
   developerPortalCta: "developerPortalCta_bf485f",

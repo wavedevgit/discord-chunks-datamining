@@ -1,7 +1,6 @@
-/** Chunk was on 67501 **/
-"use strict";
+/** Chunk was on 72762 **/
 n.d(t, {
-  Z: () => v
+  Z: () => g
 }), n(539854), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -14,44 +13,44 @@ var r = n(255367),
   d = n(639119),
   f = n(655525),
   p = n(924540),
-  g = n(170671),
-  m = n(921944),
-  b = n(474936),
-  h = n(374594);
+  b = n(170671),
+  O = n(921944),
+  h = n(474936),
+  m = n(374594);
 
-function v(e) {
+function g(e) {
   let t, {
       decoration: n,
       label: l,
-      isSelected: v
+      isSelected: g
     } = e,
-    O = (0, d.N)(),
+    j = (0, d.N)(),
     y = (0, u.Ng)(),
-    E = (0, c.Vi)(),
-    S = (null == O ? void 0 : O.trial_id) === b.a7,
-    j = [];
-  E && j.push(o.z.BOGO_2025_NITRO_TAB_BADGE);
-  let [C, _] = (0, a.US)(j, void 0, !0);
+    v = (0, c.Vi)(),
+    S = (null == j ? void 0 : j.trial_id) === h.a7,
+    E = [];
+  v && E.push(o.z.BOGO_2025_NITRO_TAB_BADGE);
+  let [x, P] = (0, a.US)(E, void 0, !0);
   return i.useEffect(() => {
-    !0 === v && C === o.z.BOGO_2025_NITRO_TAB_BADGE && _(m.L.AUTO_DISMISS)
-  }, [_, v, C]), t = E ? (0, r.jsx)(f.Z, {}) : null != y ? (0, r.jsx)(p.GN, {
-    isTabSelected: v,
+    !0 === g && x === o.z.BOGO_2025_NITRO_TAB_BADGE && P(O.L.AUTO_DISMISS)
+  }, [P, g, x]), t = v ? (0, r.jsx)(f.Z, {}) : null != y ? (0, r.jsx)(p.GN, {
+    isTabSelected: g,
     userDiscount: y,
     includesAmountOff: !1
-  }) : null == O || S ? null != n ? n : (0, r.jsx)(g.Z, {
-    isSelected: v
+  }) : null == j || S ? null != n ? n : (0, r.jsx)(b.Z, {
+    isSelected: g
   }) : (0, r.jsx)(p.$H, {
-    isTabSelected: v,
-    trialOffer: O
+    isTabSelected: g,
+    trialOffer: j
   }), (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
-      className: s()(h.premiumLabel, {
-        [h.selected]: v && !E
+      className: s()(m.premiumLabel, {
+        [m.selected]: g && !v
       }),
       children: [l, t]
     }), (0, r.jsx)("div", {
-      className: s()(h.background, {
-        [h.selectedBackground]: !E && v
+      className: s()(m.background, {
+        [m.selectedBackground]: !v && g
       })
     })]
   })

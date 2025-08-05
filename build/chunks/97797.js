@@ -1,19 +1,20 @@
-/** Chunk was on 16766 **/
-n.d(e, {
-  i: () => i
+/** Chunk was on web.js **/
+"use strict";
+n.d(t, {
+  i: () => a
 });
 var r = n(981631),
-  l = n(388032);
+  i = n(388032);
 
-function i(t) {
+function a(e) {
   let {
-    username: e,
+    username: t,
     usernameOnClickHandler: n = r.dG4,
-    productName: i
-  } = t;
-  return l.intl.formatToParts(l.t.w4iXs7, {
-    username: e,
+    productName: a
+  } = e;
+  return i.intl.formatToParts(i.t.w4iXs7, {
+    username: t,
     usernameHook: n,
-    productName: i
+    productName: a
   })
 }

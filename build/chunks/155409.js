@@ -1,17 +1,18 @@
-/** Chunk was on 60173 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
-  Z: () => m
+  Z: () => g
 });
 var r, i = n(255367),
-  l = n(73800),
-  a = n(374470),
-  o = n(442837),
-  s = n(260300),
+  a = n(73800),
+  o = n(374470),
+  s = n(442837),
+  l = n(260300),
   c = n(451478),
   u = n(5560),
   d = n(10401);
 
-function p(e, t, n) {
+function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -20,19 +21,36 @@ function p(e, t, n) {
   }) : e[t] = n, e
 }
 
-function h(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      p(e, t, n[t])
+      f(e, t, n[t])
     })
   }
   return e
 }
-class f extends(r = l.Component) {
+
+function p(e, t) {
+  var n = Object.keys(e);
+  if (Object.getOwnPropertySymbols) {
+    var r = Object.getOwnPropertySymbols(e);
+    t && (r = r.filter(function(t) {
+      return Object.getOwnPropertyDescriptor(e, t).enumerable
+    })), n.push.apply(n, r)
+  }
+  return n
+}
+
+function h(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : p(Object(t)).forEach(function(n) {
+    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+  }), e
+}
+class m extends(r = a.Component) {
   componentDidMount() {
     let {
       visible: e,
@@ -52,10 +70,10 @@ class f extends(r = l.Component) {
       offsetX: n,
       offsetY: r,
       tutorialId: i,
-      visible: l,
-      windowSize: a
+      visible: a,
+      windowSize: o
     } = e;
-    i !== this.props.tutorialId ? s.Z.hide(i) : (l !== this.props.visible || t !== this.props.position || n !== this.props.offsetX || r !== this.props.offsetY || a !== this.props.windowSize) && this.show(this.props.visible)
+    i !== this.props.tutorialId ? l.Z.hide(i) : (a !== this.props.visible || t !== this.props.position || n !== this.props.offsetX || r !== this.props.offsetY || o !== this.props.windowSize) && this.show(this.props.visible)
   }
   show(e) {
     let {
@@ -63,35 +81,35 @@ class f extends(r = l.Component) {
       tutorialId: n,
       position: r,
       offsetX: i,
-      offsetY: l,
-      visible: o,
+      offsetY: a,
+      visible: s,
       inlineSpecs: c,
       autoInvert: u
     } = this.props;
     if (e && null == c) {
       let e = null == t ? void 0 : t.current;
-      if (!(0, a.k)(e)) return;
+      if (!(0, o.k)(e)) return;
       let {
-        top: o,
+        top: s,
         left: c,
         right: d,
-        bottom: p
+        bottom: f
       } = e.getBoundingClientRect();
-      s.Z.show(n, {
+      l.Z.show(n, {
         position: r,
         targetWidth: d - c,
-        targetHeight: p - o,
+        targetHeight: f - s,
         autoInvert: u,
         origin: {
           x: c,
-          y: o
+          y: s
         },
         offset: {
           x: i,
-          y: l
+          y: a
         }
       })
-    } else o && s.Z.hide(n)
+    } else s && l.Z.hide(n)
   }
   render() {
     let {
@@ -99,43 +117,33 @@ class f extends(r = l.Component) {
       tutorialId: t,
       children: n,
       visible: r,
-      windowFocused: a,
-      position: o,
-      autoInvert: s
+      windowFocused: o,
+      position: s,
+      autoInvert: l
     } = this.props, c = d.Z.getData()[t];
     return null != e && null != c ? (0, i.jsxs)(i.Fragment, {
-      children: [n, r && (0, i.jsx)(u.V, h({
-        autoInvert: s,
-        position: o,
+      children: [n, r && (0, i.jsx)(u.V, _({
+        autoInvert: l,
+        position: s,
         tutorialId: t,
         tutorialDefinition: c,
-        focused: a
+        focused: o
       }, e))]
-    }) : l.Children.only(n)
+    }) : a.Children.only(n)
   }
 }
 
-function m(e) {
-  var t, n;
+function g(e) {
   let {
-    tutorialId: r
-  } = e, l = (0, o.e7)([d.Z], () => d.Z.shouldShow(r), [r]), a = (0, o.e7)([c.Z], () => c.Z.isFocused()), s = (0, o.e7)([c.Z], () => c.Z.windowSize(), []);
-  return (0, i.jsx)(f, (t = h({}, e), n = n = {
-    visible: l,
-    windowFocused: a,
-    windowSize: s
-  }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
-    var n = Object.keys(e);
-    if (Object.getOwnPropertySymbols) {
-      var r = Object.getOwnPropertySymbols(e);
-      n.push.apply(n, r)
-    }
-    return n
-  })(Object(n)).forEach(function(e) {
-    Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
-  }), t))
+    tutorialId: t
+  } = e, n = (0, s.e7)([d.Z], () => d.Z.shouldShow(t), [t]), r = (0, s.e7)([c.Z], () => c.Z.isFocused()), a = (0, s.e7)([c.Z], () => c.Z.windowSize(), []);
+  return (0, i.jsx)(m, h(_({}, e), {
+    visible: n,
+    windowFocused: r,
+    windowSize: a
+  }))
 }
-p(f, "defaultProps", {
+f(m, "defaultProps", {
   position: "top",
   offsetX: 0,
   offsetY: 0,

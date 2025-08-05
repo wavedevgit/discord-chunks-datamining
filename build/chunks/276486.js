@@ -8,24 +8,24 @@ n(73800);
 var i = n(481060),
   l = n(144114),
   s = n(489813),
-  o = n(815660),
-  a = n(388032),
+  a = n(815660),
+  o = n(388032),
   c = n(667084);
 
 function u() {
   return (0, r.jsx)(s.PU, {
     className: c.editableRequirementContainer,
     icon: i.AtH,
-    text: a.intl.string(a.t.woMjLS),
-    footnote: a.intl.string(a.t["jMh+TU"]),
+    text: o.intl.string(o.t.woMjLS),
+    footnote: o.intl.string(o.t["jMh+TU"]),
     meetsRequirement: !1,
     children: (0, r.jsx)(i.DY3, {
-      text: a.intl.string(a.t.mGlP39),
+      text: o.intl.string(o.t.mGlP39),
       children: (0, r.jsx)(i.zxk, {
         variant: "primary",
         size: "sm",
         disabled: !0,
-        text: a.intl.string(a.t["13ofGh"])
+        text: o.intl.string(o.t["13ofGh"])
       })
     })
   })
@@ -34,22 +34,22 @@ function u() {
 function d(e) {
   let {
     isUserVerified: t
-  } = e, u = t ? a.intl.string(a.t.WWzQtb) : a.intl.string(a.t.woMjLS);
+  } = e, u = t ? o.intl.string(o.t.WWzQtb) : o.intl.string(o.t.woMjLS);
   return (0, r.jsx)(s.PU, {
     className: c.editableRequirementContainer,
     icon: i.AtH,
     text: u,
-    footnote: a.intl.string(a.t["jMh+TU"]),
+    footnote: o.intl.string(o.t["jMh+TU"]),
     meetsRequirement: t,
     children: (0, r.jsx)(i.zxk, {
       variant: "primary",
       size: "sm",
-      text: a.intl.string(a.t["13ofGh"]),
+      text: o.intl.string(o.t["13ofGh"]),
       onClick: () => {
         (0, i.ZDy)(async () => {
           let {
             default: e
-          } = await Promise.all([n.e("76540"), n.e("56898")]).then(n.bind(n, 607018));
+          } = await Promise.all([n.e("76540"), n.e("84575")]).then(n.bind(n, 607018));
           return t => (0, r.jsx)(e, function(e) {
             for (var t = 1; t < arguments.length; t++) {
               var n = null != arguments[t] ? arguments[t] : {},
@@ -71,7 +71,7 @@ function d(e) {
             reason: l.L.GUILD_PHONE_REQUIRED
           }, t))
         }, {
-          modalKey: o.M
+          modalKey: a.M
         })
       }
     })

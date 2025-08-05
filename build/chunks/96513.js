@@ -1,5 +1,8 @@
-/** Chunk was on 30243 **/
-r.d(t, {
-  _: () => l
+/** Chunk was on web.js **/
+"use strict";
+n.d(t, {
+  _: () => r
 });
-var n, l = ((n = {})[n.EMBED = 1] = "EMBED", n)
+var r = function(e) {
+  return e[e.EMBED = 1] = "EMBED", e
+}({})

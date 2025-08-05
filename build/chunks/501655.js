@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   Ui: () => T,
-  ZP: () => R,
+  ZP: () => w,
   pV: () => I
 }), n(539854), n(388685);
 var r = n(759174),
@@ -104,7 +104,7 @@ function C(e) {
   } = e, s = [];
   return N(r) && s.push("ALL_REQUESTED_TO_SPEAK"), r === g.xO.REQUESTED_TO_SPEAK && s.push("REQUESTED_TO_SPEAK_ONLY"), t ? s.push("SPEAKER") : (null != n ? s.push(n.id) : s.push("NO_ROLE"), s.push("AUDIENCE")), i ? s.push("BLOCKED") : a && s.push("IGNORED"), o && s.push("FRIEND"), s
 }
-class R {
+class w {
   _getParticipantsForUser(e, t) {
     var n, r, i;
     let s, b = [],
@@ -135,9 +135,9 @@ class R {
         rtsState: (0, g.gf)(O)
       });
     b.push(C);
-    let R = null != (i = o.Z.getStreamForUser(e, this.guildId)) ? i : o.Z.getActiveStreamForUser(e, this.guildId);
-    if (null != R && R.channelId === this.channelId) {
-      let e = (0, a.V9)(R);
+    let w = null != (i = o.Z.getStreamForUser(e, this.guildId)) ? i : o.Z.getActiveStreamForUser(e, this.guildId);
+    if (null != w && w.channelId === this.channelId) {
+      let e = (0, a.V9)(w);
       s = v(y({}, N), {
         id: e,
         type: "STREAM",

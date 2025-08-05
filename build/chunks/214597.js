@@ -1,21 +1,22 @@
-/** Chunk was on 30243 **/
-r.d(t, {
-  Z: () => c
+/** Chunk was on web.js **/
+"use strict";
+n.d(t, {
+  Z: () => l
 });
-var n = r(73800),
-  l = r(902704),
-  i = r(232567),
-  o = r(720202),
-  a = r(594174);
+var r = n(73800),
+  i = n(902704),
+  a = n(232567),
+  o = n(720202),
+  s = n(594174);
 
-function c(e) {
+function l(e) {
   let {
     entry: t,
-    channel: r
-  } = e, c = n.useRef([]);
-  return n.useEffect(() => {
-    (0, l.E)(c.current, t.participants) || (c.current = t.participants, t.participants.filter(e => null == a.default.getUser(e)).forEach(e => {
-      null == r.guild_id ? (0, i.PR)(e) : o.Z.requestMember(r.guild_id, e)
+    channel: n
+  } = e, l = r.useRef([]);
+  return r.useEffect(() => {
+    (0, i.E)(l.current, t.participants) || (l.current = t.participants, t.participants.filter(e => null == s.default.getUser(e)).forEach(e => {
+      null == n.guild_id ? (0, a.PR)(e) : o.Z.requestMember(n.guild_id, e)
     }))
-  }, [t, r.guild_id]), {}
+  }, [t, n.guild_id]), {}
 }

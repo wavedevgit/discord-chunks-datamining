@@ -1,11 +1,12 @@
-/** Chunk was on 60173 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
-  Z: () => l
+  Z: () => a
 });
 var r = n(990547),
   i = n(213609);
 
-function l(e) {
+function a(e) {
   return (0, i.Z)({
     type: r.ImpressionTypes.VIEW,
     name: r.ImpressionNames.NOTIFICATION_SETTING_UNREAD_NUDGE

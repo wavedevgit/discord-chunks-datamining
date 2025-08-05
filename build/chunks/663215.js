@@ -127,18 +127,18 @@ function A(e) {
       let n = s.Z.getGuild(t);
       null != n && e.push(n)
     }), e
-  }), R = d.ZP.canUseSoundboardEverywhere(o), P = (0, i.e7)([s.Z], () => s.Z.getGuild(null == e ? void 0 : e.guild_id)), w = (0, i.e7)([l.Z], () => {
+  }), w = d.ZP.canUseSoundboardEverywhere(o), R = (0, i.e7)([s.Z], () => s.Z.getGuild(null == e ? void 0 : e.guild_id)), P = (0, i.e7)([l.Z], () => {
     let {
       canCreateExpressions: e
-    } = (0, a.Gw)(P);
+    } = (0, a.Gw)(R);
     return e
-  }, [P]), {
+  }, [R]), {
     canSeeRecentlyHeard: D,
     canSeeFrequentlyPlayed: L
   } = (0, _.k)({
     location: "soundboard-useSoundGrid",
     autoTrackExposure: !0
-  }), x = C(), M = (0, i.Wu)([h.Z], () => h.Z.recentlyHeardSoundIds), k = p.C.useExperiment({
+  }), x = C(), k = (0, i.Wu)([h.Z], () => h.Z.recentlyHeardSoundIds), j = p.C.useExperiment({
     location: "useSoundGrid"
   });
   return r.useMemo(() => {
@@ -166,7 +166,7 @@ function A(e) {
       sections: i,
       guildIds: A,
       allSounds: f,
-      potentialSoundIdsForSection: M,
+      potentialSoundIdsForSection: k,
       sectionType: g.bg.RECENTLY_HEARD,
       sortById: !1
     }), L && v({
@@ -176,16 +176,16 @@ function A(e) {
       potentialSoundIdsForSection: x.map(e => e.soundId),
       sectionType: g.bg.FREQUENTLY_USED,
       sortById: !1
-    }), void 0 !== P && T(i, P, {
-      currentGuildHasAddPermissions: w,
+    }), void 0 !== R && T(i, R, {
+      currentGuildHasAddPermissions: P,
       allSounds: f,
       filterOutEmptyCurrentGuild: t
     });
-    let a = R || k.moveDefaultToBottom;
+    let a = w || j.moveDefaultToBottom;
     return a || S(i, f), I({
       sections: i,
       guilds: N,
-      currentGuildId: null == P ? void 0 : P.id,
+      currentGuildId: null == R ? void 0 : R.id,
       allSounds: f,
       hasNitro: u
     }), a && S(i, f), i.forEach(t => {
@@ -200,7 +200,7 @@ function A(e) {
         lockedCustomSoundCount: r
       }
     }
-  }, [A, f, b, M, x, L, D, P, w, t, R, N, n, O, u, k.moveDefaultToBottom])
+  }, [A, f, b, k, x, L, D, R, P, t, w, N, n, O, u, j.moveDefaultToBottom])
 }
 
 function N(e, t, n) {

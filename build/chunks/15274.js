@@ -60,7 +60,7 @@ function f(e) {
   (0, i.ZD)(async () => {
     let {
       default: e
-    } = await Promise.all([n.e("44421"), n.e("22347"), n.e("70657")]).then(n.bind(n, 697849));
+    } = await Promise.all([n.e("22347"), n.e("61494")]).then(n.bind(n, 697849));
     return n => (0, r.jsx)(e, c({
       guildScheduledEventId: t,
       parentGuildId: a,
@@ -82,7 +82,7 @@ function p(e, t) {
   (0, i.ZD)(async () => {
     let {
       default: t
-    } = await Promise.all([n.e("42743"), n.e("22569")]).then(n.bind(n, 312757));
+    } = await n.e("21395").then(n.bind(n, 312757));
     return n => (0, r.jsx)(t, d(c({}, n), {
       channel: e
     }))

@@ -1,13 +1,14 @@
-/** Chunk was on 60173 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
-  _: () => a
+  _: () => o
 });
 var r = n(442837),
   i = n(897473),
-  l = n(433355);
+  a = n(433355);
 
-function a() {
-  let e = (0, r.e7)([l.ZP], () => l.ZP.getSidebarState(l.uZ)),
+function o() {
+  let e = (0, r.e7)([a.ZP], () => a.ZP.getSidebarState(a.uZ)),
     t = (null == e ? void 0 : e.type) === i.tI.VIEW_MESSAGE_REQUEST ? e : null;
   return {
     channelId: null == t ? void 0 : t.channelId,

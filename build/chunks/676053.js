@@ -91,7 +91,7 @@ function O(e) {
   } = e, A = b(e, ["title", "body", "assetUrl", "action", "caretConfig", "badge", "textLink", "onWatchVideo", "onRequestClose", "popoverRef"]);
   let N = i.useRef(null),
     C = h.endsWith(".gif") || h.endsWith(".webp") || h.endsWith(".png"),
-    R = i.useCallback(() => ({
+    w = i.useCallback(() => ({
       type: "VIDEO",
       url: h,
       proxyUrl: h,
@@ -100,22 +100,22 @@ function O(e) {
       height: 720,
       className: p.media
     }), [h, t]),
-    P = i.useCallback(() => {
+    R = i.useCallback(() => {
       null !== N.current && N.current.pause(), null == T || T()
     }, [T]),
-    w = i.useCallback(() => {
+    P = i.useCallback(() => {
       null !== N.current && N.current.pause(), null == T || T()
     }, [T]),
     D = i.useCallback(() => {
       null !== N.current && N.current.pause();
-      let e = R();
+      let e = w();
       (0, s.K)({
         items: [e],
         startingIndex: 0,
         location: "VideoPopover",
         shouldHideMediaOptions: !0
       }), null == T || T(), null == I || I()
-    }, [R, I, T]),
+    }, [w, I, T]),
     L = C ? (0, r.jsx)("img", {
       src: h,
       alt: "",
@@ -145,12 +145,12 @@ function O(e) {
       })]
     });
   return (0, r.jsx)(l.m, E(m({}, A), {
-    onRequestClose: P,
+    onRequestClose: R,
     hasVideo: !0,
     children: (0, r.jsxs)("div", {
       ref: S,
       children: [(0, r.jsx)(f.u, {
-        onClick: w,
+        onClick: P,
         colorMix: !0
       }), (0, r.jsx)(u.V, {
         asset: (0, r.jsx)("div", {

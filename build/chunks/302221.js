@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  AZ: () => P,
-  BM: () => j,
+  AZ: () => R,
+  BM: () => M,
   Cj: () => u,
   WY: () => N,
   YD: () => x,
@@ -15,7 +15,7 @@ n.d(t, {
   pz: () => h,
   rj: () => _,
   vq: () => g,
-  xj: () => k
+  xj: () => j
 }), n(415506), n(388685), n(35282), n(539854), n(642613);
 var r = n(688619),
   i = n.n(r),
@@ -235,7 +235,7 @@ function C(e) {
   return .2126 * i[0] + .7152 * i[1] + .0722 * i[2]
 }
 
-function R(e) {
+function w(e) {
   let t = e[0],
     n = e[1],
     r = C(t),
@@ -243,7 +243,7 @@ function R(e) {
   return (Math.max(r, i) + .05) / (Math.min(r, i) + .05)
 }
 
-function P(e, t, n) {
+function R(e, t, n) {
   let r, i, a = Math.max(e /= 255, t /= 255, n /= 255),
     o = Math.min(e, t, n),
     s = (a + o) / 2;
@@ -270,7 +270,7 @@ function P(e, t, n) {
   }
 }
 
-function w(e, t, n) {
+function P(e, t, n) {
   let r, i, a;
   if (e /= 360, 0 === t) r = i = a = n;
   else {
@@ -286,8 +286,8 @@ function w(e, t, n) {
 
 function D(e, t) {
   let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
-    r = P(e.red, e.green, e.blue);
-  return n ? r.lightness = r.lightness + t > 1 ? .9 : r.lightness + t : r.lightness = r.lightness - t < 0 ? .1 : r.lightness - t, w(r.hue, r.saturation, r.lightness)
+    r = R(e.red, e.green, e.blue);
+  return n ? r.lightness = r.lightness + t > 1 ? .9 : r.lightness + t : r.lightness = r.lightness - t < 0 ? .1 : r.lightness - t, P(r.hue, r.saturation, r.lightness)
 }
 
 function L(e) {
@@ -302,17 +302,17 @@ function L(e) {
   if (null == o || null == i) return;
   let s = (0, a._i)(o.toHexString()),
     l = (0, a.Bd)(s) > .5,
-    c = R([i, o]),
-    u = P(i.red, i.green, i.blue);
+    c = w([i, o]),
+    u = R(i.red, i.green, i.blue);
   for (u.saturation *= r; c < n && null != u;) {
     if (l)
       if (u.lightness < .95) u.lightness += .05;
       else break;
     else if (u.lightness > .05) u.lightness -= .05;
     else break;
-    c = R([w(u.hue, u.saturation, u.lightness), t[1]])
+    c = w([P(u.hue, u.saturation, u.lightness), t[1]])
   }
-  return w(u.hue, u.saturation, u.lightness)
+  return P(u.hue, u.saturation, u.lightness)
 }
 
 function x(e) {
@@ -326,27 +326,27 @@ function x(e) {
         v: 0
       }
     }
-  }).sort(M)[0].hex
+  }).sort(k)[0].hex
 }
 
-function M(e, t) {
+function k(e, t) {
   let n = e.hsv,
     r = t.hsv;
   return r.s + r.v - (n.s + n.v)
 }
 
-function k(e) {
+function j(e) {
   var t;
   let {
     colorRGB: n,
     saturationFactor: r = 1
   } = e;
   if (null == n) return n;
-  let i = P(n.red, n.green, n.blue);
-  return null == i ? null == n ? void 0 : n.toHexString() : null == (t = w(i.hue, i.saturation * r, i.lightness)) ? void 0 : t.toHexString()
+  let i = R(n.red, n.green, n.blue);
+  return null == i ? null == n ? void 0 : n.toHexString() : null == (t = P(i.hue, i.saturation * r, i.lightness)) ? void 0 : t.toHexString()
 }
 
-function j(e, t, n) {
+function M(e, t, n) {
   let r = parseInt(e.substring(1, 3), 16),
     i = parseInt(e.substring(3, 5), 16),
     a = parseInt(e.substring(5, 7), 16),

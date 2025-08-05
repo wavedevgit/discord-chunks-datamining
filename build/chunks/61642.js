@@ -1,4 +1,4 @@
-/** Chunk was on 70663 **/
+/** Chunk was on 92357 **/
 n.d(t, {
   Z: () => d
 });
@@ -7,8 +7,8 @@ n(73800);
 var i = n(239091),
   l = n(396828),
   o = n(703656),
-  a = n(434479),
-  s = n(981631),
+  s = n(434479),
+  a = n(981631),
   c = n(176505),
   u = n(388032);
 
@@ -17,7 +17,7 @@ function d(e) {
     guild: t,
     selected: d
   } = e;
-  return (0, r.jsx)(a.m, {
+  return (0, r.jsx)(s.m, {
     id: "subscriptions-".concat(t.id),
     renderIcon: e => (0, r.jsx)(l.Z, {
       className: e
@@ -25,7 +25,7 @@ function d(e) {
     text: u.intl.string(u.t["KzCF//"]),
     selected: d,
     onClick: () => {
-      (0, o.uL)(s.Z5c.CHANNEL(t.id, c.oC.ROLE_SUBSCRIPTIONS))
+      (0, o.uL)(a.Z5c.CHANNEL(t.id, c.oC.ROLE_SUBSCRIPTIONS))
     },
     onContextMenu: e => {
       null != t && (0, i.jW)(e, async () => {

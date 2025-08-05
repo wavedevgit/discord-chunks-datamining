@@ -1,4 +1,5 @@
-/** Chunk was on 94313 **/
+/** Chunk was on web.js **/
+"use strict";
 e.exports = {
   outerContainer: "outerContainer__2055a",
   outerContainerNoProgress: "outerContainerNoProgress__2055a",

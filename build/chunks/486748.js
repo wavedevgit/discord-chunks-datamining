@@ -1,4 +1,5 @@
-/** Chunk was on 24022 **/
+/** Chunk was on web.js **/
+"use strict";
 e.exports = {
   root: "root__85d05",
   comboIcon: "comboIcon__85d05",

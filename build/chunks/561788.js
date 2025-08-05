@@ -1,4 +1,4 @@
-/** Chunk was on 70663 **/
+/** Chunk was on 92357 **/
 n.d(t, {
   Z: () => c
 });
@@ -7,21 +7,21 @@ n(73800);
 var i = n(442837),
   l = n(481060),
   o = n(471445),
-  a = n(430824),
-  s = n(73566);
+  s = n(430824),
+  a = n(73566);
 
 function c(e) {
   let {
     channel: t
-  } = e, n = (0, i.e7)([a.Z], () => a.Z.getGuild(t.guild_id)), c = (0, o.KS)(t, n);
+  } = e, n = (0, i.e7)([s.Z], () => s.Z.getGuild(t.guild_id)), c = (0, o.KS)(t, n);
   return null == c ? null : (0, r.jsxs)("div", {
-    className: s.popoutHeader,
+    className: a.popoutHeader,
     children: [(0, r.jsx)(c, {
-      className: s.channelIcon
+      className: a.channelIcon
     }), (0, r.jsx)(l.Text, {
       variant: "text-md/semibold",
       color: "interactive-normal",
-      className: s.channelName,
+      className: a.channelName,
       children: t.name
     })]
   })

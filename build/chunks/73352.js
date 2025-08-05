@@ -1,32 +1,33 @@
-/** Chunk was on 94313 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
-  Z: () => o
+  Z: () => s
 });
 var r = n(255367);
 n(73800);
 var i = n(739566),
-  l = n(834129),
-  a = n(388032);
+  a = n(834129),
+  o = n(388032);
 
-function o(e) {
+function s(e) {
   let {
     message: t,
-    otherUsername: o,
-    usernameHook: s,
+    otherUsername: s,
+    usernameHook: l,
     otherUsernameHook: c,
     compact: u
   } = e, {
     nick: d
-  } = (0, i.ZP)(t), p = s(), m = c(), f = a.intl.format(a.t.MMN2Ji, {
+  } = (0, i.ZP)(t), f = l(), _ = c(), p = o.intl.format(o.t.MMN2Ji, {
     username: d,
-    usernameHook: p,
-    otherUsername: o,
-    otherUsernameHook: m
+    usernameHook: f,
+    otherUsername: s,
+    otherUsernameHook: _
   });
-  return (0, r.jsx)(l.Z, {
+  return (0, r.jsx)(a.Z, {
     icon: n(570111),
     timestamp: t.timestamp,
     compact: u,
-    children: f
+    children: p
   })
 }

@@ -1,9 +1,10 @@
-/** Chunk was on 24037 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
-  a: () => r
+  a: () => i
 });
-let i = n(724163).newStemmer("english");
+let r = n(724163).newStemmer("english");
 
-function r(e) {
-  return i.stem(e)
+function i(e) {
+  return r.stem(e)
 }

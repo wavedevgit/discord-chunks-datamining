@@ -1,11 +1,11 @@
-/** Chunk was on 78650 **/
+/** Chunk was on 46154 **/
 e.d(n, {
   Z: () => v
 });
 var i = e(255367),
-  r = e(73800),
+  a = e(73800),
   l = e(392711),
-  a = e.n(l),
+  r = e.n(l),
   o = e(442837),
   s = e(481060),
   d = e(66999),
@@ -17,11 +17,11 @@ var i = e(255367),
 function v(t) {
   let n = (0, u.Y)(t),
     e = (0, o.e7)([c.Z], () => c.Z.isInChannel(t.id)),
-    l = (0, o.e7)([c.Z], () => !a().isEmpty(c.Z.getVoiceStatesForChannel(t.id))),
+    l = (0, o.e7)([c.Z], () => !r().isEmpty(c.Z.getVoiceStatesForChannel(t.id))),
     {
       needSubscriptionToAccess: v
     } = (0, d.Z)(t.id),
-    g = r.useCallback(() => {
+    g = a.useCallback(() => {
       f.Z.handleVoiceConnect({
         channel: t,
         connected: e,

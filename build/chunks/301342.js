@@ -1,17 +1,17 @@
-/** Chunk was on 70663 **/
+/** Chunk was on 92357 **/
 n.d(t, {
   P: () => w,
-  Qo: () => T,
+  Qo: () => Z,
   ZP: () => N,
   kw: () => A,
-  rj: () => Z
+  rj: () => T
 });
 var r = n(255367),
   i = n(73800),
   l = n(120356),
   o = n.n(l),
-  a = n(91192),
-  s = n(442837),
+  s = n(91192),
+  a = n(442837),
   c = n(755721),
   u = n(481060),
   d = n(211739),
@@ -21,8 +21,8 @@ var r = n(255367),
   g = n(111028),
   m = n(680089),
   b = n(430824),
-  _ = n(496675),
-  O = n(9156),
+  O = n(496675),
+  _ = n(9156),
   y = n(203818),
   C = n(438144),
   v = n(981631),
@@ -73,11 +73,11 @@ let P = i.memo(function(e) {
         position: P,
         sortingPosition: N,
         hideIcon: w,
-        children: T
+        children: Z
       } = e,
-      Z = (0, s.e7)([O.ZP], () => O.ZP.isChannelMuted(l.getGuildId(), l.id)),
-      A = (0, s.e7)([m.Z], () => m.Z.isCollapsed(l.id)),
-      R = (0, s.e7)([_.Z], () => _.Z.can(v.Plq.MANAGE_CHANNELS, l));
+      T = (0, a.e7)([_.ZP], () => _.ZP.isChannelMuted(l.getGuildId(), l.id)),
+      A = (0, a.e7)([m.Z], () => m.Z.isCollapsed(l.id)),
+      R = (0, a.e7)([O.Z], () => O.Z.can(v.Plq.MANAGE_CHANNELS, l));
     t = null != N ? P > N ? E.containerDragAfter : E.containerDragBefore : E.containerDefault;
     let D = i.useCallback(() => {
         A ? (0, d.mJ)(l.id) : (0, d.c4)(l.id)
@@ -110,7 +110,7 @@ let P = i.memo(function(e) {
           }))
         })
       }, [l]),
-      k = (0, a.JA)(l.id),
+      k = (0, s.JA)(l.id),
       {
         role: U,
         tabIndex: G
@@ -146,7 +146,7 @@ let P = i.memo(function(e) {
             ref: F,
             className: o()(E.iconVisibility, E.wrapper, {
               [E.collapsed]: A,
-              [E.muted]: Z,
+              [E.muted]: T,
               [E.clickable]: !0
             }),
             onContextMenu: L,
@@ -210,7 +210,7 @@ let P = i.memo(function(e) {
               }) : null
             })]
           })
-        }), T]
+        }), Z]
       });
     return null != y && null != p ? y(p(H)) : H
   }),
@@ -249,10 +249,10 @@ let P = i.memo(function(e) {
       })
     })
   }),
-  T = i.memo(function(e) {
+  Z = i.memo(function(e) {
     let {
       category: t
-    } = e, n = (0, s.e7)([y.Z], () => y.Z.isVoiceCategoryCollapsed(t.guild.id)), l = i.useCallback(() => {
+    } = e, n = (0, a.e7)([y.Z], () => y.Z.isVoiceCategoryCollapsed(t.guild.id)), l = i.useCallback(() => {
       n ? (0, C.s)(t.guild.id) : (0, C.M)(t.guild.id)
     }, [t.guild.id, n]);
     return (0, r.jsxs)(c.zx, {
@@ -271,11 +271,11 @@ let P = i.memo(function(e) {
       })]
     })
   }),
-  Z = i.memo(function(e) {
+  T = i.memo(function(e) {
     let {
       category: t,
       channel: n
-    } = e, i = (0, s.e7)([y.Z], () => y.Z.isVoiceCategoryCollapsed(t.guild.id));
+    } = e, i = (0, a.e7)([y.Z], () => y.Z.isVoiceCategoryCollapsed(t.guild.id));
     return i || null == n || n.record.type === v.d4z.GUILD_CATEGORY ? i ? (0, r.jsx)("li", {
       className: E.containerDefault,
       children: (0, r.jsx)("div", {

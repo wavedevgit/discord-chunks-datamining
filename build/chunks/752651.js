@@ -1,4 +1,4 @@
-/** Chunk was on 94312 **/
+/** Chunk was on 22988 **/
 e.exports = {
   creatorBenefitsContainer: "creatorBenefitsContainer__02e4c",
   creatorBenefitCard: "creatorBenefitCard__02e4c " + n(551131).card,

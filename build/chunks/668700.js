@@ -36,14 +36,14 @@ function I(e) {
   } = e, {
     themeType: A
   } = (0, m.z)(), N = (0, p.Z)(I), C = (0, s.ZP)(I), {
-    canViewChannel: R,
-    canConnect: P
+    canViewChannel: w,
+    canConnect: R
   } = (0, i.cj)([_.Z], () => ({
     canViewChannel: _.Z.can(b.Plq.VIEW_CHANNEL, I),
     canConnect: I.isPrivate() || _.Z.can(b.Plq.CONNECT, I)
   }));
-  if (!R) return null;
-  let w = () => {
+  if (!w) return null;
+  let P = () => {
       let e = e => {
         e.stopPropagation(), (0, f.X)(n.id), null == T || T({
           action: "OPEN_VOICE_GUILD"
@@ -61,7 +61,7 @@ function I(e) {
       })
     },
     D = () => {
-      if (!P) return (0, r.jsx)(a.Text, {
+      if (!R) return (0, r.jsx)(a.Text, {
         variant: "text-xs/normal",
         color: "text-secondary",
         lineClamp: 1,
@@ -93,7 +93,7 @@ function I(e) {
       className: O.voiceChannelDivider
     }), (0, r.jsxs)("div", {
       className: O.voiceChannel,
-      children: [w(), (0, r.jsx)(a.Fbu, {
+      children: [P(), (0, r.jsx)(a.Fbu, {
         size: "xxs",
         color: a.TVs.colors.TEXT_SECONDARY
       }), (0, r.jsxs)("div", {

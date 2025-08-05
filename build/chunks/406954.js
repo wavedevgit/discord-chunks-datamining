@@ -1,10 +1,11 @@
-/** Chunk was on 95355 **/
-n.d(t, {
-  t: () => r
-});
+/** Chunk was on web.js **/
+"use strict";
 
 function r(...e) {
   return (...t) => {
     for (let n of e) "function" == typeof n && n(...t)
   }
 }
+n.d(t, {
+  t: () => r
+})

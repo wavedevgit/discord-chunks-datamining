@@ -1,23 +1,24 @@
-/** Chunk was on 30243 **/
-r.d(t, {
-  Z: () => c
+/** Chunk was on web.js **/
+"use strict";
+n.d(t, {
+  Z: () => l
 });
-var n = r(255367);
-r(73800);
-var l = r(120356),
-  i = r.n(l),
-  o = r(911969),
-  a = r(116181);
+var r = n(255367);
+n(73800);
+var i = n(120356),
+  a = n.n(i),
+  o = n(911969),
+  s = n(116181);
 
-function c(e) {
+function l(e) {
   let {
     divider: t,
-    spacing: r
+    spacing: n
   } = e;
-  return (0, n.jsx)("div", {
-    className: i()({
-      [a.spacingLarge]: r === o.US.LARGE,
-      [a.divider]: t
+  return (0, r.jsx)("div", {
+    className: a()({
+      [s.spacingLarge]: n === o.US.LARGE,
+      [s.divider]: t
     })
   })
 }

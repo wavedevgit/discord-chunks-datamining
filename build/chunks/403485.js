@@ -1,10 +1,11 @@
-/** Chunk was on 15114 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
-  h: () => l
+  h: () => a
 });
 var r = n(442837),
   i = n(359119);
 
-function l(e) {
+function a(e) {
   return (0, r.e7)([i.ZP], () => i.ZP.getChannelSafetyWarnings(e), [e]).filter(e => e.type === i.pj.INAPPROPRIATE_CONVERSATION_TIER_1 || e.type === i.pj.INAPPROPRIATE_CONVERSATION_TIER_2)
 }

@@ -1,14 +1,15 @@
-/** Chunk was on 69150 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
   b: () => s,
   e: () => o
 });
-var i = n(399606),
-  r = n(594174),
-  l = n(918505);
-let o = () => a(r.default.getCurrentUser(), (0, l.JH)()),
-  s = () => a((0, i.e7)([r.default], () => r.default.getCurrentUser()), (0, l.o9)());
+var r = n(399606),
+  i = n(594174),
+  a = n(918505);
+let o = () => l(i.default.getCurrentUser(), (0, a.JH)()),
+  s = () => l((0, r.e7)([i.default], () => i.default.getCurrentUser()), (0, a.o9)());
 
-function a(e, t) {
+function l(e, t) {
   return !(null == e || e.hasUniqueUsername()) && !!e.hasVerifiedEmailOrPhone() && !!t
 }

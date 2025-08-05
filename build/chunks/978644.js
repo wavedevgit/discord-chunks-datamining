@@ -1,4 +1,5 @@
-/** Chunk was on 60173 **/
+/** Chunk was on web.js **/
+"use strict";
 e.exports = {
   chatIcon: "chatIcon__233f8",
   badge: "badge__233f8"

@@ -1,4 +1,4 @@
-/** Chunk was on 94312 **/
+/** Chunk was on 22988 **/
 e.exports = {
   separator: "separator__2dc49",
   gamesList: "gamesList__2dc49",

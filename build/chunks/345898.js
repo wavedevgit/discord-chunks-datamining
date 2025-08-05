@@ -1,41 +1,42 @@
-/** Chunk was on 94313 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
-  Z: () => s
+  Z: () => l
 }), n(953529);
 var r = n(255367);
 n(73800);
 var i = n(120356),
-  l = n.n(i),
-  a = n(481060),
-  o = n(360044);
-let s = e => {
+  a = n.n(i),
+  o = n(481060),
+  s = n(360044);
+let l = e => {
   let {
     renderTitle: t,
     renderTagline: n,
     renderActions: i,
-    renderMedia: s,
+    renderMedia: l,
     className: c,
     isHorizontal: u = !1
   } = e;
   return (0, r.jsxs)("div", {
-    className: l()(o.tile, {
-      [o.tileHorizontal]: u
+    className: a()(s.tile, {
+      [s.tileHorizontal]: u
     }, c),
     children: [(0, r.jsx)("div", {
-      className: l()(o.media, {
-        [o.mediaHorizontal]: u
+      className: a()(s.media, {
+        [s.mediaHorizontal]: u
       }),
-      children: null == s ? void 0 : s()
+      children: null == l ? void 0 : l()
     }), (0, r.jsxs)("div", {
-      className: o.description,
-      children: [(0, r.jsx)(a.H, {
-        className: o.title,
+      className: s.description,
+      children: [(0, r.jsx)(o.H, {
+        className: s.title,
         children: null == t ? void 0 : t()
       }), (0, r.jsx)("div", {
-        className: o.tagline,
+        className: s.tagline,
         children: null == n ? void 0 : n()
       }), (0, r.jsx)("div", {
-        className: o.actions,
+        className: s.actions,
         children: null == i ? void 0 : i()
       })]
     })]

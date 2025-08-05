@@ -51,7 +51,7 @@ let T = 8,
   N = 40,
   C = 6;
 
-function R(e, t) {
+function w(e, t) {
   return (0, r.jsx)(f.Z, {
     sticker: e,
     isInteracting: t,
@@ -59,11 +59,11 @@ function R(e, t) {
   })
 }
 
-function P(e) {
+function R(e) {
   return "".concat(E.Iv).concat(e.name).concat(E.Iv)
 }
 
-function w(e) {
+function P(e) {
   var t;
   let n = e.animated ? "a" : "";
   return e.managed || null == e.id ? "".concat(E.Iv).concat(e.name).concat(E.Iv) : "<".concat(n, ":").concat(null != (t = e.originalName) ? t : e.name, ":").concat(e.id, ">")
@@ -198,7 +198,7 @@ let D = {
             sticker: n
           } = e;
           return {
-            renderSticker: R,
+            renderSticker: w,
             queryMatch: t !== n.name.toLocaleLowerCase() ? t : void 0,
             sticker: n,
             key: n.id
@@ -249,7 +249,7 @@ let D = {
     } = e;
     if (a < t.length) {
       let e = t[a];
-      return o.insertText(P(e), w(e)), {
+      return o.insertText(R(e), P(e)), {
         type: g.z2.EMOJI,
         metadata: {
           emojiId: e.id,

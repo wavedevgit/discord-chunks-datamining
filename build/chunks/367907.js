@@ -1,11 +1,11 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  $H: () => Z,
+  $H: () => V,
   AB: () => B,
   JS: () => U,
   ZP: () => W,
-  hH: () => k,
+  hH: () => j,
   kO: () => H,
   oG: () => Y,
   v_: () => G,
@@ -37,9 +37,9 @@ var r = n(392711),
   A = n(979651),
   N = n(626135),
   C = n(70956),
-  R = n(700785),
-  P = n(546416),
-  w = n(981631),
+  w = n(700785),
+  R = n(546416),
+  P = n(981631),
   D = n(176505);
 
 function L(e, t, n) {
@@ -64,13 +64,13 @@ function x(e) {
   return e
 }
 
-function M(e) {
+function k(e) {
   let t = 0;
   for (let n in e) t += 1;
   return t
 }
 
-function k(e) {
+function j(e) {
   var t;
   if (null == e) return null;
   let n = m.Z.getGuild(e);
@@ -90,14 +90,14 @@ function k(e) {
     guild_num_voice_channels: l,
     guild_num_roles: r,
     guild_member_num_roles: null != a ? a.roles.length : 0,
-    guild_member_perms: String(null != (t = E.Z.getGuildPermissions(n)) ? t : R.Hn),
-    guild_is_vip: n.features.has(w.oNc.VIP_REGIONS),
+    guild_member_perms: String(null != (t = E.Z.getGuildPermissions(n)) ? t : w.Hn),
+    guild_is_vip: n.features.has(P.oNc.VIP_REGIONS),
     is_member: null != a,
-    num_voice_channels_active: M(c)
+    num_voice_channels_active: k(c)
   }
 }
 
-function j(e, t) {
+function M(e, t) {
   return {
     channel_static_route: t,
     channel_hidden: !1
@@ -119,7 +119,7 @@ function G(e) {
     let t = e => {
       if (null == e) return !1;
       let t = e.permissionOverwrites[r];
-      return null != t && a.e$(t.deny, w.Plq.VIEW_CHANNEL)
+      return null != t && a.e$(t.deny, P.Plq.VIEW_CHANNEL)
     };
     n = t(c.Ec.has(e.type) && null != e.parent_id ? d.Z.getChannel(e.parent_id) : e)
   }
@@ -127,7 +127,7 @@ function G(e) {
     channel_id: e.id,
     channel_type: e.type,
     channel_size_total: e.isPrivate() ? e.recipients.length : 0,
-    channel_member_perms: String(null != r && null != (t = E.Z.getChannelPermissions(e)) ? t : R.Hn),
+    channel_member_perms: String(null != r && null != (t = E.Z.getChannelPermissions(e)) ? t : w.Hn),
     channel_hidden: n
   }
 }
@@ -143,10 +143,10 @@ function B(e) {
     channel_type: t.type,
     guild_id: t.getGuildId(),
     media_session_id: r
-  }, H(t.getGuildId(), t.id, n), (0, P.V)())
+  }, H(t.getGuildId(), t.id, n), (0, R.V)())
 }
 
-function V(e, t) {
+function Z(e, t) {
   var n, r;
   return null == e ? null != t ? t : null : e.isPrivate() ? null : null != (r = null != (n = e.getGuildId()) ? n : t) ? r : null
 }
@@ -155,17 +155,17 @@ function F(e) {
   let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {},
     n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
   if (N.default.isThrottled(e)) return;
-  let r = !("location" in t) || t.location !== w.Sbl.GUILD_CREATE_INVITE_SUGGESTION,
+  let r = !("location" in t) || t.location !== P.Sbl.GUILD_CREATE_INVITE_SUGGESTION,
     i = "guild_id" in t ? t.guild_id : r ? I.Z.getGuildId() : null,
     a = "channel_id" in t ? t.channel_id : r ? v.Z.getChannelId(i) : null,
     o = d.Z.getChannel(a),
-    s = x({}, t, k(V(o, i)), null != i && null != a && (0, D.AB)(a) ? j(i, a) : G(o));
+    s = x({}, t, j(Z(o, i)), null != i && null != a && (0, D.AB)(a) ? M(i, a) : G(o));
   N.default.track(e, s, {
     flush: n
   })
 }
 
-function Z(e) {
+function V(e) {
   if ((0, D.AB)(e)) return {
     channel_static_route: e
   };
@@ -203,7 +203,7 @@ function Z(e) {
     parent_id: t.parent_id,
     parent_channel_type: t.parentChannelThreadType,
     has_pending_member_action: (0, s.P)(t.guild_id, e),
-    can_send_message: E.Z.can(w.Plq.SEND_MESSAGES, t),
+    can_send_message: E.Z.can(P.Plq.SEND_MESSAGES, t),
     is_app_dm: !1
   }
 }
@@ -224,7 +224,7 @@ function Y(e, t) {
     custom_status_count: 0
   };
   return i()(A.Z.getVoiceStates(e)).forEach(e => {
-    e.channelId === t && null != b.Z.findActivity(e.userId, e => e.type === w.IIU.CUSTOM_STATUS) && n.custom_status_count++
+    e.channelId === t && null != b.Z.findActivity(e.userId, e => e.type === P.IIU.CUSTOM_STATUS) && n.custom_status_count++
   }), n
 }
 let W = {

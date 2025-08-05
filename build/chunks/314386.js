@@ -1,4 +1,4 @@
-/** Chunk was on 11678 **/
+/** Chunk was on 2549 **/
 t.d(n, {
   Z: () => u
 });
@@ -17,26 +17,26 @@ function u(e) {
     user: n,
     guildId: t,
     channelId: u,
-    displayProfile: _,
+    displayProfile: p,
     onClose: f
   } = e, {
-    interactionType: p
+    interactionType: _
   } = (0, i.Xo)(), m = (0, c.Z)({
     user: n,
     guildId: t,
     channelId: u,
-    displayProfile: _,
+    displayProfile: p,
     onClose: f
   });
   return (0, o.jsxs)(a.Z, {
     children: [(0, o.jsx)(d.Z, {
-      shouldShowTooltip: null === p,
+      shouldShowTooltip: null === _,
       user: n,
       guildId: t,
       channelId: u,
       onClose: f
     }), (0, o.jsx)(r.Z, {
-      shouldShowTooltip: null === p,
+      shouldShowTooltip: null === _,
       themeType: s.lY.MODAL,
       user: n
     }), (0, o.jsx)(l.Z, {

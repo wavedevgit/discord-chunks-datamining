@@ -3,22 +3,22 @@
 n.d(t, {
   Bg: () => U,
   E5: () => ee,
-  Fp: () => V,
-  JT: () => $,
+  Fp: () => Z,
+  JT: () => J,
   L2: () => z,
-  MY: () => k,
-  Nz: () => Z,
+  MY: () => j,
+  Nz: () => V,
   Q_: () => F,
   TO: () => W,
   Z0: () => G,
   bT: () => H,
   dM: () => Y,
   dQ: () => K,
-  e$: () => Q,
-  iM: () => X,
-  pO: () => j,
-  xr: () => M,
-  z2: () => J
+  e$: () => X,
+  iM: () => $,
+  pO: () => M,
+  xr: () => k,
+  z2: () => Q
 }), n(388685), n(413496), n(433524), n(35282), n(704826), n(314940), n(781311);
 var r = n(278074),
   i = n(873546),
@@ -66,17 +66,17 @@ let y = ["discordapp.com/gifts", "discord.com/gifts"],
   A = "abcdefghjkmnpqrstuvwxyzABCDEFGHJKMNPQRSTUVWXYZ23456789",
   N = (e, t) => Array(t).fill(void 0).map(() => "[".concat(A, "]{").concat(e, "}")).join("-?"),
   C = N(4, 4),
-  R = N(4, 6),
-  P = N(5, 3),
-  w = "WUMP-?",
-  D = [C, R, P, "[a-zA-Z]{4}-?[0-9a-zA-Z]{4}-?[a-zA-Z]{4}"].join("|"),
-  L = new RegExp("^(".concat(w, ")?(").concat(D, ")$")),
+  w = N(4, 6),
+  R = N(5, 3),
+  P = "WUMP-?",
+  D = [C, w, R, "[a-zA-Z]{4}-?[0-9a-zA-Z]{4}-?[a-zA-Z]{4}"].join("|"),
+  L = new RegExp("^(".concat(P, ")?(").concat(D, ")$")),
   x = "-";
-var M = function(e) {
+var k = function(e) {
   return e[e.DEFAULT = 0] = "DEFAULT", e[e.CUSTOM_STYLE = 1] = "CUSTOM_STYLE", e[e.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD = 2] = "CUSTOM_MESSAGE_EMOJI_SOUNDBOARD", e
 }({});
-let k = (e, t) => i.tq || i.Em ? 0 : null != e || t ? 2 : 1,
-  j = e => 0 !== k(e);
+let j = (e, t) => i.tq || i.Em ? 0 : null != e || t ? 2 : 1,
+  M = e => 0 !== j(e);
 
 function U(e) {
   let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : null,
@@ -96,7 +96,7 @@ function G(e) {
 function B(e) {
   return e.replace(/[^A-Za-z0-9]/g, "")
 }
-let V = e => (null == e ? void 0 : e.type) === h.uaV.CUSTOM_GIFT && (null == e ? void 0 : e.embeds.length) === 1 && (null == e ? void 0 : e.embeds[0].type) === h.hBH.GIFT,
+let Z = e => (null == e ? void 0 : e.type) === h.uaV.CUSTOM_GIFT && (null == e ? void 0 : e.embeds.length) === 1 && (null == e ? void 0 : e.embeds[0].type) === h.hBH.GIFT,
   F = e => {
     let t;
     if (null == e) return [];
@@ -106,7 +106,7 @@ let V = e => (null == e ? void 0 : e.type) === h.uaV.CUSTOM_GIFT && (null == e ?
     return Array.from(n)
   };
 
-function Z() {
+function V() {
   let e, t = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "",
     n = window.GLOBAL_ENV.GIFT_CODE_HOST;
   return null != n ? e = "/".concat(t) : (n = location.host, e = "/gifts/".concat(t)), "".concat(location.protocol, "//").concat(n).concat(e)
@@ -209,7 +209,7 @@ function q(e) {
   })).otherwise(() => g.intl.string(g.t["5ayf7+"]))
 }
 
-function X(e) {
+function $(e) {
   let {
     step: t,
     sku: n,
@@ -222,7 +222,7 @@ function X(e) {
   } = e;
   switch (t) {
     case h.wZ8.ERROR:
-      return Q(r, i, a, o, s);
+      return X(r, i, a, o, s);
     case h.wZ8.SUCCESS:
       if (null != l) return q(l);
       return g.intl.formatToPlainString(g.t["3CPsbm"], {
@@ -243,7 +243,7 @@ function X(e) {
   }
 }
 
-function Q(e, t, n, r, i) {
+function X(e, t, n, r, i) {
   let a = n || r ? void 0 : e,
     o = g.intl.format(g.t["5zyz9/"], {
       onGoToLibrary: i
@@ -251,14 +251,14 @@ function Q(e, t, n, r, i) {
   return null != a ? o : null == t ? null : et(t, c.default.getCurrentUser())
 }
 
-function J(e, t, n) {
+function Q(e, t, n) {
   let r = t.applicationId,
     i = e.length > 0 ? e : [r],
     a = i.map(e => n.getLibraryApplication(r, e, !0)).filter(d.lm);
   return a.length === i.length ? a[0] : null
 }
 
-function $(e) {
+function J(e) {
   let t = e.trim().split("/").pop().match(L);
   if (null == t) return null;
   let [n, r, i] = t;

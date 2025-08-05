@@ -4,7 +4,7 @@ n.d(t, {
   RR: () => A,
   WW: () => T,
   bE: () => C,
-  n4: () => M,
+  n4: () => k,
   q8: () => N,
   t$: () => S,
   xl: () => x
@@ -101,7 +101,7 @@ function C(e, t) {
   return Object.keys(i.Z.getThreadsForParent(e, t)).length
 }
 
-function R(e) {
+function w(e) {
   let {
     loaded: t,
     firstMessage: n
@@ -109,13 +109,13 @@ function R(e) {
   return t ? n : null
 }
 
-function P(e) {
-  let t = R(e);
+function R(e) {
+  let t = w(e);
   return null == t ? 0 : t.reactions.length
 }
 
-function w(e) {
-  let t = R(e);
+function P(e) {
+  let t = w(e);
   return null == t ? 0 : t.reactions.reduce((e, t) => e + t.count, 0)
 }
 
@@ -131,7 +131,7 @@ function D(e) {
 }
 
 function L(e) {
-  let t = R(e);
+  let t = w(e);
   return null == t ? [] : t.attachments.map(e => {
     var t;
     return null != (t = e.content_type) ? t : "unknown"
@@ -162,7 +162,7 @@ function x(e) {
   } : null
 }
 
-function M(e) {
+function k(e) {
   var t, n, r, i, c, u, d;
   let {
     channelId: _,
@@ -182,8 +182,8 @@ function M(e) {
     thread_approximate_creation_date: f.default.extractTimestamp(_),
     forum_post_id: m.id,
     forum_post_first_message_id: f.default.castChannelIdAsMessageId(m.id),
-    forum_post_num_reactions: w(m.id),
-    forum_post_num_unique_reactions: P(m.id),
+    forum_post_num_reactions: P(m.id),
+    forum_post_num_unique_reactions: R(m.id),
     forum_post_applied_tag_ids: D(m.id),
     forum_post_is_pinned: m.hasFlag(E.zZ.PINNED),
     forum_post_is_new: null == (i = h.Z.getReadStateSnapshotAnalytics(m.id)) ? void 0 : i.isNew,

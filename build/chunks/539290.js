@@ -1,8 +1,7 @@
-/** Chunk was on 67501 **/
-"use strict";
+/** Chunk was on 72762 **/
 n.d(t, {
   E: () => p,
-  Z: () => g
+  Z: () => b
 });
 var r = n(255367);
 n(73800);
@@ -20,21 +19,21 @@ let p = {
   BOTTOM: f.verticalStatusWarningBlock
 };
 
-function g(e) {
+function b(e) {
   let {
     className: t,
     color: n = u.W.YELLOW,
     buttonPosition: i = p.BOTTOM,
-    notice: g,
-    ctaLabel: m,
-    ctaLoading: b,
-    ctaDisabled: h,
-    ctaClassName: v,
-    onClick: O
+    notice: b,
+    ctaLabel: O,
+    ctaLoading: h,
+    ctaDisabled: m,
+    ctaClassName: g,
+    onClick: j
   } = e, y = (0, c.ZP)();
   return (0, r.jsx)(d.Z, {
     className: l()(f.statusWarningBlock, {
-      [f.statusWarningBlockWithCta]: null != m
+      [f.statusWarningBlockWithCta]: null != O
     }, t),
     color: (0, s.wj)(y) ? n : u.W.BROWN,
     children: (0, r.jsxs)("div", {
@@ -42,20 +41,20 @@ function g(e) {
       children: [(0, r.jsx)(a.Text, {
         variant: "text-sm/normal",
         color: "interactive-active",
-        children: g
-      }), null != m && null != O && (0, r.jsx)("div", {
+        children: b
+      }), null != O && null != j && (0, r.jsx)("div", {
         className: f.ctaButtonContainer,
         children: (0, r.jsx)(o.zx, {
-          className: l()(f.ctaButton, (0, s.wj)(y) ? void 0 : f.ctaBlackButton, v),
+          className: l()(f.ctaButton, (0, s.wj)(y) ? void 0 : f.ctaBlackButton, g),
           color: (0, s.wj)(y) ? o.zx.Colors.WHITE : o.zx.Colors.CUSTOM,
           size: o.Ph.MEDIUM,
-          onClick: O,
-          disabled: h,
-          submitting: b,
+          onClick: j,
+          disabled: m,
+          submitting: h,
           children: (0, r.jsx)(a.Text, {
             className: f.ctaButtonText,
             variant: "text-sm/medium",
-            children: m
+            children: O
           })
         })
       })]

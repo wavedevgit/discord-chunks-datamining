@@ -2,8 +2,8 @@
 "use strict";
 let r;
 n.d(t, {
-  Jc: () => k,
-  dx: () => M,
+  Jc: () => j,
+  dx: () => k,
   tE: () => G
 });
 var i, a = n(73800),
@@ -314,7 +314,7 @@ class A {
 let N = new A;
 "u" > typeof window && N.setContainer(document.body);
 let C = a.createContext(N);
-var R = function(e, t, n, r) {
+var w = function(e, t, n, r) {
   var i = n ? n.call(r, e, t) : void 0;
   if (void 0 !== i) return !!i;
   if (e === t) return !0;
@@ -331,16 +331,16 @@ var R = function(e, t, n, r) {
   }
   return !0
 };
-let P = !1,
-  w, D = {};
+let R = !1,
+  P, D = {};
 
 function L() {
-  if (!P) return;
+  if (!R) return;
   let e = null == r ? void 0 : r.getStyle();
-  null == e || R(e, D) ? null != w && cancelAnimationFrame(w) : (D = e, null == r || r.invalidate()), w = requestAnimationFrame(L)
+  null == e || w(e, D) ? null != P && cancelAnimationFrame(P) : (D = e, null == r || r.invalidate()), P = requestAnimationFrame(L)
 }
 let x = !1,
-  M = {
+  k = {
     get ringsEnabled() {
       return x
     },
@@ -348,14 +348,14 @@ let x = !1,
       x = e, null == r || r.invalidate()
     },
     enableAnimationTracking() {
-      P = !0, w = requestAnimationFrame(L)
+      R = !0, P = requestAnimationFrame(L)
     },
     disableAnimationTracking() {
-      P = !1, null != w && cancelAnimationFrame(w)
+      R = !1, null != P && cancelAnimationFrame(P)
     }
   };
 
-function k(e) {
+function j(e) {
   let {
     containerRef: t,
     children: n,
@@ -365,16 +365,16 @@ function k(e) {
     i.current.setContainer(t.current), i.current.setThemeOptions(r)
   }, [t.current]), (0, o.jsxs)(C.Provider, {
     value: i.current,
-    children: [n, (0, o.jsx)(j, {})]
+    children: [n, (0, o.jsx)(M, {})]
   })
 }
 
-function j() {
+function M() {
   let e = a.useContext(C),
     [, t] = a.useState({});
   return a.useEffect(() => (e.invalidate = () => t({}), () => {
     e.invalidate = () => null
-  }), [e]), M.ringsEnabled && e.visible ? (0, o.jsx)("div", {
+  }), [e]), k.ringsEnabled && e.visible ? (0, o.jsx)("div", {
     className: d("focus-rings-ring", e.className),
     style: e.getStyle()
   }) : null

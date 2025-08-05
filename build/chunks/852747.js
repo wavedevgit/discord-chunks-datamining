@@ -1,4 +1,5 @@
-/** Chunk was on 66005 **/
+/** Chunk was on web.js **/
+"use strict";
 e.exports = {
   popover: "popover_f84418",
   popoverReactionHoverBar: "popoverReactionHoverBar_f84418",

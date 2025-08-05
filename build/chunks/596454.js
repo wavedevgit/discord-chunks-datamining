@@ -93,63 +93,63 @@ function A(e) {
       isInteracting: A = !1,
       shouldAnimate: N,
       onMouseEnter: C,
-      onMouseLeave: R,
-      canSelect: P = !0,
-      autoplay: w,
+      onMouseLeave: w,
+      canSelect: R = !0,
+      autoplay: P,
       registerInnerRef: D,
       registerAnimatedElementRef: L,
       surrogate: x
     } = e,
-    M = I(e, ["src", "alt", "className", "emojiId", "emojiName", "channelId", "messageId", "animated", "size", "isInteracting", "shouldAnimate", "onMouseEnter", "onMouseLeave", "canSelect", "autoplay", "registerInnerRef", "registerAnimatedElementRef", "surrogate"]);
-  let [k, j] = i.useState(!1), [U, G] = i.useState(void 0), B = i.useRef(void 0), {
-    triggerAnimation: V,
+    k = I(e, ["src", "alt", "className", "emojiId", "emojiName", "channelId", "messageId", "animated", "size", "isInteracting", "shouldAnimate", "onMouseEnter", "onMouseLeave", "canSelect", "autoplay", "registerInnerRef", "registerAnimatedElementRef", "surrogate"]);
+  let [j, M] = i.useState(!1), [U, G] = i.useState(void 0), B = i.useRef(void 0), {
+    triggerAnimation: Z,
     untriggerAnimation: F
-  } = i.useContext(u.Rm), Z = _.Yk.useSetting(), H = S(), Y = null == w ? Z : w, W = E.kV[T], K = i.useRef(null), z = i.useMemo(() => {
+  } = i.useContext(u.Rm), V = _.Yk.useSetting(), H = S(), Y = null == P ? V : P, W = E.kV[T], K = i.useRef(null), z = i.useMemo(() => {
     if (null != a) return a;
     if (null != f) {
       let e = !0 === N && Y;
       return h.ZP.getEmojiURL({
         id: f,
-        animated: H && !0 === O && (e || k || !0 === A),
+        animated: H && !0 === O && (e || j || !0 === A),
         size: W
       })
     }
     if (null != p) return m.ZP.getURL(p);
     throw Error("Unknown Src for Emoji")
-  }, [O, Y, f, p, W, H, k, A, N, a]), q = i.useCallback(() => {
+  }, [O, Y, f, p, W, H, j, A, N, a]), q = i.useCallback(() => {
     null != z && (B.current = (0, d.po)(z, e => {
       e || G(Date.now())
     }))
-  }, [z]), X = i.useCallback(e => {
-    O && j(!0), null == f && V(p), null == C || C(e)
-  }, [O, p, C, V, f]), Q = i.useCallback(e => {
-    O && j(!1), null == f && F(p), null == R || R(e)
-  }, [O, f, p, R, F]), J = i.useMemo(() => {
+  }, [z]), $ = i.useCallback(e => {
+    O && M(!0), null == f && Z(p), null == C || C(e)
+  }, [O, p, C, Z, f]), X = i.useCallback(e => {
+    O && M(!1), null == f && F(p), null == w || w(e)
+  }, [O, f, p, w, F]), Q = i.useMemo(() => {
     let e = null != f && "" !== f ? {
       "data-id": f
     } : {
       "data-name": p
     };
-    return y(v(y({}, M), {
+    return y(v(y({}, k), {
       className: o()("emoji", c, {
         jumboable: "jumbo" === T
       }),
       onError: q,
-      onMouseEnter: X,
-      onMouseLeave: Q,
+      onMouseEnter: $,
+      onMouseLeave: X,
       "data-type": "emoji"
     }), e)
-  }, [c, f, p, X, Q, q, M, T]);
+  }, [c, f, p, $, X, q, k, T]);
   i.useEffect(() => () => {
     var e;
     return null == (e = B.current) ? void 0 : e.call(B)
   }, []);
-  let $ = i.useCallback(e => {
+  let J = i.useCallback(e => {
       K.current = e, null == D || D(e), null == L || L(e)
     }, [D, L]),
     ee = (0, l.Z)(K);
-  return null == z || "" === z ? (0, r.jsx)("span", v(y({}, J), {
-    ref: $,
+  return null == z || "" === z ? (0, r.jsx)("span", v(y({}, Q), {
+    ref: J,
     className: o()("emoji", "emoji-text"),
     children: null != x ? x : p
   })) : (0, r.jsxs)(r.Fragment, {
@@ -157,15 +157,15 @@ function A(e) {
       channelId: g,
       messageId: b,
       emojiName: p,
-      disable: !1 === Y || !1 === Z,
+      disable: !1 === Y || !1 === V,
       emojiRef: ee
-    }), P ? (0, r.jsx)("img", v(y({}, J), {
-      ref: $,
+    }), R ? (0, r.jsx)("img", v(y({}, Q), {
+      ref: J,
       src: z,
       alt: null != (t = null != s ? s : p) ? t : void 0,
       draggable: !1
-    }), U) : (0, r.jsx)("div", v(y({}, J), {
-      ref: $,
+    }), U) : (0, r.jsx)("div", v(y({}, Q), {
+      ref: J,
       role: "img",
       "aria-label": null != (n = null != s ? s : p) ? n : void 0,
       style: {

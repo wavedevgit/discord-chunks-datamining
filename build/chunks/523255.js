@@ -1,33 +1,36 @@
-/** Chunk was on 69150 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
   SI: () => c,
-  hZ: () => u
+  hZ: () => f
 });
-var i = n(913527),
-  r = n.n(i),
-  l = n(835913),
+var r = n(913527),
+  i = n.n(r),
+  a = n(835913),
   o = n(675478),
   s = n(581883),
-  a = n(905567);
+  l = n(905567);
 let c = e => {
     var t;
     if (!d(e)) return !1;
     let n = null == (t = s.Z.settings.userContent) ? void 0 : t.safetyUserSentimentNoticeDismissedAt,
-      i = null != n ? l.E.toDate(n) : void 0,
-      o = null != i ? r()().diff(i, "days") : null;
-    if (null != n && !(null != o && o > 30)) return !1;
+      r = null != n ? a.E.toDate(n) : void 0,
+      o = null != r ? i()().diff(r, "days") : null,
+      c = null != o && o > 30;
+    if (null != n && !c) return !1;
     let {
-      isEligible: c
-    } = a.C.getCurrentConfig({
+      isEligible: u
+    } = l.C.getCurrentConfig({
       location: "657a81_1"
     }, {
       autoTrackExposure: !0
     });
-    return c
+    return u
   },
-  d = e => null != e && Date.now() - e.createdAt.getTime() > 2592e6,
-  u = () => {
-    let e = l.E.now();
+  u = 2592e6,
+  d = e => null != e && Date.now() - e.createdAt.getTime() > u,
+  f = () => {
+    let e = a.E.now();
     o.hW.updateAsync("userContent", t => {
       t.safetyUserSentimentNoticeDismissedAt = e
     }, o.fy.INFREQUENT_USER_ACTION)

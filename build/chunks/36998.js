@@ -1,16 +1,17 @@
-/** Chunk was on 96473 **/
-e.d(n, {
-  v: () => r
+/** Chunk was on web.js **/
+"use strict";
+n.d(t, {
+  v: () => a
 });
-var l = e(944486),
-  i = e(176505);
+var r = n(944486),
+  i = n(176505);
 
-function r() {
-  var t;
-  let n = null != (t = l.Z.getCurrentlySelectedChannelId()) ? t : void 0;
-  return null != n && (0, i.AB)(n) ? {
-    channel_static_route: n
+function a() {
+  var e;
+  let t = null != (e = r.Z.getCurrentlySelectedChannelId()) ? e : void 0;
+  return null != t && (0, i.AB)(t) ? {
+    channel_static_route: t
   } : {
-    channel_id: n
+    channel_id: t
   }
 }

@@ -73,14 +73,14 @@ let b = 57.75,
         userId: t.id,
         sourceAnalyticsLocations: O
       }))
-    }, R = e => {
+    }, w = e => {
       null == A.current || A.current.contains(e.relatedTarget) || (A.current.scrollTop = 0)
     };
     return h || null == a || "" === a ? null : (0, r.jsxs)("div", {
       children: [(0, r.jsx)("div", {
         ref: N,
         className: o()(p.descriptionClamp, T && p.maxBioHeight),
-        onBlur: R,
+        onBlur: w,
         children: (0, r.jsx)(f.Z, {
           userBio: a,
           setLineClamp: !1,

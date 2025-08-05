@@ -1,4 +1,5 @@
-/** Chunk was on 94313 **/
+/** Chunk was on web.js **/
+"use strict";
 e.exports = {
   ephemeralMessage: "ephemeralMessage__124d2",
   userAppsBetaContent: "userAppsBetaContent__124d2",

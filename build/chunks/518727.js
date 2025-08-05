@@ -1,91 +1,91 @@
-/** Chunk was on 54433 **/
-n.d(t, {
+/** Chunk was on 24329 **/
+t.d(r, {
   Z: () => p
-}), n(388685);
-var i = n(255367),
-  l = n(73800),
-  r = n(120356),
-  s = n.n(r),
-  a = n(570140),
-  o = n(70097),
-  C = n(585483),
-  d = n(402426),
-  c = n(981631),
-  u = n(794503);
+}), t(388685);
+var n = t(255367),
+  i = t(73800),
+  l = t(120356),
+  o = t.n(l),
+  a = t(570140),
+  s = t(70097),
+  d = t(585483),
+  C = t(402426),
+  c = t(981631),
+  u = t(794503);
 let p = e => {
   let {
-    children: t,
-    isConfirmationStep: n,
-    isWowMomentConfirmationEligible: r
-  } = e, [p, x] = (0, l.useState)("entry"), f = (0, l.useRef)(null), h = (0, l.useRef)(null), j = () => {
-    if (x("exit"), null != h.current) {
+    children: r,
+    isConfirmationStep: t,
+    isWowMomentConfirmationEligible: l
+  } = e, [p, _] = (0, i.useState)("entry"), f = (0, i.useRef)(null), x = (0, i.useRef)(null), m = () => {
+    if (_("exit"), null != x.current) {
       var e;
-      null == (e = h.current) || e.play()
+      null == (e = x.current) || e.play()
     }
   }, {
-    mediaUrls: m,
-    isSuccess: _
-  } = (0, d.Z)(r);
-  (0, l.useEffect)(() => {
+    mediaUrls: h,
+    isSuccess: j
+  } = (0, C.Z)(l);
+  (0, i.useEffect)(() => {
     function e() {
-      j()
+      m()
     }
-    return C.S.subscribe(c.CkL.PREMIUM_PAYMENT_MODAL_CLOSED, e), () => {
-      C.S.unsubscribe(c.CkL.PREMIUM_PAYMENT_MODAL_CLOSED, e)
+    return d.S.subscribe(c.CkL.PREMIUM_PAYMENT_MODAL_CLOSED, e), () => {
+      d.S.unsubscribe(c.CkL.PREMIUM_PAYMENT_MODAL_CLOSED, e)
     }
   }, []);
-  let L = r && n && _;
-  return ((0, l.useEffect)(() => {
+  let L = l && t && j;
+  return ((0, i.useEffect)(() => {
     L && a.Z.dispatch({
       type: "WOW_MOMENT_CONFIRMATION_SET_IS_DISPLAYING_WOW_MOMENT_CONFIRMATION",
       value: L
     })
-  }, [L]), (0, l.useEffect)(() => () => {
+  }, [L]), (0, i.useEffect)(() => () => {
     a.Z.dispatch({
       type: "WOW_MOMENT_CONFIRMATION_SET_IS_DISPLAYING_WOW_MOMENT_CONFIRMATION",
       value: !1
     })
-  }, []), L) ? (0, i.jsxs)("div", {
-    children: [(0, i.jsxs)("div", {
+  }, []), L) ? (0, n.jsxs)("div", {
+    children: [(0, n.jsxs)("div", {
       className: u.videoContainer,
-      children: [(0, i.jsx)("div", {
+      children: [(0, n.jsx)("div", {
         className: u.entryAnimationContainer,
-        children: (0, i.jsx)(o.Z, {
+        children: (0, n.jsx)(s.Z, {
           playsInline: !0,
           muted: !0,
           autoPlay: !0,
           onEnded: () => {
-            if (x("idle"), null != f.current) {
+            if (_("idle"), null != f.current) {
               var e;
               null == (e = f.current) || e.play()
             }
           },
-          className: s()(u.video, "entry" === p ? u.visible : u.hidden),
-          children: (0, i.jsx)("source", {
-            src: m.modalGlowEntry
+          className: o()(u.video, "entry" === p ? u.visible : u.hidden),
+          children: (0, n.jsx)("source", {
+            src: h.modalGlowEntry
           })
         })
-      }), (0, i.jsx)(o.Z, {
+      }), (0, n.jsx)(s.Z, {
         ref: f,
         playsInline: !0,
         muted: !0,
         loop: !0,
-        className: s()(u.video, "idle" === p ? u.visible : u.hidden),
-        children: (0, i.jsx)("source", {
-          src: m.modalGlowIdle
+        className: o()(u.video, "idle" === p ? u.visible : u.hidden),
+        children: (0, n.jsx)("source", {
+          src: h.modalGlowIdle
         })
-      }), (0, i.jsx)(o.Z, {
-        ref: h,
+      }), (0, n.jsx)(s.Z, {
+        ref: x,
         playsInline: !0,
         muted: !0,
-        className: s()(u.video, "exit" === p ? u.visible : u.hidden),
-        children: (0, i.jsx)("source", {
-          src: m.modalGlowExit
+        className: o()(u.video, "exit" === p ? u.visible : u.hidden),
+        children: (0, n.jsx)("source", {
+          src: h.modalGlowExit
         })
       })]
-    }), (0, i.jsx)("div", {
+    }), (0, n.jsx)("div", {
       className: u.entryAnimationContainer,
-      children: t
+      children: r
     })]
-  }) : t
+  }) : r
 }

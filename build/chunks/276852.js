@@ -1,10 +1,11 @@
-/** Chunk was on 94313 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
-  Z: () => l
+  Z: () => a
 });
 var r = n(81063),
   i = n(701488);
 
-function l(e, t) {
+function a(e, t) {
   return null == e || null == e.assets || null == e.assets.large_image ? null : (0, r.xF)(t, e.assets.large_image, [i.cc, i.cc])
 }

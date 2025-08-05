@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => w
+  Z: () => P
 });
 var r = n(255367),
   i = n(73800),
@@ -30,7 +30,7 @@ var r = n(255367),
   N = n(388032),
   C = n(869310);
 
-function R(e) {
+function w(e) {
   let {
     onClose: t
   } = e;
@@ -46,7 +46,7 @@ function R(e) {
   })
 }
 
-function P(e) {
+function R(e) {
   let {
     tiny: t,
     isPremiumUser: n,
@@ -120,7 +120,7 @@ function P(e) {
   })
 }
 
-function w(e) {
+function P(e) {
   let {
     isPremiumUser: t,
     onInteraction: n,
@@ -140,7 +140,7 @@ function w(e) {
       id: c,
       children: N.intl.string(N.t.EIYbj4)
     }),
-    v = (0, r.jsx)(R, {
+    v = (0, r.jsx)(w, {
       onClose: () => {
         (0, h.Q3)(l.z.USER_PROFILE_PREMIUM_AND_SHOP_ENTRY_POINTS, {
           dismissAction: S.L.USER_DISMISS,
@@ -149,7 +149,7 @@ function w(e) {
         })
       }
     }),
-    T = (0, r.jsx)(P, {
+    T = (0, r.jsx)(R, {
       isPremiumUser: t,
       onInteraction: n,
       tiny: f

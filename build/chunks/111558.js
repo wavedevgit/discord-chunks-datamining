@@ -1,4 +1,4 @@
-/** Chunk was on 94312 **/
+/** Chunk was on 22988 **/
 e.exports = {
   enableSwitch: "enableSwitch__3c9fa",
   divider: "divider__3c9fa",

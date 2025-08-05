@@ -1,4 +1,5 @@
-/** Chunk was on 94313 **/
+/** Chunk was on web.js **/
+"use strict";
 e.exports = {
   messageContentContainer: "messageContentContainer__4ea49",
   iconContainer: "iconContainer__4ea49",

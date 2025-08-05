@@ -1,6 +1,6 @@
-/** Chunk was on 60173 **/
+/** Chunk was on 49152 **/
 n.d(t, {
-  Z: () => o
+  Z: () => s
 });
 var r = n(255367);
 n(73800);
@@ -8,7 +8,7 @@ var i = n(481060),
   l = n(939863),
   a = n(914340);
 
-function o(e) {
+function s(e) {
   let {
     className: t
   } = e;

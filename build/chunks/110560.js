@@ -2,15 +2,15 @@
 "use strict";
 n.r(t), n.d(t, {
   loadVideoQuestModal: () => H,
-  maybeShowSurveyForQuest: () => Z,
+  maybeShowSurveyForQuest: () => V,
   navigateToQuestHome: () => F,
   openAppWithQuest: () => K,
-  openDisclosureModal: () => V,
+  openDisclosureModal: () => Z,
   openQuestInGameRewardModal: () => U,
   openQuestMinorEnrollmentBlockModal: () => B,
   openQuestOrbsRewardModal: () => G,
-  openQuestsNitroRewardModal: () => j,
-  openQuestsRewardCodeModal: () => k,
+  openQuestsNitroRewardModal: () => M,
+  openQuestsRewardCodeModal: () => j,
   openVideoQuestModal: () => Y
 });
 var r = n(255367);
@@ -40,9 +40,9 @@ var i = n(772848),
   A = n(150560),
   N = n(46140),
   C = n(981631),
-  R = n(49898);
+  w = n(49898);
 
-function P(e, t, n) {
+function R(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -51,14 +51,14 @@ function P(e, t, n) {
   }) : e[t] = n, e
 }
 
-function w(e) {
+function P(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      P(e, t, n[t])
+      R(e, t, n[t])
     })
   }
   return e
@@ -81,9 +81,9 @@ function L(e, t) {
   }), e
 }
 let x = "in-app",
-  M = "Discord Widget";
+  k = "Discord Widget";
 
-function k(e) {
+function j(e) {
   let {
     questId: t,
     questContent: i,
@@ -95,8 +95,8 @@ function k(e) {
   (0, s.ZDy)(async () => {
     let {
       default: e
-    } = await Promise.all([n.e("37447"), n.e("64838"), n.e("27458"), n.e("17218"), n.e("25053")]).then(n.bind(n, 985866));
-    return n => (0, r.jsx)(e, L(w({}, n), {
+    } = await Promise.all([n.e("27458"), n.e("37082"), n.e("61643")]).then(n.bind(n, 985866));
+    return n => (0, r.jsx)(e, L(P({}, n), {
       questId: t,
       questContentPosition: a,
       questContent: i,
@@ -107,13 +107,13 @@ function k(e) {
   })
 }
 
-function j(e, t) {
+function M(e, t) {
   var i;
   (null == (i = e.userStatus) ? void 0 : i.claimedAt) == null ? (0, s.ZDy)(async () => {
     let {
       default: i
     } = await Promise.all([n.e("8016"), n.e("58011")]).then(n.bind(n, 824393));
-    return n => (0, r.jsx)(i, L(w({}, n), {
+    return n => (0, r.jsx)(i, L(P({}, n), {
       quest: e,
       location: t
     }))
@@ -125,7 +125,7 @@ function U(e, t, i) {
     let {
       default: a
     } = await n.e("88938").then(n.bind(n, 390238));
-    return n => (0, r.jsx)(a, L(w({}, n), {
+    return n => (0, r.jsx)(a, L(P({}, n), {
       quest: e,
       location: t,
       sourceQuestContent: i
@@ -138,7 +138,7 @@ function G(e, t) {
     let {
       default: i
     } = await Promise.all([n.e("66317"), n.e("94784")]).then(n.bind(n, 383294));
-    return n => (0, r.jsx)(i, L(w({}, n), {
+    return n => (0, r.jsx)(i, L(P({}, n), {
       quest: e,
       location: t
     }))
@@ -150,7 +150,7 @@ function B(e, t, i) {
     let {
       default: a
     } = await n.e("58641").then(n.bind(n, 828664));
-    return n => (0, r.jsx)(a, L(w({}, n), {
+    return n => (0, r.jsx)(a, L(P({}, n), {
       quest: e,
       location: t,
       sourceQuestContent: i
@@ -158,7 +158,7 @@ function B(e, t, i) {
   })
 }
 
-function V(e, t) {
+function Z(e, t) {
   (0, h._3)({
     questId: e.id,
     questContent: t.content,
@@ -170,7 +170,7 @@ function V(e, t) {
     let {
       default: i
     } = await n.e("4266").then(n.bind(n, 316210));
-    return n => (0, r.jsx)(i, L(w({}, n), {
+    return n => (0, r.jsx)(i, L(P({}, n), {
       questContent: t.content,
       quest: e
     }))
@@ -183,18 +183,18 @@ function F() {
     questId: t
   } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
   (0, A.Z.getState().setUtmCurrentContext)({
-    utmSourceCurrent: M,
+    utmSourceCurrent: k,
     utmMediumCurrent: x,
     utmCampaignCurrent: t,
     utmContentCurrent: Object.keys(b.jn).find(t => b.jn[t] === e)
   });
   let n = null != t ? "#".concat(t) : "";
   c.Z.setState({
-    selectedTab: R.GlobalDiscoveryTab.QUESTS
+    selectedTab: w.GlobalDiscoveryTab.QUESTS
   }), (0, l.xf)(), (0, d.uL)(C.Z5c.QUEST_HOME + n)
 }
 
-function Z(e) {
+function V(e) {
   let t = (0, I.T)({
       quest: e
     }),
@@ -242,7 +242,7 @@ function Y(e) {
     let {
       default: e
     } = await H();
-    return t => (0, r.jsx)(e, L(w({}, t), {
+    return t => (0, r.jsx)(e, L(P({}, t), {
       openStartClockTime: performance.now(),
       questId: n.id,
       autoplay: c,

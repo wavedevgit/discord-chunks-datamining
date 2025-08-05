@@ -1,4 +1,4 @@
-/** Chunk was on 80993 **/
+/** Chunk was on 38804 **/
 t.d(n, {
   default: () => ee
 }), t(953529), t(388685), t(642613), t(472816), t(794429);
@@ -37,8 +37,8 @@ var c = t(255367),
   M = t(259580),
   R = t(626135),
   Z = t(228643),
-  L = t(275759),
-  V = t(231757),
+  V = t(275759),
+  L = t(231757),
   B = t(753194),
   z = t(225104),
   F = t(458034),
@@ -153,7 +153,7 @@ function Q(e) {
       case null:
         return null
     }
-    if (null == (s = (0, L.n_)({
+    if (null == (s = (0, V.n_)({
         connectionType: t,
         connectionMetadataField: o,
         operator: a,
@@ -197,7 +197,7 @@ function J(e) {
         S = null == I || I.enabled,
         E = null == k ? void 0 : k.application,
         G = (null == E ? void 0 : E.bot) != null ? new O.Z(E.bot) : null;
-      L.SJ.includes(null != (n = null == E ? void 0 : E.id) ? n : "") ? d = (0, c.jsx)(B.Z, {
+      V.SJ.includes(null != (n = null == E ? void 0 : E.id) ? n : "") ? d = (0, c.jsx)(B.Z, {
         className: Y.botTag,
         color: g,
         size: 16
@@ -228,7 +228,7 @@ function J(e) {
         className: i()(Y.connectionsChecksGroup, T ? Y.connectionsChecksGroupPassed : null, S ? null : Y.connectionsChecksGroupPlatformDisabled),
         onClick: !T && S ? () => {
           var e, n;
-          return n = null != (e = null == I ? void 0 : I.type) ? e : H.Kt, void((0, V.Z)({
+          return n = null != (e = null == I ? void 0 : I.type) ? e : H.Kt, void((0, L.Z)({
             platformType: n,
             location: "Verified Roles Connect Accounts Modal",
             overrideUrl: null == E ? void 0 : E.role_connections_verification_url
@@ -361,7 +361,7 @@ function ee(e) {
     onClose: t,
     guildId: a,
     role: i
-  } = e, [l, s] = o.useState(0), [d, h] = o.useState(null), [m, C] = o.useState(!1), [x, N] = o.useState(!0), [_, A] = o.useState(!1), [T, O] = o.useState(!0), [M, L] = o.useState(!1), V = (0, u.e7)([G.Z], () => G.Z.getAccounts()), B = (0, u.e7)([S.default], () => S.default.getId()), [H, K] = o.useState(null), [W, Q] = o.useState(null), [ee, en] = o.useState(null), et = (0, v.ZP)(), ec = (0, u.e7)([I.default], () => I.default.locale), eo = (0, u.e7)([P.ZP], () => P.ZP.getMember(a, B)), ea = Object.values((0, u.e7)([E.Z], () => E.Z.getMutableGuildChannelsForGuild(a))).filter(e => w.Z.can(U.Plq.VIEW_CHANNEL, e) && w.Z.can(U.Plq.SEND_MESSAGES, e) && (0, g.Z)(e).includes(i));
+  } = e, [l, s] = o.useState(0), [d, h] = o.useState(null), [m, C] = o.useState(!1), [x, N] = o.useState(!0), [_, A] = o.useState(!1), [T, O] = o.useState(!0), [M, V] = o.useState(!1), L = (0, u.e7)([G.Z], () => G.Z.getAccounts()), B = (0, u.e7)([S.default], () => S.default.getId()), [H, K] = o.useState(null), [W, Q] = o.useState(null), [ee, en] = o.useState(null), et = (0, v.ZP)(), ec = (0, u.e7)([I.default], () => I.default.locale), eo = (0, u.e7)([P.ZP], () => P.ZP.getMember(a, B)), ea = Object.values((0, u.e7)([E.Z], () => E.Z.getMutableGuildChannelsForGuild(a))).filter(e => w.Z.can(U.Plq.VIEW_CHANNEL, e) && w.Z.can(U.Plq.SEND_MESSAGES, e) && (0, g.Z)(e).includes(i));
 
   function ei() {
     let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
@@ -395,7 +395,7 @@ function ee(e) {
     f.Z.fetchGuildRoleConnectionsEligibility(a, i.id).then(e => {
       h(e), C(e.some(e => e.every(e => e.result))), N(!1)
     })
-  }, [a, i.id, V]), o.useEffect(() => {
+  }, [a, i.id, L]), o.useEffect(() => {
     R.default.track(U.rMx.PASSPORT_CHALLENGE_VIEWED, q({
       role_id: i.id
     }, (0, y.hH)(a)))
@@ -498,7 +498,7 @@ function ee(e) {
           }
           case 1: {
             r()(null != H, "lastPlatformConnected is null");
-            let e = V.find(e => {
+            let e = L.find(e => {
                 let {
                   type: n
                 } = e;
@@ -548,7 +548,7 @@ function ee(e) {
                         children: D.intl.string(D.t.jndPhY)
                       }), (0, c.jsx)($, {
                         account: e,
-                        setShowPreviewInvisibleIcon: L,
+                        setShowPreviewInvisibleIcon: V,
                         setShowPreviewMetadata: O
                       })]
                     })]

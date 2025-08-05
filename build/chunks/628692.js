@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  ZP: () => R,
+  ZP: () => w,
   ku: () => N
 });
 var r = n(255367),
@@ -127,7 +127,7 @@ function C(e) {
     })]
   }) : null
 }
-let R = function(e) {
+let w = function(e) {
   let {
     channelId: t,
     messageId: n,
@@ -139,15 +139,15 @@ let R = function(e) {
     return null != (e = (0, f.Z)(t, n, a, o)) ? e : y
   }, [t, n, a, o, y]), T = (0, s.e7)([b.Z], () => b.Z.getChannel(t)), N = (0, u.X0)({
     location: "SoundboardMention"
-  }), R = i.useRef(null), {
-    isPlaying: P,
-    playSound: w
+  }), w = i.useRef(null), {
+    isPlaying: R,
+    playSound: P
   } = (0, p.Z)(v, T), D = i.useCallback(async () => {
-    if (await w()) {
+    if (await P()) {
       var e;
-      null == (e = R.current) || e.addAnimation()
+      null == (e = w.current) || e.addAnimation()
     }
-  }, [w]);
+  }, [P]);
   return N ? null == v ? (0, r.jsx)(A, {
     playSound: D
   }) : c && !d ? (0, r.jsx)(g.ZP, {
@@ -156,7 +156,7 @@ let R = function(e) {
     sound: v,
     channel: T,
     onSelectItem: D,
-    isPlayingSoundOverride: P,
+    isPlayingSoundOverride: R,
     isSoundmoji: !0,
     buttonOverlay: m.Pb.SOUNDMOJI,
     tooltipClassName: O.tooltip,
@@ -164,7 +164,7 @@ let R = function(e) {
     tooltipOverride: (0, r.jsx)(_.Dp, {
       sound: v
     }),
-    soundmojiVisualEffectRef: R
+    soundmojiVisualEffectRef: w
   }, "".concat(v.soundId)) : (0, r.jsx)(l.ua7, {
     "aria-label": v.name,
     text: (0, r.jsx)(_.Dp, {
@@ -178,7 +178,7 @@ let R = function(e) {
       children: (0, r.jsx)(C, {
         sound: v,
         playSound: D,
-        isPlaying: P
+        isPlaying: R
       })
     }))
   }) : null

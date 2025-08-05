@@ -1,6 +1,6 @@
 /**
   Module ID: 85505
-  Original File Name: 238c249f2bd101a1
+  Original File Name: cbe5761f8b5e3157
 **/
 .header_f549e5 {
     align-items: center;
@@ -65,18 +65,6 @@
     padding: var(--space-16)
 }
 
-.container__1ce5d {
-    position: relative
-}
-
-.circularImage__1ce5d {
-    border-radius: 50%
-}
-
-.dots__1ce5d {
-    margin-top: .2px
-}
-
 .row__6e3d6 {
     gap: var(--space-12);
     padding: var(--space-12)
@@ -105,4 +93,4 @@
     min-width: 32px
 }
 
-/*# sourceMappingURL=238c249f2bd101a1.css.map*/
+/*# sourceMappingURL=cbe5761f8b5e3157.css.map*/

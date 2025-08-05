@@ -1,27 +1,28 @@
-/** Chunk was on 24255 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
-  Z: () => u
+  Z: () => l
 });
 var r = n(255367);
 n(73800);
-var l = n(399606),
-  i = n(481060),
-  a = n(351780),
-  o = n(170248);
+var i = n(399606),
+  a = n(481060),
+  o = n(351780),
+  s = n(170248);
 
-function u(e) {
+function l(e) {
   let {
     isShaking: t,
     shakeLocation: n,
-    children: u,
-    className: s
-  } = e, c = (0, o.Z)(n);
-  return (0, l.e7)([a.Z], () => a.Z.isEnabled({
+    children: l,
+    className: c
+  } = e, u = (0, s.Z)(n);
+  return (0, i.e7)([o.Z], () => o.Z.isEnabled({
     shakeLocation: n
-  })) ? (0, r.jsx)(i.UkV, {
+  })) ? (0, r.jsx)(a.UkV, {
     isShaking: t,
-    intensity: c,
-    className: s,
-    children: u
-  }) : u
+    intensity: u,
+    className: c,
+    children: l
+  }) : l
 }

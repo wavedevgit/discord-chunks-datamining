@@ -1,4 +1,5 @@
-/** Chunk was on 94313 **/
+/** Chunk was on web.js **/
+"use strict";
 e.exports = {
   guildShopEmbed: "guildShopEmbed__86fa6",
   spinnerContainer: "spinnerContainer__86fa6",

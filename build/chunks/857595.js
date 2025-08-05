@@ -20,7 +20,7 @@ n.d(t, {
   r_: () => g,
   rf: () => p,
   u1: () => S,
-  vW: () => R
+  vW: () => w
 });
 var r = n(570140),
   i = n(153867),
@@ -179,7 +179,7 @@ function C() {
   })
 }
 
-function R(e) {
+function w(e) {
   r.Z.dispatch({
     type: "ACCESSIBILITY_SET_CONTRAST_MODE",
     contrastMode: e

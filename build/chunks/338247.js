@@ -1,14 +1,15 @@
-/** Chunk was on 94313 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
-  s: () => a
+  s: () => o
 });
 var r = n(430824),
   i = n(863214),
-  l = n(981631);
+  a = n(981631);
 
-function a(e, t) {
+function o(e, t) {
   if (null == t) return !1;
   let n = (0, i.p)(t, "should_show_report_to_mod_survey"),
-    a = r.Z.getGuild(t);
-  return n && null != a && a.ownerId === e.id && a.features.has(l.oNc.REPORT_TO_MOD_SURVEY)
+    o = r.Z.getGuild(t);
+  return n && null != o && o.ownerId === e.id && o.features.has(a.oNc.REPORT_TO_MOD_SURVEY)
 }

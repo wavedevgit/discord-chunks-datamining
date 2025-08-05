@@ -1,14 +1,15 @@
-/** Chunk was on 85372 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
-  Z: () => a,
-  _: () => s
+  Z: () => s,
+  _: () => l
 });
 var r = n(399606),
   i = n(695346),
-  l = n(496675),
+  a = n(496675),
   o = n(981631);
 
-function a(e, t) {
+function s(e, t) {
   switch (e) {
     case o.A2N.ALWAYS:
       return !0;
@@ -20,7 +21,7 @@ function a(e, t) {
   }
 }
 
-function s(e) {
-  let t = (0, r.e7)([l.Z], () => l.Z.can(o.Plq.MANAGE_MESSAGES, e));
-  return !a(i.cC.useSetting(), t)
+function l(e) {
+  let t = (0, r.e7)([a.Z], () => a.Z.can(o.Plq.MANAGE_MESSAGES, e));
+  return !s(i.cC.useSetting(), t)
 }

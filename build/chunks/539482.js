@@ -1,4 +1,4 @@
-/** Chunk was on 94312 **/
+/** Chunk was on 22988 **/
 e.exports = {
   examplesHeader: "examplesHeader_d520fc",
   title: "title_d520fc",

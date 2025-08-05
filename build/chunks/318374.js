@@ -95,14 +95,14 @@ function v(e) {
     hideOverflowCount: A = !1,
     disableUsernameTooltip: N = !1,
     disableUserPopout: C = !1,
-    onClickOverflow: R,
-    onFocusOverflow: P,
-    onUserClick: w,
+    onClickOverflow: w,
+    onFocusOverflow: R,
+    onUserClick: P,
     onUserPopoutRequestClose: D,
     "aria-label": L,
     "aria-labelledby": x,
-    "aria-hidden": M
-  } = e, [k, j] = i.useState(!1), U = y(v), G = i.useRef(null), B = t.length - a, V = B + 1, F = B > 0 && !A && !M, Z = () => (0, r.jsx)(c.VqE, {
+    "aria-hidden": k
+  } = e, [j, M] = i.useState(!1), U = y(v), G = i.useRef(null), B = t.length - a, Z = B + 1, F = B > 0 && !A && !k, V = () => (0, r.jsx)(c.VqE, {
     className: h.popoutWrapper,
     "aria-label": L,
     "aria-labelledby": x,
@@ -114,21 +114,21 @@ function v(e) {
         channelId: m,
         nick: f.ZP.getNickname(s, m, e),
         disablePopout: "function" == typeof C ? C(e.id) : C,
-        onClick: w,
+        onClick: P,
         onPopoutRequestClose: () => {
-          j(!1), null == D || D()
+          M(!1), null == D || D()
         },
         onContextMenu: t => (0, u.jW)(t, async () => {
           let {
             default: t
-          } = await Promise.all([n.e("70274"), n.e("79695"), n.e("69220"), n.e("70686")]).then(n.bind(n, 881351));
+          } = await Promise.all([n.e("79695"), n.e("69220")]).then(n.bind(n, 881351));
           return n => (0, r.jsx)(t, b(g({}, n), {
             user: e,
             guildId: s,
             channelId: m
           }))
         }, {
-          onClose: () => j(!1)
+          onClose: () => M(!1)
         })
       }, e.id))
     })
@@ -171,24 +171,24 @@ function v(e) {
     let e = null != I ? I : O(v);
     return (0, r.jsx)(c.yRy, {
       targetElementRef: G,
-      renderPopout: Z,
-      shouldShow: k,
+      renderPopout: V,
+      shouldShow: j,
       position: "bottom",
-      onRequestClose: () => j(!1),
+      onRequestClose: () => M(!1),
       children: t => (0, r.jsx)(c.P3F, b(g({}, t), {
         innerRef: G,
         className: o()(h.overflow, U, S),
-        onFocus: P,
+        onFocus: R,
         onClick: e => {
-          null == R || R(e), j(!0)
+          null == w || w(e), M(!0)
         },
         "aria-label": p.intl.formatToPlainString(p.t.R8Z8Qk, {
-          count: V
+          count: Z
         }),
         children: (0, r.jsx)(c.Text, {
           variant: e,
           color: T,
-          children: V > 99 ? ">99" : "+".concat(V)
+          children: Z > 99 ? ">99" : "+".concat(Z)
         })
       }))
     }, "overflow")
@@ -198,7 +198,7 @@ function v(e) {
     "aria-label": L,
     "aria-labelledby": x,
     className: o()(E, h.avatars),
-    "aria-hidden": M,
+    "aria-hidden": k,
     children: [H(), Y()]
   })
 }

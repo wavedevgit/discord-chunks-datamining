@@ -1,29 +1,30 @@
-/** Chunk was on 93239 **/
-r.d(t, {
-  M: () => o
-}), r(388685);
-var n = r(73800),
-  i = r(619864),
-  s = r(672041),
-  a = r(981631);
-let c = i.v + a.vpv,
-  l = i.v / a.vpv;
+/** Chunk was on web.js **/
+"use strict";
+n.d(t, {
+  M: () => c
+}), n(388685);
+var r = n(73800),
+  i = n(619864),
+  a = n(672041),
+  o = n(981631);
+let s = i.v + o.vpv,
+  l = i.v / o.vpv;
 
-function o(e) {
+function c(e) {
   let {
     totalResults: t,
-    isSearching: r
-  } = e, [o, u] = n.useState(t);
-  n.useEffect(() => {
-    r || u(t)
-  }, [t, r]);
-  let d = o > i.v + a.vpv,
-    _ = (0, s.t)({
+    isSearching: n
+  } = e, [c, u] = r.useState(t);
+  r.useEffect(() => {
+    n || u(t)
+  }, [t, n]);
+  let d = c > i.v + o.vpv,
+    f = (0, a.t)({
       location: "useSearchResultsPagination"
     });
   return {
-    isPaginationTotalCountLimited: d && _,
-    paginationTotalCount: Math.min(o, c),
+    isPaginationTotalCountLimited: d && f,
+    paginationTotalCount: Math.min(c, s),
     paginationMaxIndex: l
   }
 }

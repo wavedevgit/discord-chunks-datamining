@@ -1,20 +1,21 @@
-/** Chunk was on 70663 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
-  Z: () => l
+  Z: () => a
 }), n(388685);
 var r = n(73800),
   i = n(763520);
 
-function l(e) {
+function a(e) {
   let {
     location: t,
     videoSpinnerContext: n,
-    userId: l,
+    userId: a,
     streamId: o,
-    loading: a,
-    paused: s = !1
+    loading: s,
+    paused: l = !1
   } = e, [c] = r.useState(() => new i.o(t));
   r.useEffect(() => {
-    s || (a ? c.onSpinnerStarted() : null != o && c.trackSpinnerDuration(n, l, o))
-  }, [a, s, o, c, n, l])
+    l || (s ? c.onSpinnerStarted() : null != o && c.trackSpinnerDuration(n, a, o))
+  }, [s, l, o, c, n, a])
 }

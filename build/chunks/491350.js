@@ -1,4 +1,5 @@
-/** Chunk was on 24022 **/
+/** Chunk was on web.js **/
+"use strict";
 e.exports = {
   emptyContainer: "emptyContainer__4a7f0",
   emptyInner: "emptyInner__4a7f0",

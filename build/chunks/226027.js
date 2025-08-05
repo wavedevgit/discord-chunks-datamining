@@ -1,5 +1,8 @@
-/** Chunk was on 60173 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
-  E: () => i
+  E: () => r
 });
-var r, i = ((r = {}).NEW_MESSAGES = "new_messages", r.OPT_IN_CHANNEL = "opt_in_channel", r.SUMMARIES = "summaries", r)
+var r = function(e) {
+  return e.NEW_MESSAGES = "new_messages", e.OPT_IN_CHANNEL = "opt_in_channel", e.SUMMARIES = "summaries", e
+}({})

@@ -81,20 +81,20 @@ let N = new p.Z("ChoosePaymentSourceType"),
     [b.HeQ.IDEAL]: h.ZP.Types.IDEAL,
     [b.HeQ.CASH_APP]: h.ZP.Types.CASH_APP
   },
-  R = 1e3,
-  P = "40c266_1";
-class w extends i.PureComponent {
+  w = 1e3,
+  R = "40c266_1";
+class P extends i.PureComponent {
   componentDidMount() {
     var e;
     (0, u.GE)(), (null != (e = this.props.paymentRequestWallets) ? e : []).length > 0 && setTimeout(() => {
       this.considerPaymentRequestWalletsLoaded()
-    }, R)
+    }, w)
   }
   considerPaymentRequestWalletsLoaded() {
     var e;
     let t = null != (e = this.props.paymentRequestWallets) ? e : [];
     if (0 === t.length || !this.arePaymentRequestWalletsLoading()) return;
-    N.warn("Payment request wallets failed to load in time: ".concat(t.join(", "), ". Max time allowed: ").concat(R, " ms"));
+    N.warn("Payment request wallets failed to load in time: ".concat(t.join(", "), ". Max time allowed: ").concat(w, " ms"));
     let n = t.reduce((e, t) => A(T({}, e), {
       ["".concat(t, "Loaded")]: !0
     }), {});
@@ -166,7 +166,7 @@ class w extends i.PureComponent {
     }), E = [], b = [], I = void 0 === s || this.arePaymentRequestWalletsLoading();
     if (l) E.push(...this.createPaymentButtons((0, f.Q)({
       ipCountryCode: "ALL",
-      location: P
+      location: R
     }).countryPaymentMethods));
     else {
       let {
@@ -174,7 +174,7 @@ class w extends i.PureComponent {
         remainingPaymentMethods: t
       } = (0, f.Q)({
         ipCountryCode: s,
-        location: P
+        location: R
       });
       E.push(...this.createPaymentButtons(e)), b.push(...this.createPaymentButtons(t))
     }
@@ -228,4 +228,4 @@ class w extends i.PureComponent {
 let D = s.ZP.connectStores([g.Z], () => ({
   ipCountryCode: g.Z.ipCountryCode,
   ipCountryCodeHasError: g.Z.ipCountryCodeHasError
-}))(w)
+}))(P)

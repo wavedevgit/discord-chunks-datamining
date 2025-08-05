@@ -1,30 +1,30 @@
-/** Chunk was on 1268 **/
+/** Chunk was on 16459 **/
 r.d(t, {
   Z: () => o
 });
 var n = r(255367);
 r(73800);
 var i = r(481060),
-  l = r(835473),
-  a = r(833062),
+  a = r(835473),
+  l = r(833062),
   s = r(388032);
 
 function o(e) {
   let {
     applicationIds: t
-  } = e, r = (0, l.Z)(t).filter(e => null != e);
+  } = e, r = (0, a.Z)(t).filter(e => null != e);
   if (0 === r.length) return null;
   let o = null;
   if (1 === r.length) o = s.intl.format(s.t.wQ6ur6, {
-    applicationName: () => (0, n.jsx)(a.Z, {
+    applicationName: () => (0, n.jsx)(l.Z, {
       application: r[0]
     }, r[0].id)
   });
   else if (2 === r.length) o = s.intl.format(s.t.C98CSE, {
-    applicationName: () => (0, n.jsx)(a.Z, {
+    applicationName: () => (0, n.jsx)(l.Z, {
       application: r[0]
     }, r[0].id),
-    applicationName2: () => (0, n.jsx)(a.Z, {
+    applicationName2: () => (0, n.jsx)(l.Z, {
       application: r[1]
     }, r[1].id)
   });
@@ -32,11 +32,11 @@ function o(e) {
     let e = r[r.length - 1],
       t = r.slice(0, -1);
     o = s.intl.format(s.t.UxpwAg, {
-      applications: () => t.map(e => (0, n.jsx)(a.Z, {
+      applications: () => t.map(e => (0, n.jsx)(l.Z, {
         application: e,
         useComma: !0
       }, e.id)),
-      applicationNameLast: () => (0, n.jsx)(a.Z, {
+      applicationNameLast: () => (0, n.jsx)(l.Z, {
         application: e
       }, e.id)
     })

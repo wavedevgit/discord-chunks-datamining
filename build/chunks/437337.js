@@ -109,18 +109,18 @@ let O = function(e) {
     reducedMotion: v
   } = i.useContext(c.S), I = i.useRef(null), [T, S] = i.useState(!1), A = (0, d.d)(l.Z.colors.INTERACTIVE_MUTED).spring(), N = (0, d.d)(l.Z.colors.BG_BRAND).spring(), {
     state: C,
-    opacity: R
+    opacity: w
   } = (0, f.q_F)({
     config: E,
     opacity: p ? .5 : 1,
     state: T ? a ? .7 : .3 : +!!a
   }, "animate-always");
 
-  function P(e) {
+  function R(e) {
     S(!1), null == n || n(e.currentTarget.checked, e)
   }
 
-  function w(e) {
+  function P(e) {
     p || e.repeat || (" " === e.key || "Enter" === e.key) && S(!0)
   }
 
@@ -140,7 +140,7 @@ let O = function(e) {
       onMouseUp: () => S(!1),
       onMouseLeave: () => S(!1),
       style: {
-        opacity: R,
+        opacity: w,
         backgroundColor: C.to({
           output: [A, N]
         })
@@ -184,9 +184,9 @@ let O = function(e) {
         },
         className: _.input,
         tabIndex: p ? -1 : 0,
-        onKeyDown: w,
+        onKeyDown: P,
         onKeyUp: D,
-        onChange: P,
+        onChange: R,
         checked: a,
         disabled: p
       })]

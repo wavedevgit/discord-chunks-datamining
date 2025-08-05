@@ -1,4 +1,5 @@
-/** Chunk was on 94313 **/
+/** Chunk was on web.js **/
+"use strict";
 e.exports = {
   container: "container_cacd02",
   bumpBox: "bumpBox_cacd02",

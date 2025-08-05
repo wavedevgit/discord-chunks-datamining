@@ -5,19 +5,19 @@ n.d(t, {
   I5: () => O,
   Mn: () => b,
   OU: () => L,
-  P6: () => w,
+  P6: () => P,
   Rx: () => S,
   S2: () => E,
   V3: () => y,
   W0: () => v,
-  W3: () => P,
+  W3: () => R,
   Zy: () => m,
   b9: () => C,
   cV: () => T,
   e1: () => I,
   iR: () => D,
   s4: () => N,
-  si: () => R,
+  si: () => w,
   ss: () => g,
   xn: () => A
 });
@@ -238,19 +238,19 @@ function C() {
   })
 }
 
-function R() {
+function w() {
   o.Z.dispatch({
     type: "USER_SETTINGS_RESET_PENDING_ACCOUNT_CHANGES"
   })
 }
 
-function P() {
+function R() {
   o.Z.dispatch({
     type: "USER_SETTINGS_RESET_ALL_PENDING"
   })
 }
 
-function w() {
+function P() {
   o.Z.dispatch({
     type: "USER_SETTINGS_ACCOUNT_RESET_AND_CLOSE_FORM"
   })

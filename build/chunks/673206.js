@@ -1,4 +1,5 @@
-/** Chunk was on 94313 **/
+/** Chunk was on web.js **/
+"use strict";
 e.exports = {
   popoutContent: "popoutContent_dfa983",
   stickersList: "stickersList_dfa983",

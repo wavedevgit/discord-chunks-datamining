@@ -1,4 +1,5 @@
-/** Chunk was on 94313 **/
+/** Chunk was on web.js **/
+"use strict";
 e.exports = {
   welcomeCTA: "welcomeCTA_f5d1e2",
   welcomeCTAButtonOuter: "welcomeCTAButtonOuter_f5d1e2",

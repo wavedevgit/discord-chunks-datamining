@@ -1,4 +1,4 @@
-/** Chunk was on 85438 **/
+/** Chunk was on 75708 **/
 e.exports = {
   contents: "contents_ce2e74",
   badgeImage: "badgeImage_ce2e74",

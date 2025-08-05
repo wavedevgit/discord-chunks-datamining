@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => k
+  Z: () => j
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -29,10 +29,10 @@ var r = n(255367),
   A = n(380736),
   N = n(987650),
   C = n(981631),
-  R = n(388032),
-  P = n(138134);
+  w = n(388032),
+  R = n(138134);
 
-function w(e, t, n) {
+function P(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -67,7 +67,7 @@ function x(e) {
   let T = i.useCallback(() => {
       _.set(0), null != m.current && clearTimeout(m.current), m.current = null, null == o || o(), null == u || u()
     }, [_, o, u]),
-    w = i.useCallback(e => {
+    P = i.useCallback(e => {
       O || (v(!0), null == o || o(), p.Z.track(C.rMx.NOTIFICATION_CLICKED, {
         notif_type: N.n0.OverlayCrashed,
         action_type: "reload"
@@ -79,14 +79,14 @@ function x(e) {
     x = i.useCallback(e => {
       e.stopPropagation(), null == o || o(), null == c || c()
     }, [c, o]),
-    M = (0, d.e7)([S.ZP], () => S.ZP.getFocusedRunningGame()),
-    k = g ? (0, r.jsxs)("div", {
+    k = (0, d.e7)([S.ZP], () => S.ZP.getFocusedRunningGame()),
+    j = g ? (0, r.jsxs)("div", {
       children: [(0, r.jsx)(f.Text, {
         variant: "text-md/semibold",
         color: "text-primary",
-        children: R.intl.string(R.t.mn4eXF)
+        children: w.intl.string(w.t.mn4eXF)
       }), (0, r.jsxs)("div", {
-        className: P.stackTraceCode,
+        className: R.stackTraceCode,
         children: [(0, r.jsx)(f.Text, {
           variant: "text-sm/normal",
           color: "text-secondary",
@@ -95,7 +95,7 @@ function x(e) {
           variant: "text-xxs/normal",
           color: "text-secondary",
           children: (0, r.jsx)("code", {
-            className: P.code,
+            className: R.code,
             children: (0, r.jsx)("pre", {
               children: a.stack
             })
@@ -103,22 +103,22 @@ function x(e) {
         })]
       })]
     }) : null,
-    j = g ? null : R.intl.string(R.t.oEJEFh),
+    M = g ? null : w.intl.string(w.t.oEJEFh),
     U = null != (t = null == I ? void 0 : I.isStaff()) && t || null != (n = null == I ? void 0 : I.isStaffPersonal()) && n;
   return (0, r.jsx)(A.Y, {
-    title: R.intl.string(R.t.U38qZm),
-    body: k,
-    hint: U ? j : void 0,
-    confirmText: R.intl.string(R.t.a3HlgI),
-    cancelText: null != M ? R.intl.string(R.t.qIYnPj) : void 0,
+    title: w.intl.string(w.t.U38qZm),
+    body: j,
+    hint: U ? M : void 0,
+    confirmText: w.intl.string(w.t.a3HlgI),
+    cancelText: null != k ? w.intl.string(w.t.qIYnPj) : void 0,
     icon: (0, r.jsx)(b.Z, {
       width: 40,
       height: 40,
-      className: P.notificationIcon
+      className: R.notificationIcon
     }),
     onNotificationClick: D,
-    onConfirmClick: w,
-    onCancelClick: null != M ? x : void 0,
+    onConfirmClick: P,
+    onCancelClick: null != k ? x : void 0,
     onDismissClick: o,
     expand: !0,
     locked: !0,
@@ -127,11 +127,11 @@ function x(e) {
     status: C._1z.ACTIVE,
     containerRef: null,
     contentOpacity: _,
-    className: P.errorNotificationContainer,
-    wrapperClassName: P.errorNotificationWrapper
+    className: R.errorNotificationContainer,
+    wrapperClassName: R.errorNotificationWrapper
   })
 }
-class M extends i.PureComponent {
+class k extends i.PureComponent {
   componentDidCatch(e, t) {
     let n = (0, g.s1)().location;
     this.setState({
@@ -164,7 +164,7 @@ class M extends i.PureComponent {
       showError: i
     } = this.state;
     return null != n ? i ? (0, r.jsx)(T.Z, {
-      className: P.errorClickNotification,
+      className: R.errorClickNotification,
       children: (0, r.jsx)(x, {
         error: n,
         onLock: () => {
@@ -197,11 +197,11 @@ class M extends i.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), w(this, "state", {
+    super(...e), P(this, "state", {
       error: null,
       showError: !0,
       info: null
-    }), w(this, "pid", null)
+    }), P(this, "pid", null)
   }
 }
-let k = M
+let j = k

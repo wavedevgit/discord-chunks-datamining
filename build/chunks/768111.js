@@ -1,4 +1,4 @@
-/** Chunk was on 43473 **/
+/** Chunk was on 11302 **/
 n.d(t, {
   Z: () => u
 }), n(539854);
@@ -20,8 +20,8 @@ function u(e) {
     mutualGuilds: f
   } = (0, l.Z)(t), p = null == f ? void 0 : f.length, m = (0, o.Z)(t), b = (0, r.k)({
     location: "useUserProfileModalV2TabBarItems"
-  }), g = (0, i.Z)(), y = [], _ = t.id === (null == n ? void 0 : n.id), O = g.length > 0;
-  return b && (O || _) && y.push({
+  }), g = (0, i.Z)(), y = [], O = t.id === (null == n ? void 0 : n.id), j = g.length > 0;
+  return b && (j || O) && y.push({
     text: d.intl.string(d.t.laViw8),
     section: s.oh.WIDGETS,
     subsection: void 0

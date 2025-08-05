@@ -1,4 +1,5 @@
-/** Chunk was on 94313 **/
+/** Chunk was on web.js **/
+"use strict";
 e.exports = {
   container: "container__5e208",
   isComponentsV2: "isComponentsV2__5e208"

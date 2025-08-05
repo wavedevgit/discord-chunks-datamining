@@ -66,10 +66,10 @@ function v(e) {
     setInteractionToast: A
   } = (0, f.Xo)(), {
     theme: N
-  } = (0, p.z)(), C = (0, a.e7)([l.Z], () => l.Z.theme), R = (0, o.wj)(C) ? !(0, o.wj)(N) : (0, o.wj)(N), P = i.useRef(null);
+  } = (0, p.z)(), C = (0, a.e7)([l.Z], () => l.Z.theme), w = (0, o.wj)(C) ? !(0, o.wj)(N) : (0, o.wj)(N), R = i.useRef(null);
   i.useEffect(() => {
-    null == v || v(null == P ? void 0 : P.current)
-  }, [P, v]), i.useEffect(() => {
+    null == v || v(null == R ? void 0 : R.current)
+  }, [R, v]), i.useEffect(() => {
     let e = e => {
       e.key === g.vn.ESCAPE && (e.stopPropagation(), S())
     };
@@ -77,7 +77,7 @@ function v(e) {
       document.removeEventListener("keydown", e)
     }
   }, [T, S]);
-  let w = async e => {
+  let P = async e => {
     if (null == e) return;
     _ === h.n_.AVATAR ? I({
       action: "SEND_REACT_AVATAR"
@@ -106,7 +106,7 @@ function v(e) {
     A(h.P.REACT)
   };
   return (0, r.jsx)(s.Z, {
-    headerClassName: R ? y.noBoxShadowMargin : void 0,
+    headerClassName: w ? y.noBoxShadowMargin : void 0,
     guildId: null != n ? n : void 0,
     closePopout: E.dG,
     onSelectEmoji: async e => {
@@ -114,7 +114,7 @@ function v(e) {
         emoji: t,
         willClose: n
       } = e;
-      await w(t), n && (S(), null == T || T())
+      await P(t), n && (S(), null == T || T())
     },
     pickerIntention: m.Hz.PROFILE
   })

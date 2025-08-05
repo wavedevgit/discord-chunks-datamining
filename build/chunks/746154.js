@@ -1,8 +1,8 @@
-/** Chunk was on 8381 **/
+/** Chunk was on web.js **/
 "use strict";
-t.exports = function(t) {
-  var e = {};
-  return function(r) {
-    return e.hasOwnProperty(r) || (e[r] = t.call(this, r)), e[r]
+e.exports = function(e) {
+  var t = {};
+  return function(n) {
+    return t.hasOwnProperty(n) || (t[n] = e.call(this, n)), t[n]
   }
 }

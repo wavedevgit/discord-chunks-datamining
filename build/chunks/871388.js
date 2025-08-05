@@ -1,18 +1,18 @@
 /** Chunk was on 73628 **/
 A.d(t, {
-  B: () => i
+  B: () => o
 });
 var n = A(255367);
 A(73800);
 var r = A(481060),
-  a = A(120651),
-  l = A(388032);
+  l = A(120651),
+  a = A(388032);
 
-function i(e, t, A) {
-  let i = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : {};
-  (0, a.Z)({
+function o(e, t, A) {
+  let o = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : {};
+  (0, l.Z)({
     title: e,
-    body: "string" == typeof t ? t : l.intl.format(t, function(e) {
+    body: "string" == typeof t ? t : a.intl.format(t, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var A = null != arguments[t] ? arguments[t] : {},
           n = Object.keys(A);
@@ -38,8 +38,8 @@ function i(e, t, A) {
         },
         children: e
       })
-    }, i)),
-    cta: l.intl.string(l.t["NX+WJC"]),
+    }, o)),
+    cta: a.intl.string(a.t["NX+WJC"]),
     onConfirm: () => {},
     iconVariant: A
   })

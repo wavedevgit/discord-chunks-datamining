@@ -1,48 +1,48 @@
-/** Chunk was on 19370 **/
+/** Chunk was on 39476 **/
 n.d(t, {
-  Z: () => h
+  Z: () => E
 });
-var a = n(255367),
-  r = n(73800),
-  i = n(120356),
-  o = n.n(i),
-  c = n(442837),
-  l = n(481060),
-  s = n(700582),
+var r = n(255367),
+  i = n(73800),
+  o = n(120356),
+  l = n.n(o),
+  a = n(442837),
+  s = n(481060),
+  c = n(700582),
   u = n(372900),
   d = n(318713),
   p = n(123145),
   m = n(592125),
-  g = n(73249),
+  f = n(73249),
   y = n(369171),
-  f = n(545093),
-  b = n(388032),
-  O = n(114047);
-let _ = r.memo(function(e) {
+  b = n(545093),
+  O = n(388032),
+  h = n(114047);
+let g = i.memo(function(e) {
   let {
     message: t
-  } = e, n = (0, c.e7)([m.Z], () => m.Z.getChannel(t.channel_id));
-  return null == n ? null : (0, a.jsx)(y.ZP, {
-    children: e => (0, a.jsxs)(u.Z.Provider, {
+  } = e, n = (0, a.e7)([m.Z], () => m.Z.getChannel(t.channel_id));
+  return null == n ? null : (0, r.jsx)(y.ZP, {
+    children: e => (0, r.jsxs)(u.Z.Provider, {
       value: n.guild_id,
-      children: [(0, a.jsx)(s.Z, {
+      children: [(0, r.jsx)(c.Z, {
         user: t.author,
-        size: l.EFr.SIZE_40,
-        className: o()(O.authorAvatar, e)
-      }), (0, a.jsxs)("div", {
-        className: o()(O.author, e),
-        children: [(0, a.jsx)(l.Rny, {
-          children: (0, a.jsx)("div", {
-            className: O.authorNameWrapper,
-            children: (0, a.jsx)(p.Z, {
-              className: O.authorName,
+        size: s.EFr.SIZE_40,
+        className: l()(h.authorAvatar, e)
+      }), (0, r.jsxs)("div", {
+        className: l()(h.author, e),
+        children: [(0, r.jsx)(s.Rny, {
+          children: (0, r.jsx)("div", {
+            className: h.authorNameWrapper,
+            children: (0, r.jsx)(p.Z, {
+              className: h.authorName,
               message: t,
               channel: n
             })
           })
-        }), (0, a.jsx)(d.Z, {
+        }), (0, r.jsx)(d.Z, {
           timestamp: t.timestamp,
-          className: O.timestamp,
+          className: h.timestamp,
           tooltipPosition: "bottom"
         })]
       })]
@@ -50,27 +50,27 @@ let _ = r.memo(function(e) {
   })
 });
 
-function h(e) {
+function E(e) {
   var t;
   let {
     item: n,
-    hideMediaOptions: r,
-    onClose: i
-  } = e, c = null == (t = n.sourceMetadata) ? void 0 : t.message;
-  return (0, a.jsxs)("div", {
-    className: O.topBar,
-    children: [null != c && (0, a.jsx)(_, {
-      message: c
-    }), (0, a.jsx)(g.Z, {
+    hideMediaOptions: i,
+    onClose: o
+  } = e, a = null == (t = n.sourceMetadata) ? void 0 : t.message;
+  return (0, r.jsxs)("div", {
+    className: h.topBar,
+    children: [null != a && (0, r.jsx)(g, {
+      message: a
+    }), (0, r.jsx)(f.Z, {
       item: n,
-      hideMediaOptions: r
-    }), (0, a.jsx)(y.ZP, {
+      hideMediaOptions: i
+    }), (0, r.jsx)(y.ZP, {
       mode: y.lx.PINNED,
-      children: e => (0, a.jsx)(f.Z, {
-        onClick: i,
-        icon: l.Dio,
-        tooltip: b.intl.string(b.t.cpT0Cg),
-        className: o()(O.closeButton, e)
+      children: e => (0, r.jsx)(b.Z, {
+        onClick: o,
+        icon: s.Dio,
+        tooltip: O.intl.string(O.t.cpT0Cg),
+        className: l()(h.closeButton, e)
       })
     })]
   })

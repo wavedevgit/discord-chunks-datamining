@@ -1,11 +1,11 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  As: () => k,
-  By: () => j,
+  As: () => j,
+  By: () => M,
   Lu: () => U,
   e9: () => Y,
-  hG: () => V,
+  hG: () => Z,
   nd: () => H,
   yT: () => W
 }), n(415506), n(642613), n(388685);
@@ -44,7 +44,7 @@ function C(e, t, n) {
   }) : e[t] = n, e
 }
 
-function R(e) {
+function w(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -57,7 +57,7 @@ function R(e) {
   return e
 }
 
-function P(e, t) {
+function R(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -68,8 +68,8 @@ function P(e, t) {
   return n
 }
 
-function w(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : P(Object(t)).forEach(function(n) {
+function P(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : R(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -128,7 +128,7 @@ function x(e, t, n, r) {
   throw Error("Unexpected invoice plan: ".concat(e.subscriptionPlanId))
 }
 
-function M(e) {
+function k(e) {
   var t;
   let {
     invoiceItem: n,
@@ -153,7 +153,7 @@ function M(e) {
       text: A.intl.format(A.t.UDop9f, {}),
       "aria-label": A.intl.string(A.t.P68ePD),
       tooltipClassName: N.invoiceItemTooltip,
-      children: e => (0, r.jsx)(u.idN, w(R({
+      children: e => (0, r.jsx)(u.idN, P(w({
         size: "md",
         color: "currentColor"
       }, e), {
@@ -176,7 +176,7 @@ function M(e) {
   })
 }
 
-function k(e) {
+function j(e) {
   let {
     label: t,
     tooltipText: n,
@@ -189,7 +189,7 @@ function k(e) {
       text: n,
       "aria-label": i,
       tooltipClassName: N.invoiceItemTooltip,
-      children: e => (0, r.jsx)(u.idN, w(R({
+      children: e => (0, r.jsx)(u.idN, P(w({
         size: "md",
         color: "currentColor"
       }, e), {
@@ -199,13 +199,13 @@ function k(e) {
   })
 }
 
-function j(e) {
+function M(e) {
   let {
     invoice: t,
     isPrepaidPaymentSource: n
   } = e, i = (0, y.j)(t.invoiceItems), a = i.find(e => !(0, g.Z8)(e.subscriptionPlanId) && e.amount >= 0), o = i.find(e => (0, g.Z8)(e.subscriptionPlanId) && e.amount >= 0), s = (0, c.e7)([p.Z], () => null != o ? p.Z.get(o.subscriptionPlanId) : null), l = null != o ? o.amount : 0, u = (0, E.T4)(l, t.currency), d = null != s ? (0, E.og)(u, s.interval, s.intervalCount) : 0;
   return (0, r.jsxs)(r.Fragment, {
-    children: [null != a ? (0, r.jsx)(M, {
+    children: [null != a ? (0, r.jsx)(k, {
       invoiceItem: a,
       currency: t.currency,
       isPrepaidPaymentSource: n
@@ -240,14 +240,14 @@ function U(e) {
     h = s.amount + (null != c ? c.amount : 0) - p + (null != u ? u.amount : 0),
     m = o.filter(e => e.subscriptionPlanId === T.Xh.PREMIUM_MONTH_GUILD || e.subscriptionPlanId === T.Xh.PREMIUM_YEAR_GUILD).reduce((e, t) => e + t.amount, 0);
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(M, {
+    children: [(0, r.jsx)(k, {
       invoiceItem: s,
       currency: t.currency,
       overrideAmount: p,
       isPrepaidPaymentSource: i,
       referralTrialOfferId: a
     }), 0 === h || f ? null : (0, r.jsx)(v.B1, {
-      label: (0, r.jsx)(k, {
+      label: (0, r.jsx)(j, {
         label: A.intl.formatToPlainString(A.t.ZSVgeX, {
           planName: (0, g.PV)(n.id) ? (0, g.aq)(n.id) : n.name
         }),
@@ -255,7 +255,7 @@ function U(e) {
       }),
       value: (0, E.T4)(h, t.currency)
     }), 0 !== m ? (0, r.jsx)(v.B1, {
-      label: (0, r.jsx)(k, {
+      label: (0, r.jsx)(j, {
         label: A.intl.string(A.t["+as5ZW"]),
         tooltipText: A.intl.format(A.t.UDop9f, {}),
         tooltipAriaLabel: A.intl.string(A.t.P68ePD)
@@ -288,7 +288,7 @@ function B(e) {
   })
 }
 
-function V(e) {
+function Z(e) {
   let {
     proratedInvoice: t,
     renewalInvoice: n,
@@ -326,7 +326,7 @@ function F(e) {
     }), null != n ? (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(v.Z9, {
         children: A.intl.string(A.t.tuqjWV)
-      }), B(G((0, y.j)(n.invoiceItems))).map(e => (0, r.jsx)(M, {
+      }), B(G((0, y.j)(n.invoiceItems))).map(e => (0, r.jsx)(k, {
         invoiceItem: e,
         currency: n.currency,
         inTrialPeriod: a
@@ -337,7 +337,7 @@ function F(e) {
       children: A.intl.string(A.t.qxVrh4)
     }), B(G((0, y.j)(i.invoiceItems))).map(e => {
       let n = null != s && !s.some(t => t.subscriptionPlanId === e.subscriptionPlanId && t.quantity === e.quantity);
-      return (0, r.jsx)(M, {
+      return (0, r.jsx)(k, {
         invoiceItem: e,
         currency: i.currency,
         showGuildSubscriptionAdjustmentTooltip: d && (e.subscriptionPlanId === T.Xh.PREMIUM_MONTH_GUILD || e.subscriptionPlanId === T.Xh.PREMIUM_YEAR_GUILD || e.subscriptionPlanId === T.Xh.PREMIUM_3_MONTH_GUILD || e.subscriptionPlanId === T.Xh.PREMIUM_6_MONTH_GUILD),
@@ -355,7 +355,7 @@ function F(e) {
   })
 }
 
-function Z(e) {
+function V(e) {
   var t;
   let {
     proratedInvoice: n,
@@ -407,7 +407,7 @@ function H(e) {
     hideSubscriptionDetails: m = !1
   } = e, {
     analyticsLocations: g
-  } = (0, _.ZP)(), E = R({
+  } = (0, _.ZP)(), E = w({
     subscriptionId: null == t ? void 0 : t.id,
     renewal: !0,
     preventFetch: !s,
@@ -416,7 +416,7 @@ function H(e) {
   }, c), [y] = (0, b.ED)(E), [O, I] = i.useState(!1);
   return (0, r.jsxs)(r.Fragment, {
     children: [d ? null : (0, r.jsx)(v.P7, {
-      children: (0, r.jsx)(Z, {
+      children: (0, r.jsx)(V, {
         proratedInvoice: n,
         renewalInvoice: a,
         isTrial: l,

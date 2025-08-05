@@ -1,23 +1,24 @@
-/** Chunk was on 94313 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
-  Z: () => s
+  Z: () => l
 });
 var r = n(255367),
   i = n(657707),
-  l = n(793030),
-  a = n(834129),
-  o = n(510064);
+  a = n(793030),
+  o = n(834129),
+  s = n(510064);
 
-function s(e) {
+function l(e) {
   let {
     channel: t,
     message: n,
-    content: s,
+    content: l,
     subtitle: c,
     compact: u,
     action: d
-  } = e, p = n.reactions.length > 0;
-  return (0, r.jsxs)(a.Z, {
+  } = e, f = n.reactions.length > 0;
+  return (0, r.jsxs)(o.Z, {
     iconNode: t.isGroupDM() ? (0, r.jsx)(i.Dkj, {
       size: "md",
       color: "var(--premium-tier-2-purple-for-gradients-2)"
@@ -25,17 +26,17 @@ function s(e) {
       size: "md",
       color: "var(--premium-tier-2-purple-for-gradients-2)"
     }),
-    iconContainerClassName: o.iconContainer,
+    iconContainerClassName: s.iconContainer,
     compact: u,
-    contentClassName: o.content,
-    className: p ? o.withReactions : o.noReactions,
+    contentClassName: s.content,
+    className: f ? s.withReactions : s.noReactions,
     children: [(0, r.jsxs)("div", {
-      className: o.textContainer,
-      children: [(0, r.jsx)(l.xv, {
+      className: s.textContainer,
+      children: [(0, r.jsx)(a.xv, {
         variant: "text-md/medium",
         color: "header-primary",
-        children: s
-      }), null != c && (0, r.jsx)(l.xv, {
+        children: l
+      }), null != c && (0, r.jsx)(a.xv, {
         variant: "text-sm/medium",
         color: "text-secondary",
         children: c

@@ -55,9 +55,9 @@ let b = i.forwardRef(function(e, t) {
     forcedDivider: A = !1,
     showPremiumIcon: N = !1,
     showViewFullProfileButton: C = !1
-  } = e, R = (0, s.e7)([d.default], () => d.default.getCurrentUser()), P = () => {
-    null != R && (0, u.openUserProfileModal)({
-      userId: R.id,
+  } = e, w = (0, s.e7)([d.default], () => d.default.getCurrentUser()), R = () => {
+    null != w && (0, u.openUserProfileModal)({
+      userId: w.id,
       disableActionsForPreview: !0
     })
   };
@@ -78,12 +78,12 @@ let b = i.forwardRef(function(e, t) {
       children: [(0, r.jsxs)(c.vwX, {
         className: m.title,
         id: a,
-        children: [n, N && (0, r.jsx)(_.Z, {}), i, C && null != R && (0, r.jsx)(l.zx, {
+        children: [n, N && (0, r.jsx)(_.Z, {}), i, C && null != w && (0, r.jsx)(l.zx, {
           look: l.zx.Looks.LINK,
           color: l.zx.Colors.TRANSPARENT,
           size: l.zx.Sizes.TINY,
           className: m.viewFullProfileButton,
-          onClick: P,
+          onClick: R,
           children: (0, r.jsx)(c.Text, {
             variant: "text-xs/normal",
             children: h.intl.string(h.t["+Xp3ho"])

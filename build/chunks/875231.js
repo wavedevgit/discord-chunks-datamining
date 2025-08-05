@@ -1,6 +1,6 @@
-/** Chunk was on 98786 **/
+/** Chunk was on web.js **/
 "use strict";
-n.r(e.exports = {
+var r = {
   video: "video__1689b",
   container: "container__1689b",
   image: "image__1689b",
@@ -16,4 +16,5 @@ n.r(e.exports = {
   premiumBanner: "premiumBanner__1689b",
   premiumIcon: "premiumIcon__1689b",
   date: "date__1689b"
-})
+};
+n.r(e.exports = r)

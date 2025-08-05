@@ -1,4 +1,5 @@
-/** Chunk was on 94313 **/
+/** Chunk was on web.js **/
+"use strict";
 e.exports = {
   gameIcon: "gameIcon__5a366",
   gameMessageTooltip: "gameMessageTooltip__5a366",

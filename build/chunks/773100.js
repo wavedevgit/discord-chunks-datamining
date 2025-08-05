@@ -1,4 +1,4 @@
-/** Chunk was on 94312 **/
+/** Chunk was on 22988 **/
 e.exports = {
   page: "page_d2b0e4",
   leftColumn: "leftColumn_d2b0e4",

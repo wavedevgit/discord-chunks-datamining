@@ -1,4 +1,4 @@
-/** Chunk was on 94312 **/
+/** Chunk was on 22988 **/
 e.exports = {
   onboardingStepContainer: "onboardingStepContainer__28e57",
   leftContainer: "leftContainer__28e57",

@@ -71,10 +71,10 @@ let I = e => {
   } = (0, p.T)(t), {
     giftRecipient: S,
     giftRecipientError: A
-  } = (0, u.wD)(), N = (0, l.e7)([_.default], () => _.default.getCurrentUser()), C = (0, h.k)(T), R = i.useRef(null);
+  } = (0, u.wD)(), N = (0, l.e7)([_.default], () => _.default.getCurrentUser()), C = (0, h.k)(T), w = i.useRef(null);
   if (null == T) return null;
-  let [P] = T.items, w = () => {
-    switch (P.type) {
+  let [R] = T.items, P = () => {
+    switch (R.type) {
       case s.Z.AVATAR_DECORATION:
         return g.intl.string(g.t["7v0T9P"]);
       case s.Z.PROFILE_EFFECT:
@@ -84,7 +84,7 @@ let I = e => {
       default:
         return null
     }
-  }, D = null != S && S.id !== (null == N ? void 0 : N.id) && P.type !== s.Z.NAMEPLATE, L = () => {
+  }, D = null != S && S.id !== (null == N ? void 0 : N.id) && R.type !== s.Z.NAMEPLATE, L = () => {
     null != t && null != b && b(t)
   };
   return (0, r.jsxs)("div", {
@@ -95,13 +95,13 @@ let I = e => {
         className: E.previewTitle,
         children: g.intl.string(g.t.PpoJzs)
       }), D && (0, r.jsx)(c.yRy, {
-        targetElementRef: R,
+        targetElementRef: w,
         preload: () => (0, f.Z)(S.id, S.getAvatarURL(null, 80)),
         renderPopout: e => (0, r.jsx)(d.Z, v(y({}, e), {
           user: S,
           pendingAvatar: S.getAvatarURL(null, (0, c.pxk)(c.EFr.SIZE_80)),
-          pendingAvatarDecoration: P.type === s.Z.AVATAR_DECORATION ? P : null,
-          pendingProfileEffectId: P.type === s.Z.PROFILE_EFFECT ? P.id : null,
+          pendingAvatarDecoration: R.type === s.Z.AVATAR_DECORATION ? R : null,
+          pendingProfileEffectId: R.type === s.Z.PROFILE_EFFECT ? R.id : null,
           canUsePremiumCustomization: !0,
           disabledInputs: !0
         })),
@@ -109,7 +109,7 @@ let I = e => {
         position: "right",
         children: e => (0, r.jsx)(c.P3F, v(y({}, e), {
           className: E.previewLink,
-          innerRef: R,
+          innerRef: w,
           children: (0, r.jsx)(c.Text, {
             variant: "text-xs/medium",
             color: "text-link",
@@ -137,7 +137,7 @@ let I = e => {
           }), (0, r.jsx)(c.X6q, {
             variant: "heading-sm/medium",
             color: "header-secondary",
-            children: w()
+            children: P()
           })]
         }), (0, r.jsx)(c.Text, {
           variant: "text-md/semibold",

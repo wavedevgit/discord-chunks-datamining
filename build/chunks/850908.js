@@ -1,13 +1,14 @@
-/** Chunk was on 26179 **/
-a.d(t, {
-  Z: () => o
-});
+/** Chunk was on web.js **/
+"use strict";
 
-function o(e) {
+function r(e) {
   if (null != e.title && null != e.filename) {
     let t = e.filename.lastIndexOf("."),
-      a = t > 0 ? e.filename.substr(t) : "";
-    return e.title + a
+      n = t > 0 ? e.filename.substr(t) : "";
+    return e.title + n
   }
   return e.filename
 }
+n.d(t, {
+  Z: () => r
+})

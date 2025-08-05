@@ -1,4 +1,5 @@
-/** Chunk was on 94313 **/
+/** Chunk was on web.js **/
+"use strict";
 e.exports = {
   enabled: "enabled_f4f0eb",
   attachmentImage: "attachmentImage_f4f0eb",

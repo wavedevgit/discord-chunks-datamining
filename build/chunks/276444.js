@@ -44,7 +44,7 @@ function C(e) {
   S = null, h = !0
 }
 
-function R(e) {
+function w(e) {
   let {
     referrals_remaining: t,
     sent_user_ids: n,
@@ -55,12 +55,12 @@ function R(e) {
   T = null == r && a, h = !1, f = t, _ = new Set(n), S = r, p = i
 }
 
-function P(e) {
+function R(e) {
   let {} = e;
   T = !1, S = null, h = !1, b += 1, y = Date.now() + 1e3 * Math.pow(2, b)
 }
 
-function w(e) {
+function P(e) {
   let {
     userTrialOffer: t
   } = e;
@@ -85,21 +85,21 @@ function x(e) {
   null != t && (m.delete(t.id), g.add(t.id), E.set(t.id, t))
 }
 
-function M(e) {
+function k(e) {
   let {
     userTrialOfferId: t
   } = e;
   m.delete(t), g.add(t)
 }
 
-function k(e) {
+function j(e) {
   let {
     message: t
   } = e;
   G(t)
 }
 
-function j(e) {
+function M(e) {
   let {
     messages: t
   } = e;
@@ -123,7 +123,7 @@ function B() {
   v = !0
 }
 
-function V(e) {
+function Z(e) {
   let {
     users: t,
     nextIndex: n
@@ -134,7 +134,7 @@ function V(e) {
 function F() {
   v = !1
 }
-class Z extends(r = a.ZP.Store) {
+class V extends(r = a.ZP.Store) {
   initialize() {
     this.waitFor(s.default), this.syncWith([s.default], N)
   }
@@ -178,21 +178,21 @@ class Z extends(r = a.ZP.Store) {
     return p
   }
 }
-u(Z, "displayName", "ReferralTrialStore");
-let H = new Z(o.Z, {
+u(V, "displayName", "ReferralTrialStore");
+let H = new V(o.Z, {
   BILLING_REFERRAL_TRIAL_OFFER_UPDATE: U,
   BILLING_REFERRALS_REMAINING_FETCH_START: C,
-  BILLING_REFERRALS_REMAINING_FETCH_SUCCESS: R,
-  BILLING_REFERRALS_REMAINING_FETCH_FAIL: P,
-  BILLING_CREATE_REFERRAL_SUCCESS: w,
+  BILLING_REFERRALS_REMAINING_FETCH_SUCCESS: w,
+  BILLING_REFERRALS_REMAINING_FETCH_FAIL: R,
+  BILLING_CREATE_REFERRAL_SUCCESS: P,
   CREATE_REFERRALS_SUCCESS: D,
   BILLING_REFERRAL_RESOLVE_SUCCESS: x,
-  BILLING_REFERRAL_RESOLVE_FAIL: M,
+  BILLING_REFERRAL_RESOLVE_FAIL: k,
   REFERRALS_FETCH_ELIGIBLE_USER_START: B,
-  REFERRALS_FETCH_ELIGIBLE_USER_SUCCESS: V,
+  REFERRALS_FETCH_ELIGIBLE_USER_SUCCESS: Z,
   REFERRALS_FETCH_ELIGIBLE_USER_FAIL: F,
-  LOAD_MESSAGES_SUCCESS: j,
-  MESSAGE_CREATE: k,
-  LOAD_MESSAGES_AROUND_SUCCESS: j,
+  LOAD_MESSAGES_SUCCESS: M,
+  MESSAGE_CREATE: j,
+  LOAD_MESSAGES_AROUND_SUCCESS: M,
   LOGOUT: A
 })

@@ -1,4 +1,4 @@
-/** Chunk was on 60173 **/
+/** Chunk was on 49152 **/
 e.exports = {
   memberSinceWrapper: "memberSinceWrapper_c4eb81",
   memberSince: "memberSince_c4eb81",

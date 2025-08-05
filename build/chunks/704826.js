@@ -48,19 +48,19 @@ o("replace", function(e, t, n) {
     var p = c(i);
     p || (i = _(i));
     var m = o.global;
-    m && (P = o.unicode, o.lastIndex = 0);
+    m && (R = o.unicode, o.lastIndex = 0);
     for (var b = []; null !== (D = E(o, s)) && (I(b, D), m);) {
       ;
-      "" === _(D[0]) && (o.lastIndex = h(s, f(o.lastIndex), P))
+      "" === _(D[0]) && (o.lastIndex = h(s, f(o.lastIndex), R))
     }
-    for (var N = "", C = 0, R = 0; R < b.length; R++) {
-      for (var P, w, D = b[R], L = _(D[0]), x = y(O(d(D.index), s.length), 0), M = [], k = 1; k < D.length; k++) I(M, A(D[k]));
-      var j = D.groups;
+    for (var N = "", C = 0, w = 0; w < b.length; w++) {
+      for (var R, P, D = b[w], L = _(D[0]), x = y(O(d(D.index), s.length), 0), k = [], j = 1; j < D.length; j++) I(k, A(D[j]));
+      var M = D.groups;
       if (p) {
-        var U = v([L], M, x, s);
-        void 0 !== j && I(U, j), w = _(r(i, void 0, U))
-      } else w = g(L, s, x, M, j, i);
-      x >= C && (N += S(s, C, x) + w, C = x + L.length)
+        var U = v([L], k, x, s);
+        void 0 !== M && I(U, M), P = _(r(i, void 0, U))
+      } else P = g(L, s, x, k, M, i);
+      x >= C && (N += S(s, C, x) + P, C = x + L.length)
     }
     return N + S(s, C)
   }]

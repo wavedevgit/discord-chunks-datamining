@@ -1,16 +1,17 @@
-/** Chunk was on 99665 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
-  Z: () => u
+  Z: () => o
 });
 var r = n(442837),
-  l = n(592125),
-  i = n(944486);
+  i = n(592125),
+  a = n(944486);
 
-function u() {
-  return (0, r.e7)([i.Z, l.Z], () => {
-    let e = i.Z.getVoiceChannelId();
+function o() {
+  return (0, r.e7)([a.Z, i.Z], () => {
+    let e = a.Z.getVoiceChannelId();
     if (null != e) {
-      let t = l.Z.getChannel(e);
+      let t = i.Z.getChannel(e);
       if (null == t ? void 0 : t.isGuildStageVoice()) return t
     }
     return null

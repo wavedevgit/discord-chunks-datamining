@@ -83,7 +83,7 @@ function S(e, t) {
     return null == (t = f.Z.getGuild(null == e ? void 0 : e.guildId)) ? void 0 : t.premiumTier
   }), {
     location: C
-  } = (0, l.O)(), R = (0, a.e7)([p.Z, d.Z], () => d.Z.getChannel(p.Z.getVoiceChannelId())), P = i.useCallback((e, n, r, i) => {
+  } = (0, l.O)(), w = (0, a.e7)([p.Z, d.Z], () => d.Z.getChannel(p.Z.getVoiceChannelId())), R = i.useCallback((e, n, r, i) => {
     if (e) {
       if (null != S) {
         let e = {
@@ -108,31 +108,31 @@ function S(e, t) {
     }))
   }, [t, C, S]);
   if (null == e) return null;
-  let w = n === g.tI.PRESET_DOCUMENTS ? g.ws.FPS_30 : v,
+  let P = n === g.tI.PRESET_DOCUMENTS ? g.ws.FPS_30 : v,
     D = g.af.map(e => {
       let {
         value: t,
         label: n
-      } = e, i = (0, c.Z)(g.tI.PRESET_CUSTOM, y, t, A, N, R);
+      } = e, i = (0, c.Z)(g.tI.PRESET_CUSTOM, y, t, A, N, w);
       return (0, r.jsx)(o.k5B, {
         group: "stream-settings-fps",
         id: "stream-settings-fps-".concat(t),
         label: n,
         checked: t === v,
-        action: () => P(i, y, t, m.Qqv.RESOLUTION)
+        action: () => R(i, y, t, m.Qqv.RESOLUTION)
       }, "stream-settings-fps-".concat(t))
     }),
     L = g.km.map(e => {
       let {
         value: t,
         label: n
-      } = e, i = (0, c.Z)(g.tI.PRESET_CUSTOM, t, w, A, N, R);
+      } = e, i = (0, c.Z)(g.tI.PRESET_CUSTOM, t, P, A, N, w);
       return (0, r.jsx)(o.k5B, {
         group: "stream-settings-resolution",
         id: "stream-settings-resolution-".concat(t),
         label: n,
         checked: t === y,
-        action: () => P(i, t, w, m.Qqv.RESOLUTION)
+        action: () => R(i, t, P, m.Qqv.RESOLUTION)
       }, "stream-settings-resolution-".concat(t))
     });
   return (0, r.jsxs)(r.Fragment, {

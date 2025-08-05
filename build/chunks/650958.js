@@ -90,9 +90,9 @@ function g(e) {
   } = m(t), [I, T] = i.useState(f), S = v(n[n.length - 1]), [A, N] = (0, l.L)(t, {
     location: S
   }), C = I ? A.concat(N) : A, {
-    id: R,
-    name: P
-  } = (0, l.p)(t), w = null != p ? p : R, D = C.map(e => {
+    id: w,
+    name: R
+  } = (0, l.p)(t), P = null != p ? p : w, D = C.map(e => {
     let {
       id: i,
       disabled: o,
@@ -103,7 +103,7 @@ function g(e) {
       group: "".concat(t, "-devices"),
       disabled: o,
       label: s,
-      checked: i === w,
+      checked: i === P,
       action: () => {
         var e;
         (null == (e = null == u ? void 0 : u(i)) || e) && y(i, {
@@ -128,7 +128,7 @@ function g(e) {
   return o ? (0, r.jsxs)(a.sNh, h(_({
     id: "".concat(t, "-devices"),
     label: O(),
-    subtext: P
+    subtext: R
   }, E), {
     children: [D, x && L]
   })) : (0, r.jsxs)(a.kSQ, h(_({

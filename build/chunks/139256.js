@@ -1,229 +1,243 @@
-/** Chunk was on 94313 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
-  $e: () => w,
-  $w: () => M,
-  Og: () => U,
-  ZY: () => k,
-  sc: () => D,
-  zs: () => F
+  $e: () => j,
+  $w: () => Z,
+  Og: () => V,
+  ZY: () => F,
+  sc: () => G,
+  zs: () => H
 }), n(314940), n(953529);
 var r = n(255367),
   i = n(73800),
-  l = n(120356),
-  a = n.n(l),
-  o = n(278074),
-  s = n(481060),
+  a = n(120356),
+  o = n.n(a),
+  s = n(278074),
+  l = n(481060),
   c = n(596454),
   u = n(44315),
   d = n(377171),
-  p = n(124347),
-  m = n(695346),
-  f = n(186523),
-  g = n(553826),
-  _ = n(506071),
-  h = n(203143),
-  b = n(79390),
-  E = n(839963),
-  C = n(294608),
-  v = n(65145),
-  O = n(981631),
-  x = n(388032),
-  y = n(56228);
+  f = n(124347),
+  _ = n(695346),
+  p = n(186523),
+  h = n(553826),
+  m = n(506071),
+  g = n(203143),
+  E = n(79390),
+  b = n(839963),
+  y = n(294608),
+  O = n(65145),
+  v = n(981631),
+  I = n(388032),
+  T = n(56228);
 
-function I(e) {
+function S(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: !0,
+    configurable: !0,
+    writable: !0
+  }) : e[t] = n, e
+}
+
+function A(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      var r;
-      r = n[t], t in e ? Object.defineProperty(e, t, {
-        value: r,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
-      }) : e[t] = r
+      S(e, t, n[t])
     })
   }
   return e
 }
 
-function j(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-    var n = Object.keys(e);
-    if (Object.getOwnPropertySymbols) {
-      var r = Object.getOwnPropertySymbols(e);
-      n.push.apply(n, r)
-    }
-    return n
-  })(Object(t)).forEach(function(n) {
+function N(e, t) {
+  var n = Object.keys(e);
+  if (Object.getOwnPropertySymbols) {
+    var r = Object.getOwnPropertySymbols(e);
+    t && (r = r.filter(function(t) {
+      return Object.getOwnPropertyDescriptor(e, t).enumerable
+    })), n.push.apply(n, r)
+  }
+  return n
+}
+
+function C(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : N(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function S(e) {
+function w(e, t) {
+  if (null == e) return {};
+  var n, r, i = R(e, t);
+  if (Object.getOwnPropertySymbols) {
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+  }
+  return i
+}
+
+function R(e, t) {
+  if (null == e) return {};
+  var n, r, i = {},
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+  return i
+}
+
+function P(e) {
   let {
     className: t,
     children: n
   } = e;
   return (0, r.jsx)("ul", {
-    "aria-label": x.intl.string(x.t.sJpqBQ),
+    "aria-label": I.intl.string(I.t.sJpqBQ),
     className: t,
     children: n
   })
 }
 
-function T(e) {
+function D(e) {
   let {
     className: t,
     children: n
   } = e;
   return (0, r.jsx)("div", {
-    "aria-label": x.intl.string(x.t.sJpqBQ),
+    "aria-label": I.intl.string(I.t.sJpqBQ),
     role: "group",
     className: t,
     children: n
   })
 }
 
-function N(e) {
+function L(e) {
   let {
     className: t,
     children: n
-  } = e, i = (0, s.arW)({
+  } = e, i = (0, l.arW)({
     orientation: "vertical"
   }), {
-    ref: l
-  } = i, a = function(e, t) {
-    if (null == e) return {};
-    var n, r, i = function(e, t) {
-      if (null == e) return {};
-      var n, r, i = {},
-        l = Object.keys(e);
-      for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
-      return i
-    }(e, t);
-    if (Object.getOwnPropertySymbols) {
-      var l = Object.getOwnPropertySymbols(e);
-      for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
-    }
-    return i
-  }(i, ["ref"]);
-  return (0, r.jsx)("div", j(I({
-    "aria-label": x.intl.string(x.t.sJpqBQ),
-    ref: l
-  }, a), {
+    ref: a
+  } = i, o = w(i, ["ref"]);
+  return (0, r.jsx)("div", C(A({
+    "aria-label": I.intl.string(I.t.sJpqBQ),
+    ref: a
+  }, o), {
     className: t,
     children: n
   }))
 }
 
-function P(e) {
+function x(e) {
   let {
     className: t,
     onClick: n,
     isSelected: i,
-    isFirstAnswer: l,
-    children: o
+    isFirstAnswer: a,
+    children: s
   } = e, {
     pollAnswerRef: c
-  } = (0, v.dv)();
-  return (0, r.jsx)(s.P3F, {
+  } = (0, O.dv)();
+  return (0, r.jsx)(l.P3F, {
     role: "checkbox",
-    className: a()(t, y.enabled),
+    className: o()(t, T.enabled),
     onClick: n,
     "aria-checked": i,
-    ref: l ? c : void 0,
-    children: o
+    ref: a ? c : void 0,
+    children: s
   })
 }
 
-function A(e) {
+function k(e) {
+  let t, {
+    className: n,
+    children: i,
+    onClick: a,
+    isSelected: s,
+    hasSelectedAnyAnswer: c,
+    isFirstAnswer: u
+  } = e;
+  t = c ? s ? 0 : -1 : u ? 0 : -1;
   let {
-    className: t,
-    children: n,
-    onClick: i,
-    isSelected: l,
-    hasSelectedAnyAnswer: o,
-    isFirstAnswer: c
-  } = e, {
-    pollAnswerRef: u
-  } = (0, v.dv)();
-  return (0, r.jsx)(s.P3F, {
+    pollAnswerRef: d
+  } = (0, O.dv)();
+  return (0, r.jsx)(l.P3F, {
     role: "radio",
-    className: a()(t, y.enabled),
-    onClick: i,
-    "aria-checked": l,
-    tabIndex: o ? l ? 0 : -1 : c ? 0 : -1,
-    ref: c ? u : void 0,
-    children: n
+    className: o()(n, T.enabled),
+    onClick: a,
+    "aria-checked": s,
+    tabIndex: t,
+    ref: u ? d : void 0,
+    children: i
   })
 }
 
-function w(e) {
+function j(e) {
   let {
     answers: t,
     answersInteraction: n,
     answerTapAccessibilityLabel: i,
-    canTapAnswers: l,
-    hasSelectedAnyAnswer: a,
-    className: s,
+    canTapAnswers: a,
+    hasSelectedAnyAnswer: o,
+    className: l,
     answerClassName: c,
     renderAnswerContent: u
   } = e, {
     ContainerComponent: d,
-    answerElementType: p
-  } = (0, o.EQ)({
-    canTapAnswers: l,
+    answerElementType: f
+  } = (0, s.EQ)({
+    canTapAnswers: a,
     answersInteraction: n
   }).with({
-    answersInteraction: E.Y7.RADIO_BUTTONS
+    answersInteraction: b.Y7.RADIO_BUTTONS
   }, () => ({
-    ContainerComponent: N,
+    ContainerComponent: L,
     answerElementType: 1
   })).with({
-    answersInteraction: E.Y7.CHECKBOXES
+    answersInteraction: b.Y7.CHECKBOXES
   }, () => ({
-    ContainerComponent: T,
+    ContainerComponent: D,
     answerElementType: 2
   })).with({
     canTapAnswers: !0,
-    answersInteraction: E.Y7.LIST
+    answersInteraction: b.Y7.LIST
   }, () => ({
-    ContainerComponent: S,
+    ContainerComponent: P,
     answerElementType: 3
   })).otherwise(() => ({
-    ContainerComponent: S,
+    ContainerComponent: P,
     answerElementType: 0
   }));
   return (0, r.jsx)(d, {
-    className: s,
-    children: t.map((e, t) => (0, r.jsx)(Z, {
+    className: l,
+    children: t.map((e, t) => (0, r.jsx)(M, {
       className: c,
       answer: e,
       isFirstAnswer: 0 === t,
-      elementType: p,
+      elementType: f,
       answerTapAccessibilityLabel: i,
-      hasSelectedAnyAnswer: a,
+      hasSelectedAnyAnswer: o,
       children: u(e)
     }, e.answerId))
   })
 }
 
-function Z(e) {
+function M(e) {
   let {
     className: t,
     answer: n,
-    children: l,
-    hasSelectedAnyAnswer: o,
-    isFirstAnswer: s,
+    children: a,
+    hasSelectedAnyAnswer: s,
+    isFirstAnswer: l,
     elementType: c
   } = e, {
     channelId: u,
     messageId: d
-  } = (0, C.pE)(), p = (0, C.$B)(n.style), m = !0 === n.isSelected, f = i.useCallback(() => {
-    h.Z.handlePollAnswerTapped({
+  } = (0, y.pE)(), f = (0, y.$B)(n.style), _ = !0 === n.isSelected, p = i.useCallback(() => {
+    g.Z.handlePollAnswerTapped({
       channelId: u,
       messageId: d,
       answerId: n.answerId
@@ -233,50 +247,50 @@ function Z(e) {
     case 0:
     case 3:
       return (0, r.jsx)("li", {
-        className: a()(t, p),
-        children: l
+        className: o()(t, f),
+        children: a
       });
     case 1:
-      return (0, r.jsx)(A, {
-        className: a()(t, p),
-        onClick: f,
-        isSelected: m,
-        hasSelectedAnyAnswer: o,
-        isFirstAnswer: s,
-        children: l
+      return (0, r.jsx)(k, {
+        className: o()(t, f),
+        onClick: p,
+        isSelected: _,
+        hasSelectedAnyAnswer: s,
+        isFirstAnswer: l,
+        children: a
       });
     case 2:
-      return (0, r.jsx)(P, {
-        className: a()(t, p),
-        onClick: f,
-        isSelected: m,
-        isFirstAnswer: s,
-        children: l
+      return (0, r.jsx)(x, {
+        className: o()(t, f),
+        onClick: p,
+        isSelected: _,
+        isFirstAnswer: l,
+        children: a
       })
   }
 }
 
-function R(e) {
+function U(e) {
   var t;
   let {
     attachment: n,
     className: i
-  } = e, l = (0, _.n)(), a = m.QK.useSetting();
-  return (0, r.jsx)(p.ZP, {
+  } = e, a = (0, m.n)(), o = _.QK.useSetting(), s = 212;
+  return (0, r.jsx)(f.ZP, {
     className: i,
-    imageClassName: y.attachmentImage,
+    imageClassName: T.attachmentImage,
     src: null != n.proxy_url && "" !== n.proxy_url ? n.proxy_url : n.url,
-    alt: null != (t = n.description) ? t : (0, b.fw)(n.filename),
+    alt: null != (t = n.description) ? t : (0, E.fw)(n.filename),
     responsive: !0,
-    width: 212,
-    height: 212,
-    autoPlay: a,
-    shouldAnimate: l,
+    width: s,
+    height: s,
+    autoPlay: o,
+    shouldAnimate: a,
     shouldRenderAccessory: !1
   })
 }
 
-function D(e) {
+function G(e) {
   let {
     className: t,
     emoji: n
@@ -289,49 +303,49 @@ function D(e) {
   })
 }
 
-function L(e, t) {
+function B(e, t) {
   return null != e ? (0, r.jsx)("div", {
     className: e,
     children: t
   }) : t
 }
 
-function M(e) {
+function Z(e) {
   let {
     media: t,
     containerClassName: n,
     attachmentClassName: i,
-    emojiClassName: l,
-    fallback: a
+    emojiClassName: a,
+    fallback: o
   } = e, {
-    message: o
-  } = (0, C.GF)();
+    message: s
+  } = (0, y.GF)();
   if (null != t.attachmentIds && t.attachmentIds.length > 0) {
-    let e = o.attachments.find(e => {
+    let e = s.attachments.find(e => {
       var n;
       return e.id === (null == (n = t.attachmentIds) ? void 0 : n[0])
     });
-    if (null != e) return L(n, (0, r.jsx)(R, {
+    if (null != e) return B(n, (0, r.jsx)(U, {
       className: i,
       attachment: e
     }))
   }
-  return null != t.emoji ? L(n, (0, r.jsx)(D, {
-    className: l,
+  return null != t.emoji ? B(n, (0, r.jsx)(G, {
+    className: a,
     emoji: t.emoji
-  })) : void 0 !== a ? a : null
+  })) : void 0 !== o ? o : null
 }
 
-function k(e) {
+function F(e) {
   let {
     isVictor: t,
     isExpired: n,
     size: i,
-    className: l
+    className: a
   } = e, {
-    color: a,
+    color: o,
     backgroundColor: c
-  } = (0, o.EQ)({
+  } = (0, s.EQ)({
     isVictor: t,
     isExpired: n
   }).with({
@@ -339,7 +353,7 @@ function k(e) {
     isVictor: !0
   }, () => ({
     color: d.Z.BUTTON_POSITIVE_BACKGROUND,
-    backgroundColor: (0, u.Lq)(O.Ilk.WHITE_500)
+    backgroundColor: (0, u.Lq)(v.Ilk.WHITE_500)
   })).with({
     isExpired: !0,
     isVictor: !1
@@ -347,59 +361,59 @@ function k(e) {
     color: d.Z.ICON_PRIMARY,
     backgroundColor: d.Z.BACKGROUND_MOD_FAINT
   })).otherwise(() => ({
-    color: (0, u.Lq)(O.Ilk.BRAND_500),
-    backgroundColor: (0, u.Lq)(O.Ilk.WHITE_500)
+    color: (0, u.Lq)(v.Ilk.BRAND_500),
+    backgroundColor: (0, u.Lq)(v.Ilk.WHITE_500)
   }));
-  return (0, r.jsx)(s.owK, {
+  return (0, r.jsx)(l.owK, {
     size: "custom",
     width: i,
     height: i,
-    className: l,
-    color: a,
+    className: a,
+    color: o,
     secondaryColor: c,
     "aria-hidden": !0
   })
 }
 
-function U(e) {
+function V(e) {
   let {
     isSelected: t,
     size: n,
     className: i
-  } = e, l = {
+  } = e, a = {
     width: n,
     height: n,
-    background: y.radioBackground,
+    background: T.radioBackground,
     "aria-hidden": !0
   };
-  return t ? (0, r.jsx)(g.Z, j(I({}, l), {
-    foreground: y.radioForeground,
+  return t ? (0, r.jsx)(h.Z, C(A({}, a), {
+    foreground: T.radioForeground,
     className: i
-  })) : (0, r.jsx)(f.Z, j(I({}, l), {
+  })) : (0, r.jsx)(p.Z, C(A({}, a), {
     className: i
   }))
 }
 
-function F(e) {
+function H(e) {
   let {
     isSelected: t,
     size: n,
     className: i
-  } = e, l = .85 * n;
+  } = e, a = .85 * n;
   return (0, r.jsx)("div", {
-    className: a()(y.checkbox, {
-      [y.checkboxSelected]: t
+    className: o()(T.checkbox, {
+      [T.checkboxSelected]: t
     }, i),
     style: {
       width: n,
       height: n
     },
     "aria-hidden": !0,
-    children: t && (0, r.jsx)(s.dz2, {
+    children: t && (0, r.jsx)(l.dz2, {
       size: "custom",
-      width: l,
-      height: l,
-      color: (0, u.Lq)(O.Ilk.WHITE_500)
+      width: a,
+      height: a,
+      color: (0, u.Lq)(v.Ilk.WHITE_500)
     })
   })
 }

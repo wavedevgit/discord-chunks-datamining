@@ -10,7 +10,7 @@ n.d(t, {
   IN: () => b,
   If: () => y,
   KW: () => v,
-  NL: () => R,
+  NL: () => w,
   NO: () => u,
   Q1: () => E,
   Rx: () => A,
@@ -19,7 +19,7 @@ n.d(t, {
   XW: () => _,
   ad: () => p,
   d5: () => T,
-  os: () => P,
+  os: () => R,
   uc: () => I
 }), n(388685);
 var r = n(494497),
@@ -150,8 +150,8 @@ var N = function(e) {
   C = function(e) {
     return e[e.VANITY_URL = 1] = "VANITY_URL", e[e.GUILD_TAG_BADGE_PACKS_WAVE_ONE = 2] = "GUILD_TAG_BADGE_PACKS_WAVE_ONE", e
   }({});
-let R = new Set([r.MB, r.Vk]),
-  P = {
+let w = new Set([r.MB, r.Vk]),
+  R = {
     1: new Set([r.A$]),
-    2: R
+    2: w
   }

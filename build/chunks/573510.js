@@ -1,4 +1,5 @@
-/** Chunk was on 94313 **/
+/** Chunk was on web.js **/
+"use strict";
 e.exports = {
   iconWrapper: "iconWrapper__9f20a",
   icon: "icon__9f20a",

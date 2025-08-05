@@ -1,4 +1,5 @@
-/** Chunk was on 38636 **/
+/** Chunk was on web.js **/
+"use strict";
 e.exports = {
   wrapper: "wrapper_e9b191",
   wrapperAccepted: "wrapperAccepted_e9b191",

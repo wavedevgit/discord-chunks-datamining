@@ -6,7 +6,7 @@ n.d(t, {
   Sk: () => u.Skl,
   W5: () => C,
   lm: () => y,
-  qb: () => R,
+  qb: () => w,
   rs: () => N,
   vP: () => A,
   vj: () => b
@@ -263,7 +263,7 @@ function C(e, t, n) {
   }
 }
 
-function R(e) {
+function w(e) {
   let {
     status: t,
     isMobile: n = !1,

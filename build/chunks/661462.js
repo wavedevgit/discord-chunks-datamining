@@ -1,4 +1,4 @@
-/** Chunk was on 43473 **/
+/** Chunk was on 11302 **/
 n.d(t, {
   Z: () => m
 }), n(388685);
@@ -58,13 +58,13 @@ function m(e) {
     items: b,
     initialSection: g,
     initialSubsection: y,
-    onClose: _
+    onClose: O
   } = e, {
-    trackUserProfileAction: O
+    trackUserProfileAction: j
   } = (0, i.KZ)(), [{
-    section: h,
-    subsection: j,
-    text: x
+    section: _,
+    subsection: x,
+    text: h
   }, v] = o.useState((n = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
@@ -109,9 +109,9 @@ function m(e) {
       children: (0, r.jsx)(l.njP, {
         type: "top",
         look: "custom",
-        selectedItem: h,
+        selectedItem: _,
         onItemSelect: e => {
-          O({
+          j({
             action: "PRESS_SECTION",
             section: e
           }), v(t => {
@@ -127,8 +127,8 @@ function m(e) {
         }, e.section))
       })
     }), (0, r.jsx)(l.njP.Panel, {
-      id: h,
-      "aria-label": x,
+      id: _,
+      "aria-label": h,
       className: f.tabBarPanel,
       children: (0, r.jsx)(p, {
         user: c,
@@ -136,9 +136,9 @@ function m(e) {
         displayProfile: d,
         guildId: u,
         channelId: m,
-        section: h,
-        subsection: j,
-        onClose: _
+        section: _,
+        subsection: x,
+        onClose: O
       })
     })]
   })

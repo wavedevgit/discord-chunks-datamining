@@ -2,9 +2,9 @@
 "use strict";
 n.d(t, {
   AG: () => D,
-  Z$: () => M,
+  Z$: () => k,
   jH: () => L,
-  zH: () => k
+  zH: () => j
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -83,13 +83,13 @@ function A(e, t) {
 }
 let N = i.lazy(() => Promise.all([n.e("21153"), n.e("28102")]).then(n.bind(n, 534828))),
   C = 7,
-  R = () => Promise.resolve();
+  w = () => Promise.resolve();
 
-function P(e) {
+function R(e) {
   return null == e ? null : "string" == typeof e ? (0, c.FX)(e) ? (0, c._i)(e) : null : e
 }
 
-function w(e) {
+function P(e) {
   let {
     color: t,
     isDefault: n = !1,
@@ -163,7 +163,7 @@ class D extends i.PureComponent {
       value: n,
       disabled: i
     } = this.props;
-    return (0, r.jsx)(w, {
+    return (0, r.jsx)(P, {
       isDefault: !0,
       color: e,
       isSelected: e === n || 0 === n,
@@ -180,7 +180,7 @@ class L extends i.PureComponent {
       disabled: n,
       "aria-label": i
     } = this.props;
-    return (0, r.jsx)(w, {
+    return (0, r.jsx)(P, {
       isCustom: !0,
       color: e,
       isSelected: t === e,
@@ -202,13 +202,13 @@ function x(e) {
     showEyeDropper: E,
     wrapperComponentType: O,
     className: I
-  } = e, S = (0, h.Z)(), A = P(t), R = null != A ? A : 0, w = (0, c.Rf)(R), D = (0, c.O)(R), [L, x] = i.useState({
-    current: R,
+  } = e, S = (0, h.Z)(), A = R(t), w = null != A ? A : 0, P = (0, c.Rf)(w), D = (0, c.O)(w), [L, x] = i.useState({
+    current: w,
     pending: {
-      hex: w,
+      hex: P,
       hsl: D
     },
-    input: w
+    input: P
   });
   i.useEffect(() => {
     if (null == A || A === L.current) return;
@@ -223,7 +223,7 @@ function x(e) {
       input: e
     })
   }, [A, L]), i.useEffect(() => s, [s]);
-  let M = e => {
+  let k = e => {
       let t = "#" === e[0] ? e : "#".concat(e);
       if (!(0, c.FX)(t)) return void x(e => T(v({}, e), {
         input: t
@@ -239,14 +239,14 @@ function x(e) {
         input: t
       }), a(n)
     },
-    k = async () => {
+    j = async () => {
       if (null != S) try {
         let {
           sRGBHex: e
         } = await S.open();
-        M(e)
+        k(e)
       } catch (e) {}
-    }, j = i.useCallback(e => {
+    }, M = i.useCallback(e => {
       x(t => T(v({}, t), {
         pending: e,
         input: e.hex
@@ -257,7 +257,7 @@ function x(e) {
       children: [(0, r.jsx)(i.Suspense, {
         fallback: null,
         children: (0, r.jsx)(N, {
-          onChange: j,
+          onChange: M,
           onChangeComplete: e => {
             let {
               hex: t
@@ -269,7 +269,7 @@ function x(e) {
       }), f, (0, r.jsxs)("div", {
         className: y.customColorPickerInputContainer,
         children: [E && null != S && (0, r.jsx)(g.JO, {
-          onClick: k,
+          onClick: j,
           tooltip: b.intl.string(b.t["0dU9Nz"]),
           tooltipPosition: "top",
           className: y.customColorPickerEyeDropper,
@@ -277,7 +277,7 @@ function x(e) {
         }), (0, r.jsx)(_.Is, {
           className: y.customColorPickerInput,
           value: L.input,
-          onChange: M,
+          onChange: k,
           maxLength: C
         })]
       }), null != l && l.length > 0 && (0, r.jsx)("div", {
@@ -288,7 +288,7 @@ function x(e) {
             backgroundColor: e
           },
           className: y.suggestedColor,
-          onClick: () => M(e)
+          onClick: () => k(e)
         }, "".concat(e, "-").concat(t)))
       }), m]
     }), B = null != O ? O : d.V;
@@ -298,9 +298,9 @@ function x(e) {
     children: G
   })
 }
-let M = i.memo(x);
+let k = i.memo(x);
 
-function k(e) {
+function j(e) {
   let {
     className: t,
     defaultColor: n,
@@ -317,7 +317,7 @@ function k(e) {
     renderGradientCustomButton: g
   } = e, E = e => (0, r.jsx)("div", {
     className: y.colorPickerRow,
-    children: m ? e.map(e => (0, r.jsx)(w, {
+    children: m ? e.map(e => (0, r.jsx)(P, {
       gradientStart: e.start,
       gradientEnd: e.end,
       color: 0,
@@ -326,7 +326,7 @@ function k(e) {
       disabled: d,
       isGradient: !0,
       "aria-label": e.name
-    }, "".concat(e.start, "-").concat(e.end))) : e.map(e => (0, r.jsx)(w, {
+    }, "".concat(e.start, "-").concat(e.end))) : e.map(e => (0, r.jsx)(P, {
       color: e,
       isSelected: e === c,
       onClick: f,
@@ -336,8 +336,8 @@ function k(e) {
   }), b = a.slice(0, a.length / 2), O = a.slice(a.length / 2, a.length), I = (0, l.ZP)({
     id: "color-picker",
     isEnabled: !0,
-    scrollToStart: R,
-    scrollToEnd: R
+    scrollToStart: w,
+    scrollToEnd: w
   });
   return (0, r.jsx)(s.bG, {
     navigator: I,

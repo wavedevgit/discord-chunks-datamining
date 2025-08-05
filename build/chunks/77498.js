@@ -82,11 +82,11 @@ function C() {
   r = !0
 }
 
-function R() {
+function w() {
   r = !1
 }
 
-function P(e) {
+function R(e) {
   let {
     games: t,
     etag: n
@@ -94,7 +94,7 @@ function P(e) {
   for (let e of (null != n && v !== n && (v = n), t)) A(T(e));
   r = void 0, I = Date.now()
 }
-class w extends(a = o.ZP.PersistedStore) {
+class P extends(a = o.ZP.PersistedStore) {
   initialize(e) {
     var t;
     null != e && (null != e.detectableGamesEtag && (v = e.detectableGamesEtag), null == (t = e.detectableGames) || t.forEach(e => A(e)))
@@ -163,7 +163,7 @@ class w extends(a = o.ZP.PersistedStore) {
     O[e] = !0, s.K.set(h, O)
   }
 }
-p(w, "displayName", "GameStore"), p(w, "persistKey", "GameStore"), p(w, "migrations", [e => {
+p(P, "displayName", "GameStore"), p(P, "persistKey", "GameStore"), p(P, "migrations", [e => {
   var t, n;
   return null == e ? {
     detectableGamesEtag: "",
@@ -176,9 +176,9 @@ p(w, "displayName", "GameStore"), p(w, "persistKey", "GameStore"), p(w, "migrati
   detectableGamesEtag: "",
   detectableGames: []
 }]);
-let D = new w(l.Z, {
+let D = new P(l.Z, {
   OVERLAY_INITIALIZE: N,
   GAMES_DATABASE_FETCH: C,
-  GAMES_DATABASE_FETCH_FAIL: R,
-  GAMES_DATABASE_UPDATE: P
+  GAMES_DATABASE_FETCH_FAIL: w,
+  GAMES_DATABASE_UPDATE: R
 })

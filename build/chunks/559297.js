@@ -1,5 +1,6 @@
-/** Chunk was on 13653 **/
-n.r(e.exports = {
+/** Chunk was on web.js **/
+"use strict";
+var r = {
   pill: "pill_a2c9e8",
   clickable: "clickable_a2c9e8",
   disabled: "disabled_a2c9e8",
@@ -12,4 +13,5 @@ n.r(e.exports = {
   closeCircle: "closeCircle_a2c9e8 emoji_a2c9e8",
   close: "close_a2c9e8",
   tooltipPill: "tooltipPill_a2c9e8"
-})
+};
+n.r(e.exports = r)

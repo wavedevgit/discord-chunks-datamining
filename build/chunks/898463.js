@@ -66,7 +66,7 @@ function N(e, t) {
 }
 let C = ["image/jpeg", "image/png", "image/webp", "image/gif", "image/avif", "video/quicktime", "video/mp4"];
 
-function R(e) {
+function w(e) {
   let {
     alt: t,
     spoiler: n,
@@ -101,7 +101,7 @@ function R(e) {
   })
 }
 
-function P(e) {
+function R(e) {
   let {
     file: t,
     alt: n,
@@ -164,7 +164,7 @@ function P(e) {
     children: (0, r.jsx)(l.P3F, {
       onClick: g,
       className: I.clickableMedia,
-      children: (0, r.jsx)(R, {
+      children: (0, r.jsx)(w, {
         size: s,
         alt: n,
         spoiler: a,
@@ -174,7 +174,7 @@ function P(e) {
   })
 }
 
-function w(e) {
+function P(e) {
   let {
     file: t,
     alt: n,
@@ -192,7 +192,7 @@ function w(e) {
   }, [t]), (0, r.jsx)("div", {
     onMouseEnter: l,
     className: I.mediaContainer,
-    children: (0, r.jsx)(R, {
+    children: (0, r.jsx)(w, {
       size: s,
       alt: n,
       spoiler: a,
@@ -218,13 +218,13 @@ function D(e) {
     size: a = O.q.MEDIUM,
     onMouseEnter: s
   } = e, [l, c] = i.useState(!1), u = a === O.q.SMALL;
-  return n.isImage && n.item.platform === d.ow.WEB ? (0, r.jsx)(P, {
+  return n.isImage && n.item.platform === d.ow.WEB ? (0, r.jsx)(R, {
     file: n.item.file,
     alt: n.description,
     spoiler: n.spoiler,
     size: a,
     onMouseEnter: s
-  }) : !l && n.isVideo && n.item.platform === d.ow.WEB ? (0, r.jsx)(w, {
+  }) : !l && n.isVideo && n.item.platform === d.ow.WEB ? (0, r.jsx)(P, {
     file: n.item.file,
     size: a,
     alt: n.description,
@@ -258,10 +258,10 @@ function L(e) {
     canEdit: m = !0,
     hideFileName: E = !1,
     clip: T
-  } = e, A = null != T, C = (h = A ? O.q.CLIP : h) === O.q.SMALL, R = (0, s.e7)([g.Z], () => {
+  } = e, A = null != T, C = (h = A ? O.q.CLIP : h) === O.q.SMALL, w = (0, s.e7)([g.Z], () => {
     var e;
     return null == (e = g.Z.getChannel(t)) ? void 0 : e.guild_id
-  }), P = e => {
+  }), R = e => {
     e.stopPropagation(), (0, l.h7j)(e => (0, r.jsx)(u.default, N(S({}, e), {
       draftType: n,
       upload: a,
@@ -308,7 +308,7 @@ function L(e) {
           [I.action]: C
         }),
         tooltip: v.intl.string(v.t.Y8ujqq),
-        onClick: P,
+        onClick: R,
         children: (0, r.jsx)(l.vdY, {
           size: "xs",
           color: "currentColor",
@@ -335,7 +335,7 @@ function L(e) {
     draftType: n,
     id: a.id,
     channelId: t,
-    handleEditModal: P,
+    handleEditModal: R,
     keyboardModeEnabled: d,
     size: h,
     className: o()({
@@ -358,7 +358,7 @@ function L(e) {
         participantIds: T.users,
         applicationId: T.applicationId,
         title: T.name,
-        guildId: R
+        guildId: w
       }), (0, r.jsx)(l.IGR, {
         color: _.Z.BG_BRAND,
         className: I.clipsBadge,

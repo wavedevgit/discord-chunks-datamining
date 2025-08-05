@@ -1,4 +1,4 @@
-/** Chunk was on 94312 **/
+/** Chunk was on 22988 **/
 e.exports = {
   metricsContainer: "metricsContainer_cd734c",
   totalMembersIcon: "totalMembersIcon_cd734c",

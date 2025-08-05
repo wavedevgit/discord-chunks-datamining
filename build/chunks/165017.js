@@ -1,38 +1,41 @@
-/** Chunk was on 93239 **/
-r.d(t, {
-  H: () => d
-}), r(415506);
-var n = r(442837),
-  i = r(592125),
-  s = r(430824),
-  a = r(914010),
-  c = r(251625),
-  l = r(945577),
-  o = r(981631);
-let u = (0, c.oH)(function(e, t, r, n, i, s) {
+/** Chunk was on web.js **/
+"use strict";
+n.d(t, {
+  H: () => f
+}), n(415506);
+var r = n(442837),
+  i = n(592125),
+  a = n(430824),
+  o = n(914010),
+  s = n(251625),
+  l = n(945577),
+  c = n(981631);
+
+function u(e, t, n, r, i, a) {
   return i ? {
-    type: o.aib.FAVORITES
-  } : null != e && null != r ? {
-    type: o.aib.GUILD,
+    type: c.aib.FAVORITES
+  } : null != e && null != n ? {
+    type: c.aib.GUILD,
     guildId: e
-  } : null == t || null == n ? null : n.isPrivate() && s ? {
-    type: o.aib.DMS
+  } : null == t || null == r ? null : r.isPrivate() && a ? {
+    type: c.aib.DMS
   } : {
-    type: o.aib.CHANNEL,
+    type: c.aib.CHANNEL,
     channelId: t
   }
-});
+}
+let d = (0, s.oH)(u);
 
-function d(e) {
+function f(e) {
   let {
     guildId: t,
-    channelId: r
-  } = e, c = (0, l.U)({
+    channelId: n
+  } = e, s = (0, l.U)({
     location: "useDesktopSearchContext"
   });
-  return (0, n.e7)([s.Z, i.Z, a.Z], () => {
-    let e = s.Z.getGuild(t),
-      n = i.Z.getChannel(r);
-    return u(t, r, e, n, a.Z.getGuildId() === o.I_8, c)
+  return (0, r.e7)([a.Z, i.Z, o.Z], () => {
+    let e = a.Z.getGuild(t),
+      r = i.Z.getChannel(n);
+    return d(t, n, e, r, o.Z.getGuildId() === c.I_8, s)
   })
 }

@@ -1,4 +1,5 @@
-/** Chunk was on 60173 **/
+/** Chunk was on web.js **/
+"use strict";
 e.exports = {
   expanded: "expanded__7a70a",
   blockedSystemMessage: "blockedSystemMessage__7a70a",

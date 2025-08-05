@@ -1,4 +1,5 @@
-/** Chunk was on 60173 **/
+/** Chunk was on web.js **/
+"use strict";
 e.exports = {
   eventPromptsContainer: "eventPromptsContainer__1405b",
   controlButton: "controlButton__1405b",

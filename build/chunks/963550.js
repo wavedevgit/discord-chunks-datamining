@@ -1,19 +1,20 @@
-/** Chunk was on 94313 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
-  Z: () => l
+  Z: () => a
 });
 var r = n(255367);
 n(73800);
 var i = n(930282);
 
-function l(e, t) {
+function a(e, t) {
   let {
     message: n,
-    compact: l
+    compact: a
   } = e;
   return (0, r.jsx)(i.ZP, {
     message: n,
     content: t,
-    compact: null != l && l
+    compact: null != a && a
   })
 }

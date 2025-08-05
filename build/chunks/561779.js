@@ -151,35 +151,35 @@ class T extends(r = a.PureComponent) {
       mini: A,
       hideBubble: N,
       defaultValue: C,
-      orientation: R,
-      onValueRender: P,
-      renderMarker: w,
+      orientation: w,
+      onValueRender: R,
+      renderMarker: P,
       getAriaValueText: D,
       barClassName: L,
       grabberClassName: x,
-      grabberStyles: M = {},
-      markerPosition: k = 0,
-      "aria-hidden": j,
+      grabberStyles: k = {},
+      markerPosition: j = 0,
+      "aria-hidden": M,
       "aria-label": U,
       "aria-labelledby": G,
       "aria-describedby": B
-    } = this.props, V = 0;
-    b ? null != o && (null != c ? V = o[c] : null != l && (V = o[l])) : V = this.scaleValue(t);
-    let F = "".concat(V, "%"),
-      Z = null != o && null != a ? o.map((e, t) => {
+    } = this.props, Z = 0;
+    b ? null != o && (null != c ? Z = o[c] : null != l && (Z = o[l])) : Z = this.scaleValue(t);
+    let F = "".concat(Z, "%"),
+      V = null != o && null != a ? o.map((e, t) => {
         let n = a[t],
           r = null != C && C === n,
           o = this.renderMark(n);
         return (0, i.jsx)("div", {
           className: s()(m.mark, {
             [m.defaultValue]: r,
-            [m.markAbove]: 0 === k,
-            [m.markBelow]: 1 === k
+            [m.markAbove]: 0 === j,
+            [m.markBelow]: 1 === j
           }),
           style: {
             left: "".concat(e, "%")
           },
-          children: null != w ? w(n) : (0, i.jsxs)(i.Fragment, {
+          children: null != P ? P(n) : (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)("div", {
               className: m.markValue,
               children: o
@@ -189,7 +189,7 @@ class T extends(r = a.PureComponent) {
           })
         }, t)
       }) : null,
-      H = null != P ? P(t) : "".concat(V.toFixed(0), "%"),
+      H = null != R ? R(t) : "".concat(Z.toFixed(0), "%"),
       Y = null != (e = null == D ? void 0 : D(t)) ? e : void 0;
     return (0, i.jsx)(S, {
       active: n,
@@ -201,7 +201,7 @@ class T extends(r = a.PureComponent) {
           ringTarget: this.grabberRef,
           children: (0, i.jsxs)(u.animated.div, {
             className: s()(m.slider, O, {
-              [m.hasMarks]: (null != (a = null == Z ? void 0 : Z.length) ? a : 0) > 0,
+              [m.hasMarks]: (null != (a = null == V ? void 0 : V.length) ? a : 0) > 0,
               [m.disabled]: g,
               [m.mini]: A
             }),
@@ -210,8 +210,8 @@ class T extends(r = a.PureComponent) {
             "aria-valuemax": f,
             "aria-valuenow": t,
             "aria-disabled": g,
-            "aria-orientation": R,
-            "aria-hidden": j,
+            "aria-orientation": w,
+            "aria-hidden": M,
             "aria-label": U,
             "aria-labelledby": G,
             "aria-describedby": B,
@@ -231,7 +231,7 @@ class T extends(r = a.PureComponent) {
             ref: this.containerRef,
             children: [(0, i.jsx)("div", {
               className: m.track,
-              children: Z
+              children: V
             }), (0, i.jsx)("div", {
               className: s()(m.bar, L),
               style: I,
@@ -250,7 +250,7 @@ class T extends(r = a.PureComponent) {
                 forceOpen: n || r && h.Z.keyboardModeEnabled,
                 children: e => (0, i.jsx)("div", y(E({}, e), {
                   className: s()(m.grabber, x),
-                  style: y(E({}, M), {
+                  style: y(E({}, k), {
                     left: F
                   }),
                   onMouseDown: this.handleMouseDown,

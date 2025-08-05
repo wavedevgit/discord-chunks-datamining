@@ -1,4 +1,4 @@
-/** Chunk was on 13653 **/
-e.exports = {
+/** Chunk was on 57932 **/
+t.exports = {
   forumPost: "forumPost__02068"
 }

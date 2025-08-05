@@ -1,4 +1,4 @@
-/** Chunk was on 94312 **/
+/** Chunk was on 22988 **/
 e.exports = {
   periodColumn: "periodColumn__5d2ba",
   amountColumn: "amountColumn__5d2ba",

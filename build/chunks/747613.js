@@ -66,7 +66,7 @@ function N(e, t) {
 
 function C(e, t) {
   if (null == e) return {};
-  var n, r, i = R(e, t);
+  var n, r, i = w(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -74,21 +74,21 @@ function C(e, t) {
   return i
 }
 
-function R(e, t) {
+function w(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let P = 20,
-  w = 125,
+let R = 20,
+  P = 125,
   D = (0, g.hQ)(),
   L = d.Z.convert.fromCodePoint("1f44f"),
   x = (0, y.Mg)(f.Z.EMOJI_PICKER_CONSTANTS_EMOJI_CONTAINER_PADDING_VERTICAL),
-  M = (0, y.Mg)(f.Z.EMOJI_PICKER_CONSTANTS_DIVERSITY_EMOJI_SIZE);
+  k = (0, y.Mg)(f.Z.EMOJI_PICKER_CONSTANTS_DIVERSITY_EMOJI_SIZE);
 
-function k(e) {
+function j(e) {
   switch (d.Z.convert.toCodePoint(e)) {
     case "1f3fb":
       return v.intl.string(v.t.BVK5b2);
@@ -104,7 +104,7 @@ function k(e) {
       return v.intl.string(v.t.bGN1o6)
   }
 }
-let j = e => {
+let M = e => {
     let {
       fade: t,
       surrogate: n,
@@ -124,7 +124,7 @@ let j = e => {
       onClick: () => i(n),
       className: I.diversityEmojiItem,
       children: (0, r.jsx)(c.animated.div, {
-        "aria-label": k(n),
+        "aria-label": j(n),
         className: I.diversityEmojiItemImage,
         style: S({
           backgroundImage: 'url("'.concat(l, '")')
@@ -138,12 +138,12 @@ let j = e => {
       selectedSurrogate: n,
       onClick: a
     } = e, o = (0, m.Z)("diversity"), s = (0, _.q_F)({
-      height: (M + 2 * x) * (E.gw.length + 1),
+      height: (k + 2 * x) * (E.gw.length + 1),
       from: {
-        height: M
+        height: k
       },
       config: {
-        duration: w
+        duration: P
       }
     });
     i.useEffect(() => {
@@ -163,10 +163,10 @@ let j = e => {
             className: I.diversitySelectorOptions,
             style: s,
             role: "listbox",
-            children: d.map((e, t) => (0, r.jsx)(j, {
+            children: d.map((e, t) => (0, r.jsx)(M, {
               index: t,
               fade: 0 !== t,
-              delay: t * P,
+              delay: t * R,
               surrogate: e,
               onClick: a
             }, t))

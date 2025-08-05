@@ -1,4 +1,5 @@
-/** Chunk was on 91396 **/
+/** Chunk was on web.js **/
+"use strict";
 e.exports = {
   header: "header__32c75",
   viewMore: "viewMore__32c75",

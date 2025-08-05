@@ -1,14 +1,14 @@
-/** Chunk was on 71874 **/
+/** Chunk was on 82107 **/
 let r, a, i;
 t.d(n, {
-  Z: () => S
+  Z: () => k
 }), t(388685), t(539854);
 var o, l, c, s = t(913527),
   d = t.n(s),
   u = t(442837),
   _ = t(759174),
-  b = t(570140),
-  p = t(333023),
+  p = t(570140),
+  b = t(333023),
   f = t(355298),
   h = t(333984),
   m = t(131704),
@@ -17,8 +17,8 @@ var o, l, c, s = t(913527),
   x = t(306680),
   C = t(9156),
   O = t(594174),
-  y = t(709054);
-let I = new _.h(e => {
+  I = t(709054);
+let y = new _.h(e => {
   let {
     isRequest: n,
     isFavorite: t
@@ -28,7 +28,7 @@ let I = new _.h(e => {
   let {
     lastMessageId: n
   } = e;
-  return -y.default.extractTimestamp(n)
+  return -I.default.extractTimestamp(n)
 });
 
 function j(e) {
@@ -38,8 +38,8 @@ function j(e) {
       a = e.isMessageRequestTimestamp;
     if (null != a) {
       let e = d()(a).valueOf(),
-        n = y.default.fromTimestamp(e);
-      return y.default.compare(r, n) > 0 ? r : n
+        n = I.default.fromTimestamp(e);
+      return I.default.compare(r, n) > 0 ? r : n
     }
     return r
   }(e);
@@ -52,18 +52,18 @@ function j(e) {
 }
 
 function E() {
-  I.clear(), Object.values(g.Z.getMutablePrivateChannels()).forEach(e => {
-    I.set(e.id, j(e))
+  y.clear(), Object.values(g.Z.getMutablePrivateChannels()).forEach(e => {
+    y.set(e.id, j(e))
   })
 }
 
 function w() {
   let e = g.Z.getMutablePrivateChannels();
-  for (let n in e) I.set(n, j(e[n]))
+  for (let n in e) y.set(n, j(e[n]))
 }
 let P = (r = [], a = [], i = [], () => {
-  let e = I.values("FAVORITE"),
-    n = I.values("DEFAULT");
+  let e = y.values("FAVORITE"),
+    n = y.values("DEFAULT");
   return (r !== e || a !== n) && (i = [], e.forEach(e => {
     let {
       channelId: n
@@ -84,11 +84,11 @@ class N extends(o = u.ZP.Store) {
     return P()
   }
   getSortedChannels() {
-    return [I.values("FAVORITE"), I.values("DEFAULT")]
+    return [y.values("FAVORITE"), y.values("DEFAULT")]
   }
   serializeForOverlay() {
     let e = {};
-    return I.values().forEach(n => {
+    return y.values().forEach(n => {
       let {
         channelId: t,
         lastMessageId: r
@@ -103,7 +103,7 @@ c = "PrivateChannelSortStore", (l = "displayName") in N ? Object.defineProperty(
   configurable: !0,
   writable: !0
 }) : N[l] = c;
-let S = new N(b.Z, {
+let k = new N(p.Z, {
   CONNECTION_OPEN: E,
   CONNECTION_OPEN_SUPPLEMENTAL: E,
   OVERLAY_INITIALIZE: E,
@@ -114,36 +114,36 @@ let S = new N(b.Z, {
       channels: n
     } = e;
     n.forEach(e => {
-      ((0, m.hv)(e.type) || I.has(e.id)) && I.set(e.id, j(e))
+      ((0, m.hv)(e.type) || y.has(e.id)) && y.set(e.id, j(e))
     })
   },
   CHANNEL_CREATE: function(e) {
     let {
       channel: n
     } = e;
-    if (!(0, m.hv)(n.type) || n.id === p.V) return !1;
-    I.set(n.id, j(n))
+    if (!(0, m.hv)(n.type) || n.id === b.V) return !1;
+    y.set(n.id, j(n))
   },
   CHANNEL_DELETE: function(e) {
     let {
       channel: n
     } = e;
-    return I.delete(n.id)
+    return y.delete(n.id)
   },
   MESSAGE_CREATE: function(e) {
     let {
       channelId: n,
       message: t
     } = e;
-    if (!I.has(n)) return !1;
+    if (!y.has(n)) return !1;
     let r = g.Z.getChannel(n);
-    return null != r && I.set(n, j(r, t.id))
+    return null != r && y.set(n, j(r, t.id))
   },
   GUILD_CREATE: function(e) {
     let n = e.guild.id;
-    return I.delete(n)
+    return y.delete(n)
   },
   LOGOUT: function() {
-    I.clear()
+    y.clear()
   }
 })

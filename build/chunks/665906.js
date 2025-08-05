@@ -8,14 +8,14 @@ n.d(t, {
   JQ: () => A,
   NE: () => b,
   RG: () => L,
-  Xb: () => k,
+  Xb: () => j,
   Xu: () => O,
   Y: () => G,
   cD: () => v,
   ki: () => y,
-  kn: () => w,
+  kn: () => P,
   tM: () => E,
-  tc: () => P,
+  tc: () => R,
   xl: () => x,
   yw: () => U
 }), n(388685);
@@ -112,21 +112,21 @@ function C(e, t) {
   return null != e && t.can(g.Plq.SEND_MESSAGES_IN_THREADS, e)
 }
 
-function R(e, t, n) {
+function w(e, t, n) {
   var r;
   return null != e && !!e.isThread() && ((null == (r = e.threadMetadata) ? void 0 : r.locked) ? n : t)
 }
 
-function P(e) {
+function R(e) {
   let t = (0, o.e7)([p.Z], () => C(e, p.Z)),
-    n = k(e);
-  return R(e, t, n)
+    n = j(e);
+  return w(e, t, n)
 }
 
-function w(e) {
+function P(e) {
   let t = C(e, p.Z),
-    n = j(e);
-  return R(e, t, n)
+    n = M(e);
+  return w(e, t, n)
 }
 
 function D(e) {
@@ -145,18 +145,18 @@ function x(e) {
   return e.isArchivedLockedThread() && !t
 }
 
-function M(e, t) {
+function k(e, t) {
   return null != e && t.can(g.Plq.MANAGE_THREADS, e)
 }
 
-function k(e) {
-  return (0, o.e7)([p.Z], () => j(e, [p.Z]))
+function j(e) {
+  return (0, o.e7)([p.Z], () => M(e, [p.Z]))
 }
 
-function j(e) {
+function M(e) {
   let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : [p.Z],
     [n] = t;
-  return M(e, n)
+  return k(e, n)
 }
 
 function U(e) {
@@ -164,7 +164,7 @@ function U(e) {
     let t = _.Z.getChannel(e);
     if (null == t) return !1;
     let n = f.default.getId();
-    return t.type === g.d4z.PRIVATE_THREAD && t.ownerId === n || j(t, [p.Z])
+    return t.type === g.d4z.PRIVATE_THREAD && t.ownerId === n || M(t, [p.Z])
   })
 }
 
@@ -183,6 +183,6 @@ function G(e) {
 }
 
 function B(e) {
-  let t = k(e);
+  let t = j(e);
   return e.isLockedThread() && !t
 }

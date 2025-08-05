@@ -1,4 +1,4 @@
-/** Chunk was on 99226 **/
+/** Chunk was on 13616 **/
 e.exports = {
   channelIcon: "channelIcon_e98186",
   lockIcon: "lockIcon_e98186",

@@ -87,16 +87,16 @@ let E = function(e) {
       selectedClassName: A,
       innerClassName: N,
       wrapContent: C,
-      highlighted: R,
-      focusProps: P
+      highlighted: w,
+      focusProps: R
     } = e,
-    w = m(e, ["ref", "avatar", "name", "nameplate", "children", "subText", "decorators", "onClick", "hovered", "selected", "muted", "to", "avatarClassName", "selectedClassName", "innerClassName", "wrapContent", "highlighted", "focusProps"]);
-  w.className = o()(w.className, d.container, {
+    P = m(e, ["ref", "avatar", "name", "nameplate", "children", "subText", "decorators", "onClick", "hovered", "selected", "muted", "to", "avatarClassName", "selectedClassName", "innerClassName", "wrapContent", "highlighted", "focusProps"]);
+  P.className = o()(P.className, d.container, {
     [d.selected]: v,
-    [d.highlighted]: R,
+    [d.highlighted]: w,
     [null != A ? A : ""]: v,
     [d.clickable]: !v && (null != T || null != y)
-  }), w["aria-selected"] = null != (t = w["aria-selected"]) ? t : v;
+  }), P["aria-selected"] = null != (t = P["aria-selected"]) ? t : v;
   let D = i.useRef(null),
     L = (0, r.jsxs)("div", {
       className: o()(d.childContainer, {
@@ -137,24 +137,24 @@ let E = function(e) {
         }) : null]
       })]
     });
-  return null != T ? (0, r.jsx)(l.tEY, h(_({}, P), {
+  return null != T ? (0, r.jsx)(l.tEY, h(_({}, R), {
     children: (0, r.jsx)(s.rU, h(_({
       to: T,
       onClick: y
-    }, w), {
+    }, P), {
       role: "listitem",
       ref: n,
       children: L
     }))
   })) : null != y ? (0, r.jsx)(l.P3F, h(_({
     onClick: y,
-    focusProps: P
-  }, w), {
+    focusProps: R
+  }, P), {
     role: "listitem",
     innerRef: n,
     children: L
-  })) : (0, r.jsx)(l.tEY, h(_({}, P), {
-    children: (0, r.jsx)("div", h(_({}, w), {
+  })) : (0, r.jsx)(l.tEY, h(_({}, R), {
+    children: (0, r.jsx)("div", h(_({}, P), {
       role: "listitem",
       ref: n,
       children: L

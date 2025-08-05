@@ -1,4 +1,5 @@
-/** Chunk was on 66005 **/
+/** Chunk was on web.js **/
+"use strict";
 e.exports = {
   body: "body__6da2d",
   streamPreviewWrapper: "streamPreviewWrapper__6da2d",

@@ -1,4 +1,5 @@
-/** Chunk was on 94313 **/
+/** Chunk was on web.js **/
+"use strict";
 e.exports = {
   productCard: "productCard__8d9f6",
   productCardClickable: "productCardClickable__8d9f6",

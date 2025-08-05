@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  EQ: () => $,
-  P: () => Q
+  EQ: () => J,
+  P: () => X
 });
 let r = Symbol.for("@ts-pattern/matcher"),
   i = Symbol.for("@ts-pattern/isVariadic"),
@@ -231,39 +231,39 @@ let T = f(b(function(e) {
   }),
   N = A(b(v)),
   C = (e, t) => b(n => O(n) && e <= n && t >= n),
-  R = e => b(t => O(t) && t < e),
-  P = e => b(t => O(t) && t > e),
-  w = e => b(t => O(t) && t <= e),
+  w = e => b(t => O(t) && t < e),
+  R = e => b(t => O(t) && t > e),
+  P = e => b(t => O(t) && t <= e),
   D = e => b(t => O(t) && t >= e),
   L = () => b(e => O(e) && Number.isInteger(e)),
   x = () => b(e => O(e) && Number.isFinite(e)),
-  M = () => b(e => O(e) && e > 0),
-  k = () => b(e => O(e) && e < 0),
-  j = e => Object.assign(f(e), {
-    between: (t, n) => j(g(e, C(t, n))),
-    lt: t => j(g(e, R(t))),
-    gt: t => j(g(e, P(t))),
-    lte: t => j(g(e, w(t))),
-    gte: t => j(g(e, D(t))),
-    int: () => j(g(e, L())),
-    finite: () => j(g(e, x())),
-    positive: () => j(g(e, M())),
-    negative: () => j(g(e, k()))
+  k = () => b(e => O(e) && e > 0),
+  j = () => b(e => O(e) && e < 0),
+  M = e => Object.assign(f(e), {
+    between: (t, n) => M(g(e, C(t, n))),
+    lt: t => M(g(e, w(t))),
+    gt: t => M(g(e, R(t))),
+    lte: t => M(g(e, P(t))),
+    gte: t => M(g(e, D(t))),
+    int: () => M(g(e, L())),
+    finite: () => M(g(e, x())),
+    positive: () => M(g(e, k())),
+    negative: () => M(g(e, j()))
   }),
-  U = j(b(O)),
+  U = M(b(O)),
   G = (e, t) => b(n => I(n) && e <= n && t >= n),
   B = e => b(t => I(t) && t < e),
-  V = e => b(t => I(t) && t > e),
+  Z = e => b(t => I(t) && t > e),
   F = e => b(t => I(t) && t <= e),
-  Z = e => b(t => I(t) && t >= e),
+  V = e => b(t => I(t) && t >= e),
   H = () => b(e => I(e) && e > 0),
   Y = () => b(e => I(e) && e < 0),
   W = e => Object.assign(f(e), {
     between: (t, n) => W(g(e, G(t, n))),
     lt: t => W(g(e, B(t))),
-    gt: t => W(g(e, V(t))),
+    gt: t => W(g(e, Z(t))),
     lte: t => W(g(e, F(t))),
-    gte: t => W(g(e, Z(t))),
+    gte: t => W(g(e, V(t))),
     positive: () => W(g(e, H())),
     negative: () => W(g(e, Y()))
   }),
@@ -274,10 +274,10 @@ let T = f(b(function(e) {
   q = f(b(function(e) {
     return "symbol" == typeof e
   })),
-  X = f(b(function(e) {
+  $ = f(b(function(e) {
     return null == e
   }));
-var Q = {
+var X = {
   __proto__: null,
   matcher: r,
   optional: p,
@@ -392,26 +392,26 @@ var Q = {
   _: S,
   string: N,
   between: C,
-  lt: R,
-  gt: P,
-  lte: w,
+  lt: w,
+  gt: R,
+  lte: P,
   gte: D,
   int: L,
   finite: x,
-  positive: M,
-  negative: k,
+  positive: k,
+  negative: j,
   number: U,
   betweenBigInt: G,
   ltBigInt: B,
-  gtBigInt: V,
+  gtBigInt: Z,
   lteBigInt: F,
-  gteBigInt: Z,
+  gteBigInt: V,
   positiveBigInt: H,
   negativeBigInt: Y,
   bigint: K,
   boolean: z,
   symbol: q,
-  nullish: X,
+  nullish: $,
   instanceOf: function(e) {
     return f(b(function(e) {
       return t => t instanceof e
@@ -421,13 +421,13 @@ var Q = {
     return f(b(d(e)))
   }
 };
-let J = {
+let Q = {
   matched: !1,
   value: void 0
 };
 
-function $(e) {
-  return new ee(e, J)
+function J(e) {
+  return new ee(e, Q)
 }
 class ee {
   constructor(e, t) {
@@ -447,7 +447,7 @@ class ee {
       c = r.some(e => l(e, this.input, s)) && (!t || t(this.input)) ? {
         matched: !0,
         value: n(i ? a in o ? o[a] : o : this.input, this.input)
-      } : J;
+      } : Q;
     return new ee(this.input, c)
   }
   when(e, t) {
@@ -456,7 +456,7 @@ class ee {
     return new ee(this.input, n ? {
       matched: !0,
       value: t(this.input, this.input)
-    } : J)
+    } : Q)
   }
   otherwise(e) {
     return this.state.matched ? this.state.value : e(this.input)

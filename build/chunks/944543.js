@@ -1,20 +1,21 @@
-/** Chunk was on 60173 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
-  Z: () => y
+  Z: () => b
 }), n(704826), n(35282), n(388685);
 var r = n(255367),
   i = n(73800),
-  l = n(120356),
-  a = n.n(l),
-  o = n(442837),
-  s = n(481060),
+  a = n(120356),
+  o = n.n(a),
+  s = n(442837),
+  l = n(481060),
   c = n(771340),
   u = n(600164),
   d = n(903223),
-  p = n(388032),
-  h = n(190010);
+  f = n(388032),
+  _ = n(190010);
 
-function f(e, t, n) {
+function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -22,21 +23,21 @@ function f(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let m = {
+let h = {
     position: "bottom",
     autoInvert: !1
   },
-  g = e => {
+  m = e => {
     let {
       region: t,
-      className: n = h.regionSelectName
+      className: n = _.regionSelectName
     } = e, i = t.name.replace(/ \(VIP\)$/, "");
     return (0, r.jsx)("div", {
       className: n,
       children: i
     })
   };
-class b extends i.PureComponent {
+class g extends i.PureComponent {
   render() {
     let {
       region: e,
@@ -44,19 +45,19 @@ class b extends i.PureComponent {
     } = this.props;
     return (0, r.jsxs)(u.Z, {
       align: u.Z.Align.CENTER,
-      className: a()({
+      className: o()({
         selected: t
       }),
-      children: [(0, r.jsx)(g, {
+      children: [(0, r.jsx)(m, {
         region: e,
-        className: h.regionSelectName
+        className: _.regionSelectName
       }), t ? (0, r.jsx)("i", {
-        className: h.check
+        className: _.check
       }) : null]
     })
   }
 }
-class _ extends i.PureComponent {
+class E extends i.PureComponent {
   componentDidMount() {
     null == this.props.regions && c.Z.fetchRegions(null)
   }
@@ -75,22 +76,22 @@ class _ extends i.PureComponent {
         value: e,
         key: e.id
       }));
-    return (0, r.jsx)(s.nsm, {
-      className: h.root,
-      label: p.intl.string(p.t.w8gMqq),
+    return (0, r.jsx)(l.nsm, {
+      className: _.root,
+      label: f.intl.string(f.t.w8gMqq),
       options: i,
       value: n,
       onChange: this.handleChangeVoiceRegion,
       renderOption: this.renderOption,
-      popoutProps: m,
-      popoutClassName: h.regionSelectPopout
+      popoutProps: h,
+      popoutClassName: _.regionSelectPopout
     })
   }
   constructor(...e) {
-    super(...e), f(this, "renderOption", (e, t) => (0, r.jsx)(b, {
+    super(...e), p(this, "renderOption", (e, t) => (0, r.jsx)(g, {
       region: e.value,
       selected: t
-    }, e.value.id)), f(this, "getSelectedRegion", () => {
+    }, e.value.id)), p(this, "getSelectedRegion", () => {
       var e;
       let {
         regions: t,
@@ -106,12 +107,12 @@ class _ extends i.PureComponent {
         id: n.region
       } : {
         id: "automatic",
-        name: p.intl.string(p.t.JEmsam),
+        name: f.intl.string(f.t.JEmsam),
         vip: !1,
         deprecated: !1,
         hidden: !1
       }
-    }), f(this, "handleChangeVoiceRegion", e => {
+    }), p(this, "handleChangeVoiceRegion", e => {
       let {
         value: t
       } = e, {
@@ -121,6 +122,6 @@ class _ extends i.PureComponent {
     })
   }
 }
-let y = o.ZP.connectStores([d.Z], () => ({
+let b = s.ZP.connectStores([d.Z], () => ({
   regions: d.Z.getRegions(null)
-}))(_)
+}))(E)

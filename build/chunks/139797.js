@@ -1,4 +1,4 @@
-/** Chunk was on 56535 **/
+/** Chunk was on 43404 **/
 e.exports = {
   main: "main__4d307",
   checkerboard: "checkerboard__4d307",

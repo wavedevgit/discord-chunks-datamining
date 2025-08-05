@@ -1,4 +1,4 @@
-/** Chunk was on 85438 **/
+/** Chunk was on 75708 **/
 e.exports = {
   clickerGameIcon: "clickerGameIcon__581ea",
   poggermodeIcon: "poggermodeIcon__581ea",

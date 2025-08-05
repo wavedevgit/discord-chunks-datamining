@@ -1,11 +1,12 @@
-/** Chunk was on 60173 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
-  YR: () => a,
-  ZP: () => s,
-  _A: () => o
+  YR: () => o,
+  ZP: () => l,
+  _A: () => s
 });
 let {
   Layer: r,
   LayerContainer: i,
-  LayerProvider: l
-} = (0, n(481060).Xvx)("VoiceChannelEffectsCall"), a = i, o = l, s = r
+  LayerProvider: a
+} = (0, n(481060).Xvx)("VoiceChannelEffectsCall"), o = i, s = a, l = r

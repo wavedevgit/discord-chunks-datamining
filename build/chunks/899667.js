@@ -1,7 +1,6 @@
-/** Chunk was on 67501 **/
-"use strict";
+/** Chunk was on 72762 **/
 n.d(t, {
-  Z: () => h
+  Z: () => m
 }), n(388685);
 var r, i, l, s = n(442837),
   o = n(570140);
@@ -11,12 +10,12 @@ let a = {},
   d = !1,
   f = !1,
   p = null,
-  g = null;
+  b = null;
 
-function m() {
+function O() {
   f = !0
 }
-class b extends(r = s.ZP.Store) {
+class h extends(r = s.ZP.Store) {
   getAppliedGuildBoostsForGuild(e) {
     return null != a[e] ? a[e].subscriptions : null
   }
@@ -36,7 +35,7 @@ class b extends(r = s.ZP.Store) {
     return p
   }
   get unapplyBoostError() {
-    return g
+    return b
   }
   get cooldownEndsAt() {
     return c
@@ -45,13 +44,13 @@ class b extends(r = s.ZP.Store) {
     return d
   }
 }
-l = "AppliedGuildBoostStore", (i = "displayName") in b ? Object.defineProperty(b, i, {
+l = "AppliedGuildBoostStore", (i = "displayName") in h ? Object.defineProperty(h, i, {
   value: l,
   enumerable: !0,
   configurable: !0,
   writable: !0
-}) : b[i] = l;
-let h = new b(o.Z, {
+}) : h[i] = l;
+let m = new h(o.Z, {
   GUILD_APPLIED_BOOSTS_FETCH_SUCCESS: function(e) {
     let {
       guildId: t,
@@ -74,8 +73,8 @@ let h = new b(o.Z, {
     } = e;
     c = t
   },
-  GUILD_UNAPPLY_BOOST_START: m,
-  GUILD_APPLY_BOOST_START: m,
+  GUILD_UNAPPLY_BOOST_START: O,
+  GUILD_APPLY_BOOST_START: O,
   GUILD_APPLY_BOOST_SUCCESS: function(e) {
     let {
       appliedGuildBoost: t
@@ -98,7 +97,7 @@ let h = new b(o.Z, {
     let {
       error: t
     } = e;
-    f = !1, g = t
+    f = !1, b = t
   },
   USER_APPLIED_BOOSTS_FETCH_START: function() {
     d = !0

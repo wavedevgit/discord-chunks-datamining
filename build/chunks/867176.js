@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => R,
+  Z: () => w,
   b: () => C
 }), n(388685);
 var r = n(255367),
@@ -100,25 +100,25 @@ function C(e) {
     avatarOffsetX: S,
     avatarOffsetY: A,
     bannerWidth: C,
-    bannerHeight: R,
-    themePadding: P,
-    pendingAccentColor: w,
+    bannerHeight: w,
+    themePadding: R,
+    pendingAccentColor: P,
     animateOnHover: D = !1
-  } = e, L = (0, _.Dt)(), [x, M] = i.useState(!1), k = (0, l.e7)([m.Z], () => m.Z.isFocused()), j = h.QK.getSetting(), {
+  } = e, L = (0, _.Dt)(), [x, k] = i.useState(!1), j = (0, l.e7)([m.Z], () => m.Z.isFocused()), M = h.QK.getSetting(), {
     bannerSrc: U,
     status: G
   } = (0, E.Z)({
     displayProfile: a,
     pendingBanner: O,
     size: C,
-    canAnimate: D || !j ? x : k
-  }), B = (0, u.dQu)(c.Z.unsafe_rawColors.PRIMARY_800).hex(), V = n.getAvatarURL(b, (0, u.pxk)(T)), F = (0, s._i)((0, d.ZP)(V, B, !1)), Z = (0, f.Z)(null != (t = null != w ? w : null == a ? void 0 : a.primaryColor) ? t : F).hex, H = N(T), Y = H + S - P, W = R - A - P;
+    canAnimate: D || !M ? x : j
+  }), B = (0, u.dQu)(c.Z.unsafe_rawColors.PRIMARY_800).hex(), Z = n.getAvatarURL(b, (0, u.pxk)(T)), F = (0, s._i)((0, d.ZP)(Z, B, !1)), V = (0, f.Z)(null != (t = null != P ? P : null == a ? void 0 : a.primaryColor) ? t : F).hex, H = N(T), Y = H + S - R, W = w - A - R;
   return (0, r.jsxs)("svg", {
     className: y.mask,
-    viewBox: "0 0 ".concat(C, " ").concat(R),
+    viewBox: "0 0 ".concat(C, " ").concat(w),
     style: {
       minWidth: C,
-      minHeight: R
+      minHeight: w
     },
     children: [(0, r.jsxs)("mask", {
       id: L,
@@ -143,15 +143,15 @@ function C(e) {
       mask: "url(#".concat(L, ")"),
       children: [v, (0, r.jsxs)("div", {
         className: o()(y.banner, I),
-        onMouseMove: () => M(!0),
-        onMouseLeave: () => M(!1),
+        onMouseMove: () => k(!0),
+        onMouseLeave: () => k(!1),
         style: {
-          height: R,
-          minHeight: R,
+          height: w,
+          minHeight: w,
           backgroundImage: null != U ? "url(".concat(U, ")") : void 0,
-          backgroundColor: "COMPLETE" !== G ? c.Z.unsafe_rawColors.PRIMARY_800.css : Z
+          backgroundColor: "COMPLETE" !== G ? c.Z.unsafe_rawColors.PRIMARY_800.css : V
         },
-        children: [!j && (0, g.F8)(U) && (0, r.jsx)(p.Z, {
+        children: [!M && (0, g.F8)(U) && (0, r.jsx)(p.Z, {
           className: y.gifTag
         }), v]
       })]
@@ -159,7 +159,7 @@ function C(e) {
   })
 }
 
-function R(e) {
+function w(e) {
   var {
     themeType: t,
     displayProfile: n,

@@ -29,14 +29,14 @@ var r = n(255367),
   A = n(592125),
   N = n(271383),
   C = n(485386),
-  R = n(430824),
-  P = n(594174),
-  w = n(51144),
+  w = n(430824),
+  R = n(594174),
+  P = n(51144),
   D = n(388032),
   L = n(73433),
   x = n(83902);
 
-function M(e, t, n) {
+function k(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -45,20 +45,20 @@ function M(e, t, n) {
   }) : e[t] = n, e
 }
 
-function k(e) {
+function j(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      M(e, t, n[t])
+      k(e, t, n[t])
     })
   }
   return e
 }
 
-function j(e, t) {
+function M(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -70,7 +70,7 @@ function j(e, t) {
 }
 
 function U(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : j(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : M(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -96,10 +96,10 @@ function B(e) {
     guildId: a,
     channelId: o,
     role: s
-  } = e, c = i.useRef(null), u = (0, l.e7)([R.Z], () => {
+  } = e, c = i.useRef(null), u = (0, l.e7)([w.Z], () => {
     var e;
-    return null == (e = R.Z.getGuild(a)) ? void 0 : e.ownerId
-  }, [a]), _ = (0, l.e7)([P.default], () => P.default.getUser(t.userId), [t.userId]), p = (0, l.e7)([A.Z], () => A.Z.getChannel(o), [o]);
+    return null == (e = w.Z.getGuild(a)) ? void 0 : e.ownerId
+  }, [a]), _ = (0, l.e7)([R.default], () => R.default.getUser(t.userId), [t.userId]), p = (0, l.e7)([A.Z], () => A.Z.getChannel(o), [o]);
   return null == _ || null == p ? null : (0, r.jsx)(T.Z, {
     targetElementRef: c,
     userId: t.userId,
@@ -112,7 +112,7 @@ function B(e) {
       let {
         isShown: o
       } = i;
-      return (0, r.jsx)(f.Z, k({
+      return (0, r.jsx)(f.Z, j({
         ref: c,
         selected: o,
         colorString: t.colorString,
@@ -128,8 +128,8 @@ function B(e) {
           (0, d.jW)(e, async () => {
             let {
               default: e
-            } = await Promise.all([n.e("14006"), n.e("70274"), n.e("79695"), n.e("80417"), n.e("98783"), n.e("8982"), n.e("7717"), n.e("94470")]).then(n.bind(n, 757387));
-            return t => (0, r.jsx)(e, U(k({}, t), {
+            } = await Promise.all([n.e("79695"), n.e("98783"), n.e("8982"), n.e("7717"), n.e("12658")]).then(n.bind(n, 757387));
+            return t => (0, r.jsx)(e, U(j({}, t), {
               user: _,
               guildId: a,
               channel: p,
@@ -142,7 +142,7 @@ function B(e) {
   }, t.userId)
 }
 
-function V(e) {
+function Z(e) {
   let {
     popoutProps: t,
     roleId: n,
@@ -157,16 +157,16 @@ function V(e) {
     null == (e = t.setPopoutRef) || e.call(t, null)
   });
   let f = (0, b.Z)(a),
-    p = (0, l.e7)([R.Z], () => {
-      let e = R.Z.getGuild(a);
+    p = (0, l.e7)([w.Z], () => {
+      let e = w.Z.getGuild(a);
       return null == e ? null : (0, S.lV)(e)
     }, [a]),
-    h = (0, l.Wu)([N.ZP, P.default], () => {
+    h = (0, l.Wu)([N.ZP, R.default], () => {
       let e = N.ZP.getMembers(a),
         t = null == n || n === p ? e : e.filter(e => e.roles.includes(n));
-      return o()(t).filter(e => null != P.default.getUser(e.userId)).sortBy(e => {
+      return o()(t).filter(e => null != R.default.getUser(e.userId)).sortBy(e => {
         var t;
-        return null != (t = e.nick) ? t : w.ZP.getName(P.default.getUser(e.userId))
+        return null != (t = e.nick) ? t : P.ZP.getName(R.default.getUser(e.userId))
       }).value()
     }, [a, n, p]),
     m = (0, l.e7)([C.Z], () => {
@@ -187,7 +187,7 @@ function V(e) {
   });
   return (0, r.jsx)(c.d.Provider, {
     value: void 0,
-    children: (0, r.jsx)("div", U(k({
+    children: (0, r.jsx)("div", U(j({
       className: L.rolePopout,
       ref: d
     }, t), {
@@ -224,7 +224,7 @@ function F(e) {
     inlinePreview: d = !1
   } = e, {
     analyticsLocations: f
-  } = (0, m.ZP)(h.Z.ROLE_MENTION), _ = (0, l.e7)([p.Z], () => p.Z.roleStyle), g = (0, l.e7)([C.Z], () => null == o || null == t ? null : C.Z.getRole(o, t)), E = (0, I.yH)(o, g), b = !d && null != g && !(0, v.Gr)(g), T = b && "dot" === _, S = b && "username" === _, A = E && null != g ? g.colorStrings : null, N = i.useRef(null), R = e => (0, r.jsxs)(O.Z, U(k({
+  } = (0, m.ZP)(h.Z.ROLE_MENTION), _ = (0, l.e7)([p.Z], () => p.Z.roleStyle), g = (0, l.e7)([C.Z], () => null == o || null == t ? null : C.Z.getRole(o, t)), E = (0, I.yH)(o, g), b = !d && null != g && !(0, v.Gr)(g), T = b && "dot" === _, S = b && "username" === _, A = E && null != g ? g.colorStrings : null, N = i.useRef(null), w = e => (0, r.jsxs)(O.Z, U(j({
     ref: N,
     className: L.roleMention,
     color: S ? g.color : null,
@@ -238,15 +238,15 @@ function F(e) {
       tooltip: !1
     }), c]
   })), {
-    enabled: P
+    enabled: R
   } = G.getCurrentConfig({
     location: "2ec235_1"
   }, {
     autoTrackExposure: !1
   });
-  return !P || d || null == n || null == o || null == t && "@everyone" !== a ? (0, r.jsx)(m.Gt, {
+  return !R || d || null == n || null == o || null == t && "@everyone" !== a ? (0, r.jsx)(m.Gt, {
     value: f,
-    children: R()
+    children: w()
   }) : (0, r.jsx)(m.Gt, {
     value: f,
     children: (0, r.jsx)(u.yRy, {
@@ -254,14 +254,14 @@ function F(e) {
       preload: async () => {
         null != t && await (0, y.H)(o, t)
       },
-      renderPopout: e => (0, r.jsx)(V, {
+      renderPopout: e => (0, r.jsx)(Z, {
         guildId: o,
         channelId: n,
         roleId: t,
         popoutProps: e
       }),
       position: "right",
-      children: R
+      children: w
     })
   })
 }

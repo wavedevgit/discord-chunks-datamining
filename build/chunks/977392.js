@@ -1,26 +1,26 @@
-/** Chunk was on 31978 **/
+/** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => s
+  Z: () => l
 });
 var r = n(399606),
-  l = n(592125),
-  o = n(271383),
-  i = n(485386),
-  a = n(275759);
+  i = n(592125),
+  a = n(271383),
+  o = n(485386),
+  s = n(275759);
 
-function s(e, t) {
+function l(e, t) {
   let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : null,
-    s = arguments.length > 3 && void 0 !== arguments[3] && arguments[3],
-    c = (0, r.e7)([o.ZP], () => null != e ? o.ZP.getMember(e.id, t) : null, [e, t]),
-    u = (0, r.e7)([l.Z], () => l.Z.getChannel(n), [n]),
-    d = (0, r.e7)([l.Z], () => l.Z.getChannel(null == u ? void 0 : u.parent_id), [u]),
-    p = (0, r.e7)([i.Z], () => null != e ? i.Z.getSortedRoles(e.id) : void 0);
-  return null == e || null == p || null == c ? null : (0, a.Ur)({
+    l = arguments.length > 3 && void 0 !== arguments[3] && arguments[3],
+    c = (0, r.e7)([a.ZP], () => null != e ? a.ZP.getMember(e.id, t) : null, [e, t]),
+    u = (0, r.e7)([i.Z], () => i.Z.getChannel(n), [n]),
+    d = (0, r.e7)([i.Z], () => i.Z.getChannel(null == u ? void 0 : u.parent_id), [u]),
+    f = (0, r.e7)([o.Z], () => null != e ? o.Z.getSortedRoles(e.id) : void 0);
+  return null == e || null == f || null == c ? null : (0, s.Ur)({
     guild: e,
-    sortedGuildRoles: p,
+    sortedGuildRoles: f,
     guildMember: c,
     channel: null != u && u.isThread() && null != d ? d : u,
-    onlyChannelConnectionRoles: s
+    onlyChannelConnectionRoles: l
   })
 }

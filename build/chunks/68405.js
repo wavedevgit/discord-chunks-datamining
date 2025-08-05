@@ -2,16 +2,16 @@
 "use strict";
 n.d(t, {
   PF: () => F,
-  R7: () => k,
+  R7: () => j,
   Tg: () => U,
   UU: () => G,
-  gK: () => j,
-  hM: () => P,
+  gK: () => M,
+  hM: () => R,
   iy: () => B,
   mO: () => x,
-  t1: () => R,
-  uL: () => V,
-  v2: () => M,
+  t1: () => w,
+  uL: () => Z,
+  v2: () => k,
   yC: () => L
 }), n(704826), n(35282);
 var r = n(392711),
@@ -92,7 +92,7 @@ function A(e, t) {
 let N = 250,
   C = /-/g;
 
-function R(e) {
+function w(e) {
   let t = null != e ? {
     [e]: 1
   } : {};
@@ -104,7 +104,7 @@ function R(e) {
   })
 }
 
-function P(e, t) {
+function R(e, t) {
   let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {};
   var {
     startTime: r
@@ -123,9 +123,9 @@ function P(e, t) {
   c.ZP.trackWithMetadata(E.rMx.SEARCH_RESULT_VIEWED, v({}, o, s))
 }
 
-function w(e, t, n) {
+function P(e, t, n) {
   let r = Date.now();
-  R(t), o.tn.get({
+  w(t), o.tn.get({
     url: E.ANM.GIFS_SEARCH,
     query: {
       q: e,
@@ -138,7 +138,7 @@ function w(e, t, n) {
     rejectWithError: !0
   }).then(i => {
     let a = i.body;
-    P(a, t, {
+    R(a, t, {
       startTime: r,
       limit: n
     }), l.Z.dispatch({
@@ -151,15 +151,15 @@ function w(e, t, n) {
     query: e
   }))
 }
-let D = i().debounce(w, N);
+let D = i().debounce(P, N);
 
 function L(e, t) {
   let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
     r = arguments.length > 3 ? arguments[3] : void 0;
-  "" === e ? M() : (l.Z.dispatch({
+  "" === e ? k() : (l.Z.dispatch({
     type: "GIF_PICKER_QUERY",
     query: e
-  }), n ? w(e, t, r) : D(e, t, r))
+  }), n ? P(e, t, r) : D(e, t, r))
 }
 
 function x(e) {
@@ -183,14 +183,14 @@ function x(e) {
   })
 }
 
-function M() {
+function k() {
   l.Z.dispatch({
     type: "GIF_PICKER_QUERY",
     query: ""
   })
 }
 
-function k(e) {
+function j(e) {
   let {
     type: t,
     index: n,
@@ -221,7 +221,7 @@ function k(e) {
   })
 }
 
-function j() {
+function M() {
   let e = (0, a.Z)().replace(C, "");
   c.ZP.trackWithMetadata(E.rMx.SEARCH_OPENED, {
     search_type: E.aib.GIF,
@@ -261,7 +261,7 @@ function U() {
 
 function G(e) {
   let t = Date.now();
-  R(E.wI2.TRENDING_GIFS), o.tn.get({
+  w(E.wI2.TRENDING_GIFS), o.tn.get({
     url: E.ANM.GIFS_TRENDING_GIFS,
     query: {
       media_format: _.Z.getSelectedFormat(),
@@ -275,7 +275,7 @@ function G(e) {
     let {
       body: r
     } = n;
-    P(r, E.wI2.TRENDING_GIFS, {
+    R(r, E.wI2.TRENDING_GIFS, {
       startTime: t,
       limit: e
     }), l.Z.dispatch({
@@ -294,7 +294,7 @@ function B(e) {
   return null == t ? e : (0, u.MO)(t) ? (0, u.q5)(t).toString() : e
 }
 
-function V(e) {
+function Z(e) {
   f.DZ.updateAsync("favoriteGifs", t => {
     var n;
     let r = null != (n = i().max(Object.values(t.gifs).map(e => e.order))) ? n : 0;

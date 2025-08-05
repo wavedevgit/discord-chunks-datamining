@@ -50,7 +50,7 @@ function T(e) {
   let {
     soundboardSound: t,
     closePicker: v
-  } = e, T = (0, d.Iu)(e => e.searchQuery), S = (0, i.e7)([E.Z], () => null != t && E.Z.isFavoriteSound(t.soundId)), A = (0, i.e7)([_.Z], () => _.Z.getGuild(null == t ? void 0 : t.guildId)), N = (0, i.e7)([l.Z], () => l.Z.useReducedMotion, []), C = (0, i.e7)([h.Z], () => h.Z.isFocused()), R = (0, i.e7)([p.ZP], () => p.ZP.getKeybindForAction(b.kg4.SOUNDBOARD_HOLD));
+  } = e, T = (0, d.Iu)(e => e.searchQuery), S = (0, i.e7)([E.Z], () => null != t && E.Z.isFavoriteSound(t.soundId)), A = (0, i.e7)([_.Z], () => _.Z.getGuild(null == t ? void 0 : t.guildId)), N = (0, i.e7)([l.Z], () => l.Z.useReducedMotion, []), C = (0, i.e7)([h.Z], () => h.Z.isFocused()), w = (0, i.e7)([p.ZP], () => p.ZP.getKeybindForAction(b.kg4.SOUNDBOARD_HOLD));
   if (null != t && T.length > 0) return (0, r.jsx)(f.Z, {
     graphicPrimary: null != t.emojiId || null != t.emojiName ? (0, r.jsx)(s.Z, {
       emojiId: t.emojiId,
@@ -69,7 +69,7 @@ function T(e) {
     titleSecondary: null == A ? void 0 : A.name,
     isFavorite: S
   });
-  let P = () => {
+  let R = () => {
       v(), (0, o.ZDy)(async () => {
         let {
           default: e
@@ -77,12 +77,12 @@ function T(e) {
         return t => (0, r.jsx)(e, I({}, t))
       })
     },
-    w = (0, c.zu)(a.z.SOUNDBOARD_KEYBIND_TIP),
+    P = (0, c.zu)(a.z.SOUNDBOARD_KEYBIND_TIP),
     D = () => (0, c.Q3)(a.z.SOUNDBOARD_KEYBIND_TIP),
-    L = null != R && (0, m.isWindows)() && !w ? y.intl.format(y.t.udMTtr, {
-      keybind: (0, g.BB)(R.shortcut, !0),
+    L = null != w && (0, m.isWindows)() && !P ? y.intl.format(y.t.udMTtr, {
+      keybind: (0, g.BB)(w.shortcut, !0),
       openSettingsHook: (e, t) => (0, r.jsx)(o.eee, {
-        onClick: P,
+        onClick: R,
         children: e
       }, t)
     }) : null;

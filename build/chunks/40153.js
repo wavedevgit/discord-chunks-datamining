@@ -1,4 +1,4 @@
-/** Chunk was on 70663 **/
+/** Chunk was on 92357 **/
 n.d(t, {
   OG: () => j,
   ZP: () => C,
@@ -8,8 +8,8 @@ var r = n(255367),
   i = n(73800),
   l = n(120356),
   o = n.n(l),
-  a = n(512722),
-  s = n.n(a),
+  s = n(512722),
+  a = n.n(s),
   c = n(539202),
   u = n(749210),
   d = n(626135),
@@ -32,10 +32,10 @@ function b(e) {
   }, n), t
 }
 
-function _(e, t) {
+function O(e, t) {
   let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
     r = arguments.length > 3 && void 0 !== arguments[3] && arguments[3];
-  return s()(t.type !== h.eD.ROOT, "[GuildDropTarget] Tried using a root node as a drop target."), {
+  return a()(t.type !== h.eD.ROOT, "[GuildDropTarget] Tried using a root node as a drop target."), {
     accept: e,
     canDrop: e => e.nodeId !== t.id && (!r || e.type !== h.eD.FOLDER || t.type !== h.eD.FOLDER) && (e.type !== h.eD.FOLDER || null == t.parentId),
     drop(e) {
@@ -51,17 +51,17 @@ function _(e, t) {
   }
 }
 
-function O(e) {
+function _(e) {
   let {
     name: t,
     targetNode: n,
     combine: l,
     below: o
-  } = e, a = i.useMemo(() => _([h.eD.GUILD, h.eD.FOLDER], n, o, l), [n, o, l]), [{
-    canDrop: s,
+  } = e, s = i.useMemo(() => O([h.eD.GUILD, h.eD.FOLDER], n, o, l), [n, o, l]), [{
+    canDrop: a,
     isOver: u
-  }, d] = (0, c.L)(a), p = b([
-    [s, m.autoPointerEvents],
+  }, d] = (0, c.L)(s), p = b([
+    [a, m.autoPointerEvents],
     [u, m.dragOver]
   ]);
   return (0, r.jsx)("div", {
@@ -81,20 +81,20 @@ function y(e) {
     targetNode: n,
     onDragOverChanged: l
   } = e, [{
-    canDrop: a,
-    isOver: s
-  }, u] = (0, c.L)(() => _([h.eD.GUILD], n, !0, !0));
+    canDrop: s,
+    isOver: a
+  }, u] = (0, c.L)(() => O([h.eD.GUILD], n, !0, !0));
   i.useEffect(() => {
-    null == l || l(s)
-  }, [l, s]);
+    null == l || l(a)
+  }, [l, a]);
   let d = b([
-    [a, m.autoPointerEvents],
-    [s, m.dragOver]
+    [s, m.autoPointerEvents],
+    [a, m.dragOver]
   ]);
   return (0, r.jsx)(p.Z, {
     text: t,
-    shouldShow: s,
-    forceOpen: s,
+    shouldShow: a,
+    forceOpen: a,
     disableWrapper: !0,
     tooltipClass: m.centerTargetTooltip,
     children: (0, r.jsx)("div", {
@@ -115,15 +115,15 @@ let C = i.memo(function(e) {
     noCombine: i = !1,
     below: l = !1,
     onDragOverChanged: o
-  } = e, a = !i && null == n.parentId;
+  } = e, s = !i && null == n.parentId;
   return (0, r.jsxs)("div", {
     className: m.wrapper,
     "aria-hidden": !0,
-    children: [(0, r.jsx)(O, {
+    children: [(0, r.jsx)(_, {
       name: t,
       targetNode: n,
       below: l
-    }), a ? (0, r.jsx)(y, {
+    }), s ? (0, r.jsx)(y, {
       name: t,
       targetNode: n,
       onDragOverChanged: o
@@ -138,21 +138,21 @@ function v(e) {
   } = e, [{
     canDrop: i,
     isOver: l
-  }, o] = (0, c.L)(() => _([h.eD.GUILD], n, !0, !0)), a = b([
+  }, o] = (0, c.L)(() => O([h.eD.GUILD], n, !0, !0)), s = b([
     [l, m.wrapperOver]
-  ]), s = b([
+  ]), a = b([
     [l, m.dragOver],
     [i, m.autoPointerEvents]
   ]);
   return (0, r.jsx)("div", {
-    ref: a,
+    ref: s,
     className: m.folderEndWrapper,
     "aria-hidden": !0,
     children: (0, r.jsx)("div", {
       className: m.folderTarget,
       children: (0, r.jsx)("div", {
         ref: e => {
-          s.current = e, o(e)
+          a.current = e, o(e)
         },
         "aria-label": "At end of ".concat(t),
         className: m.target

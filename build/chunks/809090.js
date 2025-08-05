@@ -90,9 +90,9 @@ function E(e) {
     S(!1), null == y || y()
   }, [y]), C = i.useCallback(() => {
     S(!0), null == O || O()
-  }, [O]), R = i.useCallback(() => {
+  }, [O]), w = i.useCallback(() => {
     S(!1), null == v || v()
-  }, [v]), P = i.useMemo(() => {
+  }, [v]), R = i.useMemo(() => {
     var e;
     return t.type !== c.Qi.APPLICATION ? d : l.ZP.getApplicationIconURL({
       id: t.id,
@@ -110,7 +110,7 @@ function E(e) {
     onFocus: A,
     onBlur: N,
     onMouseOver: C,
-    onMouseLeave: R,
+    onMouseLeave: w,
     children: (0, r.jsx)(s.ZP, {
       className: u.mask,
       mask: E || g && (n || T) ? s.QS.SQUIRCLE : s.QS.AVATAR_DEFAULT,
@@ -123,7 +123,7 @@ function E(e) {
           width: a,
           height: f
         },
-        src: P
+        src: R
       })
     })
   }))

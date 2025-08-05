@@ -1,5 +1,6 @@
-/** Chunk was on 70663 **/
-n.r(e.exports = {
+/** Chunk was on web.js **/
+"use strict";
+var r = {
   wrapper: "wrapper__48b20",
   video: "video__48b20",
   videoCover: "videoCover__48b20",
@@ -11,4 +12,5 @@ n.r(e.exports = {
   emptyPreviewWrapper: "emptyPreviewWrapper__48b20",
   emptyPreview: "emptyPreview__48b20",
   spinner: "spinner__48b20"
-})
+};
+n.r(e.exports = r)

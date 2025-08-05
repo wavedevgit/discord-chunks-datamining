@@ -1,5 +1,5 @@
-/** Chunk was on 8381 **/
+/** Chunk was on web.js **/
 "use strict";
-t.exports = function(t) {
-  t._internalDrag = !0, t.setMode("drag")
+e.exports = function(e) {
+  e._internalDrag = !0, e.setMode("drag")
 }

@@ -1,4 +1,5 @@
-/** Chunk was on 94313 **/
+/** Chunk was on web.js **/
+"use strict";
 e.exports = {
   modal: "modal__49777",
   modalHeader: "modalHeader__49777",

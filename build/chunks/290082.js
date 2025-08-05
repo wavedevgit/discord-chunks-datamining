@@ -1,4 +1,5 @@
-/** Chunk was on 24022 **/
+/** Chunk was on web.js **/
+"use strict";
 e.exports = {
   resultsGroup: "resultsGroup__56fec",
   header: "header__56fec",

@@ -89,12 +89,12 @@ function N(e) {
     error: E,
     defaultDirty: O,
     showCharacterCountFullPadding: N,
-    showCharacterCount: P,
-    showRemainingCharacterCount: w,
+    showCharacterCount: R,
+    showRemainingCharacterCount: P,
     "aria-labelledby": D,
     rows: L = 3
   } = e, x = y(e, ["value", "placeholder", "autoFocus", "minLength", "maxLength", "error", "defaultDirty", "showCharacterCountFullPadding", "showCharacterCount", "showRemainingCharacterCount", "aria-labelledby", "rows"]);
-  let M = (0, f.m)({
+  let k = (0, f.m)({
       validateOn: "change",
       error: E,
       value: t,
@@ -102,13 +102,13 @@ function N(e) {
       maxLength: m,
       defaultDirty: O
     }),
-    k = i.useContext(c.q3),
-    j = null != D ? D : null == k ? void 0 : k.titleId,
+    j = i.useContext(c.q3),
+    M = null != D ? D : null == j ? void 0 : j.titleId,
     U = i.useMemo(() => {
       let e = [],
-        t = null == k ? void 0 : k.errorId;
+        t = null == j ? void 0 : j.errorId;
       return null != t && e.push(t), null != E ? e.push(v) : (null != m && e.push(T), null != s && e.push(I)), e.length > 0 ? e.join(" ") : void 0
-    }, [E, null == k ? void 0 : k.errorId, m, s]),
+    }, [E, null == j ? void 0 : j.errorId, m, s]),
     G = i.useMemo(() => {
       if (null == m) return S;
       let e = "".concat(m).length;
@@ -118,16 +118,16 @@ function N(e) {
       let {
         onChange: t
       } = x;
-      null == t || t(e.currentTarget.value), M.setShouldValidate(!0)
+      null == t || t(e.currentTarget.value), k.setShouldValidate(!0)
     };
   return (0, r.jsxs)(d.J, {
-    validation: M,
+    validation: k,
     children: [(0, r.jsx)(l.t, {
       children: (0, r.jsx)("textarea", b(g({
         className: o()(p.textArea, h.scrollbarDefault),
-        "aria-labelledby": j,
+        "aria-labelledby": M,
         "aria-describedby": U,
-        "aria-invalid": M.hasError,
+        "aria-invalid": k.hasError,
         style: {
           paddingRight: G
         },
@@ -150,11 +150,11 @@ function N(e) {
       children: _.intl.format(_.t["+DFxLS"], {
         maxLength: m
       })
-    }), P ? (0, r.jsx)(C, {
+    }), R ? (0, r.jsx)(C, {
       value: t,
       maxLength: m,
-      hasError: M.hasError
-    }) : null, P || !1 === w ? null : (0, r.jsx)(R, {
+      hasError: k.hasError
+    }) : null, R || !1 === P ? null : (0, r.jsx)(w, {
       value: t,
       maxLength: m
     })]
@@ -177,7 +177,7 @@ function C(e) {
   })
 }
 
-function R(e) {
+function w(e) {
   let {
     value: t,
     maxLength: n

@@ -63,7 +63,7 @@ function N(e) {
   } = e, l = (0, m.WJ)(t), c = v[l];
   return null == c && (c = {
     results: [],
-    context: o.Z.getUserSearchContext(R.bind(null, t))
+    context: o.Z.getUserSearchContext(w.bind(null, t))
   }, v[l] = c), {
     searchContext: t,
     query: null != n ? n : "",
@@ -85,7 +85,7 @@ function C(e) {
   null != n && (n.context.destroy(), n.results = [], delete v[t]), delete O[t], y = null
 }
 
-function R(e, t) {
+function w(e, t) {
   let {
     results: n
   } = t, r = (0, m.WJ)(e), i = v[r], a = O[r];
@@ -96,7 +96,7 @@ function R(e, t) {
   } = a.mode;
   if (o === E.Sap.EMPTY || o === E.Sap.FILTER && s !== E.dCx.FILTER_FROM && s !== E.dCx.FILTER_MENTIONS) return;
   let l = T;
-  a.mode.type === E.Sap.FILTER && (l = I), i.results = P(n, l);
+  a.mode.type === E.Sap.FILTER && (l = I), i.results = R(n, l);
   let {
     query: c,
     mode: u,
@@ -115,7 +115,7 @@ function R(e, t) {
   }), K.emitChange()
 }
 
-function P(e) {
+function R(e) {
   let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : I,
     n = [];
   for (let r of e) {
@@ -131,11 +131,11 @@ function P(e) {
   return n
 }
 
-function w(e) {
+function P(e) {
   let {
     searchContext: t
   } = e;
-  y = t, Z(t)
+  y = t, V(t)
 }
 
 function D(e) {
@@ -246,7 +246,7 @@ function x(e, t) {
   }
 }
 
-function M(e, t, n) {
+function k(e, t, n) {
   let r = (null != e ? e.getFullMatch() : "").trim(),
     i = [];
   return null != r && "" !== r && (A(t).forEach(r => {
@@ -259,10 +259,10 @@ function M(e, t, n) {
       tokens: n
     });
     null != a && i.push(a)
-  }), i.push(k(e, t))), 5 > (0, m.BU)(i) && i.push(x(e, t)), i
+  }), i.push(j(e, t))), 5 > (0, m.BU)(i) && i.push(x(e, t)), i
 }
 
-function k(e, t) {
+function j(e, t) {
   let n = (null != e ? e.getFullMatch() : "").trim();
   if (null != n && "" !== n) {
     var r, i, a, o, s, l, c, u, d;
@@ -290,7 +290,7 @@ function k(e, t) {
   }
 }
 
-function j(e) {
+function M(e) {
   if (d.Z.hidePersonalInformation) return null;
   {
     let t = n(741995).Z,
@@ -313,7 +313,7 @@ function U(e, t, n) {
     searchContext: e,
     maxResults: I,
     tokens: n
-  })) : t.type === E.Sap.FILTER_ALL ? r = M(t.token, e, n) : t.type === E.Sap.EMPTY && (r.push(x(t.token, e)), r.push(j(e))), r
+  })) : t.type === E.Sap.FILTER_ALL ? r = k(t.token, e, n) : t.type === E.Sap.EMPTY && (r.push(x(t.token, e)), r.push(M(e))), r
 }
 
 function G() {
@@ -341,7 +341,7 @@ function B(e) {
   })
 }
 
-function V(e) {
+function Z(e) {
   let {
     searchId: t
   } = e;
@@ -352,7 +352,7 @@ function F() {
   Object.keys(O).forEach(B)
 }
 
-function Z(e) {
+function V(e) {
   let t = (0, m.WJ)(e);
   if (null == O[t]) return !1;
   let {
@@ -372,7 +372,7 @@ function Z(e) {
 }
 
 function H() {
-  return null != y && Z(y)
+  return null != y && V(y)
 }
 
 function Y(e) {
@@ -389,7 +389,7 @@ function Y(e) {
       type: r,
       filter: i
     } = n.mode;
-    return r === E.Sap.FILTER && i === E.dCx.FILTER_IN && Z(y)
+    return r === E.Sap.FILTER && i === E.dCx.FILTER_IN && V(y)
   }
   return !1
 }
@@ -459,9 +459,9 @@ let K = new W(a.Z, {
     CHANNEL_CREATE: G,
     CHANNEL_DELETE: G,
     STREAMER_MODE_UPDATE: H,
-    SEARCH_SCREEN_OPEN: w,
+    SEARCH_SCREEN_OPEN: P,
     CHANNEL_SELECT: Y,
     LOGOUT: F,
-    SEARCH_HISTORY_WEB_CLEAR_ITEMS: V
+    SEARCH_HISTORY_WEB_CLEAR_ITEMS: Z
   }),
   z = K

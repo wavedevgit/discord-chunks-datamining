@@ -1,34 +1,35 @@
-/** Chunk was on 94313 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
-  Z: () => _
+  Z: () => m
 });
 var r = n(255367);
 n(73800);
 var i = n(120356),
-  l = n.n(i),
-  a = n(481060),
-  o = n(385499),
-  s = n(739566),
+  a = n.n(i),
+  o = n(481060),
+  s = n(385499),
+  l = n(739566),
   c = n(464891),
   u = n(605568),
   d = n(834129),
-  p = n(981631),
-  m = n(674563),
-  f = n(388032),
-  g = n(126759);
+  f = n(981631),
+  _ = n(674563),
+  p = n(388032),
+  h = n(126759);
 
-function _(e) {
+function m(e) {
   let {
     message: t,
     compact: n,
     usernameHook: i
-  } = e, _ = (0, s.ZP)(t), h = i(_), {
-    avatarSrc: b,
+  } = e, m = (0, l.ZP)(t), g = i(m), {
+    avatarSrc: E,
     eventHandlers: {
-      onMouseEnter: E,
-      onMouseLeave: C
+      onMouseEnter: b,
+      onMouseLeave: y
     }
-  } = (0, u.m)(!0), v = "" !== t.content ? new Date(t.content).toLocaleString(f.intl.currentLocale, {
+  } = (0, u.m)(!0), O = "" !== t.content ? new Date(t.content).toLocaleString(p.intl.currentLocale, {
     hour: "numeric",
     minute: "2-digit",
     month: "2-digit",
@@ -36,53 +37,53 @@ function _(e) {
     year: "numeric"
   }) : "";
   return (0, r.jsx)("div", {
-    onMouseEnter: E,
-    onMouseLeave: C,
+    onMouseEnter: b,
+    onMouseLeave: y,
     children: (0, r.jsx)(d.Z, {
-      className: l()(g.mainContainer, {
-        [g.compact]: n
+      className: a()(h.mainContainer, {
+        [h.compact]: n
       }),
       iconNode: n ? null : (0, r.jsx)(u.S, {
-        src: b
+        src: E
       }),
-      iconContainerClassName: g.iconContainer,
+      iconContainerClassName: h.iconContainer,
       compact: n,
       children: (0, r.jsxs)("div", {
-        className: l()(g.content, {
-          [g.compact]: n
+        className: a()(h.content, {
+          [h.compact]: n
         }),
         children: [(0, r.jsx)(c.nD, {
           message: t,
-          messageClassname: g.spanCorrection,
-          className: l()(g.usernameContainer, g.spanCorrection, {
-            [g.compact]: n
+          messageClassname: h.spanCorrection,
+          className: a()(h.usernameContainer, h.spanCorrection, {
+            [h.compact]: n
           }),
           username: (0, r.jsxs)("div", {
-            className: g.spanCorrection,
-            children: [(0, r.jsx)(a.Text, {
+            className: h.spanCorrection,
+            children: [(0, r.jsx)(o.Text, {
               variant: "text-md/normal",
               color: "text-brand",
               tag: "span",
-              className: g.username,
-              children: f.intl.string(f.t.hG1StL)
-            }), (0, r.jsx)(o.Z, {
-              type: m.Hb.SYSTEM_DM,
-              className: g.systemTag
+              className: h.username,
+              children: p.intl.string(p.t.hG1StL)
+            }), (0, r.jsx)(s.Z, {
+              type: _.Hb.SYSTEM_DM,
+              className: h.systemTag
             })]
           }),
           compact: n,
           showTimestamp: !0
         }), (0, r.jsx)("div", {
-          className: l()(g.__invalid_messageContent, {
-            [g.compact]: n
+          className: a()(h.__invalid_messageContent, {
+            [h.compact]: n
           }),
-          children: t.type === p.uaV.GUILD_INCIDENT_ALERT_MODE_ENABLED ? f.intl.format(f.t["+m8eDw"], {
-            username: _.nick,
-            usernameHook: h,
-            time: v
-          }) : f.intl.format(f.t.BHeke3, {
-            username: _.nick,
-            usernameHook: h
+          children: t.type === f.uaV.GUILD_INCIDENT_ALERT_MODE_ENABLED ? p.intl.format(p.t["+m8eDw"], {
+            username: m.nick,
+            usernameHook: g,
+            time: O
+          }) : p.intl.format(p.t.BHeke3, {
+            username: m.nick,
+            usernameHook: g
           })
         })]
       })

@@ -1,7 +1,7 @@
 /** Chunk was on 71879 **/
 "use strict";
 n.d(t, {
-  $x: () => l,
+  $x: () => a,
   GV: () => s,
   S$: () => g,
   Vn: () => o,
@@ -9,8 +9,8 @@ n.d(t, {
 });
 var r = n(73800),
   i = n(31775),
-  a = n.n(i);
-let l = 0,
+  l = n.n(i);
+let a = 0,
   s = 4,
   o = 4,
   c = "absolute",
@@ -91,7 +91,7 @@ let l = 0,
       }]
     }
   },
-  u = new(a())({
+  u = new(l())({
     max: 100
   });
 
@@ -106,8 +106,8 @@ function m(e) {
       numAttachments: t,
       containerWidth: n,
       containerHeight: r
-    } = e, i = "".concat(t, "-").concat(n, "-").concat(r), a = u.get(i);
-    if (null != a) return a;
+    } = e, i = "".concat(t, "-").concat(n, "-").concat(r), l = u.get(i);
+    if (null != l) return l;
     {
       let e = d(n, r, t, 4);
       return u.set(i, e), e
@@ -133,6 +133,6 @@ function g(e) {
     imageContainerStyles: t,
     containerWidth: n,
     containerHeight: i
-  } = e, a = r.useRef(h(t)), l = r.useRef(n), s = r.useRef(i), o = n > l.current + 100, c = i > s.current + 100;
-  return (o || c) && (a.current = h(t)), a.current
+  } = e, l = r.useRef(h(t)), a = r.useRef(n), s = r.useRef(i), o = n > a.current + 100, c = i > s.current + 100;
+  return (o || c) && (l.current = h(t)), l.current
 }

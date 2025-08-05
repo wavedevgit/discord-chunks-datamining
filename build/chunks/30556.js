@@ -1,6 +1,6 @@
-/** Chunk was on 37048 **/
+/** Chunk was on 56285 **/
 t.d(n, {
-  Z: () => c
+  Z: () => d
 });
 var l = t(255367);
 t(73800);
@@ -9,11 +9,11 @@ var r = t(481060),
   o = t(475413),
   s = t(388032);
 
-function c(e) {
+function d(e) {
   var {
     type: n,
     userId: t,
-    onClose: c
+    onClose: d
   } = e, a = function(e, n) {
     if (null == e) return {};
     var t, l, r = function(e, n) {
@@ -29,8 +29,8 @@ function c(e) {
     }
     return r
   }(e, ["type", "userId", "onClose"]);
-  let u = n === o.j8.TEXT ? o.tG : o.ef;
-  return (0, l.jsx)(u, function(e) {
+  let c = n === o.j8.TEXT ? o.tG : o.ef;
+  return (0, l.jsx)(c, function(e) {
     for (var n = 1; n < arguments.length; n++) {
       var t = null != arguments[n] ? arguments[n] : {},
         l = Object.keys(t);
@@ -55,7 +55,7 @@ function c(e) {
     onClick: () => {
       i.Z.openPrivateChannel({
         recipientIds: t
-      }), null == c || c()
+      }), null == d || d()
     }
   }, a))
 }

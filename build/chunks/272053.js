@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => j
+  Z: () => M
 }), n(388685), n(35282), n(415506), n(539854), n(993155);
 var r, i = n(348327),
   a = n.n(i),
@@ -37,12 +37,12 @@ let g = "33kozedd0zs6fbauka98psnc7zwom2s",
   N = new Set,
   C = {};
 
-function R(e) {
+function w(e) {
   var t;
   return null == (t = v.exec(e)) ? void 0 : t[1]
 }
 
-function P(e, t, n) {
+function R(e, t, n) {
   return s.tn.get({
     url: "".concat(O).concat(e),
     query: t,
@@ -53,7 +53,7 @@ function P(e, t, n) {
     rejectWithError: !1
   })
 }
-async function w(e, t) {
+async function P(e, t) {
   var n;
   let r = C[e];
   if (null != r) return r;
@@ -61,7 +61,7 @@ async function w(e, t) {
     body: {
       data: i
     }
-  } = await P("/games", {
+  } = await R("/games", {
     id: e
   }, t), a = null == (n = i[0]) ? void 0 : n.name;
   return C[e] = a, a
@@ -85,7 +85,7 @@ class D {
         body: {
           data: a
         }
-      } = await P("/streams", {
+      } = await R("/streams", {
         user_id: e.id,
         first: 1
       }, t), o = a[0];
@@ -96,7 +96,7 @@ class D {
         title: c
       } = o, f = {
         large_image: null != s && null != (r = (0, d.f)(h.ABu.TWITCH, s)) ? r : void 0
-      }, _ = await w(l, t), p = u.Z.get(h.ABu.TWITCH), m = null != (i = R(s)) ? i : e.name, g = null != c && "" !== c ? c.slice(0, I) : void 0, E = null != _ && "" !== _ ? _.slice(0, I) : void 0;
+      }, _ = await P(l, t), p = u.Z.get(h.ABu.TWITCH), m = null != (i = w(s)) ? i : e.name, g = null != c && "" !== c ? c.slice(0, I) : void 0, E = null != _ && "" !== _ ? _.slice(0, I) : void 0;
       return {
         url: null == (n = p.getPlatformUserUrl) ? void 0 : n.call(p, {
           id: e.id,
@@ -187,12 +187,12 @@ function x() {
   p.Z.enabled ? L.start() : L.stop()
 }
 
-function M(e) {
+function k(e) {
   var t;
   if (a()(e.stream, T)) return !1;
   T = null != (t = e.stream) ? t : null
 }
-class k extends(r = o.ZP.Store) {
+class j extends(r = o.ZP.Store) {
   initialize() {
     x(), this.waitFor(_.Z), this.syncWith([p.Z], x)
   }
@@ -200,8 +200,8 @@ class k extends(r = o.ZP.Store) {
     return T
   }
 }
-m(k, "displayName", "ExternalStreamingStore");
-let j = new k(l.Z, {
-  STREAMING_UPDATE: M,
+m(j, "displayName", "ExternalStreamingStore");
+let M = new j(l.Z, {
+  STREAMING_UPDATE: k,
   USER_CONNECTIONS_UPDATE: () => L._check()
 })

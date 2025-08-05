@@ -1,4 +1,5 @@
-/** Chunk was on 94313 **/
+/** Chunk was on web.js **/
+"use strict";
 e.exports = {
   embedCard: "embedCard__44c9a",
   compact: "compact__44c9a",

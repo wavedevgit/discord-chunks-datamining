@@ -1,55 +1,56 @@
-/** Chunk was on 60173 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
-  Z: () => g
+  Z: () => m
 });
 var r = n(255367);
 n(73800);
 var i = n(100527),
-  l = n(906732),
-  a = n(779618),
-  o = n(446226),
-  s = n(441167),
+  a = n(906732),
+  o = n(779618),
+  s = n(446226),
+  l = n(441167),
   c = n(822183),
   u = n(131951),
   d = n(213652),
-  p = n(320427),
-  h = n(145010),
-  f = n(159909),
-  m = n(531675);
+  f = n(320427),
+  _ = n(145010),
+  p = n(159909),
+  h = n(531675);
 
-function g(e) {
+function m(e) {
   let {
     channel: t,
     hasActiveStream: n,
-    showRightDivider: g = !1
+    showRightDivider: m = !1
   } = e, {
-    analyticsLocations: b
-  } = (0, l.ZP)(i.Z.VOICE_CONTROL_TRAY), _ = (0, o.Z)(), {
-    isSharedCanvasEnabled: y
+    analyticsLocations: g
+  } = (0, a.ZP)(i.Z.VOICE_CONTROL_TRAY), E = null != (0, s.Z)(), {
+    isSharedCanvasEnabled: b
   } = c.Z.useExperiment({
     guildId: null == t ? void 0 : t.guild_id,
     location: "b7309a_1"
   }), {
-    enableViewerClipping: C
-  } = s.Z.useExperiment({
+    enableViewerClipping: y
+  } = l.Z.useExperiment({
     location: "VoiceEffectsActionBar"
   }, {
     autoTrackExposure: !1
-  }), x = (0, a.Z)(u.Z);
-  if (null == t || null != _) return null;
-  let v = C && x,
-    j = y && n;
-  return (0, r.jsxs)(l.Gt, {
-    value: b,
+  }), O = (0, o.Z)(u.Z);
+  if (null == t || E) return null;
+  let v = y && O,
+    I = b && n;
+  return (0, r.jsxs)(a.Gt, {
+    value: g,
     children: [(0, r.jsxs)("div", {
-      className: m.voiceEffectsActionBar,
+      className: h.voiceEffectsActionBar,
       children: [v && (0, r.jsx)(d.Z, {
         channel: t
-      }), j && (0, r.jsx)(p.Z, {}), j && (0, r.jsx)(h.Z, {
+      }), I && (0, r.jsx)(f.Z, {}), I && (0, r.jsx)(_.Z, {
         channel: t
-      }), j && (0, r.jsx)(f.Z, {})]
-    }), g && (v || j) && (0, r.jsx)("div", {
-      className: m.divider
+      }), I && (0, r.jsx)(p.Z, {})]
+    }), m && (v || I) && (0, r.jsx)("div", {
+      className: h.divider
     })]
   })
 }

@@ -58,9 +58,9 @@ function v(e) {
     location: "UserSettingsAuthedApps"
   }, {
     autoTrackExposure: !0
-  }).enabled, C = (0, a.e7)([g.Z], () => g.Z.getUserProfile(t.id)), R = null == C ? void 0 : C.application, P = (0, f.Z)({
+  }).enabled, C = (0, a.e7)([g.Z], () => g.Z.getUserProfile(t.id)), w = null == C ? void 0 : C.application, R = (0, f.Z)({
     user: t,
-    application: null != R ? R : void 0,
+    application: null != w ? w : void 0,
     guildId: n,
     onItemClick: () => {
       T({
@@ -68,7 +68,7 @@ function v(e) {
         analyticsLocations: S
       }), null == v || v()
     }
-  }), w = (0, _.Z)({
+  }), P = (0, _.Z)({
     user: t,
     guildId: n,
     location: A,
@@ -103,17 +103,17 @@ function v(e) {
       analyticsLocations: S
     })
   }), x = (0, d.Z)({
-    id: null == R ? void 0 : R.id,
+    id: null == w ? void 0 : w.id,
     label: b.intl.string(b.t["+NP/b2"]),
     onSuccess: () => T({
       action: "COPY_APP_ID",
       analyticsLocations: S
     })
-  }), M = [
-    [y], N ? [P] : [],
-    [D, w, L],
+  }), k = [
+    [y], N ? [R] : [],
+    [D, P, L],
     [(0, u.Z)({
-      application: R,
+      application: w,
       label: b.intl.string(b.t.WqhZsr),
       onSuccess: () => T({
         action: "COPY_APP_LINK",
@@ -121,7 +121,7 @@ function v(e) {
       })
     }), x]
   ];
-  return M.every(e => e.every(e => null == e)) ? null : (0, r.jsx)(o.yRy, {
+  return k.every(e => e.every(e => null == e)) ? null : (0, r.jsx)(o.yRy, {
     targetElementRef: I,
     renderPopout: e => {
       let {
@@ -132,7 +132,7 @@ function v(e) {
         onSelect: void 0,
         onClose: t,
         "aria-label": b.intl.string(b.t.AXIHpa),
-        children: M.map((e, t) => (0, r.jsx)(o.kSQ, {
+        children: k.map((e, t) => (0, r.jsx)(o.kSQ, {
           children: e.map(e => e)
         }, t))
       })

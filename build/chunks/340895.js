@@ -2,7 +2,7 @@
 "use strict";
 let r;
 n.d(t, {
-  Z: () => k
+  Z: () => j
 }), n(388685);
 var i, a = n(442837),
   o = n(433517),
@@ -77,7 +77,7 @@ function C(e) {
   return !!T.has(t) && !r && N(t)
 }
 
-function R(e) {
+function w(e) {
   let {
     channelId: t
   } = e;
@@ -87,14 +87,14 @@ function R(e) {
   }).enabled && !!e.ringing.includes(f.default.getId())) && N(t)
 }
 
-function P(e) {
+function R(e) {
   let {
     channelId: t
   } = e;
   return N(t)
 }
 
-function w(e) {
+function P(e) {
   let {
     x: t,
     y: n
@@ -124,7 +124,7 @@ function x() {
     null != (null == (n = _.Z.getChannel(r)) ? void 0 : n.guild_id) && (l.Z.getGuildRingingUsers(r).has(e) || N(r))
   })
 }
-class M extends(i = a.ZP.Store) {
+class k extends(i = a.ZP.Store) {
   initialize() {
     this.waitFor(_.Z, p.Z), this.syncWith([p.Z], L), this.syncWith([u.Z], L), this.syncWith([l.Z], x)
   }
@@ -141,14 +141,14 @@ class M extends(i = a.ZP.Store) {
     return !S && T.size > 0
   }
 }
-g(M, "displayName", "IncomingCallStore");
-let k = new M(s.Z, {
+g(k, "displayName", "IncomingCallStore");
+let j = new k(s.Z, {
   CALL_CREATE: C,
   CALL_UPDATE: C,
-  CALL_DELETE: R,
+  CALL_DELETE: w,
   GUILD_RING_START: C,
-  GUILD_RING_STOP: R,
-  VOICE_CHANNEL_SELECT: P,
-  INCOMING_CALL_MOVE: w,
+  GUILD_RING_STOP: w,
+  VOICE_CHANNEL_SELECT: R,
+  INCOMING_CALL_MOVE: P,
   CHANNEL_DELETE: D
 })

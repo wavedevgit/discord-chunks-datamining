@@ -1,4 +1,4 @@
-/** Chunk was on 70663 **/
+/** Chunk was on 92357 **/
 n.d(t, {
   u: () => D
 }), n(388685);
@@ -6,8 +6,8 @@ var r = n(255367),
   i = n(73800),
   l = n(91192),
   o = n(442837),
-  a = n(433517),
-  s = n(481060),
+  s = n(433517),
+  a = n(481060),
   c = n(339149),
   u = n(864682),
   d = n(550385),
@@ -17,8 +17,8 @@ var r = n(255367),
   g = n(155409),
   m = n(944486),
   b = n(594174),
-  _ = n(431),
-  O = n(774343),
+  O = n(431),
+  _ = n(774343),
   y = n(417363),
   C = n(941128),
   v = n(780570),
@@ -30,8 +30,8 @@ var r = n(255367),
   P = n(981631),
   N = n(474936),
   w = n(871465),
-  T = n(388032),
-  Z = n(823306);
+  Z = n(388032),
+  T = n(823306);
 let A = {
   origin: {
     x: -16,
@@ -53,26 +53,26 @@ function R(e) {
     badge: p,
     link: m,
     showProgressBadge: b
-  } = e, [_, O] = i.useState(!1), [y, C] = i.useState(!1), [v, j] = i.useState(null), [N, R] = i.useState(0), D = (0, l.Ie)("home"), L = (0, d.oq)().activePanel === d.wh.APP_ICON, M = () => {
+  } = e, [O, _] = i.useState(!1), [y, C] = i.useState(!1), [v, j] = i.useState(null), [N, R] = i.useState(0), D = (0, l.Ie)("home"), L = (0, d.oq)().activePanel === d.wh.APP_ICON, M = () => {
     j(null), R(0), clearTimeout(v)
   };
   if (null == h) return null;
-  let k = T.intl.string(T.t.YUU0RE);
-  y && (k = a.K.get(P.wli) ? T.intl.string(T.t.nkq1l5) : T.intl.string(T.t.Be8Q5O));
+  let k = Z.intl.string(Z.t.YUU0RE);
+  y && (k = s.K.get(P.wli) ? Z.intl.string(Z.t.nkq1l5) : Z.intl.string(Z.t.Be8Q5O));
   let U = null;
   !o && b && (U = (0, r.jsx)(c.Z, {
-    className: Z.downloadProgress,
+    className: T.downloadProgress,
     determineOwnVisibility: !1
   }));
-  let G = o || _ || L,
-    B = (0, r.jsx)(s.aRk, {
+  let G = o || O || L,
+    B = (0, r.jsx)(a.aRk, {
       selected: !0,
       lowerBadge: p > 0 ? (0, I.Ne)(p) : null,
       upperBadge: U,
       lowerBadgeSize: {
-        width: (0, s.OVM)(p)
+        width: (0, a.OVM)(p)
       },
-      children: (0, r.jsx)(s.LYs, (t = function(e) {
+      children: (0, r.jsx)(a.LYs, (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -90,19 +90,19 @@ function R(e) {
         }
         return e
       }({
-        onMouseEnter: () => O(!0),
-        onMouseLeave: () => O(!1),
+        onMouseEnter: () => _(!0),
+        onMouseLeave: () => _(!1),
         onClick: () => {
           if (!__OVERLAY__ && (null != v && clearTimeout(v), j(setTimeout(M, 500)), R(N + 1), 15 === N)) {
             M();
-            let e = !a.K.get(P.wli);
-            a.K.set(P.wli, e), e && a.K.set(w.O5, !0), e ? (0, f.GN)("discodo") : (0, f.GN)("user_leave"), C(!0), setTimeout(() => {
+            let e = !s.K.get(P.wli);
+            s.K.set(P.wli, e), e && s.K.set(w.O5, !0), e ? (0, f.GN)("discodo") : (0, f.GN)("user_leave"), C(!0), setTimeout(() => {
               C(!1)
             }, 1e3)
           }
         },
         selected: G,
-        ariaLabel: T.intl.string(T.t.YUU0RE),
+        ariaLabel: Z.intl.string(Z.t.YUU0RE),
         "aria-owns": "guild-list-unread-dms",
         "aria-selected": o
       }, D), n = n = {
@@ -129,7 +129,7 @@ function R(e) {
       }), t))
     });
   return (0, r.jsx)("div", {
-    className: Z.tutorialContainer,
+    className: T.tutorialContainer,
     children: (0, r.jsx)(g.Z, {
       inlineSpecs: A,
       tutorialId: "friends-list",
@@ -137,10 +137,10 @@ function R(e) {
       children: (0, r.jsxs)(S.H, {
         children: [(0, r.jsx)(E.Z, {
           selected: o,
-          hovered: _,
-          className: Z.pill
+          hovered: O,
+          className: T.pill
         }), (0, r.jsx)(x.Z, {
-          color: s.ua7.Colors.PRIMARY,
+          color: a.ua7.Colors.PRIMARY,
           hideOnClick: !0,
           text: k,
           selected: o,
@@ -166,17 +166,17 @@ function D() {
     i = Object.keys(N.nG),
     {
       unviewedTrialCount: l,
-      unviewedDiscountCount: a
-    } = (0, o.cj)([_.Z], () => ({
-      unviewedTrialCount: _.Z.getUnacknowledgedOffers(i).length,
-      unviewedDiscountCount: _.Z.getUnacknowledgedDiscountOffers().length
+      unviewedDiscountCount: s
+    } = (0, o.cj)([O.Z], () => ({
+      unviewedTrialCount: O.Z.getUnacknowledgedOffers(i).length,
+      unviewedDiscountCount: O.Z.getUnacknowledgedDiscountOffers().length
     })),
-    s = l + a,
+    a = l + s,
     u = (0, o.e7)([b.default], () => b.default.getCurrentUser()),
     d = (0, h.q)(),
-    f = n + s + d,
-    g = f === s && s > 0 && n + d === 0,
-    E = O.Z.getHomeLink();
+    f = n + a + d,
+    g = f === a && a > 0 && n + d === 0,
+    E = _.Z.getHomeLink();
   return g && (E = P.Z5c.APPLICATION_STORE), (0, r.jsx)(R, {
     selected: e,
     user: u,

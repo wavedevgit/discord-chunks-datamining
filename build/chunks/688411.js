@@ -1,11 +1,11 @@
-/** Chunk was on 8381 **/
+/** Chunk was on web.js **/
 "use strict";
-t.exports = function(t) {
-  return t.Window && t instanceof t.Window ? {
-    x: t.pageXOffset || t.document.documentElement.scrollLeft,
-    y: t.pageYOffset || t.document.documentElement.scrollTop
+e.exports = function(e) {
+  return e.Window && e instanceof e.Window ? {
+    x: e.pageXOffset || e.document.documentElement.scrollLeft,
+    y: e.pageYOffset || e.document.documentElement.scrollTop
   } : {
-    x: t.scrollLeft,
-    y: t.scrollTop
+    x: e.scrollLeft,
+    y: e.scrollTop
   }
 }

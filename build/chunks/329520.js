@@ -66,16 +66,16 @@ function y(e) {
     C = null != N ? g.intl.format(g.t["0wJXSk"], {
       name: N
     }) : g.intl.string(g.t.eXan7O),
-    R = !O && null != I && null != T;
+    w = !O && null != I && null != T;
   return (0, r.jsxs)(r.Fragment, {
     children: [!b && (0, r.jsx)(_.Z, {
       icon: o.ARS,
-      tooltipText: R ? T : void 0,
-      tooltipAriaLabel: R ? (0, l.ZP)({
+      tooltipText: w ? T : void 0,
+      tooltipAriaLabel: w ? (0, l.ZP)({
         channel: I
       }) : void 0,
       className: E,
-      onTooltipShow: R ? A : void 0
+      onTooltipShow: w ? A : void 0
     }), !y && (0, r.jsx)(p.Z, {
       variant: u,
       className: h,

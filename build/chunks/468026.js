@@ -32,11 +32,11 @@ let h = e => {
       titleClassName: N
     } = e,
     C = s.zx.Sizes.MEDIUM,
-    [R, P] = i.useState(!1);
+    [w, R] = i.useState(!1);
   i.useEffect(() => () => {
-    R && (null == T || T())
-  }, [R, T]);
-  let w = () => {
+    w && (null == T || T())
+  }, [w, T]);
+  let P = () => {
       null == v || v(), null == O || O()
     },
     D = e => {
@@ -46,7 +46,7 @@ let h = e => {
     type: "button",
     size: C,
     color: s.zx.Colors.PRIMARY,
-    onClick: w,
+    onClick: P,
     className: p.secondaryButton,
     children: m
   })), null != b && "" !== b && (n = (0, r.jsx)(s.zx, {
@@ -57,8 +57,8 @@ let h = e => {
     autoFocus: !0,
     children: b
   })), null != y && "" !== y && (a = (0, r.jsx)(d.XZJ, {
-    value: R,
-    onChange: (e, t) => P(t),
+    value: w,
+    onChange: (e, t) => R(t),
     type: d.XZJ.Types.DEFAULT,
     children: (0, r.jsx)(u.x, {
       variant: "text-sm/normal",

@@ -1,14 +1,16 @@
-/** Chunk was on 66005 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
-  CI: () => l.CI,
-  J6: () => l.J6,
-  ZP: () => a
+  CI: () => a.CI,
+  J6: () => a.J6,
+  ZP: () => s
 });
 var r = n(255367);
 n(73800);
 var i = n(144830),
-  l = n(379649);
-let a = (0, i.Z)(function(e) {
+  a = n(379649);
+
+function o(e) {
   let {
     children: t,
     className: n
@@ -17,4 +19,5 @@ let a = (0, i.Z)(function(e) {
     className: n,
     children: t
   })
-})
+}
+let s = (0, i.Z)(o)

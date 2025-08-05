@@ -1,4 +1,5 @@
-/** Chunk was on 60173 **/
+/** Chunk was on web.js **/
+"use strict";
 e.exports = {
   blockedEdit: "blockedEdit_b7ab2c",
   blockedSend: "blockedSend_b7ab2c",

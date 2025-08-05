@@ -1,12 +1,12 @@
-/** Chunk was on 31978 **/
+/** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  d: () => o,
-  v: () => l
+  d: () => a,
+  v: () => i
 });
 var r = n(73800);
-let l = r.createContext(null);
+let i = r.createContext(null);
 
-function o() {
-  return r.useContext(l)
+function a() {
+  return r.useContext(i)
 }

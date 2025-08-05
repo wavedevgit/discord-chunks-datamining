@@ -1,8 +1,9 @@
-/** Chunk was on 69150 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
-  Xs: () => r
+  Xs: () => i
 });
-let i = (0, n(818083).B)({
+let r = (0, n(818083).B)({
   kind: "user",
   id: "2024-09_dm_mute_feedback",
   label: "DM Mute Feedback Experiment",
@@ -18,10 +19,10 @@ let i = (0, n(818083).B)({
   }]
 });
 
-function r(e) {
+function i(e) {
   let {
     enabled: t
-  } = i.getCurrentConfig({
+  } = r.getCurrentConfig({
     location: e
   }, {
     autoTrackExposure: !0

@@ -1,16 +1,17 @@
-/** Chunk was on 28467 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
-  xE: () => i
+  xE: () => s
 }), n(35282);
-var s = n(73800),
-  a = n(442837),
-  r = n(339085);
-let l = /^<(a?):(\w+):(\d+)>/;
+var r = n(73800),
+  i = n(442837),
+  a = n(339085);
+let o = /^<(a?):(\w+):(\d+)>/;
 
-function i(e) {
-  let t = s.useMemo(() => {
+function s(e) {
+  let t = r.useMemo(() => {
     var t;
-    return null == (t = l.exec(e)) ? void 0 : t[3]
+    return null == (t = o.exec(e)) ? void 0 : t[3]
   }, [e]);
-  return (0, a.e7)([r.ZP], () => null == t ? null : r.ZP.getCustomEmojiById(t))
+  return (0, i.e7)([a.ZP], () => null == t ? null : a.ZP.getCustomEmojiById(t))
 }

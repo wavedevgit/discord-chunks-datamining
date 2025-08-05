@@ -1,4 +1,4 @@
-/** Chunk was on 60432 **/
+/** Chunk was on 16476 **/
 e.exports = {
   shopBanner: "shopBanner__7f856",
   animationAsset: "animationAsset__7f856",

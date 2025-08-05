@@ -1,18 +1,18 @@
 /** Chunk was on 27978 **/
 n.d(t, {
-  Z: () => o
+  Z: () => a
 });
 var r = n(255367);
 n(73800);
 var i = n(120356),
   l = n.n(i),
   s = n(388905),
-  a = n(414718);
+  o = n(414718);
 
-function o(e) {
+function a(e) {
   var t, n, {
       children: i,
-      className: o
+      className: a
     } = e,
     c = function(e, t) {
       if (null == e) return {};
@@ -48,10 +48,10 @@ function o(e) {
     }
     return e
   }({}, c), n = n = {
-    className: l()(o, a.container),
-    contentClassName: a.content,
+    className: l()(a, o.container),
+    contentClassName: o.content,
     children: u.map((e, t) => (0, r.jsx)("div", {
-      className: a.column,
+      className: o.column,
       style: {
         flexBasis: "".concat(100 / u.length, "%")
       },

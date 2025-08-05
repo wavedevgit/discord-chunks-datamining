@@ -1,4 +1,5 @@
-/** Chunk was on 60173 **/
+/** Chunk was on web.js **/
+"use strict";
 e.exports = {
   spacing: "spacing__89466",
   spacingTop: "spacingTop__89466",

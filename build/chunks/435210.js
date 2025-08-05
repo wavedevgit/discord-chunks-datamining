@@ -75,7 +75,7 @@ function f(e) {
 }
 
 function _(e, n, r) {
-  if (e.customInspect && n && R(n.inspect) && n.inspect !== t.inspect && !(n.constructor && n.constructor.prototype === n)) {
+  if (e.customInspect && n && w(n.inspect) && n.inspect !== t.inspect && !(n.constructor && n.constructor.prototype === n)) {
     var i, a = n.inspect(r, e);
     return I(a) || (a = _(e, a, r)), a
   }
@@ -85,7 +85,7 @@ function _(e, n, r) {
     l = f(s);
   if (e.showHidden && (s = Object.getOwnPropertyNames(n)), C(n) && (s.indexOf("message") >= 0 || s.indexOf("description") >= 0)) return h(n);
   if (0 === s.length) {
-    if (R(n)) {
+    if (w(n)) {
       var c = n.name ? ": " + n.name : "";
       return e.stylize("[Function" + c + "]", "special")
     }
@@ -96,7 +96,7 @@ function _(e, n, r) {
   var u = "",
     d = !1,
     y = ["{", "}"];
-  if (b(n) && (d = !0, y = ["[", "]"]), R(n) && (u = " [Function" + (n.name ? ": " + n.name : "") + "]"), S(n) && (u = " " + RegExp.prototype.toString.call(n)), N(n) && (u = " " + Date.prototype.toUTCString.call(n)), C(n) && (u = " " + h(n)), 0 === s.length && (!d || 0 == n.length)) return y[0] + u + y[1];
+  if (b(n) && (d = !0, y = ["[", "]"]), w(n) && (u = " [Function" + (n.name ? ": " + n.name : "") + "]"), S(n) && (u = " " + RegExp.prototype.toString.call(n)), N(n) && (u = " " + Date.prototype.toUTCString.call(n)), C(n) && (u = " " + h(n)), 0 === s.length && (!d || 0 == n.length)) return y[0] + u + y[1];
   if (r < 0)
     if (S(n)) return e.stylize(RegExp.prototype.toString.call(n), "regexp");
     else return e.stylize("[Object]", "special");
@@ -172,7 +172,7 @@ function T(e) {
 }
 
 function S(e) {
-  return A(e) && "[object RegExp]" === P(e)
+  return A(e) && "[object RegExp]" === R(e)
 }
 
 function A(e) {
@@ -180,22 +180,22 @@ function A(e) {
 }
 
 function N(e) {
-  return A(e) && "[object Date]" === P(e)
+  return A(e) && "[object Date]" === R(e)
 }
 
 function C(e) {
-  return A(e) && ("[object Error]" === P(e) || e instanceof Error)
-}
-
-function R(e) {
-  return "function" == typeof e
-}
-
-function P(e) {
-  return Object.prototype.toString.call(e)
+  return A(e) && ("[object Error]" === R(e) || e instanceof Error)
 }
 
 function w(e) {
+  return "function" == typeof e
+}
+
+function R(e) {
+  return Object.prototype.toString.call(e)
+}
+
+function P(e) {
   return e < 10 ? "0" + e.toString(10) : e.toString(10)
 }
 t.debuglog = function(e) {
@@ -235,14 +235,14 @@ t.debuglog = function(e) {
   return null == e
 }, t.isNumber = v, t.isString = I, t.isSymbol = function(e) {
   return "symbol" == typeof e
-}, t.isUndefined = T, t.isRegExp = S, t.types.isRegExp = S, t.isObject = A, t.isDate = N, t.types.isDate = N, t.isError = C, t.types.isNativeError = C, t.isFunction = R, t.isPrimitive = function(e) {
+}, t.isUndefined = T, t.isRegExp = S, t.types.isRegExp = S, t.isObject = A, t.isDate = N, t.types.isDate = N, t.isError = C, t.types.isNativeError = C, t.isFunction = w, t.isPrimitive = function(e) {
   return null === e || "boolean" == typeof e || "number" == typeof e || "string" == typeof e || "symbol" == typeof e || void 0 === e
 }, t.isBuffer = n(102439);
 var D = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 
 function L() {
   var e = new Date,
-    t = [w(e.getHours()), w(e.getMinutes()), w(e.getSeconds())].join(":");
+    t = [P(e.getHours()), P(e.getMinutes()), P(e.getSeconds())].join(":");
   return [e.getDate(), D[e.getMonth()], t].join(" ")
 }
 
@@ -256,9 +256,9 @@ t.log = function() {
   for (var n = Object.keys(t), r = n.length; r--;) e[n[r]] = t[n[r]];
   return e
 };
-var M = "undefined" != typeof Symbol ? Symbol("util.promisify.custom") : void 0;
+var k = "undefined" != typeof Symbol ? Symbol("util.promisify.custom") : void 0;
 
-function k(e, t) {
+function j(e, t) {
   if (!e) {
     var n = Error("Promise was rejected with a falsy value");
     n.reason = e, e = n
@@ -267,10 +267,10 @@ function k(e, t) {
 }
 t.promisify = function(e) {
   if ("function" != typeof e) throw TypeError('The "original" argument must be of type Function');
-  if (M && e[M]) {
-    var t = e[M];
+  if (k && e[k]) {
+    var t = e[k];
     if ("function" != typeof t) throw TypeError('The "util.promisify.custom" argument must be of type Function');
-    return Object.defineProperty(t, M, {
+    return Object.defineProperty(t, k, {
       value: t,
       enumerable: !1,
       writable: !1,
@@ -292,13 +292,13 @@ t.promisify = function(e) {
     }
     return r
   }
-  return Object.setPrototypeOf(t, Object.getPrototypeOf(e)), M && Object.defineProperty(t, M, {
+  return Object.setPrototypeOf(t, Object.getPrototypeOf(e)), k && Object.defineProperty(t, k, {
     value: t,
     enumerable: !1,
     writable: !1,
     configurable: !0
   }), Object.defineProperties(t, i(e))
-}, t.promisify.custom = M, t.callbackify = function(e) {
+}, t.promisify.custom = k, t.callbackify = function(e) {
   if ("function" != typeof e) throw TypeError('The "original" argument must be of type Function');
 
   function t() {
@@ -312,7 +312,7 @@ t.promisify = function(e) {
     e.apply(this, t).then(function(e) {
       r.nextTick(o.bind(null, null, e))
     }, function(e) {
-      r.nextTick(k.bind(null, e, o))
+      r.nextTick(j.bind(null, e, o))
     })
   }
   return Object.setPrototypeOf(t, Object.getPrototypeOf(e)), Object.defineProperties(t, i(e)), t

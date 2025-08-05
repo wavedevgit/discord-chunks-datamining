@@ -1,4 +1,4 @@
-/** Chunk was on 60173 **/
+/** Chunk was on 49152 **/
 n.d(t, {
   Z: () => f
 }), n(388685);
@@ -6,35 +6,35 @@ var r = n(255367),
   i = n(73800),
   l = n(399606),
   a = n(704215),
-  o = n(952265),
-  s = n(481060),
+  s = n(952265),
+  o = n(481060),
   c = n(243778),
-  u = n(38618),
-  d = n(914010),
-  p = n(921944);
+  d = n(38618),
+  u = n(914010),
+  h = n(921944);
 
-function h(e) {
-  return "dismissible_content_".concat(p.R.GUILD_TAKEOVER_MODAL, "-").concat(e)
+function p(e) {
+  return "dismissible_content_".concat(h.R.GUILD_TAKEOVER_MODAL, "-").concat(e)
 }
 let f = i.memo(function() {
-  let e = ((0, l.e7)([u.Z], () => u.Z.isConnected()), []),
-    [t, f] = (0, c.US)(e, p.R.GUILD_TAKEOVER_MODAL),
-    m = (0, o.f9)(),
-    g = i.useRef(null);
+  let e = ((0, l.e7)([d.Z], () => d.Z.isConnected()), []),
+    [t, f] = (0, c.US)(e, h.R.GUILD_TAKEOVER_MODAL),
+    g = (0, s.f9)(),
+    m = i.useRef(null);
   return i.useEffect(() => {
     if (null == t) {
-      g.current = null;
+      m.current = null;
       return
     }
-    m || g.current === t || (! function(e) {
+    g || m.current === t || (! function(e) {
       let {
         dismissibleContent: t,
         markAsDismissed: i
       } = e, l = {
-        onCloseCallback: e => i(null != e ? e : p.L.UNKNOWN),
-        modalKey: h(t)
-      }, o = d.Z.getGuildId();
-      t === a.z.SERVER_SHOP_UPSELL && null != o && (0, s.ZDy)(async () => {
+        onCloseCallback: e => i(null != e ? e : h.L.UNKNOWN),
+        modalKey: p(t)
+      }, s = u.Z.getGuildId();
+      t === a.z.SERVER_SHOP_UPSELL && null != s && (0, o.ZDy)(async () => {
         let {
           default: e
         } = await n.e("7302").then(n.bind(n, 756779));
@@ -58,7 +58,7 @@ let f = i.memo(function() {
             }
             return e
           }({}, t), l = l = {
-            guildId: o,
+            guildId: s,
             markAsDismissed: i
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
             var n = Object.keys(e);
@@ -75,8 +75,8 @@ let f = i.memo(function() {
     }({
       dismissibleContent: t,
       markAsDismissed: f
-    }), g.current = t)
-  }, [t, m, f]), i.useEffect(() => () => {
-    null != t && (0, o.Mr)(h(t))
+    }), m.current = t)
+  }, [t, g, f]), i.useEffect(() => () => {
+    null != t && (0, s.Mr)(p(t))
   }, [t]), null
 })

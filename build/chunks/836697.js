@@ -1,4 +1,4 @@
-/** Chunk was on 70663 **/
+/** Chunk was on 92357 **/
 n.d(t, {
   Z: () => y
 }), n(388685), n(539854);
@@ -6,8 +6,8 @@ var r = n(255367),
   i = n(73800),
   l = n(442837),
   o = n(481060),
-  a = n(110924),
-  s = n(693546),
+  s = n(110924),
+  a = n(693546),
   c = n(863249),
   u = n(937111),
   d = n(914010),
@@ -17,32 +17,32 @@ var r = n(255367),
   g = n(179809),
   m = n(588275),
   b = n(388032),
-  _ = n(315268);
+  O = n(315268);
 
-function O(e) {
+function _(e) {
   let {
     onActivate: t,
     children: n
-  } = e, s = i.useRef(null), d = (0, l.e7)([u.Z], () => u.Z.hasJoinRequestCoackmark()), h = i.useCallback(() => {
+  } = e, a = i.useRef(null), d = (0, l.e7)([u.Z], () => u.Z.hasJoinRequestCoackmark()), h = i.useCallback(() => {
     c.ZP.clearCoachmark()
-  }, []), p = (0, a.Z)(d), f = i.useRef(null);
+  }, []), p = (0, s.Z)(d), f = i.useRef(null);
   return i.useEffect(() => {
     if (d && d !== p) {
       var e, n, r, i, l;
       t(), null == (l = f.current) || null == (i = l.ref) || null == (r = i.current) || null == (n = r.layerRef) || null == (e = n.current) || e.updatePosition()
     }
   }, [f, d, p, t]), (0, r.jsxs)("div", {
-    className: _.container,
+    className: O.container,
     children: [(0, r.jsx)(o.yRy, {
       ref: f,
-      targetElementRef: s,
+      targetElementRef: a,
       shouldShow: d,
       renderPopout: () => (0, r.jsxs)("div", {
-        className: _.popoutContainer,
+        className: O.popoutContainer,
         children: [(0, r.jsxs)("div", {
-          className: _.popoutContent,
+          className: O.popoutContent,
           children: [(0, r.jsxs)("div", {
-            className: _.coachmarkTextContainer,
+            className: O.coachmarkTextContainer,
             children: [(0, r.jsx)(o.X6q, {
               variant: "heading-md/medium",
               children: b.intl.string(b.t["0YV0YG"])
@@ -59,7 +59,7 @@ function O(e) {
             onClick: h
           })]
         }), (0, r.jsx)("div", {
-          className: _.popoutCaretLeft
+          className: O.popoutCaretLeft
         })]
       }),
       position: "right",
@@ -86,8 +86,8 @@ function O(e) {
           }
           return e
         }({}, e), n = n = {
-          className: _.popoutAnchor,
-          ref: s
+          className: O.popoutAnchor,
+          ref: a
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
@@ -106,7 +106,7 @@ function O(e) {
 function y(e) {
   let {
     onActivate: t
-  } = e, [n, y] = i.useState(!1), C = (0, l.e7)([d.Z], () => d.Z.getGuildId()), v = (0, l.e7)([u.Z], () => u.Z.hasFetchedRequestToJoinGuilds), j = (0, f.Z)(), E = (0, a.Z)(C), S = i.useMemo(() => {
+  } = e, [n, y] = i.useState(!1), C = (0, l.e7)([d.Z], () => d.Z.getGuildId()), v = (0, l.e7)([u.Z], () => u.Z.hasFetchedRequestToJoinGuilds), j = (0, f.Z)(), E = (0, s.Z)(C), S = i.useMemo(() => {
     let e = (0, p.qQ)({
       folderId: h.S.PENDING_JOIN_REQUESTS_FOLDER,
       folderName: b.intl.string(b.t["scsU+v"]),
@@ -117,12 +117,12 @@ function y(e) {
     return e
   }, [j, n]);
   i.useEffect(() => {
-    n && !v && s.Z.fetchRequestToJoinGuilds()
+    n && !v && a.Z.fetchRequestToJoinGuilds()
   }, [n, v]);
   let x = null != C && j.includes(C);
   return (i.useEffect(() => {
     !n && x && E !== C && y(!0)
-  }, [n, x, E, C]), 0 === j.length) ? null : (0, r.jsx)(O, {
+  }, [n, x, E, C]), 0 === j.length) ? null : (0, r.jsx)(_, {
     onActivate: t,
     children: (0, r.jsx)(g.Z, {
       folderNode: S,
@@ -135,7 +135,7 @@ function y(e) {
       },
       folderButtonSize: "icon",
       folderButtonContent: (0, r.jsx)("div", {
-        className: _.pendingFolderButtonIcon,
+        className: O.pendingFolderButtonIcon,
         children: (0, r.jsx)(o.wGF, {
           size: "sm",
           color: "currentColor"

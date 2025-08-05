@@ -1,4 +1,5 @@
-/** Chunk was on 60173 **/
+/** Chunk was on web.js **/
+"use strict";
 e.exports = {
   popoutWrapper: "popoutWrapper__7fe3a",
   mounted: "mounted__7fe3a",

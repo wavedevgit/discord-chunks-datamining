@@ -1,54 +1,54 @@
-/** Chunk was on 1268 **/
+/** Chunk was on 16459 **/
 r.d(t, {
-  Z: () => O
+  Z: () => x
 });
 var n = r(255367),
   i = r(73800),
-  l = r(442837),
-  a = r(481060),
+  a = r(442837),
+  l = r(481060),
   s = r(239091),
   o = r(129861),
   c = r(138182),
   u = r(956221),
   d = r(747017),
-  m = r(140701),
-  b = r(545957),
-  x = r(158776),
-  j = r(652853),
-  p = r(228168),
-  f = r(981631),
-  v = r(968823);
-let h = a.EFr.SIZE_40,
-  y = (0, a.pxk)(h);
+  p = r(140701),
+  f = r(545957),
+  b = r(158776),
+  m = r(652853),
+  j = r(228168),
+  v = r(981631),
+  O = r(968823);
+let y = l.EFr.SIZE_40,
+  g = (0, l.pxk)(y);
 
-function O(e) {
+function x(e) {
   let {
     user: t,
-    status: O,
-    guildId: g,
+    status: x,
+    guildId: h,
     channelId: P,
     onSelect: w
   } = e, {
-    theme: N,
-    themeType: Z
-  } = (0, j.z)(), S = i.useMemo(() => t.isNonUserBot() || (0, m.W)(t, P), [t, P]), {
-    activities: C,
-    isMobileOnline: k
-  } = (0, l.cj)([x.Z], () => ({
-    activities: x.Z.getActivities(t.id),
-    isMobileOnline: x.Z.isMobileOnline(t.id)
-  })), E = (0, b.Z)(t.id), {
-    voiceActivityStatusEnabled: M
+    theme: Z,
+    themeType: S
+  } = (0, m.z)(), N = i.useMemo(() => t.isNonUserBot() || (0, p.W)(t, P), [t, P]), {
+    activities: k,
+    isMobileOnline: E
+  } = (0, a.cj)([b.Z], () => ({
+    activities: b.Z.getActivities(t.id),
+    isMobileOnline: b.Z.isMobileOnline(t.id)
+  })), M = (0, f.Z)(t.id), {
+    voiceActivityStatusEnabled: C
   } = (0, c.a)({
     location: "UserProfileMutualFriendRow"
   }), {
-    voiceChannel: I
+    voiceChannel: D
   } = (0, u.Z)({
-    userId: M ? t.id : void 0,
-    guildId: g
+    userId: C ? t.id : void 0,
+    guildId: h
   });
-  return (0, n.jsxs)(a.P3F, {
-    focusProps: Z === p.lY.MODAL_V2 ? {
+  return (0, n.jsxs)(l.P3F, {
+    focusProps: S === j.lY.MODAL_V2 ? {
       offset: {
         top: 4,
         right: 4,
@@ -59,15 +59,15 @@ function O(e) {
         right: 8
       }
     },
-    className: v.row,
+    className: O.row,
     onClick: w,
     onContextMenu: e => {
       (0, s.jW)(e, async () => {
         let {
           default: e
-        } = await Promise.all([r.e("70274"), r.e("79695"), r.e("69220"), r.e("70686")]).then(r.bind(r, 881351));
+        } = await Promise.all([r.e("79695"), r.e("69220")]).then(r.bind(r, 881351));
         return r => {
-          var i, l;
+          var i, a;
           return (0, n.jsx)(e, (i = function(e) {
             for (var t = 1; t < arguments.length; t++) {
               var r = null != arguments[t] ? arguments[t] : {},
@@ -85,40 +85,40 @@ function O(e) {
               })
             }
             return e
-          }({}, r), l = l = {
+          }({}, r), a = a = {
             user: t
-          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
+          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
             var r = Object.keys(e);
             if (Object.getOwnPropertySymbols) {
               var n = Object.getOwnPropertySymbols(e);
               r.push.apply(r, n)
             }
             return r
-          })(Object(l)).forEach(function(e) {
-            Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(l, e))
+          })(Object(a)).forEach(function(e) {
+            Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(a, e))
           }), i))
         }
       })
     },
-    children: [(0, n.jsx)(a.qEK, {
-      src: t.getAvatarURL(g, y),
+    children: [(0, n.jsx)(l.qEK, {
+      src: t.getAvatarURL(h, g),
       "aria-label": t.username,
-      size: h,
-      status: S ? f.Skl.UNKNOWN : O,
-      statusBackdropColor: S ? void 0 : (0, a.QFD)(N),
-      isMobile: k,
-      className: v.avatar
+      size: y,
+      status: N ? v.Skl.UNKNOWN : x,
+      statusBackdropColor: N ? void 0 : (0, l.QFD)(Z),
+      isMobile: E,
+      className: O.avatar
     }), (0, n.jsxs)("div", {
-      className: v.details,
+      className: O.details,
       children: [(0, n.jsx)(o.Z, {
         user: t,
-        className: v.tag,
-        discriminatorClass: v.discriminator
+        className: O.tag,
+        discriminatorClass: O.discriminator
       }), (0, n.jsx)(d.Z, {
         user: t,
-        activities: C,
-        applicationStream: E,
-        voiceChannel: I
+        activities: k,
+        applicationStream: M,
+        voiceChannel: D
       })]
     })]
   })

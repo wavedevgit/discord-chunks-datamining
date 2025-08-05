@@ -1,4 +1,4 @@
-/** Chunk was on 60173 **/
+/** Chunk was on 49152 **/
 e.exports = {
   emptyWrapper: "emptyWrapper_f12222",
   emptyImage: "emptyImage_f12222",

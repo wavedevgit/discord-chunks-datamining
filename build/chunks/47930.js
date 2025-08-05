@@ -1,48 +1,49 @@
-/** Chunk was on 40694 **/
-t.d(n, {
-  b: () => a,
+/** Chunk was on web.js **/
+"use strict";
+n.d(t, {
+  b: () => l,
   x: () => c
 });
-var r = t(255367);
-t(73800);
-var l = t(385499),
-  o = t(245315),
-  i = t(368859),
-  u = t(848697);
+var r = n(255367);
+n(73800);
+var i = n(385499),
+  a = n(245315),
+  o = n(368859),
+  s = n(848697);
 
-function a(e) {
-  let n, {
-    message: t,
+function l(e) {
+  let t, {
+    message: n,
     channel: r,
-    user: u,
-    isRepliedMessage: a
+    user: s,
+    isRepliedMessage: l
   } = e;
-  return (null == t ? void 0 : t.isSystemDM()) ? n = l.Z.Types.SYSTEM_DM : null != t && (0, i.Z)(t) ? n = (0, o.cp)(t) ? l.Z.Types.OFFICIAL : l.Z.Types.SERVER : (null == u ? void 0 : u.bot) ? n = l.Z.Types.BOT : null != r && r.isForumPost() && r.ownerId === (null == u ? void 0 : u.id) && !a && (n = l.Z.Types.ORIGINAL_POSTER), n
+  return (null == n ? void 0 : n.isSystemDM()) ? t = i.Z.Types.SYSTEM_DM : null != n && (0, o.Z)(n) ? t = (0, a.cp)(n) ? i.Z.Types.OFFICIAL : i.Z.Types.SERVER : (null == s ? void 0 : s.bot) ? t = i.Z.Types.BOT : null != r && r.isForumPost() && r.ownerId === (null == s ? void 0 : s.id) && !l && (t = i.Z.Types.ORIGINAL_POSTER), t
 }
 
 function c(e) {
   let {
-    message: n,
-    channel: t,
-    user: o,
-    compact: i,
+    message: t,
+    channel: n,
+    user: a,
+    compact: o,
     isRepliedMessage: c,
-    hideIcon: s = !1,
+    hideIcon: u = !1,
     children: d
-  } = e, f = a({
-    message: n,
-    channel: t,
-    user: o,
-    compact: i,
+  } = e, f = l({
+    message: t,
+    channel: n,
+    user: a,
+    compact: o,
     isRepliedMessage: c,
-    hideIcon: s,
+    hideIcon: u,
     children: d
   });
-  return null == f ? null : (0, r.jsx)(l.Z, {
-    className: i ? u.botTagCompact : u.botTagCozy,
+  return null == f ? null : (0, r.jsx)(i.Z, {
+    className: o ? s.botTagCompact : s.botTagCozy,
     type: f,
-    verified: null == o ? void 0 : o.isVerifiedBot(),
-    hideIcon: s,
+    verified: null == a ? void 0 : a.isVerifiedBot(),
+    hideIcon: u,
     useRemSizes: !0,
     children: d
   })

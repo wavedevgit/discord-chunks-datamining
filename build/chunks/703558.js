@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => M,
+  Z: () => k,
   d: () => E
 }), n(388685), n(781311);
 var r, i = n(392711),
@@ -137,7 +137,7 @@ function C() {
   return A(), !1
 }
 
-function R(e) {
+function w(e) {
   let {
     channel: {
       id: t
@@ -148,7 +148,7 @@ function R(e) {
   return delete r[t], !1
 }
 
-function P(e) {
+function R(e) {
   let {
     channel: t
   } = e, n = u.default.getId();
@@ -172,7 +172,7 @@ function P(e) {
   }
 }
 
-function w(e) {
+function P(e) {
   e.isSwitchingAccount || (b = {})
 }
 
@@ -256,14 +256,14 @@ _(x, "displayName", "DraftStore"), _(x, "persistKey", "DraftStore"), _(x, "migra
   for (let t in e) r[t] = e[t];
   return n
 }]);
-let M = new x(s.Z, {
+let k = new x(s.Z, {
   CONNECTION_OPEN: N,
-  LOGOUT: w,
+  LOGOUT: P,
   MULTI_ACCOUNT_REMOVE_ACCOUNT: D,
   GUILD_DELETE: C,
-  CHANNEL_DELETE: R,
-  THREAD_DELETE: R,
-  THREAD_CREATE: P,
+  CHANNEL_DELETE: w,
+  THREAD_DELETE: w,
+  THREAD_CREATE: R,
   DRAFT_SAVE: v,
   DRAFT_CHANGE: v,
   DRAFT_CLEAR: I,

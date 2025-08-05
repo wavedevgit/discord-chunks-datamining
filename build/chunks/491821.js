@@ -1,4 +1,5 @@
-/** Chunk was on 94313 **/
+/** Chunk was on web.js **/
+"use strict";
 e.exports = {
   outerContainer: "outerContainer__092f9",
   outerContainerGiftInventory: "outerContainerGiftInventory__092f9",

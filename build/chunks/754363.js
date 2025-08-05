@@ -1,5 +1,6 @@
-/** Chunk was on 82961 **/
-t.exports = {
+/** Chunk was on web.js **/
+"use strict";
+e.exports = {
   row: "row__19fd1",
   iconContainer: "iconContainer__19fd1",
   icon: "icon__19fd1",

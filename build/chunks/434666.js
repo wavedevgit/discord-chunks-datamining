@@ -1,4 +1,5 @@
-/** Chunk was on 91396 **/
+/** Chunk was on web.js **/
+"use strict";
 e.exports = {
   container: "container__19cf2",
   containerPadding: "containerPadding__19cf2",

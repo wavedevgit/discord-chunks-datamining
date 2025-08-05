@@ -17,7 +17,7 @@ n.d(t, {
   sp: () => g,
   wD: () => h,
   yS: () => S,
-  z$: () => R
+  z$: () => w
 }), n(953529);
 var r = n(512722),
   i = n.n(r),
@@ -70,7 +70,7 @@ function _(e) {
 }
 
 function p(e, t, n) {
-  var r, i, l, c, u, d, f, _, p, h, m, g, E, b, y, O, v, I, T, S, A, N, C, R, P, D, x;
+  var r, i, l, c, u, d, f, _, p, h, m, g, E, b, y, O, v, I, T, S, A, N, C, w, R, D, x;
   return (0, o.oI)(s.VI, n, {
     id: e.id,
     joinedAt: t.joinedAt,
@@ -104,11 +104,11 @@ function p(e, t, n) {
     maxVideoChannelUsers: null != (A = e.max_video_channel_users) ? A : s.Cx.maxVideoChannelUsers,
     maxMembers: null != (N = e.max_members) ? N : s.Cx.maxMembers,
     nsfwLevel: null != (C = e.nsfw_level) ? C : s.Cx.nsfwLevel,
-    ownerConfiguredContentLevel: null != (R = e.owner_configured_content_level) ? R : null,
-    hubType: null != (P = e.hub_type) ? P : null,
+    ownerConfiguredContentLevel: null != (w = e.owner_configured_content_level) ? w : null,
+    hubType: null != (R = e.hub_type) ? R : null,
     latestOnboardingQuestionId: null != (D = e.latest_onboarding_question_id) ? D : null,
     profile: null != (x = e.profile) ? x : null,
-    premiumFeatures: null != e.premium_features ? w(e.premium_features) : null,
+    premiumFeatures: null != e.premium_features ? P(e.premium_features) : null,
     moderatorReporting: null != e.moderator_reporting ? L(e.moderator_reporting) : null
   })
 }
@@ -154,7 +154,7 @@ function E(e, t) {
 }
 
 function b(e) {
-  return R({
+  return w({
     id: e.id,
     name: e.name,
     description: e.description,
@@ -173,7 +173,7 @@ function b(e) {
 
 function y(e) {
   var t, n;
-  return R({
+  return w({
     id: e.id,
     name: e.name,
     description: e.description,
@@ -186,7 +186,7 @@ function y(e) {
 
 function O(e) {
   var t;
-  return R({
+  return w({
     id: e.id,
     name: e.name,
     icon: null != (t = e.icon) ? t : null
@@ -195,7 +195,7 @@ function O(e) {
 
 function v(e) {
   var t, n, r;
-  return R({
+  return w({
     id: e.id,
     name: e.name,
     icon: null != (t = e.icon) ? t : null,
@@ -207,7 +207,7 @@ function v(e) {
 
 function I(e) {
   var t, n, r, i;
-  return R({
+  return w({
     id: e.guildId,
     name: null != (t = e.name) ? t : "",
     icon: null != (n = e.icon) ? n : null,
@@ -219,7 +219,7 @@ function I(e) {
 
 function T(e) {
   var t, n, r, i;
-  return R({
+  return w({
     id: e.id,
     name: e.name,
     icon: null != (t = e.icon) ? t : null,
@@ -232,7 +232,7 @@ function T(e) {
 
 function S(e) {
   var t, n, r, i;
-  return R({
+  return w({
     id: e.id,
     name: e.name,
     icon: null != (t = e.icon) ? t : null,
@@ -245,7 +245,7 @@ function S(e) {
 
 function A(e) {
   var t, n, r, i, o, l;
-  return P({
+  return R({
     id: e.id,
     name: e.name || "",
     description: e.description || null,
@@ -336,18 +336,18 @@ function C(e) {
     features: (0, a.G)(e.features),
     joinedAt: null != e.joinedAt ? new Date(e.joinedAt) : null
   });
-  return delete t.roles, delete t.member, P(t)
-}
-
-function R(e) {
-  return P(u({}, s.Cx, e))
-}
-
-function P(e) {
-  return (0, o.bk)(s.VI, e)
+  return delete t.roles, delete t.member, R(t)
 }
 
 function w(e) {
+  return R(u({}, s.Cx, e))
+}
+
+function R(e) {
+  return (0, o.bk)(s.VI, e)
+}
+
+function P(e) {
   return {
     features: e.features,
     additionalEmojiSlots: e.additional_emoji_slots,

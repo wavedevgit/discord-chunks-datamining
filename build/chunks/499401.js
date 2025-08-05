@@ -1,21 +1,22 @@
-/** Chunk was on 16766 **/
-n.d(e, {
-  Y: () => l
+/** Chunk was on web.js **/
+"use strict";
+n.d(t, {
+  Y: () => i
 });
 var r = n(388032);
 
-function l(t) {
+function i(e) {
   let {
-    application: e,
+    application: t,
     username: n,
-    usernameOnClick: l
-  } = t;
-  return null != e ? r.intl.formatToParts(r.t.Tes5Oj, {
+    usernameOnClick: i
+  } = e;
+  return null != t ? r.intl.formatToParts(r.t.Tes5Oj, {
     username: n,
-    applicationName: e.name,
-    usernameOnClick: l
+    applicationName: t.name,
+    usernameOnClick: i
   }) : r.intl.formatToParts(r.t.PUJtgo, {
     username: n,
-    usernameOnClick: l
+    usernameOnClick: i
   })
 }

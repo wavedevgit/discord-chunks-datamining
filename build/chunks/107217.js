@@ -1,3 +1,3 @@
-/** Chunk was on 67501 **/
+/** Chunk was on web.js **/
 "use strict";
 e.exports = "/assets/f950a34a4f3890db.png"

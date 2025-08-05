@@ -1,4 +1,5 @@
-/** Chunk was on 94313 **/
+/** Chunk was on web.js **/
+"use strict";
 e.exports = {
   description: "description__1f7ec",
   tagline: "tagline__1f7ec",

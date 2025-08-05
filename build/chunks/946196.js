@@ -1,18 +1,19 @@
-/** Chunk was on 66005 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
   l: () => d
 }), n(388685);
 var r = n(255367),
   i = n(73800),
-  l = n(66546),
-  a = n(442837),
-  o = n(481060),
-  s = n(709706),
+  a = n(66546),
+  o = n(442837),
+  s = n(481060),
+  l = n(709706),
   c = n(388032),
   u = n(791422);
 
 function d() {
-  let e = (0, a.e7)([s.Z], () => s.Z.getError());
+  let e = (0, o.e7)([l.Z], () => l.Z.getError());
   return e ? (0, r.jsx)(f, {
     error: e
   }) : null
@@ -20,7 +21,7 @@ function d() {
 let f = e => {
   let {
     error: t
-  } = e, [n, a] = (0, i.useState)(!1), d = (0, o.Yzy)(!n, {
+  } = e, [n, o] = (0, i.useState)(!1), d = (0, s.Yzy)(!n, {
     from: {
       opacity: 0,
       translateY: 20
@@ -35,25 +36,25 @@ let f = e => {
     }
   }, "respect-motion-settings"), f = (() => {
     switch (t) {
-      case s.r.ERROR_DOWNLOADING_DEPENDENCY:
+      case l.r.ERROR_DOWNLOADING_DEPENDENCY:
         return c.intl.string(c.t.D9neaG);
-      case s.r.ERROR_ACTIVATING_VOICE_FILTER:
+      case l.r.ERROR_ACTIVATING_VOICE_FILTER:
         return c.intl.string(c.t.mNMZZm);
       default:
         return c.intl.string(c.t.F8FvU1)
     }
   })();
-  return d(e => n ? null : (0, r.jsx)(l.animated.div, {
+  return d(e => n ? null : (0, r.jsx)(a.animated.div, {
     style: e,
     className: u.floaterWrapper,
     children: (0, r.jsxs)("div", {
       className: u.visibleFloater,
-      children: [(0, r.jsx)(o.Text, {
+      children: [(0, r.jsx)(s.Text, {
         variant: "text-sm/semibold",
         color: "always-white",
         children: f
-      }), (0, r.jsx)(o.RyX, {
-        onClick: () => a(!0)
+      }), (0, r.jsx)(s.RyX, {
+        onClick: () => o(!0)
       })]
     })
   }))

@@ -1,52 +1,52 @@
-/** Chunk was on 94312 **/
+/** Chunk was on 99764 **/
 n.d(t, {
-  Z: () => m
+  Z: () => f
 }), n(953529);
 var r = n(255367);
 n(73800);
 var i = n(120356),
-  l = n.n(i),
+  o = n.n(i),
   a = n(481060),
-  s = n(158638),
-  o = n(267642),
-  c = n(981631),
+  c = n(158638),
+  l = n(267642),
+  s = n(981631),
   d = n(388032),
-  u = n(721641);
-let m = e => {
+  _ = n(721641);
+let f = e => {
   let t, n, i, {
-      guildFeature: m,
-      guild: g,
-      className: p,
-      hideTooltip: h = !1,
-      tooltipPosition: f = "left",
-      onClick: x
+      guildFeature: f,
+      guild: p,
+      className: u,
+      hideTooltip: m = !1,
+      tooltipPosition: b = "left",
+      onClick: v
     } = e,
-    b = g.features.has(m),
-    j = (0, s.AR)(g.id, "GuildSettingsBoostPerks"),
-    v = (0, o._p)(m);
-  return !b && m === c.oNc.VANITY_URL && j ? null : (b ? (null != v && (i = d.intl.string(d.t.hUgjyM)), t = (0, r.jsxs)(r.Fragment, {
+    g = p.features.has(f),
+    h = (0, c.AR)(p.id, "GuildSettingsBoostPerks"),
+    y = (0, l._p)(f);
+  return !g && f === s.oNc.VANITY_URL && h ? null : (g ? (null != y && (i = d.intl.string(d.t.hUgjyM)), t = (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(a.$Eu, {
       color: a.TVs.unsafe_rawColors.GUILD_BOOSTING_PINK,
-      className: u.unlockedIcon
+      className: _.unlockedIcon
     }), (0, r.jsx)(a.X6q, {
       variant: "eyebrow",
-      className: u.description,
+      className: _.description,
       children: d.intl.string(d.t["0O+87u"])
     })]
-  })) : (null != v && (i = d.intl.string(d.t.L2wYYm)), t = (0, r.jsxs)(r.Fragment, {
+  })) : (null != y && (i = d.intl.string(d.t.L2wYYm)), t = (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(a.$Eu, {
       color: "currentColor",
-      className: u.icon
+      className: _.icon
     }), (0, r.jsx)(a.X6q, {
       variant: "eyebrow",
-      className: u.description,
-      children: null != v && (0, o.e9)(v)
+      className: _.description,
+      children: null != y && (0, l.e9)(y)
     })]
-  })), n = h || null == i ? (0, r.jsx)("div", {
-    className: l()(u.availabilityIndicator, p),
+  })), n = m || null == i ? (0, r.jsx)("div", {
+    className: o()(_.availabilityIndicator, u),
     children: t
   }) : (0, r.jsx)(a.ua7, {
-    position: f,
+    position: b,
     text: i,
     children: e => {
       var n, i;
@@ -68,7 +68,7 @@ let m = e => {
         }
         return e
       }({}, e), i = i = {
-        className: l()(u.availabilityIndicator, p),
+        className: o()(_.availabilityIndicator, u),
         children: t
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
         var n = Object.keys(e);
@@ -81,9 +81,9 @@ let m = e => {
         Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(i, e))
       }), n))
     }
-  }), null == x || b) ? n : (0, r.jsx)(a.P3F, {
-    onClick: x,
-    className: u.clickable,
+  }), null == v || g) ? n : (0, r.jsx)(a.P3F, {
+    onClick: v,
+    className: _.clickable,
     children: n
   })
 }

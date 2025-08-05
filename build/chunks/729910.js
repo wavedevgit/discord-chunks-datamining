@@ -1,4 +1,5 @@
-/** Chunk was on 60173 **/
+/** Chunk was on web.js **/
+"use strict";
 e.exports = {
   buttonColor: "buttonColor__7b3e8",
   textButton: "textButton__7b3e8",

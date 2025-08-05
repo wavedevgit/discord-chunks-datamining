@@ -1,8 +1,8 @@
-/** Chunk was on 66005 **/
+/** Chunk was on 25548 **/
 n.d(t, {
-  Z: () => r
+  Z: () => i
 });
-let r = (0, n(427164).le)({
+let i = (0, n(427164).le)({
   name: "2025-07-nameplate-per-server",
   kind: "user",
   defaultConfig: {

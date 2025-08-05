@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  PH: () => R,
+  PH: () => w,
   ZP: () => F,
   sQ: () => N
 }), n(388685);
@@ -63,7 +63,7 @@ let v = Object.freeze([]),
 
 function T(e) {
   let t = I[e];
-  return null == t && (t = new P(e), I[e] = t), t
+  return null == t && (t = new R(e), I[e] = t), t
 }
 
 function S(e, t) {
@@ -87,7 +87,7 @@ function C(e, t, n) {
   return A(n, S(e, t), t)
 }
 
-function R(e, t, n, r) {
+function w(e, t, n, r) {
   var i;
   let a = _.default.getUser(n),
     o = null == a;
@@ -109,14 +109,14 @@ function R(e, t, n, r) {
   };
   return o && (u._isPlaceholder = !0), u
 }
-class P {
+class R {
   updateVoiceState(e) {
     if (null != this._pending) return this._pending.add(e), !1;
     let t = p.Z.getVoiceState(this.guildId, e),
       n = this._voiceStates.get(e),
       r = _.default.getUser(e);
     if (null != t && null != r) {
-      if (null == n) return this._voiceStates.set(e, R(t, this.guildId, e)), !0;
+      if (null == n) return this._voiceStates.set(e, w(t, this.guildId, e)), !0;
       else if (n.voiceState !== t) {
         var i;
         let a = S(this.guildId, r),
@@ -154,7 +154,7 @@ class P {
   updateUsers() {
     return null == this._pending && this._voiceStates.values().reduce((e, t) => {
       let n = _.default.getUser(t.user.id);
-      return null != n && t.user !== n ? (this._voiceStates.set(n.id, R(t.voiceState, this.guildId, n.id, t)), !0) : e
+      return null != n && t.user !== n ? (this._voiceStates.set(n.id, w(t.voiceState, this.guildId, n.id, t)), !0) : e
     }, !1)
   }
   getUserIds() {
@@ -197,7 +197,7 @@ class P {
   }
 }
 
-function w() {
+function P() {
   I = {}
 }
 
@@ -229,18 +229,18 @@ function x(e) {
   return r
 }
 
-function M(e) {
+function k(e) {
   let {
     guildId: t
   } = e, n = u.default.getId();
   return null != n && T(null != t ? t : g.ME).updateVoiceState(n)
 }
 
-function k() {
+function j() {
   return a().reduce(I, (e, t) => t.updateUsers() || e, !1)
 }
 
-function j(e) {
+function M(e) {
   let {
     guildId: t,
     user: n
@@ -271,9 +271,9 @@ function B() {
     })
   })
 }
-class V extends(r = o.ZP.Store) {
+class Z extends(r = o.ZP.Store) {
   initialize() {
-    B(), this.waitFor(u.default, _.default, f.ZP, p.Z), this.syncWith([_.default], k)
+    B(), this.waitFor(u.default, _.default, f.ZP, p.Z), this.syncWith([_.default], j)
   }
   getVoiceStates(e) {
     return T(null != e ? e : g.ME).getVoiceStates()
@@ -299,13 +299,13 @@ class V extends(r = o.ZP.Store) {
     return T(null != e ? e : g.ME).getVersion()
   }
 }
-E(V, "displayName", "SortedVoiceStateStore");
-let F = new V(l.Z, {
-  CONNECTION_OPEN: w,
+E(Z, "displayName", "SortedVoiceStateStore");
+let F = new Z(l.Z, {
+  CONNECTION_OPEN: P,
   OVERLAY_INITIALIZE: D,
-  VOICE_CHANNEL_SELECT: M,
+  VOICE_CHANNEL_SELECT: k,
   VOICE_STATE_UPDATES: L,
-  GUILD_MEMBER_UPDATE: j,
+  GUILD_MEMBER_UPDATE: M,
   GUILD_CREATE: U,
   GUILD_DELETE: G,
   PASSIVE_UPDATE_V2: x

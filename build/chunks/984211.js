@@ -1,4 +1,6 @@
-/** Chunk was on 94313 **/
+/** Chunk was on web.js **/
+"use strict";
+
 function r(e) {
   if (null == e || null == e.party || null == e.party.size || e.party.size.length < 2) return {
     partySize: -1,

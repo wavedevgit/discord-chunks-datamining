@@ -1,11 +1,12 @@
-/** Chunk was on 91396 **/
-t.d(n, {
-  Z: () => r
+/** Chunk was on web.js **/
+"use strict";
+n.d(t, {
+  Z: () => i
 });
-var o = t(981631);
+var r = n(981631);
 
-function r(e, n) {
-  let t, r = window.GLOBAL_ENV.CDN_HOST,
-    i = window.GLOBAL_ENV.API_ENDPOINT;
-  return null != r ? "https://".concat(r, "/app-assets/").concat(e, "/store/").concat(n, ".mp4") : "".concat(location.protocol).concat(i).concat(o.ANM.STORE_ASSET(e, n, "mp4"))
+function i(e, t) {
+  let n, i = window.GLOBAL_ENV.CDN_HOST,
+    a = window.GLOBAL_ENV.API_ENDPOINT;
+  return null != i ? "https://".concat(i, "/app-assets/").concat(e, "/store/").concat(t, ".mp4") : "".concat(location.protocol).concat(a).concat(r.ANM.STORE_ASSET(e, t, "mp4"))
 }

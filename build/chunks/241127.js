@@ -1,4 +1,5 @@
-/** Chunk was on 94313 **/
+/** Chunk was on web.js **/
+"use strict";
 e.exports = {
   answersContainer: "answersContainer__10758",
   answer: "answer__10758",

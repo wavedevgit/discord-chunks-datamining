@@ -1,4 +1,5 @@
-/** Chunk was on 97167 **/
+/** Chunk was on web.js **/
+"use strict";
 e.exports = {
   image: "image__5b754"
 }

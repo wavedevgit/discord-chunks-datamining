@@ -1,4 +1,4 @@
-/** Chunk was on 94312 **/
+/** Chunk was on 22988 **/
 e.exports = {
   emojiInputContainer: "emojiInputContainer__8079d",
   emojiButton: "emojiButton__8079d",

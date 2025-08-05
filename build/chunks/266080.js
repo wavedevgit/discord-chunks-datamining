@@ -1,13 +1,13 @@
-/** Chunk was on 53 **/
+/** Chunk was on 54844 **/
 n.d(t, {
   Z: () => p
 }), n(388685);
 var r = n(255367),
-  a = n(73800),
+  l = n(73800),
   i = n(755721),
-  o = n(481060),
-  l = n(367907),
-  s = n(434404),
+  a = n(481060),
+  s = n(367907),
+  o = n(434404),
   c = n(138201),
   d = n(430824),
   u = n(981631),
@@ -16,28 +16,28 @@ let p = e => {
   let {
     guildId: t,
     reportId: n
-  } = e, [p, _] = a.useState(!1), g = d.Z.getGuild(t), b = null != g;
-  a.useEffect(() => {
-    _(!b)
-  }, [b]);
-  let x = a.useCallback(() => {
-    _(!0), l.ZP.trackWithMetadata(u.rMx.IAR_LEAVE_GUILD_BUTTON_CLICKED, {
+  } = e, [p, g] = l.useState(!1), x = d.Z.getGuild(t), _ = null != x;
+  l.useEffect(() => {
+    g(!_)
+  }, [_]);
+  let b = l.useCallback(() => {
+    g(!0), s.ZP.trackWithMetadata(u.rMx.IAR_LEAVE_GUILD_BUTTON_CLICKED, {
       guild_id: t,
       report_id: n
-    }), s.Z.leaveGuild(t)
+    }), o.Z.leaveGuild(t)
   }, [t, n]);
-  return null == g ? null : (0, r.jsx)(c.ZP, {
+  return null == x ? null : (0, r.jsx)(c.ZP, {
     title: m.intl.string(m.t.cU96io),
     description: m.intl.formatToPlainString(m.t["26mR6+"], {
-      guildName: null == g ? void 0 : g.name
+      guildName: null == x ? void 0 : x.name
     }),
     buttonText: p ? m.intl.string(m.t["9Ak99v"]) : m.intl.string(m.t.F3qExs),
     buttonDisabled: p,
     buttonColor: i.zx.Colors.RED,
     onButtonPress: () => {
-      (0, o.h7j)(e => {
+      (0, a.h7j)(e => {
         var t, n;
-        return (0, r.jsx)(o.ConfirmModal, (t = function(e) {
+        return (0, r.jsx)(a.ConfirmModal, (t = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
               r = Object.keys(n);
@@ -56,16 +56,16 @@ let p = e => {
           return e
         }({
           header: m.intl.formatToPlainString(m.t["1GX6Pz"], {
-            name: g.name
+            name: x.name
           }),
           confirmText: m.intl.string(m.t.J2TBi4),
           cancelText: m.intl.string(m.t["ETE/oK"]),
-          onConfirm: x
+          onConfirm: b
         }, e), n = n = {
-          children: (0, r.jsx)(o.Text, {
+          children: (0, r.jsx)(a.Text, {
             variant: "text-md/normal",
             children: m.intl.format(m.t.ZEXC0t, {
-              name: g.name
+              name: x.name
             })
           })
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {

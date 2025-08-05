@@ -165,9 +165,9 @@
     A = RegExp(T + "[^\\n]*(?:\\n(?!\\1" + I + " )[^\\n]*)*(\n|$)", "gm"),
     N = /\n{2,}$/,
     C = /^ (?= *`)|(` *) $/g,
-    R = N,
-    P = / *\n+$/,
-    w = RegExp("^( *)(" + I + ") [\\s\\S]+?(?:\n{2,}(?! )(?!\\1" + I + " )\\n*|\\s*\n*$)"),
+    w = N,
+    R = / *\n+$/,
+    P = RegExp("^( *)(" + I + ") [\\s\\S]+?(?:\n{2,}(?! )(?!\\1" + I + " )\\n*|\\s*\n*$)"),
     D = /(?:^|\n)( *)$/,
     L = function() {
       var e = /^ *\| *| *\| *$/g,
@@ -220,9 +220,9 @@
       }
     }(),
     x = "(?:\\[[^\\]]*\\]|[^\\[\\]]|\\](?=[^\\[]*\\]))*",
-    M = "\\s*<?((?:\\([^)]*\\)|[^\\s\\\\]|\\\\.)*?)>?(?:\\s+['\"]([\\s\\S]*?)['\"])?\\s*",
-    k = /mailto:/i,
-    j = function(e, t, n) {
+    k = "\\s*<?((?:\\([^)]*\\)|[^\\s\\\\]|\\\\.)*?)>?(?:\\s+['\"]([\\s\\S]*?)['\"])?\\s*",
+    j = /mailto:/i,
+    M = function(e, t, n) {
       var r = (e[2] || e[1]).replace(/\s+/g, " ").toLowerCase();
       if (t._defs && t._defs[r]) {
         var i = t._defs[r];
@@ -374,13 +374,13 @@
           var n = null == t.prevCapture ? "" : t.prevCapture[0],
             r = D.exec(n),
             i = t._list || !t.inline;
-          return r && i ? (e = r[1] + e, w.exec(e)) : null
+          return r && i ? (e = r[1] + e, P.exec(e)) : null
         },
         parse: function(e, t, n) {
           var r = e[2],
             i = r.length > 1,
             a = i ? +r : void 0,
-            o = e[0].replace(R, "\n").match(A),
+            o = e[0].replace(w, "\n").match(A),
             s = !1;
           return {
             ordered: i,
@@ -394,7 +394,7 @@
               s = d;
               var f = n.inline,
                 _ = n._list;
-              n._list = !0, d ? (n.inline = !1, i = c.replace(P, "\n\n")) : (n.inline = !0, i = c.replace(P, ""));
+              n._list = !0, d ? (n.inline = !1, i = c.replace(R, "\n\n")) : (n.inline = !0, i = c.replace(R, ""));
               var p = t(i, n);
               return n.inline = f, n._list = _, p
             })
@@ -586,7 +586,7 @@
         parse: function(e, t, n) {
           var r = e[1],
             i = e[1];
-          return k.test(i) || (i = "mailto:" + i), {
+          return j.test(i) || (i = "mailto:" + i), {
             type: "link",
             content: [{
               type: "text",
@@ -619,7 +619,7 @@
       link: {
         order: G++,
         requiredFirstCharacters: ["["],
-        match: o(RegExp("^\\[(" + x + ")\\]\\(" + M + "\\)")),
+        match: o(RegExp("^\\[(" + x + ")\\]\\(" + k + "\\)")),
         parse: function(e, t, n) {
           return {
             content: t(e[1], n),
@@ -644,7 +644,7 @@
       },
       image: {
         order: G++,
-        match: o(RegExp("^!\\[(" + x + ")\\]\\(" + M + "\\)")),
+        match: o(RegExp("^!\\[(" + x + ")\\]\\(" + k + "\\)")),
         parse: function(e, t, n) {
           return {
             alt: e[1],
@@ -671,7 +671,7 @@
         order: G++,
         match: o(RegExp("^\\[(" + x + ")\\]\\s*\\[([^\\]]*)\\]")),
         parse: function(e, t, n) {
-          return j(e, n, {
+          return M(e, n, {
             type: "link",
             content: t(e[1], n)
           })
@@ -683,7 +683,7 @@
         order: G++,
         match: o(RegExp("^!\\[(" + x + ")\\]\\s*\\[([^\\]]*)\\]")),
         parse: function(e, t, n) {
-          return j(e, n, {
+          return M(e, n, {
             type: "image",
             alt: e[1]
           })
@@ -805,7 +805,7 @@
         }
       }
     },
-    V = function(e, t) {
+    Z = function(e, t) {
       return t || "undefined" == typeof console || console.warn("simple-markdown ruleOutput should take 'react' or 'html' as the second argument."),
         function(n, r, i) {
           return e[n.type][t](n, r, i)
@@ -823,7 +823,7 @@
       };
       return t
     },
-    Z = function(e) {
+    V = function(e) {
       var t = function(n, r) {
         return (r = r || {}, Array.isArray(n)) ? n.map(function(e) {
           return t(e, r)
@@ -855,14 +855,14 @@
       return (t = t || {}).inline = !n, Y(e, t)
     },
     q = H(B, "react"),
-    X = H(B, "html"),
-    Q = function(e, t) {
+    $ = H(B, "html"),
+    X = function(e, t) {
       return q(W(e, t), t)
     },
-    J = function(e) {
+    Q = function(e) {
       var t = {};
       for (var n in e) "source" !== n && Object.prototype.hasOwnProperty.call(e, n) && (t[n] = e[n]);
-      return t.children = Q(e.source), u("div", null, t)
+      return t.children = X(e.source), u("div", null, t)
     };
   return {
     defaultRules: B,
@@ -873,16 +873,16 @@
     anyScopeRegex: l,
     parseInline: b,
     parseBlock: y,
-    markdownToReact: Q,
+    markdownToReact: X,
     markdownToHtml: function(e, t) {
-      return X(W(e, t), t)
+      return $(W(e, t), t)
     },
-    ReactMarkdown: J,
+    ReactMarkdown: Q,
     defaultBlockParse: W,
     defaultInlineParse: K,
     defaultImplicitParse: z,
     defaultReactOutput: q,
-    defaultHtmlOutput: X,
+    defaultHtmlOutput: $,
     preprocess: r,
     sanitizeText: m,
     sanitizeUrl: _,
@@ -890,9 +890,9 @@
     htmlTag: d,
     reactElement: u,
     defaultRawParse: Y,
-    ruleOutput: V,
+    ruleOutput: Z,
     reactFor: F,
-    htmlFor: Z,
+    htmlFor: V,
     defaultParse: function() {
       return "undefined" != typeof console && console.warn("defaultParse is deprecated, please use `defaultImplicitParse`"), z.apply(null, arguments)
     },

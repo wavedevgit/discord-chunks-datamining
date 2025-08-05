@@ -1,4 +1,4 @@
-/** Chunk was on 60173 **/
+/** Chunk was on 49152 **/
 n.d(t, {
   Z: () => a
 });
@@ -11,14 +11,14 @@ let a = e => {
     entry: t,
     hideEditButton: n,
     children: a,
-    onRequestOpen: o,
-    onRequestClose: s,
+    onRequestOpen: s,
+    onRequestClose: o,
     targetElementRef: c
   } = e;
   return (0, r.jsx)(i.yRy, {
     targetElementRef: c,
-    onRequestOpen: o,
-    onRequestClose: s,
+    onRequestOpen: s,
+    onRequestClose: o,
     animation: i.yRy.Animation.NONE,
     position: "bottom",
     spacing: 4,

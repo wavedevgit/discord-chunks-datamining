@@ -104,7 +104,7 @@ function m(e) {
     focusPath: I
   } = y, [T, S] = r.useState(!1), [A, N] = r.useState(E), [{
     onItemFocusMemoizer: C,
-    onItemMouseEnterMemoizer: R
+    onItemMouseEnterMemoizer: w
   }] = r.useState(() => ({
     onItemFocusMemoizer: new o.$o(e => () => {
       S(!0), O({
@@ -118,7 +118,7 @@ function m(e) {
         path: e.split(d)
       })
     })
-  })), P = r.useCallback(e => {
+  })), R = r.useCallback(e => {
     if (!b.current) return;
     e.key === a.R8.ESCAPE && null != g && (e.stopPropagation(), e.preventDefault(), g());
     let n = f(e);
@@ -140,7 +140,7 @@ function m(e) {
         let i = p(null != (r = e.target.ownerDocument) ? r : document, _(t, I));
         null == i || i.click()
     }
-  }, [v, t, I, c, g]), w = r.useCallback(() => {
+  }, [v, t, I, c, g]), P = r.useCallback(() => {
     T || S(!0)
   }, [T]), D = r.useCallback(e => {
     e.target !== e.currentTarget && !e.currentTarget.contains(e.relatedTarget) && T && S(!1)
@@ -149,16 +149,16 @@ function m(e) {
       type: i.B.SET_FOCUS_PATH,
       path: []
     }), S(!1)
-  }, []), x = r.useCallback(e => e.every((e, t) => I[t] === e), [I]), M = r.useCallback(() => ({
+  }, []), x = r.useCallback(e => e.every((e, t) => I[t] === e), [I]), k = r.useCallback(() => ({
     role: "menu",
     id: t,
     tabIndex: -1,
-    onKeyDown: P,
-    onFocus: w,
+    onKeyDown: R,
+    onFocus: P,
     onBlur: D,
     onMouseLeave: L,
     "aria-activedescendant": I.length > 0 ? (0, o.qR)(t, I.join(d)) : void 0
-  }), [t, P, w, D, L, I]), k = r.useCallback(e => {
+  }), [t, R, P, D, L, I]), j = r.useCallback(e => {
     let {
       path: n
     } = e;
@@ -169,7 +169,7 @@ function m(e) {
       focusIndex: y.focusIndex,
       isUsingKeyboardNavigation: A
     }
-  }, [t, I, x, y.focusIndex, A]), j = r.useCallback(e => {
+  }, [t, I, x, y.focusIndex, A]), M = r.useCallback(e => {
     let {
       path: n,
       hasSubmenu: r = !1,
@@ -184,15 +184,15 @@ function m(e) {
       id: (0, o.qR)(t, s),
       tabIndex: -1,
       onFocus: i ? C.get(s) : () => {},
-      onMouseEnter: i ? R.get(s) : () => {}
+      onMouseEnter: i ? w.get(s) : () => {}
     })
-  }, [t, x, C, R]);
+  }, [t, x, C, w]);
   return r.useMemo(() => ({
     dispatch: v,
-    getContainerProps: M,
-    getSubmenuProps: k,
-    getItemProps: j,
+    getContainerProps: k,
+    getSubmenuProps: j,
+    getItemProps: M,
     isFocused: x,
     isUsingKeyboardNavigation: A
-  }), [v, M, k, j, x, A])
+  }), [v, k, j, M, x, A])
 }

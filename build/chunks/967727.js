@@ -1,27 +1,26 @@
-/** Chunk was on 44947 **/
-"use strict";
-n.d(t, {
-  Y: () => u
+/** Chunk was on 92078 **/
+t.d(r, {
+  Y: () => a
 });
-var r = n(73800),
-  i = n(63222),
-  o = n(74463),
-  a = n(541568);
+var e = t(73800),
+  o = t(63222),
+  i = t(74463),
+  u = t(541568);
 
-function u(e, t) {
-  var n = (0, o.N)(),
-    u = (0, r.useMemo)(function() {
-      return new i.x(n.getBackend())
-    }, [n]);
-  return (0, a.L)(function() {
-    return u.dragSourceOptions = e || null, u.reconnect(),
+function a(n, r) {
+  var t = (0, i.N)(),
+    a = (0, e.useMemo)(function() {
+      return new o.x(t.getBackend())
+    }, [t]);
+  return (0, u.L)(function() {
+    return a.dragSourceOptions = n || null, a.reconnect(),
       function() {
-        return u.disconnectDragSource()
+        return a.disconnectDragSource()
       }
-  }, [u, e]), (0, a.L)(function() {
-    return u.dragPreviewOptions = t || null, u.reconnect(),
+  }, [a, n]), (0, u.L)(function() {
+    return a.dragPreviewOptions = r || null, a.reconnect(),
       function() {
-        return u.disconnectDragPreview()
+        return a.disconnectDragPreview()
       }
-  }, [u, t]), u
+  }, [a, r]), a
 }

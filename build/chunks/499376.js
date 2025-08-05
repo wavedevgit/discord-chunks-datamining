@@ -1,31 +1,32 @@
-/** Chunk was on 85372 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
-  Ld: () => u,
-  R_: () => s,
-  aw: () => c,
+  Ld: () => c,
+  R_: () => l,
+  aw: () => u,
   pU: () => d
 }), n(997841), n(35282);
 var r = n(630388),
   i = n(406432),
-  l = n(828061),
+  a = n(828061),
   o = n(981631);
-let a = /\.(mp3|m4a|ogg|opus|wav|flac)$/i,
-  s = e => "IMAGE" === e || "VIDEO" === e || "CLIP" === e || "VISUAL_PLACEHOLDER" === e,
-  u = e => "IMAGE" === e || "VIDEO" === e || "VISUAL_PLACEHOLDER" === e;
+let s = /\.(mp3|m4a|ogg|opus|wav|flac)$/i,
+  l = e => "IMAGE" === e || "VIDEO" === e || "CLIP" === e || "VISUAL_PLACEHOLDER" === e,
+  c = e => "IMAGE" === e || "VIDEO" === e || "VISUAL_PLACEHOLDER" === e;
 
-function c(e, t) {
+function u(e, t) {
   let {
     filename: n,
-    width: s,
-    height: u
+    width: l,
+    height: c
   } = e;
-  if (t && null != s && s > 0 && null != u && u > 0)
+  if (t && null != l && l > 0 && null != c && c > 0)
     if ((0, i.CO)(n)) return "IMAGE";
     else {
-      var c;
+      var u;
       if (!(0, i.NU)(n) || null == e.proxy_url) return "INVALID";
-      return (0, r.yE)(null != (c = e.flags) ? c : 0, o.J0y.IS_CLIP) ? "CLIP" : "VIDEO"
-    } return null != t && a.test(n) && null != e.url ? "AUDIO" : null != e.url && (0, l.O)(n) ? "PLAINTEXT_PREVIEW" : "OTHER"
+      return (0, r.yE)(null != (u = e.flags) ? u : 0, o.J0y.IS_CLIP) ? "CLIP" : "VIDEO"
+    } return null != t && s.test(n) && null != e.url ? "AUDIO" : null != e.url && (0, a.O)(n) ? "PLAINTEXT_PREVIEW" : "OTHER"
 }
 
 function d(e) {

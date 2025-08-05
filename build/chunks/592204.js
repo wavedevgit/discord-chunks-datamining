@@ -1,11 +1,12 @@
-/** Chunk was on 25292 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
-  Xo: () => c,
-  pB: () => a
+  Xo: () => o,
+  pB: () => s
 });
 var r = n(818083),
   i = n(517858);
-let o = (0, r.B)({
+let a = (0, r.B)({
   kind: "user",
   id: "2024-04_keyword_filter_experiment",
   label: "Replace registered keywords with asterisks",
@@ -21,26 +22,26 @@ let o = (0, r.B)({
   }]
 });
 
-function c(e) {
+function o(e) {
   let {
     location: t
   } = e, n = (0, i.C3)({
     location: t
   });
-  return o.useExperiment({
+  return a.useExperiment({
     location: t
   }, {
     autoTrackExposure: !0
   }).enabled || n
 }
 
-function a(e) {
+function s(e) {
   let {
     location: t
   } = e, n = (0, i.GW)({
     location: t
   });
-  return o.getCurrentConfig({
+  return a.getCurrentConfig({
     location: t
   }).enabled || n
 }

@@ -1,5 +1,6 @@
-/** Chunk was on 66005 **/
-n.r(e.exports = {
+/** Chunk was on web.js **/
+"use strict";
+var r = {
   ellipsis: "ellipsis__2ef49",
   headerContainer: "headerContainer__2ef49",
   headerText: "headerText__2ef49",
@@ -70,4 +71,5 @@ n.r(e.exports = {
   wrap: "wrap__2ef49",
   activityDetails: "activityDetails__2ef49",
   activityStreamPreview: "activityStreamPreview__2ef49"
-})
+};
+n.r(e.exports = r)

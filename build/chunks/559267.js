@@ -1,4 +1,5 @@
-/** Chunk was on 60173 **/
+/** Chunk was on web.js **/
+"use strict";
 e.exports = {
   headerContainer: "headerContainer__9a59b",
   chatBubbleContainer: "chatBubbleContainer__9a59b",

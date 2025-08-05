@@ -1,5 +1,8 @@
-/** Chunk was on 94313 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
-  C: () => i
+  C: () => r
 });
-var r, i = ((r = {})[r.UNKNOWN = 0] = "UNKNOWN", r[r.DEFAULT = 1] = "DEFAULT", r[r.IMAGE_ONLY_ANSWERS = 2] = "IMAGE_ONLY_ANSWERS", r)
+var r = function(e) {
+  return e[e.UNKNOWN = 0] = "UNKNOWN", e[e.DEFAULT = 1] = "DEFAULT", e[e.IMAGE_ONLY_ANSWERS = 2] = "IMAGE_ONLY_ANSWERS", e
+}({})

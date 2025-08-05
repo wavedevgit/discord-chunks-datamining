@@ -1,4 +1,5 @@
-/** Chunk was on 94313 **/
+/** Chunk was on web.js **/
+"use strict";
 e.exports = {
   artContainer: "artContainer_ade26d",
   modalContainer: "modalContainer_ade26d",

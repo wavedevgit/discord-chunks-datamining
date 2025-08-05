@@ -1,4 +1,5 @@
-/** Chunk was on 94313 **/
+/** Chunk was on web.js **/
+"use strict";
 e.exports = {
   mainContainer: "mainContainer_ceba9e",
   compact: "compact_ceba9e",

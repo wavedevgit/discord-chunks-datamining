@@ -1,10 +1,11 @@
-/** Chunk was on 94313 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
-  T: () => l
+  T: () => a
 });
 var r = n(570140),
   i = n(155414);
-async function l(e, t) {
+async function a(e, t) {
   r.Z.dispatch({
     type: "CREATOR_MONETIZATION_PRICE_TIERS_FETCH",
     guildId: e,

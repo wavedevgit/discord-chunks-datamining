@@ -3,7 +3,7 @@
 n.r(t), n.d(t, {
   enable: () => N,
   isNotSupported: () => S,
-  trackToggleSelfDeaf: () => R,
+  trackToggleSelfDeaf: () => w,
   trackToggleSelfMute: () => C
 });
 var r = n(255367);
@@ -140,7 +140,7 @@ function C(e) {
   })
 }
 
-function R(e) {
+function w(e) {
   let {
     usedKeybind: t = !1,
     location: n

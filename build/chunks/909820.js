@@ -1,11 +1,12 @@
-/** Chunk was on 60173 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
-  B2: () => o,
-  H_: () => a,
-  ZP: () => s
+  B2: () => s,
+  H_: () => o,
+  ZP: () => l
 });
 let {
   Layer: r,
   LayerContainer: i,
-  LayerProvider: l
-} = (0, n(481060).Xvx)("ChannelCallChat"), a = i, o = l, s = r
+  LayerProvider: a
+} = (0, n(481060).Xvx)("ChannelCallChat"), o = i, s = a, l = r

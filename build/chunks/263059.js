@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => k
+  Z: () => j
 }), n(35282);
 var r = n(255367),
   i = n(73800),
@@ -29,9 +29,9 @@ var r = n(255367),
   A = n(336383),
   N = n(194811),
   C = n(373826),
-  R = n(262210),
-  P = n(666984),
-  w = n(386019),
+  w = n(262210),
+  R = n(666984),
+  P = n(386019),
   D = n(228168),
   L = n(227832);
 
@@ -44,7 +44,7 @@ function x(e, t, n) {
   }) : e[t] = n, e
 }
 
-function M(e) {
+function k(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -57,19 +57,19 @@ function M(e) {
   return e
 }
 
-function k(e) {
+function j(e) {
   var t;
   let {
     user: n,
     currentUser: a,
     activity: x,
-    profileGuildId: k,
-    className: j,
+    profileGuildId: j,
+    className: M,
     onClose: U
-  } = e, G = (0, p.Dt)(), B = (0, p.Dt)(), V = i.useRef(null), {
+  } = e, G = (0, p.Dt)(), B = (0, p.Dt)(), Z = i.useRef(null), {
     themeType: F
   } = (0, I.z)(), {
-    interactionSource: Z,
+    interactionSource: V,
     interactionSourceId: H
   } = (0, y.Xo)(), Y = (0, _.Z)({
     activity: x,
@@ -78,18 +78,18 @@ function k(e) {
     largeImage: z
   } = (0, d.FO)(x), {
     analyticsLocations: q
-  } = (0, u.ZP)(c.Z.USER_PROFILE_LIVE_ACTIVITY_CARD), X = (0, m.Z)({
+  } = (0, u.ZP)(c.Z.USER_PROFILE_LIVE_ACTIVITY_CARD), $ = (0, m.Z)({
     display: "live",
     user: n,
     activity: x,
     entry: Y,
     analyticsLocations: q
-  }), Q = (0, g.Z)({
+  }), X = (0, g.Z)({
     userId: n.id,
-    onAction: X
+    onAction: $
   });
   if (!(0, l.Z)(x)) return null;
-  let J = () => {
+  let Q = () => {
       var e, t;
       let a = null != (t = null == (e = x.state) ? void 0 : e.split(";")) ? t : [];
       return 0 === a.length ? null : null == x.sync_id ? (0, r.jsx)(C.Z, {
@@ -101,7 +101,7 @@ function k(e) {
           children: [(0, r.jsx)(s.P3F, {
             className: o()(L.clickableText, L.inline),
             onClick: e => {
-              e.stopPropagation(), X({
+              e.stopPropagation(), $({
                 action: "OPEN_SPOTIFY_ARTIST"
               }), (0, h.d$)(x, n.id, t)
             },
@@ -110,7 +110,7 @@ function k(e) {
         }, t))
       })
     },
-    $ = () => {
+    J = () => {
       let {
         timestamps: e
       } = x;
@@ -119,48 +119,48 @@ function k(e) {
         start: t,
         end: n
       } = e;
-      return null == t || null == n ? null : (0, r.jsx)(R.Z, {
+      return null == t || null == n ? null : (0, r.jsx)(w.Z, {
         start: t,
         end: n
       })
     },
     ee = () => n.id === a.id ? null : (0, r.jsx)("div", {
       className: L.actions,
-      children: (0, r.jsx)(P.Z, {
+      children: (0, r.jsx)(R.Z, {
         user: n,
         activity: x,
-        onAction: X
+        onAction: $
       })
     });
   if (null === F) return null;
   let et = null != (t = x.application_id) ? t : x.name,
-    en = Z === D.n_.ACTIVITY && H === et;
+    en = V === D.n_.ACTIVITY && H === et;
   return (0, r.jsx)(u.Gt, {
     value: q,
     children: (0, r.jsx)(T.Z, {
-      targetElementRef: V,
+      targetElementRef: Z,
       sourceType: D.n_.ACTIVITY,
       user: n,
       children: (0, r.jsx)(O.Z, {
         user: n,
-        guildId: k,
+        guildId: j,
         themeType: F,
         sourceId: et,
         sourceDetails: null == Y ? (0, b.Z)(x) : null,
         entry: Y,
         sourceType: D.n_.ACTIVITY,
-        onAction: X,
+        onAction: $,
         children: () => (0, r.jsx)(v.Z, {
-          ref: V,
+          ref: Z,
           user: n,
           className: L.toolbarContainer,
           sourceType: D.n_.ACTIVITY,
           interactionSourceId: et,
-          onAction: X,
-          onShowToolbar: () => X({
+          onAction: $,
+          onShowToolbar: () => $({
             action: "HOVER_ACTIVITY_CARD"
           }),
-          renderMoreButtonPopout: e => (0, r.jsx)(w.Z, {
+          renderMoreButtonPopout: e => (0, r.jsx)(P.Z, {
             display: "live",
             user: n,
             activity: x,
@@ -169,14 +169,14 @@ function k(e) {
             children: e
           }),
           children: (0, r.jsxs)(A.Z, {
-            ref: Q,
-            className: o()(j, {
+            ref: X,
+            className: o()(M, {
               [L.hoisted]: en
             }),
-            onAction: X,
+            onAction: $,
             onClose: U,
             "aria-labelledby": K ? "".concat(B, " ").concat(G) : G,
-            children: [(0, r.jsx)(N.Z, M({
+            children: [(0, r.jsx)(N.Z, k({
               textId: B
             }, W)), (0, r.jsx)("div", {
               className: L.body,
@@ -187,7 +187,7 @@ function k(e) {
                   size: F === D.lY.MODAL_V2 ? f.J.SIZE_100 : f.J.SIZE_60,
                   className: L.clickableImage,
                   onClick: e => {
-                    e.stopPropagation(), X({
+                    e.stopPropagation(), $({
                       action: "OPEN_SPOTIFY_ALBUM"
                     }), (0, h.Z5)(x, n.id)
                   }
@@ -198,17 +198,17 @@ function k(e) {
                       variant: "heading-sm/semibold",
                       text: x.details,
                       onClick: () => {
-                        X({
+                        $({
                           action: "OPEN_SPOTIFY_TRACK"
                         }), (0, h.aG)(x)
                       },
                       id: G
-                    }), J()]
+                    }), Q()]
                   }), (0, r.jsx)(S.Z, {
                     user: n,
                     activity: x,
                     className: L.badges
-                  }), $(), F === D.lY.MODAL_V2 && ee()]
+                  }), J(), F === D.lY.MODAL_V2 && ee()]
                 }), F === D.lY.MODAL && ee()]
               })
             }), F !== D.lY.MODAL && F !== D.lY.MODAL_V2 && ee()]

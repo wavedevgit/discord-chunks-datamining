@@ -71,17 +71,17 @@ function p(e) {
     renderCategoryList: A,
     renderHeaderAccessories: N,
     rowHeight: C,
-    sectionHeaderHeight: R,
-    sectionFooterHeight: P,
-    itemNodeWidth: w,
+    sectionHeaderHeight: w,
+    sectionFooterHeight: R,
+    itemNodeWidth: P,
     listPaddingRight: D,
     itemNodeMargin: L,
     listPadding: x,
-    gridNavigatorId: M,
-    gridNotice: k,
-    renderHeader: j,
+    gridNavigatorId: k,
+    gridNotice: j,
+    renderHeader: M,
     renderUpsell: U
-  } = e, G = i.useRef(null), B = i.useRef(null), V = i.useRef(null), F = 0 === t.length, Z = (0, a.Iu)(e => e.searchQuery), H = f.useStore(e => e.inspectedExpressionPosition), Y = (0, o.ep)({
+  } = e, G = i.useRef(null), B = i.useRef(null), Z = i.useRef(null), F = 0 === t.length, V = (0, a.Iu)(e => e.searchQuery), H = f.useStore(e => e.inspectedExpressionPosition), Y = (0, o.ep)({
     gridWrapperRef: G,
     containerWidth: u,
     showingEmptyState: F
@@ -90,18 +90,18 @@ function p(e) {
     rowCount: K,
     rowCountBySection: z,
     columnCounts: q,
-    gutterWidth: X
+    gutterWidth: $
   } = (0, o.yi)({
     categories: t,
     collapsedCategories: n,
     gridWidth: Y,
     listPaddingRight: D,
-    itemNodeWidth: w,
+    itemNodeWidth: P,
     itemNodeMargin: L
   }), {
-    getItemProps: Q,
-    getRowProps: J,
-    gridContainerProps: $,
+    getItemProps: X,
+    getRowProps: Q,
+    gridContainerProps: J,
     handleGridContainerKeyDown: ee,
     isUsingKeyboardNavigation: et
   } = (0, o.t$)({
@@ -110,51 +110,51 @@ function p(e) {
     expressionsGrid: W,
     onSelectItem: p,
     store: f,
-    gridNavigatorId: M
-  }), en = i.useCallback((e, t) => y(W[e], J(e), {
+    gridNavigatorId: k
+  }), en = i.useCallback((e, t) => y(W[e], Q(e), {
     isUsingKeyboardNavigation: et.current,
-    gutterWidth: X,
+    gutterWidth: $,
     rowIndex: e,
     totalRowCount: K,
     sectionIndex: t.sectionIndex
-  }, t => Q(e, t), t => f.setInspectedExpressionPosition(t, e)), [W, Q, J, X, et, y, f, K]), er = i.useCallback(e => null == O ? void 0 : O(t[e]), [t, O]), ei = i.useCallback(e => null == v ? void 0 : v(t[e], e), [t, v]), ea = i.useCallback(e => null == I ? void 0 : I(t[e], e), [t, I]), eo = i.useCallback(() => {
+  }, t => X(e, t), t => f.setInspectedExpressionPosition(t, e)), [W, X, Q, $, et, y, f, K]), er = i.useCallback(e => null == O ? void 0 : O(t[e]), [t, O]), ei = i.useCallback(e => null == v ? void 0 : v(t[e], e), [t, v]), ea = i.useCallback(e => null == I ? void 0 : I(t[e], e), [t, I]), eo = i.useCallback(() => {
     var e;
     return null == T ? void 0 : T(null == W || null == (e = W[H.rowIndex]) ? void 0 : e[H.columnIndex])
   }, [W, H.columnIndex, H.rowIndex, T]);
   i.useEffect(() => {
-    h(Z)
-  }, [h, Z]), i.useEffect(() => {
+    h(V)
+  }, [h, V]), i.useEffect(() => {
     var e, t;
     f.setBottomPosition(null != (t = null == (e = G.current) ? void 0 : e.getBoundingClientRect().bottom) ? t : null)
   }), i.useEffect(() => f.resetStoreState, [f.resetStoreState]), i.useLayoutEffect(() => {
     var e;
-    null == (e = V.current) || e.focus()
+    null == (e = Z.current) || e.focus()
   }, []);
   let es = (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(l.Z, {
-      ref: V,
+      ref: Z,
       store: f,
       hasSendableExpressions: !0,
       onKeyDown: ee,
       expressionsListRef: B,
-      gridNavigatorId: M,
+      gridNavigatorId: k,
       defaultSearchPlaceholder: g,
       emptySearchPlaceholder: E
     }), null == N ? void 0 : N()]
   });
   return (0, r.jsxs)(r.Fragment, {
-    children: [null != j ? j(es) : (0, r.jsxs)("div", {
+    children: [null != M ? M(es) : (0, r.jsxs)("div", {
       className: c.header,
       children: [" ", es, " "]
     }), F && null != b ? b(c.emptyState) : (0, r.jsxs)(r.Fragment, {
-      children: [A(B), null != k && (0, r.jsx)("div", {
+      children: [A(B), null != j && (0, r.jsx)("div", {
         className: c.gridNoticeWrapper,
-        children: k
+        children: j
       }), (0, r.jsx)("div", _(d({
         ref: G,
         className: c.listWrapper,
-        id: M
-      }, $), {
+        id: k
+      }, J), {
         children: null != Y ? (0, r.jsx)(s.Z, {
           categories: t,
           ref: B,
@@ -170,8 +170,8 @@ function p(e) {
           rowCount: K,
           rowCountBySection: z,
           rowHeight: C,
-          sectionHeaderHeight: R,
-          sectionFooterHeight: P,
+          sectionHeaderHeight: w,
+          sectionFooterHeight: R,
           renderUpsell: U
         }) : null
       }))]

@@ -1,53 +1,53 @@
-/** Chunk was on 60173 **/
+/** Chunk was on 49152 **/
 n.d(t, {
-  Z: () => d
+  Z: () => u
 });
 var r = n(255367);
 n(73800);
 var i = n(481060),
   l = n(671533),
   a = n(400251),
-  o = n(388032),
-  s = n(400816),
+  s = n(388032),
+  o = n(400816),
   c = n(1765),
-  u = n(176480);
-let d = e => {
+  d = n(176480);
+let u = e => {
   let t, {
     searchQuery: n,
-    setSearchQuery: d,
-    mostRecentQuery: p,
-    handleClearSearch: h,
+    setSearchQuery: u,
+    mostRecentQuery: h,
+    handleClearSearch: p,
     handleSearchKeyPress: f,
-    handleCreateOrAddGuild: m,
-    searchResults: g,
+    handleCreateOrAddGuild: g,
+    searchResults: m,
     searchFetching: b
   } = e;
   if (b) t = (0, r.jsx)("div", {
-    className: s.pageContainer,
+    className: o.pageContainer,
     children: (0, r.jsx)(i.$jN, {
-      className: s.spinner
+      className: o.spinner
     })
   });
-  else if (0 === g.length) {
-    let e = null != m ? o.intl.format(o.t.qWFupq, {
+  else if (0 === m.length) {
+    let e = null != g ? s.intl.format(s.t.qWFupq, {
       addServerHook: function(e, t) {
         return (0, r.jsx)(i.eee, {
-          onClick: m,
+          onClick: g,
           children: e
         }, t)
       }
-    }) : o.intl.string(o.t.vYyEnp);
+    }) : s.intl.string(s.t.vYyEnp);
     t = (0, r.jsxs)("div", {
       className: c.emptySearchWrapper,
       children: [(0, r.jsx)("img", {
         className: c.emptySearchImage,
         alt: "",
-        src: u
+        src: d
       }), (0, r.jsx)(i.X6q, {
         variant: "heading-xl/semibold",
         color: "header-primary",
         className: c.emptySearchTitle,
-        children: o.intl.string(o.t["6HXiuL"])
+        children: s.intl.string(s.t["6HXiuL"])
       }), (0, r.jsx)(i.Text, {
         variant: "text-md/normal",
         color: "header-secondary",
@@ -56,21 +56,21 @@ let d = e => {
       })]
     })
   } else t = (0, r.jsx)("div", {
-    className: s.cardsContainer,
-    children: g.map(e => (0, r.jsx)(a.Z, {
+    className: o.cardsContainer,
+    children: m.map(e => (0, r.jsx)(a.Z, {
       entry: e
     }, e.guildId))
   });
   return (0, r.jsx)("div", {
-    className: s.pageContainer,
+    className: o.pageContainer,
     children: (0, r.jsxs)(i.w0Z, {
-      className: s.scroller,
+      className: o.scroller,
       children: [(0, r.jsxs)("div", {
         className: c.searchHeader,
         children: [(0, r.jsxs)("div", {
           className: c.headerTitleWrapper,
           children: [(0, r.jsx)(i.P3F, {
-            onClick: h,
+            onClick: p,
             className: c.arrow,
             children: (0, r.jsx)(l.Z, {
               direction: l.Z.Directions.LEFT
@@ -78,21 +78,21 @@ let d = e => {
           }), (0, r.jsx)(i.X6q, {
             variant: "heading-xl/semibold",
             className: c.searchPageTitle,
-            children: o.intl.format(o.t.UkOHRU, {
-              numResults: g.length,
-              query: p
+            children: s.intl.format(s.t.UkOHRU, {
+              numResults: m.length,
+              query: h
             })
           })]
         }), (0, r.jsx)(i.Rj2, {
           searchTerm: n,
           className: c.searchPageBox,
           inputClassName: c.searchPageInput,
-          label: o.intl.string(o.t.nL2wKC),
-          placeholder: o.intl.string(o.t.nL2wKC),
-          onChange: d,
-          onClear: h,
+          label: s.intl.string(s.t.nL2wKC),
+          placeholder: s.intl.string(s.t.nL2wKC),
+          onChange: u,
+          onClear: p,
           onKeyPress: f,
-          cta: null != n && n.length > 0 ? o.intl.string(o.t["CU+6oK"]) : null
+          cta: null != n && n.length > 0 ? s.intl.string(s.t["CU+6oK"]) : null
         })]
       }), t]
     })

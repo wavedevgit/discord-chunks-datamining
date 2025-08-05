@@ -62,7 +62,7 @@ function T() {
       c.Z.unsubscribe("CHANGE_LOG_RESOLVED", e)
     }
   }, []);
-  let R = i.useCallback(() => {
+  let w = i.useCallback(() => {
     (0, l.ZDy)(async () => {
       let {
         DesktopRefreshOnboardingModal: e
@@ -78,9 +78,9 @@ function T() {
   i.useEffect(() => {
     if (N && !O && e) {
       let e = setTimeout(() => {
-        R()
+        w()
       }, I);
       return () => clearTimeout(e)
     }
-  }, [e, O, N, R])
+  }, [e, O, N, w])
 }

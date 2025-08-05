@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   R: () => v,
-  Z: () => w
+  Z: () => P
 }), n(539854), n(388685);
 var r = n(392711),
   i = n(433517),
@@ -125,7 +125,7 @@ let y = 200,
       hotspot: o.v6.SEARCH_RESULTS_FEEDBACK,
       storageKey: "searchResultsFeedback",
       feedbackType: h.nw.SEARCH_RESULTS,
-      eligibilityChecks: [R]
+      eligibilityChecks: [w]
     }),
     [h.nw.AGE_VERIFICATION]: {
       cooldown: 0,
@@ -219,13 +219,13 @@ function C(e) {
   return !u.Z.getWasEverRtcConnected() || u.Z.getWasEverMultiParticipant()
 }
 
-function R(e) {
+function w(e) {
   return (0, l.j)({
     location: "FeedbackManager"
   })
 }
 
-function P(e) {
+function R(e) {
   let {
     persistToBackend: t
   } = (0, f.O)({
@@ -243,7 +243,7 @@ function P(e) {
     null != t && i.K.set(t, Date.now())
   }
 }
-class w extends a.Z {
+class P extends a.Z {
   possiblyShowFeedbackModal(e, t, n) {
     if (!I(e) || null != this.feedbackTypeToShow && h.b5[this.feedbackTypeToShow] < h.b5[e]) {
       null == n || n();
@@ -253,7 +253,7 @@ class w extends a.Z {
   }
   constructor(...e) {
     super(...e), m(this, "feedbackTypeToShow", null), m(this, "showFeedbackModalDebounced", (0, r.debounce)((e, t) => {
-      null != this.feedbackTypeToShow ? (P(this.feedbackTypeToShow), this.feedbackTypeToShow = null, e()) : null == t || t()
+      null != this.feedbackTypeToShow ? (R(this.feedbackTypeToShow), this.feedbackTypeToShow = null, e()) : null == t || t()
     }, y))
   }
 }

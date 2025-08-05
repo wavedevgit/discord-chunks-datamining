@@ -164,7 +164,7 @@ function C() {
   return b(d.ME, e, t)
 }
 
-function R(e) {
+function w(e) {
   let {
     relationship: t
   } = e;
@@ -177,7 +177,7 @@ function R(e) {
   }
 }
 
-function P(e) {
+function R(e) {
   let {
     relationship: t
   } = e, n = p[t.id];
@@ -187,7 +187,7 @@ function P(e) {
     null != n && n.add(t.id)
   }
 }
-class w extends(r = o.ZP.Store) {
+class P extends(r = o.ZP.Store) {
   initialize() {
     this.syncWith([u.Z], C), this.waitFor(u.Z, c.Z)
   }
@@ -201,8 +201,8 @@ class w extends(r = o.ZP.Store) {
     return h
   }
 }
-f(w, "displayName", "GamePartyStore");
-let D = new w(s.Z, {
+f(P, "displayName", "GamePartyStore");
+let D = new P(s.Z, {
   CONNECTION_OPEN_SUPPLEMENTAL: y,
   OVERLAY_INITIALIZE: O,
   GUILD_CREATE: v,
@@ -210,7 +210,7 @@ let D = new w(s.Z, {
   PRESENCE_UPDATES: T,
   THREAD_MEMBER_LIST_UPDATE: S,
   THREAD_MEMBERS_UPDATE: A,
-  RELATIONSHIP_ADD: R,
-  RELATIONSHIP_UPDATE: R,
-  RELATIONSHIP_REMOVE: P
+  RELATIONSHIP_ADD: w,
+  RELATIONSHIP_UPDATE: w,
+  RELATIONSHIP_REMOVE: R
 })

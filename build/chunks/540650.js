@@ -1,28 +1,29 @@
-/** Chunk was on 24255 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
-  R: () => o
+  R: () => s
 });
 var r = n(255367),
-  l = n(659580),
-  i = n(875527),
-  a = n(306609);
+  i = n(659580),
+  a = n(875527),
+  o = n(306609);
 
-function o(e) {
+function s(e) {
   let {
     onClose: t,
     onInteraction: n,
-    location: o,
-    overlayLimitedInteraction: u = !1
+    location: s,
+    overlayLimitedInteraction: l = !1
   } = e;
-  return (0, i.Hu)({
-    location: o,
+  return (0, a.Hu)({
+    location: s,
     autoTrackExposure: !0
-  }) ? (0, r.jsx)(a.l, {
+  }) ? (0, r.jsx)(o.l, {
     wide: !0,
     showOutputDevices: !0,
     onSettingsButtonClick: t,
-    showSearchBar: !u
-  }) : (0, r.jsx)(l.default, {
+    showSearchBar: !l
+  }) : (0, r.jsx)(i.default, {
     onClose: t,
     renderInputDevices: !0,
     renderOutputDevices: !0,

@@ -1,4 +1,5 @@
-/** Chunk was on 60173 **/
+/** Chunk was on web.js **/
+"use strict";
 e.exports = {
   hidden: "hidden_d2e74b",
   whiteFlash: "whiteFlash_d2e74b",

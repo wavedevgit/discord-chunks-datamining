@@ -2,7 +2,7 @@
 "use strict";
 let r, i;
 n.d(t, {
-  Z: () => R,
+  Z: () => w,
   q: () => m
 }), n(539854);
 var a, o = n(213919),
@@ -219,7 +219,7 @@ f(C, "displayName", "MultiAccountStore"), f(C, "persistKey", "MultiAccountStore"
     canUseMultiAccountMobile: !1
   }
 }]);
-let R = new C(l.Z, {
+let w = new C(l.Z, {
   CONNECTION_OPEN: b,
   LOGOUT: y,
   MULTI_ACCOUNT_VALIDATE_TOKEN_REQUEST: e => I(e.userId, 1),

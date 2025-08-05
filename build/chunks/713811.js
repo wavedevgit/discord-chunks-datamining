@@ -1,4 +1,4 @@
-/** Chunk was on 94312 **/
+/** Chunk was on 22988 **/
 e.exports = {
   description: "description__80a8f",
   switch: "switch__80a8f",

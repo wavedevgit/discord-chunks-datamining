@@ -1,4 +1,5 @@
-/** Chunk was on 91396 **/
+/** Chunk was on web.js **/
+"use strict";
 e.exports = {
   iconPlaceholder: "iconPlaceholder__1729d",
   underline: "underline__1729d",

@@ -1,4 +1,5 @@
-/** Chunk was on 66005 **/
+/** Chunk was on web.js **/
+"use strict";
 e.exports = {
   floaterWrapper: "floaterWrapper__1836e",
   visibleFloater: "visibleFloater__1836e",

@@ -1,4 +1,4 @@
-/** Chunk was on 60173 **/
+/** Chunk was on 49152 **/
 n.d(t, {
   Z: () => c
 }), n(388685);
@@ -13,25 +13,25 @@ function a(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let o = new Set;
-class s extends(r = i.ZP.PersistedStore) {
+let s = new Set;
+class o extends(r = i.ZP.PersistedStore) {
   initialize(e) {
-    null != e && (o = new Set(e))
+    null != e && (s = new Set(e))
   }
   hasHidden(e) {
-    return o.has(e)
+    return s.has(e)
   }
   getState() {
-    return o
+    return s
   }
 }
-a(s, "displayName", "ForumChannelAdminOnboardingGuideStore"), a(s, "persistKey", "ForumChannelAdminOnboardingGuideStore");
-let c = new s(l.Z, {
+a(o, "displayName", "ForumChannelAdminOnboardingGuideStore"), a(o, "persistKey", "ForumChannelAdminOnboardingGuideStore");
+let c = new o(l.Z, {
   ADMIN_ONBOARDING_GUIDE_HIDE: function(e) {
     let {
       channelId: t,
       hide: n
     } = e;
-    n ? o.add(t) : o.delete(t)
+    n ? s.add(t) : s.delete(t)
   }
 })

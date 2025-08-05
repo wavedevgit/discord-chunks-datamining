@@ -1,5 +1,8 @@
-/** Chunk was on 94313 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
-  q: () => i
+  q: () => r
 });
-var r, i = ((r = {})[r.UNKNOWN = 0] = "UNKNOWN", r[r.MESSAGE_SEND = 1] = "MESSAGE_SEND", r[r.GUILD_MEMBER_JOIN_OR_UPDATE = 2] = "GUILD_MEMBER_JOIN_OR_UPDATE", r)
+var r = function(e) {
+  return e[e.UNKNOWN = 0] = "UNKNOWN", e[e.MESSAGE_SEND = 1] = "MESSAGE_SEND", e[e.GUILD_MEMBER_JOIN_OR_UPDATE = 2] = "GUILD_MEMBER_JOIN_OR_UPDATE", e
+}({})

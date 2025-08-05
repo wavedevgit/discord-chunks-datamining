@@ -1,9 +1,9 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Wf: () => R,
-  ZP: () => w,
-  wz: () => P
+  Wf: () => w,
+  ZP: () => P,
+  wz: () => R
 });
 var r = n(255367),
   i = n(73800),
@@ -121,7 +121,7 @@ function C(e, t, n, i, a) {
   }))) : d()
 }
 
-function R(e) {
+function w(e) {
   var t;
   let {
     node: n,
@@ -161,7 +161,7 @@ function R(e) {
   })
 }
 
-function P(e) {
+function R(e) {
   let {
     commandId: t,
     commandName: n,
@@ -192,9 +192,9 @@ function P(e) {
   })
 }
 
-function w(e) {
+function P(e) {
   return {
-    react: (e, t, n) => (0, r.jsx)(R, {
+    react: (e, t, n) => (0, r.jsx)(w, {
       node: e,
       stateKey: n.key,
       children: t(e.content, n)

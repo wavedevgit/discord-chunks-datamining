@@ -29,13 +29,13 @@ var r = n(255367),
   A = n(514361),
   N = n(55358),
   C = n(572397),
-  R = n(705262),
-  P = n(981631),
-  w = n(921944),
+  w = n(705262),
+  R = n(981631),
+  P = n(921944),
   D = n(474936),
   L = n(388032),
   x = n(595532);
-let M = () => (0, r.jsx)("div", {
+let k = () => (0, r.jsx)("div", {
     className: x.editorHeader,
     children: (0, r.jsxs)("div", {
       className: x.bannerUpsell,
@@ -48,11 +48,11 @@ let M = () => (0, r.jsx)("div", {
       })]
     })
   }),
-  k = e => {
+  j = e => {
     let {
       markAsDismissed: t
     } = e, n = (0, C.q)(), i = () => {
-      null != t && t(w.L.DISMISS), n(P.rMx.CLIENT_THEME_PREVIEW_CLOSED), (0, N.C)()
+      null != t && t(P.L.DISMISS), n(R.rMx.CLIENT_THEME_PREVIEW_CLOSED), (0, N.C)()
     };
     return (0, r.jsxs)("div", {
       className: x.editorHeader,
@@ -70,7 +70,7 @@ let M = () => (0, r.jsx)("div", {
       })]
     })
   },
-  j = e => {
+  M = e => {
     var t, n, i;
     let {
       onSubscribeSuccess: a,
@@ -81,7 +81,7 @@ let M = () => (0, r.jsx)("div", {
       intervalType: null == p || null == (t = p.subscription_trial) ? void 0 : t.interval,
       intervalCount: null == p || null == (n = p.subscription_trial) ? void 0 : n.interval_count
     }), m = e => {
-      e && (null == a || a(), null != o && o(w.L.PRIMARY), null != u && ((0, R.Yk)({
+      e && (null == a || a(), null != o && o(P.L.PRIMARY), null != u && ((0, w.Yk)({
         isPersisted: !0,
         themeName: c.Us[u.id],
         analyticsLocations: s
@@ -108,7 +108,7 @@ let M = () => (0, r.jsx)("div", {
     } = (0, l.cj)([A.Z], () => ({
       isPreview: A.Z.isPreview
     })), [o, c] = i.useState(!1), d = (0, C.q)(), f = () => {
-      null != t && t(w.L.DISMISS), d(P.rMx.CLIENT_THEME_PREVIEW_CLOSED), (0, N.C)(), n || p.Z.open()
+      null != t && t(P.L.DISMISS), d(R.rMx.CLIENT_THEME_PREVIEW_CLOSED), (0, N.C)(), n || p.Z.open()
     }, _ = (0, s.EQ)({
       isPreview: a,
       isCoachmark: n,
@@ -122,7 +122,7 @@ let M = () => (0, r.jsx)("div", {
     }, () => L.intl.string(L.t["dqH+qq"])).otherwise(() => L.intl.string(L.t.Olc2Ky));
     return (0, r.jsxs)("div", {
       className: x.editorFooter,
-      children: [a && (0, r.jsx)(j, {
+      children: [a && (0, r.jsx)(M, {
         onSubscribeSuccess: () => {
           c(!0)
         },
@@ -149,14 +149,14 @@ function G(e) {
     isPreview: A.Z.isPreview,
     shouldEditorAnimate: n && !m.Z.useReducedMotion
   })), u = (0, b.oq)().activePanel === b.wh.CLIENT_THEMES, d = (0, C.q)();
-  i.useEffect(() => d(P.rMx.CLIENT_THEME_PREVIEW_VIEWED), [d]), i.useEffect(() => {
-    s && T.default.track(P.rMx.PREMIUM_UPSELL_VIEWED, {
+  i.useEffect(() => d(R.rMx.CLIENT_THEME_PREVIEW_VIEWED), [d]), i.useEffect(() => {
+    s && T.default.track(R.rMx.PREMIUM_UPSELL_VIEWED, {
       type: D.cd.PREMIUM_CLIENT_THEME_TRY_IT_OUT,
       location_stack: a
     })
   }, [s, a]);
   let _ = (0, C.J)(),
-    p = (0, h.Z)(null, s ? _ : P.dG4);
+    p = (0, h.Z)(null, s ? _ : R.dG4);
   return i.useEffect(() => {
     if (s && !u) return _
   }, [s, u, _]), (0, r.jsx)(E.Gt, {
@@ -166,15 +166,15 @@ function G(e) {
       "data-app-right-panel": !0,
       className: o()(x.themeEditor, c ? x.editorAnimate : null),
       children: (0, r.jsxs)(f.y5t, {
-        children: [n ? (0, r.jsx)(M, {}) : (0, r.jsx)(k, {
+        children: [n ? (0, r.jsx)(k, {}) : (0, r.jsx)(j, {
           markAsDismissed: t
         }), (0, r.jsx)(f.Ttm, {
           className: x.editorBody,
-          children: (0, r.jsxs)(R.ZP, {
-            type: R.yH.EDITOR,
-            children: [!s && (0, r.jsx)(R.ZP.Basic, {
+          children: (0, r.jsxs)(w.ZP, {
+            type: w.yH.EDITOR,
+            children: [!s && (0, r.jsx)(w.ZP.Basic, {
               className: x.selectionGroup
-            }), (0, r.jsx)(R.ZP.Gradient, {
+            }), (0, r.jsx)(w.ZP.Gradient, {
               className: x.selectionGroup,
               isCoachmark: n
             })]

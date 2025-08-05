@@ -33,7 +33,7 @@ async function l(e) {
   let t = await (0, i.ZDy)(async () => {
     let {
       default: t
-    } = await Promise.all([n.e("8739"), n.e("60301")]).then(n.bind(n, 677012));
+    } = await n.e("57650").then(n.bind(n, 677012));
     return n => (0, r.jsx)(t, s({}, n, e))
   }, {
     onCloseCallback: () => {

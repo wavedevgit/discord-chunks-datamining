@@ -1,13 +1,14 @@
-/** Chunk was on 60173 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
-  Z: () => p
+  Z: () => f
 }), n(388685);
 var r = n(255367),
   i = n(73800),
-  l = n(120356),
-  a = n.n(l),
-  o = n(772848),
-  s = n(481060),
+  a = n(120356),
+  o = n.n(a),
+  s = n(772848),
+  l = n(481060),
   c = n(481051),
   u = n(978644);
 
@@ -15,9 +16,9 @@ function d(e) {
   let {
     width: t = 24,
     height: n = 24,
-    isBadged: l = !1,
-    isTyping: a = !1
-  } = e, [c] = i.useState(() => (0, o.Z)());
+    isBadged: a = !1,
+    isTyping: o = !1
+  } = e, [c] = i.useState(() => (0, s.Z)());
   return (0, r.jsxs)("svg", {
     width: t,
     height: n,
@@ -29,15 +30,15 @@ function d(e) {
           fill: "white",
           width: "100%",
           height: "100%"
-        }), a && (0, r.jsx)("g", {
+        }), o && (0, r.jsx)("g", {
           fill: "black",
           transform: "translate(5.5, ".concat(10.5, ") scale(").concat(11 / 24, ")"),
-          children: (0, r.jsx)(s.IJ0, {
+          children: (0, r.jsx)(l.IJ0, {
             dotRadius: 3.5,
             spacing: 3,
             fill: "black"
           })
-        }), l && (0, r.jsx)("circle", {
+        }), a && (0, r.jsx)("circle", {
           cx: "20",
           cy: "19",
           r: "10",
@@ -46,7 +47,7 @@ function d(e) {
       })
     }), (0, r.jsx)("g", {
       mask: "url(#".concat(c, ")"),
-      children: (0, r.jsx)(s.kBi, {
+      children: (0, r.jsx)(l.kBi, {
         size: "custom",
         width: t,
         height: n,
@@ -56,23 +57,23 @@ function d(e) {
   })
 }
 
-function p(e) {
+function f(e) {
   var t;
   let {
     className: n,
     unreadCount: i,
-    mentionCount: l,
-    isTyping: o,
-    canBadge: s
-  } = e, p = null != l && l > 0, h = null != (t = p ? l : i) ? t : 0, f = s && null != i && i > 0;
+    mentionCount: a,
+    isTyping: s,
+    canBadge: l
+  } = e, f = null != a && a > 0, _ = null != (t = f ? a : i) ? t : 0, p = _ > 99 ? "99+" : _, h = l && null != i && i > 0;
   return (0, r.jsxs)("div", {
-    className: a()(u.chatIcon, n),
+    className: o()(u.chatIcon, n),
     children: [(0, r.jsx)(d, {
-      isBadged: f,
-      isTyping: o
-    }), f && (0, r.jsx)(c.Z, {
-      hasMentions: p,
-      truncatedCount: h > 99 ? "99+" : h,
+      isBadged: h,
+      isTyping: s
+    }), h && (0, r.jsx)(c.Z, {
+      hasMentions: f,
+      truncatedCount: p,
       className: u.badge
     })]
   })

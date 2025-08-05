@@ -1,4 +1,4 @@
-/** Chunk was on 94312 **/
+/** Chunk was on 22988 **/
 e.exports = {
   bodyText: "bodyText__959cb",
   joinOptions: "joinOptions__959cb",

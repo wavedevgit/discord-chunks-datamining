@@ -1,53 +1,54 @@
-/** Chunk was on 94313 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
-  Z: () => f
+  Z: () => p
 });
 var r = n(255367),
   i = n(73800),
-  l = n(442837),
-  a = n(905405),
-  o = n(869765),
-  s = n(699516),
+  a = n(442837),
+  o = n(905405),
+  s = n(869765),
+  l = n(699516),
   c = n(937889),
   u = n(739566),
   d = n(267128),
-  p = n(981631);
-let m = i.memo(function(e) {
+  f = n(981631);
+let _ = i.memo(function(e) {
   let {
     baseMessage: t,
     channel: n,
-    referencedMessage: p,
-    compact: m = !1
-  } = e, f = p.state === o.Y.LOADED ? p.message : void 0, g = (0, a.p)(), _ = i.useMemo(() => (null == f ? void 0 : f.content) != null && "" !== f.content ? (0, c.ZP)(f, {
+    referencedMessage: f,
+    compact: _ = !1
+  } = e, p = f.state === s.Y.LOADED ? f.message : void 0, h = (0, o.p)(), m = i.useMemo(() => (null == p ? void 0 : p.content) != null && "" !== p.content ? (0, c.ZP)(p, {
     formatInline: !0,
-    shouldFilterKeywords: g
-  }).content : null, [f, g]), {
-    isReplyAuthorBlocked: h,
-    isReplyAuthorIgnored: b
-  } = (0, l.cj)([s.Z], () => ({
-    isReplyAuthorBlocked: null != f && s.Z.isBlockedForMessage(f),
-    isReplyAuthorIgnored: null != f && s.Z.isIgnoredForMessage(f)
-  }), [f]), E = (0, u.Uj)(f), C = (0, u.Uj)(t);
+    shouldFilterKeywords: h
+  }).content : null, [p, h]), {
+    isReplyAuthorBlocked: g,
+    isReplyAuthorIgnored: E
+  } = (0, a.cj)([l.Z], () => ({
+    isReplyAuthorBlocked: null != p && l.Z.isBlockedForMessage(p),
+    isReplyAuthorIgnored: null != p && l.Z.isIgnoredForMessage(p)
+  }), [p]), b = (0, u.Uj)(p), y = (0, u.Uj)(t);
   return (0, r.jsx)(d.Z, {
-    repliedAuthor: E,
-    baseAuthor: C,
+    repliedAuthor: b,
+    baseAuthor: y,
     baseMessage: t,
     channel: n,
-    referencedMessage: p,
-    content: _,
-    compact: m,
-    isReplyAuthorBlocked: h,
-    isReplyAuthorIgnored: b,
+    referencedMessage: f,
+    content: m,
+    compact: _,
+    isReplyAuthorBlocked: g,
+    isReplyAuthorIgnored: E,
     isReplySpineClickable: !1,
     showReplySpine: !0
   })
 });
 
-function f(e, t, n, i, l) {
-  return e.type !== p.uaV.REPLY || null == n ? null : (0, r.jsx)(m, {
+function p(e, t, n, i, a) {
+  return e.type !== f.uaV.REPLY || null == n ? null : (0, r.jsx)(_, {
     baseMessage: e,
     channel: t,
     referencedMessage: i,
-    compact: l
+    compact: a
   })
 }

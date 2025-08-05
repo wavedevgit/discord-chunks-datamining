@@ -1,8 +1,8 @@
-/** Chunk was on 60173 **/
-n.d(t, {
-  Z: () => r
+/** Chunk was on 78036 **/
+t.d(e, {
+  Z: () => i
 });
-let r = (0, n(818083).B)({
+let i = (0, t(818083).B)({
   kind: "guild",
   id: "2021-11_hub_events",
   label: "Hub Events",

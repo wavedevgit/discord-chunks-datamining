@@ -1,4 +1,5 @@
-/** Chunk was on 94313 **/
+/** Chunk was on web.js **/
+"use strict";
 e.exports = {
   embedHorizontal: "embedHorizontal_a8b53f",
   embedVertical: "embedVertical_a8b53f",

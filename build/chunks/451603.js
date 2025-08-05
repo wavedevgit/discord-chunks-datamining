@@ -1,14 +1,15 @@
-/** Chunk was on 94313 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
-  yU: () => o
+  yU: () => s
 }), n(442837), n(536442);
 var r = n(430824),
   i = n(594174),
-  l = n(74538),
-  a = n(981631);
+  a = n(74538),
+  o = n(981631);
 
-function o() {
-  let e = r.Z.getGuildCount() >= a.DZw,
-    t = l.ZP.canUseIncreasedGuildCap(i.default.getCurrentUser());
+function s() {
+  let e = r.Z.getGuildCount() >= o.DZw,
+    t = a.ZP.canUseIncreasedGuildCap(i.default.getCurrentUser());
   return e && !t
 }

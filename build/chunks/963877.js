@@ -1,4 +1,4 @@
-/** Chunk was on 94312 **/
+/** Chunk was on 22988 **/
 e.exports = {
   listingNameColumn: "listingNameColumn__6ef11",
   paymentsCountColumn: "paymentsCountColumn__6ef11",

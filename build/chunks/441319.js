@@ -3,7 +3,7 @@
 n.d(t, {
   M9: () => C,
   aW: () => D,
-  wu: () => w
+  wu: () => P
 }), n(388685);
 var r = n(997945),
   i = n(388032),
@@ -32,7 +32,7 @@ var r = n(997945),
   N = n(563856);
 let C = 60;
 
-function R() {
+function w() {
   return {
     id: r.aH.DEFAULT,
     iconSource: o,
@@ -41,7 +41,7 @@ function R() {
   }
 }
 
-function P() {
+function R() {
   return [{
     id: r.Ru.BRAND_DARK,
     iconSource: u,
@@ -155,10 +155,10 @@ function P() {
   }]
 }
 
-function w() {
-  return [R(), ...P()]
+function P() {
+  return [w(), ...R()]
 }
 
 function D(e) {
-  return w().find(t => t.id === e)
+  return P().find(t => t.id === e)
 }

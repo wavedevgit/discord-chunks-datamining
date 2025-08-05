@@ -1,66 +1,66 @@
 /** Chunk was on 86590 **/
-n.d(t, {
+t.d(n, {
   E: () => d,
-  Z: () => b
+  Z: () => m
 });
-var i, r = n(255367),
-  a = n(120356),
-  l = n.n(a),
-  s = n(471445),
-  c = n(686546),
-  o = n(601964),
-  u = n(292895),
-  d = ((i = {}).SMALL_32 = "SMALL_32", i);
+var l, r = t(255367),
+  i = t(120356),
+  c = t.n(i),
+  o = t(471445),
+  a = t(686546),
+  s = t(601964),
+  u = t(292895),
+  d = ((l = {}).SMALL_32 = "SMALL_32", l);
 let f = {
     SMALL_32: 24
   },
-  p = {
+  h = {
     SMALL_32: [13, 11, 10, 10, 10, 10, 10]
   },
-  b = function(e) {
+  m = function(e) {
     let {
-      className: t,
-      iconClassName: n,
-      size: i,
-      channel: a,
+      className: n,
+      iconClassName: t,
+      size: l,
+      channel: i,
       guild: d,
-      locked: b,
-      hasActiveThreads: E
+      locked: m,
+      hasActiveThreads: p
     } = e;
     if (null == d) return null;
-    let I = (0, o.EB)(d, 48),
-      _ = p[i],
-      g = f[i],
-      y = (0, s.KS)(a, d, {
-        locked: b,
-        hasActiveThreads: E
+    let j = (0, s.EB)(d, 48),
+      b = h[l],
+      g = f[l],
+      y = (0, o.KS)(i, d, {
+        locked: m,
+        hasActiveThreads: p
       });
     if (null == y) return null;
-    let A = null != d ? (0, o.gM)(d) : "";
+    let O = null != d ? (0, s.gM)(d) : "";
     return (0, r.jsxs)("div", {
       role: "img",
-      className: t,
-      children: [(0, r.jsx)(c.ZP, {
-        mask: c.QS.GUILD_ICON_WITH_CHANNEL_TYPE,
-        children: null != I ? (0, r.jsx)("img", {
+      className: n,
+      children: [(0, r.jsx)(a.ZP, {
+        mask: a.QS.GUILD_ICON_WITH_CHANNEL_TYPE,
+        children: null != j ? (0, r.jsx)("img", {
           alt: "",
-          src: I,
+          src: j,
           className: u.channelGuildIcon,
           style: {
             width: g,
             height: g
           }
         }) : (0, r.jsx)("div", {
-          className: l()(u.channelGuildIcon, u.acronym),
+          className: c()(u.channelGuildIcon, u.acronym),
           style: {
-            fontSize: A.length - 1 > _.length ? _[_.length - 1] : _[A.length - 1],
+            fontSize: O.length - 1 > b.length ? b[b.length - 1] : b[O.length - 1],
             width: g,
             height: g
           },
-          children: A
+          children: O
         })
       }), (0, r.jsx)(y, {
-        className: l()(u.icon, u.iconWithGuildIcon, n),
+        className: c()(u.icon, u.iconWithGuildIcon, t),
         color: "currentColor"
       })]
     })

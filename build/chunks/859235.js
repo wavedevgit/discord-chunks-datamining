@@ -96,9 +96,9 @@ function T(e, t) {
     size: A = 1
   } = e, N = (0, s.JA)(n), {
     onFocus: C
-  } = N, R = y(N, ["onFocus"]), {
-    handleFocus: P,
-    handleBlur: w
+  } = N, w = y(N, ["onFocus"]), {
+    handleFocus: R,
+    handleBlur: P
   } = (0, f.b)(C), D = 0 === A, L = null != E, x = e => {
     if (v) {
       switch (e.which) {
@@ -122,9 +122,9 @@ function T(e, t) {
     }
   };
   return (0, r.jsx)(l.tEY, {
-    children: (0, r.jsx)("li", b(g({}, R), {
-      onFocus: P,
-      onBlur: w,
+    children: (0, r.jsx)("li", b(g({}, w), {
+      onFocus: R,
+      onBlur: P,
       onKeyDown: x,
       className: o()(h.upload, a, {
         [h.sizeClip]: 2 === A

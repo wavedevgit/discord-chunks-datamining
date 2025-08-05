@@ -1,4 +1,4 @@
-/** Chunk was on 60173 **/
+/** Chunk was on 49152 **/
 e.exports = {
   pageContainer: "pageContainer__09fde",
   scroller: "scroller__09fde",

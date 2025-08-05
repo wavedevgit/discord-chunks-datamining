@@ -1,6 +1,6 @@
-/** Chunk was on 99226 **/
+/** Chunk was on 13616 **/
 n.d(t, {
-  Z: () => I
+  Z: () => w
 });
 var i = n(255367),
   r = n(73800),
@@ -45,7 +45,7 @@ function S(e) {
   return e
 }
 
-function Z(e, t) {
+function I(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -58,7 +58,7 @@ function Z(e, t) {
   }), e
 }
 
-function I(e) {
+function w(e) {
   let {
     guild: t,
     id: l,
@@ -72,7 +72,7 @@ function I(e) {
       let {
         default: e
       } = await n.e("5396").then(n.bind(n, 731646));
-      return t => (0, i.jsx)(e, Z(S({}, t), {
+      return t => (0, i.jsx)(e, I(S({}, t), {
         id: l,
         label: C.intl.string(C.t.oJ1Mu7)
       }))
@@ -80,7 +80,7 @@ function I(e) {
   }, [l]);
   switch (o) {
     case p.Kw.CHANNEL:
-      return (0, i.jsx)(E, {
+      return (0, i.jsx)(Z, {
         guild: t,
         id: l,
         isLocked: a,
@@ -88,7 +88,7 @@ function I(e) {
         openEntryContextMenu: m
       });
     case p.Kw.ROLE:
-      return (0, i.jsx)(w, {
+      return (0, i.jsx)(E, {
         guild: t,
         id: l,
         isLocked: a,
@@ -96,7 +96,7 @@ function I(e) {
         openEntryContextMenu: m
       });
     case p.Kw.USER:
-      return (0, i.jsx)(T, {
+      return (0, i.jsx)(P, {
         guild: t,
         id: l,
         isLocked: a,
@@ -106,7 +106,7 @@ function I(e) {
   }
 }
 
-function E(e) {
+function Z(e) {
   let {
     guild: t,
     id: n,
@@ -150,13 +150,13 @@ function E(e) {
       className: N.tag,
       variant: "text-sm/normal",
       children: ["(", f, ")"]
-    }) : null, l ? (0, i.jsx)(P, {
+    }) : null, l ? (0, i.jsx)(T, {
       tooltipText: a
     }) : null]
   })
 }
 
-function w(e) {
+function E(e) {
   var t;
   let {
     guild: l,
@@ -172,7 +172,7 @@ function w(e) {
       let {
         default: e
       } = await n.e("14486").then(n.bind(n, 786746));
-      return t => (0, i.jsx)(e, Z(S({}, t), {
+      return t => (0, i.jsx)(e, I(S({}, t), {
         guild: l,
         role: m
       }))
@@ -194,13 +194,13 @@ function w(e) {
       color: "header-primary",
       variant: "text-md/normal",
       children: m.name
-    }), s ? (0, i.jsx)(P, {
+    }), s ? (0, i.jsx)(T, {
       tooltipText: p
     }) : null]
   })
 }
 
-function T(e) {
+function P(e) {
   let {
     guild: t,
     id: n,
@@ -228,19 +228,19 @@ function T(e) {
       className: N.tag,
       variant: "text-sm/normal",
       children: y.ZP.getUserTag(a)
-    }), r ? (0, i.jsx)(P, {
+    }), r ? (0, i.jsx)(T, {
       tooltipText: l
     }) : null]
   })
 }
 
-function P(e) {
+function T(e) {
   let {
     tooltipText: t
   } = e;
   return (0, i.jsx)(d.ua7, {
     text: t,
-    children: e => (0, i.jsx)("div", Z(S({
+    children: e => (0, i.jsx)("div", I(S({
       className: N.lockIcon
     }, e), {
       children: (0, i.jsx)(d.mBM, {

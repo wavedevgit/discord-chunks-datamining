@@ -65,8 +65,8 @@ function N(e, t) {
   }), e
 }
 let C = new s.Z("CloudUpload.tsx"),
-  R = n(224497).Z;
-class P extends Error {
+  w = n(224497).Z;
+class R extends Error {
   static getErrorKind(e, t) {
     var n;
     let r = null != (n = null == t ? void 0 : t.status) ? n : 0,
@@ -76,13 +76,13 @@ class P extends Error {
   }
   static rejectionHandler(e) {
     return t => {
-      if (t instanceof o.Pd) throw new P(e, {
+      if (t instanceof o.Pd) throw new R(e, {
         response: t
       });
-      if (t instanceof Error) throw new P(e, {
+      if (t instanceof Error) throw new R(e, {
         cause: t
       });
-      throw new P(e, {
+      throw new R(e, {
         cause: Error(String(t))
       })
     }
@@ -95,13 +95,13 @@ class P extends Error {
     let {
       cause: i,
       response: a
-    } = t, o = P.getErrorKind(null != i ? i : Error("".concat(null != (n = null == a ? void 0 : a.text) ? n : "Unknown error")), a), s = "server_error" === o ? "".concat(e, ":").concat(o, ":status_").concat(null != (r = null == a ? void 0 : a.status) ? r : 0) : "".concat(e, ":").concat(o);
+    } = t, o = R.getErrorKind(null != i ? i : Error("".concat(null != (n = null == a ? void 0 : a.text) ? n : "Unknown error")), a), s = "server_error" === o ? "".concat(e, ":").concat(o, ":status_").concat(null != (r = null == a ? void 0 : a.status) ? r : 0) : "".concat(e, ":").concat(o);
     super(s, {
       cause: i
     }), T(this, "kind", void 0), T(this, "phase", void 0), T(this, "messageShort", void 0), this.name = "ResumableUploadError", this.phase = e, this.kind = o, this.messageShort = s
   }
 }
-let w = "Content-MD5";
+let P = "Content-MD5";
 var D = function(e) {
   return e.NOT_STARTED = "NOT_STARTED", e.STARTED = "STARTED", e.UPLOADING = "UPLOADING", e.ERROR = "ERROR", e.COMPLETED = "COMPLETED", e.CANCELED = "CANCELED", e
 }({});
@@ -171,7 +171,7 @@ class x extends y.ZP {
     let n = {
       "Content-Type": t
     };
-    void 0 !== this.contentHash && (n[w] = this.contentHash);
+    void 0 !== this.contentHash && (n[P] = this.contentHash);
     let r = S({
       url: this.responseUrl,
       body: e,
@@ -195,13 +195,13 @@ class x extends y.ZP {
       },
       signal: this._abortController.signal
     };
-    return await o.tn.put(t).then(e => 200 === e.status || 201 === e.status ? this.currentSize : P.rejectionHandler("status_check")(e)).catch(e => {
+    return await o.tn.put(t).then(e => 200 === e.status || 201 === e.status ? this.currentSize : R.rejectionHandler("status_check")(e)).catch(e => {
       if (e instanceof o.Pd && 308 === e.status) {
         var t;
         let n = this.parseRangeHeader(null != (t = e.headers.range) ? t : "");
         return null != n ? n[1] + 1 : 0
       }
-      return P.rejectionHandler("status_check")(e)
+      return R.rejectionHandler("status_check")(e)
     })
   }
   async startOrResumeUpload(e) {
@@ -215,8 +215,8 @@ class x extends y.ZP {
       }), e.body = r
     }
     e.onRequestProgress = i().throttle(this.createResumeAwareProgressFn(t), 50);
-    let r = await o.tn.put(e).catch(P.rejectionHandler("upload"));
-    if (200 !== r.status && 201 !== r.status) throw new P("upload", {
+    let r = await o.tn.put(e).catch(R.rejectionHandler("upload"));
+    if (200 !== r.status && 201 !== r.status) throw new R("upload", {
       response: r
     });
     return r
@@ -247,7 +247,7 @@ class x extends y.ZP {
         }
         return await this.startOrResumeUpload(s, l)
       } catch (e) {
-        if (e instanceof P && e.canRetry()) {
+        if (e instanceof R && e.canRetry()) {
           C.warn("Error uploading ".concat(this.id, ": ").concat(e.message, ", attempting resumption")), this.uploadAnalytics.uploadResumptionReason = e.messageShort, await g.Z.awaitOnline();
           let t = a.fail();
           C.log("Waiting ".concat(t, "ms before attachment upload attempt ").concat(this.uploadAttempts + 1)), await new Promise(e => setTimeout(e, t))
@@ -281,7 +281,7 @@ class x extends y.ZP {
     if ("COMPLETED" === this.status) return;
     if (this.setStatus("STARTED"), this.startTime = performance.now(), this.trackUploadStart(), "CANCELED" === this.status) return void this.handleComplete(this.id);
     this.item.platform === y.ow.WEB && await this.maybeConvertToWebP();
-    let i = await R.getUploadPayload(this),
+    let i = await w.getUploadPayload(this),
       a = (0, O.F)(this.item.target);
     if (null == i.filename || "" === i.filename || 0 === this.currentSize) {
       C.error("File does not have a filename or size is 0.", JSON.stringify(i)), this.handleError(I.evJ.INVALID_FILE_ASSET);

@@ -1,4 +1,4 @@
-/** Chunk was on 70663 **/
+/** Chunk was on 92357 **/
 n.d(t, {
   Z: () => b
 });
@@ -7,8 +7,8 @@ n(73800);
 var i = n(399606),
   l = n(524437),
   o = n(481060),
-  a = n(494404),
-  s = n(377171),
+  s = n(494404),
+  a = n(377171),
   c = n(317632),
   u = n(602478),
   d = n(2818),
@@ -23,8 +23,8 @@ function b(e) {
     tab: t,
     setTab: n,
     children: b,
-    badgeState: _,
-    closePopout: O
+    badgeState: O,
+    closePopout: _
   } = e, {
     enabled: y,
     inInbox: C
@@ -37,7 +37,7 @@ function b(e) {
   } = u.Z.useExperiment({
     location: "RecentsHeader"
   }), E = (0, i.e7)([c.Z], () => c.Z.getUnseenInviteCount()), S = (0, i.e7)([h.Z], () => h.Z.getOverdueMessageReminderCount());
-  return (0, r.jsxs)(a.h4, {
+  return (0, r.jsxs)(s.h4, {
     className: m.header,
     children: [(0, r.jsxs)("div", {
       className: m.headerTitle,
@@ -53,7 +53,7 @@ function b(e) {
       }), (0, r.jsxs)("div", {
         className: m.controls,
         children: [b, (0, r.jsx)(f.Z, {
-          closePopout: O
+          closePopout: _
         })]
       })]
     }), (0, r.jsx)("div", {
@@ -68,8 +68,8 @@ function b(e) {
           id: l.X.FOR_YOU,
           "aria-label": g.intl.string(g.t["En+D+v"]),
           className: m.tab,
-          children: [g.intl.string(g.t["En+D+v"]), (null == _ ? void 0 : _.badgeForYou) ? (0, r.jsx)(o.fWl, {
-            color: s.Z.STATUS_DANGER,
+          children: [g.intl.string(g.t["En+D+v"]), (null == O ? void 0 : O.badgeForYou) ? (0, r.jsx)(o.fWl, {
+            color: a.Z.STATUS_DANGER,
             className: m.iconBadge
           }) : null]
         }), (0, r.jsx)(o.njP.Item, {
@@ -86,7 +86,7 @@ function b(e) {
           id: l.X.GAME_INVITES,
           className: m.tab,
           children: [g.intl.string(g.t.apq3cX), E > 0 ? (0, r.jsx)(o.fWl, {
-            color: s.Z.STATUS_DANGER,
+            color: a.Z.STATUS_DANGER,
             className: m.iconBadge
           }) : null]
         }) : null, y && C ? (0, r.jsx)(o.njP.Item, {

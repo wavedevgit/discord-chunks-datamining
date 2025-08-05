@@ -1,4 +1,5 @@
-/** Chunk was on 91396 **/
+/** Chunk was on web.js **/
+"use strict";
 e.exports = {
   rowIcon: "rowIcon_cb32c7",
   appDetailsRowContainer: "appDetailsRowContainer_cb32c7",

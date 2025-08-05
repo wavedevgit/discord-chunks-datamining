@@ -1,33 +1,34 @@
-/** Chunk was on 60173 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
-  Z: () => s
+  Z: () => l
 });
 var r = n(255367);
 n(73800);
 var i = n(120356),
-  l = n.n(i),
-  a = n(134433),
-  o = n(753130);
+  a = n.n(i),
+  o = n(134433),
+  s = n(753130);
 
-function s(e) {
+function l(e) {
   let t, {
     className: n,
     children: i,
-    verified: s,
+    verified: l,
     roleColor: c,
     roleName: u
   } = e;
-  return t = s ? (0, r.jsx)(a.Z, {
+  return t = l ? (0, r.jsx)(o.Z, {
     size: 12,
     color: c,
-    className: o.linkedRoleColor
+    className: s.linkedRoleColor
   }) : (0, r.jsx)("div", {
-    className: o.roleColor,
+    className: s.roleColor,
     style: {
       backgroundColor: c
     }
   }), (0, r.jsxs)("div", {
-    className: l()(n, o.role),
+    className: a()(n, s.role),
     style: {
       "--custom-role-label-color": c
     },

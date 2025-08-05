@@ -1,13 +1,13 @@
-/** Chunk was on 70663 **/
+/** Chunk was on 92357 **/
 n.d(t, {
-  Z: () => O
+  Z: () => _
 });
 var r = n(255367),
   i = n(73800),
   l = n(120356),
   o = n.n(l),
-  a = n(66546),
-  s = n(442837),
+  s = n(66546),
+  a = n(442837),
   c = n(481060),
   u = n(492162),
   d = n(237583),
@@ -21,18 +21,18 @@ let b = {
   tension: 300
 };
 
-function _(e) {
+function O(e) {
   var t;
   let {
     guildChannels: n,
     jumpToVoiceChannels: l
-  } = e, a = n.getCategoryFromSection(n.voiceChannelsSectionNumber), s = (0, u.Z)(n.id), h = i.useCallback(e => {
+  } = e, s = n.getCategoryFromSection(n.voiceChannelsSectionNumber), a = (0, u.Z)(n.id), h = i.useCallback(e => {
     e.preventDefault(), e.stopPropagation(), l()
-  }, [l]), f = null != (t = null == a ? void 0 : a.getChannelRecords()) ? t : [], b = (0, p.c4)({
+  }, [l]), f = null != (t = null == s ? void 0 : s.getChannelRecords()) ? t : [], b = (0, p.c4)({
     channels: f,
     selectedChannelId: null,
     selectedVoiceChannelId: null,
-    voiceStates: s
+    voiceStates: a
   });
   return (0, r.jsxs)(c.P3F, {
     className: o()(m.bar, m.voiceBar),
@@ -60,7 +60,7 @@ function _(e) {
   })
 }
 
-function O(e) {
+function _(e) {
   let {
     position: t,
     guildChannels: n,
@@ -69,12 +69,12 @@ function O(e) {
     jumpToChannel: d
   } = e, {
     bottomBar: p,
-    topBar: O
-  } = (0, s.cj)([f.Z], () => f.Z.getUnreadStateForGuildId(n.id)), y = (0, s.e7)([h.Z], () => h.Z.isFocused()), {
+    topBar: _
+  } = (0, a.cj)([f.Z], () => f.Z.getUnreadStateForGuildId(n.id)), y = (0, a.e7)([h.Z], () => h.Z.isFocused()), {
     mode: C,
     mentionCount: v,
     targetChannelId: j
-  } = "bottom" === t ? p : O, E = C === f.x.HIDDEN, S = (0, c.q_F)({
+  } = "bottom" === t ? p : _, E = C === f.x.HIDDEN, S = (0, c.q_F)({
     to: {
       transform: E ? "bottom" === t ? "translateY(180%)" : "translateY(-180%)" : "translateY(0%)"
     },
@@ -87,7 +87,7 @@ function O(e) {
       [m.top]: "top" === t,
       [m.bottom]: "bottom" === t
     }),
-    children: (0, r.jsx)(a.animated.div, {
+    children: (0, r.jsx)(s.animated.div, {
       className: m.containerPadding,
       style: S,
       "aria-hidden": E,
@@ -125,7 +125,7 @@ function O(e) {
             count: v
           })
         })
-      }) : C === f.x.VOICE_CHANNELS ? (0, r.jsx)(_, {
+      }) : C === f.x.VOICE_CHANNELS ? (0, r.jsx)(O, {
         jumpToVoiceChannels: u,
         guildChannels: n,
         guildChannelsVersion: l

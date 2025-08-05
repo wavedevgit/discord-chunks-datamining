@@ -2,16 +2,16 @@
 "use strict";
 n.d(t, {
   B: () => D,
-  B5: () => R,
-  Do: () => w,
-  GX: () => k,
+  B5: () => w,
+  Do: () => P,
+  GX: () => j,
   HR: () => F,
   Hr: () => C,
   Je: () => A,
   Js: () => b,
-  KR: () => P,
+  KR: () => R,
   MO: () => U,
-  N3: () => j,
+  N3: () => M,
   Oq: () => S,
   P_: () => v,
   Vn: () => T,
@@ -22,9 +22,9 @@ n.d(t, {
   nE: () => G,
   nH: () => I,
   qs: () => E,
-  qz: () => V,
+  qz: () => Z,
   ws: () => x,
-  xI: () => M,
+  xI: () => k,
   zI: () => y
 }), n(781311);
 var r = n(367907),
@@ -261,7 +261,7 @@ function C(e) {
   }))
 }
 
-function R(e) {
+function w(e) {
   let {
     guildId: t,
     channelId: n,
@@ -278,7 +278,7 @@ function R(e) {
   }))
 }
 
-function P(e) {
+function R(e) {
   let {
     guildId: t,
     channelId: n,
@@ -295,7 +295,7 @@ function P(e) {
   }))
 }
 
-function w(e) {
+function P(e) {
   let {
     guildId: t,
     channelId: n,
@@ -339,7 +339,7 @@ function x(e) {
   })
 }
 
-function M(e) {
+function k(e) {
   let {
     added: t
   } = e;
@@ -348,7 +348,7 @@ function M(e) {
   })
 }
 
-function k(e) {
+function j(e) {
   let {
     readGuideCta: t
   } = e;
@@ -357,7 +357,7 @@ function k(e) {
   })
 }
 
-function j(e) {
+function M(e) {
   let {
     isMobile: t
   } = e;
@@ -383,7 +383,7 @@ function B(e) {
   })
 }
 
-function V() {
+function Z() {
   r.ZP.trackWithMetadata(_.rMx.OPEN_MODAL, {
     type: "Forum Channel Upsell Modal",
     location: {

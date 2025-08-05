@@ -1,6 +1,6 @@
 /** Chunk was on 77025 **/
 n.d(t, {
-  Z: () => o
+  Z: () => a
 }), n(388685), n(539854);
 var r = n(255367),
   i = n(73800),
@@ -46,25 +46,25 @@ let s = [{
   alpha: 1
 }];
 
-function o(e) {
+function a(e) {
   let {
     className: t,
     children: n,
-    containerRef: o,
-    faderSize: a,
+    containerRef: a,
+    faderSize: o,
     faderEdgeThreshold: c
-  } = e, u = i.useRef(null), [d, m] = i.useState(0), [f, h] = i.useState(0), [p, x] = i.useState(0), g = i.useCallback(() => {
-    null != u.current && (m(u.current.getDistanceFromTop()), h(u.current.getDistanceFromBottom()), x(u.current.getScrollerState().offsetHeight))
+  } = e, u = i.useRef(null), [d, m] = i.useState(0), [f, h] = i.useState(0), [x, p] = i.useState(0), g = i.useCallback(() => {
+    null != u.current && (m(u.current.getDistanceFromTop()), h(u.current.getDistanceFromBottom()), p(u.current.getScrollerState().offsetHeight))
   }, []);
   i.useEffect(() => {
-    if (g(), null == o.current) return;
+    if (g(), null == a.current) return;
     let e = new ResizeObserver(() => {
       g()
     });
-    return e.observe(o.current), () => {
+    return e.observe(a.current), () => {
       e.disconnect()
     }
-  }, [u, o, g]);
+  }, [u, a, g]);
   let b = i.useMemo(() => {
     if (0 === d && 0 === f) return {};
     let e = [];
@@ -74,25 +74,25 @@ function o(e) {
         let {
           position: r,
           alpha: i
-        } = s[n], l = (r * a).toFixed(2);
+        } = s[n], l = (r * o).toFixed(2);
         e.push("hsla(0, 0%, 0%, ".concat(t + i * (1 - t), ") ").concat(l, "px"))
       }
     }
     if (f > 0) {
-      let t = p - a,
+      let t = x - o,
         n = c > 0 ? 1 - Math.min(c, f) / c : 1;
       for (let r = s.length - 1; r >= 0; r--) {
         let {
           position: i,
           alpha: l
-        } = s[r], o = (t + (1 - i) * a).toFixed(2);
-        e.push("hsla(0, 0%, 0%, ".concat(n + l * (1 - n), ") ").concat(o, "px"))
+        } = s[r], a = (t + (1 - i) * o).toFixed(2);
+        e.push("hsla(0, 0%, 0%, ".concat(n + l * (1 - n), ") ").concat(a, "px"))
       }
     }
     return {
       maskImage: "linear-gradient(".concat(e.join(","), ")")
     }
-  }, [f, d, c, a, p]);
+  }, [f, d, c, o, x]);
   return (0, r.jsx)(l.xVE, {
     ref: u,
     style: b,

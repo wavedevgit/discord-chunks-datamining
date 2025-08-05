@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => P
+  Z: () => R
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -80,7 +80,7 @@ function N(e, t) {
   return i
 }
 let C = (e, t) => "".concat(e, ":").concat(t),
-  R = i.forwardRef(function(e, t) {
+  w = i.forwardRef(function(e, t) {
     var {
       emoji: n,
       isFavorite: i,
@@ -96,20 +96,20 @@ let C = (e, t) => "".concat(e, ":").concat(t),
       allowAnimatedEmoji: T,
       selectedItemClassName: N,
       inNitroLockedSection: C
-    } = e, R = A(e, ["emoji", "isFavorite", "isLargeSize", "isMediumSize", "isInspected", "isDisabled", "showPulse", "columnIndex", "rowIndex", "size", "surrogateCodePoint", "allowAnimatedEmoji", "selectedItemClassName", "inNitroLockedSection"]);
-    let P = (0, s.e7)([g.Z], () => n.type === f.B.GUILD ? g.Z.getGuild(n.guildId) : void 0, [n]),
-      w = () => {
+    } = e, w = A(e, ["emoji", "isFavorite", "isLargeSize", "isMediumSize", "isInspected", "isDisabled", "showPulse", "columnIndex", "rowIndex", "size", "surrogateCodePoint", "allowAnimatedEmoji", "selectedItemClassName", "inNitroLockedSection"]);
+    let R = (0, s.e7)([g.Z], () => n.type === f.B.GUILD ? g.Z.getGuild(n.guildId) : void 0, [n]),
+      P = () => {
         let e = n.allNamesString;
-        return ((null == P ? void 0 : P.name) != null && (e = y.intl.formatToPlainString(y.t["nXv4/P"], {
+        return ((null == R ? void 0 : R.name) != null && (e = y.intl.formatToPlainString(y.t["nXv4/P"], {
           names: e,
-          guildName: P.name
+          guildName: R.name
         })), i) ? y.intl.formatToPlainString(y.t["9FI9Z2"], {
           names: e
         }) : e
       },
       D = d && !C;
     return (0, r.jsx)(l.tEY, {
-      children: (0, r.jsx)("button", S(I({}, R), {
+      children: (0, r.jsx)("button", S(I({}, w), {
         className: o()(O.emojiItem, {
           [O.emojiItemLarge]: a,
           [O.emojiItemMedium]: c,
@@ -124,7 +124,7 @@ let C = (e, t) => "".concat(e, ":").concat(t),
         "data-animated": n.animated ? "true" : null,
         ref: t,
         children: (0, r.jsx)(b.Z, {
-          "aria-label": w(),
+          "aria-label": P(),
           columnIndex: h,
           rowIndex: m,
           emoji: n,
@@ -137,7 +137,7 @@ let C = (e, t) => "".concat(e, ":").concat(t),
     })
   });
 
-function P(e) {
+function R(e) {
   let {
     descriptor: t,
     emojiItemKey: a,
@@ -150,44 +150,44 @@ function P(e) {
     isUsingKeyboardNavigation: v,
     showEmojiFavoriteTooltip: T,
     surrogateCodePoint: N,
-    selectedItemClassName: P,
-    getEmojiItemProps: w,
+    selectedItemClassName: R,
+    getEmojiItemProps: P,
     isMediumSize: D,
     isLargeSize: L,
     pulseItemKey: x,
-    allowAnimatedEmoji: M,
-    setPulseItemKey: k,
-    messageId: j,
+    allowAnimatedEmoji: k,
+    setPulseItemKey: j,
+    messageId: M,
     isBurstReaction: U,
     rowPosition: G,
     inNitroLockedSection: B
-  } = e, [V, F] = i.useState(""), Z = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), H = (0, s.e7)([d.ZP], () => d.ZP.getDisambiguatedEmojiContext(p), [p]), Y = i.useRef(null), {
+  } = e, [Z, F] = i.useState(""), V = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), H = (0, s.e7)([d.ZP], () => d.ZP.getDisambiguatedEmojiContext(p), [p]), Y = i.useRef(null), {
     emoji: W,
     size: K,
     isDisabled: z,
     columnIndex: q
-  } = t, X = e => {
+  } = t, $ = e => {
     if (e.stopPropagation(), O.current || v.current) return;
     let n = e.altKey;
-    n && !d.ZP.getDisambiguatedEmojiContext().isFavoriteEmojiWithoutFetchingLatest(W) && k(a), (0, h.Kw)(h.v6.FAVORITE_EMOJI_TOOLTIP), b(t, {
+    n && !d.ZP.getDisambiguatedEmojiContext().isFavoriteEmojiWithoutFetchingLatest(W) && j(a), (0, h.Kw)(h.v6.FAVORITE_EMOJI_TOOLTIP), b(t, {
       isFinalSelection: !e.shiftKey,
       toggleFavorite: n
     })
-  }, Q = () => {
+  }, X = () => {
     O.current || v.current || g(t)
-  }, J = e => {
+  }, Q = e => {
     (0, c.jW)(e, async () => {
       let {
         default: e
       } = await n.e("39010").then(n.bind(n, 269254));
       return t => (0, r.jsx)(e, I({}, t))
     })
-  }, $ = function() {
+  }, J = function() {
     var e;
     let {
       onMouseEnter: t,
       onMouseLeave: n
-    } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}, s = null != (e = w(q, f)) ? e : {}, {
+    } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}, s = null != (e = P(q, f)) ? e : {}, {
       ref: l,
       tabIndex: c,
       onFocus: u
@@ -195,7 +195,7 @@ function P(e) {
     return (0, i.createElement)("li", S(I({}, d), {
       key: a,
       ref: Y
-    }), V !== C(q, f) && (0, r.jsx)(R, {
+    }), Z !== C(q, f) && (0, r.jsx)(w, {
       ref: l,
       emoji: W,
       isFavorite: H.isFavoriteEmojiWithoutFetchingLatest(W),
@@ -204,26 +204,26 @@ function P(e) {
       isInspected: o,
       isDisabled: z,
       showPulse: x === a,
-      allowAnimatedEmoji: M,
-      onFocus: null != u ? u : Q,
-      onMouseMove: Q,
+      allowAnimatedEmoji: k,
+      onFocus: null != u ? u : X,
+      onMouseMove: X,
       onMouseEnter: t,
       onMouseLeave: n,
       onClick: e => {
-        if (null != Y.current && null != G && null != j && !e.shiftKey && null != W.name && U && !Z && M) {
+        if (null != Y.current && null != G && null != M && !e.shiftKey && null != W.name && U && !V && k) {
           let e = null == W.id ? _.ZP.convertNameToSurrogate(W.name) : W.name,
             t = Y.current.getBoundingClientRect();
-          t.x = G.x + (q + 1) * K, F(C(q, f)), (0, m.U)(j, e, W.id, t)
+          t.x = G.x + (q + 1) * K, F(C(q, f)), (0, m.U)(M, e, W.id, t)
         }
-        X(e)
+        $(e)
       },
-      onContextMenu: J,
+      onContextMenu: Q,
       tabIndex: c,
       columnIndex: q,
       rowIndex: f,
       size: K,
       surrogateCodePoint: N,
-      selectedItemClassName: P,
+      selectedItemClassName: R,
       inNitroLockedSection: B
     }))
   };
@@ -233,6 +233,6 @@ function P(e) {
     }),
     position: "top",
     delay: 200,
-    children: e => $(e)
-  }, a) : $()
+    children: e => J(e)
+  }, a) : J()
 }

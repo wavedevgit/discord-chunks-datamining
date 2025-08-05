@@ -1,11 +1,12 @@
-/** Chunk was on 94313 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
-  i: () => l
+  i: () => a
 });
 var r = n(39621),
   i = n(388032);
 
-function l(e) {
+function a(e) {
   switch (e) {
     case r.O.FEATURE_LIMITED:
       return i.intl.string(i.t.WCvmra);

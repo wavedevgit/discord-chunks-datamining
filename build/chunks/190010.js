@@ -1,4 +1,5 @@
-/** Chunk was on 60173 **/
+/** Chunk was on web.js **/
+"use strict";
 e.exports = {
   root: "root__5621e",
   regionSelectPopout: "regionSelectPopout__5621e",

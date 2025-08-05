@@ -1,5 +1,5 @@
-/** Chunk was on 7210 **/
-t.d(e, {
-  w: () => r
-}), t(388685);
-var n, r = ((n = {}).MESSAGE = "message", n.FORUM_POST = "forum_post", n.MESSAGE_BUNDLE = "message_bundle", n.CONVERSATION = "conversation", n)
+/** Chunk was on 71824 **/
+n.d(t, {
+  w: () => l
+}), n(388685);
+var r, l = ((r = {}).MESSAGE = "message", r.FORUM_POST = "forum_post", r.MESSAGE_BUNDLE = "message_bundle", r.CONVERSATION = "conversation", r)

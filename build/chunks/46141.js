@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  $z: () => R,
+  $z: () => w,
   D0: () => E,
   JC: () => A,
   Om: () => S,
@@ -293,7 +293,7 @@ class C extends f {
     this.username = e.username || ""
   }
 }
-class R extends f {
+class w extends f {
   constructor(e) {
     if (e.id = "", e.paymentGateway = s.gg$.APPLE_PARTNER, e.type = s.HeQ.APPLE, e.billingAddress = {}, e.country = "", e.invalid = !1, e.isDefault = !1, e.flags = 0, super(e), e.type !== s.HeQ.APPLE) throw Error("Cannot instantiate AppleSourceRecord with type: ".concat(e.type, ", must be ").concat(s.HeQ.APPLE))
   }

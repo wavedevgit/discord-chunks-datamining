@@ -1,4 +1,4 @@
-/** Chunk was on 37048 **/
+/** Chunk was on 56285 **/
 t.d(n, {
   Z: () => g
 });
@@ -7,34 +7,34 @@ var l = t(255367),
   i = t(481060),
   o = t(81897),
   s = t(906732),
-  c = t(785717),
+  d = t(785717),
   a = t(806729),
-  u = t(857302),
-  d = t(892001),
+  c = t(857302),
+  u = t(892001),
   f = t(252417),
   p = t(388032),
-  j = t(301150);
+  h = t(301150);
 
 function g(e) {
   let {
     user: n,
     guildId: t,
     channelId: g,
-    onClose: h
+    onClose: v
   } = e, {
-    mutualFriends: v
+    mutualFriends: j
   } = (0, a.Z)(n), {
     analyticsLocations: m
   } = (0, s.ZP)(), {
     context: b,
     trackUserProfileAction: x
-  } = (0, c.KZ)(), y = (0, o.Z)();
+  } = (0, d.KZ)(), Z = (0, o.Z)();
   r.useEffect(() => {
-    (0, u.Z)(n.id, y)
-  }, [n.id, y]);
-  let O = e => {
+    (0, c.Z)(n.id, Z)
+  }, [n.id, Z]);
+  let y = e => {
     var n, t;
-    (0, d.openUserProfileModal)((n = function(e) {
+    (0, u.openUserProfileModal)((n = function(e) {
       for (var n = 1; n < arguments.length; n++) {
         var t = null != arguments[n] ? arguments[n] : {},
           l = Object.keys(t);
@@ -66,20 +66,20 @@ function g(e) {
     }), n))
   };
   return (0, l.jsx)(i.zJl, {
-    className: j.listScroller,
+    className: h.listScroller,
     fade: !0,
-    children: null == v ? (0, l.jsx)("div", {
-      className: j.empty,
+    children: null == j ? (0, l.jsx)("div", {
+      className: h.empty,
       children: (0, l.jsx)(i.$jN, {})
-    }) : 0 === v.length ? (0, l.jsxs)("div", {
-      className: j.empty,
+    }) : 0 === j.length ? (0, l.jsxs)("div", {
+      className: h.empty,
       children: [(0, l.jsx)("div", {
-        className: j.emptyIconFriends
+        className: h.emptyIconFriends
       }), (0, l.jsx)("div", {
-        className: j.emptyText,
+        className: h.emptyText,
         children: p.intl.string(p.t["/5p4g4"])
       })]
-    }) : v.map(e => {
+    }) : j.map(e => {
       let {
         key: n,
         user: r,
@@ -91,9 +91,9 @@ function g(e) {
         guildId: t,
         channelId: g,
         onSelect: () => {
-          null == h || h(), x({
+          null == v || v(), x({
             action: "PRESS_MUTUAL_FRIEND"
-          }), O(r.id)
+          }), y(r.id)
         }
       }, n)
     })

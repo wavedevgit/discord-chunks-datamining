@@ -1,4 +1,5 @@
-/** Chunk was on 66005 **/
+/** Chunk was on web.js **/
+"use strict";
 e.exports = {
   voiceFiltersPopout: "voiceFiltersPopout_e2f668",
   wide: "wide_e2f668",

@@ -1,5 +1,5 @@
-/** Chunk was on 8381 **/
+/** Chunk was on web.js **/
 "use strict";
-t.exports = function(t) {
-  return !!t && !!t.ownerDocument && (t.ownerDocument.defaultView ? t instanceof t.ownerDocument.defaultView.HTMLElement : t instanceof HTMLElement)
+e.exports = function(e) {
+  return !!e && !!e.ownerDocument && (e.ownerDocument.defaultView ? e instanceof e.ownerDocument.defaultView.HTMLElement : e instanceof HTMLElement)
 }

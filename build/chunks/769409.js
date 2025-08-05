@@ -1,59 +1,65 @@
-/** Chunk was on 94313 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
-  B: () => s
+  B: () => u
 });
 var r = n(255367);
 n(73800);
 var i = n(481060),
-  l = n(668781),
-  a = n(231338),
-  o = n(388032);
-let s = (e, t) => {
-  let s = "group-dm-edit-modal-".concat(e),
-    c = !1,
-    u = e => {
-      c = e
+  a = n(668781),
+  o = n(231338),
+  s = n(388032);
+
+function l(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: !0,
+    configurable: !0,
+    writable: !0
+  }) : e[t] = n, e
+}
+
+function c(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      l(e, t, n[t])
+    })
+  }
+  return e
+}
+let u = (e, t) => {
+  let l = "group-dm-edit-modal-".concat(e),
+    u = !1,
+    d = e => {
+      u = e
     },
-    d = () => {
-      c ? l.Z.show({
-        title: o.intl.string(o.t.pvRCSk),
-        body: o.intl.string(o.t.DRi46e),
-        confirmText: o.intl.string(o.t["6GQDFh"]),
+    f = () => {
+      u ? a.Z.show({
+        title: s.intl.string(s.t.pvRCSk),
+        body: s.intl.string(s.t.DRi46e),
+        confirmText: s.intl.string(s.t["6GQDFh"]),
         confirmVariant: "critical-primary",
-        cancelText: o.intl.string(o.t.DmDzZG),
-        onConfirm: () => (0, i.Mr3)(s),
-        onCancel: a.dG
-      }) : (0, i.Mr3)(s)
+        cancelText: s.intl.string(s.t.DmDzZG),
+        onConfirm: () => (0, i.Mr3)(l),
+        onCancel: o.dG
+      }) : (0, i.Mr3)(l)
     };
   (0, i.ZDy)(async () => {
     let {
       default: i
-    } = await n.e("41259").then(n.bind(n, 912114));
-    return n => (0, r.jsx)(i, function(e) {
-      for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-          r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-          return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-          var r;
-          r = n[t], t in e ? Object.defineProperty(e, t, {
-            value: r,
-            enumerable: !0,
-            configurable: !0,
-            writable: !0
-          }) : e[t] = r
-        })
-      }
-      return e
-    }({
-      closeOrShowDiscardChangesAlert: d,
-      setHasPendingChanges: u,
+    } = await Promise.resolve().then(n.bind(n, 912114));
+    return n => (0, r.jsx)(i, c({
+      closeOrShowDiscardChangesAlert: f,
+      setHasPendingChanges: d,
       channelId: e,
       location: t
     }, n))
   }, {
-    modalKey: s,
-    onCloseRequest: d
+    modalKey: l,
+    onCloseRequest: f
   })
 }

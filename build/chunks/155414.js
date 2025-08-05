@@ -1,14 +1,15 @@
-/** Chunk was on 94313 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
-  X: () => a
+  X: () => o
 });
 var r = n(544891),
   i = n(881052),
-  l = n(981631);
-let a = async (e, t) => {
+  a = n(981631);
+let o = async (e, t) => {
   try {
     return (await r.tn.get({
-      url: l.ANM.PRICE_TIERS,
+      url: a.ANM.PRICE_TIERS,
       query: {
         price_tier_type: t,
         guild_id: e

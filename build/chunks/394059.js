@@ -1,5 +1,8 @@
-/** Chunk was on 94470 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
-  K: () => i
+  K: () => r
 });
-var r, i = ((r = {})[r.STREAM = 0] = "STREAM", r[r.VIDEO = 1] = "VIDEO", r)
+var r = function(e) {
+  return e[e.STREAM = 0] = "STREAM", e[e.VIDEO = 1] = "VIDEO", e
+}({})

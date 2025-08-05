@@ -1,4 +1,4 @@
-/** Chunk was on 94312 **/
+/** Chunk was on 22988 **/
 e.exports = {
   guildProductRoleIcon: "guildProductRoleIcon__77573",
   shine: "shine__77573",

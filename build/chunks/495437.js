@@ -1,20 +1,21 @@
-/** Chunk was on 94313 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
-  EB: () => a,
-  Je: () => s,
-  cf: () => o,
+  EB: () => o,
+  Je: () => l,
+  cf: () => s,
   mh: () => c
 });
 var r = n(570140),
   i = n(881052),
-  l = n(824389);
-let a = async e => {
+  a = n(824389);
+let o = async e => {
   r.Z.dispatch({
     type: "GUILD_PRODUCTS_FETCH",
     guildId: e
   });
   try {
-    let t = await l.uV(e);
+    let t = await a.uV(e);
     r.Z.dispatch({
       type: "GUILD_PRODUCTS_FETCH_SUCCESS",
       guildId: e,
@@ -26,13 +27,13 @@ let a = async e => {
       guildId: e
     })
   }
-}, o = async (e, t) => {
+}, s = async (e, t) => {
   r.Z.dispatch({
     type: "GUILD_PRODUCT_FETCH",
     productId: t
   });
   try {
-    let n = await l.p9(e, t);
+    let n = await a.p9(e, t);
     return r.Z.dispatch({
       type: "GUILD_PRODUCT_FETCH_SUCCESS",
       product: n
@@ -45,15 +46,15 @@ let a = async e => {
     }), e
   }
 };
-async function s(e, t, n) {
-  let i = await l.Je(e, t, n);
+async function l(e, t, n) {
+  let i = await a.Je(e, t, n);
   return r.Z.dispatch({
     type: "GUILD_PRODUCT_UPDATE",
     product: i
   }), i
 }
 async function c(e, t) {
-  return await l.mh(e, t), r.Z.dispatch({
+  return await a.mh(e, t), r.Z.dispatch({
     type: "GUILD_PRODUCT_DELETE",
     productId: t
   }), !0

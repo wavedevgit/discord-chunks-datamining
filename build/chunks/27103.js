@@ -1,77 +1,78 @@
-/** Chunk was on 94313 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
-  Z: () => g
+  Z: () => h
 });
 var r = n(255367);
 n(73800);
 var i = n(120356),
-  l = n.n(i),
-  a = n(481060),
-  o = n(385499),
-  s = n(739566),
+  a = n.n(i),
+  o = n(481060),
+  s = n(385499),
+  l = n(739566),
   c = n(464891),
   u = n(605568),
   d = n(834129),
-  p = n(674563),
-  m = n(388032),
-  f = n(126759);
+  f = n(674563),
+  _ = n(388032),
+  p = n(126759);
 
-function g(e) {
+function h(e) {
   let {
     message: t,
     compact: n,
     usernameHook: i
-  } = e, g = (0, s.ZP)(t), _ = i(g), {
-    avatarSrc: h,
+  } = e, h = (0, l.ZP)(t), m = i(h), {
+    avatarSrc: g,
     eventHandlers: {
-      onMouseEnter: b,
-      onMouseLeave: E
+      onMouseEnter: E,
+      onMouseLeave: b
     }
   } = (0, u.m)(!0);
   return (0, r.jsx)("div", {
-    onMouseEnter: b,
-    onMouseLeave: E,
+    onMouseEnter: E,
+    onMouseLeave: b,
     children: (0, r.jsx)(d.Z, {
-      className: l()(f.mainContainer, {
-        [f.compact]: n
+      className: a()(p.mainContainer, {
+        [p.compact]: n
       }),
       iconNode: n ? null : (0, r.jsx)(u.S, {
-        src: h
+        src: g
       }),
-      iconContainerClassName: f.iconContainer,
+      iconContainerClassName: p.iconContainer,
       compact: n,
       children: (0, r.jsxs)("div", {
-        className: l()(f.content, {
-          [f.compact]: n
+        className: a()(p.content, {
+          [p.compact]: n
         }),
         children: [(0, r.jsx)(c.nD, {
           message: t,
-          messageClassname: f.spanCorrection,
-          className: l()(f.usernameContainer, f.spanCorrection, {
-            [f.compact]: n
+          messageClassname: p.spanCorrection,
+          className: a()(p.usernameContainer, p.spanCorrection, {
+            [p.compact]: n
           }),
           username: (0, r.jsxs)("div", {
-            className: f.spanCorrection,
-            children: [(0, r.jsx)(a.Text, {
+            className: p.spanCorrection,
+            children: [(0, r.jsx)(o.Text, {
               variant: "text-md/normal",
               color: "text-brand",
               tag: "span",
-              className: f.username,
-              children: m.intl.string(m.t.hG1StL)
-            }), (0, r.jsx)(o.Z, {
-              type: p.Hb.SYSTEM_DM,
-              className: f.systemTag
+              className: p.username,
+              children: _.intl.string(_.t.hG1StL)
+            }), (0, r.jsx)(s.Z, {
+              type: f.Hb.SYSTEM_DM,
+              className: p.systemTag
             })]
           }),
           compact: n,
           showTimestamp: !0
         }), (0, r.jsx)("div", {
-          className: l()(f.__invalid_messageContent, {
-            [f.compact]: n
+          className: a()(p.__invalid_messageContent, {
+            [p.compact]: n
           }),
-          children: m.intl.format(m.t.qntXNT, {
-            username: g.nick,
-            usernameHook: _
+          children: _.intl.format(_.t.qntXNT, {
+            username: h.nick,
+            usernameHook: m
           })
         })]
       })

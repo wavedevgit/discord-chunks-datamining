@@ -1,4 +1,5 @@
-/** Chunk was on 94313 **/
+/** Chunk was on web.js **/
+"use strict";
 e.exports = {
   postPreviewContainer: "postPreviewContainer__419e3",
   thumbnailContainer: "thumbnailContainer__419e3",

@@ -1,4 +1,4 @@
-/** Chunk was on 43473 **/
+/** Chunk was on 11302 **/
 n.d(t, {
   Z: () => y
 });
@@ -78,14 +78,14 @@ function y(e) {
   } = e, {
     gameName: f,
     imageSrc: y,
-    applicationId: _,
-    comment: O,
-    tags: h
-  } = i, j = () => (0, r.jsxs)(r.Fragment, {
+    applicationId: O,
+    comment: j,
+    tags: _
+  } = i, x = () => (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(s.Z, {
       imageSrc: y,
       gameName: f,
-      applicationId: _,
+      applicationId: O,
       userId: t.id,
       disableInteraction: !0
     }), (0, r.jsxs)("div", {
@@ -94,15 +94,15 @@ function y(e) {
         variant: "text-md/normal",
         color: "text-default",
         children: f
-      }), null != O && (0, r.jsx)(b, {
-        text: O,
+      }), null != j && (0, r.jsx)(b, {
+        text: j,
         user: t,
         guildId: n,
         channelId: o
       }), (0, r.jsx)(d.Z, {
-        tags: h
+        tags: _
       }), (0, r.jsx)(u.Z, {
-        applicationId: _,
+        applicationId: O,
         guildId: n,
         channelId: o,
         className: m.socialProof
@@ -118,12 +118,12 @@ function y(e) {
     })]
   }) : c ? (0, r.jsx)("div", {
     className: m.card,
-    children: j()
+    children: x()
   }) : (0, r.jsx)(g, {
-    applicationId: _,
+    applicationId: O,
     userId: t.id,
     gameName: f,
     className: m.card,
-    children: j()
+    children: x()
   })
 }

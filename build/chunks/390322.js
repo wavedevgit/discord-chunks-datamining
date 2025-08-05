@@ -1,16 +1,17 @@
-/** Chunk was on 37447 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
-  Z: () => o
+  Z: () => a
 });
 var r = n(73800),
-  s = n(618158);
+  i = n(618158);
 
-function o(e) {
+function a(e) {
   let {
     children: t
   } = e, {
     preventIdle: n,
-    allowIdle: o
-  } = (0, s.Y)("popup");
-  return r.useEffect(() => (n(), () => o()), [o, n]), t
+    allowIdle: a
+  } = (0, i.Y)("popup");
+  return r.useEffect(() => (n(), () => a()), [a, n]), t
 }

@@ -1,6 +1,6 @@
-/** Chunk was on 99226 **/
+/** Chunk was on 13616 **/
 n.d(t, {
-  Z: () => E
+  Z: () => Z
 }), n(35282), n(388685), n(539854);
 var i = n(255367),
   r = n(73800),
@@ -56,13 +56,13 @@ function S(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let Z = e => {
+let I = e => {
   if (null == e) return null;
   let t = new g.Z(e);
   return v.ZP.getUserTag(t)
 };
 
-function I(e, t) {
+function w(e, t) {
   return null != t && /^data:/.test(t) ? t : (0, h.ov)({
     id: e.id,
     avatar: t,
@@ -70,7 +70,7 @@ function I(e, t) {
   })
 }
 
-function E(e) {
+function Z(e) {
   let {
     id: t,
     webhook: n,
@@ -78,16 +78,16 @@ function E(e) {
     channelOptions: g,
     isExpanded: h,
     isNew: v,
-    errors: E,
-    onToggleExpand: w
-  } = e, [T, P] = r.useState(!1), [k] = r.useState(new s.V7);
+    errors: Z,
+    onToggleExpand: E
+  } = e, [P, T] = r.useState(!1), [k] = r.useState(new s.V7);
   r.useEffect(() => () => k.stop(), [k]);
-  let A = r.useMemo(() => I(n, n.avatar), [n]),
-    D = r.useCallback(() => {
+  let A = r.useMemo(() => w(n, n.avatar), [n]),
+    R = r.useCallback(() => {
       let e = "".concat((0, a.K0)(!1)).concat(y.ANM.WEBHOOK_INTEGRATION(n.id, n.token));
       (0, x.JG)(e)
     }, [n]),
-    R = r.useCallback(() => {
+    D = r.useCallback(() => {
       (0, c.h7j)(e => (0, i.jsx)(c.ConfirmModal, S(N({}, e), {
         header: _.intl.formatToPlainString(_.t.QVFjHh, {
           name: n.name
@@ -120,7 +120,7 @@ function E(e) {
   null != n.user ? L.push({
     icon: c.T39,
     text: _.intl.formatToPlainString(_.t["7EcUbm"], {
-      user: Z(n.user),
+      user: I(n.user),
       timestamp: j.default.extractTimestamp(n.id)
     })
   }) : L.push({
@@ -148,13 +148,13 @@ function E(e) {
                 avatar: e
               })
             },
-            makeURL: e => I(n, e),
+            makeURL: e => w(n, e),
             imageClassName: C.avatarUploaderInner,
             showIcon: !0
-          }), null != E.avatar && "" !== E.avatar ? (0, i.jsx)(c.Text, {
+          }), null != Z.avatar && "" !== Z.avatar ? (0, i.jsx)(c.Text, {
             color: "text-danger",
             variant: "text-sm/normal",
-            children: E.avatar
+            children: Z.avatar
           }) : null]
         })
       }), (0, i.jsxs)(m.Z, {
@@ -172,7 +172,7 @@ function E(e) {
                   })
                 },
                 maxLength: 80,
-                error: E.name
+                error: Z.name
               })
             })
           }), (0, i.jsx)(m.Z.Child, {
@@ -196,7 +196,7 @@ function E(e) {
         }), (0, i.jsxs)(m.Z, {
           children: [(0, i.jsx)(c.ua7, {
             text: _.intl.string(_.t.wwdb3t),
-            forceOpen: T,
+            forceOpen: P,
             color: c.FGA.GREEN,
             disableTooltipPointerEvents: !0,
             children: e => {
@@ -231,7 +231,7 @@ function E(e) {
                 }, s), {
                   "aria-label": "",
                   onClick: () => {
-                    null == t || t(), P(!0), c.uvj.announce(_.intl.string(_.t.wwdb3t)), k.start(1e3, () => P(!1)), D()
+                    null == t || t(), T(!0), c.uvj.announce(_.intl.string(_.t.wwdb3t)), k.start(1e3, () => T(!1)), R()
                   },
                   disabled: null == n.token || "" === n.token
                 }))
@@ -241,7 +241,7 @@ function E(e) {
             variant: "critical-secondary",
             size: "sm",
             text: _.intl.string(_.t.jVrUnJ),
-            onClick: R
+            onClick: D
           })]
         })]
       })]
@@ -255,7 +255,7 @@ function E(e) {
       children: [(0, i.jsx)(c.P3F, {
         className: C.header,
         "aria-expanded": h,
-        onClick: w,
+        onClick: E,
         children: (0, i.jsxs)(m.Z, {
           align: m.Z.Align.CENTER,
           children: [(0, i.jsx)(O.Z, {

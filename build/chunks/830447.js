@@ -271,13 +271,13 @@ function N(e) {
     onClose: b,
     onSelect: O,
     onInteraction: I
-  } = e, N = T(h), C = S(N), P = i.useRef([]);
-  l()(P.current, C) || (P.current = C);
-  let w = null == (t = N.find(e => null != e.key)) ? void 0 : t.key,
+  } = e, N = T(h), C = S(N), R = i.useRef([]);
+  l()(R.current, C) || (R.current = C);
+  let P = null == (t = N.find(e => null != e.key)) ? void 0 : t.key,
     D = (0, c.ZP)({
       navId: n,
-      items: P.current,
-      initialFocusPath: p.Z.keyboardModeEnabled && null != w ? [w] : [],
+      items: R.current,
+      initialFocusPath: p.Z.keyboardModeEnabled && null != P ? [P] : [],
       closeMenu: b,
       defaultIsUsingKeyboardNavigation: p.Z.keyboardModeEnabled
     });
@@ -287,12 +287,12 @@ function N(e) {
   let L = i.useRef(null);
   (0, u.T)(L);
   let x = s ? d.u2 : d.zJ,
-    M = i.useMemo(() => ({
+    k = i.useMemo(() => ({
       onSelect: O,
       onInteraction: I
     }), [O, I]);
   return (0, r.jsx)(m.p.Provider, {
-    value: M,
+    value: k,
     children: (0, r.jsx)("div", v(y({
       className: o()(E.menu, E[a], f)
     }, D.getContainerProps()), {
@@ -302,7 +302,7 @@ function N(e) {
         className: E.scroller,
         children: [0 === N.length && (0, r.jsx)(g.ck, {
           disabled: !0,
-          label: () => (0, r.jsx)(R, {}),
+          label: () => (0, r.jsx)(w, {}),
           menuItemProps: D.getItemProps({
             path: ["empty"]
           }),
@@ -322,7 +322,7 @@ function C() {
   })
 }
 
-function R() {
+function w() {
   let e = "♫ (つ｡◕‿‿◕｡)つ ♪",
     t = "♫ ⊂(｡◕‿‿◕｡⊂) ♪",
     [n, a] = i.useState(e);

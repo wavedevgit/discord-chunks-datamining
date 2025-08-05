@@ -1,4 +1,5 @@
-/** Chunk was on 60173 **/
+/** Chunk was on web.js **/
+"use strict";
 e.exports = {
   list: "list_c3cd7d",
   withGuildIcon: "withGuildIcon_c3cd7d",

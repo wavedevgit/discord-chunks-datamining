@@ -73,7 +73,7 @@ function O(e) {
 
 function v(e) {
   if (g = !1, O(e), !m)
-    if (null !== r(u)) m = !0, w();
+    if (null !== r(u)) m = !0, P();
     else {
       var t = r(d);
       null !== t && D(v, t.startTime - e)
@@ -136,16 +136,16 @@ if ("function" == typeof y) o = function() {
   y(C)
 };
 else if ("undefined" != typeof MessageChannel) {
-  var R = new MessageChannel,
-    P = R.port2;
-  R.port1.onmessage = C, o = function() {
-    P.postMessage(null)
+  var w = new MessageChannel,
+    R = w.port2;
+  w.port1.onmessage = C, o = function() {
+    R.postMessage(null)
   }
 } else o = function() {
   E(C, 0)
 };
 
-function w() {
+function P() {
   I || (I = !0, o())
 }
 
@@ -157,7 +157,7 @@ function D(e, n) {
 t.unstable_IdlePriority = 5, t.unstable_ImmediatePriority = 1, t.unstable_LowPriority = 4, t.unstable_NormalPriority = 3, t.unstable_Profiling = null, t.unstable_UserBlockingPriority = 2, t.unstable_cancelCallback = function(e) {
   e.callback = null
 }, t.unstable_continueExecution = function() {
-  m || h || (m = !0, w())
+  m || h || (m = !0, P())
 }, t.unstable_forceFrameRate = function(e) {
   0 > e || 125 < e ? console.error("forceFrameRate takes a positive int between 0 and 125, forcing frame rates higher than 125 fps is not supported") : S = 0 < e ? Math.floor(1e3 / e) : 5
 }, t.unstable_getCurrentPriorityLevel = function() {
@@ -224,7 +224,7 @@ t.unstable_IdlePriority = 5, t.unstable_ImmediatePriority = 1, t.unstable_LowPri
     startTime: a,
     expirationTime: s,
     sortIndex: -1
-  }, a > o ? (e.sortIndex = a, n(d, e), null === r(u) && e === r(d) && (g ? (b(T), T = -1) : g = !0, D(v, a - o))) : (e.sortIndex = s, n(u, e), m || h || (m = !0, w())), e
+  }, a > o ? (e.sortIndex = a, n(d, e), null === r(u) && e === r(d) && (g ? (b(T), T = -1) : g = !0, D(v, a - o))) : (e.sortIndex = s, n(u, e), m || h || (m = !0, P())), e
 }, t.unstable_shouldYield = N, t.unstable_wrapCallback = function(e) {
   var t = p;
   return function() {

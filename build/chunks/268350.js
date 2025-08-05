@@ -4,14 +4,14 @@ n.d(t, {
   $p: () => T,
   FQ: () => I,
   Il: () => S,
-  Jf: () => R,
+  Jf: () => w,
   SA: () => L,
   Um: () => N,
-  eu: () => P,
+  eu: () => R,
   hW: () => x,
   lY: () => C,
   pk: () => A,
-  qB: () => w
+  qB: () => P
 }), n(953529), n(539854);
 var r = n(392711),
   i = n.n(r),
@@ -169,13 +169,13 @@ let I = async (e, t) => {
       user: _.default.getCurrentUser()
     })
   }), n.body
-}, R = async (e, t, n) => (await a.tn.patch({
+}, w = async (e, t, n) => (await a.tn.patch({
   url: m.ANM.GUILD_STICKER(e, t),
   body: n,
   rejectWithError: !1
 })).body;
 
-function P(e, t, n) {
+function R(e, t, n) {
   o.Z.dispatch({
     type: "ADD_STICKER_PREVIEW",
     channelId: e,
@@ -184,7 +184,7 @@ function P(e, t, n) {
   })
 }
 
-function w(e, t) {
+function P(e, t) {
   o.Z.dispatch({
     type: "CLEAR_STICKER_PREVIEW",
     channelId: e,

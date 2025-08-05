@@ -1,4 +1,4 @@
-/** Chunk was on 94312 **/
+/** Chunk was on 22988 **/
 e.exports = {
   selectTeamContainer: "selectTeamContainer__7b175",
   teamSelect: "teamSelect__7b175",

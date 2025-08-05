@@ -1,8 +1,8 @@
-/** Chunk was on 8381 **/
+/** Chunk was on web.js **/
 "use strict";
-var e = /-(.)/g;
-t.exports = function(t) {
-  return t.replace(e, function(t, e) {
-    return e.toUpperCase()
+var t = /-(.)/g;
+e.exports = function(e) {
+  return e.replace(t, function(e, t) {
+    return t.toUpperCase()
   })
 }

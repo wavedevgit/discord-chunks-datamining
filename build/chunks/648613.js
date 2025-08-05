@@ -88,20 +88,20 @@ function v(e) {
     paymentModalBanner: A,
     isGift: N,
     children: C
-  } = e, R = (0, i.e7)([d.default], () => d.default.getCurrentUser()), P = (0, i.e7)([f.Z], () => f.Z.getPremiumTypeSubscription()), {
-    analyticsLocations: w
+  } = e, w = (0, i.e7)([d.default], () => d.default.getCurrentUser()), R = (0, i.e7)([f.Z], () => f.Z.getPremiumTypeSubscription()), {
+    analyticsLocations: P
   } = (0, s.ZP)(), D = (0, _.N)(), L = !N && null != D && null != m && p.nG[D.trial_id].skus.includes(m);
   return C({
     onClick: e => {
       var i;
-      if (e.preventDefault(), null == R) return void(0, u.uL)(h.Z5c.LOGIN, {
+      if (e.preventDefault(), null == w) return void(0, u.uL)(h.Z5c.LOGIN, {
         source: "premium_subscribe_button"
       });
-      if (null == t || t(e), (null == P ? void 0 : P.status) === h.O0b.ACCOUNT_HOLD) {
+      if (null == t || t(e), (null == R ? void 0 : R.status) === h.O0b.ACCOUNT_HOLD) {
         (0, l.A3)(), o.Z.open(h.oAB.PREMIUM), null == O || O(!1);
         return
       }
-      if (!R.isClaimed()) return void(0, a.ZDy)(async () => {
+      if (!w.isClaimed()) return void(0, a.ZDy)(async () => {
         let {
           default: e
         } = await n.e("69417").then(n.bind(n, 918995));
@@ -114,7 +114,7 @@ function v(e) {
           }))
         }
       });
-      if (!R.verified) return void(0, a.ZDy)(async () => {
+      if (!w.verified) return void(0, a.ZDy)(async () => {
         let {
           default: e
         } = await n.e("20102").then(n.bind(n, 444688));
@@ -133,7 +133,7 @@ function v(e) {
         isGift: N,
         initialPlanId: null,
         subscriptionTier: m,
-        analyticsLocations: w,
+        analyticsLocations: P,
         analyticsObject: g({
           object: h.qAy.BUTTON_CTA,
           objectType: d

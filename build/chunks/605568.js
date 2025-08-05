@@ -1,29 +1,30 @@
-/** Chunk was on 94313 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
-  S: () => f,
-  m: () => m
+  S: () => p,
+  m: () => _
 }), n(388685);
 var r = n(255367),
   i = n(73800),
-  l = n(442837),
-  a = n(481060),
-  o = n(607070),
-  s = n(426563),
+  a = n(442837),
+  o = n(481060),
+  s = n(607070),
+  l = n(426563),
   c = n(998502),
   u = n(388032),
   d = n(860918);
-let p = c.ZP.getEnableHardwareAcceleration() ? a.Xo$ : a.qEK;
+let f = c.ZP.getEnableHardwareAcceleration() ? o.Xo$ : o.qEK;
 
-function m() {
+function _() {
   let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
     [t, n] = i.useState(!1),
-    r = (0, l.e7)([o.Z], () => o.Z.useReducedMotion),
-    a = i.useMemo(() => {
+    r = (0, a.e7)([s.Z], () => s.Z.useReducedMotion),
+    o = i.useMemo(() => {
       let n = t || !r && !e;
-      return (0, s.j)(n)
+      return (0, l.j)(n)
     }, [t, r, e]);
   return {
-    avatarSrc: a,
+    avatarSrc: o,
     eventHandlers: {
       onMouseEnter: i.useCallback(() => n(!0), []),
       onMouseLeave: i.useCallback(() => n(!1), [])
@@ -31,15 +32,15 @@ function m() {
   }
 }
 
-function f(e) {
+function p(e) {
   let {
     src: t
   } = e;
   return (0, r.jsx)("div", {
     className: d.avatarContainer,
-    children: (0, r.jsx)(p, {
+    children: (0, r.jsx)(f, {
       src: t,
-      size: a.EFr.SIZE_40,
+      size: o.EFr.SIZE_40,
       "aria-label": u.intl.string(u.t.hG1StL)
     })
   })

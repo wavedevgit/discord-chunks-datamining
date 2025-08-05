@@ -1,4 +1,5 @@
-/** Chunk was on 60173 **/
+/** Chunk was on web.js **/
+"use strict";
 e.exports = {
   root: "root_cd27c4",
   highFive: "highFive_cd27c4",

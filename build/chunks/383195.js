@@ -1,4 +1,5 @@
-/** Chunk was on 94313 **/
+/** Chunk was on web.js **/
+"use strict";
 e.exports = {
   embed: "embed__98ba8",
   showVideoOnFocus: "showVideoOnFocus__98ba8",

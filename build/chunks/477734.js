@@ -1,9 +1,10 @@
-/** Chunk was on 40694 **/
-t.d(n, {
-  X$: () => l,
-  _f: () => o
-}), t(906732);
-let r = (0, t(818083).B)({
+/** Chunk was on web.js **/
+"use strict";
+n.d(t, {
+  X$: () => i,
+  _f: () => a
+}), n(906732);
+let r = (0, n(818083).B)({
   kind: "user",
   id: "2023-08_remix_ga",
   label: "Remix General Available",
@@ -39,7 +40,7 @@ let r = (0, t(818083).B)({
   }]
 });
 
-function l() {
+function i() {
   return r.useExperiment({
     location: "canSeeRemixBadge"
   }, {
@@ -47,7 +48,7 @@ function l() {
   }).canSeeRemixBadge
 }
 
-function o() {
+function a() {
   return !!r.useExperiment({
     location: "isRemixANitroPerkHook"
   }, {

@@ -1,4 +1,5 @@
-/** Chunk was on 60173 **/
+/** Chunk was on web.js **/
+"use strict";
 e.exports = {
   chatHeaderBar: "chatHeaderBar_dc83f5",
   chatHeaderBarText: "chatHeaderBarText_dc83f5",

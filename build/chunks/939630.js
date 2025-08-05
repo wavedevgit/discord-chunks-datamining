@@ -1,4 +1,5 @@
-/** Chunk was on 60173 **/
+/** Chunk was on web.js **/
+"use strict";
 e.exports = {
   pulseBackgroundDark: "pulseBackgroundDark__11664",
   pulseBackgroundLight: "pulseBackgroundLight__11664",

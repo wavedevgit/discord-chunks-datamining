@@ -1,4 +1,4 @@
-/** Chunk was on 89650 **/
+/** Chunk was on 71745 **/
 t.exports = {
   tipRow: "tipRow__5bc4e",
   tipNumber: "tipNumber__5bc4e",

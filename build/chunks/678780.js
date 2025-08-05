@@ -1,4 +1,4 @@
-/** Chunk was on 11678 **/
+/** Chunk was on 2549 **/
 t.r(n), t.d(n, {
   default: () => s
 }), t(388685);
@@ -49,8 +49,8 @@ function s(e) {
   }(e, ["hideRestrictedProfile"]);
   let {
     user: s
-  } = t, [u, _] = (0, c.Z)(s.id);
+  } = t, [u, p] = (0, c.Z)(s.id);
   return u && !n ? (0, o.jsx)(r.Z, l({
-    onHide: _
+    onHide: p
   }, t)) : s.isNonUserBot() ? (0, o.jsx)(a.Z, l({}, t)) : s.bot ? (0, o.jsx)(i.Z, l({}, t)) : (0, o.jsx)(d.Z, l({}, t))
 }

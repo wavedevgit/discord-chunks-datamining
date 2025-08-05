@@ -1,4 +1,5 @@
-/** Chunk was on 94313 **/
+/** Chunk was on web.js **/
+"use strict";
 e.exports = {
   reactionTooltip: "reactionTooltip_b49891",
   reactionTooltipEmoji: "reactionTooltipEmoji_b49891",

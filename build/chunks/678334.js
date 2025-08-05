@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => P
+  Z: () => R
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -29,28 +29,28 @@ var r = n(255367),
   A = n(435020),
   N = n(612853),
   C = n(981631),
-  R = n(843856);
+  w = n(843856);
 
-function P(e) {
+function R(e) {
   let {
     premiumSubscription: t,
     setPurchaseState: n,
     onBack: a,
     onNext: s,
-    legalTermsNodeRef: P,
-    flashLegalTerms: w,
+    legalTermsNodeRef: R,
+    flashLegalTerms: P,
     invoiceError: D,
     planError: L,
     onPurchaseError: x,
-    baseAnalyticsData: M,
-    flowStartTime: k,
-    trialId: j,
+    baseAnalyticsData: k,
+    flowStartTime: j,
+    trialId: M,
     planGroup: U,
     analyticsLocation: G,
     purchaseTokenAuthState: B,
-    openInvoiceId: V,
+    openInvoiceId: Z,
     metadata: F,
-    backButtonEligible: Z,
+    backButtonEligible: V,
     disablePurchase: H,
     isTrial: Y = !1,
     onPaymentSourceAdd: W
@@ -58,10 +58,10 @@ function P(e) {
     selectedPlan: K,
     priceOptions: z,
     setHasAcceptedTerms: q,
-    setPurchaseError: X,
-    purchaseType: Q,
-    paymentSourceId: J,
-    paymentSources: $,
+    setPurchaseError: $,
+    purchaseType: X,
+    paymentSourceId: Q,
+    paymentSources: J,
     selectedSkuId: ee,
     skusById: et,
     skuPricePreviewsById: en,
@@ -81,11 +81,11 @@ function P(e) {
   } = (0, O.wD)(), eh = (0, _.a5)(K), em = (0, b.MY)(e_), eg = {};
   eg.gift_style = ec, eg.reward_sku_ids = eh && (null == ep ? void 0 : ep.skuId) != null ? [null == ep ? void 0 : ep.skuId] : [], em === b.xr.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD && (l()(null != e_, "Gift recipient must be set at purchase review step for these gift options."), eg.recipient_id = e_.id, eg.custom_message = eu, eg.emoji_id = null == ed ? void 0 : ed.id, eg.emoji_name = (null == ed ? void 0 : ed.id) == null ? null == ed ? void 0 : ed.surrogates : void 0, eg.sound_id = null == ef ? void 0 : ef.soundId);
   let eE = null == K ? void 0 : K.id,
-    eb = (0, T.sE)(j, z.paymentSourceId, eE),
+    eb = (0, T.sE)(M, z.paymentSourceId, eE),
     {
       analyticsLocations: ey
     } = (0, d.ZP)(),
-    eO = (0, A.m)($, J),
+    eO = (0, A.m)(J, Q),
     [ev, eI] = i.useState(eb),
     [eT, eS] = i.useState(!1),
     {
@@ -93,15 +93,15 @@ function P(e) {
     } = (0, m.H)(eE, el),
     eN = (0, y.Ap)(z.paymentSourceId),
     eC = eA || eb,
-    eR = (0, p.U)(),
-    eP = (0, c.e7)([S.Z], () => S.Z.currentOrderId),
-    ew = null,
+    ew = (0, p.U)(),
+    eR = (0, c.e7)([S.Z], () => S.Z.currentOrderId),
+    eP = null,
     eD = null;
-  if (Q === C.GZQ.ONE_TIME) {
+  if (X === C.GZQ.ONE_TIME) {
     var eL;
-    l()(null != ee, "SKU must be selected for one-time purchases"), ew = null != (eL = et[ee]) ? eL : null, l()(null != ew, "SKU must exist and be fetched.");
+    l()(null != ee, "SKU must be selected for one-time purchases"), eP = null != (eL = et[ee]) ? eL : null, l()(null != eP, "SKU must exist and be fetched.");
     let e = en[ee],
-      t = null != J ? J : E.c;
+      t = null != Q ? Q : E.c;
     eD = null != e ? e[t] : null
   }
   let ex = async () => {
@@ -109,63 +109,63 @@ function P(e) {
       setPurchaseState: n,
       setHasAcceptedTerms: q,
       setIsSubmitting: eI,
-      setPurchaseError: X,
+      setPurchaseError: $,
       hasRedirectURL: eT,
       setHasRedirectURL: eS,
       isGift: el,
-      baseAnalyticsData: M,
+      baseAnalyticsData: k,
       analyticsLocation: G,
       analyticsLocations: ey,
-      flowStartTime: k,
+      flowStartTime: j,
       subscriptionPlan: K,
       planGroup: U,
-      trialId: j,
+      trialId: M,
       priceOptions: z,
       paymentSource: eO,
-      isPrepaidPaymentPastDue: eR,
-      openInvoiceId: V,
+      isPrepaidPaymentPastDue: ew,
+      openInvoiceId: Z,
       premiumSubscription: t,
       onNext: s,
       metadata: F,
-      sku: ew,
+      sku: eP,
       skuPricePreview: eD,
-      purchaseType: Q,
+      purchaseType: X,
       referralCode: er,
       loadId: ei.loadId,
       giftInfoOptions: eg,
       invoicePreview: ea,
-      orderId: eP
+      orderId: eR
     })
-  }, eM = {
-    baseAnalyticsData: M,
-    flowStartTime: k,
+  }, ek = {
+    baseAnalyticsData: k,
+    flowStartTime: j,
     makePurchase: ex,
     onNext: s,
     onPurchaseError: x,
     paymentSource: eO,
-    paymentSourceId: J,
+    paymentSourceId: Q,
     purchaseTokenAuthState: B,
     setPurchaseState: n
-  }, ek = i.useRef(eM);
+  }, ej = i.useRef(ek);
   i.useEffect(() => {
-    ek.current = eM
+    ej.current = ek
   }), i.useEffect(() => {
     let {
       makePurchase: e
-    } = ek.current;
+    } = ej.current;
     eb && !el && null == t && e()
   }, [eb, el, t]);
-  let ej = null != V || Q === C.GZQ.ONE_TIME && !el;
+  let eM = null != Z || X === C.GZQ.ONE_TIME && !el;
   return eb ? null : (0, r.jsxs)(u.mzw, {
     "data-migration-pending": !0,
     align: f.Z.Align.CENTER,
-    className: o()(es, R.modalFooter),
+    className: o()(es, w.modalFooter),
     children: [(0, r.jsx)(g.Z, {
-      legalTermsNodeRef: P,
+      legalTermsNodeRef: R,
       invoiceError: D,
       planError: L,
       disablePurchase: H,
-      flashLegalTerms: w,
+      flashLegalTerms: P,
       isSubmitting: ev,
       premiumSubscription: t,
       isGift: el,
@@ -177,8 +177,8 @@ function P(e) {
       onNext: s,
       inReverseTrial: eo,
       onPaymentSourceAdd: W
-    }), (0, r.jsx)(N.Z, {}), Z && !ej ? (0, r.jsx)("div", {
-      className: R.back,
+    }), (0, r.jsx)(N.Z, {}), V && !eM ? (0, r.jsx)("div", {
+      className: w.back,
       children: (0, r.jsx)(h.Z, {
         onClick: a
       })

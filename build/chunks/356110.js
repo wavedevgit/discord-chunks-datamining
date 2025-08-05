@@ -1,43 +1,43 @@
-/** Chunk was on 53 **/
+/** Chunk was on 54844 **/
 n.d(t, {
   Z: () => c
 }), n(388685);
 var r = n(255367),
-  a = n(73800),
+  l = n(73800),
   i = n(481060),
-  o = n(843716),
-  l = n(20493);
-let s = e => {
+  a = n(843716),
+  s = n(20493);
+let o = e => {
     let {
       element: t,
       onChange: n,
-      initialOption: s
-    } = e, [c, d] = a.useState("");
-    a.useEffect(() => {
-      d(null != s ? s : "")
-    }, [s]);
+      initialOption: o
+    } = e, [c, d] = l.useState("");
+    l.useEffect(() => {
+      d(null != o ? o : "")
+    }, [o]);
     let u = t.name,
       {
         title: m,
         options: p
       } = t.data,
-      _ = a.useCallback(e => {
+      g = l.useCallback(e => {
         null != e && (d(e), n(e))
       }, [n]);
     return (0, r.jsxs)("div", {
-      className: l.marginBottom8,
+      className: s.marginBottom8,
       children: [null != m && (0, r.jsx)("div", {
-        className: l.marginBottom8,
+        className: s.marginBottom8,
         children: (0, r.jsxs)(i.Text, {
           variant: "text-sm/bold",
           children: [m, t.should_submit_data && (0, r.jsx)("span", {
-            className: o.required,
+            className: a.required,
             children: "*"
           })]
         })
       }), (0, r.jsx)(i.q4e, {
         value: c,
-        onChange: _,
+        onChange: g,
         options: p
       })]
     }, u)
@@ -46,15 +46,15 @@ let s = e => {
     let {
       elements: t,
       onChange: n,
-      state: a
+      state: l
     } = e, i = t.map(e => {
       var t, i;
-      let o = e.name;
-      return (0, r.jsx)(s, {
+      let a = e.name;
+      return (0, r.jsx)(o, {
         element: e,
-        initialOption: null != (i = null == a || null == (t = a[o]) ? void 0 : t.value) ? i : void 0,
-        onChange: e => n(o, e)
-      }, o)
+        initialOption: null != (i = null == l || null == (t = l[a]) ? void 0 : t.value) ? i : void 0,
+        onChange: e => n(a, e)
+      }, a)
     });
     return (0, r.jsx)("div", {
       children: i

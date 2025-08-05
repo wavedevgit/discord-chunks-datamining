@@ -1,4 +1,4 @@
-/** Chunk was on 94312 **/
+/** Chunk was on 22988 **/
 e.exports = {
   titleBlurb: "titleBlurb_a5b35c",
   guildBoostingGracePeriodTitle: "guildBoostingGracePeriodTitle_a5b35c",

@@ -1,4 +1,4 @@
-/** Chunk was on 17218 **/
+/** Chunk was on 37082 **/
 n.d(t, {
   Z: () => H,
   b: () => V
@@ -106,7 +106,7 @@ function L() {
   }
 }
 let M = "1193992107035983872",
-  W = {
+  Z = {
     id: M,
     preview: !0,
     config: {
@@ -173,13 +173,13 @@ let M = "1193992107035983872",
     targetedContent: []
   };
 
-function Z() {
-  var e, t, o, u, B, V, M, Z;
-  let [U, H] = s.useState(W), z = s.useCallback(e => {
+function W() {
+  var e, t, o, u, B, V, M, W;
+  let [U, H] = s.useState(Z), z = s.useCallback(e => {
     H(I(k({}, e), {
       preview: !0
     }))
-  }, []), [F, X] = s.useState(N.a.UNENROLLED), [K, Y] = s.useState(!1), [G, J] = s.useState(!1), [$, ee] = s.useState(null), et = (Z = U.config, (0, i.EQ)(Z).with({
+  }, []), [F, X] = s.useState(N.a.UNENROLLED), [K, Y] = s.useState(!1), [G, J] = s.useState(!1), [$, ee] = s.useState(null), et = (W = U.config, (0, i.EQ)(W).with({
     configVersion: 2
   }, e => e.rewardsConfig.rewards).exhaustive());
 
@@ -781,7 +781,7 @@ class U extends s.Component {
           children: e.message
         })
       })]
-    }) : (0, r.jsx)(Z, {}, t)
+    }) : (0, r.jsx)(W, {}, t)
   }
   constructor(...e) {
     super(...e), B(this, "state", {

@@ -1,4 +1,4 @@
-/** Chunk was on 70663 **/
+/** Chunk was on 92357 **/
 n.d(t, {
   Z: () => d
 });
@@ -6,8 +6,8 @@ var r = n(255367),
   i = n(120356),
   l = n.n(i),
   o = n(524437),
-  a = n(453473),
-  s = n(216789),
+  s = n(453473),
+  a = n(216789),
   c = n(791914),
   u = n(929968);
 
@@ -16,7 +16,7 @@ function d(e) {
     setTab: t,
     closePopout: n,
     badgeState: i
-  } = e, d = (0, s.Us)({
+  } = e, d = (0, a.Us)({
     location: "ForLaterInbox"
   });
   return (0, r.jsxs)("div", {
@@ -28,7 +28,7 @@ function d(e) {
       setTab: t,
       closePopout: n,
       badgeState: i
-    }), (0, r.jsx)(a.K, {
+    }), (0, r.jsx)(s.K, {
       closePopout: n
     })]
   })

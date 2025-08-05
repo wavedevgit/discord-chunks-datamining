@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var i = n(658722),
-  a = n.n(i),
-  l = n(442837),
+  l = n.n(i),
+  a = n(442837),
   s = n(481060),
   o = n(596454),
   c = n(339085),
@@ -20,9 +20,9 @@ let h = e => {
   } = e, {
     id: n,
     name: i,
-    emojiId: a,
+    emojiId: l,
     emojiName: d
-  } = t, u = (0, l.e7)([c.ZP], () => null != a ? c.ZP.getUsableCustomEmojiById(a) : null), h = null != a || null != d;
+  } = t, u = (0, a.e7)([c.ZP], () => null != l ? c.ZP.getUsableCustomEmojiById(l) : null), h = null != l || null != d;
   return (0, r.jsx)(s.lo1, {
     value: n,
     children: (0, r.jsx)(s.lo1.Label, {
@@ -30,7 +30,7 @@ let h = e => {
         className: m.row,
         children: [h ? (0, r.jsx)(o.Z, {
           className: m.__invalid_emoji,
-          emojiId: a,
+          emojiId: l,
           emojiName: d,
           animated: !!(null == u ? void 0 : u.animated)
         }) : (0, r.jsx)(s.lO_, {
@@ -52,14 +52,14 @@ function g(e) {
     parentChannel: t,
     appliedTags: n,
     maxTagsApplied: i,
-    onSelectTag: l,
+    onSelectTag: a,
     onClose: o
-  } = e, c = (0, d.Vm)(t), m = (e, t) => t.filter(t => a()(e.toLowerCase(), t.name.toLowerCase()));
+  } = e, c = (0, d.Vm)(t), m = (e, t) => t.filter(t => l()(e.toLowerCase(), t.name.toLowerCase()));
   return (0, r.jsx)(s.DBG, {
     showScrollbar: !0,
     value: n,
     onChange: e => {
-      (!i || n.has(e)) && (l(e), o())
+      (!i || n.has(e)) && (a(e), o())
     },
     placeholder: u.intl.string(u.t.MbhGm5),
     "aria-label": u.intl.string(u.t.MbhGm5),

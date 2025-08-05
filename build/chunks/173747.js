@@ -36,16 +36,16 @@ let v = new Set,
   A = new Set,
   N = {},
   C = 10 * E.Z.Millis.MINUTE,
-  R = 6 * E.Z.Millis.HOUR,
-  P = 10 * E.Z.Millis.MINUTE,
-  w = new s.V7;
+  w = 6 * E.Z.Millis.HOUR,
+  R = 10 * E.Z.Millis.MINUTE,
+  P = new s.V7;
 
 function D(e) {
-  w.start(e + Math.random() * C, c.o)
+  P.start(e + Math.random() * C, c.o)
 }
 
 function L() {
-  return !_.bm.getSetting() && (D(R), x())
+  return !_.bm.getSetting() && (D(w), x())
 }
 
 function x() {
@@ -57,18 +57,18 @@ function x() {
   l.Z.wait(() => c.o(t))
 }
 
-function M() {
+function k() {
   if (!(0, y.Q)()) return !1;
   for (let e of A) {
     let {
       applicationId: t,
       branchId: n
     } = (0, b.CP)(e);
-    null != f.Z.getApplication(t) && (A.delete(e), k(t, n))
+    null != f.Z.getApplication(t) && (A.delete(e), j(t, n))
   }
 }
 
-function k(e, t) {
+function j(e, t) {
   if (null != I[t] && g.Z.shouldBeInstalled(e, t)) {
     let n = I[t],
       r = n.manifestIds,
@@ -80,7 +80,7 @@ function k(e, t) {
   }
 }
 
-function j(e) {
+function M(e) {
   let {
     branchId: t
   } = e;
@@ -108,7 +108,7 @@ function U(e) {
     branchId: n,
     locale: r,
     manifestIds: a
-  }, k(t, n)
+  }, j(t, n)
 }
 
 function G(e) {
@@ -125,7 +125,7 @@ function B(e) {
   S.hasOwnProperty(t) || (S[t] = null)
 }
 
-function V(e) {
+function Z(e) {
   let {
     buildId: t,
     sizeKB: n
@@ -140,7 +140,7 @@ function F(e) {
   null == S[t] && delete S[t]
 }
 
-function Z(e) {
+function V(e) {
   let {
     branches: t
   } = e, n = {};
@@ -159,15 +159,15 @@ function Z(e) {
     }
     N[t] = r
   }
-  D(R)
+  D(w)
 }
 
 function H() {
-  D(P)
+  D(R)
 }
 
 function Y() {
-  w.stop()
+  P.stop()
 }
 
 function W(e) {
@@ -208,14 +208,14 @@ class K extends(r = o.ZP.Store) {
 O(K, "displayName", "ApplicationBuildStore");
 let z = new K(l.Z, {
   CONNECTION_OPEN: L,
-  GAMES_DATABASE_UPDATE: M,
-  APPLICATION_BUILD_FETCH_START: j,
+  GAMES_DATABASE_UPDATE: k,
+  APPLICATION_BUILD_FETCH_START: M,
   APPLICATION_BUILD_FETCH_SUCCESS: U,
   APPLICATION_BUILD_NOT_FOUND: G,
   APPLICATION_BUILD_SIZE_FETCH_START: B,
-  APPLICATION_BUILD_SIZE_FETCH_SUCCESS: V,
+  APPLICATION_BUILD_SIZE_FETCH_SUCCESS: Z,
   APPLICATION_BUILD_SIZE_FETCH_FAIL: F,
-  APPLICATION_BRANCHES_FETCH_SUCCESS: Z,
+  APPLICATION_BRANCHES_FETCH_SUCCESS: V,
   APPLICATION_BRANCHES_FETCH_FAIL: H,
   CONNECTION_CLOSED: Y,
   LOGOUT: Y,

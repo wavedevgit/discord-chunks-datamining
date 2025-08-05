@@ -5,7 +5,7 @@ n.d(t, {
   Fc: () => I,
   Ft: () => N,
   W5: () => A,
-  ZP: () => R,
+  ZP: () => w,
   _T: () => E,
   oY: () => g,
   u5: () => O,
@@ -161,7 +161,7 @@ function C() {
   let e = a.default.getCurrentUser();
   return null != e && e.isStaff()
 }
-let R = {
+let w = {
   getName: g,
   useName: E,
   isNameConcealed: e => 2 === e.length && e.endsWith("…"),

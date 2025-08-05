@@ -1,27 +1,28 @@
-/** Chunk was on 94313 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
-  Z: () => s
+  Z: () => l
 });
 var r = n(255367);
 n(73800);
 var i = n(481060),
-  l = n(834129),
-  a = n(388032),
-  o = n(482893);
+  a = n(834129),
+  o = n(388032),
+  s = n(482893);
 
-function s(e) {
+function l(e) {
   let {
     message: t,
     compact: n
   } = e;
-  return (0, r.jsx)(l.Z, {
+  return (0, r.jsx)(a.Z, {
     iconNode: (0, r.jsx)(i.or_, {
       size: "md",
       color: "currentColor",
-      className: o.icon
+      className: s.icon
     }),
     timestamp: t.timestamp,
     compact: n,
-    children: a.intl.string(a.t.OCs36O)
+    children: o.intl.string(o.t.OCs36O)
   })
 }

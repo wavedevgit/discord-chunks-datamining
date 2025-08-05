@@ -1,26 +1,27 @@
-/** Chunk was on 69818 **/
-r.d(t, {
-  B: () => c
+/** Chunk was on web.js **/
+"use strict";
+n.d(t, {
+  B: () => o
 });
-var n = r(913527),
-  a = r.n(n),
-  i = r(388032);
-let c = [{
-  getDueAt: () => a()().add(30, "minutes").toDate(),
-  getLabel: () => i.intl.string(i.t["OV8l/P"])
+var r = n(913527),
+  i = n.n(r),
+  a = n(388032);
+let o = [{
+  getDueAt: () => i()().add(30, "minutes").toDate(),
+  getLabel: () => a.intl.string(a.t["OV8l/P"])
 }, {
-  getDueAt: () => a()().add(1, "hour").toDate(),
-  getLabel: () => i.intl.string(i.t["zf0R+/"])
+  getDueAt: () => i()().add(1, "hour").toDate(),
+  getLabel: () => a.intl.string(a.t["zf0R+/"])
 }, {
-  getDueAt: () => a()().add(4, "hour").toDate(),
-  getLabel: () => i.intl.string(i.t["5gztZG"])
+  getDueAt: () => i()().add(4, "hour").toDate(),
+  getLabel: () => a.intl.string(a.t["5gztZG"])
 }, {
-  getDueAt: () => a()().add(1, "day").startOf("day").add(9, "hours").toDate(),
-  getLabel: () => i.intl.string(i.t["7MKr2N"])
+  getDueAt: () => i()().add(1, "day").startOf("day").add(9, "hours").toDate(),
+  getLabel: () => a.intl.string(a.t["7MKr2N"])
 }, {
   getDueAt: () => {
-    let e, t = a()().day();
-    return e = 0 === t || 1 === t && a()().startOf("day").add(9, "hours").isAfter(a()()) ? 1 : 8, a()().day(e).startOf("day").add(9, "hours").toDate()
+    let e, t = i()().day();
+    return e = 0 === t || 1 === t && i()().startOf("day").add(9, "hours").isAfter(i()()) ? 1 : 8, i()().day(e).startOf("day").add(9, "hours").toDate()
   },
-  getLabel: () => i.intl.string(i.t["q+Ls09"])
+  getLabel: () => a.intl.string(a.t["q+Ls09"])
 }]

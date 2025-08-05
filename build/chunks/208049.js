@@ -5,12 +5,12 @@ n.d(t, {
   AA: () => S,
   Db: () => L,
   Dx: () => I,
-  R: () => w,
+  R: () => P,
   TB: () => A,
-  XE: () => R,
+  XE: () => w,
   hs: () => N,
   w: () => v,
-  xR: () => P,
+  xR: () => R,
   xU: () => C,
   xz: () => D
 }), n(388685), n(539854);
@@ -144,7 +144,7 @@ async function C(e, t) {
   }
 }
 
-function R(e, t, n) {
+function w(e, t, n) {
   o.Z.dispatch({
     type: "GUILD_SOUNDBOARD_SOUND_PLAY_LOCALLY",
     sound: t,
@@ -153,7 +153,7 @@ function R(e, t, n) {
   })
 }
 
-function P(e, t) {
+function R(e, t) {
   o.Z.dispatch({
     type: "GUILD_SOUNDBOARD_SOUND_PLAY_START",
     soundId: e,
@@ -161,7 +161,7 @@ function P(e, t) {
   })
 }
 
-function w(e, t) {
+function P(e, t) {
   o.Z.dispatch({
     type: "GUILD_SOUNDBOARD_SOUND_PLAY_END",
     soundId: e,

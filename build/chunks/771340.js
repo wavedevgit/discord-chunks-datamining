@@ -1,14 +1,15 @@
-/** Chunk was on 60173 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
-  Z: () => a
+  Z: () => o
 });
 var r = n(544891),
   i = n(570140),
-  l = n(981631);
-let a = {
+  a = n(981631);
+let o = {
   fetchRegions(e) {
     r.tn.get({
-      url: l.ANM.REGIONS(e),
+      url: a.ANM.REGIONS(e),
       retries: 1,
       oldFormErrors: !0,
       rejectWithError: !0
@@ -24,7 +25,7 @@ let a = {
   },
   changeCallRegion(e, t) {
     r.tn.patch({
-      url: l.ANM.CALL(e),
+      url: a.ANM.CALL(e),
       body: {
         region: t
       },

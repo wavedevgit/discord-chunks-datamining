@@ -1,16 +1,16 @@
-/** Chunk was on 70663 **/
+/** Chunk was on 92357 **/
 n.d(t, {
   CN: () => N,
   ZP: () => L,
   eP: () => A,
-  hR: () => Z,
+  hR: () => T,
   jo: () => w
 });
 var r, i = n(255367),
   l = n(73800),
   o = n(120356),
-  a = n.n(o),
-  s = n(442837),
+  s = n.n(o),
+  a = n(442837),
   c = n(481060),
   u = n(787014),
   d = n(924301),
@@ -20,8 +20,8 @@ var r, i = n(255367),
   g = n(427679),
   m = n(155409),
   b = n(131704),
-  _ = n(199902),
-  O = n(430824),
+  O = n(199902),
+  _ = n(430824),
   y = n(496675),
   C = n(914010),
   v = n(281029),
@@ -72,7 +72,7 @@ function w(e, t) {
   return null == t ? S.containerDefault : e > t ? S.containerDragAfter : S.containerDragBefore
 }
 
-function T(e) {
+function Z(e) {
   let {
     tabIndex: t,
     forceShowButtons: n,
@@ -84,17 +84,17 @@ function T(e) {
     children: e => {
       let {
         onMouseEnter: o,
-        onMouseLeave: s,
+        onMouseLeave: a,
         onFocus: u,
         onBlur: d
       } = e;
       return (0, i.jsx)(c.P3F, {
-        className: a()(S.iconItem, n ? S.alwaysShown : void 0, r ? S.iconWithChannelInfo : S.iconNoChannelInfo),
+        className: s()(S.iconItem, n ? S.alwaysShown : void 0, r ? S.iconWithChannelInfo : S.iconNoChannelInfo),
         onClick: l,
         tabIndex: t,
         "aria-label": E.intl.string(E.t.OBr7Cw),
         onMouseEnter: o,
-        onMouseLeave: s,
+        onMouseLeave: a,
         onFocus: u,
         onBlur: d,
         children: (0, i.jsx)(c.xhG, {
@@ -107,7 +107,7 @@ function T(e) {
   })
 }
 
-function Z(e) {
+function T(e) {
   let {
     channel: t,
     disableManageChannels: n,
@@ -115,7 +115,7 @@ function Z(e) {
     forceShowButtons: l,
     hasChannelInfo: o = !1
   } = e;
-  if ((0, s.e7)([y.Z, C.Z], () => n || C.Z.getGuildId() === j.I_8 || !y.Z.can(j.Plq.MANAGE_CHANNELS, t) && !y.Z.can(j.Plq.MANAGE_ROLES, t) && !y.Z.can(j.Plq.MANAGE_WEBHOOKS, t) || (0, b.r8)(t.type) && !y.Z.can(j.Plq.VIEW_CHANNEL, t) || t.isGuildVocal() && !y.Z.can(j.Plq.CONNECT, t) || !b.dF.has(t.type) || t.isModeratorReportChannel())) return null;
+  if ((0, a.e7)([y.Z, C.Z], () => n || C.Z.getGuildId() === j.I_8 || !y.Z.can(j.Plq.MANAGE_CHANNELS, t) && !y.Z.can(j.Plq.MANAGE_ROLES, t) && !y.Z.can(j.Plq.MANAGE_WEBHOOKS, t) || (0, b.r8)(t.type) && !y.Z.can(j.Plq.VIEW_CHANNEL, t) || t.isGuildVocal() && !y.Z.can(j.Plq.CONNECT, t) || !b.dF.has(t.type) || t.isModeratorReportChannel())) return null;
 
   function d() {
     u.ZP.open(t.id)
@@ -126,17 +126,17 @@ function Z(e) {
       let {
         onMouseEnter: t,
         onMouseLeave: n,
-        onFocus: s,
+        onFocus: a,
         onBlur: u
       } = e;
       return (0, i.jsx)(c.P3F, {
-        className: a()(S.iconItem, l ? S.alwaysShown : void 0, o ? S.iconWithChannelInfo : S.iconNoChannelInfo),
+        className: s()(S.iconItem, l ? S.alwaysShown : void 0, o ? S.iconWithChannelInfo : S.iconNoChannelInfo),
         onClick: d,
         tabIndex: r,
         "aria-label": E.intl.string(E.t["3gUsJS"]),
         onMouseEnter: t,
         onMouseLeave: n,
-        onFocus: s,
+        onFocus: a,
         onBlur: u,
         children: (0, i.jsx)(c.ewm, {
           size: "xs",
@@ -160,16 +160,16 @@ function A(e) {
     entrypoints: C
   } = (0, h._k)({
     location: "channel_base"
-  }), v = (0, s.e7)([O.Z], () => O.Z.getGuild(t.getGuildId())), x = (0, s.e7)([g.Z], () => g.Z.getStageInstanceByChannel(t.id), [t.id]), N = (0, s.e7)([d.ZP], () => d.ZP.getActiveEventByChannel(t.id), [t.id]), w = (0, s.e7)([y.Z], () => (0, p.b)(y.Z, v, t, x)), T = (0, s.e7)([y.Z], () => y.Z.can(j.Plq.CREATE_INSTANT_INVITE, t) ? E.intl.string(E.t.zJrgTE) : E.intl.string(E.t.Sd8Ix8)), Z = C ? E.intl.string(E.t["EE+P0N"]) : T, A = l.useRef(null);
+  }), v = (0, a.e7)([_.Z], () => _.Z.getGuild(t.getGuildId())), x = (0, a.e7)([g.Z], () => g.Z.getStageInstanceByChannel(t.id), [t.id]), N = (0, a.e7)([d.ZP], () => d.ZP.getActiveEventByChannel(t.id), [t.id]), w = (0, a.e7)([y.Z], () => (0, p.b)(y.Z, v, t, x)), Z = (0, a.e7)([y.Z], () => y.Z.can(j.Plq.CREATE_INSTANT_INVITE, t) ? E.intl.string(E.t.zJrgTE) : E.intl.string(E.t.Sd8Ix8)), T = C ? E.intl.string(E.t["EE+P0N"]) : Z, A = l.useRef(null);
   if (o || !w || t.isModeratorReportChannel()) return null;
 
   function R() {
     if (null != v) {
-      let e = _.Z.getAllActiveStreams().filter(e => e.state !== j.jm8.ENDED && e.channelId === t.id);
+      let e = O.Z.getAllActiveStreams().filter(e => e.state !== j.jm8.ENDED && e.channelId === t.id);
       (0, c.ZDy)(async () => {
         let {
           default: r
-        } = await Promise.all([n.e("7654"), n.e("34946")]).then(n.bind(n, 560114));
+        } = await Promise.all([n.e("7654"), n.e("17439")]).then(n.bind(n, 560114));
         return n => (0, i.jsx)(r, P(I({}, n), {
           guild: v,
           channel: t,
@@ -196,13 +196,13 @@ function A(e) {
       children: L
     })
   })), (0, i.jsx)(c.ua7, {
-    text: Z,
+    text: T,
     children: e => (0, i.jsx)(c.P3F, P(I({
-      className: a()(S.iconItem, f ? S.alwaysShown : void 0, b ? S.iconWithChannelInfo : S.iconNoChannelInfo)
+      className: s()(S.iconItem, f ? S.alwaysShown : void 0, b ? S.iconWithChannelInfo : S.iconNoChannelInfo)
     }, e), {
       onClick: R,
       tabIndex: u,
-      "aria-label": Z,
+      "aria-label": T,
       children: L
     }))
   })
@@ -258,12 +258,12 @@ class L extends(r = l.PureComponent) {
     let {
       onContextMenu: t
     } = e;
-    return (0, i.jsx)(T, P(I({}, this.props), {
+    return (0, i.jsx)(Z, P(I({}, this.props), {
       onContextMenu: t
     }))
   }
   renderEditButton() {
-    return (0, i.jsx)(Z, I({}, this.props))
+    return (0, i.jsx)(T, I({}, this.props))
   }
   renderInviteButton() {
     return (0, i.jsx)(A, I({}, this.props))

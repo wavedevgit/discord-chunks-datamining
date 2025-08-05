@@ -89,23 +89,23 @@ let S = e => {
     soundEffect: A,
     setEmojiConfetti: N,
     setSoundEffect: C
-  } = (0, l.wD)(), [R, P] = i.useState(!1), w = i.useRef(null), D = (0, s.arW)({
+  } = (0, l.wD)(), [w, R] = i.useState(!1), P = i.useRef(null), D = (0, s.arW)({
     orientation: "horizontal"
   }), {
     ref: L
-  } = D, x = I(D, ["ref"]), M = (0, u.MY)(b, t), k = M === u.xr.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD, j = M !== u.xr.DEFAULT, U = (0, f.rK)(), {
+  } = D, x = I(D, ["ref"]), k = (0, u.MY)(b, t), j = k === u.xr.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD, M = k !== u.xr.DEFAULT, U = (0, f.rK)(), {
     enabled: G
   } = f.ZP.useExperiment({
     location: "premiumGiftSelect_GiftAnimationOptions"
   }, {
     autoTrackExposure: U
   }), B = null;
-  j && (B = U && G ? m.kJ : m.QI);
-  let V = e => {
+  M && (B = U && G ? m.kJ : m.QI);
+  let Z = e => {
     null != C && C(null == e ? void 0 : e)
   };
   return (0, r.jsxs)("div", {
-    children: [j && (0, r.jsxs)("div", {
+    children: [M && (0, r.jsxs)("div", {
       className: o()(E.giftMainAnimation, n),
       children: [null != O ? (0, r.jsx)(_.Z, {
         giftStyle: O,
@@ -115,13 +115,13 @@ let S = e => {
         className: E.animation
       }) : (0, r.jsx)(s.$jN, {
         className: E.spinner
-      }), k && (0, r.jsxs)("div", {
+      }), j && (0, r.jsxs)("div", {
         className: E.soundEmojiContainer,
         children: [(0, r.jsx)("div", {
           className: E.sound,
           children: (0, r.jsx)(c.Z, {
             sound: A,
-            onSelect: V
+            onSelect: Z
           })
         }), (0, r.jsx)("div", {
           className: E.emoji,
@@ -132,10 +132,10 @@ let S = e => {
         })]
       })]
     }), (0, r.jsx)("div", v(y({
-      tabIndex: null != O || R ? void 0 : 0,
+      tabIndex: null != O || w ? void 0 : 0,
       onFocus: e => {
         var t;
-        e.target === e.currentTarget && (null == (t = w.current) || t.focus())
+        e.target === e.currentTarget && (null == (t = P.current) || t.focus())
       },
       className: o()(E.giftBoxOptionContainer, a),
       "aria-label": g.intl.string(g.t.v54NrK),
@@ -145,9 +145,9 @@ let S = e => {
         isSelected: O === e,
         giftStyle: e,
         setSelectedGiftStyle: T,
-        ref: 0 === t ? w : null,
-        onFocus: () => P(!0),
-        onBlur: () => P(!1)
+        ref: 0 === t ? P : null,
+        onFocus: () => R(!0),
+        onBlur: () => R(!1)
       }, e))
     })), (0, r.jsx)("div", {
       className: E.__invalid_selectPlanDivider

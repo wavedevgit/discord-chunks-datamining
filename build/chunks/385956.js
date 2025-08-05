@@ -1,16 +1,17 @@
-/** Chunk was on 15114 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
-  T: () => a,
+  T: () => s,
   v: () => o
 });
 var r = n(442837),
   i = n(355298),
-  l = n(333984);
+  a = n(333984);
 
 function o(e) {
   return (0, r.e7)([i.Z], () => i.Z.isMessageRequest(e), [e])
 }
 
-function a(e) {
-  return (0, r.e7)([i.Z, l.Z], () => null != e && (i.Z.isMessageRequest(e) || l.Z.isSpam(e)))
+function s(e) {
+  return (0, r.e7)([i.Z, a.Z], () => null != e && (i.Z.isMessageRequest(e) || a.Z.isSpam(e)))
 }

@@ -1,36 +1,37 @@
-/** Chunk was on 24255 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
-  AX: () => s,
+  AX: () => c,
   BR: () => d,
-  Bo: () => g,
+  Bo: () => m,
   Df: () => f,
-  LT: () => v,
-  ZZ: () => p,
-  cV: () => c,
-  fW: () => E,
-  gr: () => m,
-  oW: () => u
+  LT: () => g,
+  ZZ: () => _,
+  cV: () => u,
+  fW: () => h,
+  gr: () => p,
+  oW: () => l
 });
 var r = n(261470),
-  l = n(544891),
-  i = n(570140),
-  a = n(984063),
-  o = n(981631);
+  i = n(544891),
+  a = n(570140),
+  o = n(984063),
+  s = n(981631);
 
-function u(e, t, n, r, l) {
-  i.Z.dispatch({
+function l(e, t, n, r, i) {
+  a.Z.dispatch({
     type: "SHARED_CANVAS_DRAW_LINE_POINT",
     channelId: e,
     userId: n,
     lineId: t,
     streamerId: r,
-    point: l
+    point: i
   })
 }
 
-function s(e, t, n, r) {
-  return l.tn.post({
-    url: o.ANM.SHARED_CANVAS_LINES(e, n),
+function c(e, t, n, r) {
+  return i.tn.post({
+    url: s.ANM.SHARED_CANVAS_LINES(e, n),
     body: {
       line_id: t,
       points: r
@@ -39,8 +40,8 @@ function s(e, t, n, r) {
   })
 }
 
-function c(e, t, n, r) {
-  i.Z.dispatch({
+function u(e, t, n, r) {
+  a.Z.dispatch({
     type: "SHARED_CANVAS_UPDATE_LINE_POINTS",
     userId: t,
     lineId: e,
@@ -50,8 +51,8 @@ function c(e, t, n, r) {
 }
 
 function d(e, t, n) {
-  return l.tn.post({
-    url: o.ANM.SHARED_CANVAS_EMOJI_HOSES(e, t),
+  return i.tn.post({
+    url: s.ANM.SHARED_CANVAS_EMOJI_HOSES(e, t),
     body: {
       emoji_hose: n
     },
@@ -60,15 +61,15 @@ function d(e, t, n) {
 }
 
 function f(e, t, n) {
-  l.tn.del({
-    url: o.ANM.SHARED_CANVAS_EMOJI_HOSE(e, t, n),
+  i.tn.del({
+    url: s.ANM.SHARED_CANVAS_EMOJI_HOSE(e, t, n),
     backoff: new r.Z,
     rejectWithError: !0
   })
 }
 
-function p(e, t) {
-  t.state = a.f.STOP, i.Z.dispatch({
+function _(e, t) {
+  t.state = o.f.STOP, a.Z.dispatch({
     type: "SHARED_CANVAS_UPDATE_EMOJI_HOSE",
     emojiHose: t,
     userId: t.userId,
@@ -76,8 +77,8 @@ function p(e, t) {
   })
 }
 
-function m(e, t, n) {
-  i.Z.dispatch({
+function p(e, t, n) {
+  a.Z.dispatch({
     type: "SHARED_CANVAS_UPDATE_EMOJI_HOSE",
     emojiHose: e,
     userId: t,
@@ -85,23 +86,23 @@ function m(e, t, n) {
   })
 }
 
-function E(e, t) {
-  i.Z.dispatch({
+function h(e, t) {
+  a.Z.dispatch({
     type: "SHARED_CANVAS_CLEAR_DRAWABLES",
     drawables: e,
     streamerId: t
   })
 }
 
-function g(e) {
-  i.Z.dispatch({
+function m(e) {
+  a.Z.dispatch({
     type: "SHARED_CANVAS_SET_DRAW_MODE",
     drawMode: e
   })
 }
 
-function v() {
-  i.Z.dispatch({
+function g() {
+  a.Z.dispatch({
     type: "TOGGLE_OVERLAY_CANVAS"
   })
 }

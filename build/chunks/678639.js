@@ -16,11 +16,11 @@ var n = a(255367),
   p = a(616257),
   h = a(564799);
 
-function b(e, t) {
+function f(e, t) {
   return e.store.getName().localeCompare(t.store.getName())
 }
 
-function f(e) {
+function b(e) {
   let {
     store: t,
     dataGetter: a
@@ -47,7 +47,7 @@ let v = [{
       return t.getName()
     }
   }],
-  g = [{
+  j = [{
     id: "local",
     name: "Local Variables",
     group: x.v0.NONE,
@@ -60,7 +60,7 @@ let v = [{
         children: ["Store is missing ", (0, n.jsx)("code", {
           children: "__getLocalVars"
         }), " method."]
-      }) : (0, n.jsx)(f, {
+      }) : (0, n.jsx)(b, {
         store: t,
         dataGetter: e => e.__getLocalVars()
       })
@@ -73,14 +73,14 @@ let v = [{
       let {
         store: t
       } = e;
-      return (0, n.jsx)(f, {
+      return (0, n.jsx)(b, {
         store: t,
         dataGetter: e => e
       })
     }
   }];
 
-function j(e) {
+function g(e) {
   let {
     store: t,
     initialHeight: a
@@ -88,7 +88,7 @@ function j(e) {
     TabBar: r,
     renderSelectedTab: l
   } = (0, x.ZP)({
-    tabs: g
+    tabs: j
   }, []);
   return (0, n.jsxs)(u.Z, {
     className: h.subPanel,
@@ -115,7 +115,7 @@ function _() {
     c = r.useMemo(() => l.map(e => ({
       key: e._dispatchToken,
       store: e
-    })).sort(b), [l]).filter(e => (function(e, t) {
+    })).sort(f), [l]).filter(e => (function(e, t) {
       let {
         store: a
       } = e;
@@ -142,7 +142,7 @@ function _() {
       data: c,
       selectedRowKey: d,
       onClickRow: e => u(e.key)
-    }), null != x && (0, n.jsx)(j, {
+    }), null != x && (0, n.jsx)(g, {
       store: x,
       initialHeight: null != e.current ? e.current.clientHeight / 2 : 300
     })]

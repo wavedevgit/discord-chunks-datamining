@@ -156,7 +156,7 @@ function C(e) {
   })
 }
 
-function R(e) {
+function w(e) {
   let {
     channelId: t,
     unavailable: n
@@ -173,13 +173,13 @@ function R(e) {
   }, null != E[t] && delete E[t]
 }
 
-function P(e) {
+function R(e) {
   let {
     channelId: t
   } = e;
   null == t && (E = {})
 }
-class w extends(r = o.ZP.Store) {
+class P extends(r = o.ZP.Store) {
   initialize() {
     this.waitFor(d.Z, u.Z)
   }
@@ -208,8 +208,8 @@ class w extends(r = o.ZP.Store) {
     }
   }
 }
-_(w, "displayName", "CallStore");
-let D = new w(l.Z, {
+_(P, "displayName", "CallStore");
+let D = new P(l.Z, {
   CONNECTION_OPEN: y,
   CONNECTION_CLOSED: v,
   OVERLAY_INITIALIZE: O,
@@ -218,7 +218,7 @@ let D = new w(l.Z, {
   CHANNEL_DELETE: S,
   CALL_CREATE: A,
   CALL_UPDATE: C,
-  CALL_DELETE: R,
+  CALL_DELETE: w,
   CALL_ENQUEUE_RING: N,
-  VOICE_CHANNEL_SELECT: P
+  VOICE_CHANNEL_SELECT: R
 })

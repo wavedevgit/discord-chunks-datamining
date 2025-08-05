@@ -1,4 +1,4 @@
-/** Chunk was on 17218 **/
+/** Chunk was on 37082 **/
 n.d(t, {
   Z: () => M
 }), n(953529);
@@ -93,8 +93,8 @@ let M = s.forwardRef(function(e, t) {
   let {
     children: y,
     className: M,
-    collapsedHeight: W,
-    expansionSpring: Z,
+    collapsedHeight: Z,
+    expansionSpring: W,
     isExpanded: U,
     isExpansionAnimationComplete: H,
     onCtxMenuOpen: z,
@@ -143,12 +143,12 @@ let M = s.forwardRef(function(e, t) {
     }),
     style: {
       backgroundColor: K.config.colors.secondary,
-      transform: ef ? void 0 : (0, i.to)([Z.to({
+      transform: ef ? void 0 : (0, i.to)([W.to({
         range: [0, 1],
         output: [0, -100]
-      }), Z.to({
+      }), W.to({
         range: [0, 1],
-        output: [0, W]
+        output: [0, Z]
       })], (e, t) => "translateY(calc(".concat(e, "% + ").concat(t, "px))"))
     },
     children: [y, (0, r.jsx)("div", {

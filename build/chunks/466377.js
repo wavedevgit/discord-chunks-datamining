@@ -1,14 +1,14 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Cg: () => w,
+  Cg: () => P,
   Y0: () => x,
   YA: () => B,
   fM: () => L,
-  hz: () => j,
+  hz: () => M,
   mz: () => U,
   ol: () => G,
-  xB: () => M
+  xB: () => k
 });
 var r = n(255367),
   i = n(73800),
@@ -72,9 +72,9 @@ function C(e, t) {
   }), e
 }
 
-function R(e, t) {
+function w(e, t) {
   if (null == e) return {};
-  var n, r, i = P(e, t);
+  var n, r, i = R(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -82,14 +82,14 @@ function R(e, t) {
   return i
 }
 
-function P(e, t) {
+function R(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-var w = function(e) {
+var P = function(e) {
   return e.SMALL = "small", e.MEDIUM = "medium", e.LARGE = "large", e.DYNAMIC = "dynamic", e
 }({});
 let D = Object.freeze({
@@ -116,8 +116,8 @@ function x(e) {
       animation: S = "default",
       parentComponent: N
     } = e,
-    P = R(e, ["transitionState", "children", "size", "role", "className", "fullscreenOnMobile", "hideShadow", "onAnimationEnd", "returnRef", "animation", "parentComponent"]);
-  let w = n === O.Dv.ENTERING || n === O.Dv.ENTERED;
+    R = w(e, ["transitionState", "children", "size", "role", "className", "fullscreenOnMobile", "hideShadow", "onAnimationEnd", "returnRef", "animation", "parentComponent"]);
+  let P = n === O.Dv.ENTERING || n === O.Dv.ENTERED;
   i.useContext(b.Z)({
     type: l.ImpressionTypes.PAGE,
     name: l.ImpressionNames.MODAL_ROOT_LEGACY,
@@ -128,18 +128,18 @@ function x(e) {
   let {
     reducedMotion: L
   } = i.useContext(f.S), x = (0, d.q)({
-    opacity: +!!w,
-    transform: w || L.enabled || "subtle" === S ? "scale(1)" : "scale(0.7)",
+    opacity: +!!P,
+    transform: P || L.enabled || "subtle" === S ? "scale(1)" : "scale(0.7)",
     config: {
       duration: 200,
       easing: c.Z.Easing.out(c.Z.Easing.quad),
       clamp: !0
     },
     onRest: y
-  }, "animate-always"), M = i.useRef(null), k = null != P["aria-label"], j = null != P["aria-labelledby"], U = i.useId(), G = null != (t = P["aria-labelledby"]) ? t : U, B = i.useMemo(() => ({
+  }, "animate-always"), k = i.useRef(null), j = null != R["aria-label"], M = null != R["aria-labelledby"], U = i.useId(), G = null != (t = R["aria-labelledby"]) ? t : U, B = i.useMemo(() => ({
     headerId: G,
-    headerIdIsManaged: j
-  }), [G, j]);
+    headerIdIsManaged: M
+  }), [G, M]);
   return (0, r.jsx)(O.zM.Provider, {
     value: B,
     children: (0, r.jsx)(p.V, C(A({
@@ -147,17 +147,17 @@ function x(e) {
       role: _,
       returnRef: I,
       impressionType: l.ImpressionTypes.MODAL,
-      "aria-labelledby": k ? void 0 : B.headerId
-    }, P), {
+      "aria-labelledby": j ? void 0 : B.headerId
+    }, R), {
       children: (0, r.jsx)(s.animated.div, {
         className: o()(m, T.root, D[u], {
           [T.fullscreenOnMobile]: g,
           [T.rootWithShadow]: !E
         }),
-        ref: M,
+        ref: k,
         style: x,
         children: (0, r.jsx)(h.J, {
-          containerRef: M,
+          containerRef: k,
           children: a
         })
       })
@@ -165,7 +165,7 @@ function x(e) {
   })
 }
 
-function M(e) {
+function k(e) {
   var t, n, a, s, l;
   let {
     headerId: c,
@@ -186,7 +186,7 @@ function M(e) {
   })
 }
 
-function k(e) {
+function j(e) {
   switch (null != e ? e : "thin") {
     case "auto":
       return g.yW;
@@ -197,13 +197,13 @@ function k(e) {
   }
 }
 
-function j(e) {
+function M(e) {
   let {
     className: t,
     children: n,
     scrollerRef: i,
     scrollbarType: a
-  } = e, s = R(e, ["className", "children", "scrollerRef", "scrollbarType"]), l = k(a);
+  } = e, s = w(e, ["className", "children", "scrollerRef", "scrollbarType"]), l = j(a);
   return (0, r.jsx)(l, C(A({
     className: o()(T.content, t),
     ref: i
@@ -258,7 +258,7 @@ function B(e) {
   var {
     className: t,
     scrollerRef: n
-  } = e, i = R(e, ["className", "scrollerRef"]);
+  } = e, i = w(e, ["className", "scrollerRef"]);
   return (0, r.jsx)(m.Tv, A({
     className: t,
     ref: n

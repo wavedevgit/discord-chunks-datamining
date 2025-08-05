@@ -85,13 +85,13 @@ let s = new Set([r.jE.SHOP_ALL_BANNER_STATIC, r.jE.HERO_BANNER_STATIC, r.jE.HERO
       n = e.createReader();
     for (let e of (await new Promise(e => n.readEntries(e)))) e.isDirectory && t.includes(e.name) && a.add(e.name);
     return t.filter(e => !a.has(e))
-  }, b = e => {
+  }, f = e => {
     let {
       files: t,
       addWarning: a
     } = e;
     t.ignoredFilenames.length > 0 && a("Contains unrecognized files", t.ignoredFilenames)
-  }, f = e => {
+  }, b = e => {
     let {
       names: t,
       addError: a
@@ -105,11 +105,11 @@ let s = new Set([r.jE.SHOP_ALL_BANNER_STATIC, r.jE.HERO_BANNER_STATIC, r.jE.HERO
       let t = e.max > 1e6 ? "".concat(Math.round(e.max / 1e6), "MB") : "".concat(Math.round(e.max / 1e3), "KB");
       a("Files exceed the recommended size limit - make sure they are optimized!", ["".concat(i, " (max: ").concat(t, ")")])
     } else r > e.warn && n("Files are a tad chonky - are you sure they're optimized?", ["".concat(i)])
-  }, g = (e, t, a, n) => {
+  }, j = (e, t, a, n) => {
     let r = p[e];
     if (null != r)
       for (let e of t) e.name.endsWith(".txt") || v(r, e, a, n)
-  }, j = (e, t, a) => {
+  }, g = (e, t, a) => {
     for (let n of e) {
       let e = (0, r.BU)(n),
         l = null != e ? p[e] : null;
@@ -121,7 +121,7 @@ let s = new Set([r.jE.SHOP_ALL_BANNER_STATIC, r.jE.HERO_BANNER_STATIC, r.jE.HERO
       addError: a,
       addWarning: n
     } = e;
-    j(t.collectionFiles, a, n), f({
+    g(t.collectionFiles, a, n), b({
       names: t.collectionFiles.map(e => e.name),
       addError: a
     });
@@ -136,18 +136,18 @@ let s = new Set([r.jE.SHOP_ALL_BANNER_STATIC, r.jE.HERO_BANNER_STATIC, r.jE.HERO
       addError: a,
       addWarning: n
     } = e;
-    f({
+    b({
       names: Object.keys(t.profileEffectFilesMap),
       addError: a
     }), Object.entries(t.profileEffectFilesMap).forEach(e => {
       let [t, l] = e, i = l.map(e => e.name);
-      f({
+      b({
         names: i.map(e => {
           let t = e.indexOf("-");
           return e.substring(0, t > 0 ? t : e.length)
         }),
         addError: a
-      }), g(r.aB.PROFILE_EFFECT, l, a, n);
+      }), j(r.aB.PROFILE_EFFECT, l, a, n);
       let s = o.filter(e => !i.some(t => t.startsWith(e) && t.endsWith(".png"))).map(e => "".concat(t, "/").concat(e));
       s.length > 0 && a("Missing required PFX files with prefix", s), i.some(e => e.endsWith(".txt")) || a("PFX configs required - please include both exports! (exception: duplicate variant configs are optional)", [t]);
       let c = i.filter(e => !o.some(t => e.startsWith(t)) && !e.endsWith(".txt")).map(e => "".concat(t, "/").concat(e));
@@ -159,10 +159,10 @@ let s = new Set([r.jE.SHOP_ALL_BANNER_STATIC, r.jE.HERO_BANNER_STATIC, r.jE.HERO
       addError: a,
       addWarning: n
     } = e;
-    f({
+    b({
       names: t.avatarDecorationFiles.map(e => e.name),
       addError: a
-    }), g(r.aB.AVATAR_DECORATION, t.avatarDecorationFiles, a, n)
+    }), j(r.aB.AVATAR_DECORATION, t.avatarDecorationFiles, a, n)
   }, O = (e, t, a) => {
     _({
       files: e,
@@ -176,7 +176,7 @@ let s = new Set([r.jE.SHOP_ALL_BANNER_STATIC, r.jE.HERO_BANNER_STATIC, r.jE.HERO
       files: e,
       addError: a,
       addWarning: t
-    }), b({
+    }), f({
       files: e,
       addError: a,
       addWarning: t

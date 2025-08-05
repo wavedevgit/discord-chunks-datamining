@@ -1,6 +1,7 @@
-/** Chunk was on 25292 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
-  C3: () => o,
+  C3: () => a,
   GW: () => i
 });
 let r = (0, n(818083).B)({
@@ -32,7 +33,7 @@ function i(e) {
   return n
 }
 
-function o(e) {
+function a(e) {
   let {
     location: t
   } = e, {

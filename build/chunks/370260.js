@@ -1,10 +1,10 @@
-/** Chunk was on 8381 **/
+/** Chunk was on web.js **/
 "use strict";
-t.exports = {
-  stringify: function(t) {
-    return "_" + String(t)
+e.exports = {
+  stringify: function(e) {
+    return "_" + String(e)
   },
-  unstringify: function(t) {
-    return t.slice(1)
+  unstringify: function(e) {
+    return e.slice(1)
   }
 }

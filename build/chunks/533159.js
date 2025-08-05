@@ -1,29 +1,30 @@
-/** Chunk was on 74891 **/
-n.d(e, {
-  Z: () => a
+/** Chunk was on web.js **/
+"use strict";
+n.d(t, {
+  Z: () => s
 });
-var i = n(255367);
+var r = n(255367);
 n(73800);
-var r = n(794295),
-  l = n(388032),
+var i = n(794295),
+  a = n(388032),
   o = n(71851);
 
-function a(t) {
+function s(e) {
   let {
-    termsOfServiceUrl: e,
+    termsOfServiceUrl: t,
     privacyPolicyUrl: n
-  } = t;
-  return null == e && null == n ? null : (0, i.jsxs)("span", {
+  } = e;
+  return null == t && null == n ? null : (0, r.jsxs)("span", {
     className: o.text,
-    children: [null != e && (0, i.jsx)(r.Z, {
-      href: e,
-      children: l.intl.string(l.t["8S0kcH"])
-    }), null != e && null != n && (0, i.jsx)("span", {
+    children: [null != t && (0, r.jsx)(i.Z, {
+      href: t,
+      children: a.intl.string(a.t["8S0kcH"])
+    }), null != t && null != n && (0, r.jsx)("span", {
       "aria-disabled": "true",
       children: "•"
-    }), null != n && (0, i.jsx)(r.Z, {
+    }), null != n && (0, r.jsx)(i.Z, {
       href: n,
-      children: l.intl.string(l.t.ZpyeCg)
+      children: a.intl.string(a.t.ZpyeCg)
     })]
   })
 }

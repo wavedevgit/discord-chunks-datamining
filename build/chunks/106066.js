@@ -1,9 +1,10 @@
-/** Chunk was on 35755 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
   s: () => i
 });
-var l = n(695346);
+var r = n(695346);
 
 function i() {
-  return l.Sb.useSetting()
+  return r.Sb.useSetting()
 }

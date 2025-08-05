@@ -1,4 +1,5 @@
-/** Chunk was on 70663 **/
+/** Chunk was on web.js **/
+"use strict";
 e.exports = {
   tile: "tile_ba65b0",
   tileSizer: "tileSizer_ba65b0",

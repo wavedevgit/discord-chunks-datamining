@@ -1,19 +1,18 @@
-/** Chunk was on 44947 **/
-"use strict";
-n.d(t, {
-  u: () => i,
-  y: () => o
+/** Chunk was on 92078 **/
+t.d(r, {
+  u: () => o,
+  y: () => i
 });
-var r = n(73800);
+var e = t(73800);
 
-function i(e) {
-  return (0, r.useMemo)(function() {
-    return e.hooks.dragSource()
-  }, [e])
+function o(n) {
+  return (0, e.useMemo)(function() {
+    return n.hooks.dragSource()
+  }, [n])
 }
 
-function o(e) {
-  return (0, r.useMemo)(function() {
-    return e.hooks.dragPreview()
-  }, [e])
+function i(n) {
+  return (0, e.useMemo)(function() {
+    return n.hooks.dragPreview()
+  }, [n])
 }

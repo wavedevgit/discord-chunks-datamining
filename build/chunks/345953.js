@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => Z
+  Z: () => V
 }), n(388685), n(642613);
 var r = n(392711),
   i = n.n(r),
@@ -86,14 +86,14 @@ function C(e) {
   }
 }
 
-function R(e) {
+function w(e) {
   return o.JY.create({
     muted: !1,
     volume: A(e)
   })
 }
 
-function P() {
+function R() {
   s.K.get(S(f.default.getId())) || g.hW.updateAsync("audioContextSettings", e => {
     let t = !1;
     for (let [n, r] of Object.entries(_.Z.getState().settingsByContext)) {
@@ -124,17 +124,17 @@ function P() {
   }, g.fy.AUTOMATED)
 }
 
-function w(e, t, n, r) {
+function P(e, t, n, r) {
   var i;
   let a = !(arguments.length > 4) || void 0 === arguments[4] || arguments[4],
     o = (0, m.z)(n);
   if (null == o) return !1;
   let s = e[o];
-  return s[t] = null != (i = s[t]) ? i : R(n), r(s[t]), s[t].modifiedAt = String(Date.now()), a && N(s, t, n), C(s), !0
+  return s[t] = null != (i = s[t]) ? i : w(n), r(s[t]), s[t].modifiedAt = String(Date.now()), a && N(s, t, n), C(s), !0
 }
 
 function D() {
-  P()
+  R()
 }
 let L = i().debounce(() => {
   U()
@@ -146,18 +146,18 @@ function x(e, t, n) {
   }), L()
 }
 
-function M(e, t, n) {
+function k(e, t, n) {
   (0, h.RF)(e, t, {
     muted: n
   }), L.cancel(), U()
 }
 
-function k(e, t, n) {
+function j(e, t, n) {
   (0, h.RF)(e, t, {
     soundboardMuted: n
   }), L.cancel(), U()
 }
-let j = i().debounce(c.On, 500, {
+let M = i().debounce(c.On, 500, {
   maxWait: 500
 });
 
@@ -165,7 +165,7 @@ function U() {
   g.hW.updateAsync("audioContextSettings", e => {
     let t = !1;
     return (0, h.$E)((n, r, i) => {
-      let a = w(e, r, n, e => {
+      let a = P(e, r, n, e => {
         Object.assign(e, i)
       });
       t = t || a
@@ -181,7 +181,7 @@ function G(e) {
   } = e;
   if (n === f.default.getId()) return;
   let i = u.Z.getRemoteSessionId();
-  null != i && j(i, n, t, {
+  null != i && M(i, n, t, {
     muted: _.Z.isLocalMute(n, t),
     volume: r
   }), x(t, n, r)
@@ -192,15 +192,15 @@ function B(e) {
     context: t,
     userId: n
   } = e;
-  n !== f.default.getId() && M(t, n, _.Z.isLocalMute(n, t))
+  n !== f.default.getId() && k(t, n, _.Z.isLocalMute(n, t))
 }
 
-function V(e) {
+function Z(e) {
   let {
     context: t,
     userId: n
   } = e;
-  n !== f.default.getId() && k(t, n, d.Z.isLocalSoundboardMuted(n))
+  n !== f.default.getId() && j(t, n, d.Z.isLocalSoundboardMuted(n))
 }
 class F extends l.Z {
   constructor(...e) {
@@ -208,8 +208,8 @@ class F extends l.Z {
       POST_CONNECTION_OPEN: D,
       AUDIO_SET_LOCAL_VOLUME: G,
       AUDIO_TOGGLE_LOCAL_MUTE: B,
-      AUDIO_TOGGLE_LOCAL_SOUNDBOARD_MUTE: V
+      AUDIO_TOGGLE_LOCAL_SOUNDBOARD_MUTE: Z
     })
   }
 }
-let Z = new F
+let V = new F

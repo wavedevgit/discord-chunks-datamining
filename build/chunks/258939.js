@@ -1,7 +1,8 @@
-/** Chunk was on 60432 **/
-n.d(t, {
-  R: () => i
+/** Chunk was on 45620 **/
+"use strict";
+r.d(t, {
+  R: () => a
 });
-var r = n(442837),
-  a = n(597688);
-let i = () => (0, r.e7)([a.Z], () => a.Z.isFetchingCategories)
+var n = r(442837),
+  l = r(597688);
+let a = () => (0, n.e7)([l.Z], () => l.Z.isFetchingCategories)

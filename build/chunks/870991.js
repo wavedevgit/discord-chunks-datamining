@@ -1,12 +1,13 @@
-/** Chunk was on 60173 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
   D8: () => i,
-  E4: () => l
+  E4: () => a
 });
 var r = n(388032);
 let i = "https://discord.com/safety/understanding-and-avoiding-common-scams";
 
-function l() {
+function a() {
   return [{
     title: r.intl.string(r.t.wSZfJS),
     description: r.intl.string(r.t.CRwzW1)

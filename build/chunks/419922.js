@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  C: () => R,
-  Z: () => M
+  C: () => w,
+  Z: () => k
 }), n(953529), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -43,13 +43,13 @@ function C(e, t) {
   })
 }
 
-function R(e) {
+function w(e) {
   let t = "description" in e && null != e.description ? "".concat(e.name, ", ").concat(e.description) : e.name;
   return y.intl.formatToPlainString(y.t.rk6pOz, {
     stickerName: t
   })
 }
-let P = e => {
+let R = e => {
     let {
       children: t,
       hasError: n,
@@ -85,7 +85,7 @@ let P = e => {
       })]
     })
   },
-  w = e => {
+  P = e => {
     let {
       shouldAnimate: t,
       size: a,
@@ -133,9 +133,9 @@ let P = e => {
     }, [o, t, u]), null == N) ? null : (0, r.jsx)("div", {
       role: "img",
       className: d,
-      "aria-label": T ? y.intl.string(y.t.yEvsKy) : R(o),
+      "aria-label": T ? y.intl.string(y.t.yEvsKy) : w(o),
       ref: _,
-      children: (0, r.jsx)(P, {
+      children: (0, r.jsx)(R, {
         hasError: T,
         isLoading: v,
         maskAsset: f,
@@ -164,7 +164,7 @@ let P = e => {
       size: s
     }), N = i.useCallback(() => {
       g(!1)
-    }, []), w = i.useCallback(() => {
+    }, []), P = i.useCallback(() => {
       y(!0)
     }, []);
     return (i.useEffect(() => {
@@ -185,7 +185,7 @@ let P = e => {
       children: (0, r.jsx)("div", {
         className: o()(l, O.__invalid_pngImageWrapper),
         ref: u,
-        children: (0, r.jsx)(P, {
+        children: (0, r.jsx)(R, {
           hasError: E,
           isLoading: m,
           maskAsset: c,
@@ -193,10 +193,10 @@ let P = e => {
           withLoadingIndicator: f,
           children: C((0, r.jsx)("img", {
             className: O.pngImage,
-            alt: R(n),
+            alt: w(n),
             src: A,
             draggable: !1,
-            onError: w,
+            onError: P,
             onLoad: N,
             onContextMenu: v,
             ref: S
@@ -282,7 +282,7 @@ let P = e => {
       onError: h
     } = e, b = (0, m.n)(), y = (0, g.t$)(t) && !n, O = i.useRef(null);
     if (null == u) return null;
-    let v = u.format_type === E.u3.LOTTIE ? w : D;
+    let v = u.format_type === E.u3.LOTTIE ? P : D;
     return (0, r.jsxs)(i.Fragment, {
       children: [(0, r.jsx)(v, {
         shouldAnimate: y,
@@ -307,4 +307,4 @@ let P = e => {
       })]
     }, "".concat(u.id, ",").concat(c))
   },
-  M = x
+  k = x

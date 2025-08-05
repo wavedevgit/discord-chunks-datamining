@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => P,
+  Z: () => R,
   u: () => N
 }), n(388685);
 var r = n(255367),
@@ -87,14 +87,14 @@ let T = 20,
     })
   };
 
-function R(e) {
+function w(e) {
   return {
     "--custom-emoji-sprite-size": "".concat(S, "px"),
     "--custom-emoji-sprite-row": Math.floor(e / T),
     "--custom-emoji-sprite-col": e % T
   }
 }
-let P = function(e) {
+let R = function(e) {
   let {
     tabIndex: t,
     className: n,
@@ -103,14 +103,14 @@ let P = function(e) {
     onClick: v,
     "aria-controls": T,
     focusProps: S,
-    ref: P
-  } = e, [w, D] = i.useState(!1), [L, x] = i.useState(50), M = w || y, k = (0, h.l)(b, "emojiButton", M ? "Hovered" : "Normal"), j = R(L), U = i.useCallback(() => {
-    if (M) return;
+    ref: R
+  } = e, [P, D] = i.useState(!1), [L, x] = i.useState(50), k = P || y, j = (0, h.l)(b, "emojiButton", k ? "Hovered" : "Normal"), M = w(L), U = i.useCallback(() => {
+    if (k) return;
     let e = Math.floor(Math.random() * A);
     D(!0), x(e), (0, _.x)(g.qR.EmojiButtonMouseEntered)
-  }, [M, D, x]), G = i.useCallback(() => {
+  }, [k, D, x]), G = i.useCallback(() => {
     D(!1)
-  }, [D]), B = i.useCallback(() => (0, _.x)(g.qR.EmojiButtonFocused), []), V = (0, p.B4)(), [F, Z] = (0, f.US)(V ? [c.z.TRIAL_NUX_EMOJI_BUTTON] : [], void 0, !0), H = F === c.z.TRIAL_NUX_EMOJI_BUTTON, Y = !y && H, W = (0, l.e7)([d.Z], () => d.Z.useReducedMotion), K = i.useRef(null), z = null != P ? P : K;
+  }, [D]), B = i.useCallback(() => (0, _.x)(g.qR.EmojiButtonFocused), []), Z = (0, p.B4)(), [F, V] = (0, f.US)(Z ? [c.z.TRIAL_NUX_EMOJI_BUTTON] : [], void 0, !0), H = F === c.z.TRIAL_NUX_EMOJI_BUTTON, Y = !y && H, W = (0, l.e7)([d.Z], () => d.Z.useReducedMotion), K = i.useRef(null), z = null != R ? R : K;
   return (0, r.jsx)(u.ua7, {
     targetElementRef: z,
     text: () => (0, r.jsx)(C, {}),
@@ -122,7 +122,7 @@ let P = function(e) {
     children: e => (0, r.jsx)(u.P3F, {
       innerRef: z,
       tabIndex: t,
-      className: o()(k, n),
+      className: o()(j, n),
       onMouseEnter: () => {
         var t;
         U(), null == (t = e.onMouseEnter) || t.call(e)
@@ -130,7 +130,7 @@ let P = function(e) {
       onMouseOver: U,
       onMouseLeave: () => {
         var t;
-        G(), null == (t = e.onMouseLeave) || t.call(e), H && Z(m.L.USER_DISMISS)
+        G(), null == (t = e.onMouseLeave) || t.call(e), H && V(m.L.USER_DISMISS)
       },
       onFocus: B,
       onClick: t => {
@@ -146,7 +146,7 @@ let P = function(e) {
       children: null != a ? a() : (0, r.jsx)(u.AMe, {
         config: N,
         to: {
-          value: +!!M
+          value: +!!k
         },
         children: e => {
           let {
@@ -154,13 +154,13 @@ let P = function(e) {
           } = e;
           return (0, r.jsxs)(s.animated.div, {
             className: b.spriteContainer,
-            style: I(O({}, j), {
+            style: I(O({}, M), {
               transform: t.to([0, 1], [1, 1.14]).to(e => "scale(".concat(e, ")"))
             }),
             children: [(0, r.jsx)("div", {
-              className: o()(b.sprite, b.spriteColored, M ? b.active : b.inactive)
+              className: o()(b.sprite, b.spriteColored, k ? b.active : b.inactive)
             }), (0, r.jsx)("div", {
-              className: o()(b.sprite, H ? b.spritePremiumColored : b.spriteGreyscale, M ? b.inactive : b.active, {
+              className: o()(b.sprite, H ? b.spritePremiumColored : b.spriteGreyscale, k ? b.inactive : b.active, {
                 [b.reducedMotion]: W
               })
             })]

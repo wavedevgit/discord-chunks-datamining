@@ -1,31 +1,31 @@
-/** Chunk was on 60173 **/
+/** Chunk was on 49152 **/
 n.d(t, {
-  Z: () => u
+  Z: () => d
 });
 var r = n(255367);
 n(73800);
 var i = n(481060),
   l = n(438536),
   a = n(214906),
-  o = n(346479),
-  s = n(723170),
+  s = n(346479),
+  o = n(723170),
   c = n(124368);
 
-function u(e) {
+function d(e) {
   let {
     channel: t,
     closePopout: n,
-    onSelect: u,
-    navId: d,
-    label: p
-  } = e, h = (0, l.Z)(t, "Notifications Bell"), f = (0, a.Z)(t), m = (0, s.B)(t);
+    onSelect: d,
+    navId: u,
+    label: h
+  } = e, p = (0, l.Z)(t, "Notifications Bell"), f = (0, a.Z)(t), g = (0, o.B)(t);
   return (0, r.jsxs)(i.v2r, {
-    navId: d,
+    navId: u,
     onClose: n,
-    "aria-label": p,
-    onSelect: u,
+    "aria-label": h,
+    onSelect: d,
     children: [(0, r.jsxs)(i.kSQ, {
-      children: [t.isForumPost() ? h : null, f]
+      children: [t.isForumPost() ? p : null, f]
     }), (0, r.jsx)(i.kSQ, {
       children: (0, c.zb)().map(e => {
         let {
@@ -36,10 +36,10 @@ function u(e) {
           group: "thread-notifications",
           id: "".concat(n),
           label: l,
-          action: () => o.Z.setNotificationSettings(t, {
+          action: () => s.Z.setNotificationSettings(t, {
             flags: n
           }),
-          checked: n === m
+          checked: n === g
         }, n)
       })
     })]

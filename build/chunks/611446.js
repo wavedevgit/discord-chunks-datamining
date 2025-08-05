@@ -1,6 +1,6 @@
-/** Chunk was on 89650 **/
+/** Chunk was on 9738 **/
 n.d(e, {
-  O: () => x,
+  O: () => _,
   default: () => b
 }), n(388685);
 var i, r = n(255367),
@@ -13,26 +13,26 @@ var i, r = n(255367),
   d = n(858597),
   T = n(486213),
   S = n(388032),
-  _ = n(692056),
-  x = ((i = {}).ACTIONS = "ACTIONS", i.SAFETY_TIPS = "SAFETY_TIPS", i.ABOUT_SAFETY_ALERTS = "ABOUT_SAFETY_ALERTS", i);
+  x = n(692056),
+  _ = ((i = {}).ACTIONS = "ACTIONS", i.SAFETY_TIPS = "SAFETY_TIPS", i.ABOUT_SAFETY_ALERTS = "ABOUT_SAFETY_ALERTS", i);
 let b = t => {
   let {
     onClose: e,
     channelId: n,
     warningId: i,
-    warningType: x,
+    warningType: _,
     otherUserId: b,
-    transitionState: p
-  } = t, O = null != (0, o.M)(n), [h, E] = s.useState("ACTIONS"), m = s.useCallback(t => {
+    transitionState: O
+  } = t, E = null != (0, o.M)(n), [h, p] = s.useState("ACTIONS"), g = s.useCallback(t => {
     (0, c.qc)({
       channelId: n,
       warningId: i,
-      warningType: x,
+      warningType: _,
       senderId: b,
       cta: t,
-      isNudgeWarning: O
+      isNudgeWarning: E
     })
-  }, [n, i, x, b, O]), A = s.useCallback(t => {
+  }, [n, i, _, b, E]), A = s.useCallback(t => {
     let {
       text: e,
       onClick: n
@@ -43,18 +43,18 @@ let b = t => {
       variant: "secondary",
       textVariant: "text-sm/normal"
     })
-  }, []), f = s.useCallback(() => {
+  }, []), j = s.useCallback(() => {
     switch (h) {
       case "SAFETY_TIPS":
       case "ABOUT_SAFETY_ALERTS":
         return (0, r.jsx)(A, {
           text: S.intl.string(S.t["13/7kZ"]),
-          onClick: () => E("ACTIONS")
+          onClick: () => p("ACTIONS")
         });
       default:
         return null
     }
-  }, [h, A]), g = s.useCallback(() => {
+  }, [h, A]), m = s.useCallback(() => {
     switch (h) {
       case "SAFETY_TIPS":
         return S.intl.string(S.t.EtNxi4);
@@ -63,21 +63,21 @@ let b = t => {
       default:
         return S.intl.string(S.t.MAhAp6)
     }
-  }, [h]), j = s.useCallback(t => {
-    E(t)
-  }, [E]);
+  }, [h]), f = s.useCallback(t => {
+    p(t)
+  }, [p]);
   return (0, r.jsxs)(l.Y0X, {
-    transitionState: p,
+    transitionState: O,
     "aria-label": S.intl.string(S.t.eXlt09),
     size: l.CgR.SMALL,
     parentComponent: "SafetyToolsModal",
     children: [(0, r.jsx)(l.xBx, {
       separator: !1,
-      className: _.modalHeader,
+      className: x.modalHeader,
       justify: a.Z.Justify.CENTER,
       children: (0, r.jsx)(l.X6q, {
         variant: "heading-xl/semibold",
-        children: g()
+        children: m()
       })
     }), (0, r.jsx)(l.Ttm, {
       children: (0, r.jsxs)(l.MyZ, {
@@ -89,15 +89,15 @@ let b = t => {
             otherUserId: b,
             channelId: n,
             warningId: i,
-            warningType: x,
-            transitionToSlide: j
+            warningType: _,
+            transitionToSlide: f
           })
         }), (0, r.jsx)(l.Mi4, {
           id: "ABOUT_SAFETY_ALERTS",
           children: (0, r.jsx)(u.Z, {
             channelId: n,
             onClose: () => {
-              e(), m(c.NM.USER_SAFETY_TOOLS_ABOUT_SAFETY_ALERTS_DISMISS)
+              e(), g(c.NM.USER_SAFETY_TOOLS_ABOUT_SAFETY_ALERTS_DISMISS)
             }
           })
         }), (0, r.jsx)(l.Mi4, {
@@ -110,9 +110,9 @@ let b = t => {
       children: [(0, r.jsx)(A, {
         text: S.intl.string(S.t.cpT0Cg),
         onClick: () => {
-          e(), m(c.NM.USER_SAFETY_TOOLS_DISMISS)
+          e(), g(c.NM.USER_SAFETY_TOOLS_DISMISS)
         }
-      }), f()]
+      }), j()]
     })]
   })
 }

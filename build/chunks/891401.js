@@ -15,11 +15,11 @@ var n = a(255367),
   x = a(411149),
   p = a(151480),
   h = a(461762),
-  b = a(680783),
-  f = a(605236),
+  f = a(680783),
+  b = a(605236),
   v = a(675478),
-  g = a(944486),
-  j = a(388032),
+  j = a(944486),
+  g = a(388032),
   _ = a(145634);
 
 function y(e) {
@@ -57,23 +57,23 @@ function C(e, t) {
 function O() {
   return (0, n.jsxs)(m.Ttm, {
     className: _.container,
-    children: [(0, n.jsx)(N, {}), (0, n.jsx)(T, {})]
+    children: [(0, n.jsx)(N, {}), (0, n.jsx)(E, {})]
   })
 }
 
 function N() {
   var e, t;
-  let a = (0, c.e7)([g.Z], () => g.Z.getChannelId()),
-    l = (0, b.Z)(a),
+  let a = (0, c.e7)([j.Z], () => j.Z.getChannelId()),
+    l = (0, f.Z)(a),
     s = null == l ? void 0 : l.wallpaperId,
     d = (0, h.Z)(s),
-    f = r.useCallback(e => {
+    b = r.useCallback(e => {
       null != s && (0, p.i)(s, {
         opacity: e
       })
     }, [s]),
     v = r.useCallback(e => {
-      E(null == l ? void 0 : l.wallpaperId, e.target.value)
+      T(null == l ? void 0 : l.wallpaperId, e.target.value)
     }, [null == l ? void 0 : l.wallpaperId]),
     O = r.useCallback(e => {
       P(null == l ? void 0 : l.wallpaperId, e.target.value)
@@ -81,18 +81,18 @@ function N() {
     N = r.useCallback(e => {
       S(null == l ? void 0 : l.wallpaperId, e.target.value)
     }, [null == l ? void 0 : l.wallpaperId]),
-    T = r.useCallback(() => E(null == l ? void 0 : l.wallpaperId, void 0), [null == l ? void 0 : l.wallpaperId]),
-    I = r.useCallback(() => P(null == l ? void 0 : l.wallpaperId, void 0), [null == l ? void 0 : l.wallpaperId]),
-    w = r.useCallback(() => S(null == l ? void 0 : l.wallpaperId, void 0), [null == l ? void 0 : l.wallpaperId]),
+    E = r.useCallback(() => T(null == l ? void 0 : l.wallpaperId, void 0), [null == l ? void 0 : l.wallpaperId]),
+    w = r.useCallback(() => P(null == l ? void 0 : l.wallpaperId, void 0), [null == l ? void 0 : l.wallpaperId]),
+    I = r.useCallback(() => S(null == l ? void 0 : l.wallpaperId, void 0), [null == l ? void 0 : l.wallpaperId]),
     R = r.useCallback(e => {
       null != s && (0, p.i)(s, {
         token_mix_amount: Math.round(e)
       })
     }, [s]),
-    A = r.useCallback(() => {
+    k = r.useCallback(() => {
       null != s && (0, p.i)(s, null)
     }, [s]),
-    k = null != (e = null == d ? void 0 : d.opacity) ? e : 1,
+    A = null != (e = null == d ? void 0 : d.opacity) ? e : 1,
     Z = null != (t = null == d ? void 0 : d.token_mix_amount) ? t : 100;
   return (0, n.jsxs)("div", {
     children: [(0, n.jsx)(o.X6, {
@@ -120,12 +120,12 @@ function N() {
         }))
       }), (0, n.jsx)(m.iRW, {
         className: _.slider,
-        initialValue: k,
+        initialValue: A,
         defaultValue: 1,
         minValue: 0,
         maxValue: 1,
-        onValueChange: f
-      }, "opacity-".concat(k)), (0, n.jsx)(m.ua7, {
+        onValueChange: b
+      }, "opacity-".concat(A)), (0, n.jsx)(m.ua7, {
         text: "The most prominent color in the wallpaper. This will be used to adjust the color tokens.",
         children: e => (0, n.jsx)(o.X6, C(y({
           className: i()(_.subheader, _.hasTooltip),
@@ -141,12 +141,12 @@ function N() {
           onChange: v
         }, "primaryColor-".concat(d.primary_color)), (0, n.jsx)(m.M0o, {
           color: "currentColor",
-          tooltip: j.intl.string(j.t.N86XcH),
+          tooltip: g.intl.string(g.t.N86XcH),
           icon: (0, n.jsx)(m.P$X, {
             size: "xs",
             color: "currentColor"
           }),
-          onClick: T,
+          onClick: E,
           className: _.removeButton
         })]
       }), (0, n.jsx)(m.ua7, {
@@ -165,12 +165,12 @@ function N() {
           onChange: O
         }, "secondaryColor-".concat(d.secondary_color)), (0, n.jsx)(m.M0o, {
           color: "currentColor",
-          tooltip: j.intl.string(j.t.N86XcH),
+          tooltip: g.intl.string(g.t.N86XcH),
           icon: (0, n.jsx)(m.P$X, {
             size: "xs",
             color: "currentColor"
           }),
-          onClick: I,
+          onClick: w,
           className: _.removeButton
         })]
       }), (0, n.jsx)(m.ua7, {
@@ -204,30 +204,30 @@ function N() {
           onChange: N
         }, "linkColor-".concat(d.link_color)), (0, n.jsx)(m.M0o, {
           color: "currentColor",
-          tooltip: j.intl.string(j.t.N86XcH),
+          tooltip: g.intl.string(g.t.N86XcH),
           icon: (0, n.jsx)(m.P$X, {
             size: "xs",
             color: "currentColor"
           }),
-          onClick: w,
+          onClick: I,
           className: _.removeButton
         })]
       }), (0, n.jsx)(u.zx, {
         className: _.resetButton,
-        onClick: A,
+        onClick: k,
         children: "Reset"
       })]
     })]
   })
 }
 
-function T() {
+function E() {
   let e = r.useCallback(() => {
       (0, v.Z1)(d.z.NITRO_TENURE_BADGE_LEVEL_UP)
     }, []),
     {
       lastDismissedAtMs: t
-    } = (0, f.Fo)(d.z.NITRO_TENURE_BADGE_LEVEL_UP),
+    } = (0, b.Fo)(d.z.NITRO_TENURE_BADGE_LEVEL_UP),
     a = null != t ? new Date(t) : null;
   return (0, n.jsxs)(n.Fragment, {
     children: [(0, n.jsx)(o.X6, {
@@ -250,7 +250,7 @@ function T() {
     })]
   })
 }
-let E = (0, s.debounce)(function(e, t) {
+let T = (0, s.debounce)(function(e, t) {
     null != e && (0, p.i)(e, {
       primary_color: t
     })

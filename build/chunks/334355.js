@@ -132,21 +132,21 @@ e.exports = function(e) {
         }]
       }), e.C_BLOCK_COMMENT_MODE, e.C_LINE_COMMENT_MODE]
     },
-    R = [e.APOS_STRING_MODE, e.QUOTE_STRING_MODE, T, S, A, N, {
+    w = [e.APOS_STRING_MODE, e.QUOTE_STRING_MODE, T, S, A, N, {
       match: /\$\d+/
     }, v];
-  I.contains = R.concat({
+  I.contains = w.concat({
     begin: /\{/,
     end: /\}/,
     keywords: E,
-    contains: ["self"].concat(R)
+    contains: ["self"].concat(w)
   });
-  let P = [].concat(C, I.contains),
-    w = P.concat([{
+  let R = [].concat(C, I.contains),
+    P = R.concat([{
       begin: /(\s*)\(/,
       end: /\)/,
       keywords: E,
-      contains: ["self"].concat(P)
+      contains: ["self"].concat(R)
     }]),
     D = {
       className: "params",
@@ -155,7 +155,7 @@ e.exports = function(e) {
       excludeBegin: !0,
       excludeEnd: !0,
       keywords: E,
-      contains: w
+      contains: P
     },
     L = {
       variants: [{
@@ -182,13 +182,13 @@ e.exports = function(e) {
         _: [...i, ...a]
       }
     },
-    M = {
+    k = {
       label: "use_strict",
       className: "meta",
       relevance: 10,
       begin: /^\s*['"]use (strict|asm)['"]/
     },
-    k = {
+    j = {
       variants: [{
         match: [/function/, /\s+/, d, /(?=\s*\()/]
       }, {
@@ -202,7 +202,7 @@ e.exports = function(e) {
       contains: [D],
       illegal: /%/
     },
-    j = {
+    M = {
       relevance: 0,
       match: /\b[A-Z][A-Z_0-9]+\b/,
       className: "variable.constant"
@@ -224,7 +224,7 @@ e.exports = function(e) {
       className: "property",
       relevance: 0
     },
-    V = {
+    Z = {
       match: [/get|set/, /\s+/, d, /(?=\()/],
       className: {
         1: "keyword",
@@ -235,7 +235,7 @@ e.exports = function(e) {
       }, D]
     },
     F = "(\\([^()]*(\\([^()]*(\\([^()]*\\)[^()]*)*\\)[^()]*)*\\)|" + e.UNDERSCORE_IDENT_RE + ")\\s*=>",
-    Z = {
+    V = {
       match: [/const|var|let/, /\s+/, d, /\s*/, /=\s*/, /(async\s*)?/, c.lookahead(F)],
       keywords: "async",
       className: {
@@ -249,7 +249,7 @@ e.exports = function(e) {
     aliases: ["js", "jsx", "mjs", "cjs"],
     keywords: E,
     exports: {
-      PARAMS_CONTAINS: w,
+      PARAMS_CONTAINS: P,
       CLASS_REFERENCE: x
     },
     illegal: /#(?![$_A-z])/,
@@ -257,13 +257,13 @@ e.exports = function(e) {
       label: "shebang",
       binary: "node",
       relevance: 5
-    }), M, e.APOS_STRING_MODE, e.QUOTE_STRING_MODE, T, S, A, N, C, {
+    }), k, e.APOS_STRING_MODE, e.QUOTE_STRING_MODE, T, S, A, N, C, {
       match: /\$\d+/
     }, v, x, {
       scope: "attr",
       match: d + c.lookahead(":"),
       relevance: 0
-    }, Z, {
+    }, V, {
       begin: "(" + e.RE_STARTERS_RE + "|\\b(case|return|throw)\\b)\\s*",
       keywords: "return throw case",
       relevance: 0,
@@ -287,7 +287,7 @@ e.exports = function(e) {
             excludeBegin: !0,
             excludeEnd: !0,
             keywords: E,
-            contains: w
+            contains: P
           }]
         }]
       }, {
@@ -315,7 +315,7 @@ e.exports = function(e) {
           contains: ["self"]
         }]
       }]
-    }, k, {
+    }, j, {
       beginKeywords: "while if switch catch for"
     }, {
       begin: "\\b(?!function)" + e.UNDERSCORE_IDENT_RE + "\\([^()]*(\\([^()]*(\\([^()]*\\)[^()]*)*\\)[^()]*)*\\)\\s*\\{",
@@ -337,7 +337,7 @@ e.exports = function(e) {
         1: "title.function"
       },
       contains: [D]
-    }, G, j, L, V, {
+    }, G, M, L, Z, {
       match: /\$[(.]/
     }]
   }

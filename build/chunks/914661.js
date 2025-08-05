@@ -1,4 +1,4 @@
-/** Chunk was on 94312 **/
+/** Chunk was on 22988 **/
 e.exports = {
   addAnotherRuleCardContainer: "addAnotherRuleCardContainer__0c1e8",
   mainRuleContainer: "mainRuleContainer__0c1e8",

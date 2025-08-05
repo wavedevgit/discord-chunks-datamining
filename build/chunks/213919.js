@@ -2,12 +2,12 @@
 "use strict";
 let r, i;
 n.r(t), n.d(t, {
-  encryptAndStoreTokens: () => P,
+  encryptAndStoreTokens: () => R,
   getAnalyticsToken: () => O,
   getToken: () => v,
   hideToken: () => A,
   init: () => y,
-  removeAnalyticsToken: () => R,
+  removeAnalyticsToken: () => w,
   removeToken: () => C,
   setAnalyticsToken: () => I,
   setToken: () => T,
@@ -96,7 +96,7 @@ function T(e, t) {
 }
 
 function S(e, t) {
-  null != t && (_[t] = e), f ? P() : (i = r, p = _, g())
+  null != t && (_[t] = e), f ? R() : (i = r, p = _, g())
 }
 
 function A() {
@@ -112,11 +112,11 @@ function C(e) {
   return null != e && (t = _[e], delete _[e], delete p[e]), t === r && (r = null, i = null), g(), null != t
 }
 
-function R() {
+function w() {
   return C(l)
 }
 
-function P() {
+function R() {
   (null == u ? void 0 : u.isEncryptionAvailable()) ? (null != r && (i = b(r)), p = c(Object.entries(_).map(e => {
     let [t, n] = e;
     return [t, b(n)]

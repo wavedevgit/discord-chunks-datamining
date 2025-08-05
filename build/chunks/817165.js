@@ -1,4 +1,5 @@
-/** Chunk was on 94313 **/
+/** Chunk was on web.js **/
+"use strict";
 e.exports = {
   splashContainer: "splashContainer__0bef9",
   splashContainerHorizontal: "splashContainerHorizontal__0bef9",

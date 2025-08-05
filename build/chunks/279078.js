@@ -1,4 +1,5 @@
-/** Chunk was on 60173 **/
+/** Chunk was on web.js **/
+"use strict";
 e.exports = {
   members: "members__1ee8c",
   avatars: "avatars__1ee8c",

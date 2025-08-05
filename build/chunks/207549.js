@@ -1,7 +1,8 @@
-/** Chunk was on 8381 **/
+/** Chunk was on web.js **/
 "use strict";
-t.exports = {
+var t = "[.,+*?$|#{}()'\\^\\-\\[\\]\\\\\\/!@%\"~=<>_:;・、。〈-】〔-〟：-？！-／［-｀｛-･⸮؟٪-٬؛،؍﴾﴿᠁।၊။‐-‧‰-⁞\xa1-\xb1\xb4-\xb8\xba\xbb\xbf]";
+e.exports = {
   getPunctuation: function() {
-    return "[.,+*?$|#{}()'\\^\\-\\[\\]\\\\\\/!@%\"~=<>_:;・、。〈-】〔-〟：-？！-／［-｀｛-･⸮؟٪-٬؛،؍﴾﴿᠁।၊။‐-‧‰-⁞\xa1-\xb1\xb4-\xb8\xba\xbb\xbf]"
+    return t
   }
 }

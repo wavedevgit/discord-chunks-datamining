@@ -1,4 +1,4 @@
-/** Chunk was on 71874 **/
+/** Chunk was on 82107 **/
 t.d(n, {
   Z: () => s
 });
@@ -17,8 +17,8 @@ function s(e) {
       onFileSizeError: d,
       "aria-label": u,
       multiple: _ = !1,
-      disabled: b = !1,
-      submitting: p = !1,
+      disabled: p = !1,
+      submitting: b = !1,
       maxFileSizeBytes: f,
       filters: h,
       className: m
@@ -59,8 +59,8 @@ function s(e) {
         }
         return e
       }({}, g), t = t = {
-        submitting: p,
-        disabled: b
+        submitting: b,
+        disabled: p
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(t)) : (function(e, n) {
         var t = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
@@ -74,7 +74,7 @@ function s(e) {
       style: {
         width: "max-content"
       },
-      "aria-disabled": b,
+      "aria-disabled": p,
       children: [(0, r.jsx)("span", {
         "aria-hidden": !0,
         children: a
@@ -86,7 +86,7 @@ function s(e) {
         maxFileSizeBytes: f,
         filters: h,
         "aria-label": null != u ? u : a,
-        disabled: b
+        disabled: p
       })]
     })
   })

@@ -1,6 +1,6 @@
 /** Chunk was on 7654 **/
 n.d(t, {
-  D: () => g
+  D: () => h
 }), n(997841);
 var l = n(255367);
 n(73800);
@@ -12,24 +12,24 @@ var i = n(120356),
   u = n(868728),
   d = n(388032),
   c = n(821022),
-  h = n(20493);
-let g = e => {
+  g = n(20493);
+let h = e => {
   let {
     handleDone: t,
     headerId: n,
     modalState: i,
-    shouldHideTemporaryInviteToggle: g,
+    shouldHideTemporaryInviteToggle: h,
     onGenerateNewLink: m,
     onToggleTemporary: p,
     onSelectMaxAge: v,
     onSelectMaxUses: x,
     isGuestInviteCreationToggleEnabled: I,
     onSetInviteFlags: f
-  } = e, N = (0, a.ZP)(), {
-    maxAge: j,
+  } = e, j = (0, a.ZP)(), {
+    maxAge: N,
     maxUses: _,
-    temporary: E,
-    flags: S
+    temporary: S,
+    flags: E
   } = i;
   return (0, l.jsxs)(l.Fragment, {
     children: [(0, l.jsxs)(s.xBx, {
@@ -43,26 +43,26 @@ let g = e => {
         children: (0, l.jsx)(s.vwX, {
           id: n,
           tag: "h2",
-          className: r()(h.marginReset, c.headerCloseButtonSpacing, c.headerText),
+          className: r()(g.marginReset, c.headerCloseButtonSpacing, c.headerText),
           children: d.intl.string(d.t.Atdlys)
         })
       })]
     }), (0, l.jsx)(o.Z, {
-      shouldHideTemporaryInviteToggle: g,
-      maxAge: j,
+      shouldHideTemporaryInviteToggle: h,
+      maxAge: N,
       maxUses: _,
-      temporary: E,
+      temporary: S,
       onToggleTemporary: p,
       onSelectMaxAge: v,
       onSelectMaxUses: x,
       onGenerateNewLink: m,
       isGuestInviteCreationToggleEnabled: I,
       onSetInviteFlags: f,
-      inviteFlags: S
+      inviteFlags: E
     }), (0, l.jsx)(s.mzw, {
       className: c.settingsFooter,
       children: (0, l.jsx)(u.Z, {
-        theme: N,
+        theme: j,
         onConfirm: () => {
           m(), t()
         },

@@ -1,11 +1,12 @@
-/** Chunk was on 60173 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
-  Z: () => l
+  Z: () => a
 });
 var r = n(399606),
   i = n(541099);
 
-function l(e) {
+function a(e) {
   let {
     type: t
   } = e;

@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => P
+  Z: () => R
 }), n(314940);
 var r = n(255367),
   i = n(73800),
@@ -93,7 +93,7 @@ let I = 3,
       children: t
     }))
   },
-  R = e => {
+  w = e => {
     var {
       user: t,
       avatarDecoration: n,
@@ -128,7 +128,7 @@ let I = 3,
       })]
     }))
   },
-  P = e => {
+  R = e => {
     let {
       user: t,
       guild: n,
@@ -170,7 +170,7 @@ let I = 3,
         })]
       }, b)).otherwise(e => {
         let n = (null == i ? void 0 : i.id) === e.id;
-        return (0, r.jsx)(R, {
+        return (0, r.jsx)(w, {
           style: E({}, g),
           user: t,
           avatarDecoration: e,

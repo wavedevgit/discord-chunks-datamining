@@ -19,7 +19,7 @@ let u = "/users/@me/debug/consumables/",
 function x() {
   let e, [t, a] = (0, r.useState)([]),
     [x, p] = (0, r.useState)(null),
-    [h, b] = (0, r.useState)(!1);
+    [h, f] = (0, r.useState)(!1);
   return (0, r.useEffect)(() => ((async () => {
     try {
       let e = (await l.tn.get(u)).body.entitlements.map(e => c.Z.createFromServer(e));
@@ -40,7 +40,7 @@ function x() {
         children: "Create Entitlements"
       }), (0, n.jsx)(i.zx, {
         onClick: (e = o.D1, async () => {
-          b(!0);
+          f(!0);
           try {
             let n = await l.tn.post({
                 url: u,
@@ -54,7 +54,7 @@ function x() {
           } catch (e) {
             p("Failed to create entitlement")
           } finally {
-            b(!1)
+            f(!1)
           }
         }),
         className: d.button,

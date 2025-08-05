@@ -90,19 +90,19 @@ class m extends i.Component {
         renderOverlayContent: A,
         renderLinkComponent: N,
         onClick: C,
-        onPlay: R,
-        onPause: P,
-        onEnded: w,
+        onPlay: w,
+        onPause: R,
+        onEnded: P,
         onControlsShow: D,
         onControlsHide: L,
         onVolumeChange: x,
-        onMute: M,
-        disableArrowKeySeek: k,
-        alt: j = c.intl.string(c.t.FlNoSU)
+        onMute: k,
+        disableArrowKeySeek: j,
+        alt: M = c.intl.string(c.t.FlNoSU)
       } = e,
       U = p(e, ["src", "fileSize", "className", "mediaPlayerClassName", "poster", "fileName", "naturalWidth", "naturalHeight", "playable", "downloadable", "volume", "autoPlay", "autoMute", "responsive", "mediaLayoutType", "mimeType", "renderOverlayContent", "renderLinkComponent", "onClick", "onPlay", "onPause", "onEnded", "onControlsShow", "onControlsHide", "onVolumeChange", "onMute", "disableArrowKeySeek", "alt"]);
     return (0, r.jsx)(o.ZP, _(d({
-      alt: j,
+      alt: M,
       className: i,
       src: f
     }, U), {
@@ -140,16 +140,16 @@ class m extends i.Component {
           renderLinkComponent: N,
           renderOverlayContent: A,
           onClick: C,
-          onPlay: R,
-          onPause: P,
-          onEnded: w,
+          onPlay: w,
+          onPause: R,
+          onEnded: P,
           onVolumeChange: x,
-          onMute: M,
+          onMute: k,
           onControlsShow: D,
           onControlsHide: L,
           mimeType: S,
           downloadable: b,
-          disableArrowKeySeek: k
+          disableArrowKeySeek: j
         })
       }
     }))

@@ -1,5 +1,5 @@
-/** Chunk was on 79010 **/
-n.exports = {
+/** Chunk was on 82107 **/
+e.exports = {
   grid: "grid__28d93",
   speakerContainer: "speakerContainer__28d93",
   avatar: "avatar__28d93",

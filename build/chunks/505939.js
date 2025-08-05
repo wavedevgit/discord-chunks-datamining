@@ -1,4 +1,4 @@
-/** Chunk was on 17218 **/
+/** Chunk was on 37082 **/
 e.exports = {
   questProgressWrapper: "questProgressWrapper__1d950",
   questProgressRewardTile: "questProgressRewardTile__1d950",

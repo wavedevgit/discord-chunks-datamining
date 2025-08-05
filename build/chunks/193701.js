@@ -1,11 +1,12 @@
-/** Chunk was on 60173 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
-  Z: () => l
+  Z: () => a
 });
 var r = n(442837),
   i = n(375954);
 
-function l(e) {
+function a(e) {
   let t = (0, r.e7)([i.Z], () => i.Z.getLastMessage(e));
   return null == t ? void 0 : t.changelogId
 }

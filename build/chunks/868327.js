@@ -1,4 +1,5 @@
-/** Chunk was on 94313 **/
+/** Chunk was on web.js **/
+"use strict";
 e.exports = {
   notFoundPlaceholder: "notFoundPlaceholder_a3c1e1",
   fadeIn: "fadeIn_a3c1e1",

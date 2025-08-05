@@ -1,4 +1,4 @@
-/** Chunk was on 17218 **/
+/** Chunk was on 37082 **/
 n.d(t, {
   Z: () => X
 }), n(388685), n(953529), n(314940);
@@ -22,7 +22,7 @@ var r = n(255367),
   _ = n(569984),
   v = n(497505),
   C = n(184299),
-  y = n(192023),
+  y = n(381176),
   O = n(373370),
   E = n(475595),
   S = n(720293),
@@ -42,7 +42,7 @@ var r = n(255367),
   L = n(388032),
   M = n(921183);
 
-function W(e) {
+function Z(e) {
   var t, n;
   let {
     quest: o,
@@ -97,7 +97,7 @@ function W(e) {
   })
 }
 
-function Z(e) {
+function W(e) {
   let {
     quest: t
   } = e;
@@ -150,7 +150,7 @@ function H(e) {
         ref: d,
         children: [(0, r.jsxs)("div", {
           className: M.details,
-          children: [(0, r.jsx)(Z, {
+          children: [(0, r.jsx)(W, {
             quest: t
           }), (0, r.jsx)(m.X6q, {
             className: M.title,
@@ -268,7 +268,7 @@ function F(e) {
     onCtxMenuOpen: g,
     onCtxMenuClose: b,
     onCtxMenuSelect: _
-  } = e, C = (null == (t = n.userStatus) ? void 0 : t.completedAt) != null, y = o.percentComplete > 0, O = (0, j.z)(n), [E, S, w] = (0, j.me)(n, o), P = s.useRef(null), Z = (0, j.B6)(n.config.expiresAt), U = (0, j._s)({
+  } = e, C = (null == (t = n.userStatus) ? void 0 : t.completedAt) != null, y = o.percentComplete > 0, O = (0, j.z)(n), [E, S, w] = (0, j.me)(n, o), P = s.useRef(null), W = (0, j.B6)(n.config.expiresAt), U = (0, j._s)({
     quest: n
   }), H = (0, h.q8)(n), z = (0, j.Jf)(n), F = s.useCallback(() => {
     (0, T.openVideoQuestModal)({
@@ -297,7 +297,7 @@ function F(e) {
           variant: "text-xxs/medium",
           className: a()(M.flex, M.headerText),
           children: L.intl.format(L.t["pX+fmp"], {
-            expirationDate: Z
+            expirationDate: W
           })
         }), (0, r.jsx)(A.r, {
           onOpen: g,
@@ -373,7 +373,7 @@ function F(e) {
           taskDetails: o
         })).exhaustive()
       }), (0, r.jsxs)(N.n, {
-        children: [H && (0, r.jsx)(W, {
+        children: [H && (0, r.jsx)(Z, {
           isExpanded: d,
           quest: n,
           onClick: F,

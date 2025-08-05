@@ -1,4 +1,4 @@
-/** Chunk was on 76010 **/
+/** Chunk was on 82107 **/
 e.exports = {
   content: "content_f70348",
   channelName: "channelName_f70348",

@@ -1,5 +1,8 @@
-/** Chunk was on 35755 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
-  b: () => i
+  b: () => r
 });
-var l, i = ((l = {})[l.APPENDS_REMAINING_ACTIVITIES = 1] = "APPENDS_REMAINING_ACTIVITIES", l[l.DEFAULT = 0] = "DEFAULT", l)
+var r = function(e) {
+  return e[e.APPENDS_REMAINING_ACTIVITIES = 1] = "APPENDS_REMAINING_ACTIVITIES", e[e.DEFAULT = 0] = "DEFAULT", e
+}({})

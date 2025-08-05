@@ -127,7 +127,7 @@ let I = e => {
       enableClick: u = !0,
       channelId: g,
       messageId: b
-    } = e, [O, I] = i.useState(String(Date.now())), [T, A] = i.useState(!1), [N, C] = i.useState(!1), R = i.useRef(null), P = function() {
+    } = e, [O, I] = i.useState(String(Date.now())), [T, A] = i.useState(!1), [N, C] = i.useState(!1), w = i.useRef(null), R = function() {
       let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
       return (0, r.jsx)(c.Z, v(y({}, e), {
         emojiName: t.name,
@@ -138,7 +138,7 @@ let I = e => {
         channelId: g,
         messageId: b
       }))
-    }, w = (0, s.Z)(), D = e => (0, r.jsx)(l.ua7, v(y({
+    }, P = (0, s.Z)(), D = e => (0, r.jsx)(l.ua7, v(y({
       text: (0, p.Y)(t.name, u),
       "aria-label": t.name
     }, p.b_), {
@@ -148,11 +148,11 @@ let I = e => {
         A(!0), u && (S({
           emojiNode: t,
           isCustomEmoji: !0,
-          nonce: w
+          nonce: P
         }), (0, d.x)(m.qR.CustomEmojiTooltipShown))
       },
       children: n => (0, r.jsx)(l.P3F, v(y({}, e), {
-        innerRef: R,
+        innerRef: w,
         onMouseEnter: () => {
           var t;
           null == e || null == (t = e.onMouseEnter) || t.call(e)
@@ -163,7 +163,7 @@ let I = e => {
         } : void 0,
         onMouseLeave: () => {
           T && (f.default.track(h.rMx.CLOSE_POPOUT, {
-            nonce: w
+            nonce: P
           }), A(!1))
         },
         tag: "span",
@@ -171,21 +171,21 @@ let I = e => {
           [E.emojiContainerClickable]: u,
           [E.emojiJumbo]: t.jumboable
         }),
-        children: P(n)
+        children: R(n)
       }))
     }));
     if (!u) return D();
     let L = e => (0, r.jsx)(_.vk, v(y({}, e), {
       node: t,
       refreshPositionKey: () => I(String(Date.now())),
-      nonce: w
+      nonce: P
     }));
     return (0, r.jsx)(l.yRy, {
       animation: l.yRy.Animation.FADE,
       align: "center",
       onRequestClose: () => {
         f.default.track(h.rMx.CLOSE_POPOUT, {
-          nonce: w
+          nonce: P
         }), A(!1), C(!1)
       },
       autoInvert: !0,
@@ -193,7 +193,7 @@ let I = e => {
       position: "right",
       renderPopout: L,
       positionKey: O,
-      targetElementRef: R,
+      targetElementRef: w,
       children: D
     })
   },

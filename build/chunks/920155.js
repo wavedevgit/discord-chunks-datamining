@@ -93,7 +93,7 @@ function O(e) {
       caretPosition: (null == I ? void 0 : I.position) != null ? I.position : N(p),
       onExitComplete: A
     }),
-    R = e => C((i, a) => {
+    w = e => C((i, a) => {
       if (!a) return null;
       let c = (0, r.jsx)(l.V, g(h({}, e), {
         className: o()(null != v ? _.popoverContentWithGradient : _.popover, {
@@ -125,7 +125,7 @@ function O(e) {
     fixed: !1,
     autoInvert: !0,
     nudgeAlignIntoViewport: !0,
-    renderPopout: R,
+    renderPopout: w,
     children: y
   })
 }

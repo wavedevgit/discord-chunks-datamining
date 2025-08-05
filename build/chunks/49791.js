@@ -1,4 +1,5 @@
-/** Chunk was on 94313 **/
+/** Chunk was on web.js **/
+"use strict";
 e.exports = {
   popout: "popout_d5c2c4",
   staffBadge: "staffBadge_d5c2c4",

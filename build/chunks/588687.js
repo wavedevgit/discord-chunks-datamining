@@ -1,4 +1,4 @@
-/** Chunk was on 56535 **/
+/** Chunk was on 43404 **/
 e.exports = {
   guildSelector: "guildSelector_f494f4",
   iconTextWrap: "iconTextWrap_f494f4",

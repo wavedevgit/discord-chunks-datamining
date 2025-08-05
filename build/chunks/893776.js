@@ -2,7 +2,7 @@
 "use strict";
 let r;
 n.d(t, {
-  Z: () => w,
+  Z: () => P,
   c: () => C
 }), n(415506), n(358797), n(457542);
 var i = n(990547),
@@ -68,7 +68,7 @@ var C = function(e) {
   return e.MFA = "MFA", e.SUCCESS = "SUCCESS", e
 }({});
 
-function R(e) {
+function w(e) {
   let t = v({
     type: "LOGOUT"
   }, e);
@@ -78,9 +78,9 @@ function R(e) {
   })
 }
 
-function P(e) {
+function R(e) {
   let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : b.Z5c.DEFAULT_LOGGED_OUT;
-  if (R(), null == t) return;
+  if (w(), null == t) return;
   let n = (0, f.D)();
   if (null == n) return void(0, _.uL)(t, {
     source: e
@@ -92,7 +92,7 @@ function P(e) {
     }]
   })
 }
-let w = {
+let P = {
   startSession(e) {
     l.Z.wait(() => {
       l.Z.dispatch({
@@ -336,7 +336,7 @@ let w = {
     })
   },
   logoutInternal(e) {
-    R(e)
+    w(e)
   },
   logout(e) {
     var t;
@@ -364,7 +364,7 @@ let w = {
     }), {
       rejectWithError: !1
     })).finally(() => {
-      (null == r || r === h.default.getId()) && P(e, n)
+      (null == r || r === h.default.getId()) && R(e, n)
     })
   },
   switchAccountToken(e) {
@@ -373,7 +373,7 @@ let w = {
     return S.log("Switching accounts", {
       wasLoggedIn: null != n,
       tokenHasChanged: e !== n
-    }), R({
+    }), w({
       isSwitchingAccount: !0,
       goHomeAfterSwitching: t
     }), this.loginToken(e, !0).then(() => {
@@ -389,7 +389,7 @@ let w = {
       url: b.ANM.ME,
       oldFormErrors: !0,
       rejectWithError: !0
-    }).catch(() => P(e, t))
+    }).catch(() => R(e, t))
   },
   async verify(e) {
     let t = await g.Z.post({

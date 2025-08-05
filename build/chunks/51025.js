@@ -4,8 +4,8 @@ n.d(t, {
   A1: () => N,
   LO: () => y,
   S1: () => E,
-  Wx: () => P,
-  XT: () => w,
+  Wx: () => R,
+  XT: () => P,
   al: () => C,
   cG: () => O,
   li: () => I,
@@ -13,7 +13,7 @@ n.d(t, {
   pC: () => T,
   v4: () => S,
   wO: () => A,
-  wi: () => R
+  wi: () => w
 }), n(415506);
 var r = n(544891),
   i = n(570140),
@@ -164,7 +164,7 @@ function C(e, t) {
   })
 }
 
-function R(e, t) {
+function w(e, t) {
   i.Z.dispatch({
     type: "DISPATCH_APPLICATION_REMOVE_FINISHED",
     applicationId: e,
@@ -172,12 +172,12 @@ function R(e, t) {
   })
 }
 
-function P(e, t) {
+function R(e, t) {
   let n = a.Z.getApplication(e);
   null != n && f.Z.createShortcuts(l.Xc.getSetting(), l.Pe.getSetting(), n.name, n.id, t.installPath)
 }
 
-function w(e, t) {
+function P(e, t) {
   let i = a.Z.getApplication(e);
   r.tn.post({
     url: h.ANM.LIBRARY_APPLICATION_INSTALLED(e, e),

@@ -1,4 +1,5 @@
-/** Chunk was on 66005 **/
+/** Chunk was on web.js **/
+"use strict";
 e.exports = {
   text: "text_c8b06d",
   textLeft: "textLeft_c8b06d text_c8b06d",

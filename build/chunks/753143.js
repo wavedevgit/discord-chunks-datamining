@@ -95,11 +95,11 @@ function f(e) {
       break
     }
   }
-  let R = (0, r.useMemo)(() => {
+  let w = (0, r.useMemo)(() => {
       let e = Math.max(0, I * p);
       return null != f && e < f
     }, [p, I, f]),
-    P = (0, r.useMemo)(() => v > 0 ? y.current : (O.mergeProps({
+    R = (0, r.useMemo)(() => v > 0 ? y.current : (O.mergeProps({
       sectionHeight: n,
       rowHeight: s,
       footerHeight: c,
@@ -109,11 +109,11 @@ function f(e) {
       sections: t,
       getAnchorId: E
     }), O.compute(Math.max(0, I * p), T * p)), [v, I, T, n, s, c, _, m, h, t, O, p, E]);
-  return (0, r.useLayoutEffect)(() => void(y.current = P)), u(l({}, P), {
+  return (0, r.useLayoutEffect)(() => void(y.current = R)), u(l({}, R), {
     listComputer: O,
     forceUpdateOnChunkChange: S,
     anchor: N,
-    isSidebarVisible: R
+    isSidebarVisible: w
   })
 }
 

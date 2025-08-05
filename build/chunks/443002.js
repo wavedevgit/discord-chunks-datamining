@@ -30,39 +30,39 @@ let T = function(e) {
     guild: n,
     onClose: T
   } = e, [S, A] = i.useState(!0), N = i.useRef(!1), C = (0, l.Z)(() => Date.now()), {
-    analyticsLocations: R
-  } = (0, c.ZP)(), P = i.useRef(null), w = i.useRef(null), D = i.useRef(null), L = i.useCallback(() => {
-    null != D.current && null != w.current && w.current.scrollTo({
+    analyticsLocations: w
+  } = (0, c.ZP)(), R = i.useRef(null), P = i.useRef(null), D = i.useRef(null), L = i.useCallback(() => {
+    null != D.current && null != P.current && P.current.scrollTo({
       to: D.current.offsetTop,
       animate: !0
     })
   }, []), x = i.useCallback(() => {
     null == T || T(), f.default.track(O.rMx.MODAL_DISMISSED, {
       type: O.ZY5.PREMIUM_GUILD_USER_MODAL,
-      location_stack: R,
+      location_stack: w,
       location_section: t.section,
       location_object: t.object,
       guild_id: n.id,
       duration_open_ms: Date.now() - C
     })
-  }, [T, t, R, C, n.id]), M = i.useCallback(e => {
+  }, [T, t, w, C, n.id]), k = i.useCallback(e => {
     e && !N.current && (f.default.track(O.rMx.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
       type: O.ZY5.PREMIUM_GUILD_USER_MODAL,
-      location_stack: R,
+      location_stack: w,
       location_section: t.section,
       location_object: t.object,
       guild_id: n.id
     }), N.current = !0)
-  }, [t, R, n.id]);
+  }, [t, w, n.id]);
   return i.useEffect(() => {
     f.default.track(O.rMx.OPEN_MODAL, {
       type: O.ZY5.PREMIUM_GUILD_USER_MODAL,
-      location_stack: R,
+      location_stack: w,
       location_section: t.section,
       location_object: t.object,
       guild_id: n.id
     })
-  }, [n.id, t, R]), i.useEffect(() => {
+  }, [n.id, t, w]), i.useEffect(() => {
     function e(e) {
       "Escape" === e.key && x()
     }
@@ -79,7 +79,7 @@ let T = function(e) {
         variant: s.Z.Variants.BOLD
       })
     }), (0, r.jsxs)(o.yWw, {
-      ref: w,
+      ref: P,
       className: I.scroller,
       children: [(0, r.jsxs)("div", {
         className: I.header,
@@ -123,10 +123,10 @@ let T = function(e) {
           className: I.lowerBodyBackgroundImage
         })]
       }), (0, r.jsx)(a.$, {
-        innerRef: P,
-        onChange: M,
+        innerRef: R,
+        onChange: k,
         children: (0, r.jsx)("div", {
-          ref: P,
+          ref: R,
           className: I.persistentCtaSpacer
         })
       })]

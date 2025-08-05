@@ -1,4 +1,5 @@
-/** Chunk was on 66005 **/
+/** Chunk was on web.js **/
+"use strict";
 e.exports = {
   "outgoing-call-pulse": "outgoing-call-pulse__07f91",
   list: "list__07f91",

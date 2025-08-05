@@ -1,11 +1,51 @@
-/** Chunk was on 60173 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
-  _: () => o
+  _: () => d
 });
 var r = n(255367),
   i = n(73800),
-  l = n(709014);
-let a = {
+  a = n(709014);
+
+function o(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: !0,
+    configurable: !0,
+    writable: !0
+  }) : e[t] = n, e
+}
+
+function s(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      o(e, t, n[t])
+    })
+  }
+  return e
+}
+
+function l(e, t) {
+  var n = Object.keys(e);
+  if (Object.getOwnPropertySymbols) {
+    var r = Object.getOwnPropertySymbols(e);
+    t && (r = r.filter(function(t) {
+      return Object.getOwnPropertyDescriptor(e, t).enumerable
+    })), n.push.apply(n, r)
+  }
+  return n
+}
+
+function c(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : l(Object(t)).forEach(function(n) {
+    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+  }), e
+}
+let u = {
     click: {
       name: "click",
       start: 0,
@@ -17,7 +57,7 @@ let a = {
       duration: 40
     }
   },
-  o = () => {
+  d = () => {
     let e = i.useRef(null),
       t = i.useCallback(() => {
         null != e.current && e.current.play("click")
@@ -25,47 +65,18 @@ let a = {
       o = i.useCallback(() => {
         null != e.current && e.current.play("hover")
       }, []),
-      s = i.useCallback(() => {
+      l = i.useCallback(() => {
         null != e.current && e.current.stopIfPlaying("hover")
       }, []),
-      c = i.useCallback(t => {
-        var i, o;
-        return (0, r.jsx)(l.L, (i = function(e) {
-          for (var t = 1; t < arguments.length; t++) {
-            var n = null != arguments[t] ? arguments[t] : {},
-              r = Object.keys(n);
-            "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-              return Object.getOwnPropertyDescriptor(n, e).enumerable
-            }))), r.forEach(function(t) {
-              var r;
-              r = n[t], t in e ? Object.defineProperty(e, t, {
-                value: r,
-                enumerable: !0,
-                configurable: !0,
-                writable: !0
-              }) : e[t] = r
-            })
-          }
-          return e
-        }({}, t), o = o = {
-          src: () => n.e("76994").then(n.t.bind(n, 146891, 19)),
-          ref: e,
-          markers: a
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
-          var n = Object.keys(e);
-          if (Object.getOwnPropertySymbols) {
-            var r = Object.getOwnPropertySymbols(e);
-            n.push.apply(n, r)
-          }
-          return n
-        })(Object(o)).forEach(function(e) {
-          Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(o, e))
-        }), i))
-      }, []);
+      d = i.useCallback(t => (0, r.jsx)(a.L, c(s({}, t), {
+        src: () => n.e("76994").then(n.t.bind(n, 146891, 19)),
+        ref: e,
+        markers: u
+      })), []);
     return {
       events: {
         onMouseEnter: o,
-        onMouseLeave: s
+        onMouseLeave: l
       },
       play: t,
       getDuration: i.useCallback(() => {
@@ -76,6 +87,6 @@ let a = {
         var t, n;
         return null != (n = null == (t = e.current) ? void 0 : t.getCurrentFrame()) ? n : null
       }, []),
-      Component: c
+      Component: d
     }
   }

@@ -1,4 +1,5 @@
-/** Chunk was on 60173 **/
+/** Chunk was on web.js **/
+"use strict";
 e.exports = {
   emojiWrapper: "emojiWrapper__21d2d",
   emoji: "emoji__21d2d",

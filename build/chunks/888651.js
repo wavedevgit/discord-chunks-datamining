@@ -1,31 +1,33 @@
-/** Chunk was on 60173 **/
-if (n.d(t, {
-    $: () => h,
-    Q: () => p
-  }), 12633 == n.j) var r = n(617735);
-var i = n(230826),
-  l = n(749210),
-  a = n(430824),
-  o = n(496675),
-  s = n(979651),
+/** Chunk was on web.js **/
+"use strict";
+n.d(t, {
+  $: () => _,
+  Q: () => f
+});
+var r = n(617735),
+  i = n(230826),
+  a = n(749210),
+  o = n(430824),
+  s = n(496675),
+  l = n(979651),
   c = n(938475),
   u = n(981631);
 let d = "DRAGGABLE_USER";
 
-function p(e) {
+function f(e) {
   return (0, r.G)(d, {
     canDrop(e) {
       var t, n;
       let {
         channel: r
-      } = e, i = r.getGuildId(), l = null != (n = null == (t = a.Z.getGuild(i)) ? void 0 : t.maxVideoChannelUsers) ? n : -1, d = c.ZP.countVoiceStatesForChannel(r.id), p = null != i && s.Z.hasVideo(r.id) && l > 0 && d >= l + 1;
-      return o.Z.can(u.Plq.MOVE_MEMBERS, r) && o.Z.can(u.Plq.CONNECT, r) && !p
+      } = e, i = r.getGuildId(), a = null != (n = null == (t = o.Z.getGuild(i)) ? void 0 : t.maxVideoChannelUsers) ? n : -1, d = c.ZP.countVoiceStatesForChannel(r.id), f = null != i && l.Z.hasVideo(r.id) && a > 0 && d >= a + 1;
+      return s.Z.can(u.Plq.MOVE_MEMBERS, r) && s.Z.can(u.Plq.CONNECT, r) && !f
     },
     drop(e, t) {
       let {
         channel: n
-      } = e, r = s.Z.getVoiceStateForUser(t.getItem().user.id);
-      (null == r ? void 0 : r.channelId) !== n.id && l.Z.setChannel(n.getGuildId(), t.getItem().user.id, n.id)
+      } = e, r = l.Z.getVoiceStateForUser(t.getItem().user.id);
+      (null == r ? void 0 : r.channelId) !== n.id && a.Z.setChannel(n.getGuildId(), t.getItem().user.id, n.id)
     }
   }, (e, t) => ({
     connectUserDropTarget: e.dropTarget(),
@@ -33,7 +35,7 @@ function p(e) {
   }))(e)
 }
 
-function h(e) {
+function _(e) {
   return (0, i.E)(d, {
     canDrag(e) {
       let {

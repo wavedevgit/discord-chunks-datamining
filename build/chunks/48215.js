@@ -1,4 +1,5 @@
-/** Chunk was on 94313 **/
+/** Chunk was on web.js **/
+"use strict";
 e.exports = {
   thankYouCard: "thankYouCard_b851f5",
   thankYouText: "thankYouText_b851f5",

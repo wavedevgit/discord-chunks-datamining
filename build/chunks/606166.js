@@ -1,11 +1,11 @@
-/** Chunk was on 8381 **/
+/** Chunk was on web.js **/
 "use strict";
 
-function e(t) {
-  return t.replace(/\//g, "-")
+function t(e) {
+  return e.replace(/\//g, "-")
 }
-t.exports = function(t) {
-  return "object" == typeof t ? Object.keys(t).filter(function(e) {
-    return t[e]
-  }).map(e).join(" ") : Array.prototype.map.call(arguments, e).join(" ")
+e.exports = function(e) {
+  return "object" == typeof e ? Object.keys(e).filter(function(t) {
+    return e[t]
+  }).map(t).join(" ") : Array.prototype.map.call(arguments, t).join(" ")
 }

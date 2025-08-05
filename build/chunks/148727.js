@@ -1,28 +1,28 @@
-/** Chunk was on 8381 **/
+/** Chunk was on web.js **/
 "use strict";
-var n = r(250010),
-  i = r(999296);
-t.exports = function(t, e) {
-  var r = e.getStartKey(),
-    o = e.getStartOffset(),
-    a = e.getEndKey(),
-    u = e.getEndOffset(),
-    s = i(t, e).getBlockMap(),
-    c = s.keySeq(),
-    l = c.indexOf(r),
-    f = c.indexOf(a) + 1;
-  return n(s.slice(l, f).map(function(t, e) {
-    var n = t.getText(),
-      i = t.getCharacterList();
-    return r === a ? t.merge({
-      text: n.slice(o, u),
-      characterList: i.slice(o, u)
-    }) : e === r ? t.merge({
-      text: n.slice(o),
-      characterList: i.slice(o)
-    }) : e === a ? t.merge({
-      text: n.slice(0, u),
-      characterList: i.slice(0, u)
-    }) : t
+var r = n(250010),
+  i = n(999296);
+e.exports = function(e, t) {
+  var n = t.getStartKey(),
+    a = t.getStartOffset(),
+    o = t.getEndKey(),
+    s = t.getEndOffset(),
+    l = i(e, t).getBlockMap(),
+    c = l.keySeq(),
+    u = c.indexOf(n),
+    d = c.indexOf(o) + 1;
+  return r(l.slice(u, d).map(function(e, t) {
+    var r = e.getText(),
+      i = e.getCharacterList();
+    return n === o ? e.merge({
+      text: r.slice(a, s),
+      characterList: i.slice(a, s)
+    }) : t === n ? e.merge({
+      text: r.slice(a),
+      characterList: i.slice(a)
+    }) : t === o ? e.merge({
+      text: r.slice(0, s),
+      characterList: i.slice(0, s)
+    }) : e
   }))
 }

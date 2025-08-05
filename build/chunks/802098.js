@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => P
+  Z: () => R
 }), n(388685);
 var r, i = n(442837),
   a = n(433517),
@@ -94,7 +94,7 @@ function N(e) {
 function C() {
   E = l.l4.getSetting()
 }
-class R extends(r = i.ZP.Store) {
+class w extends(r = i.ZP.Store) {
   initialize() {
     this.waitFor(s.default, c.Z), this.syncWith([s.default], () => !0), this.syncWith([c.Z], C);
     let e = a.K.get(g);
@@ -142,8 +142,8 @@ class R extends(r = i.ZP.Store) {
     return y.size > 0
   }
 }
-d(R, "displayName", "ChangelogStore");
-let P = new R(o.Z, {
+d(w, "displayName", "ChangelogStore");
+let R = new w(o.Z, {
   CHANGE_LOG_LOCK: O,
   CHANGE_LOG_UNLOCK: v,
   CHANGE_LOG_SET_CONFIG: I,

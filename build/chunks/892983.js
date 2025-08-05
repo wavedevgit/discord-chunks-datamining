@@ -1,4 +1,5 @@
-/** Chunk was on 60173 **/
+/** Chunk was on web.js **/
+"use strict";
 e.exports = {
   thumbnailStack: "thumbnailStack__15798",
   "height-1": "height-1__15798",

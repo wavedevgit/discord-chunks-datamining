@@ -1,60 +1,60 @@
-/** Chunk was on 70657 **/
+/** Chunk was on 61494 **/
 t.d(n, {
-  Z: () => u
+  Z: () => d
 }), t(539854);
-var i = t(255367),
-  l = t(73800),
+var l = t(255367),
+  i = t(73800),
   r = t(120356),
-  a = t.n(r),
-  d = t(481060),
-  o = t(765305),
-  s = t(388032),
-  c = t(645331);
+  o = t.n(r),
+  c = t(481060),
+  s = t(765305),
+  a = t(388032),
+  u = t(645331);
 
-function u(e) {
+function d(e) {
   let {
     onClose: n,
     selectedTab: t,
     onTabSelected: r,
-    userCount: u,
+    userCount: d,
     hasBanner: _,
-    isHub: g = !1
-  } = e, p = l.useRef(null);
-  l.useEffect(() => {
+    isHub: f = !1
+  } = e, h = i.useRef(null);
+  i.useEffect(() => {
     var e, n, t;
-    return null == (t = p.current) || null == (n = t.ref) || null == (e = n.blur) ? void 0 : e.call(n)
+    return null == (t = h.current) || null == (n = t.ref) || null == (e = n.blur) ? void 0 : e.call(n)
   }, []);
-  let m = s.intl.formatToPlainString(s.t["ZrTT/P"], {
-      userCount: u
+  let g = a.intl.formatToPlainString(a.t["ZrTT/P"], {
+      userCount: d
     }),
-    f = [(0, i.jsx)(d.njP.Item, {
-      className: c.tabBarItem,
-      id: o.fL.EVENT_INFO,
-      children: s.intl.string(s.t.iW6Xur)
+    m = [(0, l.jsx)(c.njP.Item, {
+      className: u.tabBarItem,
+      id: s.fL.EVENT_INFO,
+      children: a.intl.string(a.t.iW6Xur)
     }, "event-details")];
-  return g || f.push((0, i.jsx)(d.njP.Item, {
-    className: c.tabBarItem,
-    id: o.fL.RSVP_LIST,
-    children: m
-  }, "is-hub")), (0, i.jsxs)("div", {
-    className: c.container,
-    children: [(0, i.jsx)(d.P3F, {
-      ref: p,
+  return f || m.push((0, l.jsx)(c.njP.Item, {
+    className: u.tabBarItem,
+    id: s.fL.RSVP_LIST,
+    children: g
+  }, "is-hub")), (0, l.jsxs)("div", {
+    className: u.container,
+    children: [(0, l.jsx)(c.P3F, {
+      ref: h,
       onClick: n,
-      className: c.closeButton,
-      "aria-label": s.intl.string(s.t.cpT0Cg),
-      children: (0, i.jsx)(d.Dio, {
+      className: u.closeButton,
+      "aria-label": a.intl.string(a.t.cpT0Cg),
+      children: (0, l.jsx)(c.Dio, {
         size: "md",
         color: "currentColor",
-        className: a()(c.closeIcon, _ && c.closeIconBanner)
+        className: o()(u.closeIcon, _ && u.closeIconBanner)
       })
-    }), (0, i.jsx)(d.njP, {
-      className: c.tabBar,
-      "aria-label": s.intl.string(s.t["+1H47u"]),
+    }), (0, l.jsx)(c.njP, {
+      className: u.tabBar,
+      "aria-label": a.intl.string(a.t["+1H47u"]),
       selectedItem: t,
       type: "top",
       onItemSelect: r,
-      children: f
+      children: m
     })]
   })
 }

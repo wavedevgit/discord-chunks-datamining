@@ -1,4 +1,5 @@
-/** Chunk was on 60173 **/
+/** Chunk was on web.js **/
+"use strict";
 e.exports = {
   slowModeIcon: "slowModeIcon_b21699",
   cooldownWrapper: "cooldownWrapper_b21699",

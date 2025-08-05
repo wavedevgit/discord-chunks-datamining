@@ -1,4 +1,5 @@
-/** Chunk was on 85438 **/
+/** Chunk was on web.js **/
+"use strict";
 e.exports = {
   upsellOuter: "upsellOuter__50e68",
   upsellInner: "upsellInner__50e68",

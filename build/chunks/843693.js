@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  ZP: () => k,
+  ZP: () => j,
   wU: () => D
 }), n(388685);
 var r, i = n(442837),
@@ -137,19 +137,19 @@ function C(e) {
         null == (t = e.decayInterval) || t.stop(), e.value <= 0 && (C(E(m({}, e), {
           value: 0,
           multiplier: 1
-        })), M.emitChange())
+        })), k.emitChange())
       } else C(E(m({}, e), {
         value: e.value - 1
-      })), M.emitChange()
+      })), k.emitChange()
     }
   }))
 }
 
-function R(e) {
+function w(e) {
   A.set(e.messageId, e)
 }
 
-function P(e) {
+function R(e) {
   var {
     type: t
   } = e, n = b(e, ["type"]);
@@ -157,12 +157,12 @@ function P(e) {
   C(n)
 }
 
-function w(e) {
+function P(e) {
   let {
     comboMessage: t
   } = e;
   if (!d.Z.isEnabled()) return !1;
-  R(t)
+  w(t)
 }
 
 function D(e, t, n, r) {
@@ -231,9 +231,9 @@ class x extends(r = i.ZP.Store) {
   }
 }
 h(x, "displayName", "PoggermodeStore");
-let M = new x(s.Z, {
-    POGGERMODE_UPDATE_COMBO: P,
-    POGGERMODE_UPDATE_MESSAGE_COMBO: w,
+let k = new x(s.Z, {
+    POGGERMODE_UPDATE_COMBO: R,
+    POGGERMODE_UPDATE_MESSAGE_COMBO: P,
     MESSAGE_CREATE: L
   }),
-  k = M
+  j = k

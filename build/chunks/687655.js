@@ -1,8 +1,8 @@
-/** Chunk was on 8381 **/
+/** Chunk was on web.js **/
 "use strict";
-var n = r(73800),
-  i = r(606166);
-t.exports = (0, r(65183).Map)({
+var r = n(73800),
+  i = n(606166);
+e.exports = (0, n(65183).Map)({
   "header-one": {
     element: "h1"
   },
@@ -29,13 +29,13 @@ t.exports = (0, r(65183).Map)({
   },
   "unordered-list-item": {
     element: "li",
-    wrapper: n.createElement("ul", {
+    wrapper: r.createElement("ul", {
       className: i("public/DraftStyleDefault/ul")
     })
   },
   "ordered-list-item": {
     element: "li",
-    wrapper: n.createElement("ol", {
+    wrapper: r.createElement("ol", {
       className: i("public/DraftStyleDefault/ol")
     })
   },
@@ -47,7 +47,7 @@ t.exports = (0, r(65183).Map)({
   },
   "code-block": {
     element: "pre",
-    wrapper: n.createElement("pre", {
+    wrapper: r.createElement("pre", {
       className: i("public/DraftStyleDefault/pre")
     })
   },

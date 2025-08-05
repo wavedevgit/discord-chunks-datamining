@@ -73,10 +73,10 @@ let I = e => {
         upgradeToPremiumType: A,
         headerTheme: N = b.nL.DEFAULT,
         className: C,
-        showTrialBadge: R = !1,
-        showDiscountBadge: P = !1
+        showTrialBadge: w = !1,
+        showDiscountBadge: R = !1
       } = e,
-      w = A === b.p9.TIER_2;
+      P = A === b.p9.TIER_2;
     n = A === b.p9.TIER_0 ? d.Z : A === b.p9.TIER_1 ? f.Z : u.Z;
     let D = (0, o.e7)([l.Z], () => l.Z.useReducedMotion),
       L = (0, m.Ng)(),
@@ -84,13 +84,13 @@ let I = e => {
     return (0, r.jsxs)("div", {
       "aria-hidden": !0,
       className: a()({
-        [O.headerBackground]: !w,
-        [O.tier2HeaderBackground]: w
+        [O.headerBackground]: !P,
+        [O.tier2HeaderBackground]: P
       }, C),
       children: [D || N !== b.nL.WINTER ? null : (0, r.jsx)(E.Z, {
         className: O.snow,
         wind: 5
-      }), (R || P) && (0, r.jsx)(_.Z, {
+      }), (w || R) && (0, r.jsx)(_.Z, {
         className: O.trialBadgeSparkles
       }), y(), (0, r.jsxs)(c.Z, {
         align: c.Z.Align.START,
@@ -99,11 +99,11 @@ let I = e => {
         children: [(0, r.jsxs)("div", {
           children: [(0, r.jsx)(n, {
             className: a()(O.headerIcon, {
-              [O.nonTier2]: !w
+              [O.nonTier2]: !P
             })
-          }), (R || P) && (0, r.jsx)(I, {
+          }), (w || R) && (0, r.jsx)(I, {
             isTier0: A === b.p9.TIER_0,
-            discountAmount: P ? x : void 0
+            discountAmount: R ? x : void 0
           })]
         }), !i && (0, r.jsx)(s.olH, {
           hideOnFullscreen: p,

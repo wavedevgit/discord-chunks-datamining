@@ -1,42 +1,43 @@
-/** Chunk was on 60173 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
-  Z: () => p
+  Z: () => f
 }), n(539854);
 var r = n(255367),
   i = n(73800),
-  l = n(442837),
-  a = n(704215),
-  o = n(266454),
-  s = n(243778),
+  a = n(442837),
+  o = n(704215),
+  s = n(266454),
+  l = n(243778),
   c = n(375954),
   u = n(890977),
   d = n(921944);
 
-function p(e) {
+function f(e) {
   let {
     children: t,
     animationContainerClassName: n,
-    glowClassName: p,
-    trinketsClassName: h
-  } = e, f = (0, l.e7)([c.Z], () => c.Z.hasCurrentUserSentMessageSinceAppStart()), m = i.useMemo(() => {
+    glowClassName: f,
+    trinketsClassName: _
+  } = e, p = (0, a.e7)([c.Z], () => c.Z.hasCurrentUserSentMessageSinceAppStart()), h = i.useMemo(() => {
     let e = [];
-    return f && e.push(a.z.DESKTOP_APP_LAUNCHER_ONBOARDING), e
-  }, [f]), g = () => {
-    setTimeout(() => (0, o.Q3)(a.z.DESKTOP_APP_LAUNCHER_ONBOARDING, {
+    return p && e.push(o.z.DESKTOP_APP_LAUNCHER_ONBOARDING), e
+  }, [p]), m = () => {
+    setTimeout(() => (0, s.Q3)(o.z.DESKTOP_APP_LAUNCHER_ONBOARDING, {
       dismissAction: d.L.AUTO_DISMISS
     }), 1e4)
   };
-  return (0, r.jsx)(s.ZP, {
-    contentTypes: m,
+  return (0, r.jsx)(l.ZP, {
+    contentTypes: h,
     children: e => {
       let {
         visibleContent: i
       } = e;
-      return i === a.z.DESKTOP_APP_LAUNCHER_ONBOARDING ? (0, r.jsx)(u.b, {
+      return i === o.z.DESKTOP_APP_LAUNCHER_ONBOARDING ? (0, r.jsx)(u.b, {
         animationContainerClassName: n,
-        glowClassName: p,
-        trinketsClassName: h,
-        onMount: g,
+        glowClassName: f,
+        trinketsClassName: _,
+        onMount: m,
         children: t
       }) : t
     }

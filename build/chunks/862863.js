@@ -1,4 +1,5 @@
-/** Chunk was on 66005 **/
+/** Chunk was on web.js **/
+"use strict";
 e.exports = {
   playButtonInner: "playButtonInner__2024e",
   syncButton: "syncButton__2024e",

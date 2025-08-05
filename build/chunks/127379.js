@@ -1,5 +1,8 @@
-/** Chunk was on 60173 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
-  D: () => i
+  D: () => r
 });
-var r, i = ((r = {}).ACTIVITY = "ACTIVITY", r.SOUNDBOARD = "SOUNDBOARD", r.EMOJI = "EMOJI", r)
+var r = function(e) {
+  return e.ACTIVITY = "ACTIVITY", e.SOUNDBOARD = "SOUNDBOARD", e.EMOJI = "EMOJI", e
+}({})

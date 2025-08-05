@@ -1,4 +1,5 @@
-/** Chunk was on 91396 **/
+/** Chunk was on web.js **/
+"use strict";
 e.exports = {
   sortDropdown: "sortDropdown__27f60",
   sortDropdownInner: "sortDropdownInner__27f60",

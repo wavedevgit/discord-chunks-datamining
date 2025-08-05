@@ -1,4 +1,4 @@
-/** Chunk was on 31564 **/
+/** Chunk was on 15968 **/
 e.exports = {
   list: "list__38262"
 }

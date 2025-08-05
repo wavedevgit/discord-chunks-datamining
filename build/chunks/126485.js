@@ -1,4 +1,5 @@
-/** Chunk was on 66005 **/
+/** Chunk was on web.js **/
+"use strict";
 e.exports = {
   buttonsWrapper: "buttonsWrapper__65bb6",
   horizontal: "horizontal__65bb6",

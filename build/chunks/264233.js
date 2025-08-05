@@ -1,4 +1,4 @@
-/** Chunk was on 70663 **/
+/** Chunk was on 92357 **/
 n.d(t, {
   Z: () => b
 }), n(388685);
@@ -6,8 +6,8 @@ var r = n(255367),
   i = n(73800),
   l = n(392711),
   o = n.n(l),
-  a = n(442837),
-  s = n(524437),
+  s = n(442837),
+  a = n(524437),
   c = n(481060),
   u = n(317632),
   d = n(174767),
@@ -22,16 +22,16 @@ function b(e) {
     setTab: t,
     badgeState: l,
     closePopout: b
-  } = e, O = (0, a.Wu)([u.Z], () => u.Z.getInvites()), y = (0, a.e7)([u.Z], () => u.Z.getInviteStatuses()), [C, v] = i.useMemo(() => o().partition(O, e => {
+  } = e, _ = (0, s.Wu)([u.Z], () => u.Z.getInvites()), y = (0, s.e7)([u.Z], () => u.Z.getInviteStatuses()), [C, v] = i.useMemo(() => o().partition(_, e => {
     var t;
     return (null == (t = y[e.invite_id]) ? void 0 : t.joinable) !== !1 && (Date.now() - new Date(e.created_at).getTime()) / 1e3 < e.ttl
-  }), [O, y]);
+  }), [_, y]);
   return (i.useEffect(() => {
     (0, d.sJ)()
-  }), 0 === O.length) ? (0, r.jsxs)("div", {
+  }), 0 === _.length) ? (0, r.jsxs)("div", {
     className: m.container,
     children: [(0, r.jsx)(p.Z, {
-      tab: s.X.GAME_INVITES,
+      tab: a.X.GAME_INVITES,
       setTab: t,
       badgeState: l,
       closePopout: b
@@ -46,7 +46,7 @@ function b(e) {
   }) : (0, r.jsxs)("div", {
     className: m.container,
     children: [(0, r.jsx)(p.Z, {
-      tab: s.X.GAME_INVITES,
+      tab: a.X.GAME_INVITES,
       setTab: t,
       badgeState: l,
       closePopout: b,
@@ -103,7 +103,7 @@ function b(e) {
       children: (0, r.jsxs)("div", {
         className: m.invitesContainer,
         children: [C.length > 0 && (0, r.jsxs)(r.Fragment, {
-          children: [(0, r.jsx)(_, {
+          children: [(0, r.jsx)(O, {
             title: g.intl.string(g.t.yflAJS)
           }), (0, r.jsx)(r.Fragment, {
             children: C.map(e => (0, r.jsx)(f.Z, {
@@ -112,7 +112,7 @@ function b(e) {
             }, e.invite_id))
           })]
         }), v.length > 0 && (0, r.jsxs)(r.Fragment, {
-          children: [(0, r.jsx)(_, {
+          children: [(0, r.jsx)(O, {
             title: g.intl.string(g.t.f0Ia4e)
           }), (0, r.jsx)(r.Fragment, {
             children: v.map(e => (0, r.jsx)(f.Z, {
@@ -126,7 +126,7 @@ function b(e) {
   })
 }
 
-function _(e) {
+function O(e) {
   let {
     title: t
   } = e;

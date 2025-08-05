@@ -251,7 +251,7 @@ function C(e) {
     originalMatch: e
   }
 }
-let R = {
+let w = {
     url: {
       parse: e => null == (0, u.yw)(e[1]) ? {
         type: "text",
@@ -294,18 +294,18 @@ let R = {
       }
     }
   },
-  P = /(-# +)/,
-  w = (0, _.Z)([S, R]),
-  D = (0, _.Z)([A, R]),
-  L = l._p(w),
+  R = /(-# +)/,
+  P = (0, _.Z)([S, w]),
+  D = (0, _.Z)([A, w]),
+  L = l._p(P),
   x = l._p(D),
-  M = {
+  k = {
     max: 1 / 0,
     maxAge: +p.Z.Millis.MINUTE,
     updateAgeOnGet: !0
   },
-  k = new(o())(M),
-  j = new(o())(M);
+  j = new(o())(k),
+  M = new(o())(k);
 
 function U(e, t, n) {
   let r = [],
@@ -317,7 +317,7 @@ function U(e, t, n) {
       allowGameMentions: !0
     },
     a = n ? x : L,
-    o = n ? j : k,
+    o = n ? M : j,
     s = o.get(e);
   if (null != s) return s;
   let l = e.replace(/\r\n/g, " \n").replace(/[\r\f]/g, " ").replace(/\t/g, " ") + "\n\n",
@@ -329,7 +329,7 @@ function U(e, t, n) {
       type: "paragraph",
       content: a(l, !0, i)
     };
-  V(r, l, c, 0, []);
+  Z(r, l, c, 0, []);
   let u = B(r);
   return o.set(e, u), u
 }
@@ -376,7 +376,7 @@ function B(e) {
   return t
 }
 
-function V(e, t, n, r, a) {
+function Z(e, t, n, r, a) {
   let {
     content: o,
     type: s,
@@ -388,7 +388,7 @@ function V(e, t, n, r, a) {
     case "paragraph":
     case "text":
     case "emoticon":
-      return Z(e, t, o || "", r, a);
+      return V(e, t, o || "", r, a);
     case "emoji":
     case "customEmoji": {
       let i = t.substring(r);
@@ -488,7 +488,7 @@ function V(e, t, n, r, a) {
         attributes: [s],
         data: n
       });
-      return Z(e, t, l[0], r, a);
+      return V(e, t, l[0], r, a);
     case "em":
     case "autolink":
     case "mailto":
@@ -509,7 +509,7 @@ function V(e, t, n, r, a) {
         before: n,
         after: i
       } = F(t, s, r, l);
-      return r = H(e, t, n, r, "syntaxBefore"), a.push(s), r = Z(e, t, null != o ? o : "", r, a), a.pop(), r = H(e, t, i, r, "syntaxAfter"), W(t, r)
+      return r = H(e, t, n, r, "syntaxBefore"), a.push(s), r = V(e, t, null != o ? o : "", r, a), a.pop(), r = H(e, t, i, r, "syntaxAfter"), W(t, r)
     }
     default:
       throw Error("Slate: Unknown rule type: ".concat(s))
@@ -526,7 +526,7 @@ function F(e, t, n, r) {
     after: "_"
   };
   if ("subtext" === t) return {
-    before: P.exec(r.input)[1],
+    before: R.exec(r.input)[1],
     after: ""
   };
   let i = I["link" === t ? "url" : t];
@@ -534,7 +534,7 @@ function F(e, t, n, r) {
   throw Error("Slate: rule must be an inlineStyle")
 }
 
-function Z(e, t, n, r, i) {
+function V(e, t, n, r, i) {
   return "string" == typeof n ? r = Y({
     result: e,
     sourceText: t,
@@ -543,7 +543,7 @@ function Z(e, t, n, r, i) {
     attributes: i,
     data: null
   }) : (n instanceof Array || (n = [n]), n.forEach(n => {
-    r = V(e, t, n, r, i)
+    r = Z(e, t, n, r, i)
   })), W(t, r)
 }
 

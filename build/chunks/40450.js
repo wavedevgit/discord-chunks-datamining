@@ -1,4 +1,5 @@
-/** Chunk was on 94313 **/
+/** Chunk was on web.js **/
+"use strict";
 e.exports = {
   stageSystemMessage: "stageSystemMessage_e9ab2f",
   iconContainer: "iconContainer_e9ab2f"

@@ -1,12 +1,12 @@
-/** Chunk was on 8381 **/
+/** Chunk was on web.js **/
 "use strict";
-var n = r(222671);
-t.exports = function(t) {
-  var e = n(t);
+var r = n(222671);
+e.exports = function(e) {
+  var t = r(e);
   return {
-    x: e.left,
-    y: e.top,
-    width: e.right - e.left,
-    height: e.bottom - e.top
+    x: t.left,
+    y: t.top,
+    width: t.right - t.left,
+    height: t.bottom - t.top
   }
 }

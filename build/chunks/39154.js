@@ -1,11 +1,12 @@
-/** Chunk was on 28467 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
-  Z: () => a
+  Z: () => i
 }), n(997841);
-var s = n(978003);
+var r = n(978003);
 
-function a(e, t) {
-  return null == (t = null != t ? t : (0, s.Z)(e) ? e.messageSnapshots[0] : void 0) ? e : e.merge({
+function i(e, t) {
+  return null == (t = null != t ? t : (0, r.Z)(e) ? e.messageSnapshots[0] : void 0) ? e : e.merge({
     content: t.message.content,
     attachments: t.message.attachments,
     embeds: t.message.embeds,

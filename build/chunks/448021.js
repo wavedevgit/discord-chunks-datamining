@@ -1,4 +1,4 @@
-/** Chunk was on 94312 **/
+/** Chunk was on 22988 **/
 e.exports = {
   categoryRow: "categoryRow__1ea09",
   uncategorized: "uncategorized__1ea09",

@@ -42,11 +42,11 @@ let p = [{
     label: "[none selected]",
     value: null
   },
-  b = {
+  f = {
     label: "[preview all]",
     value: null
   },
-  f = () => {
+  b = () => {
     (0, l.nfh)(s.g) ? (0, l.Mr3)(s.g) : (0, l.ZDy)(async () => {
       let {
         ShopAssetsPreviewInstructionModal: e
@@ -68,7 +68,7 @@ let p = [{
       onCloseRequest: () => (0, l.Mr3)(s.c)
     })
   },
-  g = () => {
+  j = () => {
     let e = (0, i.lb)(),
       {
         previewProfileEffectId: t,
@@ -102,13 +102,13 @@ let p = [{
       })]
     })
   },
-  j = () => {
+  g = () => {
     let {
       previewAvatarDecorationId: e,
       setPreviewAvatarDecorationId: t
     } = (0, o.N9)(), {
       avatarDecorationAssets: a
-    } = (0, o.xq)(), i = r.useMemo(() => [b, ...a.map(e => ({
+    } = (0, o.xq)(), i = r.useMemo(() => [f, ...a.map(e => ({
       label: e.name,
       value: e.name
     }))], [a]);
@@ -326,11 +326,11 @@ let p = [{
         }), (0, n.jsx)(l.hU, {
           variant: "icon-only",
           size: "sm",
-          onClick: f,
+          onClick: b,
           icon: l.idN,
           "aria-label": "Open preview instructions"
         })]
-      }), (0, n.jsx)(g, {}), (0, n.jsx)(j, {}), (0, n.jsx)(_, {
+      }), (0, n.jsx)(j, {}), (0, n.jsx)(g, {}), (0, n.jsx)(_, {
         clearAssets: s,
         clearIgnoredFiles: u
       }), (0, n.jsx)(y, {

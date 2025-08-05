@@ -1,4 +1,5 @@
-/** Chunk was on 66005 **/
+/** Chunk was on web.js **/
+"use strict";
 e.exports = {
   voiceFilterHero: "voiceFilterHero_cb3698",
   bgGradient: "bgGradient_cb3698",

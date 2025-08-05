@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => R
+  Z: () => w
 }), n(388685);
 var r, i = n(442837),
   a = n(570140),
@@ -138,7 +138,7 @@ s(C, "displayName", "PromotionsStore"), s(C, "persistKey", "PromotionsPersistedS
   } catch (e) {}
   return e
 }]);
-let R = new C(a.Z, {
+let w = new C(a.Z, {
   ACTIVE_OUTBOUND_PROMOTIONS_FETCH_SUCCESS: y,
   ACTIVE_OUTBOUND_PROMOTIONS_FETCH: O,
   ACTIVE_OUTBOUND_PROMOTIONS_FETCH_FAIL: v,

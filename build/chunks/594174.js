@@ -106,31 +106,31 @@ function C(e) {
   let t, n = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1],
     r = y[e.id],
     i = void 0 !== e.id && e.id === h.default.getId();
-  if (null == r) void 0 !== (t = (r = new f.Z(e)).premiumType) && i && (r.premiumType = P((0, d.QI)(r), r.premiumType));
+  if (null == r) void 0 !== (t = (r = new f.Z(e)).premiumType) && i && (r.premiumType = R((0, d.QI)(r), r.premiumType));
   else if (n) {
     var a;
     let n = A(e);
-    void 0 !== (t = null != (a = n.premium_type) ? a : n.premiumType) && i && (0, d.VR)(n) && (n = R(n)), n = S(r, n), r = r.merge(n)
+    void 0 !== (t = null != (a = n.premium_type) ? a : n.premiumType) && i && (0, d.VR)(n) && (n = w(n)), n = S(r, n), r = r.merge(n)
   }(0, d.jX)((0, d.QI)(r), t, r.premiumType);
   let o = y[e.id] !== r;
   return y[e.id] = r, o && O++, o
 }
 
-function R(e) {
+function w(e) {
   var t;
   let n = null != (t = e.premium_type) ? t : e.premiumType,
-    r = P((0, d.VR)(e), n);
+    r = R((0, d.VR)(e), n);
   return void 0 !== e.premiumType ? e.premiumType = r : void 0 !== e.premium_type && (e.premium_type = r), e
 }
 
-function P(e, t) {
+function R(e, t) {
   if (!e) return t;
   let n = u.Z.getPremiumTypeOverride(),
     r = u.Z.getPremiumTypeActual();
   return n === E.F_ ? r : n
 }
 
-function w(e, t) {
+function P(e, t) {
   var n, r, i, a, o, s;
   if (null != e.author && "SENDING" !== e.state && N(e.author) && C(e.author, t), null == (n = e.mentions) || n.forEach(e => {
       N(e) && C(e, t)
@@ -196,12 +196,12 @@ function x(e) {
   return !("incomplete" in e)
 }
 
-function M(e) {
+function k(e) {
   if (null != e.users)
     for (let t of e.users) t.id in y && x(t) || (y[t.id] = new f.Z(t))
 }
 
-function k(e) {
+function j(e) {
   let {
     user: t
   } = e;
@@ -209,7 +209,7 @@ function k(e) {
   C(t)
 }
 
-function j(e) {
+function M(e) {
   let {
     userProfile: t
   } = e;
@@ -235,10 +235,10 @@ function B(e) {
   let {
     messages: t
   } = e;
-  return t.forEach(e => w(e, !0)), !1
+  return t.forEach(e => P(e, !0)), !1
 }
 
-function V(e) {
+function Z(e) {
   let {
     pins: t
   } = e;
@@ -246,7 +246,7 @@ function V(e) {
     let {
       message: t
     } = e;
-    return w(t, !0)
+    return P(t, !0)
   }), !1
 }
 
@@ -254,10 +254,10 @@ function F(e) {
   let {
     mostRecentMessages: t
   } = e;
-  return null == t || t.forEach(e => w(e, !1)), !1
+  return null == t || t.forEach(e => P(e, !1)), !1
 }
 
-function Z(e) {
+function V(e) {
   let {
     data: t
   } = e;
@@ -267,7 +267,7 @@ function Z(e) {
     } = e;
     t.forEach(e => {
       e.forEach(e => {
-        w(e, !0)
+        P(e, !0)
       })
     })
   }), !1
@@ -278,7 +278,7 @@ function H(e) {
     firstMessages: t,
     owners: n
   } = e;
-  null != t && t.forEach(e => w(e, !0)), null != n && n.forEach(e => C(e.user, !0))
+  null != t && t.forEach(e => P(e, !0)), null != n && n.forEach(e => C(e.user, !0))
 }
 
 function Y(e) {
@@ -291,7 +291,7 @@ function Y(e) {
       most_recent_message: n,
       owner: r
     } = e;
-    null != t && w(t, !0), null != n && w(n, !0), null != r && null != r.user && C(r.user, !0)
+    null != t && P(t, !0), null != n && P(n, !0), null != r && null != r.user && C(r.user, !0)
   })
 }
 
@@ -303,7 +303,7 @@ function W(e) {
     let {
       message_preview: t
     } = e;
-    null != t && w(t, !0)
+    null != t && P(t, !0)
   })
 }
 
@@ -340,18 +340,18 @@ function q(e) {
   null != t.other_user && C(t.other_user)
 }
 
-function X(e) {
+function $(e) {
   let {
     message: t
   } = e;
-  if (w(t, !0), null != t.flags && _.yE(t.flags, g.iLy.URGENT)) {
+  if (P(t, !0), null != t.flags && _.yE(t.flags, g.iLy.URGENT)) {
     let e = y[h.default.getId()];
     return null != e && (y[h.default.getId()] = e.set("flags", _.mB(e.flags, g.xW$.HAS_UNREAD_URGENT_MESSAGES, !0)), !0)
   }
   return !1
 }
 
-function Q(e) {
+function X(e) {
   let {
     channel: {
       rawRecipients: t
@@ -360,7 +360,7 @@ function Q(e) {
   return null != t && t.forEach(e => C(e)), !1
 }
 
-function J(e) {
+function Q(e) {
   let {
     channels: t
   } = e;
@@ -370,7 +370,7 @@ function J(e) {
     of t) null != e && e.forEach(e => C(e));
   return !1
 }
-let $ = ["username", "avatar", "global_name", "discriminator", "bot", "primary_guild"];
+let J = ["username", "avatar", "global_name", "discriminator", "bot", "primary_guild"];
 
 function ee(e) {
   let {
@@ -379,7 +379,7 @@ function ee(e) {
   return t.map(e => {
     let t = y[e.user.id];
     if (null == t) return !1;
-    let n = $.reduce((n, i) => {
+    let n = J.reduce((n, i) => {
       if (e.user.hasOwnProperty(i)) {
         let a = t.set((0, r.camelCase)(i), e.user[i]);
         n = n || a !== t, t = a
@@ -617,23 +617,23 @@ function eC(e) {
     messageItems: t
   } = e;
   t.forEach(e => {
-    null != e.message && w(e.message, !0)
+    null != e.message && P(e.message, !0)
   }, !1)
 }
 
-function eR(e) {
+function ew(e) {
   let {
     participants: t
   } = e;
   return t.reduce((e, t) => (0, a.Z)(t) && C(t.member.user) || e, !1)
 }
 
-function eP(e) {
+function eR(e) {
   let {} = e, t = y[h.default.getId()];
   return null != t && (y[h.default.getId()] = t.set("ageVerificationStatus", i.F$.CLIENT_ONLY_PENDING), !0)
 }
 
-function ew(e) {
+function eP(e) {
   let {
     status: t
   } = e, n = y[h.default.getId()];
@@ -700,21 +700,21 @@ class eD extends m.Z {
       CONNECTION_OPEN: D,
       CONNECTION_OPEN_SUPPLEMENTAL: L,
       UPDATE_CLIENT_PREMIUM_TYPE: G,
-      OVERLAY_INITIALIZE: M,
+      OVERLAY_INITIALIZE: k,
       CACHE_LOADED: e => this.handleLoadCache(e),
-      USER_UPDATE: k,
-      USER_PROFILE_FETCH_SUCCESS: j,
+      USER_UPDATE: j,
+      USER_PROFILE_FETCH_SUCCESS: M,
       CURRENT_USER_UPDATE: U,
       PRESENCE_UPDATES: ee,
-      SEARCH_MESSAGES_SUCCESS: Z,
-      MOD_VIEW_SEARCH_MESSAGES_SUCCESS: Z,
+      SEARCH_MESSAGES_SUCCESS: V,
+      MOD_VIEW_SEARCH_MESSAGES_SUCCESS: V,
       LOAD_MESSAGES_SUCCESS: B,
       LOAD_MESSAGES_AROUND_SUCCESS: B,
       LOAD_RECENT_MENTIONS_SUCCESS: B,
-      LOAD_PINNED_MESSAGES_SUCCESS: V,
+      LOAD_PINNED_MESSAGES_SUCCESS: Z,
       THREAD_LIST_SYNC: F,
-      MESSAGE_CREATE: X,
-      MESSAGE_UPDATE: X,
+      MESSAGE_CREATE: $,
+      MESSAGE_UPDATE: $,
       GUILD_SETTINGS_LOADED_BANS: et,
       GUILD_SETTINGS_LOADED_BANS_BATCH: en,
       GUILD_CREATE: ef,
@@ -730,8 +730,8 @@ class eD extends m.Z {
       GUILD_MEMBER_LIST_UPDATE: eo,
       THREAD_MEMBER_LIST_UPDATE: eu,
       THREAD_MEMBERS_UPDATE: ed,
-      CHANNEL_CREATE: Q,
-      CHANNEL_UPDATES: J,
+      CHANNEL_CREATE: X,
+      CHANNEL_UPDATES: Q,
       RELATIONSHIP_ADD: e_,
       GAME_RELATIONSHIP_ADD: ep,
       LOAD_RELATIONSHIPS_SUCCESS: eh,
@@ -757,9 +757,9 @@ class eD extends m.Z {
       FAMILY_CENTER_REQUEST_LINK_SUCCESS: eT,
       MEMBER_SAFETY_GUILD_MEMBER_SEARCH_SUCCESS: eN,
       LOAD_ICYMI_HYDRATED: eC,
-      EMBEDDED_ACTIVITY_UPDATE_V2: eR,
-      INITIATE_AGE_VERIFICATION: eP,
-      CLOSE_AGE_VERIFICATION_MODAL: ew
+      EMBEDDED_ACTIVITY_UPDATE_V2: ew,
+      INITIATE_AGE_VERIFICATION: eR,
+      CLOSE_AGE_VERIFICATION_MODAL: eP
     })
   }
 }

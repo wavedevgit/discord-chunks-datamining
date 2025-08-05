@@ -1,28 +1,29 @@
-/** Chunk was on 30243 **/
-r.d(t, {
-  Z: () => a
+/** Chunk was on web.js **/
+"use strict";
+n.d(t, {
+  Z: () => s
 });
-var n = r(255367);
-r(73800);
-var l = r(739754),
-  i = r(970184),
-  o = r(118925);
+var r = n(255367);
+n(73800);
+var i = n(739754),
+  a = n(970184),
+  o = n(118925);
 
-function a(e) {
+function s(e) {
   let {
     components: t,
-    renderComponents: r
+    renderComponents: n
   } = e, {
-    message: a
-  } = (0, i.CJ)();
-  return null == t || 0 === t.length ? null : (0, n.jsxs)("div", {
+    message: s
+  } = (0, a.CJ)();
+  return null == t || 0 === t.length ? null : (0, r.jsxs)("div", {
     className: o.container,
-    children: [(0, n.jsx)("div", {
+    children: [(0, r.jsx)("div", {
       className: o.children,
-      children: r(t)
-    }), null != a ? (0, n.jsx)(l.ZP, {
+      children: n(t)
+    }), null != s ? (0, r.jsx)(i.ZP, {
       className: o.error,
-      message: a,
+      message: s,
       component: e
     }) : null]
   })

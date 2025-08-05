@@ -1,8 +1,8 @@
-/** Chunk was on 71874 **/
+/** Chunk was on 82107 **/
 t.d(n, {
   ZP: () => h,
   so: () => f,
-  wg: () => p
+  wg: () => b
 }), t(388685);
 var r = t(442837),
   a = t(159300),
@@ -14,9 +14,9 @@ var r = t(442837),
   d = t(700785),
   u = t(924301),
   _ = t(765305),
-  b = t(981631);
+  p = t(981631);
 
-function p(e) {
+function b(e) {
   let [n] = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : [o.Z], {
     entityType: t,
     channelId: r
@@ -26,17 +26,17 @@ function p(e) {
   } : e;
   if (t === _.WX.EXTERNAL) return !0;
   let a = n.getChannel(r);
-  return null != a && d.Uu(b.Plq.VIEW_CHANNEL, a)
+  return null != a && d.Uu(p.Plq.VIEW_CHANNEL, a)
 }
 
 function f(e) {
   let [n, t, r, d] = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : [l.ZP, o.Z, c.Z, i.Z];
   if ((0, u.Z2)(e)) return !1;
   let {
-    guild_id: b,
+    guild_id: p,
     channel_id: f
-  } = e, h = e.entity_type === _.WX.EXTERNAL ? n.getDefaultChannel(e.guild_id) : t.getChannel(f), m = r.getGuild(b), g = d.getStageInstanceByChannel(f);
-  return !!(0, a.b)(s.Z, m, h, g) && null != h && p(e, [t])
+  } = e, h = e.entity_type === _.WX.EXTERNAL ? n.getDefaultChannel(e.guild_id) : t.getChannel(f), m = r.getGuild(p), g = d.getStageInstanceByChannel(f);
+  return !!(0, a.b)(s.Z, m, h, g) && null != h && b(e, [t])
 }
 
 function h(e) {

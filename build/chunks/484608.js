@@ -1,4 +1,5 @@
-/** Chunk was on 94313 **/
+/** Chunk was on web.js **/
+"use strict";
 e.exports = {
   infoWrapper: "infoWrapper_c44293",
   activityPresenceDetailsContainer: "activityPresenceDetailsContainer_c44293",

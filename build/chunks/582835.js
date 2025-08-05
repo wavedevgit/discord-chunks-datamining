@@ -1,4 +1,5 @@
-/** Chunk was on 94313 **/
+/** Chunk was on web.js **/
+"use strict";
 e.exports = {
   partnerBranding: "partnerBranding__83420",
   partnerBrandingGameTile: "partnerBrandingGameTile__83420",

@@ -1,4 +1,4 @@
-/** Chunk was on 98786 **/
+/** Chunk was on web.js **/
 "use strict";
 e.exports = {
   embedFull: "embedFull__623de embed__623de",

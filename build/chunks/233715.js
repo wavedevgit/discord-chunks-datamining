@@ -1,26 +1,28 @@
-/** Chunk was on 60173 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
-  Z: () => s
+  Z: () => c
 }), n(388685);
 var r = n(255367),
   i = n(73800),
-  l = n(120356),
-  a = n.n(l),
-  o = n(352172);
+  a = n(120356),
+  o = n.n(a),
+  s = n(352172);
+let l = 2e3;
 
-function s(e) {
+function c(e) {
   let {
     children: t,
     className: n,
-    flashKey: l
-  } = e, [s, c] = i.useState(!1), u = i.useRef(null);
-  return i.useEffect(() => (c(!0), u.current = window.setTimeout(() => {
-    c(!1)
-  }, 2e3), () => {
-    null != u.current && clearTimeout(u.current)
-  }), [l]), (0, r.jsx)("div", {
-    "data-flash": s,
-    className: a()(o.flash, n),
+    flashKey: a
+  } = e, [c, u] = i.useState(!1), d = i.useRef(null);
+  return i.useEffect(() => (u(!0), d.current = window.setTimeout(() => {
+    u(!1)
+  }, l), () => {
+    null != d.current && clearTimeout(d.current)
+  }), [a]), (0, r.jsx)("div", {
+    "data-flash": c,
+    className: o()(s.flash, n),
     children: t
   })
 }

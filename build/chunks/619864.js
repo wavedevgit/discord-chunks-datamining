@@ -1,5 +1,6 @@
-/** Chunk was on 93239 **/
-r.d(t, {
-  v: () => n
+/** Chunk was on web.js **/
+"use strict";
+n.d(t, {
+  v: () => r
 });
-let n = 9975
+let r = 9975

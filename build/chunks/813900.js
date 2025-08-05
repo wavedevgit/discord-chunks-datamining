@@ -1,13 +1,14 @@
-/** Chunk was on 24255 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
-  FO: () => o,
-  Fq: () => a,
+  FO: () => s,
+  Fq: () => o,
   Ks: () => r,
-  q2: () => i,
-  qh: () => l
+  q2: () => a,
+  qh: () => i
 });
 let r = 80,
-  l = 48,
-  i = 3,
-  a = 500,
-  o = 5e3
+  i = 48,
+  a = 3,
+  o = 500,
+  s = 5e3

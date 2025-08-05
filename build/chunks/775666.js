@@ -1,162 +1,163 @@
-/** Chunk was on 99922 **/
-t.d(n, {
-  EQ: () => N,
-  T5: () => L,
-  ZP: () => p
-}), t(388685), t(997841);
-var i = t(255367),
-  a = t(73800),
-  o = t(442837),
-  d = t(481060),
-  c = t(87051),
-  s = t(221259),
-  r = t(113449),
-  _ = t(686660),
-  l = t(9156),
-  g = t(621600),
-  h = t(981631),
-  u = t(490897),
-  S = t(526761),
-  b = t(388032);
+/** Chunk was on web.js **/
+"use strict";
+n.d(t, {
+  EQ: () => E,
+  T5: () => b,
+  ZP: () => g
+}), n(388685), n(997841);
+var r = n(255367),
+  i = n(73800),
+  a = n(442837),
+  o = n(481060),
+  s = n(87051),
+  l = n(221259),
+  c = n(113449),
+  u = n(686660),
+  d = n(9156),
+  f = n(621600),
+  _ = n(981631),
+  p = n(490897),
+  h = n(526761),
+  m = n(388032);
 
-function p(e) {
-  let n = N(e);
-  return e.type === h.d4z.GUILD_VOICE ? null : (0, i.jsx)(d.sNh, {
+function g(e) {
+  let t = E(e);
+  return e.type === _.d4z.GUILD_VOICE ? null : (0, r.jsx)(o.sNh, {
     id: "channel_notification_settings",
-    label: b.intl.string(b.t.HcoRu7),
-    children: n
+    label: m.intl.string(m.t.HcoRu7),
+    children: t
   })
 }
 
-function N(e) {
-  let n = (0, s.ZA)(e),
-    t = (0, s.yN)(e),
-    r = n.preset === _.s8.CUSTOM && !t.inherited,
-    [g, u] = a.useState(r),
-    [S, p] = a.useState(!1),
-    N = S ? _.s8.CUSTOM : n.preset,
-    E = L(e, () => p(!1)),
-    m = (0, o.e7)([l.ZP], () => l.ZP.getNewForumThreadsCreated(e)),
-    f = "parent" === t.inheritedFrom ? b.intl.string(b.t.wlrV1d) : b.intl.string(b.t["1Wn2Mz"]);
-  return e.type === h.d4z.GUILD_STAGE_VOICE ? (0, i.jsxs)(d.kSQ, {
-    children: [(0, i.jsx)(d.k5B, {
+function E(e) {
+  let t = (0, l.ZA)(e),
+    n = (0, l.yN)(e),
+    c = t.preset === u.s8.CUSTOM && !n.inherited,
+    [f, p] = i.useState(c),
+    [h, g] = i.useState(!1),
+    E = h ? u.s8.CUSTOM : t.preset,
+    y = b(e, () => g(!1)),
+    O = (0, a.e7)([d.ZP], () => d.ZP.getNewForumThreadsCreated(e)),
+    v = "parent" === n.inheritedFrom ? m.intl.string(m.t.wlrV1d) : m.intl.string(m.t["1Wn2Mz"]);
+  return e.type === _.d4z.GUILD_STAGE_VOICE ? (0, r.jsxs)(o.kSQ, {
+    children: [(0, r.jsx)(o.k5B, {
       id: "cns_default",
-      label: f,
-      checked: t.inherited,
+      label: v,
+      checked: n.inherited,
       group: "channel_notification_settings",
-      subtext: n.notification === h.bL.NO_MESSAGES ? b.intl.string(b.t.CtVGyc) : b.intl.string(b.t["BENn//"]),
-      action: () => (0, s.JK)(e.guild_id, e.id)
-    }), (0, i.jsx)(d.k5B, {
+      subtext: t.notification === _.bL.NO_MESSAGES ? m.intl.string(m.t.CtVGyc) : m.intl.string(m.t["BENn//"]),
+      action: () => (0, l.JK)(e.guild_id, e.id)
+    }), (0, r.jsx)(o.k5B, {
       id: "cns_only_mention",
       group: "channel_notification_settings",
-      checked: !t.inherited && n.notification !== h.bL.NO_MESSAGES,
-      label: b.intl.string(b.t["BENn//"]),
-      action: () => (0, s.ft)(e.guild_id, e.id, h.bL.ONLY_MENTIONS)
-    }), (0, i.jsx)(d.k5B, {
+      checked: !n.inherited && t.notification !== _.bL.NO_MESSAGES,
+      label: m.intl.string(m.t["BENn//"]),
+      action: () => (0, l.ft)(e.guild_id, e.id, _.bL.ONLY_MENTIONS)
+    }), (0, r.jsx)(o.k5B, {
       id: "cns_no_message",
       group: "channel_notification_settings",
-      label: b.intl.string(b.t.CtVGyc),
-      checked: !t.inherited && n.notification === h.bL.NO_MESSAGES,
-      action: () => (0, s.ft)(e.guild_id, e.id, h.bL.NO_MESSAGES)
+      label: m.intl.string(m.t.CtVGyc),
+      checked: !n.inherited && t.notification === _.bL.NO_MESSAGES,
+      action: () => (0, l.ft)(e.guild_id, e.id, _.bL.NO_MESSAGES)
     })]
-  }) : (0, i.jsxs)(i.Fragment, {
-    children: [e.isForumLikeChannel() ? (0, i.jsxs)(i.Fragment, {
-      children: [(0, i.jsx)(d.S89, {
+  }) : (0, r.jsxs)(r.Fragment, {
+    children: [e.isForumLikeChannel() ? (0, r.jsxs)(r.Fragment, {
+      children: [(0, r.jsx)(o.S89, {
         id: "new-forum-threads-created",
-        label: b.intl.string(b.t.Rkgjpq),
-        checked: m,
-        action: () => c.Z.setForumThreadsCreated(e, !m)
-      }), (0, i.jsx)(d.Clw, {})]
-    }) : null, (0, i.jsxs)(d.kSQ, {
-      children: [(0, i.jsx)(d.k5B, {
+        label: m.intl.string(m.t.Rkgjpq),
+        checked: O,
+        action: () => s.Z.setForumThreadsCreated(e, !O)
+      }), (0, r.jsx)(o.Clw, {})]
+    }) : null, (0, r.jsxs)(o.kSQ, {
+      children: [(0, r.jsx)(o.k5B, {
         id: "cns_default",
-        label: f,
+        label: v,
         group: "channel_notification_settings",
-        checked: t.inherited && !S,
-        subtext: t.inheritedPreset,
-        action: () => ((0, s.JK)(e.guild_id, e.id), p(!1))
-      }), (0, i.jsx)(d.k5B, {
+        checked: n.inherited && !h,
+        subtext: n.inheritedPreset,
+        action: () => ((0, l.JK)(e.guild_id, e.id), g(!1))
+      }), (0, r.jsx)(o.k5B, {
         id: "cns_everything",
         group: "channel_notification_settings",
-        label: b.intl.string(b.t.hZrr6u),
-        checked: !t.inherited && N === _.s8.ALL_MESSAGES,
-        action: () => ((0, s._m)(e.guild_id, e.id, _.s8.ALL_MESSAGES), p(!1))
-      }), (0, i.jsx)(d.k5B, {
+        label: m.intl.string(m.t.hZrr6u),
+        checked: !n.inherited && E === u.s8.ALL_MESSAGES,
+        action: () => ((0, l._m)(e.guild_id, e.id, u.s8.ALL_MESSAGES), g(!1))
+      }), (0, r.jsx)(o.k5B, {
         id: "cns_essentials",
         group: "channel_notification_settings",
-        label: b.intl.string(b.t.y59NJi),
-        checked: !t.inherited && N === _.s8.MENTIONS,
-        action: () => ((0, s._m)(e.guild_id, e.id, _.s8.MENTIONS), p(!1))
-      }), (0, i.jsx)(d.k5B, {
+        label: m.intl.string(m.t.y59NJi),
+        checked: !n.inherited && E === u.s8.MENTIONS,
+        action: () => ((0, l._m)(e.guild_id, e.id, u.s8.MENTIONS), g(!1))
+      }), (0, r.jsx)(o.k5B, {
         id: "cns_nothing",
         group: "channel_notification_settings",
-        label: b.intl.string(b.t["pGn/bG"]),
-        checked: !t.inherited && N === _.s8.NOTHING,
-        action: () => ((0, s._m)(e.guild_id, e.id, _.s8.NOTHING), p(!1))
-      }), (0, i.jsx)(d.k5B, {
+        label: m.intl.string(m.t["pGn/bG"]),
+        checked: !n.inherited && E === u.s8.NOTHING,
+        action: () => ((0, l._m)(e.guild_id, e.id, u.s8.NOTHING), g(!1))
+      }), (0, r.jsx)(o.k5B, {
         id: "cns_custom",
         group: "channel_notification_settings",
-        label: b.intl.string(b.t["32yow8"]),
-        checked: S || !t.inherited && N === _.s8.CUSTOM,
-        action: () => (u(!0), p(!0))
+        label: m.intl.string(m.t["32yow8"]),
+        checked: h || !n.inherited && E === u.s8.CUSTOM,
+        action: () => (p(!0), g(!0))
       })]
-    }), (g || r) && E]
+    }), (f || c) && y]
   })
 }
 
-function L(e, n) {
+function b(e, t) {
   let {
-    notification: t,
-    unread: a
-  } = (0, s.ZA)(e), o = e => {
-    e(), n()
-  }, _ = n => {
-    let t = {
-      message_notifications: n
+    notification: n,
+    unread: i
+  } = (0, l.ZA)(e), a = e => {
+    e(), t()
+  }, u = t => {
+    let n = {
+      message_notifications: t
     };
-    n === h.bL.ALL_MESSAGES && a !== u.i.ALL_MESSAGES && (t.flags = (0, r.pq)(l.ZP.getChannelIdFlags(e.guild_id, e.id), S.ic.UNREADS_ALL_MESSAGES)), c.Z.updateChannelOverrideSettings(e.guild_id, e.id, t, g.UE.notifications(n))
+    t === _.bL.ALL_MESSAGES && i !== p.i.ALL_MESSAGES && (n.flags = (0, c.pq)(d.ZP.getChannelIdFlags(e.guild_id, e.id), h.ic.UNREADS_ALL_MESSAGES)), s.Z.updateChannelOverrideSettings(e.guild_id, e.id, n, f.UE.notifications(t))
   };
-  return (0, i.jsxs)(d.kSQ, {
-    children: [(0, i.jsxs)(d.sNh, {
+  return (0, r.jsxs)(o.kSQ, {
+    children: [(0, r.jsxs)(o.sNh, {
       id: "unread_setting",
       label: "Unread Badges",
-      children: [(0, i.jsx)(d.k5B, {
+      children: [(0, r.jsx)(o.k5B, {
         id: "unread_setting_all_messages",
         group: "unread_setting",
-        checked: a === u.i.ALL_MESSAGES,
-        label: b.intl.string(b.t["HVah//"]),
-        action: () => o(() => (0, s.IG)(e.guild_id, e.id, u.i.ALL_MESSAGES))
-      }), (0, i.jsx)(d.k5B, {
+        checked: i === p.i.ALL_MESSAGES,
+        label: m.intl.string(m.t["HVah//"]),
+        action: () => a(() => (0, l.IG)(e.guild_id, e.id, p.i.ALL_MESSAGES))
+      }), (0, r.jsx)(o.k5B, {
         id: "unread_setting_mention_only",
         group: "unread_setting",
-        checked: a === u.i.ONLY_MENTIONS,
-        label: b.intl.string(b.t["tu+ZWF"]),
-        disabled: a !== u.i.ONLY_MENTIONS && t === h.bL.ALL_MESSAGES,
-        subtext: a !== u.i.ONLY_MENTIONS && t === h.bL.ALL_MESSAGES ? b.intl.string(b.t.eP8yWV) : void 0,
-        action: () => o(() => (0, s.IG)(e.guild_id, e.id, u.i.ONLY_MENTIONS))
+        checked: i === p.i.ONLY_MENTIONS,
+        label: m.intl.string(m.t["tu+ZWF"]),
+        disabled: i !== p.i.ONLY_MENTIONS && n === _.bL.ALL_MESSAGES,
+        subtext: i !== p.i.ONLY_MENTIONS && n === _.bL.ALL_MESSAGES ? m.intl.string(m.t.eP8yWV) : void 0,
+        action: () => a(() => (0, l.IG)(e.guild_id, e.id, p.i.ONLY_MENTIONS))
       })]
-    }, "unread_setting"), (0, i.jsxs)(d.sNh, {
+    }, "unread_setting"), (0, r.jsxs)(o.sNh, {
       id: "push_settings",
-      label: b.intl.string(b.t.HcoRu7),
-      children: [(0, i.jsx)(d.k5B, {
+      label: m.intl.string(m.t.HcoRu7),
+      children: [(0, r.jsx)(o.k5B, {
         group: "notification-preset",
         id: "push_settings_everything",
-        label: b.intl.string(b.t["HVah//"]),
-        checked: t === h.bL.ALL_MESSAGES,
-        subtext: a !== u.i.ALL_MESSAGES && t !== h.bL.ALL_MESSAGES ? b.intl.string(b.t.idXSbG) : void 0,
-        action: () => o(() => _(h.bL.ALL_MESSAGES))
-      }), (0, i.jsx)(d.k5B, {
+        label: m.intl.string(m.t["HVah//"]),
+        checked: n === _.bL.ALL_MESSAGES,
+        subtext: i !== p.i.ALL_MESSAGES && n !== _.bL.ALL_MESSAGES ? m.intl.string(m.t.idXSbG) : void 0,
+        action: () => a(() => u(_.bL.ALL_MESSAGES))
+      }), (0, r.jsx)(o.k5B, {
         group: "notification-preset",
         id: "push_settings_everything_mention",
-        checked: t === h.bL.ONLY_MENTIONS,
-        label: b.intl.string(b.t["tu+ZWF"]),
-        action: () => o(() => _(h.bL.ONLY_MENTIONS))
-      }), (0, i.jsx)(d.k5B, {
+        checked: n === _.bL.ONLY_MENTIONS,
+        label: m.intl.string(m.t["tu+ZWF"]),
+        action: () => a(() => u(_.bL.ONLY_MENTIONS))
+      }), (0, r.jsx)(o.k5B, {
         group: "notification-preset",
         id: "push_settings_everything_nothing",
-        label: b.intl.string(b.t.X4wWUl),
-        checked: t === h.bL.NO_MESSAGES,
-        action: () => o(() => _(h.bL.NO_MESSAGES))
+        label: m.intl.string(m.t.X4wWUl),
+        checked: n === _.bL.NO_MESSAGES,
+        action: () => a(() => u(_.bL.NO_MESSAGES))
       })]
     }, "push_settings")]
   })

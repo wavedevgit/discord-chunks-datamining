@@ -1,4 +1,5 @@
-/** Chunk was on 94313 **/
+/** Chunk was on web.js **/
+"use strict";
 e.exports = {
   content: "content__75e8e",
   contentCoachmark: "contentCoachmark__75e8e",

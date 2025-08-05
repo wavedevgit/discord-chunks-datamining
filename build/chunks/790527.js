@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => w
+  Z: () => P
 });
 var r = n(255367),
   i = n(73800),
@@ -31,7 +31,7 @@ var r = n(255367),
 
 function C(e, t) {
   if (null == e) return {};
-  var n, r, i = R(e, t);
+  var n, r, i = w(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -39,7 +39,7 @@ function C(e, t) {
   return i
 }
 
-function R(e, t) {
+function w(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -47,7 +47,7 @@ function R(e, t) {
   return i
 }
 
-function P(e) {
+function R(e) {
   switch (e) {
     case I.cd.ANIMATED_AVATAR_MODAL_UPSELL:
     case I.cd.ANIMATED_BANNER_MODAL_UPSELL:
@@ -62,32 +62,32 @@ function P(e) {
   }
 }
 
-function w(e) {
+function P(e) {
   var t, n, a, {
-      title: R,
-      type: w,
+      title: w,
+      type: P,
       guildBoostProps: D,
       analyticsSource: L,
       analyticsLocation: x,
-      body: M,
-      context: k,
-      glowUp: j,
+      body: k,
+      context: j,
+      glowUp: M,
       modalClassName: U,
       modalContentClassName: G,
       artContainerClassName: B,
-      artClassName: V,
+      artClassName: Z,
       headerClassName: F,
-      bodyClassName: Z,
+      bodyClassName: V,
       transitionState: H,
       onClose: Y,
       onSubscribeClick: W,
       onSubscribeFinish: K,
       onSecondaryClick: z,
       secondaryCTA: q,
-      secondaryCTAClassName: X,
-      subscribeButtonText: Q,
-      showNewBadge: J = !1,
-      showBetaBadge: $ = !1,
+      secondaryCTAClassName: $,
+      subscribeButtonText: X,
+      showNewBadge: Q = !1,
+      showBetaBadge: J = !1,
       enableArtBoxShadow: ee = !0,
       subscriptionTier: et = I.Si.TIER_2,
       isLoading: en = !1,
@@ -116,7 +116,7 @@ function w(e) {
       analyticsLocations: eb,
       analyticsSource: L,
       guildBoostProps: D,
-      type: w
+      type: P
     },
     eO = i.useRef(ey);
   i.useEffect(() => {
@@ -145,7 +145,7 @@ function w(e) {
     })
   }, [eh, et, en]);
   let ev = (0, s.e7)([g.Z], () => g.Z.affinities),
-    eI = ev.length > 1 && P(w),
+    eI = ev.length > 1 && R(P),
     eT = (0, s.e7)([g.Z], () => g.Z.hasFetched);
   i.useEffect(() => {
     eT || u.MH()
@@ -179,24 +179,24 @@ function w(e) {
         },
         onSubscribeModalClose: K,
         textOptions: {
-          textOverride: null != Q ? Q : e
+          textOverride: null != X ? X : e
         }
       })
     },
     eA = ee ? o()(A.artContainer, A.artContainerBoxShadow, B) : o()(A.artContainer, B),
     eN = null;
   return null != ep.artURL ? eN = (0, r.jsx)("img", {
-    className: o()(V, A.art),
+    className: o()(Z, A.art),
     alt: "",
     src: ep.artURL
   }) : null != ep.artElement && (eN = ep.artElement), (0, r.jsxs)(c.Y0X, {
     className: o()(A.root, !eE && U),
-    "aria-label": R,
+    "aria-label": w,
     transitionState: H,
     parentComponent: "PremiumUpsellModal",
     children: [null != eN && (0, r.jsxs)("div", {
       className: eA,
-      children: [eN, J ? (0, r.jsx)("img", {
+      children: [eN, Q ? (0, r.jsx)("img", {
         className: A.sparkleBadge,
         alt: "",
         src: N
@@ -206,14 +206,14 @@ function w(e) {
       className: o()(ea ? A.enhancedContent : A.content, !eE && G),
       children: en ? (0, r.jsx)(c.$jN, {}) : eE ? (0, r.jsx)(O.ZP, {
         onClose: Y,
-        type: w,
+        type: P,
         subscriptionTier: null != (a = null == em || null == (n = em.subscription_trial) ? void 0 : n.sku_id) ? a : I.Si.TIER_2,
-        headingText: R,
-        context: k,
+        headingText: w,
+        context: j,
         analyticsLocationObject: x,
         discountOffer: eg,
         trialOffer: em,
-        children: j
+        children: M
       }) : (0, r.jsxs)("div", {
         className: A.contentContainer,
         children: [eu, (0, r.jsxs)("div", {
@@ -223,15 +223,15 @@ function w(e) {
               [A.enhancedHeader]: ea
             }, F),
             variant: "heading-xl/bold",
-            children: [R, $ ? (0, r.jsx)(_.Z, {
+            children: [w, J ? (0, r.jsx)(_.Z, {
               className: A.betaTag
             }) : null]
           }), eI ? (0, r.jsx)(v.Z, {
             affinities: ev
           }) : void 0, ec, (0, r.jsx)(c.Text, {
             variant: ef ? "text-sm/normal" : "text-md/normal",
-            className: o()(Z, A.subHeader),
-            children: M
+            className: o()(V, A.subHeader),
+            children: k
           })]
         })]
       })
@@ -244,7 +244,7 @@ function w(e) {
           [A.enhancedPrimaryActions]: ea
         }),
         children: [null != q ? (0, r.jsx)(l.zx, {
-          className: o()(A.secondaryAction, X, {
+          className: o()(A.secondaryAction, $, {
             [A.enhancedSecondaryAction]: ea
           }),
           onClick: z,

@@ -1,21 +1,22 @@
-/** Chunk was on 60173 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
-  Z: () => o
+  Z: () => s
 });
 var r = n(255367),
   i = n(120356),
-  l = n.n(i),
-  a = n(462508);
+  a = n.n(i),
+  o = n(462508);
 
-function o() {
+function s() {
   return (0, r.jsxs)("div", {
-    className: a.container,
+    className: o.container,
     children: [(0, r.jsx)("div", {
-      className: l()(a.placeholderItem, a.chatTextAreaPlaceholder)
+      className: a()(o.placeholderItem, o.chatTextAreaPlaceholder)
     }), (0, r.jsx)("div", {
-      className: l()(a.placeholderItem, a.appLauncherPlaceholder)
+      className: a()(o.placeholderItem, o.appLauncherPlaceholder)
     }), (0, r.jsx)("div", {
-      className: l()(a.placeholderItem, a.entryPointAppCommandPlaceholder)
+      className: a()(o.placeholderItem, o.entryPointAppCommandPlaceholder)
     })]
   })
 }

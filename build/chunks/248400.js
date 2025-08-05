@@ -1,4 +1,4 @@
-/** Chunk was on 60173 **/
+/** Chunk was on 49152 **/
 n.d(t, {
   Z: () => c
 });
@@ -7,10 +7,10 @@ n(73800);
 var i = n(692547),
   l = n(481060),
   a = n(311888),
-  o = n(388032),
-  s = n(538145);
+  s = n(388032),
+  o = n(538145);
 let c = () => (0, r.jsx)(l.ua7, {
-  text: o.intl.string(o.t.GMZqSk),
+  text: s.intl.string(s.t.GMZqSk),
   children: e => {
     var t, n;
     return (0, r.jsx)("div", (t = function(e) {
@@ -31,7 +31,7 @@ let c = () => (0, r.jsx)(l.ua7, {
       }
       return e
     }({}, e), n = n = {
-      className: s.container,
+      className: o.container,
       children: (0, r.jsx)(a.Z, {
         color: i.Z.unsafe_rawColors.WHITE_500.css
       })

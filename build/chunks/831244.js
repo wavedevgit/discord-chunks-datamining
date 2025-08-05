@@ -1,9 +1,10 @@
-/** Chunk was on 24037 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
-  T: () => l
+  T: () => a
 });
-var i = n(347904);
-let r = [{
+var r = n(347904);
+let i = [{
     load: () => n.e("59642").then(n.t.bind(n, 759983, 19))
   }, {
     load: () => n.e("54931").then(n.t.bind(n, 488583, 19))
@@ -40,8 +41,8 @@ let r = [{
   }, {
     load: () => n.e("73921").then(n.t.bind(n, 558619, 19))
   }],
-  l = async function(e, t, n) {
+  a = async function(e, t, n) {
     arguments.length > 3 && void 0 !== arguments[3] && arguments[3];
-    let l = r[(0, i.vJ)("".concat(e).concat(t).concat(n)) % r.length];
-    return await l.load()
+    let a = i[(0, r.vJ)("".concat(e).concat(t).concat(n)) % i.length];
+    return await a.load()
   }

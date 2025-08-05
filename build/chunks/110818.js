@@ -384,7 +384,7 @@ h(N, "Scenes", v);
 var C = function(e) {
   return e.ENTRY = "entry", e.IDLE = "idle", e.STARS = "stars", e.ERROR = "error", e.SUCCESS = "success", e
 }(C || {});
-let R = {
+let w = {
     entry: {
       BEG: 0,
       END: 180
@@ -408,34 +408,34 @@ let R = {
       END: 778
     }
   },
-  P = Object.freeze({
+  R = Object.freeze({
     WHITE: "#ebf0f7",
     PINK: "#fa6ef6"
   }),
-  w = [{
+  P = [{
     left: 29,
     top: 100,
-    color: P.WHITE
+    color: R.WHITE
   }, {
     left: 245,
     top: 11,
-    color: P.PINK
+    color: R.PINK
   }, {
     left: 393,
     top: 22,
-    color: P.WHITE
+    color: R.WHITE
   }, {
     left: 74,
     top: 30,
-    color: P.PINK
+    color: R.PINK
   }, {
     left: 188,
     top: 9,
-    color: P.WHITE
+    color: R.WHITE
   }, {
     left: 379,
     top: 97,
-    color: P.PINK
+    color: R.PINK
   }],
   D = Object.freeze({
     SCALE_INITIAL: 0,
@@ -458,7 +458,7 @@ let R = {
 function L(e) {
   let {
     animate: t
-  } = e, [n, r] = l.useState(0), i = (0, _.bYB)(w.length, w.map((e, i) => {
+  } = e, [n, r] = l.useState(0), i = (0, _.bYB)(P.length, P.map((e, i) => {
     let a = i > 0 ? D.DELAY_STAGGER * i + Math.random() * (D.DELAY_MAX - D.DELAY_MIN) + D.DELAY_MIN : 0,
       o = Math.random() * (D.SIZE_MAX - D.SIZE_MIN) + D.SIZE_MIN;
     return {
@@ -490,7 +490,7 @@ function L(e) {
           scale: D.SCALE_INITIAL,
           rotate: D.ROTATE_INITIAL,
           immediate: !0
-        }), i === w.length - 1 && r(n + 1)) : await e({
+        }), i === P.length - 1 && r(n + 1)) : await e({
           scale: D.SCALE_INITIAL,
           rotate: D.ROTATE_INITIAL
         })
@@ -499,7 +499,7 @@ function L(e) {
   }));
   return (0, s.jsx)(s.Fragment, {
     children: i.map((e, t) => {
-      let n = w[t];
+      let n = P[t];
       return (0, s.jsx)(d.animated.svg, {
         style: e,
         className: p.guildStar,
@@ -547,7 +547,7 @@ class x extends(o = l.PureComponent) {
         className: p.guildBackground,
         importData: this.importData,
         nextScene: n ? "idle" : t,
-        sceneSegments: R,
+        sceneSegments: w,
         onScenePlay: r,
         onSceneComplete: i,
         pauseWhileUnfocused: a,

@@ -1,22 +1,22 @@
-/** Chunk was on 8381 **/
+/** Chunk was on web.js **/
 "use strict";
-t.exports = function(t, e, r, n) {
-  var i = e.getStartKey(),
-    o = e.getEndKey(),
-    a = t.getBlockMap(),
-    u = a.toSeq().skipUntil(function(t, e) {
-      return e === i
-    }).takeUntil(function(t, e) {
-      return e === o
+e.exports = function(e, t, n, r) {
+  var i = t.getStartKey(),
+    a = t.getEndKey(),
+    o = e.getBlockMap(),
+    s = o.toSeq().skipUntil(function(e, t) {
+      return t === i
+    }).takeUntil(function(e, t) {
+      return t === a
     }).concat([
-      [o, a.get(o)]
-    ]).map(function(t) {
-      var e = t.getDepth() + r;
-      return e = Math.max(0, Math.min(e, n)), t.set("depth", e)
+      [a, o.get(a)]
+    ]).map(function(e) {
+      var t = e.getDepth() + n;
+      return t = Math.max(0, Math.min(t, r)), e.set("depth", t)
     });
-  return a = a.merge(u), t.merge({
-    blockMap: a,
-    selectionBefore: e,
-    selectionAfter: e
+  return o = o.merge(s), e.merge({
+    blockMap: o,
+    selectionBefore: t,
+    selectionAfter: t
   })
 }

@@ -29,9 +29,9 @@ var r = n(255367),
   A = n(86724),
   N = n(847302),
   C = n(657198),
-  R = n(321127),
-  P = n(645174),
-  w = n(981631),
+  w = n(321127),
+  R = n(645174),
+  P = n(981631),
   D = n(117335);
 let L = i.forwardRef(function(e, t) {
   let {
@@ -39,25 +39,25 @@ let L = i.forwardRef(function(e, t) {
     type: a,
     channel: L,
     className: x,
-    id: M,
-    disabled: k,
-    submitting: j,
+    id: k,
+    disabled: j,
+    submitting: M,
     placeholder: U,
     required: G,
     textAreaPaddingClassName: B,
-    onChange: V,
+    onChange: Z,
     onPaste: F,
-    onResize: Z,
+    onResize: V,
     onFocus: H,
     onBlur: Y,
     onKeyDown: W,
     onKeyUp: K,
     onTab: z,
     onEnter: q,
-    onSubmit: X,
-    maybeShowAutocomplete: Q,
-    hideAutocomplete: J,
-    moveSelection: $,
+    onSubmit: $,
+    maybeShowAutocomplete: X,
+    hideAutocomplete: Q,
+    moveSelection: J,
     spellcheckEnabled: ee,
     canUseCommands: et,
     canOnlyUseTextCommands: en,
@@ -73,7 +73,7 @@ let L = i.forwardRef(function(e, t) {
     "aria-describedby": ef,
     "aria-labelledby": e_,
     "aria-autocomplete": ep
-  } = e, eh = i.useRef(null), em = i.useRef(null), eg = i.useRef(!0), eE = i.useRef(!0), eb = k || j, ey = i.useCallback((e, t, n) => {
+  } = e, eh = i.useRef(null), em = i.useRef(null), eg = i.useRef(!0), eE = i.useRef(!0), eb = j || M, ey = i.useCallback((e, t, n) => {
     var r;
     let {
       value: i,
@@ -143,10 +143,10 @@ let L = i.forwardRef(function(e, t) {
       if (a.length > 0) {
         var n, r;
         let e = a[0];
-        E.Q.selectCommandOption(eI, e.name), f.S.dispatch(w.CkL.SHAKE_APP, {
+        E.Q.selectCommandOption(eI, e.name), f.S.dispatch(P.CkL.SHAKE_APP, {
           duration: 200,
           intensity: 2
-        }), (0, l.yw)(w.rMx.APPLICATION_COMMAND_VALIDATION_FAILED, {
+        }), (0, l.yw)(P.rMx.APPLICATION_COMMAND_VALIDATION_FAILED, {
           application_id: null == t ? void 0 : t.applicationId,
           command_id: null == t || null == (n = t.rootCommand) ? void 0 : n.id,
           argument_type: s.jw[null != (r = null == e ? void 0 : e.type) ? r : 3],
@@ -155,12 +155,12 @@ let L = i.forwardRef(function(e, t) {
         return
       }
     }
-    null == X || X((0, g.sk)(b.bN.richValue(eI), {
+    null == $ || $((0, g.sk)(b.bN.richValue(eI), {
       mode: "raw",
       ignoreTrailingEmptyNodes: !0
     }), t, e)
-  }, [L.id, eI, X, eT, et]);
-  (0, v.Z)(t, eI, L, eS), (0, S.Z)(eI, eh, Z);
+  }, [L.id, eI, $, eT, et]);
+  (0, v.Z)(t, eI, L, eS), (0, S.Z)(eI, eh, V);
   let {
     handleKeyDown: eA,
     handleKeyUp: eN
@@ -174,18 +174,18 @@ let L = i.forwardRef(function(e, t) {
     onEnter: q,
     allowNewLines: ea,
     submit: eS,
-    hideAutocomplete: J,
-    moveSelection: $
+    hideAutocomplete: Q,
+    moveSelection: J
   }), {
     handlePaste: eC,
-    handleGlobalPaste: eR
-  } = (0, T.Z)(eI, eb, F), eP = i.useCallback(e => {
-    null == Q || Q()
-  }, [Q]), ew = i.useCallback(e => {
-    e !== em.current ? eE.current && (null == V || V(null, (0, g.sk)(e, {
+    handleGlobalPaste: ew
+  } = (0, T.Z)(eI, eb, F), eR = i.useCallback(e => {
+    null == X || X()
+  }, [X]), eP = i.useCallback(e => {
+    e !== em.current ? eE.current && (null == Z || Z(null, (0, g.sk)(e, {
       mode: "raw"
-    }), e)) : eE.current && Q()
-  }, [Q, V]);
+    }), e)) : eE.current && X()
+  }, [X, Z]);
   i.useLayoutEffect(() => {
     eg.current && (em.current = n, ey(eI, "parent", {
       value: n
@@ -201,18 +201,18 @@ let L = i.forwardRef(function(e, t) {
   let eD = i.useCallback((e, t) => (0, y.Z)(e, t), []),
     eL = i.useCallback(e => {
       let t = (0, C.Z)(eI, e, L.id);
-      return null == t && (t = (0, P.Z)(eI, e)), t
+      return null == t && (t = (0, R.Z)(eI, e)), t
     }, [L.id, eI]),
-    ex = i.useCallback(e => (0, R.Z)(e), []);
+    ex = i.useCallback(e => (0, w.Z)(e), []);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(d.d9, {
-      event: w.CkL.GLOBAL_CLIPBOARD_PASTE,
-      handler: eR
+      event: P.CkL.GLOBAL_CLIPBOARD_PASTE,
+      handler: ew
     }), (0, r.jsx)("div", {
       ref: eh,
       className: o()(x, D.slateContainer),
       children: (0, r.jsx)(m.Z, {
-        id: M,
+        id: k,
         editor: eI,
         channelId: L.id,
         guildId: L.guild_id,
@@ -221,11 +221,11 @@ let L = i.forwardRef(function(e, t) {
         readOnly: eb,
         spellCheck: ee,
         autoFocus: !er,
-        canFocus: !k,
-        onChange: ew,
+        canFocus: !j,
+        onChange: eP,
         onFocus: H,
         onBlur: Y,
-        onClick: eP,
+        onClick: eR,
         onPaste: eC,
         onKeyDown: eA,
         onKeyUp: eN,

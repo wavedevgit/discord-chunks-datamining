@@ -1,4 +1,5 @@
-/** Chunk was on 94313 **/
+/** Chunk was on web.js **/
+"use strict";
 e.exports = {
   safetyPolicyNoticeContainer: "safetyPolicyNoticeContainer_e80b85",
   noticeContent: "noticeContent_e80b85",

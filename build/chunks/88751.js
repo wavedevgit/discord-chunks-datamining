@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  ZP: () => M
+  ZP: () => k
 }), n(388685);
 var r, i = n(392711),
   a = n.n(i),
@@ -99,7 +99,7 @@ function C(e) {
   A(t)
 }
 
-function R(e) {
+function w(e) {
   let {
     guildId: t,
     user: n
@@ -107,7 +107,7 @@ function R(e) {
   return null != n && null != t && S(n.id, t)
 }
 
-function P(e) {
+function R(e) {
   let {
     voiceStates: t
   } = e;
@@ -120,7 +120,7 @@ function P(e) {
   }, !1)
 }
 
-function w(e) {
+function P(e) {
   return A(e.guildId)
 }
 
@@ -164,14 +164,14 @@ class x extends(r = o.ZP.Store) {
   }
 }
 g(x, "displayName", "StageChannelRoleStore");
-let M = new x(s.Z, {
+let k = new x(s.Z, {
   CHANNEL_UPDATES: N,
   CONNECTION_OPEN: D,
-  GUILD_MEMBER_REMOVE: R,
-  GUILD_MEMBER_UPDATE: R,
+  GUILD_MEMBER_REMOVE: w,
+  GUILD_MEMBER_UPDATE: w,
   GUILD_ROLE_UPDATE: C,
-  PASSIVE_UPDATE_V2: w,
-  VOICE_STATE_UPDATES: P,
+  PASSIVE_UPDATE_V2: P,
+  VOICE_STATE_UPDATES: R,
   GUILD_CREATE: L,
   GUILD_DELETE: L
 })

@@ -1,11 +1,12 @@
-/** Chunk was on 60173 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
-  Z: () => u
+  Z: () => f
 });
 var r, i = n(442837),
-  l = n(570140);
+  a = n(570140);
 
-function a(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -13,32 +14,36 @@ function a(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let o = {
+let s = {
     toastsEnabledForChannel: {}
   },
-  s = o;
-class c extends(r = i.ZP.PersistedStore) {
+  l = s;
+
+function c(e) {
+  let {
+    channelId: t,
+    toastsEnabled: n
+  } = e;
+  l.toastsEnabledForChannel[t] = n
+}
+
+function u() {
+  l.toastsEnabledForChannel = {}
+}
+class d extends(r = i.ZP.PersistedStore) {
   initialize(e) {
-    s = null != e ? e : o
+    l = null != e ? e : s
   }
   getToastsEnabled(e) {
     var t;
-    return null == (t = s.toastsEnabledForChannel[e]) || t
+    return null == (t = l.toastsEnabledForChannel[e]) || t
   }
   getState() {
-    return s
+    return l
   }
 }
-a(c, "displayName", "CallChatToastsStore"), a(c, "persistKey", "CallChatToasts");
-let u = new c(l.Z, {
-  CALL_CHAT_TOASTS_SET_ENABLED: function(e) {
-    let {
-      channelId: t,
-      toastsEnabled: n
-    } = e;
-    s.toastsEnabledForChannel[t] = n
-  },
-  LOGOUT: function() {
-    s.toastsEnabledForChannel = {}
-  }
+o(d, "displayName", "CallChatToastsStore"), o(d, "persistKey", "CallChatToasts");
+let f = new d(a.Z, {
+  CALL_CHAT_TOASTS_SET_ENABLED: c,
+  LOGOUT: u
 })

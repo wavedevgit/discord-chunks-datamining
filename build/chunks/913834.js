@@ -1,61 +1,64 @@
-/** Chunk was on 31978 **/
+/** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => p
+  Z: () => f
 }), n(388685);
 var r = n(255367),
-  l = n(73800),
-  o = n(481060),
-  i = n(100527),
-  a = n(873128),
-  s = n(704041),
+  i = n(73800),
+  a = n(481060),
+  o = n(100527),
+  s = n(873128),
+  l = n(704041),
   c = n(986398),
   u = n(463031),
   d = n(791644);
 
-function p(e) {
+function f(e) {
   let {
     guild: t,
     message: n
-  } = e, p = l.useRef(null), [m, g] = l.useState(!1), f = l.useRef(!1), b = (0, a.Z)({
+  } = e, f = i.useRef(null), [_, p] = i.useState(!1), h = i.useRef(!1), m = (0, s.Z)({
     guildId: t.id,
     leaderboardId: u.z,
     intervalOffset: 0
-  }), h = l.useMemo(() => {
+  }), g = i.useMemo(() => {
     var e;
-    if ((null == b || null == (e = b.guild_settings) ? void 0 : e.show_winner_crown) !== !0) return !1;
-    let t = b.users[0];
+    if ((null == m || null == (e = m.guild_settings) ? void 0 : e.show_winner_crown) !== !0) return !1;
+    let t = m.users[0];
     return n.author.id === (null == t ? void 0 : t.user_id)
-  }, [b, n]);
-  return null != b && h ? (0, r.jsx)("div", {
-    className: d.badge,
-    onMouseEnter: () => {
-      f.current = !0, g(!0)
+  }, [m, n]);
+  if (null == m || !g) return null;
+  let E = () => {
+      h.current = !0, p(!0)
     },
-    onMouseLeave: () => {
-      f.current = !1, setTimeout(() => {
-        f.current || g(!1)
+    b = () => {
+      h.current = !1, setTimeout(() => {
+        h.current || p(!1)
       }, 100)
-    },
-    children: (0, r.jsx)(o.yRy, {
-      targetElementRef: p,
-      animation: o.yRy.Animation.TRANSLATE,
+    };
+  return (0, r.jsx)("div", {
+    className: d.badge,
+    onMouseEnter: E,
+    onMouseLeave: b,
+    children: (0, r.jsx)(a.yRy, {
+      targetElementRef: f,
+      animation: a.yRy.Animation.TRANSLATE,
       align: "center",
       autoInvert: !0,
       nudgeAlignIntoViewport: !0,
       position: "top",
-      shouldShow: m,
-      renderPopout: () => (0, r.jsx)(s.Z, {
+      shouldShow: _,
+      renderPopout: () => (0, r.jsx)(l.Z, {
         guildId: t.id,
         previewMode: !0,
-        source: i.Z.MEMBER_LIST,
-        leaderboardId: b.leaderboard_id
+        source: o.Z.MEMBER_LIST,
+        leaderboardId: m.leaderboard_id
       }),
       children: () => (0, r.jsx)(c.Z, {
-        leaderboard: b,
+        leaderboard: m,
         className: d.image,
-        ref: p
+        ref: f
       })
     })
-  }) : null
+  })
 }

@@ -1,4 +1,5 @@
-/** Chunk was on 69150 **/
+/** Chunk was on web.js **/
+"use strict";
 e.exports = {
   notice: "notice_c5cd6a",
   button: "button_c5cd6a",

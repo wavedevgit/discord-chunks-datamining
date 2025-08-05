@@ -1,16 +1,21 @@
-/** Chunk was on 35755 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
-  D: () => r
+  D: () => o
 });
-var l = n(73800),
+var r = n(73800),
   i = n(430824);
 
-function r(e) {
-  return l.useMemo(() => "contextless" === e.type ? {
+function a(e) {
+  return "contextless" === e.type ? {
     channel: void 0,
     guild: void 0
   } : {
     channel: e.channel,
     guild: i.Z.getGuild(e.channel.guild_id)
-  }, [e])
+  }
+}
+
+function o(e) {
+  return r.useMemo(() => a(e), [e])
 }

@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  n: () => P,
+  n: () => R,
   v: () => N
 }), n(388685), n(290780), n(415506), n(482853);
 var r = n(255367),
@@ -140,11 +140,11 @@ function C(e) {
   }
   return t
 }
-let R = [];
+let w = [];
 
-function P() {
+function R() {
   let e = N(),
-    t = (0, g.s9)(t => void 0 !== t[e] ? t[e] : R),
+    t = (0, g.s9)(t => void 0 !== t[e] ? t[e] : w),
     n = i.useMemo(() => C(t), [t]),
     a = (0, _.q)("Modals"),
     o = i.useRef(void 0);

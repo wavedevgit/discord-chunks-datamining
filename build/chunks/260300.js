@@ -1,11 +1,12 @@
-/** Chunk was on 60173 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
-  Z: () => a
+  Z: () => o
 });
 var r = n(544891),
   i = n(570140),
-  l = n(981631);
-let a = {
+  a = n(981631);
+let o = {
   show(e, t) {
     i.Z.wait(() => i.Z.dispatch({
       type: "TUTORIAL_INDICATOR_SHOW",
@@ -24,7 +25,7 @@ let a = {
       type: "TUTORIAL_INDICATOR_DISMISS",
       tutorialId: e
     })), r.tn.put({
-      url: l.ANM.TUTORIAL_INDICATOR(e),
+      url: a.ANM.TUTORIAL_INDICATOR(e),
       oldFormErrors: !0,
       rejectWithError: !0
     })
@@ -33,7 +34,7 @@ let a = {
     i.Z.dispatch({
       type: "TUTORIAL_INDICATOR_SUPPRESS_ALL"
     }), r.tn.post({
-      url: l.ANM.TUTORIAL_INDICATORS_SUPPRESS,
+      url: a.ANM.TUTORIAL_INDICATORS_SUPPRESS,
       oldFormErrors: !0,
       rejectWithError: !0
     })

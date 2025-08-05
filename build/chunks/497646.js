@@ -1,4 +1,5 @@
-/** Chunk was on 94313 **/
+/** Chunk was on web.js **/
+"use strict";
 e.exports = {
   lineClamp2Plus: "lineClamp2Plus__38db5",
   lineClamp1: "lineClamp1__38db5"

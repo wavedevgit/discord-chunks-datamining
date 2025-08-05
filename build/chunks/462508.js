@@ -1,4 +1,5 @@
-/** Chunk was on 60173 **/
+/** Chunk was on web.js **/
+"use strict";
 e.exports = {
   container: "container__87dda",
   placeholderItem: "placeholderItem__87dda",

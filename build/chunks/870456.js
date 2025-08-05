@@ -1,8 +1,9 @@
-/** Chunk was on 30243 **/
-r.d(t, {
-  u: () => n
+/** Chunk was on web.js **/
+"use strict";
+n.d(t, {
+  u: () => r
 });
-let n = {
+let r = {
   allowList: !0,
   allowHeading: !0,
   allowLinks: !0,

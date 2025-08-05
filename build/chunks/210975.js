@@ -1,49 +1,50 @@
-/** Chunk was on 33397 **/
-r.d(t, {
+/** Chunk was on web.js **/
+"use strict";
+n.d(t, {
   m$: () => f,
-  wV: () => c,
+  wV: () => u,
   zU: () => d
 });
-var n = r(442837),
-  l = r(569545),
-  i = r(314897),
-  u = r(19780),
-  a = r(98369),
-  s = r(277642),
-  o = r(441894);
+var r = n(442837),
+  i = n(569545),
+  a = n(314897),
+  o = n(19780),
+  s = n(98369),
+  l = n(277642),
+  c = n(441894);
 
-function c(e) {
+function u(e) {
   let {
     userId: t,
-    channelId: r
-  } = e, l = (0, o.J)({
-    channelId: r
+    channelId: n
+  } = e, i = (0, c.J)({
+    channelId: n
   });
-  return (0, n.e7)([a.Z, i.default, u.Z], () => null != t && l && u.Z.isUserConnected(t) && i.default.getId() !== t && a.Z.isUserVerified(t), [l, t])
+  return (0, r.e7)([s.Z, a.default, o.Z], () => null != t && i && o.Z.isUserConnected(t) && a.default.getId() !== t && s.Z.isUserVerified(t), [i, t])
 }
 
 function d(e) {
   let {
     streamKey: t,
-    channelId: r
-  } = e, u = (0, o.J)({
-    channelId: r
-  }), c = (0, s.t)(t);
-  return (0, n.e7)([a.Z, i.default], () => {
-    if (!u || c || null == t) return !1;
-    let e = i.default.getId(),
+    channelId: n
+  } = e, o = (0, c.J)({
+    channelId: n
+  }), u = (0, l.t)(t);
+  return (0, r.e7)([s.Z, a.default], () => {
+    if (!o || u || null == t) return !1;
+    let e = a.default.getId(),
       {
-        ownerId: r
-      } = (0, l.my)(t);
-    return r !== e && a.Z.isStreamVerified(t)
-  }, [c, u, t])
+        ownerId: n
+      } = (0, i.my)(t);
+    return n !== e && s.Z.isStreamVerified(t)
+  }, [u, o, t])
 }
 
 function f(e) {
   let {
     channelId: t
-  } = e, r = (0, o.J)({
+  } = e, n = (0, c.J)({
     channelId: t
-  }), l = (0, s.r)();
-  return (0, n.e7)([a.Z], () => !!r && !l && a.Z.isCallVerified(), [l, r])
+  }), i = (0, l.r)();
+  return (0, r.e7)([s.Z], () => !!n && !i && s.Z.isCallVerified(), [i, n])
 }

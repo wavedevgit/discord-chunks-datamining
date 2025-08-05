@@ -108,7 +108,7 @@ function C(e, t) {
   }
 }
 
-function R(e) {
+function w(e) {
   return {
     type: "channel",
     content: [D("")],
@@ -116,7 +116,7 @@ function R(e) {
   }
 }
 
-function P(e, t) {
+function R(e, t) {
   var n;
   let r = c.Z.getChannel(e),
     i = (0, s.$)(e, c.Z, a.Z, d.Z).isSubscriptionGated,
@@ -152,7 +152,7 @@ function P(e, t) {
   } : null
 }
 
-function w(e) {
+function P(e) {
   return {
     type: "link",
     content: [{
@@ -172,7 +172,7 @@ function D(e) {
 }
 
 function L(e) {
-  return null != e ? w(e) : D("#".concat(y.intl.string(y.t.J90oLS)))
+  return null != e ? P(e) : D("#".concat(y.intl.string(y.t.J90oLS)))
 }
 
 function x() {
@@ -183,7 +183,7 @@ function x() {
   }, "italics")
 }
 
-function M(e, t, n, r, i) {
+function k(e, t, n, r, i) {
   let a = u.Z.getGuild(e),
     o = (null == a ? void 0 : a.id) === r;
   return {
@@ -197,10 +197,10 @@ function M(e, t, n, r, i) {
   }
 }
 
-function k(e, t, n, r) {
+function j(e, t, n, r) {
   let i = A(e),
     a = N(t),
-    o = R(t.isForumPost);
+    o = w(t.isForumPost);
   if (n && r) {
     if (t.isForumPost) {
       let e = c.Z.getChannel(t.parentId);
@@ -233,7 +233,7 @@ function k(e, t, n, r) {
   }
 }
 
-function j(e, t, n, r) {
+function M(e, t, n, r) {
   if (!e.canViewChannel) return C(e, t);
   if (!e.isMentionable) return D("#".concat(e.name));
   let i = {
@@ -248,11 +248,11 @@ function j(e, t, n, r) {
     if (e.isDm) return T(v({}, i), {
       guildId: b.ME,
       inContent: [N(e)],
-      content: [R(!1)]
+      content: [w(!1)]
     });
     else return L(r);
   let o = e.guildId === n;
-  return v({}, i, k(a, e, o, null != t))
+  return v({}, i, j(a, e, o, null != t))
 }
 let U = {
     order: E.ZP.order,
@@ -264,8 +264,8 @@ let U = {
         type: "channelMention",
         id: r
       };
-      let i = P(r, n.mentionChannels);
-      return null == i ? M(null, r, null, S(n.channelId)) : j(i, null, S(n.channelId))
+      let i = R(r, n.mentionChannels);
+      return null == i ? k(null, r, null, S(n.channelId)) : M(i, null, S(n.channelId))
     }
   },
   G = {
@@ -282,9 +282,9 @@ let U = {
           i = e[1],
           a = e[2],
           o = e[3];
-        if (null == a) return w(r);
-        let s = P(a, null);
-        return null == s ? M(i, a, o, S(n.channelId), r) : j(s, o, S(n.channelId), r)
+        if (null == a) return P(r);
+        let s = R(a, null);
+        return null == s ? k(i, a, o, S(n.channelId), r) : M(s, o, S(n.channelId), r)
       }
     },
     mediaPostLink: {
@@ -297,11 +297,11 @@ let U = {
           a = e[2],
           o = e[3],
           s = e[4];
-        if (null == a || null == o) return w(r);
-        let l = P(o, null);
-        if (null != l) return j(l, s, S(n.channelId), r);
-        let c = P(a, null);
-        return null != c ? j(c, s, S(n.channelId), r) : M(i, a, s, S(n.channelId), r)
+        if (null == a || null == o) return P(r);
+        let l = R(o, null);
+        if (null != l) return M(l, s, S(n.channelId), r);
+        let c = R(a, null);
+        return null != c ? M(c, s, S(n.channelId), r) : k(i, a, s, S(n.channelId), r)
       }
     }
   }

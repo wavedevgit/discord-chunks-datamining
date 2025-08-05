@@ -1,4 +1,4 @@
-/** Chunk was on 70663 **/
+/** Chunk was on 92357 **/
 n.d(t, {
   Z: () => P
 }), n(388685), n(539854);
@@ -6,8 +6,8 @@ var r = n(255367),
   i = n(73800),
   l = n(120356),
   o = n.n(l),
-  a = n(442837),
-  s = n(481060),
+  s = n(442837),
+  a = n(481060),
   c = n(616780),
   u = n(619915),
   d = n(620662),
@@ -17,8 +17,8 @@ var r = n(255367),
   g = n(496675),
   m = n(158776),
   b = n(979651),
-  _ = n(823379),
-  O = n(355363),
+  O = n(823379),
+  _ = n(355363),
   y = n(449932),
   C = n(561788),
   v = n(876548),
@@ -36,7 +36,7 @@ function P(e) {
     onAction: f,
     voiceStates: g,
     isChannelSelected: b,
-    shouldShowSettingNudge: O
+    shouldShowSettingNudge: _
   } = e, C = i.useMemo(() => {
     var e;
     return null == g || g.length > 50 ? {} : {
@@ -51,24 +51,24 @@ function P(e) {
   (0, c.$)(C);
   let v = (0, u.ZP)(o),
     j = Array.from((0, u.uF)(v).values()),
-    I = null != (t = null == g ? void 0 : g.filter(_.lm)) ? t : [],
+    I = null != (t = null == g ? void 0 : g.filter(O.lm)) ? t : [],
     P = e => t => [E.IIU.PLAYING, E.IIU.WATCHING].includes(t.type) && (null != t.assets || null != t.state || null != t.details || null != t.party) && (null == t.session_id || t.session_id === e.voiceState.sessionId) || t.type === E.IIU.LISTENING,
-    w = (0, a.e7)([m.Z], () => {
+    w = (0, s.e7)([m.Z], () => {
       let e = {};
       return I.forEach(t => {
         let n = m.Z.findActivity(t.user.id, P(t));
         if (null != n && !(0, h.Z)(n)) {
           var r, i, l, o;
-          let a = "".concat(null != (i = n.application_id) ? i : "", ":").concat(null != (l = null == (r = n.party) ? void 0 : r.id) ? l : t.user.id),
-            s = null != (o = e[a]) ? o : {
+          let s = "".concat(null != (i = n.application_id) ? i : "", ":").concat(null != (l = null == (r = n.party) ? void 0 : r.id) ? l : t.user.id),
+            a = null != (o = e[s]) ? o : {
               members: [],
               activity: n
             };
-          s.members.push(t), (0, d.Z)(s.activity, E.xjy.JOIN) || (s.activity = n), e[a] = s
+          a.members.push(t), (0, d.Z)(a.activity, E.xjy.JOIN) || (a.activity = n), e[s] = a
         }
       }), Object.values(e)
-    }, [I], a.pF);
-  return w.length + j.length === 0 ? null : (0, r.jsxs)(s.Ttm, {
+    }, [I], s.pF);
+  return w.length + j.length === 0 ? null : (0, r.jsxs)(a.Ttm, {
     className: x.container,
     children: [(0, r.jsx)(N, {
       channel: o,
@@ -95,17 +95,17 @@ function P(e) {
         members: n,
         onAction: f
       }, t)
-    }), O && (0, r.jsxs)(r.Fragment, {
+    }), _ && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("div", {
         className: x.headerDivider
       }), (0, r.jsx)("div", {
         className: x.settingNudgeText,
-        children: (0, r.jsx)(s.Text, {
+        children: (0, r.jsx)(a.Text, {
           variant: "text-xs/normal",
           tag: "span",
           children: S.intl.format(S.t.ePyoY2, {
             onClick: () => {
-              (0, s.ZDy)(async () => {
+              (0, a.ZDy)(async () => {
                 let {
                   default: e
                 } = await n.e("59500").then(n.bind(n, 241420));
@@ -155,19 +155,19 @@ function N(e) {
     channel: t,
     isChannelSelected: n,
     voiceStatesCount: i
-  } = e, l = (0, a.e7)([g.Z], () => !g.Z.can(E.Plq.CONNECT, t)), s = (0, a.e7)([b.Z], () => b.Z.hasVideo(t.id)), c = (0, O.ZP)({
+  } = e, l = (0, s.e7)([g.Z], () => !g.Z.can(E.Plq.CONNECT, t)), a = (0, s.e7)([b.Z], () => b.Z.hasVideo(t.id)), c = (0, _.ZP)({
     channel: t,
     locked: l,
-    video: s,
+    video: a,
     selected: n
-  }), u = (0, a.e7)([f.Z], () => f.Z.getGuild(t.guild_id));
+  }), u = (0, s.e7)([f.Z], () => f.Z.getGuild(t.guild_id));
   return null == (0, p.KS)(t, u) ? null : (0, r.jsxs)("div", {
     className: o()(x.popoutHeaderContainer, I.popoutHeaderContainer),
     children: [(0, r.jsx)(C.Z, {
       channel: t
     }), c ? (0, r.jsx)(v.Z, {
       userCount: i,
-      video: s,
+      video: a,
       channel: t
     }) : (0, r.jsx)(j.Z, {
       userCount: i

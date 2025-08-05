@@ -1,4 +1,5 @@
-/** Chunk was on 94313 **/
+/** Chunk was on web.js **/
+"use strict";
 e.exports = {
   spine: "spine__9271d",
   systemMessageSpine: "systemMessageSpine__9271d",

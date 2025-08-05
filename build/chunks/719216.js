@@ -1,19 +1,20 @@
-/** Chunk was on 66005 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
-  Z: () => s
+  Z: () => l
 });
 var r = n(255367);
 n(73800);
 var i = n(763472),
-  l = n(49012),
-  a = n(591759),
-  o = n(915863);
+  a = n(49012),
+  o = n(591759),
+  s = n(915863);
 
-function s(e) {
+function l(e) {
   let {
     activity: t,
     color: n,
-    user: s,
+    user: l,
     look: c,
     onAction: u
   } = e;
@@ -22,22 +23,22 @@ function s(e) {
     try {
       let r = await (0, i.sd)(e, t);
       if (r.button_urls.length <= n) return;
-      let o = r.button_urls[n];
-      if ("string" != typeof o) return;
-      let s = a.Z.safeParseWithQuery(o);
-      if (null == s || null == s.protocol || null == s.hostname) return;
-      (0, l.q)({
-        href: a.Z.format(s),
+      let s = r.button_urls[n];
+      if ("string" != typeof s) return;
+      let l = o.Z.safeParseWithQuery(s);
+      if (null == l || null == l.protocol || null == l.hostname) return;
+      (0, a.q)({
+        href: o.Z.format(l),
         trusted: !1
       })
     } catch (e) {}
   }
   return (0, r.jsx)(r.Fragment, {
-    children: t.buttons.map((e, i) => (0, r.jsx)(o.Z, {
+    children: t.buttons.map((e, i) => (0, r.jsx)(s.Z, {
       color: n,
       look: c,
       onClick: () => {
-        null == u || u(), d(t, s.id, i)
+        null == u || u(), d(t, l.id, i)
       },
       children: e
     }, "customButton-".concat(i)))

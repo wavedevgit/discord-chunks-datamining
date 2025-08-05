@@ -1,5 +1,5 @@
-/** Chunk was on 79010 **/
-n.exports = {
+/** Chunk was on 82107 **/
+e.exports = {
   card: "card__88264",
   lurking: "lurking__88264",
   padding: "padding__88264",

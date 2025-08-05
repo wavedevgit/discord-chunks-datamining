@@ -1,4 +1,5 @@
-/** Chunk was on 91396 **/
+/** Chunk was on web.js **/
+"use strict";
 e.exports = {
   icon: "icon__761e5",
   focusBlock: "focusBlock__761e5",

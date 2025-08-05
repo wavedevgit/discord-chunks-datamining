@@ -23,8 +23,8 @@ var r = t(255367),
   h = t(263519),
   x = t(430824),
   y = t(55563),
-  O = t(551428),
-  P = t(626135),
+  P = t(551428),
+  O = t(626135),
   I = t(768581),
   k = t(73346),
   S = t(624138),
@@ -106,7 +106,7 @@ function U(e) {
     analyticsLocations: f
   } = (0, p.ZP)(d.Z.APP_STOREFRONT);
   return i.useEffect(() => {
-    0 !== j.length && P.default.track(D.rMx.VIEW_PREMIUM_APP_STOREFRONT, {
+    0 !== j.length && O.default.track(D.rMx.VIEW_PREMIUM_APP_STOREFRONT, {
       application_id: n.id,
       sku_ids: j,
       location_stack: f
@@ -173,8 +173,8 @@ function B(e) {
     subscriptionType: p,
     onDetails: j
   } = e, {
-    data: O
-  } = (0, g.H)(d.skuId), P = null == O ? void 0 : O[0], I = (0, u.e7)([y.Z], () => y.Z.get(d.skuId), [d.skuId]), k = (0, u.e7)([x.Z], () => x.Z.getGuild(c), [c]), S = (0, u.e7)([y.Z], () => y.Z.getParentSKU(d.skuId), [d.skuId]), w = (0, b.Ev)(S, c), N = null == w ? void 0 : w.subscription, E = (0, b.cr)(S, c), R = null != N && (0, v.Jf)(N, I), U = null != E && (null == w || null == (n = w.subscriptionPlan) ? void 0 : n.id) !== (null == E ? void 0 : E.subscriptionPlan.id), L = !1 === R && (null == E ? void 0 : E.subscriptionPlan.skuId) === d.skuId, B = (null == w ? void 0 : w.subscriptionPlan.skuId) === d.skuId, {
+    data: P
+  } = (0, g.H)(d.skuId), O = null == P ? void 0 : P[0], I = (0, u.e7)([y.Z], () => y.Z.get(d.skuId), [d.skuId]), k = (0, u.e7)([x.Z], () => x.Z.getGuild(c), [c]), S = (0, u.e7)([y.Z], () => y.Z.getParentSKU(d.skuId), [d.skuId]), w = (0, b.Ev)(S, c), N = null == w ? void 0 : w.subscription, E = (0, b.cr)(S, c), R = null != N && (0, v.Jf)(N, I), U = null != E && (null == w || null == (n = w.subscriptionPlan) ? void 0 : n.id) !== (null == E ? void 0 : E.subscriptionPlan.id), L = !1 === R && (null == E ? void 0 : E.subscriptionPlan.skuId) === d.skuId, B = (null == w ? void 0 : w.subscriptionPlan.skuId) === d.skuId, {
     openModal: z,
     subscriptionPurchaseButtonState: G,
     isGuildSubscribed: q
@@ -194,9 +194,9 @@ function B(e) {
     appId: s,
     subscriptionType: p,
     skuId: d.skuId,
-    subscriptionPlan: P,
+    subscriptionPlan: O,
     state: G
-  })), [s, p, d.skuId, P, G]), X = i.useMemo(() => {
+  })), [s, p, d.skuId, O, G]), X = i.useMemo(() => {
     if (U && (null == N ? void 0 : N.currentPeriodEnd) != null) {
       let e = F.format(null == N ? void 0 : N.currentPeriodEnd);
       if (B) return M.intl.formatToPlainString(M.t.EV2lZ2, {
@@ -234,7 +234,7 @@ function B(e) {
       (0, a.ZDy)(async () => {
         let {
           SubscriptionDetailsModal: e
-        } = await Promise.all([t.e("86282"), t.e("93287")]).then(t.bind(t, 519896));
+        } = await Promise.resolve().then(t.bind(t, 519896));
         return n => (0, r.jsx)(e, A({
           appId: s,
           subscriptionType: p,
@@ -254,10 +254,10 @@ function z(e) {
     onDetails: b
   } = e, {
     analyticsLocations: v
-  } = (0, p.ZP)(d.Z.APP_STOREFRONT), g = (0, u.e7)([O.Z], () => O.Z.getForSKU(c), [c]), f = (0, u.e7)([y.Z], () => y.Z.get(c), [c]), h = (0, E.M)(c);
+  } = (0, p.ZP)(d.Z.APP_STOREFRONT), g = (0, u.e7)([P.Z], () => P.Z.getForSKU(c), [c]), f = (0, u.e7)([y.Z], () => y.Z.get(c), [c]), h = (0, E.M)(c);
   if (null == f) return null;
   let x = null != (i = f.name) ? i : "",
-    P = null != (l = null == g || null == (n = g.description) ? void 0 : n.trim()) ? l : void 0,
+    O = null != (l = null == g || null == (n = g.description) ? void 0 : n.trim()) ? l : void 0,
     I = (null == g ? void 0 : g.headerBackground) != null && null != (o = w.Z.toURLSafe((0, k._W)(m, g.headerBackground, 256))) ? o : void 0,
     N = f.type === D.epS.DURABLE && h,
     Z = f.type === D.epS.DURABLE ? N ? M.intl.string(M.t.bm82mp) : M.intl.string(M.t["6gprwc"]) : void 0,
@@ -266,14 +266,14 @@ function z(e) {
     } = f;
   return null == R ? null : (0, r.jsx)(s.I, {
     title: x,
-    description: P,
+    description: O,
     headerImage: I,
     availabilityLabel: Z,
-    onDetails: null != b ? b : (0, S.Ew)(P) ? void 0 : () => {
+    onDetails: null != b ? b : (0, S.Ew)(O) ? void 0 : () => {
       (0, a.ZDy)(async () => {
         let {
           ItemDetailsModal: e
-        } = await t.e("69796").then(t.bind(t, 147496));
+        } = await Promise.resolve().then(t.bind(t, 147496));
         return n => (0, r.jsx)(e, A({
           appId: m,
           skuId: c

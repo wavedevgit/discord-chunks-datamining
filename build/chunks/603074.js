@@ -35,19 +35,19 @@ function g(e) {
     listPadding: A,
     renderHeader: N,
     defaultSoundsOnly: C
-  } = e, R = (0, s.e7)([p.Z], () => p.Z.isFetchingSounds() || p.Z.isFetchingDefaultSounds()), {
-    analyticsLocations: P
+  } = e, w = (0, s.e7)([p.Z], () => p.Z.isFetchingSounds() || p.Z.isFetchingDefaultSounds()), {
+    analyticsLocations: R
   } = (0, u.ZP)(c.Z.SOUNDBOARD_POPOUT);
   return i.useEffect(() => {
     _.w(), f.DZ.loadIfNecessary(), T || (0, d.ql)("")
   }, [T]), (0, r.jsx)(u.Gt, {
-    value: P,
+    value: R,
     children: (0, r.jsx)(l.VqE, {
       className: o()(m.picker, {
-        [m.fetching]: R,
+        [m.fetching]: w,
         [m.inExpressionPicker]: T
       }),
-      children: R ? (0, r.jsx)(l.$jN, {}) : (0, r.jsx)(h.Z, {
+      children: w ? (0, r.jsx)(l.$jN, {}) : (0, r.jsx)(h.Z, {
         guildId: t,
         channel: n,
         onClose: g,

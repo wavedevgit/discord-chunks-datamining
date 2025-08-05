@@ -1,21 +1,21 @@
-/** Chunk was on 94363 **/
+/** Chunk was on 25548 **/
 n.d(t, {
-  Z: () => i
+  Z: () => r
 });
-var r = n(570140);
-let i = {
+var i = n(570140);
+let r = {
   toggleMembersSection() {
-    r.Z.dispatch({
+    i.Z.dispatch({
       type: "CHANNEL_TOGGLE_MEMBERS_SECTION"
     })
   },
   toggleUserProfileSidebarSection() {
-    r.Z.dispatch({
+    i.Z.dispatch({
       type: "USER_PROFILE_SIDEBAR_TOGGLE_SECTION"
     })
   },
   toggleSummariesSection() {
-    r.Z.dispatch({
+    i.Z.dispatch({
       type: "CHANNEL_TOGGLE_SUMMARIES_SECTION"
     })
   }

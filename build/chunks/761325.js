@@ -1,4 +1,5 @@
-/** Chunk was on 60173 **/
+/** Chunk was on web.js **/
+"use strict";
 e.exports = {
   container: "container__5aa3a",
   tiles: "tiles__5aa3a",

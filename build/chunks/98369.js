@@ -1,123 +1,136 @@
-/** Chunk was on 33397 **/
-r.d(t, {
-  Z: () => R
-}), r(388685), r(410992), r(227481), r(730884), r(20464), r(341884), r(364341), r(629680), r(505025), r(918970), r(121784), r(644351), r(146733);
-var n, l, i, u = r(442837),
-  a = r(46973),
-  s = r(570140),
-  o = r(569545),
-  c = r(314897),
-  d = r(19780),
-  f = r(959457),
-  E = r(630759),
-  y = r(729303),
-  g = r(651941),
-  p = r(981631);
-let m = new Map,
-  b = new Map,
-  _ = !1,
-  S = null;
+/** Chunk was on web.js **/
+"use strict";
+n.d(t, {
+  Z: () => w
+}), n(388685), n(410992), n(227481), n(730884), n(20464), n(341884), n(364341), n(629680), n(505025), n(918970), n(121784), n(644351), n(146733);
+var r, i = n(442837),
+  a = n(46973),
+  o = n(570140),
+  s = n(569545),
+  l = n(314897),
+  c = n(19780),
+  u = n(959457),
+  d = n(630759),
+  f = n(729303),
+  _ = n(651941),
+  p = n(981631);
 
-function h() {
-  return f.Z.getAllActiveStreamKeys().reduce((e, t) => {
-    let {
-      ownerId: r
-    } = (0, o.my)(t), n = !0 === m.get(r), l = b.get(t) !== n;
-    return b.set(t, n), !!l || e
-  }, !1)
+function h(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: !0,
+    configurable: !0,
+    writable: !0
+  }) : e[t] = n, e
+}
+let m = new Map,
+  g = new Map,
+  E = !1,
+  b = null;
+
+function y(e) {
+  let t = c.Z.getSecureFramesRosterMapEntry(e);
+  if (null == t) return !1;
+  let n = new Uint8Array(t),
+    r = _.Z.isKeyVerified(e, n) || f.Z.isKeyVerified(e, n),
+    i = (0, d.UB)(e, [c.Z, u.Z]),
+    a = r && !i,
+    o = a !== m.get(e);
+  return m.set(e, a), o
 }
 
 function O() {
-  var e;
-  let t = null != (e = d.Z.getUserIds()) ? e : new Set,
-    r = c.default.getId(),
-    n = !0;
-  for (let e of t)
-    if (r !== e && !0 !== m.get(e)) {
-      n = !1;
-      break
-    } let l = n !== _;
-  return _ = n, l
+  return u.Z.getAllActiveStreamKeys().reduce((e, t) => {
+    let {
+      ownerId: n
+    } = (0, s.my)(t), r = !0 === m.get(n), i = g.get(t) !== r;
+    return g.set(t, r), !!i || e
+  }, !1)
 }
 
-function v(e) {
+function v() {
+  var e;
+  let t = null != (e = c.Z.getUserIds()) ? e : new Set,
+    n = l.default.getId(),
+    r = !0;
+  for (let e of t)
+    if (n !== e && !0 !== m.get(e)) {
+      r = !1;
+      break
+    } let i = r !== E;
+  return E = r, i
+}
+
+function I(e) {
   let {
     userId: t
   } = e;
-  if (c.default.getId() === t) return !1;
-  let r = function(e) {
-      let t = d.Z.getSecureFramesRosterMapEntry(e);
-      if (null == t) return !1;
-      let r = new Uint8Array(t),
-        n = g.Z.isKeyVerified(e, r) || y.Z.isKeyVerified(e, r),
-        l = (0, E.UB)(e, [d.Z, f.Z]),
-        i = n && !l,
-        u = i !== m.get(e);
-      return m.set(e, i), u
-    }(t),
-    n = h(),
-    l = O();
-  return r || n || l
+  if (l.default.getId() === t) return !1;
+  let n = y(t),
+    r = O(),
+    i = v();
+  return n || r || i
 }
 
-function j() {
-  m.clear(), b.clear(), _ = !1
+function T(e) {
+  let {
+    userIds: t
+  } = e, n = l.default.getId(), r = t.reduce((e, t) => n === t ? e : !!I({
+    userId: t
+  }) || e, !1), i = O(), a = v();
+  return r || i || a
 }
-class N extends(n = u.ZP.Store) {
+
+function S() {
+  m.clear(), g.clear(), E = !1
+}
+
+function A(e) {
+  let {
+    channelId: t
+  } = e;
+  if (t === b) return !1;
+  b = t, S()
+}
+
+function N(e) {
+  let {
+    streamKey: t,
+    state: n,
+    context: r
+  } = e;
+  if (n !== p.hes.DISCONNECTED) return !1;
+  switch (r) {
+    case a.Yn.STREAM:
+      if (null == t) return !1;
+      return g.delete(t), v();
+    case a.Yn.DEFAULT:
+      S()
+  }
+}
+class C extends(r = i.ZP.Store) {
   initialize() {
-    this.waitFor(y.Z, g.Z, d.Z, f.Z)
+    this.waitFor(f.Z, _.Z, c.Z, u.Z)
   }
   isCallVerified() {
-    return _
+    return E
   }
   isStreamVerified(e) {
-    return b.get(e)
+    return g.get(e)
   }
   isUserVerified(e) {
     return m.get(e)
   }
 }
-i = "SecureFramesVerifiedStore", (l = "displayName") in N ? Object.defineProperty(N, l, {
-  value: i,
-  enumerable: !0,
-  configurable: !0,
-  writable: !0
-}) : N[l] = i;
-let R = new N(s.Z, {
-  CONNECTION_OPEN: j,
-  VOICE_CHANNEL_SELECT: function(e) {
-    let {
-      channelId: t
-    } = e;
-    if (t === S) return !1;
-    S = t, j()
-  },
-  RTC_CONNECTION_STATE: function(e) {
-    let {
-      streamKey: t,
-      state: r,
-      context: n
-    } = e;
-    if (r !== p.hes.DISCONNECTED) return !1;
-    switch (n) {
-      case a.Yn.STREAM:
-        if (null == t) return !1;
-        return b.delete(t), O();
-      case a.Yn.DEFAULT:
-        j()
-    }
-  },
-  RTC_CONNECTION_ROSTER_MAP_UPDATE: function(e) {
-    let {
-      userIds: t
-    } = e, r = c.default.getId(), n = t.reduce((e, t) => r === t ? e : !!v({
-      userId: t
-    }) || e, !1), l = h(), i = O();
-    return n || l || i
-  },
-  SECURE_FRAMES_TRANSIENT_KEY_CREATE: v,
-  SECURE_FRAMES_TRANSIENT_KEY_DELETE: v,
-  SECURE_FRAMES_VERIFIED_KEY_CREATE: v,
-  SECURE_FRAMES_VERIFIED_KEY_DELETE: v,
-  SECURE_FRAMES_USER_VERIFIED_KEYS_DELETE: v
+h(C, "displayName", "SecureFramesVerifiedStore");
+let w = new C(o.Z, {
+  CONNECTION_OPEN: S,
+  VOICE_CHANNEL_SELECT: A,
+  RTC_CONNECTION_STATE: N,
+  RTC_CONNECTION_ROSTER_MAP_UPDATE: T,
+  SECURE_FRAMES_TRANSIENT_KEY_CREATE: I,
+  SECURE_FRAMES_TRANSIENT_KEY_DELETE: I,
+  SECURE_FRAMES_VERIFIED_KEY_CREATE: I,
+  SECURE_FRAMES_VERIFIED_KEY_DELETE: I,
+  SECURE_FRAMES_USER_VERIFIED_KEYS_DELETE: I
 })

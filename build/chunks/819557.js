@@ -1,23 +1,24 @@
-/** Chunk was on 60173 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
   q: () => c,
-  z: () => s
+  z: () => l
 }), n(953529);
 var r = n(255367);
 n(73800);
 var i = n(120356),
-  l = n.n(i),
-  a = n(481060),
-  o = n(916704);
+  a = n.n(i),
+  o = n(481060),
+  s = n(916704);
 
-function s(e) {
+function l(e) {
   let {
     children: t
   } = e;
   return (0, r.jsx)("div", {
-    className: o.cellGroup,
+    className: s.cellGroup,
     children: (0, r.jsx)("div", {
-      className: o.content,
+      className: s.content,
       children: t
     })
   })
@@ -28,31 +29,31 @@ function c(e) {
     icon: t,
     title: n,
     description: i,
-    iconClassName: s,
+    iconClassName: l,
     color: c,
     listType: u = "icon",
     index: d
   } = e;
   return (0, r.jsxs)("div", {
-    className: o.cell,
-    children: ["numbered" === u && null != d ? (0, r.jsx)(a.X6q, {
+    className: s.cell,
+    children: ["numbered" === u && null != d ? (0, r.jsx)(o.X6q, {
       variant: "heading-md/semibold",
       color: "text-brand",
-      className: o.number,
+      className: s.number,
       children: d + 1
     }) : null != t && (0, r.jsx)("div", {
-      className: o.iconContainer,
+      className: s.iconContainer,
       children: (0, r.jsx)(t, {
         color: null != c ? c : "currentColor",
-        className: l()(o.icon, s)
+        className: a()(s.icon, l)
       })
     }), (0, r.jsxs)("div", {
-      className: o.textContainer,
-      children: [(0, r.jsx)(a.Text, {
+      className: s.textContainer,
+      children: [(0, r.jsx)(o.Text, {
         variant: "text-md/semibold",
         color: "header-primary",
         children: n
-      }), null != i && (0, r.jsx)(a.Text, {
+      }), null != i && (0, r.jsx)(o.Text, {
         variant: "text-xs/medium",
         color: "text-secondary",
         children: i

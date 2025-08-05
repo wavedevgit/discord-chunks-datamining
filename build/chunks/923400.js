@@ -1,10 +1,10 @@
 /** Chunk was on 73628 **/
 A.d(t, {
-  M: () => a
+  M: () => l
 });
 var n = A(83439),
   r = A(100781);
-let a = [{
+let l = [{
   name: "cool-frog",
   alt: "A cool frog",
   data: n.Z

@@ -1,6 +1,6 @@
 /** Chunk was on 24231 **/
 n.d(t, {
-  Z: () => h
+  Z: () => x
 }), n(388685);
 var r = n(73800),
   i = n(749210),
@@ -12,28 +12,28 @@ var r = n(73800),
   d = n(427679),
   u = n(190378);
 
-function h(e, t) {
+function x(e, t) {
   let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : null,
-    [h, g] = r.useState(!1),
-    [_, m] = r.useState(null),
+    [x, m] = r.useState(!1),
+    [h, g] = r.useState(null),
     b = r.useMemo(() => d.Z.getStageInstanceByChannel(null == e ? void 0 : e.id), [null == e ? void 0 : e.id]),
-    f = (0, s.J)(e);
+    p = (0, s.J)(e);
   return {
-    loading: h,
-    error: _,
+    loading: x,
+    error: h,
     onSave: async r => {
       let {
         topic: s,
         privacyLevel: d,
-        sendStartNotification: h
+        sendStartNotification: x
       } = r;
       if (null != e && "" !== s && null != d) {
-        g(!0), m(null), null != n && (i.Z.selectGuild(n), l.default.selectVoiceChannel(e.id));
+        m(!0), g(null), null != n && (i.Z.selectGuild(n), l.default.selectVoiceChannel(e.id));
         try {
           let n;
-          null != b ? n = await c.Ef(e, s, d) : (n = await c.HO(e, s, d, null != h && h), f && o.Kw(u.v.LIVE_STAGE_NOTIFICATION_BADGE)), t(n)
+          null != b ? n = await c.Ef(e, s, d) : (n = await c.HO(e, s, d, null != x && x), p && o.Kw(u.v.LIVE_STAGE_NOTIFICATION_BADGE)), t(n)
         } catch (e) {
-          m(new a.Hx(e)), g(!1)
+          g(new a.Hx(e)), m(!1)
         }
       }
     }

@@ -1,4 +1,4 @@
-/** Chunk was on 70663 **/
+/** Chunk was on 92357 **/
 n.d(t, {
   m: () => E
 });
@@ -6,8 +6,8 @@ var r = n(255367),
   i = n(73800),
   l = n(399606),
   o = n(704215),
-  a = n(692547),
-  s = n(481060),
+  s = n(692547),
+  a = n(481060),
   c = n(239091),
   u = n(266454),
   d = n(45966),
@@ -17,8 +17,8 @@ var r = n(255367),
   g = n(306680),
   m = n(709054),
   b = n(540126),
-  _ = n(434479),
-  O = n(981631),
+  O = n(434479),
+  _ = n(981631),
   y = n(176505),
   C = n(490897),
   v = n(388032),
@@ -34,9 +34,9 @@ function E(e) {
     if (null == n) return !1;
     let r = m.default.extractTimestamp(n);
     return null != e && e > r
-  }), T = i.useCallback(() => {
-    (0, f.uL)(O.Z5c.CHANNEL(t.id, S ? y.oC.CUSTOMIZE_COMMUNITY : y.oC.CHANNEL_BROWSER))
-  }, [t.id, S]), Z = i.useCallback(e => {
+  }), Z = i.useCallback(() => {
+    (0, f.uL)(_.Z5c.CHANNEL(t.id, S ? y.oC.CUSTOMIZE_COMMUNITY : y.oC.CHANNEL_BROWSER))
+  }, [t.id, S]), T = i.useCallback(e => {
     (0, c.jW)(e, async () => {
       let {
         default: e
@@ -75,21 +75,21 @@ function E(e) {
       }
     })
   }, [t]), A = null;
-  return x && !P && !N || E || w || (A = (0, r.jsx)(s.IGR, {
-    color: a.Z.colors.BADGE_BRAND_BG.css,
+  return x && !P && !N || E || w || (A = (0, r.jsx)(a.IGR, {
+    color: s.Z.colors.BADGE_BRAND_BG.css,
     text: v.intl.string(v.t.y2b7CA),
     className: j.newChannel
-  })), (0, r.jsx)(_.m, {
+  })), (0, r.jsx)(O.m, {
     id: "channels-".concat(t.id),
-    renderIcon: e => (0, r.jsx)(s.H$4, {
+    renderIcon: e => (0, r.jsx)(a.H$4, {
       size: "md",
       color: "currentColor",
       className: e
     }),
     text: S ? v.intl.string(v.t.h9mGOD) : v.intl.string(v.t.et6wam),
     selected: E,
-    onClick: T,
-    onContextMenu: Z,
+    onClick: Z,
+    onContextMenu: T,
     trailing: A
   })
 }

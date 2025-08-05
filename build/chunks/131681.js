@@ -1,4 +1,5 @@
-/** Chunk was on 25292 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
   U: () => i
 });

@@ -1,22 +1,23 @@
-/** Chunk was on 94313 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
-  A: () => l
+  A: () => a
 });
 var r = n(981631),
   i = n(388032);
 
-function l(e) {
+function a(e) {
   let {
     application: t,
     username: n,
-    usernameHook: l = r.dG4
+    usernameHook: a = r.dG4
   } = e;
   return null != t ? i.intl.format(i.t.dXdgnp, {
     username: n,
     applicationName: t.name,
-    usernameHook: l
+    usernameHook: a
   }) : i.intl.format(i.t.O829Ul, {
     username: n,
-    usernameHook: l
+    usernameHook: a
   })
 }

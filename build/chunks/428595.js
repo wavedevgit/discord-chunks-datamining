@@ -29,9 +29,9 @@ var r = n(392711),
   A = n(594199),
   N = n(97734),
   C = n(303694),
-  R = n(660199),
-  P = n(364458),
-  w = n(981631),
+  w = n(660199),
+  R = n(364458),
+  P = n(981631),
   D = n(689079),
   L = n(388032);
 
@@ -44,7 +44,7 @@ function x(e, t, n) {
   }) : e[t] = n, e
 }
 
-function M(e) {
+function k(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -57,7 +57,7 @@ function M(e) {
   return e
 }
 
-function k(e, t) {
+function j(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -68,18 +68,18 @@ function k(e, t) {
   return n
 }
 
-function j(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : k(Object(t)).forEach(function(n) {
+function M(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : j(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 let U = /^( *>>> +([\s\S]*))|^( *>(?!>>) +[^\n]*(\n *>(?!>>) +[^\n]*)*\n?)/,
   G = /^$|\n *$/,
   B = /^ *>>> ?/,
-  V = /^ *> ?/gm,
+  Z = /^ *> ?/gm,
   F = /^((?:https?|steam):\/\/[^\s<]+[^<.,:;"'\]\s])/;
 
-function Z(e) {
+function V(e) {
   let t = (0, v.yw)(e[1]);
   if (null == t) return {
     type: "text",
@@ -107,10 +107,10 @@ let H = e => {
   W = {
     newline: o().defaultRules.newline,
     paragraph: o().defaultRules.paragraph,
-    escape: j(M({}, o().defaultRules.escape), {
+    escape: M(k({}, o().defaultRules.escape), {
       match: (e, t, n) => !1 === t.allowEscape ? null : o().defaultRules.escape.match(e, t, n)
     }),
-    blockQuote: j(M({}, o().defaultRules.blockQuote), {
+    blockQuote: M(k({}, o().defaultRules.blockQuote), {
       requiredFirstCharacters: [" ", ">"],
       match(e, t) {
         let {
@@ -126,7 +126,7 @@ let H = e => {
       parse(e, t, n) {
         let r = e[0],
           i = !!B.exec(r),
-          a = i ? B : V,
+          a = i ? B : Z,
           o = r.replace(a, ""),
           s = n.inQuote || !1,
           l = n.inline || !1;
@@ -142,14 +142,14 @@ let H = e => {
       }
     }),
     link: v.ZP,
-    autolink: j(M({}, o().defaultRules.autolink), {
-      parse: Z
+    autolink: M(k({}, o().defaultRules.autolink), {
+      parse: V
     }),
-    mailto: j(M({}, o().defaultRules.mailto), {
+    mailto: M(k({}, o().defaultRules.mailto), {
       match: o().inlineRegex(/^<([^\s<>@]+@[^\s<>@]+\.[^\s<>@]+)>/),
       requiredFirstCharacters: ["<"]
     }),
-    tel: j(M({}, o().defaultRules.mailto), {
+    tel: M(k({}, o().defaultRules.mailto), {
       requiredFirstCharacters: ["<"],
       match: o().inlineRegex(/^<((?:(?:tel|sms):\+?|\+)(?:(?:[0-9]|\([0-9]+\)))(?:[- .\/]?(?:[0-9]|\([0-9]+\)))+)>/),
       parse(e) {
@@ -165,7 +165,7 @@ let H = e => {
         }
       }
     }),
-    url: j(M({}, o().defaultRules.url), {
+    url: M(k({}, o().defaultRules.url), {
       requiredFirstCharacters: ["h", "s"],
       match(e, t) {
         if (!t.inline) return null;
@@ -185,17 +185,17 @@ let H = e => {
         }
         return n
       },
-      parse: Z
+      parse: V
     }),
     strong: o().defaultRules.strong,
     em: o().defaultRules.em,
     u: o().defaultRules.u,
     br: o().defaultRules.br,
     text: A.ZP,
-    inlineCode: j(M({}, o().defaultRules.inlineCode), {
+    inlineCode: M(k({}, o().defaultRules.inlineCode), {
       parse(e, t, n) {
         let r = o().defaultRules.inlineCode.parse(e, t, n);
-        return !0 === n.parseInlineCodeChildContent ? j(M({}, r), {
+        return !0 === n.parseInlineCodeChildContent ? M(k({}, r), {
           validationChildContent: t(r.content, n)
         }) : r
       }
@@ -284,7 +284,7 @@ let H = e => {
           r = null != (s = g.ZP.getNickname(o.getGuildId(), n.channelId, a)) ? s : E.ZP.getName(a)
         }
         let l = e[1],
-          c = null != l && w.Xyh.test(l.trim()),
+          c = null != l && P.Xyh.test(l.trim()),
           u = c && n.unknownUserMentionPlaceholder ? "@".concat(L.intl.string(L.t.sKdZ6e)) : e[0];
         return {
           userId: i,
@@ -394,9 +394,9 @@ let H = e => {
     timestamp: {
       order: A.ZP.order - 1,
       requiredFirstCharacters: ["<"],
-      match: e => R.Ay.exec(e),
+      match: e => w.Ay.exec(e),
       parse(e) {
-        let [t, n, r] = e, i = (0, R.ZB)(n, r);
+        let [t, n, r] = e, i = (0, w.ZB)(n, r);
         return null == i ? {
           type: "text",
           content: t
@@ -412,7 +412,7 @@ let H = e => {
     spoiler: {
       order: A.ZP.order,
       requiredFirstCharacters: ["|"],
-      match: e => w.$92.exec(e),
+      match: e => P.$92.exec(e),
       parse: (e, t, n) => ({
         content: t(e[1], n),
         channelId: n.channelId
@@ -421,7 +421,7 @@ let H = e => {
     staticRouteLink: {
       order: A.ZP.order,
       requiredFirstCharacters: ["<"],
-      match: e => w.PEY.exec(e),
+      match: e => P.PEY.exec(e),
       parse(e, t, n) {
         var r;
         let [, i, a] = e, o = (0, C.l)(i), s = (0, C.W)(i, a, null == (r = Y(n)) ? void 0 : r.id);
@@ -447,11 +447,11 @@ let H = e => {
     list: I.Z,
     subtext: S.Z
   },
-  K = (0, P.Z)([W, N.Z]),
+  K = (0, R.Z)([W, N.Z]),
   z = i().omit(K, ["inlineCode", "codeBlock", "br", "blockQuote", "subtext", "soundboard"]),
   q = i().omit(K, ["inlineCode", "codeBlock", "br", "blockQuote", "autolink", "url", "attachmentLink", "mention", "roleMention", "channelMention", "channelOrMessageUrl", "mediaPostLink", "subtext", "soundboard", "gameMention"]),
-  X = i().omit(K, ["codeBlock", "br", "mention", "channel", "roleMention", "attachmentLink", "subtext", "soundboard", "gameMention"]),
-  Q = i().omit((0, P.Z)([K, {
+  $ = i().omit(K, ["codeBlock", "br", "mention", "channel", "roleMention", "attachmentLink", "subtext", "soundboard", "gameMention"]),
+  X = i().omit((0, R.Z)([K, {
     inlineCode: {
       match(e, t, n) {
         let r = K.codeBlock.match(e, t, n);
@@ -461,8 +461,8 @@ let H = e => {
       }
     }
   }]), ["blockQuote", "codeBlock", "br"]),
-  J = i().omit(K, ["codeBlock", "br", "blockQuote"]),
-  $ = i().omit(K, ["codeBlock", "br", "attachmentLink", "mention", "roleMention", "channel", "paragraph", "newline", "subtext", "soundboard"]),
+  Q = i().omit(K, ["codeBlock", "br", "blockQuote"]),
+  J = i().omit(K, ["codeBlock", "br", "attachmentLink", "mention", "roleMention", "channel", "paragraph", "newline", "subtext", "soundboard"]),
   ee = i().omit(K, ["codeBlock", "blockQuote", "br"]),
   et = i().omit(K, ["codeBlock", "br", "inlineCode"]);
 
@@ -470,7 +470,7 @@ function en(e, t) {
   return 0 === e.length || 0 === t || "" === e.charAt(t - 1).trim()
 }
 let er = 10,
-  ei = (0, P.Z)([{
+  ei = (0, R.Z)([{
     highlightWord: {
       order: -1,
       match(e, t) {
@@ -488,7 +488,7 @@ let er = 10,
       parse(e, t, n) {
         var r;
         let i = null != (r = n.parseDepth) ? r : 0,
-          a = j(M({}, n), {
+          a = M(k({}, n), {
             parseDepth: i + 1
           }),
           o = t(e[2], a),
@@ -504,11 +504,11 @@ let er = 10,
     RULES: K,
     CHANNEL_TOPIC_RULES: z,
     VOICE_CHANNEL_STATUS_RULES: q,
-    EMBED_TITLE_RULES: X,
-    INLINE_REPLY_RULES: Q,
-    GUILD_VERIFICATION_FORM_RULES: J,
+    EMBED_TITLE_RULES: $,
+    INLINE_REPLY_RULES: X,
+    GUILD_VERIFICATION_FORM_RULES: Q,
     GUILD_EVENT_RULES: ee,
-    PROFILE_BIO_RULES: $,
+    PROFILE_BIO_RULES: J,
     AUTO_MODERATION_SYSTEM_MESSAGE_RULES: ei,
     NATIVE_SEARCH_RESULT_LINK_RULES: et
   }

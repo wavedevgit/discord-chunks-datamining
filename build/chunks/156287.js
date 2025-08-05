@@ -1,4 +1,4 @@
-/** Chunk was on 94312 **/
+/** Chunk was on 22988 **/
 e.exports = {
   table: "table_c3fe25",
   tableWithoutSeparators: "tableWithoutSeparators_c3fe25",

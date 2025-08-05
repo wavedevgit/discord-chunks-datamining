@@ -1,4 +1,4 @@
-/** Chunk was on 99922 **/
+/** Chunk was on 95626 **/
 e.exports = {
   table: "table__4126d",
   row: "row__4126d",

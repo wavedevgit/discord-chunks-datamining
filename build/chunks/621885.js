@@ -1,4 +1,4 @@
-/** Chunk was on 94312 **/
+/** Chunk was on 22988 **/
 e.exports = {
   label: "label__27da5",
   createLabel: "createLabel__27da5",

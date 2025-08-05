@@ -4,7 +4,7 @@ n.d(t, {
   Cy: () => D,
   DY: () => U,
   FG: () => S,
-  u: () => j
+  u: () => M
 }), n(415506), n(388685);
 var r, i = n(255367),
   a = n(73800),
@@ -84,8 +84,8 @@ var S = function(e) {
 let A = 16,
   N = 10,
   C = 8,
-  R = Object.freeze({}),
-  P = Object.freeze({
+  w = Object.freeze({}),
+  R = Object.freeze({
     top: E.tooltipTop,
     bottom: E.tooltipBottom,
     left: E.tooltipLeft,
@@ -99,7 +99,7 @@ let A = 16,
     red: E.tooltipRed
   });
 
-function w(e, t, n) {
+function P(e, t, n) {
   let r = "left" === e || "right" === e,
     i = r ? "top" : "left",
     a = r ? "top" : "left",
@@ -143,16 +143,16 @@ let D = e => {
         } = e;
         return (0, i.jsxs)(c.animated.div, {
           onClick: l,
-          className: s()(E.tooltip, P[null != t ? t : r], P[a], {
+          className: s()(E.tooltip, R[null != t ? t : r], R[a], {
             [E.tooltipDisablePointerEvents]: h
           }, u),
           style: y({}, p, d),
           children: [(0, i.jsx)("div", {
             className: s()(E.tooltipPointer, E.tooltipPointerBg, b),
-            style: w(null != t ? t : r, n, _)
+            style: P(null != t ? t : r, n, _)
           }), (0, i.jsx)("div", {
             className: s()(E.tooltipPointer, b),
-            style: w(null != t ? t : r, n, _)
+            style: P(null != t ? t : r, n, _)
           }), (0, i.jsx)("div", {
             className: s()(E.tooltipContent, {
               [E.tooltipContentAllowOverflow]: m
@@ -171,11 +171,11 @@ let D = e => {
     scale: 1,
     opacity: 0
   },
-  M = {
+  k = {
     scale: 1,
     opacity: 1
   },
-  k = e => {
+  j = e => {
     var {
       isVisible: t,
       onAnimationRest: n,
@@ -188,7 +188,7 @@ let D = e => {
       keys: e => e ? "tooltip" : "empty",
       config: _.F,
       from: s.enabled ? x : L,
-      enter: M,
+      enter: k,
       leave: s.enabled ? x : L,
       onRest: n
     }, "animate-always")((e, t) => t ? (0, i.jsx)(D, y({
@@ -196,7 +196,7 @@ let D = e => {
       targetElementRef: r
     }, o)) : null)
   };
-class j extends(r = a.Component) {
+class M extends(r = a.Component) {
   static getDerivedStateFromProps(e, t) {
     return t.shouldShowTooltip && null == e.text ? {
       shouldShowTooltip: !1
@@ -230,7 +230,7 @@ class j extends(r = a.Component) {
       text: n,
       "aria-label": r
     } = this.props;
-    if (null == n) return t(R);
+    if (null == n) return t(w);
     "string" == typeof r ? e = r : "string" == typeof n && !1 !== r && (e = n);
     let o = {
       onClick: this.handleClick,
@@ -270,7 +270,7 @@ class j extends(r = a.Component) {
       hideOnClick: p,
       tooltipPointerClassName: h
     } = this.props, m = (u.tq || u.Em) && !0 === _ && p, g = !1 !== c && !m || !0 === c, E = this.shouldShowTooltip(this.props, this.state) && this.hasDomElement, b = null;
-    return b = e instanceof Function ? E ? e() : null : e, (0, i.jsx)(k, {
+    return b = e instanceof Function ? E ? e() : null : e, (0, i.jsx)(j, {
       disableTooltipPointerEvents: g,
       targetElementRef: this.domElementRef,
       tooltipStyle: s,
@@ -333,7 +333,7 @@ class j extends(r = a.Component) {
     })
   }
 }
-b(j, "Colors", S), b(j, "defaultProps", {
+b(M, "Colors", S), b(M, "defaultProps", {
   hideOnClick: !0,
   position: "top",
   color: "primary",
@@ -349,7 +349,7 @@ let U = e => {
     className: n,
     element: r = "div"
   } = e, o = I(e, ["children", "className", "element"]);
-  return (0, i.jsx)(j, v(y({}, o), {
+  return (0, i.jsx)(M, v(y({}, o), {
     children: e => a.createElement(r, null != n ? v(y({}, e), {
       className: n
     }) : e, t)

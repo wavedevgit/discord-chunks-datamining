@@ -1,4 +1,5 @@
-/** Chunk was on 60173 **/
+/** Chunk was on web.js **/
+"use strict";
 e.exports = {
   root: "root_c8dbe9",
   sprite: "sprite_c8dbe9",

@@ -1,6 +1,7 @@
-/** Chunk was on 24022 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
-  Z: () => s
+  Z: () => i
 });
 let r = (0, n(818083).B)({
   kind: "user",
@@ -18,6 +19,6 @@ let r = (0, n(818083).B)({
   }]
 });
 
-function s(e) {
+function i(e) {
   return r.useExperiment(e)
 }

@@ -1,4 +1,5 @@
-/** Chunk was on 94313 **/
+/** Chunk was on web.js **/
+"use strict";
 e.exports = {
   messagePopoutContent: "messagePopoutContent_c00127",
   popoutContainer: "popoutContainer_c00127",

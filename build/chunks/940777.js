@@ -1,4 +1,4 @@
-/** Chunk was on 70663 **/
+/** Chunk was on 92357 **/
 n.d(t, {
   Z: () => R
 }), n(388685), n(539854);
@@ -6,8 +6,8 @@ var r = n(255367),
   i = n(73800),
   l = n(120356),
   o = n.n(l),
-  a = n(91192),
-  s = n(442837),
+  s = n(91192),
+  a = n(442837),
   c = n(481060),
   u = n(493683),
   d = n(239091),
@@ -17,8 +17,8 @@ var r = n(255367),
   g = n(682662),
   m = n(674552),
   b = n(593364),
-  _ = n(905423),
-  O = n(199902),
+  O = n(905423),
+  _ = n(199902),
   y = n(592125),
   C = n(944486),
   v = n(979651),
@@ -30,9 +30,9 @@ var r = n(255367),
   P = n(603274),
   N = n(981631),
   w = n(388032),
-  T = n(940751);
+  Z = n(940751);
 
-function Z(e) {
+function T(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -60,7 +60,7 @@ let A = {
 
 function R() {
   var e, t;
-  let l = (0, a.Ie)("favorites"),
+  let l = (0, s.Ie)("favorites"),
     {
       favoriteAdded: R,
       clearFavoriteAdded: D
@@ -69,29 +69,29 @@ function R() {
     {
       favoriteServerMuted: k,
       favoriteChannels: U
-    } = (0, s.cj)([E.Z], () => ({
+    } = (0, a.cj)([E.Z], () => ({
       favoriteChannels: E.Z.getFavoriteChannels(),
       favoriteServerMuted: E.Z.favoriteServerMuted
     })),
-    G = (0, s.e7)([C.Z], () => C.Z.getChannelId(N.I_8)),
-    B = (0, s.e7)([y.Z], () => y.Z.getChannel(G)),
-    V = (0, _.Z)(e => e.guildId) === N.I_8,
+    G = (0, a.e7)([C.Z], () => C.Z.getChannelId(N.I_8)),
+    B = (0, a.e7)([y.Z], () => y.Z.getChannel(G)),
+    V = (0, O.Z)(e => e.guildId) === N.I_8,
     {
       badge: F,
       unread: H
     } = (0, x.Z)(U),
     z = function(e) {
-      let t = (0, s.e7)([C.Z], () => C.Z.getVoiceChannelId()),
+      let t = (0, a.e7)([C.Z], () => C.Z.getVoiceChannelId()),
         n = null != t && null != e[t],
-        r = (0, s.e7)([O.Z], () => {
+        r = (0, a.e7)([_.Z], () => {
           if (!n) return !1;
-          let t = O.Z.getCurrentUserActiveStream();
+          let t = _.Z.getCurrentUserActiveStream();
           return null != t && null != e[t.channelId]
         }),
-        i = (0, s.e7)([O.Z], () => O.Z.getAllApplicationStreams().some(t => null != e[t.channelId])),
-        l = (0, s.e7)([v.Z], () => n && null != t && v.Z.hasVideo(t), [n, t]),
-        o = (0, s.Wu)([h.ZP], () => j.default.keys(e).reduce((e, t) => (e.push(...h.ZP.getEmbeddedActivitiesForChannel(t)), e), [])),
-        a = (0, s.e7)([h.ZP], () => Array.from(h.ZP.getSelfEmbeddedActivities().values()).some(t => {
+        i = (0, a.e7)([_.Z], () => _.Z.getAllApplicationStreams().some(t => null != e[t.channelId])),
+        l = (0, a.e7)([v.Z], () => n && null != t && v.Z.hasVideo(t), [n, t]),
+        o = (0, a.Wu)([h.ZP], () => j.default.keys(e).reduce((e, t) => (e.push(...h.ZP.getEmbeddedActivitiesForChannel(t)), e), [])),
+        s = (0, a.e7)([h.ZP], () => Array.from(h.ZP.getSelfEmbeddedActivities().values()).some(t => {
           let {
             location: n
           } = t, r = (0, p.p)(n);
@@ -102,7 +102,7 @@ function R() {
         d = !1,
         f = !1,
         g = !1;
-      return n ? (u = !l, d = l, f = r, g = a) : (f = i, g = c), (0, m.Or)({
+      return n ? (u = !l, d = l, f = r, g = s) : (f = i, g = c), (0, m.Or)({
         audio: u,
         video: d,
         screenshare: f,
@@ -120,7 +120,7 @@ function R() {
       selected: V,
       hovered: L,
       unread: H && !k,
-      className: T.pill
+      className: Z.pill
     }), (0, r.jsx)(P.Z, {
       onShow: K,
       children: (0, r.jsx)(I.S, {
@@ -128,7 +128,7 @@ function R() {
           selected: !0,
           upperBadge: z,
           lowerBadge: W,
-          children: (0, r.jsx)(c.LYs, (e = Z({}, l), t = t = {
+          children: (0, r.jsx)(c.LYs, (e = T({}, l), t = t = {
             ariaLabel: w.intl.formatToPlainString(w.t["/uzRsr"], {
               guildName: w.intl.string(w.t.wMWycn),
               mentions: F
@@ -149,17 +149,17 @@ function R() {
                 let {
                   default: e
                 } = await n.e("3190").then(n.bind(n, 631981));
-                return t => (0, r.jsx)(e, Z({}, t))
+                return t => (0, r.jsx)(e, T({}, t))
               })
             },
             children: (0, r.jsx)("div", {
-              className: o()(T.ring, {
-                [T.ringActive]: R
+              className: o()(Z.ring, {
+                [Z.ringActive]: R
               }),
               children: (0, r.jsx)(c.r7p, {
                 size: "custom",
                 color: "currentColor",
-                className: T.favoriteIcon,
+                className: Z.favoriteIcon,
                 width: 20,
                 height: 20
               })

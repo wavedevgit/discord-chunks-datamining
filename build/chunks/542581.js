@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(255367),
   i = n(73800),
-  a = n(120356),
-  l = n.n(a),
+  l = n(120356),
+  a = n.n(l),
   s = n(66546),
   o = n(94171),
   c = n(481060),
@@ -21,7 +21,7 @@ var r = n(255367),
 let b = i.memo(function(e) {
   let {
     channel: t,
-    onChange: a
+    onChange: l
   } = e, b = (0, h.AF)(), {
     guidelinesOpen: j
   } = (0, h.xH)(e => {
@@ -31,25 +31,25 @@ let b = i.memo(function(e) {
     return {
       guidelinesOpen: t
     }
-  }, o.X), v = (0, m.r_)(t), [_, C] = i.useState(!1), y = i.useCallback(e => {
+  }, o.X), v = (0, m.r_)(t), [C, _] = i.useState(!1), y = i.useCallback(e => {
     if (null == e) return;
     let t = e.clientHeight >= 220;
-    t !== _ && C(t)
-  }, [_]);
+    t !== C && _(t)
+  }, [C]);
   i.useLayoutEffect(() => {
-    setTimeout(a, 350)
-  }, [j, a]);
-  let [w, T] = i.useState(!j), O = (0, c.q_F)({
+    setTimeout(l, 350)
+  }, [j, l]);
+  let [O, w] = i.useState(!j), P = (0, c.q_F)({
     opacity: +!!j,
     maxHeight: 500 * !!j,
     config: {
       duration: 300
     },
-    onRest: () => T(!j)
+    onRest: () => w(!j)
   });
   return null != t.topic && t.topic.length > 0 ? (0, r.jsx)(s.animated.div, {
-    style: O,
-    className: w ? x.hiddenVisually : void 0,
+    style: P,
+    className: O ? x.hiddenVisually : void 0,
     children: (0, r.jsxs)("div", {
       className: x.container,
       children: [(0, r.jsxs)("div", {
@@ -93,7 +93,7 @@ let b = i.memo(function(e) {
           style: {
             maxHeight: 220
           },
-          className: l()(x.guidelines, p.markup),
+          className: a()(x.guidelines, p.markup),
           children: (0, r.jsx)("div", {
             ref: y,
             children: u.Z.parseForumPostGuidelines(t.topic, !0, {
@@ -102,7 +102,7 @@ let b = i.memo(function(e) {
               allowList: !0
             })
           })
-        }), _ && (0, r.jsxs)("div", {
+        }), C && (0, r.jsxs)("div", {
           className: x.showMore,
           children: [(0, r.jsx)("div", {
             className: x.gradient
@@ -116,7 +116,7 @@ let b = i.memo(function(e) {
                     default: e
                   } = await n.e("78712").then(n.bind(n, 223164));
                   return n => {
-                    var i, a;
+                    var i, l;
                     return (0, r.jsx)(e, (i = function(e) {
                       for (var t = 1; t < arguments.length; t++) {
                         var n = null != arguments[t] ? arguments[t] : {},
@@ -134,17 +134,17 @@ let b = i.memo(function(e) {
                         })
                       }
                       return e
-                    }({}, n), a = a = {
+                    }({}, n), l = l = {
                       channel: t
-                    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
+                    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
                       var n = Object.keys(e);
                       if (Object.getOwnPropertySymbols) {
                         var r = Object.getOwnPropertySymbols(e);
                         n.push.apply(n, r)
                       }
                       return n
-                    })(Object(a)).forEach(function(e) {
-                      Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(a, e))
+                    })(Object(l)).forEach(function(e) {
+                      Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(l, e))
                     }), i))
                   }
                 })

@@ -1,14 +1,14 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  NE: () => P,
+  NE: () => R,
   QN: () => A,
-  Qf: () => w,
+  Qf: () => P,
   RV: () => C,
   TY: () => D,
   pQ: () => N,
   te: () => T,
-  z7: () => R
+  z7: () => w
 }), n(539854), n(388685);
 var r = n(367907),
   i = n(752048),
@@ -191,7 +191,7 @@ let v = e => {
       time_to_fetch_ms: d
     }))
   },
-  R = e => {
+  w = e => {
     let {
       guildId: t,
       channelId: n,
@@ -230,7 +230,7 @@ let v = e => {
       voice_channel_id: f
     }))
   },
-  P = e => {
+  R = e => {
     let {
       guildId: t,
       channelId: n,
@@ -242,7 +242,7 @@ let v = e => {
       badge: a
     }))
   },
-  w = e => {
+  P = e => {
     let {
       guildId: t,
       channelId: n,

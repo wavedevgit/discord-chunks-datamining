@@ -1,13 +1,13 @@
-/** Chunk was on 70663 **/
+/** Chunk was on 92357 **/
 n.d(t, {
-  v: () => a
+  v: () => s
 });
 var r = n(255367);
 n(73800);
 var i = n(388032),
   l = n(263212),
   o = n(652430);
-let a = () => (0, r.jsxs)("div", {
+let s = () => (0, r.jsxs)("div", {
   className: l.container,
   children: [(0, r.jsx)("img", {
     className: l.image,

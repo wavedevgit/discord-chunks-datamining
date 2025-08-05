@@ -1,4 +1,4 @@
-/** Chunk was on 94312 **/
+/** Chunk was on 22988 **/
 e.exports = {
   scroller: "scroller_d80a13",
   headerHeading: "headerHeading_d80a13",

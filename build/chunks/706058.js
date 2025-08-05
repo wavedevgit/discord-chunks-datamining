@@ -1,27 +1,28 @@
-/** Chunk was on 99665 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
-  Dk: () => u,
-  Ix: () => o,
-  me: () => i
+  Dk: () => o,
+  Ix: () => s,
+  me: () => a
 });
 var r = n(544891),
-  l = n(981631);
-async function i(e, t, n, i, u) {
+  i = n(981631);
+async function a(e, t, n, a, o) {
   return (await r.tn.post({
-    url: l.ANM.STAGE_INSTANCES,
+    url: i.ANM.STAGE_INSTANCES,
     body: {
       channel_id: e,
       topic: t,
       privacy_level: n,
-      guild_scheduled_event_id: u,
-      send_start_notification: i
+      guild_scheduled_event_id: o,
+      send_start_notification: a
     },
     rejectWithError: !1
   })).body
 }
-async function u(e, t, n) {
+async function o(e, t, n) {
   return (await r.tn.patch({
-    url: l.ANM.STAGE_INSTANCE(e),
+    url: i.ANM.STAGE_INSTANCE(e),
     body: {
       topic: t,
       privacy_level: n
@@ -30,9 +31,9 @@ async function u(e, t, n) {
   })).body
 }
 
-function o(e) {
+function s(e) {
   return r.tn.del({
-    url: l.ANM.STAGE_INSTANCE(e),
+    url: i.ANM.STAGE_INSTANCE(e),
     rejectWithError: !1
   })
 }

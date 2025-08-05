@@ -1,4 +1,4 @@
-/** Chunk was on 17218 **/
+/** Chunk was on 37082 **/
 n.d(t, {
   P: () => B,
   Z: () => k
@@ -19,7 +19,7 @@ var r = n(255367),
   x = n(113434),
   h = n(569984),
   b = n(497505),
-  j = n(192023),
+  j = n(381176),
   _ = n(977156),
   v = n(5881),
   C = n(602667),
@@ -61,7 +61,7 @@ function B(e) {
   } = (0, E.qN)({
     quest: o,
     location: P.dr.QUESTS_BAR
-  }), D = (0, l.e7)([d.Z], () => d.Z.useReducedMotion), Q = (0, l.e7)([p.Z], () => p.Z.hasLayers()), V = s.useRef(null), L = s.useMemo(() => (0, g.q8)(o), [o]), M = (null == (t = o.userStatus) ? void 0 : t.enrolledAt) != null, W = (0, u.Z)(M), Z = (null == (n = o.userStatus) ? void 0 : n.completedAt) != null, U = (0, u.Z)(Z), {
+  }), D = (0, l.e7)([d.Z], () => d.Z.useReducedMotion), Q = (0, l.e7)([p.Z], () => p.Z.hasLayers()), V = s.useRef(null), L = s.useMemo(() => (0, g.q8)(o), [o]), M = (null == (t = o.userStatus) ? void 0 : t.enrolledAt) != null, Z = (0, u.Z)(M), W = (null == (n = o.userStatus) ? void 0 : n.completedAt) != null, U = (0, u.Z)(W), {
     hasError: H,
     isLoading: z
   } = (0, O.d7)(), F = s.useContext(T.T) || B && I && !z && !k, X = s.useRef(F), K = (0, w.B)(o, F && !H), Y = s.useRef(-1), G = s.useRef(!1), [J, $] = s.useState(!1), [ee, et] = s.useState(!1), [en, er] = s.useState(!0), [es, eo] = s.useState(!0), [ea, ei] = s.useState(K.preEnrollmentExpandedHeight), el = s.useRef(null), ec = s.useCallback(e => {
@@ -74,10 +74,10 @@ function B(e) {
   }, [eu, ec]), ep = s.useCallback(() => {
     $(!0)
   }, []), em = s.useCallback(() => {
-    $(!1), G.current || Z || ec(!1)
-  }, [Z, ec]), ef = s.useCallback(() => {
-    $(!1), Z || ec(!1), G.current = !1
-  }, [Z, ec]), eg = s.useCallback(function() {
+    $(!1), G.current || W || ec(!1)
+  }, [W, ec]), ef = s.useCallback(() => {
+    $(!1), W || ec(!1), G.current = !1
+  }, [W, ec]), eg = s.useCallback(function() {
     let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
     if (ee) return;
     let {
@@ -117,12 +117,12 @@ function B(e) {
     }), G.current = !1, eh()
   }, [eh, o, K.trackingCtx.content]);
   s.useLayoutEffect(() => {
-    Z && K.shouldExpandOnQuestComplete && ed()
-  }, [ed, Z, K.shouldExpandOnQuestComplete]), s.useLayoutEffect(() => {
-    M && !W && G.current && ed()
-  }, [ed, M, W]), s.useLayoutEffect(() => {
-    Z || !M || W || G.current || ec(!1)
-  }, [M, Z, W, ec]), s.useLayoutEffect(() => {
+    W && K.shouldExpandOnQuestComplete && ed()
+  }, [ed, W, K.shouldExpandOnQuestComplete]), s.useLayoutEffect(() => {
+    M && !Z && G.current && ed()
+  }, [ed, M, Z]), s.useLayoutEffect(() => {
+    W || !M || Z || G.current || ec(!1)
+  }, [M, W, Z, ec]), s.useLayoutEffect(() => {
     F !== X.current && eo(!1), X.current = F
   }, [F]);
   let e_ = M ? P.XZ : P.R4,
@@ -170,8 +170,8 @@ function B(e) {
   s.useEffect(() => {
     L && (0, y.loadVideoQuestModal)()
   }, [L]), s.useLayoutEffect(() => {
-    Z && !U && K.canCollapseOnBlur && eu()
-  }, [Z, ed, K.canCollapseOnBlur, eu, U]), s.useEffect(() => {
+    W && !U && K.canCollapseOnBlur && eu()
+  }, [W, ed, K.canCollapseOnBlur, eu, U]), s.useEffect(() => {
     var e, t;
     H && (0, m.dA)({
       questId: o.id,

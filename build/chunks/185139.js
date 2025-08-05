@@ -36,34 +36,34 @@ function O(e) {
     giftMessage: A = E.intl.string(E.t.DrgnS0),
     hideBreadcrumbs: N = !1,
     isLoading: C = !1,
-    purchaseError: R,
-    purchaseErrorBlockRef: P,
-    planError: w,
+    purchaseError: w,
+    purchaseErrorBlockRef: R,
+    planError: P,
     onScroll: D,
     scrollerClassName: L,
     hasCurrencies: x = !1
-  } = e, M = null;
-  null != v && null == (0, p.ly)(v) ? M = v : null != R ? M = R : null != w && (M = w);
-  let k = null != M ? M.message : "";
-  null != M && M instanceof d.HF && (M.code === f.SM.CARD_DECLINED && x && (k += " ".concat(E.intl.string(E.t.iWvwQU))), M.code === f.SM.INVALID_GIFT_REDEMPTION_FRAUD_REJECTED && (k = E.intl.string(E.t.ypuSd3)), M.code === g.evJ.BILLING_NON_REFUNDABLE_PAYMENT_SOURCE && (k = E.intl.string(E.t.mXMmWF)));
+  } = e, k = null;
+  null != v && null == (0, p.ly)(v) ? k = v : null != w ? k = w : null != P && (k = P);
+  let j = null != k ? k.message : "";
+  null != k && k instanceof d.HF && (k.code === f.SM.CARD_DECLINED && x && (j += " ".concat(E.intl.string(E.t.iWvwQU))), k.code === f.SM.INVALID_GIFT_REDEMPTION_FRAUD_REJECTED && (j = E.intl.string(E.t.ypuSd3)), k.code === g.evJ.BILLING_NON_REFUNDABLE_PAYMENT_SOURCE && (j = E.intl.string(E.t.mXMmWF)));
   let {
-    stripe: j
+    stripe: M
   } = (0, _.JL)();
-  C = C || null == j;
+  C = C || null == M;
   let U = i.useRef(new l.V7);
   i.useEffect(() => {
     let e = U.current;
-    return null != j || e.isStarted() ? null != j && e.stop() : e.start(10 * m.Z.Millis.SECOND, () => {
+    return null != M || e.isStarted() ? null != M && e.stop() : e.start(10 * m.Z.Millis.SECOND, () => {
       let e = Error("Stripe took too long to load");
       (0, h.q2)(e)
     }), () => {
       e.stop()
     }
-  }, [j]);
+  }, [M]);
   let G = t.includes(p.h8.PAYMENT_TYPE) ? p.h8.PAYMENT_TYPE : p.h8.ADD_PAYMENT_STEPS;
   return (0, r.jsxs)(a.Elements, {
     options: g.OBo,
-    stripe: j,
+    stripe: M,
     children: [I, (0, r.jsxs)("div", {
       className: s()("paymentModalContent", b.content),
       children: [S && n !== p.h8.CONFIRM ? (0, r.jsx)(u.Z, {
@@ -83,11 +83,11 @@ function O(e) {
         })
       }), (0, r.jsxs)("div", {
         className: b.bodyWrapper,
-        children: [null == M ? null : (0, r.jsx)("div", {
+        children: [null == k ? null : (0, r.jsx)("div", {
           className: b.errorBlockWrapper,
           children: (0, r.jsx)(c.kzN, {
-            ref: P,
-            children: k
+            ref: R,
+            children: j
           })
         }), C ? (0, r.jsx)(c.$jN, {
           className: b.loadingBlock

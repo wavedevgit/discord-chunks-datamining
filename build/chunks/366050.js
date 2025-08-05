@@ -2,7 +2,7 @@
 "use strict";
 let r, i, a;
 n.d(t, {
-  Z: () => R
+  Z: () => w
 }), n(388685);
 var o, s = n(442837),
   l = n(570140),
@@ -223,7 +223,7 @@ d(C, "displayName", "PictureInPictureStore"), d(C, "persistKey", "PictureInPictu
     openPosition: null != (n = e.openPosition) ? n : c.VD2.BOTTOM_RIGHT
   }
 }]);
-let R = new C(l.Z, {
+let w = new C(l.Z, {
   PICTURE_IN_PICTURE_OPEN: b,
   PICTURE_IN_PICTURE_CLOSE: y,
   PICTURE_IN_PICTURE_MOVE: O,

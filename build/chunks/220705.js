@@ -1,4 +1,5 @@
-/** Chunk was on 24022 **/
+/** Chunk was on web.js **/
+"use strict";
 e.exports = {
   arrowBounce: "arrowBounce__49676",
   updateIconForeground: "updateIconForeground__49676",

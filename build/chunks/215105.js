@@ -81,15 +81,15 @@ function N(e) {
     modalKey: E,
     onAction: N,
     onClose: C,
-    entry: R
+    entry: w
   } = e, {
-    resetInteraction: P,
-    setInteractionToast: w
+    resetInteraction: R,
+    setInteractionToast: P
   } = (0, g.Xo)(), {
     primaryColor: D
-  } = (0, b.z)(), [L, x] = i.useState(""), [M, k] = i.useState((0, u.JM)(L)), j = i.useRef(!1), U = i.useRef(null), G = i.useCallback(e => {
-    e.key === O.vn.ESCAPE && (e.stopPropagation(), P())
-  }, [P]);
+  } = (0, b.z)(), [L, x] = i.useState(""), [k, j] = i.useState((0, u.JM)(L)), M = i.useRef(!1), U = i.useRef(null), G = i.useCallback(e => {
+    e.key === O.vn.ESCAPE && (e.stopPropagation(), R())
+  }, [R]);
   i.useEffect(() => {
     null == _ || _(null == U ? void 0 : U.current)
   }, [U, _]);
@@ -108,7 +108,7 @@ function N(e) {
       sourceType: s,
       sourceDetails: f
     });
-    w(null);
+    P(null);
     try {
       await (0, m.Z)({
         userId: t.id,
@@ -116,11 +116,11 @@ function N(e) {
         location: "UserProfileReplyPopout",
         openChannel: !1,
         whenReady: !1,
-        entry: R
+        entry: w
       })
     } catch (e) {}
-    w(y.P.REPLY)
-  }, V = {
+    P(y.P.REPLY)
+  }, Z = {
     [I.status]: s === y.n_.STATUS,
     [I.avatar]: s === y.n_.AVATAR,
     [I.activity]: s === y.n_.ACTIVITY
@@ -129,7 +129,7 @@ function N(e) {
     ref: U,
     onKeyDown: G,
     children: (0, r.jsx)("div", {
-      className: o()(I.container, V, {
+      className: o()(I.container, Z, {
         [I.customProfileTheme]: null != D
       }),
       children: (0, r.jsx)(d.ZP, {
@@ -144,13 +144,13 @@ function N(e) {
         }),
         channel: T,
         textValue: L,
-        richValue: M,
+        richValue: k,
         onChange: (e, t, n) => {
-          t !== L && (x(t), k(n))
+          t !== L && (x(t), j(n))
         },
-        focused: j.current,
+        focused: M.current,
         onFocus: () => {
-          j.current = !0
+          M.current = !0
         },
         onSubmit: async e => {
           let {
@@ -161,7 +161,7 @@ function N(e) {
             shouldRefocus: !1
           };
           try {
-            return await B(n), P(), null == C || C(), {
+            return await B(n), R(), null == C || C(), {
               shouldClear: !0,
               shouldRefocus: !1
             }

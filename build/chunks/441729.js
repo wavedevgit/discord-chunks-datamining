@@ -1,91 +1,102 @@
-/** Chunk was on 93239 **/
-r.d(t, {
-  Z: () => _
+/** Chunk was on web.js **/
+"use strict";
+n.d(t, {
+  Z: () => m
 });
-var n, i = r(442837),
-  s = r(570140);
+var r, i = n(442837),
+  a = n(570140);
 
-function a(e, t, r) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
-    value: r,
+    value: n,
     enumerable: !0,
     configurable: !0,
     writable: !0
-  }) : e[t] = r, e
+  }) : e[t] = n, e
 }
 
-function c(e) {
+function s(e) {
   for (var t = 1; t < arguments.length; t++) {
-    var r = null != arguments[t] ? arguments[t] : {},
-      n = Object.keys(r);
-    "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(r, e).enumerable
-    }))), n.forEach(function(t) {
-      a(e, t, r[t])
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      o(e, t, n[t])
     })
   }
   return e
 }
 
 function l(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-    var r = Object.keys(e);
-    if (Object.getOwnPropertySymbols) {
-      var n = Object.getOwnPropertySymbols(e);
-      r.push.apply(r, n)
-    }
-    return r
-  })(Object(t)).forEach(function(r) {
-    Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r))
+  var n = Object.keys(e);
+  if (Object.getOwnPropertySymbols) {
+    var r = Object.getOwnPropertySymbols(e);
+    t && (r = r.filter(function(t) {
+      return Object.getOwnPropertyDescriptor(e, t).enumerable
+    })), n.push.apply(n, r)
+  }
+  return n
+}
+
+function c(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : l(Object(t)).forEach(function(n) {
+    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let o = {
+let u = {
     speechRate: 1,
     currentMessage: null
   },
-  u = o;
-class d extends(n = i.ZP.DeviceSettingsStore) {
+  d = u;
+
+function f(e) {
+  let {
+    messageId: t,
+    channelId: n
+  } = e;
+  d = c(s({}, d), {
+    currentMessage: {
+      messageId: t,
+      channelId: n
+    }
+  })
+}
+
+function _() {
+  d = c(s({}, d), {
+    currentMessage: null
+  })
+}
+
+function p(e) {
+  d = c(s({}, d), {
+    speechRate: e.speechRate
+  })
+}
+class h extends(r = i.ZP.DeviceSettingsStore) {
   initialize(e) {
-    u = c({}, o, null != e ? e : null)
+    d = s({}, u, null != e ? e : null)
   }
   isSpeakingMessage(e, t) {
     let {
-      currentMessage: r
-    } = u;
-    return null !== r && r.channelId === e && r.messageId === t
+      currentMessage: n
+    } = d;
+    return null !== n && n.channelId === e && n.messageId === t
   }
   get currentMessage() {
-    return u.currentMessage
+    return d.currentMessage
   }
   get speechRate() {
-    return u.speechRate
+    return d.speechRate
   }
   getUserAgnosticState() {
-    return u
+    return d
   }
 }
-a(d, "displayName", "TTSStore"), a(d, "persistKey", "TTSStore"), a(d, "migrations", []);
-let _ = new d(s.Z, __OVERLAY__ ? {} : {
-  SPEAKING_MESSAGE: function(e) {
-    let {
-      messageId: t,
-      channelId: r
-    } = e;
-    u = l(c({}, u), {
-      currentMessage: {
-        messageId: t,
-        channelId: r
-      }
-    })
-  },
-  STOP_SPEAKING: function() {
-    u = l(c({}, u), {
-      currentMessage: null
-    })
-  },
-  SET_TTS_SPEECH_RATE: function(e) {
-    u = l(c({}, u), {
-      speechRate: e.speechRate
-    })
-  }
+o(h, "displayName", "TTSStore"), o(h, "persistKey", "TTSStore"), o(h, "migrations", []);
+let m = new h(a.Z, __OVERLAY__ ? {} : {
+  SPEAKING_MESSAGE: f,
+  STOP_SPEAKING: _,
+  SET_TTS_SPEECH_RATE: p
 })

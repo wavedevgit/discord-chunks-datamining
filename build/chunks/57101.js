@@ -1,16 +1,19 @@
-/** Chunk was on 94313 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
-  Z: () => l
+  Z: () => o
 });
 var r = n(392711),
   i = n(897325);
-let l = (0, r.memoize)(function(e) {
+
+function a(e) {
   let {
     theme: t,
     layoutType: n
   } = e;
   return (0, i._)(t, n)
-}, e => {
+}
+let o = (0, r.memoize)(a, e => {
   let {
     theme: t,
     layoutType: n

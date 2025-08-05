@@ -1,4 +1,4 @@
-/** Chunk was on 94312 **/
+/** Chunk was on 22988 **/
 e.exports = {
   tierNameColumn: "tierNameColumn_e431b0",
   priceColumn: "priceColumn_e431b0",

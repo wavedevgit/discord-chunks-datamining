@@ -1,5 +1,6 @@
-/** Chunk was on 66005 **/
-n.r(e.exports = {
+/** Chunk was on web.js **/
+"use strict";
+var r = {
   profile: "profile_ed0705",
   underDevelopment: "underDevelopment_ed0705",
   insetBorder: "insetBorder_ed0705",
@@ -38,4 +39,5 @@ n.r(e.exports = {
   solara: "solara_ed0705",
   cave: "cave_ed0705",
   deepfried: "deepfried_ed0705"
-})
+};
+n.r(e.exports = r)

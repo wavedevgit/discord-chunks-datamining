@@ -93,12 +93,12 @@ function C(e) {
   return A.getState()[e]
 }
 
-function R(e) {
+function w(e) {
   let t = C(e);
   return null == t && N(e, t = S(1)), t
 }
 
-function P(e) {
+function R(e) {
   (0, s.j)(() => {
     A.setState(t => {
       let n = b({}, t);
@@ -107,7 +107,7 @@ function P(e) {
   })
 }
 
-function w(e, t, n, r, i) {
+function P(e, t, n, r, i) {
   let a = C(e);
   if ((null == a ? void 0 : a.requestState) === 2) {
     var o;
@@ -147,21 +147,21 @@ function x(e) {
   })
 }
 
-function M(e) {
-  P(T(e))
-}
-
 function k(e) {
-  return null != e && e.length > 1
+  R(T(e))
 }
 
 function j(e) {
+  return null != e && e.length > 1
+}
+
+function M(e) {
   let t = {},
     n = {},
     {
       query: r
     } = e;
-  if (k(r)) {
+  if (j(r)) {
     let [e, n] = (0, p.C)(r);
     e.length > 0 && (t.usernames = {
       or_query: e
@@ -256,7 +256,7 @@ function B(e) {
   }
 }
 
-function V(e, t) {
+function Z(e, t) {
   var n;
   let {
     currentPageChunkNumber: r,
@@ -264,7 +264,7 @@ function V(e, t) {
     nextPageChunkNumber: a
   } = B(t), {
     previousPagination: o
-  } = R(T(e)), s = t.currentPage, l = null != (n = null == o ? void 0 : o.currentPage) ? n : 0, c = g.Z.getElasticSearchPaginationByGuildId(e);
+  } = w(T(e)), s = t.currentPage, l = null != (n = null == o ? void 0 : o.currentPage) ? n : 0, c = g.Z.getElasticSearchPaginationByGuildId(e);
   switch (!0) {
     case null == c:
     case r === a && 0 === r:
@@ -283,7 +283,7 @@ function V(e, t) {
 
 function F(e, t, n) {
   var r, i, a, o, s, l;
-  let c = V(e, n),
+  let c = Z(e, n),
     u = g.Z.getElasticSearchPaginationByGuildId(e),
     f = (0, _.t3)(n);
   switch (c) {
@@ -311,8 +311,8 @@ function F(e, t, n) {
   }
 }
 
-function Z(e, t) {
-  let n = R(e);
+function V(e, t) {
+  let n = w(e);
   return i()(n.query, t)
 }
 async function H(e) {
@@ -320,12 +320,12 @@ async function H(e) {
   let i = g.Z.getSearchStateByGuildId(e),
     o = g.Z.getPaginationStateByGuildId(e),
     s = T(e),
-    l = R(s),
+    l = w(s),
     [c, u] = F(e, l, o),
-    d = U(j(i), u),
+    d = U(M(i), u),
     f = null != (t = i.selectedSort) ? t : h.d$.ORDER_BY_GUILD_JOINED_AT_DESC;
-  if (Z(s, d) && (0, a.isEqual)(c, l.cursor)) return;
-  let _ = w(s, d, c, o, f);
+  if (V(s, d) && (0, a.isEqual)(c, l.cursor)) return;
+  let _ = P(s, d, c, o, f);
   try {
     if (I.info("Making member search request", {
         query: _.query,
@@ -360,13 +360,13 @@ class K extends c.Z {
     let {
       guildId: t
     } = e;
-    return M(t), H(t)
+    return k(t), H(t)
   }
   handleGuildDelete(e) {
     let {
       guild: t
     } = e;
-    return M(t.id)
+    return k(t.id)
   }
   handleSearchStateUpdate(e) {
     let {

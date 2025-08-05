@@ -1,16 +1,25 @@
-/** Chunk was on 98786 **/
+/** Chunk was on web.js **/
 "use strict";
 let r;
 n.r(t), n.d(t, {
-  default: () => S,
-  renderChangelogMessageMarkup: () => E
+  default: () => C,
+  renderChangelogMessageMarkup: () => w
 }), n(35282), n(704826);
-var o = n(159635),
-  i = n.n(o),
-  a = n(800927),
-  l = n(945884),
-  s = n(594199),
+var i = n(159635),
+  a = n.n(i),
+  o = n(800927),
+  s = n(945884),
+  l = n(594199),
   c = n(454585);
+
+function u(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: !0,
+    configurable: !0,
+    writable: !0
+  }) : e[t] = n, e
+}
 
 function d(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -19,61 +28,59 @@ function d(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      var r;
-      r = n[t], t in e ? Object.defineProperty(e, t, {
-        value: r,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
-      }) : e[t] = r
+      u(e, t, n[t])
     })
   }
   return e
 }
 
-function u(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-    var n = Object.keys(e);
-    if (Object.getOwnPropertySymbols) {
-      var r = Object.getOwnPropertySymbols(e);
-      n.push.apply(n, r)
-    }
-    return n
-  })(Object(t)).forEach(function(n) {
+function f(e, t) {
+  var n = Object.keys(e);
+  if (Object.getOwnPropertySymbols) {
+    var r = Object.getOwnPropertySymbols(e);
+    t && (r = r.filter(function(t) {
+      return Object.getOwnPropertyDescriptor(e, t).enumerable
+    })), n.push.apply(n, r)
+  }
+  return n
+}
+
+function _(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let p = i().defaultRules.lheading,
-  m = i().defaultRules.heading,
-  _ = i().defaultRules.link,
-  b = i().defaultRules.image,
-  g = i().defaultRules.list,
-  h = i().defaultRules.blockQuote,
-  f = i().defaultRules.paragraph,
-  y = /\{(.+?)}/,
-  x = /^\$(\w+?)\$/;
+let p = a().defaultRules.lheading,
+  h = a().defaultRules.heading,
+  m = a().defaultRules.link,
+  g = a().defaultRules.image,
+  E = a().defaultRules.list,
+  b = a().defaultRules.blockQuote,
+  y = a().defaultRules.paragraph,
+  O = /\{(.+?)}/,
+  v = /^\$(\w+?)\$/;
 r = n(235375);
-let O = e => {
+let I = e => {
     let {
       transformUpperCase: t = !1
     } = e;
     return (e, n, r) => {
-      let o = y.exec(e[1]),
-        a = e[1].replace(y, "");
-      return t && (a = a.toUpperCase()), {
-        className: null != o ? o[1] : null,
+      let i = O.exec(e[1]),
+        o = e[1].replace(O, "");
+      return t && (o = o.toUpperCase()), {
+        className: null != i ? i[1] : null,
         level: "=" === e[2] ? 1 : 2,
-        content: i().parseInline(n, a, r)
+        content: a().parseInline(n, o, r)
       }
     }
   },
-  k = e => u(d({}, r.baseRules), {
-    image: d({}, b, "function" == typeof r.customRules.image ? r.customRules.image(e) : r.customRules.image),
-    link: d({}, _, "function" == typeof r.customRules.link ? r.customRules.link(e) : r.customRules.link),
-    list: d({}, g, "function" == typeof r.customRules.list ? r.customRules.list(e) : r.customRules.list),
+  T = e => _(d({}, r.baseRules), {
+    image: d({}, g, "function" == typeof r.customRules.image ? r.customRules.image(e) : r.customRules.image),
+    link: d({}, m, "function" == typeof r.customRules.link ? r.customRules.link(e) : r.customRules.link),
+    list: d({}, E, "function" == typeof r.customRules.list ? r.customRules.list(e) : r.customRules.list),
     interpolation: {
-      order: s.ZP.order,
-      match: e => x.exec(e),
+      order: l.ZP.order,
+      match: e => v.exec(e),
       parse(e, t, n) {
         let r = n.interpolations[e[1]];
         return null == r ? {
@@ -86,42 +93,42 @@ let O = e => {
       },
       react: e => e.renderer()
     },
-    lheading: d(u(d({}, p), {
-      parse: O({
+    lheading: d(_(d({}, p), {
+      parse: I({
         transformUpperCase: !0
       })
     }), "function" == typeof r.customRules.lheading ? r.customRules.lheading(e) : r.customRules.lheading),
-    heading: d({}, m, "function" == typeof r.customRules.heading ? r.customRules.heading(e) : r.customRules.heading),
-    blockQuote: d({}, h, "function" == typeof r.customRules.blockQuote ? r.customRules.blockQuote(e) : r.customRules.blockQuote),
-    paragraph: d({}, f, "function" == typeof r.customRules.paragraph ? r.customRules.paragraph(e) : r.customRules.paragraph)
+    heading: d({}, h, "function" == typeof r.customRules.heading ? r.customRules.heading(e) : r.customRules.heading),
+    blockQuote: d({}, b, "function" == typeof r.customRules.blockQuote ? r.customRules.blockQuote(e) : r.customRules.blockQuote),
+    paragraph: d({}, y, "function" == typeof r.customRules.paragraph ? r.customRules.paragraph(e) : r.customRules.paragraph)
   }),
-  j = e => ({
-    lheading: d(u(d({}, p), {
-      parse: O({
+  S = e => ({
+    lheading: d(_(d({}, p), {
+      parse: I({
         transformUpperCase: !1
       })
     }), "function" == typeof r.customRules.lheading ? r.customRules.lheading(e) : r.customRules.lheading)
   }),
-  C = e => u(d({}, k(e)), {
-    newline: d({}, i().defaultRules.newline),
-    text: s.ZP,
-    list: a.Z,
-    subtext: l.Z
+  A = e => _(d({}, T(e)), {
+    newline: d({}, a().defaultRules.newline),
+    text: l.ZP,
+    list: o.Z,
+    subtext: s.Z
   });
 
-function v(e) {
-  return d({}, k(e))
+function N(e) {
+  return d({}, T(e))
 }
-let S = {
-  getDefaultRules: v,
-  getSpecialRules: e => d({}, k(e), j(e)),
-  getMessageRules: e => d({}, C(e))
+let C = {
+  getDefaultRules: N,
+  getSpecialRules: e => d({}, T(e), S(e)),
+  getMessageRules: e => d({}, A(e))
 };
 
-function E(e, t, n) {
+function w(e, t, n) {
   return {
     hasSpoilerEmbeds: !1,
-    content: c.Z.reactParserFor(v(t))(e.content, !1, null != n ? {
+    content: c.Z.reactParserFor(N(t))(e.content, !1, null != n ? {
       changeLog: n
     } : {})
   }

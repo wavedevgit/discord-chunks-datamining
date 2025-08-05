@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => M
+  Z: () => k
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -66,7 +66,7 @@ function N(e, t) {
 
 function C(e, t) {
   if (null == e) return {};
-  var n, r, i = R(e, t);
+  var n, r, i = w(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -74,52 +74,52 @@ function C(e, t) {
   return i
 }
 
-function R(e, t) {
+function w(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let P = 490,
-  w = 490,
+let R = 490,
+  P = 490,
   D = 245,
   L = 200,
   x = 120,
-  M = i.forwardRef(function(e, t) {
-    var n, a, T, A, R, M, k;
+  k = i.forwardRef(function(e, t) {
+    var n, a, T, A, w, k, j;
     let {
-      channel: j,
+      channel: M,
       type: U,
       editorHeight: G,
       onVisibilityChange: B,
-      editorScrollerRef: V,
+      editorScrollerRef: Z,
       barsHeight: F
-    } = e, Z = (0, h.Dt)(), H = (0, l.e7)([E.Z], () => {
+    } = e, V = (0, h.Dt)(), H = (0, l.e7)([E.Z], () => {
       var e;
-      return null != (e = E.Z.getGuild(j.guild_id)) ? e : null
-    }, [j.guild_id]), Y = i.useRef(null), [W, K, z] = (0, O.Z)(N(S({}, e), {
+      return null != (e = E.Z.getGuild(M.guild_id)) ? e : null
+    }, [M.guild_id]), Y = i.useRef(null), [W, K, z] = (0, O.Z)(N(S({}, e), {
       guild: H
-    }), t, Y), q = (null == (n = U.autocomplete) ? void 0 : n.forceChatLayer) ? g.ZP : m.ZP, X = (0, _.DJ)(W.selectedIndex);
-    (0, p.KR)(Z, W.isVisible, X);
-    let Q = (0, y.Z)({
+    }), t, Y), q = (null == (n = U.autocomplete) ? void 0 : n.forceChatLayer) ? g.ZP : m.ZP, $ = (0, _.DJ)(W.selectedIndex);
+    (0, p.KR)(V, W.isVisible, $);
+    let X = (0, y.Z)({
         editorHeight: G,
         type: U,
         state: W
       }),
-      J = (0, l.e7)([d.ZP], () => {
-        let e = d.ZP.getSelfEmbeddedActivityForChannel(j.id),
+      Q = (0, l.e7)([d.ZP], () => {
+        let e = d.ZP.getSelfEmbeddedActivityForChannel(M.id),
           t = d.ZP.getActivityPanelMode();
-        return (0, u.l5)(j) && null != e && (0, f.p)(e.location) === j.id && t === v.Ez.PANEL
-      }, [j]),
-      $ = i.useMemo(() => (null == Q ? void 0 : Q.top) == null && (null == Q ? void 0 : Q.left) == null && (null == Q ? void 0 : Q.bottom) == null && (null == Q ? void 0 : Q.right) == null ? "" : String(Date.now()), [null == Q ? void 0 : Q.top, null == Q ? void 0 : Q.left, null == Q ? void 0 : Q.bottom, null == Q ? void 0 : Q.right]);
+        return (0, u.l5)(M) && null != e && (0, f.p)(e.location) === M.id && t === v.Ez.PANEL
+      }, [M]),
+      J = i.useMemo(() => (null == X ? void 0 : X.top) == null && (null == X ? void 0 : X.left) == null && (null == X ? void 0 : X.bottom) == null && (null == X ? void 0 : X.right) == null ? "" : String(Date.now()), [null == X ? void 0 : X.top, null == X ? void 0 : X.left, null == X ? void 0 : X.bottom, null == X ? void 0 : X.right]);
     if (i.useEffect(() => {
         B(W.isVisible)
-      }, [B, W.isVisible]), !W.isVisible || null == W.query || void 0 === Q) return null;
+      }, [B, W.isVisible]), !W.isVisible || null == W.query || void 0 === X) return null;
     let ee = null != (T = W.query.typeInfo.renderResults({
       results: W.query.results,
       selectedIndex: W.selectedIndex,
-      channel: j,
+      channel: M,
       guild: H,
       query: W.query.queryText,
       options: W.query.options,
@@ -128,18 +128,18 @@ let P = 490,
     })) ? T : null;
     if (null == ee) return null;
     let et = {
-        [I.autocompleteAttached]: null == Q,
-        [I.autocompletePopout]: null != Q,
-        [I.bottom]: null == Q && "bottom" === e.position,
-        [I.autocompleteTop]: J
+        [I.autocompleteAttached]: null == X,
+        [I.autocompletePopout]: null != X,
+        [I.bottom]: null == X && "bottom" === e.position,
+        [I.autocompleteTop]: Q
       },
-      en = P;
-    null != Q && (en = (null == (A = U.autocomplete) ? void 0 : A.small) ? L : (null == (R = W.query) ? void 0 : R.type) === b.eq.EMOJIS_AND_STICKERS ? w : D);
-    let er = Math.max(G, null != (M = null == V || null == (a = V.current) ? void 0 : a.clientHeight) ? M : 0),
+      en = R;
+    null != X && (en = (null == (A = U.autocomplete) ? void 0 : A.small) ? L : (null == (w = W.query) ? void 0 : w.type) === b.eq.EMOJIS_AND_STICKERS ? P : D);
+    let er = Math.max(G, null != (k = null == Z || null == (a = Z.current) ? void 0 : a.clientHeight) ? k : 0),
       ei = Math.min(.5 * window.innerHeight, er);
     en = Math.min(window.innerHeight - x - ei - (null != F ? F : 0), en);
     let ea = (0, r.jsx)(_.ZP, {
-      id: Z,
+      id: V,
       className: o()(I.autocomplete, et),
       innerClassName: I.autocompleteInner,
       onMouseDown: e => e.preventDefault(),
@@ -151,7 +151,7 @@ let P = 490,
               ref: t
             } = e, n = C(e, ["ref"]);
             return (0, r.jsx)(c.h21, N(S({
-              id: Z,
+              id: V,
               ref: e => {
                 var n;
                 t.current = null != (n = null == e ? void 0 : e.getScrollerNode()) ? n : null, Y.current = e
@@ -162,19 +162,19 @@ let P = 490,
                 maxHeight: en
               },
               role: "listbox",
-              "aria-labelledby": (0, _.rp)(Z),
+              "aria-labelledby": (0, _.rp)(V),
               children: ee
             }))
           }
         })
       })
     });
-    return null != Q ? (0, r.jsx)(q, {
+    return null != X ? (0, r.jsx)(q, {
       children: (0, r.jsx)(c.jRF, {
         targetRef: e.targetRef,
-        overrideTargetRect: Q,
-        positionKey: $,
-        position: null != (k = e.position) ? k : "top",
+        overrideTargetRect: X,
+        positionKey: J,
+        position: null != (j = e.position) ? j : "top",
         align: "left",
         spacing: 8,
         autoInvert: !0,

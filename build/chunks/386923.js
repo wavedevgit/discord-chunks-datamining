@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(255367),
   i = n(73800),
-  a = n(120356),
-  l = n.n(a),
+  l = n(120356),
+  a = n.n(l),
   s = n(66546),
   o = n(442837),
   c = n(481060),
@@ -21,15 +21,15 @@ var r = n(255367),
   b = n(388032),
   j = n(767905),
   v = n(683999),
-  _ = n(602512),
-  C = n(184476);
+  C = n(602512),
+  _ = n(184476);
 let y = {
     mass: 1,
     tension: 250,
     friction: 18,
     clamp: !0
   },
-  w = () => {
+  O = () => {
     let [e, t] = i.useState(!0);
     return {
       transitions: (0, c.Yzy)(e, {
@@ -49,7 +49,7 @@ let y = {
       setVisible: t
     }
   },
-  T = e => (0, c.Yzy)(e, {
+  w = e => (0, c.Yzy)(e, {
     from: {
       maxHeight: 0
     },
@@ -63,7 +63,7 @@ let y = {
       duration: 200
     }
   }),
-  O = e => {
+  P = e => {
     let {
       guild: t
     } = e, n = (0, o.e7)([g.Z], () => g.Z.can(x.Plq.MANAGE_GUILD, t));
@@ -89,7 +89,7 @@ let y = {
             color: "header-secondary",
             children: b.intl.string(p.default["i7CH/P"])
           }), (0, r.jsxs)("ol", {
-            className: l()(j.list, j.orderedList, j.topLevelList),
+            className: a()(j.list, j.orderedList, j.topLevelList),
             children: [(0, r.jsx)("li", {
               children: (0, r.jsx)(c.Text, {
                 variant: "text-md/normal",
@@ -102,7 +102,7 @@ let y = {
                 color: "header-secondary",
                 children: b.intl.string(p.default["iu/RkZ"])
               }), (0, r.jsxs)("ul", {
-                className: l()(j.list, j.innerList, j.unorderedList),
+                className: a()(j.list, j.innerList, j.unorderedList),
                 children: [(0, r.jsx)("li", {
                   children: (0, r.jsx)(c.Text, {
                     variant: "text-md/normal",
@@ -161,7 +161,7 @@ let y = {
             color: "header-secondary",
             children: b.intl.string(p.default.qJWXs7)
           }), (0, r.jsxs)("ul", {
-            className: l()(j.list, j.unorderedList, j.topLevelList),
+            className: a()(j.list, j.unorderedList, j.topLevelList),
             children: [(0, r.jsx)("li", {
               children: (0, r.jsx)(c.Text, {
                 variant: "text-md/normal",
@@ -203,7 +203,7 @@ let y = {
           })]
         })]
       }), (0, r.jsx)("img", {
-        src: C,
+        src: _,
         alt: b.intl.string(b.t.gAlJzc),
         width: u.TJ,
         height: u.TJ
@@ -214,16 +214,16 @@ let y = {
 function S(e) {
   let {
     guild: t
-  } = e, [n, a] = (0, d.R)("report-to-mod-education-dismissed", !1), [o, u] = (0, d.R)("report-to-mod-education-expanded", !1), {
+  } = e, [n, l] = (0, d.R)("report-to-mod-education-dismissed", !1), [o, u] = (0, d.R)("report-to-mod-education-expanded", !1), {
     transitions: m,
     setVisible: h
-  } = w(), g = T(null != o && o);
+  } = O(), g = w(null != o && o);
   return (i.useEffect(() => {
     n && h(!1)
   }, [n, h]), n) ? null : m((e, n) => n ? (0, r.jsxs)(s.animated.div, {
     style: e,
     onClick: () => u(!o),
-    className: l()(_.container, j.container, v.mainCard),
+    className: a()(C.container, j.container, v.mainCard),
     children: [(0, r.jsxs)("div", {
       className: j.inline,
       children: [(0, r.jsxs)("div", {
@@ -248,7 +248,7 @@ function S(e) {
           children: b.intl.string(p.default["95qQRE"])
         })]
       }), (0, r.jsx)(c.P3F, {
-        onClick: () => a(!0),
+        onClick: () => l(!0),
         children: (0, r.jsx)(c.Dio, {
           size: "xs",
           color: "currentColor",
@@ -259,7 +259,7 @@ function S(e) {
       style: e,
       children: [(0, r.jsx)("hr", {
         className: j.separator
-      }), (0, r.jsx)(O, {
+      }), (0, r.jsx)(P, {
         guild: t
       })]
     }) : null)]

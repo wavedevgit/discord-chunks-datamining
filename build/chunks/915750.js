@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  B5: () => M,
-  PI: () => w,
+  B5: () => k,
+  PI: () => P,
   WD: () => U,
   aM: () => G,
   ui: () => B
@@ -53,9 +53,9 @@ function N(e) {
   return e
 }
 let C = 100,
-  R = 60,
-  P = 1,
-  w = .5,
+  w = 60,
+  R = 1,
+  P = .5,
   D = new Set;
 
 function L(e, t) {
@@ -128,7 +128,7 @@ class x {
     trackGuildAndChannelMetadata: r,
     questContentPosition: i,
     questContentRowIndex: s,
-    minViewTimeSeconds: l = P,
+    minViewTimeSeconds: l = R,
     isQuestEnrollmentBlocked: c,
     sourceQuestContent: f
   }) {
@@ -199,7 +199,7 @@ class x {
         sourceQuestContent: this.sourceQuestContent
       })
     }), A(this, "start", () => {
-      this.stop(!1), this.lastBeatTime = Date.now(), this.heartbeatTimeoutId = window.setInterval(() => this.beat(), 1e3 * R), this.minViewTimeReachedTimeoutId = window.setTimeout(this.onMinViewTimeReached, 1e3 * this.minViewTimeSeconds), this.quests.forEach(e => {
+      this.stop(!1), this.lastBeatTime = Date.now(), this.heartbeatTimeoutId = window.setInterval(() => this.beat(), 1e3 * w), this.minViewTimeReachedTimeoutId = window.setTimeout(this.onMinViewTimeReached, 1e3 * this.minViewTimeSeconds), this.quests.forEach(e => {
         (0, T.T)().info("".concat(e.config.messages.questName, " Quest became visible at ").concat((0, b._b)(this.questContent)), {
           impressionId: this.id
         }), (0, b.dA)({
@@ -218,22 +218,22 @@ class x {
     }), A(this, "stop", function() {
       let e = !(arguments.length > 0) || void 0 === arguments[0] || arguments[0];
       e && p.beat(!0), p.lastBeatTime = void 0, clearInterval(p.heartbeatTimeoutId), clearTimeout(p.minViewTimeReachedTimeoutId), p.isRunning = !1
-    }), this.id = (0, a.Z)(), this.questContent = t, this.questContentPosition = i, this.minViewTimeSeconds = l, this.minViewportPercentage = w, this.quests = Array.isArray(e) ? e : [e], this.trackGuildAndChannelMetadata = r, this.triggeredByStatusChange = n, this.questContentRowIndex = s, this.isQuestEnrollmentBlocked = c, this.sourceQuestContent = f
+    }), this.id = (0, a.Z)(), this.questContent = t, this.questContentPosition = i, this.minViewTimeSeconds = l, this.minViewportPercentage = P, this.quests = Array.isArray(e) ? e : [e], this.trackGuildAndChannelMetadata = r, this.triggeredByStatusChange = n, this.questContentRowIndex = s, this.isQuestEnrollmentBlocked = c, this.sourceQuestContent = f
   }
 }
-let M = (e, t) => {
+let k = (e, t) => {
     let n = Array.isArray(e) ? e.sort().map(e => e.id).join("_") : e.id;
     return "".concat(n, "_").concat(t)
   },
-  k = e => {
+  j = e => {
     let t = Array.isArray(e) ? null : (0, b.uk)(e),
       n = (0, c.Z)(t);
     return t !== n
   },
-  j = i.createContext(void 0);
+  M = i.createContext(void 0);
 
 function U() {
-  let e = i.useContext(j);
+  let e = i.useContext(M);
   return null == e ? void 0 : e.current
 }
 
@@ -250,7 +250,7 @@ function B(e) {
     reference: o,
     focusedChanged: c,
     sourceQuestContent: u
-  } = e, d = k(e.questOrQuests), f = i.useRef(null), _ = (0, s.e7)([O.Z], () => null != O.Z.questEnrollmentBlockedUntil, []);
+  } = e, d = j(e.questOrQuests), f = i.useRef(null), _ = (0, s.e7)([O.Z], () => null != O.Z.questEnrollmentBlockedUntil, []);
   return (0, l.ZP)(() => () => {
     null != f.current && f.current.stop()
   }), i.useEffect(() => {
@@ -268,7 +268,7 @@ function B(e) {
       isQuestEnrollmentBlocked: _,
       sourceQuestContent: u
     }), f.current.start())
-  }, [a, t, c, n, e.questOrQuests, e.questContent, e.questContentPosition, e.questContentRowIndex, e.trackGuildAndChannelMetadata, d, e.minViewTimeSeconds, _, u]), (0, r.jsx)(j.Provider, {
+  }, [a, t, c, n, e.questOrQuests, e.questContent, e.questContentPosition, e.questContentRowIndex, e.trackGuildAndChannelMetadata, d, e.minViewTimeSeconds, _, u]), (0, r.jsx)(M.Provider, {
     value: f,
     children: e.children(o, f)
   })

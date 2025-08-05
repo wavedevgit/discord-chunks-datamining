@@ -1,50 +1,50 @@
-/** Chunk was on 52495 **/
+/** Chunk was on 55370 **/
 n.r(t), n.d(t, {
-  default: () => S
+  default: () => E
 });
 var i = n(255367);
 n(73800);
 var r = n(481060),
-  o = n(239091),
-  a = n(883385),
-  l = n(108843),
+  a = n(239091),
+  l = n(883385),
+  o = n(108843),
   c = n(947440),
-  s = n(100527),
-  f = n(658138),
+  d = n(100527),
+  s = n(658138),
   u = n(299206),
-  d = n(895563),
-  b = n(212205),
-  p = n(62420),
-  g = n(769409),
-  y = n(122074),
+  f = n(895563),
+  p = n(212205),
+  b = n(62420),
+  v = n(769409),
+  _ = n(122074),
   O = n(314897),
-  N = n(858687),
-  _ = n(461535),
-  h = n(776568),
-  m = n(981631),
-  v = n(388032);
-let S = (0, l.Z)((0, a.Z)(function(e) {
+  g = n(858687),
+  h = n(461535),
+  A = n(776568),
+  y = n(981631),
+  C = n(388032);
+let E = (0, o.Z)((0, l.Z)(function(e) {
   let {
     channel: t,
-    selected: a,
-    onSelect: l
-  } = e, S = t.isOwner(O.default.getId()), T = (0, _.Z)(t), j = (0, h.ZP)(t), A = (0, y.Uf)(m.aIL, t.id, "top"), I = (0, N.Z)(t, a), C = (0, u.Z)({
+    selected: l,
+    onSelect: o
+  } = e, E = t.isOwner(O.default.getId()), N = (0, h.Z)(t), m = (0, A.ZP)(t), T = (0, _.Uf)(y.aIL, t.id, "top"), I = (0, g.Z)(t, l), S = (0, u.Z)({
     id: t.id,
-    label: v.intl.string(v.t.gFHI3t)
-  }), E = (0, c.Z)(t), P = (0, d.l)(t), w = (0, d.P)(t), x = (0, b.Z)(t), Z = (0, p.Z)(t), U = (0, f.D)(t);
+    label: C.intl.string(C.t.gFHI3t)
+  }), Z = (0, c.Z)(t), R = (0, f.l)(t), U = (0, f.P)(t), j = (0, p.Z)(t), P = (0, b.Z)(t), x = (0, s.D)(t);
   return null == t || t.isManaged() ? null : (0, i.jsxs)(r.v2r, {
     navId: "gdm-context",
-    "aria-label": v.intl.string(v.t.Xm41aW),
-    onClose: o.Zy,
-    onSelect: l,
+    "aria-label": C.intl.string(C.t.Xm41aW),
+    onClose: a.Zy,
+    onSelect: o,
     children: [(0, i.jsx)(r.kSQ, {
-      children: T
+      children: N
     }), (0, i.jsxs)(r.kSQ, {
-      children: [P, x, Z]
+      children: [R, j, P]
     }), (0, i.jsxs)(r.kSQ, {
-      children: [S ? (0, i.jsx)(r.sNh, {
+      children: [E ? (0, i.jsx)(r.sNh, {
         id: "instant-invites",
-        label: v.intl.string(v.t.ngRFjY),
+        label: C.intl.string(C.t.ngRFjY),
         action: () => (0, r.ZDy)(async () => {
           let {
             default: e
@@ -72,21 +72,21 @@ let S = (0, l.Z)((0, a.Z)(function(e) {
         })
       }) : null, (0, i.jsx)(r.sNh, {
         id: "edit-gdm",
-        label: v.intl.string(v.t["5Q9+/P"]),
-        action: () => (0, g.B)(t.id, s.Z.GROUP_DM_CONTEXT_MENU)
-      }), U]
+        label: C.intl.string(C.t["5Q9+/P"]),
+        action: () => (0, v.B)(t.id, d.Z.GROUP_DM_CONTEXT_MENU)
+      }), x]
     }), (0, i.jsx)(r.kSQ, {
-      children: E
+      children: Z
     }), (0, i.jsxs)(r.kSQ, {
-      children: [j, A]
+      children: [m, T]
     }), (0, i.jsx)(r.kSQ, {
       children: I
     }), (0, i.jsx)(r.kSQ, {
-      children: w
+      children: U
     }), (0, i.jsx)(r.kSQ, {
-      children: C
+      children: S
     })]
   })
 }, {
-  object: m.qAy.CONTEXT_MENU
-}), [s.Z.CONTEXT_MENU, s.Z.GROUP_DM_MENU])
+  object: y.qAy.CONTEXT_MENU
+}), [d.Z.CONTEXT_MENU, d.Z.GROUP_DM_MENU])

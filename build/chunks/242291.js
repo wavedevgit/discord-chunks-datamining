@@ -1,12 +1,12 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  C0: () => R,
-  GN: () => P,
+  C0: () => w,
+  GN: () => R,
   M2: () => L,
   Nq: () => C,
-  SZ: () => k,
-  aC: () => M,
+  SZ: () => j,
+  aC: () => k,
   lF: () => G,
   pI: () => A,
   sR: () => x,
@@ -51,7 +51,7 @@ function C(e, t, n) {
   return (m.ZP.canUseSoundboardEverywhere(e) || t.guildId === (null == n ? void 0 : n.guild_id) || t.guildId === I.X8) && N(t, n) && (!r || t.available)
 }
 
-function R(e) {
+function w(e) {
   let {
     mute: t,
     suppress: n
@@ -61,11 +61,11 @@ function R(e) {
   return !t && !n
 }
 
-function P(e, t, n) {
+function R(e, t, n) {
   (0, E.XE)(t, e, y.YQ.SOUNDBOARD), (0, d.kq)(t, e, __OVERLAY__, n)
 }
 
-function w(e, t) {
+function P(e, t) {
   (0, E.XE)(t, e, y.YQ.JOINED_VOICE_CHANNEL), (0, d.vy)(t, e, __OVERLAY__)
 }
 
@@ -82,8 +82,8 @@ async function L(e) {
   let i = r.guildId === I.hY ? I.X8 : r.guildId,
     a = b.Z.getSound(i, r.soundId);
   if (null != a) {
-    if (!N(a, n) || !C(t, a, n, !0) || !R(n)) return null;
-    w(a, n.id)
+    if (!N(a, n) || !C(t, a, n, !0) || !w(n)) return null;
+    P(a, n.id)
   }
 }
 
@@ -99,9 +99,9 @@ function x(e) {
   return a
 }
 
-function M(e, t) {
+function k(e, t) {
   (0, l.PS)(e, n => {
-    n.joinSound = void 0, j({
+    n.joinSound = void 0, M({
       guildId: e,
       changeType: y.MW.REMOVED,
       soundType: y.jy.ENTRY,
@@ -110,7 +110,7 @@ function M(e, t) {
   }, l.fy.INFREQUENT_USER_ACTION)
 }
 
-function k(e, t, n) {
+function j(e, t, n) {
   (0, l.PS)(e, r => {
     let i = t.guildId === I.X8,
       a = i ? y.H$.DEFAULT : y.H$.CUSTOM,
@@ -118,7 +118,7 @@ function k(e, t, n) {
     r.joinSound = {
       soundId: t.soundId,
       guildId: i ? I.hY : t.guildId
-    }, j({
+    }, M({
       guildId: e,
       changeType: o,
       soundSource: a,
@@ -128,7 +128,7 @@ function k(e, t, n) {
   }, l.fy.INFREQUENT_USER_ACTION)
 }
 
-function j(e) {
+function M(e) {
   let {
     guildId: t,
     changeType: n,

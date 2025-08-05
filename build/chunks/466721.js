@@ -1,9 +1,9 @@
-/** Chunk was on 41984 **/
+/** Chunk was on web.js **/
 "use strict";
-n.d(e, {
-  C: () => s
+n.d(t, {
+  C: () => r
 });
-let s = (0, n(818083).B)({
+let r = (0, n(818083).B)({
   kind: "user",
   id: "2025-07_staff_ai_features",
   label: "Staff AI Features",

@@ -140,21 +140,21 @@ function C(e) {
   return n
 }
 
-function R(e) {
+function w(e) {
   let {
     libraryApplications: t
   } = e;
   for (let e of t) b(o.ZP.createFromServer(e.application))
 }
 
-function P(e) {
+function R(e) {
   let {
     application: t
   } = e;
   null != t && b(t)
 }
 
-function w(e) {
+function P(e) {
   let {
     applications: t
   } = e;
@@ -194,7 +194,7 @@ function x(e) {
   }))
 }
 
-function M(e) {
+function k(e) {
   let {
     applicationIds: t
   } = e, n = !1;
@@ -205,7 +205,7 @@ function M(e) {
   return n
 }
 
-function k(e) {
+function j(e) {
   let {
     entitlements: t
   } = e, n = !1;
@@ -216,7 +216,7 @@ function k(e) {
   return n
 }
 
-function j(e) {
+function M(e) {
   let {
     guildId: t,
     applications: n
@@ -255,7 +255,7 @@ function B(e) {
   b(o.ZP.createFromServer(n.store_listing.sku.application))
 }
 
-function V(e) {
+function Z(e) {
   let {
     invite: t
   } = e;
@@ -271,7 +271,7 @@ function F(e) {
   b(o.ZP.createFromServer(t.sku.application))
 }
 
-function Z(e) {
+function V(e) {
   let {
     messages: t
   } = e;
@@ -373,25 +373,25 @@ let q = new z(a.Z, {
   APPLICATION_FETCH_SUCCESS: T,
   APPLICATION_FETCH_FAIL: N,
   APPLICATIONS_FETCH: C,
-  APPLICATIONS_FETCH_SUCCESS: w,
-  APPLICATIONS_FETCH_FAIL: M,
+  APPLICATIONS_FETCH_SUCCESS: P,
+  APPLICATIONS_FETCH_FAIL: k,
   APPLICATION_UPDATE: I,
-  APPLICATION_SUBSCRIPTIONS_FETCH_ENTITLEMENTS_SUCCESS: k,
-  ENTITLEMENTS_FETCH_FOR_USER_SUCCESS: k,
-  ENTITLEMENTS_GIFTABLE_FETCH_SUCCESS: k,
-  GUILD_APPLICATIONS_FETCH_SUCCESS: j,
+  APPLICATION_SUBSCRIPTIONS_FETCH_ENTITLEMENTS_SUCCESS: j,
+  ENTITLEMENTS_FETCH_FOR_USER_SUCCESS: j,
+  ENTITLEMENTS_GIFTABLE_FETCH_SUCCESS: j,
+  GUILD_APPLICATIONS_FETCH_SUCCESS: M,
   BILLING_PAYMENTS_FETCH_SUCCESS: U,
   PAYMENT_UPDATE: G,
-  INVITE_RESOLVE_SUCCESS: V,
+  INVITE_RESOLVE_SUCCESS: Z,
   GIFT_CODE_RESOLVE_SUCCESS: B,
-  LIBRARY_FETCH_SUCCESS: R,
+  LIBRARY_FETCH_SUCCESS: w,
   STORE_LISTING_FETCH_SUCCESS: F,
-  LOAD_MESSAGES_SUCCESS: Z,
+  LOAD_MESSAGES_SUCCESS: V,
   APP_RECOMMENDATIONS_FETCH_RECOMMENDATIONS_SUCCESS: D,
   USER_PROFILE_FETCH_SUCCESS: L,
   APP_DM_OPEN: x,
   USER_AUTHORIZED_APPS_UPDATE: W,
   LOAD_NOTIFICATION_CENTER_ITEMS_SUCCESS: K,
   OAUTH2_TOKEN_CREATE: Y,
-  ROBLOX_SUBGAME_APPLICATION_FETCH_SUCCESS: P
+  ROBLOX_SUBGAME_APPLICATION_FETCH_SUCCESS: R
 })

@@ -1,4 +1,4 @@
-/** Chunk was on 94312 **/
+/** Chunk was on 22988 **/
 n.d(t, {
   ZP: () => L
 }), n(781311), n(642613), n(388685);
@@ -307,7 +307,7 @@ function L(e) {
     }), (0, c.ZDy)(async () => {
       let {
         default: e
-      } = await Promise.all([n.e("7590"), n.e("31564")]).then(n.bind(n, 24722));
+      } = await n.e("15968").then(n.bind(n, 24722));
       return n => (0, r.jsx)(e, w(P({}, n), {
         roleId: l.id,
         guildId: t.id

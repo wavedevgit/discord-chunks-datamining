@@ -1,18 +1,18 @@
-/** Chunk was on 70657 **/
+/** Chunk was on 62318 **/
 t.d(n, {
-  Z: () => a
+  Z: () => i
 });
-var i = t(442837),
-  l = t(241155),
-  r = t(430824);
+var e = t(442837),
+  c = t(241155),
+  d = t(430824);
 
-function a(e, n) {
-  return (0, i.cj)([r.Z, l.Z], () => {
-    let t = r.Z.getGuild(e),
-      i = null != t;
-    return null == t && null != n && (t = l.Z.getCachedGuildByEventId(n)), {
-      isMember: i,
+function i(u, n) {
+  return (0, e.cj)([d.Z, c.Z], () => {
+    let t = d.Z.getGuild(u),
+      e = null != t;
+    return null == t && null != n && (t = c.Z.getCachedGuildByEventId(n)), {
+      isMember: e,
       guild: t
     }
-  }, [e, n])
+  }, [u, n])
 }

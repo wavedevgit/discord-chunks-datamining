@@ -1,11 +1,10 @@
-/** Chunk was on 67501 **/
-"use strict";
-n.d(t, {
-  K: () => s
+/** Chunk was on 4192 **/
+t.d(n, {
+  K: () => a
 });
-var r = n(818083),
-  i = n(987338);
-let l = (0, r.B)({
+var l = t(818083),
+  i = t(987338);
+let r = (0, l.B)({
   kind: "user",
   id: "2025-06_guild_sidebar_voice_stage_in_suggested",
   label: "voice and stage channels appear in suggested if user mentioned in them",
@@ -22,8 +21,8 @@ let l = (0, r.B)({
   }]
 });
 
-function s(e) {
-  return l.getCurrentConfig({
+function a(e) {
+  return r.getCurrentConfig({
     location: e
   }, {
     autoTrackExposure: !1

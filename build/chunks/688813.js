@@ -1,5 +1,8 @@
-/** Chunk was on 94313 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
-  $: () => i
+  $: () => r
 });
-var r, i = ((r = {}).JOIN_RAID = "JOIN_RAID", r.DM_RAID = "DM_RAID", r.MENTION_RAID = "MENTION_RAID", r)
+var r = function(e) {
+  return e.JOIN_RAID = "JOIN_RAID", e.DM_RAID = "DM_RAID", e.MENTION_RAID = "MENTION_RAID", e
+}({})

@@ -1,4 +1,4 @@
-/** Chunk was on 94312 **/
+/** Chunk was on 22988 **/
 e.exports = {
   heading: "heading__176c7",
   tier: "tier__176c7",

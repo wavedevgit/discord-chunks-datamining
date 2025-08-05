@@ -15,35 +15,35 @@ var n = a(255367),
   x = a(665149),
   p = a(611565),
   h = a(238246),
-  b = a(788983),
-  f = a(906467),
+  f = a(788983),
+  b = a(906467),
   v = a(259580),
-  g = a(31336),
-  j = a(19759),
+  j = a(31336),
+  g = a(19759),
   _ = a(432877);
 a(381996);
 var y = a(392750),
   C = a(926976),
   O = a(789654),
   N = a(719672),
-  T = a(691867),
-  E = a(916790),
+  E = a(691867),
+  T = a(916790),
   S = a(645973),
   P = a(903502),
-  I = a(604776),
-  w = a(912072),
+  w = a(604776),
+  I = a(912072),
   R = a(272193),
-  A = a(685560),
-  k = a(735959),
+  k = a(685560),
+  A = a(735959),
   Z = a(572444),
   D = a(636500),
   L = a(246992),
   M = a(484662),
-  U = a(496025),
+  B = a(496025),
   F = a(442954),
-  G = a(925124),
-  B = a(633001),
-  z = a(702904),
+  U = a(925124),
+  z = a(633001),
+  G = a(702904),
   V = a(178821),
   H = a(891401),
   W = a(958328),
@@ -69,7 +69,7 @@ function eo(e) {
     onResize: a,
     onResizeEnd: r
   } = e, l = (0, d.Z)({
-    minDimension: j.h,
+    minDimension: g.h,
     resizableDomNodeRef: t,
     onElementResize: a,
     onElementResizeEnd: r,
@@ -105,9 +105,9 @@ function ec(e) {
       id: "dispatcher",
       name: "Dispatcher",
       group: en.v0.EVENTS,
-      render: () => (0, n.jsx)(E.Z, {})
+      render: () => (0, n.jsx)(T.Z, {})
     }];
-    return f.Z.isDeveloper && (e.push({
+    return b.Z.isDeveloper && (e.push({
       id: "shop",
       name: "Shop",
       group: en.v0.BILLING,
@@ -136,7 +136,7 @@ function ec(e) {
       id: "overlay",
       name: "Overlay v3",
       group: en.v0.GAMES,
-      render: () => (0, n.jsx)(B.Z, {})
+      render: () => (0, n.jsx)(z.Z, {})
     }), e.push({
       id: "slayer_sdk",
       name: "Slayer SDK",
@@ -151,7 +151,7 @@ function ec(e) {
       id: "intl",
       name: "Intl",
       group: en.v0.UI,
-      render: () => (0, n.jsx)(k.Z, {})
+      render: () => (0, n.jsx)(A.Z, {})
     }), e.push({
       id: "colors",
       name: "Colors",
@@ -161,24 +161,24 @@ function ec(e) {
       id: "design_toggles",
       name: "Design Toggles",
       group: en.v0.UI,
-      render: () => (0, n.jsx)(T.Z, {})
+      render: () => (0, n.jsx)(E.Z, {})
     }), e.push({
       id: "overlays",
       name: "Dev Overlays",
       group: en.v0.DEVELOPMENT,
-      render: () => (0, n.jsx)(w.Z, {
+      render: () => (0, n.jsx)(I.Z, {
         devSettingsCategory: _.zU.OVERLAYS
       })
     }), e.push({
       id: "messaging",
       name: "Messaging",
       group: en.v0.USERS,
-      render: () => (0, n.jsx)(U.Z, {})
+      render: () => (0, n.jsx)(B.Z, {})
     }), e.push({
       id: "reporting",
       name: "Reporting",
       group: en.v0.EXPERIMENTS,
-      render: () => (0, n.jsx)(w.Z, {
+      render: () => (0, n.jsx)(I.Z, {
         devSettingsCategory: _.zU.REPORTING
       })
     }), e.push({
@@ -206,7 +206,7 @@ function ec(e) {
       name: "Widgets",
       group: en.v0.USERS,
       render: () => (0, n.jsx)(et.Z, {})
-    }), f.Z.isDeveloper && (e.push({
+    }), b.Z.isDeveloper && (e.push({
       id: "content_inventory",
       name: "Content Inventory",
       group: en.v0.USERS,
@@ -235,12 +235,12 @@ function ec(e) {
       id: "offers",
       name: "Offers",
       group: en.v0.PREMIUM,
-      render: () => (0, n.jsx)(G.Z, {})
+      render: () => (0, n.jsx)(U.Z, {})
     }), e.push({
       id: "payments",
       name: "Payments",
       group: en.v0.BILLING,
-      render: () => (0, n.jsx)(z.Z, {})
+      render: () => (0, n.jsx)(G.Z, {})
     }), e.push({
       id: "subscriptions",
       name: "Subscriptions",
@@ -250,7 +250,7 @@ function ec(e) {
       id: "fractional_nitro",
       name: "Fractional Nitro",
       group: en.v0.PREMIUM,
-      render: () => (0, n.jsx)(I.Z, {})
+      render: () => (0, n.jsx)(w.Z, {})
     })), e.push({
       id: "gifting_intent",
       name: "Gifting Intent",
@@ -270,7 +270,7 @@ function ec(e) {
       id: "skill_trees",
       name: "Skill Trees",
       group: en.v0.GUILDS,
-      render: () => (0, n.jsx)(A.Z, {})
+      render: () => (0, n.jsx)(k.Z, {})
     }), e.push({
       id: "language",
       name: "Language",
@@ -283,9 +283,9 @@ function ec(e) {
     selectedTabId: d
   } = (0, en.ZP)({
     tabs: l,
-    initialSelectedTabId: null != (t = j.Z.lastOpenTabId) ? t : void 0,
+    initialSelectedTabId: null != (t = g.Z.lastOpenTabId) ? t : void 0,
     onChangeTab: e => {
-      (0, g.Qh)({
+      (0, j.Qh)({
         lastOpenTabId: e
       })
     }
@@ -304,7 +304,7 @@ function ec(e) {
           icon: c.rgF,
           tooltip: "Pop Out",
           onClick: () => {
-            (0, b.bA)(er.KJ3.DEVTOOLS_POPOUT, () => (0, n.jsx)(h.Z, {
+            (0, f.bA)(er.KJ3.DEVTOOLS_POPOUT, () => (0, n.jsx)(h.Z, {
               windowKey: er.KJ3.DEVTOOLS_POPOUT,
               title: "DevTools",
               withTitleBar: !0,
@@ -320,7 +320,7 @@ function ec(e) {
         }), (0, n.jsx)(x.ZP.Icon, {
           icon: c.Dio,
           tooltip: el.intl.string(el.t.cpT0Cg),
-          onClick: g.SO
+          onClick: j.SO
         })]
       }),
       children: [(0, n.jsx)(x.ZP.Icon, {
@@ -337,9 +337,9 @@ function ec(e) {
 
 function ed() {
   let e = r.useRef(null),
-    t = (0, o.e7)([j.Z], () => j.Z.sidebarWidth),
+    t = (0, o.e7)([g.Z], () => g.Z.sidebarWidth),
     [a, l] = r.useState(null),
-    i = r.useCallback(e => (0, g.Qh)({
+    i = r.useCallback(e => (0, j.Qh)({
       sidebarWidth: e
     }), []);
   return (r.useEffect(() => {
@@ -348,7 +348,7 @@ function ed() {
     ref: e,
     className: ei.container,
     style: {
-      minWidth: j.h,
+      minWidth: g.h,
       width: a
     },
     "data-app-right-panel": !0,
@@ -364,7 +364,7 @@ function ed() {
 }
 
 function eu() {
-  return (0, o.e7)([j.Z], () => j.Z.displayTools) ? (0, n.jsx)("div", {
+  return (0, o.e7)([g.Z], () => g.Z.displayTools) ? (0, n.jsx)("div", {
     className: i()(ei.container, ei.mobileContainerExpanded),
     children: (0, n.jsx)("div", {
       className: ei.sidebarContent,
@@ -373,7 +373,7 @@ function eu() {
   }) : (0, n.jsx)("div", {
     className: ei.container,
     children: (0, n.jsx)(c.P3F, {
-      onClick: g.SO,
+      onClick: j.SO,
       children: (0, n.jsxs)(x.ZP, {
         className: i()(es.headerBar, ei.mobileHeaderCollapsed),
         toolbar: (0, n.jsx)(v.Z, {

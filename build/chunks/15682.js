@@ -1,41 +1,41 @@
-/** Chunk was on 53 **/
+/** Chunk was on 54844 **/
 n.d(t, {
-  Z: () => l
+  Z: () => s
 }), n(388685);
 var r = n(255367);
 n(73800);
-var a = n(481060),
+var l = n(481060),
   i = n(521545);
-let o = e => {
+let a = e => {
     let {
       onChange: t,
       label: n,
-      subtitle: o,
-      selected: l
+      subtitle: a,
+      selected: s
     } = e;
     return (0, r.jsx)("div", {
       className: i.checkboxRow,
-      children: (0, r.jsxs)(a.XZJ, {
-        type: a.XZJ.Types.INVERTED,
+      children: (0, r.jsxs)(l.XZJ, {
+        type: l.XZJ.Types.INVERTED,
         onChange: () => t(),
-        value: l,
-        children: [(0, r.jsx)(a.Text, {
+        value: s,
+        children: [(0, r.jsx)(l.Text, {
           color: "interactive-active",
           variant: "text-md/semibold",
           children: n
-        }), null != o ? (0, r.jsx)(a.Text, {
+        }), null != a ? (0, r.jsx)(l.Text, {
           color: "interactive-active",
           variant: "text-sm/normal",
-          children: o
+          children: a
         }) : null]
       })
     })
   },
-  l = e => {
+  s = e => {
     let {
       element: t,
       state: n,
-      onChange: a
+      onChange: l
     } = e;
     if ((null == t ? void 0 : t.type) !== "checkbox") return null;
     let {
@@ -43,12 +43,12 @@ let o = e => {
     } = t;
     return (0, r.jsx)("div", {
       children: i.map((e, t) => {
-        let [i, l, s] = e;
-        return (0, r.jsx)(o, {
-          onChange: () => a(i, l),
+        let [i, s, o] = e;
+        return (0, r.jsx)(a, {
+          onChange: () => l(i, s),
           selected: i in n,
-          label: l,
-          subtitle: s
+          label: s,
+          subtitle: o
         }, "".concat(t, "+button"))
       })
     })

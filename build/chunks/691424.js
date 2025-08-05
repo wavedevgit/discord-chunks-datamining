@@ -29,15 +29,15 @@ var r = n(255367),
   A = n(746878),
   N = n(285063),
   C = n(943362),
-  R = n(551452),
-  P = n(69626),
-  w = n(142990),
+  w = n(551452),
+  R = n(69626),
+  P = n(142990),
   D = n(382056),
   L = n(532901),
   x = n(311739),
-  M = n(981631),
-  k = n(176505),
-  j = n(73433),
+  k = n(981631),
+  j = n(176505),
+  M = n(73433),
   U = n(283574);
 
 function G(e, t, n) {
@@ -62,7 +62,7 @@ function B(e) {
   return e
 }
 
-function V(e, t) {
+function Z(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -74,12 +74,12 @@ function V(e, t) {
 }
 
 function F(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : V(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : Z(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function Z(e) {
+function V(e) {
   let {
     emojiTooltipPosition: t = "top",
     enableEmojiClick: n = !0
@@ -140,18 +140,18 @@ function Y(e, t, n) {
   let r = T.Z.getGuild(e);
   if (null == e || null == r) return;
   let i = t => {
-    r.features.has(M.oNc.COMMUNITY) && (0, O.uL)(M.Z5c.CHANNEL(e, t))
+    r.features.has(k.oNc.COMMUNITY) && (0, O.uL)(k.Z5c.CHANNEL(e, t))
   };
   switch (t) {
     case "home":
     case "guide":
-      i(k.oC.GUILD_HOME);
+      i(j.oC.GUILD_HOME);
       break;
     case "browse":
-      i(k.oC.CHANNEL_BROWSER);
+      i(j.oC.CHANNEL_BROWSER);
       break;
     case "customize":
-      i(k.oC.CUSTOMIZE_COMMUNITY);
+      i(j.oC.CUSTOMIZE_COMMUNITY);
       break;
     case "linked-roles":
       if (null != n) {
@@ -194,9 +194,9 @@ n(484944);
 let K = {
   blockQuote: {
     react: (e, t, n) => (0, r.jsxs)("div", {
-      className: j.blockquoteContainer,
+      className: M.blockquoteContainer,
       children: [(0, r.jsx)("div", {
-        className: j.blockquoteDivider
+        className: M.blockquoteDivider
       }), (0, r.jsx)("blockquote", {
         children: t(e.content, n)
       })]
@@ -232,9 +232,9 @@ let K = {
       });
       return (0, r.jsx)("pre", {
         children: (0, r.jsxs)("div", {
-          className: j.codeContainer,
+          className: M.codeContainer,
           children: [S.wS ? (0, r.jsx)("div", {
-            className: j.codeActions,
+            className: M.codeActions,
             children: (0, r.jsx)(W, {
               text: e.content
             })
@@ -310,7 +310,7 @@ let K = {
         a = null == e.start ? void 0 : (e.start + (e.items.length - 1)).toString().length;
       return (0, s.reactElement)(i, "".concat(n.key), {
         start: e.start,
-        className: n.formatInline ? j.inlineFormat : null,
+        className: n.formatInline ? M.inlineFormat : null,
         style: {
           "--totalCharacters": a
         },
@@ -336,7 +336,7 @@ let K = {
         children: [i, (0, r.jsx)(l.nn4, {
           children: ","
         }, "screen-reader-pause")],
-        className: n.formatInline ? j.inlineFormat : null
+        className: n.formatInline ? M.inlineFormat : null
       })
     }
   },
@@ -365,7 +365,7 @@ let K = {
       });
       return (0, s.reactElement)("small", (null == n ? void 0 : n.key) != null ? "".concat(n.key) : null, {
         children: r,
-        className: n.formatInline ? j.inlineFormat : null
+        className: n.formatInline ? M.inlineFormat : null
       })
     }
   },
@@ -381,11 +381,11 @@ let K = {
 function z(e) {
   return F(B({}, K), {
     link: (0, L.Z)(e),
-    devLink: (0, w.Z)(e),
-    emoji: Z(e),
+    devLink: (0, P.Z)(e),
+    emoji: V(e),
     customEmoji: H(e),
-    channelMention: (0, R.Z)(e),
-    commandMention: (0, P.ZP)(e),
+    channelMention: (0, w.Z)(e),
+    commandMention: (0, R.ZP)(e),
     attachmentLink: (0, C.Z)(e),
     shopLink: (0, x.Z)(e),
     gameMention: D.Z

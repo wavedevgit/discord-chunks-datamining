@@ -1,10 +1,11 @@
-/** Chunk was on 30424 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
-  Z: () => l
+  Z: () => a
 });
-var i = n(442837),
-  r = n(317381);
+var r = n(442837),
+  i = n(317381);
 
-function l() {
-  return (0, i.e7)([r.ZP], () => r.ZP.getCurrentEmbeddedActivity())
+function a() {
+  return (0, r.e7)([i.ZP], () => i.ZP.getCurrentEmbeddedActivity())
 }

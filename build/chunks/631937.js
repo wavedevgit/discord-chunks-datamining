@@ -1,45 +1,46 @@
-/** Chunk was on 60173 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
-  Z: () => h
+  Z: () => _
 });
 var r = n(73800),
   i = n(442837),
-  l = n(661111),
-  a = n(706454),
-  o = n(306680),
-  s = n(626135),
+  a = n(661111),
+  o = n(706454),
+  s = n(306680),
+  l = n(626135),
   c = n(802098),
   u = n(193701),
   d = n(702321),
-  p = n(981631);
+  f = n(981631);
 
-function h(e) {
+function _(e) {
   let t = (0, u.Z)(e),
-    n = (0, i.e7)([a.default], () => a.default.locale),
-    h = (0, i.e7)([c.Z], () => c.Z.getChangelog(null != t ? t : "", n), [t, n]),
-    f = (0, d.Z)(e),
-    m = r.useRef(f ? Date.now() : null),
-    g = (0, i.e7)([o.ZP], () => o.ZP.getUnreadCount(e), [e]),
-    b = r.useRef(g);
+    n = (0, i.e7)([o.default], () => o.default.locale),
+    _ = (0, i.e7)([c.Z], () => c.Z.getChangelog(null != t ? t : "", n), [t, n]),
+    p = (0, d.Z)(e),
+    h = r.useRef(p ? Date.now() : null),
+    m = (0, i.e7)([s.ZP], () => s.ZP.getUnreadCount(e), [e]),
+    g = r.useRef(m);
   r.useEffect(() => {
-    b.current = g
+    g.current = m
   }), r.useEffect(() => {
-    m.current = Date.now()
-  }, [f]), r.useEffect(() => {
-    f && null != t && l.Z.fetchChangelog(t, n, !0)
-  }, [t, n, f]), r.useEffect(() => {
-    f && null != h && s.default.track(p.rMx.CHANGE_LOG_OPENED, {
-      change_log_id: "".concat(h.date, ":").concat(h.revision),
-      unread_count: b.current
+    h.current = Date.now()
+  }, [p]), r.useEffect(() => {
+    p && null != t && a.Z.fetchChangelog(t, n, !0)
+  }, [t, n, p]), r.useEffect(() => {
+    p && null != _ && l.default.track(f.rMx.CHANGE_LOG_OPENED, {
+      change_log_id: "".concat(_.date, ":").concat(_.revision),
+      unread_count: g.current
     })
-  }, [f, h]), r.useEffect(() => {
-    let e = m.current;
+  }, [p, _]), r.useEffect(() => {
+    let e = h.current;
     return () => {
-      f && null != h && null != e && (s.default.track(p.rMx.CHANGE_LOG_CLOSED, {
+      p && null != _ && null != e && (l.default.track(f.rMx.CHANGE_LOG_CLOSED, {
         seconds_open: Math.round((Date.now() - e) / 1e3),
-        change_log_id: "".concat(h.date, ":").concat(h.revision),
-        unread_count: b.current
-      }), m.current = 0)
+        change_log_id: "".concat(_.date, ":").concat(_.revision),
+        unread_count: g.current
+      }), h.current = 0)
     }
-  }, [f, h])
+  }, [p, _])
 }

@@ -1,4 +1,4 @@
-/** Chunk was on 99226 **/
+/** Chunk was on 13616 **/
 n.d(t, {
   Z: () => j
 }), n(388685);
@@ -31,14 +31,14 @@ function j(e) {
       canNavigate: N
     } = e,
     S = (0, d.ZP)(),
-    [Z, I] = r.useState(null),
-    [E, w] = r.useState(null);
+    [I, w] = r.useState(null),
+    [Z, E] = r.useState(null);
   if (null != j) t = j;
   else {
     let e = Object.values(y);
     t = e.length > 0 ? e[0] : null
   }
-  let T = r.useCallback(async () => {
+  let P = r.useCallback(async () => {
     if (N() && null !== t) {
       let e = await s.Z.create(n.id, t.id).catch(e => {
         let {
@@ -56,13 +56,13 @@ function j(e) {
           body: g.intl.string(g.t["/4TwKS"])
         }), null
       });
-      null != e && (w(e.id), I(e))
+      null != e && (E(e.id), w(e))
     }
   }, [N, t, n]);
   (0, c.ZP)(() => {
-    0 === v.length && T()
+    0 === v.length && P()
   });
-  let P = null !== t;
+  let T = null !== t;
   return (0, i.jsxs)(o.hjN, {
     children: [(0, i.jsx)(o.R94, {
       type: o.geA.DESCRIPTION,
@@ -80,14 +80,14 @@ function j(e) {
           variant: "primary",
           size: "sm",
           text: g.intl.string(g.t["nrO/HB"]),
-          disabled: !P,
-          onClick: T
+          disabled: !T,
+          onClick: P
         })
       }), (0, i.jsx)(m.Z, {
         webhooks: v,
         editedWebhook: O,
         selectableWebhookChannels: y,
-        lastCreatedWebhookId: null == Z ? void 0 : Z.id,
+        lastCreatedWebhookId: null == I ? void 0 : I.id,
         errors: C,
         canNavigate: N
       })]
@@ -114,6 +114,6 @@ function j(e) {
           })
         })]
       })
-    }(S, P, T)]
+    }(S, T, P)]
   })
 }

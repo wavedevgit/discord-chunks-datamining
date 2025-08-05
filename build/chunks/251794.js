@@ -1,65 +1,69 @@
-/** Chunk was on 99665 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
-  q: () => o,
-  z: () => u
+  q: () => l,
+  z: () => s
 });
 var r = n(255367);
 n(73800);
-var l = n(481060);
+var i = n(481060);
 
-function i(e) {
+function a(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: !0,
+    configurable: !0,
+    writable: !0
+  }) : e[t] = n, e
+}
+
+function o(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      var r;
-      r = n[t], t in e ? Object.defineProperty(e, t, {
-        value: r,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
-      }) : e[t] = r
+      a(e, t, n[t])
     })
   }
   return e
 }
 
-function u(e) {
+function s(e) {
   let {
     guildId: t,
-    userId: u,
-    anaylticsLocations: o,
-    modReportId: a
+    userId: a,
+    anaylticsLocations: s,
+    modReportId: l
   } = e;
-  (0, l.ZDy)(async () => {
+  (0, i.ZDy)(async () => {
     let {
       default: e
     } = await n.e("72920").then(n.bind(n, 109730));
-    return n => (0, r.jsx)(e, i({
+    return n => (0, r.jsx)(e, o({
       guildId: t,
-      userId: u,
-      anaylticsLocations: o,
-      modReportId: a
+      userId: a,
+      anaylticsLocations: s,
+      modReportId: l
     }, n))
   })
 }
 
-function o(e) {
+function l(e) {
   let {
     guildId: t,
-    userId: u,
-    anaylticsLocations: o
+    userId: a,
+    anaylticsLocations: s
   } = e;
-  (0, l.ZDy)(async () => {
+  (0, i.ZDy)(async () => {
     let {
       default: e
     } = await n.e("76233").then(n.bind(n, 171494));
-    return n => (0, r.jsx)(e, i({
+    return n => (0, r.jsx)(e, o({
       guildId: t,
-      userId: u,
-      anaylticsLocations: o
+      userId: a,
+      anaylticsLocations: s
     }, n))
   })
 }

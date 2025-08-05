@@ -1,4 +1,4 @@
-/** Chunk was on 70663 **/
+/** Chunk was on 92357 **/
 n.d(t, {
   E: () => P,
   Z: () => N
@@ -6,8 +6,8 @@ n.d(t, {
 var r, i = n(255367),
   l = n(73800),
   o = n(120356),
-  a = n.n(o),
-  s = n(748780),
+  s = n.n(o),
+  a = n(748780),
   c = n(442837),
   u = n(692547),
   d = n(215569),
@@ -17,8 +17,8 @@ var r, i = n(255367),
   g = n(703656),
   m = n(417363),
   b = n(941128),
-  _ = n(780570),
-  O = n(353042),
+  O = n(780570),
+  _ = n(353042),
   y = n(981631),
   C = n(388032),
   v = n(496614);
@@ -105,7 +105,7 @@ class x extends l.PureComponent {
     } = this.props;
     if (e.type === y.vxO.UPDATING || e.type === y.vxO.REPAIRING || e.type === y.vxO.INSTALLING) {
       if (t) return C.intl.string(C.t["5oxtFR"]);
-      else if (e.stage === y.f07.PATCHING || e.stage === y.f07.REPAIRING) return (0, i.jsx)(O.Z, {
+      else if (e.stage === y.f07.PATCHING || e.stage === y.f07.REPAIRING) return (0, i.jsx)(_.Z, {
         getHistoricalTotalBytes: m.Z.getHistoricalTotalBytesWritten,
         updateInterval: 5e3,
         children: this.renderProgressBody
@@ -126,12 +126,12 @@ class x extends l.PureComponent {
         stage: i,
         progress: l,
         total: o,
-        type: a
+        type: s
       } = n;
       if (null == l || null == o || null == i) return null;
-      let s = e[e.length - 1] / t * 1e3,
-        c = 0 !== s ? Math.max(1, (o - l) / s) : null,
-        u = S[a],
+      let a = e[e.length - 1] / t * 1e3,
+        c = 0 !== a ? Math.max(1, (o - l) / a) : null,
+        u = S[s],
         d = null != u ? Object.keys(u) : [],
         {
           unit: h,
@@ -150,13 +150,13 @@ class I extends(r = l.PureComponent) {
     this.state.animationScale.setValue(1), e()
   }
   componentWillEnter(e) {
-    s.Z.spring(this.state.animationScale, {
+    a.Z.spring(this.state.animationScale, {
       toValue: 1,
       duration: 200
     }).start(e)
   }
   componentWillLeave(e) {
-    s.Z.spring(this.state.animationScale, {
+    a.Z.spring(this.state.animationScale, {
       toValue: 0,
       duration: 200
     }).start(e)
@@ -179,13 +179,13 @@ class I extends(r = l.PureComponent) {
       isPaused: t,
       className: n
     } = this.props;
-    return (0, i.jsx)(s.Z.div, {
+    return (0, i.jsx)(a.Z.div, {
       style: {
         transform: [{
           scale: this.state.animationScale
         }]
       },
-      className: a()(n, v.progressContainer),
+      className: s()(n, v.progressContainer),
       onClick: this.handleOnClick,
       children: (0, i.jsx)(h.ua7, {
         text: this.getTooltipText(),
@@ -219,7 +219,7 @@ class I extends(r = l.PureComponent) {
   }
   constructor(...e) {
     super(...e), j(this, "state", {
-      animationScale: new s.Z.Value(0)
+      animationScale: new a.Z.Value(0)
     }), j(this, "handleOnClick", e => {
       let {
         onClick: t
@@ -247,9 +247,9 @@ let N = c.ZP.connectStores([b.Z, m.Z, p.Z], () => {
     {
       total: n,
       progress: r
-    } = _.lK(t);
+    } = O.lK(t);
   return {
-    percent: _.xI(r, n),
+    percent: O.xI(r, n),
     isPaused: b.Z.paused,
     firstApplication: e.length > 0 ? p.Z.getApplication(e[0].applicationId) : null,
     firstState: t.length > 0 ? t[0] : null

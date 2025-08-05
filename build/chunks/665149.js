@@ -135,15 +135,15 @@ let y = 24,
       tooltipAlign: A,
       tooltipDisabled: N,
       tooltipSpacing: C,
-      hideOnClick: R = !0,
-      role: P,
-      "aria-label": w,
+      hideOnClick: w = !0,
+      role: R,
+      "aria-label": P,
       "aria-hidden": D,
       "aria-checked": L,
       "aria-expanded": x,
-      "aria-haspopup": M,
-      "data-jump-section": k
-    } = e, j = null != g ? {
+      "aria-haspopup": k,
+      "data-jump-section": j
+    } = e, M = null != g ? {
       secondaryColorClass: g
     } : {}, U = (0, r.jsx)(E, h({
       x: 0,
@@ -154,13 +154,13 @@ let y = 24,
       className: o()(i, _.icon),
       colorClass: null != m ? m : void 0,
       color: null != p ? p : "currentColor"
-    }, j)), G = w;
+    }, M)), G = P;
     return null == G && "string" == typeof I && (G = I), (0, r.jsx)(c.ua7, {
       text: I,
       color: T,
       position: S,
       align: A,
-      hideOnClick: R,
+      hideOnClick: w,
       shouldShow: !N,
       spacing: C,
       children: e => {
@@ -189,7 +189,7 @@ let y = 24,
             onMouseLeave: y,
             onFocus: I,
             onBlur: T
-          }, j))
+          }, M))
         }) : (0, r.jsxs)(c.P3F, {
           innerRef: t,
           tag: "div",
@@ -205,14 +205,14 @@ let y = 24,
             [_.selected]: s,
             [_.iconDisabled]: l
           }),
-          role: P,
+          role: R,
           "aria-label": G,
           "aria-hidden": D,
           "aria-checked": L,
-          "aria-haspopup": M,
+          "aria-haspopup": k,
           "aria-expanded": x,
           tabIndex: l || null == O ? -1 : 0,
-          "data-jump-section": k,
+          "data-jump-section": j,
           children: [u ? (0, r.jsx)(d.ZP, {
             mask: "top" === f ? d.ZP.Masks.HEADER_BAR_BADGE_TOP : d.ZP.Masks.HEADER_BAR_BADGE_BOTTOM,
             height: b,

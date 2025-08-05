@@ -2,14 +2,14 @@
 "use strict";
 n.d(t, {
   Ic: () => x,
-  O5: () => k,
-  Zk: () => j,
+  O5: () => j,
+  Zk: () => M,
   _3: () => L,
-  _F: () => M,
+  _F: () => k,
   _b: () => N,
-  dA: () => w,
+  dA: () => P,
   jZ: () => D,
-  mH: () => P,
+  mH: () => R,
   uk: () => C
 }), n(388685);
 var r = n(73800),
@@ -82,7 +82,7 @@ function C(e) {
   return (null == (t = e.userStatus) ? void 0 : t.claimedAt) != null ? "COMPLETED_CLAIMED" : (null == (n = e.userStatus) ? void 0 : n.completedAt) != null ? "COMPLETED" : (null == (r = e.userStatus) ? void 0 : r.enrolledAt) != null ? "ENROLLED" : "NONE"
 }
 
-function R(e, t, n) {
+function w(e, t, n) {
   let r = E.r.build(e.config);
   return v({
     quest_id: e.id,
@@ -93,7 +93,7 @@ function R(e, t, n) {
   }, (0, p.qe)(e.id, t))
 }
 
-function P(e, t, n) {
+function R(e, t, n) {
   return {
     content_id: e,
     content_name: N(e),
@@ -102,7 +102,7 @@ function P(e, t, n) {
   }
 }
 
-function w(e) {
+function P(e) {
   let {
     questId: t,
     event: n,
@@ -114,7 +114,7 @@ function w(e) {
   if (null == l || (0, g.X7)({
       location: b.dr.QUEST_PREVIEW_TOOL
     }) && u.Z.getLayers().includes(y.S9g.USER_SETTINGS)) return;
-  let f = v({}, R(l, o, a), r);
+  let f = v({}, w(l, o, a), r);
   if (c.default.isLoggingAnalyticsEvents && console.info("[Quest] AnalyticsUtils.track", n, f), l.preview) return;
   let _ = A.has(n);
   if (i) return s.ZP.trackWithMetadata(n, f, _);
@@ -136,10 +136,10 @@ async function L(e) {
     trackGuildAndChannelMetadata: u = !1,
     sourceQuestContent: d
   } = e, _ = h.Z.getQuest(t), m = await (0, a.S)();
-  w({
+  P({
     questId: t,
     event: y.rMx.QUEST_CONTENT_CLICKED,
-    properties: T(v({}, P(n, o, s), (0, l.Z)()), {
+    properties: T(v({}, R(n, o, s), (0, l.Z)()), {
       cta_name: r,
       quest_status: null != _ ? C(_) : null,
       impression_id: c,
@@ -159,8 +159,8 @@ function x(e) {
     questId: r,
     mode: i,
     prevMode: a
-  } = e, o = P(t);
-  w({
+  } = e, o = R(t);
+  P({
     questId: r,
     event: y.rMx.QUEST_BAR_MODE_CHANGED,
     properties: {
@@ -173,10 +173,10 @@ function x(e) {
   })
 }
 
-function M() {
+function k() {
   let e = (0, _.WD)();
   return r.useCallback(t => {
-    w(T(v({}, t), {
+    P(T(v({}, t), {
       properties: T(v({}, t.properties), {
         impression_id: null == e ? void 0 : e.getId()
       })
@@ -184,8 +184,8 @@ function M() {
   }, [e])
 }
 
-function k() {
-  let e = M();
+function j() {
+  let e = k();
   return r.useCallback(t => {
     let {
       questId: n,
@@ -200,7 +200,7 @@ function k() {
       e({
         questId: n,
         event: y.rMx.QUEST_CONTENT_CLICKED,
-        properties: T(v({}, P(r, s, c), (0, l.Z)()), {
+        properties: T(v({}, R(r, s, c), (0, l.Z)()), {
           cta_name: o,
           quest_status: null != _ ? C(_) : null,
           click_id: (0, i.Z)(),
@@ -214,7 +214,7 @@ function k() {
   }, [e])
 }
 
-function j(e, t) {
+function M(e, t) {
   r.useEffect(() => {
     U(t, e)
   }, [e, t])

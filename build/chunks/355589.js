@@ -5,8 +5,8 @@ n.d(t, {
 }), n(539854), n(388685), n(953529);
 var r = n(255367),
   i = n(73800),
-  a = n(120356),
-  l = n.n(a),
+  l = n(120356),
+  a = n.n(l),
   s = n(913527),
   o = n.n(s),
   c = n(66546),
@@ -21,15 +21,15 @@ var r = n(255367),
   b = n(447003),
   j = n(621516),
   v = n(982168),
-  _ = n(386923),
-  C = n(474366),
+  C = n(386923),
+  _ = n(474366),
   y = n(345162),
-  w = n(485386),
-  T = n(430824),
-  O = n(186523),
+  O = n(485386),
+  w = n(430824),
+  P = n(186523),
   S = n(585483),
-  N = n(70956),
-  P = n(709054),
+  T = n(70956),
+  N = n(709054),
   I = n(961675),
   E = n(883429),
   R = n(993259),
@@ -177,7 +177,7 @@ let J = e => {
   }),
   ee = (e, t) => i.useCallback(() => (t(!1), E.Z.hideAdminOnboarding(e, !0)), [e, t]),
   et = e => {
-    let t = P.default.extractTimestamp(e);
+    let t = N.default.extractTimestamp(e);
     return o()().isBefore(o()(t).add(o().duration(15, "days")))
   },
   en = (e, t, n) => {
@@ -186,31 +186,31 @@ let J = e => {
     }, [e, n, t])
   },
   er = (e, t, n, r) => {
-    let a = i.useRef(0);
-    i.useEffect(() => (n || !e || t ? clearTimeout(a.current) : a.current = setTimeout(() => {
+    let l = i.useRef(0);
+    i.useEffect(() => (n || !e || t ? clearTimeout(l.current) : l.current = setTimeout(() => {
       r()
-    }, 60 * N.Z.Millis.SECOND), () => clearTimeout(a.current)), [e, t, r, n])
+    }, 60 * T.Z.Millis.SECOND), () => clearTimeout(l.current)), [e, t, r, n])
   },
   ei = (e, t, n) => {
     (0, p.ZP)(() => {
       e && t && n()
     })
   },
-  ea = e => {
+  el = e => {
     let {
       isAllDone: t,
       isVisible: n,
       canManageChannel: r,
-      guildId: a,
-      channel: l
-    } = e, s = (0, h.e7)([w.Z], () => null != a ? w.Z.partitionVersion(a) : void 0), o = i.useCallback(() => {
+      guildId: l,
+      channel: a
+    } = e, s = (0, h.e7)([O.Z], () => null != l ? O.Z.partitionVersion(l) : void 0), o = i.useCallback(() => {
       S.S.dispatch(z.CkL.REMEASURE_TARGET)
     }, []);
     i.useEffect(() => {
       o()
-    }, [o, t, n, r, s, l.id, l.permissionOverwrites])
+    }, [o, t, n, r, s, a.id, a.permissionOverwrites])
   },
-  el = () => {
+  ea = () => {
     let [e, t] = i.useState(!0);
     return {
       transitions: (0, g.Yzy)(e, {
@@ -272,18 +272,18 @@ let J = e => {
   ed = e => {
     let {
       guild: t,
-      channel: a,
-      hasAnyThread: l,
+      channel: l,
+      hasAnyThread: a,
       handleHide: s
-    } = e, [o, c] = i.useState(!1), d = (0, A.c)(a.id), u = (0, h.e7)([I.Z], () => I.Z.hasHidden(a.id)), f = function(e, t, a, l) {
+    } = e, [o, c] = i.useState(!1), d = (0, A.c)(l.id), u = (0, h.e7)([I.Z], () => I.Z.hasHidden(l.id)), f = function(e, t, l, a) {
       let s = null == e ? void 0 : e.id,
-        o = (0, h.e7)([w.Z], () => null != s ? w.Z.getSortedRoles(s) : void 0);
+        o = (0, h.e7)([O.Z], () => null != s ? O.Z.getSortedRoles(s) : void 0);
       return i.useMemo(() => {
         let i = new K,
           s = (null == t ? void 0 : t.isMediaChannel()) === !0;
-        return null == e || null == t || s || null == o || i.addStep(function(e, t, i, a) {
-          let l = (0, b.Z)(i) ? m.$e(z.Plq.VIEW_CHANNEL, z.Plq.SEND_MESSAGES) : z.Plq.SEND_MESSAGES,
-            s = null != e ? (0, R.E)(t, i, l).filter(e => i.permissionOverwrites.hasOwnProperty(e.id) || (0, y.fI)(e)) : [],
+        return null == e || null == t || s || null == o || i.addStep(function(e, t, i, l) {
+          let a = (0, b.Z)(i) ? m.$e(z.Plq.VIEW_CHANNEL, z.Plq.SEND_MESSAGES) : z.Plq.SEND_MESSAGES,
+            s = null != e ? (0, R.E)(t, i, a).filter(e => i.permissionOverwrites.hasOwnProperty(e.id) || (0, y.fI)(e)) : [],
             o = s.length > 0,
             c = s.some(e => (0, y.fI)(e));
           return {
@@ -300,23 +300,23 @@ let J = e => {
                 let {
                   default: t
                 } = await n.e("78704").then(n.bind(n, 560602));
-                return a(!0), n => (0, r.jsx)(t, G(V({}, n), {
+                return l(!0), n => (0, r.jsx)(t, G(V({}, n), {
                   channel: i,
                   guild: e,
-                  permission: l,
+                  permission: a,
                   currentSelectedRoles: s
                 }))
               }, {
                 modalKey: "SEND_MESSAGE_ROLE_PERMISSION_FIX_MODAL_KEY",
                 onCloseRequest: z.VqG,
-                onCloseCallback: () => a(!1)
+                onCloseCallback: () => l(!1)
               })
             }
           }
-        }(e, o, t, l)), s || i.addStep(J(t)), i.addStep(Y(t)), i.addStep(Q(t)), i.addStep($(a, s, null == e ? void 0 : e.id)), i
-      }, [t, e, o, a, l])
-    }(t, a, l, c), x = f.isAllDone();
-    return er(x, d || u || !et(a.id), o, s), {
+        }(e, o, t, a)), s || i.addStep(J(t)), i.addStep(Y(t)), i.addStep(Q(t)), i.addStep($(l, s, null == e ? void 0 : e.id)), i
+      }, [t, e, o, l, a])
+    }(t, l, a, c), x = f.isAllDone();
+    return er(x, d || u || !et(l.id), o, s), {
       onboardingSteps: f,
       isHidden: u,
       isDismissed: d,
@@ -368,7 +368,7 @@ let J = e => {
       hasActiveThreads: n,
       channel: i
     } = e, {
-      onboardingExpanded: a
+      onboardingExpanded: l
     } = (0, F.xH)(e => {
       let {
         onboardingExpanded: t
@@ -378,34 +378,34 @@ let J = e => {
       }
     }, d.X), {
       tagFilter: s
-    } = (0, M.H)(i.id), o = (0, h.e7)([T.Z], () => T.Z.getGuild(i.getGuildId())), m = (0, Z.r_)(i), {
+    } = (0, M.H)(i.id), o = (0, h.e7)([w.Z], () => w.Z.getGuild(i.getGuildId())), m = (0, Z.r_)(i), {
       transitions: f,
       setVisible: x
-    } = el(), b = es(a), y = eu(), w = ee(i.id, x), {
+    } = ea(), b = es(l), y = eu(), O = ee(i.id, x), {
       onboardingSteps: S,
-      isDismissed: N,
-      isHidden: P,
+      isDismissed: T,
+      isHidden: N,
       isAllDone: I
     } = ed({
       guild: o,
       channel: i,
       hasAnyThread: t,
-      handleHide: w
-    }), E = !P && !N, R = (0, F.AF)(), k = i.isMediaChannel(), A = e => R.getState().setOnboardingExpanded(e);
-    return (ei(I, E, w), ea({
+      handleHide: O
+    }), E = !N && !T, R = (0, F.AF)(), k = i.isMediaChannel(), A = e => R.getState().setOnboardingExpanded(e);
+    return (ei(I, E, O), el({
       isAllDone: I,
       isVisible: E,
       canManageChannel: m,
       guildId: null == o ? void 0 : o.id,
       channel: i
-    }), en(N, P, x), (0, p.ZP)(() => {
+    }), en(T, N, x), (0, p.ZP)(() => {
       t && E || A(!0)
-    }), null == o) ? null : (0, v.iZ)(i) ? n || 0 !== s.size ? s.size > 0 ? null : (0, r.jsx)(_.Z, {
+    }), null == o) ? null : (0, v.iZ)(i) ? n || 0 !== s.size ? s.size > 0 ? null : (0, r.jsx)(C.Z, {
       guild: o
     }) : (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(_.Z, {
+      children: [(0, r.jsx)(C.Z, {
         guild: o
-      }), (0, r.jsx)(C.q, {})]
+      }), (0, r.jsx)(_.q, {})]
     }) : E && m ? k ? t ? null : (0, r.jsx)(j.Z, {
       channel: i
     }) : (0, r.jsx)(r.Fragment, {
@@ -437,10 +437,10 @@ let J = e => {
                   className: H.icon
                 }), B.intl.string(B.t.znhX2d)]
               }), (0, r.jsx)(eh, {
-                expanded: a,
-                onClick: () => A(!a)
+                expanded: l,
+                onClick: () => A(!l)
               }), (0, r.jsx)(em, {
-                handleHide: w
+                handleHide: O
               })]
             })
           }), b((e, t) => t ? (0, r.jsx)(c.animated.div, {
@@ -452,7 +452,7 @@ let J = e => {
                 tag: "li",
                 "aria-label": e.name,
                 onClick: () => y(e),
-                className: l()(H.stepContainer, {
+                className: a()(H.stepContainer, {
                   [H.completed]: e.isDone
                 }),
                 children: [e.shouldWarn ? (0, r.jsx)(g.Mgn, {
@@ -468,9 +468,9 @@ let J = e => {
                   className: H.stepStatus
                 }) : (0, r.jsx)(g.G2e, {
                   disableColor: !0,
-                  icon: (0, g.GSL)(O.Z),
+                  icon: (0, g.GSL)(P.Z),
                   style: q,
-                  className: l()(H.stepStatus, H.completed)
+                  className: a()(H.stepStatus, H.completed)
                 }), (0, r.jsxs)("div", {
                   className: H.step,
                   children: [(0, r.jsx)(g.Text, {

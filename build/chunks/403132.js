@@ -1,8 +1,9 @@
-/** Chunk was on 28467 **/
-n.d(t, {
-  Z: () => s
-});
+/** Chunk was on web.js **/
+"use strict";
 
-function s(e, t) {
+function r(e, t) {
   return null != t && !!e.mentions.includes(t.author.id)
 }
+n.d(t, {
+  Z: () => r
+})

@@ -1,7 +1,7 @@
-/** Chunk was on 31978 **/
+/** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  o: () => l
+  o: () => i
 });
 let r = (0, n(818083).B)({
   id: "2025-04_native_markdown",
@@ -25,7 +25,7 @@ let r = (0, n(818083).B)({
   }]
 });
 
-function l(e) {
+function i(e) {
   let {
     location: t
   } = e;

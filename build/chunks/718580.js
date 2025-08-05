@@ -118,16 +118,16 @@ function S(e) {
   });
   let N = T.activeSlide,
     C = (0, d.Z)(T.activeSlide),
-    R = null != (t = T.directionOverride) ? t : v(null != C ? S[C] : null, S[N]),
+    w = null != (t = T.directionOverride) ? t : v(null != C ? S[C] : null, S[N]),
     {
-      reducedMotion: P
+      reducedMotion: R
     } = i.useContext(l.S),
-    w = i.useContext(f.Z),
+    P = i.useContext(f.Z),
     D = S[N].impressionName,
     L = E(m({}, S[N].impressionProperties), {
       location_stack: A
     });
-  w({
+  P({
     type: o.ImpressionTypes.MODAL,
     name: D,
     properties: L,
@@ -137,14 +137,14 @@ function S(e) {
   });
   let {
     ref: x,
-    width: M = 0,
-    height: k = 0
-  } = (0, u.ZP)(N), j = m({}, O, T.springConfig, P.enabled ? {
+    width: k = 0,
+    height: j = 0
+  } = (0, u.ZP)(N), M = m({}, O, T.springConfig, R.enabled ? {
     clamp: !0
   } : null), U = (0, c.q_F)({
-    width: null != (n = T.width) ? n : M,
-    height: k,
-    config: j
+    width: null != (n = T.width) ? n : k,
+    height: j,
+    config: M
   }, null == C ? "animate-never" : "respect-motion-settings"), G = (0, c.Yzy)(N, {
     value: 0,
     from: {
@@ -156,17 +156,17 @@ function S(e) {
     leave: {
       value: -1
     },
-    config: j,
+    config: M,
     onRest: (e, t) => {
       let {
         item: n
       } = t;
       n === N && null != T.onSlideReady && T.onSlideReady(n)
     }
-  }, null == C ? "animate-never" : "respect-motion-settings"), B = (0, p.Z)(R), {
-    width: V,
+  }, null == C ? "animate-never" : "respect-motion-settings"), B = (0, p.Z)(w), {
+    width: Z,
     centered: F = !0
-  } = T, Z = s.tq ? "100%" : U.width.to(e => "string" == typeof e ? e : Math.round(e)), H = s.tq ? "100%" : U.height.to(e => Math.round(e)), Y = s.tq ? {} : F ? {
+  } = T, V = s.tq ? "100%" : U.width.to(e => "string" == typeof e ? e : Math.round(e)), H = s.tq ? "100%" : U.height.to(e => Math.round(e)), Y = s.tq ? {} : F ? {
     transform: "translate3d(0, -50%, 0) scale(1.0, 1.0)",
     top: "50%"
   } : {
@@ -177,7 +177,7 @@ function S(e) {
   return (0, r.jsx)(a.animated.div, {
     style: m({
       position: "relative",
-      minWidth: Z,
+      minWidth: V,
       minHeight: H
     }, W),
     children: G((e, t, n) => {
@@ -193,8 +193,8 @@ function S(e) {
           display: g,
           flexDirection: "column",
           backfaceVisibility: "hidden",
-          width: s.tq ? "100%" : V
-        }, Y, P.enabled ? o : m({
+          width: s.tq ? "100%" : Z
+        }, Y, R.enabled ? o : m({
           left: e.value.to(I("left", B)),
           right: e.value.to(I("right", B))
         }, y && o)),

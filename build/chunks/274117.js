@@ -1,4 +1,4 @@
-/** Chunk was on 94312 **/
+/** Chunk was on 22988 **/
 e.exports = {
   keywordListContainer: "keywordListContainer__09e76",
   keywordListTextContainer: "keywordListTextContainer__09e76",

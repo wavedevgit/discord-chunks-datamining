@@ -1,23 +1,23 @@
-/** Chunk was on 78650 **/
+/** Chunk was on 46154 **/
 e.d(n, {
   Z: () => s
 });
 var i = e(255367);
 e(73800);
-var r = e(481060),
+var a = e(481060),
   l = e(787014),
-  a = e(665906),
+  r = e(665906),
   o = e(388032);
 
 function s(t) {
-  let n = (0, a.C7)(t),
-    e = (0, a.$R)(t),
-    s = (0, a.Gu)(t);
-  return !n || !e || s || t.isModeratorReportChannel() || __OVERLAY__ ? null : (0, i.jsx)(r.sNh, {
+  let n = (0, r.C7)(t),
+    e = (0, r.$R)(t),
+    s = (0, r.Gu)(t);
+  return !n || !e || s || t.isModeratorReportChannel() || __OVERLAY__ ? null : (0, i.jsx)(a.sNh, {
     id: "edit-thread",
     label: t.isForumPost() ? o.intl.string(o.t.NP1yHB) : o.intl.string(o.t["2Mk1TE"]),
     action: () => {
-      (0, r.pTH)(), l.ZP.open(t.id)
+      (0, a.pTH)(), l.ZP.open(t.id)
     }
   })
 }

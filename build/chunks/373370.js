@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   CR: () => L,
-  DD: () => P
+  DD: () => R
 }), n(953529), n(388685);
 var r = n(73800),
   i = n(442837),
@@ -259,7 +259,7 @@ let C = e => {
   }
 };
 
-function R(e) {
+function w(e) {
   var t;
   let n = N(g(h({}, e), {
     currentUser: null != (t = e.currentUser) ? t : a.default.getCurrentUser()
@@ -267,7 +267,7 @@ function R(e) {
   return e.withoutMarkdown ? C(n) : n
 }
 
-function P(e) {
+function R(e) {
   let {
     quest: t,
     questContent: n,
@@ -277,7 +277,7 @@ function P(e) {
     questContent: n,
     sourceQuestContent: r
   }), s = (0, i.e7)([a.default], () => a.default.getCurrentUser()), c = (0, l.Jf)(t);
-  return R(g(h({}, e), {
+  return w(g(h({}, e), {
     connectedConsoleLinkOnClick: o,
     withoutMarkdown: !1,
     currentUser: s,
@@ -285,14 +285,14 @@ function P(e) {
   }))
 }
 
-function w(e) {
+function P(e) {
   return (0, s.$J)(e) || (0, s.pO)(e) ? 0 : (0, s.Dr)({
     quest: e
   }) ? 1 : (0, s.q8)(e) ? 2 : 3 * !!(0, s.Vl)(e)
 }
 
 function D(e) {
-  return r.useMemo(() => w(e), [e])
+  return r.useMemo(() => P(e), [e])
 }
 
 function L(e) {

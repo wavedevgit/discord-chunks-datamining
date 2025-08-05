@@ -1,4 +1,4 @@
-/** Chunk was on 94312 **/
+/** Chunk was on 22988 **/
 e.exports = {
   waitlist: "waitlist__24d4e",
   waitlistCtaButton: "waitlistCtaButton__24d4e"

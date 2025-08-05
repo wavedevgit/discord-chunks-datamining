@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  $H: () => eP,
-  $J: () => e4,
+  $H: () => eR,
+  $J: () => e5,
   AV: () => eu,
   B2: () => tO,
   B3: () => td,
@@ -21,7 +21,7 @@ n.d(t, {
   HJ: () => e3,
   Jg: () => eT,
   K: () => ey,
-  KM: () => ew,
+  KM: () => eP,
   Kr: () => eh,
   LM: () => eO,
   MM: () => tA,
@@ -32,15 +32,15 @@ n.d(t, {
   PM: () => el,
   Qe: () => G,
   Rs: () => es,
-  U3: () => Q,
+  U3: () => X,
   V$: () => tt,
   VB: () => tm,
   Vl: () => ez,
-  WP: () => J,
+  WP: () => Q,
   Xh: () => ea,
   Xv: () => eE,
   ZS: () => tE,
-  ZZ: () => Z,
+  ZZ: () => V,
   Zp: () => th,
   _D: () => F,
   _j: () => ti,
@@ -48,7 +48,7 @@ n.d(t, {
   b7: () => eW,
   bA: () => ty,
   f$: () => tc,
-  f2: () => eM,
+  f2: () => ek,
   fY: () => e9,
   gI: () => te,
   hF: () => tT,
@@ -59,7 +59,7 @@ n.d(t, {
   nc: () => ex,
   o9: () => eL,
   oo: () => eS,
-  pO: () => eR,
+  pO: () => ew,
   q6: () => z,
   q8: () => e0,
   qe: () => tv,
@@ -104,9 +104,9 @@ var _ = n(231757),
   A = n(184299),
   N = n(566078),
   C = n(312046),
-  R = n(46140),
-  P = n(981631),
-  w = n(701488),
+  w = n(46140),
+  R = n(981631),
+  P = n(701488),
   D = n(388032);
 
 function L(e, t, n) {
@@ -131,7 +131,7 @@ function x(e) {
   return e
 }
 
-function M(e, t) {
+function k(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -142,12 +142,12 @@ function M(e, t) {
   return n
 }
 
-function k(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : M(Object(t)).forEach(function(n) {
+function j(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : k(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let j = 2592e6,
+let M = 2592e6,
   U = new Set([l.n.PREMIUM_EXTENSION, l.n.PREMIUM_PERMANENT]);
 
 function G(e) {
@@ -160,17 +160,17 @@ function G(e) {
     return console.error("Unknown config version '".concat(null == e || null == (t = e.config) ? void 0 : t.config_version, "'"), n), !1
   }
 }
-let B = e => e.application_id === w.Ev || e.platform === P.M7m.XBOX,
-  V = e => e.platform === P.M7m.PS4 || e.platform === P.M7m.PS5;
+let B = e => e.application_id === P.Ev || e.platform === R.M7m.XBOX,
+  Z = e => e.platform === R.M7m.PS4 || e.platform === R.M7m.PS5;
 
 function F(e, t) {
   if (null == e) return !1;
   let n = e.name.toLowerCase(),
     r = N.r.build(t.config).application.name.toLowerCase();
-  return B(e) || V(e) ? n === r : null != e.application_id && H(e.application_id, t)
+  return B(e) || Z(e) ? n === r : null != e.application_id && H(e.application_id, t)
 }
 
-function Z(e, t) {
+function V(e, t) {
   for (let [n, r] of e)
     if (F(t, r) && !W(r)) return r
 }
@@ -194,7 +194,7 @@ function W(e) {
 
 function K(e) {
   if (!W(e)) return !1;
-  let t = Date.now() - j,
+  let t = Date.now() - M,
     n = new Date(e.config.expiresAt).valueOf();
   return null != e.config.expiresAt && !(n <= t)
 }
@@ -212,7 +212,7 @@ function q(e) {
   }
 }
 
-function X(e) {
+function $(e) {
   let t = {};
   for (let [n, r] of Object.entries(e)) t[n] = {
     eventName: r.event_name,
@@ -224,7 +224,7 @@ function X(e) {
   return t
 }
 
-function Q(e) {
+function X(e) {
   var t;
   return {
     userId: e.user_id,
@@ -236,21 +236,21 @@ function Q(e) {
     lastStreamHeartbeatAt: e.last_stream_heartbeat_at,
     streamProgressSeconds: e.stream_progress_seconds,
     dismissedQuestContent: e.dismissed_quest_content,
-    progress: X(e.progress)
+    progress: $(e.progress)
   }
 }
 
-function J(e) {
+function Q(e) {
   return {
     id: e.id,
     preview: e.preview,
     config: z(e.config),
-    userStatus: null == e.user_status ? null : Q(e.user_status),
+    userStatus: null == e.user_status ? null : X(e.user_status),
     targetedContent: e.targeted_content
   }
 }
 
-function $(e) {
+function J(e) {
   return e.type === c.w.VIRTUAL_CURRENCY ? {
     skuId: e.sku_id,
     type: e.type,
@@ -292,7 +292,7 @@ function ee(e) {
       primary: e.colors.primary,
       secondary: e.colors.secondary
     },
-    rewards: e.rewards.map($),
+    rewards: e.rewards.map(J),
     cosponsorMetadata: (0, C.s)(e.cosponsor_metadata)
   }
 }
@@ -301,7 +301,7 @@ function et(e) {
   return {
     id: e.id,
     config: ee(e.config),
-    userStatus: null == e.user_status ? null : Q(e.user_status)
+    userStatus: null == e.user_status ? null : X(e.user_status)
   }
 }
 
@@ -408,13 +408,13 @@ function eu(e) {
 }
 
 function ed(e) {
-  return Object.keys(R.a_).includes(S.jn[e])
+  return Object.keys(w.a_).includes(S.jn[e])
 }
 
 function ef(e, t) {
   if (!ed(t)) return !1;
   let n = S.jn[t];
-  return (0, b.yE)(e.dismissedQuestContent, R.a_[n])
+  return (0, b.yE)(e.dismissedQuestContent, w.a_[n])
 }
 
 function e_(e) {
@@ -487,8 +487,8 @@ function ev(e, t) {
 }
 
 function eI(e, t) {
-  O.Z.captureException(e, k(x({}, t), {
-    tags: k(x({}, null == t ? void 0 : t.tags), {
+  O.Z.captureException(e, j(x({}, t), {
+    tags: j(x({}, null == t ? void 0 : t.tags), {
       app_context: "quests"
     })
   }))
@@ -497,7 +497,7 @@ function eI(e, t) {
 function eT(e, t) {
   if (null == t || null == e) return null;
   for (let n of t) {
-    let t = Z(e, n);
+    let t = V(e, n);
     if (null != t) return t
   }
   return null
@@ -530,19 +530,19 @@ function eC(e) {
   return null != t.config.taskConfigV2.tasks[o.X.STREAM_ON_DESKTOP]
 }
 
-function eR(e) {
+function ew(e) {
   return null != e.config.taskConfigV2.tasks[o.X.PLAY_ACTIVITY]
 }
 
-function eP(e) {
+function eR(e) {
   return null != e && eN({
     quest: e
   })
 }
 
-function ew(e) {
+function eP(e) {
   let t = N.r.build(e.config).application.id;
-  return eR(e) && t === R.Ts
+  return ew(e) && t === w.Ts
 }
 
 function eD(e, t) {
@@ -568,9 +568,9 @@ function ex(e, t) {
     questContentPosition: t.position,
     impressionId: t.impressionId,
     sourceQuestContent: t.sourceQuestContent
-  }), g.S.dispatch(P.CkL.QUEST_GAME_LINK_OPENED), (0, f.Z)(n)
+  }), g.S.dispatch(R.CkL.QUEST_GAME_LINK_OPENED), (0, f.Z)(n)
 }
-let eM = (e, t) => {
+let ek = (e, t) => {
     (0, v._3)({
       questId: e,
       questContent: t.content,
@@ -580,12 +580,12 @@ let eM = (e, t) => {
       sourceQuestContent: t.sourceQuestContent
     }), (0, m.JG)(es(e))
   },
-  ek = (e, t) => e > 0 ? (0, i.floor)(Math.min(t / e, 1), 4) : 0,
-  ej = e => e6(e) || T.Z.isProgressingOnDesktop(e.id),
+  ej = (e, t) => e > 0 ? (0, i.floor)(Math.min(t / e, 1), 4) : 0,
+  eM = e => e6(e) || T.Z.isProgressingOnDesktop(e.id),
   eU = (e, t) => {
     var n, r, a, o;
     let s = null == (o = e.userStatus) || null == (a = o.progress) || null == (r = a[t.type]) || null == (n = r.heartbeat) ? void 0 : n.lastBeatAt;
-    if (null == s || !ej(e)) return 0;
+    if (null == s || !eM(e)) return 0;
     let l = Date.now() - new Date(s).valueOf();
     return (0, i.floor)(l / E.Z.Millis.SECOND, 2)
   },
@@ -600,7 +600,7 @@ let eM = (e, t) => {
     return l + eU(e, t)
   },
   eB = .99,
-  eV = (e, t) => {
+  eZ = (e, t) => {
     var n;
     let r = t.target;
     if ((null == (n = e.userStatus) ? void 0 : n.completedAt) != null) return r;
@@ -616,16 +616,16 @@ let eM = (e, t) => {
     } = e, s = r.config.taskConfigV2, l = null != i ? i : null == (t = Object.values(s.tasks).filter(e => a.has(e.type))[0]) ? void 0 : t.type, c = null != (n = s.tasks[l]) ? n : s.tasks[o.X.STREAM_ON_DESKTOP];
     if (null == c) throw Error("No task with type ".concat(i, " found for quest ").concat(r.id, "!"));
     let u = c.target,
-      d = eV(r, c);
+      d = eZ(r, c);
     return {
       progressSeconds: d,
       targetSeconds: u,
       targetMinutes: Math.ceil(u / E.Z.Seconds.MINUTE),
-      percentComplete: ek(u, d),
+      percentComplete: ej(u, d),
       taskType: l
     }
   },
-  eZ = e => o.T.ALL.has(e) ? e : null,
+  eV = e => o.T.ALL.has(e) ? e : null,
   eH = e => {
     var t, n;
     let {
@@ -638,7 +638,7 @@ let eM = (e, t) => {
           a = null == t || null == (r = t.heartbeat) ? void 0 : r.lastBeatAt;
         return null != i && null != a ? new Date(i).valueOf() > new Date(a).valueOf() ? -1 : 1 : null == i && null == a && (null == e ? void 0 : e.updatedAt) != null && (null == t ? void 0 : t.updatedAt) != null ? new Date(e.updatedAt).valueOf() > new Date(t.updatedAt).valueOf() ? -1 : 1 : null != i && null == a ? -1 : 1
       }).filter(y.lm)) {
-      let t = eZ(e.eventName);
+      let t = eV(e.eventName);
       if (null != t && (null == i ? void 0 : i.has(t))) return eF({
         quest: r,
         taskType: t,
@@ -658,7 +658,7 @@ let eM = (e, t) => {
       percentComplete: 0,
       taskType: o.X.STREAM_ON_DESKTOP
     };
-    if (e$(e)) return eH({
+    if (eJ(e)) return eH({
       quest: e,
       includeTaskTypes: null != t ? t : e6(e) ? o.T.CONSOLE : o.T.ALL
     });
@@ -671,10 +671,10 @@ let eM = (e, t) => {
         quest: e,
         taskType: o.X.WATCH_VIDEO
       });
-    return eP(e) ? eF({
+    return eR(e) ? eF({
       quest: e,
       taskType: o.X.PLAY_ON_DESKTOP
-    }) : eR(e) ? eF({
+    }) : ew(e) ? eF({
       quest: e,
       taskType: o.X.PLAY_ACTIVITY
     }) : eF({
@@ -688,7 +688,7 @@ function eW(e) {
   let a = N.r.build(e.config).defaultInGameTask;
   if (null == a) return null;
   let o = null != (i = null == (r = e.userStatus) || null == (n = r.progress) || null == (t = n[a.eventName]) ? void 0 : t.value) ? i : 0,
-    s = ek(a.target, o);
+    s = ej(a.target, o);
   return {
     title: a.messages.taskTitle,
     description: a.messages.taskDescription,
@@ -704,34 +704,34 @@ function ez(e) {
 }
 
 function eq(e) {
-  return eX(e.targetSeconds - e.progressSeconds)
+  return e$(e.targetSeconds - e.progressSeconds)
 }
 
-function eX(e) {
+function e$(e) {
   return {
     minutes: Math.max(0, Math.floor(e / 60)),
     seconds: Math.max(0, Math.floor(e % 60))
   }
 }
 
-function eQ(e) {
+function eX(e) {
   let t = eq(e);
-  return eJ(t.minutes, t.seconds)
+  return eQ(t.minutes, t.seconds)
 }
 
-function eJ(e, t) {
+function eQ(e, t) {
   return "".concat(String(e).padStart(2, "0"), ":").concat(String(t).padStart(2, "0"))
 }
-let e$ = eK([o.X.PLAY_ON_XBOX, o.X.PLAY_ON_PLAYSTATION]),
+let eJ = eK([o.X.PLAY_ON_XBOX, o.X.PLAY_ON_PLAYSTATION]),
   e0 = eK([o.X.WATCH_VIDEO, o.X.WATCH_VIDEO_ON_MOBILE]),
   e1 = eK([o.X.WATCH_VIDEO]),
   e2 = eK([o.X.WATCH_VIDEO_ON_MOBILE]),
   e3 = e => e2(e) && !e1(e);
 
-function e4(e) {
-  return e$(e)
+function e5(e) {
+  return eJ(e)
 }
-let e5 = (e, t) => {
+let e4 = (e, t) => {
   var n, r;
   let i = null == e || null == (r = e.progress[t]) || null == (n = r.heartbeat) ? void 0 : n.expiresAt;
   if (null == i) return !1;
@@ -740,7 +740,7 @@ let e5 = (e, t) => {
 };
 
 function e6(e) {
-  return null != e.userStatus && (e5(e.userStatus, o.X.PLAY_ON_XBOX) || e5(e.userStatus, o.X.PLAY_ON_PLAYSTATION))
+  return null != e.userStatus && (e4(e.userStatus, o.X.PLAY_ON_XBOX) || e4(e.userStatus, o.X.PLAY_ON_PLAYSTATION))
 }
 
 function e8(e) {
@@ -748,7 +748,7 @@ function e8(e) {
 }
 
 function e7() {
-  d.Z.open(P.oAB.CONNECTIONS)
+  d.Z.open(R.oAB.CONNECTIONS)
 }
 
 function e9(e, t) {
@@ -809,7 +809,7 @@ function tt(e, t) {
 }
 
 function tn() {
-  return window.location.pathname.startsWith(P.Z5c.QUEST_HOME)
+  return window.location.pathname.startsWith(R.Z5c.QUEST_HOME)
 }
 
 function tr(e) {
@@ -820,11 +820,11 @@ function tr(e) {
 }
 
 function ti(e) {
-  return "xbox" === e.connected_account_type ? P.ABu.XBOX : P.ABu.PLAYSTATION
+  return "xbox" === e.connected_account_type ? R.ABu.XBOX : R.ABu.PLAYSTATION
 }
 
 function ta(e) {
-  return ti(e) === P.ABu.XBOX ? D.t.mytEv7 : D.t.iDiwb2
+  return ti(e) === R.ABu.XBOX ? D.t.mytEv7 : D.t.iDiwb2
 }
 
 function to(e) {
@@ -867,9 +867,9 @@ function tl(e) {
     }) || eC({
       quest: e
     }),
-    n = e$(e),
+    n = eJ(e),
     r = [];
-  return t && r.push(R.cd.DESKTOP), n && r.push(R.cd.CONSOLE), r
+  return t && r.push(w.cd.DESKTOP), n && r.push(w.cd.CONSOLE), r
 }
 
 function tc(e) {
@@ -888,10 +888,10 @@ function td(e) {
     n = [];
   for (let e of t) switch (e) {
     case o.X.PLAY_ON_XBOX:
-      n.push(P.ABu.XBOX);
+      n.push(R.ABu.XBOX);
       break;
     case o.X.PLAY_ON_PLAYSTATION:
-      n.push(P.ABu.PLAYSTATION)
+      n.push(R.ABu.PLAYSTATION)
   }
   return n
 }
@@ -902,7 +902,7 @@ function tf(e) {
 
 function t_(e) {
   let t = e0(e),
-    n = eR(e);
+    n = ew(e);
   return t || n
 }
 
@@ -921,7 +921,7 @@ function th(e) {
 
 function tm(e) {
   let t = th(e);
-  return null != t && R.v6.has(t)
+  return null != t && w.v6.has(t)
 }
 let tg = "landscape";
 
@@ -930,9 +930,9 @@ function tE(e) {
   return null == t || null == t.width || null == t.height ? tg : t.width > t.height ? "landscape" : "portrait"
 }
 let tb = e => e.percentComplete > 0 ? D.intl.formatToPlainString(D.t["c59/Tk"], {
-  remainTime: eQ(e)
+  remainTime: eX(e)
 }) : D.intl.formatToPlainString(D.t.GNsKiY, {
-  remainTime: eQ(e)
+  remainTime: eX(e)
 });
 
 function ty(e, t) {
@@ -951,7 +951,7 @@ function tv(e, t) {
     quest: r,
     adDecisionData: i
   } = null != (n = T.Z.questToDeliverForPlacement.get(th(t))) ? n : {};
-  return null != i && (null == r ? void 0 : r.id) === e ? i : R.Jp
+  return null != i && (null == r ? void 0 : r.id) === e ? i : w.Jp
 }
 
 function tI(e) {
@@ -995,7 +995,7 @@ function tN(e) {
   let l = ty(o.maxTimestampSec, o.duration);
   (0, v.dA)({
     questId: r,
-    event: P.rMx.QUEST_VIDEO_PROGRESSED,
+    event: R.rMx.QUEST_VIDEO_PROGRESSED,
     properties: {
       progress: l,
       video_timestamp_seconds: o.maxTimestampSec,
@@ -1004,7 +1004,7 @@ function tN(e) {
     sourceQuestContent: i
   }), (0, v.dA)({
     questId: r,
-    event: P.rMx.QUEST_VIDEO_MODAL_CLOSED,
+    event: R.rMx.QUEST_VIDEO_MODAL_CLOSED,
     properties: {
       video_progress: l,
       video_session_id: a,

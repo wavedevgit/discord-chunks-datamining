@@ -1,10 +1,11 @@
-/** Chunk was on 94313 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
-  Z: () => l
+  Z: () => a
 });
 var r = n(818083),
   i = n(987338);
-let l = (0, r.B)({
+let a = (0, r.B)({
   kind: "user",
   id: "2025-06_referral_program_receiver_copy",
   label: "Referral Program Receiver Copy Experiment",

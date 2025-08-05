@@ -1,4 +1,4 @@
-/** Chunk was on 60301 **/
+/** Chunk was on 57650 **/
 e.exports = {
   root: "root_ea9caa",
   applicationIcon: "applicationIcon_ea9caa",

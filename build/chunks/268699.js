@@ -1,66 +1,70 @@
-/** Chunk was on 60173 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
-  H: () => c,
-  V: () => u
+  H: () => u,
+  V: () => d
 });
 var r = n(255367);
 n(73800);
 var i = n(481060),
-  l = n(626135),
-  a = n(687683),
-  o = n(981631);
+  a = n(626135),
+  o = n(687683),
+  s = n(981631);
 
-function s(e) {
+function l(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: !0,
+    configurable: !0,
+    writable: !0
+  }) : e[t] = n, e
+}
+
+function c(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      var r;
-      r = n[t], t in e ? Object.defineProperty(e, t, {
-        value: r,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
-      }) : e[t] = r
+      l(e, t, n[t])
     })
   }
   return e
 }
 
-function c(e) {
+function u(e) {
   let {
     channelId: t,
-    onConfirm: c,
+    onConfirm: l,
     onCancel: u
   } = e;
-  l.default.track(o.rMx.OPEN_MODAL, {
-    type: a.t9,
+  a.default.track(s.rMx.OPEN_MODAL, {
+    type: o.t9,
     channel_id: t
   }), (0, i.ZDy)(async () => {
     let {
       default: e
     } = await n.e("4117").then(n.bind(n, 217723));
-    return t => (0, r.jsx)(e, s({
-      onConfirm: c,
+    return t => (0, r.jsx)(e, c({
+      onConfirm: l,
       onDismiss: u
     }, t))
   })
 }
 
-function u(e) {
+function d(e) {
   let {
     onConfirm: t,
-    onCancel: l
+    onCancel: a
   } = e;
   (0, i.ZDy)(async () => {
     let {
       default: e
     } = await n.e("7649").then(n.bind(n, 797464));
-    return n => (0, r.jsx)(e, s({
+    return n => (0, r.jsx)(e, c({
       onConfirm: t,
-      onDismiss: l
+      onDismiss: a
     }, n))
   })
 }

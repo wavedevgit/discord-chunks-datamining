@@ -113,17 +113,17 @@ function S(e) {
     } = n,
     C = O(n, ["width", "height", "url", "proxyUrl", "alt", "type", "maxWidth", "maxHeight"]),
     {
-      zoomed: R
+      zoomed: w
     } = (0, p.Y)(),
-    P = N(R, g, b),
-    w = null != d && 0 !== d && null != _ && 0 !== _;
-  if ("VIDEO" === I && w && null != b) {
+    R = N(w, g, b),
+    P = null != d && 0 !== d && null != _ && 0 !== _;
+  if ("VIDEO" === I && P && null != b) {
     var D;
     let e = T(b);
     if (null == e) return null;
     let t = null != (D = n.renderLinkComponent) ? D : c.iT;
     return (0, r.jsx)(s.Z, y(E({}, C), {
-      src: P,
+      src: R,
       width: d,
       height: _,
       maxWidth: a,
@@ -142,8 +142,8 @@ function S(e) {
       disableArrowKeySeek: !0
     }))
   }
-  return "IMAGE" === I && (t = w ? (0, r.jsx)(o.ZP, y(E({}, C), {
-    src: P,
+  return "IMAGE" === I && (t = P ? (0, r.jsx)(o.ZP, y(E({}, C), {
+    src: R,
     width: d,
     height: _,
     maxWidth: a,
@@ -156,7 +156,7 @@ function S(e) {
     alt: v,
     onContextMenu: u
   })) : (0, r.jsx)("img", {
-    src: P,
+    src: R,
     alt: v,
     onContextMenu: u,
     className: m.dimensionlessImage,

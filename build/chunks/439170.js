@@ -1,10 +1,10 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  CR: () => R,
-  ZP: () => X,
-  oL: () => P,
-  so: () => w
+  CR: () => w,
+  ZP: () => $,
+  oL: () => R,
+  so: () => P
 }), n(539854), n(642613), n(388685);
 var r, i = n(392711),
   a = n.n(i),
@@ -66,9 +66,9 @@ function C(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let R = "everyone",
-  P = 0;
-var w = function(e) {
+let w = "everyone",
+  R = 0;
+var P = function(e) {
   return e.GROUP = "GROUP", e.MEMBER = "MEMBER", e.CONTENT_INVENTORY = "CONTENT_INVENTORY", e.CONTENT_INVENTORY_GROUP = "CONTENT_INVENTORY_GROUP", e.HIDDEN_CONTENT_INVENTORY = "HIDDEN_CONTENT_INVENTORY", e.CONTENT_INVENTORY_LEADERBOARD = "CONTENT_INVENTORY_LEADERBOARD", e
 }({});
 
@@ -119,11 +119,11 @@ function L(e, t, n) {
 
 function x(e) {
   let t = h.Z.getChannel(e);
-  return null == t ? R : null == t.memberListId ? M(t) : t.memberListId
+  return null == t ? w : null == t.memberListId ? k(t) : t.memberListId
 }
 
-function M(e) {
-  return f.oz(I.Plq.VIEW_CHANNEL, e) ? R : s().v3(a()(e.permissionOverwrites).reduce((e, t) => {
+function k(e) {
+  return f.oz(I.Plq.VIEW_CHANNEL, e) ? w : s().v3(a()(e.permissionOverwrites).reduce((e, t) => {
     let {
       id: n,
       allow: r,
@@ -132,7 +132,7 @@ function M(e) {
     return l.e$(r, I.Plq.VIEW_CHANNEL) ? e.push("allow:".concat(n)) : l.e$(i, I.Plq.VIEW_CHANNEL) && e.push("deny:".concat(n)), e
   }, []).sort().join(",")).toString()
 }
-class k {
+class j {
   updateOwnerId() {
     let e = b.Z.getGuild(this.guildId);
     if (null == e) return !1;
@@ -206,12 +206,12 @@ class k {
     S(this, "guildId", void 0), S(this, "listId", void 0), S(this, "ownerId", void 0), S(this, "rows", []), S(this, "groups", []), S(this, "members", {}), S(this, "version", 0), this.guildId = e, this.listId = t, this.updateOwnerId()
   }
 }
-class j {
+class M {
   get(e, t) {
     let n = this._guildLists[e];
     null == n && (n = this._guildLists[e] = {});
     let r = n[t];
-    return null == r && ((r = new k(e, t)).setGroups([{
+    return null == r && ((r = new j(e, t)).setGroups([{
       id: I.Skl.UNKNOWN,
       count: 0
     }]), n[t] = r), r
@@ -235,7 +235,7 @@ class j {
     S(this, "_guildLists", {})
   }
 }
-let U = new j;
+let U = new M;
 
 function G(e) {
   let t = U.get(e.guildId, e.id);
@@ -263,7 +263,7 @@ function B() {
   U.reset()
 }
 
-function V(e) {
+function Z(e) {
   let {
     guild: t
   } = e;
@@ -279,7 +279,7 @@ function F(e) {
   U.delete(t.id)
 }
 
-function Z(e) {
+function V(e) {
   let {
     guildId: t
   } = e;
@@ -329,13 +329,13 @@ class q extends(r = c.ZP.Store) {
   }
 }
 S(q, "displayName", "ChannelMemberStore");
-let X = new q(u.Z, {
+let $ = new q(u.Z, {
   CONNECTION_OPEN: B,
   OVERLAY_INITIALIZE: B,
   GUILD_MEMBER_LIST_UPDATE: G,
-  GUILD_UPDATE: V,
+  GUILD_UPDATE: Z,
   GUILD_DELETE: F,
-  GUILD_ROLE_UPDATE: Z,
+  GUILD_ROLE_UPDATE: V,
   GUILD_MEMBER_UPDATE: H,
   CHANNEL_UPDATES: z
 })

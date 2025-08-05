@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => P
+  Z: () => R
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -38,7 +38,7 @@ function C(e, t, n) {
   }) : e[t] = n, e
 }
 
-function R(e) {
+function w(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -51,44 +51,44 @@ function R(e) {
   return e
 }
 
-function P(e) {
+function R(e) {
   let {
     user: t,
     currentUser: n,
     guildId: C,
-    channelId: P,
-    messageId: w,
+    channelId: R,
+    messageId: P,
     roleId: D,
     openedAt: L,
     closePopout: x,
-    setPopoutRef: M,
-    disableUserProfileLink: k = __OVERLAY__,
-    newAnalyticsLocations: j = [],
+    setPopoutRef: k,
+    disableUserProfileLink: j = __OVERLAY__,
+    newAnalyticsLocations: M = [],
     disableAutoFocus: U = !1
   } = e, {
     analyticsLocations: G
-  } = (0, c.ZP)([...j, l.Z.USER_PROFILE_POPOUT]), B = (0, _.ZB)({
+  } = (0, c.ZP)([...M, l.Z.USER_PROFILE_POPOUT]), B = (0, _.ZB)({
     layout: "POPOUT",
     userId: t.id,
     guildId: C,
-    channelId: P,
-    messageId: w,
+    channelId: R,
+    messageId: P,
     roleId: D
-  }), V = (0, h.ZP)(t.id, C), F = (0, a.e7)([d.Z], () => null != C ? d.Z.getGuild(C) : null), Z = i.useRef(null), H = (0, s.Z)(Z);
+  }), Z = (0, h.ZP)(t.id, C), F = (0, a.e7)([d.Z], () => null != C ? d.Z.getGuild(C) : null), V = i.useRef(null), H = (0, s.Z)(V);
   i.useEffect(() => {
-    null == M || M(null == Z ? void 0 : Z.current)
-  }, [Z, M]);
+    null == k || k(null == V ? void 0 : V.current)
+  }, [V, k]);
   let Y = e => {
-      null == x || x(), (0, m.openUserProfileModal)(R({
+      null == x || x(), (0, m.openUserProfileModal)(w({
         sourceAnalyticsLocations: G,
         hideRestrictedProfile: !0
       }, B, e))
     },
-    W = () => k ? null : (0, r.jsx)(o.sNh, {
+    W = () => j ? null : (0, r.jsx)(o.sNh, {
       id: "view-profile",
       label: A.intl.string(A.t["+Xp3ho"]),
       action: () => {
-        Y(), (0, p.pQ)(R({
+        Y(), (0, p.pQ)(w({
           action: "PRESS_VIEW_PROFILE",
           analyticsLocations: G
         }, B))
@@ -96,17 +96,17 @@ function P(e) {
     }),
     K = U ? "div" : o.VqE,
     z = (0, u.Dt)(),
-    q = f.ZP.useName(C, P, t);
+    q = f.ZP.useName(C, R, t);
   return (0, r.jsx)(c.Gt, {
     value: G,
     children: (0, r.jsx)(_.Mt, {
       value: B,
       openedAt: L,
-      fetchStartedAt: null == V ? void 0 : V.fetchStartedAt,
-      fetchEndedAt: null == V ? void 0 : V.fetchEndedAt,
-      isLoaded: null == V ? void 0 : V.isLoaded,
+      fetchStartedAt: null == Z ? void 0 : Z.fetchStartedAt,
+      fetchEndedAt: null == Z ? void 0 : Z.fetchEndedAt,
+      isLoaded: null == Z ? void 0 : Z.isLoaded,
       children: (0, r.jsxs)(K, {
-        ref: Z,
+        ref: V,
         "aria-labelledby": z,
         children: [(0, r.jsx)(o.nn4, {
           children: (0, r.jsx)(o.H, {
@@ -117,7 +117,7 @@ function P(e) {
           })
         }), (0, r.jsxs)(b.Z, {
           user: t,
-          displayProfile: V,
+          displayProfile: Z,
           themeType: S.lY.POPOUT,
           children: [(0, r.jsx)(O.Z, {
             children: (0, r.jsx)(y.Z, {
@@ -130,16 +130,16 @@ function P(e) {
             className: N.header,
             children: [(0, r.jsx)(E.Z, {
               user: t,
-              displayProfile: V,
+              displayProfile: Z,
               guildId: C,
               themeType: S.lY.POPOUT
             }), (0, r.jsx)(g.Z, {
               user: t,
-              displayProfile: V,
+              displayProfile: Z,
               guildId: C,
-              channelId: P,
+              channelId: R,
               themeType: S.lY.POPOUT,
-              onOpenProfile: k ? void 0 : Y
+              onOpenProfile: j ? void 0 : Y
             }), (0, r.jsx)(v.Z, {
               location: "BotUserProfilePopout",
               user: t,
@@ -150,16 +150,16 @@ function P(e) {
           }), (0, r.jsx)(I.Z, {
             user: t,
             currentUser: n,
-            displayProfile: V,
+            displayProfile: Z,
             guild: F,
             isHovering: H,
-            onOpenProfile: k ? void 0 : Y,
-            channelId: P,
+            onOpenProfile: j ? void 0 : Y,
+            channelId: R,
             onClose: x
           }), (0, r.jsx)(T.Z, {
             user: t,
             guildId: C,
-            channelId: P,
+            channelId: R,
             onClose: x,
             disableAutoFocus: U
           })]

@@ -1,6 +1,6 @@
 /** Chunk was on 93886 **/
 a.d(t, {
-  P: () => g
+  P: () => j
 }), a(388685), a(35282), a(49124);
 var n = a(255367),
   r = a(73800),
@@ -34,7 +34,7 @@ function h(e) {
   return e
 }
 
-function b(e, t) {
+function f(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var a = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -46,7 +46,7 @@ function b(e, t) {
     Object.defineProperty(e, a, Object.getOwnPropertyDescriptor(t, a))
   }), e
 }
-let f = Object.keys(x.jQ).map(e => ({
+let b = Object.keys(x.jQ).map(e => ({
     value: e,
     label: e
   })),
@@ -58,7 +58,7 @@ let f = Object.keys(x.jQ).map(e => ({
     label: e
   }));
 
-function g(e) {
+function j(e) {
   let {
     state: t,
     setState: a
@@ -83,7 +83,7 @@ function g(e) {
           easing: x.iw.LINEAR,
           easingStrength: 1,
           steps: 26
-        }, a(b(h({}, t), {
+        }, a(f(h({}, t), {
           scales: [...t.scales, n]
         })))
       },
@@ -98,24 +98,24 @@ function g(e) {
           },
           children: (0, n.jsx)(_, {
             scale: e,
-            onRemove: () => a(b(h({}, t), {
+            onRemove: () => a(f(h({}, t), {
               scales: t.scales.filter(t => t.name !== e.name)
             }))
           })
         })
       }, e.name))
     })]
-  }), u = l.find(e => e.name === i), f = null != u ? (0, n.jsx)(j, {
+  }), u = l.find(e => e.name === i), b = null != u ? (0, n.jsx)(g, {
     onClose: () => s(null),
     scale: u,
     setState: a
   }) : o;
   return (0, n.jsx)("div", {
-    children: f
+    children: b
   })
 }
 
-function j(e) {
+function g(e) {
   let {
     scale: t,
     setState: a,
@@ -123,14 +123,14 @@ function j(e) {
   } = e, {
     name: c,
     base: h,
-    darkness: b,
+    darkness: f,
     lightness: v,
-    showColumnarPalettePreview: g,
-    colorSpace: j,
+    showColumnarPalettePreview: j,
+    colorSpace: g,
     easingStrength: _ = 1,
     useP3ColorSpace: C,
     steps: O = 26
-  } = t, N = (0, x.XM)(t), T = (0, x.W6)(N, c);
+  } = t, N = (0, x.XM)(t), E = (0, x.W6)(N, c);
   return (0, n.jsxs)(d.hjN, {
     className: p.paletteSettings,
     children: [(0, n.jsxs)("div", {
@@ -184,8 +184,8 @@ function j(e) {
         type: d.geA.DESCRIPTION,
         children: "The color space used to generate the palette. Different color spaces will produce different results."
       }), (0, n.jsx)(d.q4e, {
-        options: f,
-        value: j,
+        options: b,
+        value: g,
         onChange: e => (0, x.t4)(c, e, a),
         popoutLayerContext: m.O$
       })]
@@ -209,7 +209,7 @@ function j(e) {
           onMarkerRender: () => null
         })]
       }), (0, n.jsxs)(d.xJW, {
-        title: "Darken (".concat((100 * b).toFixed(), "%)"),
+        title: "Darken (".concat((100 * f).toFixed(), "%)"),
         children: [(0, n.jsx)(d.R94, {
           type: d.geA.DESCRIPTION,
           children: "Increase the darkness of the lightest color in the palette. Increasing this makes the lighter colors in the palette darker."
@@ -247,7 +247,7 @@ function j(e) {
       children: [(0, n.jsx)(d.xJW, {
         children: (0, n.jsx)(d.j7V, {
           note: "Renders the palette preview in a single column, useful for comparing the luminance of each step.",
-          value: g,
+          value: j,
           onChange: e => (0, x.KB)(c, e, a),
           children: "Show columnar palette preview"
         })
@@ -273,22 +273,22 @@ function j(e) {
         title: "Palette Preview",
         children: (0, n.jsx)("div", {
           className: p.paletteOverrides,
-          "data-columnar": g,
+          "data-columnar": j,
           children: Object.entries(N).map((e, a) => {
-            let [r, c] = e, u = (0, x.HI)(c), m = (0, s.Z)((0, o.Z)("black"), c) > 4.5 ? "black" : "white", p = T[r];
+            let [r, c] = e, u = (0, x.HI)(c), m = (0, s.Z)((0, o.Z)("black"), c) > 4.5 ? "black" : "white", p = E[r];
             return (0, n.jsxs)("div", {
               style: {
                 backgroundColor: u
               },
               children: [(0, n.jsxs)(d.Text, {
-                variant: g ? "text-sm/medium" : "text-xs/medium",
+                variant: j ? "text-sm/medium" : "text-xs/medium",
                 style: {
                   color: m
                 },
-                children: [t.name, ".", a + 1, g && null != p ? (0, n.jsx)("strong", {
+                children: [t.name, ".", a + 1, j && null != p ? (0, n.jsx)("strong", {
                   children: " - ".concat(p)
                 }) : ""]
-              }), g && (0, n.jsxs)(d.Text, {
+              }), j && (0, n.jsxs)(d.Text, {
                 variant: "text-xxs/medium",
                 style: {
                   opacity: .75,

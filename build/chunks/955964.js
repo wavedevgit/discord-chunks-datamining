@@ -1,4 +1,5 @@
-/** Chunk was on 94313 **/
+/** Chunk was on web.js **/
+"use strict";
 e.exports = {
   metadata: "metadata__857bf",
   libraryLink: "libraryLink__857bf",

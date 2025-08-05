@@ -1,4 +1,4 @@
-/** Chunk was on 70663 **/
+/** Chunk was on 92357 **/
 n.d(t, {
   Z: () => P,
   h: () => w
@@ -7,8 +7,8 @@ var r = n(255367),
   i = n(73800),
   l = n(120356),
   o = n.n(l),
-  a = n(525654),
-  s = n.n(a),
+  s = n(525654),
+  a = n.n(s),
   c = n(91192),
   u = n(442837),
   d = n(524437),
@@ -18,8 +18,8 @@ var r = n(255367),
   g = n(724757),
   m = n(216789),
   b = n(626135),
-  _ = n(585483),
-  O = n(358085),
+  O = n(585483),
+  _ = n(358085),
   y = n(143316),
   C = n(240126),
   v = n(791914),
@@ -30,9 +30,9 @@ var r = n(255367),
   I = n(128406);
 
 function P(e) {
-  var t, n, l, a, P, w, T;
+  var t, n, l, s, P, w, Z;
   let {
-    setTab: Z,
+    setTab: T,
     onJump: A,
     showTutorial: R,
     setSeenTutorial: D,
@@ -57,26 +57,26 @@ function P(e) {
     if (null == i || null == r) return;
     let o = null == (e = i.getScrollerNode()) ? void 0 : e.children;
     if (null == o) return;
-    let a = o[r];
-    if (null == a) return;
+    let s = o[r];
+    if (null == s) return;
     let {
-      scrollTop: s,
+      scrollTop: a,
       offsetHeight: c
     } = i.getScrollerState();
-    (a.offsetTop < s || a.offsetTop > s + c) && i.scrollTo({
-      to: a.offsetTop
+    (s.offsetTop < a || s.offsetTop > a + c) && i.scrollTo({
+      to: s.offsetTop
     })
-  }), a = U, P = G, i.useEffect(() => {
+  }), s = U, P = G, i.useEffect(() => {
     let e = () => {
-      let e = a.channels.find(e => !e.collapsed);
+      let e = s.channels.find(e => !e.collapsed);
       null != e && P.markChannelRead(e)
     };
-    return _.S.subscribe(S.CkL.MARK_TOP_INBOX_CHANNEL_READ, e), () => {
-      _.S.unsubscribe(S.CkL.MARK_TOP_INBOX_CHANNEL_READ, e)
+    return O.S.subscribe(S.CkL.MARK_TOP_INBOX_CHANNEL_READ, e), () => {
+      O.S.unsubscribe(S.CkL.MARK_TOP_INBOX_CHANNEL_READ, e)
     }
-  }, [P, a.channels]), w = G, i.useEffect(() => {
+  }, [P, s.channels]), w = G, i.useEffect(() => {
     let e = e => {
-      ((0, O.isMac)() || (0, O.isMacWeb)() ? e.metaKey : e.ctrlKey) && !e.shiftKey && !e.altKey && "z" === e.key && w.undoMarkChannelRead()
+      ((0, _.isMac)() || (0, _.isMacWeb)() ? e.metaKey : e.ctrlKey) && !e.shiftKey && !e.altKey && "z" === e.key && w.undoMarkChannelRead()
     };
     return document.addEventListener("keydown", e), () => {
       document.removeEventListener("keydown", e)
@@ -100,13 +100,13 @@ function P(e) {
       }),
       children: [(0, r.jsx)(v.Z, {
         tab: d.X.UNREADS,
-        setTab: Z,
+        setTab: T,
         badgeState: M,
         closePopout: L
       }), (0, r.jsx)(C.Z, {
         Icon: h.xx7,
         header: x.intl.string(x.t["6XMM+P"]),
-        tip: (null == (T = s().os) ? void 0 : T.family) === "OS X" ? x.intl.string(x.t.w9uDOT) : x.intl.string(x.t.BiUJCw)
+        tip: (null == (Z = a().os) ? void 0 : Z.family) === "OS X" ? x.intl.string(x.t.w9uDOT) : x.intl.string(x.t.BiUJCw)
       })]
     })
   }
@@ -117,7 +117,7 @@ function P(e) {
     "aria-label": x.intl.string(x.t.sRUdBw),
     children: [(0, r.jsx)(v.Z, {
       tab: d.X.UNREADS,
-      setTab: Z,
+      setTab: T,
       badgeState: M,
       closePopout: L,
       children: (0, r.jsx)(y.Z, {

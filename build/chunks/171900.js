@@ -155,13 +155,13 @@ function C(e) {
   })
 }
 
-function R(e) {
+function w(e) {
   e.ids.forEach(t => {
     g(t).handleSearchFailure(e.error)
   })
 }
 
-function P(e) {
+function R(e) {
   let t = _.get(e.id);
   if (null == t) return !1;
   t.messageIds.forEach(e => {
@@ -171,7 +171,7 @@ function P(e) {
   }), _.delete(e.id)
 }
 
-function w(e) {
+function P(e) {
   _ = new Map, p = new Map, h = new Map
 }
 class D extends(r = i.ZP.Store) {
@@ -226,9 +226,9 @@ let L = new D(a.Z, {
   SEARCH_MESSAGES_START: O,
   SEARCH_MESSAGES_SUCCESS: v,
   SEARCH_MESSAGES_INDEXING: C,
-  SEARCH_MESSAGES_FAILURE: R,
-  SEARCH_MESSAGES_CLEAR: P,
-  SEARCH_MESSAGES_CLEAR_ALL: w,
+  SEARCH_MESSAGES_FAILURE: w,
+  SEARCH_MESSAGES_CLEAR: R,
+  SEARCH_MESSAGES_CLEAR_ALL: P,
   MESSAGE_UPDATE: I,
   MESSAGE_REACTION_ADD: T,
   MESSAGE_REACTION_ADD_MANY: S,

@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   Ji: () => L,
-  O_: () => w,
+  O_: () => P,
   qA: () => c,
   uR: () => x
 });
@@ -463,7 +463,7 @@ function C(e) {
   }))
 }
 
-function R(e, t, n, r, i) {
+function w(e, t, n, r, i) {
   var a = function(e, t) {
       return f(f({
         id: t
@@ -506,7 +506,7 @@ function R(e, t, n, r, i) {
   })
 }
 
-function P() {
+function R() {
   var e = r.useRef(!1),
     t = r.useRef({}),
     n = r.useCallback(function(e) {
@@ -532,7 +532,7 @@ function P() {
     }
   }, [n])
 }
-var w = r.forwardRef(function(e, t) {
+var P = r.forwardRef(function(e, t) {
     var o = e.className,
       s = e.environment,
       l = e.onClick,
@@ -555,7 +555,7 @@ var w = r.forwardRef(function(e, t) {
         return n
       }(e, ["className", "environment", "onClick", "onMouseDown", "onMouseMove", "onMouseUp", "onBeforeRender", "onAfterRender", "requestAnimationFrame", "cancelAnimationFrame"]),
       y = r.useRef(null),
-      O = P(),
+      O = R(),
       v = O.isReady,
       I = O.addReadyListener,
       T = O.removeReadyListener,
@@ -563,7 +563,7 @@ var w = r.forwardRef(function(e, t) {
       A = r.useRef(new Map),
       N = r.useRef(null),
       C = r.useRef(0),
-      w = r.useRef(0),
+      P = r.useRef(0),
       D = r.useCallback(function() {
         var e = y.current;
         if (null != e) {
@@ -575,7 +575,7 @@ var w = r.forwardRef(function(e, t) {
               i.update(s), i.draw(a, t), i.shouldDestroy(e, s) && A.current.delete(r)
             }), null == p || p(t), A.current.size > 0 ? N.current = m(D) : (t.clearRect(0, 0, e.width, e.height), N.current = null);
             var n = Date.now();
-            0 !== C.current && (w.current = 1e3 / (n - C.current)), C.current = n
+            0 !== C.current && (P.current = 1e3 / (n - C.current)), C.current = n
           }
         }
       }, [s, p, _, m]);
@@ -589,30 +589,30 @@ var w = r.forwardRef(function(e, t) {
         }), null == N.current && D()
       }, [D]),
       x = r.useCallback(function(e, t, n, r, a) {
-        var o, s = R(null != (o = e.id) ? o : (0, i.Z)(), e, n, r, a);
+        var o, s = w(null != (o = e.id) ? o : (0, i.Z)(), e, n, r, a);
         return L(s, t), s
       }, [L]),
-      M = r.useCallback(function(e) {
+      k = r.useCallback(function(e) {
         A.current.delete(e)
       }, []),
-      k = r.useCallback(function() {
+      j = r.useCallback(function() {
         return A.current.clear()
       }, []),
-      j = r.useCallback(function() {
+      M = r.useCallback(function() {
         return y.current
       }, []);
     r.useImperativeHandle(t, function() {
       return {
         createConfetti: x,
         addConfetti: L,
-        deleteConfetti: M,
-        clearConfetti: k,
-        getCanvas: j,
+        deleteConfetti: k,
+        clearConfetti: j,
+        getCanvas: M,
         addReadyListener: I,
         removeReadyListener: T,
         isReady: v
       }
-    }, [x, L, M, k, j, I, T, v]);
+    }, [x, L, k, j, M, I, T, v]);
     var U = r.useCallback(function(e, t) {
         var n, r, i = t.clickHandler,
           o = t.mouseHandler;
@@ -635,7 +635,7 @@ var w = r.forwardRef(function(e, t) {
               })) {
               if (null != o) return o(e);
               if (null != i) {
-                var u = -1e3 / w.current * 2,
+                var u = -1e3 / P.current * 2,
                   d = function(e, t) {
                     for (var n = 0, r = Array.from(e.values()); n < r.length; n++) {
                       var i = r[n];
@@ -668,7 +668,7 @@ var w = r.forwardRef(function(e, t) {
           clickHandler: c
         })
       }, [U, c]),
-      V = r.useCallback(function(e) {
+      Z = r.useCallback(function(e) {
         return U(e, {
           mouseHandler: u
         })
@@ -682,11 +682,11 @@ var w = r.forwardRef(function(e, t) {
       var e = function(e, t, n) {
         null != n && window.addEventListener(e, t)
       };
-      return e("click", G, l), e("mousedown", B, c), e("mousemove", V, u), e("mouseup", F, d),
+      return e("click", G, l), e("mousedown", B, c), e("mousemove", Z, u), e("mouseup", F, d),
         function() {
-          window.removeEventListener("click", G), window.removeEventListener("mousedown", B), window.removeEventListener("mousemove", V), window.removeEventListener("mouseup", V)
+          window.removeEventListener("click", G), window.removeEventListener("mousedown", B), window.removeEventListener("mousemove", Z), window.removeEventListener("mouseup", Z)
         }
-    }, [G, B, V, F, l, c, u, d]), r.useEffect(function() {
+    }, [G, B, Z, F, l, c, u, d]), r.useEffect(function() {
       var e = y.current,
         t = new ResizeObserver(function() {
           ! function(e) {
@@ -724,7 +724,7 @@ var w = r.forwardRef(function(e, t) {
       c = e.spriteHeight,
       u = r.useRef(null),
       d = r.useRef([]),
-      f = P(),
+      f = R(),
       h = f.isReady,
       m = f.addReadyListener,
       g = f.removeReadyListener,

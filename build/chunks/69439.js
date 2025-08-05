@@ -1,4 +1,4 @@
-/** Chunk was on 17218 **/
+/** Chunk was on 37082 **/
 n.d(t, {
   Z: () => O
 }), n(388685);
@@ -77,7 +77,7 @@ function O(e) {
     isClaiming: f.Z.isClaimingReward(E.id) || f.Z.isFetchingRewardCode(E.id),
     isEnrolling: f.Z.isEnrolling(E.id),
     isQuestEnrollmentBlocked: null != f.Z.questEnrollmentBlockedUntil
-  })), L = (null == (t = E.userStatus) ? void 0 : t.enrolledAt) != null, M = (null == (n = E.userStatus) ? void 0 : n.completedAt) != null, W = M && (null == (o = E.userStatus) ? void 0 : o.claimedAt) == null, Z = (0, p.iQ)(E), U = !(0, p.zi)(E), H = (0, m._Q)(E), z = (0, p.Xv)(E.config), F = (0, p.PB)(E), X = (0, p.HJ)(E), K = (0, p.Vl)(E), Y = s.useRef(null), G = (0, m.Rf)(E), [J, $, ee] = (0, m.me)(E, G), et = U && H === m.OH.ACCEPTED, en = et && J === g.LI.SELECT, er = et && !en && $.length > 1, es = s.useCallback(e => {
+  })), L = (null == (t = E.userStatus) ? void 0 : t.enrolledAt) != null, M = (null == (n = E.userStatus) ? void 0 : n.completedAt) != null, Z = M && (null == (o = E.userStatus) ? void 0 : o.claimedAt) == null, W = (0, p.iQ)(E), U = !(0, p.zi)(E), H = (0, m._Q)(E), z = (0, p.Xv)(E.config), F = (0, p.PB)(E), X = (0, p.HJ)(E), K = (0, p.Vl)(E), Y = s.useRef(null), G = (0, m.Rf)(E), [J, $, ee] = (0, m.me)(E, G), et = U && H === m.OH.ACCEPTED, en = et && J === g.LI.SELECT, er = et && !en && $.length > 1, es = s.useCallback(e => {
     ee(e), e === j.cd.DESKTOP && w([])
   }, [ee, w]), {
     text: eo,
@@ -112,7 +112,7 @@ function O(e) {
       R.stopAnimation(), w(e)
     }
   }), ec = (null == (O = E.userStatus) ? void 0 : O.claimedAt) != null, eu = null;
-  return (Z && W ? eu = (0, r.jsx)(l.zx, {
+  return (W && Z ? eu = (0, r.jsx)(l.zx, {
     color: l.Tt.BRAND,
     submitting: D,
     onClick: null != ea ? ea : void 0,
@@ -153,7 +153,7 @@ function O(e) {
     className: v.button,
     onClick: null != ea ? ea : void 0,
     children: eo
-  }) : U ? U && W ? eu = (0, r.jsx)(l.zx, {
+  }) : U ? U && Z ? eu = (0, r.jsx)(l.zx, {
     color: l.Tt.BRAND,
     submitting: D,
     onClick: null != ea ? ea : void 0,

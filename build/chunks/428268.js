@@ -72,10 +72,10 @@ let v = function(e) {
   let A = l.Z.get(h.ABu.RIOT_GAMES),
     N = S && null == v && null == I,
     C = S && null != v && null == I,
-    R = S && null == v && null != I,
-    P = C || R;
+    w = S && null == v && null != I,
+    R = C || w;
 
-  function w() {
+  function P() {
     null != T && (0, s.ZDy)(async () => {
       let {
         default: e
@@ -88,13 +88,13 @@ let v = function(e) {
   }
 
   function D() {
-    return N || P ? (0, c.Z)({
+    return N || R ? (0, c.Z)({
       platformType: h.ABu.RIOT_GAMES
-    }) : w()
+    }) : P()
   }
 
   function L() {
-    return N ? m.intl.string(m.t.w6VSSE) : P ? m.intl.string(m.t.CHNBdn) : m.intl.string(m.t["0yRXHx"])
+    return N ? m.intl.string(m.t.w6VSSE) : R ? m.intl.string(m.t.CHNBdn) : m.intl.string(m.t["0yRXHx"])
   }
 
   function x() {

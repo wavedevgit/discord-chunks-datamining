@@ -1,4 +1,5 @@
-/** Chunk was on 97167 **/
+/** Chunk was on web.js **/
+"use strict";
 e.exports = {
   modalRoot: "modalRoot__01dab",
   button: "button__01dab",

@@ -1,21 +1,25 @@
-/** Chunk was on 60173 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
-  Z: () => o
+  Z: () => c
 });
 var r = n(255367);
 n(73800);
 var i = n(481060),
-  l = n(998502),
-  a = n(939630);
-let o = l.ZP.getEnableHardwareAcceleration() ? function(e) {
+  a = n(998502),
+  o = n(939630);
+
+function s(e) {
   let {
     eventTargetRef: t
   } = e;
   return (0, r.jsx)(i.zLd, {
-    className: a.pulseGradient,
+    className: o.pulseGradient,
     eventTargetRef: t
   })
-} : function() {
+}
+
+function l() {
   return (0, r.jsxs)("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     width: "1000",
@@ -148,3 +152,4 @@ let o = l.ZP.getEnableHardwareAcceleration() ? function(e) {
     })]
   })
 }
+let c = a.ZP.getEnableHardwareAcceleration() ? s : l

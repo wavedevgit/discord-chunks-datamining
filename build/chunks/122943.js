@@ -74,15 +74,15 @@ function T(e) {
     enableTopNavButton: C
   } = (0, d.Cq)({
     location: "VoiceActivityStatus"
-  }), R = !C && T, {
-    analyticsLocations: P
-  } = (0, l.ZP)(), w = i.useCallback(() => {
+  }), w = !C && T, {
+    analyticsLocations: R
+  } = (0, l.ZP)(), P = i.useCallback(() => {
     (0, p.A)({
-      analyticsLocations: P,
+      analyticsLocations: R,
       activityType: "VOICE",
       voiceChannelId: t.id
     })
-  }, [P, t.id]), D = () => y || N ? (0, r.jsx)(_.Z, {
+  }, [R, t.id]), D = () => y || N ? (0, r.jsx)(_.Z, {
     size: "custom",
     color: S,
     channel: t,
@@ -93,7 +93,7 @@ function T(e) {
       channel: t
     }),
     delay: g.X,
-    onTooltipShow: w,
+    onTooltipShow: P,
     children: e => (0, r.jsx)(_.Z, I(O({}, e), {
       size: "custom",
       color: S,
@@ -107,7 +107,7 @@ function T(e) {
       className: a,
       canTruncate: v,
       hideTooltip: y,
-      children: [L(), R && null != A && " (".concat(A, ")")]
+      children: [L(), w && null != A && " (".concat(A, ")")]
     })]
   })
 }

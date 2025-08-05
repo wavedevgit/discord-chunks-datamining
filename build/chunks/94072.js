@@ -1,4 +1,4 @@
-/** Chunk was on 94312 **/
+/** Chunk was on 22988 **/
 e.exports = {
   settingsColumn: "settingsColumn_b454a6 " + n(319586).customColumn,
   settingsContainer: "settingsContainer_b454a6 " + n(319586).customContainer,

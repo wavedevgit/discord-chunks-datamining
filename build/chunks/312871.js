@@ -1,23 +1,26 @@
-/** Chunk was on 35755 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
-  Z: () => r
+  Z: () => a
 });
-var l = n(73800),
+var r = n(73800),
   i = n(434650);
 
-function r(e) {
+function a(e) {
   let {
     onVisible: t,
     threshold: n,
-    minTimeVisibleMs: r
-  } = e, a = l.useRef(!1), o = l.useRef(null);
-  return l.useEffect(() => () => {
-    null != o.current && (clearTimeout(o.current), o.current = null)
-  }, []), (0, i.O)(e => {
-    if (null == o.current || e || !1 !== a.current || (clearTimeout(o.current), o.current = null), !e || !0 === a.current) return;
+    minTimeVisibleMs: a
+  } = e, o = r.useRef(!1), s = r.useRef(null);
+  r.useEffect(() => () => {
+    null != s.current && (clearTimeout(s.current), s.current = null)
+  }, []);
+  let l = e => {
+    if (null == s.current || e || !1 !== o.current || (clearTimeout(s.current), s.current = null), !e || !0 === o.current) return;
     let n = () => {
-      t(), a.current = !0, o.current = null
+      t(), o.current = !0, s.current = null
     };
-    null != r ? o.current = setTimeout(n, r) : n()
-  }, n)
+    null != a ? s.current = setTimeout(n, a) : n()
+  };
+  return (0, i.O)(l, n)
 }

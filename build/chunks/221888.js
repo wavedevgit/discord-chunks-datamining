@@ -65,7 +65,7 @@ function N(e, t) {
 }
 let C = 150;
 
-function R(e, t) {
+function w(e, t) {
   switch (e) {
     case y.fO.ACTIVITY:
       return v.intl.formatToPlainString(v.t.TCM94e, {
@@ -80,7 +80,7 @@ function R(e, t) {
   }
 }
 
-function P(e) {
+function R(e) {
   let {
     users: t,
     disableInteraction: n,
@@ -88,7 +88,7 @@ function P(e) {
     participantType: a,
     channelId: s,
     handleUserContextMenu: l
-  } = e, c = R(a, t.length);
+  } = e, c = w(a, t.length);
   return (0, r.jsx)(d.VqE, {
     "aria-label": c,
     className: I.popoutWrapper,
@@ -116,7 +116,7 @@ function P(e) {
   })
 }
 
-function w(e) {
+function P(e) {
   let {
     users: t,
     guildId: n,
@@ -124,7 +124,7 @@ function w(e) {
     maxVisibleUsers: a = 3,
     className: s,
     participantType: l
-  } = e, c = R(l, t.length), u = t.length < a ? t.map(e => (0, r.jsx)("div", {
+  } = e, c = w(l, t.length), u = t.length < a ? t.map(e => (0, r.jsx)("div", {
     className: I.viewersTooltipItem,
     children: b.ZP.getName(n, i, e)
   }, e.id)) : c;
@@ -155,7 +155,7 @@ function L(e) {
     compact: b = !1,
     disableInteraction: v = !1,
     maxVisibleUsers: T = 3
-  } = e, A = i.useRef(null), R = (0, p.Z)(), [L, x] = i.useState(!1), M = i.useRef(new u.sW(C, () => x(!1))), k = (0, c.Wu)([m.Z, g.default], () => {
+  } = e, A = i.useRef(null), w = (0, p.Z)(), [L, x] = i.useState(!1), k = i.useRef(new u.sW(C, () => x(!1))), j = (0, c.Wu)([m.Z, g.default], () => {
     if (s.type === y.fO.STREAM) {
       let e = m.Z.getViewerIds(s.id);
       return e.length > 0 ? e.map(e => g.default.getUser(e)).filter(E.lm) : D
@@ -163,60 +163,60 @@ function L(e) {
     return s.type === y.fO.ACTIVITY && s.participants.length > 0 ? Array.from(s.participants).map(e => g.default.getUser(e.userId)).filter(E.lm) : D
   }, [s]);
   i.useEffect(() => {
-    R && (M.current.cancel(), x(!1))
-  }, [R]);
-  let j = i.useCallback(() => {
-      M.current.cancel(), x(!0)
+    w && (k.current.cancel(), x(!1))
+  }, [w]);
+  let M = i.useCallback(() => {
+      k.current.cancel(), x(!0)
     }, []),
     U = i.useCallback(() => {
-      M.current.delay()
+      k.current.delay()
     }, []),
     G = i.useCallback((e, t) => {
-      j(), (0, f.jW)(e, async () => {
+      M(), (0, f.jW)(e, async () => {
         let {
           default: e
-        } = await Promise.all([n.e("70274"), n.e("79695"), n.e("69220"), n.e("70686")]).then(n.bind(n, 881351));
+        } = await Promise.all([n.e("79695"), n.e("69220")]).then(n.bind(n, 881351));
         return n => (0, r.jsx)(e, N(S({}, n), {
           user: t
         }))
       }, {
         onClose: U
       })
-    }, [U, j]);
-  if (0 === k.length) return null;
-  if (b) return (0, r.jsx)(w, {
+    }, [U, M]);
+  if (0 === j.length) return null;
+  if (b) return (0, r.jsx)(P, {
     maxVisibleUsers: T,
-    users: k,
+    users: j,
     guildId: a,
     channelId: t,
     className: h,
     participantType: s.type
   });
-  let B = l()(k).take(T).map(e => (0, r.jsx)(d.qEK, {
+  let B = l()(j).take(T).map(e => (0, r.jsx)(d.qEK, {
     src: e.getAvatarURL(a, 24),
     "aria-label": e.username,
     size: d.EFr.SIZE_24,
     className: I.viewer
   }, e.id)).value();
-  return k.length > T && (B[B.length - 1] = (0, r.jsxs)("div", {
+  return j.length > T && (B[B.length - 1] = (0, r.jsxs)("div", {
     className: I.overflow,
-    children: ["+", k.length - T + 1]
+    children: ["+", j.length - T + 1]
   }, "overflow")), (0, r.jsx)(_.Z, {
     section: O.jXE.STREAM_VIEWER_POPOUT,
     children: (0, r.jsx)("div", {
-      onMouseEnter: j,
+      onMouseEnter: M,
       onMouseLeave: U,
       children: (0, r.jsx)(d.yRy, {
         targetElementRef: A,
-        renderPopout: () => (0, r.jsx)(P, {
+        renderPopout: () => (0, r.jsx)(R, {
           participantType: s.type,
           handleUserContextMenu: G,
           guildId: a,
           channelId: t,
-          users: k,
+          users: j,
           disableInteraction: v
         }),
-        shouldShow: L && !R,
+        shouldShow: L && !w,
         position: "top",
         children: () => (0, r.jsx)("div", {
           ref: A,

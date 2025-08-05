@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  ZP: () => k
+  ZP: () => j
 }), n(388685);
 var r = n(592125),
   i = n(650774),
@@ -105,15 +105,15 @@ class S extends a.Z {
   }
   constructor() {
     super({
-      CACHE_LOADED_LAZY_NO_CACHE: M,
+      CACHE_LOADED_LAZY_NO_CACHE: k,
       CACHE_LOADED_LAZY: () => this.loadCache(),
-      CHANNEL_DELETE: P,
-      CHANNEL_UPDATES: R,
+      CHANNEL_DELETE: R,
+      CHANNEL_UPDATES: w,
       CONNECTION_OPEN_SUPPLEMENTAL: N,
       GUILD_DELETE: L,
       LOGIN_SUCCESS: x,
       THREAD_DELETE: D,
-      THREAD_UPDATE: w
+      THREAD_UPDATE: P
     })
   }
 }
@@ -134,15 +134,15 @@ function C(e) {
   n && t === r && S.recordChannel(t), n || S.deleteChannel(t)
 }
 
-function R(e) {
+function w(e) {
   for (let t of e.channels) C(t)
 }
 
-function P(e) {
+function R(e) {
   S.deleteChannel(e.channel.id)
 }
 
-function w(e) {
+function P(e) {
   C(e.channel)
 }
 
@@ -158,8 +158,8 @@ function x(e) {
   v.clear(), I.clear(), T = !1
 }
 
-function M(e) {
+function k(e) {
   T = !0
 }
 p(S, "displayName", "SaveableChannelsStore"), p(S, "LATEST_SNAPSHOT_VERSION", 1);
-let k = new S
+let j = new S

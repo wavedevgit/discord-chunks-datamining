@@ -1,17 +1,17 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  L6: () => V,
+  L6: () => Z,
   Rc: () => G,
-  WH: () => R,
-  aP: () => k,
+  WH: () => w,
+  aP: () => j,
   dV: () => B,
-  g: () => M,
+  g: () => k,
   iV: () => x,
-  n9: () => j,
+  n9: () => M,
   pR: () => L,
   rn: () => D,
-  tK: () => P,
+  tK: () => R,
   xc: () => U
 });
 var r = n(512722),
@@ -63,7 +63,7 @@ function N(e) {
 }
 let C = 2;
 
-function R(e, t, n) {
+function w(e, t, n) {
   s.Z.dispatch(N({
     type: "STREAM_START",
     streamType: null != e ? S.lo.GUILD : S.lo.CALL,
@@ -73,7 +73,7 @@ function R(e, t, n) {
   }, n))
 }
 
-function P(e, t) {
+function R(e, t) {
   let n = (0, c.V9)(e);
   s.Z.dispatch({
     type: "STREAM_SET_PAUSED",
@@ -82,7 +82,7 @@ function P(e, t) {
   })
 }
 
-function w(e, t) {
+function P(e, t) {
   let n = h.Z.getChannel(t);
   return i()(null != n, "Cannot join a null voice channel"), !E.Z.isInChannel(t) && (0, b.rY)(n, E.Z, m.Z)
 }
@@ -93,7 +93,7 @@ function D(e, t) {
     guildId: n,
     channelId: r
   } = e;
-  if (null != n && w(n, r)) return;
+  if (null != n && P(n, r)) return;
   let i = (0, c.V9)(e),
     a = (null == t ? void 0 : t.forceMultiple) || _.Z.getAllActiveStreamsForChannel(r).filter(e => {
       let {
@@ -121,24 +121,24 @@ function x(e, t) {
     guildId: n,
     channelId: r
   } = e;
-  if (null != n && w(n, r)) return;
+  if (null != n && P(n, r)) return;
   D(e, t);
   let i = d.Z.getWindowOpen(T.KJ3.CHANNEL_CALL_POPOUT),
     a = g.Z.getVoiceChannelId();
   i && a === r || (0, u.Z)(e)
 }
 
-function M(e) {
+function k(e) {
   let t = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1],
     n = !(arguments.length > 2) || void 0 === arguments[2] || arguments[2];
-  n && k(e, t), s.Z.dispatch({
+  n && j(e, t), s.Z.dispatch({
     type: "STREAM_STOP",
     streamKey: e,
     appContext: __OVERLAY__ ? T.IlC.OVERLAY : T.IlC.APP
   })
 }
 
-function k(e) {
+function j(e) {
   let t = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1];
   s.Z.dispatch({
     type: "STREAM_CLOSE",
@@ -146,7 +146,7 @@ function k(e) {
     canShowFeedback: t
   })
 }
-async function j(e, t, n) {
+async function M(e, t, n) {
   if (!f.Z.shouldFetchPreview(e, t, n)) return;
   let r = (0, c.V9)({
     streamType: null != e ? S.lo.GUILD : S.lo.CALL,
@@ -211,8 +211,8 @@ function B(e, t) {
   })
 }
 
-function V() {
+function Z() {
   let e = !(arguments.length > 0) || void 0 === arguments[0] || arguments[0],
     t = _.Z.getCurrentUserActiveStream();
-  null != t && M((0, c.V9)(t), e)
+  null != t && k((0, c.V9)(t), e)
 }

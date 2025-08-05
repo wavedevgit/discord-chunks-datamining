@@ -1,4 +1,5 @@
-/** Chunk was on 60173 **/
+/** Chunk was on web.js **/
+"use strict";
 e.exports = {
   divider: "divider_cfc051",
   eventSchedule: "eventSchedule_cfc051",

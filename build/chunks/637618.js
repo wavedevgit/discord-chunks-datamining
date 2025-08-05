@@ -1,35 +1,36 @@
-/** Chunk was on 94313 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
-  Z: () => p
+  Z: () => f
 }), n(388685), n(35282);
 var r = n(255367);
 n(73800);
 var i = n(990547),
-  l = n(399606),
-  a = n(100527),
-  o = n(213609),
-  s = n(914010),
+  a = n(399606),
+  o = n(100527),
+  s = n(213609),
+  l = n(914010),
   c = n(267101),
   u = n(675297),
   d = n(20281);
 
-function p(e) {
+function f(e) {
   let {
     code: t
-  } = e, [n, p] = t.split("-"), m = (0, c.hO)(n, p), f = (0, l.e7)([s.Z], () => s.Z.getGuildId());
-  return ((0, o.Z)({
+  } = e, [n, f] = t.split("-"), _ = (0, c.hO)(n, f), p = (0, a.e7)([l.Z], () => l.Z.getGuildId());
+  return ((0, s.Z)({
     type: d.n.VIEW,
     name: i.ImpressionNames.GUILD_PRODUCT_LISTING_EMBED,
     properties: {
-      guild_product_listing_id: p,
-      has_entitlement: (null == m ? void 0 : m.has_entitlement) === !0
+      guild_product_listing_id: f,
+      has_entitlement: (null == _ ? void 0 : _.has_entitlement) === !0
     }
   }, {
-    disableTrack: null == m
-  }), null == m || f !== n) ? null : (0, r.jsx)(u.H, {
-    guildProductListing: m,
+    disableTrack: null == _
+  }), null == _ || p !== n) ? null : (0, r.jsx)(u.H, {
+    guildProductListing: _,
     guildId: n,
-    location: a.Z.GUILD_PRODUCT_EMBED_CARD,
+    location: o.Z.GUILD_PRODUCT_EMBED_CARD,
     cardWidth: 390,
     thumbnailHeight: 219
   })

@@ -1,4 +1,5 @@
-/** Chunk was on 69150 **/
+/** Chunk was on web.js **/
+"use strict";
 e.exports = {
   backButtonInner: "backButtonInner__84419",
   backButton: "backButton__84419",

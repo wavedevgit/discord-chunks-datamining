@@ -1,14 +1,14 @@
-/** Chunk was on 67501 **/
+/** Chunk was on web.js **/
 "use strict";
 n.d(t, {
   M1: () => c,
-  NM: () => a
+  NM: () => l
 });
 var r = n(70956),
   i = n(818083),
-  l = n(427164),
-  s = n(987338);
-let o = (0, l.le)({
+  a = n(427164),
+  o = n(987338);
+let s = (0, a.le)({
     kind: "user",
     name: "2025-07-typing-indicator-delay",
     defaultConfig: {
@@ -42,7 +42,7 @@ let o = (0, l.le)({
       }
     }
   }),
-  a = (0, i.B)({
+  l = (0, i.B)({
     kind: "user",
     id: "2025-07_typing_indicator_delay",
     label: "Typing Indicator Delay",
@@ -93,20 +93,20 @@ let o = (0, l.le)({
         inExperiment: !0
       }
     }],
-    commonTriggerPoint: s.$P.CONNECTION_OPEN
+    commonTriggerPoint: o.$P.CONNECTION_OPEN
   }),
   c = e => {
     let {
       delayMs: t,
       inExperiment: n
-    } = a.getCurrentConfig({
+    } = l.getCurrentConfig({
       location: e
     }, {
       autoTrackExposure: !0
     }), {
       delayMs: r,
       inExperiment: i
-    } = o.getConfig({
+    } = s.getConfig({
       location: e
     });
     return n ? {

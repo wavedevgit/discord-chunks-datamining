@@ -4,23 +4,23 @@ n.d(t, {
   A3: () => D,
   C1: () => W,
   DV: () => F,
-  Gn: () => j,
+  Gn: () => M,
   IP: () => z,
   J1: () => G,
   MZ: () => K,
   NJ: () => Y,
   Nf: () => B,
   PC: () => L,
-  Y1: () => V,
-  ZF: () => w,
+  Y1: () => Z,
+  ZF: () => P,
   fe: () => U,
   jA: () => x,
-  kI: () => P,
+  kI: () => R,
   nV: () => q,
   q5: () => H,
-  to: () => k,
-  wC: () => Z,
-  y$: () => M
+  to: () => j,
+  wC: () => V,
+  y$: () => k
 }), n(290780), n(539854), n(388685), n(314940), n(704826), n(35282);
 var r = n(73800),
   i = n(392711),
@@ -48,13 +48,13 @@ var r = n(73800),
   A = n(185923),
   N = n(957825),
   C = n(474936),
-  R = n(388032);
-let P = function(e, t) {
+  w = n(388032);
+let R = function(e, t) {
     let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : null == t ? void 0 : t.getGuildId(),
       i = arguments.length > 3 && void 0 !== arguments[3] && arguments[3];
     (0, f.O)(n);
     let a = (0, A.Gt)(e),
-      s = Z(n),
+      s = V(n),
       d = H(n),
       {
         canSplitFrecencyList: p
@@ -82,8 +82,8 @@ let P = function(e, t) {
         topEmojis: S,
         newlyAddedEmojis: N
       }),
-      P = (0, o.e7)([l.ZP], () => l.ZP.getDisambiguatedEmojiContext(n), [n]),
-      w = (0, o.e7)([h.Z], () => {
+      R = (0, o.e7)([l.ZP], () => l.ZP.getDisambiguatedEmojiContext(n), [n]),
+      P = (0, o.e7)([h.Z], () => {
         var e;
         return null == (e = h.Z.getGuild(n)) ? void 0 : e.name
       }),
@@ -93,12 +93,12 @@ let P = function(e, t) {
         location: "useEmojiCategories"
       });
     return r.useMemo(() => {
-      let r = P.getGroupedCustomEmoji(),
+      let r = R.getGroupedCustomEmoji(),
         o = m.ZP.getFlattenedGuildIds(),
         c = [],
         u = {
           type: T.En.SOUNDMOJI,
-          name: R.intl.string(R.t.f0Ezmp),
+          name: w.intl.string(w.t.f0Ezmp),
           id: T.UX.SOUNDMOJI,
           isNitroLocked: !1
         },
@@ -140,8 +140,8 @@ let P = function(e, t) {
           t.push({
             type: T.En.TOP_GUILD_EMOJI,
             id: r,
-            name: R.intl.formatToPlainString(R.t.W6Wi1d, {
-              guildName: w
+            name: w.intl.formatToPlainString(w.t.W6Wi1d, {
+              guildName: P
             }),
             isNitroLocked: !1,
             emojis: n,
@@ -156,7 +156,7 @@ let P = function(e, t) {
           t.push({
             type: T.En.RECENT,
             id: r,
-            name: R.intl.string(R.t["5TvaSk"]),
+            name: w.intl.string(w.t["5TvaSk"]),
             isNitroLocked: !1,
             emojis: i,
             emojisDisabled: n
@@ -170,7 +170,7 @@ let P = function(e, t) {
           t.push({
             type: T.En.FAVORITES,
             id: r,
-            name: R.intl.string(R.t.y3LQCA),
+            name: w.intl.string(w.t.y3LQCA),
             isNitroLocked: !1,
             emojis: n,
             emojisDisabled: e
@@ -186,9 +186,9 @@ let P = function(e, t) {
         });
         return t
       }, x && i ? [u] : [])
-    }, [P, t, n, e, L, C, w, p, E, d, s, b, a, x, i])
+    }, [R, t, n, e, L, C, P, p, E, d, s, b, a, x, i])
   },
-  w = () => d.ZP.getCategories().map(e => ({
+  P = () => d.ZP.getCategories().map(e => ({
     type: T.En.UNICODE,
     id: e,
     name: e,
@@ -216,7 +216,7 @@ let P = function(e, t) {
       location: n
     })
   },
-  M = e => {
+  k = e => {
     var t, n, r;
     let {
       emoji: i,
@@ -248,14 +248,14 @@ let P = function(e, t) {
       }).filter(e => null != e)
     })
   },
-  k = (e, t) => {
+  j = (e, t) => {
     s.ZP.trackWithMetadata(S.rMx.SEARCH_RESULT_EMPTY, {
       search_type: S.aib.EMOJI,
       query: t,
       location: e
     })
   },
-  j = e => {
+  M = e => {
     let {
       emoji: t,
       subCategory: n,
@@ -347,36 +347,36 @@ let P = function(e, t) {
   trailing: !0
 });
 let B = (e, t) => e.type !== T.En.GUILD ? e.id : null != t ? t.name : "",
-  V = (e, t) => {
+  Z = (e, t) => {
     switch (e) {
       case T.UX.TOP_GUILD_EMOJI:
-        return R.intl.formatToPlainString(R.t.W6Wi1d, {
+        return w.intl.formatToPlainString(w.t.W6Wi1d, {
           guildName: t
         });
       case T.UX.RECENT:
-        return R.intl.string(R.t["5TvaSk"]);
+        return w.intl.string(w.t["5TvaSk"]);
       case T.UX.FAVORITES:
-        return R.intl.string(R.t.y3LQCA);
+        return w.intl.string(w.t.y3LQCA);
       case T.UX.ACTIVITY:
-        return R.intl.string(R.t.O783tb);
+        return w.intl.string(w.t.O783tb);
       case T.UX.FLAGS:
-        return R.intl.string(R.t.vvaizs);
+        return w.intl.string(w.t.vvaizs);
       case T.UX.FOOD:
-        return R.intl.string(R.t.ldm9aW);
+        return w.intl.string(w.t.ldm9aW);
       case T.UX.NATURE:
-        return R.intl.string(R.t.egIBDA);
+        return w.intl.string(w.t.egIBDA);
       case T.UX.OBJECTS:
-        return R.intl.string(R.t.gWm7Mj);
+        return w.intl.string(w.t.gWm7Mj);
       case T.UX.PEOPLE:
-        return R.intl.string(R.t.GX594O);
+        return w.intl.string(w.t.GX594O);
       case T.UX.SYMBOLS:
-        return R.intl.string(R.t.QXMYAQ);
+        return w.intl.string(w.t.QXMYAQ);
       case T.UX.TRAVEL:
-        return R.intl.string(R.t.w33hIC);
+        return w.intl.string(w.t.w33hIC);
       case T.UX.PREMIUM_UPSELL:
-        return R.intl.string(R.t.pAF6xM);
+        return w.intl.string(w.t.pAF6xM);
       case T.UX.SOUNDMOJI:
-        return R.intl.string(R.t.f0Ezmp);
+        return w.intl.string(w.t.f0Ezmp);
       default:
         return null != t ? t : e
     }
@@ -400,7 +400,7 @@ function F(e, t, n, i) {
   }, [e, t, n, a, i], o.pF)
 }
 
-function Z(e) {
+function V(e) {
   return r.useEffect(() => {
     p.DZ.loadIfNecessary()
   }, []), (0, o.Wu)([l.ZP], () => l.ZP.getDisambiguatedEmojiContext(e).getFrequentlyUsedEmojisWithoutFetchingLatest())
@@ -441,5 +441,5 @@ function z(e, t, n) {
 }
 
 function q(e, t) {
-  return e === A.Hz.REACTION ? t ? R.intl.string(R.t["h7ES+v"]) : R.intl.string(R.t["6any2N"]) : R.intl.string(R.t.KgK5qq)
+  return e === A.Hz.REACTION ? t ? w.intl.string(w.t["h7ES+v"]) : w.intl.string(w.t["6any2N"]) : w.intl.string(w.t.KgK5qq)
 }

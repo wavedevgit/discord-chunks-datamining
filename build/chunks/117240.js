@@ -2,7 +2,7 @@
 "use strict";
 let r, i, a;
 n.d(t, {
-  Z: () => R
+  Z: () => w
 });
 var o, s = n(772848),
   l = n(442837),
@@ -76,7 +76,7 @@ class C extends(o = l.ZP.Store) {
   }
 }
 g(C, "displayName", "BrowserHandoffStore");
-let R = new C(d.Z, {
+let w = new C(d.Z, {
   RPC_SERVER_READY: I,
   BROWSER_HANDOFF_BEGIN: T,
   BROWSER_HANDOFF_FROM_APP: S,

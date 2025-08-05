@@ -1,34 +1,33 @@
-/** Chunk was on 67501 **/
-"use strict";
+/** Chunk was on 2686 **/
 n.d(t, {
-  Z: () => v
+  Z: () => y
 });
 var r = n(255367),
   i = n(73800),
   l = n(120356),
-  s = n.n(l),
-  o = n(442837),
+  o = n.n(l),
+  u = n(442837),
   a = n(481060),
   c = n(518738),
-  u = n(786761),
+  s = n(786761),
   d = n(3148),
   f = n(753206),
-  p = n(594174),
-  g = n(5192),
-  m = n(981631),
-  b = n(388032),
-  h = n(264700);
+  m = n(594174),
+  p = n(5192),
+  v = n(981631),
+  g = n(388032),
+  b = n(264700);
 
-function v(e) {
+function y(e) {
   let {
     guildId: t,
     role: n,
     theme: l,
-    content: v = b.intl.string(b.t["6OSasb"]),
-    className: O
-  } = e, y = (0, o.e7)([p.default], () => p.default.getCurrentUser()), E = g.ZP.useName(t, null, y), S = (0, c.Kz)(n), j = i.useMemo(() => {
+    content: y = g.intl.string(g.t["6OSasb"]),
+    className: j
+  } = e, O = (0, u.e7)([m.default], () => m.default.getCurrentUser()), S = p.ZP.useName(t, null, O), _ = (0, c.Kz)(n), E = i.useMemo(() => {
     var e, t;
-    return (0, u.e5)((e = function(e) {
+    return (0, s.e5)((e = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -47,14 +46,14 @@ function v(e) {
       return e
     }({}, (0, d.ZP)({
       channelId: "0",
-      content: v,
+      content: y,
       tts: void 0,
       type: void 0,
       messageReference: void 0,
       allowedMentions: void 0,
-      author: y
+      author: O
     })), t = t = {
-      state: m.yb.SENT,
+      state: v.yb.SENT,
       id: "0"
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
       var n = Object.keys(e);
@@ -66,20 +65,20 @@ function v(e) {
     })(Object(t)).forEach(function(n) {
       Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
     }), e))
-  }, [y, v]), C = {
-    nick: E,
+  }, [O, y]), P = {
+    nick: S,
     colorString: n.colorString,
     colorStrings: n.colorStrings
   };
   return (0, r.jsx)(a.f6W, {
     theme: l,
     children: e => (0, r.jsx)("div", {
-      className: s()(e, h.container, O),
+      className: o()(e, b.container, j),
       children: (0, r.jsx)(f.Z, {
         hideTimestamp: !0,
-        author: C,
-        roleIcon: S,
-        message: j,
+        author: P,
+        roleIcon: _,
+        message: E,
         isGroupStart: !0,
         disableInteraction: !0
       })

@@ -1,14 +1,15 @@
-/** Chunk was on 66005 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
   Z: () => c
 });
 var r = n(255367);
 n(73800);
 var i = n(557711),
-  l = n(620662),
-  a = n(503438),
-  o = n(981631),
-  s = n(145131);
+  a = n(620662),
+  o = n(503438),
+  s = n(981631),
+  l = n(145131);
 
 function c(e) {
   let {
@@ -18,19 +19,19 @@ function c(e) {
     channelId: u,
     source: d,
     look: f,
-    color: p,
-    onAction: m
+    color: _,
+    onAction: p
   } = e;
-  return null != t && (0, l.Z)(t, o.xjy.SYNC) && (0, a.Z)(t) ? (0, r.jsx)(i.Z, {
-    className: s.button,
-    size: s.buttonSize,
+  return null != t && (0, a.Z)(t, s.xjy.SYNC) && (0, o.Z)(t) ? (0, r.jsx)(i.Z, {
+    className: l.button,
+    size: l.buttonSize,
     look: f,
-    color: p,
+    color: _,
     user: n,
     activity: t,
     guildId: null != c ? c : void 0,
     channelId: u,
     source: d,
-    onAction: m
+    onAction: p
   }, "sync") : null
 }

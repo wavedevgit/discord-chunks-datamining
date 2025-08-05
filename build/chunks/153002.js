@@ -1,50 +1,49 @@
-/** Chunk was on 44947 **/
-"use strict";
-n.d(t, {
-  e: () => i
+/** Chunk was on 92078 **/
+t.d(r, {
+  e: () => o
 });
 
-function r(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
+function e(n, r, t) {
+  return r in n ? Object.defineProperty(n, r, {
+    value: t,
     enumerable: !0,
     configurable: !0,
     writable: !0
-  }) : e[t] = n, e
+  }) : n[r] = t, n
 }
-var i = function() {
-  var e;
+var o = function() {
+  var n;
 
-  function t(e, n) {
-    if (!(this instanceof t)) throw TypeError("Cannot call a class as a function");
-    r(this, "spec", void 0), r(this, "monitor", void 0), this.spec = e, this.monitor = n
+  function r(n, t) {
+    if (!(this instanceof r)) throw TypeError("Cannot call a class as a function");
+    e(this, "spec", void 0), e(this, "monitor", void 0), this.spec = n, this.monitor = t
   }
-  return e = [{
+  return n = [{
       key: "canDrop",
       value: function() {
-        var e = this.spec,
-          t = this.monitor;
-        return !e.canDrop || e.canDrop(t.getItem(), t)
+        var n = this.spec,
+          r = this.monitor;
+        return !n.canDrop || n.canDrop(r.getItem(), r)
       }
     }, {
       key: "hover",
       value: function() {
-        var e = this.spec,
-          t = this.monitor;
-        e.hover && e.hover(t.getItem(), t)
+        var n = this.spec,
+          r = this.monitor;
+        n.hover && n.hover(r.getItem(), r)
       }
     }, {
       key: "drop",
       value: function() {
-        var e = this.spec,
-          t = this.monitor;
-        if (e.drop) return e.drop(t.getItem(), t)
+        var n = this.spec,
+          r = this.monitor;
+        if (n.drop) return n.drop(r.getItem(), r)
       }
     }],
-    function(e, t) {
-      for (var n = 0; n < t.length; n++) {
-        var r = t[n];
-        r.enumerable = r.enumerable || !1, r.configurable = !0, "value" in r && (r.writable = !0), Object.defineProperty(e, r.key, r)
+    function(n, r) {
+      for (var t = 0; t < r.length; t++) {
+        var e = r[t];
+        e.enumerable = e.enumerable || !1, e.configurable = !0, "value" in e && (e.writable = !0), Object.defineProperty(n, e.key, e)
       }
-    }(t.prototype, e), t
+    }(r.prototype, n), r
 }()

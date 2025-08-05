@@ -1,4 +1,5 @@
-/** Chunk was on 94313 **/
+/** Chunk was on web.js **/
+"use strict";
 e.exports = {
   inviteDetailsContainer: "inviteDetailsContainer_da5e8d",
   clickable: "clickable_da5e8d",

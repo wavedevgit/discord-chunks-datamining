@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   Kh: () => G,
-  Tm: () => M
+  Tm: () => k
 }), n(388685), n(781311), n(415506);
 var r = n(512722),
   i = n.n(r),
@@ -31,7 +31,7 @@ var r = n(512722),
   N = n(590433),
   C = n(388032);
 
-function R(e, t, n) {
+function w(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -40,20 +40,20 @@ function R(e, t, n) {
   }) : e[t] = n, e
 }
 
-function P(e) {
+function R(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      R(e, t, n[t])
+      w(e, t, n[t])
     })
   }
   return e
 }
 
-function w(e, t) {
+function P(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -65,7 +65,7 @@ function w(e, t) {
 }
 
 function D(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : w(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : P(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -74,7 +74,7 @@ let L = n(227419).Z,
     var n;
     return null == (n = e.find(e => e.name === t)) ? void 0 : n.value
   },
-  M = {
+  k = {
     [S.bi.BUILT_IN]: {
       id: S.bi.BUILT_IN,
       type: T.Qi.BUILT_IN,
@@ -90,7 +90,7 @@ let L = n(227419).Z,
       }
     }
   },
-  k = [...L, {
+  j = [...L, {
     id: "-1",
     untranslatedName: "shrug",
     displayName: "shrug",
@@ -578,7 +578,7 @@ let L = n(227419).Z,
       },
       required: !0,
       get choices() {
-        return (0, N.tr)().map(e => D(P({}, e), {
+        return (0, N.tr)().map(e => D(R({}, e), {
           name: e.label,
           displayName: e.label
         }))
@@ -665,8 +665,8 @@ let L = n(227419).Z,
       },
       required: !0,
       get maxLength() {
-        var j;
-        return (null == (j = O.default.getCurrentUser()) ? void 0 : j.premiumType) ? A.en1 : A.J6R
+        var M;
+        return (null == (M = O.default.getCurrentUser()) ? void 0 : M.premiumType) ? A.en1 : A.J6R
       }
     }],
     execute: (e, t) => {
@@ -689,8 +689,8 @@ let L = n(227419).Z,
       })
     }
   }],
-  U = k.filter(e => ["gif", "tenor", "tts", "me", "tableflip", "unflip", "shrug", "spoiler", "nick"].includes(e.untranslatedName)),
+  U = j.filter(e => ["gif", "tenor", "tts", "me", "tableflip", "unflip", "shrug", "spoiler", "nick"].includes(e.untranslatedName)),
   G = (e, t, n) => {
-    let r = t ? k : U;
+    let r = t ? j : U;
     return r.filter(t => e.includes(t.type) && (!n || t.inputType === T.iw.BUILT_IN_TEXT || t.inputType === T.iw.BUILT_IN_INTEGRATION))
   }

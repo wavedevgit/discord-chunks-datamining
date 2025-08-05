@@ -36,7 +36,7 @@ function i() {
   function _(e, t, n, r) {
     var i = Object.create((t && t.prototype instanceof y ? t : y).prototype);
     return s(i, "_invoke", {
-      value: R(e, n, new L(r || []))
+      value: w(e, n, new L(r || []))
     }), i
   }
 
@@ -114,7 +114,7 @@ function i() {
     })
   }
 
-  function R(e, n, r) {
+  function w(e, n, r) {
     var i = h;
     return function(a, o) {
       if (i === g) throw Error("Generator is already running");
@@ -128,7 +128,7 @@ function i() {
       for (r.method = a, r.arg = o;;) {
         var s = r.delegate;
         if (s) {
-          var l = P(s, r);
+          var l = R(s, r);
           if (l) {
             if (l === b) continue;
             return l
@@ -153,17 +153,17 @@ function i() {
     }
   }
 
-  function P(e, n) {
+  function R(e, n) {
     var r = n.method,
       i = e.iterator[r];
-    if (i === t) return n.delegate = null, "throw" === r && e.iterator.return && (n.method = "return", n.arg = t, P(e, n), "throw" === n.method) || "return" !== r && (n.method = "throw", n.arg = TypeError("The iterator does not provide a '" + r + "' method")), b;
+    if (i === t) return n.delegate = null, "throw" === r && e.iterator.return && (n.method = "return", n.arg = t, R(e, n), "throw" === n.method) || "return" !== r && (n.method = "throw", n.arg = TypeError("The iterator does not provide a '" + r + "' method")), b;
     var a = p(i, e.iterator, n.arg);
     if ("throw" === a.type) return n.method = "throw", n.arg = a.arg, n.delegate = null, b;
     var o = a.arg;
     return o ? o.done ? (n[e.resultName] = o.value, n.next = e.nextLoc, "return" !== n.method && (n.method = "next", n.arg = t), n.delegate = null, b) : o : (n.method = "throw", n.arg = TypeError("iterator result is not an object"), n.delegate = null, b)
   }
 
-  function w(e) {
+  function P(e) {
     var t = {
       tryLoc: e[0]
     };
@@ -178,7 +178,7 @@ function i() {
   function L(e) {
     this.tryEntries = [{
       tryLoc: "root"
-    }], e.forEach(w, this), this.reset(!0)
+    }], e.forEach(P, this), this.reset(!0)
   }
 
   function x(e) {

@@ -1,4 +1,4 @@
-/** Chunk was on 94312 **/
+/** Chunk was on 22988 **/
 e.exports = {
   optionCard: "optionCard_b96967",
   singleColumn: "singleColumn_b96967",

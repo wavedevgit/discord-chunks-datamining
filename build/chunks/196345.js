@@ -10,8 +10,8 @@ n(73800);
 var i = n(120356),
   l = n.n(i),
   s = n(481060),
-  o = n(454585),
-  a = n(489813),
+  a = n(454585),
+  o = n(489813),
   c = n(388032),
   u = n(667084);
 
@@ -32,7 +32,7 @@ function d(e) {
       }), (0, r.jsx)(s.Text, {
         variant: "text-md/normal",
         className: u.termsRowContent,
-        children: o.Z.parseGuildVerificationFormRule(e, !0, {
+        children: a.Z.parseGuildVerificationFormRule(e, !0, {
           channelId: n
         })
       })]
@@ -67,7 +67,7 @@ function f(e) {
   let {
     formField: t
   } = e;
-  return (0, r.jsx)(a.Ih, {
+  return (0, r.jsx)(o.Ih, {
     icon: s.snC,
     text: c.intl.string(c.t["2xbmoK"]),
     meetsRequirement: !!t.response
@@ -79,7 +79,7 @@ let h = e => {
     formField: n,
     onChange: i
   } = e;
-  return (0, r.jsxs)(a.hK, {
+  return (0, r.jsxs)(o.hK, {
     title: c.intl.string(c.t.Q8OFNz),
     children: [(0, r.jsx)(d, {
       className: u.disabledFieldBackground,

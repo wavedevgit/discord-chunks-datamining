@@ -1,15 +1,16 @@
-/** Chunk was on 85449 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
-  Z: () => a
+  Z: () => o
 });
 var r = n(531643),
   i = n(403182),
-  o = n(388032);
+  a = n(388032);
 
-function a(e) {
+function o(e) {
   (0, r.openUploadError)({
-    title: o.intl.string(o.t["/tGlcn"]),
-    help: o.intl.formatToPlainString(o.t.fxEKdX, {
+    title: a.intl.string(a.t["/tGlcn"]),
+    help: a.intl.formatToPlainString(a.t.fxEKdX, {
       maxSize: (0, i.Ng)(e)
     })
   })

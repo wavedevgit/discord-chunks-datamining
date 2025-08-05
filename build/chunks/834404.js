@@ -1,4 +1,4 @@
-/** Chunk was on 94312 **/
+/** Chunk was on 22988 **/
 e.exports = {
   animation: "animation__2d5dc",
   image: "image__2d5dc",

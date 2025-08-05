@@ -1,59 +1,60 @@
-/** Chunk was on 69796 **/
-t.r(n), t.d(n, {
-  ItemDetailsModal: () => v
-}), t(953529), t(781311);
-var l = t(255367);
-t(73800);
-var r = t(752843),
-  a = t(442837),
-  o = t(481060),
-  i = t(55563),
-  s = t(551428),
-  c = t(73346),
-  d = t(591759),
-  u = t(110742),
-  x = t(886253),
-  m = t(680005),
-  _ = t(938337),
-  h = t(981631),
-  p = t(388032);
+/** Chunk was on web.js **/
+"use strict";
+n.r(t), n.d(t, {
+  ItemDetailsModal: () => g
+}), n(953529), n(781311);
+var r = n(255367);
+n(73800);
+var i = n(752843),
+  a = n(442837),
+  o = n(481060),
+  s = n(55563),
+  l = n(551428),
+  c = n(73346),
+  u = n(591759),
+  d = n(110742),
+  f = n(886253),
+  _ = n(680005),
+  p = n(938337),
+  h = n(981631),
+  m = n(388032);
 
-function v(e) {
-  var n, t, v, f;
+function g(e) {
+  var t, n, g, E;
   let {
-    onClose: j,
-    transitionState: g,
-    skuId: b,
-    appId: N,
-    onHeaderTitleClick: S
-  } = e, I = (0, a.e7)([s.Z], () => s.Z.getForSKU(b), [b]), k = (0, a.e7)([i.Z], () => i.Z.get(b), [b]), O = (0, u.M)(b);
-  if (null == k) return null;
-  let C = null != (t = k.name) ? t : "",
-    y = null != (v = null == I || null == (n = I.description) ? void 0 : n.trim()) ? v : void 0,
-    R = (null == I ? void 0 : I.headerBackground) != null && null != (f = d.Z.toURLSafe((0, c._W)(N, I.headerBackground, 256))) ? f : void 0,
-    T = k.type === h.epS.DURABLE && O,
-    B = k.type === h.epS.DURABLE ? T ? p.intl.string(p.t.bm82mp) : p.intl.string(p.t["6gprwc"]) : void 0,
+    onClose: b,
+    transitionState: y,
+    skuId: O,
+    appId: v,
+    onHeaderTitleClick: I
+  } = e, T = (0, a.e7)([l.Z], () => l.Z.getForSKU(O), [O]), S = (0, a.e7)([s.Z], () => s.Z.get(O), [O]), A = (0, d.M)(O);
+  if (null == S) return null;
+  let N = null != (n = S.name) ? n : "",
+    C = null != (g = null == T || null == (t = T.description) ? void 0 : t.trim()) ? g : void 0,
+    w = (null == T ? void 0 : T.headerBackground) != null && null != (E = u.Z.toURLSafe((0, c._W)(v, T.headerBackground, 256))) ? E : void 0,
+    R = S.type === h.epS.DURABLE && A,
+    P = S.type === h.epS.DURABLE ? R ? m.intl.string(m.t.bm82mp) : m.intl.string(m.t["6gprwc"]) : void 0,
     {
-      price: E
-    } = k;
-  return null == E ? null : (0, l.jsx)(x.A, {
-    appId: N,
-    skuId: k.id,
-    transitionState: g,
-    onHeaderTitleClick: null != S ? S : j,
-    onClose: j,
-    footer: (0, l.jsx)(m.YG, {
-      appId: N,
-      sku: k
+      price: D
+    } = S;
+  return null == D ? null : (0, r.jsx)(f.A, {
+    appId: v,
+    skuId: S.id,
+    transitionState: y,
+    onHeaderTitleClick: null != I ? I : b,
+    onClose: b,
+    footer: (0, r.jsx)(_.YG, {
+      appId: v,
+      sku: S
     }),
-    children: (0, l.jsx)(_.i, {
-      appId: N,
-      skuId: k.id,
-      title: C,
-      description: y,
-      imgSrc: R,
-      tag: null != B ? (0, l.jsx)(r.V, {
-        text: B
+    children: (0, r.jsx)(p.i, {
+      appId: v,
+      skuId: S.id,
+      title: N,
+      description: C,
+      imgSrc: w,
+      tag: null != P ? (0, r.jsx)(i.V, {
+        text: P
       }) : void 0,
       FallbackIcon: o.Prq
     })

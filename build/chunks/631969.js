@@ -1,18 +1,19 @@
-/** Chunk was on 96812 **/
-l.d(t, {
-  Z: () => a
+/** Chunk was on web.js **/
+"use strict";
+n.d(t, {
+  Z: () => s
 });
-var r = l(255367);
-l(73800);
-var n = l(120356),
-  o = l.n(n),
-  i = l(979263);
+var r = n(255367);
+n(73800);
+var i = n(120356),
+  a = n.n(i),
+  o = n(979263);
 
-function a(e) {
+function s(e) {
   let {
     className: t
   } = e;
   return (0, r.jsx)("div", {
-    className: o()(i.image, t)
+    className: a()(o.image, t)
   })
 }

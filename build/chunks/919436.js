@@ -1,12 +1,12 @@
-/** Chunk was on 70663 **/
+/** Chunk was on 92357 **/
 n.d(t, {
   Z: () => D
 }), n(415506), n(388685);
 var r, i = n(255367),
   l = n(73800),
   o = n(66546),
-  a = n(91192),
-  s = n(442837),
+  s = n(91192),
+  a = n(442837),
   c = n(481060),
   u = n(239091),
   d = n(358221),
@@ -16,8 +16,8 @@ var r, i = n(255367),
   g = n(266076),
   m = n(199902),
   b = n(19780),
-  _ = n(306680),
-  O = n(944486),
+  O = n(306680),
+  _ = n(944486),
   y = n(594174),
   C = n(451478),
   v = n(276952),
@@ -50,7 +50,7 @@ function w(e) {
   return e
 }
 
-function T(e, t) {
+function Z(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -62,7 +62,7 @@ function T(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let Z = {
+let T = {
   friction: 28,
   tension: 600
 };
@@ -73,9 +73,9 @@ function A(e) {
     case "opacity":
       return w({
         duration: 150
-      }, Z);
+      }, T);
     case "scale":
-      return w({}, Z);
+      return w({}, T);
     default:
       throw Error("DirectMessage: getSpringConfigs() - Invalid spring ".concat(String(e)))
   }
@@ -153,8 +153,8 @@ class R extends(r = l.PureComponent) {
       selected: n,
       badge: r,
       audio: l,
-      video: a,
-      stream: s,
+      video: s,
+      stream: a,
       isCurrentUserInThisDMCall: u,
       unread: d,
       isGDMFacepileEnabled: h,
@@ -180,8 +180,8 @@ class R extends(r = l.PureComponent) {
             lowerBadge: r > 0 ? (0, S.Ne)(r, void 0, !0) : null,
             upperBadge: (0, S.Or)({
               audio: l,
-              video: a,
-              screenshare: s,
+              video: s,
+              screenshare: a,
               isCurrentUserConnected: u
             }),
             lowerBadgeSize: {
@@ -233,8 +233,8 @@ class R extends(r = l.PureComponent) {
       null != r ? (0, u.jW)(e, async () => {
         let {
           default: e
-        } = await Promise.all([n.e("79695"), n.e("98783"), n.e("53912"), n.e("56826"), n.e("45903")]).then(n.bind(n, 131404));
-        return n => (0, i.jsx)(e, T(w({}, n), {
+        } = await Promise.all([n.e("79695"), n.e("53912"), n.e("98783"), n.e("56826"), n.e("45903")]).then(n.bind(n, 131404));
+        return n => (0, i.jsx)(e, Z(w({}, n), {
           channel: t,
           user: r
         }))
@@ -242,7 +242,7 @@ class R extends(r = l.PureComponent) {
         let {
           default: e
         } = await Promise.all([n.e("79695"), n.e("53912"), n.e("2016")]).then(n.bind(n, 354741));
-        return n => (0, i.jsx)(e, T(w({}, n), {
+        return n => (0, i.jsx)(e, Z(w({}, n), {
           channel: t,
           selected: !1
         }))
@@ -259,12 +259,12 @@ N(R, "defaultProps", {
 let D = l.forwardRef(function(e, t) {
   let n = e.channel.id,
     r = (0, p.ZP)(e.channel),
-    l = (0, a.Ie)(n, 2),
-    o = (0, s.e7)([b.Z], () => b.Z.getChannelId(), []),
-    u = (0, s.e7)([d.Z], () => null != o ? d.Z.getMode(o) : x.WtW.VOICE, [o]),
-    h = (0, s.e7)([m.Z], () => m.Z.getAllApplicationStreamsForChannel(n).length > 0),
-    g = (0, s.e7)([O.Z], () => O.Z.getChannelId(), []),
-    y = (0, s.e7)([_.ZP], () => _.ZP.getMentionCount(n), [n]),
+    l = (0, s.Ie)(n, 2),
+    o = (0, a.e7)([b.Z], () => b.Z.getChannelId(), []),
+    u = (0, a.e7)([d.Z], () => null != o ? d.Z.getMode(o) : x.WtW.VOICE, [o]),
+    h = (0, a.e7)([m.Z], () => m.Z.getAllApplicationStreamsForChannel(n).length > 0),
+    g = (0, a.e7)([_.Z], () => _.Z.getChannelId(), []),
+    y = (0, a.e7)([O.ZP], () => O.ZP.getMentionCount(n), [n]),
     {
       isFacepileEnabled: C
     } = f.Z.useExperiment({
@@ -277,7 +277,7 @@ let D = l.forwardRef(function(e, t) {
     E = !1;
   v && (j = u === x.WtW.VOICE, E = u === x.WtW.VIDEO);
   let S = (0, c.dQu)(c.TVs.modules.guildbar.AVATAR_SIZE);
-  return (0, i.jsx)(R, T(w({}, e), {
+  return (0, i.jsx)(R, Z(w({}, e), {
     ref: t,
     channelName: r,
     unread: y > 0,

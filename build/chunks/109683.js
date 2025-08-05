@@ -1,8 +1,10 @@
-/** Chunk was on 95355 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
-  Wr: () => r
+  Wr: () => i
 });
+let r = !1;
 
-function r() {
-  return !1
+function i() {
+  return r
 }

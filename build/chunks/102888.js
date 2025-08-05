@@ -1,23 +1,23 @@
-/** Chunk was on 60173 **/
+/** Chunk was on 49152 **/
 n.d(t, {
-  Z: () => u
+  Z: () => d
 });
 var r = n(255367),
   i = n(73800),
   l = n(481060),
   a = n(128557),
-  o = n(981631),
-  s = n(388032),
+  s = n(981631),
+  o = n(388032),
   c = n(334814);
-let u = e => {
+let d = e => {
   let {
     guild: t,
-    onAddGuild: u
-  } = e, d = i.useCallback(() => {
+    onAddGuild: d
+  } = e, u = i.useCallback(() => {
     (0, l.ZDy)(async () => {
       let {
         default: e
-      } = await Promise.all([n.e("7654"), n.e("34946")]).then(n.bind(n, 560114));
+      } = await Promise.all([n.e("7654"), n.e("39725")]).then(n.bind(n, 560114));
       return n => {
         var i, l;
         return (0, r.jsx)(e, (i = function(e) {
@@ -39,9 +39,9 @@ let u = e => {
           return e
         }({}, n), l = l = {
           guild: t,
-          source: o.t4x.HUB_DIRECTORY,
+          source: s.t4x.HUB_DIRECTORY,
           analyticsLocation: {
-            section: o.jXE.HUB_WELCOME_CTA
+            section: s.jXE.HUB_WELCOME_CTA
           }
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
           var n = Object.keys(e);
@@ -65,25 +65,25 @@ let u = e => {
     }), (0, r.jsx)(l.X6q, {
       className: c.emptyTitle,
       variant: "heading-xl/semibold",
-      children: s.intl.format(s.t.vyvrpK, {
+      children: o.intl.format(o.t.vyvrpK, {
         guildName: t.name
       })
     }), (0, r.jsx)(l.Text, {
       variant: "text-md/normal",
       className: c.emptySubtitle,
-      children: s.intl.string(s.t.WypE0t)
-    }), null != u ? (0, r.jsx)(a.i, {
+      children: o.intl.string(o.t.WypE0t)
+    }), null != d ? (0, r.jsx)(a.i, {
       className: c.emptyCTA,
       iconUrl: n(362827),
-      header: s.intl.string(s.t.hyK15u),
+      header: o.intl.string(o.t.hyK15u),
       completed: !1,
-      onClick: u
+      onClick: d
     }) : null, (0, r.jsx)(a.i, {
       className: c.emptyCTA,
       iconUrl: n(538548),
-      header: s.intl.string(s.t.L4bwJy),
+      header: o.intl.string(o.t.L4bwJy),
       completed: !1,
-      onClick: d
+      onClick: u
     })]
   })
 }

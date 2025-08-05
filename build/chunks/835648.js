@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => j
+  Z: () => M
 });
 var r = n(255367),
   i = n(73800),
@@ -66,7 +66,7 @@ function N(e, t) {
 
 function C(e, t) {
   if (null == e) return {};
-  var n, r, i = R(e, t);
+  var n, r, i = w(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -74,15 +74,15 @@ function C(e, t) {
   return i
 }
 
-function R(e, t) {
+function w(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let P = [8, 8, 8, 8],
-  w = 40;
+let R = [8, 8, 8, 8],
+  P = 40;
 
 function D(e) {
   var {
@@ -166,7 +166,7 @@ function x(e) {
   }
 }
 
-function M(e) {
+function k(e) {
   switch (e.categoryInfo.type) {
     case g.bg.FAVORITES:
       return v.intl.string(v.t.k8fFjo);
@@ -181,7 +181,7 @@ function M(e) {
   }
 }
 
-function k(e) {
+function j(e) {
   let {
     category: t,
     categoryIndex: n,
@@ -191,18 +191,18 @@ function k(e) {
   } = e, l = (0, s.JA)("soundboard_guild_".concat(n));
   return (0, r.jsx)(c.ua7, {
     text: x(t),
-    "aria-label": M(t),
+    "aria-label": k(t),
     position: "right",
     children: e => L(t, i, a, e, l, o)
   })
 }
 
-function j(e) {
+function M(e) {
   let {
     soundboardListRef: t,
     categories: n,
     shouldUpsellLockedCategories: a,
-    listPadding: o = P,
+    listPadding: o = R,
     guildId: s,
     inExpressionPicker: c
   } = e, u = i.useRef(null), _ = (0, l.e7)([p.default], () => p.default.getCurrentUser()), g = (0, m.I5)(_, O.p9.TIER_2), v = i.useCallback((e, t, n, i) => {
@@ -219,7 +219,7 @@ function j(e) {
           pack_id: null
         }), n()
       };
-    return (0, r.jsx)(k, {
+    return (0, r.jsx)(j, {
       category: e,
       categoryIndex: t,
       onClick: l,
@@ -236,6 +236,6 @@ function j(e) {
     listPadding: o,
     renderCategoryListItem: v,
     rowCount: n.length,
-    categoryHeight: w
+    categoryHeight: P
   })
 }

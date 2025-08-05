@@ -1,6 +1,6 @@
 /** Chunk was on 93886 **/
 a.d(t, {
-  Z: () => f
+  Z: () => b
 }), a(388685), a(361932), a(187205);
 var n = a(255367),
   r = a(442837),
@@ -16,7 +16,7 @@ var n = a(255367),
   p = a(206583),
   h = a(873289);
 
-function b(e) {
+function f(e) {
   let {
     id: t
   } = e, a = (0, r.e7)([o.default], () => o.default.getUser(t));
@@ -35,7 +35,7 @@ function b(e) {
   })
 }
 
-function f() {
+function b() {
   var e;
   let t = (0, r.e7)([u.Z], () => u.Z.getFeed(p.YN.GLOBAL_FEED)),
     a = (0, r.e7)([u.Z], () => u.Z.getFilters()),
@@ -55,7 +55,7 @@ function f() {
     let r = i[(0, c.T)(t)];
     return (0, n.jsxs)("li", {
       className: h.locatorEntry,
-      children: [(0, n.jsx)(b, {
+      children: [(0, n.jsx)(f, {
         type: t.author_type,
         id: t.author_id
       }), !r && (0, n.jsx)(l.Text, {

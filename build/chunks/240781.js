@@ -88,7 +88,7 @@ let v = [{
     } = e, h = (0, l.e7)([m.Z], () => m.Z.getStatus(t.id)), {
       product: g,
       purchase: T
-    } = (0, d.Z)(null == a ? void 0 : a.skuId), S = E.ZP.canUseCollectibles(t), A = (0, u.qS)(T), N = (0, u.G1)(g), C = !S && A, R = (0, p.M)(!N || S), P = (0, f.k)(g), w = i.useMemo(() => C ? y.intl.string(y.t["7vkeu7"]) : (0, s.EQ)([N, S, R]).with([!0, !0, !1], () => y.intl.string(y.t.hmyYKy)).with([!0, !1, !0], () => y.intl.string(y.t.q0PlFh)).with([!0, !1, !1], () => y.intl.string(y.t["0xs2sL"])).otherwise(() => y.intl.string(y.t.fEGjVV)), [C, N, S, R]);
+    } = (0, d.Z)(null == a ? void 0 : a.skuId), S = E.ZP.canUseCollectibles(t), A = (0, u.qS)(T), N = (0, u.G1)(g), C = !S && A, w = (0, p.M)(!N || S), R = (0, f.k)(g), P = i.useMemo(() => C ? y.intl.string(y.t["7vkeu7"]) : (0, s.EQ)([N, S, w]).with([!0, !0, !1], () => y.intl.string(y.t.hmyYKy)).with([!0, !1, !0], () => y.intl.string(y.t.q0PlFh)).with([!0, !1, !1], () => y.intl.string(y.t["0xs2sL"])).otherwise(() => y.intl.string(y.t.fEGjVV)), [C, N, S, w]);
     return null != g && (null == T || C) ? (0, r.jsxs)("div", {
       className: o()(O.modalPreview, O.shopPreviewContainer, _),
       children: [(0, r.jsx)("div", {
@@ -102,10 +102,10 @@ let v = [{
         className: O.shopPreviewTextContainer,
         children: [(0, r.jsx)(c.Text, {
           variant: "text-sm/semibold",
-          children: P
+          children: R
         }), (0, r.jsx)(c.Text, {
           variant: "text-sm/normal",
-          children: w
+          children: P
         })]
       })]
     }) : (0, r.jsxs)("div", {

@@ -1,8 +1,8 @@
-/** Chunk was on 81409 **/
+/** Chunk was on 92357 **/
 n.d(t, {
-  Y: () => i
+  Y: () => r
 });
-let i = (0, n(818083).B)({
+let r = (0, n(818083).B)({
   kind: "user",
   id: "2025-01_expiring_status_v2",
   label: "Expiring status Experiment V2",

@@ -1,4 +1,4 @@
-/** Chunk was on 17218 **/
+/** Chunk was on 37082 **/
 n.d(t, {
   default: () => S,
   y: () => T
@@ -59,8 +59,8 @@ function S(e) {
     useReducedMotion: q,
     className: y.colorTransition
   }), Q = N.filter(e => ["xbox", "playstation"].includes(e.connected_account_type)), V = (0, x.Bz)(A), L = (0, i.e7)([m.Z], () => m.Z.getState().theme), M = (0, l.wj)(L) ? v.BRd.DARK : v.BRd.LIGHT, {
-    startConsoleQuest: W,
-    startingConsoleQuest: Z
+    startConsoleQuest: Z,
+    startingConsoleQuest: W
   } = (0, h.GI)({
     questId: A.id,
     beforeRequest: () => {
@@ -116,9 +116,9 @@ function S(e) {
           children: C.intl.string(C.t["+/hZMz"])
         }), (0, r.jsxs)(u.P3F, {
           className: a()(y.refreshWrapper, {
-            [y.disabled]: Z
+            [y.disabled]: W
           }),
-          onClick: W,
+          onClick: Z,
           children: [D.render(), (0, r.jsx)(u.Text, {
             variant: "text-sm/medium",
             color: "currentColor",

@@ -1,28 +1,32 @@
-/** Chunk was on 60173 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
-  Z: () => a
+  Z: () => l
 });
 var r = n(255367),
   i = n(998502),
-  l = n(15594);
-let a = i.ZP.getEnableHardwareAcceleration() ? function() {
+  a = n(15594);
+
+function o() {
   return (0, r.jsx)("div", {
     children: (0, r.jsxs)("div", {
-      className: l.gradientBackground,
+      className: a.gradientBackground,
       children: [(0, r.jsx)("div", {
-        className: l.leftDarkEllipse
+        className: a.leftDarkEllipse
       }), (0, r.jsx)("div", {
-        className: l.leftLightEllipse
+        className: a.leftLightEllipse
       }), (0, r.jsx)("div", {
-        className: l.rightDarkEllipse
+        className: a.rightDarkEllipse
       }), (0, r.jsx)("div", {
-        className: l.rightLightEllipse
+        className: a.rightLightEllipse
       }), (0, r.jsx)("div", {
-        className: l.centerEllipse
+        className: a.centerEllipse
       })]
     })
   })
-} : function() {
+}
+
+function s() {
   return (0, r.jsxs)("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     width: "1000",
@@ -107,3 +111,4 @@ let a = i.ZP.getEnableHardwareAcceleration() ? function() {
     })]
   })
 }
+let l = i.ZP.getEnableHardwareAcceleration() ? o : s

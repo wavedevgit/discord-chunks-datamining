@@ -1,60 +1,63 @@
-/** Chunk was on 93239 **/
-r.d(t, {
+/** Chunk was on web.js **/
+"use strict";
+n.d(t, {
   Z: () => h
-}), r(388685), r(539854);
-var n = r(442837),
-  i = r(963374),
-  s = r(735020),
-  a = r(627050),
-  c = r(905405),
-  l = r(937889),
-  o = r(23750),
-  u = r(699516),
-  d = r(171900),
-  _ = r(518944);
+}), n(388685), n(539854);
+var r = n(442837),
+  i = n(963374),
+  a = n(735020),
+  o = n(627050),
+  s = n(905405),
+  l = n(937889),
+  c = n(23750),
+  u = n(699516),
+  d = n(171900),
+  f = n(518944);
+
+function _(e, t) {
+  let [n] = t, r = n.getMessage(e.id, e.channel_id);
+  return null != r && (e = e.merge({
+    attachments: r.attachments,
+    embeds: r.embeds
+  })), e
+}
 let p = [];
 
 function h(e) {
-  let t = (0, c.p)(),
-    r = a.d.useExperiment({
+  let t = (0, s.p)(),
+    n = o.d.useExperiment({
       location: "useMessageRenderedContent"
     }).enabled,
-    h = (0, n.e7)([_.Z, d.Z, s.Z], () => {
-      var n;
-      let a = _.Z.getSearchResultsQuery(e),
-        c = d.Z.getMessages(e);
-      if (null == a || null == c || 0 === c.length) return p;
-      let u = (0, i.nC)(null != (n = a.content) ? n : ""),
+    h = (0, r.e7)([f.Z, d.Z, a.Z], () => {
+      var r;
+      let o = f.Z.getSearchResultsQuery(e),
+        s = d.Z.getMessages(e);
+      if (null == o || null == s || 0 === s.length) return p;
+      let u = (0, i.nC)(null != (r = o.content) ? r : ""),
         h = [];
-      return c.forEach(e => {
-        let n = new o.ZP(e),
-          i = (n = function(e, t) {
-            let [r] = t, n = r.getMessage(e.id, e.channel_id);
-            return null != n && (e = e.merge({
-              attachments: n.attachments,
-              embeds: n.embeds
-            })), e
-          }(n, [s.Z])).isSearchHit ? n.set("customRenderedContent", (0, l.ZP)(n, {
+      return s.forEach(e => {
+        let r = new c.ZP(e),
+          i = (r = _(r, [a.Z])).isSearchHit ? r.set("customRenderedContent", (0, l.ZP)(r, {
             postProcessor: u,
             allowHeading: !0,
             allowList: !0,
-            allowGameMentions: r,
+            allowGameMentions: n,
             shouldFilterKeywords: t
-          })) : n;
+          })) : r;
         h.push([i])
       }), h
-    }, [r, e, t], n.pF);
-  return (0, n.e7)([u.Z], () => {
+    }, [n, e, t], r.pF);
+  return (0, r.e7)([u.Z], () => {
     let e = 0,
       t = 0;
     return {
-      searchResults: h.map(r => r.filter(r => {
-        let n = u.Z.isBlockedForMessage(r),
-          i = u.Z.isIgnoredForMessage(r);
-        return n && r.isSearchHit ? e++ : i && r.isSearchHit && t++, !n && !i || r.isSearchHit
+      searchResults: h.map(n => n.filter(n => {
+        let r = u.Z.isBlockedForMessage(n),
+          i = u.Z.isIgnoredForMessage(n);
+        return r && n.isSearchHit ? e++ : i && n.isSearchHit && t++, !r && !i || n.isSearchHit
       })),
       blockCount: e,
       ignoreCount: t
     }
-  }, [h], n.pF)
+  }, [h], r.pF)
 }

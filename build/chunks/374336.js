@@ -1,4 +1,5 @@
-/** Chunk was on 60173 **/
+/** Chunk was on web.js **/
+"use strict";
 e.exports = {
   qualityIndicator: "qualityIndicator__30845",
   clickable: "clickable__30845",

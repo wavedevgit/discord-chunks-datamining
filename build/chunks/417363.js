@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => $
+  Z: () => J
 }), n(388685), n(415506), n(358797);
 var r, i = n(392711),
   a = n.n(i),
@@ -63,18 +63,18 @@ let T = 200,
   A = +_.Z.Millis.MINUTE,
   N = {},
   C = "content",
-  R = "file://",
-  P = !1,
-  w = 0,
+  w = "file://",
+  R = !1,
+  P = 0,
   D = 0,
   L = 0,
   x = [],
-  M = [],
   k = [],
-  j = !1;
+  j = [],
+  M = !1;
 
 function U() {
-  P = !1
+  R = !1
 }
 
 function G(e, t) {
@@ -118,7 +118,7 @@ function B(e) {
                 } = n,
                 o = i,
                 s = l.Z.fileManager.join(e, r);
-              (0, h.isMac)() && !s.startsWith(R) && (s = "".concat(R).concat(s)), t = null != a ? l.Z.fileManager.join(e, a) : l.Z.fileManager.dirname(s), E[o] = I(O({}, n), {
+              (0, h.isMac)() && !s.startsWith(w) && (s = "".concat(w).concat(s)), t = null != a ? l.Z.fileManager.join(e, a) : l.Z.fileManager.dirname(s), E[o] = I(O({}, n), {
                 id: o,
                 fullExecutablePath: s,
                 fullWorkingDir: t
@@ -192,7 +192,7 @@ function B(e) {
   throw Error("Invalid Dispatch State. state=".concat(e.state.type))
 }
 
-function V(e) {
+function Z(e) {
   return e.type === b.vxO.INSTALLING || e.type === b.vxO.UPDATING || e.type === b.vxO.REPAIRING ? e.networkProgress : null
 }
 
@@ -200,15 +200,15 @@ function F(e) {
   return e.type === b.vxO.INSTALLING || e.type === b.vxO.UPDATING || e.type === b.vxO.REPAIRING ? e.diskProgress : null
 }
 
-function Z(e) {
+function V(e) {
   return e.type === b.vxO.INSTALLING || e.type === b.vxO.UPDATING || e.type === b.vxO.REPAIRING ? e.readerProgress : null
 }
 
 function H(e) {
-  M = (M = [{
+  k = (k = [{
     bytes: e,
     timestamp: Date.now()
-  }, ...M]).slice(0, S)
+  }, ...k]).slice(0, S)
 }
 
 function Y(e) {
@@ -226,26 +226,26 @@ function Y(e) {
 }
 
 function W(e) {
-  k = (k = [{
+  j = (j = [{
     bytes: e,
     timestamp: Date.now()
-  }, ...k]).slice(0, S)
+  }, ...j]).slice(0, S)
 }
 let K = a().throttle(H, T),
   z = a().throttle(Y, T),
   q = a().throttle(W, T);
 
-function X(e, t, n) {
+function $(e, t, n) {
   let r = n(N[t]),
     i = n(e[t]);
   return null != r && null != i && 0 !== r ? Math.max(i - r, 0) : 0
 }
 
-function Q(e) {
+function X(e) {
   let {
     state: t
   } = e;
-  P = !0;
+  R = !0;
   let n = {},
     r = t.applications,
     i = null != t.currentTask ? t.currentTask.branchId : null,
@@ -254,11 +254,11 @@ function Q(e) {
     for (let t in r[e]) {
       let o = (0, p.Tu)(e, t);
       if (n[o] = B(r[e][t]), null != N[o]) {
-        let e = X(n, o, V);
-        e > 0 && K(w += e);
-        let r = X(n, o, F);
+        let e = $(n, o, Z);
+        e > 0 && K(P += e);
+        let r = $(n, o, F);
         r > 0 && q(D += r);
-        let s = X(n, o, Z);
+        let s = $(n, o, V);
         if (s > 0 && z(L += s), i === t) {
           let e = n[o];
           if (!0 !== e.paused && (e.type === b.vxO.UNINSTALLING || e.type === b.vxO.INSTALLING || e.type === b.vxO.UPDATING)) switch (e.stage) {
@@ -271,7 +271,7 @@ function Q(e) {
           }
         }
       }
-      if (!j) {
+      if (!M) {
         let r = l.Z.fileManager.dirname(n[o].installPath);
         E.Z.getInstallationPath(e, t) !== r && s.Z.wait(() => {
           s.Z.dispatch({
@@ -290,9 +290,9 @@ function Q(e) {
         })
       }
     }
-  a || "dispatch_application_progress" !== c.Z.taskID || c.Z.clearProgress("dispatch_application_progress"), N = n, j = !0
+  a || "dispatch_application_progress" !== c.Z.taskID || c.Z.clearProgress("dispatch_application_progress"), N = n, M = !0
 }
-class J extends(r = o.ZP.Store) {
+class Q extends(r = o.ZP.Store) {
   initialize() {
     this.waitFor(u.default)
   }
@@ -338,19 +338,19 @@ class J extends(r = o.ZP.Store) {
     return x
   }
   getHistoricalTotalBytesDownloaded() {
-    return M
+    return k
   }
   getHistoricalTotalBytesWritten() {
-    return k
+    return j
   }
   whenInitialized(e) {
     this.addConditionalChangeListener(() => {
-      if (P) return setImmediate(e), !1
+      if (R) return setImmediate(e), !1
     })
   }
 }
-y(J, "displayName", "DispatchApplicationStore");
-let $ = new J(s.Z, {
+y(Q, "displayName", "DispatchApplicationStore");
+let J = new Q(s.Z, {
   CONNECTION_OPEN: U,
-  DISPATCH_APPLICATION_STATE_UPDATE: Q
+  DISPATCH_APPLICATION_STATE_UPDATE: X
 })

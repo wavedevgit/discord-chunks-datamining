@@ -1,13 +1,14 @@
-/** Chunk was on 69150 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
-  b: () => l
+  b: () => a
 });
-var i = n(818083),
-  r = n(987338);
-let l = (0, i.B)({
+var r = n(818083),
+  i = n(987338);
+let a = (0, r.B)({
   kind: "user",
   id: "2025-08_offer_notice_recurrence",
-  commonTriggerPoint: r.$P.CONNECTION_OPEN,
+  commonTriggerPoint: i.$P.CONNECTION_OPEN,
   label: "Offer Notice Recurrence",
   defaultConfig: {
     useRecurringNotices: !1

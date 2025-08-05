@@ -1,4 +1,5 @@
-/** Chunk was on 69150 **/
+/** Chunk was on web.js **/
+"use strict";
 e.exports = {
   premiumIcon: "premiumIcon__9671b",
   platformIcon: "platformIcon__9671b",

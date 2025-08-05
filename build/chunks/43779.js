@@ -1,4 +1,4 @@
-/** Chunk was on 17218 **/
+/** Chunk was on 37082 **/
 n.d(t, {
   Z: () => S
 }), n(953529);
@@ -39,8 +39,8 @@ function S(e) {
     sourceQuestContent: q
   } = e, D = s.useMemo(() => g.r.build(P.config), [P.config]), Q = D.defaultRewardName, V = D.defaultRewardNameWithArticle, L = (null == (t = P.userStatus) ? void 0 : t.enrolledAt) != null, {
     ref: M,
-    scrollHeight: W
-  } = (0, u.kE)(), Z = 104 !== W, {
+    scrollHeight: Z
+  } = (0, u.kE)(), W = 104 !== Z, {
     onAssetLoadComplete: U
   } = s.useContext(b.k), {
     expansionSpring: H
@@ -114,7 +114,7 @@ function S(e) {
     className: O.container,
     children: [(0, r.jsxs)(i.animated.div, {
       style: {
-        maxHeight: H.to([0, 1], [104, (null != W ? W : 0) + 12])
+        maxHeight: H.to([0, 1], [104, (null != Z ? Z : 0) + 12])
       },
       className: O.rewardDescriptionContainer,
       children: [(0, r.jsx)(j.E, {
@@ -166,7 +166,7 @@ function S(e) {
       }), (0, r.jsxs)("div", {
         ref: M,
         className: a()(O.textContainer, {
-          [O.justifyCenter]: !Z
+          [O.justifyCenter]: !W
         }),
         children: [(0, r.jsx)(c.X6q, {
           variant: "eyebrow",
@@ -181,7 +181,7 @@ function S(e) {
           className: O.header,
           children: $
         }), ee]
-      }), Z && (0, r.jsx)(i.animated.div, {
+      }), W && (0, r.jsx)(i.animated.div, {
         style: {
           opacity: H.to([0, 1], [1, 0])
         },

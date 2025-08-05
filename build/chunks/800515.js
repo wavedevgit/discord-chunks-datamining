@@ -1,4 +1,5 @@
-/** Chunk was on 94313 **/
+/** Chunk was on web.js **/
+"use strict";
 e.exports = {
   settingsWrapper: "settingsWrapper_c9e42f",
   osx: "osx_c9e42f",

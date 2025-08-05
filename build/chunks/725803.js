@@ -1,38 +1,38 @@
-/** Chunk was on 94312 **/
-n.d(t, {
-  Z: () => o
-}), n(388685);
-var r = n(73800),
-  i = n(442837),
-  l = n(881052),
-  a = n(728345),
-  s = n(812206);
+/** Chunk was on 73628 **/
+A.d(t, {
+  Z: () => i
+}), A(388685);
+var n = A(73800),
+  r = A(442837),
+  l = A(881052),
+  a = A(728345),
+  o = A(812206);
 
-function o(e, t) {
-  let n = (0, i.e7)([s.Z], () => s.Z.getGuildApplication(e, t)),
-    [o, c] = r.useState(null == n),
-    [d, u] = r.useState(),
-    [m, g] = r.useState(!1),
-    p = r.useCallback(async () => {
-      if (null == n && null != e) {
-        g(!0), c(!0);
+function i(e, t) {
+  let A = (0, r.e7)([o.Z], () => o.Z.getGuildApplication(e, t)),
+    [i, s] = n.useState(null == A),
+    [d, c] = n.useState(),
+    [u, f] = n.useState(!1),
+    g = n.useCallback(async () => {
+      if (null == A && null != e) {
+        f(!0), s(!0);
         try {
           await a.ZP.getApplicationsForGuild(e, {
             type: t,
             includeTeam: !0
           })
         } catch (e) {
-          u(new l.Hx(e))
+          c(new l.Hx(e))
         } finally {
-          c(!1)
+          s(!1)
         }
       }
-    }, [n, t, e]);
-  return r.useEffect(() => {
-    m || p()
-  }, [m, p]), {
-    application: n,
+    }, [A, t, e]);
+  return n.useEffect(() => {
+    u || g()
+  }, [u, g]), {
+    application: A,
     error: d,
-    loading: o
+    loading: i
   }
 }

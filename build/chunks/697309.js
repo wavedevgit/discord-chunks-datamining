@@ -1,7 +1,7 @@
-/** Chunk was on 60173 **/
+/** Chunk was on 49152 **/
 n.d(t, {
   li: () => r,
-  nT: () => o,
+  nT: () => s,
   p8: () => a,
   qO: () => l,
   zx: () => i
@@ -10,4 +10,4 @@ let r = 264,
   i = 432,
   l = 375,
   a = 12633 == n.j ? 76 : null,
-  o = "resizable-sidebar-width-2"
+  s = "resizable-sidebar-width-2"

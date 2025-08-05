@@ -73,33 +73,33 @@ function N(e) {
   } = e, {
     channelAction: h,
     completed: b
-  } = (0, E.P3)(f, _), y = (0, E.K_)(f, null == h ? void 0 : h.channelId), O = (0, l.e7)([u.Z], () => u.Z.useReducedMotion), N = (null == h ? void 0 : h.actionType) === g.oi.VIEW, C = (0, c.dQu)(c.TVs.colors.WHITE), [R, P] = i.useState(!1), [w] = i.useState(new s.Z.Value(0)), [D] = i.useState(new s.Z.Value(0));
+  } = (0, E.P3)(f, _), y = (0, E.K_)(f, null == h ? void 0 : h.channelId), O = (0, l.e7)([u.Z], () => u.Z.useReducedMotion), N = (null == h ? void 0 : h.actionType) === g.oi.VIEW, C = (0, c.dQu)(c.TVs.colors.WHITE), [w, R] = i.useState(!1), [P] = i.useState(new s.Z.Value(0)), [D] = i.useState(new s.Z.Value(0));
   i.useEffect(() => {
-    b ? s.Z.timing(w, {
+    b ? s.Z.timing(P, {
       toValue: 0,
       duration: O ? 1 : 350,
       easing: s.Z.Easing.quad,
       delay: 500 * !N
-    }).start(() => P(!0)) : s.Z.timing(w, {
+    }).start(() => R(!0)) : s.Z.timing(P, {
       toValue: 1,
       duration: O ? 1 : 350,
       easing: s.Z.Easing.quad,
       delay: 400
     }).start()
-  }, [b, w, N, O]), i.useEffect(() => {
-    b && R && s.Z.timing(D, {
+  }, [b, P, N, O]), i.useEffect(() => {
+    b && w && s.Z.timing(D, {
       toValue: 1,
       duration: 350 * !O,
       easing: s.Z.Easing.quad,
       delay: 400
     }).start()
-  }, [b, D, R, O]);
+  }, [b, D, w, O]);
   let L = i.useCallback(() => {
     null != y && (0, m.gp)(f, y.channelId)
   }, [f, y]);
-  return null == h || N && !R ? null : (0, r.jsx)("div", {
+  return null == h || N && !w ? null : (0, r.jsx)("div", {
     className: o()(I.container, p),
-    children: R && null != y ? (0, r.jsx)(s.Z.div, {
+    children: w && null != y ? (0, r.jsx)(s.Z.div, {
       style: {
         marginBottom: D.interpolate({
           inputRange: [0, 1],
@@ -136,7 +136,7 @@ function N(e) {
     }) : (0, r.jsxs)(s.Z.div, {
       className: I.banner,
       style: {
-        marginBottom: w.interpolate({
+        marginBottom: P.interpolate({
           inputRange: [0, 1],
           outputRange: [-T, 0]
         })

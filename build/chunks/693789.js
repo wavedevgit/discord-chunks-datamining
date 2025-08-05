@@ -144,46 +144,46 @@ function T(e) {
     wrapperClassName: A,
     className: N,
     innerClassName: C,
-    onClick: R,
-    onDoubleClick: P,
-    onMouseDown: w,
+    onClick: w,
+    onDoubleClick: R,
+    onMouseDown: P,
     onMouseUp: D,
     onMouseEnter: L,
     onMouseLeave: x,
-    onKeyDown: M,
-    children: k,
-    rel: j,
+    onKeyDown: k,
+    children: j,
+    rel: M,
     buttonRef: U,
     focusProps: G,
     "aria-label": B,
-    submittingStartedLabel: V,
+    submittingStartedLabel: Z,
     submittingFinishedLabel: F
-  } = e, Z = g(e, ["look", "color", "size", "fullWidth", "grow", "disabled", "submitting", "type", "style", "wrapperClassName", "className", "innerClassName", "onClick", "onDoubleClick", "onMouseDown", "onMouseUp", "onMouseEnter", "onMouseLeave", "onKeyDown", "children", "rel", "buttonRef", "focusProps", "aria-label", "submittingStartedLabel", "submittingFinishedLabel"]);
+  } = e, V = g(e, ["look", "color", "size", "fullWidth", "grow", "disabled", "submitting", "type", "style", "wrapperClassName", "className", "innerClassName", "onClick", "onDoubleClick", "onMouseDown", "onMouseUp", "onMouseEnter", "onMouseLeave", "onKeyDown", "children", "rel", "buttonRef", "focusProps", "aria-label", "submittingStartedLabel", "submittingFinishedLabel"]);
   let H = h || E,
     Y = H && (null != L || null != x),
     W = Y ? null : A,
     K = v(G, t),
     z = i.useRef(!1);
   i.useEffect(() => {
-    !0 === E && (z.current = !0, l.u.announce(null != V ? V : d.intl.string(d.t.pfChQk))), !1 === E && !0 === z.current && l.u.announce(null != F ? F : d.intl.string(d.t.SVPara))
-  }, [E, V, F]);
+    !0 === E && (z.current = !0, l.u.announce(null != Z ? Z : d.intl.string(d.t.pfChQk))), !1 === E && !0 === z.current && l.u.announce(null != F ? F : d.intl.string(d.t.SVPara))
+  }, [E, Z, F]);
   let q = (0, r.jsx)(c.t, m(p({}, G), {
     offset: K,
-    children: (0, r.jsxs)("button", m(p({}, H ? null : Z), {
+    children: (0, r.jsxs)("button", m(p({}, H ? null : V), {
       "aria-label": B,
       "aria-busy": !!E || void 0,
       ref: U,
-      onClick: H ? e => e.preventDefault() : R,
-      onDoubleClick: H ? e => e.preventDefault() : P,
+      onClick: H ? e => e.preventDefault() : w,
+      onDoubleClick: H ? e => e.preventDefault() : R,
       onMouseUp: h ? void 0 : D,
-      onMouseDown: h ? void 0 : w,
+      onMouseDown: h ? void 0 : P,
       onMouseEnter: L,
       onMouseLeave: x,
-      onKeyDown: h ? void 0 : M,
+      onKeyDown: h ? void 0 : k,
       type: T,
       disabled: h,
       style: S,
-      rel: j,
+      rel: M,
       className: o()(N, I({
         look: t,
         color: n,
@@ -199,7 +199,7 @@ function T(e) {
         itemClassName: f.spinnerItem
       }) : null, (0, r.jsx)("div", {
         className: o()(f.contents, C),
-        children: k
+        children: j
       })]
     }))
   }));

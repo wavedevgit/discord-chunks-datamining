@@ -1,4 +1,4 @@
-/** Chunk was on 70663 **/
+/** Chunk was on 92357 **/
 n.d(t, {
   Z: () => f
 });
@@ -7,8 +7,8 @@ n(73800);
 var i = n(82659),
   l = n(481060),
   o = n(570140),
-  a = n(317770),
-  s = n(981631),
+  s = n(317770),
+  a = n(981631),
   c = n(388032);
 
 function u(e) {
@@ -35,7 +35,7 @@ let d = "ActivityInviteManager",
       type: "ACTIVITY_INVITE_MODAL_CLOSE"
     })
   };
-class p extends a.Z {
+class p extends s.Z {
   _initialize() {
     o.Z.subscribe("ACTIVITY_INVITE_MODAL_OPEN", this.handleModalOpen), o.Z.subscribe("ACTIVITY_INVITE_MODAL_CLOSE", this.handleModalClose)
   }
@@ -46,8 +46,8 @@ class p extends a.Z {
     let {
       activity: t,
       isPrivate: o,
-      context: a
-    } = e, p = a === s.IlC.POPOUT ? l.u1M : l.z1l;
+      context: s
+    } = e, p = s === a.IlC.POPOUT ? l.u1M : l.z1l;
     o ? (0, l.h7j)(e => {
       var n, o;
       return (0, r.jsx)(i.Modal, (n = u({

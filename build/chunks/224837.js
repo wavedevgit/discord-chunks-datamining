@@ -1,11 +1,12 @@
-/** Chunk was on 60173 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
   Kb: () => i,
   Vm: () => r,
-  kn: () => a,
-  m2: () => l
+  kn: () => o,
+  m2: () => a
 });
 let r = 82733,
   i = 82744,
-  l = 82755,
-  a = 82766
+  a = 82755,
+  o = 82766

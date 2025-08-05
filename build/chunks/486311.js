@@ -1,4 +1,4 @@
-/** Chunk was on 70663 **/
+/** Chunk was on 92357 **/
 n.d(t, {
   Z: () => j
 }), n(388685);
@@ -6,8 +6,8 @@ var r = n(255367),
   i = n(73800),
   l = n(120356),
   o = n.n(l),
-  a = n(442837),
-  s = n(481060),
+  s = n(442837),
+  a = n(481060),
   c = n(100527),
   u = n(434479),
   d = n(819640),
@@ -17,8 +17,8 @@ var r = n(255367),
   g = n(933104),
   m = n(332538),
   b = n(921944),
-  _ = n(93841),
-  O = n(388032),
+  O = n(93841),
+  _ = n(388032),
   y = n(388298);
 
 function C(e) {
@@ -78,40 +78,40 @@ let v = {
         default:
           return (0, r.jsx)("div", {})
       }
-    }, [t, null == j ? void 0 : j.popout]), x = (0, s.s9z)(s.JQI), I = (0, a.e7)([d.Z], () => d.Z.hasLayers()), [P, N] = i.useState(null), w = null == P ? "animation" : "LOOP";
+    }, [t, null == j ? void 0 : j.popout]), x = (0, a.s9z)(a.JQI), I = (0, s.e7)([d.Z], () => d.Z.hasLayers()), [P, N] = i.useState(null), w = null == P ? "animation" : "LOOP";
     i.useEffect(() => {
       (null == j ? void 0 : j.popout) == null && N(null)
     }, [null == j ? void 0 : j.popout]);
-    let T = i.useCallback(e => {
+    let Z = i.useCallback(e => {
         N(e)
       }, []),
-      Z = i.useRef(null);
-    return (0, r.jsx)(s.yRy, {
-      targetElementRef: Z,
+      T = i.useRef(null);
+    return (0, r.jsx)(a.yRy, {
+      targetElementRef: T,
       shouldShow: (null == j ? void 0 : j.popout) != null && !(x || I),
       nudgeAlignIntoViewport: !0,
       animationPosition: "bottom",
       position: "right",
       renderPopout: S,
       children: e => {
-        var i, a;
-        return (0, r.jsx)(u.m, (i = C({}, e), a = a = {
-          ref: Z,
+        var i, s;
+        return (0, r.jsx)(u.m, (i = C({}, e), s = s = {
+          ref: T,
           className: y.container,
           id: "skill-trees-".concat(t),
-          renderIcon: e => (0, r.jsx)(s.$Eu, {
+          renderIcon: e => (0, r.jsx)(a.$Eu, {
             size: "md",
             className: e,
             color: "currentColor"
           }),
           background: (null == j ? void 0 : j.popout) != null && (0, r.jsx)("div", {
             className: y.lottieContainer,
-            children: (0, r.jsx)(s.kci, {
+            children: (0, r.jsx)(a.kci, {
               nextScene: w,
               className: y.lottie,
               sceneSegments: v,
               importData: () => n.e("50821").then(n.t.bind(n, 548421, 19)),
-              onScenePlay: T,
+              onScenePlay: Z,
               rendererSettings: {
                 preserveAspectRatio: "xMidYMid slice"
               }
@@ -121,21 +121,21 @@ let v = {
             className: o()({
               [y.textImportant]: (null == j ? void 0 : j.showUnread) === !0
             }),
-            children: O.intl.string(_.default.yv3DJC)
+            children: _.intl.string(O.default.yv3DJC)
           }),
           selected: l,
           onClick: E,
           showUnread: (null == j ? void 0 : j.showUnread) === !0,
           trailing: null == j ? void 0 : j.trailing
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(s)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
             var r = Object.getOwnPropertySymbols(e);
             n.push.apply(n, r)
           }
           return n
-        })(Object(a)).forEach(function(e) {
-          Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(a, e))
+        })(Object(s)).forEach(function(e) {
+          Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(s, e))
         }), i))
       }
     })

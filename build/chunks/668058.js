@@ -1,30 +1,31 @@
-/** Chunk was on 94313 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
-  $: () => l
+  $: () => a
 }), n(388685);
 var r = n(73800),
   i = n(881052);
 
-function l(e) {
+function a(e) {
   let {
     onError: t,
     onSuccess: n,
-    report: l
-  } = e, [a, o] = r.useState(!1);
+    report: a
+  } = e, [o, s] = r.useState(!1), l = o;
   return {
     reportFalsePositive: r.useCallback(async () => {
-      if (!a) {
-        o(!0);
+      if (!l) {
+        s(!0);
         try {
-          await l(), null == n || n()
+          await a(), null == n || n()
         } catch (n) {
           let e = new i.Hx(n);
           null == t || t(e)
         } finally {
-          o(!1)
+          s(!1)
         }
       }
-    }, [a, t, n, l]),
-    isReportFalsePositiveLoading: a
+    }, [l, t, n, a]),
+    isReportFalsePositiveLoading: o
   }
 }

@@ -1,4 +1,4 @@
-/** Chunk was on 94312 **/
+/** Chunk was on 58121 **/
 e.exports = {
   coverContainer: "coverContainer__2f300",
   centerArt: "centerArt__2f300",

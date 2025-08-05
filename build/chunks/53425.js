@@ -1,4 +1,4 @@
-/** Chunk was on 70663 **/
+/** Chunk was on 92357 **/
 n.d(t, {
   Z: () => g
 });
@@ -6,8 +6,8 @@ var r = n(255367),
   i = n(73800),
   l = n(120356),
   o = n.n(l),
-  a = n(442837),
-  s = n(481060),
+  s = n(442837),
+  a = n(481060),
   c = n(592125),
   u = n(938475),
   d = n(823379),
@@ -23,7 +23,7 @@ let g = i.memo(function(e) {
     withGuildIcon: g
   } = e, {
     density: m
-  } = (0, s.TCT)(), b = (0, a.Wu)([c.Z], () => l.map(e => c.Z.getChannel(e)).filter(d.lm), [l]), _ = (0, a.e7)([u.ZP], () => {
+  } = (0, a.TCT)(), b = (0, s.Wu)([c.Z], () => l.map(e => c.Z.getChannel(e)).filter(d.lm), [l]), O = (0, s.e7)([u.ZP], () => {
     let e = b[b.length - 1];
     if (null == e) return 0;
     let t = u.ZP.getVoiceStates(e.guild_id)[e.id];
@@ -41,7 +41,7 @@ let g = i.memo(function(e) {
           [f.spineBorderWithGuildIcon]: g
         }),
         style: {
-          bottom: ("cozy" === m ? 28 : 24) + _
+          bottom: ("cozy" === m ? 28 : 24) + O
         }
       }), b.map((e, t) => (0, r.jsx)(h.Z, {
         thread: e,

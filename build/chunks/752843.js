@@ -1,44 +1,45 @@
-/** Chunk was on 86282 **/
-l.d(n, {
-  V: () => u,
-  Z: () => d
+/** Chunk was on web.js **/
+"use strict";
+n.d(t, {
+  V: () => d,
+  Z: () => u
 });
-var t = l(255367);
-l(73800);
-var r = l(628028),
-  i = l(220427),
-  s = l(777207),
-  a = l(692547),
-  o = l(330711),
-  c = l(914439);
-
-function d(e) {
-  let {
-    type: n
-  } = e;
-  return (0, t.jsx)(u, {
-    icon: "user" === n ? (0, t.jsx)(i.t, {
-      size: "xxs",
-      color: a.Z.colors.INTERACTIVE_NORMAL
-    }) : (0, t.jsx)(r.Q, {
-      size: "xxs",
-      color: a.Z.colors.INTERACTIVE_NORMAL
-    }),
-    text: "user" === n ? o.Z.Messages.STOREFRONT_USER_SUBSCRIPTION : o.Z.Messages.STOREFRONT_SERVER_SUBSCRIPTION
-  })
-}
+var r = n(255367);
+n(73800);
+var i = n(628028),
+  a = n(220427),
+  o = n(777207),
+  s = n(692547),
+  l = n(330711),
+  c = n(914439);
 
 function u(e) {
   let {
-    icon: n,
-    text: l
+    type: t
   } = e;
-  return (0, t.jsxs)("div", {
+  return (0, r.jsx)(d, {
+    icon: "user" === t ? (0, r.jsx)(a.t, {
+      size: "xxs",
+      color: s.Z.colors.INTERACTIVE_NORMAL
+    }) : (0, r.jsx)(i.Q, {
+      size: "xxs",
+      color: s.Z.colors.INTERACTIVE_NORMAL
+    }),
+    text: "user" === t ? l.Z.Messages.STOREFRONT_USER_SUBSCRIPTION : l.Z.Messages.STOREFRONT_SERVER_SUBSCRIPTION
+  })
+}
+
+function d(e) {
+  let {
+    icon: t,
+    text: n
+  } = e;
+  return (0, r.jsxs)("div", {
     className: c.container,
-    children: [n, (0, t.jsx)(s.x, {
+    children: [t, (0, r.jsx)(o.x, {
       color: "header-primary",
       variant: "text-sm/medium",
-      children: l
+      children: n
     })]
   })
 }

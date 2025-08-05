@@ -1,4 +1,4 @@
-/** Chunk was on 94312 **/
+/** Chunk was on 22988 **/
 e.exports = {
   grid: "grid__4cbea",
   traitWrapper: "traitWrapper__4cbea",

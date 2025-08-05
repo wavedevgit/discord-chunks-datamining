@@ -85,7 +85,7 @@ function I(e) {
     label: "Setting ".concat(r.length, " announcement channels to white-dot"),
     debug: r.map(e => "\n    - #".concat(e.name)).join(""),
     apply: (e, t) => {
-      for (let n of r) R(e, t, n.id, !0)
+      for (let n of r) w(e, t, n.id, !0)
     }
   }), t
 }
@@ -98,7 +98,7 @@ function T(e) {
     label: "Unmuting ".concat(n.length, " categories and setting to grey-dot"),
     debug: n.map(e => "\n    - #".concat(e.name)).join(""),
     apply: (e, t) => {
-      for (let r of n) R(e, t, r.id, !1), C(e, t, r.id, e => {
+      for (let r of n) w(e, t, r.id, !1), C(e, t, r.id, e => {
         e.muted = !1, e.mute_config = null
       })
     }
@@ -130,7 +130,7 @@ function S(e, t, n, r, a) {
     label: "Setting ".concat(f.length, " channels to white-dot since they are recent and frequently viewed"),
     debug: f.map(e => "\n    - #".concat(e.name, " (").concat(JSON.stringify(l[e.id]), ")")).join(""),
     apply: (e, t) => {
-      for (let n of f) R(e, t, n.id, !0)
+      for (let n of f) w(e, t, n.id, !0)
     }
   }), _.length > 0 && p.push({
     label: "NOT setting ".concat(_.length, " channels to white-dot because they were only viewed a little."),
@@ -152,7 +152,7 @@ function A(e, t) {
     label: "Setting ".concat(o.length, " channels to white-dot since they are recent and frequently viewed"),
     debug: o.map(e => "\n    - #".concat(e.name)).join(""),
     apply: (e, t) => {
-      for (let n of o) R(e, t, n.id, !0)
+      for (let n of o) w(e, t, n.id, !0)
     }
   }), n
 }
@@ -169,13 +169,13 @@ function N(e) {
     label: "Setting ".concat(n.length, " channels to white-dot since they were explicitly All Messages"),
     debug: n.map(e => "\n    - #".concat(e.name)).join(""),
     apply: (e, t) => {
-      for (let r of n) R(e, t, r.id, !0)
+      for (let r of n) w(e, t, r.id, !0)
     }
   }), r.length > 0 && t.push({
     label: "Setting ".concat(r.length, " channels to grey-dot since they were explicitly Mentions Only"),
     debug: r.map(e => "\n    - #".concat(e.name)).join(""),
     apply: (e, t) => {
-      for (let n of r) R(e, t, n.id, !1)
+      for (let n of r) w(e, t, n.id, !1)
     }
   }), t
 }
@@ -186,7 +186,7 @@ function C(e, t, n, r) {
   r(c, null != (l = null == (o = t.channel_overrides) ? void 0 : o[n]) ? l : {}), i().isEmpty(c) || (null == e.channel_overrides && (e.channel_overrides = {}), e.channel_overrides[n] = c)
 }
 
-function R(e, t, n, r) {
+function w(e, t, n, r) {
   C(e, t, n, (e, t) => {
     var n, i;
     e.flags = (0, _.mB)(null != (i = null != (n = e.flags) ? n : t.flags) ? i : 0, g.ic.UNREADS_ALL_MESSAGES, r), e.flags = (0, _.mB)(e.flags, g.ic.UNREADS_ONLY_MENTIONS, !r)

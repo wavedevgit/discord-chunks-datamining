@@ -1,4 +1,4 @@
-/** Chunk was on 43473 **/
+/** Chunk was on 11302 **/
 e.exports = {
   scroller: "scroller__28fdc",
   friendsLoadingItem: "friendsLoadingItem__28fdc",

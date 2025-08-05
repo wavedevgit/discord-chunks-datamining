@@ -1,4 +1,4 @@
-/** Chunk was on 94312 **/
+/** Chunk was on 58121 **/
 e.exports = {
   welcomeMessageContainer: "welcomeMessageContainer__6f212",
   avatar: "avatar__6f212",

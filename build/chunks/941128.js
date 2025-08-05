@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => J
+  Z: () => Q
 }), n(388685), n(415506), n(539854), n(290780);
 var r, i = n(392711),
   a = n.n(i),
@@ -36,10 +36,10 @@ let y = [E.ff.AUTHENTICATION_FAILED, E.ff.NOT_ENTITLED],
   A = null,
   N = !1,
   C = new Map,
-  R = !1,
-  P = null;
+  w = !1,
+  R = null;
 
-function w() {
+function P() {
   let e = {
     queue: v,
     paused: T,
@@ -66,7 +66,7 @@ function L() {
       let e = d.default.getToken(),
         t = d.default.getId();
       if (null == e) throw Error("missing user token");
-      R = !p.Z.setCurrentTask(r, i, n, t, e)
+      w = !p.Z.setCurrentTask(r, i, n, t, e)
     }
   }
 }
@@ -76,7 +76,7 @@ function x(e, t) {
   return v.findIndex(e => e.comboId === n)
 }
 
-function M(e, t, n, r) {
+function k(e, t, n, r) {
   let i = (0, _.Tu)(e, t),
     a = {
       comboId: i,
@@ -84,25 +84,25 @@ function M(e, t, n, r) {
     },
     o = I.indexOf(i); - 1 !== o && I.splice(o, 1);
   let s = x(e, t);
-  0 !== s && (n ? -1 === s && (v.push(a), L()) : (s > 0 && v.splice(s, 1), v.unshift(a), L())), !n && T && p.Z.resume(), w()
+  0 !== s && (n ? -1 === s && (v.push(a), L()) : (s > 0 && v.splice(s, 1), v.unshift(a), L())), !n && T && p.Z.resume(), P()
 }
 
-function k(e, t) {
+function j(e, t) {
   let n = (0, _.Tu)(e, t),
     r = I.indexOf(n); - 1 !== r && I.splice(r, 1);
-  let i = x(e, t); - 1 !== i && (v.splice(i, 1), w()), L()
+  let i = x(e, t); - 1 !== i && (v.splice(i, 1), P()), L()
 }
 
-function j(e) {
+function M(e) {
   let {
     applicationId: t,
     branchId: n
   } = e;
-  C.set((0, _.Tu)(t, n), "Install"), M(t, n, !1, "Patch")
+  C.set((0, _.Tu)(t, n), "Install"), k(t, n, !1, "Patch")
 }
 
 function U(e) {
-  V(e), Z(e)
+  Z(e), V(e)
 }
 
 function G(e) {
@@ -110,7 +110,7 @@ function G(e) {
     applicationId: t,
     branchId: n
   } = e;
-  C.set((0, _.Tu)(t, n), "Repair"), M(t, n, !1, "Repair")
+  C.set((0, _.Tu)(t, n), "Repair"), k(t, n, !1, "Repair")
 }
 
 function B(e) {
@@ -119,15 +119,15 @@ function B(e) {
     branchId: n,
     automatic: r
   } = e;
-  M(t, n, r, "Patch")
+  k(t, n, r, "Patch")
 }
 
-function V(e) {
+function Z(e) {
   let {
     applicationId: t,
     branchId: n
   } = e;
-  k(t, n)
+  j(t, n)
 }
 
 function F(e) {
@@ -136,10 +136,10 @@ function F(e) {
     branchId: n
   } = e, r = x(t, n);
   if (r < 1) return !1;
-  v.splice(0, 0, v.splice(r, 1)[0]), L(), T && p.Z.resume(), w()
+  v.splice(0, 0, v.splice(r, 1)[0]), L(), T && p.Z.resume(), P()
 }
 
-function Z(e) {
+function V(e) {
   let {
     applicationId: t,
     branchId: n
@@ -175,7 +175,7 @@ function H(e) {
       return r = !0, !1
     }
     return !0
-  }), L(), (r || n !== T) && w()
+  }), L(), (r || n !== T) && P()
 }
 
 function Y() {
@@ -201,7 +201,7 @@ function W(e) {
           application_id: t,
           branch_id: n
         } = e;
-        k(t, n)
+        j(t, n)
       }
     }
   }
@@ -210,7 +210,7 @@ function W(e) {
 function K() {
   for (let e of u.ZP.getRunningDiscordApplicationIds()) c.al(e, e);
   let e = u.ZP.getVisibleGame();
-  return T || null == e || e.pid === P || c.wO(), P = null == e ? null : e.pid, !1
+  return T || null == e || e.pid === R || c.wO(), R = null == e ? null : e.pid, !1
 }
 
 function z() {
@@ -221,13 +221,13 @@ function q() {
   s.K.remove(O), (0, h.isDesktop)() && p.Z.pause()
 }
 
-function X(e) {
+function $(e) {
   return e.map(e => "string" == typeof e ? {
     comboId: e,
     action: "Patch"
   } : e)
 }
-class Q extends(r = o.ZP.Store) {
+class X extends(r = o.ZP.Store) {
   initialize() {
     var e;
     let t = null != (e = s.K.get(O)) ? e : {
@@ -235,7 +235,7 @@ class Q extends(r = o.ZP.Store) {
       paused: null,
       userActions: null
     };
-    null != t.queue && (v = X(t.queue)), null != t.paused && (T = t.paused), null != t.userActions && (C = new Map(Array.from(t.userActions))), this.waitFor(m.Z, u.ZP), this.syncWith([u.ZP], K), this.waitFor(m.Z)
+    null != t.queue && (v = $(t.queue)), null != t.paused && (T = t.paused), null != t.userActions && (C = new Map(Array.from(t.userActions))), this.waitFor(m.Z, u.ZP), this.syncWith([u.ZP], K), this.waitFor(m.Z)
   }
   get activeItems() {
     return v.map(e => {
@@ -255,18 +255,18 @@ class Q extends(r = o.ZP.Store) {
     return x(e, t)
   }
   isCorruptInstallation() {
-    return R
+    return w
   }
 }
-b(Q, "displayName", "DispatchManagerStore");
-let J = new Q(l.Z, {
-  DISPATCH_APPLICATION_INSTALL: j,
+b(X, "displayName", "DispatchManagerStore");
+let Q = new X(l.Z, {
+  DISPATCH_APPLICATION_INSTALL: M,
   DISPATCH_APPLICATION_UPDATE: B,
   DISPATCH_APPLICATION_UNINSTALL: U,
-  DISPATCH_APPLICATION_CANCEL: V,
+  DISPATCH_APPLICATION_CANCEL: Z,
   DISPATCH_APPLICATION_REPAIR: G,
   DISPATCH_APPLICATION_MOVE_UP: F,
-  DISPATCH_APPLICATION_REMOVE_FINISHED: Z,
+  DISPATCH_APPLICATION_REMOVE_FINISHED: V,
   DISPATCH_APPLICATION_STATE_UPDATE: H,
   DISPATCH_APPLICATION_ERROR: W,
   CONNECTION_OPEN: z,

@@ -1,4 +1,5 @@
-/** Chunk was on 94313 **/
+/** Chunk was on web.js **/
+"use strict";
 e.exports = {
   productCard: "productCard__79d38",
   solidBackground: "solidBackground__79d38",

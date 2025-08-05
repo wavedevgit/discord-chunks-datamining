@@ -72,31 +72,31 @@ function b(e) {
     action: A,
     onClose: N,
     onFocus: C,
-    className: R,
-    focusedClassName: P,
-    subMenuIconClassName: w,
+    className: w,
+    focusedClassName: R,
+    subMenuIconClassName: P,
     dontCloseOnActionIfHoldingShiftKey: D,
     dontCloseOnAction: L,
     iconProps: x,
-    sparkle: M
+    sparkle: k
   } = e, {
-    onSelect: k,
-    onInteraction: j
+    onSelect: j,
+    onInteraction: M
   } = i.useContext(c.p), U = i.useRef(null), G = i.useCallback(e => {
     var t;
-    if (null == j || j({
+    if (null == M || M({
         type: c.U.DEFAULT
       }), null == A) return !1;
-    e.shiftKey && D || L || N(), e.persist(), null == k || k(), (null != (t = e.nativeEvent.view) ? t : window).requestAnimationFrame(() => A(e))
-  }, [A, N, k, D, L, j]);
+    e.shiftKey && D || L || N(), e.persist(), null == j || j(), (null != (t = e.nativeEvent.view) ? t : window).requestAnimationFrame(() => A(e))
+  }, [A, N, j, D, L, M]);
   return i.useEffect(() => {
     T && ((0, u.F)(U), null == C || C())
   }, [T, C]), (0, r.jsxs)(s.P, E(m({
     innerRef: U,
-    className: o()(p.item, p.labelContainer, _._[t], R, {
+    className: o()(p.item, p.labelContainer, _._[t], w, {
       [p.disabled]: I,
       [p.focused]: T,
-      [null != P ? P : ""]: T
+      [null != R ? R : ""]: T
     }),
     onClick: I ? void 0 : G,
     "aria-disabled": I
@@ -136,8 +136,8 @@ function b(e) {
       children: [(0, r.jsx)(f.Fbu, {
         size: "md",
         color: "currentColor",
-        className: o()(p.caret, w)
-      }), M && (0, r.jsx)(f.K1N, {
+        className: o()(p.caret, P)
+      }), k && (0, r.jsx)(f.K1N, {
         className: p.sparkles
       })]
     })]

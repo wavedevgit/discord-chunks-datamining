@@ -94,11 +94,11 @@ let I = function(e) {
       } = await n.e("36427").then(n.bind(n, 196738));
       return t => (0, r.jsx)(e, y({}, t))
     })
-  }, []), R = null != O ? "@game ".concat(O.name) : void 0;
+  }, []), w = null != O ? "@game ".concat(O.name) : void 0;
   return (0, r.jsx)(l.DY3, {
     element: "span",
-    text: R,
-    "aria-label": R,
+    text: w,
+    "aria-label": w,
     delay: 750,
     children: (0, r.jsxs)(h.Z, {
       onClick: null != O ? N : C,

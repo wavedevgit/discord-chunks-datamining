@@ -1,6 +1,6 @@
 /** Chunk was on 27434 **/
 e.d(n, {
-  Z: () => u
+  Z: () => s
 });
 var l = e(255367);
 e(73800);
@@ -10,7 +10,7 @@ var i = e(442837),
   a = e(924301),
   c = e(388032);
 
-function u(t) {
+function s(t) {
   let n = (0, i.e7)([a.ZP], () => a.ZP.getGuildScheduledEvent(t), [t]);
   return null == t || null == n ? null : (0, l.jsx)(r.sNh, {
     id: "report-event",

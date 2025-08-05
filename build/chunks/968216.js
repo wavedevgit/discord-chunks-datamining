@@ -1,4 +1,5 @@
-/** Chunk was on 60173 **/
+/** Chunk was on web.js **/
+"use strict";
 e.exports = {
   activityItemButtonInnerClass: "activityItemButtonInnerClass__8a940",
   activityItem: "activityItem__8a940",

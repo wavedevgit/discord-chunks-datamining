@@ -1,22 +1,22 @@
-/** Chunk was on 70663 **/
+/** Chunk was on 92357 **/
 n.d(t, {
-  Z: () => s
+  Z: () => a
 });
 var r = n(255367);
 n(73800);
 var i = n(120356),
   l = n.n(i),
   o = n(682662),
-  a = n(287170);
+  s = n(287170);
 
-function s(e) {
+function a(e) {
   let {
     fullWidth: t
   } = e;
   return (0, r.jsx)(o.H, {
     children: (0, r.jsx)("div", {
-      className: l()(a.guildSeparator, {
-        [a.fullWidth]: t
+      className: l()(s.guildSeparator, {
+        [s.fullWidth]: t
       })
     })
   })

@@ -1,4 +1,4 @@
-/** Chunk was on 94312 **/
+/** Chunk was on 22988 **/
 e.exports = {
   body: "body_c01f07",
   publishListing: "publishListing_c01f07",

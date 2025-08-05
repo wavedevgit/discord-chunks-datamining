@@ -1,48 +1,48 @@
-/** Chunk was on 54433 **/
-n.d(t, {
-  Z: () => j
+/** Chunk was on 24329 **/
+t.d(r, {
+  Z: () => m
 });
-var i = n(255367);
-n(73800);
-var l = n(442837),
-  r = n(159691),
-  s = n(481060),
-  a = n(607070),
-  o = n(906732),
-  C = n(821982),
-  d = n(832149),
-  c = n(600164),
-  u = n(286961),
-  p = n(594174),
-  x = n(27034),
-  f = n(215023),
-  h = n(317112);
+var n = t(255367);
+t(73800);
+var i = t(442837),
+  l = t(159691),
+  o = t(481060),
+  a = t(607070),
+  s = t(906732),
+  d = t(821982),
+  C = t(832149),
+  c = t(600164),
+  u = t(286961),
+  p = t(594174),
+  _ = t(27034),
+  f = t(215023),
+  x = t(317112);
 
-function j(e) {
+function m(e) {
   let {
-    onClose: t,
-    selectedPromotionalDecoPurchaseRecord: n,
-    selectedGiftingPromotionReward: j
-  } = e, m = (0, l.e7)([p.default], () => p.default.getCurrentUser()), _ = (0, l.e7)([a.Z], () => a.Z.useReducedMotion), {
+    onClose: r,
+    selectedPromotionalDecoPurchaseRecord: t,
+    selectedGiftingPromotionReward: m
+  } = e, h = (0, i.e7)([p.default], () => p.default.getCurrentUser()), j = (0, i.e7)([a.Z], () => a.Z.useReducedMotion), {
     analyticsLocations: L
-  } = (0, o.ZP)(), y = s.EFr.SIZE_32, E = (0, C.Z)(null == j ? void 0 : j.assetId, y, !_), g = (0, u.Z)(), S = null == g ? void 0 : g.giftPurchaseConfirmation;
-  return null == n || null == S ? null : (0, i.jsx)(x.O3, {
-    children: (0, i.jsx)(s.mzw, {
+  } = (0, s.ZP)(), b = o.EFr.SIZE_32, g = (0, d.Z)(null == m ? void 0 : m.assetId, b, !j), y = (0, u.Z)(), S = null == y ? void 0 : y.giftPurchaseConfirmation;
+  return null == t || null == S ? null : (0, n.jsx)(_.O3, {
+    children: (0, n.jsx)(o.mzw, {
       align: c.Z.Align.CENTER,
       "data-migration-pending": !0,
-      children: (0, i.jsxs)("div", {
-        className: h.promotionalFooter,
-        children: [(0, i.jsx)(s.Xo$, {
-          "aria-label": null == m ? void 0 : m.username,
-          size: y,
-          src: null == m ? void 0 : m.getAvatarURL(void 0, (0, s.pxk)(y), !_),
-          avatarDecoration: E
-        }), (0, i.jsx)(r.zx, {
+      children: (0, n.jsxs)("div", {
+        className: x.promotionalFooter,
+        children: [(0, n.jsx)(o.Xo$, {
+          "aria-label": null == h ? void 0 : h.username,
+          size: b,
+          src: null == h ? void 0 : h.getAvatarURL(void 0, (0, o.pxk)(b), !j),
+          avatarDecoration: g
+        }), (0, n.jsx)(l.zx, {
           variant: "primary",
           text: S.collectRewardButtonText(),
           onClick: () => {
-            t(), (0, d.Z)({
-              product: n,
+            r(), (0, C.Z)({
+              product: t,
               shouldShowPromotionalExperience: !0,
               analyticsLocations: L,
               purchaseType: f.o8.PROMOTIONAL

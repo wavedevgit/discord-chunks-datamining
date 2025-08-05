@@ -1,28 +1,28 @@
 /** Chunk was on 51064 **/
 n.d(e, {
-  Z: () => b
+  Z: () => d
 }), n(388685);
 var r = n(255367);
 n(73800);
-var i = n(442837),
-  o = n(481060),
+var o = n(442837),
+  i = n(481060),
   c = n(144144),
   a = n(592125),
   l = n(496675),
   u = n(944486),
   s = n(585483),
   f = n(981631),
-  p = n(388032);
+  b = n(388032);
 
-function b(t, e, n) {
-  let [b, d] = (0, i.Wu)([u.Z, a.Z, l.Z], () => {
+function d(t, e, n) {
+  let [d, p] = (0, o.Wu)([u.Z, a.Z, l.Z], () => {
     let t = u.Z.getChannelId(e),
       n = a.Z.getChannel(t);
     return [t, null != n && (n.isPrivate() || l.Z.can(f.Plq.SEND_MESSAGES, n))]
   }, [e]), v = n === f.IlC.POPOUT;
-  return !d || v ? null : (0, r.jsx)(o.sNh, {
+  return !p || v ? null : (0, r.jsx)(i.sNh, {
     id: "mention",
-    label: p.intl.string(p.t.P8tvKC),
+    label: b.intl.string(b.t.P8tvKC),
     action: function() {
       let {
         id: e
@@ -30,7 +30,7 @@ function b(t, e, n) {
       s.S.dispatchToLastSubscribed(f.CkL.INSERT_TEXT, {
         plainText: n,
         rawText: "<@$".concat(e, ">")
-      }), null != b && c.Z.startTyping(b)
+      }), null != d && c.Z.startTyping(d)
     }
   })
 }

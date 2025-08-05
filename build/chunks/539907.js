@@ -129,7 +129,7 @@ function C(e) {
   }
 }
 
-function R(e, t, n) {
+function w(e, t, n) {
   if (null != e && e < 0 && ("top" === n.position || "bottom" === n.position) && null != t && Math.abs(e) < (null == t ? void 0 : t.offsetHeight) && null != n.style) {
     let t = "top" === n.position ? "bottom" : "top",
       r = n.style[t];
@@ -142,7 +142,7 @@ function R(e, t, n) {
   return n
 }
 
-function P(e) {
+function R(e) {
   let {
     targetRef: t,
     overrideTargetRect: n
@@ -150,9 +150,9 @@ function P(e) {
   return null != n ? n : (c()(null != t.current, "Invalid ref"), t.current.getBoundingClientRect())
 }
 
-function w(e, t) {
-  let n = P(e),
-    r = P(t);
+function P(e, t) {
+  let n = R(e),
+    r = R(t);
   return n.top === r.top && n.left === r.left
 }
 class D extends(r = a.Component) {
@@ -277,7 +277,7 @@ class D extends(r = a.Component) {
   calculatePositionStyle(e, t, n, r) {
     let {
       spacing: i = 0
-    } = this.props, a = P(this.props), o = n.getBoundingClientRect(), s = N(a, o.left, o.top);
+    } = this.props, a = R(this.props), o = n.getBoundingClientRect(), s = N(a, o.left, o.top);
     switch (e) {
       case "top":
         return this.getHorizontalAlignmentStyle(s, t, n, {
@@ -355,7 +355,7 @@ class D extends(r = a.Component) {
         }
       }
     }
-    return R(l, n, o)
+    return w(l, n, o)
   }
   componentDidMount() {
     var e, t;
@@ -370,7 +370,7 @@ class D extends(r = a.Component) {
     c()(null != i, "Missing elementRef"), null != n.current && v.set(i, n.current), _.S.subscribe(m.CkL.LAYER_POP_START, this.handleLayerPopStart), _.S.subscribe(m.CkL.LAYER_POP_COMPLETE, this.handleLayerPopComplete), null == i || null == (t = i.ownerDocument) || null == (e = t.defaultView) || e.addEventListener("resize", this.handleLayerPopComplete), null == r || r()
   }
   componentDidUpdate(e, t) {
-    if (S(e) === S(this.props) && w(e, this.props) || this.updatePosition(), t.position !== this.state.position) {
+    if (S(e) === S(this.props) && P(e, this.props) || this.updatePosition(), t.position !== this.state.position) {
       var n, r;
       null == (n = (r = this.props).onPositionChange) || n.call(r, this.state.position)
     }

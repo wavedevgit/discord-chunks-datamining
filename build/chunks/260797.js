@@ -1,4 +1,4 @@
-/** Chunk was on 94312 **/
+/** Chunk was on 22988 **/
 e.exports = {
   searchBar: "searchBar_cdb2b0",
   settingsHeader: "settingsHeader_cdb2b0",

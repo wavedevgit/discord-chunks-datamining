@@ -46,7 +46,7 @@ function C() {
   v = 1
 }
 
-function R(e) {
+function w(e) {
   let {
     updates: t
   } = e;
@@ -59,14 +59,14 @@ function R(e) {
   }), v = 2
 }
 
-function P(e) {
+function R(e) {
   let {
     guild: t
   } = e;
   E.delete(t.id)
 }
 
-function w(e) {
+function P(e) {
   let {
     sound: t
   } = e, n = E.get(t.guildId), r = null == n ? void 0 : n.findIndex(e => e.soundId === t.soundId);
@@ -93,14 +93,14 @@ function x() {
   O = 1
 }
 
-function M(e) {
+function k(e) {
   let {
     soundboardSounds: t
   } = e;
   E.set(p.X8, t), O = 2
 }
 
-function k(e) {
+function j(e) {
   var t, n, r;
   let {
     soundId: i,
@@ -109,7 +109,7 @@ function k(e) {
   b.set(i, o), T.set(a, s), a !== (null == (t = u.default.getCurrentUser()) ? void 0 : t.id) && (S = !0)
 }
 
-function j(e) {
+function M(e) {
   var t, n;
   let {
     soundId: r,
@@ -141,7 +141,7 @@ function B(e) {
   for (let e of y.keys()) null == r[e] && y.delete(e)
 }
 
-function V(e) {
+function Z(e) {
   let {
     settings: t
   } = e, {
@@ -161,7 +161,7 @@ function F(e) {
   y.has(t) ? y.delete(t) : y.add(t)
 }
 
-function Z(e) {
+function V(e) {
   let {
     soundboardStoreState: t
   } = e;
@@ -233,19 +233,19 @@ g(H, "displayName", "SoundboardStore");
 let Y = new H(s.Z, {
   LOGOUT: A,
   GUILD_SOUNDBOARD_FETCH: C,
-  GUILD_SOUNDBOARD_SOUND_CREATE: w,
-  GUILD_SOUNDBOARD_SOUND_UPDATE: w,
+  GUILD_SOUNDBOARD_SOUND_CREATE: P,
+  GUILD_SOUNDBOARD_SOUND_UPDATE: P,
   GUILD_SOUNDBOARD_SOUND_DELETE: L,
-  GUILD_SOUNDBOARD_SOUND_PLAY_START: k,
-  GUILD_SOUNDBOARD_SOUND_PLAY_END: j,
+  GUILD_SOUNDBOARD_SOUND_PLAY_START: j,
+  GUILD_SOUNDBOARD_SOUND_PLAY_END: M,
   GUILD_SOUNDBOARD_SOUNDS_UPDATE: D,
   USER_SOUNDBOARD_SET_VOLUME: G,
   VOICE_CHANNEL_SELECT: N,
-  USER_SETTINGS_PROTO_UPDATE: V,
+  USER_SETTINGS_PROTO_UPDATE: Z,
   SOUNDBOARD_FETCH_DEFAULT_SOUNDS: x,
-  SOUNDBOARD_FETCH_DEFAULT_SOUNDS_SUCCESS: M,
-  SOUNDBOARD_SOUNDS_RECEIVED: R,
-  GUILD_DELETE: P,
+  SOUNDBOARD_FETCH_DEFAULT_SOUNDS_SUCCESS: k,
+  SOUNDBOARD_SOUNDS_RECEIVED: w,
+  GUILD_DELETE: R,
   AUDIO_TOGGLE_LOCAL_SOUNDBOARD_MUTE: F,
-  OVERLAY_INITIALIZE: Z
+  OVERLAY_INITIALIZE: V
 })

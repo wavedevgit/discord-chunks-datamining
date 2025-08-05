@@ -88,10 +88,10 @@ function T(e) {
       analyticsLocations: A,
       analyticsObject: N,
       giftRecipient: C,
-      variantsReturnStyle: R
+      variantsReturnStyle: w
     } = e,
-    P = !1,
-    w = (0, i.Z)(),
+    R = !1,
+    P = (0, i.Z)(),
     D = e => {
       t = e
     },
@@ -122,7 +122,7 @@ function T(e) {
       returnRef: n
     } = e, i = b(e, ["onClose", "returnRef"]);
     return (0, r.jsx)(_.Z, E(m({}, i), {
-      loadId: w,
+      loadId: P,
       skuId: f,
       isGift: h,
       giftMessage: g,
@@ -133,7 +133,7 @@ function T(e) {
         t(), null == T || T(e)
       },
       onComplete: () => {
-        P = !0, null == S || S()
+        R = !0, null == S || S()
       },
       returnRef: n,
       onStepChange: D
@@ -141,15 +141,15 @@ function T(e) {
   }, {
     modalKey: L,
     onCloseCallback: () => {
-      P || d.default.track(p.rMx.PAYMENT_FLOW_CANCELED, {
-        load_id: w,
+      R || d.default.track(p.rMx.PAYMENT_FLOW_CANCELED, {
+        load_id: P,
         payment_type: p.Zuq[p.GZQ.ONE_TIME],
         location: N,
         is_gift: h,
         sku_id: f,
         location_stack: A
-      }), (0, s.fw)(), (0, l.p)(), null == T || T(P), P && (0, c.qg)({
-        variantsReturnStyle: R,
+      }), (0, s.fw)(), (0, l.p)(), null == T || T(R), R && (0, c.qg)({
+        variantsReturnStyle: w,
         location: "openCollectiblesPaymentModal"
       })
     },
