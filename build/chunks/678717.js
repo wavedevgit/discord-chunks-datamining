@@ -114,7 +114,7 @@ function eo(e) {
     }), e.push({
       id: "quick_actions",
       name: "Quick Actions",
-      group: ea.v0.NONE,
+      group: ea.v0.DEVELOPMENT,
       render: () => (0, n.jsx)(K.Z, {})
     }), e.push({
       id: "end_to_end_encryption",
