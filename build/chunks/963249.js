@@ -127,7 +127,7 @@ function A(e) {
         initialPlanId: t,
         followupSKUInfo: i,
         onClose: (e, t) => {
-          a(), null == y || y(e), e && (null == S || S(), (0, _.I)(D, q, t) && m.S.dispatch(E.CkL.PREMIUM_SUBSCRIPTION_CREATED)), l.Z.dispatch({
+          m.S.dispatch(E.CkL.PREMIUM_PAYMENT_MODAL_CLOSED), a(), null == y || y(e), e && (null == S || S(), (0, _.I)(D, q, t) && m.S.dispatch(E.CkL.PREMIUM_SUBSCRIPTION_CREATED)), l.Z.dispatch({
             type: "PREMIUM_PAYMENT_MODAL_CLOSE",
             didSucceed: e
           })
@@ -154,6 +154,9 @@ function A(e) {
       }))
     }
   }, {
+    onCloseRequest: () => {
+      m.S.dispatch(E.CkL.PREMIUM_PAYMENT_MODAL_CLOSED), (0, s.Mr3)(X)
+    },
     modalKey: X,
     onCloseCallback: () => {
       W || h.default.track(E.rMx.PAYMENT_FLOW_CANCELED, {

@@ -34,9 +34,9 @@ function E(e) {
     } = e,
     {
       activeSubscription: O,
-      paymentSources: w,
-      paymentSourceId: Z,
-      selectedPlan: P,
+      paymentSources: P,
+      paymentSourceId: w,
+      selectedPlan: Z,
       selectedSkuId: I,
       step: M,
       updatedSubscription: R,
@@ -57,13 +57,13 @@ function E(e) {
       confirmationFooter: W
     } = (0, f.zb)(),
     z = null != W,
-    Y = (0, C.id)(P, N, F),
+    Y = (0, C.id)(Z, N, F),
     K = (0, d.Z)(),
-    V = (0, C.a5)(P),
+    V = (0, C.a5)(Z),
     q = (0, C.tK)(null == D ? void 0 : D.skuId),
-    J = (0, _.$)(w, Z),
+    J = (0, _.$)(P, w),
     Q = N && null != D && V;
-  s()(null != P, "Expected plan to selected"), s()(null != I, "Expected selectedSkuId"), s()(null != M, "Step should be set");
+  s()(null != Z, "Expected plan to selected"), s()(null != I, "Expected selectedSkuId"), s()(null != M, "Step should be set");
   let X = r.useCallback(() => {
     n(), null == E || E()
   }, [n, E]);
@@ -75,11 +75,11 @@ function E(e) {
     null != K && null != K.reminderNotice && Y && (0, o.wH)(a.z.GIFTING_PROMOTION_REMINDER, K.dismissibleContentVersion, {
       dismissAction: y.L.INDIRECT_ACTION
     })
-  }, [K, Y]), t = null != g ? g(P, X, R) : null != v ? (0, i.jsx)(c.VY, {}) : N ? (0, i.jsx)(c.TB, {
-    planId: P.id,
+  }, [K, Y]), t = null != g ? g(Z, X, R) : null != v ? (0, i.jsx)(c.VY, {}) : N ? (0, i.jsx)(c.TB, {
+    planId: Z.id,
     onClose: X
-  }) : T.current === P.id ? (0, i.jsx)(c.ZP, {
-    planId: P.id,
+  }) : T.current === Z.id ? (0, i.jsx)(c.ZP, {
+    planId: Z.id,
     postSuccessGuild: b,
     onClose: X,
     paymentSourceType: J,
@@ -88,9 +88,9 @@ function E(e) {
   }) : (0, i.jsx)(c.ZP, {
     followupSKUInfo: S,
     startingPremiumSubscriptionPlanId: T.current,
-    planId: P.id,
+    planId: Z.id,
     onClose: X,
-    isDowngrade: null != O && (0, p.GY)(O, P.id, l),
+    isDowngrade: null != O && (0, p.GY)(O, Z.id, l),
     paymentSourceType: J,
     hideClose: z,
     startingFractionalPremiumEndsAt: A.current

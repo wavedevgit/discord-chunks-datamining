@@ -27,13 +27,13 @@ let _ = {
       onFetchStart: h,
       onFetchSuccess: y,
       searchMode: f = u.QIO.NEWEST
-    } = e, S = (0, c.kG)(n), E = (0, c.$G)(S);
+    } = e, S = (0, c.kG)(n), b = (0, c.$G)(S);
     ! function(e) {
       if (!Array.isArray(e.pinned)) return;
       let t = e.pinned.some(e => !0 === e);
       e.pinned = t
-    }(E);
-    let b = function(e) {
+    }(b);
+    let E = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var r = null != arguments[t] ? arguments[t] : {},
             n = Object.keys(r);
@@ -50,13 +50,13 @@ let _ = {
           })
         }
         return e
-      }({}, E, (0, c.zH)(f)),
+      }({}, b, (0, c.zH)(f)),
       g = (0, c.s5)(t);
-    null != g && (0, c.jW)(b, g);
+    null != g && (0, c.jW)(E, g);
     let O = o.Z.create({
       id: (0, c.Tm)(t),
       searchContext: t,
-      searchQuery: b,
+      searchQuery: E,
       searchTabs: r,
       getLimit: p,
       pagination: l,
@@ -65,7 +65,7 @@ let _ = {
     null == h || h({
       searchContext: t,
       searchQueryString: n,
-      searchQuery: b
+      searchQuery: E
     });
     let m = r.map(e => _(e));
     return s.Z.dispatch({

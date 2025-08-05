@@ -49,8 +49,8 @@ function y(e) {
     }, t)
   };
   s()(null != l, "Expected plan to selected"), s()(null != y, "Expected selectedSkuId"), s()(null != E, "Step should be set");
-  let w = null == S ? void 0 : S.map(e => O(e)),
-    Z = null != b && null != v ? (0, i.jsx)(C.Z, {
+  let P = null == S ? void 0 : S.map(e => O(e)),
+    w = null != b && null != v ? (0, i.jsx)(C.Z, {
       avatarDecorationOverride: {
         asset: b.assetId
       },
@@ -58,7 +58,7 @@ function y(e) {
       guildId: null,
       avatarSize: o.EFr.SIZE_152
     }) : null,
-    P = (0, i.jsx)(j.O3, {
+    Z = (0, i.jsx)(j.O3, {
       children: (0, i.jsx)(o.mzw, {
         className: L.modalFooter,
         children: (0, i.jsx)(c.y, {
@@ -99,14 +99,14 @@ function y(e) {
         padding: {
           top: 24
         },
-        children: [Z, (0, i.jsx)(o.Kqy, {
+        children: [w, (0, i.jsx)(o.Kqy, {
           gap: 8,
           padding: {
             top: 12
           },
-          children: w
+          children: P
         })]
       })
-    }), P]
+    }), Z]
   })
 }

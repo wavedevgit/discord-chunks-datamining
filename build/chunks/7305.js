@@ -28,9 +28,9 @@ var i = n(255367),
   S = n(518727),
   v = n(293858),
   O = n(183813),
-  w = n(614223),
-  Z = n(174827),
-  P = n(846464),
+  P = n(614223),
+  w = n(174827),
+  Z = n(846464),
   I = n(184160),
   M = n(48175),
   R = n(981631),
@@ -74,9 +74,9 @@ function G(e) {
     openInvoiceId: b,
     onSubscriptionConfirmation: v,
     renderPurchaseConfirmation: O,
-    postSuccessGuild: w,
-    followupSKUInfo: Z,
-    renderHeader: P,
+    postSuccessGuild: P,
+    followupSKUInfo: w,
+    renderHeader: Z,
     applicationId: I,
     guildId: M,
     referralTrialOfferId: A,
@@ -121,9 +121,9 @@ function G(e) {
       openInvoiceId: b,
       onSubscriptionConfirmation: v,
       renderPurchaseConfirmation: O,
-      postSuccessGuild: w,
-      followupSKUInfo: Z,
-      renderHeader: P,
+      postSuccessGuild: P,
+      followupSKUInfo: w,
+      renderHeader: Z,
       applicationId: I,
       guildId: M,
       referralTrialOfferId: A,
@@ -154,7 +154,7 @@ function B(e) {
     isGift: d,
     skuId: o,
     referralTrialOfferId: s
-  }), x = (0, w.Fv)(p), h = (0, u.id)(C, d, c);
+  }), x = (0, P.Fv)(p), h = (0, u.id)(C, d, c);
   return (0, i.jsx)(y.J, (t = U({}, e), n = n = {
     breadcrumbSteps: k,
     onReturn: () => {
@@ -180,7 +180,7 @@ let H = [{
   renderStep: e => (0, i.jsx)(L.I, U({}, e))
 }, {
   key: m.h8.SKU_SELECT,
-  renderStep: e => (0, i.jsx)(P.q, U({}, e)),
+  renderStep: e => (0, i.jsx)(Z.q, U({}, e)),
   options: {
     renderHeader: !1,
     hideSlider: !0,
@@ -195,10 +195,10 @@ let H = [{
   }
 }, {
   key: m.h8.PLAN_SELECT,
-  renderStep: e => (0, i.jsx)(Z.x, U({}, e)),
+  renderStep: e => (0, i.jsx)(w.x, U({}, e)),
   options: {
     renderHeader: !0,
-    useBreadcrumbLabel: e => (0, w.Fv)(e) ? null : A.intl.string(A.t["r+SebW"]),
+    useBreadcrumbLabel: e => (0, P.Fv)(e) ? null : A.intl.string(A.t["r+SebW"]),
     sectionHeaderText: () => A.intl.string(A.t.UKbp1N)
   }
 }, {
@@ -206,7 +206,7 @@ let H = [{
   renderStep: e => (0, i.jsx)(B, U({}, e)),
   options: {
     renderHeader: !0,
-    useBreadcrumbLabel: e => (0, w.Fv)(e) ? null : A.intl.string(A.t.Sb6wIy)
+    useBreadcrumbLabel: e => (0, P.Fv)(e) ? null : A.intl.string(A.t.Sb6wIy)
   }
 }, {
   key: m.h8.AWAITING_PURCHASE_TOKEN_AUTH,
@@ -219,7 +219,7 @@ let H = [{
   renderStep: e => (0, i.jsx)(b.l, U({}, e)),
   options: {
     renderHeader: !0,
-    useBreadcrumbLabel: e => (0, w.Fv)(e) ? A.intl.string(A.t.UKbp1N) : A.intl.string(A.t.QBnNHh)
+    useBreadcrumbLabel: e => (0, P.Fv)(e) ? A.intl.string(A.t.UKbp1N) : A.intl.string(A.t.QBnNHh)
   }
 }, {
   key: m.h8.CONFIRM,

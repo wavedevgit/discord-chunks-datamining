@@ -34,9 +34,9 @@ let _ = i.memo(function(e) {
     }(e, ["children", "isOverlay", "contextGuildId"]);
   let [y, f] = i.useState({
     maskImage: "none"
-  }), S = i.useRef(null), E = (0, l.Z)(() => {
+  }), S = i.useRef(null), b = (0, l.Z)(() => {
     var e, t, r, n;
-    let i = null != (r = null == (e = b.current) ? void 0 : e.getBoundingClientRect()) ? r : null,
+    let i = null != (r = null == (e = E.current) ? void 0 : e.getBoundingClientRect()) ? r : null,
       s = null != (n = null == (t = S.current) ? void 0 : t.getBoundingClientRect()) ? n : null;
     if (_ || null == i || null == s) return void f({
       maskImage: "none"
@@ -49,10 +49,10 @@ let _ = i.memo(function(e) {
     f({
       maskImage: "linear-gradient(to right, rgba(0, 0, 0, 1) 0, rgba(0, 0, 0, 0) ".concat(c, "px)")
     })
-  }), b = (0, c.y)(E), g = (0, o.yF)(h.userId, p);
+  }), E = (0, c.y)(b), g = (0, o.yF)(h.userId, p);
   return (0, n.jsxs)("div", {
     className: a()(d.container, _ && d.isOverlayContainer),
-    ref: b,
+    ref: E,
     children: [(0, n.jsx)("div", {
       className: d.usernameContainer,
       children: s

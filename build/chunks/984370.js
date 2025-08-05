@@ -1,7 +1,7 @@
 /** Chunk was on 93239 **/
 r.d(t, {
   O: () => R,
-  Z: () => I
+  Z: () => C
 }), r(35282);
 var n = r(255367);
 r(73800);
@@ -19,8 +19,8 @@ var i = r(873546),
   y = r(979651),
   f = r(358085),
   S = r(998502),
-  E = r(665149),
-  b = r(981631),
+  b = r(665149),
+  E = r(981631),
   g = r(176505),
   O = r(220705);
 
@@ -74,11 +74,11 @@ function P(e) {
     transparent: m = !1,
     showToolbar: j = !0,
     toolbar: P,
-    mobileToolbar: v,
-    "aria-label": x,
-    "aria-labelledby": I,
-    scrollable: Z,
-    role: C,
+    mobileToolbar: x,
+    "aria-label": v,
+    "aria-labelledby": C,
+    scrollable: I,
+    role: Z,
     hideSearch: A,
     showDivider: N,
     disableDoubleClick: T
@@ -92,20 +92,20 @@ function P(e) {
   } = (0, u.Z)({
     location: "HeaderBar"
   });
-  return (0, n.jsx)(E.ZP, {
+  return (0, n.jsx)(b.ZP, {
     className: r,
     innerClassName: S,
     toolbar: function() {
       if (null == P) return null;
       let e = null != c && !A;
-      return i.tq ? v : (0, n.jsxs)(n.Fragment, {
+      return i.tq ? x : (0, n.jsxs)(n.Fragment, {
         children: [P, e && !(0, g.AB)(c) ? (0, n.jsx)(p.Z, {
           guildId: f,
           channelId: c,
           className: O.search
-        }, null != f ? f : c) : null, N && (0, n.jsx)(E.ZP.Divider, {}), H && !k ? (0, n.jsx)(_.Z, {}) : null, L && w && null != M && !D && l === b.d4z.GROUP_DM && (0, n.jsxs)("div", {
+        }, null != f ? f : c) : null, N && (0, n.jsx)(b.ZP.Divider, {}), H && !k ? (0, n.jsx)(_.Z, {}) : null, L && w && null != M && !D && l === E.d4z.GROUP_DM && (0, n.jsxs)("div", {
           className: O.controlButtonWrapper,
-          children: [(0, n.jsx)(E.ZP.Divider, {}), (0, n.jsx)(h.Z, {
+          children: [(0, n.jsx)(b.ZP.Divider, {}), (0, n.jsx)(h.Z, {
             onClick: () => a.Z.toggleParticipantsList(M, !D)
           })]
         })]
@@ -114,15 +114,15 @@ function P(e) {
     transparent: m,
     showToolbar: j,
     onDoubleClick: () => R(T),
-    "aria-label": x,
-    "aria-labelledby": I,
-    role: C,
-    scrollable: Z,
+    "aria-label": v,
+    "aria-labelledby": C,
+    role: Z,
+    scrollable: I,
     children: t
   })
 }
 
-function v(e) {
+function x(e) {
   let {
     children: t,
     className: r,
@@ -131,7 +131,7 @@ function v(e) {
     role: a,
     disableDoubleClick: c
   } = e;
-  return (0, n.jsx)(E.ZP, {
+  return (0, n.jsx)(b.ZP, {
     className: r,
     onDoubleClick: () => R(c),
     "aria-label": i,
@@ -141,7 +141,7 @@ function v(e) {
   })
 }
 
-function x(e) {
+function v(e) {
   var {
     isAuthenticated: t = !0
   } = e, r = function(e, t) {
@@ -166,10 +166,10 @@ function x(e) {
     value: i,
     children: t ? (0, n.jsx)(P, j(m({}, r), {
       className: r.className
-    })) : (0, n.jsx)(v, j(m({}, r), {
+    })) : (0, n.jsx)(x, j(m({}, r), {
       className: r.className
     }))
   })
 }
-x.Title = E.ZP.Title, x.Icon = E.ZP.Icon, x.ChannelIcon = E.ZP.ChannelIcon, x.Divider = E.ZP.Divider, x.Caret = E.ZP.Caret;
-let I = x
+v.Title = b.ZP.Title, v.Icon = b.ZP.Icon, v.ChannelIcon = b.ZP.ChannelIcon, v.Divider = b.ZP.Divider, v.Caret = b.ZP.Caret;
+let C = v
