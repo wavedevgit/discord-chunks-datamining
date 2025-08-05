@@ -18,8 +18,8 @@ var r = n(255367),
   g = n(79390),
   h = n(35463),
   j = n(489887),
-  v = n(185923),
-  w = n(957825),
+  w = n(185923),
+  v = n(957825),
   x = n(388032),
   O = n(687852);
 
@@ -138,7 +138,7 @@ function R(e) {
       className: O.emojiPicker,
       children: (0, r.jsx)(f.Z, {
         channel: R,
-        pickerIntention: v.Hz.POLLS,
+        pickerIntention: w.Hz.POLLS,
         closePopout: t,
         onNavigateAway: t,
         onSelectEmoji: e => {
@@ -174,7 +174,7 @@ function R(e) {
       color: "currentColor",
       className: O.expressionPickerIconDefault
     })
-  }), Z = i()(w.CT, O.expressionPickerButtonDefault, {
+  }), Z = i()(v.CT, O.expressionPickerButtonDefault, {
     [O.canEditMedia]: I
   });
   return (0, r.jsx)(c.yRy, {
@@ -284,8 +284,8 @@ let k = a.forwardRef(function(e, t) {
     onEmojiSelect: m,
     onEmojiRemove: p,
     canRemoveAnswer: h,
-    onRemoveAnswer: v,
-    addAnswer: w,
+    onRemoveAnswer: w,
+    addAnswer: v,
     submitPoll: y,
     answerTextInputRefs: C,
     error: _,
@@ -299,12 +299,12 @@ let k = a.forwardRef(function(e, t) {
     switch (e.key.toLowerCase()) {
       case "enter":
         var r;
-        u && (e.preventDefault(), ((0, g.cS)(l) || "macos" !== (0, b.getOS)() ? t : n) ? (e.stopPropagation(), y()) : w()), null == (r = C.current[o + 1]) || r.focus();
+        u && (e.preventDefault(), ((0, g.cS)(l) || "macos" !== (0, b.getOS)() ? t : n) ? (e.stopPropagation(), y()) : v()), null == (r = C.current[o + 1]) || r.focus();
         break;
       case "e":
         ("macos" === (0, b.getOS)() ? n : t) && (e.preventDefault(), e.stopPropagation(), B())
     }
-  }, [w, l, C, o, u, y, B]), Z = (0, r.jsx)(R, {
+  }, [v, l, C, o, u, y, B]), Z = (0, r.jsx)(R, {
     containerRef: D,
     channelId: n,
     buttonImage: l.image,
@@ -349,7 +349,7 @@ let k = a.forwardRef(function(e, t) {
         id: I
       })]
     }), h && (0, r.jsx)(c.P3F, {
-      onClick: () => v(o),
+      onClick: () => w(o),
       className: O.removeAnswerButtonDefault,
       "aria-label": x.intl.formatToPlainString(x.t["22fjER"], {
         answerNumber: o + 1

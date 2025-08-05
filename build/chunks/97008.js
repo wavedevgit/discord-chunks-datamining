@@ -36,7 +36,8 @@ class s {
       return new r.nH({
         file: u,
         platform: i.ow.WEB,
-        isThumbnail: !1
+        isThumbnail: !1,
+        origin: "unknown:canvas_export"
       }, n)
     }
     throw Error("DiscordCanvas: ".concat(n, " is not a valid export format."))

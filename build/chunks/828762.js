@@ -164,6 +164,7 @@ class V {
       let n = new s.nH({
         id: t.id,
         platform: d.ow.WEB,
+        origin: "unknown:guild_product_attachment",
         file: {
           name: t.filename,
           lastModified: 0,

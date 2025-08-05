@@ -1,7 +1,8 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  ZP: () => f,
+  BS: () => f,
+  ZP: () => _,
   ow: () => u,
   rG: () => d
 }), n(953529);
@@ -27,7 +28,10 @@ var u = function(e) {
 function d(e) {
   return void 0 !== e.isVideo && void 0 !== e.isImage
 }
-class f extends r.EventEmitter {
+var f = function(e) {
+  return e[e.FILE_ATTACHMENT = 0] = "FILE_ATTACHMENT", e[e.IMAGE_PICKER = 1] = "IMAGE_PICKER", e
+}({});
+class _ extends r.EventEmitter {
   cancel() {}
   resetState() {
     return this
