@@ -449,7 +449,7 @@ function Q(e) {
       queryString: n,
       query: r
     } = e;
-    R.Z.refreshSearchQueryAnalyticsId(t), (0, k.tI)({
+    R.ZP.refreshSearchQueryAnalyticsId(t), (0, k.tI)({
       searchContext: t,
       query: r,
       queryString: n
@@ -501,7 +501,7 @@ function U(e) {
       query: r,
       searchEverywhere: s
     } = e;
-    R.Z.refreshSearchQueryAnalyticsId(t), (0, k.tI)({
+    R.ZP.refreshSearchQueryAnalyticsId(t), (0, k.tI)({
       searchContext: t,
       query: r,
       queryString: n

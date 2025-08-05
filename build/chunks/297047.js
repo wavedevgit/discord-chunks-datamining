@@ -1,12 +1,12 @@
 /** Chunk was on 94470 **/
 n.d(t, {
-  Z: () => p,
-  q: () => g
+  Z: () => g,
+  q: () => h
 }), n(388685);
 var r = n(255367);
 n(73800);
-var l = n(442837),
-  i = n(481060),
+var i = n(442837),
+  l = n(481060),
   o = n(144144),
   u = n(592125),
   a = n(496675),
@@ -16,7 +16,7 @@ var l = n(442837),
   f = n(981631),
   b = n(388032);
 
-function g(e, t) {
+function h(e, t) {
   let {
     id: n
   } = e, r = "@".concat(s.ZP.getUserTag(e, {
@@ -28,17 +28,17 @@ function g(e, t) {
   }), null != t && o.Z.startTyping(t)
 }
 
-function p(e, t, n) {
-  let [o, d] = (0, l.Wu)([c.Z, u.Z, a.Z], () => {
+function g(e, t, n) {
+  let [o, d] = (0, i.Wu)([c.Z, u.Z, a.Z], () => {
     let e = c.Z.getChannelId(t),
       n = u.Z.getChannel(e);
     return [e, null != n && (n.isMultiUserDM() || a.Z.can(f.Plq.SEND_MESSAGES, n))]
   }, [t]), s = n === f.IlC.POPOUT;
-  return !d || s ? null : (0, r.jsx)(i.sNh, {
+  return !d || s ? null : (0, r.jsx)(l.sNh, {
     id: "mention",
     label: b.intl.string(b.t.P8tvKC),
     action: function() {
-      g(e, o)
+      h(e, o)
     }
   })
 }

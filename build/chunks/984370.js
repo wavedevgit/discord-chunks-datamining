@@ -1,6 +1,6 @@
 /** Chunk was on 93239 **/
 r.d(t, {
-  O: () => R,
+  O: () => j,
   Z: () => C
 }), r(35282);
 var n = r(255367);
@@ -43,7 +43,7 @@ function m(e) {
   return e
 }
 
-function j(e, t) {
+function P(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var r = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -55,7 +55,7 @@ function j(e, t) {
     Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r))
   }), e
 }
-async function R(e) {
+async function j(e) {
   if (!e && (0, f.isMac)() && f.isPlatformEmbedded) {
     var t, r, n;
     let e = null != (n = await (null == (t = (r = window.DiscordNative.remoteApp).getDefaultDoubleClickAction) ? void 0 : t.call(r))) ? n : "Maximize";
@@ -63,7 +63,7 @@ async function R(e) {
   }
 }
 
-function P(e) {
+function R(e) {
   let {
     children: t,
     className: r,
@@ -72,8 +72,8 @@ function P(e) {
     guildId: f,
     innerClassname: S,
     transparent: m = !1,
-    showToolbar: j = !0,
-    toolbar: P,
+    showToolbar: P = !0,
+    toolbar: R,
     mobileToolbar: x,
     "aria-label": v,
     "aria-labelledby": C,
@@ -96,10 +96,10 @@ function P(e) {
     className: r,
     innerClassName: S,
     toolbar: function() {
-      if (null == P) return null;
+      if (null == R) return null;
       let e = null != c && !A;
       return i.tq ? x : (0, n.jsxs)(n.Fragment, {
-        children: [P, e && !(0, g.AB)(c) ? (0, n.jsx)(p.Z, {
+        children: [R, e && !(0, g.AB)(c) ? (0, n.jsx)(p.Z, {
           guildId: f,
           channelId: c,
           className: O.search
@@ -112,8 +112,8 @@ function P(e) {
       })
     }(),
     transparent: m,
-    showToolbar: j,
-    onDoubleClick: () => R(T),
+    showToolbar: P,
+    onDoubleClick: () => j(T),
     "aria-label": v,
     "aria-labelledby": C,
     role: Z,
@@ -133,7 +133,7 @@ function x(e) {
   } = e;
   return (0, n.jsx)(b.ZP, {
     className: r,
-    onDoubleClick: () => R(c),
+    onDoubleClick: () => j(c),
     "aria-label": i,
     "aria-labelledby": s,
     role: a,
@@ -164,9 +164,9 @@ function v(e) {
   } = (0, l.ZP)(c.Z.HEADER_BAR);
   return (0, n.jsx)(l.Gt, {
     value: i,
-    children: t ? (0, n.jsx)(P, j(m({}, r), {
+    children: t ? (0, n.jsx)(R, P(m({}, r), {
       className: r.className
-    })) : (0, n.jsx)(x, j(m({}, r), {
+    })) : (0, n.jsx)(x, P(m({}, r), {
       className: r.className
     }))
   })

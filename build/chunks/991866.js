@@ -1,0 +1,2 @@
+/** Chunk was on 33706 **/
+u.exports = JSON.parse('{"i9e/u7":"D\xe9grad\xe9","2akt9v":"Wumpus","x68b1N":"N\xe9on","OpWJ3d":"Solide","rN7cub":"Sakura","JOpi7+":"Choisis ta couleur","cVTpnp":"Ajoute d\'abord des couleurs","NOGFdn":"Surprends-moi"}')

@@ -4,8 +4,8 @@ n.d(t, {
 });
 var r = n(255367);
 n(73800);
-var l = n(153867),
-  i = n(468026),
+var i = n(153867),
+  l = n(468026),
   o = n(394059),
   u = n(388032);
 
@@ -15,22 +15,22 @@ function a(e) {
     onConfirm: n
   } = e, a = function(e, t) {
     if (null == e) return {};
-    var n, r, l = function(e, t) {
+    var n, r, i = function(e, t) {
       if (null == e) return {};
-      var n, r, l = {},
-        i = Object.keys(e);
-      for (r = 0; r < i.length; r++) n = i[r], t.indexOf(n) >= 0 || (l[n] = e[n]);
-      return l
+      var n, r, i = {},
+        l = Object.keys(e);
+      for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+      return i
     }(e, t);
     if (Object.getOwnPropertySymbols) {
-      var i = Object.getOwnPropertySymbols(e);
-      for (r = 0; r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n])
+      var l = Object.getOwnPropertySymbols(e);
+      for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
     }
-    return l
+    return i
   }(e, ["type", "onConfirm"]);
   let c = t === o.K.STREAM ? u.intl.string(u.t["/lFMWl"]) : u.intl.string(u.t.xzxhZW),
     d = t === o.K.STREAM ? u.intl.string(u.t.xaOX7e) : u.intl.string(u.t.oU1p9P);
-  return (0, r.jsx)(i.default, function(e) {
+  return (0, r.jsx)(l.default, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -54,7 +54,7 @@ function a(e) {
     cancelText: u.intl.string(u.t["ETE/oK"]),
     onConfirm: n,
     onConfirmSecondary: () => {
-      l.ZP.updatedUnsyncedSettings({
+      i.ZP.updatedUnsyncedSettings({
         disableHideSelfStreamAndVideoConfirmationAlert: !0
       })
     },

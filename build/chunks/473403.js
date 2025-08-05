@@ -18,10 +18,10 @@ var c = n(442837),
   _ = n(111028),
   p = n(131016),
   b = n(7284),
-  m = n(727429),
-  v = n(810123),
-  g = n(690221),
-  h = n(430824),
+  h = n(727429),
+  m = n(810123),
+  v = n(690221),
+  g = n(430824),
   y = n(158776),
   E = n(111583),
   O = n(594174),
@@ -120,9 +120,9 @@ let D = e => {
       locked: l,
       hasActiveThreads: o,
       withGuildIcon: s
-    } = e, d = (0, c.e7)([h.Z], () => h.Z.getGuild(i.guild_id), [i.guild_id]), _ = i.type === S.d4z.DM || i.type === S.d4z.GROUP_DM, p = null;
-    if (s && null != d && !_) p = (0, r.jsx)(v.Z, {
-      size: v.E.SMALL_32,
+    } = e, d = (0, c.e7)([g.Z], () => g.Z.getGuild(i.guild_id), [i.guild_id]), _ = i.type === S.d4z.DM || i.type === S.d4z.GROUP_DM, p = null;
+    if (s && null != d && !_) p = (0, r.jsx)(m.Z, {
+      size: m.E.SMALL_32,
       className: w.iconContainerWithGuildIcon,
       iconClassName: w.iconWithGuildIcon,
       channel: i,
@@ -159,13 +159,13 @@ let D = e => {
       })
     }
     let b = s ? null == d ? void 0 : d.name : (0, f.bT)(i, d, l, o),
-      m = s && null != d ? "".concat(d.name, " - ").concat(b, " icon") : "".concat(b, " icon");
+      h = s && null != d ? "".concat(d.name, " - ").concat(b, " icon") : "".concat(b, " icon");
     return (0, r.jsx)(u.ua7, {
       text: b,
       delay: 500,
       children: e => (0, r.jsx)("div", T(A({}, e), {
         role: "img",
-        "aria-label": m,
+        "aria-label": h,
         className: a()(w.iconContainer, n),
         children: p
       }))
@@ -176,8 +176,8 @@ let D = e => {
     let {
       channel: s,
       name: f,
-      muted: v,
-      selected: h,
+      muted: m,
+      selected: g,
       connected: y,
       unread: E,
       locked: O,
@@ -222,7 +222,7 @@ let D = e => {
         for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
       }
       return i
-    }(en, ["role"]), el = i.useRef(null), ea = i.useRef(null), eo = (0, m.Z)(s), ec = S.Z5c.CHANNEL(eo, s.id), eu = (0, d.ZP)(s), es = null;
+    }(en, ["role"]), el = i.useRef(null), ea = i.useRef(null), eo = (0, h.Z)(s), ec = S.Z5c.CHANNEL(eo, s.id), eu = (0, d.ZP)(s), es = null;
     s.isPrivate() && 1 === (null != (n = s.rawRecipients) ? n : []).length && (es = (0, p.bN)(null == (l = s.rawRecipients[0]) ? void 0 : l.display_name_styles));
     let ed = (0, b.j)({
         displayNameStyles: es
@@ -233,7 +233,7 @@ let D = e => {
           [w.favoritesSuggestion]: J
         }),
         ref: ea,
-        children: (0, r.jsxs)(g.Z, T(A({
+        children: (0, r.jsxs)(v.Z, T(A({
           role: ef && !y ? "button" : "link",
           href: ef ? void 0 : ec,
           target: "_blank",
@@ -289,10 +289,10 @@ let D = e => {
       children: (0, r.jsxs)("div", {
         ref: t,
         className: a()(G, null != x || null != L || null != Z || H ? w.wrapper : w.notInteractive, (() => {
-          if (h) return a()(P.selectedChannel, j.SELECTED);
+          if (g) return a()(P.selectedChannel, j.SELECTED);
           if (y) return a()(P.selectedChannel, j.CONNECTED);
           if (O) return j.LOCKED;
-          if (v) return j.MUTED;
+          if (m) return j.MUTED;
           if (E)
             if (et) return j.UNREAD_IMPORTANT;
             else return j.UNREAD_LESS_IMPORTANT;
@@ -320,7 +320,7 @@ let D = e => {
         onContextMenu: e => null == M ? void 0 : M(e, s),
         onMouseEnter: B,
         onMouseLeave: Q,
-        children: [v || !E ? null : (0, r.jsx)("div", {
+        children: [m || !E ? null : (0, r.jsx)("div", {
           className: a()(w.unread, et ? w.unreadImportant : void 0)
         }), null != (c = null == k ? void 0 : k(e_)) ? c : e_]
       })

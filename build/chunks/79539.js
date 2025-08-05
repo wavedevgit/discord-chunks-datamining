@@ -1,9 +1,9 @@
 /** Chunk was on 94470 **/
 n.d(t, {
-  M: () => l
+  M: () => i
 });
 var r = n(877369);
 
-function l(e) {
+function i(e) {
   return r.fromByteArray(e)
 }

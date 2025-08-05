@@ -57,14 +57,14 @@ function E(e) {
     totalResults: E,
     isIndexing: O,
     isSearching: m,
-    documentsIndexed: j
-  } = e, R = (0, _.U)({
+    documentsIndexed: P
+  } = e, j = (0, _.U)({
     location: "SearchHeader"
-  }), P = (0, p.xd)({
+  }), R = (0, p.xd)({
     isXDMSearch: t.type === h.aib.DMS,
     location: "SearchHeader"
   }), x = (0, d.WJ)(t), v = (0, c.e7)([u.Z], () => u.Z.getSearchResultsQueryString(x)), C = i.useMemo(() => {
-    if (t.type === h.aib.DMS && R) {
+    if (t.type === h.aib.DMS && j) {
       var e, r;
       let t = (0, d.kG)(null != v ? v : ""),
         n = null != (r = null == (e = (0, d.$G)(t).channel_id) ? void 0 : e.length) ? r : 0;
@@ -73,7 +73,7 @@ function E(e) {
       }) : y.intl.string(y.t.tc619f)
     }
     return null
-  }, [R, t.type, v]), I = i.useMemo(() => [{
+  }, [j, t.type, v]), I = i.useMemo(() => [{
     label: y.intl.string(y.t.CbaapK),
     value: h.QIO.NEWEST
   }, {
@@ -104,9 +104,9 @@ function E(e) {
         subtitle: C,
         isIndexing: O,
         isSearching: m,
-        documentsIndexed: j
+        documentsIndexed: P
       })
-    }), P ? (0, n.jsxs)("div", {
+    }), R ? (0, n.jsxs)("div", {
       className: f.searchModeAndFiltersContainer,
       children: [(0, n.jsx)(l.q4e, {
         options: I,
@@ -154,7 +154,7 @@ function g(e) {
   } = e;
   return s ? (0, n.jsx)(m, {
     documentsIndexed: a
-  }) : i ? (0, n.jsx)(j, {}) : (0, n.jsx)(R, {
+  }) : i ? (0, n.jsx)(P, {}) : (0, n.jsx)(j, {
     totalResults: t,
     subtitle: r
   })
@@ -195,7 +195,7 @@ function m(e) {
   })
 }
 
-function j() {
+function P() {
   return (0, n.jsxs)(n.Fragment, {
     children: [(0, n.jsx)(l.Text, {
       variant: "text-md/medium",
@@ -205,7 +205,7 @@ function j() {
   })
 }
 
-function R(e) {
+function j(e) {
   let {
     totalResults: t,
     subtitle: r
