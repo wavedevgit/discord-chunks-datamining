@@ -1,30 +1,30 @@
 /** Chunk was on 54433 **/
-t.d(n, {
+n.d(t, {
   f: () => c
 });
-var i = t(255367),
-  r = t(442837),
-  l = t(481060),
-  s = t(607070),
-  a = t(987209),
-  o = t(286961),
-  C = t(897942),
-  d = t(263562);
+var i = n(255367),
+  r = n(442837),
+  l = n(481060),
+  s = n(607070),
+  a = n(987209),
+  o = n(286961),
+  C = n(897942),
+  d = n(263562);
 
 function c() {
   let e = (0, r.e7)([s.Z], () => s.Z.useReducedMotion),
     {
-      claimableRewards: n
+      claimableRewards: t
     } = (0, a.wD)(),
-    t = (0, o.Z)(),
-    c = null == t ? void 0 : t.planSelection;
-  return null == c || null == n || 0 === n.length ? null : (0, i.jsxs)("div", {
+    n = (0, o.Z)(),
+    c = null == n ? void 0 : n.planSelection;
+  return null == c || null == t || 0 === t.length ? null : (0, i.jsxs)("div", {
     className: d.container,
     children: [(0, i.jsx)("div", {
       className: d.avatar,
       children: (0, i.jsx)(C.Z, {
         maxRewardImageSrc: c.getImageUrl(!0, e),
-        claimableRewards: n,
+        claimableRewards: t,
         size: l.EFr.SIZE_48
       })
     }), (0, i.jsxs)("div", {
@@ -33,10 +33,10 @@ function c() {
         variant: "text-md/medium",
         color: "text-primary",
         children: c.heading()
-      }), null != c.subheading && n.length > 1 && (0, i.jsx)(l.Text, {
+      }), null != c.subheading && t.length > 1 && (0, i.jsx)(l.Text, {
         variant: "text-md/medium",
         className: d.subheading,
-        children: c.subheading(n.length)
+        children: c.subheading(t.length)
       })]
     })]
   })
