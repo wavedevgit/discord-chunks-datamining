@@ -1,6 +1,6 @@
 /**
   Module ID: 44799
-  Original File Name: b92354b1f5fb317a
+  Original File Name: 7fb62b573c3a7034
 **/
 .parentContainer__5573a {
     display: flex;
@@ -185,6 +185,31 @@
     }
 }
 
+.tooltipContainer__652ee {
+    display: flex;
+    flex-direction: column;
+    text-align: center
+}
+
+.secondaryButton__652ee {
+    min-width: 0;
+    width: auto
+}
+
+.buttonInner__652ee {
+    align-items: center;
+    display: flex;
+    justify-content: center
+}
+
+.buttonWrapper__652ee {
+    flex-grow: 1
+}
+
+.dot__652ee {
+    margin: 0 4px 0 6px
+}
+
 .container__6f9f7 {
     display: flex;
     gap: var(--space-8)
@@ -322,6 +347,26 @@
 
 .footer__823e1 {
     margin-top: var(--space-32)
+}
+
+.description__509fe {
+    margin-bottom: var(--space-32)
+}
+
+.image__509fe {
+    box-sizing: border-box;
+    height: 180px;
+    object-fit: contain;
+    object-position: center;
+    width: 100%
+}
+
+.theme-dark .image__509fe {
+    background: linear-gradient(180deg,rgba(15,16,17,0),rgba(15,16,17,.4))
+}
+
+.theme-light .image__509fe {
+    background: linear-gradient(180deg,rgba(15,16,17,0),rgba(15,16,17,.1))
 }
 
 .container_cba0a7 {
@@ -713,4 +758,4 @@
     transition: padding-left .2s ease
 }
 
-/*# sourceMappingURL=b92354b1f5fb317a.css.map*/
+/*# sourceMappingURL=7fb62b573c3a7034.css.map*/

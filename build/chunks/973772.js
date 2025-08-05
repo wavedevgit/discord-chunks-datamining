@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
+  G: () => l,
   Z: () => c
 });
 var r = n(442837),

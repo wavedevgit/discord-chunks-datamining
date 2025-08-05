@@ -17,9 +17,9 @@ let d = e => {
       direction: d,
       foreground: u,
       className: m,
-      title: p
+      title: x
     } = e,
-    x = function(e, t) {
+    p = function(e, t) {
       if (null == e) return {};
       var a, n, r = function(e, t) {
         if (null == e) return {};
@@ -51,7 +51,7 @@ let d = e => {
       })
     }
     return e
-  }({}, (0, s.Z)(x)), a = a = {
+  }({}, (0, s.Z)(p)), a = a = {
     width: n,
     height: l,
     className: i()(m, function(e) {
@@ -73,8 +73,8 @@ let d = e => {
       }
     }(d)),
     viewBox: "0 0 24 24",
-    children: [null != p ? (0, r.jsx)("title", {
-      children: p
+    children: [null != x ? (0, r.jsx)("title", {
+      children: x
     }) : null, (0, r.jsx)("polygon", {
       className: u,
       fill: c,

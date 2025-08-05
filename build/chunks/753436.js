@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var o = n(817053),
-  i = n(919498),
-  l = n(467514),
+  l = n(919498),
+  i = n(467514),
   a = n(987278);
 
 function c(e) {
@@ -19,7 +19,7 @@ function c(e) {
     disableInteraction: u = !1
   } = e;
   return d ? (0, r.jsx)("div", {
-    className: l.gameCover
+    className: i.gameCover
   }) : (0, r.jsxs)("div", {
     className: a.container,
     children: [(0, r.jsx)(o.Z, {
@@ -28,7 +28,7 @@ function c(e) {
       applicationId: t.applicationId,
       userId: n,
       disableInteraction: u
-    }), (0, r.jsx)(i.Z, {
+    }), (0, r.jsx)(l.Z, {
       applicationId: t.applicationId,
       className: a.socialProof,
       hideLabel: !0,

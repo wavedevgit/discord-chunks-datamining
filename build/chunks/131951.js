@@ -384,10 +384,8 @@ function tj(e) {
 }
 
 function tU(e) {
-  let t = M.Z.getCurrentConfig({
-    location: "getAutomaticGainControlConfig"
-  }, {
-    autoTrackExposure: !0,
+  let t = (0, M.U)({
+    location: "getAutomaticGainControlConfig",
     disable: !e
   });
   return eN({

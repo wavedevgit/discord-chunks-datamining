@@ -1,11 +1,11 @@
 /** Chunk was on 43473 **/
 n.d(t, {
-  Z: () => b
+  Z: () => g
 });
 var r = n(255367),
   o = n(73800),
-  i = n(481060),
-  l = n(81897),
+  l = n(481060),
+  i = n(81897),
   a = n(906732),
   c = n(566898),
   s = n(785717),
@@ -14,32 +14,32 @@ var r = n(255367),
   f = n(892001),
   p = n(252417),
   m = n(264481),
-  g = n(714905);
+  b = n(714905);
 
-function b(e) {
+function g(e) {
   let {
     user: t,
     guildId: n,
-    channelId: b,
+    channelId: g,
     onClose: y
   } = e, {
-    analyticsLocations: O
+    analyticsLocations: _
   } = (0, a.ZP)(), {
-    context: h,
-    trackUserProfileAction: j
+    context: O,
+    trackUserProfileAction: h
   } = (0, s.KZ)(), {
-    mutualFriends: x,
-    mutualFriendsCount: _
-  } = (0, d.Z)(t), v = (0, l.Z)();
+    mutualFriends: j,
+    mutualFriendsCount: x
+  } = (0, d.Z)(t), v = (0, i.Z)();
   return o.useEffect(() => {
     (0, u.Z)(t.id, v)
-  }, [t.id, v]), (0, r.jsx)(i.Ttm, {
-    className: g.scroller,
+  }, [t.id, v]), (0, r.jsx)(l.Ttm, {
+    className: b.scroller,
     fade: !0,
-    children: null == x ? Array.from({
-      length: null != _ ? _ : 10
+    children: null == j ? Array.from({
+      length: null != x ? x : 10
     }).map((e, t) => (0, r.jsxs)("div", {
-      className: g.friendsLoadingItem,
+      className: b.friendsLoadingItem,
       children: [(0, r.jsx)(c.ZT, {
         width: 40,
         opacity: .08
@@ -47,20 +47,20 @@ function b(e) {
         width: 135,
         opacity: .08
       })]
-    }, t)) : 0 === x.length ? (0, r.jsx)(m.s_, {}) : x.map(e => {
+    }, t)) : 0 === j.length ? (0, r.jsx)(m.s_, {}) : j.map(e => {
       let {
         key: t,
         user: o,
-        status: i
+        status: l
       } = e;
       return (0, r.jsx)(p.Z, {
         user: o,
-        status: i,
+        status: l,
         guildId: n,
-        channelId: b,
+        channelId: g,
         onSelect: () => {
           var e, t;
-          null == y || y(), j({
+          null == y || y(), h({
             action: "PRESS_MUTUAL_FRIEND"
           }), (0, f.openUserProfileModal)((e = function(e) {
             for (var t = 1; t < arguments.length; t++) {
@@ -79,9 +79,9 @@ function b(e) {
               })
             }
             return e
-          }({}, h), t = t = {
+          }({}, O), t = t = {
             userId: o.id,
-            sourceAnalyticsLocations: O
+            sourceAnalyticsLocations: _
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {

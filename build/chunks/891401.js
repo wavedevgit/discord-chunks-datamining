@@ -12,8 +12,8 @@ var n = a(255367),
   d = a(704215),
   u = a(755721),
   m = a(481060),
-  p = a(411149),
-  x = a(151480),
+  x = a(411149),
+  p = a(151480),
   h = a(461762),
   b = a(680783),
   f = a(605236),
@@ -57,18 +57,18 @@ function C(e, t) {
 function O() {
   return (0, n.jsxs)(m.Ttm, {
     className: _.container,
-    children: [(0, n.jsx)(T, {}), (0, n.jsx)(N, {})]
+    children: [(0, n.jsx)(N, {}), (0, n.jsx)(T, {})]
   })
 }
 
-function T() {
+function N() {
   var e, t;
   let a = (0, c.e7)([g.Z], () => g.Z.getChannelId()),
     l = (0, b.Z)(a),
     s = null == l ? void 0 : l.wallpaperId,
     d = (0, h.Z)(s),
     f = r.useCallback(e => {
-      null != s && (0, x.i)(s, {
+      null != s && (0, p.i)(s, {
         opacity: e
       })
     }, [s]),
@@ -78,21 +78,21 @@ function T() {
     O = r.useCallback(e => {
       P(null == l ? void 0 : l.wallpaperId, e.target.value)
     }, [null == l ? void 0 : l.wallpaperId]),
-    T = r.useCallback(e => {
+    N = r.useCallback(e => {
       S(null == l ? void 0 : l.wallpaperId, e.target.value)
     }, [null == l ? void 0 : l.wallpaperId]),
-    N = r.useCallback(() => E(null == l ? void 0 : l.wallpaperId, void 0), [null == l ? void 0 : l.wallpaperId]),
+    T = r.useCallback(() => E(null == l ? void 0 : l.wallpaperId, void 0), [null == l ? void 0 : l.wallpaperId]),
     I = r.useCallback(() => P(null == l ? void 0 : l.wallpaperId, void 0), [null == l ? void 0 : l.wallpaperId]),
     w = r.useCallback(() => S(null == l ? void 0 : l.wallpaperId, void 0), [null == l ? void 0 : l.wallpaperId]),
     R = r.useCallback(e => {
-      null != s && (0, x.i)(s, {
+      null != s && (0, p.i)(s, {
         token_mix_amount: Math.round(e)
       })
     }, [s]),
-    k = r.useCallback(() => {
-      null != s && (0, x.i)(s, null)
+    A = r.useCallback(() => {
+      null != s && (0, p.i)(s, null)
     }, [s]),
-    A = null != (e = null == d ? void 0 : d.opacity) ? e : 1,
+    k = null != (e = null == d ? void 0 : d.opacity) ? e : 1,
     Z = null != (t = null == d ? void 0 : d.token_mix_amount) ? t : 100;
   return (0, n.jsxs)("div", {
     children: [(0, n.jsx)(o.X6, {
@@ -109,7 +109,7 @@ function T() {
         children: "ChatWallpaperMetadataRecord"
       }), (0, n.jsx)("pre", {
         className: _.code,
-        children: JSON.stringify(p.Z.getWallpaperById(s), null, 2)
+        children: JSON.stringify(x.Z.getWallpaperById(s), null, 2)
       }), (0, n.jsx)(m.ua7, {
         text: "The opacity of the wallpaper.",
         children: e => (0, n.jsx)(o.X6, C(y({
@@ -120,12 +120,12 @@ function T() {
         }))
       }), (0, n.jsx)(m.iRW, {
         className: _.slider,
-        initialValue: A,
+        initialValue: k,
         defaultValue: 1,
         minValue: 0,
         maxValue: 1,
         onValueChange: f
-      }, "opacity-".concat(A)), (0, n.jsx)(m.ua7, {
+      }, "opacity-".concat(k)), (0, n.jsx)(m.ua7, {
         text: "The most prominent color in the wallpaper. This will be used to adjust the color tokens.",
         children: e => (0, n.jsx)(o.X6, C(y({
           className: i()(_.subheader, _.hasTooltip),
@@ -146,7 +146,7 @@ function T() {
             size: "xs",
             color: "currentColor"
           }),
-          onClick: N,
+          onClick: T,
           className: _.removeButton
         })]
       }), (0, n.jsx)(m.ua7, {
@@ -201,7 +201,7 @@ function T() {
         children: [(0, n.jsx)("input", {
           type: "color",
           value: d.link_color,
-          onChange: T
+          onChange: N
         }, "linkColor-".concat(d.link_color)), (0, n.jsx)(m.M0o, {
           color: "currentColor",
           tooltip: j.intl.string(j.t.N86XcH),
@@ -214,14 +214,14 @@ function T() {
         })]
       }), (0, n.jsx)(u.zx, {
         className: _.resetButton,
-        onClick: k,
+        onClick: A,
         children: "Reset"
       })]
     })]
   })
 }
 
-function N() {
+function T() {
   let e = r.useCallback(() => {
       (0, v.Z1)(d.z.NITRO_TENURE_BADGE_LEVEL_UP)
     }, []),
@@ -251,17 +251,17 @@ function N() {
   })
 }
 let E = (0, s.debounce)(function(e, t) {
-    null != e && (0, x.i)(e, {
+    null != e && (0, p.i)(e, {
       primary_color: t
     })
   }, 200),
   S = (0, s.debounce)(function(e, t) {
-    null != e && (0, x.i)(e, {
+    null != e && (0, p.i)(e, {
       link_color: t
     })
   }, 200),
   P = (0, s.debounce)(function(e, t) {
-    null != e && (0, x.i)(e, {
+    null != e && (0, p.i)(e, {
       secondary_color: t
     })
   }, 200)

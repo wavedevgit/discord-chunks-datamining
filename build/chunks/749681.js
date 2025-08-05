@@ -10,9 +10,9 @@ a.r(t), a.d(t, {
         let v = t.selectedServersTab;
         return null != v ? l.Z.setState({
           selectedTab: v,
-          entrypoint: null != (a = t.entrypoint) ? a : x.Qq.UNKNOWN
+          entrypoint: null != (a = t.entrypoint) ? a : p.Qq.UNKNOWN
         }) : l.Z.setState({
-          entrypoint: null != (h = t.entrypoint) ? h : x.Qq.UNKNOWN
+          entrypoint: null != (h = t.entrypoint) ? h : p.Qq.UNKNOWN
         }), (0, s.uL)(m.Z5c.GLOBAL_DISCOVERY_SERVERS, t.extra);
       case u.GlobalDiscoveryTab.APPS:
         if (null != t.newSessionState) {
@@ -56,9 +56,9 @@ a.r(t), a.d(t, {
           }())
         }
         if (null != t.applicationId) {
-          if (t.section === p.GlobalDiscoveryAppsSections.STORE)
+          if (t.section === x.GlobalDiscoveryAppsSections.STORE)
             if (null != t.skuId) return (0, s.uL)(m.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_STORE_SKU(t.applicationId, t.skuId));
-            else return (0, s.uL)(m.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(t.applicationId, p.GlobalDiscoveryAppsSections.STORE));
+            else return (0, s.uL)(m.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(t.applicationId, x.GlobalDiscoveryAppsSections.STORE));
           return (0, s.uL)(m.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE(t.applicationId))
         }
         if (null != t.query) {
@@ -89,5 +89,5 @@ var n = a(258971),
   d = a(836768),
   u = a(49898),
   m = a(981631),
-  p = a(979007),
-  x = a(128449)
+  x = a(979007),
+  p = a(128449)

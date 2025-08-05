@@ -1,13 +1,13 @@
 /** Chunk was on 43473 **/
 n.d(t, {
-  Z: () => l
+  Z: () => i
 });
 var r = n(255367);
 n(73800);
 var o = n(753436),
-  i = n(825243);
+  l = n(825243);
 
-function l(e) {
+function i(e) {
   var {
     games: t
   } = e, n = function(e, t) {
@@ -15,18 +15,18 @@ function l(e) {
     var n, r, o = function(e, t) {
       if (null == e) return {};
       var n, r, o = {},
-        i = Object.keys(e);
-      for (r = 0; r < i.length; r++) n = i[r], t.indexOf(n) >= 0 || (o[n] = e[n]);
+        l = Object.keys(e);
+      for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (o[n] = e[n]);
       return o
     }(e, t);
     if (Object.getOwnPropertySymbols) {
-      var i = Object.getOwnPropertySymbols(e);
-      for (r = 0; r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (o[n] = e[n])
+      var l = Object.getOwnPropertySymbols(e);
+      for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (o[n] = e[n])
     }
     return o
   }(e, ["games"]);
   return (0, r.jsx)("ul", {
-    className: i.coverList,
+    className: l.coverList,
     children: t.map((e, t) => (0, r.jsx)("li", {
       children: (0, r.jsx)(o.S, function(e) {
         for (var t = 1; t < arguments.length; t++) {

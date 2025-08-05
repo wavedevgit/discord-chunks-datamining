@@ -31,10 +31,10 @@ var r = n(255367),
   g = n(607070),
   E = n(100527),
   b = n(906732),
-  y = n(541099),
-  O = n(998698),
-  v = n(271668),
-  I = n(307508),
+  y = n(989573),
+  O = n(541099),
+  v = n(998698),
+  I = n(271668),
   T = n(326133),
   S = n(570220),
   A = n(28546),
@@ -333,7 +333,7 @@ function eA(e, t, n, r) {
 }
 
 function eN(e, t, n) {
-  let [r, a] = (0, A.Iu)(e => [e.activeView, e.activeViewType], u.X), o = (0, _.e7)([y.Z], () => y.Z.shouldShowPopup() && y.Z.activeViewType() === e);
+  let [r, a] = (0, A.Iu)(e => [e.activeView, e.activeViewType], u.X), o = (0, _.e7)([O.Z], () => O.Z.shouldShowPopup() && O.Z.activeViewType() === e);
   i.useEffect(() => () => {
     (0, A._Q)(e)
   }, [e]);
@@ -376,7 +376,7 @@ function eR(e, t) {
   let {
     textValue: f,
     richValue: h,
-    className: y,
+    className: O,
     innerClassName: A,
     editorClassName: C,
     id: R,
@@ -422,7 +422,7 @@ function eR(e, t) {
     analyticsLocations: eH
   } = (0, b.ZP)(E.Z.CHANNEL_TEXT_AREA), eY = eT(t), eW = i.useRef(null), eK = i.useRef(null), ez = i.useRef(null), eq = i.useRef(null);
   null == ek || ek(eK.current);
-  let eX = (0, I.Q)(k.id),
+  let eX = (0, y.Z)(k),
     [eQ, eJ] = i.useState(!eX);
   (0, m.PM)(eY, e => {
     let {
@@ -433,11 +433,11 @@ function eR(e, t) {
   let {
     activeCommand: e$,
     activeCommandSection: e0
-  } = (0, _.cj)([O.Z], () => {
+  } = (0, _.cj)([v.Z], () => {
     var e, t;
     return {
-      activeCommand: (null == (e = U.commands) ? void 0 : e.enabled) ? O.Z.getActiveCommand(k.id) : null,
-      activeCommandSection: (null == (t = U.commands) ? void 0 : t.enabled) ? O.Z.getActiveCommandSection(k.id) : null
+      activeCommand: (null == (e = U.commands) ? void 0 : e.enabled) ? v.Z.getActiveCommand(k.id) : null,
+      activeCommandSection: (null == (t = U.commands) ? void 0 : t.enabled) ? v.Z.getActiveCommandSection(k.id) : null
     }
   }), {
     isLurking: e1,
@@ -539,7 +539,7 @@ function eR(e, t) {
         options: U.markdown
       }) : null, (0, r.jsxs)("div", {
         ref: eY,
-        className: o()(y, {
+        className: o()(O, {
           [el.channelTextArea]: !0,
           [el.channelTextAreaDisabled]: tC,
           [el.highlighted]: ep,
@@ -621,7 +621,7 @@ function eR(e, t) {
               })
             }), tk]
           })]
-        }), e9 ? null : (0, r.jsx)(v.Z, {
+        }), e9 ? null : (0, r.jsx)(I.Z, {
           ref: eW,
           channel: k,
           canOnlyUseTextCommands: tN

@@ -1,44 +1,30 @@
 /**
   Module ID: 99014
-  Original File Name: 18021d952ee73b8d
+  Original File Name: dc6f29317e3303e2
 **/
-.container__6f9f7 {
-    display: flex;
-    gap: var(--space-8)
-}
-
-.tooltipContainer__6f9f7 {
+.tooltipContainer__652ee {
     display: flex;
     flex-direction: column;
     text-align: center
 }
 
-.primaryButton__6f9f7 {
-    flex-grow: 1
-}
-
-.secondaryButton__6f9f7 {
+.secondaryButton__652ee {
     min-width: 0;
     width: auto
 }
 
-.buttonInner__6f9f7 {
+.buttonInner__652ee {
     align-items: center;
     display: flex;
     justify-content: center
 }
 
-.buttonWrapper__6f9f7 {
+.buttonWrapper__652ee {
     flex-grow: 1
 }
 
-.dot__6f9f7 {
+.dot__652ee {
     margin: 0 4px 0 6px
-}
-
-.boost__6f9f7 {
-    align-self: center;
-    justify-self: center
 }
 
 .container_ec8ca9 {
@@ -164,4 +150,4 @@
     margin-top: var(--space-16)
 }
 
-/*# sourceMappingURL=18021d952ee73b8d.css.map*/
+/*# sourceMappingURL=dc6f29317e3303e2.css.map*/

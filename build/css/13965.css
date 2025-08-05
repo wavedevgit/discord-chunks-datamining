@@ -1,7 +1,32 @@
 /**
   Module ID: 13965
-  Original File Name: f1c92f0d88c02d47
+  Original File Name: 3742589448e577a6
 **/
+.tooltipContainer__652ee {
+    display: flex;
+    flex-direction: column;
+    text-align: center
+}
+
+.secondaryButton__652ee {
+    min-width: 0;
+    width: auto
+}
+
+.buttonInner__652ee {
+    align-items: center;
+    display: flex;
+    justify-content: center
+}
+
+.buttonWrapper__652ee {
+    flex-grow: 1
+}
+
+.dot__652ee {
+    margin: 0 4px 0 6px
+}
+
 .container__6f9f7 {
     display: flex;
     gap: var(--space-8)
@@ -88,4 +113,4 @@
     height: 228px
 }
 
-/*# sourceMappingURL=f1c92f0d88c02d47.css.map*/
+/*# sourceMappingURL=3742589448e577a6.css.map*/

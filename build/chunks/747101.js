@@ -3,9 +3,9 @@ n.d(t, {
   Z: () => u
 }), n(539854), n(388685);
 var r = n(73800),
-  o = n(924322),
-  i = n(442837),
-  l = n(224706),
+  o = n(296009),
+  l = n(442837),
+  i = n(224706),
   a = n(669764),
   c = n(823379);
 
@@ -45,14 +45,14 @@ function u(e) {
   let t = r.useMemo(() => (function(e) {
     let t = [];
     return e.forEach(e => {
-      let n = e.gameWidgetType;
+      let n = e.type;
       switch (n) {
-        case o.g.FAVORITE:
+        case o.l.FAVORITE_GAMES:
           t.push(e.game.applicationId);
           break;
-        case o.g.CURRENT:
-        case o.g.WANT_TO_PLAY:
-        case o.g.PLAYED:
+        case o.l.CURRENT_GAMES:
+        case o.l.WANT_TO_PLAY_GAMES:
+        case o.l.PLAYED_GAMES:
           e.games.forEach(e => {
             t.push(e.applicationId)
           });
@@ -63,10 +63,10 @@ function u(e) {
     }), [...new Set(t)]
   })(e), [e]);
   r.useEffect(() => {
-    t.length > 0 && l.Z.getDetectableGamesSupplemental(t)
+    t.length > 0 && i.Z.getDetectableGamesSupplemental(t)
   }, [t]);
-  let n = (0, i.e7)([a.Z], () => t.some(e => a.Z.isFetching(e))),
-    u = (0, i.e7)([a.Z], () => {
+  let n = (0, l.e7)([a.Z], () => t.some(e => a.Z.isFetching(e))),
+    u = (0, l.e7)([a.Z], () => {
       let e = {};
       return t.forEach(t => {
         e[t] = a.Z.getGame(t)
@@ -75,9 +75,9 @@ function u(e) {
   return {
     isFetching: n,
     widgets: r.useMemo(() => e.map(e => {
-      let t = e.gameWidgetType;
+      let t = e.type;
       switch (t) {
-        case o.g.FAVORITE: {
+        case o.l.FAVORITE_GAMES: {
           let t = u[e.game.applicationId],
             n = d(s({}, e.game), {
               gameName: null == t ? void 0 : t.name,
@@ -87,9 +87,9 @@ function u(e) {
             game: n
           })
         }
-        case o.g.CURRENT:
-        case o.g.WANT_TO_PLAY:
-        case o.g.PLAYED: {
+        case o.l.CURRENT_GAMES:
+        case o.l.WANT_TO_PLAY_GAMES:
+        case o.l.PLAYED_GAMES: {
           let t = e.games.map(e => {
             let t = u[e.applicationId];
             return d(s({}, e), {

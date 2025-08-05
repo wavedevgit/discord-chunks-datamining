@@ -1,7 +1,32 @@
 /**
   Module ID: 59256
-  Original File Name: 4ca46edbc10c7dd5
+  Original File Name: e79026e1efdffc06
 **/
+.tooltipContainer__652ee {
+    display: flex;
+    flex-direction: column;
+    text-align: center
+}
+
+.secondaryButton__652ee {
+    min-width: 0;
+    width: auto
+}
+
+.buttonInner__652ee {
+    align-items: center;
+    display: flex;
+    justify-content: center
+}
+
+.buttonWrapper__652ee {
+    flex-grow: 1
+}
+
+.dot__652ee {
+    margin: 0 4px 0 6px
+}
+
 .container__6f9f7 {
     display: flex;
     gap: var(--space-8)
@@ -678,4 +703,4 @@
     margin-top: var(--space-16)
 }
 
-/*# sourceMappingURL=4ca46edbc10c7dd5.css.map*/
+/*# sourceMappingURL=e79026e1efdffc06.css.map*/
