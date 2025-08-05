@@ -15,10 +15,9 @@ function c(e) {
   let {
     user: t,
     hideMessageInput: n,
-    hideExampleButton: c,
-    showViewFullProfileButton: u
+    hideViewFullProfileButton: c
   } = e;
-  return n ? u ? (0, r.jsx)("div", {
+  return n ? c ? null : (0, r.jsx)("div", {
     className: l.footer,
     children: (0, r.jsx)(a.O1, {
       variant: "primary",
@@ -27,13 +26,6 @@ function c(e) {
         userId: t.id,
         disableActionsForPreview: !0
       }),
-      fullWidth: !0
-    })
-  }) : (0, r.jsx)("div", {
-    className: l.footer,
-    children: !c && (0, r.jsx)(a.O1, {
-      variant: "primary",
-      text: s.intl.string(s.t.hZkfwc),
       fullWidth: !0
     })
   }) : (0, r.jsx)("div", {

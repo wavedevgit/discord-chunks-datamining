@@ -18,8 +18,7 @@ function d(e) {
     layoutClassName: r,
     profilePreview: d,
     profilePreviewTitle: u,
-    nameplatePreview: m,
-    showViewFullProfileButton: p
+    nameplatePreview: m
   } = e;
   return (0, i.jsx)("div", {
     className: n,
@@ -30,9 +29,9 @@ function d(e) {
         children: [t, null != m ? (0, i.jsxs)("div", {
           children: [(0, i.jsx)(l.Z, {
             title: null != u ? u : o.intl.string(o.t.Zb06yM),
-            showViewFullProfileButton: p,
             hideDivider: !0,
             className: c.preview,
+            showViewFullProfileButton: !0,
             children: d
           }), null != m ? (0, i.jsx)(l.Z, {
             title: o.intl.string(o.t["7KRt6e"]),
@@ -42,9 +41,9 @@ function d(e) {
           }) : null]
         }) : (0, i.jsx)(l.Z, {
           title: null != u ? u : o.intl.string(o.t.Zb06yM),
-          showViewFullProfileButton: p,
           hideDivider: !0,
           className: c.preview,
+          showViewFullProfileButton: !0,
           children: d
         })]
       })

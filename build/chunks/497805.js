@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => y,
-  z: () => m
+  Z: () => b,
+  z: () => h
 });
 var r = n(255367);
 n(73800);
@@ -11,10 +11,9 @@ var i = n(481060),
   o = n(317770),
   s = n(40851),
   l = n(594174),
-  c = n(726525),
-  u = n(981631);
+  c = n(981631);
 
-function d(e, t, n) {
+function u(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -23,22 +22,22 @@ function d(e, t, n) {
   }) : e[t] = n, e
 }
 
-function f(e) {
+function d(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      d(e, t, n[t])
+      u(e, t, n[t])
     })
   }
   return e
 }
 
-function _(e, t) {
+function f(e, t) {
   if (null == e) return {};
-  var n, r, i = p(e, t);
+  var n, r, i = _(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -46,66 +45,62 @@ function _(e, t) {
   return i
 }
 
-function p(e, t) {
+function _(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let h = null;
+let p = null;
 
-function m(e, t) {
+function h(e, t) {
   return "USER_PROFILE_MODAL_KEY:".concat(e, ":").concat(null == t ? "" : t)
 }
-async function g(e) {
+async function m(e) {
   var t, {
       userId: a,
       section: o,
-      subsection: d,
-      guildId: p,
-      channelId: g,
-      showGuildProfile: E = !0,
-      appContext: b,
-      customStatusPrompt: y,
-      disableActionsForPreview: O = !1
+      subsection: u,
+      guildId: _,
+      channelId: m,
+      showGuildProfile: g = !0,
+      appContext: E,
+      customStatusPrompt: b,
+      disableActionsForPreview: y = !1
     } = e,
-    v = _(e, ["userId", "section", "subsection", "guildId", "channelId", "showGuildProfile", "appContext", "customStatusPrompt", "disableActionsForPreview"]);
-  let I = l.default.getUser(a);
-  if (null == I) return;
-  let T = l.default.getCurrentUser();
-  null != T && (h = await (0, i.ZDy)(async () => {
-    let {
-      default: e
-    } = (0, c.q)({
-      location: "UserProfileModalManager"
-    }) ? await Promise.all([n.e("16459"), n.e("82412"), n.e("62880"), n.e("56285"), n.e("11302")]).then(n.bind(n, 866035)): await Promise.all([n.e("16459"), n.e("82412"), n.e("62880"), n.e("56285"), n.e("2549")]).then(n.bind(n, 678780));
-    return t => (0, r.jsx)(e, f({
-      user: I,
-      currentUser: T,
-      guildId: p,
+    O = f(e, ["userId", "section", "subsection", "guildId", "channelId", "showGuildProfile", "appContext", "customStatusPrompt", "disableActionsForPreview"]);
+  let v = l.default.getUser(a);
+  if (null == v) return;
+  let I = l.default.getCurrentUser();
+  null != I && (p = await (0, i.ZDy)(async () => {
+    let e = (await Promise.all([n.e("16459"), n.e("82412"), n.e("62880"), n.e("11776")]).then(n.bind(n, 866035))).default;
+    return t => (0, r.jsx)(e, d({
+      user: v,
+      currentUser: I,
+      guildId: _,
       initialSection: o,
-      initialSubsection: d,
-      channelId: g,
-      showGuildProfile: E,
-      customStatusPrompt: y,
-      disableActionsForPreview: O
-    }, t, v))
+      initialSubsection: u,
+      channelId: m,
+      showGuildProfile: g,
+      customStatusPrompt: b,
+      disableActionsForPreview: y
+    }, t, O))
   }, {
-    modalKey: m(a, E ? p : void 0),
-    contextKey: (0, i.VnL)(null != (t = null != b ? b : (0, s.GB)()) ? t : u.IlC.APP)
+    modalKey: h(a, g ? _ : void 0),
+    contextKey: (0, i.VnL)(null != (t = null != E ? E : (0, s.GB)()) ? t : c.IlC.APP)
   }))
 }
 
-function E() {
-  null != h && (0, i.Mr3)(h), h = null
+function g() {
+  null != p && (0, i.Mr3)(p), p = null
 }
-class b extends o.Z {
+class E extends o.Z {
   _initialize() {
-    a.Z.subscribe("USER_PROFILE_MODAL_OPEN", g), a.Z.subscribe("USER_PROFILE_MODAL_CLOSE", E)
+    a.Z.subscribe("USER_PROFILE_MODAL_OPEN", m), a.Z.subscribe("USER_PROFILE_MODAL_CLOSE", g)
   }
   _terminate() {
-    a.Z.unsubscribe("USER_PROFILE_MODAL_OPEN", g), a.Z.unsubscribe("USER_PROFILE_MODAL_CLOSE", E)
+    a.Z.unsubscribe("USER_PROFILE_MODAL_OPEN", m), a.Z.unsubscribe("USER_PROFILE_MODAL_CLOSE", g)
   }
 }
-let y = new b
+let b = new E

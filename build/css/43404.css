@@ -1,6 +1,6 @@
 /**
   Module ID: 43404
-  Original File Name: 3c769054fd179bdb
+  Original File Name: 9fec6b07c02447b0
 **/
 .toast_cbb248 {
     gap: 8px
@@ -68,9 +68,9 @@
 .aside__4d307 label {
     color: var(--text-secondary);
     display: block;
-    font-size: 14px;
+    font-size: .875rem;
     font-weight: 600;
-    line-height: 18px;
+    line-height: 1.125rem;
     margin: 0;
     padding-bottom: 8px;
     text-transform: capitalize
@@ -173,7 +173,7 @@
 
 .heading__4d307 {
     font-weight: 500;
-    line-height: 32px;
+    line-height: 2rem;
     padding: 24px 240px 0 24px;
     position: absolute;
     text-align: center;
@@ -541,4 +541,4 @@
     width: 32px
 }
 
-/*# sourceMappingURL=3c769054fd179bdb.css.map*/
+/*# sourceMappingURL=9fec6b07c02447b0.css.map*/

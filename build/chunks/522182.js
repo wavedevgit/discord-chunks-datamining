@@ -1,11 +1,11 @@
-/** Chunk was on 11302 **/
+/** Chunk was on 11776 **/
 n.d(t, {
   Z: () => s
 });
 var r = n(255367);
 n(73800);
-var o = n(481060),
-  l = n(906732),
+var l = n(481060),
+  o = n(906732),
   i = n(335131),
   a = n(475413),
   c = n(388032);
@@ -15,23 +15,23 @@ function s(e) {
     onClose: t
   } = e, n = function(e, t) {
     if (null == e) return {};
-    var n, r, o = function(e, t) {
+    var n, r, l = function(e, t) {
       if (null == e) return {};
-      var n, r, o = {},
-        l = Object.keys(e);
-      for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (o[n] = e[n]);
-      return o
+      var n, r, l = {},
+        o = Object.keys(e);
+      for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (l[n] = e[n]);
+      return l
     }(e, t);
     if (Object.getOwnPropertySymbols) {
-      var l = Object.getOwnPropertySymbols(e);
-      for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (o[n] = e[n])
+      var o = Object.getOwnPropertySymbols(e);
+      for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n])
     }
-    return o
+    return l
   }(e, ["onClose"]);
   let {
     analyticsLocations: s,
     newestAnalyticsLocation: d
-  } = (0, l.ZP)();
+  } = (0, o.ZP)();
   return (0, r.jsx)(a.ef, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
@@ -51,7 +51,7 @@ function s(e) {
     return e
   }({
     action: "VISIT_SHOP",
-    icon: o.EOn,
+    icon: l.EOn,
     tooltipText: c.intl.string(c.t.b2d0Nz),
     themeColor: "secondary",
     onClick: () => {

@@ -111,7 +111,7 @@ class O extends i.Component {
       (0, c.jW)(e, async () => {
         let {
           default: e
-        } = await Promise.all([n.e("25548"), n.e("2686"), n.e("49049"), n.e("62856"), n.e("16459"), n.e("71824"), n.e("46154"), n.e("91315"), n.e("49152"), n.e("24783"), n.e("26735")]).then(n.bind(n, 439635));
+        } = await Promise.all([n.e("25548"), n.e("2686"), n.e("49049"), n.e("62856"), n.e("71824"), n.e("46154"), n.e("91315"), n.e("16459"), n.e("49152"), n.e("24783"), n.e("26735")]).then(n.bind(n, 439635));
         return n => (0, r.jsx)(e, b(g({}, n), {
           channel: t,
           guild: i,

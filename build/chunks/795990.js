@@ -1,10 +1,10 @@
-/** Chunk was on 11302 **/
+/** Chunk was on 11776 **/
 n.d(t, {
-  Z: () => y
+  Z: () => j
 });
 var r = n(255367),
-  o = n(73800),
-  l = n(296009),
+  l = n(73800),
+  o = n(296009),
   i = n(481060),
   a = n(634733),
   c = n(210753),
@@ -16,16 +16,16 @@ var r = n(255367),
 function p(e) {
   let {
     widgetType: t
-  } = e, n = t === l.l.FAVORITE_GAMES ? d.J6["23"] : d.J6["58"], {
-    coverImageUrl: o,
+  } = e, n = t === o.l.FAVORITE_GAMES ? d.J6["23"] : d.J6["58"], {
+    coverImageUrl: l,
     localizedName: i
   } = (0, c.$)(n);
   return (0, r.jsxs)("div", {
     className: f.placeholderDetailCard,
     children: [(0, r.jsx)("div", {
       className: f.placeholderCover,
-      children: null != o && "" !== o ? (0, r.jsx)("img", {
-        src: o,
+      children: null != l && "" !== l ? (0, r.jsx)("img", {
+        src: l,
         alt: null != i ? i : "Game cover",
         className: f.placeholderGameImage
       }) : (0, r.jsx)("div", {
@@ -45,27 +45,27 @@ function p(e) {
 function m(e) {
   let {
     widgetType: t
-  } = e, n = t === l.l.WANT_TO_PLAY_GAMES ? [d.J6["0"], d.J6["1"], d.J6["2"]] : [d.J6["20"], d.J6["35"], d.J6["42"]];
+  } = e, n = t === o.l.WANT_TO_PLAY_GAMES ? [d.J6["0"], d.J6["1"], d.J6["2"]] : [d.J6["20"], d.J6["35"], d.J6["42"]];
   return (0, r.jsx)("div", {
     className: f.placeholderCoverGrid,
-    children: n.map((e, t) => (0, r.jsx)(b, {
+    children: n.map((e, t) => (0, r.jsx)(g, {
       applicationId: e
     }, t))
   })
 }
 
-function b(e) {
+function g(e) {
   let {
     applicationId: t
   } = e, {
     coverImageUrl: n,
-    localizedName: o
+    localizedName: l
   } = (0, c.$)(t);
   return (0, r.jsx)("div", {
     className: f.placeholderCoverItem,
     children: null != n && "" !== n ? (0, r.jsx)("img", {
       src: n,
-      alt: null != o ? o : "Game cover",
+      alt: null != l ? l : "Game cover",
       className: f.placeholderGameImage
     }) : (0, r.jsx)("div", {
       className: f.placeholderGameFallback
@@ -73,10 +73,10 @@ function b(e) {
   })
 }
 
-function g(e) {
+function b(e) {
   let {
     widgetType: t
-  } = e, n = o.useCallback(() => {
+  } = e, n = l.useCallback(() => {
     (0, a.w6)(t)
   }, [t]);
   return (0, r.jsxs)(i.P3F, {
@@ -85,13 +85,13 @@ function g(e) {
     "aria-label": "Add widget: ".concat(u.intl.string(s.NP[t])),
     children: [(() => {
       switch (t) {
-        case l.l.FAVORITE_GAMES:
-        case l.l.CURRENT_GAMES:
+        case o.l.FAVORITE_GAMES:
+        case o.l.CURRENT_GAMES:
           return (0, r.jsx)(p, {
             widgetType: t
           });
-        case l.l.WANT_TO_PLAY_GAMES:
-        case l.l.PLAYED_GAMES:
+        case o.l.WANT_TO_PLAY_GAMES:
+        case o.l.PLAYED_GAMES:
           return (0, r.jsx)(m, {
             widgetType: t
           });
@@ -115,7 +115,7 @@ function g(e) {
   })
 }
 
-function y() {
+function j() {
   return (0, r.jsxs)("div", {
     className: f.empty,
     children: [(0, r.jsxs)("div", {
@@ -133,7 +133,7 @@ function y() {
       className: f.widgetGrid,
       "aria-label": "Widget options",
       children: s.rR.map(e => (0, r.jsx)("li", {
-        children: (0, r.jsx)(g, {
+        children: (0, r.jsx)(b, {
           widgetType: e
         })
       }, e))

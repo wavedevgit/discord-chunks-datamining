@@ -1,24 +1,24 @@
-/** Chunk was on 56285 **/
-t.d(n, {
-  Z: () => s
+/** Chunk was on 11776 **/
+n.d(t, {
+  Z: () => a
 });
-var l = t(806729),
-  r = t(146078),
-  i = t(228168),
-  o = t(388032);
+var r = n(806729),
+  l = n(146078),
+  o = n(228168),
+  i = n(388032);
 
-function s(e) {
+function a(e) {
   let {
-    mutualGuilds: n
-  } = (0, l.Z)(e), t = null == n ? void 0 : n.length;
+    mutualGuilds: t
+  } = (0, r.Z)(e), n = null == t ? void 0 : t.length;
   return [{
-    section: i.oh.BOT_INFO,
-    text: o.intl.string(o.t.jGoPJS)
+    section: o.oh.BOT_INFO,
+    text: i.intl.string(i.t.jGoPJS)
   }, {
-    section: i.oh.MUTUAL_GUILDS,
-    text: (0, r.Z)(t)
+    section: o.oh.MUTUAL_GUILDS,
+    text: (0, l.Z)(n)
   }, {
-    section: i.oh.BOT_DATA_ACCESS,
-    text: o.intl.string(o.t.WstFb2)
+    section: o.oh.BOT_DATA_ACCESS,
+    text: i.intl.string(i.t.WstFb2)
   }]
 }

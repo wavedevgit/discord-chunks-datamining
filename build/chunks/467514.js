@@ -1,4 +1,4 @@
-/** Chunk was on 11302 **/
+/** Chunk was on 11776 **/
 e.exports = {
   gameCover: "gameCover__1a3d6",
   gameCoverImage: "gameCoverImage__1a3d6 gameCover__1a3d6",

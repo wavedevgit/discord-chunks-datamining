@@ -1,4 +1,4 @@
-/** Chunk was on 11302 **/
+/** Chunk was on 11776 **/
 e.exports = {
   card: "card_e1364f",
   clickableCard: "clickableCard_e1364f",

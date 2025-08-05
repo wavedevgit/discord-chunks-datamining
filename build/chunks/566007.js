@@ -1,11 +1,11 @@
-/** Chunk was on 11302 **/
+/** Chunk was on 11776 **/
 n.d(t, {
   Z: () => a
 });
 var r = n(255367);
 n(73800);
-var o = n(750312),
-  l = n(623132),
+var l = n(750312),
+  o = n(623132),
   i = n(388032);
 
 function a(e) {
@@ -14,23 +14,23 @@ function a(e) {
     widget: n
   } = e, a = function(e, t) {
     if (null == e) return {};
-    var n, r, o = function(e, t) {
+    var n, r, l = function(e, t) {
       if (null == e) return {};
-      var n, r, o = {},
-        l = Object.keys(e);
-      for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (o[n] = e[n]);
-      return o
+      var n, r, l = {},
+        o = Object.keys(e);
+      for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (l[n] = e[n]);
+      return l
     }(e, t);
     if (Object.getOwnPropertySymbols) {
-      var l = Object.getOwnPropertySymbols(e);
-      for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (o[n] = e[n])
+      var o = Object.getOwnPropertySymbols(e);
+      for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n])
     }
-    return o
+    return l
   }(e, ["user", "widget"]);
-  return (0, r.jsx)(o.Z, {
+  return (0, r.jsx)(l.Z, {
     title: i.intl.string(i.t.sUQar6),
     subtitle: i.intl.string(i.t.wiXdER),
-    children: (0, r.jsx)(l.Z, function(e) {
+    children: (0, r.jsx)(o.Z, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);

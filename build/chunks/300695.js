@@ -1,4 +1,4 @@
-/** Chunk was on 11302 **/
+/** Chunk was on 11776 **/
 e.exports = {
   tagList: "tagList__25a50",
   tag: "tag__25a50"

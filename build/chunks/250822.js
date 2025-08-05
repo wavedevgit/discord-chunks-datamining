@@ -1,13 +1,13 @@
-/** Chunk was on 56285 **/
-t.d(n, {
-  Z: () => s
+/** Chunk was on 11776 **/
+n.d(t, {
+  Z: () => a
 });
-var l = t(73800),
-  r = t(442837),
-  i = t(621853);
-let o = [];
+var r = n(73800),
+  l = n(442837),
+  o = n(621853);
+let i = [];
 
-function s(e) {
-  let n = (0, r.e7)([i.Z], () => i.Z.getUserProfile(e));
-  return (0, l.useMemo)(() => (null == n ? void 0 : n.applicationRoleConnections) == null ? o : n.applicationRoleConnections, [null == n ? void 0 : n.applicationRoleConnections])
+function a(e) {
+  let t = (0, l.e7)([o.Z], () => o.Z.getUserProfile(e));
+  return (0, r.useMemo)(() => (null == t ? void 0 : t.applicationRoleConnections) == null ? i : t.applicationRoleConnections, [null == t ? void 0 : t.applicationRoleConnections])
 }

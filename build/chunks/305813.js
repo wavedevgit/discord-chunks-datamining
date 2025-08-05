@@ -70,14 +70,14 @@ function N(e) {
       effectId: l,
       colors: N
     }
-  })), E = (0, a.ZP)(), D = (0, s.wjy)(E), [R, I] = (0, o.useState)(D), A = (0, g.ZP)(t.id, null), {
+  })), D = (0, a.ZP)(), E = (0, s.wjy)(D), [R, I] = (0, o.useState)(E), A = (0, g.ZP)(t.id, null), {
     bannerSrc: L
   } = (0, h.Z)({
     displayProfile: A,
     size: 413,
     canAnimate: !1
   }), B = R ? y.BRd.DARK : y.BRd.LIGHT;
-  return (D && R || !D && !R) && (B = E), (0, r.jsxs)("div", {
+  return (E && R || !E && !R) && (B = D), (0, r.jsxs)("div", {
     className: C.previewSection,
     children: [(0, r.jsx)(s.xBx, {
       "data-migration-pending": !0,
@@ -111,9 +111,9 @@ function N(e) {
           pendingAvatar: void 0,
           disabledInputs: !0,
           hideCustomStatus: !0,
-          hideExampleButton: !0,
           containerClassName: C.profile,
-          interactive: !1
+          interactive: !1,
+          hideViewFullProfileButton: !0
         }), (0, r.jsx)(f.Z, {
           author: (0, p.ij)(w, null),
           message: (0, d.e5)(P(_({}, (0, u.ZP)({
