@@ -1,4 +1,4 @@
-/** Chunk was on 22243 **/
+/** Chunk was on 85438 **/
 n.d(t, {
   Z: () => I
 }), n(539854), n(388685);
@@ -51,9 +51,9 @@ function _(e, t) {
 }
 
 function j() {}
-let E = [h.h8.VOICE_CHANNEL];
+let C = [h.h8.VOICE_CHANNEL];
 
-function C(e) {
+function E(e) {
   e.setOptions({
     voiceChannelGuildFilter: null
   }), e.setLimit(1 / 0)
@@ -164,8 +164,8 @@ function N(e) {
     queryResults: y
   } = (0, o.Z)({
     visible: !0,
-    autocompleterResultTypes: E,
-    autocompleterBeforeCreateSearchContext: C
+    autocompleterResultTypes: C,
+    autocompleterBeforeCreateSearchContext: E
   }), A = function(e) {
     let t = "" !== e,
       n = (0, s.Wu)([m.ZP, u.Z, g.Z], () => {

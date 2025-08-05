@@ -10,8 +10,8 @@ var o = n(481060),
   a = n(769654),
   c = n(785717),
   s = n(806729),
-  u = n(821179),
-  d = n(264481),
+  d = n(821179),
+  u = n(264481),
   f = n(714905);
 
 function p(e) {
@@ -22,12 +22,12 @@ function p(e) {
     trackUserProfileAction: p
   } = (0, c.KZ)(), {
     mutualGuilds: m,
-    isFetching: b
+    isFetching: g
   } = (0, s.Z)(t);
   return (0, r.jsx)(o.Ttm, {
     className: f.scroller,
     fade: !0,
-    children: null == m && b ? Array.from({
+    children: null == m && g ? Array.from({
       length: 10
     }).map((e, t) => (0, r.jsxs)("div", {
       className: f.guildsLoadingItem,
@@ -38,12 +38,12 @@ function p(e) {
         width: 135,
         opacity: .08
       })]
-    }, t)) : (null != m || b) && (null == m ? void 0 : m.length) !== 0 ? null == m ? void 0 : m.map(e => {
+    }, t)) : (null != m || g) && (null == m ? void 0 : m.length) !== 0 ? null == m ? void 0 : m.map(e => {
       let {
         guild: o,
         nick: l
       } = e;
-      return (0, r.jsx)(u.Z, {
+      return (0, r.jsx)(d.Z, {
         user: t,
         guild: o,
         nick: l,
@@ -53,6 +53,6 @@ function p(e) {
           }), (0, a.X)(o.id), n(), (0, i.xf)()
         }
       }, o.id)
-    }) : (0, r.jsx)(d.b0, {})
+    }) : (0, r.jsx)(u.b0, {})
   })
 }

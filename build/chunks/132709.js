@@ -1,5 +1,5 @@
-/** Chunk was on 48707 **/
-t.exports = {
+/** Chunk was on 85438 **/
+e.exports = {
   header: "header__6dc27",
   subtitle: "subtitle__6dc27",
   title: "title__6dc27",

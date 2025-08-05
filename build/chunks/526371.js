@@ -1,4 +1,4 @@
-/** Chunk was on 22243 **/
+/** Chunk was on 85438 **/
 n.d(t, {
   Z: () => O
 }), n(388685);
@@ -20,9 +20,9 @@ var i = n(255367),
   x = n(603571),
   _ = n(388032),
   j = n(631587),
-  E = n(394637);
+  C = n(394637);
 
-function C() {
+function E() {
   let e = (0, r.useRef)(null),
     [t, n] = (0, r.useState)(!1),
     {
@@ -79,7 +79,7 @@ function C() {
         className: j.foreground,
         children: [(0, i.jsx)("img", {
           className: j.icon,
-          src: E,
+          src: C,
           alt: ""
         }), (0, i.jsxs)("div", {
           className: j.text,
@@ -108,5 +108,5 @@ function O() {
     } = h.C.getCurrentConfig({
       location: "Coachmark"
     });
-  return e || !t ? null : (0, i.jsx)(C, {})
+  return e || !t ? null : (0, i.jsx)(E, {})
 }

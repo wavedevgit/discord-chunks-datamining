@@ -1,42 +1,42 @@
-/** Chunk was on 54433 **/
+/** Chunk was on 85438 **/
 n.d(t, {
-  f: () => c
+  f: () => u
 });
 var i = n(255367),
   r = n(442837),
-  l = n(481060),
-  s = n(607070),
-  a = n(987209),
+  s = n(481060),
+  a = n(607070),
+  l = n(987209),
   o = n(286961),
-  C = n(897942),
+  c = n(897942),
   d = n(263562);
 
-function c() {
-  let e = (0, r.e7)([s.Z], () => s.Z.useReducedMotion),
+function u() {
+  let e = (0, r.e7)([a.Z], () => a.Z.useReducedMotion),
     {
       claimableRewards: t
-    } = (0, a.wD)(),
+    } = (0, l.wD)(),
     n = (0, o.Z)(),
-    c = null == n ? void 0 : n.planSelection;
-  return null == c || null == t || 0 === t.length ? null : (0, i.jsxs)("div", {
+    u = null == n ? void 0 : n.planSelection;
+  return null == u || null == t || 0 === t.length ? null : (0, i.jsxs)("div", {
     className: d.container,
     children: [(0, i.jsx)("div", {
       className: d.avatar,
-      children: (0, i.jsx)(C.Z, {
-        maxRewardImageSrc: c.getImageUrl(!0, e),
+      children: (0, i.jsx)(c.Z, {
+        maxRewardImageSrc: u.getImageUrl(!0, e),
         claimableRewards: t,
-        size: l.EFr.SIZE_48
+        size: s.EFr.SIZE_48
       })
     }), (0, i.jsxs)("div", {
       className: d.textSection,
-      children: [(0, i.jsx)(l.Text, {
+      children: [(0, i.jsx)(s.Text, {
         variant: "text-md/medium",
         color: "text-primary",
-        children: c.heading()
-      }), null != c.subheading && t.length > 1 && (0, i.jsx)(l.Text, {
+        children: u.heading()
+      }), null != u.subheading && t.length > 1 && (0, i.jsx)(s.Text, {
         variant: "text-md/medium",
         className: d.subheading,
-        children: c.subheading(t.length)
+        children: u.subheading(t.length)
       })]
     })]
   })

@@ -1,4 +1,4 @@
-/** Chunk was on 22243 **/
+/** Chunk was on 85438 **/
 n.d(t, {
   Qo: () => f,
   ZP: () => x
@@ -46,8 +46,8 @@ let b = e => {
       progressCircleVariation: x = 0,
       avatarDecoAssetId: _,
       avatarDecoAssetDescription: j,
-      ellipseOpacity: E,
-      customAnimationClassName: C,
+      ellipseOpacity: C,
+      customAnimationClassName: E,
       circleColor: O,
       circleStroke: v
     } = e, S = (0, o.e7)([d.Z], () => d.Z.useReducedMotion), T = t && !S;
@@ -56,7 +56,7 @@ let b = e => {
       children: (0, r.jsx)(g.Z, {
         animationClassName: l()(h.activeProgressCircle, {
           [h.activeProgressCircleAnimation]: T,
-          [null != C ? C : ""]: T
+          [null != E ? E : ""]: T
         }),
         progressCircleStroke: v,
         progressCircleStrokeSize: a,
@@ -74,7 +74,7 @@ let b = e => {
             case 1:
               return (0, r.jsx)(p.Z, {
                 circleColor: O,
-                ellipseOpacity: E
+                ellipseOpacity: C
               });
             case 2:
               if (null != _) return (0, r.jsx)(b, {

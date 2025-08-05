@@ -1,4 +1,4 @@
-/** Chunk was on 22243 **/
+/** Chunk was on 85438 **/
 n.d(t, {
   Z: () => x
 });
@@ -50,11 +50,11 @@ let b = e => {
       leftAlignHeaders: x = !1,
       showAllPerksButton: _,
       headerClassname: j
-    } = e, E = r.useRef(null), C = n === p.gM.WHATS_NEW, O = (0, u.x)();
+    } = e, C = r.useRef(null), E = n === p.gM.WHATS_NEW, O = (0, u.x)();
     r.useEffect(() => {
-      C && O()
-    }, [O, C]);
-    let v = (0, g.re)(C),
+      E && O()
+    }, [O, E]);
+    let v = (0, g.re)(E),
       S = (0, m.Z)(),
       T = (0, g.mN)(),
       {
@@ -75,7 +75,7 @@ let b = e => {
       }),
       P = A.some(e => null != e.pillText);
     return (0, i.jsxs)("div", {
-      ref: E,
+      ref: C,
       className: a()(f.section, {
         [f.centerAlignSection]: !x,
         [f.leftAlignSection]: x
@@ -91,7 +91,7 @@ let b = e => {
         className: a()(f.subtitle, {
           [f.subtitle]: null == _ || x,
           [f.subtitleWithButton]: null != _ && !x,
-          [f.fullWidth]: C || x,
+          [f.fullWidth]: E || x,
           [f.moreSubtitleMargin]: P,
           [f.leftAlignSubtitle]: x,
           [f.centerAlignSubtitle]: !x

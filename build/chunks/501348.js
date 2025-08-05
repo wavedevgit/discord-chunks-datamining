@@ -1,4 +1,4 @@
-/** Chunk was on 22243 **/
+/** Chunk was on 85438 **/
 n.d(t, {
   Z: () => ei
 }), n(388685);
@@ -20,8 +20,8 @@ var i = n(255367),
   x = n(627845),
   _ = n(514361),
   j = n(803038),
-  E = n(600164),
-  C = n(313201),
+  C = n(600164),
+  E = n(313201),
   O = n(266454),
   v = n(786761),
   S = n(3148),
@@ -37,8 +37,8 @@ var i = n(255367),
   w = n(329013),
   k = n(333859),
   L = n(726985),
-  B = n(981631),
-  M = n(921944),
+  M = n(981631),
+  B = n(921944),
   U = n(959517),
   V = n(388032),
   G = n(716827),
@@ -53,7 +53,7 @@ function H(e, t, n) {
   }) : e[t] = n, e
 }
 
-function W(e) {
+function z(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -66,7 +66,7 @@ function W(e) {
   return e
 }
 
-function z(e, t) {
+function W(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -82,41 +82,41 @@ let Y = {
     COZY: "cozy",
     COMPACT: "compact"
   },
-  K = (0, C.hQ)(),
-  q = (0, C.hQ)(),
-  X = (0, C.hQ)(),
+  K = (0, E.hQ)(),
+  q = (0, E.hQ)(),
+  X = (0, E.hQ)(),
   J = "1337",
   Q = e => {
     let t = 0;
-    return [(0, v.e5)(z(W({}, (0, S.ZP)({
+    return [(0, v.e5)(W(z({}, (0, S.ZP)({
       channelId: J,
       content: V.intl.string(V.t.oZxkEh)
     })), {
-      state: B.yb.SENT,
+      state: M.yb.SENT,
       id: "".concat(t++)
-    })), (0, v.e5)(z(W({}, (0, S.ZP)({
+    })), (0, v.e5)(W(z({}, (0, S.ZP)({
       channelId: J,
       content: (0, d.wj)(e) ? V.intl.string(V.t["WGb/v7"]) : V.intl.string(V.t["62m4m5"])
     })), {
-      state: B.yb.SENT,
+      state: M.yb.SENT,
       id: "".concat(t++)
-    })), (0, v.e5)(z(W({}, (0, S.ZP)({
+    })), (0, v.e5)(W(z({}, (0, S.ZP)({
       channelId: J,
       content: V.intl.string(V.t.a0Byo6)
     })), {
-      state: B.yb.SENT,
+      state: M.yb.SENT,
       id: "".concat(t++)
-    })), (0, v.e5)(z(W({}, (0, S.ZP)({
+    })), (0, v.e5)(W(z({}, (0, S.ZP)({
       channelId: J,
       content: V.intl.string(V.t.bmwEWF)
     })), {
-      state: B.yb.SENT,
+      state: M.yb.SENT,
       id: "".concat(t++)
-    })), (0, v.e5)(z(W({}, (0, S.ZP)({
+    })), (0, v.e5)(W(z({}, (0, S.ZP)({
       channelId: J,
       content: V.intl.string(V.t.hK9QW1)
     })), {
-      state: B.yb.SENT,
+      state: M.yb.SENT,
       id: "".concat(t)
     }))]
   },
@@ -150,8 +150,8 @@ class ee extends r.Component {
       }), (0, i.jsx)(u.iRW, {
         className: a()(F.marginTop20, F.marginBottom4),
         initialValue: this.props.zoom,
-        defaultValue: B.yqN.ZOOM_DEFAULT,
-        markers: B.yqN.ZOOM_SCALES,
+        defaultValue: M.yqN.ZOOM_DEFAULT,
+        markers: M.yqN.ZOOM_SCALES,
         stickToMarkers: !0,
         onValueChange: this.handleZoomChange,
         onValueRender: this.handleSliderRender,
@@ -176,16 +176,16 @@ class ee extends r.Component {
         type: u.geA.DESCRIPTION,
         className: G.subtext,
         children: "Increase or decrease the size of the chat font"
-      }), (0, i.jsx)(E.Z, {
-        align: E.Z.Align.CENTER,
+      }), (0, i.jsx)(C.Z, {
+        align: C.Z.Align.CENTER,
         children: (0, i.jsx)(u.iRW, {
           className: a()({
             [F.marginTop20]: !1,
             [F.marginBottom4]: !1
           }),
           initialValue: this.props.fontSize,
-          defaultValue: B.yqN.FONT_SIZE_DEFAULT,
-          markers: B.yqN.FONT_SIZES,
+          defaultValue: M.yqN.FONT_SIZE_DEFAULT,
+          markers: M.yqN.FONT_SIZES,
           stickToMarkers: !0,
           onValueChange: this.handleFontSizeChange,
           onValueRender: this.handleSliderRenderPX,
@@ -266,7 +266,7 @@ class ee extends r.Component {
         className: G.forcedColorsWarning,
         children: (0, x.b)() ? V.intl.format(V.t.Jae48P, {
           onClick: () => {
-            p.Z.open(B.oAB.ACCESSIBILITY)
+            p.Z.open(M.oAB.ACCESSIBILITY)
           }
         }) : V.intl.string(V.t.AUMSZG)
       })
@@ -402,7 +402,7 @@ class ee extends r.Component {
         className: F.marginTop20,
         children: V.intl.format(V.t["5LEQdX"], {
           onAccessibilityClick() {
-            p.Z.open(B.oAB.ACCESSIBILITY)
+            p.Z.open(M.oAB.ACCESSIBILITY)
           }
         })
       })]
@@ -436,7 +436,7 @@ class ee extends r.Component {
     (0, f.cq)(e)
   }
   constructor(...e) {
-    super(...e), H(this, "darkMessages", Q(B.BRd.DARK)), H(this, "lightMessages", Q(B.BRd.LIGHT)), H(this, "handleDisplayCompactAvatarsChanged", e => {
+    super(...e), H(this, "darkMessages", Q(M.BRd.DARK)), H(this, "lightMessages", Q(M.BRd.LIGHT)), H(this, "handleDisplayCompactAvatarsChanged", e => {
       m.ZP.updatedUnsyncedSettings({
         displayCompactAvatars: e
       })
@@ -559,7 +559,7 @@ class et extends ee {
       className: G.a11yCallout,
       children: V.intl.format(V.t["5LEQdX"], {
         onAccessibilityClick() {
-          p.Z.open(B.oAB.ACCESSIBILITY)
+          p.Z.open(M.oAB.ACCESSIBILITY)
         }
       })
     });
@@ -572,7 +572,7 @@ class et extends ee {
 }
 let en = e => {
   (0, O.zu)(e) || (0, O.Q3)(e, {
-    dismissAction: M.L.AUTO,
+    dismissAction: B.L.AUTO,
     forceTrack: !0
   })
 };
@@ -607,7 +607,7 @@ function ei() {
         gradientPreset: _.Z.gradientPreset
       }
     });
-  return (0, i.jsx)(et, W({
+  return (0, i.jsx)(et, z({
     messageDisplayCompact: e,
     hideSimpleEmbedContent: t && n,
     clientTheme: s,

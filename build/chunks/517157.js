@@ -41,7 +41,7 @@ function s() {
     }, {
       applicationId: c.J6["6"]
     }],
-    u = [{
+    d = [{
       applicationId: c.J6["14"]
     }, {
       applicationId: c.J6["15"]
@@ -75,6 +75,6 @@ function s() {
     id: "4",
     type: i.l.GAME,
     gameWidgetType: r.g.PLAYED,
-    games: u
+    games: d
   }]
 }

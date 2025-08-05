@@ -1,4 +1,4 @@
-/** Chunk was on 22243 **/
+/** Chunk was on 85438 **/
 n.d(t, {
   $W: () => I,
   Mx: () => A,
@@ -26,8 +26,8 @@ var i, r = n(255367),
   x = n(430824),
   _ = n(699516),
   j = n(594174),
-  E = n(51144),
-  C = n(388032),
+  C = n(51144),
+  E = n(388032),
   O = n(212522);
 
 function v(e, t, n) {
@@ -151,7 +151,7 @@ class T extends s.Component {
     let {
       guild: e
     } = this.props;
-    return C.intl.formatToPlainString(C.t.WVq3Li, {
+    return E.intl.formatToPlainString(E.t.WVq3Li, {
       name: e.name
     })
   }
@@ -258,7 +258,7 @@ class I extends(i = s.Component) {
     let {
       channel: t
     } = this.props, n = null == (e = x.Z.getGuild(this.props.channel.guild_id)) ? void 0 : e.name, i = (0, d.F6)(t, j.default, _.Z), r = (0, m.Z)(t);
-    return C.intl.formatToPlainString(C.t["Vw/da2"], {
+    return E.intl.formatToPlainString(E.t["Vw/da2"], {
       name: i,
       type: r,
       guild: n
@@ -338,10 +338,10 @@ class N extends s.Component {
       channel: e,
       mentions: t
     } = this.props, n = (0, d.F6)(e, j.default, _.Z);
-    return null != t && t > 0 ? C.intl.formatToPlainString(C.t.LYdVfH, {
+    return null != t && t > 0 ? E.intl.formatToPlainString(E.t.LYdVfH, {
       name: n,
       mentions: t
-    }) : C.intl.formatToPlainString(C.t.lLSbnp, {
+    }) : E.intl.formatToPlainString(E.t.lLSbnp, {
       name: n
     })
   }
@@ -388,7 +388,7 @@ class y extends s.Component {
         comparator: n
       } = this.props,
       i = _.Z.getNickname(t.id);
-    return ((e = n === t.tag || null == n || "" === n ? t.username : n) === t.username || e === t.id) && (e = null != i ? i : E.ZP.getName(t)), e
+    return ((e = n === t.tag || null == n || "" === n ? t.username : n) === t.username || e === t.id) && (e = null != i ? i : C.ZP.getName(t)), e
   }
   renderName() {
     let e, {
@@ -406,7 +406,7 @@ class y extends s.Component {
         children: i
       }), e, (0, r.jsx)("span", {
         className: O.username,
-        children: E.ZP.getUserTag(t)
+        children: C.ZP.getUserTag(t)
       })]
     })
   }
@@ -427,12 +427,12 @@ class y extends s.Component {
     let {
       mentions: e,
       user: t
-    } = this.props, n = this.getDisplayNickname(), i = E.ZP.getUserTag(t);
-    return null != e && e > 0 ? C.intl.formatToPlainString(C.t["6b9Ura"], {
+    } = this.props, n = this.getDisplayNickname(), i = C.ZP.getUserTag(t);
+    return null != e && e > 0 ? E.intl.formatToPlainString(E.t["6b9Ura"], {
       name: n,
       id: i,
       mentions: e
-    }) : C.intl.formatToPlainString(C.t.GWYOAQ, {
+    }) : E.intl.formatToPlainString(E.t.GWYOAQ, {
       name: n,
       id: i
     })
@@ -521,13 +521,13 @@ class R extends s.Component {
         children: i
       } = this.props,
       s = (0, f.Qj)(n.path);
-    return null == s || void 0 === s.messageId ? (e = C.intl.string(C.t.qbSCqq), t = (0, r.jsx)(a.xPt, {
+    return null == s || void 0 === s.messageId ? (e = E.intl.string(E.t.qbSCqq), t = (0, r.jsx)(a.xPt, {
       size: "xs",
       color: "currentColor"
-    })) : (0, f.VO)(s) ? (e = C.intl.string(C.t["6Fd/j4"]), t = (0, r.jsx)(a.acy, {
+    })) : (0, f.VO)(s) ? (e = E.intl.string(E.t["6Fd/j4"]), t = (0, r.jsx)(a.acy, {
       size: "xs",
       color: "currentColor"
-    })) : (e = C.intl.string(C.t.jQRwp6), t = (0, r.jsx)(a.mBM, {
+    })) : (e = E.intl.string(E.t.jQRwp6), t = (0, r.jsx)(a.mBM, {
       size: "xs",
       color: "currentColor"
     })), (0, r.jsxs)("div", {
@@ -579,32 +579,32 @@ class D extends s.Component {
       c = s ? a.iWm : a.jje;
     switch (n.type) {
       case o.Ky.SHOP:
-        e = C.intl.string(C.t.pWG4zc), t = (0, r.jsx)(a.EOn, {
+        e = E.intl.string(E.t.pWG4zc), t = (0, r.jsx)(a.EOn, {
           size: "xs",
           color: "currentColor"
         });
         break;
       case o.Ky.NITRO_HOME:
-        e = C.intl.string(C.t.Ipxkoq), t = (0, r.jsx)(a.SrA, {
+        e = E.intl.string(E.t.Ipxkoq), t = (0, r.jsx)(a.SrA, {
           size: "xs",
           color: "currentColor"
         });
         break;
       case o.Ky.QUEST_HOME:
-        e = C.intl.string(C.t.JALI2N), t = (0, r.jsx)(a.qDn, {
+        e = E.intl.string(E.t.JALI2N), t = (0, r.jsx)(a.qDn, {
           size: "xs",
           color: "currentColor"
         });
         break;
       case o.Ky.APPS_HOME:
-        e = C.intl.string(C.t.PHjkRE), t = (0, r.jsx)(c, {
+        e = E.intl.string(E.t.PHjkRE), t = (0, r.jsx)(c, {
           size: "xs",
           color: "currentColor"
         });
         break;
       case o.Ky.SETTINGS:
         var d;
-        e = null != (d = n.label) ? d : C.intl.string(C.t["3D5yo6"]), t = (0, r.jsx)(a.ewm, {
+        e = null != (d = n.label) ? d : E.intl.string(E.t["3D5yo6"]), t = (0, r.jsx)(a.ewm, {
           size: "xs",
           color: "currentColor"
         });

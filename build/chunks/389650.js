@@ -1,4 +1,4 @@
-/** Chunk was on 22243 **/
+/** Chunk was on 85438 **/
 n.d(t, {
   Z: () => H
 }), n(953529), n(388685), n(539854);
@@ -20,8 +20,8 @@ var i = n(255367),
   x = n(714338),
   _ = n(924557),
   j = n(600164),
-  E = n(74299),
-  C = n(577153),
+  C = n(74299),
+  E = n(577153),
   O = n(365023),
   v = n(610394),
   S = n(131951),
@@ -46,7 +46,7 @@ function L(e, t, n) {
   }) : e[t] = n, e
 }
 
-function B(e) {
+function M(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -59,7 +59,7 @@ function B(e) {
   return e
 }
 
-function M(e, t) {
+function B(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -150,7 +150,7 @@ class G extends r.PureComponent {
             className: Z.switch,
             children: (0, i.jsx)(m.ua7, {
               text: D.intl.string(D.t.uCD7qK),
-              children: e => (0, i.jsx)("div", M(B({}, e), {
+              children: e => (0, i.jsx)("div", B(M({}, e), {
                 children: (0, i.jsx)(m.rsf, {
                   checked: t,
                   onChange: this.handleEnableDisable
@@ -174,11 +174,11 @@ class G extends r.PureComponent {
   }
   constructor(...e) {
     super(...e), L(this, "handleActionChanged", e => {
-      p.Z.setKeybind(M(B({}, this.props.keybind), {
+      p.Z.setKeybind(B(M({}, this.props.keybind), {
         action: e
       }))
     }), L(this, "handleShortcutChange", e => {
-      p.Z.setKeybind(M(B({}, this.props.keybind), {
+      p.Z.setKeybind(B(M({}, this.props.keybind), {
         shortcut: e
       }))
     }), L(this, "handleDeleteKeybind", () => {
@@ -187,7 +187,7 @@ class G extends r.PureComponent {
       let {
         keybind: e
       } = this.props;
-      p.Z.setKeybind(M(B({}, this.props.keybind), {
+      p.Z.setKeybind(B(M({}, this.props.keybind), {
         enabled: !e.enabled
       }))
     })
@@ -206,7 +206,7 @@ class F extends r.PureComponent {
       canGoLive: t,
       allowSoundboard: n,
       enableClips: i
-    } = this.props, r = C.Z.getCurrentConfig({
+    } = this.props, r = E.Z.getCurrentConfig({
       location: "UserSettingsKeybinds"
     }, {
       autoTrackExposure: !1
@@ -288,7 +288,7 @@ class F extends r.PureComponent {
       [P.kg4.TOGGLE_VOICE_MODE]: D.intl.string(D.t.snm5YW),
       [P.kg4.TOGGLE_STREAMER_MODE]: D.intl.string(D.t.YszLLy)
     };
-    return C.Z.getCurrentConfig({
+    return E.Z.getCurrentConfig({
       location: "UserSettingsKeybinds"
     }, {
       autoTrackExposure: !1
@@ -409,7 +409,7 @@ class F extends r.PureComponent {
 
 function H() {
   let e = (0, c.e7)([T.ZP], () => T.ZP.getState()),
-    t = (0, c.e7)([S.Z], () => (0, E.Z)(S.Z)),
+    t = (0, c.e7)([S.Z], () => (0, C.Z)(S.Z)),
     n = (0, c.e7)([v.ZP], () => v.ZP.isSupported()),
     r = (0, _.Go)();
   return (0, i.jsx)(F, {

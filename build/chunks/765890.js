@@ -1,5 +1,4 @@
-/** Chunk was on 69416 **/
-"use strict";
+/** Chunk was on 85438 **/
 e.exports = {
   flex: "flex__48a9c",
   flexChild: "flexChild__48a9c",

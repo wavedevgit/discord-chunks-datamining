@@ -1,4 +1,4 @@
-/** Chunk was on 22243 **/
+/** Chunk was on 85438 **/
 n.d(t, {
   Z: () => x
 });
@@ -29,8 +29,8 @@ function x() {
     x = p.cC.useSetting(),
     _ = p.vF.useSetting(),
     j = p.H1.useSetting(),
-    E = p.ev.useSetting(),
-    C = p.x4.useSetting(),
+    C = p.ev.useSetting(),
+    E = p.x4.useSetting(),
     O = p.RS.useSetting(),
     v = p.NA.useSetting(),
     S = p.nc.useSetting(),
@@ -57,7 +57,7 @@ function x() {
         setting: g.s6.CHAT_INLINE_MEDIA_UPLOADS,
         children: (0, i.jsx)(a.j7V, {
           className: s()(b.marginTop8, b.marginBottom20),
-          value: C,
+          value: E,
           note: f.intl.formatToPlainString(f.t.qjjvqK, {
             maxSize: 10
           }),
@@ -105,7 +105,7 @@ function x() {
         setting: g.s6.CHAT_EMOJI_EMOTICONS,
         children: (0, i.jsx)(a.j7V, {
           className: b.marginBottom40,
-          value: E,
+          value: C,
           note: c.Z.parse(f.intl.string(f.t["20dvub"])),
           onChange: p.ev.updateSetting,
           children: f.intl.string(f.t["79qal5"])

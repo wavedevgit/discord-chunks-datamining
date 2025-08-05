@@ -1,2 +1,2 @@
-/** Chunk was on 22243 **/
+/** Chunk was on 85438 **/
 e.exports = n.p + "952ddb7d3602e940.ttf"

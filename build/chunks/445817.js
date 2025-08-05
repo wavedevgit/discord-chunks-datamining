@@ -1,4 +1,4 @@
-/** Chunk was on 22243 **/
+/** Chunk was on 85438 **/
 n.d(t, {
   Z: () => _
 }), n(388685);
@@ -27,13 +27,13 @@ function _(e) {
     previewEnabled: t,
     onEnablePreview: n,
     onCancelPreview: _
-  } = e, j = p.Z.getCameraComponent(), [E, C] = r.useState((0, c.P)(g.default.getCurrentUser())), O = r.useRef(!1), v = r.useRef(E), S = (0, o.O)(), T = (0, s.e7)([p.Z], () => p.Z.isVideoAvailable());
+  } = e, j = p.Z.getCameraComponent(), [C, E] = r.useState((0, c.P)(g.default.getCurrentUser())), O = r.useRef(!1), v = r.useRef(C), S = (0, o.O)(), T = (0, s.e7)([p.Z], () => p.Z.isVideoAvailable());
   return r.useEffect(() => () => {
     O.current && l.Z.wait(() => (0, d.Up)(v.current))
   }, []), (0, i.jsx)(m.Z, {
-    selectedBackgroundOption: E,
+    selectedBackgroundOption: C,
     onSelectBackgroundOption: e => {
-      O.current = !0, v.current = e, C(e), (0, u.wG)(e, {
+      O.current = !0, v.current = e, E(e), (0, u.wG)(e, {
         location: S.location
       }).catch(h.dG4)
     },

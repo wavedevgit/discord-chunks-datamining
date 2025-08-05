@@ -1,4 +1,4 @@
-/** Chunk was on 22243 **/
+/** Chunk was on 85438 **/
 n.d(t, {
   Z: () => u
 });
@@ -25,8 +25,8 @@ let u = r.forwardRef(function(e, t) {
     orangeGlow: x,
     tooltipClassName: _,
     onMouseEnter: j,
-    onMouseLeave: E,
-    "aria-label": C,
+    onMouseLeave: C,
+    "aria-label": E,
     "aria-checked": O,
     role: v,
     tooltipColor: S,
@@ -43,7 +43,7 @@ let u = r.forwardRef(function(e, t) {
   return (0, i.jsx)(o.ua7, {
     tooltipClassName: _,
     text: n,
-    "aria-label": C,
+    "aria-label": E,
     color: S,
     tooltipContentClassName: I,
     forceOpen: T,
@@ -53,7 +53,7 @@ let u = r.forwardRef(function(e, t) {
           onMouseEnter: g,
           onMouseLeave: _
         } = e,
-        C = function(e, t) {
+        E = function(e, t) {
           if (null == e) return {};
           var n, i, r = function(e, t) {
             if (null == e) return {};
@@ -85,7 +85,7 @@ let u = r.forwardRef(function(e, t) {
           })
         }
         return e
-      }({}, C), o = o = {
+      }({}, E), o = o = {
         buttonRef: t,
         look: l.zx.Looks.BLANK,
         size: l.zx.Sizes.NONE,
@@ -107,7 +107,7 @@ let u = r.forwardRef(function(e, t) {
           null == g || g(), null == j || j()
         },
         onMouseLeave: () => {
-          null == _ || _(), null == E || E()
+          null == _ || _(), null == C || C()
         },
         onContextMenu: s,
         role: v,

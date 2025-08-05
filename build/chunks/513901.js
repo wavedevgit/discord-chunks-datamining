@@ -1,4 +1,4 @@
-/** Chunk was on 22243 **/
+/** Chunk was on 85438 **/
 n.d(t, {
   Z: () => j
 });
@@ -26,8 +26,8 @@ function j(e) {
     guild: n,
     className: s,
     sectionTitle: j,
-    forcedDivider: E = !1,
-    withTutorial: C = !1,
+    forcedDivider: C = !1,
+    withTutorial: E = !1,
     showBorder: O = !1,
     isTryItOutFlow: v = !1,
     initialSelectedEffectId: S
@@ -48,9 +48,9 @@ function j(e) {
     })
   }, [I, N]);
   let R = null != n,
-    D = C ? o.gtL : l.zx;
+    D = E ? o.gtL : l.zx;
   return (0, i.jsx)(g.Z, {
-    forcedDivider: E,
+    forcedDivider: C,
     borderType: h.Y.PREMIUM,
     hasBackground: !0,
     title: j,
@@ -63,7 +63,7 @@ function j(e) {
         size: l.zx.Sizes.SMALL,
         onClick: P,
         className: a()({
-          [_.buttonHighlighted]: C
+          [_.buttonHighlighted]: E
         }),
         children: x.intl.string(x.t["/dRfCQ"])
       }), (v || void 0 !== y ? null != y : null != T) && (0, i.jsx)("div", {

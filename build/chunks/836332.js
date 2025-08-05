@@ -1,4 +1,4 @@
-/** Chunk was on 22243 **/
+/** Chunk was on 85438 **/
 n.d(t, {
   Z: () => j
 }), n(388685);
@@ -24,14 +24,14 @@ let j = r.forwardRef((e, t) => {
     className: n,
     isFooterVisible: s,
     isDarkMode: j,
-    isReducedMotion: E,
-    subscriptionTier: C
+    isReducedMotion: C,
+    subscriptionTier: E
   } = e, {
     analyticsLocations: O
   } = (0, c.ZP)(o.Z.PREMIUM_MARKETING_FOOTER_CTA), v = (0, m.Nx)(), S = (0, u.rO)(), T = r.useRef(null), [I, N] = r.useState(!1);
   return r.useEffect(() => {
-    !s || E || I || null == T.current || T.current.play()
-  }, [s, E, I]), (0, i.jsx)(c.Gt, {
+    !s || C || I || null == T.current || T.current.play()
+  }, [s, C, I]), (0, i.jsx)(c.Gt, {
     value: O,
     children: (0, i.jsxs)("div", {
       ref: t,
@@ -42,7 +42,7 @@ let j = r.forwardRef((e, t) => {
         color: "header-primary",
         children: h.intl.string(h.t.lEw32t)
       }), (0, i.jsx)(p.PK, {
-        subscriptionTier: C,
+        subscriptionTier: E,
         inOfferExperience: v,
         containerClassName: f.footerCTAContainer,
         isApplicationHome: !0,

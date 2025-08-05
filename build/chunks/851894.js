@@ -1,4 +1,4 @@
-/** Chunk was on 22243 **/
+/** Chunk was on 85438 **/
 n.d(t, {
   Z: () => k
 });
@@ -20,8 +20,8 @@ var i = n(255367),
   x = n(678135),
   _ = n(643879),
   j = n(621853),
-  E = n(271383),
-  C = n(246946),
+  C = n(271383),
+  E = n(246946),
   O = n(594174),
   v = n(63063),
   S = n(74538),
@@ -87,13 +87,13 @@ function k(e) {
   } = (0, p.ZP)(u.Z.USER_SETTINGS_GUILD_PROFILE), k = (0, l.e7)([O.default], () => {
     let e = O.default.getCurrentUser();
     return a()(null != e, "GuildIdentitySettingsPage: user cannot be undefined"), e
-  }), L = (0, l.e7)([j.Z], () => !j.Z.isFetchingProfile(k.id, null == n ? void 0 : n.id)), B = (0, l.e7)([C.Z], () => C.Z.hidePersonalInformation), M = (0, l.cj)([I.Z], () => Z(D({}, I.Z.getAllPending()), {
+  }), L = (0, l.e7)([j.Z], () => !j.Z.isFetchingProfile(k.id, null == n ? void 0 : n.id)), M = (0, l.e7)([E.Z], () => E.Z.hidePersonalInformation), B = (0, l.cj)([I.Z], () => Z(D({}, I.Z.getAllPending()), {
     source: I.Z.getSource()
   })), {
     source: U,
     pendingAvatar: V,
     pendingNameplate: G
-  } = M, F = function(e, t) {
+  } = B, F = function(e, t) {
     if (null == e) return {};
     var n, i, r = function(e, t) {
       if (null == e) return {};
@@ -107,10 +107,10 @@ function k(e) {
       for (i = 0; i < s.length; i++) n = s[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n])
     }
     return r
-  }(M, ["source", "pendingAvatar", "pendingNameplate"]), H = (0, _.SD)({
+  }(B, ["source", "pendingAvatar", "pendingNameplate"]), H = (0, _.SD)({
     userId: k.id,
     image: V
-  }), W = (0, l.e7)([E.ZP], () => null != n ? E.ZP.getMember(n.id, k.id) : null);
+  }), z = (0, l.e7)([C.ZP], () => null != n ? C.ZP.getMember(n.id, k.id) : null);
   r.useEffect(() => () => c.Z.wait(T.W3), []), r.useEffect(() => {
     null != U && m.ZP.trackWithMetadata(P.rMx.SETTINGS_PANE_VIEWED, {
       settings_type: "guild",
@@ -119,11 +119,11 @@ function k(e) {
     })
   }, [U]);
   let {
-    enabled: z
+    enabled: W
   } = h.Z.useConfig({
     location: "GuildIdentitySettingsPage"
   });
-  return B ? (0, i.jsx)(d.Z, {}) : L ? (0, i.jsxs)(p.Gt, {
+  return M ? (0, i.jsx)(d.Z, {}) : L ? (0, i.jsxs)(p.Gt, {
     value: s,
     children: [(0, i.jsx)(o.Text, {
       variant: "text-sm/normal",
@@ -147,15 +147,15 @@ function k(e) {
           canUsePremiumCustomization: S.ZP.canUsePremiumProfileCustomization(k),
           onUpsellClick: w
         })),
-        nameplatePreview: z ? (0, i.jsx)(g.Z, {
+        nameplatePreview: W ? (0, i.jsx)(g.Z, {
           user: k,
           guildId: null == n ? void 0 : n.id,
           nameplate: G,
-          nameplateData: void 0 === G ? (0, f.Pb)(null == W || null == (t = W.collectibles) ? void 0 : t.nameplate) : void 0,
+          nameplateData: void 0 === G ? (0, f.Pb)(null == z || null == (t = z.collectibles) ? void 0 : t.nameplate) : void 0,
           isHighlighted: !0
         }) : null,
         children: (0, i.jsx)(y.Z, {
-          nameplateEnabled: z
+          nameplateEnabled: W
         })
       })]
     }) : (0, i.jsx)(N.Z, {})]

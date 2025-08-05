@@ -1,4 +1,4 @@
-/** Chunk was on 22243 **/
+/** Chunk was on 85438 **/
 n.d(t, {
   Z: () => b
 }), n(388685);
@@ -89,27 +89,27 @@ function b(e) {
     p(g({
       route: d.j.SWITCH_APP_PLANS
     }, e)), n(m.intl.string(m.t.VFqtkJ), x)
-  }, [j, E] = r.useState({});
+  }, [j, C] = r.useState({});
   r.useEffect(() => {
     for (let n of t) {
       var e;
       let t = null == (e = n.items[0]) ? void 0 : e.planId;
-      null != t && (E(e => h(g({}, e), {
+      null != t && (C(e => h(g({}, e), {
         [n.id]: c.G.LOADING
       })), (0, l.vY)(t).then(() => {
-        E(e => h(g({}, e), {
+        C(e => h(g({}, e), {
           [n.id]: c.G.DONE
         }))
       }).catch(() => {
-        E(e => h(g({}, e), {
+        C(e => h(g({}, e), {
           [n.id]: c.G.ERROR
         }))
       }))
     }
   }, [t]);
   let {
-    loadState: C
-  } = (0, o.qz)(), O = C !== o.jd.LOADED;
+    loadState: E
+  } = (0, o.qz)(), O = E !== o.jd.LOADED;
   switch (b) {
     case d.j.HOME:
       return (0, i.jsx)(i.Fragment, {

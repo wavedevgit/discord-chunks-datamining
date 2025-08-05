@@ -1,4 +1,4 @@
-/** Chunk was on 22243 **/
+/** Chunk was on 85438 **/
 n.d(t, {
   NA: () => ee,
   ZP: () => en,
@@ -20,8 +20,8 @@ var i, r, s = n(230711),
   x = n(985443),
   _ = n(612253),
   j = n(872532),
-  E = n(404583),
-  C = n(295349),
+  C = n(404583),
+  E = n(295349),
   O = n(631572),
   v = n(999675),
   S = n(238027),
@@ -37,15 +37,15 @@ var i, r, s = n(230711),
   w = n(85726),
   k = n(91342),
   L = n(181708),
-  B = n(290650),
-  M = n(751125),
+  M = n(290650),
+  B = n(751125),
   U = n(357003),
   V = n(904505),
   G = n(712626),
   F = n(386014),
   H = n(845571),
-  W = n(220046),
-  z = n(385874),
+  z = n(220046),
+  W = n(385874),
   Y = n(371e3),
   K = n(310960),
   q = n(815581),
@@ -82,7 +82,7 @@ let et = (e, t) => (function(e) {
     },
     serverProfiles: {
       thumbnail: j,
-      assetUrl: e ? H.ZP : W.ZP
+      assetUrl: e ? H.ZP : z.ZP
     }
   }, t ? {
     referralProgram: {
@@ -98,8 +98,8 @@ let et = (e, t) => (function(e) {
       assetUrl: e ? D.Z : w.Z
     },
     emojis: {
-      thumbnail: C.Z,
-      assetUrl: e ? E.Z : O.Z
+      thumbnail: E.Z,
+      assetUrl: e ? C.Z : O.Z
     },
     noLimits: {
       thumbnail: S.Z,
@@ -112,7 +112,7 @@ let et = (e, t) => (function(e) {
     },
     showYourStyle: {
       thumbnail: _,
-      assetUrl: e ? z.Z : Y.Z
+      assetUrl: e ? W.Z : Y.Z
     },
     yourSpace: {
       thumbnail: x,
@@ -124,7 +124,7 @@ let et = (e, t) => (function(e) {
     },
     noLimits: {
       thumbnail: b,
-      assetUrl: e ? B.ZP : M.ZP
+      assetUrl: e ? M.ZP : B.ZP
     }
   }),
   en = () => {
@@ -171,7 +171,7 @@ let et = (e, t) => (function(e) {
       }),
       previewImage: f.referralProgram.thumbnail,
       videoUrl: f.referralProgram.assetUrl
-    }, E = {
+    }, C = {
       name: "showYourStyle",
       title: h.intl.string(h.t.Ij3Zmp),
       description: h.intl.string(h.t.UsOUxc),
@@ -179,7 +179,7 @@ let et = (e, t) => (function(e) {
       previewImage: f.showYourStyle.thumbnail,
       onClick: t,
       videoUrl: f.showYourStyle.assetUrl
-    }, C = {
+    }, E = {
       name: "yourSpace",
       title: h.intl.string(h.t.Wme3nZ),
       description: h.intl.string(h.t["/aAIqa"]),
@@ -208,8 +208,8 @@ let et = (e, t) => (function(e) {
         [_, j]
       ],
       bestOfBoxes: [
-        [E],
         [C],
+        [E],
         [O, {
           name: "noLimits",
           title: h.intl.string(h.t["6b3ydH"]),

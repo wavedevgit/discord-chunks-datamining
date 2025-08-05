@@ -11,12 +11,12 @@ a.d(t, {
   S2: () => H,
   W6: () => en,
   XM: () => er,
-  YC: () => ex,
+  YC: () => ep,
   YE: () => ei,
   h9: () => es,
   iw: () => ea,
   jC: () => V,
-  jQ: () => z,
+  jQ: () => G,
   lT: () => X,
   rd: () => ed,
   t4: () => ec,
@@ -31,8 +31,8 @@ var n, r, l = a(73800),
   d = a(694626),
   u = a(855930),
   m = a(385787),
-  x = a(566162),
-  p = a(567027),
+  p = a(566162),
+  x = a(567027),
   h = a(461195),
   b = a(857702),
   f = a(20450),
@@ -97,8 +97,8 @@ let B = {
     HPLuv: d.Z,
     HSL: u.Z,
     HSLuv: m.Z,
-    HSV: x.Z,
-    HWB: p.Z,
+    HSV: p.Z,
+    HWB: x.Z,
     ICTCP: h.Z,
     JzCzHz: b.Z,
     Jzazbz: f.Z,
@@ -117,11 +117,11 @@ let B = {
     XYZ_D50: I.Z,
     XYZ_D65: w.Z
   },
-  z = Object.fromEntries(Object.keys(B).map(e => [e, e]));
+  G = Object.fromEntries(Object.keys(B).map(e => [e, e]));
 Object.values(B).forEach(e => R.Z.register(e));
 let {
-  SemanticColors: G
-} = L.V, V = G, H = CSS.supports("color", "color(display-p3 1 0 0)") && CSS.supports("color", "color(display-p3 1 0 0 / 1)");
+  SemanticColors: z
+} = L.V, V = z, H = CSS.supports("color", "color(display-p3 1 0 0)") && CSS.supports("color", "color(display-p3 1 0 0 / 1)");
 
 function W(e, t) {
   let [a, n] = l.useState(() => {
@@ -222,24 +222,24 @@ function er(e) {
   }), u = (0, Z.CD)(c, "black", 1 - l, {
     space: o,
     outputSpace: i.Z
-  }), m = Math.floor(n / 2), x = n - m, p = (0, Z.w6)(d, c, {
+  }), m = Math.floor(n / 2), p = n - m, x = (0, Z.w6)(d, c, {
     steps: m,
     outputSpace: o,
     space: o,
     progression: e => e ** s
   }), h = (0, Z.w6)(u, c, {
-    steps: x,
+    steps: p,
     outputSpace: o,
     space: o,
     progression: e => e ** s
   }), b = [];
   for (let e = 0; e < m; e++) {
-    let t = p(e / m);
+    let t = x(e / m);
     b.push(t)
   }
   b.push(c);
-  for (let e = 1; e < x; e++) {
-    let t = h(1 - e / x);
+  for (let e = 1; e < p; e++) {
+    let t = h(1 - e / p);
     b.push(t)
   }
   return Object.fromEntries(b.map((e, a) => ["".concat(t, "-").concat(a), e]))
@@ -293,7 +293,7 @@ function em(e, t, a) {
   }), a)
 }
 
-function ex(e, t, a) {
+function ep(e, t, a) {
   el(e, e => F(U({}, e), {
     steps: t
   }), a)

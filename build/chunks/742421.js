@@ -1,5 +1,4 @@
-/** Chunk was on 69416 **/
-"use strict";
+/** Chunk was on 85438 **/
 e.exports = {
   flexVertical: "flexVertical__2d3fe",
   flexHorizontal: "flexHorizontal__2d3fe",

@@ -1,4 +1,4 @@
-/** Chunk was on 22243 **/
+/** Chunk was on 85438 **/
 n.d(t, {
   Z: () => X
 });
@@ -20,8 +20,8 @@ var i = n(255367),
   x = n(600164),
   _ = n(690221),
   j = n(332473),
-  E = n(303172),
-  C = n(518560),
+  C = n(303172),
+  E = n(518560),
   O = n(921801),
   v = n(577275),
   S = n(484459),
@@ -37,15 +37,15 @@ var i = n(255367),
   w = n(10298),
   k = n(526156),
   L = n(730820),
-  B = n(888256),
-  M = n(2719),
+  M = n(888256),
+  B = n(2719),
   U = n(194530),
   V = n(726985),
   G = n(981631),
   F = n(801461),
   H = n(388032),
-  W = n(951839),
-  z = n(20493);
+  z = n(951839),
+  W = n(20493);
 
 function Y(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -95,7 +95,7 @@ class q extends r.PureComponent {
     if (!e.isClaimed()) {
       let e = (0, i.jsxs)("section", {
         children: [(0, i.jsx)("div", {
-          className: W.accountWarningBodyText,
+          className: z.accountWarningBodyText,
           children: H.intl.string(H.t.qKs3vr)
         }), (0, i.jsx)(u.zx, {
           look: u.iL.OUTLINED,
@@ -107,7 +107,7 @@ class q extends r.PureComponent {
       });
       return (0, i.jsx)(m.ToO, {
         type: m.ToO.Types.DANGER,
-        className: z.marginBottom20,
+        className: W.marginBottom20,
         imageData: {
           src: n(418558),
           width: 60,
@@ -121,7 +121,7 @@ class q extends r.PureComponent {
     if (!e.verified) {
       let e = (0, i.jsxs)("section", {
         children: [(0, i.jsx)("div", {
-          className: W.accountWarningBodyText,
+          className: z.accountWarningBodyText,
           children: H.intl.string(H.t.NAzplJ)
         }), (0, i.jsx)(Z.Z, {
           size: u.Ph.SMALL,
@@ -130,7 +130,7 @@ class q extends r.PureComponent {
       });
       return (0, i.jsx)(m.ToO, {
         type: m.ToO.Types.PRIMARY,
-        className: z.marginBottom20,
+        className: W.marginBottom20,
         imageData: {
           src: n(449125),
           width: 60,
@@ -143,11 +143,11 @@ class q extends r.PureComponent {
   }
   renderPomeloWarning() {
     return this.props.shouldRenderPomeloWarning ? (0, i.jsxs)(m.Wn, {
-      className: W.accountWarningBodyText,
+      className: z.accountWarningBodyText,
       messageType: m.QYI.WARNING,
       children: [H.intl.format(H.t.pdYZys, {}), " ", "", (0, i.jsx)(_.Z, {
-        className: W.noticeTextButton,
-        onClick: () => (0, E.Z)(F.Kq.USER_SETTINGS),
+        className: z.noticeTextButton,
+        onClick: () => (0, C.Z)(F.Kq.USER_SETTINGS),
         children: H.intl.string(H.t.LhlgY2)
       })]
     }) : null
@@ -155,7 +155,7 @@ class q extends r.PureComponent {
   renderAccountSettings() {
     let e = !(arguments.length > 0) || void 0 === arguments[0] || arguments[0],
       t = (0, i.jsxs)(i.Fragment, {
-        children: [this.renderPomeloWarning(), this.renderAccountWarning(), (0, i.jsx)(M.Z, {})]
+        children: [this.renderPomeloWarning(), this.renderAccountWarning(), (0, i.jsx)(B.Z, {})]
       });
     return e ? (0, i.jsx)(m.hjN, {
       tag: m.RB0.H1,
@@ -170,15 +170,15 @@ class q extends r.PureComponent {
       theme: r
     } = this.props, s = (0, d.wj)(r) ? n(555702) : n(610802);
     return (0, i.jsxs)(m.hjN, {
-      className: a()(W.userSettingsSecurity, z.marginTop40),
+      className: a()(z.userSettingsSecurity, W.marginTop40),
       title: H.intl.string(H.t.pKSjEh),
       tag: "h1",
       children: [t.mfaEnabled ? (0, i.jsx)(m.hjN, {
         children: (0, i.jsxs)(m.vwX, {
-          className: a()(W.isEnabled, z.marginBottom20),
+          className: a()(z.isEnabled, W.marginBottom20),
           children: [(0, i.jsx)("img", {
             alt: "",
-            className: W.lockIcon,
+            className: z.lockIcon,
             src: n(511391)
           }), H.intl.string(H.t.FsmBy8)]
         })
@@ -187,7 +187,7 @@ class q extends r.PureComponent {
         children: (0, i.jsx)("div", {
           children: (0, i.jsx)("div", {
             "data-button-hoisted-classname-wrapper": !0,
-            className: W.changePasswordButton,
+            className: z.changePasswordButton,
             children: (0, i.jsx)(m.zxk, {
               variant: "primary",
               size: "sm",
@@ -213,7 +213,7 @@ class q extends r.PureComponent {
             grow: 0,
             children: (0, i.jsx)("img", {
               src: s,
-              className: W.userSettingsSecurityImage,
+              className: z.userSettingsSecurityImage,
               alt: ""
             })
           })]
@@ -305,8 +305,8 @@ class q extends r.PureComponent {
       currentUser: e,
       userTeamsLoading: t
     } = this.props;
-    return (0, i.jsx)(B.Z, {
-      className: z.marginTop40,
+    return (0, i.jsx)(M.Z, {
+      className: W.marginTop40,
       currentUser: e,
       disabled: t,
       handleDisableAccount: () => this.handleDisableAccount(!1),
@@ -336,7 +336,7 @@ class q extends r.PureComponent {
       children: (0, i.jsx)(k.Z, {
         parentSetting: V.s6.ACCOUNT,
         settingsSection: G.oAB.ACCOUNT,
-        panelClassName: W.tabPanel,
+        panelClassName: z.tabPanel,
         onTabChange: e => {
           P.default.track(G.rMx.MY_ACCOUNT_PAGE_TAB_NAVIGATE, {
             target_tab_name: e === V.s6.ACCOUNT_SECURITY_TAB ? "SECURITY" : "STANDING"
@@ -349,7 +349,7 @@ class q extends r.PureComponent {
           setting: V.s6.ACCOUNT_SECURITY_TAB
         }, {
           title: H.intl.string(H.t["Vov/9v"]),
-          component: C.Z,
+          component: E.Z,
           setting: V.s6.PRIVACY_AND_SAFETY_STANDING
         }]
       })

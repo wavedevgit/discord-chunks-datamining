@@ -1,0 +1,251 @@
+/**
+  Module ID: 81709
+  Original File Name: 8b67b32bc2d2979e
+**/
+.confettiCanvas__6c43c {
+    height: 100%;
+    position: absolute;
+    width: 100%
+}
+
+.body__996b0 {
+    background-color: var(--modal-background);
+    color: var(--text-default);
+    font-size: 16px;
+    line-height: 20px;
+    padding-bottom: 16px
+}
+
+.confirmDiscountContent__996b0 {
+    padding-top: 30px
+}
+
+.confirmDiscountDescription__996b0 {
+    align-items: center;
+    display: flex;
+    padding-top: 28px
+}
+
+.confirmDiscountIcon__996b0 {
+    padding-right: 20px
+}
+
+.confirmDiscountLegalese__996b0 {
+    padding-top: 28px
+}
+
+.confirmDiscountLegaleseText__996b0 {
+    color: var(--interactive-normal)
+}
+
+.confirmDiscountButtons__996b0 {
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 8px
+}
+
+.confrimDiscountsButtonsError__996b0 {
+    padding-top: 4px
+}
+
+.confrimDiscountsButtonsNoError__996b0 {
+    padding-top: 20px
+}
+
+.redemptionFailedMessage__996b0 {
+    display: flex;
+    justify-content: flex-end
+}
+
+.redemptionFailedMessageCopy__996b0 {
+    color: red
+}
+
+.body__22665 {
+    color: var(--text-default);
+    font-size: 16px;
+    line-height: 20px;
+    padding-bottom: 16px
+}
+
+.cancellationHeader__22665 {
+    margin-bottom: -4px
+}
+
+.whatYouLoseButtonContainer__22665 {
+    display: flex;
+    flex-direction: row-reverse
+}
+
+.discountAppliedBody__22665 {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px
+}
+
+.bodyString__22665 {
+    margin-bottom: 20px
+}
+
+.nitroIcon__22665 {
+    height: 34px;
+    padding-right: 10px;
+    width: 34px
+}
+
+.body_e1372c {
+    color: var(--text-default);
+    font-size: 16px;
+    line-height: 20px;
+    padding-bottom: 16px
+}
+
+.invoiceTable_e1372c {
+    margin: 16px 0
+}
+
+.errorBlock_e1372c {
+    margin-bottom: 16px
+}
+
+.cancelImage_e1372c {
+    height: 144px;
+    margin: 0 auto 24px;
+    width: 166px
+}
+
+.previewStep_e1372c {
+    padding-top: 16px
+}
+
+.loading_e1372c {
+    height: 200px
+}
+
+.renewalInvoiceDate_e1372c {
+    margin-bottom: 16px
+}
+
+html .invoiceCancelRow_e1372c {
+    color: var(--status-danger)
+}
+
+.theme-dark .cancelImage_e1372c {
+    background: url(/assets/7c095ad6ca59d3e2.svg)
+}
+
+.theme-light .cancelImage_e1372c {
+    background: url(/assets/2ac7d3011762752b.svg)
+}
+
+.whatYouLoseButtonContainer_e1372c {
+    display: flex;
+    flex-direction: row-reverse
+}
+
+.confettiCanvas_e1372c {
+    height: 100%;
+    position: absolute;
+    width: 100%
+}
+
+.subtitle_e1372c {
+    margin-top: 8px
+}
+
+.cancelText_e1372c {
+    color: var(--text-danger)
+}
+
+.cancelText_e1372c,.radioOption_e1372c {
+    display: flex
+}
+
+.body_b9f95d {
+    color: var(--text-default);
+    font-size: 16px;
+    line-height: 20px;
+    padding-bottom: 16px
+}
+
+.invoiceTable_b9f95d {
+    margin: 16px 0
+}
+
+.errorBlock_b9f95d {
+    margin-bottom: 16px
+}
+
+.cancelImage_b9f95d {
+    height: 144px;
+    margin: 0 auto 24px;
+    width: 166px
+}
+
+.previewStep_b9f95d {
+    padding-top: 16px
+}
+
+.loading_b9f95d {
+    height: 200px
+}
+
+.renewalInvoiceDate_b9f95d {
+    margin-bottom: 16px
+}
+
+html .invoiceCancelRow_b9f95d {
+    color: var(--status-danger)
+}
+
+.iconClassName_b9f95d {
+    margin-bottom: 0;
+    width: 100%
+}
+
+.subtitleIcon_b9f95d {
+    height: auto;
+    margin-right: 10px;
+    width: 65px
+}
+
+.subtitleSection_b9f95d {
+    align-items: flex-end;
+    display: flex;
+    flex-direction: row;
+    height: 65px
+}
+
+.theme-dark .cancelImage_b9f95d {
+    background: url(/assets/7c095ad6ca59d3e2.svg)
+}
+
+.theme-dark .innerCircle_b9f95d {
+    fill: var(--border-subtle)
+}
+
+.theme-light .cancelImage_b9f95d {
+    background: url(/assets/2ac7d3011762752b.svg)
+}
+
+.theme-light .innerCircle_b9f95d {
+    fill: var(--background-base-lowest)
+}
+
+.cancellationHeader_b9f95d {
+    margin-bottom: -4px
+}
+
+.whatYouLoseButtonContainer_b9f95d {
+    display: flex;
+    flex-direction: row-reverse
+}
+
+.confettiCanvas_b9f95d {
+    height: 100%;
+    position: absolute;
+    width: 100%
+}
+
+/*# sourceMappingURL=8b67b32bc2d2979e.css.map*/

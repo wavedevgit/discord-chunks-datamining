@@ -1,4 +1,4 @@
-/** Chunk was on 22243 **/
+/** Chunk was on 85438 **/
 n.d(t, {
   Z: () => p
 }), n(953529);
@@ -31,12 +31,12 @@ function p(e) {
     x = a ? "header-primary" : "text-muted",
     _ = a ? "header-secondary" : "text-muted",
     j = l()(n),
-    E = null != f && a,
-    C = E ? o.P3F : "div";
-  return (0, i.jsxs)(C, {
-    className: s()(m.container, E && m.actionable),
+    C = null != f && a,
+    E = C ? o.P3F : "div";
+  return (0, i.jsxs)(E, {
+    className: s()(m.container, C && m.actionable),
     onClick: () => {
-      E && f()
+      C && f()
     },
     children: [(0, i.jsx)("div", {
       className: m.iconContainer,

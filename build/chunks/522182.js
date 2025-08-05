@@ -30,7 +30,7 @@ function s(e) {
   }(e, ["onClose"]);
   let {
     analyticsLocations: s,
-    newestAnalyticsLocation: u
+    newestAnalyticsLocation: d
   } = (0, i.ZP)();
   return (0, r.jsx)(a.ef, function(e) {
     for (var t = 1; t < arguments.length; t++) {
@@ -58,7 +58,7 @@ function s(e) {
       (0, l.mK)({
         analyticsLocations: s,
         openInLayer: !1,
-        analyticsSource: u
+        analyticsSource: d
       }), null == t || t()
     }
   }, n))

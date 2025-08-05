@@ -1,4 +1,4 @@
-/** Chunk was on 22243 **/
+/** Chunk was on 85438 **/
 n.d(t, {
   P: () => j
 }), n(290780), n(388685);
@@ -26,8 +26,8 @@ function j(e) {
   let {
     isNested: n = !1
   } = e, j = null == (t = (0, m.Z)()) || t, {
-    explicitContentGuilds: E,
-    explicitContentFriendDm: C,
+    explicitContentGuilds: C,
+    explicitContentFriendDm: E,
     explicitContentNonFriendDm: O
   } = (0, d.B)(), v = e => {
     let t = Object.values(e);
@@ -58,7 +58,7 @@ function j(e) {
         }), (0, i.jsx)(s.q4e, {
           look: s.qQH.CUSTOM,
           options: S,
-          value: C,
+          value: E,
           onChange: e => v({
             explicitContentFriendDm: e
           }),
@@ -103,7 +103,7 @@ function j(e) {
         }), (0, i.jsx)(s.q4e, {
           look: s.qQH.CUSTOM,
           options: T,
-          value: E,
+          value: C,
           onChange: e => v({
             explicitContentGuilds: e
           }),
@@ -135,7 +135,7 @@ function j(e) {
         titleClassName: _.selectItemTitle,
         children: (0, i.jsx)(s.q4e, {
           options: S,
-          value: C,
+          value: E,
           onChange: e => v({
             explicitContentFriendDm: e
           })
@@ -157,7 +157,7 @@ function j(e) {
         titleClassName: _.selectItemTitle,
         children: (0, i.jsx)(s.q4e, {
           options: T,
-          value: E,
+          value: C,
           onChange: e => v({
             explicitContentGuilds: e
           }),

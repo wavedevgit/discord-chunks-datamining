@@ -1,4 +1,4 @@
-/** Chunk was on 22243 **/
+/** Chunk was on 85438 **/
 n.d(t, {
   Z: () => S
 }), n(388685), n(704826), n(35282), n(539854), n(49124), n(190126), n(368063), n(65234), n(111804), n(490233), n(97749);
@@ -21,7 +21,7 @@ var i = n(255367),
   _ = n(346537),
   j = n(830318);
 
-function E(e) {
+function C(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -40,7 +40,7 @@ function E(e) {
   return e
 }
 
-function C(e, t) {
+function E(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -63,7 +63,7 @@ let O = {
       effect: t
     } = e, {
       upsertConfig: n
-    } = (0, h.n6)(), s = (0, o.e7)([g.default], () => g.default.getCurrentUser()), [S, T] = r.useState(!0), I = r.useRef(null), [N, y] = r.useState(!1), [A, P] = r.useState(!1), [R, D] = r.useState([]), [Z, w] = r.useState(O), k = r.useRef([]), [L, B] = r.useState(t.name), M = L.toLowerCase().replace(/\s+/g, "_"), U = r.useMemo(() => ({
+    } = (0, h.n6)(), s = (0, o.e7)([g.default], () => g.default.getCurrentUser()), [S, T] = r.useState(!0), I = r.useRef(null), [N, y] = r.useState(!1), [A, P] = r.useState(!1), [R, D] = r.useState([]), [Z, w] = r.useState(O), k = r.useRef([]), [L, M] = r.useState(t.name), B = L.toLowerCase().replace(/\s+/g, "_"), U = r.useMemo(() => ({
       type: l.Z.PROFILE_EFFECT,
       id: v,
       skuId: v,
@@ -79,7 +79,7 @@ let O = {
     }, G = (e, t) => {
       let n = V(t);
       null != n && (0, f.i0)(n, t => {
-        w(i => C(E({}, i), {
+        w(i => E(C({}, i), {
           [e]: (0, f.z)(t, n)
         }))
       })
@@ -90,7 +90,7 @@ let O = {
           let r = [...i],
             s = i[t];
           if (null == s) return i;
-          let a = E({}, s);
+          let a = C({}, s);
           return null == a.randomizedSources && (a.randomizedSources = []), a.randomizedSources.push({
             src: e,
             filename: n.name
@@ -98,7 +98,7 @@ let O = {
         })
       })
     }, H = e => {
-      w(t => C(E({}, t), {
+      w(t => E(C({}, t), {
         [e]: null
       }))
     };
@@ -117,24 +117,24 @@ let O = {
         let [t, n] = e;
         if (null != n) {
           let e = (0, f.$j)(n.base64);
-          n.src = e, k.current.push(e), w(e => C(E({}, e), {
+          n.src = e, k.current.push(e), w(e => E(C({}, e), {
             [t]: n
           }))
         }
       })
     }, [t.config.stillFrames]);
-    let W = {
+    let z = {
         effect: t,
         upsertConfig: n
       },
-      z = r.useRef(W);
+      W = r.useRef(z);
     return (r.useEffect(() => {
-      z.current = W
+      W.current = z
     }), r.useEffect(() => {
       let {
         effect: e,
         upsertConfig: t
-      } = z.current;
+      } = W.current;
       e.readonly || t({
         id: e.id,
         name: L,
@@ -172,7 +172,7 @@ let O = {
               value: L,
               className: x.input,
               onChange: e => {
-                B(e.target.value)
+                M(e.target.value)
               }
             })]
           }), (0, i.jsxs)("div", {
@@ -273,22 +273,22 @@ let O = {
               children: [(0, i.jsx)(u.Z, {
                 fileContents: () => (0, f.yR)(R),
                 contentType: "text/plain",
-                fileName: "".concat(M, "_timing_config.txt"),
+                fileName: "".concat(B, "_timing_config.txt"),
                 children: (0, i.jsx)(d.zxk, {
                   variant: "primary",
                   size: "sm",
                   text: "Download Timing Config"
                 })
               }), (0, i.jsx)(u.Z, {
-                fileContents: () => JSON.stringify(C(E({}, t), {
+                fileContents: () => JSON.stringify(E(C({}, t), {
                   name: L,
-                  config: C(E({}, t.config), {
+                  config: E(C({}, t.config), {
                     effects: R,
                     stillFrames: Z
                   })
                 })),
                 contentType: "text/plain",
-                fileName: "".concat(M, "_config.txt"),
+                fileName: "".concat(B, "_config.txt"),
                 children: (0, i.jsx)(d.zxk, {
                   variant: "primary",
                   size: "sm",

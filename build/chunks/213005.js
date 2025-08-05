@@ -1,29 +1,29 @@
-/** Chunk was on 58120 **/
+/** Chunk was on 85438 **/
 n.d(t, {
   Z: () => d
 }), n(388685), n(539854);
 var i = n(836560),
   r = n(358085),
   s = n(998502),
-  o = n(13140),
-  a = n(981631);
-let l = [],
+  a = n(13140),
+  l = n(981631);
+let o = [],
   c = (e, t, n) => {
     let i = +!(0, r.isWindows)();
-    (e !== a.MoX.MOUSE_BUTTON || n !== i) && l.forEach(i => i._handleEvent(e, t, n))
+    (e !== l.MoX.MOUSE_BUTTON || n !== i) && o.forEach(i => i._handleEvent(e, t, n))
   };
 class d extends i.EventEmitter {
   destroy() {
-    this.removeAllListeners(), 0 === (l = l.filter(e => e !== this)).length && s.ZP.setOnInputEventCallback(null)
+    this.removeAllListeners(), 0 === (o = o.filter(e => e !== this)).length && s.ZP.setOnInputEventCallback(null)
   }
   toString() {
-    return (0, o.BB)(this.combo)
+    return (0, a.BB)(this.combo)
   }
   _handleEvent(e, t, n) {
     0 === t ? this.combo = this.combo.filter(t => {
       let [i, r] = t;
       return i !== e || r !== n
-    }) : (this.combo.push([e, n, (0, o.dU)()]), this.emit("change", this))
+    }) : (this.combo.push([e, n, (0, a.dU)()]), this.emit("change", this))
   }
   constructor() {
     var e, t;
@@ -32,6 +32,6 @@ class d extends i.EventEmitter {
       enumerable: !0,
       configurable: !0,
       writable: !0
-    }) : this[e] = t, l.push(this), 1 === l.length && s.ZP.setOnInputEventCallback(c)
+    }) : this[e] = t, o.push(this), 1 === o.length && s.ZP.setOnInputEventCallback(c)
   }
 }

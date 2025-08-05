@@ -1,42 +1,42 @@
-/** Chunk was on 82081 **/
-r.d(t, {
-  V: () => c
-}), r(953529);
-var n = r(255367);
-r(73800);
-var a = r(120356),
-  o = r.n(a);
-r(755721), r(481060), r(937860);
-var i = r(973792);
-let c = e => {
+/** Chunk was on 85438 **/
+n.d(t, {
+  V: () => l
+}), n(953529);
+var i = n(255367);
+n(73800);
+var r = n(120356),
+  s = n.n(r);
+n(755721), n(481060), n(937860);
+var a = n(973792);
+let l = e => {
   let {
     invertTail: t,
-    leftOffset: r,
-    rightOffset: a,
-    tailSpineClassName: c,
-    tailTargetInnerClassName: s
+    leftOffset: n,
+    rightOffset: r,
+    tailSpineClassName: l,
+    tailTargetInnerClassName: o
   } = e;
-  return (0, n.jsxs)("div", {
-    className: o()(i.tail, t ? i.tailPositionInverted : i.tailPositionNormal),
+  return (0, i.jsxs)("div", {
+    className: s()(a.tail, t ? a.tailPositionInverted : a.tailPositionNormal),
     style: {
-      left: r,
-      right: a
+      left: n,
+      right: r
     },
-    children: [(0, n.jsx)("div", {
-      className: o()(i.tailSpine, c)
-    }), (0, n.jsx)("div", {
-      className: o()(i.tailTargetOuter, t ? i.tailTargetPositionInverted : i.tailTargetPositionNormal),
-      children: (0, n.jsx)("svg", {
+    children: [(0, i.jsx)("div", {
+      className: s()(a.tailSpine, l)
+    }), (0, i.jsx)("div", {
+      className: s()(a.tailTargetOuter, t ? a.tailTargetPositionInverted : a.tailTargetPositionNormal),
+      children: (0, i.jsx)("svg", {
         xmlns: "http://www.w3.org/2000/svg",
         width: "8",
         height: "8",
         viewBox: "0 0 8 8",
         fill: "none",
-        children: (0, n.jsx)("circle", {
+        children: (0, i.jsx)("circle", {
           cx: "50%",
           cy: "50%",
           r: "3",
-          className: o()(i.tailTargetInner, s)
+          className: s()(a.tailTargetInner, o)
         })
       })
     })]

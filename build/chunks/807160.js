@@ -1,4 +1,4 @@
-/** Chunk was on 22243 **/
+/** Chunk was on 85438 **/
 n.d(t, {
   Z: () => eo
 }), n(953529), n(388685), n(539854), n(997841);
@@ -19,8 +19,8 @@ var i, r = n(255367),
   x = n(600164),
   _ = n(925329),
   j = n(267101),
-  E = n(240864),
-  C = n(942833),
+  C = n(240864),
+  E = n(942833),
   O = n(400916),
   v = n(916001),
   S = n(539290),
@@ -36,15 +36,15 @@ var i, r = n(255367),
   w = n(509545),
   k = n(230307),
   L = n(259580),
-  B = n(572004),
-  M = n(55935),
+  M = n(572004),
+  B = n(55935),
   U = n(630388),
   V = n(74538),
   G = n(937615),
   F = n(244526),
   H = n(981631),
-  W = n(474936),
-  z = n(231338),
+  z = n(474936),
+  W = n(231338),
   Y = n(388032),
   K = n(468590);
 
@@ -85,7 +85,7 @@ function J(e, t) {
 let Q = e => "https://".concat(H.xr4, "/hc/").concat(e.toLowerCase(), "/requests/new?ticket_form_id=360000118612"),
   $ = [H.epS.DURABLE_PRIMARY, H.epS.DURABLE, H.epS.CONSUMABLE],
   ee = [H.PyE.FAILED, H.PyE.REVERSED, H.PyE.CANCELED],
-  et = [z.gg.APPLE],
+  et = [W.gg.APPLE],
   en = e => {
     let {
       description: t,
@@ -110,7 +110,7 @@ function ei(e) {
     copyText: n,
     copyFeedbackText: i
   } = e, [a, l] = s.useState(!1), [o, c] = s.useState(!1), d = () => {
-    (0, B.JG)(t, () => {
+    (0, M.JG)(t, () => {
       c(!0), l(!0)
     })
   };
@@ -176,7 +176,7 @@ function es(e) {
     guildProductListingId: n
   } = e, i = (0, j.hO)(t, n, {
     requireCurrentGuild: !1
-  }), a = (0, C.C)(i), l = (0, m.e7)([D.Z], () => D.Z.getGuild(t)), o = (null == i ? void 0 : i.role_id) != null && (null == i ? void 0 : i.attachments_count) === 0 ? Y.intl.string(Y.t.H11qcX) : a, c = s.useCallback(async () => {
+  }), a = (0, E.C)(i), l = (0, m.e7)([D.Z], () => D.Z.getGuild(t)), o = (null == i ? void 0 : i.role_id) != null && (null == i ? void 0 : i.attachments_count) === 0 ? Y.intl.string(Y.t.H11qcX) : a, c = s.useCallback(async () => {
     (null == l ? void 0 : l.features.has(H.oNc.PRODUCTS_AVAILABLE_FOR_PURCHASE)) ? await (0, T.Z)(H.Z5c.GUILD_PRODUCT(t, n)) : await (0, T.Z)(H.Z5c.CHANNEL(t)), (0, g.xf)()
   }, [l, t, n]);
   return (0, r.jsxs)(r.Fragment, {
@@ -200,7 +200,7 @@ function ea(e) {
     guildProductListingId: s
   } = e, a = (0, j.hO)(i, s, {
     requireCurrentGuild: !1
-  }), l = (0, m.e7)([E.Z], () => E.Z.getGuildProductFetchState(s) === E.M.FETCHING), o = null == a ? void 0 : a.role_id, c = (0, m.e7)([R.Z], () => null != o ? R.Z.getRole(i, o) : void 0, [i, o]), d = (null != (n = null == a || null == (t = a.attachments) ? void 0 : t.length) ? n : 0) > 0, u = null != c;
+  }), l = (0, m.e7)([C.Z], () => C.Z.getGuildProductFetchState(s) === C.M.FETCHING), o = null == a ? void 0 : a.role_id, c = (0, m.e7)([R.Z], () => null != o ? R.Z.getRole(i, o) : void 0, [i, o]), d = (null != (n = null == a || null == (t = a.attachments) ? void 0 : t.length) ? n : 0) > 0, u = null != c;
   return l ? (0, r.jsx)("div", {
     className: K.guildProductBenefits,
     children: (0, r.jsx)(p.$jN, {})
@@ -341,7 +341,7 @@ class el extends(i = s.PureComponent) {
         descriptionClassName: K.paymentText,
         showLabels: !0,
         showPaymentSourceIcon: !0
-      }) : e.paymentGateway === z.gg.APPLE_PARTNER ? (0, r.jsx)(F.Z, {
+      }) : e.paymentGateway === W.gg.APPLE_PARTNER ? (0, r.jsx)(F.Z, {
         paymentSource: new P.$z({}),
         locale: t,
         descriptionClassName: K.paymentText,
@@ -483,11 +483,11 @@ class el extends(i = s.PureComponent) {
           planId: t,
           quantity: i
         } = e;
-        (0, V.uZ)(t) ? (n.push(V.ZP.getDisplayName(t, !1, h)), s = (0, V.Wz)(W.GP[t].skuId)) : (n.push("".concat(i > 1 ? "".concat(i, "x ") : "").concat(V.ZP.getDisplayName(t, !1, h))), null == s && (s = (0, V.Wz)(W.GP[t].skuId)))
+        (0, V.uZ)(t) ? (n.push(V.ZP.getDisplayName(t, !1, h)), s = (0, V.Wz)(z.GP[t].skuId)) : (n.push("".concat(i > 1 ? "".concat(i, "x ") : "").concat(V.ZP.getDisplayName(t, !1, h))), null == s && (s = (0, V.Wz)(z.GP[t].skuId)))
       });
       else if (g.type === H.NYc.GUILD) {
         if (null != d) {
-          let e = d.interval === W.rV.YEAR ? Y.t.V6UFQE : Y.t["6oq129"];
+          let e = d.interval === z.rV.YEAR ? Y.t.V6UFQE : Y.t["6oq129"];
           n.push(Y.intl.format(e, {
             planName: d.name
           })), s = d.skuId
@@ -535,7 +535,7 @@ class el extends(i = s.PureComponent) {
     }), t = i.description;
     let b = (0, r.jsx)("div", {
         className: K.date,
-        children: (0, M.vc)(c()(i.createdAt), "MM/DD/YYYY")
+        children: (0, B.vc)(c()(i.createdAt), "MM/DD/YYYY")
       }),
       x = i.isGift ? (0, r.jsx)(p.ua7, {
         text: Y.intl.string(Y.t.QddTpq),
@@ -733,8 +733,8 @@ function eo(e) {
   }, [u, p]);
   let _ = (0, m.e7)([D.Z], () => D.Z.getGuild(null == h ? void 0 : h.guildId)),
     j = c ? h : void 0,
-    E = i.subscription,
-    C = (0, m.e7)([w.Z], () => null != E && E.type !== H.NYc.PREMIUM ? w.Z.get(E.items[0].planId) : null);
+    C = i.subscription,
+    E = (0, m.e7)([w.Z], () => null != C && C.type !== H.NYc.PREMIUM ? w.Z.get(C.items[0].planId) : null);
   return (0, r.jsx)(el, {
     applicationStatistics: g,
     application: p ? x : j,
@@ -745,7 +745,7 @@ function eo(e) {
     compactMode: l,
     className: o,
     payment: i,
-    plan: C
+    plan: E
   })
 }
 q(el, "defaultProps", {

@@ -1,6 +1,6 @@
 /** Chunk was on 93886 **/
 a.d(t, {
-  Z: () => x
+  Z: () => p
 }), a(388685);
 var n = a(255367),
   r = a(73800),
@@ -16,24 +16,24 @@ let u = "/users/@me/debug/consumables/",
     [o.D1]: "Confetti Potion"
   };
 
-function x() {
+function p() {
   let e, [t, a] = (0, r.useState)([]),
-    [x, p] = (0, r.useState)(null),
+    [p, x] = (0, r.useState)(null),
     [h, b] = (0, r.useState)(!1);
   return (0, r.useEffect)(() => ((async () => {
     try {
       let e = (await l.tn.get(u)).body.entitlements.map(e => c.Z.createFromServer(e));
       a(e)
     } catch (e) {
-      p("Failed to fetch entitlements")
+      x("Failed to fetch entitlements")
     }
   })(), () => {
-    a([]), p(null)
+    a([]), x(null)
   }), []), (0, n.jsx)("div", {
     className: d.panel,
-    children: null != x ? (0, n.jsx)(s.Text, {
+    children: null != p ? (0, n.jsx)(s.Text, {
       variant: "text-md/normal",
-      children: x
+      children: p
     }) : 0 === t.length ? (0, n.jsxs)(n.Fragment, {
       children: [(0, n.jsx)(s.Text, {
         variant: "text-lg/bold",
@@ -52,7 +52,7 @@ function x() {
               r = new c.Z(n.body.entitlement);
             a([...t, r])
           } catch (e) {
-            p("Failed to create entitlement")
+            x("Failed to create entitlement")
           } finally {
             b(!1)
           }

@@ -1,6 +1,6 @@
 /** Chunk was on 43473 **/
 n.d(t, {
-  Z: () => g
+  Z: () => b
 });
 var r = n(255367),
   o = n(73800),
@@ -9,8 +9,8 @@ var r = n(255367),
   a = n(168524),
   c = n(817053),
   s = n(879877),
-  u = n(919498),
-  d = n(388032),
+  d = n(919498),
+  u = n(388032),
   f = n(467514),
   p = n(418718);
 
@@ -31,13 +31,13 @@ function m(e) {
   })
 }
 
-function b(e) {
+function g(e) {
   let {
     applicationId: t,
     userId: n,
     gameName: c,
     className: s,
-    children: u
+    children: d
   } = e, f = (0, a.Z)({
     location: "UserProfileWidgetGameDetailsCard",
     applicationId: t,
@@ -46,38 +46,38 @@ function b(e) {
     trackEntryPointImpression: !0
   }), m = o.useCallback(e => {
     e.target === e.currentTarget && (null == f || f(e))
-  }, [f]), b = null != c ? c : d.intl.string(d.t.GIWFlJ), g = null != f;
+  }, [f]), g = null != c ? c : u.intl.string(u.t.GIWFlJ), b = null != f;
   return (0, r.jsxs)("div", {
     className: s,
-    children: [g && (0, r.jsx)(i.P3F, {
+    children: [b && (0, r.jsx)(i.P3F, {
       className: p.clickableCard,
-      "aria-label": d.intl.formatToPlainString(d.t["8QLQBw"], {
-        gameName: b
+      "aria-label": u.intl.formatToPlainString(u.t["8QLQBw"], {
+        gameName: g
       }),
       onClick: m
-    }), u]
+    }), d]
   })
 }
 
-function g(e) {
+function b(e) {
   let {
     game: t,
     userId: n,
     guildId: o,
     channelId: l,
     loading: a = !1,
-    disableInteraction: d = !1
+    disableInteraction: u = !1
   } = e, {
-    gameName: g,
+    gameName: b,
     imageSrc: y,
-    applicationId: j,
-    comment: O,
-    tags: x
-  } = t, h = () => (0, r.jsxs)(r.Fragment, {
+    applicationId: O,
+    comment: h,
+    tags: j
+  } = t, x = () => (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(c.Z, {
       imageSrc: y,
-      gameName: g,
-      applicationId: j,
+      gameName: b,
+      applicationId: O,
       userId: n,
       disableInteraction: !0
     }), (0, r.jsxs)("div", {
@@ -85,13 +85,13 @@ function g(e) {
       children: [(0, r.jsx)(i.X6q, {
         variant: "text-md/normal",
         color: "text-default",
-        children: g
+        children: b
       }), (0, r.jsx)(m, {
-        text: O
+        text: h
       }), (0, r.jsx)(s.Z, {
-        tags: x
-      }), (0, r.jsx)(u.Z, {
-        applicationId: j,
+        tags: j
+      }), (0, r.jsx)(d.Z, {
+        applicationId: O,
         guildId: o,
         channelId: l,
         className: p.socialProof
@@ -105,14 +105,14 @@ function g(e) {
     }), (0, r.jsx)("div", {
       className: p.details
     })]
-  }) : d ? (0, r.jsx)("div", {
+  }) : u ? (0, r.jsx)("div", {
     className: p.card,
-    children: h()
-  }) : (0, r.jsx)(b, {
-    applicationId: j,
+    children: x()
+  }) : (0, r.jsx)(g, {
+    applicationId: O,
     userId: n,
-    gameName: g,
+    gameName: b,
     className: p.card,
-    children: h()
+    children: x()
   })
 }

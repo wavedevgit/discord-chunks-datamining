@@ -1,6 +1,6 @@
-/** Chunk was on 22243 **/
+/** Chunk was on 85438 **/
 n.d(t, {
-  c: () => E
+  c: () => C
 });
 var i = n(255367);
 n(73800);
@@ -23,7 +23,7 @@ var r = n(442837),
 let j = () => {
     (0, p.XO)(p.wh.APP_ICON), (0, l.xf)()
   },
-  E = () => {
+  C = () => {
     let {
       analyticsLocations: e
     } = (0, d.ZP)(c.Z.USER_SETTINGS), t = (0, r.e7)([u.Z], () => u.Z.isUpsellPreview);

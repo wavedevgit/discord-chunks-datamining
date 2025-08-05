@@ -1,6 +1,6 @@
 /**
   Module ID: 43473
-  Original File Name: 3c34c6d5b808d299
+  Original File Name: 812388068f15ff68
 **/
 .scroller__95bea {
     display: flex;
@@ -1313,6 +1313,167 @@
     gap: 16px
 }
 
+.empty__7ff05 {
+    align-items: center;
+    box-sizing: border-box;
+    gap: 24px;
+    height: 100%;
+    padding-top: 155px;
+    width: 100%
+}
+
+.empty__7ff05,.textContainer__7ff05 {
+    display: flex;
+    flex-direction: column
+}
+
+.textContainer__7ff05 {
+    gap: 8px;
+    max-width: 320px;
+    text-align: center
+}
+
+.widgetGrid__7ff05 {
+    box-sizing: border-box;
+    display: grid;
+    gap: 16px;
+    grid-template-columns: minmax(0,1fr) minmax(0,1fr);
+    width: 100%
+}
+
+.widgetPromptContainer__7ff05 {
+    align-items: center;
+    background: var(--background-mod-subtle);
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    justify-content: center;
+    min-width: 198px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    transition: background-color .15s ease
+}
+
+.widgetPromptContainer__7ff05:hover {
+    background: var(--background-mod-normal)
+}
+
+.widgetPromptContainer__7ff05:active {
+    background: var(--background-mod-strong)
+}
+
+.widgetPromptOverlay__7ff05 {
+    flex-direction: column;
+    gap: 8px;
+    position: absolute
+}
+
+.addButton__7ff05,.widgetPromptOverlay__7ff05 {
+    align-items: center;
+    display: flex;
+    justify-content: center
+}
+
+.addButton__7ff05 {
+    background: var(--custom-background-primary);
+    color: var(--text-default)
+}
+
+.placeholderDetailCard__7ff05 {
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    gap: 12px;
+    height: 100%;
+    opacity: .6;
+    pointer-events: none
+}
+
+.placeholderCover__7ff05 {
+    flex-shrink: 0;
+    height: calc(100% - 24px)
+}
+
+.placeholderGameImage__7ff05 {
+    object-fit: cover;
+    opacity: .2;
+    width: auto
+}
+
+.placeholderGameFallback__7ff05,.placeholderGameImage__7ff05 {
+    aspect-ratio: 3/4;
+    background-color: var(--background-mod-faint);
+    border-radius: 8px;
+    height: 100%
+}
+
+.placeholderCoverItem__7ff05 .placeholderGameFallback__7ff05,.placeholderCoverItem__7ff05 .placeholderGameImage__7ff05 {
+    aspect-ratio: unset;
+    height: 100%;
+    max-height: 76px;
+    width: auto
+}
+
+.placeholderText__7ff05 {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 6px;
+    justify-content: center;
+    min-width: 0
+}
+
+.placeholderBar__7ff05 {
+    background-color: var(--background-mod-subtle);
+    border-radius: 6px;
+    height: 12px
+}
+
+.placeholderBar__7ff05:first-child {
+    width: 78px
+}
+
+.placeholderBar__7ff05:last-child {
+    width: 117px
+}
+
+.placeholderCoverGrid__7ff05 {
+    align-items: center;
+    display: grid;
+    gap: clamp(4px,2vw,8px);
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 100%;
+    justify-items: center;
+    opacity: .6;
+    pointer-events: none
+}
+
+.placeholderCoverItem__7ff05 {
+    height: calc(100% - 16px);
+    max-height: 76px;
+    overflow: hidden;
+    width: auto
+}
+
+.placeholderGameCover__7ff05 {
+    background-color: var(--background-mod-subtle);
+    border-radius: 8px;
+    flex-shrink: 0
+}
+
+.placeholderDetailCard__7ff05 .placeholderGameCover__7ff05 {
+    height: 64px;
+    width: 48px
+}
+
+.placeholderCoverGrid__7ff05 .placeholderGameCover__7ff05 {
+    height: 40px;
+    width: 32px
+}
+
 .scroller__3b923 {
     display: flex;
     flex-direction: column;
@@ -1551,4 +1712,4 @@
     border-color: var(--input-focused-border)
 }
 
-/*# sourceMappingURL=3c34c6d5b808d299.css.map*/
+/*# sourceMappingURL=812388068f15ff68.css.map*/

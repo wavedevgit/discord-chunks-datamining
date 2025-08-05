@@ -1,4 +1,4 @@
-/** Chunk was on 22243 **/
+/** Chunk was on 85438 **/
 n.d(t, {
   V9: () => x,
   ek: () => b
@@ -29,8 +29,8 @@ let b = {
       anchorPillType: x,
       analyticsPage: _,
       isCoachmarkEnabled: j = !0,
-      linkText: E = h.intl.string(h.t.XRdyj4),
-      cardAlignment: C = b.START,
+      linkText: C = h.intl.string(h.t.XRdyj4),
+      cardAlignment: E = b.START,
       className: O
     } = e, {
       balance: v
@@ -63,8 +63,8 @@ let b = {
         ctaOnClick: () => {
           D(), s()
         },
-        linkText: E
-      }), [_, n, E, D, s]);
+        linkText: C
+      }), [_, n, C, D, s]);
     return (0, i.jsxs)("div", {
       className: a()(f.container, O, {
         [f.hidden]: y,
@@ -81,7 +81,7 @@ let b = {
         onClick: D,
         showNotificationBadge: t
       }), I && (0, i.jsx)("div", {
-        className: a()(f.cardContainer, C, {
+        className: a()(f.cardContainer, E, {
           [f.hidden]: y,
           [f.visible]: !y
         }),

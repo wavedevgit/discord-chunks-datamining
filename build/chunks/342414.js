@@ -1,4 +1,4 @@
-/** Chunk was on 22243 **/
+/** Chunk was on 85438 **/
 n.d(t, {
   Z: () => G
 }), n(388685);
@@ -21,8 +21,8 @@ var r = n(120356),
   x = n(367074),
   _ = n(775412),
   j = n(695349),
-  E = n(249689),
-  C = n(104494),
+  C = n(249689),
+  E = n(104494),
   O = n(639119),
   v = n(8647),
   S = n(533525),
@@ -44,7 +44,7 @@ let L = e => {
     } = e, {
       headingText: c,
       headingTop: d
-    } = V(), u = g.default.getCurrentUser(), p = (0, a.e7)([h.Z], () => h.Z.getPremiumTypeSubscription()), f = (0, O.N)(), b = (0, C.Ng)(), x = (0, C.Wp)(b, P.Si.TIER_2) ? P.Si.TIER_2 : void 0, _ = null != p && p.status !== R.O0b.ACCOUNT_HOLD && p.hasAnyPremiumNitro, j = (0, m.Z)(), v = (0, E.C)("nitro-home", u) && j.isFractionalPremiumActive && !_;
+    } = V(), u = g.default.getCurrentUser(), p = (0, a.e7)([h.Z], () => h.Z.getPremiumTypeSubscription()), f = (0, O.N)(), b = (0, E.Ng)(), x = (0, E.Wp)(b, P.Si.TIER_2) ? P.Si.TIER_2 : void 0, _ = null != p && p.status !== R.O0b.ACCOUNT_HOLD && p.hasAnyPremiumNitro, j = (0, m.Z)(), v = (0, C.C)("nitro-home", u) && j.isFractionalPremiumActive && !_;
     return (0, i.jsxs)("div", {
       className: s()(Z.container, r),
       "data-testid": "subscriber-nitro-home-hero-header",
@@ -80,7 +80,7 @@ let L = e => {
       })]
     })
   },
-  B = () => {
+  M = () => {
     let {
       headingText: e,
       headingTop: t
@@ -115,7 +115,7 @@ let L = e => {
       })]
     })
   },
-  M = e => {
+  B = e => {
     let {
       isEligibleForBogoPromotion: t
     } = e, {
@@ -161,15 +161,15 @@ let L = e => {
       location: n
     } = e, {
       analyticsLocations: r
-    } = (0, d.ZP)(c.Z.PREMIUM_MARKETING_HERO_CTA), a = (0, j.W)(), l = (0, x.Vi)(), g = (0, _._O)(), h = D.intl.string(D.t.qYKftb), f = (0, S.b)(n), E = (0, i.jsx)(L, {
+    } = (0, d.ZP)(c.Z.PREMIUM_MARKETING_HERO_CTA), a = (0, j.W)(), l = (0, x.Vi)(), g = (0, _._O)(), h = D.intl.string(D.t.qYKftb), f = (0, S.b)(n), C = (0, i.jsx)(L, {
       className: t
-    }), C = D.intl.string(D.t.ifwQZW), {
+    }), E = D.intl.string(D.t.ifwQZW), {
       fractionalState: O,
       endsAt: v
     } = (0, m.Z)(), T = (0, u.ZP)(v, u.aj.CREDITS_ENDS_IN);
-    a || l ? (C = D.intl.string(D.t.ifwQZW), E = (0, i.jsx)(M, {
+    a || l ? (E = D.intl.string(D.t.ifwQZW), C = (0, i.jsx)(B, {
       isEligibleForBogoPromotion: l
-    })) : f && (h = D.intl.string(D.t.qYKftb), C = D.intl.string(D.t.ifwQZW), E = (0, i.jsx)(B, {}));
+    })) : f && (h = D.intl.string(D.t.qYKftb), E = D.intl.string(D.t.ifwQZW), C = (0, i.jsx)(M, {}));
     let I = null;
     if (O === P.a$.NONE || a) I = (0, i.jsx)(N.Cy, {
       className: s()(Z.trialPill, {
@@ -245,10 +245,10 @@ let L = e => {
       value: r,
       children: (0, i.jsx)(U.Provider, {
         value: {
-          headingText: C,
+          headingText: E,
           headingTop: I
         },
-        children: E
+        children: C
       })
     })
   }

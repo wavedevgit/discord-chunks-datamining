@@ -1,11 +1,11 @@
-/** Chunk was on 86181 **/
+/** Chunk was on 81709 **/
 n.d(t, {
-  K: () => o,
-  S: () => a
+  K: () => a,
+  S: () => s
 });
 var r = n(818083),
   i = n(987338);
-let o = (0, r.B)({
+let a = (0, r.B)({
     id: "2025-07_nitro_rebrand_churn_modal",
     kind: "user",
     label: "Nitro Rebrand Churn Modal",
@@ -30,11 +30,11 @@ let o = (0, r.B)({
       }
     }]
   }),
-  a = e => {
+  s = e => {
     let {
       location: t
     } = e;
-    return o.useExperiment({
+    return a.useExperiment({
       location: t
     })
   }

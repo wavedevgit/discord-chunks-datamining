@@ -1,6 +1,6 @@
 /** Chunk was on 43473 **/
 n.r(t), n.d(t, {
-  default: () => u
+  default: () => d
 }), n(388685);
 var r = n(255367);
 n(73800);
@@ -29,7 +29,7 @@ function s(e) {
   return e
 }
 
-function u(e) {
+function d(e) {
   var {
     hideRestrictedProfile: t
   } = e, n = function(e, t) {
@@ -48,9 +48,9 @@ function u(e) {
     return o
   }(e, ["hideRestrictedProfile"]);
   let {
-    user: u
-  } = n, [d, f] = (0, o.Z)(u.id);
-  return d && !t ? (0, r.jsx)(a.Z, s({
+    user: d
+  } = n, [u, f] = (0, o.Z)(d.id);
+  return u && !t ? (0, r.jsx)(a.Z, s({
     onHide: f
-  }, n)) : u.isNonUserBot() ? (0, r.jsx)(l.Z, s({}, n)) : u.bot ? (0, r.jsx)(i.Z, s({}, n)) : (0, r.jsx)(c.Z, s({}, n))
+  }, n)) : d.isNonUserBot() ? (0, r.jsx)(l.Z, s({}, n)) : d.bot ? (0, r.jsx)(i.Z, s({}, n)) : (0, r.jsx)(c.Z, s({}, n))
 }

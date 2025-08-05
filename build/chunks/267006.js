@@ -1,4 +1,4 @@
-/** Chunk was on 22243 **/
+/** Chunk was on 85438 **/
 n.d(t, {
   Z: () => _
 });
@@ -87,7 +87,7 @@ function _(e) {
         }), t))
       })
     }, []),
-    E = (0, i.jsxs)(i.Fragment, {
+    C = (0, i.jsxs)(i.Fragment, {
       children: [(0, i.jsx)(d.F, {
         setting: h.s6.VOICE_AND_VIDEO_ADVANCED_CODECS_VIDEO_OPENH264,
         children: (0, i.jsx)(o.j7V, {
@@ -122,10 +122,10 @@ function _(e) {
     });
   return (0, i.jsx)(d.F, {
     setting: h.s6.VOICE_AND_VIDEO_ADVANCED_CODECS_VIDEO,
-    children: t ? E : (0, i.jsx)(o.hjN, {
+    children: t ? C : (0, i.jsx)(o.hjN, {
       className: b.marginBottom20,
       title: f.intl.string(f.t.Tceiq6),
-      children: E
+      children: C
     })
   })
 }

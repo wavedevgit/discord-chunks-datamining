@@ -1,4 +1,4 @@
-/** Chunk was on 22243 **/
+/** Chunk was on 85438 **/
 n.d(t, {
   Z: () => k
 }), n(388685);
@@ -20,8 +20,8 @@ var i = n(255367),
   x = n(163684),
   _ = n(178100),
   j = n(518638),
-  E = n(725727),
-  C = n(454982),
+  C = n(725727),
+  E = n(454982),
   O = n(767714),
   v = n(504983),
   S = n(703656),
@@ -46,7 +46,7 @@ function w(e) {
     [p, g] = r.useState(!1),
     h = () => m(e => !e),
     x = (0, f.ZP)(),
-    E = (0, j.Pz)(n.id, x),
+    C = (0, j.Pz)(n.id, x),
     O = null != s,
     v = (0, _.Z)(n, O);
   O && c ? t = D.intl.format(D.t.pkxVx8, {
@@ -79,7 +79,7 @@ function w(e) {
             className: Z.promotionIcon,
             children: (0, i.jsx)("img", {
               alt: "",
-              src: E,
+              src: C,
               className: Z.promotionIconImage
             })
           }), (0, i.jsxs)("div", {
@@ -112,7 +112,7 @@ function w(e) {
     }), p && (0, i.jsx)(u.u_l, {
       renderModal: e => {
         var t, r;
-        return (0, i.jsx)(C.Z, (t = function(e) {
+        return (0, i.jsx)(E.Z, (t = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
               i = Object.keys(n);
@@ -169,9 +169,9 @@ let k = function() {
     promotionsLoaded: b,
     activeOutboundPromotions: _,
     claimedEndedOutboundPromotions: j,
-    claimedOutboundPromotionCodeMap: C,
+    claimedOutboundPromotionCodeMap: E,
     addClaimedOutboundPromotionCode: k
-  } = (0, E.lG)(), L = _.length + j.length > 0, B = x.g.useExperiment({
+  } = (0, C.lG)(), L = _.length + j.length > 0, M = x.g.useExperiment({
     location: "EntitlementGifts"
   }, {
     autoTrackExposure: !1,
@@ -192,7 +192,7 @@ let k = function() {
           variant: "heading-md/semibold",
           children: L ? D.intl.string(D.t.wFsj3N) : void 0
         }),
-        m = B ? (0, i.jsxs)("div", {
+        m = M ? (0, i.jsxs)("div", {
           className: Z.promoHeaderContainer,
           children: [(0, i.jsx)(u.SrA, {
             size: "md",
@@ -221,12 +221,12 @@ let k = function() {
           className: Z.divider
         }) : null, (0, i.jsx)(v.Z, {
           className: Z.gradientContainer,
-          isShown: B,
+          isShown: M,
           type: v.Y.PREMIUM,
           hasBackground: !0,
           children: (0, i.jsxs)(u.hjN, {
             className: a()({
-              [Z.marginContainer]: !B
+              [Z.marginContainer]: !M
             }),
             children: [m, j.map(e => {
               let {
@@ -241,7 +241,7 @@ let k = function() {
               }, n.id)
             }), _.map(e => (0, i.jsx)(w, {
               outboundPromotion: e,
-              code: C[e.id],
+              code: E[e.id],
               addClaimedOutboundPromotionCode: k,
               disabled: !s
             }, e.id)), null != t ? (0, i.jsx)(A.Z, {

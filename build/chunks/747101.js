@@ -1,6 +1,6 @@
 /** Chunk was on 43473 **/
 n.d(t, {
-  Z: () => d
+  Z: () => u
 }), n(539854), n(388685);
 var r = n(73800),
   o = n(924322),
@@ -28,7 +28,7 @@ function s(e) {
   return e
 }
 
-function u(e, t) {
+function d(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -41,7 +41,7 @@ function u(e, t) {
   }), e
 }
 
-function d(e) {
+function u(e) {
   let t = r.useMemo(() => (function(e) {
     let t = [];
     return e.forEach(e => {
@@ -62,20 +62,28 @@ function d(e) {
       }
     }), [...new Set(t)]
   })(e), [e]);
-  return r.useEffect(() => {
+  r.useEffect(() => {
     t.length > 0 && l.Z.getDetectableGamesSupplemental(t)
-  }, [t]), {
-    isFetching: (0, i.e7)([a.Z], () => t.some(e => a.Z.isFetching(e))),
+  }, [t]);
+  let n = (0, i.e7)([a.Z], () => t.some(e => a.Z.isFetching(e))),
+    u = (0, i.e7)([a.Z], () => {
+      let e = {};
+      return t.forEach(t => {
+        e[t] = a.Z.getGame(t)
+      }), e
+    });
+  return {
+    isFetching: n,
     widgets: r.useMemo(() => e.map(e => {
       let t = e.gameWidgetType;
       switch (t) {
         case o.g.FAVORITE: {
-          let t = a.Z.getGame(e.game.applicationId),
-            n = u(s({}, e.game), {
+          let t = u[e.game.applicationId],
+            n = d(s({}, e.game), {
               gameName: null == t ? void 0 : t.name,
               imageSrc: null == t ? void 0 : t.coverImageUrl
             });
-          return u(s({}, e), {
+          return d(s({}, e), {
             game: n
           })
         }
@@ -83,19 +91,19 @@ function d(e) {
         case o.g.WANT_TO_PLAY:
         case o.g.PLAYED: {
           let t = e.games.map(e => {
-            let t = a.Z.getGame(e.applicationId);
-            return u(s({}, e), {
+            let t = u[e.applicationId];
+            return d(s({}, e), {
               gameName: null == t ? void 0 : t.name,
               imageSrc: null == t ? void 0 : t.coverImageUrl
             })
           });
-          return u(s({}, e), {
+          return d(s({}, e), {
             games: t
           })
         }
         default:
           return (0, c.vE)(t)
       }
-    }), [e])
+    }), [e, u])
   }
 }

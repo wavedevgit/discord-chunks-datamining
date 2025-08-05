@@ -1,4 +1,4 @@
-/** Chunk was on 22243 **/
+/** Chunk was on 85438 **/
 n.d(t, {
   Z: () => S
 }), n(953529);
@@ -20,9 +20,9 @@ var i = n(255367),
   x = n(981631),
   _ = n(869783),
   j = n(888723),
-  E = n(790895);
+  C = n(790895);
 
-function C(e) {
+function E(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -63,7 +63,7 @@ let v = e => {
       r(), n()
     };
     return s ? (0, i.jsx)("div", {
-      className: E.bentoBoxButton,
+      className: C.bentoBoxButton,
       children: (0, i.jsx)(o.z, {
         variant: "secondary",
         onClick: g,
@@ -131,13 +131,13 @@ let v = e => {
           box_type: (0, l.snakeCase)(n)
         })
       }, 800),
-      B = () => {
+      M = () => {
         null == Z.current || N || (Z.current.currentTime = w.current, Z.current.play())
       },
-      M = () => {
+      B = () => {
         null == Z.current || N || (w.current = Z.current.currentTime, Z.current.pause())
       },
-      U = R ? E : j;
+      U = R ? C : j;
     t = R ? P === b.y$.LARGE ? "heading-xxl/bold" : "heading-xl/bold" : P === b.y$.SMALL ? "heading-xl/extrabold" : "heading-xxl/extrabold";
     let V = () => (0, i.jsxs)("div", {
         className: a()(U.textBox, U["".concat(P)]),
@@ -191,17 +191,17 @@ let v = e => {
       }) : (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(G, {}), (0, i.jsx)(V, {})]
       }),
-      W = {
-        className: a()(R ? E.backgroundColor : k, U.boxContainer, U["".concat(P)], R && E.gradientBackground),
-        onMouseEnter: B,
-        onFocus: B,
-        onBlur: M,
-        onMouseLeave: M
+      z = {
+        className: a()(R ? C.backgroundColor : k, U.boxContainer, U["".concat(P)], R && C.gradientBackground),
+        onMouseEnter: M,
+        onFocus: M,
+        onBlur: B,
+        onMouseLeave: B
       };
-    return R ? (0, i.jsx)(c.$, O(C({}, W), {
+    return R ? (0, i.jsx)(c.$, O(E({}, z), {
       color: "purple",
       children: (0, i.jsx)(H, {})
-    })) : (0, i.jsx)("div", O(C({}, W), {
+    })) : (0, i.jsx)("div", O(E({}, z), {
       children: (0, i.jsx)(H, {})
     }))
   }

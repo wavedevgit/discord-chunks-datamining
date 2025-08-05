@@ -1,4 +1,4 @@
-/** Chunk was on 22243 **/
+/** Chunk was on 85438 **/
 n.d(t, {
   Z: () => N
 }), n(388685), n(65234), n(111804), n(490233), n(97749), n(35282);
@@ -20,8 +20,8 @@ var i = n(255367),
   x = n(560223),
   _ = n(347475),
   j = n(342414),
-  E = n(391110),
-  C = n(71363),
+  C = n(391110),
+  E = n(71363),
   O = n(781800),
   v = n(981631),
   S = n(388032),
@@ -58,21 +58,21 @@ let N = e => {
           value: A,
           children: [(0, i.jsx)(j.Z, {
             className: T.heroHeading,
-            location: E.MQ.HOME
+            location: C.MQ.HOME
           }), (0, i.jsx)(x.Z, {
-            variant: E.gM.WHATS_NEW,
+            variant: C.gM.WHATS_NEW,
             className: T.whatsNew,
             noBackground: !0,
             leftAlignHeaders: !0,
             shouldAutoScroll: Z
           }), (0, i.jsx)(x.Z, {
             className: T.perksDiscoverability,
-            variant: E.gM.PERKS_DISCOVERABILITY,
+            variant: C.gM.PERKS_DISCOVERABILITY,
             noBackground: !0,
             leftAlignHeaders: !0,
             showAllPerksButton: (0, i.jsx)(O.Z, {
               setIsAllPerksVisible: y,
-              previousComponent: E.MQ.HOME
+              previousComponent: C.MQ.HOME
             })
           }), (0, i.jsx)(_.Z, {
             className: T.giftNitro,
@@ -103,10 +103,10 @@ let N = e => {
           })]
         })
       })
-    }), (0, i.jsx)(C.Z, {
+    }), (0, i.jsx)(E.Z, {
       isAllPerksVisible: N,
       setIsAllPerksVisible: y,
-      previousComponent: E.MQ.HOME
+      previousComponent: C.MQ.HOME
     })]
   })
 }

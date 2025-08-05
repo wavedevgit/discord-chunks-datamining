@@ -26,9 +26,9 @@ function u(e) {
   return t
 }
 let m = u(d),
-  x = u(d);
+  p = u(d);
 
-function p(e) {
+function x(e) {
   return o.Jn9.test(e) ? (0, n.jsx)(s.ZP, {
     type: s.ZP.Types.TEXT,
     children: () => e
@@ -43,9 +43,9 @@ function h(e) {
     className: c.inspectorWrapper,
     children: (0, n.jsx)(r.L, {
       data: t,
-      theme: "light" === a ? x : m,
+      theme: "light" === a ? p : m,
       invertTheme: !1,
-      valueRenderer: p,
+      valueRenderer: x,
       shouldExpandNode: () => !0
     })
   })

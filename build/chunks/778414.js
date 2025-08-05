@@ -1,6 +1,6 @@
 /** Chunk was on 43473 **/
 n.d(t, {
-  Z: () => g
+  Z: () => y
 });
 var r = n(255367);
 n(73800);
@@ -10,11 +10,12 @@ var o = n(924322),
   a = n(517157),
   c = n(985748),
   s = n(566007),
-  u = n(173951),
-  d = n(455731),
-  f = n(19043);
+  d = n(173951),
+  u = n(455731),
+  f = n(795990),
+  p = n(19043);
 
-function p(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -33,41 +34,39 @@ function p(e) {
   return e
 }
 
-function m(e, t) {
-  if (null == e) return {};
-  var n, r, o = function(e, t) {
-    if (null == e) return {};
-    var n, r, o = {},
-      i = Object.keys(e);
-    for (r = 0; r < i.length; r++) n = i[r], t.indexOf(n) >= 0 || (o[n] = e[n]);
-    return o
-  }(e, t);
-  if (Object.getOwnPropertySymbols) {
-    var i = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (o[n] = e[n])
-  }
-  return o
-}
-
-function b(e) {
+function g(e) {
   var {
     widget: t
-  } = e, n = m(e, ["widget"]);
+  } = e, n = function(e, t) {
+    if (null == e) return {};
+    var n, r, o = function(e, t) {
+      if (null == e) return {};
+      var n, r, o = {},
+        i = Object.keys(e);
+      for (r = 0; r < i.length; r++) n = i[r], t.indexOf(n) >= 0 || (o[n] = e[n]);
+      return o
+    }(e, t);
+    if (Object.getOwnPropertySymbols) {
+      var i = Object.getOwnPropertySymbols(e);
+      for (r = 0; r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (o[n] = e[n])
+    }
+    return o
+  }(e, ["widget"]);
   switch (t.gameWidgetType) {
     case o.g.FAVORITE:
-      return (0, r.jsx)(s.Z, p({
+      return (0, r.jsx)(s.Z, m({
         widget: t
       }, n));
     case o.g.CURRENT:
-      return (0, r.jsx)(c.Z, p({
+      return (0, r.jsx)(c.Z, m({
         widget: t
       }, n));
     case o.g.WANT_TO_PLAY:
-      return (0, r.jsx)(d.Z, p({
+      return (0, r.jsx)(u.Z, m({
         widget: t
       }, n));
     case o.g.PLAYED:
-      return (0, r.jsx)(u.Z, p({
+      return (0, r.jsx)(d.Z, m({
         widget: t
       }, n));
     default:
@@ -75,22 +74,30 @@ function b(e) {
   }
 }
 
-function g(e) {
-  var {
-    user: t
-  } = e, n = m(e, ["user"]);
-  let o = (0, a.Z)(),
-    {
-      widgets: c,
-      isFetching: s
-    } = (0, l.Z)(o);
-  return (0, r.jsx)(i.Ttm, {
-    className: f.scroller,
-    fade: !0,
-    children: c.map(e => (0, r.jsx)(b, p({
+function b(e) {
+  let {
+    user: t,
+    guildId: n,
+    channelId: o
+  } = e, i = (0, a.Z)(), {
+    widgets: c,
+    isFetching: s
+  } = (0, l.Z)(i);
+  return 0 === c.length ? (0, r.jsx)(f.Z, {}) : (0, r.jsx)(r.Fragment, {
+    children: c.map(e => (0, r.jsx)(g, {
       widget: e,
       user: t,
+      guildId: n,
+      channelId: o,
       loading: s
-    }, n), e.id))
+    }, e.id))
+  })
+}
+
+function y(e) {
+  return (0, r.jsx)(i.Ttm, {
+    className: p.scroller,
+    fade: !0,
+    children: (0, r.jsx)(b, m({}, e))
   })
 }

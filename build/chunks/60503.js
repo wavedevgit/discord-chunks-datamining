@@ -1,4 +1,4 @@
-/** Chunk was on 22243 **/
+/** Chunk was on 85438 **/
 e.exports = {
   navBar: "navBar__88ef1",
   nitroWheelIcon: "nitroWheelIcon__88ef1",

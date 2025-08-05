@@ -12,8 +12,8 @@ var n = a(255367),
   d = a.n(c),
   u = a(442837),
   m = a(755721),
-  x = a(481060),
-  p = a(570140),
+  p = a(481060),
+  x = a(570140),
   h = a(665149),
   b = a(55935),
   f = a(120816),
@@ -73,7 +73,7 @@ let N = [{
         children: [(0, n.jsxs)(h.ZP, {
           className: i()(T.headerBar, O.subPanelHeaderBar),
           children: [(0, n.jsx)(h.ZP.Icon, {
-            icon: x.IeX,
+            icon: p.IeX,
             tooltip: t
           }), (0, n.jsx)(h.ZP.Title, {
             children: t
@@ -140,7 +140,7 @@ function S() {
   } = (0, y.ZP)({
     tabs: E
   }, []), S = (0, u.e7)([f.Z], () => f.Z.trackTriggers), P = r.useCallback(e => {
-    p.Z.dispatch({
+    x.Z.dispatch({
       type: "SET_TRACK_TRIGGERS",
       enabled: e
     })
@@ -153,7 +153,7 @@ function S() {
       children: [(0, n.jsx)("div", {
         title: "Enables tracking of all triggers",
         className: O.triggersEnable,
-        children: (0, n.jsx)(x.rsf, {
+        children: (0, n.jsx)(p.rsf, {
           checked: S,
           onChange: P,
           className: O.__invalid_toolbarSwitch
@@ -165,13 +165,13 @@ function S() {
         onClick: v.Zw,
         children: (0, n.jsx)("span", {
           title: C.intl.string(C.t.VkKicX),
-          children: (0, n.jsx)(x.XHJ, {
+          children: (0, n.jsx)(p.XHJ, {
             size: "md",
             color: "currentColor",
             "aria-label": C.intl.string(C.t.VkKicX)
           })
         })
-      }), (0, n.jsx)(x.E1j, {
+      }), (0, n.jsx)(p.E1j, {
         size: "sm",
         className: O.searchBar,
         query: e,

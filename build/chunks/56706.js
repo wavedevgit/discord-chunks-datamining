@@ -1,6 +1,6 @@
 /** Chunk was on 93886 **/
 a.d(t, {
-  Z: () => x
+  Z: () => p
 }), a(388685);
 var n = a(255367),
   r = a(73800),
@@ -13,13 +13,13 @@ var n = a(255367),
   u = a(616257),
   m = a(493733);
 
-function x() {
+function p() {
   let [e, t] = r.useState(30), a = () => {
     i.Z.dispatch({
       type: "VOICE_FILTER_DEV_TOOLS_SET_UPDATE_TIME",
       timeInSeconds: e
     })
-  }, x = r.useCallback(() => {
+  }, p = r.useCallback(() => {
     i.Z.dispatch({
       type: "VOICE_FILTER_NATIVE_MODULE_STATE_CHANGE",
       state: s.O.LOADING
@@ -71,7 +71,7 @@ function x() {
           variant: "primary",
           size: "sm",
           text: "Pretend",
-          onClick: x
+          onClick: p
         })]
       }), (0, n.jsx)("div", {
         className: m.panelRow,

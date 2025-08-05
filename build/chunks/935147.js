@@ -1,4 +1,4 @@
-/** Chunk was on 22243 **/
+/** Chunk was on 85438 **/
 n.d(t, {
   Z: () => V
 }), n(953529);
@@ -20,8 +20,8 @@ var i = n(255367),
   x = n(629654),
   _ = n(53691),
   j = n(165583),
-  E = n(267717),
-  C = n(643879),
+  C = n(267717),
+  E = n(643879),
   O = n(350327),
   v = n(996073),
   S = n(25990),
@@ -37,8 +37,8 @@ var i = n(255367),
   w = n(490220),
   k = n(981631),
   L = n(474936),
-  B = n(526761),
-  M = n(388032),
+  M = n(526761),
+  B = n(388032),
   U = n(23821);
 
 function V(e) {
@@ -48,8 +48,8 @@ function V(e) {
     isVisible: G,
     shouldShow: F
   } = e, H = I.ZP.isPremium(V), {
-    pendingAvatar: W,
-    pendingThemeColors: z,
+    pendingAvatar: z,
+    pendingThemeColors: W,
     tryItOutThemeColors: Y,
     tryItOutAvatar: K,
     tryItOutBanner: q,
@@ -92,7 +92,7 @@ function V(e) {
     preset: $,
     onShuffle: ee
   } = (0, b.Z)(), et = r.useRef(null);
-  (0, v.Z)(et, B.Y_.TRY_IT_OUT);
+  (0, v.Z)(et, M.Y_.TRY_IT_OUT);
   let {
     analyticsLocations: en,
     newestAnalyticsLocation: ei,
@@ -135,7 +135,7 @@ function V(e) {
             size: "md",
             color: "currentColor",
             className: U.premiumIcon
-          }), M.intl.string(M.t.gMlDNT)]
+          }), B.intl.string(B.t.gMlDNT)]
         }),
         profilePreview: (0, i.jsxs)(i.Fragment, {
           children: [(0, i.jsx)(x.Z, {
@@ -150,20 +150,20 @@ function V(e) {
           children: [(0, i.jsxs)("div", {
             children: [(0, i.jsx)(a.X6q, {
               variant: "heading-xl/extrabold",
-              children: M.intl.string(M.t["2zGdAQ"])
+              children: B.intl.string(B.t["2zGdAQ"])
             }), (0, i.jsx)(a.Text, {
               className: U.description,
               variant: "text-sm/normal",
-              children: M.intl.string(M.t.xeEC29)
+              children: B.intl.string(B.t.xeEC29)
             })]
           }), (0, i.jsx)(Z.Z, {
             className: U.customizationSection,
             user: V,
-            pendingAvatarSrc: (0, C.SD)({
+            pendingAvatarSrc: (0, E.SD)({
               userId: V.id,
-              image: null != K ? K : W
+              image: null != K ? K : z
             }),
-            pendingColors: null != Y ? Y : z,
+            pendingColors: null != Y ? Y : W,
             onThemeColorsChange: O.rf,
             showPremiumIcon: !1,
             preventDisabled: !0
@@ -178,39 +178,39 @@ function V(e) {
             isTryItOutFlow: !0,
             onAvatarChange: O.c_,
             showRemoveAvatarButton: !1,
-            changeAvatarButtonText: M.intl.string(M.t["7z0D1d"]),
-            sectionTitle: M.intl.string(M.t.vtFfPT)
+            changeAvatarButtonText: B.intl.string(B.t["7z0D1d"]),
+            sectionTitle: B.intl.string(B.t.vtFfPT)
           }), (0, i.jsx)(y.Z, {
             isTryItOutFlow: !0,
             className: U.customizationSection,
             user: V,
-            sectionTitle: M.intl.string(M.t["7v0T9P"])
+            sectionTitle: B.intl.string(B.t["7v0T9P"])
           }, "decoration"), (0, i.jsx)(D.Z, {
             className: U.customizationSection,
             isTryItOutFlow: !0,
             initialSelectedEffectId: Q,
             user: V,
-            sectionTitle: M.intl.string(M.t.wR5wOj)
+            sectionTitle: B.intl.string(B.t.wR5wOj)
           }, "effect"), !ea && (0, i.jsx)(a.Text, {
             variant: "text-sm/normal",
-            children: M.intl.string(M.t["smo74+"])
+            children: B.intl.string(B.t["smo74+"])
           })]
         })
       }), !ea && (0, i.jsx)(_.p, {
         onSubscribeModalClose: es,
         className: U.floatingUpsell,
         showUpsell: !0,
-        text: M.intl.format(M.t.TmfgIy, {
+        text: B.intl.format(B.t.TmfgIy, {
           onClick: () => {
-            (0, E.y)({
+            (0, C.y)({
               analyticsSource: ei,
               onSubscribeFinish: es
             })
           }
         }),
-        button: H ? M.intl.string(M.t.AfRWIy) : eo ? M.intl.formatToPlainString(M.t.bkQ4bG, {
+        button: H ? B.intl.string(B.t.AfRWIy) : eo ? B.intl.formatToPlainString(B.t.bkQ4bG, {
           percent: null == el ? void 0 : el.discount.amount
-        }) : M.intl.string(M.t.pj0XBA),
+        }) : B.intl.string(B.t.pj0XBA),
         position: "inline",
         showShadow: !1
       }), ea && (0, i.jsxs)("div", {
