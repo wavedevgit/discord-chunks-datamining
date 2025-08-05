@@ -3,13 +3,13 @@ n.d(t, {
   Z: () => m
 }), n(361932), n(187205), n(388685);
 var i = n(255367),
-  a = n(73800),
-  o = n(120356),
-  s = n.n(o),
-  l = n(66546),
-  r = n(481060),
+  o = n(73800),
+  l = n(120356),
+  a = n.n(l),
+  r = n(66546),
+  s = n(481060),
   c = n(59662),
-  u = n(281215),
+  u = n(28682),
   d = n(854014),
   f = n(610844);
 
@@ -18,37 +18,35 @@ function m(e) {
     node: t
   } = e, {
     history: n,
-    activeIndex: a,
-    pushPanel: o
-  } = (0, c.t)(), {
-    icon: s
-  } = t.data, l = t.data.useTitle(), r = t.data.layout.flatMap(e => e.isDataOfType(u.Jq.CATEGORY) ? [e] : e.isDataOfType(u.Jq.PANE) ? e.data.layout : []), f = n[a] === t;
+    activeIndex: l,
+    pushPanel: a
+  } = (0, c.t)(), r = t.useTitle(), s = o.useMemo(() => t.layout.flatMap(e => e.type === u.J.CATEGORY ? [e] : e.type === u.J.PANE ? e.layout : []), [t]), f = n[l] === t;
   return (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(d.Z, {
-      icon: s,
-      title: l,
+      icon: t.icon,
+      title: r,
       active: f,
-      onClick: () => o(t)
-    }), f && r.length > 1 && (0, i.jsx)(v, {
-      categories: r
+      onClick: () => a(t)
+    }), f && s.length > 1 && (0, i.jsx)(b, {
+      categories: s
     })]
   })
 }
 
-function v(e) {
+function b(e) {
   let {
     categories: t
-  } = e, [n, o] = a.useState(0), [c, u] = (0, r.q_F)(() => ({
+  } = e, [n, l] = o.useState(0), [c, u] = (0, s.q_F)(() => ({
     y: 0,
     config: {
       mass: .1,
       friction: 20,
       tension: 300
     }
-  })), d = a.useMemo(() => t.map(e => {
-    var t, n;
+  })), d = o.useMemo(() => t.map(e => {
+    var t;
     return {
-      title: null == (t = (n = e.data).useTitle) ? void 0 : t.call(n),
+      title: null == (t = e.useTitle) ? void 0 : t.call(e),
       key: e.key
     }
   }).filter(e => {
@@ -61,28 +59,28 @@ function v(e) {
     className: f.subnav,
     children: [(0, i.jsx)("div", {
       className: f.track,
-      children: (0, i.jsx)(l.animated.div, {
+      children: (0, i.jsx)(r.animated.div, {
         className: f.thumb,
         style: c
       })
     }), (0, i.jsx)("ul", {
       children: d.map((e, t) => {
         let {
-          title: a,
-          key: l
+          title: o,
+          key: r
         } = e;
-        return (0, i.jsx)(r.P3F, {
+        return (0, i.jsx)(s.P3F, {
           onClick: () => {
-            o(t), u({
+            l(t), u({
               y: 40 * t
             })
           },
           tag: "li",
-          className: s()({
+          className: a()({
             [f.active]: t === n
           }),
-          children: a
-        }, l)
+          children: o
+        }, r)
       })
     })]
   })

@@ -1,47 +1,55 @@
 /** Chunk was on 85438 **/
 n.d(t, {
-  Z: () => p
+  Z: () => h
 });
 var i = n(255367),
   r = n(73800),
   s = n(481060),
-  a = n(594928),
-  l = n(922626),
-  o = n(74538),
-  c = n(993413),
-  d = n(388032),
-  u = n(698282),
-  m = n(401609);
+  a = n(906732),
+  l = n(594928),
+  o = n(922626),
+  c = n(829716),
+  d = n(74538),
+  u = n(993413),
+  m = n(388032),
+  p = n(698282),
+  g = n(401609);
 
-function p(e) {
+function h(e) {
   let {
     user: t,
     className: n
-  } = e, p = a.J.useExperiment({
+  } = e, h = l.J.useExperiment({
     location: "DisplayNameStylesSection"
-  }).enabled, g = o.ZP.canUsePremiumProfileCustomization(t), h = null != t.displayNameStyles, {
-    handleApplyDisplayNameStyles: f,
-    isApplying: b
-  } = (0, l.Z)({}), x = (0, r.useCallback)(() => {}, []), _ = (0, r.useCallback)(() => {
-    f(null)
-  }, [f]);
-  return p || h ? (0, i.jsx)(c.Z, {
-    title: d.intl.string(u.default["86GtGB"]),
+  }).enabled, f = d.ZP.canUsePremiumProfileCustomization(t), {
+    analyticsLocations: b
+  } = (0, a.ZP)(), x = null != t.displayNameStyles, {
+    handleApplyDisplayNameStyles: _,
+    isApplying: j
+  } = (0, o.Z)({}), C = (0, r.useCallback)(() => {
+    (0, c.I)({
+      analyticsLocations: b
+    })
+  }, [b]), E = (0, r.useCallback)(() => {
+    _(null)
+  }, [_]);
+  return h || x ? (0, i.jsx)(u.Z, {
+    title: m.intl.string(p.default["86GtGB"]),
     className: n,
-    showPremiumIcon: g,
+    showPremiumIcon: f,
     children: (0, i.jsxs)("div", {
-      className: m.buttonsContainer,
-      children: [p && (0, i.jsx)(s.zxk, {
+      className: g.buttonsContainer,
+      children: [h && (0, i.jsx)(s.zxk, {
         variant: "primary",
         size: "sm",
-        text: d.intl.string(u.default.vJqrIi),
-        onClick: x
-      }), h && (0, i.jsx)(s.zxk, {
+        text: m.intl.string(p.default.vJqrIi),
+        onClick: C
+      }), x && (0, i.jsx)(s.zxk, {
         variant: "secondary",
         size: "sm",
-        text: d.intl.string(u.default.ymq8WV),
-        onClick: _,
-        loading: b
+        text: m.intl.string(p.default.ymq8WV),
+        onClick: E,
+        loading: j
       })]
     })
   }) : null

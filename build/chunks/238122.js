@@ -52,17 +52,17 @@ let u = e => {
       return n
     })(Object(n)).forEach(function(e) {
       Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
-    }), t))), [j, y] = a.useState(""), [C, I] = a.useState(null);
+    }), t))), [j, C] = a.useState(""), [y, O] = a.useState(null);
     a.useEffect(() => {
       var e;
-      y(null != (e = null == h ? void 0 : h.value) ? e : "")
+      C(null != (e = null == h ? void 0 : h.value) ? e : "")
     }, [h]);
-    let O = a.useCallback(e => {
+    let I = a.useCallback(e => {
       let t = null != b ? new RegExp(b) : null;
-      null == t || t.test(e) ? null != e && (I(null), y(e), x({
+      null == t || t.test(e) ? null != e && (O(null), C(e), x({
         value: e,
         isValid: !0
-      })) : (I(s.intl.string(s.t["24xrGR"])), x({
+      })) : (O(s.intl.string(s.t["24xrGR"])), x({
         value: e,
         isValid: !1
       }))
@@ -80,9 +80,9 @@ let u = e => {
         })
       }), (0, r.jsx)(i.Kx8, {
         maxLength: g,
-        onChange: O,
+        onChange: I,
         value: j,
-        error: C,
+        error: y,
         rows: _,
         placeholder: p,
         autoFocus: !0

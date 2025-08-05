@@ -20,8 +20,8 @@ let b = e => {
     user: t,
     channelId: n,
     reportId: b
-  } = e, x = d.Z.getDMFromUserId(t.id), h = (0, i.e7)([d.Z], () => d.Z.getChannel(n), [n]), f = a.useMemo(() => m.ZP.getName(null == h ? void 0 : h.guild_id, null == h ? void 0 : h.id, t), [h, t]), v = (0, i.e7)([u.ZP], () => null == x ? null : u.ZP.isChannelMuted(null, x)), [j, y] = a.useState(null != v && v), C = a.useCallback(() => {
-    null != x && (y(!0), l.ZP.trackWithMetadata(_.rMx.IAR_MUTE_USER_BUTTON_CLICKED, {
+  } = e, x = d.Z.getDMFromUserId(t.id), h = (0, i.e7)([d.Z], () => d.Z.getChannel(n), [n]), f = a.useMemo(() => m.ZP.getName(null == h ? void 0 : h.guild_id, null == h ? void 0 : h.id, t), [h, t]), v = (0, i.e7)([u.ZP], () => null == x ? null : u.ZP.isChannelMuted(null, x)), [j, C] = a.useState(null != v && v), y = a.useCallback(() => {
+    null != x && (C(!0), l.ZP.trackWithMetadata(_.rMx.IAR_MUTE_USER_BUTTON_CLICKED, {
       other_user_id: t.id,
       report_id: b
     }), o.Z.updateChannelOverrideSettings(null, x, {
@@ -35,6 +35,6 @@ let b = e => {
     description: g.intl.string(g.t["yM/+AA"]),
     buttonText: j ? g.intl.string(g.t.E8x4Nj) : g.intl.string(g.t.HITUcX),
     buttonDisabled: j,
-    onButtonPress: C
+    onButtonPress: y
   })
 }

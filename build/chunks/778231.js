@@ -24,11 +24,11 @@ let x = e => {
     name: h
   } = x, f = (0, i.e7)([m.Z], () => m.Z.getNewestTokenForApplication(x.id)), v = null != (n = x.getIconURL(40)) ? n : b, j = (0, d.Z)({
     application: x
-  }), y = a.useRef(!1);
+  }), C = a.useRef(!1);
   a.useEffect(() => {
-    y.current || (l.Z.fetch(), y.current = !0)
+    C.current || (l.Z.fetch(), C.current = !0)
   }, []);
-  let C = null != f ? p.default.extractTimestamp(f.id) : void 0;
+  let y = null != f ? p.default.extractTimestamp(f.id) : void 0;
   return (0, r.jsxs)("div", {
     className: g.container,
     children: [(0, r.jsx)(o.X6q, {
@@ -70,11 +70,11 @@ let x = e => {
               color: "text-default",
               variant: "text-md/normal",
               children: null == (t = x.bot) ? void 0 : t.tag
-            }), null != C && (0, r.jsx)(o.Text, {
+            }), null != y && (0, r.jsx)(o.Text, {
               color: "text-default",
               variant: "text-md/normal",
               children: _.intl.formatToPlainString(_.t.C9rUOz, {
-                authorizedAt: C
+                authorizedAt: y
               })
             })]
           })]

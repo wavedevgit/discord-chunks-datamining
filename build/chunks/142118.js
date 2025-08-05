@@ -1,29 +1,29 @@
 /** Chunk was on 36878 **/
 n.d(t, {
-  Z: () => r
+  Z: () => s
 });
 var i = n(255367),
-  a = n(73800),
-  o = n(481060),
-  s = n(36361),
-  l = n(355521);
-let r = a.memo(function(e) {
+  o = n(73800),
+  l = n(481060),
+  a = n(36361),
+  r = n(355521);
+let s = o.memo(function(e) {
   let {
     node: t
   } = e, {
     useTitle: n,
-    layout: r,
+    layout: s,
     render: c,
     init: u
-  } = t.data, d = null == n ? void 0 : n();
-  return (a.useEffect(() => {
+  } = t, d = null == n ? void 0 : n();
+  return (o.useEffect(() => {
     null == u || u()
-  }, [u]), null != c) ? (0, i.jsx)(c, {}) : (0, i.jsx)(o.hjN, {
-    tag: o.RB0.H1,
-    className: l.category,
+  }, [u]), null != c) ? (0, i.jsx)(c, {}) : (0, i.jsx)(l.hjN, {
+    tag: l.RB0.H1,
+    className: r.category,
     title: d,
-    titleClassName: l.categoryTitle,
-    children: r.map(e => (0, i.jsx)(s.Z, {
+    titleClassName: r.categoryTitle,
+    children: s.map(e => (0, i.jsx)(a.Z, {
       node: e
     }, e.key))
   })

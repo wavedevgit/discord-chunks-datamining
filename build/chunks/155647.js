@@ -1,33 +1,35 @@
 /** Chunk was on 53 **/
 n.d(t, {
-  fW: () => d,
-  jc: () => u
+  fW: () => u,
+  jc: () => m
 }), n(388685), n(539854);
 var r = n(73800),
   a = n(823379),
   i = n(568315),
   o = n(83126),
-  l = n(617191),
-  s = n(82554);
-let c = {
-  [s.zR.SAFETY_DM_SPAM_FILTER]: i.Z,
-  [s.zR.SAFETY_SENSITIVE_MEDIA_FILTERS]: l.Z,
-  [s.zR.SAFETY_LANGUAGE_FILTER]: o.Z
+  l = n(218471),
+  s = n(46912),
+  c = n(82554);
+let d = {
+  [c.zR.SAFETY_DM_SPAM_FILTER]: i.Z,
+  [c.zR.SAFETY_SC_FILTERS_SEXUAL_MEDIA]: s.Z,
+  [c.zR.SAFETY_SC_FILTERS_GRAPHIC_MEDIA]: l.Z,
+  [c.zR.SAFETY_LANGUAGE_FILTER]: o.Z
 };
 
-function d(e) {
+function u(e) {
   return r.useMemo(() => null != e ? function(e) {
     let t = [];
-    return Object.entries(c).forEach(n => {
+    return Object.entries(d).forEach(n => {
       let [r, a] = n;
       (null == a.eligibleReportSubtypes || a.eligibleReportSubtypes.includes(e)) && t.push(r)
     }), 0 === t.length ? null : t
   }(e) : null, [e])
 }
 
-function u(e, t) {
+function m(e, t) {
   return r.useMemo(() => e.map(e => (function(e, t) {
-    let n = c[e];
+    let n = d[e];
     return ! function(e, t) {
       let {
         predicate: n,

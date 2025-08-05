@@ -8,6 +8,7 @@ n.d(t, {
   YD: () => x,
   ZJ: () => m,
   aD: () => p,
+  aP: () => U,
   j: () => D,
   k8: () => L,
   oo: () => d,
@@ -356,4 +357,14 @@ function j(e, t, n) {
     u = Math.round(i + (s - i) * n).toString(16).padStart(2, "0"),
     d = Math.round(a + (l - a) * n).toString(16).padStart(2, "0");
   return "#".concat(c).concat(u).concat(d)
+}
+
+function U(e, t, n) {
+  let r = i()(e),
+    a = i()(t),
+    o = .5 > a.get("hsl.l");
+  if (i().contrast(r, a) >= n) return r.hex();
+  let s = o ? .1 : -.1;
+  for (let e = 0; e < 10 && (r = r.set("hsl.l", r.get("hsl.l") + s), !(i().contrast(r, a) >= n)); e++);
+  return r.hex()
 }

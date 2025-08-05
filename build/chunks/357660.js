@@ -1,18 +1,18 @@
 /** Chunk was on 36878 **/
 n.d(t, {
-  T: () => s
+  T: () => a
 });
 var i = n(255367),
-  a = n(670304),
-  o = n(594263);
+  o = n(670304),
+  l = n(594263);
 
-function s(e) {
+function a(e) {
   let {
     node: t
-  } = e, n = t.data.render;
+  } = e, n = t.render;
   return null != n ? (0, i.jsx)(n, {}) : (0, i.jsx)("div", {
-    className: o.panel,
-    children: (0, i.jsx)(a.Z, {
+    className: l.panel,
+    children: (0, i.jsx)(o.Z, {
       node: t
     })
   })

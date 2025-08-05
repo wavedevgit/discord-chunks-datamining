@@ -81,7 +81,7 @@ function v(e) {
     pendingThemeColors: w,
     className: a()(O.container, M),
     forceShowPremium: i,
-    children: [(0, r.jsxs)("header", {
+    children: [(0, r.jsxs)("div", {
       className: O.header,
       children: [(0, r.jsx)(h.Z, {
         user: t,

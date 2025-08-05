@@ -1,18 +1,19 @@
 /** Chunk was on 36878 **/
 n.d(t, {
-  W: () => s
+  W: () => a
 });
 var i = n(255367),
-  a = n(657707),
-  o = n(206403);
+  o = n(657707),
+  l = n(206403);
 
-function s(e) {
+function a(e) {
+  var t, n;
   let {
-    node: t
+    node: a
   } = e;
-  return (0, i.jsx)(o.x, {
-    title: "useTitle" in t.data && "function" == typeof t.data.useTitle ? "[PLACEHOLDER] ".concat(t.data.useTitle(!1)) : "[PLACEHOLDER]",
-    description: "useSubtitle" in t.data && "function" == typeof t.data.useSubtitle ? t.data.useSubtitle() : "",
-    secondaryTrailingElement: (0, i.jsx)(a.tEQ, {})
+  return (0, i.jsx)(l.x, {
+    title: "useTitle" in a ? "[PLACEHOLDER] ".concat(null == (t = a.useTitle) ? void 0 : t.call(a, !1)) : "[PLACEHOLDER]",
+    description: "useSubtitle" in a ? null == (n = a.useSubtitle) ? void 0 : n.call(a) : "",
+    secondaryTrailingElement: (0, i.jsx)(o.tEQ, {})
   })
 }

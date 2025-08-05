@@ -1,13 +1,13 @@
 /** Chunk was on 36878 **/
 n.d(t, {
-  Z: () => x
+  Z: () => v
 });
 var i = n(255367),
-  a = n(73800),
-  o = n(120356),
-  s = n.n(o),
-  l = n(873546),
-  r = n(755721),
+  o = n(73800),
+  l = n(120356),
+  a = n.n(l),
+  r = n(873546),
+  s = n(755721),
   c = n(481060),
   u = n(59662),
   d = n(36361),
@@ -18,9 +18,9 @@ function m(e) {
     icon: t,
     onClick: n
   } = e;
-  return (0, i.jsx)(r.zx, {
-    look: r.zx.Looks.BLANK,
-    size: r.zx.Sizes.ICON,
+  return (0, i.jsx)(s.zx, {
+    look: s.zx.Looks.BLANK,
+    size: s.zx.Sizes.ICON,
     className: f.contentHeaderButton,
     innerClassName: f.iconButtonInner,
     onClick: n,
@@ -30,51 +30,51 @@ function m(e) {
   })
 }
 
-function v(e) {
+function b(e) {
   let {
     title: t,
     onClose: n,
-    setShowNavigationMobile: a
+    setShowNavigationMobile: o
   } = e;
   return (0, i.jsxs)("div", {
     className: f.contentHeader,
     children: [(0, i.jsxs)("div", {
       className: f.contentHeaderLeft,
-      children: [l.tq && (0, i.jsx)(m, {
+      children: [r.tq && (0, i.jsx)(m, {
         icon: c.yFM,
-        onClick: () => a(!0)
+        onClick: () => o(!0)
       }), (0, i.jsx)(c.X6q, {
         variant: "heading-md/normal",
         color: "header-secondary",
         children: t
       })]
-    }), !l.tq && (0, i.jsx)(m, {
+    }), !r.tq && (0, i.jsx)(m, {
       icon: c.Uz9,
       onClick: n
     })]
   })
 }
-let x = a.memo(function(e) {
+let v = o.memo(function(e) {
   let {
     onClose: t,
     setShowNavigationMobile: n,
-    setting: a
-  } = e, o = a.data.useTitle(), {
-    showNavigationMobile: r
+    setting: o
+  } = e, l = o.useTitle(), {
+    showNavigationMobile: s
   } = (0, u.t)();
   return (0, i.jsxs)("div", {
-    className: s()(f.content, {
-      [f.mobile]: l.tq,
-      [f.mobileNavigationOpen]: r
+    className: a()(f.content, {
+      [f.mobile]: r.tq,
+      [f.mobileNavigationOpen]: s
     }),
-    children: [(0, i.jsx)(v, {
-      title: o,
+    children: [(0, i.jsx)(b, {
+      title: l,
       onClose: t,
       setShowNavigationMobile: n
     }), (0, i.jsx)(c.w0Z, {
       className: f.contentScroller,
       children: (0, i.jsx)(d.Z, {
-        node: a
+        node: o
       })
     })]
   })
