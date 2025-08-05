@@ -95,7 +95,7 @@ function V(e) {
       ctaContent: E.jZ.COPY_QUEST_URL,
       impressionId: W,
       sourceQuestContent: H
-    }), es(!0), null != ec.current && clearTimeout(ec.current), ec.current = setTimeout(() => {
+    }), (0, f.showToast)((0, f.createToast)(A.intl.string(A.t["+5kSoa"]), f.ToastType.SUCCESS)), es(!0), null != ec.current && clearTimeout(ec.current), ec.current = setTimeout(() => {
       es(!1)
     }, 1700)
   }, [W, F.id, H]);

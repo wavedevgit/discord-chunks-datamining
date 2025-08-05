@@ -2,9 +2,8 @@
 n.d(t, {
   Z: () => I
 }), n(388685), n(953529);
-var r = n(255367);
-n(73800);
-var o = n(442837),
+var r = n(255367),
+  o = n(442837),
   l = n(755721),
   i = n(481060),
   a = n(100527),
@@ -118,7 +117,7 @@ function I(e) {
                   icon: n,
                   description: o
                 } = e;
-                return (0, r.jsx)(s.ZP, {
+                return (0, r.jsx)(s.JZ, {
                   icon: n,
                   title: o,
                   titleVariant: "text-md/normal",

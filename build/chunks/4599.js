@@ -2,9 +2,8 @@
 t.d(n, {
   Z: () => A
 }), t(388685), t(953529);
-var o = t(255367);
-t(73800);
-var c = t(442837),
+var o = t(255367),
+  c = t(442837),
   i = t(755721),
   a = t(481060),
   r = t(100527),
@@ -125,7 +124,7 @@ function A(e) {
                     icon: t,
                     description: c
                   } = e;
-                  return (0, o.jsx)(l.ZP, {
+                  return (0, o.jsx)(l.JZ, {
                     icon: t,
                     title: c,
                     titleVariant: "text-md/normal"

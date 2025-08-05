@@ -72,12 +72,12 @@ let U = e => {
       K = (0, _.Qo)(W, Y),
       {
         enabled: q,
-        variant: Q
+        variant: X
       } = v.p1.useExperiment({
         location: "NitroTabButton"
       }),
       {
-        enabled: X
+        enabled: Q
       } = v.pd.useExperiment({
         location: "NitroTabButton"
       });
@@ -156,7 +156,7 @@ let U = e => {
       isTabSelected: H
     }), O = 4);
     let em = M.intl.string(M.t.Ipxkoq);
-    K && X && (em = M.intl.string(M.t["4gwVVl"])), !K && q && (Q === v.Rx.TRY_NITRO && null != $ ? em = M.intl.string(M.t["3O6A4e"]) : Q === v.Rx.JOIN_NITRO ? em = M.intl.string(M.t.brBiOz) : Q === v.Rx.GET_NITRO && (em = M.intl.string(M.t.GayC1t)));
+    K && Q && (em = M.intl.string(M.t["4gwVVl"])), !K && q && (X === v.Rx.TRY_NITRO && null != $ ? em = M.intl.string(M.t["3O6A4e"]) : X === v.Rx.JOIN_NITRO ? em = M.intl.string(M.t.brBiOz) : X === v.Rx.GET_NITRO && (em = M.intl.string(M.t.GayC1t)));
     let eb = (0, r.jsx)(c.Qj, (G = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},

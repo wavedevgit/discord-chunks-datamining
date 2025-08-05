@@ -65,7 +65,7 @@ function E(e) {
     config: {
       duration: 150
     }
-  }), z = (0, b.ZP)(n.id, V ? E : void 0), X = h.ZP.getName(null == z ? void 0 : z.guildId, S, n), Q = (0, _.Dt)(), J = (0, a.e7)([I.Z], () => I.Z.getRelationshipType(n.id)), $ = n.id === t.id, ee = (0, f.p)({
+  }), z = (0, b.ZP)(n.id, V ? E : void 0), X = h.ZP.getName(null == z ? void 0 : z.guildId, S, n), J = (0, _.Dt)(), Q = (0, a.e7)([I.Z], () => I.Z.getRelationshipType(n.id)), $ = n.id === t.id, ee = (0, f.p)({
     location: "UserProfileModal"
   }), en = c.useMemo(() => null != k ? k : (0, p.Z)(), [k]), et = c.useMemo(() => null != E ? {
     [E]: [n.id]
@@ -87,12 +87,12 @@ function E(e) {
           transitionState: G,
           className: w.root,
           hideShadow: !0,
-          "aria-labelledby": Q,
+          "aria-labelledby": J,
           parentComponent: "UserProfileModal",
           children: [(0, o.jsx)(r.y5t, {
             component: (0, o.jsx)(r.nn4, {
               children: (0, o.jsx)(r.H, {
-                id: Q,
+                id: J,
                 children: T.intl.format(T.t.KRe1Fh, {
                   name: X
                 })
@@ -144,7 +144,7 @@ function E(e) {
                       user: n,
                       currentUser: t,
                       guildId: E,
-                      relationshipType: J,
+                      relationshipType: Q,
                       onClose: U
                     })
                   })]

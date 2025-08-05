@@ -31,8 +31,8 @@ let p = {
     n.useEffect(() => {
       h(_)
     }, [_, h]), n.useEffect(() => {
-      m(b), v !== u.f7.VISIBLE && C(u.f7.VISIBLE)
-    }, [b, v]);
+      m(b)
+    }, [b]);
     let O = e => new Promise(t => setTimeout(t, e)),
       {
         clearError: E
