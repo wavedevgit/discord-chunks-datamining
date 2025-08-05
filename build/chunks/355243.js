@@ -33,11 +33,11 @@ function v(e) {
     onClick: b,
     onScrubBack: C,
     onScrubForward: S
-  } = e, [h, _] = l.useState(null), [j, y] = l.useState(null), [x, D] = l.useState(null), [T, P] = l.useState(!1), R = l.useRef(null), N = e => {
+  } = e, [h, _] = l.useState(null), [j, y] = l.useState(null), [x, T] = l.useState(null), [D, P] = l.useState(!1), R = l.useRef(null), N = e => {
     R.current = e, _(e)
   };
   l.useEffect(() => {
-    null != h && (null == O ? D(null) : D(p(O, g, h)))
+    null != h && (null == O ? T(null) : T(p(O, g, h)))
   }, [h, O, g]);
   let I = (0, c.Z)(e => {
       N(e.contentRect)
@@ -83,7 +83,7 @@ function v(e) {
         o && (P(!1), y(null))
       },
       onMouseMove: e => {
-        o && T && A(e)
+        o && D && A(e)
       },
       onKeyDown: w,
       tabIndex: o ? void 0 : -1,
@@ -95,7 +95,7 @@ function v(e) {
       },
       children: [null == E ? void 0 : E.map(e => (0, r.jsx)("div", {
         className: i()(m.buffer, {
-          [m.bufferHovered]: T
+          [m.bufferHovered]: D
         }),
         style: {
           width: "".concat(100 * e.size, "%"),
@@ -112,9 +112,9 @@ function v(e) {
         percent: t,
         foregroundColor: "#FFFFFF",
         backgroundColor: null != v ? v : void 0,
-        size: T ? a.Exd.Sizes.XSMALL : a.Exd.Sizes.XXSMALL,
+        size: D ? a.Exd.Sizes.XSMALL : a.Exd.Sizes.XXSMALL,
         animate: n
-      }), T && null != M && (0, r.jsx)(a.Text, {
+      }), D && null != M && (0, r.jsx)(a.Text, {
         className: m.timeDisplay,
         variant: "text-xs/normal",
         style: {
@@ -122,7 +122,7 @@ function v(e) {
           color: "#FFFFFF"
         },
         children: M
-      }), T && o && null != V && (0, r.jsx)("div", {
+      }), D && o && null != V && (0, r.jsx)("div", {
         className: m.grabber,
         style: {
           right: "".concat(V - 6, "px")

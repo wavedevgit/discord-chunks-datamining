@@ -26,8 +26,8 @@ var r = n(255367),
   j = n(164495),
   y = n(472144),
   x = n(602667),
-  D = n(644646),
-  T = n(604162),
+  T = n(644646),
+  D = n(604162),
   P = n(747717),
   R = n(963123),
   N = n(281055),
@@ -82,7 +82,7 @@ function V(e) {
   } = e, Q = (0, O.il)(F), z = (0, b.tP)(F), G = (0, u.e7)([v.Z], () => v.Z.getState().theme), K = (0, d.wj)(G) ? k.BRd.DARK : k.BRd.LIGHT, X = (0, u.e7)([p.Z], () => p.Z.useReducedMotion), W = (0, g.aM)(), [$, J] = l.useState(Q.progressSeconds), [ee, et] = l.useState(!1), {
     completedRatio: en,
     completedRatioDisplay: er
-  } = (0, b.I)(F), [el, eo] = (0, T.G6)(A.intl.string(A.t.RDE0SU), A.intl.string(A.t["+5kSoa"]), 1700), ei = null != (0, O.LM)(F.config), [ea, es] = l.useState(!1), ec = l.useRef(null), eu = (null == (t = F.userStatus) ? void 0 : t.claimedAt) != null ? ei ? A.intl.string(A.t.WYchdX) : A.intl.string(A.t.vTgCW1) : A.intl.string(A.t.cfY4PD), ed = l.useCallback(() => {
+  } = (0, b.I)(F), [el, eo] = (0, D.G6)(A.intl.string(A.t.RDE0SU), A.intl.string(A.t["+5kSoa"]), 1700), ei = null != (0, O.LM)(F.config), [ea, es] = l.useState(!1), ec = l.useRef(null), eu = (null == (t = F.userStatus) ? void 0 : t.claimedAt) != null ? ei ? A.intl.string(A.t.WYchdX) : A.intl.string(A.t.vTgCW1) : A.intl.string(A.t.cfY4PD), ed = l.useCallback(() => {
     (0, O.f2)(F.id, {
       content: S.jn.VIDEO_MODAL,
       ctaContent: E.jZ.COPY_QUEST_URL,
@@ -105,7 +105,7 @@ function V(e) {
   let ef = async () => {
     if (null != B) {
       let e = _.r.build(F.config).application.link;
-      await (0, T.qP)(e) && B()
+      await (0, D.qP)(e) && B()
     }(0, O.nc)(F, {
       content: S.jn.VIDEO_MODAL,
       ctaContent: E.jZ.OPEN_GAME_LINK,
@@ -178,7 +178,7 @@ function V(e) {
                   percentComplete: en,
                   percentCompleteText: ee ? er : void 0,
                   percentCompleteTextVariant: "text-sm/medium",
-                  children: (0, r.jsx)(D.Z, {
+                  children: (0, r.jsx)(T.Z, {
                     className: w.questProgressRewardTile,
                     quest: F,
                     questContent: S.jn.VIDEO_MODAL,
@@ -191,6 +191,7 @@ function V(e) {
             })]
           }), (0, r.jsx)(R.Z, {
             quest: F,
+            videoTask: eg,
             videoSessionId: U,
             parentTransitionState: V,
             onOptimisticProgressUpdate: J,

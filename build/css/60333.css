@@ -1,6 +1,6 @@
 /**
   Module ID: 60333
-  Original File Name: b41b888fbc7999f4
+  Original File Name: 68056c584c5a7f46
 **/
 .ctaButtons_a77fde {
     display: grid;
@@ -521,6 +521,12 @@
     width: 363px
 }
 
+.transcriptContPortrait_de2fa0 {
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%)
+}
+
 .transcriptScroller_de2fa0 {
     height: 100%;
     width: 100%
@@ -976,4 +982,4 @@
     background-color: var(--white)
 }
 
-/*# sourceMappingURL=b41b888fbc7999f4.css.map*/
+/*# sourceMappingURL=68056c584c5a7f46.css.map*/

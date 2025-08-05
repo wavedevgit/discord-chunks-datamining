@@ -1,6 +1,6 @@
 /**
   Module ID: 63942
-  Original File Name: 1735e6d9984298cf
+  Original File Name: 71494eb0702aa92e
 **/
 .modalRoot_de2fa0 {
     border: none!important;
@@ -380,6 +380,12 @@
     right: 24px;
     top: 24px;
     width: 363px
+}
+
+.transcriptContPortrait_de2fa0 {
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%)
 }
 
 .transcriptScroller_de2fa0 {
@@ -837,4 +843,4 @@
     background-color: var(--white)
 }
 
-/*# sourceMappingURL=1735e6d9984298cf.css.map*/
+/*# sourceMappingURL=71494eb0702aa92e.css.map*/

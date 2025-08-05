@@ -34,7 +34,7 @@ function a(e) {
       return (0, r.jsxs)("li", {
         className: l.tag,
         children: [(0, r.jsx)(a, {
-          size: "xs"
+          size: "xxs"
         }), (0, r.jsx)(o.Text, {
           variant: "text-xxs/medium",
           color: "text-secondary",

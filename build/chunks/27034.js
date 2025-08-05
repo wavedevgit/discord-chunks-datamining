@@ -73,6 +73,7 @@ function E(e) {
   return void 0 !== E && E && (D = p.sliderBodyLarge), (0, r.jsxs)(r.Fragment, {
     children: [null == (h = null == R || null == (s = R.options) ? void 0 : s.renderHeader) || h ? m : null, R.renderStep(b), null == y || P ? null : (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(u.hzk, {
+        "data-migration-pending": !0,
         className: o()(w, p.body, A, {
           [p.reviewStep]: y === f.h8.REVIEW,
           [p.addPaymentStepForPremium]: y === f.h8.ADD_PAYMENT_STEPS && C

@@ -64,7 +64,8 @@ function T(e) {
         className: v.seasonalGiftBoxHeaderIcon
       }), (0, r.jsx)(s.olH, {
         onClick: T,
-        className: v.closeButton
+        className: v.closeButton,
+        "data-migration-pending": !0
       })]
     }) : k ? e = n(null != N ? N : null, T, A) : R === O.GZ.ONE_TIME ? e = (0, r.jsx)(p.t, {
       step: A,

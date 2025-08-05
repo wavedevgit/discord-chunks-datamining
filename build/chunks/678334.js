@@ -157,6 +157,7 @@ function P(e) {
   }, [eb, el, t]);
   let ej = null != V || Q === C.GZQ.ONE_TIME && !el;
   return eb ? null : (0, r.jsxs)(u.mzw, {
+    "data-migration-pending": !0,
     align: f.Z.Align.CENTER,
     className: o()(es, R.modalFooter),
     children: [(0, r.jsx)(g.Z, {

@@ -65,11 +65,14 @@ function y(e) {
     children: [(0, r.jsx)(l.xBx, {
       className: h.blockedPaymentsModalHeader,
       justify: u.Z.Justify.END,
+      "data-migration-pending": !0,
       children: (0, r.jsx)(l.olH, {
-        onClick: t
+        onClick: t,
+        "data-migration-pending": !0
       })
     }), (0, r.jsx)(l.hzk, {
       className: h.blockedPaymentsModalContent,
+      "data-migration-pending": !0,
       children: (0, r.jsx)(E, {
         className: h.modal
       })

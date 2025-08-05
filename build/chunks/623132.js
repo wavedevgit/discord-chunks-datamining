@@ -24,7 +24,7 @@ function g(e) {
   } = e;
   return (0, r.jsxs)("div", {
     children: [(0, r.jsx)(i.PEf, {
-      size: "xs",
+      size: "xxs",
       color: i.TVs.colors.ICON_TERTIARY,
       className: m.icon
     }), (0, r.jsx)(i.nn4, {

@@ -76,7 +76,7 @@ function f(e) {
       }, m(p)),
       sourceQuestContent: g
     })
-  }, [j, f, E, v, p, b, g, S]), D = r.useCallback(e => {
+  }, [j, f, E, v, p, b, g, S]), T = r.useCallback(e => {
     null != f.current && b({
       questId: j,
       event: u.rMx.QUEST_VIDEO_TIME_TO_FIRST_FRAME,
@@ -87,7 +87,7 @@ function f(e) {
       }, m(p)),
       sourceQuestContent: g
     })
-  }, [j, f, E, v, p, b, g]), T = r.useCallback(() => {
+  }, [j, f, E, v, p, b, g]), D = r.useCallback(() => {
     null != f.current && b({
       questId: j,
       event: u.rMx.QUEST_VIDEO_PROGRESSED,
@@ -273,8 +273,8 @@ function f(e) {
   return {
     trackQuestVideoLoadingStarted: y,
     trackQuestVideoLoadingEnded: x,
-    trackQuestVideoTimeToFirstFrame: D,
-    trackQuestVideoProgressed: T,
+    trackQuestVideoTimeToFirstFrame: T,
+    trackQuestVideoProgressed: D,
     trackQuestVideoResumed: P,
     trackQuestVideoPaused: R,
     trackQuestVideoFocusChange: N,

@@ -46,6 +46,7 @@ let c = e => {
     children: (0, r.jsx)(a.mzw, {
       justify: o.Z.Justify.BETWEEN,
       align: o.Z.Align.CENTER,
+      "data-migration-pending": !0,
       children: (0, r.jsx)(i.z, {
         "data-testid": "continue",
         variant: "primary",

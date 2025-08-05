@@ -47,13 +47,15 @@ function h(e) {
   return v && (0, l.pO)(I) && t !== s.h8.CONFIRM ? (0, r.jsxs)(a.xBx, {
     className: p.modalHeaderCustomGift,
     separator: !1,
+    "data-migration-pending": !0,
     children: [(0, r.jsx)(a.X6q, {
       variant: "heading-lg/semibold",
       children: C()
     }), (0, r.jsx)(a.olH, {
       onClick: E,
       className: p.closeButton,
-      innerClassName: p.closeButtonInner
+      innerClassName: p.closeButtonInner,
+      "data-migration-pending": !0
     })]
   }) : S ? (0, r.jsx)(c.Z, {
     hideCloseOnFullScreen: !0,
