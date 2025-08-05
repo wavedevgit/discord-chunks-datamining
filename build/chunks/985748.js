@@ -51,7 +51,7 @@ function a(e) {
       return e
     }({
       games: n.games,
-      userId: t.id
+      user: t
     }, a))
   })
 }

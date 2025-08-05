@@ -49,8 +49,8 @@ function I(e) {
     guildId: n,
     channelId: I,
     messageId: P,
-    roleId: w,
-    transitionState: N,
+    roleId: N,
+    transitionState: w,
     openedAt: T,
     onHide: E,
     sourceAnalyticsLocations: Z = []
@@ -63,7 +63,7 @@ function I(e) {
     guildId: A,
     channelId: I,
     messageId: P,
-    roleId: w
+    roleId: N
   }), k = [{
     icon: l.owK,
     description: x.intl.string(x.t.kcuWvb)
@@ -82,7 +82,7 @@ function I(e) {
       fetchEndedAt: null == R ? void 0 : R.fetchEndedAt,
       isLoaded: null == R ? void 0 : R.isLoaded,
       children: (0, r.jsx)(l.Y0X, {
-        transitionState: N,
+        transitionState: w,
         className: _.root,
         "aria-label": G,
         parentComponent: "RestrictedUserProfileModalV2",

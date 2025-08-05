@@ -49,7 +49,7 @@ function a(e) {
       return e
     }({
       game: n.game,
-      userId: t.id
+      user: t
     }, a))
   })
 }

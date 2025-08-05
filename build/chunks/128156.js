@@ -31,8 +31,8 @@ function P(e) {
     user: t,
     currentUser: n,
     displayProfile: P,
-    guildId: w,
-    channelId: N,
+    guildId: N,
+    channelId: w,
     subsection: T,
     onClose: E
   } = e, {
@@ -50,7 +50,7 @@ function P(e) {
     voiceActivity: R
   } = (0, m.Z)({
     userId: t.id,
-    guildId: w
+    guildId: N
   }), D = (0, o.e7)([a.Z], () => a.Z.isFetchingUserOutbox(t.id)), G = t.id === n.id, B = (0, o.e7)([d.Z, s.Z], () => {
     let e = G ? d.Z.getStatus() : s.Z.getStatus(t.id);
     return e === i.Skl.OFFLINE || e === i.Skl.INVISIBLE
@@ -77,7 +77,7 @@ function P(e) {
     }) : (0, r.jsx)(h.P9, {
       user: t,
       guildId: null != (W = null == P ? void 0 : P.guildId) ? W : void 0,
-      channelId: N,
+      channelId: w,
       onClose: E
     })
   }
