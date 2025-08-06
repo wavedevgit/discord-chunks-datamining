@@ -1,12 +1,12 @@
 /** Chunk was on 36878 **/
 n.d(t, {
-  Z: () => v
+  Z: () => g
 });
 var i = n(255367),
   o = n(73800),
   l = n(120356),
-  a = n.n(l),
-  r = n(873546),
+  r = n.n(l),
+  a = n(873546),
   s = n(755721),
   c = n(481060),
   u = n(59662),
@@ -30,7 +30,7 @@ function m(e) {
   })
 }
 
-function b(e) {
+function x(e) {
   let {
     title: t,
     onClose: n,
@@ -40,7 +40,7 @@ function b(e) {
     className: f.contentHeader,
     children: [(0, i.jsxs)("div", {
       className: f.contentHeaderLeft,
-      children: [r.tq && (0, i.jsx)(m, {
+      children: [a.tq && (0, i.jsx)(m, {
         icon: c.yFM,
         onClick: () => o(!0)
       }), (0, i.jsx)(c.X6q, {
@@ -48,13 +48,13 @@ function b(e) {
         color: "header-secondary",
         children: t
       })]
-    }), !r.tq && (0, i.jsx)(m, {
+    }), !a.tq && (0, i.jsx)(m, {
       icon: c.Uz9,
       onClick: n
     })]
   })
 }
-let v = o.memo(function(e) {
+let g = o.memo(function(e) {
   let {
     onClose: t,
     setShowNavigationMobile: n,
@@ -63,11 +63,11 @@ let v = o.memo(function(e) {
     showNavigationMobile: s
   } = (0, u.t)();
   return (0, i.jsxs)("div", {
-    className: a()(f.content, {
-      [f.mobile]: r.tq,
+    className: r()(f.content, {
+      [f.mobile]: a.tq,
       [f.mobileNavigationOpen]: s
     }),
-    children: [(0, i.jsx)(b, {
+    children: [(0, i.jsx)(x, {
       title: l,
       onClose: t,
       setShowNavigationMobile: n

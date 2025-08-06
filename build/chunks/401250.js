@@ -1,19 +1,19 @@
 /** Chunk was on 36878 **/
 n.d(t, {
-  W: () => a
+  W: () => r
 });
 var i = n(255367),
   o = n(657707),
   l = n(206403);
 
-function a(e) {
+function r(e) {
   var t, n;
   let {
-    node: a
+    node: r
   } = e;
   return (0, i.jsx)(l.x, {
-    title: "useTitle" in a ? "[PLACEHOLDER] ".concat(null == (t = a.useTitle) ? void 0 : t.call(a, !1)) : "[PLACEHOLDER]",
-    description: "useSubtitle" in a ? null == (n = a.useSubtitle) ? void 0 : n.call(a) : "",
+    title: "useTitle" in r ? "[PLACEHOLDER] ".concat(null == (t = r.useTitle) ? void 0 : t.call(r, !1)) : "[PLACEHOLDER]",
+    description: "useSubtitle" in r ? null == (n = r.useSubtitle) ? void 0 : n.call(r) : "",
     secondaryTrailingElement: (0, i.jsx)(o.tEQ, {})
   })
 }

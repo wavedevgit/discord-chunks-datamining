@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(255367),
   o = n(73800),
   l = n(481060),
-  a = n(36361),
-  r = n(355521);
+  r = n(36361),
+  a = n(355521);
 let s = o.memo(function(e) {
   let {
     node: t
@@ -20,10 +20,10 @@ let s = o.memo(function(e) {
     null == u || u()
   }, [u]), null != c) ? (0, i.jsx)(c, {}) : (0, i.jsx)(l.hjN, {
     tag: l.RB0.H1,
-    className: r.category,
+    className: a.category,
     title: d,
-    titleClassName: r.categoryTitle,
-    children: s.map(e => (0, i.jsx)(a.Z, {
+    titleClassName: a.categoryTitle,
+    children: s.map(e => (0, i.jsx)(r.Z, {
       node: e
     }, e.key))
   })

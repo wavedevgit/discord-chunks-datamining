@@ -37,9 +37,7 @@ function N() {
     }), c.Z.increment({
       name: a.V.SAFETY_HUB_VIEW
     }))
-  }, [e]), t) ? (0, s.jsx)("div", {
-    children: (0, s.jsx)(r.$jN, {})
-  }) : null != N ? (0, s.jsxs)(r.qXd, {
+  }, [e]), t) ? (0, s.jsx)(r.$jN, {}) : null != N ? (0, s.jsxs)(r.qXd, {
     color: r.DM8.DANGER,
     className: v.nagbar,
     children: [f.intl.string(f.t.TDRvqq), (0, s.jsx)(r.EyT, {

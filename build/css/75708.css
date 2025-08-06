@@ -1,6 +1,6 @@
 /**
   Module ID: 75708
-  Original File Name: dc5e539b9c78ed84
+  Original File Name: 96e7cf50b4284965
 **/
 .phoneFieldPopout__61a01 {
     height: 240px;
@@ -12661,7 +12661,9 @@ div.nagbar_d74ef8 {
 .settingsPage_f131e9 {
     display: flex;
     flex-direction: column;
-    gap: var(--space-32)
+    gap: var(--space-32);
+    min-width: 0;
+    width: 100%
 }
 
 .tabBar_f8303a {
@@ -12844,8 +12846,10 @@ div.nagbar_d74ef8 {
 .credentialItem__6c75d {
     align-items: center;
     border-top: 1px solid var(--border-subtle);
+    box-sizing: border-box;
     display: flex;
     justify-content: space-between;
+    overflow: hidden;
     padding: 8px 8px 8px 32px;
     width: 100%
 }
@@ -12995,6 +12999,7 @@ div.nagbar_d74ef8 {
 }
 
 .userInfo__1fed1 {
+    box-sizing: border-box;
     display: flex;
     justify-content: space-between;
     padding: 16px 16px 0 120px;
@@ -19954,4 +19959,4 @@ html .invoiceCancelRow__968a4 {
     overflow: visible
 }
 
-/*# sourceMappingURL=dc5e539b9c78ed84.css.map*/
+/*# sourceMappingURL=96e7cf50b4284965.css.map*/

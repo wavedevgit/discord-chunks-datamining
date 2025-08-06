@@ -1,12 +1,12 @@
 /** Chunk was on 36878 **/
 n.d(t, {
-  T: () => a
+  T: () => r
 });
 var i = n(255367),
   o = n(670304),
   l = n(594263);
 
-function a(e) {
+function r(e) {
   let {
     node: t
   } = e, n = t.render;
