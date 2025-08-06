@@ -17,14 +17,14 @@ let p = function(e) {
     expandedContentRef: n,
     expansionSpring: p,
     isExpanded: m,
-    isExpansionAnimationComplete: f,
-    onCtxMenuOpened: g,
+    isExpansionAnimationComplete: g,
+    onCtxMenuOpened: f,
     onCtxMenuClosed: x,
     onCtxMenuSelection: h,
-    quest: b,
-    useReducedMotion: j,
-    collapsedHeight: _
-  } = e, v = s.useRef(null), C = s.useRef(null), y = (null == (t = b.userStatus) ? void 0 : t.enrolledAt) != null, O = (0, o.Rf)(b);
+    quest: j,
+    useReducedMotion: _,
+    collapsedHeight: b
+  } = e, v = s.useRef(null), C = s.useRef(null), y = (null == (t = j.userStatus) ? void 0 : t.enrolledAt) != null, O = (0, o.Rf)(j);
   return (0, r.jsxs)(i.p, {
     expandedContentRef: n,
     collapsedContentRef: v,
@@ -34,22 +34,22 @@ let p = function(e) {
       className: d.content,
       expansionSpring: p,
       isExpanded: m,
-      isExpansionAnimationComplete: f,
-      quest: b,
-      useReducedMotion: j,
+      isExpansionAnimationComplete: g,
+      quest: j,
+      useReducedMotion: _,
       taskDetails: O
     }), (0, r.jsx)(c.Z, {
       expansionSpring: p,
       className: d.content,
-      collapsedHeight: _,
-      onCtxMenuOpen: g,
+      collapsedHeight: b,
+      onCtxMenuOpen: f,
       onCtxMenuClose: x,
       onCtxMenuSelect: h,
       overlayRef: C,
       isExpanded: m,
-      isExpansionAnimationComplete: f,
-      quest: b,
-      useReducedMotion: j,
+      isExpansionAnimationComplete: g,
+      quest: j,
+      useReducedMotion: _,
       ref: n,
       taskDetails: O,
       children: (0, r.jsxs)(r.Fragment, {
@@ -57,12 +57,12 @@ let p = function(e) {
           expansionSpring: p,
           isExpanded: m
         }), !y && (0, r.jsx)(a.Z, {
-          quest: b,
+          quest: j,
           expansionSpring: p,
-          useReducedMotion: j,
+          useReducedMotion: _,
           isExpanded: m,
-          isExpansionAnimationComplete: f,
-          onCtxMenuOpen: g,
+          isExpansionAnimationComplete: g,
+          onCtxMenuOpen: f,
           onCtxMenuClose: x,
           onCtxMenuSelect: h
         })]

@@ -37,7 +37,7 @@ var r = n(255367),
   A = n(354459),
   D = n(820573);
 
-function L(e) {
+function k(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -56,7 +56,7 @@ function L(e) {
   return e
 }
 
-function k(e, t) {
+function L(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -93,7 +93,7 @@ let M = 16 / 9,
       guildId: a,
       channelId: l.id,
       clickTrap: !0,
-      children: e => (0, r.jsx)(c.P3F, k(L({
+      children: e => (0, r.jsx)(c.P3F, L(k({
         innerRef: p,
         onContextMenu: e => d(n, e)
       }, e), {
@@ -193,7 +193,7 @@ let M = 16 / 9,
               let {
                 default: t
               } = await n.e("22183").then(n.bind(n, 987281));
-              return n => (0, r.jsx)(t, k(L({}, n), {
+              return n => (0, r.jsx)(t, L(k({}, n), {
                 stream: e.stream,
                 appContext: h,
                 exitFullscreen: () => {},
@@ -223,7 +223,7 @@ let M = 16 / 9,
               let {
                 default: e
               } = await Promise.all([n.e("79695"), n.e("98783"), n.e("8982"), n.e("7717"), n.e("74800")]).then(n.bind(n, 757387));
-              return t => (0, r.jsx)(e, k(L({}, t), {
+              return t => (0, r.jsx)(e, L(k({}, t), {
                 user: _,
                 guildId: x,
                 channel: l,

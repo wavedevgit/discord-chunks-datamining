@@ -57,7 +57,7 @@ function A(e) {
     user: t,
     currentUser: n,
     channel: A
-  } = e, D = __OVERLAY__, L = (0, m.ZP)(t.id), k = (0, u.ZP)(), M = i.useRef(Date.now()), {
+  } = e, D = __OVERLAY__, k = (0, m.ZP)(t.id), L = (0, u.ZP)(), M = i.useRef(Date.now()), {
     analyticsLocations: U
   } = (0, h.ZP)(d.Z.USER_PROFILE_SIDEBAR), H = (0, f.ZB)({
     layout: "SIDEBAR",
@@ -79,17 +79,17 @@ function A(e) {
     children: (0, r.jsx)(f.Mt, {
       value: H,
       openedAt: M.current,
-      fetchStartedAt: null == L ? void 0 : L.fetchStartedAt,
-      fetchEndedAt: null == L ? void 0 : L.fetchEndedAt,
-      isLoaded: null == L ? void 0 : L.isLoaded,
+      fetchStartedAt: null == k ? void 0 : k.fetchStartedAt,
+      fetchEndedAt: null == k ? void 0 : k.fetchEndedAt,
+      isLoaded: null == k ? void 0 : k.isLoaded,
       children: (0, r.jsx)(b.NJ, {
         value: B,
         children: (0, r.jsxs)(O.Z, {
           ref: G,
           user: t,
-          displayProfile: L,
+          displayProfile: k,
           themeType: T.lY.SIDEBAR,
-          themeOverride: k,
+          themeOverride: L,
           children: [null != B.interactionType && (0, r.jsx)(l.animated.div, {
             style: z,
             className: R.backdrop
@@ -109,7 +109,7 @@ function A(e) {
               className: R.header,
               children: [(0, r.jsx)(j.Z, {
                 user: t,
-                displayProfile: L,
+                displayProfile: k,
                 themeType: T.lY.SIDEBAR,
                 animateOnHover: !F,
                 className: R.banner
@@ -119,7 +119,7 @@ function A(e) {
               }), (0, r.jsx)(x.Z, {
                 location: "UserProfileSidebar",
                 user: t,
-                displayProfile: L,
+                displayProfile: k,
                 channelId: A.id,
                 themeType: T.lY.SIDEBAR,
                 onOpenProfile: D ? void 0 : V
@@ -133,7 +133,7 @@ function A(e) {
             }), (0, r.jsx)(I.Z, {
               user: t,
               currentUser: n,
-              displayProfile: L,
+              displayProfile: k,
               channel: A,
               isHovering: null == B.interactionType && F,
               onOpenProfile: D ? void 0 : V
@@ -156,8 +156,8 @@ function A(e) {
               },
               children: N.intl.string(N.t["+Xp3ho"])
             })
-          }), (null == L ? void 0 : L.profileEffectId) != null && (0, r.jsx)(p.Z, {
-            profileEffectId: null == L ? void 0 : L.profileEffectId,
+          }), (null == k ? void 0 : k.profileEffectId) != null && (0, r.jsx)(p.Z, {
+            profileEffectId: null == k ? void 0 : k.profileEffectId,
             isHovering: F,
             urlQueryString: "dmView"
           })]

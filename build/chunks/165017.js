@@ -30,7 +30,7 @@ function f(e) {
   let {
     guildId: t,
     channelId: n
-  } = e, s = (0, l.U)({
+  } = e, s = (0, l.UX)({
     location: "useDesktopSearchContext"
   });
   return (0, r.e7)([o.Z, i.Z, a.Z], () => {

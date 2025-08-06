@@ -1,18 +1,17 @@
 /** Chunk was on 11776 **/
 n.d(t, {
-  Z: () => a
+  Z: () => i
 });
 var r = n(255367);
 n(73800);
 var l = n(750312),
-  o = n(30344),
-  i = n(388032);
+  o = n(30344);
 
-function a(e) {
+function i(e) {
   var {
     user: t,
     widget: n
-  } = e, a = function(e, t) {
+  } = e, i = function(e, t) {
     if (null == e) return {};
     var n, r, l = function(e, t) {
       if (null == e) return {};
@@ -28,10 +27,8 @@ function a(e) {
     return l
   }(e, ["user", "widget"]);
   return (0, r.jsx)(l.Z, {
-    title: i.intl.string(i.t.scOKER),
-    subtitle: i.intl.format(i.t["zR1+09"], {
-      numGames: 8
-    }),
+    userId: t.id,
+    widgetType: n.type,
     children: (0, r.jsx)(o.Z, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
@@ -52,6 +49,6 @@ function a(e) {
     }({
       games: n.games,
       userId: t.id
-    }, a))
+    }, i))
   })
 }

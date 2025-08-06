@@ -36,8 +36,8 @@ var r = n(255367),
   w = n(107169),
   A = n(891551),
   D = n(314897),
-  L = n(979696),
-  k = n(430824),
+  k = n(979696),
+  L = n(430824),
   M = n(496675),
   U = n(944486),
   H = n(358085),
@@ -135,7 +135,7 @@ function eu(e) {
 function ed(e) {
   let {
     channel: t
-  } = e, n = (0, g.bp)(), i = (0, o.e7)([M.Z], () => M.Z.can(et.Plq.CREATE_INSTANT_INVITE, t)), l = (0, o.e7)([k.Z], () => k.Z.getGuild(t.guild_id)), a = (0, o.e7)([V.Z], () => V.Z.getStageInstanceByChannel(t.id)), s = i || (null == a ? void 0 : a.invite_code) != null;
+  } = e, n = (0, g.bp)(), i = (0, o.e7)([M.Z], () => M.Z.can(et.Plq.CREATE_INSTANT_INVITE, t)), l = (0, o.e7)([L.Z], () => L.Z.getGuild(t.guild_id)), a = (0, o.e7)([V.Z], () => V.Z.getStageInstanceByChannel(t.id)), s = i || (null == a ? void 0 : a.invite_code) != null;
   return null != l && s ? (0, r.jsx)(I.Z, {
     size: u.zx.Sizes.MEDIUM,
     color: u.zx.Colors.TRANSPARENT,
@@ -172,7 +172,7 @@ function eh(e) {
       isOnStartStageScreen: w
     } = (0, W.ZP)();
   (0, W.MV)(c);
-  let A = (0, o.e7)([L.Z], () => L.Z.getToastsEnabled(c.id)),
+  let A = (0, o.e7)([k.Z], () => k.Z.getToastsEnabled(c.id)),
     D = (0, ee.Z)(c) ? null != Z ? "84px" : "124px" : null != Z ? "0px" : "48px";
   return w && (D = "0px"), l = w ? (0, r.jsx)(J.Z, {
     channel: c,
@@ -266,7 +266,7 @@ function ep(e) {
   } = (0, o.cj)([y.Z], () => ({
     chatOpen: y.Z.getChatOpen(t.id),
     participantsListOpen: y.Z.getParticipantsListOpen(t.id)
-  }), [t.id]), N = (0, o.e7)([k.Z], () => k.Z.getGuild(t.guild_id), [t.guild_id]), {
+  }), [t.id]), N = (0, o.e7)([L.Z], () => L.Z.getGuild(t.guild_id), [t.guild_id]), {
     hasParticipantsPanel: R
   } = (0, v.Z)({
     location: "StageChannelCall"
@@ -282,7 +282,7 @@ function ep(e) {
   let {
     width: w = 0,
     ref: A
-  } = (0, p.ZP)(), D = w - 550, L = !C || C && Z === et.IlC.POPOUT;
+  } = (0, p.ZP)(), D = w - 550, k = !C || C && Z === et.IlC.POPOUT;
   return (0, r.jsx)(b.Gt, {
     value: E,
     children: (0, r.jsxs)(j.B2, {
@@ -316,11 +316,11 @@ function ep(e) {
           chatOpen: I
         }) : null, (0, r.jsxs)("div", {
           className: ei.channelChatWrapper,
-          children: [I && L && (0, r.jsx)(_.Z, {
+          children: [I && k && (0, r.jsx)(_.Z, {
             channel: t,
             guild: N,
             maxWidth: D
-          }), T && R && L && (0, r.jsx)(O.Z, {
+          }), T && R && k && (0, r.jsx)(O.Z, {
             channel: t,
             maxWidth: D
           })]

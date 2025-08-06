@@ -1,6 +1,6 @@
 /**
   Module ID: 31649
-  Original File Name: 6f05fe0452884e10
+  Original File Name: 7e3b02e9a622a79e
 **/
 .formGroup__9b8f6 {
     margin-bottom: 20px
@@ -298,15 +298,11 @@
     padding: 0
 }
 
-.footer_dbc4b7 {
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-    width: 100%
-}
-
 .clearAfterSelectContainer_dbc4b7 {
-    margin-left: -12px
+    margin-left: -12px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content
 }
 
 .clearAfterSelectOption_dbc4b7 {
@@ -356,4 +352,4 @@
     text-transform: uppercase
 }
 
-/*# sourceMappingURL=6f05fe0452884e10.css.map*/
+/*# sourceMappingURL=7e3b02e9a622a79e.css.map*/

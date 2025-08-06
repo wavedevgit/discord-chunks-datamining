@@ -1,6 +1,6 @@
 /** Chunk was on 11776 **/
 n.d(t, {
-  Z: () => y
+  Z: () => O
 });
 var r = n(255367);
 n(73800);
@@ -18,15 +18,15 @@ var l = n(442837),
   g = n(179828),
   b = n(228168),
   j = n(388032),
-  h = n(349966);
+  y = n(349966);
 
-function y(e) {
+function O(e) {
   let {
     user: t,
     currentUser: n,
-    displayProfile: y,
-    guildId: v,
-    subsection: O,
+    displayProfile: O,
+    guildId: h,
+    subsection: v,
     onClose: x
   } = e, {
     trackUserProfileAction: _
@@ -36,35 +36,35 @@ function y(e) {
   }), P = (0, l.e7)([a.Z, c.Z], () => a.Z.getChannel(c.Z.getChannelId()));
   return (0, r.jsxs)(o.zJl, {
     fade: !0,
-    className: h.scroller,
-    children: [(null == y ? void 0 : y.bio) != null && (null == y ? void 0 : y.bio) !== "" && (0, r.jsx)(f.Z, {
-      userBio: y.bio,
+    className: y.scroller,
+    children: [(null == O ? void 0 : O.bio) != null && (null == O ? void 0 : O.bio) !== "" && (0, r.jsx)(f.Z, {
+      userBio: O.bio,
       setLineClamp: !1
     }), (null == I ? void 0 : I.popularApplicationCommandIds) != null && null != P && (0, r.jsx)(u.Z, {
       applicationId: I.id,
       commandIds: I.popularApplicationCommandIds,
       channel: P,
-      guildId: v,
+      guildId: h,
       onClick: x
-    }), (null == y ? void 0 : y.guildId) != null && (0, r.jsx)(g.Z, {
+    }), (null == O ? void 0 : O.guildId) != null && (0, r.jsx)(g.Z, {
       user: t,
       currentUser: n,
-      guildId: y.guildId,
-      scrollIntoView: O === b.Tb.ROLES
+      guildId: O.guildId,
+      scrollIntoView: v === b.Tb.ROLES
     }), (0, r.jsx)(m.Z, {
       heading: j.intl.string(j.t["A//N4u"]),
       children: (0, r.jsx)(p.Z, {
         userId: t.id,
-        guildId: v,
+        guildId: h,
         tooltipDelay: b.vB
       })
     }), (0, r.jsx)(m.Z, {
       heading: j.intl.string(j.t["mQKv+v"]),
-      scrollIntoView: O === b.Tb.NOTE,
+      scrollIntoView: v === b.Tb.NOTE,
       children: (0, r.jsx)(i.Z, {
         userId: t.id,
-        className: h.note,
-        autoFocus: O === b.Tb.NOTE,
+        className: y.note,
+        autoFocus: v === b.Tb.NOTE,
         onUpdate: () => _({
           action: "SET_NOTE"
         })

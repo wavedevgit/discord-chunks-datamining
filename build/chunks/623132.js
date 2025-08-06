@@ -78,14 +78,14 @@ function j(e) {
   } = e, {
     gameName: f,
     imageSrc: j,
-    applicationId: h,
-    comment: y,
-    tags: v
-  } = i, O = () => (0, r.jsxs)(r.Fragment, {
+    applicationId: y,
+    comment: O,
+    tags: h
+  } = i, v = () => (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(s.Z, {
       imageSrc: j,
       gameName: f,
-      applicationId: h,
+      applicationId: y,
       userId: t.id,
       disableInteraction: !0
     }), (0, r.jsxs)("div", {
@@ -94,15 +94,15 @@ function j(e) {
         variant: "text-md/normal",
         color: "text-default",
         children: f
-      }), null != y && (0, r.jsx)(g, {
-        text: y,
+      }), null != O && (0, r.jsx)(g, {
+        text: O,
         user: t,
         guildId: n,
         channelId: l
       }), (0, r.jsx)(d.Z, {
-        tags: v
+        tags: h
       }), (0, r.jsx)(u.Z, {
-        applicationId: h,
+        applicationId: y,
         guildId: n,
         channelId: l,
         className: m.socialProof
@@ -118,12 +118,12 @@ function j(e) {
     })]
   }) : c ? (0, r.jsx)("div", {
     className: m.card,
-    children: O()
+    children: v()
   }) : (0, r.jsx)(b, {
-    applicationId: h,
+    applicationId: y,
     userId: t.id,
     gameName: f,
     className: m.card,
-    children: O()
+    children: v()
   })
 }

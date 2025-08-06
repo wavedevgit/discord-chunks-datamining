@@ -35,15 +35,15 @@ var r = n(255367),
   w = n(617552),
   A = n(719296),
   D = n(225639),
-  L = n(651612),
-  k = n(918559),
+  k = n(651612),
+  L = n(918559),
   M = n(981631),
   U = n(388032),
   H = n(199570);
 let G = R.u8.SIZE_32,
   F = {
-    [k.MI.NO_CHAT]: H.noChat,
-    [k.MI.RESIZABLE]: H.resizable
+    [L.MI.NO_CHAT]: H.noChat,
+    [L.MI.RESIZABLE]: H.resizable
   };
 
 function B(e) {
@@ -53,8 +53,8 @@ function B(e) {
     connectedLocation: z,
     renderExternalHeader: V
   } = e, W = (0, T.Z)(), Y = (0, s.Wu)([S.ZP], () => S.ZP.getEmbeddedActivitiesForLocation(z), [z]), q = (0, P.p)(z), K = (0, s.e7)([x.Z], () => x.Z.getChannel(q)), Q = (0, Z.gb)(Y), X = (0, Z.uF)(Q), J = i.useCallback(() => {
-    (0, E.tg)(k.Ez.PIP)
-  }, []), $ = i.useRef(null), ee = (0, s.e7)([S.ZP], () => S.ZP.getFocusedLayout()), et = ee !== k.MI.NO_CHAT, [en, er] = i.useState(null != (n = null != (t = g.ZP.activityPanelHeight) ? t : B) ? n : null), ei = i.useCallback(e => {
+    (0, E.tg)(L.Ez.PIP)
+  }, []), $ = i.useRef(null), ee = (0, s.e7)([S.ZP], () => S.ZP.getFocusedLayout()), et = ee !== L.MI.NO_CHAT, [en, er] = i.useState(null != (n = null != (t = g.ZP.activityPanelHeight) ? t : B) ? n : null), ei = i.useCallback(e => {
     u.ZP.updatedUnsyncedSettings({
       activityPanelHeight: e
     })
@@ -73,14 +73,14 @@ function B(e) {
     });
     return e.observe(el.current), () => e.disconnect()
   }, []);
-  let eo = ea.width / Math.max(ea.height, 1) < k.I0,
+  let eo = ea.width / Math.max(ea.height, 1) < L.I0,
     ec = 0,
     eu = 0,
     ed = (0, I.Z)(null == W ? void 0 : W.id);
   if (!ed) {
     let e = ea.width,
       t = ea.height;
-    eo ? ((t = ea.width / k.I0) > ea.height && (e = (t = ea.height) * k.I0), eu = (ea.height - t) / 2) : ((e = Math.min(ea.height * k.I0)) > ea.width && (t = (e = ea.width) / k.I0), ec = (ea.width - e) / 2)
+    eo ? ((t = ea.width / L.I0) > ea.height && (e = (t = ea.height) * L.I0), eu = (ea.height - t) / 2) : ((e = Math.min(ea.height * L.I0)) > ea.width && (t = (e = ea.width) / L.I0), ec = (ea.width - e) / 2)
   }
   let eh = X.get(null != (l = null == W ? void 0 : W.id) ? l : ""),
     ep = (0, s.e7)([_.Z], () => _.Z.getChannelId()),
@@ -208,7 +208,7 @@ function B(e) {
             className: H.footerButtons,
             children: [(0, r.jsxs)("div", {
               className: H.buttonSection,
-              children: [(0, r.jsx)(L.Z, {
+              children: [(0, r.jsx)(k.Z, {
                 channelId: ep
               }), (0, r.jsx)(m.d, {
                 isTrayButton: !0,

@@ -35,8 +35,8 @@ var r = n(255367),
   w = n(413523),
   A = n(358221),
   D = n(677601),
-  L = n(541716),
-  k = n(236091),
+  k = n(541716),
+  L = n(236091),
   M = n(663993),
   U = n(252618),
   H = n(201493),
@@ -89,8 +89,8 @@ var r = n(255367),
   ew = n(108427),
   eA = n(892001),
   eD = n(402130),
-  eL = n(524329),
-  ek = n(995532),
+  ek = n(524329),
+  eL = n(995532),
   eM = n(738643),
   eU = n(433355),
   eH = n(592125),
@@ -298,7 +298,7 @@ class to extends i.PureComponent {
     return (0, r.jsx)(eJ.Z, {
       channel: e,
       guild: n,
-      chatInputType: L.Ie.NORMAL
+      chatInputType: k.Ie.NORMAL
     }, null != n ? n.id : "home")
   }
   renderSidebar() {
@@ -376,7 +376,7 @@ class to extends i.PureComponent {
         guildId: t
       }))
     }, {
-      onCloseCallback: () => (0, eL.y0)(t, a),
+      onCloseCallback: () => (0, ek.y0)(t, a),
       modalKey: "Guild Welcome Screen Modal"
     })), null
   }
@@ -556,7 +556,7 @@ class to extends i.PureComponent {
         inCall: e,
         voiceChannel: t
       } = this.props;
-      return e ? (0, r.jsx)(k.Z, {
+      return e ? (0, r.jsx)(L.Z, {
         channelId: null != t ? t.id : null
       }) : null
     }), ti(this, "renderStreamQualityLiveIndicatorToolbarItem", () => {
@@ -820,17 +820,17 @@ let tc = (0, C.Z)(to),
       }))
     }, [R, c, v, C]);
     let D = (0, h.e7)([Z.ZP], () => Z.ZP.getCurrentEmbeddedActivity()),
-      L = (0, h.e7)([Z.ZP], () => Z.ZP.getActivityPanelMode()),
-      k = null != D && !(0, P.Z)(null == c ? void 0 : c.id) && L === e2.Ez.PANEL,
+      k = (0, h.e7)([Z.ZP], () => Z.ZP.getActivityPanelMode()),
+      L = null != D && !(0, P.Z)(null == c ? void 0 : c.id) && k === e2.Ez.PANEL,
       M = (0, h.e7)([eQ.Z], () => null != c && c.isVocalThread() && !u().isEmpty(eQ.Z.getVoiceStatesForChannel(c.id)), [c]),
-      U = null != c && c.isPrivate() && !k && _,
+      U = null != c && c.isPrivate() && !L && _,
       H = (null == c ? void 0 : c.isGuildVocal()) || U || M,
       F = (0, h.e7)([z.Z], () => z.Z.getFrameLayoutMode() === e9.U.FOCUSED),
       {
         welcomeModalChannelId: B
       } = (0, d.TH)(),
       W = (0, h.e7)([em.Z], () => null != c && em.Z.isLurking(c.guild_id), [c]),
-      Y = (0, h.e7)([ek.Z], () => ek.Z.hasSeen(null == c ? void 0 : c.guild_id, W), [c, W]),
+      Y = (0, h.e7)([eL.Z], () => eL.Z.hasSeen(null == c ? void 0 : c.guild_id, W), [c, W]),
       q = (0, h.e7)([A.Z, Z.ZP], () => null != Z.ZP.getConnectedActivityLocation() && Z.ZP.getActivityPanelMode() === e2.Ez.PANEL ? Z.ZP.getFocusedLayout() === e2.MI.NO_CHAT ? e5.AEg.NO_CHAT : e5.AEg.NORMAL : null != s ? A.Z.getLayout(s) : e5.AEg.NORMAL, [s]),
       K = (0, h.e7)([A.Z], () => null != c ? A.Z.getSelectedParticipant(c.id) : null),
       Q = (0, h.e7)([eK.default], () => eK.default.getCurrentUser()),
@@ -906,7 +906,7 @@ let tc = (0, C.Z)(to),
       guildSidebarState: er,
       guild: x,
       showCall: !j && H,
-      showActivityPanel: k,
+      showActivityPanel: L,
       showFramePanel: F,
       nsfwAgree: (0, h.e7)([eB.Z], () => eB.Z.didAgree(null == c ? void 0 : c.guild_id)),
       isMobile: (0, h.e7)([eV.Z], () => (null == c ? void 0 : c.type) === e5.d4z.DM && eV.Z.isMobileOnline(c.getRecipientId()), [c]),
@@ -924,7 +924,7 @@ let tc = (0, C.Z)(to),
       isFavorites: ei,
       showHeaderGuildBreadcrumb: ei || el,
       premiumIndicatorEnabled: !1,
-      hasTextActivityInPanelMode: k,
+      hasTextActivityInPanelMode: L,
       embeddedActivity: D
     }))
   })

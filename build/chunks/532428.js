@@ -173,7 +173,7 @@ function J(e) {
   let n = y.Z.getSelectedSearchContext();
   if (null == n) return !1;
   if ((0, O.b7)(n)) return X(e, t, n.guildId);
-  let r = (0, T.a)({
+  let r = (0, T.ad)({
       location: "channelValidator"
     }),
     i = (0, S.J)({
@@ -421,7 +421,7 @@ function ec(e, t, n) {
 
 function eu(e, t, n) {
   if (e.startsWith('"') && e.endsWith('"') ? e = e.substring(1, e.length - 1).replaceAll(/\\(.)/g, (e, t) => t) : e.startsWith('"') && (e = e.substring(1).replaceAll(/\\(.)/g, (e, t) => t)), "#" === e[0] && (e = e.substring(1)), (0, O.b7)(t)) return ec(e, t.guildId, n);
-  let r = (0, T.a)({
+  let r = (0, T.ad)({
       location: "getInFilterAutocompletions"
     }),
     i = (0, S.J)({

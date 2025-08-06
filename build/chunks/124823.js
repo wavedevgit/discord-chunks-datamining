@@ -55,23 +55,23 @@ function w(e) {
   let {
     user: t,
     channel: n
-  } = e, w = __OVERLAY__ || !(0, d.Z)(t.id), A = (0, m.ZP)(t.id), D = (0, o.ZP)(), L = i.useRef(Date.now()), {
-    analyticsLocations: k
+  } = e, w = __OVERLAY__ || !(0, d.Z)(t.id), A = (0, m.ZP)(t.id), D = (0, o.ZP)(), k = i.useRef(Date.now()), {
+    analyticsLocations: L
   } = (0, u.ZP)(c.Z.USER_PROFILE_SIDEBAR), M = (0, f.ZB)({
     layout: "SIDEBAR",
     userId: t.id,
     channelId: n.id
   }), U = i.useRef(null), H = (0, s.Z)(U), G = e => {
     (0, b.openUserProfileModal)(R({
-      sourceAnalyticsLocations: k,
+      sourceAnalyticsLocations: L,
       hideRestrictedProfile: !0
     }, M, e))
   };
   return (0, r.jsx)(u.Gt, {
-    value: k,
+    value: L,
     children: (0, r.jsx)(f.Mt, {
       value: M,
-      openedAt: L.current,
+      openedAt: k.current,
       fetchStartedAt: null == A ? void 0 : A.fetchStartedAt,
       fetchEndedAt: null == A ? void 0 : A.fetchEndedAt,
       isLoaded: null == A ? void 0 : A.isLoaded,
@@ -141,7 +141,7 @@ function w(e) {
             onClick: () => {
               G(), (0, g.pQ)(R({
                 action: "PRESS_VIEW_PROFILE",
-                analyticsLocations: k
+                analyticsLocations: L
               }, M))
             },
             children: P.intl.string(P.t["+Xp3ho"])

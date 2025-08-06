@@ -17,15 +17,15 @@ let d = s.forwardRef(function(e, t) {
     expansionSpring: d,
     isExpanded: p,
     isExpansionAnimationComplete: m,
-    quest: f,
-    taskDetails: g
-  } = e, x = (0, l.Jf)(f), h = s.useRef(null), b = (null == (n = f.userStatus) ? void 0 : n.enrolledAt) != null, j = null != x ? x.percentComplete : g.percentComplete;
+    quest: g,
+    taskDetails: f
+  } = e, x = (0, l.Jf)(g), h = s.useRef(null), j = (null == (n = g.userStatus) ? void 0 : n.enrolledAt) != null, _ = null != x ? x.percentComplete : f.percentComplete;
   return (0, r.jsx)(i.animated.div, {
     ref: t,
     "aria-hidden": p && m,
     className: a()(o, u.contentCollapsed, {
       [u.contentCollapsedExpanded]: p,
-      [u.contentCollapsedAccepted]: b
+      [u.contentCollapsedAccepted]: j
     }),
     style: {
       opacity: d.to({
@@ -35,12 +35,12 @@ let d = s.forwardRef(function(e, t) {
     },
     children: (0, r.jsx)("div", {
       className: u.contentCollapsedWrapper,
-      children: b ? (0, r.jsx)(c.Z, {
+      children: j ? (0, r.jsx)(c.Z, {
         contentLocation: "collapsed",
-        quest: f,
+        quest: g,
         progressBarRef: h,
         isExpanded: !1,
-        percentComplete: j
+        percentComplete: _
       }) : null
     })
   })

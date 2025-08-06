@@ -18,12 +18,12 @@ let p = e => {
     quest: n,
     progressBarRef: p,
     isExpanded: m,
-    percentComplete: f,
-    activeScreen: g
+    percentComplete: g,
+    activeScreen: f
   } = e, x = (0, o.eQ)(n), h = (0, o.vf)({
     quest: n,
     isExpanded: m,
-    activeScreen: g,
+    activeScreen: f,
     sourceQuestContent: a.jn.QUEST_BAR_V2
   });
   return (0, r.jsxs)("div", {
@@ -35,7 +35,7 @@ let p = e => {
       children: e => (0, r.jsx)(c.Z, {
         ref: e,
         quest: n,
-        percentComplete: f,
+        percentComplete: g,
         size: 42,
         strokeWidth: 3,
         children: (0, r.jsx)(i.Z, {

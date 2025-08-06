@@ -1,6 +1,6 @@
 /**
   Module ID: 37082
-  Original File Name: 31eedd45e9c3ad08
+  Original File Name: 05b7e9a7e8909fff
 **/
 .modalRoot__5b400 {
     background-color: var(--background-base-lower);
@@ -498,12 +498,17 @@
     gap: 6px
 }
 
-.button__960ef {
-    flex: 1
+.ctaItem__960ef {
+    display: flex;
+    flex: 1 1 0;
+    flex-direction: row;
+    gap: 8px;
+    min-width: 0
 }
 
-.buttonTooltip__960ef {
-    padding: 0
+.button__960ef {
+    flex: 1 1 0;
+    min-width: 0
 }
 
 .platformSelectorPrimaryLabel__960ef {
@@ -523,19 +528,13 @@
 }
 
 .platformSelectorSecondary__960ef {
-    min-width: 0;
-    padding-left: 8px;
-    padding-right: 8px;
-    width: auto
+    flex: 1 1 0;
+    height: 40px;
+    min-height: auto;
+    min-width: 0
 }
 
-.platformSelectorSecondaryContent__960ef {
-    align-items: center;
-    display: flex;
-    gap: 4px
-}
-
-.platformSelectorSecondaryChevron__960ef,.videoQuestPlayIcon__960ef {
+.videoQuestPlayIcon__960ef {
     height: 16px;
     width: 16px
 }
@@ -2348,4 +2347,4 @@
     padding-top: 10px
 }
 
-/*# sourceMappingURL=31eedd45e9c3ad08.css.map*/
+/*# sourceMappingURL=05b7e9a7e8909fff.css.map*/

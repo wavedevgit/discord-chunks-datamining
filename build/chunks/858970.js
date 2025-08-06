@@ -17,10 +17,10 @@ var r = n(255367),
   g = n(316027),
   b = n(502762),
   j = n(848780),
-  h = n(907179),
-  y = n(228168),
-  v = n(981631),
-  O = n(388032),
+  y = n(907179),
+  O = n(228168),
+  h = n(981631),
+  v = n(388032),
   x = n(247787);
 
 function _(e) {
@@ -48,12 +48,12 @@ function I(e) {
     guildId: n,
     channelId: I,
     messageId: P,
-    roleId: Z,
-    transitionState: E,
-    openedAt: N,
-    onHide: T,
+    roleId: E,
+    transitionState: Z,
+    openedAt: T,
+    onHide: N,
     sourceAnalyticsLocations: A = []
-  } = e, S = n === v.ME ? void 0 : n, w = (0, l.e7)([d.Z], () => d.Z.isBlocked(t.id)), {
+  } = e, S = n === h.ME ? void 0 : n, w = (0, l.e7)([d.Z], () => d.Z.isBlocked(t.id)), {
     analyticsLocations: C
   } = (0, c.ZP)([...A, w ? a.Z.BLOCKED_PROFILE_MODAL : a.Z.IGNORED_PROFILE_MODAL]), G = (0, f.ZB)({
     layout: "MODAL_V2",
@@ -62,33 +62,33 @@ function I(e) {
     guildId: S,
     channelId: I,
     messageId: P,
-    roleId: Z
+    roleId: E
   }), L = [{
     icon: i.owK,
-    description: O.intl.string(O.t.kcuWvb)
+    description: v.intl.string(v.t.kcuWvb)
   }, {
     icon: i.owK,
-    description: O.intl.string(w ? O.t.QxrDY2 : O.t.W6fjkZ)
-  }], M = (0, m.ZP)(t.id, S), R = u.ZP.getName(null == M ? void 0 : M.guildId, I, t), D = O.intl.formatToPlainString(O.t.KRe1Fh, {
+    description: v.intl.string(w ? v.t.QxrDY2 : v.t.W6fjkZ)
+  }], M = (0, m.ZP)(t.id, S), R = u.ZP.getName(null == M ? void 0 : M.guildId, I, t), D = v.intl.formatToPlainString(v.t.KRe1Fh, {
     name: R
   });
   return (0, r.jsx)(c.Gt, {
     value: C,
     children: (0, r.jsx)(f.Mt, {
       value: G,
-      openedAt: N,
+      openedAt: T,
       fetchStartedAt: null == M ? void 0 : M.fetchStartedAt,
       fetchEndedAt: null == M ? void 0 : M.fetchEndedAt,
       isLoaded: null == M ? void 0 : M.isLoaded,
       children: (0, r.jsx)(i.Y0X, {
-        transitionState: E,
+        transitionState: Z,
         className: x.root,
         "aria-label": D,
         parentComponent: "RestrictedUserProfileModalV2",
         children: (0, r.jsxs)(b.Z, {
           user: t,
           displayProfile: M,
-          themeType: y.lY.MODAL_V2,
+          themeType: O.lY.MODAL_V2,
           children: [(0, r.jsx)("div", {
             className: x.background
           }), (0, r.jsxs)("div", {
@@ -102,11 +102,11 @@ function I(e) {
               children: [(0, r.jsx)(i.X6q, {
                 variant: "heading-xl/bold",
                 color: "text-default",
-                children: O.intl.string(O.t.b33pLC)
+                children: v.intl.string(v.t.b33pLC)
               }), (0, r.jsx)(i.Text, {
                 variant: "text-md/medium",
                 color: "text-default",
-                children: O.intl.format(w ? O.t.T7QiLi : O.t.MnEow8, {
+                children: v.intl.format(w ? v.t.T7QiLi : v.t.MnEow8, {
                   username: R
                 })
               })]
@@ -126,11 +126,11 @@ function I(e) {
               })
             }), (0, r.jsxs)(i.Kqy, {
               align: "center",
-              children: [(0, r.jsx)(h.Z, {
+              children: [(0, r.jsx)(y.Z, {
                 size: o.Ph.MEDIUM,
                 isBlocked: w,
                 onClick: () => {
-                  T(), (0, p.pQ)(_({
+                  N(), (0, p.pQ)(_({
                     action: w ? "VIEW_BLOCKED_PROFILE" : "VIEW_IGNORED_PROFILE",
                     analyticsLocations: C
                   }, G))
@@ -138,7 +138,7 @@ function I(e) {
               }), (0, r.jsx)(j.Z, {
                 userId: t.id,
                 onClick: () => {
-                  T(), (0, p.pQ)(_({
+                  N(), (0, p.pQ)(_({
                     action: "DONT_SHOW_AGAIN_IGNORED_PROFILE",
                     analyticsLocations: C
                   }, G))

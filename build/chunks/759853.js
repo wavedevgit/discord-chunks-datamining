@@ -1,6 +1,6 @@
 /** Chunk was on 37082 **/
 n.d(t, {
-  Z: () => j
+  Z: () => _
 }), n(388685);
 var r = n(255367),
   s = n(73800),
@@ -13,29 +13,29 @@ var r = n(255367),
   d = n(110924),
   p = n(607070),
   m = n(819640),
-  f = n(569379),
-  g = n(675654),
+  g = n(569379),
+  f = n(675654),
   x = n(513940),
   h = n(197857);
-let b = ["#51BC9D"],
-  j = e => {
+let j = ["#51BC9D"],
+  _ = e => {
     var t;
     let {
       expansionSpring: n,
       overlayRef: o,
-      quest: j,
-      progressBarRef: _,
+      quest: _,
+      progressBarRef: b,
       isExpanded: v
     } = e, {
       completionSpring: C,
       startCompletionAnimation: y
-    } = (0, f.G)(), O = (null == (t = j.userStatus) ? void 0 : t.completedAt) != null, E = s.useRef(!1), S = (0, u.e7)([p.Z], () => p.Z.useReducedMotion), w = s.useRef(null), T = (0, u.e7)([m.Z], () => m.Z.hasLayers()), P = (0, d.Z)(T), [A, N] = s.useState(null), [R, B] = s.useState(null), k = s.useRef(new i.qA({
+    } = (0, g.G)(), O = (null == (t = _.userStatus) ? void 0 : t.completedAt) != null, E = s.useRef(!1), S = (0, u.e7)([p.Z], () => p.Z.useReducedMotion), T = s.useRef(null), w = (0, u.e7)([m.Z], () => m.Z.hasLayers()), P = (0, d.Z)(w), [N, A] = s.useState(null), [R, B] = s.useState(null), k = s.useRef(new i.qA({
       gravity: 0,
       wind: 0
-    })), I = (0, i.uR)(A, R), q = s.useCallback(() => {
+    })), I = (0, i.uR)(N, R), q = s.useCallback(() => {
       if (S) return;
-      let e = _.current,
-        t = w.current;
+      let e = b.current,
+        t = T.current;
       if (null != t && null != e && I.isReady) {
         var n, r, s, o, a, i;
         let {
@@ -62,7 +62,7 @@ let b = ["#51BC9D"],
             })
           }
           return e
-        }({}, g.We), i = i = {
+        }({}, f.We), i = i = {
           position: {
             type: "static-random",
             minValue: {
@@ -110,19 +110,19 @@ let b = ["#51BC9D"],
           Object.defineProperty(a, e, Object.getOwnPropertyDescriptor(i, e))
         }), a), 100)
       }
-    }, [_, w, I, S]), D = (0, d.Z)(v);
+    }, [b, T, I, S]), Q = (0, d.Z)(v);
     return (s.useEffect(() => {
-      O && v && !D && (y(), q())
-    }, [v, O, y, q, D]), s.useEffect(() => {
-      O && !T && P && setTimeout(() => {
+      O && v && !Q && (y(), q())
+    }, [v, O, y, q, Q]), s.useEffect(() => {
+      O && !w && P && setTimeout(() => {
         y(), q()
       }, 200)
-    }, [O, P, T, y, q]), s.useEffect(() => {
+    }, [O, P, w, y, q]), s.useEffect(() => {
       I.isReady && (!E.current && O && (y(), q()), E.current = O)
     }, [O, E, q, y, I]), S) ? null : (0, r.jsxs)("div", {
       className: x.wrapper,
       "aria-hidden": "true",
-      ref: w,
+      ref: T,
       children: [(0, r.jsx)(c.animated.div, {
         className: x.background,
         style: {
@@ -142,15 +142,15 @@ let b = ["#51BC9D"],
           }).to(e => "translateY(".concat(e, "px)"))
         },
         children: [(0, r.jsx)(i.O_, {
-          ref: N,
+          ref: A,
           className: x.confetti,
           environment: k.current
         }), (0, r.jsx)(i.Ji, {
           ref: B,
           sprites: [h],
-          colors: b,
-          spriteWidth: g.Ko,
-          spriteHeight: g.Ko
+          colors: j,
+          spriteWidth: f.Ko,
+          spriteHeight: f.Ko
         }), null != o.current && (0, l.createPortal)((0, r.jsx)(c.animated.div, {
           className: a()(x.borders, x.bordersBottom),
           style: {

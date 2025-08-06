@@ -41,9 +41,9 @@ function w(e) {
     displayProfile: w,
     channel: A,
     isHovering: D,
-    onOpenProfile: L
+    onOpenProfile: k
   } = e, {
-    relationshipType: k,
+    relationshipType: L,
     originApplicationId: M
   } = (0, l.cj)([u.Z], () => ({
     relationshipType: u.Z.getRelationshipType(t.id),
@@ -62,7 +62,7 @@ function w(e) {
       user: t,
       nickname: h.ZP.getName(null, A.id, t),
       pronouns: null == w ? void 0 : w.pronouns,
-      onOpenProfile: L,
+      onOpenProfile: k,
       tags: (0, r.jsx)(m.Z, {
         displayProfile: w,
         themeType: P.lY.SIDEBAR
@@ -73,10 +73,10 @@ function w(e) {
         }), !G && (0, r.jsx)(I.Z, {
           userId: t.id,
           isHovering: D,
-          onOpenProfile: L
+          onOpenProfile: k
         })]
       })
-    }), k === T.OGo.PENDING_INCOMING && (0, r.jsx)(S.Z.Overlay, {
+    }), L === T.OGo.PENDING_INCOMING && (0, r.jsx)(S.Z.Overlay, {
       children: (0, r.jsx)(_.Z, {
         user: t,
         channelId: A.id,
@@ -109,7 +109,7 @@ function w(e) {
       user: t,
       currentUser: n,
       displayProfile: w,
-      onOpenUserProfileModal: L
+      onOpenUserProfileModal: k
     }) : (0, r.jsx)(y.Z, {
       user: t,
       currentUser: n,

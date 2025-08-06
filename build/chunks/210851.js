@@ -15,9 +15,9 @@ let l = function(e) {
     initialValue: u,
     onFileChange: d,
     title: p
-  } = e, [m, f] = s.useState(null), g = s.useRef(null);
+  } = e, [m, g] = s.useState(null), f = s.useRef(null);
   return s.useEffect(() => () => {
-    null != g.current && URL.revokeObjectURL(g.current)
+    null != f.current && URL.revokeObjectURL(f.current)
   }, []), (0, r.jsxs)(o.xJW, {
     children: [(0, r.jsx)(o.vwX, {
       tag: o.RB0.H5,
@@ -56,9 +56,9 @@ let l = function(e) {
       buttonText: "Browse",
       placeholder: "Select an asset",
       onFileSelect: function(e) {
-        if (f(null != e ? e : null), null == e) return;
+        if (g(null != e ? e : null), null == e) return;
         let t = URL.createObjectURL(e);
-        g.current = t;
+        f.current = t;
         let n = new URL(t);
         n.searchParams.append("mimetype", e.type), n.searchParams.append("name", e.name), d(l, n.toString())
       }

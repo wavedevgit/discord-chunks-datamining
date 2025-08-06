@@ -17,18 +17,18 @@ var r = n(255367),
   g = n(648052),
   b = n(867176),
   j = n(280885),
-  h = n(900927),
-  y = n(678738),
-  v = n(502762),
-  O = n(530),
+  y = n(900927),
+  O = n(678738),
+  h = n(502762),
+  v = n(530),
   x = n(679332),
   _ = n(544989),
   I = n(228168),
   P = n(981631),
-  Z = n(388032),
-  E = n(405666),
-  N = n(349966),
-  T = n(923243);
+  E = n(388032),
+  Z = n(405666),
+  T = n(349966),
+  N = n(923243);
 
 function A(e) {
   let {
@@ -63,7 +63,7 @@ function A(e) {
       isLoaded: null == k ? void 0 : k.isLoaded,
       children: (0, r.jsxs)(o.Y0X, {
         transitionState: G,
-        className: E.root,
+        className: Z.root,
         hideShadow: !0,
         "aria-labelledby": B,
         parentComponent: "NonUserBotProfileModal",
@@ -71,12 +71,12 @@ function A(e) {
           component: (0, r.jsx)(o.nn4, {
             children: (0, r.jsx)(o.H, {
               id: B,
-              children: Z.intl.format(Z.t.KRe1Fh, {
+              children: E.intl.format(E.t.KRe1Fh, {
                 name: U
               })
             })
           }),
-          children: (0, r.jsxs)(v.Z, {
+          children: (0, r.jsxs)(h.Z, {
             user: t,
             displayProfile: k,
             themeType: I.lY.MODAL,
@@ -91,7 +91,7 @@ function A(e) {
                 displayProfile: k,
                 themeType: I.lY.MODAL
               }), (0, r.jsx)("div", {
-                className: E.headerInner,
+                className: Z.headerInner,
                 children: (0, r.jsx)(m.Z, {
                   user: t,
                   displayProfile: k,
@@ -101,9 +101,9 @@ function A(e) {
                 })
               })]
             }), (0, r.jsxs)("div", {
-              className: E.body,
-              children: [(0, r.jsx)(O.Z, {
-                className: E.username,
+              className: Z.body,
+              children: [(0, r.jsx)(v.Z, {
+                className: Z.username,
                 user: t,
                 nickname: U,
                 pronouns: null == k ? void 0 : k.pronouns,
@@ -114,31 +114,31 @@ function A(e) {
                   onClose: M
                 })
               }), (0, r.jsxs)("div", {
-                className: T.container,
+                className: N.container,
                 children: [(0, r.jsx)(o.njP, {
-                  className: T.tabBar,
+                  className: N.tabBar,
                   type: "top",
                   selectedItem: I.oh.BOT_INFO,
                   onItemSelect: P.dG4,
                   children: (0, r.jsx)(o.njP.Item, {
-                    className: T.tabBarItem,
+                    className: N.tabBarItem,
                     id: I.oh.BOT_INFO,
-                    "aria-label": Z.intl.string(Z.t.jGoPJS),
+                    "aria-label": E.intl.string(E.t.jGoPJS),
                     children: (0, r.jsx)(o.Text, {
                       variant: "text-sm/normal",
-                      children: Z.intl.string(Z.t.jGoPJS)
+                      children: E.intl.string(E.t.jGoPJS)
                     })
                   }, I.oh.BOT_INFO)
                 }), (0, r.jsxs)(o.zJl, {
                   fade: !0,
-                  className: N.scroller,
+                  className: T.scroller,
                   children: [(0, r.jsx)(j.Z, {
                     userId: t.id,
                     userBio: null == k ? void 0 : k.bio,
                     setLineClamp: !1
-                  }), (0, r.jsx)(y.Z, {
-                    heading: Z.intl.string(Z.t["A//N4u"]),
-                    children: (0, r.jsx)(h.Z, {
+                  }), (0, r.jsx)(O.Z, {
+                    heading: E.intl.string(E.t["A//N4u"]),
+                    children: (0, r.jsx)(y.Z, {
                       userId: t.id,
                       guildId: D,
                       tooltipDelay: I.vB

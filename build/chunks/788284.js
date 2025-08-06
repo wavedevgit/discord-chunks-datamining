@@ -13,8 +13,8 @@ var r = n(255367),
   d = n(451478),
   p = n(302221),
   m = n(464121);
-let f = [0, .5, 1],
-  g = {
+let g = [0, .5, 1],
+  f = {
     "layers[1].shapes[1].g.k.k": [0, .522, .278, .776, .5, .522, .278, .776, 1, .522, .278, .776],
     "layers[2].shapes[1].g.k.k": [0, .714, .271, .757, .5, .714, .271, .757, 1, .714, .271, .757]
   };
@@ -30,7 +30,7 @@ async function x(e, t) {
       });
       l().set(e, r, s)
     }
-  }(r, g, t), r
+  }(r, f, t), r
 }
 
 function h(e) {
@@ -40,7 +40,7 @@ function h(e) {
     className: o,
     quest: i,
     useReducedMotion: l
-  } = e, g = (0, c.e7)([d.Z], () => d.Z.isFocused()), h = s.useRef(null), [b, j] = s.useState(!1), _ = s.useMemo(() => {
+  } = e, f = (0, c.e7)([d.Z], () => d.Z.isFocused()), h = s.useRef(null), [j, _] = s.useState(!1), b = s.useMemo(() => {
     if (null == i) return null;
     let e = (0, p.oo)(i.config.colors.primary),
       t = {
@@ -48,17 +48,17 @@ function h(e) {
         g: e.g / 255,
         b: e.b / 255
       },
-      n = f.reduce((e, n) => [...e, n, t.r, t.g, t.b], []);
+      n = g.reduce((e, n) => [...e, n, t.r, t.g, t.b], []);
     return x(i.id, n)
-  }, [i]), v = (null == (t = i.userStatus) ? void 0 : t.enrolledAt) != null, C = !l && g;
+  }, [i]), v = (null == (t = i.userStatus) ? void 0 : t.enrolledAt) != null, C = !l && f;
   s.useEffect(() => {
     var e, t, n, r;
-    g ? C && (null == (r = h.current) || null == (n = r.animation) || n.play()) : null == (t = h.current) || null == (e = t.animation) || e.goToAndStop(0, !0)
-  }, [C, g]);
+    f ? C && (null == (r = h.current) || null == (n = r.animation) || n.play()) : null == (t = h.current) || null == (e = t.animation) || e.goToAndStop(0, !0)
+  }, [C, f]);
   let y = s.useCallback(() => {
-    j(!0)
+    _(!0)
   }, []);
-  return null == _ || v ? (0, r.jsx)("div", {
+  return null == b || v ? (0, r.jsx)("div", {
     className: m.backgroundFallback,
     style: {
       backgroundImage: "linear-gradient(90deg, ".concat(i.config.colors.primary, ", ").concat(i.config.colors.secondary, ")")
@@ -68,8 +68,8 @@ function h(e) {
     children: (0, r.jsx)(u.Fmz, {
       ref: h,
       onComplete: y,
-      importData: () => _,
-      shouldAnimate: !b && C,
+      importData: () => b,
+      shouldAnimate: !j && C,
       className: a()(m.lottieAnimation, m.lottieAnimationBackground, n),
       loop: 0,
       rendererSettings: {

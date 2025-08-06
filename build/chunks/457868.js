@@ -35,8 +35,8 @@ var r = n(255367),
   w = n(594174),
   A = n(499033),
   D = n(626135),
-  L = n(585483),
-  k = n(700785),
+  k = n(585483),
+  L = n(700785),
   M = n(51144),
   U = n(998502),
   H = n(276264),
@@ -74,7 +74,7 @@ let W = U.ZP.getEnableHardwareAcceleration(),
     } = e, o = i.useRef(null), u = (0, h.e7)([R.Z], () => R.Z.isTyping(t.id, a)), p = (0, h.e7)([I.ZP], () => I.ZP.getMember(t.guild_id, a)), m = (0, h.e7)([P.Z], () => {
       var e;
       return (null == p ? void 0 : p.colorRoleId) != null ? null == (e = P.Z.getRole(t.guild_id, p.colorRoleId)) ? void 0 : e.name : void 0
-    }, [t.guild_id, p]), b = (0, h.e7)([w.default], () => w.default.getUser(a)), y = (0, h.e7)([w.default], () => w.default.getCurrentUser()), x = (null == b ? void 0 : b.id) === (null == y ? void 0 : y.id), j = (0, h.e7)([T.Z, N.Z], () => x ? N.Z.getStatus() : T.Z.getStatus(a, t.guild_id)), O = (0, h.e7)([T.Z], () => T.Z.isMobileOnline(a)), C = (0, h.e7)([T.Z, N.Z], () => x ? N.Z.getActivities() : T.Z.getActivities(a, t.guild_id)), A = (0, h.e7)([Z.Z], () => Z.Z.getAnyStreamForUser(a)), D = (0, c.JA)(a), k = (0, h.e7)([E.Z], () => E.Z.canUserViewChannel(t.id, l, a)), U = (null == b ? void 0 : b.id) != null && b.id === s, B = i.useCallback(e => {
+    }, [t.guild_id, p]), b = (0, h.e7)([w.default], () => w.default.getUser(a)), y = (0, h.e7)([w.default], () => w.default.getCurrentUser()), x = (null == b ? void 0 : b.id) === (null == y ? void 0 : y.id), j = (0, h.e7)([T.Z, N.Z], () => x ? N.Z.getStatus() : T.Z.getStatus(a, t.guild_id)), O = (0, h.e7)([T.Z], () => T.Z.isMobileOnline(a)), C = (0, h.e7)([T.Z, N.Z], () => x ? N.Z.getActivities() : T.Z.getActivities(a, t.guild_id)), A = (0, h.e7)([Z.Z], () => Z.Z.getAnyStreamForUser(a)), D = (0, c.JA)(a), L = (0, h.e7)([E.Z], () => E.Z.canUserViewChannel(t.id, l, a)), U = (null == b ? void 0 : b.id) != null && b.id === s, B = i.useCallback(e => {
       null != b && (0, f.jW)(e, async () => {
         let {
           default: e
@@ -103,9 +103,9 @@ let W = U.ZP.getEnableHardwareAcceleration(),
           decoration: "never"
         })),
         n = "<@".concat(b.id, ">");
-      L.S.dispatch(G.CkL.TEXTAREA_FOCUS, {
+      k.S.dispatch(G.CkL.TEXTAREA_FOCUS, {
         channelId: t.id
-      }), L.S.dispatchToLastSubscribed(G.CkL.INSERT_TEXT, {
+      }), k.S.dispatchToLastSubscribed(G.CkL.INSERT_TEXT, {
         plainText: e,
         rawText: n
       }), g.Z.startTyping(t.id)
@@ -174,7 +174,7 @@ let W = U.ZP.getEnableHardwareAcceleration(),
           premiumSince: null == X ? null : new Date(X),
           onClickPremiumGuildIcon: Y,
           itemProps: D,
-          lostPermissionTooltipText: k ? void 0 : F.intl.string(F.t["/QcoT0"]),
+          lostPermissionTooltipText: L ? void 0 : F.intl.string(F.t["/QcoT0"]),
           isOwner: U,
           nameplate: q,
           onClick: e => {
@@ -310,7 +310,7 @@ function X(e) {
     channel: t
   });
   let _ = o().omit(g.containerProps, ["ref"]),
-    O = k.iJ(n);
+    O = L.iJ(n);
   return (0, r.jsx)(y.Gt, {
     value: s,
     children: (0, r.jsx)(c.bG, {
