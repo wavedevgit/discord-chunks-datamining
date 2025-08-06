@@ -6,7 +6,7 @@ n.d(t, {
 });
 var r = n(818083),
   i = n(128064);
-let a = (0, r.B)({
+let o = (0, r.B)({
     kind: "user",
     id: "2025-01_default_activity_status",
     label: "Guild activity status defaults",
@@ -21,7 +21,7 @@ let a = (0, r.B)({
       }
     }]
   }),
-  o = (0, r.B)({
+  a = (0, r.B)({
     kind: "user",
     id: "2025-01_default_activity_status_new_users",
     label: "Guild activity status defaults",
@@ -36,22 +36,22 @@ let a = (0, r.B)({
       }
     }]
   }),
-  s = e => a.getCurrentConfig({
+  s = e => o.getCurrentConfig({
     location: e
   }, {
     autoTrackExposure: !1
-  }).enabled || o.getCurrentConfig({
+  }).enabled || a.getCurrentConfig({
     location: e
   }, {
     autoTrackExposure: !1
   }).enabled || (0, i.c_)("DefaultGuildActivityExperiment"),
   l = e => {
-    let t = a.useExperiment({
+    let t = o.useExperiment({
         location: e
       }, {
         autoTrackExposure: !1
       }).enabled,
-      n = o.useExperiment({
+      n = a.useExperiment({
         location: e
       }, {
         autoTrackExposure: !1

@@ -1,9 +1,9 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  L9: () => P,
-  ZK: () => R,
-  d4: () => w,
+  L9: () => w,
+  ZK: () => P,
+  d4: () => R,
   dS: () => S,
   jY: () => C,
   q7: () => N,
@@ -11,8 +11,8 @@ n.d(t, {
 }), n(953529), n(997841);
 var r = n(255367),
   i = n(73800),
-  a = n(442837),
-  o = n(993365),
+  o = n(442837),
+  a = n(993365),
   s = n(981729),
   l = n(481060),
   c = n(543651),
@@ -97,7 +97,7 @@ function S(e) {
 function A(e) {
   var t;
   let n = e.item.originalItem,
-    a = i.useCallback(() => {
+    o = i.useCallback(() => {
       var e;
       return (0, p.yE)(null != (e = n.flags) ? e : 0, E.J0y.IS_CLIP) ? (0, r.jsxs)(s.DY, {
         text: b.intl.string(b.t["/fgfWl"]),
@@ -105,7 +105,7 @@ function A(e) {
         children: [(0, r.jsx)(l.AlX, {
           size: "xs",
           color: "currentColor"
-        }), (0, r.jsx)(o.x, {
+        }), (0, r.jsx)(a.x, {
           variant: "text-xs/semibold",
           color: "always-white",
           children: b.intl.string(b.t.oA4afH)
@@ -122,7 +122,7 @@ function A(e) {
     placeholder: n.placeholder,
     placeholderVersion: n.placeholder_version,
     srcIsAnimated: (0, p.yE)(null != (t = n.flags) ? t : 0, E.J0y.IS_ANIMATED),
-    renderOverlayContent: a,
+    renderOverlayContent: o,
     sourceMetadata: {
       message: e.message,
       identifier: {
@@ -148,9 +148,9 @@ function C(e) {
   let {
     message: t,
     item: n
-  } = e, r = n.originalItem, a = (0, u.RT)(u.Ir.VOICE_MESSAGE, r.id), o = i.useCallback((e, n, i) => {
-    var a;
-    (0, d.tb)(t.id, null != (a = r.duration_secs) ? a : null, n, t.author.id)
+  } = e, r = n.originalItem, o = (0, u.RT)(u.Ir.VOICE_MESSAGE, r.id), a = i.useCallback((e, n, i) => {
+    var o;
+    (0, d.tb)(t.id, null != (o = r.duration_secs) ? o : null, n, t.author.id)
   }, [t, r.duration_secs]), s = i.useCallback((e, n) => {
     var i;
     (0, d.EW)(t.id, null != (i = r.duration_secs) ? i : null, e, t.author.id, n)
@@ -164,14 +164,14 @@ function C(e) {
     src: r.url,
     durationSecs: r.duration_secs,
     waveform: r.waveform,
-    onPlay: o,
+    onPlay: a,
     onPause: s,
     onError: l,
-    playbackCacheKey: a
+    playbackCacheKey: o
   }))
 }
 
-function w(e) {
+function R(e) {
   let t = e.item.originalItem;
   return (0, g.xi)(T(v({}, e), {
     url: t.url,
@@ -181,7 +181,7 @@ function w(e) {
   }))
 }
 
-function R(e) {
+function P(e) {
   let t = e.item.originalItem;
   return (0, g.ur)(T(v({}, e), {
     url: t.url,
@@ -190,7 +190,7 @@ function R(e) {
   }))
 }
 
-function P(e) {
+function w(e) {
   return "CLIP" === e.item.type ? (0, r.jsx)(D, {
     attachment: e.item.originalItem,
     message: e.message
@@ -202,9 +202,9 @@ function D(e) {
   let {
     attachment: n,
     message: i
-  } = e, o = i.channel_id, s = (0, a.e7)([f.Z], () => {
+  } = e, a = i.channel_id, s = (0, o.e7)([f.Z], () => {
     var e;
-    return null == (e = f.Z.getBasicChannel(o)) ? void 0 : e.guild_id
+    return null == (e = f.Z.getBasicChannel(a)) ? void 0 : e.guild_id
   }), {
     clip_created_at: l,
     clip_participants: u,

@@ -4,8 +4,8 @@ n.d(t, {
   Z: () => y
 }), n(388685), n(539854);
 var r, i = n(442837),
-  a = n(570140),
-  o = n(537986),
+  o = n(570140),
+  a = n(537986),
   s = n(592125),
   l = n(271383);
 
@@ -17,8 +17,8 @@ function c(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let u = new o.Z(l.ZP.isMember, (e, t) => {
-  a.Z.dispatch({
+let u = new a.Z(l.ZP.isMember, (e, t) => {
+  o.Z.dispatch({
     type: "GUILD_MEMBERS_REQUEST",
     guildIds: [e],
     userIds: t
@@ -105,7 +105,7 @@ class b extends(r = i.ZP.Store) {
   }
 }
 c(b, "displayName", "GuildMemberRequesterStore");
-let y = new b(a.Z, {
+let y = new b(o.Z, {
   CONNECTION_CLOSED: d,
   CONNECTION_OPEN: d,
   CONNECTION_RESUMED: _,

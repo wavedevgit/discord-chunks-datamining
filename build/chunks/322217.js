@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(255367),
   i = n(173511),
-  a = n(481060),
-  o = n(463583);
+  o = n(481060),
+  a = n(463583);
 
 function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -48,14 +48,14 @@ function u(e, t) {
 }
 
 function d(e) {
-  return (0, r.jsx)(a.w0Z, {
-    className: o.variants,
-    children: Object.values(i.O).map(t => (0, r.jsxs)(a.Zbd, {
-      className: o.card,
-      children: [(0, r.jsx)(a.Text, u(l({}, e), {
+  return (0, r.jsx)(o.w0Z, {
+    className: a.variants,
+    children: Object.values(i.O).map(t => (0, r.jsxs)(o.Zbd, {
+      className: a.card,
+      children: [(0, r.jsx)(o.Text, u(l({}, e), {
         variant: t,
         children: e.children
-      })), (0, r.jsx)(a.Text, {
+      })), (0, r.jsx)(o.Text, {
         variant: "text-xs/normal",
         color: "text-secondary",
         children: t
@@ -68,7 +68,7 @@ let f = {
   stories: [{
     name: "Text",
     id: "text",
-    component: a.Text,
+    component: o.Text,
     controls: {
       variant: {
         label: "Variant",

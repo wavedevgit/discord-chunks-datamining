@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(255367),
   i = n(73800),
-  a = n(66546),
-  o = n(442837),
+  o = n(66546),
+  a = n(442837),
   s = n(780384),
   l = n(481060),
   c = n(435064),
@@ -62,11 +62,11 @@ function I(e) {
     inPopout: n
   } = e, {
     reducedMotion: h
-  } = i.useContext(s.Sf), I = (0, i.useRef)(null), T = d.n.getState().clipsButtonRef, S = (0, f.V9)(t), A = (0, o.e7)([c.Z], () => c.Z.getActiveAnimation()), N = (0, o.Wu)([c.Z], () => c.Z.getStreamClipAnimations(S)), C = (0, i.useRef)(void 0);
+  } = i.useContext(s.Sf), I = (0, i.useRef)(null), T = d.n.getState().clipsButtonRef, S = (0, f.V9)(t), A = (0, a.e7)([c.Z], () => c.Z.getActiveAnimation()), N = (0, a.Wu)([c.Z], () => c.Z.getStreamClipAnimations(S)), C = (0, i.useRef)(void 0);
   i.useEffect(() => () => {
     (0, u.Gh)(S)
   }, [S]);
-  let w = () => {
+  let R = () => {
       var e;
       let t = null == (e = I.current) ? void 0 : e.getBoundingClientRect();
       return null == t || n ? b : {
@@ -76,7 +76,7 @@ function I(e) {
         left: t.left
       }
     },
-    R = e => {
+    P = e => {
       let t = null == T ? void 0 : T.getBoundingClientRect();
       if (C.current = t, e.timestamp !== A || null == t || n) return b;
       let {
@@ -90,7 +90,7 @@ function I(e) {
         width: 268
       }
     },
-    P = () => {
+    w = () => {
       if (null != C.current) return {
         top: C.current.top + 12,
         left: C.current.left + 12
@@ -109,40 +109,40 @@ function I(e) {
       config: y
     }, "animate-always"),
     x = (0, i.useRef)(null),
-    k = (0, l.Yzy)(N, {
+    M = (0, l.Yzy)(N, {
       ref: x,
       keys: e => e.timestamp,
       from: e => m({
         position: "fixed",
         visibility: "hidden",
         opacity: 1
-      }, h.enabled ? R(e) : w()),
+      }, h.enabled ? P(e) : R()),
       enter: e => [m({
         opacity: 1,
         visibility: "visible"
-      }, R(e))],
+      }, P(e))],
       leave: m({
         opacity: 0
       }, !h.enabled && m({
         height: 0,
         width: 0
-      }, P())),
+      }, w())),
       config: h.enabled ? v : O,
       onRest: (e, t) => {
         null != t.item && null != N.find(e => e.timestamp === t.item.timestamp) && (0, u.Gh)(S, t.item.timestamp)
       }
     }, "animate-always");
-  return (0, a.useChain)([D, x], [0, E], g), (0, r.jsxs)(r.Fragment, {
+  return (0, o.useChain)([D, x], [0, E], g), (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       className: p.hidden,
       ref: I
-    }), L((e, t) => null != t && (0, r.jsx)(a.animated.div, {
+    }), L((e, t) => null != t && (0, r.jsx)(o.animated.div, {
       className: p.whiteFlash,
       style: e
     })), (0, r.jsx)(_.ZP, {
       children: (0, r.jsx)("div", {
         className: p.hidden,
-        children: k((e, t, n, i) => (null == t ? void 0 : t.thumbnail) != null && (0, r.jsx)(a.animated.img, {
+        children: M((e, t, n, i) => (null == t ? void 0 : t.thumbnail) != null && (0, r.jsx)(o.animated.img, {
           src: t.thumbnail,
           className: p.movingImage,
           style: e

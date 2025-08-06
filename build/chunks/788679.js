@@ -6,8 +6,8 @@ n.r(t), n.d(t, {
 var r = n(255367);
 n(73800);
 var i = n(481060),
-  a = n(522664),
-  o = n(247206),
+  o = n(522664),
+  a = n(247206),
   s = n(668058),
   l = n(112554),
   c = n(160877),
@@ -30,14 +30,14 @@ function d(e) {
       (0, i.showToast)((0, i.createToast)(u.intl.string(u.t.R0RpRU), i.ToastType.FAILURE))
     },
     report: () => {
-      (0, a.Uj)(t, n, h.map(e => e.id), m.map(e => e.id))
+      (0, o.Uj)(t, n, h.map(e => e.id), m.map(e => e.id))
     }
   });
   return h.length > 0 || m.length > 0 || p(), (0, r.jsx)(c.$, {
     messageId: n,
     channelId: t,
     isReportFalsePositiveLoading: E,
-    analyticsContext: o.UU.EXPLICIT_MEDIA_OBSCURED_FALSE_POSITIVE_FLOW,
+    analyticsContext: a.UU.EXPLICIT_MEDIA_OBSCURED_FALSE_POSITIVE_FLOW,
     onConfirmPress: g,
     attachmentPreview: 1 === h.length && 0 === m.length ? h[0] : void 0,
     embedPreview: 1 === m.length && 0 === h.length ? m[0] : void 0,

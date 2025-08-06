@@ -1,11 +1,11 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  C: () => a
+  C: () => o
 });
 var r = n(570140),
   i = n(550385);
-let a = () => {
+let o = () => {
   (0, i.Ll)(), r.Z.dispatch({
     type: "CLIENT_THEMES_EDITOR_CLOSE"
   })

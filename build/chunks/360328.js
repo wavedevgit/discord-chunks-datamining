@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(255367),
   i = n(73800),
-  a = n(442837),
-  o = n(481060),
+  o = n(442837),
+  a = n(481060),
   s = n(287734),
   l = n(592125),
   c = n(693546),
@@ -14,8 +14,8 @@ var r = n(255367),
   d = n(388032);
 
 function f(e, t, f, _) {
-  let [p, h] = i.useState(!1), m = (0, a.e7)([l.Z], () => l.Z.getChannel(_)), g = i.useCallback(() => {
-    (0, o.showToast)((0, o.createToast)(d.intl.string(d.t.R0RpRU), o.ToastType.FAILURE))
+  let [p, h] = i.useState(!1), m = (0, o.e7)([l.Z], () => l.Z.getChannel(_)), g = i.useCallback(() => {
+    (0, a.showToast)((0, a.createToast)(d.intl.string(d.t.R0RpRU), a.ToastType.FAILURE))
   }, []), E = i.useCallback(async () => {
     if (!p && null != e && null != t && null != f) {
       if (null != m) return void s.default.selectPrivateChannel(m.id);
@@ -45,7 +45,7 @@ function f(e, t, f, _) {
       }
     },
     rejectRequest: () => {
-      null != e && null != t && null != f && (0, o.ZDy)(async () => {
+      null != e && null != t && null != f && (0, a.ZDy)(async () => {
         let {
           default: i
         } = await n.e("56496").then(n.bind(n, 113886));

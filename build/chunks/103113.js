@@ -1,12 +1,12 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => R
+  Z: () => P
 }), n(388685);
 var r = n(255367),
   i = n(73800),
-  a = n(481060),
-  o = n(727637),
+  o = n(481060),
+  a = n(727637),
   s = n(100527),
   l = n(906732),
   c = n(580552),
@@ -38,7 +38,7 @@ function C(e, t, n) {
   }) : e[t] = n, e
 }
 
-function w(e) {
+function R(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -51,50 +51,50 @@ function w(e) {
   return e
 }
 
-function R(e) {
+function P(e) {
   let {
     user: t,
     guildId: n,
     channelId: C,
-    messageId: R,
-    roleId: P,
+    messageId: P,
+    roleId: w,
     openedAt: D,
     setPopoutRef: L,
     closePopout: x,
-    disableUserProfileLink: k = __OVERLAY__,
-    newAnalyticsLocations: j = [],
-    disableAutoFocus: M = !1
+    disableUserProfileLink: M = __OVERLAY__,
+    newAnalyticsLocations: k = [],
+    disableAutoFocus: j = !1
   } = e, U = (0, h.ZP)(t.id, n), {
     analyticsLocations: G
-  } = (0, l.ZP)([...j, s.Z.USER_PROFILE_POPOUT]), B = (0, _.ZB)({
+  } = (0, l.ZP)([...k, s.Z.USER_PROFILE_POPOUT]), B = (0, _.ZB)({
     layout: "POPOUT",
     userId: t.id,
     guildId: n,
     channelId: C,
-    messageId: R,
-    roleId: P
-  }), Z = i.useRef(null), F = (0, o.Z)(Z);
+    messageId: P,
+    roleId: w
+  }), Z = i.useRef(null), F = (0, a.Z)(Z);
   i.useEffect(() => {
     null == L || L(null == Z ? void 0 : Z.current)
   }, [Z, L]);
   let V = () => {
-      null == x || x(), (0, m.openUserProfileModal)(w({
+      null == x || x(), (0, m.openUserProfileModal)(R({
         sourceAnalyticsLocations: G,
         hideRestrictedProfile: !0
       }, B))
     },
-    H = !k && (0, c.Z)(t.id),
-    Y = () => H ? (0, r.jsx)(a.sNh, {
+    H = !M && (0, c.Z)(t.id),
+    Y = () => H ? (0, r.jsx)(o.sNh, {
       id: "view-profile",
       label: A.intl.string(A.t["+Xp3ho"]),
       action: () => {
-        V(), (0, p.pQ)(w({
+        V(), (0, p.pQ)(R({
           action: "PRESS_VIEW_PROFILE",
           analyticsLocations: G
         }, B))
       }
     }) : null,
-    W = M ? "div" : a.VqE,
+    W = j ? "div" : o.VqE,
     K = (0, u.Dt)(),
     z = f.ZP.useName(n, C, t);
   return (0, r.jsx)(l.Gt, {
@@ -108,8 +108,8 @@ function R(e) {
       children: (0, r.jsxs)(W, {
         ref: Z,
         "aria-labelledby": K,
-        children: [(0, r.jsx)(a.nn4, {
-          children: (0, r.jsx)(a.H, {
+        children: [(0, r.jsx)(o.nn4, {
+          children: (0, r.jsx)(o.H, {
             id: K,
             children: A.intl.format(A.t.KRe1Fh, {
               name: z
@@ -139,7 +139,7 @@ function R(e) {
               themeType: S.lY.POPOUT,
               onOpenProfile: H ? V : void 0
             })]
-          }), (0, r.jsxs)(a.Ttm, {
+          }), (0, r.jsxs)(o.Ttm, {
             fade: !0,
             className: N.body,
             children: [(0, r.jsx)(v.Z, {

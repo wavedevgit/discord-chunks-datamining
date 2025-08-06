@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(255367),
   i = n(73800),
-  a = n(442837),
-  o = n(159691),
+  o = n(442837),
+  a = n(159691),
   s = n(755721),
   l = n(541716),
   c = n(419922),
@@ -25,7 +25,7 @@ let O = e => {
     let {
       channel: t,
       message: n
-    } = e, a = (0, g.t)(), [u, d] = i.useState(!1), f = (0, m.y6)(n.id), _ = i.useCallback(() => {
+    } = e, o = (0, g.t)(), [u, d] = i.useState(!1), f = (0, m.y6)(n.id), _ = i.useCallback(() => {
       (0, h.v)({
         type: l.Ie.FORM,
         content: "",
@@ -39,7 +39,7 @@ let O = e => {
     }, [t, n, f]);
     return (0, r.jsx)("div", {
       className: y.welcomeCTA,
-      children: a ? (0, r.jsx)(o.zx, {
+      children: o ? (0, r.jsx)(a.zx, {
         variant: "secondary",
         size: "md",
         onClick: _,
@@ -65,18 +65,18 @@ let O = e => {
     let {
       message: t,
       channel: n
-    } = e, i = n.getGuildId(), o = (0, a.e7)([p.default, _.Z, f.Z, d.ZP], () => {
+    } = e, i = n.getGuildId(), a = (0, o.e7)([p.default, _.Z, f.Z, d.ZP], () => {
       var e;
       let r = p.default.getCurrentUser(),
-        a = (0, u.xl)(n),
-        o = _.Z.can(E.Plq.SEND_MESSAGES, n),
+        o = (0, u.xl)(n),
+        a = _.Z.can(E.Plq.SEND_MESSAGES, n),
         s = null != i && null != r && (null == (e = d.ZP.getMember(i, r.id)) ? void 0 : e.isPending),
         l = t.author.bot,
         c = f.Z.getGuild(i),
         h = null != c && (c.systemChannelFlags & E.xmn.SUPPRESS_JOIN_NOTIFICATION_REPLIES) == 0;
-      return o && !a && !s && !l && h
+      return a && !o && !s && !l && h
     });
-    return null != i && o ? (0, r.jsx)(O, {
+    return null != i && a ? (0, r.jsx)(O, {
       message: t,
       channel: n
     }) : null

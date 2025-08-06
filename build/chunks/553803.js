@@ -7,7 +7,7 @@ var r = n(255367);
 n(73800);
 var i = n(481060);
 
-function a(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -16,14 +16,14 @@ function a(e, t, n) {
   }) : e[t] = n, e
 }
 
-function o(e) {
+function a(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      a(e, t, n[t])
+      o(e, t, n[t])
     })
   }
   return e
@@ -49,15 +49,15 @@ function l(e, t) {
 function c(e) {
   let {
     message: t,
-    initialAnswerId: a
+    initialAnswerId: o
   } = e;
   (0, i.ZDy)(async () => {
     let {
       default: e
     } = await n.e("74590").then(n.bind(n, 651081));
-    return n => (0, r.jsx)(e, l(o({}, n), {
+    return n => (0, r.jsx)(e, l(a({}, n), {
       message: t,
-      initialAnswerId: a
+      initialAnswerId: o
     }))
   })
 }

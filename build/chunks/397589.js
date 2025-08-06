@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(255367),
   i = n(73800),
-  a = n(481060),
-  o = n(782568),
+  o = n(481060),
+  a = n(782568),
   s = n(592125),
   l = n(594174),
   c = n(63063),
@@ -83,13 +83,13 @@ let I = e => {
       }, !0, d.LL.UserTriggered)
     }
   }, [n]), N = i.useCallback(() => {
-    (0, o.Z)(c.Z.getArticleURL(m.BhN.CONFETTI_POTION))
+    (0, a.Z)(c.Z.getArticleURL(m.BhN.CONFETTI_POTION))
   }, []);
-  return O && null != S && (null == T ? void 0 : T.type) === p.B.CONFETTI ? (0, r.jsx)(a.P3F, {
+  return O && null != S && (null == T ? void 0 : T.type) === p.B.CONFETTI ? (0, r.jsx)(o.P3F, {
     onFocus: A,
     onClick: N,
     "aria-label": g.intl.string(g.t.Mp5k6O),
-    children: (0, r.jsx)(a.ua7, {
+    children: (0, r.jsx)(o.ua7, {
       text: g.intl.formatToPlainString(g.t["FE++aG"], {
         user: S
       }),
@@ -97,12 +97,12 @@ let I = e => {
         ref: b,
         className: E.potionBadge
       }, e), {
-        children: [(0, r.jsx)(a.l22, {
+        children: [(0, r.jsx)(o.l22, {
           size: "custom",
           color: "currentColor",
           width: 12,
           height: 12
-        }), (0, r.jsx)(a.Text, {
+        }), (0, r.jsx)(o.Text, {
           variant: "text-xs/bold",
           color: "currentColor",
           children: g.intl.string(g.t["8Rrro6"])

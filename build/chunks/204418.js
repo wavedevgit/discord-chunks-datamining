@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var i = n(481060),
-  a = n(518950),
-  o = n(998502),
+  o = n(518950),
+  a = n(998502),
   s = n(388032);
 
 function l(e, t, n) {
@@ -31,12 +31,12 @@ function c(e) {
   }
   return e
 }
-let u = o.ZP.getEnableHardwareAcceleration() ? i.Xo$ : i.qEK,
+let u = a.ZP.getEnableHardwareAcceleration() ? i.Xo$ : i.qEK,
   d = e => {
     let {
       user: t,
       guildId: n,
-      avatarDecorationOverride: o,
+      avatarDecorationOverride: a,
       status: l,
       avatarSize: d = i.EFr.SIZE_120,
       "aria-hidden": f = !1,
@@ -47,12 +47,12 @@ let u = o.ZP.getEnableHardwareAcceleration() ? i.Xo$ : i.qEK,
       avatarDecorationSrc: m,
       avatarSrc: g,
       eventHandlers: E
-    } = (0, a.Z)({
+    } = (0, o.Z)({
       userId: t.id,
       guildId: n,
       size: d,
       showPending: !0,
-      avatarDecorationOverride: o,
+      avatarDecorationOverride: a,
       animateOnHover: p
     });
     return (0, r.jsx)(u, c({

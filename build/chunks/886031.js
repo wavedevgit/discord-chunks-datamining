@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var i = n(481060),
-  a = n(680018),
-  o = n(374415),
+  o = n(680018),
+  a = n(374415),
   s = n(861066),
   l = n(179538);
 
@@ -52,7 +52,7 @@ function f(e, t) {
 let _ = {
     name: "Button",
     id: "button",
-    component: a.z,
+    component: o.z,
     docs: "https://design.discord.tools/components/web/buttons/button",
     controls: {
       text: {
@@ -225,11 +225,11 @@ let _ = {
       id: "button-group",
       docs: "https://design.discord.tools/components/web/buttons/button-group",
       component: function(e) {
-        return (0, r.jsxs)(o.h, f(u({}, e), {
-          children: [(0, r.jsx)(a.z, {
+        return (0, r.jsxs)(a.h, f(u({}, e), {
+          children: [(0, r.jsx)(o.z, {
             variant: "secondary",
             text: "Cancel"
-          }), (0, r.jsx)(a.z, {
+          }), (0, r.jsx)(o.z, {
             variant: "primary",
             text: "Submit"
           })]

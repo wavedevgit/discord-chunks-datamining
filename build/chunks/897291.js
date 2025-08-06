@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(255367),
   i = n(73800),
-  a = n(996146),
-  o = n(481060),
+  o = n(996146),
+  a = n(481060),
   s = n(100527),
   l = n(906732),
   c = n(963249),
@@ -66,7 +66,7 @@ function y(e) {
     Component: y,
     events: O,
     play: v
-  } = (0, a.$)(), {
+  } = (0, o.$)(), {
     enabled: I
   } = u.G.useExperiment({
     location: "gift-button"
@@ -75,7 +75,7 @@ function y(e) {
   }), T = i.type === _.d4z.DM;
   if (t) return null;
   let S = () => {
-    I && T && null != E ? (0, o.ZDy)(async () => {
+    I && T && null != E ? (0, a.ZDy)(async () => {
       let {
         default: e
       } = await n.e("59207").then(n.bind(n, 435626));
@@ -102,7 +102,7 @@ function y(e) {
       }
     })
   };
-  return (0, r.jsx)(o.ua7, {
+  return (0, r.jsx)(a.ua7, {
     text: p.intl.string(p.t.sWtWDQ),
     children: e => (0, r.jsx)(f.Z, b(g(b(g({}, e), {
       className: h.button,

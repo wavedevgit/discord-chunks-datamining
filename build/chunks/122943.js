@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(255367),
   i = n(73800),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(481060),
   l = n(906732),
   c = n(201895),
@@ -64,7 +64,7 @@ function T(e) {
   let {
     channel: t,
     textVariant: n,
-    textClassName: a,
+    textClassName: o,
     iconClassName: f,
     hideText: m = !1,
     hideTooltip: y = !1,
@@ -74,40 +74,40 @@ function T(e) {
     enableTopNavButton: C
   } = (0, d.Cq)({
     location: "VoiceActivityStatus"
-  }), w = !C && T, {
-    analyticsLocations: R
-  } = (0, l.ZP)(), P = i.useCallback(() => {
+  }), R = !C && T, {
+    analyticsLocations: P
+  } = (0, l.ZP)(), w = i.useCallback(() => {
     (0, p.A)({
-      analyticsLocations: R,
+      analyticsLocations: P,
       activityType: "VOICE",
       voiceChannelId: t.id
     })
-  }, [R, t.id]), D = () => y || N ? (0, r.jsx)(_.Z, {
+  }, [P, t.id]), D = () => y || N ? (0, r.jsx)(_.Z, {
     size: "custom",
     color: S,
     channel: t,
-    className: o()(b.icon, f)
+    className: a()(b.icon, f)
   }) : (0, r.jsx)(s.ua7, {
     text: A,
     "aria-label": (0, c.ZP)({
       channel: t
     }),
     delay: g.X,
-    onTooltipShow: P,
+    onTooltipShow: w,
     children: e => (0, r.jsx)(_.Z, I(O({}, e), {
       size: "custom",
       color: S,
       channel: t,
-      className: o()(b.icon, f)
+      className: a()(b.icon, f)
     }))
   }), L = () => C ? A : N ? E.intl.string(E.t["9FaEzs"]) : t.isGuildStageVoice() ? E.intl.string(E.t.QygGCA) : E.intl.string(E.t.msxteH);
   return (0, r.jsxs)(r.Fragment, {
     children: [D(), !m && (0, r.jsxs)(h.Z, {
       variant: n,
-      className: a,
+      className: o,
       canTruncate: v,
       hideTooltip: y,
-      children: [L(), w && null != A && " (".concat(A, ")")]
+      children: [L(), R && null != A && " (".concat(A, ")")]
     })]
   })
 }
@@ -117,7 +117,7 @@ function S(e) {
     channel: t,
     textVariant: n,
     textClassName: i,
-    iconClassName: a,
+    iconClassName: o,
     hideText: l = !1,
     hideTooltip: c = !1,
     canTruncate: f = !0,
@@ -132,7 +132,7 @@ function S(e) {
       size: "custom",
       color: h,
       channel: t,
-      className: o()(b.icon, a)
+      className: a()(b.icon, o)
     }),
     text: T,
     tooltipText: c ? void 0 : I,

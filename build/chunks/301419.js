@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(423875),
   i = n(740605),
-  a = n(206583),
-  o = n(616922),
+  o = n(206583),
+  a = n(616922),
   s = n(388032);
 
 function l(e, t, n) {
@@ -59,19 +59,19 @@ function f(e) {
     } = n.extra.media,
     _ = n.extra.artist.name,
     p = {
-      onClick: () => (0, i.o)(o.Hw.ALBUM, n.extra.media.external_parent_id),
+      onClick: () => (0, i.o)(a.Hw.ALBUM, n.extra.media.external_parent_id),
       ariaDescription: s.intl.formatToPlainString(s.t.xTsar6, {
         itemName: n.extra.media.parent_title
       })
     },
     h = {
-      onClick: () => (0, i.o)(o.Hw.ARTIST, n.extra.artist.external_id),
+      onClick: () => (0, i.o)(a.Hw.ARTIST, n.extra.artist.external_id),
       ariaDescription: s.intl.formatToPlainString(s.t.xTsar6, {
         itemName: _
       })
     };
   return u === r.p.SPOTIFY && (t = {
-    type: a.kG.SPOTIFY
+    type: o.kG.SPOTIFY
   }), d(c({}, l), {
     title: _,
     thumbnailUrl: f,

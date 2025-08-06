@@ -5,8 +5,8 @@ n.d(t, {
   ZP: () => T
 }), n(388685), n(35282), n(539854);
 var r, i = n(392711),
-  a = n.n(i),
-  o = n(442837),
+  o = n.n(i),
+  a = n(442837),
   s = n(570140),
   l = n(704907),
   c = n(581883);
@@ -101,11 +101,11 @@ function O(e) {
 function v() {
   var e, t;
   let n = null != (t = null == (e = c.Z.frecencyWithoutFetchingLatest.applicationCommandFrecency) ? void 0 : e.applicationCommands) ? t : {};
-  g.overwriteHistory(a().mapValues(n, e => h(_({}, e), {
+  g.overwriteHistory(o().mapValues(n, e => h(_({}, e), {
     recentUses: e.recentUses.map(Number).filter(e => e > 0)
   })), m.pendingUsages)
 }
-class I extends(r = o.ZP.PersistedStore) {
+class I extends(r = a.ZP.PersistedStore) {
   initialize(e) {
     null != e && (m = e), this.syncWith([c.Z], v)
   }

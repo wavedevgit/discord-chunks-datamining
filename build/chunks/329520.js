@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(255367),
   i = n(73800),
-  a = n(442837),
-  o = n(481060),
+  o = n(442837),
+  a = n(481060),
   s = n(906732),
   l = n(201895),
   c = n(933557),
@@ -52,7 +52,7 @@ function y(e) {
     hideText: y = !1,
     hideTooltip: O = !1,
     canTruncate: v = !0
-  } = e, I = (0, a.e7)([d.Z], () => d.Z.getChannel(t.channelId)), T = (0, c.ZP)(I), {
+  } = e, I = (0, o.e7)([d.Z], () => d.Z.getChannel(t.channelId)), T = (0, c.ZP)(I), {
     analyticsLocations: S
   } = (0, s.ZP)(), A = i.useCallback(() => {
     (0, f.A)({
@@ -66,16 +66,16 @@ function y(e) {
     C = null != N ? g.intl.format(g.t["0wJXSk"], {
       name: N
     }) : g.intl.string(g.t.eXan7O),
-    w = !O && null != I && null != T;
+    R = !O && null != I && null != T;
   return (0, r.jsxs)(r.Fragment, {
     children: [!b && (0, r.jsx)(_.Z, {
-      icon: o.ARS,
-      tooltipText: w ? T : void 0,
-      tooltipAriaLabel: w ? (0, l.ZP)({
+      icon: a.ARS,
+      tooltipText: R ? T : void 0,
+      tooltipAriaLabel: R ? (0, l.ZP)({
         channel: I
       }) : void 0,
       className: E,
-      onTooltipShow: w ? A : void 0
+      onTooltipShow: R ? A : void 0
     }), !y && (0, r.jsx)(p.Z, {
       variant: u,
       className: h,
@@ -98,7 +98,7 @@ function O(e) {
     hideTooltip: p = !1,
     canTruncate: m = !0,
     showChannelName: E = !1
-  } = e, b = (0, a.e7)([d.Z], () => d.Z.getChannel(t.channelId)), y = (0, c.ZP)(b), O = (null == n ? void 0 : n.name) === "" ? null : null == n ? void 0 : n.name, v = null != O ? g.intl.format(g.t["0wJXSk"], {
+  } = e, b = (0, o.e7)([d.Z], () => d.Z.getChannel(t.channelId)), y = (0, c.ZP)(b), O = (null == n ? void 0 : n.name) === "" ? null : null == n ? void 0 : n.name, v = null != O ? g.intl.format(g.t["0wJXSk"], {
     name: O
   }) : g.intl.string(g.t.eXan7O), I = null != O ? g.intl.formatToPlainString(g.t["0wJXSk"], {
     name: O
@@ -107,7 +107,7 @@ function O(e) {
   }) : v, S = E ? T : v, A = null != y ? "".concat(I, " (").concat(y, ")") : I;
   return (0, r.jsx)(h.Z, {
     icon: u ? void 0 : (0, r.jsx)(_.Z, {
-      icon: o.ARS,
+      icon: a.ARS,
       className: l
     }),
     text: S,

@@ -4,9 +4,9 @@ n.d(t, {
   Z: () => m
 }), n(388685);
 var r, i = n(255367),
-  a = n(73800),
-  o = n(120356),
-  s = n.n(o),
+  o = n(73800),
+  a = n(120356),
+  s = n.n(a),
   l = n(846519),
   c = n(600164),
   u = n(903276);
@@ -47,10 +47,10 @@ function p(e) {
   let {
     time: t,
     padLargestUnit: n
-  } = e, r = Math.floor(t) % 60, i = Math.floor(t / 60) % 60, a = Math.floor(t / 3600);
-  return 0 === a ? n ? "".concat(_(i), ":").concat(_(r)) : "".concat(i, ":").concat(_(r)) : n ? "".concat(_(a), ":").concat(_(i), ":").concat(_(r)) : "".concat(a, ":").concat(_(i), ":").concat(_(r))
+  } = e, r = Math.floor(t) % 60, i = Math.floor(t / 60) % 60, o = Math.floor(t / 3600);
+  return 0 === o ? n ? "".concat(_(i), ":").concat(_(r)) : "".concat(i, ":").concat(_(r)) : n ? "".concat(_(o), ":").concat(_(i), ":").concat(_(r)) : "".concat(o, ":").concat(_(i), ":").concat(_(r))
 }
-class h extends(r = a.PureComponent) {
+class h extends(r = o.PureComponent) {
   componentDidMount() {
     this.timer.start(500, () => {
       this.setState({
@@ -67,11 +67,11 @@ class h extends(r = a.PureComponent) {
       end: t,
       className: n,
       themed: r,
-      singleLine: a = !1
+      singleLine: o = !1
     } = this.props, {
-      now: o
-    } = this.state, l = (t - e) / 1e3, d = Math.max(Math.min((o - e) / 1e3, l), 0);
-    return a ? (0, i.jsxs)("div", {
+      now: a
+    } = this.state, l = (t - e) / 1e3, d = Math.max(Math.min((a - e) / 1e3, l), 0);
+    return o ? (0, i.jsxs)("div", {
       className: s()(n, {
         [u.themed]: r
       }, u.singleLineContainer),

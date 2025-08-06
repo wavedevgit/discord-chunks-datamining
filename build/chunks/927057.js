@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(255367),
   i = n(73800),
-  a = n(481060),
-  o = n(471445),
+  o = n(481060),
+  a = n(471445),
   s = n(592125),
   l = n(430824),
   c = n(970184),
@@ -22,7 +22,7 @@ function p(e) {
   } = e, p = (0, c.CJ)(), h = null == p || null == (t = p.message) ? void 0 : t.getChannelId(), m = s.Z.getChannel(h), g = l.Z.getGuild(null == m ? void 0 : m.getGuildId()), E = e => (0, u.af)(e, h, n), b = (e, t) => {
     let n = s.Z.getChannel(null == e ? void 0 : e.value);
     if (null == n) return null;
-    let i = n.type === f.d4z.GUILD_CATEGORY ? a.ROc : (0, o.KS)(n);
+    let i = n.type === f.d4z.GUILD_CATEGORY ? o.ROc : (0, a.KS)(n);
     return null != i ? (0, r.jsx)(i, {
       size: "custom",
       color: "currentColor",

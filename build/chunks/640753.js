@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(255367),
   i = n(73800),
-  a = n(442837),
-  o = n(570140),
+  o = n(442837),
+  a = n(570140),
   s = n(607070),
   l = n(222677),
   c = n(695346),
@@ -26,11 +26,11 @@ function m(e) {
     color: E,
     count: b,
     emojiSize: y
-  } = e, O = (0, a.e7)([u.Z], () => u.Z.getEffectForEmojiId(t, n, m)), v = g ? h : p, I = i.useMemo(() => (0, _.Zn)(m, E, t, {
+  } = e, O = (0, o.e7)([u.Z], () => u.Z.getEffectForEmojiId(t, n, m)), v = g ? h : p, I = i.useMemo(() => (0, _.Zn)(m, E, t, {
     key: O,
     messageId: n
-  }), [E, O, m, t, n]), [T, S] = i.useState(!1), A = (0, a.e7)([s.Z], () => s.Z.useReducedMotion), N = c.Yk.useSetting(), C = i.useCallback(() => {
-    o.Z.dispatch({
+  }), [E, O, m, t, n]), [T, S] = i.useState(!1), A = (0, o.e7)([s.Z], () => s.Z.useReducedMotion), N = c.Yk.useSetting(), C = i.useCallback(() => {
+    a.Z.dispatch({
       type: "BURST_REACTION_EFFECT_CLEAR",
       channelId: t,
       messageId: n,

@@ -1,12 +1,12 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  i: () => a
+  i: () => o
 });
 var r = n(39621),
   i = n(388032);
 
-function a(e) {
+function o(e) {
   switch (e) {
     case r.O.FEATURE_LIMITED:
       return i.intl.string(i.t.WCvmra);

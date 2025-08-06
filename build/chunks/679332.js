@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(255367),
   i = n(73800),
-  a = n(481060),
-  o = n(100527),
+  o = n(481060),
+  a = n(100527),
   s = n(906732),
   l = n(299206),
   c = n(785717),
@@ -43,7 +43,7 @@ function p(e) {
     trackUserProfileAction: p
   } = (0, c.KZ)(), {
     analyticsLocations: h
-  } = (0, s.ZP)(o.Z.USER_PROFILE_OVERFLOW_MENU), m = [
+  } = (0, s.ZP)(a.Z.USER_PROFILE_OVERFLOW_MENU), m = [
     [n],
     [(0, l.Z)({
       id: t.id,
@@ -54,18 +54,18 @@ function p(e) {
       })
     })]
   ];
-  return m.every(e => e.every(e => null == e)) ? null : (0, r.jsx)(a.yRy, {
+  return m.every(e => e.every(e => null == e)) ? null : (0, r.jsx)(o.yRy, {
     targetElementRef: f,
     renderPopout: e => {
       let {
         closePopout: t
       } = e;
-      return (0, r.jsx)(a.v2r, {
+      return (0, r.jsx)(o.v2r, {
         navId: "non-user-bot-profile-overflow-menu",
         onSelect: void 0,
         onClose: t,
         "aria-label": d.intl.string(d.t.AXIHpa),
-        children: m.map((e, t) => (0, r.jsx)(a.kSQ, {
+        children: m.map((e, t) => (0, r.jsx)(o.kSQ, {
           children: e.map(e => e)
         }, t))
       })
@@ -73,7 +73,7 @@ function p(e) {
     children: e => (0, r.jsx)(u.oY, _({
       ref: f,
       action: "PRESS_OPTIONS",
-      icon: a.xhG,
+      icon: o.xhG,
       tooltipText: d.intl.string(d.t.UKOtz8)
     }, e))
   })

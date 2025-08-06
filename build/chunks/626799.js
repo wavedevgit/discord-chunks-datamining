@@ -1,12 +1,12 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  $: () => k,
+  $: () => M,
   Z: () => x
 }), n(388685), n(415506);
 var r, i = n(255367),
-  a = n(73800),
-  o = n(688642),
+  o = n(73800),
+  a = n(688642),
   s = n(442837),
   l = n(755721),
   c = n(558381),
@@ -60,12 +60,12 @@ function C(e, t) {
   return n
 }
 
-function w(e, t) {
+function R(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : C(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-class R extends(r = a.Component) {
+class P extends(r = o.Component) {
   get analyticsLocation() {
     let {
       analyticsContext: {
@@ -73,7 +73,7 @@ class R extends(r = a.Component) {
       },
       analyticsSection: t
     } = this.props;
-    return w(N({}, e), {
+    return R(N({}, e), {
       section: null != t ? t : I.jXE.APPLICATION_EMBED,
       object: I.qAy.CARD
     })
@@ -101,16 +101,16 @@ class R extends(r = a.Component) {
       storeListing: t,
       width: n,
       fetchFailed: r,
-      renderFallback: a
+      renderFallback: o
     } = this.props, s = n > p.aL;
-    return null == e || null == t ? r ? a() : (0, i.jsx)(p.OR, {
+    return null == e || null == t ? r ? o() : (0, i.jsx)(p.OR, {
       isHorizontal: s
     }) : e.productLine === I.POd.COLLECTIBLES ? (0, i.jsx)(u.Z, {
       section: I.jXE.APPLICATION_EMBED,
       children: this.renderApplicationTile(e, t)
     }) : (0, i.jsx)(u.Z, {
       section: I.jXE.APPLICATION_EMBED,
-      children: (0, i.jsx)(o.rU, {
+      children: (0, i.jsx)(a.rU, {
         onClick: this.handleLinkClick,
         to: this.getStoreListingLocation(),
         onMouseEnter: this.handleMouseEnter,
@@ -153,8 +153,8 @@ class R extends(r = a.Component) {
       let {
         inLibrary: n,
         width: r,
-        renderCustomTitle: a,
-        renderCustomTagline: o,
+        renderCustomTitle: o,
+        renderCustomTagline: a,
         renderCustomMedia: s
       } = this.props, {
         playing: l,
@@ -168,8 +168,8 @@ class R extends(r = a.Component) {
         inLibrary: n,
         onToggleMute: this.handleToggleMute,
         renderCustomActions: () => this.renderActions(e),
-        renderCustomTitle: a,
-        renderCustomTagline: o,
+        renderCustomTitle: o,
+        renderCustomTagline: a,
         renderCustomMedia: s,
         isHorizontal: u,
         isEmbed: !0
@@ -179,16 +179,16 @@ class R extends(r = a.Component) {
         inLibrary: t,
         application: n,
         skuId: r,
-        libraryApplication: a,
-        renderCustomActions: o
+        libraryApplication: o,
+        renderCustomActions: a
       } = this.props;
-      if (null != o) return (0, i.jsx)("div", {
+      if (null != a) return (0, i.jsx)("div", {
         className: S.tileActions,
-        children: o()
+        children: a()
       });
       if (null == n) return null;
       let s = null != n && n.primarySkuId === r,
-        c = null != a && a.hasFlag(I.eHb.HIDDEN);
+        c = null != o && o.hasFlag(I.eHb.HIDDEN);
       return (0, i.jsxs)("div", {
         className: S.tileActions,
         children: [!s || c ? this.renderViewInStoreButton() : (0, i.jsx)(d.Z, {
@@ -207,10 +207,10 @@ class R extends(r = a.Component) {
     })
   }
 }
-A(R, "defaultProps", {
+A(P, "defaultProps", {
   renderFallback: I.dG4
 });
-let P = [y.Z, b.Z, E.Z, O.Z];
+let w = [y.Z, b.Z, E.Z, O.Z];
 
 function D(e) {
   let {
@@ -225,6 +225,6 @@ function D(e) {
     libraryApplication: null != n ? E.Z.getLibraryApplication(n.applicationId, n.applicationId, !0) : null
   }
 }
-let L = (0, m.Z)((0, h.Z)(R)),
-  x = s.ZP.connectStores(P, D)(L),
-  k = (0, h.Z)(s.ZP.connectStores(P, D)(R))
+let L = (0, m.Z)((0, h.Z)(P)),
+  x = s.ZP.connectStores(w, D)(L),
+  M = (0, h.Z)(s.ZP.connectStores(w, D)(P))

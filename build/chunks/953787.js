@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(255367),
   i = n(73800),
-  a = n(392711),
-  o = n(399606),
+  o = n(392711),
+  a = n(399606),
   s = n(481060),
   l = n(278323),
   c = n(99690),
@@ -29,8 +29,8 @@ function T(e) {
   let {
     activity: t,
     channel: n,
-    userId: a
-  } = e, c = (0, d.IX)(t.application_id).data, f = (0, o.e7)([g.Z], () => null != g.Z.getPendingRequestForUser(a)), [_, p] = i.useState(!1), [m, E] = i.useState(!1), T = (0, o.e7)([h.Z], () => h.Z.getChannelId() !== n.id);
+    userId: o
+  } = e, c = (0, d.IX)(t.application_id).data, f = (0, a.e7)([g.Z], () => null != g.Z.getPendingRequestForUser(o)), [_, p] = i.useState(!1), [m, E] = i.useState(!1), T = (0, a.e7)([h.Z], () => h.Z.getChannelId() !== n.id);
   async function S() {
     E(!0);
     try {
@@ -38,9 +38,9 @@ function T(e) {
         type: b.mFx.STREAM_REQUEST,
         channelId: n.id,
         activity: t,
-        content: "<@".concat(a, ">"),
+        content: "<@".concat(o, ">"),
         location: "request to stream hover",
-        targetUserId: a
+        targetUserId: o
       })
     } finally {
       E(!1)
@@ -90,7 +90,7 @@ function S(e) {
   let {
     userId: t,
     channel: n
-  } = e, l = (0, o.e7)([m.default], () => m.default.getUser(t)), u = (0, o.e7)([p.Z], () => p.Z.getActivities(t, n.getGuildId())), d = (0, o.e7)([p.Z], () => p.Z.getStatus(t, n.getGuildId())), h = (0, _.Z)(n, null != l ? l : null), g = (0, E.Z)(n.id), y = i.useMemo(() => a.uniqBy(u.filter(e => e.type === b.IIU.PLAYING), e => e.application_id), [u]);
+  } = e, l = (0, a.e7)([m.default], () => m.default.getUser(t)), u = (0, a.e7)([p.Z], () => p.Z.getActivities(t, n.getGuildId())), d = (0, a.e7)([p.Z], () => p.Z.getStatus(t, n.getGuildId())), h = (0, _.Z)(n, null != l ? l : null), g = (0, E.Z)(n.id), y = i.useMemo(() => o.uniqBy(u.filter(e => e.type === b.IIU.PLAYING), e => e.application_id), [u]);
   return null != l && g ? (0, r.jsx)(f.Z.Provider, {
     value: n.guild_id,
     children: (0, r.jsxs)("div", {

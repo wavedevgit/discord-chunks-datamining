@@ -2,8 +2,8 @@
 "use strict";
 var r = n(581079),
   i = 55296,
-  a = 56319,
-  o = 56320,
+  o = 56319,
+  a = 56320,
   s = 57343,
   l = /[\uD800-\uDFFF]/;
 
@@ -37,10 +37,10 @@ function _(e, t, n) {
     for (i = r; t < 0 && 0 < i; t++) i -= d(e, i - 1);
     i < 0 && (i = 0)
   }
-  var a = r;
+  var o = r;
   if (n < r)
-    for (a = i; n > 0 && a < r; n--) a += d(e, a);
-  return e.substring(i, a)
+    for (o = i; n > 0 && o < r; n--) o += d(e, o);
+  return e.substring(i, o)
 }
 e.exports = {
   getCodePoints: function(e) {
@@ -54,7 +54,7 @@ e.exports = {
     if (0 <= t && t < e.length || r(!1), t + 1 === e.length) return !1;
     var n = e.charCodeAt(t),
       l = e.charCodeAt(t + 1);
-    return i <= n && n <= a && o <= l && l <= s
+    return i <= n && n <= o && a <= l && l <= s
   },
   strlen: f,
   substring: function(e, t, n) {

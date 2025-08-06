@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var i = n(481060),
-  a = n(194082),
-  o = n(739566),
+  o = n(194082),
+  a = n(739566),
   s = n(834129),
   l = n(388032);
 let c = 20;
@@ -21,7 +21,7 @@ function u(e) {
     onJoinStream: f,
     usernameHook: _,
     compact: p
-  } = e, h = (0, o.ZP)(n), m = null == (t = n.call) ? void 0 : t.duration, g = _(h), E = l.intl.format(l.t.FKXvaG, {
+  } = e, h = (0, a.ZP)(n), m = null == (t = n.call) ? void 0 : t.duration, g = _(h), E = l.intl.format(l.t.FKXvaG, {
     username: h.nick,
     activityName: null != d ? d.name : "unknown",
     onJoinStream: f,
@@ -38,8 +38,8 @@ function u(e) {
       color: "currentColor",
       width: c,
       height: c
-    }) : (0, r.jsx)(a.ZP, {
-      size: a.ZP.Sizes.SMALL
+    }) : (0, r.jsx)(o.ZP, {
+      size: o.ZP.Sizes.SMALL
     }),
     timestamp: n.timestamp,
     compact: p,

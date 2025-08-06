@@ -1,12 +1,12 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  h: () => k
+  h: () => M
 });
 var r = n(255367),
   i = n(73800),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(704215),
   l = n(692547),
   c = n(755721),
@@ -38,7 +38,7 @@ function C(e, t, n) {
   }) : e[t] = n, e
 }
 
-function w(e) {
+function R(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -51,7 +51,7 @@ function w(e) {
   return e
 }
 
-function R(e, t) {
+function P(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -62,8 +62,8 @@ function R(e, t) {
   return n
 }
 
-function P(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : R(Object(t)).forEach(function(n) {
+function w(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : P(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -72,8 +72,8 @@ function D(e, t) {
   if (null == e) return {};
   var n, r, i = L(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -81,50 +81,50 @@ function D(e, t) {
 function L(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let x = 250;
 
-function k(e) {
+function M(e) {
   let {
     channel: t,
     guild: n,
     width: i,
-    inPopout: a,
-    handleClose: o,
+    inPopout: o,
+    handleClose: a,
     userParticipantCount: s
   } = e;
-  return i < x ? (0, r.jsx)(j, {
+  return i < x ? (0, r.jsx)(k, {
     channel: t,
     guild: n,
     width: i,
-    inPopout: a,
-    handleClose: o,
+    inPopout: o,
+    handleClose: a,
     userParticipantCount: s
   }) : s > 1 ? (0, r.jsx)(U, {
     channel: t,
     guild: n,
     width: i,
-    inPopout: a,
-    handleClose: o,
+    inPopout: o,
+    handleClose: a,
     userParticipantCount: s
-  }) : (0, r.jsx)(M, {
+  }) : (0, r.jsx)(j, {
     channel: t,
     guild: n,
     width: i,
-    inPopout: a
+    inPopout: o
   })
 }
 
-function j(e) {
+function k(e) {
   let {
     channel: t,
     inPopout: n,
     handleClose: i
   } = e, {
-    analyticsLocations: a,
+    analyticsLocations: o,
     newestAnalyticsLocation: s
   } = (0, m.ZP)(h.Z.VC_TILE_ACTIVITY_SHELF_BUTTON), {
     enabled: c
@@ -145,7 +145,7 @@ function j(e) {
     })
   };
   return (0, r.jsx)(m.Gt, {
-    value: a,
+    value: o,
     children: (0, r.jsxs)(I.Z, {
       className: A.root,
       children: [(0, r.jsx)(u.ua7, {
@@ -154,7 +154,7 @@ function j(e) {
           var {
             onClick: t
           } = e, n = D(e, ["onClick"]);
-          return (0, r.jsx)(u.P3F, P(w({}, n), {
+          return (0, r.jsx)(u.P3F, w(R({}, n), {
             className: A.clickableTile,
             onClick: () => {
               null == t || t(), _()
@@ -174,7 +174,7 @@ function j(e) {
         theme: T.BRd.DARK,
         children: e => (0, r.jsx)(u.P3F, {
           onClick: i,
-          className: o()(e, A.shelfButtonCloseButton),
+          className: a()(e, A.shelfButtonCloseButton),
           children: (0, r.jsx)(u.k$p, {
             size: "md",
             color: "currentColor",
@@ -187,10 +187,10 @@ function j(e) {
   })
 }
 
-function M(e) {
+function j(e) {
   let {
     channel: t,
-    guild: a,
+    guild: o,
     inPopout: s
   } = e;
   i.useEffect(() => {
@@ -219,8 +219,8 @@ function M(e) {
       let {
         default: e
       } = await Promise.all([n.e("7654"), n.e("49049"), n.e("29328")]).then(n.bind(n, 560114));
-      return n => (0, r.jsx)(e, P(w({}, n), {
-        guild: a,
+      return n => (0, r.jsx)(e, w(R({}, n), {
+        guild: o,
         channel: t,
         source: T.t4x.ACTIVITY_ENTRY_POINT_TILE
       }))
@@ -249,7 +249,7 @@ function M(e) {
       disableAdaptiveTheme: !0,
       theme: T.BRd.MIDNIGHT,
       children: e => (0, r.jsxs)(I.Z, {
-        className: o()(A.root, A.singleUserRoot, e),
+        className: a()(A.root, A.singleUserRoot, e),
         children: [(0, r.jsx)("img", {
           src: N,
           className: A.art,
@@ -285,7 +285,7 @@ function U(e) {
   let {
     channel: t,
     guild: n,
-    handleClose: a,
+    handleClose: o,
     width: l,
     userParticipantCount: c
   } = e;
@@ -312,7 +312,7 @@ function U(e) {
       tile_type: "activity suggestion",
       close_type: "temporary",
       n_participants: c
-    }), a()
+    }), o()
   }
   let {
     analyticsLocations: N
@@ -329,7 +329,7 @@ function U(e) {
         variant: l > 550 ? "text-md/semibold" : "text-sm/semibold",
         children: S.intl.string(S.t["7BKMcH"])
       }) : null, (0, r.jsx)("div", {
-        className: o()(A.activitiesContainer, {
+        className: a()(A.activitiesContainer, {
           [A.activitiesContainerSmol]: l <= 300
         }),
         children: f.map(e => (0, r.jsx)(p.Y, {

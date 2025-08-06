@@ -5,8 +5,8 @@ n.d(t, {
 }), n(539854), n(388685);
 var r = n(46973),
   i = n(846027),
-  a = n(147913),
-  o = n(710845),
+  o = n(147913),
+  a = n(710845),
   s = n(131951),
   l = n(19780),
   c = n(358085),
@@ -22,7 +22,7 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 let _ = "c6_BVC",
-  p = new o.Z("KrispBVCDeviceManager"),
+  p = new a.Z("KrispBVCDeviceManager"),
   h = [],
   m = [],
   g = {
@@ -39,17 +39,17 @@ function E() {
     n = s.Z.getInputDevices()[t],
     r = null != l.Z.getChannelId();
   if (null == n) return;
-  let a = null == (e = l.Z.getRTCConnection()) ? void 0 : e.getInputDeviceSampleRate(),
-    o = u.F.getCurrentConfig({
+  let o = null == (e = l.Z.getRTCConnection()) ? void 0 : e.getInputDeviceSampleRate(),
+    a = u.F.getCurrentConfig({
       location: "KrispBVCDeviceManager"
     }, {
       autoTrackExposure: !1
     }).allowBVC;
-  if (null != a && a < 16e3) {
+  if (null != o && o < 16e3) {
     s.Z.getKrispModelOverride() && (p.info("BVC model doesn't support <16kHz sample rate, disabling BVC."), i.Z.setKrispModelOverride(""));
     return
   }
-  if (!o) return void i.Z.setKrispModelOverride("");
+  if (!a) return void i.Z.setKrispModelOverride("");
   let d = n.name.toLowerCase();
   if (m.some(e => d.includes(e))) {
     s.Z.getKrispModelOverride() && (p.info("BVC not compatible with device, disabling BVC."), i.Z.setKrispModelOverride(""));
@@ -63,7 +63,7 @@ function E() {
   }
   s.Z.getKrispModelOverride() && (p.info("Unknown BVC compatibility with device, disabling BVC."), i.Z.setKrispModelOverride(""))
 }
-class b extends a.Z {
+class b extends o.Z {
   constructor(...e) {
     super(...e), f(this, "actions", {
       AUDIO_SET_INPUT_DEVICE: E,

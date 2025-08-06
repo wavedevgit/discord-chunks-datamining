@@ -5,14 +5,14 @@ n.d(t, {
 });
 var r = n(544891),
   i = n(780384),
-  a = n(668781),
-  o = n(881052),
+  o = n(668781),
+  a = n(881052),
   s = n(981631),
   l = n(388032);
 
 function c(e) {
-  let t = new o.Hx(e).getAnyErrorMessage();
-  a.Z.show({
+  let t = new a.Hx(e).getAnyErrorMessage();
+  o.Z.show({
     title: l.intl.string(l.t["328j/P"]),
     body: null != t ? t : l.intl.string(l.t.fEptJC)
   })
@@ -23,12 +23,12 @@ function u(e) {
     userId: t,
     applicationId: n,
     onSuccess: i,
-    type: a
+    type: o
   } = e;
   return r.tn.put({
     url: s.ANM.USER_GAME_RELATIONSHIP(t, n),
     body: {
-      type: a
+      type: o
     },
     oldFormErrors: !0,
     rejectWithError: !1

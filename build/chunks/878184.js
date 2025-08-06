@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var i = n(481060),
-  a = n(686546),
-  o = n(305347),
+  o = n(686546),
+  a = n(305347),
   s = n(220250),
   l = n(388032),
   c = n(541195);
@@ -26,13 +26,13 @@ function u(e) {
       }
     }), (0, r.jsx)("div", {
       className: c.avatarContainer,
-      children: (0, r.jsx)(a.ZP, {
-        mask: a.QS.CLAN_ICON,
+      children: (0, r.jsx)(o.ZP, {
+        mask: o.QS.CLAN_ICON,
         width: 70,
         height: 70,
         children: (0, r.jsx)("div", {
           className: c.avatarWrapper,
-          children: (0, r.jsx)(o.R$, {
+          children: (0, r.jsx)(a.R$, {
             guildName: f,
             iconSize: 64
           })

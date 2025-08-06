@@ -4,8 +4,8 @@ n.d(t, {
   Z: () => F
 }), n(388685), n(539854);
 var r, i = n(392711),
-  a = n.n(i),
-  o = n(314794),
+  o = n.n(i),
+  a = n(314794),
   s = n(442837),
   l = n(570140),
   c = n(959546),
@@ -46,7 +46,7 @@ function C(e) {
   g[e.id] = c.Z.createFromServer(e)
 }
 
-function w(e) {
+function R(e) {
   delete m[e.id];
   let t = b[e.application_id];
   null != t && t.delete(e.id);
@@ -57,14 +57,14 @@ function w(e) {
   }
 }
 
-function R(e) {
+function P(e) {
   let {
     applicationId: t
   } = e;
   I.add(t)
 }
 
-function P(e) {
+function w(e) {
   let {
     applicationId: t,
     entitlements: n
@@ -85,7 +85,7 @@ function x() {
   y = !0
 }
 
-function k(e) {
+function M(e) {
   let {
     entitlements: t,
     excludeEnded: n
@@ -93,11 +93,11 @@ function k(e) {
   for (let e of (O = !0, y = !1, v = !n, t)) N(e)
 }
 
-function j() {
+function k() {
   O = !1, y = !1, v = !1
 }
 
-function M(e) {
+function j(e) {
   let {
     entitlements: t
   } = e;
@@ -118,7 +118,7 @@ function G(e) {
 }
 
 function B(e) {
-  return w(e.entitlement)
+  return R(e.entitlement)
 }
 class Z extends(r = s.yh) {
   initialize() {
@@ -128,7 +128,7 @@ class Z extends(r = s.yh) {
     return m[e]
   }
   getGiftable() {
-    return a().values(g)
+    return o().values(g)
   }
   getForApplication(e) {
     let t = b[e];
@@ -181,8 +181,8 @@ class Z extends(r = s.yh) {
         if (null != n && n.isValid(e, f.Z, r)) return !0
       }
     if (T.has(n)) return !1;
-    let a = null != r ? u.Z.getLibraryApplication(n, r) : u.Z.getActiveLibraryApplication(n);
-    return !!(null != a && a.sku.id === t && (0, d.Je)(a)) || null
+    let o = null != r ? u.Z.getLibraryApplication(n, r) : u.Z.getActiveLibraryApplication(n);
+    return !!(null != o && o.sku.id === t && (0, d.Je)(o)) || null
   }
   hasFetchedForApplicationIds(e) {
     return e.every(e => T.has(e))
@@ -205,9 +205,9 @@ class Z extends(r = s.yh) {
       excludeReverseTrial: n = !1
     } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}, r = [], i = new Date;
     return null == (e = this.getForApplication(p.CL)) || e.forEach(e => {
-      let a = null != e.endsAt && e.endsAt < i,
-        o = e.sourceType === _.kNB.REVERSE_TRIAL && n;
-      e.type !== _.qc2.FRACTIONAL_REDEMPTION || a && !t || o || r.push(e)
+      let o = null != e.endsAt && e.endsAt < i,
+        a = e.sourceType === _.kNB.REVERSE_TRIAL && n;
+      e.type !== _.qc2.FRACTIONAL_REDEMPTION || o && !t || a || r.push(e)
     }), r
   }
   isFractionalPremiumActive() {
@@ -223,24 +223,24 @@ class Z extends(r = s.yh) {
     var e;
     let t = [];
     return null == (e = this.getForApplication(p.CL)) || e.forEach(e => {
-      o.k.ACTIVE_FRACTIONAL_PREMIUM_SKUS.has(e.skuId) && !e.consumed && t.push(e)
+      a.k.ACTIVE_FRACTIONAL_PREMIUM_SKUS.has(e.skuId) && !e.consumed && t.push(e)
     }), t
   }
 }
 h(Z, "displayName", "EntitlementStore");
 let F = new Z(l.Z, {
-  ENTITLEMENT_FETCH_APPLICATION_START: R,
-  ENTITLEMENT_FETCH_APPLICATION_SUCCESS: P,
+  ENTITLEMENT_FETCH_APPLICATION_START: P,
+  ENTITLEMENT_FETCH_APPLICATION_SUCCESS: w,
   ENTITLEMENT_FETCH_APPLICATION_FAIL: L,
   ENTITLEMENTS_GIFTABLE_FETCH_SUCCESS: D,
-  SKU_PURCHASE_SUCCESS: M,
-  VIRTUAL_CURRENCY_REDEEM_SUCCESS: M,
+  SKU_PURCHASE_SUCCESS: j,
+  VIRTUAL_CURRENCY_REDEEM_SUCCESS: j,
   LIBRARY_FETCH_SUCCESS: U,
   ENTITLEMENT_CREATE: G,
   ENTITLEMENT_UPDATE: G,
   ENTITLEMENT_DELETE: B,
   LOGOUT: A,
   ENTITLEMENTS_FETCH_FOR_USER_START: x,
-  ENTITLEMENTS_FETCH_FOR_USER_SUCCESS: k,
-  ENTITLEMENTS_FETCH_FOR_USER_FAIL: j
+  ENTITLEMENTS_FETCH_FOR_USER_SUCCESS: M,
+  ENTITLEMENTS_FETCH_FOR_USER_FAIL: k
 })

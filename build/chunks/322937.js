@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(73800),
   i = n(774078),
-  a = n(202107);
-let o = 1e3;
+  o = n(202107);
+let a = 1e3;
 
 function s(e) {
   let {
@@ -15,8 +15,8 @@ function s(e) {
     guildId: s
   } = null != e ? e : {}, l = (0, i.Z)(null != t ? Date.parse(t) : Date.now()), c = l.seconds, u = (0, r.useRef)(null);
   return (0, r.useEffect)(() => null == e || null == s || null == n ? void clearTimeout(u.current) : (c <= 0 && null == u.current && (u.current = setTimeout(() => {
-    a.Z.clearGuildMemberTimeout(s, n)
-  }, o)), () => {
+    o.Z.clearGuildMemberTimeout(s, n)
+  }, a)), () => {
     null != u.current && (clearTimeout(u.current), u.current = null)
   }), [s, n, c, t, e]), l
 }

@@ -5,7 +5,7 @@ n.d(t, {
 });
 var r = n(987170),
   i = n(722733);
-let a = (0, r.Z)({
+let o = (0, r.Z)({
     id: "2025-07_gif_picker_delay",
     kind: "user",
     label: "GIF Picker Delay",
@@ -64,7 +64,7 @@ let a = (0, r.Z)({
       }
     }]
   }),
-  o = (0, i.Z)({
+  a = (0, i.Z)({
     name: "2025-07-gif-picker-delay",
     kind: "user",
     defaultConfig: {
@@ -110,13 +110,13 @@ let a = (0, r.Z)({
       enabled: t,
       delayMs: n,
       inExperiment: r
-    } = a.getCurrentConfig({
+    } = o.getCurrentConfig({
       location: e
     }), {
       enabled: i,
       delayMs: s,
       inExperiment: l
-    } = o.getConfig({
+    } = a.getConfig({
       location: e
     });
     return r ? {

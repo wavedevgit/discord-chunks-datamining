@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(255367),
   i = n(73800),
-  a = n(392711),
-  o = n(66546),
+  o = n(392711),
+  a = n(66546),
   s = n(442837),
   l = n(481060),
   c = n(709706),
@@ -28,17 +28,17 @@ function p() {
       } = e;
       return (null != t ? t : 0) > 0
     }),
-    o = (0, a.sumBy)(n, e => {
+    a = (0, o.sumBy)(n, e => {
       var t;
       return null != (t = null == e ? void 0 : e.downloadedBytes) ? t : 0
     }),
-    l = (0, a.sumBy)(n, e => {
+    l = (0, o.sumBy)(n, e => {
       var t;
       return null != (t = null == e ? void 0 : e.totalBytes) ? t : 0
     });
   return {
     hasActiveDownloads: r,
-    progress: 0 === l ? 0 : Math.floor(o / l * 100)
+    progress: 0 === l ? 0 : Math.floor(a / l * 100)
   }
 }
 
@@ -48,8 +48,8 @@ function h() {
     progress: t
   } = p(), {
     activeVoice: n
-  } = (0, u.o)(), i = null != n, a = e ? i ? "voice-on" : "voice-off" : null;
-  return (0, l.Yzy)(a, {
+  } = (0, u.o)(), i = null != n, o = e ? i ? "voice-on" : "voice-off" : null;
+  return (0, l.Yzy)(o, {
     from: {
       opacity: 0,
       translateY: 20
@@ -62,7 +62,7 @@ function h() {
       opacity: 0,
       translateY: 80
     }
-  }, "respect-motion-settings")((e, n) => null != n ? (0, r.jsx)(o.animated.div, {
+  }, "respect-motion-settings")((e, n) => null != n ? (0, r.jsx)(a.animated.div, {
     style: e,
     className: _.floaterWrapper,
     children: (0, r.jsxs)("div", {

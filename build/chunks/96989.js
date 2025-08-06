@@ -6,13 +6,13 @@ n.d(t, {
 let r = "_errors";
 
 function i(e) {
-  return a(e, void 0)
+  return o(e, void 0)
 }
 
-function a(e, t) {
+function o(e, t) {
   let n = e[r];
   if (null != n && Array.isArray(n)) return n[0];
   for (let [n, i] of Object.entries(e))
-    if (n !== r && null != i && "object" == typeof i) return a(i, null != t ? t : n);
+    if (n !== r && null != i && "object" == typeof i) return o(i, null != t ? t : n);
   return null
 }

@@ -1,6 +1,6 @@
 /** Chunk was on 49152 **/
 n.d(t, {
-  Z: () => y
+  Z: () => x
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -9,47 +9,47 @@ var r = n(255367),
   s = n(481060),
   o = n(493773),
   c = n(378298),
-  d = n(513646),
-  u = n(276618),
+  u = n(513646),
+  d = n(276618),
   h = n(367408),
   p = n(473092),
   f = n(819640),
   g = n(665149),
   m = n(134612),
   b = n(388032),
-  _ = n(426195);
-let y = i.memo(function(e) {
+  y = n(426195);
+let x = i.memo(function(e) {
   let {
     channel: t
-  } = e, y = (0, d.h)(t.id), j = (0, u.o)(t.id), O = (0, h.M)(t.id), x = (0, a.f9)(), v = (0, l.e7)([f.Z], () => f.Z.hasLayers()), C = i.useCallback(() => j ? b.intl.string(b.t["16QyDg"]) : null != O ? b.intl.string(b.t.kCN9i4) : null, [j, O]), E = i.useMemo(() => (j || null != O) && !x && !v, [j, O, x, v]), [Z, I] = i.useState(C());
+  } = e, x = (0, u.h)(t.id), j = (0, d.o)(t.id), _ = (0, h.M)(t.id), O = (0, a.f9)(), v = (0, l.e7)([f.Z], () => f.Z.hasLayers()), C = i.useCallback(() => j ? b.intl.string(b.t["16QyDg"]) : null != _ ? b.intl.string(b.t.kCN9i4) : null, [j, _]), E = i.useMemo(() => (j || null != _) && !O && !v, [j, _, O, v]), [S, Z] = i.useState(C());
   i.useEffect(() => {
-    null != O && null != y && (s.uvj.announce(b.intl.string(b.t.acsXuL)), setTimeout(() => {
-      (0, c.T)(t.id, [O.id])
+    null != _ && null != x && (s.uvj.announce(b.intl.string(b.t.acsXuL)), setTimeout(() => {
+      (0, c.T)(t.id, [_.id])
     }, 5e3), (0, p.KQ)({
       channelId: t.id,
       senderId: t.getRecipientId(),
-      warningId: O.id,
-      warningType: O.type,
-      isNudgeWarning: null != O,
+      warningId: _.id,
+      warningType: _.type,
+      isNudgeWarning: null != _,
       viewName: p.pb.SAFETY_TOOLS_NUDGE_TOOLTIP
     })), j && (s.uvj.announce(b.intl.string(b.t["1dxCqK"])), setTimeout(() => {
       (0, c.Ot)(t.id)
     }, 5e3))
-  }, [t, O, y, j]), (0, o.ZP)(() => {
-    null != y && (0, p.KQ)({
+  }, [t, _, x, j]), (0, o.ZP)(() => {
+    null != x && (0, p.KQ)({
       channelId: t.id,
       senderId: t.getRecipientId(),
-      warningId: y.id,
-      warningType: y.type,
-      isNudgeWarning: null != O,
+      warningId: x.id,
+      warningType: x.type,
+      isNudgeWarning: null != _,
       viewName: p.pb.SAFETY_TOOLS_BUTTON
     })
   }), i.useEffect(() => {
     let e = C();
-    null != e && I(e)
-  }, [j, O, C]);
-  let S = i.useCallback(() => {
-    null != O && (0, c.T)(t.id, [O.id]), null != y && ((0, s.ZDy)(async () => {
+    null != e && Z(e)
+  }, [j, _, C]);
+  let I = i.useCallback(() => {
+    null != _ && (0, c.T)(t.id, [_.id]), null != x && ((0, s.ZDy)(async () => {
       let {
         default: e
       } = await Promise.all([n.e("49508"), n.e("9738"), n.e("71745")]).then(n.bind(n, 611446));
@@ -61,8 +61,8 @@ let y = i.memo(function(e) {
         return (0, r.jsx)(e, {
           otherUserId: t.getRecipientId(),
           channelId: t.id,
-          warningId: y.id,
-          warningType: y.type,
+          warningId: x.id,
+          warningType: x.type,
           onClose: i,
           transitionState: l
         })
@@ -72,24 +72,24 @@ let y = i.memo(function(e) {
     }), (0, p.qc)({
       channelId: t.id,
       senderId: t.getRecipientId(),
-      warningId: y.id,
-      warningType: y.type,
+      warningId: x.id,
+      warningType: x.type,
       cta: p.NM.USER_SAFETY_TOOLS_BUTTON_CLICK,
-      isNudgeWarning: null != O
+      isNudgeWarning: null != _
     }))
-  }, [O, y, t]);
-  return null == y ? null : (0, r.jsx)(s.ua7, {
+  }, [_, x, t]);
+  return null == x ? null : (0, r.jsx)(s.ua7, {
     forceOpen: E,
-    text: Z,
+    text: S,
     color: s.FGA.BRAND,
     position: "bottom",
-    tooltipClassName: _.tooltip,
-    tooltipContentClassName: _.tooltipContent,
+    tooltipClassName: y.tooltip,
+    tooltipContentClassName: y.tooltipContent,
     children: () => (0, r.jsx)(g.ZP.Icon, {
       icon: s.b7C,
-      onClick: S,
+      onClick: I,
       tooltip: b.intl.string(b.t.rpc2qq),
-      tooltipDisabled: null != O
+      tooltipDisabled: null != _
     })
   })
 })

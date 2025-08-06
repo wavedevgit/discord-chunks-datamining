@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var i = n(442837),
-  a = n(481060),
-  o = n(740492),
+  o = n(481060),
+  a = n(740492),
   s = n(984014),
   l = n(295510),
   c = n(394059),
@@ -53,14 +53,14 @@ function p(e, t) {
 }
 
 function h(e, t) {
-  let [n, d, _] = (0, s.Z)(e, t), h = (0, i.e7)([o.ZP], () => o.ZP.disableHideSelfStreamAndVideoConfirmationAlert), m = () => {
+  let [n, d, _] = (0, s.Z)(e, t), h = (0, i.e7)([a.ZP], () => a.ZP.disableHideSelfStreamAndVideoConfirmationAlert), m = () => {
     if (h || d) return _(!d);
-    (0, a.h7j)(e => (0, r.jsx)(l.Z, p(f({}, e), {
+    (0, o.h7j)(e => (0, r.jsx)(l.Z, p(f({}, e), {
       type: c.K.STREAM,
       onConfirm: () => _(!d)
     })))
   };
-  return n ? (0, r.jsx)(a.S89, {
+  return n ? (0, r.jsx)(o.S89, {
     id: "self-stream-hide",
     label: u.intl.string(u.t.aol7iY),
     checked: !d,

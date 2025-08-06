@@ -4,19 +4,19 @@ n.d(t, {
   $p: () => T,
   FQ: () => I,
   Il: () => S,
-  Jf: () => w,
+  Jf: () => R,
   SA: () => L,
   Um: () => N,
-  eu: () => R,
+  eu: () => P,
   hW: () => x,
   lY: () => C,
   pk: () => A,
-  qB: () => P
+  qB: () => w
 }), n(953529), n(539854);
 var r = n(392711),
   i = n.n(r),
-  a = n(544891),
-  o = n(570140),
+  o = n(544891),
+  a = n(570140),
   s = n(668781),
   l = n(38618),
   c = n(706454),
@@ -75,7 +75,7 @@ let I = async (e, t) => {
     url: m.ANM.STICKER_PACK(e),
     rejectWithError: !1
   });
-  return o.Z.dispatch({
+  return a.Z.dispatch({
     type: "STICKER_PACK_FETCH_SUCCESS",
     packId: e,
     pack: n,
@@ -86,8 +86,8 @@ let I = async (e, t) => {
     locale: e = c.default.locale
   } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
   if (h.Z.isFetchingStickerPacks || h.Z.hasLoadedStickerPacks) return;
-  o.Z.wait(() => {
-    o.Z.dispatch({
+  a.Z.wait(() => {
+    a.Z.dispatch({
       type: "STICKER_PACKS_FETCH_START"
     })
   });
@@ -95,36 +95,36 @@ let I = async (e, t) => {
     body: {
       sticker_packs: t
     }
-  } = await a.tn.get({
+  } = await o.tn.get({
     url: m.ANM.STICKER_PACKS,
     query: {
       locale: e
     },
     rejectWithError: !1
   });
-  o.Z.dispatch({
+  a.Z.dispatch({
     type: "STICKER_PACKS_FETCH_SUCCESS",
     packs: t
   })
 }, S = async e => {
   let {
     body: t
-  } = await a.tn.get({
+  } = await o.tn.get({
     url: m.ANM.STICKER(e),
     rejectWithError: !1
   });
-  o.Z.dispatch({
+  a.Z.dispatch({
     type: "STICKER_FETCH_SUCCESS",
     sticker: t
   })
 }, A = async e => {
   let {
     body: t
-  } = await a.tn.get({
+  } = await o.tn.get({
     url: m.ANM.GUILD_STICKER_PACKS(e),
     rejectWithError: !1
   });
-  o.Z.dispatch({
+  a.Z.dispatch({
     type: "GUILD_STICKERS_FETCH_SUCCESS",
     guildId: e,
     stickers: t.map(e => null != e.user ? v(y({}, e), {
@@ -132,14 +132,14 @@ let I = async (e, t) => {
     }) : e)
   })
 }, N = async e => {
-  await a.tn.del({
+  await o.tn.del({
     url: m.ANM.GUILD_STICKER(e.guild_id, e.id),
     rejectWithError: !1
   })
 }, C = async e => {
   let {
     guildId: t
-  } = e, n = await a.tn.post({
+  } = e, n = await o.tn.post({
     url: m.ANM.GUILD_STICKER_PACKS(t),
     body: "web" === e.platform ? e.body : void 0,
     fields: "mobile" === e.platform ? [{
@@ -162,21 +162,21 @@ let I = async (e, t) => {
     }] : void 0,
     rejectWithError: !1
   });
-  return o.Z.dispatch({
+  return a.Z.dispatch({
     type: "GUILD_STICKERS_CREATE_SUCCESS",
     guildId: t,
     sticker: v(y({}, n.body), {
       user: _.default.getCurrentUser()
     })
   }), n.body
-}, w = async (e, t, n) => (await a.tn.patch({
+}, R = async (e, t, n) => (await o.tn.patch({
   url: m.ANM.GUILD_STICKER(e, t),
   body: n,
   rejectWithError: !1
 })).body;
 
-function R(e, t, n) {
-  o.Z.dispatch({
+function P(e, t, n) {
+  a.Z.dispatch({
     type: "ADD_STICKER_PREVIEW",
     channelId: e,
     sticker: t,
@@ -184,8 +184,8 @@ function R(e, t, n) {
   })
 }
 
-function P(e, t) {
-  o.Z.dispatch({
+function w(e, t) {
+  a.Z.dispatch({
     type: "CLEAR_STICKER_PREVIEW",
     channelId: e,
     draftType: t

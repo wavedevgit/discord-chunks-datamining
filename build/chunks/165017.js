@@ -5,19 +5,19 @@ n.d(t, {
 }), n(415506);
 var r = n(442837),
   i = n(592125),
-  a = n(430824),
-  o = n(914010),
+  o = n(430824),
+  a = n(914010),
   s = n(251625),
   l = n(945577),
   c = n(981631);
 
-function u(e, t, n, r, i, a) {
+function u(e, t, n, r, i, o) {
   return i ? {
     type: c.aib.FAVORITES
   } : null != e && null != n ? {
     type: c.aib.GUILD,
     guildId: e
-  } : null == t || null == r ? null : r.isPrivate() && a ? {
+  } : null == t || null == r ? null : r.isPrivate() && o ? {
     type: c.aib.DMS
   } : {
     type: c.aib.CHANNEL,
@@ -33,9 +33,9 @@ function f(e) {
   } = e, s = (0, l.U)({
     location: "useDesktopSearchContext"
   });
-  return (0, r.e7)([a.Z, i.Z, o.Z], () => {
-    let e = a.Z.getGuild(t),
+  return (0, r.e7)([o.Z, i.Z, a.Z], () => {
+    let e = o.Z.getGuild(t),
       r = i.Z.getChannel(n);
-    return d(t, n, e, r, o.Z.getGuildId() === c.I_8, s)
+    return d(t, n, e, r, a.Z.getGuildId() === c.I_8, s)
   })
 }

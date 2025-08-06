@@ -2,25 +2,25 @@
 "use strict";
 n.d(t, {
   $Z: () => C,
-  B8: () => R,
+  B8: () => P,
   F4: () => A,
   HH: () => x,
-  Hd: () => w,
+  Hd: () => R,
   Xl: () => D,
-  dF: () => M,
+  dF: () => j,
   eM: () => U,
   fB: () => N,
-  gK: () => k,
+  gK: () => M,
   mG: () => L,
-  qe: () => j,
-  rY: () => P,
+  qe: () => k,
+  rY: () => w,
   ts: () => G,
   zW: () => S
 }), n(255367), n(73800), n(481060);
 var r = n(332148),
   i = n(904245),
-  a = n(257559),
-  o = n(143740),
+  o = n(257559),
+  a = n(143740),
   s = n(912332),
   l = n(434404);
 n(726521);
@@ -76,24 +76,24 @@ function N(e, t) {
 }
 
 function C(e, t, n) {
-  t.state === v.yb.SEND_FAILED || n.shiftKey ? i.Z.deleteMessage(e.id, t.id, t.state === v.yb.SEND_FAILED) : a.Z.confirmDelete(e, t)
-}
-
-function w(e, t) {
-  i.Z.startEditMessageRecord(e.id, t)
+  t.state === v.yb.SEND_FAILED || n.shiftKey ? i.Z.deleteMessage(e.id, t.id, t.state === v.yb.SEND_FAILED) : o.Z.confirmDelete(e, t)
 }
 
 function R(e, t) {
+  i.Z.startEditMessageRecord(e.id, t)
+}
+
+function P(e, t) {
   (0, y.Z)(e.id, t.id)
 }
 
-function P(e, t, n) {
-  if (!1 === t.pinned) return void(n.shiftKey ? r.Z.pinMessage(e, t.id) : a.Z.confirmPin(e, t));
-  n.shiftKey ? r.Z.unpinMessage(e, t.id) : a.Z.confirmUnpin(e, t)
+function w(e, t, n) {
+  if (!1 === t.pinned) return void(n.shiftKey ? r.Z.pinMessage(e, t.id) : o.Z.confirmPin(e, t));
+  n.shiftKey ? r.Z.unpinMessage(e, t.id) : o.Z.confirmUnpin(e, t)
 }
 
 function D(e, t) {
-  (0, o.Z)(e.id, t.id)
+  (0, a.Z)(e.id, t.id)
 }
 
 function L(e, t) {
@@ -113,16 +113,16 @@ function x(e, t, n) {
   })
 }
 
-function k(e, t) {
+function M(e, t) {
   (0, d.R6)(e, t, "Message")
 }
 
-function j(e, t) {
+function k(e, t) {
   let n = _.Z.getChannel(E.default.castMessageIdAsChannelId(t.id));
   null != n && (0, d.ok)(n)
 }
 
-function M(e, t) {
+function j(e, t) {
   (0, u.z)({
     channelId: e.id,
     messageId: t.id

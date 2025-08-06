@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(255367),
   i = n(73800),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(913527),
   l = n.n(s),
   c = n(481060),
@@ -25,11 +25,11 @@ let O = e => {
   let {
     reportingUserId: t,
     guildId: n,
-    compact: a,
+    compact: o,
     channel: s,
     messageId: O,
     reportedTimestamp: v
-  } = e, I = p.default.getUser(t), T = i.useMemo(() => a ? (0, f.Z)((0, h.vc)(l()(), "LT")) : null, [a]), S = (0, _.l)({
+  } = e, I = p.default.getUser(t), T = i.useMemo(() => o ? (0, f.Z)((0, h.vc)(l()(), "LT")) : null, [o]), S = (0, _.l)({
     user: I,
     channelId: s.id,
     guildId: n,
@@ -39,7 +39,7 @@ let O = e => {
     onUserClick: S
   }) : g.intl.string(m.default.xpRjfX);
   return (0, r.jsxs)("div", {
-    className: o()(b.messageSpine, b.repliedMessage, T),
+    className: a()(b.messageSpine, b.repliedMessage, T),
     children: [(0, r.jsx)(c.qEK, {
       src: A,
       size: c.EFr.SIZE_16,

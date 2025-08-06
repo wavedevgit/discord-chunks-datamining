@@ -8,8 +8,8 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var i = n(347715),
-  a = n(481060),
-  o = n(668781),
+  o = n(481060),
+  a = n(668781),
   s = n(493683),
   l = n(100527),
   c = n(346486),
@@ -37,7 +37,7 @@ function _(e) {
   }
   return e
 }
-let p = (e, t) => (0, a.ZDy)(async () => {
+let p = (e, t) => (0, o.ZDy)(async () => {
     let {
       default: i
     } = await Promise.all([n.e("91689"), n.e("89289"), n.e("3974")]).then(n.bind(n, 28130));
@@ -61,7 +61,7 @@ let p = (e, t) => (0, a.ZDy)(async () => {
     var t;
     if ((null == e || null == (t = e.body) ? void 0 : t.retry_after) != null) {
       let t = (0, i.Z)(new Date, e.body.retry_after);
-      o.Z.show({
+      a.Z.show({
         title: d.intl.string(d.t["Whhv4+"]),
         body: d.intl.format(d.t.VIJkAw, {
           duration: (0, r.jsx)(c.Z, {

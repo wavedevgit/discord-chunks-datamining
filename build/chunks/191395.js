@@ -2,9 +2,9 @@
 "use strict";
 var r = n(214788),
   i = n(260284),
-  a = n(65183);
-a.List;
-var o = a.Map,
+  o = n(65183);
+o.List;
+var a = o.Map,
   s = function(e, t, n) {
     if (e) {
       var r = t.get(e);
@@ -24,8 +24,8 @@ var o = a.Map,
     var n = [];
     if (!e) return n;
     for (var r = i(e, t); r && t.get(r);) {
-      var a = t.get(r);
-      n.push(r), r = a.getParentKey() ? i(a, t) : null
+      var o = t.get(r);
+      n.push(r), r = o.getParentKey() ? i(o, t) : null
     }
     return n
   },
@@ -95,18 +95,18 @@ var o = a.Map,
             })
           })
         }), null == e.get(t.getKey()) && null != e.get(n.getKey()) && n.getParentKey() === t.getKey() && null == n.getPrevSiblingKey()) {
-        var a = t.getPrevSiblingKey();
+        var o = t.getPrevSiblingKey();
         s(n.getKey(), i, function(e) {
           return e.merge({
-            prevSibling: a
+            prevSibling: o
           })
-        }), s(a, i, function(e) {
+        }), s(o, i, function(e) {
           return e.merge({
             nextSibling: n.getKey()
           })
         });
-        var o = a ? e.get(a) : null,
-          f = o ? o.getParentKey() : null;
+        var a = o ? e.get(o) : null,
+          f = a ? a.getParentKey() : null;
         if (t.getChildKeys().forEach(function(e) {
             s(e, i, function(e) {
               return e.merge({
@@ -145,42 +145,42 @@ var o = a.Map,
   };
 e.exports = function(e, t) {
   if (t.isCollapsed()) return e;
-  var n, a = e.getBlockMap(),
+  var n, o = e.getBlockMap(),
     s = t.getStartKey(),
     c = t.getStartOffset(),
     u = t.getEndKey(),
     d = t.getEndOffset(),
-    p = a.get(s),
-    h = a.get(u),
+    p = o.get(s),
+    h = o.get(u),
     m = p instanceof r,
     g = [];
   if (m) {
     var E = h.getChildKeys(),
-      b = l(u, a);
-    h.getNextSiblingKey() && (g = g.concat(b)), E.isEmpty() || (g = g.concat(b.concat([u]))), g = g.concat(l(i(h, a), a))
+      b = l(u, o);
+    h.getNextSiblingKey() && (g = g.concat(b)), E.isEmpty() || (g = g.concat(b.concat([u]))), g = g.concat(l(i(h, o), o))
   }
   n = p === h ? _(p.getCharacterList(), c, d) : p.getCharacterList().slice(0, c).concat(h.getCharacterList().slice(d));
   var y = p.merge({
       text: p.getText().slice(0, c) + h.getText().slice(d),
       characterList: n
     }),
-    O = m && 0 === c && 0 === d && h.getParentKey() === s && null == h.getPrevSiblingKey() ? o([
+    O = m && 0 === c && 0 === d && h.getParentKey() === s && null == h.getPrevSiblingKey() ? a([
       [s, null]
-    ]) : a.toSeq().skipUntil(function(e, t) {
+    ]) : o.toSeq().skipUntil(function(e, t) {
       return t === s
     }).takeUntil(function(e, t) {
       return t === u
     }).filter(function(e, t) {
       return -1 === g.indexOf(t)
-    }).concat(o([
+    }).concat(a([
       [u, null]
     ])).map(function(e, t) {
       return t === s ? y : null
     }),
-    v = a.merge(O).filter(function(e) {
+    v = o.merge(O).filter(function(e) {
       return !!e
     });
-  return m && p !== h && (v = f(v, p, h, a)), e.merge({
+  return m && p !== h && (v = f(v, p, h, o)), e.merge({
     blockMap: v,
     selectionBefore: t,
     selectionAfter: t.merge({

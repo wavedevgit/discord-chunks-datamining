@@ -4,9 +4,9 @@ n.d(t, {
   Z: () => u
 });
 var r, i = n(442837),
-  a = n(570140);
+  o = n(570140);
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -28,7 +28,7 @@ class c extends(r = i.ZP.Store) {
     return s[e]
   }
 }
-o(c, "displayName", "SendMessageOptionsStore");
-let u = new c(a.Z, {
+a(c, "displayName", "SendMessageOptionsStore");
+let u = new c(o.Z, {
   MESSAGE_CREATE: l
 })

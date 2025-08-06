@@ -6,8 +6,8 @@ n.d(t, {
 });
 var r = n(255367),
   i = n(73800),
-  a = n(66546),
-  o = n(990547),
+  o = n(66546),
+  a = n(990547),
   s = n(873546),
   l = n(186325),
   c = n(481060),
@@ -60,8 +60,8 @@ function b(e, t) {
   if (null == e) return {};
   var n, r, i = y(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -69,8 +69,8 @@ function b(e, t) {
 function y(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let O = {
@@ -89,8 +89,8 @@ function I(e, t) {
     if (0 === n) return "auto";
     let r = "forwards" === t.current,
       i = n > 0,
-      a = !1;
-    return i && r && "left" === e && (a = !0), i && !r && "right" === e && (a = !0), !i && r && "right" === e && (a = !0), i || r || "left" !== e || (a = !0), a ? "".concat(100 * Math.abs(n), "%") : "auto"
+      o = !1;
+    return i && r && "left" === e && (o = !0), i && !r && "right" === e && (o = !0), !i && r && "right" === e && (o = !0), i || r || "left" !== e || (o = !0), o ? "".concat(100 * Math.abs(n), "%") : "auto"
   }
 }
 
@@ -118,17 +118,17 @@ function S(e) {
   });
   let N = T.activeSlide,
     C = (0, d.Z)(T.activeSlide),
-    w = null != (t = T.directionOverride) ? t : v(null != C ? S[C] : null, S[N]),
+    R = null != (t = T.directionOverride) ? t : v(null != C ? S[C] : null, S[N]),
     {
-      reducedMotion: R
+      reducedMotion: P
     } = i.useContext(l.S),
-    P = i.useContext(f.Z),
+    w = i.useContext(f.Z),
     D = S[N].impressionName,
     L = E(m({}, S[N].impressionProperties), {
       location_stack: A
     });
-  P({
-    type: o.ImpressionTypes.MODAL,
+  w({
+    type: a.ImpressionTypes.MODAL,
     name: D,
     properties: L,
     _stackContext: {
@@ -137,14 +137,14 @@ function S(e) {
   });
   let {
     ref: x,
-    width: k = 0,
-    height: j = 0
-  } = (0, u.ZP)(N), M = m({}, O, T.springConfig, R.enabled ? {
+    width: M = 0,
+    height: k = 0
+  } = (0, u.ZP)(N), j = m({}, O, T.springConfig, P.enabled ? {
     clamp: !0
   } : null), U = (0, c.q_F)({
-    width: null != (n = T.width) ? n : k,
-    height: j,
-    config: M
+    width: null != (n = T.width) ? n : M,
+    height: k,
+    config: j
   }, null == C ? "animate-never" : "respect-motion-settings"), G = (0, c.Yzy)(N, {
     value: 0,
     from: {
@@ -156,14 +156,14 @@ function S(e) {
     leave: {
       value: -1
     },
-    config: M,
+    config: j,
     onRest: (e, t) => {
       let {
         item: n
       } = t;
       n === N && null != T.onSlideReady && T.onSlideReady(n)
     }
-  }, null == C ? "animate-never" : "respect-motion-settings"), B = (0, p.Z)(w), {
+  }, null == C ? "animate-never" : "respect-motion-settings"), B = (0, p.Z)(R), {
     width: Z,
     centered: F = !0
   } = T, V = s.tq ? "100%" : U.width.to(e => "string" == typeof e ? e : Math.round(e)), H = s.tq ? "100%" : U.height.to(e => Math.round(e)), Y = s.tq ? {} : F ? {
@@ -174,7 +174,7 @@ function S(e) {
   }, W = s.tq ? {} : {
     overflow: null != (h = T.overflow) ? h : "hidden"
   };
-  return (0, r.jsx)(a.animated.div, {
+  return (0, r.jsx)(o.animated.div, {
     style: m({
       position: "relative",
       minWidth: V,
@@ -183,10 +183,10 @@ function S(e) {
     children: G((e, t, n) => {
       let {
         key: i
-      } = n, o = {
+      } = n, a = {
         opacity: e.value.to(e => 1 - Math.abs(e))
       };
-      return (0, r.jsx)(a.animated.div, {
+      return (0, r.jsx)(o.animated.div, {
         ref: t === N ? x : null,
         style: m({
           position: "absolute",
@@ -194,10 +194,10 @@ function S(e) {
           flexDirection: "column",
           backfaceVisibility: "hidden",
           width: s.tq ? "100%" : Z
-        }, Y, R.enabled ? o : m({
+        }, Y, P.enabled ? a : m({
           left: e.value.to(I("left", B)),
           right: e.value.to(I("right", B))
-        }, y && o)),
+        }, y && a)),
         children: S[t].children
       }, i)
     })

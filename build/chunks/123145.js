@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var i = n(739566),
-  a = n(421399),
-  o = n(47930);
+  o = n(421399),
+  a = n(47930);
 
 function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -51,7 +51,7 @@ function u(e, t) {
 function d(e) {
   var t, n;
   let s = (0, i.ZP)(e.message),
-    c = (0, o.x)({
+    c = (0, a.x)({
       message: e.message,
       channel: e.channel,
       user: null != (n = null == (t = e.message) ? void 0 : t.author) ? n : e.userOverride,
@@ -59,7 +59,7 @@ function d(e) {
       isRepliedMessage: !!e.isRepliedMessage
     }),
     d = {};
-  return null != c && (d[a.a.SYSTEM_TAG] = c), (0, r.jsx)(a.Z, u(l({}, e), {
+  return null != c && (d[o.a.SYSTEM_TAG] = c), (0, r.jsx)(o.Z, u(l({}, e), {
     author: s,
     decorations: d
   }))

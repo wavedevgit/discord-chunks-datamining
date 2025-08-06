@@ -5,8 +5,8 @@ n.d(t, {
 }), n(642613);
 var r = n(73800),
   i = n(442837),
-  a = n(115130),
-  o = n(701488);
+  o = n(115130),
+  a = n(701488);
 
 function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -50,13 +50,13 @@ let d = () => {
   let {
     isEnabled: e,
     lastUsedObject: t
-  } = (0, i.cj)([a.Z], () => ({
-    isEnabled: a.Z.getIsEnabled(),
-    lastUsedObject: a.Z.getLastUsedObject()
-  }), []), n = (0, i.Wu)([a.Z], () => a.Z.getDeveloperShelfItems(), []);
+  } = (0, i.cj)([o.Z], () => ({
+    isEnabled: o.Z.getIsEnabled(),
+    lastUsedObject: o.Z.getLastUsedObject()
+  }), []), n = (0, i.Wu)([o.Z], () => o.Z.getDeveloperShelfItems(), []);
   return r.useMemo(() => e ? n.map(e => ({
     application: e,
-    activity: u(l({}, o.wT, e.embeddedActivityConfig), {
+    activity: u(l({}, a.wT, e.embeddedActivityConfig), {
       application_id: e.id
     })
   })).sort((e, n) => {

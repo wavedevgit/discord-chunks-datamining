@@ -13,8 +13,8 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var i = n(120356),
-  a = n.n(i),
-  o = n(377171),
+  o = n.n(i),
+  a = n(377171),
   s = n(763494);
 
 function l(e, t, n) {
@@ -60,8 +60,8 @@ function f(e, t) {
   if (null == e) return {};
   var n, r, i = _(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -69,8 +69,8 @@ function f(e, t) {
 function _(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let p = {
@@ -90,7 +90,7 @@ function m(e) {
 let g = e => {
     var {
       count: t,
-      color: n = o.Z.STATUS_DANGER,
+      color: n = a.Z.STATUS_DANGER,
       disableColor: i = !1,
       shape: l = p.ROUND,
       className: u,
@@ -98,7 +98,7 @@ let g = e => {
       renderBadgeCount: g = m
     } = e, E = f(e, ["count", "color", "disableColor", "shape", "className", "style", "renderBadgeCount"]);
     return (0, r.jsx)("div", d(c({
-      className: a()(u, s.numberBadge, l),
+      className: o()(u, s.numberBadge, l),
       style: c({
         backgroundColor: i ? void 0 : n,
         width: h(t)
@@ -111,13 +111,13 @@ let g = e => {
     var {
       text: t,
       className: n,
-      color: i = o.Z.STATUS_DANGER,
+      color: i = a.Z.STATUS_DANGER,
       shape: l = p.ROUND,
       disableColor: u = !1,
       style: _
     } = e, h = f(e, ["text", "className", "color", "shape", "disableColor", "style"]);
     return (0, r.jsx)("div", d(c({
-      className: a()(n, s.textBadge, l),
+      className: o()(n, s.textBadge, l),
       style: c({
         backgroundColor: u ? void 0 : i
       }, _)
@@ -131,7 +131,7 @@ let g = e => {
       className: n
     } = e, i = f(e, ["text", "className"]);
     return (0, r.jsx)(E, c({
-      className: a()(s.premiumBadge, n),
+      className: o()(s.premiumBadge, n),
       text: t
     }, i))
   },
@@ -139,13 +139,13 @@ let g = e => {
     let {
       icon: t,
       className: n,
-      color: i = o.Z.STATUS_DANGER,
+      color: i = a.Z.STATUS_DANGER,
       shape: l = p.ROUND,
       disableColor: u = !1,
       style: d
     } = e;
     return (0, r.jsx)("div", {
-      className: a()(n, s.iconBadge, l),
+      className: o()(n, s.iconBadge, l),
       style: c({
         backgroundColor: u ? void 0 : i
       }, d),
@@ -158,13 +158,13 @@ let g = e => {
   O = e => {
     var {
       className: t,
-      color: n = o.Z.INTERACTIVE_ACTIVE,
+      color: n = a.Z.INTERACTIVE_ACTIVE,
       shape: i = p.ROUND,
       disableColor: l = !1,
       style: u
     } = e, d = f(e, ["className", "color", "shape", "disableColor", "style"]);
     return (0, r.jsx)("div", c({
-      className: a()(t, s.circleBadge, i),
+      className: o()(t, s.circleBadge, i),
       style: c({
         backgroundColor: l ? void 0 : n
       }, u)

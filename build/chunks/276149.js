@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var i = n(442837),
-  a = n(287734),
-  o = n(19780),
+  o = n(287734),
+  a = n(19780),
   s = n(626135),
   l = n(915863),
   c = n(981631),
@@ -20,8 +20,8 @@ function d(e) {
     look: d,
     hangStatusChannel: f,
     onAction: _
-  } = e, p = (0, i.e7)([o.Z], () => o.Z.getChannelId() === f.id), h = () => {
-    null == _ || _(), a.default.selectVoiceChannel(f.id), s.default.track(c.rMx.HANG_STATUS_CTA_CLICKED, {
+  } = e, p = (0, i.e7)([a.Z], () => a.Z.getChannelId() === f.id), h = () => {
+    null == _ || _(), o.default.selectVoiceChannel(f.id), s.default.track(c.rMx.HANG_STATUS_CTA_CLICKED, {
       source: "UserProfilePopout",
       guild_id: f.guild_id,
       channel_id: f.id

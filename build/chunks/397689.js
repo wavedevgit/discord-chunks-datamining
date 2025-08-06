@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(255367),
   i = n(73800),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(442837),
   l = n(481060),
   c = n(906732),
@@ -62,7 +62,7 @@ function v(e) {
   let {
     user: t,
     guild: n,
-    displayProfile: a,
+    displayProfile: o,
     canUsePremiumCustomization: f,
     previewAvatar: g,
     previewAvatarDecoration: b,
@@ -73,17 +73,17 @@ function v(e) {
     isTryItOutFlow: A,
     onUpsellClick: N
   } = e, C = i.useRef(null), {
-    analyticsLocations: w,
-    newestAnalyticsLocation: R
-  } = (0, c.ZP)(), P = (0, s.e7)([d.Z], () => d.Z.getStatus(t.id)), D = null == n || (null == a ? void 0 : a.canUsePremiumProfileCustomization) || f, L = (0, r.jsx)(O, {
+    analyticsLocations: R,
+    newestAnalyticsLocation: P
+  } = (0, c.ZP)(), w = (0, s.e7)([d.Z], () => d.Z.getStatus(t.id)), D = null == n || (null == o ? void 0 : o.canUsePremiumProfileCustomization) || f, L = (0, r.jsx)(O, {
     src: g,
     avatarDecoration: b,
-    imageClassName: o()(T, {
+    imageClassName: a()(T, {
       [m.overlay]: !S
     }),
     size: l.EFr.SIZE_80,
     "aria-label": t.username,
-    status: P,
+    status: w,
     statusTooltip: !1,
     statusBackdropColor: null != I ? (0, l.QFD)(v) : void 0
   });
@@ -102,13 +102,13 @@ function v(e) {
         onChangeAvatar: () => (0, p.$r)({
           uploadType: h.pC.AVATAR,
           guildId: null == n ? void 0 : n.id,
-          analyticsSource: R,
+          analyticsSource: P,
           isTryItOutFlow: A
         }),
         onChangeAvatarDecoration: () => {
           (0, u.ps)({
             guild: null == n ? void 0 : n,
-            analyticsLocations: w,
+            analyticsLocations: R,
             isTryItOutFlow: A
           })
         }
@@ -116,7 +116,7 @@ function v(e) {
     },
     children: e => (0, r.jsxs)(l.P3F, y(E({}, e), {
       innerRef: C,
-      className: o()(m.avatar, m.clickable),
+      className: a()(m.avatar, m.clickable),
       children: [L, (0, r.jsx)(l.vdY, {
         size: "custom",
         className: m.overlayIcon,
@@ -127,7 +127,7 @@ function v(e) {
     }))
   }) : (0, r.jsxs)(l.P3F, {
     onClick: N,
-    className: o()(m.avatar, m.clickable),
+    className: a()(m.avatar, m.clickable),
     children: [L, (0, r.jsx)(l.SrA, {
       size: "custom",
       className: m.overlayIcon,

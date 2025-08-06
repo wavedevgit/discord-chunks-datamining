@@ -6,14 +6,14 @@ n.d(t, {
 });
 var r = n(493683),
   i = n(529103),
-  a = n(292556),
-  o = n(100527),
+  o = n(292556),
+  a = n(100527),
   s = n(768581),
   l = n(981631),
   c = n(388032);
 
 function u(e, t, n) {
-  a.default.showNotification(s.ZP.getUserAvatarURL(e), e.username, t, {}, {
+  o.default.showNotification(s.ZP.getUserAvatarURL(e), e.username, t, {}, {
     omitViewTracking: !0,
     omitClickTracking: !0,
     tag: e.id,
@@ -30,7 +30,7 @@ function d(e) {
       } = n(892001);
       t({
         userId: e.id,
-        sourceAnalyticsLocations: [o.Z.FRIEND_REQUEST_NOTIFICATION]
+        sourceAnalyticsLocations: [a.Z.FRIEND_REQUEST_NOTIFICATION]
       })
     }
     i.Z.transitionToSection(l.pJs.PENDING, {

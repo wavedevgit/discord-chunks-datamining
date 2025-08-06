@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var i = n(120356),
-  a = n.n(i),
-  o = n(304789),
+  o = n.n(i),
+  a = n(304789),
   s = n(481060),
   l = n(410030),
   c = n(563132),
@@ -32,7 +32,7 @@ function S(e) {
     isOneStepCheckout: t,
     headerText: n,
     step: i,
-    filteredBreadcrumbs: a
+    filteredBreadcrumbs: o
   } = e;
   if (t) return (0, r.jsx)("div", {
     className: E.oneStepCheckoutTextWrapper,
@@ -41,15 +41,15 @@ function S(e) {
       children: n
     })
   });
-  let o = a.length > 1;
+  let a = o.length > 1;
   return (0, r.jsxs)("div", {
     className: E.headerTextWrapper,
     children: [(0, r.jsx)(s.Text, {
       variant: "text-lg/semibold",
       children: n
-    }), o && (0, r.jsx)(f.Z, {
+    }), a && (0, r.jsx)(f.Z, {
       activeId: i,
-      breadcrumbs: a
+      breadcrumbs: o
     })]
   })
 }
@@ -84,13 +84,13 @@ let N = function(e) {
     isEligibleForTrial: v = !1,
     showTrialBadge: N = !1,
     showDiscountBadge: C = !1
-  } = e, w = (0, s.apv)((0, l.ZP)()), R = O === g.p9.TIER_2, P = (0, d.Fv)(v), D = (0, h.Ng)(), L = null == D || null == (t = D.discount) ? void 0 : t.amount, x = R ? T : I, k = R ? p.Z : _.Z, {
-    step: j,
-    breadcrumbs: M,
+  } = e, R = (0, s.apv)((0, l.ZP)()), P = O === g.p9.TIER_2, w = (0, d.Fv)(v), D = (0, h.Ng)(), L = null == D || null == (t = D.discount) ? void 0 : t.amount, x = P ? T : I, M = P ? p.Z : _.Z, {
+    step: k,
+    breadcrumbs: j,
     startedPaymentFlowWithPaymentSourcesRef: U
   } = (0, c.JL)();
-  if (null == M || 0 === M.length) return null;
-  let G = M.flatMap(e => {
+  if (null == j || 0 === j.length) return null;
+  let G = j.flatMap(e => {
     let t = e.useBreadcrumbLabel(v),
       n = e.sectionHeaderText;
     return null != t ? {
@@ -104,19 +104,19 @@ let N = function(e) {
       let t = e.id !== u.h8.ADD_PAYMENT_STEPS,
         n = e.id === u.h8.ADD_PAYMENT_STEPS && !U.current;
       return !v || v && (t || n)
-    })).find(e => e.id === j),
+    })).find(e => e.id === k),
     Z = null != (i = null == B || null == (n = B.sectionHeaderText) ? void 0 : n.call(B)) ? i : null == B ? void 0 : B.label,
-    F = null != Z && null != j,
-    V = P && F && j === u.h8.REVIEW;
+    F = null != Z && null != k,
+    V = w && F && k === u.h8.REVIEW;
   return (0, r.jsxs)("div", {
     className: E.container,
-    children: [(0, r.jsxs)(o.$, {
-      color: R ? "nitro-pink" : "nitro-green",
-      className: a()(E.headerContainer, {
+    children: [(0, r.jsxs)(a.$, {
+      color: P ? "nitro-pink" : "nitro-green",
+      className: o()(E.headerContainer, {
         [E.containerBottomPadding]: !F
       }),
       children: [(0, r.jsx)(A, {
-        isTier2: R
+        isTier2: P
       }), !f && (0, r.jsx)(s.olH, {
         hideOnFullscreen: b,
         onClick: y,
@@ -127,17 +127,17 @@ let N = function(e) {
         className: V ? E.bigWumpus : E.wumpus
       }), (0, r.jsx)("div", {
         className: E.textContainer,
-        children: (0, r.jsx)(k, {
-          color: w ? "black" : "white",
+        children: (0, r.jsx)(M, {
+          color: R ? "black" : "white",
           className: E.wordmark
         })
       })]
     }), (N || C) && (0, r.jsx)(m.Z, {
       discountAmount: L
     }), F && (0, r.jsx)(S, {
-      isOneStepCheckout: P,
+      isOneStepCheckout: w,
       headerText: Z,
-      step: j,
+      step: k,
       filteredBreadcrumbs: G
     }), V && (0, r.jsx)("div", {
       className: E.bodyGradientContainer,

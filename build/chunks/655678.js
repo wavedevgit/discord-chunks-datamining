@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(255367),
   i = n(73800),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(481060),
   l = n(328908),
   c = n(992970),
@@ -18,16 +18,16 @@ var r = n(255367),
 function p(e, t) {
   let {
     disabled: n,
-    channel: a
-  } = e, p = (0, l.LN)(a.id), h = i.useCallback(() => {
-    (0, l.Rg)(a.id, c.MG.MessageComposerButtons)
-  }, [a.id]);
+    channel: o
+  } = e, p = (0, l.LN)(o.id), h = i.useCallback(() => {
+    (0, l.Rg)(o.id, c.MG.MessageComposerButtons)
+  }, [o.id]);
   return n ? null : (0, r.jsx)("div", {
-    className: o()(d.CT, _.buttonContainer),
+    className: a()(d.CT, _.buttonContainer),
     ref: t,
     children: (0, r.jsx)(u.Z, {
-      className: o()(_.button, _.messageConfettiButton),
-      childClassName: o()(_.messageConfettiIcon, {
+      className: a()(_.button, _.messageConfettiButton),
+      childClassName: a()(_.messageConfettiIcon, {
         [_.active]: p
       }),
       onClick: h,

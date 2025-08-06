@@ -1,14 +1,14 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => o
+  Z: () => a
 });
 var r = n(544891),
   i = n(570140),
-  a = n(981631);
-let o = {
+  o = n(981631);
+let a = {
   createChannelFollower: (e, t) => r.tn.post({
-    url: a.ANM.CHANNEL_FOLLOWERS(t),
+    url: o.ANM.CHANNEL_FOLLOWERS(t),
     body: {
       webhook_channel_id: e
     },
@@ -21,7 +21,7 @@ let o = {
     });
     try {
       let t = await r.tn.get({
-        url: a.ANM.CHANNEL_FOLLOWER_STATS(e),
+        url: o.ANM.CHANNEL_FOLLOWER_STATS(e),
         body: {
           channel_id: e
         },

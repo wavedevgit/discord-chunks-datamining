@@ -1,26 +1,26 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => a
+  Z: () => o
 });
 var r = n(73800),
   i = n(434650);
 
-function a(e) {
+function o(e) {
   let {
     onVisible: t,
     threshold: n,
-    minTimeVisibleMs: a
-  } = e, o = r.useRef(!1), s = r.useRef(null);
+    minTimeVisibleMs: o
+  } = e, a = r.useRef(!1), s = r.useRef(null);
   r.useEffect(() => () => {
     null != s.current && (clearTimeout(s.current), s.current = null)
   }, []);
   let l = e => {
-    if (null == s.current || e || !1 !== o.current || (clearTimeout(s.current), s.current = null), !e || !0 === o.current) return;
+    if (null == s.current || e || !1 !== a.current || (clearTimeout(s.current), s.current = null), !e || !0 === a.current) return;
     let n = () => {
-      t(), o.current = !0, s.current = null
+      t(), a.current = !0, s.current = null
     };
-    null != a ? s.current = setTimeout(n, a) : n()
+    null != o ? s.current = setTimeout(n, o) : n()
   };
   return (0, i.O)(l, n)
 }

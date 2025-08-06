@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var i = n(120356),
-  a = n.n(i),
-  o = n(576073);
+  o = n.n(i),
+  a = n(576073);
 let s = e => {
   let {
     left: t,
@@ -21,13 +21,13 @@ let s = e => {
     additionalStyles: f
   } = e;
   return (0, r.jsx)("span", {
-    className: a()(o.dot, {
-      [o.alert]: c,
-      [o.blurpleTreatment]: u,
-      [o.maskPopout]: 0 === d,
-      [o.maskPrimary]: 1 === d,
-      [o.maskSecondary]: 2 === d,
-      [o.maskBlack]: 3 === d,
+    className: o()(a.dot, {
+      [a.alert]: c,
+      [a.blurpleTreatment]: u,
+      [a.maskPopout]: 0 === d,
+      [a.maskPrimary]: 1 === d,
+      [a.maskSecondary]: 2 === d,
+      [a.maskBlack]: 3 === d,
       [null != f ? f : ""]: void 0 !== f
     }),
     style: {

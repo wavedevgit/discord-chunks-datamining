@@ -4,8 +4,8 @@ let r;
 n.d(t, {
   Z: () => q
 }), n(388685), n(781311), n(539854), n(642613);
-var i, a = n(442837),
-  o = n(570140),
+var i, o = n(442837),
+  a = n(570140),
   s = n(279779),
   l = n(353926),
   c = n(752048),
@@ -40,14 +40,14 @@ function C() {
   v = "", I = 0, T = [], A = new Set, O = !1, N = null
 }
 
-function w(e) {
-  v = e, I = 0, R()
+function R(e) {
+  v = e, I = 0, P()
 }
 
-function R() {
+function P() {
   if (!O) return !1;
   let e = _.Z.getChannel(N);
-  if (0 === v.trim().length) return null != r && r.clearQuery(), T = j(e), !0;
+  if (0 === v.trim().length) return null != r && r.clearQuery(), T = k(e), !0;
   let t = null != e ? e.recipients : [];
   if (null != r) {
     var n;
@@ -67,7 +67,7 @@ function R() {
   return !1
 }
 
-function P() {
+function w() {
   if (!O) return !1;
   let e = S;
   return (S = m.Z.getFriendCount() > 0) !== e
@@ -75,10 +75,10 @@ function P() {
 
 function D(e, t) {
   if (p.Z.hasConsented(E.pjP.PERSONALIZATION)) {
-    var n, r, i, a;
-    let o = null != (i = null == (n = c.Z.getUserAffinity(e.user.id)) ? void 0 : n.communicationProbability) ? i : 0,
-      s = null != (a = null == (r = c.Z.getUserAffinity(t.user.id)) ? void 0 : r.communicationProbability) ? a : 0;
-    if (o !== s) return s - o
+    var n, r, i, o;
+    let a = null != (i = null == (n = c.Z.getUserAffinity(e.user.id)) ? void 0 : n.communicationProbability) ? i : 0,
+      s = null != (o = null == (r = c.Z.getUserAffinity(t.user.id)) ? void 0 : r.communicationProbability) ? o : 0;
+    if (a !== s) return s - a
   }
   return (0, d._I)(f.ZP.getName(e.user).toLocaleLowerCase()).localeCompare((0, d._I)(f.ZP.getName(t.user).toLocaleLowerCase()))
 }
@@ -94,14 +94,14 @@ function x(e) {
   } = e;
   if (null != t) return !1;
   let r = O;
-  return C(), O = r, N = n, R()
+  return C(), O = r, N = n, P()
+}
+
+function M(e) {
+  N = e.channelId, R(e.query)
 }
 
 function k(e) {
-  N = e.channelId, w(e.query)
-}
-
-function j(e) {
   let t = m.Z.getFriendIDs(),
     n = g.default.getCurrentUser();
   return (null == n ? void 0 : n.isStaff()) && (t = Array.from(new Set([...t, ...g.default.filter(e => e.isStaff() && e.id !== n.id, !1).map(e => e.id)]))), (null == e ? void 0 : e.isPrivate()) && (t = t.filter(t => !e.recipients.includes(t))), t.reduce((e, t) => {
@@ -113,7 +113,7 @@ function j(e) {
   }, []).sort(D)
 }
 
-function M(e) {
+function j(e) {
   let {
     results: t
   } = e;
@@ -145,9 +145,9 @@ function U() {
   return e.forEach(e => {
     let r = h.Z.getScoreWithoutFetchingLatest(e.id),
       i = e.getRecipientId(),
-      a = .2 * !!m.Z.isFriend(i),
-      o = .1 * (null != _.Z.getDMFromUserId(i));
-    n[i] = 1 + r / t + a + o
+      o = .2 * !!m.Z.isFriend(i),
+      a = .1 * (null != _.Z.getDMFromUserId(i));
+    n[i] = 1 + r / t + o + a
   }), n
 }
 
@@ -156,16 +156,16 @@ function G(e) {
 }
 
 function B() {
-  return null != r && (r.destroy(), r = null), s.Z.getUserSearchContext(M, y)
+  return null != r && (r.destroy(), r = null), s.Z.getUserSearchContext(j, y)
 }
 
 function Z(e) {
   if (e.key !== E.vTt) return !1;
-  O = !0, P(), r = B(), N = null, w("")
+  O = !0, w(), r = B(), N = null, R("")
 }
 
 function F(e) {
-  O = !0, P(), r = B(), N = e.channelId, w("")
+  O = !0, w(), r = B(), N = e.channelId, R("")
 }
 
 function V(e) {
@@ -190,9 +190,9 @@ function W(e) {
   } = e;
   A.delete(t), A = new Set(A)
 }
-class K extends(i = a.ZP.Store) {
+class K extends(i = o.ZP.Store) {
   initialize() {
-    this.waitFor(g.default, _.Z, m.Z, l.Z, p.Z), this.syncWith([g.default, _.Z], R), this.syncWith([m.Z], P)
+    this.waitFor(g.default, _.Z, m.Z, l.Z, p.Z), this.syncWith([g.default, _.Z], P), this.syncWith([m.Z], w)
   }
   getResults() {
     return T
@@ -217,7 +217,7 @@ class K extends(i = a.ZP.Store) {
   }
 }
 b(K, "displayName", "PrivateChannelRecipientsInviteStore");
-let z = new K(o.Z, {
+let z = new K(a.Z, {
     CONNECTION_OPEN: L,
     CHANNEL_SELECT: x,
     MODAL_PUSH: Z,
@@ -226,7 +226,7 @@ let z = new K(o.Z, {
     MODAL_POP: V,
     HIDE_ACTION_SHEET: V,
     PRIVATE_CHANNEL_RECIPIENTS_INVITE_CLOSE: H,
-    PRIVATE_CHANNEL_RECIPIENTS_INVITE_QUERY: k,
+    PRIVATE_CHANNEL_RECIPIENTS_INVITE_QUERY: M,
     PRIVATE_CHANNEL_RECIPIENTS_INVITE_SELECT: G,
     PRIVATE_CHANNEL_RECIPIENTS_ADD_USER: Y,
     PRIVATE_CHANNEL_RECIPIENTS_REMOVE_USER: W

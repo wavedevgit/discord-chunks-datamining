@@ -1,12 +1,12 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => w
+  Z: () => R
 }), n(388685);
 var r = n(152057),
   i = n(570140),
-  a = n(147913),
-  o = n(38618),
+  o = n(147913),
+  a = n(38618),
   s = n(517100),
   l = n(914010),
   c = n(451478),
@@ -42,7 +42,7 @@ function v(e, t) {
   if (!(0, f.NM)({
       guildId: e,
       location: "GuildLeaderboardManager"
-    }) || !c.Z.isFocused() || !o.Z.isConnected()) return !1;
+    }) || !c.Z.isFocused() || !a.Z.isConnected()) return !1;
   let i = s.Z.getIdleSince();
   return !(null != i && Date.now() - i > g) && !0
 }
@@ -71,17 +71,17 @@ async function S(e) {
     force: r = !1
   } = e;
   if (!(v(t, n) || r)) return;
-  let a = O(t, n);
-  if (!b.has(a)) try {
-    b.add(a);
+  let o = O(t, n);
+  if (!b.has(o)) try {
+    b.add(o);
     let e = await (0, u.pV)({
         guildId: t,
         leaderboardId: n,
         intervalOffset: 0,
         force: r
       }),
-      o = d.Z.get(t, n);
-    if ((null == o ? void 0 : o.interval_start) !== e.leaderboard.interval_start) {
+      a = d.Z.get(t, n);
+    if ((null == a ? void 0 : a.interval_start) !== e.leaderboard.interval_start) {
       let e = await (0, u.pV)({
         guildId: t,
         leaderboardId: n,
@@ -98,13 +98,13 @@ async function S(e) {
       type: "SET_GUILD_LEADERBOARD",
       leaderboardResponse: e,
       intervalOffset: 0
-    }), y.delete(a), b.delete(a), T()
+    }), y.delete(o), b.delete(o), T()
   } catch (i) {
-    var o;
-    let e = (null != (o = y.get(a)) ? o : 0) + 1;
-    if (y.set(a, e), !v(t, n)) return;
+    var a;
+    let e = (null != (a = y.get(o)) ? a : 0) + 1;
+    if (y.set(o, e), !v(t, n)) return;
     let r = 1e3 * Math.pow(m, e);
-    E.set(a, setTimeout(() => S({
+    E.set(o, setTimeout(() => S({
       guildId: t,
       leaderboardId: n,
       force: !0
@@ -119,7 +119,7 @@ function A() {
 function N() {
   I(), E = new Map, b = new Set, y = new Map, A()
 }
-class C extends a.Z {
+class C extends o.Z {
   fetchLeaderboard(e) {
     return S(e)
   }
@@ -133,4 +133,4 @@ class C extends a.Z {
     })
   }
 }
-let w = new C
+let R = new C

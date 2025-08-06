@@ -1,11 +1,11 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Hr: () => a,
+  Hr: () => o,
   P4: () => s,
   TR: () => l,
   mz: () => r,
-  tM: () => o,
+  tM: () => a,
   xv: () => i
 });
 var r = function(e) {
@@ -14,7 +14,7 @@ var r = function(e) {
   i = function(e) {
     return e.CHANNEL_ROW_CONTEXT_MENU = "channel_row_context_menu", e.SHOP_HEADER_BUTTON = "shop_header_button", e
   }({});
-let a = "hasClickedGuildShopProductPreviewTab",
-  o = "hasClickedGuildShopChannelRow",
+let o = "hasClickedGuildShopProductPreviewTab",
+  a = "hasClickedGuildShopChannelRow",
   s = "https://discord.com/servershop",
   l = "1 GB"

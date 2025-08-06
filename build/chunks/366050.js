@@ -1,10 +1,10 @@
 /** Chunk was on web.js **/
 "use strict";
-let r, i, a;
+let r, i, o;
 n.d(t, {
-  Z: () => w
+  Z: () => R
 }), n(388685);
-var o, s = n(442837),
+var a, s = n(442837),
   l = n(570140),
   c = n(981631),
   u = n(354459);
@@ -58,19 +58,19 @@ let h = new Map,
 function b(e) {
   var t, n;
   let {
-    id: o,
+    id: a,
     component: s,
     props: l
   } = e;
-  if (null != h.get(o)) return;
+  if (null != h.get(a)) return;
   let u = {
-    id: o,
+    id: a,
     component: s,
     position: null != (t = l.position) ? t : g,
     props: l,
     docked: null != (n = l.docked) && n
   };
-  h.set(o, u), s === c.NYg.VIDEO ? null == r && (r = o) : s === c.NYg.ACTIVITY ? null == i && (i = o) : s === c.NYg.FRAME && null == a && (a = o)
+  h.set(a, u), s === c.NYg.VIDEO ? null == r && (r = a) : s === c.NYg.ACTIVITY ? null == i && (i = a) : s === c.NYg.FRAME && null == o && (o = a)
 }
 
 function y(e) {
@@ -87,7 +87,7 @@ function y(e) {
     }) : i === t ? i = e.find(e => {
       let t = h.get(e);
       return null != t && t.component === c.NYg.ACTIVITY
-    }) : a === t && (a = e.find(e => {
+    }) : o === t && (o = e.find(e => {
       let t = h.get(e);
       return null != t && t.component === c.NYg.FRAME
     }))
@@ -99,7 +99,7 @@ function O(e) {
     id: t,
     position: n
   } = e;
-  if (null == t || r !== t && i !== t && a !== t) return !1;
+  if (null == t || r !== t && i !== t && o !== t) return !1;
   {
     let e = new Map;
     h.forEach((t, r) => {
@@ -130,7 +130,7 @@ function T(e) {
   let {
     id: t
   } = e;
-  if (r !== t && i !== t && a !== t) return !1;
+  if (r !== t && i !== t && o !== t) return !1;
   {
     let e = h.get(t);
     if (null == e) return !1;
@@ -144,7 +144,7 @@ function S(e) {
   let {
     id: t
   } = e;
-  if (r !== t && i !== t && a !== t) return !1;
+  if (r !== t && i !== t && o !== t) return !1;
   {
     let e = h.get(t);
     if (null == e) return !1;
@@ -158,13 +158,13 @@ function A(e) {
   let {
     id: t
   } = e, n = h.get(t);
-  null != n && (n.component === c.NYg.VIDEO ? r = t : n.component === c.NYg.ACTIVITY ? i = t : n.component === c.NYg.FRAME && (a = t))
+  null != n && (n.component === c.NYg.VIDEO ? r = t : n.component === c.NYg.ACTIVITY ? i = t : n.component === c.NYg.FRAME && (o = t))
 }
 
 function N() {
-  r = null, i = null, a = null, h = new Map
+  r = null, i = null, o = null, h = new Map
 }
-class C extends(o = s.ZP.PersistedStore) {
+class C extends(a = s.ZP.PersistedStore) {
   initialize(e) {
     if (null == e) {
       g = c.VD2.BOTTOM_RIGHT, E = {
@@ -177,7 +177,7 @@ class C extends(o = s.ZP.PersistedStore) {
   }
   get pipWindow() {
     var e, t;
-    return null == r && null == i && null == a ? null : h.get(null != (t = null != (e = null != r ? r : i) ? e : a) ? t : "")
+    return null == r && null == i && null == o ? null : h.get(null != (t = null != (e = null != r ? r : i) ? e : o) ? t : "")
   }
   get pipVideoWindow() {
     return null == r ? null : h.get(r)
@@ -186,7 +186,7 @@ class C extends(o = s.ZP.PersistedStore) {
     return null == i ? null : h.get(i)
   }
   get pipFrameWindow() {
-    return null == a ? null : h.get(a)
+    return null == o ? null : h.get(o)
   }
   get pipWindows() {
     return h
@@ -198,7 +198,7 @@ class C extends(o = s.ZP.PersistedStore) {
     return null == i
   }
   isFrameHidden() {
-    return null == a
+    return null == o
   }
   getDockedRect(e) {
     return m[e]
@@ -223,7 +223,7 @@ d(C, "displayName", "PictureInPictureStore"), d(C, "persistKey", "PictureInPictu
     openPosition: null != (n = e.openPosition) ? n : c.VD2.BOTTOM_RIGHT
   }
 }]);
-let w = new C(l.Z, {
+let R = new C(l.Z, {
   PICTURE_IN_PICTURE_OPEN: b,
   PICTURE_IN_PICTURE_CLOSE: y,
   PICTURE_IN_PICTURE_MOVE: O,

@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var i = n(120356),
-  a = n.n(i),
-  o = n(392711),
+  o = n.n(i),
+  a = n(392711),
   s = n(755721),
   l = n(481060),
   c = n(239091),
@@ -109,23 +109,23 @@ function S(e) {
       isDisabled: N
     } = (0, h.Ee)(e),
     C = (0, f.s)(O),
-    w = null != O && i === d.ZJ.PREMIUM,
-    R = w && (null == C ? void 0 : C.disabled),
-    P = w ? null == C ? void 0 : C.label : n,
+    R = null != O && i === d.ZJ.PREMIUM,
+    P = R && (null == C ? void 0 : C.disabled),
+    w = R ? null == C ? void 0 : C.label : n,
     D = null != g,
-    L = null != P && P.length > 0,
+    L = null != w && w.length > 0,
     x = i === d.ZJ.LINK && null != b && b.length > 0,
-    k = A === m.gH.LOADING || w && null == C;
+    M = A === m.gH.LOADING || R && null == C;
   return t = x ? () => {
     (0, p.q)({
       href: null != b ? b : "",
       shouldConfirm: !0
     })
-  } : w ? null != C && !1 === C.disabled ? C.onClick : o.noop : () => S(), (0, r.jsxs)(s.zx, {
+  } : R ? null != C && !1 === C.disabled ? C.onClick : a.noop : () => S(), (0, r.jsxs)(s.zx, {
     "data-migration-pending": !0,
     color: I(i),
     size: s.zx.Sizes.SMALL,
-    disabled: _ || A === m.gH.DISABLED || N || R,
+    disabled: _ || A === m.gH.DISABLED || N || P,
     onClick: t,
     onContextMenu: e => {
       x && (0, c.vq)(e, e => (0, r.jsx)(T, v(y({}, e), {
@@ -134,19 +134,19 @@ function S(e) {
     },
     role: x ? "link" : "button",
     children: [(0, r.jsxs)("div", {
-      className: a()(E.content, {
-        [E.hidden]: k,
-        [E.premium]: w
+      className: o()(E.content, {
+        [E.hidden]: M,
+        [E.premium]: R
       }),
-      "aria-hidden": k,
-      children: [w ? (0, r.jsx)("div", {
+      "aria-hidden": M,
+      children: [R ? (0, r.jsx)("div", {
         className: E.shopIcon,
         children: (0, r.jsx)(l.EOn, {
           size: "xs",
           color: "white"
         })
       }) : null, D ? (0, r.jsx)(u.Z, {
-        className: a()({
+        className: o()({
           [E.textEmoji]: L
         }),
         src: g.src,
@@ -155,13 +155,13 @@ function S(e) {
         animated: g.animated
       }) : null, L ? (0, r.jsx)("div", {
         className: E.label,
-        children: P
+        children: w
       }) : null, x ? (0, r.jsx)(l.rgF, {
         size: "xs",
         color: "currentColor",
         className: E.launchIcon
       }) : null]
-    }), k ? (0, r.jsx)("div", {
+    }), M ? (0, r.jsx)("div", {
       className: E.loading,
       children: (0, r.jsx)(l.bbz, {
         dotRadius: 3.5,

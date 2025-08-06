@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var i = n(196773),
-  a = n(192029),
-  o = n(527119);
+  o = n(192029),
+  a = n(527119);
 
 function s() {
   return (0, r.jsx)("div", {
@@ -69,7 +69,7 @@ function s() {
             y: "0",
             height: "32",
             width: "32",
-            href: a
+            href: o
           })
         }), (0, r.jsx)("pattern", {
           id: "tutorial-media-channels-image2",
@@ -83,7 +83,7 @@ function s() {
             y: "0",
             height: "32",
             width: "32",
-            href: o
+            href: a
           })
         })]
       })]

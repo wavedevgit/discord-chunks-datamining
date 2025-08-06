@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(314897),
   i = n(131951),
-  a = n(19780),
-  o = n(70956),
+  o = n(19780),
+  a = n(70956),
   s = n(458725),
   l = n(442741),
   c = n(150457);
@@ -33,20 +33,20 @@ function d(e) {
   return e
 }
 let f = 10,
-  _ = 20 * o.Z.Millis.SECOND,
+  _ = 20 * a.Z.Millis.SECOND,
   p = {
     getActiveErrors: () => {
-      let e = a.Z.getRTCConnection();
+      let e = o.Z.getRTCConnection();
       if (null == e) return null;
       let t = e.getMediaEngineConnectionId();
       if (null == t || !i.Z.isVideoEnabled()) return null;
-      let n = a.Z.getLastNonZeroRemoteVideoSinkWantsTime();
+      let n = o.Z.getLastNonZeroRemoteVideoSinkWantsTime();
       if (null != n && performance.now() - n < _ || Object.entries(e.getRemoteVideoSinkWants()).every(e => {
           let [t, n] = e;
           return "any" === t || 0 === n
         })) return null;
-      let o = (0, c.hj)(t, r.default.getId());
-      return null == o ? null : o.short.frameRate < f || o.long.frameRate < f ? [d({
+      let a = (0, c.hj)(t, r.default.getId());
+      return null == a ? null : a.short.frameRate < f || a.long.frameRate < f ? [d({
         type: s.u.CAMERA_SEND_LOW_FPS,
         userId: r.default.getId()
       }, (0, l.Y9)())] : void 0

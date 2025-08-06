@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(255367),
   i = n(73800),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(442837),
   l = n(607070),
   c = n(70097),
@@ -15,7 +15,7 @@ var r = n(255367),
   f = n(536087);
 
 function _(e) {
-  var t, n, a;
+  var t, n, o;
   let {
     videoActive: _,
     imageAsset: p,
@@ -43,14 +43,14 @@ function _(e) {
       preload: "auto",
       poster: I,
       playsInline: !0,
-      className: o()(h.className, f.video, {
+      className: a()(h.className, f.video, {
         [f.hidden]: !_
       }),
       controls: !1,
       onProgress: g,
       children: (0, r.jsx)("source", {
         src: h.asset.url,
-        type: null != (a = h.asset.mimetype) ? a : void 0
+        type: null != (o = h.asset.mimetype) ? o : void 0
       })
     })]
   })

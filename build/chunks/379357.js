@@ -7,8 +7,8 @@ n.d(t, {
 }), n(388685), n(781311);
 var r = n(726542),
   i = n(394821),
-  a = n(834353),
-  o = n(802856),
+  o = n(834353),
+  a = n(802856),
   s = n(835473),
   l = n(210753),
   c = n(750154),
@@ -49,16 +49,16 @@ function b(e) {
     showCoverImage: r = !0
   } = e, {
     activity: i,
-    activityApplication: a,
-    fallbackApplication: o
+    activityApplication: o,
+    fallbackApplication: a
   } = (0, _.Z)(n), {
     largeImage: s,
     smallImage: c
-  } = O(i, a), {
+  } = O(i, o), {
     largeImage: u
-  } = y(i, null != o ? o : a), {
+  } = y(i, null != a ? a : o), {
     coverImageUrl: d
-  } = (0, l.$)(null == (t = null != o ? o : a) ? void 0 : t.id), f = g(n);
+  } = (0, l.$)(null == (t = null != a ? a : o) ? void 0 : t.id), f = g(n);
   return null != s ? {
     largeImage: s,
     smallImage: c
@@ -100,14 +100,14 @@ function y(e, t) {
       smallImage: void 0
     }
   }
-  if (null == n && (0, o.Z)(e)) return {
+  if (null == n && (0, a.Z)(e)) return {
     largeImage: {
       src: r.Z.get(p.ABu.XBOX).icon.customPNG,
       alt: m.intl.string(m.t["Nfvo7+"])
     },
     smallImage: void 0
   };
-  if (null == n && null == i && (0, a.Z)(e)) return {
+  if (null == n && null == i && (0, o.Z)(e)) return {
     largeImage: {
       src: r.Z.get(p.ABu.PLAYSTATION).icon.lightPNG,
       alt: m.intl.string(m.t.fFl4jo)
@@ -125,7 +125,7 @@ function y(e, t) {
 }
 
 function O(e, t) {
-  var n, r, a, o, l, c, d, f;
+  var n, r, o, a, l, c, d, f;
   let _ = (0, s.q)(null == e ? void 0 : e.application_id);
   if (null == e) return {
     largeImage: void 0,
@@ -134,8 +134,8 @@ function O(e, t) {
   let p = null == e || null == (n = e.assets) ? void 0 : n.large_image,
     m = null != p ? {
       src: (0, u.xF)(e.application_id, p, [h.Si.LARGE, h.Si.LARGE]),
-      text: null == (a = e.assets) || null == (r = a.large_text) ? void 0 : r.trim(),
-      url: null == (o = e.assets) ? void 0 : o.large_url
+      text: null == (o = e.assets) || null == (r = o.large_text) ? void 0 : r.trim(),
+      url: null == (a = e.assets) ? void 0 : a.large_url
     } : void 0,
     g = (0, i.Z)(e) || null == e || null == (l = e.assets) ? void 0 : l.small_image,
     b = null != g ? {

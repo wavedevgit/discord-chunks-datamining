@@ -5,8 +5,8 @@ n.d(t, {
 }), n(539854);
 var r = n(88315),
   i = n(199766),
-  a = n(813900);
-let o = 6,
+  o = n(813900);
+let a = 6,
   s = 1500;
 
 function l(e) {
@@ -45,7 +45,7 @@ function l(e) {
       fillColor: v,
       outlineColor: I
     } = (0, r.bg)(t.userId, d, f, u),
-    T = O(I, o + a.q2),
+    T = O(I, a + o.q2),
     S = null != T && b(T);
-  S && (0, i.I)(n, T.x, T.y, I, a.q2), O(v, o), S && (0, i.T)(n, T.x, T.y, t.userId)
+  S && (0, i.I)(n, T.x, T.y, I, o.q2), O(v, a), S && (0, i.T)(n, T.x, T.y, t.userId)
 }

@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685), n(781311);
 var r = n(255367),
   i = n(73800),
-  a = n(442837),
-  o = n(544891),
+  o = n(442837),
+  a = n(544891),
   s = n(481060),
   l = n(570140),
   c = n(466721),
@@ -17,19 +17,19 @@ var r = n(255367),
 let p = new Map;
 
 function h(e) {
-  let [t, n] = i.useState(!1), r = (0, a.e7)([u.default], () => u.default.locale);
+  let [t, n] = i.useState(!1), r = (0, o.e7)([u.default], () => u.default.locale);
   return {
-    handleTranslate: i.useCallback(async (i, a) => {
+    handleTranslate: i.useCallback(async (i, o) => {
       var c, u;
       if (t) return;
       let _ = null != i ? i : r;
       n(!0);
-      let h = null != (u = null != a ? a : null == (c = (0, f.getAvailableLocales)().find(e => e.value === _)) ? void 0 : c.name) ? u : _;
+      let h = null != (u = null != o ? o : null == (c = (0, f.getAvailableLocales)().find(e => e.value === _)) ? void 0 : c.name) ? u : _;
       p.has(e.id) || p.set(e.id, e.content), (0, s.showToast)((0, s.createToast)(f.intl.formatToPlainString(f.t.Znl8Z2, {
         targetLanguage: h
       }), s.ToastType.AI));
       try {
-        let t = await o.tn.post({
+        let t = await a.tn.post({
           url: d.ANM.AI_TRANSLATE,
           body: {
             content: e.content,
@@ -68,26 +68,26 @@ function h(e) {
 }
 
 function m(e, t) {
-  let a = (0, f.getAvailableLocales)();
-  return i.useMemo(() => a.map(i => {
-    let a;
+  let o = (0, f.getAvailableLocales)();
+  return i.useMemo(() => o.map(i => {
+    let o;
     try {
-      a = n(621287)("./".concat(i.value, ".png"))
+      o = n(621287)("./".concat(i.value, ".png"))
     } catch (e) {
-      a = n(1474)
+      o = n(1474)
     }
     return (0, r.jsx)(s.sNh, {
       id: "translate-".concat(i.value),
       label: i.name,
       icon: () => (0, r.jsx)("img", {
         alt: "",
-        src: a,
+        src: o,
         className: _.flagIcon
       }),
       action: () => e(i.value, i.name),
       disabled: t
     }, i.value)
-  }), [e, t, a])
+  }), [e, t, o])
 }
 
 function g(e, t) {
@@ -96,22 +96,22 @@ function g(e, t) {
     }),
     {
       handleTranslate: i,
-      handleRevertTranslation: a,
-      isTranslating: o,
+      handleRevertTranslation: o,
+      isTranslating: a,
       isTranslated: l
     } = h(e),
-    u = m(i, o);
+    u = m(i, a);
   return null != e.content && "" !== e.content.trim() && (null == n ? void 0 : n.enableAIFeatures) ? l ? (0, r.jsx)(s.sNh, {
     id: "revert-translation",
     label: f.intl.string(f.t.JC9BXl),
     icon: s.os0,
-    action: a,
-    disabled: o
+    action: o,
+    disabled: a
   }) : (0, r.jsx)(s.sNh, {
     id: "translate",
-    label: o ? f.intl.string(f.t.SVKIdX) : f.intl.string(f.t["6epDlZ"]),
+    label: a ? f.intl.string(f.t.SVKIdX) : f.intl.string(f.t["6epDlZ"]),
     action: () => i(),
-    disabled: o,
+    disabled: a,
     children: u
   }) : null
 }

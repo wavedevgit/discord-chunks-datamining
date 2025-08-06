@@ -1,12 +1,12 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  D$: () => R,
-  N4: () => j,
-  UI: () => w,
+  D$: () => P,
+  N4: () => k,
+  UI: () => R,
   Uu: () => S,
-  cS: () => P,
-  cZ: () => M,
+  cS: () => w,
+  cZ: () => j,
   e1: () => B,
   eQ: () => C,
   fw: () => N,
@@ -15,8 +15,8 @@ n.d(t, {
 }), n(704826), n(35282), n(388685), n(781311);
 var r = n(392711),
   i = n.n(r),
-  a = n(772848),
-  o = n(468194),
+  o = n(772848),
+  a = n(468194),
   s = n(442837),
   l = n(333023),
   c = n(566006),
@@ -80,7 +80,7 @@ function S() {
 }
 
 function A() {
-  return (0, a.Z)()
+  return (0, o.Z)()
 }
 
 function N(e) {
@@ -94,15 +94,15 @@ function C(e) {
   return !1
 }
 
-function w(e) {
+function R(e) {
   return (0, s.e7)([p.Z], () => null != e && e.id !== l.V && !!b.TPd.POLLS.has(e.type) && (!!e.isPrivate() || p.Z.can(b.Plq.SEND_MESSAGES, e) && p.Z.can(b.Plq.SEND_POLLS, e)))
 }
 
-function R(e, t) {
-  return 0 === e.length && null == t.find(e => P(e))
+function P(e, t) {
+  return 0 === e.length && null == t.find(e => w(e))
 }
 
-function P(e) {
+function w(e) {
   var t;
   let n = null == (t = e.text) ? void 0 : t.trim();
   return null != n && n.length > 0
@@ -124,7 +124,7 @@ function x(e) {
   let n = null == e || null == (t = e.answers) ? void 0 : t.map((e, t) => {
       var n, r;
       let i = null == (n = e.poll_media) ? void 0 : n.emoji,
-        a = T(v({}, e.poll_media), {
+        o = T(v({}, e.poll_media), {
           emoji: null != i ? {
             id: i.id,
             name: null != (r = i.name) ? r : ""
@@ -132,7 +132,7 @@ function x(e) {
         });
       return T(v({}, e), {
         answer_id: t + 1,
-        poll_media: a
+        poll_media: o
       })
     }),
     r = (null == e ? void 0 : e.duration) != null ? L(e.duration) : "0";
@@ -142,22 +142,22 @@ function x(e) {
   })
 }
 
-function k(e, t) {
-  var n, r, i, a;
-  let s = null != (a = null == (i = e.embeds[0]) || null == (r = i.fields) || null == (n = r.find(e => "poll_question_text" === e.rawName)) ? void 0 : n.rawValue) ? a : "";
-  return null != t ? (0, o.aF)(s, t) : s
+function M(e, t) {
+  var n, r, i, o;
+  let s = null != (o = null == (i = e.embeds[0]) || null == (r = i.fields) || null == (n = r.find(e => "poll_question_text" === e.rawName)) ? void 0 : n.rawValue) ? o : "";
+  return null != t ? (0, a.aF)(s, t) : s
 }
 
-function j(e) {
+function k(e) {
   let t = (0, u.ZH)(e),
-    n = k(e, E.Dv);
+    n = M(e, E.Dv);
   return y.intl.format(y.t.Vn97KS, {
     username: t.nick,
     title: n
   })
 }
 
-function M(e) {
+function j(e) {
   return e.reduce((e, t) => {
     var n, r;
     return e + (null != (r = null == (n = t.count_details) ? void 0 : n.vote) ? r : 0)
@@ -171,11 +171,11 @@ function U(e, t) {
       name: "",
       animated: !1
     },
-    a = e.getChannelId(),
-    o = f.Z.getReactions(a, e.id, r, E.$J, c.O.VOTE),
-    s = d.Z.getChannel(a),
+    o = e.getChannelId(),
+    a = f.Z.getReactions(o, e.id, r, E.$J, c.O.VOTE),
+    s = d.Z.getChannel(o),
     l = null == s || s.isPrivate() ? null : s.getGuildId();
-  return i()(Array.from(null != (n = null == o ? void 0 : o.values()) ? n : [])).reject(e => h.Z.isBlockedOrIgnored(e.id)).take(E.$J).map(e => g.ZP.getName(l, null == s ? void 0 : s.id, e)).value()
+  return i()(Array.from(null != (n = null == a ? void 0 : a.values()) ? n : [])).reject(e => h.Z.isBlockedOrIgnored(e.id)).take(E.$J).map(e => g.ZP.getName(l, null == s ? void 0 : s.id, e)).value()
 }
 
 function G(e, t) {
@@ -212,14 +212,14 @@ function G(e, t) {
 
 function B(e, t, n) {
   var r, i;
-  let a = _.Z.getMessage(t, e);
-  if (null == a) return "";
-  let o = a.getReaction({
+  let o = _.Z.getMessage(t, e);
+  if (null == o) return "";
+  let a = o.getReaction({
       id: n,
       name: "",
       animated: !1
     }),
-    s = null != (i = null == o || null == (r = o.count_details) ? void 0 : r.vote) ? i : 0,
-    l = U(a, n);
+    s = null != (i = null == a || null == (r = a.count_details) ? void 0 : r.vote) ? i : 0,
+    l = U(o, n);
   return 0 === l.length ? "" : G(l, s)
 }

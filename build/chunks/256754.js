@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(255367),
   i = n(481060),
-  a = n(626135),
-  o = n(598117),
+  o = n(626135),
+  a = n(598117),
   s = n(981631);
 
 function l(e, t, n) {
@@ -53,7 +53,7 @@ let f = async function() {
     guildId: t = null,
     analyticsLocation: l = null
   } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
-  a.default.track(s.rMx.OPEN_MODAL, {
+  o.default.track(s.rMx.OPEN_MODAL, {
     type: "Emoji Studio",
     source: l
   }), await (0, i.ZDy)(async () => {
@@ -65,6 +65,6 @@ let f = async function() {
       guildId: t
     }))
   }, {
-    modalKey: o.Hj
+    modalKey: a.Hj
   })
 }

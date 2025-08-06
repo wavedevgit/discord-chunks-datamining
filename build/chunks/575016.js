@@ -8,8 +8,8 @@ n.d(t, {
 });
 var r = n(73800),
   i = n(913527),
-  a = n.n(i),
-  o = n(442837),
+  o = n.n(i),
+  a = n(442837),
   s = n(493683),
   l = n(336197),
   c = n(131704),
@@ -31,19 +31,19 @@ function p(e) {
     isOverdue: !1
   };
   let i = 0 === r ? f.t.TjNWND : f.t.H4gnX1,
-    o = 0 === r ? f.t.haia19 : f.t["Uq7Y+/"],
+    a = 0 === r ? f.t.haia19 : f.t["Uq7Y+/"],
     s = n > t,
-    l = s ? o : i;
+    l = s ? a : i;
   return {
     dueInText: f.intl.formatToPlainString(l, {
-      duration: a().duration(t.getTime() - n.getTime(), "millisecond").humanize()
+      duration: o().duration(t.getTime() - n.getTime(), "millisecond").humanize()
     }),
     isOverdue: s
   }
 }
 
 function h(e) {
-  let t = (0, o.e7)([u.Z], () => u.Z.getChannel(e.saveData.channelId));
+  let t = (0, a.e7)([u.Z], () => u.Z.getChannel(e.saveData.channelId));
   return r.useMemo(() => null != t ? t : null != e.message ? new c.nl({
     id: e.saveData.channelId,
     guild_id: e.saveData.guildId,

@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(255367),
   i = n(73800),
-  a = n(793030),
-  o = n(974223);
+  o = n(793030),
+  a = n(974223);
 
 function s(e) {
   let {
@@ -23,7 +23,7 @@ function s(e) {
     size: t,
     fullWidth: _
   }), [t, _]);
-  return (0, r.jsx)(a.Kq, {
+  return (0, r.jsx)(o.Kq, {
     direction: n,
     gap: 8,
     justify: s,
@@ -31,7 +31,7 @@ function s(e) {
     wrap: f,
     padding: c,
     className: u,
-    children: (0, r.jsx)(o.u.Provider, {
+    children: (0, r.jsx)(a.u.Provider, {
       value: p,
       children: d
     })

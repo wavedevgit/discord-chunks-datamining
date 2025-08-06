@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(255367),
   i = n(73800),
-  a = n(442837),
-  o = n(481060),
+  o = n(442837),
+  a = n(481060),
   s = n(607070),
   l = n(665906),
   c = n(314897),
@@ -25,19 +25,19 @@ function h(e) {
   let {
     channel: t,
     isLastItem: n
-  } = e, i = (0, a.e7)([s.Z], () => s.Z.useReducedMotion), h = (0, a.e7)([u.Z], () => u.Z.can(d.Plq.SEND_MESSAGES_IN_THREADS, t)), m = (0, l.Gu)(t), g = (0, a.e7)([c.default], () => c.default.getId());
+  } = e, i = (0, o.e7)([s.Z], () => s.Z.useReducedMotion), h = (0, o.e7)([u.Z], () => u.Z.can(d.Plq.SEND_MESSAGES_IN_THREADS, t)), m = (0, l.Gu)(t), g = (0, o.e7)([c.default], () => c.default.getId());
   return n ? h && !m && t.ownerId !== g ? (0, r.jsxs)("div", {
     className: _.box,
-    children: [(0, r.jsx)(o.Fmz, {
+    children: [(0, r.jsx)(a.Fmz, {
       importData: p,
       shouldAnimate: !i,
       className: _.animation
     }), (0, r.jsxs)("div", {
       className: _.textContainer,
-      children: [(0, r.jsx)(o.X6q, {
+      children: [(0, r.jsx)(a.X6q, {
         variant: "heading-md/semibold",
         children: f.intl.string(f.t.OmBThI)
-      }), (0, r.jsx)(o.Text, {
+      }), (0, r.jsx)(a.Text, {
         variant: "text-sm/normal",
         color: "header-secondary",
         children: f.intl.string(f.t.zcs5kp)

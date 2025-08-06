@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   Ku: () => i,
-  ZP: () => a
+  ZP: () => o
 });
 let r = (0, n(818083).B)({
   kind: "user",
@@ -30,4 +30,4 @@ function i(e, t) {
   });
   return n
 }
-let a = r
+let o = r

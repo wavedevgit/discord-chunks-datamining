@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var i = n(755721),
-  a = n(481060),
-  o = n(395361),
+  o = n(481060),
+  a = n(395361),
   s = n(829820),
   l = n(862863);
 
@@ -31,7 +31,7 @@ function c(e) {
   } = (0, s.Ih)(t, n, c), O = () => {
     null == h || h(), y()
   };
-  return (0, r.jsx)(a.ua7, {
+  return (0, r.jsx)(o.ua7, {
     text: g,
     children: e => {
       let {
@@ -50,7 +50,7 @@ function c(e) {
         onMouseLeave: n,
         disabled: b,
         submitting: E,
-        children: [(0, r.jsx)(o.Z, {
+        children: [(0, r.jsx)(a.Z, {
           width: 16,
           height: 16
         }), m]

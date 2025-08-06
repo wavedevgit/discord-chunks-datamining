@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(286379),
   i = n(797614),
-  a = n(446276),
-  o = n(46140);
+  o = n(446276),
+  a = n(46140);
 
 function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -20,7 +20,7 @@ let l = 3e4,
   c = .1;
 class u {
   isEligible() {
-    return (0, a.M)(o.dr.QUESTS_BAR)
+    return (0, o.M)(a.dr.QUESTS_BAR)
   }
   clearTimeoutTimer() {
     null != this.timeoutTimer && (clearTimeout(this.timeoutTimer), this.timeoutTimer = null)

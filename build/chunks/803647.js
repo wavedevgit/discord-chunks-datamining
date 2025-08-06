@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(846027),
   i = n(872810),
-  a = n(314897),
-  o = n(569545);
+  o = n(314897),
+  a = n(569545);
 
 function s(e) {
   let t = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1],
@@ -17,11 +17,11 @@ function s(e) {
     guildId: l,
     channelId: c,
     ownerId: u
-  } = e, d = (0, o.V9)({
+  } = e, d = (0, a.V9)({
     streamType: s,
     guildId: l,
     channelId: c,
     ownerId: u
   });
-  u === a.default.getId() && r.Z.setGoLiveSource(null), i.g(d, t, n)
+  u === o.default.getId() && r.Z.setGoLiveSource(null), i.g(d, t, n)
 }

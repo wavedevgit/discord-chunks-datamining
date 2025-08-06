@@ -7,8 +7,8 @@ n.d(t, {
 });
 var r = n(442837),
   i = n(569545),
-  a = n(314897),
-  o = n(19780),
+  o = n(314897),
+  a = n(19780),
   s = n(98369),
   l = n(277642),
   c = n(441894);
@@ -20,24 +20,24 @@ function u(e) {
   } = e, i = (0, c.J)({
     channelId: n
   });
-  return (0, r.e7)([s.Z, a.default, o.Z], () => null != t && i && o.Z.isUserConnected(t) && a.default.getId() !== t && s.Z.isUserVerified(t), [i, t])
+  return (0, r.e7)([s.Z, o.default, a.Z], () => null != t && i && a.Z.isUserConnected(t) && o.default.getId() !== t && s.Z.isUserVerified(t), [i, t])
 }
 
 function d(e) {
   let {
     streamKey: t,
     channelId: n
-  } = e, o = (0, c.J)({
+  } = e, a = (0, c.J)({
     channelId: n
   }), u = (0, l.t)(t);
-  return (0, r.e7)([s.Z, a.default], () => {
-    if (!o || u || null == t) return !1;
-    let e = a.default.getId(),
+  return (0, r.e7)([s.Z, o.default], () => {
+    if (!a || u || null == t) return !1;
+    let e = o.default.getId(),
       {
         ownerId: n
       } = (0, i.my)(t);
     return n !== e && s.Z.isStreamVerified(t)
-  }, [u, o, t])
+  }, [u, a, t])
 }
 
 function f(e) {

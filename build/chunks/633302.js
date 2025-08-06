@@ -7,8 +7,8 @@ n.d(t, {
 }), n(388685), n(415506), n(49124), n(35282), n(704826), n(413496), n(433524), n(539854);
 var r = n(392711),
   i = n.n(r),
-  a = n(336317),
-  o = n(176354),
+  o = n(336317),
+  a = n(176354),
   s = n(906411);
 
 function l(e, t, n) {
@@ -84,7 +84,7 @@ class A {
   }
   get url() {
     let e = this.defaultDiversityChild;
-    return null != e ? o.ZP.getURL(e.surrogates) : o.ZP.getURL(this.surrogates)
+    return null != e ? a.ZP.getURL(e.surrogates) : a.ZP.getURL(this.surrogates)
   }
   get name() {
     if (this.hasDiversity && null != c) {
@@ -123,19 +123,19 @@ function N(e) {
 }
 
 function C(e) {
-  let t = a.Z.convert.toCodePoint(e);
+  let t = o.Z.convert.toCodePoint(e);
   return null != t ? t : ""
 }
 
-function w(e) {
+function R(e) {
   c = null != e && "" !== e ? e : null
 }
 
-function R() {
+function P() {
   return c
 }
 
-function P() {
+function w() {
   return Object.keys(b)
 }
 
@@ -149,20 +149,20 @@ function x(e) {
   let t = L.get(e);
   if (null == t) {
     let n = b[e];
-    t = o.ZP.filterUnsupportedEmojis(E.slice(n[0], n[1])).map(N), L.set(e, t)
+    t = a.ZP.filterUnsupportedEmojis(E.slice(n[0], n[1])).map(N), L.set(e, t)
   }
   return t
 }
 
-function k(e) {
+function M(e) {
   return m.test(e)
 }
 
-function j(e) {
+function k(e) {
   return e.replace(_, (e, t) => H(t, e))
 }
 
-function M(e) {
+function j(e) {
   var t;
   let n = null == (t = S(e)) ? void 0 : t.names[0];
   return null != n ? {
@@ -180,26 +180,26 @@ let U = String.fromCodePoint(917631),
 
 function Z(e, t) {
   var n;
-  if (!0 !== t && !k(e)) return [{
+  if (!0 !== t && !M(e)) return [{
     type: "text",
     text: e
   }];
   let r = "",
     i = [],
-    a = null != (n = e.match(g)) ? n : [];
-  for (let e = 0; e < a.length; e++) {
-    let t = a[e];
+    o = null != (n = e.match(g)) ? n : [];
+  for (let e = 0; e < o.length; e++) {
+    let t = o[e];
     if (null != r && "" !== r)
       if (t === U) t = r + t, r = "";
       else if (B.test(t)) {
       r += t;
       continue
-    } else i.push(M(r)), r = "";
+    } else i.push(j(r)), r = "";
     else if (t === G) {
       r = t;
       continue
     }
-    let n = M(t);
+    let n = j(t);
     if (i.length > 0) {
       let e = i[i.length - 1];
       if ("text" === n.type && "text" === e.type) {
@@ -209,7 +209,7 @@ function Z(e, t) {
     }
     i.push(n)
   }
-  return null != r && "" !== r && i.push(M(r)), i
+  return null != r && "" !== r && i.push(j(r)), i
 }
 
 function F(e) {
@@ -217,7 +217,7 @@ function F(e) {
 }
 
 function V(e) {
-  if (!k(e)) return null;
+  if (!M(e)) return null;
   let t = Z(e, !0).map(e => "text" === e.type ? e.text : e.emojiName).join("");
   return t === e ? null : t
 }
@@ -232,21 +232,21 @@ function Y(e) {
   var t, n;
   let r = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1],
     i = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : "",
-    a = null != (n = null == (t = S(e)) ? void 0 : t.names[0]) ? n : i;
-  return r ? ":".concat(a, ":") : a
+    o = null != (n = null == (t = S(e)) ? void 0 : t.names[0]) ? n : i;
+  return r ? ":".concat(o, ":") : o
 }
 
 function W(e) {
   return D(Y(d.reduce((e, t) => e.replace(t, ""), e), !1))
 }
 let K = {
-  getDefaultDiversitySurrogate: R,
-  setDefaultDiversitySurrogate: w,
-  getCategories: P,
+  getDefaultDiversitySurrogate: P,
+  setDefaultDiversitySurrogate: R,
+  getCategories: w,
   getByName: D,
   getByCategory: x,
-  contentHasUnicodeOrEmoji: k,
-  translateInlineEmojiToSurrogates: j,
+  contentHasUnicodeOrEmoji: M,
+  translateInlineEmojiToSurrogates: k,
   maybeTranslateSurrogatesToInlineEmoji: V,
   findInlineEmojisFromSurrogates: Z,
   translateSurrogatesToInlineEmoji: F,

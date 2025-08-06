@@ -1,11 +1,11 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => k
+  Z: () => M
 });
 var r, i = n(442837),
-  a = n(780384),
-  o = n(570140),
+  o = n(780384),
+  a = n(570140),
   s = n(607070),
   l = n(541049),
   c = n(765287),
@@ -70,7 +70,7 @@ function A() {
 }
 class N extends(r = i.ZP.PersistedStore) {
   initialize(e) {
-    (null == e ? void 0 : e.theme) != null && (y = 1, I = e.theme, (0, u.Z)(I), null != e.preferences && (O = e.preferences), (0, a.wj)(I) && (O[p.zd.DARK] = I)), this.waitFor(f.ZP, d.Z, _.Z, s.Z)
+    (null == e ? void 0 : e.theme) != null && (y = 1, I = e.theme, (0, u.Z)(I), null != e.preferences && (O = e.preferences), (0, o.wj)(I) && (O[p.zd.DARK] = I)), this.waitFor(f.ZP, d.Z, _.Z, s.Z)
   }
   getState() {
     return {
@@ -96,15 +96,15 @@ function C() {
   }), y = 1), A()
 }
 
-function w() {
-  return (0, a.ap)(S())
-}
-
-function R(e) {
-  return T = null, !e.isSwitchingAccount && I !== h.BRd.DARK && (I = h.BRd.DARK, (0, u.Z)(I), A())
+function R() {
+  return (0, o.ap)(S())
 }
 
 function P(e) {
+  return T = null, !e.isSwitchingAccount && I !== h.BRd.DARK && (I = h.BRd.DARK, (0, u.Z)(I), A())
+}
+
+function w(e) {
   let {
     systemTheme: t
   } = e;
@@ -128,17 +128,17 @@ m(N, "displayName", "ThemeStore"), m(N, "persistKey", "ThemeStore"), m(N, "migra
     theme: t
   })
 }, e => e]);
-let k = new N(o.Z, {
+let M = new N(a.Z, {
   CACHE_LOADED: A,
   CONNECTION_OPEN: C,
-  LOGOUT: R,
+  LOGOUT: P,
   OVERLAY_INITIALIZE: A,
   SELECTIVELY_SYNCED_USER_SETTINGS_UPDATE: A,
   UNSYNCED_USER_SETTINGS_UPDATE: A,
   USER_SETTINGS_PROTO_UPDATE: A,
   RESET_PREVIEW_CLIENT_THEME: A,
-  SYSTEM_THEME_CHANGE: P,
-  ACCESSIBILITY_DARK_SIDEBAR_TOGGLE: w,
+  SYSTEM_THEME_CHANGE: w,
+  ACCESSIBILITY_DARK_SIDEBAR_TOGGLE: R,
   UPDATE_THEME_PREFERENCES: D,
   SET_THEME_OVERRIDE: L,
   CLEAR_THEME_OVERRIDE: x

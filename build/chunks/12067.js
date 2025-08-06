@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var i = n(442837),
-  a = n(768494),
-  o = n(549635),
+  o = n(768494),
+  a = n(549635),
   s = n(169525),
   l = n(499376),
   c = n(611170),
@@ -31,7 +31,7 @@ function E(e) {
     getOnMediaItemContextMenu: v
   } = (0, u.c)();
   if (null == t || null == n) return null;
-  let I = e.items.map(e => (0, o.ze)(e.media, t)).filter(e => "INVALID" !== e.type),
+  let I = e.items.map(e => (0, a.ze)(e.media, t)).filter(e => "INVALID" !== e.type),
     {
       srcToOnClickOverride: T,
       srcToHandlePreloadImage: S
@@ -51,7 +51,7 @@ function E(e) {
   let N = e.items.map((e, n) => {
     let r = e.media,
       i = (e, t, n) => {},
-      o = null == v ? void 0 : v(r),
+      a = null == v ? void 0 : v(r),
       s = {
         message: t,
         item: {
@@ -63,9 +63,9 @@ function E(e) {
           width: r.width,
           spoiler: e.spoiler,
           contentType: r.contentType,
-          srcIsAnimated: (0, h.yE)(r.flags, a.hR.IS_ANIMATED)
+          srcIsAnimated: (0, h.yE)(r.flags, o.hR.IS_ANIMATED)
         },
-        onContextMenu: o,
+        onContextMenu: a,
         autoPlayGif: y,
         getObscureReason: A,
         renderImageComponent: c.aB,

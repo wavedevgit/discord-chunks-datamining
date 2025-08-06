@@ -4,9 +4,9 @@ n.d(t, {
   Z: () => g
 }), n(388685);
 var r, i = n(255367),
-  a = n(73800),
-  o = n(120356),
-  s = n.n(o),
+  o = n(73800),
+  a = n(120356),
+  s = n.n(a),
   l = n(755721),
   c = n(481060),
   u = n(388032),
@@ -35,15 +35,15 @@ function _(e) {
 }
 let p = 100,
   h = "search";
-class m extends(r = a.Component) {
+class m extends(r = o.Component) {
   render() {
     let {
       autoFocus: e,
       label: t,
       placeholder: n,
       searchTerm: r,
-      inputClassName: a,
-      className: o,
+      inputClassName: o,
+      className: a,
       onChange: f,
       onFocus: _,
       onBlur: m,
@@ -58,7 +58,7 @@ class m extends(r = a.Component) {
       focusTarget: T,
       ringTarget: this._containerRef,
       children: (0, i.jsxs)("div", {
-        className: s()(d.searchBox, o),
+        className: s()(d.searchBox, a),
         ref: this._containerRef,
         children: [(0, i.jsx)(l.Is, {
           inputRef: T,
@@ -68,7 +68,7 @@ class m extends(r = a.Component) {
           name: h,
           maxLength: p,
           className: d.searchBoxInputWrapper,
-          inputClassName: s()(d.searchBoxInput, a),
+          inputClassName: s()(d.searchBoxInput, o),
           onChange: f,
           onFocus: _,
           onBlur: m,
@@ -102,7 +102,7 @@ class m extends(r = a.Component) {
     })
   }
   constructor(...e) {
-    super(...e), f(this, "_textInputRef", a.createRef()), f(this, "_containerRef", a.createRef()), f(this, "handleClear", () => {
+    super(...e), f(this, "_textInputRef", o.createRef()), f(this, "_containerRef", o.createRef()), f(this, "handleClear", () => {
       let {
         onClear: e,
         forwardedRef: t
@@ -116,6 +116,6 @@ class m extends(r = a.Component) {
 f(m, "defaultProps", {
   autoComplete: !1
 });
-let g = a.forwardRef((e, t) => (0, i.jsx)(m, _({
+let g = o.forwardRef((e, t) => (0, i.jsx)(m, _({
   forwardedRef: t
 }, e)))

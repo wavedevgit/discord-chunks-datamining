@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var i = n(481060),
-  a = n(626135),
-  o = n(687683),
+  o = n(626135),
+  a = n(687683),
   s = n(981631);
 
 function l(e, t, n) {
@@ -39,8 +39,8 @@ function u(e) {
     onConfirm: l,
     onCancel: u
   } = e;
-  a.default.track(s.rMx.OPEN_MODAL, {
-    type: o.t9,
+  o.default.track(s.rMx.OPEN_MODAL, {
+    type: a.t9,
     channel_id: t
   }), (0, i.ZDy)(async () => {
     let {
@@ -56,7 +56,7 @@ function u(e) {
 function d(e) {
   let {
     onConfirm: t,
-    onCancel: a
+    onCancel: o
   } = e;
   (0, i.ZDy)(async () => {
     let {
@@ -64,7 +64,7 @@ function d(e) {
     } = await n.e("7649").then(n.bind(n, 797464));
     return n => (0, r.jsx)(e, c({
       onConfirm: t,
-      onDismiss: a
+      onDismiss: o
     }, n))
   })
 }

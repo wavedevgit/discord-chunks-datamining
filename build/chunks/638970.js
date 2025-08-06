@@ -1,12 +1,12 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => j
+  Z: () => k
 }), n(388685), n(539854);
 var r = n(255367),
   i = n(73800),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(442837),
   l = n(755721),
   c = n(481060),
@@ -38,7 +38,7 @@ function C(e, t, n) {
   }) : e[t] = n, e
 }
 
-function w(e) {
+function R(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -51,7 +51,7 @@ function w(e) {
   return e
 }
 
-function R(e, t) {
+function P(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -62,8 +62,8 @@ function R(e, t) {
   return n
 }
 
-function P(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : R(Object(t)).forEach(function(n) {
+function w(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : P(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -73,17 +73,17 @@ let D = 250,
 function x(e, t) {
   switch (t.type) {
     case "MEASUREMENT_COMPLETE":
-      return P(w({}, e), {
+      return w(R({}, e), {
         animationPhase: "ready",
         height: t.height
       });
     case "START_EXPAND_ANIMATION":
-      return P(w({}, e), {
+      return w(R({}, e), {
         animationPhase: "animating",
         height: t.height
       });
     case "ANIMATION_COMPLETE":
-      return P(w({}, e), {
+      return w(R({}, e), {
         animationPhase: "done",
         height: "auto"
       });
@@ -91,23 +91,23 @@ function x(e, t) {
       return (0, m.vE)(t)
   }
 }
-let k = {
+let M = {
   animationPhase: "awaitingInput",
   height: "auto"
 };
 
-function j(e) {
+function k(e) {
   let {
     user: t,
     currentUser: n,
-    displayProfile: a,
+    displayProfile: o,
     guildId: m,
     onOpenUserProfileModal: C,
-    onClose: R
-  } = e, P = (0, _.Dt)(), {
-    analyticsLocations: j
+    onClose: P
+  } = e, w = (0, _.Dt)(), {
+    analyticsLocations: k
   } = (0, f.ZP)(), {
-    trackUserProfileAction: M
+    trackUserProfileAction: j
   } = (0, g.KZ)(), {
     live: U,
     stream: G
@@ -124,36 +124,36 @@ function j(e) {
     voiceActivityStatusEnabled: H
   } = (0, d.U)({
     location: "UserProfileStackedActivity"
-  }), Y = H && null == G && null == Z && null != B, W = (0, y.yi)(), K = (null == W ? void 0 : W.interactionSource) === T.n_.ACTIVITY, z = i.useRef(null), q = i.useRef(null), $ = i.useRef(null), X = i.useRef(null), [Q, J] = i.useReducer(x, k), {
+  }), Y = H && null == G && null == Z && null != B, W = (0, y.yi)(), K = (null == W ? void 0 : W.interactionSource) === T.n_.ACTIVITY, z = i.useRef(null), q = i.useRef(null), X = i.useRef(null), Q = i.useRef(null), [J, $] = i.useReducer(x, M), {
     height: ee,
     animationPhase: et
-  } = Q, en = "awaitingInput" !== et, er = "animating" === et || "done" === et, ei = [], ea = {
+  } = J, en = "awaitingInput" !== et, er = "animating" === et || "done" === et, ei = [], eo = {
     user: t,
     currentUser: n,
     className: N.card,
-    onClose: R
+    onClose: P
   };
-  null != G && ei.push((0, r.jsx)(v.Z, w({
+  null != G && ei.push((0, r.jsx)(v.Z, R({
     location: "UserProfileStackedActivity",
     stream: G,
-    profileGuildId: null == a ? void 0 : a.guildId
-  }, ea), "stream")), U.forEach((e, t) => {
-    ei.push((0, r.jsx)(O.Z, w({
+    profileGuildId: null == o ? void 0 : o.guildId
+  }, eo), "stream")), U.forEach((e, t) => {
+    ei.push((0, r.jsx)(O.Z, R({
       activity: e,
-      profileGuildId: null == a ? void 0 : a.guildId
-    }, ea), "live-".concat(t)))
-  }), Y && ei.push((0, r.jsx)(I.Z, w({
+      profileGuildId: null == o ? void 0 : o.guildId
+    }, eo), "live-".concat(t)))
+  }), Y && ei.push((0, r.jsx)(I.Z, R({
     voiceChannel: B
-  }, ea), "voice"));
-  let [eo, ...es] = ei, el = es.length > 0, ec = null != C && el ? (0, r.jsx)(l.zx, {
+  }, eo), "voice"));
+  let [ea, ...es] = ei, el = es.length > 0, ec = null != C && el ? (0, r.jsx)(l.zx, {
     look: l.zx.Looks.BLANK,
     size: l.zx.Sizes.NONE,
     color: l.zx.Colors.TRANSPARENT,
-    className: o()(N.viewAllButton, er && N.isShown),
+    className: a()(N.viewAllButton, er && N.isShown),
     onClick: () => {
-      M({
+      j({
         action: "PRESS_VIEW_PROFILE",
-        analyticsLocations: j
+        analyticsLocations: k
       }), C({
         section: T.oh.ACTIVITY
       })
@@ -164,36 +164,36 @@ function j(e) {
       children: A.intl.string(A.t.pD1L1t)
     })
   }) : null, eu = i.useCallback(() => {
-    if (null == z.current || null == $.current) return;
-    M({
+    if (null == z.current || null == X.current) return;
+    j({
       action: "PRESS_SHOW_MORE_ACTIVITY",
-      analyticsLocations: j
+      analyticsLocations: k
     });
     let e = z.current.getBoundingClientRect().height,
-      t = $.current.getBoundingClientRect().height;
-    J({
+      t = X.current.getBoundingClientRect().height;
+    $({
       type: "MEASUREMENT_COMPLETE",
       height: e
     }), requestAnimationFrame(() => {
-      J({
+      $({
         type: "START_EXPAND_ANIMATION",
         height: e + t - L
-      }), X.current = setTimeout(() => {
+      }), Q.current = setTimeout(() => {
         var e;
-        J({
+        $({
           type: "ANIMATION_COMPLETE",
           height: "auto"
         }), null == (e = q.current) || e.focus()
       }, D)
     })
-  }, [j, M]);
+  }, [k, j]);
   return ((0, u.zq)(() => {
-    null != X.current && window.clearTimeout(X.current)
+    null != Q.current && window.clearTimeout(Q.current)
   }), V || 0 === ei.length) ? null : (0, r.jsxs)("section", {
-    "aria-labelledby": P,
+    "aria-labelledby": w,
     children: [(0, r.jsx)(c.nn4, {
       children: (0, r.jsx)(c.H, {
-        id: P,
+        id: w,
         children: A.intl.string(A.t.J6STd3)
       })
     }), (0, r.jsxs)("div", {
@@ -205,17 +205,17 @@ function j(e) {
       children: [(0, r.jsxs)("ul", {
         ref: q,
         className: N.cardsList,
-        "aria-labelledby": P,
+        "aria-labelledby": w,
         tabIndex: -1,
         children: [(0, r.jsxs)("li", {
-          className: o()(N.firstCardContainer, !er && es.length > 0 && N.hasShowMoreButton, K && N.isInteracting),
-          children: [eo, el && "done" !== et && (0, r.jsx)("div", {
+          className: a()(N.firstCardContainer, !er && es.length > 0 && N.hasShowMoreButton, K && N.isInteracting),
+          children: [ea, el && "done" !== et && (0, r.jsx)("div", {
             className: N.showMoreButtonContainer,
             children: (0, r.jsx)(l.zx, {
               look: l.zx.Looks.BLANK,
               size: l.zx.Sizes.NONE,
               color: l.zx.Colors.TRANSPARENT,
-              className: o()(N.showMoreButton, er && N.isHidden),
+              className: a()(N.showMoreButton, er && N.isHidden),
               onClick: eu,
               children: (0, r.jsx)(c.Text, {
                 variant: "text-xs/medium",
@@ -227,13 +227,13 @@ function j(e) {
             })
           })]
         }), el && en && es.map((e, t) => (0, r.jsx)("li", {
-          className: o()(N.remainingCardContainer, er && N.isShown),
+          className: a()(N.remainingCardContainer, er && N.isShown),
           children: e
         }, "activity-".concat(t)))]
       }), el && en && ec]
     }), el && (0, r.jsxs)("div", {
-      ref: $,
-      className: o()(N.cardsList, N.remainingCardsCopyToMeasure),
+      ref: X,
+      className: a()(N.cardsList, N.remainingCardsCopyToMeasure),
       children: [es, ec]
     })]
   })

@@ -5,8 +5,8 @@ n.d(t, {
 }), n(314940);
 var r = n(255367),
   i = n(73800),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(278074),
   l = n(263568),
   c = n(481060),
@@ -56,12 +56,12 @@ function b(e) {
     buttonLabel: t,
     secondaryLabel: n,
     handleClick: i,
-    isInteractive: a,
+    isInteractive: o,
     className: s
   } = e;
   return (0, r.jsxs)("div", {
-    className: o()(h.detailsText, s),
-    children: [a ? (0, r.jsx)(c.Avr, {
+    className: a()(h.detailsText, s),
+    children: [o ? (0, r.jsx)(c.Avr, {
       text: t,
       onClick: i,
       variant: "secondary",
@@ -98,8 +98,8 @@ function O(e) {
   let {
     action: t,
     channelId: n,
-    messageId: a,
-    isInteractive: o,
+    messageId: o,
+    isInteractive: a,
     className: s
   } = e, {
     actionButtonRef: l,
@@ -107,10 +107,10 @@ function O(e) {
   } = (0, _.dv)(), f = i.useCallback(async () => {
     (null == t ? void 0 : t.type) != null && (await u.Z.handlePollActionTapped({
       channelId: n,
-      messageId: a,
+      messageId: o,
       type: t.type
     }), d(t.type))
-  }, [null == t ? void 0 : t.type, n, a, d]);
+  }, [null == t ? void 0 : t.type, n, o, d]);
   return null == t ? null : "button" === t.presentation || "secondaryButton" === t.presentation ? (0, r.jsx)(c.zxk, {
     buttonRef: l,
     onClick: f,
@@ -128,7 +128,7 @@ function O(e) {
     buttonLabel: t.label,
     secondaryLabel: t.secondaryLabel,
     handleClick: f,
-    isInteractive: o,
+    isInteractive: a,
     className: s
   })
 }
@@ -138,9 +138,9 @@ function v(e) {
     message: t,
     poll: n,
     className: i
-  } = e, a = (0, f.$B)(n.containerStyle), s = y(t, n);
+  } = e, o = (0, f.$B)(n.containerStyle), s = y(t, n);
   return null == s ? null : (0, r.jsx)("div", {
-    className: o()(h.container, a, i),
+    className: a()(h.container, o, i),
     children: (0, r.jsxs)(c.y5t, {
       children: [(0, r.jsxs)("div", {
         className: h.header,

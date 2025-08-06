@@ -4,7 +4,7 @@ let r;
 n.d(t, {
   Z: () => D
 }), n(388685), n(35282);
-var i, a, o = n(442837),
+var i, o, a = n(442837),
   s = n(433517),
   l = n(570140),
   c = n(642047),
@@ -32,7 +32,7 @@ let h = "GameStoreReportedGames",
   I = null;
 
 function T(e) {
-  var t, n, r, i, a, o, s, l;
+  var t, n, r, i, o, a, s, l;
   return {
     id: e.id,
     name: e.name,
@@ -40,8 +40,8 @@ function T(e) {
     overlay: null != (n = e.overlay) && n,
     overlayWarn: null != (r = e.overlay_warn) && r,
     overlayCompatibilityHook: null != (i = e.overlay_compatibility_hook) && i,
-    hook: null == (a = e.hook) || a,
-    aliases: null != (o = e.aliases) ? o : [],
+    hook: null == (o = e.hook) || o,
+    aliases: null != (a = e.aliases) ? a : [],
     supportsOutOfProcessOverlay: d.ZP.supportsOutOfProcessOverlay(e.overlay_methods),
     themes: null != (s = e.themes) ? s : [],
     icon: null != (l = e.icon_hash) ? l : void 0
@@ -82,11 +82,11 @@ function C() {
   r = !0
 }
 
-function w() {
+function R() {
   r = !1
 }
 
-function R(e) {
+function P(e) {
   let {
     games: t,
     etag: n
@@ -94,7 +94,7 @@ function R(e) {
   for (let e of (null != n && v !== n && (v = n), t)) A(T(e));
   r = void 0, I = Date.now()
 }
-class P extends(a = o.ZP.PersistedStore) {
+class w extends(o = a.ZP.PersistedStore) {
   initialize(e) {
     var t;
     null != e && (null != e.detectableGamesEtag && (v = e.detectableGamesEtag), null == (t = e.detectableGames) || t.forEach(e => A(e)))
@@ -145,14 +145,14 @@ class P extends(a = o.ZP.PersistedStore) {
     let r;
     if (null == e.exePath) return null;
     let i = e.exePath.split("/").pop(),
-      a = e.exePath.split("/").slice(-2).join("/");
+      o = e.exePath.split("/").slice(-2).join("/");
     if (null != e.name) {
       if (null != (r = this.getGameByName(e.name)) && null != r.executables) {
         let e = r.executables.map(e => e.name);
-        if (e.includes(i) || e.includes(a)) return r
+        if (e.includes(i) || e.includes(o)) return r
       } else if (null != r) return null
     }
-    return null != (n = null != (t = this.getGameByExecutable(i)) ? t : this.getGameByExecutable(a)) ? n : r
+    return null != (n = null != (t = this.getGameByExecutable(i)) ? t : this.getGameByExecutable(o)) ? n : r
   }
   shouldReport(e) {
     let t = null != this.getGameByName(e),
@@ -163,7 +163,7 @@ class P extends(a = o.ZP.PersistedStore) {
     O[e] = !0, s.K.set(h, O)
   }
 }
-p(P, "displayName", "GameStore"), p(P, "persistKey", "GameStore"), p(P, "migrations", [e => {
+p(w, "displayName", "GameStore"), p(w, "persistKey", "GameStore"), p(w, "migrations", [e => {
   var t, n;
   return null == e ? {
     detectableGamesEtag: "",
@@ -176,9 +176,9 @@ p(P, "displayName", "GameStore"), p(P, "persistKey", "GameStore"), p(P, "migrati
   detectableGamesEtag: "",
   detectableGames: []
 }]);
-let D = new P(l.Z, {
+let D = new w(l.Z, {
   OVERLAY_INITIALIZE: N,
   GAMES_DATABASE_FETCH: C,
-  GAMES_DATABASE_FETCH_FAIL: w,
-  GAMES_DATABASE_UPDATE: R
+  GAMES_DATABASE_FETCH_FAIL: R,
+  GAMES_DATABASE_UPDATE: P
 })

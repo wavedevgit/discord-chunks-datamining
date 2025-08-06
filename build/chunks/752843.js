@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var i = n(628028),
-  a = n(220427),
-  o = n(777207),
+  o = n(220427),
+  a = n(777207),
   s = n(692547),
   l = n(330711),
   c = n(914439);
@@ -18,7 +18,7 @@ function u(e) {
     type: t
   } = e;
   return (0, r.jsx)(d, {
-    icon: "user" === t ? (0, r.jsx)(a.t, {
+    icon: "user" === t ? (0, r.jsx)(o.t, {
       size: "xxs",
       color: s.Z.colors.INTERACTIVE_NORMAL
     }) : (0, r.jsx)(i.Q, {
@@ -36,7 +36,7 @@ function d(e) {
   } = e;
   return (0, r.jsxs)("div", {
     className: c.container,
-    children: [t, (0, r.jsx)(o.x, {
+    children: [t, (0, r.jsx)(a.x, {
       color: "header-primary",
       variant: "text-sm/medium",
       children: n

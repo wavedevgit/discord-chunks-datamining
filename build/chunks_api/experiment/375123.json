@@ -1,0 +1,1 @@
+{"id":"375123","type":"experiment","data":{"kind":"user","id":"2025-07_search_author_type_filter","label":"Search Author Type Filter","defaultConfig":{"enabled":false},"treatments":[{"id":1,"label":"Enabled","config":{"enabled":false}}]},"fromModule":{"id":"web.js"}}

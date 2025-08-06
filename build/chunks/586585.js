@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var i = n(793030),
-  a = n(179538),
-  o = n(159691),
+  o = n(179538),
+  a = n(159691),
   s = n(755721),
   l = n(481060),
   c = n(600164),
@@ -63,7 +63,7 @@ let b = e => {
       primaryIcon: t,
       primaryCTA: n,
       primaryType: i,
-      primaryText: a,
+      primaryText: o,
       primaryDisabled: c,
       primarySubmitting: u,
       onPrimary: d,
@@ -81,8 +81,8 @@ let b = e => {
         color: "currentColor",
         className: _.primaryIcon
       })
-    })) : (0, r.jsx)(o.zx, h(g(h({}, p), {
-      text: a,
+    })) : (0, r.jsx)(a.zx, h(g(h({}, p), {
+      text: o,
       loading: u,
       variant: 0 === n ? "primary" : "active",
       icon: null == t ? void 0 : () => (0, r.jsx)(t, {
@@ -95,7 +95,7 @@ let b = e => {
     let {
       onBack: t,
       backText: n,
-      primaryIcon: o,
+      primaryIcon: a,
       primaryCTA: s,
       primaryType: _,
       primaryText: p,
@@ -108,7 +108,7 @@ let b = e => {
     } = (0, u.JL)(), I = () => {
       if (null == s || null == p) return null;
       let e = {
-        primaryIcon: o,
+        primaryIcon: a,
         primaryCTA: s,
         primaryType: _,
         primaryText: p,
@@ -124,7 +124,7 @@ let b = e => {
       }) : (0, r.jsx)(b, g(h({}, e), {
         onPrimary: O
       }))
-    }, T = () => null == t ? null : (0, r.jsx)(a.A, {
+    }, T = () => null == t ? null : (0, r.jsx)(o.A, {
       text: null != n ? n : f.intl.string(f.t["13/7kZ"]),
       onClick: t,
       variant: "secondary"

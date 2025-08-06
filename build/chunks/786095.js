@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685), n(35282);
 var r = n(255367),
   i = n(73800),
-  a = n(481060),
-  o = n(239091),
+  o = n(481060),
+  a = n(239091),
   s = n(236413),
   l = n(727072),
   c = n(85960),
@@ -70,26 +70,26 @@ function S(e, t) {
     errorMessage: S
   } = (0, d.w)(), {
     createNewEditingRule: A
-  } = (0, d.V)(), [N, C] = i.useState(!1), [w, R] = (0, l.I2)(t), {
-    rulesByTriggerType: P,
+  } = (0, d.V)(), [N, C] = i.useState(!1), [R, P] = (0, l.I2)(t), {
+    rulesByTriggerType: w,
     updateRule: D
   } = (0, l.pH)(t), L = i.useMemo(() => {
     var e;
-    return null != (e = P[I]) ? e : []
-  }, [P]), x = 0 === L.length, k = n > L.length && !x;
+    return null != (e = w[I]) ? e : []
+  }, [w]), x = 0 === L.length, M = n > L.length && !x;
   if (!i.useMemo(() => (0, u.ze)(t), [t]) || null == e || 0 === e.length || null == t) return null;
-  let j = e.split(" "),
-    M = j.length;
+  let k = e.split(" "),
+    j = k.length;
   try {
-    (0, s.km)(j, m.RH)
+    (0, s.km)(k, m.RH)
   } catch (e) {
     return null
   }
   let U = () => {
-      N || (C(!0), R())
+      N || (C(!0), P())
     },
     G = () => {
-      null != t && ((0, o.Zy)(), p.Z.open(t, h.pNK.GUILD_AUTOMOD), setTimeout(() => {
+      null != t && ((0, a.Zy)(), p.Z.open(t, h.pNK.GUILD_AUTOMOD), setTimeout(() => {
         A(t, I, {
           triggerMetadata: {
             keywordFilter: [e],
@@ -101,19 +101,19 @@ function S(e, t) {
     },
     B = async t => {
       var n, r;
-      if ((0, o.Zy)(), !await (0, _.XN)(t.name, e)) return;
+      if ((0, a.Zy)(), !await (0, _.XN)(t.name, e)) return;
       let i = v(y({}, t), {
         triggerMetadata: v(y({}, t.triggerMetadata), {
           keywordFilter: [...null != (r = null == (n = t.triggerMetadata) ? void 0 : n.keywordFilter) ? r : [], e]
         })
       });
-      await O(i, L), D(i), null != S ? (0, a.showToast)((0, a.createToast)(g.intl.string(g.t.wH6L0t), a.ToastType.FAILURE)) : (0, a.showToast)((0, a.createToast)(g.intl.string(g.t["0rdYm5"]), a.ToastType.SUCCESS))
-    }, Z = (0, r.jsx)(a.sNh, {
+      await O(i, L), D(i), null != S ? (0, o.showToast)((0, o.createToast)(g.intl.string(g.t.wH6L0t), o.ToastType.FAILURE)) : (0, o.showToast)((0, o.createToast)(g.intl.string(g.t["0rdYm5"]), o.ToastType.SUCCESS))
+    }, Z = (0, r.jsx)(o.sNh, {
       id: "automod-rules-loading",
       label: g.intl.string(g.t.ZTNur6)
     });
-  return w || (Z = (0, r.jsxs)(r.Fragment, {
-    children: [x && (0, r.jsx)(a.sNh, {
+  return R || (Z = (0, r.jsxs)(r.Fragment, {
+    children: [x && (0, r.jsx)(o.sNh, {
       id: "add-first-rule",
       label: g.intl.string(g.t.f72Zqa),
       action: G,
@@ -130,10 +130,10 @@ function S(e, t) {
         let i = (0, f.c)(n, r);
         return t + ", ".concat(null == i ? void 0 : i.headerText)
       }, "");
-      return (0, r.jsx)(a.k5B, {
+      return (0, r.jsx)(o.k5B, {
         id: e.id,
         label: e.name,
-        subtext: (0, r.jsx)(a.Text, {
+        subtext: (0, r.jsx)(o.Text, {
           color: "text-muted",
           className: E.actionTextHeader,
           variant: "text-xs/normal",
@@ -144,18 +144,18 @@ function S(e, t) {
         disabled: b,
         action: () => B(e)
       }, e.id)
-    }), k && (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(a.Clw, {}), (0, r.jsx)(a.sNh, {
+    }), M && (0, r.jsxs)(r.Fragment, {
+      children: [(0, r.jsx)(o.Clw, {}), (0, r.jsx)(o.sNh, {
         id: "add-another-rule",
         label: g.intl.string(g.t["0K5jDA"]),
         action: G,
         disabled: b
       })]
     })]
-  })), (0, r.jsx)(a.sNh, {
+  })), (0, r.jsx)(o.sNh, {
     id: "guild-automod-add-selection",
     label: g.intl.formatToPlainString(g.t.Kkjv1t, {
-      keywordCount: M
+      keywordCount: j
     }),
     onFocus: U,
     children: Z

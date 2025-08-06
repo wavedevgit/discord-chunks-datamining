@@ -3,15 +3,15 @@
 n.d(t, {
   Ep: () => _,
   Hp: () => h,
-  PP: () => k,
+  PP: () => M,
   lX: () => A,
   ob: () => p,
   q_: () => L
 });
 var r = n(44837),
   i = n(634450),
-  a = n(115953),
-  o = n(431803);
+  o = n(115953),
+  a = n(431803);
 
 function s(e) {
   return "/" === e.charAt(0) ? e : "/" + e
@@ -38,8 +38,8 @@ function f(e) {
     n = "",
     r = "",
     i = t.indexOf("#"); - 1 !== i && (r = t.substr(i), t = t.substr(0, i));
-  var a = t.indexOf("?");
-  return -1 !== a && (n = t.substr(a), t = t.substr(0, a)), {
+  var o = t.indexOf("?");
+  return -1 !== o && (n = t.substr(o), t = t.substr(0, o)), {
     pathname: t,
     search: "?" === n ? "" : n,
     hash: "#" === r ? "" : r
@@ -54,20 +54,20 @@ function _(e) {
   return n && "?" !== n && (i += "?" === n.charAt(0) ? n : "?" + n), r && "#" !== r && (i += "#" === r.charAt(0) ? r : "#" + r), i
 }
 
-function p(e, t, n, a) {
-  var o;
-  "string" == typeof e ? (o = f(e)).state = t : (void 0 === (o = (0, r.Z)({}, e)).pathname && (o.pathname = ""), o.search ? "?" !== o.search.charAt(0) && (o.search = "?" + o.search) : o.search = "", o.hash ? "#" !== o.hash.charAt(0) && (o.hash = "#" + o.hash) : o.hash = "", void 0 !== t && void 0 === o.state && (o.state = t));
+function p(e, t, n, o) {
+  var a;
+  "string" == typeof e ? (a = f(e)).state = t : (void 0 === (a = (0, r.Z)({}, e)).pathname && (a.pathname = ""), a.search ? "?" !== a.search.charAt(0) && (a.search = "?" + a.search) : a.search = "", a.hash ? "#" !== a.hash.charAt(0) && (a.hash = "#" + a.hash) : a.hash = "", void 0 !== t && void 0 === a.state && (a.state = t));
   try {
-    o.pathname = decodeURI(o.pathname)
+    a.pathname = decodeURI(a.pathname)
   } catch (e) {
-    if (e instanceof URIError) throw URIError('Pathname "' + o.pathname + '" could not be decoded. This is likely caused by an invalid percent-encoding.');
+    if (e instanceof URIError) throw URIError('Pathname "' + a.pathname + '" could not be decoded. This is likely caused by an invalid percent-encoding.');
     throw e
   }
-  return n && (o.key = n), a ? o.pathname ? "/" !== o.pathname.charAt(0) && (o.pathname = (0, i.Z)(o.pathname, a.pathname)) : o.pathname = a.pathname : o.pathname || (o.pathname = "/"), o
+  return n && (a.key = n), o ? a.pathname ? "/" !== a.pathname.charAt(0) && (a.pathname = (0, i.Z)(a.pathname, o.pathname)) : a.pathname = o.pathname : a.pathname || (a.pathname = "/"), a
 }
 
 function h(e, t) {
-  return e.pathname === t.pathname && e.search === t.search && e.hash === t.hash && e.key === t.key && (0, a.Z)(e.state, t.state)
+  return e.pathname === t.pathname && e.search === t.search && e.hash === t.hash && e.key === t.key && (0, o.Z)(e.state, t.state)
 }
 
 function m() {
@@ -82,8 +82,8 @@ function m() {
     },
     confirmTransitionTo: function(t, n, r, i) {
       if (null != e) {
-        var a = "function" == typeof e ? e(t, n) : e;
-        "string" == typeof a ? "function" == typeof r ? r(a, i) : i(!0) : i(!1 !== a)
+        var o = "function" == typeof e ? e(t, n) : e;
+        "string" == typeof o ? "function" == typeof r ? r(o, i) : i(!0) : i(!1 !== o)
       } else i(!0)
     },
     appendListener: function(e) {
@@ -141,16 +141,16 @@ function S() {
 }
 
 function A(e) {
-  void 0 === e && (e = {}), g || (0, o.Z)(!1);
+  void 0 === e && (e = {}), g || (0, a.Z)(!1);
   var t = window.history,
     n = b(),
     i = !y(),
-    a = e,
-    l = a.forceRefresh,
+    o = e,
+    l = o.forceRefresh,
     c = void 0 !== l && l,
-    f = a.getUserConfirmation,
+    f = o.getUserConfirmation,
     h = void 0 === f ? E : f,
-    O = a.keyLength,
+    O = o.keyLength,
     A = void 0 === O ? 6 : O,
     N = e.basename ? d(s(e.basename)) : "";
 
@@ -159,50 +159,50 @@ function A(e) {
       n = t.key,
       r = t.state,
       i = window.location,
-      a = i.pathname + i.search + i.hash;
-    return N && (a = u(a, N)), p(a, r, n)
+      o = i.pathname + i.search + i.hash;
+    return N && (o = u(o, N)), p(o, r, n)
   }
 
-  function w() {
+  function R() {
     return Math.random().toString(36).substr(2, A)
   }
-  var R = m();
+  var P = m();
 
-  function P(e) {
-    (0, r.Z)($, e), $.length = t.length, R.notifyListeners($.location, $.action)
+  function w(e) {
+    (0, r.Z)(X, e), X.length = t.length, P.notifyListeners(X.location, X.action)
   }
 
   function D(e) {
-    v(e) || k(C(e.state))
+    v(e) || M(C(e.state))
   }
 
   function L() {
-    k(C(S()))
+    M(C(S()))
   }
   var x = !1;
 
-  function k(e) {
-    if (x) x = !1, P();
+  function M(e) {
+    if (x) x = !1, w();
     else {
       var t = "POP";
-      R.confirmTransitionTo(e, t, h, function(n) {
-        n ? P({
+      P.confirmTransitionTo(e, t, h, function(n) {
+        n ? w({
           action: t,
           location: e
-        }) : j(e)
+        }) : k(e)
       })
     }
   }
 
-  function j(e) {
-    var t = $.location,
+  function k(e) {
+    var t = X.location,
       n = U.indexOf(t.key); - 1 === n && (n = 0);
     var r = U.indexOf(e.key); - 1 === r && (r = 0);
     var i = n - r;
     i && (x = !0, F(i))
   }
-  var M = C(S()),
-    U = [M.key];
+  var j = C(S()),
+    U = [j.key];
 
   function G(e) {
     return N + _(e)
@@ -210,23 +210,23 @@ function A(e) {
 
   function B(e, r) {
     var i = "PUSH",
-      a = p(e, r, w(), $.location);
-    R.confirmTransitionTo(a, i, h, function(e) {
+      o = p(e, r, R(), X.location);
+    P.confirmTransitionTo(o, i, h, function(e) {
       if (e) {
-        var r = G(a),
-          o = a.key,
-          s = a.state;
+        var r = G(o),
+          a = o.key,
+          s = o.state;
         if (n)
           if (t.pushState({
-              key: o,
+              key: a,
               state: s
             }, null, r), c) window.location.href = r;
           else {
-            var l = U.indexOf($.location.key),
+            var l = U.indexOf(X.location.key),
               u = U.slice(0, l + 1);
-            u.push(a.key), U = u, P({
+            u.push(o.key), U = u, w({
               action: i,
-              location: a
+              location: o
             })
           }
         else window.location.href = r
@@ -236,21 +236,21 @@ function A(e) {
 
   function Z(e, r) {
     var i = "REPLACE",
-      a = p(e, r, w(), $.location);
-    R.confirmTransitionTo(a, i, h, function(e) {
+      o = p(e, r, R(), X.location);
+    P.confirmTransitionTo(o, i, h, function(e) {
       if (e) {
-        var r = G(a),
-          o = a.key,
-          s = a.state;
+        var r = G(o),
+          a = o.key,
+          s = o.state;
         if (n)
           if (t.replaceState({
-              key: o,
+              key: a,
               state: s
             }, null, r), c) window.location.replace(r);
           else {
-            var l = U.indexOf($.location.key); - 1 !== l && (U[l] = a.key), P({
+            var l = U.indexOf(X.location.key); - 1 !== l && (U[l] = o.key), w({
               action: i,
-              location: a
+              location: o
             })
           }
         else window.location.replace(r)
@@ -278,7 +278,7 @@ function A(e) {
 
   function z(e) {
     void 0 === e && (e = !1);
-    var t = R.setPrompt(e);
+    var t = P.setPrompt(e);
     return K || (W(1), K = !0),
       function() {
         return K && (K = !1, W(-1)), t()
@@ -286,16 +286,16 @@ function A(e) {
   }
 
   function q(e) {
-    var t = R.appendListener(e);
+    var t = P.appendListener(e);
     return W(1),
       function() {
         W(-1), t()
       }
   }
-  var $ = {
+  var X = {
     length: t.length,
     action: "POP",
-    location: M,
+    location: j,
     createHref: G,
     push: B,
     replace: Z,
@@ -305,7 +305,7 @@ function A(e) {
     block: z,
     listen: q
   };
-  return $
+  return X
 }
 var N = "hashchange",
   C = {
@@ -327,32 +327,32 @@ var N = "hashchange",
     }
   };
 
-function w(e) {
+function R(e) {
   var t = e.indexOf("#");
   return -1 === t ? e : e.slice(0, t)
 }
 
-function R() {
+function P() {
   var e = window.location.href,
     t = e.indexOf("#");
   return -1 === t ? "" : e.substring(t + 1)
 }
 
-function P(e) {
+function w(e) {
   window.location.hash = e
 }
 
 function D(e) {
-  window.location.replace(w(window.location.href) + "#" + e)
+  window.location.replace(R(window.location.href) + "#" + e)
 }
 
 function L(e) {
-  void 0 === e && (e = {}), g || (0, o.Z)(!1);
+  void 0 === e && (e = {}), g || (0, a.Z)(!1);
   var t = window.history;
   O();
   var n = e,
     i = n.getUserConfirmation,
-    a = void 0 === i ? E : i,
+    o = void 0 === i ? E : i,
     l = n.hashType,
     c = void 0 === l ? "slash" : l,
     f = e.basename ? d(s(e.basename)) : "",
@@ -361,13 +361,13 @@ function L(e) {
     y = h.decodePath;
 
   function v() {
-    var e = y(R());
+    var e = y(P());
     return f && (e = u(e, f)), p(e)
   }
   var I = m();
 
   function T(e) {
-    (0, r.Z)(Q, e), Q.length = t.length, I.notifyListeners(Q.location, Q.action)
+    (0, r.Z)(J, e), J.length = t.length, I.notifyListeners(J.location, J.action)
   }
   var S = !1,
     A = null;
@@ -377,61 +377,61 @@ function L(e) {
   }
 
   function x() {
-    var e = R(),
+    var e = P(),
       t = b(e);
     if (e !== t) D(t);
     else {
       var n = v(),
-        r = Q.location;
+        r = J.location;
       if (!S && L(r, n) || A === _(n)) return;
-      A = null, k(n)
+      A = null, M(n)
     }
   }
 
-  function k(e) {
+  function M(e) {
     if (S) S = !1, T();
     else {
       var t = "POP";
-      I.confirmTransitionTo(e, t, a, function(n) {
+      I.confirmTransitionTo(e, t, o, function(n) {
         n ? T({
           action: t,
           location: e
-        }) : j(e)
+        }) : k(e)
       })
     }
   }
 
-  function j(e) {
-    var t = Q.location,
+  function k(e) {
+    var t = J.location,
       n = B.lastIndexOf(_(t)); - 1 === n && (n = 0);
     var r = B.lastIndexOf(_(e)); - 1 === r && (r = 0);
     var i = n - r;
     i && (S = !0, H(i))
   }
-  var M = R(),
-    U = b(M);
-  M !== U && D(U);
+  var j = P(),
+    U = b(j);
+  j !== U && D(U);
   var G = v(),
     B = [_(G)];
 
   function Z(e) {
     var t = document.querySelector("base"),
       n = "";
-    return t && t.getAttribute("href") && (n = w(window.location.href)), n + "#" + b(f + _(e))
+    return t && t.getAttribute("href") && (n = R(window.location.href)), n + "#" + b(f + _(e))
   }
 
   function F(e, t) {
     var n = "PUSH",
-      r = p(e, void 0, void 0, Q.location);
-    I.confirmTransitionTo(r, n, a, function(e) {
+      r = p(e, void 0, void 0, J.location);
+    I.confirmTransitionTo(r, n, o, function(e) {
       if (e) {
         var t = _(r),
           i = b(f + t),
-          a = R() !== i;
-        if (a) {
-          A = t, P(i);
-          var o = B.lastIndexOf(_(Q.location)),
-            s = B.slice(0, o + 1);
+          o = P() !== i;
+        if (o) {
+          A = t, w(i);
+          var a = B.lastIndexOf(_(J.location)),
+            s = B.slice(0, a + 1);
           s.push(t), B = s, T({
             action: n,
             location: r
@@ -443,14 +443,14 @@ function L(e) {
 
   function V(e, t) {
     var n = "REPLACE",
-      r = p(e, void 0, void 0, Q.location);
-    I.confirmTransitionTo(r, n, a, function(e) {
+      r = p(e, void 0, void 0, J.location);
+    I.confirmTransitionTo(r, n, o, function(e) {
       if (e) {
         var t = _(r),
           i = b(f + t),
-          a = R() !== i;
-        a && (A = t, D(i));
-        var o = B.indexOf(_(Q.location)); - 1 !== o && (B[o] = t), T({
+          o = P() !== i;
+        o && (A = t, D(i));
+        var a = B.indexOf(_(J.location)); - 1 !== a && (B[a] = t), T({
           action: n,
           location: r
         })
@@ -476,7 +476,7 @@ function L(e) {
   }
   var q = !1;
 
-  function $(e) {
+  function X(e) {
     void 0 === e && (e = !1);
     var t = I.setPrompt(e);
     return q || (z(1), q = !0),
@@ -485,14 +485,14 @@ function L(e) {
       }
   }
 
-  function X(e) {
+  function Q(e) {
     var t = I.appendListener(e);
     return z(1),
       function() {
         z(-1), t()
       }
   }
-  var Q = {
+  var J = {
     length: t.length,
     action: "POP",
     location: G,
@@ -502,24 +502,24 @@ function L(e) {
     go: H,
     goBack: Y,
     goForward: W,
-    block: $,
-    listen: X
+    block: X,
+    listen: Q
   };
-  return Q
+  return J
 }
 
 function x(e, t, n) {
   return Math.min(Math.max(e, t), n)
 }
 
-function k(e) {
+function M(e) {
   void 0 === e && (e = {});
   var t = e,
     n = t.getUserConfirmation,
     i = t.initialEntries,
-    a = void 0 === i ? ["/"] : i,
-    o = t.initialIndex,
-    s = void 0 === o ? 0 : o,
+    o = void 0 === i ? ["/"] : i,
+    a = t.initialIndex,
+    s = void 0 === a ? 0 : a,
     l = t.keyLength,
     c = void 0 === l ? 6 : l,
     u = m();
@@ -531,8 +531,8 @@ function k(e) {
   function f() {
     return Math.random().toString(36).substr(2, c)
   }
-  var h = x(s, 0, a.length - 1),
-    g = a.map(function(e) {
+  var h = x(s, 0, o.length - 1),
+    g = o.map(function(e) {
       return "string" == typeof e ? p(e, void 0, f()) : p(e, void 0, e.key || f())
     }),
     E = _;
@@ -544,12 +544,12 @@ function k(e) {
       if (e) {
         var t = N.index,
           n = t + 1,
-          a = N.entries.slice(0);
-        a.length > n ? a.splice(n, a.length - n, i) : a.push(i), d({
+          o = N.entries.slice(0);
+        o.length > n ? o.splice(n, o.length - n, i) : o.push(i), d({
           action: r,
           location: i,
           index: n,
-          entries: a
+          entries: o
         })
       }
     })

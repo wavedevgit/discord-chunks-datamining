@@ -5,9 +5,9 @@ n.d(t, {
 });
 var r = n(454585),
   i = n(551452),
-  a = n(532901);
+  o = n(532901);
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -23,7 +23,7 @@ function s(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      o(e, t, n[t])
+      a(e, t, n[t])
     })
   }
   return e
@@ -46,7 +46,7 @@ function c(e, t) {
   }), e
 }
 let u = c(s({}, r.Z.guildEventRules.link), {
-    react: (0, a.Z)({
+    react: (0, o.Z)({
       enableBuildOverrides: !1,
       mustConfirmExternalLink: !0
     }).react

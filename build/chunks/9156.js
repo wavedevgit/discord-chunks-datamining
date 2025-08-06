@@ -1,13 +1,13 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  U2: () => X,
+  U2: () => Q,
   ZP: () => em,
-  wL: () => $
+  wL: () => X
 }), n(388685), n(997841);
 var r, i = n(392711),
-  a = n.n(i),
-  o = n(442837),
+  o = n.n(i),
+  a = n(442837),
   s = n(570140),
   l = n(798140),
   c = n(160404),
@@ -65,11 +65,11 @@ function S(e, t) {
 let A = {},
   N = {},
   C = !1,
-  w = !1,
-  R = {
+  R = !1,
+  P = {
     flags: 0
   },
-  P = new l.ZP,
+  w = new l.ZP,
   D = new l.ZP,
   L = {
     suppress_everyone: !1,
@@ -93,9 +93,9 @@ let A = {},
       message_notifications: E.bL.ONLY_MENTIONS
     })
   },
+  M = {},
   k = {},
-  j = {},
-  M = "null",
+  j = "null",
   U = new Set,
   G = new Set,
   B = {},
@@ -105,29 +105,29 @@ function F(e, t) {
   var n;
   let r = A[e],
     i = null != (n = null == r ? void 0 : r.channel_overrides) ? n : {},
-    o = X(t.channel_overrides),
-    s = S(I({}, $(e), r, t), {
-      channel_overrides: o
+    a = Q(t.channel_overrides),
+    s = S(I({}, X(e), r, t), {
+      channel_overrides: a
     });
-  P.clearTimer(e), a().forEach(i, e => {
+  w.clearTimer(e), o().forEach(i, e => {
     D.clearTimer(e.channel_id)
-  }), V(e, s), A[e] = s, k[e] = ef(A[e]);
-  let l = a().filter(s.channel_overrides, e => {
+  }), V(e, s), A[e] = s, M[e] = ef(A[e]);
+  let l = o().filter(s.channel_overrides, e => {
     var t;
     return _.yE(null != (t = e.flags) ? t : 0, O.ic.OPT_IN_ENABLED)
   });
-  j[e] = new Set(l.map(e => e.channel_id)), H(e), delete N[e]
+  k[e] = new Set(l.map(e => e.channel_id)), H(e), delete N[e]
 }
 
 function V(e, t) {
-  !0 === t.muted && P.setTimer(e, t.mute_config, () => {
+  !0 === t.muted && w.setTimer(e, t.mute_config, () => {
     Y(e, {
       muted: !1
     }), s.Z.dispatch({
       type: "GUILD_MUTE_EXPIRED",
       guildId: e
     })
-  }) && (t.muted = !1), a().forEach(t.channel_overrides, t => {
+  }) && (t.muted = !1), o().forEach(t.channel_overrides, t => {
     !0 === t.muted && D.setTimer(t.channel_id, t.mute_config, () => {
       W(e, t.channel_id, {
         muted: !1
@@ -143,7 +143,7 @@ function V(e, t) {
 function H(e) {
   var t;
   if (null == e) return;
-  let n = new Set(j[e]),
+  let n = new Set(k[e]),
     r = null != (t = B[e]) ? t : {};
   for (let e in r) {
     let t = r[e];
@@ -172,10 +172,10 @@ function K(e, t) {
   let r = {},
     i = null != (n = null != e ? B[e] : null) ? n : {};
   p.default.keys(t).forEach(n => {
-    var a;
-    let o = q(e, n, t[n]);
-    r[n] = o, i[n] = {
-      flags: null != (a = o.flags) ? a : 0
+    var o;
+    let a = q(e, n, t[n]);
+    r[n] = a, i[n] = {
+      flags: null != (o = a.flags) ? o : 0
     }
   }), null != e && (B[e] = I({}, B[e], i)), z(e, r)
 }
@@ -198,38 +198,38 @@ function q(e, t, n) {
   }, (null != (r = null == i ? void 0 : i.channel_overrides) ? r : {})[t], n)
 }
 
-function $(e) {
+function X(e) {
   let t = m.Z.getGuild(e);
   return x[null != t ? t.defaultMessageNotifications : E.bL.ALL_MESSAGES]
 }
 
-function X() {
+function Q() {
   let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
-  return e instanceof Array ? a().keyBy(e, "channel_id") : e
-}
-
-function Q(e) {
-  var t;
-  return null != (t = A[e]) ? t : $(e)
+  return e instanceof Array ? o().keyBy(e, "channel_id") : e
 }
 
 function J(e) {
-  null != e.userGuildSettings && 0 !== e.userGuildSettings.length && (A = {}, k = {}, j = {}, e.userGuildSettings.forEach(e => {
+  var t;
+  return null != (t = A[e]) ? t : X(e)
+}
+
+function $(e) {
+  null != e.userGuildSettings && 0 !== e.userGuildSettings.length && (A = {}, M = {}, k = {}, e.userGuildSettings.forEach(e => {
     let t = e.guild_id;
     A[t] = e;
     let n = new Set,
       r = new Set;
     for (let t in e.channel_overrides) {
       var i;
-      let a = e.channel_overrides[t];
-      (0, l.m$)(a) && n.add(t), _.yE(null != (i = a.flags) ? i : 0, O.ic.OPT_IN_ENABLED) && r.add(t)
+      let o = e.channel_overrides[t];
+      (0, l.m$)(o) && n.add(t), _.yE(null != (i = o.flags) ? i : 0, O.ic.OPT_IN_ENABLED) && r.add(t)
     }
-    k[t] = n, j[t] = r
+    M[t] = n, k[t] = r
   }))
 }
 
 function ee(e) {
-  er(e.notificationSettings), P.reset(), D.reset(), e.userGuildSettings.partial || (A = {}, k = {}, j = {});
+  er(e.notificationSettings), w.reset(), D.reset(), e.userGuildSettings.partial || (A = {}, M = {}, k = {});
   let t = new Set;
   for (let n in e.userGuildSettings.entries.forEach(e => {
       let n = e;
@@ -245,10 +245,10 @@ function et(e) {
     mutedChannels: r,
     optedInChannelsByGuild: i
   } = t;
-  A = I({}, n), k = {}, j = {}, p.default.keys(r).forEach(e => {
-    k[e] = new Set(r[e])
+  A = I({}, n), M = {}, k = {}, p.default.keys(r).forEach(e => {
+    M[e] = new Set(r[e])
   }), p.default.keys(i).forEach(e => {
-    j[e] = new Set(i[e])
+    k[e] = new Set(i[e])
   })
 }
 
@@ -260,7 +260,7 @@ function en(e) {
 }
 
 function er(e) {
-  C = _.yE(e.flags, b.c.USE_NEW_NOTIFICATIONS), w = _.yE(e.flags, b.c.MENTION_ON_ALL_MESSAGES), R = e
+  C = _.yE(e.flags, b.c.USE_NEW_NOTIFICATIONS), R = _.yE(e.flags, b.c.MENTION_ON_ALL_MESSAGES), P = e
 }
 
 function ei(e) {
@@ -274,7 +274,7 @@ function ei(e) {
   })
 }
 
-function ea(e) {
+function eo(e) {
   let {
     guildId: t,
     settings: n
@@ -282,7 +282,7 @@ function ea(e) {
   Y(t, n)
 }
 
-function eo(e) {
+function ea(e) {
   let {
     guildId: t,
     settings: n
@@ -319,7 +319,7 @@ function ec(e) {
   if (null == t) return !1;
   let r = B[t];
   if (null == r) return !1;
-  for (let e in n) a().isEqual(n[e], r[e]) && delete r[e]
+  for (let e in n) o().isEqual(n[e], r[e]) && delete r[e]
 }
 
 function eu(e) {
@@ -333,7 +333,7 @@ function eu(e) {
 function ed(e) {
   let {
     guildId: t
-  } = e, n = null == A[t] ? $(t) : A[t];
+  } = e, n = null == A[t] ? X(t) : A[t];
   A[t] = S(I({}, n), {
     guild_id: t,
     hide_muted_channels: !0 !== n.hide_muted_channels
@@ -341,7 +341,7 @@ function ed(e) {
 }
 
 function ef(e) {
-  return new Set(null != e.channel_overrides ? a()(e.channel_overrides).filter(e => (0, l.m$)(e)).map(e => e.channel_id).value() : null)
+  return new Set(null != e.channel_overrides ? o()(e.channel_overrides).filter(e => (0, l.m$)(e)).map(e => e.channel_id).value() : null)
 }
 
 function e_() {
@@ -355,12 +355,12 @@ function ep() {
     autoTrackExposure: !1
   }).enabled
 }
-class eh extends(r = o.ZP.PersistedStore) {
+class eh extends(r = a.ZP.PersistedStore) {
   initialize(e) {
     if (this.waitFor(g.default, m.Z, c.Z, d.Z), null != e) {
       var t, n;
-      C = null != (t = e.useNewNotifications) && t, "userGuildSettings" in e && (A = e.userGuildSettings, j = a().mapValues(null != (n = e.optedInChannelsByGuild) ? n : {}, e => new Set(e)), a().forEach(A, (e, t) => {
-        k[t] = ef(e)
+      C = null != (t = e.useNewNotifications) && t, "userGuildSettings" in e && (A = e.userGuildSettings, k = o().mapValues(null != (n = e.optedInChannelsByGuild) ? n : {}, e => new Set(e)), o().forEach(A, (e, t) => {
+        M[t] = ef(e)
       }))
     }
   }
@@ -370,43 +370,43 @@ class eh extends(r = o.ZP.PersistedStore) {
     }
   }
   get mentionOnAllMessages() {
-    return w
+    return R
   }
   isSuppressEveryoneEnabled(e) {
-    return Q(e).suppress_everyone
+    return J(e).suppress_everyone
   }
   isSuppressRolesEnabled(e) {
-    return Q(e).suppress_roles
+    return J(e).suppress_roles
   }
   isMuteScheduledEventsEnabled(e) {
-    return Q(e).mute_scheduled_events
+    return J(e).mute_scheduled_events
   }
   isMobilePushEnabled(e) {
-    return Q(e).mobile_push
+    return J(e).mobile_push
   }
   isMuted(e) {
-    let t = Q(e);
+    let t = J(e);
     return (0, l.m$)(t)
   }
   isTemporarilyMuted(e) {
-    let t = Q(e);
+    let t = J(e);
     return (0, l.Cl)(t)
   }
   getMuteConfig(e) {
-    return Q(e).mute_config
+    return J(e).mute_config
   }
   getMessageNotifications(e) {
-    return Q(e).message_notifications
+    return J(e).message_notifications
   }
   getChannelOverrides(e) {
     var t;
-    return null != (t = Q(e).channel_overrides) ? t : {}
+    return null != (t = J(e).channel_overrides) ? t : {}
   }
   getNotifyHighlights(e) {
-    return Q(e).notify_highlights
+    return J(e).notify_highlights
   }
   getGuildFlags(e) {
-    return Q(e).flags
+    return J(e).flags
   }
   getChannelMessageNotifications(e, t) {
     let n = this.getChannelOverrides(e)[t];
@@ -418,7 +418,7 @@ class eh extends(r = o.ZP.PersistedStore) {
   }
   getMutedChannels(e) {
     var t;
-    return null != (t = k[e]) ? t : U
+    return null != (t = M[e]) ? t : U
   }
   isChannelMuted(e, t) {
     var n;
@@ -467,8 +467,8 @@ class eh extends(r = o.ZP.PersistedStore) {
   getAllSettings() {
     return {
       userGuildSettings: A,
-      mutedChannels: k,
-      optedInChannelsByGuild: j
+      mutedChannels: M,
+      optedInChannelsByGuild: k
     }
   }
   getChannelIdFlags(e, t) {
@@ -502,12 +502,12 @@ class eh extends(r = o.ZP.PersistedStore) {
     if (null == e) return !1;
     if (c.Z.isFullServerPreview(e)) return c.Z.isChannelOptedIn(e, t);
     if (i && null != Z[e]) return Z[e].has(t);
-    let a = null != (r = null == (n = this.getChannelOverrides(e)[t]) ? void 0 : n.flags) ? r : 0;
-    return _.yE(a, O.ic.OPT_IN_ENABLED)
+    let o = null != (r = null == (n = this.getChannelOverrides(e)[t]) ? void 0 : n.flags) ? r : 0;
+    return _.yE(o, O.ic.OPT_IN_ENABLED)
   }
   getOptedInChannels(e) {
     var t, n;
-    return c.Z.isFullServerPreview(e) ? null != (t = c.Z.getViewingChannels(e)) ? t : G : null != (n = j[e]) ? n : G
+    return c.Z.isFullServerPreview(e) ? null != (t = c.Z.getViewingChannels(e)) ? t : G : null != (n = k[e]) ? n : G
   }
   getOptedInChannelsWithPendingUpdates(e) {
     return Z[e]
@@ -518,7 +518,7 @@ class eh extends(r = o.ZP.PersistedStore) {
   getGuildFavorites(e) {
     if (c.Z.isFullServerPreview(e)) return null;
     if (null == N[e]) {
-      let t = a().filter(this.getChannelOverrides(e), t => {
+      let t = o().filter(this.getChannelOverrides(e), t => {
         var n, r;
         return _.yE(null != (r = t.flags) ? r : 0, O.ic.FAVORITED) && (null == (n = h.Z.getChannel(t.channel_id)) ? void 0 : n.guild_id) === e
       });
@@ -542,10 +542,10 @@ class eh extends(r = o.ZP.PersistedStore) {
   }
   getAddedToMessages() {
     var e;
-    return null != (e = j[M]) ? e : G
+    return null != (e = k[j]) ? e : G
   }
   get accountNotificationSettings() {
-    return R
+    return P
   }
   get useNewNotifications() {
     return C
@@ -570,12 +570,12 @@ class eh extends(r = o.ZP.PersistedStore) {
 v(eh, "displayName", "UserGuildSettingsStore"), v(eh, "persistKey", "collapsedGuilds");
 let em = new eh(s.Z, {
   USER_GUILD_SETTINGS_FULL_UPDATE: ei,
-  USER_GUILD_SETTINGS_GUILD_UPDATE: ea,
-  USER_GUILD_SETTINGS_GUILD_AND_CHANNELS_UPDATE: eo,
+  USER_GUILD_SETTINGS_GUILD_UPDATE: eo,
+  USER_GUILD_SETTINGS_GUILD_AND_CHANNELS_UPDATE: ea,
   USER_GUILD_SETTINGS_CHANNEL_UPDATE: es,
   USER_GUILD_SETTINGS_CHANNEL_UPDATE_BULK: eu,
   CONNECTION_OPEN: ee,
-  CACHE_LOADED: J,
+  CACHE_LOADED: $,
   OVERLAY_INITIALIZE: et,
   GUILD_CREATE: e_,
   GUILD_UPDATE: e_,

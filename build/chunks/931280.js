@@ -2,8 +2,8 @@
 "use strict";
 var r = n(621796),
   i = n(172367),
-  a = n(292489),
-  o = n(458545),
+  o = n(292489),
+  a = n(458545),
   s = n(685536),
   l = n(302354);
 
@@ -18,9 +18,9 @@ e.exports = function(e, t) {
   if (i.isCollapsed()) return void t.preventDefault();
   if (l(u)) {
     var d = u;
-    n = s(a.getScrollParent(d))
+    n = s(o.getScrollParent(d))
   }
-  var f = o(r);
+  var f = a(r);
   e.setClipboard(f), e.setMode("cut"), setTimeout(function() {
     e.restoreEditorDOM(n), e.exitCurrentMode(), e.update(c(r))
   }, 0)

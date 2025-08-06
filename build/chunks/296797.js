@@ -9,8 +9,8 @@ var r = n(73800),
   s = n(16609),
   o = n(917107),
   c = n(89425),
-  d = n(197386),
-  u = n(981631);
+  u = n(197386),
+  d = n(981631);
 
 function h(e) {
   let {
@@ -26,13 +26,13 @@ function h(e) {
         channelId: r
       });
       let a = i.Z.getChannel(r),
-        u = null == a ? void 0 : a.guild_id;
+        d = null == a ? void 0 : a.guild_id;
       setTimeout(() => {
-        (0, d.Z)(u, n), null == t || t()
+        (0, u.Z)(d, n), null == t || t()
       }, 0)
     }
-    return a.S.subscribe(u.CkL.OPEN_EMBEDDED_ACTIVITY, e), () => {
-      a.S.unsubscribe(u.CkL.OPEN_EMBEDDED_ACTIVITY, e)
+    return a.S.subscribe(d.CkL.OPEN_EMBEDDED_ACTIVITY, e), () => {
+      a.S.unsubscribe(d.CkL.OPEN_EMBEDDED_ACTIVITY, e)
     }
   }, [t])
 }

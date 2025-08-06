@@ -1,6 +1,6 @@
 /** Chunk was on 49152 **/
 n.d(t, {
-  Z: () => u
+  Z: () => d
 });
 var r = n(255367);
 n(73800);
@@ -10,11 +10,11 @@ var i = n(481060),
   s = n(388032),
   o = n(400816),
   c = n(1765),
-  d = n(176480);
-let u = e => {
+  u = n(176480);
+let d = e => {
   let t, {
     searchQuery: n,
-    setSearchQuery: u,
+    setSearchQuery: d,
     mostRecentQuery: h,
     handleClearSearch: p,
     handleSearchKeyPress: f,
@@ -42,7 +42,7 @@ let u = e => {
       children: [(0, r.jsx)("img", {
         className: c.emptySearchImage,
         alt: "",
-        src: d
+        src: u
       }), (0, r.jsx)(i.X6q, {
         variant: "heading-xl/semibold",
         color: "header-primary",
@@ -89,7 +89,7 @@ let u = e => {
           inputClassName: c.searchPageInput,
           label: s.intl.string(s.t.nL2wKC),
           placeholder: s.intl.string(s.t.nL2wKC),
-          onChange: u,
+          onChange: d,
           onClear: p,
           onKeyPress: f,
           cta: null != n && n.length > 0 ? s.intl.string(s.t["CU+6oK"]) : null

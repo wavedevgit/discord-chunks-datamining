@@ -5,8 +5,8 @@ n.d(t, {
 }), n(415506), n(35282);
 var r = n(570140),
   i = n(846027),
-  a = n(872810),
-  o = n(710845),
+  o = n(872810),
+  a = n(710845),
   s = n(252759),
   l = n(361291),
   c = n(199902),
@@ -80,10 +80,10 @@ class m {
   _onDirectorAction(e) {
     var t, n;
     let r = c.Z.getCurrentUserActiveStream(),
-      o = l.Z.getState();
+      a = l.Z.getState();
     switch (e.type) {
       case s.A.STREAM:
-        if (null != r && (0, a.tK)(r, !1), e.sourceId.startsWith("camera") && null != e.audioSourceId) {
+        if (null != r && (0, o.tK)(r, !1), e.sourceId.startsWith("camera") && null != e.audioSourceId) {
           let t = e.sourceId.split(":")[1];
           i.Z.setGoLiveSource({
             cameraSettings: {
@@ -91,9 +91,9 @@ class m {
               audioDeviceGuid: e.audioSourceId
             },
             qualityOptions: {
-              preset: o.preset,
-              resolution: o.resolution,
-              frameRate: o.fps
+              preset: a.preset,
+              resolution: a.resolution,
+              frameRate: a.fps
             },
             context: p.Yn.STREAM
           })
@@ -103,15 +103,15 @@ class m {
             sound: null == (t = e.sound) || t
           },
           qualityOptions: {
-            preset: o.preset,
-            resolution: o.resolution,
-            frameRate: o.fps
+            preset: a.preset,
+            resolution: a.resolution,
+            frameRate: a.fps
           },
           context: p.Yn.STREAM
         });
         break;
       case s.A.PAUSE:
-        null != r && (0, a.tK)(r, !0);
+        null != r && (0, o.tK)(r, !0);
         break;
       case s.A.STOP:
         null != r && (0, f.Z)(r, !0, null == (n = e.alsoClose) || n);
@@ -122,7 +122,7 @@ class m {
   }
   _onCapturePaused(e) {
     let t = c.Z.getCurrentUserActiveStream();
-    null != t && (0, a.tK)(t, e)
+    null != t && (0, o.tK)(t, e)
   }
   _onCaptureEnded() {
     let e = !(arguments.length > 0) || void 0 === arguments[0] || arguments[0];
@@ -145,7 +145,7 @@ class m {
         guildId: n,
         channelId: r,
         pid: i,
-        sourceId: a,
+        sourceId: o,
         audioSourceId: s,
         sound: l
       } = e, c = u.default.getId(), f = (0, d.V9)({
@@ -154,7 +154,7 @@ class m {
         channelId: r,
         ownerId: c
       });
-      null == i != (null == a) ? (null != i && this._onStreamApplication(f, i, null == l || l), null != a && this._onStreamDirectSource(f, a, s, l)) : new o.Z("ApplicationSwitchingManager").warn("invalid start_stream: both application + display modes were specified (pid: ".concat(i, ", source-id: ").concat(a, ")"))
+      null == i != (null == o) ? (null != i && this._onStreamApplication(f, i, null == l || l), null != o && this._onStreamDirectSource(f, o, s, l)) : new a.Z("ApplicationSwitchingManager").warn("invalid start_stream: both application + display modes were specified (pid: ".concat(i, ", source-id: ").concat(o, ")"))
     }), r.Z.subscribe("STREAM_DELETE", e => {
       let {
         streamKey: t

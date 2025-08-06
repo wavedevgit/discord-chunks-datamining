@@ -9,8 +9,8 @@ n.d(t, {
 });
 var r = n(73800),
   i = n(442837),
-  a = n(904245),
-  o = n(232567),
+  o = n(904245),
+  a = n(232567),
   s = n(430824),
   l = n(375954),
   c = n(982168),
@@ -38,7 +38,7 @@ function h(e) {
     messageReference: t
   } = e, n = (0, i.e7)([l.Z], () => null != t ? l.Z.getMessage(t.channel_id, t.message_id) : null);
   (0, r.useEffect)(() => {
-    null == n && null != t && a.Z.fetchMessages({
+    null == n && null != t && o.Z.fetchMessages({
       channelId: t.channel_id,
       jump: {
         messageId: t.message_id
@@ -51,5 +51,5 @@ function h(e) {
 function m(e) {
   var t, n;
   let r = null == e || null == (n = e.messageSnapshots[0]) || null == (t = n.moderatorReport) ? void 0 : t.reported_user_id;
-  null != r && (0, o.PR)(r)
+  null != r && (0, a.PR)(r)
 }

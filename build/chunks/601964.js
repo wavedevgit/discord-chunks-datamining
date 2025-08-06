@@ -14,8 +14,8 @@ n.d(t, {
 }), n(388685);
 var r = n(311929),
   i = n(768581),
-  a = n(709054),
-  o = n(624138),
+  o = n(709054),
+  a = n(624138),
   s = n(981631);
 let l = "Guild",
   c = Object.freeze({
@@ -70,7 +70,7 @@ function u(e, t) {
 }
 
 function d(e) {
-  return (0, o.Zg)(e.name)
+  return (0, a.Zg)(e.name)
 }
 
 function f(e, t) {
@@ -87,7 +87,7 @@ function p(e) {
 }
 
 function h(e) {
-  return a.default.castGuildIdAsEveryoneGuildRoleId(e.id)
+  return o.default.castGuildIdAsEveryoneGuildRoleId(e.id)
 }
 
 function m(e, t) {

@@ -1,17 +1,17 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => a
+  Z: () => o
 }), n(388685);
 var r = n(73800),
   i = n(393238);
 
-function a() {
+function o() {
   let {
     ref: e,
     width: t
-  } = (0, i.ZP)(), [n, a] = r.useState();
+  } = (0, i.ZP)(), [n, o] = r.useState();
   return r.useEffect(() => {
-    null == n && null != t && a(t)
+    null == n && null != t && o(t)
   }, [n, t]), [e, n]
 }

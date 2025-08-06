@@ -1,5 +1,4 @@
-/** Chunk was on web.js **/
-"use strict";
+/** Chunk was on 12097 **/
 e.exports = {
   searchResultGroup: "searchResultGroup_c68065",
   channelNameContainer: "channelNameContainer_c68065",

@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(255367),
   i = n(73800),
-  a = n(481060),
-  o = n(100527),
+  o = n(481060),
+  a = n(100527),
   s = n(873128),
   l = n(704041),
   c = n(986398),
@@ -40,9 +40,9 @@ function f(e) {
     className: d.badge,
     onMouseEnter: E,
     onMouseLeave: b,
-    children: (0, r.jsx)(a.yRy, {
+    children: (0, r.jsx)(o.yRy, {
       targetElementRef: f,
-      animation: a.yRy.Animation.TRANSLATE,
+      animation: o.yRy.Animation.TRANSLATE,
       align: "center",
       autoInvert: !0,
       nudgeAlignIntoViewport: !0,
@@ -51,7 +51,7 @@ function f(e) {
       renderPopout: () => (0, r.jsx)(l.Z, {
         guildId: t.id,
         previewMode: !0,
-        source: o.Z.MEMBER_LIST,
+        source: a.Z.MEMBER_LIST,
         leaderboardId: m.leaderboard_id
       }),
       children: () => (0, r.jsx)(c.Z, {

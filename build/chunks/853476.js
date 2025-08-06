@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var i = n(458725),
-  a = n(386146),
-  o = n(502053),
+  o = n(386146),
+  a = n(502053),
   s = n(42326),
   l = n(388032);
 
@@ -19,9 +19,9 @@ function u(e) {
   let {
     userId: t,
     className: n
-  } = e, i = (0, o.Z)(t), {
+  } = e, i = (0, a.Z)(t), {
     avErrorUIEnabled: l
-  } = (0, a.JN)({
+  } = (0, o.JN)({
     location: "VideoWarning"
   });
   if (null == i) return null;

@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var i = n(481060),
-  a = n(570140),
-  o = n(317770),
+  o = n(570140),
+  a = n(317770),
   s = n(40851),
   l = n(594174),
   c = n(981631);
@@ -39,8 +39,8 @@ function f(e, t) {
   if (null == e) return {};
   var n, r, i = _(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -48,8 +48,8 @@ function f(e, t) {
 function _(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let p = null;
@@ -59,8 +59,8 @@ function h(e, t) {
 }
 async function m(e) {
   var t, {
-      userId: a,
-      section: o,
+      userId: o,
+      section: a,
       subsection: u,
       guildId: _,
       channelId: m,
@@ -70,7 +70,7 @@ async function m(e) {
       disableActionsForPreview: y = !1
     } = e,
     O = f(e, ["userId", "section", "subsection", "guildId", "channelId", "showGuildProfile", "appContext", "customStatusPrompt", "disableActionsForPreview"]);
-  let v = l.default.getUser(a);
+  let v = l.default.getUser(o);
   if (null == v) return;
   let I = l.default.getCurrentUser();
   null != I && (p = await (0, i.ZDy)(async () => {
@@ -79,7 +79,7 @@ async function m(e) {
       user: v,
       currentUser: I,
       guildId: _,
-      initialSection: o,
+      initialSection: a,
       initialSubsection: u,
       channelId: m,
       showGuildProfile: g,
@@ -87,7 +87,7 @@ async function m(e) {
       disableActionsForPreview: y
     }, t, O))
   }, {
-    modalKey: h(a, g ? _ : void 0),
+    modalKey: h(o, g ? _ : void 0),
     contextKey: (0, i.VnL)(null != (t = null != E ? E : (0, s.GB)()) ? t : c.IlC.APP)
   }))
 }
@@ -95,12 +95,12 @@ async function m(e) {
 function g() {
   null != p && (0, i.Mr3)(p), p = null
 }
-class E extends o.Z {
+class E extends a.Z {
   _initialize() {
-    a.Z.subscribe("USER_PROFILE_MODAL_OPEN", m), a.Z.subscribe("USER_PROFILE_MODAL_CLOSE", g)
+    o.Z.subscribe("USER_PROFILE_MODAL_OPEN", m), o.Z.subscribe("USER_PROFILE_MODAL_CLOSE", g)
   }
   _terminate() {
-    a.Z.unsubscribe("USER_PROFILE_MODAL_OPEN", m), a.Z.unsubscribe("USER_PROFILE_MODAL_CLOSE", g)
+    o.Z.unsubscribe("USER_PROFILE_MODAL_OPEN", m), o.Z.unsubscribe("USER_PROFILE_MODAL_CLOSE", g)
   }
 }
 let b = new E

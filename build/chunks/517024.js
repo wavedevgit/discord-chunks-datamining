@@ -7,9 +7,9 @@ function n(e, t) {
     if (Array.isArray(e) || (n = r(e)) || t && e && "number" == typeof e.length) {
       n && (e = n);
       var i = 0,
-        a = function() {};
+        o = function() {};
       return {
-        s: a,
+        s: o,
         n: function() {
           return i >= e.length ? {
             done: !0
@@ -21,12 +21,12 @@ function n(e, t) {
         e: function(e) {
           throw e
         },
-        f: a
+        f: o
       }
     }
     throw TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")
   }
-  var o, s = !0,
+  var a, s = !0,
     l = !1;
   return {
     s: function() {
@@ -37,13 +37,13 @@ function n(e, t) {
       return s = e.done, e
     },
     e: function(e) {
-      l = !0, o = e
+      l = !0, a = e
     },
     f: function() {
       try {
         s || null == n.return || n.return()
       } finally {
-        if (l) throw o
+        if (l) throw a
       }
     }
   }

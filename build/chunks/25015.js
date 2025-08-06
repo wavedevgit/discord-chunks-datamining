@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(255367),
   i = n(73800),
-  a = n(627050),
-  o = n(905405),
+  o = n(627050),
+  a = n(905405),
   s = n(626135),
   l = n(750030),
   c = n(937889),
@@ -30,15 +30,15 @@ function g(e, t) {
     allowDevLinks: T = !1,
     previewLinkTarget: S = !1,
     viewingChannelId: A
-  } = t, N = (0, o.p)(), C = a.d.useExperiment({
+  } = t, N = (0, a.p)(), C = o.d.useExperiment({
     location: "useMessageRenderedContent"
-  }).enabled, w = (0, f.o)({
+  }).enabled, R = (0, f.o)({
     location: "useMessageRenderedContent"
-  }), [R, P] = i.useState(!1), D = i.useCallback(e => {
-    e && P(!0)
+  }), [P, w] = i.useState(!1), D = i.useCallback(e => {
+    e && w(!0)
   }, []);
   return i.useEffect(() => {
-    P(!1)
+    w(!1)
   }, [e.content]), i.useMemo(() => {
     if (null != e.customRenderedContent) return e.customRenderedContent;
     if (e.isUnsupported) return {
@@ -56,7 +56,7 @@ function g(e, t) {
         }
       })
     }
-    return w.enabled ? {
+    return R.enabled ? {
       content: (0, r.jsx)(i.Suspense, {
         children: (0, r.jsx)(d.v.Provider, {
           value: {
@@ -71,7 +71,7 @@ function g(e, t) {
           })
         })
       }),
-      hasSpoilerEmbeds: R
+      hasSpoilerEmbeds: P
     } : (0, c.ZP)(e, {
       hideSimpleEmbedContent: g,
       formatInline: E,
@@ -86,5 +86,5 @@ function g(e, t) {
       viewingChannelId: A,
       allowGameMentions: C
     })
-  }, [e.content, e.customRenderedContent, e.embeds, e.interaction, e.state, e.type, g, E, b, y, O, v, I, S, N, T, A, w.enabled, C, R])
+  }, [e.content, e.customRenderedContent, e.embeds, e.interaction, e.state, e.type, g, E, b, y, O, v, I, S, N, T, A, R.enabled, C, P])
 }

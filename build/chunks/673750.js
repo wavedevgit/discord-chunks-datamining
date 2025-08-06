@@ -2,14 +2,14 @@
 "use strict";
 n.d(t, {
   $V: () => N,
-  Bz: () => w,
+  Bz: () => R,
   ZP: () => L,
-  hc: () => R
+  hc: () => P
 }), n(539854), n(388685), n(49124);
 var r = n(512722),
   i = n.n(r),
-  a = n(544891),
-  o = n(911969),
+  o = n(544891),
+  a = n(911969),
   s = n(367907),
   l = n(710845),
   c = n(432877),
@@ -68,8 +68,8 @@ function S(e, t) {
   if (null == e) return {};
   var n, r, i = A(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -77,17 +77,17 @@ function S(e, t) {
 function A(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 var N = function(e) {
   return e[e.SEND = 0] = "SEND", e[e.EDIT = 1] = "EDIT", e[e.COMMAND = 2] = "COMMAND", e[e.SEND_ANNOUNCEMENT = 3] = "SEND_ANNOUNCEMENT", e
 }({});
 let C = e => 0 === e.type || 3 === e.type,
-  w = e => 1 === e.type,
-  R = e => C(e) ? e.message.nonce : w(e) ? e.message.messageId : e.message.data.id,
-  P = [+p.Z.Millis.MINUTE, 5 * p.Z.Millis.MINUTE];
+  R = e => 1 === e.type,
+  P = e => C(e) ? e.message.nonce : R(e) ? e.message.messageId : e.message.data.id,
+  w = [+p.Z.Millis.MINUTE, 5 * p.Z.Millis.MINUTE];
 class D extends m.Z {
   isFull() {
     return this.queue.length >= this.maxSize
@@ -124,7 +124,7 @@ class D extends m.Z {
     return this.queue.push(...n), this.logger.log("Cancel pending send requests", t.length), t
   }
   startQueueMetricTimers(e) {
-    let t = P.map(e => setTimeout(() => {
+    let t = w.map(e => setTimeout(() => {
       (0, s.yw)(b.rMx.SEND_MESSAGE_QUEUED, {
         queued_duration_ms: e
       })
@@ -152,11 +152,11 @@ class D extends m.Z {
     let {
       channelId: r,
       analyticsLocation: i
-    } = e, o = S(e, ["channelId", "analyticsLocation"]), s = null != (n = (0, d.Z)()) ? n : i, l = null != s ? {
+    } = e, a = S(e, ["channelId", "analyticsLocation"]), s = null != (n = (0, d.Z)()) ? n : i, l = null != s ? {
       location: s
     } : void 0, f = (0, u.d)(), p = v({
       mobile_network_type: _.Z.getType()
-    }, o, null != f && {
+    }, a, null != f && {
       signal_strength: f
     });
     if (c.ZP.get("send_fail_100")) {
@@ -172,7 +172,7 @@ class D extends m.Z {
     }
     let h = this.createResponseHandler(e.nonce, t),
       m = new AbortController;
-    this.startQueueMetricTimers(e.nonce), a.tn.post(T(v({
+    this.startQueueMetricTimers(e.nonce), o.tn.post(T(v({
       url: b.ANM.MESSAGES(r),
       body: p,
       context: l,
@@ -190,11 +190,11 @@ class D extends m.Z {
     let {
       channelId: r,
       analyticsLocation: i
-    } = e, o = S(e, ["channelId", "analyticsLocation"]), s = null != (n = (0, d.Z)()) ? n : i, l = null != s ? {
+    } = e, a = S(e, ["channelId", "analyticsLocation"]), s = null != (n = (0, d.Z)()) ? n : i, l = null != s ? {
       location: s
     } : void 0, f = (0, u.d)(), p = v({
       mobile_network_type: _.Z.getType()
-    }, o, null != f && {
+    }, a, null != f && {
       signal_strength: f
     });
     if (c.ZP.get("send_fail_100")) {
@@ -210,7 +210,7 @@ class D extends m.Z {
     }
     let h = this.createResponseHandler(e.nonce, t),
       m = new AbortController;
-    this.startQueueMetricTimers(e.nonce), a.tn.post(T(v({
+    this.startQueueMetricTimers(e.nonce), o.tn.post(T(v({
       url: b.ANM.MESSAGES_ANNOUNCEMENT(r),
       body: p,
       context: l,
@@ -237,7 +237,7 @@ class D extends m.Z {
         source: y
       } = e,
       O = {
-        type: o.B8.APPLICATION_COMMAND,
+        type: a.B8.APPLICATION_COMMAND,
         application_id: r,
         guild_id: s,
         channel_id: l,
@@ -254,7 +254,7 @@ class D extends m.Z {
       O.data.attachments = e.map((e, t) => (i()(e.status === E.mw.COMPLETED, "Uploads must be staged before trying to send a message"), (0, g.B)(e, t)))
     }
     let v = new AbortController;
-    a.tn.post({
+    o.tn.post({
       url: b.ANM.INTERACTIONS,
       fields: [{
         name: "payload_json",
@@ -279,12 +279,12 @@ class D extends m.Z {
         channelId: n,
         messageId: r,
         isCrossposted: i
-      } = e, o = S(e, ["channelId", "messageId", "isCrossposted"]);
+      } = e, a = S(e, ["channelId", "messageId", "isCrossposted"]);
       let s = new AbortController,
         l = this.createResponseHandler(r, t),
         c = {
           url: b.ANM.MESSAGE(n, r),
-          body: o,
+          body: a,
           retries: 1,
           oldFormErrors: !0,
           signal: s.signal,
@@ -293,7 +293,7 @@ class D extends m.Z {
             this.requests.set(r, s)
           }
         };
-      i && (c.failImmediatelyWhenRateLimited = !0), a.tn.patch(c, l)
+      i && (c.failImmediatelyWhenRateLimited = !0), o.tn.patch(c, l)
     }
   }
 }

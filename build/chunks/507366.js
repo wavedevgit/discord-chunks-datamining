@@ -23,7 +23,7 @@ function i(e) {
   return e
 }
 
-function a(e, t) {
+function o(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -34,8 +34,8 @@ function a(e, t) {
   return n
 }
 
-function o(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : a(Object(t)).forEach(function(n) {
+function a(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : o(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -50,15 +50,15 @@ let s = (0, n(972959).H)(() => ({
 function l(e, t) {
   s.setState(n => {
     let r = n.channelDrafts[e],
-      a = {
+      o = {
         heroFile: null,
         title: "",
         publish: !0,
         createThread: !0
       };
     return {
-      channelDrafts: o(i({}, n.channelDrafts), {
-        [e]: i({}, a, r, t)
+      channelDrafts: a(i({}, n.channelDrafts), {
+        [e]: i({}, o, r, t)
       })
     }
   })

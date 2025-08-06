@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var i = n(120356),
-  a = n.n(i),
-  o = n(66546),
+  o = n.n(i),
+  a = n(66546),
   s = n(481060),
   l = n(906732),
   c = n(975298),
@@ -91,8 +91,8 @@ let T = {
       tierMarkerAnimationPosition: N,
       totalAvailableBoostsCount: C
     } = e, {
-      analyticsLocations: w
-    } = (0, l.ZP)(), R = (0, c.Z)(), P = p.oCV[A], D = P - C, L = A <= N || b, x = L && A <= i.premiumTier, k = L && A < i.premiumTier, j = L && A === i.premiumTier, M = i.premiumTier < A && C >= P, {
+      analyticsLocations: R
+    } = (0, l.ZP)(), P = (0, c.Z)(), w = p.oCV[A], D = w - C, L = A <= N || b, x = L && A <= i.premiumTier, M = L && A < i.premiumTier, k = L && A === i.premiumTier, j = i.premiumTier < A && C >= w, {
       scaleFactor: U
     } = (0, s.q_F)({
       from: {
@@ -106,13 +106,13 @@ let T = {
         friction: 12
       }
     }), G = (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(o.animated.div, {
+      children: [(0, r.jsx)(a.animated.div, {
         className: E.progressBarMarkerIndicator,
         style: {
           transform: U.to(e => "translate(-50%, -50%) scale(".concat(e, ")"))
         }
-      }), A !== p.Eu4.NONE ? M ? (0, r.jsx)(s.mTd, {
-        className: a()(E.boostedTierIcon, E.disabledIndicator),
+      }), A !== p.Eu4.NONE ? j ? (0, r.jsx)(s.mTd, {
+        className: o()(E.boostedTierIcon, E.disabledIndicator),
         size: "xxs",
         color: "currentColor"
       }) : (0, r.jsx)(u.Z, {
@@ -123,8 +123,8 @@ let T = {
     });
 
     function B() {
-      L && (M || (0, f.u)({
-        analyticsLocations: w,
+      L && (j || (0, f.u)({
+        analyticsLocations: R,
         analyticsLocation: {
           page: p.ZY5.PREMIUM_GUILD_USER_MODAL,
           section: p.jXE.PREMIUM_GUILD_USER_MODAL_PROGRESS_BAR,
@@ -135,7 +135,7 @@ let T = {
         guild: i
       }))
     }
-    let Z = !x && R.fractionalState === h.a$.NONE,
+    let Z = !x && P.fractionalState === h.a$.NONE,
       F = Z ? s.P3F : "div",
       V = Z ? {
         onClick: B
@@ -146,7 +146,7 @@ let T = {
         tierName: (0, d.nW)(A, {
           useLevels: !1
         })
-      }) : M ? m.intl.formatToPlainString(g.default["9CtPjo"], {
+      }) : j ? m.intl.formatToPlainString(g.default["9CtPjo"], {
         perk: (0, d.nW)(A, {
           useLevels: !1
         })
@@ -158,11 +158,11 @@ let T = {
       }),
       shouldShow: A !== p.Eu4.NONE,
       children: e => (0, r.jsxs)(F, v(y({
-        className: a()(E.progressBarMarker, {
+        className: o()(E.progressBarMarker, {
           [E.progressBarMarkerUnlocked]: x,
           [E.progressBarMarkerLocked]: Z,
-          [E.progressBarMarkerLower]: k,
-          [E.progressBarMarkerCurrent]: j
+          [E.progressBarMarkerLower]: M,
+          [E.progressBarMarkerCurrent]: k
         }),
         style: {
           left: "".concat(100 * T[A], "%")

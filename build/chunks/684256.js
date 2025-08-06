@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(255367),
   i = n(73800),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(481060),
   l = n(895924),
   c = n(827498),
@@ -20,7 +20,7 @@ function h(e) {
   let {
     context: t,
     entrypoint: n,
-    title: a,
+    title: o,
     look: h,
     items: m,
     sectionName: g,
@@ -29,7 +29,7 @@ function h(e) {
   return (0, r.jsxs)("section", {
     className: p.container,
     "aria-label": _.intl.formatToPlainString(_.t.iobNIC, {
-      sectionTitle: a
+      sectionTitle: o
     }),
     children: [(0, r.jsxs)("div", {
       className: p.header,
@@ -38,19 +38,19 @@ function h(e) {
       }), (0, r.jsx)(s.X6q, {
         variant: "heading-md/medium",
         color: "header-primary",
-        children: a
+        children: o
       })]
     }), (0, r.jsx)(s.Ttm, {
       children: (0, r.jsx)("div", {
-        className: o()({
+        className: a()({
           [p.appGrid]: h !== d.U4.ROW,
           [p.rows]: h === d.U4.ROW
         }),
         children: m.map((e, n) => {
           let {
             application: i,
-            installOnDemand: a,
-            showsPromoted: o
+            installOnDemand: o,
+            showsPromoted: a
           } = e;
           return (0, r.jsx)(y, {
             context: t,
@@ -59,10 +59,10 @@ function h(e) {
             sectionName: g,
             resultsPosition: n,
             location: l.Vh.APP_LAUNCHER_LIST_VIEW_ALL,
-            installOnDemand: a,
+            installOnDemand: o,
             isOneClickCTA: b,
             sectionOverallPosition: E,
-            showsPromoted: o
+            showsPromoted: a
           }, i.id)
         })
       })

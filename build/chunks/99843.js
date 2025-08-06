@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(255367),
   i = n(73800),
-  a = n(481060),
-  o = n(239091),
+  o = n(481060),
+  a = n(239091),
   s = n(100527),
   l = n(933557),
   c = n(266076),
@@ -60,8 +60,8 @@ function y(e, t) {
   if (null == e) return {};
   var n, r, i = O(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -69,8 +69,8 @@ function y(e, t) {
 function O(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let v = e => {
@@ -79,12 +79,12 @@ let v = e => {
   } = e;
   return (0, d.m$)({
     channelId: t.id
-  }) ? (0, r.jsx)(a.ua7, {
+  }) ? (0, r.jsx)(o.ua7, {
     text: p.intl.string(p.t.QyZ4TU),
-    children: e => (0, r.jsx)(a.tQf, b(g({}, e), {
+    children: e => (0, r.jsx)(o.tQf, b(g({}, e), {
       size: "xs",
       "aria-label": p.intl.string(p.t.VHXh8f),
-      color: a.TVs.colors.INTERACTIVE_NORMAL
+      color: o.TVs.colors.INTERACTIVE_NORMAL
     }))
   }) : null
 };
@@ -94,7 +94,7 @@ function I(e) {
     channel: t
   } = e, i = t.id, d = (0, l.ZP)(t);
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(a.ua7, {
+    children: [(0, r.jsx)(o.ua7, {
       text: p.intl.string(p.t["5Q9+/P"]),
       position: "bottom",
       children: e => {
@@ -102,12 +102,12 @@ function I(e) {
           onMouseEnter: l,
           onClick: m
         } = e, E = y(e, ["onMouseEnter", "onClick"]);
-        return (0, r.jsxs)(a.P3F, b(g({}, E), {
+        return (0, r.jsxs)(o.P3F, b(g({}, E), {
           className: h.hoverableContainer,
           onClick: () => {
             null == m || m(), (0, u.B)(i, s.Z.HEADER_BAR)
           },
-          onContextMenu: e => (0, o.jW)(e, () => Promise.all([n.e("79695"), n.e("70205"), n.e("53912"), n.e("55370")]).then(n.bind(n, 354741)).then(e => {
+          onContextMenu: e => (0, a.jW)(e, () => Promise.all([n.e("79695"), n.e("70205"), n.e("53912"), n.e("55370")]).then(n.bind(n, 354741)).then(e => {
             let {
               default: n
             } = e;
@@ -131,14 +131,14 @@ function I(e) {
             className: h.gdmIcon,
             "aria-hidden": !0,
             channel: t,
-            size: a.EFr.SIZE_20,
-            facepileSizeOverride: a.EFr.SIZE_24,
+            size: o.EFr.SIZE_20,
+            facepileSizeOverride: o.EFr.SIZE_24,
             experimentLocation: "header_bar"
-          }), (0, r.jsx)(a.Text, {
+          }), (0, r.jsx)(o.Text, {
             variant: "text-md/medium",
             color: "header-primary",
             children: null != d ? d : ""
-          }), (0, r.jsx)(a.vdY, {
+          }), (0, r.jsx)(o.vdY, {
             className: h.editIcon,
             size: "xs",
             color: "currentColor"

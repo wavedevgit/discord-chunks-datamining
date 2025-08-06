@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var i = n(512722),
-  a = n.n(i),
-  o = n(442837),
+  o = n.n(i),
+  a = n(442837),
   s = n(481060),
   l = n(410575),
   c = n(906732),
@@ -28,9 +28,9 @@ function g(e) {
     onInteraction: E
   } = e, {
     analyticsLocations: b
-  } = (0, c.ZP)(), y = (0, o.e7)([d.default], () => {
+  } = (0, c.ZP)(), y = (0, a.e7)([d.default], () => {
     let e = d.default.getCurrentUser();
-    return a()(null != e, "VideoDeviceMenu: currentUser cannot be undefined"), e
+    return o()(null != e, "VideoDeviceMenu: currentUser cannot be undefined"), e
   }), O = (0, u.M)({
     deviceType: h.h7.VIDEO_INPUT,
     analyticsLocations: b,

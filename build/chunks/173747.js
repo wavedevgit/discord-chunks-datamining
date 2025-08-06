@@ -4,8 +4,8 @@ n.d(t, {
   Z: () => z
 }), n(388685), n(539854);
 var r, i = n(392711),
-  a = n.n(i),
-  o = n(442837),
+  o = n.n(i),
+  a = n(442837),
   s = n(846519),
   l = n(570140),
   c = n(274616),
@@ -36,16 +36,16 @@ let v = new Set,
   A = new Set,
   N = {},
   C = 10 * E.Z.Millis.MINUTE,
-  w = 6 * E.Z.Millis.HOUR,
-  R = 10 * E.Z.Millis.MINUTE,
-  P = new s.V7;
+  R = 6 * E.Z.Millis.HOUR,
+  P = 10 * E.Z.Millis.MINUTE,
+  w = new s.V7;
 
 function D(e) {
-  P.start(e + Math.random() * C, c.o)
+  w.start(e + Math.random() * C, c.o)
 }
 
 function L() {
-  return !_.bm.getSetting() && (D(w), x())
+  return !_.bm.getSetting() && (D(R), x())
 }
 
 function x() {
@@ -57,30 +57,30 @@ function x() {
   l.Z.wait(() => c.o(t))
 }
 
-function k() {
+function M() {
   if (!(0, y.Q)()) return !1;
   for (let e of A) {
     let {
       applicationId: t,
       branchId: n
     } = (0, b.CP)(e);
-    null != f.Z.getApplication(t) && (A.delete(e), j(t, n))
+    null != f.Z.getApplication(t) && (A.delete(e), k(t, n))
   }
 }
 
-function j(e, t) {
+function k(e, t) {
   if (null != I[t] && g.Z.shouldBeInstalled(e, t)) {
     let n = I[t],
       r = n.manifestIds,
       i = m.Z.getState(e, t);
-    null != i && i.shouldPatch && (i.buildId !== n.id || !a().isEqual(i.manifestIds, r)) && l.Z.wait(() => {
+    null != i && i.shouldPatch && (i.buildId !== n.id || !o().isEqual(i.manifestIds, r)) && l.Z.wait(() => {
       let i = f.Z.getApplication(e);
       null != i ? (A.delete((0, b.Tu)(e, t)), (0, d.li)(i, t, n.id, r, !0)) : A.add((0, b.Tu)(e, t))
     })
   }
 }
 
-function M(e) {
+function j(e) {
   let {
     branchId: t
   } = e;
@@ -95,20 +95,20 @@ function U(e) {
     build: i
   } = e;
   v.delete(n);
-  let a = i.manifests.map(e => {
+  let o = i.manifests.map(e => {
       let {
         id: t
       } = e;
       return t
     }),
-    o = i.id;
+    a = i.id;
   T.delete(n), I[n] = {
-    id: o,
+    id: a,
     applicationId: t,
     branchId: n,
     locale: r,
-    manifestIds: a
-  }, j(t, n)
+    manifestIds: o
+  }, k(t, n)
 }
 
 function G(e) {
@@ -159,15 +159,15 @@ function V(e) {
     }
     N[t] = r
   }
-  D(w)
-}
-
-function H() {
   D(R)
 }
 
+function H() {
+  D(P)
+}
+
 function Y() {
-  P.stop()
+  w.stop()
 }
 
 function W(e) {
@@ -182,7 +182,7 @@ function W(e) {
     n.has(t.id) && (0, b.Je)(t) && l.Z.wait(() => u.l(t.id, t.branchId))
   }
 }
-class K extends(r = o.ZP.Store) {
+class K extends(r = a.ZP.Store) {
   initialize() {
     this.syncWith([h.Z], x), this.waitFor(m.Z, h.Z, f.Z, p.Z)
   }
@@ -208,8 +208,8 @@ class K extends(r = o.ZP.Store) {
 O(K, "displayName", "ApplicationBuildStore");
 let z = new K(l.Z, {
   CONNECTION_OPEN: L,
-  GAMES_DATABASE_UPDATE: k,
-  APPLICATION_BUILD_FETCH_START: M,
+  GAMES_DATABASE_UPDATE: M,
+  APPLICATION_BUILD_FETCH_START: j,
   APPLICATION_BUILD_FETCH_SUCCESS: U,
   APPLICATION_BUILD_NOT_FOUND: G,
   APPLICATION_BUILD_SIZE_FETCH_START: B,

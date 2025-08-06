@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var i = n(120356),
-  a = n.n(i),
-  o = n(243814),
+  o = n.n(i),
+  a = n(243814),
   s = n(993365),
   l = n(481060),
   c = n(162685),
@@ -53,7 +53,7 @@ function b(e) {
     location: "oauth2_authorize"
   });
   return (0, r.jsxs)("div", {
-    className: a()(g.applicationDetails, {
+    className: o()(g.applicationDetails, {
       [g.noPadding]: N.enabled
     }),
     children: [null != n ? (0, r.jsx)(y, {
@@ -69,7 +69,7 @@ function b(e) {
       text: m.intl.formatToPlainString(m.t["+1bjc3"], {
         date: T
       })
-    }), s.includes(o.x.BOT) && null != O ? (0, r.jsx)(y, {
+    }), s.includes(a.x.BOT) && null != O ? (0, r.jsx)(y, {
       icon: l.wGt,
       text: m.intl.formatToPlainString(m.t.UHGHSE, {
         guildCount: O

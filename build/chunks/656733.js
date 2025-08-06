@@ -4,8 +4,8 @@ n.d(t, {
   Z: () => x
 }), n(704826), n(35282), n(388685);
 var r, i = n(442837),
-  a = n(377108),
-  o = n(570140),
+  o = n(377108),
+  a = n(570140),
   s = n(981631),
   l = n(388032);
 
@@ -64,7 +64,7 @@ let _ = {
     ORIGINAL_MP4: "original.mp4"
   },
   h = _.WEBM,
-  m = A(h) ? a.EO.VIDEO : a.EO.IMAGE,
+  m = A(h) ? o.EO.VIDEO : o.EO.IMAGE,
   g = null,
   E = "",
   b = "",
@@ -113,22 +113,22 @@ function C(e) {
       height: n,
       src: r,
       gif_src: i,
-      url: a,
-      id: o
+      url: o,
+      id: a
     } = e;
     return {
       width: t,
       height: n,
       src: N(r),
       gifSrc: N(i),
-      url: a,
-      id: o,
+      url: o,
+      id: a,
       format: m
     }
   })
 }
 
-function w(e) {
+function R(e) {
   let {
     query: t
   } = e;
@@ -136,7 +136,7 @@ function w(e) {
   b = t, y = []
 }
 
-function R(e) {
+function P(e) {
   let t = e.trendingCategories;
   O = [...null != e.trendingGIFPreview ? [{
     type: s.wI2.TRENDING_GIFS,
@@ -150,7 +150,7 @@ function R(e) {
   }))]
 }
 
-function P(e) {
+function w(e) {
   let {
     items: t
   } = e;
@@ -190,12 +190,12 @@ class L extends(r = i.ZP.Store) {
   }
 }
 c(L, "displayName", "GIFPickerViewStore");
-let x = new L(o.Z, {
+let x = new L(a.Z, {
   GIF_PICKER_INITIALIZE: T,
   GIF_PICKER_QUERY: S,
   GIF_PICKER_QUERY_SUCCESS: C,
-  GIF_PICKER_QUERY_FAILURE: w,
-  GIF_PICKER_TRENDING_FETCH_SUCCESS: R,
-  GIF_PICKER_SUGGESTIONS_SUCCESS: P,
+  GIF_PICKER_QUERY_FAILURE: R,
+  GIF_PICKER_TRENDING_FETCH_SUCCESS: P,
+  GIF_PICKER_SUGGESTIONS_SUCCESS: w,
   GIF_PICKER_TRENDING_SEARCH_TERMS_SUCCESS: D
 })

@@ -1,11 +1,11 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  T: () => a
+  T: () => o
 });
 var r = n(570140),
   i = n(155414);
-async function a(e, t) {
+async function o(e, t) {
   r.Z.dispatch({
     type: "CREATOR_MONETIZATION_PRICE_TIERS_FETCH",
     guildId: e,

@@ -5,9 +5,9 @@ n.d(t, {
 });
 var r = n(569545),
   i = n(458725),
-  a = n(442741);
+  o = n(442741);
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -23,7 +23,7 @@ function s(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      o(e, t, n[t])
+      a(e, t, n[t])
     })
   }
   return e
@@ -36,7 +36,7 @@ let l = {
     return t.filter(e => null != e.errorCode).map(e => s({
       type: i.u.SCREENSHARE_OS_ERROR,
       errorMessage: e.errorCode.toString()
-    }, (0, a.rT)((0, r.V9)(e))))
+    }, (0, o.rT)((0, r.V9)(e))))
   },
   makeErrorContextKey: e => "".concat(e.streamKey, ":").concat(e.mediaSessionId)
 }

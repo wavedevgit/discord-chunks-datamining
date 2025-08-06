@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(255367),
   i = n(73800),
-  a = n(103891),
-  o = n(308521),
+  o = n(103891),
+  a = n(308521),
   s = n(442837),
   l = n(481060),
   c = n(40851),
@@ -17,7 +17,7 @@ function f(e) {
   let {
     buffer: t,
     autoplay: n = !0,
-    className: a,
+    className: o,
     fit: s,
     alignment: c,
     style: u,
@@ -30,16 +30,16 @@ function f(e) {
   } = e, y = i.useContext(l.Sfi), O = _(), [v, I] = i.useState(void 0), T = i.useRef(null), {
     rive: S,
     RiveComponent: A
-  } = (0, o.useRive)({
+  } = (0, a.useRive)({
     eventTarget: null == f ? void 0 : f.current,
     buffer: t,
     autoplay: n,
     stateMachines: v,
     artboard: h,
     useOffscreenRenderer: !0,
-    layout: new o.Layout({
-      fit: null != s ? d.L[s] : o.Fit.Cover,
-      alignment: null != c ? d.E[c] : o.Alignment.Center
+    layout: new a.Layout({
+      fit: null != s ? d.L[s] : a.Fit.Cover,
+      alignment: null != c ? d.E[c] : a.Alignment.Center
     })
   });
   i.useImperativeHandle(g, () => ({
@@ -61,8 +61,8 @@ function f(e) {
         t = () => {
           clearTimeout(T.current)
         };
-      return S.on(o.EventType.Play, e), S.on(o.EventType.Pause, t), S.on(o.EventType.Stop, t), () => {
-        S.off(o.EventType.Play, e), S.off(o.EventType.Pause, t), S.off(o.EventType.Stop, t)
+      return S.on(a.EventType.Play, e), S.on(a.EventType.Pause, t), S.on(a.EventType.Stop, t), () => {
+        S.off(a.EventType.Play, e), S.off(a.EventType.Pause, t), S.off(a.EventType.Stop, t)
       }
     }
   }, [S, m, y.reducedMotion.enabled]), i.useLayoutEffect(() => {
@@ -82,10 +82,10 @@ function f(e) {
     if (null == S) return;
     S.play();
     let e = t => {
-      null != t.data && "number" == typeof t.data && (N.current = t.data, t.data > 0 && ("halt" === m && y.reducedMotion.enabled && S.isPlaying && S.pause(), S.off(o.EventType.Advance, e)))
+      null != t.data && "number" == typeof t.data && (N.current = t.data, t.data > 0 && ("halt" === m && y.reducedMotion.enabled && S.isPlaying && S.pause(), S.off(a.EventType.Advance, e)))
     };
-    return S.on(o.EventType.Advance, e), () => {
-      S.off(o.EventType.Advance, e)
+    return S.on(a.EventType.Advance, e), () => {
+      S.off(a.EventType.Advance, e)
     }
   }, [S, y.reducedMotion.enabled, m]);
   let C = i.useRef(!1);
@@ -94,7 +94,7 @@ function f(e) {
       null != S && O && (C.current = null != S.frameRequestId)
     }
   }, [S, O]), (0, r.jsx)(A, {
-    className: a,
+    className: o,
     style: u
   })
 }
@@ -117,18 +117,18 @@ function p(e) {
     rive: t,
     artboard: n,
     artboardProperties: r,
-    dataBinding: a
-  } = e, c = (0, o.useViewModel)(t);
-  (0, o.useViewModelInstance)(c);
+    dataBinding: o
+  } = e, c = (0, a.useViewModel)(t);
+  (0, a.useViewModelInstance)(c);
   let {
     theme: d,
     saturation: f
   } = (0, l.TCT)(), _ = (0, s.e7)([u.Z], () => u.Z.isHighContrastModeEnabled), p = i.useRef(null);
   i.useEffect(() => {
-    if (null == t || null == t.viewModelInstance || null == a) return;
+    if (null == t || null == t.viewModelInstance || null == o) return;
     let e = r[n];
-    Object.entries(a).forEach(n => {
-      var r, i, a, o, s, l, c, u;
+    Object.entries(o).forEach(n => {
+      var r, i, o, a, s, l, c, u;
       let [h, m] = n, g = e[h];
       switch (g) {
         case "color":
@@ -140,11 +140,11 @@ function p(e) {
           null == (i = t.viewModelInstance) || null == (r = i.color(h)) || r.rgba(E, b, y, 255 * O);
           break;
         case "number":
-          let v = null == (a = t.viewModelInstance) ? void 0 : a.number(h);
+          let v = null == (o = t.viewModelInstance) ? void 0 : o.number(h);
           null != v && (v.value = m);
           break;
         case "boolean":
-          let I = null == (o = t.viewModelInstance) ? void 0 : o.boolean(h);
+          let I = null == (a = t.viewModelInstance) ? void 0 : a.boolean(h);
           null != I && (I.value = m);
           break;
         case "trigger":
@@ -157,7 +157,7 @@ function p(e) {
         default:
           console.warn("Unknown property type: ".concat(g))
       }
-    }), p.current = a
-  }, [a, t, n, r, d, null == t ? void 0 : t.viewModelInstance, f, _])
+    }), p.current = o
+  }, [o, t, n, r, d, null == t ? void 0 : t.viewModelInstance, f, _])
 }
-o.RuntimeLoader.setWasmUrl(a)
+a.RuntimeLoader.setWasmUrl(o)

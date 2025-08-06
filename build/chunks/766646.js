@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var i = n(120356),
-  a = n.n(i),
-  o = n(782992);
+  o = n.n(i),
+  a = n(782992);
 
 function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -55,9 +55,9 @@ function d(e) {
     className: i
   } = e;
   return (0, r.jsx)(t, u(l({}, e), {
-    className: a()({
-      [o.hiddenVisually]: !n,
-      [o.showOnFocus]: n
+    className: o()({
+      [a.hiddenVisually]: !n,
+      [a.showOnFocus]: n
     }, i)
   }))
 }

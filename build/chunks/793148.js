@@ -4,9 +4,9 @@ n.d(t, {
   Z: () => m
 }), n(388685);
 var r, i = n(255367),
-  a = n(73800),
-  o = n(120356),
-  s = n.n(o),
+  o = n(73800),
+  a = n(120356),
+  s = n.n(a),
   l = n(755721),
   c = n(481060),
   u = n(540026),
@@ -22,7 +22,7 @@ function _(e, t, n) {
   }) : e[t] = n, e
 }
 let p = 150;
-class h extends(r = a.PureComponent) {
+class h extends(r = o.PureComponent) {
   componentDidMount() {
     this.updateMediaBar()
   }
@@ -43,8 +43,8 @@ class h extends(r = a.PureComponent) {
       iconColor: t,
       className: n,
       sliderWrapperClassName: r,
-      sliderClassName: a,
-      currentWindow: o,
+      sliderClassName: o,
+      currentWindow: a,
       muted: _,
       minValue: h,
       maxValue: m,
@@ -89,13 +89,13 @@ class h extends(r = a.PureComponent) {
           }), p)
         },
         children: (0, i.jsx)(u.Z, {
-          sliderClassName: a,
+          sliderClassName: o,
           type: u.Z.Types.VOLUME,
           value: g / m,
           onDrag: this.handleValueChange,
           onDragStart: this.handleDragStart,
           onDragEnd: this.handleDragEnd,
-          currentWindow: o,
+          currentWindow: a,
           ref: this._mediaBar
         })
       }), (0, i.jsx)(l.zx, {
@@ -112,7 +112,7 @@ class h extends(r = a.PureComponent) {
     })
   }
   constructor(...e) {
-    super(...e), _(this, "_mediaBar", a.createRef()), _(this, "_hoverTimeout", void 0), _(this, "state", {
+    super(...e), _(this, "_mediaBar", o.createRef()), _(this, "_hoverTimeout", void 0), _(this, "state", {
       hovered: !1,
       focused: !1,
       dragging: !1
@@ -133,7 +133,7 @@ class h extends(r = a.PureComponent) {
         value: n,
         maxValue: r,
         onValueChange: i
-      } = this.props, a = .05 * (r - t);
+      } = this.props, o = .05 * (r - t);
       switch (e.key) {
         case "ArrowUp":
           if (e.stopPropagation(), e.preventDefault(), !this.state.focused) {
@@ -142,7 +142,7 @@ class h extends(r = a.PureComponent) {
             });
             break
           }
-          null == i || i(Math.min(r, n + a));
+          null == i || i(Math.min(r, n + o));
           break;
         case "ArrowDown":
           if (e.stopPropagation(), e.preventDefault(), !this.state.focused) {
@@ -151,7 +151,7 @@ class h extends(r = a.PureComponent) {
             });
             break
           }
-          null == i || i(Math.max(t, n - a));
+          null == i || i(Math.max(t, n - o));
           break;
         case "Escape":
           this.setState({

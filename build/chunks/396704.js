@@ -9,8 +9,8 @@ n.d(t, {
 }), n(388685), n(415506);
 var r = n(308521),
   i = n(97519),
-  a = n(570833),
-  o = n(493773);
+  o = n(570833),
+  a = n(493773);
 
 function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -61,7 +61,7 @@ let f = (0, i.U)(() => ({
 function _(e) {
   let t = h(e),
     n = f(t => t.riveAssetCache.get(e));
-  return ((0, o.ZP)(() => {
+  return ((0, a.ZP)(() => {
     if (null != t || f.getState().riveAssetCache.has(e)) return;
     let n = new r.RiveFile({
         src: e
@@ -79,7 +79,7 @@ function _(e) {
           console.error("Rive file load error", e, t)
         })
       };
-    (0, a.f)(i)
+    (0, o.f)(i)
   }), null != t) ? {
     status: "loaded",
     buffer: t

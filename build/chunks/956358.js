@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(818083),
   i = n(427164),
-  a = n(846573);
-let o = (0, r.B)({
+  o = n(846573);
+let a = (0, r.B)({
     kind: "user",
     id: "2025-07_desktop_skipped_updates",
     label: "Optional desktop updates at startup",
@@ -39,14 +39,14 @@ function l(e) {
     location: t
   } = e, {
     isInHoldout: n
-  } = a.X.getCurrentConfig({
+  } = o.X.getCurrentConfig({
     location: t
   }, {
     autoTrackExposure: !0
   });
   return n || s.getConfig({
     location: t
-  }), o.getCurrentConfig({
+  }), a.getCurrentConfig({
     location: t
   }, {
     disable: n,

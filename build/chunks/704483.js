@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.r(t), n.d(t, {
-  default: () => o,
+  default: () => a,
   messagesLoader: () => i
 });
 let {
@@ -39,5 +39,5 @@ let {
   "zh-TW": () => n.e("70266").then(n.t.bind(n, 805455, 19)),
   "en-US": () => n.e("91287").then(n.bind(n, 773429))
 }, "en-US"), {
-  makeMessagesProxy: a
-} = n(515149), o = a(i)
+  makeMessagesProxy: o
+} = n(515149), a = o(i)

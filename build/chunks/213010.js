@@ -1,13 +1,13 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Q: () => o
+  Q: () => a
 });
 var r = n(442837),
   i = n(699516),
-  a = n(981631);
+  o = n(981631);
 
-function o(e) {
+function a(e) {
   let t = (0, r.e7)([i.Z], () => i.Z.getRelationshipType(e), [e]);
-  return t === a.OGo.NONE || t === a.OGo.BLOCKED || t === a.OGo.PENDING_INCOMING
+  return t === o.OGo.NONE || t === o.OGo.BLOCKED || t === o.OGo.PENDING_INCOMING
 }

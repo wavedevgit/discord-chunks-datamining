@@ -7,9 +7,9 @@ n.d(t, {
 });
 var r = n(362383),
   i = n(731965),
-  a = n(902704);
+  o = n(902704);
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -25,7 +25,7 @@ function s(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      o(e, t, n[t])
+      a(e, t, n[t])
     })
   }
   return e
@@ -70,7 +70,7 @@ function f(e) {
   return d(t => {
     var n;
     return null != (n = t.polls[e]) ? n : u
-  }, a.Z)
+  }, o.Z)
 }
 
 function _(e, t, n) {

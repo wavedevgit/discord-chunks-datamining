@@ -8,7 +8,7 @@ n.d(t, {
 });
 var r = n(818083),
   i = n(128064);
-let a = (0, r.B)({
+let o = (0, r.B)({
     kind: "user",
     id: "2025-01_sensitive_content_defaults",
     label: "Sensitive Content Defaults",
@@ -35,7 +35,7 @@ let a = (0, r.B)({
       }
     }]
   }),
-  o = (0, r.B)({
+  a = (0, r.B)({
     kind: "user",
     id: "2025-01_sensitive_content_defaults_new_users",
     label: "Sensitive Content Defaults - New Users",
@@ -66,13 +66,13 @@ let a = (0, r.B)({
 function s(e) {
   let {
     enabled: t
-  } = a.getCurrentConfig({
+  } = o.getCurrentConfig({
     location: e
   }, {
     autoTrackExposure: !1
   }), {
     enabled: n
-  } = o.getCurrentConfig({
+  } = a.getCurrentConfig({
     location: e
   }, {
     autoTrackExposure: !1
@@ -83,13 +83,13 @@ function s(e) {
 function l(e) {
   let {
     enabled: t
-  } = a.useExperiment({
+  } = o.useExperiment({
     location: e
   }, {
     autoTrackExposure: !1
   }), {
     enabled: n
-  } = o.useExperiment({
+  } = a.useExperiment({
     location: e
   }, {
     autoTrackExposure: !1
@@ -100,7 +100,7 @@ function l(e) {
 function c(e) {
   let {
     allBlur: t
-  } = a.getCurrentConfig({
+  } = o.getCurrentConfig({
     location: e
   }, {
     autoTrackExposure: !1
@@ -111,7 +111,7 @@ function c(e) {
 function u(e) {
   let {
     mixed: t
-  } = a.getCurrentConfig({
+  } = o.getCurrentConfig({
     location: e
   }, {
     autoTrackExposure: !1

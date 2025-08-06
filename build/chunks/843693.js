@@ -1,12 +1,12 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  ZP: () => j,
+  ZP: () => k,
   wU: () => D
 }), n(388685);
 var r, i = n(442837),
-  a = n(759174),
-  o = n(846519),
+  o = n(759174),
+  a = n(846519),
   s = n(570140),
   l = n(314897),
   c = n(944486),
@@ -59,8 +59,8 @@ function b(e, t) {
   if (null == e) return {};
   var n, r, i = y(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -68,14 +68,14 @@ function b(e, t) {
 function y(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let O = 7,
   v = 1e3,
   I = new Set,
-  T = new a.h(function(e) {
+  T = new o.h(function(e) {
     let {
       userId: t,
       channelId: n
@@ -92,7 +92,7 @@ let O = 7,
 function S(e) {
   return null != e && (e.value > 0 || (null == e ? void 0 : e.multiplier) > 1)
 }
-let A = new a.h(function(e) {
+let A = new o.h(function(e) {
     let {
       messageId: t,
       channelId: n,
@@ -120,13 +120,13 @@ let A = new a.h(function(e) {
   };
 
 function C(e) {
-  var t, n, r, i, a, s;
+  var t, n, r, i, o, s;
   let l = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1],
     c = T.get(N(e)),
     u = E(m({}, c, e), {
       value: null != (n = null != (t = e.value) ? t : null == c ? void 0 : c.value) ? n : 0,
       multiplier: Math.min(null != (i = null != (r = e.multiplier) ? r : null == c ? void 0 : c.multiplier) ? i : 1, O),
-      decayInterval: null != (a = null == c ? void 0 : c.decayInterval) ? a : new o.Xp
+      decayInterval: null != (o = null == c ? void 0 : c.decayInterval) ? o : new a.Xp
     });
   T.set(N(e), u), l && (null == (s = u.decayInterval) || s.start(v, () => {
     let e = T.get(N(u));
@@ -137,19 +137,19 @@ function C(e) {
         null == (t = e.decayInterval) || t.stop(), e.value <= 0 && (C(E(m({}, e), {
           value: 0,
           multiplier: 1
-        })), k.emitChange())
+        })), M.emitChange())
       } else C(E(m({}, e), {
         value: e.value - 1
-      })), k.emitChange()
+      })), M.emitChange()
     }
   }))
 }
 
-function w(e) {
+function R(e) {
   A.set(e.messageId, e)
 }
 
-function R(e) {
+function P(e) {
   var {
     type: t
   } = e, n = b(e, ["type"]);
@@ -157,12 +157,12 @@ function R(e) {
   C(n)
 }
 
-function P(e) {
+function w(e) {
   let {
     comboMessage: t
   } = e;
   if (!d.Z.isEnabled()) return !1;
-  w(t)
+  R(t)
 }
 
 function D(e, t, n, r) {
@@ -175,15 +175,15 @@ function L(e) {
     channelId: r,
     message: {
       mentions: i,
-      author: a,
-      nonce: o
+      author: o,
+      nonce: a
     }
   } = e;
   if (!d.Z.isEnabled()) return !1;
   let s = l.default.getId();
-  if (!D(null == a ? void 0 : a.id, s, o, I)) return !1;
+  if (!D(null == o ? void 0 : o.id, s, a, I)) return !1;
   let c = T.get(N({
-    userId: null != (t = null == a ? void 0 : a.id) ? t : "???",
+    userId: null != (t = null == o ? void 0 : o.id) ? t : "???",
     channelId: r
   }));
   if (d.Z.screenshakeEnabled && d.Z.screenshakeEnabledLocations[_.oZ.MENTION] && null != i && null != i.find(e => e.id === s)) {
@@ -231,9 +231,9 @@ class x extends(r = i.ZP.Store) {
   }
 }
 h(x, "displayName", "PoggermodeStore");
-let k = new x(s.Z, {
-    POGGERMODE_UPDATE_COMBO: R,
-    POGGERMODE_UPDATE_MESSAGE_COMBO: P,
+let M = new x(s.Z, {
+    POGGERMODE_UPDATE_COMBO: P,
+    POGGERMODE_UPDATE_MESSAGE_COMBO: w,
     MESSAGE_CREATE: L
   }),
-  j = k
+  k = M

@@ -1,9 +1,9 @@
 /** Chunk was on web.js **/
 "use strict";
 var r, i = n(442837),
-  a = n(570140);
+  o = n(570140);
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -35,6 +35,6 @@ class u extends(r = i.ZP.PersistedStore) {
     return null == l.lastUsedTimeMs || null == l.lastUsedCommandId ? null : (e > l.lastUsedTimeMs + s && (l.lastUsedCommandId = null, l.lastUsedTimeMs = null), l.lastUsedCommandId)
   }
 }
-o(u, "displayName", "AppLauncherLastUsedCommandStore"), o(u, "persistKey", "AppLauncherLastUsedCommandStore"), new u(a.Z, {
+a(u, "displayName", "AppLauncherLastUsedCommandStore"), a(u, "persistKey", "AppLauncherLastUsedCommandStore"), new u(o.Z, {
   APPLICATION_COMMAND_USED: c
 })

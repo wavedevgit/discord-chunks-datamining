@@ -1,15 +1,15 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => o
+  Z: () => a
 });
 var r = n(63063),
   i = n(927923),
-  a = n(388032);
+  o = n(388032);
 
-function o(e, t, n) {
+function a(e, t, n) {
   let i = null;
-  return "failed" === t ? i = s(e, n.code) : "n/a" === t && (i = l(e, n.code)), null != i && (i.errorCodeMessage = a.intl.format(a.t["1Bi9CQ"], {
+  return "failed" === t ? i = s(e, n.code) : "n/a" === t && (i = l(e, n.code)), null != i && (i.errorCodeMessage = o.intl.format(o.t["1Bi9CQ"], {
     supportURL: r.Z.getSubmitRequestURL(),
     errorCode: n.code
   })), i
@@ -23,35 +23,35 @@ function s(e, t) {
   switch (t) {
     case i.Ry.CONSOLE_DEVICE_COMMUNICATION_RESTRICTED:
       return {
-        title: a.intl.string(a.t["GSZ+HB"]), body: a.intl.formatToPlainString(a.t["cYX/3N"], {
+        title: o.intl.string(o.t["GSZ+HB"]), body: o.intl.formatToPlainString(o.t["cYX/3N"], {
           deviceType: n
         })
       };
     case i.Ry.CONSOLE_DEVICE_INVALID_POWER_MODE:
       return {
-        title: a.intl.formatToPlainString(a.t.akd6S0, {
+        title: o.intl.formatToPlainString(o.t.akd6S0, {
           deviceType: n
-        }), body: a.intl.formatToPlainString(a.t.RyOvpK, {
+        }), body: o.intl.formatToPlainString(o.t.RyOvpK, {
           deviceName: r
         })
       };
     case i.Ry.CONSOLE_DEVICE_UNVAILABLE_FROM_OTHER_USERS:
       return {
-        title: a.intl.formatToPlainString(a.t.M6Vzam, {
+        title: o.intl.formatToPlainString(o.t.M6Vzam, {
           deviceType: n
-        }), body: a.intl.formatToPlainString(a.t.InKtnJ, {
+        }), body: o.intl.formatToPlainString(o.t.InKtnJ, {
           deviceName: r
         })
       };
     case i.Ry.CONSOLE_DEVICE_ACCOUNT_LINK_ERROR:
       return {
-        title: a.intl.string(a.t["QL1y9/"]), body: a.intl.formatToPlainString(a.t.D18eZm, {
+        title: o.intl.string(o.t["QL1y9/"]), body: o.intl.formatToPlainString(o.t.D18eZm, {
           deviceType: n
         }), isAccountLinkError: !0
       };
     default:
       return {
-        title: a.intl.string(a.t["QL1y9/"]), body: a.intl.formatToPlainString(a.t["6ZyNHx"], {
+        title: o.intl.string(o.t["QL1y9/"]), body: o.intl.formatToPlainString(o.t["6ZyNHx"], {
           deviceName: r
         })
       }
@@ -64,10 +64,10 @@ function l(e, t) {
     name: r
   } = e;
   return t === i.Ry.CONSOLE_DEVICE_PASSCODE_UNLOCK_REQUIRED ? {
-    title: a.intl.formatToPlainString(a.t.KchfhI, {
+    title: o.intl.formatToPlainString(o.t.KchfhI, {
       deviceType: n
     }),
-    body: a.intl.formatToPlainString(a.t["21ndz8"], {
+    body: o.intl.formatToPlainString(o.t["21ndz8"], {
       deviceName: r
     })
   } : null

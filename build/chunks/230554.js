@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685), n(35282), n(704826);
 var r = n(73800),
   i = n(512722),
-  a = n.n(i),
-  o = n(650557),
+  o = n.n(i),
+  a = n(650557),
   s = n(911969),
   l = n(998698),
   c = n(91313),
@@ -25,7 +25,7 @@ let m = (e, t, n) => ({
     f.bN.focus(e)
   },
   blur() {
-    o.F3.blur(e)
+    a.F3.blur(e)
   },
   getCurrentWord() {
     let t = e.selection;
@@ -33,10 +33,10 @@ let m = (e, t, n) => ({
       word: null,
       isAtStart: !1
     };
-    let [n, r] = f.bN.node(e, f.C0.parent(t.anchor.path)), [i, a] = f.bN.node(e, t.anchor.path), o = t.anchor.offset;
-    if (!f.C0.hasPrevious(a) && f.LC.isText(i)) {
-      let e = i.text.substring(0, o);
-      if (f.aj.isType(n, "applicationCommand") && o < n.command.displayName.length + 2) return {
+    let [n, r] = f.bN.node(e, f.C0.parent(t.anchor.path)), [i, o] = f.bN.node(e, t.anchor.path), a = t.anchor.offset;
+    if (!f.C0.hasPrevious(o) && f.LC.isText(i)) {
+      let e = i.text.substring(0, a);
+      if (f.aj.isType(n, "applicationCommand") && a < n.command.displayName.length + 2) return {
         word: e,
         isAtStart: !0
       }
@@ -44,14 +44,14 @@ let m = (e, t, n) => ({
     let s = "",
       l = !1;
     for (;;) {
-      if (--o < 0) {
-        if (!f.C0.hasPrevious(a)) {
+      if (--a < 0) {
+        if (!f.C0.hasPrevious(o)) {
           l = !0;
           break
-        } [i, a] = f.bN.node(e, f.C0.previous(a))
+        } [i, o] = f.bN.node(e, f.C0.previous(o))
       }
       if (!f.LC.isText(i)) break;
-      let t = i.text[o];
+      let t = i.text[a];
       if (h.i$.test(t)) break;
       s = t + s
     }
@@ -73,8 +73,8 @@ let m = (e, t, n) => ({
     let r = c.HZ(e);
     if (null == r) return [];
     let i = l.Z.getActiveCommand(t.id),
-      a = null == i || null == (n = i.options) ? void 0 : n.find(e => e.name === r[0].optionName);
-    return null == a ? [] : c.IB(e, a, r[0], t.id)
+      o = null == i || null == (n = i.options) ? void 0 : n.find(e => e.name === r[0].optionName);
+    return null == o ? [] : c.IB(e, o, r[0], t.id)
   },
   getCommandOptionValues() {
     let n = l.Z.getActiveCommand(t.id);
@@ -84,15 +84,15 @@ let m = (e, t, n) => ({
     let r = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : null,
       i = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
     u.T.withSingleEntry(e, () => {
-      let a = c.HZ(e),
-        o = null != a && g(t, a[0]);
-      if (null != r && o && (d.Q.removeInlineChildren(e, a), i = !1), E(e, n, r, i), null != r && o) {
+      let o = c.HZ(e),
+        a = null != o && g(t, o[0]);
+      if (null != r && a && (d.Q.removeInlineChildren(e, o), i = !1), E(e, n, r, i), null != r && a) {
         let n = c.cr(e);
-        if (a = f.q.updateElement(e, a), null != n) {
+        if (o = f.q.updateElement(e, o), null != n) {
           let r = f.q.markdown(n[0], t.guild_id);
-          (0, p.Gg)(e, a, t.id, r) && (a = f.q.updateElement(e, a))
+          (0, p.Gg)(e, o, t.id, r) && (o = f.q.updateElement(e, o))
         }
-        c.xi(e, t.guild_id, t.id, f.q.updateElement(e, a), !1), d.Q.selectNextCommandOption(e)
+        c.xi(e, t.guild_id, t.id, f.q.updateElement(e, o), !1), d.Q.selectNextCommandOption(e)
       }
     })
   },
@@ -100,9 +100,9 @@ let m = (e, t, n) => ({
     let r = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : null,
       i = !(arguments.length > 2) || void 0 === arguments[2] || arguments[2];
     u.T.withSingleEntry(e, () => {
-      let a = c.HZ(e),
-        o = null != a && g(t, a[0]);
-      if (o) d.Q.removeInlineChildren(e, a), i = !1;
+      let o = c.HZ(e),
+        a = null != o && g(t, o[0]);
+      if (a) d.Q.removeInlineChildren(e, o), i = !1;
       else {
         let {
           word: t
@@ -113,7 +113,7 @@ let m = (e, t, n) => ({
           reverse: !0
         })
       }
-      E(e, n, r, i), o && d.Q.selectNextCommandOption(e)
+      E(e, n, r, i), a && d.Q.selectNextCommandOption(e)
     })
   },
   insertInlineAutocompleteInput(t) {
@@ -136,7 +136,7 @@ let m = (e, t, n) => ({
   replaceInlineAutocompleteInput(t, n, r) {
     u.T.withSingleEntry(e, () => {
       let i = f.bN.getSelectedParentOfType(e, [t]);
-      a()(null != i, "Cannot replace inline input of type ".concat(t, " when none is selected")), d.Q.removeNodes(e, {
+      o()(null != i, "Cannot replace inline input of type ".concat(t, " when none is selected")), d.Q.removeNodes(e, {
         at: i[1]
       }), E(e, n, r, !0)
     })
@@ -148,9 +148,9 @@ let m = (e, t, n) => ({
     } = t;
     u.T.withSingleEntry(e, () => {
       var t, i;
-      let a = n.animated ? "a" : "",
-        o = null != (i = null != (t = n.originalName) ? t : n.name) ? i : "";
-      E(e, ":".concat(n.name, ":"), null != n.id ? "<".concat(a, ":").concat(o.replace(/:/g, ""), ":").concat(n.id, ">") : null, r)
+      let o = n.animated ? "a" : "",
+        a = null != (i = null != (t = n.originalName) ? t : n.name) ? i : "";
+      E(e, ":".concat(n.name, ":"), null != n.id ? "<".concat(o, ":").concat(a.replace(/:/g, ""), ":").concat(n.id, ">") : null, r)
     })
   }
 });

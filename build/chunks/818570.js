@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var i = n(755721),
-  a = n(481060),
-  o = n(767714),
+  o = n(481060),
+  a = n(767714),
   s = n(834129),
   l = n(981631),
   c = n(474936),
@@ -22,21 +22,21 @@ function f(e) {
   return (0, r.jsx)(s.Z, {
     contentClassName: d.messageContentContainer,
     iconContainerClassName: d.iconContainer,
-    iconNode: (0, r.jsx)(a.Dkj, {
+    iconNode: (0, r.jsx)(o.Dkj, {
       colorClass: d.icon
     }),
     children: (0, r.jsxs)("div", {
       className: d.container,
       children: [(0, r.jsxs)("div", {
-        children: [(0, r.jsx)(a.Text, {
+        children: [(0, r.jsx)(o.Text, {
           variant: "text-sm/medium",
           children: t.content
         }), (0, r.jsxs)("div", {
           className: d.nitroBadge,
-          children: [(0, r.jsx)(a.SrA, {
+          children: [(0, r.jsx)(o.SrA, {
             size: "xs",
             colorClass: d.nitroBadgeIcon
-          }), (0, r.jsx)(a.Text, {
+          }), (0, r.jsx)(o.Text, {
             variant: "text-xs/medium",
             className: d.nitroBadgeText,
             children: u.intl.string(u.t["BMw+7O"])
@@ -44,7 +44,7 @@ function f(e) {
         })]
       }), (0, r.jsx)("div", {
         className: d.buttonContainer,
-        children: (0, r.jsx)(o.Z, {
+        children: (0, r.jsx)(a.Z, {
           showGradient: !0,
           iconClassName: d.premiumIcon,
           subscriptionTier: c.Si.TIER_2,

@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var i = n(442837),
-  a = n(755721),
-  o = n(481060),
+  o = n(755721),
+  a = n(481060),
   s = n(970321),
   l = n(283836),
   c = n(621853),
@@ -40,8 +40,8 @@ function p(e, t) {
   if (null == e) return {};
   var n, r, i = h(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -49,8 +49,8 @@ function p(e, t) {
 function h(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 
@@ -61,9 +61,9 @@ function m(e) {
   } = e, i = p(e, ["user", "onClick"]);
   return (0, l.q)(t.id), (0, r.jsx)(u.tG, _({
     action: "PRESS_APP_STOREFRONT",
-    icon: o.EOn,
+    icon: a.EOn,
     text: d.intl.string(d.t.V7j5aW),
-    color: a.Tt.BRAND,
+    color: o.Tt.BRAND,
     themeColor: "none",
     onClick: n
   }, i))
@@ -71,18 +71,18 @@ function m(e) {
 
 function g(e) {
   var t, {
-      user: a,
+      user: o,
       guildId: l
     } = e,
     u = p(e, ["user", "guildId"]);
   let d = (0, i.e7)([c.Z], () => {
       var e;
-      return null == (e = c.Z.getUserProfile(a.id)) ? void 0 : e.application
+      return null == (e = c.Z.getUserProfile(o.id)) ? void 0 : e.application
     }),
     f = (0, s.R)(null != (t = null == d ? void 0 : d.id) ? t : "");
   if (null == d || !f) return null;
   let h = () => {
-    (0, o.ZDy)(async () => {
+    (0, a.ZDy)(async () => {
       let {
         default: e
       } = await Promise.all([n.e("77803"), n.e("83372")]).then(n.bind(n, 7225));
@@ -93,7 +93,7 @@ function g(e) {
     })
   };
   return (0, r.jsx)(m, _({
-    user: a,
+    user: o,
     guildId: l,
     onClick: h
   }, u))

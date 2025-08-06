@@ -10,8 +10,8 @@ var i = n(442837),
   s = n(218035),
   o = n(775666),
   c = n(858822),
-  d = n(423589),
-  u = n(131704),
+  u = n(423589),
+  d = n(131704),
   h = n(430824);
 
 function p(e) {
@@ -23,7 +23,7 @@ function p(e) {
     label: g,
     location: m,
     includeGuildMute: b
-  } = e, _ = (0, s.c)(t), y = (0, o.EQ)(t), j = (0, i.e7)([h.Z], () => h.Z.getGuild(t.guild_id)), O = (0, c.Z)(j), x = (0, d.Mn)("ChannelNotificationSettingsPopoutMenu") && u.$N.has(t.type);
+  } = e, y = (0, s.c)(t), x = (0, o.EQ)(t), j = (0, i.e7)([h.Z], () => h.Z.getGuild(t.guild_id)), _ = (0, c.Z)(j), O = (0, u.Mn)("ChannelNotificationSettingsPopoutMenu") && d.$N.has(t.type);
   return (0, r.jsxs)(l.v2r, {
     navId: f,
     onClose: n,
@@ -32,9 +32,9 @@ function p(e) {
     children: [(0, r.jsx)(l.kSQ, {
       children: (0, a.ZP)(t, m)
     }), b ? (0, r.jsx)(l.kSQ, {
-      children: O
-    }) : null, x ? y : (0, r.jsx)(l.kSQ, {
       children: _
+    }) : null, O ? x : (0, r.jsx)(l.kSQ, {
+      children: y
     })]
   })
 }

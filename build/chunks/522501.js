@@ -8,6 +8,6 @@ n.d(t, {
 let {
   Layer: r,
   LayerContainer: i,
-  LayerProvider: a,
-  layerContext: o
-} = (0, n(302901).Xv)("PictureInPicture"), s = i, l = a, c = r
+  LayerProvider: o,
+  layerContext: a
+} = (0, n(302901).Xv)("PictureInPicture"), s = i, l = o, c = r

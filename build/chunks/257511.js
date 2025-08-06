@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var i = n(120356),
-  a = n.n(i),
-  o = n(479099),
+  o = n.n(i),
+  a = n(479099),
   s = n(33976);
 
 function l(e) {
@@ -19,13 +19,13 @@ function l(e) {
     t.has(e) && (t.delete(e), n(new Set(t)))
   } : void 0;
   return (0, r.jsx)("div", {
-    className: a()(s.tags, {
+    className: o()(s.tags, {
       [s.wrap]: i
     }),
-    children: Array.from(t).map(e => (0, r.jsx)(o.Z, {
+    children: Array.from(t).map(e => (0, r.jsx)(a.Z, {
       tag: e,
       onRemove: l,
-      size: null == l ? o.Z.Sizes.SMALL : o.Z.Sizes.MEDIUM
+      size: null == l ? a.Z.Sizes.SMALL : a.Z.Sizes.MEDIUM
     }, e.id))
   })
 }

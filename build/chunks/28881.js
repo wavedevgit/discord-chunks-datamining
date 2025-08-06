@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  QK: () => a,
+  QK: () => o,
   u$: () => i
 });
 let r = (0, n(818083).B)({
@@ -27,7 +27,7 @@ let r = (0, n(818083).B)({
       autoTrackExposure: t
     })
   },
-  a = function(e) {
+  o = function(e) {
     let t = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1];
     return r.getCurrentConfig({
       location: e

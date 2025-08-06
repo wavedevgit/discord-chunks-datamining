@@ -6,8 +6,8 @@ n.d(t, {
 }), n(539854), n(784620), n(973216), n(953529), n(388685);
 var r = n(255367),
   i = n(73800),
-  a = n(373793),
-  o = n(705512),
+  o = n(373793),
+  a = n(705512),
   s = n(442837),
   l = n(481060),
   c = n(566620),
@@ -30,9 +30,9 @@ var r = n(255367),
   A = n(758199),
   N = n(943762),
   C = n(914498),
-  w = n(172109),
-  R = n(880251),
-  P = n(515344),
+  R = n(172109),
+  P = n(880251),
+  w = n(515344),
   D = n(388032),
   L = n(758364);
 
@@ -40,14 +40,14 @@ function x(e) {
   let {
     app: t,
     embedUrl: n,
-    linkType: a,
-    activityCustomId: o,
+    linkType: o,
+    activityCustomId: a,
     activityReferrerId: l,
     onView: m
   } = e, {
     name: g,
     bot: E
-  } = t = (0, w.O)(t), y = null == E ? void 0 : E.id, O = (0, p.ye)(t), v = I.ZP.getApplicationIconURL({
+  } = t = (0, R.O)(t), y = null == E ? void 0 : E.id, O = (0, p.ye)(t), v = I.ZP.getApplicationIconURL({
     id: t.id,
     icon: t.icon,
     bot: E
@@ -55,8 +55,8 @@ function x(e) {
     staticBannerSrc: T,
     videoBannerSrc: N,
     bannerAspectRatio: L
-  } = (0, R.E)(t), x = (0, s.e7)([b.default], () => null != l ? l : b.default.getId(), [l]), {
-    analyticsLocations: M
+  } = (0, P.E)(t), x = (0, s.e7)([b.default], () => null != l ? l : b.default.getId(), [l]), {
+    analyticsLocations: j
   } = (0, f.ZP)(d.Z.APP_MESSAGE_EMBED), {
     currentChannelId: U,
     instanceId: G,
@@ -68,7 +68,7 @@ function x(e) {
     },
     applicationId: t.id,
     botUserId: null == E ? void 0 : E.id
-  }), H = null != y && O && V, Y = Z && O, W = (0, P.G)(t), K = (0, P.z)(t), z = i.useMemo(() => {
+  }), H = null != y && O && V, Y = Z && O, W = (0, w.G)(t), K = (0, w.z)(t), z = i.useMemo(() => {
     let e = [];
     return O ? (Y && e.push({
       label: null == G ? D.intl.string(D.t.RscU7O) : D.intl.string(D.t.VJlc0d),
@@ -79,9 +79,9 @@ function x(e) {
           applicationId: t.id,
           isStart: null == G,
           embeddedActivitiesManager: F,
-          customId: o,
+          customId: a,
           referrerId: x,
-          analyticsLocations: M
+          analyticsLocations: j
         })
       },
       disabledReason: B ? D.intl.string(D.t.wJNK8P) : void 0
@@ -92,15 +92,15 @@ function x(e) {
         (0, _.W)({
           appId: t.id,
           botId: y,
-          analyticsLocations: M,
-          customId: o,
+          analyticsLocations: j,
+          customId: a,
           referrerId: x
         })
       }
     })) : null != K && e.push(K), e
-  }, [Y, H, G, B, U, t.id, F, o, x, M, O, K, y]), q = O ? (0, r.jsx)(j, {
+  }, [Y, H, G, B, U, t.id, F, a, x, j, O, K, y]), q = O ? (0, r.jsx)(k, {
     app: t
-  }) : (0, r.jsx)(k, {
+  }) : (0, r.jsx)(M, {
     app: t
   });
   return (0, r.jsx)(A.W, {
@@ -116,23 +116,23 @@ function x(e) {
     onClickContent: W,
     trackingConfig: {
       id: t.id,
-      linkType: a,
+      linkType: o,
       referrerId: x,
-      activityCustomId: o,
+      activityCustomId: a,
       onView: m
     }
   })
 }
 
-function k(e) {
-  var t, n, o;
+function M(e) {
+  var t, n, a;
   let {
     app: c
   } = e, u = (0, T.Eb)({
     customInstallUrl: c.customInstallUrl,
     installParams: c.installParams,
     integrationTypesConfig: c.integrationTypesConfig
-  }) && null != c.integrationTypesConfig && a.Y.GUILD_INSTALL in c.integrationTypesConfig, d = (0, s.e7)([E.default], () => E.default.locale, []), f = i.useMemo(() => {
+  }) && null != c.integrationTypesConfig && o.Y.GUILD_INSTALL in c.integrationTypesConfig, d = (0, s.e7)([E.default], () => E.default.locale, []), f = i.useMemo(() => {
     var e, t;
     if (!u) return null;
     let n = new Intl.NumberFormat(d, {
@@ -143,7 +143,7 @@ function k(e) {
     return 0 === r ? null : D.intl.format(D.t["6IW6Wl"], {
       guildCount: n.format(r)
     })
-  }, [null == (t = c.directoryEntry) ? void 0 : t.guild_count, u, d]), _ = null == (o = c.categories) || null == (n = o.at(0)) ? void 0 : n.name;
+  }, [null == (t = c.directoryEntry) ? void 0 : t.guild_count, u, d]), _ = null == (a = c.categories) || null == (n = a.at(0)) ? void 0 : n.name;
   return (0, r.jsxs)(r.Fragment, {
     children: [null != _ && (0, r.jsx)(l.Text, {
       variant: "text-xs/medium",
@@ -163,12 +163,12 @@ function k(e) {
   })
 }
 
-function j(e) {
+function k(e) {
   let {
     app: t
   } = e, {
     tags: n,
-    maxParticipants: a = 0
+    maxParticipants: o = 0
   } = t, c = (0, s.e7)([O.Z], () => {
     var e;
     return null != (e = O.Z.getGuildId()) ? e : void 0
@@ -189,14 +189,14 @@ function j(e) {
         count: d.length
       })
     });
-    if (u.some(e => (0, m.ig)(e) === o.o.GLOBAL)) return (0, r.jsxs)(r.Fragment, {
+    if (u.some(e => (0, m.ig)(e) === a.o.GLOBAL)) return (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(l.YqE, {
         size: "xxs",
         color: "currentColor"
       }), D.intl.string(D.t.TsWCdX)]
     });
-    let e = a > 0 ? D.intl.format(D.t.z8EAJS, {
-      count: a
+    let e = o > 0 ? D.intl.format(D.t.z8EAJS, {
+      count: o
     }) : D.intl.string(D.t.RjceQU);
     return (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(l.tBG, {
@@ -204,7 +204,7 @@ function j(e) {
         color: "currentColor"
       }), e]
     })
-  }, [u, d, c, a]);
+  }, [u, d, c, o]);
   return (0, r.jsxs)(r.Fragment, {
     children: [n.length > 0 && (0, r.jsx)(l.Text, {
       variant: "text-xs/medium",

@@ -6,8 +6,8 @@ n.d(t, {
 }), n(388685);
 var r = n(255367),
   i = n(73800),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(512722),
   l = n.n(s),
   c = n(913527),
@@ -30,16 +30,16 @@ var r = n(255367),
   A = n(324701),
   N = n(575016),
   C = n(768943),
-  w = n(686478),
-  R = n(664559),
-  P = n(767893),
+  R = n(686478),
+  P = n(664559),
+  w = n(767893),
   D = n(206697),
   L = n(74551),
   x = n(981631),
-  k = n(388032),
-  j = n(585693);
+  M = n(388032),
+  k = n(585693);
 
-function M(e, t, n) {
+function j(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -55,7 +55,7 @@ function U(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      M(e, t, n[t])
+      j(e, t, n[t])
     })
   }
   return e
@@ -82,8 +82,8 @@ function Z(e, t) {
   if (null == e) return {};
   var n, r, i = F(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -91,8 +91,8 @@ function Z(e, t) {
 function F(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let V = {
@@ -107,12 +107,12 @@ function H(e) {
     closePopout: t
   } = e;
   return (0, r.jsx)(p.VqE, {
-    "aria-label": k.intl.string(k.t["2pAkDA"]),
+    "aria-label": M.intl.string(M.t["2pAkDA"]),
     children: (0, r.jsxs)("div", {
-      className: j.popoutContainer,
+      className: k.popoutContainer,
       children: [(0, r.jsx)(m.h4, {
         icon: p.plf,
-        title: k.intl.string(k.t["2pAkDA"])
+        title: M.intl.string(M.t["2pAkDA"])
       }), (0, r.jsx)(Y, {
         closePopout: t
       })]
@@ -123,7 +123,7 @@ function H(e) {
 function Y(e) {
   let {
     closePopout: t
-  } = e, n = (0, R.Z)();
+  } = e, n = (0, P.Z)();
   return ((0, E.Z)({
     type: d.ImpressionTypes.POPOUT,
     name: d.ImpressionNames.FOR_LATER_LIST_VIEWED,
@@ -141,8 +141,8 @@ function W(e) {
   let {
     onOpen: t,
     onClose: n,
-    children: a,
-    popoutPosition: o,
+    children: o,
+    popoutPosition: a,
     popoutAlign: s
   } = e, [l, c] = i.useState(!1), u = i.useRef(null), d = i.useCallback(() => {
     c(!1), l && (null == n || n())
@@ -160,7 +160,7 @@ function W(e) {
   return (0, r.jsx)(p.yRy, {
     targetElementRef: u,
     animation: p.yRy.Animation.NONE,
-    position: o,
+    position: a,
     align: s,
     autoInvert: !1,
     shouldShow: l,
@@ -171,7 +171,7 @@ function W(e) {
       let {
         isShown: n
       } = t;
-      return a(f, n, e, h, u)
+      return o(f, n, e, h, u)
     }
   })
 }
@@ -180,26 +180,26 @@ function K(e) {
   let {
     savedMessageKeys: t,
     closePopout: n
-  } = e, a = i.useRef(null), o = (0, g.Z)("for-later", a), [s, l] = i.useState(new Date);
+  } = e, o = i.useRef(null), a = (0, g.Z)("for-later", o), [s, l] = i.useState(new Date);
   return i.useEffect(() => {
     let e = setInterval(() => l(new Date), S.Z.Millis.MINUTE);
     return () => {
       clearInterval(e)
     }
   }, []), (0, r.jsx)(f.bG, {
-    navigator: o,
+    navigator: a,
     children: (0, r.jsx)(f.SJ, {
       children: e => {
         var {
           ref: i
-        } = e, o = Z(e, ["ref"]);
+        } = e, a = Z(e, ["ref"]);
         return (0, r.jsx)(p.h21, B(U({
           ref: e => {
             var t;
-            a.current = e, i.current = null != (t = null == e ? void 0 : e.getScrollerNode()) ? t : null
+            o.current = e, i.current = null != (t = null == e ? void 0 : e.getScrollerNode()) ? t : null
           },
-          className: j.messagesScroller
-        }, o), {
+          className: k.messagesScroller
+        }, a), {
           children: t.map(e => (0, r.jsx)(q, {
             savedMessageKey: e,
             closePopout: n,
@@ -215,47 +215,47 @@ function z(e) {
   let {
     savedMessage: t,
     closePopout: n,
-    throttledNow: a
+    throttledNow: o
   } = e, s = (0, N.gr)(t), l = i.useCallback(async e => {
     var r;
     await (0, N.fC)(t, s), e.shiftKey || n(), I.default.track(x.rMx.FOR_LATER_SAVED_MESSAGE_JUMP, {
       channel_id: t.saveData.channelId,
       message_id: t.saveData.messageId,
       message_author_id: null == (r = t.message) ? void 0 : r.author.id,
-      type: null != t.saveData.dueAt ? w._l.REMINDER : w._l.BOOKMARK,
+      type: null != t.saveData.dueAt ? R._l.REMINDER : R._l.BOOKMARK,
       due_duration: null != t.saveData.dueAt ? u()().diff(t.saveData.dueAt) : void 0
     })
   }, [n, t, s]), c = (0, _.e7)([v.Z], () => !!((null == s ? void 0 : s.type) === x.d4z.UNKNOWN || (null == s ? void 0 : s.isPrivate())) || v.Z.can(x.Plq.VIEW_CHANNEL, s));
   return null != s && null != t.message && c ? (0, r.jsxs)("div", {
-    className: j.messageContainer,
+    className: k.messageContainer,
     children: [(0, r.jsx)(p.P3F, {
-      className: j.clickableMessageBackground,
+      className: k.clickableMessageBackground,
       onClick: l,
-      "aria-label": k.intl.string(k.t["+TSRGB"])
+      "aria-label": M.intl.string(M.t["+TSRGB"])
     }), null != t.saveData.dueAt ? (0, r.jsx)(L.Z, {
       reminder: t,
-      throttledNow: a
-    }) : null, (0, r.jsx)(P.Z, {
+      throttledNow: o
+    }) : null, (0, r.jsx)(w.Z, {
       channel: s
     }), (0, r.jsx)(b.Z, {
       message: t.message,
       channel: s,
-      className: j.message,
+      className: k.message,
       compact: O.jU.getSetting(),
       animateAvatar: !1,
       focusProps: V,
       trackAnnouncementViews: !0
     }, t.message.id), (0, r.jsx)(y.ZP, {
-      className: j.hoverBar,
-      children: (0, r.jsx)($, {
+      className: k.hoverBar,
+      children: (0, r.jsx)(X, {
         savedMessage: t,
         jumpToMessage: l
       })
     })]
   }) : (0, r.jsxs)("div", {
-    className: o()(j.messageContainer, j.deletedMessage),
+    className: a()(k.messageContainer, k.deletedMessage),
     children: [(0, r.jsx)("div", {
-      className: j.deleteIcon,
+      className: k.deleteIcon,
       children: (0, r.jsx)(p.Mgn, {
         size: "xxs",
         color: p.TVs.colors.INTERACTIVE_ACTIVE
@@ -263,11 +263,11 @@ function z(e) {
     }), (0, r.jsx)(p.X6q, {
       variant: "text-md/semibold",
       color: "header-secondary",
-      children: null != t.saveData.dueAt ? k.intl.string(k.t["wuQm+v"]) : k.intl.string(k.t.o572FR)
+      children: null != t.saveData.dueAt ? M.intl.string(M.t["wuQm+v"]) : M.intl.string(M.t.o572FR)
     }), (0, r.jsx)(y.ZP, {
-      className: j.hoverBar,
+      className: k.hoverBar,
       children: (0, r.jsx)(y.sF, {
-        label: k.intl.string(k.t.SvXS1d),
+        label: M.intl.string(M.t.SvXS1d),
         icon: p.XHJ,
         dangerous: !0,
         onClick: () => (0, A.x)(t.saveData)
@@ -281,22 +281,22 @@ function q(e) {
     savedMessageKey: t,
     closePopout: n,
     throttledNow: i
-  } = e, a = (0, _.e7)([C.Z], () => C.Z.getSavedMessage(t.channelId, t.messageId));
-  return null == a ? null : (0, r.jsx)(z, {
-    savedMessage: a,
+  } = e, o = (0, _.e7)([C.Z], () => C.Z.getSavedMessage(t.channelId, t.messageId));
+  return null == o ? null : (0, r.jsx)(z, {
+    savedMessage: o,
     closePopout: n,
     throttledNow: i
   })
 }
 
-function $(e) {
+function X(e) {
   let {
     savedMessage: t,
     jumpToMessage: i
   } = e;
   return (l()(null != t.message, "Saved message must be cached for For Later action buttons"), null != t.saveData.dueAt) ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(y.sF, {
-      label: k.intl.string(k.t.yjGtdH),
+      label: M.intl.string(M.t.yjGtdH),
       icon: p.dz2,
       onClick: () => (0, A.z)({
         channelId: t.saveData.channelId,
@@ -304,45 +304,45 @@ function $(e) {
         dueAt: void 0
       })
     }, "mark-complete"), (0, r.jsx)(y.sF, {
-      label: k.intl.string(k.t.vrbqs7),
+      label: M.intl.string(M.t.vrbqs7),
       icon: p.vdY,
       onClick: e => (0, h.jW)(e, async () => {
         let {
           MessageReminderEditMenu: e
         } = await Promise.resolve().then(n.bind(n, 898150));
         return n => (0, r.jsx)(e, B(U({}, n), {
-          label: k.intl.string(k.t.roMu1N),
+          label: M.intl.string(M.t.roMu1N),
           message: t.message
         }))
       })
     }, "edit-reminder"), (0, r.jsx)(y.fO, {}), (0, r.jsx)(y.sF, {
-      label: k.intl.string(k.t["+TSRGB"]),
+      label: M.intl.string(M.t["+TSRGB"]),
       icon: p.d4D,
       onClick: e => i(e)
     }, "jump-to-message"), (0, r.jsx)(y.sF, {
-      label: k.intl.string(k.t.SvXS1d),
+      label: M.intl.string(M.t.SvXS1d),
       icon: p.plf,
       onClick: () => (0, A.x)(t.saveData)
     }, "remove-reminder")]
   }) : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(y.sF, {
-      label: k.intl.string(k.t.mJ3P0N),
+      label: M.intl.string(M.t.mJ3P0N),
       icon: p.T39,
       onClick: e => (0, h.jW)(e, async () => {
         let {
           MessageReminderEditMenu: e
         } = await Promise.resolve().then(n.bind(n, 898150));
         return n => (0, r.jsx)(e, B(U({}, n), {
-          label: k.intl.string(k.t.mJ3P0N),
+          label: M.intl.string(M.t.mJ3P0N),
           message: t.message
         }))
       })
     }, "create-reminder"), (0, r.jsx)(y.sF, {
-      label: k.intl.string(k.t["+TSRGB"]),
+      label: M.intl.string(M.t["+TSRGB"]),
       icon: p.d4D,
       onClick: e => i(e)
     }, "jump-to-message"), (0, r.jsx)(y.sF, {
-      label: k.intl.string(k.t.SvXS1d),
+      label: M.intl.string(M.t.SvXS1d),
       icon: p.plf,
       onClick: () => (0, A.x)(t.saveData)
     }, "remove-bookmark")]

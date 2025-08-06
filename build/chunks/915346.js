@@ -1,16 +1,16 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  W: () => a
+  W: () => o
 });
 var r = n(493683),
   i = n(122613);
-async function a(e) {
+async function o(e) {
   let {
     appId: t,
     botId: n,
-    analyticsLocations: a,
-    customId: o,
+    analyticsLocations: o,
+    customId: a,
     referrerId: s,
     commandOrigin: l
   } = e, c = await r.Z.openPrivateChannel({
@@ -19,8 +19,8 @@ async function a(e) {
   return await (0, i.Z)({
     targetApplicationId: t,
     channelId: c,
-    analyticsLocations: a,
-    customId: o,
+    analyticsLocations: o,
+    customId: a,
     referrerId: s,
     commandOrigin: l
   })

@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var i = n(892001),
-  a = n(732380),
-  o = n(955418),
+  o = n(732380),
+  a = n(955418),
   s = n(388032),
   l = n(200669);
 
@@ -19,7 +19,7 @@ function c(e) {
   } = e;
   return n ? c ? null : (0, r.jsx)("div", {
     className: l.footer,
-    children: (0, r.jsx)(a.O1, {
+    children: (0, r.jsx)(o.O1, {
       variant: "primary",
       text: s.intl.string(s.t["+Xp3ho"]),
       onClick: () => (0, i.openUserProfileModal)({
@@ -31,7 +31,7 @@ function c(e) {
   }) : (0, r.jsx)("div", {
     className: l.footer,
     inert: !0,
-    children: (0, r.jsx)(o.Z, {
+    children: (0, r.jsx)(a.Z, {
       user: t
     })
   })

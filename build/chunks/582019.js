@@ -5,9 +5,9 @@ n.d(t, {
 });
 var r = n(255367),
   i = n(73800),
-  a = n(709014);
+  o = n(709014);
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -23,7 +23,7 @@ function s(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      o(e, t, n[t])
+      a(e, t, n[t])
     })
   }
   return e
@@ -57,13 +57,13 @@ let u = {
       t = i.useCallback(() => {
         null != e.current && e.current.play("all")
       }, []),
-      o = i.useCallback(() => {
+      a = i.useCallback(() => {
         null != e.current && e.current.play("all")
       }, []),
       l = i.useCallback(() => {
         null != e.current && e.current.stopIfPlaying("all")
       }, []),
-      d = i.useCallback(t => (0, r.jsx)(a.L, c(s({}, t), {
+      d = i.useCallback(t => (0, r.jsx)(o.L, c(s({}, t), {
         src: () => n.e("66944").then(n.t.bind(n, 166174, 19)),
         ref: e,
         markers: u
@@ -71,7 +71,7 @@ let u = {
     return {
       events: {
         onClick: t,
-        onMouseEnter: o,
+        onMouseEnter: a,
         onMouseLeave: l
       },
       play: t,

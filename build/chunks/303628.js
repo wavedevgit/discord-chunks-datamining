@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685), n(539854);
 var r = n(255367),
   i = n(73800),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(91192),
   l = n(536895),
   c = n(442837),
@@ -66,30 +66,30 @@ function N(e, t) {
 
 function C(e, t) {
   if (null == e) return {};
-  var n, r, i = w(e, t);
+  var n, r, i = R(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
 
-function w(e, t) {
+function R(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let R = [];
+let P = [];
 
-function P(e) {
+function w(e) {
   let {
     channelId: t,
     type: n,
-    ignoreFile: a,
+    ignoreFile: o,
     smallAttachments: T = !1
-  } = e, A = (0, c.e7)([_.Z], () => _.Z.keyboardModeEnabled), w = (0, p.Z)("attachments", l.hy.HORIZONTAL), P = (0, c.e7)([m.Z], () => m.Z.getUploads(t, n.drafts.type)), {
+  } = e, A = (0, c.e7)([_.Z], () => _.Z.keyboardModeEnabled), R = (0, p.Z)("attachments", l.hy.HORIZONTAL), w = (0, c.e7)([m.Z], () => m.Z.getUploads(t, n.drafts.type)), {
     isApplicationCommand: D,
     commandOptions: L,
     commandOptionStates: x
@@ -97,7 +97,7 @@ function P(e) {
     let e = h.Z.getActiveCommand(t);
     if (null == e) return {
       isApplicationCommand: !1,
-      commandOptions: R,
+      commandOptions: P,
       commandOptionStates: null
     };
     let n = h.Z.getOptionStates(t);
@@ -106,13 +106,13 @@ function P(e) {
       commandOptions: e.options,
       commandOptionStates: n
     }
-  }), k = i.useMemo(() => {
+  }), M = i.useMemo(() => {
     var e;
     return null != (e = null == L ? void 0 : L.filter(e => {
       var t;
       return e.type === f.jw.ATTACHMENT && (null == x || null == (t = x[e.name]) ? void 0 : t.hasValue)
     })) ? e : []
-  }, [L, x]), [j, M] = i.useState([]);
+  }, [L, x]), [k, j] = i.useState([]);
   i.useEffect(() => {
     let e = () => {
       d.Z.clearAll(t, n.drafts.type)
@@ -120,16 +120,16 @@ function P(e) {
     return u.Z.subscribe("APPLICATION_COMMAND_SET_ACTIVE_COMMAND", e), () => u.Z.unsubscribe("APPLICATION_COMMAND_SET_ACTIVE_COMMAND", e)
   }, [t, n]);
   let U = i.useCallback(() => {
-    w.focusFirstVisibleItem()
-  }, [w]);
+    R.focusFirstVisibleItem()
+  }, [R]);
   (0, g.yp)({
     event: O.CkL.FOCUS_ATTACHMENT_AREA,
     handler: U
   });
   let G = {
       isApplicationCommand: D,
-      previousUploadOptions: j,
-      uploadOptions: k
+      previousUploadOptions: k,
+      uploadOptions: M
     },
     B = i.useRef(G);
   i.useEffect(() => {
@@ -146,22 +146,22 @@ function P(e) {
         i.some(e => t.name === e.name) || e.push(t)
       }), e.forEach(e => {
         d.Z.remove(t, e.name, n.drafts.type)
-      }), M(i)
+      }), j(i)
     }
-  }, [t, k.length, n]);
-  let Z = P.filter(e => e.filename !== a);
-  return !D && 0 === Z.length || D && 0 === k.length ? null : (0, r.jsx)(s.bG, {
-    navigator: w,
+  }, [t, M.length, n]);
+  let Z = w.filter(e => e.filename !== o);
+  return !D && 0 === Z.length || D && 0 === M.length ? null : (0, r.jsx)(s.bG, {
+    navigator: R,
     children: (0, r.jsx)(s.SJ, {
       children: e => {
         var {
           ref: i
-        } = e, a = C(e, ["ref"]);
+        } = e, o = C(e, ["ref"]);
         return (0, r.jsx)("ul", N(S({
           ref: i
-        }, a), {
-          className: o()(v.channelAttachmentArea, I.scrollbarGhost),
-          children: D ? k.map(e => (0, r.jsx)(b.Z, {
+        }, o), {
+          className: a()(v.channelAttachmentArea, I.scrollbarGhost),
+          children: D ? M.map(e => (0, r.jsx)(b.Z, {
             channelId: t,
             keyboardModeEnabled: A,
             option: e
@@ -184,14 +184,14 @@ function D(e) {
     channelId: t,
     type: n,
     canAttachFiles: i,
-    ignoreFile: a,
-    smallAttachments: o = !1
+    ignoreFile: o,
+    smallAttachments: a = !1
   } = e;
-  return i ? (0, r.jsx)(P, {
+  return i ? (0, r.jsx)(w, {
     channelId: t,
     type: n,
-    ignoreFile: a,
-    smallAttachments: o
+    ignoreFile: o,
+    smallAttachments: a
   }) : null
 }
 let L = i.memo(D)

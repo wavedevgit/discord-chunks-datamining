@@ -1,6 +1,6 @@
 /** Chunk was on web.js **/
 "use strict";
-var r, i, a, o, s = n(127849),
+var r, i, o, a, s = n(127849),
   l = n(636881),
   c = n(48657),
   u = n(880181),
@@ -25,19 +25,19 @@ var r, i, a, o, s = n(127849),
 f(function() {
   r = s.location
 });
-var w = function(e) {
+var R = function(e) {
     if (d(N, e)) {
       var t = N[e];
       delete N[e], t()
     }
   },
-  R = function(e) {
+  P = function(e) {
     return function() {
-      w(e)
+      R(e)
     }
   },
-  P = function(e) {
-    w(e.data)
+  w = function(e) {
+    R(e.data)
   },
   D = function(e) {
     s.postMessage(S(e), r.protocol + "//" + r.host)
@@ -52,15 +52,15 @@ b && y || (b = function(e) {
 }, y = function(e) {
   delete N[e]
 }, E ? i = function(e) {
-  O.nextTick(R(e))
+  O.nextTick(P(e))
 } : v && v.now ? i = function(e) {
-  v.now(R(e))
-} : T && !g ? (o = (a = new T).port2, a.port1.onmessage = P, i = c(o.postMessage, o)) : s.addEventListener && u(s.postMessage) && !s.importScripts && r && "file:" !== r.protocol && !f(D) ? (i = D, s.addEventListener("message", P, !1)) : i = C in h("script") ? function(e) {
+  v.now(P(e))
+} : T && !g ? (a = (o = new T).port2, o.port1.onmessage = w, i = c(a.postMessage, a)) : s.addEventListener && u(s.postMessage) && !s.importScripts && r && "file:" !== r.protocol && !f(D) ? (i = D, s.addEventListener("message", w, !1)) : i = C in h("script") ? function(e) {
   _.appendChild(h("script"))[C] = function() {
-    _.removeChild(this), w(e)
+    _.removeChild(this), R(e)
   }
 } : function(e) {
-  setTimeout(R(e), 0)
+  setTimeout(P(e), 0)
 }), e.exports = {
   set: b,
   clear: y

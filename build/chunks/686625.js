@@ -1,6 +1,6 @@
 /** Chunk was on 49152 **/
 n.d(t, {
-  Z: () => d
+  Z: () => u
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -10,13 +10,13 @@ var r = n(255367),
   o = n(785717),
   c = n(507710);
 
-function d(e) {
+function u(e) {
   let {
     section: t,
     header: n,
     items: l,
-    listClassName: d,
-    onExpand: u
+    listClassName: u,
+    onExpand: d
   } = e, {
     trackUserProfileAction: h
   } = (0, o.KZ)(), p = i.useId(), [f, g] = i.useState(!1), m = f ? s.CJ0 : s.Fbu;
@@ -30,7 +30,7 @@ function d(e) {
         g(!f), f || (h({
           action: "PRESS_SECTION",
           section: t
-        }), null == u || u())
+        }), null == d || d())
       },
       children: [(0, r.jsxs)(s.X6q, {
         variant: "text-sm/medium",
@@ -42,7 +42,7 @@ function d(e) {
     }), l.length > 0 && (0, r.jsx)("ul", {
       id: p,
       hidden: !f,
-      className: a()(c.list, d),
+      className: a()(c.list, u),
       children: l
     })]
   })

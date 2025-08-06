@@ -15,19 +15,19 @@ function s(e) {
     ignored: s,
     channel: o,
     className: c,
-    focused: d,
-    children: u,
+    focused: u,
+    children: d,
     inCall: h,
     inPopout: p,
     noBorder: f,
     onClick: g,
     onContextMenu: m,
     onDoubleClick: b,
-    onVideoResize: _,
-    paused: y,
+    onVideoResize: y,
+    paused: x,
     pulseSpeakingIndicator: j,
-    participant: O,
-    width: x
+    participant: _,
+    width: O
   } = e, v = function(e, t) {
     if (null == e) return {};
     var n, r, i = function(e, t) {
@@ -46,7 +46,7 @@ function s(e) {
   let C = l.Z.getVideoComponent();
   return (0, r.jsx)("div", {
     style: {
-      width: x
+      width: O
     },
     className: a.spaceBetweenTiles,
     children: (0, r.jsxs)("div", {
@@ -76,20 +76,20 @@ function s(e) {
         ignored: s,
         channel: o,
         className: c,
-        focused: d,
+        focused: u,
         inCall: h,
         inPopout: p,
         noBorder: f,
         onClick: g,
         onContextMenu: m,
         onDoubleClick: b,
-        onVideoResize: _,
-        participant: O,
-        paused: y,
+        onVideoResize: y,
+        participant: _,
+        paused: x,
         pulseSpeakingIndicator: j,
         videoComponent: C,
-        width: x
-      }, v)), u]
+        width: O
+      }, v)), d]
     })
   })
 }

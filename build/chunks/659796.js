@@ -22,8 +22,8 @@ function i(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-var a = n(879154),
-  o = n(214788),
+var o = n(879154),
+  a = n(214788),
   s = n(738766),
   l = n(551558),
   c = n(982716),
@@ -33,26 +33,26 @@ var a = n(879154),
   _ = d.List,
   p = d.Repeat,
   h = u("draft_tree_data_support"),
-  m = h ? o : a;
+  m = h ? a : o;
 e.exports = {
   processHTML: function(e, t) {
     return s(e, c, t)
   },
   processText: function(e, t, n) {
-    return e.reduce(function(e, i, a) {
+    return e.reduce(function(e, i, o) {
       i = f(i);
-      var o = l(),
+      var a = l(),
         s = {
-          key: o,
+          key: a,
           type: n,
           text: i,
           characterList: _(p(t, i.length))
         };
-      if (h && 0 !== a) {
-        var c = a - 1;
+      if (h && 0 !== o) {
+        var c = o - 1;
         s = r({}, s, {
           prevSibling: (e[c] = e[c].merge({
-            nextSibling: o
+            nextSibling: a
           })).getKey()
         })
       }

@@ -6,8 +6,8 @@ n.d(t, {
 });
 var r = n(255367),
   i = n(73800),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(481060),
   l = n(600164),
   c = n(507675),
@@ -39,8 +39,8 @@ function _(e, t) {
   if (null == e) return {};
   var n, r, i = p(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -48,8 +48,8 @@ function _(e, t) {
 function p(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 var h = function(e) {
@@ -60,8 +60,8 @@ function m(e) {
   let {
     disableGradients: t = !1,
     renderHeader: n,
-    renderBottomLeft: a,
-    renderBottomCenter: o,
+    renderBottomLeft: o,
+    renderBottomCenter: a,
     renderBottomRight: c,
     renderCenter: d
   } = e, f = 0 === t || !0 === t, _ = 1 === t || !0 === t, p = i.useRef(null);
@@ -83,12 +83,12 @@ function m(e) {
           grow: 1,
           align: l.Z.Align.CENTER,
           className: u.edgeControls,
-          children: null == a ? void 0 : a()
+          children: null == o ? void 0 : o()
         }), (0, r.jsx)(l.Z, {
           grow: 1,
           justify: l.Z.Justify.CENTER,
           align: l.Z.Align.CENTER,
-          children: null == o ? void 0 : o()
+          children: null == a ? void 0 : a()
         }), " ", (0, r.jsx)(l.Z, {
           grow: 1,
           justify: l.Z.Justify.END,
@@ -106,7 +106,7 @@ function g(e) {
     screenMessage: t,
     onDoubleClick: n,
     onActive: i,
-    onForceIdle: a,
+    onForceIdle: o,
     idle: s,
     children: l,
     renderChatToasts: d,
@@ -114,13 +114,13 @@ function g(e) {
     style: h
   } = e, g = _(e, ["screenMessage", "onDoubleClick", "onActive", "onForceIdle", "idle", "children", "renderChatToasts", "renderVoiceChannelEffects", "style"]);
   return (0, r.jsxs)("div", {
-    className: o()(u.root, {
+    className: a()(u.root, {
       [u.idle]: s
     }),
     style: h,
     onMouseMove: i,
     onMouseDown: i,
-    onMouseLeave: a,
+    onMouseLeave: o,
     onDoubleClick: n,
     children: [l, null != t ? (0, r.jsx)(c.Z, f({
       size: "large"

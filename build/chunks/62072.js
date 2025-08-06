@@ -1,12 +1,12 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => P
+  Z: () => w
 });
 var r = n(73800),
   i = n(904245),
-  a = n(868643),
-  o = n(912332),
+  o = n(868643),
+  a = n(912332),
   s = n(41776),
   l = n(280845),
   c = n(665906),
@@ -33,11 +33,11 @@ function C(e) {
   return E.Z.can(N.Plq.MANAGE_MESSAGES, e)
 }
 
-function w(e, t, n) {
+function R(e, t, n) {
   return !t.isSystemDM() && (0, I.Z)(n, e)
 }
 
-function R(e) {
+function P(e) {
   let t = null == e.guild_id || m.Z.canChatInGuild(e.guild_id),
     n = d.nc.getSetting(),
     {
@@ -53,7 +53,7 @@ function R(e) {
     });
   return !r && n
 }
-let P = function(e, t, n) {
+let w = function(e, t, n) {
   let s = r.useRef(n);
   return s.current = n, r.useCallback(n => {
     if (!s.current || n.target !== n.currentTarget) return;
@@ -65,22 +65,22 @@ let P = function(e, t, n) {
       I = g.Z.getMessage(t, e),
       S = _.Z.getChannel(t);
     if (null == I || null == S) return;
-    let P = f.default.getId();
+    let w = f.default.getId();
     switch (n.key.toLowerCase()) {
       case "backspace":
-        r && (C(S) || I.canDeleteOwnMessage(P)) && (n.preventDefault(), (0, A.$Z)(S, I, n));
+        r && (C(S) || I.canDeleteOwnMessage(w)) && (n.preventDefault(), (0, A.$Z)(S, I, n));
         break;
       case "c":
         ((0, O.isMac)() ? m : h) && b.wS && (n.preventDefault(), (0, b.JG)(I.content));
         break;
       case "e":
-        r && w(P, S, I) && (n.preventDefault(), (0, A.Hd)(S, I));
+        r && R(w, S, I) && (n.preventDefault(), (0, A.Hd)(S, I));
         break;
       case "p":
         (r || E) && (0, T.Z)(I, S) && (n.preventDefault(), (0, A.rY)(S, I, n));
         break;
       case "+":
-        (r || E) && R(S) && (n.preventDefault(), y.S.dispatchKeyed(N.LPv.TOGGLE_REACTION_POPOUT, I.id, {
+        (r || E) && P(S) && (n.preventDefault(), y.S.dispatchKeyed(N.LPv.TOGGLE_REACTION_POPOUT, I.id, {
           emojiPicker: !0
         }));
         break;
@@ -88,7 +88,7 @@ let P = function(e, t, n) {
         (r || E) && (0, l.o)(S, I) && (n.preventDefault(), (0, A.HH)(S, I, n));
         break;
       case "f":
-        (r || E) && (0, a.h)(I) && (n.preventDefault(), (0, o.l8)({
+        (r || E) && (0, o.h)(I) && (n.preventDefault(), (0, a.l8)({
           message: I,
           source: "keyboard-shortcut"
         }));

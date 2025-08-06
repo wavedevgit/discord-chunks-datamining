@@ -5,9 +5,9 @@ n.d(t, {
 });
 var r = n(793981),
   i = n(413815),
-  a = n(521548);
+  o = n(521548);
 
-function o(e, t) {
+function a(e, t) {
   if (!(e instanceof t)) throw TypeError("Cannot call a class as a function")
 }
 
@@ -33,7 +33,7 @@ function c(e, t, n) {
 var u = function() {
   function e(t) {
     var n = this;
-    o(this, e), c(this, "hooks", (0, r.p)({
+    a(this, e), c(this, "hooks", (0, r.p)({
       dragSource: function(e, t) {
         n.clearDragSource(), n.dragSourceOptions = t || null, (0, i.d)(e) ? n.dragSourceRef = e : n.dragSourceNode = e, n.reconnectDragSource()
       },
@@ -117,12 +117,12 @@ var u = function() {
   }, {
     key: "didDragSourceOptionsChange",
     value: function() {
-      return !(0, a.w)(this.lastConnectedDragSourceOptions, this.dragSourceOptions)
+      return !(0, o.w)(this.lastConnectedDragSourceOptions, this.dragSourceOptions)
     }
   }, {
     key: "didDragPreviewOptionsChange",
     value: function() {
-      return !(0, a.w)(this.lastConnectedDragPreviewOptions, this.dragPreviewOptions)
+      return !(0, o.w)(this.lastConnectedDragPreviewOptions, this.dragPreviewOptions)
     }
   }, {
     key: "disconnectDragSource",

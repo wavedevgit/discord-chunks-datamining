@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var i = n(481060),
-  a = n(44315),
-  o = n(377171),
+  o = n(44315),
+  a = n(377171),
   s = n(981631),
   l = n(388032),
   c = n(28651);
@@ -16,8 +16,8 @@ var i = n(481060),
 function u(e) {
   let {
     label: t,
-    backgroundColor: n = o.Z.BUTTON_SECONDARY_BACKGROUND,
-    icon: a,
+    backgroundColor: n = a.Z.BUTTON_SECONDARY_BACKGROUND,
+    icon: o,
     iconColor: s
   } = e;
   return (0, r.jsxs)("div", {
@@ -30,7 +30,7 @@ function u(e) {
       color: "always-white",
       className: c.__invalid_badgeText,
       children: t
-    }), (0, r.jsx)(a, {
+    }), (0, r.jsx)(o, {
       className: c.badgeIcon,
       color: null != s ? s : "currentColor",
       "aria-hidden": !0
@@ -50,6 +50,6 @@ function f() {
   return (0, r.jsx)(u, {
     label: l.intl.string(l.t.TgsPaG),
     icon: i.vdY,
-    iconColor: (0, a.Lq)(s.Ilk.PRIMARY_330)
+    iconColor: (0, o.Lq)(s.Ilk.PRIMARY_330)
   })
 }

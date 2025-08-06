@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(348327),
   i = n.n(r),
-  a = n(392711),
-  o = n.n(a),
+  o = n(392711),
+  a = n.n(o),
   s = n(570140),
   l = n(846027),
   c = n(287734),
@@ -56,28 +56,28 @@ class I extends u.Z {
     }), v(this, "isSupported", (0, E.isMac)() || (0, E.isWindows)()), v(this, "prevButtons", []), v(this, "buttonClicked", e => {
       if (!(e.buttonName in this.callbackActions)) return void console.error('ThumbarButtonsManager: Unknown callback eventName: "'.concat(e.buttonName, '"'), e);
       this.callbackActions[e.buttonName]()
-    }), v(this, "handleViewUpdate", o().debounce(() => {
+    }), v(this, "handleViewUpdate", a().debounce(() => {
       let e = g.Z.getVoiceChannelId();
       if (null == e) return void this.setThumbarButtons([]);
       let t = m.Z.isSelfMute(),
         n = m.Z.isSelfDeaf(),
         r = m.Z.isVideoEnabled(),
         i = m.Z.isVideoAvailable(),
-        a = h.Z.getChannel(e),
-        o = null == a || (0, f.y)(a),
+        o = h.Z.getChannel(e),
+        a = null == o || (0, f.y)(o),
         {
           reachedLimit: s,
           limit: l
-        } = null != a ? (0, d.t)(a) : {
+        } = null != o ? (0, d.t)(o) : {
           reachedLimit: void 0,
           limit: void 0
         },
         c = (0, _.X)({
           enabled: r,
           join: !1,
-          channel: a,
+          channel: o,
           cameraUnavailable: !i,
-          hasPermission: o,
+          hasPermission: a,
           channelLimit: l,
           channelLimitReached: s
         });

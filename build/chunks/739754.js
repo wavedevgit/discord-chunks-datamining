@@ -7,8 +7,8 @@ n.d(t, {
 });
 var r = n(255367),
   i = n(73800),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(710251),
   l = n(442837),
   c = n(481060),
@@ -37,7 +37,7 @@ function g(e) {
     icon: (0, r.jsx)(c.Mgn, {
       size: "xs",
       color: "currentColor",
-      className: o()(h.icon, h.errorIcon)
+      className: a()(h.icon, h.errorIcon)
     })
   }
 }
@@ -62,13 +62,13 @@ function b(e) {
     className: t,
     icon: n,
     text: i,
-    color: a
+    color: o
   } = e;
   return (0, r.jsxs)("div", {
-    className: o()(h.wrapper, t),
+    className: a()(h.wrapper, t),
     children: [n, (0, r.jsx)(c.Text, {
       variant: "text-md/normal",
-      color: a,
+      color: o,
       scaleFontToUserSetting: !0,
       children: i
     })]
@@ -79,22 +79,22 @@ function y(e) {
   let {
     message: t,
     className: n,
-    component: a
-  } = e, o = (0, s.Z)(), c = (0, l.e7)([d.ZP], () => d.ZP.getInteraction(t), [t]);
+    component: o
+  } = e, a = (0, s.Z)(), c = (0, l.e7)([d.ZP], () => d.ZP.getInteraction(t), [t]);
   i.useEffect(() => {
     let e = null;
     if (t.hasFlag(_.iLy.LOADING) && null != c) {
       let n = (0, f.ow)(t.id) - Date.now();
-      n > 0 && (e = setTimeout(() => o(), 1e3 + n))
+      n > 0 && (e = setTimeout(() => a(), 1e3 + n))
     }
     return () => {
       clearTimeout(e)
     }
-  }, [o, c, t]);
+  }, [a, c, t]);
   let p = null;
-  if (null == a) p = E(c, t);
+  if (null == o) p = E(c, t);
   else {
-    let e = (0, u.SD)(c, t, a);
+    let e = (0, u.SD)(c, t, o);
     null != e && (p = g(e))
   }
   if (null == p) return null;

@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(255367),
   i = n(73800),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(916616),
   l = n(981729),
   c = n(911969),
@@ -63,7 +63,7 @@ function E(e) {
     align: "center",
     targetElementRef: t,
     children: n => (0, r.jsx)("div", g(h({}, n), {
-      className: o()(e.className, _.notFoundPlaceholder, {
+      className: a()(e.className, _.notFoundPlaceholder, {
         [_.hiddenSpoilers]: e.hiddenSpoilers
       }),
       style: {
@@ -77,12 +77,12 @@ function E(e) {
       })
     }))
   });
-  let a = n.loadingState === c.f.LOADING ? d.zo9.LOADING : d.zo9.ERROR;
+  let o = n.loadingState === c.f.LOADING ? d.zo9.LOADING : d.zo9.ERROR;
   return (0, r.jsx)(s.E, {
-    className: o()(e.className, {
+    className: a()(e.className, {
       [_.hiddenSpoilers]: e.hiddenSpoilers
     }),
-    readyState: a,
+    readyState: o,
     src: "",
     width: e.placeholderWidth,
     height: e.placeholderHeight,

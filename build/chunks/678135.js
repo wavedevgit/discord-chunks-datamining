@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var i = n(120356),
-  a = n.n(i),
-  o = n(481060),
+  o = n.n(i),
+  a = n(481060),
   s = n(680295),
   l = n(687158),
   c = n(576635),
@@ -36,15 +36,15 @@ function v(e) {
     pendingPronouns: A,
     pendingAvatar: N,
     pendingAvatarDecoration: C,
-    pendingNickname: w,
-    pendingGlobalName: R,
-    pendingThemeColors: P,
+    pendingNickname: R,
+    pendingGlobalName: P,
+    pendingThemeColors: w,
     pendingProfileEffectId: D,
     pendingLegacyUsernameDisabled: L,
     avatarClassName: x,
-    containerClassName: k,
-    isTryItOutFlow: j = !1,
-    disabledInputs: M = !1,
+    containerClassName: M,
+    isTryItOutFlow: k = !1,
+    disabledInputs: j = !1,
     hideCustomStatus: U = !1,
     hideBioSection: G = !1,
     hideMessageInput: B = !0,
@@ -60,25 +60,25 @@ function v(e) {
     guildId: null == n ? void 0 : n.id,
     avatarDecorationOverride: C,
     avatarOverride: N,
-    size: o.EFr.SIZE_80,
+    size: a.EFr.SIZE_80,
     showPending: !0
   }), z = (0, _.ZT)({
     pendingProfileEffectId: D,
     displayProfile: Y
   }), {
     theme: q,
-    primaryColor: $
+    primaryColor: X
   } = (0, c.Z)({
     user: t,
     displayProfile: Y,
-    pendingThemeColors: P,
+    pendingThemeColors: w,
     isPreview: i
-  }), X = (0, r.jsxs)(d.Z, {
+  }), Q = (0, r.jsxs)(d.Z, {
     user: t,
     displayProfile: Y,
     themeType: b.lY.POPOUT,
-    pendingThemeColors: P,
-    className: a()(O.container, k),
+    pendingThemeColors: w,
+    className: o()(O.container, M),
     forceShowPremium: i,
     children: [(0, r.jsxs)("div", {
       className: O.header,
@@ -89,8 +89,8 @@ function v(e) {
         canUsePremiumCustomization: i,
         pendingBanner: I,
         pendingAccentColor: T,
-        isTryItOutFlow: j,
-        disabledInputs: M,
+        isTryItOutFlow: k,
+        disabledInputs: j,
         onUpsellClick: () => null == v ? void 0 : v({
           object: E.qAy.EDIT_PROFILE_BANNER
         })
@@ -102,10 +102,10 @@ function v(e) {
         previewAvatar: W,
         previewAvatarDecoration: K,
         previewTheme: q,
-        previewPrimaryColor: $,
+        previewPrimaryColor: X,
         className: x,
-        disabledInputs: M,
-        isTryItOutFlow: j,
+        disabledInputs: j,
+        isTryItOutFlow: k,
         onUpsellClick: () => null == v ? void 0 : v({
           object: E.qAy.AVATAR
         })
@@ -113,19 +113,19 @@ function v(e) {
         location: "UserProfilePreview",
         user: t,
         themeType: b.lY.POPOUT,
-        disableToolbar: M
+        disableToolbar: j
       })]
     }), (0, r.jsx)(m.Z, {
       user: t,
       displayProfile: Y,
       guild: n,
       pendingAvatar: N,
-      pendingNickname: w,
-      pendingGlobalName: R,
+      pendingNickname: R,
+      pendingGlobalName: P,
       pendingBio: S,
       pendingPronouns: A,
       pendingLegacyUsernameDisabled: L,
-      isTryItOutFlow: j,
+      isTryItOutFlow: k,
       hideBioSection: G,
       pendingBadges: Z,
       shouldOpenBadgeTooltip: F
@@ -137,11 +137,11 @@ function v(e) {
       profileEffectId: z
     })]
   });
-  return H ? X : (0, r.jsx)("div", {
+  return H ? Q : (0, r.jsx)("div", {
     role: "img",
     "aria-label": y.intl.string(y.t.ayozFh),
-    children: (0, r.jsx)(o.Rny, {
-      children: X
+    children: (0, r.jsx)(a.Rny, {
+      children: Q
     })
   })
 }

@@ -2,16 +2,16 @@
 "use strict";
 n.d(t, {
   $B: () => c,
-  GF: () => o,
+  GF: () => a,
   XL: () => s,
   pE: () => u
 }), n(415506);
 var r = n(255367),
   i = n(73800);
-let a = i.createContext(void 0);
+let o = i.createContext(void 0);
 
-function o() {
-  let e = i.useContext(a);
+function a() {
+  let e = i.useContext(o);
   if (null == e) throw Error("No PollContextProvider found");
   return e
 }
@@ -20,12 +20,12 @@ function s(e) {
   let {
     children: t,
     message: n,
-    poll: o
+    poll: a
   } = e, s = i.useMemo(() => ({
     message: n,
-    poll: o
-  }), [n, o]);
-  return (0, r.jsx)(a.Provider, {
+    poll: a
+  }), [n, a]);
+  return (0, r.jsx)(o.Provider, {
     value: s,
     children: t
   })
@@ -34,7 +34,7 @@ function s(e) {
 function l() {
   let {
     poll: e
-  } = o();
+  } = a();
   return e.resources
 }
 
@@ -45,7 +45,7 @@ function c(e) {
 function u() {
   let {
     message: e
-  } = o(), t = e.getChannelId();
+  } = a(), t = e.getChannelId();
   return i.useMemo(() => ({
     channelId: t,
     messageId: e.id

@@ -6,8 +6,8 @@ n.d(t, {
 });
 var r = n(255367),
   i = n(73800),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(693789),
   l = n(481060),
   c = n(709692),
@@ -37,7 +37,7 @@ function f(e) {
 
 function _(e) {
   let t, n, {
-      header: a,
+      header: o,
       children: d,
       confirmText: f,
       cancelText: _,
@@ -91,14 +91,14 @@ function _(e) {
     transitionState: y,
     impression: T,
     parentComponent: "ConfirmModal",
-    children: [null != a ? (0, r.jsx)(c.xB, {
+    children: [null != o ? (0, r.jsx)(c.xB, {
       separator: !1,
       children: (0, r.jsx)(l.X6q, {
         variant: "heading-lg/semibold",
-        children: a
+        children: o
       })
     }) : null, (0, r.jsx)(c.hz, {
-      className: o()(u.content, b),
+      className: a()(u.content, b),
       children: d
     }), (0, r.jsxs)(c.mz, {
       children: [n, t]

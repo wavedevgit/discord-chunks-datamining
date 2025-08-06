@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(944296),
   i = n(73800),
-  a = n(440717);
-let o = {
+  o = n(440717);
+let a = {
   border: 0,
   clip: "rect(0 0 0 0)",
   clipPath: "inset(50%)",
@@ -25,13 +25,13 @@ function s(e = {}) {
     isFocusable: n
   } = e, [r, l] = (0, i.useState)(!1), {
     focusWithinProps: c
-  } = (0, a.L)({
+  } = (0, o.L)({
     isDisabled: !n,
     onFocusWithinChange: e => l(e)
   }), u = (0, i.useMemo)(() => r ? t : t ? {
-    ...o,
+    ...a,
     ...t
-  } : o, [r]);
+  } : a, [r]);
   return {
     visuallyHiddenProps: {
       ...c,
@@ -44,8 +44,8 @@ function l(e) {
   let {
     children: t,
     elementType: n = "div",
-    isFocusable: a,
-    style: o,
+    isFocusable: o,
+    style: a,
     ...l
   } = e, {
     visuallyHiddenProps: c

@@ -5,8 +5,8 @@ n.d(t, {
 }), n(804061), n(704826), n(35282);
 var r = n(255367),
   i = n(73800),
-  a = n(442837),
-  o = n(481060),
+  o = n(442837),
+  a = n(481060),
   s = n(456100),
   l = n(620662),
   c = n(841784),
@@ -49,27 +49,27 @@ function C(e) {
   }
   return e
 }
-let w = (e, t) => A.intl.formatToPlainString(A.t.tAwI1t, {
+let R = (e, t) => A.intl.formatToPlainString(A.t.tAwI1t, {
     username: t.username,
     activity: e.extra.activity_name
   }),
-  R = (e, t, n) => {
+  P = (e, t, n) => {
     let r = A.t["bES+y8"],
       i = m.ZP.getName(t.guild_id, t.id, n),
-      a = e.extra.activity_name;
+      o = e.extra.activity_name;
     return A.intl.formatToMarkdownString(r, {
-      gameName: a,
+      gameName: o,
       userName: i
     }).replaceAll("*", "")
   },
-  P = e => {
+  w = e => {
     let {
       entry: t,
       channel: n,
       users: r,
       countOthers: i
-    } = e, a = A.t["7j/5mp"];
-    return A.intl.formatToMarkdownString(a, {
+    } = e, o = A.t["7j/5mp"];
+    return A.intl.formatToMarkdownString(o, {
       gameName: t.extra.activity_name,
       user1: m.ZP.getName(null == n ? void 0 : n.guild_id, null == n ? void 0 : n.id, r[0]),
       user2: m.ZP.getName(null == n ? void 0 : n.guild_id, null == n ? void 0 : n.id, r[1]),
@@ -90,13 +90,13 @@ let w = (e, t) => A.intl.formatToPlainString(A.t.tAwI1t, {
       showCoverImage: !1
     }), {
       user: x,
-      details: k,
-      activity: j,
-      embeddedActivity: M
+      details: M,
+      activity: k,
+      embeddedActivity: j
     } = (0, T.n)(n), {
       primaryColor: U,
       secondaryColor: G
-    } = (0, O.Z)(null == L ? void 0 : L.src), B = (0, a.e7)([p.default], () => p.default.locale), {
+    } = (0, O.Z)(null == L ? void 0 : L.src), B = (0, o.e7)([p.default], () => p.default.locale), {
       displayParticipants: Z,
       participant1: F,
       participant2: V,
@@ -107,12 +107,12 @@ let w = (e, t) => A.intl.formatToPlainString(A.t.tAwI1t, {
       })
     }, W = i.useCallback(e => {
       if ((null == L ? void 0 : L.src) == null || null == t || null == x) return;
-      let r = H > 0 ? P({
+      let r = H > 0 ? w({
         entry: n,
         channel: t,
         users: [F, V],
         countOthers: H
-      }) : R(n, t, x);
+      }) : P(n, t, x);
       return (0, y.C4)({
         entry: n,
         applicationImageSrc: null == L ? void 0 : L.src,
@@ -138,7 +138,7 @@ let w = (e, t) => A.intl.formatToPlainString(A.t.tAwI1t, {
         channel: t,
         userDescription: (0, b.kr)(n) ? A.t.vPg1JS : A.t.rPqqtr,
         title: n.extra.activity_name,
-        subtitle: k,
+        subtitle: M,
         badges: z,
         entry: n,
         showCoverImage: !1,
@@ -146,22 +146,22 @@ let w = (e, t) => A.intl.formatToPlainString(A.t.tAwI1t, {
         onClickSubtitle: D ? void 0 : Y,
         onClickThumbnail: D ? void 0 : Y
       }),
-      $ = (0, l.Z)(j, S.xjy.JOIN) || (0, c.Z)(j),
-      X = $ ? (0, r.jsx)(u.Z, {
-        embeddedActivity: M,
-        activity: j,
+      X = (0, l.Z)(k, S.xjy.JOIN) || (0, c.Z)(k),
+      Q = X ? (0, r.jsx)(u.Z, {
+        embeddedActivity: j,
+        activity: k,
         user: x,
         ButtonComponent: e => (0, r.jsx)(I.Ll, C({
-          IconComponent: o.YVR
+          IconComponent: a.YVR
         }, e))
       }) : null,
-      Q = K ? o.iWm : o.jje,
-      J = D ? null : (0, r.jsx)(I.Ll, {
+      J = K ? a.iWm : a.jje,
+      $ = D ? null : (0, r.jsx)(I.Ll, {
         onClick: Y,
-        IconComponent: Q,
+        IconComponent: J,
         children: A.intl.string(A.t.GDWYR0)
       }),
-      ee = [$ && !D ? X : J].filter(h.lm);
+      ee = [X && !D ? Q : $].filter(h.lm);
     return (0, r.jsxs)(I.yR, {
       children: [q, (0, r.jsx)(I.St, {
         children: (0, r.jsx)(I.WT, {
@@ -170,7 +170,7 @@ let w = (e, t) => A.intl.formatToPlainString(A.t.tAwI1t, {
           user: x,
           channel: t,
           generateReactionImage: W,
-          reactionImageAltText: w(n, x),
+          reactionImageAltText: R(n, x),
           entry: n,
           buttons: ee
         })

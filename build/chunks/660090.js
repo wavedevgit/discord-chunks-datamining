@@ -5,8 +5,8 @@ n.d(t, {
 }), n(642613), n(388685);
 var r = n(73800),
   i = n(471518),
-  a = n(70956),
-  o = n(314734);
+  o = n(70956),
+  a = n(314734);
 
 function s(e) {
   let {
@@ -49,7 +49,7 @@ function l(e) {
   let {
     sectionId: t,
     commandsByActiveSection: n
-  } = e, [l, c] = r.useState(o.bS.ALPHABETICAL), u = r.useMemo(() => {
+  } = e, [l, c] = r.useState(a.bS.ALPHABETICAL), u = r.useMemo(() => {
     var e, r;
     return null != (r = null == (e = n.find(e => e.section.id === t)) ? void 0 : e.data) ? r : []
   }, [n, t]), {
@@ -61,17 +61,17 @@ function l(e) {
   r.useEffect(() => {
     let e = t;
     i.i6(e, {
-      dontRefetchMs: a.Z.Millis.DAY
+      dontRefetchMs: o.Z.Millis.DAY
     })
   }, [t]), r.useLayoutEffect(() => {
-    f && c(o.bS.POPULAR)
+    f && c(a.bS.POPULAR)
   }, [f]);
   let _ = u;
   switch (l) {
-    case o.bS.POPULAR:
+    case a.bS.POPULAR:
       _ = d;
       break;
-    case o.bS.ALPHABETICAL:
+    case a.bS.ALPHABETICAL:
       _ = u
   }
   return {

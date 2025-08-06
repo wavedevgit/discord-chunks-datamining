@@ -14,7 +14,7 @@ function c(e) {
   let {
     className: t,
     guildId: c
-  } = e, d = (0, a.Z)();
+  } = e, u = (0, a.Z)();
   return (0, r.jsx)(s.Z, {
     className: t,
     icon: (0, r.jsx)(l.Que, {
@@ -63,7 +63,7 @@ function c(e) {
             Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(i, e))
           }), n))
         }
-      }, d)
+      }, u)
     }
   })
 }

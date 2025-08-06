@@ -4,9 +4,9 @@ n.d(t, {
   Z: () => m
 });
 var r, i = n(442837),
-  a = n(570140);
+  o = n(570140);
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -22,7 +22,7 @@ function s(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      o(e, t, n[t])
+      a(e, t, n[t])
     })
   }
   return e
@@ -94,8 +94,8 @@ class h extends(r = i.ZP.DeviceSettingsStore) {
     return d
   }
 }
-o(h, "displayName", "TTSStore"), o(h, "persistKey", "TTSStore"), o(h, "migrations", []);
-let m = new h(a.Z, __OVERLAY__ ? {} : {
+a(h, "displayName", "TTSStore"), a(h, "persistKey", "TTSStore"), a(h, "migrations", []);
+let m = new h(o.Z, __OVERLAY__ ? {} : {
   SPEAKING_MESSAGE: f,
   STOP_SPEAKING: _,
   SET_TTS_SPEECH_RATE: p

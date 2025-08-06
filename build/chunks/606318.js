@@ -1,14 +1,14 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  DX: () => a,
+  DX: () => o,
   Gr: () => s,
-  S2: () => o
+  S2: () => a
 });
 var r = n(866442),
   i = n(981631);
 
-function a(e) {
+function o(e) {
   return {
     primaryColor: 0 === e.primary_color ? i.Pbq : (0, r.Rf)(e.primary_color),
     secondaryColor: null == e.secondary_color ? null : (0, r.Rf)(e.secondary_color),
@@ -16,7 +16,7 @@ function a(e) {
   }
 }
 
-function o(e) {
+function a(e) {
   return null != e && null != e.colorStrings && null != e.colorStrings.primaryColor && null != e.colorStrings.secondaryColor
 }
 

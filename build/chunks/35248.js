@@ -6,8 +6,8 @@ n.d(t, {
 }), n(190126), n(368063), n(65234), n(111804), n(490233), n(97749), n(388685), n(953529);
 var r = n(255367),
   i = n(73800),
-  a = n(772848),
-  o = n(544891),
+  o = n(772848),
+  a = n(544891),
   s = n(481060),
   l = n(355467),
   c = n(821849),
@@ -27,8 +27,8 @@ let O = 1e3;
 function v(e, t, n, r, i) {
   let s = g.ANM.BILLING_STANDALONE_CHECKOUT_PAGE(e, t, n, i),
     l = new URL(f.Z.makeUrl(g.Z5c.BILLING_LOGIN_HANDOFF)),
-    c = (0, a.Z)();
-  return l.searchParams.append("handoff_key", c), l.searchParams.append("redirect_to", s), o.tn.post({
+    c = (0, o.Z)();
+  return l.searchParams.append("handoff_key", c), l.searchParams.append("redirect_to", s), a.tn.post({
     url: g.ANM.HANDOFF,
     body: {
       key: c
@@ -44,8 +44,8 @@ function v(e, t, n, r, i) {
 let I = e => {
     let t, {
         step: n,
-        onPurchaseComplete: a,
-        onHandoffFailure: o
+        onPurchaseComplete: o,
+        onHandoffFailure: a
       } = e,
       {
         selectedPlan: u,
@@ -60,7 +60,7 @@ let I = e => {
       {
         isGift: C
       } = (0, _.wD)(),
-      [w, R] = i.useState(!1);
+      [R, P] = i.useState(!1);
     switch (n) {
       case h.h8.AWAITING_BROWSER_CHECKOUT_GOOGLE_PAY:
         t = g.i$l.GOOGLE_PAY;
@@ -71,12 +71,12 @@ let I = e => {
     return i.useEffect(() => {
       let e = setTimeout(() => {
         var e;
-        w || (R(!0), (0, l.r5)(N.loadId), v(null != (e = null == u ? void 0 : u.id) ? e : E.Xh.PREMIUM_MONTH_TIER_2, C, N.loadId, o, t))
+        R || (P(!0), (0, l.r5)(N.loadId), v(null != (e = null == u ? void 0 : u.id) ? e : E.Xh.PREMIUM_MONTH_TIER_2, C, N.loadId, a, t))
       }, O);
       return () => clearTimeout(e)
-    }, [u, C, N, o, R, w, t]), i.useEffect(() => {
-      null !== S && (E.YQ.includes(S) && ((0, c.GZ)(S), (0, l.jg)()), f(S)), null !== A && d(A), T === N.loadId && I === m.Y.DONE && a()
-    }, [f, d, I, T, S, A, N, a]), (0, r.jsxs)("div", {
+    }, [u, C, N, a, P, R, t]), i.useEffect(() => {
+      null !== S && (E.YQ.includes(S) && ((0, c.GZ)(S), (0, l.jg)()), f(S)), null !== A && d(A), T === N.loadId && I === m.Y.DONE && o()
+    }, [f, d, I, T, S, A, N, o]), (0, r.jsxs)("div", {
       className: y.body,
       children: [(0, r.jsx)(s.X6q, {
         variant: "heading-xl/bold",

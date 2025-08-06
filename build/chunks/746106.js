@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(255367),
   i = n(73800),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(442837),
   l = n(481060),
   c = n(607070),
@@ -28,29 +28,29 @@ function I(e) {
   let {
     windowKey: t,
     children: n
-  } = e, a = null != t, [I] = i.useState(() => y.ZP.getEnableHardwareAcceleration()), {
+  } = e, o = null != t, [I] = i.useState(() => y.ZP.getEnableHardwareAcceleration()), {
     locale: T,
     theme: S,
     focused: A,
     currentWindow: N,
     fontScale: C,
-    fontScaleClass: w,
-    keyboardModeEnabled: R,
-    saturation: P,
+    fontScaleClass: R,
+    keyboardModeEnabled: P,
+    saturation: w,
     desaturateUserColors: D,
     useForcedColors: L,
     systemForcedColors: x,
-    useReducedMotion: k,
-    alwaysShowLinkDecorations: j,
-    confettiMode: M,
+    useReducedMotion: M,
+    alwaysShowLinkDecorations: k,
+    confettiMode: j,
     highContrastMode: U
   } = (0, s.cj)([g.default, c.Z, E.Z, b.Z, h.Z, m.Z], () => {
     var e;
     return {
       locale: g.default.locale,
       theme: E.Z.theme,
-      focused: a ? h.Z.getWindowFocused(t) : b.Z.isFocused(),
-      currentWindow: a && null != (e = h.Z.getWindow(t)) ? e : window,
+      focused: o ? h.Z.getWindowFocused(t) : b.Z.isFocused(),
+      currentWindow: o && null != (e = h.Z.getWindow(t)) ? e : window,
       fontScale: c.Z.fontScale,
       fontScaleClass: c.Z.fontScaleClass,
       keyboardModeEnabled: c.Z.keyboardModeEnabled,
@@ -68,7 +68,7 @@ function I(e) {
   }, {
     autoTrackExposure: !0
   }).enabled, B = (0, _.Z)(N, __OVERLAY__ || A), Z = 0;
-  1 !== P && (Z = (0, l.OdO)(Z, l.bgu.REDUCE_SATURATION_ENABLED));
+  1 !== w && (Z = (0, l.OdO)(Z, l.bgu.REDUCE_SATURATION_ENABLED));
   let F = (0, O.A)(),
     V = (0, p.Ml)("RootThemeContextProvider"),
     H = (0, p.CL)("RootThemeContextProvider"),
@@ -80,7 +80,7 @@ function I(e) {
   return (0, r.jsx)(l.wMY, {
     theme: S,
     flags: Z,
-    saturation: P,
+    saturation: w,
     density: F,
     children: (0, r.jsx)(v.cE, {
       lang: T,
@@ -88,19 +88,19 @@ function I(e) {
       density: F,
       focused: A,
       fontScale: C,
-      fontScaleClass: w,
-      keyboardModeEnabled: R,
+      fontScaleClass: R,
+      keyboardModeEnabled: P,
       mouseMode: B,
-      saturation: P,
+      saturation: w,
       desaturateUserColors: D,
       useForcedColors: L,
       systemForcedColors: x,
-      useReducedMotion: k,
-      alwaysShowLinkDecorations: j,
+      useReducedMotion: M,
+      alwaysShowLinkDecorations: k,
       hardwareAccelerationEnabled: I,
       highContrastMode: G && U,
-      rootClassName: o()({
-        "confetti-mode": M,
+      rootClassName: a()({
+        "confetti-mode": j,
         "refresh-fast-follow-avatars": V && !K,
         "refresh-fast-follow-guild-bg": H,
         "refresh-fast-follow-distinct-borders": Y,

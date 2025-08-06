@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var i = n(442837),
-  a = n(481060),
-  o = n(100527),
+  o = n(481060),
+  a = n(100527),
   s = n(906732),
   l = n(545594),
   c = n(300284),
@@ -30,7 +30,7 @@ function b(e) {
   });
   return (0, r.jsx)("div", {
     children: (0, r.jsx)(l.i, {
-      bannerIcon: (0, r.jsx)(a.ics, {
+      bannerIcon: (0, r.jsx)(o.ics, {
         size: "lg",
         color: "currentColor",
         className: E.bannerIcon
@@ -41,7 +41,7 @@ function b(e) {
       bannerSubtext: g.intl.string(g.t.ONjwDw),
       textStyles: E.bannerContainer,
       headerStyles: E.bannerHeader,
-      children: (0, r.jsx)(a.zxk, {
+      children: (0, r.jsx)(o.zxk, {
         variant: "primary",
         size: "sm",
         text: g.intl.string(g.t.Viksoq),
@@ -57,7 +57,7 @@ function y(e) {
     guild: i
   } = e, {
     analyticsLocations: c
-  } = (0, s.ZP)(o.Z.AUTOMOD_PROFILE_QUARANTINE_ALERT), [u, d] = (0, _.ww)({
+  } = (0, s.ZP)(a.Z.AUTOMOD_PROFILE_QUARANTINE_ALERT), [u, d] = (0, _.ww)({
     guildId: null != (t = null == i ? void 0 : i.id) ? t : p.lds,
     analyticsLocations: c,
     openWithoutBackstack: !0
@@ -66,7 +66,7 @@ function y(e) {
   };
   return (0, r.jsx)("div", {
     children: (0, r.jsx)(l.i, {
-      bannerIcon: (0, r.jsx)(a.ics, {
+      bannerIcon: (0, r.jsx)(o.ics, {
         size: "lg",
         color: "currentColor",
         className: E.bannerIcon
@@ -77,7 +77,7 @@ function y(e) {
       bannerSubtext: f,
       textStyles: E.bannerContainer,
       headerStyles: E.bannerHeader,
-      children: (0, r.jsx)(a.zxk, {
+      children: (0, r.jsx)(o.zxk, {
         variant: "primary",
         size: "sm",
         text: h,

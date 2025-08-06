@@ -1,12 +1,12 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => w
+  Z: () => R
 }), n(388685);
 var r = n(255367),
   i = n(73800),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(442837),
   l = n(481060),
   c = n(420660),
@@ -65,38 +65,38 @@ function N(e, t) {
 }
 let C = h.ZP.getEnableHardwareAcceleration() ? l.Xo$ : l.qEK;
 
-function w(e) {
+function R(e) {
   let {
     user: t,
     displayProfile: n,
-    guildId: a,
+    guildId: o,
     channelId: h,
     themeType: T,
     animateOnHover: A,
-    onOpenProfile: w,
-    className: R,
-    previewStatus: P
+    onOpenProfile: R,
+    className: P,
+    previewStatus: w
   } = e, {
     theme: D
   } = (0, b.z)(), {
     analyticsLocations: L
   } = (0, d.ZP)(u.Z.AVATAR), {
     trackUserProfileAction: x
-  } = (0, m.KZ)(), k = p.ZP.isPremiumAtLeast(null == n ? void 0 : n.premiumType, v.p9.TIER_2), j = i.useMemo(() => t.isNonUserBot() || (0, f.W)(t, h), [t, h]), {
-    live: M
-  } = (0, g.Z)(t.id), [U] = M, {
+  } = (0, m.KZ)(), M = p.ZP.isPremiumAtLeast(null == n ? void 0 : n.premiumType, v.p9.TIER_2), k = i.useMemo(() => t.isNonUserBot() || (0, f.W)(t, h), [t, h]), {
+    live: j
+  } = (0, g.Z)(t.id), [U] = j, {
     status: G,
     isMobileOnline: B
   } = (0, s.cj)([_.Z], () => ({
     status: (0, c.Z)(U) ? O.Skl.STREAMING : _.Z.getStatus(t.id),
     isMobileOnline: _.Z.isMobileOnline(t.id)
-  })), Z = void 0 !== P ? P : G, F = [y.lY.MODAL, y.lY.MODAL_V2].includes(T) ? l.EFr.SIZE_120 : l.EFr.SIZE_80, V = o()(I.avatar, R), {
+  })), Z = void 0 !== w ? w : G, F = [y.lY.MODAL, y.lY.MODAL_V2].includes(T) ? l.EFr.SIZE_120 : l.EFr.SIZE_80, V = a()(I.avatar, P), {
     avatarDecorationSrc: H,
     avatarSrc: Y,
     eventHandlers: W
   } = (0, E.Z)({
     userId: t.id,
-    guildId: null != n ? n.guildId : a,
+    guildId: null != n ? n.guildId : o,
     size: F,
     animateOnHover: A
   }), K = (0, r.jsx)(C, {
@@ -104,18 +104,18 @@ function w(e) {
     avatarDecoration: H,
     size: F,
     "aria-label": t.username,
-    imageClassName: null != w ? I.overlay : void 0,
-    status: j ? O.Skl.UNKNOWN : Z,
-    statusBackdropColor: k && !j ? (0, l.QFD)(D) : void 0,
+    imageClassName: null != R ? I.overlay : void 0,
+    status: k ? O.Skl.UNKNOWN : Z,
+    statusBackdropColor: M && !k ? (0, l.QFD)(D) : void 0,
     isMobile: B,
     statusTooltip: !0,
     statusTooltipDelay: y.vB
   });
-  return null == w ? (0, r.jsx)("div", N(S({}, W), {
+  return null == R ? (0, r.jsx)("div", N(S({}, W), {
     className: V,
     children: K
   })) : (0, r.jsx)(l.P3F, N(S({}, W), {
-    className: o()(V, I.clickable),
+    className: a()(V, I.clickable),
     focusProps: {
       ringClassName: I.focusRing
     },
@@ -123,7 +123,7 @@ function w(e) {
       x({
         action: "PRESS_VIEW_PROFILE",
         analyticsLocations: L
-      }), null == w || w()
+      }), null == R || R()
     },
     children: K
   }))

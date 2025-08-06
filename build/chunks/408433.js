@@ -1,9 +1,9 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  En: () => R,
+  En: () => P,
   dY: () => S,
-  eC: () => w,
+  eC: () => R,
   jz: () => N,
   kC: () => v,
   l3: () => A,
@@ -12,8 +12,8 @@ n.d(t, {
 }), n(413496), n(433524), n(35282), n(953529), n(997841), n(190126), n(368063), n(65234), n(111804), n(490233), n(97749), n(388685), n(539854);
 var r = n(392711),
   i = n.n(r),
-  a = n(913527),
-  o = n.n(a),
+  o = n(913527),
+  a = n.n(o),
   s = n(866442),
   l = n(630388),
   c = n(709054),
@@ -47,8 +47,8 @@ function O(e) {
     proxy_url: n,
     width: r,
     height: i,
-    placeholder: a,
-    placeholder_version: o,
+    placeholder: o,
+    placeholder_version: a,
     description: s,
     flags: c,
     content_type: d
@@ -58,8 +58,8 @@ function O(e) {
     proxyURL: n,
     width: r,
     height: i,
-    placeholder: a,
-    placeholderVersion: o,
+    placeholder: o,
+    placeholderVersion: a,
     description: s,
     srcIsAnimated: (0, l.yE)(null != c ? c : 0, u.FoC.IS_ANIMATED),
     flags: null != c ? c : 0,
@@ -90,7 +90,7 @@ function v(e, t, n) {
     }), null != n.provider && null != n.provider.name && (r.provider = {
       name: n.provider.name,
       url: n.provider.url
-    }), null != n.timestamp && (r.timestamp = o()(new Date(n.timestamp))), null != n.color && (r.color = (0, s.ho)(n.color, !0)), null != n.thumbnail && b(n.thumbnail)) switch (r.type) {
+    }), null != n.timestamp && (r.timestamp = a()(new Date(n.timestamp))), null != n.color && (r.color = (0, s.ho)(n.color, !0)), null != n.thumbnail && b(n.thumbnail)) switch (r.type) {
     case u.hBH.ARTICLE:
     case u.hBH.IMAGE:
       r.image = O(n.thumbnail);
@@ -105,8 +105,8 @@ function v(e, t, n) {
         format: "webp"
       })
     }), null != r.thumbnail && b(n.video) && y(t, n.provider, n.video) && (r.video = O(n.video))), d.k.has(r.type)) {
-    var a;
-    r.fields = (null != (a = n.fields) ? a : []).map(e => {
+    var o;
+    r.fields = (null != (o = n.fields) ? o : []).map(e => {
       let {
         name: t,
         value: n,
@@ -149,9 +149,9 @@ function S(e) {
     video: n,
     type: r,
     author: i,
-    rawTitle: a
+    rawTitle: o
   } = e;
-  return (null != t || null != n) && (r === u.hBH.GIFV || r !== u.hBH.RICH && null == i && null == a)
+  return (null != t || null != n) && (r === u.hBH.GIFV || r !== u.hBH.RICH && null == i && null == o)
 }
 
 function A(e) {
@@ -176,10 +176,10 @@ function C(e, t, n) {
   }
 }
 
-function w(e, t) {
+function R(e, t) {
   return e.isPrivate() ? !e.isManaged() : t.can(u.Plq.EMBED_LINKS, e)
 }
 
-function R(e) {
+function P(e) {
   return "" !== e.content || e.messageSnapshots.some(e => "" !== e.message.content || e.message.attachments.length > 0)
 }

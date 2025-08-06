@@ -6,8 +6,8 @@ n.d(t, {
 });
 var r = n(255367),
   i = n(73800),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(755721),
   l = n(481060),
   c = n(367907),
@@ -61,7 +61,7 @@ function y(e) {
   let {
     channel: t,
     narrow: n
-  } = e, a = (0, f.tc)(t);
+  } = e, o = (0, f.tc)(t);
   i.useEffect(() => {
     u.default.track(_.rMx.CHANNEL_BANNER_VIEWED, b(g({}, (0, c.hH)(t.getGuildId()), (0, c.v_)(t)), {
       banner_type: "thread"
@@ -74,7 +74,7 @@ function y(e) {
     })), d.Z.unarchiveThread(t, !1)
   };
   return (0, r.jsxs)("div", {
-    className: o()(h.chatHeaderBar, {
+    className: a()(h.chatHeaderBar, {
       [h.narrow]: n
     }),
     children: [(0, r.jsx)(l.Text, {
@@ -82,7 +82,7 @@ function y(e) {
       variant: "text-sm/normal",
       color: "header-secondary",
       children: t.isForumPost() ? p.intl.string(p.t["833FDg"]) : p.intl.string(p.t.rEeodH)
-    }), a ? (0, r.jsx)(s.zx, {
+    }), o ? (0, r.jsx)(s.zx, {
       size: n ? s.zx.Sizes.SMALL : s.zx.Sizes.TINY,
       className: h.chatHeaderBarButton,
       color: s.zx.Colors.PRIMARY,
@@ -96,7 +96,7 @@ function O(e) {
   let {
     channel: t,
     narrow: n
-  } = e, a = (0, f.Xb)(t);
+  } = e, o = (0, f.Xb)(t);
   i.useEffect(() => {
     u.default.track(_.rMx.CHANNEL_BANNER_VIEWED, b(g({}, (0, c.hH)(t.getGuildId()), (0, c.v_)(t)), {
       banner_type: "thread"
@@ -109,7 +109,7 @@ function O(e) {
     })), d.Z.unlockThread(t)
   };
   return (0, r.jsxs)("div", {
-    className: o()(h.chatHeaderBar, {
+    className: a()(h.chatHeaderBar, {
       [h.narrow]: n
     }),
     children: [(0, r.jsx)(l.Text, {
@@ -117,7 +117,7 @@ function O(e) {
       variant: "text-sm/normal",
       color: "header-secondary",
       children: t.isForumPost() ? p.intl.string(p.t.E7oO8v) : p.intl.string(p.t["V/JF2N"])
-    }), a ? (0, r.jsx)(s.zx, {
+    }), o ? (0, r.jsx)(s.zx, {
       size: n ? s.zx.Sizes.SMALL : s.zx.Sizes.TINY,
       className: h.chatHeaderBarButton,
       color: s.zx.Colors.PRIMARY,

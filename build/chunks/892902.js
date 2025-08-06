@@ -4,8 +4,8 @@ n.d(t, {
   Z: () => S
 }), n(388685);
 var r, i = n(442837),
-  a = n(570140),
-  o = n(69004);
+  o = n(570140),
+  a = n(69004);
 
 function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -16,10 +16,10 @@ function s(e, t, n) {
   }) : e[t] = n, e
 }
 let l = 196606,
-  c = new o.Z(l),
+  c = new a.Z(l),
   u = 0,
-  d = new o.Z(l),
-  f = new o.Z(l);
+  d = new a.Z(l),
+  f = new a.Z(l);
 
 function _(e, t, n) {
   var r;
@@ -123,7 +123,7 @@ class T extends(r = i.ZP.Store) {
   }
 }
 s(T, "displayName", "LocalInteractionComponentStateStore");
-let S = new T(a.Z, {
+let S = new T(o.Z, {
   LOGOUT: m,
   QUEUE_INTERACTION_COMPONENT_STATE: g,
   SET_INTERACTION_COMPONENT_STATE: E,

@@ -1,24 +1,24 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => o
+  Z: () => a
 });
 var r = n(255367);
 n(73800);
 var i = n(901461),
-  a = n(815387);
+  o = n(815387);
 
-function o(e) {
+function a(e) {
   let {
     message: t,
     channel: n,
-    compact: o,
+    compact: a,
     disableInteraction: s
   } = e;
-  return (0, i.Z)(t) ? (0, r.jsx)(a.Z, {
+  return (0, i.Z)(t) ? (0, r.jsx)(o.Z, {
     message: t,
     channel: n,
-    compact: o,
+    compact: a,
     disableInteraction: s
   }) : null
 }

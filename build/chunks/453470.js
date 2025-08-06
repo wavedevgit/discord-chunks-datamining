@@ -5,8 +5,8 @@ n.d(t, {
 }), n(953529);
 var r = n(255367),
   i = n(73800),
-  a = n(286379),
-  o = n(481060),
+  o = n(286379),
+  a = n(481060),
   s = n(87051),
   l = n(797614),
   c = n(681678),
@@ -33,7 +33,7 @@ function v(e) {
   }, [t, v]), A = (0, g.t)({
     location: y.zr
   }), N = () => {
-    w(), (0, p.qc)({
+    R(), (0, p.qc)({
       channelId: t,
       warningId: v,
       senderId: I,
@@ -50,19 +50,19 @@ function v(e) {
       warningType: _.pj.LIKELY_ATO,
       cta: e
     }), S()
-  }, w = () => {
-    (0, o.ZDy)(async () => {
+  }, R = () => {
+    (0, a.ZDy)(async () => {
       let {
         default: e
       } = await n.e("59385").then(n.bind(n, 480884));
       return n => {
         let {
           transitionState: i,
-          onClose: a
+          onClose: o
         } = n;
         return (0, r.jsx)(e, {
           transitionState: i,
-          onClose: a,
+          onClose: o,
           channelId: t,
           warningId: v,
           senderId: I,
@@ -78,10 +78,10 @@ function v(e) {
             description: O.intl.string(O.t.w2ve0t),
             buttonText: O.intl.string(O.t.ftIK2N),
             onButtonPress: () => {
-              C(p.NM.USER_MODAL_MUTE), a()
+              C(p.NM.USER_MODAL_MUTE), o()
             }
           }, "likely-ato-mute")],
-          learnMore: (0, r.jsx)(o.P3F, {
+          learnMore: (0, r.jsx)(a.P3F, {
             onClick: () => (0, p.qc)({
               channelId: t,
               warningId: v,
@@ -89,7 +89,7 @@ function v(e) {
               warningType: _.pj.LIKELY_ATO,
               cta: p.NM.USER_MODAL_LEARN_MORE
             }),
-            children: (0, r.jsx)(o.X6q, {
+            children: (0, r.jsx)(a.X6q, {
               variant: "heading-sm/medium",
               color: "text-link",
               children: O.intl.format(O.t.UkH129, {
@@ -108,7 +108,7 @@ function v(e) {
       senderId: I,
       warningType: _.pj.LIKELY_ATO
     }), l.Z.increment({
-      name: a.V.SAFETY_WARNING_VIEW
+      name: o.V.SAFETY_WARNING_VIEW
     }))
   }, [t, v, I, A]), A) ? (0, r.jsx)(h.Q, {
     channelId: t,

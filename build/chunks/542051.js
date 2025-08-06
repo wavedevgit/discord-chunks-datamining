@@ -5,9 +5,9 @@ n.d(t, {
   Z: () => O
 }), n(415506), n(781311), n(388685);
 var r, i = n(255367),
-  a = n(73800),
-  o = n(120356),
-  s = n.n(o),
+  o = n(73800),
+  a = n(120356),
+  s = n.n(a),
   l = n(481060),
   c = n(607802),
   u = n(579612),
@@ -58,31 +58,31 @@ let g = e => {
     searchFavorites: n,
     showDMQueryText: r
   } = e, {
-    filterCount: o,
+    filterCount: a,
     queryContent: s,
     isQueryEmpty: u
-  } = a.useMemo(() => {
+  } = o.useMemo(() => {
     var e, n, r;
     let i = (0, c.kG)(t),
-      a = (0, c.$G)(i),
-      o = null != (n = a.content) ? n : "";
+      o = (0, c.$G)(i),
+      a = null != (n = o.content) ? n : "";
     return {
-      filterCount: null != (r = null == (e = a.channel_id) ? void 0 : e.length) ? r : 0,
-      isQueryEmpty: 0 === o.length,
-      queryContent: o
+      filterCount: null != (r = null == (e = o.channel_id) ? void 0 : e.length) ? r : 0,
+      isQueryEmpty: 0 === a.length,
+      queryContent: a
     }
   }, [t]);
   return n ? (0, i.jsx)("div", {
     className: f.queryText,
     children: d.intl.string(d.t["6RVtLC"])
-  }) : r ? o > 0 ? (0, i.jsx)(l.Text, {
+  }) : r ? a > 0 ? (0, i.jsx)(l.Text, {
     variant: "text-sm/medium",
     color: "text-secondary",
     className: f.searchDMQueryText,
     children: u ? d.intl.format(d.t.iV2ftr, {
-      filterCount: o
+      filterCount: a
     }) : d.intl.format(d.t["5CTmUl"], {
-      filterCount: o,
+      filterCount: a,
       value: s
     })
   }) : (0, i.jsx)(l.Text, {
@@ -112,14 +112,14 @@ function b(e, t, n) {
     "aria-selected": n
   }
 }
-class y extends(r = a.PureComponent) {
+class y extends(r = o.PureComponent) {
   renderQuery(e) {
     let {
       query: t,
       navId: n,
       focusedIndex: r,
-      onSelectQuery: a,
-      onSelectSearchEverywhere: o,
+      onSelectQuery: o,
+      onSelectSearchEverywhere: a,
       onHighlightQuery: c,
       hideQuery: u,
       searchFavorites: _,
@@ -134,7 +134,7 @@ class y extends(r = a.PureComponent) {
         })
       }, b(n, -1, E)), {
         onMouseEnter: c,
-        onClick: a,
+        onClick: o,
         children: [(0, i.jsx)(g, {
           query: t,
           searchFavorites: _,
@@ -154,7 +154,7 @@ class y extends(r = a.PureComponent) {
         })
       }, b(n, -1, E)), {
         onMouseEnter: c,
-        onClick: o,
+        onClick: a,
         children: [(0, i.jsx)("div", {
           className: f.queryText,
           children: d.intl.string(d.t.FtSUxc)
@@ -176,14 +176,14 @@ class y extends(r = a.PureComponent) {
       renderNoResults: n,
       renderInitialState: r,
       renderResult: i,
-      renderCustomResults: a
+      renderCustomResults: o
     } = this.props;
     if (e) return r();
     if (0 === t) return n();
     if (null != i) return Array.from({
       length: t
     }).map((e, t) => i(t));
-    if (null != a) return a();
+    if (null != o) return o();
     throw Error("SearchResultsPopout.renderResults: Flow should never allow this...")
   }
   render() {
@@ -192,7 +192,7 @@ class y extends(r = a.PureComponent) {
       focusedIndex: t,
       navId: n,
       width: r
-    } = this.props, a = "" === e.trim();
+    } = this.props, o = "" === e.trim();
     return (0, i.jsxs)("div", {
       className: f.container,
       style: {
@@ -203,7 +203,7 @@ class y extends(r = a.PureComponent) {
       id: n,
       tabIndex: -1,
       "aria-activedescendant": "".concat(n, "-").concat(t),
-      children: [this.renderQuery(a), this.renderSearchInSelectedChannelAutocomplete(), this.renderResults(a)]
+      children: [this.renderQuery(o), this.renderSearchInSelectedChannelAutocomplete(), this.renderResults(o)]
     })
   }
   constructor(...e) {
@@ -213,10 +213,10 @@ class y extends(r = a.PureComponent) {
         channel: t,
         showSearchInSelectedChannel: n,
         focusedIndex: r,
-        onSelectSearchInSelectedChannel: a
+        onSelectSearchInSelectedChannel: o
       } = this.props;
       if (!n || null == t) return null;
-      let o = -1 === r,
+      let a = -1 === r,
         s = (0, c.X3)(t),
         _ = (0, i.jsx)(u.ZP, {
           channel: t,
@@ -226,9 +226,9 @@ class y extends(r = a.PureComponent) {
           channelContainerClassName: f.channelContainer,
           textContainerClassName: f.searchResultNameContainer
         });
-      return (0, i.jsx)(l.P3F, m(p({}, b(e, -1, o)), {
+      return (0, i.jsx)(l.P3F, m(p({}, b(e, -1, a)), {
         className: f.inChannelOptionContainer,
-        onClick: a,
+        onClick: o,
         children: (0, i.jsx)(l.Text, {
           variant: "text-md/normal",
           color: "interactive-normal",

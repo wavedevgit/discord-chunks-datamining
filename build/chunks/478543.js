@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685), n(539854);
 var r = n(255367),
   i = n(73800),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(512722),
   l = n.n(s),
   c = n(755721),
@@ -29,13 +29,13 @@ function O(e, t) {
 function v(e) {
   let {
     url: t
-  } = e, [n, a] = i.useState(!1), s = i.useRef(void 0), l = i.useCallback(() => {
+  } = e, [n, o] = i.useState(!1), s = i.useRef(void 0), l = i.useCallback(() => {
     n || (0, p.JG)(t, () => {
-      a(!0), s.current = setTimeout(() => a(!1), 2e3)
+      o(!0), s.current = setTimeout(() => o(!1), 2e3)
     })
   }, [t, n]);
   return i.useEffect(() => () => clearTimeout(s.current), []), p.wS ? (0, r.jsxs)(u.P3F, {
-    className: o()(y.copyLink, n ? y.copied : null),
+    className: a()(y.copyLink, n ? y.copied : null),
     onClick: l,
     children: [(0, r.jsx)(u.xPt, {
       size: "md",
@@ -50,7 +50,7 @@ function I() {
     children: [(0, r.jsxs)("div", {
       className: y.buildInfo,
       children: [(0, r.jsx)("div", {
-        className: o()(y.barLoader, y.barTitle)
+        className: a()(y.barLoader, y.barTitle)
       }), (0, r.jsx)("div", {
         className: y.barLoader
       })]
@@ -64,7 +64,7 @@ function T(e) {
   let {
     subHead: t,
     buildDetails: n,
-    buttonColor: a,
+    buttonColor: o,
     buttonClick: s,
     buttonText: l,
     disabled: d = !1,
@@ -83,9 +83,9 @@ function T(e) {
       })]
     }), (0, r.jsx)(c.zx, {
       submitting: f,
-      color: a,
+      color: o,
       onClick: s,
-      className: o()(y.button, d ? y.disabledButtonOverride : null),
+      className: a()(y.button, d ? y.disabledButtonOverride : null),
       size: y.buttonSize,
       disabled: d,
       children: l
@@ -96,21 +96,21 @@ function T(e) {
 function S(e) {
   let t, n, r, {
       currentOverrides: i,
-      linkMeta: a,
-      applyBuildOverride: o,
+      linkMeta: o,
+      applyBuildOverride: a,
       clearBuildOverride: s,
       submitting: u
     } = e,
     _ = ["discord_web"];
   m.isPlatformEmbedded || _.push("discord_marketing", "discord_developers");
-  let p = (0, g.Z)(a, _);
+  let p = (0, g.Z)(o, _);
   if (!p.valid) return A(p.reason);
-  l()(null != a, "BuildOverrideEmbed.renderResolved: linkMeta should never be null if resolved");
+  l()(null != o, "BuildOverrideEmbed.renderResolved: linkMeta should never be null if resolved");
   let {
     discord_web: h,
     discord_developers: E
-  } = a.targetBuildOverride, y = null != h ? h : E;
-  l()(null != y, "BuildOverrideEmbed.renderResolved: linkMeta.targetBuildOverride.discord_web or linkMeta.targetBuildOverride.discord_developers should never be null if resolved"), O(y, i) ? (n = b.intl.string(b.t.tX4xrq), t = s, r = c.zx.Colors.RED) : (n = b.intl.string(b.t.nOunHB), t = o, r = c.zx.Colors.GREEN);
+  } = o.targetBuildOverride, y = null != h ? h : E;
+  l()(null != y, "BuildOverrideEmbed.renderResolved: linkMeta.targetBuildOverride.discord_web or linkMeta.targetBuildOverride.discord_developers should never be null if resolved"), O(y, i) ? (n = b.intl.string(b.t.tX4xrq), t = s, r = c.zx.Colors.RED) : (n = b.intl.string(b.t.nOunHB), t = a, r = c.zx.Colors.GREEN);
   let v = () => {
     f.Z.isConnected() ? d.Z.show({
       title: b.intl.string(b.t.tiu1l5),
@@ -168,8 +168,8 @@ let C = e => {
   let {
     loading: t = !1,
     currentOverrides: n,
-    linkMeta: a,
-    url: o,
+    linkMeta: o,
+    url: a,
     applyBuildOverride: s,
     clearBuildOverride: l
   } = e, [c, u] = i.useState(!1), d = i.useCallback(() => {
@@ -179,13 +179,13 @@ let C = e => {
   }, [l, c]);
   return (0, r.jsxs)("div", {
     className: y.wrapper,
-    children: [N(a, o, t), (0, r.jsxs)("div", {
+    children: [N(o, a, t), (0, r.jsxs)("div", {
       className: y.content,
       children: [(0, r.jsx)(_.Z, {
         className: y.icon
       }), t ? I() : S({
         currentOverrides: n,
-        linkMeta: a,
+        linkMeta: o,
         applyBuildOverride: d,
         clearBuildOverride: f,
         submitting: c

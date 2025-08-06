@@ -1,10 +1,10 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  GG: () => o,
+  GG: () => a,
   R2: () => s,
   h7: () => i,
-  rh: () => a
+  rh: () => o
 });
 var r = n(570140);
 
@@ -22,14 +22,14 @@ function i(e, t, n) {
   })
 }
 
-function a(e) {
+function o(e) {
   r.Z.dispatch({
     type: "ACTIVITY_INVITE_MODAL_QUERY",
     query: e
   })
 }
 
-function o(e) {
+function a(e) {
   r.Z.dispatch({
     type: "ACTIVITY_INVITE_MODAL_SEND",
     channelId: e

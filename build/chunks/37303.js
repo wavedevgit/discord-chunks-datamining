@@ -5,9 +5,9 @@ n.d(t, {
 }), n(388685);
 var r = n(255367),
   i = n(73800),
-  a = n(66546);
+  o = n(66546);
 n(442837);
-var o = n(113434);
+var a = n(113434);
 n(569984);
 var s = n(497505),
   l = n(602667),
@@ -29,8 +29,8 @@ function p(e, t, n) {
 function h(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 
@@ -41,7 +41,7 @@ function m(e) {
     initiallyExpanded: p,
     contentPosition: h,
     sourceQuestContent: m
-  } = e, [g, E] = i.useState(!1), b = i.useCallback(() => E(!0), []), y = i.useCallback(() => E(!1), []), O = (0, o.tP)(t), {
+  } = e, [g, E] = i.useState(!1), b = i.useCallback(() => E(!0), []), y = i.useCallback(() => E(!1), []), O = (0, a.tP)(t), {
     containerRef: v,
     size: I,
     height: T
@@ -55,18 +55,18 @@ function m(e) {
       location: n,
       quest: t
     })
-  }), w = null != T ? T : c.U0;
+  }), R = null != T ? T : c.U0;
   return (0, r.jsx)(l.A, {
     questOrQuests: t,
     questContent: n,
     questContentPosition: h,
     trackGuildAndChannelMetadata: n === s.jn.QUESTS_EMBED,
     sourceQuestContent: m,
-    children: e => (0, r.jsx)(a.animated.div, {
+    children: e => (0, r.jsx)(o.animated.div, {
       style: {
         maxHeight: n === s.jn.QUESTS_EMBED ? void 0 : S.to({
           range: [0, 1],
-          output: [c.DJ, w]
+          output: [c.DJ, R]
         })
       },
       className: _.questsCard,

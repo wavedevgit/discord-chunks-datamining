@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var i = n(399606),
-  a = n(481060),
-  o = n(231757),
+  o = n(481060),
+  a = n(231757),
   s = n(397639),
   l = n(19780),
   c = n(979651),
@@ -72,18 +72,18 @@ function v(e) {
     S = (0, f.Z)();
   if (!E && 0 === S.length) return null;
   let A = t => {
-    if (!t.twoWayLink || t.revoked) return void(0, o.Z)({
+    if (!t.twoWayLink || t.revoked) return void(0, a.Z)({
       platformType: t.type,
       location: y
     });
-    t.type === p.ABu.XBOX ? (0, a.ZDy)(async () => {
+    t.type === p.ABu.XBOX ? (0, o.ZDy)(async () => {
       let {
         default: t
       } = await Promise.all([n.e("26051"), n.e("522")]).then(n.bind(n, 200623));
       return n => (0, r.jsx)(t, b(g({}, n), {
         channel: e
       }))
-    }) : (t.type === p.ABu.PLAYSTATION || t.type === p.ABu.PLAYSTATION_STAGING) && (0, a.ZDy)(async () => {
+    }) : (t.type === p.ABu.PLAYSTATION || t.type === p.ABu.PLAYSTATION_STAGING) && (0, o.ZDy)(async () => {
       let {
         default: i
       } = await n.e("638").then(n.bind(n, 543974));
@@ -93,7 +93,7 @@ function v(e) {
       }))
     })
   };
-  return E ? (0, r.jsx)(a.sNh, {
+  return E ? (0, r.jsx)(o.sNh, {
     label: h.intl.string(h.t.PlwgdX),
     id: "handoff",
     action: () => {
@@ -101,7 +101,7 @@ function v(e) {
     },
     icon: (0, _.Z)(void 0),
     disabled: T
-  }) : S.map(e => (0, r.jsx)(a.sNh, {
+  }) : S.map(e => (0, r.jsx)(o.sNh, {
     id: "transfer-".concat(e.type, "-").concat(e.id),
     label: O(e.type, t),
     action: () => A(e),

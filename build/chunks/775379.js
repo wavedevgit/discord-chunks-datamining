@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  S: () => a
+  S: () => o
 }), n(388685);
 var r = n(73800);
 
@@ -13,7 +13,7 @@ function i(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-class a extends r.PureComponent {
+class o extends r.PureComponent {
   static getDerivedStateFromError(e) {
     return {
       error: e

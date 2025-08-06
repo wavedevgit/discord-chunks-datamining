@@ -6,7 +6,7 @@ n.d(t, {
 var r = n(904245),
   i = n(667204);
 
-function a(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -15,23 +15,23 @@ function a(e, t, n) {
   }) : e[t] = n, e
 }
 
-function o(e) {
+function a(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      a(e, t, n[t])
+      o(e, t, n[t])
     })
   }
   return e
 }
 
 function s(e, t, n) {
-  let a = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : {};
+  let o = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : {};
   if (r.Z.deleteMessage(e.id, t.id, !0), t.isCommandType()) {
-    null != t.interactionData && null != a.applicationId && (0, i.d)(t, e, a);
+    null != t.interactionData && null != o.applicationId && (0, i.d)(t, e, o);
     return
   }
   let {
@@ -46,9 +46,9 @@ function s(e, t, n) {
     tts: l,
     invalidEmojis: [],
     validNonShortcutEmojis: []
-  }, void 0, o({
+  }, void 0, a({
     nonce: d,
     flags: u,
     messageReference: null != c ? c : void 0
-  }, a))
+  }, o))
 }

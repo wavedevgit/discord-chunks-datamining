@@ -1,11 +1,11 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => a
+  Z: () => o
 });
 var r = n(861990),
   i = n(981631);
-class a {
+class o {
   getCreateAttachmentURL(e) {
     return i.ANM.GRAVITY_ATTACHMENTS
   }

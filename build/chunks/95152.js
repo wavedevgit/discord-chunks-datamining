@@ -1,12 +1,12 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  default: () => P
+  default: () => w
 }), n(388685), n(190126), n(368063), n(65234), n(111804), n(490233), n(97749), n(953529);
 var r = n(255367),
   i = n(73800),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(755721),
   l = n(481060),
   c = n(166459),
@@ -65,7 +65,7 @@ let A = 104,
   N = 16;
 
 function C(e) {
-  var t, n, a;
+  var t, n, o;
   let {
     file: s
   } = e, [l, c] = i.useState(), [d, f] = i.useState(!1), [_, p] = i.useState({}), h = i.useRef(null);
@@ -96,33 +96,33 @@ function C(e) {
   return (0, r.jsx)("img", {
     ref: h,
     src: l,
-    className: o()(y.icon, {
+    className: a()(y.icon, {
       [y.image]: !d
     }),
     "aria-hidden": !0,
     alt: "",
     style: {
       width: null != (n = _.width) ? n : "initial",
-      height: null != (a = _.height) ? a : A,
+      height: null != (o = _.height) ? o : A,
       marginLeft: g,
       marginRight: g,
       marginTop: null != _.height ? A - _.height - 33 : -33
     }
   })
 }
-class w extends i.Component {
+class R extends i.Component {
   render() {
     var e;
     return this.props.upload.item.platform !== d.ow.WEB ? null : this.props.upload.isImage ? (0, r.jsx)(C, {
       file: this.props.upload.item.file
     }) : (0, r.jsx)("div", {
-      className: o()(y.icon, {
+      className: a()(y.icon, {
         [y[null != (e = this.props.upload.classification) ? e : ""]]: !0
       })
     })
   }
 }
-class R extends i.Component {
+class P extends i.Component {
   componentDidMount() {
     var e;
     (null == (e = this.props.upload) ? void 0 : e.showLargeMessageDialog) && this.props.upload.item.platform === d.ow.WEB && h.default.track(E.rMx.OPEN_MODAL, {
@@ -144,7 +144,7 @@ class R extends i.Component {
       upload: e,
       transitionState: t,
       messageMaxLength: n,
-      disableSpoiler: a
+      disableSpoiler: o
     } = this.props, {
       hasSpoiler: c
     } = this.state;
@@ -157,10 +157,10 @@ class R extends i.Component {
       children: [(0, r.jsxs)("div", {
         className: y.inner,
         children: [(0, r.jsxs)("div", {
-          className: o()(y.file, {
+          className: a()(y.file, {
             [y.expandable]: e.isImage
           }),
-          children: [(0, r.jsx)(w, {
+          children: [(0, r.jsx)(R, {
             upload: e
           }), (0, r.jsxs)("div", {
             className: y.description,
@@ -182,7 +182,7 @@ class R extends i.Component {
               children: b.intl.string(b.t.ILJuBg)
             })
           }), (0, r.jsx)(s.Is, {
-            className: o()(y.channelTextAreaUpload, O.marginTop8),
+            className: a()(y.channelTextAreaUpload, O.marginTop8),
             value: this.state.filename,
             onChange: e => this.setState({
               filename: e
@@ -197,7 +197,7 @@ class R extends i.Component {
                 children: b.intl.string(b.t.eOB2eX)
               })
             }), (0, r.jsx)(s.Is, {
-              className: o()(y.channelTextAreaUpload, O.marginTop8),
+              className: a()(y.channelTextAreaUpload, O.marginTop8),
               placeholder: b.intl.string(b.t.RNH1jo),
               value: this.state.description,
               onChange: e => this.setState({
@@ -207,7 +207,7 @@ class R extends i.Component {
                 if (e.which === E.yXg.ENTER) return this.handleSubmit()
               }
             })]
-          }) : null, !0 !== a && (0, r.jsx)(l.XZJ, {
+          }) : null, !0 !== o && (0, r.jsx)(l.XZJ, {
             className: O.marginBottom20,
             value: c,
             onChange: (e, t) => this.setState({
@@ -222,7 +222,7 @@ class R extends i.Component {
       }), (0, r.jsx)("div", {
         className: y.footer,
         children: (0, r.jsxs)("div", {
-          className: o()(y.hasSpoilers, y.footerRightAlign),
+          className: a()(y.hasSpoilers, y.footerRightAlign),
           children: [(0, r.jsx)(s.zx, {
             type: "button",
             look: s.zx.Looks.LINK,
@@ -243,7 +243,7 @@ class R extends i.Component {
     })
   }
   constructor(e) {
-    var t, n, r, i, a, o;
+    var t, n, r, i, o, a;
     super(e), v(this, "cancelAll", () => {
       c.Z.clearAll(this.props.channelId, this.props.draftType), this.props.onClose()
     }), v(this, "cancel", () => {
@@ -261,29 +261,29 @@ class R extends i.Component {
       } = this.props, {
         filename: r,
         description: i,
-        hasSpoiler: a
+        hasSpoiler: o
       } = this.state;
       n({
         upload: e,
         name: r,
         description: i,
-        spoiler: a
+        spoiler: o
       }), t()
     });
     let s = e.ignoreDraft ? "" : p.Z.getDraft(this.props.channelId, e.draftType);
     this.state = S(I({}, (0, f.eK)(s)), {
       textFocused: !0,
       hasSpoiler: null != (i = null == (t = e.upload) ? void 0 : t.spoiler) && i,
-      filename: null != (a = null == (n = e.upload) ? void 0 : n.filename) ? a : "",
+      filename: null != (o = null == (n = e.upload) ? void 0 : n.filename) ? o : "",
       contentWarningProps: null,
-      description: null != (o = null == (r = e.upload) ? void 0 : r.description) ? o : ""
+      description: null != (a = null == (r = e.upload) ? void 0 : r.description) ? a : ""
     })
   }
 }
 
-function P(e) {
+function w(e) {
   let t = (0, _.Z)();
-  return e.upload.item.platform !== d.ow.WEB ? null : (0, r.jsx)(R, S(I({}, e), {
+  return e.upload.item.platform !== d.ow.WEB ? null : (0, r.jsx)(P, S(I({}, e), {
     file: e.upload.item.file,
     messageMaxLength: t
   }))

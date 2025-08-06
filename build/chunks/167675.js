@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var i = n(442837),
-  a = n(481060),
-  o = n(740492),
+  o = n(481060),
+  a = n(740492),
   s = n(27584),
   l = n(295510),
   c = n(394059),
@@ -56,15 +56,15 @@ function h(e, t) {
 function m(e) {
   let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : u.Yn.DEFAULT,
     [n, f, p] = (0, s.Z)(e, t),
-    m = (0, i.e7)([o.ZP], () => o.ZP.disableHideSelfStreamAndVideoConfirmationAlert),
+    m = (0, i.e7)([a.ZP], () => a.ZP.disableHideSelfStreamAndVideoConfirmationAlert),
     g = () => {
       if (m || f) return p(!f);
-      (0, a.h7j)(e => (0, r.jsx)(l.Z, h(_({}, e), {
+      (0, o.h7j)(e => (0, r.jsx)(l.Z, h(_({}, e), {
         type: c.K.VIDEO,
         onConfirm: () => p(!f)
       })))
     };
-  return n ? (0, r.jsx)(a.S89, {
+  return n ? (0, r.jsx)(o.S89, {
     id: "self-video-hide",
     label: d.intl.string(d.t.MH8ESU),
     checked: !f,

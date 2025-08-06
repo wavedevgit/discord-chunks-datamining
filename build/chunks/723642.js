@@ -2,19 +2,19 @@
 "use strict";
 n.d(t, {
   E2: () => l,
-  OA: () => o,
+  OA: () => a,
   SO: () => c,
-  ZW: () => a,
+  ZW: () => o,
   sR: () => u,
   yY: () => d,
   zn: () => s
 }), n(388685);
 var r = n(85746),
   i = n(981631),
-  a = function(e) {
+  o = function(e) {
     return e.KEY_PRESS = "key_press", e.CLICK = "click", e
   }({});
-let o = "SearchStore",
+let a = "SearchStore",
   s = "SearchHistoryStore_Web",
   l = {
     sort_by: "timestamp",

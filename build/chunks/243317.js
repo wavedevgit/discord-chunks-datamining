@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var i = n(481060),
-  a = n(388032),
-  o = n(156189);
+  o = n(388032),
+  a = n(156189);
 
 function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -50,9 +50,9 @@ function u(e, t) {
 
 function d() {
   return (0, r.jsx)(i.ua7, {
-    text: a.intl.string(a.t["RO/KYm"]),
+    text: o.intl.string(o.t["RO/KYm"]),
     children: e => (0, r.jsx)("div", u(l({
-      className: o.badge
+      className: a.badge
     }, e), {
       children: (0, r.jsx)(i.LQn, {
         color: "currentColor",

@@ -6,8 +6,8 @@ n.d(t, {
 }), n(388685);
 var r = n(255367),
   i = n(73800),
-  a = n(913527),
-  o = n.n(a),
+  o = n(913527),
+  a = n.n(o),
   s = n(481060),
   l = n(45251),
   c = n(388032),
@@ -19,9 +19,9 @@ function _(e) {
   let {
     channel: t,
     transitionState: n,
-    onClose: a,
+    onClose: o,
     prefilledTime: _
-  } = e, p = o()(), h = o()().add(d, "days"), [m, g] = i.useState(null != _ ? o()(_.substring(0, 200)) : p), E = e => {
+  } = e, p = a()(), h = a()().add(d, "days"), [m, g] = i.useState(null != _ ? a()(_.substring(0, 200)) : p), E = e => {
     g(e)
   }, b = e => {
     e.isValid() && g(e)
@@ -37,7 +37,7 @@ function _(e) {
     "aria-label": c.intl.string(c.t.WbFpq6),
     parentComponent: "ScheduledMessageCreateModal",
     children: [(0, r.jsx)(s.olH, {
-      onClick: a,
+      onClick: o,
       className: u.closeButton
     }), (0, r.jsx)(s.xBx, {
       separator: !1,
@@ -84,7 +84,7 @@ function _(e) {
         children: (0, r.jsx)(s.zxk, {
           variant: "secondary",
           text: c.intl.string(c.t["ETE/oK"]),
-          onClick: a
+          onClick: o
         })
       }), (0, r.jsx)(s.zxk, {
         variant: "primary",

@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var i = n(278074),
-  a = n(979554),
-  o = n(481060),
+  o = n(979554),
+  a = n(481060),
   s = n(1585),
   l = n(125988),
   c = n(583434),
@@ -60,7 +60,7 @@ function I(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let T = h.ZP.getEnableHardwareAcceleration() ? o.Xo$ : o.qEK;
+let T = h.ZP.getEnableHardwareAcceleration() ? a.Xo$ : a.qEK;
 
 function S(e) {
   let {
@@ -68,18 +68,18 @@ function S(e) {
   } = e, {
     avatarDecorationSrc: n,
     eventHandlers: i,
-    avatarPlaceholderSrc: a
+    avatarPlaceholderSrc: o
   } = (0, l.Z)({
     avatarDecorationOverride: t,
-    size: (0, s.y9)(o.EFr.SIZE_152)
+    size: (0, s.y9)(a.EFr.SIZE_152)
   });
   return (0, r.jsx)("div", {
     className: E.giftMainAnimationWrapper,
     children: (0, r.jsx)(T, I(O({}, i), {
       avatarDecoration: n,
-      src: a,
+      src: o,
       className: E.avatar,
-      size: o.EFr.SIZE_152,
+      size: a.EFr.SIZE_152,
       "aria-label": g.intl.string(g.t.lqaIxM)
     }))
   })
@@ -124,17 +124,17 @@ function C(e) {
   } = e, {
     selectedGiftStyle: n
   } = (0, m.wD)(), {
-    product: o
-  } = (0, c.T)(null == t ? void 0 : t.id), s = null == o ? void 0 : o.items[0], l = (0, i.EQ)(s).with({
-    type: a.Z.AVATAR_DECORATION
+    product: a
+  } = (0, c.T)(null == t ? void 0 : t.id), s = null == a ? void 0 : a.items[0], l = (0, i.EQ)(s).with({
+    type: o.Z.AVATAR_DECORATION
   }, e => (0, r.jsx)(S, {
     avatarDecoration: e
   })).with({
-    type: a.Z.PROFILE_EFFECT
+    type: o.Z.PROFILE_EFFECT
   }, e => (0, r.jsx)(A, {
     id: e.id
   })).with({
-    type: a.Z.NAMEPLATE
+    type: o.Z.NAMEPLATE
   }, e => (0, r.jsx)(N, {
     nameplate: e
   })).otherwise(() => null);

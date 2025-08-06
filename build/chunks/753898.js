@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var i = n(442837),
-  a = n(680018),
-  o = n(374415),
+  o = n(680018),
+  a = n(374415),
   s = n(481060),
   l = n(607070),
   c = n(100527),
@@ -75,7 +75,7 @@ function T(e) {
     userId: null == v ? void 0 : v.id,
     size: s.EFr.SIZE_80,
     animateOnHover: !0
-  }), w = () => {
+  }), R = () => {
     let e = !T && C;
     return n.isMultiUserDM() ? (0, r.jsx)(_.v, {
       channel: n,
@@ -98,15 +98,15 @@ function T(e) {
   return (0, r.jsxs)(g.ZP, I(O({
     channelId: n.id
   }, N), {
-    children: [w(), (0, r.jsx)(g.Ot, {
+    children: [R(), (0, r.jsx)(g.Ot, {
       children: S
     }), (0, r.jsx)(g.jz, {
       children: y
-    }), n.isMultiUserDM() && (0, r.jsxs)(o.h, {
+    }), n.isMultiUserDM() && (0, r.jsxs)(a.h, {
       className: b.buttonContainer,
       children: [(0, r.jsx)(h.l, {
         channel: n
-      }), (0, r.jsx)(a.z, {
+      }), (0, r.jsx)(o.z, {
         icon: s.vdY,
         variant: "secondary",
         text: E.intl.string(E.t["5Q9+/P"]),

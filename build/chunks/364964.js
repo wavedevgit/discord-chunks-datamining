@@ -5,9 +5,9 @@ n.r(t), n.d(t, {
 }), n(388685), n(35282), n(415506), n(704826);
 var r = n(466332),
   i = n(392711),
-  a = n.n(i),
-  o = n(462176);
-r.Z.registerLanguage("ansi", o.Z);
+  o = n.n(i),
+  a = n(462176);
+r.Z.registerLanguage("ansi", a.Z);
 let s = /(<script\/?\\?>)|(html\\?`)/g,
   l = new Set(["html", "xml", "javascript", "typescript", "handlebars"]),
   c = /^[a-z0-9_+\-.#]+$/,
@@ -41,7 +41,7 @@ let _ = {
     isKnownLanguage: e => d.has(e.toLowerCase()),
     resolveLanguageName: f
   },
-  p = a().repeat("/", 15);
+  p = o().repeat("/", 15);
 
 function h(e, t) {
   if (e.indexOf(p) >= 0) return !1;

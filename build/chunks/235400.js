@@ -1,12 +1,12 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  default: () => w
+  default: () => R
 }), n(388685);
 var r = n(255367),
   i = n(73800),
-  a = n(442837),
-  o = n(481060),
+  o = n(442837),
+  a = n(481060),
   s = n(100527),
   l = n(906732),
   c = n(335131),
@@ -33,7 +33,7 @@ function C(e) {
   let {
     user: t,
     categories: n,
-    purchases: a,
+    purchases: o,
     analyticsLocations: l,
     onClose: f,
     initialSelectedDecoration: E,
@@ -41,9 +41,9 @@ function C(e) {
     isTryItOutFlow: T,
     guild: C
   } = e, {
-    pendingAvatarDecoration: w,
-    setPendingAvatarDecoration: R,
-    savedAvatarDecoration: P
+    pendingAvatarDecoration: R,
+    setPendingAvatarDecoration: P,
+    savedAvatarDecoration: w
   } = (0, g.Z)({
     analyticsLocations: l,
     isTryItOut: T,
@@ -51,27 +51,27 @@ function C(e) {
   }), [D, L] = i.useState(() => {
     var e, t;
     if (null != E) return E;
-    let r = (0, u.iC)(a, n);
-    return null != b ? null != (e = r.find(e => e.id === b)) ? e : null : void 0 !== w ? w : null == P ? null : null != (t = r.find(e => (0, O.sr)(e, P))) ? t : null
+    let r = (0, u.iC)(o, n);
+    return null != b ? null != (e = r.find(e => e.id === b)) ? e : null : void 0 !== R ? R : null == w ? null : null != (t = r.find(e => (0, O.sr)(e, w))) ? t : null
   }), {
     product: x,
-    purchase: k
-  } = (0, d.Z)(null == D ? void 0 : D.skuId), j = y.ZP.canUseCollectibles(t), M = i.useRef(null), U = (0, _.Z)(l), G = (0, O.sr)(D, void 0 === w ? P : w), B = e => {
+    purchase: M
+  } = (0, d.Z)(null == D ? void 0 : D.skuId), k = y.ZP.canUseCollectibles(t), j = i.useRef(null), U = (0, _.Z)(l), G = (0, O.sr)(D, void 0 === R ? w : R), B = e => {
     L(e), null != e && U(e)
   }, Z = () => {
-    R(D), f()
+    P(D), f()
   }, F = i.useCallback(e => {
     f(), (0, c.mK)({
       analyticsLocations: l,
       analyticsSource: s.Z.EDIT_AVATAR_DECORATION_MODAL,
       initialProductSkuId: e
     })
-  }, [l, f]), V = (0, p.M)(), H = V && (0, u.G1)(x), Y = () => null != k && (!(0, u.qS)(k) || j) || null === D ? (0, r.jsx)(o.zxk, {
+  }, [l, f]), V = (0, p.M)(), H = V && (0, u.G1)(x), Y = () => null != M && (!(0, u.qS)(M) || k) || null === D ? (0, r.jsx)(a.zxk, {
     variant: "primary",
     text: A.intl.string(A.t.Jh8fJy),
     onClick: Z,
     disabled: G
-  }) : null == k && (j || !(0, u.G1)(x)) ? (0, r.jsx)(o.zxk, {
+  }) : null == M && (k || !(0, u.G1)(x)) ? (0, r.jsx)(a.zxk, {
     variant: "primary",
     onClick: () => F(null == x ? void 0 : x.skuId),
     text: A.intl.string(A.t.fYfGgI)
@@ -83,24 +83,24 @@ function C(e) {
     }
   });
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsxs)(o.xBx, {
+    children: [(0, r.jsxs)(a.xBx, {
       separator: !1,
       className: N.modalHeader,
-      children: [(0, r.jsx)(o.X6q, {
+      children: [(0, r.jsx)(a.X6q, {
         variant: "heading-lg/semibold",
         children: A.intl.string(A.t.HykynZ)
-      }), (0, r.jsx)(o.olH, {
+      }), (0, r.jsx)(a.olH, {
         className: N.modalCloseButton,
         onClick: f
       })]
-    }), (0, r.jsxs)(o.hzk, {
+    }), (0, r.jsxs)(a.hzk, {
       className: N.modalContent,
       scrollbarType: "none",
       children: [(0, r.jsx)(I.Z, {
         user: t,
         guild: C,
         pendingAvatarDecoration: D,
-        selectedAvatarDecorationRef: M,
+        selectedAvatarDecorationRef: j,
         onSelect: B,
         onOpenShop: F
       }), (0, r.jsx)(v.Z, {
@@ -109,12 +109,12 @@ function C(e) {
         guildId: null == C ? void 0 : C.id,
         avatarDecorationOverride: D
       })]
-    }), (0, r.jsxs)(o.mzw, {
+    }), (0, r.jsxs)(a.mzw, {
       className: N.modalFooter,
       children: [Y(), H ? (0, r.jsx)(h.Z, {
         product: x,
         onSecondaryClick: f
-      }) : (0, r.jsx)(o.zxk, {
+      }) : (0, r.jsx)(a.zxk, {
         variant: "secondary",
         text: A.intl.string(A.t["ETE/oK"]),
         onClick: f
@@ -123,7 +123,7 @@ function C(e) {
   })
 }
 
-function w(e) {
+function R(e) {
   let {
     transitionState: t,
     analyticsLocations: n,
@@ -133,7 +133,7 @@ function w(e) {
     initialSelectedDecorationId: _,
     isTryItOutFlow: p,
     guild: h
-  } = e, m = (0, a.e7)([E.default], () => E.default.getCurrentUser()), {
+  } = e, m = (0, o.e7)([E.default], () => E.default.getCurrentUser()), {
     analyticsLocations: g
   } = (0, l.ZP)(n, s.Z.EDIT_AVATAR_DECORATION_MODAL), {
     categories: y,
@@ -152,15 +152,15 @@ function w(e) {
     })
   }, [g]), null == m ? null : (0, r.jsx)(l.Gt, {
     value: g,
-    children: (0, r.jsx)(o.Y0X, {
+    children: (0, r.jsx)(a.Y0X, {
       transitionState: t,
       className: N.modal,
-      size: S ? o.CgR.DYNAMIC : o.CgR.MEDIUM,
+      size: S ? a.CgR.DYNAMIC : a.CgR.MEDIUM,
       parentComponent: "AvatarDecorationModal",
       "data-migration-pending": !0,
-      children: S ? (0, r.jsx)(o.$jN, {
+      children: S ? (0, r.jsx)(a.$jN, {
         className: N.spinner,
-        type: o.$jN.Type.SPINNING_CIRCLE
+        type: a.$jN.Type.SPINNING_CIRCLE
       }) : (0, r.jsx)(C, {
         user: m,
         guild: h,

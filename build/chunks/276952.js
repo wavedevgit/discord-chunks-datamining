@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var i = n(120356),
-  a = n.n(i),
-  o = n(66546),
+  o = n.n(i),
+  a = n(66546),
   s = n(481060),
   l = n(821020),
   c = n(736670),
@@ -50,11 +50,11 @@ function _(e) {
     }),
     E = (0, c.Z)(e => e.isOpen) && g.notificationCenterVariant === l.jP.POPOUT && g.entrypoint === l.u3.TITLE_BAR_LEFT;
   return (0, r.jsx)("div", {
-    className: a()(p, u.wrapper, {
+    className: o()(p, u.wrapper, {
       [u.dimmed]: E
     }),
     "aria-hidden": !0,
-    children: m((e, t) => t && (0, r.jsx)(o.animated.span, {
+    children: m((e, t) => t && (0, r.jsx)(a.animated.span, {
       className: u.item,
       style: e
     }))

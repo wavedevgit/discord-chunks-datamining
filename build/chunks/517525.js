@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(255367),
   i = n(73800),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(66546),
   l = n(468194),
   c = n(442837),
@@ -60,13 +60,13 @@ function C(e, t) {
   return n
 }
 
-function w(e, t) {
+function R(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : C(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let R = (0, l.Mg)(d.Z.LIVE_INDICATOR_BORDER_RADIUS),
-  P = {
+let P = (0, l.Mg)(d.Z.LIVE_INDICATOR_BORDER_RADIUS),
+  w = {
     opacity: 0,
     transform: "translate3d(100%, 0, 0)"
   },
@@ -80,28 +80,28 @@ let R = (0, l.Mg)(d.Z.LIVE_INDICATOR_BORDER_RADIUS),
   x = {
     opacity: 1
   },
+  M = {
+    borderRadius: "".concat(P, "px ").concat(P, "px ").concat(P, "px ").concat(P, "px")
+  },
   k = {
-    borderRadius: "".concat(R, "px ").concat(R, "px ").concat(R, "px ").concat(R, "px")
+    borderRadius: "0px ".concat(P, "px ").concat(P, "px 0px")
   },
   j = {
-    borderRadius: "0px ".concat(R, "px ").concat(R, "px 0px")
-  },
-  M = {
     mass: 1,
     tension: 500,
     friction: 18,
     clamp: !0
   },
   U = e => {
-    let t, a, {
+    let t, o, {
         participant: s,
         isUpsellEnabled: l,
         shape: d,
         size: m,
         didTrackUpsellViewed: A,
         setDidTrackUpsellViewed: C,
-        className: R,
-        premiumIndicator: P,
+        className: P,
+        premiumIndicator: w,
         quality: D
       } = e,
       {
@@ -114,45 +114,45 @@ let R = (0, l.Mg)(d.Z.LIVE_INDICATOR_BORDER_RADIUS),
       t = !1
     }
     try {
-      a = (0, y.tR)(D)
+      o = (0, y.tR)(D)
     } catch (e) {
-      a = !1
+      o = !1
     }
-    let k = t || a,
+    let M = t || o,
       {
-        location: j
+        location: k
       } = (0, _.O)(),
-      M = (0, c.e7)([g.default], () => g.default.getCurrentUser()),
-      U = l && !b.ZP.isPremium(M, I.p9.TIER_1) && !b.ZP.canStreamQuality(b.ZP.StreamQuality.MID, M),
+      j = (0, c.e7)([g.default], () => g.default.getCurrentUser()),
+      U = l && !b.ZP.isPremium(j, I.p9.TIER_1) && !b.ZP.canStreamQuality(b.ZP.StreamQuality.MID, j),
       G = i.useCallback(() => {
-        U && k && (0, f.ZDy)(async () => {
+        U && M && (0, f.ZDy)(async () => {
           let {
             default: e
           } = await n.e("28479").then(n.bind(n, 78865));
-          return t => (0, r.jsx)(e, w(N({}, t), {
-            analyticsSource: j
+          return t => (0, r.jsx)(e, R(N({}, t), {
+            analyticsSource: k
           }))
         })
-      }, [U, k, j]),
-      B = () => x ? T.intl.string(T.t.q8TiVl) : k ? T.intl.string(T.t.IHgpEh) : T.intl.string(T.t.vLb0VV);
+      }, [U, M, k]),
+      B = () => x ? T.intl.string(T.t.q8TiVl) : M ? T.intl.string(T.t.IHgpEh) : T.intl.string(T.t.vLb0VV);
     if (i.useEffect(() => {
-        !A && k && (E.default.track(v.rMx.PREMIUM_UPSELL_VIEWED, {
+        !A && M && (E.default.track(v.rMx.PREMIUM_UPSELL_VIEWED, {
           type: I.cd.STREAM_QUALITY_INDICATOR,
           has_premium_stream_fps: t,
-          has_premium_stream_resolution: a,
+          has_premium_stream_resolution: o,
           location_stack: L
         }), C(!0))
-      }, [t, a, k, A, C, L]), null == D) return null;
+      }, [t, o, M, A, C, L]), null == D) return null;
     let Z = (0, r.jsx)(f.ua7, {
       text: B(),
       position: "bottom",
       color: f.ua7.Colors.GREY,
-      children: e => (0, r.jsxs)(f.P3F, w(N({}, e), {
+      children: e => (0, r.jsxs)(f.P3F, R(N({}, e), {
         onClick: G,
-        className: o()(S.qualityIndicator, m, h.eE[d], x ? S.qualityIndicatorLowQuality : S.qualityIndicatorFullQuality, {
-          [S.clickable]: U && k
+        className: a()(S.qualityIndicator, m, h.eE[d], x ? S.qualityIndicatorLowQuality : S.qualityIndicatorFullQuality, {
+          [S.clickable]: U && M
         }),
-        children: [k ? (0, r.jsx)(f.SrA, {
+        children: [M ? (0, r.jsx)(f.SrA, {
           size: "md",
           color: "currentColor",
           className: S.premiumStreamIcon
@@ -166,8 +166,8 @@ let R = (0, l.Mg)(d.Z.LIVE_INDICATOR_BORDER_RADIUS),
     });
     return (0, r.jsx)(f.IGR, {
       text: Z,
-      className: o()(R, S.qualityIndicatorBadge, {
-        [S.qualityIndicatorBadgePremium]: k && P
+      className: a()(P, S.qualityIndicatorBadge, {
+        [S.qualityIndicatorBadgePremium]: M && w
       }),
       color: u.Z.unsafe_rawColors.PRIMARY_500.css,
       shape: h.eE[d]
@@ -177,7 +177,7 @@ let R = (0, l.Mg)(d.Z.LIVE_INDICATOR_BORDER_RADIUS),
     let {
       participant: t,
       showQuality: n,
-      isUpsellEnabled: a = !0,
+      isUpsellEnabled: o = !0,
       size: l,
       className: c,
       premiumIndicator: u
@@ -191,23 +191,23 @@ let R = (0, l.Mg)(d.Z.LIVE_INDICATOR_BORDER_RADIUS),
     }, [t]);
     let b = (0, f.Yzy)(E, {
         enter: {
-          from: g.enabled ? L : P,
+          from: g.enabled ? L : w,
           to: g.enabled ? x : D
         },
-        leave: g.enabled ? L : P,
-        config: M
+        leave: g.enabled ? L : w,
+        config: j
       }, "animate-always"),
       O = (0, f.q_F)({
-        to: E ? j : k,
-        config: M
+        to: E ? k : M,
+        config: j
       }, "animate-always");
     return (e => {
       let {
         className: n,
         popoutProps: i
       } = e;
-      return (0, r.jsxs)("div", w(N({
-        className: o()(S.streamQualityIndicator, n)
+      return (0, r.jsxs)("div", R(N({
+        className: a()(S.streamQualityIndicator, n)
       }, i), {
         children: [b((e, n) => n ? (0, r.jsx)(s.animated.div, {
           style: e,
@@ -216,7 +216,7 @@ let R = (0, l.Mg)(d.Z.LIVE_INDICATOR_BORDER_RADIUS),
             participant: t,
             size: l,
             shape: f.Dv2.ROUND_LEFT,
-            isUpsellEnabled: a,
+            isUpsellEnabled: o,
             didTrackUpsellViewed: d,
             setDidTrackUpsellViewed: _,
             premiumIndicator: u,

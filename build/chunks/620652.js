@@ -6,8 +6,8 @@ n.d(t, {
 });
 var r = n(255367),
   i = n(73800),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(500923),
   l = n.n(s),
   c = n(570140),
@@ -31,7 +31,7 @@ function g(e) {
   let {
     className: t,
     effect: n,
-    onComplete: a,
+    onComplete: o,
     emojiSize: s = 20
   } = e, d = i.useRef(null), _ = s * f.Vz, h = (_ + s) / 2, g = "translateY(".concat(h, "px)");
   return i.useEffect(() => {
@@ -48,7 +48,7 @@ function g(e) {
           autoplay: !0,
           animationData: t
         })).addEventListener("complete", () => {
-          null == a || a(), e.destroy()
+          null == o || o(), e.destroy()
         }), null != n.channelId && null != n.messageId && null != n.emoji && n.key === u.I.HOVER && c.Z.dispatch({
           type: "BURST_REACTION_ANIMATION_ADD",
           channelId: n.channelId,
@@ -60,10 +60,10 @@ function g(e) {
     }(), () => {
       null != e && e.destroy()
     }
-  }, [a, n, s]), (0, r.jsx)("div", {
+  }, [o, n, s]), (0, r.jsx)("div", {
     className: p.effectsWrapper,
     children: (0, r.jsx)("div", {
-      className: o()(p.effect, t),
+      className: a()(p.effect, t),
       style: {
         transform: g,
         height: _,

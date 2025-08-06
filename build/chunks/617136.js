@@ -2,20 +2,20 @@
 "use strict";
 n.d(t, {
   Ic: () => x,
-  O5: () => j,
-  Zk: () => M,
+  O5: () => k,
+  Zk: () => j,
   _3: () => L,
-  _F: () => k,
+  _F: () => M,
   _b: () => N,
-  dA: () => P,
+  dA: () => w,
   jZ: () => D,
-  mH: () => R,
+  mH: () => P,
   uk: () => C
 }), n(388685);
 var r = n(73800),
   i = n(772848),
-  a = n(516796),
-  o = n(930446),
+  o = n(516796),
+  a = n(930446),
   s = n(367907),
   l = n(186102),
   c = n(857192),
@@ -82,18 +82,18 @@ function C(e) {
   return (null == (t = e.userStatus) ? void 0 : t.claimedAt) != null ? "COMPLETED_CLAIMED" : (null == (n = e.userStatus) ? void 0 : n.completedAt) != null ? "COMPLETED" : (null == (r = e.userStatus) ? void 0 : r.enrolledAt) != null ? "ENROLLED" : "NONE"
 }
 
-function w(e, t, n) {
+function R(e, t, n) {
   let r = E.r.build(e.config);
   return v({
     quest_id: e.id,
     quest_type: r.questType,
     game_id: r.application.id,
     game_name: r.application.name,
-    client_ad_session_id: (0, o.Gy)(n).uuid
+    client_ad_session_id: (0, a.Gy)(n).uuid
   }, (0, p.qe)(e.id, t))
 }
 
-function R(e, t, n) {
+function P(e, t, n) {
   return {
     content_id: e,
     content_name: N(e),
@@ -102,19 +102,19 @@ function R(e, t, n) {
   }
 }
 
-function P(e) {
+function w(e) {
   let {
     questId: t,
     event: n,
     properties: r,
     trackGuildAndChannelMetadata: i,
-    shouldExtendSession: a = !1,
-    sourceQuestContent: o
+    shouldExtendSession: o = !1,
+    sourceQuestContent: a
   } = e, l = h.Z.quests.get(t);
   if (null == l || (0, g.X7)({
       location: b.dr.QUEST_PREVIEW_TOOL
     }) && u.Z.getLayers().includes(y.S9g.USER_SETTINGS)) return;
-  let f = v({}, w(l, o, a), r);
+  let f = v({}, R(l, a, o), r);
   if (c.default.isLoggingAnalyticsEvents && console.info("[Quest] AnalyticsUtils.track", n, f), l.preview) return;
   let _ = A.has(n);
   if (i) return s.ZP.trackWithMetadata(n, f, _);
@@ -130,16 +130,16 @@ async function L(e) {
     questId: t,
     questContent: n,
     questContentCTA: r,
-    questContentPosition: o,
+    questContentPosition: a,
     questContentRowIndex: s,
     impressionId: c,
     trackGuildAndChannelMetadata: u = !1,
     sourceQuestContent: d
-  } = e, _ = h.Z.getQuest(t), m = await (0, a.S)();
-  P({
+  } = e, _ = h.Z.getQuest(t), m = await (0, o.S)();
+  w({
     questId: t,
     event: y.rMx.QUEST_CONTENT_CLICKED,
-    properties: T(v({}, R(n, o, s), (0, l.Z)()), {
+    properties: T(v({}, P(n, a, s), (0, l.Z)()), {
       cta_name: r,
       quest_status: null != _ ? C(_) : null,
       impression_id: c,
@@ -158,25 +158,25 @@ function x(e) {
     sourceQuestContent: n,
     questId: r,
     mode: i,
-    prevMode: a
-  } = e, o = R(t);
-  P({
+    prevMode: o
+  } = e, a = P(t);
+  w({
     questId: r,
     event: y.rMx.QUEST_BAR_MODE_CHANGED,
     properties: {
-      content_id: o.content_id,
-      content_name: o.content_name,
+      content_id: a.content_id,
+      content_name: a.content_name,
       mode: i,
-      previous_mode: a
+      previous_mode: o
     },
     sourceQuestContent: n
   })
 }
 
-function k() {
+function M() {
   let e = (0, _.WD)();
   return r.useCallback(t => {
-    P(T(v({}, t), {
+    w(T(v({}, t), {
       properties: T(v({}, t.properties), {
         impression_id: null == e ? void 0 : e.getId()
       })
@@ -184,24 +184,24 @@ function k() {
   }, [e])
 }
 
-function j() {
-  let e = k();
+function k() {
+  let e = M();
   return r.useCallback(t => {
     let {
       questId: n,
       questContent: r,
-      questContentCTA: o,
+      questContentCTA: a,
       questContentPosition: s,
       questContentRowIndex: c,
       trackGuildAndChannelMetadata: u = !1,
       sourceQuestContent: d
     } = t, _ = h.Z.getQuest(n);
-    (0, a.S)().then(t => {
+    (0, o.S)().then(t => {
       e({
         questId: n,
         event: y.rMx.QUEST_CONTENT_CLICKED,
-        properties: T(v({}, R(r, s, c), (0, l.Z)()), {
-          cta_name: o,
+        properties: T(v({}, P(r, s, c), (0, l.Z)()), {
+          cta_name: a,
           quest_status: null != _ ? C(_) : null,
           click_id: (0, i.Z)(),
           android_advertising_id: null != t && (0, f.isAndroid)() ? t.advertisingId : null
@@ -214,7 +214,7 @@ function j() {
   }, [e])
 }
 
-function M(e, t) {
+function j(e, t) {
   r.useEffect(() => {
     U(t, e)
   }, [e, t])

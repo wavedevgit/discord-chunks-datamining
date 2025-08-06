@@ -1,6 +1,6 @@
 /** Chunk was on 49152 **/
 n.d(t, {
-  Z: () => _
+  Z: () => y
 }), n(784620), n(973216);
 var r = n(255367),
   i = n(73800),
@@ -9,8 +9,8 @@ var r = n(255367),
   s = n(481060),
   o = n(332148),
   c = n(493773),
-  d = n(198620),
-  u = n(210887),
+  u = n(198620),
+  d = n(210887),
   h = n(624453),
   p = n(306680),
   f = n(494404),
@@ -18,12 +18,12 @@ var r = n(255367),
   m = n(388032);
 let b = [];
 
-function _(e) {
+function y(e) {
   let {
     channel: t,
-    onJump: _
+    onJump: y
   } = e, {
-    items: y,
+    items: x,
     state: j
   } = (0, l.cj)([h.Z], () => {
     var e, n;
@@ -32,11 +32,11 @@ function _(e) {
       items: null != (e = null == r ? void 0 : r.items) ? e : b,
       state: null != (n = null == r ? void 0 : r.state) ? n : h.M.LOADING
     }
-  }), O = i.useMemo(() => y.map(e => e.message), [y]), x = (0, l.e7)([p.ZP], () => p.ZP.hasUnreadPins(t.id));
+  }), _ = i.useMemo(() => x.map(e => e.message), [x]), O = (0, l.e7)([p.ZP], () => p.ZP.hasUnreadPins(t.id));
   i.useEffect(() => {
-    x && o.Z.ackPins(t.id)
-  }, [x, t.id]), (0, c.ZP)(() => {
-    O.some(d.k5) && o.Z.fetchPins(t.id, {
+    O && o.Z.ackPins(t.id)
+  }, [O, t.id]), (0, c.ZP)(() => {
+    _.some(u.k5) && o.Z.fetchPins(t.id, {
       reset: !0
     })
   });
@@ -46,21 +46,21 @@ function _(e) {
     C = i.useCallback(() => {
       var e;
       o.Z.fetchPins(t.id, {
-        before: null == (e = y.at(-1)) ? void 0 : e.pinnedAt
+        before: null == (e = x.at(-1)) ? void 0 : e.pinnedAt
       })
-    }, [t.id, y]),
-    E = (0, l.e7)([u.Z], () => (0, a.ap)(u.Z.theme));
+    }, [t.id, x]),
+    E = (0, l.e7)([d.Z], () => (0, a.ap)(d.Z.theme));
   return (0, r.jsx)(s.VqE, {
     "aria-label": m.intl.string(m.t["mp1N//"]),
     children: (0, r.jsx)(f.ZP, {
       channel: t,
       onFetch: v,
-      messages: O,
+      messages: _,
       loading: j === h.M.LOADING,
       hasMore: j === h.M.LOADED_HAS_MORE,
       analyticsName: "Channel Pins",
       renderEmptyState: function() {
-        if (y.length > 0) return;
+        if (x.length > 0) return;
         let e = m.intl.string(t.isPrivate() ? m.t.rhqcbG : m.t.fmyaWF),
           i = E ? n(306059) : n(281485);
         return (0, r.jsx)(f.nH, {
@@ -75,7 +75,7 @@ function _(e) {
       onCloseMessage: function(e, n) {
         null != e && (n.shiftKey ? o.Z.unpinMessage(t, e.id) : g.Z.confirmUnpin(t, e))
       },
-      onJump: _,
+      onJump: y,
       loadMore: C,
       getProTip: function() {
         return t.isPrivate() ? m.intl.string(m.t["3dLGAg"]) : m.intl.string(m.t.KTbRcn)

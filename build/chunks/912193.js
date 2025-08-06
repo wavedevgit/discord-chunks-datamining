@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var i = n(481060),
-  a = n(846027),
-  o = n(468026),
+  o = n(846027),
+  a = n(468026),
   s = n(388032);
 
 function l(e, t, n) {
@@ -38,11 +38,11 @@ function d() {
 }
 
 function f() {
-  a.Z.setSilenceWarning(!1)
+  o.Z.setSilenceWarning(!1)
 }
 
 function _() {
-  u = (0, i.h7j)(e => (0, r.jsx)(o.default, c({
+  u = (0, i.h7j)(e => (0, r.jsx)(a.default, c({
     title: s.intl.string(s.t["zQ1+Jy"]),
     body: s.intl.string(s.t.K1gWXl),
     secondaryConfirmText: s.intl.string(s.t.XAiAgI),

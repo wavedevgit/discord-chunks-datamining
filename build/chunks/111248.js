@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(255367),
   i = n(73800),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(442837),
   l = n(433517),
   c = n(519938),
@@ -40,11 +40,11 @@ function I(e) {
   let {
     width: t,
     onContextMenuParticipant: n,
-    height: a,
+    height: o,
     channel: l,
     participants: _,
     onSelectParticipant: g
-  } = e, [b, I] = y(), T = i.useRef(null), S = null == l.getGuildId() ? 70 : 50, A = (0, s.e7)([d.Z], () => d.Z.pipWidth(p.cL.CAMERA_PREVIEW)), N = _.length, C = O(A, N), w = i.useMemo(() => ({
+  } = e, [b, I] = y(), T = i.useRef(null), S = null == l.getGuildId() ? 70 : 50, A = (0, s.e7)([d.Z], () => d.Z.pipWidth(p.cL.CAMERA_PREVIEW)), N = _.length, C = O(A, N), R = i.useMemo(() => ({
     minWidth: O(p.Rv[p.cL.CAMERA_PREVIEW], N),
     maxWidth: O(p.$i[p.cL.CAMERA_PREVIEW], N)
   }), [N]);
@@ -52,11 +52,11 @@ function I(e) {
     var e;
     null == (e = T.current) || e.ensureIsInPosition()
   }, [_.length]);
-  let R = i.useCallback(e => {
+  let P = i.useCallback(e => {
       let t = v(e, N);
       c.d7(t, p.cL.CAMERA_PREVIEW)
     }, [N]),
-    P = i.useCallback((e, t) => {
+    w = i.useCallback((e, t) => {
       I(t)
     }, [I]);
   return (0, r.jsx)("div", {
@@ -66,22 +66,22 @@ function I(e) {
       id: 0,
       width: C,
       ref: T,
-      onMove: P,
-      onResize: R,
+      onMove: w,
+      onResize: P,
       maxX: t,
-      maxY: a,
+      maxY: o,
       edgeOffsetTop: S,
       edgeOffsetBottom: 70,
       edgeOffsetLeft: 16,
       edgeOffsetRight: 16,
-      resizeConfig: w,
+      resizeConfig: R,
       children: (0, r.jsx)("div", {
         className: h.tileContainer,
         children: _.map(e => (0, r.jsx)(f.ZP, {
           participant: e,
           channel: l,
           onContextMenu: n,
-          className: o()(h.tile, m.elevationHigh),
+          className: a()(h.tile, m.elevationHigh),
           fit: f.BP.COVER,
           inCall: !0,
           inPopout: !1,

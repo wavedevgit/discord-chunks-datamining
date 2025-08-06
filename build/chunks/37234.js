@@ -1,9 +1,9 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Ou: () => o,
+  Ou: () => a,
   jN: () => i,
-  xf: () => a
+  xf: () => o
 });
 var r = n(570140);
 
@@ -14,13 +14,13 @@ function i(e) {
   })
 }
 
-function a() {
+function o() {
   r.Z.dispatch({
     type: "LAYER_POP"
   })
 }
 
-function o() {
+function a() {
   r.Z.dispatch({
     type: "LAYER_POP_ALL"
   })

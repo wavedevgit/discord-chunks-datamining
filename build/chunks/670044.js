@@ -1,12 +1,12 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => a
+  Z: () => o
 });
 var r = n(990547),
   i = n(213609);
 
-function a(e) {
+function o(e) {
   return (0, i.Z)({
     type: r.ImpressionTypes.VIEW,
     name: r.ImpressionNames.NOTIFICATION_SETTING_UNREAD_NUDGE

@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(255367),
   i = n(73800),
-  a = n(392711),
-  o = n(780384),
+  o = n(392711),
+  a = n(780384),
   s = n(481060),
   l = n(410030),
   c = n(220082),
@@ -19,7 +19,7 @@ var r = n(255367),
 let m = 20;
 
 function g(e, t, n) {
-  return t === n ? 1 : (0, a.clamp)((e - t) / (n - t), 0, 1)
+  return t === n ? 1 : (0, o.clamp)((e - t) / (n - t), 0, 1)
 }
 
 function E(e, t, n) {
@@ -41,32 +41,32 @@ function y(e) {
     iconURL: O,
     scrollerRef: v,
     sectionName: I
-  } = e, T = (0, o.ap)((0, l.ZP)()), S = i.useRef(null), A = i.useRef(null), N = i.useRef(null), C = i.useRef(null), w = (0, s.dQu)(s.TVs.colors.BACKGROUND_BASE_LOW).hex(), R = (0, c.ZP)("number" == typeof O ? "" : O, null != w ? w : ""), P = i.useMemo(() => {
+  } = e, T = (0, a.ap)((0, l.ZP)()), S = i.useRef(null), A = i.useRef(null), N = i.useRef(null), C = i.useRef(null), R = (0, s.dQu)(s.TVs.colors.BACKGROUND_BASE_LOW).hex(), P = (0, c.ZP)("number" == typeof O ? "" : O, null != R ? R : ""), w = i.useMemo(() => {
     var e, t;
-    let n = (0, a.compact)([u.Z.parseHexString(R), u.Z.parseHexString(T ? "#000000" : "#ffffff")]);
+    let n = (0, o.compact)([u.Z.parseHexString(P), u.Z.parseHexString(T ? "#000000" : "#ffffff")]);
     return null != (t = null == (e = (0, d.k8)({
       colors: n,
       ratio: 5,
       saturationFactor: .6
-    })) ? void 0 : e.toHexString()) ? t : R
-  }, [R, T]), D = b(S), L = b(A), x = i.useCallback(() => {
+    })) ? void 0 : e.toHexString()) ? t : P
+  }, [P, T]), D = b(S), L = b(A), x = i.useCallback(() => {
     var e, t, n;
     let r = v.current,
       i = S.current,
-      o = N.current,
+      a = N.current,
       s = null == C ? void 0 : C.current,
       l = parseInt(null != (e = null == D ? void 0 : D.height) ? e : ""),
       c = parseInt(null != (t = null == L ? void 0 : L.height) ? t : "");
-    if (null != r && null != i && null != o && !isNaN(l) && !isNaN(c)) {
+    if (null != r && null != i && null != a && !isNaN(l) && !isNaN(c)) {
       let e = null != (n = r.scrollTop) ? n : 0,
         t = 0 !== r.scrollHeight ? r.scrollHeight : c + m,
         u = 0 !== r.clientHeight ? r.clientHeight : c + m,
         d = c - l,
-        f = (0, a.clamp)(t - u, d + 1, c + m),
+        f = (0, o.clamp)(t - u, d + 1, c + m),
         _ = g(e, d, f);
-      i.style.filter = "brightness(".concat(E(1, T ? 1.4 : .6, _), ")"), i.style.backgroundColor = "color-mix(in oklab,".concat(R, " ").concat((1 - _) * 100, "%, ").concat(P, ")"), o.style.opacity = "".concat(E(0, 1, _)), o.style.transform = "translateY(".concat(E(l / 4, 0, _), "px)"), null != s && (s.style.opacity = "".concat(E(1, 0, _)))
+      i.style.filter = "brightness(".concat(E(1, T ? 1.4 : .6, _), ")"), i.style.backgroundColor = "color-mix(in oklab,".concat(P, " ").concat((1 - _) * 100, "%, ").concat(w, ")"), a.style.opacity = "".concat(E(0, 1, _)), a.style.transform = "translateY(".concat(E(l / 4, 0, _), "px)"), null != s && (s.style.opacity = "".concat(E(1, 0, _)))
     }
-  }, [P, R, null == L ? void 0 : L.height, T, v, null == D ? void 0 : D.height]);
+  }, [w, P, null == L ? void 0 : L.height, T, v, null == D ? void 0 : D.height]);
   return i.useEffect(() => {
     x()
   }, [x, T]), i.useEffect(() => {
@@ -113,7 +113,7 @@ function y(e) {
       ref: A,
       className: h.bannerBackground,
       style: {
-        backgroundColor: R
+        backgroundColor: P
       }
     })]
   })

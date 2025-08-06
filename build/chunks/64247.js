@@ -1,6 +1,6 @@
 /** Chunk was on 49152 **/
 n.d(t, {
-  Z: () => d
+  Z: () => u
 });
 var r = n(255367);
 n(73800);
@@ -11,19 +11,19 @@ var i = n(481060),
   o = n(723170),
   c = n(124368);
 
-function d(e) {
+function u(e) {
   let {
     channel: t,
     closePopout: n,
-    onSelect: d,
-    navId: u,
+    onSelect: u,
+    navId: d,
     label: h
   } = e, p = (0, l.Z)(t, "Notifications Bell"), f = (0, a.Z)(t), g = (0, o.B)(t);
   return (0, r.jsxs)(i.v2r, {
-    navId: u,
+    navId: d,
     onClose: n,
     "aria-label": h,
-    onSelect: d,
+    onSelect: u,
     children: [(0, r.jsxs)(i.kSQ, {
       children: [t.isForumPost() ? p : null, f]
     }), (0, r.jsx)(i.kSQ, {

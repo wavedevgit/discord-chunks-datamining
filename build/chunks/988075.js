@@ -5,8 +5,8 @@ n.d(t, {
 }), n(35282), n(388685);
 var r = n(255367),
   i = n(73800),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(442837),
   l = n(40330),
   c = n(95398),
@@ -20,7 +20,7 @@ function h(e) {
   let {
     file: t,
     name: n,
-    size: a,
+    size: o,
     spoiler: h
   } = e, m = (0, s.e7)([f.Z], () => f.Z.getChannelId()), g = i.useMemo(() => null != t.contentType && -1 !== t.contentType.indexOf("/") ? t.contentType.split("/") : ["unknown", "unknown"], [t.contentType]), [E, b] = i.useState(h), y = i.useMemo(() => () => (0, r.jsx)(d.mz, {
     mimeType: g,
@@ -30,12 +30,12 @@ function h(e) {
     isVisualMediaType: !1,
     channelId: m
   }), [t, g, m]), O = e => (0, r.jsx)(l.Z, {
-    className: o()({
+    className: a()({
       [p.fileHidden]: e
     }),
     url: t.url,
     fileName: null != n ? n : _.intl.string(_.t.GnuJ5u),
-    fileSize: null != a ? a : 0,
+    fileSize: null != o ? o : 0,
     renderAdjacentContent: y
   });
   return (0, r.jsx)("div", {

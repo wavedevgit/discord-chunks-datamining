@@ -5,8 +5,8 @@ n.d(t, {
 }), n(539854);
 var r = n(73800),
   i = n(846519),
-  a = n(692547),
-  o = n(481060),
+  o = n(692547),
+  a = n(481060),
   s = n(220082),
   l = n(979651),
   c = n(125268),
@@ -24,8 +24,8 @@ function g(e) {
     context: n,
     canvasWidth: r,
     canvasHeight: i,
-    fallbackColor: a,
-    outlineColorDark: o,
+    fallbackColor: o,
+    outlineColorDark: a,
     outlineColorLight: s,
     linesDrawnAt: l,
     streamerId: c,
@@ -38,8 +38,8 @@ function g(e) {
         context: n,
         canvasWidth: r,
         canvasHeight: i,
-        fallbackColor: a,
-        outlineColorDark: o,
+        fallbackColor: o,
+        outlineColorDark: a,
         outlineColorLight: s,
         linesDrawnAt: l,
         deadDrawables: u
@@ -50,8 +50,8 @@ function g(e) {
         context: n,
         canvasWidth: r,
         canvasHeight: i,
-        fallbackColor: a,
-        outlineColorDark: o,
+        fallbackColor: o,
+        outlineColorDark: a,
         outlineColorLight: s,
         streamerId: c,
         deadDrawables: u
@@ -65,8 +65,8 @@ function E(e) {
     drawables: n,
     fallbackColor: r,
     linesDrawnAt: i,
-    streamerId: a,
-    channelId: o,
+    streamerId: o,
+    channelId: a,
     outlineColorDark: s,
     outlineColorLight: u
   } = e;
@@ -80,7 +80,7 @@ function E(e) {
     height: p
   } = d.getBoundingClientRect(), h = [];
   n.forEach(e => {
-    if (null == l.Z.getVoiceStateForChannel(o, e.userId)) return void h.push(e);
+    if (null == l.Z.getVoiceStateForChannel(a, e.userId)) return void h.push(e);
     g({
       drawable: e,
       context: f,
@@ -91,15 +91,15 @@ function E(e) {
       outlineColorLight: u,
       linesDrawnAt: i,
       deadDrawables: h,
-      streamerId: a
+      streamerId: o
     })
-  }), h.length > 0 && (0, c.fW)(h, a)
+  }), h.length > 0 && (0, c.fW)(h, o)
 }
 
 function b(e, t, n, l) {
-  let c = (0, o.dQu)(a.Z.unsafe_rawColors.BRAND_500).hex(),
-    d = (0, o.dQu)(a.Z.unsafe_rawColors.BLACK_500).hex(),
-    p = (0, o.dQu)(a.Z.unsafe_rawColors.WHITE_500).hex(),
+  let c = (0, a.dQu)(o.Z.unsafe_rawColors.BRAND_500).hex(),
+    d = (0, a.dQu)(o.Z.unsafe_rawColors.BLACK_500).hex(),
+    p = (0, a.dQu)(o.Z.unsafe_rawColors.WHITE_500).hex(),
     g = r.useRef({}),
     b = r.useRef(new i.Xp),
     y = r.useCallback(t => {

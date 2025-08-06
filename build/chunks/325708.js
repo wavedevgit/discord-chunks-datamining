@@ -6,8 +6,8 @@ n.d(t, {
 }), n(388685);
 var r = n(255367),
   i = n(73800),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(392711),
   l = n(692547),
   c = n(481060),
@@ -42,11 +42,11 @@ function g(e) {
     resizableNode: t,
     onResize: n,
     onResizeEnd: i,
-    maxWidth: a,
-    minWidth: o
+    maxWidth: o,
+    minWidth: a
   } = e, s = (0, d.Z)({
-    minDimension: o,
-    maxDimension: a,
+    minDimension: a,
+    maxDimension: o,
     resizableDomNodeRef: t,
     onElementResize: n,
     onElementResizeEnd: i,
@@ -63,7 +63,7 @@ function E(e) {
   let {
     sidebarType: t,
     maxWidth: n,
-    onWidthChange: a,
+    onWidthChange: o,
     children: d,
     floatingLayer: h
   } = e, E = i.useRef(null), b = m(t), [y, O] = i.useState(f.ZP[b]), v = i.useCallback(e => {
@@ -75,8 +75,8 @@ function E(e) {
     minWidth: I
   }), S = (0, c.dQu)(l.Z.modules.chat.RESIZE_HANDLE_WIDTH), A = (0, s.clamp)(y, I, n), N = T ? A : A + S;
   i.useEffect(() => {
-    null == a || a(A, T)
-  }, [A, a, T]);
+    null == o || o(A, T)
+  }, [A, o, T]);
   let C = null != h ? h : i.Fragment;
   return (0, r.jsxs)(r.Fragment, {
     children: [!T && (0, r.jsx)("div", {
@@ -85,11 +85,11 @@ function E(e) {
       }
     }), (0, r.jsx)(C, {
       children: (0, r.jsxs)("div", {
-        className: o()(p.chatLayerWrapper, {
+        className: a()(p.chatLayerWrapper, {
           [p.hidden]: !1
         }),
         children: [(0, r.jsx)("div", {
-          className: o()(p.chatTarget, {
+          className: a()(p.chatTarget, {
             [p.floating]: T,
             [p.notFloating]: !T
           }),
@@ -104,7 +104,7 @@ function E(e) {
           onResizeEnd: v
         }), (0, r.jsx)("div", {
           ref: E,
-          className: o()(p.container, {
+          className: a()(p.container, {
             [p.floating]: T
           }),
           style: {

@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var i = n(442837),
-  a = n(468363),
-  o = n(158776),
+  o = n(468363),
+  a = n(158776),
   s = n(885110),
   l = n(369566),
   c = n(29899),
@@ -32,12 +32,12 @@ function p(e) {
   } = (0, c.Z)({
     userId: t.id,
     guildId: h
-  }), v = t.id === n.id, I = (0, i.e7)([s.Z, o.Z], () => {
-    let e = v ? s.Z.getStatus() : o.Z.getStatus(t.id, h);
+  }), v = t.id === n.id, I = (0, i.e7)([s.Z, a.Z], () => {
+    let e = v ? s.Z.getStatus() : a.Z.getStatus(t.id, h);
     return e === _.Sk.OFFLINE || e === _.Sk.INVISIBLE
   }), {
     voiceActivityStatusEnabled: T
-  } = (0, a.U)({
+  } = (0, o.U)({
     location: "UserProfileFeaturedActivity"
   });
   return I || null == b ? I || null == y ? T && !I && null != O ? (0, r.jsx)(f.Z, {

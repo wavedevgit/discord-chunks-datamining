@@ -1,15 +1,15 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => o
+  Z: () => a
 }), n(997841);
 var r = n(630388),
   i = n(620662),
-  a = n(981631);
+  o = n(981631);
 
-function o(e, t, n, o, s) {
+function a(e, t, n, a, s) {
   let l = null == t ? void 0 : t.application_id;
-  if (null == e || null == t || !(0, i.Z)(t, a.xjy.JOIN) || null == l) return !1;
-  let c = o.getApplication(l);
-  return !(null == c || (0, r.yE)(c.flags, a.udG.EMBEDDED) || e.isPrivate() && s.isBlockedOrIgnored(e.getRecipientId())) && n.shouldShowEducation(l)
+  if (null == e || null == t || !(0, i.Z)(t, o.xjy.JOIN) || null == l) return !1;
+  let c = a.getApplication(l);
+  return !(null == c || (0, r.yE)(c.flags, o.udG.EMBEDDED) || e.isPrivate() && s.isBlockedOrIgnored(e.getRecipientId())) && n.shouldShowEducation(l)
 }

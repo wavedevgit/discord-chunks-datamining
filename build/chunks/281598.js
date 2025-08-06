@@ -6,16 +6,16 @@ n.d(t, {
   Eo: () => m,
   Kj: () => _,
   Kr: () => b,
-  LY: () => w,
+  LY: () => R,
   XA: () => g,
   aB: () => f,
-  hm: () => R,
+  hm: () => P,
   jE: () => d
 }), n(388685), n(539854), n(472816), n(794429), n(642613);
 var r = n(73800),
   i = n(481060),
-  a = n(406432),
-  o = n(619899);
+  o = n(406432),
+  a = n(619899);
 
 function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -107,7 +107,7 @@ let m = e => {
     for (let n of e) E(n, t)
   },
   y = (e, t) => "".concat(e, "/").concat(t),
-  O = e => (0, a.tw)(e.type) || (0, a.X2)(e.type),
+  O = e => (0, o.tw)(e.type) || (0, o.X2)(e.type),
   v = e => {
     var t;
     return null != (t = _[e.name]) ? t : null
@@ -137,8 +137,8 @@ let m = e => {
     for (let i of (await new Promise(e => r.readEntries(e))))
       if (i.isFile) {
         let r = i,
-          a = await new Promise(e => r.file(e));
-        S(e.name, a, t, n)
+          o = await new Promise(e => r.file(e));
+        S(e.name, o, t, n)
       } else {
         let e = await I(i);
         n.ignoredFilenames.push(...e.map(e => y(i.name, e.name)))
@@ -163,7 +163,7 @@ let m = e => {
           t.ignoredFilenames.push(...e.map(e => y(n.name, e.name)))
         }
       }
-  }, w = async e => {
+  }, R = async e => {
     let t = {
       collectionFiles: [],
       avatarDecorationFiles: [],
@@ -180,7 +180,7 @@ let m = e => {
       S("", await new Promise(t => e.file(t)), null, t)
     }
     return t.collectionFiles.sort((e, t) => e.name.localeCompare(t.name)), t.avatarDecorationFiles.sort((e, t) => e.name.localeCompare(t.name)), t.ignoredFilenames.sort((e, t) => e.localeCompare(t)), t
-  }, R = () => {
+  }, P = () => {
     let [e, t] = r.useState(() => ({
       collectionFiles: [],
       avatarDecorationFiles: [],
@@ -189,8 +189,8 @@ let m = e => {
     })), {
       upsertCollectionAsset: n,
       upsertAvatarDecorationAsset: i
-    } = (0, o.N9)(), a = r.useCallback(async e => {
-      let r = await w(e);
+    } = (0, a.N9)(), o = r.useCallback(async e => {
+      let r = await R(e);
       t(r), (0 !== r.collectionFiles.length || 0 !== r.avatarDecorationFiles.length) && (r.collectionFiles.forEach(e => {
         E(e, e => {
           let t = v(e);
@@ -216,6 +216,6 @@ let m = e => {
       ignoredFilenames: e.ignoredFilenames,
       clearAssets: s,
       clearIgnoredFilenames: c,
-      processAndUpsertAssets: a
+      processAndUpsertAssets: o
     }
   }

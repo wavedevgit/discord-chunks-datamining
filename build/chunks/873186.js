@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(818083),
   i = n(427164),
-  a = n(480218);
-let o = (0, r.B)({
+  o = n(480218);
+let a = (0, r.B)({
     kind: "user",
     id: "2025-07_resumable_attachment_uploads",
     label: "Resumable attachment uploads",
@@ -48,14 +48,14 @@ function l(e) {
     location: t
   } = e, {
     isInHoldout: n
-  } = a._.getCurrentConfig({
+  } = o._.getCurrentConfig({
     location: t
   }, {
     autoTrackExposure: !0
   });
   return n || s.getConfig({
     location: t
-  }), o.getCurrentConfig({
+  }), a.getCurrentConfig({
     location: t
   }, {
     disable: n,

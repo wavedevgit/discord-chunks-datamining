@@ -6,8 +6,8 @@ n.d(t, {
 }), n(583741);
 var r = n(255367),
   i = n(73800),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(442837),
   l = n(481060),
   c = n(518950),
@@ -42,7 +42,7 @@ function m(e) {
   let {
     smallerText: t,
     className: n,
-    textColor: a,
+    textColor: o,
     isApplicationHome: c,
     enablePremiumBrandRefresh: p
   } = e, h = (0, s.e7)([u.Z], () => u.Z.affinities.slice(0, 3).reverse()), m = h.map((e, t) => (0, r.jsx)(g, {
@@ -62,20 +62,20 @@ function m(e) {
   function y() {
     return p ? (0, r.jsx)(l.Text, {
       variant: "text-sm/medium",
-      color: a,
+      color: o,
       children: b
     }) : t || c ? (0, r.jsx)(l.Text, {
       variant: c ? "text-sm/normal" : "text-lg/medium",
-      color: a,
+      color: o,
       children: b
     }) : (0, r.jsx)(l.X6q, {
       variant: "heading-xl/medium",
-      color: a,
+      color: o,
       children: b
     })
   }
   return (0, r.jsxs)("div", {
-    className: o()(p ? _.premiumBrandRefreshContainer : _.container, n, {
+    className: a()(p ? _.premiumBrandRefreshContainer : _.container, n, {
       [_.v2Container]: !p && c
     }),
     children: [(0, r.jsx)("div", {
@@ -94,7 +94,7 @@ function g(e) {
     applyMask: n,
     size: i
   } = e, {
-    avatarSrc: a,
+    avatarSrc: o,
     eventHandlers: s
   } = (0, c.Z)({
     userId: null == t ? void 0 : t.id,
@@ -102,10 +102,10 @@ function g(e) {
     animateOnHover: !0
   });
   return (0, r.jsx)(l.qEK, h({
-    className: o()(_.icon, {
+    className: a()(_.icon, {
       [_.mask]: n
     }),
-    src: a,
+    src: o,
     "aria-label": t.username,
     size: i
   }, s))

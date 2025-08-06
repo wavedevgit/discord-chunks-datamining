@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var i = n(442837),
-  a = n(481060),
-  o = n(565138),
+  o = n(481060),
+  a = n(565138),
   s = n(246364),
   l = n(602606),
   c = n(705563),
@@ -28,17 +28,17 @@ function p(e) {
       className: _.summaryHeader,
       children: [null != l && (0, r.jsxs)("div", {
         className: _.summaryHeaderClanInfo,
-        children: [(0, r.jsx)(o.Z, {
+        children: [(0, r.jsx)(a.Z, {
           guild: l,
           active: !0,
-          size: o.Z.Sizes.SMOL,
+          size: a.Z.Sizes.SMOL,
           className: _.guildIcon
-        }), (0, r.jsx)(a.X6q, {
+        }), (0, r.jsx)(o.X6q, {
           variant: "heading-sm/semibold",
           color: "header-primary",
           children: l.name
         })]
-      }), null != c && (0, r.jsx)(a.X6q, {
+      }), null != c && (0, r.jsx)(o.X6q, {
         variant: "heading-xl/semibold",
         color: "header-primary",
         children: f.intl.format(f.t.jDV3i4, {
@@ -52,11 +52,11 @@ function p(e) {
           className: _.summarySeparator
         }), (0, r.jsxs)("div", {
           className: _.formResponseContainer,
-          children: [(0, r.jsx)(a.Text, {
+          children: [(0, r.jsx)(o.Text, {
             variant: "text-xs/semibold",
             color: "text-muted",
             children: e.label
-          }), (0, r.jsx)(a.Text, {
+          }), (0, r.jsx)(o.Text, {
             variant: "text-md/medium",
             color: "text-primary",
             children: t
@@ -73,7 +73,7 @@ function h(e) {
   } = e, {
     loading: n,
     joinRequest: i,
-    joinRequestGuild: o
+    joinRequestGuild: a
   } = (0, l.Z)(t.id);
   return (0, r.jsx)(d.ZP, {
     channelId: t.id,
@@ -82,13 +82,13 @@ function h(e) {
       className: _.formContainer,
       children: [(0, r.jsx)("div", {
         children: (0, r.jsx)(p, {
-          guild: o,
+          guild: a,
           joinRequest: i
         })
       }), (0, r.jsx)(c.Z, {
         channelId: t.id,
         showProfile: !0
       })]
-    }) : n ? (0, r.jsx)(a.$jN, {}) : null
+    }) : n ? (0, r.jsx)(o.$jN, {}) : null
   })
 }

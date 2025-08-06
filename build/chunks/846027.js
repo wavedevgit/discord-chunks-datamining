@@ -1,12 +1,12 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => R
+  Z: () => P
 });
 var r = n(570140),
   i = n(710845),
-  a = n(460181),
-  o = n(340332),
+  o = n(460181),
+  a = n(340332),
   s = n(569550),
   l = n(672339),
   c = n(463395),
@@ -44,7 +44,7 @@ function y(e) {
 let O = new i.Z("AudioActionCreators");
 
 function v() {
-  (0, a.GN)("mention3", void 0, void 0, void 0, g.w.VOICE)
+  (0, o.GN)("mention3", void 0, void 0, void 0, g.w.VOICE)
 }
 
 function I() {
@@ -55,11 +55,11 @@ function I() {
 function T(e, t, n, r) {
   let {
     location: i,
-    analyticsLocations: a
+    analyticsLocations: o
   } = arguments.length > 4 && void 0 !== arguments[4] ? arguments[4] : {};
   if (t === n) return;
-  let o = f.Z.getVoiceChannelId(),
-    s = null != o ? u.Z.getChannel(o) : null,
+  let a = f.Z.getVoiceChannelId(),
+    s = null != a ? u.Z.getChannel(a) : null,
     l = e[t],
     _ = e[n],
     h = d.Z.getMediaEngine().getAudioSubsystem(),
@@ -70,7 +70,7 @@ function T(e, t, n, r) {
     device_type: r,
     device_is_certified: c.Z.isCertified(n),
     location: i,
-    location_stack: a,
+    location_stack: o,
     voice_channel_type: null == s ? void 0 : s.type,
     audio_subsystem: h,
     audio_layer: g
@@ -86,9 +86,9 @@ let S = {
     enable: A,
     isNotSupported: N,
     trackToggleSelfMute: C,
-    trackToggleSelfDeaf: w
+    trackToggleSelfDeaf: R
   } = S = n(929782),
-  R = {
+  P = {
     enable: A,
     toggleSelfMute() {
       var e;
@@ -96,17 +96,17 @@ let S = {
         context: t = E.Yn.DEFAULT,
         syncRemote: n = !0,
         usedKeybind: i = !1,
-        playSoundEffect: a = !0,
-        location: o
+        playSoundEffect: o = !0,
+        location: a
       } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
       return N() ? Promise.resolve() : (C({
         usedKeybind: i,
-        location: o
-      }), a = a && !d.Z.hasActiveCallKitCall(), (null == (e = _.default.getCurrentUser()) ? void 0 : e.isStaff()) && O.info("Toggling self mute"), d.Z.isEnabled()) ? r.Z.dispatch({
+        location: a
+      }), o = o && !d.Z.hasActiveCallKitCall(), (null == (e = _.default.getCurrentUser()) ? void 0 : e.isStaff()) && O.info("Toggling self mute"), d.Z.isEnabled()) ? r.Z.dispatch({
         type: "AUDIO_TOGGLE_SELF_MUTE",
         context: t,
         syncRemote: n,
-        playSoundEffect: a
+        playSoundEffect: o
       }) : this.enable(!0)
     },
     setSelfMute(e, t) {
@@ -133,7 +133,7 @@ let S = {
         usedKeybind: n = !1,
         location: i
       } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
-      N() || (w({
+      N() || (R({
         usedKeybind: n,
         location: i
       }), r.Z.dispatch({
@@ -161,14 +161,14 @@ let S = {
     setDisableLocalVideo(e, t) {
       let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : E.Yn.DEFAULT,
         i = !(arguments.length > 3) || void 0 === arguments[3] || arguments[3],
-        a = arguments.length > 4 && void 0 !== arguments[4] && arguments[4];
+        o = arguments.length > 4 && void 0 !== arguments[4] && arguments[4];
       N() || r.Z.dispatch({
         type: "AUDIO_SET_LOCAL_VIDEO_DISABLED",
         context: n,
         userId: e,
         videoToggleState: t,
         persist: i,
-        isAutomatic: a
+        isAutomatic: o
       })
     },
     setLocalVolume(e, t) {
@@ -177,7 +177,7 @@ let S = {
         type: "AUDIO_SET_LOCAL_VOLUME",
         context: n,
         userId: e,
-        volume: (0, o.r)(t, n)
+        volume: (0, a.r)(t, n)
       })
     },
     setLocalPan(e, t, n) {
@@ -197,42 +197,42 @@ let S = {
           analyticsLocations: i
         } = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : {};
       if (N()) return;
-      let a = e !== d.Z.getMode(),
-        o = d.Z.getModeOptions(n);
+      let o = e !== d.Z.getMode(),
+        a = d.Z.getModeOptions(n);
       if (r.Z.dispatch({
           type: "AUDIO_SET_MODE",
           context: n,
           mode: e,
-          options: y({}, o, t)
-        }), a) {
+          options: y({}, a, t)
+        }), o) {
         let t = d.Z.getMediaEngine().getAudioSubsystem(),
           n = d.Z.getMediaEngine().getAudioLayer(),
           r = f.Z.getVoiceChannelId(),
-          a = null != r ? u.Z.getChannel(r) : null,
-          o = I();
+          o = null != r ? u.Z.getChannel(r) : null,
+          a = I();
         p.default.track(m.rMx.VOICE_ACTIVATION_MODE_CHANGED, {
           mode: e,
           location_stack: i,
-          voice_channel_type: null == a ? void 0 : a.type,
-          input_device_name: o,
+          voice_channel_type: null == o ? void 0 : o.type,
+          input_device_name: a,
           audio_subsystem: t,
           audio_layer: n
         })
-      } else if (e === m.pM4.VOICE_ACTIVITY && o !== t) {
+      } else if (e === m.pM4.VOICE_ACTIVITY && a !== t) {
         let e = d.Z.getMediaEngine().getAudioSubsystem(),
           n = d.Z.getMediaEngine().getAudioLayer(),
           r = f.Z.getVoiceChannelId(),
-          a = null != r ? u.Z.getChannel(r) : null,
+          o = null != r ? u.Z.getChannel(r) : null,
           s = I();
         p.default.track(m.rMx.VOICE_ACTIVITY_THRESHOLD_CHANGED, {
           location_stack: i,
-          voice_channel_type: null == a ? void 0 : a.type,
+          voice_channel_type: null == o ? void 0 : o.type,
           input_device_name: s,
           audio_subsystem: e,
           audio_layer: n,
-          old_threshold: o.threshold,
+          old_threshold: a.threshold,
           new_threshold: t.threshold,
-          old_auto_threshold: o.autoThreshold,
+          old_auto_threshold: a.autoThreshold,
           new_auto_threshold: t.autoThreshold
         })
       }
@@ -400,8 +400,8 @@ let S = {
       N() || ((() => {
         let r = d.Z.getAttenuation(),
           i = d.Z.getAttenuateWhileSpeakingSelf(),
-          a = d.Z.getAttenuateWhileSpeakingOthers();
-        return r !== e ? (0, s.Z)("global_attenuation_strength", e, r) : i !== t ? (0, s.Z)("global_attenuation_for_self_speak_enabled", t, i) : a !== n && (0, s.Z)("global_attenuation_for_other_speak_enabled", n, a)
+          o = d.Z.getAttenuateWhileSpeakingOthers();
+        return r !== e ? (0, s.Z)("global_attenuation_strength", e, r) : i !== t ? (0, s.Z)("global_attenuation_for_self_speak_enabled", t, i) : o !== n && (0, s.Z)("global_attenuation_for_other_speak_enabled", n, o)
       })(), r.Z.dispatch({
         type: "AUDIO_SET_ATTENUATION",
         attenuation: e,

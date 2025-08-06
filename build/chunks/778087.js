@@ -1,22 +1,22 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => a
+  Z: () => o
 }), n(49124), n(781311);
 var r = n(73800),
   i = n(10718);
 
-function a(e, t) {
+function o(e, t) {
   let n = r.useRef(null),
-    a = r.useCallback((e, t) => {
-      var r, i, a;
-      e.preventDefault(), e.clipboardData.setData("application/x-discord-interaction-data", JSON.stringify(t)), e.clipboardData.setData("text/plain", null != (a = null == (i = n.current) || null == (r = i.textContent) ? void 0 : r.trim()) ? a : "")
+    o = r.useCallback((e, t) => {
+      var r, i, o;
+      e.preventDefault(), e.clipboardData.setData("application/x-discord-interaction-data", JSON.stringify(t)), e.clipboardData.setData("text/plain", null != (o = null == (i = n.current) || null == (r = i.textContent) ? void 0 : r.trim()) ? o : "")
     }, []);
   return i.YZ({
     channel: e,
     type: "channel"
   }, t), {
-    onCopy: a,
+    onCopy: o,
     copyRef: n
   }
 }

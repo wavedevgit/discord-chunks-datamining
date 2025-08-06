@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(512722),
   i = n.n(r),
-  a = n(554908),
-  o = n(639119),
+  o = n(554908),
+  a = n(639119),
   s = n(3409),
   l = n(626135),
   c = n(358085),
@@ -73,35 +73,35 @@ function y(e) {
     setPaymentSourceId: A,
     purchaseError: N,
     setPurchaseError: C,
-    purchaseErrorBlockRef: w,
-    paymentAuthenticationState: R,
-    selectedSkuId: P,
+    purchaseErrorBlockRef: R,
+    paymentAuthenticationState: P,
+    selectedSkuId: w,
     activeSubscription: D,
     previousStepRef: L,
     setPurchaseState: x,
-    paymentElementsEnabled: k
+    paymentElementsEnabled: M
   } = (0, d.JL)(), {
-    isGift: j
-  } = (0, u.wD)(), M = b(g({}, (0, s.fL)()), {
+    isGift: k
+  } = (0, u.wD)(), j = b(g({}, (0, s.fL)()), {
     paymentSources: T,
     paymentSourceId: S,
     setPaymentSourceId: A,
     purchaseError: N,
     setPurchaseError: C,
-    purchaseErrorBlockRef: w,
-    paymentAuthenticationState: R,
-    selectedSkuId: P,
-    isGift: j
-  }), U = (0, o.N)(m), G = !j && null != U && null != P && h.nG[U.trial_id].skus.includes(P), B = () => {
+    purchaseErrorBlockRef: R,
+    paymentAuthenticationState: P,
+    selectedSkuId: w,
+    isGift: k
+  }), U = (0, a.N)(m), G = !k && null != U && null != w && h.nG[U.trial_id].skus.includes(w), B = () => {
     c(Object.values(T).length < 1 && null == n ? f.h8.PLAN_SELECT : f.h8.REVIEW, {
       trackedFromStep: f.h8.PAYMENT_TYPE
     })
   }, Z = null != E ? E : B;
   i()(I, "Step should be set here");
-  let F = (0, a.Z)(() => Date.now(), [I]),
-    V = (0, a.Z)(() => null != y && null == L.current ? k && y === f.h8.CREDIT_CARD_INFORMATION ? f.h8.PAYMENT_ELEMENT : y : f.h8.PAYMENT_TYPE, [y, L.current, k]);
+  let F = (0, o.Z)(() => Date.now(), [I]),
+    V = (0, o.Z)(() => null != y && null == L.current ? M && y === f.h8.CREDIT_CARD_INFORMATION ? f.h8.PAYMENT_ELEMENT : y : f.h8.PAYMENT_TYPE, [y, L.current, M]);
   return (0, s.vP)({
-    paymentModalArgs: M,
+    paymentModalArgs: j,
     initialStep: V,
     prependSteps: [f.h8.PROMOTION_INFO],
     appendSteps: [f.h8.REVIEW, f.h8.CONFIRM],
@@ -130,7 +130,7 @@ function y(e) {
       }))
     },
     isEligibleForTrial: G,
-    allowDesktopRedirectPurchase: O(P, j, D),
+    allowDesktopRedirectPurchase: O(w, k, D),
     continueSessionToInitialStep: y
   })
 }

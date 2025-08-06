@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var i = n(120356),
-  a = n.n(i),
-  o = n(442837),
+  o = n.n(i),
+  a = n(442837),
   s = n(481060),
   l = n(963614),
   c = n(208156),
@@ -29,7 +29,7 @@ var i = n(120356),
 function T(e) {
   let {
     isLoading: t
-  } = e, n = (0, o.e7)([g.Z], () => g.Z.getConnectedFrame()), i = (0, o.e7)([g.Z], () => g.Z.getFrameLayoutMode()), u = (0, f.q)(null == n ? void 0 : n.applicationId), d = (0, o.e7)([h.Z], () => h.Z.isFrameHidden()), T = i === b.U.PIP && !d, S = T && null != h.Z.pipVideoWindow && null != h.Z.pipFrameWindow;
+  } = e, n = (0, a.e7)([g.Z], () => g.Z.getConnectedFrame()), i = (0, a.e7)([g.Z], () => g.Z.getFrameLayoutMode()), u = (0, f.q)(null == n ? void 0 : n.applicationId), d = (0, a.e7)([h.Z], () => h.Z.isFrameHidden()), T = i === b.U.PIP && !d, S = T && null != h.Z.pipVideoWindow && null != h.Z.pipFrameWindow;
   if (null == n || null == u) return null;
   let A = {
     instance_id: "example-cl-instance",
@@ -40,7 +40,7 @@ function T(e) {
     let {
       onActive: t,
       onForceIdle: i,
-      idle: a
+      idle: o
     } = e;
     return T && null != n ? (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("div", {
@@ -49,7 +49,7 @@ function T(e) {
         onMouseLeave: i,
         className: O.clickShield
       }), (0, r.jsx)(E.F, {
-        idle: a,
+        idle: o,
         onMouseMove: t,
         onMouseDown: t,
         onMouseLeave: i,
@@ -68,11 +68,11 @@ function T(e) {
     children: e => {
       let {
         idle: i,
-        onActive: o,
+        onActive: a,
         onForceIdle: f
       } = e;
       return (0, r.jsxs)(_.Z, {
-        className: a()(O.root, {
+        className: o()(O.root, {
           [O.pipMode]: T,
           [I.elevationHigh]: T,
           [v.idle]: i,
@@ -84,12 +84,12 @@ function T(e) {
         children: [(0, r.jsx)("div", {
           className: "theme-dark",
           children: N({
-            onActive: o,
+            onActive: a,
             onForceIdle: f,
             idle: i
           })
         }), t ? (0, r.jsx)(s.$jN, {
-          className: a()(O.iframe, {
+          className: o()(O.iframe, {
             [O.pipModeShort]: T
           })
         }) : (0, r.jsx)(c.J, {
@@ -97,7 +97,7 @@ function T(e) {
           referrerPolicy: "origin",
           url: n.url,
           queryParams: A,
-          className: a()(O.iframe, {
+          className: o()(O.iframe, {
             [O.pipModeShort]: T,
             [O.pipNonInteractive]: T
           }),
@@ -110,7 +110,7 @@ function T(e) {
 let S = () => {
   let {
     analyticsLocations: e
-  } = (0, d.ZP)(u.Z.FRAME_PIP), t = (0, o.e7)([g.Z], () => g.Z.isFrameActive());
+  } = (0, d.ZP)(u.Z.FRAME_PIP), t = (0, a.e7)([g.Z], () => g.Z.isFrameActive());
   return (0, r.jsx)(d.Gt, {
     value: e,
     children: (0, r.jsx)(T, {

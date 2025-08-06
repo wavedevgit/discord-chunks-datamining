@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(255367),
   i = n(73800),
-  a = n(657707),
-  o = n(456100),
+  o = n(657707),
+  a = n(456100),
   s = n(841784),
   l = n(906732),
   c = n(482798),
@@ -43,14 +43,14 @@ function y(e) {
 }
 let O = function(e) {
   let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
-  return (0, u.dS)(e) ? a.ewx : (0, s.Z)(e) ? t ? a.iWm : a.jje : e.type === E.IIU.PLAYING ? a.iWm : e.type === E.IIU.LISTENING ? a.RZG : e.type === E.IIU.WATCHING || e.type === E.IIU.STREAMING ? a.ARS : e.type === E.IIU.COMPETING ? a.iWm : null
+  return (0, u.dS)(e) ? o.ewx : (0, s.Z)(e) ? t ? o.iWm : o.jje : e.type === E.IIU.PLAYING ? o.iWm : e.type === E.IIU.LISTENING ? o.RZG : e.type === E.IIU.WATCHING || e.type === E.IIU.STREAMING ? o.ARS : e.type === E.IIU.COMPETING ? o.iWm : null
 };
 
 function v(e) {
   let {
     activity: t,
     textVariant: n,
-    textClassName: a,
+    textClassName: o,
     iconClassName: s,
     hideIcon: u = !1,
     hideText: d = !1,
@@ -58,7 +58,7 @@ function v(e) {
     canTruncate: E = !0
   } = e, {
     enabled: b
-  } = o.c.useExperiment({
+  } = a.c.useExperiment({
     location: "PresenceActivityStatus"
   }, {
     autoTrackExposure: !0
@@ -92,7 +92,7 @@ function v(e) {
       onTooltipShow: C ? T : void 0
     }), !d && (0, r.jsx)(m.Z, {
       variant: n,
-      className: a,
+      className: o,
       canTruncate: E,
       hideTooltip: g,
       children: S
@@ -105,14 +105,14 @@ function I(e) {
     activity: t,
     textVariant: n,
     textClassName: i,
-    iconClassName: a,
+    iconClassName: o,
     hideIcon: s = !1,
     hideText: l = !1,
     hideTooltip: u = !1,
     canTruncate: d = !0
   } = e, {
     enabled: p
-  } = o.c.useExperiment({
+  } = a.c.useExperiment({
     location: "PresenceActivityStatusWithCombinedTooltip"
   }, {
     autoTrackExposure: !0
@@ -131,7 +131,7 @@ function I(e) {
   return (0, r.jsx)(g.Z, {
     icon: I ? (0, r.jsx)(h.Z, {
       icon: v,
-      className: a
+      className: o
     }) : void 0,
     text: b,
     textVariant: n,

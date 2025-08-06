@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(255367),
   i = n(73800),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(481060),
   l = n(367907),
   c = n(626135),
@@ -64,7 +64,7 @@ function E(e) {
       banner_type: "channel_opt_in"
     }))
   }, [t]);
-  let a = () => {
+  let o = () => {
     c.default.track(d.rMx.CHANNEL_BANNER_CTA_CLICKED, g(h({}, (0, l.hH)(t.getGuildId()), (0, l.v_)(t)), {
       banner_type: "channel_opt_in",
       cta_type: "add channel"
@@ -73,7 +73,7 @@ function E(e) {
     })
   };
   return (0, r.jsxs)("div", {
-    className: o()(_.chatHeaderBar, {
+    className: a()(_.chatHeaderBar, {
       [_.narrow]: n
     }),
     children: [(0, r.jsx)(s.Text, {
@@ -84,7 +84,7 @@ function E(e) {
     }), (0, r.jsx)(s.zxk, {
       size: "sm",
       variant: "primary",
-      onClick: a,
+      onClick: o,
       text: f.intl.string(f.t.ZtIlQk),
       icon: s.qJs
     })]

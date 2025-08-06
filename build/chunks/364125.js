@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(73800),
   i = n(399606),
-  a = n(673125),
-  o = n(984063),
+  o = n(673125),
+  a = n(984063),
   s = n(88315),
   l = n(179295),
   c = n(370663),
@@ -20,16 +20,16 @@ function d(e) {
     stream: f,
     focused: _,
     canvas: p
-  } = e, h = r.useRef(!1), m = (0, i.e7)([a.Z], () => a.Z.getDrawMode()), g = (0, l.Z)((0, c.Z)(t.id, n, d), f), E = (0, l.Z)((0, u.Z)(t.id, n, d), f), b = r.useCallback((e, t, n) => {
+  } = e, h = r.useRef(!1), m = (0, i.e7)([o.Z], () => o.Z.getDrawMode()), g = (0, l.Z)((0, c.Z)(t.id, n, d), f), E = (0, l.Z)((0, u.Z)(t.id, n, d), f), b = r.useCallback((e, t, n) => {
     if (null == p) return;
     let {
       x: r,
       y: i
     } = (0, s.hn)(p, n);
     switch (t.type) {
-      case o.W.LINE:
+      case a.W.LINE:
         return g[e](t, r, i);
-      case o.W.EMOJI_HOSE:
+      case a.W.EMOJI_HOSE:
         return E[e](t, r, i)
     }
   }, [p, g, E]), y = r.useCallback(e => {

@@ -1,6 +1,6 @@
 /** Chunk was on web.js **/
 "use strict";
-let r, i, a, o, s, l, c, u, d, f, _;
+let r, i, o, a, s, l, c, u, d, f, _;
 n.d(t, {
   Z: () => F
 });
@@ -59,21 +59,21 @@ function C(e) {
   i = t
 }
 
-function w(e) {
+function R(e) {
   let {
     profileEffectId: t
   } = e;
-  o = t
+  a = t
 }
 
-function R(e) {
+function P(e) {
   let {
     banner: t
   } = e;
   s = t
 }
 
-function P(e) {
+function w(e) {
   let {
     bio: t
   } = e;
@@ -101,23 +101,23 @@ function x(e) {
   d = t
 }
 
-function k(e) {
+function M(e) {
   let {
     nameplate: t
   } = e;
-  a = t
+  o = t
+}
+
+function k() {
+  j(), U(), y = {}, b = g.QZA.OPEN
 }
 
 function j() {
-  M(), U(), y = {}, b = g.QZA.OPEN
-}
-
-function M() {
-  r = void 0, u = void 0, i = void 0, a = void 0
+  r = void 0, u = void 0, i = void 0, o = void 0
 }
 
 function U() {
-  s = void 0, l = void 0, c = void 0, d = void 0, o = void 0
+  s = void 0, l = void 0, c = void 0, d = void 0, a = void 0
 }
 
 function G() {
@@ -125,7 +125,7 @@ function G() {
 }
 
 function B() {
-  j(), v()
+  k(), v()
 }
 class Z extends(p = h.ZP.Store) {
   getFormState() {
@@ -135,7 +135,7 @@ class Z extends(p = h.ZP.Store) {
     return y
   }
   showNotice() {
-    return void 0 !== r || void 0 !== i || void 0 !== o || void 0 !== s || void 0 !== l || void 0 !== c || void 0 !== u || void 0 !== d || void 0 !== a
+    return void 0 !== r || void 0 !== i || void 0 !== a || void 0 !== s || void 0 !== l || void 0 !== c || void 0 !== u || void 0 !== d || void 0 !== o
   }
   getIsSubmitDisabled() {
     return void 0 !== l && l.length > g.tPV
@@ -147,7 +147,7 @@ class Z extends(p = h.ZP.Store) {
     return i
   }
   getPendingProfileEffectId() {
-    return o
+    return a
   }
   getPendingBanner() {
     return s
@@ -168,19 +168,19 @@ class Z extends(p = h.ZP.Store) {
     return d
   }
   getPendingNameplate() {
-    return a
+    return o
   }
   getAllPending() {
     return {
       pendingAvatar: r,
       pendingAvatarDecoration: i,
-      pendingProfileEffectId: o,
+      pendingProfileEffectId: a,
       pendingBanner: s,
       pendingBio: l,
       pendingPronouns: c,
       pendingNickname: u,
       pendingThemeColors: d,
-      pendingNameplate: a
+      pendingNameplate: o
     }
   }
   getGuild() {
@@ -200,16 +200,16 @@ let F = new Z(m.Z, {
   USER_PROFILE_UPDATE_FAILURE: A,
   GUILD_IDENTITY_SETTINGS_SET_PENDING_AVATAR: N,
   GUILD_IDENTITY_SETTINGS_SET_PENDING_AVATAR_DECORATION: C,
-  GUILD_IDENTITY_SETTINGS_SET_PENDING_NAMEPLATE: k,
-  GUILD_IDENTITY_SETTINGS_SET_PENDING_PROFILE_EFFECT_ID: w,
-  GUILD_IDENTITY_SETTINGS_SET_PENDING_BANNER: R,
-  GUILD_IDENTITY_SETTINGS_SET_PENDING_BIO: P,
+  GUILD_IDENTITY_SETTINGS_SET_PENDING_NAMEPLATE: M,
+  GUILD_IDENTITY_SETTINGS_SET_PENDING_PROFILE_EFFECT_ID: R,
+  GUILD_IDENTITY_SETTINGS_SET_PENDING_BANNER: P,
+  GUILD_IDENTITY_SETTINGS_SET_PENDING_BIO: w,
   GUILD_IDENTITY_SETTINGS_SET_PENDING_PRONOUNS: D,
   GUILD_IDENTITY_SETTINGS_SET_PENDING_NICKNAME: L,
   GUILD_IDENTITY_SETTINGS_SET_PENDING_THEME_COLORS: x,
-  GUILD_IDENTITY_SETTINGS_RESET_PENDING_MEMBER_CHANGES: M,
+  GUILD_IDENTITY_SETTINGS_RESET_PENDING_MEMBER_CHANGES: j,
   GUILD_IDENTITY_SETTINGS_RESET_PENDING_PROFILE_CHANGES: U,
-  GUILD_IDENTITY_SETTINGS_RESET_ALL_PENDING: j,
-  GUILD_IDENTITY_SETTINGS_SUBMIT_SUCCESS: j,
+  GUILD_IDENTITY_SETTINGS_RESET_ALL_PENDING: k,
+  GUILD_IDENTITY_SETTINGS_SUBMIT_SUCCESS: k,
   GUILD_IDENTITY_SETTINGS_CLEAR_ERRORS: G
 })

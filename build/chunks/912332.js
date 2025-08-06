@@ -9,9 +9,9 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var i = n(481060),
-  a = n(822869);
+  o = n(822869);
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -27,7 +27,7 @@ function s(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      o(e, t, n[t])
+      a(e, t, n[t])
     })
   }
   return e
@@ -54,12 +54,12 @@ let u = "forward-modal";
 function d(e) {
   let {
     message: t,
-    source: o,
+    source: a,
     initialSelectedDestinations: l = [],
     forwardOptions: d,
     onRequestSent: f
   } = e;
-  (0, a.Lb)(t.channel_id, t.id, o), (0, i.ZDy)(async () => {
+  (0, o.Lb)(t.channel_id, t.id, a), (0, i.ZDy)(async () => {
     let {
       ForwardModal: e
     } = await n.e("33648").then(n.bind(n, 930864));
@@ -81,8 +81,8 @@ function f() {
 function _(e) {
   let {
     message: t,
-    failedDestinations: a,
-    forwardOptions: o
+    failedDestinations: o,
+    forwardOptions: a
   } = e;
   (0, i.ZDy)(async () => {
     let {
@@ -90,8 +90,8 @@ function _(e) {
     } = await n.e("86590").then(n.bind(n, 384331));
     return n => (0, r.jsx)(e, c(s({}, n), {
       message: t,
-      failedDestinations: a,
-      forwardOptions: o
+      failedDestinations: o,
+      forwardOptions: a
     }))
   })
 }

@@ -7,8 +7,8 @@ n.d(t, {
 }), n(388685), n(539854);
 var r = n(255367),
   i = n(73800),
-  a = n(392711),
-  o = n(933546),
+  o = n(392711),
+  a = n(933546),
   s = n(314897),
   l = n(70956),
   c = n(823379),
@@ -35,11 +35,11 @@ function O(e) {
       return "\x01".concat(e.sortKey);
     case d.fO.HIDDEN_STREAM:
     case d.fO.STREAM:
-      return "\x02".concat((0, o.Z)(e.userNick, e.user));
+      return "\x02".concat((0, a.Z)(e.userNick, e.user));
     case d.fO.USER:
       var n;
       let r = "\x06";
-      return e.speaking ? r = "\x03" : t - e.lastSpoke < b ? r = "\x04" : (null == (n = e.voiceState) ? void 0 : n.selfVideo) && (r = "\x05"), "".concat(r).concat(y(e.lastSpoke)).concat((0, o.Z)(e.userNick, e.user))
+      return e.speaking ? r = "\x03" : t - e.lastSpoke < b ? r = "\x04" : (null == (n = e.voiceState) ? void 0 : n.selfVideo) && (r = "\x05"), "".concat(r).concat(y(e.lastSpoke)).concat((0, a.Z)(e.userNick, e.user))
   }
 }
 
@@ -59,7 +59,7 @@ function I(e, t) {
     },
     {
       tileWidth: r,
-      tileMinWidth: o,
+      tileMinWidth: a,
       tileMargin: s,
       limit: l,
       cropSelfVideo: u,
@@ -80,12 +80,12 @@ function I(e, t) {
       participantTileWidth: T
     } = i.useMemo(() => {
       let n = Date.now(),
-        i = (0, a.sortBy)(t, e => O(e, n)),
-        [f, _] = (0, a.partition)(i, d.Io),
+        i = (0, o.sortBy)(t, e => O(e, n)),
+        [f, _] = (0, o.partition)(i, d.Io),
         p = f.findIndex(v),
         h = null; - 1 !== p && (h = f[p], f.splice(p, 1));
       let m = null == h || u ? e : e - r - s,
-        g = Math.max(0, Math.min(Math.floor((m - s) / (o + s)), l, t.length)),
+        g = Math.max(0, Math.min(Math.floor((m - s) / (a + s)), l, t.length)),
         E = Math.min((m - s) / g - s, r),
         b = Math.max(0, g - _.length),
         I = _.slice(0, g),
@@ -105,13 +105,13 @@ function I(e, t) {
         }
       }
       let A = S.filter(c.lm);
-      y.current = (0, a.keyBy)((0, a.range)(A.length), e => A[e].id);
+      y.current = (0, o.keyBy)((0, o.range)(A.length), e => A[e].id);
       let N = [...I, ...A];
       return null != h && (u && N.length >= g ? N[Math.max(0, N.length - 1)] = h : N.push(h)), {
         visibleParticipants: N,
         participantTileWidth: E
       }
-    }, [e, t, _, f, u, l, s, o, r]);
+    }, [e, t, _, f, u, l, s, a, r]);
   return {
     visibleParticipants: I,
     participantTileWidth: T
@@ -123,8 +123,8 @@ function T(e) {
     participants: t,
     participantTileWidth: n,
     selectedParticipantId: i,
-    onDoubleClick: a,
-    onContextMenu: o,
+    onDoubleClick: o,
+    onContextMenu: a,
     onClick: s,
     channel: l,
     inCall: c,
@@ -148,8 +148,8 @@ function T(e) {
           className: f.tile,
           fit: u.BP.COVER,
           onClick: s,
-          onDoubleClick: a,
-          onContextMenu: o,
+          onDoubleClick: o,
+          onContextMenu: a,
           width: t ? E : n,
           inCall: c,
           paused: _,

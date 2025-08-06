@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685), n(65234), n(111804), n(490233), n(97749);
 var r = n(255367),
   i = n(73800),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(308808),
   l = n(772848),
   c = n(631467),
@@ -62,8 +62,8 @@ function v(e) {
   let {
     url: t,
     className: n,
-    style: a,
-    onLoad: o,
+    style: o,
+    onLoad: a,
     shouldRefocus: g,
     queryParams: E,
     allowPopups: y = !1,
@@ -71,13 +71,13 @@ function v(e) {
   } = e, I = (0, f.sU)({}), T = (0, s.useMemoOne)(() => (0, l.Z)(), [t]), S = i.useRef(null), A = (0, _.Z)(S, g, null == I ? window : I), N = O(b({}, E), {
     frame_id: T,
     platform: h.S4.DESKTOP
-  }), [C, w] = i.useState(!1), R = u.Z.theme, P = b({}, a);
+  }), [C, R] = i.useState(!1), P = u.Z.theme, w = b({}, o);
 
   function D(e) {
     var n;
-    null == o || o(e.target), S.current = e.target, A(!0), null == (n = e.target.contentWindow) || n.postMessage([c.Z.HELLO, N], null != t ? t : "")
+    null == a || a(e.target), S.current = e.target, A(!0), null == (n = e.target.contentWindow) || n.postMessage([c.Z.HELLO, N], null != t ? t : "")
   }
-  return R === m.BRd.LIGHT ? P.colorScheme = "light" : P.colorScheme = "dark", i.useEffect(() => (d.S.dispatch(m.CkL.IFRAME_MOUNT, {
+  return P === m.BRd.LIGHT ? w.colorScheme = "light" : w.colorScheme = "dark", i.useEffect(() => (d.S.dispatch(m.CkL.IFRAME_MOUNT, {
     id: T
   }), () => {
     d.S.dispatch(m.CkL.IFRAME_UNMOUNT, {
@@ -88,13 +88,13 @@ function v(e) {
       let {
         resizing: t
       } = e;
-      w(t)
+      R(t)
     };
     return d.S.subscribe(m.CkL.MANUAL_IFRAME_RESIZING, e), () => {
       d.S.unsubscribe(m.CkL.MANUAL_IFRAME_RESIZING, e)
     }
-  }, []), C && (P.pointerEvents = "none"), null != t ? (0, r.jsx)("iframe", {
-    style: P,
+  }, []), C && (w.pointerEvents = "none"), null != t ? (0, r.jsx)("iframe", {
+    style: w,
     allow: "autoplay; encrypted-media",
     referrerPolicy: v,
     onLoad: D,
@@ -109,15 +109,15 @@ function v(e) {
 function I(e) {
   let {
     onLoad: t
-  } = e, [n, a] = i.useState(!1), s = i.useCallback(e => {
-    a(!0), null == t || t(e)
+  } = e, [n, o] = i.useState(!1), s = i.useCallback(e => {
+    o(!0), null == t || t(e)
   }, [t]);
   return (0, r.jsxs)("div", {
     className: g.fillParent,
     children: [!n && (0, r.jsx)("div", {
-      className: o()(g.fillParent, g.iframePlaceholder)
+      className: a()(g.fillParent, g.iframePlaceholder)
     }), (0, r.jsx)("div", {
-      className: o()(g.fillParent, n ? void 0 : g.hiddenIframeContainer),
+      className: a()(g.fillParent, n ? void 0 : g.hiddenIframeContainer),
       children: (0, r.jsx)(v, O(b({}, e), {
         onLoad: s
       }))

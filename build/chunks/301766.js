@@ -8,7 +8,7 @@ n.d(t, {
 var r = n(81825),
   i = n(474936);
 
-function a(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -16,7 +16,7 @@ function a(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-class o extends r.Z {
+class a extends r.Z {
   static createFromServer(e) {
     let t = {};
     return null != e.prices && (t = Object.keys(e.prices).reduce((t, n) => {
@@ -32,7 +32,7 @@ class o extends r.Z {
           return t[r] = i.map(t => s(t, e.tax_inclusive)), t
         }, {})
       }, t
-    }, {})), new o({
+    }, {})), new a({
       id: e.id,
       name: e.name,
       interval: e.interval,
@@ -82,7 +82,7 @@ class o extends r.Z {
     }
   }
   constructor(e) {
-    super(), a(this, "id", void 0), a(this, "name", void 0), a(this, "interval", void 0), a(this, "intervalCount", void 0), a(this, "taxInclusive", void 0), a(this, "skuId", void 0), a(this, "currency", void 0), a(this, "price", void 0), a(this, "prices", void 0), this.id = e.id, this.name = e.name, this.interval = e.interval, this.intervalCount = e.intervalCount, this.taxInclusive = e.taxInclusive, this.skuId = e.skuId, this.currency = e.currency, this.price = e.price, this.prices = e.prices
+    super(), o(this, "id", void 0), o(this, "name", void 0), o(this, "interval", void 0), o(this, "intervalCount", void 0), o(this, "taxInclusive", void 0), o(this, "skuId", void 0), o(this, "currency", void 0), o(this, "price", void 0), o(this, "prices", void 0), this.id = e.id, this.name = e.name, this.interval = e.interval, this.intervalCount = e.intervalCount, this.taxInclusive = e.taxInclusive, this.skuId = e.skuId, this.currency = e.currency, this.price = e.price, this.prices = e.prices
   }
 }
 
@@ -98,4 +98,4 @@ function s(e, t) {
 function l(e) {
   return [i.Xh.NONE_MONTH, i.Xh.NONE_3_MONTH, i.Xh.NONE_6_MONTH, i.Xh.NONE_YEAR].includes(e)
 }
-let c = o
+let c = a

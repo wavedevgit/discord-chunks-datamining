@@ -6,7 +6,7 @@ n.d(t, {
 var r = n(442837),
   i = n(570140);
 
-function a(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -14,7 +14,7 @@ function a(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-class o extends r.ZP.Store {
+class a extends r.ZP.Store {
   allGuildIds() {
     return this.guildIds
   }
@@ -43,7 +43,7 @@ class o extends r.ZP.Store {
       CONNECTION_OPEN: e => this.handleConnectionOpen(e),
       GUILD_CREATE: e => this.handleGuildCreate(e),
       GUILD_DELETE: e => this.handleGuildDelete(e)
-    }, i.c.Early), a(this, "guildIds", new Set)
+    }, i.c.Early), o(this, "guildIds", new Set)
   }
 }
-let s = new o
+let s = new a

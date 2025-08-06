@@ -1,12 +1,12 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Xo: () => o,
+  Xo: () => a,
   pB: () => s
 });
 var r = n(818083),
   i = n(517858);
-let a = (0, r.B)({
+let o = (0, r.B)({
   kind: "user",
   id: "2024-04_keyword_filter_experiment",
   label: "Replace registered keywords with asterisks",
@@ -22,13 +22,13 @@ let a = (0, r.B)({
   }]
 });
 
-function o(e) {
+function a(e) {
   let {
     location: t
   } = e, n = (0, i.C3)({
     location: t
   });
-  return a.useExperiment({
+  return o.useExperiment({
     location: t
   }, {
     autoTrackExposure: !0
@@ -41,7 +41,7 @@ function s(e) {
   } = e, n = (0, i.GW)({
     location: t
   });
-  return a.getCurrentConfig({
+  return o.getCurrentConfig({
     location: t
   }).enabled || n
 }

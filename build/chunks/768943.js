@@ -4,8 +4,8 @@ n.d(t, {
   Z: () => Z
 }), n(415506), n(388685);
 var r, i = n(442837),
-  a = n(759174),
-  o = n(570140),
+  o = n(759174),
+  a = n(570140),
   s = n(786761),
   l = n(594174),
   c = n(686478);
@@ -45,7 +45,7 @@ function _(e) {
 function p(e) {
   return _(e.dueAt) - _(e.savedAt)
 }
-let h = new a.h(e => {
+let h = new o.h(e => {
     let {
       saveData: t
     } = e;
@@ -81,8 +81,8 @@ function I(e) {
   null == h.get(n) && (g = Date.now()), h.set(n, e);
   let r = e.saveData.messageId,
     i = e.saveData.channelId,
-    a = null != (t = y.get(i)) ? t : new Set;
-  a.add(r), y.set(i, a), null == e.message && b.add(r), null != e.saveData.dueAt && new Date > e.saveData.dueAt ? E.add(r) : E.delete(r)
+    o = null != (t = y.get(i)) ? t : new Set;
+  o.add(r), y.set(i, o), null == e.message && b.add(r), null != e.saveData.dueAt && new Date > e.saveData.dueAt ? E.add(r) : E.delete(r)
 }
 
 function T(e) {
@@ -117,14 +117,14 @@ function C(e) {
   I(t)
 }
 
-function w(e) {
+function R(e) {
   let {
     savedMessageData: t
   } = e;
   return T(t)
 }
 
-function R(e) {
+function P(e) {
   let {
     messageId: t,
     channelId: n
@@ -133,16 +133,16 @@ function R(e) {
     channelId: n
   }), i = h.get(r);
   if ((null == i ? void 0 : i.message) == null) return !1;
-  let a = d({}, i);
-  return a.message = null, h.set(r, a), !0
+  let o = d({}, i);
+  return o.message = null, h.set(r, o), !0
 }
 
-function P(e) {
+function w(e) {
   let {
     id: t,
     channelId: n
   } = e;
-  return R({
+  return P({
     messageId: t,
     channelId: n
   })
@@ -153,7 +153,7 @@ function D(e) {
     ids: t,
     channelId: n
   } = e;
-  for (let e of t) R({
+  for (let e of t) P({
     messageId: e,
     channelId: n
   })
@@ -179,7 +179,7 @@ function x() {
   m = !0
 }
 
-function k(e) {
+function M(e) {
   let {
     channel: t
   } = e;
@@ -187,7 +187,7 @@ function k(e) {
   m = !0
 }
 
-function j(e) {
+function k(e) {
   let {
     channels: t
   } = e;
@@ -197,7 +197,7 @@ function j(e) {
   return n
 }
 
-function M(e) {
+function j(e) {
   let {
     channel: t
   } = e;
@@ -268,21 +268,21 @@ class B extends(r = i.ZP.Store) {
   }
 }
 u(B, "displayName", "SavedMessagesStore");
-let Z = new B(o.Z, {
+let Z = new B(a.Z, {
   POST_CONNECTION_OPEN: S,
   LOGOUT: A,
   SAVED_MESSAGES_UPDATE: N,
   SAVED_MESSAGE_CREATE: C,
-  SAVED_MESSAGE_DELETE: w,
-  MESSAGE_DELETE: P,
+  SAVED_MESSAGE_DELETE: R,
+  MESSAGE_DELETE: w,
   MESSAGE_DELETE_BULK: D,
   MESSAGE_UPDATE: L,
   GUILD_CREATE: x,
   GUILD_UPDATE: x,
   GUILD_DELETE: x,
-  CHANNEL_CREATE: k,
-  CHANNEL_UPDATES: j,
-  CHANNEL_DELETE: M,
+  CHANNEL_CREATE: M,
+  CHANNEL_UPDATES: k,
+  CHANNEL_DELETE: j,
   GUILD_MEMBER_UPDATE: U,
   GUILD_ROLE_CREATE: x,
   GUILD_ROLE_UPDATE: x,

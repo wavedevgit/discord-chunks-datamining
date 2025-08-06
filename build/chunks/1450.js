@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(255367),
   i = n(73800),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(442837),
   l = n(481060),
   c = n(2052),
@@ -26,7 +26,7 @@ let v = e => {
   let {
     className: t,
     guildId: n,
-    channel: a,
+    channel: o,
     shouldTrackUpsellViewed: v,
     setTrackedUpsellViewed: I
   } = e, {
@@ -40,11 +40,11 @@ let v = e => {
       N && C && v && ((0, u.yw)(E.rMx.PREMIUM_GUILD_UPSELL_VIEWED, {
         location: T,
         guild_id: null == A ? void 0 : A.id,
-        channel_id: null == a ? void 0 : a.id,
+        channel_id: null == o ? void 0 : o.id,
         type: "Expression Picker Inline Sticker Upsell",
         location_stack: S
       }), I(!0))
-    }, [C, A, a, T, v, I, S, N]), null == A || !N) return null;
+    }, [C, A, o, T, v, I, S, N]), null == A || !N) return null;
   if (C) {
     let e = () => {
       (0, _.Z)({
@@ -55,7 +55,7 @@ let v = e => {
       })
     };
     return (0, r.jsxs)("div", {
-      className: o()(O.upsell, t),
+      className: a()(O.upsell, t),
       children: [(0, r.jsx)(l.$zw, {
         size: "md",
         color: "currentColor",
@@ -78,7 +78,7 @@ let v = e => {
       (0, f._Q)(), p.Z.open(n, E.pNK.STICKERS, T)
     };
     return (0, r.jsxs)("div", {
-      className: o()(O.upsell, t),
+      className: a()(O.upsell, t),
       children: [(0, r.jsx)(l.SlE, {
         size: "custom",
         color: "currentColor",

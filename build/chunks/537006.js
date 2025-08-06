@@ -1,12 +1,12 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => P
+  Z: () => w
 });
 var r = n(255367),
   i = n(73800),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(442837),
   l = n(704215),
   c = n(755721),
@@ -30,7 +30,7 @@ var r = n(255367),
   N = n(388032),
   C = n(869310);
 
-function w(e) {
+function R(e) {
   let {
     onClose: t
   } = e;
@@ -46,14 +46,14 @@ function w(e) {
   })
 }
 
-function R(e) {
+function P(e) {
   let {
     tiny: t,
     isPremiumUser: n,
     onInteraction: i
   } = e, {
-    analyticsLocations: a,
-    newestAnalyticsLocation: o
+    analyticsLocations: o,
+    newestAnalyticsLocation: a
   } = (0, d.ZP)(), {
     trackUserProfileAction: s
   } = (0, y.KZ)();
@@ -110,9 +110,9 @@ function R(e) {
         className: C.upsellButton,
         onClick: () => {
           (0, f.mK)({
-            analyticsLocations: a,
+            analyticsLocations: o,
             openInLayer: !1,
-            analyticsSource: o
+            analyticsSource: a
           }), null == i || i()
         }
       })
@@ -120,11 +120,11 @@ function R(e) {
   })
 }
 
-function P(e) {
+function w(e) {
   let {
     isPremiumUser: t,
     onInteraction: n,
-    className: a
+    className: o
   } = e, c = (0, _.Dt)(), {
     themeType: d
   } = (0, O.z)(), f = d === I.lY.MODAL, g = (0, h.Nj)(l.z.USER_PROFILE_PREMIUM_AND_SHOP_ENTRY_POINTS), E = (0, s.e7)([b.Z], () => b.Z.getGuildId());
@@ -140,7 +140,7 @@ function P(e) {
       id: c,
       children: N.intl.string(N.t.EIYbj4)
     }),
-    v = (0, r.jsx)(w, {
+    v = (0, r.jsx)(R, {
       onClose: () => {
         (0, h.Q3)(l.z.USER_PROFILE_PREMIUM_AND_SHOP_ENTRY_POINTS, {
           dismissAction: S.L.USER_DISMISS,
@@ -149,16 +149,16 @@ function P(e) {
         })
       }
     }),
-    T = (0, r.jsx)(R, {
+    T = (0, r.jsx)(P, {
       isPremiumUser: t,
       onInteraction: n,
       tiny: f
     });
   return f ? (0, r.jsx)("aside", {
-    className: o()(C.upsellContainer, a),
+    className: a()(C.upsellContainer, o),
     "aria-labelledby": c,
     children: (0, r.jsxs)("div", {
-      className: o()(C.upsellContent, C.upsellRowContent),
+      className: a()(C.upsellContent, C.upsellRowContent),
       children: [y, (0, r.jsxs)("div", {
         className: C.upsellRowRight,
         children: [(0, r.jsx)("div", {
@@ -169,10 +169,10 @@ function P(e) {
       })]
     })
   }) : (0, r.jsx)("aside", {
-    className: o()(C.upsellContainer, a),
+    className: a()(C.upsellContainer, o),
     "aria-labelledby": c,
     children: (0, r.jsxs)("div", {
-      className: o()(C.upsellContent, C.upsellDefaultContent),
+      className: a()(C.upsellContent, C.upsellDefaultContent),
       children: [(0, r.jsxs)("div", {
         className: C.upsellHeader,
         children: [y, (0, r.jsx)("div", {

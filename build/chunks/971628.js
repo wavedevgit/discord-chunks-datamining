@@ -2,12 +2,12 @@
 "use strict";
 n.d(t, {
   G: () => N,
-  Z: () => R
+  Z: () => P
 }), n(388685), n(781311);
 var r = n(255367),
   i = n(73800),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(91192),
   l = n(481060),
   c = n(385499),
@@ -71,17 +71,17 @@ function N(e) {
 function C(e) {
   return (0, r.jsx)(l.vwX, {
     tag: "h5",
-    className: o()(E.sectionTitle, E.rowHeight),
+    className: a()(E.sectionTitle, E.rowHeight),
     children: e
   }, e)
 }
 
-function w(e) {
+function R(e) {
   let {
     id: t,
     children: n,
     rowLabel: i,
-    checked: a,
+    checked: o,
     onSelect: c,
     disabled: d,
     showCheckbox: f,
@@ -92,7 +92,7 @@ function w(e) {
   } = e, g = (0, s.JA)(t);
   return (0, r.jsx)(l.P3F, v(y({}, g), {
     id: t,
-    className: o()(E.addMemberRow, {
+    className: a()(E.addMemberRow, {
       [E.selectedRow]: _
     }),
     onClick: e => {
@@ -101,7 +101,7 @@ function w(e) {
     onMouseEnter: p,
     role: "option",
     "aria-disabled": d,
-    "aria-selected": a,
+    "aria-selected": o,
     "aria-setsize": m,
     "aria-posinset": h,
     children: (0, r.jsxs)(u.Z, {
@@ -110,7 +110,7 @@ function w(e) {
       children: [f ? (0, r.jsx)(l.XZJ, {
         displayOnly: !0,
         size: 18,
-        value: a,
+        value: o,
         type: l.XZJ.Types.INVERTED,
         disabled: d,
         children: (0, r.jsx)("div", {
@@ -126,28 +126,28 @@ function w(e) {
   }))
 }
 
-function R(e) {
+function P(e) {
   let {
     listClassName: t,
     pendingAdditions: n,
-    query: a,
+    query: o,
     onQueryChange: s,
     onClickRow: d,
     onRemovePendingAddition: b,
     roles: y = [],
     members: O = [],
     users: v = [],
-    guilds: R = [],
-    placeholderText: P,
+    guilds: P = [],
+    placeholderText: w,
     disabledText: D,
     hintText: L,
     searchTitleText: x,
-    renderEmptyText: k,
-    focusSearchAfterReady: j,
-    isReady: M,
+    renderEmptyText: M,
+    focusSearchAfterReady: k,
+    isReady: j,
     maxCount: U,
     hideRowLabel: G = !1
-  } = e, B = i.useRef(null), Z = i.useRef(null), F = [y.length, O.length, v.length, R.length], [V, H] = i.useState(!1), [Y, W] = i.useState(0), [K, z] = i.useState(-1);
+  } = e, B = i.useRef(null), Z = i.useRef(null), F = [y.length, O.length, v.length, P.length], [V, H] = i.useState(!1), [Y, W] = i.useState(0), [K, z] = i.useState(-1);
   i.useEffect(() => {
     var e;
     null == (e = B.current) || e.focus()
@@ -163,22 +163,22 @@ function R(e) {
         })
       }
     }, []),
-    $ = i.useCallback((e, t) => {
+    X = i.useCallback((e, t) => {
       if (null == t) return;
       s("");
       let n = (e === m.m$.ROLES ? y : [])[t];
       n.rowType !== m.aC.EMPTY_STATE && d(n)
     }, [y, d, s]),
-    X = i.useCallback(e => {
+    Q = i.useCallback(e => {
       var t;
       null != e && e.rowType !== m.aC.EMPTY_STATE && (d(e), s(""), null == (t = B.current) || t.focus())
     }, [d, s]),
-    Q = i.useMemo(() => Object.keys(n), [n]);
+    J = i.useMemo(() => Object.keys(n), [n]);
 
-  function J(e) {
-    b(Q[e])
+  function $(e) {
+    b(J[e])
   }
-  let ee = i.useMemo(() => O.some(e => !e.disabled) || y.some(e => !e.disabled) || v.some(e => !e.disabled) || R.some(e => !e.disabled), [O, y, v, R]) || "" === a.trim();
+  let ee = i.useMemo(() => O.some(e => !e.disabled) || y.some(e => !e.disabled) || v.some(e => !e.disabled) || P.some(e => !e.disabled), [O, y, v, P]) || "" === o.trim();
 
   function et() {
     var e;
@@ -189,7 +189,7 @@ function R(e) {
   });
   let en = e => {
       let t, i, {
-          section: a,
+          section: o,
           row: s
         } = e,
         u = null,
@@ -197,12 +197,12 @@ function R(e) {
         _ = !1,
         h = !1,
         g = null != U && Object.keys(n).length >= U;
-      switch (a) {
+      switch (o) {
         case m.m$.ROLES:
           d = (i = N(u = y[s])) in n || u.disabled, _ = u.disabled || !d && g, h = Y === m.m$.ROLES && K === s, t = (0, r.jsxs)("div", {
             className: E.rowBody,
             children: [(0, r.jsx)("div", {
-              className: o()(E.rowHeight, E.alignCenter),
+              className: a()(E.rowHeight, E.alignCenter),
               children: (0, r.jsx)(l.lZ8, {
                 size: "custom",
                 color: u.colorString,
@@ -266,7 +266,7 @@ function R(e) {
           });
           break;
         case m.m$.GUILDS:
-          d = (i = N(u = R[s])) in n || u.disabled, _ = u.disabled || !d && g, h = Y === m.m$.GUILDS && K === s, t = (0, r.jsxs)("div", {
+          d = (i = N(u = P[s])) in n || u.disabled, _ = u.disabled || !d && g, h = Y === m.m$.GUILDS && K === s, t = (0, r.jsxs)("div", {
             className: E.rowBody,
             children: [(0, r.jsx)(f.Z, {
               guild: u.guild,
@@ -282,14 +282,14 @@ function R(e) {
             })]
           })
       }
-      return null == u ? null : (0, r.jsx)(w, {
+      return null == u ? null : (0, r.jsx)(R, {
         id: "user-row-".concat(s),
         rowLabel: G ? null : p.zB(u.rowType),
         checked: d,
         disabled: _,
-        onSelect: () => X(u),
+        onSelect: () => Q(u),
         showCheckbox: u.rowType !== m.aC.EMPTY_STATE,
-        onMouseEnter: () => q(a, s, !1),
+        onMouseEnter: () => q(o, s, !1),
         selected: h,
         "aria-posinset": s + 1,
         "aria-setsize": F.reduce((e, t) => e + t, 0),
@@ -313,7 +313,7 @@ function R(e) {
     };
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
-      className: o()(E.searchBox, {
+      className: a()(E.searchBox, {
         [E.scrollSeparator]: V
       }),
       children: [null != x && (0, r.jsx)(l.vwX, {
@@ -321,18 +321,18 @@ function R(e) {
         children: x
       }), (0, r.jsx)(h.Z, {
         ref: B,
-        query: a,
+        query: o,
         onQueryChange: s,
         selectedSection: Y,
         selectedRow: K,
         onSelectionChange: q,
-        onSelect: $,
-        tags: Q.map(e => n[e].display),
+        onSelect: X,
+        tags: J.map(e => n[e].display),
         sections: F,
-        onRemoveTag: J,
-        placeholder: P,
-        focusAfterReady: j,
-        isReady: M,
+        onRemoveTag: $,
+        placeholder: w,
+        focusAfterReady: k,
+        isReady: j,
         "aria-labelledby": S,
         "aria-controls": A
       }), null != L ? (0, r.jsx)(l.Text, {
@@ -341,7 +341,7 @@ function R(e) {
       }) : null]
     }), ee ? (0, r.jsx)(l.aVo, {
       ref: Z,
-      className: o()(E.roleMemberList, t),
+      className: a()(E.roleMemberList, t),
       sections: F,
       renderRow: en,
       rowHeight: I,
@@ -362,7 +362,7 @@ function R(e) {
         className: E.noResultIcon
       }), (0, r.jsx)(l.Text, {
         variant: "text-sm/normal",
-        children: k(a)
+        children: M(o)
       })]
     })]
   })

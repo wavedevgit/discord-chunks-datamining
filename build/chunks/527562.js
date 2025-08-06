@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(255367),
   i = n(73800),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(442837),
   l = n(481060),
   c = n(100527),
@@ -24,7 +24,7 @@ function b(e) {
   let {
     guildId: t,
     name: n,
-    setPopoutRef: a,
+    setPopoutRef: o,
     onClose: b
   } = e, {
     analyticsLocations: y
@@ -40,10 +40,10 @@ function b(e) {
   }, [v]), i.useEffect(() => {
     (0, d.vb)(t, y)
   }, [t, y]), i.useEffect(() => {
-    null == a || a(null == S ? void 0 : S.current)
-  }, [S, a]);
+    null == o || o(null == S ? void 0 : S.current)
+  }, [S, o]);
   let N = i.useMemo(() => I === f.a.NOT_FETCHED || I === f.a.FETCHING ? (0, r.jsx)("div", {
-    className: o()(g.container, g.spinnerContainer),
+    className: a()(g.container, g.spinnerContainer),
     children: (0, r.jsx)(l.$jN, {})
   }) : null == O && T === E ? (0, r.jsx)("div", {
     className: g.container,

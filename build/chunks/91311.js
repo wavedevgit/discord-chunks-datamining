@@ -4,9 +4,9 @@ n.d(t, {
   Z: () => d
 }), n(388685);
 var r, i = n(442837),
-  a = n(570140);
+  o = n(570140);
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -65,7 +65,7 @@ class u extends(r = i.ZP.DeviceSettingsStore) {
     })
   }
 }
-o(u, "displayName", "DevToolsDesignTogglesStore"), o(u, "persistKey", "DevToolsDesignTogglesStore");
-let d = new u(a.Z, {
+a(u, "displayName", "DevToolsDesignTogglesStore"), a(u, "persistKey", "DevToolsDesignTogglesStore");
+let d = new u(o.Z, {
   DEV_TOOLS_DESIGN_TOGGLE_WEB_SET: c
 })

@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(255367),
   i = n(73800),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(66546),
   l = n(507274),
   c = n(930295),
@@ -61,17 +61,17 @@ function O(e) {
   let {
     children: t,
     targetElementRef: n,
-    shouldShow: a = !0,
+    shouldShow: o = !0,
     onRequestClose: f,
     position: p = "top",
     align: m = "center",
     hasVideo: O = !1,
     gradientColor: v,
     caretConfig: I
-  } = e, [T, S] = i.useState(a);
+  } = e, [T, S] = i.useState(o);
   i.useEffect(() => {
-    a && S(!0)
-  }, [a]);
+    o && S(!0)
+  }, [o]);
   let A = () => {
       S(!1)
     },
@@ -89,14 +89,14 @@ function O(e) {
       }
     },
     C = (0, d.i)({
-      shouldShow: a,
+      shouldShow: o,
       caretPosition: (null == I ? void 0 : I.position) != null ? I.position : N(p),
       onExitComplete: A
     }),
-    w = e => C((i, a) => {
-      if (!a) return null;
+    R = e => C((i, o) => {
+      if (!o) return null;
       let c = (0, r.jsx)(l.V, g(h({}, e), {
-        className: o()(null != v ? _.popoverContentWithGradient : _.popover, {
+        className: a()(null != v ? _.popoverContentWithGradient : _.popover, {
           [_["popover--video"]]: O
         }),
         returnRef: n,
@@ -125,7 +125,7 @@ function O(e) {
     fixed: !1,
     autoInvert: !0,
     nudgeAlignIntoViewport: !0,
-    renderPopout: w,
+    renderPopout: R,
     children: y
   })
 }

@@ -5,8 +5,8 @@ n.d(t, {
 }), n(73800);
 var r = n(100527),
   i = n(367907),
-  a = n(626135),
-  o = n(50493),
+  o = n(626135),
+  a = n(50493),
   s = n(981631);
 
 function l(e, t, n) {
@@ -36,8 +36,8 @@ function u(e, t, n) {
     u = c({
       guild_id: e,
       target_user_id: t,
-      subpanel_name: o.Y[n],
+      subpanel_name: a.Y[n],
       location: l
     }, (0, i.hH)(e));
-  return a.default.track(s.rMx.GUILD_MOD_VIEW_OPENED, u)
+  return o.default.track(s.rMx.GUILD_MOD_VIEW_OPENED, u)
 }

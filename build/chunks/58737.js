@@ -1,11 +1,11 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  U: () => o
+  U: () => a
 });
 var r = n(818083),
   i = n(504876);
-let a = (0, r.B)({
+let o = (0, r.B)({
   kind: "user",
   id: "2025-05_video_keyboard_scrubbing",
   label: "Video keyboard scrubbing with arrow keys",
@@ -27,7 +27,7 @@ let a = (0, r.B)({
   }]
 });
 
-function o(e) {
+function a(e) {
   let {
     location: t
   } = e, {
@@ -35,7 +35,7 @@ function o(e) {
   } = i.Y.getCurrentConfig({
     location: t
   });
-  return a.getCurrentConfig({
+  return o.getCurrentConfig({
     location: t
   }, {
     disable: n,

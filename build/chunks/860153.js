@@ -1,6 +1,6 @@
 /** Chunk was on 39476 **/
 n.d(t, {
-  Z: () => E
+  Z: () => g
 });
 var r = n(255367),
   i = n(73800),
@@ -18,7 +18,7 @@ var r = n(255367),
   b = n(545093),
   O = n(388032),
   h = n(114047);
-let g = i.memo(function(e) {
+let E = i.memo(function(e) {
   let {
     message: t
   } = e, n = (0, a.e7)([m.Z], () => m.Z.getChannel(t.channel_id));
@@ -50,7 +50,7 @@ let g = i.memo(function(e) {
   })
 });
 
-function E(e) {
+function g(e) {
   var t;
   let {
     item: n,
@@ -59,7 +59,7 @@ function E(e) {
   } = e, a = null == (t = n.sourceMetadata) ? void 0 : t.message;
   return (0, r.jsxs)("div", {
     className: h.topBar,
-    children: [null != a && (0, r.jsx)(g, {
+    children: [null != a && (0, r.jsx)(E, {
       message: a
     }), (0, r.jsx)(f.Z, {
       item: n,

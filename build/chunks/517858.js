@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  C3: () => a,
+  C3: () => o,
   GW: () => i
 });
 let r = (0, n(818083).B)({
@@ -33,7 +33,7 @@ function i(e) {
   return n
 }
 
-function a(e) {
+function o(e) {
   let {
     location: t
   } = e, {

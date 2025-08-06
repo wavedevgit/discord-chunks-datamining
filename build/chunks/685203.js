@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var i = n(120356),
-  a = n.n(i),
-  o = n(755721),
+  o = n.n(i),
+  a = n(755721),
   s = n(481060),
   l = n(182701);
 
@@ -54,8 +54,8 @@ function _(e, t) {
   if (null == e) return {};
   var n, r, i = p(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -63,8 +63,8 @@ function _(e, t) {
 function p(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 
@@ -81,13 +81,13 @@ function h(e) {
       var {
         onClick: s
       } = e, c = _(e, ["onClick"]);
-      return (0, r.jsx)(o.zx, f(u({}, c), {
+      return (0, r.jsx)(a.zx, f(u({}, c), {
         onClick: e => {
           null == n || n(e), null == s || s()
         },
         innerClassName: l.buttonReset,
-        color: a()(l.cta, i),
-        size: o.zx.Sizes.MIN,
+        color: o()(l.cta, i),
+        size: a.zx.Sizes.MIN,
         children: t
       }))
     }

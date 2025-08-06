@@ -1,19 +1,19 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => o
+  Z: () => a
 });
 var r = n(392711),
   i = n(897325);
 
-function a(e) {
+function o(e) {
   let {
     theme: t,
     layoutType: n
   } = e;
   return (0, i._)(t, n)
 }
-let o = (0, r.memoize)(a, e => {
+let a = (0, r.memoize)(o, e => {
   let {
     theme: t,
     layoutType: n

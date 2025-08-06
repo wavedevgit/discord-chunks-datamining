@@ -7,8 +7,8 @@ n.d(t, {
 });
 var r = n(981631),
   i = n(388032),
-  a = n(337258),
-  o = n(705196),
+  o = n(337258),
+  a = n(705196),
   s = n(190878),
   l = n(991254),
   c = n(485686),
@@ -17,7 +17,7 @@ var r = n(981631),
 let f = () => ({
     [r.tNA.CHILLING]: {
       title: i.intl.string(i.t["vkpn7+"]),
-      icon: o,
+      icon: a,
       color: "#567C7E"
     },
     [r.tNA.GAMING]: {
@@ -32,7 +32,7 @@ let f = () => ({
     },
     [r.tNA.BRB]: {
       title: i.intl.string(i.t["30yqZW"]),
-      icon: a,
+      icon: o,
       color: "#76567E"
     },
     [r.tNA.EATING]: {

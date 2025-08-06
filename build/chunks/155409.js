@@ -4,8 +4,8 @@ n.d(t, {
   Z: () => g
 });
 var r, i = n(255367),
-  a = n(73800),
-  o = n(374470),
+  o = n(73800),
+  a = n(374470),
   s = n(442837),
   l = n(260300),
   c = n(451478),
@@ -50,7 +50,7 @@ function h(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-class m extends(r = a.Component) {
+class m extends(r = o.Component) {
   componentDidMount() {
     let {
       visible: e,
@@ -70,10 +70,10 @@ class m extends(r = a.Component) {
       offsetX: n,
       offsetY: r,
       tutorialId: i,
-      visible: a,
-      windowSize: o
+      visible: o,
+      windowSize: a
     } = e;
-    i !== this.props.tutorialId ? l.Z.hide(i) : (a !== this.props.visible || t !== this.props.position || n !== this.props.offsetX || r !== this.props.offsetY || o !== this.props.windowSize) && this.show(this.props.visible)
+    i !== this.props.tutorialId ? l.Z.hide(i) : (o !== this.props.visible || t !== this.props.position || n !== this.props.offsetX || r !== this.props.offsetY || a !== this.props.windowSize) && this.show(this.props.visible)
   }
   show(e) {
     let {
@@ -81,14 +81,14 @@ class m extends(r = a.Component) {
       tutorialId: n,
       position: r,
       offsetX: i,
-      offsetY: a,
+      offsetY: o,
       visible: s,
       inlineSpecs: c,
       autoInvert: u
     } = this.props;
     if (e && null == c) {
       let e = null == t ? void 0 : t.current;
-      if (!(0, o.k)(e)) return;
+      if (!(0, a.k)(e)) return;
       let {
         top: s,
         left: c,
@@ -106,7 +106,7 @@ class m extends(r = a.Component) {
         },
         offset: {
           x: i,
-          y: a
+          y: o
         }
       })
     } else s && l.Z.hide(n)
@@ -117,7 +117,7 @@ class m extends(r = a.Component) {
       tutorialId: t,
       children: n,
       visible: r,
-      windowFocused: o,
+      windowFocused: a,
       position: s,
       autoInvert: l
     } = this.props, c = d.Z.getData()[t];
@@ -127,20 +127,20 @@ class m extends(r = a.Component) {
         position: s,
         tutorialId: t,
         tutorialDefinition: c,
-        focused: o
+        focused: a
       }, e))]
-    }) : a.Children.only(n)
+    }) : o.Children.only(n)
   }
 }
 
 function g(e) {
   let {
     tutorialId: t
-  } = e, n = (0, s.e7)([d.Z], () => d.Z.shouldShow(t), [t]), r = (0, s.e7)([c.Z], () => c.Z.isFocused()), a = (0, s.e7)([c.Z], () => c.Z.windowSize(), []);
+  } = e, n = (0, s.e7)([d.Z], () => d.Z.shouldShow(t), [t]), r = (0, s.e7)([c.Z], () => c.Z.isFocused()), o = (0, s.e7)([c.Z], () => c.Z.windowSize(), []);
   return (0, i.jsx)(m, h(_({}, e), {
     visible: n,
     windowFocused: r,
-    windowSize: a
+    windowSize: o
   }))
 }
 f(m, "defaultProps", {

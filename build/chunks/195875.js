@@ -12,10 +12,10 @@ function i() {
   }).apply(this, arguments)
 }
 
-function a(e, t) {
+function o(e, t) {
   e.prototype = Object.create(t.prototype), e.prototype.constructor = e, e.__proto__ = t
 }
-var o = n(691099),
+var a = n(691099),
   s = n(152477),
   l = n(73800),
   c = n(467159);
@@ -23,7 +23,7 @@ e.exports = function(e) {
   function t() {
     return e.apply(this, arguments) || this
   }
-  a(t, e);
+  o(t, e);
   var n = t.prototype;
   return n.shouldComponentUpdate = function(e) {
     var t = this.props.editorState,
@@ -31,15 +31,15 @@ e.exports = function(e) {
     if (t.getDirectionMap() !== n.getDirectionMap() || t.getSelection().getHasFocus() !== n.getSelection().getHasFocus()) return !0;
     var r = n.getNativelyRenderedContent(),
       i = t.isInCompositionMode(),
-      a = n.isInCompositionMode();
-    if (t === n || null !== r && n.getCurrentContent() === r || i && a) return !1;
-    var o = t.getCurrentContent(),
+      o = n.isInCompositionMode();
+    if (t === n || null !== r && n.getCurrentContent() === r || i && o) return !1;
+    var a = t.getCurrentContent(),
       s = n.getCurrentContent(),
       l = t.getDecorator(),
       c = n.getDecorator();
-    return i !== a || o !== s || l !== c || n.mustForceSelection()
+    return i !== o || a !== s || l !== c || n.mustForceSelection()
   }, n.render = function() {
-    for (var e = this.props, t = e.blockRenderMap, n = e.blockRendererFn, r = e.blockStyleFn, a = e.customStyleMap, u = e.customStyleFn, d = e.editorState, f = e.editorKey, _ = e.textDirectionality, p = d.getCurrentContent(), h = d.getSelection(), m = d.mustForceSelection(), g = d.getDecorator(), E = c(d.getDirectionMap()), b = p.getBlocksAsArray()[0], y = [], O = b; O;) {
+    for (var e = this.props, t = e.blockRenderMap, n = e.blockRendererFn, r = e.blockStyleFn, o = e.customStyleMap, u = e.customStyleFn, d = e.editorState, f = e.editorKey, _ = e.textDirectionality, p = d.getCurrentContent(), h = d.getSelection(), m = d.mustForceSelection(), g = d.getDecorator(), E = c(d.getDirectionMap()), b = p.getBlocksAsArray()[0], y = [], O = b; O;) {
       var v = O.getKey(),
         I = {
           blockRenderMap: t,
@@ -47,7 +47,7 @@ e.exports = function(e) {
           blockStyleFn: r,
           contentState: p,
           customStyleFn: u,
-          customStyleMap: a,
+          customStyleMap: o,
           decorator: g,
           editorKey: f,
           editorState: d,
@@ -59,7 +59,7 @@ e.exports = function(e) {
         },
         T = (t.get(O.getType()) || t.get("unstyled")).wrapper;
       y.push({
-        block: l.createElement(o, i({
+        block: l.createElement(a, i({
           key: v
         }, I)),
         wrapperTemplate: T,
@@ -72,13 +72,13 @@ e.exports = function(e) {
     for (var A = [], N = 0; N < y.length;) {
       var C = y[N];
       if (C.wrapperTemplate) {
-        var w = [];
-        do w.push(y[N].block), N++; while (N < y.length && y[N].wrapperTemplate === C.wrapperTemplate);
-        var R = l.cloneElement(C.wrapperTemplate, {
+        var R = [];
+        do R.push(y[N].block), N++; while (N < y.length && y[N].wrapperTemplate === C.wrapperTemplate);
+        var P = l.cloneElement(C.wrapperTemplate, {
           key: C.key + "-wrap",
           "data-offset-key": C.offsetKey
-        }, w);
-        A.push(R)
+        }, R);
+        A.push(P)
       } else A.push(C.block), N++
     }
     return l.createElement("div", {

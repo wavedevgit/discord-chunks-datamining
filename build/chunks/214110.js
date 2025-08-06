@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(255367),
   i = n(442837),
-  a = n(481060),
-  o = n(251794),
+  o = n(481060),
+  a = n(251794),
   s = n(386696),
   l = n(71619),
   c = n(271383),
@@ -25,7 +25,7 @@ function m(e) {
   } = e, g = (0, i.e7)([f.default, u.Z, d.Z], () => null != n && null != m && (0, s.F)(m.id, n.id, [f.default, u.Z, d.Z])), [E, b] = (0, l.ZP)(null == n ? void 0 : n.id, t.guild_id), y = (0, i.e7)([c.ZP], () => null != m && null != n && null != c.ZP.getMember(m.id, n.id));
   if (!g || !y) return null;
   let O = () => {
-    null != n && (0, o.z)({
+    null != n && (0, a.z)({
       guildId: t.guild_id,
       userId: n.id,
       modReportId: t.id
@@ -38,7 +38,7 @@ function m(e) {
   let I = "timeout-user-".concat(null == n ? void 0 : n.id);
   return (0, r.jsx)(_.Z, {
     text: v(),
-    icon: a.T39,
+    icon: o.T39,
     onClick: O,
     disabled: b
   }, I)

@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(255367),
   i = n(73800),
-  a = n(442837),
-  o = n(481060),
+  o = n(442837),
+  a = n(481060),
   s = n(846027),
   l = n(872810),
   c = n(803647),
@@ -30,7 +30,7 @@ function b(e) {
     appContext: v = h.IlC.APP
   } = e, {
     desktopSourceId: I
-  } = (0, a.cj)([d.Z], () => {
+  } = (0, o.cj)([d.Z], () => {
     var e;
     let {
       desktopSource: t
@@ -38,7 +38,7 @@ function b(e) {
     return {
       desktopSourceId: null == t ? void 0 : t.id
     }
-  }), T = (0, a.e7)([u.Z], () => u.Z.getState().soundshareEnabled), S = d.Z.supports(g.AN.DESKTOP_CAPTURE_APPLICATIONS), A = (0, a.e7)([d.Z], () => d.Z.supports(g.AN.SOUNDSHARE)), N = (0, a.e7)([d.Z], () => d.Z.supportsScreenSoundshare()), C = (0, p.Z)(t, v), w = (0, _.Z)(t, v, m.Vq), R = null != I && A && (!I.startsWith("screen") || N), P = (0, a.e7)([d.Z], () => d.Z.getUseSystemScreensharePicker() && (0, f.isLinux)()), D = i.useCallback(() => {
+  }), T = (0, o.e7)([u.Z], () => u.Z.getState().soundshareEnabled), S = d.Z.supports(g.AN.DESKTOP_CAPTURE_APPLICATIONS), A = (0, o.e7)([d.Z], () => d.Z.supports(g.AN.SOUNDSHARE)), N = (0, o.e7)([d.Z], () => d.Z.supportsScreenSoundshare()), C = (0, p.Z)(t, v), R = (0, _.Z)(t, v, m.Vq), P = null != I && A && (!I.startsWith("screen") || N), w = (0, o.e7)([d.Z], () => d.Z.getUseSystemScreensharePicker() && (0, f.isLinux)()), D = i.useCallback(() => {
     (null == I ? void 0 : I.startsWith("prepicked:")) ? d.Z.getMediaEngine().eachConnection(e => {
       e.context === g.Yn.STREAM && e.presentDesktopSourcePicker()
     }): n()
@@ -65,38 +65,38 @@ function b(e) {
       soundshareEnabled: !T
     }), s.Z.setGoLiveSource(r)
   }, [I, T]);
-  if (null == t) return (0, r.jsx)(o.sNh, {
+  if (null == t) return (0, r.jsx)(a.sNh, {
     id: "share-your-screen",
     label: E.intl.string(E.t.fjBNo6),
-    icon: o.hGI,
+    icon: a.hGI,
     action: n
   });
-  let x = f.isPlatformEmbedded ? (0, r.jsx)(o.sNh, {
+  let x = f.isPlatformEmbedded ? (0, r.jsx)(a.sNh, {
       id: "stream-settings",
       label: E.intl.string(E.t.ytAD9f),
       children: C
     }) : null,
-    k = R ? (0, r.jsx)(o.S89, {
+    M = P ? (0, r.jsx)(a.S89, {
       id: "stream-settings-audio-enable",
       label: O ? E.intl.string(E.t.af2Tw8) : E.intl.string(E.t.ZJEHt7),
       checked: T,
       action: L
     }) : null,
-    j = !S || y || P ? null : (0, r.jsx)(o.sNh, {
+    k = !S || y || w ? null : (0, r.jsx)(a.sNh, {
       id: "change-windows",
       label: O ? E.intl.string(E.t.eAktHh) : E.intl.string(E.t.qntSam),
-      icon: o.hGI,
+      icon: a.hGI,
       action: D
     }),
-    M = (0, r.jsx)(o.sNh, {
+    j = (0, r.jsx)(a.sNh, {
       id: "stop-streaming",
       label: E.intl.string(E.t.S5anIS),
-      icon: o.g5r,
+      icon: a.g5r,
       action: () => (0, c.Z)(t)
     });
   return O ? (0, r.jsxs)(r.Fragment, {
-    children: [M, j, x, k]
+    children: [j, k, x, M]
   }) : (0, r.jsxs)(r.Fragment, {
-    children: [x, b ? w : null, k, j, M]
+    children: [x, b ? R : null, M, k, j]
   })
 }

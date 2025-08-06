@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var i = n(120356),
-  a = n.n(i),
-  o = n(481060),
+  o = n.n(i),
+  a = n(481060),
   s = n(954859);
 
 function l(e, t, n) {
@@ -54,8 +54,8 @@ function f(e, t) {
   if (null == e) return {};
   var n, r, i = _(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -63,8 +63,8 @@ function f(e, t) {
 function _(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let p = {
@@ -93,9 +93,9 @@ function m(e) {
     style: _
   } = e, m = f(e, ["type", "className", "disabled", "selectable", "children", "style"]);
   let g = h.DEFAULT;
-  return i ? g = h.DISABLED : l && (g = h.SELECTABLE), (0, r.jsx)(o.Text, d(c({
+  return i ? g = h.DISABLED : l && (g = h.SELECTABLE), (0, r.jsx)(a.Text, d(c({
     variant: "text-sm/normal",
-    className: a()(s[t], n, s[g]),
+    className: o()(s[t], n, s[g]),
     style: _
   }, m), {
     children: u

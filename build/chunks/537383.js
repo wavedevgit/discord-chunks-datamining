@@ -1,16 +1,16 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => o
+  Z: () => a
 });
 var r = n(255367),
   i = n(73800),
-  a = n(794433);
-let o = i.forwardRef(function(e, t) {
+  o = n(794433);
+let a = i.forwardRef(function(e, t) {
   let {
     query: n,
     onQueryChange: i,
-    onRemoveTag: o,
+    onRemoveTag: a,
     onSelect: s,
     onSelectionChange: l,
     selectedSection: c,
@@ -23,11 +23,11 @@ let o = i.forwardRef(function(e, t) {
     "aria-labelledby": m,
     "aria-controls": g
   } = e;
-  return (0, r.jsx)(a.Z, {
+  return (0, r.jsx)(o.Z, {
     autoFocus: !0,
     maxHeight: 100,
     onQueryChange: i,
-    onRemoveTag: o,
+    onRemoveTag: a,
     selectedSection: c,
     selectedRow: u,
     onSelect: s,
@@ -35,7 +35,7 @@ let o = i.forwardRef(function(e, t) {
     placeholder: 0 === d.length ? _ : "",
     query: n,
     ref: t,
-    size: a.Z.Sizes.MEDIUM,
+    size: o.Z.Sizes.MEDIUM,
     tags: d,
     sections: f,
     focusAfterReady: p,

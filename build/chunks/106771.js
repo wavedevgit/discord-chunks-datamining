@@ -5,8 +5,8 @@ n.d(t, {
 }), n(953529);
 var r = n(255367),
   i = n(73800),
-  a = n(481060),
-  o = n(239091),
+  o = n(481060),
+  a = n(239091),
   s = n(973616),
   l = n(783097),
   c = n(176412),
@@ -49,7 +49,7 @@ function g(e) {
   } = e, y = i.useCallback(e => {
     if ((0, l.BQ)(h)) {
       let t = h instanceof s.ZP ? h : s.ZP.createFromServer(h);
-      (0, o.vq)(e, e => (0, r.jsx)(u.Z, m({
+      (0, a.vq)(e, e => (0, r.jsx)(u.Z, m({
         application: t
       }, e)))
     }
@@ -71,14 +71,14 @@ function g(e) {
     query: E,
     searchResultsPosition: b
   });
-  return (0, r.jsx)(a.P3F, {
+  return (0, r.jsx)(o.P3F, {
     className: _.clickable,
     innerRef: e => {
       S.current = e
     },
     onClick: g,
     onContextMenu: y,
-    children: (0, r.jsxs)(a.Rny, {
+    children: (0, r.jsxs)(o.Rny, {
       className: _.focusBlock,
       children: [(0, r.jsx)(d.Z, {
         src: O,
@@ -87,18 +87,18 @@ function g(e) {
         rendersPlaceholder: !0
       }), (0, r.jsxs)("div", {
         className: _.cmdDetails,
-        children: [(0, r.jsx)(a.X6q, {
+        children: [(0, r.jsx)(o.X6q, {
           variant: "heading-md/semibold",
           color: "header-primary",
           lineClamp: 1,
           children: null != (t = null == n ? void 0 : n.displayName) ? t : v
-        }), (0, r.jsx)(a.Text, {
+        }), (0, r.jsx)(o.Text, {
           variant: "text-sm/normal",
           color: "text-secondary",
           lineClamp: 1,
           children: T
         })]
-      }), null != n ? (0, r.jsx)(a.Text, {
+      }), null != n ? (0, r.jsx)(o.Text, {
         className: _.cmdAppName,
         variant: "text-sm/normal",
         color: "text-secondary",

@@ -5,8 +5,8 @@ n.d(t, {
 }), n(539854), n(388685);
 var r = n(255367),
   i = n(73800),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(748780),
   l = n(442837),
   c = n(215569),
@@ -77,8 +77,8 @@ class S extends i.PureComponent {
       widthAnimation: i
     } = this;
     r.setValue(1), n.setValue(0);
-    let a = [];
-    for (let e = 0; e < O.STEPS; e++) a.push(s.Z.timing(n, {
+    let o = [];
+    for (let e = 0; e < O.STEPS; e++) o.push(s.Z.timing(n, {
       toValue: -O.FRAME_SIZE * e,
       duration: O.FRAME_DURATION
     }));
@@ -86,7 +86,7 @@ class S extends i.PureComponent {
       toValue: 0,
       duration: v.DURATION_OUT,
       easing: v.EASING_OUT
-    }), s.Z.sequence(a), s.Z.timing(i, {
+    }), s.Z.sequence(o), s.Z.timing(i, {
       toValue: 0,
       duration: T
     })]).start(e)
@@ -128,17 +128,17 @@ class S extends i.PureComponent {
       theme: e,
       children: t,
       className: n
-    } = this.props, i = (0, u.wj)(e), a = o()(m.sprite, {
+    } = this.props, i = (0, u.wj)(e), o = a()(m.sprite, {
       [E.crossWhite]: i,
       [E.crossGrey]: !i
     });
     return (0, r.jsxs)(s.Z.div, {
-      className: o()(m.transition, n),
+      className: a()(m.transition, n),
       style: this.getWidthStyle(),
       children: [(0, r.jsx)("div", {
-        className: o()(m.spriteWrapper, g.horizontal, g.justifyCenter, g.alignCenter),
+        className: a()(m.spriteWrapper, g.horizontal, g.justifyCenter, g.alignCenter),
         children: (0, r.jsx)(s.Z.div, {
-          className: a,
+          className: o,
           style: this.getSpriteStyle()
         })
       }), (0, r.jsx)(s.Z.div, {
@@ -161,14 +161,14 @@ function N(e) {
     participants: t,
     onContextMenu: n,
     className: i,
-    onClick: a,
+    onClick: o,
     width: s,
     guildId: u
   } = e, g = (0, f.ZP)(), E = A(s, t.length), b = (0, l.e7)([_.Z], () => _.Z.isFocused()), y = t.map(e => {
     var t, i;
     if (e.type !== h.fO.USER) return null;
     let {
-      user: o,
+      user: a,
       voiceState: s,
       speaking: l,
       ringing: c
@@ -178,21 +178,21 @@ function N(e) {
       width: (0, d.pxk)(E),
       theme: g,
       children: (0, r.jsx)(p.Z, {
-        userId: o.id,
-        src: o.getAvatarURL(u, (0, d.pxk)(E), l && b),
+        userId: a.id,
+        src: a.getAvatarURL(u, (0, d.pxk)(E), l && b),
         size: E,
         muted: null != (t = null == s ? void 0 : s.isVoiceMuted()) && t,
         deafen: null != (i = null == s ? void 0 : s.isVoiceDeafened()) && i,
         speaking: l,
         ringing: c,
-        onClick: t => null == a ? void 0 : a(e, t),
+        onClick: t => null == o ? void 0 : o(e, t),
         onContextMenu: t => null == n ? void 0 : n(e, t)
       }, e.id)
-    }, o.id)
+    }, a.id)
   });
   return (0, r.jsx)(c.W, {
     component: "div",
-    className: o()(m.root, i),
+    className: a()(m.root, i),
     children: y
   })
 }

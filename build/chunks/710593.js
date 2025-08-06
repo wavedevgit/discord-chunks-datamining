@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var i = n(120356),
-  a = n.n(i),
-  o = n(358085),
+  o = n.n(i),
+  a = n(358085),
   s = n(388032),
   l = n(890797);
 
@@ -20,7 +20,7 @@ function c(e) {
     width: "10",
     height: "10",
     xmlns: "http://www.w3.org/2000/svg",
-    className: a()(l.bindArrow, l[t]),
+    className: o()(l.bindArrow, l[t]),
     children: (0, r.jsx)("g", {
       fill: "#FFFFFF",
       children: (0, r.jsx)("polygon", {
@@ -36,9 +36,9 @@ function u(e) {
     children: t,
     text: n,
     macText: i,
-    label: a,
+    label: o,
     macLabel: s
-  } = e, c = (0, o.isMac)() || (0, o.isMacWeb)(), u = c && null != i ? l.systemFont : void 0, d = c && null != s ? s : a, f = c && null != i ? i : null != t ? t : n;
+  } = e, c = (0, a.isMac)() || (0, a.isMacWeb)(), u = c && null != i ? l.systemFont : void 0, d = c && null != s ? s : o, f = c && null != i ? i : null != t ? t : n;
   return (0, r.jsx)("span", {
     className: u,
     role: null != d ? "img" : void 0,
@@ -137,14 +137,14 @@ function f(e) {
     shortcut: t,
     dim: n = !1,
     className: i,
-    keyClassName: o
+    keyClassName: a
   } = e, s = Array.isArray(t) ? t : t.split("+");
   return (0, r.jsx)("div", {
-    className: a()(l.combo, i, {
+    className: o()(l.combo, i, {
       [l.dim]: n
     }),
     children: s.map(e => null != d[e] ? d[e]() : e).map((e, t) => (0, r.jsx)("span", {
-      className: a()(l.key, o),
+      className: o()(l.key, a),
       children: e
     }, t))
   })

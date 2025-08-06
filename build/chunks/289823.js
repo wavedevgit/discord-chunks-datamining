@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(255367),
   i = n(73800),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(974674),
   l = n(438784),
   c = n(481060),
@@ -40,8 +40,8 @@ function h(e, t) {
   if (null == e) return {};
   var n, r, i = m(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -49,8 +49,8 @@ function h(e, t) {
 function m(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let g = {};
@@ -58,14 +58,14 @@ let g = {};
 function E(e, t, n) {
   let r = c.ny6[e],
     i = r.size / (d.z3 + d.o),
-    a = i * d.z3,
-    o = i * d.o,
-    l = o + a / 2,
+    o = i * d.z3,
+    a = i * d.o,
+    l = a + o / 2,
     u = {
       statusCoords: (0, s.Vq)(r, c.Skl.ONLINE, !1, t),
-      frontAvatarSizePx: a,
+      frontAvatarSizePx: o,
       backAvatarSizePx: i,
-      frontAvatarOffsetPx: o,
+      frontAvatarOffsetPx: a,
       frontAvatarCenter: l
     };
   return g[n] = u, u
@@ -99,7 +99,7 @@ function O(e) {
     isTyping: t,
     statusCoords: n,
     status: i
-  } = e, a = (0, c.vjg)(c.Skl.ONLINE);
+  } = e, o = (0, c.vjg)(c.Skl.ONLINE);
   return t ? (0, r.jsx)("div", {
     style: {
       position: "absolute",
@@ -108,7 +108,7 @@ function O(e) {
     },
     children: (0, r.jsx)(y, {
       height: n.height,
-      fillColor: a
+      fillColor: o
     })
   }) : null != i ? (0, r.jsx)(c.qbd, {
     size: n.height,
@@ -189,7 +189,7 @@ let S = function(e) {
   var {
     backSrc: t,
     frontSrc: n,
-    size: a,
+    size: o,
     isTyping: s,
     status: l,
     style: d,
@@ -197,7 +197,7 @@ let S = function(e) {
   } = e, m = h(e, ["backSrc", "frontSrc", "size", "isTyping", "status", "style", "className"]);
   let {
     size: b
-  } = c.ny6[a], {
+  } = c.ny6[o], {
     statusCoords: y,
     frontAvatarOffsetPx: I,
     frontAvatarSizePx: S,
@@ -205,8 +205,8 @@ let S = function(e) {
   } = i.useMemo(() => {
     var e;
     let t = "".concat(b, "-").concat(s);
-    return null != (e = g[t]) ? e : E(a, s, t)
-  }, [b, s, a]), N = T(null != l, s, a);
+    return null != (e = g[t]) ? e : E(o, s, t)
+  }, [b, s, o]), N = T(null != l, s, o);
   return (0, r.jsxs)("div", {
     style: p({
       width: b,
@@ -214,7 +214,7 @@ let S = function(e) {
     }, d),
     "aria-label": m["aria-label"],
     "aria-hidden": m["aria-hidden"],
-    className: o()(f.container, _),
+    className: a()(f.container, _),
     children: [(0, r.jsxs)(u.ZP, {
       mask: N,
       height: b,

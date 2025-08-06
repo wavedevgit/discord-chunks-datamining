@@ -1,20 +1,20 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  i: () => a
+  i: () => o
 });
 var r = n(981631),
   i = n(388032);
 
-function a(e) {
+function o(e) {
   let {
     username: t,
     usernameOnClickHandler: n = r.dG4,
-    productName: a
+    productName: o
   } = e;
   return i.intl.formatToParts(i.t.w4iXs7, {
     username: t,
     usernameHook: n,
-    productName: a
+    productName: o
   })
 }

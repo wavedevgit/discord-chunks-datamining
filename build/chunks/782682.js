@@ -1,5 +1,4 @@
-/** Chunk was on web.js **/
-"use strict";
+/** Chunk was on 12097 **/
 e.exports = {
   searchIndexAnimation: "searchIndexAnimation_e1fee6",
   searchIndexBackground: "searchIndexBackground_e1fee6",

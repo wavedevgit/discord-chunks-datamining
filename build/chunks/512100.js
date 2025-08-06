@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var i = n(409794),
-  a = n(777207),
-  o = n(541822),
+  o = n(777207),
+  a = n(541822),
   s = n(330711),
   l = n(845533);
 let c = 96;
@@ -25,7 +25,7 @@ function u(e) {
   } : void 0, h = null != n && "" !== n;
   return (0, r.jsx)("div", {
     className: l.container,
-    children: (0, r.jsx)(o.Z, {
+    children: (0, r.jsx)(a.Z, {
       className: l.scroller,
       children: (0, r.jsxs)("div", {
         className: l.scrollContent,
@@ -56,7 +56,7 @@ function u(e) {
               color: "header-primary",
               variant: "heading-xl/semibold",
               children: d
-            }), h && (0, r.jsx)(a.x, {
+            }), h && (0, r.jsx)(o.x, {
               color: "text-default",
               variant: "text-md/normal",
               className: l.description,
@@ -64,7 +64,7 @@ function u(e) {
             })]
           }), null != t && (0, r.jsxs)("div", {
             className: l.benefits,
-            children: [(0, r.jsx)(a.x, {
+            children: [(0, r.jsx)(o.x, {
               color: "header-secondary",
               variant: "eyebrow",
               children: s.Z.Messages.STOREFRONT_BENEFITS_TITLE

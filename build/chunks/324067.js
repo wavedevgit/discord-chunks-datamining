@@ -1,11 +1,11 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => j
+  Z: () => k
 }), n(539854), n(388685);
 var r, i = n(442837),
-  a = n(570140),
-  o = n(740504),
+  o = n(570140),
+  a = n(740504),
   s = n(853856),
   l = n(314897),
   c = n(592125),
@@ -58,7 +58,7 @@ function y(e) {
       channel: t,
       index: -1
     }), n[t.id] = []
-  }), t[u.sH].forEach(r), t[u.Zb].forEach(r), (0, o.Z)(n._categories, n).forEach(b), h[e] = n, n
+  }), t[u.sH].forEach(r), t[u.Zb].forEach(r), (0, a.Z)(n._categories, n).forEach(b), h[e] = n, n
 }
 
 function O() {
@@ -125,20 +125,20 @@ function C(e) {
   h[t] = void 0, t === p && y(t)
 }
 
-function w(e, t) {
+function R(e, t) {
   if (m = t, null == e || null == e.getGuildId()) return !1;
   let n = e.getGuildId();
   return null != n && (h[n] = void 0, n === p && y(n), !0)
 }
 
-function R(e) {
+function P(e) {
   let {
     channelId: t
   } = e;
-  return null == t && null != m ? w(c.Z.getChannel(m), null) : w(c.Z.getChannel(t), t)
+  return null == t && null != m ? R(c.Z.getChannel(m), null) : R(c.Z.getChannel(t), t)
 }
 
-function P(e) {
+function w(e) {
   let {
     voiceStates: t
   } = e;
@@ -147,7 +147,7 @@ function P(e) {
       channelId: n,
       sessionId: r
     } = t;
-    return l.default.getSessionId() !== r ? e : w(c.Z.getChannel(n), n) || e
+    return l.default.getSessionId() !== r ? e : R(c.Z.getChannel(n), n) || e
   }, !1)
 }
 
@@ -167,7 +167,7 @@ function x(e) {
   let t = h[e];
   return null != t ? t : y(e)
 }
-class k extends(r = i.ZP.Store) {
+class M extends(r = i.ZP.Store) {
   initialize() {
     this.waitFor(u.ZP, d.Z, l.default, c.Z, s.Z), this.syncWith([s.Z], L)
   }
@@ -175,8 +175,8 @@ class k extends(r = i.ZP.Store) {
     return null != e ? x(e) : E
   }
 }
-_(k, "displayName", "GuildCategoryStore");
-let j = new k(a.Z, {
+_(M, "displayName", "GuildCategoryStore");
+let k = new M(o.Z, {
   CHANNEL_SELECT: D,
   CONNECTION_OPEN: O,
   OVERLAY_INITIALIZE: O,
@@ -194,6 +194,6 @@ let j = new k(a.Z, {
   GUILD_ROLE_DELETE: C,
   IMPERSONATE_UPDATE: C,
   IMPERSONATE_STOP: C,
-  VOICE_CHANNEL_SELECT: R,
-  VOICE_STATE_UPDATES: P
+  VOICE_CHANNEL_SELECT: P,
+  VOICE_STATE_UPDATES: w
 })

@@ -1,20 +1,20 @@
-/** Chunk was on 57932 **/
+/** Chunk was on 85664 **/
 i.d(e, {
   H: () => C,
   v: () => S
 }), i(388685);
 var s = i(512722),
-  a = i.n(s),
-  n = i(97519),
+  n = i.n(s),
+  a = i(97519),
   o = i(313361),
   r = i(697988),
   l = i(683860),
-  d = i(731965),
-  h = i(442837),
+  h = i(731965),
+  d = i(442837),
   u = i(592125),
-  g = i(559241);
+  c = i(559241);
 
-function c(t, e, i) {
+function g(t, e, i) {
   return e in t ? Object.defineProperty(t, e, {
     value: i,
     enumerable: !0,
@@ -30,27 +30,27 @@ function p(t) {
     "function" == typeof Object.getOwnPropertySymbols && (s = s.concat(Object.getOwnPropertySymbols(i).filter(function(t) {
       return Object.getOwnPropertyDescriptor(i, t).enumerable
     }))), s.forEach(function(e) {
-      c(t, e, i[e])
+      g(t, e, i[e])
     })
   }
   return t
 }
-let b = new Set,
+let f = new Set,
   m = {
     layoutType: o.X.LIST,
     sortOrder: l.z.CREATION_DATE,
-    tagFilter: b,
+    tagFilter: f,
     scrollPosition: 0,
     tagSetting: r.z.MATCH_SOME
   };
-class f {
+class b {
   constructor(t, e) {
-    c(this, "set", void 0), c(this, "get", void 0), c(this, "channelStates", void 0), c(this, "setChannelState", void 0), c(this, "getChannelState", void 0), c(this, "toggleTagFilter", void 0), c(this, "setTagFilter", void 0), c(this, "setSortOrder", void 0), c(this, "setLayoutType", void 0), c(this, "setTagSetting", void 0), c(this, "setScrollPosition", void 0), this.set = t, this.get = e, this.channelStates = {}, this.setChannelState = (t, e) => {
+    g(this, "set", void 0), g(this, "get", void 0), g(this, "channelStates", void 0), g(this, "setChannelState", void 0), g(this, "getChannelState", void 0), g(this, "toggleTagFilter", void 0), g(this, "setTagFilter", void 0), g(this, "setSortOrder", void 0), g(this, "setLayoutType", void 0), g(this, "setTagSetting", void 0), g(this, "setScrollPosition", void 0), this.set = t, this.get = e, this.channelStates = {}, this.setChannelState = (t, e) => {
       let i = this.get(),
         s = this.getChannelState(t),
-        a = p({}, i.channelStates);
-      a[t] = p({}, s, e), (0, d.j)(() => this.set({
-        channelStates: a
+        n = p({}, i.channelStates);
+      n[t] = p({}, s, e), (0, h.j)(() => this.set({
+        channelStates: n
       }))
     }, this.getChannelState = t => {
       if (null == t) return m;
@@ -59,10 +59,10 @@ class f {
       } = this.get(), i = e[t];
       if (null == i) {
         let e = u.Z.getChannel(t);
-        a()(null != e, "[Forum Channel Store] The channel should not be missing."), i = {
+        n()(null != e, "[Forum Channel Store] The channel should not be missing."), i = {
           layoutType: e.getDefaultLayout(),
           sortOrder: e.getDefaultSortOrder(),
-          tagFilter: b,
+          tagFilter: f,
           scrollPosition: 0,
           tagSetting: e.getDefaultTagSetting()
         }
@@ -74,19 +74,19 @@ class f {
     }, this.setTagFilter = (t, e) => {
       this.setChannelState(t, {
         tagFilter: e
-      }), g.Z.setFilterTagIds(e)
+      }), c.Z.setFilterTagIds(e)
     }, this.setSortOrder = (t, e) => {
       this.setChannelState(t, {
         sortOrder: e
-      }), g.Z.setSortOrder(e)
+      }), c.Z.setSortOrder(e)
     }, this.setLayoutType = (t, e) => {
       this.setChannelState(t, {
         layoutType: e
-      }), g.Z.setLayout(e)
+      }), c.Z.setLayout(e)
     }, this.setTagSetting = (t, e) => {
       this.setChannelState(t, {
         tagSetting: e
-      }), g.Z.setTagSetting(e)
+      }), c.Z.setTagSetting(e)
     }, this.setScrollPosition = (t, e) => {
       this.setChannelState(t, {
         scrollPosition: e
@@ -94,9 +94,9 @@ class f {
     }
   }
 }
-let v = (0, n.U)((t, e) => new f(t, e)),
+let v = (0, a.U)((t, e) => new b(t, e)),
   C = t => {
     let e = v();
-    return null == (0, h.e7)([u.Z], () => u.Z.getChannel(t)) ? m : e.getChannelState(t)
+    return null == (0, d.e7)([u.Z], () => u.Z.getChannel(t)) ? m : e.getChannelState(t)
   },
   S = () => v

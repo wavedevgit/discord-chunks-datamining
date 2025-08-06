@@ -7,8 +7,8 @@ n.d(t, {
 });
 var r = n(255367),
   i = n(73800),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(481060),
   l = n(377171),
   c = n(951394),
@@ -59,8 +59,8 @@ function g(e, t) {
   if (null == e) return {};
   var n, r, i = E(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -68,15 +68,15 @@ function g(e, t) {
 function E(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let b = i.forwardRef(function(e, t) {
   var {
     label: n,
     ariaLabel: i,
-    tooltipText: a,
+    tooltipText: o,
     tooltipColor: _,
     icon: h,
     iconProps: E,
@@ -90,9 +90,9 @@ let b = i.forwardRef(function(e, t) {
     showNewBadge: A,
     buttonClassName: N,
     children: C
-  } = e, w = g(e, ["label", "ariaLabel", "tooltipText", "tooltipColor", "icon", "iconProps", "onClick", "onTooltipShow", "onTooltipHide", "disabled", "dangerous", "separator", "sparkle", "showNewBadge", "buttonClassName", "children"]);
+  } = e, R = g(e, ["label", "ariaLabel", "tooltipText", "tooltipColor", "icon", "iconProps", "onClick", "onTooltipShow", "onTooltipHide", "disabled", "dangerous", "separator", "sparkle", "showNewBadge", "buttonClassName", "children"]);
   let {
-    canShowReactionsOnMessageHover: R
+    canShowReactionsOnMessageHover: P
   } = u.ZP.useExperiment({
     location: "HoverBarButton"
   }, {
@@ -103,7 +103,7 @@ let b = i.forwardRef(function(e, t) {
   }, {
     autoTrackExposure: !0
   }), (0, r.jsx)(s.ua7, {
-    text: null != a ? a : n,
+    text: null != o ? o : n,
     color: null != _ ? _ : s.FGA.PRIMARY,
     "aria-label": n,
     onTooltipShow: y,
@@ -112,17 +112,17 @@ let b = i.forwardRef(function(e, t) {
     tooltipClassName: f.tooltip,
     children: e => {
       let {
-        onMouseEnter: a,
+        onMouseEnter: o,
         onMouseLeave: u,
         onClick: _
       } = e;
       return (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsxs)(c.zx, m(p({
           ref: t,
-          className: o()(N, {
-            [f.hoverBarButton]: R
+          className: a()(N, {
+            [f.hoverBarButton]: P
           }),
-          onMouseEnter: a,
+          onMouseEnter: o,
           onMouseLeave: u,
           onClick: e => {
             null == _ || _(), b(e)
@@ -130,12 +130,12 @@ let b = i.forwardRef(function(e, t) {
           "aria-label": null != i ? i : n,
           disabled: v,
           dangerous: I
-        }, w), {
+        }, R), {
           children: [null != h ? (0, r.jsx)(h, p({
             className: f.icon,
             color: "currentColor"
           }, E)) : null, null != C ? (0, r.jsx)("div", {
-            className: o()(f.icon, f.buttonContent),
+            className: a()(f.icon, f.buttonContent),
             children: C
           }) : null, S && (0, r.jsx)(s.K1N, {}), A && (0, r.jsx)(s.IGR, {
             text: d.intl.string(d.t.y2b7CA),
@@ -153,7 +153,7 @@ function y(e) {
     className: t
   } = e;
   return (0, r.jsx)("div", {
-    className: o()(f.separator, t)
+    className: a()(f.separator, t)
   })
 }
 
@@ -173,7 +173,7 @@ function O(e) {
   }, {
     autoTrackExposure: !0
   }), (0, r.jsx)(c.ZP, {
-    className: o()(n.className, f.popover, {
+    className: a()(n.className, f.popover, {
       [f.popoverReactionHoverBar]: i
     }),
     children: t

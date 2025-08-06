@@ -2,8 +2,8 @@
 "use strict";
 var r = n(169774),
   i = n(973588),
-  a = n(741930),
-  o = n(289281),
+  o = n(741930),
+  a = n(289281),
   s = n(142893),
   l = n(931280),
   c = n(658422),
@@ -16,8 +16,8 @@ var r = n(169774),
   m = r.isBrowser("Chrome") ? h : function(e) {};
 e.exports = {
   onBeforeInput: i,
-  onBlur: a,
-  onCompositionStart: o,
+  onBlur: o,
+  onCompositionStart: a,
   onCopy: s,
   onCut: l,
   onDragOver: c,

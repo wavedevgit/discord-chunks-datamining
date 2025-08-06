@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(255367),
   i = n(73800),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(366736);
 let l = 2;
 
@@ -17,7 +17,7 @@ function c() {
     let {
       showAll: n = !1,
       className: i,
-      children: a,
+      children: o,
       lineClamp: c = l
     } = e, u = {
       lineClamp: c,
@@ -27,9 +27,9 @@ function c() {
     };
     return (0, r.jsx)("div", {
       ref: d,
-      className: o()(s.lineClamp, i),
+      className: a()(s.lineClamp, i),
       style: n ? void 0 : u,
-      children: a
+      children: o
     })
   }
   return {

@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var i = n(442837),
-  a = n(481060),
-  o = n(846027),
+  o = n(481060),
+  a = n(846027),
   s = n(131951),
   l = n(36703),
   c = n(388032);
@@ -53,13 +53,13 @@ function _(e, t) {
 
 function p(e) {
   let t = (0, i.e7)([s.Z], () => (0, l.P)(s.Z.getInputVolume()));
-  return (0, r.jsx)(a.II_, {
+  return (0, r.jsx)(o.II_, {
     id: "input",
     label: c.intl.string(c.t.OX2Bnp),
-    control: (n, i) => (0, r.jsx)(a._wy, _(d({}, n), {
+    control: (n, i) => (0, r.jsx)(o._wy, _(d({}, n), {
       ref: i,
       value: t,
-      onChange: t => o.Z.setInputVolume((0, l.A)(t), {
+      onChange: t => a.Z.setInputVolume((0, l.A)(t), {
         analyticsLocations: e
       }),
       "aria-label": c.intl.string(c.t.OX2Bnp)

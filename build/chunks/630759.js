@@ -3,25 +3,25 @@
 n.d(t, {
   J6: () => G,
   LO: () => D,
-  TQ: () => P,
+  TQ: () => w,
   UB: () => H,
   ZU: () => L,
   Zn: () => x,
-  aZ: () => w,
-  bo: () => k,
+  aZ: () => R,
+  bo: () => M,
   fz: () => W,
-  kK: () => j,
+  kK: () => k,
   lg: () => Y,
   om: () => F,
-  pL: () => R,
+  pL: () => P,
   uV: () => C,
   uX: () => V
 }), n(410992), n(227481), n(730884), n(20464), n(341884), n(364341), n(629680), n(505025), n(918970), n(121784), n(644351), n(146733), n(388685);
 var r = n(250683),
   i = n(512722),
-  a = n.n(i),
-  o = n(913527),
-  s = n.n(o),
+  o = n.n(i),
+  a = n(913527),
+  s = n.n(a),
   l = n(544891),
   c = n(974167),
   u = n(668781),
@@ -47,15 +47,15 @@ function C() {
   return g.Z.getArticleURL(A.BhN.END_TO_END_ENCRYPTION)
 }
 
-function w() {
-  return g.Z.getArticleURL(A.BhN.END_TO_END_ENCRYPTION)
-}
-
 function R() {
   return g.Z.getArticleURL(A.BhN.END_TO_END_ENCRYPTION)
 }
 
-function P(e, t, n, r, i) {
+function P() {
+  return g.Z.getArticleURL(A.BhN.END_TO_END_ENCRYPTION)
+}
+
+function w(e, t, n, r, i) {
   n ? O.Z.createSecureFramesVerifiedKey(e, t) : O.Z.createSecureFramesTransientKey(e, t), (0, T.M1)({
     channelId: r,
     userId: e,
@@ -94,7 +94,7 @@ function x(e) {
   })
 }
 
-function k(e) {
+function M(e) {
   let t = s()(e),
     n = s()().diff(t, "s");
   if (n > 12 * m.Z.Seconds.DAYS_30) {
@@ -137,7 +137,7 @@ function k(e) {
   }
 }
 
-function j(e) {
+function k(e) {
   let {
     isCurrentUserKeyPersistent: t,
     isOtherUserKeyPersistent: n,
@@ -154,9 +154,9 @@ function j(e) {
     helpArticle: C()
   })
 }
-async function M(e) {
+async function j(e) {
   let t = d.default.getStaticAuthSessionId();
-  return a()(null != t, "[getCurrentUserPublicKey] session id should not be null"), await f.Z.getMLSSigningKey(t, e)
+  return o()(null != t, "[getCurrentUserPublicKey] session id should not be null"), await f.Z.getMLSSigningKey(t, e)
 }
 
 function U(e) {
@@ -181,7 +181,7 @@ async function B(e) {
   let {
     key: t,
     signature: n
-  } = await M(e);
+  } = await j(e);
   try {
     await l.tn.put({
       url: A.ANM.VOICE_PUBLIC_KEYS(),
@@ -208,7 +208,7 @@ async function V(e) {
   let t = d.default.getId(),
     {
       key: n
-    } = await M(e),
+    } = await j(e),
     r = await G(t, n, e);
   return r || (0, T.KA)(e), r
 }
@@ -218,14 +218,14 @@ function H(e, t) {
   if (!n.isUserConnected(e)) return !1;
   let i = n.getSecureFramesRosterMapEntry(e);
   if (null == i) return !1;
-  let a = new Uint8Array(i);
+  let o = new Uint8Array(i);
   for (let t of r.getAllActiveStreamKeys()) {
     if (!r.isUserConnected(t, e)) continue;
     let n = p.Z.getSecureFramesRosterMapEntry(t, e);
     if (null == n) return !0;
     let i = new Uint8Array(n);
-    for (let e = 0; e < a.length; e++)
-      if (a[e] !== i[e]) return !0
+    for (let e = 0; e < o.length; e++)
+      if (o[e] !== i[e]) return !0
   }
   return !1
 }

@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var i = n(442837),
-  a = n(481060),
-  o = n(87051),
+  o = n(481060),
+  a = n(87051),
   s = n(729052),
   l = n(9156),
   c = n(621600),
@@ -102,24 +102,24 @@ function g(e) {
   if (null == b) return null;
 
   function y(e) {
-    null != t && o.Z.updateChannelOverrideSettings(t, n, {
+    null != t && a.Z.updateChannelOverrideSettings(t, n, {
       message_notifications: e
     }, c.UE.notifications(e))
   }
   return (0, r.jsxs)(r.Fragment, {
     children: [e.isForumLikeChannel() ? (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(a.S89, {
+      children: [(0, r.jsx)(o.S89, {
         id: "new-forum-threads-created",
         label: d.intl.string(d.t.Rkgjpq),
         checked: _,
-        action: () => o.Z.setForumThreadsCreated(e, !_)
-      }), (0, r.jsx)(a.Clw, {})]
+        action: () => a.Z.setForumThreadsCreated(e, !_)
+      }), (0, r.jsx)(o.Clw, {})]
     }) : null, b.map(t => {
       let {
         setting: n,
         label: i
       } = t;
-      return (0, r.jsx)(a.k5B, {
+      return (0, r.jsx)(o.k5B, {
         group: "channel-notifications",
         id: "".concat(n),
         label: i,
@@ -133,7 +133,7 @@ function g(e) {
 
 function E(e) {
   var t, n;
-  let o = g(e),
+  let a = g(e),
     c = (0, i.e7)([l.ZP], () => l.ZP.resolvedMessageNotifications(e), [e]),
     f = (0, i.e7)([l.ZP], () => l.ZP.getChannelOverrides(e.guild_id)[e.id], [e.guild_id, e.id]),
     _ = null == f ? u.bL.NULL : f.message_notifications,
@@ -144,10 +144,10 @@ function E(e) {
       } = e;
       return t === c
     })) ? void 0 : t.label;
-  return null != o ? (0, r.jsx)(a.sNh, {
+  return null != a ? (0, r.jsx)(o.sNh, {
     id: "channel-notifications",
     label: d.intl.string(d.t.h850Sk),
     subtext: m,
-    children: o
+    children: a
   }) : null
 }

@@ -3,11 +3,11 @@
 let r;
 n.r(t), n.d(t, {
   default: () => C,
-  renderChangelogMessageMarkup: () => w
+  renderChangelogMessageMarkup: () => R
 }), n(35282), n(704826);
 var i = n(159635),
-  a = n.n(i),
-  o = n(800927),
+  o = n.n(i),
+  a = n(800927),
   s = n(945884),
   l = n(594199),
   c = n(454585);
@@ -50,13 +50,13 @@ function _(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let p = a().defaultRules.lheading,
-  h = a().defaultRules.heading,
-  m = a().defaultRules.link,
-  g = a().defaultRules.image,
-  E = a().defaultRules.list,
-  b = a().defaultRules.blockQuote,
-  y = a().defaultRules.paragraph,
+let p = o().defaultRules.lheading,
+  h = o().defaultRules.heading,
+  m = o().defaultRules.link,
+  g = o().defaultRules.image,
+  E = o().defaultRules.list,
+  b = o().defaultRules.blockQuote,
+  y = o().defaultRules.paragraph,
   O = /\{(.+?)}/,
   v = /^\$(\w+?)\$/;
 r = n(235375);
@@ -66,11 +66,11 @@ let I = e => {
     } = e;
     return (e, n, r) => {
       let i = O.exec(e[1]),
-        o = e[1].replace(O, "");
-      return t && (o = o.toUpperCase()), {
+        a = e[1].replace(O, "");
+      return t && (a = a.toUpperCase()), {
         className: null != i ? i[1] : null,
         level: "=" === e[2] ? 1 : 2,
-        content: a().parseInline(n, o, r)
+        content: o().parseInline(n, a, r)
       }
     }
   },
@@ -110,9 +110,9 @@ let I = e => {
     }), "function" == typeof r.customRules.lheading ? r.customRules.lheading(e) : r.customRules.lheading)
   }),
   A = e => _(d({}, T(e)), {
-    newline: d({}, a().defaultRules.newline),
+    newline: d({}, o().defaultRules.newline),
     text: l.ZP,
-    list: o.Z,
+    list: a.Z,
     subtext: s.Z
   });
 
@@ -125,7 +125,7 @@ let C = {
   getMessageRules: e => d({}, A(e))
 };
 
-function w(e, t, n) {
+function R(e, t, n) {
   return {
     hasSpoilerEmbeds: !1,
     content: c.Z.reactParserFor(N(t))(e.content, !1, null != n ? {

@@ -14,8 +14,8 @@ n.d(t, {
 }), n(35282), n(953529), n(388685), n(664751), n(544891);
 var r = n(749210),
   i = n(336197),
-  a = n(41776),
-  o = n(703656),
+  o = n(41776),
+  a = n(703656),
   s = n(769654),
   l = n(650774),
   c = n(430824),
@@ -63,20 +63,20 @@ function h(e, t) {
 async function m(e, t) {
   let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {},
     {
-      channelId: a,
+      channelId: o,
       onSuccess: l,
       joinSource: u,
       loadId: f,
       shouldNavigate: p = !0
     } = n,
-    m = (0, o.s1)(),
+    m = (0, a.s1)(),
     g = c.Z.getGuild(e),
     E = {
       state: {
         analyticsSource: t
       }
     };
-  null != g && null != g.joinedAt ? p && (null == a ? (0, s.X)(e, E) : (0, i.Z)(d.Z5c.CHANNEL(e, a, n.messageId), h(_({}, E), {
+  null != g && null != g.joinedAt ? p && (null == o ? (0, s.X)(e, E) : (0, i.Z)(d.Z5c.CHANNEL(e, o, n.messageId), h(_({}, E), {
     navigationReplace: !0,
     openChannel: !0
   }))) : (await r.Z.joinGuild(e, {
@@ -85,11 +85,11 @@ async function m(e, t) {
     loadId: f,
     lurkLocation: null == t ? void 0 : t.page
   }), p && await r.Z.transitionToGuildSync(e, h(_({}, E), {
-    welcomeModalChannelId: a,
-    navigationReplace: null != a,
-    openChannel: null != a,
+    welcomeModalChannelId: o,
+    navigationReplace: null != o,
+    openChannel: null != o,
     search: m.location.search
-  }), a, n.messageId)), null == l || l()
+  }), o, n.messageId)), null == l || l()
 }
 
 function g(e) {
@@ -181,8 +181,8 @@ function T(e) {
     searchId: n,
     query: r,
     guildResults: i,
-    analyticsContext: a,
-    categoryId: o,
+    analyticsContext: o,
+    categoryId: a,
     isTagSearch: s
   } = e;
   u.default.track(d.rMx.SEARCH_RESULT_VIEWED, {
@@ -192,13 +192,13 @@ function T(e) {
     total_results: void 0 !== i ? i.length : null,
     guild_ids: void 0 !== i ? i.map(e => e.id) : null,
     query: r,
-    location: a.location,
-    category_id: o
+    location: o.location,
+    category_id: a
   })
 }
 
 function S(e) {
-  let t = a.Z.getLoadId(e);
+  let t = o.Z.getLoadId(e);
   u.default.track(d.rMx.GUILD_DISCOVERY_GUILD_JOIN_CLICKED, {
     guild_id: e,
     load_id: t,

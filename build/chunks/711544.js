@@ -6,7 +6,7 @@ n.d(t, {
 var r = n(740078),
   i = n(510104);
 
-function a(e, t, n) {
+function o(e, t, n) {
   return void 0 === n && (n = {
     x: 0,
     y: 0
@@ -18,7 +18,7 @@ function a(e, t, n) {
   }
 }
 
-function o(e) {
+function a(e) {
   return [r.we, r.F2, r.I, r.t$].some(function(t) {
     return e[t] >= 0
   })
@@ -40,10 +40,10 @@ let s = {
       u = (0, i.Z)(t, {
         altBoundary: !0
       }),
-      d = a(c, r),
-      f = a(u, s, l),
-      _ = o(d),
-      p = o(f);
+      d = o(c, r),
+      f = o(u, s, l),
+      _ = a(d),
+      p = a(f);
     t.modifiersData[n] = {
       referenceClippingOffsets: d,
       popperEscapeOffsets: f,

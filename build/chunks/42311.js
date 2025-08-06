@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var i = n(120356),
-  a = n.n(i),
-  o = n(755721),
+  o = n.n(i),
+  a = n(755721),
   s = n(481060),
   l = n(626786),
   c = n(815756);
@@ -23,10 +23,10 @@ function d(e) {
     disabled: _ = !1,
     verified: p = !1
   } = e;
-  return (0, r.jsx)(o.zx, {
-    className: a()(t, c.button),
-    look: o.zx.Looks.BLANK,
-    size: o.zx.Sizes.NONE,
+  return (0, r.jsx)(a.zx, {
+    className: o()(t, c.button),
+    look: a.zx.Looks.BLANK,
+    size: a.zx.Sizes.NONE,
     onClick: f,
     disabled: _,
     children: (0, r.jsx)(l.Z, {

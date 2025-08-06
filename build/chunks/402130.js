@@ -1,6 +1,6 @@
 /** Chunk was on 49152 **/
 n.d(t, {
-  Z: () => _
+  Z: () => y
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -9,8 +9,8 @@ var r = n(255367),
   s = n(365943),
   o = n(594174),
   c = n(5192),
-  d = n(788111),
-  u = n(60577),
+  u = n(788111),
+  d = n(60577),
   h = n(184301),
   p = n(124823),
   f = n(550818),
@@ -36,23 +36,23 @@ function b(e) {
   return e
 }
 
-function _(e) {
+function y(e) {
   let {
     channel: t
-  } = e, [n] = t.recipients, _ = (0, l.e7)([o.default], () => o.default.getUser(n)), y = (0, l.e7)([o.default], () => o.default.getCurrentUser()), j = (0, u.Z)(), [O, x] = (0, d.Z)(n);
+  } = e, [n] = t.recipients, y = (0, l.e7)([o.default], () => o.default.getUser(n)), x = (0, l.e7)([o.default], () => o.default.getCurrentUser()), j = (0, d.Z)(), [_, O] = (0, u.Z)(n);
   if (i.useEffect(() => {
       (0, s.t)()
     }, []), i.useEffect(() => {
-      (0, h.Z)(null != _ ? _ : n, {
+      (0, h.Z)(null != y ? y : n, {
         type: "sidebar",
-        withMutualFriendsCount: (null == _ ? void 0 : _.bot) !== !0,
+        withMutualFriendsCount: (null == y ? void 0 : y.bot) !== !0,
         withMutualFriends: !1,
         withMutualGuilds: !0,
         channelId: t.id
       })
-    }, [_, n, t.id]), null == _ || null == y || !j) return null;
-  let v = "user-profile-sidebar-heading-".concat(_.id),
-    C = c.ZP.getName(null, t.id, _);
+    }, [y, n, t.id]), null == y || null == x || !j) return null;
+  let v = "user-profile-sidebar-heading-".concat(y.id),
+    C = c.ZP.getName(null, t.id, y);
   return (0, r.jsx)("aside", {
     "aria-labelledby": v,
     children: (0, r.jsx)(a.y5t, {
@@ -64,16 +64,16 @@ function _(e) {
           })
         })
       }),
-      children: O ? (0, r.jsx)(f.Z, b({
-        user: _,
-        currentUser: y,
-        onHide: x
-      }, e)) : _.isNonUserBot() ? (0, r.jsx)(p.Z, b({
-        user: _,
-        currentUser: y
+      children: _ ? (0, r.jsx)(f.Z, b({
+        user: y,
+        currentUser: x,
+        onHide: O
+      }, e)) : y.isNonUserBot() ? (0, r.jsx)(p.Z, b({
+        user: y,
+        currentUser: x
       }, e)) : (0, r.jsx)(g.Z, b({
-        user: _,
-        currentUser: y
+        user: y,
+        currentUser: x
       }, e))
     })
   })

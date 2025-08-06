@@ -5,8 +5,8 @@ n.d(t, {
 }), n(704826), n(35282), n(953529);
 var r = n(255367),
   i = n(73800),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(442837),
   l = n(755721),
   c = n(481060),
@@ -42,7 +42,7 @@ let b = i.forwardRef(function(e, t) {
   let {
     title: n,
     titleIcon: i,
-    titleId: a,
+    titleId: o,
     description: f,
     children: g,
     className: b,
@@ -55,14 +55,14 @@ let b = i.forwardRef(function(e, t) {
     forcedDivider: A = !1,
     showPremiumIcon: N = !1,
     showViewFullProfileButton: C = !1
-  } = e, w = (0, s.e7)([d.default], () => d.default.getCurrentUser()), R = () => {
-    null != w && (0, u.openUserProfileModal)({
-      userId: w.id,
+  } = e, R = (0, s.e7)([d.default], () => d.default.getCurrentUser()), P = () => {
+    null != R && (0, u.openUserProfileModal)({
+      userId: R.id,
       disableActionsForPreview: !0
     })
   };
   return (0, r.jsx)("div", {
-    className: o()(m.customizationSection, b, {
+    className: a()(m.customizationSection, b, {
       [m.disabled]: O,
       [m.hideDivider]: v,
       [m.showBorder]: I,
@@ -77,13 +77,13 @@ let b = i.forwardRef(function(e, t) {
       hasBackground: S,
       children: [(0, r.jsxs)(c.vwX, {
         className: m.title,
-        id: a,
-        children: [n, N && (0, r.jsx)(_.Z, {}), i, C && null != w && (0, r.jsx)(l.zx, {
+        id: o,
+        children: [n, N && (0, r.jsx)(_.Z, {}), i, C && null != R && (0, r.jsx)(l.zx, {
           look: l.zx.Looks.LINK,
           color: l.zx.Colors.TRANSPARENT,
           size: l.zx.Sizes.TINY,
           className: m.viewFullProfileButton,
-          onClick: R,
+          onClick: P,
           children: (0, r.jsx)(c.Text, {
             variant: "text-xs/normal",
             children: h.intl.string(h.t["+Xp3ho"])

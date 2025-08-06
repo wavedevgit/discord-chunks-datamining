@@ -1,12 +1,12 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => R
+  Z: () => P
 }), n(997841), n(388685);
 var r = n(255367),
   i = n(73800),
-  a = n(442837),
-  o = n(904245),
+  o = n(442837),
+  a = n(904245),
   s = n(257559),
   l = n(911969),
   c = n(541716),
@@ -85,19 +85,19 @@ function C(e) {
     id: c
   } = t, {
     id: u
-  } = n, h = t.getGuildId(), g = (0, a.e7)([_.Z], () => _.Z.getGuild(h), [h]), E = t.type === y.d4z.GUILD_ANNOUNCEMENT, I = null != g && g.features.has(y.oNc.NEWS), S = E && I, {
+  } = n, h = t.getGuildId(), g = (0, o.e7)([_.Z], () => _.Z.getGuild(h), [h]), E = t.type === y.d4z.GUILD_ANNOUNCEMENT, I = null != g && g.features.has(y.oNc.NEWS), S = E && I, {
     editingMessage: C,
-    editingTextValue: R,
-    editingRichValue: P
-  } = (0, a.cj)([f.Z], () => ({
+    editingTextValue: P,
+    editingRichValue: w
+  } = (0, o.cj)([f.Z], () => ({
     editingMessage: f.Z.getEditingMessage(c),
     editingTextValue: f.Z.getEditingTextValue(c),
     editingRichValue: f.Z.getEditingRichValue(c)
-  }), [c]), D = (0, a.e7)([d.default], () => d.default.getId()), L = i.useCallback((e, r, i) => {
+  }), [c]), D = (0, o.e7)([d.default], () => d.default.getId()), L = i.useCallback((e, r, i) => {
     let {
-      content: a
+      content: o
     } = i, c = p.Z.can(y.Plq.MANAGE_MESSAGES, t), u = null != C && null != C.author ? C.author.id : null, d = S && (u === D || c), f = {
-      content: a,
+      content: o,
       components: void 0
     };
     if (n.hasFlag(y.iLy.IS_COMPONENTS_V2)) {
@@ -106,23 +106,23 @@ function C(e) {
         t = n.components.filter(e => e.type !== l.re.TEXT_DISPLAY);
       t.splice(+!!e, 0, {
         type: l.re.TEXT_DISPLAY,
-        content: a,
+        content: o,
         id: "".concat(O.Kb)
       }), f.content = "", f.components = t
     }
-    return d && null != C && (0, m.yE)(C.flags, y.iLy.CROSSPOSTED) ? s.Z.confirmEdit(e, r, f) : o.Z.editMessage(e, r, f), Promise.resolve()
-  }, [C, S, D, t, n]), x = i.useCallback(e => (0, i.createElement)(w, A(T({}, e), {
+    return d && null != C && (0, m.yE)(C.flags, y.iLy.CROSSPOSTED) ? s.Z.confirmEdit(e, r, f) : a.Z.editMessage(e, r, f), Promise.resolve()
+  }, [C, S, D, t, n]), x = i.useCallback(e => (0, i.createElement)(R, A(T({}, e), {
     className: v.channelTextArea,
     key: u
   })), [u]);
-  return null != R && null != P ? (0, r.jsx)(b.Z, {
+  return null != P && null != w ? (0, r.jsx)(b.Z, {
     ref: void 0,
     channel: t,
     message: n,
-    textValue: R,
-    richValue: P,
-    onCancel: o.Z.endEditMessage,
-    onChange: o.Z.updateEditMessage,
+    textValue: P,
+    richValue: w,
+    onCancel: a.Z.endEditMessage,
+    onChange: a.Z.updateEditMessage,
     onConfirmDelete: s.Z.confirmDelete,
     saveMessage: L,
     validateEdit: N,
@@ -130,12 +130,12 @@ function C(e) {
   }) : null
 }
 
-function w(e) {
+function R(e) {
   let {
     textValue: t,
     richValue: n,
-    message: a,
-    channel: o,
+    message: o,
+    channel: a,
     onChange: s,
     onSubmit: l,
     onKeyDown: d,
@@ -147,7 +147,7 @@ function w(e) {
     className: v.channelTextArea,
     textValue: t,
     richValue: n,
-    channel: o,
+    channel: a,
     type: c.Ie.EDIT,
     onChange: s,
     onSubmit: e => {
@@ -161,21 +161,21 @@ function w(e) {
     onFocus: m,
     onBlur: g,
     renderLeftAccessories: f
-  }, a.id)
+  }, o.id)
 }
 
-function R(e, t, n) {
+function P(e, t, n) {
   let {
     message: i,
-    channel: a,
-    compact: o
+    channel: o,
+    compact: a
   } = e;
   return n ? (0, r.jsx)(C, {
-    channel: a,
+    channel: o,
     message: i
   }) : (0, r.jsx)(E.ZP, {
     message: i,
     content: t,
-    compact: null != o && o
+    compact: null != a && a
   })
 }

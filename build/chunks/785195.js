@@ -1,15 +1,15 @@
-/** Chunk was on 71824 **/
+/** Chunk was on 12097 **/
 n.d(t, {
-  Z: () => i
+  Z: () => s
 });
 var r = n(255367);
 n(73800);
 var l = n(325767);
 
-function i(e) {
+function s(e) {
   var t, n, {
-      width: i = 24,
-      height: s = 24,
+      width: s = 24,
+      height: i = 24,
       color: a = "currentColor",
       foreground: o
     } = e,
@@ -18,13 +18,13 @@ function i(e) {
       var n, r, l = function(e, t) {
         if (null == e) return {};
         var n, r, l = {},
-          i = Object.keys(e);
-        for (r = 0; r < i.length; r++) n = i[r], t.indexOf(n) >= 0 || (l[n] = e[n]);
+          s = Object.keys(e);
+        for (r = 0; r < s.length; r++) n = s[r], t.indexOf(n) >= 0 || (l[n] = e[n]);
         return l
       }(e, t);
       if (Object.getOwnPropertySymbols) {
-        var i = Object.getOwnPropertySymbols(e);
-        for (r = 0; r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n])
+        var s = Object.getOwnPropertySymbols(e);
+        for (r = 0; r < s.length; r++) n = s[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n])
       }
       return l
     }(e, ["width", "height", "color", "foreground"]);
@@ -46,8 +46,8 @@ function i(e) {
     }
     return e
   }({}, (0, l.Z)(u)), n = n = {
-    width: i,
-    height: s,
+    width: s,
+    height: i,
     viewBox: "0 0 24 24",
     children: [(0, r.jsx)("path", {
       d: "M20.414 2.58599C21.195 3.36699 21.195 4.63299 20.414 5.41399L14.051 11.779L11.222 8.94999L17.586 2.58599C18.367 1.80499 19.633 1.80499 20.414 2.58599Z",

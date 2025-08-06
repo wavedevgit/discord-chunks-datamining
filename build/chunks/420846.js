@@ -5,14 +5,14 @@ n.d(t, {
 });
 var r = n(570140),
   i = n(467442),
-  a = n(869031),
-  o = n(987562);
+  o = n(869031),
+  a = n(987562);
 let s = {
   maybeOpenBlockUserFeedback(e) {
     let {
       location: t
     } = e;
-    (0, a.nZ)(t) && r.Z.dispatch({
+    (0, o.nZ)(t) && r.Z.dispatch({
       type: "BLOCK_USER_SHOW_FEEDBACK"
     })
   },
@@ -21,7 +21,7 @@ let s = {
       location: t,
       visibleContent: n
     } = e;
-    (0, i.pZ)(t) && null != n && o.os.includes(n) && r.Z.dispatch({
+    (0, i.pZ)(t) && null != n && a.os.includes(n) && r.Z.dispatch({
       type: "AGE_VERIFICATION_SHOW_FEEDBACK",
       dismissibleContent: n
     })

@@ -10,7 +10,7 @@ function i(e, t) {
   e.prototype = Object.create(t.prototype), e.prototype.constructor = e, e.__proto__ = t
 }
 
-function a(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -18,7 +18,7 @@ function a(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-var o = n(73800),
+var a = n(73800),
   s = n(169774),
   l = n(581079),
   c = n(613078),
@@ -28,22 +28,22 @@ function d(e) {
   return u ? "\n" === e.textContent : "BR" === e.tagName
 }
 var f = function(e) {
-    return u ? o.createElement("span", {
+    return u ? a.createElement("span", {
       key: "A",
       "data-text": "true",
       ref: e
-    }, "\n") : o.createElement("br", {
+    }, "\n") : a.createElement("br", {
       key: "A",
       "data-text": "true",
       ref: e
     })
   },
   _ = function(e) {
-    return u ? o.createElement("span", {
+    return u ? a.createElement("span", {
       key: "B",
       "data-text": "true",
       ref: e
-    }, "\n") : o.createElement("br", {
+    }, "\n") : a.createElement("br", {
       key: "B",
       "data-text": "true",
       ref: e
@@ -52,7 +52,7 @@ var f = function(e) {
 e.exports = function(e) {
   function t(t) {
     var n;
-    return a(r(n = e.call(this, t) || this), "_forceFlag", void 0), a(r(n), "_node", void 0), n._forceFlag = !1, n
+    return o(r(n = e.call(this, t) || this), "_forceFlag", void 0), o(r(n), "_node", void 0), n._forceFlag = !1, n
   }
   i(t, e);
   var n = t.prototype;
@@ -72,7 +72,7 @@ e.exports = function(e) {
       return e._node = t
     }) : _(function(t) {
       return e._node = t
-    }) : o.createElement("span", {
+    }) : a.createElement("span", {
       key: this._forceFlag ? "A" : "B",
       "data-text": "true",
       ref: function(t) {
@@ -80,4 +80,4 @@ e.exports = function(e) {
       }
     }, this.props.children)
   }, t
-}(o.Component)
+}(a.Component)

@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(255367),
   i = n(73800),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(159635),
   l = n(481060),
   c = n(570140),
@@ -29,15 +29,15 @@ var r = n(255367),
   A = n(746878),
   N = n(285063),
   C = n(943362),
-  w = n(551452),
-  R = n(69626),
-  P = n(142990),
+  R = n(551452),
+  P = n(69626),
+  w = n(142990),
   D = n(382056),
   L = n(532901),
   x = n(311739),
-  k = n(981631),
-  j = n(176505),
-  M = n(73433),
+  M = n(981631),
+  k = n(176505),
+  j = n(73433),
   U = n(283574);
 
 function G(e, t, n) {
@@ -85,21 +85,21 @@ function V(e) {
     enableEmojiClick: n = !0
   } = e;
   return {
-    react(e, i, a) {
+    react(e, i, o) {
       let {
-        key: o,
+        key: a,
         channelId: s,
         messageId: l
-      } = a;
+      } = o;
       return e.src ? (0, r.jsx)(y.c, {
         node: e,
         tooltipPosition: t,
         enableClick: n,
         channelId: s,
         messageId: l
-      }, o) : (0, r.jsx)("span", {
+      }, a) : (0, r.jsx)("span", {
         children: e.surrogate
-      }, o)
+      }, a)
     }
   }
 }
@@ -110,14 +110,14 @@ function H(e) {
     enableEmojiClick: n = !0
   } = e;
   return {
-    react(e, i, a) {
+    react(e, i, o) {
       let {
-        key: o,
+        key: a,
         guildId: s,
         channelId: l,
         messageId: c,
         isInteracting: u
-      } = a, d = _.ZP.getDisambiguatedEmojiContext(s).getById(e.emojiId);
+      } = o, d = _.ZP.getDisambiguatedEmojiContext(s).getById(e.emojiId);
       if (null != d) {
         let t = d.require_colons;
         e = F(B({}, e), {
@@ -131,7 +131,7 @@ function H(e) {
         enableClick: n,
         channelId: l,
         messageId: c
-      }, o)
+      }, a)
     }
   }
 }
@@ -140,18 +140,18 @@ function Y(e, t, n) {
   let r = T.Z.getGuild(e);
   if (null == e || null == r) return;
   let i = t => {
-    r.features.has(k.oNc.COMMUNITY) && (0, O.uL)(k.Z5c.CHANNEL(e, t))
+    r.features.has(M.oNc.COMMUNITY) && (0, O.uL)(M.Z5c.CHANNEL(e, t))
   };
   switch (t) {
     case "home":
     case "guide":
-      i(j.oC.GUILD_HOME);
+      i(k.oC.GUILD_HOME);
       break;
     case "browse":
-      i(j.oC.CHANNEL_BROWSER);
+      i(k.oC.CHANNEL_BROWSER);
       break;
     case "customize":
-      i(j.oC.CUSTOMIZE_COMMUNITY);
+      i(k.oC.CUSTOMIZE_COMMUNITY);
       break;
     case "linked-roles":
       if (null != n) {
@@ -176,11 +176,11 @@ function Y(e, t, n) {
 function W(e) {
   let {
     text: t
-  } = e, [n, a] = i.useState(!1), o = () => {
-    (0, S.JG)(t, () => a(!0), () => a(!1))
+  } = e, [n, o] = i.useState(!1), a = () => {
+    (0, S.JG)(t, () => o(!0), () => o(!1))
   };
   return (0, r.jsx)(l.P3F, {
-    onClick: o,
+    onClick: a,
     children: n ? (0, r.jsx)(l.dz2, {
       size: "xs",
       color: "currentColor"
@@ -194,9 +194,9 @@ n(484944);
 let K = {
   blockQuote: {
     react: (e, t, n) => (0, r.jsxs)("div", {
-      className: M.blockquoteContainer,
+      className: j.blockquoteContainer,
       children: [(0, r.jsx)("div", {
-        className: M.blockquoteDivider
+        className: j.blockquoteDivider
       }), (0, r.jsx)("blockquote", {
         children: t(e.content, n)
       })]
@@ -226,28 +226,28 @@ let K = {
   },
   codeBlock: {
     react(e, t, i) {
-      let a = () => (0, r.jsx)("code", {
-        className: o()(U.scrollbarGhostHairline, "hljs"),
+      let o = () => (0, r.jsx)("code", {
+        className: a()(U.scrollbarGhostHairline, "hljs"),
         children: (0, A.S)(e, t, i)
       });
       return (0, r.jsx)("pre", {
         children: (0, r.jsxs)("div", {
-          className: M.codeContainer,
+          className: j.codeContainer,
           children: [S.wS ? (0, r.jsx)("div", {
-            className: M.codeActions,
+            className: j.codeActions,
             children: (0, r.jsx)(W, {
               text: e.content
             })
           }) : null, (0, r.jsx)(d.GI, {
             createPromise: () => Promise.resolve().then(n.bind(n, 364964)),
             webpackId: 364964,
-            renderFallback: a,
+            renderFallback: o,
             render: t => {
-              if (!(e.lang && t.hasLanguage(e.lang))) return a();
+              if (!(e.lang && t.hasLanguage(e.lang))) return o();
               {
                 let n = t.highlight(e.lang, e.content, !0);
-                return null == n ? a() : (0, r.jsx)("code", {
-                  className: o()(U.scrollbarGhostHairline, "hljs", n.language),
+                return null == n ? o() : (0, r.jsx)("code", {
+                  className: a()(U.scrollbarGhostHairline, "hljs", n.language),
                   dangerouslySetInnerHTML: {
                     __html: n.value
                   }
@@ -307,19 +307,19 @@ let K = {
   list: {
     react: (e, t, n) => {
       let i = e.ordered ? "ol" : "ul",
-        a = null == e.start ? void 0 : (e.start + (e.items.length - 1)).toString().length;
+        o = null == e.start ? void 0 : (e.start + (e.items.length - 1)).toString().length;
       return (0, s.reactElement)(i, "".concat(n.key), {
         start: e.start,
-        className: n.formatInline ? M.inlineFormat : null,
+        className: n.formatInline ? j.inlineFormat : null,
         style: {
-          "--totalCharacters": a
+          "--totalCharacters": o
         },
         children: e.items.map((e, i) => {
-          let a = (0, s.reactElement)("span", "".concat(n.key, "-").concat(i, "-innerSpan"), {
+          let o = (0, s.reactElement)("span", "".concat(n.key, "-").concat(i, "-innerSpan"), {
             children: t(e, n)
           });
           return (0, s.reactElement)("li", "".concat(n.key, "-").concat(i) + i, {
-            children: [a, (0, r.jsx)(l.nn4, {
+            children: [o, (0, r.jsx)(l.nn4, {
               children: ","
             }, "screen-reader-pause")]
           })
@@ -336,7 +336,7 @@ let K = {
         children: [i, (0, r.jsx)(l.nn4, {
           children: ","
         }, "screen-reader-pause")],
-        className: n.formatInline ? M.inlineFormat : null
+        className: n.formatInline ? j.inlineFormat : null
       })
     }
   },
@@ -365,7 +365,7 @@ let K = {
       });
       return (0, s.reactElement)("small", (null == n ? void 0 : n.key) != null ? "".concat(n.key) : null, {
         children: r,
-        className: n.formatInline ? M.inlineFormat : null
+        className: n.formatInline ? j.inlineFormat : null
       })
     }
   },
@@ -381,11 +381,11 @@ let K = {
 function z(e) {
   return F(B({}, K), {
     link: (0, L.Z)(e),
-    devLink: (0, P.Z)(e),
+    devLink: (0, w.Z)(e),
     emoji: V(e),
     customEmoji: H(e),
-    channelMention: (0, w.Z)(e),
-    commandMention: (0, R.ZP)(e),
+    channelMention: (0, R.Z)(e),
+    commandMention: (0, P.ZP)(e),
     attachmentLink: (0, C.Z)(e),
     shopLink: (0, x.Z)(e),
     gameMention: D.Z

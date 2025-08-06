@@ -1,6 +1,6 @@
 /** Chunk was on 49152 **/
 n.d(t, {
-  Z: () => d
+  Z: () => u
 });
 var r = n(255367),
   i = n(73800),
@@ -9,11 +9,11 @@ var r = n(255367),
   s = n(981631),
   o = n(388032),
   c = n(334814);
-let d = e => {
+let u = e => {
   let {
     guild: t,
-    onAddGuild: d
-  } = e, u = i.useCallback(() => {
+    onAddGuild: u
+  } = e, d = i.useCallback(() => {
     (0, l.ZDy)(async () => {
       let {
         default: e
@@ -72,18 +72,18 @@ let d = e => {
       variant: "text-md/normal",
       className: c.emptySubtitle,
       children: o.intl.string(o.t.WypE0t)
-    }), null != d ? (0, r.jsx)(a.i, {
+    }), null != u ? (0, r.jsx)(a.i, {
       className: c.emptyCTA,
       iconUrl: n(362827),
       header: o.intl.string(o.t.hyK15u),
       completed: !1,
-      onClick: d
+      onClick: u
     }) : null, (0, r.jsx)(a.i, {
       className: c.emptyCTA,
       iconUrl: n(538548),
       header: o.intl.string(o.t.L4bwJy),
       completed: !1,
-      onClick: u
+      onClick: d
     })]
   })
 }

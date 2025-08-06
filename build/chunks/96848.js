@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685), n(704826), n(35282);
 var r = n(255367),
   i = n(73800),
-  a = n(481060),
-  o = n(907040),
+  o = n(481060),
+  a = n(907040),
   s = n(981631),
   l = n(185923),
   c = n(388032),
@@ -25,10 +25,10 @@ function _(e) {
     className: u.customGiftContent,
     children: [(0, r.jsxs)("div", {
       className: u.customGiftHeader,
-      children: [(0, r.jsx)(a.Text, {
+      children: [(0, r.jsx)(o.Text, {
         variant: "text-md/bold",
         children: c.intl.string(c.t.Hl2IgY)
-      }), (0, r.jsx)(a.Text, {
+      }), (0, r.jsx)(o.Text, {
         variant: "text-sm/normal",
         children: c.intl.string(c.t.stGFAw)
       })]
@@ -39,7 +39,7 @@ function _(e) {
     } = e;
     null != t && (t(n), l(!1))
   };
-  return (0, r.jsx)(a.yRy, {
+  return (0, r.jsx)(o.yRy, {
     targetElementRef: _,
     shouldShow: s,
     position: "bottom",
@@ -49,8 +49,8 @@ function _(e) {
       let {
         closePopout: t
       } = e;
-      return (0, r.jsx)(a.VqE, {
-        children: (0, r.jsx)(o.Z, {
+      return (0, r.jsx)(o.VqE, {
+        children: (0, r.jsx)(a.Z, {
           analyticsOverride: d,
           closePopout: t,
           onSelectEmoji: h,
@@ -67,19 +67,19 @@ function _(e) {
         })
       })
     },
-    children: () => (0, r.jsx)(a.P3F, {
+    children: () => (0, r.jsx)(o.P3F, {
       className: u.container,
       onClick: () => l(!0),
       innerRef: _,
       children: (null == n ? void 0 : n.name) == null ? (0, r.jsxs)("div", {
         className: u.contentContainer,
-        children: [(0, r.jsx)(a.EO4, {
+        children: [(0, r.jsx)(o.EO4, {
           size: "custom",
           color: "currentColor",
           className: u.emojiIcon,
           width: 14,
           height: 14
-        }), (0, r.jsx)(a.Text, {
+        }), (0, r.jsx)(o.Text, {
           className: u.text,
           variant: "text-sm/semibold",
           lineClamp: 1,
@@ -87,11 +87,11 @@ function _(e) {
         })]
       }) : (0, r.jsxs)("div", {
         className: u.contentContainer,
-        children: [(0, r.jsx)(a.Text, {
+        children: [(0, r.jsx)(o.Text, {
           className: u.textSelected,
           variant: "text-sm/semibold",
           children: null == n.guildId ? n.optionallyDiverseSequence : null
-        }), (0, r.jsx)(a.Text, {
+        }), (0, r.jsx)(o.Text, {
           className: u.text,
           variant: "text-sm/semibold",
           lineClamp: 1,

@@ -5,8 +5,8 @@ n.d(t, {
 }), n(953529);
 var r = n(255367),
   i = n(73800),
-  a = n(442837),
-  o = n(780384),
+  o = n(442837),
+  a = n(780384),
   s = n(755721),
   l = n(481060),
   c = n(410030),
@@ -59,12 +59,12 @@ function E(e) {
     onComplete: t,
     onCheckItOutClick: n,
     config: i
-  } = e, d = (0, a.e7)([u.Z], () => u.Z.useReducedMotion), p = (0, c.ZP)();
+  } = e, d = (0, o.e7)([u.Z], () => u.Z.useReducedMotion), p = (0, c.ZP)();
   return (0, r.jsxs)("div", {
     className: _.container,
     children: [(0, r.jsx)("img", {
       alt: f.intl.string(f.t.X4IxWF),
-      src: i.getImageUrl((0, o.wj)(p), d),
+      src: i.getImageUrl((0, a.wj)(p), d),
       className: _.coachmark
     }), (0, r.jsxs)("div", {
       className: _.body,
@@ -101,8 +101,8 @@ function b(e) {
   let {
     onComplete: t,
     onCheckItOutClick: n,
-    markAsDismissed: a,
-    config: o,
+    markAsDismissed: o,
+    config: a,
     children: s
   } = e, c = i.useRef(null);
   return (0, r.jsx)(l.yRy, {
@@ -113,12 +113,12 @@ function b(e) {
     align: "center",
     renderPopout: e => (0, r.jsx)(E, g(h({}, e), {
       onComplete: () => {
-        t(), a(d.L.USER_DISMISS)
+        t(), o(d.L.USER_DISMISS)
       },
       onCheckItOutClick: () => {
-        n(), t(), a(d.L.TAKE_ACTION)
+        n(), t(), o(d.L.TAKE_ACTION)
       },
-      config: o
+      config: a
     })),
     onRequestClose: () => void 0,
     closeOnScroll: !1,

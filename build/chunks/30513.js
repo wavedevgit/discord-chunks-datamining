@@ -1,18 +1,18 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  VF: () => R,
+  VF: () => P,
   WW: () => N,
   XO: () => S,
   Yp: () => T,
-  hC: () => w,
+  hC: () => R,
   o9: () => C,
   zC: () => A
 });
 var r = n(692547),
   i = n(481060),
-  a = n(15385),
-  o = n(123245),
+  o = n(15385),
+  a = n(123245),
   s = n(981631);
 n(474936);
 var l = n(388032);
@@ -55,23 +55,23 @@ let c = () => ({
   h = function(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : r.Z.unsafe_rawColors.PREMIUM_PERK_PURPLE.css,
       n = 0,
-      a = 0;
+      o = 0;
     switch (e) {
       case s.Eu4.TIER_1:
-        n = 15, a = 100;
+        n = 15, o = 100;
         break;
       case s.Eu4.TIER_2:
-        n = 30, a = 150;
+        n = 30, o = 150;
         break;
       case s.Eu4.TIER_3:
-        n = 60, a = 250
+        n = 60, o = 250
     }
     return {
       color: t,
       icon: i.SlE,
       description: l.intl.formatToPlainString(l.t["12vFYG"], {
         numStickers: n,
-        numEmojis: a
+        numEmojis: o
       })
     }
   },
@@ -81,7 +81,7 @@ let c = () => ({
     description: l.intl.string(l.t["ThRK/v"])
   }),
   g = () => ({
-    icon: a.Z,
+    icon: o.Z,
     description: l.intl.string(l.t.a7LWeH)
   }),
   E = () => ({
@@ -109,7 +109,7 @@ let c = () => ({
   },
   v = () => ({
     color: r.Z.unsafe_rawColors.PREMIUM_PERK_PURPLE.css,
-    icon: o.Z,
+    icon: a.Z,
     description: l.intl.string(l.t.Tm40TU)
   }),
   I = function() {
@@ -141,10 +141,10 @@ function C() {
   return [c(), p(), u(), O()]
 }
 
-function w() {
+function R() {
   return [p(), O()]
 }
 
-function R() {
+function P() {
   return [E(), b(), g(), y()]
 }

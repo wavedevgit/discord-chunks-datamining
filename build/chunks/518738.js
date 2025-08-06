@@ -7,8 +7,8 @@ n.d(t, {
 });
 var r = n(73800),
   i = n(442837),
-  a = n(485386),
-  o = n(430824),
+  o = n(485386),
+  a = n(430824),
   s = n(829883);
 
 function l(e, t) {
@@ -35,9 +35,9 @@ function c(e) {
   } = e, {
     guild: u,
     role: d
-  } = (0, i.cj)([o.Z, a.Z], () => ({
-    guild: o.Z.getGuild(t),
-    role: null != n ? a.Z.getRole(t, n) : void 0
+  } = (0, i.cj)([a.Z, o.Z], () => ({
+    guild: a.Z.getGuild(t),
+    role: null != n ? o.Z.getRole(t, n) : void 0
   }), [t, n]);
   return r.useMemo(() => {
     if (null != u && null != n && (0, s._b)(u, d)) return l(d, c)
@@ -45,6 +45,6 @@ function c(e) {
 }
 
 function u(e, t) {
-  let n = (0, i.e7)([o.Z], () => o.Z.getGuild(e));
+  let n = (0, i.e7)([a.Z], () => a.Z.getGuild(e));
   if (null != n && (0, s._b)(n, t)) return l(t)
 }

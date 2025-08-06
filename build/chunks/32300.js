@@ -3,7 +3,7 @@
 n.d(t, {
   J0: () => E,
   NW: () => l,
-  OV: () => a,
+  OV: () => o,
   Rb: () => s,
   Se: () => _,
   XE: () => c,
@@ -12,13 +12,13 @@ n.d(t, {
   dj: () => d,
   hS: () => p,
   mB: () => h,
-  o4: () => o,
+  o4: () => a,
   qA: () => g,
   td: () => f
 });
 var r = n(818083),
   i = n(987338);
-let a = (0, r.B)({
+let o = (0, r.B)({
   kind: "user",
   id: "2024-10_overlay_v3",
   label: "Overlay V3 Shared Context OOP",
@@ -68,15 +68,15 @@ let a = (0, r.B)({
   }]
 });
 
-function o(e) {
-  return a.useExperiment({
+function a(e) {
+  return o.useExperiment({
     location: e
   })
 }
 
 function s(e) {
   let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
-  return a.getCurrentConfig({
+  return o.getCurrentConfig({
     location: e
   }, {
     autoTrackExposure: t
@@ -89,7 +89,7 @@ function l(e) {
 }
 
 function c(e) {
-  return o(e).overlayV3tech
+  return a(e).overlayV3tech
 }
 
 function u(e) {

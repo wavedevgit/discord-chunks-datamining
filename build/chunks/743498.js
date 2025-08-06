@@ -2,8 +2,8 @@
 "use strict";
 n.d(t, {
   _j: () => i,
-  jG: () => o,
-  v6: () => a
+  jG: () => a,
+  v6: () => o
 });
 var r = n(570140);
 
@@ -14,7 +14,7 @@ function i(e) {
   })
 }
 
-function a(e) {
+function o(e) {
   let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : null;
   return r.Z.dispatch({
     type: "VOICE_FILTER_REQUEST_SWITCH",
@@ -23,7 +23,7 @@ function a(e) {
   })
 }
 
-function o() {
+function a() {
   r.Z.dispatch({
     type: "VOICE_FILTER_PREFETCH"
   })

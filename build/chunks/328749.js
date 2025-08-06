@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var i = n(481060),
-  a = n(834129),
-  o = n(388032),
+  o = n(834129),
+  a = n(388032),
   s = n(482893);
 
 function l(e) {
@@ -15,7 +15,7 @@ function l(e) {
     message: t,
     compact: n
   } = e;
-  return (0, r.jsx)(a.Z, {
+  return (0, r.jsx)(o.Z, {
     iconNode: (0, r.jsx)(i.or_, {
       size: "md",
       color: "currentColor",
@@ -23,6 +23,6 @@ function l(e) {
     }),
     timestamp: t.timestamp,
     compact: n,
-    children: o.intl.string(o.t.OCs36O)
+    children: a.intl.string(a.t.OCs36O)
   })
 }

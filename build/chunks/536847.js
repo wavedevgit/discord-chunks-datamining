@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var i = n(657707),
-  a = n(442837),
-  o = n(481060),
+  o = n(442837),
+  a = n(481060),
   s = n(210887),
   l = n(866419),
   c = n(771934),
@@ -17,8 +17,8 @@ var i = n(657707),
 let _ = (e, t) => e === t ? f.themePillItemSelected : void 0;
 
 function p() {
-  let e = (0, a.e7)([s.Z], () => s.Z.theme),
-    t = (0, o.wjy)(e) ? u.BR.DARK : u.BR.LIGHT,
+  let e = (0, o.e7)([s.Z], () => s.Z.theme),
+    t = (0, a.wjy)(e) ? u.BR.DARK : u.BR.LIGHT,
     n = [{
       name: d.intl.string(d.t.b8Cei4),
       value: u.BR.DARK,
@@ -30,7 +30,7 @@ function p() {
       icon: i.chG,
       className: _(t, u.BR.LIGHT)
     }];
-  return (0, r.jsx)(o.sY7, {
+  return (0, r.jsx)(a.sY7, {
     className: f.themeSelector,
     options: n,
     value: t,

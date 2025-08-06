@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(255367),
   i = n(73800),
-  a = n(442837),
-  o = n(218061),
+  o = n(442837),
+  a = n(218061),
   s = n(481060),
   l = n(361213),
   c = n(778569),
@@ -32,19 +32,19 @@ function S(e) {
     context: n,
     application: l,
     sectionName: c
-  } = e, I = "channel" === n.type ? n.channel : void 0, S = (0, a.e7)([f.Z], () => f.Z.entrypoint()), N = null != (t = (0, d.q)(l.id === b.bi.BUILT_IN ? null : l.id)) ? t : l, C = (0, p.ye)(N) ? A : E.Z, w = i.useRef(null), [R, P] = i.useState(!1), {
+  } = e, I = "channel" === n.type ? n.channel : void 0, S = (0, o.e7)([f.Z], () => f.Z.entrypoint()), N = null != (t = (0, d.q)(l.id === b.bi.BUILT_IN ? null : l.id)) ? t : l, C = (0, p.ye)(N) ? A : E.Z, R = i.useRef(null), [P, w] = i.useState(!1), {
     iconURL: D,
     name: L
   } = i.useMemo(() => (0, p.sl)(N, {
     fakeAppIconURL: v,
     size: T
-  }), [N]), x = (0, u.PL)(!0, !0), k = (0, u.LD)(null == I ? void 0 : I.guild_id, !0), j = i.useMemo(() => (0, u.If)(n, N.id), [x, k, n, N.id]), M = !j.isGuildInstalled && !j.isUserInstalled;
+  }), [N]), x = (0, u.PL)(!0, !0), M = (0, u.LD)(null == I ? void 0 : I.guild_id, !0), k = i.useMemo(() => (0, u.If)(n, N.id), [x, M, n, N.id]), j = !k.isGuildInstalled && !k.isUserInstalled;
   return i.useEffect(() => {
-    M && u.ZP.queryInstallOnDemandApp(N.id, null == I ? void 0 : I.id)
-  }, [N.id, null == I ? void 0 : I.id, M]), (0, r.jsxs)(s.u2D, {
+    j && u.ZP.queryInstallOnDemandApp(N.id, null == I ? void 0 : I.id)
+  }, [N.id, null == I ? void 0 : I.id, j]), (0, r.jsxs)(s.u2D, {
     className: O.container,
     fade: !0,
-    ref: w,
+    ref: R,
     role: "region",
     "aria-label": y.intl.formatToPlainString(y.t["4OP4Ul"], {
       applicationName: L
@@ -54,24 +54,24 @@ function S(e) {
       context: n,
       name: L,
       iconURL: D,
-      scrollerRef: w,
+      scrollerRef: R,
       sectionName: c
     }), null != D && (0, r.jsx)(h.Z, {
       src: D,
       className: O.appIcon
-    }), (0, r.jsx)(o.Z, {
+    }), (0, r.jsx)(a.Z, {
       size: 54
     }), (0, r.jsx)(C, {
       context: n,
       application: N,
       sectionName: c,
-      hasCommands: R
+      hasCommands: P
     }), S === _._b.TEXT ? (0, r.jsx)(m.Z, {
       context: n,
       application: N,
       sectionName: c,
-      installOnDemand: M,
-      setHasCommands: P
+      installOnDemand: j,
+      setHasCommands: w
     }) : null]
   })
 }
@@ -81,8 +81,8 @@ function A(e) {
     context: t,
     application: n,
     sectionName: i,
-    hasCommands: a
-  } = e, o = (0, c.Z)({
+    hasCommands: o
+  } = e, a = (0, c.Z)({
     applicationId: n.id,
     size: I,
     names: ["embedded_cover"]
@@ -90,9 +90,9 @@ function A(e) {
   return (0, r.jsx)(E.Z, {
     context: t,
     application: n,
-    imageCoverUrl: o.url,
+    imageCoverUrl: a.url,
     videoUrl: u,
     sectionName: i,
-    hasCommands: a
+    hasCommands: o
   })
 }

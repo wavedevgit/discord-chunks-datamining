@@ -1,12 +1,12 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Q: () => a
+  Q: () => o
 }), n(388685);
 var r = n(73800),
   i = n(542094);
 
-function a(e) {
+function o(e) {
   let [t, n] = r.useState(e);
   return r.useLayoutEffect(() => {
     if (e === i.JS.LEAVE) {

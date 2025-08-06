@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var i = n(120356),
-  a = n.n(i),
-  o = n(952265),
+  o = n.n(i),
+  a = n(952265),
   s = n(466377),
   l = n(313201),
   c = n(174609),
@@ -49,7 +49,7 @@ function O(e) {
     title: t,
     help: n,
     showPremiumUpsell: i,
-    transitionState: o,
+    transitionState: a,
     icons: b,
     fileSize: y,
     onClose: O
@@ -62,21 +62,21 @@ function O(e) {
     }), (0, _.uL)(g.Z5c.APPLICATION_STORE)
   };
   return i ? T ? (0, r.jsx)(f.Z, {
-    transitionState: o,
+    transitionState: a,
     onClose: O,
     handleLearnMore: S
   }) : (0, r.jsx)(d.Z, {
-    transitionState: o,
+    transitionState: a,
     onClose: O,
     handleLearnMore: S,
     fileSize: y
   }) : (0, r.jsx)(s.Y0, {
     size: s.Cg.DYNAMIC,
     "aria-labelledby": v,
-    transitionState: o,
+    transitionState: a,
     parentComponent: "UploadError",
     children: (0, r.jsx)("div", {
-      className: a()(E.uploadDropModal, E.error),
+      className: o()(E.uploadDropModal, E.error),
       children: (0, r.jsxs)("div", {
         className: E.inner,
         children: [(0, r.jsx)(h.Z, {
@@ -96,7 +96,7 @@ function O(e) {
 let v = "UPLOAD_ERROR_MODAL_KEY";
 
 function I(e) {
-  (0, o.h7)(t => (0, r.jsx)(O, y({}, t, e)), {
+  (0, a.h7)(t => (0, r.jsx)(O, y({}, t, e)), {
     modalKey: v
   })
 }

@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685), n(415506);
 var r = n(255367),
   i = n(73800),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(442837),
   l = n(704215),
   c = n(481060),
@@ -29,15 +29,15 @@ var r = n(255367),
   A = n(375954),
   N = n(496675),
   C = n(885110),
-  w = n(585483),
-  R = n(358085),
-  P = n(127654),
+  R = n(585483),
+  P = n(358085),
+  w = n(127654),
   D = n(316595),
   L = n(443603),
   x = n(193910),
-  k = n(951211),
-  j = n(981631),
-  M = n(356659),
+  M = n(951211),
+  k = n(981631),
+  j = n(356659),
   U = n(921944),
   G = n(388032),
   B = n(911777);
@@ -82,7 +82,7 @@ function H(e, t) {
 }
 
 function Y(e) {
-  var t, a;
+  var t, o;
   let {
     className: Z,
     channel: V,
@@ -90,20 +90,20 @@ function Y(e) {
     editorTextContent: W,
     setValue: K,
     canOnlyUseTextCommands: z
-  } = e, q = (0, f.bp)(), $ = i.useRef(null), X = i.useRef(null), Q = (0, s.e7)([C.Z], () => C.Z.getActivities()), J = (0, s.e7)([m.Z], () => m.Z.getSettings().clipsEnabled), ee = (0, s.e7)([m.Z], () => m.Z.getLastClipsSession()), et = (0, s.Wu)([m.Z], () => m.Z.getNewClipIds()), en = (0, s.e7)([T.ZP], () => null == T.ZP.getCurrentSidebarChannelId(V.id)), {
+  } = e, q = (0, f.bp)(), X = i.useRef(null), Q = i.useRef(null), J = (0, s.e7)([C.Z], () => C.Z.getActivities()), $ = (0, s.e7)([m.Z], () => m.Z.getSettings().clipsEnabled), ee = (0, s.e7)([m.Z], () => m.Z.getLastClipsSession()), et = (0, s.Wu)([m.Z], () => m.Z.getNewClipIds()), en = (0, s.e7)([T.ZP], () => null == T.ZP.getCurrentSidebarChannelId(V.id)), {
     showClipsHeaderEntrypoint: er
   } = h.NV.useExperiment({
     location: "ChannelAttachButton"
   }, {
     autoTrackExposure: !1
-  }), ei = (0, s.e7)([b.qc], () => b.qc.hasHotspot(b.v6.CLIPS_CHANNEL_ATTACH_REMINDER)), ea = (0, c.s9z)(e => (0, c.DEQ)(e, M.Qr)), eo = (0, s.e7)([S.Z], () => S.Z.hasLayers()), es = (0, s.e7)([m.Z], () => m.Z.hasClips()), [el, ec] = i.useState(null), eu = (0, h.Go)() && (J || es), ed = V.isPrivate(), ef = (0, s.e7)([N.Z], () => ed || N.Z.can(j.Plq.ATTACH_FILES, V) && N.Z.can(j.Plq.SEND_MESSAGES, V)), e_ = (0, d.Z)(ee);
-  (null == e_ ? void 0 : e_.newClipIds.length) !== (null == ee ? void 0 : ee.newClipIds.length) && (null != (t = null == ee ? void 0 : ee.newClipIds.length) ? t : 0) > 0 && null == el && ei && en && !ea && !er && !eo && ec("recentClips");
+  }), ei = (0, s.e7)([b.qc], () => b.qc.hasHotspot(b.v6.CLIPS_CHANNEL_ATTACH_REMINDER)), eo = (0, c.s9z)(e => (0, c.DEQ)(e, j.Qr)), ea = (0, s.e7)([S.Z], () => S.Z.hasLayers()), es = (0, s.e7)([m.Z], () => m.Z.hasClips()), [el, ec] = i.useState(null), eu = (0, h.Go)() && ($ || es), ed = V.isPrivate(), ef = (0, s.e7)([N.Z], () => ed || N.Z.can(k.Plq.ATTACH_FILES, V) && N.Z.can(k.Plq.SEND_MESSAGES, V)), e_ = (0, d.Z)(ee);
+  (null == e_ ? void 0 : e_.newClipIds.length) !== (null == ee ? void 0 : ee.newClipIds.length) && (null != (t = null == ee ? void 0 : ee.newClipIds.length) ? t : 0) > 0 && null == el && ei && en && !eo && !er && !ea && ec("recentClips");
   let ep = (e, t, n) => {
-      null != t && "ETOOLARGE" === t.code ? (0, P.G)(V, []) : (0, P.d)(e, V, Y, {
+      null != t && "ETOOLARGE" === t.code ? (0, w.G)(V, []) : (0, w.d)(e, V, Y, {
         requireConfirm: !0,
         showLargeMessageDialog: n,
         origin: "file_picker"
-      }), w.S.dispatchToLastSubscribed(j.CkL.TEXTAREA_FOCUS)
+      }), R.S.dispatchToLastSubscribed(k.CkL.TEXTAREA_FOCUS)
     },
     eh = e => {
       ep(e.currentTarget.files, e.currentTarget.err), e.currentTarget.value = ""
@@ -119,37 +119,37 @@ function Y(e) {
         channelId: V.id
       }))
     }, {
-      modalKey: M.Qr
+      modalKey: j.Qr
     }), ec(null)
   }
   i.useEffect(() => {
     let e = () => {
       var e;
-      return null == (e = $.current) ? void 0 : e.activateUploadDialogue()
+      return null == (e = X.current) ? void 0 : e.activateUploadDialogue()
     };
-    return w.S.subscribe(j.CkL.UPLOAD_FILE, e), () => {
-      w.S.unsubscribe(j.CkL.UPLOAD_FILE, e)
+    return R.S.subscribe(k.CkL.UPLOAD_FILE, e), () => {
+      R.S.unsubscribe(k.CkL.UPLOAD_FILE, e)
     }
   });
   let eE = (0, v.NE)(V),
     eb = (0, v.Xu)(V),
     ey = eE || eb,
-    eO = !I.dN.useSetting() && !(0, R.isAndroidWeb)() && null != window.ResizeObserver,
+    eO = !I.dN.useSetting() && !(0, P.isAndroidWeb)() && null != window.ResizeObserver,
     ev = !z,
     eI = (0, y.UI)(null != V ? V : void 0),
     eT = (0, _.qB)(),
     eS = (0, O.Us)({
       location: "ChannelAttachButton"
     }),
-    eA = null != (a = null == et ? void 0 : et.length) ? a : 0,
-    eN = (0, k.Z)({
+    eA = null != (o = null == et ? void 0 : et.length) ? o : 0,
+    eN = (0, M.Z)({
       canAttachFiles: ef,
       canStartThreads: ey,
       useSlate: eO,
       hasClips: eu,
       canUseApplicationCommands: ev,
       channel: V,
-      activities: Q,
+      activities: J,
       newClipsCount: eA,
       canPostPolls: eI,
       canLaunchActivities: eT,
@@ -158,18 +158,18 @@ function Y(e) {
     }),
     eC = (0, p.Z)("ChannelAttachButton");
   if (0 === eN.length) return null;
-  let ew = "refresh_sm",
-    eR = eC ? (0, r.jsx)(c.svS, {
-      size: ew,
+  let eR = "refresh_sm",
+    eP = eC ? (0, r.jsx)(c.svS, {
+      size: eR,
       color: "currentColor",
       colorClass: B.attachButtonPlus
     }) : (0, r.jsx)(c.oFk, {
-      size: ew,
+      size: eR,
       color: "currentColor",
       colorClass: B.attachButtonPlus
     }),
-    eP = (0, r.jsx)(c.yRy, {
-      targetElementRef: X,
+    ew = (0, r.jsx)(c.yRy, {
+      targetElementRef: Q,
       shouldShow: null != el,
       animation: c.yRy.Animation.NONE,
       align: "recentClips" === el ? "center" : "left",
@@ -199,7 +199,7 @@ function Y(e) {
               channel: V,
               onFileUpload: () => {
                 var e;
-                return null == (e = $.current) ? void 0 : e.activateUploadDialogue()
+                return null == (e = X.current) ? void 0 : e.activateUploadDialogue()
               },
               draftType: Y,
               editorTextContent: W,
@@ -211,25 +211,25 @@ function Y(e) {
         }
       },
       children: e => (0, r.jsx)(L.Z, H(F({
-        ref: X,
-        className: o()(B.attachButton, Z),
+        ref: Q,
+        className: a()(B.attachButton, Z),
         childClassName: B.attachButtonInner,
         isActive: !1,
         "aria-label": G.intl.string(G.t.d56gCQ),
         onDoubleClick: ef ? () => {
           var e;
-          return null == (e = $.current) ? void 0 : e.activateUploadDialogue()
+          return null == (e = X.current) ? void 0 : e.activateUploadDialogue()
         } : void 0,
         "aria-haspopup": "menu"
       }, e), {
-        children: eR
+        children: eP
       }))
     });
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       className: B.uploadInput,
       children: (0, r.jsx)(u.Z, {
-        ref: $,
+        ref: X,
         onChange: eh,
         multiple: V.rateLimitPerUser <= 0,
         tabIndex: -1,
@@ -245,7 +245,7 @@ function Y(e) {
         animationContainerClassName: B.buttonAnimation,
         glowClassName: B.buttonAnimationGlow,
         trinketsClassName: B.buttonAnimationTrinkets,
-        children: eP
+        children: ew
       })
     })]
   })

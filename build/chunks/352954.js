@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var i = n(481060),
-  a = n(981631),
-  o = n(388032);
+  o = n(981631),
+  a = n(388032);
 
 function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -57,22 +57,22 @@ let d = {
       }, n))
     })
   },
-  openSecureFramesUserVerificationModal: function(e, t, o, s) {
-    o() && (0, i.ZDy)(async () => {
+  openSecureFramesUserVerificationModal: function(e, t, a, s) {
+    a() && (0, i.ZDy)(async () => {
       let i = (await n.e("33397").then(n.bind(n, 963410))).default;
       return n => (0, r.jsx)(i, l({
         userId: e,
         channelId: t
       }, n))
     }, {
-      contextKey: s === a.IlC.POPOUT ? i.u1M : i.z1l
+      contextKey: s === o.IlC.POPOUT ? i.u1M : i.z1l
     })
   },
   openSecureFramesUpdateConfirmation: function(e) {
     let {
       title: t,
-      subtitle: a,
-      confirmText: s = o.intl.string(o.t["cY+Ooa"]),
+      subtitle: o,
+      confirmText: s = a.intl.string(a.t["cY+Ooa"]),
       onConfirm: c
     } = e;
     (0, i.ZDy)(async () => {
@@ -82,13 +82,13 @@ let d = {
       return n => (0, r.jsx)(e, u(l({
         header: t,
         confirmText: s,
-        cancelText: o.intl.string(o.t["ETE/oK"]),
+        cancelText: a.intl.string(a.t["ETE/oK"]),
         onConfirm: c
       }, n), {
         children: (0, r.jsx)(i.Text, {
           variant: "text-sm/normal",
           color: "header-secondary",
-          children: a
+          children: o
         })
       }))
     })

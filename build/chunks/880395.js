@@ -7,7 +7,7 @@ var r = n(255367);
 n(73800);
 var i = n(239091);
 
-function a(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -16,14 +16,14 @@ function a(e, t, n) {
   }) : e[t] = n, e
 }
 
-function o(e) {
+function a(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      a(e, t, n[t])
+      o(e, t, n[t])
     })
   }
   return e
@@ -46,15 +46,15 @@ function l(e, t) {
   }), e
 }
 
-function c(e, t, a, s, c) {
-  let u = a.getGuildId();
+function c(e, t, o, s, c) {
+  let u = o.getGuildId();
   return null != u ? (0, i.jW)(e, async () => {
     let {
       default: e
     } = await Promise.all([n.e("8982"), n.e("80125"), n.e("61866")]).then(n.bind(n, 357823));
-    return n => (0, r.jsx)(e, l(o({}, n), {
+    return n => (0, r.jsx)(e, l(a({}, n), {
       user: t,
-      channel: a,
+      channel: o,
       guildId: u,
       onInteraction: e => c("GuildVoiceUserContextMenu", e)
     }))
@@ -62,9 +62,9 @@ function c(e, t, a, s, c) {
     let {
       default: e
     } = await Promise.all([n.e("80125"), n.e("47452")]).then(n.bind(n, 238296));
-    return n => (0, r.jsx)(e, l(o({}, n), {
+    return n => (0, r.jsx)(e, l(a({}, n), {
       user: t,
-      channel: a,
+      channel: o,
       onInteraction: e => c("BaseVoiceUserContextMenu", e)
     }))
   }, s)

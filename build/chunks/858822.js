@@ -10,8 +10,8 @@ var i = n(913527),
   s = n(481060),
   o = n(87051),
   c = n(776568),
-  d = n(777861),
-  u = n(9156),
+  u = n(777861),
+  d = n(9156),
   h = n(621600),
   p = n(388032);
 
@@ -20,11 +20,11 @@ function f(e, t) {
     {
       muted: i,
       muteConfig: f
-    } = (0, a.cj)([u.ZP], () => ({
-      muted: null != n ? u.ZP.isMuted(n) : void 0,
-      muteConfig: null != n ? u.ZP.getMuteConfig(n) : void 0
+    } = (0, a.cj)([d.ZP], () => ({
+      muted: null != n ? d.ZP.isMuted(n) : void 0,
+      muteConfig: null != n ? d.ZP.getMuteConfig(n) : void 0
     }), [n]),
-    g = (0, d.U)(f);
+    g = (0, u.U)(f);
   return null == n ? null : i ? (0, r.jsx)(s.sNh, {
     id: "unmute-guild",
     label: p.intl.string(p.t.De0BTE),

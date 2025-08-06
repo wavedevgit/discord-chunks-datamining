@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var i = n(442837),
-  a = n(922482),
-  o = n(979651),
+  o = n(922482),
+  a = n(979651),
   s = n(915863),
   l = n(388032),
   c = n(558803);
@@ -18,8 +18,8 @@ let u = e => {
     color: u,
     look: d,
     onAction: f
-  } = e, _ = (0, i.e7)([o.Z], () => o.Z.isInChannel(n), [n]), p = () => {
-    null == f || f(), a.AC(t, n)
+  } = e, _ = (0, i.e7)([a.Z], () => a.Z.isInChannel(n), [n]), p = () => {
+    null == f || f(), o.AC(t, n)
   };
   return (0, r.jsx)(s.Z, {
     className: c.button,

@@ -1,36 +1,36 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  u: () => a
+  u: () => o
 });
 var r = n(73800),
   i = n(298213);
 
-function a(e) {
+function o(e) {
   let {
     userId: t,
     applicationId: n,
-    isGameRelationship: a,
-    location: o,
+    isGameRelationship: o,
+    location: a,
     onConfirm: s,
     onCancel: l
   } = e, c = r.useCallback(() => {
     i.Z.cancelFriendRequest({
       userId: t,
-      applicationId: a ? n : null,
-      location: o
+      applicationId: o ? n : null,
+      location: a
     })
-  }, [n, a, o, t]);
+  }, [n, o, a, t]);
   return {
     acceptFriendRequest: r.useCallback(() => {
       i.Z.maybeConfirmFriendRequestAccept({
         userId: t,
-        applicationId: a ? n : null,
-        location: o,
+        applicationId: o ? n : null,
+        location: a,
         onConfirm: s,
         onCancel: l
       })
-    }, [n, a, o, l, s, t]),
+    }, [n, o, a, l, s, t]),
     cancelFriendRequest: c
   }
 }

@@ -1,12 +1,12 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => k,
+  Z: () => M,
   d: () => E
 }), n(388685), n(781311);
 var r, i = n(392711),
-  a = n.n(i),
-  o = n(442837),
+  o = n.n(i),
+  a = n(442837),
   s = n(570140),
   l = n(823379),
   c = n(709054),
@@ -73,12 +73,12 @@ function v(e) {
     channelId: n,
     draft: r,
     draftType: i
-  } = e, a = d.Z.getChannel(n);
-  r === (null == a ? void 0 : a.template) && (r = "");
-  let o = u.default.getId();
-  if (null != o && null != r && "" !== r) {
+  } = e, o = d.Z.getChannel(n);
+  r === (null == o ? void 0 : o.template) && (r = "");
+  let a = u.default.getId();
+  if (null != a && null != r && "" !== r) {
     var s;
-    let e = O(o),
+    let e = O(a),
       t = e[n];
     if (null == t && (t = e[n] = {}), (r = y(r)) === (null == (s = t[i]) ? void 0 : s.draft)) return !1;
     t[i] = {
@@ -104,10 +104,10 @@ function T(e) {
   } = e, r = u.default.getId();
   if (null == r) return;
   let i = O(r),
-    a = i[t];
-  null == a && (a = i[t] = {}), a[1] = m(p({
+    o = i[t];
+  null == o && (o = i[t] = {}), o[1] = m(p({
     timestamp: Date.now()
-  }, a[1], n), {
+  }, o[1], n), {
     parentChannelId: t
   })
 }
@@ -118,7 +118,7 @@ function S(e, t) {
   let r = O(n),
     i = r[e];
   if (null == i) return !1;
-  delete i[t], a().isEmpty(i) && delete r[e]
+  delete i[t], o().isEmpty(i) && delete r[e]
 }
 
 function A() {
@@ -137,7 +137,7 @@ function C() {
   return A(), !1
 }
 
-function w(e) {
+function R(e) {
   let {
     channel: {
       id: t
@@ -148,7 +148,7 @@ function w(e) {
   return delete r[t], !1
 }
 
-function R(e) {
+function P(e) {
   let {
     channel: t
   } = e, n = u.default.getId();
@@ -156,13 +156,13 @@ function R(e) {
   let r = O(n),
     i = r[t.parent_id];
   if (null == i) return !1;
-  let a = i[1];
-  if (null == a || a.parentMessageId !== c.default.castChannelIdAsMessageId(t.id)) return !1;
+  let o = i[1];
+  if (null == o || o.parentMessageId !== c.default.castChannelIdAsMessageId(t.id)) return !1;
   {
-    var o, s;
+    var a, s;
     let e = r[t.parent_id];
     if (null == e) return !1;
-    let n = null != (s = null == (o = e[2]) ? void 0 : o.draft) ? s : "";
+    let n = null != (s = null == (a = e[2]) ? void 0 : a.draft) ? s : "";
     "" !== n && (r[t.id] = {
       0: {
         timestamp: Date.now(),
@@ -172,7 +172,7 @@ function R(e) {
   }
 }
 
-function P(e) {
+function w(e) {
   e.isSwitchingAccount || (b = {})
 }
 
@@ -187,7 +187,7 @@ function L() {
       null != t && ("" === t.draft || "" === t.draft.trim()) && S(n, 0, e)
     }
 }
-class x extends(r = o.ZP.PersistedStore) {
+class x extends(r = a.ZP.PersistedStore) {
   initialize(e) {
     b = null != e ? e : {}, L(), this.waitFor(u.default, d.Z, f.Z)
   }
@@ -208,7 +208,7 @@ class x extends(r = o.ZP.PersistedStore) {
     let t = u.default.getId();
     if (null == t) return [];
     let n = O(t);
-    return a()(n).mapValues(t => null == t ? void 0 : t[e]).pickBy(l.lm).toPairs().map(e => {
+    return o()(n).mapValues(t => null == t ? void 0 : t[e]).pickBy(l.lm).toPairs().map(e => {
       let [t, {
         timestamp: n,
         draft: r
@@ -256,14 +256,14 @@ _(x, "displayName", "DraftStore"), _(x, "persistKey", "DraftStore"), _(x, "migra
   for (let t in e) r[t] = e[t];
   return n
 }]);
-let k = new x(s.Z, {
+let M = new x(s.Z, {
   CONNECTION_OPEN: N,
-  LOGOUT: P,
+  LOGOUT: w,
   MULTI_ACCOUNT_REMOVE_ACCOUNT: D,
   GUILD_DELETE: C,
-  CHANNEL_DELETE: w,
-  THREAD_DELETE: w,
-  THREAD_CREATE: R,
+  CHANNEL_DELETE: R,
+  THREAD_DELETE: R,
+  THREAD_CREATE: P,
   DRAFT_SAVE: v,
   DRAFT_CHANGE: v,
   DRAFT_CLEAR: I,

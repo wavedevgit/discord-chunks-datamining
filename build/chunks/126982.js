@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(255367),
   i = n(73800),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(873546),
   l = n(442837),
   c = n(481060),
@@ -53,10 +53,10 @@ function v(e) {
   let {
     step: t,
     onClose: n,
-    isOrbCheckout: a
+    isOrbCheckout: o
   } = e, l = (0, u.Z)(m.X), {
     footerNode: d
-  } = (0, p.JL)(), f = (0, _.G6)() && !s.tq, b = null != d ? d.offsetWidth : void 0, y = i.useMemo(() => f && null != b && (t === h.h8.ADD_PAYMENT_STEPS || a) ? b : void 0, [f, b, t, a]);
+  } = (0, p.JL)(), f = (0, _.G6)() && !s.tq, b = null != d ? d.offsetWidth : void 0, y = i.useMemo(() => f && null != b && (t === h.h8.ADD_PAYMENT_STEPS || o) ? b : void 0, [f, b, t, o]);
   if (t === h.h8.BENEFITS || t === h.h8.CONFIRM) return null;
   let v = null != y ? {
       width: y + 2
@@ -72,8 +72,8 @@ function v(e) {
       "aria-hidden": "true",
       "data-accessibility": "desaturate",
       style: I,
-      children: a ? (0, r.jsx)(O, {
-        className: o()(g.headerImage, g.orbCheckoutHeaderVideo)
+      children: o ? (0, r.jsx)(O, {
+        className: a()(g.headerImage, g.orbCheckoutHeaderVideo)
       }) : (0, r.jsx)("img", {
         src: E,
         alt: "",

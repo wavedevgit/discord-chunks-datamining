@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  T: () => a
+  T: () => o
 });
 var r = n(347904);
 let i = [{
@@ -41,8 +41,8 @@ let i = [{
   }, {
     load: () => n.e("73921").then(n.t.bind(n, 558619, 19))
   }],
-  a = async function(e, t, n) {
+  o = async function(e, t, n) {
     arguments.length > 3 && void 0 !== arguments[3] && arguments[3];
-    let a = i[(0, r.vJ)("".concat(e).concat(t).concat(n)) % i.length];
-    return await a.load()
+    let o = i[(0, r.vJ)("".concat(e).concat(t).concat(n)) % i.length];
+    return await o.load()
   }

@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var i = n(46973),
-  a = n(878001),
-  o = n(458725),
+  o = n(878001),
+  a = n(458725),
   s = n(386146),
   l = n(803647),
   c = n(63063),
@@ -17,11 +17,11 @@ var i = n(46973),
 
 function _(e) {
   switch (null == e ? void 0 : e.type) {
-    case o.u.SCREENSHARE_OS_ERROR:
+    case a.u.SCREENSHARE_OS_ERROR:
       return f.intl.format(f.t.e9LMur, {
         errorMessage: e.errorMessage
       });
-    case o.u.STREAM_FAILED_TO_START:
+    case a.u.STREAM_FAILED_TO_START:
     default:
       return f.intl.string(f.t.rSlOen)
   }
@@ -40,7 +40,7 @@ function p(e) {
     avErrorUIEnabled: b
   } = (0, s.JN)({
     location: "StreamWarning"
-  }), y = _(m), O = null == (t = (0, o.hp)(null != h ? h : o.u.STREAM_FAILED_TO_START)) ? void 0 : t.errorCode;
+  }), y = _(m), O = null == (t = (0, a.hp)(null != h ? h : a.u.STREAM_FAILED_TO_START)) ? void 0 : t.errorCode;
   return (0, r.jsx)(u.Z, {
     header: y,
     size: (0, u.L)(p),
@@ -53,7 +53,7 @@ function p(e) {
       errorCode: O
     }) : void 0,
     onCTAClick: () => {
-      (0, a.w)(i.Yn.STREAM, n.ownerId), (0, l.Z)(n)
+      (0, o.w)(i.Yn.STREAM, n.ownerId), (0, l.Z)(n)
     },
     callToAction: f.intl.string(f.t["4EGMWF"])
   })

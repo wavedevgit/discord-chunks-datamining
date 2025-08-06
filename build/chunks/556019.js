@@ -5,7 +5,7 @@ n.d(t, {
 });
 var r = n(931084),
   i = n(818083);
-let a = (0, i.B)({
+let o = (0, i.B)({
     kind: "user",
     id: "2025-04_emoji_studio",
     label: "Emoji Studio",
@@ -29,7 +29,7 @@ let a = (0, i.B)({
       }
     }]
   }),
-  o = (0, i.B)({
+  a = (0, i.B)({
     kind: "user",
     id: "2025-07_emoji_studio_mobile",
     label: "Emoji Studio (Mobile)",
@@ -53,14 +53,14 @@ function s(e) {
   } = e, s = (0, r.$u)(t), {
     enabled: l,
     showExpressionPickerButton: c
-  } = a.getCurrentConfig({
+  } = o.getCurrentConfig({
     location: t
   }, {
     autoTrackExposure: n,
     disable: s || i
   }), {
     enabled: u
-  } = o.getCurrentConfig({
+  } = a.getCurrentConfig({
     location: t
   }, {
     autoTrackExposure: n,

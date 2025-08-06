@@ -9,8 +9,8 @@ var r = n(255367),
   s = n(592125),
   o = n(430824),
   c = n(584825),
-  d = n(406074),
-  u = n(660196),
+  u = n(406074),
+  d = n(660196),
   h = n(36246),
   p = n(305342),
   f = n(981631),
@@ -21,16 +21,16 @@ function b(e) {
   let {
     guildId: t,
     channelId: n
-  } = e, b = (0, d.C)({
+  } = e, b = (0, u.C)({
     guildId: t,
     channelId: n
-  }), _ = (0, c.GG)(t), y = (0, c.YB)(t), j = (0, l.e7)([o.Z], () => o.Z.getGuild(t), [t]), O = null == j ? void 0 : j.name, x = (0, l.e7)([s.Z], () => s.Z.getChannel(n)), v = i.useMemo(() => {
+  }), y = (0, c.GG)(t), x = (0, c.YB)(t), j = (0, l.e7)([o.Z], () => o.Z.getGuild(t), [t]), _ = null == j ? void 0 : j.name, O = (0, l.e7)([s.Z], () => s.Z.getChannel(n)), v = i.useMemo(() => {
     let e = {};
-    for (let t of _)
+    for (let t of y)
       for (let n of t.subscription_listings_ids) e[n] = t.id;
     return e
-  }, [_]);
-  return ((0, u.Z)({
+  }, [y]);
+  return ((0, d.Z)({
     guildId: t,
     location: f.Sbl.ROLE_SUBSCRIPTION_GATED_CHANNEL,
     relevantSubscriptionListingIds: b.map(e => e.id)
@@ -45,14 +45,14 @@ function b(e) {
       variant: "heading-xl/semibold",
       className: m.joinCtaTitle,
       children: g.intl.format(g.t.xHMpys, {
-        serverName: O,
-        channelName: null == x ? void 0 : x.name
+        serverName: _,
+        channelName: null == O ? void 0 : O.name
       })
     }), (0, r.jsx)(a.Text, {
       className: m.joinCtaSubtitle,
       variant: "text-md/normal",
       color: "header-secondary",
-      children: null == y ? void 0 : y.description
+      children: null == x ? void 0 : x.description
     }), (0, r.jsx)(h.Z, {
       guildId: t,
       children: b.filter(e => null != v[e.id]).map(e => (0, r.jsx)(p.Z, {

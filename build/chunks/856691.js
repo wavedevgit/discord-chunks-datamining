@@ -1,6 +1,6 @@
 /** Chunk was on 49152 **/
 n.d(t, {
-  Z: () => d
+  Z: () => u
 });
 var r = n(255367);
 n(73800);
@@ -11,14 +11,14 @@ var i = n(692547),
   o = n(688641),
   c = n(388032);
 
-function d(e) {
+function u(e) {
   let {
     className: t,
     channel: n,
-    highlight: d
-  } = e, u = (0, a.bp)();
+    highlight: u
+  } = e, d = (0, a.bp)();
   return (0, r.jsx)(o.Z, {
-    highlight: null != d && d,
+    highlight: null != u && u,
     className: t,
     icon: (0, r.jsx)(l.ewx, {
       size: "custom",
@@ -30,7 +30,7 @@ function d(e) {
     title: c.intl.string(c.t.OYbHfn),
     description: c.intl.string(c.t.yXwLMT),
     onClick: function() {
-      (0, s.T)(n, u)
+      (0, s.T)(n, d)
     }
   })
 }

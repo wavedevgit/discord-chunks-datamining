@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var i = n(120356),
-  a = n.n(i),
-  o = n(442837),
+  o = n.n(i),
+  a = n(442837),
   s = n(846027),
   l = n(522651),
   c = n(793148),
@@ -37,14 +37,14 @@ function g(e) {
   } = e, {
     currentVolume: y,
     muted: O
-  } = (0, o.cj)([u.Z], () => ({
+  } = (0, a.cj)([u.Z], () => ({
     currentVolume: u.Z.getLocalVolume(s, g),
     muted: u.Z.isLocalMute(s, g)
   }));
   return (0, r.jsx)(_.Z, {
     children: (0, r.jsx)(c.Z, {
       currentWindow: E,
-      iconClassName: a()(n, p.controlIcon),
+      iconClassName: o()(n, p.controlIcon),
       sliderClassName: i,
       className: t,
       value: (0, d.P)(y),

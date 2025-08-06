@@ -5,9 +5,9 @@ n.d(t, {
 }), n(35282), n(539854), n(583741);
 var r = n(765085),
   i = n(937490),
-  a = n.n(i),
-  o = n(78650),
-  s = n.n(o),
+  o = n.n(i),
+  a = n(78650),
+  s = n.n(a),
   l = n(505444),
   c = n.n(l);
 
@@ -54,8 +54,8 @@ function p(e, t) {
   if (null == e) return {};
   var n, r, i = h(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -63,8 +63,8 @@ function p(e, t) {
 function h(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 
@@ -104,8 +104,8 @@ function v(e, t, n) {
 function I(e, t) {
   let n, {
       toValueMin: i,
-      toValueMax: a,
-      tension: o = 0,
+      toValueMax: o,
+      tension: a = 0,
       friction: s = 0,
       loop: l,
       reverse: c,
@@ -119,10 +119,10 @@ function I(e, t) {
     b = p(t, ["toValueMin", "toValueMax", "tension", "friction", "loop", "reverse", "invert", "callback", "type", "shouldLoop", "durationMin", "durationMax"]),
     y = e._value,
     O = v(t.duration, g, E),
-    T = v(t.toValue, i, a),
+    T = v(t.toValue, i, o),
     S = r[h](e, _(d({}, b), {
       toValue: T,
-      tension: o,
+      tension: a,
       friction: s,
       duration: O
     })),
@@ -131,7 +131,7 @@ function I(e, t) {
     let i = v(t.duration, g, E);
     n = r[h](e, _(d({}, b), {
       toValue: c ? y : -T,
-      tension: o,
+      tension: a,
       friction: s,
       duration: i
     })), A = r.sequence([S, n])
@@ -153,7 +153,7 @@ let S = {
     CLAMP: "clamp"
   },
   A = _(d({}, r), {
-    Easing: a(),
+    Easing: o(),
     accelerate: O,
     animate: I,
     interpolate: T,

@@ -4,15 +4,15 @@ n(42547), e.exports = function(e, t) {
   var n = e.getSelection(),
     r = e.getCurrentContent(),
     i = n.getStartKey(),
-    a = n.getStartOffset(),
-    o = i,
+    o = n.getStartOffset(),
+    a = i,
     s = 0;
-  if (t > a) {
+  if (t > o) {
     var l = r.getKeyBefore(i);
-    null == l ? o = i : (o = l, s = r.getBlockForKey(l).getText().length)
-  } else s = a - t;
+    null == l ? a = i : (a = l, s = r.getBlockForKey(l).getText().length)
+  } else s = o - t;
   return n.merge({
-    focusKey: o,
+    focusKey: a,
     focusOffset: s,
     isBackward: !0
   })

@@ -1,11 +1,11 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => M
+  Z: () => j
 }), n(388685), n(35282), n(415506), n(539854), n(993155);
 var r, i = n(348327),
-  a = n.n(i),
-  o = n(442837),
+  o = n.n(i),
+  a = n(442837),
   s = n(544891),
   l = n(570140),
   c = n(457330),
@@ -37,12 +37,12 @@ let g = "33kozedd0zs6fbauka98psnc7zwom2s",
   N = new Set,
   C = {};
 
-function w(e) {
+function R(e) {
   var t;
   return null == (t = v.exec(e)) ? void 0 : t[1]
 }
 
-function R(e, t, n) {
+function P(e, t, n) {
   return s.tn.get({
     url: "".concat(O).concat(e),
     query: t,
@@ -53,7 +53,7 @@ function R(e, t, n) {
     rejectWithError: !1
   })
 }
-async function P(e, t) {
+async function w(e, t) {
   var n;
   let r = C[e];
   if (null != r) return r;
@@ -61,10 +61,10 @@ async function P(e, t) {
     body: {
       data: i
     }
-  } = await R("/games", {
+  } = await P("/games", {
     id: e
-  }, t), a = null == (n = i[0]) ? void 0 : n.name;
-  return C[e] = a, a
+  }, t), o = null == (n = i[0]) ? void 0 : n.name;
+  return C[e] = o, o
 }
 class D {
   start() {
@@ -83,20 +83,20 @@ class D {
       var n, r, i;
       let {
         body: {
-          data: a
+          data: o
         }
-      } = await R("/streams", {
+      } = await P("/streams", {
         user_id: e.id,
         first: 1
-      }, t), o = a[0];
-      if (null == o || "live" !== o.type) throw Error("no stream");
+      }, t), a = o[0];
+      if (null == a || "live" !== a.type) throw Error("no stream");
       let {
         thumbnail_url: s,
         game_id: l,
         title: c
-      } = o, f = {
+      } = a, f = {
         large_image: null != s && null != (r = (0, d.f)(h.ABu.TWITCH, s)) ? r : void 0
-      }, _ = await P(l, t), p = u.Z.get(h.ABu.TWITCH), m = null != (i = w(s)) ? i : e.name, g = null != c && "" !== c ? c.slice(0, I) : void 0, E = null != _ && "" !== _ ? _.slice(0, I) : void 0;
+      }, _ = await w(l, t), p = u.Z.get(h.ABu.TWITCH), m = null != (i = R(s)) ? i : e.name, g = null != c && "" !== c ? c.slice(0, I) : void 0, E = null != _ && "" !== _ ? _.slice(0, I) : void 0;
       return {
         url: null == (n = p.getPlatformUserUrl) ? void 0 : n.call(p, {
           id: e.id,
@@ -138,12 +138,12 @@ class D {
       let {
         id: i,
         snippet: {
-          title: a,
-          thumbnails: o
+          title: o,
+          thumbnails: a
         }
       } = r[0], l = {
-        large_image: null != (n = (0, d.f)(h.ABu.YOUTUBE, o.high.url)) ? n : void 0
-      }, c = null != a && "" !== a ? a.slice(0, I) : void 0;
+        large_image: null != (n = (0, d.f)(h.ABu.YOUTUBE, a.high.url)) ? n : void 0
+      }, c = null != o && "" !== o ? o.slice(0, I) : void 0;
       return A = {
         url: b(i),
         name: u.Z.get(h.ABu.YOUTUBE).name,
@@ -187,12 +187,12 @@ function x() {
   p.Z.enabled ? L.start() : L.stop()
 }
 
-function k(e) {
+function M(e) {
   var t;
-  if (a()(e.stream, T)) return !1;
+  if (o()(e.stream, T)) return !1;
   T = null != (t = e.stream) ? t : null
 }
-class j extends(r = o.ZP.Store) {
+class k extends(r = a.ZP.Store) {
   initialize() {
     x(), this.waitFor(_.Z), this.syncWith([p.Z], x)
   }
@@ -200,8 +200,8 @@ class j extends(r = o.ZP.Store) {
     return T
   }
 }
-m(j, "displayName", "ExternalStreamingStore");
-let M = new j(l.Z, {
-  STREAMING_UPDATE: k,
+m(k, "displayName", "ExternalStreamingStore");
+let j = new k(l.Z, {
+  STREAMING_UPDATE: M,
   USER_CONNECTIONS_UPDATE: () => L._check()
 })

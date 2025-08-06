@@ -2,11 +2,11 @@
 "use strict";
 var r = n(581079),
   i = "LTR",
-  a = "RTL",
-  o = null;
+  o = "RTL",
+  a = null;
 
 function s(e) {
-  return e === i || e === a
+  return e === i || e === o
 }
 
 function l(e) {
@@ -18,7 +18,7 @@ function c(e, t) {
 }
 
 function u(e) {
-  o = e
+  a = e
 }
 
 function d() {
@@ -27,13 +27,13 @@ function d() {
 e.exports = {
   NEUTRAL: "NEUTRAL",
   LTR: i,
-  RTL: a,
+  RTL: o,
   isStrong: s,
   getHTMLDir: l,
   getHTMLDirIfDifferent: c,
   setGlobalDir: u,
   initGlobalDir: d,
   getGlobalDir: function() {
-    return o || this.initGlobalDir(), o || r(!1), o
+    return a || this.initGlobalDir(), a || r(!1), a
   }
 }

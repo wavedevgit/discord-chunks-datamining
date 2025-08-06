@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(255367),
   i = n(73800),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(442837),
   l = n(481060),
   c = n(607070),
@@ -17,7 +17,7 @@ function f(e) {
   let {
     look: t = u.U4.LARGE_BANNER
   } = e, n = (0, s.e7)([c.Z], () => c.Z.useReducedMotion), {
-    styleLarge: a,
+    styleLarge: o,
     styleSmall: f
   } = i.useMemo(() => ({
     styleLarge: {
@@ -28,29 +28,29 @@ function f(e) {
     }
   }), []);
   return (0, r.jsxs)("div", {
-    className: o()(d.container, d.loadingAnimation, {
+    className: a()(d.container, d.loadingAnimation, {
       [d.noAnimation]: n,
       [d.containerBorderRadius]: t !== u.U4.ROW,
       [d.rowContainer]: t === u.U4.ROW
     }),
     children: [(0, r.jsx)("div", {
-      className: o()(d.bannerImage, {
+      className: a()(d.bannerImage, {
         [d.mediumBanner]: t === u.U4.MEDIUM_BANNER,
         [d.largeBanner]: t === u.U4.LARGE_BANNER
       })
     }), (0, r.jsxs)("div", {
-      className: o()(d.appDetailsContainer, {
+      className: a()(d.appDetailsContainer, {
         [d.appDetailsRowContainer]: t === u.U4.ROW
       }),
       children: [(0, r.jsx)("div", {
-        className: o()(d.iconPlaceholder, {
+        className: a()(d.iconPlaceholder, {
           [d.rowIconPlaceholder]: t === u.U4.ROW
         })
       }), (0, r.jsxs)("div", {
         className: d.textContainer,
         children: [(0, r.jsx)("div", {
           className: d.textPlaceholder,
-          style: a,
+          style: o,
           children: (0, r.jsx)(l.X6q, {
             className: d.hidden,
             variant: "heading-md/semibold",

@@ -9,8 +9,8 @@ var r = n(255367),
   s = n(772848),
   o = n(481060),
   c = n(871499),
-  d = n(388032),
-  u = n(730288);
+  u = n(388032),
+  d = n(730288);
 
 function h(e) {
   let {
@@ -49,11 +49,11 @@ function p(e) {
     numRequestToSpeak: n
   } = e, i = n > 0;
   return (0, r.jsxs)("div", {
-    className: a()(u.raisedHandIcon, t),
+    className: a()(d.raisedHandIcon, t),
     children: [(0, r.jsx)(h, {
       isBadged: i
     }), i ? (0, r.jsx)(o.Text, {
-      className: u.raisedHandCount,
+      className: d.raisedHandCount,
       variant: "text-xs/semibold",
       children: n > 99 ? "99+" : n
     }) : null]
@@ -82,7 +82,7 @@ function f(e) {
     }
     return i
   }(e, ["toggleRequestToSpeakSidebar", "showRequestToSpeakSidebar", "className", "numRequestToSpeak", "onClick"]);
-  let u = i.useCallback(() => {
+  let d = i.useCallback(() => {
     null == s || s(), t()
   }, [s, t]);
   return (0, r.jsx)(c.Z, function(e) {
@@ -103,8 +103,8 @@ function f(e) {
     }
     return e
   }({
-    onClick: u,
-    label: n ? d.intl.string(d.t.gKGz7O) : d.intl.string(d.t.ImQ4dX),
+    onClick: d,
+    label: n ? u.intl.string(u.t.gKGz7O) : u.intl.string(u.t.ImQ4dX),
     className: l,
     iconComponent: () => (0, r.jsx)(p, {
       numRequestToSpeak: a,

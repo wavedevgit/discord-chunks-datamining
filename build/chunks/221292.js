@@ -1,19 +1,19 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  NE: () => R,
+  NE: () => P,
   QN: () => A,
-  Qf: () => P,
+  Qf: () => w,
   RV: () => C,
   TY: () => D,
   pQ: () => N,
   te: () => T,
-  z7: () => w
+  z7: () => R
 }), n(539854), n(388685);
 var r = n(367907),
   i = n(752048),
-  a = n(199902),
-  o = n(271383),
+  o = n(199902),
+  a = n(271383),
   s = n(158776),
   l = n(699516),
   c = n(594174),
@@ -70,16 +70,16 @@ let v = e => {
       userProfile: n,
       guildMember: r,
       guildMemberProfile: i
-    } = e, a = null != n ? n : i, o = [];
-    if ((null == r ? void 0 : r.nick) && o.push(h.cm.NICKNAME), (null == a ? void 0 : a.pronouns) && o.push(h.cm.PRONOUNS), null == t ? void 0 : t.avatar) {
+    } = e, o = null != n ? n : i, a = [];
+    if ((null == r ? void 0 : r.nick) && a.push(h.cm.NICKNAME), (null == o ? void 0 : o.pronouns) && a.push(h.cm.PRONOUNS), null == t ? void 0 : t.avatar) {
       let e = (0, d.xR)(null == t ? void 0 : t.avatar);
-      o.push(e ? h.cm.ANIMATED_AVATAR : h.cm.AVATAR)
+      a.push(e ? h.cm.ANIMATED_AVATAR : h.cm.AVATAR)
     }
-    if (null == a ? void 0 : a.banner) {
-      let e = (0, d.xR)(null == a ? void 0 : a.banner);
-      o.push(e ? h.cm.ANIMATED_BANNER : h.cm.BANNER)
+    if (null == o ? void 0 : o.banner) {
+      let e = (0, d.xR)(null == o ? void 0 : o.banner);
+      a.push(e ? h.cm.ANIMATED_BANNER : h.cm.BANNER)
     }
-    return (null == a ? void 0 : a.bio) && o.push(h.cm.BIO), (null == a ? void 0 : a.themeColors) != null && void 0 !== a.themeColors.find(e => null !== e) && o.push(h.cm.THEME), (null == t ? void 0 : t.avatarDecoration) != null && o.push(h.cm.AVATAR_DECORATION), (null == a ? void 0 : a.profileEffectId) != null && o.push(h.cm.PROFILE_EFFECT), o
+    return (null == o ? void 0 : o.bio) && a.push(h.cm.BIO), (null == o ? void 0 : o.themeColors) != null && void 0 !== o.themeColors.find(e => null !== e) && a.push(h.cm.THEME), (null == t ? void 0 : t.avatarDecoration) != null && a.push(h.cm.AVATAR_DECORATION), (null == o ? void 0 : o.profileEffectId) != null && a.push(h.cm.PROFILE_EFFECT), a
   },
   I = e => {
     let t = s.Z.getStatus(e),
@@ -92,14 +92,14 @@ let v = e => {
     let {
       layout: r,
       userId: i,
-      guildId: a,
+      guildId: o,
       sessionId: l,
       sourceSessionId: u,
       showGuildProfile: d = !0
     } = e, f = c.default.getUser(i);
     if (null == f) return {};
-    let _ = (0, p.Of)(null == f ? void 0 : f.id, d ? a : void 0),
-      h = d && null != a ? o.ZP.getMember(a, null == f ? void 0 : f.id) : null;
+    let _ = (0, p.Of)(null == f ? void 0 : f.id, d ? o : void 0),
+      h = d && null != o ? a.ZP.getMember(o, null == f ? void 0 : f.id) : null;
     return {
       profile_layout: r,
       profile_session_id: l,
@@ -153,17 +153,17 @@ let v = e => {
       guildId: t,
       channelId: n,
       messageId: i,
-      roleId: a,
-      analyticsLocations: o,
+      roleId: o,
+      analyticsLocations: a,
       action: s,
       section: l
     } = e;
     u.default.track(m.rMx.USER_PROFILE_ACTION, O(b({}, (0, r.hH)(t), (0, r.JS)(n), S(e), A(e)), {
-      location_stack: o,
+      location_stack: a,
       profile_action: s,
       profile_section: l,
       source_message_id: i,
-      source_role_id: a
+      source_role_id: o
     }))
   },
   C = e => {
@@ -174,8 +174,8 @@ let v = e => {
       guildId: t,
       channelId: n,
       analyticsLocations: i,
-      profileUi: a,
-      viewStartedAt: o,
+      profileUi: o,
+      viewStartedAt: a,
       fetchStartedAt: s,
       timeToInteractiveMs: l,
       timeToLoadMs: c,
@@ -183,21 +183,21 @@ let v = e => {
     } = e;
     (null != l ? l : 0) <= 0 || (null != c ? c : 0) <= 0 || (null != d ? d : 0) <= 0 || u.default.track(m.rMx.USER_PROFILE_UI_VIEWED, O(b({}, (0, r.hH)(t), (0, r.JS)(n), S(e), A(e)), {
       location_stack: i,
-      profile_ui: a,
-      view_started_at: o,
+      profile_ui: o,
+      view_started_at: a,
       fetch_started_at: s,
       time_to_interactive_ms: l,
       time_to_load_ms: c,
       time_to_fetch_ms: d
     }))
   },
-  w = e => {
+  R = e => {
     let {
       guildId: t,
       channelId: n,
       analyticsLocations: i,
-      action: a,
-      display: o,
+      action: o,
+      display: a,
       activity: s,
       stream: l,
       entry: c,
@@ -206,8 +206,8 @@ let v = e => {
     } = e;
     u.default.track(m.rMx.USER_PROFILE_ACTIVITY_ACTION, O(b({}, (0, r.hH)(t), (0, r.JS)(n), S(e), A(e)), {
       location_stack: i,
-      activity_action: a,
-      activity_display: o,
+      activity_action: o,
+      activity_display: a,
       activity_type: T(null != l ? m.IIU.STREAMING : null == s ? void 0 : s.type),
       activity_name: null == s ? void 0 : s.name,
       activity_platform: null == s ? void 0 : s.platform,
@@ -230,43 +230,43 @@ let v = e => {
       voice_channel_id: f
     }))
   },
-  R = e => {
-    let {
-      guildId: t,
-      channelId: n,
-      analyticsLocations: i,
-      badge: a
-    } = e;
-    u.default.track(m.rMx.USER_PROFILE_BADGE_PRESSED, O(b({}, (0, r.hH)(t), (0, r.JS)(n), S(e), A(e)), {
-      location_stack: i,
-      badge: a
-    }))
-  },
   P = e => {
     let {
       guildId: t,
       channelId: n,
       analyticsLocations: i,
-      badge: a
+      badge: o
+    } = e;
+    u.default.track(m.rMx.USER_PROFILE_BADGE_PRESSED, O(b({}, (0, r.hH)(t), (0, r.JS)(n), S(e), A(e)), {
+      location_stack: i,
+      badge: o
+    }))
+  },
+  w = e => {
+    let {
+      guildId: t,
+      channelId: n,
+      analyticsLocations: i,
+      badge: o
     } = e;
     u.default.track(m.rMx.USER_PROFILE_BADGE_HOVERED, O(b({}, (0, r.hH)(t), (0, r.JS)(n), S(e), A(e)), {
       location_stack: i,
-      badge: a
+      badge: o
     }))
   },
   D = e => {
     var t, n, r;
     let {
       displayProfile: i,
-      isProfileOpen: o
+      isProfileOpen: a
     } = e, c = null == i ? void 0 : i.userId, d = null != c ? s.Z.findActivity(c, e => {
       let {
         type: t
       } = e;
-      return null != a.Z.getAnyStreamForUser(c) ? t === m.IIU.PLAYING : t !== m.IIU.CUSTOM_STATUS
+      return null != o.Z.getAnyStreamForUser(c) ? t === m.IIU.PLAYING : t !== m.IIU.CUSTOM_STATUS
     }) : null;
     u.default.track(m.rMx.DM_PROFILE_TOGGLED, {
-      is_profile_open: o,
+      is_profile_open: a,
       has_images: !!(null != (r = null == d || null == (t = d.assets) ? void 0 : t.large_image) ? r : null == d || null == (n = d.assets) ? void 0 : n.small_image),
       is_friend: l.Z.isFriend(c),
       viewed_profile_user_id: c,

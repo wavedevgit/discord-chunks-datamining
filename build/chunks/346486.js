@@ -4,9 +4,9 @@ n.d(t, {
   Z: () => _
 }), n(388685);
 var r, i = n(255367),
-  a = n(73800),
-  o = n(392711),
-  s = n.n(o),
+  o = n(73800),
+  a = n(392711),
+  s = n.n(a),
   l = n(55935),
   c = n(388032);
 
@@ -19,7 +19,7 @@ function u(e, t, n) {
   }) : e[t] = n, e
 }
 let d = () => [c.intl.string(c.t["6m/6nJ"]), c.intl.string(c.t.n7dksL), c.intl.string(c.t["1LyF1t"]), c.intl.string(c.t.QJyuxc)];
-class f extends(r = a.PureComponent) {
+class f extends(r = o.PureComponent) {
   componentDidMount() {
     let {
       intervalDuration: e,
@@ -37,14 +37,14 @@ class f extends(r = a.PureComponent) {
       showDays: t,
       showUnits: n,
       className: r
-    } = this.props, a = [e.days, e.hours, e.minutes, e.seconds], o = d();
-    if (0 === e.days) a.shift();
+    } = this.props, o = [e.days, e.hours, e.minutes, e.seconds], a = d();
+    if (0 === e.days) o.shift();
     else if (!t) {
-      let e = a.shift();
-      a[0] += 24 * e
+      let e = o.shift();
+      o[0] += 24 * e
     }
-    let l = s()(a).map(e => e < 10 ? "0".concat(e) : e).map((e, t) => [t > 0 && !n ? ":" : " ", (0, i.jsxs)("span", {
-      children: [e, n ? o[a.length - t - 1] : null]
+    let l = s()(o).map(e => e < 10 ? "0".concat(e) : e).map((e, t) => [t > 0 && !n ? ":" : " ", (0, i.jsxs)("span", {
+      children: [e, n ? a[o.length - t - 1] : null]
     }, t)]).flatten().value();
     return (0, i.jsx)("span", {
       className: r,
@@ -63,8 +63,8 @@ class f extends(r = a.PureComponent) {
       "aria-label": c.intl.string(c.t.PqEzn5),
       children: "∞"
     });
-    let a = (0, l.TD)(Date.now(), e, r);
-    return null != t ? t(a, this.defaultRender.bind(this, a)) : this.defaultRender(a)
+    let o = (0, l.TD)(Date.now(), e, r);
+    return null != t ? t(o, this.defaultRender.bind(this, o)) : this.defaultRender(o)
   }
   constructor(...e) {
     super(...e), u(this, "_interval", void 0)

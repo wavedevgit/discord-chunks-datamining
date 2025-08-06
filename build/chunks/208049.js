@@ -5,19 +5,19 @@ n.d(t, {
   AA: () => S,
   Db: () => L,
   Dx: () => I,
-  R: () => P,
+  R: () => w,
   TB: () => A,
-  XE: () => w,
+  XE: () => R,
   hs: () => N,
   w: () => v,
-  xR: () => R,
+  xR: () => P,
   xU: () => C,
   xz: () => D
 }), n(388685), n(539854);
 var r = n(392711),
   i = n.n(r),
-  a = n(544891),
-  o = n(570140),
+  o = n(544891),
+  a = n(570140),
   s = n(668781),
   l = n(479531),
   c = n(675478),
@@ -31,27 +31,27 @@ var r = n(392711),
   g = n(388032);
 let E = async () => {
   try {
-    let e = (await a.tn.get({
+    let e = (await o.tn.get({
       url: h.ANM.SOUNDBOARD_DEFAULT_SOUNDS,
       rejectWithError: !1
     })).body.map(e => (0, f.o3)(e, p.X8));
-    o.Z.dispatch({
+    a.Z.dispatch({
       type: "SOUNDBOARD_FETCH_DEFAULT_SOUNDS_SUCCESS",
       soundboardSounds: e
     })
   } catch (e) {
-    throw o.Z.dispatch({
+    throw a.Z.dispatch({
       type: "SOUNDBOARD_FETCH_DEFAULT_SOUNDS_FAILURE"
     }), new l.Z(e)
   }
 }, b = e => new Promise(t => {
   let n = () => {
-    o.Z.unsubscribe(e, n), setTimeout(t, 0)
+    a.Z.unsubscribe(e, n), setTimeout(t, 0)
   };
-  o.Z.subscribe(e, n)
+  a.Z.subscribe(e, n)
 }), y = () => {
   if (!d.Z.shouldFetchDefaultSounds()) return Promise.resolve();
-  o.Z.dispatch({
+  a.Z.dispatch({
     type: "SOUNDBOARD_FETCH_DEFAULT_SOUNDS"
   });
   let e = b("SOUNDBOARD_FETCH_DEFAULT_SOUNDS_SUCCESS");
@@ -60,13 +60,13 @@ let E = async () => {
   let e = (0, _.D)();
   if (0 === e.length) return Promise.resolve();
   let t = b("SOUNDBOARD_SOUNDS_RECEIVED");
-  return o.Z.dispatch({
+  return a.Z.dispatch({
     type: "GUILD_SOUNDBOARD_FETCH"
-  }), o.Z.dispatch({
+  }), a.Z.dispatch({
     type: "REQUEST_SOUNDBOARD_SOUNDS",
     guildIds: e
   }), t
-}, v = () => __OVERLAY__ ? (o.Z.dispatch({
+}, v = () => __OVERLAY__ ? (a.Z.dispatch({
   type: "OVERLAY_SOUNDBOARD_SOUNDS_FETCH_REQUEST"
 }), Promise.all([])) : Promise.all([y(), O()]);
 async function I(e) {
@@ -75,15 +75,15 @@ async function I(e) {
     name: n,
     sound: r,
     volume: i,
-    emojiId: o,
+    emojiId: a,
     emojiName: s
-  } = e, l = await a.tn.post({
+  } = e, l = await o.tn.post({
     url: h.ANM.GUILD_SOUNDBOARD_SOUNDS(t),
     body: {
       name: n,
       sound: r,
       volume: i,
-      emoji_id: o,
+      emoji_id: a,
       emoji_name: s
     },
     rejectWithError: !1
@@ -96,14 +96,14 @@ async function T(e) {
     soundId: n,
     name: r,
     volume: i,
-    emojiId: o,
+    emojiId: a,
     emojiName: s
-  } = e, l = await a.tn.patch({
+  } = e, l = await o.tn.patch({
     url: h.ANM.GUILD_SOUNDBOARD_SOUND(t, n),
     body: {
       name: r,
       volume: i,
-      emoji_id: o,
+      emoji_id: a,
       emoji_name: s
     },
     rejectWithError: !1
@@ -111,7 +111,7 @@ async function T(e) {
   return (0, f.o3)(l.body, t)
 }
 async function S(e, t) {
-  await a.tn.del({
+  await o.tn.del({
     url: h.ANM.GUILD_SOUNDBOARD_SOUND(e, t),
     oldFormErrors: !0,
     rejectWithError: !1
@@ -134,7 +134,7 @@ function N(e) {
 }
 async function C(e, t) {
   try {
-    let n = await a.tn.get({
+    let n = await o.tn.get({
       url: h.ANM.SOUNDBOARD_SOUND_GUILD_DATA(e, t),
       rejectWithError: !1
     });
@@ -144,8 +144,8 @@ async function C(e, t) {
   }
 }
 
-function w(e, t, n) {
-  o.Z.dispatch({
+function R(e, t, n) {
+  a.Z.dispatch({
     type: "GUILD_SOUNDBOARD_SOUND_PLAY_LOCALLY",
     sound: t,
     channelId: e,
@@ -153,16 +153,16 @@ function w(e, t, n) {
   })
 }
 
-function R(e, t) {
-  o.Z.dispatch({
+function P(e, t) {
+  a.Z.dispatch({
     type: "GUILD_SOUNDBOARD_SOUND_PLAY_START",
     soundId: e,
     userId: t
   })
 }
 
-function P(e, t) {
-  o.Z.dispatch({
+function w(e, t) {
+  a.Z.dispatch({
     type: "GUILD_SOUNDBOARD_SOUND_PLAY_END",
     soundId: e,
     userId: t
@@ -170,7 +170,7 @@ function P(e, t) {
 }
 
 function D(e, t) {
-  o.Z.dispatch({
+  a.Z.dispatch({
     type: "USER_SOUNDBOARD_SET_VOLUME",
     volume: e,
     location: t
@@ -178,7 +178,7 @@ function D(e, t) {
 }
 
 function L(e) {
-  o.Z.dispatch({
+  a.Z.dispatch({
     type: "SOUNDBOARD_MUTE_JOIN_SOUND",
     channelId: e
   })

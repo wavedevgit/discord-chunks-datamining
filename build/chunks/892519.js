@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var i = n(120356),
-  a = n.n(i),
-  o = n(911969),
+  o = n.n(i),
+  a = n(911969),
   s = n(739754),
   l = n(970184),
   c = n(197653),
@@ -39,9 +39,9 @@ function p(e) {
 
 function h(e) {
   switch (e.type) {
-    case o.re.BUTTON:
+    case a.re.BUTTON:
       return (0, r.jsx)(u.Z, p({}, e));
-    case o.re.THUMBNAIL:
+    case a.re.THUMBNAIL:
       return (0, r.jsx)(d.Z, p({}, e))
   }
 }
@@ -53,19 +53,19 @@ function m(e) {
     renderComponents: i
   } = e, {
     message: u
-  } = (0, l.CJ)(), [d, _] = (0, c.e4)(), p = (0, c.$Y)(_), m = n.type === o.re.BUTTON;
+  } = (0, l.CJ)(), [d, _] = (0, c.e4)(), p = (0, c.$Y)(_), m = n.type === a.re.BUTTON;
   return (0, r.jsxs)("div", {
     className: f.section,
     ref: d,
     children: [(0, r.jsxs)("div", {
       className: f.children,
       children: [(0, r.jsx)("div", {
-        className: a()(f.textChildren, {
+        className: o()(f.textChildren, {
           [f.verticallyCenterAlign]: m
         }),
         children: i(t)
       }), (0, r.jsx)("div", {
-        className: a()(f.accessory, {
+        className: o()(f.accessory, {
           [f.restrictWidth]: p
         }),
         children: h(n)

@@ -5,22 +5,22 @@ n.d(t, {
 }), n(784620), n(973216);
 var r = n(544891),
   i = n(570140),
-  a = n(346479),
-  o = n(624453),
+  o = n(346479),
+  a = n(624453),
   s = n(668781),
   l = n(981631),
   c = n(388032);
 
 function u(e, t) {
-  let n = o.Z.getPins(e);
+  let n = a.Z.getPins(e);
   if (null == n) return !0;
   switch (n.state) {
-    case o.M.FAILED:
+    case a.M.FAILED:
       return !0;
-    case o.M.LOADING:
-    case o.M.LOADED_FINISHED:
+    case a.M.LOADING:
+    case a.M.LOADED_FINISHED:
       return !1;
-    case o.M.LOADED_HAS_MORE:
+    case a.M.LOADED_HAS_MORE:
       if (null == t) return 0 === n.items.length;
       return n.items.at(-1).pinnedAt === t
   }
@@ -31,7 +31,7 @@ let d = {
         id: n,
         name: i
       } = e;
-      await a.Z.unarchiveThreadIfNecessary(e.id), r.tn.put({
+      await o.Z.unarchiveThreadIfNecessary(e.id), r.tn.put({
         url: l.ANM.PIN(n, t),
         oldFormErrors: !0,
         rejectWithError: !0
@@ -50,7 +50,7 @@ let d = {
       })
     },
     async unpinMessage(e, t) {
-      await a.Z.unarchiveThreadIfNecessary(e.id), r.tn.del({
+      await o.Z.unarchiveThreadIfNecessary(e.id), r.tn.del({
         url: l.ANM.PIN(e.id, t),
         oldFormErrors: !0,
         rejectWithError: !0
@@ -69,14 +69,14 @@ let d = {
       })
     },
     fetchPins(e, t) {
-      var n, a;
-      let o = null != (n = null == t ? void 0 : t.reset) && n,
-        s = null != (a = null == t ? void 0 : t.limit) ? a : 25,
+      var n, o;
+      let a = null != (n = null == t ? void 0 : t.reset) && n,
+        s = null != (o = null == t ? void 0 : t.limit) ? o : 25,
         c = null == t ? void 0 : t.before;
-      (o || u(e, c)) && (i.Z.dispatch({
+      (a || u(e, c)) && (i.Z.dispatch({
         type: "LOAD_PINNED_MESSAGES",
         channelId: e,
-        reset: o
+        reset: a
       }), r.tn.get({
         url: l.ANM.PINS(e),
         query: {

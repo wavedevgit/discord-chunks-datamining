@@ -5,8 +5,8 @@ n.d(t, {
 }), n(35282), n(388685);
 var r = n(255367),
   i = n(73800),
-  a = n(525654),
-  o = n.n(a),
+  o = n(525654),
+  a = n.n(o),
   s = n(446431),
   l = n(442837),
   c = n(336317),
@@ -44,7 +44,7 @@ let T = l.ZP.connectStores([p.Z], () => ({
 class S extends i.PureComponent {
   getPlatform() {
     var e;
-    let t = null == (e = o().os) ? void 0 : e.family;
+    let t = null == (e = a().os) ? void 0 : e.family;
     return null != t && /^win/i.test(t) ? g.PlatformTypes.WINDOWS : null != t && /darwin|os x/i.test(t) ? g.PlatformTypes.OSX : g.PlatformTypes.LINUX
   }
   componentDidMount() {

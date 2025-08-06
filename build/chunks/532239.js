@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var i = n(481060),
-  a = n(40851),
-  o = n(340541),
+  o = n(40851),
+  a = n(340541),
   s = n(493754),
   l = n(496675),
   c = n(981631),
@@ -40,7 +40,7 @@ function _(e, t, n, d) {
       streamUserId: n,
       channel: e,
       applicationId: d,
-      appContext: (0, a.bp)()
+      appContext: (0, o.bp)()
     },
     p = () => {
       null != t && e.type === c.d4z.GUILD_VOICE && (0, s.W)(f({
@@ -49,7 +49,7 @@ function _(e, t, n, d) {
     },
     {
       entrypoints: h
-    } = (0, o._k)({
+    } = (0, a._k)({
       location: "more_settings_invite_item"
     }),
     m = h ? i.oLu : i.ejJ;

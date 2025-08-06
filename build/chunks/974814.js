@@ -1,12 +1,12 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  H1: () => o,
+  H1: () => a,
   s8: () => s
 });
 var r = n(818083),
   i = n(128064);
-let a = (0, r.B)({
+let o = (0, r.B)({
   kind: "user",
   id: "2025-02_tigger_pawtect",
   label: "Tigger pawtect",
@@ -22,11 +22,11 @@ let a = (0, r.B)({
   }]
 });
 
-function o(e) {
+function a(e) {
   let {
     location: t
   } = e;
-  return a.getCurrentConfig({
+  return o.getCurrentConfig({
     location: t
   }, {
     autoTrackExposure: !0
@@ -36,7 +36,7 @@ function o(e) {
 function s(e) {
   let {
     location: t
-  } = e, n = a.getCurrentConfig({
+  } = e, n = o.getCurrentConfig({
     location: t
   }, {
     autoTrackExposure: !0

@@ -4,9 +4,9 @@ n.d(t, {
   Z: () => f
 });
 var r, i = n(442837),
-  a = n(570140);
+  o = n(570140);
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -42,8 +42,8 @@ class d extends(r = i.ZP.PersistedStore) {
     return l
   }
 }
-o(d, "displayName", "CallChatToastsStore"), o(d, "persistKey", "CallChatToasts");
-let f = new d(a.Z, {
+a(d, "displayName", "CallChatToastsStore"), a(d, "persistKey", "CallChatToasts");
+let f = new d(o.Z, {
   CALL_CHAT_TOASTS_SET_ENABLED: c,
   LOGOUT: u
 })

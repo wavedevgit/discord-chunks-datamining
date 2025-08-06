@@ -9,8 +9,8 @@ var r = n(255367),
   s = n(481060),
   o = n(239091),
   c = n(586902),
-  d = n(40851),
-  u = n(906732),
+  u = n(40851),
+  d = n(906732),
   h = n(795318),
   p = n(670188),
   f = n(237583),
@@ -36,7 +36,7 @@ function b(e) {
   return e
 }
 
-function _(e, t) {
+function y(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -49,15 +49,15 @@ function _(e, t) {
   }), e
 }
 
-function y(e) {
+function x(e) {
   let {
     channel: t,
     speaker: l,
     className: f
-  } = e, y = i.useRef(null), {
+  } = e, x = i.useRef(null), {
     newestAnalyticsLocation: j
-  } = (0, u.ZP)(), O = (0, d.bp)(), {
-    reducedMotion: x
+  } = (0, d.ZP)(), _ = (0, u.bp)(), {
+    reducedMotion: O
   } = i.useContext(s.Sfi), v = (0, c.Z)({
     userId: l.id
   }), C = null != l.member ? (0, g.CA)(l.member) : null, E = e => {
@@ -65,7 +65,7 @@ function y(e) {
       let {
         default: e
       } = await Promise.all([n.e("79695"), n.e("98783"), n.e("8982"), n.e("7717"), n.e("74800")]).then(n.bind(n, 757387));
-      return n => (0, r.jsx)(e, _(b({}, n), {
+      return n => (0, r.jsx)(e, y(b({}, n), {
         user: l.user,
         guildId: t.guild_id,
         channel: t,
@@ -75,21 +75,21 @@ function y(e) {
         onInteraction: (0, h.u)("GuildChannelUserContextMenu", j)
       }))
     }, {
-      context: O
+      context: _
     })
   };
   return (0, r.jsx)(p.Z, {
-    targetElementRef: y,
+    targetElementRef: x,
     user: l.user,
     guildId: t.guild_id,
     channelId: t.id,
     clickTrap: !0,
     children: e => (0, r.jsx)(s.ua7, {
-      targetElementRef: y,
+      targetElementRef: x,
       text: l.userNick,
       position: "bottom",
-      children: n => (0, r.jsx)(s.P3F, _(b({}, n, e), {
-        innerRef: y,
+      children: n => (0, r.jsx)(s.P3F, y(b({}, n, e), {
+        innerRef: x,
         onClick: t => {
           t.stopPropagation(), e.onClick(t)
         },
@@ -99,7 +99,7 @@ function y(e) {
           size: s.EFr.SIZE_24,
           className: a()(m.avatar, f),
           "aria-label": l.userNick,
-          isSpeaking: v && !x.enabled
+          isSpeaking: v && !O.enabled
         })
       }))
     })
@@ -116,7 +116,7 @@ function j(e) {
     guildId: n.guild_id,
     users: t,
     max: 10,
-    renderUser: (e, t, i) => (0, r.jsx)(y, {
+    renderUser: (e, t, i) => (0, r.jsx)(x, {
       channel: n,
       speaker: e,
       className: t

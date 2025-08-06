@@ -5,8 +5,8 @@ n.d(t, {
 }), n(415506);
 var r = n(990547),
   i = n(283693),
-  a = n(570140),
-  o = n(408987),
+  o = n(570140),
+  a = n(408987),
   s = n(9156),
   l = n(621600),
   c = n(573261),
@@ -26,7 +26,7 @@ let _ = {
       skuId: E,
       branchId: b
     } = e;
-    a.Z.dispatch({
+    o.Z.dispatch({
       type: "CREATE_CHANNEL_MODAL_SUBMIT",
       guildId: t,
       channelType: n
@@ -58,19 +58,19 @@ let _ = {
       rejectWithError: !1
     }).then(e => (s.ZP.isOptInEnabled(t) && u.Z.updateChannelOverrideSettings(t, e.body.id, {
       flags: f.ic.OPT_IN_ENABLED
-    }, l.ZB.OptedIn), o.Z.checkGuildTemplateDirty(t), e), e => {
-      throw a.Z.dispatch({
+    }, l.ZB.OptedIn), a.Z.checkGuildTemplateDirty(t), e), e => {
+      throw o.Z.dispatch({
         type: "CREATE_CHANNEL_MODAL_SUBMIT_FAILURE",
         errors: e.body
       }), e
     })
   },
-  createRoleSubscriptionTemplateChannel: (e, t, n, a) => c.Z.post({
+  createRoleSubscriptionTemplateChannel: (e, t, n, o) => c.Z.post({
     url: d.ANM.GUILD_CHANNELS(e),
     body: {
       name: t,
       type: n,
-      topic: a
+      topic: o
     },
     oldFormErrors: !0,
     trackedActionData: {

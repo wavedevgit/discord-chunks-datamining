@@ -6,15 +6,15 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var i = n(481060),
-  a = n(998502),
-  o = n(939630);
+  o = n(998502),
+  a = n(939630);
 
 function s(e) {
   let {
     eventTargetRef: t
   } = e;
   return (0, r.jsx)(i.zLd, {
-    className: o.pulseGradient,
+    className: a.pulseGradient,
     eventTargetRef: t
   })
 }
@@ -152,4 +152,4 @@ function l() {
     })]
   })
 }
-let c = a.ZP.getEnableHardwareAcceleration() ? s : l
+let c = o.ZP.getEnableHardwareAcceleration() ? s : l

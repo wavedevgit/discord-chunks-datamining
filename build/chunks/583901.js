@@ -9,8 +9,8 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var i = n(120356),
-  a = n.n(i),
-  o = n(278074),
+  o = n.n(i),
+  a = n(278074),
   s = n(442837),
   l = n(692547),
   c = n(780384),
@@ -78,7 +78,7 @@ function O(e) {
     name: t,
     className: n,
     style: i,
-    onSelect: o,
+    onSelect: a,
     isSelected: s = !1,
     tabIndex: l,
     children: c,
@@ -95,11 +95,11 @@ function O(e) {
       className: h.themeSelectionContainer,
       children: [(0, r.jsx)(u.P3F, b(g({}, e, m), {
         tabIndex: null != l ? l : m.tabIndex,
-        className: a()(h.themeSelection, {
+        className: o()(h.themeSelection, {
           [h.selected]: s
         }, n),
         style: i,
-        onClick: s ? _.dG4 : o,
+        onClick: s ? _.dG4 : a,
         children: c
       })), (s || p) && (0, r.jsx)(y, {}), !s && d && (0, r.jsx)("div", {
         className: h.redCircle
@@ -119,7 +119,7 @@ function v(e) {
     theme: t,
     isSelected: n,
     onSelect: i
-  } = e, l = (0, s.e7)([d.Z], () => d.Z.systemTheme), c = d.Z.themePreferenceForSystemTheme(l), f = (0, o.EQ)({
+  } = e, l = (0, s.e7)([d.Z], () => d.Z.systemTheme), c = d.Z.themePreferenceForSystemTheme(l), f = (0, a.EQ)({
     theme: t,
     themePreferenceForSystemTheme: c
   }).with({
@@ -142,12 +142,12 @@ function v(e) {
     theme: _.BRd.DARKER
   }, () => h.darkerIcon).with({
     theme: _.BRd.MIDNIGHT
-  }, () => h.midnightIcon).otherwise(() => h.darkIcon), m = (0, o.EQ)(t).with(_.BRd.LIGHT, () => p.intl.string(p.t.K2sFfn)).with(_.BRd.DARK, () => p.intl.string(p.t.SMPT1t)).with(_.BRd.DARKER, () => p.intl.string(p.t.b8Cei4)).with(_.BRd.MIDNIGHT, () => p.intl.string(p.t.Do4ZJy)).with("system", () => p.intl.string(p.t["7rOU6u"])).exhaustive();
+  }, () => h.midnightIcon).otherwise(() => h.darkIcon), m = (0, a.EQ)(t).with(_.BRd.LIGHT, () => p.intl.string(p.t.K2sFfn)).with(_.BRd.DARK, () => p.intl.string(p.t.SMPT1t)).with(_.BRd.DARKER, () => p.intl.string(p.t.b8Cei4)).with(_.BRd.MIDNIGHT, () => p.intl.string(p.t.Do4ZJy)).with("system", () => p.intl.string(p.t["7rOU6u"])).exhaustive();
   return (0, r.jsx)(O, {
     onSelect: i,
     isSelected: n,
     name: m,
-    className: a()(h.defaultThemeSelection, f),
+    className: o()(h.defaultThemeSelection, f),
     children: "system" === t && (0, r.jsx)("div", {
       className: h.iconWrapper,
       children: (0, r.jsx)(u.f6W, {
@@ -165,7 +165,7 @@ function I(e) {
     preset: t,
     isSelected: n,
     disabled: i,
-    tabIndex: o,
+    tabIndex: a,
     onSelect: s,
     showBadge: l,
     showLockedBadge: u
@@ -181,11 +181,11 @@ function I(e) {
     onSelect: i ? void 0 : s,
     isSelected: n,
     name: t.getName(),
-    className: a()([i ? h.disabled : null, (0, c.wj)(p) ? h.darkOverlay : h.lightOverlay]),
+    className: o()([i ? h.disabled : null, (0, c.wj)(p) ? h.darkOverlay : h.lightOverlay]),
     style: {
       background: "var(--background-gradient), ".concat(m)
     },
-    tabIndex: o,
+    tabIndex: a,
     showBadge: l,
     showLockedBadge: u
   })

@@ -2,8 +2,8 @@
 "use strict";
 var r = n(720379),
   i = n(65183),
-  a = i.List,
-  o = i.Repeat,
+  o = i.List,
+  a = i.Repeat,
   s = i.Record,
   l = function() {
     return !0
@@ -28,7 +28,7 @@ function d(e, t) {
       start: e + t,
       end: r + t
     }))
-  }), a(n)
+  }), o(n)
 }
 
 function f(e, t) {
@@ -37,17 +37,17 @@ function f(e, t) {
 e.exports = {
   generate: function(e, t, n) {
     var i = t.getLength();
-    if (!i) return a.of(new u({
+    if (!i) return o.of(new u({
       start: 0,
       end: 0,
       decoratorKey: null,
-      leaves: a.of(new c({
+      leaves: o.of(new c({
         start: 0,
         end: 0
       }))
     }));
     var s = [],
-      _ = n ? n.getDecorations(t, e) : a(o(null, i)),
+      _ = n ? n.getDecorations(t, e) : o(a(null, i)),
       p = t.getCharacterList();
     return r(_, f, l, function(e, t) {
       s.push(new u({
@@ -56,6 +56,6 @@ e.exports = {
         decoratorKey: _.get(e),
         leaves: d(p.slice(e, t).toList(), e)
       }))
-    }), a(s)
+    }), o(s)
   }
 }

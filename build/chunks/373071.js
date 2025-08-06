@@ -6,8 +6,8 @@ n.d(t, {
   n6: () => E
 }), n(190126), n(368063), n(65234), n(111804), n(490233), n(97749), n(388685), n(539854);
 var r, i = n(73800),
-  a = n(94171),
-  o = n(362383),
+  o = n(94171),
+  a = n(362383),
   s = n(731965),
   l = n(433517),
   c = n(481060),
@@ -62,7 +62,7 @@ let h = "__DEBUG_PROFILE_EFFECTS_STORE",
       console.error(e), (0, c.showToast)((0, c.createToast)("Failed to save changes. This can happen when you run out of memory in localStorage. Please try deleting some configs and try again.", c.ToastType.FAILURE))
     }
   },
-  E = (0, o.F)(e => p(f({}, m), {
+  E = (0, a.F)(e => p(f({}, m), {
     upsertConfig: t => (0, s.j)(() => {
       e(e => {
         let n = f({}, e);
@@ -81,7 +81,7 @@ let h = "__DEBUG_PROFILE_EFFECTS_STORE",
       profileEffects: t
     } = e;
     return Object.values(t)
-  }, a.X),
+  }, o.X),
   y = e => {
     let t = E(t => null != e ? t.profileEffects[e] : null),
       n = i.useRef([]);
@@ -99,17 +99,17 @@ let h = "__DEBUG_PROFILE_EFFECTS_STORE",
           src: e(t.base64)
         })),
         i = t.config.stillFrames,
-        a = null != i ? f({}, i) : {};
-      for (let t in a) {
-        let n = a[t];
-        null != n && (a[t] = p(f({}, n), {
+        o = null != i ? f({}, i) : {};
+      for (let t in o) {
+        let n = o[t];
+        null != n && (o[t] = p(f({}, n), {
           src: e(n.base64)
         }))
       }
       return p(f({}, t), {
         config: p(f({}, t.config), {
           effects: r,
-          stillFrames: a
+          stillFrames: o
         })
       })
     }, [t])

@@ -6,14 +6,14 @@ n.d(t, {
 }), n(388685);
 var r = n(442837),
   i = n(601964),
-  a = n(430824),
-  o = n(496675),
+  o = n(430824),
+  a = n(496675),
   s = n(594174),
   l = n(700785),
   c = n(981631);
 
 function u(e, t) {
-  let [n, r, u] = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : [s.default, a.Z, o.Z], d = r.getGuild(e), f = n.getUser(t);
+  let [n, r, u] = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : [s.default, o.Z, a.Z], d = r.getGuild(e), f = n.getUser(t);
   return !(null == d || null == f || f.isNonUserBot() || (0, i.eM)(d, f) || l.BT({
     permission: c.Plq.ADMINISTRATOR,
     user: f,
@@ -22,5 +22,5 @@ function u(e, t) {
 }
 
 function d(e, t) {
-  return (0, r.e7)([s.default, a.Z, o.Z], () => u(e, t, [s.default, a.Z, o.Z]), [e, t])
+  return (0, r.e7)([s.default, o.Z, a.Z], () => u(e, t, [s.default, o.Z, a.Z]), [e, t])
 }

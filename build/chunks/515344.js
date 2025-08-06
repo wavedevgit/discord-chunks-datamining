@@ -6,8 +6,8 @@ n.d(t, {
 });
 var r = n(73800),
   i = n(442837),
-  a = n(783097),
-  o = n(176412),
+  o = n(783097),
+  a = n(176412),
   s = n(749681),
   l = n(258971),
   c = n(592125),
@@ -26,23 +26,23 @@ function b(e) {
     isDiscoverable: t,
     customInstallUrl: n,
     installParams: r,
-    integrationTypesConfig: o
+    integrationTypesConfig: a
   } = e, s = (0, p.Eb)({
     customInstallUrl: n,
     installParams: r,
-    integrationTypesConfig: o
+    integrationTypesConfig: a
   }), l = (0, i.e7)([f.Z], () => {
     var e;
     return null != (e = f.Z.getGuildId()) ? e : void 0
   }), _ = (0, i.e7)([c.Z, u.Z, d.Z], () => {
     let e = c.Z.getChannel(d.Z.getChannelId());
     return null != e && (e.isPrivate() || u.Z.can(m.Plq.SEND_MESSAGES, e))
-  }, []), h = (0, a.PZ)(e, l) && _, g = t || h;
+  }, []), h = (0, o.PZ)(e, l) && _, g = t || h;
   return {
     isDiscoverable: t,
     customInstallUrl: n,
     installParams: r,
-    integrationTypesConfig: o,
+    integrationTypesConfig: a,
     canViewApp: g,
     canOpenAppLauncher: h,
     isInstallable: s,
@@ -54,14 +54,14 @@ function y(e, t) {
   let {
     canViewApp: n,
     canOpenAppLauncher: i,
-    isInstallable: a,
+    isInstallable: o,
     customInstallUrl: c,
     installParams: u,
     integrationTypesConfig: d,
     selectedGuildId: f
   } = b(e);
   return r.useMemo(() => n ? () => {
-    if (null == t || t(), i) return void(0, o.X)(e.id);
+    if (null == t || t(), i) return void(0, a.X)(e.id);
     (0, s.transitionToGlobalDiscovery)({
       tab: g.GlobalDiscoveryTab.APPS,
       applicationId: e.id,
@@ -71,7 +71,7 @@ function y(e, t) {
         }
       }
     })
-  } : a ? () => {
+  } : o ? () => {
     null == t || t(), (0, _.L)({
       applicationId: e.id,
       customInstallUrl: c,
@@ -80,7 +80,7 @@ function y(e, t) {
       guildId: f,
       source: "app_message_embed"
     })
-  } : void 0, [e.id, i, n, c, u, d, a, t, f])
+  } : void 0, [e.id, i, n, c, u, d, o, t, f])
 }
 
 function O(e) {

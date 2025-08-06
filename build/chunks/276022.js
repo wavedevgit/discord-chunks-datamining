@@ -5,8 +5,8 @@ n.d(t, {
 }), n(539854);
 var r = n(255367),
   i = n(73800),
-  a = n(442837),
-  o = n(481060),
+  o = n(442837),
+  a = n(481060),
   s = n(139387),
   l = n(230711),
   c = n(213459),
@@ -26,9 +26,9 @@ function g(e) {
     guildId: b,
     context: y,
     onItemClick: O
-  } = e, v = null != (t = null == E ? void 0 : E.id) ? t : null == g ? void 0 : g.id, I = _.Z.getGuild(b), T = (0, a.e7)([p.Z], () => null != I ? p.Z.can(h.Plq.MANAGE_GUILD, I) : null), S = !0, A = !0, N = (0, c.LD)(b, A), C = (0, c.PL)(S, A), w = (0, a.e7)([f.Z], () => null != f.Z.getNewestTokenForApplication(v)), {
-    isUserApp: R,
-    isGuildApp: P
+  } = e, v = null != (t = null == E ? void 0 : E.id) ? t : null == g ? void 0 : g.id, I = _.Z.getGuild(b), T = (0, o.e7)([p.Z], () => null != I ? p.Z.can(h.Plq.MANAGE_GUILD, I) : null), S = !0, A = !0, N = (0, c.LD)(b, A), C = (0, c.PL)(S, A), R = (0, o.e7)([f.Z], () => null != f.Z.getNewestTokenForApplication(v)), {
+    isUserApp: P,
+    isGuildApp: w
   } = i.useMemo(() => {
     var e, t, n, r;
     if (null == v) return {
@@ -36,13 +36,13 @@ function g(e) {
       isUserApp: !1
     };
     let i = Object.values(null != (n = null == (e = N.result) ? void 0 : e.sections) ? n : {}),
-      a = Object.values(null != (r = null == (t = C.result) ? void 0 : t.sections) ? r : {});
+      o = Object.values(null != (r = null == (t = C.result) ? void 0 : t.sections) ? r : {});
     return {
       isGuildApp: i.some(e => {
         var t;
         return (null == (t = e.descriptor.application) ? void 0 : t.id) === v
       }),
-      isUserApp: a.some(e => {
+      isUserApp: o.some(e => {
         var t;
         return (null == (t = e.descriptor.application) ? void 0 : t.id) === v
       })
@@ -63,11 +63,11 @@ function g(e) {
     }, [E, O, g]);
   if (y === h.IlC.POPOUT) return null;
   let x = [];
-  return P && T && x.push((0, r.jsx)(o.sNh, {
+  return w && T && x.push((0, r.jsx)(a.sNh, {
     id: "manage-server-integration",
     label: m.intl.string(m.t.IuSJT0),
     action: D
-  }, "manage-server-integration")), R && w && x.push((0, r.jsx)(o.sNh, {
+  }, "manage-server-integration")), P && R && x.push((0, r.jsx)(a.sNh, {
     id: "manage-authorized-app",
     label: m.intl.string(m.t.V8ruv7),
     action: L

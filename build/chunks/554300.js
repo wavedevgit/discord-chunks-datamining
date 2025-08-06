@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(255367),
   i = n(73800),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(688642),
   l = n(481060),
   c = n(359135),
@@ -56,8 +56,8 @@ function m(e, t) {
   if (null == e) return {};
   var n, r, i = g(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -65,14 +65,14 @@ function m(e, t) {
 function g(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let E = function(e) {
   var t, {
       ref: n,
-      avatar: a,
+      avatar: o,
       name: f,
       nameplate: p,
       children: g,
@@ -87,19 +87,19 @@ let E = function(e) {
       selectedClassName: A,
       innerClassName: N,
       wrapContent: C,
-      highlighted: w,
-      focusProps: R
+      highlighted: R,
+      focusProps: P
     } = e,
-    P = m(e, ["ref", "avatar", "name", "nameplate", "children", "subText", "decorators", "onClick", "hovered", "selected", "muted", "to", "avatarClassName", "selectedClassName", "innerClassName", "wrapContent", "highlighted", "focusProps"]);
-  P.className = o()(P.className, d.container, {
+    w = m(e, ["ref", "avatar", "name", "nameplate", "children", "subText", "decorators", "onClick", "hovered", "selected", "muted", "to", "avatarClassName", "selectedClassName", "innerClassName", "wrapContent", "highlighted", "focusProps"]);
+  w.className = a()(w.className, d.container, {
     [d.selected]: v,
-    [d.highlighted]: w,
+    [d.highlighted]: R,
     [null != A ? A : ""]: v,
     [d.clickable]: !v && (null != T || null != y)
-  }), P["aria-selected"] = null != (t = P["aria-selected"]) ? t : v;
+  }), w["aria-selected"] = null != (t = w["aria-selected"]) ? t : v;
   let D = i.useRef(null),
     L = (0, r.jsxs)("div", {
-      className: o()(d.childContainer, {
+      className: a()(d.childContainer, {
         [d.nameplated]: null != p
       }),
       children: [(0, r.jsx)(u.Z, {
@@ -110,19 +110,19 @@ let E = function(e) {
         placement: c.i.MEMBER_LIST
       }), (0, r.jsxs)("div", {
         ref: D,
-        className: o()(N, d.layout, {
+        className: a()(N, d.layout, {
           [d.muted]: !v && I,
           [d.wrappedLayout]: C
         }),
         children: [(0, r.jsx)("div", {
-          className: o()(d.avatar, S),
-          children: a
+          className: a()(d.avatar, S),
+          children: o
         }), (0, r.jsxs)("div", {
           className: d.content,
           children: [(0, r.jsxs)("div", {
             className: d.nameAndDecorators,
             children: [(0, r.jsx)("div", {
-              className: o()(d.name, {
+              className: a()(d.name, {
                 [d.wrappedName]: C
               }),
               children: f
@@ -137,24 +137,24 @@ let E = function(e) {
         }) : null]
       })]
     });
-  return null != T ? (0, r.jsx)(l.tEY, h(_({}, R), {
+  return null != T ? (0, r.jsx)(l.tEY, h(_({}, P), {
     children: (0, r.jsx)(s.rU, h(_({
       to: T,
       onClick: y
-    }, P), {
+    }, w), {
       role: "listitem",
       ref: n,
       children: L
     }))
   })) : null != y ? (0, r.jsx)(l.P3F, h(_({
     onClick: y,
-    focusProps: R
-  }, P), {
+    focusProps: P
+  }, w), {
     role: "listitem",
     innerRef: n,
     children: L
-  })) : (0, r.jsx)(l.tEY, h(_({}, R), {
-    children: (0, r.jsx)("div", h(_({}, P), {
+  })) : (0, r.jsx)(l.tEY, h(_({}, P), {
+    children: (0, r.jsx)("div", h(_({}, w), {
       role: "listitem",
       ref: n,
       children: L

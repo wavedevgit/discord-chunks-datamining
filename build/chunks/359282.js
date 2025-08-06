@@ -5,10 +5,10 @@ function r(e, t) {
   e.prototype = Object.create(t.prototype), e.prototype.constructor = e, e.__proto__ = t
 }
 var i = n(65183),
-  a = i.Map,
-  o = i.OrderedSet,
+  o = i.Map,
+  a = i.OrderedSet,
   s = i.Record,
-  l = o(),
+  l = a(),
   c = {
     style: l,
     entity: null
@@ -36,7 +36,7 @@ var i = n(65183),
       return t.create(r)
     }, t.create = function(e) {
       if (!e) return d;
-      var n = a({
+      var n = o({
           style: l,
           entity: null
         }).merge(e),
@@ -47,7 +47,7 @@ var i = n(65183),
     }, t
   }(s(c)),
   d = new u,
-  f = a([
-    [a(c), d]
+  f = o([
+    [o(c), d]
   ]);
 u.EMPTY = d, e.exports = u

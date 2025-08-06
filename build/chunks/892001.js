@@ -6,8 +6,8 @@ n.r(t), n.d(t, {
 });
 var r = n(481060),
   i = n(570140),
-  a = n(232567),
-  o = n(911284),
+  o = n(232567),
+  a = n(911284),
   s = n(710845),
   l = n(314897),
   c = n(594174),
@@ -23,7 +23,7 @@ let f = (0, r.pxk)(r.EFr.SIZE_120),
         location: "UserProfileModalActionCreators"
       });
     if (n || t) try {
-      await (0, o.Z)(e)
+      await (0, a.Z)(e)
     } catch (t) {
       _.log("Failed to fetch content inventory outbox for ".concat(e, ":"), t)
     }
@@ -33,7 +33,7 @@ async function h(e) {
     userId: t,
     guildId: n,
     channelId: r,
-    messageId: o,
+    messageId: a,
     roleId: s,
     sessionId: l,
     joinRequestId: u,
@@ -46,7 +46,7 @@ async function h(e) {
     customStatusPrompt: y = null,
     disableActionsForPreview: O = !1
   } = e, v = c.default.getUser(t);
-  p(t), null == v ? await (0, a.In)(t, {
+  p(t), null == v ? await (0, o.In)(t, {
     type: "modal",
     guildId: m && null != n ? n : void 0,
     withMutualFriendsCount: !0,
@@ -65,7 +65,7 @@ async function h(e) {
     userId: t,
     guildId: null != n ? n : void 0,
     channelId: null != r ? r : void 0,
-    messageId: null != o ? o : void 0,
+    messageId: null != a ? a : void 0,
     roleId: null != s ? s : void 0,
     sessionId: null != l ? l : void 0,
     openedAt: Date.now(),

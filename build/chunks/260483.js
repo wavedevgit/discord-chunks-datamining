@@ -4,8 +4,8 @@ n.d(t, {
   Z: () => D
 }), n(388685);
 var r, i = n(392711),
-  a = n.n(i),
-  o = n(442837),
+  o = n.n(i),
+  a = n(442837),
   s = n(570140),
   l = n(131704),
   c = n(592125);
@@ -34,11 +34,11 @@ function d(e) {
 let f = {};
 
 function _(e) {
-  f = a().omitBy(f, t => t.guildId === e)
+  f = o().omitBy(f, t => t.guildId === e)
 }
 
 function p(e) {
-  f = a().omitBy(f, t => t.parentId === e)
+  f = o().omitBy(f, t => t.parentId === e)
 }
 
 function h(e) {
@@ -108,7 +108,7 @@ function T(e) {
   let {
     threads: t
   } = e;
-  t.forEach(w)
+  t.forEach(R)
 }
 
 function S(e) {
@@ -127,7 +127,7 @@ function A(e) {
 
 function N(e) {
   let t = !1;
-  for (let n of e.messages) t = w(n.thread) || t;
+  for (let n of e.messages) t = R(n.thread) || t;
   return t
 }
 
@@ -142,15 +142,15 @@ function C(e) {
     } = e;
     r.forEach(e => {
       e.forEach(e => {
-        n = w(e.thread) || n
+        n = R(e.thread) || n
       })
     }), t.forEach(e => {
-      n = w(e) || n
+      n = R(e) || n
     })
   }), n
 }
 
-function w(e) {
+function R(e) {
   if (null != e && !(e.id in f)) {
     let t = c.Z.getChannel(e.id);
     if (null != t) return g(t), !0
@@ -158,12 +158,12 @@ function w(e) {
   return !1
 }
 
-function R(e) {
+function P(e) {
   let t = f[e.id];
   if (null == t) return !1;
   null != e.memberIdsPreview && (t.memberIdsPreview = e.memberIdsPreview), t.memberCount = e.memberCount
 }
-class P extends(r = o.ZP.Store) {
+class w extends(r = a.ZP.Store) {
   initialize() {
     this.waitFor(c.Z)
   }
@@ -179,8 +179,8 @@ class P extends(r = o.ZP.Store) {
     return f
   }
 }
-u(P, "displayName", "ThreadMembersStore");
-let D = new P(s.Z, {
+u(w, "displayName", "ThreadMembersStore");
+let D = new w(s.Z, {
   CONNECTION_OPEN: E,
   OVERLAY_INITIALIZE: b,
   GUILD_CREATE: y,
@@ -189,7 +189,7 @@ let D = new P(s.Z, {
   THREAD_CREATE: v,
   THREAD_UPDATE: v,
   THREAD_LIST_SYNC: I,
-  THREAD_MEMBERS_UPDATE: R,
+  THREAD_MEMBERS_UPDATE: P,
   SEARCH_MESSAGES_SUCCESS: C,
   MOD_VIEW_SEARCH_MESSAGES_SUCCESS: C,
   LOAD_THREADS_SUCCESS: T,

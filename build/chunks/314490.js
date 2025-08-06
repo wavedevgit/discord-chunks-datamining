@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(73800),
   i = n(442837),
-  a = n(416587),
-  o = n(566620),
+  o = n(416587),
+  a = n(566620),
   s = n(317381);
 let l = 432e5,
   c = e => null == e || new Date(e).getTime() < Date.now() - l,
@@ -16,10 +16,10 @@ let l = 432e5,
       skipFetchingShelf: n = !0
     } = e, l = (0, i.e7)([s.ZP], () => s.ZP.getState());
     return (0, r.useEffect)(() => {
-      c(l.lastCheckedForBadgeableActivities) && !n && (0, o.w1)({
+      c(l.lastCheckedForBadgeableActivities) && !n && (0, a.w1)({
         guildId: null
       })
-    }, [l.lastCheckedForBadgeableActivities, n]), (0, r.useMemo)(() => (0, a.O)({
+    }, [l.lastCheckedForBadgeableActivities, n]), (0, r.useMemo)(() => (0, o.O)({
       storeState: l,
       surface: t
     }), [l, t])

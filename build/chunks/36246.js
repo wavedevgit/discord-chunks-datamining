@@ -1,6 +1,6 @@
 /** Chunk was on 49152 **/
 n.d(t, {
-  Z: () => d
+  Z: () => u
 });
 var r = n(255367);
 n(73800);
@@ -11,14 +11,14 @@ var i = n(120356),
   o = n(470134),
   c = n(302137);
 
-function d(e) {
+function u(e) {
   let {
     guildId: t,
     children: n,
     className: i
   } = e, {
-    horizontalScrollNotice: d,
-    handleScroll: u,
+    horizontalScrollNotice: u,
+    handleScroll: d,
     handleSetScrollerRef: h,
     handleSetContainerRef: p
   } = (0, o.Z)(t), f = (0, r.jsx)("div", {
@@ -29,11 +29,11 @@ function d(e) {
     })
   });
   return a.tq || (f = (0, r.jsxs)(r.Fragment, {
-    children: [d, (0, r.jsx)(s.Den, {
+    children: [u, (0, r.jsx)(s.Den, {
       className: c.scroller,
       orientation: "horizontal",
       ref: h,
-      onScroll: u,
+      onScroll: d,
       children: f
     })]
   })), (0, r.jsx)("div", {

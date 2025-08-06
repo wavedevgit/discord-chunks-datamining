@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(147913),
   i = n(344185),
-  a = n(314897),
-  o = n(592125),
+  o = n(314897),
+  a = n(592125),
   s = n(709054),
   l = n(882252);
 
@@ -24,7 +24,7 @@ class u extends r.Z {
       channel: t
     } = e;
     if (t.isForumPost()) {
-      let e = t.ownerId === a.default.getId();
+      let e = t.ownerId === o.default.getId();
       this.readStateSnapshots[t.id] = {
         isNew: !e,
         hasUnreads: !e
@@ -40,7 +40,7 @@ class u extends r.Z {
         channelId: t
       } = e;
       if (null == t) return;
-      let n = o.Z.getChannel(t);
+      let n = a.Z.getChannel(t);
       null != n && n.isForumLikeChannel() && (this.readStateSnapshots = {}, this.processForumChannel(n.guild_id, t))
     }), c(this, "processForumChannel", (e, t) => {
       let n = i.Z.getThreadsForParent(e, t);

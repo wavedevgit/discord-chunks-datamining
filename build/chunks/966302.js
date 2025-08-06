@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(255367),
   i = n(73800),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(66546),
   l = n(442837),
   c = n(481060),
@@ -29,15 +29,15 @@ var r = n(255367),
   A = n(560688),
   N = n(88479),
   C = n(136995),
-  w = n(25827),
-  R = n(163612),
-  P = n(601964),
+  R = n(25827),
+  P = n(163612),
+  w = n(601964),
   D = n(430824),
   L = n(131951),
   x = n(594174),
-  k = n(451478),
-  j = n(626135),
-  M = n(768581),
+  M = n(451478),
+  k = n(626135),
+  j = n(768581),
   U = n(358221),
   G = n(584511),
   B = n(793865),
@@ -51,7 +51,7 @@ var r = n(255367),
   z = n(744217),
   q = n(20795);
 
-function $(e, t, n) {
+function X(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -60,20 +60,20 @@ function $(e, t, n) {
   }) : e[t] = n, e
 }
 
-function X(e) {
+function Q(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      $(e, t, n[t])
+      X(e, t, n[t])
     })
   }
   return e
 }
 
-function Q(e, t) {
+function J(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -84,8 +84,8 @@ function Q(e, t) {
   return n
 }
 
-function J(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : Q(Object(t)).forEach(function(n) {
+function $(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : J(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -101,25 +101,25 @@ let ee = {
   er = 267,
   ei = 128;
 
-function ea(e) {
+function eo(e) {
   let {
     header: t
-  } = e, n = L.Z.getCameraComponent(), a = (0, l.e7)([L.Z], () => L.Z.getVideoDeviceId()), o = (0, I.Z)();
+  } = e, n = L.Z.getCameraComponent(), o = (0, l.e7)([L.Z], () => L.Z.getVideoDeviceId()), a = (0, I.Z)();
   return i.useEffect(() => {
     let e = x.default.getCurrentUser();
-    if (o && null != e) {
+    if (a && null != e) {
       let t = (0, O.P)(e);
-      (0, v.FU)(t, a, {
+      (0, v.FU)(t, o, {
         track: !1
       }).catch(H.dG4)
     }
-  }, [o, a]), (0, r.jsxs)("div", {
+  }, [a, o]), (0, r.jsxs)("div", {
     className: z.previewRoot,
     children: [(0, r.jsx)(c.$jN, {}), (0, r.jsx)("div", {
       className: z.preview,
       children: (0, r.jsx)(n, {
         disabled: !1,
-        deviceId: a,
+        deviceId: o,
         width: en,
         height: er
       })
@@ -130,25 +130,25 @@ function ea(e) {
   })
 }
 
-function eo(e) {
+function ea(e) {
   let {
     canVideo: t,
     channel: n,
-    numVideoDevices: a
+    numVideoDevices: o
   } = e, {
     parentAnalyticsLocation: s
   } = (0, m.ZP)(), {
     cameraUnavailable: l,
     enabled: d
-  } = (0, T.Z)(), _ = (0, S.Z)(n), p = i.useRef(null), g = a > 1;
+  } = (0, T.Z)(), _ = (0, S.Z)(n), p = i.useRef(null), g = o > 1;
   return (0, r.jsxs)("div", {
-    className: o()(z.wrapper, z.actions),
+    className: a()(z.wrapper, z.actions),
     children: [(0, r.jsx)(N.Z, {
       iconComponent: c.Dio,
       label: W.intl.string(W.t.WAI6xs),
       className: z.actionButton,
       onClick: () => {
-        (0, Z.v)(s, Z.d.DISCONNECT), j.default.track(H.rMx.RING_CALL_DECLINED, X({
+        (0, Z.v)(s, Z.d.DISCONNECT), k.default.track(H.rMx.RING_CALL_DECLINED, Q({
           location: s,
           guild_id: n.guild_id
         }, (0, h.v_)(n))), u.Z.stopRinging(n.id)
@@ -173,13 +173,13 @@ function eo(e) {
         let {
           onClick: i
         } = e, {
-          isShown: a
+          isShown: o
         } = t;
-        return (0, r.jsx)(w.C, {
+        return (0, r.jsx)(R.C, {
           buttonRef: p,
           join: !0,
           enabled: d,
-          className: o()(z.actionButton, {
+          className: a()(z.actionButton, {
             [z.fullRegionDropdownButtonOverride]: g
           }),
           color: "green",
@@ -188,11 +188,11 @@ function eo(e) {
           cameraUnavailable: l,
           channel: n,
           onPopoutClick: g ? i : null,
-          popoutOpen: a,
+          popoutOpen: o,
           onCameraUnavailable: A.Z,
           onChange: () => {
             var e;
-            (0, Z.v)(s, Z.d.JOIN_VIDEO_CALL), j.default.track(H.rMx.RING_CALL_ACCEPTED, X({
+            (0, Z.v)(s, Z.d.JOIN_VIDEO_CALL), k.default.track(H.rMx.RING_CALL_ACCEPTED, Q({
               location: s,
               guild_id: n.guild_id
             }, (0, h.v_)(n))), f.default.selectVoiceChannel(n.id, !0), (0, y.XU)(null != (e = n.guild_id) ? e : H.ME, n.id)
@@ -203,7 +203,7 @@ function eo(e) {
       channel: n,
       color: "join",
       centerButton: !0,
-      onCallJoined: () => j.default.track(H.rMx.RING_CALL_ACCEPTED, X({
+      onCallJoined: () => k.default.track(H.rMx.RING_CALL_ACCEPTED, Q({
         location: s,
         guild_id: n.guild_id
       }, (0, h.v_)(n))),
@@ -216,20 +216,20 @@ function es(e) {
   var t;
   let {
     animatedStyle: n,
-    y: a,
+    y: o,
     x: f,
     channel: h
   } = e, {
     analyticsLocations: y
-  } = (0, m.ZP)(p.Z.INCOMING_CALL_MODAL), [O, v] = i.useState(!1), I = (0, l.e7)([D.Z], () => D.Z.getGuild(h.guild_id)), T = null != I ? M.ZP.getGuildIconURL({
+  } = (0, m.ZP)(p.Z.INCOMING_CALL_MODAL), [O, v] = i.useState(!1), I = (0, l.e7)([D.Z], () => D.Z.getGuild(h.guild_id)), T = null != I ? j.ZP.getGuildIconURL({
     id: I.id,
     icon: I.icon,
     size: ei
-  }) : null, S = null != (t = (0, g.x)(h, ei, !0)) ? t : T, A = (0, E.ZP)(h), [N, C] = (0, l.Wu)([L.Z], () => [L.Z.supports(Y.AN.VIDEO), Object.keys(L.Z.getVideoDevices()).length]), w = null != I ? "".concat(A, ", ").concat(I.name) : A, x = (0, l.e7)([k.Z], () => k.Z.isFocused()), j = (0, l.e7)([U.Z], () => U.Z.getMode(h.id)), B = i.useCallback(e => {
+  }) : null, S = null != (t = (0, g.x)(h, ei, !0)) ? t : T, A = (0, E.ZP)(h), [N, C] = (0, l.Wu)([L.Z], () => [L.Z.supports(Y.AN.VIDEO), Object.keys(L.Z.getVideoDevices()).length]), R = null != I ? "".concat(A, ", ").concat(I.name) : A, x = (0, l.e7)([M.Z], () => M.Z.isFocused()), k = (0, l.e7)([U.Z], () => U.Z.getMode(h.id)), B = i.useCallback(e => {
     null != e.top && null != e.left && d.Z.move(e.left, e.top)
   }, []), Z = (0, c.q_F)({
     value: +!!O,
-    config: J(X({}, s.config.stiff), {
+    config: $(Q({}, s.config.stiff), {
       clamp: !0
     })
   }, "animate-always");
@@ -239,27 +239,27 @@ function es(e) {
     };
     return window.addEventListener("keydown", e), () => window.removeEventListener("keydown", e)
   }, [h]);
-  let F = j === H.WtW.VIDEO && N && C > 0,
+  let F = k === H.WtW.VIDEO && N && C > 0,
     {
       enabled: V
-    } = R.Z.useExperiment({
+    } = P.Z.useExperiment({
       guildId: null == h ? void 0 : h.guild_id,
       location: "IncomingCallModal"
     }),
-    $ = j === H.WtW.VOICE || V && h.type === H.d4z.GUILD_VOICE ? W.intl.string(W.t.Js8cKy) : W.intl.string(W.t.KcnWCA),
-    Q = (0, r.jsxs)(r.Fragment, {
+    X = k === H.WtW.VOICE || V && h.type === H.d4z.GUILD_VOICE ? W.intl.string(W.t.Js8cKy) : W.intl.string(W.t.KcnWCA),
+    J = (0, r.jsxs)(r.Fragment, {
       children: [null != I && null == T ? (0, r.jsx)("div", {
-        className: o()(z.icon, K.wrapper, K.ringingIncoming),
+        className: a()(z.icon, K.wrapper, K.ringingIncoming),
         children: (0, r.jsx)(b.ZP, {
           className: z.mask,
           mask: b.QS.AVATAR_DEFAULT,
           width: O ? 40 : 80,
           height: O ? 40 : 80,
           children: (0, r.jsx)("div", {
-            className: o()(z.guildIcon, z.guildIconWithoutImage),
+            className: a()(z.guildIcon, z.guildIconWithoutImage),
             children: (0, r.jsx)("div", {
               className: z.guildAcronym,
-              children: (0, P.gM)(I)
+              children: (0, w.gM)(I)
             })
           })
         })
@@ -275,17 +275,17 @@ function es(e) {
           className: z.title,
           color: "header-primary",
           variant: O ? "text-md/semibold" : "text-lg/semibold",
-          children: w
+          children: R
         }), (0, r.jsx)(c.Text, {
           color: "header-secondary",
           className: z.subtitle,
           variant: O ? "text-sm/normal" : "text-md/normal",
-          children: $
+          children: X
         })]
       })]
     }),
     es = F ? ee : et,
-    el = (0, l.e7)([k.Z], () => k.Z.windowSize());
+    el = (0, l.e7)([M.Z], () => M.Z.windowSize());
   return (0, r.jsx)(m.Gt, {
     value: y,
     children: (0, r.jsx)(_.Z, {
@@ -293,7 +293,7 @@ function es(e) {
       selector: ".".concat(z.root),
       initialPosition: {
         left: f,
-        top: a
+        top: o
       },
       maxX: el.width,
       maxY: el.height,
@@ -302,20 +302,20 @@ function es(e) {
       children: (0, r.jsx)(c.f6W, {
         theme: O ? H.BRd.DARK : void 0,
         children: e => (0, r.jsxs)(s.animated.div, {
-          className: o()(z.root, q.elevationHigh, {
+          className: a()(z.root, q.elevationHigh, {
             [z.previewCamera]: O
           }, e),
-          style: J(X({}, n), {
+          style: $(Q({}, n), {
             width: Z.value.interpolate([0, 1], [es.width, en]),
             minHeight: Z.value.interpolate([0, 1], [es.height, er]),
             translateX: Z.value.interpolate([0, 1], [0, -1 * Math.abs(en - es.width) / 2])
           }),
-          children: [O ? (0, r.jsx)(ea, {
-            header: Q
+          children: [O ? (0, r.jsx)(eo, {
+            header: J
           }) : (0, r.jsx)("div", {
             className: z.mainChannelInfo,
-            children: Q
-          }), (0, r.jsx)(eo, {
+            children: J
+          }), (0, r.jsx)(ea, {
             canVideo: F,
             channel: h,
             numVideoDevices: C

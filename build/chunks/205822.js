@@ -5,8 +5,8 @@ n.d(t, {
 }), n(953529), n(388685);
 var r = n(255367),
   i = n(73800),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(481060),
   l = n(710845),
   c = n(310752),
@@ -29,19 +29,19 @@ let h = new l.Z("UploadArea"),
 function g() {
   return (0, r.jsxs)("div", {
     children: [(0, r.jsx)("div", {
-      className: o()(_.sparkleWhite, f.sparkleOne)
+      className: a()(_.sparkleWhite, f.sparkleOne)
     }), (0, r.jsx)("div", {
-      className: o()(_.sparkleWhite, f.sparkleTwo)
+      className: a()(_.sparkleWhite, f.sparkleTwo)
     }), (0, r.jsx)("div", {
-      className: o()(_.lightWhite, f.lightOne)
+      className: a()(_.lightWhite, f.lightOne)
     }), (0, r.jsx)("div", {
-      className: o()(_.lightWhite, f.lightTwo)
+      className: a()(_.lightWhite, f.lightTwo)
     }), (0, r.jsx)("div", {
-      className: o()(_.crossWhite, f.crossOne)
+      className: a()(_.crossWhite, f.crossOne)
     }), (0, r.jsx)("div", {
-      className: o()(_.crossWhite, f.crossTwo)
+      className: a()(_.crossWhite, f.crossTwo)
     }), (0, r.jsx)("div", {
-      className: o()(_.popWhite, f.popOne)
+      className: a()(_.popWhite, f.popOne)
     })]
   })
 }
@@ -60,11 +60,11 @@ class E extends i.Component {
       description: t,
       icons: n,
       style: i,
-      className: a
+      className: o
     } = this.props;
     return (0, r.jsx)("div", {
       ref: this.elementDOMRef,
-      className: o()(a, f.uploadArea, {
+      className: a()(o, f.uploadArea, {
         [f.droppable]: this.state.isDragging,
         [f.uploadModalIn]: this.state.isOverZone
       }),
@@ -108,8 +108,8 @@ class E extends i.Component {
         r = e.dataTransfer;
       if (null == r) return !0;
       let i = Array.isArray(r.types) && -1 !== r.types.indexOf("text/uri-list") && -1 === r.types.indexOf("application/json"),
-        a = null != r.items && !t.isAllDropFiles(r.items);
-      return !i && !a || (e.stopPropagation(), e.preventDefault(), r.effectAllowed = "none", r.dropEffect = "none", n && (t.setState({
+        o = null != r.items && !t.isAllDropFiles(r.items);
+      return !i && !o || (e.stopPropagation(), e.preventDefault(), r.effectAllowed = "none", r.dropEffect = "none", n && (t.setState({
         isDragging: !1
       }), (0, u.openUploadError)({
         title: d.intl.string(d.t.azO1PT),

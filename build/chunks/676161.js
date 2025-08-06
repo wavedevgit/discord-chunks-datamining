@@ -5,17 +5,17 @@ n.d(t, {
 }), n(642613);
 var r = n(73800),
   i = n(700089),
-  a = n(654455),
-  o = n(496158);
+  o = n(654455),
+  a = n(496158);
 
 function s(e) {
   let {
     context: t,
     commands: n,
     limit: s = n.length
-  } = e, l = (0, o.D)(t), c = (0, i.R)(l), u = r.useMemo(() => n.reduce((e, t) => (e[t.id] = t, e), {}), [n]);
+  } = e, l = (0, a.D)(t), c = (0, i.R)(l), u = r.useMemo(() => n.reduce((e, t) => (e[t.id] = t, e), {}), [n]);
   return r.useMemo(() => c.map(e => u[e]).filter(e => null != e).sort((e, t) => {
-    let n = a.ZP.getScoreWithoutLoadingLatest(l, e);
-    return a.ZP.getScoreWithoutLoadingLatest(l, t) - n
+    let n = o.ZP.getScoreWithoutLoadingLatest(l, e);
+    return o.ZP.getScoreWithoutLoadingLatest(l, t) - n
   }).slice(0, s), [c, u, l, s])
 }

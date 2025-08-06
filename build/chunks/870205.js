@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(255367),
   i = n(73800),
-  a = n(755721),
-  o = n(481060),
+  o = n(755721),
+  a = n(481060),
   s = n(984168),
   l = n(314734),
   c = n(388032),
@@ -65,7 +65,7 @@ function m(e) {
     case l.bS.ALPHABETICAL:
       t = c.intl.string(c.t.m8xstr)
   }
-  return (0, r.jsx)(o.yRy, {
+  return (0, r.jsx)(a.yRy, {
     targetElementRef: _,
     renderPopout: e => {
       let {
@@ -83,26 +83,26 @@ function m(e) {
       let {
         isShown: i
       } = n;
-      return (0, r.jsxs)(a.zx, p(f({}, e), {
+      return (0, r.jsxs)(o.zx, p(f({}, e), {
         buttonRef: _,
-        size: a.zx.Sizes.MIN,
-        color: a.zx.Colors.CUSTOM,
+        size: o.zx.Sizes.MIN,
+        color: o.zx.Colors.CUSTOM,
         className: u.sortDropdown,
         innerClassName: u.sortDropdownInner,
         "aria-label": c.intl.string(c.t.yeYaHR),
-        children: [(0, r.jsx)(o.uVW, {
+        children: [(0, r.jsx)(a.uVW, {
           size: "xs",
           color: "currentColor",
           className: u.sortIconMargin
-        }), (0, r.jsx)(o.Text, {
+        }), (0, r.jsx)(a.Text, {
           variant: "text-sm/medium",
           color: "text-default",
           children: t
-        }), i ? (0, r.jsx)(o.u04, {
+        }), i ? (0, r.jsx)(a.u04, {
           size: "custom",
           color: "currentColor",
           width: h
-        }) : (0, r.jsx)(o.CJ0, {
+        }) : (0, r.jsx)(a.CJ0, {
           size: "custom",
           color: "currentColor",
           width: h

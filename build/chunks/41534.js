@@ -8,7 +8,7 @@ n.d(t, {
 var r = n(960048),
   i = n(837268);
 
-function a(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -17,14 +17,14 @@ function a(e, t, n) {
   }) : e[t] = n, e
 }
 
-function o(e) {
+function a(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      a(e, t, n[t])
+      o(e, t, n[t])
     })
   }
   return e
@@ -51,8 +51,8 @@ function c() {
   var e;
   let t = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
     n = arguments.length > 1 ? arguments[1] : void 0;
-  return l(o({}, n), {
-    tags: o({
+  return l(a({}, n), {
+    tags: a({
       source: "overlay",
       overlayMethod: "".concat(null == t ? null : i.gl[null != t ? t : i.gl.Disabled])
     }, null != (e = null == n ? void 0 : n.tags) ? e : {})

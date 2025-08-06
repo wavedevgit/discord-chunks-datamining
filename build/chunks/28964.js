@@ -1,44 +1,42 @@
-/** Chunk was on web.js **/
-"use strict";
+/** Chunk was on 49152 **/
 n.d(t, {
-  xd: () => s
+  xd: () => a
 });
 var r = n(818083),
   i = n(154579);
-let a = {
+let l = (0, r.B)({
+  kind: "user",
+  id: "2025-07_search_filters_redesign",
+  label: "Search Filters Redesign",
+  defaultConfig: {
     isPopoutFiltersRedesignEnabled: !1,
     isResultFiltersRedesignEnabled: !1
   },
-  o = (0, r.B)({
-    kind: "user",
-    id: "2025-07_search_filters_redesign",
-    label: "Search Filters Redesign",
-    defaultConfig: a,
-    treatments: [{
-      id: 1,
-      label: "Enable better popout filters",
-      config: {
-        isPopoutFiltersRedesignEnabled: !0,
-        isResultFiltersRedesignEnabled: !1
-      }
-    }, {
-      id: 2,
-      label: "Enable better result filters",
-      config: {
-        isPopoutFiltersRedesignEnabled: !1,
-        isResultFiltersRedesignEnabled: !0
-      }
-    }, {
-      id: 3,
-      label: "Enable better popout and result filters",
-      config: {
-        isPopoutFiltersRedesignEnabled: !0,
-        isResultFiltersRedesignEnabled: !0
-      }
-    }]
-  });
+  treatments: [{
+    id: 1,
+    label: "Enable better popout filters",
+    config: {
+      isPopoutFiltersRedesignEnabled: !0,
+      isResultFiltersRedesignEnabled: !1
+    }
+  }, {
+    id: 2,
+    label: "Enable better result filters",
+    config: {
+      isPopoutFiltersRedesignEnabled: !1,
+      isResultFiltersRedesignEnabled: !0
+    }
+  }, {
+    id: 3,
+    label: "Enable better popout and result filters",
+    config: {
+      isPopoutFiltersRedesignEnabled: !0,
+      isResultFiltersRedesignEnabled: !0
+    }
+  }]
+});
 
-function s(e) {
+function a(e) {
   let {
     isXDMSearch: t,
     location: n,
@@ -48,7 +46,7 @@ function s(e) {
     autoTrackExposure: r
   }), {
     isResultFiltersRedesignEnabled: s
-  } = o.useExperiment({
+  } = l.useExperiment({
     location: n
   }, {
     autoTrackExposure: r,

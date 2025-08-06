@@ -1,5 +1,4 @@
-/** Chunk was on web.js **/
-"use strict";
+/** Chunk was on 49152 **/
 e.exports = {
   searchResultsWrap: "searchResultsWrap_a9e706",
   scroller: "scroller_a9e706",
@@ -12,6 +11,7 @@ e.exports = {
   errorMessage: "errorMessage_a9e706",
   noResults: "noResults_a9e706",
   alt: "alt_a9e706",
+  helpMessageContainer: "helpMessageContainer_a9e706",
   paginationLimitTooltipText: "paginationLimitTooltipText_a9e706",
   paginationLimitTooltip: "paginationLimitTooltip_a9e706",
   paginationLimitHeader: "paginationLimitHeader_a9e706"

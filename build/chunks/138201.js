@@ -8,8 +8,8 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var i = n(120356),
-  a = n.n(i),
-  o = n(755721),
+  o = n.n(i),
+  a = n(755721),
   s = n(481060),
   l = n(754363);
 
@@ -29,8 +29,8 @@ function u(e) {
     children: t,
     title: n,
     description: i,
-    accessibilityRole: a = "none",
-    accessibilityLabel: o
+    accessibilityRole: o = "none",
+    accessibilityLabel: a
   } = e;
   return (0, r.jsxs)("div", {
     className: l.tableRowGroup,
@@ -42,8 +42,8 @@ function u(e) {
       children: i
     }), (0, r.jsx)("div", {
       className: l.content,
-      role: a,
-      "aria-label": o,
+      role: o,
+      "aria-label": a,
       children: t
     })]
   })
@@ -54,7 +54,7 @@ function d(e) {
     icon: t,
     title: n,
     titleVariant: i = "text-md/semibold",
-    description: o,
+    description: a,
     descriptionVariant: c = "text-xs/medium",
     iconClassName: u,
     color: d,
@@ -90,7 +90,7 @@ function d(e) {
       className: l.iconContainer,
       children: (0, r.jsx)(t, {
         color: null != d ? d : "currentColor",
-        className: a()(l.icon, u)
+        className: o()(l.icon, u)
       })
     }), (0, r.jsxs)("div", {
       className: l.textContainer,
@@ -98,10 +98,10 @@ function d(e) {
         variant: i,
         color: "header-primary",
         children: n
-      }), null != o && (0, r.jsx)(s.Text, {
+      }), null != a && (0, r.jsx)(s.Text, {
         variant: c,
         color: "text-secondary",
-        children: o
+        children: a
       })]
     }), null != v && (0, r.jsx)("div", {
       className: l.button,
@@ -119,9 +119,9 @@ let f = function(e) {
     iconClassName: d,
     color: f,
     buttonText: _,
-    buttonColor: p = o.zx.Colors.PRIMARY,
-    buttonSize: h = o.zx.Sizes.SMALL,
-    buttonLook: m = o.zx.Looks.FILLED,
+    buttonColor: p = a.zx.Colors.PRIMARY,
+    buttonSize: h = a.zx.Sizes.SMALL,
+    buttonLook: m = a.zx.Looks.FILLED,
     buttonDisabled: g,
     buttonIcon: E,
     buttonIconColor: b,
@@ -129,7 +129,7 @@ let f = function(e) {
     onButtonPress: O,
     listType: v = "icon",
     index: I
-  } = e, T = null != _ ? (0, r.jsx)(o.zx, {
+  } = e, T = null != _ ? (0, r.jsx)(a.zx, {
     className: l.button,
     size: h,
     color: p,
@@ -157,7 +157,7 @@ let f = function(e) {
       className: l.iconContainer,
       children: (0, r.jsx)(t, {
         color: null != f ? f : "currentColor",
-        className: a()(l.icon, d)
+        className: o()(l.icon, d)
       })
     }), (0, r.jsxs)("div", {
       className: l.textContainer,

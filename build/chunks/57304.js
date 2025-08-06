@@ -1,6 +1,6 @@
 /** Chunk was on 49152 **/
 n.d(t, {
-  Z: () => y
+  Z: () => x
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -9,8 +9,8 @@ var r = n(255367),
   s = n(23536),
   o = n(40851),
   c = n(622822),
-  d = n(731290),
-  u = n(306680),
+  u = n(731290),
+  d = n(306680),
   h = n(594174),
   p = n(585483),
   f = n(665149),
@@ -36,7 +36,7 @@ function b(e) {
   return e
 }
 
-function _(e, t) {
+function y(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -48,24 +48,24 @@ function _(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let y = function(e) {
+let x = function(e) {
   let {
     channel: t
-  } = e, n = (0, l.e7)([d.Z, h.default], () => {
+  } = e, n = (0, l.e7)([u.Z, h.default], () => {
     let e = h.default.getCurrentUser();
-    return null == e || (0, c.aC)(t) && (!e.nsfwAllowed || !d.Z.didAgree(t.getGuildId()))
-  }, [t]), [y, j] = i.useState(!1), O = (0, l.e7)([u.ZP], () => u.ZP.hasUnreadPins(t.id), [t]), x = (0, o.Aq)(), v = i.useRef(null), C = i.useCallback(() => {
+    return null == e || (0, c.aC)(t) && (!e.nsfwAllowed || !u.Z.didAgree(t.getGuildId()))
+  }, [t]), [x, j] = i.useState(!1), _ = (0, l.e7)([d.ZP], () => d.ZP.hasUnreadPins(t.id), [t]), O = (0, o.Aq)(), v = i.useRef(null), C = i.useCallback(() => {
     n || j(e => !e)
   }, [n]);
 
   function E(e) {
-    (null == e ? void 0 : e.shiftKey) || x.dispatch(g.CkL.POPOUT_CLOSE)
+    (null == e ? void 0 : e.shiftKey) || O.dispatch(g.CkL.POPOUT_CLOSE)
   }
   return i.useEffect(() => (p.S.subscribe(g.CkL.TOGGLE_CHANNEL_PINS, C), () => {
     p.S.unsubscribe(g.CkL.TOGGLE_CHANNEL_PINS, C)
   }), [C]), (0, r.jsx)(a.yRy, {
     targetElementRef: v,
-    shouldShow: y,
+    shouldShow: x,
     animation: a.yRy.Animation.NONE,
     position: "bottom",
     align: "right",
@@ -73,7 +73,7 @@ let y = function(e) {
     ignoreModalClicks: !0,
     onRequestClose: () => j(!1),
     renderPopout: function(e) {
-      return (0, r.jsx)(s.Z, _(b({}, e), {
+      return (0, r.jsx)(s.Z, y(b({}, e), {
         onJump: E,
         channel: t
       }))
@@ -83,7 +83,7 @@ let y = function(e) {
       let {
         isShown: i
       } = t;
-      return (0, r.jsx)(f.JO, _(b({}, e), {
+      return (0, r.jsx)(f.JO, y(b({}, e), {
         ref: v,
         onClick: C,
         tooltip: i ? null : m.intl.string(m.t["mp1N//"]),
@@ -91,7 +91,7 @@ let y = function(e) {
         iconSize: 20,
         "aria-label": m.intl.string(m.t["mp1N//"]),
         disabled: n,
-        showBadge: O,
+        showBadge: _,
         selected: i
       }))
     }

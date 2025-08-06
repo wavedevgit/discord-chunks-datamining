@@ -5,9 +5,9 @@ n.d(t, {
   Z: () => h
 });
 var r, i = n(442837),
-  a = n(570140);
+  o = n(570140);
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -45,8 +45,8 @@ class p extends(r = i.ZP.Store) {
     return d
   }
 }
-o(p, "displayName", "BrowserCheckoutStateStore");
-let h = new p(a.Z, {
+a(p, "displayName", "BrowserCheckoutStateStore");
+let h = new p(o.Z, {
   USER_PAYMENT_BROWSER_CHECKOUT_STARTED: f,
   USER_PAYMENT_BROWSER_CHECKOUT_DONE: _
 })

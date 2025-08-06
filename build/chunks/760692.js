@@ -5,7 +5,7 @@ n.d(t, {
 });
 var r = n(522942),
   i = n(131016);
-let a = {
+let o = {
   GRADIENT_START_COLOR: "--custom-display-name-styles-gradient-start-color",
   GRADIENT_END_COLOR: "--custom-display-name-styles-gradient-end-color",
   MAIN: "--custom-display-name-styles-main-color",
@@ -15,27 +15,27 @@ let a = {
   DARK_2: "--custom-display-name-styles-dark-2-color"
 };
 
-function o(e) {
+function a(e) {
   let {
     main: t,
     light1: n,
     light2: r,
-    dark1: o,
+    dark1: a,
     dark2: s
   } = (0, i.hX)(e);
   return {
-    [a.MAIN]: t,
-    [a.LIGHT_1]: n,
-    [a.LIGHT_2]: r,
-    [a.DARK_1]: o,
-    [a.DARK_2]: s
+    [o.MAIN]: t,
+    [o.LIGHT_1]: n,
+    [o.LIGHT_2]: r,
+    [o.DARK_1]: a,
+    [o.DARK_2]: s
   }
 }
 
 function s(e) {
   return e.length < 2 ? {} : {
-    [a.GRADIENT_START_COLOR]: e[0],
-    [a.GRADIENT_END_COLOR]: e[1]
+    [o.GRADIENT_START_COLOR]: e[0],
+    [o.GRADIENT_END_COLOR]: e[1]
   }
 }
 
@@ -48,7 +48,7 @@ function l(e, t) {
     case r.m.POP:
     case r.m.TOON:
     case r.m.SOLID:
-      return o(t[0]);
+      return a(t[0]);
     default:
       return {}
   }

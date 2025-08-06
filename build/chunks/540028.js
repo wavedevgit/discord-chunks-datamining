@@ -5,8 +5,8 @@ n.d(t, {
 }), n(539854), n(388685);
 var r = n(255367),
   i = n(73800),
-  a = n(442837),
-  o = n(692547),
+  o = n(442837),
+  a = n(692547),
   s = n(481060),
   l = n(475179),
   c = n(519938),
@@ -65,19 +65,19 @@ function T(e) {
     closePopout: t,
     idle: n,
     pipWindows: i,
-    voiceChannelId: o,
+    voiceChannelId: a,
     onSelect: h
   } = e;
   n && t();
-  let b = (0, a.e7)([u.ZP], () => u.ZP.getCurrentEmbeddedActivity()),
-    y = (0, a.e7)([p.Z], () => p.Z.pipWindow),
-    O = (0, a.e7)([f.Z], () => f.Z.getSelectedParticipant(o)),
-    v = (0, a.e7)([f.Z], () => f.Z.getStreamParticipants(o));
+  let b = (0, o.e7)([u.ZP], () => u.ZP.getCurrentEmbeddedActivity()),
+    y = (0, o.e7)([p.Z], () => p.Z.pipWindow),
+    O = (0, o.e7)([f.Z], () => f.Z.getSelectedParticipant(a)),
+    v = (0, o.e7)([f.Z], () => f.Z.getStreamParticipants(a));
 
   function I(e) {
     (null == y ? void 0 : y.id) !== e.pipWindow.id && (0, c.k3)(e.pipWindow.id);
     let t = e.participant;
-    null != t && t.type !== g.fO.ACTIVITY && l.Z.selectParticipant(o, t.id)
+    null != t && t.type !== g.fO.ACTIVITY && l.Z.selectParticipant(a, t.id)
   }
 
   function T(e) {
@@ -111,13 +111,13 @@ function T(e) {
     var t;
     let n = e.pipWindow.id,
       i = null == (t = e.participant) ? void 0 : t.id,
-      a = T(e),
-      o = "".concat(n).concat(null != i ? i : "");
+      o = T(e),
+      a = "".concat(n).concat(null != i ? i : "");
     return (0, r.jsx)(s.sNh, {
-      id: o,
-      label: a,
+      id: a,
+      label: o,
       action: () => I(e)
-    }, o)
+    }, a)
   }
   return (0, r.jsx)(s.v2r, {
     navId: "pip-menu",
@@ -131,7 +131,7 @@ let S = function(e) {
   let {
     voiceChannelId: t,
     idle: n
-  } = e, l = i.useRef(null), c = Array.from((0, a.e7)([p.Z], () => p.Z.pipWindows).values()).filter(e => e.component !== m.NYg.ACTIVITY), u = (0, a.Wu)([_.Z], () => _.Z.getAllActiveStreamsForChannel(t)).filter(e => {
+  } = e, l = i.useRef(null), c = Array.from((0, o.e7)([p.Z], () => p.Z.pipWindows).values()).filter(e => e.component !== m.NYg.ACTIVITY), u = (0, o.Wu)([_.Z], () => _.Z.getAllActiveStreamsForChannel(t)).filter(e => {
     var n;
     return e.ownerId !== (null == (n = h.default.getCurrentUser()) ? void 0 : n.id) && e.channelId === t
   }), d = 1 === c.length && c[0].component === m.NYg.ACTIVITY || 0 === u.length, f = 1 === c.length && u.length <= 1;
@@ -149,7 +149,7 @@ let S = function(e) {
       innerRef: l,
       children: (0, r.jsx)(s.Huf, {
         size: "md",
-        color: o.Z.unsafe_rawColors.WHITE_500.css
+        color: a.Z.unsafe_rawColors.WHITE_500.css
       })
     }))
   })

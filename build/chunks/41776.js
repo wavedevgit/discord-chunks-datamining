@@ -4,8 +4,8 @@ n.d(t, {
   Z: () => N
 }), n(388685);
 var r, i = n(442837),
-  a = n(570140),
-  o = n(601964),
+  o = n(570140),
+  a = n(601964),
   s = n(271383),
   l = n(430824),
   c = n(594174),
@@ -51,10 +51,10 @@ function b(e) {
     lurker: n,
     source: r,
     directoryChannelId: i,
-    loadId: a
+    loadId: o
   } = e;
   if (n) {
-    switch (g(t), E(t, a), r) {
+    switch (g(t), E(t, o), r) {
       case u.vtS.MOBILE_GUILD_DISCOVERY:
         p = {
           type: u.vtS.MOBILE_GUILD_DISCOVERY
@@ -87,8 +87,8 @@ function O(e) {
     guildId: n,
     joinedAt: r,
     user: i
-  } = e, a = i.id === (null == (t = c.default.getCurrentUser()) ? void 0 : t.id), o = null == r;
-  return !!a && !o && !!f.includes(n) && (m(n), p = null, !0)
+  } = e, o = i.id === (null == (t = c.default.getCurrentUser()) ? void 0 : t.id), a = null == r;
+  return !!o && !a && !!f.includes(n) && (m(n), p = null, !0)
 }
 
 function v(e) {
@@ -114,7 +114,7 @@ function T(e) {
 }
 
 function S() {
-  f = l.Z.getGuildsArray().filter(e => (0, o.zN)(e)).map(e => e.id)
+  f = l.Z.getGuildsArray().filter(e => (0, a.zN)(e)).map(e => e.id)
 }
 class A extends(r = i.ZP.Store) {
   initialize() {
@@ -130,7 +130,7 @@ class A extends(r = i.ZP.Store) {
     let t = l.Z.getGuild(e);
     if (null == t) return !1;
     let n = s.ZP.isCurrentUserGuest(e),
-      r = (0, o.zN)(t);
+      r = (0, a.zN)(t);
     return !!(!n && r)
   }
   getLurkingSource() {
@@ -141,7 +141,7 @@ class A extends(r = i.ZP.Store) {
   }
 }
 d(A, "displayName", "LurkingStore");
-let N = new A(a.Z, {
+let N = new A(o.Z, {
   CONNECTION_OPEN: S,
   GUILD_JOIN: b,
   GUILD_STOP_LURKING: I,

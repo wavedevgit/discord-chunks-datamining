@@ -1,17 +1,17 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => a
+  Z: () => o
 });
 var r = n(73800),
   i = n(618158);
 
-function a(e) {
+function o(e) {
   let {
     children: t
   } = e, {
     preventIdle: n,
-    allowIdle: a
+    allowIdle: o
   } = (0, i.Y)("popup");
-  return r.useEffect(() => (n(), () => a()), [a, n]), t
+  return r.useEffect(() => (n(), () => o()), [o, n]), t
 }

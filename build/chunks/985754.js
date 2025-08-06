@@ -1,11 +1,11 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  W: () => a
+  W: () => o
 });
 var r = n(981631),
   i = n(388032);
-let a = {
+let o = {
   [r.HeQ.CARD]: () => i.intl.string(i.t["ei5/p6"]),
   [r.HeQ.PAYPAL]: () => i.intl.string(i.t["2dgEq6"]),
   [r.HeQ.SOFORT]: () => i.intl.string(i.t["edKX//"]),

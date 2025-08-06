@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(255367),
   i = n(73800),
-  a = n(442837),
-  o = n(481060),
+  o = n(442837),
+  a = n(481060),
   s = n(40851),
   l = n(357156),
   c = n(390322),
@@ -22,7 +22,7 @@ function g(e) {
   let {
     channelId: t,
     onClick: n
-  } = e, g = (0, s.bp)(), E = (0, h.qY)(t), b = (0, a.e7)([d.Z], () => d.Z.getChannel(t), [t]), {
+  } = e, g = (0, s.bp)(), E = (0, h.qY)(t), b = (0, o.e7)([d.Z], () => d.Z.getChannel(t), [t]), {
     canManageGuildEvent: y
   } = (0, l.XJ)(b), O = y(E), v = i.useRef(null);
   if (null == E) return null;
@@ -33,31 +33,31 @@ function g(e) {
     T = () => {
       _.Z.endEvent(E.id, E.guild_id)
     };
-  return O ? (0, r.jsx)(o.yRy, {
+  return O ? (0, r.jsx)(a.yRy, {
     targetElementRef: v,
     renderPopout: e => {
       let {
         closePopout: t
       } = e;
       return (0, r.jsx)(c.Z, {
-        children: (0, r.jsx)(o.v2r, {
+        children: (0, r.jsx)(a.v2r, {
           navId: "exit-options",
           onSelect: () => {},
           "aria-label": m.intl.string(m.t["K6/mk5"]),
           onClose: t,
-          children: (0, r.jsx)(o.sNh, {
+          children: (0, r.jsx)(a.sNh, {
             id: "end-voice-event",
             color: "danger",
             action: T,
             label: m.intl.string(m.t.qaYzPD),
-            icon: o.k$p
+            icon: a.k$p
           })
         })
       })
     },
     align: "center",
     position: "top",
-    animation: o.yRy.Animation.FADE,
+    animation: a.yRy.Animation.FADE,
     children: e => {
       let {
         onClick: t

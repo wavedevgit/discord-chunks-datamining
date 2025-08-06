@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var i = n(481060),
-  a = n(668781),
-  o = n(231338),
+  o = n(668781),
+  a = n(231338),
   s = n(388032);
 
 function l(e, t, n) {
@@ -38,14 +38,14 @@ let u = (e, t) => {
       u = e
     },
     f = () => {
-      u ? a.Z.show({
+      u ? o.Z.show({
         title: s.intl.string(s.t.pvRCSk),
         body: s.intl.string(s.t.DRi46e),
         confirmText: s.intl.string(s.t["6GQDFh"]),
         confirmVariant: "critical-primary",
         cancelText: s.intl.string(s.t.DmDzZG),
         onConfirm: () => (0, i.Mr3)(l),
-        onCancel: o.dG
+        onCancel: a.dG
       }) : (0, i.Mr3)(l)
     };
   (0, i.ZDy)(async () => {

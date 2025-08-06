@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(179360),
   i = n(147913),
-  a = n(430824),
-  o = n(496675),
+  o = n(430824),
+  a = n(496675),
   s = n(914010),
   l = n(713081),
   c = n(905128),
@@ -27,11 +27,11 @@ class h extends i.Z {
   handleSelectedGuildChange() {
     let e = s.Z.getGuildId();
     if (null == e || e === _._ || e === f.I_8) return;
-    let t = a.Z.getGuild(e);
+    let t = o.Z.getGuild(e);
     null != t && (u.sT.trackExposure({
       guildId: t.id,
       location: "GuildPowerupsManager"
-    }), (0, d.D)(o.Z, t) && (c.Z.shouldFetchCatalogForGuild(e) && (0, l.Sn)(e), c.Z.shouldFetchPowerupsForGuild(e) && (0, l.Fm)(e)))
+    }), (0, d.D)(a.Z, t) && (c.Z.shouldFetchCatalogForGuild(e) && (0, l.Sn)(e), c.Z.shouldFetchPowerupsForGuild(e) && (0, l.Fm)(e)))
   }
   handleEntitlementUpdate(e) {
     let {
@@ -46,7 +46,7 @@ class h extends i.Z {
     this.refreshGuildPowerups(t)
   }
   refreshGuildPowerups(e) {
-    !0 === (0, d.D)(o.Z, a.Z.getGuild(e)) && ((0, l.Fm)(e), (0, r.C0)(e))
+    !0 === (0, d.D)(a.Z, o.Z.getGuild(e)) && ((0, l.Fm)(e), (0, r.C0)(e))
   }
   constructor(...e) {
     super(...e), p(this, "stores", new Map().set(s.Z, this.handleSelectedGuildChange)), p(this, "actions", {

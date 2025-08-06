@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(255367),
   i = n(73800),
-  a = n(704215),
-  o = n(481060),
+  o = n(704215),
+  a = n(481060),
   s = n(475179),
   l = n(561472),
   c = n(287746),
@@ -28,7 +28,7 @@ let O = function(e) {
     maxWidth: O
   } = e;
   i.useEffect(() => {
-    (0, f.Q3)(a.z.CALL_CHAT_BUTTON_TEXT_IN_VOICE_COACH_MARK, {
+    (0, f.Q3)(o.z.CALL_CHAT_BUTTON_TEXT_IN_VOICE_COACH_MARK, {
       dismissAction: E.L.AUTO
     })
   }, []);
@@ -36,7 +36,7 @@ let O = function(e) {
       s.Z.updateChatOpen(t.id, !1), h.S.safeDispatch(g.CkL.FOCUS_CHAT_BUTTON)
     }, [t.id]),
     I = (0, r.jsx)(_.ZP.Icon, {
-      icon: o.Dio,
+      icon: a.Dio,
       tooltip: b.intl.string(b.t.cpT0Cg),
       onClick: v
     });
@@ -51,7 +51,7 @@ let O = function(e) {
       toolbar: I,
       "aria-label": b.intl.string(b.t.BIYAqa),
       children: [(0, r.jsx)(_.ZP.ChannelIcon, {
-        icon: o.kBi,
+        icon: a.kBi,
         "aria-label": b.intl.string(b.t.Kx5kCA)
       }), (0, r.jsx)(_.ZP.Title, {
         children: t.name

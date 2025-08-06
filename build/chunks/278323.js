@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(544891),
   i = n(570140),
-  a = n(367907),
-  o = n(957730),
+  o = n(367907),
+  a = n(957730),
   s = n(592125),
   l = n(493683),
   c = n(904245),
@@ -16,8 +16,8 @@ let d = {
     let {
       applicationId: t,
       distributor: n,
-      shareActivity: a,
-      token: o = null,
+      shareActivity: o,
+      token: a = null,
       duration: s = 0,
       closed: l = !1,
       exePath: c = null,
@@ -34,9 +34,9 @@ let d = {
       url: u.ANM.ACTIVITIES,
       body: {
         application_id: t,
-        token: o,
+        token: a,
         duration: s,
-        share_activity: a,
+        share_activity: o,
         distributor: n,
         closed: l,
         exePath: c,
@@ -77,14 +77,14 @@ let d = {
       location: d
     } = e, f = s.Z.getChannel(t);
     if (null == f) return Promise.resolve(null);
-    let _ = o.ZP.parse(f, null != i ? i : "");
+    let _ = a.ZP.parse(f, null != i ? i : "");
     return c.Z.sendMessage(f.id, _, !1, {
       activityAction: {
         type: n,
         activity: r,
         targetUserId: l
       }
-    }).then(e => (a.ZP.trackWithMetadata(u.rMx.INVITE_SENT, {
+    }).then(e => (o.ZP.trackWithMetadata(u.rMx.INVITE_SENT, {
       location: d,
       invite_type: r.type === u.IIU.LISTENING ? u.dAT.SPOTIFY : u.dAT.APPLICATION,
       application_id: r.application_id,
@@ -99,22 +99,22 @@ let d = {
       type: n,
       activity: r,
       content: i,
-      location: a
+      location: o
     } = e;
     return l.Z.ensurePrivateChannel(t).then(e => this.sendActivityInvite({
       channelId: e,
       type: n,
       activity: r,
       content: i,
-      location: a
+      location: o
     }))
   },
-  async getJoinSecret(e, t, n, i, a) {
-    let o = {};
-    return null != i && (o.channel_id = i), null != a && (o.message_id = a), (await r.tn.get({
+  async getJoinSecret(e, t, n, i, o) {
+    let a = {};
+    return null != i && (a.channel_id = i), null != o && (a.message_id = o), (await r.tn.get({
       url: u.ANM.USER_ACTIVITY_JOIN(e, t, n),
       retries: 3,
-      query: o,
+      query: a,
       rejectWithError: !1
     })).body.secret
   },
@@ -125,14 +125,14 @@ let d = {
         applicationId: n,
         partyId: r,
         messageId: i,
-        channelId: a
+        channelId: o
       } = e;
       return {
         user_id: t,
         application_id: n,
         party_id: r,
         message_id: i,
-        channel_id: a
+        channel_id: o
       }
     });
     return (await r.tn.post({

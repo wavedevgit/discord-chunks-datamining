@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var i = n(481060),
-  a = n(906732),
-  o = n(222062),
+  o = n(906732),
+  a = n(222062),
   s = n(867176),
   l = n(654904),
   c = n(486324),
@@ -28,7 +28,7 @@ function _(e) {
     onUpsellClick: b
   } = e, {
     newestAnalyticsLocation: y
-  } = (0, a.ZP)(), O = p || (null == n ? void 0 : n.canUsePremiumProfileCustomization) || !1, v = O ? i.vdY : i.SrA, I = (0, o.M)(O), T = () => {
+  } = (0, o.ZP)(), O = p || (null == n ? void 0 : n.canUsePremiumProfileCustomization) || !1, v = O ? i.vdY : i.SrA, I = (0, a.M)(O), T = () => {
     if (!O && !I) {
       null == b || b();
       return

@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => a
+  Z: () => o
 });
 var r = n(972959);
 let i = Object.freeze({
@@ -10,4 +10,4 @@ let i = Object.freeze({
     entrypoint: null,
     searchBarState: n(49898).GlobalDiscoverySearchBarState.DEFAULT
   }),
-  a = (0, r.H)(() => i)
+  o = (0, r.H)(() => i)

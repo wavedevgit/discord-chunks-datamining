@@ -1,12 +1,12 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  O: () => o,
-  U: () => a
+  O: () => a,
+  U: () => o
 });
 var r = n(818083),
   i = n(987338);
-let a = (0, r.B)({
+let o = (0, r.B)({
   id: "2025-05_summer_2025_gifting",
   label: "Summer 2025 Gifting",
   kind: "user",
@@ -23,10 +23,10 @@ let a = (0, r.B)({
   }]
 });
 
-function o() {
+function a() {
   let {
     enableGiftingFlow: e
-  } = a.useExperiment({
+  } = o.useExperiment({
     location: "useIsSummer2025GiftingActive"
   }, {
     autoTrackExposure: !1

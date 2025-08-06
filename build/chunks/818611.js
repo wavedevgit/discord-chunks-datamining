@@ -1,12 +1,12 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => R
+  Z: () => P
 }), n(314940);
 var r = n(255367),
   i = n(73800),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(278074),
   l = n(481060),
   c = n(727637),
@@ -61,8 +61,8 @@ function O(e, t) {
   if (null == e) return {};
   var n, r, i = v(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -70,8 +70,8 @@ function O(e, t) {
 function v(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let I = 3,
@@ -84,26 +84,26 @@ let I = 3,
       children: t,
       className: n,
       onSelect: i,
-      isSelected: a = !1
+      isSelected: o = !1
     } = e, s = O(e, ["children", "className", "onSelect", "isSelected"]);
     return (0, r.jsx)(l.P3F, y(E({
-      className: o()(m.decorationGridItem, a ? m.selected : void 0, n)
+      className: a()(m.decorationGridItem, o ? m.selected : void 0, n)
     }, s), {
       onClick: i,
       children: t
     }))
   },
-  w = e => {
+  R = e => {
     var {
       user: t,
       avatarDecoration: n,
-      innerRef: a,
-      section: o,
+      innerRef: o,
+      section: a,
       isSelected: s = !1,
       canUsePremiumCollectibles: l
     } = e, d = O(e, ["user", "avatarDecoration", "innerRef", "section", "isSelected", "canUsePremiumCollectibles"]);
     let f = i.useRef(null),
-      h = (0, c.Z)(null != a ? a : f),
+      h = (0, c.Z)(null != o ? o : f),
       {
         avatarDecorationSrc: g
       } = (0, p.Z)({
@@ -113,7 +113,7 @@ let I = 3,
         onlyAnimateOnHover: !h
       });
     return (0, r.jsxs)(C, y(E({
-      innerRef: null != a ? a : f,
+      innerRef: null != o ? o : f,
       isSelected: s
     }, d), {
       children: [(0, r.jsx)("img", {
@@ -121,20 +121,20 @@ let I = 3,
         src: g,
         alt: n.label
       }), (0, r.jsx)(u.Z, {
-        isPurchaseSection: o === _.$0.PURCHASE,
-        isPremiumSection: o === _.$0.PREMIUM_PURCHASE,
+        isPurchaseSection: a === _.$0.PURCHASE,
+        isPremiumSection: a === _.$0.PREMIUM_PURCHASE,
         canUsePremiumCollectibles: l,
         skuId: n.skuId
       })]
     }))
   },
-  R = e => {
+  P = e => {
     let {
       user: t,
       guild: n,
       pendingAvatarDecoration: i,
-      selectedAvatarDecorationRef: a,
-      onSelect: o,
+      selectedAvatarDecorationRef: o,
+      onSelect: a,
       onOpenShop: c
     } = e, u = (0, _.ZP)(), p = d.ZP.canUseCollectibles(t), g = (e, d, g, b) => {
       let {
@@ -144,7 +144,7 @@ let I = 3,
       return (0, s.EQ)(O[d]).with(_.Tm, () => (0, r.jsxs)(C, {
         style: E({}, g),
         isSelected: null === i,
-        onSelect: () => o(null),
+        onSelect: () => a(null),
         children: [(0, r.jsx)(l.t6m, {
           size: "md",
           color: "currentColor",
@@ -170,14 +170,14 @@ let I = 3,
         })]
       }, b)).otherwise(e => {
         let n = (null == i ? void 0 : i.id) === e.id;
-        return (0, r.jsx)(w, {
+        return (0, r.jsx)(R, {
           style: E({}, g),
           user: t,
           avatarDecoration: e,
           section: y,
-          innerRef: n ? a : void 0,
+          innerRef: n ? o : void 0,
           isSelected: n,
-          onSelect: () => o(e),
+          onSelect: () => a(e),
           canUsePremiumCollectibles: p
         }, b)
       })

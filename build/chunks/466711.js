@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(255367),
   i = n(73800),
-  a = n(442837),
-  o = n(704215),
+  o = n(442837),
+  a = n(704215),
   s = n(996146),
   l = n(481060),
   c = n(100527),
@@ -60,13 +60,13 @@ function C(e, t) {
   return n
 }
 
-function w(e, t) {
+function R(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : C(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function R(e) {
+function P(e) {
   return (0, r.jsx)(y.Z, {
     className: S.button,
     "aria-label": I.intl.string(I.t.Z1RnTk),
@@ -83,21 +83,21 @@ function R(e) {
   })
 }
 
-function P(e) {
+function w(e) {
   let {
     Component: t,
     events: n,
     play: i
-  } = (0, s.$)(), a = () => {
+  } = (0, s.$)(), o = () => {
     var t;
     i(), null == (t = e.onClick) || t.call(e)
   };
-  return (0, r.jsx)(y.Z, w(N({
+  return (0, r.jsx)(y.Z, R(N({
     className: S.button,
     "aria-label": I.intl.string(I.t.Z1RnTk),
     isActive: !1,
     noHover: !0,
-    onClick: a
+    onClick: o
   }, n), {
     children: (0, r.jsxs)("div", {
       className: T.iconContainer,
@@ -128,10 +128,10 @@ function L(e) {
     channel: g
   } = e, {
     analyticsLocations: y
-  } = (0, u.ZP)(c.Z.GIFT_BUTTON), [I, S] = i.useState(!1), A = (0, a.e7)([h.Z], () => !(null === h.Z || void 0 === h.Z ? void 0 : h.Z.hasLayers())), N = (0, a.e7)([m.default], () => m.default.getCurrentUser()), C = null != N ? E.default.age(N.id) : 0, {
-    giftBoxAnimation: w,
+  } = (0, u.ZP)(c.Z.GIFT_BUTTON), [I, S] = i.useState(!1), A = (0, o.e7)([h.Z], () => !(null === h.Z || void 0 === h.Z ? void 0 : h.Z.hasLayers())), N = (0, o.e7)([m.default], () => m.default.getCurrentUser()), C = null != N ? E.default.age(N.id) : 0, {
+    giftBoxAnimation: R,
     trinketsAnimation: L
-  } = null != (t = null == n ? void 0 : n.chatGiftIcon) ? t : {}, x = null != n.firstTimeNotice && !s && A && C >= D, [k, j] = (0, f.XR)(x ? o.z.GIFTING_PROMOTION_DESKTOP_FIRST_TIME_COACHMARK : null, (0, d.t)(o.z.GIFTING_PROMOTION_DESKTOP_FIRST_TIME_COACHMARK)), M = null != k, U = I || M, G = (0, b.Ft)(g);
+  } = null != (t = null == n ? void 0 : n.chatGiftIcon) ? t : {}, x = null != n.firstTimeNotice && !s && A && C >= D, [M, k] = (0, f.XR)(x ? a.z.GIFTING_PROMOTION_DESKTOP_FIRST_TIME_COACHMARK : null, (0, d.t)(a.z.GIFTING_PROMOTION_DESKTOP_FIRST_TIME_COACHMARK)), j = null != M, U = I || j, G = (0, b.Ft)(g);
   if (s) return null;
   let B = () => {
       (0, _.Z)({
@@ -148,13 +148,13 @@ function L(e) {
       })
     },
     Z = () => {
-      S(!1), j(v.L.TAKE_ACTION), B()
+      S(!1), k(v.L.TAKE_ACTION), B()
     },
-    F = void 0 !== w ? (0, r.jsx)(R, {
-      config: w,
+    F = void 0 !== R ? (0, r.jsx)(P, {
+      config: R,
       hovered: U,
       onClick: Z
-    }) : void 0 !== L ? (0, r.jsx)(P, {
+    }) : void 0 !== L ? (0, r.jsx)(w, {
       config: L,
       hovered: U,
       onClick: Z
@@ -167,10 +167,10 @@ function L(e) {
     onMouseLeave: () => {
       S(!1)
     },
-    children: void 0 !== n.firstTimeNotice && M ? (0, r.jsx)(p.Z, {
+    children: void 0 !== n.firstTimeNotice && j ? (0, r.jsx)(p.Z, {
       onComplete: () => S(!1),
       onCheckItOutClick: B,
-      markAsDismissed: j,
+      markAsDismissed: k,
       config: n.firstTimeNotice,
       children: F
     }) : F

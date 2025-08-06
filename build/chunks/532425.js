@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var i = n(120356),
-  a = n.n(i),
-  o = n(1561),
+  o = n.n(i),
+  a = n(1561),
   s = n(922770),
   l = n(481060),
   c = n(388032),
@@ -20,8 +20,8 @@ let d = e => {
     isLoading: d,
     size: f = "sm"
   } = e;
-  return (0, r.jsx)(o.P, {
-    className: a()(i, u.iconLayout, {
+  return (0, r.jsx)(a.P, {
+    className: o()(i, u.iconLayout, {
       [u.pointer]: t
     }),
     "data-size": f,
@@ -37,17 +37,17 @@ let d = e => {
       className: u.iconContainer,
       children: d ? (0, r.jsx)(s.$, {
         type: s.$.Type.SPINNING_CIRCLE,
-        className: a()(u.icon, u.visible)
+        className: o()(u.icon, u.visible)
       }) : (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(l._Ve, {
           color: "currentColor",
-          className: a()(u.icon, {
+          className: o()(u.icon, {
             [u.visible]: !t
           }),
           "aria-label": c.intl.string(c.t["5h0QOD"])
         }), (0, r.jsx)(l.Dio, {
           color: "currentColor",
-          className: a()(u.clear, {
+          className: o()(u.clear, {
             [u.visible]: t
           }),
           "aria-label": c.intl.string(c.t.VkKicX)

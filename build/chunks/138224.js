@@ -1,12 +1,12 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  i: () => a
+  i: () => o
 });
 var r = n(365449),
   i = n(73800);
 
-function a(e) {
+function o(e) {
   let t = (0, i.useRef)(null);
   return (0, r.b)(() => {
     t.current = e

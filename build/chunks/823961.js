@@ -2,10 +2,10 @@
 "use strict";
 let r;
 n.d(t, {
-  Z: () => P
+  Z: () => w
 }), n(388685);
-var i, a = n(442837),
-  o = n(570140),
+var i, o = n(442837),
+  a = n(570140),
   s = n(959546),
   l = n(317951);
 
@@ -68,10 +68,10 @@ let u = new Map,
       triggerTime: Date.now()
     }
   },
-  w = e => {
+  R = e => {
     g = e.enabled
   };
-class R extends(i = a.ZP.Store) {
+class P extends(i = o.ZP.Store) {
   get lastConfetti() {
     return r
   }
@@ -103,8 +103,8 @@ class R extends(i = a.ZP.Store) {
     return m
   }
 }
-c(R, "displayName", "ConsumablesStore");
-let P = new R(o.Z, {
+c(P, "displayName", "ConsumablesStore");
+let w = new P(a.Z, {
   CONSUMABLES_PRICE_FETCH_STARTED: E,
   CONSUMABLES_PRICE_FETCH_SUCCEEDED: b,
   CONSUMABLES_PRICE_FETCH_FAILED: y,
@@ -116,5 +116,5 @@ let P = new R(o.Z, {
   SET_PREVIOUS_GO_LIVE_SETTINGS: A,
   CLEAR_CONSUMED_ENTITLEMENT: N,
   POTIONS_TRIGGER_MESSAGE_CONFETTI: C,
-  POTIONS_SET_CONFETTI_MODE: w
+  POTIONS_SET_CONFETTI_MODE: R
 })

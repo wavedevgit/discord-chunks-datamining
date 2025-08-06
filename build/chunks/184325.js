@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var i = n(120356),
-  a = n.n(i),
-  o = n(481060),
+  o = n.n(i),
+  a = n(481060),
   s = n(315263),
   l = n(100527),
   c = n(906732),
@@ -30,9 +30,9 @@ var i = n(120356),
   A = n(228168),
   N = n(981631),
   C = n(215023),
-  w = n(474936),
-  R = n(681642),
-  P = n(388032),
+  R = n(474936),
+  P = n(681642),
+  w = n(388032),
   D = n(286020);
 
 function L(e, t, n) {
@@ -57,7 +57,7 @@ function x(e) {
   return e
 }
 
-function k(e, t) {
+function M(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -68,12 +68,12 @@ function k(e, t) {
   return n
 }
 
-function j(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : k(Object(t)).forEach(function(n) {
+function k(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : M(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let M = e => {
+let j = e => {
   let {
     badge: t,
     tieredTenureBadge: n,
@@ -81,7 +81,7 @@ let M = e => {
   } = e;
   return t.id === m.l.ORB_PROFILE_BADGE ? (0, r.jsx)(g.Z, {
     showSubtext: !i && !t.isPreviewMode
-  }) : void 0 !== n && t.id !== R.a ? (0, r.jsx)(d.Z, {
+  }) : void 0 !== n && t.id !== P.a ? (0, r.jsx)(d.Z, {
     profileBadge: t,
     tenureBadge: n
   }) : t.description
@@ -95,23 +95,23 @@ function U(e) {
     badgeClassName: d,
     displayProfile: g,
     onClose: L,
-    shouldOpenBadgeTooltip: k,
+    shouldOpenBadgeTooltip: M,
     shouldGlowTenureBadge: U
   } = e, {
     analyticsLocations: G
   } = (0, c.ZP)(l.Z.BADGE), {
     context: B,
     trackUserProfileAction: Z
-  } = (0, v.KZ)(), F = E.default.getCurrentUser(), V = (0, y.yd)(null == F ? void 0 : F.premiumType, w.p9.TIER_2), H = (0, S.Of)(null != (t = null == F ? void 0 : F.id) ? t : null), Y = (0, T.Z)(H).some(e => e.id === m.l.ORB_PROFILE_BADGE);
+  } = (0, v.KZ)(), F = E.default.getCurrentUser(), V = (0, y.yd)(null == F ? void 0 : F.premiumType, R.p9.TIER_2), H = (0, S.Of)(null != (t = null == F ? void 0 : F.id) ? t : null), Y = (0, T.Z)(H).some(e => e.id === m.l.ORB_PROFILE_BADGE);
   return (0, r.jsx)("div", {
-    className: a()(D.container, i),
-    "aria-label": P.intl.string(P.t.VWV0y8),
+    className: o()(D.container, i),
+    "aria-label": w.intl.string(w.t.VWV0y8),
     role: "group",
     children: n.map((e, t) => {
       var n;
       let i = e.id === m.l.ORB_PROFILE_BADGE,
         c = (0, O.fv)(e.id),
-        E = null != c || e.id === R.a,
+        E = null != c || e.id === P.a,
         y = t => {
           if (Z({
               action: "PRESS_BADGE"
@@ -154,7 +154,7 @@ function U(e) {
           if (null != n) return null == L || L(), n(t)
         },
         v = () => {
-          e.id === T.i && b.default.track(N.rMx.QUEST_CONTENT_VIEWED, j(x({}, (0, _.mH)(p.jn.QUEST_BADGE)), {
+          e.id === T.i && b.default.track(N.rMx.QUEST_CONTENT_VIEWED, k(x({}, (0, _.mH)(p.jn.QUEST_BADGE)), {
             is_targeted: !1
           })), Z({
             action: "HOVER_BADGE"
@@ -163,17 +163,17 @@ function U(e) {
             analyticsLocations: G
           }, B))
         },
-        S = M({
+        S = j({
           badge: e,
-          tieredTenureBadge: E && e.id !== R.a ? c : void 0,
+          tieredTenureBadge: E && e.id !== P.a ? c : void 0,
           currentUserOwnsOrbBadge: Y
         });
-      return (0, r.jsx)(o.DY3, {
+      return (0, r.jsx)(a.DY3, {
         text: S,
         "aria-label": e.description,
-        forceOpen: null != k && k(e.id),
+        forceOpen: null != M && M(e.id),
         delay: A.vB,
-        children: (0, r.jsx)(o.eee, {
+        children: (0, r.jsx)(a.eee, {
           onClick: y,
           onMouseEnter: v,
           href: e.link,
@@ -184,7 +184,7 @@ function U(e) {
             alt: " ",
             "aria-hidden": !0,
             src: null != (n = e.iconSrc) ? n : (0, A.Ej)(e.icon),
-            className: a()(D.badge, d)
+            className: o()(D.badge, d)
           })
         })
       }, "".concat(e.id, "-").concat(t))

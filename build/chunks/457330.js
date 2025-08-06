@@ -5,8 +5,8 @@ n.d(t, {
 }), n(65234), n(111804), n(490233), n(97749), n(388685);
 var r = n(990547),
   i = n(544891),
-  a = n(570140),
-  o = n(275759),
+  o = n(570140),
+  a = n(275759),
   s = n(185669),
   l = n(710845),
   c = n(314897),
@@ -76,11 +76,11 @@ let y = {
     url: _.ANM.CONNECTIONS,
     oldFormErrors: !0,
     rejectWithError: !0
-  }).then(e => a.Z.dispatch({
+  }).then(e => o.Z.dispatch({
     type: "USER_CONNECTIONS_UPDATE",
     local: !0,
     accounts: e.body
-  }), () => a.Z.dispatch({
+  }), () => o.Z.dispatch({
     type: "USER_CONNECTIONS_UPDATE",
     local: !0,
     accounts: []
@@ -90,7 +90,7 @@ let y = {
     let {
       location: n,
       twoWayLinkType: r,
-      userCode: a,
+      userCode: o,
       twoWayLink: l,
       successRedirect: f,
       handle: p
@@ -101,7 +101,7 @@ let y = {
     });
     let h = _.ANM.CONNECTIONS_AUTHORIZE(e),
       m = new URLSearchParams;
-    null != a && m.append("two_way_user_code", a), null != f && m.append("success_redirect", f), null != r ? (m.append("two_way_link_type", r), m.append("two_way_link", "true")) : null != l && m.append("two_way_link", String(l)), null != p && m.append("handle", p);
+    null != o && m.append("two_way_user_code", o), null != f && m.append("success_redirect", f), null != r ? (m.append("two_way_link_type", r), m.append("two_way_link", "true")) : null != l && m.append("two_way_link", String(l)), null != p && m.append("handle", p);
     let {
       enabled: g
     } = s.g.getCurrentConfig({
@@ -121,19 +121,19 @@ let y = {
       }),
       {
         state: b
-      } = (0, o.xp)(null != (t = E.body.url) ? t : "");
+      } = (0, a.xp)(null != (t = E.body.url) ? t : "");
     return null == b || s.g.getCurrentConfig({
       location: "ConnectedAccountsActionCreators.authorize"
     }).enabled || u.Z.addPendingAuthorizedState(b), E
   },
   callback: b,
-  connect(e, t, n, i, a) {
-    var o;
+  connect(e, t, n, i, o) {
+    var a;
     return f.Z.put({
       url: _.ANM.CONNECTION(e, t),
       body: {
         name: n,
-        friend_sync: null != (o = null == a ? void 0 : a.friend_sync) ? o : _.BFP.has(e)
+        friend_sync: null != (a = null == o ? void 0 : o.friend_sync) ? a : _.BFP.has(e)
       },
       context: {
         location: i
@@ -190,7 +190,7 @@ let y = {
     rejectWithError: !1
   }),
   joinServer(e, t) {
-    a.Z.dispatch({
+    o.Z.dispatch({
       type: "USER_CONNECTIONS_INTEGRATION_JOINING",
       integrationId: e,
       joining: !0
@@ -199,11 +199,11 @@ let y = {
       oldFormErrors: !0,
       rejectWithError: !1
     }, n => {
-      a.Z.dispatch({
+      o.Z.dispatch({
         type: "USER_CONNECTIONS_INTEGRATION_JOINING",
         integrationId: e,
         joining: !1
-      }), n.ok || (a.Z.dispatch({
+      }), n.ok || (o.Z.dispatch({
         type: "USER_CONNECTIONS_INTEGRATION_JOINING_ERROR",
         integrationId: e,
         error: n.hasErr ? void 0 : n.body.message
@@ -221,14 +221,14 @@ let y = {
         oldFormErrors: !0,
         rejectWithError: !1
       });
-      return a.Z.dispatch({
+      return o.Z.dispatch({
         type: "USER_CONNECTION_UPDATE",
         platformType: e,
         id: t,
         accessToken: n
       }), n
     } catch (n) {
-      throw n.body.code === _.evJ.CONNECTION_REVOKED && a.Z.dispatch({
+      throw n.body.code === _.evJ.CONNECTION_REVOKED && o.Z.dispatch({
         type: "USER_CONNECTION_UPDATE",
         platformType: e,
         id: t,
@@ -245,28 +245,28 @@ let y = {
   async completeTwoWayLink(e, t, n, r, i) {
     if (null == t) return void E.error("Two-way link: missing authorize location");
     let {
-      code: a,
+      code: o,
       error: s,
       errorDescription: l
-    } = (0, o.xp)(t);
+    } = (0, a.xp)(t);
     return null != s ? void E.error("Two-way link: missing authorize code", {
       error: s,
       errorDescription: l
     }) : await b(e, {
       code: n,
       state: r,
-      two_way_link_code: a,
+      two_way_link_code: o,
       token_redirect_uri: i
     })
   },
-  sessionHandoff: function(e, t, n, r, a) {
+  sessionHandoff: function(e, t, n, r, o) {
     return i.tn.post({
       url: _.ANM.CONNECTIONS_SESSION_HANDOFF(e),
       body: {
         state: t,
         code: n,
         openid_params: r,
-        iss: a
+        iss: o
       },
       oldFormErrors: !0,
       rejectWithError: !1

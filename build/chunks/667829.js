@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685), n(539854), n(35282);
 var r = n(255367),
   i = n(73800),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(392711),
   l = n.n(s),
   c = n(218887),
@@ -29,9 +29,9 @@ var r = n(255367),
   A = n(140963),
   N = n(4484),
   C = n(925994),
-  w = n(981631),
-  R = n(388032),
-  P = n(302195);
+  R = n(981631),
+  P = n(388032),
+  w = n(302195);
 
 function D(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -66,28 +66,28 @@ function x(e, t) {
   return n
 }
 
-function k(e, t) {
+function M(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : x(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 new E.Z("ChannelEditor.tsx");
-let j = function() {
+let k = function() {
     for (var e = arguments.length, t = Array(e), n = 0; n < e; n++) t[n] = arguments[n]
   },
-  M = 1e3;
+  j = 1e3;
 class U extends i.Component {
   _getEditorWindow() {
     var e, t, n, r, i;
-    let a = null == (i = this.ref) || null == (r = i.current) || null == (n = r.getSlateEditor) || null == (t = n.call(r)) || null == (e = t.windowContext) ? void 0 : e.renderWindow;
-    if (null == this._cachedEditorWindow || this._cachedEditorWindow !== a) {
-      if (null != this._cachedEditorWindow && null == a) return null;
-      this._cachedEditorWindow = null != a ? a : window
+    let o = null == (i = this.ref) || null == (r = i.current) || null == (n = r.getSlateEditor) || null == (t = n.call(r)) || null == (e = t.windowContext) ? void 0 : e.renderWindow;
+    if (null == this._cachedEditorWindow || this._cachedEditorWindow !== o) {
+      if (null != this._cachedEditorWindow && null == o) return null;
+      this._cachedEditorWindow = null != o ? o : window
     }
     return this._cachedEditorWindow
   }
   componentDidMount() {
-    this.props.focused && requestAnimationFrame(() => this.focus()), document.addEventListener("selectionchange", this.handleSelectionChange), window.addEventListener("beforeunload", this.handleBeforeUnload), this._initTimeoutId = setTimeout(() => void this._getEditorWindow(), M)
+    this.props.focused && requestAnimationFrame(() => this.focus()), document.addEventListener("selectionchange", this.handleSelectionChange), window.addEventListener("beforeunload", this.handleBeforeUnload), this._initTimeoutId = setTimeout(() => void this._getEditorWindow(), j)
   }
   componentDidUpdate(e) {
     if (this.fixFocus(e), this.props.useSlate !== e.useSlate) {
@@ -204,10 +204,10 @@ class U extends i.Component {
       placeholder: t,
       isPreviewing: n
     } = this.props;
-    return e && !n ? R.intl.string(R.t.IYKTTU) : t
+    return e && !n ? P.intl.string(P.t.IYKTTU) : t
   }
   render() {
-    var e, t, n, i, a, s;
+    var e, t, n, i, o, s;
     let {
       textValue: l,
       richValue: c,
@@ -224,24 +224,24 @@ class U extends i.Component {
       canOnlyUseTextCommands: T,
       className: S,
       id: C,
-      required: R,
+      required: P,
       maxCharacterCount: D,
       allowNewLines: x,
-      "aria-describedby": j,
-      "aria-labelledby": M,
+      "aria-describedby": k,
+      "aria-labelledby": j,
       accessibilityLabel: U
     } = this.props, {
       submitting: G,
       popup: B
     } = this.state, Z = {
       channel: m,
-      className: o()(S, P.textArea, {
-        [P.textAreaSlate]: E,
-        [P.textAreaDisabled]: u || G
+      className: a()(S, w.textArea, {
+        [w.textAreaSlate]: E,
+        [w.textAreaDisabled]: u || G
       }),
       id: C,
       placeholder: this.getPlaceholder(),
-      required: R,
+      required: P,
       accessibilityLabel: U,
       disabled: u || !1,
       submitting: G,
@@ -259,42 +259,42 @@ class U extends i.Component {
       onResize: p,
       onKeyDown: _,
       onSubmit: h,
-      textAreaPaddingClassName: o()({
-        [P.textAreaForPostCreation]: g === v.Ie.CREATE_FORUM_POST,
-        [P.textAreaCustomGift]: g === v.Ie.CUSTOM_GIFT,
-        [P.textAreaForUserProfile]: g === v.Ie.USER_PROFILE,
-        [P.textAreaForOverlayInlineReply]: g === v.Ie.OVERLAY_INLINE_REPLY
+      textAreaPaddingClassName: a()({
+        [w.textAreaForPostCreation]: g === v.Ie.CREATE_FORUM_POST,
+        [w.textAreaCustomGift]: g === v.Ie.CUSTOM_GIFT,
+        [w.textAreaForUserProfile]: g === v.Ie.USER_PROFILE,
+        [w.textAreaForOverlayInlineReply]: g === v.Ie.OVERLAY_INLINE_REPLY
       }),
       spellcheckEnabled: b,
       useNewSlashCommands: O,
       disableAutoFocus: f.tq || null != (n = g.disableAutoFocus) && n,
       disableEnterToSubmit: null != (i = null == (e = g.submit) ? void 0 : e.disableEnterToSubmit) && i,
-      "aria-controls": null != (a = B.id) ? a : void 0,
+      "aria-controls": null != (o = B.id) ? o : void 0,
       "aria-haspopup": "listbox",
       "aria-expanded": null !== B.id || void 0,
       "aria-activedescendant": null != (s = B.activeDescendant) ? s : void 0,
       "aria-invalid": l.length > D,
-      "aria-describedby": j,
-      "aria-labelledby": M,
+      "aria-describedby": k,
+      "aria-labelledby": j,
       "aria-autocomplete": "list"
-    }, F = E ? (0, r.jsx)(N.Z, k(L({
+    }, F = E ? (0, r.jsx)(N.Z, M(L({
       ref: this.ref
     }, Z), {
       type: g,
       value: u ? (0, I.JM)("") : c,
       canUseCommands: null == (t = g.commands) ? void 0 : t.enabled,
       canOnlyUseTextCommands: T
-    })) : (0, r.jsx)(A.Z, k(L({
+    })) : (0, r.jsx)(A.Z, M(L({
       ref: this.ref
     }, Z), {
       value: u ? "" : l
     }));
     return (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(y.d9, {
-        event: w.CkL.INSERT_TEXT,
+        event: R.CkL.INSERT_TEXT,
         handler: this.handleInsertText
       }), (0, r.jsx)(y.d9, {
-        event: w.CkL.CLEAR_TEXT,
+        event: R.CkL.CLEAR_TEXT,
         handler: this.handleClearText
       }), F]
     })
@@ -372,8 +372,8 @@ class U extends i.Component {
       var t, n, r;
       let i = null == (n = e.target) || null == (t = n.ownerDocument) ? void 0 : t.defaultView,
         {
-          channel: a,
-          canPasteFiles: o,
+          channel: o,
+          canPasteFiles: a,
           uploadPromptCharacterCount: s,
           promptToUpload: l,
           maxCharacterCount: c,
@@ -381,9 +381,9 @@ class U extends i.Component {
         } = this.props,
         d = null != i ? (0, S.im)(i) : null,
         f = (0, S.Mo)(),
-        _ = null != (r = null != d ? d : f) ? r : a,
-        E = (0, S._K)(i, this._getEditorWindow()) ? a : _;
-      if (null == l || !E.isPrivate() && !o || E.isPrivate() && E.isManaged()) return !1;
+        _ = null != (r = null != d ? d : f) ? r : o,
+        E = (0, S._K)(i, this._getEditorWindow()) ? o : _;
+      if (null == l || !E.isPrivate() && !a || E.isPrivate() && E.isManaged()) return !1;
       let y = (e, t) => {
           var n, r;
           let i = g.Z.getActiveCommand(E.id);
@@ -392,17 +392,17 @@ class U extends i.Component {
             showLargeMessageDialog: t,
             origin: "clipboard"
           });
-          let a = null != (n = u.drafts.commandType) ? n : u.drafts.type,
-            o = null,
+          let o = null != (n = u.drafts.commandType) ? n : u.drafts.type,
+            a = null,
             s = g.Z.getActiveOption(E.id);
-          null != (o = (null == s ? void 0 : s.type) === h.jw.ATTACHMENT ? s : null == (r = i.options) ? void 0 : r.find(e => {
-            if (e.type === h.jw.ATTACHMENT) return null == b.Z.getUpload(E.id, e.name, a)
+          null != (a = (null == s ? void 0 : s.type) === h.jw.ATTACHMENT ? s : null == (r = i.options) ? void 0 : r.find(e => {
+            if (e.type === h.jw.ATTACHMENT) return null == b.Z.getUpload(E.id, e.name, o)
           })) && p.Z.setFile({
             channelId: E.id,
-            id: o.name,
-            draftType: a,
+            id: a.name,
+            draftType: o,
             file: {
-              id: o.name,
+              id: a.name,
               platform: m.ow.WEB,
               file: e[0]
             }
@@ -412,7 +412,7 @@ class U extends i.Component {
         {
           files: v
         } = G(e.clipboardData, u.uploadLongMessages ? O : null);
-      return j("onPaste", [...e.clipboardData.items].map(e => {
+      return k("onPaste", [...e.clipboardData.items].map(e => {
         if ("file" !== e.kind) return {
           kind: e.kind,
           type: e.type
@@ -445,21 +445,21 @@ function G(e, t) {
   let n = [],
     r = [],
     i = null,
-    a = null;
+    o = null;
   for (let t of e.items)
     if ("file" === t.kind) {
       let e = t.getAsFile();
       if (null == e) continue;
       null != e.path && e.path.length > 0 ? n.push(e) : r.push(e)
-    } else "string" === t.kind && ("text/plain" === t.type && null == i ? i = t : "text/html" === t.type && null == a && (a = t));
+    } else "string" === t.kind && ("text/plain" === t.type && null == i ? i = t : "text/html" === t.type && null == o && (o = t));
   if (n.length > 0) return {
     files: n
   };
   if (r.length > 0) {
-    if (1 === r.length && "image/png" === r[0].type && null != a) {
-      var o;
+    if (1 === r.length && "image/png" === r[0].type && null != o) {
+      var a;
       let t = r[0],
-        n = null != (o = B(e.getData(a.type))) ? o : t.name;
+        n = null != (a = B(e.getData(o.type))) ? a : t.name;
       return {
         files: [(0, O.dp)(t, n, t.type)]
       }

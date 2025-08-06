@@ -2,12 +2,12 @@
 "use strict";
 n.d(t, {
   Z: () => D,
-  u: () => R
+  u: () => P
 }), n(388685);
 var r = n(255367),
   i = n(73800),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(392711),
   l = n(66546),
   c = n(481060),
@@ -65,19 +65,19 @@ function N(e, t) {
   }), e
 }
 let C = O.Hz.CHAT,
-  w = [m.ZP.getByName("thumbsup"), m.ZP.getByName("eyes"), m.ZP.getByName("laughing"), m.ZP.getByName("watermelon"), m.ZP.getByName("fork_and_knife"), m.ZP.getByName("yum")].filter(b.lm);
+  R = [m.ZP.getByName("thumbsup"), m.ZP.getByName("eyes"), m.ZP.getByName("laughing"), m.ZP.getByName("watermelon"), m.ZP.getByName("fork_and_knife"), m.ZP.getByName("yum")].filter(b.lm);
 
-function R(e) {
+function P(e) {
   let {
     emoji: t,
     isDisabled: n = !1,
-    onClick: a,
+    onClick: o,
     className: s
   } = e, f = i.useRef(null), _ = (0, d.Z)(f);
   return (0, r.jsx)("span", {
     ref: f,
     children: (0, r.jsx)(c.P3F, {
-      onClick: a,
+      onClick: o,
       focusProps: {
         enabled: !n
       },
@@ -98,7 +98,7 @@ function R(e) {
               transform: i.to([0, 1], [1, 1.14]).to(e => "scale(".concat(e, ")"))
             },
             children: (0, r.jsx)(u.Z, {
-              className: o()(I.emoji, s, {
+              className: a()(I.emoji, s, {
                 [I.emojiItemDisabled]: n
               }),
               emojiId: t.id,
@@ -112,23 +112,23 @@ function R(e) {
   })
 }
 
-function P(e) {
+function w(e) {
   let {
     otherAccessories: t,
     isEmojiPickerExpanded: n,
     onSetExpanded: i,
-    onFocus: a
+    onFocus: o
   } = e;
   return (0, r.jsxs)(r.Fragment, {
     children: [t, (0, r.jsx)(c.P3F, {
       className: I.dropDownContainer,
       onClick: () => {
-        i(!n), a()
+        i(!n), o()
       },
       children: (0, r.jsx)(c.CJ0, {
         size: "md",
         color: "currentColor",
-        className: o()(I.dropDown, {
+        className: a()(I.dropDown, {
           [I.dropDownOpen]: n
         })
       })
@@ -140,7 +140,7 @@ function D(e) {
   let {
     channel: t,
     title: n,
-    closePopout: a,
+    closePopout: o,
     onFocus: l,
     onSelectEmoji: u,
     onSelectDisabledEmoji: d,
@@ -149,13 +149,13 @@ function D(e) {
     recentlyUsedEmojis: b,
     analyticsOverride: T,
     ref: A
-  } = e, D = (0, f.Dt)(), [L, x] = i.useState(!1), k = (0, _.wC)(t.guild_id), j = (0, s.uniqBy)([...k, ...w], "name").filter(e => !E.ZP.isEmojiFilteredOrLocked({
+  } = e, D = (0, f.Dt)(), [L, x] = i.useState(!1), M = (0, _.wC)(t.guild_id), k = (0, s.uniqBy)([...M, ...R], "name").filter(e => !E.ZP.isEmojiFilteredOrLocked({
     emoji: e,
     channel: t,
     intention: C
   })).slice(0, y.e5);
-  null != b && b.length > 0 && j.splice(j.length - 1, 1, b[0]);
-  let M = e => {
+  null != b && b.length > 0 && k.splice(k.length - 1, 1, b[0]);
+  let j = e => {
       x(e), null == p || p(e)
     },
     U = e => {
@@ -163,11 +163,11 @@ function D(e) {
         emoji: t,
         willClose: n
       } = e;
-      if (null == t && n) return void a();
-      null != t && u(t), M(!n), n && g.kJ.setSearchPlaceholder(null)
+      if (null == t && n) return void o();
+      null != t && u(t), j(!n), n && g.kJ.setSearchPlaceholder(null)
     },
     G = e => {
-      null != e && e.key !== v.vn.TAB && (e.key !== v.vn.ENTER || e.shiftKey ? M(!0) : M(!L))
+      null != e && e.key !== v.vn.TAB && (e.key !== v.vn.ENTER || e.shiftKey ? j(!0) : j(!L))
     };
   return (0, r.jsxs)(c.VqE, {
     "aria-labelledby": D,
@@ -185,22 +185,22 @@ function D(e) {
       children: [(0, r.jsx)(h.Z, {
         analyticsOverride: T,
         channel: t,
-        className: o()(I.animatedPicker, {
+        className: a()(I.animatedPicker, {
           [I.animatedPickerTall]: L
         }),
-        headerClassName: o()(I.emojiPickerHeader, {
+        headerClassName: a()(I.emojiPickerHeader, {
           [I.emojiPickerHeaderExpanded]: L
         }),
-        closePopout: a,
+        closePopout: o,
         onSelectEmoji: L ? U : () => {},
         shouldHidePickerActions: !L,
         wrapper: "div",
         pickerIntention: C,
         searchProps: N(S({}, m), {
-          accessory: (0, r.jsx)(P, {
+          accessory: (0, r.jsx)(w, {
             otherAccessories: null == m ? void 0 : m.accessory,
             isEmojiPickerExpanded: L,
-            onSetExpanded: M,
+            onSetExpanded: j,
             onFocus: l
           }),
           onKeyDown: G
@@ -208,8 +208,8 @@ function D(e) {
       }), (0, r.jsx)("div", {
         className: I.slotsContainer,
         children: (0, r.jsx)("div", {
-          className: o()(I.slots, I.slotsWide),
-          children: j.map(e => {
+          className: a()(I.slots, I.slotsWide),
+          children: k.map(e => {
             let n = E.ZP.isEmojiDisabled({
               emoji: e,
               channel: t,
@@ -223,7 +223,7 @@ function D(e) {
                 "aria-label": e.name,
                 tooltipClassName: I.tooltipContainer,
                 color: c.ua7.Colors.BRAND,
-                children: (0, r.jsx)(R, {
+                children: (0, r.jsx)(P, {
                   emoji: e,
                   isDisabled: n,
                   onClick: () => {

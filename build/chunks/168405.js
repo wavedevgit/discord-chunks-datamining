@@ -6,15 +6,15 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var i = n(481060),
-  a = n(665906),
-  o = n(50284),
+  o = n(665906),
+  a = n(50284),
   s = n(388032);
 
 function l(e, t) {
-  return (0, a.$R)(t) ? (0, r.jsx)(i.sNh, {
+  return (0, o.$R)(t) ? (0, r.jsx)(i.sNh, {
     id: "mark-unread",
     label: s.intl.string(s.t.RpE9k5),
-    action: () => (0, o.Z)(t.id, e.id),
+    action: () => (0, a.Z)(t.id, e.id),
     icon: i.z7b
   }) : null
 }

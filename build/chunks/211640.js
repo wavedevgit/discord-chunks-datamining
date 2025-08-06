@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(255367),
   i = n(442837),
-  a = n(755721),
-  o = n(481060),
+  o = n(755721),
+  a = n(481060),
   s = n(257559),
   l = n(946273),
   c = n(592125),
@@ -40,9 +40,9 @@ function h(e) {
     S = "delete-message-".concat(t.id);
   return (0, r.jsx)(f.Z, {
     text: I,
-    icon: o.XHJ,
+    icon: a.XHJ,
     onClick: v,
     disabled: T,
-    color: a.zx.Colors.RED
+    color: o.zx.Colors.RED
   }, S)
 }

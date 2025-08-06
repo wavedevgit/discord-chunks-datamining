@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(255367),
   i = n(73800),
-  a = n(442837),
-  o = n(755721),
+  o = n(442837),
+  a = n(755721),
   s = n(481060),
   l = n(873115),
   c = n(219929),
@@ -35,7 +35,7 @@ class p extends i.PureComponent {
         children: [(0, r.jsx)(c.ZP, {
           type: c.ZP.Types.PAYPAL,
           className: _.paypalIcon
-        }), (0, r.jsx)(o.Is, {
+        }), (0, r.jsx)(a.Is, {
           value: e,
           editable: !1,
           readOnly: !0,
@@ -46,7 +46,7 @@ class p extends i.PureComponent {
     })
   }
 }
-let h = a.ZP.connectStores([u.Z, d.Z], () => ({
+let h = o.ZP.connectStores([u.Z, d.Z], () => ({
   braintreeEmail: d.Z.braintreeEmail,
   paypalClient: u.Z.getPayPalClient()
 }))(p)

@@ -1,10 +1,10 @@
 /** Chunk was on web.js **/
 "use strict";
-let r, i, a;
+let r, i, o;
 n.d(t, {
   Z: () => T
 }), n(388685);
-var o, s = n(392711),
+var a, s = n(392711),
   l = n.n(s),
   c = n(442837),
   u = n(570140),
@@ -55,7 +55,7 @@ function b(e) {
     status: t,
     customHangStatus: i,
     expiresAt: Date.now() + h
-  }), a = {
+  }), o = {
     type: d.IIU.HANG_STATUS,
     name: "Hang Status",
     state: r
@@ -66,18 +66,18 @@ function y(e) {
   let {
     status: t,
     emoji: n,
-    saveAsDefault: o
+    saveAsDefault: a
   } = e;
   r = d.tNA.CUSTOM, i = {
     status: t,
     emoji: n
   };
   let s = [...m.recentCustomStatuses],
-    c = s.findIndex(e => e.status === t && l().isEqual(e.emoji, n)); - 1 !== c ? s.splice(c, 1) : s.length === p && s.splice(p - 1, 1), m.recentCustomStatuses = [i, ...s], o && (m.currentDefaultStatus = {
+    c = s.findIndex(e => e.status === t && l().isEqual(e.emoji, n)); - 1 !== c ? s.splice(c, 1) : s.length === p && s.splice(p - 1, 1), m.recentCustomStatuses = [i, ...s], a && (m.currentDefaultStatus = {
     status: r,
     customHangStatus: i,
     expiresAt: Date.now() + h
-  }), a = {
+  }), o = {
     type: d.IIU.HANG_STATUS,
     name: "Hang Status",
     state: r,
@@ -94,7 +94,7 @@ function O(e) {
     status: null,
     customHangStatus: null,
     expiresAt: Date.now() + h
-  }), a = null
+  }), o = null
 }
 
 function v(e) {
@@ -104,11 +104,11 @@ function v(e) {
   t.forEach(e => {
     let {
       status: t,
-      emoji: o
-    } = e, s = n.findIndex(e => e.status === t && l().isEqual(e.emoji, o)); - 1 !== s && n.splice(s, 1), t === (null == i ? void 0 : i.status) && l().isEqual(o, null == i ? void 0 : i.emoji) && (r = null, i = null, m.currentDefaultStatus = null, a = null)
+      emoji: a
+    } = e, s = n.findIndex(e => e.status === t && l().isEqual(e.emoji, a)); - 1 !== s && n.splice(s, 1), t === (null == i ? void 0 : i.status) && l().isEqual(a, null == i ? void 0 : i.emoji) && (r = null, i = null, m.currentDefaultStatus = null, o = null)
   }), m.recentCustomStatuses = n
 }
-class I extends(o = c.ZP.PersistedStore) {
+class I extends(a = c.ZP.PersistedStore) {
   initialize(e) {
     m = _({}, g(), null != e ? e : {})
   }
@@ -128,7 +128,7 @@ class I extends(o = c.ZP.PersistedStore) {
     return m.currentDefaultStatus
   }
   getHangStatusActivity() {
-    return null == r ? null : a
+    return null == r ? null : o
   }
 }
 f(I, "displayName", "HangStatusStore"), f(I, "persistKey", "HangStatusStore");

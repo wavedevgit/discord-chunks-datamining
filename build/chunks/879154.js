@@ -5,13 +5,13 @@ function r(e, t) {
   e.prototype = Object.create(t.prototype), e.prototype.constructor = e, e.__proto__ = t
 }
 var i = n(359282),
-  a = n(720379),
-  o = n(65183),
-  s = o.List,
-  l = o.Map,
-  c = o.OrderedSet,
-  u = o.Record,
-  d = o.Repeat,
+  o = n(720379),
+  a = n(65183),
+  s = a.List,
+  l = a.Map,
+  c = a.OrderedSet,
+  u = a.Record,
+  d = a.Repeat,
   f = c(),
   _ = u({
     key: "",
@@ -62,8 +62,8 @@ e.exports = function(e) {
     var t = this.getCharacterList().get(e);
     return t ? t.getEntity() : null
   }, n.findStyleRanges = function(e, t) {
-    a(this.getCharacterList(), h, e, t)
+    o(this.getCharacterList(), h, e, t)
   }, n.findEntityRanges = function(e, t) {
-    a(this.getCharacterList(), m, e, t)
+    o(this.getCharacterList(), m, e, t)
   }, t
 }(_)

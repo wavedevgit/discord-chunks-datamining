@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var i = n(442837),
-  a = n(235874),
-  o = n(481060),
+  o = n(235874),
+  a = n(481060),
   s = n(944613),
   l = n(607070),
   c = n(345162),
@@ -66,7 +66,7 @@ function E(e) {
   } = e, y = (0, i.e7)([l.Z], () => l.Z.roleStyle);
   if (!(0, i.e7)([u.Z], () => u.Z.can(d.Plq.MANAGE_ROLES, t))) return null;
   let O = e => !(0, c.fI)(e) && !e.managed && u.Z.isRoleHigher(t, m, e) && -1 === n.roles.indexOf(e.id);
-  return (0, r.jsx)(a.y, {
+  return (0, r.jsx)(o.y, {
     targetElementRef: b,
     position: "bottom",
     align: "center",
@@ -82,20 +82,20 @@ function E(e) {
         onClose: n
       })
     },
-    children: e => (0, r.jsx)(o.DY3, {
+    children: e => (0, r.jsx)(a.DY3, {
       text: f.intl.string(f.t.icyMgY),
       "aria-label": !1,
       shouldShow: p > 0,
-      children: (0, r.jsxs)(o.P3F, g(h({
+      children: (0, r.jsxs)(a.P3F, g(h({
         innerRef: b,
         className: _.button,
         role: "button",
         "aria-label": f.intl.string(f.t.icyMgY)
       }, e), {
-        children: [(0, r.jsx)(o.qJs, {
+        children: [(0, r.jsx)(a.qJs, {
           size: "xs",
           color: "currentColor"
-        }), 0 === p && (0, r.jsx)(o.Text, {
+        }), 0 === p && (0, r.jsx)(a.Text, {
           variant: "text-xs/normal",
           color: "none",
           children: f.intl.string(f.t.icyMgY)

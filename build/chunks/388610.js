@@ -1,6 +1,6 @@
 /** Chunk was on web.js **/
 "use strict";
-let r, i, a, o, s, l;
+let r, i, o, a, s, l;
 n.d(t, {
   Z: () => ee
 }), n(997841), n(388685);
@@ -58,53 +58,53 @@ function A(e, t) {
 }
 let N = v.QZA.CLOSED,
   C = {},
-  w = {},
-  R = !1,
+  R = {},
   P = !1,
+  w = !1,
   D = null,
   L = ["name", "type", "topic_", "bitrate_", "userLimit_", "nsfw_", "flags_", "rateLimitPerUser_", "defaultThreadRateLimitPerUser", "defaultAutoArchiveDuration", "template", "defaultReactionEmoji", "rtcRegion", "videoQualityMode", "threadMetadata", "banner", "availableTags", "defaultSortOrder", "defaultForumLayout", "defaultTagSetting", "iconEmoji", "themeColor"];
 
 function x(e) {
-  if (null == a || a.id !== e) return !1;
-  if (a === o) {
+  if (null == o || o.id !== e) return !1;
+  if (o === a) {
     let t = O.Z.getChannel(e);
     if (null == t) return !1;
-    o = a = t, s = O.Z.getChannel(o.parent_id)
+    a = o = t, s = O.Z.getChannel(a.parent_id)
   } else {
     let t = O.Z.getChannel(e);
     if (null == t) return !1;
-    a = t, null != o && (o = o.set("permissionOverwrites", a.permissionOverwrites), s = O.Z.getChannel(o.parent_id))
+    o = t, null != a && (a = a.set("permissionOverwrites", o.permissionOverwrites), s = O.Z.getChannel(a.parent_id))
   }
   return !0
 }
 
-function k(e) {
+function M(e) {
   let t = O.Z.getChannel(e.channelId);
-  if (null == t) return M();
-  N = v.QZA.OPEN, o = a = t, D = "location" in e && null != e.location ? e.location : null, i = "subsection" in e ? e.subsection : null, null != o && (o = o.set("nsfw", o.isNSFW())), s = O.Z.getChannel(o.parent_id), l = o.getGuildId();
-  let n = o.isModeratorReportChannel() ? v.CoT.PERMISSIONS : v.CoT.OVERVIEW;
-  return C = {}, j({
+  if (null == t) return j();
+  N = v.QZA.OPEN, a = o = t, D = "location" in e && null != e.location ? e.location : null, i = "subsection" in e ? e.subsection : null, null != a && (a = a.set("nsfw", a.isNSFW())), s = O.Z.getChannel(a.parent_id), l = a.getGuildId();
+  let n = a.isModeratorReportChannel() ? v.CoT.PERMISSIONS : v.CoT.OVERVIEW;
+  return C = {}, k({
     type: "CHANNEL_SETTINGS_SET_SECTION",
     section: null != r ? r : n,
     subsection: i
   }), !0
 }
 
-function j(e) {
-  r = e.section, i = e.subsection, null != o && r === v.CoT.INSTANT_INVITES && (R = !0, h.tn.get({
-    url: v.ANM.INSTANT_INVITES(o.id),
+function k(e) {
+  r = e.section, i = e.subsection, null != a && r === v.CoT.INSTANT_INVITES && (P = !0, h.tn.get({
+    url: v.ANM.INSTANT_INVITES(a.id),
     oldFormErrors: !0,
     rejectWithError: !0
   }).then(e => {
-    R = !1, m.Z.dispatch({
+    P = !1, m.Z.dispatch({
       type: "CHANNEL_SETTINGS_LOADED_INVITES",
       invites: e.body
     })
-  }, () => R = !1))
+  }, () => P = !1))
 }
 
-function M() {
-  P = !1, N = v.QZA.CLOSED, r = null, o = a = null, s = null, w = {}
+function j() {
+  w = !1, N = v.QZA.CLOSED, r = null, a = o = null, s = null, R = {}
 }
 
 function U() {
@@ -112,7 +112,7 @@ function U() {
 }
 
 function G() {
-  a = o, N = v.QZA.OPEN
+  o = a, N = v.QZA.OPEN
 }
 
 function B(e) {
@@ -123,10 +123,10 @@ function B(e) {
   }, {})
 }
 let Z = d().debounce(() => {
-  if (null == o || null == a) return !1;
-  let e = o.toJS(),
-    t = a.toJS();
-  L.every(n => e[n] === t[n]) && o !== a && (o = a, J.emitChange())
+  if (null == a || null == o) return !1;
+  let e = a.toJS(),
+    t = o.toJS();
+  L.every(n => e[n] === t[n]) && a !== o && (a = o, $.emitChange())
 }, 500);
 
 function F(e) {
@@ -135,7 +135,7 @@ function F(e) {
     channelType: n,
     topic: r,
     bitrate: i,
-    userLimit: a,
+    userLimit: o,
     nsfw: s,
     flags: l,
     rateLimitPerUser: c,
@@ -155,14 +155,14 @@ function F(e) {
     iconEmoji: I,
     themeColor: S
   } = e;
-  if (null == o) return !1;
-  null != t && (o = o.set("name", t)), null != r && (o = o.set("topic", r)), null != i && (o = o.set("bitrate", i)), null != a && (o = o.set("userLimit", a)), null != s && (o = o.set("nsfw", s)), null != l && (o = o.set("flags", l)), null != c && (o = o.set("rateLimitPerUser", c)), null != u && (o = o.set("defaultThreadRateLimitPerUser", u)), null != d && (o = o.set("threadMetadata", A(T({}, o.threadMetadata), {
+  if (null == a) return !1;
+  null != t && (a = a.set("name", t)), null != r && (a = a.set("topic", r)), null != i && (a = a.set("bitrate", i)), null != o && (a = a.set("userLimit", o)), null != s && (a = a.set("nsfw", s)), null != l && (a = a.set("flags", l)), null != c && (a = a.set("rateLimitPerUser", c)), null != u && (a = a.set("defaultThreadRateLimitPerUser", u)), null != d && (a = a.set("threadMetadata", A(T({}, a.threadMetadata), {
     autoArchiveDuration: d
-  }))), null != f && (o = o.set("threadMetadata", A(T({}, o.threadMetadata), {
+  }))), null != f && (a = a.set("threadMetadata", A(T({}, a.threadMetadata), {
     locked: f
-  }))), null != _ && (o = o.set("threadMetadata", A(T({}, o.threadMetadata), {
+  }))), null != _ && (a = a.set("threadMetadata", A(T({}, a.threadMetadata), {
     invitable: _
-  }))), null != p && (o = o.set("defaultAutoArchiveDuration", p)), null != h && (o = o.set("template", h)), null != n && (o = o.set("type", n)), void 0 !== g && (o = o.set("rtcRegion", g)), null != E && (o = o.set("videoQualityMode", E)), void 0 !== m && (o = o.set("defaultReactionEmoji", m)), null != b && (o = o.set("availableTags", b)), null != y && (o = o.set("defaultSortOrder", y)), null != v && (o = o.set("defaultTagSetting", v)), null != O && (o = o.set("defaultForumLayout", O)), void 0 !== I && (o = o.set("iconEmoji", I)), null != S && (o = o.set("themeColor", S)), Z()
+  }))), null != p && (a = a.set("defaultAutoArchiveDuration", p)), null != h && (a = a.set("template", h)), null != n && (a = a.set("type", n)), void 0 !== g && (a = a.set("rtcRegion", g)), null != E && (a = a.set("videoQualityMode", E)), void 0 !== m && (a = a.set("defaultReactionEmoji", m)), null != b && (a = a.set("availableTags", b)), null != y && (a = a.set("defaultSortOrder", y)), null != v && (a = a.set("defaultTagSetting", v)), null != O && (a = a.set("defaultForumLayout", O)), void 0 !== I && (a = a.set("iconEmoji", I)), null != S && (a = a.set("themeColor", S)), Z()
 }
 
 function V(e) {
@@ -182,30 +182,30 @@ function V(e) {
 }
 
 function H(e) {
-  w = {}, e.invites.forEach(e => {
-    w[e.code] = V(e)
+  R = {}, e.invites.forEach(e => {
+    R[e.code] = V(e)
   })
 }
 
 function Y(e) {
-  w = T({}, w), delete w[e.code]
+  R = T({}, R), delete R[e.code]
 }
 
 function W(e) {
-  w = A(T({}, w), {
+  R = A(T({}, R), {
     [e.invite.code]: V(e.invite)
   })
 }
 
 function K(e) {
-  return !!x(e) && null != o && (null != l && null == o.permissionOverwrites[l] && (l = o.getGuildId()), !0)
+  return !!x(e) && null != a && (null != l && null == a.permissionOverwrites[l] && (l = a.getGuildId()), !0)
 }
 
 function z(e) {
   let {
     channels: t
   } = e;
-  if (null == o) return !1;
+  if (null == a) return !1;
   let n = !1;
   for (let e of t) n = K(e.id) || n;
   return n
@@ -218,46 +218,46 @@ function q(e) {
   return K(t)
 }
 
-function $(e) {
+function X(e) {
   let {
     channel: {
       id: t
     }
   } = e;
-  if (null == o || o.id !== t) return !1;
+  if (null == a || a.id !== t) return !1;
   N = v.QZA.CLOSED
 }
 
-function X(e) {
+function Q(e) {
   let {
     overwriteId: t
   } = e;
   l = t
 }
-class Q extends(c = p.ZP.Store) {
+class J extends(c = p.ZP.Store) {
   initialize() {
     this.waitFor(O.Z)
   }
   hasChanges() {
-    return o !== a
+    return a !== o
   }
   isOpen() {
-    return P
+    return w
   }
   getSection() {
     return r
   }
   getInvites() {
     return {
-      invites: w,
-      loading: R
+      invites: R,
+      loading: P
     }
   }
   showNotice() {
     return this.hasChanges()
   }
   getChannel() {
-    return o
+    return a
   }
   getFormState() {
     return N
@@ -269,32 +269,32 @@ class Q extends(c = p.ZP.Store) {
     return {
       submitting: N === v.QZA.SUBMITTING,
       errors: C,
-      channel: o,
+      channel: a,
       section: r,
       subsection: i,
-      invites: w,
+      invites: R,
       selectedOverwriteId: l,
       hasChanges: this.hasChanges(),
       analyticsLocation: D
     }
   }
 }
-I(Q, "displayName", "ChannelSettingsStore");
-let J = new Q(m.Z, {
-    CHANNEL_SETTINGS_INIT: k,
+I(J, "displayName", "ChannelSettingsStore");
+let $ = new J(m.Z, {
+    CHANNEL_SETTINGS_INIT: M,
     CHANNEL_SETTINGS_SUBMIT: U,
     CHANNEL_SETTINGS_SUBMIT_SUCCESS: G,
     CHANNEL_SETTINGS_SUBMIT_FAILURE: B,
-    CHANNEL_SETTINGS_CLOSE: M,
+    CHANNEL_SETTINGS_CLOSE: j,
     CHANNEL_PERMISSIONS_PUT_OVERWRITE_SUCCESS: q,
     CHANNEL_PERMISSIONS_DELETE_OVERWRITE_SUCCESS: q,
-    CHANNEL_SETTINGS_OVERWRITE_SELECT: X,
+    CHANNEL_SETTINGS_OVERWRITE_SELECT: Q,
     CHANNEL_SETTINGS_UPDATE: F,
-    CHANNEL_SETTINGS_SET_SECTION: j,
+    CHANNEL_SETTINGS_SET_SECTION: k,
     CHANNEL_SETTINGS_LOADED_INVITES: H,
     CHANNEL_UPDATES: z,
-    CHANNEL_DELETE: $,
+    CHANNEL_DELETE: X,
     INSTANT_INVITE_REVOKE_SUCCESS: Y,
     INSTANT_INVITE_CREATE_SUCCESS: W
   }),
-  ee = J
+  ee = $

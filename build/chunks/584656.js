@@ -1,20 +1,20 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  t: () => o
+  t: () => a
 });
 var r = n(255367);
 n(73800);
 var i = n(481060),
-  a = n(820644);
+  o = n(820644);
 
-function o(e) {
+function a(e) {
   let {
     text: t,
     id: n
   } = e;
   (0, i.showToast)((0, i.createToast)(t, i.ToastType.CUSTOM, {
-    component: (0, r.jsx)(a.o, {
+    component: (0, r.jsx)(o.o, {
       text: t
     }, n)
   }))

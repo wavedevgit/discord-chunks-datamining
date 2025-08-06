@@ -5,9 +5,9 @@ n.d(t, {
   ZP: () => O
 });
 var r, i = n(442837),
-  a = n(570140);
+  o = n(570140);
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -23,7 +23,7 @@ function s(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      o(e, t, n[t])
+      a(e, t, n[t])
     })
   }
   return e
@@ -83,19 +83,19 @@ function g(e) {
     location: n,
     channelId: r,
     withCommands: i
-  } = e, a = h({
+  } = e, o = h({
     location: n,
     channelId: r,
     withCommands: i
   });
   f = c(s({}, f), {
-    [a]: t
+    [o]: t
   }), _ = c(s({}, _), {
-    [a]: 1
+    [o]: 1
   });
-  let o = Date.now();
+  let a = Date.now();
   p = c(s({}, p), {
-    [a]: o
+    [o]: a
   })
 }
 
@@ -153,8 +153,8 @@ class y extends(r = i.ZP.Store) {
     })]) ? t : b
   }
 }
-o(y, "displayName", void 0);
-let O = new y(a.Z, {
+a(y, "displayName", void 0);
+let O = new y(o.Z, {
   APP_RECOMMENDATIONS_FETCH_RECOMMENDATIONS: m,
   APP_RECOMMENDATIONS_FETCH_RECOMMENDATIONS_SUCCESS: g,
   APP_RECOMMENDATIONS_FETCH_RECOMMENDATIONS_FAILURE: E

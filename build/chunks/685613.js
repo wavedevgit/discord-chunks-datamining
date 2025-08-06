@@ -8,8 +8,8 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var i = n(120356),
-  a = n.n(i),
-  o = n(692547),
+  o = n.n(i),
+  a = n(692547),
   s = n(780384),
   l = n(481060),
   c = n(113434),
@@ -45,7 +45,7 @@ let g = function(e) {
     onLoadComplete: y
   } = e, O = (0, s.wj)(g) ? f.BRd.DARK : f.BRd.LIGHT, v = (0, c.Gd)(p.id, O), I = E && null != p.config.cosponsorMetadata && null != v;
   return (0, r.jsxs)("div", {
-    className: a()(_.partnerBranding, t),
+    className: o()(_.partnerBranding, t),
     children: [b && (0, r.jsx)(d.Fl, {
       id: "QuestPartnerBranding_gameTile",
       children: e => (0, r.jsx)("img", {
@@ -64,7 +64,7 @@ let g = function(e) {
       id: "QuestPartnerBranding_gameLogotype",
       children: e => (0, r.jsx)("img", {
         ref: e,
-        className: a()(_.partnerBrandingLogotype, n, {
+        className: o()(_.partnerBrandingLogotype, n, {
           [_.partnerBrandingLogotypeWithCosponsor]: I
         }),
         alt: p.config.messages.gameTitle,
@@ -79,7 +79,7 @@ let g = function(e) {
         },
         children: (0, r.jsx)(l.P$X, {
           className: _.cosponsorBrandSeparator,
-          color: o.Z.colors.WHITE
+          color: a.Z.colors.WHITE
         })
       }), (0, r.jsx)(d.Fl, {
         id: "QuestPartnerBranding_cosponsorLogotype",
@@ -87,7 +87,7 @@ let g = function(e) {
           var t, i;
           return (0, r.jsx)("img", {
             ref: e,
-            className: a()(_.partnerBrandingLogotype, _.partnerBrandingLogotypeWithCosponsor, n),
+            className: o()(_.partnerBrandingLogotype, _.partnerBrandingLogotypeWithCosponsor, n),
             alt: null != (i = null == (t = p.config.cosponsorMetadata) ? void 0 : t.name) ? i : "",
             src: v.url,
             onLoad: y

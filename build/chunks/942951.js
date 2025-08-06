@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(255367),
   i = n(73800),
-  a = n(481060),
-  o = n(100527),
+  o = n(481060),
+  a = n(100527),
   s = n(906732),
   l = n(7284),
   c = n(402235),
@@ -57,8 +57,8 @@ function g(e, t) {
   if (null == e) return {};
   var n, r, i = E(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -66,8 +66,8 @@ function g(e, t) {
 function E(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 
@@ -88,18 +88,18 @@ function y(e) {
     ariaLabel: h
   } = e, E = i.useRef(null), {
     analyticsLocations: y
-  } = (0, s.ZP)(o.Z.USERNAME), O = (0, c.ZP)(d, null == t ? void 0 : t.id), v = (0, l.j)({
+  } = (0, s.ZP)(a.Z.USERNAME), O = (0, c.ZP)(d, null == t ? void 0 : t.id), v = (0, l.j)({
     displayNameStyles: null == t ? void 0 : t.displayNameStyles
   }), I = b(t, n);
-  return i.useCallback(e => (i, o) => {
+  return i.useCallback(e => (i, a) => {
     let l = null == e ? void 0 : e.colorStrings,
       c = O && null != l && null != l.primaryColor && null != l.secondaryColor,
       b = t => {
         var n;
-        return (0, r.jsx)(a.rz2, m(p({}, null != t ? t : {}), {
+        return (0, r.jsx)(o.rz2, m(p({}, null != t ? t : {}), {
           ref: E,
           onContextMenu: I,
-          name: (0, a.qgQ)(i),
+          name: (0, o.qgQ)(i),
           colorString: null != (n = null == e ? void 0 : e.colorString) ? n : null,
           roleName: null == e ? void 0 : e.colorRoleName,
           colorStrings: c ? l : null,
@@ -129,6 +129,6 @@ function y(e) {
           }, n))
         }
       }) : b(void 0)
-    }, o)
+    }, a)
   }, [y, t, n, d, f, I, _, h, O, v])
 }

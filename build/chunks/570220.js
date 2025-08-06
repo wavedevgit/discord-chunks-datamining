@@ -1,11 +1,11 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  f6: () => o
+  f6: () => a
 }), n(415506);
 var r = n(73800),
   i = n(836560);
-class a extends i.EventEmitter {
+class o extends i.EventEmitter {
   on() {
     return this
   }
@@ -23,5 +23,5 @@ class a extends i.EventEmitter {
   }
 }
 let {
-  Provider: o
-} = r.createContext(new a)
+  Provider: a
+} = r.createContext(new o)

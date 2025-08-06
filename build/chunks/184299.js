@@ -8,8 +8,8 @@ n.d(t, {
 });
 var r = n(296574),
   i = n(362383),
-  a = n(731965),
-  o = n(433517);
+  o = n(731965),
+  a = n(433517);
 
 function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -54,8 +54,8 @@ function d(e, t) {
   if (null == e) return {};
   var n, r, i = f(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -63,8 +63,8 @@ function d(e, t) {
 function f(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 
@@ -103,19 +103,19 @@ let b = (0, i.F)()((0, r.tJ)((e, t) => ({
     videoProgress: {},
     transcript: null,
     setVolume: t => {
-      (0, a.j)(() => e({
+      (0, o.j)(() => e({
         volume: t
       }))
     },
     setMuted: t => {
-      (0, a.j)(() => e({
+      (0, o.j)(() => e({
         muted: t
       }))
     },
     setVideoProgress: (n, r, i) => {
-      var o, s;
-      let c = Math.max(null != (s = null == (o = t().videoProgress[n]) ? void 0 : o.maxTimestampSec) ? s : 0, Math.floor(r));
-      (0, a.j)(() => e({
+      var a, s;
+      let c = Math.max(null != (s = null == (a = t().videoProgress[n]) ? void 0 : a.maxTimestampSec) ? s : 0, Math.floor(r));
+      (0, o.j)(() => e({
         videoProgress: u(l({}, t().videoProgress), {
           [n]: {
             timestampSec: r,
@@ -126,17 +126,17 @@ let b = (0, i.F)()((0, r.tJ)((e, t) => ({
       }))
     },
     setTranscriptEnabled: t => {
-      (0, a.j)(() => e({
+      (0, o.j)(() => e({
         transcriptEnabled: t
       }))
     },
     setCaptionEnabled: t => {
-      (0, a.j)(() => e({
+      (0, o.j)(() => e({
         captionEnabled: t
       }))
     },
     setFullScreenEnabled: t => {
-      (0, a.j)(() => e({
+      (0, o.j)(() => e({
         fullScreenEnabled: t
       }))
     },
@@ -146,7 +146,7 @@ let b = (0, i.F)()((0, r.tJ)((e, t) => ({
       return null == n ? "UNKNOWN" : 0 === n.timestampSec ? "NOT_STARTED" : n.timestampSec >= n.duration ? "COMPLETED" : "IN_PROGRESS"
     },
     resetQuest: n => {
-      (0, a.j)(() => {
+      (0, o.j)(() => {
         let r = t().videoProgress,
           {
             [n]: i
@@ -157,7 +157,7 @@ let b = (0, i.F)()((0, r.tJ)((e, t) => ({
       })
     },
     setTranscriptAsset: t => {
-      (0, a.j)(() => {
+      (0, o.j)(() => {
         e({
           transcript: t
         })
@@ -168,10 +168,10 @@ let b = (0, i.F)()((0, r.tJ)((e, t) => ({
     storage: (0, r.FL)(() => ({
       getItem: e => {
         var t;
-        return null != (t = o.K.get(e)) ? t : null
+        return null != (t = a.K.get(e)) ? t : null
       },
-      setItem: (e, t) => o.K.set(e, t),
-      removeItem: e => o.K.remove(e)
+      setItem: (e, t) => a.K.set(e, t),
+      removeItem: e => a.K.remove(e)
     })),
     partialize: e => ({
       volume: e.volume,

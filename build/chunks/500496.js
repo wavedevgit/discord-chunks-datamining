@@ -1,13 +1,13 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Tz: () => o,
-  cE: () => a,
+  Tz: () => a,
+  cE: () => o,
   j0: () => s
 });
 var r = n(818083),
   i = n(987338);
-let a = (0, r.B)({
+let o = (0, r.B)({
   kind: "guild",
   id: "2025-06_server_content_level_setting",
   label: "Guild content level setting",
@@ -24,11 +24,11 @@ let a = (0, r.B)({
   }]
 });
 
-function o(e) {
+function a(e) {
   let {
     guildId: t,
     location: n
-  } = e, r = a.getCurrentConfig({
+  } = e, r = o.getCurrentConfig({
     guildId: t,
     location: n
   }, {
@@ -41,7 +41,7 @@ function s(e) {
   let {
     guildId: t,
     location: n
-  } = e, r = a.getCurrentConfig({
+  } = e, r = o.getCurrentConfig({
     guildId: t,
     location: n
   }, {

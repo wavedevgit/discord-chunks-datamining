@@ -2,10 +2,10 @@
 "use strict";
 let r;
 n.d(t, {
-  Z: () => M
+  Z: () => j
 });
-var i, a = n(569048),
-  o = n.n(a),
+var i, o = n(569048),
+  a = n.n(o),
   s = n(167006),
   l = n.n(s),
   c = n(989872),
@@ -66,21 +66,21 @@ function N(e) {
 
 function C(e) {
   var t;
-  b[e.invite.code] = _.Z.createFromServer(e.invite), r = null != (t = o()(l()(u()(Object.values(b), "createdAt")))) ? t : null, v = !1
+  b[e.invite.code] = _.Z.createFromServer(e.invite), r = null != (t = a()(l()(u()(Object.values(b), "createdAt")))) ? t : null, v = !1
 }
 
-function w() {
+function R() {
   v = !1
 }
 
-function R(e) {
+function P(e) {
   var t;
   null != e.invites && e.invites.forEach(e => {
     null != b[e.code] && delete b[e.code]
-  }), r = null != (t = o()(l()(u()(Object.values(b), "createdAt")))) ? t : null, O = !1
+  }), r = null != (t = a()(l()(u()(Object.values(b), "createdAt")))) ? t : null, O = !1
 }
 
-function P() {
+function w() {
   O = !0
 }
 
@@ -96,21 +96,21 @@ function x(e) {
   var t;
   b = {}, e.invites.forEach(e => {
     b[e.code] = _.Z.createFromServer(e)
-  }), r = null != (t = o()(l()(u()(Object.values(b), "createdAt")))) ? t : null, y = !1
+  }), r = null != (t = a()(l()(u()(Object.values(b), "createdAt")))) ? t : null, y = !1
 }
 
-function k(e) {
+function M(e) {
   delete m[e.channelId]
 }
-class j extends(i = d.ZP.Store) {
+class k extends(i = d.ZP.Store) {
   getInvite(e) {
     var t, n;
     let {
       targetType: r,
       targetUserId: i,
-      targetApplicationId: a
+      targetApplicationId: o
     } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
-    return r === p.Iq.STREAM && null != i ? null == (t = g[e]) ? void 0 : t[i] : r === p.Iq.EMBEDDED_APPLICATION && null != a ? null == (n = E[e]) ? void 0 : n[a] : m[e]
+    return r === p.Iq.STREAM && null != i ? null == (t = g[e]) ? void 0 : t[i] : r === p.Iq.EMBEDDED_APPLICATION && null != o ? null == (n = E[e]) ? void 0 : n[o] : m[e]
   }
   getFriendInvite() {
     return r
@@ -122,19 +122,19 @@ class j extends(i = d.ZP.Store) {
     return null != r && !O && !v
   }
 }
-h(j, "displayName", "InstantInviteStore");
-let M = new j(f.Z, {
+h(k, "displayName", "InstantInviteStore");
+let j = new k(f.Z, {
   CONNECTION_OPEN: I,
   CHANNEL_DELETE: T,
   FRIEND_INVITE_CREATE_SUCCESS: C,
-  FRIEND_INVITE_CREATE_FAILURE: w,
-  FRIEND_INVITE_REVOKE_SUCCESS: R,
+  FRIEND_INVITE_CREATE_FAILURE: R,
+  FRIEND_INVITE_REVOKE_SUCCESS: P,
   INSTANT_INVITE_CREATE_SUCCESS: S,
   INSTANT_INVITE_CREATE_FAILURE: A,
   INSTANT_INVITE_REVOKE_SUCCESS: N,
-  FRIEND_INVITE_REVOKE_REQUEST: P,
+  FRIEND_INVITE_REVOKE_REQUEST: w,
   FRIEND_INVITE_CREATE_REQUEST: D,
   FRIEND_INVITES_FETCH_REQUEST: L,
   FRIEND_INVITES_FETCH_RESPONSE: x,
-  INSTANT_INVITE_CLEAR: k
+  INSTANT_INVITE_CLEAR: M
 })

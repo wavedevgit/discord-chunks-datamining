@@ -1,12 +1,12 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  t: () => M
+  t: () => j
 }), n(388685), n(35282), n(413496), n(433524);
 var r = n(255367),
   i = n(73800),
-  a = n(505266),
-  o = n(481060),
+  o = n(505266),
+  a = n(481060),
   s = n(40851),
   l = n(745510),
   c = n(661637),
@@ -64,9 +64,9 @@ let b = [],
   A = 20,
   N = 12,
   C = 48,
-  w = .01,
-  R = new Set(["jack_o_lantern", "nose"]),
-  P = {
+  R = .01,
+  P = new Set(["jack_o_lantern", "nose"]),
+  w = {
     jack_o_lantern: {
       sprites: (0, c.Z)(["chocolate_bar", "lollipop", "candy"])
     },
@@ -77,7 +77,7 @@ let b = [],
 
 function D(e) {
   if (null == e) return null;
-  for (let t of R)
+  for (let t of P)
     if (null != e.match(new RegExp(":".concat(t, "(_tone[1-9])?")))) return t;
   return null
 }
@@ -105,7 +105,7 @@ function x() {
   })
 }
 
-function k(e) {
+function M(e) {
   if (null == e) return "enter";
   switch (e) {
     case "enter":
@@ -116,12 +116,12 @@ function k(e) {
       return "enter"
   }
 }
-let j = i.forwardRef(function(e, t) {
+let k = i.forwardRef(function(e, t) {
   let {
     sprites: n
-  } = e, [o, s] = i.useState(null), {
+  } = e, [a, s] = i.useState(null), {
     confettiCanvas: c
-  } = i.useContext(l.h), u = (0, a.uR)(c, o);
+  } = i.useContext(l.h), u = (0, o.uR)(c, a);
   return i.useImperativeHandle(t, () => ({
     fireConfetti: (e, t) => {
       u.createMultipleConfetti(E(m({}, _.We), {
@@ -150,11 +150,11 @@ let j = i.forwardRef(function(e, t) {
         },
         dragCoefficient: {
           type: "static",
-          value: w
+          value: R
         }
       }), A)
     }
-  }), [u]), (0, r.jsx)(a.Ji, {
+  }), [u]), (0, r.jsx)(o.Ji, {
     ref: s,
     colors: b,
     sprites: n,
@@ -163,10 +163,10 @@ let j = i.forwardRef(function(e, t) {
   })
 });
 
-function M(e) {
+function j(e) {
   let {
     children: t
-  } = e, n = i.useRef({}), [a, l] = i.useState(null), c = k(a), _ = i.useRef(null), [h, m] = i.useState(!1), g = i.useRef("jack_o_lantern"), E = (0, s.bp)(), b = i.useCallback(e => {
+  } = e, n = i.useRef({}), [o, l] = i.useState(null), c = M(o), _ = i.useRef(null), [h, m] = i.useState(!1), g = i.useRef("jack_o_lantern"), E = (0, s.bp)(), b = i.useCallback(e => {
     if (!h) {
       let t = D(e);
       null != t && (g.current = t, m(!0), l(null))
@@ -182,7 +182,7 @@ function M(e) {
     _.current = e
   }, []);
   return (i.useEffect(() => {
-    if ("confetti" === a) {
+    if ("confetti" === o) {
       if (null == _.current) return;
       let e = _.current.getBoundingClientRect(),
         t = e.left - T,
@@ -190,11 +190,11 @@ function M(e) {
         i = n.current[g.current];
       null == i || i.fireConfetti(t, r)
     }
-  }, [a]), E !== f.IlC.APP) ? t : (0, r.jsxs)(d.Rm.Provider, {
+  }, [o]), E !== f.IlC.APP) ? t : (0, r.jsxs)(d.Rm.Provider, {
     value: y,
-    children: [t, Object.keys(P).map(e => {
-      let t = P[e];
-      return (0, r.jsx)(j, {
+    children: [t, Object.keys(w).map(e => {
+      let t = w[e];
+      return (0, r.jsx)(k, {
         ref: t => {
           null != t ? n.current[e] = t : delete n.current[e]
         },
@@ -203,7 +203,7 @@ function M(e) {
     }), h ? (0, r.jsx)(u.ZP, {
       children: (0, r.jsx)("div", {
         className: p.animationWrapper,
-        children: (0, r.jsx)(o.kci, {
+        children: (0, r.jsx)(a.kci, {
           animationRef: I,
           className: p.lottieAnimation,
           nextScene: c,

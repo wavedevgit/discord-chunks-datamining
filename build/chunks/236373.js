@@ -9,8 +9,8 @@ n.d(t, {
 }), n(953529);
 var r = n(314897),
   i = n(230900),
-  a = n(854698),
-  o = n(765305);
+  o = n(854698),
+  a = n(765305);
 
 function s(e) {
   return !!(null == e ? void 0 : e.id)
@@ -76,7 +76,7 @@ function f(e) {
 function _(e, t, n) {
   let {
     name: i,
-    description: a,
+    description: o,
     privacyLevel: s,
     channelId: c,
     scheduledStartTime: d,
@@ -88,9 +88,9 @@ function _(e, t, n) {
     eventExceptions: g
   } = e;
   return {
-    id: null != n ? n : o.Ku,
+    id: null != n ? n : a.Ku,
     name: i,
-    description: null != a ? a : null,
+    description: null != o ? o : null,
     privacy_level: s,
     scheduled_start_time: d,
     scheduled_end_time: f,
@@ -100,7 +100,7 @@ function _(e, t, n) {
     channel_id: c,
     guild_id: t,
     creator_id: r.default.getId(),
-    status: o.p1.SCHEDULED,
+    status: a.p1.SCHEDULED,
     recurrence_rule: l(m),
     guild_scheduled_event_exceptions: u(g)
   }
@@ -110,10 +110,10 @@ function p(e, t) {
   var n, r, s, l, u, _, p;
   let h = {
     name: null != (n = null == e ? void 0 : e.name) ? n : "",
-    privacyLevel: null != (r = null == e ? void 0 : e.privacy_level) ? r : o.j8.GUILD_ONLY,
+    privacyLevel: null != (r = null == e ? void 0 : e.privacy_level) ? r : a.j8.GUILD_ONLY,
     description: null != (s = null == e ? void 0 : e.description) ? s : "",
-    scheduledStartTime: null != (l = null == e ? void 0 : e.scheduled_start_time) ? l : (0, a.ib)().toISOString(),
-    entityType: null != (u = null == e ? void 0 : e.entity_type) ? u : o.WX.NONE,
+    scheduledStartTime: null != (l = null == e ? void 0 : e.scheduled_start_time) ? l : (0, o.ib)().toISOString(),
+    entityType: null != (u = null == e ? void 0 : e.entity_type) ? u : a.WX.NONE,
     entityMetadata: null != (_ = null == e ? void 0 : e.entity_metadata) ? _ : void 0,
     channelId: null == e ? void 0 : e.channel_id,
     creatorId: null == e ? void 0 : e.creator_id,
@@ -122,11 +122,11 @@ function p(e, t) {
     recurrenceRule: c(null == e ? void 0 : e.recurrence_rule),
     eventExceptions: d(null != (p = null == e ? void 0 : e.guild_scheduled_event_exceptions) ? p : [])
   };
-  if (f(e) && (null == e ? void 0 : e.entity_type) === o.WX.EXTERNAL) {
+  if (f(e) && (null == e ? void 0 : e.entity_type) === a.WX.EXTERNAL) {
     let t = (0, i.cS)(e);
     null != t && (h.entityMetadata = {
       location: t
     })
-  } else null == h.channelId && null != t && (h.channelId = t.id, t.isGuildStageVoice() ? h.entityType = o.WX.STAGE_INSTANCE : t.isGuildVoice() && (h.entityType = o.WX.VOICE));
+  } else null == h.channelId && null != t && (h.channelId = t.id, t.isGuildStageVoice() ? h.entityType = a.WX.STAGE_INSTANCE : t.isGuildVoice() && (h.entityType = a.WX.VOICE));
   return h
 }

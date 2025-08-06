@@ -1,12 +1,12 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => j
+  Z: () => k
 }), n(413496), n(433524), n(35282), n(539854), n(388685);
 var r = n(255367),
   i = n(73800),
-  a = n(831209),
-  o = n(442837),
+  o = n(831209),
+  a = n(442837),
   s = n(704215),
   l = n(481060),
   c = n(278323),
@@ -29,9 +29,9 @@ var r = n(255367),
   A = n(921944),
   N = n(489887),
   C = n(388032),
-  w = n(725776);
+  R = n(725776);
 
-function R(e, t, n) {
+function P(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -40,14 +40,14 @@ function R(e, t, n) {
   }) : e[t] = n, e
 }
 
-function P(e) {
+function w(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      R(e, t, n[t])
+      P(e, t, n[t])
     })
   }
   return e
@@ -71,8 +71,8 @@ function L(e, t) {
 }
 let x = RegExp("(.*)```(\\w+)\\n(.*)```(.*)", "s");
 
-function k() {
-  let e = (0, o.e7)([E.Z], () => E.Z.hasCurrentUserSentMessageSinceAppStart()),
+function M() {
+  let e = (0, a.e7)([E.Z], () => E.Z.hasCurrentUserSentMessageSinceAppStart()),
     t = [];
   e && t.push(s.z.ACTIVITIES_CHAT_MENU_NEW_BADGE);
   let [n] = (0, p.cv)(t);
@@ -88,23 +88,23 @@ function k() {
       } = e;
       return t === s.z.ACTIVITIES_CHAT_MENU_NEW_BADGE ? (0, r.jsx)(l.IGR, {
         text: C.intl.string(C.t.y2b7CA),
-        color: a.Z.BUTTON_DANGER_BACKGROUND
+        color: o.Z.BUTTON_DANGER_BACKGROUND
       }) : null
     }
   })
 }
 
-function j(e) {
+function k(e) {
   let {
     channel: t,
-    options: o,
+    options: a,
     onFileUpload: p,
     onClose: h,
     onSelect: E,
-    draftType: R,
+    draftType: P,
     editorTextContent: D,
-    setValue: j,
-    openClips: M
+    setValue: k,
+    openClips: j
   } = e, {
     analyticsLocations: U,
     newestAnalyticsLocation: G
@@ -144,11 +144,11 @@ function j(e) {
   }
 
   function Y() {
-    b.default.track(S.rMx.CHANNEL_ATTACH_MENU_USE_APPS_CLICKED), j("/", (0, I.JM)("/"))
+    b.default.track(S.rMx.CHANNEL_ATTACH_MENU_USE_APPS_CLICKED), k("/", (0, I.JM)("/"))
   }
 
   function W() {
-    M()
+    j()
   }
 
   function K() {
@@ -158,7 +158,7 @@ function j(e) {
       let {
         default: e
       } = await n.e("68784").then(n.bind(n, 611611));
-      return n => (0, r.jsx)(e, L(P({}, n), {
+      return n => (0, r.jsx)(e, L(w({}, n), {
         channel: t
       }))
     }, {
@@ -192,24 +192,24 @@ function j(e) {
       i = D.match(x);
     null != i && (r = i[1], n = i[2], e = i[3], r += i[4]), (0, v.d)([(0, O.dp)(new Blob([e], {
       type: "text/plain"
-    }), "message.".concat(n), "text/plain")], t, R), y.S.dispatchToLastSubscribed(S.CkL.CLEAR_TEXT), "" !== r && y.S.dispatchToLastSubscribed(S.CkL.INSERT_TEXT, {
+    }), "message.".concat(n), "text/plain")], t, P), y.S.dispatchToLastSubscribed(S.CkL.CLEAR_TEXT), "" !== r && y.S.dispatchToLastSubscribed(S.CkL.INSERT_TEXT, {
       plainText: r
     })
   }
 
-  function $(e) {
+  function X(e) {
     var n;
     let i = (0, r.jsxs)("div", {
-      className: w.optionLabel,
+      className: R.optionLabel,
       children: [(0, r.jsx)(e.icon, {
-        className: w.optionIcon,
+        className: R.optionIcon,
         color: "currentColor"
       }), (0, r.jsx)("div", {
-        className: w.optionName,
+        className: R.optionName,
         children: e.display
       }), null != e.badgeVal && e.badgeVal > 0 && (0, r.jsx)(l.mAB, {
-        className: w.badge,
-        color: null != (n = e.badgeColor) ? n : a.Z.STATUS_DANGER,
+        className: R.badge,
+        color: null != (n = e.badgeColor) ? n : o.Z.STATUS_DANGER,
         count: e.badgeVal
       })]
     });
@@ -274,7 +274,7 @@ function j(e) {
           id: "activity",
           label: i,
           action: z,
-          hint: (0, r.jsx)(k, {})
+          hint: (0, r.jsx)(M, {})
         }, "activity");
       case T.r.SCHEDULED_MESSAGE:
         return (0, r.jsx)(l.sNh, {
@@ -300,7 +300,7 @@ function j(e) {
     navId: "channel-attach",
     onClose: h,
     "aria-label": C.intl.string(C.t.Xm41aW),
-    className: w.menu,
-    children: o.map($)
+    className: R.menu,
+    children: a.map(X)
   })
 }

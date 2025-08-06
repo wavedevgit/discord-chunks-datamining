@@ -2,8 +2,8 @@
 "use strict";
 var r = n(48657),
   i = n(580983),
-  a = n(527160),
-  o = n(11356),
+  o = n(527160),
+  a = n(11356),
   s = n(760725),
   l = n(234488),
   c = n(914331),
@@ -12,7 +12,7 @@ var r = n(48657),
   f = n(800054),
   _ = Array;
 e.exports = function(e) {
-  var t, n, p, h, m, g, E = a(e),
+  var t, n, p, h, m, g, E = o(e),
     b = l(this),
     y = arguments.length,
     O = y > 1 ? arguments[1] : void 0,
@@ -21,7 +21,7 @@ e.exports = function(e) {
   var I = f(E),
     T = 0;
   if (I && !(this === _ && s(I)))
-    for (n = b ? new this : [], m = (h = d(E, I)).next; !(p = i(m, h)).done; T++) g = v ? o(h, O, [p.value, T], !0) : p.value, u(n, T, g);
+    for (n = b ? new this : [], m = (h = d(E, I)).next; !(p = i(m, h)).done; T++) g = v ? a(h, O, [p.value, T], !0) : p.value, u(n, T, g);
   else
     for (t = c(E), n = b ? new this(t) : _(t); t > T; T++) g = v ? O(E[T], T) : E[T], u(n, T, g);
   return n.length = T, n

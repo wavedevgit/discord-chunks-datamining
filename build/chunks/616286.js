@@ -1,12 +1,12 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  T: () => w
+  T: () => R
 }), n(388685), n(539854);
 var r = n(255367),
   i = n(73800),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(392711),
   l = n(442837),
   c = n(475179),
@@ -49,8 +49,8 @@ function T(e, t) {
   if (null == e) return {};
   var n, r, i = S(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -58,8 +58,8 @@ function T(e, t) {
 function S(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 
@@ -86,17 +86,17 @@ function N(e) {
     unreadCount: t,
     mentionCount: n,
     isTyping: r
-  } = A(e), [a, o] = i.useState(!1);
+  } = A(e), [o, a] = i.useState(!1);
   return i.useEffect(() => {
-    o(t > 0);
+    a(t > 0);
     let e = setTimeout(() => {
-      o(!1)
+      a(!1)
     }, g.z);
     return () => {
-      clearTimeout(e), o(!1)
+      clearTimeout(e), a(!1)
     }
   }, [t]), {
-    isShowing: a || n > 0 || r,
+    isShowing: o || n > 0 || r,
     unreadCount: t,
     mentionCount: n
   }
@@ -108,24 +108,24 @@ function C(e) {
     channelId: n
   } = e, {
     unreadCount: i,
-    mentionCount: a,
-    isTyping: o,
+    mentionCount: o,
+    isTyping: a,
     voiceChannelIsSelected: s
   } = A(n);
   return (0, r.jsx)(E.Z, {
     className: t,
     unreadCount: i,
-    mentionCount: a,
-    isTyping: o,
+    mentionCount: o,
+    isTyping: a,
     canBadge: s
   })
 }
 
-function w(e) {
+function R(e) {
   let t;
   var {
     channelId: n,
-    className: a,
+    className: o,
     showingClassName: s,
     onClick: _,
     inPopout: p,
@@ -136,13 +136,13 @@ function w(e) {
     parentAnalyticsLocation: v
   } = (0, u.ZP)(), {
     disabled: S
-  } = E, A = i.useRef(null), w = (0, l.e7)([d.Z], () => d.Z.getChatOpen(n), [n]), {
-    isShowing: R,
-    unreadCount: P,
+  } = E, A = i.useRef(null), R = (0, l.e7)([d.Z], () => d.Z.getChatOpen(n), [n]), {
+    isShowing: P,
+    unreadCount: w,
     mentionCount: D
   } = N(n), L = i.useCallback(() => {
-    (0, f.v)(v, f.d.CHAT, !w), null == _ || _(), !w && h && (null == g || g()), c.Z.updateChatOpen(n, !w)
-  }, [n, w, _, h, g, v]), x = i.useCallback(e => {
+    (0, f.v)(v, f.d.CHAT, !R), null == _ || _(), !R && h && (null == g || g()), c.Z.updateChatOpen(n, !R)
+  }, [n, R, _, h, g, v]), x = i.useCallback(e => {
     let {
       className: t
     } = e;
@@ -150,41 +150,41 @@ function w(e) {
       className: t,
       channelId: n
     })
-  }, [n]), k = i.useCallback(() => {
+  }, [n]), M = i.useCallback(() => {
     var e;
     null == (e = A.current) || e.focus()
   }, []);
   (0, m.yp)({
     event: y.CkL.FOCUS_CHAT_BUTTON,
-    handler: S ? null : k
+    handler: S ? null : M
   });
-  let [j, M] = i.useState(!1), U = i.useCallback(() => {
-    p && M(!0)
+  let [k, j] = i.useState(!1), U = i.useCallback(() => {
+    p && j(!0)
   }, [p]);
   (0, m.yp)({
     event: y.CkL.SHOW_TEXT_IN_VOICE_POPOUT_COMING_SOON_TIP,
     handler: U
   }), i.useEffect(() => {
     let e;
-    return j && (e = setTimeout(() => {
-      M(!1)
+    return k && (e = setTimeout(() => {
+      j(!1)
     }, 3e3)), () => {
       clearTimeout(e)
     }
-  }, [j]);
-  let G = [t = p && S ? O.intl.string(O.t.DPgc5u) : w ? O.intl.string(O.t.nthdxM) : O.intl.string(O.t["5KxXrK"])];
+  }, [k]);
+  let G = [t = p && S ? O.intl.string(O.t.DPgc5u) : R ? O.intl.string(O.t.nthdxM) : O.intl.string(O.t["5KxXrK"])];
   return D > 0 && G.push(O.intl.formatToPlainString(O.t["3l1GOz"], {
     mentionCount: D
-  })), P > 0 && G.push(O.intl.string(O.t.x5zAGR)), (0, r.jsx)(b.Z, I({
+  })), w > 0 && G.push(O.intl.string(O.t.x5zAGR)), (0, r.jsx)(b.Z, I({
     buttonRef: A,
     onClick: L,
     label: t,
     "aria-label": G.join(", "),
     iconComponent: x,
     tooltipPosition: "bottom",
-    wrapperClassName: o()(a, null != s && {
-      [s]: R
+    wrapperClassName: a()(o, null != s && {
+      [s]: P
     }),
-    forceTooltipOpen: j
+    forceTooltipOpen: k
   }, E))
 }

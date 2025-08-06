@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var i = n(120356),
-  a = n.n(i),
-  o = n(442837),
+  o = n.n(i),
+  a = n(442837),
   s = n(755721),
   l = n(481060),
   c = n(451478),
@@ -59,8 +59,8 @@ function E(e, t) {
   if (null == e) return {};
   var n, r, i = b(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -68,8 +68,8 @@ function E(e, t) {
 function b(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let y = function(e) {
@@ -89,17 +89,17 @@ let y = function(e) {
     shinyButtonClassName: A,
     showGradient: N = !1,
     confirmationFooter: C,
-    paymentModalBanner: w,
-    color: R,
-    iconColor: P = "currentColor"
+    paymentModalBanner: R,
+    color: P,
+    iconColor: w = "currentColor"
   } = e, D = E(e, ["subscriptionTier", "onClick", "size", "className", "textOptions", "iconClassName", "postSuccessGuild", "onSubscribeModalClose", "premiumModalAnalyticsLocation", "showIcon", "disableShine", "applicationId", "shinyButtonClassName", "showGradient", "confirmationFooter", "paymentModalBanner", "color", "iconColor"]);
-  let L = (0, o.e7)([c.Z], () => c.Z.isFocused()),
+  let L = (0, a.e7)([c.Z], () => c.Z.isFocused()),
     x = (0, d.Z)({
       subscriptionTier: t,
       buttonTextOverride: null == m ? void 0 : m.textOverride,
       defaultTextOverride: null == m ? void 0 : m.subscribeText
     }),
-    k = {
+    M = {
       onClick: n,
       subscriptionTier: t,
       postSuccessGuild: y,
@@ -107,16 +107,16 @@ let y = function(e) {
       premiumModalAnalyticsLocation: v,
       applicationId: S,
       confirmationFooter: C,
-      paymentModalBanner: w
+      paymentModalBanner: R
     };
 
-  function j(e) {
-    let n = null != R ? R : t === f.Si.TIER_1 ? s.zx.Colors.PRIMARY : s.zx.Colors.GREEN;
-    return (0, r.jsx)(u.Z, g(h({}, k), {
-      children: o => {
+  function k(e) {
+    let n = null != P ? P : t === f.Si.TIER_1 ? s.zx.Colors.PRIMARY : s.zx.Colors.GREEN;
+    return (0, r.jsx)(u.Z, g(h({}, M), {
+      children: a => {
         let {
           onClick: c
-        } = o;
+        } = a;
         return (0, r.jsxs)(l.gtL, g(h({
           disabled: x.disabled,
           onClick: c,
@@ -124,7 +124,7 @@ let y = function(e) {
           color: n,
           size: i,
           className: A,
-          wrapperClassName: a()({
+          wrapperClassName: o()({
             [_.tier2Gradient]: N && t === f.Si.TIER_2,
             [_.tier1Gradient]: N && t === f.Si.TIER_1
           }, p),
@@ -133,10 +133,10 @@ let y = function(e) {
         }, D, e), {
           children: [I && (0, r.jsx)(l.SrA, {
             size: "md",
-            color: P,
-            className: a()(_.premiumIcon, b)
+            color: w,
+            className: o()(_.premiumIcon, b)
           }), (0, r.jsx)("span", {
-            className: a()(_.buttonText, null == m ? void 0 : m.textClassName),
+            className: o()(_.buttonText, null == m ? void 0 : m.textClassName),
             children: x.buttonText
           })]
         }))
@@ -145,6 +145,6 @@ let y = function(e) {
   }
   return null != x.buttonTooltipText ? (0, r.jsx)(l.ua7, {
     text: x.buttonTooltipText,
-    children: j
-  }) : j()
+    children: k
+  }) : k()
 }

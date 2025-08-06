@@ -2,12 +2,12 @@
 "use strict";
 var r = n(207549).getPunctuation(),
   i = "['‘’]",
-  a = "\\s|(?![_])" + r,
-  o = RegExp("^(?:" + a + ")*(?:" + i + "|(?!" + a + ").)*(?:(?!" + a + ").)"),
-  s = RegExp("(?:(?!" + a + ").)(?:" + i + "|(?!" + a + ").)*(?:" + a + ")*$");
+  o = "\\s|(?![_])" + r,
+  a = RegExp("^(?:" + o + ")*(?:" + i + "|(?!" + o + ").)*(?:(?!" + o + ").)"),
+  s = RegExp("(?:(?!" + o + ").)(?:" + i + "|(?!" + o + ").)*(?:" + o + ")*$");
 
 function l(e, t) {
-  var n = t ? s.exec(e) : o.exec(e);
+  var n = t ? s.exec(e) : a.exec(e);
   return n ? n[0] : e
 }
 e.exports = {

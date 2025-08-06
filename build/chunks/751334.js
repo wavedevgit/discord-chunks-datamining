@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(255367),
   i = n(73800),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(186325),
   l = n(226690),
   c = n(198168),
@@ -39,8 +39,8 @@ function p(e, t) {
   if (null == e) return {};
   var n, r, i = h(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -48,8 +48,8 @@ function p(e, t) {
 function h(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 
@@ -70,13 +70,13 @@ function g(e) {
     lottie: t,
     props: n
   } = e, {
-    reducedMotion: a
+    reducedMotion: o
   } = i.useContext(s.S);
   return (0, r.jsx)(l.F, _({
     className: d.lottie,
     importData: t,
     autoplay: !0,
-    shouldAnimate: !a.enabled
+    shouldAnimate: !o.enabled
   }, n))
 }
 
@@ -98,22 +98,22 @@ function b(e) {
   let {
     src: t,
     fallbackImageSrc: n,
-    loop: a,
-    loopAt: o = 0,
+    loop: o,
+    loopAt: a = 0,
     playbackRate: l
   } = e, {
     reducedMotion: c
   } = i.useContext(s.S), u = i.useRef(null);
   return (i.useEffect(() => {
     let e = u.current;
-    if (null != e) return null != l && (e.playbackRate = l), null != a && (e.loop = 0 === o && a), e.addEventListener("ended", t), () => {
+    if (null != e) return null != l && (e.playbackRate = l), null != o && (e.loop = 0 === a && o), e.addEventListener("ended", t), () => {
       e.removeEventListener("ended", t)
     };
 
     function t() {
-      null != e && !0 === a && 0 !== o && (e.currentTime = o, e.play())
+      null != e && !0 === o && 0 !== a && (e.currentTime = a, e.play())
     }
-  }, [a, o, l]), c.enabled && null != n) ? (0, r.jsx)(m, {
+  }, [o, a, l]), c.enabled && null != n) ? (0, r.jsx)(m, {
     type: "image",
     src: n
   }) : (0, r.jsx)("video", {
@@ -142,7 +142,7 @@ function y(e) {
     return null
   }
   return null == n ? null : (0, r.jsx)("div", {
-    className: o()(d.container, d["aspect-ratio-".concat(t)]),
+    className: a()(d.container, d["aspect-ratio-".concat(t)]),
     children: i()
   })
 }

@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685), n(781311);
 var r = n(255367),
   i = n(73800),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(106351),
   l = n(507274),
   c = n(541716),
@@ -37,11 +37,11 @@ let T = (0, f.kt)({
     } = e;
     switch (r) {
       case y.n_.ACTIVITY:
-        let a = v.intl.formatToPlainString(v.t.WmvMCg, {
+        let o = v.intl.formatToPlainString(v.t.WmvMCg, {
             username: n
           }),
-          o = "\n> ".concat(i);
-        return null != i ? "".concat(E.jd).concat(a, "*").concat(o, "\n").concat(t) : "".concat(E.jd).concat(a, "*\n").concat(t);
+          a = "\n> ".concat(i);
+        return null != i ? "".concat(E.jd).concat(o, "*").concat(a, "\n").concat(t) : "".concat(E.jd).concat(o, "*\n").concat(t);
       case y.n_.AVATAR:
         let s = v.intl.formatToPlainString(v.t.lpaBsL, {
           username: n
@@ -74,22 +74,22 @@ function N(e) {
   let {
     user: t,
     guildId: n,
-    channelId: a,
+    channelId: o,
     sourceType: s,
     sourceDetails: f,
     setPopoutRef: _,
     modalKey: E,
     onAction: N,
     onClose: C,
-    entry: w
+    entry: R
   } = e, {
-    resetInteraction: R,
-    setInteractionToast: P
+    resetInteraction: P,
+    setInteractionToast: w
   } = (0, g.Xo)(), {
     primaryColor: D
-  } = (0, b.z)(), [L, x] = i.useState(""), [k, j] = i.useState((0, u.JM)(L)), M = i.useRef(!1), U = i.useRef(null), G = i.useCallback(e => {
-    e.key === O.vn.ESCAPE && (e.stopPropagation(), R())
-  }, [R]);
+  } = (0, b.z)(), [L, x] = i.useState(""), [M, k] = i.useState((0, u.JM)(L)), j = i.useRef(!1), U = i.useRef(null), G = i.useCallback(e => {
+    e.key === O.vn.ESCAPE && (e.stopPropagation(), P())
+  }, [P]);
   i.useEffect(() => {
     null == _ || _(null == U ? void 0 : U.current)
   }, [U, _]);
@@ -108,7 +108,7 @@ function N(e) {
       sourceType: s,
       sourceDetails: f
     });
-    P(null);
+    w(null);
     try {
       await (0, m.Z)({
         userId: t.id,
@@ -116,10 +116,10 @@ function N(e) {
         location: "UserProfileReplyPopout",
         openChannel: !1,
         whenReady: !1,
-        entry: w
+        entry: R
       })
     } catch (e) {}
-    P(y.P.REPLY)
+    w(y.P.REPLY)
   }, Z = {
     [I.status]: s === y.n_.STATUS,
     [I.avatar]: s === y.n_.AVATAR,
@@ -129,7 +129,7 @@ function N(e) {
     ref: U,
     onKeyDown: G,
     children: (0, r.jsx)("div", {
-      className: o()(I.container, Z, {
+      className: a()(I.container, Z, {
         [I.customProfileTheme]: null != D
       }),
       children: (0, r.jsx)(d.ZP, {
@@ -140,17 +140,17 @@ function N(e) {
         editorClassName: I.editor,
         type: c.Ie.USER_PROFILE_REPLY,
         placeholder: v.intl.formatToPlainString(A(s), {
-          username: p.ZP.getName(n, a, t)
+          username: p.ZP.getName(n, o, t)
         }),
         channel: T,
         textValue: L,
-        richValue: k,
+        richValue: M,
         onChange: (e, t, n) => {
-          t !== L && (x(t), j(n))
+          t !== L && (x(t), k(n))
         },
-        focused: M.current,
+        focused: j.current,
         onFocus: () => {
-          M.current = !0
+          j.current = !0
         },
         onSubmit: async e => {
           let {
@@ -161,7 +161,7 @@ function N(e) {
             shouldRefocus: !1
           };
           try {
-            return await B(n), R(), null == C || C(), {
+            return await B(n), P(), null == C || C(), {
               shouldClear: !0,
               shouldRefocus: !1
             }

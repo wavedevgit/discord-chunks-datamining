@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var i = n(584973),
-  a = n(833858),
-  o = n(981631);
+  o = n(833858),
+  a = n(981631);
 let s = e => {
   var t;
   let {
@@ -15,13 +15,13 @@ let s = e => {
     hangStatusActivity: s,
     animate: l = !0
   } = e;
-  if ((null == s ? void 0 : s.state) === o.tNA.CUSTOM) return null != s.emoji ? (0, r.jsx)(i.Z, {
+  if ((null == s ? void 0 : s.state) === a.tNA.CUSTOM) return null != s.emoji ? (0, r.jsx)(i.Z, {
     emoji: s.emoji,
     className: n,
     hideTooltip: !0,
     animate: l
   }) : null;
-  let c = null == (t = (0, a.tV)(s)) ? void 0 : t.icon;
+  let c = null == (t = (0, o.tV)(s)) ? void 0 : t.icon;
   return null != c ? (0, r.jsx)("img", {
     src: c,
     alt: "",

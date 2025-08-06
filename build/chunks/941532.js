@@ -1,12 +1,12 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  i: () => a
+  i: () => o
 });
 var r = n(589414),
   i = n(388032);
 
-function a(e) {
+function o(e) {
   let t = (0, r.a)(e);
   if (null != e.privacy_policy_url && null != e.terms_of_service_url) {
     let n = t ? i.t.yVfotr : i.t.rxlyKC;

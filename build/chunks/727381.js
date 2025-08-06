@@ -1,12 +1,12 @@
-/** Chunk was on 71824 **/
+/** Chunk was on 12097 **/
 n.d(t, {
-  Z: () => O
+  Z: () => N
 });
 var r = n(255367);
 n(73800);
 var l = n(120356),
-  i = n.n(l),
-  s = n(399606),
+  s = n.n(l),
+  i = n(399606),
   a = n(481060),
   o = n(271383),
   u = n(594174),
@@ -16,58 +16,58 @@ var l = n(120356),
   _ = n(477718),
   A = n(791176),
   T = n(908474),
-  I = n(467014),
-  g = n(388032),
-  m = n(12740);
+  m = n(467014),
+  I = n(388032),
+  g = n(12740);
 
-function N() {
+function f() {
   return (0, r.jsxs)("div", {
-    className: m.header,
+    className: g.header,
     children: [(0, r.jsxs)("div", {
-      className: m.headerTitle,
+      className: g.headerTitle,
       children: [(0, r.jsx)(c.Z, {
         width: 16,
         height: 16
       }), (0, r.jsx)(a.X6q, {
         variant: "heading-md/semibold",
-        children: g.intl.string(g.t.cf5lgo)
+        children: I.intl.string(I.t.cf5lgo)
       })]
     }), (0, r.jsx)("div", {
       children: (0, r.jsx)(a.M2$, {
         shortcut: "esc",
-        keyClassName: m.keyComboInner,
-        className: m.keyComboContainer
+        keyClassName: g.keyComboInner,
+        className: g.keyComboContainer
       })
     })]
   })
 }
 
-function O(e) {
+function N(e) {
   let {
     userId: t,
     guildId: n,
     location: l,
     className: c,
-    onNavigate: g
-  } = e, O = (0, s.e7)([u.default], () => u.default.getUser(t), [t]), f = (0, s.e7)([o.ZP], () => o.ZP.getMember(n, t), [n, t]);
-  return null == O || null == f ? null : (0, r.jsxs)("div", {
-    className: i()(m.container, c),
-    children: [(0, r.jsx)(N, {}), (0, r.jsxs)(a.Ttm, {
-      className: m.innerContainer,
+    onNavigate: I
+  } = e, N = (0, i.e7)([u.default], () => u.default.getUser(t), [t]), h = (0, i.e7)([o.ZP], () => o.ZP.getMember(n, t), [n, t]);
+  return null == N || null == h ? null : (0, r.jsxs)("div", {
+    className: s()(g.container, c),
+    children: [(0, r.jsx)(f, {}), (0, r.jsxs)(a.Ttm, {
+      className: g.innerContainer,
       children: [(0, r.jsx)(T.Z, {
-        member: f
-      }), (0, r.jsx)(I.Z, {
+        member: h
+      }), (0, r.jsx)(m.Z, {
         userId: t,
         guildId: n
       }), (0, r.jsx)(A.Z, {
-        member: f,
-        onNavigate: g
+        member: h,
+        onNavigate: I
       }), (0, r.jsx)(d.Z, {
-        member: f
+        member: h
       }), (0, r.jsx)(E.Z, {
-        member: f
+        member: h
       }), (0, r.jsx)(_.Z, {
-        member: f
+        member: h
       })]
     })]
   })

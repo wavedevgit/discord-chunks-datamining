@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  N: () => a,
+  N: () => o,
   d: () => i
 });
 var r = n(818083);
@@ -20,7 +20,7 @@ let i = (0, r.B)({
       }
     }]
   }),
-  a = (0, r.B)({
+  o = (0, r.B)({
     kind: "guild",
     id: "2025-06_game_mentions",
     label: "Game Mentions - Guild",

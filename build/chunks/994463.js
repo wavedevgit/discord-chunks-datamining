@@ -1,16 +1,15 @@
-/** Chunk was on web.js **/
-"use strict";
+/** Chunk was on 12097 **/
 n.d(t, {
-  Z: () => E
+  Z: () => d
 }), n(388685);
 var r = n(255367),
-  i = n(73800),
-  a = n(525654),
-  o = n.n(a),
-  s = n(748780),
-  l = n(782682);
+  l = n(73800),
+  s = n(525654),
+  i = n.n(s),
+  a = n(748780),
+  o = n(782682);
 
-function c(e, t, n) {
+function u(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -18,14 +17,8 @@ function c(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let u = -74,
-  d = 95,
-  f = -59,
-  _ = 75,
-  p = 5,
-  h = 1;
 
-function m(e) {
+function c(e) {
   let t = e => e.interpolate({
     inputRange: [0, 1],
     outputRange: ["0px", "1px"]
@@ -38,28 +31,28 @@ function m(e) {
     }]
   }
 }
-class g extends i.Component {
+class E extends l.Component {
   componentDidMount() {
     this._isMounted = !0;
     let {
       x: e,
       y: t
     } = this.state;
-    "Firefox" !== o().name && (s.Z.animate(e, {
+    "Firefox" !== i().name && (a.Z.animate(e, {
       loop: !0,
-      toValueMin: u,
-      toValueMax: d,
+      toValueMin: -74,
+      toValueMax: 95,
       overshootClamping: !0,
-      friction: p,
-      tension: h,
+      friction: 5,
+      tension: 1,
       shouldLoop: this.shouldLoop
-    }), s.Z.animate(t, {
+    }), a.Z.animate(t, {
       loop: !0,
-      toValueMin: f,
-      toValueMax: _,
+      toValueMin: -59,
+      toValueMax: 75,
       overshootClamping: !0,
-      friction: p,
-      tension: h,
+      friction: 5,
+      tension: 1,
       shouldLoop: this.shouldLoop
     }))
   }
@@ -68,11 +61,11 @@ class g extends i.Component {
   }
   render() {
     return (0, r.jsxs)("div", {
-      className: l.searchIndexAnimation,
+      className: o.searchIndexAnimation,
       children: [(0, r.jsx)("div", {
-        className: l.searchIndexBackground
+        className: o.searchIndexBackground
       }), (0, r.jsxs)("svg", {
-        className: l.searchIndexForeground,
+        className: o.searchIndexForeground,
         width: "320",
         height: "280",
         children: [(0, r.jsx)("defs", {
@@ -90,9 +83,9 @@ class g extends i.Component {
             children: [(0, r.jsx)("mask", {
               id: "search-index-foreground-mask-b",
               fill: "#fff",
-              children: (0, r.jsx)(s.Z.use, {
-                style: m(this.state),
-                className: l.mask,
+              children: (0, r.jsx)(a.Z.use, {
+                style: c(this.state),
+                className: o.mask,
                 xlinkHref: "#search-index-foreground-mask-a"
               })
             }), (0, r.jsxs)("g", {
@@ -354,9 +347,9 @@ class g extends i.Component {
                 strokeLinejoin: "round"
               })]
             })]
-          }), (0, r.jsxs)(s.Z.g, {
-            className: l.magnifyingGlass,
-            style: m(this.state),
+          }), (0, r.jsxs)(a.Z.g, {
+            className: o.magnifyingGlass,
+            style: c(this.state),
             children: [(0, r.jsx)("path", {
               fill: "#C9D2F0",
               d: "M89.8311 190.9259c-2.441-2.441-2.441-6.4 0-8.841l36.771-36.771 8.841 8.841-36.771 36.771c-2.441 2.441-6.4 2.441-8.841 0"
@@ -399,10 +392,10 @@ class g extends i.Component {
     })
   }
   constructor(...e) {
-    super(...e), c(this, "state", {
-      x: new s.Z.Value(0),
-      y: new s.Z.Value(0)
-    }), c(this, "_isMounted", !1), c(this, "shouldLoop", () => this._isMounted)
+    super(...e), u(this, "state", {
+      x: new a.Z.Value(0),
+      y: new a.Z.Value(0)
+    }), u(this, "_isMounted", !1), u(this, "shouldLoop", () => this._isMounted)
   }
 }
-let E = g
+let d = E

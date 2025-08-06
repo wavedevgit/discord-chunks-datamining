@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var i = n(442837),
-  a = n(481060),
-  o = n(572691),
+  o = n(481060),
+  a = n(572691),
   s = n(287734),
   l = n(872810),
   c = n(40851),
@@ -77,40 +77,40 @@ function v(e) {
       } = e;
       return t !== y.ownerId
     }).length > 0
-  })), S = (0, i.e7)([f.Z], () => f.Z.getChannel(null == y ? void 0 : y.channelId)), [A, N] = (0, u.wq)(S), C = (0, c.Aq)(), w = null != I && null != y && I.state !== h.jm8.ENDED && I.ownerId === y.ownerId, R = e => {
-    null != y && (null == v || v(), s.default.selectVoiceChannel(y.channelId), w || (0, l.iV)(y, {
+  })), S = (0, i.e7)([f.Z], () => f.Z.getChannel(null == y ? void 0 : y.channelId)), [A, N] = (0, u.wq)(S), C = (0, c.Aq)(), R = null != I && null != y && I.state !== h.jm8.ENDED && I.ownerId === y.ownerId, P = e => {
+    null != y && (null == v || v(), s.default.selectVoiceChannel(y.channelId), R || (0, l.iV)(y, {
       forceMultiple: e
-    }), C.dispatch(h.CkL.POPOUT_CLOSE), _.S.dispatch(h.CkL.MODAL_CLOSE), o.Z.popAll())
+    }), C.dispatch(h.CkL.POPOUT_CLOSE), _.S.dispatch(h.CkL.MODAL_CLOSE), a.Z.popAll())
   };
   if (null == y) return null;
-  let P = (0, u.P9)(N);
-  t ? P = m.intl.string(m.t.XvBdeX) : w && (P = m.intl.string(m.t.JH1SJy));
+  let w = (0, u.P9)(N);
+  t ? w = m.intl.string(m.t.XvBdeX) : R && (w = m.intl.string(m.t.JH1SJy));
   let D = {
     color: n,
     look: E
   };
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)(p.Z, O(b({
-      disabled: t || w || !A,
-      onClick: () => R(!1)
+      disabled: t || R || !A,
+      onClick: () => P(!1)
     }, D), {
       fullWidth: !0,
-      children: [(0, r.jsx)(a.hGI, {
+      children: [(0, r.jsx)(o.hGI, {
         size: "md",
         color: "currentColor",
         className: g.streamIcon
-      }), P]
-    }), "play"), T && !w ? (0, r.jsx)(a.ua7, {
+      }), w]
+    }), "play"), T && !R ? (0, r.jsx)(o.ua7, {
       text: m.intl.string(m.t.wCrzur),
       children: e => (0, r.jsx)(p.Z, O(b(O(b({}, e), {
         onClick: () => {
           var t;
-          null == (t = e.onClick) || t.call(e), R(!0)
+          null == (t = e.onClick) || t.call(e), P(!0)
         }
       }), D), {
         className: g.iconButton,
         size: g.iconButtonSize,
-        children: (0, r.jsx)(a.OgY, {
+        children: (0, r.jsx)(o.OgY, {
           size: "xs",
           color: "currentColor",
           className: g.iconSize

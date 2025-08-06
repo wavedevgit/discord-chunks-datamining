@@ -5,8 +5,8 @@ n.d(t, {
 }), n(997841), n(953529);
 var r = n(255367),
   i = n(73800),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(772848),
   l = n(535655),
   c = n(973693),
@@ -29,15 +29,15 @@ var r = n(255367),
   A = n(626135),
   N = n(456100),
   C = n(566620),
-  w = n(127255),
-  R = n(5200),
-  P = n(558317),
+  R = n(127255),
+  P = n(5200),
+  w = n(558317),
   D = n(981631),
   L = n(388032),
   x = n(210408);
-let k = 5,
-  j = 12,
-  M = 1e3,
+let M = 5,
+  k = 12,
+  j = 1e3,
   U = c.Y.APP_LAUNCHER_IN_VOICE_BANNER,
   G = 584,
   B = "vc-activities-".concat((0, s.Z)());
@@ -64,8 +64,8 @@ function Z() {
 function F(e) {
   var t;
   let n, {
-      channel: a,
-      openInPopout: o,
+      channel: o,
+      openInPopout: a,
       onClick: s
     } = e,
     {
@@ -98,9 +98,9 @@ function F(e) {
       s(), (0, b.Z)({
         context: {
           type: "channel",
-          channel: a
+          channel: o
         },
-        openInPopout: o,
+        openInPopout: a,
         analyticsLocation: h.Z.APP_LAUNCHER_IN_VOICE_BANNER,
         initialState: {
           applicationId: _.application.id
@@ -119,7 +119,7 @@ function F(e) {
 let V = i.forwardRef(function(e, t) {
   let {
     channel: n,
-    isHovered: a,
+    isHovered: o,
     closePopout: s,
     onMouseEnter: l,
     onMouseLeave: c,
@@ -135,17 +135,17 @@ let V = i.forwardRef(function(e, t) {
       guild_id: v
     })
   }, [O, v]), i.useEffect(() => {
-    a || s()
-  }, [s, a]);
+    o || s()
+  }, [s, o]);
   let I = (0, _.bp)(),
     {
       analyticsLocations: S,
-      newestAnalyticsLocation: w
+      newestAnalyticsLocation: R
     } = (0, m.ZP)(h.Z.ACTIVITIES_MINI_SHELF),
-    k = I === D.IlC.POPOUT,
+    M = I === D.IlC.POPOUT,
     U = H(n.getGuildId());
   i.useEffect(() => {
-    let e = setTimeout(() => C.ux(), M);
+    let e = setTimeout(() => C.ux(), j);
     return () => clearTimeout(e)
   }, []);
   let {
@@ -162,10 +162,10 @@ let V = i.forwardRef(function(e, t) {
       } : {
         type: "contextless"
       },
-      openInPopout: k,
-      analyticsLocation: w
+      openInPopout: M,
+      analyticsLocation: R
     }), c(), u()
-  }, [n, w, u, c, k]), V = i.useCallback(e => {
+  }, [n, R, u, c, M]), V = i.useCallback(e => {
     l(), A.default.track(D.rMx.ACTIVITIES_MINI_SHELF_HOVERED, {
       channel_id: n.id,
       guild_id: n.getGuildId()
@@ -210,21 +210,21 @@ let V = i.forwardRef(function(e, t) {
                 children: L.intl.string(L.t["K8+z4e"])
               }), (0, r.jsx)(f.Fbu, {
                 size: "custom",
-                width: j,
-                height: j,
+                width: k,
+                height: k,
                 color: "var(--interactive-active)",
                 className: x.titleRightIcon
               })]
             })]
           }), (0, r.jsx)(F, {
-            openInPopout: k,
+            openInPopout: M,
             channel: n,
             onClick: () => {
               u(), s()
             }
           }), (0, r.jsxs)("div", {
             className: x.activityContainer,
-            children: [U.map(e => (0, r.jsx)(R.Y, {
+            children: [U.map(e => (0, r.jsx)(P.Y, {
               context: {
                 channel: n,
                 type: "channel"
@@ -233,16 +233,16 @@ let V = i.forwardRef(function(e, t) {
               onClick: () => {
                 s(), u()
               },
-              aspectRatio: R.Y.AspectRatio.THIRTEEN_BY_ELEVEN,
+              aspectRatio: P.Y.AspectRatio.THIRTEEN_BY_ELEVEN,
               animatedDivClass: x.activitySuggestion,
               commandOrigin: y.bB.MINI_SHELF
             }, e.application.id)), (0, r.jsx)("div", {
-              className: o()(x.wumpusRocketOuterContainer, {
+              className: a()(x.wumpusRocketOuterContainer, {
                 [x.wumpusReducedMotion]: E
               }),
               children: (0, r.jsx)("div", {
                 className: x.wumpusRocketInnerContainer,
-                children: (0, r.jsx)(P.Z, {
+                children: (0, r.jsx)(w.Z, {
                   className: x.wumpusRocket
                 })
               })
@@ -255,7 +255,7 @@ let V = i.forwardRef(function(e, t) {
 });
 
 function H(e) {
-  return (0, w.Z)({
+  return (0, R.Z)({
     guildId: e
-  }).slice(0, k)
+  }).slice(0, M)
 }

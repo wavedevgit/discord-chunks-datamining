@@ -10,8 +10,8 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var i = n(120356),
-  a = n.n(i),
-  o = n(442837),
+  o = n.n(i),
+  a = n(442837),
   s = n(481060),
   l = n(686546),
   c = n(884902),
@@ -36,7 +36,7 @@ function E(e) {
     selected: n
   } = e;
   return (0, r.jsx)("div", {
-    className: a()(m.container, m.openOnHover, {
+    className: o()(m.container, m.openOnHover, {
       [m.selected]: n
     }),
     children: t
@@ -61,22 +61,22 @@ function y(e) {
   } = e;
   return (0, r.jsx)("div", {
     className: m.facePile,
-    children: t.map((e, a) => {
-      let o = (0, r.jsx)(s.qEK, {
+    children: t.map((e, o) => {
+      let a = (0, r.jsx)(s.qEK, {
         src: e.getAvatarURL(n, 80),
         size: s.EFr.SIZE_16,
         "aria-label": i ? void 0 : e.username,
         "aria-hidden": i
       });
-      return a === t.length - 1 ? (0, r.jsx)("div", {
+      return o === t.length - 1 ? (0, r.jsx)("div", {
         className: m.facePileItem,
-        children: o
+        children: a
       }, e.id) : (0, r.jsx)(l.ZP, {
         width: 16,
         height: 16,
         className: m.facePileItem,
         mask: l.ZP.Masks.CONTENT_INVENTORY_CARD_FACE_PILE_AVATAR,
-        children: o
+        children: a
       }, e.id)
     })
   })
@@ -87,14 +87,14 @@ function O(e) {
   let {
     guildId: n,
     channelId: i,
-    entry: a,
+    entry: o,
     maxAvatars: l = 3
-  } = e, g = a.author_id, E = (0, o.e7)([f.default], () => f.default.getUser(g)), {
+  } = e, g = o.author_id, E = (0, a.e7)([f.default], () => f.default.getUser(g)), {
     displayParticipants: b,
     participant1: O,
     participant2: v,
     numOtherParticipants: I
-  } = (0, p.Z)(a, l), T = (0, o.e7)([u.ZP], () => u.ZP.getMember(n, g)), S = (0, o.e7)([d.Z], () => {
+  } = (0, p.Z)(o, l), T = (0, a.e7)([u.ZP], () => u.ZP.getMember(n, g)), S = (0, a.e7)([d.Z], () => {
     var e;
     return (null == T ? void 0 : T.colorRoleId) != null ? null == (e = d.Z.getRole(n, T.colorRoleId)) ? void 0 : e.name : void 0
   }, [n, T]), A = (0, c.X7)(n, g, null != (t = null == T ? void 0 : T.colorStrings) ? t : null);

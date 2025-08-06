@@ -9,8 +9,8 @@ var r = n(255367),
   s = n(585483),
   o = n(723170),
   c = n(64247),
-  d = n(124368),
-  u = n(981631),
+  u = n(124368),
+  d = n(981631),
   h = n(388032);
 
 function p(e) {
@@ -51,11 +51,11 @@ function g(e) {
   } = e, n = (0, o.B)(t), [g, m] = i.useState(!1), b = i.useRef(null);
   i.useEffect(() => {
     let e = () => m(!0);
-    return s.S.subscribe(u.CkL.OPEN_THREAD_NOTIFICATION_SETTINGS, e), () => {
-      s.S.unsubscribe(u.CkL.OPEN_THREAD_NOTIFICATION_SETTINGS, e)
+    return s.S.subscribe(d.CkL.OPEN_THREAD_NOTIFICATION_SETTINGS, e), () => {
+      s.S.unsubscribe(d.CkL.OPEN_THREAD_NOTIFICATION_SETTINGS, e)
     }
   }, []);
-  let _ = h.intl.string(h.t.h850Sk);
+  let y = h.intl.string(h.t.h850Sk);
   return (0, r.jsx)(l.yRy, {
     targetElementRef: b,
     shouldShow: g,
@@ -76,9 +76,9 @@ function g(e) {
       return (0, r.jsx)(a.ZP.Icon, f(p({}, e), {
         ref: b,
         onClick: () => m(e => !e),
-        tooltip: i ? null : _,
-        icon: n === d.iN.NO_MESSAGES ? l.owu : l.Dkj,
-        "aria-label": _,
+        tooltip: i ? null : y,
+        icon: n === u.iN.NO_MESSAGES ? l.owu : l.Dkj,
+        "aria-label": y,
         selected: i
       }))
     }

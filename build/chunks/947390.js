@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var i = n(120356),
-  a = n.n(i),
-  o = n(481060),
+  o = n.n(i),
+  a = n(481060),
   s = n(722838);
 
 function l(e) {
@@ -16,8 +16,8 @@ function l(e) {
     className: n
   } = e;
   return (0, r.jsx)("div", {
-    className: a()(s.pill, s.pillGradient, n),
-    children: (0, r.jsx)(o.Text, {
+    className: o()(s.pill, s.pillGradient, n),
+    children: (0, r.jsx)(a.Text, {
       variant: "text-xxs/bold",
       color: "text-primary",
       className: s.pillText,

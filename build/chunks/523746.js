@@ -4,8 +4,8 @@ n.d(t, {
   Z: () => D
 });
 var r, i = n(392711),
-  a = n.n(i),
-  o = n(442837),
+  o = n.n(i),
+  a = n(442837),
   s = n(544891),
   l = n(570140),
   c = n(592125),
@@ -138,7 +138,7 @@ function N(e) {
     channelId: n,
     recipients: r
   } = e;
-  E[n] = a().union(null != (t = E[n]) ? t : [], null != r ? r : ["all"])
+  E[n] = o().union(null != (t = E[n]) ? t : [], null != r ? r : ["all"])
 }
 
 function C(e) {
@@ -147,16 +147,16 @@ function C(e) {
     messageId: n,
     region: r,
     ringing: i
-  } = e, a = g[t], o = null != a && (a.regionUpdated || a.region !== r);
+  } = e, o = g[t], a = null != o && (o.regionUpdated || o.region !== r);
   g[t] = m(p({}, g[t]), {
     messageId: n,
     region: r,
     ringing: i,
-    regionUpdated: o
+    regionUpdated: a
   })
 }
 
-function w(e) {
+function R(e) {
   let {
     channelId: t,
     unavailable: n
@@ -173,13 +173,13 @@ function w(e) {
   }, null != E[t] && delete E[t]
 }
 
-function R(e) {
+function P(e) {
   let {
     channelId: t
   } = e;
   null == t && (E = {})
 }
-class P extends(r = o.ZP.Store) {
+class w extends(r = a.ZP.Store) {
   initialize() {
     this.waitFor(d.Z, u.Z)
   }
@@ -208,8 +208,8 @@ class P extends(r = o.ZP.Store) {
     }
   }
 }
-_(P, "displayName", "CallStore");
-let D = new P(l.Z, {
+_(w, "displayName", "CallStore");
+let D = new w(l.Z, {
   CONNECTION_OPEN: y,
   CONNECTION_CLOSED: v,
   OVERLAY_INITIALIZE: O,
@@ -218,7 +218,7 @@ let D = new P(l.Z, {
   CHANNEL_DELETE: S,
   CALL_CREATE: A,
   CALL_UPDATE: C,
-  CALL_DELETE: w,
+  CALL_DELETE: R,
   CALL_ENQUEUE_RING: N,
-  VOICE_CHANNEL_SELECT: R
+  VOICE_CHANNEL_SELECT: P
 })

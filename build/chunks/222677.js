@@ -2,17 +2,17 @@
 "use strict";
 n.d(t, {
   $E: () => L,
-  T6: () => P,
+  T6: () => w,
   TW: () => T,
-  U0: () => w,
+  U0: () => R,
   WO: () => x,
-  rU: () => R,
+  rU: () => P,
   wX: () => D
 });
 var r = n(544891),
   i = n(780384),
-  a = n(570140),
-  o = n(668781),
+  o = n(570140),
+  a = n(668781),
   s = n(367907),
   l = n(566006),
   c = n(346479),
@@ -73,16 +73,16 @@ function S(e, t, n) {
   let {
     headers: r,
     status: i,
-    body: a
+    body: o
   } = e;
   if (429 === i) {
     if (n.isRetry) return !0;
     let e = parseInt(r["retry-after"]);
     return isNaN(e) || setTimeout(t, e * h.Z.Millis.SECOND), !1
   }
-  if (403 === i) switch (a && a.code) {
+  if (403 === i) switch (o && o.code) {
     case E.evJ.TOO_MANY_REACTIONS:
-      o.Z.show({
+      a.Z.show({
         title: b.intl.string(b.t.lFddsb),
         body: b.intl.string(b.t.h27eIi),
         confirmText: b.intl.string(b.t.BddRzc)
@@ -98,12 +98,12 @@ function S(e, t, n) {
 }
 
 function A(e, t, n, r, i) {
-  var o, s;
-  a.Z.dispatch({
+  var a, s;
+  o.Z.dispatch({
     type: e,
     channelId: t,
     messageId: n,
-    userId: null != (o = null == i ? void 0 : i.userId) ? o : u.default.getId(),
+    userId: null != (a = null == i ? void 0 : i.userId) ? a : u.default.getId(),
     emoji: r,
     optimistic: !0,
     colors: null != (s = null == i ? void 0 : i.colors) ? s : [],
@@ -117,10 +117,10 @@ function N(e) {
     messageId: n,
     emoji: r,
     userId: i,
-    useTypeEndpoint: a = !1,
-    type: o = l.O.NORMAL
+    useTypeEndpoint: o = !1,
+    type: a = l.O.NORMAL
   } = e, s = null != r.id ? "".concat(r.name, ":").concat(r.id) : r.name;
-  return null == i ? E.ANM.REACTIONS(t, n, s) : a ? E.ANM.REACTION_WITH_TYPE(t, n, s, i, o) : E.ANM.REACTION(t, n, s, i)
+  return null == i ? E.ANM.REACTIONS(t, n, s) : o ? E.ANM.REACTION_WITH_TYPE(t, n, s, i, a) : E.ANM.REACTION(t, n, s, i)
 }
 
 function C(e, t, n) {
@@ -128,12 +128,12 @@ function C(e, t, n) {
   let i = null != (r = n.id) ? r : n.name;
   return E.ANM.POLL_ANSWER_VOTERS(e, t, i)
 }
-async function w(e) {
+async function R(e) {
   let {
     channelId: t,
     messageId: n,
     emoji: i,
-    limit: o,
+    limit: a,
     after: s,
     type: c
   } = e, u = c === l.O.VOTE ? C(t, n, i) : N({
@@ -143,14 +143,14 @@ async function w(e) {
   }), d = await r.tn.get({
     url: u,
     query: {
-      limit: o,
+      limit: a,
       after: s,
       type: c
     },
     oldFormErrors: !0,
     rejectWithError: !1
   }), f = c === l.O.VOTE ? d.body.users : d.body;
-  return a.Z.dispatch({
+  return o.Z.dispatch({
     type: "MESSAGE_REACTION_ADD_USERS",
     channelId: t,
     messageId: n,
@@ -159,17 +159,17 @@ async function w(e) {
     reactionType: c
   }), f
 }
-async function R(e, t, n) {
-  let a = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : "Message",
+async function P(e, t, n) {
+  let o = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : "Message",
     u = arguments.length > 4 ? arguments[4] : void 0,
     f = null != u && !!u.burst,
     p = null != u && !!u.isRetry;
-  if (!p && j(e, t, n, f)) return void o.Z.show({
+  if (!p && k(e, t, n, f)) return void a.Z.show({
     title: b.intl.string(b.t["uaUU/v"]),
     body: b.intl.string(b.t.psMorq),
     confirmText: b.intl.string(b.t["NX+WJC"])
   });
-  let h = await k(n, f);
+  let h = await M(n, f);
   return A("MESSAGE_REACTION_ADD", e, t, n, {
     burst: f,
     colors: h
@@ -181,13 +181,13 @@ async function R(e, t, n) {
       userId: "@me"
     }),
     query: {
-      location: a,
+      location: o,
       type: f ? l.O.BURST : l.O.NORMAL
     },
     oldFormErrors: !0,
     rejectWithError: !1
   }).then(() => {
-    if ("Message Shortcut" === a) {
+    if ("Message Shortcut" === o) {
       var r;
       let i = d.Z.getChannel(e);
       _.default.track(E.rMx.MESSAGE_SHORTCUT_ACTION_SENT, O({
@@ -210,7 +210,7 @@ async function R(e, t, n) {
       name: n.name
     }))
   }).catch(r => {
-    S(r, () => R(e, t, n, a, {
+    S(r, () => P(e, t, n, o, {
       burst: f,
       isRetry: !0
     }), {
@@ -225,14 +225,14 @@ async function R(e, t, n) {
   })
 }
 
-function P(e) {
+function w(e) {
   let {
     channelId: t,
     messageId: n,
     emoji: r,
     key: i
   } = e;
-  a.Z.dispatch({
+  o.Z.dispatch({
     type: "BURST_REACTION_EFFECT_PLAY",
     channelId: t,
     messageId: n,
@@ -255,18 +255,18 @@ async function D(e, t, n) {
   })
 }
 async function L(e, t, n, i) {
-  let a = null != i && !!i.isRetry;
+  let o = null != i && !!i.isRetry;
   await c.Z.unarchiveThreadIfNecessary(e);
-  let o = null === n.id ? n.name : "".concat(n.name, ":").concat(n.id);
+  let a = null === n.id ? n.name : "".concat(n.name, ":").concat(n.id);
   r.tn.del({
-    url: E.ANM.REMOVE_EMOJI_REACTIONS(e, t, o),
+    url: E.ANM.REMOVE_EMOJI_REACTIONS(e, t, a),
     oldFormErrors: !0,
     rejectWithError: !1
   }).catch(r => {
     S(r, () => L(e, t, n, {
       isRetry: !0
     }), {
-      isRetry: a
+      isRetry: o
     })
   })
 }
@@ -274,41 +274,41 @@ async function x(e) {
   let {
     channelId: t,
     messageId: n,
-    emoji: a,
-    location: o = "Message",
+    emoji: o,
+    location: a = "Message",
     userId: s,
     options: u
   } = e, d = null != u && !!u.burst, f = null != u && !!u.isRetry;
-  A("MESSAGE_REACTION_REMOVE", t, n, a, {
+  A("MESSAGE_REACTION_REMOVE", t, n, o, {
     userId: s,
     burst: d
   }), await c.Z.unarchiveThreadIfNecessary(t), r.tn.del({
     url: N({
       channelId: t,
       messageId: n,
-      emoji: a,
+      emoji: o,
       userId: null != s ? s : "@me",
       type: d ? l.O.BURST : l.O.NORMAL,
       useTypeEndpoint: !0
     }),
     query: {
-      location: o,
+      location: a,
       burst: d
     },
     oldFormErrors: !0,
     rejectWithError: !1
   }).then(() => {
     (null == u ? void 0 : u.burst) ? i.uv.announce(b.intl.formatToPlainString(b.t["3l9f6u"], {
-      name: a.name
+      name: o.name
     })): i.uv.announce(b.intl.formatToPlainString(b.t["DQxi+/"], {
-      name: a.name
+      name: o.name
     }))
   }).catch(async e => {
     if (S(e, () => x({
         channelId: t,
         messageId: n,
-        emoji: a,
-        location: o,
+        emoji: o,
+        location: a,
         userId: s,
         options: {
           burst: d,
@@ -317,20 +317,20 @@ async function x(e) {
       }), {
         isRetry: f
       })) {
-      let e = await k(a, d);
-      A("MESSAGE_REACTION_ADD", t, n, a, {
+      let e = await M(o, d);
+      A("MESSAGE_REACTION_ADD", t, n, o, {
         userId: s,
         burst: d,
         colors: e
       }), (null == u ? void 0 : u.burst) ? i.uv.announce(b.intl.formatToPlainString(b.t.OamVbW, {
-        name: a.name
+        name: o.name
       })) : i.uv.announce(b.intl.formatToPlainString(b.t["tD9+b2"], {
-        name: a.name
+        name: o.name
       }))
     }
   })
 }
-async function k(e, t) {
+async function M(e, t) {
   let n = [];
   if (t) try {
     n = await (0, m.B6)(e)
@@ -338,7 +338,7 @@ async function k(e, t) {
   return n
 }
 
-function j(e, t, n, r) {
+function k(e, t, n, r) {
   let i = f.Z.getMessage(e, t);
   return null != i && i.userHasReactedWithEmoji(n, r)
 }

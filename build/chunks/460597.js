@@ -6,16 +6,16 @@ n.d(t, {
 var r = n(754700);
 n(742635);
 var i = n(458708),
-  a = n(608591);
-let o = e => {
+  o = n(608591);
+let a = e => {
     switch (e.type) {
       case r.X.WATCH_VIDEO:
         return {
-          type: r.X.WATCH_VIDEO, target: e.target, assets: (0, a._c)(e.assets), messages: (0, a.I9)(e.messages)
+          type: r.X.WATCH_VIDEO, target: e.target, assets: (0, o._c)(e.assets), messages: (0, o.I9)(e.messages)
         };
       case r.X.WATCH_VIDEO_ON_MOBILE:
         return {
-          type: r.X.WATCH_VIDEO_ON_MOBILE, target: e.target, assets: (0, a.c1)(e.assets), messages: (0, a.jZ)(e.messages)
+          type: r.X.WATCH_VIDEO_ON_MOBILE, target: e.target, assets: (0, o.c1)(e.assets), messages: (0, o.jZ)(e.messages)
         };
       case r.X.PLAY_ON_DESKTOP:
         return {
@@ -59,7 +59,7 @@ let o = e => {
     try {
       let t = Object.entries(e.tasks).map(e => {
         let [t, n] = e;
-        return [t, o(n)]
+        return [t, a(n)]
       }).filter(e => {
         let [t, n] = e;
         return null !== n

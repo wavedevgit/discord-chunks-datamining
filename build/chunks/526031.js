@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(255367),
   i = n(197723),
-  a = n(704215),
-  o = n(755721),
+  o = n(704215),
+  a = n(755721),
   s = n(481060),
   l = n(100527),
   c = n(906732),
@@ -76,13 +76,13 @@ function b(e) {
   };
   return (0, r.jsx)(u.Z, {
     hideDismissButton: !0,
-    dismissibleContent: a.z.CUSTOM_STATUS_PROMPTS_COACHMARK,
+    dismissibleContent: o.z.CUSTOM_STATUS_PROMPTS_COACHMARK,
     tryItText: (0, r.jsx)(s.Text, {
       variant: "text-xs/semibold",
       color: "always-white",
       children: _.intl.string(_.t.RzWDqa)
     }),
-    tryItButtonColor: o.Tt.BRAND,
+    tryItButtonColor: a.Tt.BRAND,
     onTryFeature: b,
     header: (0, r.jsx)(s.X6q, {
       variant: "heading-sm/bold",
@@ -113,8 +113,8 @@ function y(e) {
     children: t,
     markAsDismissed: n,
     targetElementRef: i,
-    onTryFeature: a,
-    positionKey: o
+    onTryFeature: o,
+    positionKey: a
   } = e;
   return (0, r.jsx)(s.yRy, {
     targetElementRef: i,
@@ -123,10 +123,10 @@ function y(e) {
     align: "center",
     shouldShow: !0,
     animation: s.yRy.Animation.TRANSLATE,
-    positionKey: o,
+    positionKey: a,
     renderPopout: () => (0, r.jsx)(b, {
       markAsDismissed: n,
-      onTryFeature: a
+      onTryFeature: o
     }),
     children: t
   })

@@ -6,8 +6,8 @@ n.d(t, {
 }), n(388685);
 var r = n(255367),
   i = n(73800),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(481060),
   l = n(911969),
   c = n(739754),
@@ -78,7 +78,7 @@ function O(e) {
   let {
     selectActionComponent: t,
     queryOptions: n,
-    renderIcon: a,
+    renderIcon: o,
     renderOptionLabel: h,
     defaultValues: g
   } = e, {
@@ -86,17 +86,17 @@ function O(e) {
     placeholder: O,
     maxValues: v,
     disabled: I
-  } = t, [T, S] = i.useState(!1), [A, N] = i.useState(!1), [C, w] = i.useState(new Map(null == g ? void 0 : g.map(e => [e.value, e]))), [R, P] = i.useState(new Set(C.keys())), [D, L] = i.useState(() => (null != g ? g : []).map(e => e.value)), [x, k] = i.useState(0);
+  } = t, [T, S] = i.useState(!1), [A, N] = i.useState(!1), [C, R] = i.useState(new Map(null == g ? void 0 : g.map(e => [e.value, e]))), [P, w] = i.useState(new Set(C.keys())), [D, L] = i.useState(() => (null != g ? g : []).map(e => e.value)), [x, M] = i.useState(0);
   i.useEffect(() => {
     let e = (null != g ? g : []).map(e => e.value);
     if (e.every(e => D.includes(e)) && D.every(t => e.includes(t))) return;
     L(e);
     let t = new Map(null == g ? void 0 : g.map(e => [e.value, e]));
-    w(t), P(new Set(t.keys())), k(e => e + 1)
+    R(t), w(new Set(t.keys())), M(e => e + 1)
   }, [g, D]);
   let {
-    state: j,
-    executeStateUpdate: M,
+    state: k,
+    executeStateUpdate: j,
     visualState: U,
     isDisabled: G,
     error: B
@@ -105,24 +105,24 @@ function O(e) {
     selectedOptions: Array.from(C.values())
   }), Z = v > 1, F = U === d.gH.LOADING;
   i.useEffect(() => {
-    if ((null == j ? void 0 : j.type) === l.re.USER_SELECT || (null == j ? void 0 : j.type) === l.re.ROLE_SELECT || (null == j ? void 0 : j.type) === l.re.MENTIONABLE_SELECT || (null == j ? void 0 : j.type) === l.re.CHANNEL_SELECT) {
-      let e = new Map(j.selectedOptions.map(e => [e.value, e]));
-      w(e), P(new Set(e.keys()))
+    if ((null == k ? void 0 : k.type) === l.re.USER_SELECT || (null == k ? void 0 : k.type) === l.re.ROLE_SELECT || (null == k ? void 0 : k.type) === l.re.MENTIONABLE_SELECT || (null == k ? void 0 : k.type) === l.re.CHANNEL_SELECT) {
+      let e = new Map(k.selectedOptions.map(e => [e.value, e]));
+      R(e), w(new Set(e.keys()))
     }
-  }, [j]);
+  }, [k]);
   let V = i.useCallback(() => {
-    M({
+    j({
       type: y,
       selectedOptions: Array.from(C.values())
-    }) && P(new Set(C.keys()))
-  }, [M, y, C]);
+    }) && w(new Set(C.keys()))
+  }, [j, y, C]);
   i.useEffect(() => {
-    !T && !A && (C.size === R.size && Array.from(C.keys()).every(e => R.has(e)) || V())
-  }, [T, A, R, C, V]);
+    !T && !A && (C.size === P.size && Array.from(C.keys()).every(e => P.has(e)) || V())
+  }, [T, A, P, C, V]);
   let H = e => {
-      T || N(!0), w(new Map(e.map(e => [e.value, e])))
+      T || N(!0), R(new Map(e.map(e => [e.value, e])))
     },
-    Y = e => w(null != e ? new Map([
+    Y = e => R(null != e ? new Map([
       [e.value, e]
     ]) : new Map),
     W = e => new Promise(t => {
@@ -131,9 +131,9 @@ function O(e) {
     K = (e, t) => {
       let {
         inPill: n
-      } = t, i = n ? 16 : 24, o = a(e, i);
-      return null != o ? (0, r.jsx)(b, {
-        icon: o,
+      } = t, i = n ? 16 : 24, a = o(e, i);
+      return null != a ? (0, r.jsx)(b, {
+        icon: a,
         iconSize: i
       }) : null
     },
@@ -160,7 +160,7 @@ function O(e) {
         value: Array.from(C.values()),
         onChange: H,
         multi: !0,
-        inputClassNames: o()({
+        inputClassNames: a()({
           [_.soloInput]: 0 === C.size,
           [_.inlineInput]: C.size > 0,
           [_.hidden]: !z

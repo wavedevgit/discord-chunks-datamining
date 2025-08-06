@@ -1,11 +1,11 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => j
+  Z: () => k
 }), n(415506), n(388685);
 var r, i = n(255367),
-  a = n(73800),
-  o = n(442837),
+  o = n(73800),
+  a = n(442837),
   s = n(692547),
   l = n(755721),
   c = n(481060),
@@ -49,7 +49,7 @@ function C(e) {
   return e
 }
 
-function w(e, t) {
+function R(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -60,14 +60,14 @@ function w(e, t) {
   return n
 }
 
-function R(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : w(Object(t)).forEach(function(n) {
+function P(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : R(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-var P = function(e) {
+var w = function(e) {
   return e.PLAY = "play", e.NOW_PLAYING = "now_playing", e.INSTALL = "install", e.UPDATE = "update", e.PAUSED = "paused", e.LOCATE = "locate", e.UNINSTALLING = "uninstalling", e.QUEUED = "queued", e.DOWNLOADING = "downloading", e.UNSUPPORTED_OS = "unsupported_os", e.ADD_TO_LIBRARY = "add_to_library", e.PREORDER_WAIT = "preorder_wait", e
-}(P || {});
+}(w || {});
 let D = Object.freeze({
     [T.apO.PLAY]: "play",
     [T.apO.INSTALL]: "install",
@@ -84,9 +84,9 @@ function x(e) {
     date: t
   }) : null
 }
-class k extends(r = a.Component) {
+class M extends(r = o.Component) {
   get analyticsLocation() {
-    return R(C({}, this.props.analyticsContext.location), {
+    return P(C({}, this.props.analyticsContext.location), {
       object: T.qAy.BUTTON_CTA
     })
   }
@@ -133,8 +133,8 @@ class k extends(r = a.Component) {
       fullWidth: t,
       size: n,
       color: r,
-      customDisabledColor: a,
-      isPlayShiny: o,
+      customDisabledColor: o,
+      isPlayShiny: a,
       onDropdownOpen: s,
       onDropdownClose: l,
       analyticsListSort: c,
@@ -146,8 +146,8 @@ class k extends(r = a.Component) {
       fullWidth: t,
       size: n,
       color: r,
-      customDisabledColor: a,
-      isShiny: o,
+      customDisabledColor: o,
+      isShiny: a,
       onDropdownOpen: s,
       onDropdownClose: l,
       analyticsListSort: c,
@@ -158,8 +158,8 @@ class k extends(r = a.Component) {
     let {
       className: n,
       fullWidth: r,
-      size: a,
-      customDisabledColor: o,
+      size: o,
+      customDisabledColor: a,
       tooltipPosition: s
     } = this.props;
     return (0, i.jsxs)("div", {
@@ -167,8 +167,8 @@ class k extends(r = a.Component) {
       children: [(0, i.jsxs)(l.zx, {
         className: n,
         fullWidth: r,
-        size: a,
-        color: null != o ? o : A.disabledButtonColor,
+        size: o,
+        color: null != a ? a : A.disabledButtonColor,
         disabled: !0,
         children: [this.getText(e), this.renderProgressBar()]
       }), (0, i.jsx)(c.ua7, {
@@ -201,15 +201,15 @@ class k extends(r = a.Component) {
     let {
       className: n,
       fullWidth: r,
-      size: a,
-      color: o,
+      size: o,
+      color: a,
       isCloudSyncing: s
     } = this.props;
     return (0, i.jsxs)(l.zx, {
       className: n,
       fullWidth: r,
-      size: a,
-      color: null != o ? o : l.zx.Colors.GREEN,
+      size: o,
+      color: null != a ? a : l.zx.Colors.GREEN,
       submitting: "uninstalling" === e || s,
       onClick: e => this.handleClick(e, t),
       children: [this.getText(e), this.renderProgressBar()]
@@ -263,22 +263,22 @@ class k extends(r = a.Component) {
   }
 }
 
-function j(e) {
+function k(e) {
   let {
     libraryApplication: t
-  } = e, n = (0, d.O)(), [r, a] = (0, o.Wu)([g.Z, E.Z], () => [(0, h.i)(t, g.Z, E.Z), g.Z.getState(t.id, t.branchId)], [t]), s = (0, o.e7)([m.Z], () => m.Z.isSyncing(t.id, t.branchId), [t]), l = (0, o.e7)([p.Z], () => p.Z.hasNoBuild(t.id, t.branchId), [t]);
-  return (0, i.jsx)(k, R(C({}, e), {
+  } = e, n = (0, d.O)(), [r, o] = (0, a.Wu)([g.Z, E.Z], () => [(0, h.i)(t, g.Z, E.Z), g.Z.getState(t.id, t.branchId)], [t]), s = (0, a.e7)([m.Z], () => m.Z.isSyncing(t.id, t.branchId), [t]), l = (0, a.e7)([p.Z], () => p.Z.hasNoBuild(t.id, t.branchId), [t]);
+  return (0, i.jsx)(M, P(C({}, e), {
     analyticsContext: n,
     actionState: r,
-    dispatchState: a,
+    dispatchState: o,
     isCloudSyncing: s,
     hasNoBuild: l
   }))
 }
-N(k, "defaultProps", {
+N(M, "defaultProps", {
   fullWidth: !1,
   size: l.zx.Sizes.LARGE,
   hideProgress: !1,
   isPlayShiny: !1,
   tooltipPosition: "top"
-}), N(k, "ButtonStates", P)
+}), N(M, "ButtonStates", w)

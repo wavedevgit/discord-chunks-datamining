@@ -40,20 +40,20 @@ function c(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let d = [],
-  u = {},
+let u = [],
+  d = {},
   h = {};
 class p extends(r = i.ZP.Store) {
   getSearchState(e) {
     var t;
-    return null != (t = u[e]) ? t : {
+    return null != (t = d[e]) ? t : {
       mostRecentQuery: "",
       fetching: !1
     }
   }
   getSearchResults(e, t) {
     var n, r, i;
-    return null != (i = null == (r = h[e]) || null == (n = r[t]) ? void 0 : n.results) ? i : d
+    return null != (i = null == (r = h[e]) || null == (n = r[t]) ? void 0 : n.results) ? i : u
   }
   shouldFetch(e, t) {
     var n, r;
@@ -68,7 +68,7 @@ let f = new p(l.Z, {
       channelId: t,
       query: n
     } = e;
-    u[t] = {
+    d[t] = {
       fetching: !0,
       mostRecentQuery: n
     }
@@ -79,7 +79,7 @@ let f = new p(l.Z, {
       query: n,
       results: r
     } = e;
-    u[t] = c(o({}, u[t]), {
+    d[t] = c(o({}, d[t]), {
       fetching: !1
     });
     let i = [];
@@ -97,7 +97,7 @@ let f = new p(l.Z, {
     let {
       channelId: t
     } = e;
-    u[t] = c(o({}, u[t]), {
+    d[t] = c(o({}, d[t]), {
       fetching: !1
     })
   },
@@ -105,7 +105,7 @@ let f = new p(l.Z, {
     let {
       channelId: t
     } = e;
-    u[t] = {
+    d[t] = {
       fetching: !1,
       mostRecentQuery: ""
     }
@@ -115,7 +115,7 @@ let f = new p(l.Z, {
       channelId: t,
       query: n
     } = e;
-    u[t] = {
+    d[t] = {
       fetching: !1,
       mostRecentQuery: n
     }
@@ -125,13 +125,13 @@ let f = new p(l.Z, {
     let {
       channelId: n,
       guildId: r
-    } = e, i = null == (t = u[n]) ? void 0 : t.mostRecentQuery;
+    } = e, i = null == (t = d[n]) ? void 0 : t.mostRecentQuery;
     if (null == i) return;
     let l = h[n][i];
     if (null == l) return;
     let a = l.results.filter(e => e.guildId !== r);
     h[n] = c(o({}, h[n]), {
-      [u[n].mostRecentQuery]: c(o({}, l), {
+      [d[n].mostRecentQuery]: c(o({}, l), {
         results: a
       })
     })

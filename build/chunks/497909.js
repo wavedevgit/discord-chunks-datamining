@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685), n(49124);
 var r = n(668757),
   i = n(902704),
-  a = n(147913),
-  o = n(818083),
+  o = n(147913),
+  a = n(818083),
   s = n(353926),
   l = n(894276);
 
@@ -28,7 +28,7 @@ function d() {
 }
 
 function f() {
-  l.Re.forEach(e => e.setExperiment((0, o.B)({
+  l.Re.forEach(e => e.setExperiment((0, a.B)({
     kind: "user",
     id: e.id,
     label: e.getLabel(),
@@ -50,7 +50,7 @@ function f() {
     })
   })))
 }
-class _ extends a.Z {
+class _ extends o.Z {
   _initialize() {
     f()
   }

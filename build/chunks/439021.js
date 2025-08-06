@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(255367),
   i = n(481060),
-  a = n(502109),
-  o = n(388032),
+  o = n(502109),
+  a = n(388032),
   s = n(646175);
 
 function l(e, t, n) {
@@ -41,7 +41,7 @@ function u(e) {
       paymentRequestWallet: _
     } = e,
     p = {
-      paymentLabel: o.intl.string(o.t.ZURqX1),
+      paymentLabel: a.intl.string(a.t.ZURqX1),
       paymentRequestRef: f,
       renderConnectorView: !0,
       onStripePaymentMethodReceived: l,
@@ -55,10 +55,10 @@ function u(e) {
         type: i.RAz.PULSING_ELLIPSIS
       })
     };
-  return t = "applePay" === _ ? (0, r.jsx)(a.Ch, c({}, p)) : (0, r.jsx)(a.Tr, c({}, p)), (0, r.jsx)("div", {
+  return t = "applePay" === _ ? (0, r.jsx)(o.Ch, c({}, p)) : (0, r.jsx)(o.Tr, c({}, p)), (0, r.jsx)("div", {
     className: s.body,
     children: (0, r.jsx)(i.hjN, {
-      title: o.intl.string(o.t.eQ2bLi),
+      title: a.intl.string(a.t.eQ2bLi),
       children: t
     })
   })

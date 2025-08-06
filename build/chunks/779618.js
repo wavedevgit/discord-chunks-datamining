@@ -1,13 +1,13 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => o
+  Z: () => a
 });
 var r = n(358085),
   i = n(924557),
-  a = n(65154);
+  o = n(65154);
 
-function o(e) {
+function a(e) {
   let {
     ignorePlatformRestriction: t
   } = i.NV.getCurrentConfig({
@@ -15,5 +15,5 @@ function o(e) {
   }, {
     autoTrackExposure: !1
   });
-  return t || r.isDesktop() && e.getMediaEngine().supports(a.AN.CLIPS)
+  return t || r.isDesktop() && e.getMediaEngine().supports(o.AN.CLIPS)
 }

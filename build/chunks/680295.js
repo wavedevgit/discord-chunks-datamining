@@ -6,8 +6,8 @@ n.d(t, {
 }), n(388685);
 var r = n(255367),
   i = n(73800),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(442837),
   l = n(607070),
   c = n(619899),
@@ -47,7 +47,7 @@ let v = e => {
     let {
       bannerAdjustment: t = 0,
       maxLoops: n,
-      resetOnHover: a = !1,
+      resetOnHover: o = !1,
       isHovering: s = !1,
       useOpacityOnHover: l = !0,
       autoPlay: c = !0,
@@ -59,18 +59,18 @@ let v = e => {
     } = e, v = i.useRef(null), [I, T] = i.useState([]);
     (0, E.Z)(g);
     let [S, A] = i.useState(0), [N, C] = i.useState(0), {
-      accessibilityLabel: w
-    } = g, [R, P] = i.useState(-O), {
+      accessibilityLabel: R
+    } = g, [P, w] = i.useState(-O), {
       stop: D,
       reset: L,
       ticking: x
     } = (0, _.Z)(e => {
-      P(t => t + e)
-    }), k = i.useRef(O);
+      w(t => t + e)
+    }), M = i.useRef(O);
     i.useEffect(() => {
-      k.current = O
+      M.current = O
     }), i.useEffect(() => {
-      P(-k.current), T((0, h.H)(g.effects))
+      w(-M.current), T((0, h.H)(g.effects))
     }, [g]), i.useEffect(() => {
       let e = 0,
         t = 1 / 0;
@@ -79,29 +79,29 @@ let v = e => {
         r > e && (e = r), n.loop && n.start < t && (t = n.start)
       }), A(t), C(e)
     }, [C, I]);
-    let [j, M] = i.useState(!1);
+    let [k, j] = i.useState(!1);
     return i.useEffect(() => {
-      !0 === c || s || (D(), P(0)), !s && j && x.current && (D(), P(0)), a && s && !x.current && (L(), g.animationType === f.Q.PERSISTENT ? P(u === f.j.FromStart ? 0 : S) : P(0))
-    }, [s, j, S, a, D, L, x, g.animationType, c, u]), (0, r.jsx)("div", {
+      !0 === c || s || (D(), w(0)), !s && k && x.current && (D(), w(0)), o && s && !x.current && (L(), g.animationType === f.Q.PERSISTENT ? w(u === f.j.FromStart ? 0 : S) : w(0))
+    }, [s, k, S, o, D, L, x, g.animationType, c, u]), (0, r.jsx)("div", {
       ref: v,
-      className: o()(b.profileEffects, {
+      className: a()(b.profileEffects, {
         [b.hovered]: s && l
       }),
-      "aria-label": w,
+      "aria-label": R,
       role: "img",
       children: (0, r.jsx)("div", {
         className: y ? b.innerNoRadius : b.inner,
         children: I.map((e, i) => {
           if (!x.current && g.animationType === f.Q.PERSISTENT && null != g.staticFrameSrc && 0 === i && !0 === c) {
-            var a, o, s, l;
+            var o, a, s, l;
             let {
               staticFrameSrc: n
             } = g;
             return (0, r.jsx)("img", {
               className: b.effect,
               style: {
-                top: null != (s = null == (a = e.position) ? void 0 : a.y) ? s : 0 - t,
-                left: null != (l = null == (o = e.position) ? void 0 : o.x) ? l : 0
+                top: null != (s = null == (o = e.position) ? void 0 : o.y) ? s : 0 - t,
+                left: null != (l = null == (a = e.position) ? void 0 : a.x) ? l : 0
               },
               src: n,
               alt: "",
@@ -112,9 +112,9 @@ let v = e => {
             layerConfig: e,
             animationType: g.animationType,
             ticking: x.current,
-            time: R,
-            hasPlayedThrough: j,
-            setHasPlayedThrough: M,
+            time: P,
+            hasPlayedThrough: k,
+            setHasPlayedThrough: j,
             urlQueryString: p,
             maxLoops: n,
             loopEnd: N,
@@ -129,7 +129,7 @@ let v = e => {
       config: t,
       useThumbnail: n,
       bannerAdjustment: i = 0,
-      noBorderRadius: a,
+      noBorderRadius: o,
       isHovering: s = !1,
       useOpacityOnHover: l = !0
     } = e, {
@@ -138,13 +138,13 @@ let v = e => {
       accessibilityLabel: d
     } = t;
     return (0, r.jsx)("div", {
-      className: o()(b.profileEffects, {
+      className: a()(b.profileEffects, {
         [b.hovered]: s && l
       }),
       "aria-label": d,
       role: "img",
       children: (0, r.jsx)("div", {
-        className: a ? b.innerNoRadius : b.inner,
+        className: o ? b.innerNoRadius : b.inner,
         children: (0, r.jsx)("img", {
           src: n && !s ? u : c,
           className: b.effect,
@@ -160,7 +160,7 @@ let v = e => {
   T = e => {
     let t = (0, s.e7)([u.Z], () => u.Z.isFocused()),
       n = (0, s.e7)([l.Z], () => l.Z.useReducedMotion),
-      [a, o] = i.useState(!1),
+      [o, a] = i.useState(!1),
       d = (0, p.V)(e.profileEffectId),
       _ = (0, c.ex)(null == d ? void 0 : d.config),
       m = (0, h.C)(null == d ? void 0 : d.config),
@@ -172,12 +172,12 @@ let v = e => {
       noBorderRadius: e.noBorderRadius,
       isHovering: e.isHovering,
       useOpacityOnHover: e.useOpacityOnHover
-    }) : a ? (0, r.jsx)(v, O({
+    }) : o ? (0, r.jsx)(v, O({
       profileEffectConfig: E
     }, e)) : (0, r.jsx)(g.Z, {
       profileEffectConfig: E,
       onReady: () => {
-        o(!0)
+        a(!0)
       }
     }) : null
   }

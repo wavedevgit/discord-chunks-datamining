@@ -7,8 +7,8 @@ n.d(t, {
 }), n(388685), n(415506);
 var r = n(512722),
   i = n.n(r),
-  a = n(911969),
-  o = n(581364),
+  o = n(911969),
+  a = n(581364),
   s = n(752305),
   l = n(255963),
   c = n(365704),
@@ -45,7 +45,7 @@ function f(e) {
     commands: u.L8.DISABLED,
     allowStickers: !0 === _,
     allowSoundmoji: !0 === p,
-    forNonStringCommandOption: null != n && n.type !== a.jw.STRING,
+    forNonStringCommandOption: null != n && n.type !== o.jw.STRING,
     hideMentionDescription: !0 === h,
     hidePersonalInformation: !0 === m,
     chatInputType: g,
@@ -73,7 +73,7 @@ function f(e) {
     }
   };
   if (null != n) {
-    let e = (0, o.$z)(n);
+    let e = (0, a.$z)(n);
     e.canMentionChannels && (I.mentions.channel = u.nS.ALLOW_SELECTABLE), e.canMentionEveryone && (I.mentions.global = e.canMentionHere ? u.VV.ALLOW_EVERYONE_OR_HERE : u.VV.ALLOW_EVERYONE), e.canMentionRoles && (I.mentions.role = e.canMentionNonMentionableRoles ? u.Fw.ALLOW_ALL : u.Fw.ALLOW_MENTIONABLE), e.canMentionUsers && (I.mentions.user = e.canMentionAnyGuildUser ? u.h3.ALLOW_GUILD : u.h3.ALLOW_CHANNEL), I.hideMentionDescription = !0
   } else l && (I.mentions.channel = u.nS.ALLOW_SELECTABLE), i && (I.mentions.role = u.Fw.ALLOW_MENTIONABLE), r && (I.mentions.user = u.h3.ALLOW_CHANNEL), c && (I.mentions.global = u.VV.ALLOW_EVERYONE_OR_HERE);
   return (null == (t = g.commands) ? void 0 : t.enabled) && (d ? I.commands = f ? u.L8.NEW_TEXT_ONLY : u.L8.NEW : I.commands = u.L8.OLD_BUILT_INS), null != n && null != n.channelTypes && (I.allowedChannelTypes = n.channelTypes), I
@@ -85,14 +85,14 @@ function _(e) {
     channel: n,
     guild: r,
     query: i,
-    isAtStart: a,
-    options: o
+    isAtStart: o,
+    options: a
   } = e, s = c.W[t];
   if (null != s.sentinel) {
     if (!i.startsWith(s.sentinel)) return !1;
     i = i.substring(s.sentinel.length)
   }
-  return null == s.matches || !!s.matches(n, r, i, a, o)
+  return null == s.matches || !!s.matches(n, r, i, o, a)
 }
 
 function p(e) {
@@ -100,8 +100,8 @@ function p(e) {
     channel: t,
     guild: n,
     options: r,
-    currentWord: a,
-    currentWordIsAtStart: o,
+    currentWord: o,
+    currentWordIsAtStart: a,
     textValue: s,
     optionText: f,
     parentAutocompleteInputType: p,
@@ -174,7 +174,7 @@ function p(e) {
           channel: t,
           guild: n,
           query: s,
-          isAtStart: o,
+          isAtStart: a,
           options: r
         })) {
         m = {
@@ -185,18 +185,18 @@ function p(e) {
         break
       }
     } else if (e === u.eq.EMOJIS_AND_STICKERS) {
-      if (null != a && a.length > 0 && (0, l.x)(d.qR.AutocompleteTyped), null != a && _({
+      if (null != o && o.length > 0 && (0, l.x)(d.qR.AutocompleteTyped), null != o && _({
           type: e,
           channel: t,
           guild: n,
-          query: a,
-          isAtStart: o,
+          query: o,
+          isAtStart: a,
           options: r
         })) {
         m = {
           type: e,
           typeInfo: I,
-          query: a.substring(null != (y = null == (b = I.sentinel) ? void 0 : b.length) ? y : 0)
+          query: o.substring(null != (y = null == (b = I.sentinel) ? void 0 : b.length) ? y : 0)
         };
         break
       }
@@ -205,18 +205,18 @@ function p(e) {
       typeInfo: I,
       query: h
     });
-    else if (null != a && _({
+    else if (null != o && _({
         type: e,
         channel: t,
         guild: n,
-        query: a,
-        isAtStart: o,
+        query: o,
+        isAtStart: a,
         options: r
       })) {
       m = {
         type: e,
         typeInfo: I,
-        query: a.substring(null != (v = null == (O = I.sentinel) ? void 0 : O.length) ? v : 0)
+        query: o.substring(null != (v = null == (O = I.sentinel) ? void 0 : O.length) ? v : 0)
       };
       break
     }
@@ -229,15 +229,15 @@ function h(e, t) {
   if (null == t || null == e) return null;
   if (null != e.choices || e.autocomplete) n = u.eq.CHOICES;
   else switch (e.type) {
-    case a.jw.BOOLEAN:
+    case o.jw.BOOLEAN:
       n = u.eq.CHOICES;
       break;
-    case a.jw.CHANNEL:
+    case o.jw.CHANNEL:
       n = u.eq.CHANNELS;
       break;
-    case a.jw.ROLE:
-    case a.jw.USER:
-    case a.jw.MENTIONABLE:
+    case o.jw.ROLE:
+    case o.jw.USER:
+    case o.jw.MENTIONABLE:
       n = u.eq.MENTIONS;
       break;
     default:

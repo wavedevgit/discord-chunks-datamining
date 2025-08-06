@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(442837),
   i = n(348326),
-  a = n(570140),
-  o = n(710845),
+  o = n(570140),
+  a = n(710845),
   s = n(314897),
   l = n(115522);
 
@@ -18,7 +18,7 @@ function c(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let u = new o.Z("DatabaseManager"),
+let u = new a.Z("DatabaseManager"),
   d = !1;
 class f extends r.ZP.Store {
   initialize() {
@@ -78,12 +78,12 @@ class f extends r.ZP.Store {
     }
   }
   constructor() {
-    super(a.Z, {
+    super(o.Z, {
       CLEAR_CACHES: e => this.handleClearCaches(e),
       CONNECTION_CLOSED: () => this.handleAuthenticationStoreChanged(),
       CONNECTION_OPEN: () => this.handleConnectionOpen(),
       LOGOUT: () => this.handleAuthenticationStoreChanged()
-    }, a.c.Early), c(this, "databases", new Map), c(this, "activeUserId", null), c(this, "preventWritingCachesAgainThisSession", !1)
+    }, o.c.Early), c(this, "databases", new Map), c(this, "activeUserId", null), c(this, "preventWritingCachesAgainThisSession", !1)
   }
 }
 

@@ -2,19 +2,19 @@
 "use strict";
 n.d(t, {
   Q: () => s,
-  Z: () => o
+  Z: () => a
 });
 var r = n(255367);
 n(73800);
 var i = n(275344),
-  a = n(938353);
+  o = n(938353);
 
-function o(e) {
+function a(e) {
   let {
     channelMessageProps: {
       message: t,
       channel: n,
-      compact: o = !1
+      compact: a = !1
     },
     hasSpoilerEmbeds: s,
     handleContextMenu: l,
@@ -30,12 +30,12 @@ function o(e) {
   } = e;
   return u ? null : (0, r.jsx)(i.Z, {
     message: t,
-    children: (0, r.jsx)(a.ZP, {
+    children: (0, r.jsx)(o.ZP, {
       className: g,
       isInteracting: c,
       message: t,
       channel: n,
-      compact: o,
+      compact: a,
       hasSpoilerEmbeds: s,
       isMessageSnapshot: d,
       onMediaItemContextMenu: l,
@@ -52,16 +52,16 @@ function s(e, t) {
   let {
     message: n,
     channel: i,
-    compact: o = !1,
+    compact: a = !1,
     renderThreadAccessory: s,
     disableReactionCreates: l,
     disableReactionUpdates: c,
     isSearchResult: u
   } = e;
-  return (0, r.jsx)(a.$p, {
+  return (0, r.jsx)(o.$p, {
     message: n,
     channel: i,
-    compact: o,
+    compact: a,
     hasSpoilerEmbeds: t,
     renderThreadAccessory: s,
     disableReactionCreates: l,

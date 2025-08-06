@@ -3,7 +3,7 @@
 n.d(t, {
   Eg: () => i,
   SK: () => r,
-  tl: () => a
+  tl: () => o
 });
 let r = {
     primary_color: 0xa9c9ff,
@@ -15,7 +15,7 @@ let r = {
     secondary_color: 0x9fc1ff,
     tertiary_color: null
   },
-  a = [{
+  o = [{
     start: 0xaa3b3b,
     end: 0xff4848,
     name: "fire"

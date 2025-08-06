@@ -8,8 +8,8 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var i = n(295435),
-  a = n(591759),
-  o = n(524444);
+  o = n(591759),
+  a = n(524444);
 
 function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -65,7 +65,7 @@ function d(e) {
 
 function f(e) {
   let t = e.item.originalItem.media;
-  return (0, o.Yi)(u(l({}, e), {
+  return (0, a.Yi)(u(l({}, e), {
     alt: e.item.originalItem.description,
     src: t.proxyUrl,
     original: t.url,
@@ -81,8 +81,8 @@ function f(e) {
 
 function _(e) {
   let t = e.item.originalItem.media,
-    n = a.Z.toURLSafe(t.proxyUrl);
-  return null == n ? null : (n.searchParams.append("format", "webp"), (0, o.lV)(u(l({}, e), {
+    n = o.Z.toURLSafe(t.proxyUrl);
+  return null == n ? null : (n.searchParams.append("format", "webp"), (0, a.lV)(u(l({}, e), {
     poster: n.toString(),
     alt: e.item.originalItem.description,
     src: t.proxyUrl,

@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685), n(953529);
 var r = n(255367),
   i = n(73800),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(66546),
   l = n(442837),
   c = n(481060),
@@ -94,21 +94,21 @@ function C(e) {
   var t;
   let {} = e, {
     activeVoice: n
-  } = (0, m.o)(), a = (0, d.Z)(n), l = (0, h.z)(n), {
+  } = (0, m.o)(), o = (0, d.Z)(n), l = (0, h.z)(n), {
     toggleLoopback: u,
     isLoopbackEnabled: f
-  } = N(), _ = f ? c.Iy5 : c.X_q, b = i.useCallback(() => (0, p.v6)(null), []), O = (0, c.dQu)(c.TVs.colors.BACKGROUND_BASE_LOWER).hex(), C = (0, c.dQu)(c.TVs.colors.WHITE).hex(), w = i.useRef(0), R = n !== a ? w.current + 1 : w.current;
+  } = N(), _ = f ? c.Iy5 : c.X_q, b = i.useCallback(() => (0, p.v6)(null), []), O = (0, c.dQu)(c.TVs.colors.BACKGROUND_BASE_LOWER).hex(), C = (0, c.dQu)(c.TVs.colors.WHITE).hex(), R = i.useRef(0), P = n !== o ? R.current + 1 : R.current;
   i.useEffect(() => {
-    w.current = R
-  }, [R]);
-  let P = null != n,
-    D = !P,
-    L = P && null != a,
-    x = null == n && null != a,
-    k = (0, c.q_F)({
-      opacity: +!!P,
-      height: 72 * !!P,
-      pointerEvents: P ? "auto" : "none",
+    R.current = P
+  }, [P]);
+  let w = null != n,
+    D = !w,
+    L = w && null != o,
+    x = null == n && null != o,
+    M = (0, c.q_F)({
+      opacity: +!!w,
+      height: 72 * !!w,
+      pointerEvents: w ? "auto" : "none",
       backgroundColor: null != (t = null == l ? void 0 : l.baseColor) ? t : O,
       config: e => "backgroundColor" === e ? {
         easing: I,
@@ -116,8 +116,8 @@ function C(e) {
       } : T,
       delay: 100 * !!L
     }, "respect-motion-settings"),
-    j = (0, c.Yzy)(null == l ? void 0 : l.id, {
-      key: R,
+    k = (0, c.Yzy)(null == l ? void 0 : l.id, {
+      key: P,
       from: {
         opacity: 0,
         background: null == l ? void 0 : l.splashGradient
@@ -135,7 +135,7 @@ function C(e) {
         duration: L ? 250 : 200
       }
     }, "respect-motion-settings"),
-    [M] = (0, c.bYB)(2, e => ({
+    [j] = (0, c.bYB)(2, e => ({
       from: L ? {
         translateY: 0,
         opacity: 1
@@ -157,7 +157,7 @@ function C(e) {
       delay: x ? 50 - 50 * e : 200 + 50 * e
     }), "respect-motion-settings", [n]),
     U = (0, c.Yzy)(null == l ? void 0 : l.iconURL, {
-      key: R,
+      key: P,
       from: {
         opacity: 0,
         scale: 80 / 88,
@@ -171,17 +171,17 @@ function C(e) {
       },
       leave: {
         opacity: 0,
-        scale: P ? 80 / 88 : 1,
-        translateX: 24 * !!P,
+        scale: w ? 80 / 88 : 1,
+        translateX: 24 * !!w,
         delay: 150 * !L
       },
       config: e => "opacity" === e ? {
         easing: I,
         duration: 200
-      } : P ? T : A
+      } : w ? T : A
     }, "respect-motion-settings"),
     G = (0, c.Yzy)(null == l ? void 0 : l.name, {
-      key: R,
+      key: P,
       from: {
         opacity: 0,
         scale: L ? .9 : 1,
@@ -213,10 +213,10 @@ function C(e) {
   return (0, r.jsxs)(s.animated.div, {
     className: E.voiceFilterHero,
     "aria-hidden": D,
-    style: k,
+    style: M,
     children: [(0, r.jsx)("div", {
-      className: o()([E.bgGradient, E.bgGradientHighlight])
-    }), j(e => (0, r.jsx)(s.animated.div, {
+      className: a()([E.bgGradient, E.bgGradientHighlight])
+    }), k(e => (0, r.jsx)(s.animated.div, {
       className: E.bgGradient,
       style: e
     })), (0, r.jsx)("div", {
@@ -249,7 +249,7 @@ function C(e) {
         "aria-label": B,
         tooltipClassName: E.tooltip,
         tooltipContentClassName: E.tooltipContent,
-        shouldShow: P,
+        shouldShow: w,
         text: (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(c.X6q, {
             variant: "heading-sm/normal",
@@ -264,16 +264,16 @@ function C(e) {
         }),
         children: e => (0, r.jsx)(s.animated.div, {
           className: E.buttonWrapper,
-          style: M[0],
+          style: j[0],
           children: (0, r.jsx)(c.P3F, v(y({
-            className: o()(E.button, {
+            className: a()(E.button, {
               [E.loopbackEnabled]: f
             }),
             "aria-hidden": D,
             focusProps: {
-              enabled: P
+              enabled: w
             },
-            tabIndex: P ? 0 : -1
+            tabIndex: w ? 0 : -1
           }, e), {
             onClick: () => u(),
             children: (0, r.jsx)(_, {
@@ -285,18 +285,18 @@ function C(e) {
           }))
         })
       }), (0, r.jsx)(c.ua7, {
-        shouldShow: P,
+        shouldShow: w,
         text: g.intl.string(g.t.UvMx7O),
         children: e => (0, r.jsx)(s.animated.div, {
           className: E.buttonWrapper,
-          style: M[1],
+          style: j[1],
           children: (0, r.jsx)(c.P3F, v(y({
             className: E.button,
             "aria-hidden": D,
             focusProps: {
-              enabled: P
+              enabled: w
             },
-            tabIndex: P ? 0 : -1
+            tabIndex: w ? 0 : -1
           }, e), {
             onClick: b,
             children: (0, r.jsx)(c.k$p, {

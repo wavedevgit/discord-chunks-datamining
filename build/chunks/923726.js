@@ -2,10 +2,10 @@
 "use strict";
 n.d(t, {
   $F: () => _,
-  Bt: () => a,
+  Bt: () => o,
   Gp: () => p,
   hQ: () => u,
-  kT: () => o,
+  kT: () => a,
   s1: () => s,
   ss: () => d,
   sy: () => c,
@@ -14,7 +14,7 @@ n.d(t, {
 var r = n(644542),
   i = n(981631);
 
-function a(e) {
+function o(e) {
   let {
     enableRoleSubscriptionsForGuild: t
   } = r.Xv.useExperiment({
@@ -32,7 +32,7 @@ function a(e) {
   return null != e && t && n
 }
 
-function o(e) {
+function a(e) {
   let {
     enableRoleSubscriptionsForGuild: t
   } = r.Xv.getCurrentConfig({

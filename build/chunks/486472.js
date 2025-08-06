@@ -4,8 +4,8 @@ n.d(t, {
   Z: () => g
 }), n(388685);
 var r, i = n(442837),
-  a = n(570140),
-  o = n(710845),
+  o = n(570140),
+  a = n(710845),
   s = n(430824);
 
 function l(e, t, n) {
@@ -16,7 +16,7 @@ function l(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let c = new o.Z("GuildAvailabilityStore"),
+let c = new a.Z("GuildAvailabilityStore"),
   u = new Set;
 
 function d(e) {
@@ -61,7 +61,7 @@ class m extends(r = i.ZP.Store) {
   }
 }
 l(m, "displayName", "GuildAvailabilityStore");
-let g = new m(a.Z, {
+let g = new m(o.Z, {
   CONNECTION_OPEN: d,
   OVERLAY_INITIALIZE: d,
   GUILD_UNAVAILABLE: _,

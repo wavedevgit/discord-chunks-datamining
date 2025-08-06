@@ -6,9 +6,9 @@ n.d(t, {
 });
 var r = n(70956),
   i = n(818083),
-  a = n(427164),
-  o = n(987338);
-let s = (0, a.le)({
+  o = n(427164),
+  a = n(987338);
+let s = (0, o.le)({
     kind: "user",
     name: "2025-07-typing-indicator-delay",
     defaultConfig: {
@@ -93,7 +93,7 @@ let s = (0, a.le)({
         inExperiment: !0
       }
     }],
-    commonTriggerPoint: o.$P.CONNECTION_OPEN
+    commonTriggerPoint: a.$P.CONNECTION_OPEN
   }),
   c = e => {
     let {

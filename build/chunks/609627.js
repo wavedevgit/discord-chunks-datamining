@@ -2,13 +2,13 @@
 "use strict";
 var r = n(484216),
   i = n(754387),
-  a = n(169774),
-  o = n(808570),
+  o = n(169774),
+  a = n(808570),
   s = n(924125),
   l = n(961271),
   c = n(581079),
   u = n(613078),
-  d = a.isBrowser("IE");
+  d = o.isBrowser("IE");
 
 function f(e, t) {
   if (!e) return "[empty]";
@@ -24,7 +24,7 @@ function _(e, t) {
   }
   var i = e.cloneNode();
   1 === i.nodeType && n.length && i.setAttribute("data-labels", n.join(", "));
-  for (var a = e.childNodes, o = 0; o < a.length; o++) i.appendChild(_(a[o], t));
+  for (var o = e.childNodes, a = 0; a < o.length; a++) i.appendChild(_(o[a], t));
   return i
 }
 
@@ -40,8 +40,8 @@ function h(e) {
 }
 
 function m(e, t, n, r) {
-  var a = s();
-  if (e.extend && o(a, t)) {
+  var o = s();
+  if (e.extend && a(o, t)) {
     n > h(t) && i.logSelectionStateFailure({
       anonymizedDom: p(t),
       extraParams: JSON.stringify({
@@ -52,14 +52,14 @@ function m(e, t, n, r) {
     var l = t === e.focusNode;
     try {
       e.extend(t, n)
-    } catch (o) {
+    } catch (a) {
       throw i.logSelectionStateFailure({
         anonymizedDom: p(t, function(t) {
           var n = [];
-          return t === a && n.push("active element"), t === e.anchorNode && n.push("selection anchor node"), t === e.focusNode && n.push("selection focus node"), n
+          return t === o && n.push("active element"), t === e.anchorNode && n.push("selection anchor node"), t === e.focusNode && n.push("selection focus node"), n
         }),
         extraParams: JSON.stringify({
-          activeElementName: a ? a.nodeName : null,
+          activeElementName: o ? o.nodeName : null,
           nodeIsFocus: t === e.focusNode,
           nodeWasFocus: l,
           selectionRangeCount: e.rangeCount,
@@ -67,11 +67,11 @@ function m(e, t, n, r) {
           selectionAnchorOffset: e.anchorOffset,
           selectionFocusNodeName: e.focusNode ? e.focusNode.nodeName : null,
           selectionFocusOffset: e.focusOffset,
-          message: o ? "" + o : null,
+          message: a ? "" + a : null,
           offset: n
         }, null, 2),
         selectionState: JSON.stringify(r.toJS(), null, 2)
-      }), o
+      }), a
     }
   } else if (e.rangeCount > 0) {
     var c = e.getRangeAt(0);
@@ -79,23 +79,23 @@ function m(e, t, n, r) {
   }
 }
 
-function g(e, t, n, a) {
-  var o = l(t).createRange();
+function g(e, t, n, o) {
+  var a = l(t).createRange();
   if (n > h(t) && (i.logSelectionStateFailure({
       anonymizedDom: p(t),
       extraParams: JSON.stringify({
         offset: n
       }),
-      selectionState: JSON.stringify(a.toJS())
-    }), r.handleExtensionCausedError()), o.setStart(t, n), d) try {
-    e.addRange(o)
-  } catch (e) {} else e.addRange(o)
+      selectionState: JSON.stringify(o.toJS())
+    }), r.handleExtensionCausedError()), a.setStart(t, n), d) try {
+    e.addRange(a)
+  } catch (e) {} else e.addRange(a)
 }
 e.exports = {
   setDraftEditorSelection: function(e, t, n, r, i) {
-    var a = l(t);
-    if (o(a.documentElement, t)) {
-      var s = a.defaultView.getSelection(),
+    var o = l(t);
+    if (a(o.documentElement, t)) {
+      var s = o.defaultView.getSelection(),
         c = e.getAnchorKey(),
         u = e.getAnchorOffset(),
         d = e.getFocusKey(),

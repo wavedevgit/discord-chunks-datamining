@@ -5,9 +5,9 @@ n.d(t, {
 });
 var r = n(626135),
   i = n(360347),
-  a = n(981631);
+  o = n(981631);
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -23,7 +23,7 @@ function s(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      o(e, t, n[t])
+      a(e, t, n[t])
     })
   }
   return e
@@ -33,9 +33,9 @@ function l(e) {
   let {
     tab_opened: t,
     source: n
-  } = e, o = (0, i.Z)();
-  r.default.track(a.rMx.FRIENDS_LIST_CLICKED, s({
+  } = e, a = (0, i.Z)();
+  r.default.track(o.rMx.FRIENDS_LIST_CLICKED, s({
     tab_opened: t,
     source: n
-  }, o))
+  }, a))
 }

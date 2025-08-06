@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(73800),
   i = n(120356),
-  a = n.n(i),
-  o = n(866442),
+  o = n.n(i),
+  a = n(866442),
   s = n(442837),
   l = n(481060),
   c = n(607070),
@@ -63,7 +63,7 @@ function y(e) {
   return {
     profileThemeStyle: (0, r.useMemo)(() => {
       if (null == i || null == p || null == v || null == I) return b;
-      let e = (e, t) => (0, o.ho)(e, y, null, t);
+      let e = (e, t) => (0, a.ho)(e, y, null, t);
       return m({
         "--profile-gradient-primary-color": e(i),
         "--profile-gradient-secondary-color": e(p),
@@ -78,7 +78,7 @@ function y(e) {
         textMixAmount: 25
       }))
     }, [i, p, v, I, O, h, t, y]),
-    profileThemeClassName: a()((0, l.QeD)(t), null != n ? {
+    profileThemeClassName: o()((0, l.QeD)(t), null != n ? {
       [g[n]]: !0
     } : void 0, {
       [d.e3]: null != i,

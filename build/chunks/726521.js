@@ -14,15 +14,15 @@ n.d(t, {
   ic: () => E,
   pX: () => v,
   sq: () => p,
-  tV: () => R,
-  uu: () => w,
+  tV: () => P,
+  uu: () => R,
   wk: () => C,
   zd: () => O
 });
 var r = n(367907),
   i = n(427679),
-  a = n(23750),
-  o = n(598077),
+  o = n(23750),
+  a = n(598077),
   s = n(411198),
   l = n(82554),
   c = n(185625),
@@ -52,7 +52,7 @@ function _(e) {
 }
 
 function p(e, t) {
-  P(l.b.GUILD_DIRECTORY_ENTRY, {
+  w(l.b.GUILD_DIRECTORY_ENTRY, {
     channel_id: e.channelId,
     guild_id: e.guildId
   }), (0, u.m)({
@@ -64,7 +64,7 @@ function p(e, t) {
 }
 
 function h(e, t, n) {
-  P(l.b.MESSAGE, {
+  w(l.b.MESSAGE, {
     message_id: e.id,
     channel_id: e.channel_id
   }), (0, u.m)({
@@ -76,7 +76,7 @@ function h(e, t, n) {
 }
 
 function m(e, t, n) {
-  P(l.b.MESSAGE, {
+  w(l.b.MESSAGE, {
     message_id: e.id,
     channel_id: e.channel_id
   }), (0, u.m)({
@@ -90,7 +90,7 @@ function m(e, t, n) {
 }
 
 function g(e, t, n) {
-  P(l.b.GUILD, {
+  w(l.b.GUILD, {
     guild_id: e.id
   }), (0, u.m)({
     name: l.b.GUILD,
@@ -104,7 +104,7 @@ function g(e, t, n) {
 
 function E(e, t) {
   let n = i.Z.getStageInstanceByChannel(e.id);
-  null != n && (P(l.b.STAGE_CHANNEL, {
+  null != n && (w(l.b.STAGE_CHANNEL, {
     stage_instance_id: n.id,
     channel_id: n.channel_id,
     guild_id: n.guild_id
@@ -118,7 +118,7 @@ function E(e, t) {
 
 function b(e, t) {
   var n;
-  P(l.b.GUILD_SCHEDULED_EVENT, {
+  w(l.b.GUILD_SCHEDULED_EVENT, {
     guild_scheduled_event_id: e.id,
     guild_id: e.guild_id,
     channel_id: null != (n = e.channel_id) ? n : void 0
@@ -131,7 +131,7 @@ function b(e, t) {
 }
 
 function y(e, t) {
-  P(l.b.FIRST_DM, {
+  w(l.b.FIRST_DM, {
     message_id: e.id,
     channel_id: e.channel_id
   }), (0, u.m)({
@@ -154,7 +154,7 @@ async function O(e, t) {
 }
 
 function v(e, t, n, r) {
-  P(l.b.USER, {
+  w(l.b.USER, {
     reported_user_id: e.id
   }), (0, u.m)({
     name: l.b.USER,
@@ -167,7 +167,7 @@ function v(e, t, n, r) {
 }
 
 function I(e, t, n, r) {
-  P(l.b.USER, {
+  w(l.b.USER, {
     reported_user_id: e.id
   }), (0, u.m)({
     name: l.b.USER,
@@ -183,8 +183,8 @@ function I(e, t, n, r) {
 }
 
 function T(e, t) {
-  let n = new o.Z({});
-  P(l.BM.USER, {
+  let n = new a.Z({});
+  w(l.BM.USER, {
     reported_user_id: n.id
   }), (0, u.m)({
     name: l.BM.USER,
@@ -199,7 +199,7 @@ function T(e, t) {
 
 function S(e, t) {
   let n = (0, s.Jh)({});
-  P(l.BM.GUILD, {
+  w(l.BM.GUILD, {
     guild_id: n.id
   }), (0, u.m)({
     name: l.BM.GUILD,
@@ -213,8 +213,8 @@ function S(e, t) {
 }
 
 function A(e, t) {
-  let n = new a.ZP({});
-  P(l.BM.MESSAGE, {
+  let n = new o.ZP({});
+  w(l.BM.MESSAGE, {
     message_id: void 0,
     channel_id: void 0
   }), (0, u.m)({
@@ -241,7 +241,7 @@ async function N(e, t, n) {
 }
 
 function C(e, t) {
-  P(l.b.MESSAGE, {
+  w(l.b.MESSAGE, {
     message_id: e.id,
     channel_id: e.channel_id
   }), (0, u.m)({
@@ -254,35 +254,35 @@ function C(e, t) {
   })
 }
 
-function w(e) {
+function R(e) {
   let {
     application: t,
     entrypoint: n,
     contextualGuildId: i,
-    contextualChannelId: a,
-    onSubmit: o,
+    contextualChannelId: o,
+    onSubmit: a,
     appContext: s
   } = e;
   r.ZP.trackWithMetadata(d.rMx.REPORT_APPLICATION_CLICKED, {
     application_id: t.id,
     location: n
-  }), P(l.b.APPLICATION, {
+  }), w(l.b.APPLICATION, {
     application_id: t.id,
     guild_id: i,
-    channel_id: a
+    channel_id: o
   }), (0, u.m)({
     name: l.b.APPLICATION,
     record: t,
     contextualGuildId: i,
-    contextualChannelId: a,
+    contextualChannelId: o,
     entrypoint: n
   }, {}, {
-    onSubmit: o,
+    onSubmit: a,
     appContext: s
   })
 }
 
-function R(e, t) {
+function P(e, t) {
   (0, u.m)({
     name: l.xw.MESSAGE,
     record: e
@@ -292,7 +292,7 @@ function R(e, t) {
   })
 }
 
-function P(e, t) {
+function w(e, t) {
   r.ZP.trackWithMetadata(d.rMx.IAR_MODAL_OPEN, _({
     report_type: e
   }, t))

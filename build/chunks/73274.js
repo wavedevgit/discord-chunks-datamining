@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(73800),
   i = n(924826),
-  a = n(448986),
-  o = n(459273),
+  o = n(448986),
+  a = n(459273),
   s = n(585483),
   l = n(534091),
   c = n(959517),
@@ -16,8 +16,8 @@ function d(e, t) {
   if (null == e) return {};
   var n, r, i = f(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -25,8 +25,8 @@ function d(e, t) {
 function f(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 
@@ -34,7 +34,7 @@ function _(e) {
   var {
     scrollerRef: t
   } = e, n = d(e, ["scrollerRef"]);
-  let f = (0, a.Z)(() => {
+  let f = (0, o.Z)(() => {
       let e = t.current;
       return null == e ? Promise.resolve() : new Promise(t => {
         e.scrollToBottom({
@@ -42,7 +42,7 @@ function _(e) {
         })
       })
     }),
-    _ = (0, a.Z)(() => {
+    _ = (0, o.Z)(() => {
       let e = t.current;
       return null == e ? Promise.resolve() : new Promise(t => {
         e.scrollToTop({
@@ -51,11 +51,11 @@ function _(e) {
       })
     }),
     p = r.useCallback(e => {
-      var r, i, a;
+      var r, i, o;
       if (!n.keyboardModeEnabled) return;
-      let o = null == (i = t.current) || null == (r = i.getScrollerNode()) ? void 0 : r.ownerDocument,
-        s = null == o ? void 0 : o.querySelector(e);
-      null != s && (null == (a = t.current) || a.scrollIntoViewNode({
+      let a = null == (i = t.current) || null == (r = i.getScrollerNode()) ? void 0 : r.ownerDocument,
+        s = null == a ? void 0 : a.querySelector(e);
+      null != s && (null == (o = t.current) || o.scrollIntoViewNode({
         node: s,
         padding: 4 * c.kQ,
         callback: () => null == s ? void 0 : s.focus()
@@ -79,7 +79,7 @@ function _(e) {
       } = e;
       t ? m.focusLastVisibleItem() : m.focusFirstVisibleItem()
     }, [m]);
-  return (0, o.yp)({
+  return (0, a.yp)({
     event: u.CkL.FOCUS_MESSAGES,
     handler: g
   }), m

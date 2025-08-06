@@ -2,7 +2,7 @@
 "use strict";
 Object.defineProperty(t, "__esModule", {
   value: !0
-}), t.stringFormatter = t.StringBuilder = void 0, t.formatToPlainString = a;
+}), t.stringFormatter = t.StringBuilder = void 0, t.formatToPlainString = o;
 let r = n(593269);
 class i extends r.FormatBuilder {
   constructor() {
@@ -22,10 +22,10 @@ class i extends r.FormatBuilder {
   }
 }
 
-function a(e, t) {
+function o(e, t) {
   return "string" == typeof e ? e : this.bindFormatValues(i, e, t)[0]
 }
 t.StringBuilder = i, t.stringFormatter = {
-  format: a,
+  format: o,
   builder: i
 }

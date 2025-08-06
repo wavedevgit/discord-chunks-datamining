@@ -5,9 +5,9 @@ n.d(t, {
 }), n(388685);
 var r = n(147913),
   i = n(594174),
-  a = n(74538);
+  o = n(74538);
 n(367074);
-var o = n(163684),
+var a = n(163684),
   s = n(748770),
   l = n(474936);
 
@@ -25,8 +25,8 @@ class u extends r.Z {
   }
   maybeFetchActiveOutboundPromotions() {
     let e = i.default.getCurrentUser(),
-      t = a.ZP.isPremiumExactly(e, l.p9.TIER_2),
-      n = o.g.getCurrentConfig({
+      t = o.ZP.isPremiumExactly(e, l.p9.TIER_2),
+      n = a.g.getCurrentConfig({
         location: "maybeFetchActiveOutboundPromotions"
       }, {
         autoTrackExposure: !1,
@@ -40,7 +40,7 @@ class u extends r.Z {
       EXPERIMENTS_FETCH_SUCCESS: this.onPostConnectionOpen.bind(this)
     }), c(this, "maybeFetchBogoPromotion", async () => {
       let e = i.default.getCurrentUser();
-      a.ZP.isPremiumExactly(e, l.p9.TIER_2)
+      o.ZP.isPremiumExactly(e, l.p9.TIER_2)
     })
   }
 }

@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(255367),
   i = n(73800),
-  a = n(780384),
-  o = n(481060),
+  o = n(780384),
+  a = n(481060),
   s = n(410030),
   l = n(782568),
   c = n(63063),
@@ -22,7 +22,7 @@ function g(e) {
   let {
     showImage: t = !0,
     padding: n = !1
-  } = e, g = (0, s.ZP)(), E = (0, a.ap)(g) ? m : h, b = i.useCallback(() => {
+  } = e, g = (0, s.ZP)(), E = (0, o.ap)(g) ? m : h, b = i.useCallback(() => {
     (0, l.Z)(c.Z.getAppsSupportURL(f.BhN.APPS_LEARN_MORE))
   }, []), {
     trackSectionImpressionRef: y
@@ -45,16 +45,16 @@ function g(e) {
         "aria-hidden": !0
       }), (0, r.jsxs)("div", {
         className: p.body,
-        children: [(0, r.jsx)(o.X6q, {
+        children: [(0, r.jsx)(a.X6q, {
           variant: "heading-lg/bold",
           color: "header-primary",
           children: _.intl.string(_.t["kw8/ER"])
-        }), (0, r.jsx)(o.Text, {
+        }), (0, r.jsx)(a.Text, {
           variant: "text-xs/normal",
           color: "text-default",
           children: _.intl.string(_.t.GZoV1N)
         })]
-      }), (0, r.jsx)(o.zxk, {
+      }), (0, r.jsx)(a.zxk, {
         variant: "primary",
         text: _.intl.string(_.t.Ye51oa),
         "aria-label": _.intl.formatToPlainString(_.t.xx5Sur, {

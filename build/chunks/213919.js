@@ -2,19 +2,19 @@
 "use strict";
 let r, i;
 n.r(t), n.d(t, {
-  encryptAndStoreTokens: () => R,
+  encryptAndStoreTokens: () => P,
   getAnalyticsToken: () => O,
   getToken: () => v,
   hideToken: () => A,
   init: () => y,
-  removeAnalyticsToken: () => w,
+  removeAnalyticsToken: () => R,
   removeToken: () => C,
   setAnalyticsToken: () => I,
   setToken: () => T,
   showToken: () => N
 }), n(388685);
-var a = n(433517),
-  o = n(231338);
+var o = n(433517),
+  a = n(231338);
 let s = "dQw4w9WgXcQ:",
   l = "__analytics__";
 
@@ -35,10 +35,10 @@ let f = !1,
 
 function g() {
   if (h) {
-    a.K.remove(o.B1), a.K.remove(o.XM);
+    o.K.remove(a.B1), o.K.remove(a.XM);
     return
   }
-  null != i ? a.K.set(o.B1, i) : a.K.remove(o.B1), a.K.set(o.XM, p)
+  null != i ? o.K.set(a.B1, i) : o.K.remove(a.B1), o.K.set(a.XM, p)
 }
 
 function E(e) {
@@ -60,7 +60,7 @@ function b(e) {
 
 function y() {
   if (m) return;
-  i = a.K.get(o.B1), p = a.K.get(o.XM) || {};
+  i = o.K.get(a.B1), p = o.K.get(a.XM) || {};
   let {
     decryptedToken: e,
     wasEncrypted: t
@@ -96,7 +96,7 @@ function T(e, t) {
 }
 
 function S(e, t) {
-  null != t && (_[t] = e), f ? R() : (i = r, p = _, g())
+  null != t && (_[t] = e), f ? P() : (i = r, p = _, g())
 }
 
 function A() {
@@ -112,11 +112,11 @@ function C(e) {
   return null != e && (t = _[e], delete _[e], delete p[e]), t === r && (r = null, i = null), g(), null != t
 }
 
-function w() {
+function R() {
   return C(l)
 }
 
-function R() {
+function P() {
   (null == u ? void 0 : u.isEncryptionAvailable()) ? (null != r && (i = b(r)), p = c(Object.entries(_).map(e => {
     let [t, n] = e;
     return [t, b(n)]

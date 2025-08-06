@@ -1,12 +1,12 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => o
+  Z: () => a
 });
 var r = n(544891),
   i = n(570140),
-  a = n(981631);
-let o = {
+  o = n(981631);
+let a = {
   setGuildFilter(e) {
     let {
       guildFilter: t,
@@ -34,21 +34,21 @@ let o = {
   fetchRecentMentions(e) {
     let {
       before: t,
-      limit: n = a.DJj,
-      guildId: o = null,
+      limit: n = o.DJj,
+      guildId: a = null,
       roles: s = !0,
       everyone: l = !0,
       feature: c
     } = e;
     return i.Z.dispatch({
       type: "LOAD_RECENT_MENTIONS",
-      guildId: o
+      guildId: a
     }), r.tn.get({
-      url: a.ANM.MENTIONS,
+      url: o.ANM.MENTIONS,
       query: {
         before: t,
         limit: n,
-        guild_id: o,
+        guild_id: a,
         roles: s,
         everyone: l,
         feature: c
@@ -64,7 +64,7 @@ let o = {
         type: "LOAD_RECENT_MENTIONS_SUCCESS",
         messages: n,
         isAfter: null != t,
-        hasMoreAfter: n.length >= a.DJj
+        hasMoreAfter: n.length >= o.DJj
       })
     }, () => {
       i.Z.dispatch({
@@ -74,7 +74,7 @@ let o = {
   },
   deleteRecentMention(e) {
     r.tn.del({
-      url: a.ANM.MENTIONS_MESSAGE_ID(e),
+      url: o.ANM.MENTIONS_MESSAGE_ID(e),
       retries: 2,
       oldFormErrors: !0,
       rejectWithError: !0

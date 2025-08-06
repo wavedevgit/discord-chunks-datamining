@@ -4,8 +4,8 @@ let r;
 n.d(t, {
   Z: () => T
 }), n(388685);
-var i, a = n(442837),
-  o = n(570140),
+var i, o = n(442837),
+  a = n(570140),
   s = n(70956),
   l = n(709054);
 
@@ -59,13 +59,13 @@ function E(e) {
     messageId: n,
     channelId: r,
     attachments: i
-  } = e, a = {
+  } = e, o = {
     messageId: n,
     channelId: r,
     attachments: i,
     reportSubmit: !1
-  }, o = null != (t = g[r]) ? t : h;
-  g[r] = [...o, a], m[n] = a
+  }, a = null != (t = g[r]) ? t : h;
+  g[r] = [...a, o], m[n] = o
 }
 
 function b(e) {
@@ -94,7 +94,7 @@ function O(e) {
 function v() {
   m = {}, g = {}
 }
-class I extends(i = a.ZP.Store) {
+class I extends(i = o.ZP.Store) {
   getFpMessageInfo(e) {
     return m[e]
   }
@@ -111,7 +111,7 @@ class I extends(i = a.ZP.Store) {
   }
 }
 c(I, "displayName", "FalsePositiveStore");
-let T = new I(o.Z, {
+let T = new I(a.Z, {
   LOGOUT: y,
   CONNECTION_OPEN: O,
   MESSAGE_EXPLICIT_CONTENT_FP_CREATE: E,

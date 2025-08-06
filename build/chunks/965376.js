@@ -9,8 +9,8 @@ var r = n(73800),
   s = n(509848),
   o = n(485386),
   c = n(159299),
-  d = n(231338),
-  u = n(388032);
+  u = n(231338),
+  d = n(388032);
 let h = [];
 
 function p(e, t) {
@@ -33,11 +33,11 @@ function p(e, t) {
         label: e.name
       }));
       return e.push({
-        id: d.Sk.ONLINE,
-        label: u.intl.string(u.t.WbGtnJ)
+        id: u.Sk.ONLINE,
+        label: d.intl.string(d.t.WbGtnJ)
       }, {
-        id: d.Sk.OFFLINE,
-        label: u.intl.string(u.t.Vv0abG)
+        id: u.Sk.OFFLINE,
+        label: d.intl.string(d.t.Vv0abG)
       }), e.map(e => {
         var t, n;
         let {

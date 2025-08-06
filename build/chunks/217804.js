@@ -1,23 +1,23 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  u: () => o
+  u: () => a
 });
 var r = n(481060),
   i = n(471445),
-  a = n(230900);
+  o = n(230900);
 
-function o(e, t) {
-  let n, o;
+function a(e, t) {
+  let n, a;
   if (null == e) return null;
-  let s = (0, a.cS)(e);
-  if (null != s) n = r._tJ, o = s;
+  let s = (0, o.cS)(e);
+  if (null != s) n = r._tJ, a = s;
   else {
     if (null == t) return null;
-    n = (0, i.Th)(t.type), o = t.name
+    n = (0, i.Th)(t.type), a = t.name
   }
   return {
     IconComponent: n,
-    locationName: o
+    locationName: a
   }
 }

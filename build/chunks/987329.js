@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(255367),
   i = n(73800),
-  a = n(481060),
-  o = n(906732),
+  o = n(481060),
+  a = n(906732),
   s = n(408534),
   l = n(522651),
   c = n(795318),
@@ -20,8 +20,8 @@ let p = e => {
     remoteMode: n = !1
   } = e, {
     parentAnalyticsLocation: p
-  } = (0, o.ZP)(), h = i.useRef(null);
-  return (0, r.jsx)(a.yRy, {
+  } = (0, a.ZP)(), h = i.useRef(null);
+  return (0, r.jsx)(o.yRy, {
     targetElementRef: h,
     renderPopout: e => {
       let {
@@ -40,7 +40,7 @@ let p = e => {
     },
     align: "right",
     position: "top",
-    animation: a.yRy.Animation.FADE,
+    animation: o.yRy.Animation.FADE,
     spacing: 16,
     children: (e, t) => {
       let {
@@ -55,7 +55,7 @@ let p = e => {
           (0, l.v)(p, l.d.MORE), n(e)
         },
         label: _.intl.string(_.t.PdRCRk),
-        iconComponent: a.xhG,
+        iconComponent: o.xhG,
         color: "primaryDark",
         isActive: i
       })

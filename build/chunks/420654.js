@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(255367),
   i = n(73800),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(755721),
   l = n(481060),
   c = n(906732),
@@ -59,7 +59,7 @@ let b = 57.75,
     let {
       user: t,
       onClose: n,
-      bio: a,
+      bio: o,
       hidePersonalInformation: h,
       viewFullBioDisabled: g = !1
     } = e, {
@@ -73,16 +73,16 @@ let b = 57.75,
         userId: t.id,
         sourceAnalyticsLocations: O
       }))
-    }, w = e => {
+    }, R = e => {
       null == A.current || A.current.contains(e.relatedTarget) || (A.current.scrollTop = 0)
     };
-    return h || null == a || "" === a ? null : (0, r.jsxs)("div", {
+    return h || null == o || "" === o ? null : (0, r.jsxs)("div", {
       children: [(0, r.jsx)("div", {
         ref: N,
-        className: o()(p.descriptionClamp, T && p.maxBioHeight),
-        onBlur: w,
+        className: a()(p.descriptionClamp, T && p.maxBioHeight),
+        onBlur: R,
         children: (0, r.jsx)(f.Z, {
-          userBio: a,
+          userBio: o,
           setLineClamp: !1,
           textColor: "header-primary"
         })
@@ -90,7 +90,7 @@ let b = 57.75,
         look: s.zx.Looks.BLANK,
         size: s.zx.Sizes.NONE,
         className: p.viewFullBio,
-        color: o()(p.viewFullBioColor, g && p.viewFullBioDisabled),
+        color: a()(p.viewFullBioColor, g && p.viewFullBioDisabled),
         onClick: C,
         children: (0, r.jsx)(l.Text, {
           variant: "text-xs/normal",

@@ -6,8 +6,8 @@ n.d(t, {
 });
 var r = n(255367),
   i = n(73800),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(442837),
   l = n(481060),
   c = n(475179),
@@ -30,9 +30,9 @@ var r = n(255367),
   A = n(351483),
   N = n(249212),
   C = n(853476),
-  w = n(981631),
-  R = n(65154),
-  P = n(388032),
+  R = n(981631),
+  P = n(65154),
+  w = n(388032),
   D = n(519417);
 
 function L(e, t, n) {
@@ -57,7 +57,7 @@ function x(e) {
   return e
 }
 
-function k(e, t) {
+function M(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -68,12 +68,12 @@ function k(e, t) {
   return n
 }
 
-function j(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : k(Object(t)).forEach(function(n) {
+function k(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : M(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let M = 124,
+let j = 124,
   U = l.EFr.SIZE_80,
   G = l.EFr.SIZE_40;
 
@@ -83,10 +83,10 @@ function B(e) {
     participant: n
   } = e;
   return (0, b.Eu)(t, n.id) ? (0, r.jsx)(l.ua7, {
-    text: P.intl.string(P.t.HFwRpq),
+    text: w.intl.string(w.t.HFwRpq),
     position: "bottom",
     color: l.FGA.GREY,
-    children: e => (0, r.jsx)("div", j(x({}, e), {
+    children: e => (0, r.jsx)("div", k(x({}, e), {
       className: D.interactive,
       children: (0, r.jsx)(l.Mgn, {
         color: l.TVs.colors.STATUS_WARNING_BACKGROUND
@@ -101,14 +101,14 @@ function Z(e) {
   let {
     participant: t,
     channel: n,
-    inCall: a,
+    inCall: o,
     width: l,
     selected: b,
     fit: C,
     onVideoResize: L,
     blocked: x,
-    ignored: k,
-    noVideoRender: j = !1,
+    ignored: M,
+    noVideoRender: k = !1,
     pulseSpeakingIndicator: B = !1,
     inOverlayPopout: Z = !1,
     paused: F = !1
@@ -116,7 +116,7 @@ function Z(e) {
     user: Y,
     streamId: W,
     speaking: K
-  } = t, z = Y.id === H, q = (0, S.ZP)(t), $ = (0, s.e7)([I.Z], () => I.Z.isFocused()), X = (0, s.e7)([g.Z], () => g.Z.getWindowFocused(w.KJ3.CHANNEL_CALL_POPOUT)), Q = (0, s.e7)([v.Z], () => null != Y.id && v.Z.isLocalVideoDisabled(Y.id, (0, f.Z)(t.type)), [Y.id, t.type]), J = (0, s.e7)([O.ZP], () => O.ZP.isGuestOrLurker(n.guild_id, Y.id)), ee = T.ZP.getName(n.getGuildId(), n.id, Y) + (J ? " ".concat(P.intl.string(P.t["pFO/Pj"])) : ""), et = K && (X || $), en = l < M ? G : U, {
+  } = t, z = Y.id === H, q = (0, S.ZP)(t), X = (0, s.e7)([I.Z], () => I.Z.isFocused()), Q = (0, s.e7)([g.Z], () => g.Z.getWindowFocused(R.KJ3.CHANNEL_CALL_POPOUT)), J = (0, s.e7)([v.Z], () => null != Y.id && v.Z.isLocalVideoDisabled(Y.id, (0, f.Z)(t.type)), [Y.id, t.type]), $ = (0, s.e7)([O.ZP], () => O.ZP.isGuestOrLurker(n.guild_id, Y.id)), ee = T.ZP.getName(n.getGuildId(), n.id, Y) + ($ ? " ".concat(w.intl.string(w.t["pFO/Pj"])) : ""), et = K && (Q || X), en = l < j ? G : U, {
     avatarSrc: er,
     avatarDecorationSrc: ei
   } = (0, E.Z)({
@@ -124,9 +124,9 @@ function Z(e) {
     guildId: n.guild_id,
     size: en,
     animateOnHover: !et
-  }), ea = (0, s.e7)([d.Z], () => d.Z.getSelectedParticipant(n.id)), eo = (0, p.Z)(R.Yn.DEFAULT, t.user.id), es = (0, _.Z)(t.user.id), el = {
+  }), eo = (0, s.e7)([d.Z], () => d.Z.getSelectedParticipant(n.id)), ea = (0, p.Z)(P.Yn.DEFAULT, t.user.id), es = (0, _.Z)(t.user.id), el = {
     channel: n,
-    selectedParticipant: ea,
+    selectedParticipant: eo,
     user: Y
   }, ec = i.useRef(el);
   i.useEffect(() => {
@@ -140,11 +140,11 @@ function Z(e) {
     e.isGuildStageVoice() && !q && (null == t ? void 0 : t.id) === n.id && c.Z.selectParticipant(e.id, null)
   }, [q]);
   let eu = !1;
-  return a && !Q && !j && q && !b && null != V && v.Z.supports(R.AN.VIDEO) ? eu && !Z ? (0, r.jsx)(A.Z, {
+  return o && !J && !k && q && !b && null != V && v.Z.supports(P.AN.VIDEO) ? eu && !Z ? (0, r.jsx)(A.Z, {
     selected: b,
     width: l
-  }) : null != eo && null == es ? (0, r.jsx)(N.Z, {
-    avError: eo,
+  }) : null != ea && null == es ? (0, r.jsx)(N.Z, {
+    avError: ea,
     userId: t.id,
     width: l,
     selected: b
@@ -160,8 +160,8 @@ function Z(e) {
     paused: F,
     userId: Y.id
   }, W) : (0, r.jsx)("div", {
-    className: o()(D.content, {
-      [D.blockedAvatar]: x || k
+    className: a()(D.content, {
+      [D.blockedAvatar]: x || M
     }),
     children: (0, r.jsx)(h.Z, {
       "aria-label": ee,

@@ -6,17 +6,17 @@ n.d(t, {
 });
 var r = n(913527),
   i = n.n(r),
-  a = n(835913),
-  o = n(675478),
+  o = n(835913),
+  a = n(675478),
   s = n(581883),
   l = n(905567);
 let c = e => {
     var t;
     if (!d(e)) return !1;
     let n = null == (t = s.Z.settings.userContent) ? void 0 : t.safetyUserSentimentNoticeDismissedAt,
-      r = null != n ? a.E.toDate(n) : void 0,
-      o = null != r ? i()().diff(r, "days") : null,
-      c = null != o && o > 30;
+      r = null != n ? o.E.toDate(n) : void 0,
+      a = null != r ? i()().diff(r, "days") : null,
+      c = null != a && a > 30;
     if (null != n && !c) return !1;
     let {
       isEligible: u
@@ -30,8 +30,8 @@ let c = e => {
   u = 2592e6,
   d = e => null != e && Date.now() - e.createdAt.getTime() > u,
   f = () => {
-    let e = a.E.now();
-    o.hW.updateAsync("userContent", t => {
+    let e = o.E.now();
+    a.hW.updateAsync("userContent", t => {
       t.safetyUserSentimentNoticeDismissedAt = e
-    }, o.fy.INFREQUENT_USER_ACTION)
+    }, a.fy.INFREQUENT_USER_ACTION)
   }

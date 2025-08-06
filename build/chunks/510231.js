@@ -6,8 +6,8 @@ n.d(t, {
 }), n(583741);
 var r = n(73800),
   i = n(392711),
-  a = n.n(i),
-  o = n(442837),
+  o = n.n(i),
+  a = n(442837),
   s = n(189451),
   l = n(77498),
   c = n(570911);
@@ -22,8 +22,8 @@ function d(e) {
 }
 
 function f() {
-  let e = (0, o.e7)([l.Z], () => l.Z.games),
-    t = r.useMemo(() => a()(e).filter(e => !d(e)).map(e => ({
+  let e = (0, a.e7)([l.Z], () => l.Z.games),
+    t = r.useMemo(() => o()(e).filter(e => !d(e)).map(e => ({
       value: e.id,
       label: e.name
     })).sortBy(e => {

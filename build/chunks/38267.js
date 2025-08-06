@@ -5,9 +5,9 @@ n.d(t, {
 }), n(388685);
 var r = n(73800),
   i = n(585483),
-  a = n(981631);
+  o = n(981631);
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -23,7 +23,7 @@ function s(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      o(e, t, n[t])
+      a(e, t, n[t])
     })
   }
   return e
@@ -34,8 +34,8 @@ function l(e) {
 }
 
 function c(e, t) {
-  let [n, o] = r.useState(t), [c, u] = r.useState(l(n)), d = r.useRef(c), f = r.useRef(null), _ = r.useCallback(e => {
-    o(t => {
+  let [n, a] = r.useState(t), [c, u] = r.useState(l(n)), d = r.useRef(c), f = r.useRef(null), _ = r.useCallback(e => {
+    a(t => {
       let n = s({}, t, e),
         r = l(n);
       return r !== d.current && (d.current = r, null != f.current && (cancelAnimationFrame(f.current), f.current = null), r ? u(!0) : f.current = requestAnimationFrame(() => u(!1))), n
@@ -52,7 +52,7 @@ function c(e, t) {
         emojiBurstPicker: n
       })
     };
-    return i.S.subscribeKeyed(a.LPv.TOGGLE_REACTION_POPOUT, e, t), () => void i.S.unsubscribeKeyed(a.LPv.TOGGLE_REACTION_POPOUT, e, t)
+    return i.S.subscribeKeyed(o.LPv.TOGGLE_REACTION_POPOUT, e, t), () => void i.S.unsubscribeKeyed(o.LPv.TOGGLE_REACTION_POPOUT, e, t)
   }, [e, _]), {
     popouts: n,
     setPopout: _,

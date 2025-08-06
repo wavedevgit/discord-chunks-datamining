@@ -3,8 +3,8 @@
 n(366843), n(458631);
 var r = n(98405),
   i = n(127849),
-  a = n(242606),
-  o = n(154028),
+  o = n(242606),
+  a = n(154028),
   s = n(580983),
   l = n(46015),
   c = n(507604),
@@ -27,41 +27,41 @@ var r = n(98405),
   A = n(530575),
   N = n(533610),
   C = n(800054),
-  w = n(682564),
-  R = n(338045),
-  P = n(751736),
+  R = n(682564),
+  P = n(338045),
+  w = n(751736),
   D = n(992914),
-  L = P("iterator"),
+  L = w("iterator"),
   x = "URLSearchParams",
-  k = x + "Iterator",
-  j = m.set,
-  M = m.getterFor(x),
-  U = m.getterFor(k),
-  G = a("fetch"),
-  B = a("Request"),
-  Z = a("Headers"),
+  M = x + "Iterator",
+  k = m.set,
+  j = m.getterFor(x),
+  U = m.getterFor(M),
+  G = o("fetch"),
+  B = o("Request"),
+  Z = o("Headers"),
   F = B && B.prototype,
   V = Z && Z.prototype,
   H = i.TypeError,
   Y = i.encodeURIComponent,
   W = String.fromCharCode,
-  K = o("String", "fromCodePoint"),
+  K = a("String", "fromCodePoint"),
   z = parseInt,
   q = l("".charAt),
-  $ = l([].join),
-  X = l([].push),
-  Q = l("".replace),
-  J = l([].shift),
+  X = l([].join),
+  Q = l([].push),
+  J = l("".replace),
+  $ = l([].shift),
   ee = l([].splice),
   et = l("".split),
   en = l("".slice),
   er = l(/./.exec),
   ei = /\+/g,
-  ea = "�",
-  eo = /^[0-9a-f]+$/i,
+  eo = "�",
+  ea = /^[0-9a-f]+$/i,
   es = function(e, t) {
     var n = en(e, t, t + 2);
-    return er(eo, n) ? z(n, 16) : NaN
+    return er(ea, n) ? z(n, 16) : NaN
   },
   el = function(e) {
     for (var t = 0, n = 128; n > 0 && (e & n) != 0; n >>= 1) t++;
@@ -85,41 +85,41 @@ var r = n(98405),
     return t > 1114111 ? null : t
   },
   eu = function(e) {
-    for (var t = (e = Q(e, ei, " ")).length, n = "", r = 0; r < t;) {
+    for (var t = (e = J(e, ei, " ")).length, n = "", r = 0; r < t;) {
       var i = q(e, r);
       if ("%" === i) {
         if ("%" === q(e, r + 1) || r + 3 > t) {
           n += "%", r++;
           continue
         }
-        var a = es(e, r + 1);
-        if (a != a) {
+        var o = es(e, r + 1);
+        if (o != o) {
           n += i, r++;
           continue
         }
         r += 2;
-        var o = el(a);
-        if (0 === o) i = W(a);
+        var a = el(o);
+        if (0 === a) i = W(o);
         else {
-          if (1 === o || o > 4) {
-            n += ea, r++;
+          if (1 === a || a > 4) {
+            n += eo, r++;
             continue
           }
-          for (var s = [a], l = 1; l < o && !(++r + 3 > t) && "%" === q(e, r);) {
+          for (var s = [o], l = 1; l < a && !(++r + 3 > t) && "%" === q(e, r);) {
             var c = es(e, r + 1);
             if (c != c) {
               r += 3;
               break
             }
             if (c > 191 || c < 128) break;
-            X(s, c), r += 2, l++
+            Q(s, c), r += 2, l++
           }
-          if (s.length !== o) {
-            n += ea;
+          if (s.length !== a) {
+            n += eo;
             continue
           }
           var u = ec(s);
-          null === u ? n += ea : i = K(u)
+          null === u ? n += eo : i = K(u)
         }
       }
       n += i, r++
@@ -139,12 +139,12 @@ var r = n(98405),
     return ef[e]
   },
   ep = function(e) {
-    return Q(Y(e), ed, e_)
+    return J(Y(e), ed, e_)
   },
   eh = h(function(e, t) {
-    j(this, {
-      type: k,
-      target: M(e).entries,
+    k(this, {
+      type: M,
+      target: j(e).entries,
       index: 0,
       kind: t
     })
@@ -152,15 +152,15 @@ var r = n(98405),
     var e = U(this),
       t = e.target,
       n = e.index++;
-    if (!t || n >= t.length) return e.target = null, w(void 0, !0);
+    if (!t || n >= t.length) return e.target = null, R(void 0, !0);
     var r = t[n];
     switch (e.kind) {
       case "keys":
-        return w(r.key, !1);
+        return R(r.key, !1);
       case "values":
-        return w(r.value, !1)
+        return R(r.value, !1)
     }
-    return w([r.key, r.value], !1)
+    return R([r.key, r.value], !1)
   }, !0),
   em = function(e) {
     this.entries = [], this.url = null, void 0 !== e && (I(e) ? this.parseObject(e) : this.parseQuery("string" == typeof e ? "?" === q(e, 0) ? en(e, 1) : e : T(e)))
@@ -171,31 +171,31 @@ em.prototype = {
     this.url = e, this.update()
   },
   parseObject: function(e) {
-    var t, n, r, i, a, o, l, c = this.entries,
+    var t, n, r, i, o, a, l, c = this.entries,
       u = C(e);
     if (u)
       for (n = (t = N(e, u)).next; !(r = s(n, t)).done;) {
-        if ((o = s(a = (i = N(v(r.value))).next, i)).done || (l = s(a, i)).done || !s(a, i).done) throw new H("Expected sequence with length 2");
-        X(c, {
-          key: T(o.value),
+        if ((a = s(o = (i = N(v(r.value))).next, i)).done || (l = s(o, i)).done || !s(o, i).done) throw new H("Expected sequence with length 2");
+        Q(c, {
+          key: T(a.value),
           value: T(l.value)
         })
       } else
-        for (var d in e) b(e, d) && X(c, {
+        for (var d in e) b(e, d) && Q(c, {
           key: d,
           value: T(e[d])
         })
   },
   parseQuery: function(e) {
     if (e)
-      for (var t, n, r = this.entries, i = et(e, "&"), a = 0; a < i.length;)(t = i[a++]).length && X(r, {
-        key: eu(J(n = et(t, "="))),
-        value: eu($(n, "="))
+      for (var t, n, r = this.entries, i = et(e, "&"), o = 0; o < i.length;)(t = i[o++]).length && Q(r, {
+        key: eu($(n = et(t, "="))),
+        value: eu(X(n, "="))
       })
   },
   serialize: function() {
-    for (var e, t = this.entries, n = [], r = 0; r < t.length;) X(n, ep((e = t[r++]).key) + "=" + ep(e.value));
-    return $(n, "&")
+    for (var e, t = this.entries, n = [], r = 0; r < t.length;) Q(n, ep((e = t[r++]).key) + "=" + ep(e.value));
+    return X(n, "&")
   },
   update: function() {
     this.entries.length = 0, this.parseQuery(this.url.query)
@@ -207,64 +207,64 @@ em.prototype = {
 var eg = function() {
     g(this, eE);
     var e = arguments.length > 0 ? arguments[0] : void 0,
-      t = j(this, new em(e));
+      t = k(this, new em(e));
     c || (this.size = t.entries.length)
   },
   eE = eg.prototype;
 if (_(eE, {
     append: function(e, t) {
-      var n = M(this);
-      R(arguments.length, 2), X(n.entries, {
+      var n = j(this);
+      P(arguments.length, 2), Q(n.entries, {
         key: T(e),
         value: T(t)
       }), !c && this.length++, n.updateURL()
     },
     delete: function(e) {
-      for (var t = M(this), n = R(arguments.length, 1), r = t.entries, i = T(e), a = n < 2 ? void 0 : arguments[1], o = void 0 === a ? a : T(a), s = 0; s < r.length;) {
+      for (var t = j(this), n = P(arguments.length, 1), r = t.entries, i = T(e), o = n < 2 ? void 0 : arguments[1], a = void 0 === o ? o : T(o), s = 0; s < r.length;) {
         var l = r[s];
-        if (l.key === i && (void 0 === o || l.value === o)) {
-          if (ee(r, s, 1), void 0 !== o) break
+        if (l.key === i && (void 0 === a || l.value === a)) {
+          if (ee(r, s, 1), void 0 !== a) break
         } else s++
       }
       c || (this.size = r.length), t.updateURL()
     },
     get: function(e) {
-      var t = M(this).entries;
-      R(arguments.length, 1);
+      var t = j(this).entries;
+      P(arguments.length, 1);
       for (var n = T(e), r = 0; r < t.length; r++)
         if (t[r].key === n) return t[r].value;
       return null
     },
     getAll: function(e) {
-      var t = M(this).entries;
-      R(arguments.length, 1);
-      for (var n = T(e), r = [], i = 0; i < t.length; i++) t[i].key === n && X(r, t[i].value);
+      var t = j(this).entries;
+      P(arguments.length, 1);
+      for (var n = T(e), r = [], i = 0; i < t.length; i++) t[i].key === n && Q(r, t[i].value);
       return r
     },
     has: function(e) {
-      for (var t = M(this).entries, n = R(arguments.length, 1), r = T(e), i = n < 2 ? void 0 : arguments[1], a = void 0 === i ? i : T(i), o = 0; o < t.length;) {
-        var s = t[o++];
-        if (s.key === r && (void 0 === a || s.value === a)) return !0
+      for (var t = j(this).entries, n = P(arguments.length, 1), r = T(e), i = n < 2 ? void 0 : arguments[1], o = void 0 === i ? i : T(i), a = 0; a < t.length;) {
+        var s = t[a++];
+        if (s.key === r && (void 0 === o || s.value === o)) return !0
       }
       return !1
     },
     set: function(e, t) {
-      var n, r = M(this);
-      R(arguments.length, 1);
-      for (var i = r.entries, a = !1, o = T(e), s = T(t), l = 0; l < i.length; l++)(n = i[l]).key === o && (a ? ee(i, l--, 1) : (a = !0, n.value = s));
-      a || X(i, {
-        key: o,
+      var n, r = j(this);
+      P(arguments.length, 1);
+      for (var i = r.entries, o = !1, a = T(e), s = T(t), l = 0; l < i.length; l++)(n = i[l]).key === a && (o ? ee(i, l--, 1) : (o = !0, n.value = s));
+      o || Q(i, {
+        key: a,
         value: s
       }), c || (this.size = i.length), r.updateURL()
     },
     sort: function() {
-      var e = M(this);
+      var e = j(this);
       D(e.entries, function(e, t) {
         return e.key > t.key ? 1 : -1
       }), e.updateURL()
     },
     forEach: function(e) {
-      for (var t, n = M(this).entries, r = y(e, arguments.length > 1 ? arguments[1] : void 0), i = 0; i < n.length;) r((t = n[i++]).value, t.key, this)
+      for (var t, n = j(this).entries, r = y(e, arguments.length > 1 ? arguments[1] : void 0), i = 0; i < n.length;) r((t = n[i++]).value, t.key, this)
     },
     keys: function() {
       return new eh(this, "keys")
@@ -280,12 +280,12 @@ if (_(eE, {
   }), d(eE, L, eE.entries, {
     name: "entries"
   }), d(eE, "toString", function() {
-    return M(this).serialize()
+    return j(this).serialize()
   }, {
     enumerable: !0
   }), c && f(eE, "size", {
     get: function() {
-      return M(this).entries.length
+      return j(this).entries.length
     },
     configurable: !0,
     enumerable: !0
@@ -333,5 +333,5 @@ if (_(eE, {
 }
 e.exports = {
   URLSearchParams: eg,
-  getState: M
+  getState: j
 }

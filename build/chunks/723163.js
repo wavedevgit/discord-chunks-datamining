@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(73800),
   i = n(392711),
-  a = n.n(i),
-  o = n(442837),
+  o = n.n(i),
+  a = n(442837),
   s = n(567409),
   l = n(699516),
   c = n(594174),
@@ -14,7 +14,7 @@ var r = n(73800),
 
 function d(e) {
   let t = (0, s.N)(e.id),
-    n = (0, o.cj)([c.default, l.Z], () => {
+    n = (0, a.cj)([c.default, l.Z], () => {
       let e = {};
       for (let n of t.values()) {
         let t = c.default.getUser(n.author_id),
@@ -25,11 +25,11 @@ function d(e) {
     }),
     [i, d] = r.useState([]);
   return r.useEffect(() => {
-    let e = a().sortBy(Object.entries(n), e => {
+    let e = o().sortBy(Object.entries(n), e => {
       let [t, n] = e;
       return -u.default.extractTimestamp(n)
     });
-    d(a().map(e, e => {
+    d(o().map(e, e => {
       let [t, n] = e;
       return c.default.getUser(t)
     }).filter(e => null != e))

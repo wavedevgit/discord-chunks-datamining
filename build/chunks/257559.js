@@ -1,12 +1,12 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => j
+  Z: () => k
 }), n(997841), n(388685);
 var r = n(255367),
   i = n(73800),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(82659),
   l = n(755721),
   c = n(481060),
@@ -50,7 +50,7 @@ function C(e) {
   return e
 }
 
-function w(e, t) {
+function R(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -61,18 +61,18 @@ function w(e, t) {
   return n
 }
 
-function R(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : w(Object(t)).forEach(function(n) {
+function P(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : R(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function P(e, t) {
+function w(e, t) {
   if (null == e) return {};
   var n, r, i = D(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -80,19 +80,19 @@ function P(e, t) {
 function D(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 
 function L(e, t) {
   (0, c.h7j)(n => {
-    let i, a = (0, f.F6)(e, y.default, b.Z);
+    let i, o = (0, f.F6)(e, y.default, b.Z);
     return i = e.isPrivate() ? T.intl.string(T.t.hMRngI) : T.intl.formatToPlainString(T.t["3IRluL"], {
-      channelName: a
+      channelName: o
     }), (0, r.jsx)(h.Z.Provider, {
       value: e.guild_id,
-      children: (0, r.jsxs)(c.ConfirmModal, R(C({
+      children: (0, r.jsxs)(c.ConfirmModal, P(C({
         header: T.intl.string(T.t.bKMaZW),
         confirmText: T.intl.string(T.t.rOQ5BQ),
         cancelText: T.intl.string(T.t["ETE/oK"]),
@@ -120,7 +120,7 @@ function L(e, t) {
 function x(e, t) {
   (0, c.h7j)(n => (0, r.jsx)(h.Z.Provider, {
     value: e.guild_id,
-    children: (0, r.jsxs)(c.ConfirmModal, R(C({
+    children: (0, r.jsxs)(c.ConfirmModal, P(C({
       header: T.intl.string(T.t.CFF2vL),
       confirmText: T.intl.string(T.t.lAU5jI),
       cancelText: T.intl.string(T.t["ETE/oK"]),
@@ -131,7 +131,7 @@ function x(e, t) {
         className: A.spacing,
         children: T.intl.string(T.t.NjEPp6)
       }), (0, r.jsx)("div", {
-        className: o()(A.message, A.spacing),
+        className: a()(A.message, A.spacing),
         children: (0, r.jsx)(g.Z, {
           channel: e,
           message: t,
@@ -143,23 +143,23 @@ function x(e, t) {
     }))
   }))
 }
-class k extends i.PureComponent {
+class M extends i.PureComponent {
   render() {
     let e, t, n = p.Z.getCurrentConfig({
         location: "DeleteModal"
       }).enabled,
       {
         report: i,
-        resolveFlag: a
+        resolveFlag: o
       } = this.state,
-      o = this.props,
+      a = this.props,
       {
         channel: l,
         message: u,
         showContextMenuHint: d,
         moderatorReportData: f
-      } = o,
-      m = P(o, ["channel", "message", "showContextMenuHint", "moderatorReportData"]),
+      } = a,
+      m = w(a, ["channel", "message", "showContextMenuHint", "moderatorReportData"]),
       E = l.type === I.d4z.GUILD_ANNOUNCEMENT && (0, O.yE)(u.flags, I.iLy.CROSSPOSTED);
     d && (e = (0, r.jsx)(_.Z, {
       className: A.spacingTop,
@@ -195,7 +195,7 @@ class k extends i.PureComponent {
       } = f;
       return (0, r.jsx)(h.Z.Provider, {
         value: l.guild_id,
-        children: (0, r.jsxs)(c.Y0X, R(C({
+        children: (0, r.jsxs)(c.Y0X, P(C({
           parentComponent: "DeleteModal"
         }, m), {
           children: [(0, r.jsx)(c.xBx, {
@@ -221,7 +221,7 @@ class k extends i.PureComponent {
               type: "submit",
               onClick: this.handleDelete
             }), !e && (0, r.jsx)(c.XZJ, {
-              value: a,
+              value: o,
               onChange: (e, t) => this.handleToggleResolveFlag(t),
               children: T.intl.string(S.default["8yIKen"])
             })]
@@ -246,7 +246,7 @@ class k extends i.PureComponent {
         onClose: m.onClose,
         transitionState: m.transitionState,
         children: y
-      }) : (0, r.jsx)(c.ConfirmModal, R(C({
+      }) : (0, r.jsx)(c.ConfirmModal, P(C({
         header: E ? T.intl.string(T.t.aIz1oa) : T.intl.string(T.t.MWMcg4),
         confirmText: T.intl.string(T.t.oyYWHB),
         cancelText: T.intl.string(T.t["ETE/oK"]),
@@ -269,18 +269,18 @@ class k extends i.PureComponent {
         message: r,
         moderatorReportData: i
       } = this.props, {
-        moderatorReportChannelId: a,
-        isFlagResolved: o
+        moderatorReportChannelId: o,
+        isFlagResolved: a
       } = null != i ? i : {};
       e ? (0, m.ak)(r, "message_delete_alert", () => d.Z.deleteMessage(n.id, r.id).then(() => {
-        if (null != a) {
+        if (null != o) {
           var e, n;
-          t && !o && E.Z.resolveFlag(a), null == (e = (n = this.props).onClose) || e.call(n)
+          t && !a && E.Z.resolveFlag(o), null == (e = (n = this.props).onClose) || e.call(n)
         }
       })) : d.Z.deleteMessage(n.id, r.id).then(() => {
-        if (null != a) {
+        if (null != o) {
           var e, n;
-          t && !o && E.Z.resolveFlag(a), null == (e = (n = this.props).onClose) || e.call(n)
+          t && !a && E.Z.resolveFlag(o), null == (e = (n = this.props).onClose) || e.call(n)
         }
       })
     }), N(this, "handleDeleteMana", () => {
@@ -297,21 +297,21 @@ class k extends i.PureComponent {
     })
   }
 }
-let j = {
+let k = {
   confirmPin: L,
   confirmUnpin: x,
   confirmDelete: function(e, t) {
     let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
       i = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : void 0;
-    (0, c.h7j)(a => (0, r.jsx)(k, C({
+    (0, c.h7j)(o => (0, r.jsx)(M, C({
       channel: e,
       message: t,
       showContextMenuHint: n,
       moderatorReportData: i
-    }, a)))
+    }, o)))
   },
   confirmEdit: function(e, t, n) {
-    (0, c.h7j)(i => (0, r.jsx)(c.ConfirmModal, R(C({
+    (0, c.h7j)(i => (0, r.jsx)(c.ConfirmModal, P(C({
       header: T.intl.string(T.t.aIz1oa),
       confirmText: T.intl.string(T.t["cY+Ooa"]),
       cancelText: T.intl.string(T.t["ETE/oK"]),

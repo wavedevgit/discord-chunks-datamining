@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   iN: () => i,
-  oV: () => a
+  oV: () => o
 });
 var r = n(846027);
 let i = {
@@ -13,7 +13,7 @@ let i = {
       location: "Default Keybind"
     }), !1)
   },
-  a = {
+  o = {
     binds: ["mod+shift+d"],
     comboKeysBindGlobal: !0,
     action: () => (r.Z.toggleSelfDeaf({

@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var i = n(82659),
-  a = n(481060),
-  o = n(570140),
+  o = n(481060),
+  a = n(570140),
   s = n(522474),
   l = n(788983),
   c = n(359110),
@@ -47,17 +47,17 @@ let v = !1,
   I = !1;
 class T extends f.Z {
   _initialize() {
-    super._initialize(), s.Z.addChangeListener(this.handlePopoutWindowUpdate), o.Z.subscribe("POPOUT_WINDOW_OPEN", this.handlePopoutWindowOpen)
+    super._initialize(), s.Z.addChangeListener(this.handlePopoutWindowUpdate), a.Z.subscribe("POPOUT_WINDOW_OPEN", this.handlePopoutWindowOpen)
   }
   _terminate() {
-    super._terminate(), s.Z.removeChangeListener(this.handlePopoutWindowUpdate), o.Z.unsubscribe("POPOUT_WINDOW_OPEN", this.handlePopoutWindowOpen)
+    super._terminate(), s.Z.removeChangeListener(this.handlePopoutWindowUpdate), a.Z.unsubscribe("POPOUT_WINDOW_OPEN", this.handlePopoutWindowOpen)
   }
   showErrorModal(e) {
     let {
       code: t,
       message: n
     } = e;
-    (0, a.ZDy)(async () => e => (0, r.jsx)(i.Modal, O({
+    (0, o.ZDy)(async () => e => (0, r.jsx)(i.Modal, O({
       title: b.intl.formatToPlainString(b.t.hbiAOz, {
         code: t
       }),
@@ -70,7 +70,7 @@ class T extends f.Z {
     }, e)))
   }
   showLaunchErrorModal(e) {
-    (0, a.ZDy)(async () => t => (0, r.jsx)(i.Modal, O({
+    (0, o.ZDy)(async () => t => (0, r.jsx)(i.Modal, O({
       title: b.intl.string(b.t.PtobXV),
       subtitle: e,
       actions: [{
@@ -81,7 +81,7 @@ class T extends f.Z {
     }, t)))
   }
   showDevShelfOverrideEnabled() {
-    (0, a.showToast)((0, a.createToast)(b.intl.string(b.t.JfA7IC), a.ToastType.SUCCESS))
+    (0, o.showToast)((0, o.createToast)(b.intl.string(b.t.JfA7IC), o.ToastType.SUCCESS))
   }
   leaveActivity(e) {
     let {
@@ -90,7 +90,7 @@ class T extends f.Z {
       showFeedback: r,
       shouldClosePopout: i = !0
     } = e;
-    o.Z.wait(() => {
+    a.Z.wait(() => {
       (0, d.mW)({
         location: t,
         applicationId: n,

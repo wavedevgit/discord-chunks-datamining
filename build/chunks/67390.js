@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var i = n(120356),
-  a = n.n(i),
-  o = n(410030),
+  o = n.n(i),
+  a = n(410030),
   s = n(231338),
   l = n(388032),
   c = n(150481);
@@ -18,9 +18,9 @@ function f(e) {
   let {
     className: t,
     size: n = "md"
-  } = e, i = (0, o.ZP)() === s.BR.LIGHT ? d : u;
+  } = e, i = (0, a.ZP)() === s.BR.LIGHT ? d : u;
   return (0, r.jsx)("img", {
-    className: a()(t, {
+    className: o()(t, {
       [c.sm]: "sm" === n,
       [c.md]: "md" === n
     }),

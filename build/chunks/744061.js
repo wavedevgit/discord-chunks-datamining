@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(255367),
   i = n(73800),
-  a = n(692547),
-  o = n(780384),
+  o = n(692547),
+  a = n(780384),
   s = n(755721),
   l = n(481060),
   c = n(367907),
@@ -67,13 +67,13 @@ function E(e) {
     return null != v && (async () => {
       let [{
         default: i
-      }, a] = await Promise.all([Promise.resolve().then(n.t.bind(n, 500923, 23)), (0, o.wj)(t) ? v.dark() : v.light()]);
+      }, o] = await Promise.all([Promise.resolve().then(n.t.bind(n, 500923, 23)), (0, a.wj)(t) ? v.dark() : v.light()]);
       r || null == S.current || (e = i.loadAnimation({
         container: S.current,
         renderer: "svg",
         loop: !0,
         autoplay: !0,
-        animationData: a
+        animationData: o
       }))
     })(), () => {
       r = !0, null != e && (e.destroy(), e = void 0)
@@ -132,7 +132,7 @@ function E(e) {
         className: p.footer,
         children: [(0, r.jsx)(l.d3s, {
           size: "xs",
-          color: a.Z.unsafe_rawColors.PRIMARY_400.css,
+          color: o.Z.unsafe_rawColors.PRIMARY_400.css,
           className: p.icon
         }), (0, r.jsx)(l.Text, {
           variant: "text-sm/normal",

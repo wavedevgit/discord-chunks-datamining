@@ -7,8 +7,8 @@ n.d(t, {
 });
 var r = n(255367),
   i = n(73800),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(442837),
   l = n(704215),
   c = n(481060),
@@ -77,19 +77,19 @@ function N(e) {
   let {
     user: t,
     sourceType: n,
-    isVisible: a,
+    isVisible: o,
     isExpandable: b,
     interactionSourceId: O,
     targetRef: I,
     onAction: T,
     renderMoreButtonPopout: N
-  } = e, C = i.useRef(null), w = (0, s.e7)([f.default], () => f.default.getId() === t.id), R = (0, _.Z)(t.id), {
-    themeType: P
+  } = e, C = i.useRef(null), R = (0, s.e7)([f.default], () => f.default.getId() === t.id), P = (0, _.Z)(t.id), {
+    themeType: w
   } = (0, h.z)(), {
     onInteraction: D,
     onInteractionPopoutTargetRefChange: L
   } = (0, p.Xo)();
-  if (t.bot || w || !R) return null;
+  if (t.bot || R || !P) return null;
   let x = () => {
       L(I), n === m.n_.AVATAR ? T({
         action: "PRESS_REACT_AVATAR"
@@ -101,9 +101,9 @@ function N(e) {
         interactionType: m.P.REACT,
         interactionSource: n,
         interactionSourceId: O
-      }), P === m.lY.POPOUT && (0, d.Q3)(l.z.USER_PROFILE_POPOUT_INTERACTION_COACHMARK)
+      }), w === m.lY.POPOUT && (0, d.Q3)(l.z.USER_PROFILE_POPOUT_INTERACTION_COACHMARK)
     },
-    k = () => {
+    M = () => {
       L(I), n === m.n_.AVATAR ? T({
         action: "PRESS_REPLY_AVATAR"
       }) : n === m.n_.STATUS ? T({
@@ -114,11 +114,11 @@ function N(e) {
         interactionType: m.P.REPLY,
         interactionSource: n,
         interactionSourceId: O
-      }), P === m.lY.POPOUT && (0, d.Q3)(l.z.USER_PROFILE_POPOUT_INTERACTION_COACHMARK)
+      }), w === m.lY.POPOUT && (0, d.Q3)(l.z.USER_PROFILE_POPOUT_INTERACTION_COACHMARK)
     };
   return (0, r.jsxs)(u.ZP, {
-    className: o()(E.popover, {
-      [E.visible]: a,
+    className: a()(E.popover, {
+      [E.visible]: o,
       [E.expandable]: b,
       [E.statusPopover]: n === m.n_.STATUS,
       [E.avatarPopover]: n === m.n_.AVATAR,
@@ -126,7 +126,7 @@ function N(e) {
     }),
     children: [(0, r.jsx)(c.DY3, {
       text: g.intl.string(g.t.nhaI4e),
-      shouldShow: a,
+      shouldShow: o,
       className: E.tooltipContainer,
       delay: 0,
       "aria-label": !1,
@@ -142,12 +142,12 @@ function N(e) {
       })
     }), (0, r.jsx)(c.DY3, {
       text: g.intl.string(g.t.RmDYKC),
-      shouldShow: a,
+      shouldShow: o,
       className: E.tooltipContainer,
       delay: 0,
       "aria-label": !1,
       children: (0, r.jsx)(u.zx, {
-        onClick: k,
+        onClick: M,
         className: E.button,
         "aria-label": A[n](),
         "aria-haspopup": "dialog",
@@ -163,7 +163,7 @@ function N(e) {
       };
       return (0, r.jsx)(c.DY3, {
         text: g.intl.string(g.t.UKOtz8),
-        shouldShow: a,
+        shouldShow: o,
         className: E.tooltipContainer,
         delay: 0,
         "aria-label": !1,

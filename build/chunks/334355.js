@@ -3,10 +3,10 @@ let t = "[A-Za-z$_][0-9A-Za-z$_]*",
   n = ["as", "in", "of", "if", "for", "while", "finally", "var", "new", "function", "do", "return", "void", "else", "break", "catch", "instanceof", "with", "throw", "case", "default", "try", "switch", "continue", "typeof", "delete", "let", "yield", "const", "class", "debugger", "async", "await", "static", "import", "from", "export", "extends", "using"],
   r = ["true", "false", "null", "undefined", "NaN", "Infinity"],
   i = ["Object", "Function", "Boolean", "Symbol", "Math", "Date", "Number", "BigInt", "String", "RegExp", "Array", "Float32Array", "Float64Array", "Int8Array", "Uint8Array", "Uint8ClampedArray", "Int16Array", "Int32Array", "Uint16Array", "Uint32Array", "BigInt64Array", "BigUint64Array", "Set", "Map", "WeakSet", "WeakMap", "ArrayBuffer", "SharedArrayBuffer", "Atomics", "DataView", "JSON", "Promise", "Generator", "GeneratorFunction", "AsyncFunction", "Reflect", "Proxy", "Intl", "WebAssembly"],
-  a = ["Error", "EvalError", "InternalError", "RangeError", "ReferenceError", "SyntaxError", "TypeError", "URIError"],
-  o = ["setInterval", "setTimeout", "clearInterval", "clearTimeout", "require", "exports", "eval", "isFinite", "isNaN", "parseFloat", "parseInt", "decodeURI", "decodeURIComponent", "encodeURI", "encodeURIComponent", "escape", "unescape"],
+  o = ["Error", "EvalError", "InternalError", "RangeError", "ReferenceError", "SyntaxError", "TypeError", "URIError"],
+  a = ["setInterval", "setTimeout", "clearInterval", "clearTimeout", "require", "exports", "eval", "isFinite", "isNaN", "parseFloat", "parseInt", "decodeURI", "decodeURIComponent", "encodeURI", "encodeURIComponent", "escape", "unescape"],
   s = ["arguments", "this", "super", "console", "window", "document", "localStorage", "sessionStorage", "module", "global"],
-  l = [].concat(o, i, a);
+  l = [].concat(a, i, o);
 e.exports = function(e) {
   let c = e.regex,
     u = (e, {
@@ -28,8 +28,8 @@ e.exports = function(e) {
       ">" !== i || u(e, {
         after: r
       }) || t.ignoreMatch();
-      let a = e.input.substring(r);
-      if ((n = a.match(/^\s*=/)) || (n = a.match(/^\s+extends\s+/)) && 0 === n.index) return void t.ignoreMatch()
+      let o = e.input.substring(r);
+      if ((n = o.match(/^\s*=/)) || (n = o.match(/^\s+extends\s+/)) && 0 === n.index) return void t.ignoreMatch()
     },
     E = {
       $pattern: t,
@@ -132,21 +132,21 @@ e.exports = function(e) {
         }]
       }), e.C_BLOCK_COMMENT_MODE, e.C_LINE_COMMENT_MODE]
     },
-    w = [e.APOS_STRING_MODE, e.QUOTE_STRING_MODE, T, S, A, N, {
+    R = [e.APOS_STRING_MODE, e.QUOTE_STRING_MODE, T, S, A, N, {
       match: /\$\d+/
     }, v];
-  I.contains = w.concat({
+  I.contains = R.concat({
     begin: /\{/,
     end: /\}/,
     keywords: E,
-    contains: ["self"].concat(w)
+    contains: ["self"].concat(R)
   });
-  let R = [].concat(C, I.contains),
-    P = R.concat([{
+  let P = [].concat(C, I.contains),
+    w = P.concat([{
       begin: /(\s*)\(/,
       end: /\)/,
       keywords: E,
-      contains: ["self"].concat(R)
+      contains: ["self"].concat(P)
     }]),
     D = {
       className: "params",
@@ -155,7 +155,7 @@ e.exports = function(e) {
       excludeBegin: !0,
       excludeEnd: !0,
       keywords: E,
-      contains: P
+      contains: w
     },
     L = {
       variants: [{
@@ -179,16 +179,16 @@ e.exports = function(e) {
       match: c.either(/\bJSON/, /\b[A-Z][a-z]+([A-Z][a-z]*|\d)*/, /\b[A-Z]{2,}([A-Z][a-z]+|\d)+([A-Z][a-z]*)*/, /\b[A-Z]{2,}[a-z]+([A-Z][a-z]+|\d)*([A-Z][a-z]*)*/),
       className: "title.class",
       keywords: {
-        _: [...i, ...a]
+        _: [...i, ...o]
       }
     },
-    k = {
+    M = {
       label: "use_strict",
       className: "meta",
       relevance: 10,
       begin: /^\s*['"]use (strict|asm)['"]/
     },
-    j = {
+    k = {
       variants: [{
         match: [/function/, /\s+/, d, /(?=\s*\()/]
       }, {
@@ -202,7 +202,7 @@ e.exports = function(e) {
       contains: [D],
       illegal: /%/
     },
-    M = {
+    j = {
       relevance: 0,
       match: /\b[A-Z][A-Z_0-9]+\b/,
       className: "variable.constant"
@@ -212,7 +212,7 @@ e.exports = function(e) {
     return c.concat("(?!", e.join("|"), ")")
   }
   let G = {
-      match: c.concat(/\b/, U([...o, "super", "import"].map(e => `${e}\\s*\\(`)), d, c.lookahead(/\s*\(/)),
+      match: c.concat(/\b/, U([...a, "super", "import"].map(e => `${e}\\s*\\(`)), d, c.lookahead(/\s*\(/)),
       className: "title.function",
       relevance: 0
     },
@@ -249,7 +249,7 @@ e.exports = function(e) {
     aliases: ["js", "jsx", "mjs", "cjs"],
     keywords: E,
     exports: {
-      PARAMS_CONTAINS: P,
+      PARAMS_CONTAINS: w,
       CLASS_REFERENCE: x
     },
     illegal: /#(?![$_A-z])/,
@@ -257,7 +257,7 @@ e.exports = function(e) {
       label: "shebang",
       binary: "node",
       relevance: 5
-    }), k, e.APOS_STRING_MODE, e.QUOTE_STRING_MODE, T, S, A, N, C, {
+    }), M, e.APOS_STRING_MODE, e.QUOTE_STRING_MODE, T, S, A, N, C, {
       match: /\$\d+/
     }, v, x, {
       scope: "attr",
@@ -287,7 +287,7 @@ e.exports = function(e) {
             excludeBegin: !0,
             excludeEnd: !0,
             keywords: E,
-            contains: P
+            contains: w
           }]
         }]
       }, {
@@ -315,7 +315,7 @@ e.exports = function(e) {
           contains: ["self"]
         }]
       }]
-    }, j, {
+    }, k, {
       beginKeywords: "while if switch catch for"
     }, {
       begin: "\\b(?!function)" + e.UNDERSCORE_IDENT_RE + "\\([^()]*(\\([^()]*(\\([^()]*\\)[^()]*)*\\)[^()]*)*\\)\\s*\\{",
@@ -337,7 +337,7 @@ e.exports = function(e) {
         1: "title.function"
       },
       contains: [D]
-    }, G, M, L, Z, {
+    }, G, j, L, Z, {
       match: /\$[(.]/
     }]
   }

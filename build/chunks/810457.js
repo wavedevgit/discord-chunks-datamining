@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685), n(387201), n(642613), n(539854);
 var r = n(392711),
   i = n.n(r),
-  a = n(709054),
-  o = n(982183);
+  o = n(709054),
+  a = n(982183);
 
 function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -18,7 +18,7 @@ function s(e, t, n) {
 }
 class l {
   updateChannelIds(e) {
-    this._channelIds = new Set(e), this._messages = this._messages.filter(e => e.kind !== o.fL.ALL_MESSAGES_CHANNEL || this._channelIds.has(e.channelId))
+    this._channelIds = new Set(e), this._messages = this._messages.filter(e => e.kind !== a.fL.ALL_MESSAGES_CHANNEL || this._channelIds.has(e.channelId))
   }
   addMessage(e) {
     this._messages = [e, ...this._messages], this.maybeTruncate()
@@ -29,11 +29,11 @@ class l {
       channelMessages: n,
       userId: r
     } = e;
-    this._messages = [...this._messages, ...n.filter(e => e.author.id !== r && a.default.age(e.id) < o.ib).map(e => ({
+    this._messages = [...this._messages, ...n.filter(e => e.author.id !== r && o.default.age(e.id) < a.ib).map(e => ({
       id: e.id,
       channelId: e.channel_id,
       guildId: null == t ? void 0 : t.guild_id,
-      kind: e.mentioned ? o.fL.MENTION : o.fL.ALL_MESSAGES_CHANNEL,
+      kind: e.mentioned ? a.fL.MENTION : a.fL.ALL_MESSAGES_CHANNEL,
       message: e
     }))], this._isSorted = !1, this.maybeTruncate()
   }
@@ -48,21 +48,21 @@ class l {
   }
   sortMessages() {
     this._isSorted || (this._messages = i().sortedUniqBy(this._messages.toSorted((e, t) => {
-      let n = a.default.compare(e.id, t.id);
-      return 0 !== n ? n : e.kind === o.fL.MENTION && t.kind !== o.fL.MENTION ? -1 : +(e.kind !== o.fL.MENTION && t.kind === o.fL.MENTION)
+      let n = o.default.compare(e.id, t.id);
+      return 0 !== n ? n : e.kind === a.fL.MENTION && t.kind !== a.fL.MENTION ? -1 : +(e.kind !== a.fL.MENTION && t.kind === a.fL.MENTION)
     }), "id"), this._isSorted = !0)
   }
   maybeTruncate() {
-    let e = o.AQ * (this._channelIds.size + 1) * 1.5;
+    let e = a.AQ * (this._channelIds.size + 1) * 1.5;
     if (this._messages.length <= e) return;
     let t = {};
-    for (let e of this._messages) a.default.age(e.id) > o.ib || (null == t[e.channelId] && (t[e.channelId] = {
+    for (let e of this._messages) o.default.age(e.id) > a.ib || (null == t[e.channelId] && (t[e.channelId] = {
       mentions: [],
       messages: []
-    }), e.kind === o.fL.MENTION ? t[e.channelId].mentions.push(e) : t[e.channelId].messages.push(e));
+    }), e.kind === a.fL.MENTION ? t[e.channelId].mentions.push(e) : t[e.channelId].messages.push(e));
     let n = [];
     Object.values(t).forEach(e => {
-      let t = [...e.mentions, ...e.messages].sort((e, t) => a.default.compare(e.id, t.id)).slice(-o.AQ),
+      let t = [...e.mentions, ...e.messages].sort((e, t) => o.default.compare(e.id, t.id)).slice(-a.AQ),
         r = new Set,
         i = [];
       for (let e of t) r.add(e.id), i.push(e);

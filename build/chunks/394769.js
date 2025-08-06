@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var i = n(66546),
-  a = n(755721),
-  o = n(481060),
+  o = n(755721),
+  a = n(481060),
   s = n(565138),
   l = n(678558),
   c = n(981631),
@@ -17,7 +17,7 @@ let d = function(e) {
     closeLayer: t,
     guild: n,
     isVisible: d
-  } = e, f = (0, o.q_F)({
+  } = e, f = (0, a.q_F)({
     transform: d ? "translateY(-100%)" : "translateY(0%)",
     opacity: +!!d,
     config: {
@@ -36,7 +36,7 @@ let d = function(e) {
           className: u.guildIcon,
           guild: n,
           size: s.Z.Sizes.LARGER
-        }), (0, r.jsx)(o.X6q, {
+        }), (0, r.jsx)(a.X6q, {
           className: u.guildName,
           variant: "text-lg/bold",
           children: n.name
@@ -52,7 +52,7 @@ let d = function(e) {
         },
         closeLayer: t,
         pauseAnimation: !d,
-        size: a.zx.Sizes.LARGE
+        size: o.zx.Sizes.LARGE
       })]
     })
   })

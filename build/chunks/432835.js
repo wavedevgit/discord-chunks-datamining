@@ -5,9 +5,9 @@ n.d(t, {
 });
 var r = n(311929),
   i = n(894276),
-  a = n(516888);
+  o = n(516888);
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -16,12 +16,12 @@ function o(e, t, n) {
   }) : e[t] = n, e
 }
 let s = "Note";
-class l extends a.fE {
+class l extends o.fE {
   getNote(e) {
     return this.get(e)
   }
 }
-o(l, "displayName", "NoteStore");
+a(l, "displayName", "NoteStore");
 let c = new l({
   CONNECTION_OPEN: (e, t) => t.reset(),
   OVERLAY_INITIALIZE: (e, t) => t.reset(),

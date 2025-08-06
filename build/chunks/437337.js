@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(255367),
   i = n(73800),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(66546),
   l = n(692547),
   c = n(186325),
@@ -73,22 +73,22 @@ let E = {
   };
 
 function y(e, t, n, i) {
-  let a = e.to({
+  let o = e.to({
       output: [t, n]
     }),
-    o = i ? [b.X.TOP, b.X.TOP, b.CHECK.TOP, b.CHECK.TOP] : [b.X.TOP, b.BAR.TOP, b.BAR.TOP, b.CHECK.TOP],
+    a = i ? [b.X.TOP, b.X.TOP, b.CHECK.TOP, b.CHECK.TOP] : [b.X.TOP, b.BAR.TOP, b.BAR.TOP, b.CHECK.TOP],
     l = i ? [b.X.BOTTOM, b.X.BOTTOM, b.CHECK.BOTTOM, b.CHECK.BOTTOM] : [b.X.BOTTOM, b.BAR.BOTTOM, b.BAR.BOTTOM, b.CHECK.BOTTOM];
   return (0, r.jsxs)("svg", {
     viewBox: "0 0 20 20",
     fill: "none",
     children: [(0, r.jsx)(s.animated.path, {
-      fill: a,
+      fill: o,
       d: e.to({
         range: [0, .3, .7, 1],
-        output: o
+        output: a
       })
     }), (0, r.jsx)(s.animated.path, {
-      fill: a,
+      fill: o,
       d: e.to({
         range: [0, .3, .7, 1],
         output: l
@@ -100,7 +100,7 @@ let O = function(e) {
   let {
     id: t,
     onChange: n,
-    checked: a,
+    checked: o,
     disabled: p,
     className: m,
     focusProps: b,
@@ -109,18 +109,18 @@ let O = function(e) {
     reducedMotion: v
   } = i.useContext(c.S), I = i.useRef(null), [T, S] = i.useState(!1), A = (0, d.d)(l.Z.colors.INTERACTIVE_MUTED).spring(), N = (0, d.d)(l.Z.colors.BG_BRAND).spring(), {
     state: C,
-    opacity: w
+    opacity: R
   } = (0, f.q_F)({
     config: E,
     opacity: p ? .5 : 1,
-    state: T ? a ? .7 : .3 : +!!a
+    state: T ? o ? .7 : .3 : +!!o
   }, "animate-always");
 
-  function R(e) {
+  function P(e) {
     S(!1), null == n || n(e.currentTarget.checked, e)
   }
 
-  function P(e) {
+  function w(e) {
     p || e.repeat || (" " === e.key || "Enter" === e.key) && S(!0)
   }
 
@@ -132,15 +132,15 @@ let O = function(e) {
     within: !0,
     offset: -2,
     children: (0, r.jsxs)(s.animated.div, {
-      className: o()(_.container, m, {
-        [_.checked]: a,
+      className: a()(_.container, m, {
+        [_.checked]: o,
         [_.disabled]: p
       }),
       onMouseDown: () => !p && S(!0),
       onMouseUp: () => S(!1),
       onMouseLeave: () => S(!1),
       style: {
-        opacity: w,
+        opacity: R,
         backgroundColor: C.to({
           output: [A, N]
         })
@@ -184,10 +184,10 @@ let O = function(e) {
         },
         className: _.input,
         tabIndex: p ? -1 : 0,
-        onKeyDown: P,
+        onKeyDown: w,
         onKeyUp: D,
-        onChange: R,
-        checked: a,
+        onChange: P,
+        checked: o,
         disabled: p
       })]
     })

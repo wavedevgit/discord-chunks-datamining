@@ -6,8 +6,8 @@ n.d(t, {
 });
 var r = n(990547),
   i = n(544891),
-  a = n(570140),
-  o = n(314897),
+  o = n(570140),
+  a = n(314897),
   s = n(573261),
   l = n(815660),
   c = n(981631),
@@ -16,7 +16,7 @@ var r = n(990547),
   }({});
 let d = {
   setCountryCode(e) {
-    a.Z.dispatch({
+    o.Z.dispatch({
       type: "PHONE_SET_COUNTRY_CODE",
       countryCode: e
     })
@@ -32,7 +32,7 @@ let d = {
   }),
   resendCode(e) {
     let t = {},
-      n = o.default.getFingerprint();
+      n = a.default.getFingerprint();
     return null != n && "" !== n && (t["X-Fingerprint"] = n), i.tn.post({
       url: c.ANM.RESEND_PHONE,
       headers: t,
@@ -97,7 +97,7 @@ let d = {
     let n = !(arguments.length > 2) || void 0 === arguments[2] || arguments[2],
       i = arguments.length > 3 && void 0 !== arguments[3] && arguments[3],
       u = {},
-      d = o.default.getFingerprint();
+      d = a.default.getFingerprint();
     null != d && "" !== d && (u["X-Fingerprint"] = d), i && (u.authorization = "");
     let f = await s.Z.post({
       url: c.ANM.VERIFY_PHONE,
@@ -112,7 +112,7 @@ let d = {
       },
       rejectWithError: !1
     });
-    return n && a.Z.dispatch({
+    return n && o.Z.dispatch({
       type: "MODAL_POP",
       key: l.M
     }), f.body

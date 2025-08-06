@@ -6,8 +6,8 @@ n.d(t, {
 });
 var r = n(255367),
   i = n(73800),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(91192),
   l = n(481060),
   c = n(166459),
@@ -61,8 +61,8 @@ function y(e, t) {
   if (null == e) return {};
   var n, r, i = O(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -70,8 +70,8 @@ function y(e, t) {
 function O(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 var v = function(e) {
@@ -86,7 +86,7 @@ function T(e, t) {
   let {
     id: n,
     channelId: i,
-    className: a,
+    className: o,
     children: m,
     actions: E,
     handleEditModal: O,
@@ -96,9 +96,9 @@ function T(e, t) {
     size: A = 1
   } = e, N = (0, s.JA)(n), {
     onFocus: C
-  } = N, w = y(N, ["onFocus"]), {
-    handleFocus: R,
-    handleBlur: P
+  } = N, R = y(N, ["onFocus"]), {
+    handleFocus: P,
+    handleBlur: w
   } = (0, f.b)(C), D = 0 === A, L = null != E, x = e => {
     if (v) {
       switch (e.which) {
@@ -122,11 +122,11 @@ function T(e, t) {
     }
   };
   return (0, r.jsx)(l.tEY, {
-    children: (0, r.jsx)("li", b(g({}, w), {
-      onFocus: R,
-      onBlur: P,
+    children: (0, r.jsx)("li", b(g({}, R), {
+      onFocus: P,
+      onBlur: w,
       onKeyDown: x,
-      className: o()(h.upload, a, {
+      className: a()(h.upload, o, {
         [h.sizeClip]: 2 === A
       }),
       ref: t,
@@ -135,13 +135,13 @@ function T(e, t) {
         children: [m, L ? (0, r.jsx)("div", {
           className: h.actionBarContainer,
           children: (0, r.jsx)("div", {
-            className: o()(h.actionBar, {
+            className: a()(h.actionBar, {
               [h.smallActionBar]: D
             }),
             onContextMenu: I,
             "aria-label": p.intl.string(p.t["8Lu3Dg"]),
             children: (0, r.jsx)(u.ZP, {
-              className: o()({
+              className: a()({
                 [h.miniPopover]: D
               }),
               children: E

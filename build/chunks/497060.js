@@ -7,7 +7,7 @@ n.d(t, {
 });
 var r = n(818083),
   i = n(128064);
-let a = (0, r.B)({
+let o = (0, r.B)({
     kind: "user",
     id: "2025-01_friend_requests_alerts",
     label: "Friend Request Setting Defaults",
@@ -31,7 +31,7 @@ let a = (0, r.B)({
       }
     }]
   }),
-  o = (0, r.B)({
+  a = (0, r.B)({
     kind: "user",
     id: "2025-01_friend_requests_alerts_new_users",
     label: "Friend Request Setting Defaults",
@@ -55,31 +55,31 @@ let a = (0, r.B)({
       }
     }]
   }),
-  s = e => 2 === a.getCurrentConfig({
+  s = e => 2 === o.getCurrentConfig({
     location: e
   }, {
     autoTrackExposure: !1
-  }).bucket || 2 === o.getCurrentConfig({
+  }).bucket || 2 === a.getCurrentConfig({
     location: e
   }, {
     autoTrackExposure: !1
   }).bucket,
-  l = e => 1 === a.getCurrentConfig({
+  l = e => 1 === o.getCurrentConfig({
     location: e
   }, {
     autoTrackExposure: !1
-  }).bucket || 1 === o.getCurrentConfig({
+  }).bucket || 1 === a.getCurrentConfig({
     location: e
   }, {
     autoTrackExposure: !1
   }).bucket || (0, i.c_)(e),
   c = e => {
-    let t = a.useExperiment({
+    let t = o.useExperiment({
         location: e
       }, {
         autoTrackExposure: !1
       }).bucket,
-      n = o.useExperiment({
+      n = a.useExperiment({
         location: e
       }, {
         autoTrackExposure: !1

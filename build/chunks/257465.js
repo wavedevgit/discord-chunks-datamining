@@ -6,8 +6,8 @@ n.d(t, {
 });
 var r = n(255367),
   i = n(73800),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(66546),
   l = n(990547),
   c = n(793030),
@@ -64,7 +64,7 @@ function O(e) {
   var t;
   let {
     transitionState: n,
-    animationVariant: a = "default",
+    animationVariant: o = "default",
     size: m = "md",
     paddingSize: E = "sm",
     fullScreenOnMobile: y = !0,
@@ -75,37 +75,37 @@ function O(e) {
     contentOutsideContainer: S,
     trackingProps: A,
     children: N
-  } = e, C = i.useId(), w = i.useMemo(() => ({
+  } = e, C = i.useId(), R = i.useMemo(() => ({
     id: C,
     headingId: "heading-".concat(C),
     onClose: T
-  }), [C, T]), R = 0 === n || 1 === n, {
-    reducedMotion: P
-  } = i.useContext(d.S), D = R || P.enabled || "subtle" === a ? "scale(1)" : "scale(0.9)", L = (0, u.q)({
-    opacity: +!!R,
+  }), [C, T]), P = 0 === n || 1 === n, {
+    reducedMotion: w
+  } = i.useContext(d.S), D = P || w.enabled || "subtle" === o ? "scale(1)" : "scale(0.9)", L = (0, u.q)({
+    opacity: +!!P,
     transform: D,
-    config: R ? p.jF : p.W$,
-    delay: 64 * !!R
+    config: P ? p.jF : p.W$,
+    delay: 64 * !!P
   }, "animate-always");
   return (0, r.jsx)(_.t.Provider, {
-    value: w,
+    value: R,
     children: (0, r.jsx)(f.V, b(g({
       id: C,
       role: v,
       "aria-label": I,
-      "aria-labelledby": null != I ? void 0 : w.headingId,
+      "aria-labelledby": null != I ? void 0 : R.headingId,
       returnRef: O
     }, A), {
       impressionType: null != (t = null == A ? void 0 : A.impressionType) ? t : l.ImpressionTypes.MODAL,
       children: (0, r.jsx)(c.y5, {
         forceLevel: 1,
         children: (0, r.jsxs)("div", {
-          className: o()(h.outerContainer, {
+          className: a()(h.outerContainer, {
             [h.fullScreenOnMobile]: y
           }),
           children: [S, (0, r.jsx)(s.animated.div, {
             "data-mana-component": "modal",
-            className: o()(h.container, h["size-".concat(m)], h["padding-size-".concat(E)]),
+            className: a()(h.container, h["size-".concat(m)], h["padding-size-".concat(E)]),
             style: L,
             children: N
           })]

@@ -1,12 +1,12 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  D: () => o
+  D: () => a
 });
 var r = n(73800),
   i = n(430824);
 
-function a(e) {
+function o(e) {
   return "contextless" === e.type ? {
     channel: void 0,
     guild: void 0
@@ -16,6 +16,6 @@ function a(e) {
   }
 }
 
-function o(e) {
-  return r.useMemo(() => a(e), [e])
+function a(e) {
+  return r.useMemo(() => o(e), [e])
 }

@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(255367),
   i = n(73800),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(1561),
   l = n(761224),
   c = n(670596),
@@ -58,7 +58,7 @@ function E(e) {
   let {
     color: t = "default",
     label: n,
-    checked: a,
+    checked: o,
     subtext: p,
     disabled: m,
     isFocused: E,
@@ -77,13 +77,13 @@ function E(e) {
   }, [y, O]);
   return (0, r.jsxs)(s.P, g(h({
     innerRef: v,
-    className: o()(_.item, _.labelContainer, f._[t], {
+    className: a()(_.item, _.labelContainer, f._[t], {
       [_.disabled]: m,
       [_.focused]: E
     }),
     onClick: m ? void 0 : I
   }, b), {
-    "aria-checked": a,
+    "aria-checked": o,
     "aria-disabled": m,
     children: [(0, r.jsxs)("div", {
       className: _.label,
@@ -94,7 +94,7 @@ function E(e) {
     }), (0, r.jsx)("div", {
       className: _.iconContainer,
       children: (0, r.jsx)(d.Fj9, {
-        checked: a,
+        checked: o,
         disabled: m,
         radioItemIconClassName: _.radioIcon
       })

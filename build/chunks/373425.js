@@ -5,9 +5,9 @@ n.d(t, {
 });
 var r = n(521548),
   i = n(793981),
-  a = n(413815);
+  o = n(413815);
 
-function o(e, t) {
+function a(e, t) {
   if (!(e instanceof t)) throw TypeError("Cannot call a class as a function")
 }
 
@@ -33,9 +33,9 @@ function c(e, t, n) {
 var u = function() {
   function e(t) {
     var n = this;
-    o(this, e), c(this, "hooks", (0, i.p)({
+    a(this, e), c(this, "hooks", (0, i.p)({
       dropTarget: function(e, t) {
-        n.clearDropTarget(), n.dropTargetOptions = t, (0, a.d)(e) ? n.dropTargetRef = e : n.dropTargetNode = e, n.reconnect()
+        n.clearDropTarget(), n.dropTargetOptions = t, (0, o.d)(e) ? n.dropTargetRef = e : n.dropTargetNode = e, n.reconnect()
       }
     })), c(this, "handlerId", null), c(this, "dropTargetRef", null), c(this, "dropTargetNode", void 0), c(this, "dropTargetOptionsInternal", null), c(this, "unsubscribeDropTarget", void 0), c(this, "lastConnectedHandlerId", null), c(this, "lastConnectedDropTarget", null), c(this, "lastConnectedDropTargetOptions", null), c(this, "backend", void 0), this.backend = t
   }

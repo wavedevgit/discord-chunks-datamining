@@ -5,21 +5,21 @@ n.d(t, {
 });
 var r = n(134994),
   i = n(8170),
-  a = n(492733);
+  o = n(492733);
 
-function o(e, t, n, o) {
+function a(e, t, n, a) {
   (0, r.vp)(e);
   let {
     c: s,
     dkLen: l,
     asyncTick: c
-  } = (0, a.U5)({
+  } = (0, o.U5)({
     dkLen: 32,
     asyncTick: 10
-  }, o);
+  }, a);
   if ((0, r.Rx)(s), (0, r.Rx)(l), (0, r.Rx)(c), s < 1) throw Error("PBKDF2: iterations (c) should be >= 1");
-  let u = (0, a.O0)(t),
-    d = (0, a.O0)(n),
+  let u = (0, o.O0)(t),
+    d = (0, o.O0)(n),
     f = new Uint8Array(l),
     _ = i.b.create(e, u),
     p = _._cloneInto().update(d);
@@ -44,9 +44,9 @@ function l(e, t, n, r) {
       DK: u,
       PRF: d,
       PRFSalt: f
-    } = o(e, t, n, r),
+    } = a(e, t, n, r),
     _ = new Uint8Array(4),
-    p = (0, a.GL)(_),
+    p = (0, o.GL)(_),
     h = new Uint8Array(d.outputLen);
   for (let e = 1, t = 0; t < c; e++, t += d.outputLen) {
     let n = u.subarray(t, t + d.outputLen);

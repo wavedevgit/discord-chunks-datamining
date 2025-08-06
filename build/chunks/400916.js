@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var i = n(512722),
-  a = n.n(i),
-  o = n(399606),
+  o = n.n(i),
+  a = n(399606),
   s = n(755721),
   l = n(481060),
   c = n(671533),
@@ -22,7 +22,7 @@ function h(e) {
   let {
     guildId: m,
     productId: g
-  } = e, E = (0, o.e7)([u.Z], () => u.Z.getGuildProduct(g)), b = (null != (h = null == E || null == (t = E.attachments) ? void 0 : t.length) ? h : 0) > 1, y = null == E || null == (i = E.attachments) || null == (n = i[0]) ? void 0 : n.id;
+  } = e, E = (0, a.e7)([u.Z], () => u.Z.getGuildProduct(g)), b = (null != (h = null == E || null == (t = E.attachments) ? void 0 : t.length) ? h : 0) > 1, y = null == E || null == (i = E.attachments) || null == (n = i[0]) ? void 0 : n.id;
 
   function O() {
     d.Z.open({
@@ -43,7 +43,7 @@ function h(e) {
       height: 16,
       direction: c.Z.Directions.RIGHT
     })]
-  }) : (a()(null != y, "No attachment"), (0, r.jsxs)(f.Z, {
+  }) : (o()(null != y, "No attachment"), (0, r.jsxs)(f.Z, {
     guildId: m,
     productId: g,
     attachmentId: y,

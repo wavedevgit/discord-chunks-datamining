@@ -6,11 +6,11 @@ n.d(t, {
 var r = n(573654),
   i = n(528302);
 
-function a(e, t) {
+function o(e, t) {
   if (!(e instanceof t)) throw TypeError("Cannot call a class as a function")
 }
 
-function o(e, t) {
+function a(e, t) {
   for (var n = 0; n < t.length; n++) {
     var r = t[n];
     r.enumerable = r.enumerable || !1, r.configurable = !0, "value" in r && (r.writable = !0), Object.defineProperty(e, r.key, r)
@@ -18,7 +18,7 @@ function o(e, t) {
 }
 
 function s(e, t, n) {
-  return t && o(e.prototype, t), n && o(e, n), e
+  return t && a(e.prototype, t), n && a(e, n), e
 }
 
 function l(e, t, n) {
@@ -34,7 +34,7 @@ var c = ["canDrag", "beginDrag", "isDragging", "endDrag"],
   d = function() {
     function e(t, n, r) {
       var i = this;
-      a(this, e), l(this, "props", null), l(this, "spec", void 0), l(this, "monitor", void 0), l(this, "ref", void 0), l(this, "beginDrag", function() {
+      o(this, e), l(this, "props", null), l(this, "spec", void 0), l(this, "monitor", void 0), l(this, "ref", void 0), l(this, "beginDrag", function() {
         if (i.props) {
           var e = i.spec.beginDrag(i.props, i.monitor, i.ref.current);
           return e

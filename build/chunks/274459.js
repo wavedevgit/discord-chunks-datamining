@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(255367),
   i = n(73800),
-  a = n(66546),
-  o = n(442837),
+  o = n(66546),
+  a = n(442837),
   s = n(481060),
   l = n(596454),
   c = n(607070),
@@ -27,7 +27,7 @@ function E(e) {
   } = e, {
     emoji: E,
     sentAt: b
-  } = n, y = (0, o.e7)([c.Z], () => c.Z.useReducedMotion), [O, v] = i.useState(!0), I = !y, T = (0, s.Yzy)(O, {
+  } = n, y = (0, a.e7)([c.Z], () => c.Z.useReducedMotion), [O, v] = i.useState(!0), I = !y, T = (0, s.Yzy)(O, {
     from: {
       rotate: _
     },
@@ -37,7 +37,7 @@ function E(e) {
     leave: {
       rotate: _
     },
-    config: a.config.default,
+    config: o.config.default,
     onRest: (e, t) => {
       let {
         phase: n
@@ -57,7 +57,7 @@ function E(e) {
     let {
       rotate: i
     } = e;
-    return t && (0, r.jsx)(a.animated.div, {
+    return t && (0, r.jsx)(o.animated.div, {
       className: f.voiceChannelEffectEmojiContainer,
       style: {
         transform: i.to(g)

@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(255367),
   i = n(73800),
-  a = n(688619),
-  o = n.n(a),
+  o = n(688619),
+  a = n.n(o),
   s = n(120356),
   l = n.n(s),
   c = n(522942),
@@ -25,7 +25,7 @@ let y = 3,
     let {
       userName: t,
       displayNameStyles: n,
-      effectDisplayType: a = m.F.STATIC,
+      effectDisplayType: o = m.F.STATIC,
       inProfile: s = !1,
       textClassName: O,
       loop: I = !1
@@ -44,19 +44,19 @@ let y = 3,
       includeNonProfile: C
     } = p.f.useExperiment({
       location: "useDisplayNameStylesFont"
-    }), w = (0, h.Y)({
+    }), R = (0, h.Y)({
       location: "UserNameWithEffects"
-    }), R = (0, d.dQu)(d.TVs.colors.BACKGROUND_BASE_LOW).hex(), P = i.useMemo(() => null != n && w ? n.colors.map(e => {
-      let t = o()(e);
-      return N && (t = t.desaturate(1 - A)), (0, _.aP)(t.hex(), n.effectId === c.m.TOON ? "#333" : R, y)
-    }) : [], [n, w, N, A, R]);
-    if (!w || !s && !C || null == n) return t;
-    let D = (0, g.K)(n.effectId, P),
+    }), P = (0, d.dQu)(d.TVs.colors.BACKGROUND_BASE_LOW).hex(), w = i.useMemo(() => null != n && R ? n.colors.map(e => {
+      let t = a()(e);
+      return N && (t = t.desaturate(1 - A)), (0, _.aP)(t.hex(), n.effectId === c.m.TOON ? "#333" : P, y)
+    }) : [], [n, R, N, A, P]);
+    if (!R || !s && !C || null == n) return t;
+    let D = (0, g.K)(n.effectId, w),
       L = v(n.effectId);
     return (0, r.jsx)("div", {
       className: l()(b.container, L, T, O, {
-        [b.showEffect]: a !== m.F.PLAIN,
-        [b.animated]: a === m.F.ANIMATED && !S,
+        [b.showEffect]: o !== m.F.PLAIN,
+        [b.animated]: o === m.F.ANIMATED && !S,
         [b.loop]: I
       }),
       style: D,

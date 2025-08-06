@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var i = n(481060),
-  a = n(732171),
-  o = n(388032);
+  o = n(732171),
+  a = n(388032);
 
 function s(e) {
   let {
@@ -17,8 +17,8 @@ function s(e) {
   return (0, r.jsx)(i.zxk, {
     variant: "expressive",
     icon: i.SrA,
-    text: null != n ? n : o.intl.string(o.t["8Sh5fn"]),
-    onClick: () => (0, a.Z)({
+    text: null != n ? n : a.intl.string(a.t["8Sh5fn"]),
+    onClick: () => (0, o.Z)({
       section: t
     })
   })

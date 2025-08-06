@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(73800),
   i = n(442837),
-  a = n(570140),
-  o = n(911969),
+  o = n(570140),
+  a = n(911969),
   s = n(110924),
   l = n(213459),
   c = n(812206),
@@ -16,7 +16,7 @@ var r = n(73800),
   _ = n(973616),
   p = n(594174),
   h = n(981631);
-let m = [o.yU.PRIMARY_ENTRY_POINT, o.yU.CHAT, o.yU.MESSAGE, o.yU.USER];
+let m = [a.yU.PRIMARY_ENTRY_POINT, a.yU.CHAT, a.yU.MESSAGE, a.yU.USER];
 
 function g(e) {
   var t, n, g;
@@ -41,7 +41,7 @@ function g(e) {
       })
     }
   }, [y, S]), r.useEffect(() => {
-    (null == y ? void 0 : y.id) != null && a.Z.dispatch({
+    (null == y ? void 0 : y.id) != null && o.Z.dispatch({
       type: "APP_DM_OPEN",
       botUserId: y.id
     })
@@ -56,17 +56,17 @@ function g(e) {
       allowFetch: (null == y ? void 0 : y.id) != null,
       allowApplicationState: !0
     }),
-    N = A.commands.filter(e => e.type === o.yU.PRIMARY_ENTRY_POINT && e.applicationId === S)[0],
+    N = A.commands.filter(e => e.type === a.yU.PRIMARY_ENTRY_POINT && e.applicationId === S)[0],
     C = A.commands.filter(e => "0" !== e.id && !e.id.startsWith("-")),
-    w = A.loading,
-    R = null == (t = A.descriptors.find(e => {
+    R = A.loading,
+    P = null == (t = A.descriptors.find(e => {
       var t;
       return (null == (t = e.application) ? void 0 : t.id) === S
     })) ? void 0 : t.application,
-    P = r.useMemo(() => null != R ? _.ZP.createFromServer(R) : void 0, [R]),
-    D = (0, u.q)(null == P ? S : void 0),
-    L = null != (n = null != P ? P : D) ? n : void 0,
-    x = null == L || w && 0 === C.length;
+    w = r.useMemo(() => null != P ? _.ZP.createFromServer(P) : void 0, [P]),
+    D = (0, u.q)(null == w ? S : void 0),
+    L = null != (n = null != w ? w : D) ? n : void 0,
+    x = null == L || R && 0 === C.length;
   return {
     application: L,
     isInitialLoading: x,

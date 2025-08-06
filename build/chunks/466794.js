@@ -1,26 +1,26 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  X: () => o
+  X: () => a
 });
 var r = n(255367);
 n(73800);
 var i = n(481060),
-  a = n(299491);
+  o = n(299491);
 
-function o(e) {
+function a(e) {
   let {
     tooltipText: t,
     textColor: n
   } = e;
   return (0, r.jsxs)("span", {
-    className: a.tooltipTextContainer,
+    className: o.tooltipTextContainer,
     children: [(0, r.jsx)(i.SrA, {
       size: "md",
       color: "currentColor",
-      className: a.nitroWheel
+      className: o.nitroWheel
     }), (0, r.jsx)(i.Text, {
-      className: a.tooltipText,
+      className: o.tooltipText,
       variant: "text-sm/medium",
       color: null != n ? n : "text-default",
       children: t

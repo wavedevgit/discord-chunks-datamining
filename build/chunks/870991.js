@@ -2,12 +2,12 @@
 "use strict";
 n.d(t, {
   D8: () => i,
-  E4: () => a
+  E4: () => o
 });
 var r = n(388032);
 let i = "https://discord.com/safety/understanding-and-avoiding-common-scams";
 
-function a() {
+function o() {
   return [{
     title: r.intl.string(r.t.wSZfJS),
     description: r.intl.string(r.t.CRwzW1)

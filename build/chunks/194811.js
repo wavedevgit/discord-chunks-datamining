@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var i = n(120356),
-  a = n.n(i),
-  o = n(481060),
+  o = n.n(i),
+  a = n(481060),
   s = n(111028),
   l = n(652853),
   c = n(228168),
@@ -24,11 +24,11 @@ function d(e) {
     themeType: _
   } = (0, l.z)();
   return (null == t || "" === t) && null == f ? null : null == t || "" === t ? (0, r.jsx)("div", {
-    className: a()(u.headerContextMenu, u.absolute),
+    className: o()(u.headerContextMenu, u.absolute),
     children: f
   }) : (0, r.jsxs)("div", {
     className: u.header,
-    children: [(0, r.jsxs)(o.Text, {
+    children: [(0, r.jsxs)(a.Text, {
       className: u.headerText,
       variant: _ === c.lY.SIDEBAR ? "text-xs/semibold" : "text-xs/medium",
       color: "header-primary",

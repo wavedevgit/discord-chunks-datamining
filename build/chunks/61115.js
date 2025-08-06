@@ -6,8 +6,8 @@ n.d(t, {
 }), n(388685);
 var r = n(255367),
   i = n(73800),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(66546),
   l = n(481060),
   c = n(493773),
@@ -66,8 +66,8 @@ function S(e) {
   let {
     questId: t,
     survey: n,
-    transitionState: a,
-    onClose: o,
+    transitionState: o,
+    onClose: a,
     onSubmit: f
   } = e, p = (0, _.B4)(t), [b, O] = i.useState(0), [S, N] = (0, l.q_F)(() => ({
     from: {
@@ -76,27 +76,27 @@ function S(e) {
     config: {
       duration: I
     }
-  })), w = e => {
+  })), R = e => {
     f(), O(1), null != p && d.default.track(h.rMx.QUEST_SURVEY_SUBMITTED, v(y({}, C(p, n)), {
       choice: e.text,
       choice_id: e.key
     }))
-  }, R = async e => {
+  }, P = async e => {
     1 === e && (await N({
       width: "100%"
-    }), o())
+    }), a())
   };
   return (0, c.ZP)(() => {
     null != p && d.default.track(h.rMx.QUEST_SURVEY_DISPLAYED, C(p, n))
-  }), null == p && o(), (0, r.jsx)(l.Y0X, {
-    transitionState: a,
+  }), null == p && a(), (0, r.jsx)(l.Y0X, {
+    transitionState: o,
     size: l.CgR.DYNAMIC,
     className: g.modalRoot,
     parentComponent: "QuestSurveyModal",
     children: (0, r.jsxs)(l.MyZ, {
       activeSlide: b,
       width: T,
-      onSlideReady: R,
+      onSlideReady: P,
       children: [(0, r.jsxs)(l.Mi4, {
         id: 0,
         children: [(0, r.jsxs)(l.xBx, {
@@ -105,7 +105,7 @@ function S(e) {
           className: g.modalHeader,
           children: [(0, r.jsx)(l.olH, {
             className: g.closeBtn,
-            onClick: o
+            onClick: a
           }), (0, r.jsx)("img", {
             src: E,
             alt: "",
@@ -122,7 +122,7 @@ function S(e) {
           className: g.modalContent,
           children: n.choices.map(e => (0, r.jsx)(A, {
             choice: e,
-            onClick: w
+            onClick: R
           }, e.key))
         })]
       }), (0, r.jsxs)(l.Mi4, {
@@ -147,7 +147,7 @@ function S(e) {
             children: [(0, r.jsx)(l.zxk, {
               variant: "primary",
               text: m.intl.string(m.t.cpT0Cg),
-              onClick: o
+              onClick: a
             }), (0, r.jsx)(s.animated.div, {
               className: g.progressOverlay,
               style: S
@@ -166,7 +166,7 @@ function A(e) {
     onClick: i
   } = e;
   return (0, r.jsxs)(l.P3F, {
-    className: o()(g.choiceContainer, t),
+    className: a()(g.choiceContainer, t),
     onClick: () => i(n),
     children: [(0, r.jsx)(l.Text, {
       variant: "text-sm/semibold",

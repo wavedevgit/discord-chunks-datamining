@@ -1,11 +1,11 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  ZP: () => k
+  ZP: () => M
 }), n(388685);
 var r, i = n(392711),
-  a = n.n(i),
-  o = n(442837),
+  o = n.n(i),
+  a = n(442837),
   s = n(570140),
   l = n(592125),
   c = n(271383),
@@ -50,10 +50,10 @@ function v(e, t) {
   let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
     r = l.Z.getChannel(t),
     i = null == r ? void 0 : r.getGuildId(),
-    a = d.Z.getGuild(i);
-  return null != a && null != r && r.isGuildStageVoice() ? {
+    o = d.Z.getGuild(i);
+  return null != o && null != r && r.isGuildStageVoice() ? {
     speaker: y(e, t),
-    moderator: n ? O(e, a, r) : null
+    moderator: n ? O(e, o, r) : null
   } : b
 }
 
@@ -99,7 +99,7 @@ function C(e) {
   A(t)
 }
 
-function w(e) {
+function R(e) {
   let {
     guildId: t,
     user: n
@@ -107,11 +107,11 @@ function w(e) {
   return null != n && null != t && S(n.id, t)
 }
 
-function R(e) {
+function P(e) {
   let {
     voiceStates: t
   } = e;
-  return !a().isEmpty(E) && t.reduce((e, t) => {
+  return !o().isEmpty(E) && t.reduce((e, t) => {
     let {
       userId: n,
       channelId: r
@@ -120,7 +120,7 @@ function R(e) {
   }, !1)
 }
 
-function P(e) {
+function w(e) {
   return A(e.guildId)
 }
 
@@ -137,7 +137,7 @@ function L(e) {
     (null == n || n.guild_id === t.id) && delete E[e]
   }
 }
-class x extends(r = o.ZP.Store) {
+class x extends(r = a.ZP.Store) {
   initialize() {
     this.waitFor(c.ZP, l.Z, d.Z, f.default, _.Z, u.Z)
   }
@@ -164,14 +164,14 @@ class x extends(r = o.ZP.Store) {
   }
 }
 g(x, "displayName", "StageChannelRoleStore");
-let k = new x(s.Z, {
+let M = new x(s.Z, {
   CHANNEL_UPDATES: N,
   CONNECTION_OPEN: D,
-  GUILD_MEMBER_REMOVE: w,
-  GUILD_MEMBER_UPDATE: w,
+  GUILD_MEMBER_REMOVE: R,
+  GUILD_MEMBER_UPDATE: R,
   GUILD_ROLE_UPDATE: C,
-  PASSIVE_UPDATE_V2: P,
-  VOICE_STATE_UPDATES: R,
+  PASSIVE_UPDATE_V2: w,
+  VOICE_STATE_UPDATES: P,
   GUILD_CREATE: L,
   GUILD_DELETE: L
 })

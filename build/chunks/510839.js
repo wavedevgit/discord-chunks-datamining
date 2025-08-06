@@ -2,17 +2,17 @@
 "use strict";
 n.d(t, {
   eU: () => l,
-  s2: () => o,
+  s2: () => a,
   xT: () => s
 });
 var r = n(570140),
   i = n(566620),
-  a = n(317381);
+  o = n(317381);
 
-function o(e) {
+function a(e) {
   let {
     applicationId: t
-  } = e, n = a.ZP.getCurrentEmbeddedActivity();
+  } = e, n = o.ZP.getCurrentEmbeddedActivity();
   null != n && (0, i.mW)({
     location: n.location,
     applicationId: n.applicationId,

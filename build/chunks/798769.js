@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var i = n(442837),
-  a = n(481060),
-  o = n(607070),
+  o = n(481060),
+  a = n(607070),
   s = n(409813),
   l = n(669079),
   c = n(709093),
@@ -32,7 +32,7 @@ function h(e) {
     giftRecipient: I,
     isEligibleForTrial: T,
     enablePremiumBrandRefresh: S
-  } = e, A = (0, i.e7)([o.Z], () => o.Z.useReducedMotion), N = g ? f.nL.WINTER : f.nL.DEFAULT, C = () => {
+  } = e, A = (0, i.e7)([a.Z], () => a.Z.useReducedMotion), N = g ? f.nL.WINTER : f.nL.DEFAULT, C = () => {
     switch (t) {
       case s.h8.PLAN_SELECT:
         return m === f.p9.TIER_0 ? _.intl.string(_.t.rk4Uu7) : _.intl.string(_.t["7YWj6+"]);
@@ -44,14 +44,14 @@ function h(e) {
         return _.intl.string(_.t["7YWj6+"])
     }
   };
-  return v && (0, l.pO)(I) && t !== s.h8.CONFIRM ? (0, r.jsxs)(a.xBx, {
+  return v && (0, l.pO)(I) && t !== s.h8.CONFIRM ? (0, r.jsxs)(o.xBx, {
     className: p.modalHeaderCustomGift,
     separator: !1,
     "data-migration-pending": !0,
-    children: [(0, r.jsx)(a.X6q, {
+    children: [(0, r.jsx)(o.X6q, {
       variant: "heading-lg/semibold",
       children: C()
-    }), (0, r.jsx)(a.olH, {
+    }), (0, r.jsx)(o.olH, {
       onClick: E,
       className: p.closeButton,
       innerClassName: p.closeButtonInner,

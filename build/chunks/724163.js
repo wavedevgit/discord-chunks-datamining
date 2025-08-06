@@ -1,63 +1,95 @@
-/** Chunk was on web.js **/
-var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(e) {
+/** Chunk was on 66549 **/
+var s, t = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(e) {
   return typeof e
 } : function(e) {
   return e && "function" == typeof Symbol && e.constructor === Symbol ? "symbol" : typeof e
 };
-! function(e, n) {
-  "function" == typeof define && define.amd ? define("snowballFactory", ["exports"], n) : n(t)
-}(0, function(e) {
+s = function(e) {
   "use strict";
 
-  function t(e, t) {
+  function i(e, i) {
     if (!e) throw ReferenceError("this hasn't been initialised - super() hasn't been called");
-    return t && ((void 0 === t ? "undefined" : n(t)) === "object" || "function" == typeof t) ? t : e
+    return i && ((void 0 === i ? "undefined" : t(i)) === "object" || "function" == typeof i) ? i : e
   }
 
-  function r(e, t) {
-    if ("function" != typeof t && null !== t) throw TypeError("Super expression must either be null or a function, not " + (void 0 === t ? "undefined" : n(t)));
-    e.prototype = Object.create(t && t.prototype, {
+  function s(e, i) {
+    if ("function" != typeof i && null !== i) throw TypeError("Super expression must either be null or a function, not " + (void 0 === i ? "undefined" : t(i)));
+    e.prototype = Object.create(i && i.prototype, {
       constructor: {
         value: e,
         enumerable: !1,
         writable: !0,
         configurable: !0
       }
-    }), t && (Object.setPrototypeOf ? Object.setPrototypeOf(e, t) : e.__proto__ = t)
+    }), i && (Object.setPrototypeOf ? Object.setPrototypeOf(e, i) : e.__proto__ = i)
   }
 
-  function i(e, t) {
-    if (!(e instanceof t)) throw TypeError("Cannot call a class as a function")
+  function r(e, i) {
+    if (!(e instanceof i)) throw TypeError("Cannot call a class as a function")
   }
   Object.defineProperty(e, "__esModule", {
     value: !0
-  }), e.newStemmer = k, e.algorithms = j;
+  }), e.newStemmer = function(e) {
+    var i = new({
+      arabic: _,
+      armenian: l,
+      basque: w,
+      catalan: $,
+      czech: v,
+      danish: f,
+      dutch: k,
+      english: d,
+      finnish: b,
+      french: m,
+      german: j,
+      hungarian: g,
+      italian: y,
+      irish: p,
+      norwegian: I,
+      porter: q,
+      portuguese: O,
+      romanian: x,
+      russian: R,
+      spanish: P,
+      slovene: z,
+      swedish: V,
+      tamil: S,
+      turkish: A
+    })[e.toLowerCase()];
+    return {
+      stem: function(e) {
+        return i.setCurrent(e), i.stem(), i.getCurrent()
+      }
+    }
+  }, e.algorithms = function() {
+    return ["arabic", "armenian", "basque", "catalan", "czech", "danish", "dutch", "english", "finnish", "french", "german", "hungarian", "italian", "irish", "norwegian", "porter", "portuguese", "romanian", "russian", "spanish", "slovene", "swedish", "tamil", "turkish"]
+  };
   var a = function() {
-      function e(e, t) {
-        for (var n = 0; n < t.length; n++) {
-          var r = t[n];
-          r.enumerable = r.enumerable || !1, r.configurable = !0, "value" in r && (r.writable = !0), Object.defineProperty(e, r.key, r)
+      function e(e, i) {
+        for (var s = 0; s < i.length; s++) {
+          var t = i[s];
+          t.enumerable = t.enumerable || !1, t.configurable = !0, "value" in t && (t.writable = !0), Object.defineProperty(e, t.key, t)
         }
       }
-      return function(t, n, r) {
-        return n && e(t.prototype, n), r && e(t, r), t
+      return function(i, s, t) {
+        return s && e(i.prototype, s), t && e(i, t), i
       }
     }(),
-    o = function e(t, n, r) {
-      null === t && (t = Function.prototype);
-      var i = Object.getOwnPropertyDescriptor(t, n);
-      if (void 0 === i) {
-        var a = Object.getPrototypeOf(t);
+    n = function e(i, s, t) {
+      null === i && (i = Function.prototype);
+      var r = Object.getOwnPropertyDescriptor(i, s);
+      if (void 0 === r) {
+        var a = Object.getPrototypeOf(i);
         if (null === a) return;
-        return e(a, n, r)
+        return e(a, s, t)
       }
-      if ("value" in i) return i.value;
-      var o = i.get;
-      if (void 0 !== o) return o.call(r)
+      if ("value" in r) return r.value;
+      var n = r.get;
+      if (void 0 !== n) return n.call(t)
     },
-    s = function() {
+    h = function() {
       function e() {
-        i(this, e)
+        r(this, e)
       }
       return a(e, [{
         key: "length$esjava$0",
@@ -66,18 +98,18 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         }
       }, {
         key: "replace$esjava$3",
-        value: function(e, t, n) {
-          if (0 === e && t === this.b.length) this.b = n;
+        value: function(e, i, s) {
+          if (0 === e && i === this.b.length) this.b = s;
           else {
-            var r = this.b.substring(0, e),
-              i = this.b.substring(t);
-            this.b = r + n + i
+            var t = this.b.substring(0, e),
+              r = this.b.substring(i);
+            this.b = t + s + r
           }
         }
       }, {
         key: "substring$esjava$2",
-        value: function(e, t) {
-          return this.b.substring(e, t)
+        value: function(e, i) {
+          return this.b.substring(e, i)
         }
       }, {
         key: "charAt$esjava$1",
@@ -86,7 +118,7 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         }
       }, {
         key: "subSequence$esjava$2",
-        value: function(e, t) {
+        value: function(e, i) {
           throw Error("NotImpl: CharSequence::subSequence")
         }
       }, {
@@ -97,38 +129,38 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
       }, {
         key: "length",
         value: function() {
-          for (var t, n = arguments.length, r = Array(n), i = 0; i < n; i++) r[i] = arguments[i];
-          return 0 === r.length ? this.length$esjava$0.apply(this, r) : (t = o(Object.getPrototypeOf(e.prototype), "length", this)).call.apply(t, [this].concat(r))
+          for (var i, s = arguments.length, t = Array(s), r = 0; r < s; r++) t[r] = arguments[r];
+          return 0 === t.length ? this.length$esjava$0.apply(this, t) : (i = n(Object.getPrototypeOf(e.prototype), "length", this)).call.apply(i, [this].concat(t))
         }
       }, {
         key: "replace",
         value: function() {
-          for (var t, n = arguments.length, r = Array(n), i = 0; i < n; i++) r[i] = arguments[i];
-          return 3 === r.length ? this.replace$esjava$3.apply(this, r) : (t = o(Object.getPrototypeOf(e.prototype), "replace", this)).call.apply(t, [this].concat(r))
+          for (var i, s = arguments.length, t = Array(s), r = 0; r < s; r++) t[r] = arguments[r];
+          return 3 === t.length ? this.replace$esjava$3.apply(this, t) : (i = n(Object.getPrototypeOf(e.prototype), "replace", this)).call.apply(i, [this].concat(t))
         }
       }, {
         key: "substring",
         value: function() {
-          for (var t, n = arguments.length, r = Array(n), i = 0; i < n; i++) r[i] = arguments[i];
-          return 2 === r.length ? this.substring$esjava$2.apply(this, r) : (t = o(Object.getPrototypeOf(e.prototype), "substring", this)).call.apply(t, [this].concat(r))
+          for (var i, s = arguments.length, t = Array(s), r = 0; r < s; r++) t[r] = arguments[r];
+          return 2 === t.length ? this.substring$esjava$2.apply(this, t) : (i = n(Object.getPrototypeOf(e.prototype), "substring", this)).call.apply(i, [this].concat(t))
         }
       }, {
         key: "charAt",
         value: function() {
-          for (var t, n = arguments.length, r = Array(n), i = 0; i < n; i++) r[i] = arguments[i];
-          return 1 === r.length ? this.charAt$esjava$1.apply(this, r) : (t = o(Object.getPrototypeOf(e.prototype), "charAt", this)).call.apply(t, [this].concat(r))
+          for (var i, s = arguments.length, t = Array(s), r = 0; r < s; r++) t[r] = arguments[r];
+          return 1 === t.length ? this.charAt$esjava$1.apply(this, t) : (i = n(Object.getPrototypeOf(e.prototype), "charAt", this)).call.apply(i, [this].concat(t))
         }
       }, {
         key: "subSequence",
         value: function() {
-          for (var t, n = arguments.length, r = Array(n), i = 0; i < n; i++) r[i] = arguments[i];
-          return 2 === r.length ? this.subSequence$esjava$2.apply(this, r) : (t = o(Object.getPrototypeOf(e.prototype), "subSequence", this)).call.apply(t, [this].concat(r))
+          for (var i, s = arguments.length, t = Array(s), r = 0; r < s; r++) t[r] = arguments[r];
+          return 2 === t.length ? this.subSequence$esjava$2.apply(this, t) : (i = n(Object.getPrototypeOf(e.prototype), "subSequence", this)).call.apply(i, [this].concat(t))
         }
       }, {
         key: "toString",
         value: function() {
-          for (var t, n = arguments.length, r = Array(n), i = 0; i < n; i++) r[i] = arguments[i];
-          return 0 === r.length ? this.toString$esjava$0.apply(this, r) : (t = o(Object.getPrototypeOf(e.prototype), "toString", this)).call.apply(t, [this].concat(r))
+          for (var i, s = arguments.length, t = Array(s), r = 0; r < s; r++) t[r] = arguments[r];
+          return 0 === t.length ? this.toString$esjava$0.apply(this, t) : (i = n(Object.getPrototypeOf(e.prototype), "toString", this)).call.apply(i, [this].concat(t))
         }
       }, {
         key: "b",
@@ -140,21 +172,21 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         }
       }]), e
     }(),
-    l = function(e) {
-      function n() {
-        return i(this, n), t(this, Object.getPrototypeOf(n).apply(this, arguments))
+    o = function(e) {
+      function t() {
+        return r(this, t), i(this, Object.getPrototypeOf(t).apply(this, arguments))
       }
-      return r(n, e), n
-    }(s),
-    c = function() {
-      function e(t, n, r, a, o) {
-        i(this, e), this.s = e.toCharArray$esjava$1(t), this.substring_i = n, this.result = r, this.method = a ? o[a] : null, this.methodobject = o
+      return s(t, e), t
+    }(h),
+    u = function() {
+      function e(i, s, t, a, n) {
+        r(this, e), this.s = e.toCharArray$esjava$1(i), this.substring_i = s, this.result = t, this.method = a ? n[a] : null, this.methodobject = n
       }
       return a(e, null, [{
         key: "toCharArray$esjava$1",
         value: function(e) {
-          for (var t = e.length, n = Array(t), r = 0; r < t; r++) n[r] = e.charCodeAt(r);
-          return n
+          for (var i = e.length, s = Array(i), t = 0; t < i; t++) s[t] = e.charCodeAt(t);
+          return s
         }
       }]), a(e, [{
         key: "s",
@@ -198,11 +230,11 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         }
       }]), e
     }(),
-    u = function(e) {
-      function n() {
-        return i(this, n), t(this, Object.getPrototypeOf(n).apply(this, arguments))
+    c = function(e) {
+      function t() {
+        return r(this, t), i(this, Object.getPrototypeOf(t).apply(this, arguments))
       }
-      return r(n, e), a(n, [{
+      return s(t, e), a(t, [{
         key: "stem$esjava$0",
         value: function() {
           throw "NotImpl < stem$esjava$0 >"
@@ -210,13 +242,13 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
       }, {
         key: "stem",
         value: function() {
-          for (var e, t = arguments.length, r = Array(t), i = 0; i < t; i++) r[i] = arguments[i];
-          return 0 === r.length ? this.stem$esjava$0.apply(this, r) : (e = o(Object.getPrototypeOf(n.prototype), "stem", this)).call.apply(e, [this].concat(r))
+          for (var e, i = arguments.length, s = Array(i), r = 0; r < i; r++) s[r] = arguments[r];
+          return 0 === s.length ? this.stem$esjava$0.apply(this, s) : (e = n(Object.getPrototypeOf(t.prototype), "stem", this)).call.apply(e, [this].concat(s))
         }
-      }]), n
+      }]), t
     }(function() {
       function e() {
-        i(this, e), this.current = new s, this.setCurrent$esjava$1("")
+        r(this, e), this.current = new h, this.setCurrent$esjava$1("")
       }
       return a(e, [{
         key: "setCurrent$esjava$1",
@@ -227,123 +259,123 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "getCurrent$esjava$0",
         value: function() {
           var e = this.current.toString();
-          return this.current = new s, e
+          return this.current = new h, e
         }
       }, {
         key: "in_grouping$esjava$3",
-        value: function(e, t, n) {
+        value: function(e, i, s) {
           if (this.cursor >= this.limit) return !1;
-          var r = this.current.charAt(this.cursor);
-          return !(r > n) && !(r < t) && (e[(r -= t) >> 3] & 1 << (7 & r)) != 0 && (this.cursor++, !0)
+          var t = this.current.charAt(this.cursor);
+          return !(t > s) && !(t < i) && (e[(t -= i) >> 3] & 1 << (7 & t)) != 0 && (this.cursor++, !0)
         }
       }, {
         key: "in_grouping_b$esjava$3",
-        value: function(e, t, n) {
+        value: function(e, i, s) {
           if (this.cursor <= this.limit_backward) return !1;
-          var r = this.current.charAt(this.cursor - 1);
-          return !(r > n) && !(r < t) && (e[(r -= t) >> 3] & 1 << (7 & r)) != 0 && (this.cursor--, !0)
+          var t = this.current.charAt(this.cursor - 1);
+          return !(t > s) && !(t < i) && (e[(t -= i) >> 3] & 1 << (7 & t)) != 0 && (this.cursor--, !0)
         }
       }, {
         key: "out_grouping$esjava$3",
-        value: function(e, t, n) {
+        value: function(e, i, s) {
           if (this.cursor >= this.limit) return !1;
-          var r = this.current.charAt(this.cursor);
-          return (r > n || r < t || (e[(r -= t) >> 3] & 1 << (7 & r)) == 0) && (this.cursor++, !0)
+          var t = this.current.charAt(this.cursor);
+          return (t > s || t < i || (e[(t -= i) >> 3] & 1 << (7 & t)) == 0) && (this.cursor++, !0)
         }
       }, {
         key: "out_grouping_b$esjava$3",
-        value: function(e, t, n) {
+        value: function(e, i, s) {
           if (this.cursor <= this.limit_backward) return !1;
-          var r = this.current.charAt(this.cursor - 1);
-          return (r > n || r < t || (e[(r -= t) >> 3] & 1 << (7 & r)) == 0) && (this.cursor--, !0)
+          var t = this.current.charAt(this.cursor - 1);
+          return (t > s || t < i || (e[(t -= i) >> 3] & 1 << (7 & t)) == 0) && (this.cursor--, !0)
         }
       }, {
         key: "eq_s$esjava$1",
         value: function(e) {
           if (this.limit - this.cursor < e.length) return !1;
-          var t = void 0;
-          for (t = 0; t !== e.length; t++)
-            if (this.current.charAt(this.cursor + t) !== e.charCodeAt(t)) return !1;
+          var i = void 0;
+          for (i = 0; i !== e.length; i++)
+            if (this.current.charAt(this.cursor + i) !== e.charCodeAt(i)) return !1;
           return this.cursor += e.length, !0
         }
       }, {
         key: "eq_s_b$esjava$1",
         value: function(e) {
           if (this.cursor - this.limit_backward < e.length) return !1;
-          var t = void 0;
-          for (t = 0; t !== e.length; t++)
-            if (this.current.charAt(this.cursor - e.length + t) !== e.charCodeAt(t)) return !1;
+          var i = void 0;
+          for (i = 0; i !== e.length; i++)
+            if (this.current.charAt(this.cursor - e.length + i) !== e.charCodeAt(i)) return !1;
           return this.cursor -= e.length, !0
         }
       }, {
         key: "find_among$esjava$1",
         value: function(e) {
-          for (var t = 0, n = e.length, r = this.cursor, i = this.limit, a = 0, o = 0, s = !1;;) {
-            var l = t + (n - t >> 1),
-              c = 0,
-              u = a < o ? a : o,
-              d = e[l],
-              f = void 0;
-            for (f = u; f < d.s.length; f++) {
-              if (r + u === i) {
-                c = -1;
+          for (var i = 0, s = e.length, t = this.cursor, r = this.limit, a = 0, n = 0, h = !1;;) {
+            var o = i + (s - i >> 1),
+              u = 0,
+              c = a < n ? a : n,
+              _ = e[o],
+              l = void 0;
+            for (l = c; l < _.s.length; l++) {
+              if (t + c === r) {
+                u = -1;
                 break
               }
-              if (0 != (c = this.current.charAt(r + u) - d.s[f])) break;
-              u++
+              if (0 != (u = this.current.charAt(t + c) - _.s[l])) break;
+              c++
             }
-            if (c < 0 ? (n = l, o = u) : (t = l, a = u), n - t <= 1) {
-              if (t > 0 || n === t || s) break;
-              s = !0
+            if (u < 0 ? (s = o, n = c) : (i = o, a = c), s - i <= 1) {
+              if (i > 0 || s === i || h) break;
+              h = !0
             }
           }
           for (;;) {
-            var d = e[t];
-            if (a >= d.s.length) {
-              if (this.cursor = r + d.s.length, null === d.method) return d.result;
-              var _ = void 0;
-              if (_ = d.method.call(d.methodobject), this.cursor = r + d.s.length, _) return d.result
+            var _ = e[i];
+            if (a >= _.s.length) {
+              if (this.cursor = t + _.s.length, null === _.method) return _.result;
+              var w = void 0;
+              if (w = _.method.call(_.methodobject), this.cursor = t + _.s.length, w) return _.result
             }
-            if ((t = d.substring_i) < 0) return 0
+            if ((i = _.substring_i) < 0) return 0
           }
         }
       }, {
         key: "find_among_b$esjava$1",
         value: function(e) {
-          for (var t = 0, n = e.length, r = this.cursor, i = this.limit_backward, a = 0, o = 0, s = !1;;) {
-            var l = t + (n - t >> 1),
-              c = 0,
-              u = a < o ? a : o,
-              d = e[l],
-              f = void 0;
-            for (f = d.s.length - 1 - u; f >= 0; f--) {
-              if (r - u === i) {
-                c = -1;
+          for (var i = 0, s = e.length, t = this.cursor, r = this.limit_backward, a = 0, n = 0, h = !1;;) {
+            var o = i + (s - i >> 1),
+              u = 0,
+              c = a < n ? a : n,
+              _ = e[o],
+              l = void 0;
+            for (l = _.s.length - 1 - c; l >= 0; l--) {
+              if (t - c === r) {
+                u = -1;
                 break
               }
-              if (0 != (c = this.current.charAt(r - 1 - u) - d.s[f])) break;
-              u++
+              if (0 != (u = this.current.charAt(t - 1 - c) - _.s[l])) break;
+              c++
             }
-            if (c < 0 ? (n = l, o = u) : (t = l, a = u), n - t <= 1) {
-              if (t > 0 || n === t || s) break;
-              s = !0
+            if (u < 0 ? (s = o, n = c) : (i = o, a = c), s - i <= 1) {
+              if (i > 0 || s === i || h) break;
+              h = !0
             }
           }
           for (;;) {
-            var d = e[t];
-            if (a >= d.s.length) {
-              if (this.cursor = r - d.s.length, null === d.method) return d.result;
-              var _ = void 0;
-              if (_ = d.method.call(d.methodobject), this.cursor = r - d.s.length, _) return d.result
+            var _ = e[i];
+            if (a >= _.s.length) {
+              if (this.cursor = t - _.s.length, null === _.method) return _.result;
+              var w = void 0;
+              if (w = _.method.call(_.methodobject), this.cursor = t - _.s.length, w) return _.result
             }
-            if ((t = d.substring_i) < 0) return 0
+            if ((i = _.substring_i) < 0) return 0
           }
         }
       }, {
         key: "replace_s$esjava$3",
-        value: function(e, t, n) {
-          var r = n.length - (t - e);
-          return this.current.replace(e, t, n), this.limit += r, this.cursor >= t ? this.cursor += r : this.cursor > e && (this.cursor = e), r
+        value: function(e, i, s) {
+          var t = s.length - (i - e);
+          return this.current.replace(e, i, s), this.limit += t, this.cursor >= i ? this.cursor += t : this.cursor > e && (this.cursor = e), t
         }
       }, {
         key: "slice_check$esjava$0",
@@ -362,9 +394,9 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         }
       }, {
         key: "insert$esjava$3",
-        value: function(e, t, n) {
-          var r = this.replace_s$esjava$3(e, t, n);
-          e <= this.bra && (this.bra += r), e <= this.ket && (this.ket += r)
+        value: function(e, i, s) {
+          var t = this.replace_s$esjava$3(e, i, s);
+          e <= this.bra && (this.bra += t), e <= this.ket && (this.ket += t)
         }
       }, {
         key: "slice_to$esjava$1",
@@ -374,98 +406,98 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
       }, {
         key: "setCurrent",
         value: function() {
-          for (var t, n = arguments.length, r = Array(n), i = 0; i < n; i++) r[i] = arguments[i];
-          return 1 === r.length ? this.setCurrent$esjava$1.apply(this, r) : (t = o(Object.getPrototypeOf(e.prototype), "setCurrent", this)).call.apply(t, [this].concat(r))
+          for (var i, s = arguments.length, t = Array(s), r = 0; r < s; r++) t[r] = arguments[r];
+          return 1 === t.length ? this.setCurrent$esjava$1.apply(this, t) : (i = n(Object.getPrototypeOf(e.prototype), "setCurrent", this)).call.apply(i, [this].concat(t))
         }
       }, {
         key: "getCurrent",
         value: function() {
-          for (var t, n = arguments.length, r = Array(n), i = 0; i < n; i++) r[i] = arguments[i];
-          return 0 === r.length ? this.getCurrent$esjava$0.apply(this, r) : (t = o(Object.getPrototypeOf(e.prototype), "getCurrent", this)).call.apply(t, [this].concat(r))
+          for (var i, s = arguments.length, t = Array(s), r = 0; r < s; r++) t[r] = arguments[r];
+          return 0 === t.length ? this.getCurrent$esjava$0.apply(this, t) : (i = n(Object.getPrototypeOf(e.prototype), "getCurrent", this)).call.apply(i, [this].concat(t))
         }
       }, {
         key: "in_grouping",
         value: function() {
-          for (var t, n = arguments.length, r = Array(n), i = 0; i < n; i++) r[i] = arguments[i];
-          return 3 === r.length ? this.in_grouping$esjava$3.apply(this, r) : (t = o(Object.getPrototypeOf(e.prototype), "in_grouping", this)).call.apply(t, [this].concat(r))
+          for (var i, s = arguments.length, t = Array(s), r = 0; r < s; r++) t[r] = arguments[r];
+          return 3 === t.length ? this.in_grouping$esjava$3.apply(this, t) : (i = n(Object.getPrototypeOf(e.prototype), "in_grouping", this)).call.apply(i, [this].concat(t))
         }
       }, {
         key: "in_grouping_b",
         value: function() {
-          for (var t, n = arguments.length, r = Array(n), i = 0; i < n; i++) r[i] = arguments[i];
-          return 3 === r.length ? this.in_grouping_b$esjava$3.apply(this, r) : (t = o(Object.getPrototypeOf(e.prototype), "in_grouping_b", this)).call.apply(t, [this].concat(r))
+          for (var i, s = arguments.length, t = Array(s), r = 0; r < s; r++) t[r] = arguments[r];
+          return 3 === t.length ? this.in_grouping_b$esjava$3.apply(this, t) : (i = n(Object.getPrototypeOf(e.prototype), "in_grouping_b", this)).call.apply(i, [this].concat(t))
         }
       }, {
         key: "out_grouping",
         value: function() {
-          for (var t, n = arguments.length, r = Array(n), i = 0; i < n; i++) r[i] = arguments[i];
-          return 3 === r.length ? this.out_grouping$esjava$3.apply(this, r) : (t = o(Object.getPrototypeOf(e.prototype), "out_grouping", this)).call.apply(t, [this].concat(r))
+          for (var i, s = arguments.length, t = Array(s), r = 0; r < s; r++) t[r] = arguments[r];
+          return 3 === t.length ? this.out_grouping$esjava$3.apply(this, t) : (i = n(Object.getPrototypeOf(e.prototype), "out_grouping", this)).call.apply(i, [this].concat(t))
         }
       }, {
         key: "out_grouping_b",
         value: function() {
-          for (var t, n = arguments.length, r = Array(n), i = 0; i < n; i++) r[i] = arguments[i];
-          return 3 === r.length ? this.out_grouping_b$esjava$3.apply(this, r) : (t = o(Object.getPrototypeOf(e.prototype), "out_grouping_b", this)).call.apply(t, [this].concat(r))
+          for (var i, s = arguments.length, t = Array(s), r = 0; r < s; r++) t[r] = arguments[r];
+          return 3 === t.length ? this.out_grouping_b$esjava$3.apply(this, t) : (i = n(Object.getPrototypeOf(e.prototype), "out_grouping_b", this)).call.apply(i, [this].concat(t))
         }
       }, {
         key: "eq_s",
         value: function() {
-          for (var t, n = arguments.length, r = Array(n), i = 0; i < n; i++) r[i] = arguments[i];
-          return 1 === r.length ? this.eq_s$esjava$1.apply(this, r) : (t = o(Object.getPrototypeOf(e.prototype), "eq_s", this)).call.apply(t, [this].concat(r))
+          for (var i, s = arguments.length, t = Array(s), r = 0; r < s; r++) t[r] = arguments[r];
+          return 1 === t.length ? this.eq_s$esjava$1.apply(this, t) : (i = n(Object.getPrototypeOf(e.prototype), "eq_s", this)).call.apply(i, [this].concat(t))
         }
       }, {
         key: "eq_s_b",
         value: function() {
-          for (var t, n = arguments.length, r = Array(n), i = 0; i < n; i++) r[i] = arguments[i];
-          return 1 === r.length ? this.eq_s_b$esjava$1.apply(this, r) : (t = o(Object.getPrototypeOf(e.prototype), "eq_s_b", this)).call.apply(t, [this].concat(r))
+          for (var i, s = arguments.length, t = Array(s), r = 0; r < s; r++) t[r] = arguments[r];
+          return 1 === t.length ? this.eq_s_b$esjava$1.apply(this, t) : (i = n(Object.getPrototypeOf(e.prototype), "eq_s_b", this)).call.apply(i, [this].concat(t))
         }
       }, {
         key: "find_among",
         value: function() {
-          for (var t, n = arguments.length, r = Array(n), i = 0; i < n; i++) r[i] = arguments[i];
-          return 1 === r.length ? this.find_among$esjava$1.apply(this, r) : (t = o(Object.getPrototypeOf(e.prototype), "find_among", this)).call.apply(t, [this].concat(r))
+          for (var i, s = arguments.length, t = Array(s), r = 0; r < s; r++) t[r] = arguments[r];
+          return 1 === t.length ? this.find_among$esjava$1.apply(this, t) : (i = n(Object.getPrototypeOf(e.prototype), "find_among", this)).call.apply(i, [this].concat(t))
         }
       }, {
         key: "find_among_b",
         value: function() {
-          for (var t, n = arguments.length, r = Array(n), i = 0; i < n; i++) r[i] = arguments[i];
-          return 1 === r.length ? this.find_among_b$esjava$1.apply(this, r) : (t = o(Object.getPrototypeOf(e.prototype), "find_among_b", this)).call.apply(t, [this].concat(r))
+          for (var i, s = arguments.length, t = Array(s), r = 0; r < s; r++) t[r] = arguments[r];
+          return 1 === t.length ? this.find_among_b$esjava$1.apply(this, t) : (i = n(Object.getPrototypeOf(e.prototype), "find_among_b", this)).call.apply(i, [this].concat(t))
         }
       }, {
         key: "replace_s",
         value: function() {
-          for (var t, n = arguments.length, r = Array(n), i = 0; i < n; i++) r[i] = arguments[i];
-          return 3 === r.length ? this.replace_s$esjava$3.apply(this, r) : (t = o(Object.getPrototypeOf(e.prototype), "replace_s", this)).call.apply(t, [this].concat(r))
+          for (var i, s = arguments.length, t = Array(s), r = 0; r < s; r++) t[r] = arguments[r];
+          return 3 === t.length ? this.replace_s$esjava$3.apply(this, t) : (i = n(Object.getPrototypeOf(e.prototype), "replace_s", this)).call.apply(i, [this].concat(t))
         }
       }, {
         key: "slice_check",
         value: function() {
-          for (var t, n = arguments.length, r = Array(n), i = 0; i < n; i++) r[i] = arguments[i];
-          return 0 === r.length ? this.slice_check$esjava$0.apply(this, r) : (t = o(Object.getPrototypeOf(e.prototype), "slice_check", this)).call.apply(t, [this].concat(r))
+          for (var i, s = arguments.length, t = Array(s), r = 0; r < s; r++) t[r] = arguments[r];
+          return 0 === t.length ? this.slice_check$esjava$0.apply(this, t) : (i = n(Object.getPrototypeOf(e.prototype), "slice_check", this)).call.apply(i, [this].concat(t))
         }
       }, {
         key: "slice_from",
         value: function() {
-          for (var t, n = arguments.length, r = Array(n), i = 0; i < n; i++) r[i] = arguments[i];
-          return 1 === r.length ? this.slice_from$esjava$1.apply(this, r) : (t = o(Object.getPrototypeOf(e.prototype), "slice_from", this)).call.apply(t, [this].concat(r))
+          for (var i, s = arguments.length, t = Array(s), r = 0; r < s; r++) t[r] = arguments[r];
+          return 1 === t.length ? this.slice_from$esjava$1.apply(this, t) : (i = n(Object.getPrototypeOf(e.prototype), "slice_from", this)).call.apply(i, [this].concat(t))
         }
       }, {
         key: "slice_del",
         value: function() {
-          for (var t, n = arguments.length, r = Array(n), i = 0; i < n; i++) r[i] = arguments[i];
-          return 0 === r.length ? this.slice_del$esjava$0.apply(this, r) : (t = o(Object.getPrototypeOf(e.prototype), "slice_del", this)).call.apply(t, [this].concat(r))
+          for (var i, s = arguments.length, t = Array(s), r = 0; r < s; r++) t[r] = arguments[r];
+          return 0 === t.length ? this.slice_del$esjava$0.apply(this, t) : (i = n(Object.getPrototypeOf(e.prototype), "slice_del", this)).call.apply(i, [this].concat(t))
         }
       }, {
         key: "insert",
         value: function() {
-          for (var t, n = arguments.length, r = Array(n), i = 0; i < n; i++) r[i] = arguments[i];
-          return 3 === r.length ? this.insert$esjava$3.apply(this, r) : (t = o(Object.getPrototypeOf(e.prototype), "insert", this)).call.apply(t, [this].concat(r))
+          for (var i, s = arguments.length, t = Array(s), r = 0; r < s; r++) t[r] = arguments[r];
+          return 3 === t.length ? this.insert$esjava$3.apply(this, t) : (i = n(Object.getPrototypeOf(e.prototype), "insert", this)).call.apply(i, [this].concat(t))
         }
       }, {
         key: "slice_to",
         value: function() {
-          for (var t, n = arguments.length, r = Array(n), i = 0; i < n; i++) r[i] = arguments[i];
-          return 1 === r.length ? this.slice_to$esjava$1.apply(this, r) : (t = o(Object.getPrototypeOf(e.prototype), "slice_to", this)).call.apply(t, [this].concat(r))
+          for (var i, s = arguments.length, t = Array(s), r = 0; r < s; r++) t[r] = arguments[r];
+          return 1 === t.length ? this.slice_to$esjava$1.apply(this, t) : (i = n(Object.getPrototypeOf(e.prototype), "slice_to", this)).call.apply(i, [this].concat(t))
         }
       }, {
         key: "current",
@@ -517,23 +549,23 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         }
       }]), e
     }()),
-    d = function(e) {
-      function n() {
-        return i(this, n), t(this, Object.getPrototypeOf(n).apply(this, arguments))
+    _ = function(e) {
+      function t() {
+        return r(this, t), i(this, Object.getPrototypeOf(t).apply(this, arguments))
       }
-      return r(n, e), a(n, [{
+      return s(t, e), a(t, [{
         key: "r_Normalize_pre$esjava$0",
         value: function() {
           var e = void 0,
-            t = void 0,
-            r = void 0;
-          for (t = this.current.length(); t > 0; t--) l: do {
-            r = this.cursor;
-            c: do {
-              if (this.bra = this.cursor, 0 === (e = this.find_among$esjava$1(n.a_0))) break;
+            i = void 0,
+            s = void 0;
+          for (i = this.current.length(); i > 0; i--) e: do {
+            s = this.cursor;
+            i: do {
+              if (this.bra = this.cursor, 0 === (e = this.find_among$esjava$1(t.a_0))) break;
               switch (this.ket = this.cursor, e) {
                 case 0:
-                  break c;
+                  break i;
                 case 1:
                 case 2:
                 case 3:
@@ -691,9 +723,9 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
                 case 55:
                   this.slice_from$esjava$1("لآ")
               }
-              break l
+              break e
             } while (!1);
-            if (this.cursor = r, this.cursor >= this.limit) return !1;
+            if (this.cursor = s, this.cursor >= this.limit) return !1;
             this.cursor++
           } while (!1);
           return !0
@@ -702,16 +734,16 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "r_Normalize_post$esjava$0",
         value: function() {
           var e = void 0,
-            t = void 0,
-            r = void 0,
             i = void 0,
+            s = void 0,
+            r = void 0,
             a = void 0;
-          t = this.cursor;
-          l: do {
-            if (this.limit_backward = this.cursor, this.cursor = this.limit, this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(n.a_1))) break;
+          i = this.cursor;
+          e: do {
+            if (this.limit_backward = this.cursor, this.cursor = this.limit, this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(t.a_1))) break;
             switch (this.bra = this.cursor, e) {
               case 0:
-                break l;
+                break e;
               case 1:
               case 2:
               case 3:
@@ -719,15 +751,15 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
             }
             this.cursor = this.limit_backward
           } while (!1);
-          this.cursor = t, r = this.cursor;
-          c: do
-            for (i = this.I_word_len; i > 0; i--) u: do {
+          this.cursor = i, s = this.cursor;
+          i: do
+            for (r = this.I_word_len; r > 0; r--) s: do {
               a = this.cursor;
-              d: do {
-                if (this.bra = this.cursor, 0 === (e = this.find_among$esjava$1(n.a_2))) break;
+              t: do {
+                if (this.bra = this.cursor, 0 === (e = this.find_among$esjava$1(t.a_2))) break;
                 switch (this.ket = this.cursor, e) {
                   case 0:
-                    break d;
+                    break t;
                   case 1:
                     this.slice_from$esjava$1("ا");
                     break;
@@ -737,18 +769,18 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
                   case 3:
                     this.slice_from$esjava$1("ي")
                 }
-                break u
+                break s
               } while (!1);
-              if (this.cursor = a, this.cursor >= this.limit) break c;
+              if (this.cursor = a, this.cursor >= this.limit) break i;
               this.cursor++
             } while (!1); while (!1);
-          return this.cursor = r, !0
+          return this.cursor = s, !0
         }
       }, {
         key: "r_Checks1$esjava$0",
         value: function() {
           var e = void 0;
-          if (this.I_word_len = this.current.length(), this.bra = this.cursor, 0 === (e = this.find_among$esjava$1(n.a_3))) return !1;
+          if (this.I_word_len = this.current.length(), this.bra = this.cursor, 0 === (e = this.find_among$esjava$1(t.a_3))) return !1;
           switch (this.ket = this.cursor, e) {
             case 0:
               return !1;
@@ -766,7 +798,7 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "r_Prefix_Step1$esjava$0",
         value: function() {
           var e = void 0;
-          if (this.I_word_len = this.current.length(), this.bra = this.cursor, 0 === (e = this.find_among$esjava$1(n.a_4))) return !1;
+          if (this.I_word_len = this.current.length(), this.bra = this.cursor, 0 === (e = this.find_among$esjava$1(t.a_4))) return !1;
           switch (this.ket = this.cursor, e) {
             case 0:
               return !1;
@@ -793,19 +825,19 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "r_Prefix_Step2$esjava$0",
         value: function() {
           var e = void 0,
-            t = void 0,
-            r = void 0;
-          this.I_word_len = this.current.length(), t = this.cursor;
+            i = void 0,
+            s = void 0;
+          this.I_word_len = this.current.length(), i = this.cursor;
           do {
             if (!this.eq_s$esjava$1("فا")) break;
             return !1
           } while (!1);
-          this.cursor = t, r = this.cursor;
+          this.cursor = i, s = this.cursor;
           do {
             if (!this.eq_s$esjava$1("وا")) break;
             return !1
           } while (!1);
-          if (this.cursor = r, this.bra = this.cursor, 0 === (e = this.find_among$esjava$1(n.a_5))) return !1;
+          if (this.cursor = s, this.bra = this.cursor, 0 === (e = this.find_among$esjava$1(t.a_5))) return !1;
           switch (this.ket = this.cursor, e) {
             case 0:
               return !1;
@@ -820,7 +852,7 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "r_Prefix_Step3a_Noun$esjava$0",
         value: function() {
           var e = void 0;
-          if (this.I_word_len = this.current.length(), this.bra = this.cursor, 0 === (e = this.find_among$esjava$1(n.a_6))) return !1;
+          if (this.I_word_len = this.current.length(), this.bra = this.cursor, 0 === (e = this.find_among$esjava$1(t.a_6))) return !1;
           switch (this.ket = this.cursor, e) {
             case 0:
               return !1;
@@ -838,13 +870,13 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "r_Prefix_Step3b_Noun$esjava$0",
         value: function() {
           var e = void 0,
-            t = void 0;
-          this.I_word_len = this.current.length(), t = this.cursor;
+            i = void 0;
+          this.I_word_len = this.current.length(), i = this.cursor;
           do {
             if (!this.eq_s$esjava$1("با")) break;
             return !1
           } while (!1);
-          if (this.cursor = t, this.bra = this.cursor, 0 === (e = this.find_among$esjava$1(n.a_7))) return !1;
+          if (this.cursor = i, this.bra = this.cursor, 0 === (e = this.find_among$esjava$1(t.a_7))) return !1;
           switch (this.ket = this.cursor, e) {
             case 0:
               return !1;
@@ -866,7 +898,7 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "r_Prefix_Step3_Verb$esjava$0",
         value: function() {
           var e = void 0;
-          if (this.I_word_len = this.current.length(), this.bra = this.cursor, 0 === (e = this.find_among$esjava$1(n.a_8))) return !1;
+          if (this.I_word_len = this.current.length(), this.bra = this.cursor, 0 === (e = this.find_among$esjava$1(t.a_8))) return !1;
           switch (this.ket = this.cursor, e) {
             case 0:
               return !1;
@@ -892,7 +924,7 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "r_Prefix_Step4_Verb$esjava$0",
         value: function() {
           var e = void 0;
-          if (this.I_word_len = this.current.length(), this.bra = this.cursor, 0 === (e = this.find_among$esjava$1(n.a_9))) return !1;
+          if (this.I_word_len = this.current.length(), this.bra = this.cursor, 0 === (e = this.find_among$esjava$1(t.a_9))) return !1;
           switch (this.ket = this.cursor, e) {
             case 0:
               return !1;
@@ -906,7 +938,7 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "r_Suffix_Noun_Step1a$esjava$0",
         value: function() {
           var e = void 0;
-          if (this.I_word_len = this.current.length(), this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(n.a_10))) return !1;
+          if (this.I_word_len = this.current.length(), this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(t.a_10))) return !1;
           switch (this.bra = this.cursor, e) {
             case 0:
               return !1;
@@ -928,7 +960,7 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "r_Suffix_Noun_Step1b$esjava$0",
         value: function() {
           var e = void 0;
-          if (this.I_word_len = this.current.length(), this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(n.a_11))) return !1;
+          if (this.I_word_len = this.current.length(), this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(t.a_11))) return !1;
           switch (this.bra = this.cursor, e) {
             case 0:
               return !1;
@@ -942,7 +974,7 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "r_Suffix_Noun_Step2a$esjava$0",
         value: function() {
           var e = void 0;
-          if (this.I_word_len = this.current.length(), this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(n.a_12))) return !1;
+          if (this.I_word_len = this.current.length(), this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(t.a_12))) return !1;
           switch (this.bra = this.cursor, e) {
             case 0:
               return !1;
@@ -956,7 +988,7 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "r_Suffix_Noun_Step2b$esjava$0",
         value: function() {
           var e = void 0;
-          if (this.I_word_len = this.current.length(), this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(n.a_13))) return !1;
+          if (this.I_word_len = this.current.length(), this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(t.a_13))) return !1;
           switch (this.bra = this.cursor, e) {
             case 0:
               return !1;
@@ -970,7 +1002,7 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "r_Suffix_Noun_Step2c1$esjava$0",
         value: function() {
           var e = void 0;
-          if (this.I_word_len = this.current.length(), this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(n.a_14))) return !1;
+          if (this.I_word_len = this.current.length(), this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(t.a_14))) return !1;
           switch (this.bra = this.cursor, e) {
             case 0:
               return !1;
@@ -984,7 +1016,7 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "r_Suffix_Noun_Step2c2$esjava$0",
         value: function() {
           var e = void 0;
-          if (this.I_word_len = this.current.length(), this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(n.a_15))) return !1;
+          if (this.I_word_len = this.current.length(), this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(t.a_15))) return !1;
           switch (this.bra = this.cursor, e) {
             case 0:
               return !1;
@@ -998,7 +1030,7 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "r_Suffix_Noun_Step3$esjava$0",
         value: function() {
           var e = void 0;
-          if (this.I_word_len = this.current.length(), this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(n.a_16))) return !1;
+          if (this.I_word_len = this.current.length(), this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(t.a_16))) return !1;
           switch (this.bra = this.cursor, e) {
             case 0:
               return !1;
@@ -1012,7 +1044,7 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "r_Suffix_Verb_Step1$esjava$0",
         value: function() {
           var e = void 0;
-          if (this.I_word_len = this.current.length(), this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(n.a_17))) return !1;
+          if (this.I_word_len = this.current.length(), this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(t.a_17))) return !1;
           switch (this.bra = this.cursor, e) {
             case 0:
               return !1;
@@ -1034,7 +1066,7 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "r_Suffix_Verb_Step2a$esjava$0",
         value: function() {
           var e = void 0;
-          if (this.I_word_len = this.current.length(), this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(n.a_18))) return !1;
+          if (this.I_word_len = this.current.length(), this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(t.a_18))) return !1;
           switch (this.bra = this.cursor, e) {
             case 0:
               return !1;
@@ -1061,7 +1093,7 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "r_Suffix_Verb_Step2b$esjava$0",
         value: function() {
           var e = void 0;
-          if (this.I_word_len = this.current.length(), this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(n.a_19))) return !1;
+          if (this.I_word_len = this.current.length(), this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(t.a_19))) return !1;
           switch (this.bra = this.cursor, e) {
             case 0:
               return !1;
@@ -1075,7 +1107,7 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "r_Suffix_Verb_Step2c$esjava$0",
         value: function() {
           var e = void 0;
-          if (this.I_word_len = this.current.length(), this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(n.a_20))) return !1;
+          if (this.I_word_len = this.current.length(), this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(t.a_20))) return !1;
           switch (this.bra = this.cursor, e) {
             case 0:
               return !1;
@@ -1093,7 +1125,7 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "r_Suffix_All_alef_maqsura$esjava$0",
         value: function() {
           var e = void 0;
-          if (this.I_word_len = this.current.length(), this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(n.a_21))) return !1;
+          if (this.I_word_len = this.current.length(), this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(t.a_21))) return !1;
           switch (this.bra = this.cursor, e) {
             case 0:
               return !1;
@@ -1106,193 +1138,193 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "stem$esjava$0",
         value: function() {
           var e = void 0,
-            t = void 0,
-            n = void 0,
-            r = void 0,
             i = void 0,
-            a = void 0,
-            o = void 0,
             s = void 0,
-            l = void 0,
-            c = void 0,
-            u = void 0,
-            d = void 0,
-            f = void 0,
-            _ = void 0,
-            p = void 0,
+            t = void 0,
+            r = void 0,
+            a = void 0,
+            n = void 0,
             h = void 0,
-            m = void 0;
+            o = void 0,
+            u = void 0,
+            c = void 0,
+            _ = void 0,
+            l = void 0,
+            w = void 0,
+            $ = void 0,
+            v = void 0,
+            f = void 0;
           this.B_is_noun = !0, this.B_is_verb = !0, this.B_is_defined = !1, e = this.cursor;
           do
             if (!this.r_Checks1$esjava$0()) break; while (!1);
-          this.cursor = e, t = this.cursor;
+          this.cursor = e, i = this.cursor;
           do
             if (!this.r_Normalize_pre$esjava$0()) break; while (!1);
-          this.cursor = t, this.limit_backward = this.cursor, this.cursor = this.limit, n = this.limit - this.cursor;
-          u: do d: do {
-            r = this.limit - this.cursor;
-            f: do {
+          this.cursor = i, this.limit_backward = this.cursor, this.cursor = this.limit, s = this.limit - this.cursor;
+          s: do t: do {
+            t = this.limit - this.cursor;
+            r: do {
               if (!this.B_is_verb) break;
-              _: do {
-                i = this.limit - this.cursor;
-                p: do {
-                  var g = 1;
+              a: do {
+                r = this.limit - this.cursor;
+                n: do {
+                  var k = 1;
                   h: for (;;) {
                     a = this.limit - this.cursor;
                     do {
                       if (!this.r_Suffix_Verb_Step1$esjava$0()) break;
-                      g--;
+                      k--;
                       continue h
                     } while (!1);
                     this.cursor = this.limit - a;
                     break
                   }
-                  if (g > 0) break;
-                  m: do {
-                    o = this.limit - this.cursor;
+                  if (k > 0) break;
+                  o: do {
+                    n = this.limit - this.cursor;
                     do {
                       if (!this.r_Suffix_Verb_Step2a$esjava$0()) break;
-                      break m
+                      break o
                     } while (!1);
-                    this.cursor = this.limit - o;
+                    this.cursor = this.limit - n;
                     do {
                       if (!this.r_Suffix_Verb_Step2c$esjava$0()) break;
-                      break m
+                      break o
                     } while (!1);
-                    if (this.cursor = this.limit - o, this.cursor <= this.limit_backward) break p;
+                    if (this.cursor = this.limit - n, this.cursor <= this.limit_backward) break n;
                     this.cursor--
                   } while (!1);
-                  break _
+                  break a
                 } while (!1);
-                this.cursor = this.limit - i;
+                this.cursor = this.limit - r;
                 do {
                   if (!this.r_Suffix_Verb_Step2b$esjava$0()) break;
-                  break _
+                  break a
                 } while (!1);
-                if (this.cursor = this.limit - i, !this.r_Suffix_Verb_Step2a$esjava$0()) break f
+                if (this.cursor = this.limit - r, !this.r_Suffix_Verb_Step2a$esjava$0()) break r
               } while (!1);
-              break d
+              break t
             } while (!1);
-            this.cursor = this.limit - r;
+            this.cursor = this.limit - t;
             do {
               if (!this.B_is_noun) break;
-              s = this.limit - this.cursor;
-              g: do E: do {
-                l = this.limit - this.cursor;
+              h = this.limit - this.cursor;
+              u: do c: do {
+                o = this.limit - this.cursor;
                 do {
                   if (!this.r_Suffix_Noun_Step2c2$esjava$0()) break;
-                  break E
+                  break c
                 } while (!1);
-                this.cursor = this.limit - l;
-                b: do {
+                this.cursor = this.limit - o;
+                _: do {
                   do {
                     if (!this.B_is_defined) break;
-                    break b
+                    break _
                   } while (!1);
                   if (!this.r_Suffix_Noun_Step1a$esjava$0()) break;
-                  y: do {
-                    c = this.limit - this.cursor;
-                    do {
-                      if (!this.r_Suffix_Noun_Step2a$esjava$0()) break;
-                      break y
-                    } while (!1);
-                    this.cursor = this.limit - c;
-                    do {
-                      if (!this.r_Suffix_Noun_Step2b$esjava$0()) break;
-                      break y
-                    } while (!1);
-                    this.cursor = this.limit - c;
-                    do {
-                      if (!this.r_Suffix_Noun_Step2c1$esjava$0()) break;
-                      break y
-                    } while (!1);
-                    if (this.cursor = this.limit - c, this.cursor <= this.limit_backward) break b;
-                    this.cursor--
-                  } while (!1);
-                  break E
-                } while (!1);
-                this.cursor = this.limit - l;
-                O: do {
-                  if (!this.r_Suffix_Noun_Step1b$esjava$0()) break;
-                  v: do {
+                  l: do {
                     u = this.limit - this.cursor;
                     do {
                       if (!this.r_Suffix_Noun_Step2a$esjava$0()) break;
-                      break v
+                      break l
                     } while (!1);
                     this.cursor = this.limit - u;
                     do {
                       if (!this.r_Suffix_Noun_Step2b$esjava$0()) break;
-                      break v
+                      break l
                     } while (!1);
-                    if (this.cursor = this.limit - u, !this.r_Suffix_Noun_Step2c1$esjava$0()) break O
+                    this.cursor = this.limit - u;
+                    do {
+                      if (!this.r_Suffix_Noun_Step2c1$esjava$0()) break;
+                      break l
+                    } while (!1);
+                    if (this.cursor = this.limit - u, this.cursor <= this.limit_backward) break _;
+                    this.cursor--
                   } while (!1);
-                  break E
+                  break c
                 } while (!1);
-                this.cursor = this.limit - l;
-                I: do {
+                this.cursor = this.limit - o;
+                w: do {
+                  if (!this.r_Suffix_Noun_Step1b$esjava$0()) break;
+                  $: do {
+                    c = this.limit - this.cursor;
+                    do {
+                      if (!this.r_Suffix_Noun_Step2a$esjava$0()) break;
+                      break $
+                    } while (!1);
+                    this.cursor = this.limit - c;
+                    do {
+                      if (!this.r_Suffix_Noun_Step2b$esjava$0()) break;
+                      break $
+                    } while (!1);
+                    if (this.cursor = this.limit - c, !this.r_Suffix_Noun_Step2c1$esjava$0()) break w
+                  } while (!1);
+                  break c
+                } while (!1);
+                this.cursor = this.limit - o;
+                v: do {
                   do {
                     if (!this.B_is_defined) break;
-                    break I
+                    break v
                   } while (!1);
                   if (!this.r_Suffix_Noun_Step2a$esjava$0()) break;
-                  break E
+                  break c
                 } while (!1);
-                if (this.cursor = this.limit - l, !this.r_Suffix_Noun_Step2b$esjava$0()) {
-                  this.cursor = this.limit - s;
-                  break g
+                if (this.cursor = this.limit - o, !this.r_Suffix_Noun_Step2b$esjava$0()) {
+                  this.cursor = this.limit - h;
+                  break u
                 }
               } while (!1); while (!1);
               if (!this.r_Suffix_Noun_Step3$esjava$0()) break;
-              break d
+              break t
             } while (!1);
-            if (this.cursor = this.limit - r, !this.r_Suffix_All_alef_maqsura$esjava$0()) break u
+            if (this.cursor = this.limit - t, !this.r_Suffix_All_alef_maqsura$esjava$0()) break s
           } while (!1); while (!1);
-          this.cursor = this.limit - n, this.cursor = this.limit_backward, d = this.cursor;
-          T: do {
-            f = this.cursor;
+          this.cursor = this.limit - s, this.cursor = this.limit_backward, _ = this.cursor;
+          f: do {
+            l = this.cursor;
             do
               if (!this.r_Prefix_Step1$esjava$0()) {
-                this.cursor = f;
+                this.cursor = l;
                 break
               } while (!1);
-            _ = this.cursor;
+            w = this.cursor;
             do
               if (!this.r_Prefix_Step2$esjava$0()) {
-                this.cursor = _;
+                this.cursor = w;
                 break
               } while (!1);
-            S: do {
-              p = this.cursor;
+            k: do {
+              $ = this.cursor;
               do {
                 if (!this.r_Prefix_Step3a_Noun$esjava$0()) break;
-                break S
+                break k
               } while (!1);
-              this.cursor = p;
+              this.cursor = $;
               do {
                 if (!this.B_is_noun || !this.r_Prefix_Step3b_Noun$esjava$0()) break;
-                break S
+                break k
               } while (!1);
-              if (this.cursor = p, !this.B_is_verb) break T;
-              h = this.cursor;
+              if (this.cursor = $, !this.B_is_verb) break f;
+              v = this.cursor;
               do
                 if (!this.r_Prefix_Step3_Verb$esjava$0()) {
-                  this.cursor = h;
+                  this.cursor = v;
                   break
                 } while (!1);
-              if (!this.r_Prefix_Step4_Verb$esjava$0()) break T
+              if (!this.r_Prefix_Step4_Verb$esjava$0()) break f
             } while (!1)
           } while (!1);
-          this.cursor = d, m = this.cursor;
+          this.cursor = _, f = this.cursor;
           do
             if (!this.r_Normalize_post$esjava$0()) break; while (!1);
-          return this.cursor = m, !0
+          return this.cursor = f, !0
         }
       }, {
         key: "stem",
         value: function() {
-          for (var e, t = arguments.length, r = Array(t), i = 0; i < t; i++) r[i] = arguments[i];
-          return 0 === r.length ? this.stem$esjava$0.apply(this, r) : (e = o(Object.getPrototypeOf(n.prototype), "stem", this)).call.apply(e, [this].concat(r))
+          for (var e, i = arguments.length, s = Array(i), r = 0; r < i; r++) s[r] = arguments[r];
+          return 0 === s.length ? this.stem$esjava$0.apply(this, s) : (e = n(Object.getPrototypeOf(t.prototype), "stem", this)).call.apply(e, [this].concat(s))
         }
       }, {
         key: "B_is_defined",
@@ -1329,155 +1361,155 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
       }], [{
         key: "a_0",
         get: function() {
-          return delete n.a_0, n.a_0 = [new c("!", -1, 3), new c('"', -1, 3), new c("%", -1, 3), new c("*", -1, 3), new c(",", -1, 3), new c(".", -1, 3), new c("/", -1, 3), new c(":", -1, 3), new c(";", -1, 3), new c("?", -1, 3), new c("\\", -1, 3), new c("،", -1, 4), new c("؛", -1, 4), new c("؟", -1, 4), new c("ـ", -1, 2), new c("ً", -1, 1), new c("ٌ", -1, 1), new c("ٍ", -1, 1), new c("َ", -1, 1), new c("ُ", -1, 1), new c("ِ", -1, 1), new c("ّ", -1, 1), new c("ْ", -1, 1), new c("٠", -1, 5), new c("١", -1, 6), new c("٢", -1, 7), new c("٣", -1, 8), new c("٤", -1, 9), new c("٥", -1, 10), new c("٦", -1, 11), new c("٧", -1, 12), new c("٨", -1, 13), new c("٩", -1, 14), new c("٪", -1, 15), new c("٫", -1, 15), new c("٬", -1, 15), new c("ﺀ", -1, 16), new c("ﺁ", -1, 20), new c("ﺂ", -1, 20), new c("ﺃ", -1, 17), new c("ﺄ", -1, 17), new c("ﺅ", -1, 21), new c("ﺆ", -1, 21), new c("ﺇ", -1, 18), new c("ﺈ", -1, 18), new c("ﺉ", -1, 19), new c("ﺊ", -1, 19), new c("ﺋ", -1, 19), new c("ﺌ", -1, 19), new c("ﺍ", -1, 22), new c("ﺎ", -1, 22), new c("ﺏ", -1, 23), new c("ﺐ", -1, 23), new c("ﺑ", -1, 23), new c("ﺒ", -1, 23), new c("ﺓ", -1, 24), new c("ﺔ", -1, 24), new c("ﺕ", -1, 25), new c("ﺖ", -1, 25), new c("ﺗ", -1, 25), new c("ﺘ", -1, 25), new c("ﺙ", -1, 26), new c("ﺚ", -1, 26), new c("ﺛ", -1, 26), new c("ﺜ", -1, 26), new c("ﺝ", -1, 27), new c("ﺞ", -1, 27), new c("ﺟ", -1, 27), new c("ﺠ", -1, 27), new c("ﺡ", -1, 28), new c("ﺢ", -1, 28), new c("ﺣ", -1, 28), new c("ﺤ", -1, 28), new c("ﺥ", -1, 29), new c("ﺦ", -1, 29), new c("ﺧ", -1, 29), new c("ﺨ", -1, 29), new c("ﺩ", -1, 30), new c("ﺪ", -1, 30), new c("ﺫ", -1, 31), new c("ﺬ", -1, 31), new c("ﺭ", -1, 32), new c("ﺮ", -1, 32), new c("ﺯ", -1, 33), new c("ﺰ", -1, 33), new c("ﺱ", -1, 34), new c("ﺲ", -1, 34), new c("ﺳ", -1, 34), new c("ﺴ", -1, 34), new c("ﺵ", -1, 35), new c("ﺶ", -1, 35), new c("ﺷ", -1, 35), new c("ﺸ", -1, 35), new c("ﺹ", -1, 36), new c("ﺺ", -1, 36), new c("ﺻ", -1, 36), new c("ﺼ", -1, 36), new c("ﺽ", -1, 37), new c("ﺾ", -1, 37), new c("ﺿ", -1, 37), new c("ﻀ", -1, 37), new c("ﻁ", -1, 38), new c("ﻂ", -1, 38), new c("ﻃ", -1, 38), new c("ﻄ", -1, 38), new c("ﻅ", -1, 39), new c("ﻆ", -1, 39), new c("ﻇ", -1, 39), new c("ﻈ", -1, 39), new c("ﻉ", -1, 40), new c("ﻊ", -1, 40), new c("ﻋ", -1, 40), new c("ﻌ", -1, 40), new c("ﻍ", -1, 41), new c("ﻎ", -1, 41), new c("ﻏ", -1, 41), new c("ﻐ", -1, 41), new c("ﻑ", -1, 42), new c("ﻒ", -1, 42), new c("ﻓ", -1, 42), new c("ﻔ", -1, 42), new c("ﻕ", -1, 43), new c("ﻖ", -1, 43), new c("ﻗ", -1, 43), new c("ﻘ", -1, 43), new c("ﻙ", -1, 44), new c("ﻚ", -1, 44), new c("ﻛ", -1, 44), new c("ﻜ", -1, 44), new c("ﻝ", -1, 45), new c("ﻞ", -1, 45), new c("ﻟ", -1, 45), new c("ﻠ", -1, 45), new c("ﻡ", -1, 46), new c("ﻢ", -1, 46), new c("ﻣ", -1, 46), new c("ﻤ", -1, 46), new c("ﻥ", -1, 47), new c("ﻦ", -1, 47), new c("ﻧ", -1, 47), new c("ﻨ", -1, 47), new c("ﻩ", -1, 48), new c("ﻪ", -1, 48), new c("ﻫ", -1, 48), new c("ﻬ", -1, 48), new c("ﻭ", -1, 49), new c("ﻮ", -1, 49), new c("ﻯ", -1, 50), new c("ﻰ", -1, 50), new c("ﻱ", -1, 51), new c("ﻲ", -1, 51), new c("ﻳ", -1, 51), new c("ﻴ", -1, 51), new c("ﻵ", -1, 55), new c("ﻶ", -1, 55), new c("ﻷ", -1, 53), new c("ﻸ", -1, 53), new c("ﻹ", -1, 54), new c("ﻺ", -1, 54), new c("ﻻ", -1, 52), new c("ﻼ", -1, 52)]
+          return delete t.a_0, t.a_0 = [new u("!", -1, 3), new u('"', -1, 3), new u("%", -1, 3), new u("*", -1, 3), new u(",", -1, 3), new u(".", -1, 3), new u("/", -1, 3), new u(":", -1, 3), new u(";", -1, 3), new u("?", -1, 3), new u("\\", -1, 3), new u("،", -1, 4), new u("؛", -1, 4), new u("؟", -1, 4), new u("ـ", -1, 2), new u("ً", -1, 1), new u("ٌ", -1, 1), new u("ٍ", -1, 1), new u("َ", -1, 1), new u("ُ", -1, 1), new u("ِ", -1, 1), new u("ّ", -1, 1), new u("ْ", -1, 1), new u("٠", -1, 5), new u("١", -1, 6), new u("٢", -1, 7), new u("٣", -1, 8), new u("٤", -1, 9), new u("٥", -1, 10), new u("٦", -1, 11), new u("٧", -1, 12), new u("٨", -1, 13), new u("٩", -1, 14), new u("٪", -1, 15), new u("٫", -1, 15), new u("٬", -1, 15), new u("ﺀ", -1, 16), new u("ﺁ", -1, 20), new u("ﺂ", -1, 20), new u("ﺃ", -1, 17), new u("ﺄ", -1, 17), new u("ﺅ", -1, 21), new u("ﺆ", -1, 21), new u("ﺇ", -1, 18), new u("ﺈ", -1, 18), new u("ﺉ", -1, 19), new u("ﺊ", -1, 19), new u("ﺋ", -1, 19), new u("ﺌ", -1, 19), new u("ﺍ", -1, 22), new u("ﺎ", -1, 22), new u("ﺏ", -1, 23), new u("ﺐ", -1, 23), new u("ﺑ", -1, 23), new u("ﺒ", -1, 23), new u("ﺓ", -1, 24), new u("ﺔ", -1, 24), new u("ﺕ", -1, 25), new u("ﺖ", -1, 25), new u("ﺗ", -1, 25), new u("ﺘ", -1, 25), new u("ﺙ", -1, 26), new u("ﺚ", -1, 26), new u("ﺛ", -1, 26), new u("ﺜ", -1, 26), new u("ﺝ", -1, 27), new u("ﺞ", -1, 27), new u("ﺟ", -1, 27), new u("ﺠ", -1, 27), new u("ﺡ", -1, 28), new u("ﺢ", -1, 28), new u("ﺣ", -1, 28), new u("ﺤ", -1, 28), new u("ﺥ", -1, 29), new u("ﺦ", -1, 29), new u("ﺧ", -1, 29), new u("ﺨ", -1, 29), new u("ﺩ", -1, 30), new u("ﺪ", -1, 30), new u("ﺫ", -1, 31), new u("ﺬ", -1, 31), new u("ﺭ", -1, 32), new u("ﺮ", -1, 32), new u("ﺯ", -1, 33), new u("ﺰ", -1, 33), new u("ﺱ", -1, 34), new u("ﺲ", -1, 34), new u("ﺳ", -1, 34), new u("ﺴ", -1, 34), new u("ﺵ", -1, 35), new u("ﺶ", -1, 35), new u("ﺷ", -1, 35), new u("ﺸ", -1, 35), new u("ﺹ", -1, 36), new u("ﺺ", -1, 36), new u("ﺻ", -1, 36), new u("ﺼ", -1, 36), new u("ﺽ", -1, 37), new u("ﺾ", -1, 37), new u("ﺿ", -1, 37), new u("ﻀ", -1, 37), new u("ﻁ", -1, 38), new u("ﻂ", -1, 38), new u("ﻃ", -1, 38), new u("ﻄ", -1, 38), new u("ﻅ", -1, 39), new u("ﻆ", -1, 39), new u("ﻇ", -1, 39), new u("ﻈ", -1, 39), new u("ﻉ", -1, 40), new u("ﻊ", -1, 40), new u("ﻋ", -1, 40), new u("ﻌ", -1, 40), new u("ﻍ", -1, 41), new u("ﻎ", -1, 41), new u("ﻏ", -1, 41), new u("ﻐ", -1, 41), new u("ﻑ", -1, 42), new u("ﻒ", -1, 42), new u("ﻓ", -1, 42), new u("ﻔ", -1, 42), new u("ﻕ", -1, 43), new u("ﻖ", -1, 43), new u("ﻗ", -1, 43), new u("ﻘ", -1, 43), new u("ﻙ", -1, 44), new u("ﻚ", -1, 44), new u("ﻛ", -1, 44), new u("ﻜ", -1, 44), new u("ﻝ", -1, 45), new u("ﻞ", -1, 45), new u("ﻟ", -1, 45), new u("ﻠ", -1, 45), new u("ﻡ", -1, 46), new u("ﻢ", -1, 46), new u("ﻣ", -1, 46), new u("ﻤ", -1, 46), new u("ﻥ", -1, 47), new u("ﻦ", -1, 47), new u("ﻧ", -1, 47), new u("ﻨ", -1, 47), new u("ﻩ", -1, 48), new u("ﻪ", -1, 48), new u("ﻫ", -1, 48), new u("ﻬ", -1, 48), new u("ﻭ", -1, 49), new u("ﻮ", -1, 49), new u("ﻯ", -1, 50), new u("ﻰ", -1, 50), new u("ﻱ", -1, 51), new u("ﻲ", -1, 51), new u("ﻳ", -1, 51), new u("ﻴ", -1, 51), new u("ﻵ", -1, 55), new u("ﻶ", -1, 55), new u("ﻷ", -1, 53), new u("ﻸ", -1, 53), new u("ﻹ", -1, 54), new u("ﻺ", -1, 54), new u("ﻻ", -1, 52), new u("ﻼ", -1, 52)]
         }
       }, {
         key: "a_1",
         get: function() {
-          return delete n.a_1, n.a_1 = [new c("آ", -1, 1), new c("أ", -1, 1), new c("ؤ", -1, 2), new c("إ", -1, 1), new c("ئ", -1, 3)]
+          return delete t.a_1, t.a_1 = [new u("آ", -1, 1), new u("أ", -1, 1), new u("ؤ", -1, 2), new u("إ", -1, 1), new u("ئ", -1, 3)]
         }
       }, {
         key: "a_2",
         get: function() {
-          return delete n.a_2, n.a_2 = [new c("آ", -1, 1), new c("أ", -1, 1), new c("ؤ", -1, 2), new c("إ", -1, 1), new c("ئ", -1, 3)]
+          return delete t.a_2, t.a_2 = [new u("آ", -1, 1), new u("أ", -1, 1), new u("ؤ", -1, 2), new u("إ", -1, 1), new u("ئ", -1, 3)]
         }
       }, {
         key: "a_3",
         get: function() {
-          return delete n.a_3, n.a_3 = [new c("ال", -1, 2), new c("بال", -1, 1), new c("كال", -1, 1), new c("لل", -1, 2)]
+          return delete t.a_3, t.a_3 = [new u("ال", -1, 2), new u("بال", -1, 1), new u("كال", -1, 1), new u("لل", -1, 2)]
         }
       }, {
         key: "a_4",
         get: function() {
-          return delete n.a_4, n.a_4 = [new c("أآ", -1, 2), new c("أأ", -1, 1), new c("أؤ", -1, 3), new c("أإ", -1, 5), new c("أا", -1, 4)]
+          return delete t.a_4, t.a_4 = [new u("أآ", -1, 2), new u("أأ", -1, 1), new u("أؤ", -1, 3), new u("أإ", -1, 5), new u("أا", -1, 4)]
         }
       }, {
         key: "a_5",
         get: function() {
-          return delete n.a_5, n.a_5 = [new c("ف", -1, 1), new c("و", -1, 2)]
+          return delete t.a_5, t.a_5 = [new u("ف", -1, 1), new u("و", -1, 2)]
         }
       }, {
         key: "a_6",
         get: function() {
-          return delete n.a_6, n.a_6 = [new c("ال", -1, 2), new c("بال", -1, 1), new c("كال", -1, 1), new c("لل", -1, 2)]
+          return delete t.a_6, t.a_6 = [new u("ال", -1, 2), new u("بال", -1, 1), new u("كال", -1, 1), new u("لل", -1, 2)]
         }
       }, {
         key: "a_7",
         get: function() {
-          return delete n.a_7, n.a_7 = [new c("ب", -1, 1), new c("بب", 0, 2), new c("كك", -1, 3)]
+          return delete t.a_7, t.a_7 = [new u("ب", -1, 1), new u("بب", 0, 2), new u("كك", -1, 3)]
         }
       }, {
         key: "a_8",
         get: function() {
-          return delete n.a_8, n.a_8 = [new c("سأ", -1, 4), new c("ست", -1, 2), new c("سن", -1, 3), new c("سي", -1, 1)]
+          return delete t.a_8, t.a_8 = [new u("سأ", -1, 4), new u("ست", -1, 2), new u("سن", -1, 3), new u("سي", -1, 1)]
         }
       }, {
         key: "a_9",
         get: function() {
-          return delete n.a_9, n.a_9 = [new c("تست", -1, 1), new c("نست", -1, 1), new c("يست", -1, 1)]
+          return delete t.a_9, t.a_9 = [new u("تست", -1, 1), new u("نست", -1, 1), new u("يست", -1, 1)]
         }
       }, {
         key: "a_10",
         get: function() {
-          return delete n.a_10, n.a_10 = [new c("كما", -1, 3), new c("هما", -1, 3), new c("نا", -1, 2), new c("ها", -1, 2), new c("ك", -1, 1), new c("كم", -1, 2), new c("هم", -1, 2), new c("هن", -1, 2), new c("ه", -1, 1), new c("ي", -1, 1)]
+          return delete t.a_10, t.a_10 = [new u("كما", -1, 3), new u("هما", -1, 3), new u("نا", -1, 2), new u("ها", -1, 2), new u("ك", -1, 1), new u("كم", -1, 2), new u("هم", -1, 2), new u("هن", -1, 2), new u("ه", -1, 1), new u("ي", -1, 1)]
         }
       }, {
         key: "a_11",
         get: function() {
-          return delete n.a_11, n.a_11 = [new c("ن", -1, 1)]
+          return delete t.a_11, t.a_11 = [new u("ن", -1, 1)]
         }
       }, {
         key: "a_12",
         get: function() {
-          return delete n.a_12, n.a_12 = [new c("ا", -1, 1), new c("و", -1, 1), new c("ي", -1, 1)]
+          return delete t.a_12, t.a_12 = [new u("ا", -1, 1), new u("و", -1, 1), new u("ي", -1, 1)]
         }
       }, {
         key: "a_13",
         get: function() {
-          return delete n.a_13, n.a_13 = [new c("ات", -1, 1)]
+          return delete t.a_13, t.a_13 = [new u("ات", -1, 1)]
         }
       }, {
         key: "a_14",
         get: function() {
-          return delete n.a_14, n.a_14 = [new c("ت", -1, 1)]
+          return delete t.a_14, t.a_14 = [new u("ت", -1, 1)]
         }
       }, {
         key: "a_15",
         get: function() {
-          return delete n.a_15, n.a_15 = [new c("ة", -1, 1)]
+          return delete t.a_15, t.a_15 = [new u("ة", -1, 1)]
         }
       }, {
         key: "a_16",
         get: function() {
-          return delete n.a_16, n.a_16 = [new c("ي", -1, 1)]
+          return delete t.a_16, t.a_16 = [new u("ي", -1, 1)]
         }
       }, {
         key: "a_17",
         get: function() {
-          return delete n.a_17, n.a_17 = [new c("كما", -1, 3), new c("هما", -1, 3), new c("نا", -1, 2), new c("ها", -1, 2), new c("ك", -1, 1), new c("كم", -1, 2), new c("هم", -1, 2), new c("كن", -1, 2), new c("هن", -1, 2), new c("ه", -1, 1), new c("كمو", -1, 3), new c("ني", -1, 2)]
+          return delete t.a_17, t.a_17 = [new u("كما", -1, 3), new u("هما", -1, 3), new u("نا", -1, 2), new u("ها", -1, 2), new u("ك", -1, 1), new u("كم", -1, 2), new u("هم", -1, 2), new u("كن", -1, 2), new u("هن", -1, 2), new u("ه", -1, 1), new u("كمو", -1, 3), new u("ني", -1, 2)]
         }
       }, {
         key: "a_18",
         get: function() {
-          return delete n.a_18, n.a_18 = [new c("ا", -1, 2), new c("تا", 0, 3), new c("تما", 0, 5), new c("نا", 0, 3), new c("ت", -1, 1), new c("ن", -1, 2), new c("ان", 5, 4), new c("تن", 5, 3), new c("ون", 5, 4), new c("ين", 5, 4), new c("ي", -1, 2)]
+          return delete t.a_18, t.a_18 = [new u("ا", -1, 2), new u("تا", 0, 3), new u("تما", 0, 5), new u("نا", 0, 3), new u("ت", -1, 1), new u("ن", -1, 2), new u("ان", 5, 4), new u("تن", 5, 3), new u("ون", 5, 4), new u("ين", 5, 4), new u("ي", -1, 2)]
         }
       }, {
         key: "a_19",
         get: function() {
-          return delete n.a_19, n.a_19 = [new c("وا", -1, 1), new c("تم", -1, 1)]
+          return delete t.a_19, t.a_19 = [new u("وا", -1, 1), new u("تم", -1, 1)]
         }
       }, {
         key: "a_20",
         get: function() {
-          return delete n.a_20, n.a_20 = [new c("و", -1, 1), new c("تمو", 0, 2)]
+          return delete t.a_20, t.a_20 = [new u("و", -1, 1), new u("تمو", 0, 2)]
         }
       }, {
         key: "a_21",
         get: function() {
-          return delete n.a_21, n.a_21 = [new c("ى", -1, 1)]
+          return delete t.a_21, t.a_21 = [new u("ى", -1, 1)]
         }
-      }]), n
-    }(u),
-    f = function(e) {
-      function n() {
-        return i(this, n), t(this, Object.getPrototypeOf(n).apply(this, arguments))
+      }]), t
+    }(c),
+    l = function(e) {
+      function t() {
+        return r(this, t), i(this, Object.getPrototypeOf(t).apply(this, arguments))
       }
-      return r(n, e), a(n, [{
+      return s(t, e), a(t, [{
         key: "r_mark_regions$esjava$0",
         value: function() {
           var e = void 0;
           this.I_pV = this.limit, this.I_p2 = this.limit, e = this.cursor;
-          l: do {
-            A: for (;;) {
+          e: do {
+            d: for (;;) {
               do {
-                if (!this.in_grouping$esjava$3(n.g_v, 1377, 1413)) break;
-                break A
+                if (!this.in_grouping$esjava$3(t.g_v, 1377, 1413)) break;
+                break d
               } while (!1);
-              if (this.cursor >= this.limit) break l;
+              if (this.cursor >= this.limit) break e;
               this.cursor++
             }
-            this.I_pV = this.cursor;N: for (;;) {
+            this.I_pV = this.cursor;b: for (;;) {
               do {
-                if (!this.out_grouping$esjava$3(n.g_v, 1377, 1413)) break;
-                break N
+                if (!this.out_grouping$esjava$3(t.g_v, 1377, 1413)) break;
+                break b
               } while (!1);
-              if (this.cursor >= this.limit) break l;
+              if (this.cursor >= this.limit) break e;
               this.cursor++
             }
-            C: for (;;) {
+            m: for (;;) {
               do {
-                if (!this.in_grouping$esjava$3(n.g_v, 1377, 1413)) break;
-                break C
+                if (!this.in_grouping$esjava$3(t.g_v, 1377, 1413)) break;
+                break m
               } while (!1);
-              if (this.cursor >= this.limit) break l;
+              if (this.cursor >= this.limit) break e;
               this.cursor++
             }
-            w: for (;;) {
+            j: for (;;) {
               do {
-                if (!this.out_grouping$esjava$3(n.g_v, 1377, 1413)) break;
-                break w
+                if (!this.out_grouping$esjava$3(t.g_v, 1377, 1413)) break;
+                break j
               } while (!1);
-              if (this.cursor >= this.limit) break l;
+              if (this.cursor >= this.limit) break e;
               this.cursor++
             }
             this.I_p2 = this.cursor
@@ -1493,7 +1525,7 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "r_adjective$esjava$0",
         value: function() {
           var e = void 0;
-          if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(n.a_0))) return !1;
+          if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(t.a_0))) return !1;
           switch (this.bra = this.cursor, e) {
             case 0:
               return !1;
@@ -1506,7 +1538,7 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "r_verb$esjava$0",
         value: function() {
           var e = void 0;
-          if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(n.a_1))) return !1;
+          if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(t.a_1))) return !1;
           switch (this.bra = this.cursor, e) {
             case 0:
               return !1;
@@ -1519,7 +1551,7 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "r_noun$esjava$0",
         value: function() {
           var e = void 0;
-          if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(n.a_2))) return !1;
+          if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(t.a_2))) return !1;
           switch (this.bra = this.cursor, e) {
             case 0:
               return !1;
@@ -1532,7 +1564,7 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "r_ending$esjava$0",
         value: function() {
           var e = void 0;
-          if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(n.a_3)) || (this.bra = this.cursor, !this.r_R2$esjava$0())) return !1;
+          if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(t.a_3)) || (this.bra = this.cursor, !this.r_R2$esjava$0())) return !1;
           switch (e) {
             case 0:
               return !1;
@@ -1545,35 +1577,35 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "stem$esjava$0",
         value: function() {
           var e = void 0,
-            t = void 0,
-            n = void 0,
-            r = void 0,
             i = void 0,
+            s = void 0,
+            t = void 0,
+            r = void 0,
             a = void 0,
-            o = void 0;
+            n = void 0;
           e = this.cursor;
           do
             if (!this.r_mark_regions$esjava$0()) break; while (!1);
-          if (this.cursor = e, this.limit_backward = this.cursor, this.cursor = this.limit, t = this.limit - this.cursor, this.cursor < this.I_pV) return !1;
-          this.cursor = this.I_pV, n = this.limit_backward, this.limit_backward = this.cursor, this.cursor = this.limit - t, r = this.limit - this.cursor;
+          if (this.cursor = e, this.limit_backward = this.cursor, this.cursor = this.limit, i = this.limit - this.cursor, this.cursor < this.I_pV) return !1;
+          this.cursor = this.I_pV, s = this.limit_backward, this.limit_backward = this.cursor, this.cursor = this.limit - i, t = this.limit - this.cursor;
           do
             if (!this.r_ending$esjava$0()) break; while (!1);
-          this.cursor = this.limit - r, i = this.limit - this.cursor;
+          this.cursor = this.limit - t, r = this.limit - this.cursor;
           do
             if (!this.r_verb$esjava$0()) break; while (!1);
-          this.cursor = this.limit - i, a = this.limit - this.cursor;
+          this.cursor = this.limit - r, a = this.limit - this.cursor;
           do
             if (!this.r_adjective$esjava$0()) break; while (!1);
-          this.cursor = this.limit - a, o = this.limit - this.cursor;
+          this.cursor = this.limit - a, n = this.limit - this.cursor;
           do
             if (!this.r_noun$esjava$0()) break; while (!1);
-          return this.cursor = this.limit - o, this.limit_backward = n, this.cursor = this.limit_backward, !0
+          return this.cursor = this.limit - n, this.limit_backward = s, this.cursor = this.limit_backward, !0
         }
       }, {
         key: "stem",
         value: function() {
-          for (var e, t = arguments.length, r = Array(t), i = 0; i < t; i++) r[i] = arguments[i];
-          return 0 === r.length ? this.stem$esjava$0.apply(this, r) : (e = o(Object.getPrototypeOf(n.prototype), "stem", this)).call.apply(e, [this].concat(r))
+          for (var e, i = arguments.length, s = Array(i), r = 0; r < i; r++) s[r] = arguments[r];
+          return 0 === s.length ? this.stem$esjava$0.apply(this, s) : (e = n(Object.getPrototypeOf(t.prototype), "stem", this)).call.apply(e, [this].concat(s))
         }
       }, {
         key: "I_p2",
@@ -1594,126 +1626,126 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
       }], [{
         key: "a_0",
         get: function() {
-          return delete n.a_0, n.a_0 = [new c("րորդ", -1, 1), new c("երորդ", 0, 1), new c("ալի", -1, 1), new c("ակի", -1, 1), new c("որակ", -1, 1), new c("եղ", -1, 1), new c("ական", -1, 1), new c("արան", -1, 1), new c("են", -1, 1), new c("եկեն", 8, 1), new c("երեն", 8, 1), new c("որէն", -1, 1), new c("ին", -1, 1), new c("գին", 12, 1), new c("ովին", 12, 1), new c("լայն", -1, 1), new c("վուն", -1, 1), new c("պես", -1, 1), new c("իվ", -1, 1), new c("ատ", -1, 1), new c("ավետ", -1, 1), new c("կոտ", -1, 1), new c("բար", -1, 1)]
+          return delete t.a_0, t.a_0 = [new u("րորդ", -1, 1), new u("երորդ", 0, 1), new u("ալի", -1, 1), new u("ակի", -1, 1), new u("որակ", -1, 1), new u("եղ", -1, 1), new u("ական", -1, 1), new u("արան", -1, 1), new u("են", -1, 1), new u("եկեն", 8, 1), new u("երեն", 8, 1), new u("որէն", -1, 1), new u("ին", -1, 1), new u("գին", 12, 1), new u("ովին", 12, 1), new u("լայն", -1, 1), new u("վուն", -1, 1), new u("պես", -1, 1), new u("իվ", -1, 1), new u("ատ", -1, 1), new u("ավետ", -1, 1), new u("կոտ", -1, 1), new u("բար", -1, 1)]
         }
       }, {
         key: "a_1",
         get: function() {
-          return delete n.a_1, n.a_1 = [new c("ա", -1, 1), new c("ացա", 0, 1), new c("եցա", 0, 1), new c("վե", -1, 1), new c("ացրի", -1, 1), new c("ացի", -1, 1), new c("եցի", -1, 1), new c("վեցի", 6, 1), new c("ալ", -1, 1), new c("ըալ", 8, 1), new c("անալ", 8, 1), new c("ենալ", 8, 1), new c("ացնալ", 8, 1), new c("ել", -1, 1), new c("ըել", 13, 1), new c("նել", 13, 1), new c("ցնել", 15, 1), new c("եցնել", 16, 1), new c("չել", 13, 1), new c("վել", 13, 1), new c("ացվել", 19, 1), new c("եցվել", 19, 1), new c("տել", 13, 1), new c("ատել", 22, 1), new c("ոտել", 22, 1), new c("կոտել", 24, 1), new c("ված", -1, 1), new c("ում", -1, 1), new c("վում", 27, 1), new c("ան", -1, 1), new c("ցան", 29, 1), new c("ացան", 30, 1), new c("ացրին", -1, 1), new c("ացին", -1, 1), new c("եցին", -1, 1), new c("վեցին", 34, 1), new c("ալիս", -1, 1), new c("ելիս", -1, 1), new c("ավ", -1, 1), new c("ացավ", 38, 1), new c("եցավ", 38, 1), new c("ալով", -1, 1), new c("ելով", -1, 1), new c("ար", -1, 1), new c("ացար", 43, 1), new c("եցար", 43, 1), new c("ացրիր", -1, 1), new c("ացիր", -1, 1), new c("եցիր", -1, 1), new c("վեցիր", 48, 1), new c("աց", -1, 1), new c("եց", -1, 1), new c("ացրեց", 51, 1), new c("ալուց", -1, 1), new c("ելուց", -1, 1), new c("ալու", -1, 1), new c("ելու", -1, 1), new c("աք", -1, 1), new c("ցաք", 57, 1), new c("ացաք", 58, 1), new c("ացրիք", -1, 1), new c("ացիք", -1, 1), new c("եցիք", -1, 1), new c("վեցիք", 62, 1), new c("անք", -1, 1), new c("ցանք", 64, 1), new c("ացանք", 65, 1), new c("ացրինք", -1, 1), new c("ացինք", -1, 1), new c("եցինք", -1, 1), new c("վեցինք", 69, 1)]
+          return delete t.a_1, t.a_1 = [new u("ա", -1, 1), new u("ացա", 0, 1), new u("եցա", 0, 1), new u("վե", -1, 1), new u("ացրի", -1, 1), new u("ացի", -1, 1), new u("եցի", -1, 1), new u("վեցի", 6, 1), new u("ալ", -1, 1), new u("ըալ", 8, 1), new u("անալ", 8, 1), new u("ենալ", 8, 1), new u("ացնալ", 8, 1), new u("ել", -1, 1), new u("ըել", 13, 1), new u("նել", 13, 1), new u("ցնել", 15, 1), new u("եցնել", 16, 1), new u("չել", 13, 1), new u("վել", 13, 1), new u("ացվել", 19, 1), new u("եցվել", 19, 1), new u("տել", 13, 1), new u("ատել", 22, 1), new u("ոտել", 22, 1), new u("կոտել", 24, 1), new u("ված", -1, 1), new u("ում", -1, 1), new u("վում", 27, 1), new u("ան", -1, 1), new u("ցան", 29, 1), new u("ացան", 30, 1), new u("ացրին", -1, 1), new u("ացին", -1, 1), new u("եցին", -1, 1), new u("վեցին", 34, 1), new u("ալիս", -1, 1), new u("ելիս", -1, 1), new u("ավ", -1, 1), new u("ացավ", 38, 1), new u("եցավ", 38, 1), new u("ալով", -1, 1), new u("ելով", -1, 1), new u("ար", -1, 1), new u("ացար", 43, 1), new u("եցար", 43, 1), new u("ացրիր", -1, 1), new u("ացիր", -1, 1), new u("եցիր", -1, 1), new u("վեցիր", 48, 1), new u("աց", -1, 1), new u("եց", -1, 1), new u("ացրեց", 51, 1), new u("ալուց", -1, 1), new u("ելուց", -1, 1), new u("ալու", -1, 1), new u("ելու", -1, 1), new u("աք", -1, 1), new u("ցաք", 57, 1), new u("ացաք", 58, 1), new u("ացրիք", -1, 1), new u("ացիք", -1, 1), new u("եցիք", -1, 1), new u("վեցիք", 62, 1), new u("անք", -1, 1), new u("ցանք", 64, 1), new u("ացանք", 65, 1), new u("ացրինք", -1, 1), new u("ացինք", -1, 1), new u("եցինք", -1, 1), new u("վեցինք", 69, 1)]
         }
       }, {
         key: "a_2",
         get: function() {
-          return delete n.a_2, n.a_2 = [new c("որդ", -1, 1), new c("ույթ", -1, 1), new c("ուհի", -1, 1), new c("ցի", -1, 1), new c("իլ", -1, 1), new c("ակ", -1, 1), new c("յակ", 5, 1), new c("անակ", 5, 1), new c("իկ", -1, 1), new c("ուկ", -1, 1), new c("ան", -1, 1), new c("պան", 10, 1), new c("ստան", 10, 1), new c("արան", 10, 1), new c("եղէն", -1, 1), new c("յուն", -1, 1), new c("ություն", 15, 1), new c("ածո", -1, 1), new c("իչ", -1, 1), new c("ուս", -1, 1), new c("ուստ", -1, 1), new c("գար", -1, 1), new c("վոր", -1, 1), new c("ավոր", 22, 1), new c("ոց", -1, 1), new c("անօց", -1, 1), new c("ու", -1, 1), new c("ք", -1, 1), new c("չեք", 27, 1), new c("իք", 27, 1), new c("ալիք", 29, 1), new c("անիք", 29, 1), new c("վածք", 27, 1), new c("ույք", 27, 1), new c("ենք", 27, 1), new c("ոնք", 27, 1), new c("ունք", 27, 1), new c("մունք", 36, 1), new c("իչք", 27, 1), new c("արք", 27, 1)]
+          return delete t.a_2, t.a_2 = [new u("որդ", -1, 1), new u("ույթ", -1, 1), new u("ուհի", -1, 1), new u("ցի", -1, 1), new u("իլ", -1, 1), new u("ակ", -1, 1), new u("յակ", 5, 1), new u("անակ", 5, 1), new u("իկ", -1, 1), new u("ուկ", -1, 1), new u("ան", -1, 1), new u("պան", 10, 1), new u("ստան", 10, 1), new u("արան", 10, 1), new u("եղէն", -1, 1), new u("յուն", -1, 1), new u("ություն", 15, 1), new u("ածո", -1, 1), new u("իչ", -1, 1), new u("ուս", -1, 1), new u("ուստ", -1, 1), new u("գար", -1, 1), new u("վոր", -1, 1), new u("ավոր", 22, 1), new u("ոց", -1, 1), new u("անօց", -1, 1), new u("ու", -1, 1), new u("ք", -1, 1), new u("չեք", 27, 1), new u("իք", 27, 1), new u("ալիք", 29, 1), new u("անիք", 29, 1), new u("վածք", 27, 1), new u("ույք", 27, 1), new u("ենք", 27, 1), new u("ոնք", 27, 1), new u("ունք", 27, 1), new u("մունք", 36, 1), new u("իչք", 27, 1), new u("արք", 27, 1)]
         }
       }, {
         key: "a_3",
         get: function() {
-          return delete n.a_3, n.a_3 = [new c("սա", -1, 1), new c("վա", -1, 1), new c("ամբ", -1, 1), new c("դ", -1, 1), new c("անդ", 3, 1), new c("ությանդ", 4, 1), new c("վանդ", 4, 1), new c("ոջդ", 3, 1), new c("երդ", 3, 1), new c("ներդ", 8, 1), new c("ուդ", 3, 1), new c("ը", -1, 1), new c("անը", 11, 1), new c("ությանը", 12, 1), new c("վանը", 12, 1), new c("ոջը", 11, 1), new c("երը", 11, 1), new c("ները", 16, 1), new c("ի", -1, 1), new c("վի", 18, 1), new c("երի", 18, 1), new c("ների", 20, 1), new c("անում", -1, 1), new c("երում", -1, 1), new c("ներում", 23, 1), new c("ն", -1, 1), new c("ան", 25, 1), new c("ության", 26, 1), new c("վան", 26, 1), new c("ին", 25, 1), new c("երին", 29, 1), new c("ներին", 30, 1), new c("ությանն", 25, 1), new c("երն", 25, 1), new c("ներն", 33, 1), new c("ուն", 25, 1), new c("ոջ", -1, 1), new c("ությանս", -1, 1), new c("վանս", -1, 1), new c("ոջս", -1, 1), new c("ով", -1, 1), new c("անով", 40, 1), new c("վով", 40, 1), new c("երով", 40, 1), new c("ներով", 43, 1), new c("եր", -1, 1), new c("ներ", 45, 1), new c("ց", -1, 1), new c("ից", 47, 1), new c("վանից", 48, 1), new c("ոջից", 48, 1), new c("վից", 48, 1), new c("երից", 48, 1), new c("ներից", 52, 1), new c("ցից", 48, 1), new c("ոց", 47, 1), new c("ուց", 47, 1)]
+          return delete t.a_3, t.a_3 = [new u("սա", -1, 1), new u("վա", -1, 1), new u("ամբ", -1, 1), new u("դ", -1, 1), new u("անդ", 3, 1), new u("ությանդ", 4, 1), new u("վանդ", 4, 1), new u("ոջդ", 3, 1), new u("երդ", 3, 1), new u("ներդ", 8, 1), new u("ուդ", 3, 1), new u("ը", -1, 1), new u("անը", 11, 1), new u("ությանը", 12, 1), new u("վանը", 12, 1), new u("ոջը", 11, 1), new u("երը", 11, 1), new u("ները", 16, 1), new u("ի", -1, 1), new u("վի", 18, 1), new u("երի", 18, 1), new u("ների", 20, 1), new u("անում", -1, 1), new u("երում", -1, 1), new u("ներում", 23, 1), new u("ն", -1, 1), new u("ան", 25, 1), new u("ության", 26, 1), new u("վան", 26, 1), new u("ին", 25, 1), new u("երին", 29, 1), new u("ներին", 30, 1), new u("ությանն", 25, 1), new u("երն", 25, 1), new u("ներն", 33, 1), new u("ուն", 25, 1), new u("ոջ", -1, 1), new u("ությանս", -1, 1), new u("վանս", -1, 1), new u("ոջս", -1, 1), new u("ով", -1, 1), new u("անով", 40, 1), new u("վով", 40, 1), new u("երով", 40, 1), new u("ներով", 43, 1), new u("եր", -1, 1), new u("ներ", 45, 1), new u("ց", -1, 1), new u("ից", 47, 1), new u("վանից", 48, 1), new u("ոջից", 48, 1), new u("վից", 48, 1), new u("երից", 48, 1), new u("ներից", 52, 1), new u("ցից", 48, 1), new u("ոց", 47, 1), new u("ուց", 47, 1)]
         }
       }, {
         key: "g_v",
         get: function() {
-          return delete n.g_v, n.g_v = [209, 4, 128, 0, 18]
+          return delete t.g_v, t.g_v = [209, 4, 128, 0, 18]
         }
-      }]), n
-    }(u),
-    _ = function(e) {
-      function n() {
-        return i(this, n), t(this, Object.getPrototypeOf(n).apply(this, arguments))
+      }]), t
+    }(c),
+    w = function(e) {
+      function t() {
+        return r(this, t), i(this, Object.getPrototypeOf(t).apply(this, arguments))
       }
-      return r(n, e), a(n, [{
+      return s(t, e), a(t, [{
         key: "r_mark_regions$esjava$0",
         value: function() {
           var e = void 0,
-            t = void 0,
-            r = void 0,
             i = void 0,
+            s = void 0,
+            r = void 0,
             a = void 0;
           this.I_pV = this.limit, this.I_p1 = this.limit, this.I_p2 = this.limit, e = this.cursor;
-          l: do {
-            c: do {
-              t = this.cursor;
-              u: do {
-                if (!this.in_grouping$esjava$3(n.g_v, 97, 117)) break;
-                d: do {
-                  r = this.cursor;
-                  f: do {
-                    if (!this.out_grouping$esjava$3(n.g_v, 97, 117)) break;
-                    C: for (;;) {
+          e: do {
+            i: do {
+              i = this.cursor;
+              s: do {
+                if (!this.in_grouping$esjava$3(t.g_v, 97, 117)) break;
+                t: do {
+                  s = this.cursor;
+                  r: do {
+                    if (!this.out_grouping$esjava$3(t.g_v, 97, 117)) break;
+                    m: for (;;) {
                       do {
-                        if (!this.in_grouping$esjava$3(n.g_v, 97, 117)) break;
-                        break C
+                        if (!this.in_grouping$esjava$3(t.g_v, 97, 117)) break;
+                        break m
                       } while (!1);
-                      if (this.cursor >= this.limit) break f;
+                      if (this.cursor >= this.limit) break r;
                       this.cursor++
                     }
-                    break d
+                    break t
                   } while (!1);
-                  if (this.cursor = r, !this.in_grouping$esjava$3(n.g_v, 97, 117)) break u;
-                  w: for (;;) {
+                  if (this.cursor = s, !this.in_grouping$esjava$3(t.g_v, 97, 117)) break s;
+                  j: for (;;) {
                     do {
-                      if (!this.out_grouping$esjava$3(n.g_v, 97, 117)) break;
-                      break w
+                      if (!this.out_grouping$esjava$3(t.g_v, 97, 117)) break;
+                      break j
                     } while (!1);
-                    if (this.cursor >= this.limit) break u;
+                    if (this.cursor >= this.limit) break s;
                     this.cursor++
                   }
                 } while (!1);
-                break c
+                break i
               } while (!1);
-              if (this.cursor = t, !this.out_grouping$esjava$3(n.g_v, 97, 117)) break l;
-              m: do {
-                i = this.cursor;
-                R: do {
-                  if (!this.out_grouping$esjava$3(n.g_v, 97, 117)) break;
-                  P: for (;;) {
+              if (this.cursor = i, !this.out_grouping$esjava$3(t.g_v, 97, 117)) break e;
+              o: do {
+                r = this.cursor;
+                g: do {
+                  if (!this.out_grouping$esjava$3(t.g_v, 97, 117)) break;
+                  p: for (;;) {
                     do {
-                      if (!this.in_grouping$esjava$3(n.g_v, 97, 117)) break;
-                      break P
+                      if (!this.in_grouping$esjava$3(t.g_v, 97, 117)) break;
+                      break p
                     } while (!1);
-                    if (this.cursor >= this.limit) break R;
+                    if (this.cursor >= this.limit) break g;
                     this.cursor++
                   }
-                  break m
+                  break o
                 } while (!1);
-                if (this.cursor = i, !this.in_grouping$esjava$3(n.g_v, 97, 117) || this.cursor >= this.limit) break l;
+                if (this.cursor = r, !this.in_grouping$esjava$3(t.g_v, 97, 117) || this.cursor >= this.limit) break e;
                 this.cursor++
               } while (!1)
             } while (!1);this.I_pV = this.cursor
           } while (!1);
           this.cursor = e, a = this.cursor;
-          D: do {
-            L: for (;;) {
+          y: do {
+            I: for (;;) {
               do {
-                if (!this.in_grouping$esjava$3(n.g_v, 97, 117)) break;
-                break L
+                if (!this.in_grouping$esjava$3(t.g_v, 97, 117)) break;
+                break I
               } while (!1);
-              if (this.cursor >= this.limit) break D;
+              if (this.cursor >= this.limit) break y;
+              this.cursor++
+            }
+            q: for (;;) {
+              do {
+                if (!this.out_grouping$esjava$3(t.g_v, 97, 117)) break;
+                break q
+              } while (!1);
+              if (this.cursor >= this.limit) break y;
+              this.cursor++
+            }
+            this.I_p1 = this.cursor;O: for (;;) {
+              do {
+                if (!this.in_grouping$esjava$3(t.g_v, 97, 117)) break;
+                break O
+              } while (!1);
+              if (this.cursor >= this.limit) break y;
               this.cursor++
             }
             x: for (;;) {
               do {
-                if (!this.out_grouping$esjava$3(n.g_v, 97, 117)) break;
+                if (!this.out_grouping$esjava$3(t.g_v, 97, 117)) break;
                 break x
               } while (!1);
-              if (this.cursor >= this.limit) break D;
-              this.cursor++
-            }
-            this.I_p1 = this.cursor;k: for (;;) {
-              do {
-                if (!this.in_grouping$esjava$3(n.g_v, 97, 117)) break;
-                break k
-              } while (!1);
-              if (this.cursor >= this.limit) break D;
-              this.cursor++
-            }
-            j: for (;;) {
-              do {
-                if (!this.out_grouping$esjava$3(n.g_v, 97, 117)) break;
-                break j
-              } while (!1);
-              if (this.cursor >= this.limit) break D;
+              if (this.cursor >= this.limit) break y;
               this.cursor++
             }
             this.I_p2 = this.cursor
@@ -1739,7 +1771,7 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "r_aditzak$esjava$0",
         value: function() {
           var e = void 0;
-          if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(n.a_0))) return !1;
+          if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(t.a_0))) return !1;
           switch (this.bra = this.cursor, e) {
             case 0:
               return !1;
@@ -1766,7 +1798,7 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "r_izenak$esjava$0",
         value: function() {
           var e = void 0;
-          if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(n.a_1))) return !1;
+          if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(t.a_1))) return !1;
           switch (this.bra = this.cursor, e) {
             case 0:
               return !1;
@@ -1809,7 +1841,7 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "r_adjetiboak$esjava$0",
         value: function() {
           var e = void 0;
-          if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(n.a_2))) return !1;
+          if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(t.a_2))) return !1;
           switch (this.bra = this.cursor, e) {
             case 0:
               return !1;
@@ -1826,41 +1858,41 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "stem$esjava$0",
         value: function() {
           var e = void 0,
-            t = void 0,
-            n = void 0,
-            r = void 0;
+            i = void 0,
+            s = void 0,
+            t = void 0;
           e = this.cursor;
           do
             if (!this.r_mark_regions$esjava$0()) break; while (!1);
           this.cursor = e, this.limit_backward = this.cursor, this.cursor = this.limit;
-          M: for (;;) {
-            t = this.limit - this.cursor;
+          R: for (;;) {
+            i = this.limit - this.cursor;
             do {
               if (!this.r_aditzak$esjava$0()) break;
-              continue M
+              continue R
             } while (!1);
-            this.cursor = this.limit - t;
+            this.cursor = this.limit - i;
             break
           }
-          U: for (;;) {
-            n = this.limit - this.cursor;
+          z: for (;;) {
+            s = this.limit - this.cursor;
             do {
               if (!this.r_izenak$esjava$0()) break;
-              continue U
+              continue z
             } while (!1);
-            this.cursor = this.limit - n;
+            this.cursor = this.limit - s;
             break
           }
-          r = this.limit - this.cursor;
+          t = this.limit - this.cursor;
           do
             if (!this.r_adjetiboak$esjava$0()) break; while (!1);
-          return this.cursor = this.limit - r, this.cursor = this.limit_backward, !0
+          return this.cursor = this.limit - t, this.cursor = this.limit_backward, !0
         }
       }, {
         key: "stem",
         value: function() {
-          for (var e, t = arguments.length, r = Array(t), i = 0; i < t; i++) r[i] = arguments[i];
-          return 0 === r.length ? this.stem$esjava$0.apply(this, r) : (e = o(Object.getPrototypeOf(n.prototype), "stem", this)).call.apply(e, [this].concat(r))
+          for (var e, i = arguments.length, s = Array(i), r = 0; r < i; r++) s[r] = arguments[r];
+          return 0 === s.length ? this.stem$esjava$0.apply(this, s) : (e = n(Object.getPrototypeOf(t.prototype), "stem", this)).call.apply(e, [this].concat(s))
         }
       }, {
         key: "I_p2",
@@ -1889,65 +1921,65 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
       }], [{
         key: "a_0",
         get: function() {
-          return delete n.a_0, n.a_0 = [new c("idea", -1, 1), new c("bidea", 0, 1), new c("kidea", 0, 1), new c("pidea", 0, 1), new c("kundea", -1, 1), new c("galea", -1, 1), new c("tailea", -1, 1), new c("tzailea", -1, 1), new c("gunea", -1, 1), new c("kunea", -1, 1), new c("tzaga", -1, 1), new c("gaia", -1, 1), new c("aldia", -1, 1), new c("taldia", 12, 1), new c("karia", -1, 1), new c("garria", -1, 2), new c("karria", -1, 1), new c("ka", -1, 1), new c("tzaka", 17, 1), new c("la", -1, 1), new c("mena", -1, 1), new c("pena", -1, 1), new c("kina", -1, 1), new c("ezina", -1, 1), new c("tezina", 23, 1), new c("kuna", -1, 1), new c("tuna", -1, 1), new c("kizuna", -1, 1), new c("era", -1, 1), new c("bera", 28, 1), new c("arabera", 29, 4), new c("kera", 28, 1), new c("pera", 28, 1), new c("orra", -1, 1), new c("korra", 33, 1), new c("dura", -1, 1), new c("gura", -1, 1), new c("kura", -1, 1), new c("tura", -1, 1), new c("eta", -1, 1), new c("keta", 39, 1), new c("gailua", -1, 1), new c("eza", -1, 1), new c("erreza", 42, 1), new c("tza", -1, 2), new c("gaitza", 44, 1), new c("kaitza", 44, 1), new c("kuntza", 44, 1), new c("ide", -1, 1), new c("bide", 48, 1), new c("kide", 48, 1), new c("pide", 48, 1), new c("kunde", -1, 1), new c("tzake", -1, 1), new c("tzeke", -1, 1), new c("le", -1, 1), new c("gale", 55, 1), new c("taile", 55, 1), new c("tzaile", 55, 1), new c("gune", -1, 1), new c("kune", -1, 1), new c("tze", -1, 1), new c("atze", 61, 1), new c("gai", -1, 1), new c("aldi", -1, 1), new c("taldi", 64, 1), new c("ki", -1, 1), new c("ari", -1, 1), new c("kari", 67, 1), new c("lari", 67, 1), new c("tari", 67, 1), new c("etari", 70, 1), new c("garri", -1, 2), new c("karri", -1, 1), new c("arazi", -1, 1), new c("tarazi", 74, 1), new c("an", -1, 1), new c("ean", 76, 1), new c("rean", 77, 1), new c("kan", 76, 1), new c("etan", 76, 1), new c("atseden", -1, 3), new c("men", -1, 1), new c("pen", -1, 1), new c("kin", -1, 1), new c("rekin", 84, 1), new c("ezin", -1, 1), new c("tezin", 86, 1), new c("tun", -1, 1), new c("kizun", -1, 1), new c("go", -1, 1), new c("ago", 90, 1), new c("tio", -1, 1), new c("dako", -1, 1), new c("or", -1, 1), new c("kor", 94, 1), new c("tzat", -1, 1), new c("du", -1, 1), new c("gailu", -1, 1), new c("tu", -1, 1), new c("atu", 99, 1), new c("aldatu", 100, 1), new c("tatu", 100, 1), new c("baditu", 99, 5), new c("ez", -1, 1), new c("errez", 104, 1), new c("tzez", 104, 1), new c("gaitz", -1, 1), new c("kaitz", -1, 1)]
+          return delete t.a_0, t.a_0 = [new u("idea", -1, 1), new u("bidea", 0, 1), new u("kidea", 0, 1), new u("pidea", 0, 1), new u("kundea", -1, 1), new u("galea", -1, 1), new u("tailea", -1, 1), new u("tzailea", -1, 1), new u("gunea", -1, 1), new u("kunea", -1, 1), new u("tzaga", -1, 1), new u("gaia", -1, 1), new u("aldia", -1, 1), new u("taldia", 12, 1), new u("karia", -1, 1), new u("garria", -1, 2), new u("karria", -1, 1), new u("ka", -1, 1), new u("tzaka", 17, 1), new u("la", -1, 1), new u("mena", -1, 1), new u("pena", -1, 1), new u("kina", -1, 1), new u("ezina", -1, 1), new u("tezina", 23, 1), new u("kuna", -1, 1), new u("tuna", -1, 1), new u("kizuna", -1, 1), new u("era", -1, 1), new u("bera", 28, 1), new u("arabera", 29, 4), new u("kera", 28, 1), new u("pera", 28, 1), new u("orra", -1, 1), new u("korra", 33, 1), new u("dura", -1, 1), new u("gura", -1, 1), new u("kura", -1, 1), new u("tura", -1, 1), new u("eta", -1, 1), new u("keta", 39, 1), new u("gailua", -1, 1), new u("eza", -1, 1), new u("erreza", 42, 1), new u("tza", -1, 2), new u("gaitza", 44, 1), new u("kaitza", 44, 1), new u("kuntza", 44, 1), new u("ide", -1, 1), new u("bide", 48, 1), new u("kide", 48, 1), new u("pide", 48, 1), new u("kunde", -1, 1), new u("tzake", -1, 1), new u("tzeke", -1, 1), new u("le", -1, 1), new u("gale", 55, 1), new u("taile", 55, 1), new u("tzaile", 55, 1), new u("gune", -1, 1), new u("kune", -1, 1), new u("tze", -1, 1), new u("atze", 61, 1), new u("gai", -1, 1), new u("aldi", -1, 1), new u("taldi", 64, 1), new u("ki", -1, 1), new u("ari", -1, 1), new u("kari", 67, 1), new u("lari", 67, 1), new u("tari", 67, 1), new u("etari", 70, 1), new u("garri", -1, 2), new u("karri", -1, 1), new u("arazi", -1, 1), new u("tarazi", 74, 1), new u("an", -1, 1), new u("ean", 76, 1), new u("rean", 77, 1), new u("kan", 76, 1), new u("etan", 76, 1), new u("atseden", -1, 3), new u("men", -1, 1), new u("pen", -1, 1), new u("kin", -1, 1), new u("rekin", 84, 1), new u("ezin", -1, 1), new u("tezin", 86, 1), new u("tun", -1, 1), new u("kizun", -1, 1), new u("go", -1, 1), new u("ago", 90, 1), new u("tio", -1, 1), new u("dako", -1, 1), new u("or", -1, 1), new u("kor", 94, 1), new u("tzat", -1, 1), new u("du", -1, 1), new u("gailu", -1, 1), new u("tu", -1, 1), new u("atu", 99, 1), new u("aldatu", 100, 1), new u("tatu", 100, 1), new u("baditu", 99, 5), new u("ez", -1, 1), new u("errez", 104, 1), new u("tzez", 104, 1), new u("gaitz", -1, 1), new u("kaitz", -1, 1)]
         }
       }, {
         key: "a_1",
         get: function() {
-          return delete n.a_1, n.a_1 = [new c("ada", -1, 1), new c("kada", 0, 1), new c("anda", -1, 1), new c("denda", -1, 1), new c("gabea", -1, 1), new c("kabea", -1, 1), new c("aldea", -1, 1), new c("kaldea", 6, 1), new c("taldea", 6, 1), new c("ordea", -1, 1), new c("zalea", -1, 1), new c("tzalea", 10, 1), new c("gilea", -1, 1), new c("emea", -1, 1), new c("kumea", -1, 1), new c("nea", -1, 1), new c("enea", 15, 1), new c("zionea", 15, 1), new c("unea", 15, 1), new c("gunea", 18, 1), new c("pea", -1, 1), new c("aurrea", -1, 1), new c("tea", -1, 1), new c("kotea", 22, 1), new c("artea", 22, 1), new c("ostea", 22, 1), new c("etxea", -1, 1), new c("ga", -1, 1), new c("anga", 27, 1), new c("gaia", -1, 1), new c("aldia", -1, 1), new c("taldia", 30, 1), new c("handia", -1, 1), new c("mendia", -1, 1), new c("geia", -1, 1), new c("egia", -1, 1), new c("degia", 35, 1), new c("tegia", 35, 1), new c("nahia", -1, 1), new c("ohia", -1, 1), new c("kia", -1, 1), new c("tokia", 40, 1), new c("oia", -1, 1), new c("koia", 42, 1), new c("aria", -1, 1), new c("karia", 44, 1), new c("laria", 44, 1), new c("taria", 44, 1), new c("eria", -1, 1), new c("keria", 48, 1), new c("teria", 48, 1), new c("garria", -1, 2), new c("larria", -1, 1), new c("kirria", -1, 1), new c("duria", -1, 1), new c("asia", -1, 1), new c("tia", -1, 1), new c("ezia", -1, 1), new c("bizia", -1, 1), new c("ontzia", -1, 1), new c("ka", -1, 1), new c("joka", 60, 3), new c("aurka", 60, 10), new c("ska", 60, 1), new c("xka", 60, 1), new c("zka", 60, 1), new c("gibela", -1, 1), new c("gela", -1, 1), new c("kaila", -1, 1), new c("skila", -1, 1), new c("tila", -1, 1), new c("ola", -1, 1), new c("na", -1, 1), new c("kana", 72, 1), new c("ena", 72, 1), new c("garrena", 74, 1), new c("gerrena", 74, 1), new c("urrena", 74, 1), new c("zaina", 72, 1), new c("tzaina", 78, 1), new c("kina", 72, 1), new c("mina", 72, 1), new c("garna", 72, 1), new c("una", 72, 1), new c("duna", 83, 1), new c("asuna", 83, 1), new c("tasuna", 85, 1), new c("ondoa", -1, 1), new c("kondoa", 87, 1), new c("ngoa", -1, 1), new c("zioa", -1, 1), new c("koa", -1, 1), new c("takoa", 91, 1), new c("zkoa", 91, 1), new c("noa", -1, 1), new c("zinoa", 94, 1), new c("aroa", -1, 1), new c("taroa", 96, 1), new c("zaroa", 96, 1), new c("eroa", -1, 1), new c("oroa", -1, 1), new c("osoa", -1, 1), new c("toa", -1, 1), new c("ttoa", 102, 1), new c("ztoa", 102, 1), new c("txoa", -1, 1), new c("tzoa", -1, 1), new c("\xf1oa", -1, 1), new c("ra", -1, 1), new c("ara", 108, 1), new c("dara", 109, 1), new c("liara", 109, 1), new c("tiara", 109, 1), new c("tara", 109, 1), new c("etara", 113, 1), new c("tzara", 109, 1), new c("bera", 108, 1), new c("kera", 108, 1), new c("pera", 108, 1), new c("ora", 108, 2), new c("tzarra", 108, 1), new c("korra", 108, 1), new c("tra", 108, 1), new c("sa", -1, 1), new c("osa", 123, 1), new c("ta", -1, 1), new c("eta", 125, 1), new c("keta", 126, 1), new c("sta", 125, 1), new c("dua", -1, 1), new c("mendua", 129, 1), new c("ordua", 129, 1), new c("lekua", -1, 1), new c("burua", -1, 1), new c("durua", -1, 1), new c("tsua", -1, 1), new c("tua", -1, 1), new c("mentua", 136, 1), new c("estua", 136, 1), new c("txua", -1, 1), new c("zua", -1, 1), new c("tzua", 140, 1), new c("za", -1, 1), new c("eza", 142, 1), new c("eroza", 142, 1), new c("tza", 142, 2), new c("koitza", 145, 1), new c("antza", 145, 1), new c("gintza", 145, 1), new c("kintza", 145, 1), new c("kuntza", 145, 1), new c("gabe", -1, 1), new c("kabe", -1, 1), new c("kide", -1, 1), new c("alde", -1, 1), new c("kalde", 154, 1), new c("talde", 154, 1), new c("orde", -1, 1), new c("ge", -1, 1), new c("zale", -1, 1), new c("tzale", 159, 1), new c("gile", -1, 1), new c("eme", -1, 1), new c("kume", -1, 1), new c("ne", -1, 1), new c("zione", 164, 1), new c("une", 164, 1), new c("gune", 166, 1), new c("pe", -1, 1), new c("aurre", -1, 1), new c("te", -1, 1), new c("kote", 170, 1), new c("arte", 170, 1), new c("oste", 170, 1), new c("etxe", -1, 1), new c("gai", -1, 1), new c("di", -1, 1), new c("aldi", 176, 1), new c("taldi", 177, 1), new c("geldi", 176, 8), new c("handi", 176, 1), new c("mendi", 176, 1), new c("gei", -1, 1), new c("egi", -1, 1), new c("degi", 183, 1), new c("tegi", 183, 1), new c("nahi", -1, 1), new c("ohi", -1, 1), new c("ki", -1, 1), new c("toki", 188, 1), new c("oi", -1, 1), new c("goi", 190, 1), new c("koi", 190, 1), new c("ari", -1, 1), new c("kari", 193, 1), new c("lari", 193, 1), new c("tari", 193, 1), new c("garri", -1, 2), new c("larri", -1, 1), new c("kirri", -1, 1), new c("duri", -1, 1), new c("asi", -1, 1), new c("ti", -1, 1), new c("ontzi", -1, 1), new c("\xf1i", -1, 1), new c("ak", -1, 1), new c("ek", -1, 1), new c("tarik", -1, 1), new c("gibel", -1, 1), new c("ail", -1, 1), new c("kail", 209, 1), new c("kan", -1, 1), new c("tan", -1, 1), new c("etan", 212, 1), new c("en", -1, 4), new c("ren", 214, 2), new c("garren", 215, 1), new c("gerren", 215, 1), new c("urren", 215, 1), new c("ten", 214, 4), new c("tzen", 214, 4), new c("zain", -1, 1), new c("tzain", 221, 1), new c("kin", -1, 1), new c("min", -1, 1), new c("dun", -1, 1), new c("asun", -1, 1), new c("tasun", 226, 1), new c("aizun", -1, 1), new c("ondo", -1, 1), new c("kondo", 229, 1), new c("go", -1, 1), new c("ngo", 231, 1), new c("zio", -1, 1), new c("ko", -1, 1), new c("trako", 234, 5), new c("tako", 234, 1), new c("etako", 236, 1), new c("eko", 234, 1), new c("tariko", 234, 1), new c("sko", 234, 1), new c("tuko", 234, 1), new c("minutuko", 241, 6), new c("zko", 234, 1), new c("no", -1, 1), new c("zino", 244, 1), new c("ro", -1, 1), new c("aro", 246, 1), new c("igaro", 247, 9), new c("taro", 247, 1), new c("zaro", 247, 1), new c("ero", 246, 1), new c("giro", 246, 1), new c("oro", 246, 1), new c("oso", -1, 1), new c("to", -1, 1), new c("tto", 255, 1), new c("zto", 255, 1), new c("txo", -1, 1), new c("tzo", -1, 1), new c("gintzo", 259, 1), new c("\xf1o", -1, 1), new c("zp", -1, 1), new c("ar", -1, 1), new c("dar", 263, 1), new c("behar", 263, 1), new c("zehar", 263, 7), new c("liar", 263, 1), new c("tiar", 263, 1), new c("tar", 263, 1), new c("tzar", 263, 1), new c("or", -1, 2), new c("kor", 271, 1), new c("os", -1, 1), new c("ket", -1, 1), new c("du", -1, 1), new c("mendu", 275, 1), new c("ordu", 275, 1), new c("leku", -1, 1), new c("buru", -1, 2), new c("duru", -1, 1), new c("tsu", -1, 1), new c("tu", -1, 1), new c("tatu", 282, 4), new c("mentu", 282, 1), new c("estu", 282, 1), new c("txu", -1, 1), new c("zu", -1, 1), new c("tzu", 287, 1), new c("gintzu", 288, 1), new c("z", -1, 1), new c("ez", 290, 1), new c("eroz", 290, 1), new c("tz", 290, 1), new c("koitz", 293, 1)]
+          return delete t.a_1, t.a_1 = [new u("ada", -1, 1), new u("kada", 0, 1), new u("anda", -1, 1), new u("denda", -1, 1), new u("gabea", -1, 1), new u("kabea", -1, 1), new u("aldea", -1, 1), new u("kaldea", 6, 1), new u("taldea", 6, 1), new u("ordea", -1, 1), new u("zalea", -1, 1), new u("tzalea", 10, 1), new u("gilea", -1, 1), new u("emea", -1, 1), new u("kumea", -1, 1), new u("nea", -1, 1), new u("enea", 15, 1), new u("zionea", 15, 1), new u("unea", 15, 1), new u("gunea", 18, 1), new u("pea", -1, 1), new u("aurrea", -1, 1), new u("tea", -1, 1), new u("kotea", 22, 1), new u("artea", 22, 1), new u("ostea", 22, 1), new u("etxea", -1, 1), new u("ga", -1, 1), new u("anga", 27, 1), new u("gaia", -1, 1), new u("aldia", -1, 1), new u("taldia", 30, 1), new u("handia", -1, 1), new u("mendia", -1, 1), new u("geia", -1, 1), new u("egia", -1, 1), new u("degia", 35, 1), new u("tegia", 35, 1), new u("nahia", -1, 1), new u("ohia", -1, 1), new u("kia", -1, 1), new u("tokia", 40, 1), new u("oia", -1, 1), new u("koia", 42, 1), new u("aria", -1, 1), new u("karia", 44, 1), new u("laria", 44, 1), new u("taria", 44, 1), new u("eria", -1, 1), new u("keria", 48, 1), new u("teria", 48, 1), new u("garria", -1, 2), new u("larria", -1, 1), new u("kirria", -1, 1), new u("duria", -1, 1), new u("asia", -1, 1), new u("tia", -1, 1), new u("ezia", -1, 1), new u("bizia", -1, 1), new u("ontzia", -1, 1), new u("ka", -1, 1), new u("joka", 60, 3), new u("aurka", 60, 10), new u("ska", 60, 1), new u("xka", 60, 1), new u("zka", 60, 1), new u("gibela", -1, 1), new u("gela", -1, 1), new u("kaila", -1, 1), new u("skila", -1, 1), new u("tila", -1, 1), new u("ola", -1, 1), new u("na", -1, 1), new u("kana", 72, 1), new u("ena", 72, 1), new u("garrena", 74, 1), new u("gerrena", 74, 1), new u("urrena", 74, 1), new u("zaina", 72, 1), new u("tzaina", 78, 1), new u("kina", 72, 1), new u("mina", 72, 1), new u("garna", 72, 1), new u("una", 72, 1), new u("duna", 83, 1), new u("asuna", 83, 1), new u("tasuna", 85, 1), new u("ondoa", -1, 1), new u("kondoa", 87, 1), new u("ngoa", -1, 1), new u("zioa", -1, 1), new u("koa", -1, 1), new u("takoa", 91, 1), new u("zkoa", 91, 1), new u("noa", -1, 1), new u("zinoa", 94, 1), new u("aroa", -1, 1), new u("taroa", 96, 1), new u("zaroa", 96, 1), new u("eroa", -1, 1), new u("oroa", -1, 1), new u("osoa", -1, 1), new u("toa", -1, 1), new u("ttoa", 102, 1), new u("ztoa", 102, 1), new u("txoa", -1, 1), new u("tzoa", -1, 1), new u("\xf1oa", -1, 1), new u("ra", -1, 1), new u("ara", 108, 1), new u("dara", 109, 1), new u("liara", 109, 1), new u("tiara", 109, 1), new u("tara", 109, 1), new u("etara", 113, 1), new u("tzara", 109, 1), new u("bera", 108, 1), new u("kera", 108, 1), new u("pera", 108, 1), new u("ora", 108, 2), new u("tzarra", 108, 1), new u("korra", 108, 1), new u("tra", 108, 1), new u("sa", -1, 1), new u("osa", 123, 1), new u("ta", -1, 1), new u("eta", 125, 1), new u("keta", 126, 1), new u("sta", 125, 1), new u("dua", -1, 1), new u("mendua", 129, 1), new u("ordua", 129, 1), new u("lekua", -1, 1), new u("burua", -1, 1), new u("durua", -1, 1), new u("tsua", -1, 1), new u("tua", -1, 1), new u("mentua", 136, 1), new u("estua", 136, 1), new u("txua", -1, 1), new u("zua", -1, 1), new u("tzua", 140, 1), new u("za", -1, 1), new u("eza", 142, 1), new u("eroza", 142, 1), new u("tza", 142, 2), new u("koitza", 145, 1), new u("antza", 145, 1), new u("gintza", 145, 1), new u("kintza", 145, 1), new u("kuntza", 145, 1), new u("gabe", -1, 1), new u("kabe", -1, 1), new u("kide", -1, 1), new u("alde", -1, 1), new u("kalde", 154, 1), new u("talde", 154, 1), new u("orde", -1, 1), new u("ge", -1, 1), new u("zale", -1, 1), new u("tzale", 159, 1), new u("gile", -1, 1), new u("eme", -1, 1), new u("kume", -1, 1), new u("ne", -1, 1), new u("zione", 164, 1), new u("une", 164, 1), new u("gune", 166, 1), new u("pe", -1, 1), new u("aurre", -1, 1), new u("te", -1, 1), new u("kote", 170, 1), new u("arte", 170, 1), new u("oste", 170, 1), new u("etxe", -1, 1), new u("gai", -1, 1), new u("di", -1, 1), new u("aldi", 176, 1), new u("taldi", 177, 1), new u("geldi", 176, 8), new u("handi", 176, 1), new u("mendi", 176, 1), new u("gei", -1, 1), new u("egi", -1, 1), new u("degi", 183, 1), new u("tegi", 183, 1), new u("nahi", -1, 1), new u("ohi", -1, 1), new u("ki", -1, 1), new u("toki", 188, 1), new u("oi", -1, 1), new u("goi", 190, 1), new u("koi", 190, 1), new u("ari", -1, 1), new u("kari", 193, 1), new u("lari", 193, 1), new u("tari", 193, 1), new u("garri", -1, 2), new u("larri", -1, 1), new u("kirri", -1, 1), new u("duri", -1, 1), new u("asi", -1, 1), new u("ti", -1, 1), new u("ontzi", -1, 1), new u("\xf1i", -1, 1), new u("ak", -1, 1), new u("ek", -1, 1), new u("tarik", -1, 1), new u("gibel", -1, 1), new u("ail", -1, 1), new u("kail", 209, 1), new u("kan", -1, 1), new u("tan", -1, 1), new u("etan", 212, 1), new u("en", -1, 4), new u("ren", 214, 2), new u("garren", 215, 1), new u("gerren", 215, 1), new u("urren", 215, 1), new u("ten", 214, 4), new u("tzen", 214, 4), new u("zain", -1, 1), new u("tzain", 221, 1), new u("kin", -1, 1), new u("min", -1, 1), new u("dun", -1, 1), new u("asun", -1, 1), new u("tasun", 226, 1), new u("aizun", -1, 1), new u("ondo", -1, 1), new u("kondo", 229, 1), new u("go", -1, 1), new u("ngo", 231, 1), new u("zio", -1, 1), new u("ko", -1, 1), new u("trako", 234, 5), new u("tako", 234, 1), new u("etako", 236, 1), new u("eko", 234, 1), new u("tariko", 234, 1), new u("sko", 234, 1), new u("tuko", 234, 1), new u("minutuko", 241, 6), new u("zko", 234, 1), new u("no", -1, 1), new u("zino", 244, 1), new u("ro", -1, 1), new u("aro", 246, 1), new u("igaro", 247, 9), new u("taro", 247, 1), new u("zaro", 247, 1), new u("ero", 246, 1), new u("giro", 246, 1), new u("oro", 246, 1), new u("oso", -1, 1), new u("to", -1, 1), new u("tto", 255, 1), new u("zto", 255, 1), new u("txo", -1, 1), new u("tzo", -1, 1), new u("gintzo", 259, 1), new u("\xf1o", -1, 1), new u("zp", -1, 1), new u("ar", -1, 1), new u("dar", 263, 1), new u("behar", 263, 1), new u("zehar", 263, 7), new u("liar", 263, 1), new u("tiar", 263, 1), new u("tar", 263, 1), new u("tzar", 263, 1), new u("or", -1, 2), new u("kor", 271, 1), new u("os", -1, 1), new u("ket", -1, 1), new u("du", -1, 1), new u("mendu", 275, 1), new u("ordu", 275, 1), new u("leku", -1, 1), new u("buru", -1, 2), new u("duru", -1, 1), new u("tsu", -1, 1), new u("tu", -1, 1), new u("tatu", 282, 4), new u("mentu", 282, 1), new u("estu", 282, 1), new u("txu", -1, 1), new u("zu", -1, 1), new u("tzu", 287, 1), new u("gintzu", 288, 1), new u("z", -1, 1), new u("ez", 290, 1), new u("eroz", 290, 1), new u("tz", 290, 1), new u("koitz", 293, 1)]
         }
       }, {
         key: "a_2",
         get: function() {
-          return delete n.a_2, n.a_2 = [new c("zlea", -1, 2), new c("keria", -1, 1), new c("la", -1, 1), new c("era", -1, 1), new c("dade", -1, 1), new c("tade", -1, 1), new c("date", -1, 1), new c("tate", -1, 1), new c("gi", -1, 1), new c("ki", -1, 1), new c("ik", -1, 1), new c("lanik", 10, 1), new c("rik", 10, 1), new c("larik", 12, 1), new c("ztik", 10, 1), new c("go", -1, 1), new c("ro", -1, 1), new c("ero", 16, 1), new c("to", -1, 1)]
+          return delete t.a_2, t.a_2 = [new u("zlea", -1, 2), new u("keria", -1, 1), new u("la", -1, 1), new u("era", -1, 1), new u("dade", -1, 1), new u("tade", -1, 1), new u("date", -1, 1), new u("tate", -1, 1), new u("gi", -1, 1), new u("ki", -1, 1), new u("ik", -1, 1), new u("lanik", 10, 1), new u("rik", 10, 1), new u("larik", 12, 1), new u("ztik", 10, 1), new u("go", -1, 1), new u("ro", -1, 1), new u("ero", 16, 1), new u("to", -1, 1)]
         }
       }, {
         key: "g_v",
         get: function() {
-          return delete n.g_v, n.g_v = [17, 65, 16]
+          return delete t.g_v, t.g_v = [17, 65, 16]
         }
-      }]), n
-    }(u),
-    p = function(e) {
-      function n() {
-        return i(this, n), t(this, Object.getPrototypeOf(n).apply(this, arguments))
+      }]), t
+    }(c),
+    $ = function(e) {
+      function t() {
+        return r(this, t), i(this, Object.getPrototypeOf(t).apply(this, arguments))
       }
-      return r(n, e), a(n, [{
+      return s(t, e), a(t, [{
         key: "r_mark_regions$esjava$0",
         value: function() {
           var e = void 0;
           this.I_p1 = this.limit, this.I_p2 = this.limit, e = this.cursor;
-          l: do {
-            A: for (;;) {
+          e: do {
+            d: for (;;) {
               do {
-                if (!this.in_grouping$esjava$3(n.g_v, 97, 252)) break;
-                break A
+                if (!this.in_grouping$esjava$3(t.g_v, 97, 252)) break;
+                break d
               } while (!1);
-              if (this.cursor >= this.limit) break l;
+              if (this.cursor >= this.limit) break e;
               this.cursor++
             }
-            N: for (;;) {
+            b: for (;;) {
               do {
-                if (!this.out_grouping$esjava$3(n.g_v, 97, 252)) break;
-                break N
+                if (!this.out_grouping$esjava$3(t.g_v, 97, 252)) break;
+                break b
               } while (!1);
-              if (this.cursor >= this.limit) break l;
+              if (this.cursor >= this.limit) break e;
               this.cursor++
             }
-            this.I_p1 = this.cursor;C: for (;;) {
+            this.I_p1 = this.cursor;m: for (;;) {
               do {
-                if (!this.in_grouping$esjava$3(n.g_v, 97, 252)) break;
-                break C
+                if (!this.in_grouping$esjava$3(t.g_v, 97, 252)) break;
+                break m
               } while (!1);
-              if (this.cursor >= this.limit) break l;
+              if (this.cursor >= this.limit) break e;
               this.cursor++
             }
-            w: for (;;) {
+            j: for (;;) {
               do {
-                if (!this.out_grouping$esjava$3(n.g_v, 97, 252)) break;
-                break w
+                if (!this.out_grouping$esjava$3(t.g_v, 97, 252)) break;
+                break j
               } while (!1);
-              if (this.cursor >= this.limit) break l;
+              if (this.cursor >= this.limit) break e;
               this.cursor++
             }
             this.I_p2 = this.cursor
@@ -1958,14 +1990,14 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "r_cleaning$esjava$0",
         value: function() {
           var e = void 0,
-            t = void 0;
-          G: for (;;) {
-            t = this.cursor;
-            c: do {
-              if (this.bra = this.cursor, 0 === (e = this.find_among$esjava$1(n.a_0))) break;
+            i = void 0;
+          P: for (;;) {
+            i = this.cursor;
+            i: do {
+              if (this.bra = this.cursor, 0 === (e = this.find_among$esjava$1(t.a_0))) break;
               switch (this.ket = this.cursor, e) {
                 case 0:
-                  break c;
+                  break i;
                 case 1:
                 case 2:
                   this.slice_from$esjava$1("a");
@@ -1991,12 +2023,12 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
                   this.slice_from$esjava$1(".");
                   break;
                 case 13:
-                  if (this.cursor >= this.limit) break c;
+                  if (this.cursor >= this.limit) break i;
                   this.cursor++
               }
-              continue G
+              continue P
             } while (!1);
-            this.cursor = t;
+            this.cursor = i;
             break
           }
           return !0
@@ -2015,7 +2047,7 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "r_attached_pronoun$esjava$0",
         value: function() {
           var e = void 0;
-          if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(n.a_1))) return !1;
+          if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(t.a_1))) return !1;
           switch (this.bra = this.cursor, e) {
             case 0:
               return !1;
@@ -2029,7 +2061,7 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "r_standard_suffix$esjava$0",
         value: function() {
           var e = void 0;
-          if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(n.a_2))) return !1;
+          if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(t.a_2))) return !1;
           switch (this.bra = this.cursor, e) {
             case 0:
               return !1;
@@ -2059,7 +2091,7 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "r_verb_suffix$esjava$0",
         value: function() {
           var e = void 0;
-          if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(n.a_3))) return !1;
+          if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(t.a_3))) return !1;
           switch (this.bra = this.cursor, e) {
             case 0:
               return !1;
@@ -2077,7 +2109,7 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "r_residual_suffix$esjava$0",
         value: function() {
           var e = void 0;
-          if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(n.a_4))) return !1;
+          if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(t.a_4))) return !1;
           switch (this.bra = this.cursor, e) {
             case 0:
               return !1;
@@ -2095,30 +2127,30 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "stem$esjava$0",
         value: function() {
           var e = void 0,
-            t = void 0,
-            n = void 0,
-            r = void 0,
             i = void 0,
+            s = void 0,
+            t = void 0,
+            r = void 0,
             a = void 0;
           e = this.cursor;
           do
             if (!this.r_mark_regions$esjava$0()) break; while (!1);
-          this.cursor = e, this.limit_backward = this.cursor, this.cursor = this.limit, t = this.limit - this.cursor;
+          this.cursor = e, this.limit_backward = this.cursor, this.cursor = this.limit, i = this.limit - this.cursor;
           do
             if (!this.r_attached_pronoun$esjava$0()) break; while (!1);
-          this.cursor = this.limit - t, n = this.limit - this.cursor;
-          u: do d: do {
-            r = this.limit - this.cursor;
+          this.cursor = this.limit - i, s = this.limit - this.cursor;
+          s: do t: do {
+            t = this.limit - this.cursor;
             do {
               if (!this.r_standard_suffix$esjava$0()) break;
-              break d
+              break t
             } while (!1);
-            if (this.cursor = this.limit - r, !this.r_verb_suffix$esjava$0()) break u
+            if (this.cursor = this.limit - t, !this.r_verb_suffix$esjava$0()) break s
           } while (!1); while (!1);
-          this.cursor = this.limit - n, i = this.limit - this.cursor;
+          this.cursor = this.limit - s, r = this.limit - this.cursor;
           do
             if (!this.r_residual_suffix$esjava$0()) break; while (!1);
-          this.cursor = this.limit - i, this.cursor = this.limit_backward, a = this.cursor;
+          this.cursor = this.limit - r, this.cursor = this.limit_backward, a = this.cursor;
           do
             if (!this.r_cleaning$esjava$0()) break; while (!1);
           return this.cursor = a, !0
@@ -2126,8 +2158,8 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
       }, {
         key: "stem",
         value: function() {
-          for (var e, t = arguments.length, r = Array(t), i = 0; i < t; i++) r[i] = arguments[i];
-          return 0 === r.length ? this.stem$esjava$0.apply(this, r) : (e = o(Object.getPrototypeOf(n.prototype), "stem", this)).call.apply(e, [this].concat(r))
+          for (var e, i = arguments.length, s = Array(i), r = 0; r < i; r++) s[r] = arguments[r];
+          return 0 === s.length ? this.stem$esjava$0.apply(this, s) : (e = n(Object.getPrototypeOf(t.prototype), "stem", this)).call.apply(e, [this].concat(s))
         }
       }, {
         key: "I_p2",
@@ -2148,67 +2180,67 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
       }], [{
         key: "a_0",
         get: function() {
-          return delete n.a_0, n.a_0 = [new c("", -1, 13), new c("\xb7", 0, 12), new c("\xe0", 0, 2), new c("\xe1", 0, 1), new c("\xe8", 0, 4), new c("\xe9", 0, 3), new c("\xec", 0, 6), new c("\xed", 0, 5), new c("\xef", 0, 11), new c("\xf2", 0, 8), new c("\xf3", 0, 7), new c("\xfa", 0, 9), new c("\xfc", 0, 10)]
+          return delete t.a_0, t.a_0 = [new u("", -1, 13), new u("\xb7", 0, 12), new u("\xe0", 0, 2), new u("\xe1", 0, 1), new u("\xe8", 0, 4), new u("\xe9", 0, 3), new u("\xec", 0, 6), new u("\xed", 0, 5), new u("\xef", 0, 11), new u("\xf2", 0, 8), new u("\xf3", 0, 7), new u("\xfa", 0, 9), new u("\xfc", 0, 10)]
         }
       }, {
         key: "a_1",
         get: function() {
-          return delete n.a_1, n.a_1 = [new c("la", -1, 1), new c("-la", 0, 1), new c("sela", 0, 1), new c("le", -1, 1), new c("me", -1, 1), new c("-me", 4, 1), new c("se", -1, 1), new c("-te", -1, 1), new c("hi", -1, 1), new c("'hi", 8, 1), new c("li", -1, 1), new c("-li", 10, 1), new c("'l", -1, 1), new c("'m", -1, 1), new c("-m", -1, 1), new c("'n", -1, 1), new c("-n", -1, 1), new c("ho", -1, 1), new c("'ho", 17, 1), new c("lo", -1, 1), new c("selo", 19, 1), new c("'s", -1, 1), new c("las", -1, 1), new c("selas", 22, 1), new c("les", -1, 1), new c("-les", 24, 1), new c("'ls", -1, 1), new c("-ls", -1, 1), new c("'ns", -1, 1), new c("-ns", -1, 1), new c("ens", -1, 1), new c("los", -1, 1), new c("selos", 31, 1), new c("nos", -1, 1), new c("-nos", 33, 1), new c("vos", -1, 1), new c("us", -1, 1), new c("-us", 36, 1), new c("'t", -1, 1)]
+          return delete t.a_1, t.a_1 = [new u("la", -1, 1), new u("-la", 0, 1), new u("sela", 0, 1), new u("le", -1, 1), new u("me", -1, 1), new u("-me", 4, 1), new u("se", -1, 1), new u("-te", -1, 1), new u("hi", -1, 1), new u("'hi", 8, 1), new u("li", -1, 1), new u("-li", 10, 1), new u("'l", -1, 1), new u("'m", -1, 1), new u("-m", -1, 1), new u("'n", -1, 1), new u("-n", -1, 1), new u("ho", -1, 1), new u("'ho", 17, 1), new u("lo", -1, 1), new u("selo", 19, 1), new u("'s", -1, 1), new u("las", -1, 1), new u("selas", 22, 1), new u("les", -1, 1), new u("-les", 24, 1), new u("'ls", -1, 1), new u("-ls", -1, 1), new u("'ns", -1, 1), new u("-ns", -1, 1), new u("ens", -1, 1), new u("los", -1, 1), new u("selos", 31, 1), new u("nos", -1, 1), new u("-nos", 33, 1), new u("vos", -1, 1), new u("us", -1, 1), new u("-us", 36, 1), new u("'t", -1, 1)]
         }
       }, {
         key: "a_2",
         get: function() {
-          return delete n.a_2, n.a_2 = [new c("ica", -1, 4), new c("l\xf3gica", 0, 3), new c("enca", -1, 1), new c("ada", -1, 2), new c("ancia", -1, 1), new c("encia", -1, 1), new c("\xe8ncia", -1, 1), new c("\xedcia", -1, 1), new c("logia", -1, 3), new c("inia", -1, 1), new c("\xedinia", 9, 1), new c("eria", -1, 1), new c("\xe0ria", -1, 1), new c("at\xf2ria", -1, 1), new c("alla", -1, 1), new c("ella", -1, 1), new c("\xedvola", -1, 1), new c("ima", -1, 1), new c("\xedssima", 17, 1), new c("qu\xedssima", 18, 5), new c("ana", -1, 1), new c("ina", -1, 1), new c("era", -1, 1), new c("sfera", 22, 1), new c("ora", -1, 1), new c("dora", 24, 1), new c("adora", 25, 1), new c("adura", -1, 1), new c("esa", -1, 1), new c("osa", -1, 1), new c("assa", -1, 1), new c("essa", -1, 1), new c("issa", -1, 1), new c("eta", -1, 1), new c("ita", -1, 1), new c("ota", -1, 1), new c("ista", -1, 1), new c("ialista", 36, 1), new c("ionista", 36, 1), new c("iva", -1, 1), new c("ativa", 39, 1), new c("n\xe7a", -1, 1), new c("log\xeda", -1, 3), new c("ic", -1, 4), new c("\xedstic", 43, 1), new c("enc", -1, 1), new c("esc", -1, 1), new c("ud", -1, 1), new c("atge", -1, 1), new c("ble", -1, 1), new c("able", 49, 1), new c("ible", 49, 1), new c("isme", -1, 1), new c("ialisme", 52, 1), new c("ionisme", 52, 1), new c("ivisme", 52, 1), new c("aire", -1, 1), new c("icte", -1, 1), new c("iste", -1, 1), new c("ici", -1, 1), new c("\xedci", -1, 1), new c("logi", -1, 3), new c("ari", -1, 1), new c("tori", -1, 1), new c("al", -1, 1), new c("il", -1, 1), new c("all", -1, 1), new c("ell", -1, 1), new c("\xedvol", -1, 1), new c("isam", -1, 1), new c("issem", -1, 1), new c("\xecssem", -1, 1), new c("\xedssem", -1, 1), new c("\xedssim", -1, 1), new c("qu\xedssim", 73, 5), new c("amen", -1, 1), new c("\xecssin", -1, 1), new c("ar", -1, 1), new c("ificar", 77, 1), new c("egar", 77, 1), new c("ejar", 77, 1), new c("itar", 77, 1), new c("itzar", 77, 1), new c("fer", -1, 1), new c("or", -1, 1), new c("dor", 84, 1), new c("dur", -1, 1), new c("doras", -1, 1), new c("ics", -1, 4), new c("l\xf3gics", 88, 3), new c("uds", -1, 1), new c("nces", -1, 1), new c("ades", -1, 2), new c("ancies", -1, 1), new c("encies", -1, 1), new c("\xe8ncies", -1, 1), new c("\xedcies", -1, 1), new c("logies", -1, 3), new c("inies", -1, 1), new c("\xednies", -1, 1), new c("eries", -1, 1), new c("\xe0ries", -1, 1), new c("at\xf2ries", -1, 1), new c("bles", -1, 1), new c("ables", 103, 1), new c("ibles", 103, 1), new c("imes", -1, 1), new c("\xedssimes", 106, 1), new c("qu\xedssimes", 107, 5), new c("formes", -1, 1), new c("ismes", -1, 1), new c("ialismes", 110, 1), new c("ines", -1, 1), new c("eres", -1, 1), new c("ores", -1, 1), new c("dores", 114, 1), new c("idores", 115, 1), new c("dures", -1, 1), new c("eses", -1, 1), new c("oses", -1, 1), new c("asses", -1, 1), new c("ictes", -1, 1), new c("ites", -1, 1), new c("otes", -1, 1), new c("istes", -1, 1), new c("ialistes", 124, 1), new c("ionistes", 124, 1), new c("iques", -1, 4), new c("l\xf3giques", 127, 3), new c("ives", -1, 1), new c("atives", 129, 1), new c("log\xedes", -1, 3), new c("alleng\xfces", -1, 1), new c("icis", -1, 1), new c("\xedcis", -1, 1), new c("logis", -1, 3), new c("aris", -1, 1), new c("toris", -1, 1), new c("ls", -1, 1), new c("als", 138, 1), new c("ells", 138, 1), new c("ims", -1, 1), new c("\xedssims", 141, 1), new c("qu\xedssims", 142, 5), new c("ions", -1, 1), new c("cions", 144, 1), new c("acions", 145, 2), new c("esos", -1, 1), new c("osos", -1, 1), new c("assos", -1, 1), new c("issos", -1, 1), new c("ers", -1, 1), new c("ors", -1, 1), new c("dors", 152, 1), new c("adors", 153, 1), new c("idors", 153, 1), new c("ats", -1, 1), new c("itats", 156, 1), new c("bilitats", 157, 1), new c("ivitats", 157, 1), new c("ativitats", 159, 1), new c("\xeftats", 156, 1), new c("ets", -1, 1), new c("ants", -1, 1), new c("ents", -1, 1), new c("ments", 164, 1), new c("aments", 165, 1), new c("ots", -1, 1), new c("uts", -1, 1), new c("ius", -1, 1), new c("trius", 169, 1), new c("atius", 169, 1), new c("\xe8s", -1, 1), new c("\xe9s", -1, 1), new c("\xeds", -1, 1), new c("d\xeds", 174, 1), new c("\xf3s", -1, 1), new c("itat", -1, 1), new c("bilitat", 177, 1), new c("ivitat", 177, 1), new c("ativitat", 179, 1), new c("\xeftat", -1, 1), new c("et", -1, 1), new c("ant", -1, 1), new c("ent", -1, 1), new c("ient", 184, 1), new c("ment", 184, 1), new c("ament", 186, 1), new c("isament", 187, 1), new c("ot", -1, 1), new c("isseu", -1, 1), new c("\xecsseu", -1, 1), new c("\xedsseu", -1, 1), new c("triu", -1, 1), new c("\xedssiu", -1, 1), new c("atiu", -1, 1), new c("\xf3", -1, 1), new c("i\xf3", 196, 1), new c("ci\xf3", 197, 1), new c("aci\xf3", 198, 1)]
+          return delete t.a_2, t.a_2 = [new u("ica", -1, 4), new u("l\xf3gica", 0, 3), new u("enca", -1, 1), new u("ada", -1, 2), new u("ancia", -1, 1), new u("encia", -1, 1), new u("\xe8ncia", -1, 1), new u("\xedcia", -1, 1), new u("logia", -1, 3), new u("inia", -1, 1), new u("\xedinia", 9, 1), new u("eria", -1, 1), new u("\xe0ria", -1, 1), new u("at\xf2ria", -1, 1), new u("alla", -1, 1), new u("ella", -1, 1), new u("\xedvola", -1, 1), new u("ima", -1, 1), new u("\xedssima", 17, 1), new u("qu\xedssima", 18, 5), new u("ana", -1, 1), new u("ina", -1, 1), new u("era", -1, 1), new u("sfera", 22, 1), new u("ora", -1, 1), new u("dora", 24, 1), new u("adora", 25, 1), new u("adura", -1, 1), new u("esa", -1, 1), new u("osa", -1, 1), new u("assa", -1, 1), new u("essa", -1, 1), new u("issa", -1, 1), new u("eta", -1, 1), new u("ita", -1, 1), new u("ota", -1, 1), new u("ista", -1, 1), new u("ialista", 36, 1), new u("ionista", 36, 1), new u("iva", -1, 1), new u("ativa", 39, 1), new u("n\xe7a", -1, 1), new u("log\xeda", -1, 3), new u("ic", -1, 4), new u("\xedstic", 43, 1), new u("enc", -1, 1), new u("esc", -1, 1), new u("ud", -1, 1), new u("atge", -1, 1), new u("ble", -1, 1), new u("able", 49, 1), new u("ible", 49, 1), new u("isme", -1, 1), new u("ialisme", 52, 1), new u("ionisme", 52, 1), new u("ivisme", 52, 1), new u("aire", -1, 1), new u("icte", -1, 1), new u("iste", -1, 1), new u("ici", -1, 1), new u("\xedci", -1, 1), new u("logi", -1, 3), new u("ari", -1, 1), new u("tori", -1, 1), new u("al", -1, 1), new u("il", -1, 1), new u("all", -1, 1), new u("ell", -1, 1), new u("\xedvol", -1, 1), new u("isam", -1, 1), new u("issem", -1, 1), new u("\xecssem", -1, 1), new u("\xedssem", -1, 1), new u("\xedssim", -1, 1), new u("qu\xedssim", 73, 5), new u("amen", -1, 1), new u("\xecssin", -1, 1), new u("ar", -1, 1), new u("ificar", 77, 1), new u("egar", 77, 1), new u("ejar", 77, 1), new u("itar", 77, 1), new u("itzar", 77, 1), new u("fer", -1, 1), new u("or", -1, 1), new u("dor", 84, 1), new u("dur", -1, 1), new u("doras", -1, 1), new u("ics", -1, 4), new u("l\xf3gics", 88, 3), new u("uds", -1, 1), new u("nces", -1, 1), new u("ades", -1, 2), new u("ancies", -1, 1), new u("encies", -1, 1), new u("\xe8ncies", -1, 1), new u("\xedcies", -1, 1), new u("logies", -1, 3), new u("inies", -1, 1), new u("\xednies", -1, 1), new u("eries", -1, 1), new u("\xe0ries", -1, 1), new u("at\xf2ries", -1, 1), new u("bles", -1, 1), new u("ables", 103, 1), new u("ibles", 103, 1), new u("imes", -1, 1), new u("\xedssimes", 106, 1), new u("qu\xedssimes", 107, 5), new u("formes", -1, 1), new u("ismes", -1, 1), new u("ialismes", 110, 1), new u("ines", -1, 1), new u("eres", -1, 1), new u("ores", -1, 1), new u("dores", 114, 1), new u("idores", 115, 1), new u("dures", -1, 1), new u("eses", -1, 1), new u("oses", -1, 1), new u("asses", -1, 1), new u("ictes", -1, 1), new u("ites", -1, 1), new u("otes", -1, 1), new u("istes", -1, 1), new u("ialistes", 124, 1), new u("ionistes", 124, 1), new u("iques", -1, 4), new u("l\xf3giques", 127, 3), new u("ives", -1, 1), new u("atives", 129, 1), new u("log\xedes", -1, 3), new u("alleng\xfces", -1, 1), new u("icis", -1, 1), new u("\xedcis", -1, 1), new u("logis", -1, 3), new u("aris", -1, 1), new u("toris", -1, 1), new u("ls", -1, 1), new u("als", 138, 1), new u("ells", 138, 1), new u("ims", -1, 1), new u("\xedssims", 141, 1), new u("qu\xedssims", 142, 5), new u("ions", -1, 1), new u("cions", 144, 1), new u("acions", 145, 2), new u("esos", -1, 1), new u("osos", -1, 1), new u("assos", -1, 1), new u("issos", -1, 1), new u("ers", -1, 1), new u("ors", -1, 1), new u("dors", 152, 1), new u("adors", 153, 1), new u("idors", 153, 1), new u("ats", -1, 1), new u("itats", 156, 1), new u("bilitats", 157, 1), new u("ivitats", 157, 1), new u("ativitats", 159, 1), new u("\xeftats", 156, 1), new u("ets", -1, 1), new u("ants", -1, 1), new u("ents", -1, 1), new u("ments", 164, 1), new u("aments", 165, 1), new u("ots", -1, 1), new u("uts", -1, 1), new u("ius", -1, 1), new u("trius", 169, 1), new u("atius", 169, 1), new u("\xe8s", -1, 1), new u("\xe9s", -1, 1), new u("\xeds", -1, 1), new u("d\xeds", 174, 1), new u("\xf3s", -1, 1), new u("itat", -1, 1), new u("bilitat", 177, 1), new u("ivitat", 177, 1), new u("ativitat", 179, 1), new u("\xeftat", -1, 1), new u("et", -1, 1), new u("ant", -1, 1), new u("ent", -1, 1), new u("ient", 184, 1), new u("ment", 184, 1), new u("ament", 186, 1), new u("isament", 187, 1), new u("ot", -1, 1), new u("isseu", -1, 1), new u("\xecsseu", -1, 1), new u("\xedsseu", -1, 1), new u("triu", -1, 1), new u("\xedssiu", -1, 1), new u("atiu", -1, 1), new u("\xf3", -1, 1), new u("i\xf3", 196, 1), new u("ci\xf3", 197, 1), new u("aci\xf3", 198, 1)]
         }
       }, {
         key: "a_3",
         get: function() {
-          return delete n.a_3, n.a_3 = [new c("aba", -1, 1), new c("esca", -1, 1), new c("isca", -1, 1), new c("\xefsca", -1, 1), new c("ada", -1, 1), new c("ida", -1, 1), new c("uda", -1, 1), new c("\xefda", -1, 1), new c("ia", -1, 1), new c("aria", 8, 1), new c("iria", 8, 1), new c("ara", -1, 1), new c("iera", -1, 1), new c("ira", -1, 1), new c("adora", -1, 1), new c("\xefra", -1, 1), new c("ava", -1, 1), new c("ixa", -1, 1), new c("itza", -1, 1), new c("\xeda", -1, 1), new c("ar\xeda", 19, 1), new c("er\xeda", 19, 1), new c("ir\xeda", 19, 1), new c("\xefa", -1, 1), new c("isc", -1, 1), new c("\xefsc", -1, 1), new c("ad", -1, 1), new c("ed", -1, 1), new c("id", -1, 1), new c("ie", -1, 1), new c("re", -1, 1), new c("dre", 30, 1), new c("ase", -1, 1), new c("iese", -1, 1), new c("aste", -1, 1), new c("iste", -1, 1), new c("ii", -1, 1), new c("ini", -1, 1), new c("esqui", -1, 1), new c("eixi", -1, 1), new c("itzi", -1, 1), new c("am", -1, 1), new c("em", -1, 1), new c("arem", 42, 1), new c("irem", 42, 1), new c("\xe0rem", 42, 1), new c("\xedrem", 42, 1), new c("\xe0ssem", 42, 1), new c("\xe9ssem", 42, 1), new c("iguem", 42, 1), new c("\xefguem", 42, 1), new c("avem", 42, 1), new c("\xe0vem", 42, 1), new c("\xe1vem", 42, 1), new c("ir\xecem", 42, 1), new c("\xedem", 42, 1), new c("ar\xedem", 55, 1), new c("ir\xedem", 55, 1), new c("assim", -1, 1), new c("essim", -1, 1), new c("issim", -1, 1), new c("\xe0ssim", -1, 1), new c("\xe8ssim", -1, 1), new c("\xe9ssim", -1, 1), new c("\xedssim", -1, 1), new c("\xefm", -1, 1), new c("an", -1, 1), new c("aban", 66, 1), new c("arian", 66, 1), new c("aran", 66, 1), new c("ieran", 66, 1), new c("iran", 66, 1), new c("\xedan", 66, 1), new c("ar\xedan", 72, 1), new c("er\xedan", 72, 1), new c("ir\xedan", 72, 1), new c("en", -1, 1), new c("ien", 76, 1), new c("arien", 77, 1), new c("irien", 77, 1), new c("aren", 76, 1), new c("eren", 76, 1), new c("iren", 76, 1), new c("\xe0ren", 76, 1), new c("\xefren", 76, 1), new c("asen", 76, 1), new c("iesen", 76, 1), new c("assen", 76, 1), new c("essen", 76, 1), new c("issen", 76, 1), new c("\xe9ssen", 76, 1), new c("\xefssen", 76, 1), new c("esquen", 76, 1), new c("isquen", 76, 1), new c("\xefsquen", 76, 1), new c("aven", 76, 1), new c("ixen", 76, 1), new c("eixen", 96, 1), new c("\xefxen", 76, 1), new c("\xefen", 76, 1), new c("in", -1, 1), new c("inin", 100, 1), new c("sin", 100, 1), new c("isin", 102, 1), new c("assin", 102, 1), new c("essin", 102, 1), new c("issin", 102, 1), new c("\xefssin", 102, 1), new c("esquin", 100, 1), new c("eixin", 100, 1), new c("aron", -1, 1), new c("ieron", -1, 1), new c("ar\xe1n", -1, 1), new c("er\xe1n", -1, 1), new c("ir\xe1n", -1, 1), new c("i\xefn", -1, 1), new c("ado", -1, 1), new c("ido", -1, 1), new c("ando", -1, 2), new c("iendo", -1, 1), new c("io", -1, 1), new c("ixo", -1, 1), new c("eixo", 121, 1), new c("\xefxo", -1, 1), new c("itzo", -1, 1), new c("ar", -1, 1), new c("tzar", 125, 1), new c("er", -1, 1), new c("eixer", 127, 1), new c("ir", -1, 1), new c("ador", -1, 1), new c("as", -1, 1), new c("abas", 131, 1), new c("adas", 131, 1), new c("idas", 131, 1), new c("aras", 131, 1), new c("ieras", 131, 1), new c("\xedas", 131, 1), new c("ar\xedas", 137, 1), new c("er\xedas", 137, 1), new c("ir\xedas", 137, 1), new c("ids", -1, 1), new c("es", -1, 1), new c("ades", 142, 1), new c("ides", 142, 1), new c("udes", 142, 1), new c("\xefdes", 142, 1), new c("atges", 142, 1), new c("ies", 142, 1), new c("aries", 148, 1), new c("iries", 148, 1), new c("ares", 142, 1), new c("ires", 142, 1), new c("adores", 142, 1), new c("\xefres", 142, 1), new c("ases", 142, 1), new c("ieses", 142, 1), new c("asses", 142, 1), new c("esses", 142, 1), new c("isses", 142, 1), new c("\xefsses", 142, 1), new c("ques", 142, 1), new c("esques", 161, 1), new c("\xefsques", 161, 1), new c("aves", 142, 1), new c("ixes", 142, 1), new c("eixes", 165, 1), new c("\xefxes", 142, 1), new c("\xefes", 142, 1), new c("abais", -1, 1), new c("arais", -1, 1), new c("ierais", -1, 1), new c("\xedais", -1, 1), new c("ar\xedais", 172, 1), new c("er\xedais", 172, 1), new c("ir\xedais", 172, 1), new c("aseis", -1, 1), new c("ieseis", -1, 1), new c("asteis", -1, 1), new c("isteis", -1, 1), new c("inis", -1, 1), new c("sis", -1, 1), new c("isis", 181, 1), new c("assis", 181, 1), new c("essis", 181, 1), new c("issis", 181, 1), new c("\xefssis", 181, 1), new c("esquis", -1, 1), new c("eixis", -1, 1), new c("itzis", -1, 1), new c("\xe1is", -1, 1), new c("ar\xe9is", -1, 1), new c("er\xe9is", -1, 1), new c("ir\xe9is", -1, 1), new c("ams", -1, 1), new c("ados", -1, 1), new c("idos", -1, 1), new c("amos", -1, 1), new c("\xe1bamos", 197, 1), new c("\xe1ramos", 197, 1), new c("i\xe9ramos", 197, 1), new c("\xedamos", 197, 1), new c("ar\xedamos", 201, 1), new c("er\xedamos", 201, 1), new c("ir\xedamos", 201, 1), new c("aremos", -1, 1), new c("eremos", -1, 1), new c("iremos", -1, 1), new c("\xe1semos", -1, 1), new c("i\xe9semos", -1, 1), new c("imos", -1, 1), new c("adors", -1, 1), new c("ass", -1, 1), new c("erass", 212, 1), new c("ess", -1, 1), new c("ats", -1, 1), new c("its", -1, 1), new c("ents", -1, 1), new c("\xe0s", -1, 1), new c("ar\xe0s", 218, 1), new c("ir\xe0s", 218, 1), new c("ar\xe1s", -1, 1), new c("er\xe1s", -1, 1), new c("ir\xe1s", -1, 1), new c("\xe9s", -1, 1), new c("ar\xe9s", 224, 1), new c("\xeds", -1, 1), new c("i\xefs", -1, 1), new c("at", -1, 1), new c("it", -1, 1), new c("ant", -1, 1), new c("ent", -1, 1), new c("int", -1, 1), new c("ut", -1, 1), new c("\xeft", -1, 1), new c("au", -1, 1), new c("erau", 235, 1), new c("ieu", -1, 1), new c("ineu", -1, 1), new c("areu", -1, 1), new c("ireu", -1, 1), new c("\xe0reu", -1, 1), new c("\xedreu", -1, 1), new c("asseu", -1, 1), new c("esseu", -1, 1), new c("eresseu", 244, 1), new c("\xe0sseu", -1, 1), new c("\xe9sseu", -1, 1), new c("igueu", -1, 1), new c("\xefgueu", -1, 1), new c("\xe0veu", -1, 1), new c("\xe1veu", -1, 1), new c("itzeu", -1, 1), new c("\xeceu", -1, 1), new c("ir\xeceu", 253, 1), new c("\xedeu", -1, 1), new c("ar\xedeu", 255, 1), new c("ir\xedeu", 255, 1), new c("assiu", -1, 1), new c("issiu", -1, 1), new c("\xe0ssiu", -1, 1), new c("\xe8ssiu", -1, 1), new c("\xe9ssiu", -1, 1), new c("\xedssiu", -1, 1), new c("\xefu", -1, 1), new c("ix", -1, 1), new c("eix", 265, 1), new c("\xefx", -1, 1), new c("itz", -1, 1), new c("i\xe0", -1, 1), new c("ar\xe0", -1, 1), new c("ir\xe0", -1, 1), new c("itz\xe0", -1, 1), new c("ar\xe1", -1, 1), new c("er\xe1", -1, 1), new c("ir\xe1", -1, 1), new c("ir\xe8", -1, 1), new c("ar\xe9", -1, 1), new c("er\xe9", -1, 1), new c("ir\xe9", -1, 1), new c("\xed", -1, 1), new c("i\xef", -1, 1), new c("i\xf3", -1, 1)]
+          return delete t.a_3, t.a_3 = [new u("aba", -1, 1), new u("esca", -1, 1), new u("isca", -1, 1), new u("\xefsca", -1, 1), new u("ada", -1, 1), new u("ida", -1, 1), new u("uda", -1, 1), new u("\xefda", -1, 1), new u("ia", -1, 1), new u("aria", 8, 1), new u("iria", 8, 1), new u("ara", -1, 1), new u("iera", -1, 1), new u("ira", -1, 1), new u("adora", -1, 1), new u("\xefra", -1, 1), new u("ava", -1, 1), new u("ixa", -1, 1), new u("itza", -1, 1), new u("\xeda", -1, 1), new u("ar\xeda", 19, 1), new u("er\xeda", 19, 1), new u("ir\xeda", 19, 1), new u("\xefa", -1, 1), new u("isc", -1, 1), new u("\xefsc", -1, 1), new u("ad", -1, 1), new u("ed", -1, 1), new u("id", -1, 1), new u("ie", -1, 1), new u("re", -1, 1), new u("dre", 30, 1), new u("ase", -1, 1), new u("iese", -1, 1), new u("aste", -1, 1), new u("iste", -1, 1), new u("ii", -1, 1), new u("ini", -1, 1), new u("esqui", -1, 1), new u("eixi", -1, 1), new u("itzi", -1, 1), new u("am", -1, 1), new u("em", -1, 1), new u("arem", 42, 1), new u("irem", 42, 1), new u("\xe0rem", 42, 1), new u("\xedrem", 42, 1), new u("\xe0ssem", 42, 1), new u("\xe9ssem", 42, 1), new u("iguem", 42, 1), new u("\xefguem", 42, 1), new u("avem", 42, 1), new u("\xe0vem", 42, 1), new u("\xe1vem", 42, 1), new u("ir\xecem", 42, 1), new u("\xedem", 42, 1), new u("ar\xedem", 55, 1), new u("ir\xedem", 55, 1), new u("assim", -1, 1), new u("essim", -1, 1), new u("issim", -1, 1), new u("\xe0ssim", -1, 1), new u("\xe8ssim", -1, 1), new u("\xe9ssim", -1, 1), new u("\xedssim", -1, 1), new u("\xefm", -1, 1), new u("an", -1, 1), new u("aban", 66, 1), new u("arian", 66, 1), new u("aran", 66, 1), new u("ieran", 66, 1), new u("iran", 66, 1), new u("\xedan", 66, 1), new u("ar\xedan", 72, 1), new u("er\xedan", 72, 1), new u("ir\xedan", 72, 1), new u("en", -1, 1), new u("ien", 76, 1), new u("arien", 77, 1), new u("irien", 77, 1), new u("aren", 76, 1), new u("eren", 76, 1), new u("iren", 76, 1), new u("\xe0ren", 76, 1), new u("\xefren", 76, 1), new u("asen", 76, 1), new u("iesen", 76, 1), new u("assen", 76, 1), new u("essen", 76, 1), new u("issen", 76, 1), new u("\xe9ssen", 76, 1), new u("\xefssen", 76, 1), new u("esquen", 76, 1), new u("isquen", 76, 1), new u("\xefsquen", 76, 1), new u("aven", 76, 1), new u("ixen", 76, 1), new u("eixen", 96, 1), new u("\xefxen", 76, 1), new u("\xefen", 76, 1), new u("in", -1, 1), new u("inin", 100, 1), new u("sin", 100, 1), new u("isin", 102, 1), new u("assin", 102, 1), new u("essin", 102, 1), new u("issin", 102, 1), new u("\xefssin", 102, 1), new u("esquin", 100, 1), new u("eixin", 100, 1), new u("aron", -1, 1), new u("ieron", -1, 1), new u("ar\xe1n", -1, 1), new u("er\xe1n", -1, 1), new u("ir\xe1n", -1, 1), new u("i\xefn", -1, 1), new u("ado", -1, 1), new u("ido", -1, 1), new u("ando", -1, 2), new u("iendo", -1, 1), new u("io", -1, 1), new u("ixo", -1, 1), new u("eixo", 121, 1), new u("\xefxo", -1, 1), new u("itzo", -1, 1), new u("ar", -1, 1), new u("tzar", 125, 1), new u("er", -1, 1), new u("eixer", 127, 1), new u("ir", -1, 1), new u("ador", -1, 1), new u("as", -1, 1), new u("abas", 131, 1), new u("adas", 131, 1), new u("idas", 131, 1), new u("aras", 131, 1), new u("ieras", 131, 1), new u("\xedas", 131, 1), new u("ar\xedas", 137, 1), new u("er\xedas", 137, 1), new u("ir\xedas", 137, 1), new u("ids", -1, 1), new u("es", -1, 1), new u("ades", 142, 1), new u("ides", 142, 1), new u("udes", 142, 1), new u("\xefdes", 142, 1), new u("atges", 142, 1), new u("ies", 142, 1), new u("aries", 148, 1), new u("iries", 148, 1), new u("ares", 142, 1), new u("ires", 142, 1), new u("adores", 142, 1), new u("\xefres", 142, 1), new u("ases", 142, 1), new u("ieses", 142, 1), new u("asses", 142, 1), new u("esses", 142, 1), new u("isses", 142, 1), new u("\xefsses", 142, 1), new u("ques", 142, 1), new u("esques", 161, 1), new u("\xefsques", 161, 1), new u("aves", 142, 1), new u("ixes", 142, 1), new u("eixes", 165, 1), new u("\xefxes", 142, 1), new u("\xefes", 142, 1), new u("abais", -1, 1), new u("arais", -1, 1), new u("ierais", -1, 1), new u("\xedais", -1, 1), new u("ar\xedais", 172, 1), new u("er\xedais", 172, 1), new u("ir\xedais", 172, 1), new u("aseis", -1, 1), new u("ieseis", -1, 1), new u("asteis", -1, 1), new u("isteis", -1, 1), new u("inis", -1, 1), new u("sis", -1, 1), new u("isis", 181, 1), new u("assis", 181, 1), new u("essis", 181, 1), new u("issis", 181, 1), new u("\xefssis", 181, 1), new u("esquis", -1, 1), new u("eixis", -1, 1), new u("itzis", -1, 1), new u("\xe1is", -1, 1), new u("ar\xe9is", -1, 1), new u("er\xe9is", -1, 1), new u("ir\xe9is", -1, 1), new u("ams", -1, 1), new u("ados", -1, 1), new u("idos", -1, 1), new u("amos", -1, 1), new u("\xe1bamos", 197, 1), new u("\xe1ramos", 197, 1), new u("i\xe9ramos", 197, 1), new u("\xedamos", 197, 1), new u("ar\xedamos", 201, 1), new u("er\xedamos", 201, 1), new u("ir\xedamos", 201, 1), new u("aremos", -1, 1), new u("eremos", -1, 1), new u("iremos", -1, 1), new u("\xe1semos", -1, 1), new u("i\xe9semos", -1, 1), new u("imos", -1, 1), new u("adors", -1, 1), new u("ass", -1, 1), new u("erass", 212, 1), new u("ess", -1, 1), new u("ats", -1, 1), new u("its", -1, 1), new u("ents", -1, 1), new u("\xe0s", -1, 1), new u("ar\xe0s", 218, 1), new u("ir\xe0s", 218, 1), new u("ar\xe1s", -1, 1), new u("er\xe1s", -1, 1), new u("ir\xe1s", -1, 1), new u("\xe9s", -1, 1), new u("ar\xe9s", 224, 1), new u("\xeds", -1, 1), new u("i\xefs", -1, 1), new u("at", -1, 1), new u("it", -1, 1), new u("ant", -1, 1), new u("ent", -1, 1), new u("int", -1, 1), new u("ut", -1, 1), new u("\xeft", -1, 1), new u("au", -1, 1), new u("erau", 235, 1), new u("ieu", -1, 1), new u("ineu", -1, 1), new u("areu", -1, 1), new u("ireu", -1, 1), new u("\xe0reu", -1, 1), new u("\xedreu", -1, 1), new u("asseu", -1, 1), new u("esseu", -1, 1), new u("eresseu", 244, 1), new u("\xe0sseu", -1, 1), new u("\xe9sseu", -1, 1), new u("igueu", -1, 1), new u("\xefgueu", -1, 1), new u("\xe0veu", -1, 1), new u("\xe1veu", -1, 1), new u("itzeu", -1, 1), new u("\xeceu", -1, 1), new u("ir\xeceu", 253, 1), new u("\xedeu", -1, 1), new u("ar\xedeu", 255, 1), new u("ir\xedeu", 255, 1), new u("assiu", -1, 1), new u("issiu", -1, 1), new u("\xe0ssiu", -1, 1), new u("\xe8ssiu", -1, 1), new u("\xe9ssiu", -1, 1), new u("\xedssiu", -1, 1), new u("\xefu", -1, 1), new u("ix", -1, 1), new u("eix", 265, 1), new u("\xefx", -1, 1), new u("itz", -1, 1), new u("i\xe0", -1, 1), new u("ar\xe0", -1, 1), new u("ir\xe0", -1, 1), new u("itz\xe0", -1, 1), new u("ar\xe1", -1, 1), new u("er\xe1", -1, 1), new u("ir\xe1", -1, 1), new u("ir\xe8", -1, 1), new u("ar\xe9", -1, 1), new u("er\xe9", -1, 1), new u("ir\xe9", -1, 1), new u("\xed", -1, 1), new u("i\xef", -1, 1), new u("i\xf3", -1, 1)]
         }
       }, {
         key: "a_4",
         get: function() {
-          return delete n.a_4, n.a_4 = [new c("a", -1, 1), new c("e", -1, 1), new c("i", -1, 1), new c("\xefn", -1, 1), new c("o", -1, 1), new c("ir", -1, 1), new c("s", -1, 1), new c("is", 6, 1), new c("os", 6, 1), new c("\xefs", 6, 1), new c("it", -1, 1), new c("eu", -1, 1), new c("iu", -1, 1), new c("iqu", -1, 2), new c("itz", -1, 1), new c("\xe0", -1, 1), new c("\xe1", -1, 1), new c("\xe9", -1, 1), new c("\xec", -1, 1), new c("\xed", -1, 1), new c("\xef", -1, 1), new c("\xf3", -1, 1)]
+          return delete t.a_4, t.a_4 = [new u("a", -1, 1), new u("e", -1, 1), new u("i", -1, 1), new u("\xefn", -1, 1), new u("o", -1, 1), new u("ir", -1, 1), new u("s", -1, 1), new u("is", 6, 1), new u("os", 6, 1), new u("\xefs", 6, 1), new u("it", -1, 1), new u("eu", -1, 1), new u("iu", -1, 1), new u("iqu", -1, 2), new u("itz", -1, 1), new u("\xe0", -1, 1), new u("\xe1", -1, 1), new u("\xe9", -1, 1), new u("\xec", -1, 1), new u("\xed", -1, 1), new u("\xef", -1, 1), new u("\xf3", -1, 1)]
         }
       }, {
         key: "g_v",
         get: function() {
-          return delete n.g_v, n.g_v = [17, 65, 16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 128, 129, 81, 6, 10]
+          return delete t.g_v, t.g_v = [17, 65, 16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 128, 129, 81, 6, 10]
         }
-      }]), n
-    }(u),
-    h = function(e) {
-      function n() {
-        return i(this, n), t(this, Object.getPrototypeOf(n).apply(this, arguments))
+      }]), t
+    }(c),
+    v = function(e) {
+      function t() {
+        return r(this, t), i(this, Object.getPrototypeOf(t).apply(this, arguments))
       }
-      return r(n, e), a(n, [{
+      return s(t, e), a(t, [{
         key: "r_mark_regions$esjava$0",
         value: function() {
           var e = void 0;
           this.I_pV = this.limit, this.I_p1 = this.limit, e = this.cursor;
-          l: do {
-            A: for (;;) {
+          e: do {
+            d: for (;;) {
               do {
-                if (!this.out_grouping$esjava$3(n.g_v, 97, 367)) break;
-                break A
+                if (!this.out_grouping$esjava$3(t.g_v, 97, 367)) break;
+                break d
               } while (!1);
-              if (this.cursor >= this.limit) break l;
+              if (this.cursor >= this.limit) break e;
               this.cursor++
             }
-            this.I_pV = this.cursor;N: for (;;) {
+            this.I_pV = this.cursor;b: for (;;) {
               do {
-                if (!this.out_grouping$esjava$3(n.g_v, 97, 367)) break;
-                break N
+                if (!this.out_grouping$esjava$3(t.g_v, 97, 367)) break;
+                break b
               } while (!1);
-              if (this.cursor >= this.limit) break l;
+              if (this.cursor >= this.limit) break e;
               this.cursor++
             }
-            C: for (;;) {
+            m: for (;;) {
               do {
-                if (!this.in_grouping$esjava$3(n.g_v, 97, 367)) break;
-                break C
+                if (!this.in_grouping$esjava$3(t.g_v, 97, 367)) break;
+                break m
               } while (!1);
-              if (this.cursor >= this.limit) break l;
+              if (this.cursor >= this.limit) break e;
               this.cursor++
             }
             this.I_p1 = this.cursor
@@ -2229,7 +2261,7 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "r_palatalise$esjava$0",
         value: function() {
           var e = void 0;
-          if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(n.a_0)) || (this.bra = this.cursor, !this.r_RV$esjava$0())) return !1;
+          if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(t.a_0)) || (this.bra = this.cursor, !this.r_RV$esjava$0())) return !1;
           switch (e) {
             case 0:
               return !1;
@@ -2251,8 +2283,8 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "r_do_possessive$esjava$0",
         value: function() {
           var e = void 0,
-            t = void 0;
-          if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(n.a_1)) || (this.bra = this.cursor, !this.r_RV$esjava$0())) return !1;
+            i = void 0;
+          if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(t.a_1)) || (this.bra = this.cursor, !this.r_RV$esjava$0())) return !1;
           switch (e) {
             case 0:
               return !1;
@@ -2260,10 +2292,10 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
               this.slice_del$esjava$0();
               break;
             case 2:
-              this.slice_del$esjava$0(), t = this.limit - this.cursor;
+              this.slice_del$esjava$0(), i = this.limit - this.cursor;
               do
                 if (!this.r_palatalise$esjava$0()) {
-                  this.cursor = this.limit - t;
+                  this.cursor = this.limit - i;
                   break
                 } while (!1)
           }
@@ -2273,9 +2305,9 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "r_do_case$esjava$0",
         value: function() {
           var e = void 0,
-            t = void 0,
-            r = void 0;
-          if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(n.a_2))) return !1;
+            i = void 0,
+            s = void 0;
+          if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(t.a_2))) return !1;
           switch (this.bra = this.cursor, e) {
             case 0:
               return !1;
@@ -2283,18 +2315,18 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
               this.slice_del$esjava$0();
               break;
             case 2:
-              this.slice_del$esjava$0(), t = this.limit - this.cursor;
+              this.slice_del$esjava$0(), i = this.limit - this.cursor;
               do
                 if (!this.r_palatalise$esjava$0()) {
-                  this.cursor = this.limit - t;
+                  this.cursor = this.limit - i;
                   break
                 } while (!1);
               break;
             case 3:
-              this.slice_from$esjava$1("e"), r = this.limit - this.cursor;
+              this.slice_from$esjava$1("e"), s = this.limit - this.cursor;
               do
                 if (!this.r_palatalise$esjava$0()) {
-                  this.cursor = this.limit - r;
+                  this.cursor = this.limit - s;
                   break
                 } while (!1)
           }
@@ -2304,7 +2336,7 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "r_do_derivational$esjava$0",
         value: function() {
           var e = void 0;
-          if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(n.a_3)) || (this.bra = this.cursor, !this.r_R1$esjava$0())) return !1;
+          if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(t.a_3)) || (this.bra = this.cursor, !this.r_R1$esjava$0())) return !1;
           switch (e) {
             case 0:
               return !1;
@@ -2332,7 +2364,7 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "r_do_deriv_single$esjava$0",
         value: function() {
           var e = void 0;
-          if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(n.a_4))) return !1;
+          if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(t.a_4))) return !1;
           switch (this.bra = this.cursor, e) {
             case 0:
               return !1;
@@ -2345,7 +2377,7 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "r_do_augmentative$esjava$0",
         value: function() {
           var e = void 0;
-          if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(n.a_5))) return !1;
+          if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(t.a_5))) return !1;
           switch (this.bra = this.cursor, e) {
             case 0:
               return !1;
@@ -2361,7 +2393,7 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "r_do_diminutive$esjava$0",
         value: function() {
           var e = void 0;
-          if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(n.a_6))) return !1;
+          if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(t.a_6))) return !1;
           switch (this.bra = this.cursor, e) {
             case 0:
               return !1;
@@ -2398,7 +2430,7 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "r_do_comparative$esjava$0",
         value: function() {
           var e = void 0;
-          if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(n.a_7))) return !1;
+          if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(t.a_7))) return !1;
           switch (this.bra = this.cursor, e) {
             case 0:
               return !1;
@@ -2414,26 +2446,26 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "r_do_aggressive$esjava$0",
         value: function() {
           var e = void 0,
-            t = void 0,
-            n = void 0,
-            r = void 0;
+            i = void 0,
+            s = void 0,
+            t = void 0;
           e = this.limit - this.cursor;
           do
             if (!this.r_do_comparative$esjava$0()) break; while (!1);
-          this.cursor = this.limit - e, t = this.limit - this.cursor;
+          this.cursor = this.limit - e, i = this.limit - this.cursor;
           do
             if (!this.r_do_diminutive$esjava$0()) break; while (!1);
-          this.cursor = this.limit - t, n = this.limit - this.cursor;
+          this.cursor = this.limit - i, s = this.limit - this.cursor;
           do
             if (!this.r_do_augmentative$esjava$0()) break; while (!1);
-          this.cursor = this.limit - n;
-          d: do {
-            r = this.limit - this.cursor;
+          this.cursor = this.limit - s;
+          t: do {
+            t = this.limit - this.cursor;
             do {
               if (!this.r_do_derivational$esjava$0()) break;
-              break d
+              break t
             } while (!1);
-            if (this.cursor = this.limit - r, !this.r_do_deriv_single$esjava$0()) return !1
+            if (this.cursor = this.limit - t, !this.r_do_deriv_single$esjava$0()) return !1
           } while (!1);
           return !0
         }
@@ -2449,8 +2481,8 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
       }, {
         key: "stem",
         value: function() {
-          for (var e, t = arguments.length, r = Array(t), i = 0; i < t; i++) r[i] = arguments[i];
-          return 0 === r.length ? this.stem$esjava$0.apply(this, r) : (e = o(Object.getPrototypeOf(n.prototype), "stem", this)).call.apply(e, [this].concat(r))
+          for (var e, i = arguments.length, s = Array(i), r = 0; r < i; r++) s[r] = arguments[r];
+          return 0 === s.length ? this.stem$esjava$0.apply(this, s) : (e = n(Object.getPrototypeOf(t.prototype), "stem", this)).call.apply(e, [this].concat(s))
         }
       }, {
         key: "I_p1",
@@ -2471,77 +2503,77 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
       }], [{
         key: "a_0",
         get: function() {
-          return delete n.a_0, n.a_0 = [new c("ce", -1, 1), new c("ze", -1, 2), new c("že", -1, 2), new c("ci", -1, 1), new c("čti", -1, 3), new c("šti", -1, 4), new c("zi", -1, 2), new c("či", -1, 1), new c("ži", -1, 2), new c("čt\xe9", -1, 3), new c("št\xe9", -1, 4), new c("č", -1, 1), new c("čtě", -1, 3), new c("ště", -1, 4)]
+          return delete t.a_0, t.a_0 = [new u("ce", -1, 1), new u("ze", -1, 2), new u("že", -1, 2), new u("ci", -1, 1), new u("čti", -1, 3), new u("šti", -1, 4), new u("zi", -1, 2), new u("či", -1, 1), new u("ži", -1, 2), new u("čt\xe9", -1, 3), new u("št\xe9", -1, 4), new u("č", -1, 1), new u("čtě", -1, 3), new u("ště", -1, 4)]
         }
       }, {
         key: "a_1",
         get: function() {
-          return delete n.a_1, n.a_1 = [new c("in", -1, 2), new c("ov", -1, 1), new c("ův", -1, 1)]
+          return delete t.a_1, t.a_1 = [new u("in", -1, 2), new u("ov", -1, 1), new u("ův", -1, 1)]
         }
       }, {
         key: "a_2",
         get: function() {
-          return delete n.a_2, n.a_2 = [new c("a", -1, 1), new c("ama", 0, 1), new c("ata", 0, 1), new c("e", -1, 2), new c("ěte", 3, 2), new c("ech", -1, 2), new c("atech", 5, 1), new c("ich", -1, 2), new c("\xe1ch", -1, 1), new c("\xedch", -1, 2), new c("\xfdch", -1, 1), new c("i", -1, 2), new c("mi", 11, 1), new c("ami", 12, 1), new c("emi", 12, 2), new c("\xedmi", 12, 2), new c("\xfdmi", 12, 1), new c("ěmi", 12, 2), new c("ěti", 11, 2), new c("ovi", 11, 1), new c("em", -1, 3), new c("ětem", 20, 1), new c("\xe1m", -1, 1), new c("\xe9m", -1, 2), new c("\xedm", -1, 2), new c("\xfdm", -1, 1), new c("atům", -1, 1), new c("o", -1, 1), new c("iho", 27, 2), new c("\xe9ho", 27, 2), new c("\xedho", 27, 2), new c("es", -1, 2), new c("os", -1, 1), new c("us", -1, 1), new c("at", -1, 1), new c("u", -1, 1), new c("imu", 35, 2), new c("\xe9mu", 35, 2), new c("ou", 35, 1), new c("y", -1, 1), new c("aty", 39, 1), new c("\xe1", -1, 1), new c("\xe9", -1, 1), new c("ov\xe9", 42, 1), new c("\xed", -1, 2), new c("\xfd", -1, 1), new c("ě", -1, 2), new c("ů", -1, 1)]
+          return delete t.a_2, t.a_2 = [new u("a", -1, 1), new u("ama", 0, 1), new u("ata", 0, 1), new u("e", -1, 2), new u("ěte", 3, 2), new u("ech", -1, 2), new u("atech", 5, 1), new u("ich", -1, 2), new u("\xe1ch", -1, 1), new u("\xedch", -1, 2), new u("\xfdch", -1, 1), new u("i", -1, 2), new u("mi", 11, 1), new u("ami", 12, 1), new u("emi", 12, 2), new u("\xedmi", 12, 2), new u("\xfdmi", 12, 1), new u("ěmi", 12, 2), new u("ěti", 11, 2), new u("ovi", 11, 1), new u("em", -1, 3), new u("ětem", 20, 1), new u("\xe1m", -1, 1), new u("\xe9m", -1, 2), new u("\xedm", -1, 2), new u("\xfdm", -1, 1), new u("atům", -1, 1), new u("o", -1, 1), new u("iho", 27, 2), new u("\xe9ho", 27, 2), new u("\xedho", 27, 2), new u("es", -1, 2), new u("os", -1, 1), new u("us", -1, 1), new u("at", -1, 1), new u("u", -1, 1), new u("imu", 35, 2), new u("\xe9mu", 35, 2), new u("ou", 35, 1), new u("y", -1, 1), new u("aty", 39, 1), new u("\xe1", -1, 1), new u("\xe9", -1, 1), new u("ov\xe9", 42, 1), new u("\xed", -1, 2), new u("\xfd", -1, 1), new u("ě", -1, 2), new u("ů", -1, 1)]
         }
       }, {
         key: "a_3",
         get: function() {
-          return delete n.a_3, n.a_3 = [new c("ob", -1, 1), new c("itb", -1, 2), new c("ec", -1, 3), new c("inec", 2, 2), new c("obinec", 3, 1), new c("ovec", 2, 1), new c("ic", -1, 2), new c("enic", 6, 3), new c("och", -1, 1), new c("\xe1sek", -1, 1), new c("nk", -1, 1), new c("isk", -1, 2), new c("ovisk", 11, 1), new c("tk", -1, 1), new c("vk", -1, 1), new c("n\xedk", -1, 1), new c("ovn\xedk", 15, 1), new c("ov\xedk", -1, 1), new c("čk", -1, 1), new c("išk", -1, 2), new c("ušk", -1, 1), new c("dl", -1, 1), new c("itel", -1, 2), new c("ul", -1, 1), new c("an", -1, 1), new c("čan", 24, 1), new c("en", -1, 3), new c("in", -1, 2), new c("štin", 27, 1), new c("ovin", 27, 1), new c("teln", -1, 1), new c("\xe1rn", -1, 1), new c("\xedrn", -1, 6), new c("oun", -1, 1), new c("loun", 33, 1), new c("ovn", -1, 1), new c("yn", -1, 1), new c("kyn", 36, 1), new c("\xe1n", -1, 1), new c("i\xe1n", 38, 2), new c("\xedn", -1, 6), new c("čn", -1, 1), new c("ěn", -1, 5), new c("as", -1, 1), new c("it", -1, 2), new c("ot", -1, 1), new c("ist", -1, 2), new c("ost", -1, 1), new c("nost", 47, 1), new c("out", -1, 1), new c("ovišt", -1, 1), new c("iv", -1, 2), new c("ov", -1, 1), new c("tv", -1, 1), new c("ctv", 53, 1), new c("stv", 53, 1), new c("ovstv", 55, 1), new c("ovtv", 53, 1), new c("ač", -1, 1), new c("\xe1č", -1, 1), new c("oň", -1, 1), new c("\xe1ř", -1, 1), new c("k\xe1ř", 61, 1), new c("ion\xe1ř", 61, 2), new c("\xe9ř", -1, 4), new c("n\xe9ř", 64, 1), new c("\xedř", -1, 6), new c("ouš", -1, 1)]
+          return delete t.a_3, t.a_3 = [new u("ob", -1, 1), new u("itb", -1, 2), new u("ec", -1, 3), new u("inec", 2, 2), new u("obinec", 3, 1), new u("ovec", 2, 1), new u("ic", -1, 2), new u("enic", 6, 3), new u("och", -1, 1), new u("\xe1sek", -1, 1), new u("nk", -1, 1), new u("isk", -1, 2), new u("ovisk", 11, 1), new u("tk", -1, 1), new u("vk", -1, 1), new u("n\xedk", -1, 1), new u("ovn\xedk", 15, 1), new u("ov\xedk", -1, 1), new u("čk", -1, 1), new u("išk", -1, 2), new u("ušk", -1, 1), new u("dl", -1, 1), new u("itel", -1, 2), new u("ul", -1, 1), new u("an", -1, 1), new u("čan", 24, 1), new u("en", -1, 3), new u("in", -1, 2), new u("štin", 27, 1), new u("ovin", 27, 1), new u("teln", -1, 1), new u("\xe1rn", -1, 1), new u("\xedrn", -1, 6), new u("oun", -1, 1), new u("loun", 33, 1), new u("ovn", -1, 1), new u("yn", -1, 1), new u("kyn", 36, 1), new u("\xe1n", -1, 1), new u("i\xe1n", 38, 2), new u("\xedn", -1, 6), new u("čn", -1, 1), new u("ěn", -1, 5), new u("as", -1, 1), new u("it", -1, 2), new u("ot", -1, 1), new u("ist", -1, 2), new u("ost", -1, 1), new u("nost", 47, 1), new u("out", -1, 1), new u("ovišt", -1, 1), new u("iv", -1, 2), new u("ov", -1, 1), new u("tv", -1, 1), new u("ctv", 53, 1), new u("stv", 53, 1), new u("ovstv", 55, 1), new u("ovtv", 53, 1), new u("ač", -1, 1), new u("\xe1č", -1, 1), new u("oň", -1, 1), new u("\xe1ř", -1, 1), new u("k\xe1ř", 61, 1), new u("ion\xe1ř", 61, 2), new u("\xe9ř", -1, 4), new u("n\xe9ř", 64, 1), new u("\xedř", -1, 6), new u("ouš", -1, 1)]
         }
       }, {
         key: "a_4",
         get: function() {
-          return delete n.a_4, n.a_4 = [new c("c", -1, 1), new c("k", -1, 1), new c("l", -1, 1), new c("n", -1, 1), new c("t", -1, 1), new c("č", -1, 1)]
+          return delete t.a_4, t.a_4 = [new u("c", -1, 1), new u("k", -1, 1), new u("l", -1, 1), new u("n", -1, 1), new u("t", -1, 1), new u("č", -1, 1)]
         }
       }, {
         key: "a_5",
         get: function() {
-          return delete n.a_5, n.a_5 = [new c("isk", -1, 2), new c("\xe1k", -1, 1), new c("izn", -1, 2), new c("ajzn", -1, 1)]
+          return delete t.a_5, t.a_5 = [new u("isk", -1, 2), new u("\xe1k", -1, 1), new u("izn", -1, 2), new u("ajzn", -1, 1)]
         }
       }, {
         key: "a_6",
         get: function() {
-          return delete n.a_6, n.a_6 = [new c("k", -1, 1), new c("ak", 0, 7), new c("ek", 0, 2), new c("anek", 2, 1), new c("enek", 2, 2), new c("inek", 2, 4), new c("onek", 2, 1), new c("unek", 2, 1), new c("\xe1nek", 2, 1), new c("aček", 2, 1), new c("eček", 2, 2), new c("iček", 2, 4), new c("oček", 2, 1), new c("uček", 2, 1), new c("\xe1ček", 2, 1), new c("\xe9ček", 2, 3), new c("\xedček", 2, 5), new c("oušek", 2, 1), new c("ik", 0, 4), new c("ank", 0, 1), new c("enk", 0, 1), new c("ink", 0, 1), new c("onk", 0, 1), new c("unk", 0, 1), new c("\xe1nk", 0, 1), new c("\xe9nk", 0, 1), new c("\xednk", 0, 1), new c("ok", 0, 8), new c("\xe1tk", 0, 1), new c("uk", 0, 9), new c("\xe1k", 0, 6), new c("\xe9k", 0, 3), new c("\xedk", 0, 5), new c("ačk", 0, 1), new c("ečk", 0, 1), new c("ičk", 0, 1), new c("očk", 0, 1), new c("učk", 0, 1), new c("\xe1čk", 0, 1), new c("\xe9čk", 0, 1), new c("\xedčk", 0, 1), new c("ušk", 0, 1)]
+          return delete t.a_6, t.a_6 = [new u("k", -1, 1), new u("ak", 0, 7), new u("ek", 0, 2), new u("anek", 2, 1), new u("enek", 2, 2), new u("inek", 2, 4), new u("onek", 2, 1), new u("unek", 2, 1), new u("\xe1nek", 2, 1), new u("aček", 2, 1), new u("eček", 2, 2), new u("iček", 2, 4), new u("oček", 2, 1), new u("uček", 2, 1), new u("\xe1ček", 2, 1), new u("\xe9ček", 2, 3), new u("\xedček", 2, 5), new u("oušek", 2, 1), new u("ik", 0, 4), new u("ank", 0, 1), new u("enk", 0, 1), new u("ink", 0, 1), new u("onk", 0, 1), new u("unk", 0, 1), new u("\xe1nk", 0, 1), new u("\xe9nk", 0, 1), new u("\xednk", 0, 1), new u("ok", 0, 8), new u("\xe1tk", 0, 1), new u("uk", 0, 9), new u("\xe1k", 0, 6), new u("\xe9k", 0, 3), new u("\xedk", 0, 5), new u("ačk", 0, 1), new u("ečk", 0, 1), new u("ičk", 0, 1), new u("očk", 0, 1), new u("učk", 0, 1), new u("\xe1čk", 0, 1), new u("\xe9čk", 0, 1), new u("\xedčk", 0, 1), new u("ušk", 0, 1)]
         }
       }, {
         key: "a_7",
         get: function() {
-          return delete n.a_7, n.a_7 = [new c("ejš", -1, 2), new c("ějš", -1, 1)]
+          return delete t.a_7, t.a_7 = [new u("ejš", -1, 2), new u("ějš", -1, 1)]
         }
       }, {
         key: "g_v",
         get: function() {
-          return delete n.g_v, n.g_v = [17, 65, 16, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 17, 4, 18, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 64]
+          return delete t.g_v, t.g_v = [17, 65, 16, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 17, 4, 18, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 64]
         }
-      }]), n
-    }(u),
-    m = function(e) {
-      function n() {
-        return i(this, n), t(this, Object.getPrototypeOf(n).apply(this, arguments))
+      }]), t
+    }(c),
+    f = function(e) {
+      function t() {
+        return r(this, t), i(this, Object.getPrototypeOf(t).apply(this, arguments))
       }
-      return r(n, e), a(n, [{
+      return s(t, e), a(t, [{
         key: "r_mark_regions$esjava$0",
         value: function() {
           var e = void 0,
-            t = void 0;
+            i = void 0;
           this.I_p1 = this.limit, e = this.cursor;
-          var r = this.cursor + 3;
-          if (0 > r || r > this.limit) return !1;
-          this.cursor = r, this.I_x = this.cursor, this.cursor = e;
-          B: for (;;) {
-            t = this.cursor;
+          var s = this.cursor + 3;
+          if (0 > s || s > this.limit) return !1;
+          this.cursor = s, this.I_x = this.cursor, this.cursor = e;
+          V: for (;;) {
+            i = this.cursor;
             do {
-              if (!this.in_grouping$esjava$3(n.g_v, 97, 248)) break;
-              this.cursor = t;
-              break B
+              if (!this.in_grouping$esjava$3(t.g_v, 97, 248)) break;
+              this.cursor = i;
+              break V
             } while (!1);
-            if (this.cursor = t, this.cursor >= this.limit) return !1;
+            if (this.cursor = i, this.cursor >= this.limit) return !1;
             this.cursor++
           }
-          Z: for (;;) {
+          S: for (;;) {
             do {
-              if (!this.out_grouping$esjava$3(n.g_v, 97, 248)) break;
-              break Z
+              if (!this.out_grouping$esjava$3(t.g_v, 97, 248)) break;
+              break S
             } while (!1);
             if (this.cursor >= this.limit) return !1;
             this.cursor++
@@ -2557,18 +2589,18 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "r_main_suffix$esjava$0",
         value: function() {
           var e = void 0,
-            t = void 0,
-            r = void 0;
-          if (t = this.limit - this.cursor, this.cursor < this.I_p1) return !1;
-          if (this.cursor = this.I_p1, r = this.limit_backward, this.limit_backward = this.cursor, this.cursor = this.limit - t, this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(n.a_0))) return this.limit_backward = r, !1;
-          switch (this.bra = this.cursor, this.limit_backward = r, e) {
+            i = void 0,
+            s = void 0;
+          if (i = this.limit - this.cursor, this.cursor < this.I_p1) return !1;
+          if (this.cursor = this.I_p1, s = this.limit_backward, this.limit_backward = this.cursor, this.cursor = this.limit - i, this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(t.a_0))) return this.limit_backward = s, !1;
+          switch (this.bra = this.cursor, this.limit_backward = s, e) {
             case 0:
               return !1;
             case 1:
               this.slice_del$esjava$0();
               break;
             case 2:
-              if (!this.in_grouping_b$esjava$3(n.g_s_ending, 97, 229)) return !1;
+              if (!this.in_grouping_b$esjava$3(t.g_s_ending, 97, 229)) return !1;
               this.slice_del$esjava$0()
           }
           return !0
@@ -2577,26 +2609,26 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "r_consonant_pair$esjava$0",
         value: function() {
           var e = void 0,
-            t = void 0,
-            r = void 0;
-          return e = this.limit - this.cursor, t = this.limit - this.cursor, !(this.cursor < this.I_p1) && ((this.cursor = this.I_p1, r = this.limit_backward, this.limit_backward = this.cursor, this.cursor = this.limit - t, this.ket = this.cursor, 0 === this.find_among_b$esjava$1(n.a_1)) ? (this.limit_backward = r, !1) : (this.bra = this.cursor, this.limit_backward = r, this.cursor = this.limit - e, !(this.cursor <= this.limit_backward) && (this.cursor--, this.bra = this.cursor, this.slice_del$esjava$0(), !0)))
+            i = void 0,
+            s = void 0;
+          return e = this.limit - this.cursor, i = this.limit - this.cursor, !(this.cursor < this.I_p1) && ((this.cursor = this.I_p1, s = this.limit_backward, this.limit_backward = this.cursor, this.cursor = this.limit - i, this.ket = this.cursor, 0 === this.find_among_b$esjava$1(t.a_1)) ? (this.limit_backward = s, !1) : (this.bra = this.cursor, this.limit_backward = s, this.cursor = this.limit - e, !(this.cursor <= this.limit_backward) && (this.cursor--, this.bra = this.cursor, this.slice_del$esjava$0(), !0)))
         }
       }, {
         key: "r_other_suffix$esjava$0",
         value: function() {
           var e = void 0,
-            t = void 0,
-            r = void 0,
             i = void 0,
+            s = void 0,
+            r = void 0,
             a = void 0;
-          t = this.limit - this.cursor;
+          i = this.limit - this.cursor;
           do {
             if (this.ket = this.cursor, !this.eq_s_b$esjava$1("st") || (this.bra = this.cursor, !this.eq_s_b$esjava$1("ig"))) break;
             this.slice_del$esjava$0()
           } while (!1);
-          if (this.cursor = this.limit - t, r = this.limit - this.cursor, this.cursor < this.I_p1) return !1;
-          if (this.cursor = this.I_p1, i = this.limit_backward, this.limit_backward = this.cursor, this.cursor = this.limit - r, this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(n.a_2))) return this.limit_backward = i, !1;
-          switch (this.bra = this.cursor, this.limit_backward = i, e) {
+          if (this.cursor = this.limit - i, s = this.limit - this.cursor, this.cursor < this.I_p1) return !1;
+          if (this.cursor = this.I_p1, r = this.limit_backward, this.limit_backward = this.cursor, this.cursor = this.limit - s, this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(t.a_2))) return this.limit_backward = r, !1;
+          switch (this.bra = this.cursor, this.limit_backward = r, e) {
             case 0:
               return !1;
             case 1:
@@ -2614,39 +2646,39 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "r_undouble$esjava$0",
         value: function() {
           var e = void 0,
-            t = void 0;
-          return e = this.limit - this.cursor, !(this.cursor < this.I_p1) && ((this.cursor = this.I_p1, t = this.limit_backward, this.limit_backward = this.cursor, this.cursor = this.limit - e, this.ket = this.cursor, this.out_grouping_b$esjava$3(n.g_v, 97, 248)) ? (this.bra = this.cursor, this.S_ch = this.slice_to$esjava$1(this.S_ch), this.limit_backward = t, !!this.eq_s_b$esjava$1(this.S_ch.toString()) && (this.slice_del$esjava$0(), !0)) : (this.limit_backward = t, !1))
+            i = void 0;
+          return e = this.limit - this.cursor, !(this.cursor < this.I_p1) && ((this.cursor = this.I_p1, i = this.limit_backward, this.limit_backward = this.cursor, this.cursor = this.limit - e, this.ket = this.cursor, this.out_grouping_b$esjava$3(t.g_v, 97, 248)) ? (this.bra = this.cursor, this.S_ch = this.slice_to$esjava$1(this.S_ch), this.limit_backward = i, !!this.eq_s_b$esjava$1(this.S_ch.toString()) && (this.slice_del$esjava$0(), !0)) : (this.limit_backward = i, !1))
         }
       }, {
         key: "stem$esjava$0",
         value: function() {
           var e = void 0,
+            i = void 0,
+            s = void 0,
             t = void 0,
-            n = void 0,
-            r = void 0,
-            i = void 0;
+            r = void 0;
           e = this.cursor;
           do
             if (!this.r_mark_regions$esjava$0()) break; while (!1);
-          this.cursor = e, this.limit_backward = this.cursor, this.cursor = this.limit, t = this.limit - this.cursor;
+          this.cursor = e, this.limit_backward = this.cursor, this.cursor = this.limit, i = this.limit - this.cursor;
           do
             if (!this.r_main_suffix$esjava$0()) break; while (!1);
-          this.cursor = this.limit - t, n = this.limit - this.cursor;
+          this.cursor = this.limit - i, s = this.limit - this.cursor;
           do
             if (!this.r_consonant_pair$esjava$0()) break; while (!1);
-          this.cursor = this.limit - n, r = this.limit - this.cursor;
+          this.cursor = this.limit - s, t = this.limit - this.cursor;
           do
             if (!this.r_other_suffix$esjava$0()) break; while (!1);
-          this.cursor = this.limit - r, i = this.limit - this.cursor;
+          this.cursor = this.limit - t, r = this.limit - this.cursor;
           do
             if (!this.r_undouble$esjava$0()) break; while (!1);
-          return this.cursor = this.limit - i, this.cursor = this.limit_backward, !0
+          return this.cursor = this.limit - r, this.cursor = this.limit_backward, !0
         }
       }, {
         key: "stem",
         value: function() {
-          for (var e, t = arguments.length, r = Array(t), i = 0; i < t; i++) r[i] = arguments[i];
-          return 0 === r.length ? this.stem$esjava$0.apply(this, r) : (e = o(Object.getPrototypeOf(n.prototype), "stem", this)).call.apply(e, [this].concat(r))
+          for (var e, i = arguments.length, s = Array(i), r = 0; r < i; r++) s[r] = arguments[r];
+          return 0 === s.length ? this.stem$esjava$0.apply(this, s) : (e = n(Object.getPrototypeOf(t.prototype), "stem", this)).call.apply(e, [this].concat(s))
         }
       }, {
         key: "I_x",
@@ -2667,7 +2699,7 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
       }, {
         key: "S_ch",
         get: function() {
-          return Object.prototype.hasOwnProperty.call(this, "_$esjava$S_ch") ? this._$esjava$S_ch : this._$esjava$S_ch = new l
+          return Object.prototype.hasOwnProperty.call(this, "_$esjava$S_ch") ? this._$esjava$S_ch : this._$esjava$S_ch = new o
         },
         set: function(e) {
           this._$esjava$S_ch = e
@@ -2675,52 +2707,52 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
       }], [{
         key: "a_0",
         get: function() {
-          return delete n.a_0, n.a_0 = [new c("hed", -1, 1), new c("ethed", 0, 1), new c("ered", -1, 1), new c("e", -1, 1), new c("erede", 3, 1), new c("ende", 3, 1), new c("erende", 5, 1), new c("ene", 3, 1), new c("erne", 3, 1), new c("ere", 3, 1), new c("en", -1, 1), new c("heden", 10, 1), new c("eren", 10, 1), new c("er", -1, 1), new c("heder", 13, 1), new c("erer", 13, 1), new c("s", -1, 2), new c("heds", 16, 1), new c("es", 16, 1), new c("endes", 18, 1), new c("erendes", 19, 1), new c("enes", 18, 1), new c("ernes", 18, 1), new c("eres", 18, 1), new c("ens", 16, 1), new c("hedens", 24, 1), new c("erens", 24, 1), new c("ers", 16, 1), new c("ets", 16, 1), new c("erets", 28, 1), new c("et", -1, 1), new c("eret", 30, 1)]
+          return delete t.a_0, t.a_0 = [new u("hed", -1, 1), new u("ethed", 0, 1), new u("ered", -1, 1), new u("e", -1, 1), new u("erede", 3, 1), new u("ende", 3, 1), new u("erende", 5, 1), new u("ene", 3, 1), new u("erne", 3, 1), new u("ere", 3, 1), new u("en", -1, 1), new u("heden", 10, 1), new u("eren", 10, 1), new u("er", -1, 1), new u("heder", 13, 1), new u("erer", 13, 1), new u("s", -1, 2), new u("heds", 16, 1), new u("es", 16, 1), new u("endes", 18, 1), new u("erendes", 19, 1), new u("enes", 18, 1), new u("ernes", 18, 1), new u("eres", 18, 1), new u("ens", 16, 1), new u("hedens", 24, 1), new u("erens", 24, 1), new u("ers", 16, 1), new u("ets", 16, 1), new u("erets", 28, 1), new u("et", -1, 1), new u("eret", 30, 1)]
         }
       }, {
         key: "a_1",
         get: function() {
-          return delete n.a_1, n.a_1 = [new c("gd", -1, -1), new c("dt", -1, -1), new c("gt", -1, -1), new c("kt", -1, -1)]
+          return delete t.a_1, t.a_1 = [new u("gd", -1, -1), new u("dt", -1, -1), new u("gt", -1, -1), new u("kt", -1, -1)]
         }
       }, {
         key: "a_2",
         get: function() {
-          return delete n.a_2, n.a_2 = [new c("ig", -1, 1), new c("lig", 0, 1), new c("elig", 1, 1), new c("els", -1, 1), new c("l\xf8st", -1, 2)]
+          return delete t.a_2, t.a_2 = [new u("ig", -1, 1), new u("lig", 0, 1), new u("elig", 1, 1), new u("els", -1, 1), new u("l\xf8st", -1, 2)]
         }
       }, {
         key: "g_v",
         get: function() {
-          return delete n.g_v, n.g_v = [17, 65, 16, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 48, 0, 128]
+          return delete t.g_v, t.g_v = [17, 65, 16, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 48, 0, 128]
         }
       }, {
         key: "g_s_ending",
         get: function() {
-          return delete n.g_s_ending, n.g_s_ending = [239, 254, 42, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 16]
+          return delete t.g_s_ending, t.g_s_ending = [239, 254, 42, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 16]
         }
-      }]), n
-    }(u),
-    g = function(e) {
-      function n() {
-        return i(this, n), t(this, Object.getPrototypeOf(n).apply(this, arguments))
+      }]), t
+    }(c),
+    k = function(e) {
+      function t() {
+        return r(this, t), i(this, Object.getPrototypeOf(t).apply(this, arguments))
       }
-      return r(n, e), a(n, [{
+      return s(t, e), a(t, [{
         key: "r_prelude$esjava$0",
         value: function() {
           var e = void 0,
-            t = void 0,
-            r = void 0,
             i = void 0,
+            s = void 0,
+            r = void 0,
             a = void 0,
-            o = void 0,
-            s = void 0;
-          t = this.cursor;
-          G: for (;;) {
-            r = this.cursor;
-            c: do {
-              if (this.bra = this.cursor, 0 === (e = this.find_among$esjava$1(n.a_0))) break;
+            n = void 0,
+            h = void 0;
+          i = this.cursor;
+          P: for (;;) {
+            s = this.cursor;
+            i: do {
+              if (this.bra = this.cursor, 0 === (e = this.find_among$esjava$1(t.a_0))) break;
               switch (this.ket = this.cursor, e) {
                 case 0:
-                  break c;
+                  break i;
                 case 1:
                   this.slice_from$esjava$1("a");
                   break;
@@ -2737,47 +2769,47 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
                   this.slice_from$esjava$1("u");
                   break;
                 case 6:
-                  if (this.cursor >= this.limit) break c;
+                  if (this.cursor >= this.limit) break i;
                   this.cursor++
               }
-              continue G
+              continue P
             } while (!1);
-            this.cursor = r;
+            this.cursor = s;
             break
           }
-          this.cursor = t, i = this.cursor;
+          this.cursor = i, r = this.cursor;
           do {
             if (this.bra = this.cursor, !this.eq_s$esjava$1("y")) {
-              this.cursor = i;
+              this.cursor = r;
               break
             }
             this.ket = this.cursor, this.slice_from$esjava$1("Y")
           } while (!1);
-          U: for (;;) {
+          z: for (;;) {
             a = this.cursor;
-            f: do {
-              C: for (;;) {
-                o = this.cursor;
-                p: do {
-                  if (!this.in_grouping$esjava$3(n.g_v, 97, 232)) break;
+            r: do {
+              m: for (;;) {
+                n = this.cursor;
+                n: do {
+                  if (!this.in_grouping$esjava$3(t.g_v, 97, 232)) break;
                   this.bra = this.cursor;
-                  F: do {
-                    s = this.cursor;
+                  A: do {
+                    h = this.cursor;
                     do {
-                      if (!this.eq_s$esjava$1("i") || (this.ket = this.cursor, !this.in_grouping$esjava$3(n.g_v, 97, 232))) break;
+                      if (!this.eq_s$esjava$1("i") || (this.ket = this.cursor, !this.in_grouping$esjava$3(t.g_v, 97, 232))) break;
                       this.slice_from$esjava$1("I");
-                      break F
+                      break A
                     } while (!1);
-                    if (this.cursor = s, !this.eq_s$esjava$1("y")) break p;
+                    if (this.cursor = h, !this.eq_s$esjava$1("y")) break n;
                     this.ket = this.cursor, this.slice_from$esjava$1("Y")
                   } while (!1);
-                  this.cursor = o;
-                  break C
+                  this.cursor = n;
+                  break m
                 } while (!1);
-                if (this.cursor = o, this.cursor >= this.limit) break f;
+                if (this.cursor = n, this.cursor >= this.limit) break r;
                 this.cursor++
               }
-              continue U
+              continue z
             } while (!1);
             this.cursor = a;
             break
@@ -2788,18 +2820,18 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "r_mark_regions$esjava$0",
         value: function() {
           this.I_p1 = this.limit, this.I_p2 = this.limit;
-          B: for (;;) {
+          V: for (;;) {
             do {
-              if (!this.in_grouping$esjava$3(n.g_v, 97, 232)) break;
-              break B
+              if (!this.in_grouping$esjava$3(t.g_v, 97, 232)) break;
+              break V
             } while (!1);
             if (this.cursor >= this.limit) return !1;
             this.cursor++
           }
-          Z: for (;;) {
+          S: for (;;) {
             do {
-              if (!this.out_grouping$esjava$3(n.g_v, 97, 232)) break;
-              break Z
+              if (!this.out_grouping$esjava$3(t.g_v, 97, 232)) break;
+              break S
             } while (!1);
             if (this.cursor >= this.limit) return !1;
             this.cursor++
@@ -2809,18 +2841,18 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
             if (!(this.I_p1 < 3)) break;
             this.I_p1 = 3
           } while (!1);
-          C: for (;;) {
+          m: for (;;) {
             do {
-              if (!this.in_grouping$esjava$3(n.g_v, 97, 232)) break;
-              break C
+              if (!this.in_grouping$esjava$3(t.g_v, 97, 232)) break;
+              break m
             } while (!1);
             if (this.cursor >= this.limit) return !1;
             this.cursor++
           }
-          w: for (;;) {
+          j: for (;;) {
             do {
-              if (!this.out_grouping$esjava$3(n.g_v, 97, 232)) break;
-              break w
+              if (!this.out_grouping$esjava$3(t.g_v, 97, 232)) break;
+              break j
             } while (!1);
             if (this.cursor >= this.limit) return !1;
             this.cursor++
@@ -2831,14 +2863,14 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "r_postlude$esjava$0",
         value: function() {
           var e = void 0,
-            t = void 0;
-          G: for (;;) {
-            t = this.cursor;
-            c: do {
-              if (this.bra = this.cursor, 0 === (e = this.find_among$esjava$1(n.a_1))) break;
+            i = void 0;
+          P: for (;;) {
+            i = this.cursor;
+            i: do {
+              if (this.bra = this.cursor, 0 === (e = this.find_among$esjava$1(t.a_1))) break;
               switch (this.ket = this.cursor, e) {
                 case 0:
-                  break c;
+                  break i;
                 case 1:
                   this.slice_from$esjava$1("y");
                   break;
@@ -2846,12 +2878,12 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
                   this.slice_from$esjava$1("i");
                   break;
                 case 3:
-                  if (this.cursor >= this.limit) break c;
+                  if (this.cursor >= this.limit) break i;
                   this.cursor++
               }
-              continue G
+              continue P
             } while (!1);
-            this.cursor = t;
+            this.cursor = i;
             break
           }
           return !0
@@ -2870,150 +2902,150 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "r_undouble$esjava$0",
         value: function() {
           var e = void 0;
-          return e = this.limit - this.cursor, 0 !== this.find_among_b$esjava$1(n.a_2) && (this.cursor = this.limit - e, this.ket = this.cursor, !(this.cursor <= this.limit_backward) && (this.cursor--, this.bra = this.cursor, this.slice_del$esjava$0(), !0))
+          return e = this.limit - this.cursor, 0 !== this.find_among_b$esjava$1(t.a_2) && (this.cursor = this.limit - e, this.ket = this.cursor, !(this.cursor <= this.limit_backward) && (this.cursor--, this.bra = this.cursor, this.slice_del$esjava$0(), !0))
         }
       }, {
         key: "r_e_ending$esjava$0",
         value: function() {
           var e = void 0;
-          return this.B_e_found = !1, this.ket = this.cursor, !!this.eq_s_b$esjava$1("e") && (this.bra = this.cursor, !!this.r_R1$esjava$0() && (e = this.limit - this.cursor, !!this.out_grouping_b$esjava$3(n.g_v, 97, 232) && (this.cursor = this.limit - e, this.slice_del$esjava$0(), this.B_e_found = !0, !!this.r_undouble$esjava$0())))
+          return this.B_e_found = !1, this.ket = this.cursor, !!this.eq_s_b$esjava$1("e") && (this.bra = this.cursor, !!this.r_R1$esjava$0() && (e = this.limit - this.cursor, !!this.out_grouping_b$esjava$3(t.g_v, 97, 232) && (this.cursor = this.limit - e, this.slice_del$esjava$0(), this.B_e_found = !0, !!this.r_undouble$esjava$0())))
         }
       }, {
         key: "r_en_ending$esjava$0",
         value: function() {
           var e = void 0,
-            t = void 0;
-          if (!this.r_R1$esjava$0() || (e = this.limit - this.cursor, !this.out_grouping_b$esjava$3(n.g_v, 97, 232))) return !1;
-          this.cursor = this.limit - e, t = this.limit - this.cursor;
+            i = void 0;
+          if (!this.r_R1$esjava$0() || (e = this.limit - this.cursor, !this.out_grouping_b$esjava$3(t.g_v, 97, 232))) return !1;
+          this.cursor = this.limit - e, i = this.limit - this.cursor;
           do {
             if (!this.eq_s_b$esjava$1("gem")) break;
             return !1
           } while (!1);
-          return this.cursor = this.limit - t, this.slice_del$esjava$0(), !!this.r_undouble$esjava$0()
+          return this.cursor = this.limit - i, this.slice_del$esjava$0(), !!this.r_undouble$esjava$0()
         }
       }, {
         key: "r_standard_suffix$esjava$0",
         value: function() {
           var e = void 0,
-            t = void 0,
-            r = void 0,
             i = void 0,
-            a = void 0,
-            o = void 0,
             s = void 0,
-            l = void 0,
-            c = void 0,
+            r = void 0,
+            a = void 0,
+            n = void 0,
+            h = void 0,
+            o = void 0,
             u = void 0,
-            d = void 0;
-          t = this.limit - this.cursor;
-          l: do {
-            if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(n.a_3))) break;
+            c = void 0,
+            _ = void 0;
+          i = this.limit - this.cursor;
+          e: do {
+            if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(t.a_3))) break;
             switch (this.bra = this.cursor, e) {
               case 0:
-                break l;
+                break e;
               case 1:
-                if (!this.r_R1$esjava$0()) break l;
+                if (!this.r_R1$esjava$0()) break e;
                 this.slice_from$esjava$1("heid");
                 break;
               case 2:
-                if (!this.r_en_ending$esjava$0()) break l;
+                if (!this.r_en_ending$esjava$0()) break e;
                 break;
               case 3:
-                if (!this.r_R1$esjava$0() || !this.out_grouping_b$esjava$3(n.g_v_j, 97, 232)) break l;
+                if (!this.r_R1$esjava$0() || !this.out_grouping_b$esjava$3(t.g_v_j, 97, 232)) break e;
                 this.slice_del$esjava$0()
             }
           } while (!1);
-          this.cursor = this.limit - t, r = this.limit - this.cursor;
+          this.cursor = this.limit - i, s = this.limit - this.cursor;
           do
             if (!this.r_e_ending$esjava$0()) break; while (!1);
-          this.cursor = this.limit - r, i = this.limit - this.cursor;
-          u: do {
+          this.cursor = this.limit - s, r = this.limit - this.cursor;
+          s: do {
             if (this.ket = this.cursor, !this.eq_s_b$esjava$1("heid") || (this.bra = this.cursor, !this.r_R2$esjava$0())) break;
             a = this.limit - this.cursor;
             do {
               if (!this.eq_s_b$esjava$1("c")) break;
-              break u
+              break s
             } while (!1);
             if (this.cursor = this.limit - a, this.slice_del$esjava$0(), this.ket = this.cursor, !this.eq_s_b$esjava$1("en") || (this.bra = this.cursor, !this.r_en_ending$esjava$0())) break
           } while (!1);
-          this.cursor = this.limit - i, o = this.limit - this.cursor;
-          f: do {
-            if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(n.a_4))) break;
+          this.cursor = this.limit - r, n = this.limit - this.cursor;
+          r: do {
+            if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(t.a_4))) break;
             switch (this.bra = this.cursor, e) {
               case 0:
-                break f;
+                break r;
               case 1:
-                if (!this.r_R2$esjava$0()) break f;
+                if (!this.r_R2$esjava$0()) break r;
                 this.slice_del$esjava$0();
-                _: do {
-                  s = this.limit - this.cursor;
-                  p: do {
+                a: do {
+                  h = this.limit - this.cursor;
+                  n: do {
                     if (this.ket = this.cursor, !this.eq_s_b$esjava$1("ig") || (this.bra = this.cursor, !this.r_R2$esjava$0())) break;
-                    l = this.limit - this.cursor;
+                    o = this.limit - this.cursor;
                     do {
                       if (!this.eq_s_b$esjava$1("e")) break;
-                      break p
+                      break n
                     } while (!1);
-                    this.cursor = this.limit - l, this.slice_del$esjava$0();
-                    break _
+                    this.cursor = this.limit - o, this.slice_del$esjava$0();
+                    break a
                   } while (!1);
-                  if (this.cursor = this.limit - s, !this.r_undouble$esjava$0()) break f
+                  if (this.cursor = this.limit - h, !this.r_undouble$esjava$0()) break r
                 } while (!1);
                 break;
               case 2:
-                if (!this.r_R2$esjava$0()) break f;
-                c = this.limit - this.cursor;
+                if (!this.r_R2$esjava$0()) break r;
+                u = this.limit - this.cursor;
                 do {
                   if (!this.eq_s_b$esjava$1("e")) break;
-                  break f
+                  break r
                 } while (!1);
-                this.cursor = this.limit - c, this.slice_del$esjava$0();
+                this.cursor = this.limit - u, this.slice_del$esjava$0();
                 break;
               case 3:
-                if (!this.r_R2$esjava$0() || (this.slice_del$esjava$0(), !this.r_e_ending$esjava$0())) break f;
+                if (!this.r_R2$esjava$0() || (this.slice_del$esjava$0(), !this.r_e_ending$esjava$0())) break r;
                 break;
               case 4:
-                if (!this.r_R2$esjava$0()) break f;
+                if (!this.r_R2$esjava$0()) break r;
                 this.slice_del$esjava$0();
                 break;
               case 5:
-                if (!this.r_R2$esjava$0() || !this.B_e_found) break f;
+                if (!this.r_R2$esjava$0() || !this.B_e_found) break r;
                 this.slice_del$esjava$0()
             }
           } while (!1);
-          this.cursor = this.limit - o, u = this.limit - this.cursor;
+          this.cursor = this.limit - n, c = this.limit - this.cursor;
           do {
-            if (!this.out_grouping_b$esjava$3(n.g_v_I, 73, 232) || (d = this.limit - this.cursor, 0 === this.find_among_b$esjava$1(n.a_5) || !this.out_grouping_b$esjava$3(n.g_v, 97, 232)) || (this.cursor = this.limit - d, this.ket = this.cursor, this.cursor <= this.limit_backward)) break;
+            if (!this.out_grouping_b$esjava$3(t.g_v_I, 73, 232) || (_ = this.limit - this.cursor, 0 === this.find_among_b$esjava$1(t.a_5) || !this.out_grouping_b$esjava$3(t.g_v, 97, 232)) || (this.cursor = this.limit - _, this.ket = this.cursor, this.cursor <= this.limit_backward)) break;
             this.cursor--, this.bra = this.cursor, this.slice_del$esjava$0()
           } while (!1);
-          return this.cursor = this.limit - u, !0
+          return this.cursor = this.limit - c, !0
         }
       }, {
         key: "stem$esjava$0",
         value: function() {
           var e = void 0,
-            t = void 0,
-            n = void 0,
-            r = void 0;
+            i = void 0,
+            s = void 0,
+            t = void 0;
           e = this.cursor;
           do
             if (!this.r_prelude$esjava$0()) break; while (!1);
-          this.cursor = e, t = this.cursor;
+          this.cursor = e, i = this.cursor;
           do
             if (!this.r_mark_regions$esjava$0()) break; while (!1);
-          this.cursor = t, this.limit_backward = this.cursor, this.cursor = this.limit, n = this.limit - this.cursor;
+          this.cursor = i, this.limit_backward = this.cursor, this.cursor = this.limit, s = this.limit - this.cursor;
           do
             if (!this.r_standard_suffix$esjava$0()) break; while (!1);
-          this.cursor = this.limit - n, this.cursor = this.limit_backward, r = this.cursor;
+          this.cursor = this.limit - s, this.cursor = this.limit_backward, t = this.cursor;
           do
             if (!this.r_postlude$esjava$0()) break; while (!1);
-          return this.cursor = r, !0
+          return this.cursor = t, !0
         }
       }, {
         key: "stem",
         value: function() {
-          for (var e, t = arguments.length, r = Array(t), i = 0; i < t; i++) r[i] = arguments[i];
-          return 0 === r.length ? this.stem$esjava$0.apply(this, r) : (e = o(Object.getPrototypeOf(n.prototype), "stem", this)).call.apply(e, [this].concat(r))
+          for (var e, i = arguments.length, s = Array(i), r = 0; r < i; r++) s[r] = arguments[r];
+          return 0 === s.length ? this.stem$esjava$0.apply(this, s) : (e = n(Object.getPrototypeOf(t.prototype), "stem", this)).call.apply(e, [this].concat(s))
         }
       }, {
         key: "I_p2",
@@ -3042,140 +3074,140 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
       }], [{
         key: "a_0",
         get: function() {
-          return delete n.a_0, n.a_0 = [new c("", -1, 6), new c("\xe1", 0, 1), new c("\xe4", 0, 1), new c("\xe9", 0, 2), new c("\xeb", 0, 2), new c("\xed", 0, 3), new c("\xef", 0, 3), new c("\xf3", 0, 4), new c("\xf6", 0, 4), new c("\xfa", 0, 5), new c("\xfc", 0, 5)]
+          return delete t.a_0, t.a_0 = [new u("", -1, 6), new u("\xe1", 0, 1), new u("\xe4", 0, 1), new u("\xe9", 0, 2), new u("\xeb", 0, 2), new u("\xed", 0, 3), new u("\xef", 0, 3), new u("\xf3", 0, 4), new u("\xf6", 0, 4), new u("\xfa", 0, 5), new u("\xfc", 0, 5)]
         }
       }, {
         key: "a_1",
         get: function() {
-          return delete n.a_1, n.a_1 = [new c("", -1, 3), new c("I", 0, 2), new c("Y", 0, 1)]
+          return delete t.a_1, t.a_1 = [new u("", -1, 3), new u("I", 0, 2), new u("Y", 0, 1)]
         }
       }, {
         key: "a_2",
         get: function() {
-          return delete n.a_2, n.a_2 = [new c("dd", -1, -1), new c("kk", -1, -1), new c("tt", -1, -1)]
+          return delete t.a_2, t.a_2 = [new u("dd", -1, -1), new u("kk", -1, -1), new u("tt", -1, -1)]
         }
       }, {
         key: "a_3",
         get: function() {
-          return delete n.a_3, n.a_3 = [new c("ene", -1, 2), new c("se", -1, 3), new c("en", -1, 2), new c("heden", 2, 1), new c("s", -1, 3)]
+          return delete t.a_3, t.a_3 = [new u("ene", -1, 2), new u("se", -1, 3), new u("en", -1, 2), new u("heden", 2, 1), new u("s", -1, 3)]
         }
       }, {
         key: "a_4",
         get: function() {
-          return delete n.a_4, n.a_4 = [new c("end", -1, 1), new c("ig", -1, 2), new c("ing", -1, 1), new c("lijk", -1, 3), new c("baar", -1, 4), new c("bar", -1, 5)]
+          return delete t.a_4, t.a_4 = [new u("end", -1, 1), new u("ig", -1, 2), new u("ing", -1, 1), new u("lijk", -1, 3), new u("baar", -1, 4), new u("bar", -1, 5)]
         }
       }, {
         key: "a_5",
         get: function() {
-          return delete n.a_5, n.a_5 = [new c("aa", -1, -1), new c("ee", -1, -1), new c("oo", -1, -1), new c("uu", -1, -1)]
+          return delete t.a_5, t.a_5 = [new u("aa", -1, -1), new u("ee", -1, -1), new u("oo", -1, -1), new u("uu", -1, -1)]
         }
       }, {
         key: "g_v",
         get: function() {
-          return delete n.g_v, n.g_v = [17, 65, 16, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 128]
+          return delete t.g_v, t.g_v = [17, 65, 16, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 128]
         }
       }, {
         key: "g_v_I",
         get: function() {
-          return delete n.g_v_I, n.g_v_I = [1, 0, 0, 17, 65, 16, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 128]
+          return delete t.g_v_I, t.g_v_I = [1, 0, 0, 17, 65, 16, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 128]
         }
       }, {
         key: "g_v_j",
         get: function() {
-          return delete n.g_v_j, n.g_v_j = [17, 67, 16, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 128]
+          return delete t.g_v_j, t.g_v_j = [17, 67, 16, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 128]
         }
-      }]), n
-    }(u),
-    E = function(e) {
-      function n() {
-        return i(this, n), t(this, Object.getPrototypeOf(n).apply(this, arguments))
+      }]), t
+    }(c),
+    d = function(e) {
+      function t() {
+        return r(this, t), i(this, Object.getPrototypeOf(t).apply(this, arguments))
       }
-      return r(n, e), a(n, [{
+      return s(t, e), a(t, [{
         key: "r_prelude$esjava$0",
         value: function() {
           var e = void 0,
-            t = void 0,
-            r = void 0,
             i = void 0,
+            s = void 0,
+            r = void 0,
             a = void 0;
           this.B_Y_found = !1, e = this.cursor;
           do {
             if (this.bra = this.cursor, !this.eq_s$esjava$1("'")) break;
             this.ket = this.cursor, this.slice_del$esjava$0()
           } while (!1);
-          this.cursor = e, t = this.cursor;
+          this.cursor = e, i = this.cursor;
           do {
             if (this.bra = this.cursor, !this.eq_s$esjava$1("y")) break;
             this.ket = this.cursor, this.slice_from$esjava$1("Y"), this.B_Y_found = !0
           } while (!1);
-          this.cursor = t, r = this.cursor;
-          do U: for (;;) {
-            i = this.cursor;
-            f: do {
-              C: for (;;) {
+          this.cursor = i, s = this.cursor;
+          do z: for (;;) {
+            r = this.cursor;
+            r: do {
+              m: for (;;) {
                 a = this.cursor;
                 do {
-                  if (!this.in_grouping$esjava$3(n.g_v, 97, 121) || (this.bra = this.cursor, !this.eq_s$esjava$1("y"))) break;
+                  if (!this.in_grouping$esjava$3(t.g_v, 97, 121) || (this.bra = this.cursor, !this.eq_s$esjava$1("y"))) break;
                   this.ket = this.cursor, this.cursor = a;
-                  break C
+                  break m
                 } while (!1);
-                if (this.cursor = a, this.cursor >= this.limit) break f;
+                if (this.cursor = a, this.cursor >= this.limit) break r;
                 this.cursor++
               }
               this.slice_from$esjava$1("Y"),
               this.B_Y_found = !0;
-              continue U
+              continue z
             } while (!1);
-            this.cursor = i;
+            this.cursor = r;
             break
           }
           while (!1);
-          return this.cursor = r, !0
+          return this.cursor = s, !0
         }
       }, {
         key: "r_mark_regions$esjava$0",
         value: function() {
           var e = void 0,
-            t = void 0;
+            i = void 0;
           this.I_p1 = this.limit, this.I_p2 = this.limit, e = this.cursor;
-          l: do {
-            c: do {
-              t = this.cursor;
+          e: do {
+            i: do {
+              i = this.cursor;
               do {
-                if (0 === this.find_among$esjava$1(n.a_0)) break;
-                break c
+                if (0 === this.find_among$esjava$1(t.a_0)) break;
+                break i
               } while (!1);
-              this.cursor = t;
-              N: for (;;) {
+              this.cursor = i;
+              b: for (;;) {
                 do {
-                  if (!this.in_grouping$esjava$3(n.g_v, 97, 121)) break;
-                  break N
+                  if (!this.in_grouping$esjava$3(t.g_v, 97, 121)) break;
+                  break b
                 } while (!1);
-                if (this.cursor >= this.limit) break l;
+                if (this.cursor >= this.limit) break e;
                 this.cursor++
               }
-              C: for (;;) {
+              m: for (;;) {
                 do {
-                  if (!this.out_grouping$esjava$3(n.g_v, 97, 121)) break;
-                  break C
+                  if (!this.out_grouping$esjava$3(t.g_v, 97, 121)) break;
+                  break m
                 } while (!1);
-                if (this.cursor >= this.limit) break l;
+                if (this.cursor >= this.limit) break e;
                 this.cursor++
               }
-            } while (!1);this.I_p1 = this.cursor;w: for (;;) {
+            } while (!1);this.I_p1 = this.cursor;j: for (;;) {
               do {
-                if (!this.in_grouping$esjava$3(n.g_v, 97, 121)) break;
-                break w
+                if (!this.in_grouping$esjava$3(t.g_v, 97, 121)) break;
+                break j
               } while (!1);
-              if (this.cursor >= this.limit) break l;
+              if (this.cursor >= this.limit) break e;
               this.cursor++
             }
-            V: for (;;) {
+            B: for (;;) {
               do {
-                if (!this.out_grouping$esjava$3(n.g_v, 97, 121)) break;
-                break V
+                if (!this.out_grouping$esjava$3(t.g_v, 97, 121)) break;
+                break B
               } while (!1);
-              if (this.cursor >= this.limit) break l;
+              if (this.cursor >= this.limit) break e;
               this.cursor++
             }
             this.I_p2 = this.cursor
@@ -3186,13 +3218,13 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "r_shortv$esjava$0",
         value: function() {
           var e = void 0;
-          l: do {
+          e: do {
             e = this.limit - this.cursor;
             do {
-              if (!this.out_grouping_b$esjava$3(n.g_v_WXY, 89, 121) || !this.in_grouping_b$esjava$3(n.g_v, 97, 121) || !this.out_grouping_b$esjava$3(n.g_v, 97, 121)) break;
-              break l
+              if (!this.out_grouping_b$esjava$3(t.g_v_WXY, 89, 121) || !this.in_grouping_b$esjava$3(t.g_v, 97, 121) || !this.out_grouping_b$esjava$3(t.g_v, 97, 121)) break;
+              break e
             } while (!1);
-            if (this.cursor = this.limit - e, !this.out_grouping_b$esjava$3(n.g_v, 97, 121) || !this.in_grouping_b$esjava$3(n.g_v, 97, 121) || this.cursor > this.limit_backward) return !1
+            if (this.cursor = this.limit - e, !this.out_grouping_b$esjava$3(t.g_v, 97, 121) || !this.in_grouping_b$esjava$3(t.g_v, 97, 121) || this.cursor > this.limit_backward) return !1
           } while (!1);
           return !0
         }
@@ -3210,23 +3242,23 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "r_Step_1a$esjava$0",
         value: function() {
           var e = void 0,
-            t = void 0,
-            r = void 0;
-          t = this.limit - this.cursor;
-          l: do {
-            if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(n.a_1))) {
-              this.cursor = this.limit - t;
+            i = void 0,
+            s = void 0;
+          i = this.limit - this.cursor;
+          e: do {
+            if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(t.a_1))) {
+              this.cursor = this.limit - i;
               break
             }
             switch (this.bra = this.cursor, e) {
               case 0:
-                this.cursor = this.limit - t;
-                break l;
+                this.cursor = this.limit - i;
+                break e;
               case 1:
                 this.slice_del$esjava$0()
             }
           } while (!1);
-          if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(n.a_2))) return !1;
+          if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(t.a_2))) return !1;
           switch (this.bra = this.cursor, e) {
             case 0:
               return !1;
@@ -3234,24 +3266,24 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
               this.slice_from$esjava$1("ss");
               break;
             case 2:
-              c: do {
-                r = this.limit - this.cursor;
+              i: do {
+                s = this.limit - this.cursor;
                 do {
-                  var i = this.cursor - 2;
-                  if (this.limit_backward > i || i > this.limit) break;
-                  this.cursor = i, this.slice_from$esjava$1("i");
-                  break c
+                  var r = this.cursor - 2;
+                  if (this.limit_backward > r || r > this.limit) break;
+                  this.cursor = r, this.slice_from$esjava$1("i");
+                  break i
                 } while (!1);
-                this.cursor = this.limit - r, this.slice_from$esjava$1("ie")
+                this.cursor = this.limit - s, this.slice_from$esjava$1("ie")
               } while (!1);
               break;
             case 3:
               if (this.cursor <= this.limit_backward) return !1;
               this.cursor--;
-              N: for (;;) {
+              b: for (;;) {
                 do {
-                  if (!this.in_grouping_b$esjava$3(n.g_v, 97, 121)) break;
-                  break N
+                  if (!this.in_grouping_b$esjava$3(t.g_v, 97, 121)) break;
+                  break b
                 } while (!1);
                 if (this.cursor <= this.limit_backward) return !1;
                 this.cursor--
@@ -3264,10 +3296,10 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "r_Step_1b$esjava$0",
         value: function() {
           var e = void 0,
-            t = void 0,
-            r = void 0,
-            i = void 0;
-          if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(n.a_4))) return !1;
+            i = void 0,
+            s = void 0,
+            r = void 0;
+          if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(t.a_4))) return !1;
           switch (this.bra = this.cursor, e) {
             case 0:
               return !1;
@@ -3276,17 +3308,17 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
               this.slice_from$esjava$1("ee");
               break;
             case 2:
-              t = this.limit - this.cursor;
-              B: for (;;) {
+              i = this.limit - this.cursor;
+              V: for (;;) {
                 do {
-                  if (!this.in_grouping_b$esjava$3(n.g_v, 97, 121)) break;
-                  break B
+                  if (!this.in_grouping_b$esjava$3(t.g_v, 97, 121)) break;
+                  break V
                 } while (!1);
                 if (this.cursor <= this.limit_backward) return !1;
                 this.cursor--
               }
-              if (this.cursor = this.limit - t, this.slice_del$esjava$0(), r = this.limit - this.cursor, 0 === (e = this.find_among_b$esjava$1(n.a_3))) return !1;
-              switch (this.cursor = this.limit - r, e) {
+              if (this.cursor = this.limit - i, this.slice_del$esjava$0(), s = this.limit - this.cursor, 0 === (e = this.find_among_b$esjava$1(t.a_3))) return !1;
+              switch (this.cursor = this.limit - s, e) {
                 case 0:
                   return !1;
                 case 1:
@@ -3298,8 +3330,8 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
                   this.cursor--, this.bra = this.cursor, this.slice_del$esjava$0();
                   break;
                 case 3:
-                  if (this.cursor !== this.I_p1 || (i = this.limit - this.cursor, !this.r_shortv$esjava$0())) return !1;
-                  this.cursor = this.limit - i;
+                  if (this.cursor !== this.I_p1 || (r = this.limit - this.cursor, !this.r_shortv$esjava$0())) return !1;
+                  this.cursor = this.limit - r;
                   var a = this.cursor;
                   this.insert$esjava$3(this.cursor, this.cursor, "e"), this.cursor = a
               }
@@ -3310,29 +3342,29 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "r_Step_1c$esjava$0",
         value: function() {
           var e = void 0,
-            t = void 0;
+            i = void 0;
           this.ket = this.cursor;
-          l: do {
+          e: do {
             e = this.limit - this.cursor;
             do {
               if (!this.eq_s_b$esjava$1("y")) break;
-              break l
+              break e
             } while (!1);
             if (this.cursor = this.limit - e, !this.eq_s_b$esjava$1("Y")) return !1
           } while (!1);
-          if (this.bra = this.cursor, !this.out_grouping_b$esjava$3(n.g_v, 97, 121)) return !1;
-          t = this.limit - this.cursor;
+          if (this.bra = this.cursor, !this.out_grouping_b$esjava$3(t.g_v, 97, 121)) return !1;
+          i = this.limit - this.cursor;
           do {
             if (this.cursor > this.limit_backward) break;
             return !1
           } while (!1);
-          return this.cursor = this.limit - t, this.slice_from$esjava$1("i"), !0
+          return this.cursor = this.limit - i, this.slice_from$esjava$1("i"), !0
         }
       }, {
         key: "r_Step_2$esjava$0",
         value: function() {
           var e = void 0;
-          if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(n.a_5)) || (this.bra = this.cursor, !this.r_R1$esjava$0())) return !1;
+          if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(t.a_5)) || (this.bra = this.cursor, !this.r_R1$esjava$0())) return !1;
           switch (e) {
             case 0:
               return !1;
@@ -3381,7 +3413,7 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
               this.slice_from$esjava$1("less");
               break;
             case 16:
-              if (!this.in_grouping_b$esjava$3(n.g_valid_LI, 99, 116)) return !1;
+              if (!this.in_grouping_b$esjava$3(t.g_valid_LI, 99, 116)) return !1;
               this.slice_del$esjava$0()
           }
           return !0
@@ -3390,7 +3422,7 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "r_Step_3$esjava$0",
         value: function() {
           var e = void 0;
-          if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(n.a_6)) || (this.bra = this.cursor, !this.r_R1$esjava$0())) return !1;
+          if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(t.a_6)) || (this.bra = this.cursor, !this.r_R1$esjava$0())) return !1;
           switch (e) {
             case 0:
               return !1;
@@ -3419,8 +3451,8 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "r_Step_4$esjava$0",
         value: function() {
           var e = void 0,
-            t = void 0;
-          if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(n.a_7)) || (this.bra = this.cursor, !this.r_R2$esjava$0())) return !1;
+            i = void 0;
+          if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(t.a_7)) || (this.bra = this.cursor, !this.r_R2$esjava$0())) return !1;
           switch (e) {
             case 0:
               return !1;
@@ -3428,13 +3460,13 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
               this.slice_del$esjava$0();
               break;
             case 2:
-              l: do {
-                t = this.limit - this.cursor;
+              e: do {
+                i = this.limit - this.cursor;
                 do {
                   if (!this.eq_s_b$esjava$1("s")) break;
-                  break l
+                  break e
                 } while (!1);
-                if (this.cursor = this.limit - t, !this.eq_s_b$esjava$1("t")) return !1
+                if (this.cursor = this.limit - i, !this.eq_s_b$esjava$1("t")) return !1
               } while (!1);
               this.slice_del$esjava$0()
           }
@@ -3444,26 +3476,26 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "r_Step_5$esjava$0",
         value: function() {
           var e = void 0,
-            t = void 0,
-            r = void 0;
-          if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(n.a_8))) return !1;
+            i = void 0,
+            s = void 0;
+          if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(t.a_8))) return !1;
           switch (this.bra = this.cursor, e) {
             case 0:
               return !1;
             case 1:
-              l: do {
-                t = this.limit - this.cursor;
+              e: do {
+                i = this.limit - this.cursor;
                 do {
                   if (!this.r_R2$esjava$0()) break;
-                  break l
+                  break e
                 } while (!1);
-                if (this.cursor = this.limit - t, !this.r_R1$esjava$0()) return !1;
-                r = this.limit - this.cursor;
+                if (this.cursor = this.limit - i, !this.r_R1$esjava$0()) return !1;
+                s = this.limit - this.cursor;
                 do {
                   if (!this.r_shortv$esjava$0()) break;
                   return !1
                 } while (!1);
-                this.cursor = this.limit - r
+                this.cursor = this.limit - s
               } while (!1);
               this.slice_del$esjava$0();
               break;
@@ -3476,13 +3508,13 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
       }, {
         key: "r_exception2$esjava$0",
         value: function() {
-          return this.ket = this.cursor, 0 !== this.find_among_b$esjava$1(n.a_9) && (this.bra = this.cursor, !(this.cursor > this.limit_backward))
+          return this.ket = this.cursor, 0 !== this.find_among_b$esjava$1(t.a_9) && (this.bra = this.cursor, !(this.cursor > this.limit_backward))
         }
       }, {
         key: "r_exception1$esjava$0",
         value: function() {
           var e = void 0;
-          if (this.bra = this.cursor, 0 === (e = this.find_among$esjava$1(n.a_10)) || (this.ket = this.cursor, this.cursor < this.limit)) return !1;
+          if (this.bra = this.cursor, 0 === (e = this.find_among$esjava$1(t.a_10)) || (this.ket = this.cursor, this.cursor < this.limit)) return !1;
           switch (e) {
             case 0:
               return !1;
@@ -3525,23 +3557,23 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "r_postlude$esjava$0",
         value: function() {
           var e = void 0,
-            t = void 0;
+            i = void 0;
           if (!this.B_Y_found) return !1;
-          G: for (;;) {
+          P: for (;;) {
             e = this.cursor;
-            c: do {
-              Z: for (;;) {
-                t = this.cursor;
+            i: do {
+              S: for (;;) {
+                i = this.cursor;
                 do {
                   if (this.bra = this.cursor, !this.eq_s$esjava$1("Y")) break;
-                  this.ket = this.cursor, this.cursor = t;
-                  break Z
+                  this.ket = this.cursor, this.cursor = i;
+                  break S
                 } while (!1);
-                if (this.cursor = t, this.cursor >= this.limit) break c;
+                if (this.cursor = i, this.cursor >= this.limit) break i;
                 this.cursor++
               }
               this.slice_from$esjava$1("y");
-              continue G
+              continue P
             } while (!1);
             this.cursor = e;
             break
@@ -3552,84 +3584,84 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "stem$esjava$0",
         value: function() {
           var e = void 0,
-            t = void 0,
-            n = void 0,
-            r = void 0,
             i = void 0,
-            a = void 0,
-            o = void 0,
             s = void 0,
-            l = void 0,
-            c = void 0,
+            t = void 0,
+            r = void 0,
+            a = void 0,
+            n = void 0,
+            h = void 0,
+            o = void 0,
             u = void 0,
-            d = void 0,
-            f = void 0;
-          l: do {
+            c = void 0,
+            _ = void 0,
+            l = void 0;
+          e: do {
             e = this.cursor;
             do {
               if (!this.r_exception1$esjava$0()) break;
-              break l
+              break e
             } while (!1);
             this.cursor = e;
-            u: do {
-              t = this.cursor;
+            s: do {
+              i = this.cursor;
               do {
-                var _ = this.cursor + 3;
-                if (0 > _ || _ > this.limit) break;
-                this.cursor = _;
-                break u
+                var w = this.cursor + 3;
+                if (0 > w || w > this.limit) break;
+                this.cursor = w;
+                break s
               } while (!1);
-              this.cursor = t;
-              break l
+              this.cursor = i;
+              break e
             } while (!1);
-            this.cursor = e, n = this.cursor;
+            this.cursor = e, s = this.cursor;
             do
               if (!this.r_prelude$esjava$0()) break; while (!1);
-            this.cursor = n, r = this.cursor;
+            this.cursor = s, t = this.cursor;
             do
               if (!this.r_mark_regions$esjava$0()) break; while (!1);
-            this.cursor = r, this.limit_backward = this.cursor, this.cursor = this.limit, i = this.limit - this.cursor;
+            this.cursor = t, this.limit_backward = this.cursor, this.cursor = this.limit, r = this.limit - this.cursor;
             do
               if (!this.r_Step_1a$esjava$0()) break; while (!1);
-            this.cursor = this.limit - i;
-            F: do {
+            this.cursor = this.limit - r;
+            A: do {
               a = this.limit - this.cursor;
               do {
                 if (!this.r_exception2$esjava$0()) break;
-                break F
+                break A
               } while (!1);
-              this.cursor = this.limit - a, o = this.limit - this.cursor;
+              this.cursor = this.limit - a, n = this.limit - this.cursor;
               do
                 if (!this.r_Step_1b$esjava$0()) break; while (!1);
-              this.cursor = this.limit - o, s = this.limit - this.cursor;
+              this.cursor = this.limit - n, h = this.limit - this.cursor;
               do
                 if (!this.r_Step_1c$esjava$0()) break; while (!1);
-              this.cursor = this.limit - s, l = this.limit - this.cursor;
+              this.cursor = this.limit - h, o = this.limit - this.cursor;
               do
                 if (!this.r_Step_2$esjava$0()) break; while (!1);
-              this.cursor = this.limit - l, c = this.limit - this.cursor;
+              this.cursor = this.limit - o, u = this.limit - this.cursor;
               do
                 if (!this.r_Step_3$esjava$0()) break; while (!1);
-              this.cursor = this.limit - c, u = this.limit - this.cursor;
+              this.cursor = this.limit - u, c = this.limit - this.cursor;
               do
                 if (!this.r_Step_4$esjava$0()) break; while (!1);
-              this.cursor = this.limit - u, d = this.limit - this.cursor;
+              this.cursor = this.limit - c, _ = this.limit - this.cursor;
               do
                 if (!this.r_Step_5$esjava$0()) break; while (!1);
-              this.cursor = this.limit - d
+              this.cursor = this.limit - _
             } while (!1);
-            this.cursor = this.limit_backward, f = this.cursor;
+            this.cursor = this.limit_backward, l = this.cursor;
             do
               if (!this.r_postlude$esjava$0()) break; while (!1);
-            this.cursor = f
+            this.cursor = l
           } while (!1);
           return !0
         }
       }, {
         key: "stem",
         value: function() {
-          for (var e, t = arguments.length, r = Array(t), i = 0; i < t; i++) r[i] = arguments[i];
-          return 0 === r.length ? this.stem$esjava$0.apply(this, r) : (e = o(Object.getPrototypeOf(n.prototype), "stem", this)).call.apply(e, [this].concat(r))
+          for (var e, i = arguments.length, s = Array(i), r = 0; r < i; r++) s[r] = arguments[r];
+          return 0 === s.length ? this.stem$esjava$0.apply(this, s) : (e = n(Object.getPrototypeOf(t.prototype), "stem", this)).call.apply(e, [this].concat(s))
         }
       }, {
         key: "B_Y_found",
@@ -3658,117 +3690,117 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
       }], [{
         key: "a_0",
         get: function() {
-          return delete n.a_0, n.a_0 = [new c("arsen", -1, -1), new c("commun", -1, -1), new c("gener", -1, -1)]
+          return delete t.a_0, t.a_0 = [new u("arsen", -1, -1), new u("commun", -1, -1), new u("gener", -1, -1)]
         }
       }, {
         key: "a_1",
         get: function() {
-          return delete n.a_1, n.a_1 = [new c("'", -1, 1), new c("'s'", 0, 1), new c("'s", -1, 1)]
+          return delete t.a_1, t.a_1 = [new u("'", -1, 1), new u("'s'", 0, 1), new u("'s", -1, 1)]
         }
       }, {
         key: "a_2",
         get: function() {
-          return delete n.a_2, n.a_2 = [new c("ied", -1, 2), new c("s", -1, 3), new c("ies", 1, 2), new c("sses", 1, 1), new c("ss", 1, -1), new c("us", 1, -1)]
+          return delete t.a_2, t.a_2 = [new u("ied", -1, 2), new u("s", -1, 3), new u("ies", 1, 2), new u("sses", 1, 1), new u("ss", 1, -1), new u("us", 1, -1)]
         }
       }, {
         key: "a_3",
         get: function() {
-          return delete n.a_3, n.a_3 = [new c("", -1, 3), new c("bb", 0, 2), new c("dd", 0, 2), new c("ff", 0, 2), new c("gg", 0, 2), new c("bl", 0, 1), new c("mm", 0, 2), new c("nn", 0, 2), new c("pp", 0, 2), new c("rr", 0, 2), new c("at", 0, 1), new c("tt", 0, 2), new c("iz", 0, 1)]
+          return delete t.a_3, t.a_3 = [new u("", -1, 3), new u("bb", 0, 2), new u("dd", 0, 2), new u("ff", 0, 2), new u("gg", 0, 2), new u("bl", 0, 1), new u("mm", 0, 2), new u("nn", 0, 2), new u("pp", 0, 2), new u("rr", 0, 2), new u("at", 0, 1), new u("tt", 0, 2), new u("iz", 0, 1)]
         }
       }, {
         key: "a_4",
         get: function() {
-          return delete n.a_4, n.a_4 = [new c("ed", -1, 2), new c("eed", 0, 1), new c("ing", -1, 2), new c("edly", -1, 2), new c("eedly", 3, 1), new c("ingly", -1, 2)]
+          return delete t.a_4, t.a_4 = [new u("ed", -1, 2), new u("eed", 0, 1), new u("ing", -1, 2), new u("edly", -1, 2), new u("eedly", 3, 1), new u("ingly", -1, 2)]
         }
       }, {
         key: "a_5",
         get: function() {
-          return delete n.a_5, n.a_5 = [new c("anci", -1, 3), new c("enci", -1, 2), new c("ogi", -1, 13), new c("li", -1, 16), new c("bli", 3, 12), new c("abli", 4, 4), new c("alli", 3, 8), new c("fulli", 3, 14), new c("lessli", 3, 15), new c("ousli", 3, 10), new c("entli", 3, 5), new c("aliti", -1, 8), new c("biliti", -1, 12), new c("iviti", -1, 11), new c("tional", -1, 1), new c("ational", 14, 7), new c("alism", -1, 8), new c("ation", -1, 7), new c("ization", 17, 6), new c("izer", -1, 6), new c("ator", -1, 7), new c("iveness", -1, 11), new c("fulness", -1, 9), new c("ousness", -1, 10)]
+          return delete t.a_5, t.a_5 = [new u("anci", -1, 3), new u("enci", -1, 2), new u("ogi", -1, 13), new u("li", -1, 16), new u("bli", 3, 12), new u("abli", 4, 4), new u("alli", 3, 8), new u("fulli", 3, 14), new u("lessli", 3, 15), new u("ousli", 3, 10), new u("entli", 3, 5), new u("aliti", -1, 8), new u("biliti", -1, 12), new u("iviti", -1, 11), new u("tional", -1, 1), new u("ational", 14, 7), new u("alism", -1, 8), new u("ation", -1, 7), new u("ization", 17, 6), new u("izer", -1, 6), new u("ator", -1, 7), new u("iveness", -1, 11), new u("fulness", -1, 9), new u("ousness", -1, 10)]
         }
       }, {
         key: "a_6",
         get: function() {
-          return delete n.a_6, n.a_6 = [new c("icate", -1, 4), new c("ative", -1, 6), new c("alize", -1, 3), new c("iciti", -1, 4), new c("ical", -1, 4), new c("tional", -1, 1), new c("ational", 5, 2), new c("ful", -1, 5), new c("ness", -1, 5)]
+          return delete t.a_6, t.a_6 = [new u("icate", -1, 4), new u("ative", -1, 6), new u("alize", -1, 3), new u("iciti", -1, 4), new u("ical", -1, 4), new u("tional", -1, 1), new u("ational", 5, 2), new u("ful", -1, 5), new u("ness", -1, 5)]
         }
       }, {
         key: "a_7",
         get: function() {
-          return delete n.a_7, n.a_7 = [new c("ic", -1, 1), new c("ance", -1, 1), new c("ence", -1, 1), new c("able", -1, 1), new c("ible", -1, 1), new c("ate", -1, 1), new c("ive", -1, 1), new c("ize", -1, 1), new c("iti", -1, 1), new c("al", -1, 1), new c("ism", -1, 1), new c("ion", -1, 2), new c("er", -1, 1), new c("ous", -1, 1), new c("ant", -1, 1), new c("ent", -1, 1), new c("ment", 15, 1), new c("ement", 16, 1)]
+          return delete t.a_7, t.a_7 = [new u("ic", -1, 1), new u("ance", -1, 1), new u("ence", -1, 1), new u("able", -1, 1), new u("ible", -1, 1), new u("ate", -1, 1), new u("ive", -1, 1), new u("ize", -1, 1), new u("iti", -1, 1), new u("al", -1, 1), new u("ism", -1, 1), new u("ion", -1, 2), new u("er", -1, 1), new u("ous", -1, 1), new u("ant", -1, 1), new u("ent", -1, 1), new u("ment", 15, 1), new u("ement", 16, 1)]
         }
       }, {
         key: "a_8",
         get: function() {
-          return delete n.a_8, n.a_8 = [new c("e", -1, 1), new c("l", -1, 2)]
+          return delete t.a_8, t.a_8 = [new u("e", -1, 1), new u("l", -1, 2)]
         }
       }, {
         key: "a_9",
         get: function() {
-          return delete n.a_9, n.a_9 = [new c("succeed", -1, -1), new c("proceed", -1, -1), new c("exceed", -1, -1), new c("canning", -1, -1), new c("inning", -1, -1), new c("earring", -1, -1), new c("herring", -1, -1), new c("outing", -1, -1)]
+          return delete t.a_9, t.a_9 = [new u("succeed", -1, -1), new u("proceed", -1, -1), new u("exceed", -1, -1), new u("canning", -1, -1), new u("inning", -1, -1), new u("earring", -1, -1), new u("herring", -1, -1), new u("outing", -1, -1)]
         }
       }, {
         key: "a_10",
         get: function() {
-          return delete n.a_10, n.a_10 = [new c("andes", -1, -1), new c("atlas", -1, -1), new c("bias", -1, -1), new c("cosmos", -1, -1), new c("dying", -1, 3), new c("early", -1, 9), new c("gently", -1, 7), new c("howe", -1, -1), new c("idly", -1, 6), new c("lying", -1, 4), new c("news", -1, -1), new c("only", -1, 10), new c("singly", -1, 11), new c("skies", -1, 2), new c("skis", -1, 1), new c("sky", -1, -1), new c("tying", -1, 5), new c("ugly", -1, 8)]
+          return delete t.a_10, t.a_10 = [new u("andes", -1, -1), new u("atlas", -1, -1), new u("bias", -1, -1), new u("cosmos", -1, -1), new u("dying", -1, 3), new u("early", -1, 9), new u("gently", -1, 7), new u("howe", -1, -1), new u("idly", -1, 6), new u("lying", -1, 4), new u("news", -1, -1), new u("only", -1, 10), new u("singly", -1, 11), new u("skies", -1, 2), new u("skis", -1, 1), new u("sky", -1, -1), new u("tying", -1, 5), new u("ugly", -1, 8)]
         }
       }, {
         key: "g_v",
         get: function() {
-          return delete n.g_v, n.g_v = [17, 65, 16, 1]
+          return delete t.g_v, t.g_v = [17, 65, 16, 1]
         }
       }, {
         key: "g_v_WXY",
         get: function() {
-          return delete n.g_v_WXY, n.g_v_WXY = [1, 17, 65, 208, 1]
+          return delete t.g_v_WXY, t.g_v_WXY = [1, 17, 65, 208, 1]
         }
       }, {
         key: "g_valid_LI",
         get: function() {
-          return delete n.g_valid_LI, n.g_valid_LI = [55, 141, 2]
+          return delete t.g_valid_LI, t.g_valid_LI = [55, 141, 2]
         }
-      }]), n
-    }(u),
+      }]), t
+    }(c),
     b = function(e) {
-      function n() {
-        return i(this, n), t(this, Object.getPrototypeOf(n).apply(this, arguments))
+      function t() {
+        return r(this, t), i(this, Object.getPrototypeOf(t).apply(this, arguments))
       }
-      return r(n, e), a(n, [{
+      return s(t, e), a(t, [{
         key: "r_mark_regions$esjava$0",
         value: function() {
           var e = void 0,
-            t = void 0;
+            i = void 0;
           this.I_p1 = this.limit, this.I_p2 = this.limit;
-          B: for (;;) {
+          V: for (;;) {
             e = this.cursor;
             do {
-              if (!this.in_grouping$esjava$3(n.g_V1, 97, 246)) break;
+              if (!this.in_grouping$esjava$3(t.g_V1, 97, 246)) break;
               this.cursor = e;
-              break B
+              break V
             } while (!1);
             if (this.cursor = e, this.cursor >= this.limit) return !1;
             this.cursor++
           }
-          Z: for (;;) {
+          S: for (;;) {
             do {
-              if (!this.out_grouping$esjava$3(n.g_V1, 97, 246)) break;
-              break Z
+              if (!this.out_grouping$esjava$3(t.g_V1, 97, 246)) break;
+              break S
             } while (!1);
             if (this.cursor >= this.limit) return !1;
             this.cursor++
           }
           this.I_p1 = this.cursor;
-          H: for (;;) {
-            t = this.cursor;
+          U: for (;;) {
+            i = this.cursor;
             do {
-              if (!this.in_grouping$esjava$3(n.g_V1, 97, 246)) break;
-              this.cursor = t;
-              break H
+              if (!this.in_grouping$esjava$3(t.g_V1, 97, 246)) break;
+              this.cursor = i;
+              break U
             } while (!1);
-            if (this.cursor = t, this.cursor >= this.limit) return !1;
+            if (this.cursor = i, this.cursor >= this.limit) return !1;
             this.cursor++
           }
           Y: for (;;) {
             do {
-              if (!this.out_grouping$esjava$3(n.g_V1, 97, 246)) break;
+              if (!this.out_grouping$esjava$3(t.g_V1, 97, 246)) break;
               break Y
             } while (!1);
             if (this.cursor >= this.limit) return !1;
@@ -3785,15 +3817,15 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "r_particle_etc$esjava$0",
         value: function() {
           var e = void 0,
-            t = void 0,
-            r = void 0;
-          if (t = this.limit - this.cursor, this.cursor < this.I_p1) return !1;
-          if (this.cursor = this.I_p1, r = this.limit_backward, this.limit_backward = this.cursor, this.cursor = this.limit - t, this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(n.a_0))) return this.limit_backward = r, !1;
-          switch (this.bra = this.cursor, this.limit_backward = r, e) {
+            i = void 0,
+            s = void 0;
+          if (i = this.limit - this.cursor, this.cursor < this.I_p1) return !1;
+          if (this.cursor = this.I_p1, s = this.limit_backward, this.limit_backward = this.cursor, this.cursor = this.limit - i, this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(t.a_0))) return this.limit_backward = s, !1;
+          switch (this.bra = this.cursor, this.limit_backward = s, e) {
             case 0:
               return !1;
             case 1:
-              if (!this.in_grouping_b$esjava$3(n.g_particle_end, 97, 246)) return !1;
+              if (!this.in_grouping_b$esjava$3(t.g_particle_end, 97, 246)) return !1;
               break;
             case 2:
               if (!this.r_R2$esjava$0()) return !1
@@ -3804,21 +3836,21 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "r_possessive$esjava$0",
         value: function() {
           var e = void 0,
-            t = void 0,
-            r = void 0,
-            i = void 0;
-          if (t = this.limit - this.cursor, this.cursor < this.I_p1) return !1;
-          if (this.cursor = this.I_p1, r = this.limit_backward, this.limit_backward = this.cursor, this.cursor = this.limit - t, this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(n.a_4))) return this.limit_backward = r, !1;
-          switch (this.bra = this.cursor, this.limit_backward = r, e) {
+            i = void 0,
+            s = void 0,
+            r = void 0;
+          if (i = this.limit - this.cursor, this.cursor < this.I_p1) return !1;
+          if (this.cursor = this.I_p1, s = this.limit_backward, this.limit_backward = this.cursor, this.cursor = this.limit - i, this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(t.a_4))) return this.limit_backward = s, !1;
+          switch (this.bra = this.cursor, this.limit_backward = s, e) {
             case 0:
               return !1;
             case 1:
-              i = this.limit - this.cursor;
+              r = this.limit - this.cursor;
               do {
                 if (!this.eq_s_b$esjava$1("k")) break;
                 return !1
               } while (!1);
-              this.cursor = this.limit - i, this.slice_del$esjava$0();
+              this.cursor = this.limit - r, this.slice_del$esjava$0();
               break;
             case 2:
               if (this.slice_del$esjava$0(), this.ket = this.cursor, !this.eq_s_b$esjava$1("kse")) return !1;
@@ -3828,15 +3860,15 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
               this.slice_del$esjava$0();
               break;
             case 4:
-              if (0 === this.find_among_b$esjava$1(n.a_1)) return !1;
+              if (0 === this.find_among_b$esjava$1(t.a_1)) return !1;
               this.slice_del$esjava$0();
               break;
             case 5:
-              if (0 === this.find_among_b$esjava$1(n.a_2)) return !1;
+              if (0 === this.find_among_b$esjava$1(t.a_2)) return !1;
               this.slice_del$esjava$0();
               break;
             case 6:
-              if (0 === this.find_among_b$esjava$1(n.a_3)) return !1;
+              if (0 === this.find_among_b$esjava$1(t.a_3)) return !1;
               this.slice_del$esjava$0()
           }
           return !0
@@ -3844,25 +3876,25 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
       }, {
         key: "r_LONG$esjava$0",
         value: function() {
-          return 0 !== this.find_among_b$esjava$1(n.a_5)
+          return 0 !== this.find_among_b$esjava$1(t.a_5)
         }
       }, {
         key: "r_VI$esjava$0",
         value: function() {
-          return !!this.eq_s_b$esjava$1("i") && !!this.in_grouping_b$esjava$3(n.g_V2, 97, 246)
+          return !!this.eq_s_b$esjava$1("i") && !!this.in_grouping_b$esjava$3(t.g_V2, 97, 246)
         }
       }, {
         key: "r_case_ending$esjava$0",
         value: function() {
           var e = void 0,
-            t = void 0,
-            r = void 0,
             i = void 0,
+            s = void 0,
+            r = void 0,
             a = void 0,
-            o = void 0;
-          if (t = this.limit - this.cursor, this.cursor < this.I_p1) return !1;
-          if (this.cursor = this.I_p1, r = this.limit_backward, this.limit_backward = this.cursor, this.cursor = this.limit - t, this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(this.a_6))) return this.limit_backward = r, !1;
-          switch (this.bra = this.cursor, this.limit_backward = r, e) {
+            n = void 0;
+          if (i = this.limit - this.cursor, this.cursor < this.I_p1) return !1;
+          if (this.cursor = this.I_p1, s = this.limit_backward, this.limit_backward = this.cursor, this.cursor = this.limit - i, this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(this.a_6))) return this.limit_backward = s, !1;
+          switch (this.bra = this.cursor, this.limit_backward = s, e) {
             case 0:
               return !1;
             case 1:
@@ -3885,29 +3917,29 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
               if (!this.eq_s_b$esjava$1("\xf6")) return !1;
               break;
             case 7:
-              i = this.limit - this.cursor;
-              l: do {
+              r = this.limit - this.cursor;
+              e: do {
                 a = this.limit - this.cursor;
-                c: do {
-                  o = this.limit - this.cursor;
+                i: do {
+                  n = this.limit - this.cursor;
                   do {
                     if (!this.r_LONG$esjava$0()) break;
-                    break c
+                    break i
                   } while (!1);
-                  if (this.cursor = this.limit - o, !this.eq_s_b$esjava$1("ie")) {
-                    this.cursor = this.limit - i;
-                    break l
+                  if (this.cursor = this.limit - n, !this.eq_s_b$esjava$1("ie")) {
+                    this.cursor = this.limit - r;
+                    break e
                   }
                 } while (!1);
                 if (this.cursor = this.limit - a, this.cursor <= this.limit_backward) {
-                  this.cursor = this.limit - i;
+                  this.cursor = this.limit - r;
                   break
                 }
                 this.cursor--, this.bra = this.cursor
               } while (!1);
               break;
             case 8:
-              if (!this.in_grouping_b$esjava$3(n.g_V1, 97, 246) || !this.out_grouping_b$esjava$3(n.g_V1, 97, 246)) return !1
+              if (!this.in_grouping_b$esjava$3(t.g_V1, 97, 246) || !this.out_grouping_b$esjava$3(t.g_V1, 97, 246)) return !1
           }
           return this.slice_del$esjava$0(), this.B_ending_removed = !0, !0
         }
@@ -3915,21 +3947,21 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "r_other_endings$esjava$0",
         value: function() {
           var e = void 0,
-            t = void 0,
-            r = void 0,
-            i = void 0;
-          if (t = this.limit - this.cursor, this.cursor < this.I_p2) return !1;
-          if (this.cursor = this.I_p2, r = this.limit_backward, this.limit_backward = this.cursor, this.cursor = this.limit - t, this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(n.a_7))) return this.limit_backward = r, !1;
-          switch (this.bra = this.cursor, this.limit_backward = r, e) {
+            i = void 0,
+            s = void 0,
+            r = void 0;
+          if (i = this.limit - this.cursor, this.cursor < this.I_p2) return !1;
+          if (this.cursor = this.I_p2, s = this.limit_backward, this.limit_backward = this.cursor, this.cursor = this.limit - i, this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(t.a_7))) return this.limit_backward = s, !1;
+          switch (this.bra = this.cursor, this.limit_backward = s, e) {
             case 0:
               return !1;
             case 1:
-              i = this.limit - this.cursor;
+              r = this.limit - this.cursor;
               do {
                 if (!this.eq_s_b$esjava$1("po")) break;
                 return !1
               } while (!1);
-              this.cursor = this.limit - i
+              this.cursor = this.limit - r
           }
           return this.slice_del$esjava$0(), !0
         }
@@ -3937,33 +3969,33 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "r_i_plural$esjava$0",
         value: function() {
           var e = void 0,
-            t = void 0;
-          return e = this.limit - this.cursor, !(this.cursor < this.I_p1) && ((this.cursor = this.I_p1, t = this.limit_backward, this.limit_backward = this.cursor, this.cursor = this.limit - e, this.ket = this.cursor, 0 === this.find_among_b$esjava$1(n.a_8)) ? (this.limit_backward = t, !1) : (this.bra = this.cursor, this.limit_backward = t, this.slice_del$esjava$0(), !0))
+            i = void 0;
+          return e = this.limit - this.cursor, !(this.cursor < this.I_p1) && ((this.cursor = this.I_p1, i = this.limit_backward, this.limit_backward = this.cursor, this.cursor = this.limit - e, this.ket = this.cursor, 0 === this.find_among_b$esjava$1(t.a_8)) ? (this.limit_backward = i, !1) : (this.bra = this.cursor, this.limit_backward = i, this.slice_del$esjava$0(), !0))
         }
       }, {
         key: "r_t_plural$esjava$0",
         value: function() {
           var e = void 0,
-            t = void 0,
-            r = void 0,
             i = void 0,
+            s = void 0,
+            r = void 0,
             a = void 0,
-            o = void 0,
-            s = void 0;
-          if (t = this.limit - this.cursor, this.cursor < this.I_p1) return !1;
-          if (this.cursor = this.I_p1, r = this.limit_backward, this.limit_backward = this.cursor, this.cursor = this.limit - t, this.ket = this.cursor, !this.eq_s_b$esjava$1("t") || (this.bra = this.cursor, i = this.limit - this.cursor, !this.in_grouping_b$esjava$3(n.g_V1, 97, 246))) return this.limit_backward = r, !1;
-          if (this.cursor = this.limit - i, this.slice_del$esjava$0(), this.limit_backward = r, a = this.limit - this.cursor, this.cursor < this.I_p2) return !1;
-          if (this.cursor = this.I_p2, o = this.limit_backward, this.limit_backward = this.cursor, this.cursor = this.limit - a, this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(n.a_9))) return this.limit_backward = o, !1;
-          switch (this.bra = this.cursor, this.limit_backward = o, e) {
+            n = void 0,
+            h = void 0;
+          if (i = this.limit - this.cursor, this.cursor < this.I_p1) return !1;
+          if (this.cursor = this.I_p1, s = this.limit_backward, this.limit_backward = this.cursor, this.cursor = this.limit - i, this.ket = this.cursor, !this.eq_s_b$esjava$1("t") || (this.bra = this.cursor, r = this.limit - this.cursor, !this.in_grouping_b$esjava$3(t.g_V1, 97, 246))) return this.limit_backward = s, !1;
+          if (this.cursor = this.limit - r, this.slice_del$esjava$0(), this.limit_backward = s, a = this.limit - this.cursor, this.cursor < this.I_p2) return !1;
+          if (this.cursor = this.I_p2, n = this.limit_backward, this.limit_backward = this.cursor, this.cursor = this.limit - a, this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(t.a_9))) return this.limit_backward = n, !1;
+          switch (this.bra = this.cursor, this.limit_backward = n, e) {
             case 0:
               return !1;
             case 1:
-              s = this.limit - this.cursor;
+              h = this.limit - this.cursor;
               do {
                 if (!this.eq_s_b$esjava$1("po")) break;
                 return !1
               } while (!1);
-              this.cursor = this.limit - s
+              this.cursor = this.limit - h
           }
           return this.slice_del$esjava$0(), !0
         }
@@ -3971,53 +4003,53 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "r_tidy$esjava$0",
         value: function() {
           var e = void 0,
-            t = void 0,
-            r = void 0,
             i = void 0,
-            a = void 0,
-            o = void 0,
             s = void 0,
-            l = void 0,
-            c = void 0;
+            r = void 0,
+            a = void 0,
+            n = void 0,
+            h = void 0,
+            o = void 0,
+            u = void 0;
           if (e = this.limit - this.cursor, this.cursor < this.I_p1) return !1;
-          this.cursor = this.I_p1, t = this.limit_backward, this.limit_backward = this.cursor, this.cursor = this.limit - e, r = this.limit - this.cursor;
+          this.cursor = this.I_p1, i = this.limit_backward, this.limit_backward = this.cursor, this.cursor = this.limit - e, s = this.limit - this.cursor;
           do {
-            if (i = this.limit - this.cursor, !this.r_LONG$esjava$0() || (this.cursor = this.limit - i, this.ket = this.cursor, this.cursor <= this.limit_backward)) break;
+            if (r = this.limit - this.cursor, !this.r_LONG$esjava$0() || (this.cursor = this.limit - r, this.ket = this.cursor, this.cursor <= this.limit_backward)) break;
             this.cursor--, this.bra = this.cursor, this.slice_del$esjava$0()
           } while (!1);
-          this.cursor = this.limit - r, a = this.limit - this.cursor;
+          this.cursor = this.limit - s, a = this.limit - this.cursor;
           do {
-            if (this.ket = this.cursor, !this.in_grouping_b$esjava$3(n.g_AEI, 97, 228) || (this.bra = this.cursor, !this.out_grouping_b$esjava$3(n.g_V1, 97, 246))) break;
+            if (this.ket = this.cursor, !this.in_grouping_b$esjava$3(t.g_AEI, 97, 228) || (this.bra = this.cursor, !this.out_grouping_b$esjava$3(t.g_V1, 97, 246))) break;
             this.slice_del$esjava$0()
           } while (!1);
-          this.cursor = this.limit - a, o = this.limit - this.cursor;
-          u: do {
+          this.cursor = this.limit - a, n = this.limit - this.cursor;
+          s: do {
             if (this.ket = this.cursor, !this.eq_s_b$esjava$1("j")) break;
             this.bra = this.cursor;
-            d: do {
-              s = this.limit - this.cursor;
+            t: do {
+              h = this.limit - this.cursor;
               do {
                 if (!this.eq_s_b$esjava$1("o")) break;
-                break d
+                break t
               } while (!1);
-              if (this.cursor = this.limit - s, !this.eq_s_b$esjava$1("u")) break u
+              if (this.cursor = this.limit - h, !this.eq_s_b$esjava$1("u")) break s
             } while (!1);
             this.slice_del$esjava$0()
           } while (!1);
-          this.cursor = this.limit - o, l = this.limit - this.cursor;
+          this.cursor = this.limit - n, o = this.limit - this.cursor;
           do {
             if (this.ket = this.cursor, !this.eq_s_b$esjava$1("o") || (this.bra = this.cursor, !this.eq_s_b$esjava$1("j"))) break;
             this.slice_del$esjava$0()
           } while (!1);
-          this.cursor = this.limit - l, this.limit_backward = t;
+          this.cursor = this.limit - o, this.limit_backward = i;
           Y: for (;;) {
-            c = this.limit - this.cursor;
+            u = this.limit - this.cursor;
             do {
-              if (!this.out_grouping_b$esjava$3(n.g_V1, 97, 246)) break;
-              this.cursor = this.limit - c;
+              if (!this.out_grouping_b$esjava$3(t.g_V1, 97, 246)) break;
+              this.cursor = this.limit - u;
               break Y
             } while (!1);
-            if (this.cursor = this.limit - c, this.cursor <= this.limit_backward) return !1;
+            if (this.cursor = this.limit - u, this.cursor <= this.limit_backward) return !1;
             this.cursor--
           }
           return this.ket = this.cursor, !(this.cursor <= this.limit_backward) && (this.cursor--, this.bra = this.cursor, this.S_x = this.slice_to$esjava$1(this.S_x), !!this.eq_s_b$esjava$1(this.S_x.toString()) && (this.slice_del$esjava$0(), !0))
@@ -4026,67 +4058,67 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "stem$esjava$0",
         value: function() {
           var e = void 0,
-            t = void 0,
-            n = void 0,
-            r = void 0,
             i = void 0,
-            a = void 0,
-            o = void 0,
             s = void 0,
-            l = void 0;
+            t = void 0,
+            r = void 0,
+            a = void 0,
+            n = void 0,
+            h = void 0,
+            o = void 0;
           e = this.cursor;
           do
             if (!this.r_mark_regions$esjava$0()) break; while (!1);
-          this.cursor = e, this.B_ending_removed = !1, this.limit_backward = this.cursor, this.cursor = this.limit, t = this.limit - this.cursor;
+          this.cursor = e, this.B_ending_removed = !1, this.limit_backward = this.cursor, this.cursor = this.limit, i = this.limit - this.cursor;
           do
             if (!this.r_particle_etc$esjava$0()) break; while (!1);
-          this.cursor = this.limit - t, n = this.limit - this.cursor;
+          this.cursor = this.limit - i, s = this.limit - this.cursor;
           do
             if (!this.r_possessive$esjava$0()) break; while (!1);
-          this.cursor = this.limit - n, r = this.limit - this.cursor;
+          this.cursor = this.limit - s, t = this.limit - this.cursor;
           do
             if (!this.r_case_ending$esjava$0()) break; while (!1);
-          this.cursor = this.limit - r, i = this.limit - this.cursor;
+          this.cursor = this.limit - t, r = this.limit - this.cursor;
           do
             if (!this.r_other_endings$esjava$0()) break; while (!1);
-          this.cursor = this.limit - i;
-          _: do {
+          this.cursor = this.limit - r;
+          a: do {
             a = this.limit - this.cursor;
             do {
               if (!this.B_ending_removed) break;
-              o = this.limit - this.cursor;
+              n = this.limit - this.cursor;
               do
                 if (!this.r_i_plural$esjava$0()) break; while (!1);
-              this.cursor = this.limit - o;
-              break _
+              this.cursor = this.limit - n;
+              break a
             } while (!1);
-            this.cursor = this.limit - a, s = this.limit - this.cursor;
+            this.cursor = this.limit - a, h = this.limit - this.cursor;
             do
               if (!this.r_t_plural$esjava$0()) break; while (!1);
-            this.cursor = this.limit - s
+            this.cursor = this.limit - h
           } while (!1);
-          l = this.limit - this.cursor;
+          o = this.limit - this.cursor;
           do
             if (!this.r_tidy$esjava$0()) break; while (!1);
-          return this.cursor = this.limit - l, this.cursor = this.limit_backward, !0
+          return this.cursor = this.limit - o, this.cursor = this.limit_backward, !0
         }
       }, {
         key: "stem",
         value: function() {
-          for (var e, t = arguments.length, r = Array(t), i = 0; i < t; i++) r[i] = arguments[i];
-          return 0 === r.length ? this.stem$esjava$0.apply(this, r) : (e = o(Object.getPrototypeOf(n.prototype), "stem", this)).call.apply(e, [this].concat(r))
+          for (var e, i = arguments.length, s = Array(i), r = 0; r < i; r++) s[r] = arguments[r];
+          return 0 === s.length ? this.stem$esjava$0.apply(this, s) : (e = n(Object.getPrototypeOf(t.prototype), "stem", this)).call.apply(e, [this].concat(s))
         }
       }, {
         key: "r_LONG",
         value: function() {
-          for (var e, t = arguments.length, r = Array(t), i = 0; i < t; i++) r[i] = arguments[i];
-          return 0 === r.length ? this.r_LONG$esjava$0.apply(this, r) : (e = o(Object.getPrototypeOf(n.prototype), "r_LONG", this)).call.apply(e, [this].concat(r))
+          for (var e, i = arguments.length, s = Array(i), r = 0; r < i; r++) s[r] = arguments[r];
+          return 0 === s.length ? this.r_LONG$esjava$0.apply(this, s) : (e = n(Object.getPrototypeOf(t.prototype), "r_LONG", this)).call.apply(e, [this].concat(s))
         }
       }, {
         key: "r_VI",
         value: function() {
-          for (var e, t = arguments.length, r = Array(t), i = 0; i < t; i++) r[i] = arguments[i];
-          return 0 === r.length ? this.r_VI$esjava$0.apply(this, r) : (e = o(Object.getPrototypeOf(n.prototype), "r_VI", this)).call.apply(e, [this].concat(r))
+          for (var e, i = arguments.length, s = Array(i), r = 0; r < i; r++) s[r] = arguments[r];
+          return 0 === s.length ? this.r_VI$esjava$0.apply(this, s) : (e = n(Object.getPrototypeOf(t.prototype), "r_VI", this)).call.apply(e, [this].concat(s))
         }
       }, {
         key: "es6bridge",
@@ -4099,7 +4131,7 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
       }, {
         key: "a_6",
         get: function() {
-          return Object.prototype.hasOwnProperty.call(this, "_$esjava$a_6") ? this._$esjava$a_6 : this._$esjava$a_6 = [new c("a", -1, 8), new c("lla", 0, -1), new c("na", 0, -1), new c("ssa", 0, -1), new c("ta", 0, -1), new c("lta", 4, -1), new c("sta", 4, -1), new c("tta", 4, 9), new c("lle", -1, -1), new c("ine", -1, -1), new c("ksi", -1, -1), new c("n", -1, 7), new c("han", 11, 1), new c("den", 11, -1, "r_VI", this.es6bridge), new c("seen", 11, -1, "r_LONG", this.es6bridge), new c("hen", 11, 2), new c("tten", 11, -1, "r_VI", this.es6bridge), new c("hin", 11, 3), new c("siin", 11, -1, "r_VI", this.es6bridge), new c("hon", 11, 4), new c("h\xe4n", 11, 5), new c("h\xf6n", 11, 6), new c("\xe4", -1, 8), new c("ll\xe4", 22, -1), new c("n\xe4", 22, -1), new c("ss\xe4", 22, -1), new c("t\xe4", 22, -1), new c("lt\xe4", 26, -1), new c("st\xe4", 26, -1), new c("tt\xe4", 26, 9)]
+          return Object.prototype.hasOwnProperty.call(this, "_$esjava$a_6") ? this._$esjava$a_6 : this._$esjava$a_6 = [new u("a", -1, 8), new u("lla", 0, -1), new u("na", 0, -1), new u("ssa", 0, -1), new u("ta", 0, -1), new u("lta", 4, -1), new u("sta", 4, -1), new u("tta", 4, 9), new u("lle", -1, -1), new u("ine", -1, -1), new u("ksi", -1, -1), new u("n", -1, 7), new u("han", 11, 1), new u("den", 11, -1, "r_VI", this.es6bridge), new u("seen", 11, -1, "r_LONG", this.es6bridge), new u("hen", 11, 2), new u("tten", 11, -1, "r_VI", this.es6bridge), new u("hin", 11, 3), new u("siin", 11, -1, "r_VI", this.es6bridge), new u("hon", 11, 4), new u("h\xe4n", 11, 5), new u("h\xf6n", 11, 6), new u("\xe4", -1, 8), new u("ll\xe4", 22, -1), new u("n\xe4", 22, -1), new u("ss\xe4", 22, -1), new u("t\xe4", 22, -1), new u("lt\xe4", 26, -1), new u("st\xe4", 26, -1), new u("tt\xe4", 26, 9)]
         },
         set: function(e) {
           this._$esjava$a_6 = e
@@ -4115,7 +4147,7 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
       }, {
         key: "S_x",
         get: function() {
-          return Object.prototype.hasOwnProperty.call(this, "_$esjava$S_x") ? this._$esjava$S_x : this._$esjava$S_x = new l
+          return Object.prototype.hasOwnProperty.call(this, "_$esjava$S_x") ? this._$esjava$S_x : this._$esjava$S_x = new o
         },
         set: function(e) {
           this._$esjava$S_x = e
@@ -4139,125 +4171,125 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
       }], [{
         key: "a_0",
         get: function() {
-          return delete n.a_0, n.a_0 = [new c("pa", -1, 1), new c("sti", -1, 2), new c("kaan", -1, 1), new c("han", -1, 1), new c("kin", -1, 1), new c("h\xe4n", -1, 1), new c("k\xe4\xe4n", -1, 1), new c("ko", -1, 1), new c("p\xe4", -1, 1), new c("k\xf6", -1, 1)]
+          return delete t.a_0, t.a_0 = [new u("pa", -1, 1), new u("sti", -1, 2), new u("kaan", -1, 1), new u("han", -1, 1), new u("kin", -1, 1), new u("h\xe4n", -1, 1), new u("k\xe4\xe4n", -1, 1), new u("ko", -1, 1), new u("p\xe4", -1, 1), new u("k\xf6", -1, 1)]
         }
       }, {
         key: "a_1",
         get: function() {
-          return delete n.a_1, n.a_1 = [new c("lla", -1, -1), new c("na", -1, -1), new c("ssa", -1, -1), new c("ta", -1, -1), new c("lta", 3, -1), new c("sta", 3, -1)]
+          return delete t.a_1, t.a_1 = [new u("lla", -1, -1), new u("na", -1, -1), new u("ssa", -1, -1), new u("ta", -1, -1), new u("lta", 3, -1), new u("sta", 3, -1)]
         }
       }, {
         key: "a_2",
         get: function() {
-          return delete n.a_2, n.a_2 = [new c("ll\xe4", -1, -1), new c("n\xe4", -1, -1), new c("ss\xe4", -1, -1), new c("t\xe4", -1, -1), new c("lt\xe4", 3, -1), new c("st\xe4", 3, -1)]
+          return delete t.a_2, t.a_2 = [new u("ll\xe4", -1, -1), new u("n\xe4", -1, -1), new u("ss\xe4", -1, -1), new u("t\xe4", -1, -1), new u("lt\xe4", 3, -1), new u("st\xe4", 3, -1)]
         }
       }, {
         key: "a_3",
         get: function() {
-          return delete n.a_3, n.a_3 = [new c("lle", -1, -1), new c("ine", -1, -1)]
+          return delete t.a_3, t.a_3 = [new u("lle", -1, -1), new u("ine", -1, -1)]
         }
       }, {
         key: "a_4",
         get: function() {
-          return delete n.a_4, n.a_4 = [new c("nsa", -1, 3), new c("mme", -1, 3), new c("nne", -1, 3), new c("ni", -1, 2), new c("si", -1, 1), new c("an", -1, 4), new c("en", -1, 6), new c("\xe4n", -1, 5), new c("ns\xe4", -1, 3)]
+          return delete t.a_4, t.a_4 = [new u("nsa", -1, 3), new u("mme", -1, 3), new u("nne", -1, 3), new u("ni", -1, 2), new u("si", -1, 1), new u("an", -1, 4), new u("en", -1, 6), new u("\xe4n", -1, 5), new u("ns\xe4", -1, 3)]
         }
       }, {
         key: "a_5",
         get: function() {
-          return delete n.a_5, n.a_5 = [new c("aa", -1, -1), new c("ee", -1, -1), new c("ii", -1, -1), new c("oo", -1, -1), new c("uu", -1, -1), new c("\xe4\xe4", -1, -1), new c("\xf6\xf6", -1, -1)]
+          return delete t.a_5, t.a_5 = [new u("aa", -1, -1), new u("ee", -1, -1), new u("ii", -1, -1), new u("oo", -1, -1), new u("uu", -1, -1), new u("\xe4\xe4", -1, -1), new u("\xf6\xf6", -1, -1)]
         }
       }, {
         key: "a_7",
         get: function() {
-          return delete n.a_7, n.a_7 = [new c("eja", -1, -1), new c("mma", -1, 1), new c("imma", 1, -1), new c("mpa", -1, 1), new c("impa", 3, -1), new c("mmi", -1, 1), new c("immi", 5, -1), new c("mpi", -1, 1), new c("impi", 7, -1), new c("ej\xe4", -1, -1), new c("mm\xe4", -1, 1), new c("imm\xe4", 10, -1), new c("mp\xe4", -1, 1), new c("imp\xe4", 12, -1)]
+          return delete t.a_7, t.a_7 = [new u("eja", -1, -1), new u("mma", -1, 1), new u("imma", 1, -1), new u("mpa", -1, 1), new u("impa", 3, -1), new u("mmi", -1, 1), new u("immi", 5, -1), new u("mpi", -1, 1), new u("impi", 7, -1), new u("ej\xe4", -1, -1), new u("mm\xe4", -1, 1), new u("imm\xe4", 10, -1), new u("mp\xe4", -1, 1), new u("imp\xe4", 12, -1)]
         }
       }, {
         key: "a_8",
         get: function() {
-          return delete n.a_8, n.a_8 = [new c("i", -1, -1), new c("j", -1, -1)]
+          return delete t.a_8, t.a_8 = [new u("i", -1, -1), new u("j", -1, -1)]
         }
       }, {
         key: "a_9",
         get: function() {
-          return delete n.a_9, n.a_9 = [new c("mma", -1, 1), new c("imma", 0, -1)]
+          return delete t.a_9, t.a_9 = [new u("mma", -1, 1), new u("imma", 0, -1)]
         }
       }, {
         key: "g_AEI",
         get: function() {
-          return delete n.g_AEI, n.g_AEI = [17, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8]
+          return delete t.g_AEI, t.g_AEI = [17, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8]
         }
       }, {
         key: "g_V1",
         get: function() {
-          return delete n.g_V1, n.g_V1 = [17, 65, 16, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8, 0, 32]
+          return delete t.g_V1, t.g_V1 = [17, 65, 16, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8, 0, 32]
         }
       }, {
         key: "g_V2",
         get: function() {
-          return delete n.g_V2, n.g_V2 = [17, 65, 16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8, 0, 32]
+          return delete t.g_V2, t.g_V2 = [17, 65, 16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8, 0, 32]
         }
       }, {
         key: "g_particle_end",
         get: function() {
-          return delete n.g_particle_end, n.g_particle_end = [17, 97, 24, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8, 0, 32]
+          return delete t.g_particle_end, t.g_particle_end = [17, 97, 24, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8, 0, 32]
         }
-      }]), n
-    }(u),
-    y = function(e) {
-      function n() {
-        return i(this, n), t(this, Object.getPrototypeOf(n).apply(this, arguments))
+      }]), t
+    }(c),
+    m = function(e) {
+      function t() {
+        return r(this, t), i(this, Object.getPrototypeOf(t).apply(this, arguments))
       }
-      return r(n, e), a(n, [{
+      return s(t, e), a(t, [{
         key: "r_prelude$esjava$0",
         value: function() {
           var e = void 0,
-            t = void 0,
-            r = void 0,
-            i = void 0;
-          G: for (;;) {
+            i = void 0,
+            s = void 0,
+            r = void 0;
+          P: for (;;) {
             e = this.cursor;
-            c: do {
-              Z: for (;;) {
-                t = this.cursor;
-                d: do {
-                  f: do {
-                    r = this.cursor;
-                    _: do {
-                      if (!this.in_grouping$esjava$3(n.g_v, 97, 251)) break;
+            i: do {
+              S: for (;;) {
+                i = this.cursor;
+                t: do {
+                  r: do {
+                    s = this.cursor;
+                    a: do {
+                      if (!this.in_grouping$esjava$3(t.g_v, 97, 251)) break;
                       this.bra = this.cursor;
-                      p: do {
-                        i = this.cursor;
+                      n: do {
+                        r = this.cursor;
                         do {
-                          if (!this.eq_s$esjava$1("u") || (this.ket = this.cursor, !this.in_grouping$esjava$3(n.g_v, 97, 251))) break;
+                          if (!this.eq_s$esjava$1("u") || (this.ket = this.cursor, !this.in_grouping$esjava$3(t.g_v, 97, 251))) break;
                           this.slice_from$esjava$1("U");
-                          break p
+                          break n
                         } while (!1);
-                        this.cursor = i;
+                        this.cursor = r;
                         do {
-                          if (!this.eq_s$esjava$1("i") || (this.ket = this.cursor, !this.in_grouping$esjava$3(n.g_v, 97, 251))) break;
+                          if (!this.eq_s$esjava$1("i") || (this.ket = this.cursor, !this.in_grouping$esjava$3(t.g_v, 97, 251))) break;
                           this.slice_from$esjava$1("I");
-                          break p
+                          break n
                         } while (!1);
-                        if (this.cursor = i, !this.eq_s$esjava$1("y")) break _;
+                        if (this.cursor = r, !this.eq_s$esjava$1("y")) break a;
                         this.ket = this.cursor, this.slice_from$esjava$1("Y")
                       } while (!1);
-                      break f
+                      break r
                     } while (!1);
-                    this.cursor = r;
+                    this.cursor = s;
                     do {
-                      if (this.bra = this.cursor, !this.eq_s$esjava$1("y") || (this.ket = this.cursor, !this.in_grouping$esjava$3(n.g_v, 97, 251))) break;
+                      if (this.bra = this.cursor, !this.eq_s$esjava$1("y") || (this.ket = this.cursor, !this.in_grouping$esjava$3(t.g_v, 97, 251))) break;
                       this.slice_from$esjava$1("Y");
-                      break f
+                      break r
                     } while (!1);
-                    if (this.cursor = r, !this.eq_s$esjava$1("q") || (this.bra = this.cursor, !this.eq_s$esjava$1("u"))) break d;
+                    if (this.cursor = s, !this.eq_s$esjava$1("q") || (this.bra = this.cursor, !this.eq_s$esjava$1("u"))) break t;
                     this.ket = this.cursor, this.slice_from$esjava$1("U")
-                  } while (!1);this.cursor = t;
-                  break Z
+                  } while (!1);this.cursor = i;
+                  break S
                 } while (!1);
-                if (this.cursor = t, this.cursor >= this.limit) break c;
+                if (this.cursor = i, this.cursor >= this.limit) break i;
                 this.cursor++
               }
-              continue G
+              continue P
             } while (!1);
             this.cursor = e;
             break
@@ -4268,84 +4300,84 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "r_mark_regions$esjava$0",
         value: function() {
           var e = void 0,
-            t = void 0,
-            r = void 0;
+            i = void 0,
+            s = void 0;
           this.I_pV = this.limit, this.I_p1 = this.limit, this.I_p2 = this.limit, e = this.cursor;
-          l: do {
-            c: do {
-              t = this.cursor;
+          e: do {
+            i: do {
+              i = this.cursor;
               do {
-                if (!this.in_grouping$esjava$3(n.g_v, 97, 251) || !this.in_grouping$esjava$3(n.g_v, 97, 251) || this.cursor >= this.limit) break;
+                if (!this.in_grouping$esjava$3(t.g_v, 97, 251) || !this.in_grouping$esjava$3(t.g_v, 97, 251) || this.cursor >= this.limit) break;
                 this.cursor++;
-                break c
+                break i
               } while (!1);
-              this.cursor = t;
+              this.cursor = i;
               do {
-                if (0 === this.find_among$esjava$1(n.a_0)) break;
-                break c
+                if (0 === this.find_among$esjava$1(t.a_0)) break;
+                break i
               } while (!1);
-              if (this.cursor = t, this.cursor >= this.limit) break l;
+              if (this.cursor = i, this.cursor >= this.limit) break e;
               this.cursor++;
-              H: for (;;) {
+              U: for (;;) {
                 do {
-                  if (!this.in_grouping$esjava$3(n.g_v, 97, 251)) break;
-                  break H
+                  if (!this.in_grouping$esjava$3(t.g_v, 97, 251)) break;
+                  break U
                 } while (!1);
-                if (this.cursor >= this.limit) break l;
+                if (this.cursor >= this.limit) break e;
                 this.cursor++
               }
             } while (!1);this.I_pV = this.cursor
           } while (!1);
-          this.cursor = e, r = this.cursor;
-          p: do {
-            w: for (;;) {
+          this.cursor = e, s = this.cursor;
+          n: do {
+            j: for (;;) {
               do {
-                if (!this.in_grouping$esjava$3(n.g_v, 97, 251)) break;
-                break w
+                if (!this.in_grouping$esjava$3(t.g_v, 97, 251)) break;
+                break j
               } while (!1);
-              if (this.cursor >= this.limit) break p;
+              if (this.cursor >= this.limit) break n;
               this.cursor++
             }
-            V: for (;;) {
+            B: for (;;) {
               do {
-                if (!this.out_grouping$esjava$3(n.g_v, 97, 251)) break;
-                break V
+                if (!this.out_grouping$esjava$3(t.g_v, 97, 251)) break;
+                break B
               } while (!1);
-              if (this.cursor >= this.limit) break p;
+              if (this.cursor >= this.limit) break n;
               this.cursor++
             }
-            this.I_p1 = this.cursor;P: for (;;) {
+            this.I_p1 = this.cursor;p: for (;;) {
               do {
-                if (!this.in_grouping$esjava$3(n.g_v, 97, 251)) break;
-                break P
+                if (!this.in_grouping$esjava$3(t.g_v, 97, 251)) break;
+                break p
               } while (!1);
-              if (this.cursor >= this.limit) break p;
+              if (this.cursor >= this.limit) break n;
               this.cursor++
             }
-            W: for (;;) {
+            N: for (;;) {
               do {
-                if (!this.out_grouping$esjava$3(n.g_v, 97, 251)) break;
-                break W
+                if (!this.out_grouping$esjava$3(t.g_v, 97, 251)) break;
+                break N
               } while (!1);
-              if (this.cursor >= this.limit) break p;
+              if (this.cursor >= this.limit) break n;
               this.cursor++
             }
             this.I_p2 = this.cursor
           } while (!1);
-          return this.cursor = r, !0
+          return this.cursor = s, !0
         }
       }, {
         key: "r_postlude$esjava$0",
         value: function() {
           var e = void 0,
-            t = void 0;
-          G: for (;;) {
-            t = this.cursor;
-            c: do {
-              if (this.bra = this.cursor, 0 === (e = this.find_among$esjava$1(n.a_1))) break;
+            i = void 0;
+          P: for (;;) {
+            i = this.cursor;
+            i: do {
+              if (this.bra = this.cursor, 0 === (e = this.find_among$esjava$1(t.a_1))) break;
               switch (this.ket = this.cursor, e) {
                 case 0:
-                  break c;
+                  break i;
                 case 1:
                   this.slice_from$esjava$1("i");
                   break;
@@ -4356,12 +4388,12 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
                   this.slice_from$esjava$1("y");
                   break;
                 case 4:
-                  if (this.cursor >= this.limit) break c;
+                  if (this.cursor >= this.limit) break i;
                   this.cursor++
               }
-              continue G
+              continue P
             } while (!1);
-            this.cursor = t;
+            this.cursor = i;
             break
           }
           return !0
@@ -4385,18 +4417,18 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "r_standard_suffix$esjava$0",
         value: function() {
           var e = void 0,
-            t = void 0,
-            r = void 0,
             i = void 0,
-            a = void 0,
-            o = void 0,
             s = void 0,
-            l = void 0,
-            c = void 0,
+            r = void 0,
+            a = void 0,
+            n = void 0,
+            h = void 0,
+            o = void 0,
             u = void 0,
-            d = void 0,
-            f = void 0;
-          if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(n.a_4))) return !1;
+            c = void 0,
+            _ = void 0,
+            l = void 0;
+          if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(t.a_4))) return !1;
           switch (this.bra = this.cursor, e) {
             case 0:
               return !1;
@@ -4406,21 +4438,21 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
               break;
             case 2:
               if (!this.r_R2$esjava$0()) return !1;
-              this.slice_del$esjava$0(), t = this.limit - this.cursor;
+              this.slice_del$esjava$0(), i = this.limit - this.cursor;
               do {
                 if (this.ket = this.cursor, !this.eq_s_b$esjava$1("ic")) {
-                  this.cursor = this.limit - t;
+                  this.cursor = this.limit - i;
                   break
                 }
                 this.bra = this.cursor;
-                c: do {
-                  r = this.limit - this.cursor;
+                i: do {
+                  s = this.limit - this.cursor;
                   do {
                     if (!this.r_R2$esjava$0()) break;
                     this.slice_del$esjava$0();
-                    break c
+                    break i
                   } while (!1);
-                  this.cursor = this.limit - r, this.slice_from$esjava$1("iqU")
+                  this.cursor = this.limit - s, this.slice_from$esjava$1("iqU")
                 } while (!1)
               } while (!1);
               break;
@@ -4438,49 +4470,49 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
               break;
             case 6:
               if (!this.r_RV$esjava$0()) return !1;
-              this.slice_del$esjava$0(), i = this.limit - this.cursor;
-              d: do {
-                if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(n.a_2))) {
-                  this.cursor = this.limit - i;
+              this.slice_del$esjava$0(), r = this.limit - this.cursor;
+              t: do {
+                if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(t.a_2))) {
+                  this.cursor = this.limit - r;
                   break
                 }
                 switch (this.bra = this.cursor, e) {
                   case 0:
-                    this.cursor = this.limit - i;
-                    break d;
+                    this.cursor = this.limit - r;
+                    break t;
                   case 1:
                     if (!this.r_R2$esjava$0() || (this.slice_del$esjava$0(), this.ket = this.cursor, !this.eq_s_b$esjava$1("at")) || (this.bra = this.cursor, !this.r_R2$esjava$0())) {
-                      this.cursor = this.limit - i;
-                      break d
+                      this.cursor = this.limit - r;
+                      break t
                     }
                     this.slice_del$esjava$0();
                     break;
                   case 2:
-                    f: do {
+                    r: do {
                       a = this.limit - this.cursor;
                       do {
                         if (!this.r_R2$esjava$0()) break;
                         this.slice_del$esjava$0();
-                        break f
+                        break r
                       } while (!1);
                       if (this.cursor = this.limit - a, !this.r_R1$esjava$0()) {
-                        this.cursor = this.limit - i;
-                        break d
+                        this.cursor = this.limit - r;
+                        break t
                       }
                       this.slice_from$esjava$1("eux")
                     } while (!1);
                     break;
                   case 3:
                     if (!this.r_R2$esjava$0()) {
-                      this.cursor = this.limit - i;
-                      break d
+                      this.cursor = this.limit - r;
+                      break t
                     }
                     this.slice_del$esjava$0();
                     break;
                   case 4:
                     if (!this.r_RV$esjava$0()) {
-                      this.cursor = this.limit - i;
-                      break d
+                      this.cursor = this.limit - r;
+                      break t
                     }
                     this.slice_from$esjava$1("i")
                 }
@@ -4488,42 +4520,42 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
               break;
             case 7:
               if (!this.r_R2$esjava$0()) return !1;
-              this.slice_del$esjava$0(), o = this.limit - this.cursor;
-              p: do {
-                if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(n.a_3))) {
-                  this.cursor = this.limit - o;
+              this.slice_del$esjava$0(), n = this.limit - this.cursor;
+              n: do {
+                if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(t.a_3))) {
+                  this.cursor = this.limit - n;
                   break
                 }
                 switch (this.bra = this.cursor, e) {
                   case 0:
-                    this.cursor = this.limit - o;
-                    break p;
+                    this.cursor = this.limit - n;
+                    break n;
                   case 1:
-                    F: do {
-                      s = this.limit - this.cursor;
+                    A: do {
+                      h = this.limit - this.cursor;
                       do {
                         if (!this.r_R2$esjava$0()) break;
                         this.slice_del$esjava$0();
-                        break F
+                        break A
                       } while (!1);
-                      this.cursor = this.limit - s, this.slice_from$esjava$1("abl")
+                      this.cursor = this.limit - h, this.slice_from$esjava$1("abl")
                     } while (!1);
                     break;
                   case 2:
-                    m: do {
-                      l = this.limit - this.cursor;
+                    o: do {
+                      o = this.limit - this.cursor;
                       do {
                         if (!this.r_R2$esjava$0()) break;
                         this.slice_del$esjava$0();
-                        break m
+                        break o
                       } while (!1);
-                      this.cursor = this.limit - l, this.slice_from$esjava$1("iqU")
+                      this.cursor = this.limit - o, this.slice_from$esjava$1("iqU")
                     } while (!1);
                     break;
                   case 3:
                     if (!this.r_R2$esjava$0()) {
-                      this.cursor = this.limit - o;
-                      break p
+                      this.cursor = this.limit - n;
+                      break n
                     }
                     this.slice_del$esjava$0()
                 }
@@ -4531,21 +4563,21 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
               break;
             case 8:
               if (!this.r_R2$esjava$0()) return !1;
-              this.slice_del$esjava$0(), c = this.limit - this.cursor;
+              this.slice_del$esjava$0(), u = this.limit - this.cursor;
               do {
                 if (this.ket = this.cursor, !this.eq_s_b$esjava$1("at") || (this.bra = this.cursor, !this.r_R2$esjava$0()) || (this.slice_del$esjava$0(), this.ket = this.cursor, !this.eq_s_b$esjava$1("ic"))) {
-                  this.cursor = this.limit - c;
+                  this.cursor = this.limit - u;
                   break
                 }
                 this.bra = this.cursor;
-                K: do {
-                  u = this.limit - this.cursor;
+                C: do {
+                  c = this.limit - this.cursor;
                   do {
                     if (!this.r_R2$esjava$0()) break;
                     this.slice_del$esjava$0();
-                    break K
+                    break C
                   } while (!1);
-                  this.cursor = this.limit - u, this.slice_from$esjava$1("iqU")
+                  this.cursor = this.limit - c, this.slice_from$esjava$1("iqU")
                 } while (!1)
               } while (!1);
               break;
@@ -4557,19 +4589,19 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
               this.slice_from$esjava$1("al");
               break;
             case 11:
-              g: do {
-                d = this.limit - this.cursor;
+              u: do {
+                _ = this.limit - this.cursor;
                 do {
                   if (!this.r_R2$esjava$0()) break;
                   this.slice_del$esjava$0();
-                  break g
+                  break u
                 } while (!1);
-                if (this.cursor = this.limit - d, !this.r_R1$esjava$0()) return !1;
+                if (this.cursor = this.limit - _, !this.r_R1$esjava$0()) return !1;
                 this.slice_from$esjava$1("eux")
               } while (!1);
               break;
             case 12:
-              if (!this.r_R1$esjava$0() || !this.out_grouping_b$esjava$3(n.g_v, 97, 251)) return !1;
+              if (!this.r_R1$esjava$0() || !this.out_grouping_b$esjava$3(t.g_v, 97, 251)) return !1;
               this.slice_del$esjava$0();
               break;
             case 13:
@@ -4579,8 +4611,8 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
               if (!this.r_RV$esjava$0()) return !1;
               return this.slice_from$esjava$1("ent"), !1;
             case 15:
-              if (f = this.limit - this.cursor, !this.in_grouping_b$esjava$3(n.g_v, 97, 251) || !this.r_RV$esjava$0()) return !1;
-              return this.cursor = this.limit - f, this.slice_del$esjava$0(), !1
+              if (l = this.limit - this.cursor, !this.in_grouping_b$esjava$3(t.g_v, 97, 251) || !this.r_RV$esjava$0()) return !1;
+              return this.cursor = this.limit - l, this.slice_del$esjava$0(), !1
           }
           return !0
         }
@@ -4588,81 +4620,81 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "r_i_verb_suffix$esjava$0",
         value: function() {
           var e = void 0,
-            t = void 0,
-            r = void 0;
-          if (t = this.limit - this.cursor, this.cursor < this.I_pV) return !1;
-          if (this.cursor = this.I_pV, r = this.limit_backward, this.limit_backward = this.cursor, this.cursor = this.limit - t, this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(n.a_5))) return this.limit_backward = r, !1;
+            i = void 0,
+            s = void 0;
+          if (i = this.limit - this.cursor, this.cursor < this.I_pV) return !1;
+          if (this.cursor = this.I_pV, s = this.limit_backward, this.limit_backward = this.cursor, this.cursor = this.limit - i, this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(t.a_5))) return this.limit_backward = s, !1;
           switch (this.bra = this.cursor, e) {
             case 0:
-              return this.limit_backward = r, !1;
+              return this.limit_backward = s, !1;
             case 1:
-              if (!this.out_grouping_b$esjava$3(n.g_v, 97, 251)) return this.limit_backward = r, !1;
+              if (!this.out_grouping_b$esjava$3(t.g_v, 97, 251)) return this.limit_backward = s, !1;
               this.slice_del$esjava$0()
           }
-          return this.limit_backward = r, !0
+          return this.limit_backward = s, !0
         }
       }, {
         key: "r_verb_suffix$esjava$0",
         value: function() {
           var e = void 0,
-            t = void 0,
-            r = void 0,
-            i = void 0;
-          if (t = this.limit - this.cursor, this.cursor < this.I_pV) return !1;
-          if (this.cursor = this.I_pV, r = this.limit_backward, this.limit_backward = this.cursor, this.cursor = this.limit - t, this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(n.a_6))) return this.limit_backward = r, !1;
+            i = void 0,
+            s = void 0,
+            r = void 0;
+          if (i = this.limit - this.cursor, this.cursor < this.I_pV) return !1;
+          if (this.cursor = this.I_pV, s = this.limit_backward, this.limit_backward = this.cursor, this.cursor = this.limit - i, this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(t.a_6))) return this.limit_backward = s, !1;
           switch (this.bra = this.cursor, e) {
             case 0:
-              return this.limit_backward = r, !1;
+              return this.limit_backward = s, !1;
             case 1:
-              if (!this.r_R2$esjava$0()) return this.limit_backward = r, !1;
+              if (!this.r_R2$esjava$0()) return this.limit_backward = s, !1;
               this.slice_del$esjava$0();
               break;
             case 2:
               this.slice_del$esjava$0();
               break;
             case 3:
-              this.slice_del$esjava$0(), i = this.limit - this.cursor;
+              this.slice_del$esjava$0(), r = this.limit - this.cursor;
               do {
                 if (this.ket = this.cursor, !this.eq_s_b$esjava$1("e")) {
-                  this.cursor = this.limit - i;
+                  this.cursor = this.limit - r;
                   break
                 }
                 this.bra = this.cursor, this.slice_del$esjava$0()
               } while (!1)
           }
-          return this.limit_backward = r, !0
+          return this.limit_backward = s, !0
         }
       }, {
         key: "r_residual_suffix$esjava$0",
         value: function() {
           var e = void 0,
-            t = void 0,
-            r = void 0,
             i = void 0,
+            s = void 0,
+            r = void 0,
             a = void 0,
-            o = void 0;
-          t = this.limit - this.cursor;
+            n = void 0;
+          i = this.limit - this.cursor;
           do {
-            if (this.ket = this.cursor, !this.eq_s_b$esjava$1("s") || (this.bra = this.cursor, r = this.limit - this.cursor, !this.out_grouping_b$esjava$3(n.g_keep_with_s, 97, 232))) {
-              this.cursor = this.limit - t;
+            if (this.ket = this.cursor, !this.eq_s_b$esjava$1("s") || (this.bra = this.cursor, s = this.limit - this.cursor, !this.out_grouping_b$esjava$3(t.g_keep_with_s, 97, 232))) {
+              this.cursor = this.limit - i;
               break
             }
-            this.cursor = this.limit - r, this.slice_del$esjava$0()
+            this.cursor = this.limit - s, this.slice_del$esjava$0()
           } while (!1);
-          if (i = this.limit - this.cursor, this.cursor < this.I_pV) return !1;
-          if (this.cursor = this.I_pV, a = this.limit_backward, this.limit_backward = this.cursor, this.cursor = this.limit - i, this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(n.a_7))) return this.limit_backward = a, !1;
+          if (r = this.limit - this.cursor, this.cursor < this.I_pV) return !1;
+          if (this.cursor = this.I_pV, a = this.limit_backward, this.limit_backward = this.cursor, this.cursor = this.limit - r, this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(t.a_7))) return this.limit_backward = a, !1;
           switch (this.bra = this.cursor, e) {
             case 0:
               return this.limit_backward = a, !1;
             case 1:
               if (!this.r_R2$esjava$0()) return this.limit_backward = a, !1;
-              c: do {
-                o = this.limit - this.cursor;
+              i: do {
+                n = this.limit - this.cursor;
                 do {
                   if (!this.eq_s_b$esjava$1("s")) break;
-                  break c
+                  break i
                 } while (!1);
-                if (this.cursor = this.limit - o, !this.eq_s_b$esjava$1("t")) return this.limit_backward = a, !1
+                if (this.cursor = this.limit - n, !this.eq_s_b$esjava$1("t")) return this.limit_backward = a, !1
               } while (!1);
               this.slice_del$esjava$0();
               break;
@@ -4682,28 +4714,28 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "r_un_double$esjava$0",
         value: function() {
           var e = void 0;
-          return e = this.limit - this.cursor, 0 !== this.find_among_b$esjava$1(n.a_8) && (this.cursor = this.limit - e, this.ket = this.cursor, !(this.cursor <= this.limit_backward) && (this.cursor--, this.bra = this.cursor, this.slice_del$esjava$0(), !0))
+          return e = this.limit - this.cursor, 0 !== this.find_among_b$esjava$1(t.a_8) && (this.cursor = this.limit - e, this.ket = this.cursor, !(this.cursor <= this.limit_backward) && (this.cursor--, this.bra = this.cursor, this.slice_del$esjava$0(), !0))
         }
       }, {
         key: "r_un_accent$esjava$0",
         value: function() {
           var e = void 0,
-            t = 1;
-          G: for (;;) {
+            i = 1;
+          P: for (;;) {
             do {
-              if (!this.out_grouping_b$esjava$3(n.g_v, 97, 251)) break;
-              t--;
-              continue G
+              if (!this.out_grouping_b$esjava$3(t.g_v, 97, 251)) break;
+              i--;
+              continue P
             } while (!1);
             break
           }
-          if (t > 0) return !1;
+          if (i > 0) return !1;
           this.ket = this.cursor;
-          u: do {
+          s: do {
             e = this.limit - this.cursor;
             do {
               if (!this.eq_s_b$esjava$1("\xe9")) break;
-              break u
+              break s
             } while (!1);
             if (this.cursor = this.limit - e, !this.eq_s_b$esjava$1("\xe8")) return !1
           } while (!1);
@@ -4713,77 +4745,77 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "stem$esjava$0",
         value: function() {
           var e = void 0,
-            t = void 0,
-            n = void 0,
-            r = void 0,
             i = void 0,
-            a = void 0,
-            o = void 0,
             s = void 0,
-            l = void 0,
-            c = void 0,
-            u = void 0;
+            t = void 0,
+            r = void 0,
+            a = void 0,
+            n = void 0,
+            h = void 0,
+            o = void 0,
+            u = void 0,
+            c = void 0;
           e = this.cursor;
           do
             if (!this.r_prelude$esjava$0()) break; while (!1);
-          this.cursor = e, t = this.cursor;
+          this.cursor = e, i = this.cursor;
           do
             if (!this.r_mark_regions$esjava$0()) break; while (!1);
-          this.cursor = t, this.limit_backward = this.cursor, this.cursor = this.limit, n = this.limit - this.cursor;
-          u: do d: do {
-            r = this.limit - this.cursor;
-            f: do {
-              i = this.limit - this.cursor;
-              _: do {
+          this.cursor = i, this.limit_backward = this.cursor, this.cursor = this.limit, s = this.limit - this.cursor;
+          s: do t: do {
+            t = this.limit - this.cursor;
+            r: do {
+              r = this.limit - this.cursor;
+              a: do {
                 a = this.limit - this.cursor;
                 do {
                   if (!this.r_standard_suffix$esjava$0()) break;
-                  break _
+                  break a
                 } while (!1);
                 this.cursor = this.limit - a;
                 do {
                   if (!this.r_i_verb_suffix$esjava$0()) break;
-                  break _
+                  break a
                 } while (!1);
-                if (this.cursor = this.limit - a, !this.r_verb_suffix$esjava$0()) break f
+                if (this.cursor = this.limit - a, !this.r_verb_suffix$esjava$0()) break r
               } while (!1);
-              this.cursor = this.limit - i, o = this.limit - this.cursor;
-              z: do {
+              this.cursor = this.limit - r, n = this.limit - this.cursor;
+              E: do {
                 this.ket = this.cursor;
-                m: do {
-                  s = this.limit - this.cursor;
+                o: do {
+                  h = this.limit - this.cursor;
                   do {
                     if (!this.eq_s_b$esjava$1("Y")) break;
                     this.bra = this.cursor, this.slice_from$esjava$1("i");
-                    break m
+                    break o
                   } while (!1);
-                  if (this.cursor = this.limit - s, !this.eq_s_b$esjava$1("\xe7")) {
-                    this.cursor = this.limit - o;
-                    break z
+                  if (this.cursor = this.limit - h, !this.eq_s_b$esjava$1("\xe7")) {
+                    this.cursor = this.limit - n;
+                    break E
                   }
                   this.bra = this.cursor, this.slice_from$esjava$1("c")
                 } while (!1)
               } while (!1);
-              break d
+              break t
             } while (!1);
-            if (this.cursor = this.limit - r, !this.r_residual_suffix$esjava$0()) break u
+            if (this.cursor = this.limit - t, !this.r_residual_suffix$esjava$0()) break s
           } while (!1); while (!1);
-          this.cursor = this.limit - n, l = this.limit - this.cursor;
+          this.cursor = this.limit - s, o = this.limit - this.cursor;
           do
             if (!this.r_un_double$esjava$0()) break; while (!1);
-          this.cursor = this.limit - l, c = this.limit - this.cursor;
+          this.cursor = this.limit - o, u = this.limit - this.cursor;
           do
             if (!this.r_un_accent$esjava$0()) break; while (!1);
-          this.cursor = this.limit - c, this.cursor = this.limit_backward, u = this.cursor;
+          this.cursor = this.limit - u, this.cursor = this.limit_backward, c = this.cursor;
           do
             if (!this.r_postlude$esjava$0()) break; while (!1);
-          return this.cursor = u, !0
+          return this.cursor = c, !0
         }
       }, {
         key: "stem",
         value: function() {
-          for (var e, t = arguments.length, r = Array(t), i = 0; i < t; i++) r[i] = arguments[i];
-          return 0 === r.length ? this.stem$esjava$0.apply(this, r) : (e = o(Object.getPrototypeOf(n.prototype), "stem", this)).call.apply(e, [this].concat(r))
+          for (var e, i = arguments.length, s = Array(i), r = 0; r < i; r++) s[r] = arguments[r];
+          return 0 === s.length ? this.stem$esjava$0.apply(this, s) : (e = n(Object.getPrototypeOf(t.prototype), "stem", this)).call.apply(e, [this].concat(s))
         }
       }, {
         key: "I_p2",
@@ -4812,120 +4844,120 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
       }], [{
         key: "a_0",
         get: function() {
-          return delete n.a_0, n.a_0 = [new c("col", -1, -1), new c("par", -1, -1), new c("tap", -1, -1)]
+          return delete t.a_0, t.a_0 = [new u("col", -1, -1), new u("par", -1, -1), new u("tap", -1, -1)]
         }
       }, {
         key: "a_1",
         get: function() {
-          return delete n.a_1, n.a_1 = [new c("", -1, 4), new c("I", 0, 1), new c("U", 0, 2), new c("Y", 0, 3)]
+          return delete t.a_1, t.a_1 = [new u("", -1, 4), new u("I", 0, 1), new u("U", 0, 2), new u("Y", 0, 3)]
         }
       }, {
         key: "a_2",
         get: function() {
-          return delete n.a_2, n.a_2 = [new c("iqU", -1, 3), new c("abl", -1, 3), new c("I\xe8r", -1, 4), new c("i\xe8r", -1, 4), new c("eus", -1, 2), new c("iv", -1, 1)]
+          return delete t.a_2, t.a_2 = [new u("iqU", -1, 3), new u("abl", -1, 3), new u("I\xe8r", -1, 4), new u("i\xe8r", -1, 4), new u("eus", -1, 2), new u("iv", -1, 1)]
         }
       }, {
         key: "a_3",
         get: function() {
-          return delete n.a_3, n.a_3 = [new c("ic", -1, 2), new c("abil", -1, 1), new c("iv", -1, 3)]
+          return delete t.a_3, t.a_3 = [new u("ic", -1, 2), new u("abil", -1, 1), new u("iv", -1, 3)]
         }
       }, {
         key: "a_4",
         get: function() {
-          return delete n.a_4, n.a_4 = [new c("iqUe", -1, 1), new c("atrice", -1, 2), new c("ance", -1, 1), new c("ence", -1, 5), new c("logie", -1, 3), new c("able", -1, 1), new c("isme", -1, 1), new c("euse", -1, 11), new c("iste", -1, 1), new c("ive", -1, 8), new c("if", -1, 8), new c("usion", -1, 4), new c("ation", -1, 2), new c("ution", -1, 4), new c("ateur", -1, 2), new c("iqUes", -1, 1), new c("atrices", -1, 2), new c("ances", -1, 1), new c("ences", -1, 5), new c("logies", -1, 3), new c("ables", -1, 1), new c("ismes", -1, 1), new c("euses", -1, 11), new c("istes", -1, 1), new c("ives", -1, 8), new c("ifs", -1, 8), new c("usions", -1, 4), new c("ations", -1, 2), new c("utions", -1, 4), new c("ateurs", -1, 2), new c("ments", -1, 15), new c("ements", 30, 6), new c("issements", 31, 12), new c("it\xe9s", -1, 7), new c("ment", -1, 15), new c("ement", 34, 6), new c("issement", 35, 12), new c("amment", 34, 13), new c("emment", 34, 14), new c("aux", -1, 10), new c("eaux", 39, 9), new c("eux", -1, 1), new c("it\xe9", -1, 7)]
+          return delete t.a_4, t.a_4 = [new u("iqUe", -1, 1), new u("atrice", -1, 2), new u("ance", -1, 1), new u("ence", -1, 5), new u("logie", -1, 3), new u("able", -1, 1), new u("isme", -1, 1), new u("euse", -1, 11), new u("iste", -1, 1), new u("ive", -1, 8), new u("if", -1, 8), new u("usion", -1, 4), new u("ation", -1, 2), new u("ution", -1, 4), new u("ateur", -1, 2), new u("iqUes", -1, 1), new u("atrices", -1, 2), new u("ances", -1, 1), new u("ences", -1, 5), new u("logies", -1, 3), new u("ables", -1, 1), new u("ismes", -1, 1), new u("euses", -1, 11), new u("istes", -1, 1), new u("ives", -1, 8), new u("ifs", -1, 8), new u("usions", -1, 4), new u("ations", -1, 2), new u("utions", -1, 4), new u("ateurs", -1, 2), new u("ments", -1, 15), new u("ements", 30, 6), new u("issements", 31, 12), new u("it\xe9s", -1, 7), new u("ment", -1, 15), new u("ement", 34, 6), new u("issement", 35, 12), new u("amment", 34, 13), new u("emment", 34, 14), new u("aux", -1, 10), new u("eaux", 39, 9), new u("eux", -1, 1), new u("it\xe9", -1, 7)]
         }
       }, {
         key: "a_5",
         get: function() {
-          return delete n.a_5, n.a_5 = [new c("ira", -1, 1), new c("ie", -1, 1), new c("isse", -1, 1), new c("issante", -1, 1), new c("i", -1, 1), new c("irai", 4, 1), new c("ir", -1, 1), new c("iras", -1, 1), new c("ies", -1, 1), new c("\xeemes", -1, 1), new c("isses", -1, 1), new c("issantes", -1, 1), new c("\xeetes", -1, 1), new c("is", -1, 1), new c("irais", 13, 1), new c("issais", 13, 1), new c("irions", -1, 1), new c("issions", -1, 1), new c("irons", -1, 1), new c("issons", -1, 1), new c("issants", -1, 1), new c("it", -1, 1), new c("irait", 21, 1), new c("issait", 21, 1), new c("issant", -1, 1), new c("iraIent", -1, 1), new c("issaIent", -1, 1), new c("irent", -1, 1), new c("issent", -1, 1), new c("iront", -1, 1), new c("\xeet", -1, 1), new c("iriez", -1, 1), new c("issiez", -1, 1), new c("irez", -1, 1), new c("issez", -1, 1)]
+          return delete t.a_5, t.a_5 = [new u("ira", -1, 1), new u("ie", -1, 1), new u("isse", -1, 1), new u("issante", -1, 1), new u("i", -1, 1), new u("irai", 4, 1), new u("ir", -1, 1), new u("iras", -1, 1), new u("ies", -1, 1), new u("\xeemes", -1, 1), new u("isses", -1, 1), new u("issantes", -1, 1), new u("\xeetes", -1, 1), new u("is", -1, 1), new u("irais", 13, 1), new u("issais", 13, 1), new u("irions", -1, 1), new u("issions", -1, 1), new u("irons", -1, 1), new u("issons", -1, 1), new u("issants", -1, 1), new u("it", -1, 1), new u("irait", 21, 1), new u("issait", 21, 1), new u("issant", -1, 1), new u("iraIent", -1, 1), new u("issaIent", -1, 1), new u("irent", -1, 1), new u("issent", -1, 1), new u("iront", -1, 1), new u("\xeet", -1, 1), new u("iriez", -1, 1), new u("issiez", -1, 1), new u("irez", -1, 1), new u("issez", -1, 1)]
         }
       }, {
         key: "a_6",
         get: function() {
-          return delete n.a_6, n.a_6 = [new c("a", -1, 3), new c("era", 0, 2), new c("asse", -1, 3), new c("ante", -1, 3), new c("\xe9e", -1, 2), new c("ai", -1, 3), new c("erai", 5, 2), new c("er", -1, 2), new c("as", -1, 3), new c("eras", 8, 2), new c("\xe2mes", -1, 3), new c("asses", -1, 3), new c("antes", -1, 3), new c("\xe2tes", -1, 3), new c("\xe9es", -1, 2), new c("ais", -1, 3), new c("erais", 15, 2), new c("ions", -1, 1), new c("erions", 17, 2), new c("assions", 17, 3), new c("erons", -1, 2), new c("ants", -1, 3), new c("\xe9s", -1, 2), new c("ait", -1, 3), new c("erait", 23, 2), new c("ant", -1, 3), new c("aIent", -1, 3), new c("eraIent", 26, 2), new c("\xe8rent", -1, 2), new c("assent", -1, 3), new c("eront", -1, 2), new c("\xe2t", -1, 3), new c("ez", -1, 2), new c("iez", 32, 2), new c("eriez", 33, 2), new c("assiez", 33, 3), new c("erez", 32, 2), new c("\xe9", -1, 2)]
+          return delete t.a_6, t.a_6 = [new u("a", -1, 3), new u("era", 0, 2), new u("asse", -1, 3), new u("ante", -1, 3), new u("\xe9e", -1, 2), new u("ai", -1, 3), new u("erai", 5, 2), new u("er", -1, 2), new u("as", -1, 3), new u("eras", 8, 2), new u("\xe2mes", -1, 3), new u("asses", -1, 3), new u("antes", -1, 3), new u("\xe2tes", -1, 3), new u("\xe9es", -1, 2), new u("ais", -1, 3), new u("erais", 15, 2), new u("ions", -1, 1), new u("erions", 17, 2), new u("assions", 17, 3), new u("erons", -1, 2), new u("ants", -1, 3), new u("\xe9s", -1, 2), new u("ait", -1, 3), new u("erait", 23, 2), new u("ant", -1, 3), new u("aIent", -1, 3), new u("eraIent", 26, 2), new u("\xe8rent", -1, 2), new u("assent", -1, 3), new u("eront", -1, 2), new u("\xe2t", -1, 3), new u("ez", -1, 2), new u("iez", 32, 2), new u("eriez", 33, 2), new u("assiez", 33, 3), new u("erez", 32, 2), new u("\xe9", -1, 2)]
         }
       }, {
         key: "a_7",
         get: function() {
-          return delete n.a_7, n.a_7 = [new c("e", -1, 3), new c("I\xe8re", 0, 2), new c("i\xe8re", 0, 2), new c("ion", -1, 1), new c("Ier", -1, 2), new c("ier", -1, 2), new c("\xeb", -1, 4)]
+          return delete t.a_7, t.a_7 = [new u("e", -1, 3), new u("I\xe8re", 0, 2), new u("i\xe8re", 0, 2), new u("ion", -1, 1), new u("Ier", -1, 2), new u("ier", -1, 2), new u("\xeb", -1, 4)]
         }
       }, {
         key: "a_8",
         get: function() {
-          return delete n.a_8, n.a_8 = [new c("ell", -1, -1), new c("eill", -1, -1), new c("enn", -1, -1), new c("onn", -1, -1), new c("ett", -1, -1)]
+          return delete t.a_8, t.a_8 = [new u("ell", -1, -1), new u("eill", -1, -1), new u("enn", -1, -1), new u("onn", -1, -1), new u("ett", -1, -1)]
         }
       }, {
         key: "g_v",
         get: function() {
-          return delete n.g_v, n.g_v = [17, 65, 16, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 128, 130, 103, 8, 5]
+          return delete t.g_v, t.g_v = [17, 65, 16, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 128, 130, 103, 8, 5]
         }
       }, {
         key: "g_keep_with_s",
         get: function() {
-          return delete n.g_keep_with_s, n.g_keep_with_s = [1, 65, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 128]
+          return delete t.g_keep_with_s, t.g_keep_with_s = [1, 65, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 128]
         }
-      }]), n
-    }(u),
-    O = function(e) {
-      function n() {
-        return i(this, n), t(this, Object.getPrototypeOf(n).apply(this, arguments))
+      }]), t
+    }(c),
+    j = function(e) {
+      function t() {
+        return r(this, t), i(this, Object.getPrototypeOf(t).apply(this, arguments))
       }
-      return r(n, e), a(n, [{
+      return s(t, e), a(t, [{
         key: "r_prelude$esjava$0",
         value: function() {
           var e = void 0,
-            t = void 0,
-            r = void 0,
             i = void 0,
+            s = void 0,
+            r = void 0,
             a = void 0,
-            o = void 0;
+            n = void 0;
           e = this.cursor;
-          G: for (;;) {
-            t = this.cursor;
-            c: do {
-              u: do {
-                r = this.cursor;
+          P: for (;;) {
+            i = this.cursor;
+            i: do {
+              s: do {
+                s = this.cursor;
                 do {
                   if (this.bra = this.cursor, !this.eq_s$esjava$1("\xdf")) break;
                   this.ket = this.cursor, this.slice_from$esjava$1("ss");
-                  break u
+                  break s
                 } while (!1);
-                if (this.cursor = r, this.cursor >= this.limit) break c;
+                if (this.cursor = s, this.cursor >= this.limit) break i;
                 this.cursor++
               } while (!1);
-              continue G
+              continue P
             } while (!1);
-            this.cursor = t;
+            this.cursor = i;
             break
           }
           this.cursor = e;
-          q: for (;;) {
-            i = this.cursor;
-            _: do {
+          D: for (;;) {
+            r = this.cursor;
+            a: do {
               Y: for (;;) {
                 a = this.cursor;
-                F: do {
-                  if (!this.in_grouping$esjava$3(n.g_v, 97, 252)) break;
+                A: do {
+                  if (!this.in_grouping$esjava$3(t.g_v, 97, 252)) break;
                   this.bra = this.cursor;
-                  z: do {
-                    o = this.cursor;
+                  E: do {
+                    n = this.cursor;
                     do {
-                      if (!this.eq_s$esjava$1("u") || (this.ket = this.cursor, !this.in_grouping$esjava$3(n.g_v, 97, 252))) break;
+                      if (!this.eq_s$esjava$1("u") || (this.ket = this.cursor, !this.in_grouping$esjava$3(t.g_v, 97, 252))) break;
                       this.slice_from$esjava$1("U");
-                      break z
+                      break E
                     } while (!1);
-                    if (this.cursor = o, !this.eq_s$esjava$1("y") || (this.ket = this.cursor, !this.in_grouping$esjava$3(n.g_v, 97, 252))) break F;
+                    if (this.cursor = n, !this.eq_s$esjava$1("y") || (this.ket = this.cursor, !this.in_grouping$esjava$3(t.g_v, 97, 252))) break A;
                     this.slice_from$esjava$1("Y")
                   } while (!1);
                   this.cursor = a;
                   break Y
                 } while (!1);
-                if (this.cursor = a, this.cursor >= this.limit) break _;
+                if (this.cursor = a, this.cursor >= this.limit) break a;
                 this.cursor++
               }
-              continue q
+              continue D
             } while (!1);
-            this.cursor = i;
+            this.cursor = r;
             break
           }
           return !0
@@ -4935,21 +4967,21 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         value: function() {
           var e = void 0;
           this.I_p1 = this.limit, this.I_p2 = this.limit, e = this.cursor;
-          var t = this.cursor + 3;
-          if (0 > t || t > this.limit) return !1;
-          this.cursor = t, this.I_x = this.cursor, this.cursor = e;
-          B: for (;;) {
+          var i = this.cursor + 3;
+          if (0 > i || i > this.limit) return !1;
+          this.cursor = i, this.I_x = this.cursor, this.cursor = e;
+          V: for (;;) {
             do {
-              if (!this.in_grouping$esjava$3(n.g_v, 97, 252)) break;
-              break B
+              if (!this.in_grouping$esjava$3(t.g_v, 97, 252)) break;
+              break V
             } while (!1);
             if (this.cursor >= this.limit) return !1;
             this.cursor++
           }
-          Z: for (;;) {
+          S: for (;;) {
             do {
-              if (!this.out_grouping$esjava$3(n.g_v, 97, 252)) break;
-              break Z
+              if (!this.out_grouping$esjava$3(t.g_v, 97, 252)) break;
+              break S
             } while (!1);
             if (this.cursor >= this.limit) return !1;
             this.cursor++
@@ -4959,18 +4991,18 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
             if (!(this.I_p1 < this.I_x)) break;
             this.I_p1 = this.I_x
           } while (!1);
-          C: for (;;) {
+          m: for (;;) {
             do {
-              if (!this.in_grouping$esjava$3(n.g_v, 97, 252)) break;
-              break C
+              if (!this.in_grouping$esjava$3(t.g_v, 97, 252)) break;
+              break m
             } while (!1);
             if (this.cursor >= this.limit) return !1;
             this.cursor++
           }
-          w: for (;;) {
+          j: for (;;) {
             do {
-              if (!this.out_grouping$esjava$3(n.g_v, 97, 252)) break;
-              break w
+              if (!this.out_grouping$esjava$3(t.g_v, 97, 252)) break;
+              break j
             } while (!1);
             if (this.cursor >= this.limit) return !1;
             this.cursor++
@@ -4981,14 +5013,14 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "r_postlude$esjava$0",
         value: function() {
           var e = void 0,
-            t = void 0;
-          G: for (;;) {
-            t = this.cursor;
-            c: do {
-              if (this.bra = this.cursor, 0 === (e = this.find_among$esjava$1(n.a_0))) break;
+            i = void 0;
+          P: for (;;) {
+            i = this.cursor;
+            i: do {
+              if (this.bra = this.cursor, 0 === (e = this.find_among$esjava$1(t.a_0))) break;
               switch (this.ket = this.cursor, e) {
                 case 0:
-                  break c;
+                  break i;
                 case 1:
                   this.slice_from$esjava$1("y");
                   break;
@@ -5003,12 +5035,12 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
                   this.slice_from$esjava$1("o");
                   break;
                 case 6:
-                  if (this.cursor >= this.limit) break c;
+                  if (this.cursor >= this.limit) break i;
                   this.cursor++
               }
-              continue G
+              continue P
             } while (!1);
-            this.cursor = t;
+            this.cursor = i;
             break
           }
           return !0
@@ -5027,123 +5059,123 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "r_standard_suffix$esjava$0",
         value: function() {
           var e = void 0,
-            t = void 0,
-            r = void 0,
             i = void 0,
-            a = void 0,
-            o = void 0,
             s = void 0,
-            l = void 0,
-            c = void 0,
+            r = void 0,
+            a = void 0,
+            n = void 0,
+            h = void 0,
+            o = void 0,
             u = void 0,
-            d = void 0;
-          t = this.limit - this.cursor;
-          l: do {
-            if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(n.a_1)) || (this.bra = this.cursor, !this.r_R1$esjava$0())) break;
+            c = void 0,
+            _ = void 0;
+          i = this.limit - this.cursor;
+          e: do {
+            if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(t.a_1)) || (this.bra = this.cursor, !this.r_R1$esjava$0())) break;
             switch (e) {
               case 0:
-                break l;
+                break e;
               case 1:
                 this.slice_del$esjava$0();
                 break;
               case 2:
-                this.slice_del$esjava$0(), r = this.limit - this.cursor;
+                this.slice_del$esjava$0(), s = this.limit - this.cursor;
                 do {
                   if (this.ket = this.cursor, !this.eq_s_b$esjava$1("s") || (this.bra = this.cursor, !this.eq_s_b$esjava$1("nis"))) {
-                    this.cursor = this.limit - r;
+                    this.cursor = this.limit - s;
                     break
                   }
                   this.slice_del$esjava$0()
                 } while (!1);
                 break;
               case 3:
-                if (!this.in_grouping_b$esjava$3(n.g_s_ending, 98, 116)) break l;
+                if (!this.in_grouping_b$esjava$3(t.g_s_ending, 98, 116)) break e;
                 this.slice_del$esjava$0()
             }
           } while (!1);
-          this.cursor = this.limit - t, i = this.limit - this.cursor;
-          u: do {
-            if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(n.a_2)) || (this.bra = this.cursor, !this.r_R1$esjava$0())) break;
+          this.cursor = this.limit - i, r = this.limit - this.cursor;
+          s: do {
+            if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(t.a_2)) || (this.bra = this.cursor, !this.r_R1$esjava$0())) break;
             switch (e) {
               case 0:
-                break u;
+                break s;
               case 1:
                 this.slice_del$esjava$0();
                 break;
               case 2:
-                if (!this.in_grouping_b$esjava$3(n.g_st_ending, 98, 116)) break u;
-                var f = this.cursor - 3;
-                if (this.limit_backward > f || f > this.limit) break u;
-                this.cursor = f, this.slice_del$esjava$0()
+                if (!this.in_grouping_b$esjava$3(t.g_st_ending, 98, 116)) break s;
+                var l = this.cursor - 3;
+                if (this.limit_backward > l || l > this.limit) break s;
+                this.cursor = l, this.slice_del$esjava$0()
             }
           } while (!1);
-          this.cursor = this.limit - i, a = this.limit - this.cursor;
-          d: do {
-            if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(n.a_4)) || (this.bra = this.cursor, !this.r_R2$esjava$0())) break;
+          this.cursor = this.limit - r, a = this.limit - this.cursor;
+          t: do {
+            if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(t.a_4)) || (this.bra = this.cursor, !this.r_R2$esjava$0())) break;
             switch (e) {
               case 0:
-                break d;
+                break t;
               case 1:
-                this.slice_del$esjava$0(), o = this.limit - this.cursor;
-                f: do {
+                this.slice_del$esjava$0(), n = this.limit - this.cursor;
+                r: do {
                   if (this.ket = this.cursor, !this.eq_s_b$esjava$1("ig")) {
-                    this.cursor = this.limit - o;
+                    this.cursor = this.limit - n;
                     break
                   }
-                  this.bra = this.cursor, s = this.limit - this.cursor;
+                  this.bra = this.cursor, h = this.limit - this.cursor;
                   do {
                     if (!this.eq_s_b$esjava$1("e")) break;
-                    this.cursor = this.limit - o;
-                    break f
+                    this.cursor = this.limit - n;
+                    break r
                   } while (!1);
-                  if (this.cursor = this.limit - s, !this.r_R2$esjava$0()) {
-                    this.cursor = this.limit - o;
+                  if (this.cursor = this.limit - h, !this.r_R2$esjava$0()) {
+                    this.cursor = this.limit - n;
                     break
                   }
                   this.slice_del$esjava$0()
                 } while (!1);
                 break;
               case 2:
-                l = this.limit - this.cursor;
+                o = this.limit - this.cursor;
                 do {
                   if (!this.eq_s_b$esjava$1("e")) break;
-                  break d
+                  break t
                 } while (!1);
-                this.cursor = this.limit - l, this.slice_del$esjava$0();
+                this.cursor = this.limit - o, this.slice_del$esjava$0();
                 break;
               case 3:
-                this.slice_del$esjava$0(), c = this.limit - this.cursor;
-                F: do {
+                this.slice_del$esjava$0(), u = this.limit - this.cursor;
+                A: do {
                   this.ket = this.cursor;
-                  z: do {
-                    u = this.limit - this.cursor;
+                  E: do {
+                    c = this.limit - this.cursor;
                     do {
                       if (!this.eq_s_b$esjava$1("er")) break;
-                      break z
+                      break E
                     } while (!1);
-                    if (this.cursor = this.limit - u, !this.eq_s_b$esjava$1("en")) {
-                      this.cursor = this.limit - c;
-                      break F
+                    if (this.cursor = this.limit - c, !this.eq_s_b$esjava$1("en")) {
+                      this.cursor = this.limit - u;
+                      break A
                     }
                   } while (!1);
                   if (this.bra = this.cursor, !this.r_R1$esjava$0()) {
-                    this.cursor = this.limit - c;
+                    this.cursor = this.limit - u;
                     break
                   }
                   this.slice_del$esjava$0()
                 } while (!1);
                 break;
               case 4:
-                this.slice_del$esjava$0(), d = this.limit - this.cursor;
-                R: do {
-                  if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(n.a_3)) || (this.bra = this.cursor, !this.r_R2$esjava$0())) {
-                    this.cursor = this.limit - d;
+                this.slice_del$esjava$0(), _ = this.limit - this.cursor;
+                g: do {
+                  if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(t.a_3)) || (this.bra = this.cursor, !this.r_R2$esjava$0())) {
+                    this.cursor = this.limit - _;
                     break
                   }
                   switch (e) {
                     case 0:
-                      this.cursor = this.limit - d;
-                      break R;
+                      this.cursor = this.limit - _;
+                      break g;
                     case 1:
                       this.slice_del$esjava$0()
                   }
@@ -5156,28 +5188,28 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "stem$esjava$0",
         value: function() {
           var e = void 0,
-            t = void 0,
-            n = void 0,
-            r = void 0;
+            i = void 0,
+            s = void 0,
+            t = void 0;
           e = this.cursor;
           do
             if (!this.r_prelude$esjava$0()) break; while (!1);
-          this.cursor = e, t = this.cursor;
+          this.cursor = e, i = this.cursor;
           do
             if (!this.r_mark_regions$esjava$0()) break; while (!1);
-          this.cursor = t, this.limit_backward = this.cursor, this.cursor = this.limit, n = this.limit - this.cursor;
+          this.cursor = i, this.limit_backward = this.cursor, this.cursor = this.limit, s = this.limit - this.cursor;
           do
             if (!this.r_standard_suffix$esjava$0()) break; while (!1);
-          this.cursor = this.limit - n, this.cursor = this.limit_backward, r = this.cursor;
+          this.cursor = this.limit - s, this.cursor = this.limit_backward, t = this.cursor;
           do
             if (!this.r_postlude$esjava$0()) break; while (!1);
-          return this.cursor = r, !0
+          return this.cursor = t, !0
         }
       }, {
         key: "stem",
         value: function() {
-          for (var e, t = arguments.length, r = Array(t), i = 0; i < t; i++) r[i] = arguments[i];
-          return 0 === r.length ? this.stem$esjava$0.apply(this, r) : (e = o(Object.getPrototypeOf(n.prototype), "stem", this)).call.apply(e, [this].concat(r))
+          for (var e, i = arguments.length, s = Array(i), r = 0; r < i; r++) s[r] = arguments[r];
+          return 0 === s.length ? this.stem$esjava$0.apply(this, s) : (e = n(Object.getPrototypeOf(t.prototype), "stem", this)).call.apply(e, [this].concat(s))
         }
       }, {
         key: "I_x",
@@ -5206,86 +5238,86 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
       }], [{
         key: "a_0",
         get: function() {
-          return delete n.a_0, n.a_0 = [new c("", -1, 6), new c("U", 0, 2), new c("Y", 0, 1), new c("\xe4", 0, 3), new c("\xf6", 0, 4), new c("\xfc", 0, 5)]
+          return delete t.a_0, t.a_0 = [new u("", -1, 6), new u("U", 0, 2), new u("Y", 0, 1), new u("\xe4", 0, 3), new u("\xf6", 0, 4), new u("\xfc", 0, 5)]
         }
       }, {
         key: "a_1",
         get: function() {
-          return delete n.a_1, n.a_1 = [new c("e", -1, 2), new c("em", -1, 1), new c("en", -1, 2), new c("ern", -1, 1), new c("er", -1, 1), new c("s", -1, 3), new c("es", 5, 2)]
+          return delete t.a_1, t.a_1 = [new u("e", -1, 2), new u("em", -1, 1), new u("en", -1, 2), new u("ern", -1, 1), new u("er", -1, 1), new u("s", -1, 3), new u("es", 5, 2)]
         }
       }, {
         key: "a_2",
         get: function() {
-          return delete n.a_2, n.a_2 = [new c("en", -1, 1), new c("er", -1, 1), new c("st", -1, 2), new c("est", 2, 1)]
+          return delete t.a_2, t.a_2 = [new u("en", -1, 1), new u("er", -1, 1), new u("st", -1, 2), new u("est", 2, 1)]
         }
       }, {
         key: "a_3",
         get: function() {
-          return delete n.a_3, n.a_3 = [new c("ig", -1, 1), new c("lich", -1, 1)]
+          return delete t.a_3, t.a_3 = [new u("ig", -1, 1), new u("lich", -1, 1)]
         }
       }, {
         key: "a_4",
         get: function() {
-          return delete n.a_4, n.a_4 = [new c("end", -1, 1), new c("ig", -1, 2), new c("ung", -1, 1), new c("lich", -1, 3), new c("isch", -1, 2), new c("ik", -1, 2), new c("heit", -1, 3), new c("keit", -1, 4)]
+          return delete t.a_4, t.a_4 = [new u("end", -1, 1), new u("ig", -1, 2), new u("ung", -1, 1), new u("lich", -1, 3), new u("isch", -1, 2), new u("ik", -1, 2), new u("heit", -1, 3), new u("keit", -1, 4)]
         }
       }, {
         key: "g_v",
         get: function() {
-          return delete n.g_v, n.g_v = [17, 65, 16, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8, 0, 32, 8]
+          return delete t.g_v, t.g_v = [17, 65, 16, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8, 0, 32, 8]
         }
       }, {
         key: "g_s_ending",
         get: function() {
-          return delete n.g_s_ending, n.g_s_ending = [117, 30, 5]
+          return delete t.g_s_ending, t.g_s_ending = [117, 30, 5]
         }
       }, {
         key: "g_st_ending",
         get: function() {
-          return delete n.g_st_ending, n.g_st_ending = [117, 30, 4]
+          return delete t.g_st_ending, t.g_st_ending = [117, 30, 4]
         }
-      }]), n
-    }(u),
-    v = function(e) {
-      function n() {
-        return i(this, n), t(this, Object.getPrototypeOf(n).apply(this, arguments))
+      }]), t
+    }(c),
+    g = function(e) {
+      function t() {
+        return r(this, t), i(this, Object.getPrototypeOf(t).apply(this, arguments))
       }
-      return r(n, e), a(n, [{
+      return s(t, e), a(t, [{
         key: "r_mark_regions$esjava$0",
         value: function() {
           var e = void 0,
-            t = void 0,
-            r = void 0;
+            i = void 0,
+            s = void 0;
           this.I_p1 = this.limit;
-          l: do {
+          e: do {
             e = this.cursor;
-            c: do {
-              if (!this.in_grouping$esjava$3(n.g_v, 97, 369)) break;
-              Z: for (;;) {
-                t = this.cursor;
+            i: do {
+              if (!this.in_grouping$esjava$3(t.g_v, 97, 369)) break;
+              S: for (;;) {
+                i = this.cursor;
                 do {
-                  if (!this.out_grouping$esjava$3(n.g_v, 97, 369)) break;
-                  this.cursor = t;
-                  break Z
+                  if (!this.out_grouping$esjava$3(t.g_v, 97, 369)) break;
+                  this.cursor = i;
+                  break S
                 } while (!1);
-                if (this.cursor = t, this.cursor >= this.limit) break c;
+                if (this.cursor = i, this.cursor >= this.limit) break i;
                 this.cursor++
               }
-              f: do {
-                r = this.cursor;
+              r: do {
+                s = this.cursor;
                 do {
-                  if (0 === this.find_among$esjava$1(n.a_0)) break;
-                  break f
+                  if (0 === this.find_among$esjava$1(t.a_0)) break;
+                  break r
                 } while (!1);
-                if (this.cursor = r, this.cursor >= this.limit) break c;
+                if (this.cursor = s, this.cursor >= this.limit) break i;
                 this.cursor++
               } while (!1);
               this.I_p1 = this.cursor;
-              break l
+              break e
             } while (!1);
-            if (this.cursor = e, !this.out_grouping$esjava$3(n.g_v, 97, 369)) return !1;
+            if (this.cursor = e, !this.out_grouping$esjava$3(t.g_v, 97, 369)) return !1;
             Y: for (;;) {
               do {
-                if (!this.in_grouping$esjava$3(n.g_v, 97, 369)) break;
+                if (!this.in_grouping$esjava$3(t.g_v, 97, 369)) break;
                 break Y
               } while (!1);
               if (this.cursor >= this.limit) return !1;
@@ -5304,7 +5336,7 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "r_v_ending$esjava$0",
         value: function() {
           var e = void 0;
-          if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(n.a_1)) || (this.bra = this.cursor, !this.r_R1$esjava$0())) return !1;
+          if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(t.a_1)) || (this.bra = this.cursor, !this.r_R1$esjava$0())) return !1;
           switch (e) {
             case 0:
               return !1;
@@ -5320,7 +5352,7 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "r_double$esjava$0",
         value: function() {
           var e = void 0;
-          return e = this.limit - this.cursor, 0 !== this.find_among_b$esjava$1(n.a_2) && (this.cursor = this.limit - e, !0)
+          return e = this.limit - this.cursor, 0 !== this.find_among_b$esjava$1(t.a_2) && (this.cursor = this.limit - e, !0)
         }
       }, {
         key: "r_undouble$esjava$0",
@@ -5334,7 +5366,7 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "r_instrum$esjava$0",
         value: function() {
           var e = void 0;
-          if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(n.a_3)) || (this.bra = this.cursor, !this.r_R1$esjava$0())) return !1;
+          if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(t.a_3)) || (this.bra = this.cursor, !this.r_R1$esjava$0())) return !1;
           switch (e) {
             case 0:
               return !1;
@@ -5347,13 +5379,13 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
       }, {
         key: "r_case$esjava$0",
         value: function() {
-          return this.ket = this.cursor, 0 !== this.find_among_b$esjava$1(n.a_4) && (this.bra = this.cursor, !!this.r_R1$esjava$0() && (this.slice_del$esjava$0(), !!this.r_v_ending$esjava$0()))
+          return this.ket = this.cursor, 0 !== this.find_among_b$esjava$1(t.a_4) && (this.bra = this.cursor, !!this.r_R1$esjava$0() && (this.slice_del$esjava$0(), !!this.r_v_ending$esjava$0()))
         }
       }, {
         key: "r_case_special$esjava$0",
         value: function() {
           var e = void 0;
-          if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(n.a_5)) || (this.bra = this.cursor, !this.r_R1$esjava$0())) return !1;
+          if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(t.a_5)) || (this.bra = this.cursor, !this.r_R1$esjava$0())) return !1;
           switch (e) {
             case 0:
               return !1;
@@ -5370,7 +5402,7 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "r_case_other$esjava$0",
         value: function() {
           var e = void 0;
-          if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(n.a_6)) || (this.bra = this.cursor, !this.r_R1$esjava$0())) return !1;
+          if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(t.a_6)) || (this.bra = this.cursor, !this.r_R1$esjava$0())) return !1;
           switch (e) {
             case 0:
               return !1;
@@ -5390,7 +5422,7 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "r_factive$esjava$0",
         value: function() {
           var e = void 0;
-          if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(n.a_7)) || (this.bra = this.cursor, !this.r_R1$esjava$0())) return !1;
+          if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(t.a_7)) || (this.bra = this.cursor, !this.r_R1$esjava$0())) return !1;
           switch (e) {
             case 0:
               return !1;
@@ -5404,7 +5436,7 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "r_plural$esjava$0",
         value: function() {
           var e = void 0;
-          if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(n.a_8)) || (this.bra = this.cursor, !this.r_R1$esjava$0())) return !1;
+          if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(t.a_8)) || (this.bra = this.cursor, !this.r_R1$esjava$0())) return !1;
           switch (e) {
             case 0:
               return !1;
@@ -5427,7 +5459,7 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "r_owned$esjava$0",
         value: function() {
           var e = void 0;
-          if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(n.a_9)) || (this.bra = this.cursor, !this.r_R1$esjava$0())) return !1;
+          if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(t.a_9)) || (this.bra = this.cursor, !this.r_R1$esjava$0())) return !1;
           switch (e) {
             case 0:
               return !1;
@@ -5452,7 +5484,7 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "r_sing_owner$esjava$0",
         value: function() {
           var e = void 0;
-          if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(n.a_10)) || (this.bra = this.cursor, !this.r_R1$esjava$0())) return !1;
+          if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(t.a_10)) || (this.bra = this.cursor, !this.r_R1$esjava$0())) return !1;
           switch (e) {
             case 0:
               return !1;
@@ -5488,7 +5520,7 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "r_plur_owner$esjava$0",
         value: function() {
           var e = void 0;
-          if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(n.a_11)) || (this.bra = this.cursor, !this.r_R1$esjava$0())) return !1;
+          if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(t.a_11)) || (this.bra = this.cursor, !this.r_R1$esjava$0())) return !1;
           switch (e) {
             case 0:
               return !1;
@@ -5533,52 +5565,52 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "stem$esjava$0",
         value: function() {
           var e = void 0,
-            t = void 0,
-            n = void 0,
-            r = void 0,
             i = void 0,
-            a = void 0,
-            o = void 0,
             s = void 0,
-            l = void 0,
-            c = void 0;
+            t = void 0,
+            r = void 0,
+            a = void 0,
+            n = void 0,
+            h = void 0,
+            o = void 0,
+            u = void 0;
           e = this.cursor;
           do
             if (!this.r_mark_regions$esjava$0()) break; while (!1);
-          this.cursor = e, this.limit_backward = this.cursor, this.cursor = this.limit, t = this.limit - this.cursor;
+          this.cursor = e, this.limit_backward = this.cursor, this.cursor = this.limit, i = this.limit - this.cursor;
           do
             if (!this.r_instrum$esjava$0()) break; while (!1);
-          this.cursor = this.limit - t, n = this.limit - this.cursor;
+          this.cursor = this.limit - i, s = this.limit - this.cursor;
           do
             if (!this.r_case$esjava$0()) break; while (!1);
-          this.cursor = this.limit - n, r = this.limit - this.cursor;
+          this.cursor = this.limit - s, t = this.limit - this.cursor;
           do
             if (!this.r_case_special$esjava$0()) break; while (!1);
-          this.cursor = this.limit - r, i = this.limit - this.cursor;
+          this.cursor = this.limit - t, r = this.limit - this.cursor;
           do
             if (!this.r_case_other$esjava$0()) break; while (!1);
-          this.cursor = this.limit - i, a = this.limit - this.cursor;
+          this.cursor = this.limit - r, a = this.limit - this.cursor;
           do
             if (!this.r_factive$esjava$0()) break; while (!1);
-          this.cursor = this.limit - a, o = this.limit - this.cursor;
+          this.cursor = this.limit - a, n = this.limit - this.cursor;
           do
             if (!this.r_owned$esjava$0()) break; while (!1);
-          this.cursor = this.limit - o, s = this.limit - this.cursor;
+          this.cursor = this.limit - n, h = this.limit - this.cursor;
           do
             if (!this.r_sing_owner$esjava$0()) break; while (!1);
-          this.cursor = this.limit - s, l = this.limit - this.cursor;
+          this.cursor = this.limit - h, o = this.limit - this.cursor;
           do
             if (!this.r_plur_owner$esjava$0()) break; while (!1);
-          this.cursor = this.limit - l, c = this.limit - this.cursor;
+          this.cursor = this.limit - o, u = this.limit - this.cursor;
           do
             if (!this.r_plural$esjava$0()) break; while (!1);
-          return this.cursor = this.limit - c, this.cursor = this.limit_backward, !0
+          return this.cursor = this.limit - u, this.cursor = this.limit_backward, !0
         }
       }, {
         key: "stem",
         value: function() {
-          for (var e, t = arguments.length, r = Array(t), i = 0; i < t; i++) r[i] = arguments[i];
-          return 0 === r.length ? this.stem$esjava$0.apply(this, r) : (e = o(Object.getPrototypeOf(n.prototype), "stem", this)).call.apply(e, [this].concat(r))
+          for (var e, i = arguments.length, s = Array(i), r = 0; r < i; r++) s[r] = arguments[r];
+          return 0 === s.length ? this.stem$esjava$0.apply(this, s) : (e = n(Object.getPrototypeOf(t.prototype), "stem", this)).call.apply(e, [this].concat(s))
         }
       }, {
         key: "I_p1",
@@ -5591,134 +5623,134 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
       }], [{
         key: "a_0",
         get: function() {
-          return delete n.a_0, n.a_0 = [new c("cs", -1, -1), new c("dzs", -1, -1), new c("gy", -1, -1), new c("ly", -1, -1), new c("ny", -1, -1), new c("sz", -1, -1), new c("ty", -1, -1), new c("zs", -1, -1)]
+          return delete t.a_0, t.a_0 = [new u("cs", -1, -1), new u("dzs", -1, -1), new u("gy", -1, -1), new u("ly", -1, -1), new u("ny", -1, -1), new u("sz", -1, -1), new u("ty", -1, -1), new u("zs", -1, -1)]
         }
       }, {
         key: "a_1",
         get: function() {
-          return delete n.a_1, n.a_1 = [new c("\xe1", -1, 1), new c("\xe9", -1, 2)]
+          return delete t.a_1, t.a_1 = [new u("\xe1", -1, 1), new u("\xe9", -1, 2)]
         }
       }, {
         key: "a_2",
         get: function() {
-          return delete n.a_2, n.a_2 = [new c("bb", -1, -1), new c("cc", -1, -1), new c("dd", -1, -1), new c("ff", -1, -1), new c("gg", -1, -1), new c("jj", -1, -1), new c("kk", -1, -1), new c("ll", -1, -1), new c("mm", -1, -1), new c("nn", -1, -1), new c("pp", -1, -1), new c("rr", -1, -1), new c("ccs", -1, -1), new c("ss", -1, -1), new c("zzs", -1, -1), new c("tt", -1, -1), new c("vv", -1, -1), new c("ggy", -1, -1), new c("lly", -1, -1), new c("nny", -1, -1), new c("tty", -1, -1), new c("ssz", -1, -1), new c("zz", -1, -1)]
+          return delete t.a_2, t.a_2 = [new u("bb", -1, -1), new u("cc", -1, -1), new u("dd", -1, -1), new u("ff", -1, -1), new u("gg", -1, -1), new u("jj", -1, -1), new u("kk", -1, -1), new u("ll", -1, -1), new u("mm", -1, -1), new u("nn", -1, -1), new u("pp", -1, -1), new u("rr", -1, -1), new u("ccs", -1, -1), new u("ss", -1, -1), new u("zzs", -1, -1), new u("tt", -1, -1), new u("vv", -1, -1), new u("ggy", -1, -1), new u("lly", -1, -1), new u("nny", -1, -1), new u("tty", -1, -1), new u("ssz", -1, -1), new u("zz", -1, -1)]
         }
       }, {
         key: "a_3",
         get: function() {
-          return delete n.a_3, n.a_3 = [new c("al", -1, 1), new c("el", -1, 2)]
+          return delete t.a_3, t.a_3 = [new u("al", -1, 1), new u("el", -1, 2)]
         }
       }, {
         key: "a_4",
         get: function() {
-          return delete n.a_4, n.a_4 = [new c("ba", -1, -1), new c("ra", -1, -1), new c("be", -1, -1), new c("re", -1, -1), new c("ig", -1, -1), new c("nak", -1, -1), new c("nek", -1, -1), new c("val", -1, -1), new c("vel", -1, -1), new c("ul", -1, -1), new c("n\xe1l", -1, -1), new c("n\xe9l", -1, -1), new c("b\xf3l", -1, -1), new c("r\xf3l", -1, -1), new c("t\xf3l", -1, -1), new c("\xfcl", -1, -1), new c("ből", -1, -1), new c("ről", -1, -1), new c("től", -1, -1), new c("n", -1, -1), new c("an", 19, -1), new c("ban", 20, -1), new c("en", 19, -1), new c("ben", 22, -1), new c("k\xe9ppen", 22, -1), new c("on", 19, -1), new c("\xf6n", 19, -1), new c("k\xe9pp", -1, -1), new c("kor", -1, -1), new c("t", -1, -1), new c("at", 29, -1), new c("et", 29, -1), new c("k\xe9nt", 29, -1), new c("ank\xe9nt", 32, -1), new c("enk\xe9nt", 32, -1), new c("onk\xe9nt", 32, -1), new c("ot", 29, -1), new c("\xe9rt", 29, -1), new c("\xf6t", 29, -1), new c("hez", -1, -1), new c("hoz", -1, -1), new c("h\xf6z", -1, -1), new c("v\xe1", -1, -1), new c("v\xe9", -1, -1)]
+          return delete t.a_4, t.a_4 = [new u("ba", -1, -1), new u("ra", -1, -1), new u("be", -1, -1), new u("re", -1, -1), new u("ig", -1, -1), new u("nak", -1, -1), new u("nek", -1, -1), new u("val", -1, -1), new u("vel", -1, -1), new u("ul", -1, -1), new u("n\xe1l", -1, -1), new u("n\xe9l", -1, -1), new u("b\xf3l", -1, -1), new u("r\xf3l", -1, -1), new u("t\xf3l", -1, -1), new u("\xfcl", -1, -1), new u("ből", -1, -1), new u("ről", -1, -1), new u("től", -1, -1), new u("n", -1, -1), new u("an", 19, -1), new u("ban", 20, -1), new u("en", 19, -1), new u("ben", 22, -1), new u("k\xe9ppen", 22, -1), new u("on", 19, -1), new u("\xf6n", 19, -1), new u("k\xe9pp", -1, -1), new u("kor", -1, -1), new u("t", -1, -1), new u("at", 29, -1), new u("et", 29, -1), new u("k\xe9nt", 29, -1), new u("ank\xe9nt", 32, -1), new u("enk\xe9nt", 32, -1), new u("onk\xe9nt", 32, -1), new u("ot", 29, -1), new u("\xe9rt", 29, -1), new u("\xf6t", 29, -1), new u("hez", -1, -1), new u("hoz", -1, -1), new u("h\xf6z", -1, -1), new u("v\xe1", -1, -1), new u("v\xe9", -1, -1)]
         }
       }, {
         key: "a_5",
         get: function() {
-          return delete n.a_5, n.a_5 = [new c("\xe1n", -1, 2), new c("\xe9n", -1, 1), new c("\xe1nk\xe9nt", -1, 3)]
+          return delete t.a_5, t.a_5 = [new u("\xe1n", -1, 2), new u("\xe9n", -1, 1), new u("\xe1nk\xe9nt", -1, 3)]
         }
       }, {
         key: "a_6",
         get: function() {
-          return delete n.a_6, n.a_6 = [new c("stul", -1, 2), new c("astul", 0, 1), new c("\xe1stul", 0, 3), new c("st\xfcl", -1, 2), new c("est\xfcl", 3, 1), new c("\xe9st\xfcl", 3, 4)]
+          return delete t.a_6, t.a_6 = [new u("stul", -1, 2), new u("astul", 0, 1), new u("\xe1stul", 0, 3), new u("st\xfcl", -1, 2), new u("est\xfcl", 3, 1), new u("\xe9st\xfcl", 3, 4)]
         }
       }, {
         key: "a_7",
         get: function() {
-          return delete n.a_7, n.a_7 = [new c("\xe1", -1, 1), new c("\xe9", -1, 2)]
+          return delete t.a_7, t.a_7 = [new u("\xe1", -1, 1), new u("\xe9", -1, 2)]
         }
       }, {
         key: "a_8",
         get: function() {
-          return delete n.a_8, n.a_8 = [new c("k", -1, 7), new c("ak", 0, 4), new c("ek", 0, 6), new c("ok", 0, 5), new c("\xe1k", 0, 1), new c("\xe9k", 0, 2), new c("\xf6k", 0, 3)]
+          return delete t.a_8, t.a_8 = [new u("k", -1, 7), new u("ak", 0, 4), new u("ek", 0, 6), new u("ok", 0, 5), new u("\xe1k", 0, 1), new u("\xe9k", 0, 2), new u("\xf6k", 0, 3)]
         }
       }, {
         key: "a_9",
         get: function() {
-          return delete n.a_9, n.a_9 = [new c("\xe9i", -1, 7), new c("\xe1\xe9i", 0, 6), new c("\xe9\xe9i", 0, 5), new c("\xe9", -1, 9), new c("k\xe9", 3, 4), new c("ak\xe9", 4, 1), new c("ek\xe9", 4, 1), new c("ok\xe9", 4, 1), new c("\xe1k\xe9", 4, 3), new c("\xe9k\xe9", 4, 2), new c("\xf6k\xe9", 4, 1), new c("\xe9\xe9", 3, 8)]
+          return delete t.a_9, t.a_9 = [new u("\xe9i", -1, 7), new u("\xe1\xe9i", 0, 6), new u("\xe9\xe9i", 0, 5), new u("\xe9", -1, 9), new u("k\xe9", 3, 4), new u("ak\xe9", 4, 1), new u("ek\xe9", 4, 1), new u("ok\xe9", 4, 1), new u("\xe1k\xe9", 4, 3), new u("\xe9k\xe9", 4, 2), new u("\xf6k\xe9", 4, 1), new u("\xe9\xe9", 3, 8)]
         }
       }, {
         key: "a_10",
         get: function() {
-          return delete n.a_10, n.a_10 = [new c("a", -1, 18), new c("ja", 0, 17), new c("d", -1, 16), new c("ad", 2, 13), new c("ed", 2, 13), new c("od", 2, 13), new c("\xe1d", 2, 14), new c("\xe9d", 2, 15), new c("\xf6d", 2, 13), new c("e", -1, 18), new c("je", 9, 17), new c("nk", -1, 4), new c("unk", 11, 1), new c("\xe1nk", 11, 2), new c("\xe9nk", 11, 3), new c("\xfcnk", 11, 1), new c("uk", -1, 8), new c("juk", 16, 7), new c("\xe1juk", 17, 5), new c("\xfck", -1, 8), new c("j\xfck", 19, 7), new c("\xe9j\xfck", 20, 6), new c("m", -1, 12), new c("am", 22, 9), new c("em", 22, 9), new c("om", 22, 9), new c("\xe1m", 22, 10), new c("\xe9m", 22, 11), new c("o", -1, 18), new c("\xe1", -1, 19), new c("\xe9", -1, 20)]
+          return delete t.a_10, t.a_10 = [new u("a", -1, 18), new u("ja", 0, 17), new u("d", -1, 16), new u("ad", 2, 13), new u("ed", 2, 13), new u("od", 2, 13), new u("\xe1d", 2, 14), new u("\xe9d", 2, 15), new u("\xf6d", 2, 13), new u("e", -1, 18), new u("je", 9, 17), new u("nk", -1, 4), new u("unk", 11, 1), new u("\xe1nk", 11, 2), new u("\xe9nk", 11, 3), new u("\xfcnk", 11, 1), new u("uk", -1, 8), new u("juk", 16, 7), new u("\xe1juk", 17, 5), new u("\xfck", -1, 8), new u("j\xfck", 19, 7), new u("\xe9j\xfck", 20, 6), new u("m", -1, 12), new u("am", 22, 9), new u("em", 22, 9), new u("om", 22, 9), new u("\xe1m", 22, 10), new u("\xe9m", 22, 11), new u("o", -1, 18), new u("\xe1", -1, 19), new u("\xe9", -1, 20)]
         }
       }, {
         key: "a_11",
         get: function() {
-          return delete n.a_11, n.a_11 = [new c("id", -1, 10), new c("aid", 0, 9), new c("jaid", 1, 6), new c("eid", 0, 9), new c("jeid", 3, 6), new c("\xe1id", 0, 7), new c("\xe9id", 0, 8), new c("i", -1, 15), new c("ai", 7, 14), new c("jai", 8, 11), new c("ei", 7, 14), new c("jei", 10, 11), new c("\xe1i", 7, 12), new c("\xe9i", 7, 13), new c("itek", -1, 24), new c("eitek", 14, 21), new c("jeitek", 15, 20), new c("\xe9itek", 14, 23), new c("ik", -1, 29), new c("aik", 18, 26), new c("jaik", 19, 25), new c("eik", 18, 26), new c("jeik", 21, 25), new c("\xe1ik", 18, 27), new c("\xe9ik", 18, 28), new c("ink", -1, 20), new c("aink", 25, 17), new c("jaink", 26, 16), new c("eink", 25, 17), new c("jeink", 28, 16), new c("\xe1ink", 25, 18), new c("\xe9ink", 25, 19), new c("aitok", -1, 21), new c("jaitok", 32, 20), new c("\xe1itok", -1, 22), new c("im", -1, 5), new c("aim", 35, 4), new c("jaim", 36, 1), new c("eim", 35, 4), new c("jeim", 38, 1), new c("\xe1im", 35, 2), new c("\xe9im", 35, 3)]
+          return delete t.a_11, t.a_11 = [new u("id", -1, 10), new u("aid", 0, 9), new u("jaid", 1, 6), new u("eid", 0, 9), new u("jeid", 3, 6), new u("\xe1id", 0, 7), new u("\xe9id", 0, 8), new u("i", -1, 15), new u("ai", 7, 14), new u("jai", 8, 11), new u("ei", 7, 14), new u("jei", 10, 11), new u("\xe1i", 7, 12), new u("\xe9i", 7, 13), new u("itek", -1, 24), new u("eitek", 14, 21), new u("jeitek", 15, 20), new u("\xe9itek", 14, 23), new u("ik", -1, 29), new u("aik", 18, 26), new u("jaik", 19, 25), new u("eik", 18, 26), new u("jeik", 21, 25), new u("\xe1ik", 18, 27), new u("\xe9ik", 18, 28), new u("ink", -1, 20), new u("aink", 25, 17), new u("jaink", 26, 16), new u("eink", 25, 17), new u("jeink", 28, 16), new u("\xe1ink", 25, 18), new u("\xe9ink", 25, 19), new u("aitok", -1, 21), new u("jaitok", 32, 20), new u("\xe1itok", -1, 22), new u("im", -1, 5), new u("aim", 35, 4), new u("jaim", 36, 1), new u("eim", 35, 4), new u("jeim", 38, 1), new u("\xe1im", 35, 2), new u("\xe9im", 35, 3)]
         }
       }, {
         key: "g_v",
         get: function() {
-          return delete n.g_v, n.g_v = [17, 65, 16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 17, 36, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1]
+          return delete t.g_v, t.g_v = [17, 65, 16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 17, 36, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1]
         }
-      }]), n
-    }(u),
-    I = function(e) {
-      function n() {
-        return i(this, n), t(this, Object.getPrototypeOf(n).apply(this, arguments))
+      }]), t
+    }(c),
+    p = function(e) {
+      function t() {
+        return r(this, t), i(this, Object.getPrototypeOf(t).apply(this, arguments))
       }
-      return r(n, e), a(n, [{
+      return s(t, e), a(t, [{
         key: "r_mark_regions$esjava$0",
         value: function() {
           var e = void 0,
-            t = void 0;
+            i = void 0;
           this.I_pV = this.limit, this.I_p1 = this.limit, this.I_p2 = this.limit, e = this.cursor;
-          l: do {
-            A: for (;;) {
+          e: do {
+            d: for (;;) {
               do {
-                if (!this.in_grouping$esjava$3(n.g_v, 97, 250)) break;
-                break A
+                if (!this.in_grouping$esjava$3(t.g_v, 97, 250)) break;
+                break d
               } while (!1);
-              if (this.cursor >= this.limit) break l;
+              if (this.cursor >= this.limit) break e;
               this.cursor++
             }
             this.I_pV = this.cursor
           } while (!1);
-          this.cursor = e, t = this.cursor;
-          d: do {
-            H: for (;;) {
+          this.cursor = e, i = this.cursor;
+          t: do {
+            U: for (;;) {
               do {
-                if (!this.in_grouping$esjava$3(n.g_v, 97, 250)) break;
-                break H
+                if (!this.in_grouping$esjava$3(t.g_v, 97, 250)) break;
+                break U
               } while (!1);
-              if (this.cursor >= this.limit) break d;
+              if (this.cursor >= this.limit) break t;
               this.cursor++
             }
             Y: for (;;) {
               do {
-                if (!this.out_grouping$esjava$3(n.g_v, 97, 250)) break;
+                if (!this.out_grouping$esjava$3(t.g_v, 97, 250)) break;
                 break Y
               } while (!1);
-              if (this.cursor >= this.limit) break d;
+              if (this.cursor >= this.limit) break t;
               this.cursor++
             }
-            this.I_p1 = this.cursor;$: for (;;) {
+            this.I_p1 = this.cursor;L: for (;;) {
               do {
-                if (!this.in_grouping$esjava$3(n.g_v, 97, 250)) break;
-                break $
+                if (!this.in_grouping$esjava$3(t.g_v, 97, 250)) break;
+                break L
               } while (!1);
-              if (this.cursor >= this.limit) break d;
+              if (this.cursor >= this.limit) break t;
               this.cursor++
             }
-            X: for (;;) {
+            G: for (;;) {
               do {
-                if (!this.out_grouping$esjava$3(n.g_v, 97, 250)) break;
-                break X
+                if (!this.out_grouping$esjava$3(t.g_v, 97, 250)) break;
+                break G
               } while (!1);
-              if (this.cursor >= this.limit) break d;
+              if (this.cursor >= this.limit) break t;
               this.cursor++
             }
             this.I_p2 = this.cursor
           } while (!1);
-          return this.cursor = t, !0
+          return this.cursor = i, !0
         }
       }, {
         key: "r_initial_morph$esjava$0",
         value: function() {
           var e = void 0;
-          if (this.bra = this.cursor, 0 === (e = this.find_among$esjava$1(n.a_0))) return !1;
+          if (this.bra = this.cursor, 0 === (e = this.find_among$esjava$1(t.a_0))) return !1;
           switch (this.ket = this.cursor, e) {
             case 0:
               return !1;
@@ -5784,7 +5816,7 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "r_noun_sfx$esjava$0",
         value: function() {
           var e = void 0;
-          if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(n.a_1))) return !1;
+          if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(t.a_1))) return !1;
           switch (this.bra = this.cursor, e) {
             case 0:
               return !1;
@@ -5802,7 +5834,7 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "r_deriv$esjava$0",
         value: function() {
           var e = void 0;
-          if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(n.a_2))) return !1;
+          if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(t.a_2))) return !1;
           switch (this.bra = this.cursor, e) {
             case 0:
               return !1;
@@ -5831,7 +5863,7 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "r_verb_sfx$esjava$0",
         value: function() {
           var e = void 0;
-          if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(n.a_3))) return !1;
+          if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(t.a_3))) return !1;
           switch (this.bra = this.cursor, e) {
             case 0:
               return !1;
@@ -5849,32 +5881,32 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "stem$esjava$0",
         value: function() {
           var e = void 0,
+            i = void 0,
+            s = void 0,
             t = void 0,
-            n = void 0,
-            r = void 0,
-            i = void 0;
+            r = void 0;
           e = this.cursor;
           do
             if (!this.r_initial_morph$esjava$0()) break; while (!1);
-          this.cursor = e, t = this.cursor;
+          this.cursor = e, i = this.cursor;
           do
             if (!this.r_mark_regions$esjava$0()) break; while (!1);
-          this.cursor = t, this.limit_backward = this.cursor, this.cursor = this.limit, n = this.limit - this.cursor;
+          this.cursor = i, this.limit_backward = this.cursor, this.cursor = this.limit, s = this.limit - this.cursor;
           do
             if (!this.r_noun_sfx$esjava$0()) break; while (!1);
-          this.cursor = this.limit - n, r = this.limit - this.cursor;
+          this.cursor = this.limit - s, t = this.limit - this.cursor;
           do
             if (!this.r_deriv$esjava$0()) break; while (!1);
-          this.cursor = this.limit - r, i = this.limit - this.cursor;
+          this.cursor = this.limit - t, r = this.limit - this.cursor;
           do
             if (!this.r_verb_sfx$esjava$0()) break; while (!1);
-          return this.cursor = this.limit - i, this.cursor = this.limit_backward, !0
+          return this.cursor = this.limit - r, this.cursor = this.limit_backward, !0
         }
       }, {
         key: "stem",
         value: function() {
-          for (var e, t = arguments.length, r = Array(t), i = 0; i < t; i++) r[i] = arguments[i];
-          return 0 === r.length ? this.stem$esjava$0.apply(this, r) : (e = o(Object.getPrototypeOf(n.prototype), "stem", this)).call.apply(e, [this].concat(r))
+          for (var e, i = arguments.length, s = Array(i), r = 0; r < i; r++) s[r] = arguments[r];
+          return 0 === s.length ? this.stem$esjava$0.apply(this, s) : (e = n(Object.getPrototypeOf(t.prototype), "stem", this)).call.apply(e, [this].concat(s))
         }
       }, {
         key: "I_p2",
@@ -5903,51 +5935,51 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
       }], [{
         key: "a_0",
         get: function() {
-          return delete n.a_0, n.a_0 = [new c("b'", -1, 4), new c("bh", -1, 14), new c("bhf", 1, 9), new c("bp", -1, 11), new c("ch", -1, 15), new c("d'", -1, 2), new c("d'fh", 5, 3), new c("dh", -1, 16), new c("dt", -1, 13), new c("fh", -1, 17), new c("gc", -1, 7), new c("gh", -1, 18), new c("h-", -1, 1), new c("m'", -1, 4), new c("mb", -1, 6), new c("mh", -1, 19), new c("n-", -1, 1), new c("nd", -1, 8), new c("ng", -1, 10), new c("ph", -1, 20), new c("sh", -1, 5), new c("t-", -1, 1), new c("th", -1, 21), new c("ts", -1, 12)]
+          return delete t.a_0, t.a_0 = [new u("b'", -1, 4), new u("bh", -1, 14), new u("bhf", 1, 9), new u("bp", -1, 11), new u("ch", -1, 15), new u("d'", -1, 2), new u("d'fh", 5, 3), new u("dh", -1, 16), new u("dt", -1, 13), new u("fh", -1, 17), new u("gc", -1, 7), new u("gh", -1, 18), new u("h-", -1, 1), new u("m'", -1, 4), new u("mb", -1, 6), new u("mh", -1, 19), new u("n-", -1, 1), new u("nd", -1, 8), new u("ng", -1, 10), new u("ph", -1, 20), new u("sh", -1, 5), new u("t-", -1, 1), new u("th", -1, 21), new u("ts", -1, 12)]
         }
       }, {
         key: "a_1",
         get: function() {
-          return delete n.a_1, n.a_1 = [new c("\xedochta", -1, 1), new c("a\xedochta", 0, 1), new c("ire", -1, 2), new c("aire", 2, 2), new c("abh", -1, 1), new c("eabh", 4, 1), new c("ibh", -1, 1), new c("aibh", 6, 1), new c("amh", -1, 1), new c("eamh", 8, 1), new c("imh", -1, 1), new c("aimh", 10, 1), new c("\xedocht", -1, 1), new c("a\xedocht", 12, 1), new c("ir\xed", -1, 2), new c("air\xed", 14, 2)]
+          return delete t.a_1, t.a_1 = [new u("\xedochta", -1, 1), new u("a\xedochta", 0, 1), new u("ire", -1, 2), new u("aire", 2, 2), new u("abh", -1, 1), new u("eabh", 4, 1), new u("ibh", -1, 1), new u("aibh", 6, 1), new u("amh", -1, 1), new u("eamh", 8, 1), new u("imh", -1, 1), new u("aimh", 10, 1), new u("\xedocht", -1, 1), new u("a\xedocht", 12, 1), new u("ir\xed", -1, 2), new u("air\xed", 14, 2)]
         }
       }, {
         key: "a_2",
         get: function() {
-          return delete n.a_2, n.a_2 = [new c("\xf3ideacha", -1, 6), new c("patacha", -1, 5), new c("achta", -1, 1), new c("arcachta", 2, 2), new c("eachta", 2, 1), new c("grafa\xedochta", -1, 4), new c("paite", -1, 5), new c("ach", -1, 1), new c("each", 7, 1), new c("\xf3ideach", 8, 6), new c("gineach", 8, 3), new c("patach", 7, 5), new c("grafa\xedoch", -1, 4), new c("pataigh", -1, 5), new c("\xf3idigh", -1, 6), new c("acht\xfail", -1, 1), new c("eacht\xfail", 15, 1), new c("gineas", -1, 3), new c("ginis", -1, 3), new c("acht", -1, 1), new c("arcacht", 19, 2), new c("eacht", 19, 1), new c("grafa\xedocht", -1, 4), new c("arcachta\xed", -1, 2), new c("grafa\xedochta\xed", -1, 4)]
+          return delete t.a_2, t.a_2 = [new u("\xf3ideacha", -1, 6), new u("patacha", -1, 5), new u("achta", -1, 1), new u("arcachta", 2, 2), new u("eachta", 2, 1), new u("grafa\xedochta", -1, 4), new u("paite", -1, 5), new u("ach", -1, 1), new u("each", 7, 1), new u("\xf3ideach", 8, 6), new u("gineach", 8, 3), new u("patach", 7, 5), new u("grafa\xedoch", -1, 4), new u("pataigh", -1, 5), new u("\xf3idigh", -1, 6), new u("acht\xfail", -1, 1), new u("eacht\xfail", 15, 1), new u("gineas", -1, 3), new u("ginis", -1, 3), new u("acht", -1, 1), new u("arcacht", 19, 2), new u("eacht", 19, 1), new u("grafa\xedocht", -1, 4), new u("arcachta\xed", -1, 2), new u("grafa\xedochta\xed", -1, 4)]
         }
       }, {
         key: "a_3",
         get: function() {
-          return delete n.a_3, n.a_3 = [new c("imid", -1, 1), new c("aimid", 0, 1), new c("\xedmid", -1, 1), new c("a\xedmid", 2, 1), new c("adh", -1, 2), new c("eadh", 4, 2), new c("faidh", -1, 1), new c("fidh", -1, 1), new c("\xe1il", -1, 2), new c("ain", -1, 2), new c("tear", -1, 2), new c("tar", -1, 2)]
+          return delete t.a_3, t.a_3 = [new u("imid", -1, 1), new u("aimid", 0, 1), new u("\xedmid", -1, 1), new u("a\xedmid", 2, 1), new u("adh", -1, 2), new u("eadh", 4, 2), new u("faidh", -1, 1), new u("fidh", -1, 1), new u("\xe1il", -1, 2), new u("ain", -1, 2), new u("tear", -1, 2), new u("tar", -1, 2)]
         }
       }, {
         key: "g_v",
         get: function() {
-          return delete n.g_v, n.g_v = [17, 65, 16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 17, 4, 2]
+          return delete t.g_v, t.g_v = [17, 65, 16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 17, 4, 2]
         }
-      }]), n
-    }(u),
-    T = function(e) {
-      function n() {
-        return i(this, n), t(this, Object.getPrototypeOf(n).apply(this, arguments))
+      }]), t
+    }(c),
+    y = function(e) {
+      function t() {
+        return r(this, t), i(this, Object.getPrototypeOf(t).apply(this, arguments))
       }
-      return r(n, e), a(n, [{
+      return s(t, e), a(t, [{
         key: "r_prelude$esjava$0",
         value: function() {
           var e = void 0,
-            t = void 0,
-            r = void 0,
             i = void 0,
+            s = void 0,
+            r = void 0,
             a = void 0,
-            o = void 0;
-          t = this.cursor;
-          G: for (;;) {
-            r = this.cursor;
-            c: do {
-              if (this.bra = this.cursor, 0 === (e = this.find_among$esjava$1(n.a_0))) break;
+            n = void 0;
+          i = this.cursor;
+          P: for (;;) {
+            s = this.cursor;
+            i: do {
+              if (this.bra = this.cursor, 0 === (e = this.find_among$esjava$1(t.a_0))) break;
               switch (this.ket = this.cursor, e) {
                 case 0:
-                  break c;
+                  break i;
                 case 1:
                   this.slice_from$esjava$1("\xe0");
                   break;
@@ -5967,42 +5999,42 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
                   this.slice_from$esjava$1("qU");
                   break;
                 case 7:
-                  if (this.cursor >= this.limit) break c;
+                  if (this.cursor >= this.limit) break i;
                   this.cursor++
               }
-              continue G
+              continue P
             } while (!1);
-            this.cursor = r;
+            this.cursor = s;
             break
           }
-          this.cursor = t;
-          Q: for (;;) {
-            i = this.cursor;
-            d: do {
-              H: for (;;) {
+          this.cursor = i;
+          W: for (;;) {
+            r = this.cursor;
+            t: do {
+              U: for (;;) {
                 a = this.cursor;
-                _: do {
-                  if (!this.in_grouping$esjava$3(n.g_v, 97, 249)) break;
+                a: do {
+                  if (!this.in_grouping$esjava$3(t.g_v, 97, 249)) break;
                   this.bra = this.cursor;
-                  p: do {
-                    o = this.cursor;
+                  n: do {
+                    n = this.cursor;
                     do {
-                      if (!this.eq_s$esjava$1("u") || (this.ket = this.cursor, !this.in_grouping$esjava$3(n.g_v, 97, 249))) break;
+                      if (!this.eq_s$esjava$1("u") || (this.ket = this.cursor, !this.in_grouping$esjava$3(t.g_v, 97, 249))) break;
                       this.slice_from$esjava$1("U");
-                      break p
+                      break n
                     } while (!1);
-                    if (this.cursor = o, !this.eq_s$esjava$1("i") || (this.ket = this.cursor, !this.in_grouping$esjava$3(n.g_v, 97, 249))) break _;
+                    if (this.cursor = n, !this.eq_s$esjava$1("i") || (this.ket = this.cursor, !this.in_grouping$esjava$3(t.g_v, 97, 249))) break a;
                     this.slice_from$esjava$1("I")
                   } while (!1);
                   this.cursor = a;
-                  break H
+                  break U
                 } while (!1);
-                if (this.cursor = a, this.cursor >= this.limit) break d;
+                if (this.cursor = a, this.cursor >= this.limit) break t;
                 this.cursor++
               }
-              continue Q
+              continue W
             } while (!1);
-            this.cursor = i;
+            this.cursor = r;
             break
           }
           return !0
@@ -6011,94 +6043,94 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "r_mark_regions$esjava$0",
         value: function() {
           var e = void 0,
-            t = void 0,
-            r = void 0,
             i = void 0,
+            s = void 0,
+            r = void 0,
             a = void 0;
           this.I_pV = this.limit, this.I_p1 = this.limit, this.I_p2 = this.limit, e = this.cursor;
-          l: do {
-            c: do {
-              t = this.cursor;
-              u: do {
-                if (!this.in_grouping$esjava$3(n.g_v, 97, 249)) break;
-                d: do {
-                  r = this.cursor;
-                  f: do {
-                    if (!this.out_grouping$esjava$3(n.g_v, 97, 249)) break;
-                    C: for (;;) {
+          e: do {
+            i: do {
+              i = this.cursor;
+              s: do {
+                if (!this.in_grouping$esjava$3(t.g_v, 97, 249)) break;
+                t: do {
+                  s = this.cursor;
+                  r: do {
+                    if (!this.out_grouping$esjava$3(t.g_v, 97, 249)) break;
+                    m: for (;;) {
                       do {
-                        if (!this.in_grouping$esjava$3(n.g_v, 97, 249)) break;
-                        break C
+                        if (!this.in_grouping$esjava$3(t.g_v, 97, 249)) break;
+                        break m
                       } while (!1);
-                      if (this.cursor >= this.limit) break f;
+                      if (this.cursor >= this.limit) break r;
                       this.cursor++
                     }
-                    break d
+                    break t
                   } while (!1);
-                  if (this.cursor = r, !this.in_grouping$esjava$3(n.g_v, 97, 249)) break u;
-                  w: for (;;) {
+                  if (this.cursor = s, !this.in_grouping$esjava$3(t.g_v, 97, 249)) break s;
+                  j: for (;;) {
                     do {
-                      if (!this.out_grouping$esjava$3(n.g_v, 97, 249)) break;
-                      break w
+                      if (!this.out_grouping$esjava$3(t.g_v, 97, 249)) break;
+                      break j
                     } while (!1);
-                    if (this.cursor >= this.limit) break u;
+                    if (this.cursor >= this.limit) break s;
                     this.cursor++
                   }
                 } while (!1);
-                break c
+                break i
               } while (!1);
-              if (this.cursor = t, !this.out_grouping$esjava$3(n.g_v, 97, 249)) break l;
-              m: do {
-                i = this.cursor;
-                R: do {
-                  if (!this.out_grouping$esjava$3(n.g_v, 97, 249)) break;
-                  P: for (;;) {
+              if (this.cursor = i, !this.out_grouping$esjava$3(t.g_v, 97, 249)) break e;
+              o: do {
+                r = this.cursor;
+                g: do {
+                  if (!this.out_grouping$esjava$3(t.g_v, 97, 249)) break;
+                  p: for (;;) {
                     do {
-                      if (!this.in_grouping$esjava$3(n.g_v, 97, 249)) break;
-                      break P
+                      if (!this.in_grouping$esjava$3(t.g_v, 97, 249)) break;
+                      break p
                     } while (!1);
-                    if (this.cursor >= this.limit) break R;
+                    if (this.cursor >= this.limit) break g;
                     this.cursor++
                   }
-                  break m
+                  break o
                 } while (!1);
-                if (this.cursor = i, !this.in_grouping$esjava$3(n.g_v, 97, 249) || this.cursor >= this.limit) break l;
+                if (this.cursor = r, !this.in_grouping$esjava$3(t.g_v, 97, 249) || this.cursor >= this.limit) break e;
                 this.cursor++
               } while (!1)
             } while (!1);this.I_pV = this.cursor
           } while (!1);
           this.cursor = e, a = this.cursor;
-          D: do {
-            L: for (;;) {
+          y: do {
+            I: for (;;) {
               do {
-                if (!this.in_grouping$esjava$3(n.g_v, 97, 249)) break;
-                break L
+                if (!this.in_grouping$esjava$3(t.g_v, 97, 249)) break;
+                break I
               } while (!1);
-              if (this.cursor >= this.limit) break D;
+              if (this.cursor >= this.limit) break y;
+              this.cursor++
+            }
+            q: for (;;) {
+              do {
+                if (!this.out_grouping$esjava$3(t.g_v, 97, 249)) break;
+                break q
+              } while (!1);
+              if (this.cursor >= this.limit) break y;
+              this.cursor++
+            }
+            this.I_p1 = this.cursor;O: for (;;) {
+              do {
+                if (!this.in_grouping$esjava$3(t.g_v, 97, 249)) break;
+                break O
+              } while (!1);
+              if (this.cursor >= this.limit) break y;
               this.cursor++
             }
             x: for (;;) {
               do {
-                if (!this.out_grouping$esjava$3(n.g_v, 97, 249)) break;
+                if (!this.out_grouping$esjava$3(t.g_v, 97, 249)) break;
                 break x
               } while (!1);
-              if (this.cursor >= this.limit) break D;
-              this.cursor++
-            }
-            this.I_p1 = this.cursor;k: for (;;) {
-              do {
-                if (!this.in_grouping$esjava$3(n.g_v, 97, 249)) break;
-                break k
-              } while (!1);
-              if (this.cursor >= this.limit) break D;
-              this.cursor++
-            }
-            j: for (;;) {
-              do {
-                if (!this.out_grouping$esjava$3(n.g_v, 97, 249)) break;
-                break j
-              } while (!1);
-              if (this.cursor >= this.limit) break D;
+              if (this.cursor >= this.limit) break y;
               this.cursor++
             }
             this.I_p2 = this.cursor
@@ -6109,14 +6141,14 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "r_postlude$esjava$0",
         value: function() {
           var e = void 0,
-            t = void 0;
-          G: for (;;) {
-            t = this.cursor;
-            c: do {
-              if (this.bra = this.cursor, 0 === (e = this.find_among$esjava$1(n.a_1))) break;
+            i = void 0;
+          P: for (;;) {
+            i = this.cursor;
+            i: do {
+              if (this.bra = this.cursor, 0 === (e = this.find_among$esjava$1(t.a_1))) break;
               switch (this.ket = this.cursor, e) {
                 case 0:
-                  break c;
+                  break i;
                 case 1:
                   this.slice_from$esjava$1("i");
                   break;
@@ -6124,12 +6156,12 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
                   this.slice_from$esjava$1("u");
                   break;
                 case 3:
-                  if (this.cursor >= this.limit) break c;
+                  if (this.cursor >= this.limit) break i;
                   this.cursor++
               }
-              continue G
+              continue P
             } while (!1);
-            this.cursor = t;
+            this.cursor = i;
             break
           }
           return !0
@@ -6153,7 +6185,7 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "r_attached_pronoun$esjava$0",
         value: function() {
           var e = void 0;
-          if (this.ket = this.cursor, 0 === this.find_among_b$esjava$1(n.a_2) || (this.bra = this.cursor, 0 === (e = this.find_among_b$esjava$1(n.a_3)) || !this.r_RV$esjava$0())) return !1;
+          if (this.ket = this.cursor, 0 === this.find_among_b$esjava$1(t.a_2) || (this.bra = this.cursor, 0 === (e = this.find_among_b$esjava$1(t.a_3)) || !this.r_RV$esjava$0())) return !1;
           switch (e) {
             case 0:
               return !1;
@@ -6169,11 +6201,11 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "r_standard_suffix$esjava$0",
         value: function() {
           var e = void 0,
-            t = void 0,
-            r = void 0,
             i = void 0,
+            s = void 0,
+            r = void 0,
             a = void 0;
-          if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(n.a_6))) return !1;
+          if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(t.a_6))) return !1;
           switch (this.bra = this.cursor, e) {
             case 0:
               return !1;
@@ -6183,10 +6215,10 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
               break;
             case 2:
               if (!this.r_R2$esjava$0()) return !1;
-              this.slice_del$esjava$0(), t = this.limit - this.cursor;
+              this.slice_del$esjava$0(), i = this.limit - this.cursor;
               do {
                 if (this.ket = this.cursor, !this.eq_s_b$esjava$1("ic") || (this.bra = this.cursor, !this.r_R2$esjava$0())) {
-                  this.cursor = this.limit - t;
+                  this.cursor = this.limit - i;
                   break
                 }
                 this.slice_del$esjava$0()
@@ -6210,20 +6242,20 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
               break;
             case 7:
               if (!this.r_R1$esjava$0()) return !1;
-              this.slice_del$esjava$0(), r = this.limit - this.cursor;
-              c: do {
-                if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(n.a_4)) || (this.bra = this.cursor, !this.r_R2$esjava$0())) {
-                  this.cursor = this.limit - r;
+              this.slice_del$esjava$0(), s = this.limit - this.cursor;
+              i: do {
+                if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(t.a_4)) || (this.bra = this.cursor, !this.r_R2$esjava$0())) {
+                  this.cursor = this.limit - s;
                   break
                 }
                 switch (this.slice_del$esjava$0(), e) {
                   case 0:
-                    this.cursor = this.limit - r;
-                    break c;
+                    this.cursor = this.limit - s;
+                    break i;
                   case 1:
                     if (this.ket = this.cursor, !this.eq_s_b$esjava$1("at") || (this.bra = this.cursor, !this.r_R2$esjava$0())) {
-                      this.cursor = this.limit - r;
-                      break c
+                      this.cursor = this.limit - s;
+                      break i
                     }
                     this.slice_del$esjava$0()
                 }
@@ -6231,20 +6263,20 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
               break;
             case 8:
               if (!this.r_R2$esjava$0()) return !1;
-              this.slice_del$esjava$0(), i = this.limit - this.cursor;
-              u: do {
-                if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(n.a_5))) {
-                  this.cursor = this.limit - i;
+              this.slice_del$esjava$0(), r = this.limit - this.cursor;
+              s: do {
+                if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(t.a_5))) {
+                  this.cursor = this.limit - r;
                   break
                 }
                 switch (this.bra = this.cursor, e) {
                   case 0:
-                    this.cursor = this.limit - i;
-                    break u;
+                    this.cursor = this.limit - r;
+                    break s;
                   case 1:
                     if (!this.r_R2$esjava$0()) {
-                      this.cursor = this.limit - i;
-                      break u
+                      this.cursor = this.limit - r;
+                      break s
                     }
                     this.slice_del$esjava$0()
                 }
@@ -6267,35 +6299,35 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "r_verb_suffix$esjava$0",
         value: function() {
           var e = void 0,
-            t = void 0,
-            r = void 0;
-          if (t = this.limit - this.cursor, this.cursor < this.I_pV) return !1;
-          if (this.cursor = this.I_pV, r = this.limit_backward, this.limit_backward = this.cursor, this.cursor = this.limit - t, this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(n.a_7))) return this.limit_backward = r, !1;
+            i = void 0,
+            s = void 0;
+          if (i = this.limit - this.cursor, this.cursor < this.I_pV) return !1;
+          if (this.cursor = this.I_pV, s = this.limit_backward, this.limit_backward = this.cursor, this.cursor = this.limit - i, this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(t.a_7))) return this.limit_backward = s, !1;
           switch (this.bra = this.cursor, e) {
             case 0:
-              return this.limit_backward = r, !1;
+              return this.limit_backward = s, !1;
             case 1:
               this.slice_del$esjava$0()
           }
-          return this.limit_backward = r, !0
+          return this.limit_backward = s, !0
         }
       }, {
         key: "r_vowel_suffix$esjava$0",
         value: function() {
           var e = void 0,
-            t = void 0;
+            i = void 0;
           e = this.limit - this.cursor;
           do {
-            if (this.ket = this.cursor, !this.in_grouping_b$esjava$3(n.g_AEIO, 97, 242) || (this.bra = this.cursor, !this.r_RV$esjava$0()) || (this.slice_del$esjava$0(), this.ket = this.cursor, !this.eq_s_b$esjava$1("i")) || (this.bra = this.cursor, !this.r_RV$esjava$0())) {
+            if (this.ket = this.cursor, !this.in_grouping_b$esjava$3(t.g_AEIO, 97, 242) || (this.bra = this.cursor, !this.r_RV$esjava$0()) || (this.slice_del$esjava$0(), this.ket = this.cursor, !this.eq_s_b$esjava$1("i")) || (this.bra = this.cursor, !this.r_RV$esjava$0())) {
               this.cursor = this.limit - e;
               break
             }
             this.slice_del$esjava$0()
           } while (!1);
-          t = this.limit - this.cursor;
+          i = this.limit - this.cursor;
           do {
-            if (this.ket = this.cursor, !this.eq_s_b$esjava$1("h") || (this.bra = this.cursor, !this.in_grouping_b$esjava$3(n.g_CG, 99, 103) || !this.r_RV$esjava$0())) {
-              this.cursor = this.limit - t;
+            if (this.ket = this.cursor, !this.eq_s_b$esjava$1("h") || (this.bra = this.cursor, !this.in_grouping_b$esjava$3(t.g_CG, 99, 103) || !this.r_RV$esjava$0())) {
+              this.cursor = this.limit - i;
               break
             }
             this.slice_del$esjava$0()
@@ -6306,43 +6338,43 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "stem$esjava$0",
         value: function() {
           var e = void 0,
-            t = void 0,
-            n = void 0,
-            r = void 0,
             i = void 0,
+            s = void 0,
+            t = void 0,
+            r = void 0,
             a = void 0,
-            o = void 0;
+            n = void 0;
           e = this.cursor;
           do
             if (!this.r_prelude$esjava$0()) break; while (!1);
-          this.cursor = e, t = this.cursor;
+          this.cursor = e, i = this.cursor;
           do
             if (!this.r_mark_regions$esjava$0()) break; while (!1);
-          this.cursor = t, this.limit_backward = this.cursor, this.cursor = this.limit, n = this.limit - this.cursor;
+          this.cursor = i, this.limit_backward = this.cursor, this.cursor = this.limit, s = this.limit - this.cursor;
           do
             if (!this.r_attached_pronoun$esjava$0()) break; while (!1);
-          this.cursor = this.limit - n, r = this.limit - this.cursor;
-          d: do f: do {
-            i = this.limit - this.cursor;
+          this.cursor = this.limit - s, t = this.limit - this.cursor;
+          t: do r: do {
+            r = this.limit - this.cursor;
             do {
               if (!this.r_standard_suffix$esjava$0()) break;
-              break f
+              break r
             } while (!1);
-            if (this.cursor = this.limit - i, !this.r_verb_suffix$esjava$0()) break d
+            if (this.cursor = this.limit - r, !this.r_verb_suffix$esjava$0()) break t
           } while (!1); while (!1);
-          this.cursor = this.limit - r, a = this.limit - this.cursor;
+          this.cursor = this.limit - t, a = this.limit - this.cursor;
           do
             if (!this.r_vowel_suffix$esjava$0()) break; while (!1);
-          this.cursor = this.limit - a, this.cursor = this.limit_backward, o = this.cursor;
+          this.cursor = this.limit - a, this.cursor = this.limit_backward, n = this.cursor;
           do
             if (!this.r_postlude$esjava$0()) break; while (!1);
-          return this.cursor = o, !0
+          return this.cursor = n, !0
         }
       }, {
         key: "stem",
         value: function() {
-          for (var e, t = arguments.length, r = Array(t), i = 0; i < t; i++) r[i] = arguments[i];
-          return 0 === r.length ? this.stem$esjava$0.apply(this, r) : (e = o(Object.getPrototypeOf(n.prototype), "stem", this)).call.apply(e, [this].concat(r))
+          for (var e, i = arguments.length, s = Array(i), r = 0; r < i; r++) s[r] = arguments[r];
+          return 0 === s.length ? this.stem$esjava$0.apply(this, s) : (e = n(Object.getPrototypeOf(t.prototype), "stem", this)).call.apply(e, [this].concat(s))
         }
       }, {
         key: "I_p2",
@@ -6371,87 +6403,87 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
       }], [{
         key: "a_0",
         get: function() {
-          return delete n.a_0, n.a_0 = [new c("", -1, 7), new c("qu", 0, 6), new c("\xe1", 0, 1), new c("\xe9", 0, 2), new c("\xed", 0, 3), new c("\xf3", 0, 4), new c("\xfa", 0, 5)]
+          return delete t.a_0, t.a_0 = [new u("", -1, 7), new u("qu", 0, 6), new u("\xe1", 0, 1), new u("\xe9", 0, 2), new u("\xed", 0, 3), new u("\xf3", 0, 4), new u("\xfa", 0, 5)]
         }
       }, {
         key: "a_1",
         get: function() {
-          return delete n.a_1, n.a_1 = [new c("", -1, 3), new c("I", 0, 1), new c("U", 0, 2)]
+          return delete t.a_1, t.a_1 = [new u("", -1, 3), new u("I", 0, 1), new u("U", 0, 2)]
         }
       }, {
         key: "a_2",
         get: function() {
-          return delete n.a_2, n.a_2 = [new c("la", -1, -1), new c("cela", 0, -1), new c("gliela", 0, -1), new c("mela", 0, -1), new c("tela", 0, -1), new c("vela", 0, -1), new c("le", -1, -1), new c("cele", 6, -1), new c("gliele", 6, -1), new c("mele", 6, -1), new c("tele", 6, -1), new c("vele", 6, -1), new c("ne", -1, -1), new c("cene", 12, -1), new c("gliene", 12, -1), new c("mene", 12, -1), new c("sene", 12, -1), new c("tene", 12, -1), new c("vene", 12, -1), new c("ci", -1, -1), new c("li", -1, -1), new c("celi", 20, -1), new c("glieli", 20, -1), new c("meli", 20, -1), new c("teli", 20, -1), new c("veli", 20, -1), new c("gli", 20, -1), new c("mi", -1, -1), new c("si", -1, -1), new c("ti", -1, -1), new c("vi", -1, -1), new c("lo", -1, -1), new c("celo", 31, -1), new c("glielo", 31, -1), new c("melo", 31, -1), new c("telo", 31, -1), new c("velo", 31, -1)]
+          return delete t.a_2, t.a_2 = [new u("la", -1, -1), new u("cela", 0, -1), new u("gliela", 0, -1), new u("mela", 0, -1), new u("tela", 0, -1), new u("vela", 0, -1), new u("le", -1, -1), new u("cele", 6, -1), new u("gliele", 6, -1), new u("mele", 6, -1), new u("tele", 6, -1), new u("vele", 6, -1), new u("ne", -1, -1), new u("cene", 12, -1), new u("gliene", 12, -1), new u("mene", 12, -1), new u("sene", 12, -1), new u("tene", 12, -1), new u("vene", 12, -1), new u("ci", -1, -1), new u("li", -1, -1), new u("celi", 20, -1), new u("glieli", 20, -1), new u("meli", 20, -1), new u("teli", 20, -1), new u("veli", 20, -1), new u("gli", 20, -1), new u("mi", -1, -1), new u("si", -1, -1), new u("ti", -1, -1), new u("vi", -1, -1), new u("lo", -1, -1), new u("celo", 31, -1), new u("glielo", 31, -1), new u("melo", 31, -1), new u("telo", 31, -1), new u("velo", 31, -1)]
         }
       }, {
         key: "a_3",
         get: function() {
-          return delete n.a_3, n.a_3 = [new c("ando", -1, 1), new c("endo", -1, 1), new c("ar", -1, 2), new c("er", -1, 2), new c("ir", -1, 2)]
+          return delete t.a_3, t.a_3 = [new u("ando", -1, 1), new u("endo", -1, 1), new u("ar", -1, 2), new u("er", -1, 2), new u("ir", -1, 2)]
         }
       }, {
         key: "a_4",
         get: function() {
-          return delete n.a_4, n.a_4 = [new c("ic", -1, -1), new c("abil", -1, -1), new c("os", -1, -1), new c("iv", -1, 1)]
+          return delete t.a_4, t.a_4 = [new u("ic", -1, -1), new u("abil", -1, -1), new u("os", -1, -1), new u("iv", -1, 1)]
         }
       }, {
         key: "a_5",
         get: function() {
-          return delete n.a_5, n.a_5 = [new c("ic", -1, 1), new c("abil", -1, 1), new c("iv", -1, 1)]
+          return delete t.a_5, t.a_5 = [new u("ic", -1, 1), new u("abil", -1, 1), new u("iv", -1, 1)]
         }
       }, {
         key: "a_6",
         get: function() {
-          return delete n.a_6, n.a_6 = [new c("ica", -1, 1), new c("logia", -1, 3), new c("osa", -1, 1), new c("ista", -1, 1), new c("iva", -1, 9), new c("anza", -1, 1), new c("enza", -1, 5), new c("ice", -1, 1), new c("atrice", 7, 1), new c("iche", -1, 1), new c("logie", -1, 3), new c("abile", -1, 1), new c("ibile", -1, 1), new c("usione", -1, 4), new c("azione", -1, 2), new c("uzione", -1, 4), new c("atore", -1, 2), new c("ose", -1, 1), new c("ante", -1, 1), new c("mente", -1, 1), new c("amente", 19, 7), new c("iste", -1, 1), new c("ive", -1, 9), new c("anze", -1, 1), new c("enze", -1, 5), new c("ici", -1, 1), new c("atrici", 25, 1), new c("ichi", -1, 1), new c("abili", -1, 1), new c("ibili", -1, 1), new c("ismi", -1, 1), new c("usioni", -1, 4), new c("azioni", -1, 2), new c("uzioni", -1, 4), new c("atori", -1, 2), new c("osi", -1, 1), new c("anti", -1, 1), new c("amenti", -1, 6), new c("imenti", -1, 6), new c("isti", -1, 1), new c("ivi", -1, 9), new c("ico", -1, 1), new c("ismo", -1, 1), new c("oso", -1, 1), new c("amento", -1, 6), new c("imento", -1, 6), new c("ivo", -1, 9), new c("it\xe0", -1, 8), new c("ist\xe0", -1, 1), new c("ist\xe8", -1, 1), new c("ist\xec", -1, 1)]
+          return delete t.a_6, t.a_6 = [new u("ica", -1, 1), new u("logia", -1, 3), new u("osa", -1, 1), new u("ista", -1, 1), new u("iva", -1, 9), new u("anza", -1, 1), new u("enza", -1, 5), new u("ice", -1, 1), new u("atrice", 7, 1), new u("iche", -1, 1), new u("logie", -1, 3), new u("abile", -1, 1), new u("ibile", -1, 1), new u("usione", -1, 4), new u("azione", -1, 2), new u("uzione", -1, 4), new u("atore", -1, 2), new u("ose", -1, 1), new u("ante", -1, 1), new u("mente", -1, 1), new u("amente", 19, 7), new u("iste", -1, 1), new u("ive", -1, 9), new u("anze", -1, 1), new u("enze", -1, 5), new u("ici", -1, 1), new u("atrici", 25, 1), new u("ichi", -1, 1), new u("abili", -1, 1), new u("ibili", -1, 1), new u("ismi", -1, 1), new u("usioni", -1, 4), new u("azioni", -1, 2), new u("uzioni", -1, 4), new u("atori", -1, 2), new u("osi", -1, 1), new u("anti", -1, 1), new u("amenti", -1, 6), new u("imenti", -1, 6), new u("isti", -1, 1), new u("ivi", -1, 9), new u("ico", -1, 1), new u("ismo", -1, 1), new u("oso", -1, 1), new u("amento", -1, 6), new u("imento", -1, 6), new u("ivo", -1, 9), new u("it\xe0", -1, 8), new u("ist\xe0", -1, 1), new u("ist\xe8", -1, 1), new u("ist\xec", -1, 1)]
         }
       }, {
         key: "a_7",
         get: function() {
-          return delete n.a_7, n.a_7 = [new c("isca", -1, 1), new c("enda", -1, 1), new c("ata", -1, 1), new c("ita", -1, 1), new c("uta", -1, 1), new c("ava", -1, 1), new c("eva", -1, 1), new c("iva", -1, 1), new c("erebbe", -1, 1), new c("irebbe", -1, 1), new c("isce", -1, 1), new c("ende", -1, 1), new c("are", -1, 1), new c("ere", -1, 1), new c("ire", -1, 1), new c("asse", -1, 1), new c("ate", -1, 1), new c("avate", 16, 1), new c("evate", 16, 1), new c("ivate", 16, 1), new c("ete", -1, 1), new c("erete", 20, 1), new c("irete", 20, 1), new c("ite", -1, 1), new c("ereste", -1, 1), new c("ireste", -1, 1), new c("ute", -1, 1), new c("erai", -1, 1), new c("irai", -1, 1), new c("isci", -1, 1), new c("endi", -1, 1), new c("erei", -1, 1), new c("irei", -1, 1), new c("assi", -1, 1), new c("ati", -1, 1), new c("iti", -1, 1), new c("eresti", -1, 1), new c("iresti", -1, 1), new c("uti", -1, 1), new c("avi", -1, 1), new c("evi", -1, 1), new c("ivi", -1, 1), new c("isco", -1, 1), new c("ando", -1, 1), new c("endo", -1, 1), new c("Yamo", -1, 1), new c("iamo", -1, 1), new c("avamo", -1, 1), new c("evamo", -1, 1), new c("ivamo", -1, 1), new c("eremo", -1, 1), new c("iremo", -1, 1), new c("assimo", -1, 1), new c("ammo", -1, 1), new c("emmo", -1, 1), new c("eremmo", 54, 1), new c("iremmo", 54, 1), new c("immo", -1, 1), new c("ano", -1, 1), new c("iscano", 58, 1), new c("avano", 58, 1), new c("evano", 58, 1), new c("ivano", 58, 1), new c("eranno", -1, 1), new c("iranno", -1, 1), new c("ono", -1, 1), new c("iscono", 65, 1), new c("arono", 65, 1), new c("erono", 65, 1), new c("irono", 65, 1), new c("erebbero", -1, 1), new c("irebbero", -1, 1), new c("assero", -1, 1), new c("essero", -1, 1), new c("issero", -1, 1), new c("ato", -1, 1), new c("ito", -1, 1), new c("uto", -1, 1), new c("avo", -1, 1), new c("evo", -1, 1), new c("ivo", -1, 1), new c("ar", -1, 1), new c("ir", -1, 1), new c("er\xe0", -1, 1), new c("ir\xe0", -1, 1), new c("er\xf2", -1, 1), new c("ir\xf2", -1, 1)]
+          return delete t.a_7, t.a_7 = [new u("isca", -1, 1), new u("enda", -1, 1), new u("ata", -1, 1), new u("ita", -1, 1), new u("uta", -1, 1), new u("ava", -1, 1), new u("eva", -1, 1), new u("iva", -1, 1), new u("erebbe", -1, 1), new u("irebbe", -1, 1), new u("isce", -1, 1), new u("ende", -1, 1), new u("are", -1, 1), new u("ere", -1, 1), new u("ire", -1, 1), new u("asse", -1, 1), new u("ate", -1, 1), new u("avate", 16, 1), new u("evate", 16, 1), new u("ivate", 16, 1), new u("ete", -1, 1), new u("erete", 20, 1), new u("irete", 20, 1), new u("ite", -1, 1), new u("ereste", -1, 1), new u("ireste", -1, 1), new u("ute", -1, 1), new u("erai", -1, 1), new u("irai", -1, 1), new u("isci", -1, 1), new u("endi", -1, 1), new u("erei", -1, 1), new u("irei", -1, 1), new u("assi", -1, 1), new u("ati", -1, 1), new u("iti", -1, 1), new u("eresti", -1, 1), new u("iresti", -1, 1), new u("uti", -1, 1), new u("avi", -1, 1), new u("evi", -1, 1), new u("ivi", -1, 1), new u("isco", -1, 1), new u("ando", -1, 1), new u("endo", -1, 1), new u("Yamo", -1, 1), new u("iamo", -1, 1), new u("avamo", -1, 1), new u("evamo", -1, 1), new u("ivamo", -1, 1), new u("eremo", -1, 1), new u("iremo", -1, 1), new u("assimo", -1, 1), new u("ammo", -1, 1), new u("emmo", -1, 1), new u("eremmo", 54, 1), new u("iremmo", 54, 1), new u("immo", -1, 1), new u("ano", -1, 1), new u("iscano", 58, 1), new u("avano", 58, 1), new u("evano", 58, 1), new u("ivano", 58, 1), new u("eranno", -1, 1), new u("iranno", -1, 1), new u("ono", -1, 1), new u("iscono", 65, 1), new u("arono", 65, 1), new u("erono", 65, 1), new u("irono", 65, 1), new u("erebbero", -1, 1), new u("irebbero", -1, 1), new u("assero", -1, 1), new u("essero", -1, 1), new u("issero", -1, 1), new u("ato", -1, 1), new u("ito", -1, 1), new u("uto", -1, 1), new u("avo", -1, 1), new u("evo", -1, 1), new u("ivo", -1, 1), new u("ar", -1, 1), new u("ir", -1, 1), new u("er\xe0", -1, 1), new u("ir\xe0", -1, 1), new u("er\xf2", -1, 1), new u("ir\xf2", -1, 1)]
         }
       }, {
         key: "g_v",
         get: function() {
-          return delete n.g_v, n.g_v = [17, 65, 16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 128, 128, 8, 2, 1]
+          return delete t.g_v, t.g_v = [17, 65, 16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 128, 128, 8, 2, 1]
         }
       }, {
         key: "g_AEIO",
         get: function() {
-          return delete n.g_AEIO, n.g_AEIO = [17, 65, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 128, 128, 8, 2]
+          return delete t.g_AEIO, t.g_AEIO = [17, 65, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 128, 128, 8, 2]
         }
       }, {
         key: "g_CG",
         get: function() {
-          return delete n.g_CG, n.g_CG = [17]
+          return delete t.g_CG, t.g_CG = [17]
         }
-      }]), n
-    }(u),
-    S = function(e) {
-      function n() {
-        return i(this, n), t(this, Object.getPrototypeOf(n).apply(this, arguments))
+      }]), t
+    }(c),
+    I = function(e) {
+      function t() {
+        return r(this, t), i(this, Object.getPrototypeOf(t).apply(this, arguments))
       }
-      return r(n, e), a(n, [{
+      return s(t, e), a(t, [{
         key: "r_mark_regions$esjava$0",
         value: function() {
           var e = void 0,
-            t = void 0;
+            i = void 0;
           this.I_p1 = this.limit, e = this.cursor;
-          var r = this.cursor + 3;
-          if (0 > r || r > this.limit) return !1;
-          this.cursor = r, this.I_x = this.cursor, this.cursor = e;
-          B: for (;;) {
-            t = this.cursor;
+          var s = this.cursor + 3;
+          if (0 > s || s > this.limit) return !1;
+          this.cursor = s, this.I_x = this.cursor, this.cursor = e;
+          V: for (;;) {
+            i = this.cursor;
             do {
-              if (!this.in_grouping$esjava$3(n.g_v, 97, 248)) break;
-              this.cursor = t;
-              break B
+              if (!this.in_grouping$esjava$3(t.g_v, 97, 248)) break;
+              this.cursor = i;
+              break V
             } while (!1);
-            if (this.cursor = t, this.cursor >= this.limit) return !1;
+            if (this.cursor = i, this.cursor >= this.limit) return !1;
             this.cursor++
           }
-          Z: for (;;) {
+          S: for (;;) {
             do {
-              if (!this.out_grouping$esjava$3(n.g_v, 97, 248)) break;
-              break Z
+              if (!this.out_grouping$esjava$3(t.g_v, 97, 248)) break;
+              break S
             } while (!1);
             if (this.cursor >= this.limit) return !1;
             this.cursor++
@@ -6467,25 +6499,25 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "r_main_suffix$esjava$0",
         value: function() {
           var e = void 0,
-            t = void 0,
-            r = void 0,
-            i = void 0;
-          if (t = this.limit - this.cursor, this.cursor < this.I_p1) return !1;
-          if (this.cursor = this.I_p1, r = this.limit_backward, this.limit_backward = this.cursor, this.cursor = this.limit - t, this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(n.a_0))) return this.limit_backward = r, !1;
-          switch (this.bra = this.cursor, this.limit_backward = r, e) {
+            i = void 0,
+            s = void 0,
+            r = void 0;
+          if (i = this.limit - this.cursor, this.cursor < this.I_p1) return !1;
+          if (this.cursor = this.I_p1, s = this.limit_backward, this.limit_backward = this.cursor, this.cursor = this.limit - i, this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(t.a_0))) return this.limit_backward = s, !1;
+          switch (this.bra = this.cursor, this.limit_backward = s, e) {
             case 0:
               return !1;
             case 1:
               this.slice_del$esjava$0();
               break;
             case 2:
-              l: do {
-                i = this.limit - this.cursor;
+              e: do {
+                r = this.limit - this.cursor;
                 do {
-                  if (!this.in_grouping_b$esjava$3(n.g_s_ending, 98, 122)) break;
-                  break l
+                  if (!this.in_grouping_b$esjava$3(t.g_s_ending, 98, 122)) break;
+                  break e
                 } while (!1);
-                if (this.cursor = this.limit - i, !this.eq_s_b$esjava$1("k") || !this.out_grouping_b$esjava$3(n.g_v, 97, 248)) return !1
+                if (this.cursor = this.limit - r, !this.eq_s_b$esjava$1("k") || !this.out_grouping_b$esjava$3(t.g_v, 97, 248)) return !1
               } while (!1);
               this.slice_del$esjava$0();
               break;
@@ -6498,19 +6530,19 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "r_consonant_pair$esjava$0",
         value: function() {
           var e = void 0,
-            t = void 0,
-            r = void 0;
-          return e = this.limit - this.cursor, t = this.limit - this.cursor, !(this.cursor < this.I_p1) && ((this.cursor = this.I_p1, r = this.limit_backward, this.limit_backward = this.cursor, this.cursor = this.limit - t, this.ket = this.cursor, 0 === this.find_among_b$esjava$1(n.a_1)) ? (this.limit_backward = r, !1) : (this.bra = this.cursor, this.limit_backward = r, this.cursor = this.limit - e, !(this.cursor <= this.limit_backward) && (this.cursor--, this.bra = this.cursor, this.slice_del$esjava$0(), !0)))
+            i = void 0,
+            s = void 0;
+          return e = this.limit - this.cursor, i = this.limit - this.cursor, !(this.cursor < this.I_p1) && ((this.cursor = this.I_p1, s = this.limit_backward, this.limit_backward = this.cursor, this.cursor = this.limit - i, this.ket = this.cursor, 0 === this.find_among_b$esjava$1(t.a_1)) ? (this.limit_backward = s, !1) : (this.bra = this.cursor, this.limit_backward = s, this.cursor = this.limit - e, !(this.cursor <= this.limit_backward) && (this.cursor--, this.bra = this.cursor, this.slice_del$esjava$0(), !0)))
         }
       }, {
         key: "r_other_suffix$esjava$0",
         value: function() {
           var e = void 0,
-            t = void 0,
-            r = void 0;
-          if (t = this.limit - this.cursor, this.cursor < this.I_p1) return !1;
-          if (this.cursor = this.I_p1, r = this.limit_backward, this.limit_backward = this.cursor, this.cursor = this.limit - t, this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(n.a_2))) return this.limit_backward = r, !1;
-          switch (this.bra = this.cursor, this.limit_backward = r, e) {
+            i = void 0,
+            s = void 0;
+          if (i = this.limit - this.cursor, this.cursor < this.I_p1) return !1;
+          if (this.cursor = this.I_p1, s = this.limit_backward, this.limit_backward = this.cursor, this.cursor = this.limit - i, this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(t.a_2))) return this.limit_backward = s, !1;
+          switch (this.bra = this.cursor, this.limit_backward = s, e) {
             case 0:
               return !1;
             case 1:
@@ -6522,28 +6554,28 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "stem$esjava$0",
         value: function() {
           var e = void 0,
-            t = void 0,
-            n = void 0,
-            r = void 0;
+            i = void 0,
+            s = void 0,
+            t = void 0;
           e = this.cursor;
           do
             if (!this.r_mark_regions$esjava$0()) break; while (!1);
-          this.cursor = e, this.limit_backward = this.cursor, this.cursor = this.limit, t = this.limit - this.cursor;
+          this.cursor = e, this.limit_backward = this.cursor, this.cursor = this.limit, i = this.limit - this.cursor;
           do
             if (!this.r_main_suffix$esjava$0()) break; while (!1);
-          this.cursor = this.limit - t, n = this.limit - this.cursor;
+          this.cursor = this.limit - i, s = this.limit - this.cursor;
           do
             if (!this.r_consonant_pair$esjava$0()) break; while (!1);
-          this.cursor = this.limit - n, r = this.limit - this.cursor;
+          this.cursor = this.limit - s, t = this.limit - this.cursor;
           do
             if (!this.r_other_suffix$esjava$0()) break; while (!1);
-          return this.cursor = this.limit - r, this.cursor = this.limit_backward, !0
+          return this.cursor = this.limit - t, this.cursor = this.limit_backward, !0
         }
       }, {
         key: "stem",
         value: function() {
-          for (var e, t = arguments.length, r = Array(t), i = 0; i < t; i++) r[i] = arguments[i];
-          return 0 === r.length ? this.stem$esjava$0.apply(this, r) : (e = o(Object.getPrototypeOf(n.prototype), "stem", this)).call.apply(e, [this].concat(r))
+          for (var e, i = arguments.length, s = Array(i), r = 0; r < i; r++) s[r] = arguments[r];
+          return 0 === s.length ? this.stem$esjava$0.apply(this, s) : (e = n(Object.getPrototypeOf(t.prototype), "stem", this)).call.apply(e, [this].concat(s))
         }
       }, {
         key: "I_x",
@@ -6564,38 +6596,38 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
       }], [{
         key: "a_0",
         get: function() {
-          return delete n.a_0, n.a_0 = [new c("a", -1, 1), new c("e", -1, 1), new c("ede", 1, 1), new c("ande", 1, 1), new c("ende", 1, 1), new c("ane", 1, 1), new c("ene", 1, 1), new c("hetene", 6, 1), new c("erte", 1, 3), new c("en", -1, 1), new c("heten", 9, 1), new c("ar", -1, 1), new c("er", -1, 1), new c("heter", 12, 1), new c("s", -1, 2), new c("as", 14, 1), new c("es", 14, 1), new c("edes", 16, 1), new c("endes", 16, 1), new c("enes", 16, 1), new c("hetenes", 19, 1), new c("ens", 14, 1), new c("hetens", 21, 1), new c("ers", 14, 1), new c("ets", 14, 1), new c("et", -1, 1), new c("het", 25, 1), new c("ert", -1, 3), new c("ast", -1, 1)]
+          return delete t.a_0, t.a_0 = [new u("a", -1, 1), new u("e", -1, 1), new u("ede", 1, 1), new u("ande", 1, 1), new u("ende", 1, 1), new u("ane", 1, 1), new u("ene", 1, 1), new u("hetene", 6, 1), new u("erte", 1, 3), new u("en", -1, 1), new u("heten", 9, 1), new u("ar", -1, 1), new u("er", -1, 1), new u("heter", 12, 1), new u("s", -1, 2), new u("as", 14, 1), new u("es", 14, 1), new u("edes", 16, 1), new u("endes", 16, 1), new u("enes", 16, 1), new u("hetenes", 19, 1), new u("ens", 14, 1), new u("hetens", 21, 1), new u("ers", 14, 1), new u("ets", 14, 1), new u("et", -1, 1), new u("het", 25, 1), new u("ert", -1, 3), new u("ast", -1, 1)]
         }
       }, {
         key: "a_1",
         get: function() {
-          return delete n.a_1, n.a_1 = [new c("dt", -1, -1), new c("vt", -1, -1)]
+          return delete t.a_1, t.a_1 = [new u("dt", -1, -1), new u("vt", -1, -1)]
         }
       }, {
         key: "a_2",
         get: function() {
-          return delete n.a_2, n.a_2 = [new c("leg", -1, 1), new c("eleg", 0, 1), new c("ig", -1, 1), new c("eig", 2, 1), new c("lig", 2, 1), new c("elig", 4, 1), new c("els", -1, 1), new c("lov", -1, 1), new c("elov", 7, 1), new c("slov", 7, 1), new c("hetslov", 9, 1)]
+          return delete t.a_2, t.a_2 = [new u("leg", -1, 1), new u("eleg", 0, 1), new u("ig", -1, 1), new u("eig", 2, 1), new u("lig", 2, 1), new u("elig", 4, 1), new u("els", -1, 1), new u("lov", -1, 1), new u("elov", 7, 1), new u("slov", 7, 1), new u("hetslov", 9, 1)]
         }
       }, {
         key: "g_v",
         get: function() {
-          return delete n.g_v, n.g_v = [17, 65, 16, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 48, 0, 128]
+          return delete t.g_v, t.g_v = [17, 65, 16, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 48, 0, 128]
         }
       }, {
         key: "g_s_ending",
         get: function() {
-          return delete n.g_s_ending, n.g_s_ending = [119, 125, 149, 1]
+          return delete t.g_s_ending, t.g_s_ending = [119, 125, 149, 1]
         }
-      }]), n
-    }(u),
-    A = function(e) {
-      function n() {
-        return i(this, n), t(this, Object.getPrototypeOf(n).apply(this, arguments))
+      }]), t
+    }(c),
+    q = function(e) {
+      function t() {
+        return r(this, t), i(this, Object.getPrototypeOf(t).apply(this, arguments))
       }
-      return r(n, e), a(n, [{
+      return s(t, e), a(t, [{
         key: "r_shortv$esjava$0",
         value: function() {
-          return !!this.out_grouping_b$esjava$3(n.g_v_WXY, 89, 121) && !!this.in_grouping_b$esjava$3(n.g_v, 97, 121) && !!this.out_grouping_b$esjava$3(n.g_v, 97, 121)
+          return !!this.out_grouping_b$esjava$3(t.g_v_WXY, 89, 121) && !!this.in_grouping_b$esjava$3(t.g_v, 97, 121) && !!this.out_grouping_b$esjava$3(t.g_v, 97, 121)
         }
       }, {
         key: "r_R1$esjava$0",
@@ -6611,7 +6643,7 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "r_Step_1a$esjava$0",
         value: function() {
           var e = void 0;
-          if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(n.a_0))) return !1;
+          if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(t.a_0))) return !1;
           switch (this.bra = this.cursor, e) {
             case 0:
               return !1;
@@ -6630,10 +6662,10 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "r_Step_1b$esjava$0",
         value: function() {
           var e = void 0,
-            t = void 0,
-            r = void 0,
-            i = void 0;
-          if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(n.a_2))) return !1;
+            i = void 0,
+            s = void 0,
+            r = void 0;
+          if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(t.a_2))) return !1;
           switch (this.bra = this.cursor, e) {
             case 0:
               return !1;
@@ -6642,17 +6674,17 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
               this.slice_from$esjava$1("ee");
               break;
             case 2:
-              t = this.limit - this.cursor;
-              B: for (;;) {
+              i = this.limit - this.cursor;
+              V: for (;;) {
                 do {
-                  if (!this.in_grouping_b$esjava$3(n.g_v, 97, 121)) break;
-                  break B
+                  if (!this.in_grouping_b$esjava$3(t.g_v, 97, 121)) break;
+                  break V
                 } while (!1);
                 if (this.cursor <= this.limit_backward) return !1;
                 this.cursor--
               }
-              if (this.cursor = this.limit - t, this.slice_del$esjava$0(), r = this.limit - this.cursor, 0 === (e = this.find_among_b$esjava$1(n.a_1))) return !1;
-              switch (this.cursor = this.limit - r, e) {
+              if (this.cursor = this.limit - i, this.slice_del$esjava$0(), s = this.limit - this.cursor, 0 === (e = this.find_among_b$esjava$1(t.a_1))) return !1;
+              switch (this.cursor = this.limit - s, e) {
                 case 0:
                   return !1;
                 case 1:
@@ -6664,8 +6696,8 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
                   this.cursor--, this.bra = this.cursor, this.slice_del$esjava$0();
                   break;
                 case 3:
-                  if (this.cursor !== this.I_p1 || (i = this.limit - this.cursor, !this.r_shortv$esjava$0())) return !1;
-                  this.cursor = this.limit - i;
+                  if (this.cursor !== this.I_p1 || (r = this.limit - this.cursor, !this.r_shortv$esjava$0())) return !1;
+                  this.cursor = this.limit - r;
                   var a = this.cursor;
                   this.insert$esjava$3(this.cursor, this.cursor, "e"), this.cursor = a
               }
@@ -6677,19 +6709,19 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         value: function() {
           var e = void 0;
           this.ket = this.cursor;
-          l: do {
+          e: do {
             e = this.limit - this.cursor;
             do {
               if (!this.eq_s_b$esjava$1("y")) break;
-              break l
+              break e
             } while (!1);
             if (this.cursor = this.limit - e, !this.eq_s_b$esjava$1("Y")) return !1
           } while (!1);
           this.bra = this.cursor;
-          Z: for (;;) {
+          S: for (;;) {
             do {
-              if (!this.in_grouping_b$esjava$3(n.g_v, 97, 121)) break;
-              break Z
+              if (!this.in_grouping_b$esjava$3(t.g_v, 97, 121)) break;
+              break S
             } while (!1);
             if (this.cursor <= this.limit_backward) return !1;
             this.cursor--
@@ -6700,7 +6732,7 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "r_Step_2$esjava$0",
         value: function() {
           var e = void 0;
-          if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(n.a_3)) || (this.bra = this.cursor, !this.r_R1$esjava$0())) return !1;
+          if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(t.a_3)) || (this.bra = this.cursor, !this.r_R1$esjava$0())) return !1;
           switch (e) {
             case 0:
               return !1;
@@ -6750,7 +6782,7 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "r_Step_3$esjava$0",
         value: function() {
           var e = void 0;
-          if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(n.a_4)) || (this.bra = this.cursor, !this.r_R1$esjava$0())) return !1;
+          if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(t.a_4)) || (this.bra = this.cursor, !this.r_R1$esjava$0())) return !1;
           switch (e) {
             case 0:
               return !1;
@@ -6769,8 +6801,8 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "r_Step_4$esjava$0",
         value: function() {
           var e = void 0,
-            t = void 0;
-          if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(n.a_5)) || (this.bra = this.cursor, !this.r_R2$esjava$0())) return !1;
+            i = void 0;
+          if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(t.a_5)) || (this.bra = this.cursor, !this.r_R2$esjava$0())) return !1;
           switch (e) {
             case 0:
               return !1;
@@ -6778,13 +6810,13 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
               this.slice_del$esjava$0();
               break;
             case 2:
-              l: do {
-                t = this.limit - this.cursor;
+              e: do {
+                i = this.limit - this.cursor;
                 do {
                   if (!this.eq_s_b$esjava$1("s")) break;
-                  break l
+                  break e
                 } while (!1);
-                if (this.cursor = this.limit - t, !this.eq_s_b$esjava$1("t")) return !1
+                if (this.cursor = this.limit - i, !this.eq_s_b$esjava$1("t")) return !1
               } while (!1);
               this.slice_del$esjava$0()
           }
@@ -6794,22 +6826,22 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "r_Step_5a$esjava$0",
         value: function() {
           var e = void 0,
-            t = void 0;
+            i = void 0;
           if (this.ket = this.cursor, !this.eq_s_b$esjava$1("e")) return !1;
           this.bra = this.cursor;
-          l: do {
+          e: do {
             e = this.limit - this.cursor;
             do {
               if (!this.r_R2$esjava$0()) break;
-              break l
+              break e
             } while (!1);
             if (this.cursor = this.limit - e, !this.r_R1$esjava$0()) return !1;
-            t = this.limit - this.cursor;
+            i = this.limit - this.cursor;
             do {
               if (!this.r_shortv$esjava$0()) break;
               return !1
             } while (!1);
-            this.cursor = this.limit - t
+            this.cursor = this.limit - i
           } while (!1);
           return this.slice_del$esjava$0(), !0
         }
@@ -6822,138 +6854,138 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "stem$esjava$0",
         value: function() {
           var e = void 0,
-            t = void 0,
-            r = void 0,
             i = void 0,
-            a = void 0,
-            o = void 0,
             s = void 0,
-            l = void 0,
-            c = void 0,
-            u = void 0,
-            d = void 0,
-            f = void 0,
-            _ = void 0,
-            p = void 0,
+            r = void 0,
+            a = void 0,
+            n = void 0,
             h = void 0,
-            m = void 0;
+            o = void 0,
+            u = void 0,
+            c = void 0,
+            _ = void 0,
+            l = void 0,
+            w = void 0,
+            $ = void 0,
+            v = void 0,
+            f = void 0;
           this.B_Y_found = !1, e = this.cursor;
           do {
             if (this.bra = this.cursor, !this.eq_s$esjava$1("y")) break;
             this.ket = this.cursor, this.slice_from$esjava$1("Y"), this.B_Y_found = !0
           } while (!1);
-          this.cursor = e, t = this.cursor;
-          do Q: for (;;) {
-            r = this.cursor;
-            d: do {
-              H: for (;;) {
-                i = this.cursor;
+          this.cursor = e, i = this.cursor;
+          do W: for (;;) {
+            s = this.cursor;
+            t: do {
+              U: for (;;) {
+                r = this.cursor;
                 do {
-                  if (!this.in_grouping$esjava$3(n.g_v, 97, 121) || (this.bra = this.cursor, !this.eq_s$esjava$1("y"))) break;
-                  this.ket = this.cursor, this.cursor = i;
-                  break H
+                  if (!this.in_grouping$esjava$3(t.g_v, 97, 121) || (this.bra = this.cursor, !this.eq_s$esjava$1("y"))) break;
+                  this.ket = this.cursor, this.cursor = r;
+                  break U
                 } while (!1);
-                if (this.cursor = i, this.cursor >= this.limit) break d;
+                if (this.cursor = r, this.cursor >= this.limit) break t;
                 this.cursor++
               }
               this.slice_from$esjava$1("Y"),
               this.B_Y_found = !0;
-              continue Q
+              continue W
             } while (!1);
-            this.cursor = r;
+            this.cursor = s;
             break
           }
           while (!1);
-          this.cursor = t, this.I_p1 = this.limit, this.I_p2 = this.limit, a = this.cursor;
-          p: do {
-            w: for (;;) {
+          this.cursor = i, this.I_p1 = this.limit, this.I_p2 = this.limit, a = this.cursor;
+          n: do {
+            j: for (;;) {
               do {
-                if (!this.in_grouping$esjava$3(n.g_v, 97, 121)) break;
-                break w
+                if (!this.in_grouping$esjava$3(t.g_v, 97, 121)) break;
+                break j
               } while (!1);
-              if (this.cursor >= this.limit) break p;
+              if (this.cursor >= this.limit) break n;
               this.cursor++
             }
-            V: for (;;) {
+            B: for (;;) {
               do {
-                if (!this.out_grouping$esjava$3(n.g_v, 97, 121)) break;
-                break V
+                if (!this.out_grouping$esjava$3(t.g_v, 97, 121)) break;
+                break B
               } while (!1);
-              if (this.cursor >= this.limit) break p;
+              if (this.cursor >= this.limit) break n;
               this.cursor++
             }
-            this.I_p1 = this.cursor;P: for (;;) {
+            this.I_p1 = this.cursor;p: for (;;) {
               do {
-                if (!this.in_grouping$esjava$3(n.g_v, 97, 121)) break;
-                break P
+                if (!this.in_grouping$esjava$3(t.g_v, 97, 121)) break;
+                break p
               } while (!1);
-              if (this.cursor >= this.limit) break p;
+              if (this.cursor >= this.limit) break n;
               this.cursor++
             }
-            W: for (;;) {
+            N: for (;;) {
               do {
-                if (!this.out_grouping$esjava$3(n.g_v, 97, 121)) break;
-                break W
+                if (!this.out_grouping$esjava$3(t.g_v, 97, 121)) break;
+                break N
               } while (!1);
-              if (this.cursor >= this.limit) break p;
+              if (this.cursor >= this.limit) break n;
               this.cursor++
             }
             this.I_p2 = this.cursor
           } while (!1);
-          this.cursor = a, this.limit_backward = this.cursor, this.cursor = this.limit, o = this.limit - this.cursor;
+          this.cursor = a, this.limit_backward = this.cursor, this.cursor = this.limit, n = this.limit - this.cursor;
           do
             if (!this.r_Step_1a$esjava$0()) break; while (!1);
-          this.cursor = this.limit - o, s = this.limit - this.cursor;
+          this.cursor = this.limit - n, h = this.limit - this.cursor;
           do
             if (!this.r_Step_1b$esjava$0()) break; while (!1);
-          this.cursor = this.limit - s, l = this.limit - this.cursor;
+          this.cursor = this.limit - h, o = this.limit - this.cursor;
           do
             if (!this.r_Step_1c$esjava$0()) break; while (!1);
-          this.cursor = this.limit - l, c = this.limit - this.cursor;
+          this.cursor = this.limit - o, u = this.limit - this.cursor;
           do
             if (!this.r_Step_2$esjava$0()) break; while (!1);
-          this.cursor = this.limit - c, u = this.limit - this.cursor;
+          this.cursor = this.limit - u, c = this.limit - this.cursor;
           do
             if (!this.r_Step_3$esjava$0()) break; while (!1);
-          this.cursor = this.limit - u, d = this.limit - this.cursor;
+          this.cursor = this.limit - c, _ = this.limit - this.cursor;
           do
             if (!this.r_Step_4$esjava$0()) break; while (!1);
-          this.cursor = this.limit - d, f = this.limit - this.cursor;
+          this.cursor = this.limit - _, l = this.limit - this.cursor;
           do
             if (!this.r_Step_5a$esjava$0()) break; while (!1);
-          this.cursor = this.limit - f, _ = this.limit - this.cursor;
+          this.cursor = this.limit - l, w = this.limit - this.cursor;
           do
             if (!this.r_Step_5b$esjava$0()) break; while (!1);
-          this.cursor = this.limit - _, this.cursor = this.limit_backward, p = this.cursor;
+          this.cursor = this.limit - w, this.cursor = this.limit_backward, $ = this.cursor;
           do {
             if (!this.B_Y_found) break;
-            J: for (;;) {
-              h = this.cursor;
-              ee: do {
-                et: for (;;) {
-                  m = this.cursor;
+            X: for (;;) {
+              v = this.cursor;
+              F: do {
+                T: for (;;) {
+                  f = this.cursor;
                   do {
                     if (this.bra = this.cursor, !this.eq_s$esjava$1("Y")) break;
-                    this.ket = this.cursor, this.cursor = m;
-                    break et
+                    this.ket = this.cursor, this.cursor = f;
+                    break T
                   } while (!1);
-                  if (this.cursor = m, this.cursor >= this.limit) break ee;
+                  if (this.cursor = f, this.cursor >= this.limit) break F;
                   this.cursor++
                 }
                 this.slice_from$esjava$1("y");
-                continue J
+                continue X
               } while (!1);
-              this.cursor = h;
+              this.cursor = v;
               break
             }
           } while (!1);
-          return this.cursor = p, !0
+          return this.cursor = $, !0
         }
       }, {
         key: "stem",
         value: function() {
-          for (var e, t = arguments.length, r = Array(t), i = 0; i < t; i++) r[i] = arguments[i];
-          return 0 === r.length ? this.stem$esjava$0.apply(this, r) : (e = o(Object.getPrototypeOf(n.prototype), "stem", this)).call.apply(e, [this].concat(r))
+          for (var e, i = arguments.length, s = Array(i), r = 0; r < i; r++) s[r] = arguments[r];
+          return 0 === s.length ? this.stem$esjava$0.apply(this, s) : (e = n(Object.getPrototypeOf(t.prototype), "stem", this)).call.apply(e, [this].concat(s))
         }
       }, {
         key: "B_Y_found",
@@ -6982,61 +7014,61 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
       }], [{
         key: "a_0",
         get: function() {
-          return delete n.a_0, n.a_0 = [new c("s", -1, 3), new c("ies", 0, 2), new c("sses", 0, 1), new c("ss", 0, -1)]
+          return delete t.a_0, t.a_0 = [new u("s", -1, 3), new u("ies", 0, 2), new u("sses", 0, 1), new u("ss", 0, -1)]
         }
       }, {
         key: "a_1",
         get: function() {
-          return delete n.a_1, n.a_1 = [new c("", -1, 3), new c("bb", 0, 2), new c("dd", 0, 2), new c("ff", 0, 2), new c("gg", 0, 2), new c("bl", 0, 1), new c("mm", 0, 2), new c("nn", 0, 2), new c("pp", 0, 2), new c("rr", 0, 2), new c("at", 0, 1), new c("tt", 0, 2), new c("iz", 0, 1)]
+          return delete t.a_1, t.a_1 = [new u("", -1, 3), new u("bb", 0, 2), new u("dd", 0, 2), new u("ff", 0, 2), new u("gg", 0, 2), new u("bl", 0, 1), new u("mm", 0, 2), new u("nn", 0, 2), new u("pp", 0, 2), new u("rr", 0, 2), new u("at", 0, 1), new u("tt", 0, 2), new u("iz", 0, 1)]
         }
       }, {
         key: "a_2",
         get: function() {
-          return delete n.a_2, n.a_2 = [new c("ed", -1, 2), new c("eed", 0, 1), new c("ing", -1, 2)]
+          return delete t.a_2, t.a_2 = [new u("ed", -1, 2), new u("eed", 0, 1), new u("ing", -1, 2)]
         }
       }, {
         key: "a_3",
         get: function() {
-          return delete n.a_3, n.a_3 = [new c("anci", -1, 3), new c("enci", -1, 2), new c("abli", -1, 4), new c("eli", -1, 6), new c("alli", -1, 9), new c("ousli", -1, 12), new c("entli", -1, 5), new c("aliti", -1, 10), new c("biliti", -1, 14), new c("iviti", -1, 13), new c("tional", -1, 1), new c("ational", 10, 8), new c("alism", -1, 10), new c("ation", -1, 8), new c("ization", 13, 7), new c("izer", -1, 7), new c("ator", -1, 8), new c("iveness", -1, 13), new c("fulness", -1, 11), new c("ousness", -1, 12)]
+          return delete t.a_3, t.a_3 = [new u("anci", -1, 3), new u("enci", -1, 2), new u("abli", -1, 4), new u("eli", -1, 6), new u("alli", -1, 9), new u("ousli", -1, 12), new u("entli", -1, 5), new u("aliti", -1, 10), new u("biliti", -1, 14), new u("iviti", -1, 13), new u("tional", -1, 1), new u("ational", 10, 8), new u("alism", -1, 10), new u("ation", -1, 8), new u("ization", 13, 7), new u("izer", -1, 7), new u("ator", -1, 8), new u("iveness", -1, 13), new u("fulness", -1, 11), new u("ousness", -1, 12)]
         }
       }, {
         key: "a_4",
         get: function() {
-          return delete n.a_4, n.a_4 = [new c("icate", -1, 2), new c("ative", -1, 3), new c("alize", -1, 1), new c("iciti", -1, 2), new c("ical", -1, 2), new c("ful", -1, 3), new c("ness", -1, 3)]
+          return delete t.a_4, t.a_4 = [new u("icate", -1, 2), new u("ative", -1, 3), new u("alize", -1, 1), new u("iciti", -1, 2), new u("ical", -1, 2), new u("ful", -1, 3), new u("ness", -1, 3)]
         }
       }, {
         key: "a_5",
         get: function() {
-          return delete n.a_5, n.a_5 = [new c("ic", -1, 1), new c("ance", -1, 1), new c("ence", -1, 1), new c("able", -1, 1), new c("ible", -1, 1), new c("ate", -1, 1), new c("ive", -1, 1), new c("ize", -1, 1), new c("iti", -1, 1), new c("al", -1, 1), new c("ism", -1, 1), new c("ion", -1, 2), new c("er", -1, 1), new c("ous", -1, 1), new c("ant", -1, 1), new c("ent", -1, 1), new c("ment", 15, 1), new c("ement", 16, 1), new c("ou", -1, 1)]
+          return delete t.a_5, t.a_5 = [new u("ic", -1, 1), new u("ance", -1, 1), new u("ence", -1, 1), new u("able", -1, 1), new u("ible", -1, 1), new u("ate", -1, 1), new u("ive", -1, 1), new u("ize", -1, 1), new u("iti", -1, 1), new u("al", -1, 1), new u("ism", -1, 1), new u("ion", -1, 2), new u("er", -1, 1), new u("ous", -1, 1), new u("ant", -1, 1), new u("ent", -1, 1), new u("ment", 15, 1), new u("ement", 16, 1), new u("ou", -1, 1)]
         }
       }, {
         key: "g_v",
         get: function() {
-          return delete n.g_v, n.g_v = [17, 65, 16, 1]
+          return delete t.g_v, t.g_v = [17, 65, 16, 1]
         }
       }, {
         key: "g_v_WXY",
         get: function() {
-          return delete n.g_v_WXY, n.g_v_WXY = [1, 17, 65, 208, 1]
+          return delete t.g_v_WXY, t.g_v_WXY = [1, 17, 65, 208, 1]
         }
-      }]), n
-    }(u),
-    N = function(e) {
-      function n() {
-        return i(this, n), t(this, Object.getPrototypeOf(n).apply(this, arguments))
+      }]), t
+    }(c),
+    O = function(e) {
+      function t() {
+        return r(this, t), i(this, Object.getPrototypeOf(t).apply(this, arguments))
       }
-      return r(n, e), a(n, [{
+      return s(t, e), a(t, [{
         key: "r_prelude$esjava$0",
         value: function() {
           var e = void 0,
-            t = void 0;
-          G: for (;;) {
-            t = this.cursor;
-            c: do {
-              if (this.bra = this.cursor, 0 === (e = this.find_among$esjava$1(n.a_0))) break;
+            i = void 0;
+          P: for (;;) {
+            i = this.cursor;
+            i: do {
+              if (this.bra = this.cursor, 0 === (e = this.find_among$esjava$1(t.a_0))) break;
               switch (this.ket = this.cursor, e) {
                 case 0:
-                  break c;
+                  break i;
                 case 1:
                   this.slice_from$esjava$1("a~");
                   break;
@@ -7044,12 +7076,12 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
                   this.slice_from$esjava$1("o~");
                   break;
                 case 3:
-                  if (this.cursor >= this.limit) break c;
+                  if (this.cursor >= this.limit) break i;
                   this.cursor++
               }
-              continue G
+              continue P
             } while (!1);
-            this.cursor = t;
+            this.cursor = i;
             break
           }
           return !0
@@ -7058,94 +7090,94 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "r_mark_regions$esjava$0",
         value: function() {
           var e = void 0,
-            t = void 0,
-            r = void 0,
             i = void 0,
+            s = void 0,
+            r = void 0,
             a = void 0;
           this.I_pV = this.limit, this.I_p1 = this.limit, this.I_p2 = this.limit, e = this.cursor;
-          l: do {
-            c: do {
-              t = this.cursor;
-              u: do {
-                if (!this.in_grouping$esjava$3(n.g_v, 97, 250)) break;
-                d: do {
-                  r = this.cursor;
-                  f: do {
-                    if (!this.out_grouping$esjava$3(n.g_v, 97, 250)) break;
-                    C: for (;;) {
+          e: do {
+            i: do {
+              i = this.cursor;
+              s: do {
+                if (!this.in_grouping$esjava$3(t.g_v, 97, 250)) break;
+                t: do {
+                  s = this.cursor;
+                  r: do {
+                    if (!this.out_grouping$esjava$3(t.g_v, 97, 250)) break;
+                    m: for (;;) {
                       do {
-                        if (!this.in_grouping$esjava$3(n.g_v, 97, 250)) break;
-                        break C
+                        if (!this.in_grouping$esjava$3(t.g_v, 97, 250)) break;
+                        break m
                       } while (!1);
-                      if (this.cursor >= this.limit) break f;
+                      if (this.cursor >= this.limit) break r;
                       this.cursor++
                     }
-                    break d
+                    break t
                   } while (!1);
-                  if (this.cursor = r, !this.in_grouping$esjava$3(n.g_v, 97, 250)) break u;
-                  w: for (;;) {
+                  if (this.cursor = s, !this.in_grouping$esjava$3(t.g_v, 97, 250)) break s;
+                  j: for (;;) {
                     do {
-                      if (!this.out_grouping$esjava$3(n.g_v, 97, 250)) break;
-                      break w
+                      if (!this.out_grouping$esjava$3(t.g_v, 97, 250)) break;
+                      break j
                     } while (!1);
-                    if (this.cursor >= this.limit) break u;
+                    if (this.cursor >= this.limit) break s;
                     this.cursor++
                   }
                 } while (!1);
-                break c
+                break i
               } while (!1);
-              if (this.cursor = t, !this.out_grouping$esjava$3(n.g_v, 97, 250)) break l;
-              m: do {
-                i = this.cursor;
-                R: do {
-                  if (!this.out_grouping$esjava$3(n.g_v, 97, 250)) break;
-                  P: for (;;) {
+              if (this.cursor = i, !this.out_grouping$esjava$3(t.g_v, 97, 250)) break e;
+              o: do {
+                r = this.cursor;
+                g: do {
+                  if (!this.out_grouping$esjava$3(t.g_v, 97, 250)) break;
+                  p: for (;;) {
                     do {
-                      if (!this.in_grouping$esjava$3(n.g_v, 97, 250)) break;
-                      break P
+                      if (!this.in_grouping$esjava$3(t.g_v, 97, 250)) break;
+                      break p
                     } while (!1);
-                    if (this.cursor >= this.limit) break R;
+                    if (this.cursor >= this.limit) break g;
                     this.cursor++
                   }
-                  break m
+                  break o
                 } while (!1);
-                if (this.cursor = i, !this.in_grouping$esjava$3(n.g_v, 97, 250) || this.cursor >= this.limit) break l;
+                if (this.cursor = r, !this.in_grouping$esjava$3(t.g_v, 97, 250) || this.cursor >= this.limit) break e;
                 this.cursor++
               } while (!1)
             } while (!1);this.I_pV = this.cursor
           } while (!1);
           this.cursor = e, a = this.cursor;
-          D: do {
-            L: for (;;) {
+          y: do {
+            I: for (;;) {
               do {
-                if (!this.in_grouping$esjava$3(n.g_v, 97, 250)) break;
-                break L
+                if (!this.in_grouping$esjava$3(t.g_v, 97, 250)) break;
+                break I
               } while (!1);
-              if (this.cursor >= this.limit) break D;
+              if (this.cursor >= this.limit) break y;
+              this.cursor++
+            }
+            q: for (;;) {
+              do {
+                if (!this.out_grouping$esjava$3(t.g_v, 97, 250)) break;
+                break q
+              } while (!1);
+              if (this.cursor >= this.limit) break y;
+              this.cursor++
+            }
+            this.I_p1 = this.cursor;O: for (;;) {
+              do {
+                if (!this.in_grouping$esjava$3(t.g_v, 97, 250)) break;
+                break O
+              } while (!1);
+              if (this.cursor >= this.limit) break y;
               this.cursor++
             }
             x: for (;;) {
               do {
-                if (!this.out_grouping$esjava$3(n.g_v, 97, 250)) break;
+                if (!this.out_grouping$esjava$3(t.g_v, 97, 250)) break;
                 break x
               } while (!1);
-              if (this.cursor >= this.limit) break D;
-              this.cursor++
-            }
-            this.I_p1 = this.cursor;k: for (;;) {
-              do {
-                if (!this.in_grouping$esjava$3(n.g_v, 97, 250)) break;
-                break k
-              } while (!1);
-              if (this.cursor >= this.limit) break D;
-              this.cursor++
-            }
-            j: for (;;) {
-              do {
-                if (!this.out_grouping$esjava$3(n.g_v, 97, 250)) break;
-                break j
-              } while (!1);
-              if (this.cursor >= this.limit) break D;
+              if (this.cursor >= this.limit) break y;
               this.cursor++
             }
             this.I_p2 = this.cursor
@@ -7156,14 +7188,14 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "r_postlude$esjava$0",
         value: function() {
           var e = void 0,
-            t = void 0;
-          G: for (;;) {
-            t = this.cursor;
-            c: do {
-              if (this.bra = this.cursor, 0 === (e = this.find_among$esjava$1(n.a_1))) break;
+            i = void 0;
+          P: for (;;) {
+            i = this.cursor;
+            i: do {
+              if (this.bra = this.cursor, 0 === (e = this.find_among$esjava$1(t.a_1))) break;
               switch (this.ket = this.cursor, e) {
                 case 0:
-                  break c;
+                  break i;
                 case 1:
                   this.slice_from$esjava$1("\xe3");
                   break;
@@ -7171,12 +7203,12 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
                   this.slice_from$esjava$1("\xf5");
                   break;
                 case 3:
-                  if (this.cursor >= this.limit) break c;
+                  if (this.cursor >= this.limit) break i;
                   this.cursor++
               }
-              continue G
+              continue P
             } while (!1);
-            this.cursor = t;
+            this.cursor = i;
             break
           }
           return !0
@@ -7200,11 +7232,11 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "r_standard_suffix$esjava$0",
         value: function() {
           var e = void 0,
-            t = void 0,
-            r = void 0,
             i = void 0,
+            s = void 0,
+            r = void 0,
             a = void 0;
-          if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(n.a_5))) return !1;
+          if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(t.a_5))) return !1;
           switch (this.bra = this.cursor, e) {
             case 0:
               return !1;
@@ -7226,20 +7258,20 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
               break;
             case 5:
               if (!this.r_R1$esjava$0()) return !1;
-              this.slice_del$esjava$0(), t = this.limit - this.cursor;
-              l: do {
-                if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(n.a_2)) || (this.bra = this.cursor, !this.r_R2$esjava$0())) {
-                  this.cursor = this.limit - t;
+              this.slice_del$esjava$0(), i = this.limit - this.cursor;
+              e: do {
+                if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(t.a_2)) || (this.bra = this.cursor, !this.r_R2$esjava$0())) {
+                  this.cursor = this.limit - i;
                   break
                 }
                 switch (this.slice_del$esjava$0(), e) {
                   case 0:
-                    this.cursor = this.limit - t;
-                    break l;
+                    this.cursor = this.limit - i;
+                    break e;
                   case 1:
                     if (this.ket = this.cursor, !this.eq_s_b$esjava$1("at") || (this.bra = this.cursor, !this.r_R2$esjava$0())) {
-                      this.cursor = this.limit - t;
-                      break l
+                      this.cursor = this.limit - i;
+                      break e
                     }
                     this.slice_del$esjava$0()
                 }
@@ -7247,20 +7279,20 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
               break;
             case 6:
               if (!this.r_R2$esjava$0()) return !1;
-              this.slice_del$esjava$0(), r = this.limit - this.cursor;
-              c: do {
-                if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(n.a_3))) {
-                  this.cursor = this.limit - r;
+              this.slice_del$esjava$0(), s = this.limit - this.cursor;
+              i: do {
+                if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(t.a_3))) {
+                  this.cursor = this.limit - s;
                   break
                 }
                 switch (this.bra = this.cursor, e) {
                   case 0:
-                    this.cursor = this.limit - r;
-                    break c;
+                    this.cursor = this.limit - s;
+                    break i;
                   case 1:
                     if (!this.r_R2$esjava$0()) {
-                      this.cursor = this.limit - r;
-                      break c
+                      this.cursor = this.limit - s;
+                      break i
                     }
                     this.slice_del$esjava$0()
                 }
@@ -7268,20 +7300,20 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
               break;
             case 7:
               if (!this.r_R2$esjava$0()) return !1;
-              this.slice_del$esjava$0(), i = this.limit - this.cursor;
-              u: do {
-                if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(n.a_4))) {
-                  this.cursor = this.limit - i;
+              this.slice_del$esjava$0(), r = this.limit - this.cursor;
+              s: do {
+                if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(t.a_4))) {
+                  this.cursor = this.limit - r;
                   break
                 }
                 switch (this.bra = this.cursor, e) {
                   case 0:
-                    this.cursor = this.limit - i;
-                    break u;
+                    this.cursor = this.limit - r;
+                    break s;
                   case 1:
                     if (!this.r_R2$esjava$0()) {
-                      this.cursor = this.limit - i;
-                      break u
+                      this.cursor = this.limit - r;
+                      break s
                     }
                     this.slice_del$esjava$0()
                 }
@@ -7308,23 +7340,23 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "r_verb_suffix$esjava$0",
         value: function() {
           var e = void 0,
-            t = void 0,
-            r = void 0;
-          if (t = this.limit - this.cursor, this.cursor < this.I_pV) return !1;
-          if (this.cursor = this.I_pV, r = this.limit_backward, this.limit_backward = this.cursor, this.cursor = this.limit - t, this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(n.a_6))) return this.limit_backward = r, !1;
+            i = void 0,
+            s = void 0;
+          if (i = this.limit - this.cursor, this.cursor < this.I_pV) return !1;
+          if (this.cursor = this.I_pV, s = this.limit_backward, this.limit_backward = this.cursor, this.cursor = this.limit - i, this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(t.a_6))) return this.limit_backward = s, !1;
           switch (this.bra = this.cursor, e) {
             case 0:
-              return this.limit_backward = r, !1;
+              return this.limit_backward = s, !1;
             case 1:
               this.slice_del$esjava$0()
           }
-          return this.limit_backward = r, !0
+          return this.limit_backward = s, !0
         }
       }, {
         key: "r_residual_suffix$esjava$0",
         value: function() {
           var e = void 0;
-          if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(n.a_7))) return !1;
+          if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(t.a_7))) return !1;
           switch (this.bra = this.cursor, e) {
             case 0:
               return !1;
@@ -7338,25 +7370,25 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "r_residual_form$esjava$0",
         value: function() {
           var e = void 0,
-            t = void 0,
-            r = void 0,
-            i = void 0;
-          if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(n.a_8))) return !1;
+            i = void 0,
+            s = void 0,
+            r = void 0;
+          if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(t.a_8))) return !1;
           switch (this.bra = this.cursor, e) {
             case 0:
               return !1;
             case 1:
               if (!this.r_RV$esjava$0()) return !1;
               this.slice_del$esjava$0(), this.ket = this.cursor;
-              l: do {
-                t = this.limit - this.cursor;
+              e: do {
+                i = this.limit - this.cursor;
                 do {
-                  if (!this.eq_s_b$esjava$1("u") || (this.bra = this.cursor, r = this.limit - this.cursor, !this.eq_s_b$esjava$1("g"))) break;
-                  this.cursor = this.limit - r;
-                  break l
+                  if (!this.eq_s_b$esjava$1("u") || (this.bra = this.cursor, s = this.limit - this.cursor, !this.eq_s_b$esjava$1("g"))) break;
+                  this.cursor = this.limit - s;
+                  break e
                 } while (!1);
-                if (this.cursor = this.limit - t, !this.eq_s_b$esjava$1("i") || (this.bra = this.cursor, i = this.limit - this.cursor, !this.eq_s_b$esjava$1("c"))) return !1;
-                this.cursor = this.limit - i
+                if (this.cursor = this.limit - i, !this.eq_s_b$esjava$1("i") || (this.bra = this.cursor, r = this.limit - this.cursor, !this.eq_s_b$esjava$1("c"))) return !1;
+                this.cursor = this.limit - r
               } while (!1);
               if (!this.r_RV$esjava$0()) return !1;
               this.slice_del$esjava$0();
@@ -7370,57 +7402,57 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "stem$esjava$0",
         value: function() {
           var e = void 0,
-            t = void 0,
-            n = void 0,
-            r = void 0,
             i = void 0,
-            a = void 0,
-            o = void 0,
             s = void 0,
-            l = void 0,
-            c = void 0;
+            t = void 0,
+            r = void 0,
+            a = void 0,
+            n = void 0,
+            h = void 0,
+            o = void 0,
+            u = void 0;
           e = this.cursor;
           do
             if (!this.r_prelude$esjava$0()) break; while (!1);
-          this.cursor = e, t = this.cursor;
+          this.cursor = e, i = this.cursor;
           do
             if (!this.r_mark_regions$esjava$0()) break; while (!1);
-          this.cursor = t, this.limit_backward = this.cursor, this.cursor = this.limit, n = this.limit - this.cursor;
-          u: do d: do {
-            r = this.limit - this.cursor;
-            f: do {
-              i = this.limit - this.cursor;
-              _: do {
+          this.cursor = i, this.limit_backward = this.cursor, this.cursor = this.limit, s = this.limit - this.cursor;
+          s: do t: do {
+            t = this.limit - this.cursor;
+            r: do {
+              r = this.limit - this.cursor;
+              a: do {
                 a = this.limit - this.cursor;
                 do {
                   if (!this.r_standard_suffix$esjava$0()) break;
-                  break _
+                  break a
                 } while (!1);
-                if (this.cursor = this.limit - a, !this.r_verb_suffix$esjava$0()) break f
+                if (this.cursor = this.limit - a, !this.r_verb_suffix$esjava$0()) break r
               } while (!1);
-              this.cursor = this.limit - i, o = this.limit - this.cursor;
+              this.cursor = this.limit - r, n = this.limit - this.cursor;
               do {
-                if (this.ket = this.cursor, !this.eq_s_b$esjava$1("i") || (this.bra = this.cursor, s = this.limit - this.cursor, !this.eq_s_b$esjava$1("c")) || (this.cursor = this.limit - s, !this.r_RV$esjava$0())) break;
+                if (this.ket = this.cursor, !this.eq_s_b$esjava$1("i") || (this.bra = this.cursor, h = this.limit - this.cursor, !this.eq_s_b$esjava$1("c")) || (this.cursor = this.limit - h, !this.r_RV$esjava$0())) break;
                 this.slice_del$esjava$0()
               } while (!1);
-              this.cursor = this.limit - o;
-              break d
+              this.cursor = this.limit - n;
+              break t
             } while (!1);
-            if (this.cursor = this.limit - r, !this.r_residual_suffix$esjava$0()) break u
+            if (this.cursor = this.limit - t, !this.r_residual_suffix$esjava$0()) break s
           } while (!1); while (!1);
-          this.cursor = this.limit - n, l = this.limit - this.cursor;
+          this.cursor = this.limit - s, o = this.limit - this.cursor;
           do
             if (!this.r_residual_form$esjava$0()) break; while (!1);
-          this.cursor = this.limit - l, this.cursor = this.limit_backward, c = this.cursor;
+          this.cursor = this.limit - o, this.cursor = this.limit_backward, u = this.cursor;
           do
             if (!this.r_postlude$esjava$0()) break; while (!1);
-          return this.cursor = c, !0
+          return this.cursor = u, !0
         }
       }, {
         key: "stem",
         value: function() {
-          for (var e, t = arguments.length, r = Array(t), i = 0; i < t; i++) r[i] = arguments[i];
-          return 0 === r.length ? this.stem$esjava$0.apply(this, r) : (e = o(Object.getPrototypeOf(n.prototype), "stem", this)).call.apply(e, [this].concat(r))
+          for (var e, i = arguments.length, s = Array(i), r = 0; r < i; r++) s[r] = arguments[r];
+          return 0 === s.length ? this.stem$esjava$0.apply(this, s) : (e = n(Object.getPrototypeOf(t.prototype), "stem", this)).call.apply(e, [this].concat(s))
         }
       }, {
         key: "I_p2",
@@ -7449,90 +7481,90 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
       }], [{
         key: "a_0",
         get: function() {
-          return delete n.a_0, n.a_0 = [new c("", -1, 3), new c("\xe3", 0, 1), new c("\xf5", 0, 2)]
+          return delete t.a_0, t.a_0 = [new u("", -1, 3), new u("\xe3", 0, 1), new u("\xf5", 0, 2)]
         }
       }, {
         key: "a_1",
         get: function() {
-          return delete n.a_1, n.a_1 = [new c("", -1, 3), new c("a~", 0, 1), new c("o~", 0, 2)]
+          return delete t.a_1, t.a_1 = [new u("", -1, 3), new u("a~", 0, 1), new u("o~", 0, 2)]
         }
       }, {
         key: "a_2",
         get: function() {
-          return delete n.a_2, n.a_2 = [new c("ic", -1, -1), new c("ad", -1, -1), new c("os", -1, -1), new c("iv", -1, 1)]
+          return delete t.a_2, t.a_2 = [new u("ic", -1, -1), new u("ad", -1, -1), new u("os", -1, -1), new u("iv", -1, 1)]
         }
       }, {
         key: "a_3",
         get: function() {
-          return delete n.a_3, n.a_3 = [new c("ante", -1, 1), new c("avel", -1, 1), new c("\xedvel", -1, 1)]
+          return delete t.a_3, t.a_3 = [new u("ante", -1, 1), new u("avel", -1, 1), new u("\xedvel", -1, 1)]
         }
       }, {
         key: "a_4",
         get: function() {
-          return delete n.a_4, n.a_4 = [new c("ic", -1, 1), new c("abil", -1, 1), new c("iv", -1, 1)]
+          return delete t.a_4, t.a_4 = [new u("ic", -1, 1), new u("abil", -1, 1), new u("iv", -1, 1)]
         }
       }, {
         key: "a_5",
         get: function() {
-          return delete n.a_5, n.a_5 = [new c("ica", -1, 1), new c("\xe2ncia", -1, 1), new c("\xeancia", -1, 4), new c("logia", -1, 2), new c("ira", -1, 9), new c("adora", -1, 1), new c("osa", -1, 1), new c("ista", -1, 1), new c("iva", -1, 8), new c("eza", -1, 1), new c("idade", -1, 7), new c("ante", -1, 1), new c("mente", -1, 6), new c("amente", 12, 5), new c("\xe1vel", -1, 1), new c("\xedvel", -1, 1), new c("ico", -1, 1), new c("ismo", -1, 1), new c("oso", -1, 1), new c("amento", -1, 1), new c("imento", -1, 1), new c("ivo", -1, 8), new c("a\xe7a~o", -1, 1), new c("u\xe7a~o", -1, 3), new c("ador", -1, 1), new c("icas", -1, 1), new c("\xeancias", -1, 4), new c("logias", -1, 2), new c("iras", -1, 9), new c("adoras", -1, 1), new c("osas", -1, 1), new c("istas", -1, 1), new c("ivas", -1, 8), new c("ezas", -1, 1), new c("idades", -1, 7), new c("adores", -1, 1), new c("antes", -1, 1), new c("a\xe7o~es", -1, 1), new c("u\xe7o~es", -1, 3), new c("icos", -1, 1), new c("ismos", -1, 1), new c("osos", -1, 1), new c("amentos", -1, 1), new c("imentos", -1, 1), new c("ivos", -1, 8)]
+          return delete t.a_5, t.a_5 = [new u("ica", -1, 1), new u("\xe2ncia", -1, 1), new u("\xeancia", -1, 4), new u("logia", -1, 2), new u("ira", -1, 9), new u("adora", -1, 1), new u("osa", -1, 1), new u("ista", -1, 1), new u("iva", -1, 8), new u("eza", -1, 1), new u("idade", -1, 7), new u("ante", -1, 1), new u("mente", -1, 6), new u("amente", 12, 5), new u("\xe1vel", -1, 1), new u("\xedvel", -1, 1), new u("ico", -1, 1), new u("ismo", -1, 1), new u("oso", -1, 1), new u("amento", -1, 1), new u("imento", -1, 1), new u("ivo", -1, 8), new u("a\xe7a~o", -1, 1), new u("u\xe7a~o", -1, 3), new u("ador", -1, 1), new u("icas", -1, 1), new u("\xeancias", -1, 4), new u("logias", -1, 2), new u("iras", -1, 9), new u("adoras", -1, 1), new u("osas", -1, 1), new u("istas", -1, 1), new u("ivas", -1, 8), new u("ezas", -1, 1), new u("idades", -1, 7), new u("adores", -1, 1), new u("antes", -1, 1), new u("a\xe7o~es", -1, 1), new u("u\xe7o~es", -1, 3), new u("icos", -1, 1), new u("ismos", -1, 1), new u("osos", -1, 1), new u("amentos", -1, 1), new u("imentos", -1, 1), new u("ivos", -1, 8)]
         }
       }, {
         key: "a_6",
         get: function() {
-          return delete n.a_6, n.a_6 = [new c("ada", -1, 1), new c("ida", -1, 1), new c("ia", -1, 1), new c("aria", 2, 1), new c("eria", 2, 1), new c("iria", 2, 1), new c("ara", -1, 1), new c("era", -1, 1), new c("ira", -1, 1), new c("ava", -1, 1), new c("asse", -1, 1), new c("esse", -1, 1), new c("isse", -1, 1), new c("aste", -1, 1), new c("este", -1, 1), new c("iste", -1, 1), new c("ei", -1, 1), new c("arei", 16, 1), new c("erei", 16, 1), new c("irei", 16, 1), new c("am", -1, 1), new c("iam", 20, 1), new c("ariam", 21, 1), new c("eriam", 21, 1), new c("iriam", 21, 1), new c("aram", 20, 1), new c("eram", 20, 1), new c("iram", 20, 1), new c("avam", 20, 1), new c("em", -1, 1), new c("arem", 29, 1), new c("erem", 29, 1), new c("irem", 29, 1), new c("assem", 29, 1), new c("essem", 29, 1), new c("issem", 29, 1), new c("ado", -1, 1), new c("ido", -1, 1), new c("ando", -1, 1), new c("endo", -1, 1), new c("indo", -1, 1), new c("ara~o", -1, 1), new c("era~o", -1, 1), new c("ira~o", -1, 1), new c("ar", -1, 1), new c("er", -1, 1), new c("ir", -1, 1), new c("as", -1, 1), new c("adas", 47, 1), new c("idas", 47, 1), new c("ias", 47, 1), new c("arias", 50, 1), new c("erias", 50, 1), new c("irias", 50, 1), new c("aras", 47, 1), new c("eras", 47, 1), new c("iras", 47, 1), new c("avas", 47, 1), new c("es", -1, 1), new c("ardes", 58, 1), new c("erdes", 58, 1), new c("irdes", 58, 1), new c("ares", 58, 1), new c("eres", 58, 1), new c("ires", 58, 1), new c("asses", 58, 1), new c("esses", 58, 1), new c("isses", 58, 1), new c("astes", 58, 1), new c("estes", 58, 1), new c("istes", 58, 1), new c("is", -1, 1), new c("ais", 71, 1), new c("eis", 71, 1), new c("areis", 73, 1), new c("ereis", 73, 1), new c("ireis", 73, 1), new c("\xe1reis", 73, 1), new c("\xe9reis", 73, 1), new c("\xedreis", 73, 1), new c("\xe1sseis", 73, 1), new c("\xe9sseis", 73, 1), new c("\xedsseis", 73, 1), new c("\xe1veis", 73, 1), new c("\xedeis", 73, 1), new c("ar\xedeis", 84, 1), new c("er\xedeis", 84, 1), new c("ir\xedeis", 84, 1), new c("ados", -1, 1), new c("idos", -1, 1), new c("amos", -1, 1), new c("\xe1ramos", 90, 1), new c("\xe9ramos", 90, 1), new c("\xedramos", 90, 1), new c("\xe1vamos", 90, 1), new c("\xedamos", 90, 1), new c("ar\xedamos", 95, 1), new c("er\xedamos", 95, 1), new c("ir\xedamos", 95, 1), new c("emos", -1, 1), new c("aremos", 99, 1), new c("eremos", 99, 1), new c("iremos", 99, 1), new c("\xe1ssemos", 99, 1), new c("\xeassemos", 99, 1), new c("\xedssemos", 99, 1), new c("imos", -1, 1), new c("armos", -1, 1), new c("ermos", -1, 1), new c("irmos", -1, 1), new c("\xe1mos", -1, 1), new c("ar\xe1s", -1, 1), new c("er\xe1s", -1, 1), new c("ir\xe1s", -1, 1), new c("eu", -1, 1), new c("iu", -1, 1), new c("ou", -1, 1), new c("ar\xe1", -1, 1), new c("er\xe1", -1, 1), new c("ir\xe1", -1, 1)]
+          return delete t.a_6, t.a_6 = [new u("ada", -1, 1), new u("ida", -1, 1), new u("ia", -1, 1), new u("aria", 2, 1), new u("eria", 2, 1), new u("iria", 2, 1), new u("ara", -1, 1), new u("era", -1, 1), new u("ira", -1, 1), new u("ava", -1, 1), new u("asse", -1, 1), new u("esse", -1, 1), new u("isse", -1, 1), new u("aste", -1, 1), new u("este", -1, 1), new u("iste", -1, 1), new u("ei", -1, 1), new u("arei", 16, 1), new u("erei", 16, 1), new u("irei", 16, 1), new u("am", -1, 1), new u("iam", 20, 1), new u("ariam", 21, 1), new u("eriam", 21, 1), new u("iriam", 21, 1), new u("aram", 20, 1), new u("eram", 20, 1), new u("iram", 20, 1), new u("avam", 20, 1), new u("em", -1, 1), new u("arem", 29, 1), new u("erem", 29, 1), new u("irem", 29, 1), new u("assem", 29, 1), new u("essem", 29, 1), new u("issem", 29, 1), new u("ado", -1, 1), new u("ido", -1, 1), new u("ando", -1, 1), new u("endo", -1, 1), new u("indo", -1, 1), new u("ara~o", -1, 1), new u("era~o", -1, 1), new u("ira~o", -1, 1), new u("ar", -1, 1), new u("er", -1, 1), new u("ir", -1, 1), new u("as", -1, 1), new u("adas", 47, 1), new u("idas", 47, 1), new u("ias", 47, 1), new u("arias", 50, 1), new u("erias", 50, 1), new u("irias", 50, 1), new u("aras", 47, 1), new u("eras", 47, 1), new u("iras", 47, 1), new u("avas", 47, 1), new u("es", -1, 1), new u("ardes", 58, 1), new u("erdes", 58, 1), new u("irdes", 58, 1), new u("ares", 58, 1), new u("eres", 58, 1), new u("ires", 58, 1), new u("asses", 58, 1), new u("esses", 58, 1), new u("isses", 58, 1), new u("astes", 58, 1), new u("estes", 58, 1), new u("istes", 58, 1), new u("is", -1, 1), new u("ais", 71, 1), new u("eis", 71, 1), new u("areis", 73, 1), new u("ereis", 73, 1), new u("ireis", 73, 1), new u("\xe1reis", 73, 1), new u("\xe9reis", 73, 1), new u("\xedreis", 73, 1), new u("\xe1sseis", 73, 1), new u("\xe9sseis", 73, 1), new u("\xedsseis", 73, 1), new u("\xe1veis", 73, 1), new u("\xedeis", 73, 1), new u("ar\xedeis", 84, 1), new u("er\xedeis", 84, 1), new u("ir\xedeis", 84, 1), new u("ados", -1, 1), new u("idos", -1, 1), new u("amos", -1, 1), new u("\xe1ramos", 90, 1), new u("\xe9ramos", 90, 1), new u("\xedramos", 90, 1), new u("\xe1vamos", 90, 1), new u("\xedamos", 90, 1), new u("ar\xedamos", 95, 1), new u("er\xedamos", 95, 1), new u("ir\xedamos", 95, 1), new u("emos", -1, 1), new u("aremos", 99, 1), new u("eremos", 99, 1), new u("iremos", 99, 1), new u("\xe1ssemos", 99, 1), new u("\xeassemos", 99, 1), new u("\xedssemos", 99, 1), new u("imos", -1, 1), new u("armos", -1, 1), new u("ermos", -1, 1), new u("irmos", -1, 1), new u("\xe1mos", -1, 1), new u("ar\xe1s", -1, 1), new u("er\xe1s", -1, 1), new u("ir\xe1s", -1, 1), new u("eu", -1, 1), new u("iu", -1, 1), new u("ou", -1, 1), new u("ar\xe1", -1, 1), new u("er\xe1", -1, 1), new u("ir\xe1", -1, 1)]
         }
       }, {
         key: "a_7",
         get: function() {
-          return delete n.a_7, n.a_7 = [new c("a", -1, 1), new c("i", -1, 1), new c("o", -1, 1), new c("os", -1, 1), new c("\xe1", -1, 1), new c("\xed", -1, 1), new c("\xf3", -1, 1)]
+          return delete t.a_7, t.a_7 = [new u("a", -1, 1), new u("i", -1, 1), new u("o", -1, 1), new u("os", -1, 1), new u("\xe1", -1, 1), new u("\xed", -1, 1), new u("\xf3", -1, 1)]
         }
       }, {
         key: "a_8",
         get: function() {
-          return delete n.a_8, n.a_8 = [new c("e", -1, 1), new c("\xe7", -1, 2), new c("\xe9", -1, 1), new c("\xea", -1, 1)]
+          return delete t.a_8, t.a_8 = [new u("e", -1, 1), new u("\xe7", -1, 2), new u("\xe9", -1, 1), new u("\xea", -1, 1)]
         }
       }, {
         key: "g_v",
         get: function() {
-          return delete n.g_v, n.g_v = [17, 65, 16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 19, 12, 2]
+          return delete t.g_v, t.g_v = [17, 65, 16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 19, 12, 2]
         }
-      }]), n
-    }(u),
-    C = function(e) {
-      function n() {
-        return i(this, n), t(this, Object.getPrototypeOf(n).apply(this, arguments))
+      }]), t
+    }(c),
+    x = function(e) {
+      function t() {
+        return r(this, t), i(this, Object.getPrototypeOf(t).apply(this, arguments))
       }
-      return r(n, e), a(n, [{
+      return s(t, e), a(t, [{
         key: "r_prelude$esjava$0",
         value: function() {
           var e = void 0,
-            t = void 0,
-            r = void 0;
-          G: for (;;) {
+            i = void 0,
+            s = void 0;
+          P: for (;;) {
             e = this.cursor;
-            c: do {
-              Z: for (;;) {
-                t = this.cursor;
-                d: do {
-                  if (!this.in_grouping$esjava$3(n.g_v, 97, 259)) break;
+            i: do {
+              S: for (;;) {
+                i = this.cursor;
+                t: do {
+                  if (!this.in_grouping$esjava$3(t.g_v, 97, 259)) break;
                   this.bra = this.cursor;
-                  f: do {
-                    r = this.cursor;
+                  r: do {
+                    s = this.cursor;
                     do {
-                      if (!this.eq_s$esjava$1("u") || (this.ket = this.cursor, !this.in_grouping$esjava$3(n.g_v, 97, 259))) break;
+                      if (!this.eq_s$esjava$1("u") || (this.ket = this.cursor, !this.in_grouping$esjava$3(t.g_v, 97, 259))) break;
                       this.slice_from$esjava$1("U");
-                      break f
+                      break r
                     } while (!1);
-                    if (this.cursor = r, !this.eq_s$esjava$1("i") || (this.ket = this.cursor, !this.in_grouping$esjava$3(n.g_v, 97, 259))) break d;
+                    if (this.cursor = s, !this.eq_s$esjava$1("i") || (this.ket = this.cursor, !this.in_grouping$esjava$3(t.g_v, 97, 259))) break t;
                     this.slice_from$esjava$1("I")
                   } while (!1);
-                  this.cursor = t;
-                  break Z
+                  this.cursor = i;
+                  break S
                 } while (!1);
-                if (this.cursor = t, this.cursor >= this.limit) break c;
+                if (this.cursor = i, this.cursor >= this.limit) break i;
                 this.cursor++
               }
-              continue G
+              continue P
             } while (!1);
             this.cursor = e;
             break
@@ -7543,94 +7575,94 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "r_mark_regions$esjava$0",
         value: function() {
           var e = void 0,
-            t = void 0,
-            r = void 0,
             i = void 0,
+            s = void 0,
+            r = void 0,
             a = void 0;
           this.I_pV = this.limit, this.I_p1 = this.limit, this.I_p2 = this.limit, e = this.cursor;
-          l: do {
-            c: do {
-              t = this.cursor;
-              u: do {
-                if (!this.in_grouping$esjava$3(n.g_v, 97, 259)) break;
-                d: do {
-                  r = this.cursor;
-                  f: do {
-                    if (!this.out_grouping$esjava$3(n.g_v, 97, 259)) break;
-                    C: for (;;) {
+          e: do {
+            i: do {
+              i = this.cursor;
+              s: do {
+                if (!this.in_grouping$esjava$3(t.g_v, 97, 259)) break;
+                t: do {
+                  s = this.cursor;
+                  r: do {
+                    if (!this.out_grouping$esjava$3(t.g_v, 97, 259)) break;
+                    m: for (;;) {
                       do {
-                        if (!this.in_grouping$esjava$3(n.g_v, 97, 259)) break;
-                        break C
+                        if (!this.in_grouping$esjava$3(t.g_v, 97, 259)) break;
+                        break m
                       } while (!1);
-                      if (this.cursor >= this.limit) break f;
+                      if (this.cursor >= this.limit) break r;
                       this.cursor++
                     }
-                    break d
+                    break t
                   } while (!1);
-                  if (this.cursor = r, !this.in_grouping$esjava$3(n.g_v, 97, 259)) break u;
-                  w: for (;;) {
+                  if (this.cursor = s, !this.in_grouping$esjava$3(t.g_v, 97, 259)) break s;
+                  j: for (;;) {
                     do {
-                      if (!this.out_grouping$esjava$3(n.g_v, 97, 259)) break;
-                      break w
+                      if (!this.out_grouping$esjava$3(t.g_v, 97, 259)) break;
+                      break j
                     } while (!1);
-                    if (this.cursor >= this.limit) break u;
+                    if (this.cursor >= this.limit) break s;
                     this.cursor++
                   }
                 } while (!1);
-                break c
+                break i
               } while (!1);
-              if (this.cursor = t, !this.out_grouping$esjava$3(n.g_v, 97, 259)) break l;
-              m: do {
-                i = this.cursor;
-                R: do {
-                  if (!this.out_grouping$esjava$3(n.g_v, 97, 259)) break;
-                  P: for (;;) {
+              if (this.cursor = i, !this.out_grouping$esjava$3(t.g_v, 97, 259)) break e;
+              o: do {
+                r = this.cursor;
+                g: do {
+                  if (!this.out_grouping$esjava$3(t.g_v, 97, 259)) break;
+                  p: for (;;) {
                     do {
-                      if (!this.in_grouping$esjava$3(n.g_v, 97, 259)) break;
-                      break P
+                      if (!this.in_grouping$esjava$3(t.g_v, 97, 259)) break;
+                      break p
                     } while (!1);
-                    if (this.cursor >= this.limit) break R;
+                    if (this.cursor >= this.limit) break g;
                     this.cursor++
                   }
-                  break m
+                  break o
                 } while (!1);
-                if (this.cursor = i, !this.in_grouping$esjava$3(n.g_v, 97, 259) || this.cursor >= this.limit) break l;
+                if (this.cursor = r, !this.in_grouping$esjava$3(t.g_v, 97, 259) || this.cursor >= this.limit) break e;
                 this.cursor++
               } while (!1)
             } while (!1);this.I_pV = this.cursor
           } while (!1);
           this.cursor = e, a = this.cursor;
-          D: do {
-            L: for (;;) {
+          y: do {
+            I: for (;;) {
               do {
-                if (!this.in_grouping$esjava$3(n.g_v, 97, 259)) break;
-                break L
+                if (!this.in_grouping$esjava$3(t.g_v, 97, 259)) break;
+                break I
               } while (!1);
-              if (this.cursor >= this.limit) break D;
+              if (this.cursor >= this.limit) break y;
+              this.cursor++
+            }
+            q: for (;;) {
+              do {
+                if (!this.out_grouping$esjava$3(t.g_v, 97, 259)) break;
+                break q
+              } while (!1);
+              if (this.cursor >= this.limit) break y;
+              this.cursor++
+            }
+            this.I_p1 = this.cursor;O: for (;;) {
+              do {
+                if (!this.in_grouping$esjava$3(t.g_v, 97, 259)) break;
+                break O
+              } while (!1);
+              if (this.cursor >= this.limit) break y;
               this.cursor++
             }
             x: for (;;) {
               do {
-                if (!this.out_grouping$esjava$3(n.g_v, 97, 259)) break;
+                if (!this.out_grouping$esjava$3(t.g_v, 97, 259)) break;
                 break x
               } while (!1);
-              if (this.cursor >= this.limit) break D;
-              this.cursor++
-            }
-            this.I_p1 = this.cursor;k: for (;;) {
-              do {
-                if (!this.in_grouping$esjava$3(n.g_v, 97, 259)) break;
-                break k
-              } while (!1);
-              if (this.cursor >= this.limit) break D;
-              this.cursor++
-            }
-            j: for (;;) {
-              do {
-                if (!this.out_grouping$esjava$3(n.g_v, 97, 259)) break;
-                break j
-              } while (!1);
-              if (this.cursor >= this.limit) break D;
+              if (this.cursor >= this.limit) break y;
               this.cursor++
             }
             this.I_p2 = this.cursor
@@ -7641,14 +7673,14 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "r_postlude$esjava$0",
         value: function() {
           var e = void 0,
-            t = void 0;
-          G: for (;;) {
-            t = this.cursor;
-            c: do {
-              if (this.bra = this.cursor, 0 === (e = this.find_among$esjava$1(n.a_0))) break;
+            i = void 0;
+          P: for (;;) {
+            i = this.cursor;
+            i: do {
+              if (this.bra = this.cursor, 0 === (e = this.find_among$esjava$1(t.a_0))) break;
               switch (this.ket = this.cursor, e) {
                 case 0:
-                  break c;
+                  break i;
                 case 1:
                   this.slice_from$esjava$1("i");
                   break;
@@ -7656,12 +7688,12 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
                   this.slice_from$esjava$1("u");
                   break;
                 case 3:
-                  if (this.cursor >= this.limit) break c;
+                  if (this.cursor >= this.limit) break i;
                   this.cursor++
               }
-              continue G
+              continue P
             } while (!1);
-            this.cursor = t;
+            this.cursor = i;
             break
           }
           return !0
@@ -7685,8 +7717,8 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "r_step_0$esjava$0",
         value: function() {
           var e = void 0,
-            t = void 0;
-          if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(n.a_1)) || (this.bra = this.cursor, !this.r_R1$esjava$0())) return !1;
+            i = void 0;
+          if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(t.a_1)) || (this.bra = this.cursor, !this.r_R1$esjava$0())) return !1;
           switch (e) {
             case 0:
               return !1;
@@ -7703,12 +7735,12 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
               this.slice_from$esjava$1("i");
               break;
             case 5:
-              t = this.limit - this.cursor;
+              i = this.limit - this.cursor;
               do {
                 if (!this.eq_s_b$esjava$1("ab")) break;
                 return !1
               } while (!1);
-              this.cursor = this.limit - t, this.slice_from$esjava$1("i");
+              this.cursor = this.limit - i, this.slice_from$esjava$1("i");
               break;
             case 6:
               this.slice_from$esjava$1("at");
@@ -7722,8 +7754,8 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "r_combo_suffix$esjava$0",
         value: function() {
           var e = void 0,
-            t = void 0;
-          if (t = this.limit - this.cursor, this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(n.a_2)) || (this.bra = this.cursor, !this.r_R1$esjava$0())) return !1;
+            i = void 0;
+          if (i = this.limit - this.cursor, this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(t.a_2)) || (this.bra = this.cursor, !this.r_R1$esjava$0())) return !1;
           switch (e) {
             case 0:
               return !1;
@@ -7745,24 +7777,24 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
             case 6:
               this.slice_from$esjava$1("it")
           }
-          return this.B_standard_suffix_removed = !0, this.cursor = this.limit - t, !0
+          return this.B_standard_suffix_removed = !0, this.cursor = this.limit - i, !0
         }
       }, {
         key: "r_standard_suffix$esjava$0",
         value: function() {
           var e = void 0,
-            t = void 0;
+            i = void 0;
           this.B_standard_suffix_removed = !1;
-          G: for (;;) {
-            t = this.limit - this.cursor;
+          P: for (;;) {
+            i = this.limit - this.cursor;
             do {
               if (!this.r_combo_suffix$esjava$0()) break;
-              continue G
+              continue P
             } while (!1);
-            this.cursor = this.limit - t;
+            this.cursor = this.limit - i;
             break
           }
-          if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(n.a_3)) || (this.bra = this.cursor, !this.r_R2$esjava$0())) return !1;
+          if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(t.a_3)) || (this.bra = this.cursor, !this.r_R2$esjava$0())) return !1;
           switch (e) {
             case 0:
               return !1;
@@ -7782,35 +7814,35 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "r_verb_suffix$esjava$0",
         value: function() {
           var e = void 0,
-            t = void 0,
-            r = void 0,
-            i = void 0;
-          if (t = this.limit - this.cursor, this.cursor < this.I_pV) return !1;
-          if (this.cursor = this.I_pV, r = this.limit_backward, this.limit_backward = this.cursor, this.cursor = this.limit - t, this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(n.a_4))) return this.limit_backward = r, !1;
+            i = void 0,
+            s = void 0,
+            r = void 0;
+          if (i = this.limit - this.cursor, this.cursor < this.I_pV) return !1;
+          if (this.cursor = this.I_pV, s = this.limit_backward, this.limit_backward = this.cursor, this.cursor = this.limit - i, this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(t.a_4))) return this.limit_backward = s, !1;
           switch (this.bra = this.cursor, e) {
             case 0:
-              return this.limit_backward = r, !1;
+              return this.limit_backward = s, !1;
             case 1:
-              l: do {
-                i = this.limit - this.cursor;
+              e: do {
+                r = this.limit - this.cursor;
                 do {
-                  if (!this.out_grouping_b$esjava$3(n.g_v, 97, 259)) break;
-                  break l
+                  if (!this.out_grouping_b$esjava$3(t.g_v, 97, 259)) break;
+                  break e
                 } while (!1);
-                if (this.cursor = this.limit - i, !this.eq_s_b$esjava$1("u")) return this.limit_backward = r, !1
+                if (this.cursor = this.limit - r, !this.eq_s_b$esjava$1("u")) return this.limit_backward = s, !1
               } while (!1);
               this.slice_del$esjava$0();
               break;
             case 2:
               this.slice_del$esjava$0()
           }
-          return this.limit_backward = r, !0
+          return this.limit_backward = s, !0
         }
       }, {
         key: "r_vowel_suffix$esjava$0",
         value: function() {
           var e = void 0;
-          if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(n.a_5)) || (this.bra = this.cursor, !this.r_RV$esjava$0())) return !1;
+          if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(t.a_5)) || (this.bra = this.cursor, !this.r_RV$esjava$0())) return !1;
           switch (e) {
             case 0:
               return !1;
@@ -7823,47 +7855,47 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "stem$esjava$0",
         value: function() {
           var e = void 0,
-            t = void 0,
-            n = void 0,
-            r = void 0,
             i = void 0,
+            s = void 0,
+            t = void 0,
+            r = void 0,
             a = void 0,
-            o = void 0,
-            s = void 0;
+            n = void 0,
+            h = void 0;
           e = this.cursor;
           do
             if (!this.r_prelude$esjava$0()) break; while (!1);
-          this.cursor = e, t = this.cursor;
+          this.cursor = e, i = this.cursor;
           do
             if (!this.r_mark_regions$esjava$0()) break; while (!1);
-          this.cursor = t, this.limit_backward = this.cursor, this.cursor = this.limit, n = this.limit - this.cursor;
+          this.cursor = i, this.limit_backward = this.cursor, this.cursor = this.limit, s = this.limit - this.cursor;
           do
             if (!this.r_step_0$esjava$0()) break; while (!1);
-          this.cursor = this.limit - n, r = this.limit - this.cursor;
+          this.cursor = this.limit - s, t = this.limit - this.cursor;
           do
             if (!this.r_standard_suffix$esjava$0()) break; while (!1);
-          this.cursor = this.limit - r, i = this.limit - this.cursor;
-          f: do _: do {
+          this.cursor = this.limit - t, r = this.limit - this.cursor;
+          r: do a: do {
             a = this.limit - this.cursor;
             do {
               if (!this.B_standard_suffix_removed) break;
-              break _
+              break a
             } while (!1);
-            if (this.cursor = this.limit - a, !this.r_verb_suffix$esjava$0()) break f
+            if (this.cursor = this.limit - a, !this.r_verb_suffix$esjava$0()) break r
           } while (!1); while (!1);
-          this.cursor = this.limit - i, o = this.limit - this.cursor;
+          this.cursor = this.limit - r, n = this.limit - this.cursor;
           do
             if (!this.r_vowel_suffix$esjava$0()) break; while (!1);
-          this.cursor = this.limit - o, this.cursor = this.limit_backward, s = this.cursor;
+          this.cursor = this.limit - n, this.cursor = this.limit_backward, h = this.cursor;
           do
             if (!this.r_postlude$esjava$0()) break; while (!1);
-          return this.cursor = s, !0
+          return this.cursor = h, !0
         }
       }, {
         key: "stem",
         value: function() {
-          for (var e, t = arguments.length, r = Array(t), i = 0; i < t; i++) r[i] = arguments[i];
-          return 0 === r.length ? this.stem$esjava$0.apply(this, r) : (e = o(Object.getPrototypeOf(n.prototype), "stem", this)).call.apply(e, [this].concat(r))
+          for (var e, i = arguments.length, s = Array(i), r = 0; r < i; r++) s[r] = arguments[r];
+          return 0 === s.length ? this.stem$esjava$0.apply(this, s) : (e = n(Object.getPrototypeOf(t.prototype), "stem", this)).call.apply(e, [this].concat(s))
         }
       }, {
         key: "B_standard_suffix_removed",
@@ -7900,80 +7932,80 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
       }], [{
         key: "a_0",
         get: function() {
-          return delete n.a_0, n.a_0 = [new c("", -1, 3), new c("I", 0, 1), new c("U", 0, 2)]
+          return delete t.a_0, t.a_0 = [new u("", -1, 3), new u("I", 0, 1), new u("U", 0, 2)]
         }
       }, {
         key: "a_1",
         get: function() {
-          return delete n.a_1, n.a_1 = [new c("ea", -1, 3), new c("aţia", -1, 7), new c("aua", -1, 2), new c("iua", -1, 4), new c("aţie", -1, 7), new c("ele", -1, 3), new c("ile", -1, 5), new c("iile", 6, 4), new c("iei", -1, 4), new c("atei", -1, 6), new c("ii", -1, 4), new c("ului", -1, 1), new c("ul", -1, 1), new c("elor", -1, 3), new c("ilor", -1, 4), new c("iilor", 14, 4)]
+          return delete t.a_1, t.a_1 = [new u("ea", -1, 3), new u("aţia", -1, 7), new u("aua", -1, 2), new u("iua", -1, 4), new u("aţie", -1, 7), new u("ele", -1, 3), new u("ile", -1, 5), new u("iile", 6, 4), new u("iei", -1, 4), new u("atei", -1, 6), new u("ii", -1, 4), new u("ului", -1, 1), new u("ul", -1, 1), new u("elor", -1, 3), new u("ilor", -1, 4), new u("iilor", 14, 4)]
         }
       }, {
         key: "a_2",
         get: function() {
-          return delete n.a_2, n.a_2 = [new c("icala", -1, 4), new c("iciva", -1, 4), new c("ativa", -1, 5), new c("itiva", -1, 6), new c("icale", -1, 4), new c("aţiune", -1, 5), new c("iţiune", -1, 6), new c("atoare", -1, 5), new c("itoare", -1, 6), new c("ătoare", -1, 5), new c("icitate", -1, 4), new c("abilitate", -1, 1), new c("ibilitate", -1, 2), new c("ivitate", -1, 3), new c("icive", -1, 4), new c("ative", -1, 5), new c("itive", -1, 6), new c("icali", -1, 4), new c("atori", -1, 5), new c("icatori", 18, 4), new c("itori", -1, 6), new c("ători", -1, 5), new c("icitati", -1, 4), new c("abilitati", -1, 1), new c("ivitati", -1, 3), new c("icivi", -1, 4), new c("ativi", -1, 5), new c("itivi", -1, 6), new c("icităi", -1, 4), new c("abilităi", -1, 1), new c("ivităi", -1, 3), new c("icităţi", -1, 4), new c("abilităţi", -1, 1), new c("ivităţi", -1, 3), new c("ical", -1, 4), new c("ator", -1, 5), new c("icator", 35, 4), new c("itor", -1, 6), new c("ător", -1, 5), new c("iciv", -1, 4), new c("ativ", -1, 5), new c("itiv", -1, 6), new c("icală", -1, 4), new c("icivă", -1, 4), new c("ativă", -1, 5), new c("itivă", -1, 6)]
+          return delete t.a_2, t.a_2 = [new u("icala", -1, 4), new u("iciva", -1, 4), new u("ativa", -1, 5), new u("itiva", -1, 6), new u("icale", -1, 4), new u("aţiune", -1, 5), new u("iţiune", -1, 6), new u("atoare", -1, 5), new u("itoare", -1, 6), new u("ătoare", -1, 5), new u("icitate", -1, 4), new u("abilitate", -1, 1), new u("ibilitate", -1, 2), new u("ivitate", -1, 3), new u("icive", -1, 4), new u("ative", -1, 5), new u("itive", -1, 6), new u("icali", -1, 4), new u("atori", -1, 5), new u("icatori", 18, 4), new u("itori", -1, 6), new u("ători", -1, 5), new u("icitati", -1, 4), new u("abilitati", -1, 1), new u("ivitati", -1, 3), new u("icivi", -1, 4), new u("ativi", -1, 5), new u("itivi", -1, 6), new u("icităi", -1, 4), new u("abilităi", -1, 1), new u("ivităi", -1, 3), new u("icităţi", -1, 4), new u("abilităţi", -1, 1), new u("ivităţi", -1, 3), new u("ical", -1, 4), new u("ator", -1, 5), new u("icator", 35, 4), new u("itor", -1, 6), new u("ător", -1, 5), new u("iciv", -1, 4), new u("ativ", -1, 5), new u("itiv", -1, 6), new u("icală", -1, 4), new u("icivă", -1, 4), new u("ativă", -1, 5), new u("itivă", -1, 6)]
         }
       }, {
         key: "a_3",
         get: function() {
-          return delete n.a_3, n.a_3 = [new c("ica", -1, 1), new c("abila", -1, 1), new c("ibila", -1, 1), new c("oasa", -1, 1), new c("ata", -1, 1), new c("ita", -1, 1), new c("anta", -1, 1), new c("ista", -1, 3), new c("uta", -1, 1), new c("iva", -1, 1), new c("ic", -1, 1), new c("ice", -1, 1), new c("abile", -1, 1), new c("ibile", -1, 1), new c("isme", -1, 3), new c("iune", -1, 2), new c("oase", -1, 1), new c("ate", -1, 1), new c("itate", 17, 1), new c("ite", -1, 1), new c("ante", -1, 1), new c("iste", -1, 3), new c("ute", -1, 1), new c("ive", -1, 1), new c("ici", -1, 1), new c("abili", -1, 1), new c("ibili", -1, 1), new c("iuni", -1, 2), new c("atori", -1, 1), new c("osi", -1, 1), new c("ati", -1, 1), new c("itati", 30, 1), new c("iti", -1, 1), new c("anti", -1, 1), new c("isti", -1, 3), new c("uti", -1, 1), new c("işti", -1, 3), new c("ivi", -1, 1), new c("ităi", -1, 1), new c("oşi", -1, 1), new c("ităţi", -1, 1), new c("abil", -1, 1), new c("ibil", -1, 1), new c("ism", -1, 3), new c("ator", -1, 1), new c("os", -1, 1), new c("at", -1, 1), new c("it", -1, 1), new c("ant", -1, 1), new c("ist", -1, 3), new c("ut", -1, 1), new c("iv", -1, 1), new c("ică", -1, 1), new c("abilă", -1, 1), new c("ibilă", -1, 1), new c("oasă", -1, 1), new c("ată", -1, 1), new c("ită", -1, 1), new c("antă", -1, 1), new c("istă", -1, 3), new c("ută", -1, 1), new c("ivă", -1, 1)]
+          return delete t.a_3, t.a_3 = [new u("ica", -1, 1), new u("abila", -1, 1), new u("ibila", -1, 1), new u("oasa", -1, 1), new u("ata", -1, 1), new u("ita", -1, 1), new u("anta", -1, 1), new u("ista", -1, 3), new u("uta", -1, 1), new u("iva", -1, 1), new u("ic", -1, 1), new u("ice", -1, 1), new u("abile", -1, 1), new u("ibile", -1, 1), new u("isme", -1, 3), new u("iune", -1, 2), new u("oase", -1, 1), new u("ate", -1, 1), new u("itate", 17, 1), new u("ite", -1, 1), new u("ante", -1, 1), new u("iste", -1, 3), new u("ute", -1, 1), new u("ive", -1, 1), new u("ici", -1, 1), new u("abili", -1, 1), new u("ibili", -1, 1), new u("iuni", -1, 2), new u("atori", -1, 1), new u("osi", -1, 1), new u("ati", -1, 1), new u("itati", 30, 1), new u("iti", -1, 1), new u("anti", -1, 1), new u("isti", -1, 3), new u("uti", -1, 1), new u("işti", -1, 3), new u("ivi", -1, 1), new u("ităi", -1, 1), new u("oşi", -1, 1), new u("ităţi", -1, 1), new u("abil", -1, 1), new u("ibil", -1, 1), new u("ism", -1, 3), new u("ator", -1, 1), new u("os", -1, 1), new u("at", -1, 1), new u("it", -1, 1), new u("ant", -1, 1), new u("ist", -1, 3), new u("ut", -1, 1), new u("iv", -1, 1), new u("ică", -1, 1), new u("abilă", -1, 1), new u("ibilă", -1, 1), new u("oasă", -1, 1), new u("ată", -1, 1), new u("ită", -1, 1), new u("antă", -1, 1), new u("istă", -1, 3), new u("ută", -1, 1), new u("ivă", -1, 1)]
         }
       }, {
         key: "a_4",
         get: function() {
-          return delete n.a_4, n.a_4 = [new c("ea", -1, 1), new c("ia", -1, 1), new c("esc", -1, 1), new c("ăsc", -1, 1), new c("ind", -1, 1), new c("\xe2nd", -1, 1), new c("are", -1, 1), new c("ere", -1, 1), new c("ire", -1, 1), new c("\xe2re", -1, 1), new c("se", -1, 2), new c("ase", 10, 1), new c("sese", 10, 2), new c("ise", 10, 1), new c("use", 10, 1), new c("\xe2se", 10, 1), new c("eşte", -1, 1), new c("ăşte", -1, 1), new c("eze", -1, 1), new c("ai", -1, 1), new c("eai", 19, 1), new c("iai", 19, 1), new c("sei", -1, 2), new c("eşti", -1, 1), new c("ăşti", -1, 1), new c("ui", -1, 1), new c("ezi", -1, 1), new c("\xe2i", -1, 1), new c("aşi", -1, 1), new c("seşi", -1, 2), new c("aseşi", 29, 1), new c("seseşi", 29, 2), new c("iseşi", 29, 1), new c("useşi", 29, 1), new c("\xe2seşi", 29, 1), new c("işi", -1, 1), new c("uşi", -1, 1), new c("\xe2şi", -1, 1), new c("aţi", -1, 2), new c("eaţi", 38, 1), new c("iaţi", 38, 1), new c("eţi", -1, 2), new c("iţi", -1, 2), new c("\xe2ţi", -1, 2), new c("arăţi", -1, 1), new c("serăţi", -1, 2), new c("aserăţi", 45, 1), new c("seserăţi", 45, 2), new c("iserăţi", 45, 1), new c("userăţi", 45, 1), new c("\xe2serăţi", 45, 1), new c("irăţi", -1, 1), new c("urăţi", -1, 1), new c("\xe2răţi", -1, 1), new c("am", -1, 1), new c("eam", 54, 1), new c("iam", 54, 1), new c("em", -1, 2), new c("asem", 57, 1), new c("sesem", 57, 2), new c("isem", 57, 1), new c("usem", 57, 1), new c("\xe2sem", 57, 1), new c("im", -1, 2), new c("\xe2m", -1, 2), new c("ăm", -1, 2), new c("arăm", 65, 1), new c("serăm", 65, 2), new c("aserăm", 67, 1), new c("seserăm", 67, 2), new c("iserăm", 67, 1), new c("userăm", 67, 1), new c("\xe2serăm", 67, 1), new c("irăm", 65, 1), new c("urăm", 65, 1), new c("\xe2răm", 65, 1), new c("au", -1, 1), new c("eau", 76, 1), new c("iau", 76, 1), new c("indu", -1, 1), new c("\xe2ndu", -1, 1), new c("ez", -1, 1), new c("ească", -1, 1), new c("ară", -1, 1), new c("seră", -1, 2), new c("aseră", 84, 1), new c("seseră", 84, 2), new c("iseră", 84, 1), new c("useră", 84, 1), new c("\xe2seră", 84, 1), new c("iră", -1, 1), new c("ură", -1, 1), new c("\xe2ră", -1, 1), new c("ează", -1, 1)]
+          return delete t.a_4, t.a_4 = [new u("ea", -1, 1), new u("ia", -1, 1), new u("esc", -1, 1), new u("ăsc", -1, 1), new u("ind", -1, 1), new u("\xe2nd", -1, 1), new u("are", -1, 1), new u("ere", -1, 1), new u("ire", -1, 1), new u("\xe2re", -1, 1), new u("se", -1, 2), new u("ase", 10, 1), new u("sese", 10, 2), new u("ise", 10, 1), new u("use", 10, 1), new u("\xe2se", 10, 1), new u("eşte", -1, 1), new u("ăşte", -1, 1), new u("eze", -1, 1), new u("ai", -1, 1), new u("eai", 19, 1), new u("iai", 19, 1), new u("sei", -1, 2), new u("eşti", -1, 1), new u("ăşti", -1, 1), new u("ui", -1, 1), new u("ezi", -1, 1), new u("\xe2i", -1, 1), new u("aşi", -1, 1), new u("seşi", -1, 2), new u("aseşi", 29, 1), new u("seseşi", 29, 2), new u("iseşi", 29, 1), new u("useşi", 29, 1), new u("\xe2seşi", 29, 1), new u("işi", -1, 1), new u("uşi", -1, 1), new u("\xe2şi", -1, 1), new u("aţi", -1, 2), new u("eaţi", 38, 1), new u("iaţi", 38, 1), new u("eţi", -1, 2), new u("iţi", -1, 2), new u("\xe2ţi", -1, 2), new u("arăţi", -1, 1), new u("serăţi", -1, 2), new u("aserăţi", 45, 1), new u("seserăţi", 45, 2), new u("iserăţi", 45, 1), new u("userăţi", 45, 1), new u("\xe2serăţi", 45, 1), new u("irăţi", -1, 1), new u("urăţi", -1, 1), new u("\xe2răţi", -1, 1), new u("am", -1, 1), new u("eam", 54, 1), new u("iam", 54, 1), new u("em", -1, 2), new u("asem", 57, 1), new u("sesem", 57, 2), new u("isem", 57, 1), new u("usem", 57, 1), new u("\xe2sem", 57, 1), new u("im", -1, 2), new u("\xe2m", -1, 2), new u("ăm", -1, 2), new u("arăm", 65, 1), new u("serăm", 65, 2), new u("aserăm", 67, 1), new u("seserăm", 67, 2), new u("iserăm", 67, 1), new u("userăm", 67, 1), new u("\xe2serăm", 67, 1), new u("irăm", 65, 1), new u("urăm", 65, 1), new u("\xe2răm", 65, 1), new u("au", -1, 1), new u("eau", 76, 1), new u("iau", 76, 1), new u("indu", -1, 1), new u("\xe2ndu", -1, 1), new u("ez", -1, 1), new u("ească", -1, 1), new u("ară", -1, 1), new u("seră", -1, 2), new u("aseră", 84, 1), new u("seseră", 84, 2), new u("iseră", 84, 1), new u("useră", 84, 1), new u("\xe2seră", 84, 1), new u("iră", -1, 1), new u("ură", -1, 1), new u("\xe2ră", -1, 1), new u("ează", -1, 1)]
         }
       }, {
         key: "a_5",
         get: function() {
-          return delete n.a_5, n.a_5 = [new c("a", -1, 1), new c("e", -1, 1), new c("ie", 1, 1), new c("i", -1, 1), new c("ă", -1, 1)]
+          return delete t.a_5, t.a_5 = [new u("a", -1, 1), new u("e", -1, 1), new u("ie", 1, 1), new u("i", -1, 1), new u("ă", -1, 1)]
         }
       }, {
         key: "g_v",
         get: function() {
-          return delete n.g_v, n.g_v = [17, 65, 16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 32, 0, 0, 4]
+          return delete t.g_v, t.g_v = [17, 65, 16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 32, 0, 0, 4]
         }
-      }]), n
-    }(u),
-    w = function(e) {
-      function n() {
-        return i(this, n), t(this, Object.getPrototypeOf(n).apply(this, arguments))
+      }]), t
+    }(c),
+    R = function(e) {
+      function t() {
+        return r(this, t), i(this, Object.getPrototypeOf(t).apply(this, arguments))
       }
-      return r(n, e), a(n, [{
+      return s(t, e), a(t, [{
         key: "r_mark_regions$esjava$0",
         value: function() {
           var e = void 0;
           this.I_pV = this.limit, this.I_p2 = this.limit, e = this.cursor;
-          l: do {
-            A: for (;;) {
+          e: do {
+            d: for (;;) {
               do {
-                if (!this.in_grouping$esjava$3(n.g_v, 1072, 1103)) break;
-                break A
+                if (!this.in_grouping$esjava$3(t.g_v, 1072, 1103)) break;
+                break d
               } while (!1);
-              if (this.cursor >= this.limit) break l;
+              if (this.cursor >= this.limit) break e;
               this.cursor++
             }
-            this.I_pV = this.cursor;N: for (;;) {
+            this.I_pV = this.cursor;b: for (;;) {
               do {
-                if (!this.out_grouping$esjava$3(n.g_v, 1072, 1103)) break;
-                break N
+                if (!this.out_grouping$esjava$3(t.g_v, 1072, 1103)) break;
+                break b
               } while (!1);
-              if (this.cursor >= this.limit) break l;
+              if (this.cursor >= this.limit) break e;
               this.cursor++
             }
-            C: for (;;) {
+            m: for (;;) {
               do {
-                if (!this.in_grouping$esjava$3(n.g_v, 1072, 1103)) break;
-                break C
+                if (!this.in_grouping$esjava$3(t.g_v, 1072, 1103)) break;
+                break m
               } while (!1);
-              if (this.cursor >= this.limit) break l;
+              if (this.cursor >= this.limit) break e;
               this.cursor++
             }
-            w: for (;;) {
+            j: for (;;) {
               do {
-                if (!this.out_grouping$esjava$3(n.g_v, 1072, 1103)) break;
-                break w
+                if (!this.out_grouping$esjava$3(t.g_v, 1072, 1103)) break;
+                break j
               } while (!1);
-              if (this.cursor >= this.limit) break l;
+              if (this.cursor >= this.limit) break e;
               this.cursor++
             }
             this.I_p2 = this.cursor
@@ -7989,19 +8021,19 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "r_perfective_gerund$esjava$0",
         value: function() {
           var e = void 0,
-            t = void 0;
-          if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(n.a_0))) return !1;
+            i = void 0;
+          if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(t.a_0))) return !1;
           switch (this.bra = this.cursor, e) {
             case 0:
               return !1;
             case 1:
-              l: do {
-                t = this.limit - this.cursor;
+              e: do {
+                i = this.limit - this.cursor;
                 do {
                   if (!this.eq_s_b$esjava$1("а")) break;
-                  break l
+                  break e
                 } while (!1);
-                if (this.cursor = this.limit - t, !this.eq_s_b$esjava$1("я")) return !1
+                if (this.cursor = this.limit - i, !this.eq_s_b$esjava$1("я")) return !1
               } while (!1);
               this.slice_del$esjava$0();
               break;
@@ -8014,7 +8046,7 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "r_adjective$esjava$0",
         value: function() {
           var e = void 0;
-          if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(n.a_1))) return !1;
+          if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(t.a_1))) return !1;
           switch (this.bra = this.cursor, e) {
             case 0:
               return !1;
@@ -8027,29 +8059,29 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "r_adjectival$esjava$0",
         value: function() {
           var e = void 0,
-            t = void 0,
-            r = void 0;
+            i = void 0,
+            s = void 0;
           if (!this.r_adjective$esjava$0()) return !1;
-          t = this.limit - this.cursor;
-          l: do {
-            if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(n.a_2))) {
-              this.cursor = this.limit - t;
+          i = this.limit - this.cursor;
+          e: do {
+            if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(t.a_2))) {
+              this.cursor = this.limit - i;
               break
             }
             switch (this.bra = this.cursor, e) {
               case 0:
-                this.cursor = this.limit - t;
-                break l;
+                this.cursor = this.limit - i;
+                break e;
               case 1:
-                c: do {
-                  r = this.limit - this.cursor;
+                i: do {
+                  s = this.limit - this.cursor;
                   do {
                     if (!this.eq_s_b$esjava$1("а")) break;
-                    break c
+                    break i
                   } while (!1);
-                  if (this.cursor = this.limit - r, !this.eq_s_b$esjava$1("я")) {
-                    this.cursor = this.limit - t;
-                    break l
+                  if (this.cursor = this.limit - s, !this.eq_s_b$esjava$1("я")) {
+                    this.cursor = this.limit - i;
+                    break e
                   }
                 } while (!1);
                 this.slice_del$esjava$0();
@@ -8064,7 +8096,7 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "r_reflexive$esjava$0",
         value: function() {
           var e = void 0;
-          if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(n.a_3))) return !1;
+          if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(t.a_3))) return !1;
           switch (this.bra = this.cursor, e) {
             case 0:
               return !1;
@@ -8077,19 +8109,19 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "r_verb$esjava$0",
         value: function() {
           var e = void 0,
-            t = void 0;
-          if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(n.a_4))) return !1;
+            i = void 0;
+          if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(t.a_4))) return !1;
           switch (this.bra = this.cursor, e) {
             case 0:
               return !1;
             case 1:
-              l: do {
-                t = this.limit - this.cursor;
+              e: do {
+                i = this.limit - this.cursor;
                 do {
                   if (!this.eq_s_b$esjava$1("а")) break;
-                  break l
+                  break e
                 } while (!1);
-                if (this.cursor = this.limit - t, !this.eq_s_b$esjava$1("я")) return !1
+                if (this.cursor = this.limit - i, !this.eq_s_b$esjava$1("я")) return !1
               } while (!1);
               this.slice_del$esjava$0();
               break;
@@ -8102,7 +8134,7 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "r_noun$esjava$0",
         value: function() {
           var e = void 0;
-          if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(n.a_5))) return !1;
+          if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(t.a_5))) return !1;
           switch (this.bra = this.cursor, e) {
             case 0:
               return !1;
@@ -8115,7 +8147,7 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "r_derivational$esjava$0",
         value: function() {
           var e = void 0;
-          if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(n.a_6)) || (this.bra = this.cursor, !this.r_R2$esjava$0())) return !1;
+          if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(t.a_6)) || (this.bra = this.cursor, !this.r_R2$esjava$0())) return !1;
           switch (e) {
             case 0:
               return !1;
@@ -8128,7 +8160,7 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "r_tidy_up$esjava$0",
         value: function() {
           var e = void 0;
-          if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(n.a_7))) return !1;
+          if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(t.a_7))) return !1;
           switch (this.bra = this.cursor, e) {
             case 0:
               return !1;
@@ -8149,67 +8181,67 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "stem$esjava$0",
         value: function() {
           var e = void 0,
-            t = void 0,
-            n = void 0,
-            r = void 0,
             i = void 0,
-            a = void 0,
-            o = void 0,
             s = void 0,
-            l = void 0,
-            c = void 0;
+            t = void 0,
+            r = void 0,
+            a = void 0,
+            n = void 0,
+            h = void 0,
+            o = void 0,
+            u = void 0;
           e = this.cursor;
           do
             if (!this.r_mark_regions$esjava$0()) break; while (!1);
-          if (this.cursor = e, this.limit_backward = this.cursor, this.cursor = this.limit, t = this.limit - this.cursor, this.cursor < this.I_pV) return !1;
-          this.cursor = this.I_pV, n = this.limit_backward, this.limit_backward = this.cursor, this.cursor = this.limit - t, r = this.limit - this.cursor;
-          c: do u: do {
-            i = this.limit - this.cursor;
+          if (this.cursor = e, this.limit_backward = this.cursor, this.cursor = this.limit, i = this.limit - this.cursor, this.cursor < this.I_pV) return !1;
+          this.cursor = this.I_pV, s = this.limit_backward, this.limit_backward = this.cursor, this.cursor = this.limit - i, t = this.limit - this.cursor;
+          i: do s: do {
+            r = this.limit - this.cursor;
             do {
               if (!this.r_perfective_gerund$esjava$0()) break;
-              break u
+              break s
             } while (!1);
-            this.cursor = this.limit - i, a = this.limit - this.cursor;
+            this.cursor = this.limit - r, a = this.limit - this.cursor;
             do
               if (!this.r_reflexive$esjava$0()) {
                 this.cursor = this.limit - a;
                 break
               } while (!1);
-            _: do {
-              o = this.limit - this.cursor;
+            a: do {
+              n = this.limit - this.cursor;
               do {
                 if (!this.r_adjectival$esjava$0()) break;
-                break _
+                break a
               } while (!1);
-              this.cursor = this.limit - o;
+              this.cursor = this.limit - n;
               do {
                 if (!this.r_verb$esjava$0()) break;
-                break _
+                break a
               } while (!1);
-              if (this.cursor = this.limit - o, !this.r_noun$esjava$0()) break c
+              if (this.cursor = this.limit - n, !this.r_noun$esjava$0()) break i
             } while (!1)
           } while (!1); while (!1);
-          this.cursor = this.limit - r, s = this.limit - this.cursor;
+          this.cursor = this.limit - t, h = this.limit - this.cursor;
           do {
             if (this.ket = this.cursor, !this.eq_s_b$esjava$1("и")) {
-              this.cursor = this.limit - s;
+              this.cursor = this.limit - h;
               break
             }
             this.bra = this.cursor, this.slice_del$esjava$0()
           } while (!1);
-          l = this.limit - this.cursor;
+          o = this.limit - this.cursor;
           do
             if (!this.r_derivational$esjava$0()) break; while (!1);
-          this.cursor = this.limit - l, c = this.limit - this.cursor;
+          this.cursor = this.limit - o, u = this.limit - this.cursor;
           do
             if (!this.r_tidy_up$esjava$0()) break; while (!1);
-          return this.cursor = this.limit - c, this.limit_backward = n, this.cursor = this.limit_backward, !0
+          return this.cursor = this.limit - u, this.limit_backward = s, this.cursor = this.limit_backward, !0
         }
       }, {
         key: "stem",
         value: function() {
-          for (var e, t = arguments.length, r = Array(t), i = 0; i < t; i++) r[i] = arguments[i];
-          return 0 === r.length ? this.stem$esjava$0.apply(this, r) : (e = o(Object.getPrototypeOf(n.prototype), "stem", this)).call.apply(e, [this].concat(r))
+          for (var e, i = arguments.length, s = Array(i), r = 0; r < i; r++) s[r] = arguments[r];
+          return 0 === s.length ? this.stem$esjava$0.apply(this, s) : (e = n(Object.getPrototypeOf(t.prototype), "stem", this)).call.apply(e, [this].concat(s))
         }
       }, {
         key: "I_p2",
@@ -8230,172 +8262,172 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
       }], [{
         key: "a_0",
         get: function() {
-          return delete n.a_0, n.a_0 = [new c("в", -1, 1), new c("ив", 0, 2), new c("ыв", 0, 2), new c("вши", -1, 1), new c("ивши", 3, 2), new c("ывши", 3, 2), new c("вшись", -1, 1), new c("ившись", 6, 2), new c("ывшись", 6, 2)]
+          return delete t.a_0, t.a_0 = [new u("в", -1, 1), new u("ив", 0, 2), new u("ыв", 0, 2), new u("вши", -1, 1), new u("ивши", 3, 2), new u("ывши", 3, 2), new u("вшись", -1, 1), new u("ившись", 6, 2), new u("ывшись", 6, 2)]
         }
       }, {
         key: "a_1",
         get: function() {
-          return delete n.a_1, n.a_1 = [new c("ее", -1, 1), new c("ие", -1, 1), new c("ое", -1, 1), new c("ые", -1, 1), new c("ими", -1, 1), new c("ыми", -1, 1), new c("ей", -1, 1), new c("ий", -1, 1), new c("ой", -1, 1), new c("ый", -1, 1), new c("ем", -1, 1), new c("им", -1, 1), new c("ом", -1, 1), new c("ым", -1, 1), new c("его", -1, 1), new c("ого", -1, 1), new c("ему", -1, 1), new c("ому", -1, 1), new c("их", -1, 1), new c("ых", -1, 1), new c("ею", -1, 1), new c("ою", -1, 1), new c("ую", -1, 1), new c("юю", -1, 1), new c("ая", -1, 1), new c("яя", -1, 1)]
+          return delete t.a_1, t.a_1 = [new u("ее", -1, 1), new u("ие", -1, 1), new u("ое", -1, 1), new u("ые", -1, 1), new u("ими", -1, 1), new u("ыми", -1, 1), new u("ей", -1, 1), new u("ий", -1, 1), new u("ой", -1, 1), new u("ый", -1, 1), new u("ем", -1, 1), new u("им", -1, 1), new u("ом", -1, 1), new u("ым", -1, 1), new u("его", -1, 1), new u("ого", -1, 1), new u("ему", -1, 1), new u("ому", -1, 1), new u("их", -1, 1), new u("ых", -1, 1), new u("ею", -1, 1), new u("ою", -1, 1), new u("ую", -1, 1), new u("юю", -1, 1), new u("ая", -1, 1), new u("яя", -1, 1)]
         }
       }, {
         key: "a_2",
         get: function() {
-          return delete n.a_2, n.a_2 = [new c("ем", -1, 1), new c("нн", -1, 1), new c("вш", -1, 1), new c("ивш", 2, 2), new c("ывш", 2, 2), new c("щ", -1, 1), new c("ющ", 5, 1), new c("ующ", 6, 2)]
+          return delete t.a_2, t.a_2 = [new u("ем", -1, 1), new u("нн", -1, 1), new u("вш", -1, 1), new u("ивш", 2, 2), new u("ывш", 2, 2), new u("щ", -1, 1), new u("ющ", 5, 1), new u("ующ", 6, 2)]
         }
       }, {
         key: "a_3",
         get: function() {
-          return delete n.a_3, n.a_3 = [new c("сь", -1, 1), new c("ся", -1, 1)]
+          return delete t.a_3, t.a_3 = [new u("сь", -1, 1), new u("ся", -1, 1)]
         }
       }, {
         key: "a_4",
         get: function() {
-          return delete n.a_4, n.a_4 = [new c("ла", -1, 1), new c("ила", 0, 2), new c("ыла", 0, 2), new c("на", -1, 1), new c("ена", 3, 2), new c("ете", -1, 1), new c("ите", -1, 2), new c("йте", -1, 1), new c("ейте", 7, 2), new c("уйте", 7, 2), new c("ли", -1, 1), new c("или", 10, 2), new c("ыли", 10, 2), new c("й", -1, 1), new c("ей", 13, 2), new c("уй", 13, 2), new c("л", -1, 1), new c("ил", 16, 2), new c("ыл", 16, 2), new c("ем", -1, 1), new c("им", -1, 2), new c("ым", -1, 2), new c("н", -1, 1), new c("ен", 22, 2), new c("ло", -1, 1), new c("ило", 24, 2), new c("ыло", 24, 2), new c("но", -1, 1), new c("ено", 27, 2), new c("нно", 27, 1), new c("ет", -1, 1), new c("ует", 30, 2), new c("ит", -1, 2), new c("ыт", -1, 2), new c("ют", -1, 1), new c("уют", 34, 2), new c("ят", -1, 2), new c("ны", -1, 1), new c("ены", 37, 2), new c("ть", -1, 1), new c("ить", 39, 2), new c("ыть", 39, 2), new c("ешь", -1, 1), new c("ишь", -1, 2), new c("ю", -1, 2), new c("ую", 44, 2)]
+          return delete t.a_4, t.a_4 = [new u("ла", -1, 1), new u("ила", 0, 2), new u("ыла", 0, 2), new u("на", -1, 1), new u("ена", 3, 2), new u("ете", -1, 1), new u("ите", -1, 2), new u("йте", -1, 1), new u("ейте", 7, 2), new u("уйте", 7, 2), new u("ли", -1, 1), new u("или", 10, 2), new u("ыли", 10, 2), new u("й", -1, 1), new u("ей", 13, 2), new u("уй", 13, 2), new u("л", -1, 1), new u("ил", 16, 2), new u("ыл", 16, 2), new u("ем", -1, 1), new u("им", -1, 2), new u("ым", -1, 2), new u("н", -1, 1), new u("ен", 22, 2), new u("ло", -1, 1), new u("ило", 24, 2), new u("ыло", 24, 2), new u("но", -1, 1), new u("ено", 27, 2), new u("нно", 27, 1), new u("ет", -1, 1), new u("ует", 30, 2), new u("ит", -1, 2), new u("ыт", -1, 2), new u("ют", -1, 1), new u("уют", 34, 2), new u("ят", -1, 2), new u("ны", -1, 1), new u("ены", 37, 2), new u("ть", -1, 1), new u("ить", 39, 2), new u("ыть", 39, 2), new u("ешь", -1, 1), new u("ишь", -1, 2), new u("ю", -1, 2), new u("ую", 44, 2)]
         }
       }, {
         key: "a_5",
         get: function() {
-          return delete n.a_5, n.a_5 = [new c("а", -1, 1), new c("ев", -1, 1), new c("ов", -1, 1), new c("е", -1, 1), new c("ие", 3, 1), new c("ье", 3, 1), new c("и", -1, 1), new c("еи", 6, 1), new c("ии", 6, 1), new c("ами", 6, 1), new c("ями", 6, 1), new c("иями", 10, 1), new c("й", -1, 1), new c("ей", 12, 1), new c("ией", 13, 1), new c("ий", 12, 1), new c("ой", 12, 1), new c("ам", -1, 1), new c("ем", -1, 1), new c("ием", 18, 1), new c("ом", -1, 1), new c("ям", -1, 1), new c("иям", 21, 1), new c("о", -1, 1), new c("у", -1, 1), new c("ах", -1, 1), new c("ях", -1, 1), new c("иях", 26, 1), new c("ы", -1, 1), new c("ь", -1, 1), new c("ю", -1, 1), new c("ию", 30, 1), new c("ью", 30, 1), new c("я", -1, 1), new c("ия", 33, 1), new c("ья", 33, 1)]
+          return delete t.a_5, t.a_5 = [new u("а", -1, 1), new u("ев", -1, 1), new u("ов", -1, 1), new u("е", -1, 1), new u("ие", 3, 1), new u("ье", 3, 1), new u("и", -1, 1), new u("еи", 6, 1), new u("ии", 6, 1), new u("ами", 6, 1), new u("ями", 6, 1), new u("иями", 10, 1), new u("й", -1, 1), new u("ей", 12, 1), new u("ией", 13, 1), new u("ий", 12, 1), new u("ой", 12, 1), new u("ам", -1, 1), new u("ем", -1, 1), new u("ием", 18, 1), new u("ом", -1, 1), new u("ям", -1, 1), new u("иям", 21, 1), new u("о", -1, 1), new u("у", -1, 1), new u("ах", -1, 1), new u("ях", -1, 1), new u("иях", 26, 1), new u("ы", -1, 1), new u("ь", -1, 1), new u("ю", -1, 1), new u("ию", 30, 1), new u("ью", 30, 1), new u("я", -1, 1), new u("ия", 33, 1), new u("ья", 33, 1)]
         }
       }, {
         key: "a_6",
         get: function() {
-          return delete n.a_6, n.a_6 = [new c("ост", -1, 1), new c("ость", -1, 1)]
+          return delete t.a_6, t.a_6 = [new u("ост", -1, 1), new u("ость", -1, 1)]
         }
       }, {
         key: "a_7",
         get: function() {
-          return delete n.a_7, n.a_7 = [new c("ейше", -1, 1), new c("н", -1, 2), new c("ейш", -1, 1), new c("ь", -1, 3)]
+          return delete t.a_7, t.a_7 = [new u("ейше", -1, 1), new u("н", -1, 2), new u("ейш", -1, 1), new u("ь", -1, 3)]
         }
       }, {
         key: "g_v",
         get: function() {
-          return delete n.g_v, n.g_v = [33, 65, 8, 232]
+          return delete t.g_v, t.g_v = [33, 65, 8, 232]
         }
-      }]), n
-    }(u),
-    R = function(e) {
-      function n() {
-        return i(this, n), t(this, Object.getPrototypeOf(n).apply(this, arguments))
+      }]), t
+    }(c),
+    z = function(e) {
+      function t() {
+        return r(this, t), i(this, Object.getPrototypeOf(t).apply(this, arguments))
       }
-      return r(n, e), a(n, [{
+      return s(t, e), a(t, [{
         key: "stem$esjava$0",
         value: function() {
           var e = void 0,
-            t = void 0,
-            r = void 0,
             i = void 0,
-            a = void 0,
-            o = void 0,
             s = void 0,
-            l = void 0,
-            c = void 0,
+            r = void 0,
+            a = void 0,
+            n = void 0,
+            h = void 0,
+            o = void 0,
             u = void 0,
-            d = void 0;
-          this.I_p1 = this.current.length(), this.limit_backward = this.cursor, this.cursor = this.limit, t = this.limit - this.cursor;
+            c = void 0,
+            _ = void 0;
+          this.I_p1 = this.current.length(), this.limit_backward = this.cursor, this.cursor = this.limit, i = this.limit - this.cursor;
           do
-            for (r = 4; r > 0; r--) {
-              i = this.limit - this.cursor;
-              c: do {
-                if (!(this.I_p1 > 8) || (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(n.a_0)))) {
-                  this.cursor = this.limit - i;
+            for (s = 4; s > 0; s--) {
+              r = this.limit - this.cursor;
+              i: do {
+                if (!(this.I_p1 > 8) || (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(t.a_0)))) {
+                  this.cursor = this.limit - r;
                   break
                 }
                 switch (this.bra = this.cursor, e) {
                   case 0:
-                    this.cursor = this.limit - i;
-                    break c;
+                    this.cursor = this.limit - r;
+                    break i;
                   case 1:
                     this.slice_del$esjava$0()
                 }
               } while (!1);
               a = this.limit - this.cursor;
-              u: do {
-                if (!(this.I_p1 > 7) || (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(n.a_1)))) {
+              s: do {
+                if (!(this.I_p1 > 7) || (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(t.a_1)))) {
                   this.cursor = this.limit - a;
                   break
                 }
                 switch (this.bra = this.cursor, e) {
                   case 0:
                     this.cursor = this.limit - a;
-                    break u;
+                    break s;
+                  case 1:
+                    this.slice_del$esjava$0()
+                }
+              } while (!1);
+              this.I_p1 = this.current.length(), n = this.limit - this.cursor;
+              t: do {
+                if (!(this.I_p1 > 6) || (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(t.a_2)))) {
+                  this.cursor = this.limit - n;
+                  break
+                }
+                switch (this.bra = this.cursor, e) {
+                  case 0:
+                    this.cursor = this.limit - n;
+                    break t;
+                  case 1:
+                    this.slice_del$esjava$0()
+                }
+              } while (!1);
+              this.I_p1 = this.current.length(), h = this.limit - this.cursor;
+              r: do {
+                if (!(this.I_p1 > 6) || (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(t.a_3)))) {
+                  this.cursor = this.limit - h;
+                  break
+                }
+                switch (this.bra = this.cursor, e) {
+                  case 0:
+                    this.cursor = this.limit - h;
+                    break r;
                   case 1:
                     this.slice_del$esjava$0()
                 }
               } while (!1);
               this.I_p1 = this.current.length(), o = this.limit - this.cursor;
-              d: do {
-                if (!(this.I_p1 > 6) || (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(n.a_2)))) {
+              a: do {
+                if (!(this.I_p1 > 5) || (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(t.a_4)))) {
                   this.cursor = this.limit - o;
                   break
                 }
                 switch (this.bra = this.cursor, e) {
                   case 0:
                     this.cursor = this.limit - o;
-                    break d;
+                    break a;
                   case 1:
                     this.slice_del$esjava$0()
                 }
               } while (!1);
-              this.I_p1 = this.current.length(), s = this.limit - this.cursor;
-              f: do {
-                if (!(this.I_p1 > 6) || (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(n.a_3)))) {
-                  this.cursor = this.limit - s;
-                  break
-                }
-                switch (this.bra = this.cursor, e) {
-                  case 0:
-                    this.cursor = this.limit - s;
-                    break f;
-                  case 1:
-                    this.slice_del$esjava$0()
-                }
-              } while (!1);
-              this.I_p1 = this.current.length(), l = this.limit - this.cursor;
-              _: do {
-                if (!(this.I_p1 > 5) || (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(n.a_4)))) {
-                  this.cursor = this.limit - l;
-                  break
-                }
-                switch (this.bra = this.cursor, e) {
-                  case 0:
-                    this.cursor = this.limit - l;
-                    break _;
-                  case 1:
-                    this.slice_del$esjava$0()
-                }
-              } while (!1);
-              this.I_p1 = this.current.length(), c = this.limit - this.cursor;
+              this.I_p1 = this.current.length(), u = this.limit - this.cursor;
               do {
-                if (!(this.I_p1 > 6) || (this.ket = this.cursor, !this.in_grouping_b$esjava$3(n.g_soglasniki, 98, 382)) || (this.bra = this.cursor, u = this.limit - this.cursor, !this.in_grouping_b$esjava$3(n.g_soglasniki, 98, 382))) {
-                  this.cursor = this.limit - c;
+                if (!(this.I_p1 > 6) || (this.ket = this.cursor, !this.in_grouping_b$esjava$3(t.g_soglasniki, 98, 382)) || (this.bra = this.cursor, c = this.limit - this.cursor, !this.in_grouping_b$esjava$3(t.g_soglasniki, 98, 382))) {
+                  this.cursor = this.limit - u;
                   break
                 }
-                this.cursor = this.limit - u, this.slice_del$esjava$0()
+                this.cursor = this.limit - c, this.slice_del$esjava$0()
               } while (!1);
-              this.I_p1 = this.current.length(), d = this.limit - this.cursor;
-              F: do {
-                if (!(this.I_p1 > 5) || (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(n.a_5)))) {
-                  this.cursor = this.limit - d;
+              this.I_p1 = this.current.length(), _ = this.limit - this.cursor;
+              A: do {
+                if (!(this.I_p1 > 5) || (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(t.a_5)))) {
+                  this.cursor = this.limit - _;
                   break
                 }
                 switch (this.bra = this.cursor, e) {
                   case 0:
-                    this.cursor = this.limit - d;
-                    break F;
+                    this.cursor = this.limit - _;
+                    break A;
                   case 1:
                     this.slice_del$esjava$0()
                 }
               } while (!1)
             }
           while (!1);
-          return this.cursor = this.limit - t, this.cursor = this.limit_backward, !0
+          return this.cursor = this.limit - i, this.cursor = this.limit_backward, !0
         }
       }, {
         key: "stem",
         value: function() {
-          for (var e, t = arguments.length, r = Array(t), i = 0; i < t; i++) r[i] = arguments[i];
-          return 0 === r.length ? this.stem$esjava$0.apply(this, r) : (e = o(Object.getPrototypeOf(n.prototype), "stem", this)).call.apply(e, [this].concat(r))
+          for (var e, i = arguments.length, s = Array(i), r = 0; r < i; r++) s[r] = arguments[r];
+          return 0 === s.length ? this.stem$esjava$0.apply(this, s) : (e = n(Object.getPrototypeOf(t.prototype), "stem", this)).call.apply(e, [this].concat(s))
         }
       }, {
         key: "I_p1",
@@ -8408,136 +8440,136 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
       }], [{
         key: "a_0",
         get: function() {
-          return delete n.a_0, n.a_0 = [new c("anski", -1, 1), new c("evski", -1, 1), new c("ovski", -1, 1)]
+          return delete t.a_0, t.a_0 = [new u("anski", -1, 1), new u("evski", -1, 1), new u("ovski", -1, 1)]
         }
       }, {
         key: "a_1",
         get: function() {
-          return delete n.a_1, n.a_1 = [new c("stvo", -1, 1), new c("štvo", -1, 1)]
+          return delete t.a_1, t.a_1 = [new u("stvo", -1, 1), new u("štvo", -1, 1)]
         }
       }, {
         key: "a_2",
         get: function() {
-          return delete n.a_2, n.a_2 = [new c("ega", -1, 1), new c("ija", -1, 1), new c("ila", -1, 1), new c("ema", -1, 1), new c("vna", -1, 1), new c("ite", -1, 1), new c("ste", -1, 1), new c("šče", -1, 1), new c("ski", -1, 1), new c("ški", -1, 1), new c("iti", -1, 1), new c("ovi", -1, 1), new c("ček", -1, 1), new c("ovm", -1, 1), new c("čan", -1, 1), new c("len", -1, 1), new c("ven", -1, 1), new c("šen", -1, 1), new c("ejo", -1, 1), new c("ijo", -1, 1), new c("ast", -1, 1), new c("ost", -1, 1)]
+          return delete t.a_2, t.a_2 = [new u("ega", -1, 1), new u("ija", -1, 1), new u("ila", -1, 1), new u("ema", -1, 1), new u("vna", -1, 1), new u("ite", -1, 1), new u("ste", -1, 1), new u("šče", -1, 1), new u("ski", -1, 1), new u("ški", -1, 1), new u("iti", -1, 1), new u("ovi", -1, 1), new u("ček", -1, 1), new u("ovm", -1, 1), new u("čan", -1, 1), new u("len", -1, 1), new u("ven", -1, 1), new u("šen", -1, 1), new u("ejo", -1, 1), new u("ijo", -1, 1), new u("ast", -1, 1), new u("ost", -1, 1)]
         }
       }, {
         key: "a_3",
         get: function() {
-          return delete n.a_3, n.a_3 = [new c("ja", -1, 1), new c("ka", -1, 1), new c("ma", -1, 1), new c("ec", -1, 1), new c("je", -1, 1), new c("eg", -1, 1), new c("eh", -1, 1), new c("ih", -1, 1), new c("mi", -1, 1), new c("ti", -1, 1), new c("ij", -1, 1), new c("al", -1, 1), new c("il", -1, 1), new c("em", -1, 1), new c("om", -1, 1), new c("an", -1, 1), new c("en", -1, 1), new c("in", -1, 1), new c("do", -1, 1), new c("jo", -1, 1), new c("ir", -1, 1), new c("at", -1, 1), new c("ev", -1, 1), new c("iv", -1, 1), new c("ov", -1, 1), new c("oč", -1, 1)]
+          return delete t.a_3, t.a_3 = [new u("ja", -1, 1), new u("ka", -1, 1), new u("ma", -1, 1), new u("ec", -1, 1), new u("je", -1, 1), new u("eg", -1, 1), new u("eh", -1, 1), new u("ih", -1, 1), new u("mi", -1, 1), new u("ti", -1, 1), new u("ij", -1, 1), new u("al", -1, 1), new u("il", -1, 1), new u("em", -1, 1), new u("om", -1, 1), new u("an", -1, 1), new u("en", -1, 1), new u("in", -1, 1), new u("do", -1, 1), new u("jo", -1, 1), new u("ir", -1, 1), new u("at", -1, 1), new u("ev", -1, 1), new u("iv", -1, 1), new u("ov", -1, 1), new u("oč", -1, 1)]
         }
       }, {
         key: "a_4",
         get: function() {
-          return delete n.a_4, n.a_4 = [new c("a", -1, 1), new c("c", -1, 1), new c("e", -1, 1), new c("i", -1, 1), new c("m", -1, 1), new c("o", -1, 1), new c("u", -1, 1), new c("š", -1, 1)]
+          return delete t.a_4, t.a_4 = [new u("a", -1, 1), new u("c", -1, 1), new u("e", -1, 1), new u("i", -1, 1), new u("m", -1, 1), new u("o", -1, 1), new u("u", -1, 1), new u("š", -1, 1)]
         }
       }, {
         key: "a_5",
         get: function() {
-          return delete n.a_5, n.a_5 = [new c("a", -1, 1), new c("e", -1, 1), new c("i", -1, 1), new c("o", -1, 1), new c("u", -1, 1)]
+          return delete t.a_5, t.a_5 = [new u("a", -1, 1), new u("e", -1, 1), new u("i", -1, 1), new u("o", -1, 1), new u("u", -1, 1)]
         }
       }, {
         key: "g_soglasniki",
         get: function() {
-          return delete n.g_soglasniki, n.g_soglasniki = [119, 95, 23, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 128, 0, 0, 0, 16]
+          return delete t.g_soglasniki, t.g_soglasniki = [119, 95, 23, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 128, 0, 0, 0, 16]
         }
-      }]), n
-    }(u),
+      }]), t
+    }(c),
     P = function(e) {
-      function n() {
-        return i(this, n), t(this, Object.getPrototypeOf(n).apply(this, arguments))
+      function t() {
+        return r(this, t), i(this, Object.getPrototypeOf(t).apply(this, arguments))
       }
-      return r(n, e), a(n, [{
+      return s(t, e), a(t, [{
         key: "r_mark_regions$esjava$0",
         value: function() {
           var e = void 0,
-            t = void 0,
-            r = void 0,
             i = void 0,
+            s = void 0,
+            r = void 0,
             a = void 0;
           this.I_pV = this.limit, this.I_p1 = this.limit, this.I_p2 = this.limit, e = this.cursor;
-          l: do {
-            c: do {
-              t = this.cursor;
-              u: do {
-                if (!this.in_grouping$esjava$3(n.g_v, 97, 252)) break;
-                d: do {
-                  r = this.cursor;
-                  f: do {
-                    if (!this.out_grouping$esjava$3(n.g_v, 97, 252)) break;
-                    C: for (;;) {
+          e: do {
+            i: do {
+              i = this.cursor;
+              s: do {
+                if (!this.in_grouping$esjava$3(t.g_v, 97, 252)) break;
+                t: do {
+                  s = this.cursor;
+                  r: do {
+                    if (!this.out_grouping$esjava$3(t.g_v, 97, 252)) break;
+                    m: for (;;) {
                       do {
-                        if (!this.in_grouping$esjava$3(n.g_v, 97, 252)) break;
-                        break C
+                        if (!this.in_grouping$esjava$3(t.g_v, 97, 252)) break;
+                        break m
                       } while (!1);
-                      if (this.cursor >= this.limit) break f;
+                      if (this.cursor >= this.limit) break r;
                       this.cursor++
                     }
-                    break d
+                    break t
                   } while (!1);
-                  if (this.cursor = r, !this.in_grouping$esjava$3(n.g_v, 97, 252)) break u;
-                  w: for (;;) {
+                  if (this.cursor = s, !this.in_grouping$esjava$3(t.g_v, 97, 252)) break s;
+                  j: for (;;) {
                     do {
-                      if (!this.out_grouping$esjava$3(n.g_v, 97, 252)) break;
-                      break w
+                      if (!this.out_grouping$esjava$3(t.g_v, 97, 252)) break;
+                      break j
                     } while (!1);
-                    if (this.cursor >= this.limit) break u;
+                    if (this.cursor >= this.limit) break s;
                     this.cursor++
                   }
                 } while (!1);
-                break c
+                break i
               } while (!1);
-              if (this.cursor = t, !this.out_grouping$esjava$3(n.g_v, 97, 252)) break l;
-              m: do {
-                i = this.cursor;
-                R: do {
-                  if (!this.out_grouping$esjava$3(n.g_v, 97, 252)) break;
-                  P: for (;;) {
+              if (this.cursor = i, !this.out_grouping$esjava$3(t.g_v, 97, 252)) break e;
+              o: do {
+                r = this.cursor;
+                g: do {
+                  if (!this.out_grouping$esjava$3(t.g_v, 97, 252)) break;
+                  p: for (;;) {
                     do {
-                      if (!this.in_grouping$esjava$3(n.g_v, 97, 252)) break;
-                      break P
+                      if (!this.in_grouping$esjava$3(t.g_v, 97, 252)) break;
+                      break p
                     } while (!1);
-                    if (this.cursor >= this.limit) break R;
+                    if (this.cursor >= this.limit) break g;
                     this.cursor++
                   }
-                  break m
+                  break o
                 } while (!1);
-                if (this.cursor = i, !this.in_grouping$esjava$3(n.g_v, 97, 252) || this.cursor >= this.limit) break l;
+                if (this.cursor = r, !this.in_grouping$esjava$3(t.g_v, 97, 252) || this.cursor >= this.limit) break e;
                 this.cursor++
               } while (!1)
             } while (!1);this.I_pV = this.cursor
           } while (!1);
           this.cursor = e, a = this.cursor;
-          D: do {
-            L: for (;;) {
+          y: do {
+            I: for (;;) {
               do {
-                if (!this.in_grouping$esjava$3(n.g_v, 97, 252)) break;
-                break L
+                if (!this.in_grouping$esjava$3(t.g_v, 97, 252)) break;
+                break I
               } while (!1);
-              if (this.cursor >= this.limit) break D;
+              if (this.cursor >= this.limit) break y;
+              this.cursor++
+            }
+            q: for (;;) {
+              do {
+                if (!this.out_grouping$esjava$3(t.g_v, 97, 252)) break;
+                break q
+              } while (!1);
+              if (this.cursor >= this.limit) break y;
+              this.cursor++
+            }
+            this.I_p1 = this.cursor;O: for (;;) {
+              do {
+                if (!this.in_grouping$esjava$3(t.g_v, 97, 252)) break;
+                break O
+              } while (!1);
+              if (this.cursor >= this.limit) break y;
               this.cursor++
             }
             x: for (;;) {
               do {
-                if (!this.out_grouping$esjava$3(n.g_v, 97, 252)) break;
+                if (!this.out_grouping$esjava$3(t.g_v, 97, 252)) break;
                 break x
               } while (!1);
-              if (this.cursor >= this.limit) break D;
-              this.cursor++
-            }
-            this.I_p1 = this.cursor;k: for (;;) {
-              do {
-                if (!this.in_grouping$esjava$3(n.g_v, 97, 252)) break;
-                break k
-              } while (!1);
-              if (this.cursor >= this.limit) break D;
-              this.cursor++
-            }
-            j: for (;;) {
-              do {
-                if (!this.out_grouping$esjava$3(n.g_v, 97, 252)) break;
-                break j
-              } while (!1);
-              if (this.cursor >= this.limit) break D;
+              if (this.cursor >= this.limit) break y;
               this.cursor++
             }
             this.I_p2 = this.cursor
@@ -8548,14 +8580,14 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "r_postlude$esjava$0",
         value: function() {
           var e = void 0,
-            t = void 0;
-          G: for (;;) {
-            t = this.cursor;
-            c: do {
-              if (this.bra = this.cursor, 0 === (e = this.find_among$esjava$1(n.a_0))) break;
+            i = void 0;
+          P: for (;;) {
+            i = this.cursor;
+            i: do {
+              if (this.bra = this.cursor, 0 === (e = this.find_among$esjava$1(t.a_0))) break;
               switch (this.ket = this.cursor, e) {
                 case 0:
-                  break c;
+                  break i;
                 case 1:
                   this.slice_from$esjava$1("a");
                   break;
@@ -8572,12 +8604,12 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
                   this.slice_from$esjava$1("u");
                   break;
                 case 6:
-                  if (this.cursor >= this.limit) break c;
+                  if (this.cursor >= this.limit) break i;
                   this.cursor++
               }
-              continue G
+              continue P
             } while (!1);
-            this.cursor = t;
+            this.cursor = i;
             break
           }
           return !0
@@ -8601,7 +8633,7 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "r_attached_pronoun$esjava$0",
         value: function() {
           var e = void 0;
-          if (this.ket = this.cursor, 0 === this.find_among_b$esjava$1(n.a_1) || (this.bra = this.cursor, 0 === (e = this.find_among_b$esjava$1(n.a_2)) || !this.r_RV$esjava$0())) return !1;
+          if (this.ket = this.cursor, 0 === this.find_among_b$esjava$1(t.a_1) || (this.bra = this.cursor, 0 === (e = this.find_among_b$esjava$1(t.a_2)) || !this.r_RV$esjava$0())) return !1;
           switch (e) {
             case 0:
               return !1;
@@ -8633,12 +8665,12 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "r_standard_suffix$esjava$0",
         value: function() {
           var e = void 0,
-            t = void 0,
-            r = void 0,
             i = void 0,
+            s = void 0,
+            r = void 0,
             a = void 0,
-            o = void 0;
-          if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(n.a_6))) return !1;
+            n = void 0;
+          if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(t.a_6))) return !1;
           switch (this.bra = this.cursor, e) {
             case 0:
               return !1;
@@ -8648,10 +8680,10 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
               break;
             case 2:
               if (!this.r_R2$esjava$0()) return !1;
-              this.slice_del$esjava$0(), t = this.limit - this.cursor;
+              this.slice_del$esjava$0(), i = this.limit - this.cursor;
               do {
                 if (this.ket = this.cursor, !this.eq_s_b$esjava$1("ic") || (this.bra = this.cursor, !this.r_R2$esjava$0())) {
-                  this.cursor = this.limit - t;
+                  this.cursor = this.limit - i;
                   break
                 }
                 this.slice_del$esjava$0()
@@ -8671,20 +8703,20 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
               break;
             case 6:
               if (!this.r_R1$esjava$0()) return !1;
-              this.slice_del$esjava$0(), r = this.limit - this.cursor;
-              c: do {
-                if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(n.a_3)) || (this.bra = this.cursor, !this.r_R2$esjava$0())) {
-                  this.cursor = this.limit - r;
+              this.slice_del$esjava$0(), s = this.limit - this.cursor;
+              i: do {
+                if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(t.a_3)) || (this.bra = this.cursor, !this.r_R2$esjava$0())) {
+                  this.cursor = this.limit - s;
                   break
                 }
                 switch (this.slice_del$esjava$0(), e) {
                   case 0:
-                    this.cursor = this.limit - r;
-                    break c;
+                    this.cursor = this.limit - s;
+                    break i;
                   case 1:
                     if (this.ket = this.cursor, !this.eq_s_b$esjava$1("at") || (this.bra = this.cursor, !this.r_R2$esjava$0())) {
-                      this.cursor = this.limit - r;
-                      break c
+                      this.cursor = this.limit - s;
+                      break i
                     }
                     this.slice_del$esjava$0()
                 }
@@ -8692,20 +8724,20 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
               break;
             case 7:
               if (!this.r_R2$esjava$0()) return !1;
-              this.slice_del$esjava$0(), i = this.limit - this.cursor;
-              u: do {
-                if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(n.a_4))) {
-                  this.cursor = this.limit - i;
+              this.slice_del$esjava$0(), r = this.limit - this.cursor;
+              s: do {
+                if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(t.a_4))) {
+                  this.cursor = this.limit - r;
                   break
                 }
                 switch (this.bra = this.cursor, e) {
                   case 0:
-                    this.cursor = this.limit - i;
-                    break u;
+                    this.cursor = this.limit - r;
+                    break s;
                   case 1:
                     if (!this.r_R2$esjava$0()) {
-                      this.cursor = this.limit - i;
-                      break u
+                      this.cursor = this.limit - r;
+                      break s
                     }
                     this.slice_del$esjava$0()
                 }
@@ -8714,19 +8746,19 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
             case 8:
               if (!this.r_R2$esjava$0()) return !1;
               this.slice_del$esjava$0(), a = this.limit - this.cursor;
-              d: do {
-                if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(n.a_5))) {
+              t: do {
+                if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(t.a_5))) {
                   this.cursor = this.limit - a;
                   break
                 }
                 switch (this.bra = this.cursor, e) {
                   case 0:
                     this.cursor = this.limit - a;
-                    break d;
+                    break t;
                   case 1:
                     if (!this.r_R2$esjava$0()) {
                       this.cursor = this.limit - a;
-                      break d
+                      break t
                     }
                     this.slice_del$esjava$0()
                 }
@@ -8734,10 +8766,10 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
               break;
             case 9:
               if (!this.r_R2$esjava$0()) return !1;
-              this.slice_del$esjava$0(), o = this.limit - this.cursor;
+              this.slice_del$esjava$0(), n = this.limit - this.cursor;
               do {
                 if (this.ket = this.cursor, !this.eq_s_b$esjava$1("at") || (this.bra = this.cursor, !this.r_R2$esjava$0())) {
-                  this.cursor = this.limit - o;
+                  this.cursor = this.limit - n;
                   break
                 }
                 this.slice_del$esjava$0()
@@ -8749,11 +8781,11 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "r_y_verb_suffix$esjava$0",
         value: function() {
           var e = void 0,
-            t = void 0,
-            r = void 0;
-          if (t = this.limit - this.cursor, this.cursor < this.I_pV) return !1;
-          if (this.cursor = this.I_pV, r = this.limit_backward, this.limit_backward = this.cursor, this.cursor = this.limit - t, this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(n.a_7))) return this.limit_backward = r, !1;
-          switch (this.bra = this.cursor, this.limit_backward = r, e) {
+            i = void 0,
+            s = void 0;
+          if (i = this.limit - this.cursor, this.cursor < this.I_pV) return !1;
+          if (this.cursor = this.I_pV, s = this.limit_backward, this.limit_backward = this.cursor, this.cursor = this.limit - i, this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(t.a_7))) return this.limit_backward = s, !1;
+          switch (this.bra = this.cursor, this.limit_backward = s, e) {
             case 0:
               return !1;
             case 1:
@@ -8766,20 +8798,20 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "r_verb_suffix$esjava$0",
         value: function() {
           var e = void 0,
-            t = void 0,
-            r = void 0,
             i = void 0,
+            s = void 0,
+            r = void 0,
             a = void 0;
-          if (t = this.limit - this.cursor, this.cursor < this.I_pV) return !1;
-          if (this.cursor = this.I_pV, r = this.limit_backward, this.limit_backward = this.cursor, this.cursor = this.limit - t, this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(n.a_8))) return this.limit_backward = r, !1;
-          switch (this.bra = this.cursor, this.limit_backward = r, e) {
+          if (i = this.limit - this.cursor, this.cursor < this.I_pV) return !1;
+          if (this.cursor = this.I_pV, s = this.limit_backward, this.limit_backward = this.cursor, this.cursor = this.limit - i, this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(t.a_8))) return this.limit_backward = s, !1;
+          switch (this.bra = this.cursor, this.limit_backward = s, e) {
             case 0:
               return !1;
             case 1:
-              i = this.limit - this.cursor;
+              r = this.limit - this.cursor;
               do {
                 if (!this.eq_s_b$esjava$1("u") || (a = this.limit - this.cursor, !this.eq_s_b$esjava$1("g"))) {
-                  this.cursor = this.limit - i;
+                  this.cursor = this.limit - r;
                   break
                 }
                 this.cursor = this.limit - a
@@ -8795,9 +8827,9 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "r_residual_suffix$esjava$0",
         value: function() {
           var e = void 0,
-            t = void 0,
-            r = void 0;
-          if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(n.a_9))) return !1;
+            i = void 0,
+            s = void 0;
+          if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(t.a_9))) return !1;
           switch (this.bra = this.cursor, e) {
             case 0:
               return !1;
@@ -8807,10 +8839,10 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
               break;
             case 2:
               if (!this.r_RV$esjava$0()) return !1;
-              this.slice_del$esjava$0(), t = this.limit - this.cursor;
+              this.slice_del$esjava$0(), i = this.limit - this.cursor;
               do {
-                if (this.ket = this.cursor, !this.eq_s_b$esjava$1("u") || (this.bra = this.cursor, r = this.limit - this.cursor, !this.eq_s_b$esjava$1("g")) || (this.cursor = this.limit - r, !this.r_RV$esjava$0())) {
-                  this.cursor = this.limit - t;
+                if (this.ket = this.cursor, !this.eq_s_b$esjava$1("u") || (this.bra = this.cursor, s = this.limit - this.cursor, !this.eq_s_b$esjava$1("g")) || (this.cursor = this.limit - s, !this.r_RV$esjava$0())) {
+                  this.cursor = this.limit - i;
                   break
                 }
                 this.slice_del$esjava$0()
@@ -8822,35 +8854,35 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "stem$esjava$0",
         value: function() {
           var e = void 0,
-            t = void 0,
-            n = void 0,
-            r = void 0,
             i = void 0,
+            s = void 0,
+            t = void 0,
+            r = void 0,
             a = void 0;
           e = this.cursor;
           do
             if (!this.r_mark_regions$esjava$0()) break; while (!1);
-          this.cursor = e, this.limit_backward = this.cursor, this.cursor = this.limit, t = this.limit - this.cursor;
+          this.cursor = e, this.limit_backward = this.cursor, this.cursor = this.limit, i = this.limit - this.cursor;
           do
             if (!this.r_attached_pronoun$esjava$0()) break; while (!1);
-          this.cursor = this.limit - t, n = this.limit - this.cursor;
-          u: do d: do {
-            r = this.limit - this.cursor;
+          this.cursor = this.limit - i, s = this.limit - this.cursor;
+          s: do t: do {
+            t = this.limit - this.cursor;
             do {
               if (!this.r_standard_suffix$esjava$0()) break;
-              break d
+              break t
             } while (!1);
-            this.cursor = this.limit - r;
+            this.cursor = this.limit - t;
             do {
               if (!this.r_y_verb_suffix$esjava$0()) break;
-              break d
+              break t
             } while (!1);
-            if (this.cursor = this.limit - r, !this.r_verb_suffix$esjava$0()) break u
+            if (this.cursor = this.limit - t, !this.r_verb_suffix$esjava$0()) break s
           } while (!1); while (!1);
-          this.cursor = this.limit - n, i = this.limit - this.cursor;
+          this.cursor = this.limit - s, r = this.limit - this.cursor;
           do
             if (!this.r_residual_suffix$esjava$0()) break; while (!1);
-          this.cursor = this.limit - i, this.cursor = this.limit_backward, a = this.cursor;
+          this.cursor = this.limit - r, this.cursor = this.limit_backward, a = this.cursor;
           do
             if (!this.r_postlude$esjava$0()) break; while (!1);
           return this.cursor = a, !0
@@ -8858,8 +8890,8 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
       }, {
         key: "stem",
         value: function() {
-          for (var e, t = arguments.length, r = Array(t), i = 0; i < t; i++) r[i] = arguments[i];
-          return 0 === r.length ? this.stem$esjava$0.apply(this, r) : (e = o(Object.getPrototypeOf(n.prototype), "stem", this)).call.apply(e, [this].concat(r))
+          for (var e, i = arguments.length, s = Array(i), r = 0; r < i; r++) s[r] = arguments[r];
+          return 0 === s.length ? this.stem$esjava$0.apply(this, s) : (e = n(Object.getPrototypeOf(t.prototype), "stem", this)).call.apply(e, [this].concat(s))
         }
       }, {
         key: "I_p2",
@@ -8888,87 +8920,87 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
       }], [{
         key: "a_0",
         get: function() {
-          return delete n.a_0, n.a_0 = [new c("", -1, 6), new c("\xe1", 0, 1), new c("\xe9", 0, 2), new c("\xed", 0, 3), new c("\xf3", 0, 4), new c("\xfa", 0, 5)]
+          return delete t.a_0, t.a_0 = [new u("", -1, 6), new u("\xe1", 0, 1), new u("\xe9", 0, 2), new u("\xed", 0, 3), new u("\xf3", 0, 4), new u("\xfa", 0, 5)]
         }
       }, {
         key: "a_1",
         get: function() {
-          return delete n.a_1, n.a_1 = [new c("la", -1, -1), new c("sela", 0, -1), new c("le", -1, -1), new c("me", -1, -1), new c("se", -1, -1), new c("lo", -1, -1), new c("selo", 5, -1), new c("las", -1, -1), new c("selas", 7, -1), new c("les", -1, -1), new c("los", -1, -1), new c("selos", 10, -1), new c("nos", -1, -1)]
+          return delete t.a_1, t.a_1 = [new u("la", -1, -1), new u("sela", 0, -1), new u("le", -1, -1), new u("me", -1, -1), new u("se", -1, -1), new u("lo", -1, -1), new u("selo", 5, -1), new u("las", -1, -1), new u("selas", 7, -1), new u("les", -1, -1), new u("los", -1, -1), new u("selos", 10, -1), new u("nos", -1, -1)]
         }
       }, {
         key: "a_2",
         get: function() {
-          return delete n.a_2, n.a_2 = [new c("ando", -1, 6), new c("iendo", -1, 6), new c("yendo", -1, 7), new c("\xe1ndo", -1, 2), new c("i\xe9ndo", -1, 1), new c("ar", -1, 6), new c("er", -1, 6), new c("ir", -1, 6), new c("\xe1r", -1, 3), new c("\xe9r", -1, 4), new c("\xedr", -1, 5)]
+          return delete t.a_2, t.a_2 = [new u("ando", -1, 6), new u("iendo", -1, 6), new u("yendo", -1, 7), new u("\xe1ndo", -1, 2), new u("i\xe9ndo", -1, 1), new u("ar", -1, 6), new u("er", -1, 6), new u("ir", -1, 6), new u("\xe1r", -1, 3), new u("\xe9r", -1, 4), new u("\xedr", -1, 5)]
         }
       }, {
         key: "a_3",
         get: function() {
-          return delete n.a_3, n.a_3 = [new c("ic", -1, -1), new c("ad", -1, -1), new c("os", -1, -1), new c("iv", -1, 1)]
+          return delete t.a_3, t.a_3 = [new u("ic", -1, -1), new u("ad", -1, -1), new u("os", -1, -1), new u("iv", -1, 1)]
         }
       }, {
         key: "a_4",
         get: function() {
-          return delete n.a_4, n.a_4 = [new c("able", -1, 1), new c("ible", -1, 1), new c("ante", -1, 1)]
+          return delete t.a_4, t.a_4 = [new u("able", -1, 1), new u("ible", -1, 1), new u("ante", -1, 1)]
         }
       }, {
         key: "a_5",
         get: function() {
-          return delete n.a_5, n.a_5 = [new c("ic", -1, 1), new c("abil", -1, 1), new c("iv", -1, 1)]
+          return delete t.a_5, t.a_5 = [new u("ic", -1, 1), new u("abil", -1, 1), new u("iv", -1, 1)]
         }
       }, {
         key: "a_6",
         get: function() {
-          return delete n.a_6, n.a_6 = [new c("ica", -1, 1), new c("ancia", -1, 2), new c("encia", -1, 5), new c("adora", -1, 2), new c("osa", -1, 1), new c("ista", -1, 1), new c("iva", -1, 9), new c("anza", -1, 1), new c("log\xeda", -1, 3), new c("idad", -1, 8), new c("able", -1, 1), new c("ible", -1, 1), new c("ante", -1, 2), new c("mente", -1, 7), new c("amente", 13, 6), new c("aci\xf3n", -1, 2), new c("uci\xf3n", -1, 4), new c("ico", -1, 1), new c("ismo", -1, 1), new c("oso", -1, 1), new c("amiento", -1, 1), new c("imiento", -1, 1), new c("ivo", -1, 9), new c("ador", -1, 2), new c("icas", -1, 1), new c("ancias", -1, 2), new c("encias", -1, 5), new c("adoras", -1, 2), new c("osas", -1, 1), new c("istas", -1, 1), new c("ivas", -1, 9), new c("anzas", -1, 1), new c("log\xedas", -1, 3), new c("idades", -1, 8), new c("ables", -1, 1), new c("ibles", -1, 1), new c("aciones", -1, 2), new c("uciones", -1, 4), new c("adores", -1, 2), new c("antes", -1, 2), new c("icos", -1, 1), new c("ismos", -1, 1), new c("osos", -1, 1), new c("amientos", -1, 1), new c("imientos", -1, 1), new c("ivos", -1, 9)]
+          return delete t.a_6, t.a_6 = [new u("ica", -1, 1), new u("ancia", -1, 2), new u("encia", -1, 5), new u("adora", -1, 2), new u("osa", -1, 1), new u("ista", -1, 1), new u("iva", -1, 9), new u("anza", -1, 1), new u("log\xeda", -1, 3), new u("idad", -1, 8), new u("able", -1, 1), new u("ible", -1, 1), new u("ante", -1, 2), new u("mente", -1, 7), new u("amente", 13, 6), new u("aci\xf3n", -1, 2), new u("uci\xf3n", -1, 4), new u("ico", -1, 1), new u("ismo", -1, 1), new u("oso", -1, 1), new u("amiento", -1, 1), new u("imiento", -1, 1), new u("ivo", -1, 9), new u("ador", -1, 2), new u("icas", -1, 1), new u("ancias", -1, 2), new u("encias", -1, 5), new u("adoras", -1, 2), new u("osas", -1, 1), new u("istas", -1, 1), new u("ivas", -1, 9), new u("anzas", -1, 1), new u("log\xedas", -1, 3), new u("idades", -1, 8), new u("ables", -1, 1), new u("ibles", -1, 1), new u("aciones", -1, 2), new u("uciones", -1, 4), new u("adores", -1, 2), new u("antes", -1, 2), new u("icos", -1, 1), new u("ismos", -1, 1), new u("osos", -1, 1), new u("amientos", -1, 1), new u("imientos", -1, 1), new u("ivos", -1, 9)]
         }
       }, {
         key: "a_7",
         get: function() {
-          return delete n.a_7, n.a_7 = [new c("ya", -1, 1), new c("ye", -1, 1), new c("yan", -1, 1), new c("yen", -1, 1), new c("yeron", -1, 1), new c("yendo", -1, 1), new c("yo", -1, 1), new c("yas", -1, 1), new c("yes", -1, 1), new c("yais", -1, 1), new c("yamos", -1, 1), new c("y\xf3", -1, 1)]
+          return delete t.a_7, t.a_7 = [new u("ya", -1, 1), new u("ye", -1, 1), new u("yan", -1, 1), new u("yen", -1, 1), new u("yeron", -1, 1), new u("yendo", -1, 1), new u("yo", -1, 1), new u("yas", -1, 1), new u("yes", -1, 1), new u("yais", -1, 1), new u("yamos", -1, 1), new u("y\xf3", -1, 1)]
         }
       }, {
         key: "a_8",
         get: function() {
-          return delete n.a_8, n.a_8 = [new c("aba", -1, 2), new c("ada", -1, 2), new c("ida", -1, 2), new c("ara", -1, 2), new c("iera", -1, 2), new c("\xeda", -1, 2), new c("ar\xeda", 5, 2), new c("er\xeda", 5, 2), new c("ir\xeda", 5, 2), new c("ad", -1, 2), new c("ed", -1, 2), new c("id", -1, 2), new c("ase", -1, 2), new c("iese", -1, 2), new c("aste", -1, 2), new c("iste", -1, 2), new c("an", -1, 2), new c("aban", 16, 2), new c("aran", 16, 2), new c("ieran", 16, 2), new c("\xedan", 16, 2), new c("ar\xedan", 20, 2), new c("er\xedan", 20, 2), new c("ir\xedan", 20, 2), new c("en", -1, 1), new c("asen", 24, 2), new c("iesen", 24, 2), new c("aron", -1, 2), new c("ieron", -1, 2), new c("ar\xe1n", -1, 2), new c("er\xe1n", -1, 2), new c("ir\xe1n", -1, 2), new c("ado", -1, 2), new c("ido", -1, 2), new c("ando", -1, 2), new c("iendo", -1, 2), new c("ar", -1, 2), new c("er", -1, 2), new c("ir", -1, 2), new c("as", -1, 2), new c("abas", 39, 2), new c("adas", 39, 2), new c("idas", 39, 2), new c("aras", 39, 2), new c("ieras", 39, 2), new c("\xedas", 39, 2), new c("ar\xedas", 45, 2), new c("er\xedas", 45, 2), new c("ir\xedas", 45, 2), new c("es", -1, 1), new c("ases", 49, 2), new c("ieses", 49, 2), new c("abais", -1, 2), new c("arais", -1, 2), new c("ierais", -1, 2), new c("\xedais", -1, 2), new c("ar\xedais", 55, 2), new c("er\xedais", 55, 2), new c("ir\xedais", 55, 2), new c("aseis", -1, 2), new c("ieseis", -1, 2), new c("asteis", -1, 2), new c("isteis", -1, 2), new c("\xe1is", -1, 2), new c("\xe9is", -1, 1), new c("ar\xe9is", 64, 2), new c("er\xe9is", 64, 2), new c("ir\xe9is", 64, 2), new c("ados", -1, 2), new c("idos", -1, 2), new c("amos", -1, 2), new c("\xe1bamos", 70, 2), new c("\xe1ramos", 70, 2), new c("i\xe9ramos", 70, 2), new c("\xedamos", 70, 2), new c("ar\xedamos", 74, 2), new c("er\xedamos", 74, 2), new c("ir\xedamos", 74, 2), new c("emos", -1, 1), new c("aremos", 78, 2), new c("eremos", 78, 2), new c("iremos", 78, 2), new c("\xe1semos", 78, 2), new c("i\xe9semos", 78, 2), new c("imos", -1, 2), new c("ar\xe1s", -1, 2), new c("er\xe1s", -1, 2), new c("ir\xe1s", -1, 2), new c("\xeds", -1, 2), new c("ar\xe1", -1, 2), new c("er\xe1", -1, 2), new c("ir\xe1", -1, 2), new c("ar\xe9", -1, 2), new c("er\xe9", -1, 2), new c("ir\xe9", -1, 2), new c("i\xf3", -1, 2)]
+          return delete t.a_8, t.a_8 = [new u("aba", -1, 2), new u("ada", -1, 2), new u("ida", -1, 2), new u("ara", -1, 2), new u("iera", -1, 2), new u("\xeda", -1, 2), new u("ar\xeda", 5, 2), new u("er\xeda", 5, 2), new u("ir\xeda", 5, 2), new u("ad", -1, 2), new u("ed", -1, 2), new u("id", -1, 2), new u("ase", -1, 2), new u("iese", -1, 2), new u("aste", -1, 2), new u("iste", -1, 2), new u("an", -1, 2), new u("aban", 16, 2), new u("aran", 16, 2), new u("ieran", 16, 2), new u("\xedan", 16, 2), new u("ar\xedan", 20, 2), new u("er\xedan", 20, 2), new u("ir\xedan", 20, 2), new u("en", -1, 1), new u("asen", 24, 2), new u("iesen", 24, 2), new u("aron", -1, 2), new u("ieron", -1, 2), new u("ar\xe1n", -1, 2), new u("er\xe1n", -1, 2), new u("ir\xe1n", -1, 2), new u("ado", -1, 2), new u("ido", -1, 2), new u("ando", -1, 2), new u("iendo", -1, 2), new u("ar", -1, 2), new u("er", -1, 2), new u("ir", -1, 2), new u("as", -1, 2), new u("abas", 39, 2), new u("adas", 39, 2), new u("idas", 39, 2), new u("aras", 39, 2), new u("ieras", 39, 2), new u("\xedas", 39, 2), new u("ar\xedas", 45, 2), new u("er\xedas", 45, 2), new u("ir\xedas", 45, 2), new u("es", -1, 1), new u("ases", 49, 2), new u("ieses", 49, 2), new u("abais", -1, 2), new u("arais", -1, 2), new u("ierais", -1, 2), new u("\xedais", -1, 2), new u("ar\xedais", 55, 2), new u("er\xedais", 55, 2), new u("ir\xedais", 55, 2), new u("aseis", -1, 2), new u("ieseis", -1, 2), new u("asteis", -1, 2), new u("isteis", -1, 2), new u("\xe1is", -1, 2), new u("\xe9is", -1, 1), new u("ar\xe9is", 64, 2), new u("er\xe9is", 64, 2), new u("ir\xe9is", 64, 2), new u("ados", -1, 2), new u("idos", -1, 2), new u("amos", -1, 2), new u("\xe1bamos", 70, 2), new u("\xe1ramos", 70, 2), new u("i\xe9ramos", 70, 2), new u("\xedamos", 70, 2), new u("ar\xedamos", 74, 2), new u("er\xedamos", 74, 2), new u("ir\xedamos", 74, 2), new u("emos", -1, 1), new u("aremos", 78, 2), new u("eremos", 78, 2), new u("iremos", 78, 2), new u("\xe1semos", 78, 2), new u("i\xe9semos", 78, 2), new u("imos", -1, 2), new u("ar\xe1s", -1, 2), new u("er\xe1s", -1, 2), new u("ir\xe1s", -1, 2), new u("\xeds", -1, 2), new u("ar\xe1", -1, 2), new u("er\xe1", -1, 2), new u("ir\xe1", -1, 2), new u("ar\xe9", -1, 2), new u("er\xe9", -1, 2), new u("ir\xe9", -1, 2), new u("i\xf3", -1, 2)]
         }
       }, {
         key: "a_9",
         get: function() {
-          return delete n.a_9, n.a_9 = [new c("a", -1, 1), new c("e", -1, 2), new c("o", -1, 1), new c("os", -1, 1), new c("\xe1", -1, 1), new c("\xe9", -1, 2), new c("\xed", -1, 1), new c("\xf3", -1, 1)]
+          return delete t.a_9, t.a_9 = [new u("a", -1, 1), new u("e", -1, 2), new u("o", -1, 1), new u("os", -1, 1), new u("\xe1", -1, 1), new u("\xe9", -1, 2), new u("\xed", -1, 1), new u("\xf3", -1, 1)]
         }
       }, {
         key: "g_v",
         get: function() {
-          return delete n.g_v, n.g_v = [17, 65, 16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 17, 4, 10]
+          return delete t.g_v, t.g_v = [17, 65, 16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 17, 4, 10]
         }
-      }]), n
-    }(u),
-    D = function(e) {
-      function n() {
-        return i(this, n), t(this, Object.getPrototypeOf(n).apply(this, arguments))
+      }]), t
+    }(c),
+    V = function(e) {
+      function t() {
+        return r(this, t), i(this, Object.getPrototypeOf(t).apply(this, arguments))
       }
-      return r(n, e), a(n, [{
+      return s(t, e), a(t, [{
         key: "r_mark_regions$esjava$0",
         value: function() {
           var e = void 0,
-            t = void 0;
+            i = void 0;
           this.I_p1 = this.limit, e = this.cursor;
-          var r = this.cursor + 3;
-          if (0 > r || r > this.limit) return !1;
-          this.cursor = r, this.I_x = this.cursor, this.cursor = e;
-          B: for (;;) {
-            t = this.cursor;
+          var s = this.cursor + 3;
+          if (0 > s || s > this.limit) return !1;
+          this.cursor = s, this.I_x = this.cursor, this.cursor = e;
+          V: for (;;) {
+            i = this.cursor;
             do {
-              if (!this.in_grouping$esjava$3(n.g_v, 97, 246)) break;
-              this.cursor = t;
-              break B
+              if (!this.in_grouping$esjava$3(t.g_v, 97, 246)) break;
+              this.cursor = i;
+              break V
             } while (!1);
-            if (this.cursor = t, this.cursor >= this.limit) return !1;
+            if (this.cursor = i, this.cursor >= this.limit) return !1;
             this.cursor++
           }
-          Z: for (;;) {
+          S: for (;;) {
             do {
-              if (!this.out_grouping$esjava$3(n.g_v, 97, 246)) break;
-              break Z
+              if (!this.out_grouping$esjava$3(t.g_v, 97, 246)) break;
+              break S
             } while (!1);
             if (this.cursor >= this.limit) return !1;
             this.cursor++
@@ -8984,18 +9016,18 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "r_main_suffix$esjava$0",
         value: function() {
           var e = void 0,
-            t = void 0,
-            r = void 0;
-          if (t = this.limit - this.cursor, this.cursor < this.I_p1) return !1;
-          if (this.cursor = this.I_p1, r = this.limit_backward, this.limit_backward = this.cursor, this.cursor = this.limit - t, this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(n.a_0))) return this.limit_backward = r, !1;
-          switch (this.bra = this.cursor, this.limit_backward = r, e) {
+            i = void 0,
+            s = void 0;
+          if (i = this.limit - this.cursor, this.cursor < this.I_p1) return !1;
+          if (this.cursor = this.I_p1, s = this.limit_backward, this.limit_backward = this.cursor, this.cursor = this.limit - i, this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(t.a_0))) return this.limit_backward = s, !1;
+          switch (this.bra = this.cursor, this.limit_backward = s, e) {
             case 0:
               return !1;
             case 1:
               this.slice_del$esjava$0();
               break;
             case 2:
-              if (!this.in_grouping_b$esjava$3(n.g_s_ending, 98, 121)) return !1;
+              if (!this.in_grouping_b$esjava$3(t.g_s_ending, 98, 121)) return !1;
               this.slice_del$esjava$0()
           }
           return !0
@@ -9004,21 +9036,21 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "r_consonant_pair$esjava$0",
         value: function() {
           var e = void 0,
-            t = void 0,
-            r = void 0;
-          return e = this.limit - this.cursor, !(this.cursor < this.I_p1) && ((this.cursor = this.I_p1, t = this.limit_backward, this.limit_backward = this.cursor, this.cursor = this.limit - e, r = this.limit - this.cursor, 0 === this.find_among_b$esjava$1(n.a_1) || (this.cursor = this.limit - r, this.ket = this.cursor, this.cursor <= this.limit_backward)) ? (this.limit_backward = t, !1) : (this.cursor--, this.bra = this.cursor, this.slice_del$esjava$0(), this.limit_backward = t, !0))
+            i = void 0,
+            s = void 0;
+          return e = this.limit - this.cursor, !(this.cursor < this.I_p1) && ((this.cursor = this.I_p1, i = this.limit_backward, this.limit_backward = this.cursor, this.cursor = this.limit - e, s = this.limit - this.cursor, 0 === this.find_among_b$esjava$1(t.a_1) || (this.cursor = this.limit - s, this.ket = this.cursor, this.cursor <= this.limit_backward)) ? (this.limit_backward = i, !1) : (this.cursor--, this.bra = this.cursor, this.slice_del$esjava$0(), this.limit_backward = i, !0))
         }
       }, {
         key: "r_other_suffix$esjava$0",
         value: function() {
           var e = void 0,
-            t = void 0,
-            r = void 0;
-          if (t = this.limit - this.cursor, this.cursor < this.I_p1) return !1;
-          if (this.cursor = this.I_p1, r = this.limit_backward, this.limit_backward = this.cursor, this.cursor = this.limit - t, this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(n.a_2))) return this.limit_backward = r, !1;
+            i = void 0,
+            s = void 0;
+          if (i = this.limit - this.cursor, this.cursor < this.I_p1) return !1;
+          if (this.cursor = this.I_p1, s = this.limit_backward, this.limit_backward = this.cursor, this.cursor = this.limit - i, this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(t.a_2))) return this.limit_backward = s, !1;
           switch (this.bra = this.cursor, e) {
             case 0:
-              return this.limit_backward = r, !1;
+              return this.limit_backward = s, !1;
             case 1:
               this.slice_del$esjava$0();
               break;
@@ -9028,34 +9060,34 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
             case 3:
               this.slice_from$esjava$1("full")
           }
-          return this.limit_backward = r, !0
+          return this.limit_backward = s, !0
         }
       }, {
         key: "stem$esjava$0",
         value: function() {
           var e = void 0,
-            t = void 0,
-            n = void 0,
-            r = void 0;
+            i = void 0,
+            s = void 0,
+            t = void 0;
           e = this.cursor;
           do
             if (!this.r_mark_regions$esjava$0()) break; while (!1);
-          this.cursor = e, this.limit_backward = this.cursor, this.cursor = this.limit, t = this.limit - this.cursor;
+          this.cursor = e, this.limit_backward = this.cursor, this.cursor = this.limit, i = this.limit - this.cursor;
           do
             if (!this.r_main_suffix$esjava$0()) break; while (!1);
-          this.cursor = this.limit - t, n = this.limit - this.cursor;
+          this.cursor = this.limit - i, s = this.limit - this.cursor;
           do
             if (!this.r_consonant_pair$esjava$0()) break; while (!1);
-          this.cursor = this.limit - n, r = this.limit - this.cursor;
+          this.cursor = this.limit - s, t = this.limit - this.cursor;
           do
             if (!this.r_other_suffix$esjava$0()) break; while (!1);
-          return this.cursor = this.limit - r, this.cursor = this.limit_backward, !0
+          return this.cursor = this.limit - t, this.cursor = this.limit_backward, !0
         }
       }, {
         key: "stem",
         value: function() {
-          for (var e, t = arguments.length, r = Array(t), i = 0; i < t; i++) r[i] = arguments[i];
-          return 0 === r.length ? this.stem$esjava$0.apply(this, r) : (e = o(Object.getPrototypeOf(n.prototype), "stem", this)).call.apply(e, [this].concat(r))
+          for (var e, i = arguments.length, s = Array(i), r = 0; r < i; r++) s[r] = arguments[r];
+          return 0 === s.length ? this.stem$esjava$0.apply(this, s) : (e = n(Object.getPrototypeOf(t.prototype), "stem", this)).call.apply(e, [this].concat(s))
         }
       }, {
         key: "I_x",
@@ -9076,35 +9108,35 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
       }], [{
         key: "a_0",
         get: function() {
-          return delete n.a_0, n.a_0 = [new c("a", -1, 1), new c("arna", 0, 1), new c("erna", 0, 1), new c("heterna", 2, 1), new c("orna", 0, 1), new c("ad", -1, 1), new c("e", -1, 1), new c("ade", 6, 1), new c("ande", 6, 1), new c("arne", 6, 1), new c("are", 6, 1), new c("aste", 6, 1), new c("en", -1, 1), new c("anden", 12, 1), new c("aren", 12, 1), new c("heten", 12, 1), new c("ern", -1, 1), new c("ar", -1, 1), new c("er", -1, 1), new c("heter", 18, 1), new c("or", -1, 1), new c("s", -1, 2), new c("as", 21, 1), new c("arnas", 22, 1), new c("ernas", 22, 1), new c("ornas", 22, 1), new c("es", 21, 1), new c("ades", 26, 1), new c("andes", 26, 1), new c("ens", 21, 1), new c("arens", 29, 1), new c("hetens", 29, 1), new c("erns", 21, 1), new c("at", -1, 1), new c("andet", -1, 1), new c("het", -1, 1), new c("ast", -1, 1)]
+          return delete t.a_0, t.a_0 = [new u("a", -1, 1), new u("arna", 0, 1), new u("erna", 0, 1), new u("heterna", 2, 1), new u("orna", 0, 1), new u("ad", -1, 1), new u("e", -1, 1), new u("ade", 6, 1), new u("ande", 6, 1), new u("arne", 6, 1), new u("are", 6, 1), new u("aste", 6, 1), new u("en", -1, 1), new u("anden", 12, 1), new u("aren", 12, 1), new u("heten", 12, 1), new u("ern", -1, 1), new u("ar", -1, 1), new u("er", -1, 1), new u("heter", 18, 1), new u("or", -1, 1), new u("s", -1, 2), new u("as", 21, 1), new u("arnas", 22, 1), new u("ernas", 22, 1), new u("ornas", 22, 1), new u("es", 21, 1), new u("ades", 26, 1), new u("andes", 26, 1), new u("ens", 21, 1), new u("arens", 29, 1), new u("hetens", 29, 1), new u("erns", 21, 1), new u("at", -1, 1), new u("andet", -1, 1), new u("het", -1, 1), new u("ast", -1, 1)]
         }
       }, {
         key: "a_1",
         get: function() {
-          return delete n.a_1, n.a_1 = [new c("dd", -1, -1), new c("gd", -1, -1), new c("nn", -1, -1), new c("dt", -1, -1), new c("gt", -1, -1), new c("kt", -1, -1), new c("tt", -1, -1)]
+          return delete t.a_1, t.a_1 = [new u("dd", -1, -1), new u("gd", -1, -1), new u("nn", -1, -1), new u("dt", -1, -1), new u("gt", -1, -1), new u("kt", -1, -1), new u("tt", -1, -1)]
         }
       }, {
         key: "a_2",
         get: function() {
-          return delete n.a_2, n.a_2 = [new c("ig", -1, 1), new c("lig", 0, 1), new c("els", -1, 1), new c("fullt", -1, 3), new c("l\xf6st", -1, 2)]
+          return delete t.a_2, t.a_2 = [new u("ig", -1, 1), new u("lig", 0, 1), new u("els", -1, 1), new u("fullt", -1, 3), new u("l\xf6st", -1, 2)]
         }
       }, {
         key: "g_v",
         get: function() {
-          return delete n.g_v, n.g_v = [17, 65, 16, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 24, 0, 32]
+          return delete t.g_v, t.g_v = [17, 65, 16, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 24, 0, 32]
         }
       }, {
         key: "g_s_ending",
         get: function() {
-          return delete n.g_s_ending, n.g_s_ending = [119, 127, 149]
+          return delete t.g_s_ending, t.g_s_ending = [119, 127, 149]
         }
-      }]), n
-    }(u),
-    L = function(e) {
-      function n() {
-        return i(this, n), t(this, Object.getPrototypeOf(n).apply(this, arguments))
+      }]), t
+    }(c),
+    S = function(e) {
+      function t() {
+        return r(this, t), i(this, Object.getPrototypeOf(t).apply(this, arguments))
       }
-      return r(n, e), a(n, [{
+      return s(t, e), a(t, [{
         key: "r_has_min_length$esjava$0",
         value: function() {
           return this.I_length = this.current.length(), this.I_length > 4
@@ -9113,58 +9145,58 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "r_fix_va_start$esjava$0",
         value: function() {
           var e = void 0,
-            t = void 0,
-            n = void 0,
-            r = void 0,
             i = void 0,
-            a = void 0,
-            o = void 0,
             s = void 0,
-            l = void 0;
-          l: do {
+            t = void 0,
+            r = void 0,
+            a = void 0,
+            n = void 0,
+            h = void 0,
+            o = void 0;
+          e: do {
             e = this.cursor;
             do {
-              t = this.cursor, n = this.cursor;
+              i = this.cursor, s = this.cursor;
               do
                 if (!this.eq_s$esjava$1("வோ")) {
-                  this.cursor = n;
+                  this.cursor = s;
                   break
                 } while (!1);
-              if (this.cursor = t, this.bra = this.cursor, !this.eq_s$esjava$1("வோ")) break;
+              if (this.cursor = i, this.bra = this.cursor, !this.eq_s$esjava$1("வோ")) break;
               this.ket = this.cursor, this.slice_from$esjava$1("ஓ");
-              break l
+              break e
             } while (!1);
             this.cursor = e;
             do {
-              r = this.cursor, i = this.cursor;
+              t = this.cursor, r = this.cursor;
               do
                 if (!this.eq_s$esjava$1("வொ")) {
-                  this.cursor = i;
+                  this.cursor = r;
                   break
                 } while (!1);
-              if (this.cursor = r, this.bra = this.cursor, !this.eq_s$esjava$1("வொ")) break;
+              if (this.cursor = t, this.bra = this.cursor, !this.eq_s$esjava$1("வொ")) break;
               this.ket = this.cursor, this.slice_from$esjava$1("ஒ");
-              break l
+              break e
             } while (!1);
             this.cursor = e;
             do {
-              a = this.cursor, o = this.cursor;
+              a = this.cursor, n = this.cursor;
               do
                 if (!this.eq_s$esjava$1("வு")) {
-                  this.cursor = o;
+                  this.cursor = n;
                   break
                 } while (!1);
               if (this.cursor = a, this.bra = this.cursor, !this.eq_s$esjava$1("வு")) break;
               this.ket = this.cursor, this.slice_from$esjava$1("உ");
-              break l
+              break e
             } while (!1);
-            this.cursor = e, s = this.cursor, l = this.cursor;
+            this.cursor = e, h = this.cursor, o = this.cursor;
             do
               if (!this.eq_s$esjava$1("வூ")) {
-                this.cursor = l;
+                this.cursor = o;
                 break
               } while (!1);
-            if (this.cursor = s, this.bra = this.cursor, !this.eq_s$esjava$1("வூ")) return !1;
+            if (this.cursor = h, this.bra = this.cursor, !this.eq_s$esjava$1("வூ")) return !1;
             this.ket = this.cursor, this.slice_from$esjava$1("ஊ")
           } while (!1);
           return !0
@@ -9173,17 +9205,17 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "r_fix_endings$esjava$0",
         value: function() {
           var e = void 0,
-            t = void 0;
+            i = void 0;
           this.B_found_wrong_ending = !0;
-          G: for (;;) {
+          P: for (;;) {
             e = this.cursor;
             do {
               if (!this.B_found_wrong_ending) break;
-              t = this.cursor;
+              i = this.cursor;
               do
                 if (!this.r_fix_ending$esjava$0()) break; while (!1);
-              this.cursor = t;
-              continue G
+              this.cursor = i;
+              continue P
             } while (!1);
             this.cursor = e;
             break
@@ -9194,7 +9226,7 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "r_remove_question_prefixes$esjava$0",
         value: function() {
           var e = void 0;
-          if (this.bra = this.cursor, !this.eq_s$esjava$1("எ") || 0 === this.find_among$esjava$1(n.a_0) || !this.eq_s$esjava$1("்")) return !1;
+          if (this.bra = this.cursor, !this.eq_s$esjava$1("எ") || 0 === this.find_among$esjava$1(t.a_0) || !this.eq_s$esjava$1("்")) return !1;
           this.ket = this.cursor, this.slice_del$esjava$0(), e = this.cursor;
           do
             if (!this.r_fix_va_start$esjava$0()) break; while (!1);
@@ -9204,168 +9236,168 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "r_fix_ending$esjava$0",
         value: function() {
           var e = void 0,
-            t = void 0,
-            r = void 0,
             i = void 0,
-            a = void 0,
-            o = void 0,
             s = void 0,
-            l = void 0,
-            c = void 0,
+            r = void 0,
+            a = void 0,
+            n = void 0,
+            h = void 0,
+            o = void 0,
             u = void 0,
-            d = void 0,
-            f = void 0,
-            _ = void 0;
+            c = void 0,
+            _ = void 0,
+            l = void 0,
+            w = void 0;
           if (this.B_found_wrong_ending = !1, this.I_length = this.current.length(), !(this.I_length > 3)) return !1;
           this.limit_backward = this.cursor, this.cursor = this.limit;
-          l: do {
+          e: do {
             e = this.limit - this.cursor;
             do {
-              if (this.ket = this.cursor, 0 === this.find_among_b$esjava$1(n.a_1)) break;
+              if (this.ket = this.cursor, 0 === this.find_among_b$esjava$1(t.a_1)) break;
               this.bra = this.cursor, this.slice_del$esjava$0();
-              break l
+              break e
             } while (!1);
             this.cursor = this.limit - e;
             do {
-              if (this.ket = this.cursor, !this.eq_s_b$esjava$1("ய்") || (t = this.limit - this.cursor, 0 === this.find_among_b$esjava$1(n.a_2))) break;
-              this.cursor = this.limit - t, this.bra = this.cursor, this.slice_del$esjava$0();
-              break l
+              if (this.ket = this.cursor, !this.eq_s_b$esjava$1("ய்") || (i = this.limit - this.cursor, 0 === this.find_among_b$esjava$1(t.a_2))) break;
+              this.cursor = this.limit - i, this.bra = this.cursor, this.slice_del$esjava$0();
+              break e
             } while (!1);
             this.cursor = this.limit - e;
-            d: do {
+            t: do {
               this.ket = this.cursor;
-              f: do {
-                r = this.limit - this.cursor;
+              r: do {
+                s = this.limit - this.cursor;
                 do {
                   if (!this.eq_s_b$esjava$1("ட்ப்")) break;
-                  break f
+                  break r
                 } while (!1);
-                if (this.cursor = this.limit - r, !this.eq_s_b$esjava$1("ட்க்")) break d
+                if (this.cursor = this.limit - s, !this.eq_s_b$esjava$1("ட்க்")) break t
               } while (!1);
               this.bra = this.cursor, this.slice_from$esjava$1("ள்");
-              break l
+              break e
             } while (!1);
             this.cursor = this.limit - e;
             do {
               if (this.ket = this.cursor, !this.eq_s_b$esjava$1("ன்ற்")) break;
               this.bra = this.cursor, this.slice_from$esjava$1("ல்");
-              break l
+              break e
             } while (!1);
             this.cursor = this.limit - e;
             do {
               if (this.ket = this.cursor, !this.eq_s_b$esjava$1("ற்க்")) break;
               this.bra = this.cursor, this.slice_from$esjava$1("ல்");
-              break l
+              break e
             } while (!1);
             this.cursor = this.limit - e;
             do {
               if (this.ket = this.cursor, !this.eq_s_b$esjava$1("ட்ட்")) break;
               this.bra = this.cursor, this.slice_from$esjava$1("டு");
-              break l
+              break e
             } while (!1);
             this.cursor = this.limit - e;
-            m: do {
+            o: do {
               if (!this.B_found_vetrumai_urupu || (this.ket = this.cursor, !this.eq_s_b$esjava$1("த்த்"))) break;
-              i = this.limit - this.cursor, a = this.limit - this.cursor;
+              r = this.limit - this.cursor, a = this.limit - this.cursor;
               do {
                 if (!this.eq_s_b$esjava$1("ை")) break;
-                break m
+                break o
               } while (!1);
-              this.cursor = this.limit - a, this.cursor = this.limit - i, this.bra = this.cursor, this.slice_from$esjava$1("ம்"), this.bra = this.cursor;
-              break l
+              this.cursor = this.limit - a, this.cursor = this.limit - r, this.bra = this.cursor, this.slice_from$esjava$1("ம்"), this.bra = this.cursor;
+              break e
             } while (!1);
             this.cursor = this.limit - e;
-            en: do {
+            M: do {
               this.ket = this.cursor;
-              K: do {
-                o = this.limit - this.cursor;
+              C: do {
+                n = this.limit - this.cursor;
                 do {
                   if (!this.eq_s_b$esjava$1("ுக்")) break;
-                  break K
+                  break C
                 } while (!1);
-                if (this.cursor = this.limit - o, !this.eq_s_b$esjava$1("ுக்க்")) break en
+                if (this.cursor = this.limit - n, !this.eq_s_b$esjava$1("ுக்க்")) break M
               } while (!1);
               this.bra = this.cursor, this.slice_from$esjava$1("்");
-              break l
+              break e
             } while (!1);
             this.cursor = this.limit - e;
             do {
-              if (this.ket = this.cursor, !this.eq_s_b$esjava$1("்") || 0 === this.find_among_b$esjava$1(n.a_3) || !this.eq_s_b$esjava$1("்") || 0 === this.find_among_b$esjava$1(n.a_4)) break;
+              if (this.ket = this.cursor, !this.eq_s_b$esjava$1("்") || 0 === this.find_among_b$esjava$1(t.a_3) || !this.eq_s_b$esjava$1("்") || 0 === this.find_among_b$esjava$1(t.a_4)) break;
               this.bra = this.cursor, this.slice_del$esjava$0();
-              break l
+              break e
             } while (!1);
             this.cursor = this.limit - e;
             do {
               if (this.ket = this.cursor, !this.eq_s_b$esjava$1("ுக்")) break;
               this.bra = this.cursor, this.slice_from$esjava$1("்");
-              break l
+              break e
             } while (!1);
             this.cursor = this.limit - e;
             do {
-              if (this.ket = this.cursor, !this.eq_s_b$esjava$1("்") || 0 === this.find_among_b$esjava$1(n.a_5)) break;
+              if (this.ket = this.cursor, !this.eq_s_b$esjava$1("்") || 0 === this.find_among_b$esjava$1(t.a_5)) break;
               this.bra = this.cursor, this.slice_del$esjava$0();
-              break l
+              break e
             } while (!1);
             this.cursor = this.limit - e;
-            b: do {
+            _: do {
               if (this.ket = this.cursor, !this.eq_s_b$esjava$1("்")) break;
-              er: do {
-                s = this.limit - this.cursor;
+              H: do {
+                h = this.limit - this.cursor;
                 do {
-                  if (0 === this.find_among_b$esjava$1(n.a_6)) break;
-                  break er
+                  if (0 === this.find_among_b$esjava$1(t.a_6)) break;
+                  break H
                 } while (!1);
-                if (this.cursor = this.limit - s, 0 === this.find_among_b$esjava$1(n.a_7)) break b
+                if (this.cursor = this.limit - h, 0 === this.find_among_b$esjava$1(t.a_7)) break _
               } while (!1);
               if (!this.eq_s_b$esjava$1("்")) break;
               this.bra = this.cursor, this.slice_from$esjava$1("்");
-              break l
+              break e
             } while (!1);
             this.cursor = this.limit - e;
             do {
-              if (this.ket = this.cursor, 0 === this.find_among_b$esjava$1(n.a_8)) break;
+              if (this.ket = this.cursor, 0 === this.find_among_b$esjava$1(t.a_8)) break;
               this.bra = this.cursor, this.slice_del$esjava$0();
-              break l
+              break e
             } while (!1);
             this.cursor = this.limit - e;
-            ei: do {
+            J: do {
               if (this.ket = this.cursor, !this.eq_s_b$esjava$1("னு")) break;
-              l = this.limit - this.cursor, c = this.limit - this.cursor;
+              o = this.limit - this.cursor, u = this.limit - this.cursor;
               do {
-                if (0 === this.find_among_b$esjava$1(n.a_9)) break;
-                break ei
+                if (0 === this.find_among_b$esjava$1(t.a_9)) break;
+                break J
               } while (!1);
-              this.cursor = this.limit - c, this.cursor = this.limit - l, this.bra = this.cursor, this.slice_del$esjava$0();
-              break l
+              this.cursor = this.limit - u, this.cursor = this.limit - o, this.bra = this.cursor, this.slice_del$esjava$0();
+              break e
             } while (!1);
             this.cursor = this.limit - e;
-            O: do {
+            w: do {
               if (this.ket = this.cursor, !this.eq_s_b$esjava$1("ங்")) break;
-              u = this.limit - this.cursor, d = this.limit - this.cursor;
+              c = this.limit - this.cursor, _ = this.limit - this.cursor;
               do {
                 if (!this.eq_s_b$esjava$1("ை")) break;
-                break O
+                break w
               } while (!1);
-              this.cursor = this.limit - d, this.cursor = this.limit - u, this.bra = this.cursor, this.slice_from$esjava$1("ம்");
-              break l
+              this.cursor = this.limit - _, this.cursor = this.limit - c, this.bra = this.cursor, this.slice_from$esjava$1("ம்");
+              break e
             } while (!1);
             this.cursor = this.limit - e;
             do {
               if (this.ket = this.cursor, !this.eq_s_b$esjava$1("ங்")) break;
               this.bra = this.cursor, this.slice_del$esjava$0();
-              break l
+              break e
             } while (!1);
             if (this.cursor = this.limit - e, this.ket = this.cursor, !this.eq_s_b$esjava$1("்")) return !1;
-            f = this.limit - this.cursor;
-            ea: do {
-              _ = this.limit - this.cursor;
+            l = this.limit - this.cursor;
+            K: do {
+              w = this.limit - this.cursor;
               do {
-                if (0 === this.find_among_b$esjava$1(n.a_10)) break;
-                break ea
+                if (0 === this.find_among_b$esjava$1(t.a_10)) break;
+                break K
               } while (!1);
-              if (this.cursor = this.limit - _, !this.eq_s_b$esjava$1("்")) return !1
+              if (this.cursor = this.limit - w, !this.eq_s_b$esjava$1("்")) return !1
             } while (!1);
-            this.cursor = this.limit - f, this.bra = this.cursor, this.slice_del$esjava$0()
+            this.cursor = this.limit - l, this.bra = this.cursor, this.slice_del$esjava$0()
           } while (!1);
           return this.cursor = this.limit_backward, this.B_found_wrong_ending = !0, !0
         }
@@ -9373,7 +9405,7 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "r_remove_pronoun_prefixes$esjava$0",
         value: function() {
           var e = void 0;
-          if (this.B_found_a_match = !1, this.bra = this.cursor, 0 === this.find_among$esjava$1(n.a_11) || 0 === this.find_among$esjava$1(n.a_12) || !this.eq_s$esjava$1("்")) return !1;
+          if (this.B_found_a_match = !1, this.bra = this.cursor, 0 === this.find_among$esjava$1(t.a_11) || 0 === this.find_among$esjava$1(t.a_12) || !this.eq_s$esjava$1("்")) return !1;
           this.ket = this.cursor, this.slice_del$esjava$0(), this.B_found_a_match = !0, e = this.cursor;
           do
             if (!this.r_fix_va_start$esjava$0()) break; while (!1);
@@ -9383,32 +9415,32 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "r_remove_plural_suffix$esjava$0",
         value: function() {
           var e = void 0,
-            t = void 0,
-            r = void 0;
+            i = void 0,
+            s = void 0;
           this.B_found_a_match = !1, this.limit_backward = this.cursor, this.cursor = this.limit;
-          l: do {
+          e: do {
             e = this.limit - this.cursor;
-            c: do {
+            i: do {
               if (this.ket = this.cursor, !this.eq_s_b$esjava$1("ுங்கள்")) break;
-              t = this.limit - this.cursor, r = this.limit - this.cursor;
+              i = this.limit - this.cursor, s = this.limit - this.cursor;
               do {
-                if (0 === this.find_among_b$esjava$1(n.a_13)) break;
-                break c
+                if (0 === this.find_among_b$esjava$1(t.a_13)) break;
+                break i
               } while (!1);
-              this.cursor = this.limit - r, this.cursor = this.limit - t, this.bra = this.cursor, this.slice_from$esjava$1("்");
-              break l
+              this.cursor = this.limit - s, this.cursor = this.limit - i, this.bra = this.cursor, this.slice_from$esjava$1("்");
+              break e
             } while (!1);
             this.cursor = this.limit - e;
             do {
               if (this.ket = this.cursor, !this.eq_s_b$esjava$1("ற்கள்")) break;
               this.bra = this.cursor, this.slice_from$esjava$1("ல்");
-              break l
+              break e
             } while (!1);
             this.cursor = this.limit - e;
             do {
               if (this.ket = this.cursor, !this.eq_s_b$esjava$1("ட்கள்")) break;
               this.bra = this.cursor, this.slice_from$esjava$1("ள்");
-              break l
+              break e
             } while (!1);
             if (this.cursor = this.limit - e, this.ket = this.cursor, !this.eq_s_b$esjava$1("கள்")) return !1;
             this.bra = this.cursor, this.slice_del$esjava$0()
@@ -9419,22 +9451,22 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "r_remove_question_suffixes$esjava$0",
         value: function() {
           var e = void 0,
-            t = void 0;
+            i = void 0;
           if (!this.r_has_min_length$esjava$0()) return !1;
           this.B_found_a_match = !1, this.limit_backward = this.cursor, this.cursor = this.limit, e = this.limit - this.cursor;
           do {
-            if (this.ket = this.cursor, 0 === this.find_among_b$esjava$1(n.a_14)) break;
+            if (this.ket = this.cursor, 0 === this.find_among_b$esjava$1(t.a_14)) break;
             this.bra = this.cursor, this.slice_from$esjava$1("்"), this.B_found_a_match = !0
           } while (!1);
-          this.cursor = this.limit - e, this.cursor = this.limit_backward, t = this.cursor;
+          this.cursor = this.limit - e, this.cursor = this.limit_backward, i = this.cursor;
           do
             if (!this.r_fix_endings$esjava$0()) break; while (!1);
-          return this.cursor = t, !0
+          return this.cursor = i, !0
         }
       }, {
         key: "r_remove_command_suffixes$esjava$0",
         value: function() {
-          return !!this.r_has_min_length$esjava$0() && (this.B_found_a_match = !1, this.limit_backward = this.cursor, this.cursor = this.limit, this.ket = this.cursor, 0 !== this.find_among_b$esjava$1(n.a_15) && (this.bra = this.cursor, this.slice_del$esjava$0(), this.B_found_a_match = !0, this.cursor = this.limit_backward, !0))
+          return !!this.r_has_min_length$esjava$0() && (this.B_found_a_match = !1, this.limit_backward = this.cursor, this.cursor = this.limit, this.ket = this.cursor, 0 !== this.find_among_b$esjava$1(t.a_15) && (this.bra = this.cursor, this.slice_del$esjava$0(), this.B_found_a_match = !0, this.cursor = this.limit_backward, !0))
         }
       }, {
         key: "r_remove_um$esjava$0",
@@ -9450,322 +9482,322 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "r_remove_common_word_endings$esjava$0",
         value: function() {
           var e = void 0,
-            t = void 0,
-            r = void 0,
             i = void 0,
+            s = void 0,
+            r = void 0,
             a = void 0,
-            o = void 0,
-            s = void 0;
+            n = void 0,
+            h = void 0;
           if (this.B_found_a_match = !1, !this.r_has_min_length$esjava$0()) return !1;
           this.limit_backward = this.cursor, this.cursor = this.limit;
-          l: do {
+          e: do {
             e = this.limit - this.cursor;
-            c: do {
-              t = this.limit - this.cursor, this.ket = this.cursor;
-              u: do {
-                r = this.limit - this.cursor;
+            i: do {
+              i = this.limit - this.cursor, this.ket = this.cursor;
+              s: do {
+                s = this.limit - this.cursor;
                 do {
                   if (!this.eq_s_b$esjava$1("ுடன்")) break;
-                  break u
+                  break s
                 } while (!1);
-                this.cursor = this.limit - r;
+                this.cursor = this.limit - s;
                 do {
                   if (!this.eq_s_b$esjava$1("ில்லை")) break;
-                  break u
+                  break s
                 } while (!1);
-                this.cursor = this.limit - r;
+                this.cursor = this.limit - s;
                 do {
                   if (!this.eq_s_b$esjava$1("ிடம்")) break;
-                  break u
+                  break s
                 } while (!1);
-                this.cursor = this.limit - r;
+                this.cursor = this.limit - s;
                 do {
                   if (!this.eq_s_b$esjava$1("ின்றி")) break;
-                  break u
+                  break s
                 } while (!1);
-                this.cursor = this.limit - r;
+                this.cursor = this.limit - s;
                 do {
                   if (!this.eq_s_b$esjava$1("ாகி")) break;
-                  break u
+                  break s
                 } while (!1);
-                this.cursor = this.limit - r;
+                this.cursor = this.limit - s;
                 do {
                   if (!this.eq_s_b$esjava$1("ாகிய")) break;
-                  break u
+                  break s
                 } while (!1);
-                this.cursor = this.limit - r;
+                this.cursor = this.limit - s;
                 do {
                   if (!this.eq_s_b$esjava$1("ென்று")) break;
-                  break u
+                  break s
                 } while (!1);
-                this.cursor = this.limit - r;
+                this.cursor = this.limit - s;
                 do {
                   if (!this.eq_s_b$esjava$1("ுள்ள")) break;
-                  break u
+                  break s
                 } while (!1);
-                this.cursor = this.limit - r;
+                this.cursor = this.limit - s;
                 do {
                   if (!this.eq_s_b$esjava$1("ுடைய")) break;
-                  break u
+                  break s
                 } while (!1);
-                this.cursor = this.limit - r;
+                this.cursor = this.limit - s;
                 do {
                   if (!this.eq_s_b$esjava$1("ுடை")) break;
-                  break u
+                  break s
                 } while (!1);
-                this.cursor = this.limit - r;
+                this.cursor = this.limit - s;
                 do {
                   if (!this.eq_s_b$esjava$1("ெனும்")) break;
-                  break u
+                  break s
                 } while (!1);
-                this.cursor = this.limit - r;
-                g: do {
+                this.cursor = this.limit - s;
+                u: do {
                   if (!this.eq_s_b$esjava$1("ல்ல")) break;
-                  i = this.limit - this.cursor, a = this.limit - this.cursor;
+                  r = this.limit - this.cursor, a = this.limit - this.cursor;
                   do {
-                    if (0 === this.find_among_b$esjava$1(n.a_16)) break;
-                    break g
+                    if (0 === this.find_among_b$esjava$1(t.a_16)) break;
+                    break u
                   } while (!1);
-                  this.cursor = this.limit - a, this.cursor = this.limit - i;
-                  break u
+                  this.cursor = this.limit - a, this.cursor = this.limit - r;
+                  break s
                 } while (!1);
-                this.cursor = this.limit - r;
+                this.cursor = this.limit - s;
                 do {
                   if (!this.eq_s_b$esjava$1("ென")) break;
-                  break u
+                  break s
                 } while (!1);
-                if (this.cursor = this.limit - r, !this.eq_s_b$esjava$1("ாகி")) break c
+                if (this.cursor = this.limit - s, !this.eq_s_b$esjava$1("ாகி")) break i
               } while (!1);
-              this.bra = this.cursor, this.slice_from$esjava$1("்"), this.B_found_a_match = !0, this.cursor = this.limit - t;
-              break l
+              this.bra = this.cursor, this.slice_from$esjava$1("்"), this.B_found_a_match = !0, this.cursor = this.limit - i;
+              break e
             } while (!1);
-            if (this.cursor = this.limit - e, o = this.limit - this.cursor, this.ket = this.cursor, 0 === this.find_among_b$esjava$1(n.a_17)) return !1;
-            this.bra = this.cursor, this.slice_del$esjava$0(), this.B_found_a_match = !0, this.cursor = this.limit - o
+            if (this.cursor = this.limit - e, n = this.limit - this.cursor, this.ket = this.cursor, 0 === this.find_among_b$esjava$1(t.a_17)) return !1;
+            this.bra = this.cursor, this.slice_del$esjava$0(), this.B_found_a_match = !0, this.cursor = this.limit - n
           } while (!1);
-          this.cursor = this.limit_backward, s = this.cursor;
+          this.cursor = this.limit_backward, h = this.cursor;
           do
             if (!this.r_fix_endings$esjava$0()) break; while (!1);
-          return this.cursor = s, !0
+          return this.cursor = h, !0
         }
       }, {
         key: "r_remove_vetrumai_urupukal$esjava$0",
         value: function() {
           var e = void 0,
-            t = void 0,
-            r = void 0,
             i = void 0,
-            a = void 0,
-            o = void 0,
             s = void 0,
-            l = void 0,
-            c = void 0,
-            u = void 0,
-            d = void 0,
-            f = void 0,
-            _ = void 0,
-            p = void 0,
+            r = void 0,
+            a = void 0,
+            n = void 0,
             h = void 0,
-            m = void 0,
-            g = void 0,
-            E = void 0,
+            o = void 0,
+            u = void 0,
+            c = void 0,
+            _ = void 0,
+            l = void 0,
+            w = void 0,
+            $ = void 0,
+            v = void 0,
+            f = void 0,
+            k = void 0,
+            d = void 0,
             b = void 0,
-            y = void 0,
-            O = void 0;
+            m = void 0,
+            j = void 0;
           if (this.B_found_a_match = !1, this.B_found_vetrumai_urupu = !1, !this.r_has_min_length$esjava$0()) return !1;
           this.limit_backward = this.cursor, this.cursor = this.limit;
-          l: do {
+          e: do {
             e = this.limit - this.cursor;
             do {
-              if (t = this.limit - this.cursor, this.ket = this.cursor, !this.eq_s_b$esjava$1("னை")) break;
-              this.bra = this.cursor, this.slice_del$esjava$0(), this.cursor = this.limit - t;
-              break l
+              if (i = this.limit - this.cursor, this.ket = this.cursor, !this.eq_s_b$esjava$1("னை")) break;
+              this.bra = this.cursor, this.slice_del$esjava$0(), this.cursor = this.limit - i;
+              break e
             } while (!1);
             this.cursor = this.limit - e;
-            u: do {
-              r = this.limit - this.cursor, this.ket = this.cursor;
-              d: do {
-                i = this.limit - this.cursor;
-                f: do {
-                  _: do {
+            s: do {
+              s = this.limit - this.cursor, this.ket = this.cursor;
+              t: do {
+                r = this.limit - this.cursor;
+                r: do {
+                  a: do {
                     a = this.limit - this.cursor;
                     do {
                       if (!this.eq_s_b$esjava$1("ினை")) break;
-                      break _
+                      break a
                     } while (!1);
-                    if (this.cursor = this.limit - a, !this.eq_s_b$esjava$1("ை")) break f
-                  } while (!1);o = this.limit - this.cursor,
-                  s = this.limit - this.cursor;do {
-                    if (0 === this.find_among_b$esjava$1(n.a_18)) break;
-                    break f
-                  } while (!1);this.cursor = this.limit - s,
-                  this.cursor = this.limit - o;
-                  break d
+                    if (this.cursor = this.limit - a, !this.eq_s_b$esjava$1("ை")) break r
+                  } while (!1);n = this.limit - this.cursor,
+                  h = this.limit - this.cursor;do {
+                    if (0 === this.find_among_b$esjava$1(t.a_18)) break;
+                    break r
+                  } while (!1);this.cursor = this.limit - h,
+                  this.cursor = this.limit - n;
+                  break t
                 } while (!1);
-                if (this.cursor = this.limit - i, !this.eq_s_b$esjava$1("ை") || (l = this.limit - this.cursor, 0 === this.find_among_b$esjava$1(n.a_19) || !this.eq_s_b$esjava$1("்"))) break u;
-                this.cursor = this.limit - l
+                if (this.cursor = this.limit - r, !this.eq_s_b$esjava$1("ை") || (o = this.limit - this.cursor, 0 === this.find_among_b$esjava$1(t.a_19) || !this.eq_s_b$esjava$1("்"))) break s;
+                this.cursor = this.limit - o
               } while (!1);
-              this.bra = this.cursor, this.slice_from$esjava$1("்"), this.cursor = this.limit - r;
-              break l
+              this.bra = this.cursor, this.slice_from$esjava$1("்"), this.cursor = this.limit - s;
+              break e
             } while (!1);
             this.cursor = this.limit - e;
-            z: do {
-              c = this.limit - this.cursor, this.ket = this.cursor;
-              m: do {
-                u = this.limit - this.cursor;
+            E: do {
+              u = this.limit - this.cursor, this.ket = this.cursor;
+              o: do {
+                c = this.limit - this.cursor;
                 do {
                   if (!this.eq_s_b$esjava$1("ொடு")) break;
-                  break m
+                  break o
                 } while (!1);
-                this.cursor = this.limit - u;
+                this.cursor = this.limit - c;
                 do {
                   if (!this.eq_s_b$esjava$1("ோடு")) break;
-                  break m
+                  break o
                 } while (!1);
-                this.cursor = this.limit - u;
+                this.cursor = this.limit - c;
                 do {
                   if (!this.eq_s_b$esjava$1("ில்")) break;
-                  break m
+                  break o
                 } while (!1);
-                this.cursor = this.limit - u;
+                this.cursor = this.limit - c;
                 do {
                   if (!this.eq_s_b$esjava$1("ிற்")) break;
-                  break m
+                  break o
                 } while (!1);
-                this.cursor = this.limit - u;
-                g: do {
+                this.cursor = this.limit - c;
+                u: do {
                   if (!this.eq_s_b$esjava$1("ின்")) break;
-                  d = this.limit - this.cursor, f = this.limit - this.cursor;
+                  _ = this.limit - this.cursor, l = this.limit - this.cursor;
                   do {
                     if (!this.eq_s_b$esjava$1("ம")) break;
-                    break g
+                    break u
                   } while (!1);
-                  this.cursor = this.limit - f, this.cursor = this.limit - d;
-                  break m
+                  this.cursor = this.limit - l, this.cursor = this.limit - _;
+                  break o
                 } while (!1);
-                this.cursor = this.limit - u;
+                this.cursor = this.limit - c;
                 do {
                   if (!this.eq_s_b$esjava$1("ின்று")) break;
-                  break m
+                  break o
                 } while (!1);
-                this.cursor = this.limit - u;
+                this.cursor = this.limit - c;
                 do {
                   if (!this.eq_s_b$esjava$1("ிருந்து")) break;
-                  break m
+                  break o
                 } while (!1);
-                this.cursor = this.limit - u;
+                this.cursor = this.limit - c;
                 do {
                   if (!this.eq_s_b$esjava$1("விட")) break;
-                  break m
+                  break o
                 } while (!1);
-                this.cursor = this.limit - u;
+                this.cursor = this.limit - c;
                 do {
                   if (!(this.I_length >= 7) || !this.eq_s_b$esjava$1("ிடம்")) break;
-                  break m
+                  break o
                 } while (!1);
-                this.cursor = this.limit - u;
+                this.cursor = this.limit - c;
                 do {
                   if (!this.eq_s_b$esjava$1("ால்")) break;
-                  break m
+                  break o
                 } while (!1);
-                this.cursor = this.limit - u;
+                this.cursor = this.limit - c;
                 do {
                   if (!this.eq_s_b$esjava$1("ுடை")) break;
-                  break m
+                  break o
                 } while (!1);
-                this.cursor = this.limit - u;
+                this.cursor = this.limit - c;
                 do {
                   if (!this.eq_s_b$esjava$1("ாமல்")) break;
-                  break m
+                  break o
                 } while (!1);
-                this.cursor = this.limit - u;
-                O: do {
+                this.cursor = this.limit - c;
+                w: do {
                   if (!this.eq_s_b$esjava$1("ல்")) break;
-                  _ = this.limit - this.cursor, p = this.limit - this.cursor;
+                  w = this.limit - this.cursor, $ = this.limit - this.cursor;
                   do {
-                    if (0 === this.find_among_b$esjava$1(n.a_20)) break;
-                    break O
+                    if (0 === this.find_among_b$esjava$1(t.a_20)) break;
+                    break w
                   } while (!1);
-                  this.cursor = this.limit - p, this.cursor = this.limit - _;
-                  break m
+                  this.cursor = this.limit - $, this.cursor = this.limit - w;
+                  break o
                 } while (!1);
-                if (this.cursor = this.limit - u, !this.eq_s_b$esjava$1("ுள்")) break z
+                if (this.cursor = this.limit - c, !this.eq_s_b$esjava$1("ுள்")) break E
               } while (!1);
-              this.bra = this.cursor, this.slice_from$esjava$1("்"), this.cursor = this.limit - c;
-              break l
+              this.bra = this.cursor, this.slice_from$esjava$1("்"), this.cursor = this.limit - u;
+              break e
             } while (!1);
             this.cursor = this.limit - e;
-            ee: do {
-              h = this.limit - this.cursor, this.ket = this.cursor;
-              ea: do {
-                m = this.limit - this.cursor;
+            F: do {
+              v = this.limit - this.cursor, this.ket = this.cursor;
+              K: do {
+                f = this.limit - this.cursor;
                 do {
                   if (!this.eq_s_b$esjava$1("கண்")) break;
-                  break ea
+                  break K
                 } while (!1);
-                this.cursor = this.limit - m;
+                this.cursor = this.limit - f;
                 do {
                   if (!this.eq_s_b$esjava$1("முன்")) break;
-                  break ea
+                  break K
                 } while (!1);
-                this.cursor = this.limit - m;
+                this.cursor = this.limit - f;
                 do {
                   if (!this.eq_s_b$esjava$1("மேல்")) break;
-                  break ea
+                  break K
                 } while (!1);
-                this.cursor = this.limit - m;
+                this.cursor = this.limit - f;
                 do {
                   if (!this.eq_s_b$esjava$1("மேற்")) break;
-                  break ea
+                  break K
                 } while (!1);
-                this.cursor = this.limit - m;
+                this.cursor = this.limit - f;
                 do {
                   if (!this.eq_s_b$esjava$1("கீழ்")) break;
-                  break ea
+                  break K
                 } while (!1);
-                this.cursor = this.limit - m;
+                this.cursor = this.limit - f;
                 do {
                   if (!this.eq_s_b$esjava$1("பின்")) break;
-                  break ea
+                  break K
                 } while (!1);
-                if (this.cursor = this.limit - m, !this.eq_s_b$esjava$1("து")) break ee;
-                g = this.limit - this.cursor, E = this.limit - this.cursor;
+                if (this.cursor = this.limit - f, !this.eq_s_b$esjava$1("து")) break F;
+                k = this.limit - this.cursor, d = this.limit - this.cursor;
                 do {
-                  if (0 === this.find_among_b$esjava$1(n.a_21)) break;
-                  break ee
+                  if (0 === this.find_among_b$esjava$1(t.a_21)) break;
+                  break F
                 } while (!1);
-                this.cursor = this.limit - E, this.cursor = this.limit - g
+                this.cursor = this.limit - d, this.cursor = this.limit - k
               } while (!1);
-              this.bra = this.cursor, this.slice_del$esjava$0(), this.cursor = this.limit - h;
-              break l
+              this.bra = this.cursor, this.slice_del$esjava$0(), this.cursor = this.limit - v;
+              break e
             } while (!1);
             if (this.cursor = this.limit - e, b = this.limit - this.cursor, this.ket = this.cursor, !this.eq_s_b$esjava$1("ீ")) return !1;
             this.bra = this.cursor, this.slice_from$esjava$1("ி"), this.cursor = this.limit - b
           } while (!1);
-          this.B_found_a_match = !0, this.B_found_vetrumai_urupu = !0, y = this.limit - this.cursor;
+          this.B_found_a_match = !0, this.B_found_vetrumai_urupu = !0, m = this.limit - this.cursor;
           do {
             if (this.ket = this.cursor, !this.eq_s_b$esjava$1("ின்")) break;
             this.bra = this.cursor, this.slice_from$esjava$1("்")
           } while (!1);
-          this.cursor = this.limit - y, this.cursor = this.limit_backward, O = this.cursor;
+          this.cursor = this.limit - m, this.cursor = this.limit_backward, j = this.cursor;
           do
             if (!this.r_fix_endings$esjava$0()) break; while (!1);
-          return this.cursor = O, !0
+          return this.cursor = j, !0
         }
       }, {
         key: "r_remove_tense_suffixes$esjava$0",
         value: function() {
           var e = void 0,
-            t = void 0;
+            i = void 0;
           this.B_found_a_match = !0;
-          G: for (;;) {
+          P: for (;;) {
             e = this.cursor;
             do {
               if (!this.B_found_a_match) break;
-              t = this.cursor;
+              i = this.cursor;
               do
                 if (!this.r_remove_tense_suffix$esjava$0()) break; while (!1);
-              this.cursor = t;
-              continue G
+              this.cursor = i;
+              continue P
             } while (!1);
             this.cursor = e;
             break
@@ -9776,366 +9808,366 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "r_remove_tense_suffix$esjava$0",
         value: function() {
           var e = void 0,
-            t = void 0,
-            r = void 0,
             i = void 0,
-            a = void 0,
-            o = void 0,
             s = void 0,
-            l = void 0,
-            c = void 0,
-            u = void 0,
-            d = void 0,
-            f = void 0,
-            _ = void 0,
-            p = void 0,
+            r = void 0,
+            a = void 0,
+            n = void 0,
             h = void 0,
-            m = void 0,
-            g = void 0,
-            E = void 0;
+            o = void 0,
+            u = void 0,
+            c = void 0,
+            _ = void 0,
+            l = void 0,
+            w = void 0,
+            $ = void 0,
+            v = void 0,
+            f = void 0,
+            k = void 0,
+            d = void 0;
           if (this.B_found_a_match = !1, !this.r_has_min_length$esjava$0()) return !1;
           this.limit_backward = this.cursor, this.cursor = this.limit, e = this.limit - this.cursor;
-          l: do c: do {
-            t = this.limit - this.cursor;
+          e: do i: do {
+            i = this.limit - this.cursor;
             do {
-              if (r = this.limit - this.cursor, this.ket = this.cursor, 0 === this.find_among_b$esjava$1(n.a_22)) break;
-              this.bra = this.cursor, this.slice_del$esjava$0(), this.B_found_a_match = !0, this.cursor = this.limit - r;
-              break c
+              if (s = this.limit - this.cursor, this.ket = this.cursor, 0 === this.find_among_b$esjava$1(t.a_22)) break;
+              this.bra = this.cursor, this.slice_del$esjava$0(), this.B_found_a_match = !0, this.cursor = this.limit - s;
+              break i
             } while (!1);
-            this.cursor = this.limit - t;
-            d: do {
-              i = this.limit - this.cursor, this.ket = this.cursor;
-              f: do {
+            this.cursor = this.limit - i;
+            t: do {
+              r = this.limit - this.cursor, this.ket = this.cursor;
+              r: do {
                 a = this.limit - this.cursor;
                 do {
                   if (!this.eq_s_b$esjava$1("மார்")) break;
-                  break f
+                  break r
                 } while (!1);
                 this.cursor = this.limit - a;
                 do {
                   if (!this.eq_s_b$esjava$1("மின்")) break;
-                  break f
+                  break r
                 } while (!1);
                 this.cursor = this.limit - a;
                 do {
                   if (!this.eq_s_b$esjava$1("னன்")) break;
-                  break f
+                  break r
                 } while (!1);
                 this.cursor = this.limit - a;
                 do {
                   if (!this.eq_s_b$esjava$1("னான்")) break;
-                  break f
+                  break r
                 } while (!1);
                 this.cursor = this.limit - a;
                 do {
                   if (!this.eq_s_b$esjava$1("னாள்")) break;
-                  break f
+                  break r
                 } while (!1);
                 this.cursor = this.limit - a;
                 do {
                   if (!this.eq_s_b$esjava$1("னார்")) break;
-                  break f
+                  break r
                 } while (!1);
                 this.cursor = this.limit - a;
-                en: do {
+                M: do {
                   if (!this.eq_s_b$esjava$1("வன்")) break;
-                  o = this.limit - this.cursor, s = this.limit - this.cursor;
+                  n = this.limit - this.cursor, h = this.limit - this.cursor;
                   do {
-                    if (0 === this.find_among_b$esjava$1(n.a_23)) break;
-                    break en
+                    if (0 === this.find_among_b$esjava$1(t.a_23)) break;
+                    break M
                   } while (!1);
-                  this.cursor = this.limit - s, this.cursor = this.limit - o;
-                  break f
+                  this.cursor = this.limit - h, this.cursor = this.limit - n;
+                  break r
                 } while (!1);
                 this.cursor = this.limit - a;
                 do {
                   if (!this.eq_s_b$esjava$1("னள்")) break;
-                  break f
+                  break r
                 } while (!1);
                 this.cursor = this.limit - a;
                 do {
                   if (!this.eq_s_b$esjava$1("வள்")) break;
-                  break f
+                  break r
                 } while (!1);
                 this.cursor = this.limit - a;
                 do {
                   if (!this.eq_s_b$esjava$1("னர்")) break;
-                  break f
+                  break r
                 } while (!1);
                 this.cursor = this.limit - a;
                 do {
                   if (!this.eq_s_b$esjava$1("வர்")) break;
-                  break f
+                  break r
                 } while (!1);
                 this.cursor = this.limit - a;
                 do {
                   if (!this.eq_s_b$esjava$1("ன")) break;
-                  break f
+                  break r
                 } while (!1);
                 this.cursor = this.limit - a;
                 do {
                   if (!this.eq_s_b$esjava$1("ப")) break;
-                  break f
+                  break r
                 } while (!1);
                 this.cursor = this.limit - a;
                 do {
                   if (!this.eq_s_b$esjava$1("க")) break;
-                  break f
+                  break r
                 } while (!1);
                 this.cursor = this.limit - a;
                 do {
                   if (!this.eq_s_b$esjava$1("த")) break;
-                  break f
+                  break r
                 } while (!1);
                 this.cursor = this.limit - a;
                 do {
                   if (!this.eq_s_b$esjava$1("ய")) break;
-                  break f
+                  break r
                 } while (!1);
                 this.cursor = this.limit - a;
                 do {
                   if (!this.eq_s_b$esjava$1("பன்")) break;
-                  break f
+                  break r
                 } while (!1);
                 this.cursor = this.limit - a;
                 do {
                   if (!this.eq_s_b$esjava$1("பள்")) break;
-                  break f
+                  break r
                 } while (!1);
                 this.cursor = this.limit - a;
                 do {
                   if (!this.eq_s_b$esjava$1("பர்")) break;
-                  break f
+                  break r
                 } while (!1);
                 this.cursor = this.limit - a;
-                ee: do {
+                F: do {
                   if (!this.eq_s_b$esjava$1("து")) break;
-                  l = this.limit - this.cursor, c = this.limit - this.cursor;
+                  o = this.limit - this.cursor, u = this.limit - this.cursor;
                   do {
-                    if (0 === this.find_among_b$esjava$1(n.a_24)) break;
-                    break ee
+                    if (0 === this.find_among_b$esjava$1(t.a_24)) break;
+                    break F
                   } while (!1);
-                  this.cursor = this.limit - c, this.cursor = this.limit - l;
-                  break f
+                  this.cursor = this.limit - u, this.cursor = this.limit - o;
+                  break r
                 } while (!1);
                 this.cursor = this.limit - a;
                 do {
                   if (!this.eq_s_b$esjava$1("ிற்று")) break;
-                  break f
+                  break r
                 } while (!1);
                 this.cursor = this.limit - a;
                 do {
                   if (!this.eq_s_b$esjava$1("பம்")) break;
-                  break f
+                  break r
                 } while (!1);
                 this.cursor = this.limit - a;
                 do {
                   if (!this.eq_s_b$esjava$1("னம்")) break;
-                  break f
+                  break r
                 } while (!1);
                 this.cursor = this.limit - a;
                 do {
                   if (!this.eq_s_b$esjava$1("தும்")) break;
-                  break f
+                  break r
                 } while (!1);
                 this.cursor = this.limit - a;
                 do {
                   if (!this.eq_s_b$esjava$1("றும்")) break;
-                  break f
+                  break r
                 } while (!1);
                 this.cursor = this.limit - a;
                 do {
                   if (!this.eq_s_b$esjava$1("கும்")) break;
-                  break f
+                  break r
                 } while (!1);
                 this.cursor = this.limit - a;
                 do {
                   if (!this.eq_s_b$esjava$1("னென்")) break;
-                  break f
+                  break r
                 } while (!1);
                 this.cursor = this.limit - a;
                 do {
                   if (!this.eq_s_b$esjava$1("னை")) break;
-                  break f
+                  break r
                 } while (!1);
-                if (this.cursor = this.limit - a, !this.eq_s_b$esjava$1("வை")) break d
+                if (this.cursor = this.limit - a, !this.eq_s_b$esjava$1("வை")) break t
               } while (!1);
-              this.bra = this.cursor, this.slice_del$esjava$0(), this.B_found_a_match = !0, this.cursor = this.limit - i;
-              break c
+              this.bra = this.cursor, this.slice_del$esjava$0(), this.B_found_a_match = !0, this.cursor = this.limit - r;
+              break i
             } while (!1);
-            this.cursor = this.limit - t;
-            eo: do {
-              u = this.limit - this.cursor, this.ket = this.cursor;
-              es: do {
-                d = this.limit - this.cursor;
-                el: do {
+            this.cursor = this.limit - i;
+            Q: do {
+              c = this.limit - this.cursor, this.ket = this.cursor;
+              Z: do {
+                _ = this.limit - this.cursor;
+                ee: do {
                   if (!this.eq_s_b$esjava$1("ான்")) break;
-                  f = this.limit - this.cursor, _ = this.limit - this.cursor;
+                  l = this.limit - this.cursor, w = this.limit - this.cursor;
                   do {
                     if (!this.eq_s_b$esjava$1("ச")) break;
-                    break el
+                    break ee
                   } while (!1);
-                  this.cursor = this.limit - _, this.cursor = this.limit - f;
-                  break es
+                  this.cursor = this.limit - w, this.cursor = this.limit - l;
+                  break Z
                 } while (!1);
-                this.cursor = this.limit - d;
+                this.cursor = this.limit - _;
                 do {
                   if (!this.eq_s_b$esjava$1("ாள்")) break;
-                  break es
+                  break Z
                 } while (!1);
-                this.cursor = this.limit - d;
+                this.cursor = this.limit - _;
                 do {
                   if (!this.eq_s_b$esjava$1("ார்")) break;
-                  break es
+                  break Z
                 } while (!1);
-                this.cursor = this.limit - d;
+                this.cursor = this.limit - _;
                 do {
                   if (!this.eq_s_b$esjava$1("ேன்")) break;
-                  break es
+                  break Z
                 } while (!1);
-                this.cursor = this.limit - d;
+                this.cursor = this.limit - _;
                 do {
                   if (!this.eq_s_b$esjava$1("ா")) break;
-                  break es
+                  break Z
                 } while (!1);
-                this.cursor = this.limit - d;
+                this.cursor = this.limit - _;
                 do {
                   if (!this.eq_s_b$esjava$1("ாம்")) break;
-                  break es
+                  break Z
                 } while (!1);
-                this.cursor = this.limit - d;
+                this.cursor = this.limit - _;
                 do {
                   if (!this.eq_s_b$esjava$1("ெம்")) break;
-                  break es
+                  break Z
                 } while (!1);
-                this.cursor = this.limit - d;
+                this.cursor = this.limit - _;
                 do {
                   if (!this.eq_s_b$esjava$1("ேம்")) break;
-                  break es
+                  break Z
                 } while (!1);
-                this.cursor = this.limit - d;
+                this.cursor = this.limit - _;
                 do {
                   if (!this.eq_s_b$esjava$1("ோம்")) break;
-                  break es
+                  break Z
                 } while (!1);
-                this.cursor = this.limit - d;
+                this.cursor = this.limit - _;
                 do {
                   if (!this.eq_s_b$esjava$1("கும்")) break;
-                  break es
+                  break Z
                 } while (!1);
-                this.cursor = this.limit - d;
+                this.cursor = this.limit - _;
                 do {
                   if (!this.eq_s_b$esjava$1("தும்")) break;
-                  break es
+                  break Z
                 } while (!1);
-                this.cursor = this.limit - d;
+                this.cursor = this.limit - _;
                 do {
                   if (!this.eq_s_b$esjava$1("டும்")) break;
-                  break es
+                  break Z
                 } while (!1);
-                this.cursor = this.limit - d;
+                this.cursor = this.limit - _;
                 do {
                   if (!this.eq_s_b$esjava$1("றும்")) break;
-                  break es
+                  break Z
                 } while (!1);
-                this.cursor = this.limit - d;
+                this.cursor = this.limit - _;
                 do {
                   if (!this.eq_s_b$esjava$1("ாய்")) break;
-                  break es
+                  break Z
                 } while (!1);
-                this.cursor = this.limit - d;
+                this.cursor = this.limit - _;
                 do {
                   if (!this.eq_s_b$esjava$1("னென்")) break;
-                  break es
+                  break Z
                 } while (!1);
-                this.cursor = this.limit - d;
+                this.cursor = this.limit - _;
                 do {
                   if (!this.eq_s_b$esjava$1("னிர்")) break;
-                  break es
+                  break Z
                 } while (!1);
-                this.cursor = this.limit - d;
+                this.cursor = this.limit - _;
                 do {
                   if (!this.eq_s_b$esjava$1("ீர்")) break;
-                  break es
+                  break Z
                 } while (!1);
-                if (this.cursor = this.limit - d, !this.eq_s_b$esjava$1("ீயர்")) break eo
+                if (this.cursor = this.limit - _, !this.eq_s_b$esjava$1("ீயர்")) break Q
               } while (!1);
-              this.bra = this.cursor, this.slice_from$esjava$1("்"), this.B_found_a_match = !0, this.cursor = this.limit - u;
-              break c
+              this.bra = this.cursor, this.slice_from$esjava$1("்"), this.B_found_a_match = !0, this.cursor = this.limit - c;
+              break i
             } while (!1);
-            this.cursor = this.limit - t, p = this.limit - this.cursor, this.ket = this.cursor;
-            ec: do {
-              h = this.limit - this.cursor;
+            this.cursor = this.limit - i, $ = this.limit - this.cursor, this.ket = this.cursor;
+            ei: do {
+              v = this.limit - this.cursor;
               do {
                 if (!this.eq_s_b$esjava$1("கு")) break;
-                break ec
+                break ei
               } while (!1);
-              if (this.cursor = this.limit - h, !this.eq_s_b$esjava$1("து")) break l
+              if (this.cursor = this.limit - v, !this.eq_s_b$esjava$1("து")) break e
             } while (!1);
-            if (m = this.limit - this.cursor, !this.eq_s_b$esjava$1("்")) break l;
-            this.cursor = this.limit - m, this.bra = this.cursor, this.slice_del$esjava$0(), this.B_found_a_match = !0, this.cursor = this.limit - p
+            if (f = this.limit - this.cursor, !this.eq_s_b$esjava$1("்")) break e;
+            this.cursor = this.limit - f, this.bra = this.cursor, this.slice_del$esjava$0(), this.B_found_a_match = !0, this.cursor = this.limit - $
           } while (!1); while (!1);
-          this.cursor = this.limit - e, g = this.limit - this.cursor;
+          this.cursor = this.limit - e, k = this.limit - this.cursor;
           do {
-            if (this.ket = this.cursor, 0 === this.find_among_b$esjava$1(n.a_25)) break;
+            if (this.ket = this.cursor, 0 === this.find_among_b$esjava$1(t.a_25)) break;
             this.bra = this.cursor, this.slice_del$esjava$0(), this.B_found_a_match = !0
           } while (!1);
-          this.cursor = this.limit - g, this.cursor = this.limit_backward, E = this.cursor;
+          this.cursor = this.limit - k, this.cursor = this.limit_backward, d = this.cursor;
           do
             if (!this.r_fix_endings$esjava$0()) break; while (!1);
-          return this.cursor = E, !0
+          return this.cursor = d, !0
         }
       }, {
         key: "stem$esjava$0",
         value: function() {
           var e = void 0,
-            t = void 0,
-            n = void 0,
-            r = void 0,
             i = void 0,
-            a = void 0,
-            o = void 0,
             s = void 0,
-            l = void 0,
-            c = void 0;
+            t = void 0,
+            r = void 0,
+            a = void 0,
+            n = void 0,
+            h = void 0,
+            o = void 0,
+            u = void 0;
           this.B_found_vetrumai_urupu = !1, e = this.cursor;
           do
             if (!this.r_fix_ending$esjava$0()) break; while (!1);
           if (this.cursor = e, !this.r_has_min_length$esjava$0()) return !1;
-          t = this.cursor;
+          i = this.cursor;
           do
             if (!this.r_remove_question_prefixes$esjava$0()) break; while (!1);
-          this.cursor = t, n = this.cursor;
+          this.cursor = i, s = this.cursor;
           do
             if (!this.r_remove_pronoun_prefixes$esjava$0()) break; while (!1);
-          this.cursor = n, r = this.cursor;
+          this.cursor = s, t = this.cursor;
           do
             if (!this.r_remove_question_suffixes$esjava$0()) break; while (!1);
-          this.cursor = r, i = this.cursor;
+          this.cursor = t, r = this.cursor;
           do
             if (!this.r_remove_um$esjava$0()) break; while (!1);
-          this.cursor = i, a = this.cursor;
+          this.cursor = r, a = this.cursor;
           do
             if (!this.r_remove_common_word_endings$esjava$0()) break; while (!1);
-          this.cursor = a, o = this.cursor;
+          this.cursor = a, n = this.cursor;
           do
             if (!this.r_remove_vetrumai_urupukal$esjava$0()) break; while (!1);
-          this.cursor = o, s = this.cursor;
+          this.cursor = n, h = this.cursor;
           do
             if (!this.r_remove_plural_suffix$esjava$0()) break; while (!1);
-          this.cursor = s, l = this.cursor;
+          this.cursor = h, o = this.cursor;
           do
             if (!this.r_remove_command_suffixes$esjava$0()) break; while (!1);
-          this.cursor = l, c = this.cursor;
+          this.cursor = o, u = this.cursor;
           do
             if (!this.r_remove_tense_suffixes$esjava$0()) break; while (!1);
-          return this.cursor = c, !0
+          return this.cursor = u, !0
         }
       }, {
         key: "stem",
         value: function() {
-          for (var e, t = arguments.length, r = Array(t), i = 0; i < t; i++) r[i] = arguments[i];
-          return 0 === r.length ? this.stem$esjava$0.apply(this, r) : (e = o(Object.getPrototypeOf(n.prototype), "stem", this)).call.apply(e, [this].concat(r))
+          for (var e, i = arguments.length, s = Array(i), r = 0; r < i; r++) s[r] = arguments[r];
+          return 0 === s.length ? this.stem$esjava$0.apply(this, s) : (e = n(Object.getPrototypeOf(t.prototype), "stem", this)).call.apply(e, [this].concat(s))
         }
       }, {
         key: "I_length",
@@ -10172,279 +10204,279 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
       }], [{
         key: "a_0",
         get: function() {
-          return delete n.a_0, n.a_0 = [new c("க", -1, -1), new c("ங", -1, -1), new c("ச", -1, -1), new c("ஞ", -1, -1), new c("த", -1, -1), new c("ந", -1, -1), new c("ப", -1, -1), new c("ம", -1, -1), new c("ய", -1, -1), new c("வ", -1, -1)]
+          return delete t.a_0, t.a_0 = [new u("க", -1, -1), new u("ங", -1, -1), new u("ச", -1, -1), new u("ஞ", -1, -1), new u("த", -1, -1), new u("ந", -1, -1), new u("ப", -1, -1), new u("ம", -1, -1), new u("ய", -1, -1), new u("வ", -1, -1)]
         }
       }, {
         key: "a_1",
         get: function() {
-          return delete n.a_1, n.a_1 = [new c("ந்த", -1, -1), new c("ந்த்", -1, -1), new c("ந்", -1, -1)]
+          return delete t.a_1, t.a_1 = [new u("ந்த", -1, -1), new u("ந்த்", -1, -1), new u("ந்", -1, -1)]
         }
       }, {
         key: "a_2",
         get: function() {
-          return delete n.a_2, n.a_2 = [new c("ி", -1, -1), new c("ீ", -1, -1), new c("ை", -1, -1)]
+          return delete t.a_2, t.a_2 = [new u("ி", -1, -1), new u("ீ", -1, -1), new u("ை", -1, -1)]
         }
       }, {
         key: "a_3",
         get: function() {
-          return delete n.a_3, n.a_3 = [new c("க", -1, -1), new c("ச", -1, -1), new c("ட", -1, -1), new c("த", -1, -1), new c("ப", -1, -1), new c("ற", -1, -1)]
+          return delete t.a_3, t.a_3 = [new u("க", -1, -1), new u("ச", -1, -1), new u("ட", -1, -1), new u("த", -1, -1), new u("ப", -1, -1), new u("ற", -1, -1)]
         }
       }, {
         key: "a_4",
         get: function() {
-          return delete n.a_4, n.a_4 = [new c("க", -1, -1), new c("ச", -1, -1), new c("ட", -1, -1), new c("த", -1, -1), new c("ப", -1, -1), new c("ற", -1, -1)]
+          return delete t.a_4, t.a_4 = [new u("க", -1, -1), new u("ச", -1, -1), new u("ட", -1, -1), new u("த", -1, -1), new u("ப", -1, -1), new u("ற", -1, -1)]
         }
       }, {
         key: "a_5",
         get: function() {
-          return delete n.a_5, n.a_5 = [new c("க", -1, -1), new c("ச", -1, -1), new c("ட", -1, -1), new c("த", -1, -1), new c("ப", -1, -1), new c("ற", -1, -1)]
+          return delete t.a_5, t.a_5 = [new u("க", -1, -1), new u("ச", -1, -1), new u("ட", -1, -1), new u("த", -1, -1), new u("ப", -1, -1), new u("ற", -1, -1)]
         }
       }, {
         key: "a_6",
         get: function() {
-          return delete n.a_6, n.a_6 = [new c("ய", -1, -1), new c("ர", -1, -1), new c("ல", -1, -1), new c("ள", -1, -1), new c("ழ", -1, -1), new c("வ", -1, -1)]
+          return delete t.a_6, t.a_6 = [new u("ய", -1, -1), new u("ர", -1, -1), new u("ல", -1, -1), new u("ள", -1, -1), new u("ழ", -1, -1), new u("வ", -1, -1)]
         }
       }, {
         key: "a_7",
         get: function() {
-          return delete n.a_7, n.a_7 = [new c("ங", -1, -1), new c("ஞ", -1, -1), new c("ண", -1, -1), new c("ந", -1, -1), new c("ன", -1, -1), new c("ம", -1, -1)]
+          return delete t.a_7, t.a_7 = [new u("ங", -1, -1), new u("ஞ", -1, -1), new u("ண", -1, -1), new u("ந", -1, -1), new u("ன", -1, -1), new u("ம", -1, -1)]
         }
       }, {
         key: "a_8",
         get: function() {
-          return delete n.a_8, n.a_8 = [new c("ய", -1, -1), new c("வ", -1, -1), new c("வ்", -1, -1)]
+          return delete t.a_8, t.a_8 = [new u("ய", -1, -1), new u("வ", -1, -1), new u("வ்", -1, -1)]
         }
       }, {
         key: "a_9",
         get: function() {
-          return delete n.a_9, n.a_9 = [new c("ா", -1, -1), new c("ி", -1, -1), new c("ீ", -1, -1), new c("ு", -1, -1), new c("ூ", -1, -1), new c("ெ", -1, -1), new c("ே", -1, -1), new c("ை", -1, -1)]
+          return delete t.a_9, t.a_9 = [new u("ா", -1, -1), new u("ி", -1, -1), new u("ீ", -1, -1), new u("ு", -1, -1), new u("ூ", -1, -1), new u("ெ", -1, -1), new u("ே", -1, -1), new u("ை", -1, -1)]
         }
       }, {
         key: "a_10",
         get: function() {
-          return delete n.a_10, n.a_10 = [new c("ா", -1, -1), new c("ி", -1, -1), new c("ீ", -1, -1), new c("ு", -1, -1), new c("ூ", -1, -1), new c("ெ", -1, -1), new c("ே", -1, -1), new c("ை", -1, -1)]
+          return delete t.a_10, t.a_10 = [new u("ா", -1, -1), new u("ி", -1, -1), new u("ீ", -1, -1), new u("ு", -1, -1), new u("ூ", -1, -1), new u("ெ", -1, -1), new u("ே", -1, -1), new u("ை", -1, -1)]
         }
       }, {
         key: "a_11",
         get: function() {
-          return delete n.a_11, n.a_11 = [new c("அ", -1, -1), new c("இ", -1, -1), new c("உ", -1, -1)]
+          return delete t.a_11, t.a_11 = [new u("அ", -1, -1), new u("இ", -1, -1), new u("உ", -1, -1)]
         }
       }, {
         key: "a_12",
         get: function() {
-          return delete n.a_12, n.a_12 = [new c("க", -1, -1), new c("ங", -1, -1), new c("ச", -1, -1), new c("ஞ", -1, -1), new c("த", -1, -1), new c("ந", -1, -1), new c("ப", -1, -1), new c("ம", -1, -1), new c("ய", -1, -1), new c("வ", -1, -1)]
+          return delete t.a_12, t.a_12 = [new u("க", -1, -1), new u("ங", -1, -1), new u("ச", -1, -1), new u("ஞ", -1, -1), new u("த", -1, -1), new u("ந", -1, -1), new u("ப", -1, -1), new u("ம", -1, -1), new u("ய", -1, -1), new u("வ", -1, -1)]
         }
       }, {
         key: "a_13",
         get: function() {
-          return delete n.a_13, n.a_13 = [new c("க", -1, -1), new c("ச", -1, -1), new c("ட", -1, -1), new c("த", -1, -1), new c("ப", -1, -1), new c("ற", -1, -1)]
+          return delete t.a_13, t.a_13 = [new u("க", -1, -1), new u("ச", -1, -1), new u("ட", -1, -1), new u("த", -1, -1), new u("ப", -1, -1), new u("ற", -1, -1)]
         }
       }, {
         key: "a_14",
         get: function() {
-          return delete n.a_14, n.a_14 = [new c("ா", -1, -1), new c("ே", -1, -1), new c("ோ", -1, -1)]
+          return delete t.a_14, t.a_14 = [new u("ா", -1, -1), new u("ே", -1, -1), new u("ோ", -1, -1)]
         }
       }, {
         key: "a_15",
         get: function() {
-          return delete n.a_15, n.a_15 = [new c("பி", -1, -1), new c("வி", -1, -1)]
+          return delete t.a_15, t.a_15 = [new u("பி", -1, -1), new u("வி", -1, -1)]
         }
       }, {
         key: "a_16",
         get: function() {
-          return delete n.a_16, n.a_16 = [new c("ா", -1, -1), new c("ி", -1, -1), new c("ீ", -1, -1), new c("ு", -1, -1), new c("ூ", -1, -1), new c("ெ", -1, -1), new c("ே", -1, -1), new c("ை", -1, -1)]
+          return delete t.a_16, t.a_16 = [new u("ா", -1, -1), new u("ி", -1, -1), new u("ீ", -1, -1), new u("ு", -1, -1), new u("ூ", -1, -1), new u("ெ", -1, -1), new u("ே", -1, -1), new u("ை", -1, -1)]
         }
       }, {
         key: "a_17",
         get: function() {
-          return delete n.a_17, n.a_17 = [new c("பட்ட", -1, -1), new c("பட்டண", -1, -1), new c("தான", -1, -1), new c("படிதான", 2, -1), new c("குரிய", -1, -1), new c("படி", -1, -1), new c("பற்றி", -1, -1), new c("படு", -1, -1), new c("விடு", -1, -1), new c("பட்டு", -1, -1), new c("விட்டு", -1, -1), new c("பட்டது", -1, -1), new c("ெல்லாம்", -1, -1)]
+          return delete t.a_17, t.a_17 = [new u("பட்ட", -1, -1), new u("பட்டண", -1, -1), new u("தான", -1, -1), new u("படிதான", 2, -1), new u("குரிய", -1, -1), new u("படி", -1, -1), new u("பற்றி", -1, -1), new u("படு", -1, -1), new u("விடு", -1, -1), new u("பட்டு", -1, -1), new u("விட்டு", -1, -1), new u("பட்டது", -1, -1), new u("ெல்லாம்", -1, -1)]
         }
       }, {
         key: "a_18",
         get: function() {
-          return delete n.a_18, n.a_18 = [new c("க", -1, -1), new c("ச", -1, -1), new c("ட", -1, -1), new c("த", -1, -1), new c("ப", -1, -1), new c("ற", -1, -1)]
+          return delete t.a_18, t.a_18 = [new u("க", -1, -1), new u("ச", -1, -1), new u("ட", -1, -1), new u("த", -1, -1), new u("ப", -1, -1), new u("ற", -1, -1)]
         }
       }, {
         key: "a_19",
         get: function() {
-          return delete n.a_19, n.a_19 = [new c("க", -1, -1), new c("ச", -1, -1), new c("ட", -1, -1), new c("த", -1, -1), new c("ப", -1, -1), new c("ற", -1, -1)]
+          return delete t.a_19, t.a_19 = [new u("க", -1, -1), new u("ச", -1, -1), new u("ட", -1, -1), new u("த", -1, -1), new u("ப", -1, -1), new u("ற", -1, -1)]
         }
       }, {
         key: "a_20",
         get: function() {
-          return delete n.a_20, n.a_20 = [new c("ா", -1, -1), new c("ி", -1, -1), new c("ீ", -1, -1), new c("ு", -1, -1), new c("ூ", -1, -1), new c("ெ", -1, -1), new c("ே", -1, -1), new c("ை", -1, -1)]
+          return delete t.a_20, t.a_20 = [new u("ா", -1, -1), new u("ி", -1, -1), new u("ீ", -1, -1), new u("ு", -1, -1), new u("ூ", -1, -1), new u("ெ", -1, -1), new u("ே", -1, -1), new u("ை", -1, -1)]
         }
       }, {
         key: "a_21",
         get: function() {
-          return delete n.a_21, n.a_21 = [new c("ா", -1, -1), new c("ி", -1, -1), new c("ீ", -1, -1), new c("ு", -1, -1), new c("ூ", -1, -1), new c("ெ", -1, -1), new c("ே", -1, -1), new c("ை", -1, -1)]
+          return delete t.a_21, t.a_21 = [new u("ா", -1, -1), new u("ி", -1, -1), new u("ீ", -1, -1), new u("ு", -1, -1), new u("ூ", -1, -1), new u("ெ", -1, -1), new u("ே", -1, -1), new u("ை", -1, -1)]
         }
       }, {
         key: "a_22",
         get: function() {
-          return delete n.a_22, n.a_22 = [new c("படு", -1, -1), new c("கொண்டிர்", -1, -1)]
+          return delete t.a_22, t.a_22 = [new u("படு", -1, -1), new u("கொண்டிர்", -1, -1)]
         }
       }, {
         key: "a_23",
         get: function() {
-          return delete n.a_23, n.a_23 = [new c("அ", -1, -1), new c("ஆ", -1, -1), new c("இ", -1, -1), new c("ஈ", -1, -1), new c("உ", -1, -1), new c("ஊ", -1, -1), new c("எ", -1, -1), new c("ஏ", -1, -1), new c("ஐ", -1, -1), new c("ஒ", -1, -1), new c("ஓ", -1, -1), new c("ஔ", -1, -1)]
+          return delete t.a_23, t.a_23 = [new u("அ", -1, -1), new u("ஆ", -1, -1), new u("இ", -1, -1), new u("ஈ", -1, -1), new u("உ", -1, -1), new u("ஊ", -1, -1), new u("எ", -1, -1), new u("ஏ", -1, -1), new u("ஐ", -1, -1), new u("ஒ", -1, -1), new u("ஓ", -1, -1), new u("ஔ", -1, -1)]
         }
       }, {
         key: "a_24",
         get: function() {
-          return delete n.a_24, n.a_24 = [new c("ா", -1, -1), new c("ி", -1, -1), new c("ீ", -1, -1), new c("ு", -1, -1), new c("ூ", -1, -1), new c("ெ", -1, -1), new c("ே", -1, -1), new c("ை", -1, -1)]
+          return delete t.a_24, t.a_24 = [new u("ா", -1, -1), new u("ி", -1, -1), new u("ீ", -1, -1), new u("ு", -1, -1), new u("ூ", -1, -1), new u("ெ", -1, -1), new u("ே", -1, -1), new u("ை", -1, -1)]
         }
       }, {
         key: "a_25",
         get: function() {
-          return delete n.a_25, n.a_25 = [new c("கிற", -1, -1), new c("கின்ற", -1, -1), new c("ாநின்ற", -1, -1), new c("கிற்", -1, -1), new c("கின்ற்", -1, -1), new c("ாநின்ற்", -1, -1)]
+          return delete t.a_25, t.a_25 = [new u("கிற", -1, -1), new u("கின்ற", -1, -1), new u("ாநின்ற", -1, -1), new u("கிற்", -1, -1), new u("கின்ற்", -1, -1), new u("ாநின்ற்", -1, -1)]
         }
-      }]), n
-    }(u),
-    x = function(e) {
-      function n() {
-        return i(this, n), t(this, Object.getPrototypeOf(n).apply(this, arguments))
+      }]), t
+    }(c),
+    A = function(e) {
+      function t() {
+        return r(this, t), i(this, Object.getPrototypeOf(t).apply(this, arguments))
       }
-      return r(n, e), a(n, [{
+      return s(t, e), a(t, [{
         key: "r_check_vowel_harmony$esjava$0",
         value: function() {
           var e = void 0,
-            t = void 0,
-            r = void 0,
             i = void 0,
-            a = void 0,
-            o = void 0,
             s = void 0,
-            l = void 0,
-            c = void 0,
+            r = void 0,
+            a = void 0,
+            n = void 0,
+            h = void 0,
+            o = void 0,
             u = void 0,
-            d = void 0;
+            c = void 0,
+            _ = void 0;
           e = this.limit - this.cursor;
-          B: for (;;) {
-            t = this.limit - this.cursor;
+          V: for (;;) {
+            i = this.limit - this.cursor;
             do {
-              if (!this.in_grouping_b$esjava$3(n.g_vowel, 97, 305)) break;
-              this.cursor = this.limit - t;
-              break B
+              if (!this.in_grouping_b$esjava$3(t.g_vowel, 97, 305)) break;
+              this.cursor = this.limit - i;
+              break V
             } while (!1);
-            if (this.cursor = this.limit - t, this.cursor <= this.limit_backward) return !1;
+            if (this.cursor = this.limit - i, this.cursor <= this.limit_backward) return !1;
             this.cursor--
           }
-          u: do {
-            r = this.limit - this.cursor;
-            d: do {
+          s: do {
+            s = this.limit - this.cursor;
+            t: do {
               if (!this.eq_s_b$esjava$1("a")) break;
-              H: for (;;) {
-                i = this.limit - this.cursor;
+              U: for (;;) {
+                r = this.limit - this.cursor;
                 do {
-                  if (!this.in_grouping_b$esjava$3(n.g_vowel1, 97, 305)) break;
-                  this.cursor = this.limit - i;
-                  break H
+                  if (!this.in_grouping_b$esjava$3(t.g_vowel1, 97, 305)) break;
+                  this.cursor = this.limit - r;
+                  break U
                 } while (!1);
-                if (this.cursor = this.limit - i, this.cursor <= this.limit_backward) break d;
+                if (this.cursor = this.limit - r, this.cursor <= this.limit_backward) break t;
                 this.cursor--
               }
-              break u
+              break s
             } while (!1);
-            this.cursor = this.limit - r;
-            p: do {
+            this.cursor = this.limit - s;
+            n: do {
               if (!this.eq_s_b$esjava$1("e")) break;
-              w: for (;;) {
+              j: for (;;) {
                 a = this.limit - this.cursor;
                 do {
-                  if (!this.in_grouping_b$esjava$3(n.g_vowel2, 101, 252)) break;
+                  if (!this.in_grouping_b$esjava$3(t.g_vowel2, 101, 252)) break;
                   this.cursor = this.limit - a;
-                  break w
+                  break j
                 } while (!1);
-                if (this.cursor = this.limit - a, this.cursor <= this.limit_backward) break p;
+                if (this.cursor = this.limit - a, this.cursor <= this.limit_backward) break n;
                 this.cursor--
               }
-              break u
+              break s
             } while (!1);
-            this.cursor = this.limit - r;
-            m: do {
+            this.cursor = this.limit - s;
+            o: do {
               if (!this.eq_s_b$esjava$1("ı")) break;
-              X: for (;;) {
+              G: for (;;) {
+                n = this.limit - this.cursor;
+                do {
+                  if (!this.in_grouping_b$esjava$3(t.g_vowel3, 97, 305)) break;
+                  this.cursor = this.limit - n;
+                  break G
+                } while (!1);
+                if (this.cursor = this.limit - n, this.cursor <= this.limit_backward) break o;
+                this.cursor--
+              }
+              break s
+            } while (!1);
+            this.cursor = this.limit - s;
+            C: do {
+              if (!this.eq_s_b$esjava$1("i")) break;
+              N: for (;;) {
+                h = this.limit - this.cursor;
+                do {
+                  if (!this.in_grouping_b$esjava$3(t.g_vowel4, 101, 105)) break;
+                  this.cursor = this.limit - h;
+                  break N
+                } while (!1);
+                if (this.cursor = this.limit - h, this.cursor <= this.limit_backward) break C;
+                this.cursor--
+              }
+              break s
+            } while (!1);
+            this.cursor = this.limit - s;
+            c: do {
+              if (!this.eq_s_b$esjava$1("o")) break;
+              q: for (;;) {
                 o = this.limit - this.cursor;
                 do {
-                  if (!this.in_grouping_b$esjava$3(n.g_vowel3, 97, 305)) break;
+                  if (!this.in_grouping_b$esjava$3(t.g_vowel5, 111, 117)) break;
                   this.cursor = this.limit - o;
-                  break X
+                  break q
                 } while (!1);
-                if (this.cursor = this.limit - o, this.cursor <= this.limit_backward) break m;
+                if (this.cursor = this.limit - o, this.cursor <= this.limit_backward) break c;
                 this.cursor--
               }
-              break u
+              break s
             } while (!1);
-            this.cursor = this.limit - r;
-            K: do {
-              if (!this.eq_s_b$esjava$1("i")) break;
-              W: for (;;) {
-                s = this.limit - this.cursor;
-                do {
-                  if (!this.in_grouping_b$esjava$3(n.g_vowel4, 101, 105)) break;
-                  this.cursor = this.limit - s;
-                  break W
-                } while (!1);
-                if (this.cursor = this.limit - s, this.cursor <= this.limit_backward) break K;
-                this.cursor--
-              }
-              break u
-            } while (!1);
-            this.cursor = this.limit - r;
-            E: do {
-              if (!this.eq_s_b$esjava$1("o")) break;
-              x: for (;;) {
-                l = this.limit - this.cursor;
-                do {
-                  if (!this.in_grouping_b$esjava$3(n.g_vowel5, 111, 117)) break;
-                  this.cursor = this.limit - l;
-                  break x
-                } while (!1);
-                if (this.cursor = this.limit - l, this.cursor <= this.limit_backward) break E;
-                this.cursor--
-              }
-              break u
-            } while (!1);
-            this.cursor = this.limit - r;
-            er: do {
+            this.cursor = this.limit - s;
+            H: do {
               if (!this.eq_s_b$esjava$1("\xf6")) break;
-              eu: for (;;) {
-                c = this.limit - this.cursor;
-                do {
-                  if (!this.in_grouping_b$esjava$3(n.g_vowel6, 246, 252)) break;
-                  this.cursor = this.limit - c;
-                  break eu
-                } while (!1);
-                if (this.cursor = this.limit - c, this.cursor <= this.limit_backward) break er;
-                this.cursor--
-              }
-              break u
-            } while (!1);
-            this.cursor = this.limit - r;
-            ei: do {
-              if (!this.eq_s_b$esjava$1("u")) break;
-              ed: for (;;) {
+              es: for (;;) {
                 u = this.limit - this.cursor;
                 do {
-                  if (!this.in_grouping_b$esjava$3(n.g_vowel5, 111, 117)) break;
+                  if (!this.in_grouping_b$esjava$3(t.g_vowel6, 246, 252)) break;
                   this.cursor = this.limit - u;
-                  break ed
+                  break es
                 } while (!1);
-                if (this.cursor = this.limit - u, this.cursor <= this.limit_backward) break ei;
+                if (this.cursor = this.limit - u, this.cursor <= this.limit_backward) break H;
                 this.cursor--
               }
-              break u
+              break s
             } while (!1);
-            if (this.cursor = this.limit - r, !this.eq_s_b$esjava$1("\xfc")) return !1;
-            ef: for (;;) {
-              d = this.limit - this.cursor;
+            this.cursor = this.limit - s;
+            J: do {
+              if (!this.eq_s_b$esjava$1("u")) break;
+              et: for (;;) {
+                c = this.limit - this.cursor;
+                do {
+                  if (!this.in_grouping_b$esjava$3(t.g_vowel5, 111, 117)) break;
+                  this.cursor = this.limit - c;
+                  break et
+                } while (!1);
+                if (this.cursor = this.limit - c, this.cursor <= this.limit_backward) break J;
+                this.cursor--
+              }
+              break s
+            } while (!1);
+            if (this.cursor = this.limit - s, !this.eq_s_b$esjava$1("\xfc")) return !1;
+            er: for (;;) {
+              _ = this.limit - this.cursor;
               do {
-                if (!this.in_grouping_b$esjava$3(n.g_vowel6, 246, 252)) break;
-                this.cursor = this.limit - d;
-                break ef
+                if (!this.in_grouping_b$esjava$3(t.g_vowel6, 246, 252)) break;
+                this.cursor = this.limit - _;
+                break er
               } while (!1);
-              if (this.cursor = this.limit - d, this.cursor <= this.limit_backward) return !1;
+              if (this.cursor = this.limit - _, this.cursor <= this.limit_backward) return !1;
               this.cursor--
             }
           } while (!1);
@@ -10454,23 +10486,23 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "r_mark_suffix_with_optional_n_consonant$esjava$0",
         value: function() {
           var e = void 0,
-            t = void 0,
-            r = void 0,
             i = void 0,
+            s = void 0,
+            r = void 0,
             a = void 0;
-          l: do {
+          e: do {
             e = this.limit - this.cursor;
             do {
-              if (!this.eq_s_b$esjava$1("n") || (t = this.limit - this.cursor, !this.in_grouping_b$esjava$3(n.g_vowel, 97, 305))) break;
-              this.cursor = this.limit - t;
-              break l
+              if (!this.eq_s_b$esjava$1("n") || (i = this.limit - this.cursor, !this.in_grouping_b$esjava$3(t.g_vowel, 97, 305))) break;
+              this.cursor = this.limit - i;
+              break e
             } while (!1);
-            this.cursor = this.limit - e, r = this.limit - this.cursor;
+            this.cursor = this.limit - e, s = this.limit - this.cursor;
             do {
-              if (i = this.limit - this.cursor, !this.eq_s_b$esjava$1("n")) break;
-              return this.cursor = this.limit - i, !1
+              if (r = this.limit - this.cursor, !this.eq_s_b$esjava$1("n")) break;
+              return this.cursor = this.limit - r, !1
             } while (!1);
-            if (this.cursor = this.limit - r, a = this.limit - this.cursor, this.cursor <= this.limit_backward || (this.cursor--, !this.in_grouping_b$esjava$3(n.g_vowel, 97, 305))) return !1;
+            if (this.cursor = this.limit - s, a = this.limit - this.cursor, this.cursor <= this.limit_backward || (this.cursor--, !this.in_grouping_b$esjava$3(t.g_vowel, 97, 305))) return !1;
             this.cursor = this.limit - a
           } while (!1);
           return !0
@@ -10479,23 +10511,23 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "r_mark_suffix_with_optional_s_consonant$esjava$0",
         value: function() {
           var e = void 0,
-            t = void 0,
-            r = void 0,
             i = void 0,
+            s = void 0,
+            r = void 0,
             a = void 0;
-          l: do {
+          e: do {
             e = this.limit - this.cursor;
             do {
-              if (!this.eq_s_b$esjava$1("s") || (t = this.limit - this.cursor, !this.in_grouping_b$esjava$3(n.g_vowel, 97, 305))) break;
-              this.cursor = this.limit - t;
-              break l
+              if (!this.eq_s_b$esjava$1("s") || (i = this.limit - this.cursor, !this.in_grouping_b$esjava$3(t.g_vowel, 97, 305))) break;
+              this.cursor = this.limit - i;
+              break e
             } while (!1);
-            this.cursor = this.limit - e, r = this.limit - this.cursor;
+            this.cursor = this.limit - e, s = this.limit - this.cursor;
             do {
-              if (i = this.limit - this.cursor, !this.eq_s_b$esjava$1("s")) break;
-              return this.cursor = this.limit - i, !1
+              if (r = this.limit - this.cursor, !this.eq_s_b$esjava$1("s")) break;
+              return this.cursor = this.limit - r, !1
             } while (!1);
-            if (this.cursor = this.limit - r, a = this.limit - this.cursor, this.cursor <= this.limit_backward || (this.cursor--, !this.in_grouping_b$esjava$3(n.g_vowel, 97, 305))) return !1;
+            if (this.cursor = this.limit - s, a = this.limit - this.cursor, this.cursor <= this.limit_backward || (this.cursor--, !this.in_grouping_b$esjava$3(t.g_vowel, 97, 305))) return !1;
             this.cursor = this.limit - a
           } while (!1);
           return !0
@@ -10504,23 +10536,23 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "r_mark_suffix_with_optional_y_consonant$esjava$0",
         value: function() {
           var e = void 0,
-            t = void 0,
-            r = void 0,
             i = void 0,
+            s = void 0,
+            r = void 0,
             a = void 0;
-          l: do {
+          e: do {
             e = this.limit - this.cursor;
             do {
-              if (!this.eq_s_b$esjava$1("y") || (t = this.limit - this.cursor, !this.in_grouping_b$esjava$3(n.g_vowel, 97, 305))) break;
-              this.cursor = this.limit - t;
-              break l
+              if (!this.eq_s_b$esjava$1("y") || (i = this.limit - this.cursor, !this.in_grouping_b$esjava$3(t.g_vowel, 97, 305))) break;
+              this.cursor = this.limit - i;
+              break e
             } while (!1);
-            this.cursor = this.limit - e, r = this.limit - this.cursor;
+            this.cursor = this.limit - e, s = this.limit - this.cursor;
             do {
-              if (i = this.limit - this.cursor, !this.eq_s_b$esjava$1("y")) break;
-              return this.cursor = this.limit - i, !1
+              if (r = this.limit - this.cursor, !this.eq_s_b$esjava$1("y")) break;
+              return this.cursor = this.limit - r, !1
             } while (!1);
-            if (this.cursor = this.limit - r, a = this.limit - this.cursor, this.cursor <= this.limit_backward || (this.cursor--, !this.in_grouping_b$esjava$3(n.g_vowel, 97, 305))) return !1;
+            if (this.cursor = this.limit - s, a = this.limit - this.cursor, this.cursor <= this.limit_backward || (this.cursor--, !this.in_grouping_b$esjava$3(t.g_vowel, 97, 305))) return !1;
             this.cursor = this.limit - a
           } while (!1);
           return !0
@@ -10529,23 +10561,23 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "r_mark_suffix_with_optional_U_vowel$esjava$0",
         value: function() {
           var e = void 0,
-            t = void 0,
-            r = void 0,
             i = void 0,
+            s = void 0,
+            r = void 0,
             a = void 0;
-          l: do {
+          e: do {
             e = this.limit - this.cursor;
             do {
-              if (!this.in_grouping_b$esjava$3(n.g_U, 105, 305) || (t = this.limit - this.cursor, !this.out_grouping_b$esjava$3(n.g_vowel, 97, 305))) break;
-              this.cursor = this.limit - t;
-              break l
+              if (!this.in_grouping_b$esjava$3(t.g_U, 105, 305) || (i = this.limit - this.cursor, !this.out_grouping_b$esjava$3(t.g_vowel, 97, 305))) break;
+              this.cursor = this.limit - i;
+              break e
             } while (!1);
-            this.cursor = this.limit - e, r = this.limit - this.cursor;
+            this.cursor = this.limit - e, s = this.limit - this.cursor;
             do {
-              if (i = this.limit - this.cursor, !this.in_grouping_b$esjava$3(n.g_U, 105, 305)) break;
-              return this.cursor = this.limit - i, !1
+              if (r = this.limit - this.cursor, !this.in_grouping_b$esjava$3(t.g_U, 105, 305)) break;
+              return this.cursor = this.limit - r, !1
             } while (!1);
-            if (this.cursor = this.limit - r, a = this.limit - this.cursor, this.cursor <= this.limit_backward || (this.cursor--, !this.out_grouping_b$esjava$3(n.g_vowel, 97, 305))) return !1;
+            if (this.cursor = this.limit - s, a = this.limit - this.cursor, this.cursor <= this.limit_backward || (this.cursor--, !this.out_grouping_b$esjava$3(t.g_vowel, 97, 305))) return !1;
             this.cursor = this.limit - a
           } while (!1);
           return !0
@@ -10553,67 +10585,67 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
       }, {
         key: "r_mark_possessives$esjava$0",
         value: function() {
-          return 0 !== this.find_among_b$esjava$1(n.a_0) && !!this.r_mark_suffix_with_optional_U_vowel$esjava$0()
+          return 0 !== this.find_among_b$esjava$1(t.a_0) && !!this.r_mark_suffix_with_optional_U_vowel$esjava$0()
         }
       }, {
         key: "r_mark_sU$esjava$0",
         value: function() {
-          return !!this.r_check_vowel_harmony$esjava$0() && !!this.in_grouping_b$esjava$3(n.g_U, 105, 305) && !!this.r_mark_suffix_with_optional_s_consonant$esjava$0()
+          return !!this.r_check_vowel_harmony$esjava$0() && !!this.in_grouping_b$esjava$3(t.g_U, 105, 305) && !!this.r_mark_suffix_with_optional_s_consonant$esjava$0()
         }
       }, {
         key: "r_mark_lArI$esjava$0",
         value: function() {
-          return 0 !== this.find_among_b$esjava$1(n.a_1)
+          return 0 !== this.find_among_b$esjava$1(t.a_1)
         }
       }, {
         key: "r_mark_yU$esjava$0",
         value: function() {
-          return !!this.r_check_vowel_harmony$esjava$0() && !!this.in_grouping_b$esjava$3(n.g_U, 105, 305) && !!this.r_mark_suffix_with_optional_y_consonant$esjava$0()
+          return !!this.r_check_vowel_harmony$esjava$0() && !!this.in_grouping_b$esjava$3(t.g_U, 105, 305) && !!this.r_mark_suffix_with_optional_y_consonant$esjava$0()
         }
       }, {
         key: "r_mark_nU$esjava$0",
         value: function() {
-          return !!this.r_check_vowel_harmony$esjava$0() && 0 !== this.find_among_b$esjava$1(n.a_2)
+          return !!this.r_check_vowel_harmony$esjava$0() && 0 !== this.find_among_b$esjava$1(t.a_2)
         }
       }, {
         key: "r_mark_nUn$esjava$0",
         value: function() {
-          return !!this.r_check_vowel_harmony$esjava$0() && 0 !== this.find_among_b$esjava$1(n.a_3) && !!this.r_mark_suffix_with_optional_n_consonant$esjava$0()
+          return !!this.r_check_vowel_harmony$esjava$0() && 0 !== this.find_among_b$esjava$1(t.a_3) && !!this.r_mark_suffix_with_optional_n_consonant$esjava$0()
         }
       }, {
         key: "r_mark_yA$esjava$0",
         value: function() {
-          return !!this.r_check_vowel_harmony$esjava$0() && 0 !== this.find_among_b$esjava$1(n.a_4) && !!this.r_mark_suffix_with_optional_y_consonant$esjava$0()
+          return !!this.r_check_vowel_harmony$esjava$0() && 0 !== this.find_among_b$esjava$1(t.a_4) && !!this.r_mark_suffix_with_optional_y_consonant$esjava$0()
         }
       }, {
         key: "r_mark_nA$esjava$0",
         value: function() {
-          return !!this.r_check_vowel_harmony$esjava$0() && 0 !== this.find_among_b$esjava$1(n.a_5)
+          return !!this.r_check_vowel_harmony$esjava$0() && 0 !== this.find_among_b$esjava$1(t.a_5)
         }
       }, {
         key: "r_mark_DA$esjava$0",
         value: function() {
-          return !!this.r_check_vowel_harmony$esjava$0() && 0 !== this.find_among_b$esjava$1(n.a_6)
+          return !!this.r_check_vowel_harmony$esjava$0() && 0 !== this.find_among_b$esjava$1(t.a_6)
         }
       }, {
         key: "r_mark_ndA$esjava$0",
         value: function() {
-          return !!this.r_check_vowel_harmony$esjava$0() && 0 !== this.find_among_b$esjava$1(n.a_7)
+          return !!this.r_check_vowel_harmony$esjava$0() && 0 !== this.find_among_b$esjava$1(t.a_7)
         }
       }, {
         key: "r_mark_DAn$esjava$0",
         value: function() {
-          return !!this.r_check_vowel_harmony$esjava$0() && 0 !== this.find_among_b$esjava$1(n.a_8)
+          return !!this.r_check_vowel_harmony$esjava$0() && 0 !== this.find_among_b$esjava$1(t.a_8)
         }
       }, {
         key: "r_mark_ndAn$esjava$0",
         value: function() {
-          return !!this.r_check_vowel_harmony$esjava$0() && 0 !== this.find_among_b$esjava$1(n.a_9)
+          return !!this.r_check_vowel_harmony$esjava$0() && 0 !== this.find_among_b$esjava$1(t.a_9)
         }
       }, {
         key: "r_mark_ylA$esjava$0",
         value: function() {
-          return !!this.r_check_vowel_harmony$esjava$0() && 0 !== this.find_among_b$esjava$1(n.a_10) && !!this.r_mark_suffix_with_optional_y_consonant$esjava$0()
+          return !!this.r_check_vowel_harmony$esjava$0() && 0 !== this.find_among_b$esjava$1(t.a_10) && !!this.r_mark_suffix_with_optional_y_consonant$esjava$0()
         }
       }, {
         key: "r_mark_ki$esjava$0",
@@ -10623,62 +10655,62 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
       }, {
         key: "r_mark_ncA$esjava$0",
         value: function() {
-          return !!this.r_check_vowel_harmony$esjava$0() && 0 !== this.find_among_b$esjava$1(n.a_11) && !!this.r_mark_suffix_with_optional_n_consonant$esjava$0()
+          return !!this.r_check_vowel_harmony$esjava$0() && 0 !== this.find_among_b$esjava$1(t.a_11) && !!this.r_mark_suffix_with_optional_n_consonant$esjava$0()
         }
       }, {
         key: "r_mark_yUm$esjava$0",
         value: function() {
-          return !!this.r_check_vowel_harmony$esjava$0() && 0 !== this.find_among_b$esjava$1(n.a_12) && !!this.r_mark_suffix_with_optional_y_consonant$esjava$0()
+          return !!this.r_check_vowel_harmony$esjava$0() && 0 !== this.find_among_b$esjava$1(t.a_12) && !!this.r_mark_suffix_with_optional_y_consonant$esjava$0()
         }
       }, {
         key: "r_mark_sUn$esjava$0",
         value: function() {
-          return !!this.r_check_vowel_harmony$esjava$0() && 0 !== this.find_among_b$esjava$1(n.a_13)
+          return !!this.r_check_vowel_harmony$esjava$0() && 0 !== this.find_among_b$esjava$1(t.a_13)
         }
       }, {
         key: "r_mark_yUz$esjava$0",
         value: function() {
-          return !!this.r_check_vowel_harmony$esjava$0() && 0 !== this.find_among_b$esjava$1(n.a_14) && !!this.r_mark_suffix_with_optional_y_consonant$esjava$0()
+          return !!this.r_check_vowel_harmony$esjava$0() && 0 !== this.find_among_b$esjava$1(t.a_14) && !!this.r_mark_suffix_with_optional_y_consonant$esjava$0()
         }
       }, {
         key: "r_mark_sUnUz$esjava$0",
         value: function() {
-          return 0 !== this.find_among_b$esjava$1(n.a_15)
+          return 0 !== this.find_among_b$esjava$1(t.a_15)
         }
       }, {
         key: "r_mark_lAr$esjava$0",
         value: function() {
-          return !!this.r_check_vowel_harmony$esjava$0() && 0 !== this.find_among_b$esjava$1(n.a_16)
+          return !!this.r_check_vowel_harmony$esjava$0() && 0 !== this.find_among_b$esjava$1(t.a_16)
         }
       }, {
         key: "r_mark_nUz$esjava$0",
         value: function() {
-          return !!this.r_check_vowel_harmony$esjava$0() && 0 !== this.find_among_b$esjava$1(n.a_17)
+          return !!this.r_check_vowel_harmony$esjava$0() && 0 !== this.find_among_b$esjava$1(t.a_17)
         }
       }, {
         key: "r_mark_DUr$esjava$0",
         value: function() {
-          return !!this.r_check_vowel_harmony$esjava$0() && 0 !== this.find_among_b$esjava$1(n.a_18)
+          return !!this.r_check_vowel_harmony$esjava$0() && 0 !== this.find_among_b$esjava$1(t.a_18)
         }
       }, {
         key: "r_mark_cAsInA$esjava$0",
         value: function() {
-          return 0 !== this.find_among_b$esjava$1(n.a_19)
+          return 0 !== this.find_among_b$esjava$1(t.a_19)
         }
       }, {
         key: "r_mark_yDU$esjava$0",
         value: function() {
-          return !!this.r_check_vowel_harmony$esjava$0() && 0 !== this.find_among_b$esjava$1(n.a_20) && !!this.r_mark_suffix_with_optional_y_consonant$esjava$0()
+          return !!this.r_check_vowel_harmony$esjava$0() && 0 !== this.find_among_b$esjava$1(t.a_20) && !!this.r_mark_suffix_with_optional_y_consonant$esjava$0()
         }
       }, {
         key: "r_mark_ysA$esjava$0",
         value: function() {
-          return 0 !== this.find_among_b$esjava$1(n.a_21) && !!this.r_mark_suffix_with_optional_y_consonant$esjava$0()
+          return 0 !== this.find_among_b$esjava$1(t.a_21) && !!this.r_mark_suffix_with_optional_y_consonant$esjava$0()
         }
       }, {
         key: "r_mark_ymUs_$esjava$0",
         value: function() {
-          return !!this.r_check_vowel_harmony$esjava$0() && 0 !== this.find_among_b$esjava$1(n.a_22) && !!this.r_mark_suffix_with_optional_y_consonant$esjava$0()
+          return !!this.r_check_vowel_harmony$esjava$0() && 0 !== this.find_among_b$esjava$1(t.a_22) && !!this.r_mark_suffix_with_optional_y_consonant$esjava$0()
         }
       }, {
         key: "r_mark_yken$esjava$0",
@@ -10689,179 +10721,179 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "r_stem_nominal_verb_suffixes$esjava$0",
         value: function() {
           var e = void 0,
-            t = void 0,
-            n = void 0,
-            r = void 0,
             i = void 0,
-            a = void 0,
-            o = void 0,
             s = void 0,
-            l = void 0,
-            c = void 0;
+            t = void 0,
+            r = void 0,
+            a = void 0,
+            n = void 0,
+            h = void 0,
+            o = void 0,
+            u = void 0;
           this.ket = this.cursor, this.B_continue_stemming_noun_suffixes = !0;
-          l: do {
+          e: do {
             e = this.limit - this.cursor;
-            c: do {
-              u: do {
-                t = this.limit - this.cursor;
+            i: do {
+              s: do {
+                i = this.limit - this.cursor;
                 do {
                   if (!this.r_mark_ymUs_$esjava$0()) break;
-                  break u
+                  break s
                 } while (!1);
-                this.cursor = this.limit - t;
+                this.cursor = this.limit - i;
                 do {
                   if (!this.r_mark_yDU$esjava$0()) break;
-                  break u
+                  break s
                 } while (!1);
-                this.cursor = this.limit - t;
+                this.cursor = this.limit - i;
                 do {
                   if (!this.r_mark_ysA$esjava$0()) break;
-                  break u
+                  break s
                 } while (!1);
-                if (this.cursor = this.limit - t, !this.r_mark_yken$esjava$0()) break c
+                if (this.cursor = this.limit - i, !this.r_mark_yken$esjava$0()) break i
               } while (!1);
-              break l
+              break e
             } while (!1);
             this.cursor = this.limit - e;
             do {
               if (!this.r_mark_cAsInA$esjava$0()) break;
-              F: do {
-                n = this.limit - this.cursor;
+              A: do {
+                s = this.limit - this.cursor;
                 do {
                   if (!this.r_mark_sUnUz$esjava$0()) break;
-                  break F
+                  break A
                 } while (!1);
-                this.cursor = this.limit - n;
+                this.cursor = this.limit - s;
                 do {
                   if (!this.r_mark_lAr$esjava$0()) break;
-                  break F
+                  break A
                 } while (!1);
-                this.cursor = this.limit - n;
+                this.cursor = this.limit - s;
                 do {
                   if (!this.r_mark_yUm$esjava$0()) break;
-                  break F
+                  break A
                 } while (!1);
-                this.cursor = this.limit - n;
+                this.cursor = this.limit - s;
                 do {
                   if (!this.r_mark_sUn$esjava$0()) break;
-                  break F
+                  break A
                 } while (!1);
-                this.cursor = this.limit - n;
+                this.cursor = this.limit - s;
                 do {
                   if (!this.r_mark_yUz$esjava$0()) break;
-                  break F
+                  break A
                 } while (!1);
-                this.cursor = this.limit - n
+                this.cursor = this.limit - s
               } while (!1);
               if (!this.r_mark_ymUs_$esjava$0()) break;
-              break l
+              break e
             } while (!1);
             this.cursor = this.limit - e;
             do {
               if (!this.r_mark_lAr$esjava$0()) break;
-              this.bra = this.cursor, this.slice_del$esjava$0(), r = this.limit - this.cursor;
-              g: do {
+              this.bra = this.cursor, this.slice_del$esjava$0(), t = this.limit - this.cursor;
+              u: do {
                 this.ket = this.cursor;
-                E: do {
-                  i = this.limit - this.cursor;
+                c: do {
+                  r = this.limit - this.cursor;
                   do {
                     if (!this.r_mark_DUr$esjava$0()) break;
-                    break E
+                    break c
                   } while (!1);
-                  this.cursor = this.limit - i;
+                  this.cursor = this.limit - r;
                   do {
                     if (!this.r_mark_yDU$esjava$0()) break;
-                    break E
+                    break c
                   } while (!1);
-                  this.cursor = this.limit - i;
+                  this.cursor = this.limit - r;
                   do {
                     if (!this.r_mark_ysA$esjava$0()) break;
-                    break E
+                    break c
                   } while (!1);
-                  if (this.cursor = this.limit - i, !this.r_mark_ymUs_$esjava$0()) {
-                    this.cursor = this.limit - r;
-                    break g
+                  if (this.cursor = this.limit - r, !this.r_mark_ymUs_$esjava$0()) {
+                    this.cursor = this.limit - t;
+                    break u
                   }
                 } while (!1)
               } while (!1);
               this.B_continue_stemming_noun_suffixes = !1;
-              break l
+              break e
             } while (!1);
             this.cursor = this.limit - e;
-            y: do {
+            l: do {
               if (!this.r_mark_nUz$esjava$0()) break;
-              e_: do {
+              ea: do {
                 a = this.limit - this.cursor;
                 do {
                   if (!this.r_mark_yDU$esjava$0()) break;
-                  break e_
+                  break ea
                 } while (!1);
-                if (this.cursor = this.limit - a, !this.r_mark_ysA$esjava$0()) break y
+                if (this.cursor = this.limit - a, !this.r_mark_ysA$esjava$0()) break l
               } while (!1);
-              break l
+              break e
             } while (!1);
             this.cursor = this.limit - e;
-            ep: do {
-              O: do {
-                o = this.limit - this.cursor;
+            en: do {
+              w: do {
+                n = this.limit - this.cursor;
                 do {
                   if (!this.r_mark_sUnUz$esjava$0()) break;
-                  break O
+                  break w
                 } while (!1);
-                this.cursor = this.limit - o;
+                this.cursor = this.limit - n;
                 do {
                   if (!this.r_mark_yUz$esjava$0()) break;
-                  break O
+                  break w
                 } while (!1);
-                this.cursor = this.limit - o;
+                this.cursor = this.limit - n;
                 do {
                   if (!this.r_mark_sUn$esjava$0()) break;
-                  break O
+                  break w
                 } while (!1);
-                if (this.cursor = this.limit - o, !this.r_mark_yUm$esjava$0()) break ep
+                if (this.cursor = this.limit - n, !this.r_mark_yUm$esjava$0()) break en
               } while (!1);this.bra = this.cursor,
               this.slice_del$esjava$0(),
-              s = this.limit - this.cursor;do
+              h = this.limit - this.cursor;do
                 if (this.ket = this.cursor, !this.r_mark_ymUs_$esjava$0()) {
-                  this.cursor = this.limit - s;
+                  this.cursor = this.limit - h;
                   break
                 } while (!1);
-              break l
+              break e
             } while (!1);
             if (this.cursor = this.limit - e, !this.r_mark_DUr$esjava$0()) return !1;
-            this.bra = this.cursor, this.slice_del$esjava$0(), l = this.limit - this.cursor;
+            this.bra = this.cursor, this.slice_del$esjava$0(), o = this.limit - this.cursor;
             do {
               this.ket = this.cursor;
-              T: do {
-                c = this.limit - this.cursor;
+              f: do {
+                u = this.limit - this.cursor;
                 do {
                   if (!this.r_mark_sUnUz$esjava$0()) break;
-                  break T
+                  break f
                 } while (!1);
-                this.cursor = this.limit - c;
+                this.cursor = this.limit - u;
                 do {
                   if (!this.r_mark_lAr$esjava$0()) break;
-                  break T
+                  break f
                 } while (!1);
-                this.cursor = this.limit - c;
+                this.cursor = this.limit - u;
                 do {
                   if (!this.r_mark_yUm$esjava$0()) break;
-                  break T
+                  break f
                 } while (!1);
-                this.cursor = this.limit - c;
+                this.cursor = this.limit - u;
                 do {
                   if (!this.r_mark_sUn$esjava$0()) break;
-                  break T
+                  break f
                 } while (!1);
-                this.cursor = this.limit - c;
+                this.cursor = this.limit - u;
                 do {
                   if (!this.r_mark_yUz$esjava$0()) break;
-                  break T
+                  break f
                 } while (!1);
-                this.cursor = this.limit - c
+                this.cursor = this.limit - u
               } while (!1);
               if (!this.r_mark_ymUs_$esjava$0()) {
-                this.cursor = this.limit - l;
+                this.cursor = this.limit - o;
                 break
               }
             } while (!1)
@@ -10872,110 +10904,110 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "r_stem_suffix_chain_before_ki$esjava$0",
         value: function() {
           var e = void 0,
-            t = void 0,
-            n = void 0,
-            r = void 0,
             i = void 0,
-            a = void 0,
-            o = void 0,
             s = void 0,
-            l = void 0,
-            c = void 0,
-            u = void 0;
+            t = void 0,
+            r = void 0,
+            a = void 0,
+            n = void 0,
+            h = void 0,
+            o = void 0,
+            u = void 0,
+            c = void 0;
           if (this.ket = this.cursor, !this.r_mark_ki$esjava$0()) return !1;
-          l: do {
+          e: do {
             e = this.limit - this.cursor;
             do {
               if (!this.r_mark_DA$esjava$0()) break;
-              this.bra = this.cursor, this.slice_del$esjava$0(), t = this.limit - this.cursor;
-              u: do {
+              this.bra = this.cursor, this.slice_del$esjava$0(), i = this.limit - this.cursor;
+              s: do {
                 this.ket = this.cursor;
-                d: do {
-                  n = this.limit - this.cursor;
+                t: do {
+                  s = this.limit - this.cursor;
                   do {
                     if (!this.r_mark_lAr$esjava$0()) break;
-                    this.bra = this.cursor, this.slice_del$esjava$0(), r = this.limit - this.cursor;
+                    this.bra = this.cursor, this.slice_del$esjava$0(), t = this.limit - this.cursor;
                     do
                       if (!this.r_stem_suffix_chain_before_ki$esjava$0()) {
-                        this.cursor = this.limit - r;
+                        this.cursor = this.limit - t;
                         break
                       } while (!1);
-                    break d
+                    break t
                   } while (!1);
-                  if (this.cursor = this.limit - n, !this.r_mark_possessives$esjava$0()) {
-                    this.cursor = this.limit - t;
-                    break u
+                  if (this.cursor = this.limit - s, !this.r_mark_possessives$esjava$0()) {
+                    this.cursor = this.limit - i;
+                    break s
                   }
-                  this.bra = this.cursor, this.slice_del$esjava$0(), i = this.limit - this.cursor;
+                  this.bra = this.cursor, this.slice_del$esjava$0(), r = this.limit - this.cursor;
                   do
                     if (this.ket = this.cursor, !this.r_mark_lAr$esjava$0() || (this.bra = this.cursor, this.slice_del$esjava$0(), !this.r_stem_suffix_chain_before_ki$esjava$0())) {
-                      this.cursor = this.limit - i;
+                      this.cursor = this.limit - r;
                       break
                     } while (!1)
                 } while (!1)
               } while (!1);
-              break l
+              break e
             } while (!1);
             this.cursor = this.limit - e;
             do {
               if (!this.r_mark_nUn$esjava$0()) break;
               this.bra = this.cursor, this.slice_del$esjava$0(), a = this.limit - this.cursor;
-              z: do {
+              E: do {
                 this.ket = this.cursor;
-                m: do {
-                  o = this.limit - this.cursor;
+                o: do {
+                  n = this.limit - this.cursor;
                   do {
                     if (!this.r_mark_lArI$esjava$0()) break;
                     this.bra = this.cursor, this.slice_del$esjava$0();
-                    break m
+                    break o
                   } while (!1);
-                  this.cursor = this.limit - o;
-                  en: do {
+                  this.cursor = this.limit - n;
+                  M: do {
                     this.ket = this.cursor;
-                    K: do {
-                      s = this.limit - this.cursor;
+                    C: do {
+                      h = this.limit - this.cursor;
                       do {
                         if (!this.r_mark_possessives$esjava$0()) break;
-                        break K
+                        break C
                       } while (!1);
-                      if (this.cursor = this.limit - s, !this.r_mark_sU$esjava$0()) break en
+                      if (this.cursor = this.limit - h, !this.r_mark_sU$esjava$0()) break M
                     } while (!1);
-                    this.bra = this.cursor, this.slice_del$esjava$0(), l = this.limit - this.cursor;
+                    this.bra = this.cursor, this.slice_del$esjava$0(), o = this.limit - this.cursor;
                     do
                       if (this.ket = this.cursor, !this.r_mark_lAr$esjava$0() || (this.bra = this.cursor, this.slice_del$esjava$0(), !this.r_stem_suffix_chain_before_ki$esjava$0())) {
-                        this.cursor = this.limit - l;
+                        this.cursor = this.limit - o;
                         break
                       } while (!1);
-                    break m
+                    break o
                   } while (!1);
-                  if (this.cursor = this.limit - o, !this.r_stem_suffix_chain_before_ki$esjava$0()) {
+                  if (this.cursor = this.limit - n, !this.r_stem_suffix_chain_before_ki$esjava$0()) {
                     this.cursor = this.limit - a;
-                    break z
+                    break E
                   }
                 } while (!1)
               } while (!1);
-              break l
+              break e
             } while (!1);
             if (this.cursor = this.limit - e, !this.r_mark_ndA$esjava$0()) return !1;
-            E: do {
-              c = this.limit - this.cursor;
+            c: do {
+              u = this.limit - this.cursor;
               do {
                 if (!this.r_mark_lArI$esjava$0()) break;
                 this.bra = this.cursor, this.slice_del$esjava$0();
-                break E
+                break c
               } while (!1);
-              this.cursor = this.limit - c;
+              this.cursor = this.limit - u;
               do {
                 if (!this.r_mark_sU$esjava$0()) break;
-                this.bra = this.cursor, this.slice_del$esjava$0(), u = this.limit - this.cursor;
+                this.bra = this.cursor, this.slice_del$esjava$0(), c = this.limit - this.cursor;
                 do
                   if (this.ket = this.cursor, !this.r_mark_lAr$esjava$0() || (this.bra = this.cursor, this.slice_del$esjava$0(), !this.r_stem_suffix_chain_before_ki$esjava$0())) {
-                    this.cursor = this.limit - u;
+                    this.cursor = this.limit - c;
                     break
                   } while (!1);
-                break E
+                break c
               } while (!1);
-              if (this.cursor = this.limit - c, !this.r_stem_suffix_chain_before_ki$esjava$0()) return !1
+              if (this.cursor = this.limit - u, !this.r_stem_suffix_chain_before_ki$esjava$0()) return !1
             } while (!1)
           } while (!1);
           return !0
@@ -10984,65 +11016,65 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "r_stem_noun_suffixes$esjava$0",
         value: function() {
           var e = void 0,
-            t = void 0,
-            n = void 0,
-            r = void 0,
             i = void 0,
-            a = void 0,
-            o = void 0,
             s = void 0,
-            l = void 0,
-            c = void 0,
-            u = void 0,
-            d = void 0,
-            f = void 0,
-            _ = void 0,
-            p = void 0,
+            t = void 0,
+            r = void 0,
+            a = void 0,
+            n = void 0,
             h = void 0,
-            m = void 0,
-            g = void 0,
-            E = void 0,
-            b = void 0,
-            y = void 0,
-            O = void 0,
+            o = void 0,
+            u = void 0,
+            c = void 0,
+            _ = void 0,
+            l = void 0,
+            w = void 0,
+            $ = void 0,
             v = void 0,
+            f = void 0,
+            k = void 0,
+            d = void 0,
+            b = void 0,
+            m = void 0,
+            j = void 0,
+            g = void 0,
+            p = void 0,
+            y = void 0,
             I = void 0,
-            T = void 0,
-            S = void 0,
-            A = void 0;
-          l: do {
+            q = void 0;
+          e: do {
             e = this.limit - this.cursor;
             do {
               if (this.ket = this.cursor, !this.r_mark_lAr$esjava$0()) break;
-              this.bra = this.cursor, this.slice_del$esjava$0(), t = this.limit - this.cursor;
+              this.bra = this.cursor, this.slice_del$esjava$0(), i = this.limit - this.cursor;
               do
                 if (!this.r_stem_suffix_chain_before_ki$esjava$0()) {
-                  this.cursor = this.limit - t;
+                  this.cursor = this.limit - i;
                   break
                 } while (!1);
-              break l
+              break e
             } while (!1);
             this.cursor = this.limit - e;
             do {
               if (this.ket = this.cursor, !this.r_mark_ncA$esjava$0()) break;
-              this.bra = this.cursor, this.slice_del$esjava$0(), n = this.limit - this.cursor;
-              f: do _: do {
-                r = this.limit - this.cursor;
+              this.bra = this.cursor, this.slice_del$esjava$0(), s = this.limit - this.cursor;
+              r: do a: do {
+                t = this.limit - this.cursor;
                 do {
                   if (this.ket = this.cursor, !this.r_mark_lArI$esjava$0()) break;
                   this.bra = this.cursor, this.slice_del$esjava$0();
-                  break _
+                  break a
                 } while (!1);
-                this.cursor = this.limit - r;
-                F: do {
+                this.cursor = this.limit - t;
+                A: do {
                   this.ket = this.cursor;
-                  z: do {
-                    i = this.limit - this.cursor;
+                  E: do {
+                    r = this.limit - this.cursor;
                     do {
                       if (!this.r_mark_possessives$esjava$0()) break;
-                      break z
+                      break E
                     } while (!1);
-                    if (this.cursor = this.limit - i, !this.r_mark_sU$esjava$0()) break F
+                    if (this.cursor = this.limit - r, !this.r_mark_sU$esjava$0()) break A
                   } while (!1);
                   this.bra = this.cursor, this.slice_del$esjava$0(), a = this.limit - this.cursor;
                   do
@@ -11050,223 +11082,223 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
                       this.cursor = this.limit - a;
                       break
                     } while (!1);
-                  break _
+                  break a
                 } while (!1);
-                if (this.cursor = this.limit - r, this.ket = this.cursor, !this.r_mark_lAr$esjava$0() || (this.bra = this.cursor, this.slice_del$esjava$0(), !this.r_stem_suffix_chain_before_ki$esjava$0())) {
-                  this.cursor = this.limit - n;
-                  break f
+                if (this.cursor = this.limit - t, this.ket = this.cursor, !this.r_mark_lAr$esjava$0() || (this.bra = this.cursor, this.slice_del$esjava$0(), !this.r_stem_suffix_chain_before_ki$esjava$0())) {
+                  this.cursor = this.limit - s;
+                  break r
                 }
               } while (!1); while (!1);
-              break l
+              break e
             } while (!1);
             this.cursor = this.limit - e;
-            en: do {
+            M: do {
               this.ket = this.cursor;
-              K: do {
-                o = this.limit - this.cursor;
+              C: do {
+                n = this.limit - this.cursor;
                 do {
                   if (!this.r_mark_ndA$esjava$0()) break;
-                  break K
+                  break C
                 } while (!1);
-                if (this.cursor = this.limit - o, !this.r_mark_nA$esjava$0()) break en
+                if (this.cursor = this.limit - n, !this.r_mark_nA$esjava$0()) break M
               } while (!1);
-              g: do {
-                s = this.limit - this.cursor;
+              u: do {
+                h = this.limit - this.cursor;
                 do {
                   if (!this.r_mark_lArI$esjava$0()) break;
                   this.bra = this.cursor, this.slice_del$esjava$0();
-                  break g
+                  break u
                 } while (!1);
-                this.cursor = this.limit - s;
+                this.cursor = this.limit - h;
                 do {
                   if (!this.r_mark_sU$esjava$0()) break;
-                  this.bra = this.cursor, this.slice_del$esjava$0(), l = this.limit - this.cursor;
+                  this.bra = this.cursor, this.slice_del$esjava$0(), o = this.limit - this.cursor;
                   do
                     if (this.ket = this.cursor, !this.r_mark_lAr$esjava$0() || (this.bra = this.cursor, this.slice_del$esjava$0(), !this.r_stem_suffix_chain_before_ki$esjava$0())) {
-                      this.cursor = this.limit - l;
+                      this.cursor = this.limit - o;
                       break
                     } while (!1);
-                  break g
+                  break u
                 } while (!1);
-                if (this.cursor = this.limit - s, !this.r_stem_suffix_chain_before_ki$esjava$0()) break en
+                if (this.cursor = this.limit - h, !this.r_stem_suffix_chain_before_ki$esjava$0()) break M
               } while (!1);
-              break l
+              break e
             } while (!1);
             this.cursor = this.limit - e;
-            er: do {
+            H: do {
               this.ket = this.cursor;
-              y: do {
-                c = this.limit - this.cursor;
-                do {
-                  if (!this.r_mark_ndAn$esjava$0()) break;
-                  break y
-                } while (!1);
-                if (this.cursor = this.limit - c, !this.r_mark_nU$esjava$0()) break er
-              } while (!1);
-              ei: do {
+              l: do {
                 u = this.limit - this.cursor;
                 do {
+                  if (!this.r_mark_ndAn$esjava$0()) break;
+                  break l
+                } while (!1);
+                if (this.cursor = this.limit - u, !this.r_mark_nU$esjava$0()) break H
+              } while (!1);
+              J: do {
+                c = this.limit - this.cursor;
+                do {
                   if (!this.r_mark_sU$esjava$0()) break;
-                  this.bra = this.cursor, this.slice_del$esjava$0(), d = this.limit - this.cursor;
+                  this.bra = this.cursor, this.slice_del$esjava$0(), _ = this.limit - this.cursor;
                   do
                     if (this.ket = this.cursor, !this.r_mark_lAr$esjava$0() || (this.bra = this.cursor, this.slice_del$esjava$0(), !this.r_stem_suffix_chain_before_ki$esjava$0())) {
-                      this.cursor = this.limit - d;
+                      this.cursor = this.limit - _;
                       break
                     } while (!1);
-                  break ei
+                  break J
                 } while (!1);
-                if (this.cursor = this.limit - u, !this.r_mark_lArI$esjava$0()) break er
+                if (this.cursor = this.limit - c, !this.r_mark_lArI$esjava$0()) break H
               } while (!1);
-              break l
+              break e
             } while (!1);
             this.cursor = this.limit - e;
             do {
               if (this.ket = this.cursor, !this.r_mark_DAn$esjava$0()) break;
-              this.bra = this.cursor, this.slice_del$esjava$0(), f = this.limit - this.cursor;
-              ee: do {
+              this.bra = this.cursor, this.slice_del$esjava$0(), l = this.limit - this.cursor;
+              F: do {
                 this.ket = this.cursor;
-                ea: do {
-                  _ = this.limit - this.cursor;
+                K: do {
+                  w = this.limit - this.cursor;
                   do {
                     if (!this.r_mark_possessives$esjava$0()) break;
-                    this.bra = this.cursor, this.slice_del$esjava$0(), p = this.limit - this.cursor;
+                    this.bra = this.cursor, this.slice_del$esjava$0(), $ = this.limit - this.cursor;
                     do
                       if (this.ket = this.cursor, !this.r_mark_lAr$esjava$0() || (this.bra = this.cursor, this.slice_del$esjava$0(), !this.r_stem_suffix_chain_before_ki$esjava$0())) {
-                        this.cursor = this.limit - p;
+                        this.cursor = this.limit - $;
                         break
                       } while (!1);
-                    break ea
+                    break K
                   } while (!1);
-                  this.cursor = this.limit - _;
+                  this.cursor = this.limit - w;
                   do {
                     if (!this.r_mark_lAr$esjava$0()) break;
-                    this.bra = this.cursor, this.slice_del$esjava$0(), h = this.limit - this.cursor;
+                    this.bra = this.cursor, this.slice_del$esjava$0(), v = this.limit - this.cursor;
                     do
                       if (!this.r_stem_suffix_chain_before_ki$esjava$0()) {
-                        this.cursor = this.limit - h;
+                        this.cursor = this.limit - v;
                         break
                       } while (!1);
-                    break ea
+                    break K
                   } while (!1);
-                  if (this.cursor = this.limit - _, !this.r_stem_suffix_chain_before_ki$esjava$0()) {
-                    this.cursor = this.limit - f;
-                    break ee
+                  if (this.cursor = this.limit - w, !this.r_stem_suffix_chain_before_ki$esjava$0()) {
+                    this.cursor = this.limit - l;
+                    break F
                   }
                 } while (!1)
               } while (!1);
-              break l
+              break e
             } while (!1);
             this.cursor = this.limit - e;
             eh: do {
               this.ket = this.cursor;
-              S: do {
-                m = this.limit - this.cursor;
+              k: do {
+                f = this.limit - this.cursor;
                 do {
                   if (!this.r_mark_nUn$esjava$0()) break;
-                  break S
+                  break k
                 } while (!1);
-                if (this.cursor = this.limit - m, !this.r_mark_ylA$esjava$0()) break eh
+                if (this.cursor = this.limit - f, !this.r_mark_ylA$esjava$0()) break eh
               } while (!1);
-              this.bra = this.cursor, this.slice_del$esjava$0(), g = this.limit - this.cursor;
-              em: do eo: do {
-                E = this.limit - this.cursor;
+              this.bra = this.cursor, this.slice_del$esjava$0(), k = this.limit - this.cursor;
+              eo: do Q: do {
+                d = this.limit - this.cursor;
                 do {
                   if (this.ket = this.cursor, !this.r_mark_lAr$esjava$0() || (this.bra = this.cursor, this.slice_del$esjava$0(), !this.r_stem_suffix_chain_before_ki$esjava$0())) break;
-                  break eo
+                  break Q
                 } while (!1);
-                this.cursor = this.limit - E;
-                el: do {
+                this.cursor = this.limit - d;
+                ee: do {
                   this.ket = this.cursor;
-                  eg: do {
+                  eu: do {
                     b = this.limit - this.cursor;
                     do {
                       if (!this.r_mark_possessives$esjava$0()) break;
-                      break eg
+                      break eu
                     } while (!1);
-                    if (this.cursor = this.limit - b, !this.r_mark_sU$esjava$0()) break el
+                    if (this.cursor = this.limit - b, !this.r_mark_sU$esjava$0()) break ee
                   } while (!1);
-                  this.bra = this.cursor, this.slice_del$esjava$0(), y = this.limit - this.cursor;
+                  this.bra = this.cursor, this.slice_del$esjava$0(), m = this.limit - this.cursor;
                   do
                     if (this.ket = this.cursor, !this.r_mark_lAr$esjava$0() || (this.bra = this.cursor, this.slice_del$esjava$0(), !this.r_stem_suffix_chain_before_ki$esjava$0())) {
-                      this.cursor = this.limit - y;
+                      this.cursor = this.limit - m;
                       break
                     } while (!1);
-                  break eo
+                  break Q
                 } while (!1);
-                if (this.cursor = this.limit - E, !this.r_stem_suffix_chain_before_ki$esjava$0()) {
-                  this.cursor = this.limit - g;
-                  break em
+                if (this.cursor = this.limit - d, !this.r_stem_suffix_chain_before_ki$esjava$0()) {
+                  this.cursor = this.limit - k;
+                  break eo
                 }
               } while (!1); while (!1);
-              break l
+              break e
             } while (!1);
             this.cursor = this.limit - e;
             do {
               if (this.ket = this.cursor, !this.r_mark_lArI$esjava$0()) break;
               this.bra = this.cursor, this.slice_del$esjava$0();
-              break l
+              break e
             } while (!1);
             this.cursor = this.limit - e;
             do {
               if (!this.r_stem_suffix_chain_before_ki$esjava$0()) break;
-              break l
+              break e
             } while (!1);
             this.cursor = this.limit - e;
-            eE: do {
+            ec: do {
               this.ket = this.cursor;
-              eb: do {
-                O = this.limit - this.cursor;
+              e_: do {
+                j = this.limit - this.cursor;
                 do {
                   if (!this.r_mark_DA$esjava$0()) break;
-                  break eb
+                  break e_
                 } while (!1);
-                this.cursor = this.limit - O;
+                this.cursor = this.limit - j;
                 do {
                   if (!this.r_mark_yU$esjava$0()) break;
-                  break eb
+                  break e_
                 } while (!1);
-                if (this.cursor = this.limit - O, !this.r_mark_yA$esjava$0()) break eE
+                if (this.cursor = this.limit - j, !this.r_mark_yA$esjava$0()) break ec
               } while (!1);
-              this.bra = this.cursor, this.slice_del$esjava$0(), v = this.limit - this.cursor;
-              ey: do {
+              this.bra = this.cursor, this.slice_del$esjava$0(), g = this.limit - this.cursor;
+              el: do {
                 this.ket = this.cursor;
-                eO: do {
-                  I = this.limit - this.cursor;
+                ew: do {
+                  p = this.limit - this.cursor;
                   do {
                     if (!this.r_mark_possessives$esjava$0()) break;
-                    this.bra = this.cursor, this.slice_del$esjava$0(), T = this.limit - this.cursor;
+                    this.bra = this.cursor, this.slice_del$esjava$0(), y = this.limit - this.cursor;
                     do
                       if (this.ket = this.cursor, !this.r_mark_lAr$esjava$0()) {
-                        this.cursor = this.limit - T;
+                        this.cursor = this.limit - y;
                         break
                       } while (!1);
-                    break eO
+                    break ew
                   } while (!1);
-                  if (this.cursor = this.limit - I, !this.r_mark_lAr$esjava$0()) {
-                    this.cursor = this.limit - v;
-                    break ey
+                  if (this.cursor = this.limit - p, !this.r_mark_lAr$esjava$0()) {
+                    this.cursor = this.limit - g;
+                    break el
                   }
                 } while (!1);
                 if (this.bra = this.cursor, this.slice_del$esjava$0(), this.ket = this.cursor, !this.r_stem_suffix_chain_before_ki$esjava$0()) {
-                  this.cursor = this.limit - v;
+                  this.cursor = this.limit - g;
                   break
                 }
               } while (!1);
-              break l
+              break e
             } while (!1);
             this.cursor = this.limit - e, this.ket = this.cursor;
-            ev: do {
-              S = this.limit - this.cursor;
+            e$: do {
+              I = this.limit - this.cursor;
               do {
                 if (!this.r_mark_possessives$esjava$0()) break;
-                break ev
+                break e$
               } while (!1);
-              if (this.cursor = this.limit - S, !this.r_mark_sU$esjava$0()) return !1
+              if (this.cursor = this.limit - I, !this.r_mark_sU$esjava$0()) return !1
             } while (!1);
-            this.bra = this.cursor, this.slice_del$esjava$0(), A = this.limit - this.cursor;
+            this.bra = this.cursor, this.slice_del$esjava$0(), q = this.limit - this.cursor;
             do
               if (this.ket = this.cursor, !this.r_mark_lAr$esjava$0() || (this.bra = this.cursor, this.slice_del$esjava$0(), !this.r_stem_suffix_chain_before_ki$esjava$0())) {
-                this.cursor = this.limit - A;
+                this.cursor = this.limit - q;
                 break
               } while (!1)
           } while (!1);
@@ -11276,7 +11308,7 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "r_post_process_last_consonants$esjava$0",
         value: function() {
           var e = void 0;
-          if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(n.a_23))) return !1;
+          if (this.ket = this.cursor, 0 === (e = this.find_among_b$esjava$1(t.a_23))) return !1;
           switch (this.bra = this.cursor, e) {
             case 0:
               return !1;
@@ -11298,131 +11330,131 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "r_append_U_to_stems_ending_with_d_or_g$esjava$0",
         value: function() {
           var e = void 0,
-            t = void 0,
-            r = void 0,
             i = void 0,
-            a = void 0,
-            o = void 0,
             s = void 0,
-            l = void 0,
-            c = void 0,
+            r = void 0,
+            a = void 0,
+            n = void 0,
+            h = void 0,
+            o = void 0,
             u = void 0,
-            d = void 0,
-            f = void 0,
+            c = void 0,
             _ = void 0,
-            p = void 0,
-            h = void 0;
+            l = void 0,
+            w = void 0,
+            $ = void 0,
+            v = void 0;
           e = this.limit - this.cursor;
-          l: do {
-            t = this.limit - this.cursor;
+          e: do {
+            i = this.limit - this.cursor;
             do {
               if (!this.eq_s_b$esjava$1("d")) break;
-              break l
+              break e
             } while (!1);
-            if (this.cursor = this.limit - t, !this.eq_s_b$esjava$1("g")) return !1
+            if (this.cursor = this.limit - i, !this.eq_s_b$esjava$1("g")) return !1
           } while (!1);
           this.cursor = this.limit - e;
-          u: do {
-            r = this.limit - this.cursor;
-            d: do {
-              i = this.limit - this.cursor;
-              H: for (;;) {
+          s: do {
+            s = this.limit - this.cursor;
+            t: do {
+              r = this.limit - this.cursor;
+              U: for (;;) {
                 a = this.limit - this.cursor;
                 do {
-                  if (!this.in_grouping_b$esjava$3(n.g_vowel, 97, 305)) break;
+                  if (!this.in_grouping_b$esjava$3(t.g_vowel, 97, 305)) break;
                   this.cursor = this.limit - a;
-                  break H
+                  break U
                 } while (!1);
-                if (this.cursor = this.limit - a, this.cursor <= this.limit_backward) break d;
+                if (this.cursor = this.limit - a, this.cursor <= this.limit_backward) break t;
                 this.cursor--
               }
-              p: do {
-                o = this.limit - this.cursor;
+              n: do {
+                n = this.limit - this.cursor;
                 do {
                   if (!this.eq_s_b$esjava$1("a")) break;
-                  break p
+                  break n
                 } while (!1);
-                if (this.cursor = this.limit - o, !this.eq_s_b$esjava$1("ı")) break d
+                if (this.cursor = this.limit - n, !this.eq_s_b$esjava$1("ı")) break t
               } while (!1);
-              this.cursor = this.limit - i;
-              var m = this.cursor;
-              this.insert$esjava$3(this.cursor, this.cursor, "ı"), this.cursor = m;
-              break u
+              this.cursor = this.limit - r;
+              var f = this.cursor;
+              this.insert$esjava$3(this.cursor, this.cursor, "ı"), this.cursor = f;
+              break s
             } while (!1);
-            this.cursor = this.limit - r;
-            z: do {
-              s = this.limit - this.cursor;
-              V: for (;;) {
-                l = this.limit - this.cursor;
+            this.cursor = this.limit - s;
+            E: do {
+              h = this.limit - this.cursor;
+              B: for (;;) {
+                o = this.limit - this.cursor;
                 do {
-                  if (!this.in_grouping_b$esjava$3(n.g_vowel, 97, 305)) break;
-                  this.cursor = this.limit - l;
-                  break V
+                  if (!this.in_grouping_b$esjava$3(t.g_vowel, 97, 305)) break;
+                  this.cursor = this.limit - o;
+                  break B
                 } while (!1);
-                if (this.cursor = this.limit - l, this.cursor <= this.limit_backward) break z;
+                if (this.cursor = this.limit - o, this.cursor <= this.limit_backward) break E;
                 this.cursor--
               }
-              en: do {
-                c = this.limit - this.cursor;
+              M: do {
+                u = this.limit - this.cursor;
                 do {
                   if (!this.eq_s_b$esjava$1("e")) break;
-                  break en
+                  break M
                 } while (!1);
-                if (this.cursor = this.limit - c, !this.eq_s_b$esjava$1("i")) break z
+                if (this.cursor = this.limit - u, !this.eq_s_b$esjava$1("i")) break E
               } while (!1);
-              this.cursor = this.limit - s;
-              var m = this.cursor;
-              this.insert$esjava$3(this.cursor, this.cursor, "i"), this.cursor = m;
-              break u
+              this.cursor = this.limit - h;
+              var f = this.cursor;
+              this.insert$esjava$3(this.cursor, this.cursor, "i"), this.cursor = f;
+              break s
             } while (!1);
-            this.cursor = this.limit - r;
-            D: do {
-              u = this.limit - this.cursor;
-              L: for (;;) {
-                d = this.limit - this.cursor;
+            this.cursor = this.limit - s;
+            y: do {
+              c = this.limit - this.cursor;
+              I: for (;;) {
+                _ = this.limit - this.cursor;
                 do {
-                  if (!this.in_grouping_b$esjava$3(n.g_vowel, 97, 305)) break;
-                  this.cursor = this.limit - d;
-                  break L
+                  if (!this.in_grouping_b$esjava$3(t.g_vowel, 97, 305)) break;
+                  this.cursor = this.limit - _;
+                  break I
                 } while (!1);
-                if (this.cursor = this.limit - d, this.cursor <= this.limit_backward) break D;
+                if (this.cursor = this.limit - _, this.cursor <= this.limit_backward) break y;
                 this.cursor--
               }
-              eI: do {
-                f = this.limit - this.cursor;
+              ev: do {
+                l = this.limit - this.cursor;
                 do {
                   if (!this.eq_s_b$esjava$1("o")) break;
-                  break eI
+                  break ev
                 } while (!1);
-                if (this.cursor = this.limit - f, !this.eq_s_b$esjava$1("u")) break D
+                if (this.cursor = this.limit - l, !this.eq_s_b$esjava$1("u")) break y
               } while (!1);
-              this.cursor = this.limit - u;
-              var m = this.cursor;
-              this.insert$esjava$3(this.cursor, this.cursor, "u"), this.cursor = m;
-              break u
+              this.cursor = this.limit - c;
+              var f = this.cursor;
+              this.insert$esjava$3(this.cursor, this.cursor, "u"), this.cursor = f;
+              break s
             } while (!1);
-            this.cursor = this.limit - r, _ = this.limit - this.cursor;
-            k: for (;;) {
-              p = this.limit - this.cursor;
+            this.cursor = this.limit - s, w = this.limit - this.cursor;
+            O: for (;;) {
+              $ = this.limit - this.cursor;
               do {
-                if (!this.in_grouping_b$esjava$3(n.g_vowel, 97, 305)) break;
-                this.cursor = this.limit - p;
-                break k
+                if (!this.in_grouping_b$esjava$3(t.g_vowel, 97, 305)) break;
+                this.cursor = this.limit - $;
+                break O
               } while (!1);
-              if (this.cursor = this.limit - p, this.cursor <= this.limit_backward) return !1;
+              if (this.cursor = this.limit - $, this.cursor <= this.limit_backward) return !1;
               this.cursor--
             }
-            e_: do {
-              h = this.limit - this.cursor;
+            ea: do {
+              v = this.limit - this.cursor;
               do {
                 if (!this.eq_s_b$esjava$1("\xf6")) break;
-                break e_
+                break ea
               } while (!1);
-              if (this.cursor = this.limit - h, !this.eq_s_b$esjava$1("\xfc")) return !1
+              if (this.cursor = this.limit - v, !this.eq_s_b$esjava$1("\xfc")) return !1
             } while (!1);
-            this.cursor = this.limit - _;
-            var m = this.cursor;
-            this.insert$esjava$3(this.cursor, this.cursor, "\xfc"), this.cursor = m
+            this.cursor = this.limit - w;
+            var f = this.cursor;
+            this.insert$esjava$3(this.cursor, this.cursor, "\xfc"), this.cursor = f
           } while (!1);
           return !0
         }
@@ -11430,61 +11462,61 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "r_more_than_one_syllable_word$esjava$0",
         value: function() {
           var e = void 0,
-            t = void 0;
+            i = void 0;
           e = this.cursor;
-          var r = 2;
-          G: for (;;) {
-            t = this.cursor;
-            c: do {
-              Z: for (;;) {
+          var s = 2;
+          P: for (;;) {
+            i = this.cursor;
+            i: do {
+              S: for (;;) {
                 do {
-                  if (!this.in_grouping$esjava$3(n.g_vowel, 97, 305)) break;
-                  break Z
+                  if (!this.in_grouping$esjava$3(t.g_vowel, 97, 305)) break;
+                  break S
                 } while (!1);
-                if (this.cursor >= this.limit) break c;
+                if (this.cursor >= this.limit) break i;
                 this.cursor++
               }
-              r--;
-              continue G
+              s--;
+              continue P
             } while (!1);
-            this.cursor = t;
+            this.cursor = i;
             break
           }
-          return !(r > 0) && (this.cursor = e, !0)
+          return !(s > 0) && (this.cursor = e, !0)
         }
       }, {
         key: "r_is_reserved_word$esjava$0",
         value: function() {
           var e = void 0,
-            t = void 0,
-            n = void 0;
-          l: do {
+            i = void 0,
+            s = void 0;
+          e: do {
             e = this.cursor;
-            c: do {
-              t = this.cursor;
-              Z: for (;;) {
+            i: do {
+              i = this.cursor;
+              S: for (;;) {
                 do {
                   if (!this.eq_s$esjava$1("ad")) break;
-                  break Z
+                  break S
                 } while (!1);
-                if (this.cursor >= this.limit) break c;
+                if (this.cursor >= this.limit) break i;
                 this.cursor++
               }
               if (this.I_strlen = 2, this.I_strlen !== this.limit) break;
-              this.cursor = t;
-              break l
+              this.cursor = i;
+              break e
             } while (!1);
-            this.cursor = e, n = this.cursor;
-            H: for (;;) {
+            this.cursor = e, s = this.cursor;
+            U: for (;;) {
               do {
                 if (!this.eq_s$esjava$1("soyad")) break;
-                break H
+                break U
               } while (!1);
               if (this.cursor >= this.limit) return !1;
               this.cursor++
             }
             if (this.I_strlen = 5, this.I_strlen !== this.limit) return !1;
-            this.cursor = n
+            this.cursor = s
           } while (!1);
           return !0
         }
@@ -11492,41 +11524,41 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
         key: "r_postlude$esjava$0",
         value: function() {
           var e = void 0,
-            t = void 0,
-            n = void 0;
+            i = void 0,
+            s = void 0;
           e = this.cursor;
           do {
             if (!this.r_is_reserved_word$esjava$0()) break;
             return !1
           } while (!1);
-          this.cursor = e, this.limit_backward = this.cursor, this.cursor = this.limit, t = this.limit - this.cursor;
+          this.cursor = e, this.limit_backward = this.cursor, this.cursor = this.limit, i = this.limit - this.cursor;
           do
             if (!this.r_append_U_to_stems_ending_with_d_or_g$esjava$0()) break; while (!1);
-          this.cursor = this.limit - t, n = this.limit - this.cursor;
+          this.cursor = this.limit - i, s = this.limit - this.cursor;
           do
             if (!this.r_post_process_last_consonants$esjava$0()) break; while (!1);
-          return this.cursor = this.limit - n, this.cursor = this.limit_backward, !0
+          return this.cursor = this.limit - s, this.cursor = this.limit_backward, !0
         }
       }, {
         key: "stem$esjava$0",
         value: function() {
           var e = void 0,
-            t = void 0;
+            i = void 0;
           if (!this.r_more_than_one_syllable_word$esjava$0()) return !1;
           this.limit_backward = this.cursor, this.cursor = this.limit, e = this.limit - this.cursor;
           do
             if (!this.r_stem_nominal_verb_suffixes$esjava$0()) break; while (!1);
           if (this.cursor = this.limit - e, !this.B_continue_stemming_noun_suffixes) return !1;
-          t = this.limit - this.cursor;
+          i = this.limit - this.cursor;
           do
             if (!this.r_stem_noun_suffixes$esjava$0()) break; while (!1);
-          return this.cursor = this.limit - t, this.cursor = this.limit_backward, !!this.r_postlude$esjava$0()
+          return this.cursor = this.limit - i, this.cursor = this.limit_backward, !!this.r_postlude$esjava$0()
         }
       }, {
         key: "stem",
         value: function() {
-          for (var e, t = arguments.length, r = Array(t), i = 0; i < t; i++) r[i] = arguments[i];
-          return 0 === r.length ? this.stem$esjava$0.apply(this, r) : (e = o(Object.getPrototypeOf(n.prototype), "stem", this)).call.apply(e, [this].concat(r))
+          for (var e, i = arguments.length, s = Array(i), r = 0; r < i; r++) s[r] = arguments[r];
+          return 0 === s.length ? this.stem$esjava$0.apply(this, s) : (e = n(Object.getPrototypeOf(t.prototype), "stem", this)).call.apply(e, [this].concat(s))
         }
       }, {
         key: "B_continue_stemming_noun_suffixes",
@@ -11547,201 +11579,163 @@ var n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
       }], [{
         key: "a_0",
         get: function() {
-          return delete n.a_0, n.a_0 = [new c("m", -1, -1), new c("n", -1, -1), new c("miz", -1, -1), new c("niz", -1, -1), new c("muz", -1, -1), new c("nuz", -1, -1), new c("m\xfcz", -1, -1), new c("n\xfcz", -1, -1), new c("mız", -1, -1), new c("nız", -1, -1)]
+          return delete t.a_0, t.a_0 = [new u("m", -1, -1), new u("n", -1, -1), new u("miz", -1, -1), new u("niz", -1, -1), new u("muz", -1, -1), new u("nuz", -1, -1), new u("m\xfcz", -1, -1), new u("n\xfcz", -1, -1), new u("mız", -1, -1), new u("nız", -1, -1)]
         }
       }, {
         key: "a_1",
         get: function() {
-          return delete n.a_1, n.a_1 = [new c("leri", -1, -1), new c("ları", -1, -1)]
+          return delete t.a_1, t.a_1 = [new u("leri", -1, -1), new u("ları", -1, -1)]
         }
       }, {
         key: "a_2",
         get: function() {
-          return delete n.a_2, n.a_2 = [new c("ni", -1, -1), new c("nu", -1, -1), new c("n\xfc", -1, -1), new c("nı", -1, -1)]
+          return delete t.a_2, t.a_2 = [new u("ni", -1, -1), new u("nu", -1, -1), new u("n\xfc", -1, -1), new u("nı", -1, -1)]
         }
       }, {
         key: "a_3",
         get: function() {
-          return delete n.a_3, n.a_3 = [new c("in", -1, -1), new c("un", -1, -1), new c("\xfcn", -1, -1), new c("ın", -1, -1)]
+          return delete t.a_3, t.a_3 = [new u("in", -1, -1), new u("un", -1, -1), new u("\xfcn", -1, -1), new u("ın", -1, -1)]
         }
       }, {
         key: "a_4",
         get: function() {
-          return delete n.a_4, n.a_4 = [new c("a", -1, -1), new c("e", -1, -1)]
+          return delete t.a_4, t.a_4 = [new u("a", -1, -1), new u("e", -1, -1)]
         }
       }, {
         key: "a_5",
         get: function() {
-          return delete n.a_5, n.a_5 = [new c("na", -1, -1), new c("ne", -1, -1)]
+          return delete t.a_5, t.a_5 = [new u("na", -1, -1), new u("ne", -1, -1)]
         }
       }, {
         key: "a_6",
         get: function() {
-          return delete n.a_6, n.a_6 = [new c("da", -1, -1), new c("ta", -1, -1), new c("de", -1, -1), new c("te", -1, -1)]
+          return delete t.a_6, t.a_6 = [new u("da", -1, -1), new u("ta", -1, -1), new u("de", -1, -1), new u("te", -1, -1)]
         }
       }, {
         key: "a_7",
         get: function() {
-          return delete n.a_7, n.a_7 = [new c("nda", -1, -1), new c("nde", -1, -1)]
+          return delete t.a_7, t.a_7 = [new u("nda", -1, -1), new u("nde", -1, -1)]
         }
       }, {
         key: "a_8",
         get: function() {
-          return delete n.a_8, n.a_8 = [new c("dan", -1, -1), new c("tan", -1, -1), new c("den", -1, -1), new c("ten", -1, -1)]
+          return delete t.a_8, t.a_8 = [new u("dan", -1, -1), new u("tan", -1, -1), new u("den", -1, -1), new u("ten", -1, -1)]
         }
       }, {
         key: "a_9",
         get: function() {
-          return delete n.a_9, n.a_9 = [new c("ndan", -1, -1), new c("nden", -1, -1)]
+          return delete t.a_9, t.a_9 = [new u("ndan", -1, -1), new u("nden", -1, -1)]
         }
       }, {
         key: "a_10",
         get: function() {
-          return delete n.a_10, n.a_10 = [new c("la", -1, -1), new c("le", -1, -1)]
+          return delete t.a_10, t.a_10 = [new u("la", -1, -1), new u("le", -1, -1)]
         }
       }, {
         key: "a_11",
         get: function() {
-          return delete n.a_11, n.a_11 = [new c("ca", -1, -1), new c("ce", -1, -1)]
+          return delete t.a_11, t.a_11 = [new u("ca", -1, -1), new u("ce", -1, -1)]
         }
       }, {
         key: "a_12",
         get: function() {
-          return delete n.a_12, n.a_12 = [new c("im", -1, -1), new c("um", -1, -1), new c("\xfcm", -1, -1), new c("ım", -1, -1)]
+          return delete t.a_12, t.a_12 = [new u("im", -1, -1), new u("um", -1, -1), new u("\xfcm", -1, -1), new u("ım", -1, -1)]
         }
       }, {
         key: "a_13",
         get: function() {
-          return delete n.a_13, n.a_13 = [new c("sin", -1, -1), new c("sun", -1, -1), new c("s\xfcn", -1, -1), new c("sın", -1, -1)]
+          return delete t.a_13, t.a_13 = [new u("sin", -1, -1), new u("sun", -1, -1), new u("s\xfcn", -1, -1), new u("sın", -1, -1)]
         }
       }, {
         key: "a_14",
         get: function() {
-          return delete n.a_14, n.a_14 = [new c("iz", -1, -1), new c("uz", -1, -1), new c("\xfcz", -1, -1), new c("ız", -1, -1)]
+          return delete t.a_14, t.a_14 = [new u("iz", -1, -1), new u("uz", -1, -1), new u("\xfcz", -1, -1), new u("ız", -1, -1)]
         }
       }, {
         key: "a_15",
         get: function() {
-          return delete n.a_15, n.a_15 = [new c("siniz", -1, -1), new c("sunuz", -1, -1), new c("s\xfcn\xfcz", -1, -1), new c("sınız", -1, -1)]
+          return delete t.a_15, t.a_15 = [new u("siniz", -1, -1), new u("sunuz", -1, -1), new u("s\xfcn\xfcz", -1, -1), new u("sınız", -1, -1)]
         }
       }, {
         key: "a_16",
         get: function() {
-          return delete n.a_16, n.a_16 = [new c("lar", -1, -1), new c("ler", -1, -1)]
+          return delete t.a_16, t.a_16 = [new u("lar", -1, -1), new u("ler", -1, -1)]
         }
       }, {
         key: "a_17",
         get: function() {
-          return delete n.a_17, n.a_17 = [new c("niz", -1, -1), new c("nuz", -1, -1), new c("n\xfcz", -1, -1), new c("nız", -1, -1)]
+          return delete t.a_17, t.a_17 = [new u("niz", -1, -1), new u("nuz", -1, -1), new u("n\xfcz", -1, -1), new u("nız", -1, -1)]
         }
       }, {
         key: "a_18",
         get: function() {
-          return delete n.a_18, n.a_18 = [new c("dir", -1, -1), new c("tir", -1, -1), new c("dur", -1, -1), new c("tur", -1, -1), new c("d\xfcr", -1, -1), new c("t\xfcr", -1, -1), new c("dır", -1, -1), new c("tır", -1, -1)]
+          return delete t.a_18, t.a_18 = [new u("dir", -1, -1), new u("tir", -1, -1), new u("dur", -1, -1), new u("tur", -1, -1), new u("d\xfcr", -1, -1), new u("t\xfcr", -1, -1), new u("dır", -1, -1), new u("tır", -1, -1)]
         }
       }, {
         key: "a_19",
         get: function() {
-          return delete n.a_19, n.a_19 = [new c("casına", -1, -1), new c("cesine", -1, -1)]
+          return delete t.a_19, t.a_19 = [new u("casına", -1, -1), new u("cesine", -1, -1)]
         }
       }, {
         key: "a_20",
         get: function() {
-          return delete n.a_20, n.a_20 = [new c("di", -1, -1), new c("ti", -1, -1), new c("dik", -1, -1), new c("tik", -1, -1), new c("duk", -1, -1), new c("tuk", -1, -1), new c("d\xfck", -1, -1), new c("t\xfck", -1, -1), new c("dık", -1, -1), new c("tık", -1, -1), new c("dim", -1, -1), new c("tim", -1, -1), new c("dum", -1, -1), new c("tum", -1, -1), new c("d\xfcm", -1, -1), new c("t\xfcm", -1, -1), new c("dım", -1, -1), new c("tım", -1, -1), new c("din", -1, -1), new c("tin", -1, -1), new c("dun", -1, -1), new c("tun", -1, -1), new c("d\xfcn", -1, -1), new c("t\xfcn", -1, -1), new c("dın", -1, -1), new c("tın", -1, -1), new c("du", -1, -1), new c("tu", -1, -1), new c("d\xfc", -1, -1), new c("t\xfc", -1, -1), new c("dı", -1, -1), new c("tı", -1, -1)]
+          return delete t.a_20, t.a_20 = [new u("di", -1, -1), new u("ti", -1, -1), new u("dik", -1, -1), new u("tik", -1, -1), new u("duk", -1, -1), new u("tuk", -1, -1), new u("d\xfck", -1, -1), new u("t\xfck", -1, -1), new u("dık", -1, -1), new u("tık", -1, -1), new u("dim", -1, -1), new u("tim", -1, -1), new u("dum", -1, -1), new u("tum", -1, -1), new u("d\xfcm", -1, -1), new u("t\xfcm", -1, -1), new u("dım", -1, -1), new u("tım", -1, -1), new u("din", -1, -1), new u("tin", -1, -1), new u("dun", -1, -1), new u("tun", -1, -1), new u("d\xfcn", -1, -1), new u("t\xfcn", -1, -1), new u("dın", -1, -1), new u("tın", -1, -1), new u("du", -1, -1), new u("tu", -1, -1), new u("d\xfc", -1, -1), new u("t\xfc", -1, -1), new u("dı", -1, -1), new u("tı", -1, -1)]
         }
       }, {
         key: "a_21",
         get: function() {
-          return delete n.a_21, n.a_21 = [new c("sa", -1, -1), new c("se", -1, -1), new c("sak", -1, -1), new c("sek", -1, -1), new c("sam", -1, -1), new c("sem", -1, -1), new c("san", -1, -1), new c("sen", -1, -1)]
+          return delete t.a_21, t.a_21 = [new u("sa", -1, -1), new u("se", -1, -1), new u("sak", -1, -1), new u("sek", -1, -1), new u("sam", -1, -1), new u("sem", -1, -1), new u("san", -1, -1), new u("sen", -1, -1)]
         }
       }, {
         key: "a_22",
         get: function() {
-          return delete n.a_22, n.a_22 = [new c("miş", -1, -1), new c("muş", -1, -1), new c("m\xfcş", -1, -1), new c("mış", -1, -1)]
+          return delete t.a_22, t.a_22 = [new u("miş", -1, -1), new u("muş", -1, -1), new u("m\xfcş", -1, -1), new u("mış", -1, -1)]
         }
       }, {
         key: "a_23",
         get: function() {
-          return delete n.a_23, n.a_23 = [new c("b", -1, 1), new c("c", -1, 2), new c("d", -1, 3), new c("ğ", -1, 4)]
+          return delete t.a_23, t.a_23 = [new u("b", -1, 1), new u("c", -1, 2), new u("d", -1, 3), new u("ğ", -1, 4)]
         }
       }, {
         key: "g_vowel",
         get: function() {
-          return delete n.g_vowel, n.g_vowel = [17, 65, 16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 32, 8, 0, 0, 0, 0, 0, 0, 1]
+          return delete t.g_vowel, t.g_vowel = [17, 65, 16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 32, 8, 0, 0, 0, 0, 0, 0, 1]
         }
       }, {
         key: "g_U",
         get: function() {
-          return delete n.g_U, n.g_U = [1, 16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 1]
+          return delete t.g_U, t.g_U = [1, 16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 1]
         }
       }, {
         key: "g_vowel1",
         get: function() {
-          return delete n.g_vowel1, n.g_vowel1 = [1, 64, 16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
+          return delete t.g_vowel1, t.g_vowel1 = [1, 64, 16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
         }
       }, {
         key: "g_vowel2",
         get: function() {
-          return delete n.g_vowel2, n.g_vowel2 = [17, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 130]
+          return delete t.g_vowel2, t.g_vowel2 = [17, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 130]
         }
       }, {
         key: "g_vowel3",
         get: function() {
-          return delete n.g_vowel3, n.g_vowel3 = [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
+          return delete t.g_vowel3, t.g_vowel3 = [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
         }
       }, {
         key: "g_vowel4",
         get: function() {
-          return delete n.g_vowel4, n.g_vowel4 = [17]
+          return delete t.g_vowel4, t.g_vowel4 = [17]
         }
       }, {
         key: "g_vowel5",
         get: function() {
-          return delete n.g_vowel5, n.g_vowel5 = [65]
+          return delete t.g_vowel5, t.g_vowel5 = [65]
         }
       }, {
         key: "g_vowel6",
         get: function() {
-          return delete n.g_vowel6, n.g_vowel6 = [65]
+          return delete t.g_vowel6, t.g_vowel6 = [65]
         }
-      }]), n
-    }(u);
-
-  function k(e) {
-    var t = new({
-      arabic: d,
-      armenian: f,
-      basque: _,
-      catalan: p,
-      czech: h,
-      danish: m,
-      dutch: g,
-      english: E,
-      finnish: b,
-      french: y,
-      german: O,
-      hungarian: v,
-      italian: T,
-      irish: I,
-      norwegian: S,
-      porter: A,
-      portuguese: N,
-      romanian: C,
-      russian: w,
-      spanish: P,
-      slovene: R,
-      swedish: D,
-      tamil: L,
-      turkish: x
-    })[e.toLowerCase()];
-    return {
-      stem: function(e) {
-        return t.setCurrent(e), t.stem(), t.getCurrent()
-      }
-    }
-  }
-
-  function j() {
-    return ["arabic", "armenian", "basque", "catalan", "czech", "danish", "dutch", "english", "finnish", "french", "german", "hungarian", "italian", "irish", "norwegian", "porter", "portuguese", "romanian", "russian", "spanish", "slovene", "swedish", "tamil", "turkish"]
-  }
-})
+      }]), t
+    }(c)
+}, "function" == typeof define && define.amd ? define("snowballFactory", ["exports"], s) : s(i)

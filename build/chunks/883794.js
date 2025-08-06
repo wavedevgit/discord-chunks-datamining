@@ -1,11 +1,11 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  U: () => o
+  U: () => a
 });
 var r = n(818083),
   i = n(751823);
-let a = (0, r.B)({
+let o = (0, r.B)({
   kind: "user",
   id: "2025-07_agc2",
   label: "WebRTC AGC2",
@@ -29,23 +29,23 @@ let a = (0, r.B)({
   }]
 });
 
-function o(e) {
+function a(e) {
   let {
     location: t,
     autoTrackExposure: n = !0,
     disable: r = !1
   } = e, {
-    isInHoldout: o
+    isInHoldout: a
   } = i.L.getCurrentConfig({
     location: t
   }, {
     disable: r,
     autoTrackExposure: n
   });
-  return a.getCurrentConfig({
+  return o.getCurrentConfig({
     location: t
   }, {
-    disable: r || o,
+    disable: r || a,
     autoTrackExposure: n
   })
 }

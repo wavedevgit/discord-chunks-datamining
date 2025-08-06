@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(255367),
   i = n(73800),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(481060),
   l = n(695676),
   c = n(388032),
@@ -17,12 +17,12 @@ function d(e) {
     className: t
   } = e, {
     goBack: n
-  } = (0, l.hH)(), a = i.useCallback(() => {
+  } = (0, l.hH)(), o = i.useCallback(() => {
     n()
   }, [n]);
   return (0, r.jsx)(s.P3F, {
-    onClick: a,
-    className: o()(u.clickable, t),
+    onClick: o,
+    className: a()(u.clickable, t),
     "aria-label": c.intl.string(c.t.ybUZqq),
     children: (0, r.jsx)(s.j9r, {
       size: "sm",

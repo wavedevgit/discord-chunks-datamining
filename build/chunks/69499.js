@@ -6,8 +6,8 @@ n.d(t, {
 }), n(388685), n(642613);
 var r = n(255367),
   i = n(73800),
-  a = n(442837),
-  o = n(481060),
+  o = n(442837),
+  a = n(481060),
   s = n(239091),
   l = n(585237),
   c = n(812206),
@@ -58,8 +58,8 @@ function g(e, t) {
   if (null == e) return {};
   var n, r, i = E(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -67,8 +67,8 @@ function g(e, t) {
 function E(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let b = {
@@ -84,8 +84,8 @@ class y extends i.PureComponent {
         skus: t,
         children: n,
         applicationId: i,
-        primarySKU: a,
-        onSKUSelect: o
+        primarySKU: o,
+        onSKUSelect: a
       } = e,
       s = g(e, ["skus", "children", "applicationId", "primarySKU", "onSKUSelect"]);
     return (0, r.jsx)(l.Z, m(p({
@@ -103,12 +103,12 @@ class y extends i.PureComponent {
         onSKUSelect: t,
         onMenuSelect: n
       } = this.props;
-      return (0, r.jsx)(o.v2r, {
+      return (0, r.jsx)(a.v2r, {
         onSelect: n,
         navId: "test-skus",
         "aria-label": f.intl.string(f.t.ogxXGh),
         onClose: s.Zy,
-        children: e.map(e => (0, r.jsx)(o.sNh, {
+        children: e.map(e => (0, r.jsx)(a.sNh, {
           id: "".concat(e.id),
           label: e.name,
           action: () => {
@@ -127,7 +127,7 @@ class y extends i.PureComponent {
     })
   }
 }
-let O = a.ZP.connectStores([u.Z, c.Z], e => {
+let O = o.ZP.connectStores([u.Z, c.Z], e => {
   var t;
   let {
     applicationId: n

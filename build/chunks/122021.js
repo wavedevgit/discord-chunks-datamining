@@ -7,8 +7,8 @@ n.d(t, {
 }), n(388685);
 var r = n(73800),
   i = n(392711),
-  a = n.n(i),
-  o = n(442837),
+  o = n.n(i),
+  a = n(442837),
   s = n(726542),
   l = n(487576),
   c = n(553795),
@@ -27,7 +27,7 @@ let p = {
 function g(e) {
   let {
     forUserProfile: t
-  } = e, n = (0, o.e7)([u.default], () => u.default.getCurrentUser()), r = l.c.useExperiment({
+  } = e, n = (0, a.e7)([u.default], () => u.default.getCurrentUser()), r = l.c.useExperiment({
     location: "f2f7ef_1"
   }, {
     autoTrackExposure: !1
@@ -39,7 +39,7 @@ function g(e) {
 }
 
 function E() {
-  let e = (0, o.e7)([c.Z], () => c.Z.getAccounts()),
+  let e = (0, a.e7)([c.Z], () => c.Z.getAccounts()),
     t = g({
       forUserProfile: !1
     }),
@@ -47,7 +47,7 @@ function E() {
       let t = new Set;
       return e.forEach(e => t.add(e.type)), t
     }, [e]);
-  return r.useMemo(() => a().sortBy(s.Z.filter(t), [e => {
+  return r.useMemo(() => o().sortBy(s.Z.filter(t), [e => {
     var t;
     return !(h.has(e.type) && Date.now() < (null != (t = h.get(e.type)) ? t : 0) + m)
   }, e => n.has(e.type), e => e.hasMetadata, e => !f.vbS.has(e.type), e => e.name]), [n, t])
@@ -63,14 +63,14 @@ function b(e) {
     t === _.vn.SHIFT && n(!0)
   }
 
-  function a(e) {
+  function o(e) {
     let {
       key: t
     } = e;
     t === _.vn.SHIFT && n(!1)
   }
-  return (r.useEffect(() => (window.addEventListener("keydown", i), window.addEventListener("keyup", a), () => {
-    window.removeEventListener("keydown", i), window.removeEventListener("keyup", a)
+  return (r.useEffect(() => (window.addEventListener("keydown", i), window.addEventListener("keyup", o), () => {
+    window.removeEventListener("keydown", i), window.removeEventListener("keyup", o)
   }), []), t && e === f.ABu.TWITTER) ? f.ABu.TWITTER_LEGACY : e
 }
 f.ABu.PLAYSTATION, f.ABu.XBOX, f.ABu.SPOTIFY, f.ABu.STEAM, f.ABu.TWITCH

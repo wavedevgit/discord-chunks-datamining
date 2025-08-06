@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(73800),
   i = n(106351),
-  a = n(442837),
-  o = n(434650),
+  o = n(442837),
+  a = n(434650),
   s = n(430824),
   l = n(63205),
   c = n(529726),
@@ -19,7 +19,7 @@ function f(e) {
     message: f,
     channel: _,
     enabled: p = !0
-  } = e, h = (0, a.e7)([s.Z], () => {
+  } = e, h = (0, o.e7)([s.Z], () => {
     var e;
     let t = s.Z.getGuild(_.guild_id);
     return null != (e = null == t ? void 0 : t.features.has(u.oNc.COMMUNITY)) && e
@@ -36,7 +36,7 @@ function f(e) {
   }, {
     disable: !E || !p,
     autoTrackExposure: !0
-  }).enabled, T = (0, o.O)(v, d, I);
+  }).enabled, T = (0, a.O)(v, d, I);
   return r.useEffect(() => () => {
     c.Z.handleMessageLostVisibility(b)
   }, [b]), T

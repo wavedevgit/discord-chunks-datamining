@@ -6,8 +6,8 @@ n.d(t, {
 });
 var r = n(255367),
   i = n(73800),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(66546),
   l = n(558452),
   c = n(770278),
@@ -46,11 +46,11 @@ function m(e) {
     variant: t = "default",
     animationVariant: n = "default",
     onClick: i,
-    isVisible: a,
+    isVisible: o,
     disabled: c = !1,
     disablePointerEvents: u = !1
   } = e;
-  return (0, l.Y)(a, {
+  return (0, l.Y)(o, {
     keys: e => e ? "scrim" : "empty",
     config: d.Px,
     from: {
@@ -64,7 +64,7 @@ function m(e) {
     }
   }, "instant" === n ? "animate-never" : "animate-always")((e, n) => n ? (0, r.jsx)(s.animated.div, {
     role: "none",
-    className: o()(f.scrim, {
+    className: a()(f.scrim, {
       [f.lightbox]: "lightbox" === t,
       [f.pointerEventsNone]: u
     }),

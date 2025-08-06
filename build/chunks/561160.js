@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var i = n(481060),
-  a = n(176412),
-  o = n(146173);
+  o = n(176412),
+  a = n(146173);
 
 function s(e) {
   let {
@@ -15,8 +15,8 @@ function s(e) {
     textContent: n,
     type: s
   } = e;
-  return (0, a.Bm)(s, t), (0, r.jsx)("div", {
-    className: o.emptyStateContainer,
+  return (0, o.Bm)(s, t), (0, r.jsx)("div", {
+    className: a.emptyStateContainer,
     children: (0, r.jsx)(i.Text, {
       variant: "text-md/medium",
       color: "text-muted",

@@ -5,8 +5,8 @@ n.d(t, {
 }), n(314940), n(388685);
 var r = n(255367),
   i = n(73800),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(278074),
   l = n(481060),
   c = n(492593),
@@ -23,10 +23,10 @@ function g(e) {
     expanded: t,
     onClick: n,
     count: i,
-    compact: a,
-    collapsedReason: o
+    compact: o,
+    collapsedReason: a
   } = e, u = (0, s.EQ)({
-    collapsedReason: o
+    collapsedReason: a
   }).with({
     collapsedReason: p.t.VFWjc3
   }, () => (0, r.jsx)(l.kZF, {
@@ -45,15 +45,15 @@ function g(e) {
     className: h.blockedIcon
   }));
   return (0, r.jsx)(c.Z, {
-    compact: a,
+    compact: o,
     role: "group",
     childrenMessageContent: (0, r.jsx)(f.Z, {
-      compact: a,
+      compact: o,
       className: h.blockedSystemMessage,
       iconNode: u,
       children: (0, r.jsxs)("div", {
         className: h.blockedMessageText,
-        children: [p.intl.format(o, {
+        children: [p.intl.format(a, {
           count: i
         }), " —", " ", (0, r.jsx)(l.P3F, {
           tag: "span",
@@ -70,7 +70,7 @@ function E(e) {
   var t;
   let {
     messages: n,
-    channel: a,
+    channel: o,
     compact: s = !1,
     unreadId: l,
     collapsedReason: c
@@ -78,7 +78,7 @@ function E(e) {
     hasJumpTarget: f = !1
   } = n, [p, E] = i.useState(f), b = i.useCallback(() => E(e => !e), []), y = n.hasUnread ? n.content.length - 1 : n.content.length;
   return (0, r.jsxs)("div", {
-    className: o()({
+    className: a()({
       [m.groupStart]: !0,
       [h.expanded]: p
     }),
@@ -93,8 +93,8 @@ function E(e) {
       collapsedReason: c
     }, "collapsed-message-item"), p ? n.content.map((e, t) => {
       if (e.type === _.ys_.DIVIDER && t > 0) {
-        var i, o;
-        let e = null != (o = null == (i = n.content[t + 1]) ? void 0 : i.isGroupStart) && o;
+        var i, a;
+        let e = null != (a = null == (i = n.content[t + 1]) ? void 0 : i.isGroupStart) && a;
         return (0, r.jsx)(d.Z, {
           isUnread: !0,
           isBeforeGroup: e,
@@ -106,7 +106,7 @@ function E(e) {
         return (0, r.jsx)(t, {
           className: h.__invalid_blocked,
           compact: s,
-          channel: a,
+          channel: o,
           message: e.content,
           groupId: e.groupId,
           flashKey: e.flashKey,

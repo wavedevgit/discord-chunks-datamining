@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(255367),
   i = n(73800),
-  a = n(442837),
-  o = n(481060),
+  o = n(442837),
+  a = n(481060),
   s = n(570140),
   l = n(313201),
   c = n(587446),
@@ -62,8 +62,8 @@ function v(e, t) {
   if (null == e) return {};
   var n, r, i = I(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -71,8 +71,8 @@ function v(e, t) {
 function I(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 
@@ -82,10 +82,10 @@ function T(e) {
     disabled: n,
     isEditor: E,
     renderCTAButtons: y
-  } = e, [I] = (0, a.Wu)([d.Z], () => [d.Z.getCurrentDesktopIcon()]), T = i.useRef(null);
+  } = e, [I] = (0, o.Wu)([d.Z], () => [d.Z.getCurrentDesktopIcon()]), T = i.useRef(null);
   (0, u.Z)(T, p.h1.CUSTOM_APP_ICONS);
   let S = (0, l.Dt)(),
-    A = (0, o.arW)({
+    A = (0, a.arW)({
       orientation: "horizontal",
       labelledBy: S
     }),
@@ -93,7 +93,7 @@ function T(e) {
       ref: N
     } = A,
     C = v(A, ["ref"]),
-    w = e => {
+    R = e => {
       s.Z.dispatch({
         type: "APP_ICON_UPDATED",
         id: e
@@ -112,14 +112,14 @@ function T(e) {
             className: m.headings,
             children: [!E && (0, r.jsxs)("div", {
               className: m.title,
-              children: [(0, r.jsx)(o.X6q, {
+              children: [(0, r.jsx)(a.X6q, {
                 className: m.titleText,
                 variant: "text-lg/medium",
                 children: h.intl.string(h.t.NThqT0)
               }), (0, r.jsx)(c.Z, {
                 className: m.premiumIcon
               })]
-            }), (0, r.jsx)(o.X6q, {
+            }), (0, r.jsx)(a.X6q, {
               variant: "text-sm/normal",
               className: g.subtext,
               children: h.intl.string(h.t.IgENJi)
@@ -135,7 +135,7 @@ function T(e) {
           }).map((e, t) => (0, r.jsx)(f.Z, {
             icon: e,
             isSelected: I === e.id,
-            onSelect: e => w(e),
+            onSelect: e => R(e),
             disabled: n,
             tabIndex: 0 !== t || n ? void 0 : 0,
             locked: !1

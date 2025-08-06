@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(433517),
   i = n(147913),
-  a = n(594174),
-  o = n(918505),
+  o = n(594174),
+  a = n(918505),
   s = n(548161),
   l = n(801461);
 
@@ -26,12 +26,12 @@ function f() {
 }
 
 function _() {
-  if (!o.w8.getCurrentConfig({
+  if (!a.w8.getCurrentConfig({
       location: "b9eb97_1"
     }, {
       autoTrackExposure: !1
     }).enabled) return !1;
-  let e = a.default.getCurrentUser();
+  let e = o.default.getCurrentUser();
   if (null == e || e.hasUniqueUsername() || !e.hasVerifiedEmailOrPhone()) return !1;
   let t = d,
     n = r.K.get(t);

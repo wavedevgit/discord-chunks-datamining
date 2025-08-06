@@ -13,7 +13,7 @@ n.d(t, {
 var r = n(97519),
   i = n(296574);
 
-function a(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -22,14 +22,14 @@ function a(e, t, n) {
   }) : e[t] = n, e
 }
 
-function o(e) {
+function a(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      a(e, t, n[t])
+      o(e, t, n[t])
     })
   }
   return e
@@ -85,7 +85,7 @@ function p() {
 
 function h(e) {
   c.setState(t => ({
-    channelDismissTimestamps: l(o({}, t.channelDismissTimestamps), {
+    channelDismissTimestamps: l(a({}, t.channelDismissTimestamps), {
       [e]: Date.now()
     })
   }))
@@ -93,7 +93,7 @@ function h(e) {
 
 function m(e) {
   c.setState(t => ({
-    userDismissTimestamps: l(o({}, t.userDismissTimestamps), {
+    userDismissTimestamps: l(a({}, t.userDismissTimestamps), {
       [e]: Date.now()
     }),
     globalDismissTimestamp: Date.now()
@@ -103,7 +103,7 @@ function m(e) {
 function g(e) {
   let t = Array.from(e).reduce((e, t) => (e[t] = Date.now(), e), {});
   c.setState(e => ({
-    userDismissTimestamps: o({}, e.userDismissTimestamps, t),
+    userDismissTimestamps: a({}, e.userDismissTimestamps, t),
     globalDismissTimestamp: Date.now()
   }))
 }

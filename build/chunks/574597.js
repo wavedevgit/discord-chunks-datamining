@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(255367),
   i = n(73800),
-  a = n(481060),
-  o = n(129861),
+  o = n(481060),
+  a = n(129861),
   s = n(91218),
   l = n(829883),
   c = n(518738),
@@ -58,8 +58,8 @@ function T(e) {
       if ((null == e ? void 0 : e.type) === g.tM.USER) {
         let i = h.default.getUser(e.value);
         if (null == i) return;
-        return (0, r.jsx)(a.qEK, {
-          size: n ? a.EFr.SIZE_16 : a.EFr.SIZE_24,
+        return (0, r.jsx)(o.qEK, {
+          size: n ? o.EFr.SIZE_16 : o.EFr.SIZE_24,
           src: i.getAvatarURL(null == S ? void 0 : S.id, t),
           status: n ? null : p.Z.getStatus(i.id),
           "aria-hidden": !0
@@ -69,8 +69,8 @@ function T(e) {
         var i;
         let n = null != S ? f.Z.getRole(S.id, e.value) : void 0;
         if (null == n || null == S) return;
-        let o = (0, l._b)(S, n) ? (0, c.Kz)(n, t) : null;
-        return null != o ? (0, r.jsx)(s.Z, I({}, o)) : (0, r.jsx)(a.lZ8, {
+        let a = (0, l._b)(S, n) ? (0, c.Kz)(n, t) : null;
+        return null != a ? (0, r.jsx)(s.Z, I({}, a)) : (0, r.jsx)(o.lZ8, {
           size: "custom",
           color: null != (i = n.colorString) ? i : y.Pbq,
           height: t,
@@ -78,11 +78,11 @@ function T(e) {
         })
       }
     },
-    w = e => {
+    R = e => {
       let t = null;
       if (e.type === g.tM.USER) {
         let n = h.default.getUser(e.value);
-        null != n && (t = (0, r.jsx)(o.Z, {
+        null != n && (t = (0, r.jsx)(a.Z, {
           className: O.tag,
           usernameClass: O.username,
           discriminatorClass: O.discriminator,
@@ -95,7 +95,7 @@ function T(e) {
           i = null == n ? null : null == A ? void 0 : A[n.id];
         null != i && (t = (0, r.jsxs)("div", {
           className: O.roleCountContainer,
-          children: [(0, r.jsx)(a.tBG, {
+          children: [(0, r.jsx)(o.tBG, {
             size: "sm",
             color: "currentColor",
             className: O.roleCountIcon
@@ -113,12 +113,12 @@ function T(e) {
         }), t]
       })
     },
-    R = i.useMemo(() => (0, E.tx)(e.defaultValues, null == S ? void 0 : S.id), [e.defaultValues, S]);
+    P = i.useMemo(() => (0, E.tx)(e.defaultValues, null == S ? void 0 : S.id), [e.defaultValues, S]);
   return (0, r.jsx)(b.ZP, {
     selectActionComponent: e,
     queryOptions: N,
     renderIcon: C,
-    renderOptionLabel: w,
-    defaultValues: R
+    renderOptionLabel: R,
+    defaultValues: P
   })
 }

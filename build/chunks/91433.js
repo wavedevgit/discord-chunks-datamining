@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(255367),
   i = n(73800),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(755721),
   l = n(481060),
   c = n(906732),
@@ -24,13 +24,13 @@ function b(e) {
   let {
     user: t,
     guildId: n,
-    channelId: a,
+    channelId: o,
     applicationId: b,
     isGameRelationship: y = !1,
     className: O
   } = e, {
     themeType: v
-  } = (0, h.z)(), I = v === m.lY.MODAL_V2, T = _.ZP.getName(n, a, t), {
+  } = (0, h.z)(), I = v === m.lY.MODAL_V2, T = _.ZP.getName(n, o, t), {
     trackUserProfileAction: S
   } = (0, p.KZ)(), {
     newestAnalyticsLocation: A
@@ -42,18 +42,18 @@ function b(e) {
     applicationId: b,
     isGameRelationship: y,
     location: A
-  }), w = i.useCallback(() => {
+  }), R = i.useCallback(() => {
     N(), S({
       action: y ? "ACCEPT_GAME_FRIEND_REQUEST" : "ACCEPT_FRIEND_REQUEST"
     })
-  }, [N, y, S]), R = i.useCallback(() => {
+  }, [N, y, S]), P = i.useCallback(() => {
     C(), S({
       action: y ? "IGNORE_GAME_FRIEND_REQUEST" : "IGNORE_FRIEND_REQUEST"
     })
-  }, [C, y, S]), P = null != b, D = (0, u.q)(b);
-  return P && null == D ? null : (0, r.jsxs)("div", {
-    className: o()(E.container, O),
-    children: [P ? (0, r.jsx)(l.Text, {
+  }, [C, y, S]), w = null != b, D = (0, u.q)(b);
+  return w && null == D ? null : (0, r.jsxs)("div", {
+    className: a()(E.container, O),
+    children: [w ? (0, r.jsx)(l.Text, {
       variant: "text-sm/normal",
       children: g.intl.format(y ? g.t.syHjLC : g.t.V15uUF, {
         username: T,
@@ -73,17 +73,17 @@ function b(e) {
       className: E.buttonContainer,
       children: [(0, r.jsx)(s.zx, {
         look: s.zx.Looks.FILLED,
-        color: I ? s.zx.Colors.PRIMARY : o()(s.zx.Colors.BRAND, E.color),
+        color: I ? s.zx.Colors.PRIMARY : a()(s.zx.Colors.BRAND, E.color),
         size: s.zx.Sizes.SMALL,
         className: E.button,
-        onClick: w,
+        onClick: R,
         children: g.intl.string(g.t.ZcibdX)
       }), (0, r.jsx)(s.zx, {
         look: s.zx.Looks.FILLED,
         color: s.zx.Colors.PRIMARY,
         size: s.zx.Sizes.SMALL,
         className: E.button,
-        onClick: R,
+        onClick: P,
         children: g.intl.string(g.t.xuio0N)
       })]
     })]

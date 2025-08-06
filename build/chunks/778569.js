@@ -1,20 +1,20 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => o
+  Z: () => a
 }), n(388685);
 var r = n(73800),
   i = n(81063);
-let a = ["embedded_cover", "embedded_background"];
+let o = ["embedded_cover", "embedded_background"];
 
-function o(e) {
+function a(e) {
   let {
     applicationId: t,
     size: n,
-    names: o = a
-  } = e, [s, l] = r.useState(null), [c, u] = r.useState(!0), d = (0, i.xF)(t, s, n), f = c ? "loading" : null != d ? "fetched" : "not-found", _ = r.useRef(o);
+    names: a = o
+  } = e, [s, l] = r.useState(null), [c, u] = r.useState(!0), d = (0, i.xF)(t, s, n), f = c ? "loading" : null != d ? "fetched" : "not-found", _ = r.useRef(a);
   return r.useEffect(() => {
-    _.current = o
+    _.current = a
   }), r.useEffect(() => {
     let {
       current: e
