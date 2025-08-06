@@ -39,7 +39,7 @@ function j(e) {
   }
   return e
 }
-class C extends(i = s.PureComponent) {
+class E extends(i = s.PureComponent) {
   render() {
     let {
       paymentSource: e,
@@ -93,12 +93,12 @@ class C extends(i = s.PureComponent) {
     })
   }
 }
-_(C, "defaultProps", {
+_(E, "defaultProps", {
   isEditing: !1,
   hideDivider: !1,
   onEditClick: () => {}
 });
-class E extends s.PureComponent {
+class C extends s.PureComponent {
   renderFooter() {
     let {
       paymentSources: e
@@ -128,7 +128,7 @@ class E extends s.PureComponent {
       removing: i,
       submitting: s,
       premiumSubscriptionPaymentSourceId: a
-    } = this.props, o = l().values(t).sort((t, n) => t.id === e ? -1 : n.id === e ? 1 : p.default.compare(t.id, n.id)), d = this.state.editingPayment, u = o.findIndex(e => e.id === d), m = o.map((t, l) => (0, r.jsx)(C, {
+    } = this.props, o = l().values(t).sort((t, n) => t.id === e ? -1 : n.id === e ? 1 : p.default.compare(t.id, n.id)), d = this.state.editingPayment, u = o.findIndex(e => e.id === d), m = o.map((t, l) => (0, r.jsx)(E, {
       locale: n,
       paymentSource: t,
       isDefault: e === t.id,
@@ -219,4 +219,4 @@ class E extends s.PureComponent {
     })
   }
 }
-let O = E
+let O = C

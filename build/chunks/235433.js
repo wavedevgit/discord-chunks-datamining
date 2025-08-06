@@ -1,6 +1,6 @@
 /** Chunk was on 75708 **/
 n.d(t, {
-  Z: () => h
+  Z: () => b
 });
 var i = n(255367),
   r = n(73800),
@@ -9,47 +9,49 @@ var i = n(255367),
   l = n(594928),
   o = n(922626),
   c = n(829716),
-  d = n(74538),
-  u = n(993413),
-  m = n(388032),
-  p = n(698282),
-  g = n(401609);
+  d = n(626135),
+  u = n(74538),
+  m = n(993413),
+  p = n(981631),
+  g = n(388032),
+  h = n(698282),
+  f = n(401609);
 
-function h(e) {
+function b(e) {
   let {
     user: t,
     className: n
-  } = e, h = l.J.useExperiment({
+  } = e, b = l.J.useExperiment({
     location: "DisplayNameStylesSection"
-  }).enabled, f = d.ZP.canUsePremiumProfileCustomization(t), {
-    analyticsLocations: b
-  } = (0, a.ZP)(), x = null != t.displayNameStyles, {
-    handleApplyDisplayNameStyles: _,
-    isApplying: j
-  } = (0, o.Z)({}), C = (0, r.useCallback)(() => {
-    (0, c.I)({
-      analyticsLocations: b
+  }).enabled, x = u.ZP.canUsePremiumProfileCustomization(t), {
+    analyticsLocations: _
+  } = (0, a.ZP)(), j = null != t.displayNameStyles, {
+    handleApplyDisplayNameStyles: E,
+    isApplying: C
+  } = (0, o.Z)({}), O = (0, r.useCallback)(() => {
+    d.default.track(p.rMx.DISPLAY_NAME_STYLES_FROM_SETTINGS), (0, c.I)({
+      analyticsLocations: _
     })
-  }, [b]), E = (0, r.useCallback)(() => {
-    _(null)
-  }, [_]);
-  return h || x ? (0, i.jsx)(u.Z, {
-    title: m.intl.string(p.default["86GtGB"]),
+  }, [_]), v = (0, r.useCallback)(() => {
+    E(null), d.default.track(p.rMx.DISPLAY_NAME_STYLES_REMOVED)
+  }, [E]);
+  return b || j ? (0, i.jsx)(m.Z, {
+    title: g.intl.string(h.default["86GtGB"]),
     className: n,
-    showPremiumIcon: f,
+    showPremiumIcon: x,
     children: (0, i.jsxs)("div", {
-      className: g.buttonsContainer,
-      children: [h && (0, i.jsx)(s.zxk, {
+      className: f.buttonsContainer,
+      children: [b && (0, i.jsx)(s.zxk, {
         variant: "primary",
         size: "sm",
-        text: m.intl.string(p.default.vJqrIi),
-        onClick: C
-      }), x && (0, i.jsx)(s.zxk, {
+        text: g.intl.string(h.default.vJqrIi),
+        onClick: O
+      }), j && (0, i.jsx)(s.zxk, {
         variant: "secondary",
         size: "sm",
-        text: m.intl.string(p.default.ymq8WV),
-        onClick: E,
-        loading: j
+        text: g.intl.string(h.default.ymq8WV),
+        onClick: v,
+        loading: C
       })]
     })
   }) : null

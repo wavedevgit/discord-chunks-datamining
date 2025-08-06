@@ -24,12 +24,12 @@ let g = () => {
       paymentsBlocked: f,
       planId: b,
       handleCancellation: x
-    } = (0, d.a)(), [_, j] = (0, r.useState)(!1), [C, E] = (0, r.useState)(!1), O = async () => {
-      j(!0), E(!1);
+    } = (0, d.a)(), [_, j] = (0, r.useState)(!1), [E, C] = (0, r.useState)(!1), O = async () => {
+      j(!0), C(!1);
       try {
         await x(), n()
       } catch (e) {
-        E(!0), j(!1)
+        C(!0), j(!1)
       }
     }, v = g.items.some(e => {
       let {
@@ -67,7 +67,7 @@ let g = () => {
       subtitle: h(f, l, g),
       actions: S,
       onClose: async () => n(),
-      children: C ? (0, i.jsx)(s.k, {
+      children: E ? (0, i.jsx)(s.k, {
         children: p.intl.string(p.t["5mlOCQ"])
       }) : null
     })

@@ -53,37 +53,37 @@ function _(e, t) {
 function j(e) {
   let {
     user: t
-  } = e, s = (0, d.Z)(), j = (0, u.VM)(), C = (0, l.e7)([c.default], () => c.default.getCurrentUser()), E = r.useCallback(() => {
-    a()(void 0 !== C, "User must be logged in to accept a link request"), (0, o.ZDy)(async () => {
+  } = e, s = (0, d.Z)(), j = (0, u.VM)(), E = (0, l.e7)([c.default], () => c.default.getCurrentUser()), C = r.useCallback(() => {
+    a()(void 0 !== E, "User must be logged in to accept a link request"), (0, o.ZDy)(async () => {
       let {
         default: e
       } = await n.e("59716").then(n.bind(n, 275370));
       return n => (0, i.jsx)(e, _(x({}, n), {
-        currentUser: C,
+        currentUser: E,
         otherUser: t
       }))
     })
-  }, [C, t]), O = r.useCallback(() => {
-    a()(void 0 !== C, "User must be logged in to decline a link request"), (0, o.ZDy)(async () => {
+  }, [E, t]), O = r.useCallback(() => {
+    a()(void 0 !== E, "User must be logged in to decline a link request"), (0, o.ZDy)(async () => {
       let {
         default: e
       } = await n.e("958").then(n.bind(n, 4526));
       return n => (0, i.jsx)(e, _(x({}, n), {
-        currentUser: C,
+        currentUser: E,
         otherUser: t
       }))
     })
-  }, [C, t]), v = r.useCallback(() => {
-    a()(void 0 !== C, "User must be logged in to decline a link request"), (0, o.ZDy)(async () => {
+  }, [E, t]), v = r.useCallback(() => {
+    a()(void 0 !== E, "User must be logged in to decline a link request"), (0, o.ZDy)(async () => {
       let {
         default: e
       } = await n.e("69015").then(n.bind(n, 247265));
       return n => (0, i.jsx)(e, _(x({}, n), {
-        currentUser: C,
+        currentUser: E,
         otherUser: t
       }))
     })
-  }, [C, t]);
+  }, [E, t]);
   return (0, i.jsxs)("div", {
     className: b.container,
     children: [(0, i.jsx)("div", {
@@ -104,7 +104,7 @@ function j(e) {
           icon: o.dz2,
           className: b.__invalid_actionAccept,
           tooltip: f.intl.string(h.default.krWQZG),
-          onClick: E
+          onClick: C
         }), (0, i.jsx)(m.Z, {
           icon: o.Dio,
           className: b.__invalid_actionDeny,

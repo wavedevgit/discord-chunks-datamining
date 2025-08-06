@@ -24,14 +24,14 @@ let j = r.forwardRef((e, t) => {
     className: n,
     isFooterVisible: s,
     isDarkMode: j,
-    isReducedMotion: C,
-    subscriptionTier: E
+    isReducedMotion: E,
+    subscriptionTier: C
   } = e, {
     analyticsLocations: O
   } = (0, c.ZP)(o.Z.PREMIUM_MARKETING_FOOTER_CTA), v = (0, m.Nx)(), S = (0, u.rO)(), T = r.useRef(null), [I, N] = r.useState(!1);
   return r.useEffect(() => {
-    !s || C || I || null == T.current || T.current.play()
-  }, [s, C, I]), (0, i.jsx)(c.Gt, {
+    !s || E || I || null == T.current || T.current.play()
+  }, [s, E, I]), (0, i.jsx)(c.Gt, {
     value: O,
     children: (0, i.jsxs)("div", {
       ref: t,
@@ -42,7 +42,7 @@ let j = r.forwardRef((e, t) => {
         color: "header-primary",
         children: h.intl.string(h.t.lEw32t)
       }), (0, i.jsx)(p.PK, {
-        subscriptionTier: E,
+        subscriptionTier: C,
         inOfferExperience: v,
         containerClassName: f.footerCTAContainer,
         isApplicationHome: !0,

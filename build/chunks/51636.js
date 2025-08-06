@@ -20,8 +20,8 @@ var i = n(255367),
   x = n(391110),
   _ = n(484239),
   j = n(658370),
-  C = n(981631),
-  E = n(921944),
+  E = n(981631),
+  C = n(921944),
   O = n(388032),
   v = n(593595);
 
@@ -69,11 +69,11 @@ let I = r.memo(e => {
     onHover: U,
     onUnhover: V
   } = (0, f.Z)(5), G = (0, l.debounce)(() => {
-    g.default.track(C.rMx.PREMIUM_MARKETING_WHAT_IS_NEW_CARD_HOVERED, {
+    g.default.track(E.rMx.PREMIUM_MARKETING_WHAT_IS_NEW_CARD_HOVERED, {
       card_type: (0, l.snakeCase)(t)
     })
   }, 800), F = (0, l.debounce)(() => {
-    null != j && g.default.track(C.rMx.PERK_DISCOVERABILITY_CARD_CTA_CLICKED, {
+    null != j && g.default.track(E.rMx.PERK_DISCOVERABILITY_CARD_CTA_CLICKED, {
       card_type: (0, l.snakeCase)(t),
       function_name: (0, l.snakeCase)(j.name)
     })
@@ -87,9 +87,9 @@ let I = r.memo(e => {
   });
   let H = k !== s || null == s || R;
   return (r.useEffect(() => {
-    y && A && (D(!0), g.default.track(C.rMx.PREMIUM_MARKETING_PERK_CARD_FLIPPED, {
+    y && A && (D(!0), g.default.track(E.rMx.PREMIUM_MARKETING_PERK_CARD_FLIPPED, {
       card_type: t
-    }), null != s && L(E.L.TAKE_ACTION))
+    }), null != s && L(C.L.TAKE_ACTION))
   }, [y, A, s, t, L]), (0, m.Z)({
     type: o.ImpressionTypes.VIEW,
     name: o.ImpressionNames.PERK_DISCOVERABILITY_CARD,
@@ -151,9 +151,9 @@ let I = r.memo(e => {
           [v.reducedMotion]: y
         }),
         onTransitionEnd: e => {
-          A && "transform" === e.propertyName && e.target.classList.contains(v.flipCard) && (D(!0), g.default.track(C.rMx.PREMIUM_MARKETING_PERK_CARD_FLIPPED, {
+          A && "transform" === e.propertyName && e.target.classList.contains(v.flipCard) && (D(!0), g.default.track(E.rMx.PREMIUM_MARKETING_PERK_CARD_FLIPPED, {
             card_type: t
-          }), null != s && L(E.L.TAKE_ACTION))
+          }), null != s && L(C.L.TAKE_ACTION))
         },
         children: [(0, i.jsx)("div", {
           className: v.flipCardHidden,
@@ -198,17 +198,17 @@ let N = r.forwardRef((e, t) => {
     className: g,
     perkComponent: f,
     cardVariant: b,
-    cardType: C,
-    onClick: E,
+    cardType: E,
+    onClick: C,
     backgroundImage: O,
     pillText: S,
     perkImage: T,
     imageOverlayText: I,
     hasNitroGradientBackground: N
-  } = e, y = C === x.gM.CARD_CAROUSEL_FIRST_ROW || C === x.gM.CARD_CAROUSEL_SECOND_ROW || C === x.gM.CARD_CAROUSEL_THIRD_ROW, A = "" !== o || "" !== c || "" !== l && b === x.zW.REWARD, P = (0, h._)(b);
+  } = e, y = E === x.gM.CARD_CAROUSEL_FIRST_ROW || E === x.gM.CARD_CAROUSEL_SECOND_ROW || E === x.gM.CARD_CAROUSEL_THIRD_ROW, A = "" !== o || "" !== c || "" !== l && b === x.zW.REWARD, P = (0, h._)(b);
   return (0, i.jsxs)(d.P3F, {
     className: a()(v.card, g, null == (n = P.cardContainer) ? void 0 : n.className, {
-      [v.clickable]: null != E,
+      [v.clickable]: null != C,
       [v.hideOverflow]: y,
       [v.nitroGradientBackground]: N
     }),
@@ -216,7 +216,7 @@ let N = r.forwardRef((e, t) => {
     style: {
       backgroundImage: null != O ? "url(".concat(O, ")") : void 0
     },
-    onClick: E,
+    onClick: C,
     children: [null != S && (0, i.jsx)(d.Text, {
       variant: "text-xs/semibold",
       className: v.pill,

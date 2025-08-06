@@ -19,8 +19,8 @@ var i, r = n(255367),
   x = n(823379),
   _ = n(464179),
   j = n(211667),
-  C = n(244526),
-  E = n(388032),
+  E = n(244526),
+  C = n(388032),
   O = n(257646);
 
 function v(e, t, n) {
@@ -89,7 +89,7 @@ class N extends(i = s.PureComponent) {
       children: [(0, r.jsx)(m.Text, {
         className: O.sectionHeader,
         variant: "text-sm/normal",
-        children: E.intl.string(E.t["50Auo6"])
+        children: C.intl.string(C.t["50Auo6"])
       }), (0, r.jsx)(_.ZP, T(S({}, e), {
         mode: _.ZP.Modes.EDIT,
         layout: i,
@@ -110,7 +110,7 @@ class N extends(i = s.PureComponent) {
       children: [(0, r.jsx)(m.Text, {
         className: O.sectionHeader,
         variant: "text-sm/normal",
-        children: E.intl.string(E.t.Fo2YPz)
+        children: C.intl.string(C.t.Fo2YPz)
       }), (0, r.jsx)(j.Z, {
         expirationDate: n,
         onCardInfoChange: this.handleExpirationDateUpdate,
@@ -137,7 +137,7 @@ class N extends(i = s.PureComponent) {
           children: (0, r.jsxs)("div", {
             className: O.disabledTooltipWrapper,
             children: [n ? (0, r.jsx)(m.ua7, {
-              text: E.intl.string(E.t["v6/z29"]),
+              text: C.intl.string(C.t["v6/z29"]),
               children: e => (0, r.jsx)("div", S({
                 "aria-hidden": !0,
                 className: O.disabledTooltipTarget
@@ -149,7 +149,7 @@ class N extends(i = s.PureComponent) {
               onClick: this.handleDelete,
               variant: "critical-secondary",
               size: o.tq ? "sm" : "md",
-              text: o.tq ? E.intl.string(E.t.oyYWHB) : E.intl.string(E.t.yk5qfX)
+              text: o.tq ? C.intl.string(C.t.oyYWHB) : C.intl.string(C.t.yk5qfX)
             })]
           })
         }), (0, r.jsxs)(u.h, {
@@ -160,14 +160,14 @@ class N extends(i = s.PureComponent) {
             onClick: this.handleCancel,
             variant: "secondary",
             size: o.tq ? "sm" : "md",
-            text: E.intl.string(E.t["ETE/oK"])
+            text: C.intl.string(C.t["ETE/oK"])
           }), (0, r.jsx)(d.z, {
             loading: e,
             disabled: !i || t || !s,
             type: "submit",
             variant: "active",
             size: o.tq ? "sm" : "md",
-            text: E.intl.string(E.t.R3BPHx)
+            text: C.intl.string(C.t.R3BPHx)
           })]
         })]
       })
@@ -191,7 +191,7 @@ class N extends(i = s.PureComponent) {
         noValidate: !0,
         children: [this.renderError(), (0, r.jsxs)("div", {
           className: O.__invalid_paymentSection,
-          children: [(0, r.jsx)(C.Z, {
+          children: [(0, r.jsx)(E.Z, {
             paymentSource: e,
             isDefault: t,
             isForSubscription: s,
@@ -200,12 +200,12 @@ class N extends(i = s.PureComponent) {
             showPaymentSourceIcon: !0
           }), e.invalid ? (0, r.jsx)("div", {
             className: O.errorSubText,
-            children: E.intl.string(E.t["3R0U0d"])
+            children: C.intl.string(C.t["3R0U0d"])
           }) : null, (0, r.jsx)("div", {
             className: O.subText,
-            children: o ? E.intl.format(E.t.w9WkBg, {
+            children: o ? C.intl.format(C.t.w9WkBg, {
               paypalURL: "https://www.paypal.com"
-            }) : E.intl.string(E.t.VXndys)
+            }) : C.intl.string(C.t.VXndys)
           })]
         }), this.renderCardExpirationSection(), this.renderBillingAddressSection(), (0, r.jsx)(m.XZJ, {
           name: I,
@@ -216,7 +216,7 @@ class N extends(i = s.PureComponent) {
           children: (0, r.jsx)(m.Text, {
             className: O.defaultCheckboxLabel,
             variant: "text-sm/normal",
-            children: E.intl.string(E.t.nag9Oj)
+            children: C.intl.string(C.t.nag9Oj)
           })
         }), (0, r.jsx)(m.$i$, {}), this.renderActions()]
       })

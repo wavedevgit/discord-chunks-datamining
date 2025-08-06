@@ -22,8 +22,8 @@ var r = n(120356),
   x = n(594174),
   _ = n(509545),
   j = n(931331),
-  C = n(754347),
-  E = n(122289),
+  E = n(754347),
+  C = n(122289),
   O = n(74538),
   v = n(212895),
   S = n(296848),
@@ -161,7 +161,7 @@ function H(e) {
 function z() {
   return (0, i.jsxs)("div", {
     className: L.wordMark,
-    children: [(0, i.jsx)(C.Z, {
+    children: [(0, i.jsx)(E.Z, {
       className: L.discordWordmark,
       "aria-label": k.intl.string(k.t["FSOz7+"])
     }), (0, i.jsx)("div", {
@@ -258,7 +258,7 @@ let Y = function(e) {
       }
     },
     ec = () => {
-      if (!G.includes(r.status) || null == r.pauseEndsAt) return void(0, E.q2)(Error("Invalid subscription to resume"), {
+      if (!G.includes(r.status) || null == r.pauseEndsAt) return void(0, C.q2)(Error("Invalid subscription to resume"), {
         extra: {
           subscriptionId: r.id,
           status: r.status,
@@ -298,7 +298,7 @@ let Y = function(e) {
     case Z.p9.TIER_0:
       ef = (0, i.jsxs)("div", {
         className: L.wordMark,
-        children: [(0, i.jsx)(C.Z, {
+        children: [(0, i.jsx)(E.Z, {
           className: L.discordWordmark,
           "aria-label": k.intl.string(k.t["t9uG/v"])
         }), (0, i.jsx)("div", {

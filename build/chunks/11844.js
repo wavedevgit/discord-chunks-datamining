@@ -56,9 +56,9 @@ let j = function() {
     } = (0, o.ZP)(),
     j = (0, s.e7)([p.default], () => p.default.getCurrentUser()),
     {
-      fractionalState: C
+      fractionalState: E
     } = (0, c.Z)(),
-    E = (0, m.y)("guild_boosting_boost_cta", j, C);
+    C = (0, m.y)("guild_boosting_boost_cta", j, E);
 
   function O(n) {
     null != e.current && (0, l.Mr3)(e.current), (0, u.u)({
@@ -87,7 +87,7 @@ let j = function() {
     })
   }
   let S = (0, g.aq)({
-    isBoostManagementDisabledForFractionalPremium: E
+    isBoostManagementDisabledForFractionalPremium: C
   });
   return (0, i.jsxs)("div", {
     className: b.wrapper,

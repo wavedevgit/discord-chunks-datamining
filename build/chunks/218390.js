@@ -21,8 +21,8 @@ var i = n(255367),
   x = n(230711),
   _ = n(497321),
   j = n(410030),
-  C = n(607070),
-  E = n(100527),
+  E = n(607070),
+  C = n(100527),
   O = n(906732),
   v = n(211242),
   S = n(975298),
@@ -241,7 +241,7 @@ function ed(e) {
   let {
     className: r,
     config: s
-  } = e, l = (0, c.e7)([C.Z], () => C.Z.useReducedMotion) ? s.getStaticImageUrl() : s.getAnimatedImageUrl(), o = (0, V.Tl)(null != (t = s.gradientConfig) ? t : void 0), d = {
+  } = e, l = (0, c.e7)([E.Z], () => E.Z.useReducedMotion) ? s.getStaticImageUrl() : s.getAnimatedImageUrl(), o = (0, V.Tl)(null != (t = s.gradientConfig) ? t : void 0), d = {
     color: null != (n = s.textColor) ? n : "var(--always-white)"
   };
   return (0, i.jsxs)("div", {
@@ -335,7 +335,7 @@ let em = function() {
     t = (0, v.Q)(),
     {
       analyticsLocations: n
-    } = (0, O.ZP)(E.Z.PREMIUM_SETTINGS),
+    } = (0, O.ZP)(C.Z.PREMIUM_SETTINGS),
     s = (0, c.e7)([R.Z], () => R.Z.getPremiumTypeSubscription()),
     a = (0, c.e7)([R.Z], () => R.Z.hasFetchedSubscriptions()),
     l = (0, T.V)(Q.nS),
@@ -352,7 +352,7 @@ let em = function() {
       f || t || await Promise.all([h.jg(), h.tZ(), (0, b.Y2)(null, null, $.JjL.DISCOVERY)]), u(!1)
     })
   }, [f, t]);
-  let [C, y] = r.useState(!1);
+  let [E, y] = r.useState(!1);
   if (f) return (0, i.jsx)(_.Z, {});
   if (t) return (0, i.jsx)(I.c8, {});
   let P = a && null !== s && l,
@@ -381,7 +381,7 @@ let em = function() {
       }), (0, i.jsx)(d.$, {
         innerRef: x,
         onChange: e => {
-          e && !C && (Z.default.track($.rMx.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
+          e && !E && (Z.default.track($.rMx.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
             location_stack: n
           }), y(!0))
         },

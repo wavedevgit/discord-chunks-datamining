@@ -25,11 +25,11 @@ let _ = () => {
     premiumType: n,
     setStep: _,
     applyOffer: j,
-    churnUserDiscountOffer: C,
-    discountedPrice: E,
+    churnUserDiscountOffer: E,
+    discountedPrice: C,
     fullPrice: O
   } = (0, m.a)(), [v, S] = (0, r.useState)(!1), [T, I] = (0, r.useState)(!1), N = async () => {
-    if (null === C) return void I(!0);
+    if (null === E) return void I(!0);
     S(!0), I(!1);
     try {
       await j(), _(u.R.DISCOUNT_APPLIED)
@@ -37,7 +37,7 @@ let _ = () => {
       I(!0), S(!1)
     }
   };
-  if (null === C) return null;
+  if (null === E) return null;
   let y = n === p.p9.TIER_2,
     A = [{
       text: h.intl.string(h.t.zl7LZm),
@@ -60,14 +60,14 @@ let _ = () => {
     gradientColor: y ? "nitro-pink" : "nitro-green",
     transitionState: e,
     title: "".concat(h.intl.format(h.t.q9Vxu7, {
-      percent: C.discount.amount
+      percent: E.discount.amount
     })),
     actions: A,
     onClose: async () => t(),
     children: [(0, i.jsx)("div", {
       className: f.offerDetailContainer,
       children: (0, i.jsx)(d.o, {
-        userDiscountOffer: C,
+        userDiscountOffer: E,
         offerState: d.w.CONFIRMING
       })
     }), (0, i.jsx)("div", {
@@ -76,9 +76,9 @@ let _ = () => {
         variant: "text-xs/medium",
         color: "text-secondary",
         children: h.intl.format(h.t.hrGTjI, {
-          discountedPrice: E,
-          billingPeriod: (0, c.JP)(C.discount.user_usage_limit_interval),
-          numMonths: C.discount.user_usage_limit,
+          discountedPrice: C,
+          billingPeriod: (0, c.JP)(E.discount.user_usage_limit_interval),
+          numMonths: E.discount.user_usage_limit,
           fullPrice: O,
           helpdeskArticle: o.Z.getArticleURL(g.BhN.PAID_TERMS)
         })

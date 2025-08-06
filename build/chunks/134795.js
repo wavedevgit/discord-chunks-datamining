@@ -28,8 +28,8 @@ function g(e) {
     forcedDivider: _,
     withHighlight: j = !1
   } = e, {
-    newestAnalyticsLocation: C
-  } = (0, o.ZP)(), E = j ? l.gtL : a.zx;
+    newestAnalyticsLocation: E
+  } = (0, o.ZP)(), C = j ? l.gtL : a.zx;
   return (0, i.jsx)(d.Z, {
     className: h,
     title: m.intl.string(m.t.Vgdusr),
@@ -39,14 +39,14 @@ function g(e) {
     forcedDivider: _,
     children: (0, i.jsxs)("div", {
       className: p.buttonsContainer,
-      children: [(0, i.jsx)(E, {
+      children: [(0, i.jsx)(C, {
         className: s()({
           [p.buttonHighlighted]: j
         }),
         size: a.zx.Sizes.SMALL,
         onClick: () => (0, c.$r)({
           uploadType: u.pC.BANNER,
-          analyticsSource: C,
+          analyticsSource: E,
           guildId: g,
           isTryItOutFlow: x
         }),

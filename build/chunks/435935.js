@@ -1,6 +1,6 @@
 /** Chunk was on 75708 **/
 n.d(t, {
-  k: () => C
+  k: () => E
 });
 var i, r, s = n(255367),
   a = n(73800),
@@ -121,7 +121,7 @@ u(j, "defaultProps", {
   style: {},
   wrap: !1
 });
-class C extends(r = a.PureComponent) {
+class E extends(r = a.PureComponent) {
   render() {
     let e = this.props,
       {
@@ -151,7 +151,7 @@ class C extends(r = a.PureComponent) {
     }))
   }
 }
-u(C, "Child", j), u(C, "Direction", h), u(C, "Align", x), u(C, "Justify", f), u(C, "Wrap", b), u(C, "Gutter", _), u(C, "defaultProps", {
+u(E, "Child", j), u(E, "Direction", h), u(E, "Align", x), u(E, "Justify", f), u(E, "Wrap", b), u(E, "Gutter", _), u(E, "defaultProps", {
   direction: h.HORIZONTAL,
   justify: f.START,
   align: x.STRETCH,

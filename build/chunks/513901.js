@@ -26,8 +26,8 @@ function j(e) {
     guild: n,
     className: s,
     sectionTitle: j,
-    forcedDivider: C = !1,
-    withTutorial: E = !1,
+    forcedDivider: E = !1,
+    withTutorial: C = !1,
     showBorder: O = !1,
     isTryItOutFlow: v = !1,
     initialSelectedEffectId: S
@@ -48,9 +48,9 @@ function j(e) {
     })
   }, [I, N]);
   let R = null != n,
-    D = E ? o.gtL : l.zx;
+    D = C ? o.gtL : l.zx;
   return (0, i.jsx)(g.Z, {
-    forcedDivider: C,
+    forcedDivider: E,
     borderType: h.Y.PREMIUM,
     hasBackground: !0,
     title: j,
@@ -63,7 +63,7 @@ function j(e) {
         size: l.zx.Sizes.SMALL,
         onClick: P,
         className: a()({
-          [_.buttonHighlighted]: E
+          [_.buttonHighlighted]: C
         }),
         children: x.intl.string(x.t["/dRfCQ"])
       }), (v || void 0 !== y ? null != y : null != T) && (0, i.jsx)("div", {

@@ -50,9 +50,9 @@ function j(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let C = new RegExp("https?://".concat(null != (i = window.GLOBAL_ENV.CDN_HOST) ? i : ""));
+let E = new RegExp("https?://".concat(null != (i = window.GLOBAL_ENV.CDN_HOST) ? i : ""));
 
-function E(e) {
+function C(e) {
   return "string" == typeof e.content ? e.content : S(e.content)
 }
 let O = j(_({}, d().defaultRules), {
@@ -91,7 +91,7 @@ let O = j(_({}, d().defaultRules), {
     blockQuote: j(_({}, d().defaultRules.blockQuote), {
       react: (e, t, n) => (0, s.jsx)("blockquote", {
         className: f.blockquote,
-        children: E(e)
+        children: C(e)
       }, n.key)
     }),
     image: j(_({}, d().defaultRules.image), {
@@ -102,7 +102,7 @@ let O = j(_({}, d().defaultRules), {
         let r = i.match(e, t, n);
         if (null != r && Array.isArray(r) && r.length >= 3) {
           let e = r[2];
-          if ("string" == typeof e) return null != e.match(C) ? r : null
+          if ("string" == typeof e) return null != e.match(E) ? r : null
         }
         return !1
       }
@@ -111,7 +111,7 @@ let O = j(_({}, d().defaultRules), {
       order: 6,
       react: (e, t, n) => (0, s.jsx)("code", {
         className: f.codeInline,
-        children: E(e)
+        children: C(e)
       }, n.key)
     }),
     codeBlock: j(_({}, d().defaultRules.codeBlock), {
@@ -119,7 +119,7 @@ let O = j(_({}, d().defaultRules), {
         let r = () => (0, s.jsx)("pre", {
           children: (0, s.jsx)("code", {
             className: o()(b.scrollbarGhostHairline, "hljs"),
-            children: E(e)
+            children: C(e)
           })
         }, i.key);
         return (0, s.jsx)(u.GI, {

@@ -47,7 +47,7 @@ function f(e, t) {
   }), e
 }
 let b = () => {
-    let [e, t] = r.useState(p.p9.TIER_0), [n, b] = r.useState(l.R.WHAT_YOU_LOSE), [_, j] = r.useState(null), [C, E] = r.useState(p.Xh.PREMIUM_MONTH_TIER_0), [O, v] = r.useState([]), [S, T] = r.useState(() => {
+    let [e, t] = r.useState(p.p9.TIER_0), [n, b] = r.useState(l.R.WHAT_YOU_LOSE), [_, j] = r.useState(null), [E, C] = r.useState(p.Xh.PREMIUM_MONTH_TIER_0), [O, v] = r.useState([]), [S, T] = r.useState(() => {
       let e = new Date;
       return e.setMonth(e.getMonth() + 1), e
     }), [I, N] = r.useState(null), [y, A] = r.useState(!1), [P, R] = r.useState(!1), [D, Z] = r.useState(!1);
@@ -55,7 +55,7 @@ let b = () => {
       (0, a.Y2)()
     }, []), (0, r.useEffect)(() => {
       let e = new Date;
-      switch (C) {
+      switch (E) {
         case p.Xh.PREMIUM_MONTH_TIER_0:
         case p.Xh.PREMIUM_MONTH_TIER_1:
         case p.Xh.PREMIUM_MONTH_TIER_2:
@@ -67,7 +67,7 @@ let b = () => {
           e.setFullYear(e.getFullYear() + 1)
       }
       T(e)
-    }, [C]), (0, r.useEffect)(() => {
+    }, [E]), (0, r.useEffect)(() => {
       switch (e) {
         case p.p9.TIER_0:
           v([{
@@ -76,7 +76,7 @@ let b = () => {
           }, {
             label: "Nitro Basic Yearly",
             value: p.Xh.PREMIUM_YEAR_TIER_0
-          }]), E(p.Xh.PREMIUM_MONTH_TIER_0);
+          }]), C(p.Xh.PREMIUM_MONTH_TIER_0);
           break;
         case p.p9.TIER_1:
           v([{
@@ -85,7 +85,7 @@ let b = () => {
           }, {
             label: "Nitro Classic Yearly",
             value: p.Xh.PREMIUM_YEAR_TIER_1
-          }]), E(p.Xh.PREMIUM_MONTH_TIER_1);
+          }]), C(p.Xh.PREMIUM_MONTH_TIER_1);
           break;
         case p.p9.TIER_2:
           v([{
@@ -94,14 +94,14 @@ let b = () => {
           }, {
             label: "Nitro Yearly",
             value: p.Xh.PREMIUM_YEAR_TIER_2
-          }]), E(p.Xh.PREMIUM_MONTH_TIER_2)
+          }]), C(p.Xh.PREMIUM_MONTH_TIER_2)
       }
     }, [e]), (0, r.useEffect)(() => {
       [l.R.CONFIRM_DISCOUNT, l.R.DISCOUNT_APPLIED].includes(n) && null === _ && j(x()), n === l.R.PREVIEW && null === I && N(new o.Z({
         id: "",
         invoiceItems: [{
           id: "",
-          subscriptionPlanId: C,
+          subscriptionPlanId: E,
           subscriptionPlanPrice: 200,
           amount: 400,
           quantity: 1,
@@ -122,7 +122,7 @@ let b = () => {
         subscriptionPeriodEnd: S,
         status: u.hUK.PAID
       })), n !== l.R.PREVIEW && null !== I && N(null)
-    }, [n, _, S, C, I]);
+    }, [n, _, S, E, I]);
     let w = r.useCallback(async () => {
       Z(!0), await (0, s.ZDy)(async () => t => (0, i.jsx)(d.x, f(h({}, t), {
         onClose: () => {
@@ -130,7 +130,7 @@ let b = () => {
         },
         premiumType: e,
         churnDiscount: _,
-        planId: C,
+        planId: E,
         renewalInvoice: I,
         renewalInvoiceDetails: {
           intervalType: p.rV.MONTH,
@@ -144,7 +144,7 @@ let b = () => {
         activeStep: n,
         premiumSubscription: {
           id: "",
-          planId: C,
+          planId: E,
           type: g.NY.PREMIUM,
           items: [],
           createdAt: new Date,
@@ -165,7 +165,7 @@ let b = () => {
           pauseReason: m.Id.UNKNOWN
         }
       })))
-    }, [e, _, C, I, y, P, n, S]);
+    }, [e, _, E, I, y, P, n, S]);
     return (0, r.useEffect)(() => {
       D && w()
     }, [n, D, w]), (0, i.jsxs)(c.$0, {
@@ -202,9 +202,9 @@ let b = () => {
           }), (0, i.jsx)(s.PhF, {
             placeholder: "Premium Type",
             select: e => {
-              E(e)
+              C(e)
             },
-            isSelected: e => C === e,
+            isSelected: e => E === e,
             serialize: e => e,
             options: O
           })]

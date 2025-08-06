@@ -25,14 +25,14 @@ let f = () => {
     renewalInvoiceDetails: b,
     fullPrice: x,
     premiumSubscription: _
-  } = (0, p.a)(), [j, C] = r.useState(!1), [E, O] = r.useState(!1);
+  } = (0, p.a)(), [j, E] = r.useState(!1), [C, O] = r.useState(!1);
   if (null == n) return null;
   let v = async () => {
-    C(!0), O(!1);
+    E(!0), O(!1);
     try {
       await f(), s()
     } catch (e) {
-      O(!0), C(!1)
+      O(!0), E(!1)
     }
   }, S = [{
     text: g.intl.string(g.t.h9tkAA),
@@ -69,7 +69,7 @@ let f = () => {
     children: [(0, i.jsxs)(u.aO, {
       isPremiumRebrand: !0,
       className: a()({
-        [h.hasError]: E
+        [h.hasError]: C
       }),
       children: [(0, i.jsx)(u.Z9, {
         children: g.intl.string(g.t.iqhIp6)
@@ -84,7 +84,7 @@ let f = () => {
         renewalInvoice: n,
         isUpdate: !0
       })]
-    }), E ? (0, i.jsx)(l.k, {
+    }), C ? (0, i.jsx)(l.k, {
       children: g.intl.string(g.t["5mlOCQ"])
     }) : null]
   })

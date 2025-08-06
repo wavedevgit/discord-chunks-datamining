@@ -25,8 +25,8 @@ let u = r.forwardRef(function(e, t) {
     orangeGlow: x,
     tooltipClassName: _,
     onMouseEnter: j,
-    onMouseLeave: C,
-    "aria-label": E,
+    onMouseLeave: E,
+    "aria-label": C,
     "aria-checked": O,
     role: v,
     tooltipColor: S,
@@ -43,7 +43,7 @@ let u = r.forwardRef(function(e, t) {
   return (0, i.jsx)(o.ua7, {
     tooltipClassName: _,
     text: n,
-    "aria-label": E,
+    "aria-label": C,
     color: S,
     tooltipContentClassName: I,
     forceOpen: T,
@@ -53,7 +53,7 @@ let u = r.forwardRef(function(e, t) {
           onMouseEnter: g,
           onMouseLeave: _
         } = e,
-        E = function(e, t) {
+        C = function(e, t) {
           if (null == e) return {};
           var n, i, r = function(e, t) {
             if (null == e) return {};
@@ -85,7 +85,7 @@ let u = r.forwardRef(function(e, t) {
           })
         }
         return e
-      }({}, E), o = o = {
+      }({}, C), o = o = {
         buttonRef: t,
         look: l.zx.Looks.BLANK,
         size: l.zx.Sizes.NONE,
@@ -107,7 +107,7 @@ let u = r.forwardRef(function(e, t) {
           null == g || g(), null == j || j()
         },
         onMouseLeave: () => {
-          null == _ || _(), null == C || C()
+          null == _ || _(), null == E || E()
         },
         onContextMenu: s,
         role: v,

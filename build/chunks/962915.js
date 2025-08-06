@@ -30,9 +30,9 @@ let h = e => {
       activeStep: _
     } = e, {
       analyticsLocations: j
-    } = (0, a.ZP)(s.Z.USER_SETTINGS), [C, E] = r.useState(f(_));
+    } = (0, a.ZP)(s.Z.USER_SETTINGS), [E, C] = r.useState(f(_));
     return (0, r.useEffect)(() => {
-      E(f(_))
+      C(f(_))
     }, [_]), (0, i.jsx)(u.D.Provider, {
       value: {
         setStep: x,
@@ -65,7 +65,7 @@ let h = e => {
           }, 1e3)
         })
       },
-      children: C
+      children: E
     })
   },
   f = e => {

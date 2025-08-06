@@ -21,8 +21,8 @@ var s = n(120356),
   x = n(669792),
   _ = n(917062),
   j = n(579273),
-  C = n(38874),
-  E = n(267201),
+  E = n(38874),
+  C = n(267201),
   O = ((i = {}).SUBSCRIBER_HOME = "SUBSCRIBER_HOME", i.NITRO_SETTINGS = "SETTINGS", i.APPLICATION_NITRO_HOME = "APPLICATION_NITRO_HOME", i);
 let v = function(e) {
   let {
@@ -85,7 +85,7 @@ let v = function(e) {
         className: x.settingsBannerLeftImageContainer,
         children: (0, r.jsx)("img", {
           alt: "",
-          src: C.Z,
+          src: E.Z,
           className: x.settingsImage
         })
       }), (0, r.jsxs)("div", {
@@ -116,7 +116,7 @@ let v = function(e) {
         className: x.settingsBannerRightImageContainer,
         children: (0, r.jsx)("img", {
           alt: "",
-          src: E.Z,
+          src: C.Z,
           className: x.settingsImage
         })
       })]

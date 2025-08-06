@@ -20,8 +20,8 @@ var i = n(255367),
   x = n(74538),
   _ = n(367074),
   j = n(775412),
-  C = n(46062),
-  E = n(104494),
+  E = n(46062),
+  C = n(104494),
   O = n(639119),
   v = n(736519),
   S = n(784238),
@@ -167,8 +167,8 @@ let M = () => {
       X = (0, O.N)(),
       J = null == X || null == (t = X.subscription_trial) ? void 0 : t.sku_id,
       Q = (0, j.rT)(),
-      $ = (0, E.Ng)(),
-      ee = null != $ && (0, E.Wp)($, A.Si.TIER_2),
+      $ = (0, C.Ng)(),
+      ee = null != $ && (0, C.Wp)($, A.Si.TIER_2),
       et = (0, T.A)(A.Xh.PREMIUM_MONTH_TIER_2),
       en = "".concat(et, "/").concat((0, x.eP)(A.rV.MONTH)),
       ei = (0, x.CY)(A.Xh.PREMIUM_MONTH_TIER_0),
@@ -178,7 +178,7 @@ let M = () => {
       el = (0, _.Vi)(),
       {
         enabled: eo
-      } = C.T.useExperiment({
+      } = E.T.useExperiment({
         location: "PlanComparisonTable"
       });
     if (!H || !z) return null;

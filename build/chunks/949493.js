@@ -21,8 +21,8 @@ var r = n(442837),
   x = n(893996),
   _ = n(273927),
   j = n(211466),
-  C = n(864239),
-  E = n(190014),
+  E = n(864239),
+  C = n(190014),
   O = n(301812),
   v = n(988043),
   S = n(919539),
@@ -37,13 +37,13 @@ let A = () => (0, i.jsx)(x.Z, {
       children: [(0, i.jsx)(s.F, {
         setting: T.s6.PRIVACY_AND_SAFETY_SERVER_SELECTOR,
         children: (0, i.jsx)(f.Z, {})
-      }), (0, i.jsx)(v.Z, {}), (0, i.jsx)(S.Z, {}), (0, i.jsx)(O.Z, {}), (0, i.jsx)(E.Z, {})]
+      }), (0, i.jsx)(v.Z, {}), (0, i.jsx)(S.Z, {}), (0, i.jsx)(O.Z, {}), (0, i.jsx)(C.Z, {})]
     })
   }),
   P = () => (0, i.jsxs)(x.Z, {
     title: y.intl.string(y.t.xVRG4O),
     webSetting: T.s6.PRIVACY_AND_SAFETY_CONTENT_CATEGORY,
-    children: [(0, i.jsx)(j.n, {}), (0, i.jsx)(p.Z, {}), (0, i.jsx)(h.Z, {}), (0, i.jsx)(m.Z, {}), (0, i.jsx)(c.Z, {}), (0, i.jsx)(C.Z, {})]
+    children: [(0, i.jsx)(j.n, {}), (0, i.jsx)(p.Z, {}), (0, i.jsx)(h.Z, {}), (0, i.jsx)(m.Z, {}), (0, i.jsx)(c.Z, {}), (0, i.jsx)(E.Z, {})]
   }),
   R = () => (0, i.jsxs)(x.Z, {
     title: y.intl.string(y.t["1Qn8iY"]),

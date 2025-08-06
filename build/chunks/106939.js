@@ -21,8 +21,8 @@ var i = n(255367),
   x = n(313201),
   _ = n(266454),
   j = n(984370),
-  C = n(797614),
-  E = n(108427),
+  E = n(797614),
+  C = n(108427),
   O = n(210887),
   v = n(695346),
   S = n(594174),
@@ -144,7 +144,7 @@ function Y() {
     j = null != e,
     O = s && null != f && !j;
   (0, p.ZP)(() => {
-    (0, E.e)("family-center"), I.ZP.initialPageLoad(), n || (0, _.Q3)(d.z.FAMILY_CENTER_NEW_BADGE, {
+    (0, C.e)("family-center"), I.ZP.initialPageLoad(), n || (0, _.Q3)(d.z.FAMILY_CENTER_NEW_BADGE, {
       dismissAction: B.L.AUTO,
       forceTrack: !0
     })
@@ -172,7 +172,7 @@ function Y() {
         selected_teen_id: i,
         initial_page: k.QH[n],
         source: k._6[k.Mu.SIDENAV]
-      }), C.Z.increment({
+      }), E.Z.increment({
         name: o.V.FAMILY_CENTER_VIEW
       })
     }
@@ -207,7 +207,7 @@ function K() {
     handleTabChange: w
   } = (0, y.Z)(), F = (0, x.Dt)(), z = S.default.getCurrentUser(), Y = null != t, K = l && null != z && !Y;
   (0, p.ZP)(() => {
-    m.Y(L.Z5c.FAMILY_CENTER), (0, E.e)("family-center"), !N.Z.isLoading() && N.Z.canRefetch() && I.ZP.initialPageLoad(), s || (0, _.Q3)(d.z.FAMILY_CENTER_NEW_BADGE, {
+    m.Y(L.Z5c.FAMILY_CENTER), (0, C.e)("family-center"), !N.Z.isLoading() && N.Z.canRefetch() && I.ZP.initialPageLoad(), s || (0, _.Q3)(d.z.FAMILY_CENTER_NEW_BADGE, {
       dismissAction: B.L.AUTO,
       forceTrack: !0
     })
@@ -235,7 +235,7 @@ function K() {
           selected_teen_id: i,
           initial_page: k.QH[n],
           source: k._6[k.Mu.SIDENAV]
-        }), C.Z.increment({
+        }), E.Z.increment({
           name: o.V.FAMILY_CENTER_VIEW
         })
       }

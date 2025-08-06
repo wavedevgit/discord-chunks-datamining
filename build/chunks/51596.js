@@ -25,8 +25,8 @@ var i = n(481060),
   x = n(283595),
   _ = n(944486),
   j = n(914010),
-  C = n(626135),
-  E = n(777754),
+  E = n(626135),
+  C = n(777754),
   O = n(823385),
   v = n(981631),
   S = n(176505);
@@ -75,7 +75,7 @@ function P(e, t) {
     queryMode: i,
     query: r,
     maxQueryLength: s
-  } = O.Z.getProps(), a = j.Z.getGuildId(), l = _.Z.getChannelId(a), o = n[(0, d.gJ)(d.a8.DOWN, -1, n)], c = E.Z.isEmail(r), u = E.Z.isPhoneNumber(r), m = E.Z.isUserTagLike(r), p = null != l && (0, S.AB)(l), g = e => null == e ? null : e.type === d.h8.IN_APP_NAVIGATION ? e.type + "_" + e.record.type : e.type, h = {
+  } = O.Z.getProps(), a = j.Z.getGuildId(), l = _.Z.getChannelId(a), o = n[(0, d.gJ)(d.a8.DOWN, -1, n)], c = C.Z.isEmail(r), u = C.Z.isPhoneNumber(r), m = C.Z.isUserTagLike(r), p = null != l && (0, S.AB)(l), g = e => null == e ? null : e.type === d.h8.IN_APP_NAVIGATION ? e.type + "_" + e.record.type : e.type, h = {
     current_channel_id: p ? void 0 : l,
     current_channel_static_route: p ? l : void 0,
     current_guild_id: a,
@@ -120,7 +120,7 @@ function P(e, t) {
         h.selected_user_id = r.id
     }
   }
-  C.default.track(e, h)
+  E.default.track(e, h)
 }
 
 function R() {
@@ -141,7 +141,7 @@ function D() {
       let e = b.Z.getChannel(i);
       t = null != e ? e.type : null
     }
-    C.default.track(v.rMx.QUICKSWITCHER_OPENED, {
+    E.default.track(v.rMx.QUICKSWITCHER_OPENED, {
       source: e,
       current_guild_id: n,
       current_channel_id: i,
@@ -212,8 +212,8 @@ function L(e) {
       }), l.Z.channelListScrollTo(v.ME, _.id);
       break;
     case d.h8.APPLICATION:
-      let C = x.Z.getActiveLibraryApplication(_.id);
-      I(_.id, C, {
+      let E = x.Z.getActiveLibraryApplication(_.id);
+      I(_.id, E, {
         analyticsParams: {
           source: v.Sbl.QUICK_SWITCHER,
           location: v.Sbl.QUICK_SWITCHER

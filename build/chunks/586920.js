@@ -23,9 +23,9 @@ let f = () => {
     confettiCanvas: f,
     churnUserDiscountOffer: b,
     discountedPrice: x
-  } = (0, d.a)(), _ = (0, r.useRef)(null), [j, C] = (0, r.useState)(!1), E = (0, s.e7)([l.Z], () => l.Z.useReducedMotion);
+  } = (0, d.a)(), _ = (0, r.useRef)(null), [j, E] = (0, r.useState)(!1), C = (0, s.e7)([l.Z], () => l.Z.useReducedMotion);
   if ((0, r.useEffect)(() => {
-      null !== _.current && null !== x && C(!0)
+      null !== _.current && null !== x && E(!0)
     }, [_, x]), null === b) return null;
   let O = n === u.p9.TIER_2,
     v = [{
@@ -53,7 +53,7 @@ let f = () => {
           userDiscountOffer: b
         })
       })
-    }), !E && j && (0, i.jsx)(o.Z, {
+    }), !C && j && (0, i.jsx)(o.Z, {
       confettiTarget: _.current,
       confettiCanvas: f,
       confettiVelocityMultiplier: .75

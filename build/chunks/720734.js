@@ -21,8 +21,8 @@ var i = n(255367),
   x = n(230711),
   _ = n(410575),
   j = n(586902),
-  C = n(980591),
-  E = n(468363),
+  E = n(980591),
+  C = n(468363),
   O = n(326255),
   v = n(771173),
   S = n(963056),
@@ -75,8 +75,8 @@ var i = n(255367),
   ex = n(702977),
   e_ = n(56848),
   ej = n(940315),
-  eC = n(378441),
-  eE = n(358820),
+  eE = n(378441),
+  eC = n(358820),
   eO = n(723547),
   ev = n(361045),
   eS = n(74650),
@@ -170,7 +170,7 @@ function tr(e) {
   } = e, g = r.useRef(null), h = null != t ? t : g, b = (0, y.Z)(null == l ? void 0 : l.avatarDecoration), x = (0, eG.NZ)({
     avatarDecoration: b,
     size: (0, A.y9)(f.EFr.SIZE_32)
-  }), j = (0, f.dQu)(f.TVs.modules.guildbar.AVATAR_SIZE), E = (0, U.Z)("Account") ? 32 : j, {
+  }), j = (0, f.dQu)(f.TVs.modules.guildbar.AVATAR_SIZE), C = (0, U.Z)("Account") ? 32 : j, {
     updateOpenPopoutRef: O,
     highlightBadge: v,
     setHighlightBadge: S
@@ -183,7 +183,7 @@ function tr(e) {
       }, []),
       [n, i] = r.useState(),
       [s, a] = r.useState(!1);
-    return (0, C.Z)(() => a(!0), 750), r.useEffect(() => {
+    return (0, E.Z)(() => a(!0), 750), r.useEffect(() => {
       let t = t => {
         var n;
         let {
@@ -249,8 +249,8 @@ function tr(e) {
           [e4.plated]: null != m
         }),
         children: [(0, i.jsx)(tt, {
-          size: f.EFr["SIZE_".concat(E)],
-          src: l.getAvatarURL(void 0, E - 4, !1),
+          size: f.EFr["SIZE_".concat(C)],
+          src: l.getAvatarURL(void 0, C - 4, !1),
           avatarDecoration: x,
           "aria-label": l.username,
           status: s ? e1.Skl.STREAMING : o,
@@ -674,14 +674,14 @@ function ta(e) {
     handleOpenAccountSettings: x,
     handleOpenSettingsContextMenu: _,
     dismissibleContents: j,
-    nameplate: C,
-    accountContainerRef: E
-  } = e, O = (0, ei.A)(C);
+    nameplate: E,
+    accountContainerRef: C
+  } = e, O = (0, ei.A)(E);
   return (0, i.jsxs)("div", {
     className: e4.buttons,
     style: O,
     children: [(0, i.jsx)(tc, {
-      accountContainerRef: E,
+      accountContainerRef: C,
       selfMute: n,
       serverMute: s,
       suppress: l,
@@ -693,24 +693,24 @@ function ta(e) {
       onMouseLeave: m,
       onClick: g,
       onContextMenu: h,
-      iconForeground: null != C ? e4.iconForeground : void 0,
-      nameplate: C
+      iconForeground: null != E ? e4.iconForeground : void 0,
+      nameplate: E
     }), (0, i.jsx)(td, {
       selfDeaf: t,
       serverDeaf: a,
       onClick: p,
       onContextMenu: b,
       awaitingRemote: r,
-      iconForeground: null != C ? e4.iconForeground : void 0,
-      nameplate: C
+      iconForeground: null != E ? e4.iconForeground : void 0,
+      nameplate: E
     }), (0, i.jsx)(to, {
       isEligibleForPomelo: c,
       webBuildOverride: d,
       onClick: x,
       onContextMenu: _,
       dismissibleContents: j.settings,
-      iconForeground: null != C ? e4.iconForeground : void 0,
-      nameplate: C
+      iconForeground: null != E ? e4.iconForeground : void 0,
+      nameplate: E
     })]
   })
 }
@@ -755,7 +755,7 @@ function tl() {
     } = (0, ef.Z)(g),
     {
       selfDeaf: _,
-      deaf: C
+      deaf: E
     } = (0, eh.Z)(g),
     O = (0, d.e7)([P.C], () => {
       var e;
@@ -773,7 +773,7 @@ function tl() {
     M = (null == t || null == (e = t.avatarDecoration) ? void 0 : e.skuId) === e8.rL,
     {
       voiceActivityStatusEnabled: B
-    } = (0, E.U)({
+    } = (0, C.U)({
       location: "Account"
     }),
     U = (0, $.m)(),
@@ -820,7 +820,7 @@ function tl() {
       premiumSubscription: v,
       selfDeaf: _,
       selfMute: b,
-      serverDeaf: C,
+      serverDeaf: E,
       serverMute: h,
       speaking: c,
       speakingWhileMuted: S,
@@ -889,13 +889,13 @@ function tc(e) {
     onMouseLeave: x,
     onClick: _,
     onContextMenu: j,
-    nameplate: C,
-    accountContainerRef: E
+    nameplate: E,
+    accountContainerRef: C
   } = e, O = t || s || n, v = r.useRef(null), S = r.useRef(null), T = (0, eN.b)(O), {
     activeVoice: y,
     mostRecentlyRequestedVoiceId: A,
     lastInitAttemptMayHaveCrashed: P
-  } = (0, eC.o)(), {
+  } = (0, eE.o)(), {
     showSilentLagWarning: R
   } = (0, ej.Y)(), D = null != y, Z = (0, e_.z)(y), k = (0, d.e7)([ew.Z], () => ew.Z.isConnected()), {
     Component: L,
@@ -947,7 +947,7 @@ function tc(e) {
     }
   }, [k]);
   let ee = r.useCallback(() => {
-      P || (0, eE.r5)()
+      P || (0, eC.r5)()
     }, [P]),
     et = O ? f.TVs.colors.STATUS_DANGER : R ? f.TVs.colors.STATUS_WARNING : "currentColor",
     en = O || R,
@@ -965,7 +965,7 @@ function tc(e) {
         tooltipText: F,
         tooltipColor: m,
         tooltipForceOpen: p,
-        plated: null != C,
+        plated: null != E,
         onMouseEnter: () => {
           b(), M.onMouseEnter()
         },
@@ -991,7 +991,7 @@ function tc(e) {
         "aria-checked": O,
         disabled: l
       }), W && (0, i.jsx)(f.yRy, {
-        targetElementRef: E,
+        targetElementRef: C,
         position: "top",
         align: "left",
         nudgeAlignIntoViewport: !1,
@@ -1052,7 +1052,7 @@ function tc(e) {
                 }));
                 let c = () => (0, i.jsx)(e$.Z, e9({
                   ref: S,
-                  plated: null != C,
+                  plated: null != E,
                   tooltipForceOpen: Q,
                   tooltipColor: Q ? f.FGA.GREEN : void 0,
                   tooltipContentClassName: Q ? e4.voiceFilterWarning : void 0,

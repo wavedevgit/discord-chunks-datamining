@@ -130,13 +130,13 @@ function v(e, t, n) {
 
 function I(e, t, n) {
   let r = arguments.length > 3 && void 0 !== arguments[3] && arguments[3];
-  return null != e ? "" === e ? {
+  return null != e ? "string" == typeof e && "" === e ? {
     value: r ? n : null,
     isUsingGuildValue: !1
   } : {
     value: e,
     isUsingGuildValue: r
-  } : null != t && "" !== t ? {
+  } : null != t && ("string" != typeof t || "" !== t) ? {
     value: t,
     isUsingGuildValue: !0
   } : {

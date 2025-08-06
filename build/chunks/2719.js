@@ -20,8 +20,8 @@ var i = n(255367),
   x = n(81643),
   _ = n(952306),
   j = n(299206),
-  C = n(295474),
-  E = n(144114),
+  E = n(295474),
+  C = n(144114),
   O = n(918505),
   v = n(332473),
   S = n(921801),
@@ -82,7 +82,7 @@ function Y(e) {
   let {
     className: l,
     user: o
-  } = e, c = r.useRef(null), u = (0, O.o9)(), p = (0, v.b)(), g = (0, C.gS)(), h = null != (s = null == g || null == (t = g.nick) ? void 0 : t[0]) ? s : null, [f, b] = r.useState(!1);
+  } = e, c = r.useRef(null), u = (0, O.o9)(), p = (0, v.b)(), g = (0, E.gS)(), h = null != (s = null == g || null == (t = g.nick) ? void 0 : t[0]) ? s : null, [f, b] = r.useState(!1);
   r.useEffect(() => {
     b(null != c.current && c.current.scrollWidth > c.current.clientWidth)
   }, [o.username]);
@@ -177,7 +177,7 @@ function K(e) {
   let {
     user: s,
     className: l
-  } = e, o = (0, C.gS)(), c = null != (n = null == o || null == (t = o.nick) ? void 0 : t[0]) ? n : null, u = Z.ZP.getGlobalName(s), p = r.useRef(null), [g, h] = r.useState(!1);
+  } = e, o = (0, E.gS)(), c = null != (n = null == o || null == (t = o.nick) ? void 0 : t[0]) ? n : null, u = Z.ZP.getGlobalName(s), p = r.useRef(null), [g, h] = r.useState(!1);
   return r.useEffect(() => {
     h(null != p.current && p.current.scrollWidth > p.current.clientWidth)
   }, [u]), (0, i.jsxs)("div", {
@@ -369,7 +369,7 @@ function J(e) {
             title: G.intl.string(G.t["3CTiKi"]),
             children: s.hasFlag(B.xW$.MFA_SMS) ? G.intl.string(G.t.jrhJys) : void 0,
             actionText: G.intl.string(G.t.N86XcH),
-            handleSubmit: e => E.Z.removePhone(e, E.L.USER_SETTINGS_UPDATE)
+            handleSubmit: e => C.Z.removePhone(e, C.L.USER_SETTINGS_UPDATE)
           })))
         },
         children: G.intl.string(G.t.N86XcH)
@@ -387,7 +387,7 @@ function J(e) {
                 default: e
               } = await Promise.resolve().then(n.bind(n, 607018));
               return t => (0, i.jsx)(e, H({
-                reason: E.L.USER_SETTINGS_UPDATE
+                reason: C.L.USER_SETTINGS_UPDATE
               }, t))
             }, {
               modalKey: U.M

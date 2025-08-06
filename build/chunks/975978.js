@@ -20,8 +20,8 @@ var i = n(255367),
   x = n(474936),
   _ = n(388032),
   j = n(975926),
-  C = n(298632),
-  E = n(219242);
+  E = n(298632),
+  C = n(219242);
 
 function O(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -221,11 +221,11 @@ let v = e => {
             }), (0, i.jsxs)("div", {
               className: j.gradientBackgroundContainer,
               children: [(0, i.jsx)("img", {
-                src: E,
+                src: C,
                 alt: "",
                 className: j.gradientBackgroundPosition
               }), (0, i.jsx)("img", {
-                src: C,
+                src: E,
                 alt: "",
                 className: j.gradientBackgroundPosition
               })]

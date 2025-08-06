@@ -20,8 +20,8 @@ var i = n(255367),
   x = n(981631),
   _ = n(388032),
   j = n(285425),
-  C = n(893354),
-  E = n(20493);
+  E = n(893354),
+  C = n(20493);
 let O = !h.isPlatformEmbedded,
   v = (0, p.hQ)();
 
@@ -45,13 +45,13 @@ function T(e) {
     });
   return t = h.isPlatformEmbedded || n !== x.pM4.PUSH_TO_TALK ? (0, i.jsx)(o.R94, {
     type: o.R94.Types.DESCRIPTION,
-    className: a()(j.pttToolsMessage, E.marginBottom8),
+    className: a()(j.pttToolsMessage, C.marginBottom8),
     children: _.intl.format(_.t.HVvn5e, {
       onClick: () => d.Z.setSection(x.oAB.KEYBINDS)
     })
   }) : (0, i.jsx)(o.R94, {
     type: o.R94.Types.DESCRIPTION,
-    className: a()(j.pttToolsMessage, j.pttToolsWarning, E.marginBottom8),
+    className: a()(j.pttToolsMessage, j.pttToolsWarning, C.marginBottom8),
     children: _.intl.format(_.t.zvMPOT, {
       onDownloadClick: () => (0, b.y)("Help Text PTT")
     })
@@ -76,7 +76,7 @@ function T(e) {
           children: [(0, i.jsx)(o.vwX, {
             id: v,
             tag: o.RB0.H5,
-            className: E.marginBottom8,
+            className: C.marginBottom8,
             children: _.intl.string(_.t.y0ShVl)
           }), (0, i.jsx)(o.iRW, {
             initialValue: s,
@@ -90,13 +90,13 @@ function T(e) {
         })
       })]
     }), O && (0, i.jsxs)(o.xJW, {
-      className: E.marginTop8,
+      className: C.marginTop8,
       children: [(0, i.jsx)(p.FG, {
         children: e => (0, i.jsxs)("div", {
-          className: a()(C.horizontal, E.marginBottom4),
+          className: a()(E.horizontal, C.marginBottom4),
           children: [(0, i.jsx)(o.vwX, {
             tag: o.RB0.H3,
-            className: E.marginReset,
+            className: C.marginReset,
             children: (0, i.jsx)("label", {
               htmlFor: e,
               children: _.intl.string(_.t.EGn1eH)
@@ -111,7 +111,7 @@ function T(e) {
         })
       }), (0, i.jsx)(o.R94, {
         type: o.R94.Types.DESCRIPTION,
-        className: E.marginBottom8,
+        className: C.marginBottom8,
         children: _.intl.string(_.t.iT257u)
       })]
     }), t]
@@ -166,7 +166,7 @@ function I() {
   return (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(o.xJW, {
       title: _.intl.string(_.t["pS+K2N"]),
-      className: E.marginBottom20,
+      className: C.marginBottom20,
       children: (0, i.jsx)(o.FXm, {
         onChange: a,
         options: s,
