@@ -33,7 +33,7 @@ function d(e) {
     })
   });
   let v = (0, i.ql)(l, c.tuJ.PREMIUM_TIER_2),
-    C = (0, i.x6)(l) && d ? (t = function(e) {
+    O = (0, i.x6)(l) && d ? (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var r = null != arguments[t] ? arguments[t] : {},
           n = Object.keys(r);
@@ -62,19 +62,19 @@ function d(e) {
     })(Object(r)).forEach(function(e) {
       Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(r, e))
     }), t) : m,
-    O = d && null != v;
+    C = d && null != v;
   return (0, n.jsxs)("div", {
     className: a()(u.priceTagsContainer, g),
     children: [h ? null : (0, n.jsx)(o.y, {
-      price: C,
+      price: O,
       className: u.price
     }), (0, n.jsx)(s.F, {
-      price: O ? v : C,
+      price: C ? v : O,
       discount: p,
       className: a()({
         [u.price]: null == f
       }),
-      nitroIconType: O ? b : void 0,
+      nitroIconType: C ? b : void 0,
       nitroIconSize: _,
       discountOfferAmount: f
     })]

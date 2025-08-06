@@ -20,8 +20,8 @@ var n = r(255367),
   _ = r(258939),
   m = r(81136),
   v = r(953655),
-  C = r(548685),
-  O = r(580914),
+  O = r(548685),
+  C = r(580914),
   E = r(963278),
   S = r(921120),
   y = r(384067),
@@ -84,7 +84,7 @@ let L = e => {
     });
     if (k || 0 === A.length) return (0, n.jsxs)("div", {
       className: T.loadingContainer,
-      children: [(0, n.jsx)(O.Z, {
+      children: [(0, n.jsx)(C.Z, {
         isLoading: k,
         handleTransition: r,
         tab: c
@@ -92,7 +92,7 @@ let L = e => {
         isLoading: k,
         handleTransition: r,
         categories: []
-      }), (0, n.jsx)(C.Z, {
+      }), (0, n.jsx)(O.Z, {
         isLoading: k,
         title: c === x.AW.ORBS ? P.intl.string(P.t.dFgeub) : P.intl.string(P.t.NSv5KS),
         numVisibleItems: a,
@@ -105,7 +105,7 @@ let L = e => {
       let l = null;
       switch (e.type) {
         case o.z.HERO:
-          l = (0, n.jsx)(O.Z, {
+          l = (0, n.jsx)(C.Z, {
             isLoading: k,
             handleTransition: r,
             heroBlock: e,
@@ -122,7 +122,7 @@ let L = e => {
           break;
         case o.z.FEED:
           let d = e.sortedSkuIds;
-          l = (0, n.jsx)(C.Z, {
+          l = (0, n.jsx)(O.Z, {
             title: c === x.AW.ORBS ? P.intl.string(P.t.dFgeub) : P.intl.string(P.t.NSv5KS),
             isLoading: k || s,
             numVisibleItems: a,
@@ -174,20 +174,20 @@ let L = e => {
       transitionState: o
     } = e, g = l.useRef(null), {
       handleScroll: f
-    } = (0, c.z)(g, a), h = (0, p.R)("CollectiblesFeedShop"), b = (0, _.R)(), m = (0, d.sp)(), [v, C] = l.useState(x.IV), [O, E] = l.useState(!1);
+    } = (0, c.z)(g, a), h = (0, p.R)("CollectiblesFeedShop"), b = (0, _.R)(), m = (0, d.sp)(), [v, O] = l.useState(x.IV), [C, E] = l.useState(!1);
     return l.useEffect(() => {
       if (null != g.current) {
         let e = () => {
             if (null == g.current) return;
             let e = g.current.getDistanceFromBottom();
-            v >= h ? E(e < 20) : e <= 200 && C(e => e + x.IV)
+            v >= h ? E(e < 20) : e <= 200 && O(e => e + x.IV)
           },
           t = g.current.getScrollerNode();
         return null == t || t.addEventListener("scroll", e), () => {
           null == t || t.removeEventListener("scroll", e)
         }
       }
-    }, [g, v, h, C, E]), (0, n.jsx)(s.Den, {
+    }, [g, v, h, O, E]), (0, n.jsx)(s.Den, {
       className: T.shopScroll,
       ref: g,
       onScroll: f,
@@ -222,13 +222,13 @@ let L = e => {
           })]
         }), !t && (0, n.jsxs)(n.Fragment, {
           children: [(0, n.jsx)(S.Z, {
-            peaking: O,
+            peaking: C,
             transitioning: o === x.f7.OUT
           }), (0, n.jsx)(S.Z, {
             style: {
               left: 1850
             },
-            peaking: O,
+            peaking: C,
             transitioning: o === x.f7.OUT
           })]
         })]

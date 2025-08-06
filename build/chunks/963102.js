@@ -20,8 +20,8 @@ var n = r(255367),
   _ = r(507808),
   m = r(822857),
   v = r(775451),
-  C = r(594174),
-  O = r(471731),
+  O = r(594174),
+  C = r(471731),
   E = r(335131),
   S = r(870289),
   y = r(304742),
@@ -146,7 +146,7 @@ function N(e) {
     onClose: a,
     selectedTab: g,
     handleTransition: f
-  } = e, y = (0, p.ZP)(), N = (0, s.e7)([C.default], () => C.default.getCurrentUser()), A = (null == N ? void 0 : N.isStaff()) || (null == N ? void 0 : N.isStaffPersonal()) || !1, {
+  } = e, y = (0, p.ZP)(), N = (0, s.e7)([O.default], () => O.default.getCurrentUser()), A = (null == N ? void 0 : N.isStaff()) || (null == N ? void 0 : N.isStaffPersonal()) || !1, {
     enabled: w
   } = (0, m.WX)({
     location: "collectibles_shop_header_bar"
@@ -186,7 +186,7 @@ function N(e) {
         className: L.shopHomeLink,
         onClick: () => f(j.AW.HOME),
         "aria-label": T.intl.string(T.t.pWG4zc) + " home",
-        children: [(0, n.jsx)(O.Z, {
+        children: [(0, n.jsx)(C.Z, {
           className: L.discordLogo
         }), (0, n.jsx)(h.Z.Title, {
           children: T.intl.string(T.t.pWG4zc)

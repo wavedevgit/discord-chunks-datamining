@@ -1,6 +1,6 @@
 /**
   Module ID: 45620
-  Original File Name: 864abc1da9584450
+  Original File Name: 15d71a5e9b871501
 **/
 .shopWrapper__6db1d {
     background: var(--background-base-low);
@@ -2052,4 +2052,17 @@
     cursor: pointer
 }
 
-/*# sourceMappingURL=864abc1da9584450.css.map*/
+:root {
+    --custom-cursor: url(/assets/f4486bbe425a7b27.png) 0 0,auto;
+    --custom-cursor-pointer: url(/assets/32c808a445da5f62.png) 0 0,pointer
+}
+
+body.shop-takeover {
+    cursor: var(--custom-cursor)
+}
+
+body.shop-takeover .dropdown-item,body.shop-takeover .dropdown-item *,body.shop-takeover .list-item,body.shop-takeover .list-item *,body.shop-takeover .menu-item,body.shop-takeover .menu-item *,body.shop-takeover .select-option,body.shop-takeover .select-option *,body.shop-takeover [class*=checkboxWrapper],body.shop-takeover [class*=checkboxWrapper] *,body.shop-takeover [class*=checkbox],body.shop-takeover [class*=checkbox] *,body.shop-takeover [class*=collectiblesShopHeaderBar],body.shop-takeover [class*=collectiblesShopHeaderBar] *,body.shop-takeover [class*=cursor-pointer],body.shop-takeover [class*=input],body.shop-takeover [class*=input] *,body.shop-takeover [class*=labelClickable],body.shop-takeover [class*=labelClickable] *,body.shop-takeover [class*=label],body.shop-takeover [class*=label] *,body.shop-takeover [class*=menuItem],body.shop-takeover [class*=menuItem] *,body.shop-takeover [class*=menu],body.shop-takeover [class*=menu] *,body.shop-takeover [class*=option],body.shop-takeover [class*=option] *,body.shop-takeover [class*=popout],body.shop-takeover [class*=popout] *,body.shop-takeover [class*=searchInputContainerIcon],body.shop-takeover [class*=searchInputContainerIcon] *,body.shop-takeover [class*=searchInputContainerInput],body.shop-takeover [class*=searchInputContainerInput] *,body.shop-takeover [class*=searchInputContainer],body.shop-takeover [class*=searchInputContainer] *,body.shop-takeover [class*=searchInput],body.shop-takeover [class*=searchInput] *,body.shop-takeover [class*=select],body.shop-takeover [class*=select] *,body.shop-takeover [class*=shopCard],body.shop-takeover [class*=shopCard] *,body.shop-takeover [class*=wrapper],body.shop-takeover [class*=wrapper] *,body.shop-takeover [role=button],body.shop-takeover [role=button] *,body.shop-takeover [role=checkbox],body.shop-takeover [role=checkbox] *,body.shop-takeover [role=listitem],body.shop-takeover [role=listitem] *,body.shop-takeover [role=menuitem],body.shop-takeover [role=menuitem] *,body.shop-takeover [role=option],body.shop-takeover [role=option] *,body.shop-takeover [role=radio],body.shop-takeover [role=radio] *,body.shop-takeover [style*="cursor: pointer"],body.shop-takeover a,body.shop-takeover a *,body.shop-takeover button,body.shop-takeover button *,body.shop-takeover input[type=button],body.shop-takeover input[type=button] *,body.shop-takeover input[type=checkbox],body.shop-takeover input[type=checkbox] *,body.shop-takeover input[type=radio],body.shop-takeover input[type=radio] *,body.shop-takeover input[type=reset],body.shop-takeover input[type=reset] *,body.shop-takeover input[type=submit],body.shop-takeover input[type=submit] * {
+    cursor: var(--custom-cursor-pointer)
+}
+
+/*# sourceMappingURL=15d71a5e9b871501.css.map*/

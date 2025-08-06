@@ -20,8 +20,8 @@ var n = r(255367),
   _ = r(507808),
   m = r(794231),
   v = r(594174),
-  C = r(451478),
-  O = r(626135),
+  O = r(451478),
+  C = r(626135),
   E = r(381585),
   S = r(597688),
   y = r(884697),
@@ -109,7 +109,7 @@ let D = {
       heroBlock: y,
       tab: L,
       onVisibilityChange: H
-    } = e, W = (0, u.e7)([g.Z], () => g.Z.useReducedMotion), V = (0, u.e7)([C.Z], () => C.Z.isFocused()), U = (0, p.O)(e => {
+    } = e, W = (0, u.e7)([g.Z], () => g.Z.useReducedMotion), V = (0, u.e7)([O.Z], () => O.Z.isFocused()), U = (0, p.O)(e => {
       null == H || H(e)
     }, .1), z = (0, u.e7)([v.default], () => v.default.getCurrentUser()), G = (0, j.u)(), q = (0, E.sp)(), {
       showBetaTag: K
@@ -196,7 +196,7 @@ let D = {
                   ctaObject: B.qAy.CTA_TO_QUEST_HOME
                 }), (0, b.navigateToQuestHome)({
                   fromContent: s.j.ORBS_SHOP_HERO_CTA
-                })) : (a("shop latest category hero", ed && Y.categorySkuId !== o.T.ORB ? void 0 : Y.categorySkuId), O.default.track(B.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+                })) : (a("shop latest category hero", ed && Y.categorySkuId !== o.T.ORB ? void 0 : Y.categorySkuId), C.default.track(B.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
                   collectibles_shop_session_id: null == q ? void 0 : q.sessionId,
                   sku_id: Y.categorySkuId,
                   page_type: L,
@@ -227,7 +227,8 @@ let D = {
                   product: e,
                   category: r,
                   user: z,
-                  tab: L
+                  tab: L,
+                  _isInHeroBlock: !0
                 }, e.skuId)
               }, null == e ? void 0 : e.skuId)
             })

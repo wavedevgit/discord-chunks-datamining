@@ -2,7 +2,7 @@
 "use strict";
 r.d(t, {
   Kp: () => S,
-  u9: () => O,
+  u9: () => C,
   xV: () => y
 }), r(413496), r(433524), r(35282), r(704826), r(388685);
 var n = r(73800),
@@ -22,11 +22,11 @@ var n = r(73800),
   _ = r(981631);
 let m = "".concat("#").concat("itemSkuId", "="),
   v = new RegExp("^".concat(m, "(\\d+)$")),
-  C = [_.Z5c.COLLECTIBLES_SHOP, _.Z5c.COLLECTIBLES_SHOP_FULLSCREEN],
-  O = e => {
+  O = [_.Z5c.COLLECTIBLES_SHOP, _.Z5c.COLLECTIBLES_SHOP_FULLSCREEN],
+  C = e => {
     let t = (0, l.TH)();
     n.useEffect(() => {
-      if (null != e && C.includes(t.pathname)) return () => {
+      if (null != e && O.includes(t.pathname)) return () => {
         window.location.hash.startsWith(m) && window.location.replace("#")
       }
     }, [e, t.pathname])

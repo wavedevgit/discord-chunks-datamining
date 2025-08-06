@@ -200,7 +200,7 @@ function U(e) {
     entrypoints: J
   } = (0, g._k)({
     location: "NotificationsInboxSidebar"
-  }), $ = Q === v.v8.DROPDOWN && p !== A.V5.ALL;
+  }), $ = Q === v.v8.DROPDOWN && p !== A.V5.ALL, ee = (0, A.H_)();
   return (0, r.jsx)("nav", {
     className: o()(L.container, {
       [L.panelSpacing]: l
@@ -209,7 +209,7 @@ function U(e) {
       forceLevel: 1,
       component: (0, r.jsx)(f.ZP, (t = M({
         hasSubheader: !0,
-        guild: A.F7
+        guild: ee
       }, k), n = n = {
         children: (0, r.jsx)(c.Kqy, {
           direction: "horizontal",
@@ -309,11 +309,11 @@ function H(e) {
 function z(e) {
   let {
     filter: t
-  } = e;
+  } = e, n = (0, A.NV)();
   return (0, r.jsx)(c.X6q, {
     color: "text-primary",
     variant: "text-sm/semibold",
     className: L.filterHeaderWrap,
-    children: A.by[t]
+    children: n[t]
   }, "filter-header")
 }

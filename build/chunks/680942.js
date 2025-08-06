@@ -24,14 +24,14 @@ let m = e => {
     primary: r,
     selectedVariantIndex: m,
     returnRef: v,
-    onSuccess: C,
-    tooltipDelay: O
+    onSuccess: O,
+    tooltipDelay: C
   } = e, {
     analyticsLocations: E
   } = (0, o.ZP)(), S = l.useRef(null), y = (0, p.hv)("CollectiblesShopGiftButton"), x = (0, u.sp)(), j = (0, g.Z)();
   return (0, d.x6)(t) ? null : (0, n.jsx)(i.ua7, {
     text: _.intl.string(_.t["JCFN//"]),
-    delay: O,
+    delay: C,
     children: e => {
       var l, o;
       return (0, n.jsx)(i.hU, (l = function(e) {
@@ -77,8 +77,8 @@ let m = e => {
             analyticsLocations: E,
             returnRef: v,
             variantsReturnStyle: y,
-            onClose: null != C ? e => {
-              e && C()
+            onClose: null != O ? e => {
+              e && O()
             } : void 0
           })
         }

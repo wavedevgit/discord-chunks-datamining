@@ -20,8 +20,8 @@ var n = r(255367),
   _ = r(841875),
   m = r(312030),
   v = r(795343),
-  C = r(763891),
-  O = r(215023),
+  O = r(763891),
+  C = r(215023),
   E = r(981631),
   S = r(388032),
   y = r(95368);
@@ -44,7 +44,7 @@ function x(e) {
       setCategoryRef: m,
       handleScrollToCategory: v
     } = (0, h.xV)(f.current),
-    [C, O] = l.useState(g),
+    [O, C] = l.useState(g),
     [E, S] = l.useState(!1);
   return l.useEffect(() => {
     null != c && v(c)
@@ -56,8 +56,8 @@ function x(e) {
     };
     return e(), window.addEventListener("resize", e), () => window.removeEventListener("resize", e)
   }, []), l.useEffect(() => {
-    g || O(!1)
-  }, [g, O]), (0, n.jsx)("div", {
+    g || C(!1)
+  }, [g, C]), (0, n.jsx)("div", {
     className: i()(y.pageWrapper, {
       [y.pageWrapperFilter]: g
     }),
@@ -72,16 +72,16 @@ function x(e) {
         children: (0, n.jsx)(j, {
           isFullScreen: t,
           isSmallScreen: E,
-          filterBarOpen: C,
-          setFilterBarOpen: O,
+          filterBarOpen: O,
+          setFilterBarOpen: C,
           tab: r,
           scrollerRef: f,
           sortedCategories: a,
           setCategoryRef: m
         })
-      }), C && !E && (0, n.jsx)("div", {
+      }), O && !E && (0, n.jsx)("div", {
         className: y.divider
-      }), C && !E && (0, n.jsx)(o.Ttm, {
+      }), O && !E && (0, n.jsx)(o.Ttm, {
         className: y.filterBar,
         children: (0, n.jsx)(_.Z, {})
       })]
@@ -185,7 +185,7 @@ let j = e => {
         isFullScreen: t,
         scrollerRef: x,
         tab: h
-      }, h) : (0, O.RE)(h) ? (0, n.jsx)(C.Z, {
+      }, h) : (0, C.RE)(h) ? (0, n.jsx)(O.Z, {
         isFullScreen: t,
         scrollerRef: x,
         tab: h

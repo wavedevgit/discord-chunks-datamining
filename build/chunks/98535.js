@@ -1,7 +1,7 @@
 /** Chunk was on 45620 **/
 "use strict";
 r.d(t, {
-  Z: () => O
+  Z: () => C
 }), r(388685);
 var n = r(255367),
   l = r(73800),
@@ -20,9 +20,9 @@ var n = r(255367),
   _ = r(566564),
   m = r(795477),
   v = r(215023);
-let C = [v.AW.HOME, v.AW.ORBS];
+let O = [v.AW.HOME, v.AW.ORBS];
 
-function O(e) {
+function C(e) {
   let {
     tab: t,
     isFullScreen: r,
@@ -31,8 +31,8 @@ function O(e) {
     transitionState: u,
     updateAnalyticsState: d,
     refreshCategories: b
-  } = e, O = E();
-  S(O);
+  } = e, C = E();
+  S(C);
   let y = (0, i.e7)([o.Z], () => o.Z.useReducedMotion),
     [x, j] = l.useState(void 0),
     P = l.useCallback(async (e, t, n) => {
@@ -45,11 +45,11 @@ function O(e) {
     {
       searchError: L
     } = (0, g.a)();
-  return T && null != L ? (0, n.jsx)(m.Z, {}) : null != O ? (0, n.jsx)(h.Z, {
+  return T && null != L ? (0, n.jsx)(m.Z, {}) : null != C ? (0, n.jsx)(h.Z, {
     onRetry: b,
-    errorMessage: O,
+    errorMessage: C,
     errorOrigin: h.i.SHOP_PAGE
-  }) : C.includes(t) ? (0, n.jsx)(_.Z, {
+  }) : O.includes(t) ? (0, n.jsx)(_.Z, {
     isFullScreen: r,
     handleTransition: P,
     tab: t,

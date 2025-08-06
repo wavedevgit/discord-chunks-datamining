@@ -1,6 +1,6 @@
 /**
   Module ID: 92357
-  Original File Name: 209ae3cba42fbd51
+  Original File Name: e6f308ecd8a34ed9
 **/
 .ragingDemon_ac6454 {
     color: var(--white-500);
@@ -541,10 +541,6 @@ div:has(>.positionLayer__4f4b6) {
 .headerButton_c485a2:hover {
     background-color: var(--button-secondary-background-hover);
     color: var(--text-primary)
-}
-
-.headerButton_c485a2:focus {
-    outline: 3px solid var(--focus-primary)
 }
 
 .container_f37cb1 {
@@ -7173,4 +7169,4 @@ div:has(>.repositionLayerTitlebarPopout_fc71d3) {
     background-image: url(/assets/05207174d5432737.svg)
 }
 
-/*# sourceMappingURL=209ae3cba42fbd51.css.map*/
+/*# sourceMappingURL=e6f308ecd8a34ed9.css.map*/

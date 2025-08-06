@@ -51,7 +51,7 @@ function v(e, t) {
   }), e
 }
 
-function C(e, t) {
+function O(e, t) {
   if (null == e) return {};
   var r, n, l = function(e, t) {
     if (null == e) return {};
@@ -66,7 +66,7 @@ function C(e, t) {
   }
   return l
 }
-let O = s()(e => {
+let C = s()(e => {
     let t = !1;
     if (null != e && (0, d.FX)(e)) {
       let r = (0, d._i)(e);
@@ -88,7 +88,7 @@ let O = s()(e => {
       isPurchased: S
     } = (0, h.L)(r), y = (0, c.JA)("shop-variants-group-".concat(t.storeListingId, "-").concat(a)), {
       onFocus: x
-    } = y, j = C(y, ["onFocus"]), P = l.useCallback(e => {
+    } = y, j = O(y, ["onFocus"]), P = l.useCallback(e => {
       e.preventDefault(), e.stopPropagation(), (0, f.$)(t, a), x()
     }, [x, t, a]);
     return (0, n.jsx)(p.ua7, {
@@ -129,7 +129,7 @@ let O = s()(e => {
           },
           children: S ? (0, n.jsx)(p.kSu, {
             className: _.purchasedIndicator,
-            color: O(r.variantValue)
+            color: C(r.variantValue)
           }) : null
         })
       }))
@@ -145,7 +145,7 @@ let O = s()(e => {
       minimal: d,
       selectedVariantIndex: f,
       alternativeBackgroundColor: h
-    } = e, O = o.previewingVariantIndex, S = null == (t = l.variants) ? void 0 : t[f], y = null !== O ? null == (r = l.variants) ? void 0 : r[O] : void 0, x = (0, g.Z)("shop-variants-group-".concat(l.storeListingId), u.hy.HORIZONTAL);
+    } = e, C = o.previewingVariantIndex, S = null == (t = l.variants) ? void 0 : t[f], y = null !== C ? null == (r = l.variants) ? void 0 : r[C] : void 0, x = (0, g.Z)("shop-variants-group-".concat(l.storeListingId), u.hy.HORIZONTAL);
     if (null == S) return null;
     let j = null != y ? y.variantLabel : null == S ? void 0 : S.variantLabel;
     return (0, n.jsx)(c.bG, {
@@ -155,7 +155,7 @@ let O = s()(e => {
           var t, {
               ref: r
             } = e,
-            c = C(e, ["ref"]);
+            c = O(e, ["ref"]);
           return (0, n.jsxs)("div", v(m({
             ref: r
           }, c), {

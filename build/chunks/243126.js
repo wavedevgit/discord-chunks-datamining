@@ -28,7 +28,7 @@ let b = (e, t) => {
     }, [e]),
     _ = l.length > 0 && r,
     [m, v] = n.useState(_ ? i.m.RECOMMENDED : i.m.POPULAR),
-    [C, O] = n.useState(0),
+    [O, C] = n.useState(0),
     E = (0, d.u)(),
     S = (0, o.e7)([c.Z], () => c.Z.productsWithVariantsAsGroup),
     y = (0, p.a)(),
@@ -38,9 +38,9 @@ let b = (e, t) => {
         var n, l, a, i;
         return (null != (a = null == (n = (0, u.Vw)(e, t, !1)) ? void 0 : n.amount) ? a : 0) - (null != (i = null == (l = (0, u.Vw)(r, t, !1)) ? void 0 : l.amount) ? i : 0)
       }) : m === i.m.RECOMMENDED ? e = E(l) : m === i.m.POPULAR ? e = E(b) : m === i.m.RANDOM && (e = a().shuffle(S)), y(e)
-    }, [m, y, S, t, E, l, b, C]),
+    }, [m, y, S, t, E, l, b, O]),
     j = n.useCallback(() => {
-      O(e => e + 1), v(i.m.RANDOM)
+      C(e => e + 1), v(i.m.RANDOM)
     }, []);
   return {
     sortType: m,

@@ -62,7 +62,7 @@ let h = () => {
       sortType: i.E.RELEVANCE,
       sortDirection: a.F.DESC
     }
-  })[e], []), C = l.useCallback(e => {
+  })[e], []), O = l.useCallback(e => {
     let r = m(v(e));
     s.default.track(p.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
       collectibles_shop_session_id: null == h ? void 0 : h.sessionId,
@@ -73,13 +73,13 @@ let h = () => {
       cta_name: "sort by ".concat(r.label.toLowerCase()),
       page_type: "catalog"
     }), t(v(e))
-  }, [h, m, v, t]), O = m(e);
+  }, [h, m, v, t]), C = m(e);
   return (0, n.jsx)(o.PhF, {
     look: o.qQH.CUSTOM,
     className: f.custom,
     options: _.map(m),
-    select: C,
-    isSelected: e => e === O.value,
+    select: O,
+    isSelected: e => e === C.value,
     serialize: e => e,
     popoutWidth: 224
   })
