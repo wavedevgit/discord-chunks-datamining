@@ -14,8 +14,8 @@ var n = a(255367),
   u = a(407146),
   m = a(755721),
   x = a(481060),
-  p = a(410030),
-  h = a(705262),
+  h = a(410030),
+  p = a(705262),
   f = a(374794),
   b = a(58755),
   v = a(246992),
@@ -57,11 +57,11 @@ let {
   SemanticColors: C
 } = d.V;
 
-function O(e) {
+function N(e) {
   return e.replaceAll(/_|\./g, "-").toLowerCase()
 }
 
-function N(e) {
+function O(e) {
   return e.replaceAll(/_|-/g, ".").toLowerCase()
 }
 
@@ -79,12 +79,12 @@ function E(e, t) {
 }
 
 function T() {
-  let e = (0, p.Fg)(),
+  let e = (0, h.Fg)(),
     [t, a, l, s, d, u] = (0, j.zn)(),
     {
       semanticColorOverrides: v,
       rawColorOverrides: C,
-      tab: N,
+      tab: O,
       scales: T
     } = t,
     P = r.useMemo(() => {
@@ -94,9 +94,9 @@ function T() {
             highlight: l
           } = n, i = r[e];
           if (null == i) return "";
-          let s = O(a);
+          let s = N(a);
           if (l) return "--".concat(s, ": magenta !important;");
-          let o = O(i.color),
+          let o = N(i.color),
             c = i.opacity,
             d = c < 1 ? "hsl(var(--".concat(o, "-hsl) / ").concat(c, ")") : "var(--".concat(o, ")");
           return "--".concat(s, ": color-mix(\n        in oklab,\n        ").concat(d, " 100%,\n        var(--theme-base-color, black) var(--theme-base-color-amount, 0%)\n      );")
@@ -143,7 +143,7 @@ function T() {
         className: g.tabBar,
         type: "top",
         look: "brand",
-        selectedItem: N,
+        selectedItem: O,
         onItemSelect: e => {
           a(t => y(_({}, t), {
             tab: e
@@ -156,9 +156,9 @@ function T() {
           id: j.H8.PALETTES,
           children: "Palettes"
         })]
-      }), (0, n.jsx)(h.ZP, {
-        type: h.yH.SETTINGS,
-        children: (0, n.jsx)(h.ZP.Basic, {
+      }), (0, n.jsx)(p.ZP, {
+        type: p.yH.SETTINGS,
+        children: (0, n.jsx)(p.ZP.Basic, {
           className: g.toolbarThemeSelector,
           hideSystemSelector: !0
         })
@@ -214,14 +214,14 @@ function T() {
       })]
     }), (0, n.jsx)("div", {
       className: g.tab,
-      hidden: N !== j.H8.TOKENS,
+      hidden: O !== j.H8.TOKENS,
       children: (0, n.jsx)(S, {
         state: t,
         setState: a
       })
     }), (0, n.jsx)("div", {
       className: g.tab,
-      hidden: N !== j.H8.PALETTES,
+      hidden: O !== j.H8.PALETTES,
       children: (0, n.jsx)(b.P, {
         state: t,
         setState: a
@@ -239,7 +239,7 @@ function S(e) {
   let {
     state: t,
     setState: a
-  } = e, l = (0, p.Fg)(), {
+  } = e, l = (0, h.Fg)(), {
     semanticColorOverrides: i,
     rawColorOverrides: s
   } = t, o = r.useMemo(() => Object.keys(u.b).reduce((e, t) => [...e, {
@@ -280,7 +280,7 @@ function S(e) {
         semanticColorOverrides: n
       })
     })
-  }, [a]), h = r.useCallback(e => {
+  }, [a]), p = r.useCallback(e => {
     a(t => {
       let {
         semanticColorOverrides: a
@@ -293,7 +293,7 @@ function S(e) {
     })
   }, [a]), f = Object.keys(C).map(e => ({
     value: e,
-    label: O(e)
+    label: N(e)
   })), b = Object.keys(u.b).map(e => ({
     value: e,
     label: e
@@ -320,12 +320,12 @@ function S(e) {
       children: Object.entries(i).map(e => {
         let [t, r] = e, i = r.colors[l];
         if (null == i) return null;
-        let s = N(i.color),
+        let s = O(i.color),
           c = i.opacity,
           d = j.jC[t][l];
         return (0, n.jsx)(P, {
-          title: O(t),
-          subtitle: 1 === d.opacity ? N(d.raw) : "".concat(N(d.raw), " @ ").concat(100 * d.opacity, "%"),
+          title: N(t),
+          subtitle: 1 === d.opacity ? O(d.raw) : "".concat(O(d.raw), " @ ").concat(100 * d.opacity, "%"),
           highlight: r.highlight,
           onReset: () => {
             a(e => {
@@ -342,7 +342,7 @@ function S(e) {
             })
           },
           onRemove: () => m(t),
-          onHighlightToggle: () => h(t),
+          onHighlightToggle: () => p(t),
           children: (0, n.jsxs)("div", {
             className: g.semanticOverride,
             children: [(0, n.jsx)(x.VcW, {

@@ -13,8 +13,8 @@ var n = a(255367),
   u = a(442837),
   m = a(755721),
   x = a(481060),
-  p = a(570140),
-  h = a(665149),
+  h = a(570140),
+  p = a(665149),
   f = a(55935),
   b = a(120816),
   v = a(31336),
@@ -23,11 +23,11 @@ var n = a(255367),
   _ = a(681619),
   y = a(621060),
   C = a(388032),
-  O = a(459100),
-  N = a(616257);
+  N = a(459100),
+  O = a(616257);
 let E = [{
     key: "id",
-    cellClassName: O.eventColumn,
+    cellClassName: N.eventColumn,
     render(e) {
       let {
         experimentId: t
@@ -36,7 +36,7 @@ let E = [{
     }
   }, {
     key: "bucket",
-    cellClassName: O.locationColumn,
+    cellClassName: N.locationColumn,
     render(e) {
       let {
         descriptor: t
@@ -45,7 +45,7 @@ let E = [{
     }
   }, {
     key: "timestamp",
-    cellClassName: O.locationColumn,
+    cellClassName: N.locationColumn,
     render(e) {
       let {
         timestamp: t
@@ -70,16 +70,16 @@ let E = [{
         }
       } = e, u = d()(s);
       return (0, n.jsxs)(n.Fragment, {
-        children: [(0, n.jsxs)(h.ZP, {
-          className: i()(N.headerBar, O.subPanelHeaderBar),
-          children: [(0, n.jsx)(h.ZP.Icon, {
+        children: [(0, n.jsxs)(p.ZP, {
+          className: i()(O.headerBar, N.subPanelHeaderBar),
+          children: [(0, n.jsx)(p.ZP.Icon, {
             icon: x.IeX,
             tooltip: t
-          }), (0, n.jsx)(h.ZP.Title, {
+          }), (0, n.jsx)(p.ZP.Title, {
             children: t
           })]
         }), (0, n.jsxs)(j.E, {
-          className: O.commonProperties,
+          className: N.commonProperties,
           children: [(0, n.jsx)(j.Z9, {
             name: "Timestamp (local)",
             children: (0, n.jsx)("time", {
@@ -134,32 +134,32 @@ let E = [{
   }];
 
 function S() {
-  let [e, t] = r.useState(""), a = r.useRef(null), l = (0, u.Wu)([b.Z], () => b.Z.loggedTriggers), s = r.useMemo(() => l.filter(t => 0 === e.length || o()(e, t.experimentId)).sort((e, t) => t.timestamp.getTime() - e.timestamp.getTime()), [l, e]), [c, d] = r.useState(void 0), h = s.find(e => e.key === c), {
+  let [e, t] = r.useState(""), a = r.useRef(null), l = (0, u.Wu)([b.Z], () => b.Z.loggedTriggers), s = r.useMemo(() => l.filter(t => 0 === e.length || o()(e, t.experimentId)).sort((e, t) => t.timestamp.getTime() - e.timestamp.getTime()), [l, e]), [c, d] = r.useState(void 0), p = s.find(e => e.key === c), {
     TabBar: f,
     renderSelectedTab: j
   } = (0, y.ZP)({
     tabs: T
   }, []), S = (0, u.e7)([b.Z], () => b.Z.trackTriggers), P = r.useCallback(e => {
-    p.Z.dispatch({
+    h.Z.dispatch({
       type: "SET_TRACK_TRIGGERS",
       enabled: e
     })
   }, []);
   return (0, n.jsxs)("div", {
     ref: a,
-    className: i()(N.panel, O.panel),
+    className: i()(O.panel, N.panel),
     children: [(0, n.jsxs)("div", {
-      className: O.toolbar,
+      className: N.toolbar,
       children: [(0, n.jsx)("div", {
         title: "Enables tracking of all triggers",
-        className: O.triggersEnable,
+        className: N.triggersEnable,
         children: (0, n.jsx)(x.rsf, {
           checked: S,
           onChange: P,
-          className: O.__invalid_toolbarSwitch
+          className: N.__invalid_toolbarSwitch
         })
       }), (0, n.jsx)(m.zx, {
-        className: O.toolbarButton,
+        className: N.toolbarButton,
         look: m.zx.Looks.BLANK,
         size: m.zx.Sizes.ICON,
         onClick: v.Zw,
@@ -173,7 +173,7 @@ function S() {
         })
       }), (0, n.jsx)(x.E1j, {
         size: "sm",
-        className: O.searchBar,
+        className: N.searchBar,
         query: e,
         onChange: t,
         onClear: () => t(""),
@@ -184,12 +184,12 @@ function S() {
       data: s,
       selectedRowKey: c,
       onClickRow: e => d(e.key)
-    }), null != h && (0, n.jsxs)(g.Z, {
-      className: O.subPanel,
+    }), null != p && (0, n.jsxs)(g.Z, {
+      className: N.subPanel,
       minHeight: 100,
       initialHeight: null != a.current ? a.current.clientHeight / 2 : 300,
       children: [(0, n.jsx)(f, {}), j({
-        loggedTrigger: h
+        loggedTrigger: p
       })]
     })]
   })

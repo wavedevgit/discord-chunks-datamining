@@ -13,8 +13,8 @@ var n = a(255367),
   u = a(787879),
   m = a(370774),
   x = a(94091),
-  p = a(616257);
-let h = [{
+  h = a(616257);
+let p = [{
     key: "channelName",
     cellClassName: l()(x.cell, x.channelName),
     render(e) {
@@ -102,9 +102,9 @@ function b() {
   }), y = (0, i.cj)([d.Z], () => t.reduce((e, t) => {
     let a = d.Z.getChannel(t);
     return e[t] = null != a ? a : null, e
-  }, {})), C = (0, i.e7)([u.Z], () => u.Z.getInboxMessages()), O = (0, i.e7)([u.Z], () => u.Z.getDevOverrides().navOnClick);
+  }, {})), C = (0, i.e7)([u.Z], () => u.Z.getInboxMessages()), N = (0, i.e7)([u.Z], () => u.Z.getDevOverrides().navOnClick);
   return (0, n.jsx)("div", {
-    className: p.panel,
+    className: h.panel,
     children: (0, n.jsxs)(s.zJl, {
       className: x.content,
       children: [(0, n.jsxs)("div", {
@@ -128,7 +128,7 @@ function b() {
           children: [(0, n.jsx)("div", {
             children: "Nav On Click"
           }), (0, n.jsx)(s.XZJ, {
-            value: O,
+            value: N,
             onChange: e => {
               o.Z.dispatch({
                 type: "NOTIFICATIONS_INBOX_SET_DEV_OVERRIDES",
@@ -148,7 +148,7 @@ function b() {
         }), (0, n.jsxs)("div", {
           children: ["Unread Channel Count: ", t.length]
         }), (0, n.jsx)(c.Z, {
-          columns: h,
+          columns: p,
           data: Object.entries(y).map(e => {
             var t;
             let [a, n] = e;

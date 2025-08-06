@@ -1,6 +1,6 @@
 /** Chunk was on 93886 **/
 a.d(t, {
-  g: () => N
+  g: () => O
 }), a(388685), a(35282);
 var n = a(73800),
   r = a(281598);
@@ -58,7 +58,7 @@ let s = new Set([r.jE.SHOP_ALL_BANNER_STATIC, r.jE.HERO_BANNER_STATIC, r.jE.HERO
     max: 25e4,
     warn: 5e4
   },
-  p = {
+  h = {
     [r.aB.PROFILE_EFFECT]: c,
     [r.aB.AVATAR_DECORATION]: d,
     [r.jE.HERO_BANNER_ANIMATED]: c,
@@ -79,7 +79,7 @@ let s = new Set([r.jE.SHOP_ALL_BANNER_STATIC, r.jE.HERO_BANNER_STATIC, r.jE.HERO
     [r.jE.PDP_LOGO]: x,
     [r.jE.COACHTIP_AVATAR]: x
   },
-  h = async e => {
+  p = async e => {
     let t = Object.values(r.CM),
       a = new Set,
       n = e.createReader();
@@ -106,13 +106,13 @@ let s = new Set([r.jE.SHOP_ALL_BANNER_STATIC, r.jE.HERO_BANNER_STATIC, r.jE.HERO
       a("Files exceed the recommended size limit - make sure they are optimized!", ["".concat(i, " (max: ").concat(t, ")")])
     } else r > e.warn && n("Files are a tad chonky - are you sure they're optimized?", ["".concat(i)])
   }, j = (e, t, a, n) => {
-    let r = p[e];
+    let r = h[e];
     if (null != r)
       for (let e of t) e.name.endsWith(".txt") || v(r, e, a, n)
   }, g = (e, t, a) => {
     for (let n of e) {
       let e = (0, r.BU)(n),
-        l = null != e ? p[e] : null;
+        l = null != e ? h[e] : null;
       null != l && v(l, n, t, a)
     }
   }, _ = e => {
@@ -163,7 +163,7 @@ let s = new Set([r.jE.SHOP_ALL_BANNER_STATIC, r.jE.HERO_BANNER_STATIC, r.jE.HERO
       names: t.avatarDecorationFiles.map(e => e.name),
       addError: a
     }), j(r.aB.AVATAR_DECORATION, t.avatarDecorationFiles, a, n)
-  }, O = (e, t, a) => {
+  }, N = (e, t, a) => {
     _({
       files: e,
       addError: a,
@@ -181,7 +181,7 @@ let s = new Set([r.jE.SHOP_ALL_BANNER_STATIC, r.jE.HERO_BANNER_STATIC, r.jE.HERO
       addError: a,
       addWarning: t
     })
-  }, N = () => {
+  }, O = () => {
     let [e, t] = n.useState(!1), [a, s] = n.useState({}), [o, c] = n.useState({}), d = n.useCallback(function(e) {
       let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : [];
       c(a => {
@@ -213,10 +213,10 @@ let s = new Set([r.jE.SHOP_ALL_BANNER_STATIC, r.jE.HERO_BANNER_STATIC, r.jE.HERO
           if (e.length > 1) return void d("Uploaded multiple files. Expected 1 directory.");
           let t = e[0];
           if (!t.isDirectory) return void d("Uploaded a file. Expected a directory.");
-          let a = await h(t);
+          let a = await p(t);
           if (a.length > 0) return void d("Missing required directories", a);
           let n = await (0, r.LY)([t]);
-          O(n, u, d)
+          N(n, u, d)
         } finally {
           t(!0)
         }
