@@ -62,6 +62,7 @@ function A(e) {
       fetchEndedAt: null == k ? void 0 : k.fetchEndedAt,
       isLoaded: null == k ? void 0 : k.isLoaded,
       children: (0, r.jsxs)(o.Y0X, {
+        "data-migration-pending": !0,
         transitionState: G,
         className: Z.root,
         hideShadow: !0,

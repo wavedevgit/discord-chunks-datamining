@@ -66,6 +66,7 @@ function A(e) {
       fetchEndedAt: null == F ? void 0 : F.fetchEndedAt,
       isLoaded: null == F ? void 0 : F.isLoaded,
       children: (0, r.jsx)(l.Y0X, {
+        "data-migration-pending": !0,
         transitionState: R,
         className: T.root,
         hideShadow: !0,

@@ -134,6 +134,7 @@ function $(e) {
       children: (0, r.jsx)(N.NJ, {
         value: ey,
         children: (0, r.jsxs)(a.Y0X, {
+          "data-migration-pending": !0,
           hideShadow: !0,
           className: Q.root,
           transitionState: ea,
