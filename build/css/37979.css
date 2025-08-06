@@ -1,6 +1,6 @@
 /**
   Module ID: 37979
-  Original File Name: 2a85bd4e8d40ee71
+  Original File Name: 3836c76a2a8d85c7
 **/
 .label__95e0a {
     margin-bottom: 2px
@@ -18,4 +18,31 @@
     padding-top: 24px
 }
 
-/*# sourceMappingURL=2a85bd4e8d40ee71.css.map*/
+.dateFilter__95e0a {
+    display: flex;
+    margin-bottom: 12px
+}
+
+.dateFilterSelect__95e0a {
+    flex-shrink: 0;
+    margin-right: 8px;
+    width: 120px
+}
+
+.removeDateFilterButton__95e0a {
+    cursor: pointer;
+    padding: 8px 16px
+}
+
+.removeDateFilterButton__95e0a:hover .trashIcon__95e0a {
+    color: var(--button-danger-background-hover)
+}
+
+.trashIcon__95e0a {
+    color: var(--text-muted);
+    height: 24px;
+    transition: color var(--custom-button-transition-duration) ease;
+    width: 24px
+}
+
+/*# sourceMappingURL=3836c76a2a8d85c7.css.map*/
