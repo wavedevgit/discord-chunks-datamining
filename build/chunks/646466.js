@@ -1,6 +1,6 @@
 /** Chunk was on 93886 **/
 a.d(t, {
-  O: () => O
+  O: () => N
 }), a(388685);
 var n = a(255367),
   r = a(73800),
@@ -31,14 +31,14 @@ function x(e) {
   }
   return e
 }
-let h = [{
+let p = [{
     name: "Preview",
     value: "preview"
   }, {
     name: "Validate",
     value: "validate"
   }],
-  p = {
+  h = {
     label: "[none selected]",
     value: null
   },
@@ -74,7 +74,7 @@ let h = [{
         previewProfileEffectId: t,
         setPreviewProfileEffectId: a
       } = (0, o.N9)(),
-      s = r.useMemo(() => [p, ...e.map(e => ({
+      s = r.useMemo(() => [h, ...e.map(e => ({
         label: e.name,
         value: e.id
       }))], [e]);
@@ -210,12 +210,12 @@ let h = [{
       validationComplete: a,
       warnings: i,
       errors: s
-    } = (0, u.g)(), o = Object.entries(s), d = Object.entries(i), x = o.length > 0, h = d.length > 0, p = r.useCallback(a => {
+    } = (0, u.g)(), o = Object.entries(s), d = Object.entries(i), x = o.length > 0, p = d.length > 0, h = r.useCallback(a => {
       t(), e(a)
     }, [e, t]);
     return (0, n.jsxs)(n.Fragment, {
       children: [(0, n.jsx)(c.L, {
-        onDrop: p
+        onDrop: h
       }), a ? (0, n.jsxs)("div", {
         className: m.validationSummary,
         children: [(0, n.jsx)(l.Text, {
@@ -224,7 +224,7 @@ let h = [{
           children: "".concat(o.length, " errors")
         }), (0, n.jsx)(l.Text, {
           variant: "text-md/normal",
-          color: h ? "text-feedback-warning" : "text-default",
+          color: p ? "text-feedback-warning" : "text-default",
           children: "".concat(d.length, " warnings")
         }), (0, n.jsx)(l.zxk, {
           variant: "primary",
@@ -265,7 +265,7 @@ let h = [{
             }, "".concat(a, "-").concat(t))
           })
         })]
-      }), h && (0, n.jsxs)(n.Fragment, {
+      }), p && (0, n.jsxs)(n.Fragment, {
         children: [(0, n.jsx)(l.X6q, {
           variant: "heading-lg/bold",
           children: "Warnings"
@@ -296,7 +296,7 @@ let h = [{
       })]
     })
   },
-  N = () => {
+  O = () => {
     let {
       previewEnabled: e,
       setPreviewEnabled: t,
@@ -306,12 +306,12 @@ let h = [{
       clearAssets: s,
       clearIgnoredFilenames: u,
       processAndUpsertAssets: x
-    } = (0, d.hm)(), h = r.useCallback(e => {
+    } = (0, d.hm)(), p = r.useCallback(e => {
       a(), x(e)
     }, [x, a]);
     return (0, n.jsxs)(n.Fragment, {
       children: [(0, n.jsx)(c.L, {
-        onDrop: h
+        onDrop: p
       }), (0, n.jsx)(l.Text, {
         variant: "text-md/normal",
         children: "Drop files in this panel to begin preview."
@@ -339,12 +339,12 @@ let h = [{
       })]
     })
   },
-  O = () => {
+  N = () => {
     let [e, t] = r.useState("preview");
     return (0, n.jsxs)("div", {
       className: m.container,
       children: [(0, n.jsx)(l.sY7, {
-        options: h,
+        options: p,
         value: e,
         onChange: e => {
           let {
@@ -356,7 +356,7 @@ let h = [{
         optionClassName: m.panelModeControlOption
       }), (0, n.jsx)(l.LZC, {
         size: 8
-      }), "preview" === e && (0, n.jsx)(N, {}), "validate" === e && (0, n.jsx)(C, {}), (0, n.jsx)(l.LZC, {
+      }), "preview" === e && (0, n.jsx)(O, {}), "validate" === e && (0, n.jsx)(C, {}), (0, n.jsx)(l.LZC, {
         size: 16
       })]
     })

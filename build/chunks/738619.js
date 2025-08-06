@@ -158,7 +158,7 @@ function G(e) {
     rateLimitPerUser: m
   } = l, E = m > 0, b = i.useRef(null), y = i.useRef(null), [O, v] = i.useState(!1);
   if (i.useLayoutEffect(() => {
-      if (null != b.current && null != y.current) {
+      if (null != b.current && null != y.current && p) {
         let e = () => {
           if (null != b.current && null != y.current) {
             let e = b.current.getBoundingClientRect();
@@ -173,7 +173,7 @@ function G(e) {
           t.disconnect()
         }
       }
-    }, []), 0 === o.length && !E && !_) return null != t ? (0, r.jsx)(U, {
+    }, [p]), 0 === o.length && !E && !_) return null != t ? (0, r.jsx)(U, {
     activity: t,
     isFocused: n
   }) : null;
@@ -188,7 +188,7 @@ function G(e) {
     b: T,
     c: S
   }) : o.length > 3 && (A = R.intl.format(R.t.Q8lUnJ, {}));
-  let N = O && o.length > 0 ? R.intl.format(R.t.Q8lUnJ, {}) : A;
+  let N = O && o.length > 0 && o.length <= 3 ? R.intl.format(R.t["qD/0qa"], {}) : A;
   return (0, r.jsxs)("div", {
     className: a()(P.typing, {
       "stop-animation": !n,

@@ -1,6 +1,6 @@
 /**
   Module ID: 71879
-  Original File Name: 2313ce7b1a5e263c
+  Original File Name: 27aca1da07a2813b
 **/
 .obscuredIcon__43090 {
     height: 32px;
@@ -1986,12 +1986,7 @@
     font-weight: var(--font-weight-semibold)
 }
 
-.collapsed_d9be46 {
-    cursor: pointer
-}
-
 .collapsed_d9be46 .title_d9be46 {
-    cursor: pointer;
     height: 28px;
     overflow-wrap: normal;
     overflow-x: scroll;
@@ -2199,15 +2194,6 @@
     padding-left: 0;
     padding-right: 0;
     position: absolute
-}
-
-.tagsContainer_d9be46 .tagsButton_d9be46 .tagsButtonInner_d9be46 {
-    align-items: center;
-    background: none!important;
-    color: var(--text-brand);
-    display: flex;
-    gap: 2px;
-    margin: 0
 }
 
 .tagsContainer_d9be46 .tagsButton_d9be46.tagsButtonPlaceholder_d9be46 {
@@ -2679,4 +2665,4 @@
     color: var(--text-link)
 }
 
-/*# sourceMappingURL=2313ce7b1a5e263c.css.map*/
+/*# sourceMappingURL=27aca1da07a2813b.css.map*/

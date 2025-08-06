@@ -76,24 +76,28 @@ let d = {
   }),
   up: () => (0, r.jsx)(u, {
     label: s.intl.string(s.t.HxzHDQ),
+    macText: "▲",
     children: (0, r.jsx)(c, {
       direction: "up"
     })
   }),
   down: () => (0, r.jsx)(u, {
     label: s.intl.string(s.t["a+iRlJ"]),
+    macText: "▼",
     children: (0, r.jsx)(c, {
       direction: "down"
     })
   }),
   left: () => (0, r.jsx)(u, {
     label: s.intl.string(s.t.xFjIVF),
+    macText: "◀",
     children: (0, r.jsx)(c, {
       direction: "left"
     })
   }),
   right: () => (0, r.jsx)(u, {
     label: s.intl.string(s.t.BT3jf3),
+    macText: "▶",
     children: (0, r.jsx)(c, {
       direction: "right"
     })
@@ -115,12 +119,10 @@ let d = {
     macLabel: s.intl.string(s.t.V7nPj4)
   }),
   escape: () => (0, r.jsx)(u, {
-    macText: "⎋",
     text: s.intl.string(s.t.cQmsQE),
     label: s.intl.string(s.t["2qsw5+"])
   }),
   esc: () => (0, r.jsx)(u, {
-    macText: "⎋",
     text: s.intl.string(s.t.cQmsQE),
     label: s.intl.string(s.t["2qsw5+"])
   }),

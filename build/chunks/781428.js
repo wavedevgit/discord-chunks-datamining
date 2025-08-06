@@ -24,8 +24,8 @@ var r, i = n(255367),
   j = n(100159),
   I = n(473855),
   O = n(124860),
-  N = n(86779),
-  S = n(726745),
+  S = n(86779),
+  N = n(726745),
   C = n(913583),
   y = n(144114),
   A = n(541692),
@@ -482,7 +482,7 @@ class $ extends(r = l.PureComponent) {
         className: e,
         expanded: !0,
         children: this.renderDefaultForm(!0)
-      }), t && (0, i.jsx)(N.Z, {})]
+      }), t && (0, i.jsx)(S.Z, {})]
     })
   }
   renderGuildTemplate(e) {
@@ -796,7 +796,7 @@ Y($, "defaultProps", {
   transitionTo: e => n.g.location.assign(e)
 });
 let ee = function(e) {
-  let t = (0, d.cj)([L.Z, D.Z, w.default, S.Z, A.Z], () => ({
+  let t = (0, d.cj)([L.Z, D.Z, w.default, N.Z, A.Z], () => ({
     authenticated: w.default.isAuthenticated(),
     handoffAvailable: L.Z.isHandoffAvailable(),
     user: L.Z.user,
@@ -805,7 +805,7 @@ let ee = function(e) {
     mfaMethods: w.default.getMFAMethods(),
     defaultRoute: D.Z.defaultRoute,
     country: A.Z.getCountryCode(),
-    hasLoggedInAccounts: S.Z.getHasLoggedInAccounts()
+    hasLoggedInAccounts: N.Z.getHasLoggedInAccounts()
   }));
   return (0, i.jsx)($, J({}, e, t))
 }

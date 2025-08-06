@@ -1,5 +1,5 @@
 /** Chunk was on 8653 **/
 r.d(t, {
-  X: () => s
+  X: () => i
 });
-var n, s = ((n = {}).MFA = "mfa", n.SMS = "sms", n.EMAIL = "email", n)
+var n, i = ((n = {}).MFA = "mfa", n.SMS = "sms", n.EMAIL = "email", n)

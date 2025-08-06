@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(255367),
   i = n(73800),
-  l = n(120356),
-  a = n.n(l),
+  a = n(120356),
+  l = n.n(a),
   s = n(126663),
   o = n(442837),
   c = n(481060),
@@ -89,7 +89,7 @@ let y = {
             color: "header-secondary",
             children: b.intl.string(p.default["i7CH/P"])
           }), (0, r.jsxs)("ol", {
-            className: a()(j.list, j.orderedList, j.topLevelList),
+            className: l()(j.list, j.orderedList, j.topLevelList),
             children: [(0, r.jsx)("li", {
               children: (0, r.jsx)(c.Text, {
                 variant: "text-md/normal",
@@ -102,7 +102,7 @@ let y = {
                 color: "header-secondary",
                 children: b.intl.string(p.default["iu/RkZ"])
               }), (0, r.jsxs)("ul", {
-                className: a()(j.list, j.innerList, j.unorderedList),
+                className: l()(j.list, j.innerList, j.unorderedList),
                 children: [(0, r.jsx)("li", {
                   children: (0, r.jsx)(c.Text, {
                     variant: "text-md/normal",
@@ -161,7 +161,7 @@ let y = {
             color: "header-secondary",
             children: b.intl.string(p.default.qJWXs7)
           }), (0, r.jsxs)("ul", {
-            className: a()(j.list, j.unorderedList, j.topLevelList),
+            className: l()(j.list, j.unorderedList, j.topLevelList),
             children: [(0, r.jsx)("li", {
               children: (0, r.jsx)(c.Text, {
                 variant: "text-md/normal",
@@ -214,7 +214,7 @@ let y = {
 function S(e) {
   let {
     guild: t
-  } = e, [n, l] = (0, d.R)("report-to-mod-education-dismissed", !1), [o, u] = (0, d.R)("report-to-mod-education-expanded", !1), {
+  } = e, [n, a] = (0, d.R)("report-to-mod-education-dismissed", !1), [o, u] = (0, d.R)("report-to-mod-education-expanded", !1), {
     transitions: m,
     setVisible: h
   } = O(), g = w(null != o && o);
@@ -223,7 +223,7 @@ function S(e) {
   }, [n, h]), n) ? null : m((e, n) => n ? (0, r.jsxs)(s.animated.div, {
     style: e,
     onClick: () => u(!o),
-    className: a()(C.container, j.container, v.mainCard),
+    className: l()(C.container, j.container, v.mainCard),
     children: [(0, r.jsxs)("div", {
       className: j.inline,
       children: [(0, r.jsxs)("div", {
@@ -248,7 +248,7 @@ function S(e) {
           children: b.intl.string(p.default["95qQRE"])
         })]
       }), (0, r.jsx)(c.P3F, {
-        onClick: () => l(!0),
+        onClick: () => a(!0),
         children: (0, r.jsx)(c.Dio, {
           size: "xs",
           color: "currentColor",

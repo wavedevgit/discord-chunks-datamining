@@ -18,11 +18,11 @@ var r = n(255367),
   g = n(893354),
   _ = n(20493);
 let x = () => {
-  let [e, t] = i.useState(""), [l, x] = i.useState(""), [b, E] = i.useState(!1), [v, j] = i.useState(!1), [I, O] = i.useState(null), [N, S] = i.useState(null), C = (0, o.e7)([d.Z], () => d.Z.getCountryCode()), y = C.code.split(" ")[0], A = async () => {
+  let [e, t] = i.useState(""), [l, x] = i.useState(""), [b, E] = i.useState(!1), [v, j] = i.useState(!1), [I, O] = i.useState(null), [S, N] = i.useState(null), C = (0, o.e7)([d.Z], () => d.Z.getCountryCode()), y = C.code.split(" ")[0], A = async () => {
     try {
       await c.Z.resendCode(e)
     } catch (e) {
-      S(e.body.message)
+      N(e.body.message)
     }
   }, T = async () => {
     E(!0);
@@ -30,9 +30,9 @@ let x = () => {
       let {
         token: t
       } = await c.Z.verifyPhone(y + e, l);
-      O(null), S(null), j(!0), c.Z.validatePhoneForSupport(t)
+      O(null), N(null), j(!0), c.Z.validatePhoneForSupport(t)
     } catch (e) {
-      e.body.message ? (O(null), S(e.body.message)) : (O(e.body.phone), S(e.body.code))
+      e.body.message ? (O(null), N(e.body.message)) : (O(e.body.phone), N(e.body.code))
     } finally {
       E(!1)
     }
@@ -72,7 +72,7 @@ let x = () => {
         value: l,
         onChange: x,
         maxLength: m.z,
-        error: N
+        error: S
       }), (0, r.jsx)(p.zx, {
         size: p.zx.Sizes.SMALL,
         look: p.zx.Looks.LINK,

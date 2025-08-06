@@ -3,8 +3,8 @@ r.d(t, {
   default: () => g
 }), r(388685);
 var n = r(255367),
-  s = r(73800),
-  i = r(990547),
+  i = r(73800),
+  s = r(990547),
   a = r(755721),
   o = r(481060),
   c = r(37234),
@@ -63,14 +63,14 @@ function g(e) {
     toUser: f,
     fromUser: g,
     onClose: y,
-    transitionState: R
-  } = e, [I, v] = s.useState(!1), w = t.features.has(h.oNc.VERIFIED) || t.features.has(h.oNc.PARTNERED), S = w ? E.intl.string(E.t.wDkfrK) : null, P = w ? E.intl.format(E.t.A37vwM, {
+    transitionState: I
+  } = e, [R, v] = i.useState(!1), w = t.features.has(h.oNc.VERIFIED) || t.features.has(h.oNc.PARTNERED), S = w ? E.intl.string(E.t.wDkfrK) : null, P = w ? E.intl.format(E.t.A37vwM, {
     ticketUrl: O()
   }) : null, A = t.features.has(h.oNc.CREATOR_MONETIZABLE) || t.features.has(h.oNc.CREATOR_MONETIZABLE_PROVISIONAL);
   async function k(e) {
     await m.Z.transferOwnership(t.id, f.id, b.X.EMAIL, e)
   }
-  async function C() {
+  async function Z() {
     await m.Z.sendTransferOwnershipPincode(t.id, !0)
   }
   async function D(e) {
@@ -82,12 +82,14 @@ function g(e) {
         } = await r.e("94566").then(r.bind(r, 965072));
         return t => (0, n.jsx)(e, T(N({}, t), {
           onFormSubmit: k,
-          onResend: C,
+          onResend: Z,
           onSuccess: c.xf,
           headerText: E.intl.string(E.t.Z5s7PD),
           confirmButtonText: E.intl.string(E.t.Z5s7PD),
-          confirmButtonColor: a.zx.Colors.RED,
-          impressionName: i.ImpressionNames.GUILD_TRANSFER_OWNERSHIP_CONFIRM_EMAIL_CODE
+          confirmButtonVariant: "critical-primary",
+          impression: {
+            impressionName: s.ImpressionNames.GUILD_TRANSFER_OWNERSHIP_CONFIRM_EMAIL_CODE
+          }
         }))
       }))
     } catch (e) {
@@ -104,10 +106,10 @@ function g(e) {
       })))
     }
   }(0, d.Z)({
-    type: i.ImpressionTypes.MODAL,
-    name: i.ImpressionNames.GUILD_TRANSFER_OWNERSHIP
+    type: s.ImpressionTypes.MODAL,
+    name: s.ImpressionNames.GUILD_TRANSFER_OWNERSHIP
   });
-  let Z = _.ZP.getNickname(t.id, void 0, f),
+  let C = _.ZP.getNickname(t.id, void 0, f),
     L = f.hasAvatarForGuild(t.id),
     F = () => (0, n.jsxs)("span", {
       className: j.guildTransfer,
@@ -127,7 +129,7 @@ function g(e) {
       })]
     });
   return (0, n.jsx)(o.Y0X, {
-    transitionState: R,
+    transitionState: I,
     parentComponent: "TransferOwnership",
     children: (0, n.jsxs)("form", {
       onSubmit: D,
@@ -142,7 +144,7 @@ function g(e) {
         children: [(0, n.jsx)(o.R94, {
           type: o.R94.Types.DESCRIPTION,
           className: j.subHeader,
-          children: null != Z || L ? E.intl.format(E.t.E90vgo, {
+          children: null != C || L ? E.intl.format(E.t.E90vgo, {
             GuildHook: F,
             user: (0, x.W5)(f),
             AKAHook: function() {
@@ -160,7 +162,7 @@ function g(e) {
                 }) : null, (0, n.jsx)(o.Text, {
                   className: j.nickname,
                   variant: "text-sm/normal",
-                  children: null != Z ? Z : x.ZP.getName(f)
+                  children: null != C ? C : x.ZP.getName(f)
                 })]
               })
             }
@@ -194,7 +196,7 @@ function g(e) {
           disabled: w,
           tooltipNote: S,
           hideBorder: !0,
-          value: I,
+          value: R,
           onChange: function(e) {
             v(e)
           },
@@ -216,7 +218,7 @@ function g(e) {
             variant: "critical-primary",
             text: E.intl.string(E.t.Z5s7PD),
             type: "submit",
-            disabled: !I
+            disabled: !R
           }), (0, n.jsx)(o.zxk, {
             variant: "secondary",
             text: E.intl.string(E.t["ETE/oK"]),

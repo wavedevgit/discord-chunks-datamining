@@ -44,6 +44,8 @@ async function p(e) {
         onSelect: t,
         currentGuildId: h
       })
+    }, {
+      stackingBehavior: "stack"
     }), h = await e
   }
   let O = c.Z.getParentSKU(a.id),

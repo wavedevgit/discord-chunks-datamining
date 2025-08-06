@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(255367),
   i = n(73800),
-  l = n(680018),
-  a = n(481060),
+  a = n(680018),
+  l = n(481060),
   s = n(665906),
   o = n(585483),
   c = n(456269),
@@ -22,7 +22,7 @@ function g(e) {
     tagFilter: f,
     channel: x
   } = e, p = (0, c.r_)(x), b = (0, s.cD)(x), j = x.isMediaChannel(), v = i.useCallback(() => {
-    (0, d.qz)(), (0, a.ZDy)(async () => {
+    (0, d.qz)(), (0, l.ZDy)(async () => {
       let {
         default: e
       } = await n.e("18417").then(n.bind(n, 740696));
@@ -62,13 +62,13 @@ function g(e) {
   }, [g]), C = f.size > 0, _ = b || p, y = !C && p && !j, O = i.useCallback(() => y ? v() : b ? void o.S.dispatch(u.CkL.FOCUS_COMPOSER_TITLE) : (0, u.VqG)(), [v, y, b]);
   return (0, r.jsxs)("div", {
     className: h.container,
-    children: [(0, r.jsx)(a.X6q, {
+    children: [(0, r.jsx)(l.X6q, {
       className: h.header,
       variant: "heading-md/semibold",
       children: C ? m.intl.formatToPlainString(m.t.lvPci4, {
         numTags: f.size
       }) : m.intl.string(m.t.PwTMGx)
-    }), (0, r.jsx)(a.Text, {
+    }), (0, r.jsx)(l.Text, {
       color: "header-secondary",
       variant: "text-sm/normal",
       children: C ? m.intl.formatToPlainString(m.t.AAeye3, {
@@ -77,9 +77,9 @@ function g(e) {
         channelName: t
       })
     }), _ && (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(a.LZC, {
+      children: [(0, r.jsx)(l.LZC, {
         size: 16
-      }), (0, r.jsx)(l.z, {
+      }), (0, r.jsx)(a.z, {
         text: y ? m.intl.string(m.t.DgatTU) : m.intl.string(m.t.wOKE8P),
         variant: "secondary",
         onClick: O

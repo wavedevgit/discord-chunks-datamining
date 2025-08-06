@@ -24,8 +24,8 @@ let v = "mweb_handoff_nonce",
   j = "mweb_handoff_nonce_expiration",
   I = +g.Z.Millis.MINUTE,
   O = new Set(["nonce_missing", "nonce_expired", "handoff_exchange"]),
-  N = new Set(["deep_link_failed"]),
-  S = () => {
+  S = new Set(["deep_link_failed"]),
+  N = () => {
     c.K.remove(v), c.K.remove(j)
   },
   C = () => {
@@ -53,7 +53,7 @@ let v = "mweb_handoff_nonce",
     if ("null" === n && null === y && T("deep_link_failed"), null != n && "null" !== n && null == P && null === y && T("nonce_missing"), i.useEffect(() => {
         if (null != P) {
           let e = c.K.get(j);
-          (null == e || Date.now() >= e) && (T("nonce_expired"), S())
+          (null == e || Date.now() >= e) && (T("nonce_expired"), N())
         }
       }, [P, T]), i.useEffect(() => {
         null != n && "null" !== n && null != P && null == y && a.tn.post({
@@ -75,13 +75,13 @@ let v = "mweb_handoff_nonce",
         }).catch(() => {
           T("handoff_exchange")
         }).finally(() => {
-          S()
+          N()
         })
       }, [n, P, y, C, T]), null == C) return null;
     let Z = null == y ? (0, r.jsxs)(r.Fragment, {
       children: [b.intl.string(b.t.uJ1Jsb), (0, r.jsx)("br", {}), b.intl.string(b.t.GHVWAg)]
-    }) : N.has(y) ? b.intl.string(b.t.EPt55u) : O.has(y) ? b.intl.string(b.t.g87kTk) : void 0;
-    return null != y && N.has(y) ? (0, r.jsx)("div", {
+    }) : S.has(y) ? b.intl.string(b.t.EPt55u) : O.has(y) ? b.intl.string(b.t.g87kTk) : void 0;
+    return null != y && S.has(y) ? (0, r.jsx)("div", {
       className: E.errorContainer,
       children: (0, r.jsx)(d.Text, {
         color: "interactive-normal",

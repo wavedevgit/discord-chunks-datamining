@@ -14,16 +14,16 @@ var n = a(255367),
   u = a(55935),
   m = a(246992),
   x = a(232867),
-  h = a(981631),
-  p = a(123393),
+  p = a(981631),
+  h = a(123393),
   f = a(546147),
   b = a(616257);
 let v = {
-    [h.kNB.QUEST_REWARD]: "Quest Reward",
-    [h.kNB.DEVELOPER_GIFT]: "Developer Gift",
-    [h.kNB.INVOICE]: "Invoice",
-    [h.kNB.REVERSE_TRIAL]: "Reverse Trial",
-    [h.kNB.FRACTIONAL_PREMIUM_GIVEBACK]: "Giveback"
+    [p.kNB.QUEST_REWARD]: "Quest Reward",
+    [p.kNB.DEVELOPER_GIFT]: "Developer Gift",
+    [p.kNB.INVOICE]: "Invoice",
+    [p.kNB.REVERSE_TRIAL]: "Reverse Trial",
+    [p.kNB.FRACTIONAL_PREMIUM_GIVEBACK]: "Giveback"
   },
   j = e => {
     var t;
@@ -33,7 +33,7 @@ let v = {
       onDelete: l
     } = e, s = e => null != e ? (0, u.vc)(e, "LLL") : "---";
     return (0, n.jsxs)("div", {
-      className: i()(p.card, r ? f.gradientWrapperTier2 : ""),
+      className: i()(h.card, r ? f.gradientWrapperTier2 : ""),
       children: [(0, n.jsxs)(c.Text, {
         variant: "text-md/normal",
         children: ["ID: ", a.id, " "]
@@ -55,7 +55,7 @@ let v = {
           return null != e && e in v ? v[e] : "Unknown source type ".concat(e)
         })()]
       }), r && null != l && (0, n.jsx)(o.zx, {
-        className: p.deleteEntitlementButton,
+        className: h.deleteEntitlementButton,
         size: o.zx.Sizes.TINY,
         color: o.zx.Colors.RED,
         look: o.zx.Looks.OUTLINED,
@@ -78,8 +78,8 @@ let v = {
 function _() {
   let [e, t] = r.useState(!1), [a, l] = r.useState(s.a.PREMIUM_TIER_2_1_HOUR), [u, v] = r.useState([]), [_, y] = r.useState([]), {
     refreshEntitlementList: C,
-    grantFractionalPremium: N,
-    deleteFractionalPremium: O,
+    grantFractionalPremium: O,
+    deleteFractionalPremium: N,
     triggerNextEntitlementFulfillment: E,
     entitlements: T,
     loading: S
@@ -87,7 +87,7 @@ function _() {
   r.useEffect(() => {
     C()
   }, [C]);
-  let P = e => e.filter(e => null != e.endsAt && e.endsAt > new Date && e.type === h.qc2.FRACTIONAL_REDEMPTION),
+  let P = e => e.filter(e => null != e.endsAt && e.endsAt > new Date && e.type === p.qc2.FRACTIONAL_REDEMPTION),
     w = e => e.filter(e => Object.values(s.a).includes(e.skuId) && null == e.startsAt);
   return r.useEffect(() => {
     v(P(T)), y(w(T))
@@ -105,7 +105,7 @@ function _() {
           children: "Manage Fractional Nitro"
         }), (0, n.jsxs)(c.P3F, {
           onClick: () => t(!e),
-          className: p.clickableGroup,
+          className: h.clickableGroup,
           children: [(0, n.jsx)("div", {
             children: (0, n.jsx)(c.Text, {
               variant: "text-md/normal",
@@ -138,7 +138,7 @@ function _() {
         style: {
           marginBottom: "8px"
         },
-        className: i()([p.section, f.buttons]),
+        className: i()([h.section, f.buttons]),
         children: [(0, n.jsx)(c.Text, {
           variant: "text-md/normal",
           children: " Fractional Premium SKU "
@@ -151,10 +151,10 @@ function _() {
         }), (0, n.jsx)(c.zxk, {
           variant: "primary",
           text: "Grant Fractional Nitro",
-          onClick: () => N(a)
+          onClick: () => O(a)
         })]
       }), (0, n.jsxs)("section", {
-        className: p.section,
+        className: h.section,
         children: [(0, n.jsxs)("div", {
           style: {
             flexWrap: "wrap"
@@ -167,7 +167,7 @@ function _() {
             variant: "text-lg/semibold",
             children: "Entitlements"
           }), (0, n.jsxs)("div", {
-            className: p.buttonGroup,
+            className: h.buttonGroup,
             children: [(0, n.jsx)(o.zx, {
               disabled: S,
               size: o.zx.Sizes.TINY,
@@ -180,7 +180,7 @@ function _() {
               size: o.zx.Sizes.TINY,
               color: o.zx.Colors.RED,
               look: o.zx.Looks.OUTLINED,
-              onClick: () => O(),
+              onClick: () => N(),
               children: "Delete all"
             }), (0, n.jsx)(o.zx, {
               disabled: S,
@@ -207,7 +207,7 @@ function _() {
             children: u.map(e => (0, n.jsx)(j, {
               entitlement: e,
               active: !0,
-              onDelete: () => O(e.id)
+              onDelete: () => N(e.id)
             }, e.id))
           })]
         }), _.length > 0 && (0, n.jsxs)("div", {

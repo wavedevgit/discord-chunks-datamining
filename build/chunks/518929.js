@@ -37,20 +37,6 @@ let o = (0, r.B)({
 });
 (0, r.B)({
   kind: "user",
-  id: "2024-12_icymi_status_with_media",
-  label: "Shows media with custom status in ICYMI",
-  defaultConfig: {
-    enabled: !1
-  },
-  treatments: [{
-    id: 1,
-    label: "Enables showing media with custom status in ICYMI",
-    config: {
-      enabled: !0
-    }
-  }]
-}), (0, r.B)({
-  kind: "user",
   id: "2025-07_icymi_split_notification_tab",
   label: "Split notifications tab",
   defaultConfig: {

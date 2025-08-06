@@ -13,9 +13,9 @@ var n = a(255367),
   u = a(789654),
   m = a(246992),
   x = a(500949),
-  h = a(770378);
+  p = a(770378);
 
-function p(e) {
+function h(e) {
   for (var t = 1; t < arguments.length; t++) {
     var a = null != arguments[t] ? arguments[t] : {},
       n = Object.keys(a);
@@ -65,7 +65,7 @@ function j(e) {
   } = e, {
     scales: l
   } = t, [i, s] = r.useState(null), o = (0, n.jsxs)("div", {
-    className: h.section,
+    className: p.section,
     children: [(0, n.jsx)(d.VcW, {
       options: v,
       placeholder: "Select a scale to edit...",
@@ -83,13 +83,13 @@ function j(e) {
           easing: x.iw.LINEAR,
           easingStrength: 1,
           steps: 26
-        }, a(f(p({}, t), {
+        }, a(f(h({}, t), {
           scales: [...t.scales, n]
         })))
       },
       popoutLayerContext: m.O$
     }), (0, n.jsx)("ul", {
-      className: h.overrides,
+      className: p.overrides,
       children: l.map(e => (0, n.jsx)("li", {
         children: (0, n.jsx)(d.P3F, {
           onClick: () => s(e.name),
@@ -98,7 +98,7 @@ function j(e) {
           },
           children: (0, n.jsx)(_, {
             scale: e,
-            onRemove: () => a(f(p({}, t), {
+            onRemove: () => a(f(h({}, t), {
               scales: t.scales.filter(t => t.name !== e.name)
             }))
           })
@@ -122,19 +122,19 @@ function g(e) {
     onClose: r
   } = e, {
     name: c,
-    base: p,
+    base: h,
     darkness: f,
     lightness: v,
     showColumnarPalettePreview: j,
     colorSpace: g,
     easingStrength: _ = 1,
     useP3ColorSpace: C,
-    steps: N = 26
-  } = t, O = (0, x.XM)(t), E = (0, x.W6)(O, c);
+    steps: O = 26
+  } = t, N = (0, x.XM)(t), E = (0, x.W6)(N, c);
   return (0, n.jsxs)(d.hjN, {
-    className: h.paletteSettings,
+    className: p.paletteSettings,
     children: [(0, n.jsxs)("div", {
-      className: h.titleWithIcon,
+      className: p.titleWithIcon,
       children: [(0, n.jsx)(d.P3F, {
         onClick: r,
         style: {
@@ -148,7 +148,7 @@ function g(e) {
         children: c
       }), (0, n.jsx)(d.P3F, {
         onClick: function() {
-          let e = Object.entries(O).reduce((e, t) => {
+          let e = Object.entries(N).reduce((e, t) => {
             let [a, n] = t;
             return e[a] = {
               value: (0, l.Z)((0, i.Z)(n, x.HW.sRGB), {
@@ -166,7 +166,7 @@ function g(e) {
       })]
     }), (0, n.jsxs)(d.xJW, {
       title: "Base Color",
-      className: h.formItem,
+      className: p.formItem,
       children: [(0, n.jsxs)(d.Text, {
         variant: "text-sm/medium",
         color: "text-secondary",
@@ -175,7 +175,7 @@ function g(e) {
         }), " palette is generated from."]
       }), (0, n.jsx)("input", {
         type: "color",
-        value: p,
+        value: h,
         onChange: e => (0, x.Ib)(c, e.target.value, a)
       })]
     }), (0, n.jsxs)(d.xJW, {
@@ -260,10 +260,10 @@ function g(e) {
           children: "Use P3 Color Space"
         })
       }), (0, n.jsx)(d.xJW, {
-        title: "Steps (".concat(N, ")"),
+        title: "Steps (".concat(O, ")"),
         children: (0, n.jsx)(d.iRW, {
           onValueRender: () => null,
-          initialValue: N,
+          initialValue: O,
           minValue: (0, x.A0)(c).length,
           maxValue: 100,
           onValueChange: e => (0, x.YC)(c, Math.round(e), a),
@@ -272,10 +272,10 @@ function g(e) {
       }), (0, n.jsx)(d.xJW, {
         title: "Palette Preview",
         children: (0, n.jsx)("div", {
-          className: h.paletteOverrides,
+          className: p.paletteOverrides,
           "data-columnar": j,
-          children: Object.entries(O).map((e, a) => {
-            let [r, c] = e, u = (0, x.HI)(c), m = (0, s.Z)((0, o.Z)("black"), c) > 4.5 ? "black" : "white", h = E[r];
+          children: Object.entries(N).map((e, a) => {
+            let [r, c] = e, u = (0, x.HI)(c), m = (0, s.Z)((0, o.Z)("black"), c) > 4.5 ? "black" : "white", p = E[r];
             return (0, n.jsxs)("div", {
               style: {
                 backgroundColor: u
@@ -285,8 +285,8 @@ function g(e) {
                 style: {
                   color: m
                 },
-                children: [t.name, ".", a + 1, j && null != h ? (0, n.jsx)("strong", {
-                  children: " - ".concat(h)
+                children: [t.name, ".", a + 1, j && null != p ? (0, n.jsx)("strong", {
+                  children: " - ".concat(p)
                 }) : ""]
               }), j && (0, n.jsxs)(d.Text, {
                 variant: "text-xxs/medium",
@@ -314,20 +314,20 @@ function _(e) {
     format: "hex"
   })), [t]);
   return (0, n.jsxs)("li", {
-    className: h.override,
+    className: p.override,
     children: [(0, n.jsxs)("div", {
-      className: h.overrideHeader,
+      className: p.overrideHeader,
       children: [(0, n.jsx)("div", {
-        className: h.title,
+        className: p.title,
         children: (0, n.jsx)(d.Text, {
           lineClamp: 1,
           variant: "text-md/medium",
-          className: h.overrideHeading,
+          className: p.overrideHeading,
           tabularNumbers: !0,
           children: t.name
         })
       }), (0, n.jsx)("span", {}), (0, n.jsx)("span", {}), (0, n.jsx)(d.P3F, {
-        className: h.removeOverride,
+        className: p.removeOverride,
         onClick: a,
         children: (0, n.jsx)(d.Dio, {
           size: "xs",
@@ -335,7 +335,7 @@ function _(e) {
         })
       })]
     }), (0, n.jsx)("div", {
-      className: h.palettePreview,
+      className: p.palettePreview,
       children: s.map(e => (0, n.jsx)("span", {
         style: {
           width: 16,

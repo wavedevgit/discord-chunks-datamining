@@ -1,11 +1,11 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  $l: () => w,
+  $l: () => P,
   G1: () => O,
-  JR: () => A,
-  U$: () => N,
-  ZP: () => D,
+  JR: () => S,
+  U$: () => A,
+  ZP: () => w,
   e7: () => I,
   wv: () => T,
   yK: () => v
@@ -108,28 +108,20 @@ function T(e, t) {
 
 function S(e, t) {
   l.Z.dispatch({
-    type: "SET_ICYMI_SELECTED_SUMMARY",
-    channelId: e,
-    summaryId: null != t ? t : null
-  })
-}
-
-function A(e, t) {
-  l.Z.dispatch({
     type: "UPDATE_VISIBLE_MESSAGES",
     topVisibleMessage: null != e ? e : null,
     bottomVisibleMessage: null != t ? t : null
   })
 }
 
-function N(e, t) {
+function A(e, t) {
   l.Z.dispatch({
     type: "SET_SUMMARY_FEEDBACK",
     summary: e,
     rating: t
   })
 }
-async function C() {
+async function N() {
   var e;
   let t, n;
   if (!p.Z.shouldFetchChannelAffinities()) return Promise.resolve(null);
@@ -155,7 +147,7 @@ async function C() {
     receivedAt: Date.now()
   })
 }
-async function R(e) {
+async function C(e) {
   let t, n, {
     useQuickSwitcher: r = !0,
     useChannelAffinities: i = !0
@@ -204,7 +196,7 @@ async function R(e) {
   })
 }
 
-function P() {
+function R() {
   let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : [],
     t = (0, a.e7)([d.Z], () => d.Z.isConnected()),
     n = r.useMemo(() => e.join(","), [e]);
@@ -212,13 +204,13 @@ function P() {
     t && e();
     async function e() {
       try {
-        await C()
+        await N()
       } catch (e) {}
-      await R(n.split(","))
+      await C(n.split(","))
     }
   }, [n, t])
 }
-async function w(e) {
+async function P(e) {
   try {
     await s.tn.del({
       url: h.Z5c.CHANNEL_SUMMARY(e.channelId, e.id),
@@ -231,19 +223,18 @@ async function w(e) {
     throw new c.Hx(e)
   }
 }
-let D = {
-  setSummaryFeedback: N,
-  updateVisibleMessages: A,
+let w = {
+  setSummaryFeedback: A,
+  updateVisibleMessages: S,
   setSelectedSummary: T,
-  setGravitySelectedSummary: S,
   setHighlightedSummary: v,
   fetchSummaries: O,
-  fetchSummariesBulk: R,
+  fetchSummariesBulk: C,
   useChannelSummaries: function(e) {
     let {
       channelIds: t = []
     } = e;
-    return P(t), (0, a.Wu)([p.Z], () => p.Z.topSummaries(), [])
+    return R(t), (0, a.Wu)([p.Z], () => p.Z.topSummaries(), [])
   },
-  deleteSummary: w
+  deleteSummary: P
 }

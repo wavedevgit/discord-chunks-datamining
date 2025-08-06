@@ -1,17 +1,17 @@
 /** Chunk was on 71879 **/
 "use strict";
 n.d(t, {
-  Z: () => l
+  Z: () => a
 });
 var r = n(73800),
   i = n(924826);
 
-function l(e) {
+function a(e) {
   let {
     listRef: t,
     padding: n,
-    channel: l,
-    isEnabled: a
+    channel: a,
+    isEnabled: l
   } = e, s = r.useCallback(e => {
     let r = t.current,
       i = document.querySelector(e);
@@ -37,8 +37,8 @@ function l(e) {
     })
   }), [t]);
   return (0, i.ZP)({
-    id: "forum-channel-list-".concat(l.id),
-    isEnabled: a,
+    id: "forum-channel-list-".concat(a.id),
+    isEnabled: l,
     scrollToStart: o,
     scrollToEnd: c,
     setFocus: s

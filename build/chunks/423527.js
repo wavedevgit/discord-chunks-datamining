@@ -23,8 +23,8 @@ var r, i = n(255367),
   j = n(481230),
   I = n(388905),
   O = n(853268),
-  N = n(639946),
-  S = n(616952),
+  S = n(639946),
+  N = n(616952),
   C = n(792766),
   y = n(692483),
   A = n(100159),
@@ -323,7 +323,7 @@ class eu extends(r = l.PureComponent) {
     return (null == e ? void 0 : e.stage_instance) != null && null != e.guild ? (0, i.jsx)(C.Z, {
       stageInstance: e.stage_instance,
       guild: e.guild
-    }) : (null == e ? void 0 : e.guild_scheduled_event) != null ? (0, i.jsx)(N.r, {
+    }) : (null == e ? void 0 : e.guild_scheduled_event) != null ? (0, i.jsx)(S.r, {
       channel: e.channel,
       guildScheduledEvent: e.guild_scheduled_event
     }) : (0, i.jsx)(Y.Z, {
@@ -485,11 +485,11 @@ class eu extends(r = l.PureComponent) {
         date_of_birth: O
       } = {}
     } = this.state, {
-      consentRequired: N,
+      consentRequired: S,
       authBoxClassName: C,
       hasLoggedInAccounts: y
     } = this.props, A = this.renderErrorMessage(), T = (0, i.jsx)(p.ua7, {
-      text: !c && N ? en.intl.string(en.t.AY4IVF) : null,
+      text: !c && S ? en.intl.string(en.t.AY4IVF) : null,
       children: e => (0, i.jsx)("div", eo(es({
         className: ei.marginTop20
       }, e), {
@@ -616,7 +616,7 @@ class eu extends(r = l.PureComponent) {
         required: !0,
         onFocus: this.trackInputFocus,
         onBlur: this.trackInputBlur
-      }), (0, i.jsx)(S.Z, {}), this.renderConsentComponent(), T, A, $.a ? null : (0, i.jsx)(I.zx, {
+      }), (0, i.jsx)(N.Z, {}), this.renderConsentComponent(), T, A, $.a ? null : (0, i.jsx)(I.zx, {
         look: I.zx.Looks.LINK,
         color: I.zx.Colors.LINK,
         onClick: this.handleGotoLogin,
