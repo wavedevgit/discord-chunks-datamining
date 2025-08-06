@@ -190,6 +190,7 @@ function w(e) {
     alt: "",
     src: ep.artURL
   }) : null != ep.artElement && (eN = ep.artElement), (0, r.jsxs)(c.Y0X, {
+    "data-migration-pending": !0,
     className: a()(A.root, !eE && U),
     "aria-label": R,
     transitionState: H,
@@ -202,6 +203,7 @@ function w(e) {
         src: N
       }) : null]
     }), (0, r.jsx)(c.hzk, {
+      "data-migration-pending": !0,
       scrollbarType: "none",
       className: a()(eo ? A.enhancedContent : A.content, !eE && G),
       children: en ? (0, r.jsx)(c.$jN, {}) : eE ? (0, r.jsx)(O.ZP, {
@@ -236,6 +238,7 @@ function w(e) {
         })]
       })
     }), (0, r.jsxs)(c.mzw, {
+      "data-migration-pending": !0,
       className: a()(A.footer, e_, {
         [A.enhancedFooter]: eo
       }),

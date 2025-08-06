@@ -16,8 +16,8 @@ var n = t(255367),
   p = t(509545),
   _ = t(78839),
   f = t(669079),
-  x = t(987209),
-  m = t(563132),
+  m = t(987209),
+  x = t(563132),
   h = t(409813),
   j = t(107998),
   L = t(791785),
@@ -93,11 +93,11 @@ function B(e) {
   let {
     step: G,
     selectedSkuId: H
-  } = (0, m.JL)(), {
+  } = (0, x.JL)(), {
     isGift: D,
     giftMessage: W,
     giftRecipient: Y
-  } = (0, x.wD)(), z = D && (0, f.pO)(Y) && G === h.h8.PLAN_SELECT, K = (0, c.a)(D, !1, H);
+  } = (0, m.wD)(), z = D && (0, f.pO)(Y) && G === h.h8.PLAN_SELECT, K = (0, c.a)(D, !1, H);
   return (0, n.jsx)(E.Z, {
     isWowMomentConfirmationEligible: K,
     isConfirmationStep: G === h.h8.CONFIRM,
@@ -147,10 +147,10 @@ function F(e) {
     paymentSources: a,
     selectedSkuId: s,
     selectedPlan: d
-  } = (0, m.JL)(), {
+  } = (0, x.JL)(), {
     isGift: C,
     claimableRewards: c
-  } = (0, x.wD)(), p = (0, T.Z)({
+  } = (0, m.wD)(), p = (0, T.Z)({
     isGift: C,
     skuId: s,
     referralTrialOfferId: o
@@ -255,7 +255,7 @@ function H(e) {
   if (null != y && !Object.values(A.Si).includes(y)) throw Error("subscriptionTier must be a premium subscription");
   return (0, n.jsx)(d.Gt, {
     value: i,
-    children: (0, n.jsx)(m.PaymentContextProvider, {
+    children: (0, n.jsx)(x.PaymentContextProvider, {
       loadId: L,
       activeSubscription: null != e.subscription ? e.subscription : r,
       stepConfigs: G,
@@ -266,7 +266,7 @@ function H(e) {
       children: (0, n.jsx)(j.c1, {
         confirmationFooter: o,
         paymentModalBanner: b,
-        children: (0, n.jsx)(x.KB, {
+        children: (0, n.jsx)(m.KB, {
           isGift: h,
           giftRecipient: null == p ? void 0 : p,
           giftMessage: u,

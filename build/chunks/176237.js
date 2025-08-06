@@ -1,10 +1,10 @@
 /** Chunk was on 89839 **/
 n.d(t, {
-  $: () => a,
-  D: () => r
+  $: () => r,
+  D: () => a
 });
 var l = n(818083);
-let r = (0, n(427164).le)({
+let a = (0, n(427164).le)({
     name: "2025-06-apex-aa-evolving-tenure-badge-web",
     kind: "user",
     defaultConfig: {
@@ -19,7 +19,7 @@ let r = (0, n(427164).le)({
       }
     }
   }),
-  a = (0, l.B)({
+  r = (0, l.B)({
     id: "2025-06_apex_client_aa_rollout",
     kind: "user",
     label: "Apex Client SDK AA Test Rollout",

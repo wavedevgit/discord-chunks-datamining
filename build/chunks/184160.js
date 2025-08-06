@@ -1,6 +1,6 @@
 /** Chunk was on 24329 **/
 t.d(r, {
-  x: () => m
+  x: () => x
 });
 var n = t(255367);
 t(73800);
@@ -16,20 +16,20 @@ var i = t(512722),
   p = t(409813),
   _ = t(614223),
   f = t(388032),
-  x = t(959803);
+  m = t(959803);
 
-function m(e) {
+function x(e) {
   let {
     handleStepChange: r,
     handleClose: t
   } = e, i = (0, s.ZP)(), {
-    activeSubscription: m,
+    activeSubscription: x,
     selectedSkuId: h,
     setSelectedPlanId: j,
     startedPaymentFlowWithPaymentSourcesRef: L
   } = (0, u.JL)(), {
     isGift: b
-  } = (0, c.wD)(), g = null != m ? (0, C.Af)(m) : null, y = null != g ? (0, C.gq)(g.planId) : null, S = null != g ? (0, C.Rd)(g.planId) : null, E = (0, _.Kp)({
+  } = (0, c.wD)(), g = null != x ? (0, C.Af)(x) : null, y = null != g ? (0, C.gq)(g.planId) : null, S = null != g ? (0, C.Rd)(g.planId) : null, E = (0, _.Kp)({
     isTrial: !1,
     isGift: b,
     selectedSkuId: h,
@@ -42,10 +42,10 @@ function m(e) {
       subscriptionName: y
     }),
     footer: (0, n.jsxs)("div", {
-      className: x.whatYouLoseButtonContainer,
+      className: m.whatYouLoseButtonContainer,
       children: [(0, n.jsx)(a.zx, {
         onClick: () => {
-          E ? (j((0, _.nA)(h, m)), r(p.h8.REVIEW)) : r(p.h8.PLAN_SELECT)
+          E ? (j((0, _.nA)(h, x)), r(p.h8.REVIEW)) : r(p.h8.PLAN_SELECT)
         },
         children: f.intl.string(f.t["3PatS0"])
       }), (0, n.jsx)(a.zx, {

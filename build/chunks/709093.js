@@ -118,6 +118,7 @@ let N = function(e) {
       children: [(0, r.jsx)(A, {
         isTier2: P
       }), !f && (0, r.jsx)(s.olH, {
+        "data-migration-pending": !0,
         hideOnFullscreen: b,
         onClick: y,
         className: E.closeButtonPosition

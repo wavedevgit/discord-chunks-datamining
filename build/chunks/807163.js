@@ -480,6 +480,7 @@ let ej = function(e) {
       premiumType: s,
       onClose: o
     }), (0, t.jsx)(x.hzk, {
+      "data-migration-pending": !0,
       className: K.body,
       children: (0, t.jsx)(x.$jN, {
         className: K.spinner
@@ -490,6 +491,7 @@ let ej = function(e) {
       premiumType: s,
       onClose: o
     }), (0, t.jsxs)(x.hzk, {
+      "data-migration-pending": !0,
       className: K.body,
       children: [(0, t.jsx)(x.X6q, {
         variant: "heading-xl/semibold",
@@ -509,6 +511,7 @@ let ej = function(e) {
         isDowngrade: j
       })]
     }), !I && (0, t.jsx)(x.mzw, {
+      "data-migration-pending": !0,
       children: i
     }), I && (0, t.jsx)(k.Z, {
       churnUserDiscountOffer: f,

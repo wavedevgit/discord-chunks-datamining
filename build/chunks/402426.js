@@ -17,7 +17,7 @@ let s = e => {
     _.current = !1
   }), []);
   let f = (0, n.useCallback)(() => null != r.modalGlowEntry && null != r.modalGlowIdle && null != r.modalGlowExit, [r.modalGlowEntry, r.modalGlowIdle, r.modalGlowExit]),
-    x = (0, n.useCallback)(async () => {
+    m = (0, n.useCallback)(async () => {
       if (!f() && !u) {
         p(!0), c(!1), d(!1);
         try {
@@ -47,8 +47,8 @@ let s = e => {
       }
     }, [f, u]);
   return (0, n.useEffect)(() => {
-    e && x()
-  }, [e, x]), (0, n.useEffect)(() => () => {
+    e && m()
+  }, [e, m]), (0, n.useEffect)(() => () => {
     null != r.modalGlowEntry && window.URL.revokeObjectURL(r.modalGlowEntry), null != r.modalGlowIdle && window.URL.revokeObjectURL(r.modalGlowIdle), null != r.modalGlowExit && window.URL.revokeObjectURL(r.modalGlowExit)
   }, [r.modalGlowEntry, r.modalGlowIdle, r.modalGlowExit]), {
     mediaUrls: r,

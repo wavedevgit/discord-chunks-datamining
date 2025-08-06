@@ -1,6 +1,6 @@
 /** Chunk was on 24329 **/
 t.d(r, {
-  Z: () => m
+  Z: () => x
 });
 var n = t(255367);
 t(73800);
@@ -16,22 +16,22 @@ var i = t(442837),
   p = t(594174),
   _ = t(27034),
   f = t(215023),
-  x = t(317112);
+  m = t(317112);
 
-function m(e) {
+function x(e) {
   let {
     onClose: r,
     selectedPromotionalDecoPurchaseRecord: t,
-    selectedGiftingPromotionReward: m
+    selectedGiftingPromotionReward: x
   } = e, h = (0, i.e7)([p.default], () => p.default.getCurrentUser()), j = (0, i.e7)([a.Z], () => a.Z.useReducedMotion), {
     analyticsLocations: L
-  } = (0, s.ZP)(), b = o.EFr.SIZE_32, g = (0, d.Z)(null == m ? void 0 : m.assetId, b, !j), y = (0, u.Z)(), S = null == y ? void 0 : y.giftPurchaseConfirmation;
+  } = (0, s.ZP)(), b = o.EFr.SIZE_32, g = (0, d.Z)(null == x ? void 0 : x.assetId, b, !j), y = (0, u.Z)(), S = null == y ? void 0 : y.giftPurchaseConfirmation;
   return null == t || null == S ? null : (0, n.jsx)(_.O3, {
     children: (0, n.jsx)(o.mzw, {
       align: c.Z.Align.CENTER,
       "data-migration-pending": !0,
       children: (0, n.jsxs)("div", {
-        className: x.promotionalFooter,
+        className: m.promotionalFooter,
         children: [(0, n.jsx)(o.Xo$, {
           "aria-label": null == h ? void 0 : h.username,
           size: b,

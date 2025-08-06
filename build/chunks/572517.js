@@ -20,12 +20,12 @@ function _() {
     t = (0, a.ZP)(),
     _ = (0, l.wj)(t),
     f = (0, c.Z)(),
-    x = null == f ? void 0 : f.planSelectionBanner,
+    m = null == f ? void 0 : f.planSelectionBanner,
     {
-      claimableRewards: m
+      claimableRewards: x
     } = (0, d.wD)();
-  if (null == x || null == m) return null;
-  let h = null == (e = x.gradientConfig) ? void 0 : e.call(x, {
+  if (null == m || null == x) return null;
+  let h = null == (e = m.gradientConfig) ? void 0 : e.call(m, {
       isDarkMode: _,
       isAndroid: !1
     }),
@@ -34,13 +34,13 @@ function _() {
     className: p.promotionalFooterBanner,
     style: j,
     children: [(0, n.jsx)(u.Z, {
-      claimableRewards: m,
-      maxRewardImageSrc: x.getImageUrl(_, r),
+      claimableRewards: x,
+      maxRewardImageSrc: m.getImageUrl(_, r),
       size: o.EFr.SIZE_40
     }), (0, n.jsx)(o.Text, {
       variant: "text-md/medium",
       className: p.bannerText,
-      children: x.desktopBannerText(m.length)
+      children: m.desktopBannerText(x.length)
     })]
   })
 }

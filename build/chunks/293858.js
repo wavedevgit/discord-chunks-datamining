@@ -15,8 +15,8 @@ var n = t(255367),
   p = t(296848),
   _ = t(987209),
   f = t(563132),
-  x = t(107998),
-  m = t(27034),
+  m = t(107998),
+  x = t(27034),
   h = t(400981),
   j = t(435020),
   L = t(698708),
@@ -55,7 +55,7 @@ function g(e) {
     } = (0, _.wD)(),
     {
       confirmationFooter: W
-    } = (0, x.zb)(),
+    } = (0, m.zb)(),
     Y = null != W,
     z = (0, d.id)(M, N, H),
     K = (0, C.Z)(),
@@ -95,7 +95,7 @@ function g(e) {
     hideClose: Y,
     startingFractionalPremiumEndsAt: R.current
   }), (0, n.jsxs)(n.Fragment, {
-    children: [(0, n.jsxs)(m.C3, {
+    children: [(0, n.jsxs)(x.C3, {
       children: [(0, n.jsx)(L.Z, {}), r]
     }), null != W && W, Q && null != q && (0, n.jsx)(h.Z, {
       onClose: X,

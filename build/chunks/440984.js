@@ -1,9 +1,9 @@
 /** Chunk was on 81709 **/
 n.d(t, {
-  D: () => C
+  D: () => g
 }), n(388685);
-var r = n(255367),
-  i = n(73800),
+var i = n(255367),
+  r = n(73800),
   a = n(442837),
   s = n(780384),
   o = n(481060),
@@ -20,63 +20,64 @@ var r = n(255367),
   y = n(982404),
   h = n(299156);
 
-function C(e) {
+function g(e) {
   let {
     premiumSubscription: t,
     premiumType: n,
-    onClose: C,
-    confettiCanvas: j,
-    userWasChurned: E = !1,
-    userDiscountOffer: O
-  } = e, P = (0, l.ZP)(), g = (0, s.wj)(P) ? y : h, v = i.useRef(null), [N, I] = i.useState(!1), T = (0, p._)(t, f.Xh.PREMIUM_MONTH_TIER_2, O), S = (0, d.aS)(f.Xh.PREMIUM_MONTH_TIER_2, !1, !1, {
+    onClose: g,
+    confettiCanvas: C,
+    userWasChurned: j = !1,
+    userDiscountOffer: E
+  } = e, O = (0, l.ZP)(), P = (0, s.wj)(O) ? y : h, v = r.useRef(null), [N, I] = r.useState(!1), T = (0, p._)(t, f.Xh.PREMIUM_MONTH_TIER_2, E), S = (0, d.aS)(f.Xh.PREMIUM_MONTH_TIER_2, !1, !1, {
     currency: t.currency,
     paymentSourceId: t.paymentSourceId
   }), R = (0, m.T4)(S.amount, S.currency), w = (0, a.e7)([c.Z], () => c.Z.useReducedMotion);
-  if (i.useEffect(() => {
+  if (r.useEffect(() => {
       null != v.current && null != T && I(!0)
-    }, [v, N, T]), null == O || null == T) return null;
+    }, [v, N, T]), null == E || null == T) return null;
   let D = b.intl.format(b.t.gPzMHR, {
-      numMonths: O.discount.user_usage_limit,
+      numMonths: E.discount.user_usage_limit,
       discountedPrice: T,
       regularPrice: R
     }),
-    k = (0, r.jsx)("div", {
+    k = (0, i.jsx)("div", {
       className: x.whatYouLoseButtonContainer,
-      children: (0, r.jsx)(o.zxk, {
+      children: (0, i.jsx)(o.zxk, {
         variant: "primary",
         text: b.intl.string(b.t["/r8g/v"]),
-        onClick: C
+        onClick: g
       })
     });
-  return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(_.Z, {
+  return (0, i.jsxs)(i.Fragment, {
+    children: [(0, i.jsx)(_.Z, {
       premiumType: n,
       className: x.cancellationHeader,
-      onClose: C
-    }), (0, r.jsx)("div", {
+      onClose: g
+    }), (0, i.jsx)("div", {
       ref: v,
-      children: (0, r.jsx)(o.hzk, {
+      children: (0, i.jsx)(o.hzk, {
+        "data-migration-pending": !0,
         className: x.body,
-        children: null != T ? (0, r.jsxs)(r.Fragment, {
-          children: [(0, r.jsxs)("div", {
+        children: null != T ? (0, i.jsxs)(i.Fragment, {
+          children: [(0, i.jsxs)("div", {
             className: x.discountAppliedBody,
-            children: [(0, r.jsx)("img", {
+            children: [(0, i.jsx)("img", {
               alt: "",
-              src: g,
+              src: P,
               className: x.nitroIcon
-            }), (0, r.jsx)(o.X6q, {
+            }), (0, i.jsx)(o.X6q, {
               variant: "heading-xl/bold",
-              children: E ? b.intl.string(b.t.gOOPaG) : b.intl.string(b.t.PZSyRk)
+              children: j ? b.intl.string(b.t.gOOPaG) : b.intl.string(b.t.PZSyRk)
             })]
-          }), (0, r.jsx)("div", {
+          }), (0, i.jsx)("div", {
             className: x.bodyString,
             children: D
           }), k]
-        }) : (0, r.jsx)(o.$jN, {})
+        }) : (0, i.jsx)(o.$jN, {})
       })
-    }), !w && N && (0, r.jsx)(u.Z, {
+    }), !w && N && (0, i.jsx)(u.Z, {
       confettiTarget: v.current,
-      confettiCanvas: j,
+      confettiCanvas: C,
       confettiVelocityMultiplier: .75
     })]
   })

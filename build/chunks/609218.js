@@ -91,6 +91,7 @@ function j(e) {
         children: [(0, r.jsxs)("div", {
           className: R.content,
           children: [(0, r.jsx)(d.olH, {
+            "data-migration-pending": !0,
             onClick: B,
             className: R.closeButton
           }), (0, r.jsxs)("div", {
@@ -154,6 +155,7 @@ function j(e) {
     }), (0, r.jsxs)("div", {
       className: a()(P.container, K()),
       children: [(0, r.jsx)(d.olH, {
+        "data-migration-pending": !0,
         onClick: B,
         className: P.closeButton
       }), (0, r.jsxs)("div", {

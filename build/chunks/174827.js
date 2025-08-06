@@ -15,8 +15,8 @@ var n = t(255367),
   p = t(717401),
   _ = t(286961),
   f = t(572517),
-  x = t(104494),
-  m = t(639119),
+  m = t(104494),
+  x = t(639119),
   h = t(642530),
   j = t(381507),
   L = t(314404),
@@ -76,13 +76,13 @@ function G(e) {
     location: "d17fd6_3"
   }, {
     autoTrackExposure: !1
-  }), ex = (0, a.e7)([b.default], () => b.default.getCurrentUser()), em = !eo && null != $ && $ === k.Si.TIER_2 && null != ex && ex.hasHadPremium() && J && null == q && (0, c.aQ)(e_), eh = (0, m.N)(K), ej = !eo && null != eh && null != $ && k.nG[eh.trial_id].skus.includes($), eL = (0, x.Ng)(), eb = null == eL || null == (t = eL.discount) ? void 0 : t.plan_ids.some(e => k.GP[e].skuId === $), eg = !eo && null != eL && null != $ && eb, ey = null != (l = ej || eg) && l, eS = i.useMemo(() => (0, E.V7)({
+  }), em = (0, a.e7)([b.default], () => b.default.getCurrentUser()), ex = !eo && null != $ && $ === k.Si.TIER_2 && null != em && em.hasHadPremium() && J && null == q && (0, c.aQ)(e_), eh = (0, x.N)(K), ej = !eo && null != eh && null != $ && k.nG[eh.trial_id].skus.includes($), eL = (0, m.Ng)(), eb = null == eL || null == (t = eL.discount) ? void 0 : t.plan_ids.some(e => k.GP[e].skuId === $), eg = !eo && null != eL && null != $ && eb, ey = null != (l = ej || eg) && l, eS = i.useMemo(() => (0, E.V7)({
     skuId: $,
     isPremium: ei,
-    multiMonthPlans: em ? ef : [],
+    multiMonthPlans: ex ? ef : [],
     currentSubscription: q,
     defaultPlanId: et
-  }), [$, ei, ef, q, em, et]), eE = eg && eS.includes(k.Xh.PREMIUM_MONTH_TIER_2) ? k.Xh.PREMIUM_MONTH_TIER_2 : eS[0], ev = (0, a.e7)([g.Z], () => g.Z.get(eE)), eI = [{
+  }), [$, ei, ef, q, ex, et]), eE = eg && eS.includes(k.Xh.PREMIUM_MONTH_TIER_2) ? k.Xh.PREMIUM_MONTH_TIER_2 : eS[0], ev = (0, a.e7)([g.Z], () => g.Z.get(eE)), eI = [{
     planId: null == ev ? void 0 : ev.id,
     quantity: 1
   }], [ew, eO] = i.useState(ey), [eM, eP] = (0, u.ED)({
@@ -123,7 +123,7 @@ function G(e) {
         children: eT
       }) : (0, n.jsx)(L.O, {
         planOptions: eS,
-        eligibleForMultiMonthPlans: em,
+        eligibleForMultiMonthPlans: ex,
         referralTrialOfferId: K,
         selectedPlanId: null == ee ? void 0 : ee.id,
         planGroup: W,
@@ -143,6 +143,7 @@ function G(e) {
       })]
     }), (0, n.jsxs)(T.O3, {
       children: [ep && (0, n.jsx)(f.c, {}), (0, n.jsx)(s.mzw, {
+        "data-migration-pending": !0,
         justify: C.Z.Justify.BETWEEN,
         align: C.Z.Align.CENTER,
         className: el,

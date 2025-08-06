@@ -15,8 +15,8 @@ var n = t(255367),
   p = t(626135),
   _ = t(987209),
   f = t(563132),
-  x = t(409813),
-  m = t(27034),
+  m = t(409813),
+  x = t(27034),
   h = t(981631),
   j = t(388032),
   L = t(529190);
@@ -58,7 +58,7 @@ function b(e) {
       guildId: null,
       avatarSize: s.EFr.SIZE_152
     }) : null,
-    M = (0, n.jsx)(m.O3, {
+    M = (0, n.jsx)(x.O3, {
       children: (0, n.jsx)(s.mzw, {
         className: L.modalFooter,
         children: (0, n.jsx)(c.y, {
@@ -68,7 +68,7 @@ function b(e) {
               reward_sku_id: S.skuId
             }), r(e)
           },
-          onBackClick: () => r(x.h8.PLAN_SELECT),
+          onBackClick: () => r(m.h8.PLAN_SELECT),
           shouldRenderUpdatedPaymentModal: !0,
           showBackButton: !0,
           planOptions: [l.id],
