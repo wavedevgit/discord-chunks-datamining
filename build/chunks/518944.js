@@ -46,7 +46,7 @@ let g = !1,
 
 function b(e) {
   let {
-    searchId: t,
+    id: t,
     editorState: n
   } = e;
   h(t).editorState = n
@@ -54,14 +54,14 @@ function b(e) {
 
 function y(e) {
   let {
-    searchId: t
+    id: t
   } = e;
-  null != t && h(t)
+  h(t)
 }
 
 function O(e) {
   let {
-    searchId: t
+    id: t
   } = e;
   if (null == p[t]) return !1;
   delete p[t]
@@ -91,14 +91,14 @@ function T(e) {
 
 function S(e) {
   let {
-    searchId: t
+    id: t
   } = e;
   v(t)
 }
 
 function A(e) {
   let {
-    searchId: t,
+    id: t,
     showBlocked: n
   } = e;
   h(t).showBlockedResults = n
@@ -106,14 +106,14 @@ function A(e) {
 
 function N(e) {
   let {
-    searchId: t
+    id: t
   } = e;
   h(t).showNoResultsAlt = Math.random() < _
 }
 
 function C(e) {
   let {
-    searchId: t,
+    id: t,
     queryString: n,
     query: r,
     offset: i

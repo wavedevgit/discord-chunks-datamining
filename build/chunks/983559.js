@@ -68,7 +68,7 @@ function A(e) {
     config: {
       duration: 150
     }
-  }), W = e => {
+  }), V = e => {
     (0, y.openUserProfileModal)(w({
       sourceAnalyticsLocations: U,
       hideRestrictedProfile: !0
@@ -122,7 +122,7 @@ function A(e) {
                 displayProfile: L,
                 channelId: A.id,
                 themeType: T.lY.SIDEBAR,
-                onOpenProfile: D ? void 0 : W
+                onOpenProfile: D ? void 0 : V
               }), (0, r.jsx)(Z.Z, {
                 location: "UserProfileSidebar",
                 user: t,
@@ -136,7 +136,7 @@ function A(e) {
               displayProfile: L,
               channel: A,
               isHovering: null == B.interactionType && F,
-              onOpenProfile: D ? void 0 : W
+              onOpenProfile: D ? void 0 : V
             }), (0, r.jsx)(P.Z, {
               user: t,
               channelId: A.id
@@ -149,7 +149,7 @@ function A(e) {
               look: s.zx.Looks.BLANK,
               color: R.footerButtonColor,
               onClick: () => {
-                W(), (0, g.pQ)(w({
+                V(), (0, g.pQ)(w({
                   action: "PRESS_VIEW_PROFILE",
                   analyticsLocations: U
                 }, H))

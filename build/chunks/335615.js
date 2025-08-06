@@ -44,8 +44,8 @@ var r = n(255367),
   F = n(594174),
   B = n(979651),
   z = n(585483),
-  W = n(823379),
-  V = n(51144),
+  V = n(823379),
+  W = n(51144),
   Y = n(998502),
   q = n(981631),
   K = n(388032),
@@ -146,7 +146,7 @@ let et = Y.ZP.getEnableHardwareAcceleration(),
         }))
       })
     }, [u, j, x]), R = i.useCallback(() => {
-      let e = "@".concat(V.ZP.getUserTag(u, {
+      let e = "@".concat(W.ZP.getUserTag(u, {
           decoration: "never"
         })),
         t = "<@".concat(u.id, ">");
@@ -531,7 +531,7 @@ class es extends i.Component {
         } = this.getDimensions();
       if (void 0 === n || 0 === n || null == t) return;
       this.hasContentFeed() && (t = t.filter(e => e.section !== Z.T));
-      let r = t.map(e => this.getRowProps(e)).slice(0, n + 1).filter(W.lm);
+      let r = t.map(e => this.getRowProps(e)).slice(0, n + 1).filter(V.lm);
       if (0 === r.length) return;
       let i = r.reduce((e, t) => {
         var n;

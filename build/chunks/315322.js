@@ -38,7 +38,7 @@ function f(e) {
 }
 
 function _(e) {
-  let t = (0, s.WJ)(e);
+  let t = (0, s.Tm)(e);
   return a.Z.getAnalyticsId(t)
 }
 

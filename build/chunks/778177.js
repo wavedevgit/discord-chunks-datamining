@@ -281,18 +281,18 @@ let en = {
     groupTip(e) {
       let {
         searchContext: t
-      } = e, n = (0, w.WJ)(t);
+      } = e;
       return (0, r.jsx)(p.ua7, {
         text: U.intl.string(U.t.dwAvX1),
         position: "left",
         children: e => {
           let {
-            onMouseEnter: t,
+            onMouseEnter: n,
             onMouseLeave: i
           } = e;
           return (0, r.jsx)(p.P3F, {
-            onClick: () => C.Z.clearWebSearchHistory(n),
-            onMouseEnter: t,
+            onClick: () => C.Z.clearWebSearchHistory(t),
+            onMouseEnter: n,
             onMouseLeave: i,
             className: G.searchClearHistory,
             title: U.intl.string(U.t.dwAvX1),
@@ -420,7 +420,7 @@ class er extends i.PureComponent {
       dateHint: (0, D.Pr)(),
       selectedIndex: -1
     }), B(this, "handleDateChange", e => {
-      let t = (0, w.WJ)(this.props.searchContext);
+      let t = (0, w.Tm)(this.props.searchContext);
       (0, M.bh)({
         searchContext: this.props.searchContext,
         searchQuery: P.Z.getSearchResultsQuery(t),
@@ -511,7 +511,7 @@ class er extends i.PureComponent {
           d = null != (c = null != i ? i : t) ? c : a,
           f = s.result.channel,
           _ = d === j.dCx.FILTER_IN && null != f && f.id === v.Z.getChannelId(),
-          p = (0, w.WJ)(this.props.searchContext);
+          p = (0, w.Tm)(this.props.searchContext);
         (0, M.bh)({
           searchContext: this.props.searchContext,
           searchQuery: P.Z.getSearchResultsQuery(p),

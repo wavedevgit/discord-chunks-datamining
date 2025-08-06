@@ -26,9 +26,9 @@ var r = n(255367),
   O = n(981631),
   I = n(93841),
   y = n(388032),
-  w = n(302794),
-  N = n(350618);
-let P = C.ZP.getEnableHardwareAcceleration() ? u.Xo$ : d.Z;
+  P = n(302794),
+  w = n(350618);
+let N = C.ZP.getEnableHardwareAcceleration() ? u.Xo$ : d.Z;
 
 function Z(e) {
   var t, n;
@@ -38,8 +38,8 @@ function Z(e) {
     var t;
     return (null == (t = e.tags) ? void 0 : t.premium_subscriber) === null
   })), Z = (0, s.e7)([h.default], () => h.default.getCurrentUser()), S = null == Z ? void 0 : Z.id, T = (0, s.e7)([v.ZP], () => null != S ? v.ZP.getMember(o, S) : void 0, [S, o]), A = (null == T ? void 0 : T.premiumSince) != null, R = (0, s.e7)([p.Z], () => p.Z.useReducedMotion), {
-    avatarDecorationSrc: L,
-    avatarSrc: k,
+    avatarDecorationSrc: k,
+    avatarSrc: L,
     eventHandlers: D
   } = (0, _.Z)({
     userId: null == Z ? void 0 : Z.id,
@@ -48,13 +48,13 @@ function Z(e) {
     animateOnHover: !R
   });
   return null == d || null == T || null == Z ? null : (0, r.jsxs)(a.$, {
-    className: w.container,
+    className: P.container,
     children: [(0, r.jsx)("img", {
       alt: "",
-      className: w.image,
-      src: N
+      className: P.image,
+      src: w
     }), (0, r.jsxs)("div", {
-      className: w.textContainer,
+      className: P.textContainer,
       children: [(0, r.jsx)(l.xv, {
         variant: "text-md/semibold",
         children: y.intl.string(A ? I.default.KSWK1d : I.default.XXXX5u)
@@ -73,7 +73,7 @@ function Z(e) {
         })
       })]
     }), null != C && !A && (0, r.jsx)(x.l, {
-      avatar: (0, r.jsx)(P, (t = function(e) {
+      avatar: (0, r.jsx)(N, (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -92,8 +92,8 @@ function Z(e) {
         return e
       }({}, D), n = n = {
         user: Z,
-        src: k,
-        avatarDecoration: L,
+        src: L,
+        avatarDecoration: k,
         size: u.EFr.SIZE_40,
         "aria-hidden": !0,
         animate: !0
@@ -113,15 +113,15 @@ function Z(e) {
         colorString: C.colorString,
         colorStrings: C.colorStrings
       }),
-      className: i()(w.content, w.exampleMessage),
+      className: i()(P.content, P.exampleMessage),
       message: y.intl.string(y.t["6OSasb"]),
       decorations: (0, r.jsx)(u.$Eu, {
         color: u.TVs.unsafe_rawColors.GUILD_BOOSTING_PINK,
-        className: w.boostIcon
+        className: P.boostIcon
       })
     }), (0, r.jsx)(m.Z, {
       guild: d,
-      className: w.content,
+      className: P.content,
       analyticsLocation: {
         page: O.ZY5.GUILD_POWERUPS_OVERVIEW,
         section: O.jXE.GUILD_POWERUPS_OVERVIEW_SIDEBAR

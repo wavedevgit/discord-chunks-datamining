@@ -10,8 +10,11 @@ var r = n(73800),
 
 function o(e) {
   let {
-    searchId: t
-  } = e, [n, o] = r.useState(s.QIO.NEWEST), c = (0, i.e7)([l.Z], () => l.Z.getSearchResultsQuery(t)), u = r.useRef(null);
+    searchContext: t
+  } = e, [n, o] = r.useState(s.QIO.NEWEST), c = (0, i.e7)([l.Z], () => {
+    let e = (0, a.Tm)(t);
+    return l.Z.getSearchResultsQuery(e)
+  }), u = r.useRef(null);
   return r.useEffect(() => {
     JSON.stringify(u.current) !== JSON.stringify(c) && (o((0, a.Vj)({
       sort_by: null == c ? void 0 : c.sort_by,

@@ -45,8 +45,8 @@ var r = n(255367),
   F = n(922482),
   B = n(431328),
   z = n(501655),
-  W = n(427679),
-  V = n(513449),
+  V = n(427679),
+  W = n(513449),
   Y = n(153349),
   q = n(901434),
   K = n(302270),
@@ -135,7 +135,7 @@ function eu(e) {
 function ed(e) {
   let {
     channel: t
-  } = e, n = (0, g.bp)(), i = (0, o.e7)([M.Z], () => M.Z.can(et.Plq.CREATE_INSTANT_INVITE, t)), l = (0, o.e7)([k.Z], () => k.Z.getGuild(t.guild_id)), a = (0, o.e7)([W.Z], () => W.Z.getStageInstanceByChannel(t.id)), s = i || (null == a ? void 0 : a.invite_code) != null;
+  } = e, n = (0, g.bp)(), i = (0, o.e7)([M.Z], () => M.Z.can(et.Plq.CREATE_INSTANT_INVITE, t)), l = (0, o.e7)([k.Z], () => k.Z.getGuild(t.guild_id)), a = (0, o.e7)([V.Z], () => V.Z.getStageInstanceByChannel(t.id)), s = i || (null == a ? void 0 : a.invite_code) != null;
   return null != l && s ? (0, r.jsx)(I.Z, {
     size: u.zx.Sizes.MEDIUM,
     color: u.zx.Colors.TRANSPARENT,
@@ -170,14 +170,14 @@ function eh(e) {
     [P, R] = i.useState(0),
     {
       isOnStartStageScreen: w
-    } = (0, V.ZP)();
-  (0, V.MV)(c);
+    } = (0, W.ZP)();
+  (0, W.MV)(c);
   let A = (0, o.e7)([L.Z], () => L.Z.getToastsEnabled(c.id)),
     D = (0, ee.Z)(c) ? null != Z ? "84px" : "124px" : null != Z ? "0px" : "48px";
   return w && (D = "0px"), l = w ? (0, r.jsx)(J.Z, {
     channel: c,
     onContinueClick: () => {
-      (0, V.Ku)(!1), C || (0, F.TM)(c)
+      (0, W.Ku)(!1), C || (0, F.TM)(c)
     }
   }) : C ? (0, r.jsx)(Q.Z, {
     channel: c,

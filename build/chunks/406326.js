@@ -63,17 +63,20 @@ function x(e) {
   }), E = (0, p.xd)({
     isXDMSearch: t.type === f.aib.DMS,
     location: "SearchHeader"
-  }), S = (0, d.WJ)(t), Z = (0, s.e7)([u.Z], () => u.Z.getSearchResultsQueryString(S)), I = i.useMemo(() => {
+  }), S = (0, s.e7)([u.Z], () => {
+    let e = (0, d.Tm)(t);
+    return u.Z.getSearchResultsQueryString(e)
+  }), Z = i.useMemo(() => {
     if (t.type === f.aib.DMS && C) {
       var e, n;
-      let t = (0, d.kG)(null != Z ? Z : ""),
+      let t = (0, d.kG)(null != S ? S : ""),
         r = null != (n = null == (e = (0, d.$G)(t).channel_id) ? void 0 : e.length) ? n : 0;
       return r > 0 ? g.intl.format(g.t.A2dqWF, {
         filterCount: r
       }) : g.intl.string(g.t.tc619f)
     }
     return null
-  }, [C, t.type, Z]), P = i.useMemo(() => [{
+  }, [C, t.type, S]), I = i.useMemo(() => [{
     label: g.intl.string(g.t.CbaapK),
     value: f.QIO.NEWEST
   }, {
@@ -82,7 +85,7 @@ function x(e) {
   }, {
     label: g.intl.string(g.t["q8gB5+"]),
     value: f.QIO.MOST_RELEVANT
-  }], []), T = i.useCallback(() => {
+  }], []), P = i.useCallback(() => {
     (0, o.ZDy)(async () => {
       let {
         default: e
@@ -94,14 +97,14 @@ function x(e) {
   }, [t]);
   return (0, r.jsxs)("header", {
     className: a()(m.searchHeader, {
-      [m.searchHeaderWithSubtitle]: null != I
+      [m.searchHeaderWithSubtitle]: null != Z
     }),
     children: [(0, r.jsx)("div", {
       className: m.totalResults,
       role: "status",
       children: (0, r.jsx)(j, {
         totalResults: x,
-        subtitle: I,
+        subtitle: Z,
         isIndexing: _,
         isSearching: O,
         documentsIndexed: v
@@ -109,7 +112,7 @@ function x(e) {
     }), E ? (0, r.jsxs)("div", {
       className: m.searchModeAndFiltersContainer,
       children: [(0, r.jsx)(o.q4e, {
-        options: P,
+        options: I,
         value: l,
         onChange: c,
         look: o.qQH.CUSTOM,
@@ -117,7 +120,7 @@ function x(e) {
         popoutWidth: 130
       }), (0, r.jsx)(o.zxk, {
         variant: "secondary",
-        onClick: T,
+        onClick: P,
         text: g.intl.string(g.t.UdhTtr),
         icon: o.gXV,
         size: "sm"

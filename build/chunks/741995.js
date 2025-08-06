@@ -24,7 +24,7 @@ let c = s.OA,
 function _(e) {
   var t;
   let {
-    searchId: n,
+    id: n,
     query: r
   } = e;
   if ("string" != typeof r || "" === (r = r.trim())) return;
@@ -36,16 +36,16 @@ function _(e) {
 
 function p(e) {
   let {
-    searchId: t
+    id: t
   } = e;
-  null == t ? (o.K.remove(s.OA), f = {}) : (delete f[t], o.K.set(s.OA, {
+  delete f[t], o.K.set(s.OA, {
     history: f
-  }))
+  })
 }
 
 function h(e) {
   let {
-    searchId: t,
+    id: t,
     query: n
   } = e;
   null != f[t] && (f[t] = f[t].filter(e => e !== n), o.K.set(s.OA, {

@@ -45,7 +45,7 @@ var r = n(255367),
   B = n(688826),
   z = n(11847);
 
-function W(e) {
+function V(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -63,7 +63,7 @@ function W(e) {
   }
   return e
 }
-let V = U.ZP.getEnableHardwareAcceleration(),
+let W = U.ZP.getEnableHardwareAcceleration(),
   Y = 44 + H.x,
   q = i.memo(function(e) {
     let {
@@ -81,7 +81,7 @@ let V = U.ZP.getEnableHardwareAcceleration(),
         } = await Promise.all([n.e("79695"), n.e("70675"), n.e("70920")]).then(n.bind(n, 654663));
         return n => {
           var i, l;
-          return (0, r.jsx)(e, (i = W({}, n), l = l = {
+          return (0, r.jsx)(e, (i = V({}, n), l = l = {
             user: b,
             guildId: t.guild_id,
             channel: t
@@ -153,10 +153,10 @@ let V = U.ZP.getEnableHardwareAcceleration(),
           }
           return i
         }(e, ["onClick", "onMouseDown"]);
-        return (0, r.jsx)(H.Z, W({
+        return (0, r.jsx)(H.Z, V({
           ref: o,
           onContextMenu: B,
-          shouldAnimateStatus: V,
+          shouldAnimateStatus: W,
           user: b,
           currentUser: y,
           nick: null == p ? void 0 : p.nick,
@@ -209,7 +209,7 @@ let V = U.ZP.getEnableHardwareAcceleration(),
         title: n,
         count: i
       }),
-      children: [null != a ? (0, r.jsx)(j.Z, W({
+      children: [null != a ? (0, r.jsx)(j.Z, V({
         className: z.roleIcon
       }, a)) : null, (0, r.jsxs)("span", {
         "aria-hidden": !0,
@@ -318,7 +318,7 @@ function X(e) {
       children: (0, r.jsx)(p.Wdt, {
         children: e => (0, r.jsx)("div", {
           className: a()(z.membersWrap, z.hiddenMembers, B.container),
-          children: (0, r.jsx)(p.aVo, W({
+          children: (0, r.jsx)(p.aVo, V({
             ref: x,
             className: z.members,
             paddingTop: 0,

@@ -65,7 +65,7 @@ function C(e) {
     tokens: i,
     cursorScope: o,
     autocompletes: s
-  } = e, l = (0, m.WJ)(t), c = I[l];
+  } = e, l = (0, m.Tm)(t), c = I[l];
   return null == c && (c = {
     results: [],
     context: a.Z.getUserSearchContext(P.bind(null, t))
@@ -85,7 +85,7 @@ function C(e) {
 
 function R(e) {
   let {
-    searchId: t
+    id: t
   } = e, n = I[t];
   null != n && (n.context.destroy(), n.results = [], delete I[t]), delete v[t], O = null
 }
@@ -93,7 +93,7 @@ function R(e) {
 function P(e, t) {
   let {
     results: n
-  } = t, r = (0, m.WJ)(e), i = I[r], o = v[r];
+  } = t, r = (0, m.Tm)(e), i = I[r], o = v[r];
   if (null == i || null == o) return;
   let {
     type: a,
@@ -153,7 +153,7 @@ function L(e) {
   O = r;
   let a = (0, m.cl)(i),
     s = (0, m.qc)(o, i),
-    l = (0, m.WJ)(r),
+    l = (0, m.Tm)(r),
     c = null != (t = v[l]) ? t : {},
     u = I[l],
     d = !0;
@@ -193,7 +193,7 @@ function x(e) {
     tokens: c
   } = e;
   if (null == o) return null;
-  let d = (0, m.WJ)(s),
+  let d = (0, m.Tm)(s),
     p = null != (n = null == a || null == (t = a.getFullMatch()) ? void 0 : t.trim()) ? n : "",
     g = o === b.dCx.FILTER_FROM || o === b.dCx.FILTER_MENTIONS;
   if ((0, m.b7)(s) && g) {
@@ -299,7 +299,7 @@ function U(e) {
   if (d.Z.hidePersonalInformation) return null;
   {
     let t = n(741995).Z,
-      r = (0, m.WJ)(e),
+      r = (0, m.Tm)(e),
       i = t.getHistory(r);
     return null == i ? null : {
       group: b.rtL.HISTORY,
@@ -348,9 +348,9 @@ function Z(e) {
 
 function F(e) {
   let {
-    searchId: t
+    id: t
   } = e;
-  null != t ? Z(t) : Object.keys(v).forEach(Z)
+  Z(t)
 }
 
 function V() {
@@ -358,7 +358,7 @@ function V() {
 }
 
 function H(e) {
-  let t = (0, m.WJ)(e);
+  let t = (0, m.Tm)(e);
   if (null == v[t]) return !1;
   let {
     query: n,
@@ -388,7 +388,7 @@ function W(e) {
   if (O.type === b.aib.DMS && (0, m.R6)(O)) {
     let e = s.Z.getChannel(t);
     if (null == e || !e.isPrivate()) return !1;
-    let n = v[(0, m.WJ)(O)];
+    let n = v[(0, m.Tm)(O)];
     if (null == n) return !1;
     let {
       type: r,
@@ -404,7 +404,7 @@ class K extends(r = i.ZP.Store) {
   }
   getState(e) {
     var t;
-    return null != (t = v[(0, m.WJ)(e)]) ? t : C({
+    return null != (t = v[(0, m.Tm)(e)]) ? t : C({
       searchContext: e
     })
   }
@@ -415,7 +415,7 @@ class K extends(r = i.ZP.Store) {
     var r, i, o;
     let {
       tokens: a
-    } = null != (r = v[(0, m.WJ)(e)]) ? r : {}, s = [];
+    } = null != (r = v[(0, m.Tm)(e)]) ? r : {}, s = [];
     switch (t) {
       case b.dCx.FILTER_FROM:
       case b.dCx.FILTER_MENTIONS:
