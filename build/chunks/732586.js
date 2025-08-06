@@ -59,7 +59,6 @@ function _(e) {
     (null == O ? void 0 : O.type) === n && y(O.value)
   }, [n, O]);
   let S = {
-    name: _,
     value: b,
     placeholder: p,
     minLength: h,
@@ -82,11 +81,11 @@ function _(e) {
         autosize: !0
       }, S))
   }
-  return (0, r.jsx)(a.xJW, {
+  return null != _ ? (0, r.jsx)(a.xJW, {
     title: _,
     required: g,
     className: u.formItem,
     error: I,
     children: t
-  })
+  }) : t
 }

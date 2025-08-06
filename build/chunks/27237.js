@@ -1,6 +1,6 @@
 /** Chunk was on 44799 **/
 n.d(t, {
-  ZP: () => O
+  ZP: () => I
 }), n(388685);
 var r = n(255367),
   o = n(73800),
@@ -79,7 +79,7 @@ function C(e) {
   })
 }
 
-function O(e) {
+function I(e) {
   let {
     guildId: t,
     index: n,
@@ -87,7 +87,7 @@ function O(e) {
     nextPowerup: l
   } = e, s = (0, u.Z)(t, i), a = (0, u.Z)(t, l), c = s.type !== x.A3.INACTIVE, _ = a.type !== x.A3.INACTIVE, v = s.type === x.A3.TIER_OVERRIDE_ACTIVATED, [b, j] = o.useState(void 0);
   (0, m.KT)(b);
-  let O = (0, g.d)(c);
+  let I = (0, g.d)(c);
   return (0, r.jsxs)(f.Z, {
     guildId: t,
     powerup: i,
@@ -98,7 +98,7 @@ function O(e) {
       nextActive: null != l ? _ : void 0
     }), (0, r.jsx)(d.Q9, {
       title: i.title,
-      textColor: O,
+      textColor: I,
       footer: !v && (0, r.jsx)(f.g, {
         className: h.footer,
         guildId: t,

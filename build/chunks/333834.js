@@ -200,7 +200,7 @@ function D(e) {
       })), e
     }, [t, n]),
     q = 0 === t.length && 0 === n.length && B,
-    X = 0 === t.length && 0 === n.length && !B,
+    X = 0 === t.length && 0 === n.length && !V && G,
     Q = i.useMemo(() => {
       let e = [];
       return X ? e.push(s()) : q ? e.push((0, r.jsx)(R, {}, "empty-state")) : N ? (e.push(...n.map(e => d([e], !0))), e.push(...t.map(e => d([e], !1)))) : a().each(A, t => {

@@ -20,7 +20,7 @@ var o = n(990547),
 function x(e) {
   let {
     guildId: t,
-    powerupSkuId: n
+    powerupListingId: n
   } = e, x = (0, i.e7)([d.Z], () => d.Z.getGuild(t)), _ = (0, i.e7)([a.Z], () => a.Z.hasLoadedExperiments), v = (0, f.Z)(t), b = (0, u.At)(), j = (0, p.V)("GuildPowerupsPage"), h = !_ || null == v || null == x, E = (0, l.ZP)(null != b ? b : []);
   return ((0, s.Z)({
     type: o.ImpressionTypes.VIEW,
@@ -32,7 +32,7 @@ function x(e) {
     disableTrack: h
   }), h) ? null : v || j ? (0, r.jsx)(m.Z, {
     guildId: t,
-    powerupSkuId: n
+    powerupListingId: n
   }) : (0, r.jsx)(c.Z, {
     analyticsLocation: {
       section: g.jXE.CHANNEL_LIST,

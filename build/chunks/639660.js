@@ -38,11 +38,11 @@ function E(e) {
     var e;
     return (null == (e = a.Z.getGuild(t)) ? void 0 : e.features.has(_.oNc.PREMIUM_TIER_3_OVERRIDE)) === !0
   }), E = (0, u.Z)(t), C = E.length > 0, {
-    shouldShow: O,
-    notificationConfig: I
+    shouldShow: I,
+    notificationConfig: O
   } = (0, g._)(t, "GuildPowerupNotificationContainer"), y = [];
-  O && y.push(l.z.VANITY_URL_POWERUP_ROLLBACK_NOTIFICATION);
-  let [P, w] = (0, s.ZT)(y, t), N = null != P && null != I, Z = (0, c.W)(t, "GuildPowerupNotificationContainer"), S = [];
+  I && y.push(l.z.VANITY_URL_POWERUP_ROLLBACK_NOTIFICATION);
+  let [P, w] = (0, s.ZT)(y, t), N = null != P && null != O, Z = (0, c.W)(t, "GuildPowerupNotificationContainer"), S = [];
   N || C || (S.push(l.z.GUILD_POWERUPS_OVERVIEW_SIDEBAR_COACHMARK), Z && S.push(l.z.BOOSTER_ENHANCED_ROLE_COLORS_ADMIN_UPSELL));
   let [T, A] = (0, s.US)(S), R = (e => {
     let n = [];
@@ -50,7 +50,7 @@ function E(e) {
       guildId: t,
       powerups: E
     }, "expiring-powerups")), N && n.push((0, r.jsx)(f.Z, {
-      notificationConfig: I,
+      notificationConfig: O,
       markAsDismissed: e => {
         w(e)
       }

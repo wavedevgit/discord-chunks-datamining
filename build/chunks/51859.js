@@ -23,12 +23,12 @@ function _(e) {
     powerup: n
   } = e, [_, v] = o.useState(void 0);
   (0, f.KT)(_);
-  let [b, j] = o.useState(!1), h = (0, a.Z)(t, n).type !== g.A3.INACTIVE, E = (0, m.d)(h), C = (0, s.g1)(t, "GuildPowerupPerkCard"), O = n.skuId === i.A$;
+  let [b, j] = o.useState(!1), h = (0, a.Z)(t, n).type !== g.A3.INACTIVE, E = (0, m.d)(h), C = (0, s.g1)(t, "GuildPowerupPerkCard"), I = n.skuId === i.A$;
   return (0, r.jsxs)(p.Z, {
     onHover: e => j(e),
     guildId: t,
     powerup: n,
-    badge: O || C ? O && C ? "beta" : void 0 : "new",
+    badge: I || C ? I && C ? "beta" : void 0 : "new",
     children: [(0, r.jsx)(d.m, {
       className: x.image,
       powerup: n,

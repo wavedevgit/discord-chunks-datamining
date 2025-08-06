@@ -1,6 +1,6 @@
 /**
   Module ID: 31453
-  Original File Name: 0420e0bdb8c5eb70
+  Original File Name: 53f768c130713ee5
 **/
 .closeButton_e858dd {
     position: absolute;
@@ -18,4 +18,10 @@
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=0420e0bdb8c5eb70.css.map*/
+.components_e858dd {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-24)
+}
+
+/*# sourceMappingURL=53f768c130713ee5.css.map*/
