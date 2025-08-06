@@ -48,7 +48,7 @@ function h(e) {
       };
       null != _ && e(_.url)
     }, [_, i, b]), null == b || null == b.guild || !b.guild.features.includes(f.oNc.VERIFIED)) return null;
-  let w = g.ZP.getGuildIconURL({
+  let I = g.ZP.getGuildIconURL({
     id: b.guild.id,
     icon: b.guild.icon,
     size: 32
@@ -64,7 +64,7 @@ function h(e) {
       className: l()(j.row, j.gapMd),
       children: [(0, n.jsx)("img", {
         className: v.guildIcon,
-        src: w,
+        src: I,
         alt: x.intl.formatToPlainString(x.t.xm6W9P, {
           guildName: b.guild.name
         })

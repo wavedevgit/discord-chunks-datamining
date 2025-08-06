@@ -23,12 +23,12 @@ function j(e) {
     trackAction: r
   } = e, [i, j] = a.useState((null == t ? void 0 : t.summaryLocalized) != null), [v, h] = a.useState(!0), [b, O] = a.useState(!1), y = a.useRef(null), {
     width: _,
-    height: w
+    height: I
   } = (0, u.Z)();
   return (a.useEffect(() => {
     let e = y.current;
     null != e && O(e.scrollHeight - e.clientHeight > 1 || !v)
-  }, [y, _, w, v]), null == t.summary) ? null : (0, n.jsxs)("div", {
+  }, [y, _, I, v]), null == t.summary) ? null : (0, n.jsxs)("div", {
     className: l()(f.column, f.gapMd),
     children: [null != t.summaryLocalized && (0, n.jsxs)("div", {
       className: l()(f.row, f.gapSm),

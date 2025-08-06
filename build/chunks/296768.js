@@ -1,6 +1,6 @@
 /** Chunk was on 89311 **/
 r.d(t, {
-  Z: () => w
+  Z: () => I
 }), r(388685);
 var n = r(255367),
   a = r(73800),
@@ -78,7 +78,7 @@ let _ = e => {
   })
 };
 
-function w(e) {
+function I(e) {
   let {
     applicationId: t,
     onClose: r,

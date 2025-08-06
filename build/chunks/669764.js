@@ -89,6 +89,9 @@ class p extends(r = i.ZP.Store) {
   isFetching(e) {
     return l.has(e)
   }
+  didFetchingFail(e) {
+    return c.has(e)
+  }
   getGame(e) {
     return s.get(e)
   }

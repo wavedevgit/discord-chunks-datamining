@@ -384,7 +384,7 @@ class x extends y.ZP {
       if (this._aborted) return;
       if (t.length > 0 && t[0].success) {
         let e = t[0];
-        this.item.file = (0, v.ub)(e), this.currentSize = this.item.file.size, C.log("webp conversion worked for ".concat(this.id, ": ").concat(e.sizeBefore, " -> ").concat(e.sizeAfter, " bytes (").concat(e.compressionRatio.toFixed(2), "x)"))
+        this.item.file = (0, v.ub)(e), this.currentSize = this.item.file.size, this.uploadAnalytics.convertedMimeType = "image/webp", C.log("webp conversion worked for ".concat(this.id, ": ").concat(e.sizeBefore, " -> ").concat(e.sizeAfter, " bytes (").concat(e.compressionRatio.toFixed(2), "x)"))
       } else {
         var n, r;
         let e = null != (r = null == (n = t[0]) ? void 0 : n.reason) ? r : "unknown";
@@ -464,7 +464,7 @@ class x extends y.ZP {
       converted_mime_type: null != (r = this.uploadAnalytics.convertedMimeType) ? r : "unknown",
       image_compression_quality: null != (i = this.uploadAnalytics.imageCompressionQuality) ? i : 0,
       video_compression_quality: null != (o = this.uploadAnalytics.videoCompressionQuality) ? o : "unknown",
-      was_converted: this.mimeType !== this.uploadAnalytics.convertedMimeType,
+      was_converted: null != this.uploadAnalytics.convertedMimeType && this.mimeType !== this.uploadAnalytics.convertedMimeType,
       was_compressed: this.currentSize < this.preCompressionSize,
       source_media_width: this.uploadAnalytics.sourceMediaWidth,
       source_media_height: this.uploadAnalytics.sourceMediaHeight,

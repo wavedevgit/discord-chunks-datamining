@@ -92,7 +92,8 @@ let E = {
         index: a.length + t,
         text: e.text,
         description: m.hideMentionDescription ? null : e.description,
-        "aria-label": e.text
+        "aria-label": e.text,
+        badge: "@game" === e.text ? "new" : void 0
       }, e.text)),
       O = l.map((e, t) => (0, r.jsx)(o.ZP.Role, {
         onClick: E,
