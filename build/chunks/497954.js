@@ -30,7 +30,7 @@ let g = e => {
       report_id: g
     }), a.Z.ignoreUser(t.id, "web_iar_ignore_user_element", n)
   }, [t, g, n]), v = l.useMemo(() => x || _, [x, _]);
-  return (0, r.jsx)(o.ZP, {
+  return (0, r.jsx)(o.JZ, {
     title: p.intl.formatToPlainString(p.t.U3yyFh, {
       username: h
     }),

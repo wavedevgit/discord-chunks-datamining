@@ -73,7 +73,7 @@ function v(e) {
             title: e.title,
             description: e.description
           }, t)),
-          actionRows: [(0, r.jsx)(d.ZP, {
+          actionRows: [(0, r.jsx)(d.JZ, {
             title: O.intl.string(O.t.ftIK2N),
             description: O.intl.string(O.t.w2ve0t),
             buttonText: O.intl.string(O.t.ftIK2N),

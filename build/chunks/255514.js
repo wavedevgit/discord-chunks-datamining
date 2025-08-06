@@ -94,8 +94,8 @@ let Q = e => {
     reportType: n,
     reportSubType: Q,
     history: K,
-    onSelectChild: Y,
-    onModalClose: J,
+    onSelectChild: J,
+    onModalClose: Y,
     onSubmit: $,
     multiSelect: ee,
     reportId: et,
@@ -116,7 +116,7 @@ let Q = e => {
       isValid: n
     }, ef(r)
   }, eZ = e => {
-    Y(ej(e))
+    J(ej(e))
   };
   l.useEffect(() => {
     null != ee && eb(ee), null != en && ef(en)
@@ -230,7 +230,7 @@ let Q = e => {
       }), null != H(t, "settings_upsells") && ("message" === n.name || "report_to_mod_message" === n.name) && null != eS && (0, r.jsx)(R.Z, {
         settingsUpsells: eS,
         channelId: n.record.channel_id,
-        onModalClose: J,
+        onModalClose: Y,
         reportId: et,
         reportType: n,
         reportSubType: Q
@@ -282,7 +282,7 @@ let Q = e => {
         switch (e.type) {
           case "done":
           case "cancel":
-            J();
+            Y();
             break;
           case "next":
             eZ(["", e.target]);
@@ -296,7 +296,7 @@ let Q = e => {
     }), (0, r.jsx)(a.olH, {
       "data-migration-pending": !0,
       className: F.closeButton,
-      onClick: J
+      onClick: Y
     })]
   })
 }
