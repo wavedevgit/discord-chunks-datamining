@@ -201,7 +201,7 @@ function eE(e) {
     cmdLine: e.cmdLine,
     lastFocused: e.lastFocused
   };
-  return null != e.id && (t.id = e.id), null != e.nativeProcessObserverId && (t.nativeProcessObserverId = e.nativeProcessObserverId), null != e.name && (t.name = e.name), e.add && (t.add = !0), e.block && (t.block = !0), null != e.distributor && (t.distributor = e.distributor), eb(t, e), t
+  return null != e.id && (t.id = e.id), null != e.nativeProcessObserverId && (t.nativeProcessObserverId = e.nativeProcessObserverId), null != e.name && (t.name = e.name), e.add && (t.add = !0), e.block && (t.block = !0), null != e.distributor && (t.distributor = e.distributor), null != e.gameName && (t.gameName = e.gameName), eb(t, e), t
 }
 
 function eb(e, t) {
@@ -440,7 +440,7 @@ function eM(e) {
             let n = ei.gameOverrides[eI(e)];
             null != n && (n.lastFocused = e.lastFocused)
           }
-          return t.distributor !== e.distributor && (t.distributor = e.distributor), eb(t, e), !0
+          return t.distributor !== e.distributor && (t.distributor = e.distributor), t.gameName !== e.gameName && (t.gameName = e.gameName), eb(t, e), !0
         }
         return !1
       }));
@@ -586,7 +586,7 @@ function e$(e) {
   let t = eI(e.game);
   delete ei.gameOverrides[t], delete ei.enableOverlay[t], delete ei.enableDetection[t], ei.gamesSeen = ei.gamesSeen.filter(e => eI(e) !== t), er[t] && ($.forEach(e => {
     t === eI(e) && (e.hidden = !0)
-  }), delete er[t], ev()), ex(), eP()
+  }), delete er[t]), $.some(e => eI(e) === t) && ev(), ex(), eP()
 }
 
 function e0(e) {

@@ -1,11 +1,11 @@
-/** Chunk was on 24329 **/
+/** Chunk was on 31505 **/
 t.d(r, {
   Z: () => s
 }), t(388685), t(190126), t(368063), t(65234), t(111804), t(490233), t(97749);
 var n = t(73800),
   i = t(544891),
-  l = t(279421),
-  o = t(410401),
+  o = t(279421),
+  l = t(410401),
   a = t(701262);
 let s = e => {
   let [r, t] = (0, n.useState)({
@@ -22,11 +22,11 @@ let s = e => {
         p(!0), c(!1), d(!1);
         try {
           let [e, r, n] = await Promise.all([i.tn.get({
-            url: l.Z,
+            url: o.Z,
             binary: !0,
             rejectWithError: !0
           }), i.tn.get({
-            url: o.Z,
+            url: l.Z,
             binary: !0,
             rejectWithError: !0
           }), i.tn.get({

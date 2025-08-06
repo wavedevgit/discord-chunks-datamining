@@ -31,8 +31,9 @@ function h(e) {
     isGift: v,
     giftRecipient: I,
     isEligibleForTrial: T,
-    enablePremiumBrandRefresh: S
-  } = e, A = (0, i.e7)([a.Z], () => a.Z.useReducedMotion), N = g ? f.nL.WINTER : f.nL.DEFAULT, C = () => {
+    enablePremiumBrandRefresh: S,
+    isEligibleForPremiumBrandRefreshWowMomentConfirmation: A
+  } = e, N = (0, i.e7)([a.Z], () => a.Z.useReducedMotion), C = g ? f.nL.WINTER : f.nL.DEFAULT, R = () => {
     switch (t) {
       case s.h8.PLAN_SELECT:
         return m === f.p9.TIER_0 ? _.intl.string(_.t.rk4Uu7) : _.intl.string(_.t["7YWj6+"]);
@@ -50,14 +51,14 @@ function h(e) {
     "data-migration-pending": !0,
     children: [(0, r.jsx)(o.X6q, {
       variant: "heading-lg/semibold",
-      children: C()
+      children: R()
     }), (0, r.jsx)(o.olH, {
       onClick: E,
       className: p.closeButton,
       innerClassName: p.closeButtonInner,
       "data-migration-pending": !0
     })]
-  }) : S ? (0, r.jsx)(c.Z, {
+  }) : S || A && t === s.h8.CONFIRM ? (0, r.jsx)(c.Z, {
     hideCloseOnFullScreen: !0,
     hideCloseButton: b,
     upgradeToPremiumType: m,
@@ -76,23 +77,23 @@ function h(e) {
         className: p.headerAnimation,
         currentStep: t,
         purchaseState: h,
-        pause: A
+        pause: N
       }) : m === f.p9.TIER_1 ? (0, r.jsx)(d.tK, {
         className: p.headerAnimation,
         currentStep: t,
         purchaseState: h,
-        pause: A
+        pause: N
       }) : (0, r.jsx)(d.Bk, {
         className: p.headerAnimation,
         currentStep: t,
         purchaseState: h,
-        pause: A
+        pause: N
       }),
       plan: null,
       isGift: !1,
       className: p.header,
       onClose: E,
-      headerTheme: N,
+      headerTheme: C,
       showTrialBadge: y,
       showDiscountBadge: O
     })

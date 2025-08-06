@@ -1,10 +1,10 @@
 /** Chunk was on 84992 **/
 n.d(e, {
-  Z: () => l
+  Z: () => s
 });
 var i = n(255367);
 
-function l(t) {
+function s(t) {
   let {
     color: e = "white",
     className: n

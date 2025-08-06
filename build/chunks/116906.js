@@ -19,9 +19,9 @@ var l = n(442837),
   b = n(744802),
   j = n(493043),
   y = n(864141),
-  O = n(228168),
-  h = n(981631),
-  v = n(388032),
+  h = n(228168),
+  v = n(981631),
+  O = n(388032),
   x = n(316879),
   _ = n(301150);
 
@@ -34,10 +34,10 @@ function I(e) {
     subsection: E,
     onClose: Z
   } = e, {
-    voiceActivityStatusEnabled: T
+    voiceActivityStatusEnabled: N
   } = (0, i.U)({
     location: "UserProfileModalActivity"
-  }), N = (0, u.b)({
+  }), T = (0, u.b)({
     location: "UserProfileModalActivity"
   }), {
     live: A,
@@ -49,18 +49,18 @@ function I(e) {
   } = (0, p.Z)({
     userId: t.id,
     guildId: P
-  }), L = (0, l.e7)([a.Z], () => a.Z.isFetchingUserOutbox(t.id)), M = t.id === n.id, R = (0, l.e7)([s.Z, c.Z], () => {
-    let e = M ? s.Z.getStatus() : c.Z.getStatus(t.id);
+  }), M = (0, l.e7)([a.Z], () => a.Z.isFetchingUserOutbox(t.id)), L = t.id === n.id, R = (0, l.e7)([s.Z, c.Z], () => {
+    let e = L ? s.Z.getStatus() : c.Z.getStatus(t.id);
     return e === o.Skl.OFFLINE || e === o.Skl.INVISIBLE
-  }), D = A.length > 0 || null != w, k = T && null == w && null == G && null != C, U = !R && (D || k), B = S.length > 0;
-  return U || B || !L ? (0, r.jsxs)(o.zJl, {
+  }), D = A.length > 0 || null != w, k = N && null == w && null == G && null != C, U = !R && (D || k), B = S.length > 0;
+  return U || B || !M ? (0, r.jsxs)(o.zJl, {
     className: x.scroller,
     fade: !0,
     children: [U ? (0, r.jsx)(m.Z, {
-      "aria-label": v.intl.string(v.t.J6STd3),
+      "aria-label": O.intl.string(O.t.J6STd3),
       children: (0, r.jsxs)("ul", {
         className: x.activityList,
-        children: [!N && k && (0, r.jsx)("li", {
+        children: [!T && k && (0, r.jsx)("li", {
           children: (0, r.jsx)(y.Z, {
             user: t,
             currentUser: n,
@@ -87,14 +87,14 @@ function I(e) {
         }, "live-".concat(l)))]
       })
     }) : null, B ? (0, r.jsx)(m.Z, {
-      heading: v.intl.string(v.t.M0zgnZ),
-      introText: M ? v.intl.format(v.t["4bk9Ag"], {
+      heading: O.intl.string(O.t.M0zgnZ),
+      introText: L ? O.intl.format(O.t["4bk9Ag"], {
         learnMoreHook: (e, t) => (0, r.jsx)(o.eee, {
-          href: d.Z.getArticleURL(h.BhN.ACTIVITY_STATUS_SETTINGS),
+          href: d.Z.getArticleURL(v.BhN.ACTIVITY_STATUS_SETTINGS),
           children: e
         }, t)
       }) : void 0,
-      scrollIntoView: E === O.Tb.RECENT_ACTIVITY,
+      scrollIntoView: E === h.Tb.RECENT_ACTIVITY,
       children: (0, r.jsx)("ul", {
         className: x.activityList,
         children: S.map(e => (0, r.jsx)("li", {

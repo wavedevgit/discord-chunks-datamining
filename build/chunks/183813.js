@@ -1,11 +1,11 @@
-/** Chunk was on 24329 **/
+/** Chunk was on 31505 **/
 t.d(r, {
   S: () => b
 });
 var n = t(255367),
   i = t(73800),
-  l = t(512722),
-  o = t.n(l),
+  o = t(512722),
+  l = t.n(o),
   a = t(442837),
   s = t(481060),
   d = t(204418),
@@ -26,7 +26,7 @@ function b(e) {
     handleStepChange: r,
     handleClose: t
   } = e, {
-    selectedPlan: l,
+    selectedPlan: o,
     selectedSkuId: b,
     step: g
   } = (0, f.JL)(), {
@@ -48,7 +48,7 @@ function b(e) {
       className: L.giftSelectItem
     }, r)
   };
-  o()(null != l, "Expected plan to selected"), o()(null != b, "Expected selectedSkuId"), o()(null != g, "Step should be set");
+  l()(null != o, "Expected plan to selected"), l()(null != b, "Expected selectedSkuId"), l()(null != g, "Step should be set");
   let w = null == E ? void 0 : E.map(e => I(e)),
     O = null != S && null != v ? (0, n.jsx)(d.Z, {
       avatarDecorationOverride: {
@@ -58,7 +58,7 @@ function b(e) {
       guildId: null,
       avatarSize: s.EFr.SIZE_152
     }) : null,
-    M = (0, n.jsx)(x.O3, {
+    P = (0, n.jsx)(x.O3, {
       children: (0, n.jsx)(s.mzw, {
         className: L.modalFooter,
         children: (0, n.jsx)(c.y, {
@@ -71,12 +71,12 @@ function b(e) {
           onBackClick: () => r(m.h8.PLAN_SELECT),
           shouldRenderUpdatedPaymentModal: !0,
           showBackButton: !0,
-          planOptions: [l.id],
-          selectedPlanId: l.id
+          planOptions: [o.id],
+          selectedPlanId: o.id
         })
       })
     }),
-    P = (0, n.jsx)(s.X6q, {
+    M = (0, n.jsx)(s.X6q, {
       variant: "heading-lg/bold",
       color: "header-primary",
       children: j.intl.string(j.t["Rp0+ZG"])
@@ -88,7 +88,7 @@ function b(e) {
         direction: "horizontal",
         justify: "space-between",
         align: "center",
-        children: [P, (0, n.jsx)(s.olH, {
+        children: [M, (0, n.jsx)(s.olH, {
           onClick: t
         })]
       })
@@ -107,6 +107,6 @@ function b(e) {
           children: w
         })]
       })
-    }), M]
+    }), P]
   })
 }

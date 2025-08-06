@@ -18,17 +18,17 @@ var r = n(255367),
   b = n(867176),
   j = n(280885),
   y = n(900927),
-  O = n(678738),
-  h = n(502762),
-  v = n(530),
+  h = n(678738),
+  v = n(502762),
+  O = n(530),
   x = n(679332),
   _ = n(544989),
   I = n(228168),
   P = n(981631),
   E = n(388032),
   Z = n(405666),
-  T = n(349966),
-  N = n(923243);
+  N = n(349966),
+  T = n(923243);
 
 function A(e) {
   let {
@@ -39,8 +39,8 @@ function A(e) {
     roleId: w,
     sessionId: C,
     transitionState: G,
-    openedAt: L,
-    onClose: M,
+    openedAt: M,
+    onClose: L,
     sourceAnalyticsLocations: R = []
   } = e, D = n === P.ME ? void 0 : n, k = (0, p.ZP)(t.id, D), U = u.ZP.getName(D, A, t), B = (0, s.Dt)(), {
     analyticsLocations: F
@@ -57,7 +57,7 @@ function A(e) {
     value: F,
     children: (0, r.jsx)(f.Mt, {
       value: V,
-      openedAt: L,
+      openedAt: M,
       fetchStartedAt: null == k ? void 0 : k.fetchStartedAt,
       fetchEndedAt: null == k ? void 0 : k.fetchEndedAt,
       isLoaded: null == k ? void 0 : k.isLoaded,
@@ -76,7 +76,7 @@ function A(e) {
               })
             })
           }),
-          children: (0, r.jsxs)(h.Z, {
+          children: (0, r.jsxs)(v.Z, {
             user: t,
             displayProfile: k,
             themeType: I.lY.MODAL,
@@ -102,7 +102,7 @@ function A(e) {
               })]
             }), (0, r.jsxs)("div", {
               className: Z.body,
-              children: [(0, r.jsx)(v.Z, {
+              children: [(0, r.jsx)(O.Z, {
                 className: Z.username,
                 user: t,
                 nickname: U,
@@ -111,17 +111,17 @@ function A(e) {
                 tags: (0, r.jsx)(g.Z, {
                   displayProfile: k,
                   themeType: I.lY.MODAL,
-                  onClose: M
+                  onClose: L
                 })
               }), (0, r.jsxs)("div", {
-                className: N.container,
+                className: T.container,
                 children: [(0, r.jsx)(o.njP, {
-                  className: N.tabBar,
+                  className: T.tabBar,
                   type: "top",
                   selectedItem: I.oh.BOT_INFO,
                   onItemSelect: P.dG4,
                   children: (0, r.jsx)(o.njP.Item, {
-                    className: N.tabBarItem,
+                    className: T.tabBarItem,
                     id: I.oh.BOT_INFO,
                     "aria-label": E.intl.string(E.t.jGoPJS),
                     children: (0, r.jsx)(o.Text, {
@@ -131,12 +131,12 @@ function A(e) {
                   }, I.oh.BOT_INFO)
                 }), (0, r.jsxs)(o.zJl, {
                   fade: !0,
-                  className: T.scroller,
+                  className: N.scroller,
                   children: [(0, r.jsx)(j.Z, {
                     userId: t.id,
                     userBio: null == k ? void 0 : k.bio,
                     setLineClamp: !1
-                  }), (0, r.jsx)(O.Z, {
+                  }), (0, r.jsx)(h.Z, {
                     heading: E.intl.string(E.t["A//N4u"]),
                     children: (0, r.jsx)(y.Z, {
                       userId: t.id,

@@ -1,12 +1,12 @@
-/** Chunk was on 24329 **/
+/** Chunk was on 31505 **/
 t.d(r, {
   x: () => x
 });
 var n = t(255367);
 t(73800);
 var i = t(512722),
-  l = t.n(i),
-  o = t(780384),
+  o = t.n(i),
+  l = t(780384),
   a = t(755721),
   s = t(410030),
   d = t(807163),
@@ -35,7 +35,7 @@ function x(e) {
     selectedSkuId: h,
     startedPaymentFlowWithPaymentSources: L.current
   });
-  return l()(null != S, "Expected premium type"), (0, n.jsx)(d.Z, {
+  return o()(null != S, "Expected premium type"), (0, n.jsx)(d.Z, {
     premiumType: S,
     titleText: f.intl.string(f.t["7VcWW1"]),
     subtitleText: f.intl.format(f.t.Qk34Ii, {
@@ -50,7 +50,7 @@ function x(e) {
         children: f.intl.string(f.t["3PatS0"])
       }), (0, n.jsx)(a.zx, {
         look: a.zx.Looks.LINK,
-        color: (0, o.wj)(i) ? a.zx.Colors.WHITE : a.zx.Colors.PRIMARY,
+        color: (0, l.wj)(i) ? a.zx.Colors.WHITE : a.zx.Colors.PRIMARY,
         onClick: t,
         children: f.intl.string(f.t.h9tkAA)
       })]

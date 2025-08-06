@@ -1,6 +1,6 @@
 /**
   Module ID: 75708
-  Original File Name: efae3270aba5d4d6
+  Original File Name: dc5e539b9c78ed84
 **/
 .phoneFieldPopout__61a01 {
     height: 240px;
@@ -15520,14 +15520,17 @@ div.nagbar_d74ef8 {
 }
 
 .game_cc46f0 {
-    padding: 20px 0;
+    background-color: var(--background-mod-normal);
+    border-radius: 12px;
+    margin-bottom: 12px;
+    padding: 16px;
     position: relative
 }
 
 .game_cc46f0 .removeGame_cc46f0 {
     opacity: 0;
     position: absolute;
-    right: -31px;
+    right: -15px;
     top: -12px
 }
 
@@ -15540,6 +15543,7 @@ div.nagbar_d74ef8 {
 }
 
 .activeGame_cc46f0 {
+    border-radius: 12px;
     position: relative
 }
 
@@ -15605,16 +15609,20 @@ div.nagbar_d74ef8 {
     cursor: pointer
 }
 
+.toggleIconOff_cc46f0 .fill_cc46f0 {
+    fill: var(--status-danger)
+}
+
+.toggleIconInactive_cc46f0 .fill_cc46f0 {
+    fill: var(--icon-tertiary)
+}
+
 .overlayWarningIcon_cc46f0 {
     background: url(/assets/07e52d3b4c358536.svg) no-repeat;
     height: 16px;
     margin-right: 20px;
     opacity: 0;
     width: 16px
-}
-
-.toggleIconOff_cc46f0 .fill_cc46f0 {
-    fill: var(--status-danger)
 }
 
 .addGamePopout_cc46f0 {
@@ -15628,17 +15636,34 @@ div.nagbar_d74ef8 {
     justify-content: flex-end
 }
 
+.subgame_cc46f0 {
+    align-items: center;
+    background-color: var(--bg-surface-raised);
+    border-radius: 0;
+    display: flex;
+    margin-bottom: 0;
+    width: 100%
+}
+
+.subgame_cc46f0:before {
+    border-radius: 0;
+    left: 0;
+    right: 0
+}
+
+.subgame_cc46f0:last-child:before {
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px
+}
+
+.border_cc46f0 {
+    border-bottom: 1px solid var(--border-subtle);
+    margin-left: 16px
+}
+
 .detectedApplication_cc46f0 {
     align-items: center;
     display: flex
-}
-
-.theme-light .game_cc46f0 {
-    box-shadow: 0 1px 0 0 var(--primary-200)
-}
-
-.theme-dark .game_cc46f0 {
-    box-shadow: 0 1px 0 0 var(--primary-500)
 }
 
 .theme-dark .addGamePopout_cc46f0 .cancelButton_cc46f0 {
@@ -15666,7 +15691,7 @@ div.nagbar_d74ef8 {
     color: var(--white-500)
 }
 
-.nowPlaying_cc46f0 .toggleIconOff_cc46f0 .fill_cc46f0,.nowPlaying_cc46f0 .toggleIconOn_cc46f0 .fill_cc46f0 {
+.nowPlaying_cc46f0 .toggleIconInactive_cc46f0 .fill_cc46f0,.nowPlaying_cc46f0 .toggleIconOff_cc46f0 .fill_cc46f0,.nowPlaying_cc46f0 .toggleIconOn_cc46f0 .fill_cc46f0 {
     fill: var(--green-230)
 }
 
@@ -15684,6 +15709,27 @@ div.nagbar_d74ef8 {
 
 .toggleIconOn_cc46f0 .fill_cc46f0 {
     fill: var(--header-muted)
+}
+
+.hoverCardNoMargin_cc46f0:before {
+    border-radius: 12px;
+    left: 0;
+    right: 0
+}
+
+.gameHasSubgame_cc46f0 {
+    margin-bottom: 0
+}
+
+.gameHasSubgame_cc46f0,.gameHasSubgame_cc46f0:before {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0
+}
+
+.subgameContainer_cc46f0 {
+    background-color: var(--bg-surface-raised);
+    border-radius: 0 0 12px 12px;
+    margin-bottom: 20px
 }
 
 .feature__4626b {
@@ -19908,4 +19954,4 @@ html .invoiceCancelRow__968a4 {
     overflow: visible
 }
 
-/*# sourceMappingURL=efae3270aba5d4d6.css.map*/
+/*# sourceMappingURL=dc5e539b9c78ed84.css.map*/

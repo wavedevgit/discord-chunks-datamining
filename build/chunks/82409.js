@@ -286,7 +286,7 @@ function F(e, t) {
 function H(e) {
   let {
     hideBanner: t
-  } = e, n = (0, a.e7)([P.Z], () => P.Z.shouldHide);
+  } = e, n = (0, P.d)(e => e.shouldHide());
   return (0, r.jsx)("div", {
     className: o()(L.caughtUpContainer, {
       [L.hide]: n || t

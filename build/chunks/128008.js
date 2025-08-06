@@ -21,9 +21,9 @@ var r = n(255367),
 function b() {
   let {
     setSelectedFilter: e
-  } = (0, d.Z)();
+  } = (0, d.Z)(), t = (0, p.d)(e => e.setInboxReadState);
   return () => {
-    e(f.V5.ALL), p.Z.setInboxReadState(!1, null)
+    e(f.V5.ALL), t(!1)
   }
 }
 

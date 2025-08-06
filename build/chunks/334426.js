@@ -1,28 +1,17 @@
 /** Chunk was on 92357 **/
 n.d(t, {
-  Z: () => h
+  d: () => l
 });
-var r, i, l, o = n(442837),
-  s = n(570140);
-let a = null,
-  c = null,
-  u = !1;
-class d extends(l = o.ZP.Store) {
-  get shouldHide() {
-    return null != c && null != a && c <= a || !u
+var r = n(97519),
+  i = n(731965);
+let l = (0, r.U)((e, t) => ({
+  hasNoUnreads: !1,
+  shouldHide: () => !t().hasNoUnreads,
+  setInboxReadState: n => {
+    n !== t().hasNoUnreads && (0, i.j)(() => {
+      e({
+        hasNoUnreads: n
+      })
+    })
   }
-  dismiss() {
-    let e = Date.now();
-    e !== a && (a = e, this.emitChange())
-  }
-  setInboxReadState(e, t) {
-    (e !== u || t !== c) && (u = e, c = t, this.emitChange())
-  }
-}
-i = "NotificationsInboxCaughtUpBannerStore", (r = "displayName") in d ? Object.defineProperty(d, r, {
-  value: i,
-  enumerable: !0,
-  configurable: !0,
-  writable: !0
-}) : d[r] = i;
-let h = new d(s.Z, {})
+}))

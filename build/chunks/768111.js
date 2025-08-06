@@ -20,8 +20,8 @@ function u(e) {
     mutualGuilds: f
   } = (0, o.Z)(t), p = null == f ? void 0 : f.length, m = (0, l.Z)(t), g = (0, r.k)({
     location: "useUserProfileModalV2TabBarItems"
-  }), b = (0, i.Z)(), j = [], y = t.id === (null == n ? void 0 : n.id), O = b.length > 0;
-  return g && (O || y) && j.push({
+  }), b = (0, i.Z)(), j = [], y = t.id === (null == n ? void 0 : n.id), h = b.length > 0;
+  return g && (h || y) && j.push({
     text: d.intl.string(d.t.laViw8),
     section: s.oh.WIDGETS,
     subsection: void 0

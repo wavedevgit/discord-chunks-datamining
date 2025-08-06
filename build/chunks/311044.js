@@ -25,10 +25,10 @@ function b(e) {
   } = e, {
     analyticsLocations: y
   } = (0, a.ZP)(), {
-    context: O,
-    trackUserProfileAction: h
+    context: h,
+    trackUserProfileAction: v
   } = (0, s.KZ)(), {
-    mutualFriends: v,
+    mutualFriends: O,
     mutualFriendsCount: x
   } = (0, d.Z)(t), _ = (0, i.Z)();
   return l.useEffect(() => {
@@ -36,7 +36,7 @@ function b(e) {
   }, [t.id, _]), (0, r.jsx)(o.Ttm, {
     className: g.scroller,
     fade: !0,
-    children: null == v ? Array.from({
+    children: null == O ? Array.from({
       length: null != x ? x : 10
     }).map((e, t) => (0, r.jsxs)("div", {
       className: g.friendsLoadingItem,
@@ -47,7 +47,7 @@ function b(e) {
         width: 135,
         opacity: .08
       })]
-    }, t)) : 0 === v.length ? (0, r.jsx)(m.s_, {}) : v.map(e => {
+    }, t)) : 0 === O.length ? (0, r.jsx)(m.s_, {}) : O.map(e => {
       let {
         key: t,
         user: l,
@@ -60,7 +60,7 @@ function b(e) {
         channelId: b,
         onSelect: () => {
           var e, t;
-          null == j || j(), h({
+          null == j || j(), v({
             action: "PRESS_MUTUAL_FRIEND"
           }), (0, f.openUserProfileModal)((e = function(e) {
             for (var t = 1; t < arguments.length; t++) {
@@ -79,7 +79,7 @@ function b(e) {
               })
             }
             return e
-          }({}, O), t = t = {
+          }({}, h), t = t = {
             userId: l.id,
             sourceAnalyticsLocations: y
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {

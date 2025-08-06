@@ -1,11 +1,11 @@
-/** Chunk was on 24329 **/
+/** Chunk was on 31505 **/
 t.d(r, {
   Z: () => _
 }), t(388685);
 var n = t(255367),
   i = t(73800),
-  l = t(120356),
-  o = t.n(l),
+  o = t(120356),
+  l = t.n(o),
   a = t(481060),
   s = t(570140),
   d = t(70097),
@@ -17,7 +17,7 @@ let _ = e => {
   let {
     children: r,
     isConfirmationStep: t,
-    isWowMomentConfirmationEligible: l
+    isWowMomentConfirmationEligible: o
   } = e, [_, f] = (0, i.useState)("entry"), m = (0, i.useRef)(null), x = (0, i.useRef)(null), h = () => {
     if (f("exit"), null != x.current) {
       var e;
@@ -26,7 +26,7 @@ let _ = e => {
   }, {
     mediaUrls: j,
     isSuccess: L
-  } = (0, c.Z)(l), b = (0, i.useRef)(null), [g, y] = (0, i.useState)(!1);
+  } = (0, c.Z)(o), b = (0, i.useRef)(null), [g, y] = (0, i.useState)(!1);
   (0, i.useEffect)(() => {
     function e() {
       y(!0), h()
@@ -35,7 +35,7 @@ let _ = e => {
       C.S.unsubscribe(u.CkL.PREMIUM_PAYMENT_MODAL_CLOSED, e)
     }
   }, []);
-  let S = l && t && L;
+  let S = o && t && L;
   return ((0, i.useEffect)(() => {
     S && s.Z.dispatch({
       type: "WOW_MOMENT_CONFIRMATION_SET_IS_DISPLAYING_WOW_MOMENT_CONFIRMATION",
@@ -61,7 +61,7 @@ let _ = e => {
               null == (e = m.current) || e.play()
             }
           },
-          className: o()(p.video, "entry" === _ ? p.visible : p.hidden),
+          className: l()(p.video, "entry" === _ ? p.visible : p.hidden),
           children: (0, n.jsx)("source", {
             src: j.modalGlowEntry
           })
@@ -71,7 +71,7 @@ let _ = e => {
         playsInline: !0,
         muted: !0,
         loop: !0,
-        className: o()(p.video, "idle" === _ ? p.visible : p.hidden),
+        className: l()(p.video, "idle" === _ ? p.visible : p.hidden),
         children: (0, n.jsx)("source", {
           src: j.modalGlowIdle
         })
@@ -79,7 +79,7 @@ let _ = e => {
         ref: x,
         playsInline: !0,
         muted: !0,
-        className: o()(p.video, "exit" === _ ? p.visible : p.hidden),
+        className: l()(p.video, "exit" === _ ? p.visible : p.hidden),
         children: (0, n.jsx)("source", {
           src: j.modalGlowExit
         })

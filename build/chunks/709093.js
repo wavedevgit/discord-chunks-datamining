@@ -87,10 +87,11 @@ let N = function(e) {
   } = e, R = (0, s.apv)((0, l.ZP)()), P = O === g.p9.TIER_2, w = (0, d.Fv)(v), D = (0, h.Ng)(), L = null == D || null == (t = D.discount) ? void 0 : t.amount, x = P ? T : I, M = P ? p.Z : _.Z, {
     step: k,
     breadcrumbs: j,
-    startedPaymentFlowWithPaymentSourcesRef: U
+    startedPaymentFlowWithPaymentSourcesRef: U,
+    isEligibleForPremiumBrandRefreshWowMomentConfirmation: G
   } = (0, c.JL)();
   if (null == j || 0 === j.length) return null;
-  let G = j.flatMap(e => {
+  let B = j.flatMap(e => {
     let t = e.useBreadcrumbLabel(v),
       n = e.sectionHeaderText;
     return null != t ? {
@@ -99,21 +100,28 @@ let N = function(e) {
       sectionHeaderText: n
     } : []
   });
-  if (0 === G.length) return null;
-  let B = (G = G.filter(e => {
+  if (0 === B.length) return null;
+  let Z = (B = B.filter(e => {
       let t = e.id !== u.h8.ADD_PAYMENT_STEPS,
         n = e.id === u.h8.ADD_PAYMENT_STEPS && !U.current;
       return !v || v && (t || n)
     })).find(e => e.id === k),
-    Z = null != (i = null == B || null == (n = B.sectionHeaderText) ? void 0 : n.call(B)) ? i : null == B ? void 0 : B.label,
-    F = null != Z && null != k,
-    V = w && F && k === u.h8.REVIEW;
-  return (0, r.jsxs)("div", {
+    F = null != (i = null == Z || null == (n = Z.sectionHeaderText) ? void 0 : n.call(Z)) ? i : null == Z ? void 0 : Z.label,
+    V = null != F && null != k,
+    H = w && V && k === u.h8.REVIEW,
+    Y = P ? "nitro-pink" : "nitro-green";
+  return G && k === u.h8.CONFIRM ? (0, r.jsx)("div", {
+    className: E.container,
+    children: (0, r.jsx)(a.$, {
+      color: Y,
+      className: E.headerContainer
+    })
+  }) : (0, r.jsxs)("div", {
     className: E.container,
     children: [(0, r.jsxs)(a.$, {
-      color: P ? "nitro-pink" : "nitro-green",
+      color: Y,
       className: o()(E.headerContainer, {
-        [E.containerBottomPadding]: !F
+        [E.containerBottomPadding]: !V
       }),
       children: [(0, r.jsx)(A, {
         isTier2: P
@@ -125,7 +133,7 @@ let N = function(e) {
       }), (0, r.jsx)("img", {
         src: x,
         alt: "",
-        className: V ? E.bigWumpus : E.wumpus
+        className: H ? E.bigWumpus : E.wumpus
       }), (0, r.jsx)("div", {
         className: E.textContainer,
         children: (0, r.jsx)(M, {
@@ -135,12 +143,12 @@ let N = function(e) {
       })]
     }), (N || C) && (0, r.jsx)(m.Z, {
       discountAmount: L
-    }), F && (0, r.jsx)(S, {
+    }), V && (0, r.jsx)(S, {
       isOneStepCheckout: w,
-      headerText: Z,
+      headerText: F,
       step: k,
-      filteredBreadcrumbs: G
-    }), V && (0, r.jsx)("div", {
+      filteredBreadcrumbs: B
+    }), H && (0, r.jsx)("div", {
       className: E.bodyGradientContainer,
       children: (0, r.jsx)("div", {
         className: E.bodyGradient
