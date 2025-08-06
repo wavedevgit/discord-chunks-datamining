@@ -15,7 +15,7 @@ function i(e, t, n) {
   }
 }
 
-function s(e, t, n) {
+function o(e, t, n) {
   let r = {
       x: n.x,
       y: n.y
@@ -24,17 +24,17 @@ function s(e, t, n) {
       x: n.x + n.width,
       y: n.y
     },
-    s = {
+    o = {
       x: n.x,
       y: n.y + n.height
     },
-    a = {
+    s = {
       x: n.x + n.width,
       y: n.y + n.height
     };
-  return l(e, t, r, i) || l(e, t, i, a) || l(e, t, a, s) || l(e, t, s, r)
+  return l(e, t, r, i) || l(e, t, i, s) || l(e, t, s, o) || l(e, t, o, r)
 }
 n.d(t, {
-  Vr: () => s,
+  Vr: () => o,
   ld: () => i
 })

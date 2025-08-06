@@ -62,7 +62,8 @@ let p = A(d.Yn.DEFAULT, u._s_.TRANSPORT, 0),
     packetsSent: !0,
     ping: !0,
     qpSum: !0,
-    videoEntropy: !0
+    videoEntropy: !0,
+    audioLevel: !0
   },
   b = 600;
 
