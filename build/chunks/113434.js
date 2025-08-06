@@ -76,7 +76,8 @@ let U = -1,
 
 function B() {
   let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {
-      fetchPolicy: "cache-only"
+      fetchPolicy: "cache-only",
+      callerSource: "unknown"
     },
     [t, n] = r.useState(!1),
     i = (0, u.Wu)([C.Z], () => [...C.Z.quests.values()]),
@@ -92,8 +93,8 @@ function B() {
       location: x.dr.USE_QUESTS
     });
   return r.useEffect(() => {
-    "cache-only" !== e.fetchPolicy && ("cache-and-network" !== e.fetchPolicy && ("cache-or-network" !== e.fetchPolicy || 0 !== s) || !l || t || a || (n(!0), (0, N.xw)(), (0, N.w)(R.Ok.DESKTOP_ACCOUNT_PANEL_AREA)))
-  }, [e.fetchPolicy, l, t, a, s]), {
+    "cache-only" !== e.fetchPolicy && ("cache-and-network" !== e.fetchPolicy && ("cache-or-network" !== e.fetchPolicy || 0 !== s) || !l || t || a || (n(!0), (0, N.xw)(), (0, N.w)(R.Ok.DESKTOP_ACCOUNT_PANEL_AREA, "use_quests_".concat(e.callerSource))))
+  }, [e.fetchPolicy, l, t, a, s, e.callerSource]), {
     quests: i,
     excludedQuests: o,
     isFetchingCurrentQuests: a
@@ -156,7 +157,8 @@ function W(e) {
     quests: t,
     isFetchingCurrentQuests: n
   } = B({
-    fetchPolicy: "cache-and-network"
+    fetchPolicy: "cache-and-network",
+    callerSource: "use_filtered_quests"
   }), r = new Map(t.map(e => [e.id, e])), i = V(t), o = H(t), a = [], s = [];
   for (let t of a = "all" === e ? i : o) {
     let e = r.get(t);
@@ -312,7 +314,8 @@ function es() {
     quests: e,
     isFetchingCurrentQuests: t
   } = B({
-    fetchPolicy: "cache-or-network"
+    fetchPolicy: "cache-or-network",
+    callerSource: "settings_badge"
   }), n = z();
   return r.useMemo(() => {
     let r = [];

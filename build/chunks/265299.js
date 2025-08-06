@@ -22,7 +22,8 @@ function _(e) {
     excludedQuests: _,
     isFetchingCurrentQuests: p
   } = (0, s.J2)({
-    fetchPolicy: "cache-or-network"
+    fetchPolicy: "cache-or-network",
+    callerSource: "embed"
   }), h = i.useMemo(() => n.find(e => e.id === t), [t, n]), m = i.useMemo(() => _.find(e => e.id === t), [t, _]);
   return p ? (0, r.jsx)(o.$jN, {
     className: f.spinner

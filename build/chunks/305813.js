@@ -11,8 +11,8 @@ var r = n(255367),
   c = n(22267),
   d = n(786761),
   u = n(3148),
-  p = n(739566),
-  f = n(753206),
+  f = n(739566),
+  p = n(753206),
   m = n(678135),
   g = n(687158),
   h = n(28660),
@@ -72,13 +72,13 @@ function N(e) {
       colors: N
     }
   })), w = (0, s.ZP)(), L = (0, i.wjy)(w), [I, A] = (0, o.useState)(L), R = (0, g.ZP)(t.id, null), {
-    bannerSrc: M
+    bannerSrc: B
   } = (0, h.Z)({
     displayProfile: R,
     size: 413,
     canAnimate: !1
-  }), B = I ? _.BRd.DARK : _.BRd.LIGHT;
-  (L && I || !L && !I) && (B = w);
+  }), M = I ? _.BRd.DARK : _.BRd.LIGHT;
+  (L && I || !L && !I) && (M = w);
   let Z = (0, o.useCallback)(() => {
       j.default.track(_.rMx.DISPLAY_NAME_STYLES_CLOSED), T()
     }, [T]),
@@ -98,7 +98,7 @@ function N(e) {
         onClick: Z,
         innerClassName: P.closeButton
       })
-    }), null != M && (0, r.jsx)(b.Z, {
+    }), null != B && (0, r.jsx)(b.Z, {
       user: D,
       displayProfile: R,
       themeType: O.lY.MODAL_V2,
@@ -107,25 +107,26 @@ function N(e) {
       children: (0, r.jsx)("div", {
         className: P.bannerBackground,
         style: {
-          backgroundImage: "url(".concat(M, ")")
+          backgroundImage: "url(".concat(B, ")")
         }
       })
     }), (0, r.jsx)(i.f6W, {
-      theme: B,
+      theme: M,
       children: e => (0, r.jsxs)("div", {
         className: a()(P.previewCards, e),
         inert: !0,
         children: [(0, r.jsx)(m.Z, {
           user: D,
-          canUsePremiumCustomization: !0,
           pendingAvatar: void 0,
+          canUsePremiumCustomization: !0,
           disabledInputs: !0,
           hideCustomStatus: !0,
+          hideBioSection: !0,
           containerClassName: P.profile,
           interactive: !1,
           hideViewFullProfileButton: !0
-        }), (0, r.jsx)(f.Z, {
-          author: (0, p.ij)(D, null),
+        }), (0, r.jsx)(p.Z, {
+          author: (0, f.ij)(D, null),
           message: (0, d.e5)(E(v({}, (0, u.ZP)({
             channelId: "1337",
             content: C.intl.string(y.default.h5Cuen)

@@ -11,8 +11,8 @@ var r = n(255367),
   c = n(626135),
   d = n(660662),
   u = n(981631),
-  p = n(698282),
-  f = n(388032),
+  f = n(698282),
+  p = n(388032),
   m = n(235421),
   g = n(397419);
 
@@ -40,7 +40,7 @@ function h(e) {
     children: [(0, r.jsxs)(a.X6, {
       variant: "heading-md/semibold",
       className: g.selectorHeading,
-      children: [f.intl.string(p.default["JOpi7+"]), (0, r.jsx)(i.SrA, {
+      children: [p.intl.string(f.default["JOpi7+"]), (0, r.jsx)(i.SrA, {
         size: "xs",
         color: i.TVs.colors.TEXT_DEFAULT
       })]
