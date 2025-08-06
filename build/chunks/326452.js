@@ -120,7 +120,8 @@ class b extends(r = o.PureComponent) {
       autoComplete: I,
       "aria-label": S,
       inputRef: this.inputRef,
-      trailing: N,
+      leading: c._Ve,
+      clearable: null != r,
       size: E,
       fullWidth: !0
     })) : (0, i.jsx)(l.t, {

@@ -1,10 +1,10 @@
-/** Chunk was on 82107 **/
+/** Chunk was on 82875 **/
 t.d(n, {
-  Z: () => p
+  Z: () => b
 });
-var r, a = t(255367),
+var r, o = t(255367),
   i = t(73800),
-  o = t(846519),
+  a = t(846519),
   l = t(755721),
   c = t(481060),
   s = t(572004),
@@ -29,7 +29,7 @@ class _ extends(r = i.PureComponent) {
     } = this.props, {
       mode: r
     } = this.state, i = r === c.kO8.Modes.SUCCESS ? d.intl.string(d.t["t5VZ8/"]) : t;
-    return (0, a.jsx)(c.kO8, (e = function(e) {
+    return (0, o.jsx)(c.kO8, (e = function(e) {
       for (var n = 1; n < arguments.length; n++) {
         var t = null != arguments[n] ? arguments[n] : {},
           r = Object.keys(t);
@@ -82,10 +82,10 @@ class _ extends(r = i.PureComponent) {
   constructor(e) {
     super(e), u(this, "_timeout", void 0), this.state = {
       mode: c.kO8.Modes.DEFAULT
-    }, this._timeout = new o.V7, this.handleCopy = this.handleCopy.bind(this)
+    }, this._timeout = new a.V7, this.handleCopy = this.handleCopy.bind(this)
   }
 }
 u(_, "defaultProps", {
   delay: 1e3
 });
-let p = _
+let b = _

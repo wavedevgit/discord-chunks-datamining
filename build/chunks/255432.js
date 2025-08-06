@@ -65,7 +65,7 @@ function u(e) {
         var t;
         let [o, a] = e, s = null != (t = n[o]) ? t : a.defaultValue;
         return (0, r.jsxs)(i.xJW, {
-          title: a.label,
+          title: "boolean" === a.type ? void 0 : a.label,
           children: ["select" === a.type && null != a.options && (0, r.jsx)(i.q4e, {
             value: s,
             onChange: e => l(o, e),

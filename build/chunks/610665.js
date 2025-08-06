@@ -1,7 +1,7 @@
 /** Chunk was on 84722 **/
 t.d(n, {
   GV: () => m,
-  iQ: () => g
+  iQ: () => x
 }), t(539854), t(388685), t(415506);
 var i = t(512722),
   l = t.n(i),
@@ -44,7 +44,7 @@ async function m(e, n) {
     l()(null != t, "could not find or create channel")
   }
 }
-async function g(e) {
+async function x(e) {
   let n = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
     {
       channel_id: t,

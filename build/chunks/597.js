@@ -1,32 +1,32 @@
-/** Chunk was on 78036 **/
-t.d(e, {
+/** Chunk was on 80193 **/
+t.d(n, {
   c: () => l
 });
 var i = t(954955),
   o = t.n(i),
   c = t(544891),
-  r = t(570140),
-  a = t(75666),
+  a = t(570140),
+  r = t(75666),
   _ = t(981631);
-let l = o()(async n => {
+let l = o()(async e => {
   try {
-    r.Z.dispatch({
+    a.Z.dispatch({
       type: "EVENT_DIRECTORY_FETCH_START"
     });
-    let e = await c.tn.get({
-      url: _.ANM.DIRECTORY_CHANNEL_ENTRIES(n),
+    let n = await c.tn.get({
+      url: _.ANM.DIRECTORY_CHANNEL_ENTRIES(e),
       query: {
-        type: a.C2.GUILD_SCHEDULED_EVENT
+        type: r.C2.GUILD_SCHEDULED_EVENT
       },
       rejectWithError: !0
     });
-    r.Z.dispatch({
+    a.Z.dispatch({
       type: "EVENT_DIRECTORY_FETCH_SUCCESS",
-      channelId: n,
-      entries: e.body
+      channelId: e,
+      entries: n.body
     })
-  } catch (n) {
-    r.Z.dispatch({
+  } catch (e) {
+    a.Z.dispatch({
       type: "EVENT_DIRECTORY_FETCH_FAILURE"
     })
   }

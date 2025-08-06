@@ -1751,16 +1751,12 @@ function eh() {
           children: "Leading and trailing accessories are not yet supported in the public API."
         }), (0, i.jsxs)(T.Kqy, {
           children: [(0, i.jsx)(T.oil, {
-            leading: (0, i.jsx)(T.qJs, {
-              size: "sm"
-            }),
+            leading: T.qJs,
             placeholder: "Create Channel",
             value: e,
             onChange: t
           }), (0, i.jsx)(T.oil, {
-            trailing: (0, i.jsx)(T.lOy, {
-              size: "sm"
-            }),
+            trailing: T.lOy,
             placeholder: "Send Message",
             value: e,
             onChange: t

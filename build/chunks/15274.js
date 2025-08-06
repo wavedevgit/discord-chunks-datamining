@@ -60,7 +60,7 @@ function f(e) {
   (0, i.ZD)(async () => {
     let {
       default: e
-    } = await Promise.all([n.e("22347"), n.e("61494")]).then(n.bind(n, 697849));
+    } = await Promise.all([n.e("22347"), n.e("21199")]).then(n.bind(n, 697849));
     return n => (0, r.jsx)(e, c({
       guildScheduledEventId: t,
       parentGuildId: o,
