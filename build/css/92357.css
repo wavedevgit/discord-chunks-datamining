@@ -1,6 +1,6 @@
 /**
   Module ID: 92357
-  Original File Name: 169236650dc4e2fa
+  Original File Name: 209ae3cba42fbd51
 **/
 .ragingDemon_ac6454 {
     color: var(--white-500);
@@ -470,13 +470,14 @@ div:has(>.positionLayer__4f4b6) {
 }
 
 .grayBadge__4f4b6 {
-    background-color: var(--primary-500)!important;
+    background-color: var(--background-accent)!important;
+    color: var(--white);
     font-size: 10px
 }
 
 .grayBadge__4f4b6.selected__4f4b6 {
-    background-color: var(--primary-100)!important;
-    color: var(--primary-600)
+    background-color: var(--interactive-active)!important;
+    color: var(--background-base-lowest)
 }
 
 .filters_c485a2 {
@@ -7172,4 +7173,4 @@ div:has(>.repositionLayerTitlebarPopout_fc71d3) {
     background-image: url(/assets/05207174d5432737.svg)
 }
 
-/*# sourceMappingURL=169236650dc4e2fa.css.map*/
+/*# sourceMappingURL=209ae3cba42fbd51.css.map*/
