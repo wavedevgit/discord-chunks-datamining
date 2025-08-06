@@ -1,4 +1,4 @@
-/** Chunk was on 16745 **/
+/** Chunk was on 99133 **/
 e.d(t, {
   ZP: () => X,
   _W: () => L,
@@ -11,8 +11,8 @@ var r = e(255367),
   n = e.n(v);
 if (12633 == e.j) var f = e(91192);
 var B = e(442837),
-  l = e(481060),
-  h = e(43267),
+  h = e(481060),
+  l = e(43267),
   i = e(933557),
   o = e(471445),
   C = e(111028),
@@ -74,15 +74,15 @@ let j = {
 function Z(A) {
   A.preventDefault(), A.stopPropagation()
 }
-let O = p.ZP.getEnableHardwareAcceleration() ? l.Xo$ : l.qEK;
+let O = p.ZP.getEnableHardwareAcceleration() ? h.Xo$ : h.qEK;
 
 function y(A) {
   let {
     channel: t,
-    size: e = l.EFr.SIZE_20
+    size: e = h.EFr.SIZE_20
   } = A;
   return (0, r.jsx)(O, {
-    src: (0, h.x)(t),
+    src: (0, l.x)(t),
     "aria-hidden": !0,
     size: e
   })
@@ -91,7 +91,7 @@ function y(A) {
 function x(A) {
   let {
     channel: t,
-    size: e = l.EFr.SIZE_20
+    size: e = h.EFr.SIZE_20
   } = A, g = (0, B.e7)([d.default], () => d.default.getUser(null == t ? void 0 : t.recipients[0])), v = (0, B.e7)([M.Z], () => !(null == g || null == t || t.isMultiUserDM()) && null != M.Z.getTypingUsers(null == t ? void 0 : t.id)[null == g ? void 0 : g.id]), {
     status: n,
     isMobile: f
@@ -119,9 +119,9 @@ let L = A => {
       channel: g,
       locked: v,
       hasActiveThreads: f,
-      withGuildIcon: h
+      withGuildIcon: l
     } = A, i = (0, B.e7)([c.Z], () => c.Z.getGuild(g.guild_id), [g.guild_id]), C = g.type === b.d4z.DM || g.type === b.d4z.GROUP_DM, a = null;
-    if (h && null != i && !C) a = (0, r.jsx)(Q.Z, {
+    if (l && null != i && !C) a = (0, r.jsx)(Q.Z, {
       size: Q.E.SMALL_32,
       className: P.iconContainerWithGuildIcon,
       iconClassName: P.iconWithGuildIcon,
@@ -158,9 +158,9 @@ let L = A => {
         className: n()(P.icon, t)
       })
     }
-    let w = h ? null == i ? void 0 : i.name : (0, o.bT)(g, i, v, f),
-      s = h && null != i ? "".concat(i.name, " - ").concat(w, " icon") : "".concat(w, " icon");
-    return (0, r.jsx)(l.ua7, {
+    let w = l ? null == i ? void 0 : i.name : (0, o.bT)(g, i, v, f),
+      s = l && null != i ? "".concat(i.name, " - ").concat(w, " icon") : "".concat(w, " icon");
+    return (0, r.jsx)(h.ua7, {
       text: w,
       delay: 500,
       children: A => (0, r.jsx)("div", I(u({}, A), {
@@ -174,7 +174,7 @@ let L = A => {
   X = 12633 == e.j ? g.forwardRef(function(A, t) {
     var e, v, B;
     let {
-      channel: h,
+      channel: l,
       name: o,
       muted: Q,
       selected: c,
@@ -206,7 +206,7 @@ let L = A => {
       isFavoriteSuggestion: _,
       withGuildIcon: $,
       hasActiveEvent: AA = !1
-    } = A, At = q === V.i.ALL_MESSAGES || null != R && R > 0, Ae = (0, f.JA)(h.id), {
+    } = A, At = q === V.i.ALL_MESSAGES || null != R && R > 0, Ae = (0, f.JA)(l.id), {
       role: Ar
     } = Ae, Ag = function(A, t) {
       if (null == A) return {};
@@ -222,12 +222,12 @@ let L = A => {
         for (r = 0; r < v.length; r++) e = v[r], !(t.indexOf(e) >= 0) && Object.prototype.propertyIsEnumerable.call(A, e) && (g[e] = A[e])
       }
       return g
-    }(Ae, ["role"]), Av = g.useRef(null), An = g.useRef(null), Af = (0, s.Z)(h), AB = b.Z5c.CHANNEL(Af, h.id), Al = (0, i.ZP)(h), Ah = null;
-    h.isPrivate() && 1 === (null != (e = h.rawRecipients) ? e : []).length && (Ah = (0, a.bN)(null == (v = h.rawRecipients[0]) ? void 0 : v.display_name_styles));
+    }(Ae, ["role"]), Av = g.useRef(null), An = g.useRef(null), Af = (0, s.Z)(l), AB = b.Z5c.CHANNEL(Af, l.id), Ah = (0, i.ZP)(l), Al = null;
+    l.isPrivate() && 1 === (null != (e = l.rawRecipients) ? e : []).length && (Al = (0, a.bN)(null == (v = l.rawRecipients[0]) ? void 0 : v.display_name_styles));
     let Ai = (0, w.j)({
-        displayNameStyles: Ah
+        displayNameStyles: Al
       }),
-      Ao = h.isGuildVocal(),
+      Ao = l.isGuildVocal(),
       AC = (0, r.jsx)("div", {
         className: n()({
           [P.favoritesSuggestion]: _
@@ -239,7 +239,7 @@ let L = A => {
           target: "_blank",
           ref: Av,
           className: P.link,
-          onClick: () => null == O ? void 0 : O(h)
+          onClick: () => null == O ? void 0 : O(l)
         }, Ag), {
           "aria-label": z,
           focusProps: {
@@ -249,7 +249,7 @@ let L = A => {
             className: P.linkTop,
             children: [(0, r.jsx)(L, {
               className: T,
-              channel: h,
+              channel: l,
               guild: W,
               hasActiveThreads: p,
               locked: d,
@@ -259,7 +259,7 @@ let L = A => {
                 [P.activeEvent]: AA
               }),
               "aria-hidden": !0,
-              children: null == o ? Al : o
+              children: null == o ? Ah : o
             }), g.Children.count(J) > 0 ? (0, r.jsx)("div", {
               onClick: Z,
               className: P.children,
@@ -269,7 +269,7 @@ let L = A => {
             className: n()(P.linkBottom, {
               [P.withGuildIcon]: $
             }),
-            children: (0, r.jsx)(l.Text, {
+            children: (0, r.jsx)(h.Text, {
               color: null != k ? k : "text-muted",
               variant: "text-xs/medium",
               className: P.subtitle,
@@ -278,7 +278,7 @@ let L = A => {
           }) : null]
         }))
       });
-    return (0, r.jsx)(l.tEY, {
+    return (0, r.jsx)(h.tEY, {
       focusTarget: Av,
       ringTarget: An,
       offset: {
@@ -315,9 +315,9 @@ let L = A => {
               return P.typeDefault
           }
         }(null != S ? S : Y)),
-        onMouseUp: A => null == x ? void 0 : x(A, h),
-        onMouseDown: A => null == y ? void 0 : y(A, h),
-        onContextMenu: A => null == X ? void 0 : X(A, h),
+        onMouseUp: A => null == x ? void 0 : x(A, l),
+        onMouseDown: A => null == y ? void 0 : y(A, l),
+        onContextMenu: A => null == X ? void 0 : X(A, l),
         onMouseEnter: N,
         onMouseLeave: K,
         children: [Q || !M ? null : (0, r.jsx)("div", {

@@ -1,5 +1,5 @@
-/** Chunk was on 86590 **/
-e.exports = {
+/** Chunk was on 99133 **/
+A.exports = {
   icon: "icon__2894c",
   iconWithGuildIcon: "iconWithGuildIcon__2894c",
   channelGuildIcon: "channelGuildIcon__2894c",

@@ -1,5 +1,5 @@
-/** Chunk was on 93886 **/
-e.exports = {
+/** Chunk was on 99133 **/
+A.exports = {
   messageBlock: "messageBlock__2d815",
   yellowMessageBlock: "yellowMessageBlock__2d815 messageBlock__2d815",
   messageBlockIcon: "messageBlockIcon__2d815",

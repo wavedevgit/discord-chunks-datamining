@@ -1,4 +1,4 @@
-/** Chunk was on 16745 **/
+/** Chunk was on 99133 **/
 e.d(t, {
   S: () => a
 });
@@ -8,8 +8,8 @@ var r = e(255367),
   n = e(331595),
   f = e(84502);
 let B = ["#be0351", "#ff2c52", "#f0f0f0"],
-  l = ["#ffb84b", "#ffe361", "#f0f0f0"],
-  h = [.3, .4, 1],
+  h = ["#ffb84b", "#ffe361", "#f0f0f0"],
+  l = [.3, .4, 1],
   i = [{
     base: 8,
     tint: 1
@@ -60,9 +60,9 @@ let B = ["#be0351", "#ff2c52", "#f0f0f0"],
       } = (0, f.s)({
         primaryBaseColors: B,
         primaryTintColor: s,
-        primaryTintLuminances: h,
+        primaryTintLuminances: l,
         primaryLuminanceWeights: i,
-        secondaryBaseColors: l,
+        secondaryBaseColors: h,
         secondaryTintColor: Q,
         secondaryTintLuminances: o,
         secondaryLuminanceWeights: C

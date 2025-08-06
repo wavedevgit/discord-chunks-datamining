@@ -1,4 +1,4 @@
-/** Chunk was on 16745 **/
+/** Chunk was on 99133 **/
 e.d(t, {
   Z: () => s,
   l: () => w
@@ -10,8 +10,8 @@ var g = e(120356),
   n = e(481060),
   f = e(957537),
   B = e(737770),
-  l = e(839008),
-  h = e(685184),
+  h = e(839008),
+  l = e(685184),
   i = e(369509),
   o = e(195196),
   C = e(388032),
@@ -87,7 +87,7 @@ let s = function(A) {
       },
       message: C.intl.string(o.default["rnpv7+"])
     }), (0, r.jsx)(w, {
-      avatar: l.Z,
+      avatar: h.Z,
       username: "Lily",
       usernameStyle: {
         color: "var(--orange-300)"
@@ -113,7 +113,7 @@ let s = function(A) {
       }({}, e))
     }), (0, r.jsx)(w, {
       className: a.unfocusedMessage,
-      avatar: h.Z,
+      avatar: l.Z,
       username: "sharon",
       usernameStyle: {
         color: "var(--brand-400)"
@@ -121,7 +121,7 @@ let s = function(A) {
       message: C.intl.string(o.default.GlWVJC)
     }), (0, r.jsx)(w, {
       className: a.unfocusedMessage,
-      avatar: l.Z,
+      avatar: h.Z,
       username: "Lily",
       usernameStyle: {
         color: "var(--orange-300)"

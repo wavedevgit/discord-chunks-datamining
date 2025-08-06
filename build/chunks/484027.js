@@ -1,5 +1,5 @@
-/** Chunk was on 93886 **/
-e.exports = {
+/** Chunk was on 99133 **/
+A.exports = {
   firstPromotionalAvatar: "firstPromotionalAvatar__55414",
   container: "container__55414"
 }

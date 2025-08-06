@@ -1,5 +1,5 @@
-/** Chunk was on 93886 **/
-a.r(e.exports = {
+/** Chunk was on 99133 **/
+e.r(A.exports = {
   standardSidebarView: "standardSidebarView__23e6b",
   withUpsell: "withUpsell__23e6b",
   sidebarRegion: "sidebarRegion__23e6b",

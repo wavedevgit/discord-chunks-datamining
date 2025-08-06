@@ -1,4 +1,4 @@
-/** Chunk was on 16745 **/
+/** Chunk was on 99133 **/
 e.d(t, {
   h: () => o
 });
@@ -9,14 +9,14 @@ var g = e(331595),
 let n = ["#705224", "#F6A830"],
   f = ["#FFE880"],
   B = [.05, .4],
-  l = [{
+  h = [{
     base: 5,
     tint: 1
   }, {
     base: 3,
     tint: 1
   }],
-  h = [.8],
+  l = [.8],
   i = [{
     base: 6,
     tint: 1
@@ -50,10 +50,10 @@ let n = ["#705224", "#F6A830"],
       primaryBaseColors: n,
       primaryTintColor: a,
       primaryTintLuminances: B,
-      primaryLuminanceWeights: l,
+      primaryLuminanceWeights: h,
       secondaryBaseColors: f,
       secondaryTintColor: w,
-      secondaryTintLuminances: h,
+      secondaryTintLuminances: l,
       secondaryLuminanceWeights: i
     });
     return (0, r.jsxs)("svg", (t = function(A) {

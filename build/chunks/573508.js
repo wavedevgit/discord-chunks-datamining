@@ -1,6 +1,6 @@
-/** Chunk was on 16745 **/
+/** Chunk was on 99133 **/
 e.d(t, {
-  i: () => l
+  i: () => h
 });
 var r = e(255367);
 e(73800);
@@ -21,10 +21,10 @@ let n = ["#4a8359", "#7fb134", "#bcef42", "#f0f0f0"],
     base: 10,
     tint: 1
   }],
-  l = A => {
+  h = A => {
     var t, e, {
-        width: l = 24,
-        height: h = 24,
+        width: h = 24,
+        height: l = 24,
         primaryTintColor: i
       } = A,
       o = function(A, t) {
@@ -68,8 +68,8 @@ let n = ["#4a8359", "#7fb134", "#bcef42", "#f0f0f0"],
       }
       return A
     }({}, (0, g.Z)(o)), e = e = {
-      width: l,
-      height: h,
+      width: h,
+      height: l,
       viewBox: "0 0 16 16",
       fill: "none",
       xmlns: "http://www.w3.org/2000/svg",

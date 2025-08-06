@@ -1,11 +1,13 @@
-/** Chunk was on 16745 **/
-e.d(t, {
-  i: () => f
+/** Chunk was on web.js **/
+"use strict";
+n.d(t, {
+  G: () => a,
+  i: () => l
 });
-var r = e(818083),
-  g = e(981631),
-  v = e(647086);
-let n = (0, r.B)({
+var r = n(818083),
+  i = n(981631),
+  o = n(647086);
+let a = (0, r.B)({
   kind: "guild",
   id: "2025-07_guild_tag_badge_packs_wave_1",
   label: "Guild Tag Badge Packs Wave 1",
@@ -21,14 +23,18 @@ let n = (0, r.B)({
   }]
 });
 
-function f(A, t) {
-  let e = !(arguments.length > 2) || void 0 === arguments[2] || arguments[2],
-    r = null != A && A !== v._ && A !== g.I_8;
-  return n.useExperiment({
-    guildId: A,
+function s(e) {
+  return null != e && e !== o._ && e !== i.I_8
+}
+
+function l(e, t) {
+  let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
+    r = s(e);
+  return a.useExperiment({
+    guildId: e,
     location: t
   }, {
     disable: !r,
-    autoTrackExposure: e
+    autoTrackExposure: n
   }).enabled
 }

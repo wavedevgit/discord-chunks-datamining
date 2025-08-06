@@ -1,4 +1,4 @@
-/** Chunk was on 16745 **/
+/** Chunk was on 99133 **/
 e.d(t, {
   v: () => m
 });
@@ -9,8 +9,8 @@ var g = e(397110),
   n = e(25960),
   f = e(706484),
   B = e(819837),
-  l = e(165440),
-  h = e(21822),
+  h = e(165440),
+  l = e(21822),
   i = e(285916),
   o = e(168646),
   C = e(470831),
@@ -179,7 +179,7 @@ let m = A => {
         primaryTintColor: e
       }, G));
     case L.x_.DOG:
-      return (0, r.jsx)(h.h, X({
+      return (0, r.jsx)(l.h, X({
         primaryTintColor: e,
         secondaryTintColor: m
       }, G));
@@ -197,7 +197,7 @@ let m = A => {
         primaryTintColor: e
       }, G));
     case L.x_.DIAMOND:
-      return (0, r.jsx)(l.T, X({
+      return (0, r.jsx)(h.T, X({
         primaryTintColor: e
       }, G));
     case L.x_.CROWN:

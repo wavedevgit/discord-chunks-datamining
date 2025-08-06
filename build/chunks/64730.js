@@ -1,5 +1,5 @@
-/** Chunk was on 93886 **/
-e.exports = {
+/** Chunk was on 99133 **/
+A.exports = {
   tabBarItemContainer: "tabBarItemContainer_c7e907",
   searchBar: "searchBar_c7e907"
 }
