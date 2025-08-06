@@ -1,22 +1,21 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => y
+  Z: () => b
 }), n(388685);
 var r = n(255367),
   i = n(73800),
   o = n(120356),
   a = n.n(o),
-  s = n(755721),
-  l = n(481060),
-  c = n(906732),
-  u = n(785717),
-  d = n(892001),
-  f = n(280885),
-  _ = n(388032),
-  p = n(383994);
+  s = n(481060),
+  l = n(906732),
+  c = n(785717),
+  u = n(892001),
+  d = n(280885),
+  f = n(388032),
+  _ = n(383994);
 
-function h(e, t, n) {
+function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -25,20 +24,20 @@ function h(e, t, n) {
   }) : e[t] = n, e
 }
 
-function m(e) {
+function h(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      h(e, t, n[t])
+      p(e, t, n[t])
     })
   }
   return e
 }
 
-function g(e, t) {
+function m(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -49,53 +48,52 @@ function g(e, t) {
   return n
 }
 
-function E(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : g(Object(t)).forEach(function(n) {
+function g(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let b = 57.75,
-  y = i.memo(function(e) {
+let E = 57.75,
+  b = i.memo(function(e) {
     let {
       user: t,
       onClose: n,
       bio: o,
-      hidePersonalInformation: h,
-      viewFullBioDisabled: g = !1
+      hidePersonalInformation: p,
+      viewFullBioDisabled: m = !1
     } = e, {
-      context: y
-    } = (0, u.KZ)(), {
-      analyticsLocations: O
-    } = (0, c.ZP)(), [v, I] = i.useState(!1), [T, S] = i.useState(!1), A = i.useRef(null), N = e => {
-      A.current = e, null != e && (I(!T && e.scrollHeight - e.clientHeight > 1), e.getBoundingClientRect().height > b && S(!0))
-    }, C = () => {
-      null == n || n(), (0, d.openUserProfileModal)(E(m({}, y), {
+      context: b
+    } = (0, c.KZ)(), {
+      analyticsLocations: y
+    } = (0, l.ZP)(), [O, v] = i.useState(!1), [I, T] = i.useState(!1), S = i.useRef(null), A = e => {
+      S.current = e, null != e && (v(!I && e.scrollHeight - e.clientHeight > 1), e.getBoundingClientRect().height > E && T(!0))
+    }, N = () => {
+      null == n || n(), (0, u.openUserProfileModal)(g(h({}, b), {
         userId: t.id,
-        sourceAnalyticsLocations: O
+        sourceAnalyticsLocations: y
       }))
-    }, R = e => {
-      null == A.current || A.current.contains(e.relatedTarget) || (A.current.scrollTop = 0)
+    }, C = e => {
+      null == S.current || S.current.contains(e.relatedTarget) || (S.current.scrollTop = 0)
     };
-    return h || null == o || "" === o ? null : (0, r.jsxs)("div", {
+    return p || null == o || "" === o ? null : (0, r.jsxs)("div", {
       children: [(0, r.jsx)("div", {
-        ref: N,
-        className: a()(p.descriptionClamp, T && p.maxBioHeight),
-        onBlur: R,
-        children: (0, r.jsx)(f.Z, {
+        ref: A,
+        className: a()(_.descriptionClamp, I && _.maxBioHeight),
+        onBlur: C,
+        children: (0, r.jsx)(d.Z, {
           userBio: o,
           setLineClamp: !1,
           textColor: "header-primary"
         })
-      }), (v || T) && (0, r.jsx)(s.zx, {
-        look: s.zx.Looks.BLANK,
-        size: s.zx.Sizes.NONE,
-        className: p.viewFullBio,
-        color: a()(p.viewFullBioColor, g && p.viewFullBioDisabled),
-        onClick: C,
-        children: (0, r.jsx)(l.Text, {
-          variant: "text-xs/normal",
-          color: "none",
-          children: _.intl.string(_.t.YDiPq6)
+      }), (O || I) && (0, r.jsx)("div", {
+        className: _.viewFullBio,
+        children: (0, r.jsx)(s.Avr, {
+          textVariant: "text-xs/normal",
+          size: "sm",
+          variant: "secondary",
+          text: f.intl.string(f.t.YDiPq6),
+          onClick: N,
+          disabled: m
         })
       })]
     })

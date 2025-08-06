@@ -1,6 +1,6 @@
 /**
   Module ID: 49152
-  Original File Name: 9c49783127208079
+  Original File Name: 55f216b70e29fe35
 **/
 @keyframes placeholderPulse_c8ffbb {
     0% {
@@ -2835,16 +2835,13 @@
     border-top: 1px solid var(--user-profile-border)
 }
 
-.footerButtonColor__7f9c0 {
-    color: var(--interactive-normal)
-}
-
-.footerButtonColor__7f9c0:hover {
-    color: var(--interactive-hover)
-}
-
-.footerButtonColor__7f9c0:active {
-    color: var(--interactive-active)
+.footerButton__7f9c0 {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    height: 44px;
+    justify-content: center;
+    width: 100%
 }
 
 .banner__7f9c0 {
@@ -3169,4 +3166,4 @@
     position: relative
 }
 
-/*# sourceMappingURL=9c49783127208079.css.map*/
+/*# sourceMappingURL=55f216b70e29fe35.css.map*/
