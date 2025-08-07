@@ -162,7 +162,7 @@ function x(e) {
     handleSeekForwardBtnClick: L,
     handleControlBarPendingInteraction: M,
     onVolumeChange: V
-  } = e, B = (0, f.km)(e => e.volume), F = (0, f.km)(e => e.setVolume), Z = (0, f.km)(e => e.muted), U = (0, f.km)(e => e.setMuted), q = (0, f.km)(e => e.transcriptEnabled), Y = (0, f.km)(e => e.captionEnabled), H = (0, f.km)(e => e.fullScreenEnabled), Q = (0, s.e7)([m.Z], () => m.Z.useReducedMotion), z = (0, s.e7)([m.Z], () => m.Z.keyboardModeEnabled), [G, K] = l.useState(Z ? 0 : B), [X, W] = l.useState(!1), [$, J] = l.useState(!1), [{
+  } = e, B = (0, f.km)(e => e.volume), Z = (0, f.km)(e => e.setVolume), F = (0, f.km)(e => e.muted), U = (0, f.km)(e => e.setMuted), q = (0, f.km)(e => e.transcriptEnabled), Y = (0, f.km)(e => e.captionEnabled), H = (0, f.km)(e => e.fullScreenEnabled), Q = (0, s.e7)([m.Z], () => m.Z.useReducedMotion), z = (0, s.e7)([m.Z], () => m.Z.keyboardModeEnabled), [G, K] = l.useState(F ? 0 : B), [W, X] = l.useState(!1), [$, J] = l.useState(!1), [{
     volumeAnimSpring: ee
   }, et] = (0, d.q_F)(() => ({
     from: {
@@ -176,11 +176,11 @@ function x(e) {
   })), en = l.useRef(null), er = (0, p.ZS)(R), el = l.useCallback(e => {
     null != o.current && (e !== o.current.volume && (o.current.volume = e), e !== G && K(e))
   }, [o, G]), eo = l.useCallback(() => {
-    null != o.current && (0 === G ? (el(B), U(!1), V(B)) : (F(G), el(0), U(!0), V(0)))
-  }, [o, G, el, B, U, F, V]), ei = () => {
-    W(!0)
+    null != o.current && (0 === G ? (el(B), U(!1), V(B)) : (Z(G), el(0), U(!0), V(0)))
+  }, [o, G, el, B, U, Z, V]), ei = () => {
+    X(!0)
   }, ea = () => {
-    W(!1)
+    X(!1)
   }, es = l.useCallback(e => {
     switch (e.key) {
       case O.Y1.PLAYBACK:
@@ -208,11 +208,11 @@ function x(e) {
   l.useEffect(() => {
     null != en.current && en.current.focus()
   }, []), l.useEffect(() => (et({
-    volumeAnimSpring: $ || X ? 1 : 0,
+    volumeAnimSpring: $ || W ? 1 : 0,
     immediate: Q
   }), () => {
     ee.stop()
-  }), [$, X, et, Q, ee]), l.useEffect(() => (window.addEventListener("keydown", es), () => {
+  }), [$, W, et, Q, ee]), l.useEffect(() => (window.addEventListener("keydown", es), () => {
     window.removeEventListener("keydown", es)
   }), [es]);
   let ec = 0 === G ? d.OyP : G < .5 ? d.X2j : d.gj8,
@@ -294,7 +294,7 @@ function x(e) {
             minValue: 0,
             maxValue: 1,
             onValueChange: e => {
-              el(e), F(e), V(e), $ && (J(!1), M(!1)), Z && e > 0 && U(!1)
+              el(e), Z(e), V(e), $ && (J(!1), M(!1)), F && e > 0 && U(!1)
             },
             asValueChanges: e => {
               el(e), $ || (J(!0), M(!0))

@@ -1,6 +1,6 @@
 /**
   Module ID: 75708
-  Original File Name: b0b3e065faabe019
+  Original File Name: 0516ae4139c857ef
 **/
 .phoneFieldPopout__61a01 {
     height: 240px;
@@ -3807,6 +3807,10 @@ button.button__67645.enabled__67645.redGlow__67645:hover,span.button__67645.enab
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap
+}
+
+.panelTitleContainer__37e49 .withDisplayNameStyles__37e49 {
+    overflow: visible
 }
 
 .copySuccess__37e49 {
@@ -19974,4 +19978,4 @@ html .invoiceCancelRow__968a4 {
     overflow: visible
 }
 
-/*# sourceMappingURL=b0b3e065faabe019.css.map*/
+/*# sourceMappingURL=0516ae4139c857ef.css.map*/

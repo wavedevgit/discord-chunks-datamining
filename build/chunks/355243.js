@@ -64,7 +64,7 @@ function v(e) {
     M = (0, u.yv)(L),
     V = null != h ? h.right - f(t / 100 * g, g, h) : null,
     B = null != j && null != h ? h.right - j : null,
-    F = null != x && null != h ? h.right - x : null;
+    Z = null != x && null != h ? h.right - x : null;
   return (0, r.jsxs)("div", {
     className: m.cont,
     ref: k,
@@ -101,11 +101,11 @@ function v(e) {
           width: "".concat(100 * e.size, "%"),
           left: "".concat(100 * e.start, "%")
         }
-      }, "".concat(e.start, ":").concat(e.size))), !o && null != F && F > 0 && (0, r.jsx)("div", {
+      }, "".concat(e.start, ":").concat(e.size))), !o && null != Z && Z > 0 && (0, r.jsx)("div", {
         className: m.seekableBar,
         style: {
-          right: null != F ? "".concat(F, "px") : "auto",
-          opacity: +(null != F)
+          right: null != Z ? "".concat(Z, "px") : "auto",
+          opacity: +(null != Z)
         }
       }), (0, r.jsx)(a.Exd, {
         className: m.progress,
