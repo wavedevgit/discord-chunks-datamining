@@ -1,6 +1,6 @@
 /** Chunk was on 11776 **/
 n.d(t, {
-  Z: () => O
+  Z: () => v
 }), n(388685);
 var r = n(255367),
   l = n(73800),
@@ -17,10 +17,10 @@ var r = n(255367),
   g = n(428927),
   b = n(228168),
   j = n(388032),
-  y = n(301150),
-  h = n(923243);
+  h = n(301150),
+  y = n(923243);
 
-function v(e) {
+function x(e) {
   let {
     section: t,
     subsection: n,
@@ -63,7 +63,7 @@ function v(e) {
   })
 }
 
-function O(e) {
+function v(e) {
   var t, n, d;
   let {
     user: u,
@@ -71,8 +71,8 @@ function O(e) {
     displayProfile: p,
     guildId: m,
     items: g,
-    initialSection: O = b.oh.USER_INFO,
-    initialSubsection: x,
+    initialSection: v = b.oh.USER_INFO,
+    initialSubsection: O,
     onClose: _
   } = e, {
     trackUserProfileAction: I
@@ -84,9 +84,9 @@ function O(e) {
       let {
         section: t
       } = e;
-      return t === O
+      return t === v
     })) ? void 0 : t.section) ? d : null == (n = g[0]) ? void 0 : n.section,
-    subsection: x
+    subsection: O
   });
   l.useEffect(() => {
     null == g.find(e => e.section === E) && N({
@@ -104,20 +104,20 @@ function O(e) {
     })
   }, [I, N]);
   return P ? (0, r.jsx)("div", {
-    className: h.container,
+    className: y.container,
     children: (0, r.jsxs)("div", {
-      className: y.empty,
+      className: h.empty,
       children: [(0, r.jsx)("div", {
-        className: y.emptyIconStreamerMode
+        className: h.emptyIconStreamerMode
       }), (0, r.jsx)("div", {
-        className: y.emptyText,
+        className: h.emptyText,
         children: j.intl.string(j.t.Br1ls7)
       })]
     })
   }) : (0, r.jsxs)("div", {
-    className: h.container,
+    className: y.container,
     children: [(0, r.jsx)(i.n, {
-      className: h.tabBar,
+      className: y.tabBar,
       type: "top",
       selectedItem: E,
       onItemSelect: T,
@@ -127,7 +127,7 @@ function O(e) {
           text: n
         } = e;
         return (0, r.jsx)(i.n.Item, {
-          className: h.tabBarItem,
+          className: y.tabBarItem,
           id: t,
           "aria-label": n,
           children: (0, r.jsx)(a.Text, {
@@ -136,7 +136,7 @@ function O(e) {
           })
         }, t)
       })
-    }), (0, r.jsx)(v, {
+    }), (0, r.jsx)(x, {
       items: g,
       section: E,
       subsection: Z,

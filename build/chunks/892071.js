@@ -45,7 +45,7 @@ function p(e) {
     hardwareAccelerationEnabled: S,
     highContrastMode: A,
     children: N
-  } = e, C = window.CSS.supports("selector(::-webkit-scrollbar)"), R = "font-size: ".concat(h, "%; --saturation-factor: ").concat(b, ";"), P = (0, d.Z)("highlight_mana_buttons"), w = (0, d.Z)("highlight_mana_components"), D = (0, d.Z)("highlight_void_buttons"), L = a()((0, c.Z)(), (0, l.QeD)(o), "density-".concat(_), m, {
+  } = e, C = window.CSS.supports("selector(::-webkit-scrollbar)"), R = "font-size: ".concat(h, "%; --saturation-factor: ").concat(b, ";"), P = (0, d.Z)("highlight_mana_buttons"), w = (0, d.Z)("highlight_mana_components"), D = (0, d.Z)("highlight_void_toggleables"), L = (0, d.Z)("highlight_void_buttons"), x = a()((0, c.Z)(), (0, l.QeD)(o), "density-".concat(_), m, {
     "low-saturation": b <= l.AEw,
     "keyboard-mode": E,
     "decorate-links": T,
@@ -65,15 +65,16 @@ function p(e) {
     "mana-text-inputs": (0, u.U)("RootElementContextProvider"),
     "highlight-mana-buttons": P,
     "highlight-mana-components": w,
-    "highlight-void-buttons": D,
+    "highlight-void-toggleables": D,
+    "highlight-void-buttons": L,
     "high-contrast-mode": A
-  }, t), x = i.useMemo(() => ({
+  }, t), M = i.useMemo(() => ({
     lang: n,
     style: R,
-    className: L
-  }), [n, R, L]);
+    className: x
+  }), [n, R, x]);
   return (0, r.jsx)(f.Provider, {
-    value: x,
+    value: M,
     children: N
   })
 }

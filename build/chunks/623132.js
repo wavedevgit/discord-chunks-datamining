@@ -1,6 +1,6 @@
 /** Chunk was on 11776 **/
 n.d(t, {
-  Z: () => y
+  Z: () => h
 });
 var r = n(255367),
   l = n(73800),
@@ -68,7 +68,7 @@ function j(e) {
   })
 }
 
-function y(e) {
+function h(e) {
   let {
     user: t,
     guildId: n,
@@ -77,16 +77,16 @@ function y(e) {
     loading: a = !1,
     disableInteraction: c = !1
   } = e, {
-    gameName: y,
-    imageSrc: h,
-    applicationId: v,
-    comment: O,
-    tags: x
+    gameName: h,
+    imageSrc: y,
+    applicationId: x,
+    comment: v,
+    tags: O
   } = i, _ = (0, f.Z)(i.applicationId), I = _.length > 0, P = () => (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(d.Z, {
-      imageSrc: h,
-      gameName: y,
-      applicationId: v,
+      imageSrc: y,
+      gameName: h,
+      applicationId: x,
       userId: t.id,
       disableInteraction: !0
     }), (0, r.jsxs)("div", {
@@ -94,14 +94,14 @@ function y(e) {
       children: [(0, r.jsx)(o.X6q, {
         variant: "text-md/normal",
         color: "text-default",
-        children: y
-      }), null != O && (0, r.jsx)(b, {
-        text: O,
+        children: h
+      }), null != v && (0, r.jsx)(b, {
+        text: v,
         user: t,
         guildId: n,
         channelId: l
       }), (0, r.jsx)(u.Z, {
-        tags: x
+        tags: O
       }), I && (0, r.jsx)(s.Z, {
         label: p.intl.formatToPlainString(p.t.ujhJdH, {
           numFriends: _.length
@@ -124,9 +124,9 @@ function y(e) {
     className: g.card,
     children: P()
   }) : (0, r.jsx)(j, {
-    applicationId: v,
+    applicationId: x,
     userId: t.id,
-    gameName: y,
+    gameName: h,
     className: g.card,
     children: P()
   })

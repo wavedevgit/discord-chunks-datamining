@@ -1,6 +1,6 @@
 /**
   Module ID: 11776
-  Original File Name: 74e92926a0b4579e
+  Original File Name: e06cfa978336e3ed
 **/
 .scroller__95bea {
     display: flex;
@@ -973,14 +973,15 @@
     cursor: pointer
 }
 
-.tagList__25a50 {
-    flex-wrap: wrap
-}
-
-.tag__25a50,.tagList__25a50 {
+.tagListContainer__25a50 {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 4px
+}
+
+.tagList__25a50 {
+    display: contents
 }
 
 .tag__25a50 {
@@ -988,7 +989,39 @@
     background: var(--background-mod-subtle);
     border: 1px solid var(--border-faint);
     border-radius: 58px;
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
     padding: 3px 8px 3px 6px
+}
+
+.buttonContainer__25a50 {
+    cursor: pointer;
+    position: relative;
+    z-index: 1
+}
+
+.expandButton__25a50 {
+    padding: 3px 8px 3px 6px
+}
+
+.expandButton__25a50:hover {
+    background-color: var(--user-profile-background-hover)
+}
+
+.collapseButton__25a50 {
+    box-sizing: border-box;
+    cursor: pointer;
+    display: flex;
+    padding: 3px 4px
+}
+
+.collapseButton__25a50:hover {
+    background-color: var(--user-profile-background-hover)
+}
+
+.caret__25a50 {
+    color: var(--text-secondary)
 }
 
 .card_e1364f {
@@ -1015,11 +1048,12 @@
 }
 
 .details_e1364f {
+    align-items: flex-start;
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
     gap: 4px;
-    justify-content: center;
-    min-height: 117px
+    justify-content: flex-start
 }
 
 .icon_e1364f {
@@ -1465,4 +1499,4 @@
     border-color: var(--input-focused-border)
 }
 
-/*# sourceMappingURL=74e92926a0b4579e.css.map*/
+/*# sourceMappingURL=e06cfa978336e3ed.css.map*/

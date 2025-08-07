@@ -2,8 +2,8 @@
 n.d(t, {
   P9: () => _,
   Uf: () => P,
-  b0: () => x,
-  s_: () => O
+  b0: () => O,
+  s_: () => v
 }), n(388685);
 var r = n(255367),
   l = n(73800),
@@ -20,12 +20,12 @@ var r = n(255367),
   g = n(771627);
 let b = [() => m.intl.string(m.t.madJdH), () => m.intl.string(m.t.NYmfoK), () => m.intl.string(m.t.R2PaCg), () => m.intl.string(m.t.laSR8v), () => m.intl.string(m.t.DnsJEx)],
   j = [() => m.intl.string(m.t.nFSbeH), () => m.intl.string(m.t.gTcxOz), () => m.intl.string(m.t["8T0wYm"]), () => m.intl.string(m.t.BIHl1t), () => m.intl.string(m.t.jhBm09)],
-  y = [() => m.intl.string(m.t.AyMGXF), () => m.intl.string(m.t.aAFW7e), e => m.intl.formatToPlainString(m.t.h2g0cH, {
+  h = [() => m.intl.string(m.t.AyMGXF), () => m.intl.string(m.t.aAFW7e), e => m.intl.formatToPlainString(m.t.h2g0cH, {
     name: e
   }), () => m.intl.string(m.t["rrYh5+"]), () => m.intl.string(m.t["HX3K+P"]), () => m.intl.string(m.t["/yW3aW"]), () => m.intl.string(m.t["PmL/v7"]), () => m.intl.string(m.t.IALa3t), () => m.intl.string(m.t.HRcTFB), () => m.intl.string(m.t.NuCqPj), () => m.intl.string(m.t["M1tw+/"]), () => m.intl.string(m.t.UBm1y8), () => m.intl.string(m.t.Cu95PT), () => m.intl.string(m.t["R/wFur"]), () => m.intl.string(m.t.HQPAVV), () => m.intl.string(m.t.YolGh4)],
-  h = [p.ABu.STEAM, p.ABu.PLAYSTATION, p.ABu.XBOX, p.ABu.TWITCH, p.ABu.BATTLENET, p.ABu.LEAGUE_OF_LEGENDS, p.ABu.EPIC_GAMES, p.ABu.RIOT_GAMES, p.ABu.ROBLOX, p.ABu.SPOTIFY, p.ABu.YOUTUBE, p.ABu.CRUNCHYROLL, p.ABu.BUNGIE];
+  y = [p.ABu.STEAM, p.ABu.PLAYSTATION, p.ABu.XBOX, p.ABu.TWITCH, p.ABu.BATTLENET, p.ABu.LEAGUE_OF_LEGENDS, p.ABu.EPIC_GAMES, p.ABu.RIOT_GAMES, p.ABu.ROBLOX, p.ABu.SPOTIFY, p.ABu.YOUTUBE, p.ABu.CRUNCHYROLL, p.ABu.BUNGIE];
 
-function v(e) {
+function x(e) {
   let {
     heading: t,
     bodyText: n,
@@ -48,25 +48,25 @@ function v(e) {
   })
 }
 
-function O() {
+function v() {
   let e = m.intl.string(m.t.RnD2yc),
     [t] = l.useState(() => {
       var e;
       return (null != (e = (0, o.sample)(b)) ? e : b[0])()
     });
-  return (0, r.jsx)(v, {
+  return (0, r.jsx)(x, {
     heading: e,
     bodyText: t
   })
 }
 
-function x() {
+function O() {
   let e = m.intl.string(m.t.bFgqYG),
     [t] = l.useState(() => {
       var e;
       return (null != (e = (0, o.sample)(j)) ? e : j[0])()
     });
-  return (0, r.jsx)(v, {
+  return (0, r.jsx)(x, {
     heading: e,
     bodyText: t
   })
@@ -82,13 +82,13 @@ function _(e) {
     name: d
   }), [b] = l.useState(() => {
     var e;
-    return (null != (e = (0, o.sample)(y)) ? e : y[0])(d)
+    return (null != (e = (0, o.sample)(h)) ? e : h[0])(d)
   }), j = l.useCallback(() => {
     a.Z.openPrivateChannel({
       recipientIds: t.id
     }), null == s || s()
   }, [t.id, s]);
-  return (0, r.jsx)(v, {
+  return (0, r.jsx)(x, {
     heading: p,
     bodyText: b,
     children: (0, r.jsx)("div", {
@@ -107,7 +107,7 @@ function I() {
   let e = (0, s.ZP)();
   return (0, r.jsx)("div", {
     className: g.connectionPlatforms,
-    children: h.map((t, n) => {
+    children: y.map((t, n) => {
       let l = d.Z.get(t);
       if (null == l) return null;
       let o = (0, i.wjy)(e) ? l.icon.darkPNG : l.icon.lightPNG;
@@ -128,7 +128,7 @@ function P(e) {
   }, [t]), o = l.useCallback(() => {
     null == t || t(), c.Z.open(p.oAB.CONTENT_AND_SOCIAL, "CONNECTED_GAMES")
   }, [t]);
-  return (0, r.jsxs)(v, {
+  return (0, r.jsxs)(x, {
     heading: m.intl.string(m.t.VB6LWV),
     bodyText: m.intl.string(m.t.KpjsU1),
     children: [(0, r.jsx)(I, {}), (0, r.jsxs)("div", {

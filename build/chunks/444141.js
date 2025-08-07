@@ -54,23 +54,23 @@ function p(e) {
     analyticsLocations: b,
     sourceAnalyticsLocations: j
   } = (0, o.ZP)(), {
-    context: y,
-    trackUserProfileAction: h
-  } = (0, a.KZ)(), v = (0, s.ZP)(t.id, n);
-  return (null == v ? void 0 : v.guildId) == null || null == y ? null : (null == m ? void 0 : m.guildId) != null ? (0, r.jsx)(l.sNh, {
+    context: h,
+    trackUserProfileAction: y
+  } = (0, a.KZ)(), x = (0, s.ZP)(t.id, n);
+  return (null == x ? void 0 : x.guildId) == null || null == h ? null : (null == m ? void 0 : m.guildId) != null ? (0, r.jsx)(l.sNh, {
     id: "view-main-profile",
     label: d.intl.string(d.t.GISTtb),
     subtext: d.intl.formatToPlainString(d.t["mn/nW1"], {
       displayName: i.ZP.getName(void 0, void 0, t)
     }),
     action: () => {
-      null == g || g(), (0, c.openUserProfileModal)(f(u({}, y), {
+      null == g || g(), (0, c.openUserProfileModal)(f(u({}, h), {
         showGuildProfile: !1,
         sourceAnalyticsLocations: j
-      })), h(u({
+      })), y(u({
         action: "PRESS_VIEW_MAIN_PROFILE",
         analyticsLocations: b
-      }, y))
+      }, h))
     }
   }) : (0, r.jsx)(l.sNh, {
     id: "view-server-profile",
@@ -79,13 +79,13 @@ function p(e) {
       displayName: i.ZP.getName(n, p, t)
     }),
     action: () => {
-      null == g || g(), (0, c.openUserProfileModal)(f(u({}, y), {
+      null == g || g(), (0, c.openUserProfileModal)(f(u({}, h), {
         showGuildProfile: !0,
         sourceAnalyticsLocations: j
-      })), h(u({
+      })), y(u({
         action: "PRESS_VIEW_SERVER_PROFILE",
         analyticsLocations: b
-      }, y))
+      }, h))
     }
   })
 }

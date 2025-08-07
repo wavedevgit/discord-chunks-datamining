@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => z
+  Z: () => Y
 }), n(35282), n(704826);
 var r = n(255367),
   i = n(73800),
@@ -414,130 +414,73 @@ class V extends i.PureComponent {
 
 function H(e) {
   let {
-    isSearchActive: t,
+    className: t,
     searchContext: n
-  } = e, r = i.useRef(t);
+  } = e, o = (0, S.Tm)(n), a = (0, u.e7)([p.Z], () => p.Z.keyboardModeEnabled), s = (0, u.e7)([T.Z], () => null != o ? T.Z.getEditorState(o) : null), l = i.useMemo(() => null != s ? s : y.nR(O.Jl(P.ZP)), [s]), {
+    isSearching: c,
+    isSearchActive: f,
+    hasResults: _
+  } = (0, u.cj)([I.Z], () => {
+    let e = I.Z.getTotalCount(o);
+    return {
+      hasResults: null != e && e > 0,
+      isSearching: I.Z.getIsFetching(o),
+      isSearchActive: I.Z.hasSearchState(o)
+    }
+  }), h = i.useRef(f);
   i.useEffect(() => {
-    r.current && !t && (r.current = !1, (0, x.IZ)({
+    h.current && !f && (h.current = !1, (0, x.IZ)({
       searchContext: n
-    })), !r.current && t && (r.current = !0)
-  }, [t, n])
-}
-
-function Y(e) {
-  let {
-    searchContext: t,
-    className: n,
-    keyboardModeEnabled: o,
-    editorState: a
-  } = e, {
-    isSearching: s,
-    isSearchActive: l,
-    hasResults: c
-  } = (0, u.cj)([I.Z], () => {
-    let e = (0, S.Tm)(t),
-      n = I.Z.getTotalCount(e);
-    return {
-      hasResults: null != n && n > 0,
-      isSearching: I.Z.getIsFetching(e),
-      isSearchActive: I.Z.hasSearchState(e)
-    }
-  });
-  H({
-    searchContext: t,
-    isSearchActive: l
-  });
-  let d = i.useCallback(e => {
-    let {
-      queryString: n,
-      query: r
-    } = e;
-    R.ZP.refreshSearchQueryAnalyticsId(t), (0, x.tI)({
-      searchContext: t,
-      query: r,
-      queryString: n
-    }), w.Z.fetchCrossDMMessages({
-      searchContext: t,
-      selectedPageIndex: 0,
-      queryString: n
-    })
-  }, [t]);
-  return (0, r.jsx)(V, {
-    className: n,
-    searchContext: t,
-    isSearching: s,
-    editorState: a,
-    hasResults: c,
-    keyboardModeEnabled: o,
-    onSearch: d,
-    isSearchActive: l,
-    placeholder: j.intl.string(j.t.m7OrlZ)
-  })
-}
-
-function W(e) {
-  let {
-    searchContext: t,
-    className: n,
-    keyboardModeEnabled: o,
-    editorState: a
-  } = e, {
-    isSearching: s,
-    isSearchActive: l,
-    hasResults: c
-  } = (0, u.cj)([I.Z], () => {
-    let e = (0, S.Tm)(t),
-      n = I.Z.getTotalCount(e);
-    return {
-      hasResults: null != n && n > 0,
-      isSearching: I.Z.getIsFetching(e),
-      isSearchActive: I.Z.hasSearchState(e)
-    }
-  }), f = (0, u.e7)([g.Z, m.Z], () => {
-    let e = (0, S.b7)(t) ? t.guildId : null;
-    if (null != e) {
-      let t = g.Z.getGuild(e);
-      return null == t ? null : t.name
-    }
-    let n = (0, S.AH)(t);
-    if (null != n) {
-      let e = m.Z.getChannel(n);
-      return null == e ? null : (0, S.nl)(e)
-    }
-    return null
-  }), _ = (0, C.xd)({
-    isXDMSearch: !1,
-    location: "Search"
-  }), p = (0, C.dB)({
-    isXDMSearch: !1,
-    location: "Search"
-  }), h = _ || p;
-  H({
-    searchContext: t,
-    isSearchActive: l
-  });
+    })), !h.current && f && (h.current = !0)
+  }, [f, n]);
   let E = i.useCallback(e => {
       let {
-        queryString: n,
+        queryString: t,
         query: r,
         searchEverywhere: i
       } = e;
-      R.ZP.refreshSearchQueryAnalyticsId(t), (0, x.tI)({
-        searchContext: t,
+      R.ZP.refreshSearchQueryAnalyticsId(n), (0, x.tI)({
+        searchContext: n,
         query: r,
-        queryString: n
-      }), F({
-        searchContext: t,
+        queryString: t
+      }), n.type === k.aib.DMS ? w.Z.fetchCrossDMMessages({
+        searchContext: n,
+        selectedPageIndex: 0,
+        queryString: t
+      }) : F({
+        searchContext: n,
         searchQuery: r,
-        queryString: n,
+        queryString: t,
         searchEverywhere: i,
         offset: 0,
         searchMode: k.QIO.NEWEST
       })
-    }, [t]),
-    b = i.useMemo(() => h ? (0, r.jsxs)(r.Fragment, {
+    }, [n]),
+    b = (0, u.e7)([g.Z, m.Z], () => {
+      let e = (0, S.b7)(n) ? n.guildId : null;
+      if (null != e) {
+        let t = g.Z.getGuild(e);
+        return null == t ? null : t.name
+      }
+      let t = (0, S.AH)(n);
+      if (null != t) {
+        let e = m.Z.getChannel(t);
+        return null == e ? null : (0, S.nl)(e)
+      }
+      return null
+    }),
+    v = (0, C.xd)({
+      isXDMSearch: !1,
+      location: "Search"
+    }),
+    A = (0, C.dB)({
+      isXDMSearch: !1,
+      location: "Search"
+    }),
+    N = v || A,
+    D = i.useMemo(() => n.type === k.aib.DMS ? j.intl.string(j.t.m7OrlZ) : N ? (0, r.jsxs)(r.Fragment, {
       children: [j.intl.formatToPlainString(j.t.LDZtFB, {
-        name: f
+        name: b
       }), (0, r.jsx)("span", {
         className: U.keybind,
         children: (0, r.jsx)(d.M2$, {
@@ -545,39 +488,21 @@ function W(e) {
           className: U.shortcut
         })
       })]
-    }) : j.intl.string(j.t["5h0QOD"]), [h, f]);
+    }) : j.intl.string(j.t["5h0QOD"]), [n.type, N, b]);
   return (0, r.jsx)(V, {
-    className: n,
-    searchContext: t,
-    isSearching: s,
-    editorState: a,
-    hasResults: c,
-    keyboardModeEnabled: o,
+    className: t,
+    searchContext: n,
+    isSearching: c,
+    editorState: l,
+    hasResults: _,
+    keyboardModeEnabled: a,
     onSearch: E,
-    isSearchActive: l,
-    placeholder: b
+    isSearchActive: f,
+    placeholder: D
   })
 }
 
-function K(e) {
-  let {
-    className: t,
-    searchContext: n
-  } = e, o = (0, S.Tm)(n), a = (0, u.e7)([p.Z], () => p.Z.keyboardModeEnabled), s = (0, u.e7)([T.Z], () => null != o ? T.Z.getEditorState(o) : null), l = i.useMemo(() => null != s ? s : y.nR(O.Jl(P.ZP)), [s]);
-  return n.type === k.aib.DMS ? (0, r.jsx)(Y, {
-    searchContext: n,
-    className: t,
-    keyboardModeEnabled: a,
-    editorState: l
-  }) : (0, r.jsx)(W, {
-    searchContext: n,
-    className: t,
-    keyboardModeEnabled: a,
-    editorState: l
-  })
-}
-
-function z(e) {
+function Y(e) {
   let {
     className: t,
     guildId: n,
@@ -586,7 +511,7 @@ function z(e) {
     guildId: n,
     channelId: i
   });
-  return null == o ? null : (0, r.jsx)(K, {
+  return null == o ? null : (0, r.jsx)(H, {
     className: t,
     searchContext: o
   })
