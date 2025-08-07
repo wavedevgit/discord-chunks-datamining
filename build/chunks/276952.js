@@ -45,7 +45,7 @@ function _(e) {
       enter: h,
       update: h
     }, n || document.hasFocus() ? "animate-always" : "animate-never"),
-    g = l.Lk.useExperiment({
+    g = (0, l.pN)({
       location: "AnimatedHalfPill"
     }),
     E = (0, c.Z)(e => e.isOpen) && g.notificationCenterVariant === l.jP.POPOUT && g.entrypoint === l.u3.TITLE_BAR_LEFT;

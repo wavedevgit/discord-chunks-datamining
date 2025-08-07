@@ -1,12 +1,12 @@
 /** Chunk was on 45620 **/
 "use strict";
-r.d(t, {
+n.d(t, {
   T: () => i,
   v: () => o
 });
-var n = r(255367);
-r(73800);
-var l = r(481060);
+var r = n(255367);
+n(73800);
+var l = n(481060);
 let a = "collectibles shop product details modal",
   i = e => {
     let {
@@ -21,27 +21,27 @@ let a = "collectibles shop product details modal",
     (0, l.ZDy)(async () => {
       let {
         default: e
-      } = await Promise.all([r.e("78223"), r.e("16476")]).then(r.bind(r, 702370));
-      return r => {
+      } = await Promise.all([n.e("78223"), n.e("16476")]).then(n.bind(n, 702370));
+      return n => {
         var l, a;
-        return (0, n.jsx)(e, (l = function(e) {
+        return (0, r.jsx)(e, (l = function(e) {
           for (var t = 1; t < arguments.length; t++) {
-            var r = null != arguments[t] ? arguments[t] : {},
-              n = Object.keys(r);
-            "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
-              return Object.getOwnPropertyDescriptor(r, e).enumerable
-            }))), n.forEach(function(t) {
-              var n;
-              n = r[t], t in e ? Object.defineProperty(e, t, {
-                value: n,
+            var n = null != arguments[t] ? arguments[t] : {},
+              r = Object.keys(n);
+            "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+              return Object.getOwnPropertyDescriptor(n, e).enumerable
+            }))), r.forEach(function(t) {
+              var r;
+              r = n[t], t in e ? Object.defineProperty(e, t, {
+                value: r,
                 enumerable: !0,
                 configurable: !0,
                 writable: !0
-              }) : e[t] = n
+              }) : e[t] = r
             })
           }
           return e
-        }({}, r), a = a = {
+        }({}, n), a = a = {
           product: t,
           category: i,
           shouldCheckoutWithOrbs: o,
@@ -50,12 +50,12 @@ let a = "collectibles shop product details modal",
           returnRef: u,
           tab: d
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
-          var r = Object.keys(e);
+          var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
-            var n = Object.getOwnPropertySymbols(e);
-            r.push.apply(r, n)
+            var r = Object.getOwnPropertySymbols(e);
+            n.push.apply(n, r)
           }
-          return r
+          return n
         })(Object(a)).forEach(function(e) {
           Object.defineProperty(l, e, Object.getOwnPropertyDescriptor(a, e))
         }), l))

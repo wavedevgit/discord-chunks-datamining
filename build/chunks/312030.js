@@ -1,19 +1,19 @@
 /** Chunk was on 45620 **/
 "use strict";
-r.d(t, {
+n.d(t, {
   h: () => i
-}), r(388685);
-var n = r(73800),
-  l = r(180650),
-  a = r(215023);
+}), n(388685);
+var r = n(73800),
+  l = n(180650),
+  a = n(215023);
 let i = e => {
   let {
     scrollerRef: t,
-    sortedCategories: r
-  } = e, [i, o] = n.useState(1), s = n.useCallback(e => {
-    let t = r.findIndex(t => t.skuId === e);
+    sortedCategories: n
+  } = e, [i, o] = r.useState(1), s = r.useCallback(e => {
+    let t = n.findIndex(t => t.skuId === e);
     return -1 === t ? 1 : Math.floor(t / a.kN) + 1
-  }, [r]), c = n.useCallback(e => {
+  }, [n]), c = r.useCallback(e => {
     if (null != e && e !== l.T.ORB) {
       let t = s(e);
       t !== i && o(t)
@@ -21,9 +21,9 @@ let i = e => {
   }, [s, i, o]);
   return {
     currentPage: i,
-    handlePageChange: n.useCallback(e => {
-      var r;
-      o(e), null == (r = t.current) || r.scrollTo({
+    handlePageChange: r.useCallback(e => {
+      var n;
+      o(e), null == (n = t.current) || n.scrollTo({
         to: 0
       })
     }, [t, o]),

@@ -142,7 +142,7 @@ function U(e) {
     u.Z.dispatch({
       type: "NOTIFICATIONS_INBOX_OPEN"
     });
-    let t = v.Lk.getCurrentConfig({
+    let t = (0, v.Ag)({
         location: "NotificationsInboxSidebar"
       }).notificationCenterVariant,
       n = null == (e = x.Z.getDevOverrides().navOnClick) || e;
@@ -194,7 +194,7 @@ function U(e) {
   });
   let {
     filterStyle: Q
-  } = v.Lk.useExperiment({
+  } = (0, v.pN)({
     location: "NotificationsInboxSidebar"
   }), {
     entrypoints: J

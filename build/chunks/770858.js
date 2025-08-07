@@ -38,7 +38,7 @@ function S(e) {
     ref: O
   } = e, v = (0, l.Ie)("notifications-inbox"), [S, x] = i.useState(!1), I = (0, m.D)(), P = h || I, {
     notificationCenterVariant: N
-  } = g.Lk.useExperiment({
+  } = (0, g.pN)({
     location: "NotificationsInboxButtonInner"
   }), {
     badge: w,
@@ -47,7 +47,7 @@ function S(e) {
   } = function(e) {
     let {
       notificationCenterVariant: t
-    } = g.Lk.useExperiment({
+    } = (0, g.pN)({
       location: "NotificationsInboxButtonInner"
     }), {
       unreadChannelIds: n
@@ -141,7 +141,7 @@ function x() {
   let e = i.useRef(null),
     {
       notificationCenterVariant: t
-    } = g.Lk.useExperiment({
+    } = (0, g.pN)({
       location: "NotificationsInboxButton"
     }),
     n = E(),

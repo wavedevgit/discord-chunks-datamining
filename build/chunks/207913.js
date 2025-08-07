@@ -384,7 +384,7 @@ let K = (0, i.memo)(function(e) {
     return e.isMenuOpenForMessage(null != (t = null == p ? void 0 : p.id) ? t : null)
   }), {
     notificationCenterVariant: O
-  } = Z.Lk.useExperiment({
+  } = (0, Z.pN)({
     location: "NotificationsInboxMessageUnit"
   }), _ = i.useMemo(() => "".concat(null == p ? void 0 : p.author.username, ": ").concat(null == m ? void 0 : m.name), [null == p ? void 0 : p.author.username, null == m ? void 0 : m.name]), y = null != (t = null == s ? void 0 : s.map(e => e.message).filter(e => null != e)) ? t : [];
   return null == p || null == m ? null : (0, r.jsx)(u.kL8, {

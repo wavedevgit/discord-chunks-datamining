@@ -184,7 +184,7 @@ function ea(e) {
     pathname: o
   } = (0, c.TH)(), s = o.startsWith(ee.Z5c.GUILD_MEMBER_VERIFICATION_FOR_HUB("")), a = (0, h.Wu)([D.Z, R.ZP], () => D.Z.getGuildIds().filter(e => R.ZP.isCurrentUserGuest(e))), u = i.concat(a), {
     entrypoint: d
-  } = I.Lk.useExperiment({
+  } = (0, I.pN)({
     location: "GuildsBar"
   });
   return (0, r.jsxs)(r.Fragment, {
@@ -352,7 +352,7 @@ function eu(e) {
     }),
     {
       entrypoint: eO
-    } = I.Lk.useExperiment({
+    } = (0, I.pN)({
       location: "GuildsBar"
     }),
     e_ = eO === I.u3.SERVER_RAIL_BOTTOM;

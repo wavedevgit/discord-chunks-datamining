@@ -1,56 +1,56 @@
 /** Chunk was on 45620 **/
 "use strict";
-r.d(t, {
-  Z: () => g
+n.d(t, {
+  Z: () => f
 });
-var n = r(255367);
-r(73800);
-var l = r(120356),
-  a = r.n(l),
-  i = r(442837),
-  o = r(481060),
-  s = r(594174),
-  c = r(381585),
-  u = r(597688),
-  d = r(709999),
-  p = r(388032),
-  f = r(806734);
-let g = e => {
+var r = n(255367);
+n(73800);
+var l = n(120356),
+  a = n.n(l),
+  i = n(442837),
+  o = n(481060),
+  s = n(594174),
+  c = n(381585),
+  u = n(597688),
+  d = n(709999),
+  p = n(388032),
+  g = n(806734);
+let f = e => {
   let {
     shelf: t,
-    handleTransition: r,
+    handleTransition: n,
     tab: l
-  } = e, g = (0, i.e7)([s.default], () => s.default.getCurrentUser());
-  return null == g ? null : (0, n.jsxs)("div", {
-    className: a()(f.shelfBlockContainer, f.centeredSection),
-    children: [(0, n.jsxs)("div", {
-      className: f.blockHeader,
-      children: [(0, n.jsx)(o.X6q, {
+  } = e, f = (0, i.e7)([s.default], () => s.default.getCurrentUser());
+  return null == f ? null : (0, r.jsxs)("div", {
+    className: a()(g.shelfBlockContainer, g.centeredSection),
+    children: [(0, r.jsxs)("div", {
+      className: g.blockHeader,
+      children: [(0, r.jsx)(o.X6q, {
         variant: "heading-lg/semibold",
         children: t.name
-      }), (0, n.jsx)(o.zxk, {
+      }), (0, r.jsx)(o.zxk, {
         variant: "secondary",
         text: p.intl.formatToPlainString(p.t.bc9RBA, {
           category_name: t.name
         }),
-        onClick: () => r("shelf block see all", t.categorySkuId)
+        onClick: () => n("shelf block see all", t.categorySkuId)
       })]
-    }), (0, n.jsx)("div", {
-      className: f.feed,
-      children: (0, n.jsx)(n.Fragment, {
-        children: t.rankedSkuIds.map((e, r) => {
+    }), (0, r.jsx)("div", {
+      className: g.feed,
+      children: (0, r.jsx)(r.Fragment, {
+        children: t.rankedSkuIds.map((e, n) => {
           let a = u.Z.getCategoryForProduct(e),
             i = u.Z.getProduct(e);
-          return null == a || null == i ? null : (0, n.jsx)(c.k0, {
+          return null == a || null == i ? null : (0, r.jsx)(c.k0, {
             newValue: {
-              tilePosition: r,
+              tilePosition: n,
               pageSection: t.name,
               categoryPosition: 2
             },
-            children: (0, n.jsx)(d.Z, {
+            children: (0, r.jsx)(d.Z, {
               product: i,
               category: a,
-              user: g,
+              user: f,
               tab: l
             }, e)
           }, e)

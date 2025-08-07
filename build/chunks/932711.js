@@ -13,7 +13,7 @@ function a(e) {
     children: t
   } = e, {
     notificationCenterVariant: n
-  } = l.Lk.useExperiment({
+  } = (0, l.pN)({
     location: "NotificationsInboxTooltip"
   }), a = n === l.jP.LEGACY ? o.intl.string(o.t.GSmTKC) : o.intl.string(o.t.HcoRu7);
   return (0, r.jsx)(i.ua7, {

@@ -1,30 +1,30 @@
 /** Chunk was on 45620 **/
 "use strict";
-r.d(t, {
+n.d(t, {
   W: () => u
-}), r(388685);
-var n = r(73800),
-  l = r(979554),
-  a = r(809206),
-  i = r(350327),
-  o = r(884697),
-  s = r(328456),
-  c = r(388032);
+}), n(388685);
+var r = n(73800),
+  l = n(979554),
+  a = n(809206),
+  i = n(350327),
+  o = n(884697),
+  s = n(328456),
+  c = n(388032);
 let u = e => {
   let {
     product: t,
     onSuccess: u,
     onError: d
-  } = e, [p, f] = n.useState(!1), {
-    firstAvatarDecoration: g,
+  } = e, [p, g] = r.useState(!1), {
+    firstAvatarDecoration: f,
     firstProfileEffect: b
   } = (0, s.Rj)(t), h = (0, o.x6)(t) ? c.intl.string(c.t.tf1ZZ2) : t.type === l.Z.AVATAR_DECORATION ? c.intl.string(c.t.zOA4a2) : t.type === l.Z.NAMEPLATE ? c.intl.string(c.t.gOzMv7) : c.intl.string(c.t.SWm2am);
   return {
-    handleUseNow: n.useCallback(async () => {
-      f(!0);
+    handleUseNow: r.useCallback(async () => {
+      g(!0);
       try {
-        if (null != g && await (0, a.Mn)({
-            avatarDecoration: g
+        if (null != f && await (0, a.Mn)({
+            avatarDecoration: f
           }), null != b) {
           let e = {
             profile_effect_id: b.id
@@ -40,11 +40,11 @@ let u = e => {
           let {
             ToastPosition: e,
             ToastType: t,
-            createToast: n,
+            createToast: r,
             popToast: l,
             showToast: a
-          } = await Promise.resolve().then(r.bind(r, 481060));
-          l(), a(n(h, t.MESSAGE, {
+          } = await Promise.resolve().then(n.bind(n, 481060));
+          l(), a(r(h, t.MESSAGE, {
             duration: 6e3,
             position: e.TOP
           }))
@@ -53,9 +53,9 @@ let u = e => {
       } catch (e) {
         null == d || d(e)
       } finally {
-        f(!1)
+        g(!1)
       }
-    }, [g, b, t, u, h, d]),
+    }, [f, b, t, u, h, d]),
     isApplying: p
   }
 }

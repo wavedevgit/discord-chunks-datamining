@@ -75,7 +75,7 @@ function O(e) {
     }), [n, e.width])
   }(), {
     entrypoint: p
-  } = u.Lk.useExperiment({
+  } = (0, u.pN)({
     location: "useInboxBadgeInfo"
   });
   return i.useMemo(() => {

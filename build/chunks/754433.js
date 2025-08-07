@@ -1,33 +1,33 @@
 /** Chunk was on 45620 **/
 "use strict";
-r.d(t, {
+n.d(t, {
   y: () => u
 });
-var n = r(255367);
-r(73800);
-var l = r(120356),
-  a = r.n(l),
-  i = r(481060),
-  o = r(937615),
-  s = r(388032),
-  c = r(843819);
+var r = n(255367);
+n(73800);
+var l = n(120356),
+  a = n.n(l),
+  i = n(481060),
+  o = n(937615),
+  s = n(388032),
+  c = n(843819);
 let u = e => {
   let {
     price: {
       amount: t,
-      currency: r
+      currency: n
     },
     className: l,
     variant: u = "heading-md/semibold"
-  } = e, d = (0, o.qr)(t, r);
-  return (0, n.jsxs)(i.Text, {
+  } = e, d = (0, o.qr)(t, n);
+  return (0, r.jsxs)(i.Text, {
     variant: u,
     className: a()(c.striked, l),
-    children: [(0, n.jsx)(i.nn4, {
+    children: [(0, r.jsx)(i.nn4, {
       children: s.intl.format(s.t["2CEGlp"], {
         price: d
       })
-    }), (0, n.jsx)("span", {
+    }), (0, r.jsx)("span", {
       "aria-hidden": !0,
       children: d
     })]

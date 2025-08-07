@@ -1,9 +1,9 @@
 /** Chunk was on 45620 **/
 "use strict";
-r.d(t, {
+n.d(t, {
   R: () => l
 });
-let n = (0, r(818083).B)({
+let r = (0, n(818083).B)({
     kind: "user",
     id: "2025-03_shop_feed_item_size_experiment",
     label: "Shop Feed Item Size Experiment",
@@ -18,6 +18,6 @@ let n = (0, r(818083).B)({
       }
     }]
   }),
-  l = e => n.useExperiment({
+  l = e => r.useExperiment({
     location: e
   }).numFeedItems

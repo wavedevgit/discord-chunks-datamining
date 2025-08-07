@@ -148,7 +148,7 @@ let W = i.memo(function() {
     {
       notificationCenterVariant: n,
       entrypoint: l
-    } = y.Lk.useExperiment({
+    } = (0, y.pN)({
       location: "AppTitleBar"
     }),
     {

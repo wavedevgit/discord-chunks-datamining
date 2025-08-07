@@ -15,7 +15,7 @@ var i = n(392711),
 let m = () => {
     let {
       notificationCenterVariant: e
-    } = a.Lk.getCurrentConfig({
+    } = (0, a.Ag)({
       location: "TOGGLE_INBOX"
     });
     if ("sidebar" !== e) return;

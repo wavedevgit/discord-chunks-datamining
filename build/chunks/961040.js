@@ -40,7 +40,7 @@ function b(e) {
   }), i.useEffect(() => (u.S.subscribe(f.CkL.TOGGLE_INBOX, v), () => void u.S.unsubscribe(f.CkL.TOGGLE_INBOX, v)), [v]);
   let {
     entrypoint: j
-  } = d.Lk.useExperiment({
+  } = (0, d.pN)({
     location: "NotificationsInboxPopout"
   });
   return (0, r.jsx)(s.yRy, {

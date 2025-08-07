@@ -247,8 +247,9 @@ function ei(e) {
   let {
     preload: n
   } = e;
-  return null != (null == (t = v.Lk.getCurrentConfig({
-    location: "NotificationsInboxStore.canLoadMore"
+  return null != (null == (t = (0, v.Ag)({
+    location: "NotificationsInboxStore.canLoadMore",
+    autoTrackExposure: !1
   })) ? void 0 : t.notificationCenterVariant) && null != P && !L && !x && (!n || !k) && U
 }
 
@@ -261,7 +262,7 @@ function ea(e) {
     messageId: t,
     channelId: n,
     isUnread: r
-  } = e, i = v.Lk.getCurrentConfig({
+  } = e, i = (0, v.Ag)({
     location: "handleInboxItemClick"
   }).notificationCenterVariant;
   G = r && i === v.jP.SIDEBAR ? {

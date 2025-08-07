@@ -1,6 +1,6 @@
 /**
   Module ID: 45620
-  Original File Name: 8368c2c43df054dd
+  Original File Name: 0d3d3533539b009a
 **/
 .shopWrapper__6db1d {
     background: var(--background-base-low);
@@ -1217,6 +1217,23 @@
     overflow-y: auto
 }
 
+.container__4d61a {
+    display: flex;
+    flex-direction: row;
+    gap: 2px
+}
+
+.number__4d61a {
+    background-color: rgba(151,66,242,.5);
+    border-radius: 4px;
+    padding: 4px 6px
+}
+
+.delineator__4d61a {
+    color: rgba(151,66,242,.5);
+    padding: 2px
+}
+
 .countDownWrapper__46b37 {
     align-items: center;
     border-radius: 48px;
@@ -1256,26 +1273,6 @@
 
 .countdownBody__46b37 {
     color: #000
-}
-
-.timerNumContainer__46b37 {
-    display: flex;
-    flex-direction: row;
-    gap: 2px
-}
-
-.timerNum__46b37 {
-    background-color: rgba(151,66,242,.5);
-    border-radius: 4px;
-    color: #fff;
-    padding: 4px 6px;
-    text-align: center
-}
-
-.timerDelineator__46b37 {
-    color: rgba(151,66,242,.5);
-    padding: 2px;
-    text-align: center
 }
 
 .loadingContainer__08415 {
@@ -2115,4 +2112,4 @@ body.shop-takeover .dropdown-item,body.shop-takeover .dropdown-item *,body.shop-
     cursor: var(--custom-cursor-pointer)
 }
 
-/*# sourceMappingURL=8368c2c43df054dd.css.map*/
+/*# sourceMappingURL=0d3d3533539b009a.css.map*/

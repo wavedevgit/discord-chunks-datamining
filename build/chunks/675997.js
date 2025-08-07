@@ -1,9 +1,9 @@
 /** Chunk was on 45620 **/
 "use strict";
-r.d(t, {
-  Z: () => n
+n.d(t, {
+  Z: () => r
 });
-let n = (0, r(427164).le)({
+let r = (0, n(427164).le)({
   name: "2025-08-collectibles-shop-takeover",
   kind: "user",
   defaultConfig: {
