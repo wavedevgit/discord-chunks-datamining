@@ -719,12 +719,12 @@ function e1(e) {
   let {
     voiceStates: t
   } = e;
-  return t.some(e => {
+  return ((null == eH ? void 0 : eH.type) === eS.kVF.INVITED_TO_SPEAK || t.some(e => {
     let {
       userId: t
     } = e;
     return t !== z.default.getId()
-  }) && e0()
+  })) && e0()
 }
 
 function e2(e) {
