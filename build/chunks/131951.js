@@ -438,11 +438,14 @@ function tZ() {
         lqStreamBitrate: n
       } = Z.Z.getConfig();
       e.configureGoLiveSimulcast(t, n);
-      let r = (0, F.k)({
+      let {
+        enabled: r,
+        adjustResolution: i
+      } = (0, F.k)({
         location: "setupMediaEngine",
         autoTrackExposure: !0
-      }).enabled;
-      e.setGoLiveUsePixelCounts(r)
+      });
+      e.setGoLiveUsePixelCounts(r, i)
     }(0, ea.isWindows)() ? (null == tA ? void 0 : tA.startsWith("NVIDIA")) || (null == tA ? void 0 : tA.startsWith("AMD")) ? e.setExperimentFlag(eT.V8.SIGNAL_AV1, !0): e.setExperimentFlag(eT.V8.SIGNAL_AV1_DECODE, !0): ((0, ea.isMac)() || (0, ea.isLinux)()) && e.setExperimentFlag(eT.V8.SIGNAL_AV1_DECODE, !0), (0, ea.isWindows)() && e.setExperimentFlag(eT.V8.SIGNAL_AV1_HARDWARE_DECODE, !0), eK.setHasFullbandPerformance((0, R.Z)());
     let f = (0, U.D)("setupMediaEngine").enabled;
     if (e.setRemoteAudioHistory(1e3 * !!f), (0, N.Z)(r)) {

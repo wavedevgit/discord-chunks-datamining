@@ -16,12 +16,12 @@ var s = a(755721),
   b = a(543936),
   p = a(388032),
   f = a(418822),
-  h = a(6210),
-  m = a(313460),
+  m = a(6210),
+  h = a(313460),
   _ = a(686936),
-  x = a(326238);
+  g = a(326238);
 
-function g(e) {
+function x(e) {
   for (var t = 1; t < arguments.length; t++) {
     var a = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(a);
@@ -42,7 +42,7 @@ function g(e) {
 let j = a(450390),
   C = e => {
     var t, a;
-    return (0, r.jsx)(s.zx, (t = g({}, e), a = a = {
+    return (0, r.jsx)(s.zx, (t = x({}, e), a = a = {
       "aria-label": p.intl.string(p.t.cpT0Cg),
       look: s.zx.Looks.BLANK,
       size: s.zx.Sizes.NONE,
@@ -124,20 +124,21 @@ let j = a(450390),
     }, {
       header: p.intl.string(p.t["1IEs7+"]),
       subHeader: p.intl.string(p.t.mej05u),
-      staticAsset: x.Z
+      staticAsset: g.Z
     }];
     return (0, r.jsxs)(n.Y0X, {
       className: f.root,
       transitionState: s,
       "aria-labelledby": c,
+      "data-migration-pending": !0,
       hideShadow: !0,
       parentComponent: "AnnouncementModalV2",
       children: [(0, r.jsx)(C, {
         className: f.closeButton,
         onClick: t
       }), (0, r.jsx)(y, {
-        staticAssetURL: h.Z,
-        animatedAssetURL: m.Z,
+        staticAssetURL: m.Z,
+        animatedAssetURL: h.Z,
         className: f.heroAsset
       }), (0, r.jsxs)(n.hzk, {
         className: f.content,
@@ -156,7 +157,7 @@ let j = a(450390),
           children: p.intl.string(p.t.icWQKi)
         }), i.length > 0 && (0, r.jsx)("div", {
           className: f.featureCardGroup,
-          children: i.map((e, t) => (0, r.jsx)(N, g({}, e), "".concat(e.header, "_").concat(t)))
+          children: i.map((e, t) => (0, r.jsx)(N, x({}, e), "".concat(e.header, "_").concat(t)))
         }), (0, r.jsx)(n.gtL, {
           onClick: a,
           color: f.buttonColor,
@@ -168,5 +169,5 @@ let j = a(450390),
   },
   v = e => (0, r.jsx)(b.x, {
     errorSource: "ORBS_ANNOUNCEMENT_MODAL",
-    children: (0, r.jsx)(O, g({}, e))
+    children: (0, r.jsx)(O, x({}, e))
   })

@@ -8,5 +8,6 @@ e.exports = {
   content: "content__20a53",
   name: "name__20a53",
   nameAndDecorators: "nameAndDecorators__20a53",
-  subText: "subText__20a53"
+  subText: "subText__20a53",
+  withDisplayNameStyles: "withDisplayNameStyles__20a53"
 }

@@ -10,8 +10,8 @@ var r = n(255367),
   o = n(527379),
   u = n(376923),
   c = n(16829),
-  d = n(430824),
-  E = n(944486),
+  E = n(430824),
+  d = n(944486),
   _ = n(189432),
   A = n(776767),
   T = n(981631),
@@ -21,7 +21,7 @@ var r = n(255367),
 function g(e) {
   let {
     member: t
-  } = e, n = (0, s.e7)([d.Z], () => d.Z.getGuild(t.guildId), [t.guildId]), g = (0, u.mh)(t.userId, t.guildId), f = (0, u.mV)(t.userId, t.guildId), N = (0, u.LD)(t.userId), h = (0, u.wi)(t.userId, t.guildId);
+  } = e, n = (0, s.e7)([E.Z], () => E.Z.getGuild(t.guildId), [t.guildId]), g = (0, u.mh)(t.userId, t.guildId), f = (0, u.mV)(t.userId, t.guildId), N = (0, u.LD)(t.userId), h = (0, u.wi)(t.userId, t.guildId);
   return (l.useEffect(() => {
     (0, o.zO)(t.guildId)
   }, [t.guildId]), null == n) ? null : (0, r.jsx)(i.xJW, {
@@ -125,7 +125,7 @@ function g(e) {
             guildId: t.guildId,
             showJoinMethodContextAsFooter: !0,
             onClickInviter: e => {
-              let n = E.Z.getChannelId();
+              let n = d.Z.getChannelId();
               (0, _.r)(t.guildId, e.id, null != n ? n : T.lds)
             }
           })

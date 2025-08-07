@@ -68,7 +68,8 @@ function m(e, t) {
               staticUrl: f.Z,
               animatedUrl: p.Z
             },
-            skuIds: a.z[e]
+            skuIds: a.z[e],
+            viewCta: d.intl.string(u.default["/egwJC"])
           }
         }
       },

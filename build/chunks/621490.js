@@ -206,6 +206,7 @@ let j = e => {
     } = e;
     return (0, n.jsxs)(i.mzw, {
       align: c.Z.Align.CENTER,
+      "data-migration-pending": !0,
       children: [(0, n.jsx)(P, {
         orbBalance: r,
         orbPriceAmount: t,

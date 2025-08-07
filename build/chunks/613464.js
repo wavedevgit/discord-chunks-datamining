@@ -10,8 +10,8 @@ var r = n(255367),
   o = n(481060),
   u = n(749210),
   c = n(110924),
-  d = n(410030),
-  E = n(616780),
+  E = n(410030),
+  d = n(616780),
   _ = n(100527),
   A = n(906732),
   T = n(527379),
@@ -35,7 +35,7 @@ function S(e) {
     style: v
   } = e, D = (0, h.m)(n), b = (0, a.e7)([N.default], () => N.default.getUser(t), [t]), L = (0, a.e7)([f.ZP], () => f.ZP.getMember(n, t), [n, t]), [x, U] = l.useState(null == b || null == L), M = (0, c.Z)(L), P = l.useRef(null), {
     analyticsLocations: j
-  } = (0, A.ZP)(_.Z.GUILD_MEMBER_MOD_VIEW), y = (0, m.ZP)(t, n), w = (0, d.ZP)();
+  } = (0, A.ZP)(_.Z.GUILD_MEMBER_MOD_VIEW), y = (0, m.ZP)(t, n), w = (0, E.ZP)();
   return (l.useEffect(() => {
     D || s()
   }, [D, s]), l.useEffect(() => {
@@ -47,7 +47,7 @@ function S(e) {
     return !x && e && (P.current = window.setTimeout(s, 500)), () => {
       null != P.current && window.clearTimeout(P.current)
     }
-  }, [x, L, s]), (0, E.$)({
+  }, [x, L, s]), (0, d.$)({
     [n]: [t]
   }), l.useEffect(() => {
     !async function() {

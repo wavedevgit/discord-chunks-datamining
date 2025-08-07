@@ -26,7 +26,9 @@ let s = e => {
       })
     }
     return e
-  }({}, e), r = r = {
+  }({
+    "data-migration-pending": !0
+  }, e), r = r = {
     "aria-label": i.intl.string(i.t.cpT0Cg),
     look: a.zx.Looks.BLANK,
     size: a.zx.Sizes.NONE,

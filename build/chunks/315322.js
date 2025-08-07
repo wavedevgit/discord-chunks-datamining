@@ -34,7 +34,7 @@ function d(e) {
 
 function f(e) {
   var t, n, r;
-  return null != (r = null == e || null == (n = e.content) || null == (t = n.trim()) ? void 0 : t.length) ? r : 0
+  return null != (r = null == (n = (0, s.UP)(e)) || null == (t = n.trim()) ? void 0 : t.length) ? r : 0
 }
 
 function _(e) {

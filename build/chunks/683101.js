@@ -10,8 +10,8 @@ var r = n(255367),
   o = n(481060),
   u = n(239091),
   c = n(294218),
-  d = n(592125),
-  E = n(388032),
+  E = n(592125),
+  d = n(388032),
   _ = n(548185);
 
 function A(e, t, n) {
@@ -58,7 +58,7 @@ class I extends l.PureComponent {
       totalResults: s
     } = this.props, a = i().find(e, e => e.isSearchHit);
     if (null == a) return null;
-    let u = d.Z.getChannel(a.channel_id);
+    let u = E.Z.getChannel(a.channel_id);
     if (null == u) return null;
     let A = "search-result-".concat(a.id);
     return (0, r.jsx)(o.tEY, {
@@ -99,7 +99,7 @@ class I extends l.PureComponent {
           children: (0, r.jsx)(o.P3F, {
             className: _.button,
             onClick: this.jumpTo,
-            children: E.intl.string(E.t.k5WiPT)
+            children: d.intl.string(d.t.k5WiPT)
           })
         })]
       }))
@@ -107,7 +107,7 @@ class I extends l.PureComponent {
   }
   constructor(...e) {
     super(...e), A(this, "containerRef", l.createRef()), A(this, "hitRef", l.createRef()), A(this, "handleContextMenu", (e, t) => {
-      let l = d.Z.getChannel(t.channel_id);
+      let l = E.Z.getChannel(t.channel_id);
       null != l && (e.stopPropagation(), (0, u.jW)(e, async () => {
         let {
           default: e
