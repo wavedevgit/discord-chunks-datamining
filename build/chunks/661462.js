@@ -62,8 +62,8 @@ function m(e) {
   } = e, {
     trackUserProfileAction: y
   } = (0, i.KZ)(), [{
-    section: x,
-    subsection: O,
+    section: O,
+    subsection: x,
     text: v
   }, _] = l.useState((n = function(e) {
     for (var t = 1; t < arguments.length; t++) {
@@ -109,7 +109,7 @@ function m(e) {
       children: (0, r.jsx)(o.njP, {
         type: "top",
         look: "custom",
-        selectedItem: x,
+        selectedItem: O,
         onItemSelect: e => {
           y({
             action: "PRESS_SECTION",
@@ -127,7 +127,7 @@ function m(e) {
         }, e.section))
       })
     }), (0, r.jsx)(o.njP.Panel, {
-      id: x,
+      id: O,
       "aria-label": v,
       className: f.tabBarPanel,
       children: (0, r.jsx)(p, {
@@ -136,8 +136,8 @@ function m(e) {
         displayProfile: d,
         guildId: u,
         channelId: m,
-        section: x,
-        subsection: O,
+        section: O,
+        subsection: x,
         onClose: h
       })
     })]

@@ -23,10 +23,10 @@ var n = a(255367),
   _ = a(168524),
   y = a(77498),
   C = a(823379),
-  N = a(550532),
-  O = a(71585),
-  T = a(146282),
-  E = a(780106),
+  O = a(550532),
+  N = a(71585),
+  E = a(146282),
+  T = a(780106),
   S = a(650613),
   P = a(789086),
   w = a(206583),
@@ -75,7 +75,7 @@ function Z(e) {
   var t, a;
   let {
     type: r
-  } = e, l = (0, u.e7)([T.Z], () => T.Z.getFilters()), i = null != (a = null == l || null == (t = l.types) ? void 0 : t.has(r)) && a;
+  } = e, l = (0, u.e7)([E.Z], () => E.Z.getFilters()), i = null != (a = null == l || null == (t = l.types) ? void 0 : t.has(r)) && a;
   return (0, n.jsx)(p.XZJ, {
     value: i,
     onClick: function() {
@@ -94,9 +94,9 @@ function Z(e) {
 
 function A() {
   var e, t;
-  let a = (0, u.e7)([T.Z], () => T.Z.getFeed(w.YN.GLOBAL_FEED)),
-    l = (0, u.e7)([T.Z], () => T.Z.getDebugImpressionCappingDisabled()),
-    i = (0, u.e7)([O.Z], () => O.Z.getDebugFastImpressionCappingEnabled()),
+  let a = (0, u.e7)([E.Z], () => E.Z.getFeed(w.YN.GLOBAL_FEED)),
+    l = (0, u.e7)([E.Z], () => E.Z.getDebugImpressionCappingDisabled()),
+    i = (0, u.e7)([N.Z], () => N.Z.getDebugFastImpressionCappingEnabled()),
     s = function(e) {
       let t = o().groupBy(e, e => e.content_type);
       return Object.keys(t).map(e => {
@@ -108,17 +108,17 @@ function A() {
         }
       })
     }(null == a || null == (e = a.entries) ? void 0 : e.map(e => e.content)),
-    c = (0, u.e7)([T.Z], () => {
+    c = (0, u.e7)([E.Z], () => {
       var e;
-      return (null == (e = T.Z.getFeedState(w.YN.GLOBAL_FEED)) ? void 0 : e.loading) === !0
+      return (null == (e = E.Z.getFeedState(w.YN.GLOBAL_FEED)) ? void 0 : e.loading) === !0
     }),
     [Z, A] = r.useState(""),
-    D = (0, u.e7)([y.Z, b.Z], () => {
+    L = (0, u.e7)([y.Z, b.Z], () => {
       var e, t, a;
       return parseInt(Z) > 0 ? Z : null != (a = null == (e = y.Z.getGameByName(Z)) ? void 0 : e.id) ? a : null == (t = b.Z.getApplicationByName(Z)) ? void 0 : t.id
     }, [Z]),
     B = (0, _.Z)({
-      applicationId: D,
+      applicationId: L,
       location: "DevToolsContentInventory",
       source: g.m1.DevTools
     }),
@@ -130,7 +130,7 @@ function A() {
       return t
     }),
     F = (0, f.Z)(M).filter(C.lm),
-    U = (0, u.e7)([N.Z], () => N.Z.getFakeGameToShow());
+    U = (0, u.e7)([O.Z], () => O.Z.getFakeGameToShow());
   return (0, n.jsx)("div", {
     className: R.panel,
     children: (0, n.jsxs)(p.zJl, {
@@ -211,13 +211,13 @@ function A() {
           onKeyDown: e => {
             "Enter" === e.key && (Z === e.currentTarget.value ? null == B || B(e) : A(e.currentTarget.value))
           },
-          error: Z.length > 0 && null == B ? "No game profile for ".concat(null != D ? D : Z + " - try by id", ".") : void 0,
+          error: Z.length > 0 && null == B ? "No game profile for ".concat(null != L ? L : Z + " - try by id", ".") : void 0,
           style: null != B ? {
             border: "1px solid green"
           } : {}
         }), (0, n.jsx)("ul", {
           children: F.map(e => (0, n.jsx)("li", {
-            children: (0, n.jsx)(L, {
+            children: (0, n.jsx)(D, {
               application: e
             })
           }, "follow-game-".concat(e.id)))
@@ -229,7 +229,7 @@ function A() {
           variant: "text-md/normal",
           children: "Force show game:"
         }), (0, n.jsx)(p.PhF, {
-          options: E.h.map(e => ({
+          options: T.h.map(e => ({
             label: e,
             value: e
           })),
@@ -247,7 +247,7 @@ function A() {
     })
   })
 }
-let L = e => {
+let D = e => {
   let {
     application: t
   } = e, a = (0, _.Z)({

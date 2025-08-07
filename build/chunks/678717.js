@@ -24,10 +24,10 @@ var n = a(255367),
   y = a(176038);
 a(381996);
 var C = a(392750),
-  N = a(926976),
-  O = a(789654),
-  T = a(719672),
-  E = a(691867),
+  O = a(926976),
+  N = a(789654),
+  E = a(719672),
+  T = a(691867),
   S = a(916790),
   P = a(645973),
   w = a(903502),
@@ -36,8 +36,8 @@ var C = a(392750),
   k = a(272193),
   Z = a(685560),
   A = a(735959),
-  L = a(572444),
-  D = a(636500),
+  D = a(572444),
+  L = a(636500),
   B = a(246992),
   M = a(484662),
   F = a(496025),
@@ -96,7 +96,7 @@ function em(e) {
       id: "analytics",
       name: "Analytics",
       group: el.v0.EXPERIMENTS,
-      render: () => (0, n.jsx)(N.Z, {})
+      render: () => (0, n.jsx)(O.Z, {})
     }, {
       id: "triggers",
       name: "Triggers",
@@ -162,12 +162,12 @@ function em(e) {
       id: "colors",
       name: "Colors",
       group: el.v0.UI,
-      render: () => (0, n.jsx)(O.Z, {})
+      render: () => (0, n.jsx)(N.Z, {})
     }), e.push({
       id: "design_toggles",
       name: "Design Toggles",
       group: el.v0.UI,
-      render: () => (0, n.jsx)(E.Z, {})
+      render: () => (0, n.jsx)(T.Z, {})
     }), e.push({
       id: "premium_feature_randomizer",
       name: "Premium Feature Randomizer",
@@ -231,7 +231,7 @@ function em(e) {
       id: "dcf",
       name: "DCF",
       group: el.v0.EXPERIMENTS,
-      render: () => (0, n.jsx)(T.Z, {})
+      render: () => (0, n.jsx)(E.Z, {})
     }), e.push({
       id: "perks",
       name: "Perks",
@@ -276,7 +276,7 @@ function em(e) {
       id: "krisp_tester",
       name: "Krisp Tester",
       group: el.v0.AUDIO_VIDEO,
-      render: () => (0, n.jsx)(L.Z, {})
+      render: () => (0, n.jsx)(D.Z, {})
     }), e.push({
       id: "skill_trees",
       name: "Skill Trees",
@@ -286,7 +286,7 @@ function em(e) {
       id: "language",
       name: "Language",
       group: el.v0.UI,
-      render: () => (0, n.jsx)(D.Z, {})
+      render: () => (0, n.jsx)(L.Z, {})
     }), e
   }, []), {
     TabBar: i,

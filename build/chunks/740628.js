@@ -1,6 +1,6 @@
 /** Chunk was on 11776 **/
 n.d(t, {
-  Z: () => O
+  Z: () => x
 }), n(388685);
 var r = n(255367),
   l = n(73800),
@@ -20,7 +20,7 @@ var r = n(255367),
   h = n(301150),
   y = n(923243);
 
-function x(e) {
+function O(e) {
   let {
     section: t,
     subsection: n,
@@ -63,7 +63,7 @@ function x(e) {
   })
 }
 
-function O(e) {
+function x(e) {
   var t, n, d;
   let {
     user: u,
@@ -71,7 +71,7 @@ function O(e) {
     displayProfile: p,
     guildId: m,
     items: g,
-    initialSection: O = b.oh.USER_INFO,
+    initialSection: x = b.oh.USER_INFO,
     initialSubsection: v,
     onClose: _
   } = e, {
@@ -84,7 +84,7 @@ function O(e) {
       let {
         section: t
       } = e;
-      return t === O
+      return t === x
     })) ? void 0 : t.section) ? d : null == (n = g[0]) ? void 0 : n.section,
     subsection: v
   });
@@ -136,7 +136,7 @@ function O(e) {
           })
         }, t)
       })
-    }), (0, r.jsx)(x, {
+    }), (0, r.jsx)(O, {
       items: g,
       section: E,
       subsection: Z,

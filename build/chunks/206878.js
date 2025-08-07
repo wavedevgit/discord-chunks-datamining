@@ -1,6 +1,6 @@
 /** Chunk was on 93886 **/
 a.d(t, {
-  g: () => O
+  g: () => N
 }), a(388685), a(35282);
 var n = a(73800),
   r = a(281598);
@@ -163,7 +163,7 @@ let s = new Set([r.jE.SHOP_ALL_BANNER_STATIC, r.jE.HERO_BANNER_STATIC, r.jE.HERO
       names: t.avatarDecorationFiles.map(e => e.name),
       addError: a
     }), j(r.aB.AVATAR_DECORATION, t.avatarDecorationFiles, a, n)
-  }, N = (e, t, a) => {
+  }, O = (e, t, a) => {
     _({
       files: e,
       addError: a,
@@ -181,7 +181,7 @@ let s = new Set([r.jE.SHOP_ALL_BANNER_STATIC, r.jE.HERO_BANNER_STATIC, r.jE.HERO
       addError: a,
       addWarning: t
     })
-  }, O = () => {
+  }, N = () => {
     let [e, t] = n.useState(!1), [a, s] = n.useState({}), [o, c] = n.useState({}), d = n.useCallback(function(e) {
       let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : [];
       c(a => {
@@ -216,7 +216,7 @@ let s = new Set([r.jE.SHOP_ALL_BANNER_STATIC, r.jE.HERO_BANNER_STATIC, r.jE.HERO
           let a = await h(t);
           if (a.length > 0) return void d("Missing required directories", a);
           let n = await (0, r.LY)([t]);
-          N(n, u, d)
+          O(n, u, d)
         } finally {
           t(!0)
         }

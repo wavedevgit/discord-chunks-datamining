@@ -20,8 +20,8 @@ var l = n(442837),
   j = n(493043),
   h = n(864141),
   y = n(228168),
-  x = n(981631),
-  O = n(388032),
+  O = n(981631),
+  x = n(388032),
   v = n(316879),
   _ = n(301150);
 
@@ -45,19 +45,19 @@ function I(e) {
     stream: w
   } = (0, f.Z)(t.id), {
     voiceChannel: C,
-    voiceActivity: G
+    voiceActivity: R
   } = (0, p.Z)({
     userId: t.id,
     guildId: P
-  }), L = (0, l.e7)([a.Z], () => a.Z.isFetchingUserOutbox(t.id)), R = t.id === n.id, M = (0, l.e7)([s.Z, c.Z], () => {
-    let e = R ? s.Z.getStatus() : c.Z.getStatus(t.id);
+  }), G = (0, l.e7)([a.Z], () => a.Z.isFetchingUserOutbox(t.id)), L = t.id === n.id, M = (0, l.e7)([s.Z, c.Z], () => {
+    let e = L ? s.Z.getStatus() : c.Z.getStatus(t.id);
     return e === o.Skl.OFFLINE || e === o.Skl.INVISIBLE
-  }), D = S.length > 0 || null != w, k = N && null == w && null == G && null != C, B = !M && (D || k), U = A.length > 0;
-  return B || U || !L ? (0, r.jsxs)(o.zJl, {
+  }), D = S.length > 0 || null != w, k = N && null == w && null == R && null != C, B = !M && (D || k), U = A.length > 0;
+  return B || U || !G ? (0, r.jsxs)(o.zJl, {
     className: v.scroller,
     fade: !0,
     children: [B ? (0, r.jsx)(m.Z, {
-      "aria-label": O.intl.string(O.t.J6STd3),
+      "aria-label": x.intl.string(x.t.J6STd3),
       children: (0, r.jsxs)("ul", {
         className: v.activityList,
         children: [!T && k && (0, r.jsx)("li", {
@@ -87,10 +87,10 @@ function I(e) {
         }, "live-".concat(l)))]
       })
     }) : null, U ? (0, r.jsx)(m.Z, {
-      heading: O.intl.string(O.t.M0zgnZ),
-      introText: R ? O.intl.format(O.t["4bk9Ag"], {
+      heading: x.intl.string(x.t.M0zgnZ),
+      introText: L ? x.intl.format(x.t["4bk9Ag"], {
         learnMoreHook: (e, t) => (0, r.jsx)(o.eee, {
-          href: d.Z.getArticleURL(x.BhN.ACTIVITY_STATUS_SETTINGS),
+          href: d.Z.getArticleURL(O.BhN.ACTIVITY_STATUS_SETTINGS),
           children: e
         }, t)
       }) : void 0,

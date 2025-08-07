@@ -1,6 +1,6 @@
 /** Chunk was on 12097 **/
 n.d(t, {
-  Z: () => d
+  Z: () => E
 }), n(388685);
 var r = n(255367),
   l = n(73800),
@@ -31,7 +31,7 @@ function c(e) {
     }]
   }
 }
-class E extends l.Component {
+class d extends l.Component {
   componentDidMount() {
     this._isMounted = !0;
     let {
@@ -398,4 +398,4 @@ class E extends l.Component {
     }), u(this, "_isMounted", !1), u(this, "shouldLoop", () => this._isMounted)
   }
 }
-let d = E
+let E = d

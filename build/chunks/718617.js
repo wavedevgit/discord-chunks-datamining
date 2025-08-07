@@ -10,8 +10,8 @@ var r = n(255367),
   o = n(481060),
   u = n(110924),
   c = n(714338),
-  E = n(237617),
-  d = n(433355),
+  d = n(237617),
+  E = n(433355),
   _ = n(189432),
   A = n(727381),
   T = n(313692),
@@ -37,7 +37,7 @@ function N(e) {
     onClose: h,
     analyticsLocation: O,
     className: p
-  } = e, R = (0, i.e7)([d.ZP], () => d.ZP.getGuildSidebarState(N), [N]), S = null != (t = null == R ? void 0 : R.details.modViewPanel) ? t : I.k.INFO, C = (0, u.Z)(n), v = null == S ? null : S === I.k.INFO ? "backwards" : "forwards", D = (0, E.Z)(v), {
+  } = e, R = (0, i.e7)([E.ZP], () => E.ZP.getGuildSidebarState(N), [N]), S = null != (t = null == R ? void 0 : R.details.modViewPanel) ? t : I.k.INFO, C = (0, u.Z)(n), v = null == S ? null : S === I.k.INFO ? "backwards" : "forwards", D = (0, d.Z)(v), {
     reducedMotion: b
   } = l.useContext(a.S), L = l.useCallback(e => {
     null != R && (0, _.r)(N, n, R.baseChannelId, {

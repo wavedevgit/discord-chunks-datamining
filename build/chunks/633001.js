@@ -23,10 +23,10 @@ var n = a(255367),
   _ = a(371651),
   y = a(829907),
   C = a(610394),
-  N = a(886118),
-  O = a(301801),
-  T = a(352527),
-  E = a(355863),
+  O = a(886118),
+  N = a(301801),
+  E = a(352527),
+  T = a(355863),
   S = a(449224),
   P = a(808506),
   w = a(572004),
@@ -35,8 +35,8 @@ var n = a(255367),
   k = a(136015),
   Z = a(145597),
   A = a(246992),
-  L = a(257785),
-  D = a(484036),
+  D = a(257785),
+  L = a(484036),
   B = a(681619),
   M = a(621060),
   F = a(981631),
@@ -89,7 +89,7 @@ let K = {
         width: 100,
         height: 100
       }
-    }, E.Z.getWidgetDefaultSettings(F.Odu.CLICK_ZONE_DEBUG)), {
+    }, T.Z.getWidgetDefaultSettings(F.Odu.CLICK_ZONE_DEBUG)), {
       pinned: !0
     }),
     [F.Odu.PERFORMANCE_DEBUG]: e => W(H({
@@ -105,7 +105,7 @@ let K = {
         width: "auto",
         height: "auto"
       }
-    }, E.Z.getWidgetDefaultSettings(F.Odu.PERFORMANCE_DEBUG)), {
+    }, T.Z.getWidgetDefaultSettings(F.Odu.PERFORMANCE_DEBUG)), {
       pinned: !0
     })
   },
@@ -300,7 +300,7 @@ let q = r.memo(function(e) {
   });
 
 function Q(e) {
-  let t = Y(Object.values((0, d.Wu)([E.Z], () => E.Z.getWidgetsForLayout(U.$S))), e);
+  let t = Y(Object.values((0, d.Wu)([T.Z], () => T.Z.getWidgetsForLayout(U.$S))), e);
   return [t, () => {
     if (null != t)(0, x.E9)(t.id);
     else {
@@ -483,7 +483,7 @@ let en = r.memo(function(e) {
     let a = (0, d.cj)([_.default], () => _.default.getTrackedGames()),
       r = (0, Z.getPID)(),
       l = (0, d.e7)([_.default], () => _.default.isOverlayOOPEnabledForPid(r), [r]),
-      [i, s] = (0, d.Wu)([T.Z], () => [T.Z.enabled, T.Z.keepOpen]),
+      [i, s] = (0, d.Wu)([E.Z], () => [E.Z.enabled, E.Z.keepOpen]),
       o = (0, d.e7)([P.default], () => P.default.getFocusedPID()),
       c = (0, d.e7)([P.default], () => P.default.isFocusedPidOutOfProcess());
     return (0, n.jsxs)("div", {
@@ -899,9 +899,9 @@ let ep = ["__webpack_require__", "fn"],
             tooltip: "Close",
             onClick: l
           })]
-        }), (0, n.jsxs)(L.E, {
+        }), (0, n.jsxs)(D.E, {
           className: z.commonProperties,
-          children: [(0, n.jsx)(L.Z9, {
+          children: [(0, n.jsx)(D.Z9, {
             name: "Timestamp",
             copyValue: b.toISOString(),
             children: (0, n.jsx)("time", {
@@ -909,25 +909,25 @@ let ep = ["__webpack_require__", "fn"],
               title: (0, I.vc)(b, "LLLL"),
               children: (0, I.vc)(b, "L h:mm:ss.SSS")
             })
-          }), (0, n.jsx)(L.Z9, {
+          }), (0, n.jsx)(D.Z9, {
             name: "Log Type",
             copyValue: d,
             children: (0, n.jsx)("code", {
               children: d
             })
-          }), (0, n.jsx)(L.Z9, {
+          }), (0, n.jsx)(D.Z9, {
             name: "Native ID",
             copyValue: null != (t = null == u ? void 0 : u.toString()) ? t : "null",
             children: (0, n.jsx)("code", {
               children: null != (a = null == u ? void 0 : u.toString()) ? a : "null"
             })
-          }), (0, n.jsx)(L.Z9, {
+          }), (0, n.jsx)(D.Z9, {
             name: "Data",
             copyValue: ex(p),
             children: (0, n.jsx)("code", {
               children: ex(p)
             })
-          }), (0, n.jsx)(L.Z9, {
+          }), (0, n.jsx)(D.Z9, {
             name: "Stack Trace",
             copyValue: x,
             children: (0, n.jsx)("code", {
@@ -959,7 +959,7 @@ let ep = ["__webpack_require__", "fn"],
     }
   }],
   ef = {
-    searchType: N.S.REGEX,
+    searchType: O.S.REGEX,
     searchStringGenerator: e => {
       let {
         name: t,
@@ -986,14 +986,14 @@ function ev() {
       if (a(e)) return !0
     }
     return !1
-  }), [e, u, t]), [g, _] = r.useState(j), [y, N] = r.useState(null), T = r.useMemo(() => e.find(e => e.key === y), [e, y]), E = r.useCallback(e => {
+  }), [e, u, t]), [g, _] = r.useState(j), [y, O] = r.useState(null), E = r.useMemo(() => e.find(e => e.key === y), [e, y]), T = r.useCallback(e => {
     _(e)
   }, []), {
     renderSelectedTab: S
   } = (0, M.ZP)({
     tabs: eb
   }, []);
-  (0, O.BO)(f, j, E, ef, [e]);
+  (0, N.BO)(f, j, T, ef, [e]);
   let P = r.useCallback(e => {
     c(e), p.Z.setModuleLogging(e)
   }, []);
@@ -1075,15 +1075,15 @@ function ev() {
         columns: eu,
         data: g,
         selectedRowKey: null != y ? y : void 0,
-        onClickRow: e => N(e.key)
+        onClickRow: e => O(e.key)
       })
-    }), null != T && (0, n.jsx)(D.Z, {
+    }), null != E && (0, n.jsx)(L.Z, {
       className: i()(z.panelGroup, z.subPanel),
       minHeight: 100,
       initialHeight: null != l ? l / 3 : 300,
       children: S({
-        breadcrumb: T,
-        onClose: () => N(null)
+        breadcrumb: E,
+        onClose: () => O(null)
       })
     })]
   })

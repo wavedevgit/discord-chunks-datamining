@@ -11,8 +11,8 @@ var l = n(120356),
   o = n(271383),
   u = n(594174),
   c = n(777288),
-  E = n(753042),
-  d = n(787469),
+  d = n(753042),
+  E = n(787469),
   _ = n(477718),
   A = n(791176),
   T = n(908474),
@@ -62,9 +62,9 @@ function N(e) {
       }), (0, r.jsx)(A.Z, {
         member: h,
         onNavigate: I
-      }), (0, r.jsx)(d.Z, {
-        member: h
       }), (0, r.jsx)(E.Z, {
+        member: h
+      }), (0, r.jsx)(d.Z, {
         member: h
       }), (0, r.jsx)(_.Z, {
         member: h

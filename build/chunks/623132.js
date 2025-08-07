@@ -79,14 +79,14 @@ function h(e) {
   } = e, {
     gameName: h,
     imageSrc: y,
-    applicationId: x,
-    comment: O,
+    applicationId: O,
+    comment: x,
     tags: v
   } = i, _ = (0, f.Z)(i.applicationId), I = _.length > 0, P = () => (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(d.Z, {
       imageSrc: y,
       gameName: h,
-      applicationId: x,
+      applicationId: O,
       userId: t.id,
       disableInteraction: !0
     }), (0, r.jsxs)("div", {
@@ -95,8 +95,8 @@ function h(e) {
         variant: "text-md/normal",
         color: "text-default",
         children: h
-      }), null != O && (0, r.jsx)(b, {
-        text: O,
+      }), null != x && (0, r.jsx)(b, {
+        text: x,
         user: t,
         guildId: n,
         channelId: l
@@ -124,7 +124,7 @@ function h(e) {
     className: g.card,
     children: P()
   }) : (0, r.jsx)(j, {
-    applicationId: x,
+    applicationId: O,
     userId: t.id,
     gameName: h,
     className: g.card,

@@ -42,7 +42,7 @@ let y = async () => {
   } catch (e) {} finally {
     await (0, d.Tf)()
   }
-}, N = async (e, t) => {
+}, O = async (e, t) => {
   try {
     await s.tn.del({
       url: v.ANM.UPDATE_USER_OFFER(e, t),
@@ -51,7 +51,7 @@ let y = async () => {
   } catch (e) {} finally {
     await (0, d.Tf)()
   }
-}, O = async () => {
+}, N = async () => {
   try {
     let {
       body: e
@@ -66,7 +66,7 @@ let y = async () => {
       discount: []
     }
   }
-}, T = async () => {
+}, E = async () => {
   try {
     await s.tn.del({
       url: v.ANM.USER_OFFERS,
@@ -75,7 +75,7 @@ let y = async () => {
   } catch (e) {} finally {
     await m.Z.forceReset(), await (0, d.Tf)()
   }
-}, E = async e => {
+}, T = async e => {
   await s.tn.post({
     url: v.ANM.CREATE_REVERSE_TRIAL,
     body: {
@@ -91,16 +91,16 @@ function S(e) {
     offer: m,
     offerOptions: h,
     forceRefetch: b
-  } = e, [f, _] = r.useState(!1), [y, C] = r.useState(!1), [O, T] = r.useState(!1), [E, S] = r.useState(!1);
+  } = e, [f, _] = r.useState(!1), [y, C] = r.useState(!1), [N, E] = r.useState(!1), [T, S] = r.useState(!1);
   r.useEffect(() => {
-    O && S(!0);
+    N && S(!0);
     let e = setTimeout(() => {
       S(!1)
     }, 500);
     return () => {
       clearTimeout(e)
     }
-  }, [O]);
+  }, [N]);
   let {
     id: P,
     expires_at: w,
@@ -115,15 +115,15 @@ function S(e) {
     return t === R
   })) ? void 0 : t.label) ? a : "Unknown";
   null != Z && (A = "".concat(A, " from @").concat(Z.username));
-  let L = null != w,
-    D = null != w && new Date(w).getTime() < Date.now(),
+  let D = null != w,
+    L = null != w && new Date(w).getTime() < Date.now(),
     B = (null == k ? void 0 : k.sku_id) === j.Si.TIER_0,
     M = async () => {
-      T(!0), L ? await F({
+      E(!0), D ? await F({
         expiresAt: null
-      }) : await (0, d.ab)(m), b(), T(!1)
+      }) : await (0, d.ab)(m), b(), E(!1)
     }, F = async e => {
-      T(!0);
+      E(!0);
       try {
         await s.tn.patch({
           url: v.ANM.UPDATE_USER_OFFER(P, "trial"),
@@ -152,7 +152,7 @@ function S(e) {
           rejectWithError: !0
         })
       } finally {
-        b(), T(!1)
+        b(), E(!1)
       }
     };
   r.useEffect(() => {
@@ -174,7 +174,7 @@ function S(e) {
     }
   }, [f, y]);
   let U = "Active";
-  return L && (U = "Acked"), D && (U = "Expired"), (0, n.jsxs)("div", {
+  return D && (U = "Acked"), L && (U = "Expired"), (0, n.jsxs)("div", {
     className: i()(g.card, B ? g.gradientWrapperTier0 : g.gradientWrapperTier2),
     children: [(0, n.jsx)("div", {
       className: i()(g.row, g.nameRow),
@@ -261,8 +261,8 @@ function S(e) {
       children: [(0, n.jsx)(c.P3F, {
         onClick: M,
         className: i()(g.badge, g.clickable, {
-          [g.acked]: L,
-          [g.expired]: D
+          [g.acked]: D,
+          [g.expired]: L
         }),
         children: (0, n.jsx)(c.Text, {
           variant: "eyebrow",
@@ -279,7 +279,7 @@ function S(e) {
       })]
     }), (0, n.jsx)(c.P3F, {
       onClick: async () => {
-        T(!0), await N(P, "trial"), b(), T(!1)
+        E(!0), await O(P, "trial"), b(), E(!1)
       },
       children: (0, n.jsx)(c.XHJ, {
         size: "md",
@@ -288,7 +288,7 @@ function S(e) {
       })
     }), (0, n.jsx)("div", {
       className: i()(g.loadingContainer, {
-        [g.isLoading]: O || E
+        [g.isLoading]: N || T
       }),
       children: (0, n.jsx)(c.$jN, {})
     })]
@@ -313,16 +313,16 @@ function P(e) {
   }, [f]);
   let {
     id: C,
-    expires_at: O,
-    applied_at: T,
-    discount_id: E,
+    expires_at: N,
+    applied_at: E,
+    discount_id: T,
     discount: S
   } = l, P = null != (a = null == (t = o.find(e => {
     let {
       value: t
     } = e;
-    return t === E
-  })) ? void 0 : t.label) ? a : "Unknown", w = null != O, I = null != O && new Date(O).getTime() < Date.now(), R = async () => {
+    return t === T
+  })) ? void 0 : t.label) ? a : "Unknown", w = null != N, I = null != N && new Date(N).getTime() < Date.now(), R = async () => {
     j(!0), w ? await k({
       expiresAt: null
     }) : await (0, d.ab)(void 0, l), u(), j(!1)
@@ -372,7 +372,7 @@ function P(e) {
         children: P
       }), (0, n.jsx)(c.P3F, {
         onClick: async () => {
-          j(!0), await N(C, "discount"), u(), j(!1)
+          j(!0), await O(C, "discount"), u(), j(!1)
         },
         children: (0, n.jsx)(c.XHJ, {
           size: "md",
@@ -401,12 +401,12 @@ function P(e) {
     }), (0, n.jsxs)(c.P3F, {
       className: i()(g.row, g.idRow),
       onClick: () => {
-        (0, x.JG)(E, () => b(!0))
+        (0, x.JG)(T, () => b(!0))
       },
       children: [(0, n.jsxs)(c.Text, {
         variant: "eyebrow",
         color: "text-default",
-        children: ["Discount: ", E]
+        children: ["Discount: ", T]
       }), h ? (0, n.jsx)(c.dz2, {
         size: "md",
         color: "currentColor",
@@ -430,7 +430,7 @@ function P(e) {
         children: "Expires:"
       }), (0, n.jsx)("input", {
         type: "date",
-        value: null != O ? O.substring(0, 10) : "",
+        value: null != N ? N.substring(0, 10) : "",
         onChange: e => k({
           expiresAt: e.target.value
         })
@@ -448,7 +448,7 @@ function P(e) {
           color: "Acked" === Z ? void 0 : "always-white",
           children: Z
         })
-      }), null != T && (0, n.jsx)("div", {
+      }), null != E && (0, n.jsx)("div", {
         className: i()(g.badge, g.redeemed),
         children: (0, n.jsx)(c.Text, {
           variant: "eyebrow",
@@ -466,7 +466,7 @@ function P(e) {
 }
 
 function w() {
-  let [e, t] = r.useState([]), [a, l] = r.useState([]), [i, s] = r.useState(), [x, p] = r.useState(), [j, N] = r.useState([]), [w, I] = r.useState([]), [R, k] = r.useState(!0), [Z, A] = r.useState(10080), [L, D] = r.useState([]), {
+  let [e, t] = r.useState([]), [a, l] = r.useState([]), [i, s] = r.useState(), [x, p] = r.useState(), [j, O] = r.useState([]), [w, I] = r.useState([]), [R, k] = r.useState(!0), [Z, A] = r.useState(10080), [D, L] = r.useState([]), {
     entitlements: B,
     deleteFractionalPremium: M,
     refreshEntitlementList: F
@@ -476,7 +476,7 @@ function w() {
   }, [F]);
   let U = e => e.filter(e => e.sourceType === v.kNB.REVERSE_TRIAL && null != e.endsAt && e.endsAt > new Date);
   r.useEffect(() => {
-    D(U(B))
+    L(U(B))
   }, [B]), r.useEffect(() => {
     (0 === e.length || 0 === a.length || R) && y().then(e => {
       let a = Object.keys(e.trial).map(t => ({
@@ -490,8 +490,8 @@ function w() {
       t(a), l(n), null == i && s(a[0].value), null == x && p(n[0].value)
     })
   }, [e, a, i, x, R]), r.useEffect(() => {
-    R && (k(!1), m.Z.forceReset(), (0, d.Tf)(), O().then(e => {
-      N(e.trial.sort((e, t) => e.id.localeCompare(t.id))), I(e.discount.sort((e, t) => e.id.localeCompare(t.id)))
+    R && (k(!1), m.Z.forceReset(), (0, d.Tf)(), N().then(e => {
+      O(e.trial.sort((e, t) => e.id.localeCompare(t.id))), I(e.discount.sort((e, t) => e.id.localeCompare(t.id)))
     }))
   }, [R]);
   let G = async () => {
@@ -499,10 +499,10 @@ function w() {
   }, z = async () => {
     null != x && (await C(x, "discount"), k(!0))
   }, V = async () => {
-    await T(), k(!0)
+    await E(), k(!0)
   }, H = async () => {
     let e = new Date(Date.now() + 60 * Z * 1e3).toISOString();
-    await E(e), F()
+    await T(e), F()
   };
   return (0, n.jsx)(c.zJl, {
     className: _.panel,
@@ -632,7 +632,7 @@ function w() {
             onClick: H
           })]
         })]
-      }), L.length > 0 && (0, n.jsxs)("div", {
+      }), D.length > 0 && (0, n.jsxs)("div", {
         children: [(0, n.jsx)(c.Text, {
           style: {
             marginTop: "15px"
@@ -640,7 +640,7 @@ function w() {
           variant: "text-md/bold",
           children: "Active reverse trial"
         }), (0, n.jsx)("div", {
-          children: L.map(e => (0, n.jsx)(h.D, {
+          children: D.map(e => (0, n.jsx)(h.D, {
             entitlement: e,
             active: !0,
             onDelete: () => M(e.id)

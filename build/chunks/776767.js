@@ -19,7 +19,7 @@ function u(e) {
     icon: l,
     onNavigate: u,
     className: c,
-    missingNavIcon: E
+    missingNavIcon: d
   } = e;
   return (0, r.jsxs)(i.P3F, {
     onClick: u,
@@ -40,9 +40,9 @@ function u(e) {
         width: o,
         height: o
       })
-    }), null == u && null != E && (0, r.jsx)("div", {
+    }), null == u && null != d && (0, r.jsx)("div", {
       className: a.modInfoItemActionIcon,
-      children: E
+      children: d
     })]
   })
 }

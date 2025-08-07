@@ -26,8 +26,8 @@ function g(e) {
     relationshipType: h,
     onClose: y
   } = e, {
-    newestAnalyticsLocation: x
-  } = (0, i.ZP)(), O = (0, a.Z)({
+    newestAnalyticsLocation: O
+  } = (0, i.ZP)(), x = (0, a.Z)({
     user: t,
     guildId: g,
     channelId: b,
@@ -51,7 +51,7 @@ function g(e) {
       type: "icon",
       user: t,
       guildId: g,
-      viewProfileItem: O,
+      viewProfileItem: x,
       themeColor: "secondary"
     })]
   }) : t.bot ? (0, r.jsxs)(r.Fragment, {
@@ -64,7 +64,7 @@ function g(e) {
       type: "icon",
       user: t,
       guildId: g,
-      viewProfileItem: O,
+      viewProfileItem: x,
       themeColor: "secondary"
     })]
   }) : h === m.OGo.PENDING_INCOMING ? (0, r.jsxs)(r.Fragment, {
@@ -93,12 +93,12 @@ function g(e) {
       relationshipType: h,
       shouldShowTooltip: !0,
       themeColor: "secondary",
-      analyticsLocation: x
+      analyticsLocation: O
     }), (0, r.jsx)(d.Z, {
       type: "icon",
       user: t,
       guildId: g,
-      viewProfileItem: O,
+      viewProfileItem: x,
       themeColor: "secondary"
     })]
   }) : h === m.OGo.NONE && P ? (0, r.jsxs)(r.Fragment, {
@@ -110,7 +110,7 @@ function g(e) {
     }), (0, r.jsx)(f.k9, {
       type: "icon",
       user: t,
-      analyticsLocation: x,
+      analyticsLocation: O,
       themeColor: "secondary",
       gameFriends: v,
       tooltipPosition: "top",
@@ -122,14 +122,14 @@ function g(e) {
       type: "icon",
       user: t,
       guildId: g,
-      viewProfileItem: O,
+      viewProfileItem: x,
       themeColor: "secondary"
     })]
   }) : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(f.Z7, {
       type: "text",
       userId: t.id,
-      analyticsLocation: x,
+      analyticsLocation: O,
       color: l.zx.Colors.BRAND,
       autoFocus: !0
     }), (0, r.jsx)(s.Z, {
@@ -141,7 +141,7 @@ function g(e) {
       type: "icon",
       user: t,
       guildId: g,
-      viewProfileItem: O,
+      viewProfileItem: x,
       themeColor: "secondary"
     })]
   })

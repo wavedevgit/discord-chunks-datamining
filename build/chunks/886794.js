@@ -19,8 +19,8 @@ var r = n(255367),
   j = n(280885),
   h = n(900927),
   y = n(678738),
-  x = n(502762),
-  O = n(530),
+  O = n(502762),
+  x = n(530),
   v = n(679332),
   _ = n(544989),
   I = n(228168),
@@ -38,9 +38,9 @@ function S(e) {
     messageId: A,
     roleId: w,
     sessionId: C,
-    transitionState: G,
-    openedAt: L,
-    onClose: R,
+    transitionState: R,
+    openedAt: G,
+    onClose: L,
     sourceAnalyticsLocations: M = []
   } = e, D = n === P.ME ? void 0 : n, k = (0, p.ZP)(t.id, D), B = u.ZP.getName(D, S, t), U = (0, s.Dt)(), {
     analyticsLocations: F
@@ -57,13 +57,13 @@ function S(e) {
     value: F,
     children: (0, r.jsx)(f.Mt, {
       value: V,
-      openedAt: L,
+      openedAt: G,
       fetchStartedAt: null == k ? void 0 : k.fetchStartedAt,
       fetchEndedAt: null == k ? void 0 : k.fetchEndedAt,
       isLoaded: null == k ? void 0 : k.isLoaded,
       children: (0, r.jsxs)(o.Y0X, {
         "data-migration-pending": !0,
-        transitionState: G,
+        transitionState: R,
         className: Z.root,
         hideShadow: !0,
         "aria-labelledby": U,
@@ -77,7 +77,7 @@ function S(e) {
               })
             })
           }),
-          children: (0, r.jsxs)(x.Z, {
+          children: (0, r.jsxs)(O.Z, {
             user: t,
             displayProfile: k,
             themeType: I.lY.MODAL,
@@ -103,7 +103,7 @@ function S(e) {
               })]
             }), (0, r.jsxs)("div", {
               className: Z.body,
-              children: [(0, r.jsx)(O.Z, {
+              children: [(0, r.jsx)(x.Z, {
                 className: Z.username,
                 user: t,
                 nickname: B,
@@ -112,7 +112,7 @@ function S(e) {
                 tags: (0, r.jsx)(g.Z, {
                   displayProfile: k,
                   themeType: I.lY.MODAL,
-                  onClose: R
+                  onClose: L
                 })
               }), (0, r.jsxs)("div", {
                 className: T.container,

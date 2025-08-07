@@ -56,8 +56,8 @@ function p(e) {
   } = (0, o.ZP)(), {
     context: h,
     trackUserProfileAction: y
-  } = (0, a.KZ)(), x = (0, s.ZP)(t.id, n);
-  return (null == x ? void 0 : x.guildId) == null || null == h ? null : (null == m ? void 0 : m.guildId) != null ? (0, r.jsx)(l.sNh, {
+  } = (0, a.KZ)(), O = (0, s.ZP)(t.id, n);
+  return (null == O ? void 0 : O.guildId) == null || null == h ? null : (null == m ? void 0 : m.guildId) != null ? (0, r.jsx)(l.sNh, {
     id: "view-main-profile",
     label: d.intl.string(d.t.GISTtb),
     subtext: d.intl.formatToPlainString(d.t["mn/nW1"], {

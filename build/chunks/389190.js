@@ -27,11 +27,11 @@ function g(e) {
     analyticsLocations: h
   } = (0, a.ZP)(), {
     context: y,
-    trackUserProfileAction: x
-  } = (0, c.KZ)(), O = (0, i.Z)();
+    trackUserProfileAction: O
+  } = (0, c.KZ)(), x = (0, i.Z)();
   l.useEffect(() => {
-    (0, d.Z)(t.id, O)
-  }, [t.id, O]);
+    (0, d.Z)(t.id, x)
+  }, [t.id, x]);
   let v = e => {
     var t, n;
     (0, u.openUserProfileModal)((t = function(e) {
@@ -91,7 +91,7 @@ function g(e) {
         guildId: n,
         channelId: g,
         onSelect: () => {
-          null == b || b(), x({
+          null == b || b(), O({
             action: "PRESS_MUTUAL_FRIEND"
           }), v(l.id)
         }

@@ -21,7 +21,7 @@ var l = n(120356),
   h = n(388032),
   y = n(738873);
 
-function x(e) {
+function O(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -40,7 +40,7 @@ function x(e) {
   return e
 }
 
-function O(e, t) {
+function x(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -64,7 +64,7 @@ function v(e) {
     className: y.connection,
     children: [(0, r.jsx)(a.ua7, {
       text: null == v ? void 0 : v.name,
-      children: e => (0, r.jsx)("div", O(x({}, e), {
+      children: e => (0, r.jsx)("div", x(O({}, e), {
         className: y.platformIconContainer,
         children: (0, r.jsx)("img", {
           alt: h.intl.formatToPlainString(h.t.rtm15O, {
@@ -83,7 +83,7 @@ function v(e) {
           return null == t ? (0, r.jsx)(a.ua7, {
             overflowOnly: !0,
             text: n.name,
-            children: e => (0, r.jsx)(a.Text, O(x({}, e), {
+            children: e => (0, r.jsx)(a.Text, x(O({}, e), {
               variant: "text-sm/normal",
               className: y.accountNameText,
               children: n.name
@@ -107,7 +107,7 @@ function v(e) {
               children: [(0, r.jsx)(a.ua7, {
                 overflowOnly: !0,
                 text: n.name,
-                children: e => (0, r.jsx)(a.Text, O(x({}, e), {
+                children: e => (0, r.jsx)(a.Text, x(O({}, e), {
                   variant: "text-sm/normal",
                   className: y.accountNameText,
                   children: n.name

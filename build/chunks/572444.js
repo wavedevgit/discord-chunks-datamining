@@ -100,8 +100,8 @@ function g(e) {
 function _() {
   let {
     name: e
-  } = (0, x.p)(b.h7.AUDIO_INPUT), [t, a] = r.useState(!1), [l, i] = r.useState([]), j = (0, s.e7)([p.Z], () => p.Z.getKrispSuppressionLevel()), [_, y] = r.useState(null), C = r.useRef(null), N = r.useRef(null), [O, T] = r.useState(.5), {
-    krispModels: E,
+  } = (0, x.p)(b.h7.AUDIO_INPUT), [t, a] = r.useState(!1), [l, i] = r.useState([]), j = (0, s.e7)([p.Z], () => p.Z.getKrispSuppressionLevel()), [_, y] = r.useState(null), C = r.useRef(null), O = r.useRef(null), [N, E] = r.useState(.5), {
+    krispModels: T,
     krispModelOverride: S,
     inputMode: P,
     echoCancellation: w,
@@ -110,8 +110,8 @@ function _() {
     vadKrispActivationThreshold: k,
     noiseCancellation: Z,
     noiseSuppression: A,
-    noiseSuppressionSupported: L,
-    noiseCancellationSupported: D,
+    noiseSuppressionSupported: D,
+    noiseCancellationSupported: L,
     noiseCancellationEnableStats: B
   } = (0, s.cj)([p.Z], () => ({
     krispModels: p.Z.getKrispModels(),
@@ -138,16 +138,16 @@ function _() {
   function z(e) {
     if (t && G(), U(), null == F) return;
     let a = F.createBufferSource();
-    a.buffer = e.audioBuffer, N.current = F.createGain(), N.current.gain.value = O, a.connect(N.current), N.current.connect(F.destination), a.loop = !0, a.start(), C.current = a, y(e)
+    a.buffer = e.audioBuffer, O.current = F.createGain(), O.current.gain.value = N, a.connect(O.current), O.current.connect(F.destination), a.loop = !0, a.start(), C.current = a, y(e)
   }
   r.useEffect(() => {
     U()
   }, [U]);
   let V = [];
-  return D && V.push({
+  return L && V.push({
     label: "Krisp",
     value: "KRISP"
-  }), L && V.push({
+  }), D && V.push({
     label: "Standard",
     value: "STANDARD"
   }), V.push({
@@ -197,7 +197,7 @@ function _() {
               d.Z.setKrispModelOverride("")
             },
             isSelected: e => e === S,
-            options: E.map(e => ({
+            options: T.map(e => ({
               label: e,
               value: e
             })),
@@ -295,9 +295,9 @@ function _() {
         title: "Volume",
         tag: c.RB0.H3,
         children: (0, n.jsx)(c.iRW, {
-          initialValue: O,
+          initialValue: N,
           asValueChanges: function(e) {
-            null != N.current && (N.current.gain.value = e, T(e))
+            null != O.current && (O.current.gain.value = e, E(e))
           },
           minValue: 0,
           maxValue: 1

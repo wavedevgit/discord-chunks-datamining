@@ -20,8 +20,8 @@ var l = n(442837),
   j = n(493043),
   h = n(864141),
   y = n(264481),
-  x = n(693408),
-  O = n(228168),
+  O = n(693408),
+  x = n(228168),
   v = n(981631),
   _ = n(388032),
   I = n(514656);
@@ -44,17 +44,17 @@ function P(e) {
   }), {
     live: w,
     recent: C,
-    stream: G
+    stream: R
   } = (0, p.Z)(t.id), {
-    voiceChannel: L,
-    voiceActivity: R
+    voiceChannel: G,
+    voiceActivity: L
   } = (0, m.Z)({
     userId: t.id,
     guildId: E
   }), M = (0, l.e7)([a.Z], () => a.Z.isFetchingUserOutbox(t.id)), D = t.id === n.id, k = (0, l.e7)([d.Z, s.Z], () => {
     let e = D ? d.Z.getStatus() : s.Z.getStatus(t.id);
     return e === o.Skl.OFFLINE || e === o.Skl.INVISIBLE
-  }), B = w.length > 0 || null != G, U = S && null == G && null == R && null != L, F = !k && (B || U), V = C.length > 0;
+  }), B = w.length > 0 || null != R, U = S && null == R && null == L && null != G, F = !k && (B || U), V = C.length > 0;
   if (!F && !V && M) return (0, r.jsx)("div", {
     className: I.cards,
     children: Array.from({
@@ -84,7 +84,7 @@ function P(e) {
   return (0, r.jsxs)(o.Ttm, {
     className: I.scroller,
     fade: !0,
-    children: [F ? (0, r.jsx)(x.Z, {
+    children: [F ? (0, r.jsx)(O.Z, {
       heading: _.intl.string(_.t.J6STd3),
       children: (0, r.jsxs)("ul", {
         className: I.cards,
@@ -92,15 +92,15 @@ function P(e) {
           children: (0, r.jsx)(h.Z, {
             user: t,
             currentUser: n,
-            voiceChannel: L,
+            voiceChannel: G,
             onClose: T
           })
-        }), null != G && (0, r.jsx)("li", {
+        }), null != R && (0, r.jsx)("li", {
           children: (0, r.jsx)(j.Z, {
             location: "UserProfileModalV2Activity",
             user: t,
             currentUser: n,
-            stream: G,
+            stream: R,
             onClose: T,
             profileGuildId: null == P ? void 0 : P.guildId
           })
@@ -116,12 +116,12 @@ function P(e) {
           children: (0, r.jsx)(h.Z, {
             user: t,
             currentUser: n,
-            voiceChannel: L,
+            voiceChannel: G,
             onClose: T
           })
         })]
       })
-    }) : null, V ? (0, r.jsx)(x.Z, {
+    }) : null, V ? (0, r.jsx)(O.Z, {
       heading: _.intl.string(_.t.jzgEoK),
       introText: D ? _.intl.format(_.t["4bk9Ag"], {
         learnMoreHook: (e, t) => (0, r.jsx)(o.eee, {
@@ -129,7 +129,7 @@ function P(e) {
           children: e
         }, t)
       }) : void 0,
-      scrollIntoView: N === O.Tb.RECENT_ACTIVITY,
+      scrollIntoView: N === x.Tb.RECENT_ACTIVITY,
       children: (0, r.jsx)("ul", {
         className: I.cards,
         children: C.map(e => (0, r.jsx)("li", {

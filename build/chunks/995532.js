@@ -8,8 +8,8 @@ var r, l, s, i = n(442837),
 let o = {},
   u = {},
   c = {},
-  E = !1,
   d = !1,
+  E = !1,
   _ = !1;
 
 function A(e) {
@@ -31,14 +31,14 @@ class m extends(s = i.ZP.Store) {
     if (null != e) return u[e]
   }
   isFetching() {
-    return d
+    return E
   }
   hasError() {
     return _
   }
   hasSeen(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
-    return null != e && (t ? E : c[e] || !1)
+    return null != e && (t ? d : c[e] || !1)
   }
   isEmpty(e) {
     if (null == e) return !0;
@@ -62,10 +62,10 @@ let I = new m(a.Z, {
       guildId: t,
       isLurking: n
     } = e;
-    c[t] = !0, n && (E = !0)
+    c[t] = !0, n && (d = !0)
   },
   GUILD_STOP_LURKING: function() {
-    E = !1
+    d = !1
   },
   GUILD_DELETE: function(e) {
     let {
@@ -76,10 +76,10 @@ let I = new m(a.Z, {
     c[t] = !1
   },
   WELCOME_SCREEN_FETCH_START: function() {
-    d = !0, _ = !1
+    E = !0, _ = !1
   },
   WELCOME_SCREEN_FETCH_SUCCESS: function(e) {
-    d = !1, _ = !1;
+    E = !1, _ = !1;
     let {
       welcomeScreen: t,
       guildId: n
@@ -87,6 +87,6 @@ let I = new m(a.Z, {
     u[n] = null != t ? t : o
   },
   WELCOME_SCREEN_FETCH_FAIL: function() {
-    d = !1, _ = !0
+    E = !1, _ = !0
   }
 })

@@ -12,8 +12,8 @@ var r = n(255367),
   u = n(561779),
   d = n(481060),
   m = n(607070),
-  f = n(509212),
-  p = n(184299),
+  p = n(509212),
+  f = n(184299),
   v = n(902749),
   E = n(957099),
   g = n(312729),
@@ -67,13 +67,13 @@ let y = l.forwardRef(function(e, t) {
     ariaLabel: s,
     active: u,
     disabled: m,
-    tooltipLabel: f,
-    tooltipDelayMs: p = 1500,
+    tooltipLabel: p,
+    tooltipDelayMs: f = 1500,
     shortcut: v,
     onClick: E
   } = e, g = e => {
-    var f, p;
-    return (0, r.jsx)(d.P3F, (f = function(e) {
+    var p, f;
+    return (0, r.jsx)(d.P3F, (p = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -90,7 +90,7 @@ let y = l.forwardRef(function(e, t) {
         })
       }
       return e
-    }({}, e), p = p = {
+    }({}, e), f = f = {
       onClick: !0 === m ? void 0 : E,
       className: i()(S.videoControlsBtnCont, {
         [S.videoControlsBtnContDisabled]: m
@@ -114,30 +114,30 @@ let y = l.forwardRef(function(e, t) {
           })
         })
       })
-    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(f, Object.getOwnPropertyDescriptors(p)) : (function(e, t) {
+    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(p, Object.getOwnPropertyDescriptors(f)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
         var r = Object.getOwnPropertySymbols(e);
         n.push.apply(n, r)
       }
       return n
-    })(Object(p)).forEach(function(e) {
-      Object.defineProperty(f, e, Object.getOwnPropertyDescriptor(p, e))
-    }), f))
+    })(Object(f)).forEach(function(e) {
+      Object.defineProperty(p, e, Object.getOwnPropertyDescriptor(f, e))
+    }), p))
   };
-  if (null == f || !o) return g();
+  if (null == p || !o) return g();
   {
     let e = (0, r.jsxs)(r.Fragment, {
-      children: [f, "" !== (null != v ? v : "").trim() && (0, r.jsx)(d.M2$, {
+      children: [p, "" !== (null != v ? v : "").trim() && (0, r.jsx)(d.M2$, {
         shortcut: null != v ? v : "",
         className: S.videoControlsBtnTooltipKeyCombo
       })]
     });
     return (0, r.jsx)(d.ua7, {
       text: e,
-      "aria-label": f,
+      "aria-label": p,
       tooltipContentClassName: S.videoControlsBtnTooltip,
-      delay: p,
+      delay: f,
       children: e => g(e)
     })
   }
@@ -162,7 +162,7 @@ function x(e) {
     handleSeekForwardBtnClick: L,
     handleControlBarPendingInteraction: M,
     onVolumeChange: V
-  } = e, B = (0, p.km)(e => e.volume), F = (0, p.km)(e => e.setVolume), Z = (0, p.km)(e => e.muted), U = (0, p.km)(e => e.setMuted), q = (0, p.km)(e => e.transcriptEnabled), Y = (0, p.km)(e => e.captionEnabled), H = (0, p.km)(e => e.fullScreenEnabled), Q = (0, s.e7)([m.Z], () => m.Z.useReducedMotion), z = (0, s.e7)([m.Z], () => m.Z.keyboardModeEnabled), [G, K] = l.useState(Z ? 0 : B), [X, W] = l.useState(!1), [$, J] = l.useState(!1), [{
+  } = e, B = (0, f.km)(e => e.volume), F = (0, f.km)(e => e.setVolume), Z = (0, f.km)(e => e.muted), U = (0, f.km)(e => e.setMuted), q = (0, f.km)(e => e.transcriptEnabled), Y = (0, f.km)(e => e.captionEnabled), H = (0, f.km)(e => e.fullScreenEnabled), Q = (0, s.e7)([m.Z], () => m.Z.useReducedMotion), z = (0, s.e7)([m.Z], () => m.Z.keyboardModeEnabled), [G, K] = l.useState(Z ? 0 : B), [X, W] = l.useState(!1), [$, J] = l.useState(!1), [{
     volumeAnimSpring: ee
   }, et] = (0, d.q_F)(() => ({
     from: {
@@ -173,7 +173,7 @@ function x(e) {
       friction: 3,
       clamp: !0
     }
-  })), en = l.useRef(null), er = (0, f.ZS)(R), el = l.useCallback(e => {
+  })), en = l.useRef(null), er = (0, p.ZS)(R), el = l.useCallback(e => {
     null != o.current && (e !== o.current.volume && (o.current.volume = e), e !== G && K(e))
   }, [o, G]), eo = l.useCallback(() => {
     null != o.current && (0 === G ? (el(B), U(!1), V(B)) : (F(G), el(0), U(!0), V(0)))

@@ -1,6 +1,6 @@
 /** Chunk was on 12097 **/
 n.d(t, {
-  Es: () => E,
+  Es: () => d,
   RM: () => a,
   VP: () => c,
   Xb: () => o,
@@ -51,7 +51,7 @@ let i = function(e) {
       type: "WELCOME_SCREEN_SETTINGS_UPDATE",
       settings: e
     })
-  }, E = async (e, t) => {
+  }, d = async (e, t) => {
     l.Z.dispatch({
       type: "WELCOME_SCREEN_SUBMIT"
     });
