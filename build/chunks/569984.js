@@ -375,12 +375,14 @@ function eC(e) {
     quest: t,
     placement: n,
     adDecisionData: r,
-    adContext: o
+    adContext: o,
+    metadataRaw: a
   } = e;
   u = Date.now(), i = !1, null == t ? O.delete(n) : O.set(n, {
     quest: t,
     adDecisionData: r,
-    adContext: o
+    adContext: o,
+    metadataRaw: a
   })
 }
 

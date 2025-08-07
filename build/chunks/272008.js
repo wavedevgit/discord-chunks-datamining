@@ -488,6 +488,7 @@ async function z(e, t) {
           decision_id: y.request_id,
           is_targeted: null != y.ad_identifiers
         },
+        metadataRaw: y.metadata_raw,
         adContext: y.ad_context,
         placement: e
       }), h.Z.recordQuestRequestApiResponse("/quests/decision", {

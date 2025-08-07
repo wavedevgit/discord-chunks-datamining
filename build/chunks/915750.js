@@ -143,7 +143,9 @@ class x {
         if (null != n) {
           let r = L(e.id, n);
           (t = !D.has(r) && (0, y.VB)(this.questContent)) && D.add(r)
-        }(0, u.S)().then(n => {
+        }
+        let r = (0, y.jY)(this.questContent);
+        (0, u.S)().then(n => {
           (0, b.dA)({
             questId: e.id,
             event: S.rMx.QUEST_CONTENT_VIEWED,
@@ -153,7 +155,8 @@ class x {
               min_viewport_percentage: this.minViewportPercentage,
               triggered_by_status_change: this.triggeredByStatusChange,
               apple_advertising_id: null != n && (0, E.isIOS)() ? n.advertisingId : null,
-              android_advertising_id: null != n && (0, E.isAndroid)() ? n.advertisingId : null
+              android_advertising_id: null != n && (0, E.isAndroid)() ? n.advertisingId : null,
+              metadata_raw: null != r ? r : null
             }, (0, d.Z)(), this.commonProperties(e), this.getBrandSafetyContext()),
             shouldExtendSession: t,
             sourceQuestContent: this.sourceQuestContent
