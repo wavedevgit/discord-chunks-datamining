@@ -19,8 +19,8 @@ var r = n(255367),
   b = n(144144),
   y = n(276264),
   x = n(607070),
-  j = n(100527),
-  _ = n(367907),
+  _ = n(100527),
+  j = n(367907),
   O = n(906732),
   v = n(493324),
   C = n(611064),
@@ -128,8 +128,8 @@ let et = Y.ZP.getEnableHardwareAcceleration(),
       applicationStream: f,
       status: m,
       channel: x,
-      guildId: j,
-      isTyping: _,
+      guildId: _,
+      isTyping: j,
       isMobileOnline: O,
       premiumSince: v,
       nameplate: C
@@ -140,12 +140,12 @@ let et = Y.ZP.getEnableHardwareAcceleration(),
         } = await Promise.all([n.e("79695"), n.e("98783"), n.e("8982"), n.e("7717"), n.e("74800")]).then(n.bind(n, 757387)), t = B.Z.isInChannel(H.Z.getVoiceChannelId(), u.id);
         return n => (0, r.jsx)(e, $(J({}, n), {
           user: u,
-          guildId: j,
+          guildId: _,
           channel: x,
           showMediaItems: t
         }))
       })
-    }, [u, j, x]), R = i.useCallback(() => {
+    }, [u, _, x]), R = i.useCallback(() => {
       let e = "@".concat(W.ZP.getUserTag(u, {
           decoration: "never"
         })),
@@ -157,18 +157,18 @@ let et = Y.ZP.getEnableHardwareAcceleration(),
         rawText: t
       }), b.Z.startTyping(x.id)
     }, [u, x.id]), w = i.useCallback(e => {
-      null != j && (e.stopPropagation(), (0, N.f)({
-        guildId: j,
+      null != _ && (e.stopPropagation(), (0, N.f)({
+        guildId: _,
         location: {
           section: q.jXE.MEMBER_LIST,
           object: q.qAy.BOOST_GEM_ICON
         }
       }))
-    }, [j]);
+    }, [_]);
     return (0, r.jsx)(k.Z, {
       targetElementRef: S,
       user: u,
-      guildId: j,
+      guildId: _,
       channelId: x.id,
       roleId: s,
       position: d.tq ? "window_center" : "left",
@@ -199,9 +199,9 @@ let et = Y.ZP.getEnableHardwareAcceleration(),
           colorString: t,
           colorStrings: l,
           colorRoleName: a,
-          isTyping: _,
+          isTyping: j,
           channel: x,
-          guildId: j,
+          guildId: _,
           isMobile: O,
           onClickPremiumGuildIcon: w,
           selected: Z,
@@ -544,7 +544,7 @@ class es extends i.Component {
         num_users_visible_with_avatar_decoration: 0,
         num_users_visible_with_nameplate: 0
       });
-      this.lastReportedAnalyticsChannel = this.props.channel.id, _.ZP.trackWithMetadata(q.rMx.MEMBER_LIST_VIEWED, J({}, i))
+      this.lastReportedAnalyticsChannel = this.props.channel.id, j.ZP.trackWithMetadata(q.rMx.MEMBER_LIST_VIEWED, J({}, i))
     })
   }
 }
@@ -555,7 +555,7 @@ function eo(e) {
     className: n
   } = e, {
     analyticsLocations: l
-  } = (0, O.ZP)(j.Z.MEMBER_LIST), s = (0, p.e7)([x.Z], () => x.Z.keyboardModeEnabled), o = (0, p.cj)([M.ZP], () => M.ZP.getProps(t.guild_id, t.id)), {
+  } = (0, O.ZP)(_.Z.MEMBER_LIST), s = (0, p.e7)([x.Z], () => x.Z.keyboardModeEnabled), o = (0, p.cj)([M.ZP], () => M.ZP.getProps(t.guild_id, t.id)), {
     rows: d,
     groups: h,
     version: g,
@@ -564,7 +564,7 @@ function eo(e) {
     memberStoreProps: o,
     channelId: t.id,
     guildId: t.guild_id
-  }), b = i.useRef(null), y = (0, f.UBm)("lg") + (0, f.UBm)("xxs"), _ = i.useCallback((e, t) => {
+  }), b = i.useRef(null), y = (0, f.UBm)("lg") + (0, f.UBm)("xxs"), j = i.useCallback((e, t) => {
     let n = b.current;
     if (null == n) return;
     let r = parseInt(t, 10),
@@ -598,7 +598,7 @@ function eo(e) {
     })
   }), []), E = (0, u.ZP)({
     id: "members-".concat(t.id),
-    setFocus: _,
+    setFocus: j,
     isEnabled: s,
     scrollToStart: v,
     scrollToEnd: C

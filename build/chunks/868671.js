@@ -1,7 +1,7 @@
 /** Chunk was on 49152 **/
 n.d(t, {
   H: () => O,
-  T: () => _
+  T: () => j
 }), n(388685);
 var r = n(73800),
   i = n(442837),
@@ -20,15 +20,15 @@ var r = n(73800),
   b = n(206583),
   y = n(809017),
   x = n(981631),
-  j = n(388032);
-let _ = 0;
+  _ = n(388032);
+let j = 0;
 
 function O(e) {
   let {
     memberStoreProps: {
       groups: t,
       rows: n,
-      version: _
+      version: j
     },
     channelId: O,
     guildId: v
@@ -39,7 +39,7 @@ function O(e) {
     hasLeaderboardEntry: P
   } = (0, g.Z)(O), T = (0, i.e7)([h.Z], () => h.Z.hidden), N = (0, i.e7)([c.Z], () => c.Z.isFocused()), R = (0, i.e7)([s.Z], () => s.Z.getChannel(O)), w = (0, i.e7)([o.Z], () => o.Z.getGuild(v), [v]), A = (0, p.E)(w), D = null != A && A && (null == R ? void 0 : R.isForumChannel()) === !1, [k, L, M, U] = r.useMemo(() => {
     let e;
-    if (null == Z || 0 === Z.length || null == S || !D) return [t, n, _];
+    if (null == Z || 0 === Z.length || null == S || !D) return [t, n, j];
     let r = C ? Z.length : P ? 4 : 3,
       i = Z.slice(0, r);
     e = T ? [{
@@ -55,7 +55,7 @@ function O(e) {
       key: y.G,
       count: e.length,
       index: n.length,
-      title: j.intl.string(j.t["6gwSFR"]),
+      title: _.intl.string(_.t["6gwSFR"]),
       onToggleExpand: () => {
         E(e => {
           let t = !e;
@@ -74,7 +74,7 @@ function O(e) {
       [l, ...t],
       [...n, l, ...e], Math.random(), e
     ]
-  }, [O, Z, C, t, v, S, n, _, T, D, P]), H = r.useRef(0), G = r.useRef(Z), F = r.useRef(void 0), B = r.useRef({
+  }, [O, Z, C, t, v, S, n, j, T, D, P]), H = r.useRef(0), G = r.useRef(Z), F = r.useRef(void 0), B = r.useRef({
     impressionCappedEntryIds: I
   }), z = r.useCallback(e => {
     var t;

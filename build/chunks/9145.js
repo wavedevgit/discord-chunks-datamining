@@ -19,8 +19,8 @@ var r = n(255367),
   b = n(402113),
   y = n(800965),
   x = n(592125),
-  j = n(271383),
-  _ = n(944486),
+  _ = n(271383),
+  j = n(944486),
   O = n(594174),
   v = n(585483),
   C = n(51144),
@@ -83,10 +83,10 @@ function B(e) {
     eo ? ((t = ea.width / L.I0) > ea.height && (e = (t = ea.height) * L.I0), eu = (ea.height - t) / 2) : ((e = Math.min(ea.height * L.I0)) > ea.width && (t = (e = ea.width) / L.I0), ec = (ea.width - e) / 2)
   }
   let eh = X.get(null != (l = null == W ? void 0 : W.id) ? l : ""),
-    ep = (0, s.e7)([_.Z], () => _.Z.getChannelId()),
-    ef = (0, s.Wu)([j.ZP], () => {
+    ep = (0, s.e7)([j.Z], () => j.Z.getChannelId()),
+    ef = (0, s.Wu)([_.ZP], () => {
       var e;
-      return null == K ? [] : Array.from(null != (e = null == eh ? void 0 : eh.embeddedActivity.userIds) ? e : []).map(e => j.ZP.getMember(K.guild_id, e))
+      return null == K ? [] : Array.from(null != (e = null == eh ? void 0 : eh.embeddedActivity.userIds) ? e : []).map(e => _.ZP.getMember(K.guild_id, e))
     }, [eh, K]),
     eg = i.useMemo(() => {
       let e = new Map;

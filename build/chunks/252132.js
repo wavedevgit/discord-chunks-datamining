@@ -25,8 +25,8 @@ function s(e) {
     onDoubleClick: b,
     onVideoResize: y,
     paused: x,
-    pulseSpeakingIndicator: j,
-    participant: _,
+    pulseSpeakingIndicator: _,
+    participant: j,
     width: O
   } = e, v = function(e, t) {
     if (null == e) return {};
@@ -84,9 +84,9 @@ function s(e) {
         onContextMenu: m,
         onDoubleClick: b,
         onVideoResize: y,
-        participant: _,
+        participant: j,
         paused: x,
-        pulseSpeakingIndicator: j,
+        pulseSpeakingIndicator: _,
         videoComponent: C,
         width: O
       }, v)), d]

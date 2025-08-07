@@ -21,35 +21,35 @@ var r = n(255367),
 let x = i.memo(function(e) {
   let {
     channel: t
-  } = e, x = (0, u.h)(t.id), j = (0, d.o)(t.id), _ = (0, h.M)(t.id), O = (0, a.f9)(), v = (0, l.e7)([f.Z], () => f.Z.hasLayers()), C = i.useCallback(() => j ? b.intl.string(b.t["16QyDg"]) : null != _ ? b.intl.string(b.t.kCN9i4) : null, [j, _]), E = i.useMemo(() => (j || null != _) && !O && !v, [j, _, O, v]), [S, Z] = i.useState(C());
+  } = e, x = (0, u.h)(t.id), _ = (0, d.o)(t.id), j = (0, h.M)(t.id), O = (0, a.f9)(), v = (0, l.e7)([f.Z], () => f.Z.hasLayers()), C = i.useCallback(() => _ ? b.intl.string(b.t["16QyDg"]) : null != j ? b.intl.string(b.t.kCN9i4) : null, [_, j]), E = i.useMemo(() => (_ || null != j) && !O && !v, [_, j, O, v]), [S, Z] = i.useState(C());
   i.useEffect(() => {
-    null != _ && null != x && (s.uvj.announce(b.intl.string(b.t.acsXuL)), setTimeout(() => {
-      (0, c.T)(t.id, [_.id])
+    null != j && null != x && (s.uvj.announce(b.intl.string(b.t.acsXuL)), setTimeout(() => {
+      (0, c.T)(t.id, [j.id])
     }, 5e3), (0, p.KQ)({
       channelId: t.id,
       senderId: t.getRecipientId(),
-      warningId: _.id,
-      warningType: _.type,
-      isNudgeWarning: null != _,
+      warningId: j.id,
+      warningType: j.type,
+      isNudgeWarning: null != j,
       viewName: p.pb.SAFETY_TOOLS_NUDGE_TOOLTIP
-    })), j && (s.uvj.announce(b.intl.string(b.t["1dxCqK"])), setTimeout(() => {
+    })), _ && (s.uvj.announce(b.intl.string(b.t["1dxCqK"])), setTimeout(() => {
       (0, c.Ot)(t.id)
     }, 5e3))
-  }, [t, _, x, j]), (0, o.ZP)(() => {
+  }, [t, j, x, _]), (0, o.ZP)(() => {
     null != x && (0, p.KQ)({
       channelId: t.id,
       senderId: t.getRecipientId(),
       warningId: x.id,
       warningType: x.type,
-      isNudgeWarning: null != _,
+      isNudgeWarning: null != j,
       viewName: p.pb.SAFETY_TOOLS_BUTTON
     })
   }), i.useEffect(() => {
     let e = C();
     null != e && Z(e)
-  }, [j, _, C]);
+  }, [_, j, C]);
   let I = i.useCallback(() => {
-    null != _ && (0, c.T)(t.id, [_.id]), null != x && ((0, s.ZDy)(async () => {
+    null != j && (0, c.T)(t.id, [j.id]), null != x && ((0, s.ZDy)(async () => {
       let {
         default: e
       } = await Promise.all([n.e("49508"), n.e("9738"), n.e("71745")]).then(n.bind(n, 611446));
@@ -75,9 +75,9 @@ let x = i.memo(function(e) {
       warningId: x.id,
       warningType: x.type,
       cta: p.NM.USER_SAFETY_TOOLS_BUTTON_CLICK,
-      isNudgeWarning: null != _
+      isNudgeWarning: null != j
     }))
-  }, [_, x, t]);
+  }, [j, x, t]);
   return null == x ? null : (0, r.jsx)(s.ua7, {
     forceOpen: E,
     text: S,
@@ -89,7 +89,7 @@ let x = i.memo(function(e) {
       icon: s.b7C,
       onClick: I,
       tooltip: b.intl.string(b.t.rpc2qq),
-      tooltipDisabled: null != _
+      tooltipDisabled: null != j
     })
   })
 })

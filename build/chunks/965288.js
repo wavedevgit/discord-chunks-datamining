@@ -20,8 +20,8 @@ var r = n(255367),
   b = n(213609),
   y = n(795318),
   x = n(670188),
-  j = n(314897),
-  _ = n(271383),
+  _ = n(314897),
+  j = n(271383),
   O = n(5192),
   v = n(590415),
   C = n(354459),
@@ -137,11 +137,11 @@ let I = i.memo(function(e) {
     } = e, {
       user: s,
       blocked: d
-    } = t, O = l.getGuildId(), v = j.default.getId(), {
+    } = t, O = l.getGuildId(), v = _.default.getId(), {
       newestAnalyticsLocation: I
-    } = (0, m.ZP)(g.Z.AUDIENCE_TILE), T = (0, f.bp)(), N = (0, u.e7)([_.ZP], () => {
+    } = (0, m.ZP)(g.Z.AUDIENCE_TILE), T = (0, f.bp)(), N = (0, u.e7)([j.ZP], () => {
       var e;
-      return null != O && (null == (e = _.ZP.getMember(O, s.id)) ? void 0 : e.premiumSince) != null
+      return null != O && (null == (e = j.ZP.getMember(O, s.id)) ? void 0 : e.premiumSince) != null
     }, [O, s.id]), R = i.useRef(null);
     o()(null != O, "Channel cannot be guildless");
     let w = i.useCallback(e => {

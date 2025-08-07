@@ -19,8 +19,8 @@ var r = n(255367),
   b = n(496675),
   y = n(146085),
   x = n(979339),
-  j = n(643632),
-  _ = n(388032),
+  _ = n(643632),
+  j = n(388032),
   O = n(941188);
 
 function v(e) {
@@ -40,8 +40,8 @@ function v(e) {
       width: 20
     }),
     color: o.Z.unsafe_rawColors.PRIMARY_700.css,
-    title: _.intl.string(_.t.jMLfp6),
-    description: _.intl.string(_.t["Vd/rER"]),
+    title: j.intl.string(j.t.jMLfp6),
+    description: j.intl.string(j.t["Vd/rER"]),
     onClick: t,
     className: n
   })
@@ -66,15 +66,15 @@ function C(e) {
       color: "header-secondary",
       children: function(e) {
         if (0 === e.length) return "";
-        if (1 === e.length) return _.intl.formatToPlainString(_.t["5ULgaW"], {
+        if (1 === e.length) return j.intl.formatToPlainString(j.t["5ULgaW"], {
           first: e[0].userNick
         });
-        if (2 === e.length) return _.intl.formatToPlainString(_.t.BHK0Oj, {
+        if (2 === e.length) return j.intl.formatToPlainString(j.t.BHK0Oj, {
           first: e[0].userNick,
           second: e[1].userNick
         });
         let t = e.length - 2;
-        return _.intl.formatToPlainString(_.t.T3MT4u, {
+        return j.intl.formatToPlainString(j.t.T3MT4u, {
           first: e[0].userNick,
           second: e[1].userNick,
           numOthers: t
@@ -90,7 +90,7 @@ function E(e) {
     onContinueClick: n
   } = e, l = (0, s.e7)([b.Z], () => b.Z.can(y.yP, t), [t]), o = t.guild_id, {
     canCreateGuildEvent: u
-  } = (0, g.XJ)(t), d = (0, j.Z)(t.id), x = i.useRef(null);
+  } = (0, g.XJ)(t), d = (0, _.Z)(t.id), x = i.useRef(null);
   return (0, r.jsxs)("div", {
     className: O.container,
     ref: x,
@@ -103,12 +103,12 @@ function E(e) {
         children: [(0, r.jsx)(c.X6q, {
           className: O.__invalid_title,
           variant: "heading-xxl/normal",
-          children: _.intl.string(_.t.QGnDLi)
+          children: j.intl.string(j.t.QGnDLi)
         }), (0, r.jsx)(c.Text, {
           tag: "div",
           className: O.subtitle,
           variant: "heading-lg/normal",
-          children: _.intl.string(_.t.djfK39)
+          children: j.intl.string(j.t.djfK39)
         })]
       }), d ? null : (0, r.jsx)(p.Z, {
         channelId: t.id

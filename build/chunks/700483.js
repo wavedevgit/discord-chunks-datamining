@@ -19,8 +19,8 @@ var r = n(255367),
   b = n(575175),
   y = n(522651),
   x = n(795318),
-  j = n(258609),
-  _ = n(74299),
+  _ = n(258609),
+  j = n(74299),
   O = n(924301),
   v = n(459502),
   C = n(856691),
@@ -124,8 +124,8 @@ function ed(e) {
   } = e, l = (0, d.bp)(), {
     canManageGuildEvent: f
   } = (0, E.XJ)(t), g = (0, s.e7)([K.Z], () => K.Z.getStageInstanceByChannel(t.id), [t.id]), m = (0, s.e7)([O.ZP], () => O.ZP.getGuildScheduledEvent(null == g ? void 0 : g.guild_scheduled_event_id)), b = (0, s.e7)([G.Z], () => G.Z.getVoiceChannelId() === t.id, [t.id]), {
-    suppress: j
-  } = (0, P.Z)(t), _ = M.default.getId(), [v] = (0, er.Z)(t), C = q.ZP.isModerator(_, t.id), S = (0, W.B)(t.id), Z = f(m), {
+    suppress: _
+  } = (0, P.Z)(t), j = M.default.getId(), [v] = (0, er.Z)(t), C = q.ZP.isModerator(j, t.id), S = (0, W.B)(t.id), Z = f(m), {
     parentAnalyticsLocation: I
   } = (0, p.ZP)(), T = i.useRef(null);
   if (!b) return (0, r.jsx)(o.zx, {
@@ -202,7 +202,7 @@ function ed(e) {
         popoutOpen: i
       })
     }
-  }) : j && !S || v ? (0, r.jsx)(D.Z, {
+  }) : _ && !S || v ? (0, r.jsx)(D.Z, {
     label: ea.intl.string(ea.t.SMKyio),
     onClick: N
   }) : (0, r.jsx)(D.Z, {
@@ -262,13 +262,13 @@ let ef = i.memo(function(e) {
     suppress: l,
     selfMute: a,
     mute: o
-  } = (0, P.Z)(t), u = (0, W.B)(t.id), d = (0, s.e7)([j.Z], () => null != j.Z.getAwaitingRemoteSessionInfo()), {
+  } = (0, P.Z)(t), u = (0, W.B)(t.id), d = (0, s.e7)([_.Z], () => null != _.Z.getAwaitingRemoteSessionInfo()), {
     cameraUnavailable: h,
     enabled: y
   } = (0, S.Z)(), O = (0, I.Z)(t), {
     limit: v,
     reachedLimit: C
-  } = (0, Z.Z)(t), E = (0, s.e7)([F.default], () => F.default.getCurrentUser()), A = (0, s.e7)([U.Z], () => (0, _.Z)(U.Z)), D = (0, s.e7)([G.Z], () => G.Z.getVoiceChannelId() === t.id, [t.id]), M = (0, s.e7)([f.Z], () => f.Z.getStreamParticipants(t.id)[0], [t.id]), H = (0, Q.PK)(t.id), B = v > 0, z = C && !H || null != M && M.user.id !== (null == E ? void 0 : E.id), V = (0, x.u)("AudioDeviceMenu", n, {
+  } = (0, Z.Z)(t), E = (0, s.e7)([F.default], () => F.default.getCurrentUser()), A = (0, s.e7)([U.Z], () => (0, j.Z)(U.Z)), D = (0, s.e7)([G.Z], () => G.Z.getVoiceChannelId() === t.id, [t.id]), M = (0, s.e7)([f.Z], () => f.Z.getStreamParticipants(t.id)[0], [t.id]), H = (0, Q.PK)(t.id), B = v > 0, z = C && !H || null != M && M.user.id !== (null == E ? void 0 : E.id), V = (0, x.u)("AudioDeviceMenu", n, {
     entrypoint: el.A5.CARET
   }), Y = i.useRef(null), q = i.useRef(null);
   if (null == E) return null;

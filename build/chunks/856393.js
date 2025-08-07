@@ -20,8 +20,8 @@ var r = n(255367),
   b = n(906732),
   y = n(358221),
   x = n(414910),
-  j = n(909820),
-  _ = n(493010),
+  _ = n(909820),
+  j = n(493010),
   O = n(71127),
   v = n(185935),
   C = n(522651),
@@ -103,13 +103,13 @@ function eu(e) {
   } = (0, b.ZP)(), d = t.getGuildId(), h = (0, o.e7)([U.Z], () => U.Z.getMostRecentSelectedTextChannelId(d), [d]), p = D.default.getId(), f = !(0, o.e7)([y.Z], () => y.Z.isFullscreenInContext(n)) && (!H.isPlatformEmbedded || H.isPlatformEmbedded && G.ZP.supportsFeature(et.eRX.POPOUT_WINDOWS)), g = null != c && c.type !== en.fO.ACTIVITY && c.user.id !== p, m = i.useMemo(() => {
     var e;
     return null != (e = null == a ? void 0 : a.window) ? e : window
-  }, [a]), j = (0, $.Z)({
+  }, [a]), _ = (0, $.Z)({
     channel: t,
     appContext: n,
     popoutOpen: l,
     popoutWindow: a,
     currentWindow: m
-  }), _ = n === et.IlC.POPOUT && H.isPlatformEmbedded && G.ZP.supportsFeature(et.eRX.POPOUT_WINDOWS);
+  }), j = n === et.IlC.POPOUT && H.isPlatformEmbedded && G.ZP.supportsFeature(et.eRX.POPOUT_WINDOWS);
   return (0, r.jsxs)(r.Fragment, {
     children: [g ? (0, r.jsx)(A.Z, {
       context: (0, x.Z)(c.type),
@@ -117,7 +117,7 @@ function eu(e) {
       currentWindow: m,
       sliderClassName: ei.volumeSlider,
       location: u
-    }) : null, _ ? (0, r.jsx)(w.Z, {
+    }) : null, j ? (0, r.jsx)(w.Z, {
       popoutWindowAlwaysOnTop: s,
       onToggleStayOnTop: ec
     }) : null, f ? (0, r.jsx)(R.Z, {
@@ -128,7 +128,7 @@ function eu(e) {
       onClosePopout: () => {
         (0, C.v)(u, C.d.POPOUT, !1), eo()
       }
-    }) : null, j]
+    }) : null, _]
   })
 }
 
@@ -156,7 +156,7 @@ function eh(e) {
       popoutWindowAlwaysOnTop: p,
       popoutOpen: f,
       chatOpen: x,
-      idleProps: _
+      idleProps: j
     } = e,
     {
       analyticsLocations: O
@@ -222,7 +222,7 @@ function eh(e) {
       showRequestToSpeakSidebar: d,
       channel: c
     }),
-    renderChatToasts: () => !A || x || I ? null : (0, r.jsx)(j.ZP, {
+    renderChatToasts: () => !A || x || I ? null : (0, r.jsx)(_.ZP, {
       children: (0, r.jsx)(T.Z, {
         className: a()(ei.chatToasts, {
           [ei.rtsSidebarOpen]: d
@@ -233,7 +233,7 @@ function eh(e) {
     screenMessage: I ? {
       mainText: er.intl.string(er.t.J5bXZW)
     } : null
-  }, _), n = n = {
+  }, j), n = n = {
     children: !I && l
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
     var n = Object.keys(e);
@@ -285,7 +285,7 @@ function ep(e) {
   } = (0, p.ZP)(), D = w - 550, k = !C || C && Z === et.IlC.POPOUT;
   return (0, r.jsx)(b.Gt, {
     value: E,
-    children: (0, r.jsxs)(j.B2, {
+    children: (0, r.jsxs)(_.B2, {
       children: [(0, r.jsxs)("div", {
         className: ei.container,
         ref: A,
@@ -316,7 +316,7 @@ function ep(e) {
           chatOpen: I
         }) : null, (0, r.jsxs)("div", {
           className: ei.channelChatWrapper,
-          children: [I && k && (0, r.jsx)(_.Z, {
+          children: [I && k && (0, r.jsx)(j.Z, {
             channel: t,
             guild: N,
             maxWidth: D
@@ -325,7 +325,7 @@ function ep(e) {
             maxWidth: D
           })]
         })]
-      }), (0, r.jsx)(j.H_, {})]
+      }), (0, r.jsx)(_.H_, {})]
     })
   })
 }

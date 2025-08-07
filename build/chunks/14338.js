@@ -1,6 +1,6 @@
 /** Chunk was on 49152 **/
 n.d(t, {
-  Z: () => j
+  Z: () => _
 });
 var r = n(255367),
   i = n(73800),
@@ -55,8 +55,8 @@ function x(e) {
     speaker: l,
     className: f
   } = e, x = i.useRef(null), {
-    newestAnalyticsLocation: j
-  } = (0, d.ZP)(), _ = (0, u.bp)(), {
+    newestAnalyticsLocation: _
+  } = (0, d.ZP)(), j = (0, u.bp)(), {
     reducedMotion: O
   } = i.useContext(s.Sfi), v = (0, c.Z)({
     userId: l.id
@@ -72,10 +72,10 @@ function x(e) {
         showMediaItems: !0,
         showStageChannelItems: !0,
         showChatItems: !1,
-        onInteraction: (0, h.u)("GuildChannelUserContextMenu", j)
+        onInteraction: (0, h.u)("GuildChannelUserContextMenu", _)
       }))
     }, {
-      context: _
+      context: j
     })
   };
   return (0, r.jsx)(p.Z, {
@@ -106,7 +106,7 @@ function x(e) {
   })
 }
 
-function j(e) {
+function _(e) {
   let {
     speakers: t,
     channel: n

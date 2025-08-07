@@ -19,8 +19,8 @@ var r = n(255367),
   b = n(892001),
   y = n(113557),
   x = n(867176),
-  j = n(451834),
-  _ = n(502762),
+  _ = n(451834),
+  j = n(502762),
   O = n(952124),
   v = n(544989),
   C = n(481932),
@@ -83,7 +83,7 @@ function w(e) {
       isLoaded: null == w ? void 0 : w.isLoaded,
       children: (0, r.jsx)(m.NJ, {
         value: G,
-        children: (0, r.jsxs)(_.Z, {
+        children: (0, r.jsxs)(j.Z, {
           ref: U,
           user: t,
           displayProfile: w,
@@ -112,7 +112,7 @@ function w(e) {
                 themeType: P.lY.SIDEBAR,
                 animateOnHover: !H,
                 className: N.banner
-              }), (0, r.jsx)(j.Z, {
+              }), (0, r.jsx)(_.Z, {
                 userId: t.id,
                 className: N.toast
               }), (0, r.jsx)(y.Z, {

@@ -38,12 +38,12 @@ function x(e) {
     }
     return i
   }(e, ["channelId", "className"]);
-  let j = i.useRef(null),
-    _ = (0, a.e7)([f.ZP], () => f.ZP.getFocusedLayout() === g.MI.RESIZABLE),
+  let _ = i.useRef(null),
+    j = (0, a.e7)([f.ZP], () => f.ZP.getFocusedLayout() === g.MI.RESIZABLE),
     O = i.useCallback(() => {
-      let e = _ ? g.MI.NO_CHAT : g.MI.RESIZABLE;
+      let e = j ? g.MI.NO_CHAT : g.MI.RESIZABLE;
       (0, p.gC)(e)
-    }, [_]),
+    }, [j]),
     {
       unreadCount: v,
       mentionCount: C
@@ -64,13 +64,13 @@ function x(e) {
     }(t),
     E = i.useCallback(() => {
       var e;
-      null == (e = j.current) || e.focus()
+      null == (e = _.current) || e.focus()
     }, []);
   (0, h.yp)({
     event: m.CkL.FOCUS_CHAT_BUTTON,
     handler: E
   });
-  let S = _ ? b.intl.string(b.t["5MstTk"]) : b.intl.string(b.t.kkKapK),
+  let S = j ? b.intl.string(b.t["5MstTk"]) : b.intl.string(b.t.kkKapK),
     Z = [S];
   C > 0 && Z.push(b.intl.formatToPlainString(b.t["3l1GOz"], {
     mentionCount: C
@@ -99,7 +99,7 @@ function x(e) {
       return e
     }({
       isTrayButton: !0,
-      buttonRef: j,
+      buttonRef: _,
       onClick: O,
       label: S,
       "aria-label": Z.join(", "),

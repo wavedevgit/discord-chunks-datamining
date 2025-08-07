@@ -19,8 +19,8 @@ var r = n(255367),
   b = n(933557),
   y = n(236091),
   x = n(623624),
-  j = n(665149),
-  _ = n(984370),
+  _ = n(665149),
+  j = n(984370),
   O = n(616286),
   v = n(975146),
   C = n(430824),
@@ -53,10 +53,10 @@ function M(e) {
     chatOpen: f.Z.getChatOpen(t.id),
     participantsListOpen: f.Z.getParticipantsListOpen(t.id)
   }), [t.id]), b = (0, P.B)(t.id), x = (0, Z.Rk)(t.id, I.pV.REQUESTED_TO_SPEAK_ONLY), {
-    hasParticipantsPanel: j
+    hasParticipantsPanel: _
   } = (0, g.Z)({
     location: "StageChannelCallHeader"
-  }), _ = j && u;
+  }), j = _ && u;
   return (0, r.jsxs)(p.Gt, {
     value: l,
     children: [(0, r.jsx)(y.Z, {
@@ -70,7 +70,7 @@ function M(e) {
         showRequestToSpeakSidebar: i,
         numRequestToSpeak: x
       })
-    }) : null, !u && j && (0, r.jsx)(v.Z, {
+    }) : null, !u && _ && (0, r.jsx)(v.Z, {
       className: a()(L.button, {
         [L.sidebarOpen]: c
       }),
@@ -79,7 +79,7 @@ function M(e) {
       }
     }, "participants-list-button"), !c && (0, r.jsx)("div", {
       className: a()(L.button, {
-        [L.sidebarOpen]: _ || i
+        [L.sidebarOpen]: j || i
       }),
       children: (0, r.jsx)(O.T, {
         channelId: t.id,
@@ -130,28 +130,28 @@ function U(e) {
     theme: A.BRd.DARK,
     children: e => {
       var t;
-      return (0, r.jsxs)(j.ZP, {
+      return (0, r.jsxs)(_.ZP, {
         toolbar: (0, r.jsx)(M, {
           toggleRequestToSpeakSidebar: l,
           showRequestToSpeakSidebar: h,
           channel: n
         }),
-        onDoubleClick: _.O,
+        onDoubleClick: j.O,
         transparent: !0,
         className: a()(e, L.participants),
-        children: [(0, r.jsx)(j.ZP.Icon, {
+        children: [(0, r.jsx)(_.ZP.Icon, {
           icon: u.ewx,
           disabled: !0,
           "aria-label": k.intl.string(k.t.EErMzM),
           className: L.icon,
           color: null != f ? o.Z.colors.HEADER_MUTED.css : void 0
-        }), (0, r.jsx)(j.ZP.Title, {
+        }), (0, r.jsx)(_.ZP.Title, {
           className: L.channelName,
           wrapperClassName: L.channelNameWrapper,
           children: null != (t = null == f ? void 0 : f.topic) ? t : p
-        }), (0, r.jsx)(j.ZP.Divider, {
+        }), (0, r.jsx)(_.ZP.Divider, {
           className: L.divider
-        }), (0, r.jsxs)(j.ZP.Title, {
+        }), (0, r.jsxs)(_.ZP.Title, {
           children: [(0, r.jsx)(u.S6n, {
             size: "xs",
             color: o.Z.colors.TEXT_LOW_CONTRAST.css

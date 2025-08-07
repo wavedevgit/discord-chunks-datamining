@@ -1,6 +1,6 @@
 /** Chunk was on 49152 **/
 n.d(t, {
-  Z: () => _
+  Z: () => j
 });
 var r = n(255367),
   i = n(73800),
@@ -19,17 +19,17 @@ var r = n(255367),
   b = n(358085),
   y = n(228488),
   x = n(981631);
-let j = () => {
+let _ = () => {
   a.Z.wait(() => h.xv(x.KJ3.CHANNEL_CALL_POPOUT))
 };
 
-function _(e) {
+function j(e) {
   let {
     channel: t,
     appContext: n,
     popoutOpen: a,
     popoutWindow: h,
-    currentWindow: _
+    currentWindow: j
   } = e, {
     parentAnalyticsLocation: O
   } = (0, c.ZP)(), v = n === x.IlC.POPOUT, C = i.useRef(null), {
@@ -54,13 +54,13 @@ function _(e) {
       rootNode: T
     } = i.useMemo(() => {
       let e = null != h && v ? h.document : document,
-        t = _.document.getElementById("app-mount");
+        t = j.document.getElementById("app-mount");
       return {
-        currentWindow: _,
+        currentWindow: j,
         currentDocument: e,
         rootNode: t
       }
-    }, [h, v, _]),
+    }, [h, v, j]),
     N = a && !v,
     R = S === x.WtW.VIDEO && Z && !N,
     w = i.useCallback((e, r) => {
@@ -119,7 +119,7 @@ function _(e) {
   }, [E, v]), i.useEffect(() => {
     null != T && C.current === x.WtW.VIDEO && S === x.WtW.VOICE && (0, y.Pr)(T, P)
   }, [P, S, C, T]), i.useEffect(() => {
-    !Z && v && j()
+    !Z && v && _()
   }, [Z, v]), R) ? (0, r.jsx)(p.Z, {
     themeable: !1,
     node: T,

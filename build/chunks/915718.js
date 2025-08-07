@@ -19,8 +19,8 @@ var r = n(255367),
   b = n(970731),
   y = n(560688),
   x = n(173507),
-  j = n(523746),
-  _ = n(819640),
+  _ = n(523746),
+  j = n(819640),
   O = n(131951),
   v = n(699516),
   C = n(594174),
@@ -186,16 +186,16 @@ function k(e) {
   } = e, s = (0, m.Z)(), o = (0, l.e7)([p.Z], () => p.Z.getMode(n.id)), c = (0, l.e7)([E.Z], () => E.Z.isInChannel(n.id)), f = (0, l.e7)([d.Z], () => d.Z.useReducedMotion), {
     callActive: g,
     callUnavailable: b
-  } = (0, l.cj)([j.Z], () => ({
-    callActive: j.Z.isCallActive(n.id),
-    callUnavailable: j.Z.isCallUnavailable(n.id)
+  } = (0, l.cj)([_.Z], () => ({
+    callActive: _.Z.isCallActive(n.id),
+    callUnavailable: _.Z.isCallUnavailable(n.id)
   })), y = n.getRecipientId(), {
     notFriend: x,
     isBlocked: O
   } = (0, l.cj)([v.Z], () => ({
     notFriend: n.type === P.d4z.DM && null != y && !v.Z.isFriend(y),
     isBlocked: n.type === P.d4z.DM && null != y && v.Z.isBlocked(y)
-  })), S = (0, l.e7)([C.default], () => C.default.getUser(y)), Z = (0, u.bp)(), I = [], T = (0, h.Z)(n.id), N = (0, l.e7)([_.Z], () => _.Z.hasLayers());
+  })), S = (0, l.e7)([C.default], () => C.default.getUser(y)), Z = (0, u.bp)(), I = [], T = (0, h.Z)(n.id), N = (0, l.e7)([j.Z], () => j.Z.hasLayers());
   T && !N && I.push(a.z.ACTIVITY_GDM_CALL_TOOLTIP);
   let [R, w] = i.useState(!1);
   return (i.useEffect(() => {

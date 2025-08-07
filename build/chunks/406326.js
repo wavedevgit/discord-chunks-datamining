@@ -55,7 +55,7 @@ function x(e) {
     searchMode: l,
     onSearchModeChange: c,
     totalResults: x,
-    isIndexing: _,
+    isIndexing: j,
     isSearching: O,
     documentsIndexed: v
   } = e, C = (0, h.UX)({
@@ -102,10 +102,10 @@ function x(e) {
     children: [(0, r.jsx)("div", {
       className: m.totalResults,
       role: "status",
-      children: (0, r.jsx)(j, {
+      children: (0, r.jsx)(_, {
         totalResults: x,
         subtitle: Z,
-        isIndexing: _,
+        isIndexing: j,
         isSearching: O,
         documentsIndexed: v
       })
@@ -147,7 +147,7 @@ function x(e) {
   })
 }
 
-function j(e) {
+function _(e) {
   let {
     totalResults: t,
     subtitle: n,
@@ -163,7 +163,7 @@ function j(e) {
   })
 }
 
-function _() {
+function j() {
   return (0, r.jsx)("div", {
     className: m.spinnerWrapper,
     children: (0, r.jsx)(o.$jN, {
@@ -193,7 +193,7 @@ function O(e) {
           href: c.Z.getArticleURL(f.BhN.SEARCH_INDEXING),
           children: g.intl.string(g.t["G3EA+/"])
         })
-      }), (0, r.jsx)(_, {})]
+      }), (0, r.jsx)(j, {})]
     }))
   })
 }
@@ -204,7 +204,7 @@ function v() {
       variant: "text-md/medium",
       color: "header-secondary",
       children: g.intl.string(g.t.uixzLS)
-    }), (0, r.jsx)(_, {})]
+    }), (0, r.jsx)(j, {})]
   })
 }
 

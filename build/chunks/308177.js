@@ -23,7 +23,7 @@ let x = {
     twoSpeakers: 624,
     threeSpeakers: 824
   },
-  j = (e, t) => {
+  _ = (e, t) => {
     let n = Math.floor(e / t - 8),
       r = Math.floor(n / m.Q);
     return {
@@ -31,7 +31,7 @@ let x = {
       speakerTileHeight: r
     }
   },
-  _ = (e, t) => e < x.singleSpeaker ? 1 : e < x.twoSpeakers ? 2 : e < x.threeSpeakers || t ? 3 : 4,
+  j = (e, t) => e < x.singleSpeaker ? 1 : e < x.twoSpeakers ? 2 : e < x.threeSpeakers || t ? 3 : 4,
   O = e => Math.floor((e - 32) / 102);
 
 function v(e) {
@@ -51,14 +51,14 @@ let C = (0, a.Z)(e => {
     selectedParticipantId: s.Z.getSelectedParticipantId(a.id),
     largeStream: s.Z.getStageStreamSize(a.id),
     chatOpen: s.Z.getChatOpen(a.id)
-  }), [a.id]), I = (0, c.Io)(a.id), P = (0, c.Rk)(a.id, u.pV.AUDIENCE), T = (0, l.e7)([o.Z], () => null != E ? o.Z.getParticipant(a.id, E) : null), N = (0, c.w8)(a.id, u.pV.SPEAKER), R = N.filter(v), w = null != N.find(e => e.type === u.Ui.STREAM), A = O(x), D = _(x, Z), k = {
+  }), [a.id]), I = (0, c.Io)(a.id), P = (0, c.Rk)(a.id, u.pV.AUDIENCE), T = (0, l.e7)([o.Z], () => null != E ? o.Z.getParticipant(a.id, E) : null), N = (0, c.w8)(a.id, u.pV.SPEAKER), R = N.filter(v), w = null != N.find(e => e.type === u.Ui.STREAM), A = O(x), D = j(x, Z), k = {
     [u.pV.SPEAKER]: D,
     [u.pV.AUDIENCE]: A,
     [u.pV.SELECTED]: 1
   }, L = (0, d.Dx)(a.id), [M, U] = (0, d.aP)(a.id, k, L), H = [Math.max(null != (t = M[0]) ? t : 1, 1), Math.max(null != (n = M[1]) ? n : 1, 1), M[2]], {
     speakerTileWidth: G,
     speakerTileHeight: F
-  } = j(x, D), B = S ? x - 32 : Math.min(x - 64, 3 * G + 8), z = e => e === M.length - 1 || 0 === P && 1 === e, [V, W] = i.useState(!1), [Y, q] = i.useState(!1);
+  } = _(x, D), B = S ? x - 32 : Math.min(x - 64, 3 * G + 8), z = e => e === M.length - 1 || 0 === P && 1 === e, [V, W] = i.useState(!1), [Y, q] = i.useState(!1);
   return (0, r.jsx)(p.Z, {
     sections: H,
     renderSection: e => {
