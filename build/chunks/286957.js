@@ -1,10 +1,10 @@
 /** Chunk was on 11776 **/
 n.d(t, {
-  z: () => i
+  z: () => o
 });
 var r = n(379405),
   l = n(481060);
-let o = {
+let i = {
     [r._.NOOB]: {
       text: "Noob",
       icon: l.jrt
@@ -38,7 +38,7 @@ let o = {
       icon: l.lbB
     }
   },
-  i = e => {
-    let t = o[e];
+  o = e => {
+    let t = i[e];
     return null != t ? t : null
   }

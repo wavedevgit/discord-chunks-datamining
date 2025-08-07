@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var l = n(971082),
-  o = n(817053),
-  i = n(853072),
+  i = n(817053),
+  o = n(853072),
   a = n(388032),
   c = n(467514),
   s = n(987278);
@@ -19,12 +19,12 @@ function d(e) {
     channelId: u,
     loading: f = !1,
     disableInteraction: p = !1
-  } = e, m = (0, i.Z)(t.applicationId), g = m.length > 0;
+  } = e, m = (0, o.Z)(t.applicationId), g = m.length > 0;
   return f ? (0, r.jsx)("div", {
-    className: c.gameCover
+    className: c.loadingCover
   }) : (0, r.jsxs)("div", {
     className: s.container,
-    children: [(0, r.jsx)(o.Z, {
+    children: [(0, r.jsx)(i.Z, {
       imageSrc: t.imageSrc,
       gameName: t.gameName,
       applicationId: t.applicationId,

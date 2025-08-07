@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var l = n(481060),
-  o = n(493683),
-  i = n(475413),
+  i = n(493683),
+  o = n(475413),
   a = n(388032);
 
 function c(e) {
@@ -19,17 +19,17 @@ function c(e) {
     var n, r, l = function(e, t) {
       if (null == e) return {};
       var n, r, l = {},
-        o = Object.keys(e);
-      for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (l[n] = e[n]);
+        i = Object.keys(e);
+      for (r = 0; r < i.length; r++) n = i[r], t.indexOf(n) >= 0 || (l[n] = e[n]);
       return l
     }(e, t);
     if (Object.getOwnPropertySymbols) {
-      var o = Object.getOwnPropertySymbols(e);
-      for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n])
+      var i = Object.getOwnPropertySymbols(e);
+      for (r = 0; r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n])
     }
     return l
   }(e, ["type", "userId", "onClose"]);
-  let d = t === i.j8.TEXT ? i.tG : i.ef;
+  let d = t === o.j8.TEXT ? o.tG : o.ef;
   return (0, r.jsx)(d, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
@@ -53,7 +53,7 @@ function c(e) {
     text: a.intl.string(a.t.zROXER),
     tooltipText: a.intl.string(a.t.zROXER),
     onClick: () => {
-      o.Z.openPrivateChannel({
+      i.Z.openPrivateChannel({
         recipientIds: n
       }), null == c || c()
     }

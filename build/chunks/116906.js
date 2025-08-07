@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var l = n(442837),
-  o = n(481060),
-  i = n(468363),
+  i = n(481060),
+  o = n(468363),
   a = n(353647),
   c = n(158776),
   s = n(885110),
@@ -17,11 +17,11 @@ var l = n(442837),
   m = n(678738),
   g = n(151545),
   b = n(744802),
-  j = n(493043),
-  h = n(864141),
+  h = n(493043),
+  j = n(864141),
   y = n(228168),
-  O = n(981631),
-  x = n(388032),
+  x = n(981631),
+  O = n(388032),
   v = n(316879),
   _ = n(301150);
 
@@ -35,7 +35,7 @@ function I(e) {
     onClose: Z
   } = e, {
     voiceActivityStatusEnabled: N
-  } = (0, i.U)({
+  } = (0, o.U)({
     location: "UserProfileModalActivity"
   }), T = (0, u.b)({
     location: "UserProfileModalActivity"
@@ -45,30 +45,30 @@ function I(e) {
     stream: w
   } = (0, f.Z)(t.id), {
     voiceChannel: C,
-    voiceActivity: R
+    voiceActivity: G
   } = (0, p.Z)({
     userId: t.id,
     guildId: P
-  }), G = (0, l.e7)([a.Z], () => a.Z.isFetchingUserOutbox(t.id)), L = t.id === n.id, M = (0, l.e7)([s.Z, c.Z], () => {
+  }), R = (0, l.e7)([a.Z], () => a.Z.isFetchingUserOutbox(t.id)), L = t.id === n.id, M = (0, l.e7)([s.Z, c.Z], () => {
     let e = L ? s.Z.getStatus() : c.Z.getStatus(t.id);
-    return e === o.Skl.OFFLINE || e === o.Skl.INVISIBLE
-  }), D = S.length > 0 || null != w, k = N && null == w && null == R && null != C, B = !M && (D || k), U = A.length > 0;
-  return B || U || !G ? (0, r.jsxs)(o.zJl, {
+    return e === i.Skl.OFFLINE || e === i.Skl.INVISIBLE
+  }), D = S.length > 0 || null != w, k = N && null == w && null == G && null != C, B = !M && (D || k), U = A.length > 0;
+  return B || U || !R ? (0, r.jsxs)(i.zJl, {
     className: v.scroller,
     fade: !0,
     children: [B ? (0, r.jsx)(m.Z, {
-      "aria-label": x.intl.string(x.t.J6STd3),
+      "aria-label": O.intl.string(O.t.J6STd3),
       children: (0, r.jsxs)("ul", {
         className: v.activityList,
         children: [!T && k && (0, r.jsx)("li", {
-          children: (0, r.jsx)(h.Z, {
+          children: (0, r.jsx)(j.Z, {
             user: t,
             currentUser: n,
             voiceChannel: C,
             onClose: Z
           })
         }), null != w && (0, r.jsx)("li", {
-          children: (0, r.jsx)(j.Z, {
+          children: (0, r.jsx)(h.Z, {
             location: "UserProfileModalActivity",
             user: t,
             currentUser: n,
@@ -87,10 +87,10 @@ function I(e) {
         }, "live-".concat(l)))]
       })
     }) : null, U ? (0, r.jsx)(m.Z, {
-      heading: x.intl.string(x.t.M0zgnZ),
-      introText: L ? x.intl.format(x.t["4bk9Ag"], {
-        learnMoreHook: (e, t) => (0, r.jsx)(o.eee, {
-          href: d.Z.getArticleURL(O.BhN.ACTIVITY_STATUS_SETTINGS),
+      heading: O.intl.string(O.t.M0zgnZ),
+      introText: L ? O.intl.format(O.t["4bk9Ag"], {
+        learnMoreHook: (e, t) => (0, r.jsx)(i.eee, {
+          href: d.Z.getArticleURL(x.BhN.ACTIVITY_STATUS_SETTINGS),
           children: e
         }, t)
       }) : void 0,
@@ -111,6 +111,6 @@ function I(e) {
     }) : null]
   }) : (0, r.jsx)("div", {
     className: _.empty,
-    children: (0, r.jsx)(o.$jN, {})
+    children: (0, r.jsx)(i.$jN, {})
   })
 }

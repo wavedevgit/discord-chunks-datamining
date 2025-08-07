@@ -4,8 +4,8 @@ n.d(t, {
 });
 var r = n(255367),
   l = n(481060),
-  o = n(906732),
-  i = n(5192),
+  i = n(906732),
+  o = n(5192),
   a = n(785717),
   c = n(892001),
   s = n(687158),
@@ -52,40 +52,40 @@ function p(e) {
     onClose: g
   } = e, {
     analyticsLocations: b,
-    sourceAnalyticsLocations: j
-  } = (0, o.ZP)(), {
-    context: h,
+    sourceAnalyticsLocations: h
+  } = (0, i.ZP)(), {
+    context: j,
     trackUserProfileAction: y
-  } = (0, a.KZ)(), O = (0, s.ZP)(t.id, n);
-  return (null == O ? void 0 : O.guildId) == null || null == h ? null : (null == m ? void 0 : m.guildId) != null ? (0, r.jsx)(l.sNh, {
+  } = (0, a.KZ)(), x = (0, s.ZP)(t.id, n);
+  return (null == x ? void 0 : x.guildId) == null || null == j ? null : (null == m ? void 0 : m.guildId) != null ? (0, r.jsx)(l.sNh, {
     id: "view-main-profile",
     label: d.intl.string(d.t.GISTtb),
     subtext: d.intl.formatToPlainString(d.t["mn/nW1"], {
-      displayName: i.ZP.getName(void 0, void 0, t)
+      displayName: o.ZP.getName(void 0, void 0, t)
     }),
     action: () => {
-      null == g || g(), (0, c.openUserProfileModal)(f(u({}, h), {
+      null == g || g(), (0, c.openUserProfileModal)(f(u({}, j), {
         showGuildProfile: !1,
-        sourceAnalyticsLocations: j
+        sourceAnalyticsLocations: h
       })), y(u({
         action: "PRESS_VIEW_MAIN_PROFILE",
         analyticsLocations: b
-      }, h))
+      }, j))
     }
   }) : (0, r.jsx)(l.sNh, {
     id: "view-server-profile",
     label: d.intl.string(d.t.DisZzM),
     subtext: d.intl.formatToPlainString(d.t["mn/nW1"], {
-      displayName: i.ZP.getName(n, p, t)
+      displayName: o.ZP.getName(n, p, t)
     }),
     action: () => {
-      null == g || g(), (0, c.openUserProfileModal)(f(u({}, h), {
+      null == g || g(), (0, c.openUserProfileModal)(f(u({}, j), {
         showGuildProfile: !0,
-        sourceAnalyticsLocations: j
+        sourceAnalyticsLocations: h
       })), y(u({
         action: "PRESS_VIEW_SERVER_PROFILE",
         analyticsLocations: b
-      }, h))
+      }, j))
     }
   })
 }

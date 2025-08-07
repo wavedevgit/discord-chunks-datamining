@@ -4,8 +4,8 @@ n.d(t, {
 }), n(388685);
 var r = n(255367),
   l = n(73800),
-  o = n(481060),
-  i = n(785717),
+  i = n(481060),
+  o = n(785717),
   a = n(128156),
   c = n(311044),
   s = n(408986),
@@ -18,8 +18,8 @@ function p(e) {
     user: t,
     currentUser: n,
     section: l,
-    subsection: o,
-    displayProfile: i,
+    subsection: i,
+    displayProfile: o,
     guildId: f,
     channelId: p,
     onClose: m
@@ -27,10 +27,10 @@ function p(e) {
   return l === u.oh.ACTIVITY ? (0, r.jsx)(a.Z, {
     user: t,
     currentUser: n,
-    displayProfile: i,
+    displayProfile: o,
     guildId: f,
     channelId: p,
-    subsection: o,
+    subsection: i,
     onClose: m
   }) : l === u.oh.MUTUAL_FRIENDS ? (0, r.jsx)(c.Z, {
     user: t,
@@ -57,13 +57,13 @@ function m(e) {
     channelId: m,
     items: g,
     initialSection: b,
-    initialSubsection: j,
-    onClose: h
+    initialSubsection: h,
+    onClose: j
   } = e, {
     trackUserProfileAction: y
-  } = (0, i.KZ)(), [{
-    section: O,
-    subsection: x,
+  } = (0, o.KZ)(), [{
+    section: x,
+    subsection: O,
     text: v
   }, _] = l.useState((n = function(e) {
     for (var t = 1; t < arguments.length; t++) {
@@ -88,7 +88,7 @@ function m(e) {
     } = e;
     return t === b
   })) ? t : g[0]), a = a = {
-    subsection: j
+    subsection: h
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -101,15 +101,15 @@ function m(e) {
   }), n));
   return (0, r.jsxs)("div", {
     className: f.container,
-    children: [(0, r.jsx)(o.Ttm, {
+    children: [(0, r.jsx)(i.Ttm, {
       orientation: "horizontal",
       className: f.scroller,
       fade: !0,
       paddingFix: !1,
-      children: (0, r.jsx)(o.njP, {
+      children: (0, r.jsx)(i.njP, {
         type: "top",
         look: "custom",
-        selectedItem: O,
+        selectedItem: x,
         onItemSelect: e => {
           y({
             action: "PRESS_SECTION",
@@ -119,15 +119,15 @@ function m(e) {
             return null != (n = g.find(t => t.section === e)) ? n : t
           })
         },
-        children: g.map(e => (0, r.jsx)(o.njP.Item, {
+        children: g.map(e => (0, r.jsx)(i.njP.Item, {
           className: f.tabBarItem,
           id: e.section,
           "aria-label": e.text,
           children: e.text
         }, e.section))
       })
-    }), (0, r.jsx)(o.njP.Panel, {
-      id: O,
+    }), (0, r.jsx)(i.njP.Panel, {
+      id: x,
       "aria-label": v,
       className: f.tabBarPanel,
       children: (0, r.jsx)(p, {
@@ -136,9 +136,9 @@ function m(e) {
         displayProfile: d,
         guildId: u,
         channelId: m,
-        section: O,
-        subsection: x,
-        onClose: h
+        section: x,
+        subsection: O,
+        onClose: j
       })
     })]
   })

@@ -1,32 +1,33 @@
 /** Chunk was on 11776 **/
 n.d(t, {
-  Z: () => i
+  Z: () => o
 });
 var r = n(255367);
 n(73800);
 var l = n(753436),
-  o = n(825243);
+  i = n(825243);
 
-function i(e) {
+function o(e) {
   var {
-    games: t
-  } = e, n = function(e, t) {
+    games: t,
+    isGameFetching: n
+  } = e, o = function(e, t) {
     if (null == e) return {};
     var n, r, l = function(e, t) {
       if (null == e) return {};
       var n, r, l = {},
-        o = Object.keys(e);
-      for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (l[n] = e[n]);
+        i = Object.keys(e);
+      for (r = 0; r < i.length; r++) n = i[r], t.indexOf(n) >= 0 || (l[n] = e[n]);
       return l
     }(e, t);
     if (Object.getOwnPropertySymbols) {
-      var o = Object.getOwnPropertySymbols(e);
-      for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n])
+      var i = Object.getOwnPropertySymbols(e);
+      for (r = 0; r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n])
     }
     return l
-  }(e, ["games"]);
+  }(e, ["games", "isGameFetching"]);
   return (0, r.jsx)("ul", {
-    className: o.coverList,
+    className: i.coverList,
     children: t.map((e, t) => (0, r.jsx)("li", {
       children: (0, r.jsx)(l.S, function(e) {
         for (var t = 1; t < arguments.length; t++) {
@@ -46,8 +47,9 @@ function i(e) {
         }
         return e
       }({
-        game: e
-      }, n))
+        game: e,
+        loading: n(e.applicationId)
+      }, o))
     }, "".concat(e.applicationId, "-").concat(t)))
   })
 }

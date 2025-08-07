@@ -1,11 +1,11 @@
 /** Chunk was on 11776 **/
 n.d(t, {
-  Z: () => j
+  Z: () => h
 });
 var r = n(255367),
   l = n(73800),
-  o = n(296009),
-  i = n(481060),
+  i = n(296009),
+  o = n(481060),
   a = n(634733),
   c = n(210753),
   s = n(247397),
@@ -16,9 +16,9 @@ var r = n(255367),
 function p(e) {
   let {
     widgetType: t
-  } = e, n = t === o.l.FAVORITE_GAMES ? d.J6["23"] : d.J6["58"], {
+  } = e, n = t === i.l.FAVORITE_GAMES ? d.J6["23"] : d.J6["58"], {
     coverImageUrl: l,
-    localizedName: i
+    localizedName: o
   } = (0, c.$)(n);
   return (0, r.jsxs)("div", {
     className: f.placeholderDetailCard,
@@ -26,7 +26,7 @@ function p(e) {
       className: f.placeholderCover,
       children: null != l && "" !== l ? (0, r.jsx)("img", {
         src: l,
-        alt: null != i ? i : "Game cover",
+        alt: null != o ? o : "Game cover",
         className: f.placeholderGameImage
       }) : (0, r.jsx)("div", {
         className: f.placeholderGameFallback
@@ -45,7 +45,7 @@ function p(e) {
 function m(e) {
   let {
     widgetType: t
-  } = e, n = t === o.l.WANT_TO_PLAY_GAMES ? [d.J6["0"], d.J6["1"], d.J6["2"]] : [d.J6["20"], d.J6["35"], d.J6["42"]];
+  } = e, n = t === i.l.WANT_TO_PLAY_GAMES ? [d.J6["0"], d.J6["1"], d.J6["2"]] : [d.J6["20"], d.J6["35"], d.J6["42"]];
   return (0, r.jsx)("div", {
     className: f.placeholderCoverGrid,
     children: n.map((e, t) => (0, r.jsx)(g, {
@@ -79,19 +79,19 @@ function b(e) {
   } = e, n = l.useCallback(() => {
     (0, a.w6)(t)
   }, [t]);
-  return (0, r.jsxs)(i.P3F, {
+  return (0, r.jsxs)(o.P3F, {
     className: f.widgetPromptContainer,
     onClick: n,
     "aria-label": "Add widget: ".concat(u.intl.string(s.NP[t])),
     children: [(() => {
       switch (t) {
-        case o.l.FAVORITE_GAMES:
-        case o.l.CURRENT_GAMES:
+        case i.l.FAVORITE_GAMES:
+        case i.l.CURRENT_GAMES:
           return (0, r.jsx)(p, {
             widgetType: t
           });
-        case o.l.WANT_TO_PLAY_GAMES:
-        case o.l.PLAYED_GAMES:
+        case i.l.WANT_TO_PLAY_GAMES:
+        case i.l.PLAYED_GAMES:
           return (0, r.jsx)(m, {
             widgetType: t
           });
@@ -102,11 +102,11 @@ function b(e) {
       className: f.widgetPromptOverlay,
       children: [(0, r.jsx)("div", {
         className: f.addButton,
-        children: (0, r.jsx)(i.oFk, {
+        children: (0, r.jsx)(o.oFk, {
           size: "md",
           color: "currentColor"
         })
-      }), (0, r.jsx)(i.Text, {
+      }), (0, r.jsx)(o.Text, {
         variant: "text-md/medium",
         color: "header-primary",
         children: u.intl.string(s.NP[t])
@@ -115,16 +115,16 @@ function b(e) {
   })
 }
 
-function j() {
+function h() {
   return (0, r.jsxs)("div", {
     className: f.empty,
     children: [(0, r.jsxs)("div", {
       className: f.textContainer,
-      children: [(0, r.jsx)(i.X6q, {
+      children: [(0, r.jsx)(o.X6q, {
         variant: "heading-md/medium",
         color: "header-primary",
         children: u.intl.string(u.t.oqalCw)
-      }), (0, r.jsx)(i.Text, {
+      }), (0, r.jsx)(o.Text, {
         variant: "text-sm/normal",
         color: "header-secondary",
         children: u.intl.string(u.t.O9SQ1d)

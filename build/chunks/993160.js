@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var l = n(755721),
-  o = n(572691),
-  i = n(906732),
+  i = n(572691),
+  o = n(906732),
   a = n(444141),
   c = n(705556),
   s = n(30556),
@@ -22,16 +22,16 @@ function g(e) {
     currentUser: n,
     guildId: g,
     channelId: b,
-    displayProfile: j,
-    relationshipType: h,
+    displayProfile: h,
+    relationshipType: j,
     onClose: y
   } = e, {
-    newestAnalyticsLocation: O
-  } = (0, i.ZP)(), x = (0, a.Z)({
+    newestAnalyticsLocation: x
+  } = (0, o.ZP)(), O = (0, a.Z)({
     user: t,
     guildId: g,
     channelId: b,
-    displayProfile: j,
+    displayProfile: h,
     onClose: y
   }), {
     gameFriends: v,
@@ -40,7 +40,7 @@ function g(e) {
   } = (0, p.H)({
     userId: t.id
   }), P = v.length > 0 || _ || I;
-  return h === m.OGo.BLOCKED ? null : t.id === n.id ? (0, r.jsxs)(r.Fragment, {
+  return j === m.OGo.BLOCKED ? null : t.id === n.id ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(c.Z, {
       user: t,
       guildId: g,
@@ -51,28 +51,28 @@ function g(e) {
       type: "icon",
       user: t,
       guildId: g,
-      viewProfileItem: x,
+      viewProfileItem: O,
       themeColor: "secondary"
     })]
   }) : t.bot ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(s.Z, {
       type: "text",
       userId: t.id,
-      onClose: o.Z.popAll,
+      onClose: i.Z.popAll,
       autoFocus: !0
     }), (0, r.jsx)(d.Z, {
       type: "icon",
       user: t,
       guildId: g,
-      viewProfileItem: x,
+      viewProfileItem: O,
       themeColor: "secondary"
     })]
-  }) : h === m.OGo.PENDING_INCOMING ? (0, r.jsxs)(r.Fragment, {
+  }) : j === m.OGo.PENDING_INCOMING ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(s.Z, {
       type: "text",
       userId: t.id,
       color: l.zx.Colors.BRAND,
-      onClose: o.Z.popAll,
+      onClose: i.Z.popAll,
       autoFocus: !0
     }), (0, r.jsx)(d.Z, {
       type: "icon",
@@ -80,37 +80,37 @@ function g(e) {
       guildId: g,
       themeColor: "secondary"
     })]
-  }) : h === m.OGo.FRIEND || h === m.OGo.PENDING_OUTGOING ? (0, r.jsxs)(r.Fragment, {
+  }) : j === m.OGo.FRIEND || j === m.OGo.PENDING_OUTGOING ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(s.Z, {
       type: "text",
       userId: t.id,
       color: l.zx.Colors.BRAND,
-      onClose: o.Z.popAll,
+      onClose: i.Z.popAll,
       autoFocus: !0
     }), (0, r.jsx)(f.g, {
       type: "icon",
       user: t,
-      relationshipType: h,
+      relationshipType: j,
       shouldShowTooltip: !0,
       themeColor: "secondary",
-      analyticsLocation: O
+      analyticsLocation: x
     }), (0, r.jsx)(d.Z, {
       type: "icon",
       user: t,
       guildId: g,
-      viewProfileItem: x,
+      viewProfileItem: O,
       themeColor: "secondary"
     })]
-  }) : h === m.OGo.NONE && P ? (0, r.jsxs)(r.Fragment, {
+  }) : j === m.OGo.NONE && P ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(s.Z, {
       type: "text",
       userId: t.id,
-      onClose: o.Z.popAll,
+      onClose: i.Z.popAll,
       autoFocus: !0
     }), (0, r.jsx)(f.k9, {
       type: "icon",
       user: t,
-      analyticsLocation: O,
+      analyticsLocation: x,
       themeColor: "secondary",
       gameFriends: v,
       tooltipPosition: "top",
@@ -122,26 +122,26 @@ function g(e) {
       type: "icon",
       user: t,
       guildId: g,
-      viewProfileItem: x,
+      viewProfileItem: O,
       themeColor: "secondary"
     })]
   }) : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(f.Z7, {
       type: "text",
       userId: t.id,
-      analyticsLocation: O,
+      analyticsLocation: x,
       color: l.zx.Colors.BRAND,
       autoFocus: !0
     }), (0, r.jsx)(s.Z, {
       type: "icon",
       userId: t.id,
-      onClose: o.Z.popAll,
+      onClose: i.Z.popAll,
       themeColor: "secondary"
     }), (0, r.jsx)(d.Z, {
       type: "icon",
       user: t,
       guildId: g,
-      viewProfileItem: x,
+      viewProfileItem: O,
       themeColor: "secondary"
     })]
   })

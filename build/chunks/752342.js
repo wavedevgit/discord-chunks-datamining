@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var l = n(481060),
-  o = n(572691),
-  i = n(100527),
+  i = n(572691),
+  o = n(100527),
   a = n(906732),
   c = n(313201),
   s = n(5192),
@@ -17,11 +17,11 @@ var l = n(481060),
   m = n(867176),
   g = n(681837),
   b = n(502762),
-  j = n(530),
-  h = n(871604),
+  h = n(530),
+  j = n(871604),
   y = n(952124),
-  O = n(53558),
-  x = n(544989),
+  x = n(53558),
+  O = n(544989),
   v = n(30556),
   _ = n(4517),
   I = n(740628),
@@ -39,8 +39,8 @@ function S(e) {
     channelId: A,
     messageId: w,
     roleId: C,
-    sessionId: R,
-    initialSection: G,
+    sessionId: G,
+    initialSection: R,
     initialSubsection: L,
     transitionState: M,
     openedAt: D,
@@ -48,10 +48,10 @@ function S(e) {
     sourceAnalyticsLocations: B = []
   } = e, U = S === Z.ME ? void 0 : S, F = (0, u.ZP)(t.id, U), V = s.ZP.getName(U, A, t), Y = (0, c.Dt)(), {
     analyticsLocations: W
-  } = (0, a.ZP)([...B, i.Z.USER_PROFILE_MODAL]), J = (0, d.ZB)({
+  } = (0, a.ZP)([...B, o.Z.USER_PROFILE_MODAL]), J = (0, d.ZB)({
     layout: "MODAL",
     userId: t.id,
-    sourceSessionId: R,
+    sourceSessionId: G,
     guildId: U,
     channelId: A,
     messageId: w,
@@ -85,7 +85,7 @@ function S(e) {
             user: t,
             displayProfile: F,
             themeType: E.lY.MODAL,
-            children: [(0, r.jsx)(x.Z, {
+            children: [(0, r.jsx)(O.Z, {
               children: (0, r.jsx)(y.Z, {
                 user: t,
                 guildId: U,
@@ -116,24 +116,24 @@ function S(e) {
                   children: [(0, r.jsx)(v.Z, {
                     type: "text",
                     userId: t.id,
-                    onClose: o.Z.popAll,
+                    onClose: i.Z.popAll,
                     className: T.messageTextButton
                   }), (0, r.jsx)(v.Z, {
                     type: "icon",
                     userId: t.id,
-                    onClose: o.Z.popAll,
+                    onClose: i.Z.popAll,
                     tooltipContainerClassName: T.messageIconButton
-                  }), (0, r.jsx)(O.Z, {
+                  }), (0, r.jsx)(x.Z, {
                     user: t,
                     guildId: U
-                  }), (0, r.jsx)(h.Z, {
+                  }), (0, r.jsx)(j.Z, {
                     user: t
                   })]
                 })]
               })]
             }), (0, r.jsxs)("div", {
               className: T.body,
-              children: [(0, r.jsx)(j.Z, {
+              children: [(0, r.jsx)(h.Z, {
                 className: T.username,
                 user: t,
                 nickname: V,
@@ -154,7 +154,7 @@ function S(e) {
                 displayProfile: F,
                 guildId: U,
                 items: H,
-                initialSection: null != G ? G : E.oh.BOT_INFO,
+                initialSection: null != R ? R : E.oh.BOT_INFO,
                 initialSubsection: L,
                 onClose: k
               })]

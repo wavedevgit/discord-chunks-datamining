@@ -4,8 +4,8 @@ n.d(t, {
 });
 var r = n(255367),
   l = n(73800),
-  o = n(481060),
-  i = n(81897),
+  i = n(481060),
+  o = n(81897),
   a = n(906732),
   c = n(566898),
   s = n(785717),
@@ -21,22 +21,22 @@ function b(e) {
     user: t,
     guildId: n,
     channelId: b,
-    onClose: j
+    onClose: h
   } = e, {
-    analyticsLocations: h
+    analyticsLocations: j
   } = (0, a.ZP)(), {
     context: y,
-    trackUserProfileAction: O
+    trackUserProfileAction: x
   } = (0, s.KZ)(), {
-    mutualFriends: x,
+    mutualFriends: O,
     mutualFriendsCount: v
-  } = (0, d.Z)(t), _ = (0, i.Z)();
+  } = (0, d.Z)(t), _ = (0, o.Z)();
   return l.useEffect(() => {
     (0, u.Z)(t.id, _)
-  }, [t.id, _]), (0, r.jsx)(o.Ttm, {
+  }, [t.id, _]), (0, r.jsx)(i.Ttm, {
     className: g.scroller,
     fade: !0,
-    children: null == x ? Array.from({
+    children: null == O ? Array.from({
       length: null != v ? v : 10
     }).map((e, t) => (0, r.jsxs)("div", {
       className: g.friendsLoadingItem,
@@ -47,20 +47,20 @@ function b(e) {
         width: 135,
         opacity: .08
       })]
-    }, t)) : 0 === x.length ? (0, r.jsx)(m.s_, {}) : x.map(e => {
+    }, t)) : 0 === O.length ? (0, r.jsx)(m.s_, {}) : O.map(e => {
       let {
         key: t,
         user: l,
-        status: o
+        status: i
       } = e;
       return (0, r.jsx)(p.Z, {
         user: l,
-        status: o,
+        status: i,
         guildId: n,
         channelId: b,
         onSelect: () => {
           var e, t;
-          null == j || j(), O({
+          null == h || h(), x({
             action: "PRESS_MUTUAL_FRIEND"
           }), (0, f.openUserProfileModal)((e = function(e) {
             for (var t = 1; t < arguments.length; t++) {
@@ -81,7 +81,7 @@ function b(e) {
             return e
           }({}, y), t = t = {
             userId: l.id,
-            sourceAnalyticsLocations: h
+            sourceAnalyticsLocations: j
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {

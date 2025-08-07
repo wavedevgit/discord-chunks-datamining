@@ -1,11 +1,11 @@
 /** Chunk was on 11776 **/
 n.d(t, {
-  Z: () => x
+  Z: () => O
 }), n(388685);
 var r = n(255367),
   l = n(73800),
-  o = n(442837),
-  i = n(706898),
+  i = n(442837),
+  o = n(706898),
   a = n(481060),
   c = n(246946),
   s = n(785717),
@@ -16,25 +16,25 @@ var r = n(255367),
   m = n(389190),
   g = n(428927),
   b = n(228168),
-  j = n(388032),
-  h = n(301150),
+  h = n(388032),
+  j = n(301150),
   y = n(923243);
 
-function O(e) {
+function x(e) {
   let {
     section: t,
     subsection: n,
     user: l,
-    currentUser: o,
-    displayProfile: i,
+    currentUser: i,
+    displayProfile: o,
     guildId: a,
     channelId: c,
     onClose: s
   } = e;
   return t === b.oh.ACTIVITY ? (0, r.jsx)(f.Z, {
     user: l,
-    currentUser: o,
-    displayProfile: i,
+    currentUser: i,
+    displayProfile: o,
     guildId: a,
     onClose: s
   }) : t === b.oh.MUTUAL_FRIENDS ? (0, r.jsx)(m.Z, {
@@ -49,21 +49,21 @@ function O(e) {
     user: l
   }) : t === b.oh.BOT_INFO ? (0, r.jsx)(u.Z, {
     user: l,
-    currentUser: o,
-    displayProfile: i,
+    currentUser: i,
+    displayProfile: o,
     guildId: a,
     subsection: n,
     onClose: s
   }) : (0, r.jsx)(p.Z, {
     user: l,
-    currentUser: o,
-    displayProfile: i,
+    currentUser: i,
+    displayProfile: o,
     subsection: n,
     onClose: s
   })
 }
 
-function x(e) {
+function O(e) {
   var t, n, d;
   let {
     user: u,
@@ -71,12 +71,12 @@ function x(e) {
     displayProfile: p,
     guildId: m,
     items: g,
-    initialSection: x = b.oh.USER_INFO,
+    initialSection: O = b.oh.USER_INFO,
     initialSubsection: v,
     onClose: _
   } = e, {
     trackUserProfileAction: I
-  } = (0, s.KZ)(), P = (0, o.e7)([c.Z], () => c.Z.hidePersonalInformation), [{
+  } = (0, s.KZ)(), P = (0, i.e7)([c.Z], () => c.Z.hidePersonalInformation), [{
     section: E,
     subsection: Z
   }, N] = l.useState({
@@ -84,7 +84,7 @@ function x(e) {
       let {
         section: t
       } = e;
-      return t === x
+      return t === O
     })) ? void 0 : t.section) ? d : null == (n = g[0]) ? void 0 : n.section,
     subsection: v
   });
@@ -106,17 +106,17 @@ function x(e) {
   return P ? (0, r.jsx)("div", {
     className: y.container,
     children: (0, r.jsxs)("div", {
-      className: h.empty,
+      className: j.empty,
       children: [(0, r.jsx)("div", {
-        className: h.emptyIconStreamerMode
+        className: j.emptyIconStreamerMode
       }), (0, r.jsx)("div", {
-        className: h.emptyText,
-        children: j.intl.string(j.t.Br1ls7)
+        className: j.emptyText,
+        children: h.intl.string(h.t.Br1ls7)
       })]
     })
   }) : (0, r.jsxs)("div", {
     className: y.container,
-    children: [(0, r.jsx)(i.n, {
+    children: [(0, r.jsx)(o.n, {
       className: y.tabBar,
       type: "top",
       selectedItem: E,
@@ -126,7 +126,7 @@ function x(e) {
           section: t,
           text: n
         } = e;
-        return (0, r.jsx)(i.n.Item, {
+        return (0, r.jsx)(o.n.Item, {
           className: y.tabBarItem,
           id: t,
           "aria-label": n,
@@ -136,7 +136,7 @@ function x(e) {
           })
         }, t)
       })
-    }), (0, r.jsx)(O, {
+    }), (0, r.jsx)(x, {
       items: g,
       section: E,
       subsection: Z,

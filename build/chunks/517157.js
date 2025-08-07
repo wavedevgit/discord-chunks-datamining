@@ -4,12 +4,12 @@ n.d(t, {
 });
 var r = n(379405),
   l = n(296009),
-  o = n(442837),
-  i = n(224724),
+  i = n(442837),
+  o = n(224724),
   a = n(570911);
 
 function c() {
-  let e = (0, o.e7)([i.Z], () => i.Z.getOverrideWidgets());
+  let e = (0, i.e7)([o.Z], () => o.Z.getOverrideWidgets());
   if (null !== e) return e;
   let t = {
       applicationId: a.J6["23"],

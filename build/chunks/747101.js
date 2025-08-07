@@ -4,8 +4,8 @@ n.d(t, {
 }), n(539854), n(388685);
 var r = n(73800),
   l = n(296009),
-  o = n(442837),
-  i = n(224706),
+  i = n(442837),
+  o = n(224706),
   a = n(669764),
   c = n(823379);
 
@@ -63,35 +63,36 @@ function u(e) {
     }), [...new Set(t)]
   })(e), [e]);
   r.useEffect(() => {
-    t.length > 0 && i.Z.getDetectableGamesSupplemental(t)
+    if (t.length > 0) {
+      let e = t.filter(e => a.Z.canFetch(e));
+      e.length > 0 && o.Z.getDetectableGamesSupplemental(e)
+    }
   }, [t]);
-  let n = (0, o.e7)([a.Z], () => t.some(e => a.Z.isFetching(e))),
-    u = (0, o.e7)([a.Z], () => {
-      let e = {};
-      return t.forEach(t => {
-        e[t] = a.Z.getGame(t)
-      }), e
-    });
+  let n = (0, i.e7)([a.Z], () => {
+    let e = {};
+    return t.forEach(t => {
+      e[t] = a.Z.getGame(t)
+    }), e
+  });
   return {
-    isFetching: n,
     widgets: r.useMemo(() => e.map(e => {
       let t = e.type;
       switch (t) {
         case l.l.FAVORITE_GAMES: {
-          let t = u[e.game.applicationId],
-            n = d(s({}, e.game), {
+          let t = n[e.game.applicationId],
+            r = d(s({}, e.game), {
               gameName: null == t ? void 0 : t.name,
               imageSrc: null == t ? void 0 : t.coverImageUrl
             });
           return d(s({}, e), {
-            game: n
+            game: r
           })
         }
         case l.l.CURRENT_GAMES:
         case l.l.WANT_TO_PLAY_GAMES:
         case l.l.PLAYED_GAMES: {
           let t = e.games.map(e => {
-            let t = u[e.applicationId];
+            let t = n[e.applicationId];
             return d(s({}, e), {
               gameName: null == t ? void 0 : t.name,
               imageSrc: null == t ? void 0 : t.coverImageUrl
@@ -104,6 +105,7 @@ function u(e) {
         default:
           return (0, c.vE)(t)
       }
-    }), [e, u])
+    }), [e, n]),
+    isGameFetching: r.useCallback(e => a.Z.isFetching(e), [])
   }
 }

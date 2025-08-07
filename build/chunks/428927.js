@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var l = n(481060),
-  o = n(37234),
-  i = n(769654),
+  i = n(37234),
+  o = n(769654),
   a = n(785717),
   c = n(806729),
   s = n(821179),
@@ -23,7 +23,7 @@ function f(e) {
     mutualGuilds: p,
     isFetching: m
   } = (0, c.Z)(t), g = e => {
-    (0, i.X)(e), n(), (0, o.xf)()
+    (0, o.X)(e), n(), (0, i.xf)()
   };
   return (0, r.jsx)(l.zJl, {
     className: u.listScroller,

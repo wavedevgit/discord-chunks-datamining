@@ -4,8 +4,8 @@ n.d(t, {
 }), n(388685);
 var r = n(255367),
   l = n(73800),
-  o = n(120356),
-  i = n.n(o),
+  i = n(120356),
+  o = n.n(i),
   a = n(481060),
   c = n(810568),
   s = n(168524),
@@ -35,8 +35,8 @@ function p(e) {
   let {
     imageSrc: t,
     gameName: n
-  } = e, [o, i] = l.useState(!1), c = null != n ? n : d.intl.string(d.t.GIWFlJ);
-  return o || null == t ? (0, r.jsx)("div", {
+  } = e, [i, o] = l.useState(!1), c = null != n ? n : d.intl.string(d.t.GIWFlJ);
+  return i || null == t ? (0, r.jsx)("div", {
     role: "img",
     "aria-label": c,
     className: u.fallback,
@@ -50,8 +50,8 @@ function p(e) {
     src: t,
     alt: c,
     className: u.gameCoverImage,
-    onError: () => i(!0),
-    onLoad: () => i(!1)
+    onError: () => o(!0),
+    onLoad: () => o(!1)
   })
 }
 
@@ -60,13 +60,13 @@ function m(e) {
     imageSrc: t,
     gameName: n,
     applicationId: l,
-    userId: o,
+    userId: i,
     className: f
   } = e, m = (0, s.Z)({
     location: "GameCover",
     applicationId: l,
     source: c.m1.UserProfile,
-    sourceUserId: o,
+    sourceUserId: i,
     trackEntryPointImpression: !0
   });
   if (null == m) return (0, r.jsx)("div", {
@@ -82,7 +82,7 @@ function m(e) {
   return (0, r.jsx)(a.P3F, {
     onClick: m,
     "aria-label": g,
-    className: i()(u.clickable, f),
+    className: o()(u.clickable, f),
     children: (0, r.jsx)(p, {
       imageSrc: t,
       gameName: n
@@ -95,24 +95,24 @@ function g(e) {
     applicationId: t,
     userId: n,
     className: l,
-    disableInteraction: o = !1
+    disableInteraction: i = !1
   } = e, a = function(e, t) {
     if (null == e) return {};
     var n, r, l = function(e, t) {
       if (null == e) return {};
       var n, r, l = {},
-        o = Object.keys(e);
-      for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (l[n] = e[n]);
+        i = Object.keys(e);
+      for (r = 0; r < i.length; r++) n = i[r], t.indexOf(n) >= 0 || (l[n] = e[n]);
       return l
     }(e, t);
     if (Object.getOwnPropertySymbols) {
-      var o = Object.getOwnPropertySymbols(e);
-      for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n])
+      var i = Object.getOwnPropertySymbols(e);
+      for (r = 0; r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n])
     }
     return l
   }(e, ["applicationId", "userId", "className", "disableInteraction"]);
-  let c = i()(u.coverContainer, l);
-  return o ? (0, r.jsx)("div", {
+  let c = o()(u.coverContainer, l);
+  return i ? (0, r.jsx)("div", {
     className: c,
     children: (0, r.jsx)(p, f({}, a))
   }) : (0, r.jsx)(m, f({
