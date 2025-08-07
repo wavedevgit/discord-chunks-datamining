@@ -38,14 +38,14 @@ function O(e) {
     null != t && u.Z.nsfwAgree(t.id)
   }, [t]), E = i.useCallback(() => {
     d.Z.showAgeVerificationGetStartedModal(h.cU.NSFW_GUILD)
-  }, []), S = (0, g.Y2)(t), Z = _.intl.string(S ? _.t.xi46lp : _.t.ZmwvDQ);
+  }, []), S = (0, g.Y2)(t), I = _.intl.string(S ? _.t.xi46lp : _.t.ZmwvDQ);
   return a ? (0, r.jsx)(f.Z, {
     guildId: null == t ? void 0 : t.id,
     channelId: n,
     modalType: h.it.NSFW_CHANNEL_AGE_VERIFY,
     onAgree: E,
     onDisagree: v,
-    title: Z,
+    title: I,
     description: O,
     agreement: c,
     agreementButtonColor: o.zx.Colors.BRAND,
@@ -70,7 +70,7 @@ function O(e) {
     modalType: h.it.NSFW_CHANNEL_VERIFIED,
     onAgree: C,
     onDisagree: v,
-    title: Z,
+    title: I,
     description: _.intl.string(S ? _.t.ZtuRtr : _.t.E4Cd5O),
     agreement: _.intl.string(_.t.wVq7ur),
     disagreement: _.intl.string(_.t["/g10LC"])

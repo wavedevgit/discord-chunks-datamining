@@ -27,8 +27,8 @@ var i = n(657707),
   C = n(678738),
   E = n(638970),
   S = n(502762),
-  Z = n(530),
-  I = n(827313),
+  I = n(530),
+  Z = n(827313),
   P = n(228168),
   T = n(981631),
   N = n(388032),
@@ -48,9 +48,9 @@ function w(e) {
   } = (0, l.cj)([u.Z], () => ({
     relationshipType: u.Z.getRelationshipType(t.id),
     originApplicationId: u.Z.getOriginApplicationId(t.id)
-  })), U = (0, s.vh)(t.id), H = (0, o.Y)({
+  })), U = (0, s.vh)(t.id), F = (0, o.Y)({
     userId: t.id
-  }), G = (0, l.e7)([d.Z], () => d.Z.hidePersonalInformation), F = (0, l.e7)([p.Z], () => {
+  }), H = (0, l.e7)([d.Z], () => d.Z.hidePersonalInformation), G = (0, l.e7)([p.Z], () => {
     var e;
     return null == (e = p.Z.getUserProfile(t.id)) ? void 0 : e.application
   }), B = (0, f.b)({
@@ -58,7 +58,7 @@ function w(e) {
   });
   return (0, r.jsxs)("div", {
     className: R.body,
-    children: [(0, r.jsx)(Z.Z, {
+    children: [(0, r.jsx)(I.Z, {
       user: t,
       nickname: h.ZP.getName(null, A.id, t),
       pronouns: null == w ? void 0 : w.pronouns,
@@ -70,7 +70,7 @@ function w(e) {
       nicknameIcons: (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(x.Z, {
           userId: t.id
-        }), !G && (0, r.jsx)(I.Z, {
+        }), !H && (0, r.jsx)(Z.Z, {
           userId: t.id,
           isHovering: D,
           onOpenProfile: k
@@ -117,7 +117,7 @@ function w(e) {
       className: R.card
     }), (0, r.jsxs)(S.Z.Overlay, {
       className: R.overlay,
-      children: [!G && (null == w ? void 0 : w.bio) != null && (null == w ? void 0 : w.bio) !== "" && (0, r.jsx)(C.Z, {
+      children: [!H && (null == w ? void 0 : w.bio) != null && (null == w ? void 0 : w.bio) !== "" && (0, r.jsx)(C.Z, {
         heading: N.intl.string(N.t["61W33d"]),
         headingColor: "header-primary",
         children: (0, r.jsx)(b.Z, {
@@ -126,15 +126,15 @@ function w(e) {
           isHovering: D,
           userId: t.id
         })
-      }), (null == F ? void 0 : F.popularApplicationCommandIds) != null && (0, r.jsx)(g.Z, {
-        applicationId: F.id,
-        commandIds: F.popularApplicationCommandIds,
+      }), (null == G ? void 0 : G.popularApplicationCommandIds) != null && (0, r.jsx)(g.Z, {
+        applicationId: G.id,
+        commandIds: G.popularApplicationCommandIds,
         channel: A
-      }), H.length > 0 && (0, r.jsx)(C.Z, {
+      }), F.length > 0 && (0, r.jsx)(C.Z, {
         heading: N.intl.string(N.t["Uv/eT0"]),
         headingColor: "header-primary",
         children: (0, r.jsx)(_.Z, {
-          applicationIds: H
+          applicationIds: F
         })
       }), (0, r.jsx)(C.Z, {
         heading: t.bot ? N.intl.string(N.t["A//N4u"]) : N.intl.string(N.t.a6XYDw),

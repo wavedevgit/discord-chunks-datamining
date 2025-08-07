@@ -26,8 +26,8 @@ var r = n(255367),
   C = n(145834),
   E = n(590415),
   S = n(614173),
-  Z = n(618896),
-  I = n(231338),
+  I = n(618896),
+  Z = n(231338),
   P = n(388032),
   T = n(916396);
 
@@ -97,17 +97,17 @@ let w = i.memo(function(e) {
       let e = setTimeout(() => S(!1), 1e3);
       return () => clearTimeout(e)
     });
-    let Z = l.getGuildId();
-    o()(null != Z, "Channel cannot be guildless");
+    let I = l.getGuildId();
+    o()(null != I, "Channel cannot be guildless");
     let {
-      isMobile: I,
+      isMobile: Z,
       status: w
     } = (0, c.cj)([j.Z], () => ({
       isMobile: j.Z.isMobileOnline(s.user.id),
-      status: j.Z.getStatus(s.user.id, Z)
-    })), A = (0, c.e7)([x.ZP], () => x.ZP.getMember(Z, s.user.id)), D = (0, b.X7)(l.guild_id, null == A ? void 0 : A.userId, null != (t = null == A ? void 0 : A.colorStrings) ? t : null), k = i.useMemo(() => ({
-      [Z]: [s.user.id]
-    }), [Z, s.user.id]);
+      status: j.Z.getStatus(s.user.id, I)
+    })), A = (0, c.e7)([x.ZP], () => x.ZP.getMember(I, s.user.id)), D = (0, b.X7)(l.guild_id, null == A ? void 0 : A.userId, null != (t = null == A ? void 0 : A.colorStrings) ? t : null), k = i.useMemo(() => ({
+      [I]: [s.user.id]
+    }), [I, s.user.id]);
     (0, g.$)(k);
     let L = s.rtsState === E.xO.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK;
 
@@ -118,14 +118,14 @@ let w = i.memo(function(e) {
     function U() {
       (0, O.DT)(l, s.user.id, !0)
     }
-    let H = e => {
+    let F = e => {
       (0, h.jW)(e, async () => {
         let {
           default: e
         } = await Promise.all([n.e("79695"), n.e("98783"), n.e("8982"), n.e("7717"), n.e("74800")]).then(n.bind(n, 757387));
         return t => (0, r.jsx)(e, R(N({}, t), {
           user: s.user,
-          guildId: Z,
+          guildId: I,
           channel: l,
           showMediaItems: !0
         }))
@@ -146,13 +146,13 @@ let w = i.memo(function(e) {
           return (0, r.jsxs)(d.P3F, R(N({
             innerRef: _,
             className: T.participantMemberContainer,
-            onContextMenu: H
+            onContextMenu: F
           }, e), {
             children: [(0, r.jsx)(p.Z, {
               size: d.EFr.SIZE_40,
               className: T.participantAvatar,
               user: s.user,
-              isMobile: I,
+              isMobile: Z,
               status: w
             }), (0, r.jsxs)("div", {
               className: T.participantTextContainer,
@@ -211,7 +211,7 @@ let w = i.memo(function(e) {
   k = i.memo(function() {
     return (0, r.jsxs)("div", {
       className: T.emptyStateContainer,
-      children: [(0, r.jsx)(Z.Z, {}), (0, r.jsx)(d.Text, {
+      children: [(0, r.jsx)(I.Z, {}), (0, r.jsx)(d.Text, {
         className: T.emptyStateTitle,
         variant: "text-lg/semibold",
         color: "header-primary",
@@ -230,7 +230,7 @@ function L(e) {
     channel: t,
     toggleRequestToSpeakSidebar: n,
     chatOpen: i
-  } = e, l = (0, v.Fd)(t.id), s = [+!!(0, c.e7)([_.Z], () => _.Z.can(I.Pl.MANAGE_CHANNELS, t) || _.Z.can(I.Pl.MANAGE_ROLES, t)), Math.max(1, l.length)];
+  } = e, l = (0, v.Fd)(t.id), s = [+!!(0, c.e7)([_.Z], () => _.Z.can(Z.Pl.MANAGE_CHANNELS, t) || _.Z.can(Z.Pl.MANAGE_ROLES, t)), Math.max(1, l.length)];
   return (0, r.jsxs)("div", {
     className: a()(T.container, {
       [T.chatOpen]: i

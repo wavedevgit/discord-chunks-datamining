@@ -5,8 +5,8 @@ r.d(t, {
 var n = r(255367),
   o = r(481060),
   a = r(639777),
-  s = r(507155),
-  i = r(679051);
+  i = r(507155),
+  s = r(679051);
 
 function l(e) {
   var t, r, {
@@ -35,8 +35,8 @@ function l(e) {
     }(e, ["guildId", "title", "description", "powerups", "footerInfoText", "footerButtonText", "footerButtonOnClick"]);
   let j = null != p && p.length > 0,
     C = null != f && f.length > 0 && null != x,
-    b = j || C,
-    h = (0, a.Z)(l);
+    g = j || C,
+    v = (0, a.Z)(l);
   return (0, n.jsxs)(o.Y0X, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var r = null != arguments[t] ? arguments[t] : {},
@@ -59,7 +59,7 @@ function l(e) {
   }, m), r = r = {
     parentComponent: "GuildPowerupPerkGroupModal",
     children: [(0, n.jsxs)(o.hzk, {
-      className: i.modalContentContainer,
+      className: s.modalContentContainer,
       scrollbarType: "none",
       children: [(0, n.jsx)(o.X6q, {
         variant: "heading-lg/semibold",
@@ -69,18 +69,18 @@ function l(e) {
         color: "text-secondary",
         children: d
       }), (0, n.jsx)("div", {
-        className: i.perkCardsContainer,
-        children: u.map(e => (0, n.jsx)(s.Z, {
+        className: s.perkCardsContainer,
+        children: u.map(e => (0, n.jsx)(i.Z, {
           guildId: l,
           powerup: e,
-          canUseBoosts: null != h && h
+          canUseBoosts: null != v && v
         }, e.skuId))
       })]
-    }), b && (0, n.jsx)(o.mzw, {
+    }), g && (0, n.jsx)(o.mzw, {
       children: (0, n.jsxs)("div", {
-        className: i.footerContainer,
+        className: s.footerContainer,
         children: [j && (0, n.jsxs)("div", {
-          className: i.footerInfoContainer,
+          className: s.footerInfoContainer,
           children: [(0, n.jsx)(o.d3s, {
             size: "sm"
           }), (0, n.jsx)(o.Text, {

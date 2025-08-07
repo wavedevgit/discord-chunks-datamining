@@ -73,7 +73,7 @@ let L = function(e) {
       load_duration_ms: Y.current
     })
   }, [s, z]), r.useEffect(() => {
-    n && (null != G || null != F) && (0, N.a)(G, F)
+    n && (null != G || null != F) && (0, N.ab)(G, F)
   }, [n, G, F]);
   let J = (0, l.e7)([E.Z], () => E.Z.enabled),
     Q = t === Z.EZ.ApplicationStoreHome,

@@ -3,25 +3,26 @@
 n.d(t, {
   $G: () => D,
   AH: () => S,
-  BU: () => j,
-  Fr: () => V,
-  Fz: () => F,
+  BU: () => U,
+  Fr: () => H,
+  Fz: () => V,
   Ko: () => C,
-  Pe: () => H,
-  R6: () => Y,
+  Pe: () => Y,
+  R6: () => W,
   Tm: () => v,
   Vj: () => N,
-  WU: () => Z,
-  X$: () => z,
-  X3: () => W,
+  WU: () => F,
+  X$: () => q,
+  X3: () => K,
   b7: () => T,
-  cl: () => U,
-  g9: () => L,
-  i3: () => k,
+  cl: () => G,
+  g9: () => x,
+  i3: () => j,
   jW: () => w,
-  kG: () => B,
-  nl: () => K,
-  qc: () => x,
+  kG: () => Z,
+  nI: () => L,
+  nl: () => z,
+  qc: () => M,
   s5: () => I,
   zH: () => A
 }), n(539854), n(997841), n(35282), n(388685), n(781311), n(804061), n(704826);
@@ -225,7 +226,11 @@ function D(e) {
   return t.content && (t.content = t.content.join(" ").trim(), t.content || delete t.content), t
 }
 
-function L(e, t, n) {
+function L(e) {
+  return e.map(e => e.type === o.ZP.NON_TOKEN_TYPE ? e.getFullMatch() : "").join(" ").trim()
+}
+
+function x(e, t, n) {
   let r, i, o = e.find((o, a) => t >= o.start && t <= o.end && n >= o.start && n <= o.end ? (null != e[a + 1] && (i = e[a + 1]), !0) : (r = o, !1));
   return null == o ? null : {
     previousToken: r,
@@ -236,7 +241,7 @@ function L(e, t, n) {
   }
 }
 
-function x(e, t) {
+function M(e, t) {
   let n, {
     currentToken: r,
     nextToken: i,
@@ -275,7 +280,7 @@ function x(e, t) {
   })
 }
 
-function M(e) {
+function k(e) {
   if (null == e.match(/([\\" ])/g)) return e;
   {
     let t = e.replaceAll(/([\\"])/g, (e, t) => "\\".concat(t));
@@ -283,14 +288,14 @@ function M(e) {
   }
 }
 
-function k(e, t) {
+function j(e, t) {
   let n = [];
   return i()(e).forEach(e => {
     if (null == e || 0 === e.results.length) return;
     let r = e.group;
     n = n.concat(e.results.map(n => {
       let i = n.text;
-      if (null != n.channel && (i = M(i)), t.type === E.Sap.FILTER_ALL) {
+      if (null != n.channel && (i = k(i)), t.type === E.Sap.FILTER_ALL) {
         var o;
         r = null != (o = n.group) ? o : r;
         let e = g.ZP[r];
@@ -310,39 +315,39 @@ function k(e, t) {
   })
 }
 
-function j(e) {
+function U(e) {
   return e.reduce((e, t) => null == t ? e : t.results.length + e, 0)
 }
 
-function U(e) {
+function G(e) {
   return null == e ? "" : e.map(e => e.getFullMatch()).join("")
 }
-let G = new o.ZP;
+let B = new o.ZP;
 
-function B(e) {
-  return G.tokenize(e)
+function Z(e) {
+  return B.tokenize(e)
 }
 
-function Z() {
-  return G.clearCache()
+function F() {
+  return B.clearCache()
 }
 
-function F(e) {
+function V(e) {
   return null != e ? R[e] : null
 }
 
-function V(e, t) {
+function H(e, t) {
   let n = E.TNx.test(e.type);
   return (null != t || !n) && (null == t || !n || !!E.KA4.test(t.type))
 }
 
-function H() {
-  (0, g.WK)(), G.reset(), i()(g.ZP).forOwn((e, t) => G.addRule(O({
+function Y() {
+  (0, g.WK)(), B.reset(), i()(g.ZP).forOwn((e, t) => B.addRule(O({
     type: t
   }, e)))
 }
 
-function Y(e) {
+function W(e) {
   if (T(e)) return !0;
   {
     let t = (0, h.ad)({
@@ -356,7 +361,7 @@ function Y(e) {
   }
 }
 
-function W(e) {
+function K(e) {
   let t = e.name,
     n = !1;
   if (e.isGroupDM()) t = (0, a.F6)(e, f.default, u.Z);
@@ -371,10 +376,10 @@ function W(e) {
     let r = l.ZP.getTextChannelNameDisambiguations(e.getGuildId())[e.id];
     (null == r ? void 0 : r.name) != null && (t = r.name)
   }
-  return (t = M(t), n) ? "#".concat(t) : t
+  return (t = k(t), n) ? "#".concat(t) : t
 }
 
-function K(e) {
+function z(e) {
   var t;
   if (e.isGroupDM()) return (0, a.F6)(e, f.default, u.Z);
   if (e.isDM()) {
@@ -386,7 +391,7 @@ function K(e) {
   return null != (t = null == n ? void 0 : n.name) ? t : e.name
 }
 
-function z() {
+function q() {
   var e, t;
   return null != (t = null == (e = f.default.getCurrentUser()) ? void 0 : e.isStaff()) && t
 }

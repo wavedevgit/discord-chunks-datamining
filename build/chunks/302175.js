@@ -81,7 +81,7 @@ function U(e) {
     onClose: o
   } = e, {
     analyticsLocations: u
-  } = (0, m.ZP)(), d = (0, I.g1)(t, "GuildPowerupMarketingPowerupCard"), y = n.skuId === c.A$, O = (0, A.Z)(t, n).type !== C.A3.INACTIVE, v = (0, S.Z)(t), [x, k] = i.useState(!1), [U, G] = i.useState(!1), B = U, Z = i.useCallback(() => {
+  } = (0, m.ZP)(), d = (0, I.g1)(t, "GuildPowerupMarketingPowerupCard"), y = n.skuId === c.A$, O = (0, A.ZP)(t, n).type !== C.A3.INACTIVE, v = (0, S.Z)(t), [x, k] = i.useState(!1), [U, G] = i.useState(!1), B = U, Z = i.useCallback(() => {
     let e = b.Z.getGuild(t);
     null != e && (0, g.u)({
       analyticsLocation: {

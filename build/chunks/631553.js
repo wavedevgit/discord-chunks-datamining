@@ -45,8 +45,8 @@ var I = n(266454),
   U = n(449224),
   B = n(574254),
   G = n(556296),
-  H = n(808506),
-  F = n(372679),
+  F = n(808506),
+  H = n(372679),
   Y = n(237997),
   K = n(451478),
   X = n(70956),
@@ -243,7 +243,7 @@ class ex extends o.Component {
       }), setTimeout(async () => {
         await (0, q.s5)(), v.Z.overlayMounted(p)
       }, 128), window.addEventListener("resize", this.handleWindowResize), t && window.addEventListener("contextmenu", e_, !1), J.isPlatformEmbedded) {
-      let e = (0, F.M)();
+      let e = (0, H.M)();
       if (null == e) return;
       if (void 0 !== e.setPerfInfoCallback) {
         var f;
@@ -332,7 +332,7 @@ class ex extends o.Component {
   }
   constructor(e) {
     super(e), eO(this, "handleWindowResize", () => {
-      H.default.isFocusedPidOutOfProcess() ? this.forceUpdate() : u()(() => {
+      F.default.isFocusedPidOutOfProcess() ? this.forceUpdate() : u()(() => {
         this.forceUpdate()
       }, 500)
     }), eO(this, "activeKeyEventShapes", []), eO(this, "lockEventShape", (0, $.d2)(this.props.keybindKeyCodes)), eO(this, "getActiveKeyEventIndex", e => this.activeKeyEventShapes.findIndex(t => p()(t, e))), eO(this, "onKeyDownGlobal", e => {

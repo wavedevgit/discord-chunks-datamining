@@ -26,8 +26,8 @@ var r = n(255367),
   C = n(51144),
   E = n(998502),
   S = n(276264),
-  Z = n(981631),
-  I = n(388032),
+  I = n(981631),
+  Z = n(388032),
   P = n(11847);
 
 function T(e) {
@@ -84,9 +84,9 @@ function w(e) {
         decoration: "never"
       })),
       n = "<@".concat(t.id, ">");
-    O.S.dispatch(Z.CkL.TEXTAREA_FOCUS, {
+    O.S.dispatch(I.CkL.TEXTAREA_FOCUS, {
       channelId: s.id
-    }), O.S.dispatchToLastSubscribed(Z.CkL.INSERT_TEXT, {
+    }), O.S.dispatchToLastSubscribed(I.CkL.INSERT_TEXT, {
       plainText: e,
       rawText: n
     }), c.Z.startTyping(s.id)
@@ -126,7 +126,7 @@ function w(e) {
         user: t,
         currentUser: f,
         isOwner: t.id === s.ownerId,
-        ownerTooltipText: I.intl.string(I.t["MRXZ+/"]),
+        ownerTooltipText: Z.intl.string(Z.t["MRXZ+/"]),
         shouldAnimateStatus: R,
         isTyping: h,
         status: u,
@@ -172,10 +172,10 @@ function D(e) {
     for (let t of e) {
       var r, i, l;
       y.Z.isFriend(t.id) || t.id === (null == (r = _.default.getCurrentUser()) ? void 0 : r.id) ? n[t.id] = {
-        status: null != (i = b.Z.getStatus(t.id)) ? i : Z.Skl.OFFLINE,
+        status: null != (i = b.Z.getStatus(t.id)) ? i : I.Skl.OFFLINE,
         activities: null != (l = b.Z.getActivities(t.id)) ? l : N
       } : n[t.id] = {
-        status: Z.Skl.OFFLINE,
+        status: I.Skl.OFFLINE,
         activities: N
       }
     }
@@ -193,7 +193,7 @@ function D(e) {
     }
   }, [t], A);
   i.useEffect(() => {
-    j.default.track(Z.rMx.MEMBER_LIST_VIEWED, {
+    j.default.track(I.rMx.MEMBER_LIST_VIEWED, {
       channel_id: t.id,
       channel_type: t.type,
       guild_id: t.guild_id
@@ -211,7 +211,7 @@ function D(e) {
           fade: !0,
           children: [(0, r.jsxs)(f.Z, {
             className: P.membersGroup,
-            children: ["".concat(I.intl.string(I.t["9Oq93t"]), "—").concat(c.length, " "), p && (0, r.jsx)(h.Z, {
+            children: ["".concat(Z.intl.string(Z.t["9Oq93t"]), "—").concat(c.length, " "), p && (0, r.jsx)(h.Z, {
               type: h.Z.Types.STAFF_ONLY_DM
             })]
           }), c.map(e => (0, r.jsx)(w, {

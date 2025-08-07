@@ -26,8 +26,8 @@ var r = n(255367),
   C = n(481932),
   E = n(664794),
   S = n(4517),
-  Z = n(277117),
-  I = n(52639),
+  I = n(277117),
+  Z = n(52639),
   P = n(228168),
   T = n(388032),
   N = n(638414);
@@ -62,8 +62,8 @@ function w(e) {
     layout: "SIDEBAR",
     userId: t.id,
     channelId: f.id
-  }), U = i.useRef(null), H = (0, o.Z)(U), G = (0, m.$m)(), F = (0, s.q_F)({
-    opacity: +(null != G.interactionType),
+  }), U = i.useRef(null), F = (0, o.Z)(U), H = (0, m.$m)(), G = (0, s.q_F)({
+    opacity: +(null != H.interactionType),
     config: {
       duration: 150
     }
@@ -82,22 +82,22 @@ function w(e) {
       fetchEndedAt: null == w ? void 0 : w.fetchEndedAt,
       isLoaded: null == w ? void 0 : w.isLoaded,
       children: (0, r.jsx)(m.NJ, {
-        value: G,
+        value: H,
         children: (0, r.jsxs)(j.Z, {
           ref: U,
           user: t,
           displayProfile: w,
           themeType: P.lY.SIDEBAR,
           themeOverride: D,
-          children: [null != G.interactionType && (0, r.jsx)(l.animated.div, {
-            style: F,
+          children: [null != H.interactionType && (0, r.jsx)(l.animated.div, {
+            style: G,
             className: N.backdrop
           }), (0, r.jsxs)(a.u2, {
             children: [(0, r.jsxs)(v.Z, {
               children: [(0, r.jsx)(C.Z, {
                 user: t,
                 themeType: P.lY.SIDEBAR,
-                shouldShowTooltip: null === G.interactionType
+                shouldShowTooltip: null === H.interactionType
               }), t.bot ? (0, r.jsx)(O.Z, {
                 user: t
               }) : (0, r.jsx)(E.Z, {
@@ -110,7 +110,7 @@ function w(e) {
                 user: t,
                 displayProfile: w,
                 themeType: P.lY.SIDEBAR,
-                animateOnHover: !H,
+                animateOnHover: !F,
                 className: N.banner
               }), (0, r.jsx)(_.Z, {
                 userId: t.id,
@@ -129,14 +129,14 @@ function w(e) {
                 themeType: P.lY.SIDEBAR,
                 disableToolbar: t.bot
               })]
-            }), (0, r.jsx)(Z.Z, {
+            }), (0, r.jsx)(I.Z, {
               user: t,
               currentUser: n,
               displayProfile: w,
               channel: f,
-              isHovering: null == G.interactionType && H,
+              isHovering: null == H.interactionType && F,
               onOpenProfile: T ? void 0 : B
-            }), (0, r.jsx)(I.Z, {
+            }), (0, r.jsx)(Z.Z, {
               user: t,
               channelId: f.id
             })]
@@ -146,7 +146,7 @@ function w(e) {
             context: M
           }), (null == w ? void 0 : w.profileEffectId) != null && (0, r.jsx)(h.Z, {
             profileEffectId: null == w ? void 0 : w.profileEffectId,
-            isHovering: H,
+            isHovering: F,
             urlQueryString: "dmView"
           })]
         })

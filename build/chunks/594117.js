@@ -1,44 +1,32 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  Z: () => O
+  Z: () => b
 });
 var r = n(255367);
 n(73800);
 var i = n(685072),
-  l = n(481060),
-  a = n(287734),
-  o = n(906732),
-  s = n(522651),
-  c = n(15274),
-  u = n(389303),
-  d = n(881824),
-  p = n(719100),
-  h = n(77880),
-  f = n(870569),
-  g = n(388032);
+  l = n(287734),
+  a = n(906732),
+  o = n(522651),
+  s = n(15274),
+  c = n(389303),
+  u = n(881824),
+  d = n(719100),
+  p = n(870569),
+  h = n(388032);
 
-function m(e) {
+function f(e) {
   var t, n;
   let {
-    tooltipText: a,
-    onClick: c
+    tooltipText: l,
+    onClick: s
   } = e, {
-    parentAnalyticsLocation: u
-  } = (0, o.ZP)(), {
-    changeLeaveCallAndActivityIcons: d,
-    isRTCIconRed: p
-  } = (0, h.A)({
-    location: "RTCConnectionDisconnectButton"
-  }), {
-    events: m,
-    Component: b
-  } = (0, i.K)(), _ = d ? (0, r.jsx)(l.PBZ, {
-    color: p ? l.TVs.colors.STATUS_DANGER : void 0,
-    size: "refresh_sm"
-  }) : (0, r.jsx)(b, {
-    size: "refresh_sm"
-  });
-  return (0, r.jsx)(f.Z, (t = function(e) {
+    parentAnalyticsLocation: c
+  } = (0, a.ZP)(), {
+    events: u,
+    Component: d
+  } = (0, i.K)();
+  return (0, r.jsx)(p.Z, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -56,12 +44,14 @@ function m(e) {
     }
     return e
   }({
-    tooltipText: d ? g.intl.string(g.t["Hi1/aW"]) : a,
+    tooltipText: l,
     onClick: () => {
-      (0, s.v)(u, s.d.DISCONNECT), c()
+      (0, o.v)(c, o.d.DISCONNECT), s()
     }
-  }, m), n = n = {
-    icon: _
+  }, u), n = n = {
+    icon: (0, r.jsx)(d, {
+      size: "refresh_sm"
+    })
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -74,39 +64,39 @@ function m(e) {
   }), t))
 }
 
+function g(e) {
+  let {
+    channel: t
+  } = e;
+  return (0, r.jsx)(f, {
+    tooltipText: h.intl.string(h.t.SMKyio),
+    onClick: () => {
+      if ((0, d.Z)(t)) return void(0, u.Us)(t);
+      l.default.disconnect()
+    }
+  })
+}
+
+function m(e) {
+  let {
+    channel: t
+  } = e;
+  return (0, r.jsx)(f, {
+    tooltipText: h.intl.string(h.t["6vrfgo"]),
+    onClick: () => {
+      if ((0, c.Z)(t)) return void(0, s.lC)(t);
+      l.default.disconnect()
+    }
+  })
+}
+
 function b(e) {
   let {
     channel: t
   } = e;
-  return (0, r.jsx)(m, {
-    tooltipText: g.intl.string(g.t.SMKyio),
-    onClick: () => {
-      if ((0, p.Z)(t)) return void(0, d.Us)(t);
-      a.default.disconnect()
-    }
-  })
-}
-
-function _(e) {
-  let {
+  return t.isGuildStageVoice() ? (0, r.jsx)(g, {
     channel: t
-  } = e;
-  return (0, r.jsx)(m, {
-    tooltipText: g.intl.string(g.t["6vrfgo"]),
-    onClick: () => {
-      if ((0, u.Z)(t)) return void(0, c.lC)(t);
-      a.default.disconnect()
-    }
-  })
-}
-
-function O(e) {
-  let {
-    channel: t
-  } = e;
-  return t.isGuildStageVoice() ? (0, r.jsx)(b, {
-    channel: t
-  }) : (0, r.jsx)(_, {
+  }) : (0, r.jsx)(m, {
     channel: t
   })
 }

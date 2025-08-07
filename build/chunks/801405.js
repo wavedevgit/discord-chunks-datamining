@@ -44,11 +44,11 @@ function j(e) {
       currentLayout: i,
       mode: e
     }
-  }, [t, n]), Z = (0, l.e7)([f.Z], () => f.Z.getVoiceChannelId() === t.id, [t.id]);
+  }, [t, n]), I = (0, l.e7)([f.Z], () => f.Z.getVoiceChannelId() === t.id, [t.id]);
   i.useEffect(() => {
     C.current = S
   });
-  let I = i.useRef(E),
+  let Z = i.useRef(E),
     {
       currentDocument: P,
       rootNode: T
@@ -62,17 +62,17 @@ function j(e) {
       }
     }, [h, v, j]),
     N = a && !v,
-    R = S === x.WtW.VIDEO && Z && !N,
+    R = S === x.WtW.VIDEO && I && !N,
     w = i.useCallback((e, r) => {
       r !== e && (s.Z.updateLayout(t.id, r, n), r === x.AEg.FULL_SCREEN && t.isPrivate() && m.S.dispatch(x.CkL.TEXTAREA_BLUR))
     }, [n, t]),
     A = i.useCallback(e => {
-      null != T && e === x.AEg.FULL_SCREEN && (w(e, I.current), (0, y.Pr)(e => {
-        I.current = e
+      null != T && e === x.AEg.FULL_SCREEN && (w(e, Z.current), (0, y.Pr)(e => {
+        Z.current = e
       }, P))
     }, [P, w, T]),
     D = i.useCallback(e => () => {
-      null != T && ((0, d.v)(O, d.d.FULL_SCREEN, e !== x.AEg.FULL_SCREEN), e !== x.AEg.FULL_SCREEN ? (I.current = e, w(e, x.AEg.FULL_SCREEN), (0, y.Dj)(T)) : A(e))
+      null != T && ((0, d.v)(O, d.d.FULL_SCREEN, e !== x.AEg.FULL_SCREEN), e !== x.AEg.FULL_SCREEN ? (Z.current = e, w(e, x.AEg.FULL_SCREEN), (0, y.Dj)(T)) : A(e))
     }, [w, A, T, O]);
   i.useEffect(() => {
     let e = () => {
@@ -119,8 +119,8 @@ function j(e) {
   }, [E, v]), i.useEffect(() => {
     null != T && C.current === x.WtW.VIDEO && S === x.WtW.VOICE && (0, y.Pr)(T, P)
   }, [P, S, C, T]), i.useEffect(() => {
-    !Z && v && _()
-  }, [Z, v]), R) ? (0, r.jsx)(p.Z, {
+    !I && v && _()
+  }, [I, v]), R) ? (0, r.jsx)(p.Z, {
     themeable: !1,
     node: T,
     guestWindow: h,

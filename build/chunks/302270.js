@@ -26,8 +26,8 @@ var r = n(255367),
   C = n(430824),
   E = n(496675),
   S = n(626135),
-  Z = n(431328),
-  I = n(501655),
+  I = n(431328),
+  Z = n(501655),
   P = n(200498),
   T = n(146085),
   N = n(427679),
@@ -52,7 +52,7 @@ function M(e) {
   } = (0, s.cj)([f.Z], () => ({
     chatOpen: f.Z.getChatOpen(t.id),
     participantsListOpen: f.Z.getParticipantsListOpen(t.id)
-  }), [t.id]), b = (0, P.B)(t.id), x = (0, Z.Rk)(t.id, I.pV.REQUESTED_TO_SPEAK_ONLY), {
+  }), [t.id]), b = (0, P.B)(t.id), x = (0, I.Rk)(t.id, Z.pV.REQUESTED_TO_SPEAK_ONLY), {
     hasParticipantsPanel: _
   } = (0, g.Z)({
     location: "StageChannelCallHeader"
@@ -97,28 +97,28 @@ function U(e) {
     channel: n,
     toggleRequestToSpeakSidebar: l,
     showRequestToSpeakSidebar: h
-  } = e, p = (0, b.ZP)(n), f = (0, s.e7)([N.Z], () => N.Z.getStageInstanceByChannel(n.id)), g = (0, Z.Io)(n.id), m = (0, Z.Rk)(n.id, I.pV.AUDIENCE), y = (0, s.e7)([C.Z], () => C.Z.getGuild(n.guild_id), [n.guild_id]), O = null != (t = null == y ? void 0 : y.maxStageVideoChannelUsers) ? t : 0, v = null != y && y.features.has(A.oNc.COMMUNITY) ? O < A.TU7 : (null == y ? void 0 : y.premiumTier) !== A.Eu4.TIER_3 && O <= A.eez, P = (0, w.Z)(n), R = (0, s.e7)([E.Z], () => E.Z.can(T.yP, n)), U = () => {
+  } = e, p = (0, b.ZP)(n), f = (0, s.e7)([N.Z], () => N.Z.getStageInstanceByChannel(n.id)), g = (0, I.Io)(n.id), m = (0, I.Rk)(n.id, Z.pV.AUDIENCE), y = (0, s.e7)([C.Z], () => C.Z.getGuild(n.guild_id), [n.guild_id]), O = null != (t = null == y ? void 0 : y.maxStageVideoChannelUsers) ? t : 0, v = null != y && y.features.has(A.oNc.COMMUNITY) ? O < A.TU7 : (null == y ? void 0 : y.premiumTier) !== A.Eu4.TIER_3 && O <= A.eez, P = (0, w.Z)(n), R = (0, s.e7)([E.Z], () => E.Z.can(T.yP, n)), U = () => {
     d.Z.updateStageVideoLimitBoostUpsellDismissed(n.id, !0), S.default.track(A.rMx.BOOSTING_UPSELL_CLICKED, {
       guild_id: n.guild_id,
       type: D.cd.VIDEO_STAGE_LIMIT,
       is_moderator: R,
       action: D.T7.DISMISS
     })
-  }, G = {
+  }, H = {
     canModerate: R,
     audienceCount: m,
     channel: n,
     speakerCount: g
-  }, F = i.useRef(G);
+  }, G = i.useRef(H);
   i.useEffect(() => {
-    F.current = G
+    G.current = H
   }), i.useEffect(() => {
     let {
       canModerate: e,
       audienceCount: t,
       channel: n,
       speakerCount: r
-    } = F.current;
+    } = G.current;
     P && S.default.track(A.rMx.BOOSTING_UPSELL_VIEWED, {
       guild_id: n.guild_id,
       type: D.cd.VIDEO_STAGE_LIMIT,
@@ -181,7 +181,7 @@ function U(e) {
   return P ? (0, r.jsxs)("div", {
     children: [B, (0, r.jsxs)("div", {
       className: L.boostUpsell,
-      children: [(0, r.jsx)(H, {}), (0, r.jsxs)("div", {
+      children: [(0, r.jsx)(F, {}), (0, r.jsxs)("div", {
         className: L.text,
         children: [(0, r.jsx)(u.Text, {
           variant: "text-md/medium",
@@ -231,7 +231,7 @@ function U(e) {
   }) : B
 }
 
-function H() {
+function F() {
   return (0, r.jsxs)("svg", {
     width: "36",
     height: "36",

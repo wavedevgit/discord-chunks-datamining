@@ -27,7 +27,7 @@ var r = n(255367),
   E = n(981631),
   S = n(388032);
 
-function Z(e) {
+function I(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -46,7 +46,7 @@ function Z(e) {
   return e
 }
 
-function I(e, t) {
+function Z(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -77,7 +77,7 @@ function P(e) {
     autoInvert: !1,
     onRequestClose: () => a(!1),
     renderPopout: function(e) {
-      return (0, r.jsx)(T, I(Z({}, e), {
+      return (0, r.jsx)(T, Z(I({}, e), {
         channel: t
       }))
     },
@@ -85,7 +85,7 @@ function P(e) {
       let {
         isShown: n
       } = t;
-      return (0, r.jsx)(x.ZP.Icon, I(Z({}, e), {
+      return (0, r.jsx)(x.ZP.Icon, Z(I({}, e), {
         ref: s,
         onClick: o,
         tooltip: n ? null : c,
@@ -102,7 +102,7 @@ function T(e) {
     channel: t,
     closePopout: n,
     onSelect: i
-  } = e, y = (0, c.Z)(t, "Sidebar Overflow"), x = (0, d.Z)(t), O = (0, f.Z)(t), v = (0, g.Z)(t), C = (0, a.Z)(t), Z = (0, u.Z)(t), I = (0, p.Z)(t.id), P = (0, h.Z)(t), T = (0, o.Z)(t), N = (0, s.Z)(t), R = (0, b.Z)({
+  } = e, y = (0, c.Z)(t, "Sidebar Overflow"), x = (0, d.Z)(t), O = (0, f.Z)(t), v = (0, g.Z)(t), C = (0, a.Z)(t), I = (0, u.Z)(t), Z = (0, p.Z)(t.id), P = (0, h.Z)(t), T = (0, o.Z)(t), N = (0, s.Z)(t), R = (0, b.Z)({
     id: t.id,
     label: S.intl.string(S.t.DQ797u)
   }), w = (0, m.Z)(t);
@@ -124,7 +124,7 @@ function T(e) {
     }), (0, r.jsxs)(l.kSQ, {
       children: [O, v]
     }), (0, r.jsxs)(l.kSQ, {
-      children: [P, x, I]
+      children: [P, x, Z]
     }), (0, r.jsxs)(l.kSQ, {
       children: [(0, r.jsx)(l.sNh, {
         id: "search",
@@ -146,7 +146,7 @@ function T(e) {
         }
       })]
     }), (0, r.jsxs)(l.kSQ, {
-      children: [w, C, Z, T]
+      children: [w, C, I, T]
     }), (0, r.jsxs)(l.kSQ, {
       children: [N, R]
     })]

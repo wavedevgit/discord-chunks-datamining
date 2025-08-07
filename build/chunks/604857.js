@@ -20,7 +20,7 @@ function f(e) {
     powerup: o,
     onError: f,
     onClose: b
-  } = e, m = (0, c.Z)(n, o), O = m.type === u.A3.TIER_OVERRIDE_ACTIVATED, j = (0, s.Z)(n), x = null == m.sourceEntitlement || !j;
+  } = e, m = (0, c.ZP)(n, o), O = m.type === u.A3.TIER_OVERRIDE_ACTIVATED, j = (0, s.Z)(n), x = null == m.sourceEntitlement || !j;
   return (0, r.jsxs)("div", {
     className: i()(p.container, {
       [p.disabled]: x

@@ -28,7 +28,7 @@ var r = n(255367),
   E = n(901593),
   S = n(883760);
 
-function Z(e) {
+function I(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -47,7 +47,7 @@ function Z(e) {
   return e
 }
 
-function I(e, t) {
+function Z(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -112,13 +112,13 @@ function N(e) {
           var {
             onClick: i
           } = e, l = P(e, ["onClick"]);
-          return (0, r.jsx)(p.zx, I(Z({}, l), {
+          return (0, r.jsx)(p.zx, Z(I({}, l), {
             onClick: () => {
               null == i || i(), (0, c.ZDy)(async () => {
                 let {
                   default: e
                 } = await n.e("34191").then(n.bind(n, 303647));
-                return n => (0, r.jsx)(e, I(Z({}, n), {
+                return n => (0, r.jsx)(e, Z(I({}, n), {
                   entry: t
                 }))
               })
@@ -148,7 +148,7 @@ function N(e) {
               var {
                 onClick: i
               } = e, l = P(e, ["onClick"]);
-              return (0, r.jsx)(p.zx, I(Z({}, n, l), {
+              return (0, r.jsx)(p.zx, Z(I({}, n, l), {
                 ref: o,
                 onClick: e => {
                   null == i || i(), t(e)
@@ -196,7 +196,7 @@ let R = e => {
         let {
           default: e
         } = await Promise.resolve().then(n.bind(n, 643560));
-        return t => (0, r.jsx)(e, I(Z({}, t), {
+        return t => (0, r.jsx)(e, Z(I({}, t), {
           entry: l
         }))
       })

@@ -5,15 +5,15 @@ r.d(t, {
 var n = r(255367),
   o = r(73800),
   a = r(120356),
-  s = r.n(a),
-  i = r(481060),
+  i = r.n(a),
+  s = r(481060),
   l = r(762762),
   c = r(973772),
-  d = r(795338),
-  u = r(880419),
-  p = r(279604),
-  f = r(535396),
-  x = r(93841),
+  d = r(838968),
+  u = r(795338),
+  p = r(880419),
+  f = r(279604),
+  x = r(787188),
   m = r(388032),
   j = r(153013);
 
@@ -22,29 +22,29 @@ function C(e) {
     canUseBoosts: t,
     guildId: r,
     powerup: a
-  } = e, [C, b] = o.useState(!1), h = (0, c.Z)(r, a).type !== f.A3.INACTIVE, {
-    disabled: v
+  } = e, [C, g] = o.useState(!1), v = (0, c.ZP)(r, a), b = (0, x._)(a, v, !1), h = (0, c.UP)(v), {
+    disabled: y
   } = (0, l.Z)(r, a, h), {
-    onShowDeactivate: g,
-    onActivate: O
-  } = (0, p.ZP)(r, a), y = !t || v, k = h && !y;
-  return (0, n.jsxs)(i.P3F, {
-    className: s()(j.perkCard, {
-      [j.disabled]: y
+    onShowDeactivate: O,
+    onActivate: k
+  } = (0, f.ZP)(r, a), P = !t || y, _ = h && !P;
+  return (0, n.jsxs)(s.P3F, {
+    className: i()(j.perkCard, {
+      [j.disabled]: P
     }),
-    onMouseEnter: () => b(!0),
-    onMouseLeave: () => b(!1),
-    "aria-disabled": y,
+    onMouseEnter: () => g(!0),
+    onMouseLeave: () => g(!1),
+    "aria-disabled": P,
     onClick: e => {
-      e.stopPropagation(), y || (h ? null == g || g(e) : null == O || O(e, {
+      e.stopPropagation(), P || (h ? null == O || O(e) : null == k || k(e, {
         shouldCloseAllModals: !1
       }))
     },
     children: [(0, n.jsx)("div", {
-      className: s()(j.perkCardImage, {
+      className: i()(j.perkCardImage, {
         [j.active]: h
       }),
-      children: (0, n.jsx)(d.m, {
+      children: (0, n.jsx)(u.m, {
         powerup: a,
         isHovering: C
       })
@@ -53,28 +53,24 @@ function C(e) {
       children: [(0, n.jsxs)("div", {
         className: j.footerDetails,
         children: [(0, n.jsx)("div", {
-          children: (0, n.jsx)(i.Text, {
+          children: (0, n.jsx)(s.Text, {
             variant: "text-sm/medium",
             color: h || C ? "text-primary" : "text-secondary",
             children: a.description
           })
-        }), (0, n.jsx)("div", {
-          children: h ? (0, n.jsxs)("div", {
+        }), (0, n.jsxs)("div", {
+          children: [(null == b ? void 0 : b.type) === "expiring" && (0, n.jsx)(d.rL, {
+            dateString: b.expiringAt
+          }), (null == b ? void 0 : b.type) === "removing" && (0, n.jsx)(d.c, {
+            removingAt: b.removingAt
+          }), (null == b ? void 0 : b.type) === "active" && (0, n.jsx)(d.P2, {
+            text: b.statusText
+          }), null == b && (0, n.jsxs)("div", {
             className: j.statusContainer,
-            children: [(0, n.jsx)(i.owK, {
-              size: "xs",
-              color: i.TVs.colors.STATUS_POSITIVE
-            }), (0, n.jsx)(i.Text, {
-              variant: "text-sm/bold",
-              color: "text-feedback-positive",
-              children: m.intl.string(x.default.FFLkm5)
-            })]
-          }) : (0, n.jsxs)("div", {
-            className: j.statusContainer,
-            children: [(0, n.jsx)(i.$Eu, {
+            children: [(0, n.jsx)(s.$Eu, {
               size: "sm",
-              color: i.TVs.unsafe_rawColors.GUILD_BOOSTING_PINK
-            }), (0, n.jsx)(i.Text, {
+              color: s.TVs.unsafe_rawColors.GUILD_BOOSTING_PINK
+            }), (0, n.jsx)(s.Text, {
               variant: "text-sm/medium",
               color: "text-secondary",
               children: m.intl.formatToPlainString(m.t.t2Wbo6, {
@@ -82,14 +78,14 @@ function C(e) {
                 decorator: ""
               })
             })]
-          })
+          })]
         })]
-      }), k && (0, n.jsx)(u.Z, {
+      }), _ && (0, n.jsx)(p.Z, {
         compact: !0,
         iconSize: "md",
         guildId: r,
         powerup: a,
-        onClick: g,
+        onClick: O,
         className: j.toggleButton
       })]
     })]

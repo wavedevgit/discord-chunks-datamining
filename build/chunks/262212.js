@@ -123,7 +123,7 @@ function v(e) {
     guildId: n,
     powerup: o,
     onError: s
-  } = e, i = (0, c.Z)(n, o).type !== m.A3.INACTIVE, u = (0, a.Z)(n, o, "GuildPowerupCardFooterAdmin"), p = i || !u, f = !i;
+  } = e, i = (0, c.ZP)(n, o).type !== m.A3.INACTIVE, u = (0, a.Z)(n, o, "GuildPowerupCardFooterAdmin"), p = i || !u, f = !i;
   return (0, r.jsxs)("div", {
     className: l()(b.container, t),
     children: [p && (0, r.jsx)(d.Z, {

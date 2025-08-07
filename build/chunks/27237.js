@@ -85,7 +85,7 @@ function I(e) {
     index: n,
     powerup: i,
     nextPowerup: l
-  } = e, s = (0, u.Z)(t, i), a = (0, u.Z)(t, l), c = s.type !== x.A3.INACTIVE, _ = a.type !== x.A3.INACTIVE, v = s.type === x.A3.TIER_OVERRIDE_ACTIVATED, [b, j] = o.useState(void 0);
+  } = e, s = (0, u.ZP)(t, i), a = (0, u.ZP)(t, l), c = s.type !== x.A3.INACTIVE, _ = a.type !== x.A3.INACTIVE, v = s.type === x.A3.TIER_OVERRIDE_ACTIVATED, [b, j] = o.useState(void 0);
   (0, m.KT)(b);
   let I = (0, g.d)(c);
   return (0, r.jsxs)(f.Z, {

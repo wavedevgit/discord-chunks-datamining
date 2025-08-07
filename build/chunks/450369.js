@@ -1,7 +1,7 @@
 /** Chunk was on 49152 **/
 n.d(t, {
   Q: () => M,
-  Z: () => G
+  Z: () => H
 });
 var r = n(255367),
   i = n(73800),
@@ -27,8 +27,8 @@ var r = n(255367),
   C = n(670188),
   E = n(199902),
   S = n(314897),
-  Z = n(430824),
-  I = n(496675),
+  I = n(430824),
+  Z = n(496675),
   P = n(979651),
   T = n(88751),
   N = n(252132),
@@ -114,7 +114,7 @@ let M = 16 / 9,
       }))
     })
   },
-  H = e => {
+  F = e => {
     let {
       stageParticipant: t,
       rtcParticipant: n,
@@ -137,7 +137,7 @@ let M = 16 / 9,
       largeStream: null != l && b.Z.getStageStreamSize(l.id)
     })), T = i.useCallback((e, t) => {
       if (e.type === A.fO.STREAM && 0 === v.filter(t => (0, _.V9)(t) === e.id && t.state !== w.jm8.ENDED).length) {
-        if (!(0, j.p9)(l, P.Z, Z.Z, I.Z, x.Z)[0]) return;
+        if (!(0, j.p9)(l, P.Z, I.Z, Z.Z, x.Z)[0]) return;
         (0, h.rn)((0, _.my)(e.id), {
           forceMultiple: t.shiftKey
         })
@@ -160,7 +160,7 @@ let M = 16 / 9,
       children: s && n.type === A.fO.USER && (0, r.jsx)(R.Z, {})
     }, g)
   },
-  G = i.memo(function(e) {
+  H = i.memo(function(e) {
     var t;
     let {
       participant: i,
@@ -185,7 +185,7 @@ let M = 16 / 9,
           }
         })
       },
-      Z = (e, t, i, a) => {
+      I = (e, t, i, a) => {
         switch (e.type) {
           case A.fO.HIDDEN_STREAM:
           case A.fO.STREAM:
@@ -240,7 +240,7 @@ let M = 16 / 9,
             })
         }
       };
-    return O.type !== A.fO.USER || (null == (t = O.voiceState) ? void 0 : t.selfVideo) ? (0, r.jsx)(H, {
+    return O.type !== A.fO.USER || (null == (t = O.voiceState) ? void 0 : t.selfVideo) ? (0, r.jsx)(F, {
       stageParticipant: i,
       rtcParticipant: O,
       channel: l,
@@ -248,7 +248,7 @@ let M = 16 / 9,
       user: j,
       width: c,
       isModerator: C,
-      onContextMenu: Z,
+      onContextMenu: I,
       inPopout: h === w.IlC.POPOUT
     }) : (0, r.jsx)(U, {
       stageParticipant: i,
@@ -258,7 +258,7 @@ let M = 16 / 9,
       user: j,
       width: c,
       isModerator: C,
-      onContextMenu: Z,
+      onContextMenu: I,
       inPopout: h === w.IlC.POPOUT
     })
   })

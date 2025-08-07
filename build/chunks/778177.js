@@ -543,7 +543,8 @@ class er extends i.PureComponent {
         query: e,
         anchor: o,
         focus: a,
-        performSearch: n
+        performSearch: n,
+        replace: !1
       }), t.setSelectedIndex(-1)
     }), B(this, "shouldShowSearchQuery", () => {
       let {

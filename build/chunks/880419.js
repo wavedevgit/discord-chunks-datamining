@@ -75,7 +75,7 @@ function v(e) {
   let {
     guildId: t,
     powerup: n
-  } = e, o = (0, u.Z)(t, n);
+  } = e, o = (0, u.ZP)(t, n);
   if (o.type === p.A3.LEVEL_ACTIVATED) {
     var i, a;
     return (0, r.jsxs)("div", {
@@ -132,16 +132,16 @@ function _(e) {
     isLoading: k,
     error: E,
     onShowDeactivate: h
-  } = (0, d.ZP)(t, n), C = (0, u.Z)(t, n).type !== p.A3.INACTIVE, {
-    disabled: T,
-    reason: P
+  } = (0, d.ZP)(t, n), C = (0, u.ZP)(t, n).type !== p.A3.INACTIVE, {
+    disabled: P,
+    reason: T
   } = (0, l.Z)(t, n, C);
   return o.useEffect(() => {
     null == g || g(E)
   }, [E, g]), (0, r.jsx)(c.ua7, {
     delay: 100,
-    "aria-label": null != P ? P : C ? b.intl.string(f.default.TZsu1d) : void 0,
-    text: null != P ? P : C ? (0, r.jsx)(v, {
+    "aria-label": null != T ? T : C ? b.intl.string(f.default.TZsu1d) : void 0,
+    text: null != T ? T : C ? (0, r.jsx)(v, {
       guildId: t,
       powerup: n
     }) : void 0,
@@ -153,7 +153,7 @@ function _(e) {
       }),
       color: C ? s.Tt.PRIMARY : s.Tt.BRAND,
       "aria-label": b.intl.string(C ? f.default.TZsu1d : f.default.gSxlHR),
-      disabled: T,
+      disabled: P,
       onClick: C ? h : y,
       submitting: k
     }), I), {
