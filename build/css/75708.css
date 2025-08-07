@@ -1,6 +1,6 @@
 /**
   Module ID: 75708
-  Original File Name: 1def1ea3a7ff042d
+  Original File Name: b1d270f64dcb5006
 **/
 .phoneFieldPopout__61a01 {
     height: 240px;
@@ -15741,6 +15741,10 @@ div.nagbar_d74ef8 {
     margin-bottom: 20px
 }
 
+.detectionToggleModal_cc46f0 {
+    width: var(--modal-width-small)
+}
+
 .feature__4626b {
     padding-top: 20px
 }
@@ -19963,4 +19967,4 @@ html .invoiceCancelRow__968a4 {
     overflow: visible
 }
 
-/*# sourceMappingURL=1def1ea3a7ff042d.css.map*/
+/*# sourceMappingURL=b1d270f64dcb5006.css.map*/

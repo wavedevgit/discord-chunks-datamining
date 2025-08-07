@@ -1,6 +1,6 @@
 /**
   Module ID: 37979
-  Original File Name: 3836c76a2a8d85c7
+  Original File Name: 8e31da6e7fb9d56e
 **/
 .label__95e0a {
     margin-bottom: 2px
@@ -16,6 +16,10 @@
 
 .filterSection__95e0a {
     padding-top: 24px
+}
+
+.filterSection__95e0a:last-child {
+    padding-bottom: 8px
 }
 
 .dateFilter__95e0a {
@@ -45,4 +49,4 @@
     width: 24px
 }
 
-/*# sourceMappingURL=3836c76a2a8d85c7.css.map*/
+/*# sourceMappingURL=8e31da6e7fb9d56e.css.map*/
