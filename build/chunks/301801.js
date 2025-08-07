@@ -6,8 +6,8 @@ var r = n(73800),
   i = n(348327),
   a = n.n(i),
   l = n(392711),
-  o = n(823379),
-  c = n(886118);
+  c = n(823379),
+  o = n(886118);
 let s = new Worker(new URL("/assets/" + n.u("56558"), n.b));
 
 function u(e, t, n, i) {
@@ -16,9 +16,9 @@ function u(e, t, n, i) {
     f = r.useRef(null),
     p = r.useRef(n),
     {
-      searchStringGenerator: m
+      searchStringGenerator: y
     } = i,
-    g = function(e) {
+    m = function(e) {
       let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : [],
         [n, i] = r.useState(e),
         l = r.useRef(e);
@@ -30,8 +30,8 @@ function u(e, t, n, i) {
           return a()(e, t) ? e : t
         })
       }, t), n
-    }(t.map(m), [t, m, ...u]),
-    y = function(e) {
+    }(t.map(y), [t, y, ...u]),
+    g = function(e) {
       let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : [],
         [n, i] = r.useState(e),
         l = r.useRef(e);
@@ -61,8 +61,8 @@ function u(e, t, n, i) {
         var i;
         let a = null != (i = r.promiseUuid) ? i : (0, l.uniqueId)(),
           {
-            searchType: u = c.S.FUZZY,
-            sortType: d = c.E.NONE,
+            searchType: u = o.S.FUZZY,
+            sortType: d = o.E.NONE,
             jaroWinklerSearchThreshold: f = .85
           } = r;
         return new Promise(r => {
@@ -73,7 +73,7 @@ function u(e, t, n, i) {
                 foundItemIndexes: l
               }
             } = t;
-            a === n && (r(l.map(t => e[t]).filter(o.lm)), null == s || s.removeEventListener("message", i))
+            a === n && (r(l.map(t => e[t]).filter(c.lm)), null == s || s.removeEventListener("message", i))
           };
           null == s || s.addEventListener("message", i), null == s || s.postMessage({
             id: a,
@@ -111,8 +111,8 @@ function u(e, t, n, i) {
     }), f.current
   }, [i]);
   return r.useEffect(() => {
-    h(e, y, g)
-  }, [h, e, y, g, ...u]), r.useEffect(() => () => {
+    h(e, g, m)
+  }, [h, e, g, m, ...u]), r.useEffect(() => () => {
     null != f.current && f.current.cancel(), f.current = null, d.current = null
-  }, [g, n, i]), h
+  }, [m, n, i]), h
 }

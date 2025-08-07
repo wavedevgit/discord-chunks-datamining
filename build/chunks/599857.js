@@ -7,8 +7,8 @@ var r = n(255367),
   i = n(73800),
   a = n(15155),
   l = n(780384),
-  o = n(481060),
-  c = n(626135),
+  c = n(481060),
+  o = n(626135),
   s = n(756148),
   u = n(981631);
 
@@ -18,12 +18,12 @@ function d(e) {
     action: n,
     onVerify: a
   } = e, [l, d] = i.useState("uninitialized"), f = i.useCallback(e => {
-    c.default.track(u.rMx.RECAPTCHA_MODAL_EVENT, {
+    o.default.track(u.rMx.RECAPTCHA_MODAL_EVENT, {
       recaptcha_event_name: e
     })
   }, []), p = i.useCallback(e => {
     f("handle-verify"), a(e)
-  }, [a, f]), m = i.useCallback(() => {
+  }, [a, f]), y = i.useCallback(() => {
     var e, r, i;
     null == (i = window) || null == (r = i.grecaptcha) || null == (e = r.enterprise) || e.ready(async () => {
       var e;
@@ -31,23 +31,23 @@ function d(e) {
         action: n
       } : void 0)), d("loaded")
     })
-  }, [t, n, p, f]), g = i.useCallback(() => {
-    d("running"), f("recaptcha-loading"), s.I.loadRecaptchaScript(t, m, f)
-  }, [t, m, f]);
+  }, [t, n, p, f]), m = i.useCallback(() => {
+    d("running"), f("recaptcha-loading"), s.I.loadRecaptchaScript(t, y, f)
+  }, [t, y, f]);
   return i.useEffect(() => {
-    "uninitialized" === l && g()
-  }, [g, l]), i.useEffect(() => () => {
+    "uninitialized" === l && m()
+  }, [m, l]), i.useEffect(() => () => {
     f("recaptcha-unloading"), document.querySelectorAll('script[src*="recaptcha/enterprise.js"],.grecaptcha-badge').forEach(e => {
       var t;
       return null == (t = e.parentNode) ? void 0 : t.removeChild(e)
     }), null != window.grecaptcha && delete window.grecaptcha
-  }, [f]), (0, r.jsx)(o.$jN, {})
+  }, [f]), (0, r.jsx)(c.$jN, {})
 }
 let f = e => {
   var t, n, {
       theme: i
     } = e,
-    o = function(e, t) {
+    c = function(e, t) {
       if (null == e) return {};
       var n, r, i = function(e, t) {
         if (null == e) return {};
@@ -62,7 +62,7 @@ let f = e => {
       }
       return i
     }(e, ["theme"]);
-  let c = (0, l.wj)(i) ? "dark" : "light";
+  let o = (0, l.wj)(i) ? "dark" : "light";
   return (0, r.jsx)(a.Z, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
@@ -82,8 +82,8 @@ let f = e => {
     return e
   }({
     sitekey: u.OL7
-  }, o), n = n = {
-    theme: c
+  }, c), n = n = {
+    theme: o
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {

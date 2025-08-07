@@ -13,8 +13,8 @@ let i = {
       task: n,
       onSubmit: a,
       disabled: l
-    } = e, o = i[n.ui_component.type];
-    return null == o ? null : (0, r.jsx)(o, {
+    } = e, c = i[n.ui_component.type];
+    return null == c ? null : (0, r.jsx)(c, {
       configData: n.ui_component.data,
       onSubmit: a,
       taskId: n.task_id,

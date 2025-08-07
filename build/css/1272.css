@@ -1,6 +1,6 @@
 /**
   Module ID: 1272
-  Original File Name: 5e6e37d461548e73
+  Original File Name: 2fd081f009717ec4
 **/
 .container__74da2 {
     align-items: center;
@@ -8721,6 +8721,10 @@ html .tabBadge__35e86 {
     color: var(--text-muted-on-default)
 }
 
+.textContainer_dede4b {
+    text-align: center
+}
+
 .container_dede4b {
     width: 500px
 }
@@ -8737,23 +8741,7 @@ html .tabBadge__35e86 {
     width: 400px
 }
 
-.title_dede4b {
-    font-size: 24px;
-    line-height: 30px
-}
-
-.body_dede4b,.title_dede4b {
-    text-align: center
-}
-
-.body_dede4b {
-    font-size: 16px;
-    line-height: 24px
-}
-
 .footer_dede4b {
-    font-size: 14px;
-    line-height: 18px;
     text-align: center
 }
 
@@ -8761,14 +8749,7 @@ html .tabBadge__35e86 {
     opacity: .3
 }
 
-.footerAction_dede4b {
-    font-weight: var(--font-weight-semibold);
-    margin-left: 12px;
-    margin-right: 12px
-}
-
 .logoutButton_dede4b {
-    bottom: 40px;
     position: relative
 }
 
@@ -8850,4 +8831,4 @@ html .tabBadge__35e86 {
     margin-bottom: 18px
 }
 
-/*# sourceMappingURL=5e6e37d461548e73.css.map*/
+/*# sourceMappingURL=2fd081f009717ec4.css.map*/

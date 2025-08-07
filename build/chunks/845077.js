@@ -1,7 +1,7 @@
 /** Chunk was on 89744 **/
 n.d(t, {
   PA: () => l,
-  Wl: () => o
+  Wl: () => c
 });
 var r = n(990547);
 n(479531);
@@ -17,7 +17,7 @@ async function l() {
   });
   return 204 === e.status ? null : e.body
 }
-async function o(e) {
+async function c(e) {
   return (await i.Z.post({
     url: a.ANM.SAFETY_FLOWS_TASK,
     body: e,
