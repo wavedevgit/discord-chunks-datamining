@@ -1,6 +1,6 @@
 /**
   Module ID: 99133
-  Original File Name: fcb6a718e28028da
+  Original File Name: 4871cb7510e83515
 **/
 .right__89d2b {
     transform: rotate(90deg)
@@ -1194,9 +1194,9 @@
 
 .message_fcf29c {
     color: var(--text-default);
-    font-size: 1rem;
+    font-size: 16px;
     font-weight: var(--font-weight-medium);
-    line-height: 1.25rem;
+    line-height: 20px;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap
@@ -1382,4 +1382,4 @@
     opacity: 1
 }
 
-/*# sourceMappingURL=fcb6a718e28028da.css.map*/
+/*# sourceMappingURL=4871cb7510e83515.css.map*/
