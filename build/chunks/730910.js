@@ -141,14 +141,14 @@ function A(e) {
         back: !1,
         skip: !k
       })), (0, x.Nb)((0, y.lg)(D)), await q() && (0, x.IG)(h, D)
-    }, J = async () => {
+    }, Q = async () => {
       g.default.track(T.rMx.GUILD_SETTINGS_ONBOARDING_WIZARD_PROGRESS_CTA_CLICKED, Z(R({}, (0, m.hH)(h)), {
         step: y.PG[D],
         back: !0,
         skip: !1
       })), await q() && (0, x.Wy)(h, D)
-    }, Q = null;
-  G && (D === y.PG.SAFETY_CHECK ? Q = (0, r.jsx)(N.j7, {}) : D === y.PG.DEFAULT_CHANNELS ? Q = (0, r.jsx)(N.Io, {}) : D === y.PG.CUSTOMIZATION_QUESTIONS ? Q = (0, r.jsx)(N.cZ, {}) : D === y.PG.HOME_SETTINGS && (Q = (0, r.jsx)(N.g6, {})));
+    }, J = null;
+  G && (D === y.PG.SAFETY_CHECK ? J = (0, r.jsx)(N.j7, {}) : D === y.PG.DEFAULT_CHANNELS ? J = (0, r.jsx)(N.Io, {}) : D === y.PG.CUSTOMIZATION_QUESTIONS ? J = (0, r.jsx)(N.cZ, {}) : D === y.PG.HOME_SETTINGS && (J = (0, r.jsx)(N.g6, {})));
   let $ = (0, r.jsx)("div", {
       className: G ? w.hidden : void 0,
       children: (0, r.jsx)(d.zxk, {
@@ -157,7 +157,7 @@ function A(e) {
         text: P.intl.string(P.t["13/7kZ"]),
         icon: d.whL,
         iconPosition: "start",
-        onClick: J,
+        onClick: Q,
         disabled: G || M
       })
     }),
@@ -190,7 +190,7 @@ function A(e) {
               alt: "wumpus"
             }), (0, r.jsxs)("div", {
               className: w.educationUpsell,
-              children: [Q, (0, r.jsx)("div", {
+              children: [J, (0, r.jsx)("div", {
                 className: w.educationUpsellArrow
               })]
             })]

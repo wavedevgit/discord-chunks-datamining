@@ -199,9 +199,7 @@ function J(e) {
     windowDispatch: ef
   } = i.useContext(E.ZP), e_ = (0, d.e7)([C.Z], () => !C.Z.hasLoadedStickerPacks), ep = (0, S.V2)({
     location: "expression_picker"
-  }), eh = (0, d.e7)([w.Z], () => w.Z.isOpen()), em = null != en, eg = (0, _.Jw)(null != en ? en : ""), eE = (null == (t = z.gifs) ? void 0 : t.allowSending) && !c.tq && null != V, eb = (null == (n = z.stickers) ? void 0 : n.allowSending) && null != Y, ey = !(null == (o = z.expressionPicker) ? void 0 : o.onlyEmojis) && (eE || eb), {
-    showExpressionPickerButton: eO
-  } = (0, v.qt)({
+  }), eh = (0, d.e7)([w.Z], () => w.Z.isOpen()), em = null != en, eg = (0, _.Jw)(null != en ? en : ""), eE = (null == (t = z.gifs) ? void 0 : t.allowSending) && !c.tq && null != V, eb = (null == (n = z.stickers) ? void 0 : n.allowSending) && null != Y, ey = !(null == (o = z.expressionPicker) ? void 0 : o.onlyEmojis) && (eE || eb), eO = (0, v.qt)({
     location: "expression_picker",
     autoTrackExposure: !0,
     disable: !ey || ec !== M.X1.EMOJI
@@ -365,7 +363,7 @@ function J(e) {
                   eo.current = e
                 },
                 shouldShowSoundmojiInEmojiPicker: (null == (t = z.soundmoji) ? void 0 : t.allowSending) === !0,
-                showAddEmojiButton: eO
+                showAddEmojiButton: eO.isEntrypointEnabled && null != K.guild_id
               }) : null, ec === M.X1.SOUNDBOARD ? (0, r.jsx)("div", {
                 className: F.soundboardContainer,
                 children: (0, r.jsx)(A.Z, {

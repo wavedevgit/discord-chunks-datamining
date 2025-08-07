@@ -16,7 +16,7 @@ function a(e, t, n) {
   }) : e[t] = n, e
 }
 let s = "Note";
-class l extends o.fE {
+class l extends o.f {
   getNote(e) {
     return this.get(e)
   }
@@ -37,4 +37,4 @@ let c = new l({
       note: null
     }))
   }
-}, i.IZ.getCachedKvStoreMode())
+}, i.IZ.getCachedBridgedStoreMode())

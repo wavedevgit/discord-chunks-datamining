@@ -1,6 +1,6 @@
 /** Chunk was on 20087 **/
 r.d(e, {
-  ZP: () => p,
+  ZP: () => g,
   _j: () => d,
   po: () => f
 }), r(415506), r(539854), r(388685);
@@ -82,26 +82,26 @@ let h = t => {
       }, r))
     })
   },
-  p = t => {
+  p = i.forwardRef((t, e) => {
     let {
-      onChange: e,
-      multiple: s = !0,
-      disabled: c,
-      className: f,
-      tabIndex: h = -1,
-      "aria-label": p,
-      filters: g,
-      setLoading: y,
-      title: O
-    } = t, w = i.useRef(null), b = i.useRef(null), [j, m] = i.useState(!1);
+      onChange: s,
+      multiple: c = !0,
+      disabled: f,
+      className: h,
+      tabIndex: p = -1,
+      "aria-label": g,
+      filters: y,
+      setLoading: O,
+      title: w
+    } = t, b = i.useRef(null), [m, j] = i.useState(!1);
     i.useEffect(() => {
-      j && v()
-    }, [j]);
+      m && v()
+    }, [m]);
     let v = () => {
         null !== b.current && ((0, l.Mr3)(b.current), b.current = null)
       },
       P = async t => {
-        null == y || y(!0), await d(t, e), m(!0), null == y || y(!1)
+        null == O || O(!0), await d(t, s), j(!0), null == O || O(!1)
       }, _ = async t => {
         var e, i, o;
         if (t.stopPropagation(), t.preventDefault(), (null == (e = t.currentTarget) ? void 0 : e.files) == null || (null == (o = t.currentTarget) || null == (i = o.files) ? void 0 : i.length) === 0) return;
@@ -116,14 +116,16 @@ let h = t => {
         })
       };
     return (0, n.jsx)(o.Z, {
+      ref: e,
       onChange: _,
-      filters: null != g ? g : (0, a.Zj)(),
-      multiple: s,
-      disabled: c,
-      className: f,
-      tabIndex: h,
-      "aria-label": p,
-      ref: w,
-      title: O
+      filters: null != y ? y : (0, a.Zj)(),
+      multiple: c,
+      disabled: f,
+      className: h,
+      tabIndex: p,
+      "aria-label": g,
+      title: w
     })
-  }
+  });
+p.displayName = "ImageInputWithModals";
+let g = p

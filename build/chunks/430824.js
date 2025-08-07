@@ -33,7 +33,7 @@ function f(e) {
   }
   return e
 }
-class _ extends i.fE {
+class _ extends i.f {
   getGuildCount() {
     return this.length()
   }
@@ -122,4 +122,4 @@ let p = new _({
     let c = "string" == typeof r ? new Date(r) : r;
     c !== s.joinedAt && null != c && t.set(n, (0, o.kH)(s, c))
   }
-}, r.j_.getCachedKvStoreMode())
+}, r.j_.getCachedBridgedStoreMode())

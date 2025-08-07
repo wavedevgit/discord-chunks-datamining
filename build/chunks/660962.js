@@ -213,7 +213,7 @@ function X() {
   })
 }
 
-function J(e) {
+function Q(e) {
   var t, n;
   let {
     role: i,
@@ -251,7 +251,7 @@ function J(e) {
   })
 }
 
-function Q(e) {
+function J(e) {
   let {
     role: t,
     guildId: n,
@@ -376,7 +376,7 @@ function ee(e) {
         selectedStyle: u,
         disabled: p,
         shouldShowUpsell: c
-      }), u !== T.g.HOLOGRAPHIC && null != u && (0, r.jsx)(J, {
+      }), u !== T.g.HOLOGRAPHIC && null != u && (0, r.jsx)(Q, {
         role: n,
         disabled: p,
         currentStyle: u,
@@ -391,7 +391,7 @@ function ee(e) {
         guild: t,
         disabled: p,
         role: n
-      }), (0, r.jsx)(Q, {
+      }), (0, r.jsx)(J, {
         role: n,
         guildId: t.id,
         selectedStyle: u,

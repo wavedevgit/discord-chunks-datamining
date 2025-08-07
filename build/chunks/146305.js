@@ -50,8 +50,8 @@ var r = n(255367),
   K = n(651780),
   q = n(279542),
   X = n(665324),
-  J = n(208150),
-  Q = n(353398),
+  Q = n(208150),
+  J = n(353398),
   $ = n(365774),
   ee = n(178387),
   et = n(993097),
@@ -167,7 +167,7 @@ let eb = {
         };
       case em.pNK.STICKERS:
         return {
-          section: em.pNK.STICKERS, impressionName: i.ImpressionNames.GUILD_SETTINGS_STICKERS, label: ep.intl.string(ep.t.R5nQkZ), ariaLabel: ep.intl.string(ep.t.R5nQkZ), element: J.Z, predicate: () => t.canManageGuildExpressions
+          section: em.pNK.STICKERS, impressionName: i.ImpressionNames.GUILD_SETTINGS_STICKERS, label: ep.intl.string(ep.t.R5nQkZ), ariaLabel: ep.intl.string(ep.t.R5nQkZ), element: Q.Z, predicate: () => t.canManageGuildExpressions
         };
       case em.pNK.SOUNDBOARD:
         return {
@@ -177,9 +177,9 @@ let eb = {
         return {
           section: em.pNK.GUILD_TEMPLATES, impressionName: i.ImpressionNames.GUILD_SETTINGS_TEMPLATE, label: (0, r.jsx)($.Z, {
             showDirtyIndicator: t.showDirtyGuildTemplateIndicator
-          }), ariaLabel: ep.intl.string(ep.t.KUw7Sk), element: Q.ZP, notice: {
-            stores: [Q.Sf],
-            element: Q.Q5
+          }), ariaLabel: ep.intl.string(ep.t.KUw7Sk), element: J.ZP, notice: {
+            stores: [J.Sf],
+            element: J.Q5
           }, predicate: () => t.canManageGuild
         };
       case em.pNK.ACCESS:

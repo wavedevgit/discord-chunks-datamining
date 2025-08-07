@@ -1,11 +1,12 @@
-/** Chunk was on 22988 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
   Z: () => a
 });
 var r = n(81825),
   i = n(598077);
 
-function l(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -15,6 +16,6 @@ function l(e, t, n) {
 }
 class a extends r.Z {
   constructor(e) {
-    super(), l(this, "id", void 0), l(this, "name", void 0), l(this, "managed", void 0), l(this, "roles", void 0), l(this, "requiredColons", void 0), l(this, "user", void 0), l(this, "animated", void 0), l(this, "available", void 0), this.id = e.id, this.name = e.name, this.managed = e.managed, this.roles = e.roles, this.requiredColons = e.requiredColons, this.user = new i.Z(e.user), this.animated = e.animated, this.available = e.available
+    super(), o(this, "id", void 0), o(this, "name", void 0), o(this, "managed", void 0), o(this, "roles", void 0), o(this, "requiredColons", void 0), o(this, "user", void 0), o(this, "animated", void 0), o(this, "available", void 0), this.id = e.id, this.name = e.name, this.managed = e.managed, this.roles = e.roles, this.requiredColons = e.requiredColons, this.user = new i.Z(e.user), this.animated = e.animated, this.available = e.available
   }
 }

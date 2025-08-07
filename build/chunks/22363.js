@@ -30,7 +30,7 @@ let p = e => {
     isBurstReaction: O,
     onBurstReactionToggle: v,
     renderHeader: I,
-    showAddEmojiButton: T
+    showAddEmojiButton: T = !1
   } = e, S = (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(u.Z, {
       emojiListRef: h,
