@@ -15,8 +15,8 @@ var n = a(255367),
   x = a(665149),
   p = a(611565),
   h = a(238246),
-  f = a(788983),
-  b = a(906467),
+  b = a(788983),
+  f = a(906467),
   v = a(259580),
   j = a(31336),
   g = a(19759),
@@ -24,24 +24,24 @@ var n = a(255367),
   y = a(176038);
 a(381996);
 var C = a(392750),
-  O = a(926976),
-  N = a(789654),
-  E = a(719672),
-  T = a(691867),
+  N = a(926976),
+  O = a(789654),
+  T = a(719672),
+  E = a(691867),
   S = a(916790),
   P = a(645973),
   w = a(903502),
   I = a(604776),
   R = a(912072),
   k = a(272193),
-  A = a(685560),
-  Z = a(735959),
+  Z = a(685560),
+  A = a(735959),
   D = a(572444),
   L = a(636500),
-  M = a(246992),
-  B = a(484662),
-  U = a(496025),
-  F = a(442954),
+  B = a(246992),
+  M = a(484662),
+  F = a(496025),
+  U = a(442954),
   G = a(925124),
   z = a(633001),
   V = a(702904),
@@ -96,7 +96,7 @@ function em(e) {
       id: "analytics",
       name: "Analytics",
       group: el.v0.EXPERIMENTS,
-      render: () => (0, n.jsx)(O.Z, {})
+      render: () => (0, n.jsx)(N.Z, {})
     }, {
       id: "triggers",
       name: "Triggers",
@@ -113,7 +113,7 @@ function em(e) {
       group: el.v0.EVENTS,
       render: () => (0, n.jsx)(S.Z, {})
     }];
-    return b.Z.isDeveloper && (e.push({
+    return f.Z.isDeveloper && (e.push({
       id: "shop",
       name: "Shop",
       group: el.v0.BILLING,
@@ -157,17 +157,17 @@ function em(e) {
       id: "intl",
       name: "Intl",
       group: el.v0.UI,
-      render: () => (0, n.jsx)(Z.Z, {})
+      render: () => (0, n.jsx)(A.Z, {})
     }), e.push({
       id: "colors",
       name: "Colors",
       group: el.v0.UI,
-      render: () => (0, n.jsx)(N.Z, {})
+      render: () => (0, n.jsx)(O.Z, {})
     }), e.push({
       id: "design_toggles",
       name: "Design Toggles",
       group: el.v0.UI,
-      render: () => (0, n.jsx)(T.Z, {})
+      render: () => (0, n.jsx)(E.Z, {})
     }), e.push({
       id: "premium_feature_randomizer",
       name: "Premium Feature Randomizer",
@@ -184,7 +184,7 @@ function em(e) {
       id: "messaging",
       name: "Messaging",
       group: el.v0.USERS,
-      render: () => (0, n.jsx)(U.Z, {})
+      render: () => (0, n.jsx)(F.Z, {})
     }), e.push({
       id: "reporting",
       name: "Reporting",
@@ -201,12 +201,12 @@ function em(e) {
       id: "modals",
       name: "Modals",
       group: el.v0.UI,
-      render: () => (0, n.jsx)(F.Z, {})
+      render: () => (0, n.jsx)(U.Z, {})
     }), e.push({
       id: "layers",
       name: "Layers",
       group: el.v0.UI,
-      render: () => (0, n.jsx)(B.Z, {})
+      render: () => (0, n.jsx)(M.Z, {})
     }), e.push({
       id: "affinity",
       name: "Affinity",
@@ -217,7 +217,7 @@ function em(e) {
       name: "Widgets",
       group: el.v0.USERS,
       render: () => (0, n.jsx)(en.Z, {})
-    }), b.Z.isDeveloper && (e.push({
+    }), f.Z.isDeveloper && (e.push({
       id: "content_inventory",
       name: "Content Inventory",
       group: el.v0.USERS,
@@ -231,7 +231,7 @@ function em(e) {
       id: "dcf",
       name: "DCF",
       group: el.v0.EXPERIMENTS,
-      render: () => (0, n.jsx)(E.Z, {})
+      render: () => (0, n.jsx)(T.Z, {})
     }), e.push({
       id: "perks",
       name: "Perks",
@@ -281,7 +281,7 @@ function em(e) {
       id: "skill_trees",
       name: "Skill Trees",
       group: el.v0.GUILDS,
-      render: () => (0, n.jsx)(A.Z, {})
+      render: () => (0, n.jsx)(Z.Z, {})
     }), e.push({
       id: "language",
       name: "Language",
@@ -307,7 +307,7 @@ function em(e) {
     properties: {
       panel: v
     }
-  }), (0, n.jsxs)(M.Gk, {
+  }), (0, n.jsxs)(B.Gk, {
     children: [(0, n.jsxs)(x.ZP, {
       className: ec.headerBar,
       toolbar: a ? null : (0, n.jsxs)(n.Fragment, {
@@ -315,7 +315,7 @@ function em(e) {
           icon: c.rgF,
           tooltip: "Pop Out",
           onClick: () => {
-            (0, f.bA)(ei.KJ3.DEVTOOLS_POPOUT, () => (0, n.jsx)(h.Z, {
+            (0, b.bA)(ei.KJ3.DEVTOOLS_POPOUT, () => (0, n.jsx)(h.Z, {
               windowKey: ei.KJ3.DEVTOOLS_POPOUT,
               title: "DevTools",
               withTitleBar: !0,
@@ -340,7 +340,7 @@ function em(e) {
       }), (0, n.jsx)(x.ZP.Title, {
         children: "DevTools"
       })]
-    }), (0, n.jsx)(i, {}), d(), (0, n.jsx)(M.Br, {
+    }), (0, n.jsx)(i, {}), d(), (0, n.jsx)(B.Br, {
       className: eo.layerContainer
     }), y ? (0, n.jsx)(eu, {}) : null]
   })

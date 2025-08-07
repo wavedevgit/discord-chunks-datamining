@@ -64,18 +64,18 @@ let d = r.forwardRef(function(e, t) {
   let h = r.useCallback(e => {
       e.repeat || ((e.charCode === s.yXg.SPACE || e.charCode === s.yXg.ENTER) && (e.preventDefault(), null != a && (0, i.uL)(a), null == u || u()), null == m || m(e))
     }, [a, m, u]),
-    f = r.useCallback(e => {
+    b = r.useCallback(e => {
       e.metaKey || e.shiftKey || 0 !== e.button || (e.preventDefault(), e.stopPropagation(), null != a && (0, i.uL)(a), null == u || u())
     }, [a, u]),
-    b = (0, n.jsx)("a", c(o({
+    f = (0, n.jsx)("a", c(o({
       ref: t,
       href: a,
-      onClick: f,
+      onClick: b,
       onKeyPress: h
     }, p), {
       children: d
     }));
   return (0, n.jsx)(l.tEY, c(o({}, x), {
-    children: b
+    children: f
   }))
 })

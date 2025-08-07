@@ -1,7 +1,7 @@
 /** Chunk was on 93886 **/
 a.d(t, {
   ZP: () => g,
-  v0: () => f
+  v0: () => b
 }), a(388685), a(539854), a(642613);
 var n, r = a(255367),
   l = a(73800),
@@ -15,8 +15,8 @@ var n, r = a(255367),
   x = a(823379),
   p = a(246992),
   h = a(616257),
-  f = ((n = {}).NONE = "", n.EXPERIMENTS = "Experiments", n.EVENTS = "Events", n.PREMIUM = "Premium", n.BILLING = "Billing", n.USERS = "Users", n.GUILDS = "Guilds", n.UI = "UI", n.GAMES = "Games", n.AUDIO_VIDEO = "Audio / Video", n.DEVELOPMENT = "Development", n);
-let b = ["Experiments", "Events", "Premium", "Billing", "Users", "Guilds", "UI", "Games", "Audio / Video", "Development"],
+  b = ((n = {}).NONE = "", n.EXPERIMENTS = "Experiments", n.EVENTS = "Events", n.PREMIUM = "Premium", n.BILLING = "Billing", n.USERS = "Users", n.GUILDS = "Guilds", n.UI = "UI", n.GAMES = "Games", n.AUDIO_VIDEO = "Audio / Video", n.DEVELOPMENT = "Development", n);
+let f = ["Experiments", "Events", "Premium", "Billing", "Users", "Guilds", "UI", "Games", "Audio / Video", "Development"],
   v = l.forwardRef(function(e, t) {
     let {
       id: a,
@@ -40,7 +40,7 @@ function j(e) {
     tabs: t,
     selectedTabId: a,
     onSelectTab: n
-  } = e, i = l.useRef(new Map), [s, f] = l.useState(() => new Set), {
+  } = e, i = l.useRef(new Map), [s, b] = l.useState(() => new Set), {
     ref: j,
     width: g
   } = (0, u.ZP)(), _ = l.useRef(null);
@@ -50,7 +50,7 @@ function j(e) {
     let s = new Set,
       o = null != g ? g : 0;
     for (let c of (o -= null != (n = null == (e = i.current.get(a)) ? void 0 : e.getBoundingClientRect().width) ? n : 0, t)) c.id !== a && (o -= null != (l = null == (r = i.current.get(c.id)) ? void 0 : r.getBoundingClientRect().width) ? l : 0) < 0 && s.add(c.id);
-    f(s)
+    b(s)
   }, [t, g, j, a]);
   let y = l.useCallback(e => {
     var a, l, i;
@@ -58,7 +58,7 @@ function j(e) {
       closePopout: s
     } = e, c = t.filter(e => null == e.group), u = {};
     for (let e of t) null != e.group && (null != u[a = e.group] || (u[a] = []), u[e.group].push(e));
-    for (let e of b) null == (i = u[e]) || i.sort((e, t) => {
+    for (let e of f) null == (i = u[e]) || i.sort((e, t) => {
       var a, n;
       return (null != (a = (0, o.q)(e.name)) ? a : "").localeCompare(null != (n = (0, o.q)(t.name)) ? n : "")
     });
@@ -78,7 +78,7 @@ function j(e) {
           label: a,
           action: () => n(t)
         }, t)
-      }), b.map(e => (0, r.jsx)(d.kSQ, {
+      }), f.map(e => (0, r.jsx)(d.kSQ, {
         label: e,
         children: u[e].map(e => {
           let {

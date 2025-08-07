@@ -27,7 +27,7 @@ let h = e => {
         return "UNKNOWN TYPE:"
     }
   },
-  f = [{
+  b = [{
     key: "events",
     render(e) {
       let {
@@ -37,7 +37,7 @@ let h = e => {
       return "".concat(t, " ").concat(s.z[a])
     }
   }],
-  b = [{
+  f = [{
     key: "candidates",
     render(e) {
       let {
@@ -107,11 +107,11 @@ function v() {
       className: p.candidatesTableContainer,
       children: (0, n.jsx)(x.Z, {
         className: p.candidatesTable,
-        columns: b,
+        columns: f,
         data: g
       })
     }), (0, n.jsx)("br", {}), (0, n.jsx)(x.Z, {
-      columns: f,
+      columns: b,
       data: j
     })]
   })

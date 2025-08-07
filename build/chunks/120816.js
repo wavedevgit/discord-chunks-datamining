@@ -12,8 +12,8 @@ let m = 0,
   x = [],
   p = 0,
   h = [],
-  f = !1;
-class b extends(n = o.ZP.Store) {
+  b = !1;
+class f extends(n = o.ZP.Store) {
   initialize() {
     this.waitFor(u.Z)
   }
@@ -27,16 +27,16 @@ class b extends(n = o.ZP.Store) {
     return h
   }
   get trackTriggers() {
-    return f
+    return b
   }
 }
-l = "AnalyticsLogStore", (r = "displayName") in b ? Object.defineProperty(b, r, {
+l = "AnalyticsLogStore", (r = "displayName") in f ? Object.defineProperty(f, r, {
   value: l,
   enumerable: !0,
   configurable: !0,
   writable: !0
-}) : b[r] = l;
-let v = new b(c.Z, {
+}) : f[r] = l;
+let v = new f(c.Z, {
   TRACK: function(e) {
     let {
       event: t,
@@ -60,7 +60,7 @@ let v = new b(c.Z, {
       location: l,
       previouslyTracked: s
     } = e;
-    u.Z.isDeveloper && f && (h = [...h, {
+    u.Z.isDeveloper && b && (h = [...h, {
       key: (0, i.Z)(),
       experimentId: t,
       descriptor: a,
@@ -75,7 +75,7 @@ let v = new b(c.Z, {
     let {
       enabled: t
     } = e;
-    f = t
+    b = t
   },
   ANALYTICS_LOG_CLEAR: function() {
     x = [], p++, h = []

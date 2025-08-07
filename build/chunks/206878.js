@@ -1,6 +1,6 @@
 /** Chunk was on 93886 **/
 a.d(t, {
-  g: () => N
+  g: () => O
 }), a(388685), a(35282);
 var n = a(73800),
   r = a(281598);
@@ -85,13 +85,13 @@ let s = new Set([r.jE.SHOP_ALL_BANNER_STATIC, r.jE.HERO_BANNER_STATIC, r.jE.HERO
       n = e.createReader();
     for (let e of (await new Promise(e => n.readEntries(e)))) e.isDirectory && t.includes(e.name) && a.add(e.name);
     return t.filter(e => !a.has(e))
-  }, f = e => {
+  }, b = e => {
     let {
       files: t,
       addWarning: a
     } = e;
     t.ignoredFilenames.length > 0 && a("Contains unrecognized files", t.ignoredFilenames)
-  }, b = e => {
+  }, f = e => {
     let {
       names: t,
       addError: a
@@ -121,7 +121,7 @@ let s = new Set([r.jE.SHOP_ALL_BANNER_STATIC, r.jE.HERO_BANNER_STATIC, r.jE.HERO
       addError: a,
       addWarning: n
     } = e;
-    g(t.collectionFiles, a, n), b({
+    g(t.collectionFiles, a, n), f({
       names: t.collectionFiles.map(e => e.name),
       addError: a
     });
@@ -136,12 +136,12 @@ let s = new Set([r.jE.SHOP_ALL_BANNER_STATIC, r.jE.HERO_BANNER_STATIC, r.jE.HERO
       addError: a,
       addWarning: n
     } = e;
-    b({
+    f({
       names: Object.keys(t.profileEffectFilesMap),
       addError: a
     }), Object.entries(t.profileEffectFilesMap).forEach(e => {
       let [t, l] = e, i = l.map(e => e.name);
-      b({
+      f({
         names: i.map(e => {
           let t = e.indexOf("-");
           return e.substring(0, t > 0 ? t : e.length)
@@ -159,11 +159,11 @@ let s = new Set([r.jE.SHOP_ALL_BANNER_STATIC, r.jE.HERO_BANNER_STATIC, r.jE.HERO
       addError: a,
       addWarning: n
     } = e;
-    b({
+    f({
       names: t.avatarDecorationFiles.map(e => e.name),
       addError: a
     }), j(r.aB.AVATAR_DECORATION, t.avatarDecorationFiles, a, n)
-  }, O = (e, t, a) => {
+  }, N = (e, t, a) => {
     _({
       files: e,
       addError: a,
@@ -176,12 +176,12 @@ let s = new Set([r.jE.SHOP_ALL_BANNER_STATIC, r.jE.HERO_BANNER_STATIC, r.jE.HERO
       files: e,
       addError: a,
       addWarning: t
-    }), f({
+    }), b({
       files: e,
       addError: a,
       addWarning: t
     })
-  }, N = () => {
+  }, O = () => {
     let [e, t] = n.useState(!1), [a, s] = n.useState({}), [o, c] = n.useState({}), d = n.useCallback(function(e) {
       let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : [];
       c(a => {
@@ -216,7 +216,7 @@ let s = new Set([r.jE.SHOP_ALL_BANNER_STATIC, r.jE.HERO_BANNER_STATIC, r.jE.HERO
           let a = await h(t);
           if (a.length > 0) return void d("Missing required directories", a);
           let n = await (0, r.LY)([t]);
-          O(n, u, d)
+          N(n, u, d)
         } finally {
           t(!0)
         }

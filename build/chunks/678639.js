@@ -16,11 +16,11 @@ var n = a(255367),
   p = a(616257),
   h = a(564799);
 
-function f(e, t) {
+function b(e, t) {
   return e.store.getName().localeCompare(t.store.getName())
 }
 
-function b(e) {
+function f(e) {
   let {
     store: t,
     dataGetter: a
@@ -60,7 +60,7 @@ let v = [{
         children: ["Store is missing ", (0, n.jsx)("code", {
           children: "__getLocalVars"
         }), " method."]
-      }) : (0, n.jsx)(b, {
+      }) : (0, n.jsx)(f, {
         store: t,
         dataGetter: e => e.__getLocalVars()
       })
@@ -73,7 +73,7 @@ let v = [{
       let {
         store: t
       } = e;
-      return (0, n.jsx)(b, {
+      return (0, n.jsx)(f, {
         store: t,
         dataGetter: e => e
       })
@@ -115,7 +115,7 @@ function _() {
     c = r.useMemo(() => l.map(e => ({
       key: e._dispatchToken,
       store: e
-    })).sort(f), [l]).filter(e => (function(e, t) {
+    })).sort(b), [l]).filter(e => (function(e, t) {
       let {
         store: a
       } = e;

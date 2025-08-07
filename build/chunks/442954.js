@@ -1,6 +1,6 @@
 /** Chunk was on 93886 **/
 a.d(t, {
-  Z: () => b
+  Z: () => f
 }), a(642613), a(388685);
 var n = a(255367),
   r = a(73800),
@@ -45,7 +45,7 @@ function h(e, t) {
     Object.defineProperty(e, a, Object.getOwnPropertyDescriptor(t, a))
   }), e
 }
-let f = {
+let b = {
   CollectiblesExpiryModal: async () => {
     let {
       default: e
@@ -79,8 +79,8 @@ let f = {
   }
 };
 
-function b() {
-  let e = r.useMemo(() => Object.keys(f).map(e => ({
+function f() {
+  let e = r.useMemo(() => Object.keys(b).map(e => ({
       label: e,
       value: e
     })).sort((e, t) => e.label.localeCompare(t.label)), []),
@@ -106,7 +106,7 @@ function b() {
           }), (0, n.jsx)(i.zxk, {
             variant: "primary",
             text: "Open",
-            onClick: () => (0, i.ZDy)(f[t])
+            onClick: () => (0, i.ZDy)(b[t])
           })]
         })]
       }), (0, n.jsxs)("section", {

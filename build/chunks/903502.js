@@ -28,7 +28,7 @@ let p = [{
 }];
 
 function h() {
-  let [e, t] = r.useState(null), [a, h] = r.useState(0), [f, b] = r.useState(1e3), [v, j] = r.useState(0), g = (0, l.e7)([c.Z], () => {
+  let [e, t] = r.useState(null), [a, h] = r.useState(0), [b, f] = r.useState(1e3), [v, j] = r.useState(0), g = (0, l.e7)([c.Z], () => {
     var t;
     return null === e ? null : null != (t = c.Z.getFeedbackConfig(m.nw[e])) ? t : o.R[m.nw[e]]
   }), _ = Object.entries(m.nw), y = _.slice(_.length / 2).map(e => {
@@ -93,9 +93,9 @@ function h() {
           onChange: e => h(parseFloat(e))
         }), (0, n.jsx)(i.q4e, {
           options: p,
-          value: f,
+          value: b,
           onChange: e => {
-            b(e)
+            f(e)
           },
           popoutLayerContext: u.O$
         })]
@@ -142,7 +142,7 @@ function h() {
         onClick: () => void(null != g && s.Z.dispatch({
           type: "FEEDBACK_OVERRIDE_SET",
           feedbackType: g.feedbackType,
-          cooldown: a * f,
+          cooldown: a * b,
           chance: v / 100
         })),
         disabled: !C

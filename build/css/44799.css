@@ -1,12 +1,10 @@
 /**
   Module ID: 44799
-  Original File Name: 7fb62b573c3a7034
+  Original File Name: 1648686ca7f26033
 **/
 .parentContainer__5573a {
     display: flex;
-    flex: 1;
-    max-width: 250px;
-    min-width: 220px
+    flex: 1
 }
 
 .parentContainer__5573a:hover .container__5573a {
@@ -171,18 +169,6 @@
 
 .full-motion .labelContainer__5573a {
     transition: opacity .2s ease
-}
-
-@media (max-width:1588px) {
-    .parentContainer__5573a {
-        max-width: 382px
-    }
-}
-
-@media (max-width:1275px) {
-    .parentContainer__5573a {
-        max-width: 100%
-    }
 }
 
 .tooltipContainer__652ee {
@@ -730,9 +716,9 @@
 }
 
 .powerupContainer__89463 {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
     gap: var(--space-16);
+    grid-template-columns: repeat(auto-fill,minmax(220px,1fr));
     margin-bottom: var(--space-8);
     padding-bottom: var(--space-32)!important;
     padding-top: var(--space-16)
@@ -758,4 +744,4 @@
     transition: padding-left .2s ease
 }
 
-/*# sourceMappingURL=7fb62b573c3a7034.css.map*/
+/*# sourceMappingURL=1648686ca7f26033.css.map*/

@@ -1,6 +1,6 @@
 /** Chunk was on 93886 **/
 a.d(t, {
-  Z: () => b
+  Z: () => f
 }), a(388685);
 var n = a(255367),
   r = a(120356),
@@ -39,7 +39,7 @@ let h = [{
       })
     }
   }],
-  f = [{
+  b = [{
     key: "channelName",
     cellClassName: l()(x.cell, x.channelName),
     render(e) {
@@ -77,7 +77,7 @@ let h = [{
     }
   }];
 
-function b() {
+function f() {
   let {
     unreadRecentMentionsCount: e,
     unreadChannelIds: t
@@ -85,7 +85,7 @@ function b() {
     isLoading: a,
     hasLoadedEver: r,
     hasPreloaded: l,
-    hasMoreToLoad: b,
+    hasMoreToLoad: f,
     isLoadingComplete: v
   } = (0, i.cj)([u.Z], () => ({
     isLoading: u.Z.isLoading,
@@ -102,7 +102,7 @@ function b() {
   }), y = (0, i.cj)([d.Z], () => t.reduce((e, t) => {
     let a = d.Z.getChannel(t);
     return e[t] = null != a ? a : null, e
-  }, {})), C = (0, i.e7)([u.Z], () => u.Z.getInboxMessages()), O = (0, i.e7)([u.Z], () => u.Z.getDevOverrides().navOnClick);
+  }, {})), C = (0, i.e7)([u.Z], () => u.Z.getInboxMessages()), N = (0, i.e7)([u.Z], () => u.Z.getDevOverrides().navOnClick);
   return (0, n.jsx)("div", {
     className: p.panel,
     children: (0, n.jsxs)(s.zJl, {
@@ -128,7 +128,7 @@ function b() {
           children: [(0, n.jsx)("div", {
             children: "Nav On Click"
           }), (0, n.jsx)(s.XZJ, {
-            value: O,
+            value: N,
             onChange: e => {
               o.Z.dispatch({
                 type: "NOTIFICATIONS_INBOX_SET_DEV_OVERRIDES",
@@ -170,7 +170,7 @@ function b() {
         }), (0, n.jsxs)("div", {
           children: ["Has Loaded Ever: ", r ? "✅" : "❌"]
         }), (0, n.jsxs)("div", {
-          children: ["Has More To Load: ", b ? "✅" : "❌"]
+          children: ["Has More To Load: ", f ? "✅" : "❌"]
         }), (0, n.jsxs)("div", {
           children: ["Is Loading Complete: ", v ? "✅" : "❌"]
         }), (0, n.jsxs)("div", {
@@ -183,7 +183,7 @@ function b() {
         }), (0, n.jsxs)("div", {
           children: ["Total Channels: ", Object.keys(g).length]
         }), (0, n.jsx)(c.Z, {
-          columns: f,
+          columns: b,
           data: Object.entries(g).map(e => {
             var t, a;
             let [n, r] = e;

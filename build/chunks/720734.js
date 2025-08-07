@@ -111,8 +111,8 @@ var i = n(255367),
   e0 = n(345243),
   e3 = n(115530),
   e1 = n(981631),
-  e8 = n(215023),
-  e6 = n(921944),
+  e6 = n(215023),
+  e8 = n(921944),
   e2 = n(46140),
   e5 = n(388032),
   e4 = n(239692);
@@ -387,11 +387,11 @@ class ts extends r.PureComponent {
     }
     return (0, i.jsxs)(i.Fragment, {
       children: [(0, i.jsx)(eo.Z, {
-        groupName: e6.R.ACCOUNT_NAME_ZONE,
+        groupName: e8.R.ACCOUNT_NAME_ZONE,
         targetElementRef: this.avatarWithPopoutRef
       }), (0, i.jsx)(H.ZP, {
         contentTypes: n.avatar,
-        groupName: e6.R.ACCOUNT_NAME_ZONE,
+        groupName: e8.R.ACCOUNT_NAME_ZONE,
         children: t => {
           let {
             visibleContent: n,
@@ -770,7 +770,7 @@ function tl() {
     w = (0, d.e7)([q.Z], () => null != q.Z.getAwaitingRemoteSessionInfo()),
     k = (0, d.e7)([ek.Z], () => ek.Z.getGuildId()),
     L = eK.ZP.canUsePremiumGuildMemberProfile(t),
-    M = (null == t || null == (e = t.avatarDecoration) ? void 0 : e.skuId) === e8.rL,
+    M = (null == t || null == (e = t.avatarDecoration) ? void 0 : e.skuId) === e6.rL,
     {
       voiceActivityStatusEnabled: B
     } = (0, C.U)({
@@ -1081,7 +1081,7 @@ function tc(e) {
                   "aria-label": e5.intl.string(e5.t.Hapb4O),
                   disabled: l,
                   onClick: e => {
-                    s(e6.L.INDIRECT_ACTION), n(e), null != A && !q && P ? (0, eI.$)(() => X(!0)) : X(!q)
+                    s(e8.L.INDIRECT_ACTION), n(e), null != A && !q && P ? (0, eI.$)(() => X(!0)) : X(!q)
                   }
                 }, r));
                 return null != o ? (0, i.jsx)(f.yRy, {
