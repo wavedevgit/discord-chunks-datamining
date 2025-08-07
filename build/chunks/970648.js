@@ -1,11 +1,11 @@
 /** Chunk was on 27978 **/
 n.d(t, {
-  Z: () => s
+  Z: () => o
 }), n(415506);
 var r = n(772848),
   i = n(544891),
   l = n(981631);
-let s = {
+let o = {
   generateNonce: function() {
     return (0, r.Z)()
   },

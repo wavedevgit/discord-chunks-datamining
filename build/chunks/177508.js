@@ -2238,7 +2238,7 @@ function eC(e) {
   let {
     transitionState: t,
     onClose: s
-  } = e, [a, l] = r.useState(0), o = r.useMemo(() => 0 === a ? {
+  } = e, [a, l] = r.useState(0), [o, c] = r.useState(!1), u = r.useMemo(() => 0 === a ? {
     type: "image",
     src: V
   } : 1 === a ? {
@@ -2261,12 +2261,12 @@ function eC(e) {
       text: "Dynamic Content"
     }
   } : void 0, [a]);
-  return (0, i.jsx)(x.I, {
+  return (0, i.jsxs)(x.I, {
     transitionState: t,
     onClose: s,
     gradientColor: "nitro-pink",
-    graphic: o,
-    badge: "beta",
+    graphic: u,
+    badge: o ? "beta" : void 0,
     title: "Expressive Modal",
     subtitle: "This is an expressive modal with a header image",
     actions: [{
@@ -2278,7 +2278,7 @@ function eC(e) {
       text: "Submit",
       onClick: s
     }],
-    children: (0, i.jsx)(T.xJW, {
+    children: [(0, i.jsx)(T.xJW, {
       title: "Graphic Type",
       children: (0, i.jsx)(T.q4e, {
         value: a,
@@ -2300,7 +2300,19 @@ function eC(e) {
           value: 4
         }]
       })
-    })
+    }), (0, i.jsx)(T.xJW, {
+      style: {
+        paddingTop: "16px"
+      },
+      children: (0, i.jsx)(T.XZJ, {
+        value: o,
+        onChange: (e, t) => c(t),
+        children: (0, i.jsx)(T.Text, {
+          variant: "text-md/medium",
+          children: "Show beta badge"
+        })
+      })
+    })]
   })
 }
 

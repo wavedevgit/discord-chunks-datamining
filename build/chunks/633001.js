@@ -35,8 +35,8 @@ var n = a(255367),
   k = a(136015),
   Z = a(145597),
   A = a(246992),
-  D = a(257785),
-  L = a(484036),
+  L = a(257785),
+  D = a(484036),
   B = a(681619),
   M = a(621060),
   F = a(981631),
@@ -899,9 +899,9 @@ let ep = ["__webpack_require__", "fn"],
             tooltip: "Close",
             onClick: l
           })]
-        }), (0, n.jsxs)(D.E, {
+        }), (0, n.jsxs)(L.E, {
           className: z.commonProperties,
-          children: [(0, n.jsx)(D.Z9, {
+          children: [(0, n.jsx)(L.Z9, {
             name: "Timestamp",
             copyValue: b.toISOString(),
             children: (0, n.jsx)("time", {
@@ -909,25 +909,25 @@ let ep = ["__webpack_require__", "fn"],
               title: (0, I.vc)(b, "LLLL"),
               children: (0, I.vc)(b, "L h:mm:ss.SSS")
             })
-          }), (0, n.jsx)(D.Z9, {
+          }), (0, n.jsx)(L.Z9, {
             name: "Log Type",
             copyValue: d,
             children: (0, n.jsx)("code", {
               children: d
             })
-          }), (0, n.jsx)(D.Z9, {
+          }), (0, n.jsx)(L.Z9, {
             name: "Native ID",
             copyValue: null != (t = null == u ? void 0 : u.toString()) ? t : "null",
             children: (0, n.jsx)("code", {
               children: null != (a = null == u ? void 0 : u.toString()) ? a : "null"
             })
-          }), (0, n.jsx)(D.Z9, {
+          }), (0, n.jsx)(L.Z9, {
             name: "Data",
             copyValue: ex(p),
             children: (0, n.jsx)("code", {
               children: ex(p)
             })
-          }), (0, n.jsx)(D.Z9, {
+          }), (0, n.jsx)(L.Z9, {
             name: "Stack Trace",
             copyValue: x,
             children: (0, n.jsx)("code", {
@@ -1077,7 +1077,7 @@ function ev() {
         selectedRowKey: null != y ? y : void 0,
         onClickRow: e => N(e.key)
       })
-    }), null != T && (0, n.jsx)(L.Z, {
+    }), null != T && (0, n.jsx)(D.Z, {
       className: i()(z.panelGroup, z.subPanel),
       minHeight: 100,
       initialHeight: null != l ? l / 3 : 300,

@@ -124,7 +124,7 @@ let e3 = () => {
       text: eX.intl.string(eX.t.y2b7CA)
     }) : null
   },
-  e6 = () => {
+  e8 = () => {
     let e = [];
     return G.c.getCurrentConfig({
       location: "SettingsRendererConfig"
@@ -132,8 +132,8 @@ let e3 = () => {
       location: "SettingsRendererConfig"
     }).enabled && e.push(s.z.DISPLAY_NAME_STYLES_NEW_BADGE), e.push(s.z.NAMEPLATE_USER_SETTINGS_MENU_NEW_BADGE), e
   },
-  e8 = () => {
-    let e = e6(),
+  e6 = () => {
+    let e = e8(),
       [t] = (0, I.US)(e);
     return t === s.z.NAMEPLATE_USER_SETTINGS_MENU_NEW_BADGE ? (0, i.jsx)(D.Z, {}) : t === s.z.RECENT_AVATARS_SETTINGS_MENU_NEW_BADGE || t === s.z.DISPLAY_NAME_STYLES_NEW_BADGE ? (0, i.jsx)(l.IGR, {
       text: eX.intl.string(eX.t.y2b7CA)
@@ -316,8 +316,8 @@ let e3 = () => {
         label: eX.intl.string(eX.t["vi7f+v"]),
         ariaLabel: eX.intl.string(eX.t["vi7f+v"]),
         element: M.Z,
-        newIndicator: (0, i.jsx)(e8, {}),
-        newIndicatorDismissibleContentTypes: [...e6()],
+        newIndicator: (0, i.jsx)(e6, {}),
+        newIndicatorDismissibleContentTypes: [...e8()],
         notice: {
           stores: [K.Z, P.Z],
           element: L.Z

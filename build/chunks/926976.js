@@ -1,6 +1,6 @@
 /** Chunk was on 93886 **/
 a.d(t, {
-  Z: () => D
+  Z: () => L
 }), a(388685), a(49124);
 var n = a(255367),
   r = a(73800),
@@ -266,7 +266,7 @@ let I = new Set(["client_performance_cpu", "client_performance_memory"]),
     throttleMs: 100
   };
 
-function D() {
+function L() {
   let e = r.useRef(null),
     [t, a] = r.useState(""),
     l = (0, c.e7)([j.Z], () => j.Z.loggedEventsVersion),

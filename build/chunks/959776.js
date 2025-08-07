@@ -1,20 +1,20 @@
-/** Chunk was on 57015 **/
-n.d(t, {
-  Z: () => i
+/** Chunk was on 90350 **/
+n.d(e, {
+  Z: () => l
 });
-var s = n(913527),
-  a = n.n(s),
+var r = n(913527),
+  i = n.n(r),
   o = n(626135),
-  r = n(981631);
+  a = n(981631);
 
-function i(e, t) {
-  o.default.track(r.rMx.AGE_GATE_SUBMITTED, {
-    dob: 18 > a()().diff(e, "years") ? e.format("YYYY-MM-DD") : null,
-    dob_day: e.date(),
-    dob_month: e.month() + 1,
-    dob_year: e.year(),
+function l(t, e) {
+  o.default.track(a.rMx.AGE_GATE_SUBMITTED, {
+    dob: 18 > i()().diff(t, "years") ? t.format("YYYY-MM-DD") : null,
+    dob_day: t.date(),
+    dob_month: t.month() + 1,
+    dob_year: t.year(),
     source: {
-      section: t
+      section: e
     }
   })
 }

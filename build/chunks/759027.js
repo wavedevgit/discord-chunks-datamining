@@ -70,7 +70,7 @@ function y(e) {
   let {
     subscription: O,
     onUpdated: T
-  } = e, [E, S] = r.useState(!1), [P, w] = r.useState(!1), [I, R] = r.useState(!1), [k, Z] = r.useState(!1), [A, D] = r.useState(null), L = e => (null == e && (e = O.status), e in j) ? j[e] : "Unknown status ".concat(e), B = e => {
+  } = e, [E, S] = r.useState(!1), [P, w] = r.useState(!1), [I, R] = r.useState(!1), [k, Z] = r.useState(!1), [A, L] = r.useState(null), D = e => (null == e && (e = O.status), e in j) ? j[e] : "Unknown status ".concat(e), B = e => {
     let t = new Date(e);
     return u.default.fromTimestamp(t.getTime())
   }, M = async e => {
@@ -120,7 +120,7 @@ function y(e) {
         rejectWithError: !1
       })
     } catch (e) {
-      D(e.body.message)
+      L(e.body.message)
     }
     T()
   }, U = (null == (t = b.GP[O.planIdFromItems]) ? void 0 : t.premiumType) === b.p9.TIER_0, G = null == (a = O.metadata) ? void 0 : a.ended_at, z = null != G ? new Date(G).toISOString().substring(0, 10) : "", V = O.hasActiveTrial, H = (null == (l = O.metadata) ? void 0 : l.active_discount_id) != null;
@@ -156,7 +156,7 @@ function y(e) {
         children: ["Dates: ", (0, d.vc)(O.createdAt, "LL"), " - ", (0, d.vc)(O.currentPeriodEnd, "LL")]
       }), (0, n.jsxs)(o.Text, {
         variant: "text-md/normal",
-        children: ["Status: ", L()]
+        children: ["Status: ", D()]
       }), O.status === p.O0b.PAUSED && (0, n.jsxs)(n.Fragment, {
         children: [(0, n.jsxs)(o.Text, {
           variant: "text-md/normal",
@@ -287,7 +287,7 @@ function y(e) {
           tag: o.RB0.H3,
           className: v.formSection,
           children: (0, n.jsx)(o.PhF, {
-            serialize: e => L(e),
+            serialize: e => D(e),
             isSelected: e => e === O.status,
             options: _,
             select: e => M({
@@ -306,7 +306,7 @@ function y(e) {
             onClick: e => F()
           }), null !== A && (0, n.jsx)(o.kzN, {
             className: v.error,
-            onDismiss: () => D(null),
+            onDismiss: () => L(null),
             children: A
           })]
         }), (0, n.jsxs)(o.hjN, {

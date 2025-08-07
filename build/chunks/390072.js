@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(255367),
   i = n(73800),
   l = n(481060),
-  s = n(725436),
-  o = n(11868),
+  o = n(725436),
+  s = n(11868),
   a = n(217804),
   c = n(765305),
   u = n(244231);
@@ -16,13 +16,13 @@ function d(e) {
     guildScheduledEvent: t,
     channel: n,
     onClose: d
-  } = e, h = t.entity_type === c.WX.EXTERNAL, p = i.useCallback(e => (0, o.Qt)(t, d)(e), [t, d]), m = (0, a.u)(t, n);
-  if (null == m) return null;
+  } = e, h = t.entity_type === c.WX.EXTERNAL, p = i.useCallback(e => (0, s.Qt)(t, d)(e), [t, d]), f = (0, a.u)(t, n);
+  if (null == f) return null;
   let {
-    IconComponent: f,
+    IconComponent: m,
     locationName: g
-  } = m, _ = (0, r.jsxs)(r.Fragment, {
-    children: [null != f && (0, r.jsx)(f, {
+  } = f, _ = (0, r.jsxs)(r.Fragment, {
+    children: [null != m && (0, r.jsx)(m, {
       size: "custom",
       color: "currentColor",
       width: 20,
@@ -32,7 +32,7 @@ function d(e) {
       color: "header-secondary",
       variant: "text-sm/normal",
       className: u.locationText,
-      children: (0, s.m)(g, !0)
+      children: (0, o.m)(g, !0)
     })]
   });
   return (0, r.jsx)("div", {

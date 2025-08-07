@@ -2,12 +2,12 @@
 n.d(t, {
   Z: () => h
 });
-var r, i, l, s = n(442837),
-  o = n(570140),
+var r, i, l, o = n(442837),
+  s = n(570140),
   a = n(981631);
 let c = null,
   u = {};
-class d extends(l = s.ZP.Store) {
+class d extends(l = o.ZP.Store) {
   getState(e) {
     return u[e]
   }
@@ -21,7 +21,7 @@ i = "CodedLinkNativeAppStateStore", (r = "displayName") in d ? Object.defineProp
   configurable: !0,
   writable: !0
 }) : d[r] = i;
-let h = new d(o.Z, {
+let h = new d(s.Z, {
   NATIVE_APP_MODAL_OPENING: function(e) {
     let {
       code: t

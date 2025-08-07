@@ -5,16 +5,16 @@ n.r(t), n.d(t, {
 var r = n(255367),
   i = n(73800),
   l = n(593473),
-  s = n(990547),
-  o = n(873546),
+  o = n(990547),
+  s = n(873546),
   a = n(442837),
   c = n(570140),
   u = n(893776),
   d = n(533307),
   h = n(447543),
   p = n(126399),
-  m = n(521379),
-  f = n(765717),
+  f = n(521379),
+  m = n(765717),
   g = n(267394),
   _ = n(761305),
   x = n(698177),
@@ -26,12 +26,12 @@ var r = n(255367),
   O = n(677760),
   S = n(893607),
   N = n(314897),
-  C = n(82142),
-  y = n(701190),
+  y = n(82142),
+  C = n(701190),
   A = n(626135),
   T = n(81063),
-  P = n(449934),
-  Z = n(768581),
+  Z = n(449934),
+  P = n(768581),
   R = n(625054),
   w = n(645499),
   L = n(320830),
@@ -40,8 +40,8 @@ var r = n(255367),
   B = n(223543),
   M = n(73906),
   U = n(299852),
-  F = n(39514),
-  G = n(236446),
+  G = n(39514),
+  F = n(236446),
   z = n(9325),
   V = n(344295),
   H = n(781428),
@@ -92,16 +92,16 @@ function ei(e, t) {
 }
 n(179645), a.ZP.initialize();
 let el = (0, L.Z)(H.Z),
-  es = (0, L.Z)(K.Z),
-  eo = (0, L.Z)(V.Z),
-  ea = (0, L.Z)(G.Z),
-  ec = (0, L.Z)(F.Z),
+  eo = (0, L.Z)(K.Z),
+  es = (0, L.Z)(V.Z),
+  ea = (0, L.Z)(F.Z),
+  ec = (0, L.Z)(G.Z),
   eu = (0, L.Z)(O.Z),
   ed = (0, L.Z)(q.Z),
   eh = (0, L.Z)(k.Z),
   ep = (0, L.Z)(B.Z),
-  em = (0, L.Z)(Q.Z),
-  ef = (0, L.Z)(x.Z),
+  ef = (0, L.Z)(Q.Z),
+  em = (0, L.Z)(x.Z),
   eg = (0, L.Z)(J.Z),
   e_ = (0, L.Z)(U.Z),
   ex = (0, L.Z)(_.Z),
@@ -110,7 +110,7 @@ let el = (0, L.Z)(H.Z),
   ev = (0, L.Z)(W.Z),
   ej = (0, L.Z)(X.Z),
   eI = (0, L.Z)(Y.Z),
-  eO = (0, L.Z)(m.Z);
+  eO = (0, L.Z)(f.Z);
 class eS extends i.PureComponent {
   static getDerivedStateFromProps(e, t) {
     var n;
@@ -118,23 +118,23 @@ class eS extends i.PureComponent {
       invite: r,
       location: i
     } = e, {
-      backgroundId: s
-    } = t, o = null != (n = (0, l.parse)(i.search).redirect_to) ? n : null;
-    (null == o || "" === o || !(0, w.B)(o) || o.startsWith($.Z5c.ME)) && (o = null);
+      backgroundId: o
+    } = t, s = null != (n = (0, l.parse)(i.search).redirect_to) ? n : null;
+    (null == s || "" === s || !(0, w.B)(s) || s.startsWith($.Z5c.ME)) && (s = null);
     let a = null;
-    if (null == r) a = (0, P.gK)(o);
+    if (null == r) a = (0, Z.gK)(s);
     else if ((null == r ? void 0 : r.state) === $.r2o.RESOLVED) {
       let {
         guild: e,
         target_application: t
       } = r;
-      null != t ? null != s && (a = (0, T.xF)(t.id, s, 1024)) : null != e && "string" == typeof e.splash && (a = Z.ZP.getGuildSplashURL({
+      null != t ? null != o && (a = (0, T.xF)(t.id, o, 1024)) : null != e && "string" == typeof e.splash && (a = P.ZP.getGuildSplashURL({
         id: e.id,
         splash: e.splash
       }))
     }
     return {
-      redirectTo: o,
+      redirectTo: s,
       splash: a
     }
   }
@@ -212,35 +212,35 @@ class eS extends i.PureComponent {
     } = this.props;
     return (0, r.jsxs)(D.Z, {
       splash: e,
-      children: [(0, r.jsx)(f.Z, {
+      children: [(0, r.jsx)(m.Z, {
         path: $.Z5c.LOGIN_HANDOFF,
-        render: e => (0, r.jsx)(es, ei(er({}, e), {
+        render: e => (0, r.jsx)(eo, ei(er({}, e), {
           redirectTo: t
         }))
-      }), (0, r.jsx)(f.Z, {
-        impressionName: s.ImpressionNames.USER_LOGIN,
+      }), (0, r.jsx)(m.Z, {
+        impressionName: o.ImpressionNames.USER_LOGIN,
         path: $.Z5c.LOGIN,
         render: e => (0, r.jsx)(el, ei(er({}, e), {
           redirectTo: t
         }))
-      }), (0, r.jsx)(f.Z, {
-        impressionName: s.ImpressionNames.USER_REGISTRATION,
+      }), (0, r.jsx)(m.Z, {
+        impressionName: o.ImpressionNames.USER_REGISTRATION,
         path: $.Z5c.REGISTER,
-        render: e => ee.a ? (0, r.jsx)(eo, ei(er({}, e), {
+        render: e => ee.a ? (0, r.jsx)(es, ei(er({}, e), {
           redirectTo: t,
           inviteKey: n
         })) : (0, r.jsx)(ed, ei(er({}, e), {
           redirectTo: t
         }))
-      }), (0, r.jsx)(f.Z, {
+      }), (0, r.jsx)(m.Z, {
         path: $.Z5c.GIFT_CODE_LOGIN(":giftCode"),
         render: e => (0, r.jsx)(ec, er({
           login: !0
         }, e))
-      }), (0, r.jsx)(f.Z, {
+      }), (0, r.jsx)(m.Z, {
         path: $.Z5c.GIFT_CODE(":giftCode"),
         render: e => (0, r.jsx)(ec, er({}, e))
-      }), (0, r.jsx)(f.Z, {
+      }), (0, r.jsx)(m.Z, {
         path: [$.Z5c.INVITE_LOGIN(":inviteCode"), $.Z5c.INVITE(":inviteCode")],
         render: e => {
           let {
@@ -252,18 +252,18 @@ class eS extends i.PureComponent {
             },
             location: i,
             transitionTo: l
-          } = e, s = (0, I.mb)(t, i.search);
-          return o.tq || o.Em ? (0, r.jsx)(eu, {
-            inviteKey: s,
+          } = e, o = (0, I.mb)(t, i.search);
+          return s.tq || s.Em ? (0, r.jsx)(eu, {
+            inviteKey: o,
             transitionTo: l
-          }, s) : (0, r.jsx)(eo, {
-            inviteKey: s,
+          }, o) : (0, r.jsx)(es, {
+            inviteKey: o,
             location: i,
             transitionTo: l,
             login: n === $.Z5c.INVITE_LOGIN(":inviteCode")
           })
         }
-      }), (0, r.jsx)(f.Z, {
+      }), (0, r.jsx)(m.Z, {
         path: [$.Z5c.GUILD_TEMPLATE_LOGIN(":guildTemplateCode"), $.Z5c.GUILD_TEMPLATE(":guildTemplateCode")],
         render: e => {
           let {
@@ -276,7 +276,7 @@ class eS extends i.PureComponent {
             location: i,
             transitionTo: l
           } = e;
-          return o.tq || o.Em ? (0, r.jsx)(z.Z, {
+          return s.tq || s.Em ? (0, r.jsx)(z.Z, {
             code: t
           }, t) : (0, r.jsx)(ea, {
             code: t,
@@ -285,57 +285,57 @@ class eS extends i.PureComponent {
             login: n === $.Z5c.GUILD_TEMPLATE_LOGIN(":guildTemplateCode")
           })
         }
-      }), (0, r.jsx)(f.Z, {
+      }), (0, r.jsx)(m.Z, {
         path: $.Z5c.VERIFY,
-        render: e => (0, r.jsx)(em, er({}, e))
-      }), (0, r.jsx)(f.Z, {
+        render: e => (0, r.jsx)(ef, er({}, e))
+      }), (0, r.jsx)(m.Z, {
         path: $.Z5c.VERIFY_HUB_EMAIL,
         render: e => (0, r.jsx)(eb, er({}, e))
-      }), (0, r.jsx)(f.Z, {
+      }), (0, r.jsx)(m.Z, {
         path: $.Z5c.VERIFY_REQUEST,
-        render: e => (0, r.jsx)(ef, er({}, e))
-      }), (0, r.jsx)(f.Z, {
+        render: e => (0, r.jsx)(em, er({}, e))
+      }), (0, r.jsx)(m.Z, {
         path: $.Z5c.DISABLE_EMAIL_NOTIFICATIONS,
         render: e => (0, r.jsx)(e_, er({}, e))
-      }), (0, r.jsx)(f.Z, {
+      }), (0, r.jsx)(m.Z, {
         path: $.Z5c.DISABLE_SERVER_HIGHLIGHT_NOTIFICATIONS,
         render: e => (0, r.jsx)(ex, er({}, e))
-      }), (0, r.jsx)(f.Z, {
+      }), (0, r.jsx)(m.Z, {
         path: $.Z5c.AUTHORIZE_IP,
         render: e => (0, r.jsx)(eh, er({}, e))
-      }), (0, r.jsx)(f.Z, {
+      }), (0, r.jsx)(m.Z, {
         path: $.Z5c.REJECT_IP,
         render: e => (0, r.jsx)(eg, er({
           source: $.Z5c.REJECT_IP
         }, e))
-      }), (0, r.jsx)(f.Z, {
+      }), (0, r.jsx)(m.Z, {
         path: $.Z5c.REJECT_MFA,
         render: e => (0, r.jsx)(eg, er({
           source: $.Z5c.REJECT_MFA
         }, e))
-      }), (0, r.jsx)(f.Z, {
+      }), (0, r.jsx)(m.Z, {
         path: $.Z5c.AUTHORIZE_PAYMENT,
         render: e => (0, r.jsx)(ep, er({}, e))
-      }), (0, r.jsx)(f.Z, {
+      }), (0, r.jsx)(m.Z, {
         path: $.Z5c.RESET,
         render: e => (0, r.jsx)(eg, er({
           source: $.Z5c.RESET
         }, e))
-      }), (0, r.jsx)(f.Z, {
+      }), (0, r.jsx)(m.Z, {
         path: $.Z5c.PICK_GUILD_SETTINGS(":section?", ":subsection?"),
         render: e => (0, r.jsx)(ev, er({}, e))
-      }), (0, r.jsx)(f.Z, {
+      }), (0, r.jsx)(m.Z, {
         path: $.Z5c.CHANNEL(S.Hw.guildId(), S.Hw.channelId({
           optional: !0
         }), ":messageId?"),
         render: e => (0, r.jsx)(eE, er({}, e))
-      }), (0, r.jsx)(f.Z, {
+      }), (0, r.jsx)(m.Z, {
         path: $.Z5c.REPORT,
         render: e => (0, r.jsx)(ej, er({}, e))
-      }), (0, r.jsx)(f.Z, {
+      }), (0, r.jsx)(m.Z, {
         path: $.Z5c.REPORT_SECOND_LOOK,
         render: e => (0, r.jsx)(eI, er({}, e))
-      }), (0, r.jsx)(f.Z, {
+      }), (0, r.jsx)(m.Z, {
         path: $.Z5c.ACCOUNT_REVERT(":token"),
         render: e => (0, r.jsx)(eO, er({}, e))
       })]
@@ -349,19 +349,19 @@ class eS extends i.PureComponent {
     })
   }
 }
-let eN = a.ZP.connectStores([N.default, y.Z, C.Z, b.Z, E.Z], e => {
+let eN = a.ZP.connectStores([N.default, C.Z, y.Z, b.Z, E.Z], e => {
   var t, n, r;
   let {
     match: i,
     location: l
-  } = e, s = null == i || null == (t = i.params) ? void 0 : t.inviteCode, o = ee.a ? ee.Y : void 0, a = null != s ? (0, I.mb)(s, l.search) : o, c = null == i || null == (n = i.params) ? void 0 : n.giftCode, u = null == i || null == (r = i.params) ? void 0 : r.guildTemplateCode;
+  } = e, o = null == i || null == (t = i.params) ? void 0 : t.inviteCode, s = ee.a ? ee.Y : void 0, a = null != o ? (0, I.mb)(o, l.search) : s, c = null == i || null == (n = i.params) ? void 0 : n.giftCode, u = null == i || null == (r = i.params) ? void 0 : r.guildTemplateCode;
   return {
     inviteKey: a,
     isAuthenticated: N.default.isAuthenticated(),
     giftCode: c,
     guildTemplateCode: u,
-    gift: null != c ? C.Z.get(c) : null,
-    invite: null != a ? y.Z.getInvite(a) : null,
+    gift: null != c ? y.Z.get(c) : null,
+    invite: null != a ? C.Z.getInvite(a) : null,
     guildTemplate: null != u ? E.Z.getGuildTemplate(u) : null,
     hasLoadedExperiments: b.Z.hasLoadedExperiments
   }

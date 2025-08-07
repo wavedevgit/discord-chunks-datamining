@@ -115,11 +115,11 @@ function S(e) {
     return t === R
   })) ? void 0 : t.label) ? a : "Unknown";
   null != Z && (A = "".concat(A, " from @").concat(Z.username));
-  let D = null != w,
-    L = null != w && new Date(w).getTime() < Date.now(),
+  let L = null != w,
+    D = null != w && new Date(w).getTime() < Date.now(),
     B = (null == k ? void 0 : k.sku_id) === j.Si.TIER_0,
     M = async () => {
-      T(!0), D ? await F({
+      T(!0), L ? await F({
         expiresAt: null
       }) : await (0, d.ab)(m), b(), T(!1)
     }, F = async e => {
@@ -174,7 +174,7 @@ function S(e) {
     }
   }, [f, y]);
   let U = "Active";
-  return D && (U = "Acked"), L && (U = "Expired"), (0, n.jsxs)("div", {
+  return L && (U = "Acked"), D && (U = "Expired"), (0, n.jsxs)("div", {
     className: i()(g.card, B ? g.gradientWrapperTier0 : g.gradientWrapperTier2),
     children: [(0, n.jsx)("div", {
       className: i()(g.row, g.nameRow),
@@ -261,8 +261,8 @@ function S(e) {
       children: [(0, n.jsx)(c.P3F, {
         onClick: M,
         className: i()(g.badge, g.clickable, {
-          [g.acked]: D,
-          [g.expired]: L
+          [g.acked]: L,
+          [g.expired]: D
         }),
         children: (0, n.jsx)(c.Text, {
           variant: "eyebrow",
@@ -466,7 +466,7 @@ function P(e) {
 }
 
 function w() {
-  let [e, t] = r.useState([]), [a, l] = r.useState([]), [i, s] = r.useState(), [x, p] = r.useState(), [j, N] = r.useState([]), [w, I] = r.useState([]), [R, k] = r.useState(!0), [Z, A] = r.useState(10080), [D, L] = r.useState([]), {
+  let [e, t] = r.useState([]), [a, l] = r.useState([]), [i, s] = r.useState(), [x, p] = r.useState(), [j, N] = r.useState([]), [w, I] = r.useState([]), [R, k] = r.useState(!0), [Z, A] = r.useState(10080), [L, D] = r.useState([]), {
     entitlements: B,
     deleteFractionalPremium: M,
     refreshEntitlementList: F
@@ -476,7 +476,7 @@ function w() {
   }, [F]);
   let U = e => e.filter(e => e.sourceType === v.kNB.REVERSE_TRIAL && null != e.endsAt && e.endsAt > new Date);
   r.useEffect(() => {
-    L(U(B))
+    D(U(B))
   }, [B]), r.useEffect(() => {
     (0 === e.length || 0 === a.length || R) && y().then(e => {
       let a = Object.keys(e.trial).map(t => ({
@@ -632,7 +632,7 @@ function w() {
             onClick: H
           })]
         })]
-      }), D.length > 0 && (0, n.jsxs)("div", {
+      }), L.length > 0 && (0, n.jsxs)("div", {
         children: [(0, n.jsx)(c.Text, {
           style: {
             marginTop: "15px"
@@ -640,7 +640,7 @@ function w() {
           variant: "text-md/bold",
           children: "Active reverse trial"
         }), (0, n.jsx)("div", {
-          children: D.map(e => (0, n.jsx)(h.D, {
+          children: L.map(e => (0, n.jsx)(h.D, {
             entitlement: e,
             active: !0,
             onDelete: () => M(e.id)

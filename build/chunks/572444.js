@@ -110,8 +110,8 @@ function _() {
     vadKrispActivationThreshold: k,
     noiseCancellation: Z,
     noiseSuppression: A,
-    noiseSuppressionSupported: D,
-    noiseCancellationSupported: L,
+    noiseSuppressionSupported: L,
+    noiseCancellationSupported: D,
     noiseCancellationEnableStats: B
   } = (0, s.cj)([p.Z], () => ({
     krispModels: p.Z.getKrispModels(),
@@ -144,10 +144,10 @@ function _() {
     U()
   }, [U]);
   let V = [];
-  return L && V.push({
+  return D && V.push({
     label: "Krisp",
     value: "KRISP"
-  }), D && V.push({
+  }), L && V.push({
     label: "Standard",
     value: "STANDARD"
   }), V.push({

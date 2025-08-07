@@ -1,7 +1,7 @@
 /** Chunk was on 55944 **/
 s.d(t, {
-  W: () => p,
-  Z: () => j
+  W: () => v,
+  Z: () => b
 }), s(457542);
 var n, i = s(255367),
   a = s(73800),
@@ -18,14 +18,14 @@ var n, i = s(255367),
   f = s(626135),
   g = s(51144),
   N = s(480387),
-  v = s(726745),
-  T = s(251423),
-  A = s(981631),
-  C = s(388032),
+  T = s(726745),
+  C = s(251423),
+  p = s(981631),
+  A = s(388032),
   E = s(576052),
-  p = ((n = {})[n.LOGIN_REQUIRED = 0] = "LOGIN_REQUIRED", n[n.SWITCHED = 1] = "SWITCHED", n[n.REMOVED = 2] = "REMOVED", n);
+  v = ((n = {})[n.LOGIN_REQUIRED = 0] = "LOGIN_REQUIRED", n[n.SWITCHED = 1] = "SWITCHED", n[n.REMOVED = 2] = "REMOVED", n);
 
-function b(e) {
+function j(e) {
   let {
     actionText: t,
     user: s,
@@ -33,41 +33,41 @@ function b(e) {
   } = e, {
     currentUser: a,
     hidePrivateData: r,
-    isAuthenticated: T
+    isAuthenticated: C
   } = (0, c.cj)([_.default, h.Z, x.default], () => ({
     currentUser: _.default.getCurrentUser(),
     hidePrivateData: h.Z.hidePersonalInformation,
     isAuthenticated: x.default.isAuthenticated()
-  })), p = new m.Z(s), b = T && (null == a ? void 0 : a.id) === p.id, j = s.tokenStatus === v.q.INVALID, I = r || p.hasUniqueUsername() ? null : "#".concat(p.discriminator), U = null;
-  return b ? U = (0, i.jsx)(o.Text, {
+  })), v = new m.Z(s), j = C && (null == a ? void 0 : a.id) === v.id, b = s.tokenStatus === T.q.INVALID, I = r || v.hasUniqueUsername() ? null : "#".concat(v.discriminator), U = null;
+  return j ? U = (0, i.jsx)(o.Text, {
     variant: "text-sm/semibold",
     className: E.hintText,
     color: "text-feedback-positive",
-    children: C.intl.string(C.t.seV8ys)
-  }) : j && (U = (0, i.jsx)(o.Text, {
+    children: A.intl.string(A.t.seV8ys)
+  }) : b && (U = (0, i.jsx)(o.Text, {
     variant: "text-sm/semibold",
     className: E.hintText,
     color: "text-danger",
-    children: C.intl.string(C.t.tYX2pq)
+    children: A.intl.string(A.t.tYX2pq)
   })), (0, i.jsx)("div", {
     className: E.accountCard,
     children: (0, i.jsxs)("div", {
       className: E.userDetails,
       children: [(0, i.jsx)(o.qEK, {
-        src: p.getAvatarURL(void 0, 40),
+        src: v.getAvatarURL(void 0, 40),
         size: o.EFr.SIZE_40,
         "aria-label": s.username
       }), (0, i.jsxs)("div", {
         className: l()(E.usernameSection, {
-          [E.hasActionMaxWidth]: !b
+          [E.hasActionMaxWidth]: !j
         }),
         children: [(0, i.jsxs)("div", {
           className: E.username,
           children: [(0, i.jsx)(o.Text, {
             variant: "text-md/semibold",
             color: "header-primary",
-            className: E.textOverflow,
-            children: g.ZP.getUserTag(p, {
+            lineClamp: 1,
+            children: g.ZP.getUserTag(v, {
               mode: "username",
               identifiable: r ? "never" : "always"
             })
@@ -79,14 +79,14 @@ function b(e) {
         }), U]
       }), (0, i.jsxs)("div", {
         className: E.userActions,
-        children: [!b && (0, i.jsx)(o.zxk, {
+        children: [!j && (0, i.jsx)(o.zxk, {
           variant: "secondary",
-          text: j ? C.intl.string(C.t["DSN+h4"]) : t,
+          text: b ? A.intl.string(A.t["DSN+h4"]) : t,
           onClick: function() {
-            if (j) return void n(0, s.id);
-            f.default.track(A.rMx.MULTI_ACCOUNT_SWITCH_ATTEMPT, {
+            if (b) return void n(0, s.id);
+            f.default.track(p.rMx.MULTI_ACCOUNT_SWITCH_ATTEMPT, {
               location: {
-                section: A.jXE.MANAGE_ACCOUNTS_MODAL
+                section: p.jXE.MANAGE_ACCOUNTS_MODAL
               }
             }), N.yD(s.id), n(1, s.id)
           }
@@ -98,19 +98,19 @@ function b(e) {
                 onSelect: t
               } = e;
               return (0, i.jsx)(o.v2r, {
-                "aria-label": C.intl.string(C.t["41qiDQ"]),
+                "aria-label": A.intl.string(A.t["41qiDQ"]),
                 navId: "manage-multi-account",
                 onClose: u.Zy,
                 onSelect: t,
                 children: (0, i.jsx)(o.sNh, {
                   id: "remove-account",
-                  label: C.intl.string(C.t.lSLMaW),
+                  label: A.intl.string(A.t.lSLMaW),
                   action: () => {
                     d.Z.logout("multi_accounts_list", null, s.id).finally(() => {
                       N.Zd(s.id)
                     });
                     let e = {};
-                    null != a ? e.section = A.jXE.MANAGE_ACCOUNTS_MODAL : e.page = A.Usc.LOGIN, f.default.track(A.rMx.MULTI_ACCOUNT_ACCOUNT_REMOVE, {
+                    null != a ? e.section = p.jXE.MANAGE_ACCOUNTS_MODAL : e.page = p.Usc.LOGIN, f.default.track(p.rMx.MULTI_ACCOUNT_ACCOUNT_REMOVE, {
                       location: e
                     }), n(2, s.id), null != t && t()
                   },
@@ -119,7 +119,7 @@ function b(e) {
               })
             })
           },
-          "aria-label": C.intl.string(C.t.PdRCRk),
+          "aria-label": A.intl.string(A.t.PdRCRk),
           variant: "icon-only"
         })]
       })]
@@ -127,20 +127,20 @@ function b(e) {
   })
 }
 
-function j(e) {
+function b(e) {
   let {
     actionText: t,
     onAction: s
   } = e, {
     isLoading: n,
     multiAccountUsers: r
-  } = (0, T.L)();
+  } = (0, C.L)();
   return (0, i.jsx)("div", {
     className: E.list,
     children: n ? (0, i.jsx)(o.$jN, {
       className: E.spinner
     }) : r.map((e, n) => (0, i.jsxs)(a.Fragment, {
-      children: [(0, i.jsx)(b, {
+      children: [(0, i.jsx)(j, {
         user: e,
         actionText: t,
         onAction: s

@@ -1,4 +1,4 @@
-/** Chunk was on 57015 **/
+/** Chunk was on 70911 **/
 e.exports = {
   sidebar: "sidebar__83a6b",
   art: "art__83a6b",

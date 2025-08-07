@@ -1,9 +1,8 @@
-/** Chunk was on 67244 **/
-"use strict";
+/** Chunk was on 90350 **/
+n.d(e, {
+  Z: () => r
+});
 
-function a(e, t) {
-  if (!(e instanceof t)) throw TypeError("Cannot call a class as a function")
+function r(t, e) {
+  if (!(t instanceof e)) throw TypeError("Cannot call a class as a function")
 }
-r.d(t, {
-  Z: () => a
-})

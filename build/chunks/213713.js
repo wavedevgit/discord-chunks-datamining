@@ -113,12 +113,12 @@ function A() {
       return (null == (e = T.Z.getFeedState(w.YN.GLOBAL_FEED)) ? void 0 : e.loading) === !0
     }),
     [Z, A] = r.useState(""),
-    L = (0, u.e7)([y.Z, b.Z], () => {
+    D = (0, u.e7)([y.Z, b.Z], () => {
       var e, t, a;
       return parseInt(Z) > 0 ? Z : null != (a = null == (e = y.Z.getGameByName(Z)) ? void 0 : e.id) ? a : null == (t = b.Z.getApplicationByName(Z)) ? void 0 : t.id
     }, [Z]),
     B = (0, _.Z)({
-      applicationId: L,
+      applicationId: D,
       location: "DevToolsContentInventory",
       source: g.m1.DevTools
     }),
@@ -211,13 +211,13 @@ function A() {
           onKeyDown: e => {
             "Enter" === e.key && (Z === e.currentTarget.value ? null == B || B(e) : A(e.currentTarget.value))
           },
-          error: Z.length > 0 && null == B ? "No game profile for ".concat(null != L ? L : Z + " - try by id", ".") : void 0,
+          error: Z.length > 0 && null == B ? "No game profile for ".concat(null != D ? D : Z + " - try by id", ".") : void 0,
           style: null != B ? {
             border: "1px solid green"
           } : {}
         }), (0, n.jsx)("ul", {
           children: F.map(e => (0, n.jsx)("li", {
-            children: (0, n.jsx)(D, {
+            children: (0, n.jsx)(L, {
               application: e
             })
           }, "follow-game-".concat(e.id)))
@@ -247,7 +247,7 @@ function A() {
     })
   })
 }
-let D = e => {
+let L = e => {
   let {
     application: t
   } = e, a = (0, _.Z)({

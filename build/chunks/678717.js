@@ -36,8 +36,8 @@ var C = a(392750),
   k = a(272193),
   Z = a(685560),
   A = a(735959),
-  D = a(572444),
-  L = a(636500),
+  L = a(572444),
+  D = a(636500),
   B = a(246992),
   M = a(484662),
   F = a(496025),
@@ -276,7 +276,7 @@ function em(e) {
       id: "krisp_tester",
       name: "Krisp Tester",
       group: el.v0.AUDIO_VIDEO,
-      render: () => (0, n.jsx)(D.Z, {})
+      render: () => (0, n.jsx)(L.Z, {})
     }), e.push({
       id: "skill_trees",
       name: "Skill Trees",
@@ -286,7 +286,7 @@ function em(e) {
       id: "language",
       name: "Language",
       group: el.v0.UI,
-      render: () => (0, n.jsx)(L.Z, {})
+      render: () => (0, n.jsx)(D.Z, {})
     }), e
   }, []), {
     TabBar: i,

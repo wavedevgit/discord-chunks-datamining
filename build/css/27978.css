@@ -1,6 +1,6 @@
 /**
   Module ID: 27978
-  Original File Name: 84afb0b4505bf110
+  Original File Name: d420c2a961cd1dae
 **/
 .textContainer__2215e {
     padding: 6px 0
@@ -1035,11 +1035,6 @@
 .userActions__920b8 {
     gap: 8px;
     margin-left: auto
-}
-
-.textOverflow__920b8 {
-    overflow: hidden;
-    text-overflow: ellipsis
 }
 
 .hintText__920b8 {
@@ -2526,32 +2521,11 @@
     margin-bottom: 24px
 }
 
-.img_efe2ea {
-    height: 168px;
-    margin-bottom: 20px;
-    width: 252px
-}
-
 .contentContainer_efe2ea {
     display: flex;
     flex-direction: column;
     text-align: start;
     width: 100%
-}
-
-.button_efe2ea {
-    align-self: flex-end
-}
-
-.buttonWithIcon_efe2ea {
-    align-items: center;
-    display: flex;
-    justify-content: center
-}
-
-.externalArrow_efe2ea {
-    margin-left: 8px;
-    transform: rotate(45deg)
 }
 
 .select_d48ec6.error_d48ec6 .errorMessage_d48ec6 {
@@ -2885,4 +2859,4 @@
     height: 100px
 }
 
-/*# sourceMappingURL=84afb0b4505bf110.css.map*/
+/*# sourceMappingURL=d420c2a961cd1dae.css.map*/

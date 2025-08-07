@@ -1,14 +1,14 @@
 /** Chunk was on 27978 **/
 n.d(t, {
-  X: () => f,
+  X: () => m,
   Z: () => g
 }), n(953529);
 var r = n(255367);
 n(73800);
 var i = n(755721),
   l = n(481060),
-  s = n(565138),
-  o = n(372769),
+  o = n(565138),
+  s = n(372769),
   a = n(742593),
   c = n(390072),
   u = n(411198),
@@ -16,13 +16,13 @@ var i = n(755721),
   h = n(388032),
   p = n(807048);
 
-function m(e) {
+function f(e) {
   var t;
   let {
     guildScheduledEvent: n,
     channel: l,
-    onAcceptInvite: s,
-    isSubmitting: o
+    onAcceptInvite: o,
+    isSubmitting: s
   } = e;
   return (0, r.jsxs)("div", {
     className: p.guildEventCard,
@@ -43,14 +43,14 @@ function m(e) {
     }), (0, r.jsx)(i.zx, {
       className: p.acceptButton,
       color: i.zx.Colors.GREEN,
-      onClick: s,
-      submitting: o,
+      onClick: o,
+      submitting: s,
       children: h.intl.string(h.t.riu2R0)
     })]
   })
 }
 
-function f(e) {
+function m(e) {
   var t;
   let {
     invite: n
@@ -65,10 +65,10 @@ function f(e) {
       children: h.intl.string(h.t.Eabu19)
     }), (0, r.jsxs)("div", {
       className: p.guildContainer,
-      children: [(0, r.jsx)(s.Z, {
+      children: [(0, r.jsx)(o.Z, {
         guild: i,
         active: !0,
-        size: s.Z.Sizes.MEDIUM
+        size: o.Z.Sizes.MEDIUM
       }), (0, r.jsxs)("div", {
         className: p.guildDetailsContanier,
         children: [(0, r.jsxs)(l.Text, {
@@ -76,7 +76,7 @@ function f(e) {
           color: "header-primary",
           variant: "text-sm/medium",
           tag: "span",
-          children: [i.name, (0, r.jsx)(o.Z, {
+          children: [i.name, (0, r.jsx)(s.Z, {
             guild: i,
             className: p.guildBadge,
             tooltipPosition: "left"
@@ -105,10 +105,10 @@ function g(e) {
     isSubmitting: i,
     onAcceptInvite: l
   } = e, {
-    guild_scheduled_event: s
+    guild_scheduled_event: o
   } = t;
-  return null != s ? (0, r.jsx)(m, {
-    guildScheduledEvent: s,
+  return null != o ? (0, r.jsx)(f, {
+    guildScheduledEvent: o,
     channel: n,
     isSubmitting: i,
     onAcceptInvite: l

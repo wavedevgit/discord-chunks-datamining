@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(255367),
   i = n(73800),
   l = n(954955),
-  s = n.n(l),
-  o = n(748780),
+  o = n.n(l),
+  s = n(748780),
   a = n(873546),
   c = n(477690),
   u = n(481060),
@@ -22,7 +22,7 @@ function p(e, t, n) {
   }) : e[t] = n, e
 }
 
-function m(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -34,7 +34,7 @@ function m(e) {
   }
   return e
 }
-let f = (0, d.Mg)(c.Z.WAVE_SPLASH_RESPONSIVE_WIDTH_MOBILE),
+let m = (0, d.Mg)(c.Z.WAVE_SPLASH_RESPONSIVE_WIDTH_MOBILE),
   g = {
     START: 0,
     END: 1
@@ -61,7 +61,7 @@ let f = (0, d.Mg)(c.Z.WAVE_SPLASH_RESPONSIVE_WIDTH_MOBILE),
         this.state.shouldAnimate ? this.animateTo(g.START, e) : e()
       }
       animateTo(e, t) {
-        o.Z.spring(this.anim, m({
+        s.Z.spring(this.anim, f({
           toValue: e
         }, _)).start(t)
       }
@@ -91,23 +91,23 @@ let f = (0, d.Mg)(c.Z.WAVE_SPLASH_RESPONSIVE_WIDTH_MOBILE),
               let {
                 reducedMotion: n
               } = t;
-              return (0, r.jsx)(o.Z.div, {
+              return (0, r.jsx)(s.Z.div, {
                 style: this.getAnimatedStyle(n.enabled),
-                children: (0, r.jsx)(e, m({}, this.props))
+                children: (0, r.jsx)(e, f({}, this.props))
               })
             }
           })
         })
       }
       constructor(...e) {
-        super(...e), p(this, "timeout", void 0), p(this, "anim", new o.Z.Value(g.START)), p(this, "state", {
+        super(...e), p(this, "timeout", void 0), p(this, "anim", new s.Z.Value(g.START)), p(this, "state", {
           shouldAnimate: !a.tq
         }), p(this, "handleResize", () => {
-          let e = window.innerWidth > f;
+          let e = window.innerWidth > m;
           !this.state.shouldAnimate && e && this.anim.setValue(g.END), this.setState({
             shouldAnimate: e
           })
-        }), p(this, "handleResizeDebounced", s()(this.handleResize, 60))
+        }), p(this, "handleResizeDebounced", o()(this.handleResize, 60))
       }
     }
   }

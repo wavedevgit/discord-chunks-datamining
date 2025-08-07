@@ -6,15 +6,15 @@ n.d(t, {
 var r = n(536285),
   i = n(703656),
   l = n(314897),
-  s = n(358085),
-  o = n(981631);
-let a = s.isPlatformEmbedded ? o.dG4 : (e, t) => {
-    if (!(0, i.DB)()) return r.default.request(o.Etm.DEEP_LINK, {
+  o = n(358085),
+  s = n(981631);
+let a = o.isPlatformEmbedded ? s.dG4 : (e, t) => {
+    if (!(0, i.DB)()) return r.default.request(s.Etm.DEEP_LINK, {
       type: e,
       params: t
     })
   },
-  c = s.isPlatformEmbedded ? o.dG4 : (e, t) => {
+  c = o.isPlatformEmbedded ? s.dG4 : (e, t) => {
     if (!l.default.isAuthenticated()) {
       var n, r;
       return a(e, (n = function(e) {

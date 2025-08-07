@@ -1,11 +1,10 @@
-/** Chunk was on 67244 **/
-"use strict";
+/** Chunk was on 90350 **/
+n.d(e, {
+  Z: () => r
+});
 
-function a(e) {
-  return (a = Object.setPrototypeOf ? Object.getPrototypeOf.bind() : function(e) {
-    return e.__proto__ || Object.getPrototypeOf(e)
-  })(e)
+function r(t) {
+  return (r = Object.setPrototypeOf ? Object.getPrototypeOf.bind() : function(t) {
+    return t.__proto__ || Object.getPrototypeOf(t)
+  })(t)
 }
-r.d(t, {
-  Z: () => a
-})

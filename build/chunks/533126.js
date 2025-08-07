@@ -19,12 +19,12 @@ n.d(t, {
   wz: () => g
 });
 var l = "copy",
-  s = "convert";
+  o = "convert";
 
-function o(e, t, n) {
+function s(e, t, n) {
   if (t === l) return n;
-  if (t === s) return e(n);
-  if (t instanceof Array) return n.map(n => o(e, t[0], n));
+  if (t === o) return e(n);
+  if (t instanceof Array) return n.map(n => s(e, t[0], n));
   if (t instanceof Object) {
     let r = {};
     for (let [i, l] of Object.entries(t)) {
@@ -40,7 +40,7 @@ function o(e, t, n) {
         r[i] = null;
         continue
       }
-      r[i] = o(e, l.schema, n[i])
+      r[i] = s(e, l.schema, n[i])
     }
     return r
   }
@@ -69,7 +69,7 @@ function u(e) {
 }
 var d = {
     type: c(l),
-    id: c(s),
+    id: c(o),
     transports: u(l)
   },
   h = {
@@ -85,29 +85,29 @@ var d = {
 c({
   rp: c(l),
   user: c({
-    id: c(s),
+    id: c(o),
     name: c(l),
     displayName: c(l)
   }),
-  challenge: c(s),
+  challenge: c(o),
   pubKeyCredParams: c(l),
   timeout: u(l),
   excludeCredentials: u([d]),
   authenticatorSelection: u(l),
   attestation: u(l),
   extensions: u(h)
-}), u(l), c(l), c(l), c(s), u(l), c({
-  clientDataJSON: c(s),
-  attestationObject: c(s),
+}), u(l), c(l), c(l), c(o), u(l), c({
+  clientDataJSON: c(o),
+  attestationObject: c(o),
   transports: a(l, e => {
     var t;
     return (null == (t = e.getTransports) ? void 0 : t.call(e)) || []
   })
 }), a(p, e => e.getClientExtensionResults());
-var m = {
+var f = {
     mediation: u(l),
     publicKey: c({
-      challenge: c(s),
+      challenge: c(o),
       timeout: u(l),
       rpId: u(l),
       allowCredentials: u([d]),
@@ -116,24 +116,24 @@ var m = {
     }),
     signal: u(l)
   },
-  f = {
+  m = {
     type: c(l),
     id: c(l),
-    rawId: c(s),
+    rawId: c(o),
     authenticatorAttachment: u(l),
     response: c({
-      clientDataJSON: c(s),
-      authenticatorData: c(s),
-      signature: c(s),
-      userHandle: c(s)
+      clientDataJSON: c(o),
+      authenticatorData: c(o),
+      signature: c(o),
+      userHandle: c(o)
     }),
     clientExtensionResults: a(p, e => e.getClientExtensionResults())
   };
 
 function g(e) {
-  return o(r, m, e)
+  return s(r, f, e)
 }
 async function _(e) {
   let t = await navigator.credentials.get(e);
-  return t.toJSON = () => o(i, f, t), t
+  return t.toJSON = () => s(i, m, t), t
 }

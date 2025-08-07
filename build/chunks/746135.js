@@ -1,9 +1,8 @@
-/** Chunk was on 67244 **/
-"use strict";
+/** Chunk was on 90350 **/
+n.d(e, {
+  Z: () => r
+});
 
-function a(e) {
-  if (Array.isArray(e)) return e
+function r(t) {
+  if (Array.isArray(t)) return t
 }
-r.d(t, {
-  Z: () => a
-})
