@@ -1,6 +1,6 @@
 /**
   Module ID: 44044
-  Original File Name: 8c184e490218ebf8
+  Original File Name: e774829f84e3236a
 **/
 .iconContainer__98cf7 {
     filter: saturate(var(--saturation-factor,1));
@@ -223,7 +223,7 @@
 
 .ctaSection_fc200b {
     background: var(--background-base-lower);
-    border-top-left-radius: 5px;
+    border-top-left-radius: var(--radius-md);
     justify-content: center;
     min-height: 450px
 }
@@ -237,7 +237,7 @@
 
 .formSection_fc200b {
     background: var(--background-base-low);
-    border-top-right-radius: 5px;
+    border-top-right-radius: var(--radius-md);
     position: relative
 }
 
@@ -264,4 +264,4 @@
     text-align: center
 }
 
-/*# sourceMappingURL=8c184e490218ebf8.css.map*/
+/*# sourceMappingURL=e774829f84e3236a.css.map*/

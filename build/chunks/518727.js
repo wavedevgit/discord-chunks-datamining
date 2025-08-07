@@ -42,7 +42,7 @@ let L = e => {
     {
       mediaUrls: T,
       isSuccess: Z
-    } = (0, x.Z)(M && O),
+    } = (0, x.Z)(!o && M && O),
     A = (0, i.useRef)(null),
     [R, N] = (0, i.useState)(!1);
   (0, i.useEffect)(() => {
