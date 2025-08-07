@@ -54,7 +54,8 @@ function h(e) {
       onChange: _,
       onChangeGradientColors: O,
       isGradient: S,
-      gradientButtonClassName: m.gradientPicker
+      gradientButtonClassName: m.gradientPicker,
+      gradientDegrees: 90
     })]
   })
 }

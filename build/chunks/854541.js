@@ -101,31 +101,32 @@ function w(e) {
     isGradient: _ = !1,
     "aria-label": h,
     gradientStart: g,
-    gradientEnd: b
-  } = e, O = (0, s.JA)("color-".concat(t)), I = {};
+    gradientEnd: b,
+    gradientDegrees: O = 180
+  } = e, I = (0, s.JA)("color-".concat(t)), S = {};
   if (_ && null != g && null != b) {
     let e = (0, c.Rf)(g),
       t = (0, c.Rf)(b);
-    I = {
-      background: "linear-gradient(to bottom, ".concat(e, ", ").concat(t, ")")
+    S = {
+      background: "linear-gradient(".concat(O, "deg, ").concat(e, ", ").concat(t, ")")
     }
-  } else I = {
+  } else S = {
     backgroundColor: null != t ? (0, c.Rf)(t) : u.backgroundColor
   };
-  let S = _ ? g : t,
-    A = !1;
+  let A = _ ? g : t,
+    N = !1;
 
-  function N() {
+  function C() {
     let e = 16,
       t = 16;
     if ((i || n) && (e = 32, t = 24), o) return (0, r.jsx)(p.dz2, {
       size: "custom",
       width: e,
       height: t,
-      color: (0, m.Lq)(A ? E.Ilk.WHITE_500 : E.Ilk.BLACK_500)
+      color: (0, m.Lq)(N ? E.Ilk.WHITE_500 : E.Ilk.BLACK_500)
     })
   }
-  return i && !o ? A = !0 : (i || o) && (A = (0, c.Bd)(null != S ? S : E.p6O) > .1), (0, r.jsx)(f.t, {
+  return i && !o ? N = !0 : (i || o) && (N = (0, c.Bd)(null != A ? A : E.p6O) > .1), (0, r.jsx)(f.t, {
     offset: -2,
     children: (0, r.jsxs)("button", T(v({
       type: "button",
@@ -141,17 +142,17 @@ function w(e) {
         start: g,
         end: b
       } : t),
-      style: v({}, u, I),
-      "aria-label": null != h ? h : _ ? "Gradient ".concat(g, "-").concat(b) : I.backgroundColor
-    }, O), {
+      style: v({}, u, S),
+      "aria-label": null != h ? h : _ ? "Gradient ".concat(g, "-").concat(b) : S.backgroundColor
+    }, I), {
       children: [i ? (0, r.jsx)(p.vdY, {
         size: "custom",
         className: y.colorPickerDropper,
         colorClass: y.colorPickerDropperFg,
         width: 14,
         height: 14,
-        color: (0, m.Lq)(A ? E.Ilk.WHITE_500 : E.Ilk.BLACK_500)
-      }) : null, N()]
+        color: (0, m.Lq)(N ? E.Ilk.WHITE_500 : E.Ilk.BLACK_500)
+      }) : null, C()]
     }))
   })
 }
@@ -314,8 +315,9 @@ function k(e) {
     renderCustomButton: p,
     colorContainerClassName: h,
     isGradient: m,
-    renderGradientCustomButton: g
-  } = e, E = e => (0, r.jsx)("div", {
+    renderGradientCustomButton: g,
+    gradientDegrees: E
+  } = e, b = e => (0, r.jsx)("div", {
     className: y.colorPickerRow,
     children: m ? e.map(e => (0, r.jsx)(w, {
       gradientStart: e.start,
@@ -325,7 +327,8 @@ function k(e) {
       onClick: () => f(e.start, e.end),
       disabled: d,
       isGradient: !0,
-      "aria-label": e.name
+      "aria-label": e.name,
+      gradientDegrees: E
     }, "".concat(e.start, "-").concat(e.end))) : e.map(e => (0, r.jsx)(w, {
       color: e,
       isSelected: e === c,
@@ -333,14 +336,14 @@ function k(e) {
       disabled: d,
       isGradient: !1
     }, e))
-  }), b = o.slice(0, o.length / 2), O = o.slice(o.length / 2, o.length), I = (0, l.ZP)({
+  }), O = o.slice(0, o.length / 2), I = o.slice(o.length / 2, o.length), A = (0, l.ZP)({
     id: "color-picker",
     isEnabled: !0,
     scrollToStart: R,
     scrollToEnd: R
   });
   return (0, r.jsx)(s.bG, {
-    navigator: I,
+    navigator: A,
     children: (0, r.jsx)(s.SJ, {
       children: e => {
         var {
@@ -377,7 +380,7 @@ function k(e) {
               disabled: d
             })
           }), (0, r.jsxs)("div", {
-            children: [E(b), E(O)]
+            children: [b(O), b(I)]
           })]
         }))
       }
