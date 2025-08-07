@@ -52,7 +52,7 @@ function h() {
     guildId: t
   } = (0, s.N)(), [n, h] = o.UE(e), f = i.useMemo(() => new Set(n.map(e => e.ref_id)), [n]);
 
-  function x(e, t) {
+  function b(e, t) {
     let {
       channelId: r,
       description: i,
@@ -68,7 +68,7 @@ function h() {
     };
     null != t ? s[t] = o : s.push(o), h(s)
   }
-  let b = (0, a.mY)();
+  let x = (0, a.mY)();
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(d.p, {
       benefits: n,
@@ -77,7 +77,7 @@ function h() {
           guildId: t,
           omitChannelIds: f,
           initialData: n[e],
-          onSave: t => x(t, e),
+          onSave: t => b(t, e),
           onDelete: () => (function(e) {
             let t = [...n];
             t.splice(e, 1), h(t)
@@ -97,10 +97,10 @@ function h() {
         (0, l.h7j)(e => (0, r.jsx)(c.x3, p(g({}, e), {
           guildId: t,
           omitChannelIds: f,
-          onSave: e => x(e)
+          onSave: e => b(e)
         })))
       },
-      disabled: b,
+      disabled: x,
       children: m.intl.string(m.t.PLSCUl)
     })]
   })

@@ -1,6 +1,6 @@
 /** Chunk was on 22988 **/
 n.d(t, {
-  h: () => x
+  h: () => b
 });
 var r = n(255367),
   i = n(73800),
@@ -17,11 +17,11 @@ var r = n(255367),
   h = n(388032),
   f = n(322847);
 
-function x(e) {
+function b(e) {
   let {
     guild: t,
     canManageGuild: n
-  } = e, x = t.features.has(m.oNc.INVITE_SPLASH), b = n && x, {
+  } = e, b = t.features.has(m.oNc.INVITE_SPLASH), x = n && b, {
     analyticsLocations: j
   } = (0, a.ZP)(), v = i.useCallback(e => {
     d.Z.updateGuild({
@@ -41,14 +41,14 @@ function x(e) {
       id: t.id,
       splash: e
     }) : null,
-    disabled: !b,
+    disabled: !x,
     onChange: v,
     hint: h.intl.string(h.t.uPvxqK),
-    enabled: b,
+    enabled: x,
     maxFileSizeBytes: p.B,
     onFileSizeError: () => (0, s.Z)(p.B)
   });
-  return x ? O : (0, r.jsx)(l.P3F, {
+  return b ? O : (0, r.jsx)(l.P3F, {
     "aria-hidden": !0,
     tabIndex: -1,
     className: f.upsell,

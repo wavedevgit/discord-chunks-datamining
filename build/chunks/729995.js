@@ -17,8 +17,8 @@ var i = n(442837),
   p = n(8426),
   h = n(969632),
   f = n(570961),
-  x = n(84658),
-  b = n(974513),
+  b = n(84658),
+  x = n(974513),
   j = n(677892),
   v = n(981631),
   _ = n(388032),
@@ -67,30 +67,30 @@ function N(e) {
   let u = async function() {
     let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
     l ? (await (0, f.$y)(t, !1), m.default.track(v.rMx.GUILD_SETTINGS_ONBOARDING_EDIT_PAGE_CLICKED, C(y({}, (0, s.hH)(t)), {
-      action_taken: x.W$[x.W$.TOGGLE_DISABLED],
+      action_taken: b.W$[b.W$.TOGGLE_DISABLED],
       location: c
     }))) : (await (0, f.$y)(t, !0), e && (0, p.To)(t, !0), n ? m.default.track(v.rMx.GUILD_SETTINGS_ONBOARDING_EDIT_PAGE_CLICKED, C(y({}, (0, s.hH)(t)), {
-      action_taken: x.W$[x.W$.TOGGLE_ENABLED],
+      action_taken: b.W$[b.W$.TOGGLE_ENABLED],
       location: c
     })) : m.default.track(v.rMx.GUILD_SETTINGS_ONBOARDING_WIZARD_PROGRESS_CTA_CLICKED, C(y({}, (0, s.hH)(t)), {
-      step: x.PG[x.PG.REVIEW],
+      step: b.PG[b.PG.REVIEW],
       back: !1,
       skip: !1,
       completed: !0
     })))
   }, h = () => {
     m.default.track(v.rMx.GUILD_SETTINGS_ONBOARDING_EDIT_PAGE_CLICKED, C(y({}, (0, s.hH)(t)), {
-      action_taken: x.W$[x.W$.PREVIEW],
+      action_taken: b.W$[b.W$.PREVIEW],
       location: c
     })), (0, g.di)(t)
-  }, b = (0, r.jsxs)(r.Fragment, {
+  }, x = (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(j.ku, {
       guildId: t,
       onEdit: () => {
         m.default.track(v.rMx.GUILD_SETTINGS_ONBOARDING_EDIT_PAGE_CLICKED, C(y({}, (0, s.hH)(t)), {
-          action_taken: x.W$[x.W$.EDIT_DEFAULT_CHANNELS],
+          action_taken: b.W$[b.W$.EDIT_DEFAULT_CHANNELS],
           location: c
-        })), (0, g.$K)(x.PG.DEFAULT_CHANNELS)
+        })), (0, g.$K)(b.PG.DEFAULT_CHANNELS)
       },
       disableGoodStatus: n
     }), (0, r.jsx)(d.Z, {
@@ -99,9 +99,9 @@ function N(e) {
       guildId: t,
       onEdit: () => {
         m.default.track(v.rMx.GUILD_SETTINGS_ONBOARDING_EDIT_PAGE_CLICKED, C(y({}, (0, s.hH)(t)), {
-          action_taken: x.W$[x.W$.EDIT_CUSTOMIZATION_QUESTIONS],
+          action_taken: b.W$[b.W$.EDIT_CUSTOMIZATION_QUESTIONS],
           location: c
-        })), (0, g.$K)(x.PG.CUSTOMIZATION_QUESTIONS)
+        })), (0, g.$K)(b.PG.CUSTOMIZATION_QUESTIONS)
       },
       disableGoodStatus: n
     }), (0, r.jsx)(d.Z, {
@@ -110,9 +110,9 @@ function N(e) {
       guildId: t,
       onEdit: () => {
         m.default.track(v.rMx.GUILD_SETTINGS_ONBOARDING_EDIT_PAGE_CLICKED, C(y({}, (0, s.hH)(t)), {
-          action_taken: x.W$[x.W$.EDIT_HOME_SETTINGS],
+          action_taken: b.W$[b.W$.EDIT_HOME_SETTINGS],
           location: c
-        })), (0, g.$K)(x.PG.HOME_SETTINGS)
+        })), (0, g.$K)(b.PG.HOME_SETTINGS)
       },
       disableGoodStatus: n
     })]
@@ -126,7 +126,7 @@ function N(e) {
       children: [(0, r.jsx)(S, {
         guildId: t,
         handleOnboardingToggle: u
-      }), b]
+      }), x]
     })]
   }) : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
@@ -135,7 +135,7 @@ function N(e) {
         guildId: t,
         handleOnboardingToggle: u,
         handlePreview: h
-      }), b]
+      }), x]
     }), (0, r.jsx)(P, {
       guildId: t
     })]
@@ -179,7 +179,7 @@ function I(e) {
         })
       }), (0, r.jsx)("div", {
         className: O.helpSeparator
-      }), (0, r.jsx)(b.Wu, {
+      }), (0, r.jsx)(x.Wu, {
         guildId: t
       })]
     })]

@@ -16,8 +16,8 @@ var r = n(255367),
   p = n(743475),
   h = n(983135),
   f = n(570961),
-  x = n(208665),
-  b = n(359191),
+  b = n(208665),
+  x = n(359191),
   j = n(84658),
   v = n(142961),
   _ = n(729311),
@@ -40,18 +40,18 @@ function P(e) {
   let t, {
       guildId: n
     } = e,
-    l = (0, s.e7)([b.Z], () => b.Z.getCurrentPage()),
-    g = (0, s.e7)([b.Z], () => {
+    l = (0, s.e7)([x.Z], () => x.Z.getCurrentPage()),
+    g = (0, s.e7)([x.Z], () => {
       let e = (0, j.lg)(l);
-      return null != e && !b.Z.isEducationUpsellDismissed(e)
+      return null != e && !x.Z.isEducationUpsellDismissed(e)
     }),
-    x = (0, v.Z)(n),
-    T = !x && g;
+    b = (0, v.Z)(n),
+    T = !b && g;
   switch (i.useEffect(() => {
       (0, u.Q3)(o.z.COMMUNITY_ONBOARDING_NEW_BADGE)
     }, []), l) {
     case j.PG.LANDING:
-      t = x ? (0, r.jsx)(y.Z, {
+      t = b ? (0, r.jsx)(y.Z, {
         completed: !0,
         guildId: n
       }) : (0, r.jsx)(N.Z, {});
@@ -61,22 +61,22 @@ function P(e) {
       break;
     case j.PG.DEFAULT_CHANNELS:
       t = (0, r.jsx)(_.Z, {
-        saveOnClose: !x
+        saveOnClose: !b
       });
       break;
     case j.PG.CUSTOMIZATION_QUESTIONS:
       t = (0, r.jsx)(C.ZP, {
-        saveOnClose: !x
+        saveOnClose: !b
       });
       break;
     case j.PG.HOME_SETTINGS:
       t = (0, r.jsx)(O.Z, {
-        saveOnClose: !x
+        saveOnClose: !b
       });
       break;
     case j.PG.REVIEW:
       t = (0, r.jsx)(y.Z, {
-        completed: x,
+        completed: b,
         guildId: n
       })
   }
@@ -84,11 +84,11 @@ function P(e) {
     className: a()(S.onboardingContainer, {
       [S.upsellOnTop]: T
     }),
-    children: [!x && l !== j.PG.LANDING && (0, r.jsx)(w, {
+    children: [!b && l !== j.PG.LANDING && (0, r.jsx)(w, {
       setOnboardingStep: h.$K,
       page: l,
       homeSettingsEnabled: !0
-    }), x && l !== j.PG.LANDING && (0, r.jsx)("div", {
+    }), b && l !== j.PG.LANDING && (0, r.jsx)("div", {
       children: (0, r.jsxs)(c.zx, {
         innerClassName: S.backButton,
         look: c.zx.Looks.BLANK,
@@ -116,9 +116,9 @@ function w(e) {
     page: t,
     setOnboardingStep: n,
     homeSettingsEnabled: i
-  } = e, l = (0, s.e7)([b.Z], () => b.Z.hasErrors()), o = e => {
+  } = e, l = (0, s.e7)([x.Z], () => x.Z.hasErrors()), o = e => {
     if (!l) return () => n(e)
-  }, c = (0, s.e7)([x.Z], () => x.Z.advancedMode);
+  }, c = (0, s.e7)([b.Z], () => b.Z.advancedMode);
   return (0, r.jsxs)("div", {
     className: S.progressContainer,
     children: [(0, r.jsxs)(d.P3F, {

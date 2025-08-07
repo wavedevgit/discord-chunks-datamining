@@ -21,13 +21,13 @@ function p(e) {
     buttonClassName: p
   } = e, {
     analyticsLocations: h
-  } = (0, a.ZP)(), f = t.features.has(c.oNc.BANNER), x = i.useCallback(e => {
+  } = (0, a.ZP)(), f = t.features.has(c.oNc.BANNER), b = i.useCallback(e => {
     let {
       imageUri: n,
       file: r
     } = e;
     (0, o.f4)(t, h, n, r)
-  }, [h, t]), b = i.useCallback(e => {
+  }, [h, t]), x = i.useCallback(e => {
     e.preventDefault(), e.stopPropagation(), (0, o.E6)({
       guild: t,
       analyticsLocations: h,
@@ -43,7 +43,7 @@ function p(e) {
     onClick: () => (0, o.mw)({
       uploadType: u.pC.GUILD_BANNER,
       maxFileSizeBytes: m.B,
-      onComplete: x,
+      onComplete: b,
       analyticsLocation: {
         page: c.ZY5.GUILD_SETTINGS,
         section: c.jXE.GUILD_BANNER
@@ -53,6 +53,6 @@ function p(e) {
     children: g.intl.string(g.t.yG2pUl)
   }) : (0, r.jsx)(s.P, {
     className: p,
-    onClick: b
+    onClick: x
   })
 }

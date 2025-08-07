@@ -16,8 +16,8 @@ var r = n(255367),
   p = n(208665),
   h = n(959508),
   f = n(290511),
-  x = n(388032),
-  b = n(795808);
+  b = n(388032),
+  x = n(795808);
 
 function j(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -75,35 +75,35 @@ function _(e) {
     h(j(O))
   }, [h, j, O]), (0, r.jsxs)("div", {
     ref: O,
-    className: a()(b.separatorSection, {
-      [b.dropIndicatorBefore]: null != v && m < v,
-      [b.dropIndicatorAfter]: null != v && m > v
+    className: a()(x.separatorSection, {
+      [x.dropIndicatorBefore]: null != v && m < v,
+      [x.dropIndicatorAfter]: null != v && m > v
     }),
     children: [!l && u.length < f.b3 ? (0, r.jsxs)(o.P3F, {
-      className: b.addPrompt,
+      className: x.addPrompt,
       onClick: () => (0, g.tS)(t, [...c, (0, f.yZ)(!0)], !1),
       children: [(0, r.jsx)(o.oFk, {
         size: "custom",
         color: "currentColor",
-        className: b.plusIcon,
+        className: x.plusIcon,
         width: 20,
         height: 20
       }), (0, r.jsx)(o.Text, {
         variant: "text-md/medium",
         color: "text-brand",
-        children: x.intl.string(x.t.ujFqu7)
+        children: b.intl.string(b.t.ujFqu7)
       })]
     }) : null, n ? null : (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("div", {
-        className: b.divider
+        className: x.divider
       }), (0, r.jsx)(o.X6q, {
         variant: "heading-md/bold",
-        children: x.intl.string(x.t.tjrGcX)
+        children: b.intl.string(b.t.tjrGcX)
       }), (0, r.jsx)(o.Text, {
         variant: "text-sm/normal",
         color: "header-secondary",
-        className: b.subtitle,
-        children: x.intl.string(x.t.XFa6Q0)
+        className: x.subtitle,
+        children: b.intl.string(b.t.XFa6Q0)
       })]
     })]
   })
@@ -139,8 +139,8 @@ function O(e) {
         required: !1
       }));
     if (n.length > f.b3) return void c.Z.show({
-      title: x.intl.string(x.t["Cxtq5+"]),
-      body: x.intl.formatToPlainString(x.t["pkbZ+f"], {
+      title: b.intl.string(b.t["Cxtq5+"]),
+      body: b.intl.formatToPlainString(b.t["pkbZ+f"], {
         numQuestions: f.b3
       })
     });
@@ -151,12 +151,12 @@ function O(e) {
       children: [n ? null : (0, r.jsxs)("div", {
         children: [(0, r.jsx)(o.X6q, {
           variant: "heading-md/bold",
-          children: x.intl.string(x.t["24Qm4O"])
+          children: b.intl.string(b.t["24Qm4O"])
         }), (0, r.jsx)(o.Text, {
           variant: "text-sm/normal",
           color: "header-secondary",
-          className: b.subtitle,
-          children: x.intl.string(x.t.QvCcYW)
+          className: x.subtitle,
+          children: b.intl.string(b.t.QvCcYW)
         })]
       }), y.map((e, t) => (0, r.jsx)(h.Z, {
         guild: d,
@@ -184,18 +184,18 @@ function O(e) {
         onPromptDragReset: E,
         onPromptDragComplete: S
       }, e.id)), O.length < f.YW ? (0, r.jsxs)(o.P3F, {
-        className: b.addPrompt,
+        className: x.addPrompt,
         onClick: () => (0, g.tS)(d, [...O, (0, f.yZ)(!1)], !1),
         children: [(0, r.jsx)(o.oFk, {
           size: "custom",
           color: "currentColor",
-          className: b.plusIcon,
+          className: x.plusIcon,
           width: 20,
           height: 20
         }), (0, r.jsx)(o.Text, {
           variant: "text-md/medium",
           color: "text-brand",
-          children: x.intl.string(x.t.ujFqu7)
+          children: b.intl.string(b.t.ujFqu7)
         })]
       }) : null]
     })]

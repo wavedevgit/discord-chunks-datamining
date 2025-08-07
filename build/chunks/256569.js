@@ -75,8 +75,8 @@ function f(e) {
     tagErrors: u = {},
     placeholder: p,
     className: f,
-    maxTags: x
-  } = e, b = i.useRef(null), j = i.useRef(null), v = i.useRef(null), _ = (0, m.V)(n), {
+    maxTags: b
+  } = e, x = i.useRef(null), j = i.useRef(null), v = i.useRef(null), _ = (0, m.V)(n), {
     handlePasteEvent: O,
     handleInputChange: y,
     handleKeyDown: C,
@@ -89,7 +89,7 @@ function f(e) {
     handleInputBlurEvent: w
   } = (0, m.Q)(_, {
     scrollerRef: v,
-    mainInputRef: b,
+    mainInputRef: x,
     mainContainerRef: j
   }), {
     state: {
@@ -100,7 +100,7 @@ function f(e) {
     }
   } = _, k = (0, o.Z)(Z), [L, M] = i.useState(!1), G = i.useCallback(() => {
     var e;
-    M(!1), P(), null == (e = b.current) || e.focus({
+    M(!1), P(), null == (e = x.current) || e.focus({
       preventScroll: !0
     })
   }, [P]);
@@ -117,9 +117,9 @@ function f(e) {
       if (t) {
         var n;
         let t = D.includes(Z[e]);
-        null == (n = b.current) || n.focus(), t ? T(e) : (S(e), setImmediate(() => {
+        null == (n = x.current) || n.focus(), t ? T(e) : (S(e), setImmediate(() => {
           var e;
-          null == (e = b.current) || e.blur(), setTimeout(() => {
+          null == (e = x.current) || e.blur(), setTimeout(() => {
             var e;
             return null == (e = j.current) ? void 0 : e.focus()
           }, 16)
@@ -148,7 +148,7 @@ function f(e) {
         className: a()(g.mainTextInput, {
           [g.isEditingOtherNodes]: L
         }),
-        ref: b,
+        ref: x,
         onChange: y,
         onKeyDownCapture: C,
         onPaste: O,
@@ -156,11 +156,11 @@ function f(e) {
         placeholder: 0 === Z.length ? p : void 0,
         value: R
       })]
-    }), null != x && (0, r.jsxs)(s.Text, {
+    }), null != b && (0, r.jsxs)(s.Text, {
       variant: "text-xs/normal",
       color: "text-muted",
       className: g.maxTags,
-      children: [null != (t = null == Z ? void 0 : Z.length) ? t : 0, "/", x]
+      children: [null != (t = null == Z ? void 0 : Z.length) ? t : 0, "/", b]
     })]
   })
 }

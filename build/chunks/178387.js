@@ -1,6 +1,6 @@
 /** Chunk was on 22988 **/
 n.d(t, {
-  I: () => b
+  I: () => x
 });
 var r = n(255367);
 n(73800);
@@ -17,14 +17,14 @@ var i = n(793030),
   p = n(888125),
   h = n(981631),
   f = n(388032),
-  x = n(162161);
+  b = n(162161);
 
-function b() {
+function x() {
   let {
     analyticsLocations: e
   } = (0, s.ZP)(a.Z.GUILD_SETTINGS_BOOST_PERKS_PAGE), t = (0, l.e7)([d.Z], () => d.Z.getProps().guild, []), {
     isGuildAdmin: n,
-    canManageGuild: b
+    canManageGuild: x
   } = (0, l.cj)([c.Z], () => ({
     isGuildAdmin: null != t && c.Z.can(h.Plq.ADMINISTRATOR, t),
     canManageGuild: null != t && c.Z.can(h.Plq.MANAGE_GUILD, t)
@@ -32,39 +32,39 @@ function b() {
   return null == t ? null : (0, r.jsx)(s.Gt, {
     value: e,
     children: (0, r.jsxs)("main", {
-      className: x.container,
+      className: b.container,
       children: [(0, r.jsx)(i.X6, {
         variant: "heading-lg/semibold",
         color: "header-primary",
         children: f.intl.string(f.t.UKgg5O)
       }), (0, r.jsx)(p.w, {
-        canManageGuild: b,
+        canManageGuild: x,
         premiumProgressBarEnabled: t.premiumProgressBarEnabled
       }), (0, r.jsx)("div", {
-        className: x.divider
+        className: b.divider
       }), (0, r.jsx)(u.A, {
         guild: t,
-        canManageGuild: b
+        canManageGuild: x
       }), (0, r.jsx)("div", {
-        className: x.divider
+        className: b.divider
       }), j ? (0, r.jsxs)(r.Fragment, {
         children: [n && (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(g.V, {
             guild: t
           }), (0, r.jsx)("div", {
-            className: x.divider
+            className: b.divider
           })]
         }), (0, r.jsx)(m.A, {
           guild: t,
-          canManageGuild: b
+          canManageGuild: x
         })]
       }) : (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(m.A, {
           guild: t,
-          canManageGuild: b
+          canManageGuild: x
         }), n && (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)("div", {
-            className: x.divider
+            className: b.divider
           }), (0, r.jsx)(g.V, {
             guild: t
           })]

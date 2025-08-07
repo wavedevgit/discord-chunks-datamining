@@ -16,8 +16,8 @@ var r = n(255367),
   p = n(85960),
   h = n(577330),
   f = n(65912),
-  x = n(51248),
-  b = n(546513),
+  b = n(51248),
+  x = n(546513),
   j = n(572456),
   v = n(273504),
   _ = n(981631),
@@ -76,7 +76,7 @@ function C(e) {
     B = e => (0, r.jsx)(r.Fragment, {
       children: e.map(e => {
         var t;
-        return (0, r.jsx)(b.Z, {
+        return (0, r.jsx)(x.Z, {
           guildId: P,
           triggerType: e,
           rules: null != (t = Z[e]) ? t : [],
@@ -147,7 +147,7 @@ function C(e) {
       guild: S,
       withDivider: !1,
       className: y.explicitContentFilterSection
-    }), (0, r.jsx)(x.Z, {
+    }), (0, r.jsx)(b.Z, {
       guildId: P,
       existingRules: A
     }), w && (0, r.jsx)("div", {

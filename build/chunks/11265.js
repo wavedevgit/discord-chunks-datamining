@@ -20,8 +20,8 @@ let m = i.memo(function(e) {
     isStuck: p,
     onExpand: h,
     disableAnimation: f,
-    disableBackground: x
-  } = e, [b, j] = i.useState(!0), [v, _] = i.useState(!1), {
+    disableBackground: b
+  } = e, [x, j] = i.useState(!0), [v, _] = i.useState(!1), {
     ref: O,
     height: y = 0
   } = (0, c.ZP)(), {
@@ -64,7 +64,7 @@ let m = i.memo(function(e) {
     onRest: () => {
       _(!0)
     }
-  }, b || f ? "animate-never" : "respect-motion-settings");
+  }, x || f ? "animate-never" : "respect-motion-settings");
   return i.useLayoutEffect(() => {
     _(!1), E(g)
   }, [g]), i.useLayoutEffect(() => {
@@ -75,7 +75,7 @@ let m = i.memo(function(e) {
   }, []), (0, r.jsx)(o.P3F, {
     className: a()(u.editCard, {
       [u.toggled]: g,
-      [u.noBackground]: x
+      [u.noBackground]: b
     }),
     children: (0, r.jsxs)(s.animated.div, {
       className: a()(u.contentExpandContainer, {

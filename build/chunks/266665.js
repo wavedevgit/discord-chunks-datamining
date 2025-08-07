@@ -16,8 +16,8 @@ var r = n(255367),
   p = n(607070),
   h = n(134433),
   f = n(325476),
-  x = n(884902),
-  b = n(345162),
+  b = n(884902),
+  x = n(345162),
   j = n(496675),
   v = n(671533),
   _ = n(946724),
@@ -77,10 +77,10 @@ function R(e) {
       roleStyle: C
     } = e,
     N = (0, O.T)(c, g, m),
-    E = (0, b.fI)(m),
+    E = (0, x.fI)(m),
     R = null == N && !E,
     Z = (null == (t = m.tags) ? void 0 : t.guild_connections) !== void 0,
-    D = (0, x._f)(c.id, m, m.colorStrings),
+    D = (0, b._f)(c.id, m, m.colorStrings),
     [, A] = (0, s.c)({
       type: w,
       item: () => (v(m.id), {
@@ -167,7 +167,7 @@ function Z(e) {
     currentRoleId: n,
     setCurrentRoleId: l,
     setSelectedSection: s
-  } = e, o = (0, c.e7)([_.Z], () => _.Z.roles), u = (0, c.e7)([j.Z], () => j.Z.getHighestRole(t)), h = (0, c.e7)([p.Z], () => p.Z.roleStyle), [x, b] = i.useState(o.length), {
+  } = e, o = (0, c.e7)([_.Z], () => _.Z.roles), u = (0, c.e7)([j.Z], () => j.Z.getHighestRole(t)), h = (0, c.e7)([p.Z], () => p.Z.roleStyle), [b, x] = i.useState(o.length), {
     scrolledToTop: O,
     handleScroll: I
   } = (0, C.V)(), {
@@ -184,8 +184,8 @@ function Z(e) {
   (0, g.ZP)(() => {
     k(n)
   }), i.useEffect(() => {
-    o.length > x && k(n), o.length !== x && b(o.length)
-  }, [o.length, x, b, k, n]);
+    o.length > b && k(n), o.length !== b && x(o.length)
+  }, [o.length, b, x, k, n]);
   let L = () => {
     m.Z.createRole(t.id), s(N.ZI.DISPLAY)
   };

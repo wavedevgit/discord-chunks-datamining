@@ -1,6 +1,6 @@
 /** Chunk was on 22988 **/
 n.d(t, {
-  R: () => b,
+  R: () => x,
   Z: () => j
 });
 var r = n(255367);
@@ -37,7 +37,7 @@ function f(e) {
   return e
 }
 
-function x(e, t) {
+function b(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -50,15 +50,15 @@ function x(e, t) {
   }), e
 }
 
-function b(e) {
+function x(e) {
   return g.$X.filter(t => (null == e ? void 0 : e.id) !== m._ && u.oz(t, e))
 }
 
 function j(e) {
   let {
     guild: t
-  } = e, i = (0, s.e7)([c.Z], () => c.Z.getEveryoneRole(t)), u = b(t), m = u.length > 0, j = g.$X.some(e => !d.Z.can(e, t, null, {
-    [i.id]: x(f({}, i), {
+  } = e, i = (0, s.e7)([c.Z], () => c.Z.getEveryoneRole(t)), u = x(t), m = u.length > 0, j = g.$X.some(e => !d.Z.can(e, t, null, {
+    [i.id]: b(f({}, i), {
       permissions: a.Od(i.permissions, e)
     })
   })), v = (0, r.jsxs)(r.Fragment, {
@@ -93,7 +93,7 @@ function j(e) {
   });
   return m ? j ? (0, r.jsx)(o.ua7, {
     text: p.intl.string(p.t["E5v/a2"]),
-    children: e => (0, r.jsx)("div", x(f({
+    children: e => (0, r.jsx)("div", b(f({
       className: l()(h.simpleItemWrapper, h.disabled)
     }, e), {
       children: v

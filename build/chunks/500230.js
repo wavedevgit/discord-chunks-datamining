@@ -21,8 +21,8 @@ let f = function(e) {
     guildId: n,
     badge: l,
     primaryColor: f,
-    secondaryColor: x
-  } = e, [b, j] = i.useState(!1), v = i.useRef(null), _ = i.useMemo(() => m.Ek.every(e => e.primary !== f || e.secondary !== x), [f, x]);
+    secondaryColor: b
+  } = e, [x, j] = i.useState(!1), v = i.useRef(null), _ = i.useMemo(() => m.Ek.every(e => e.primary !== f || e.secondary !== b), [f, b]);
 
   function O(e) {
     let t = {};
@@ -37,7 +37,7 @@ let f = function(e) {
       className: h.pickerGrid,
       children: [m.Ek.map(e => (0, r.jsx)(o.P3F, {
         className: a()(h.pickerItem, {
-          [h.pickerItemSelected]: e.primary === f && e.secondary === x
+          [h.pickerItemSelected]: e.primary === f && e.secondary === b
         }),
         onClick: () => O(e),
         children: (0, r.jsx)(d.v, {
@@ -52,7 +52,7 @@ let f = function(e) {
         showSecondaryColor: m.ER[l] >= 2,
         palette: {
           primary: f,
-          secondary: x
+          secondary: b
         },
         onPrimaryColorChange: e => {
           O({
@@ -64,7 +64,7 @@ let f = function(e) {
             secondary: (0, s.Rf)(e)
           })
         },
-        shouldShow: b,
+        shouldShow: x,
         onRequestClose: () => j(!1),
         children: e => {
           var t, n;

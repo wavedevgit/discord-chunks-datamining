@@ -1,6 +1,6 @@
 /** Chunk was on 22988 **/
 n.d(t, {
-  Z: () => b
+  Z: () => x
 }), n(953529);
 var r = n(255367),
   i = n(73800),
@@ -35,7 +35,7 @@ function f(e) {
   return e
 }
 
-function x(e, t) {
+function b(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -47,11 +47,11 @@ function x(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let b = function(e) {
+let x = function(e) {
   let {
     guildId: t,
     resourceChannel: l,
-    index: b,
+    index: x,
     onDragComplete: j,
     onDragStart: v,
     onDragReset: _
@@ -74,7 +74,7 @@ let b = function(e) {
     } = (0, o.Z)({
       type: "RESOURCE_CHANNEL",
       optionId: l.channelId,
-      index: b,
+      index: x,
       onDragStart: v,
       onDragComplete: j,
       onDragReset: _
@@ -92,7 +92,7 @@ let b = function(e) {
       let {
         default: e
       } = await n.e("84725").then(n.bind(n, 462499));
-      return n => (0, r.jsx)(e, x(f({}, n), {
+      return n => (0, r.jsx)(e, b(f({}, n), {
         guildId: t,
         resourceChannel: l,
         onSave: Z,
@@ -104,8 +104,8 @@ let b = function(e) {
     className: h.resourceChannelContainer,
     children: [(0, r.jsxs)("div", {
       className: a()(h.resourceChannel, {
-        [h.dropIndicatorBefore]: null != P && b < P,
-        [h.dropIndicatorAfter]: null != P && b > P,
+        [h.dropIndicatorBefore]: null != P && x < P,
+        [h.dropIndicatorAfter]: null != P && x > P,
         [h.resourceChannelError]: null != I
       }),
       ref: e => {
@@ -146,7 +146,7 @@ let b = function(e) {
         })]
       }), (0, r.jsx)(s.ua7, {
         text: p.intl.string(p.t.bt75u7),
-        children: e => (0, r.jsx)(s.hU, x(f({}, e), {
+        children: e => (0, r.jsx)(s.hU, b(f({}, e), {
           icon: s.vdY,
           size: "sm",
           variant: "primary",

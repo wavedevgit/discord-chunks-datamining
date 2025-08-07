@@ -16,8 +16,8 @@ var r = n(255367),
   p = n(726542),
   h = n(981631),
   f = n(856651),
-  x = n(388032),
-  b = n(847966);
+  b = n(388032),
+  x = n(847966);
 
 function j(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -63,31 +63,31 @@ function _(e) {
   if ((null == d ? void 0 : d.application) != null) o()(null != d.application.bot, "bot is null"), i = (0, r.jsx)(m.Z, {
     size: u.EFr.SIZE_24,
     user: d.application.bot,
-    className: b.verifiedIcon
+    className: x.verifiedIcon
   });
   else if (null != s) {
     let e = (0, c.ap)(l) ? s.icon.lightSVG : s.icon.darkSVG;
     i = (0, r.jsx)("img", {
-      className: b.verifiedIcon,
+      className: x.verifiedIcon,
       src: e,
-      alt: x.intl.formatToPlainString(x.t.rtm15O, {
+      alt: b.intl.formatToPlainString(b.t.rtm15O, {
         name: s.name
       })
     })
   }
   return (0, r.jsxs)("div", {
-    className: a()(b.verifiedRow, (null == s ? void 0 : s.hasMetadata) === !0 || (null == d ? void 0 : d.role_connections_metadata) != null && (null == d ? void 0 : d.role_connections_metadata.length) > 0 ? b.verifiedRowWithMetadata : null),
+    className: a()(x.verifiedRow, (null == s ? void 0 : s.hasMetadata) === !0 || (null == d ? void 0 : d.role_connections_metadata) != null && (null == d ? void 0 : d.role_connections_metadata.length) > 0 ? x.verifiedRowWithMetadata : null),
     children: [i, (0, r.jsx)(u.Text, {
       variant: "text-md/medium",
-      className: b.verifiedText,
-      children: x.intl.format(x.t.Nj0a3t, {
+      className: x.verifiedText,
+      children: b.intl.format(b.t.Nj0a3t, {
         platformName: null != (n = null == s ? void 0 : s.name) ? n : null == d || null == (t = d.application) ? void 0 : t.name
       })
     }), (0, r.jsx)(u.ua7, {
-      text: x.intl.string(x.t.N86XcH),
+      text: b.intl.string(b.t.N86XcH),
       children: e => (0, r.jsx)("div", v(j({}, e), {
         children: (0, r.jsx)(u.hU, {
-          "aria-label": x.intl.string(x.t.N86XcH),
+          "aria-label": b.intl.string(b.t.N86XcH),
           variant: "icon-only",
           onClick: g,
           disabled: p,
@@ -111,7 +111,7 @@ function O(e) {
     locked: d
   } = e, m = i.useId();
   return (0, r.jsxs)("tr", {
-    className: b.ruleContainer,
+    className: x.ruleContainer,
     children: [(0, r.jsx)("th", {
       scope: "row",
       children: (0, r.jsx)(u.nn4, {
@@ -121,13 +121,13 @@ function O(e) {
         })
       })
     }), (0, r.jsxs)("td", {
-      className: b.ruleContainerLabel,
+      className: x.ruleContainerLabel,
       children: [(0, r.jsx)(u.Text, {
         variant: "text-md/bold",
         "aria-hidden": "true",
         children: t
       }), (0, r.jsx)("div", {
-        className: b.numericalRuleSubItemContainer,
+        className: x.numericalRuleSubItemContainer,
         children: (0, r.jsx)(u.Text, {
           variant: "text-md/normal",
           children: n
@@ -171,15 +171,15 @@ function y(e) {
     let n = null != t ? t : f.iO.GREATER_THAN,
       r = Math.round(Number(null != e ? e : 0));
     return n === f.iO.GREATER_THAN ? r = Math.max(1, r + 1) : n === f.iO.LESS_THAN && (r = Math.max(0, r - 1)), [r.toString(), n]
-  }(null == c || null == (t = c.configuration) ? void 0 : t.value, j), [C, N] = i.useState(O), I = null != s ? x.intl.format(s, {
+  }(null == c || null == (t = c.configuration) ? void 0 : t.value, j), [C, N] = i.useState(O), I = null != s ? b.intl.format(s, {
     count: C,
     metadataHook: () => C
   }) : (0, r.jsx)("span", {
-    className: b.fieldText,
+    className: x.fieldText,
     children: a
   }), E = i.useId();
   return (0, r.jsxs)("tr", {
-    className: b.ruleContainer,
+    className: x.ruleContainer,
     children: [(0, r.jsx)("th", {
       scope: "row",
       children: (0, r.jsx)(u.nn4, {
@@ -189,13 +189,13 @@ function y(e) {
         })
       })
     }), (0, r.jsxs)("td", {
-      className: b.ruleContainerLabel,
+      className: x.ruleContainerLabel,
       children: [(0, r.jsx)(u.Text, {
         variant: "text-md/bold",
         "aria-hidden": "true",
         children: l
       }), (0, r.jsx)("div", {
-        className: b.numericalRuleSubItemContainer,
+        className: x.numericalRuleSubItemContainer,
         children: (0, r.jsx)(u.Text, {
           variant: "text-md/normal",
           children: I
@@ -203,9 +203,9 @@ function y(e) {
       })]
     }), (0, r.jsx)("td", {
       children: (0, r.jsx)(d.Is, {
-        "aria-label": x.intl.string(x.t["FTmi9/"]),
+        "aria-label": b.intl.string(b.t["FTmi9/"]),
         type: "number",
-        className: b.numericalRuleInput,
+        className: x.numericalRuleInput,
         value: C,
         onChange: e => {
           if (N(e), null == c) return;
@@ -253,7 +253,7 @@ function C(e) {
     children: t
   } = e;
   return (0, r.jsxs)("table", {
-    className: b.rulesTable,
+    className: x.rulesTable,
     children: [(0, r.jsx)("thead", {
       children: (0, r.jsxs)("tr", {
         children: [(0, r.jsx)("th", {
@@ -261,17 +261,17 @@ function C(e) {
         }), (0, r.jsx)("th", {
           scope: "col",
           children: (0, r.jsx)(u.nn4, {
-            children: x.intl.string(x.t.TwDLVl)
+            children: b.intl.string(b.t.TwDLVl)
           })
         }), (0, r.jsx)("th", {
           scope: "col",
           children: (0, r.jsx)(u.nn4, {
-            children: x.intl.string(x.t.qDWJwc)
+            children: b.intl.string(b.t.qDWJwc)
           })
         }), (0, r.jsx)("th", {
           scope: "col",
           children: (0, r.jsx)(u.nn4, {
-            children: x.intl.string(x.t["5IF76e"])
+            children: b.intl.string(b.t["5IF76e"])
           })
         })]
       })
@@ -289,36 +289,36 @@ function N(e) {
   } = e, l = p.Z.get(h.ABu.STEAM);
   return (0, r.jsxs)(C, {
     children: [(0, r.jsx)(y, {
-      titleText: x.intl.string(x.t.zdXqGx),
-      fieldTextHook: x.t.QPrntb,
+      titleText: b.intl.string(b.t.zdXqGx),
+      fieldTextHook: b.t.QPrntb,
       metadataField: f.PC.CREATED_AT,
       existingPendingConfiguration: t.get(f.PC.CREATED_AT),
       platform: l,
       onConfigurationChange: n,
       locked: i
     }), (0, r.jsx)(y, {
-      titleText: x.intl.string(x.t.gLs17O),
-      fieldTextHook: x.t.BWDpbm,
+      titleText: b.intl.string(b.t.gLs17O),
+      fieldTextHook: b.t.BWDpbm,
       metadataField: f.PC.STEAM_GAME_COUNT,
       existingPendingConfiguration: t.get(f.PC.STEAM_GAME_COUNT),
       platform: l,
       onConfigurationChange: n,
       locked: i
     }), (0, r.jsx)(y, {
-      titleText: x.intl.formatToPlainString(x.t.j1Gf2t, {
-        gameName: x.intl.string(x.t.HKUEZm)
+      titleText: b.intl.formatToPlainString(b.t.j1Gf2t, {
+        gameName: b.intl.string(b.t.HKUEZm)
       }),
-      fieldTextHook: x.t["OGUX7+"],
+      fieldTextHook: b.t["OGUX7+"],
       metadataField: f.PC.STEAM_ITEM_COUNT_DOTA2,
       existingPendingConfiguration: t.get(f.PC.STEAM_ITEM_COUNT_DOTA2),
       platform: l,
       onConfigurationChange: n,
       locked: i
     }), (0, r.jsx)(y, {
-      titleText: x.intl.formatToPlainString(x.t.j1Gf2t, {
-        gameName: x.intl.string(x.t.C8p1Sk)
+      titleText: b.intl.formatToPlainString(b.t.j1Gf2t, {
+        gameName: b.intl.string(b.t.C8p1Sk)
       }),
-      fieldTextHook: x.t.Eq7h8P,
+      fieldTextHook: b.t.Eq7h8P,
       metadataField: f.PC.STEAM_ITEM_COUNT_TF2,
       existingPendingConfiguration: t.get(f.PC.STEAM_ITEM_COUNT_TF2),
       platform: l,
@@ -336,32 +336,32 @@ function I(e) {
   } = e, l = p.Z.get(h.ABu.TWITTER);
   return (0, r.jsxs)(C, {
     children: [(0, r.jsx)(y, {
-      titleText: x.intl.string(x.t.zdXqGx),
-      fieldTextHook: x.t.QPrntb,
+      titleText: b.intl.string(b.t.zdXqGx),
+      fieldTextHook: b.t.QPrntb,
       metadataField: f.PC.CREATED_AT,
       existingPendingConfiguration: t.get(f.PC.CREATED_AT),
       platform: l,
       onConfigurationChange: n,
       locked: i
     }), (0, r.jsx)(y, {
-      titleText: x.intl.string(x.t.wbvDMz),
-      fieldTextHook: x.t.Zwey2d,
+      titleText: b.intl.string(b.t.wbvDMz),
+      fieldTextHook: b.t.Zwey2d,
       metadataField: f.PC.TWITTER_FOLLOWERS_COUNT,
       existingPendingConfiguration: t.get(f.PC.TWITTER_FOLLOWERS_COUNT),
       platform: l,
       onConfigurationChange: n,
       locked: i
     }), (0, r.jsx)(y, {
-      titleText: x.intl.string(x.t["1B3DVl"]),
-      fieldTextHook: x.t["lrmh/f"],
+      titleText: b.intl.string(b.t["1B3DVl"]),
+      fieldTextHook: b.t["lrmh/f"],
       metadataField: f.PC.TWITTER_STATUSES_COUNT,
       existingPendingConfiguration: t.get(f.PC.TWITTER_STATUSES_COUNT),
       platform: l,
       onConfigurationChange: n,
       locked: i
     }), (0, r.jsx)(O, {
-      titleText: x.intl.string(x.t.yz2CIC),
-      fieldText: x.intl.string(x.t.E2iT8P),
+      titleText: b.intl.string(b.t.yz2CIC),
+      fieldText: b.intl.string(b.t.E2iT8P),
       metadataField: f.PC.TWITTER_VERIFIED,
       existingPendingConfiguration: t.get(f.PC.TWITTER_VERIFIED),
       platform: l,
@@ -379,32 +379,32 @@ function E(e) {
   } = e, l = p.Z.get(h.ABu.REDDIT);
   return (0, r.jsxs)(C, {
     children: [(0, r.jsx)(y, {
-      titleText: x.intl.string(x.t.zdXqGx),
-      fieldTextHook: x.t.QPrntb,
+      titleText: b.intl.string(b.t.zdXqGx),
+      fieldTextHook: b.t.QPrntb,
       metadataField: f.PC.CREATED_AT,
       existingPendingConfiguration: t.get(f.PC.CREATED_AT),
       platform: l,
       onConfigurationChange: n,
       locked: i
     }), (0, r.jsx)(y, {
-      titleText: x.intl.string(x.t["3Xsroq"]),
-      fieldTextHook: x.t.A4zKur,
+      titleText: b.intl.string(b.t["3Xsroq"]),
+      fieldTextHook: b.t.A4zKur,
       metadataField: f.PC.REDDIT_TOTAL_KARMA,
       existingPendingConfiguration: t.get(f.PC.REDDIT_TOTAL_KARMA),
       platform: l,
       onConfigurationChange: n,
       locked: i
     }), (0, r.jsx)(O, {
-      titleText: x.intl.string(x.t.oWM95O),
-      fieldText: x.intl.string(x.t["0cKdkZ"]),
+      titleText: b.intl.string(b.t.oWM95O),
+      fieldText: b.intl.string(b.t["0cKdkZ"]),
       metadataField: f.PC.REDDIT_MOD,
       existingPendingConfiguration: t.get(f.PC.REDDIT_MOD),
       platform: l,
       onConfigurationChange: n,
       locked: i
     }), (0, r.jsx)(O, {
-      titleText: x.intl.string(x.t["06rDHR"]),
-      fieldText: x.intl.string(x.t["kCAN5+"]),
+      titleText: b.intl.string(b.t["06rDHR"]),
+      fieldText: b.intl.string(b.t["kCAN5+"]),
       metadataField: f.PC.REDDIT_GOLD,
       existingPendingConfiguration: t.get(f.PC.REDDIT_GOLD),
       platform: l,
@@ -422,16 +422,16 @@ function S(e) {
   } = e, l = p.Z.get(h.ABu.PAYPAL);
   return (0, r.jsxs)(C, {
     children: [(0, r.jsx)(y, {
-      titleText: x.intl.string(x.t.zdXqGx),
-      fieldTextHook: x.t.QPrntb,
+      titleText: b.intl.string(b.t.zdXqGx),
+      fieldTextHook: b.t.QPrntb,
       metadataField: f.PC.CREATED_AT,
       existingPendingConfiguration: t.get(f.PC.CREATED_AT),
       platform: l,
       onConfigurationChange: n,
       locked: i
     }), (0, r.jsx)(O, {
-      titleText: x.intl.string(x.t.IhXLy8),
-      fieldText: x.intl.string(x.t["0JyE8P"]),
+      titleText: b.intl.string(b.t.IhXLy8),
+      fieldText: b.intl.string(b.t["0JyE8P"]),
       metadataField: f.PC.PAYPAL_VERIFIED,
       existingPendingConfiguration: t.get(f.PC.PAYPAL_VERIFIED),
       platform: l,
@@ -449,32 +449,32 @@ function T(e) {
   } = e, l = p.Z.get(h.ABu.EBAY);
   return (0, r.jsxs)(C, {
     children: [(0, r.jsx)(y, {
-      titleText: x.intl.string(x.t.zdXqGx),
-      fieldTextHook: x.t.QPrntb,
+      titleText: b.intl.string(b.t.zdXqGx),
+      fieldTextHook: b.t.QPrntb,
       metadataField: f.PC.CREATED_AT,
       existingPendingConfiguration: t.get(f.PC.CREATED_AT),
       platform: l,
       onConfigurationChange: n,
       locked: i
     }), (0, r.jsx)(y, {
-      titleText: x.intl.string(x.t.AuMxf3),
-      fieldTextHook: x.t.IpQ4Ex,
+      titleText: b.intl.string(b.t.AuMxf3),
+      fieldTextHook: b.t.IpQ4Ex,
       metadataField: f.PC.EBAY_POSITIVE_FEEDBACK_PERCENTAGE,
       existingPendingConfiguration: t.get(f.PC.EBAY_POSITIVE_FEEDBACK_PERCENTAGE),
       platform: l,
       onConfigurationChange: n,
       locked: i
     }), (0, r.jsx)(y, {
-      titleText: x.intl.string(x.t.WzvoSk),
-      fieldTextHook: x.t.RH3VAw,
+      titleText: b.intl.string(b.t.WzvoSk),
+      fieldTextHook: b.t.RH3VAw,
       metadataField: f.PC.EBAY_UNIQUE_POSITIVE_FEEDBACK_COUNT,
       existingPendingConfiguration: t.get(f.PC.EBAY_UNIQUE_POSITIVE_FEEDBACK_COUNT),
       platform: l,
       onConfigurationChange: n,
       locked: i
     }), (0, r.jsx)(y, {
-      titleText: x.intl.string(x.t.VuSFzs),
-      fieldTextHook: x.t.sn3m7u,
+      titleText: b.intl.string(b.t.VuSFzs),
+      fieldTextHook: b.t.sn3m7u,
       metadataField: f.PC.EBAY_UNIQUE_NEGATIVE_FEEDBACK_COUNT,
       existingPendingConfiguration: t.get(f.PC.EBAY_UNIQUE_NEGATIVE_FEEDBACK_COUNT),
       platform: l,
@@ -482,8 +482,8 @@ function T(e) {
       locked: i,
       operator: f.iO.LESS_THAN
     }), (0, r.jsx)(O, {
-      titleText: x.intl.string(x.t.TEEYwc),
-      fieldText: x.intl.string(x.t["39wASE"]),
+      titleText: b.intl.string(b.t.TEEYwc),
+      fieldText: b.intl.string(b.t["39wASE"]),
       metadataField: f.PC.EBAY_TOP_RATED_SELLER,
       existingPendingConfiguration: t.get(f.PC.EBAY_TOP_RATED_SELLER),
       platform: l,
@@ -501,32 +501,32 @@ function P(e) {
   } = e, l = p.Z.get(h.ABu.TIKTOK);
   return (0, r.jsxs)(C, {
     children: [(0, r.jsx)(O, {
-      titleText: x.intl.string(x.t.QHHwRU),
-      fieldText: x.intl.string(x.t.E2iT8P),
+      titleText: b.intl.string(b.t.QHHwRU),
+      fieldText: b.intl.string(b.t.E2iT8P),
       metadataField: f.PC.TIKTOK_VERIFIED,
       existingPendingConfiguration: t.get(f.PC.TIKTOK_VERIFIED),
       platform: l,
       onConfigurationChange: n,
       locked: i
     }), (0, r.jsx)(y, {
-      titleText: x.intl.string(x.t.WUSIHh),
-      fieldTextHook: x.t.Zwey2d,
+      titleText: b.intl.string(b.t.WUSIHh),
+      fieldTextHook: b.t.Zwey2d,
       metadataField: f.PC.TIKTOK_FOLLOWER_COUNT,
       existingPendingConfiguration: t.get(f.PC.TIKTOK_FOLLOWER_COUNT),
       platform: l,
       onConfigurationChange: n,
       locked: i
     }), (0, r.jsx)(y, {
-      titleText: x.intl.string(x.t.w1IVQk),
-      fieldTextHook: x.t.Ueeex8,
+      titleText: b.intl.string(b.t.w1IVQk),
+      fieldTextHook: b.t.Ueeex8,
       metadataField: f.PC.TIKTOK_FOLLOWING_COUNT,
       existingPendingConfiguration: t.get(f.PC.TIKTOK_FOLLOWING_COUNT),
       platform: l,
       onConfigurationChange: n,
       locked: i
     }), (0, r.jsx)(y, {
-      titleText: x.intl.string(x.t["1cFXJi"]),
-      fieldTextHook: x.t.uq2UuL,
+      titleText: b.intl.string(b.t["1cFXJi"]),
+      fieldTextHook: b.t.uq2UuL,
       metadataField: f.PC.TIKTOK_LIKES_COUNT,
       existingPendingConfiguration: t.get(f.PC.TIKTOK_LIKES_COUNT),
       platform: l,
@@ -655,7 +655,7 @@ function R(e) {
       }))
   }
   return (0, r.jsxs)("div", {
-    className: b.container,
+    className: x.container,
     children: [(0, r.jsx)(_, {
       theme: s,
       platform: d,

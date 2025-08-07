@@ -16,8 +16,8 @@ var r = n(255367),
   p = n(823379),
   h = n(889369),
   f = n(570961),
-  x = n(208665),
-  b = n(976983),
+  b = n(208665),
+  x = n(976983),
   j = n(290511),
   v = n(388032),
   _ = n(434840);
@@ -31,7 +31,7 @@ function y(e) {
     guild: n,
     prompt: l,
     disableAutofocus: u,
-    promptIndex: b,
+    promptIndex: x,
     dragIndex: y,
     includeCount: I,
     singleColumn: E,
@@ -50,12 +50,12 @@ function y(e) {
     onDragStart: T,
     onDragComplete: S,
     onDragReset: P
-  }), k = (0, s.cj)([x.Z], () => {
+  }), k = (0, s.cj)([b.Z], () => {
     var e;
-    return null != (e = x.Z.errors[b]) ? e : O
-  }), [L, M] = i.useState(!1), [G, U] = i.useState(!1), B = null != (t = k.options) ? t : k.optionErrors.filter(p.lm)[0], F = k.config, H = l.options.length >= j.fY, z = (0, m.kl)(n.id, Array.from(w), [l]).length - w.size, W = i.useRef(null), V = i.useRef(b);
+    return null != (e = b.Z.errors[x]) ? e : O
+  }), [L, M] = i.useState(!1), [G, U] = i.useState(!1), B = null != (t = k.options) ? t : k.optionErrors.filter(p.lm)[0], F = k.config, H = l.options.length >= j.fY, z = (0, m.kl)(n.id, Array.from(w), [l]).length - w.size, W = i.useRef(null), V = i.useRef(x);
   return (i.useEffect(() => {
-    V.current = b
+    V.current = x
   }), i.useLayoutEffect(() => {
     setTimeout(() => {
       if (0 === V.current && !u) {
@@ -70,8 +70,8 @@ function y(e) {
       onBlur: () => U(!1),
       onMouseLeave: () => U(!1),
       className: a()(_.container, {
-        [_.dropIndicatorBefore]: null != Z && b < Z,
-        [_.dropIndicatorAfter]: null != Z && b > Z,
+        [_.dropIndicatorBefore]: null != Z && x < Z,
+        [_.dropIndicatorAfter]: null != Z && x > Z,
         [_.containerFocused]: G
       }),
       ref: e => {
@@ -91,7 +91,7 @@ function y(e) {
         variant: "text-xs/semibold",
         color: "text-muted",
         children: v.intl.format(v.t.yjS3zs, {
-          index: b + 1
+          index: x + 1
         })
       }), (0, r.jsx)(c.Text, {
         variant: "text-lg/semibold",
@@ -124,8 +124,8 @@ function y(e) {
       onFocus: () => U(!0),
       onBlur: () => U(!1),
       className: a()(_.container, {
-        [_.dropIndicatorBefore]: null != Z && b < Z,
-        [_.dropIndicatorAfter]: null != Z && b > Z,
+        [_.dropIndicatorBefore]: null != Z && x < Z,
+        [_.dropIndicatorAfter]: null != Z && x > Z,
         [_.containerFocused]: G
       }),
       ref: e => {
@@ -145,7 +145,7 @@ function y(e) {
         variant: "text-xs/semibold",
         color: "text-muted",
         children: v.intl.format(v.t.yjS3zs, {
-          index: b + 1
+          index: x + 1
         })
       }), (0, r.jsx)(o.Is, {
         className: _.title,
@@ -175,7 +175,7 @@ function y(e) {
       }), (0, r.jsx)(N, {
         guild: n,
         prompt: l,
-        promptIndex: b,
+        promptIndex: x,
         errors: k,
         singleColumn: E
       }), null != B ? (0, r.jsx)(c.pdY, {
@@ -289,7 +289,7 @@ function N(e) {
   }));
   return (0, r.jsxs)("div", {
     className: _.options,
-    children: [n.options.map((e, d) => (0, r.jsx)(b.Z, {
+    children: [n.options.map((e, d) => (0, r.jsx)(x.Z, {
       guild: t,
       prompt: n,
       promptIndex: i,
@@ -299,7 +299,7 @@ function N(e) {
       onDragComplete: c,
       onDragReset: o,
       hasError: null != a.optionErrors[d]
-    }, e.id)), n.options.length < j.qm ? (0, r.jsx)(b.B, {
+    }, e.id)), n.options.length < j.qm ? (0, r.jsx)(x.B, {
       guild: t,
       prompt: n,
       promptIndex: i,

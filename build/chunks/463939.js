@@ -14,8 +14,8 @@ var r, i, l = n(255367),
   p = n(462087),
   h = n(685201),
   f = n(766434),
-  x = n(755930),
-  b = n(334820),
+  b = n(755930),
+  x = n(334820),
   j = n(198139),
   v = n(388032),
   _ = n(282427);
@@ -127,7 +127,7 @@ function C(e) {
   }
   return null
 }
-let N = (0, x.i$)({
+let N = (0, b.i$)({
     key: "AMOUNT ",
     cellClassName: _.amountColumn,
     renderHeader() {
@@ -139,16 +139,16 @@ let N = (0, x.i$)({
           className: _.amountDisclaimer
         }, e))
       });
-      return (0, l.jsxs)(x.qN, {
+      return (0, l.jsxs)(b.qN, {
         children: [v.intl.string(v.t.VodAGR), e]
       })
     },
     getAmount: e => e.amount
   }),
-  I = (0, b.rM)([(0, b.Fd)({
+  I = (0, x.rM)([(0, x.Fd)({
     key: "PERIOD",
     cellClassName: _.periodColumn,
-    renderHeader: () => (0, l.jsx)(x.qN, {
+    renderHeader: () => (0, l.jsx)(b.qN, {
       children: v.intl.string(v.t.fThnXV)
     }),
     renderContent: e => (0, l.jsx)(y, {
@@ -163,7 +163,7 @@ let N = (0, x.i$)({
         listingId: e.listingId
       })
     }
-  }), (0, b.Fd)((r = O({}, N), i = i = {
+  }), (0, x.Fd)((r = O({}, N), i = i = {
     renderContent: N.render,
     renderExpandedContent: (e, t) => N.render(e, t)
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
@@ -175,7 +175,7 @@ let N = (0, x.i$)({
     return n
   })(Object(i)).forEach(function(e) {
     Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(i, e))
-  }), r)), (0, x.wy)({
+  }), r)), (0, b.wy)({
     key: "STATUS ",
     cellClassName: _.statusColumn,
     renderHeader() {
@@ -187,11 +187,11 @@ let N = (0, x.i$)({
           className: _.statusDisclaimer
         }, e))
       });
-      return (0, l.jsxs)(x.qN, {
+      return (0, l.jsxs)(b.qN, {
         children: [v.intl.string(v.t.oypxx8), e]
       })
     },
-    renderContent: e => (0, l.jsx)(x.bL, {
+    renderContent: e => (0, l.jsx)(b.bL, {
       className: _.statusCell,
       children: (0, l.jsx)(C, {
         item: e
@@ -208,7 +208,7 @@ function E(e) {
   } = e, {
     cellProps: r,
     data: i
-  } = (0, b.GN)(n, {
+  } = (0, x.GN)(n, {
     generateExpandedRows: e => Object.keys(e.ppgs).map(t => {
       var n;
       return {
@@ -220,7 +220,7 @@ function E(e) {
   }), s = a.useMemo(() => O({
     ListingIdLabel: t
   }, r), [r, t]);
-  return (0, l.jsx)(x.ZP, {
+  return (0, l.jsx)(b.ZP, {
     columns: I,
     data: i,
     cellProps: s

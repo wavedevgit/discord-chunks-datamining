@@ -31,16 +31,16 @@ function f(e) {
     guild: t,
     role: h,
     selectedSection: f,
-    setSelectedSection: x
-  } = e, b = i.useCallback(e => {
-    x(e)
-  }, [x]), j = (0, l.e7)([d.Z], () => {
+    setSelectedSection: b
+  } = e, x = i.useCallback(e => {
+    b(e)
+  }, [b]), j = (0, l.e7)([d.Z], () => {
     var e;
     return null == (e = d.Z.getRoleMemberCount(t.id)) ? void 0 : e[h.id]
   }, [h.id, t.id]), v = (0, c.fI)(h), _ = (0, u.Z)(t.id, h);
   i.useEffect(() => {
-    v && x(m.ZI.PERMISSIONS)
-  }, [v, x]);
+    v && b(m.ZI.PERMISSIONS)
+  }, [v, b]);
   let O = (0, o.e)(t, h);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
@@ -109,7 +109,7 @@ function f(e) {
       selectedItem: f,
       type: "top",
       look: "brand",
-      onItemSelect: b,
+      onItemSelect: x,
       children: [(0, r.jsx)(a.njP.Item, {
         className: p.tabBarItem,
         id: m.ZI.DISPLAY,

@@ -1,6 +1,6 @@
 /** Chunk was on 22988 **/
 n.d(t, {
-  Z: () => x
+  Z: () => b
 }), n(388685), n(539854);
 var r = n(255367),
   i = n(73800),
@@ -22,8 +22,8 @@ let f = e => {
       emoji_name: u,
       onSetReason: p,
       onSelectEmoji: f,
-      onClearPressed: x,
-      reasonMinLength: b,
+      onClearPressed: b,
+      reasonMinLength: x,
       reasonMaxLength: j,
       placeholder: v,
       position: _
@@ -76,7 +76,7 @@ let f = e => {
           inputClassName: h.reason,
           placeholder: v,
           value: n,
-          minLength: b,
+          minLength: x,
           maxLength: j,
           onChange: e => {
             p(e)
@@ -84,7 +84,7 @@ let f = e => {
           defaultDirty: (null == n ? void 0 : n.length) > 0
         }, "text-input-".concat(_, "-").concat(N)), (null != (t = null == n ? void 0 : n.length) ? t : 0) > 0 || null != u ? (0, r.jsx)(a.zx, {
           className: h.clearStatusButton,
-          onClick: x,
+          onClick: b,
           look: a.zx.Looks.BLANK,
           size: a.zx.Sizes.NONE,
           tabIndex: -1,
@@ -98,7 +98,7 @@ let f = e => {
       })]
     })
   },
-  x = e => {
+  b = e => {
     let {
       reasonMinLength: t,
       reasonMaxLength: n,

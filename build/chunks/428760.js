@@ -22,7 +22,7 @@ function u(e) {
   } = e, p = i.useMemo(() => null != g ? g : [], [g]), {
     value: h,
     onChange: f,
-    errorMessage: x
+    errorMessage: b
   } = (0, o.Z)(t, g, n);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
@@ -38,11 +38,11 @@ function u(e) {
         color: "text-muted",
         children: "".concat(p.length, " / ").concat(n)
       })]
-    }), null != x ? (0, r.jsx)(s.Text, {
+    }), null != b ? (0, r.jsx)(s.Text, {
       className: a()(d.paddingTop, d.errorText),
       variant: "text-xs/medium",
       color: "text-danger",
-      children: x
+      children: b
     }) : (0, r.jsx)(s.Text, {
       className: d.paddingTop,
       variant: "text-xs/normal",

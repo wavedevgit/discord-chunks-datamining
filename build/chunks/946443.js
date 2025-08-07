@@ -94,101 +94,107 @@ function P(e) {
     }),
     K = (0, g.Z)("unreads", k);
   if (0 === V.length) {
-    return (0, r.jsxs)("div", {
+    return (0, r.jsx)("div", {
       className: o()(I.container, {
         [I.widerInbox]: W
       }),
-      children: [(0, r.jsx)(v.Z, {
-        tab: d.X.UNREADS,
-        setTab: T,
-        badgeState: M,
-        closePopout: L
-      }), (0, r.jsx)(C.Z, {
-        Icon: h.xx7,
-        header: x.intl.string(x.t["6XMM+P"]),
-        tip: (null == (Z = a().os) ? void 0 : Z.family) === "OS X" ? x.intl.string(x.t.w9uDOT) : x.intl.string(x.t.BiUJCw)
-      })]
+      children: (0, r.jsx)(h.y5t, {
+        component: (0, r.jsx)(v.Z, {
+          tab: d.X.UNREADS,
+          setTab: T,
+          badgeState: M,
+          closePopout: L
+        }),
+        children: (0, r.jsx)(C.Z, {
+          Icon: h.xx7,
+          header: x.intl.string(x.t["6XMM+P"]),
+          tip: (null == (Z = a().os) ? void 0 : Z.family) === "OS X" ? x.intl.string(x.t.w9uDOT) : x.intl.string(x.t.BiUJCw)
+        })
+      })
     })
   }
-  return (0, r.jsxs)("div", {
+  return (0, r.jsx)("div", {
     className: o()(I.container, "group-spacing-".concat(z), {
       [I.widerInbox]: W
     }),
     "aria-label": x.intl.string(x.t.sRUdBw),
-    children: [(0, r.jsx)(v.Z, {
-      tab: d.X.UNREADS,
-      setTab: T,
-      badgeState: M,
-      closePopout: L,
-      children: (0, r.jsx)(y.Z, {
-        type: "top-header",
-        onClick: H
-      })
-    }), (0, r.jsx)(c.bG, {
-      navigator: K,
-      children: (0, r.jsx)(c.SJ, {
-        children: e => {
-          var t, n, {
-              ref: i
-            } = e,
-            l = function(e, t) {
-              if (null == e) return {};
-              var n, r, i = function(e, t) {
+    children: (0, r.jsx)(h.y5t, {
+      component: (0, r.jsx)(v.Z, {
+        tab: d.X.UNREADS,
+        setTab: T,
+        badgeState: M,
+        closePopout: L,
+        children: (0, r.jsx)(y.Z, {
+          type: "top-header",
+          onClick: H
+        })
+      }),
+      children: (0, r.jsx)(c.bG, {
+        navigator: K,
+        children: (0, r.jsx)(c.SJ, {
+          children: e => {
+            var t, n, {
+                ref: i
+              } = e,
+              l = function(e, t) {
                 if (null == e) return {};
-                var n, r, i = {},
-                  l = Object.keys(e);
-                for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+                var n, r, i = function(e, t) {
+                  if (null == e) return {};
+                  var n, r, i = {},
+                    l = Object.keys(e);
+                  for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+                  return i
+                }(e, t);
+                if (Object.getOwnPropertySymbols) {
+                  var l = Object.getOwnPropertySymbols(e);
+                  for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+                }
                 return i
-              }(e, t);
-              if (Object.getOwnPropertySymbols) {
-                var l = Object.getOwnPropertySymbols(e);
-                for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+              }(e, ["ref"]);
+            return (0, r.jsxs)(h.h21, (t = function(e) {
+              for (var t = 1; t < arguments.length; t++) {
+                var n = null != arguments[t] ? arguments[t] : {},
+                  r = Object.keys(n);
+                "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+                  return Object.getOwnPropertyDescriptor(n, e).enumerable
+                }))), r.forEach(function(t) {
+                  var r;
+                  r = n[t], t in e ? Object.defineProperty(e, t, {
+                    value: r,
+                    enumerable: !0,
+                    configurable: !0,
+                    writable: !0
+                  }) : e[t] = r
+                })
               }
-              return i
-            }(e, ["ref"]);
-          return (0, r.jsxs)(h.h21, (t = function(e) {
-            for (var t = 1; t < arguments.length; t++) {
-              var n = null != arguments[t] ? arguments[t] : {},
-                r = Object.keys(n);
-              "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-                return Object.getOwnPropertyDescriptor(n, e).enumerable
-              }))), r.forEach(function(t) {
-                var r;
-                r = n[t], t in e ? Object.defineProperty(e, t, {
-                  value: r,
-                  enumerable: !0,
-                  configurable: !0,
-                  writable: !0
-                }) : e[t] = r
-              })
-            }
-            return e
-          }({
-            ref: e => {
-              var t;
-              k.current = e, i.current = null != (t = null == e ? void 0 : e.getScrollerNode()) ? t : null
-            }
-          }, l), n = n = {
-            onScroll: B === E.jd.Done ? void 0 : F,
-            className: I.scroller,
-            children: [R ? (0, r.jsx)(N, {
-              setSeenTutorial: D
-            }) : null, (0, j.Z)(V, G, A), B === E.jd.Done ? null : (0, r.jsx)(h.$jN, {
-              className: I.spinner
-            })]
-          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
-            var n = Object.keys(e);
-            if (Object.getOwnPropertySymbols) {
-              var r = Object.getOwnPropertySymbols(e);
-              n.push.apply(n, r)
-            }
-            return n
-          })(Object(n)).forEach(function(e) {
-            Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
-          }), t))
-        }
+              return e
+            }({
+              ref: e => {
+                var t;
+                k.current = e, i.current = null != (t = null == e ? void 0 : e.getScrollerNode()) ? t : null
+              }
+            }, l), n = n = {
+              onScroll: B === E.jd.Done ? void 0 : F,
+              className: I.scroller,
+              children: [R ? (0, r.jsx)(N, {
+                setSeenTutorial: D
+              }) : null, (0, j.Z)(V, G, A), B === E.jd.Done ? null : (0, r.jsx)(h.$jN, {
+                className: I.spinner
+              })]
+            }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
+              var n = Object.keys(e);
+              if (Object.getOwnPropertySymbols) {
+                var r = Object.getOwnPropertySymbols(e);
+                n.push.apply(n, r)
+              }
+              return n
+            })(Object(n)).forEach(function(e) {
+              Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
+            }), t))
+          }
+        })
       })
-    })]
+    })
   })
 }
 
@@ -233,18 +239,21 @@ function w(e) {
     badgeState: n,
     closePopout: i
   } = e;
-  return (0, r.jsxs)("div", {
+  return (0, r.jsx)("div", {
     className: I.container,
-    children: [(0, r.jsx)(v.Z, {
-      tab: d.X.UNREADS,
-      setTab: t,
-      badgeState: n,
-      closePopout: i
-    }), (0, r.jsx)(C.Z, {
-      Icon: h.xx7,
-      disableStars: !0,
-      header: x.intl.string(x.t["KG/ynZ"]),
-      tip: x.intl.string(x.t.cvcKzc)
-    })]
+    children: (0, r.jsx)(h.y5t, {
+      component: (0, r.jsx)(v.Z, {
+        tab: d.X.UNREADS,
+        setTab: t,
+        badgeState: n,
+        closePopout: i
+      }),
+      children: (0, r.jsx)(C.Z, {
+        Icon: h.xx7,
+        disableStars: !0,
+        header: x.intl.string(x.t["KG/ynZ"]),
+        tip: x.intl.string(x.t.cvcKzc)
+      })
+    })
   })
 }

@@ -22,7 +22,7 @@ let o = function(e) {
     fieldStyle: h
   } = e, {
     label: f,
-    placeholder: x
+    placeholder: b
   } = t;
   return (0, r.jsx)(l.Z, {
     field: t,
@@ -38,7 +38,7 @@ let o = function(e) {
     fieldStyle: h,
     children: (0, r.jsx)(i.Gi, {
       className: s.fieldBackground,
-      placeholder: null != x ? x : a.intl.string(a.t["Sqn+Wl"]),
+      placeholder: null != b ? b : a.intl.string(a.t["Sqn+Wl"]),
       disabled: !0
     })
   })

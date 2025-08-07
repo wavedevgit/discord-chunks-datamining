@@ -43,86 +43,89 @@ function b(e) {
         tip: g.intl.string(g.t.BxNbS0)
       })
     })]
-  }) : (0, r.jsxs)("div", {
+  }) : (0, r.jsx)("div", {
     className: m.container,
-    children: [(0, r.jsx)(p.Z, {
-      tab: a.X.GAME_INVITES,
-      setTab: t,
-      badgeState: l,
-      closePopout: b,
-      children: (0, r.jsx)(c.M0o, {
-        className: m.__invalid_deleteButton,
-        tooltip: g.intl.string(g.t.Zy3MR0),
-        color: c.YX$.SECONDARY,
-        icon: (0, r.jsx)(c.XHJ, {
-          size: "xs"
-        }),
-        onClick: function() {
-          (0, c.ZDy)(async () => {
-            let {
-              default: e
-            } = await n.e("13111").then(n.bind(n, 93756));
-            return t => {
-              var n, i;
-              return (0, r.jsx)(e, (n = function(e) {
-                for (var t = 1; t < arguments.length; t++) {
-                  var n = null != arguments[t] ? arguments[t] : {},
-                    r = Object.keys(n);
-                  "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-                    return Object.getOwnPropertyDescriptor(n, e).enumerable
-                  }))), r.forEach(function(t) {
-                    var r;
-                    r = n[t], t in e ? Object.defineProperty(e, t, {
-                      value: r,
-                      enumerable: !0,
-                      configurable: !0,
-                      writable: !0
-                    }) : e[t] = r
-                  })
-                }
-                return e
-              }({}, t), i = i = {
-                onDelete: async () => {
-                  await t.onClose()
-                }
-              }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
-                var n = Object.keys(e);
-                if (Object.getOwnPropertySymbols) {
-                  var r = Object.getOwnPropertySymbols(e);
-                  n.push.apply(n, r)
-                }
-                return n
-              })(Object(i)).forEach(function(e) {
-                Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(i, e))
-              }), n))
-            }
-          })
-        }
-      })
-    }), (0, r.jsx)(c.h21, {
-      children: (0, r.jsxs)("div", {
-        className: m.invitesContainer,
-        children: [C.length > 0 && (0, r.jsxs)(r.Fragment, {
-          children: [(0, r.jsx)(O, {
-            title: g.intl.string(g.t.yflAJS)
-          }), (0, r.jsx)(r.Fragment, {
-            children: C.map(e => (0, r.jsx)(f.Z, {
-              invite: e,
-              expired: !1
-            }, e.invite_id))
+    children: (0, r.jsx)(c.y5t, {
+      component: (0, r.jsx)(p.Z, {
+        tab: a.X.GAME_INVITES,
+        setTab: t,
+        badgeState: l,
+        closePopout: b,
+        children: (0, r.jsx)(c.M0o, {
+          className: m.__invalid_deleteButton,
+          tooltip: g.intl.string(g.t.Zy3MR0),
+          color: c.YX$.SECONDARY,
+          icon: (0, r.jsx)(c.XHJ, {
+            size: "xs"
+          }),
+          onClick: function() {
+            (0, c.ZDy)(async () => {
+              let {
+                default: e
+              } = await n.e("13111").then(n.bind(n, 93756));
+              return t => {
+                var n, i;
+                return (0, r.jsx)(e, (n = function(e) {
+                  for (var t = 1; t < arguments.length; t++) {
+                    var n = null != arguments[t] ? arguments[t] : {},
+                      r = Object.keys(n);
+                    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+                      return Object.getOwnPropertyDescriptor(n, e).enumerable
+                    }))), r.forEach(function(t) {
+                      var r;
+                      r = n[t], t in e ? Object.defineProperty(e, t, {
+                        value: r,
+                        enumerable: !0,
+                        configurable: !0,
+                        writable: !0
+                      }) : e[t] = r
+                    })
+                  }
+                  return e
+                }({}, t), i = i = {
+                  onDelete: async () => {
+                    await t.onClose()
+                  }
+                }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
+                  var n = Object.keys(e);
+                  if (Object.getOwnPropertySymbols) {
+                    var r = Object.getOwnPropertySymbols(e);
+                    n.push.apply(n, r)
+                  }
+                  return n
+                })(Object(i)).forEach(function(e) {
+                  Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(i, e))
+                }), n))
+              }
+            })
+          }
+        })
+      }),
+      children: (0, r.jsx)(c.h21, {
+        children: (0, r.jsxs)("div", {
+          className: m.invitesContainer,
+          children: [C.length > 0 && (0, r.jsxs)(r.Fragment, {
+            children: [(0, r.jsx)(O, {
+              title: g.intl.string(g.t.yflAJS)
+            }), (0, r.jsx)(r.Fragment, {
+              children: C.map(e => (0, r.jsx)(f.Z, {
+                invite: e,
+                expired: !1
+              }, e.invite_id))
+            })]
+          }), v.length > 0 && (0, r.jsxs)(r.Fragment, {
+            children: [(0, r.jsx)(O, {
+              title: g.intl.string(g.t.f0Ia4e)
+            }), (0, r.jsx)(r.Fragment, {
+              children: v.map(e => (0, r.jsx)(f.Z, {
+                invite: e,
+                expired: !0
+              }, e.invite_id))
+            })]
           })]
-        }), v.length > 0 && (0, r.jsxs)(r.Fragment, {
-          children: [(0, r.jsx)(O, {
-            title: g.intl.string(g.t.f0Ia4e)
-          }), (0, r.jsx)(r.Fragment, {
-            children: v.map(e => (0, r.jsx)(f.Z, {
-              invite: e,
-              expired: !0
-            }, e.invite_id))
-          })]
-        })]
+        })
       })
-    })]
+    })
   })
 }
 

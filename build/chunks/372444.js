@@ -47,10 +47,10 @@ function p(e) {
     headerColor: h,
     buttonProps: f
   } = e, {
-    analyticsLocations: x
+    analyticsLocations: b
   } = (0, c.ZP)(o.Z.GUILD_BOOSTING_UPSELL_BANNER);
   return (0, r.jsx)(c.Gt, {
-    value: x,
+    value: b,
     children: (0, r.jsxs)("div", {
       className: l()(m.banner, u),
       children: [(0, r.jsx)("img", {

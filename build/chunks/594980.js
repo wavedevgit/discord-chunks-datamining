@@ -22,21 +22,21 @@ function f(e) {
     canManageGuild: n,
     buttonClassName: f
   } = e, {
-    analyticsLocations: x
-  } = (0, a.ZP)(), b = t.features.has(m.oNc.INVITE_SPLASH), j = n && b, v = i.useCallback(e => {
+    analyticsLocations: b
+  } = (0, a.ZP)(), x = t.features.has(m.oNc.INVITE_SPLASH), j = n && x, v = i.useCallback(e => {
     c.Z.updateGuild({
       splash: e
     })
   }, []), _ = i.useCallback(e => {
     e.preventDefault(), e.stopPropagation(), (0, u.E6)({
       guild: t,
-      analyticsLocations: x,
+      analyticsLocations: b,
       analyticsSection: m.jXE.GUILD_INVITE_BACKGROUND,
       analyticsObject: m.qAy.BUTTON_CTA,
       perks: (0, g.o9)()
     })
-  }, [x, t]);
-  return b ? (0, r.jsxs)(l.zx, {
+  }, [b, t]);
+  return x ? (0, r.jsxs)(l.zx, {
     disabled: !j,
     color: l.Tt.BRAND,
     className: f,

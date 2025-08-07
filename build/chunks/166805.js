@@ -16,8 +16,8 @@ var r = n(255367),
   p = n(330010),
   h = n(999382),
   f = n(800223),
-  x = n(24318),
-  b = n(822693),
+  b = n(24318),
+  x = n(822693),
   j = n(388032),
   v = n(832721);
 
@@ -43,7 +43,7 @@ function _(e) {
       embedEnabled: t,
       embedChannelId: n
     }
-  }), I = i.useMemo(() => (0, x.S)(t), [t]), E = i.useMemo(() => (0, x.a)(t), [t]), [S, T] = i.useState(!1), P = null != c && l.Y.VISIBLE.has(c.visibility), w = !O && !P && !C;
+  }), I = i.useMemo(() => (0, b.S)(t), [t]), E = i.useMemo(() => (0, b.a)(t), [t]), [S, T] = i.useState(!1), P = null != c && l.Y.VISIBLE.has(c.visibility), w = !O && !P && !C;
   i.useEffect(() => {
     y || (0, p.R)(t)
   }, [y, t]), i.useEffect(() => {
@@ -69,7 +69,7 @@ function _(e) {
         className: v.divider
       }), (0, r.jsx)(o.vwX, {
         children: j.intl.string(j.t.LUo0Q0)
-      }), (0, r.jsx)(b.m, {
+      }), (0, r.jsx)(x.m, {
         guildId: t,
         widgetEnabled: C,
         widgetChannelId: N,

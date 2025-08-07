@@ -16,8 +16,8 @@ var r = n(255367),
   p = n(390583),
   h = n(641249),
   f = n(574085),
-  x = n(293810),
-  b = n(388032),
+  b = n(293810),
+  x = n(388032),
   j = n(301849);
 
 function v(e) {
@@ -30,16 +30,16 @@ function v(e) {
     isFullServerGating: I
   } = (0, d.Z)(v), E = (0, a.Dt)(), S = (0, s.mY)();
   return (0, r.jsxs)(u.Z, {
-    title: b.intl.string(b.t.YNw2Sk),
-    description: b.intl.string(b.t.zMW5r6),
+    title: x.intl.string(x.t.YNw2Sk),
+    description: x.intl.string(x.t.zMW5r6),
     children: [(0, r.jsxs)(l.hjN, {
-      title: b.intl.string(b.t.DFlDaG),
+      title: x.intl.string(x.t.DFlDaG),
       disabled: S,
       children: [(0, r.jsx)(l.R94, {
         type: l.R94.Types.DESCRIPTION,
         className: j.formDescription,
         disabled: S,
-        children: b.intl.string(b.t.kHalVF)
+        children: x.intl.string(x.t.kHalVF)
       }), (0, r.jsx)(m.Z, {
         channelBenefits: _,
         intangibleBenefits: y,
@@ -61,7 +61,7 @@ function v(e) {
             }));
             return [...t, ...e.filter(e => !n.has(e)).map(e => ({
               ref_id: e,
-              ref_type: x.Qs.CHANNEL
+              ref_type: b.Qs.CHANNEL
             }))]
           })
         },
@@ -70,14 +70,14 @@ function v(e) {
     }), (0, r.jsx)(l.LZC, {
       size: 24
     }), (0, r.jsxs)(l.hjN, {
-      title: b.intl.string(b.t.S2kKzM),
+      title: x.intl.string(x.t.S2kKzM),
       titleId: E,
       disabled: S,
       children: [(0, r.jsx)(l.R94, {
         type: l.R94.Types.DESCRIPTION,
         className: j.formDescription,
         disabled: S,
-        children: b.intl.string(b.t["5a4Axc"])
+        children: x.intl.string(x.t["5a4Axc"])
       }), I && (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(g.Z, {
           "aria-labelledby": E,
@@ -89,13 +89,13 @@ function v(e) {
     }), (0, r.jsx)(l.LZC, {
       size: 24
     }), (0, r.jsxs)(l.hjN, {
-      title: b.intl.string(b.t.RdwKw8),
+      title: x.intl.string(x.t.RdwKw8),
       disabled: S,
       children: [(0, r.jsx)(l.R94, {
         type: l.R94.Types.DESCRIPTION,
         className: j.formDescription,
         disabled: S,
-        children: b.intl.string(b.t.zAww7e)
+        children: x.intl.string(x.t.zAww7e)
       }), (0, r.jsx)(f.Z, {})]
     }), (0, r.jsx)(l.LZC, {
       size: 24

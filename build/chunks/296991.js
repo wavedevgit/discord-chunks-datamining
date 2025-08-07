@@ -16,8 +16,8 @@ var r = n(255367),
   p = n(752305),
   h = n(893718),
   f = n(592125),
-  x = n(984933),
-  b = n(540457),
+  b = n(984933),
+  x = n(540457),
   j = n(681460),
   v = n(592286),
   _ = n(981631),
@@ -66,8 +66,8 @@ function E(e) {
     onKeyDown: o,
     onClear: u,
     onRuleReorder: f,
-    isDropHovered: x,
-    focused: b,
+    isDropHovered: b,
+    focused: x,
     onFocus: j,
     previewEnabled: _,
     isDragEnabled: C,
@@ -109,7 +109,7 @@ function E(e) {
   return (0, r.jsx)("div", {
     ref: E,
     className: a()(y.draggableInputContainer, {
-      [y.dragging]: x
+      [y.dragging]: b
     }),
     "data-dnd-name": A,
     children: (0, r.jsxs)("div", {
@@ -123,7 +123,7 @@ function E(e) {
           richValue: P,
           channel: n,
           placeholder: O.intl.string(O.t["BRkD4+"]),
-          focused: b,
+          focused: x,
           onChange: (e, n, r) => {
             let i = N ? t.value : n;
             i.length > v.fn && (i = i.slice(0, v.fn)), n !== i && (n = i, r = (0, p.JM)(i)), s(n), w({
@@ -169,7 +169,7 @@ function S(e) {
     setRules: n,
     guild: l,
     disabled: a
-  } = e, s = l.rulesChannelId, c = l.features.has(_.oNc.PREVIEW_ENABLED), d = (0, u.e7)([f.Z], () => null != s ? f.Z.getChannel(s) : null), g = (0, u.e7)([x.ZP], () => x.ZP.getDefaultChannel(l.id)), [p, h] = i.useState(null), [I, S] = i.useState(null), T = i.useCallback(e => {
+  } = e, s = l.rulesChannelId, c = l.features.has(_.oNc.PREVIEW_ENABLED), d = (0, u.e7)([f.Z], () => null != s ? f.Z.getChannel(s) : null), g = (0, u.e7)([b.ZP], () => b.ZP.getDefaultChannel(l.id)), [p, h] = i.useState(null), [I, S] = i.useState(null), T = i.useCallback(e => {
     if (!a && t.length !== v.X2)
       if (null != e && "" === t[t.length - 1].value) {
         let r = [...t];
@@ -246,7 +246,7 @@ function S(e) {
         isDragEnabled: !a && t.length > 1,
         disabled: a
       }, e.id))
-    }), !D && (0, r.jsx)(b.A, {
+    }), !D && (0, r.jsx)(x.A, {
       text: O.intl.string(O.t.Cq5Jub),
       onClick: P,
       disabled: a

@@ -16,8 +16,8 @@ var r = n(255367),
   p = n(481060),
   h = n(852860),
   f = n(393238),
-  x = n(211266),
-  b = n(313201),
+  b = n(211266),
+  x = n(313201),
   j = n(345861),
   v = n(208567),
   _ = n(73346),
@@ -88,7 +88,7 @@ function k(e) {
   } = e, {
     ref: o,
     width: c
-  } = (0, f.ZP)(), d = (0, x.Z)(A), u = i.useMemo(() => d.map(e => Z(R({}, e), {
+  } = (0, f.ZP)(), d = (0, b.Z)(A), u = i.useMemo(() => d.map(e => Z(R({}, e), {
     icon: function() {
       let {
         icon: t
@@ -136,7 +136,7 @@ function L(e) {
   } = (0, I.Z)(n.id), s = (0, y.YB)(n.id), c = i.useCallback(() => {
     var e;
     return (null == s || null == (e = s.cover_image_asset) ? void 0 : e.application_id) == null ? null : (0, _._W)(s.cover_image_asset.application_id, s.cover_image_asset, D)
-  }, [s]), [m, f] = i.useState(a), [x, O] = i.useState(null != (t = null == s ? void 0 : s.description) ? t : ""), [A, L] = i.useState(c), [M, G] = i.useState(null == s ? void 0 : s.store_page_guild_products_default_sort), [U, B] = i.useState(null == s ? void 0 : s.server_shop_tab_order), {
+  }, [s]), [m, f] = i.useState(a), [b, O] = i.useState(null != (t = null == s ? void 0 : s.description) ? t : ""), [A, L] = i.useState(c), [M, G] = i.useState(null == s ? void 0 : s.store_page_guild_products_default_sort), [U, B] = i.useState(null == s ? void 0 : s.server_shop_tab_order), {
     loading: F,
     error: H,
     updateSubscriptionsSettings: z
@@ -144,16 +144,16 @@ function L(e) {
     imageCTA: W,
     imageAriaLabel: V,
     setFilename: Y
-  } = (0, N.Z)(null == s ? void 0 : s.cover_image_asset), K = (0, b.Dt)(), q = (0, b.Dt)(), X = (0, b.Dt)();
+  } = (0, N.Z)(null == s ? void 0 : s.cover_image_asset), K = (0, x.Dt)(), q = (0, x.Dt)(), X = (0, x.Dt)();
 
   function Q(e, t) {
     o()(null != e, "Null value not allowed"), null != t && Y(t.name), L(e)
   }
   let J = i.useMemo(() => {
       var e;
-      return null != x && x !== (null != (e = null == s ? void 0 : s.description) ? e : "") || (null == A ? void 0 : A.startsWith("data:")) === !0 || m !== a || (null == s ? void 0 : s.store_page_guild_products_default_sort) !== M || (null == s ? void 0 : s.server_shop_tab_order) !== U
-    }, [A, a, x, s, m, M, U]),
-    $ = null != x && "" !== x && null != A;
+      return null != b && b !== (null != (e = null == s ? void 0 : s.description) ? e : "") || (null == A ? void 0 : A.startsWith("data:")) === !0 || m !== a || (null == s ? void 0 : s.store_page_guild_products_default_sort) !== M || (null == s ? void 0 : s.server_shop_tab_order) !== U
+    }, [A, a, b, s, m, M, U]),
+    $ = null != b && "" !== b && null != A;
   i.useEffect(() => {
     var e;
     (null == s || null == (e = s.cover_image_asset) ? void 0 : e.application_id) != null && L((0, _._W)(s.cover_image_asset.application_id, s.cover_image_asset, D))
@@ -214,7 +214,7 @@ function L(e) {
       children: (0, r.jsx)(g.iS, {
         placeholder: l ? P.intl.string(P.t.SD6LRU) : P.intl.string(P.t["aVhW/f"]),
         maxLength: 1500,
-        value: x,
+        value: b,
         rows: 2,
         autosize: !0,
         onChange: O,
@@ -306,7 +306,7 @@ function L(e) {
           onSave: () => {
             o()(null != s, "Settings must be defined");
             let e = {};
-            x !== s.description && (e.description = x), null != A && A.startsWith("data:") && (e.cover_image = A), m !== a && (e.full_server_gate = m === S.e3.ALL_CHANNELS), M !== s.store_page_guild_products_default_sort && (e.store_page_guild_products_default_sort = M), U !== s.server_shop_tab_order && (e.server_shop_tab_order = U), d().isEmpty(e) || z(n.id, e)
+            b !== s.description && (e.description = b), null != A && A.startsWith("data:") && (e.cover_image = A), m !== a && (e.full_server_gate = m === S.e3.ALL_CHANNELS), M !== s.store_page_guild_products_default_sort && (e.store_page_guild_products_default_sort = M), U !== s.server_shop_tab_order && (e.server_shop_tab_order = U), d().isEmpty(e) || z(n.id, e)
           },
           saveButtonTooltip: $ ? void 0 : P.intl.string(P.t["6HRvio"])
         })

@@ -20,7 +20,7 @@ let h = e => {
     isDisabled: l,
     sticker: h,
     canManageSticker: f
-  } = e, [x, b] = i.useState(!1), [j, v] = (0, c.Z)(null, 4e3), _ = () => {
+  } = e, [b, x] = i.useState(!1), [j, v] = (0, c.Z)(null, 4e3), _ = () => {
     (0, s.ZDy)(async () => {
       let {
         default: e
@@ -48,11 +48,11 @@ let h = e => {
       }, t))
     })
   }, O = async () => {
-    v(null), b(!0);
+    v(null), x(!0);
     try {
       await (0, u.Um)(h)
     } catch (e) {
-      v(e.body.message), b(!1)
+      v(e.body.message), x(!1)
     }
   }, y = d.ZP.useUserTag(h.user);
   return (0, r.jsx)(s.ua7, {
@@ -65,7 +65,7 @@ let h = e => {
       }),
       children: [(0, r.jsxs)("div", {
         className: a()(p.content, {
-          [p.contentRemoving]: x
+          [p.contentRemoving]: b
         }),
         children: [(0, r.jsx)(m.Z, {
           className: p.sticker,
@@ -111,7 +111,7 @@ let h = e => {
             })
           })]
         }) : null]
-      }), x && (0, r.jsx)(s.$jN, {
+      }), b && (0, r.jsx)(s.$jN, {
         className: p.spinner
       })]
     })

@@ -23,15 +23,15 @@ async function h(e, t) {
 function f(e) {
   let {
     guild: t
-  } = e, n = (0, l.e7)([c.Z], () => null != t && c.Z.can(u.Plq.MANAGE_GUILD, t), [t]), d = t.features.has(u.oNc.REPORT_TO_MOD_PILOT), [f, x] = i.useState((0, o.Z)(t) && d), b = i.useCallback(async e => {
-    x(e), await h(t, e)
+  } = e, n = (0, l.e7)([c.Z], () => null != t && c.Z.can(u.Plq.MANAGE_GUILD, t), [t]), d = t.features.has(u.oNc.REPORT_TO_MOD_PILOT), [f, b] = i.useState((0, o.Z)(t) && d), x = i.useCallback(async e => {
+    b(e), await h(t, e)
   }, [t]);
   return d && n ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       className: p.setupContainer,
       children: (0, r.jsx)(a.j7V, {
         value: f,
-        onChange: b,
+        onChange: x,
         className: p.switchItem,
         disabled: !n,
         hideBorder: !0,

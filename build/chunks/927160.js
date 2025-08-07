@@ -1,17 +1,17 @@
 /** Chunk was on 59256 **/
 n.d(t, {
-  Z: () => s
+  Z: () => a
 }), n(704826), n(35282);
 var r = n(255367),
   o = n(263145),
   l = n(203377);
 
-function s(e) {
+function a(e) {
   let {
     value: t,
     onChange: n,
-    error: s,
-    disabled: a,
+    error: a,
+    disabled: s,
     className: i,
     autoFocus: c = !1
   } = e;
@@ -22,8 +22,8 @@ function s(e) {
       n(e.replace(/ /g, "-"))
     },
     maxLength: 25,
-    error: s,
-    disabled: a,
+    error: a,
+    disabled: s,
     className: i,
     autoFocus: c
   })

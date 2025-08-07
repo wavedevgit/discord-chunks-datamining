@@ -16,8 +16,8 @@ var r = n(255367),
   p = n(699553),
   h = n(434404),
   f = n(999382),
-  x = n(654351),
-  b = n(658666),
+  b = n(654351),
+  x = n(658666),
   j = n(384632),
   v = n(386885),
   _ = n(981631),
@@ -61,7 +61,7 @@ function I(e) {
   let {
     pendingState: l,
     dirtyState: f,
-    originalGuild: b,
+    originalGuild: x,
     settingsGuild: I,
     settingsMetadata: E,
     settingsProfile: S
@@ -142,7 +142,7 @@ function I(e) {
       } = l, r = n.map(e => e.value.trim()).filter(e => "" !== e);
       L(async () => {
         if (f.verificationDirty && await U(t, r, e), f.guildDirty) {
-          (0, x.UA)(I, b);
+          (0, b.UA)(I, x);
           let e = new Set(I.features);
           e.add(_.oNc.DISCOVERABLE), e.delete(_.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL), await M({
             features: e,
@@ -160,7 +160,7 @@ function I(e) {
         }
       })
     }
-  }, [l, L, I, f, M, U, S, G, b, E]), F = i.useCallback(() => {
+  }, [l, L, I, f, M, U, S, G, x, E]), F = i.useCallback(() => {
     var e;
     let t = e => {
         if (l.joinType === j.A.DISCOVERABLE && l.settingsView === v.U.ELIGIBLE_DISABLED) return void(0, a.ZDy)(async () => {
@@ -212,9 +212,9 @@ function E() {
   let {
     pendingState: e,
     dirtyState: t
-  } = (0, l.cj)([b.Z], () => ({
-    pendingState: b.Z.pendingState,
-    dirtyState: b.Z.dirtyState
+  } = (0, l.cj)([x.Z], () => ({
+    pendingState: x.Z.pendingState,
+    dirtyState: x.Z.dirtyState
   })), {
     settingsGuild: n,
     settingsMetadata: i,

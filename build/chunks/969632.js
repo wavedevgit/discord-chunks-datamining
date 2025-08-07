@@ -38,11 +38,11 @@ let m = {
   h = !1,
   f = {};
 
-function x() {
+function b() {
   g = null, p = Object.assign({}, m), h = !1, g = c.Z.getGuildId(), p = l().cloneDeep(Object.assign({}, o.Z.getSettings(g)))
 }
 
-function b(e, t) {
+function x(e, t) {
   if (null == p.newMemberActions) return !1;
   let n = p.newMemberActions.findIndex(t => t.channelId === e);
   if (n < 0) return !1;
@@ -96,9 +96,9 @@ class _ extends(r = a.ZP.PersistedStore) {
 }
 d(_, "displayName", "GuildSettingsOnboardingHomeSettingsStore"), d(_, "persistKey", "GuildSettingsOnboardingHomeSettingsStore");
 let O = new _(s.Z, {
-  GUILD_SETTINGS_INIT: x,
-  GUILD_SETTINGS_SET_SECTION: x,
-  GUILD_SETTINGS_ONBOARDING_HOME_SETTINGS_RESET: x,
+  GUILD_SETTINGS_INIT: b,
+  GUILD_SETTINGS_SET_SECTION: b,
+  GUILD_SETTINGS_ONBOARDING_HOME_SETTINGS_RESET: b,
   GUILD_HOME_SETTINGS_FETCH_SUCCESS: function() {
     p = l().cloneDeep(Object.assign({}, o.Z.getSettings(g)))
   },
@@ -111,7 +111,7 @@ let O = new _(s.Z, {
     let {
       action: t
     } = e;
-    return b(t.channelId, t)
+    return x(t.channelId, t)
   },
   GUILD_RESOURCE_CHANNEL_UPDATE_SUCCESS: function(e) {
     let {
@@ -137,7 +137,7 @@ let O = new _(s.Z, {
       channelId: t,
       action: n
     } = e;
-    return b(t, n)
+    return x(t, n)
   },
   GUILD_SETTINGS_ONBOARDING_ADD_NEW_MEMBER_ACTION: function(e) {
     var t;

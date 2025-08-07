@@ -16,8 +16,8 @@ var r = n(255367),
   p = n(577275),
   h = n(601964),
   f = n(594174),
-  x = n(451478),
-  b = n(626135),
+  b = n(451478),
+  x = n(626135),
   j = n(584825),
   v = n(723047),
   _ = n(416867),
@@ -61,7 +61,7 @@ function w(e) {
   } = (0, j.JH)(), h = (0, v.mY)(), f = i.useMemo(() => n.map(e => ({
     label: e.name,
     value: e.id
-  })), [n]), x = async () => {
+  })), [n]), b = async () => {
     await u(t, o, I.wW.GUILD_ROLE_SUBSCRIPTIONS) && (p(t.id), (0, _.B)({
       Icon: C.Z,
       title: S.intl.string(S.t["AP/2qa"]),
@@ -80,7 +80,7 @@ function w(e) {
         onChange: e => c(e),
         "aria-label": S.intl.string(S.t.QXf93N)
       }), (0, r.jsx)(a.zx, {
-        onClick: x,
+        onClick: b,
         className: T.enableTicketingButton,
         submitting: m,
         disabled: null == o || h || !l,
@@ -96,7 +96,7 @@ function w(e) {
 let R = e => {
   let {
     guild: t
-  } = e, n = (0, l.e7)([f.default], () => f.default.getCurrentUser()), a = (0, h.eM)(t, n), d = (0, c.Ob)(t), j = (0, l.e7)([x.Z], () => x.Z.isFocused()), {
+  } = e, n = (0, l.e7)([f.default], () => f.default.getCurrentUser()), a = (0, h.eM)(t, n), d = (0, c.Ob)(t), j = (0, l.e7)([b.Z], () => b.Z.isFocused()), {
     teams: v,
     loading: _
   } = (0, p.Z)({
@@ -105,7 +105,7 @@ let R = e => {
     var t;
     return e.payout_account_status !== E.C.BLOCKED && (0, g.Z)(null != (t = null == n ? void 0 : n.id) ? t : N.lds, e)
   }), [v, n]), I = C.length > 0, R = i.useCallback(async () => {
-    b.default.track(N.rMx.GUILD_ROLE_SUBSCRIPTION_TEAM_SETUP_CLICKED, {
+    x.default.track(N.rMx.GUILD_ROLE_SUBSCRIPTION_TEAM_SETUP_CLICKED, {
       is_onboarding_v2: d,
       has_eligible_team: I,
       guild_id: t.id,

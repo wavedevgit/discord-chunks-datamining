@@ -8,7 +8,7 @@ n.d(t, {
   i$: () => v,
   nn: () => j,
   qN: () => y,
-  wy: () => x
+  wy: () => b
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -66,7 +66,7 @@ function f(e) {
   }
 }
 
-function x(e) {
+function b(e) {
   var {
     key: t,
     cellClassName: n,
@@ -82,7 +82,7 @@ function x(e) {
   }, l)
 }
 
-function b() {
+function x() {
   return (0, r.jsx)(s.Text, {
     variant: "text-xs/medium",
     className: g.unpublishedBadge,
@@ -96,7 +96,7 @@ function j(e) {
     key: n,
     renderHeader: i
   } = e, l = h(e, ["cellClassName", "key", "renderHeader"]);
-  return x(p({
+  return b(p({
     cellClassName: t,
     key: n,
     renderHeader: i,
@@ -114,7 +114,7 @@ function j(e) {
           variant: "text-md/medium",
           color: "header-primary",
           className: g.listingNameLabel,
-          children: [t.name, !t.published && (0, r.jsx)(b, {})]
+          children: [t.name, !t.published && (0, r.jsx)(x, {})]
         })]
       })), (0, r.jsx)(C, {
         className: g.listingNameCell,
@@ -131,7 +131,7 @@ function v(e) {
     key: i,
     renderHeader: l
   } = e, a = h(e, ["cellClassName", "getAmount", "key", "renderHeader"]);
-  return x(p({
+  return b(p({
     key: i,
     cellClassName: t,
     renderHeader: l,
@@ -151,7 +151,7 @@ function _(e) {
     key: i,
     renderHeader: l
   } = e, a = h(e, ["cellClassName", "getCount", "key", "renderHeader"]);
-  return x(p({
+  return b(p({
     key: i,
     cellClassName: t,
     renderHeader: l,
@@ -241,7 +241,7 @@ function E(e) {
     initialSortKey: c,
     initialSortDirection: d = u.sHY.ASCENDING
   } = e, m = h(e, ["className", "headerClassName", "rowClassName", "enableRowSeparators", "initialSortKey", "initialSortDirection"]);
-  let [f, x] = i.useState(c), [b, j] = i.useState(d);
+  let [f, b] = i.useState(c), [x, j] = i.useState(d);
   return (0, r.jsx)("div", {
     className: a()(g.tableContainer, t),
     children: (0, r.jsx)(o.Z, p({
@@ -255,9 +255,9 @@ function E(e) {
         [g.headerWithoutSeparators]: !s
       }, n),
       sortKey: f,
-      sortDirection: b,
+      sortDirection: x,
       onSort: (e, t) => {
-        x(e), j(t)
+        b(e), j(t)
       }
     }, m))
   })

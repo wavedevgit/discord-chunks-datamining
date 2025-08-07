@@ -114,7 +114,9 @@ let b = i.forwardRef(function(e, t) {
       let {
         onMouseEnter: o,
         onMouseLeave: u,
-        onClick: _
+        onFocus: _,
+        onBlur: g,
+        onClick: y
       } = e;
       return (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsxs)(c.zx, m(p({
@@ -124,8 +126,10 @@ let b = i.forwardRef(function(e, t) {
           }),
           onMouseEnter: o,
           onMouseLeave: u,
+          onFocus: _,
+          onBlur: g,
           onClick: e => {
-            null == _ || _(), b(e)
+            null == y || y(), b(e)
           },
           "aria-label": null != i ? i : n,
           disabled: v,

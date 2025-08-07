@@ -23,11 +23,11 @@ function m(e) {
     publishedOnly: !1
   }), {
     allowSelfRemoveMonetization: f
-  } = (0, a.gX)(t), x = m.filter(e => {
+  } = (0, a.gX)(t), b = m.filter(e => {
     var t;
     let n = Object.values(null != (t = e.ppgs) ? t : {})[0];
     return (null == n ? void 0 : n.status) === d.x_.OPEN || (null == n ? void 0 : n.status) === d.x_.PAYOUT_DEFERRED
-  }), b = p.length > 0, j = h.length > 0, v = x.length > 0;
+  }), x = p.length > 0, j = h.length > 0, v = b.length > 0;
   return null == g ? null : (0, r.jsxs)("div", {
     children: [(0, r.jsx)(l.R94, {
       type: l.R94.Types.DESCRIPTION,
@@ -39,7 +39,7 @@ function m(e) {
     }), (0, r.jsx)(l.zxk, {
       variant: "critical-primary",
       text: u.intl.string(u.t.FrOFSk),
-      disabled: !f || b || j || v,
+      disabled: !f || x || j || v,
       onClick: () => {
         (0, l.ZDy)(async () => {
           let {

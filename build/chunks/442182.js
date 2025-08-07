@@ -16,8 +16,8 @@ var r = n(255367),
   p = n(906732),
   h = n(670188),
   f = n(594174),
-  x = n(626135),
-  b = n(243730),
+  b = n(626135),
+  x = n(243730),
   j = n(434404),
   v = n(946724),
   _ = n(130341),
@@ -93,7 +93,7 @@ function Z(e) {
     [l]: [t.id]
   }), [l, t.id]);
 
-  function x(e) {
+  function b(e) {
     if (e.stopPropagation(), !u) {
       if (e.shiftKey) return void R(t, l, s);
       let n = v.Z.getRole(s);
@@ -124,7 +124,7 @@ function Z(e) {
     }
   }
 
-  function b(e) {
+  function x(e) {
     let i = f.default.getUser(t.id);
     null != i && (0, d.jW)(e, async () => {
       let {
@@ -148,7 +148,7 @@ function Z(e) {
       children: e => (0, r.jsxs)(c.P3F, w(P({}, e), {
         innerRef: g,
         className: S.memberRow,
-        onContextMenu: b,
+        onContextMenu: x,
         children: [(0, r.jsx)(C.Z, {
           className: S.memberDetails,
           avatarURL: t.avatarURL,
@@ -165,7 +165,7 @@ function Z(e) {
               className: a()(S.removeButton, {
                 [S.removeButtonDisabled]: u
               }),
-              onClick: x,
+              onClick: b,
               children: (0, r.jsx)(c.k$p, {
                 size: "xs",
                 color: "currentColor"
@@ -222,7 +222,7 @@ function A(e) {
   } = (0, p.ZP)(g.Z.MEMBER_LIST), h = i.useMemo(() => l.trim().toLowerCase(), [l]);
   (0, _.rY)(t, h);
   let f = i.useMemo(() => d.filter(e => (0, _.eg)(h, e)), [d, h]),
-    x = i.useMemo(() => f.sort((e, t) => e.name.localeCompare(t.name)), [f]);
+    b = i.useMemo(() => f.sort((e, t) => e.name.localeCompare(t.name)), [f]);
   return (0, r.jsx)(p.Gt, {
     value: m,
     children: (0, r.jsx)(c._2F, {
@@ -242,11 +242,11 @@ function A(e) {
         let {
           row: i
         } = e;
-        if (0 === x.length) return (0, r.jsx)(D, {
+        if (0 === b.length) return (0, r.jsx)(D, {
           handleAddClick: u,
           locked: s
         }, "empty");
-        let l = x[i];
+        let l = b[i];
         return (0, r.jsx)(Z, {
           member: l,
           guildId: t,
@@ -296,11 +296,11 @@ function L(e) {
   } = (0, O.Z)(0), {
     scrolledToTop: h,
     handleScroll: f
-  } = (0, y.V)(), j = l.managed || o, v = (0, _.e)(t.id, l.id), C = (0, s.e7)([b.Z], () => {
+  } = (0, y.V)(), j = l.managed || o, v = (0, _.e)(t.id, l.id), C = (0, s.e7)([x.Z], () => {
     var e, n;
-    return null != (n = null == (e = b.Z.getRoleMemberCount(t.id)) ? void 0 : e[l.id]) ? n : 0
+    return null != (n = null == (e = x.Z.getRoleMemberCount(t.id)) ? void 0 : e[l.id]) ? n : 0
   }) > v.length, R = () => {
-    x.default.track(I.rMx.OPEN_MODAL, {
+    b.default.track(I.rMx.OPEN_MODAL, {
       type: "Add Role Members",
       location_page: "Role Settings",
       location_section: "Members"

@@ -16,8 +16,8 @@ var r = n(255367),
   p = n(134433),
   h = n(91218),
   f = n(646892),
-  x = n(741247),
-  b = n(518738),
+  b = n(741247),
+  x = n(518738),
   j = n(549631),
   v = n(402235),
   _ = n(496675),
@@ -86,21 +86,21 @@ function k(e) {
       search_type: "Roles"
     }), f.current = !0)
   }, [u]);
-  let x = i.useMemo(() => a.filter(e => (0, N.uo)(e, h)), [a, h]),
-    b = i.useMemo(() => [...a, l], [a, l]),
+  let b = i.useMemo(() => a.filter(e => (0, N.uo)(e, h)), [a, h]),
+    x = i.useMemo(() => [...a, l], [a, l]),
     {
       draggingId: j,
       handleDragStart: v,
       handleDragReset: I,
       handleDragComplete: S
-    } = (0, E.Z)(b),
+    } = (0, E.Z)(x),
     P = i.useCallback(e => {
       var i;
       let {
         row: l
       } = e;
-      if (0 === x.length) return (0, r.jsx)(L, {}, "empty-role");
-      let o = x[l];
+      if (0 === b.length) return (0, r.jsx)(L, {}, "empty-role");
+      let o = b[l];
       return (0, r.jsx)(M, {
         role: o,
         guild: n,
@@ -111,13 +111,13 @@ function k(e) {
         onDragReset: I,
         onDragComplete: S,
         disableHover: null != j,
-        disableDrag: a.length !== x.length,
+        disableDrag: a.length !== b.length,
         setEditRoleId: t,
         setSelectedSection: s
       }, o.id)
-    }, [x, n, p, m, v, I, S, j, a, t, s]);
+    }, [b, n, p, m, v, I, S, j, a, t, s]);
   return (0, r.jsx)(g.Xi, {
-    sections: [Math.max(x.length, 1)],
+    sections: [Math.max(b.length, 1)],
     sectionHeight: d,
     renderSection: o,
     rowHeight: 61,
@@ -148,7 +148,7 @@ function M(e) {
     role: d,
     guild: g,
     highestRole: h,
-    currentPosition: b,
+    currentPosition: x,
     memberCount: v,
     onDragStart: _,
     onDragReset: O,
@@ -161,7 +161,7 @@ function M(e) {
     type: A,
     item: () => (_(d.id), {
       id: d.id,
-      position: b
+      position: x
     }),
     canDrag: () => M && !L,
     collect: e => ({
@@ -172,7 +172,7 @@ function M(e) {
       if (null == n) return void O();
       y(n.roleId)
     }
-  }), [d, _, O, y, L, M, b]), [{
+  }), [d, _, O, y, L, M, x]), [{
     isDragging: F
   }, H] = (0, s.c)(B), z = i.useMemo(() => ({
     accept: A,
@@ -200,7 +200,7 @@ function M(e) {
         guild: g
       }))
     })
-  }, [g, d]), K = (0, x.e)(g, d);
+  }, [g, d]), K = (0, b.e)(g, d);
   if (F) return (0, r.jsx)("div", {
     ref: e => {
       H(e)
@@ -218,8 +218,8 @@ function M(e) {
   return (0, r.jsxs)(u.P3F, {
     className: a()(w.roleRow, {
       [w.roleRowDisableHover]: C,
-      [w.containerDragBefore]: null != W && b < W,
-      [w.containerDragAfter]: null != W && b > W
+      [w.containerDragBefore]: null != W && x < W,
+      [w.containerDragAfter]: null != W && x > W
     }),
     onClick: q,
     onContextMenu: Y,
@@ -322,9 +322,9 @@ function G(e) {
     defaultIconClassName: p
   } = e, {
     hasGradient: f,
-    stops: x,
+    stops: b,
     gradientId: j
-  } = (0, d.De)(null == (t = o.colorStrings) ? void 0 : t.primaryColor, null == (n = o.colorStrings) ? void 0 : n.secondaryColor, null == (i = o.colorStrings) ? void 0 : i.tertiaryColor), _ = (0, v.yH)(s, o), O = (0, b.p9)({
+  } = (0, d.De)(null == (t = o.colorStrings) ? void 0 : t.primaryColor, null == (n = o.colorStrings) ? void 0 : n.secondaryColor, null == (i = o.colorStrings) ? void 0 : i.tertiaryColor), _ = (0, v.yH)(s, o), O = (0, x.p9)({
     guildId: s,
     roleId: o.id,
     size: c
@@ -347,7 +347,7 @@ function G(e) {
         y1: "0%",
         x2: "0%",
         y2: "100%",
-        children: x
+        children: b
       })
     }), (0, r.jsx)(u.lZ8, {
       size: "custom",

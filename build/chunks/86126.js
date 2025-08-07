@@ -1,6 +1,6 @@
 /** Chunk was on 22988 **/
 n.d(t, {
-  Z: () => b
+  Z: () => x
 });
 var r = n(255367),
   i = n(73800),
@@ -16,17 +16,17 @@ var r = n(255367),
   p = n(783454),
   h = n(388032),
   f = n(301849),
-  x = n(522659);
+  b = n(522659);
 
-function b(e) {
+function x(e) {
   var t;
   let {
     onDeleteEditState: l
   } = e, {
-    editStateId: b,
+    editStateId: x,
     guildId: j,
     groupListingId: v
-  } = (0, m.N)(), _ = (0, s.e7)([u.Z], () => u.Z.getSubscriptionListing(b)), O = null == _ ? void 0 : _.id, y = (0, g.Z)(j), C = i.useMemo(() => {
+  } = (0, m.N)(), _ = (0, s.e7)([u.Z], () => u.Z.getSubscriptionListing(x)), O = null == _ ? void 0 : _.id, y = (0, g.Z)(j), C = i.useMemo(() => {
     var e;
     return null != y && null != _ && (null != (e = y[_.role_id]) ? e : 0)
   }, [y, _]), N = 0 === C, I = null == O, E = null != (t = null == _ ? void 0 : _.archived) && t, {
@@ -62,7 +62,7 @@ function b(e) {
           gap: 16,
           children: [!N && (0, r.jsx)(o.Text, {
             variant: "text-sm/normal",
-            className: x.warning,
+            className: b.warning,
             children: h.intl.formatToPlainString(h.t.ABeonZ, {
               listingMemberCount: C
             })

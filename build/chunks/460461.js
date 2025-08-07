@@ -17,8 +17,8 @@ var r = n(255367),
   p = n(456268),
   h = n(134432),
   f = n(813197),
-  x = n(208567),
-  b = n(496675),
+  b = n(208567),
+  x = n(496675),
   j = n(768581),
   v = n(63063),
   _ = n(434404),
@@ -75,8 +75,8 @@ let P = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
     }, [u, w]);
     let {
       canManageGuild: Z
-    } = (0, l.cj)([b.Z], () => ({
-      canManageGuild: b.Z.can(E.Plq.MANAGE_GUILD, u)
+    } = (0, l.cj)([x.Z], () => ({
+      canManageGuild: x.Z.can(E.Plq.MANAGE_GUILD, u)
     })), D = (0, l.e7)([O.Z], () => O.Z.isGuildMetadataLoaded()), A = (0, l.e7)([O.Z], () => null != u ? O.Z.getMetadata() : null), k = (0, l.e7)([O.Z], () => null != u && (null == A ? void 0 : A.isPublished) ? O.Z.getSlug() : null), [L, M] = i.useState([!0]), [G, U] = i.useState(!0), [B, F] = i.useState([!1]), [H, z] = i.useState([""]), W = e => {
       let t = Object.entries(I.z).filter(e => !H.includes(e[1].presentation)).map(e => ({
         label: e[1].presentation,
@@ -313,7 +313,7 @@ let P = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                               onChange: K
                             })]
                           })]
-                        }), (0, r.jsx)(x.Z, {
+                        }), (0, r.jsx)(b.Z, {
                           image: u.discoverySplash,
                           makeURL: e => j.ZP.getGuildDiscoverySplashURL({
                             id: u.id,

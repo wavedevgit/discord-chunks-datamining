@@ -1,6 +1,6 @@
 /** Chunk was on 22988 **/
 n.d(t, {
-  Z: () => b
+  Z: () => x
 });
 var r = n(255367);
 n(73800);
@@ -17,16 +17,16 @@ var i = n(120356),
   p = n(937615),
   h = n(474936),
   f = n(388032),
-  x = n(67949);
-let b = e => {
+  b = n(67949);
+let x = e => {
   var t;
   let {
     className: n
-  } = e, i = (0, a.e7)([c.default], () => c.default.getCurrentUser()), b = (0, a.e7)([o.default], () => o.default.locale), j = (0, a.e7)([u.Z], () => u.Z.getPremiumTypeSubscription()), v = (0, a.e7)([d.Z], () => null != j ? d.Z.get(j.planId) : void 0), _ = null != (t = (0, a.e7)([d.Z], () => null != v ? d.Z.getForSkuAndInterval((0, g.Wz)(h.Si.GUILD), v.interval, v.intervalCount) : void 0)) ? t : h.GP[h.Xh.PREMIUM_MONTH_GUILD];
+  } = e, i = (0, a.e7)([c.default], () => c.default.getCurrentUser()), x = (0, a.e7)([o.default], () => o.default.locale), j = (0, a.e7)([u.Z], () => u.Z.getPremiumTypeSubscription()), v = (0, a.e7)([d.Z], () => null != j ? d.Z.get(j.planId) : void 0), _ = null != (t = (0, a.e7)([d.Z], () => null != v ? d.Z.getForSkuAndInterval((0, g.Wz)(h.Si.GUILD), v.interval, v.intervalCount) : void 0)) ? t : h.GP[h.Xh.PREMIUM_MONTH_GUILD];
   return (0, r.jsxs)("div", {
-    className: l()(x.wrapper, n),
+    className: l()(b.wrapper, n),
     children: [(0, r.jsx)(s.X6q, {
-      className: x.heading,
+      className: b.heading,
       variant: "heading-xl/semibold",
       children: f.intl.string(f.t["3x1PFB"])
     }), (0, r.jsx)(s.Text, {
@@ -43,7 +43,7 @@ let b = e => {
           price: c,
           originalPrice: d,
           originalPriceHook: (e, t) => (0, r.jsx)("span", {
-            className: x.originalPrice,
+            className: b.originalPrice,
             children: e
           }, t),
           freeSubscriptionCount: h.cb,
@@ -52,7 +52,7 @@ let b = e => {
           price: c,
           originalPrice: d,
           originalPriceHook: (e, t) => (0, r.jsx)("span", {
-            className: x.originalPrice,
+            className: b.originalPrice,
             children: e
           }, t),
           discountPercent: (0, m.T3)(n, h.Rr / 100)
@@ -61,7 +61,7 @@ let b = e => {
         })
       }({
         currentUser: i,
-        locale: b,
+        locale: x,
         guildBoostingPlanId: _.id,
         interval: _.interval,
         intervalCount: _.intervalCount

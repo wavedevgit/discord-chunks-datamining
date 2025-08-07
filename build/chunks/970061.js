@@ -42,7 +42,7 @@ function g(e) {
     buttonLabel: l,
     buttonCallback: a,
     disabled: o
-  } = e, [g, p] = i.useState(!1), h = n.flatMap(e => e.items.map(e => e.completed)), f = h.filter(e => e).length / h.length, x = (0, c.q_F)({
+  } = e, [g, p] = i.useState(!1), h = n.flatMap(e => e.items.map(e => e.completed)), f = h.filter(e => e).length / h.length, b = (0, c.q_F)({
     width: "".concat(100 * f, "%")
   });
   return (0, r.jsxs)("div", {
@@ -62,7 +62,7 @@ function g(e) {
       className: u.progressBarOuter,
       children: (0, r.jsx)(s.animated.div, {
         className: u.progressBarInner,
-        style: x
+        style: b
       })
     }), !g && n.map((e, t) => {
       let {

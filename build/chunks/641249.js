@@ -18,7 +18,7 @@ var i = n(442837),
   h = n(388032),
   f = n(301849);
 
-function x(e) {
+function b(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -37,7 +37,7 @@ function x(e) {
   return e
 }
 
-function b(e, t) {
+function x(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -87,7 +87,7 @@ function j() {
           let {
             default: t
           } = await n.e("59128").then(n.bind(n, 28564));
-          return n => (0, r.jsx)(t, b(x({}, n), {
+          return n => (0, r.jsx)(t, x(b({}, n), {
             onConfirmDelete: () => {
               E(e.id), n.onClose()
             }
@@ -102,7 +102,7 @@ function j() {
           let {
             EmojiAddModal: e
           } = await n.e("21112").then(n.bind(n, 301160));
-          return n => (0, r.jsx)(e, b(x({}, n), {
+          return n => (0, r.jsx)(e, x(b({}, n), {
             guildId: t,
             initialTierEmojiIds: j,
             onSubmit: I,

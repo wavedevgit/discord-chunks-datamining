@@ -29,7 +29,7 @@ function m(e) {
     return null != (n = null == (e = d.Z.getDetectableGame(t)) ? void 0 : e.name) ? n : ""
   }), f = i.useCallback(() => {
     null == l || l(t)
-  }, [t, l]), x = i.useMemo(() => g ? null : null == p ? (0, r.jsx)("div", {
+  }, [t, l]), b = i.useMemo(() => g ? null : null == p ? (0, r.jsx)("div", {
     className: u.gameUnknownImage,
     children: (0, r.jsx)(s.IMN, {
       size: "lg"
@@ -58,7 +58,7 @@ function m(e) {
           displayOnly: !0,
           value: n
         })
-      }), x]
+      }), b]
     }), (0, r.jsx)(s.Text, {
       className: u.gameName,
       variant: "text-xs/medium",

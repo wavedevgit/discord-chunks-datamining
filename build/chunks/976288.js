@@ -16,8 +16,8 @@ var r = n(255367),
   p = n(434404),
   h = n(999382),
   f = n(718157),
-  x = n(450474),
-  b = n(166184),
+  b = n(450474),
+  x = n(166184),
   j = n(936735),
   v = n(654351),
   _ = n(557359),
@@ -56,7 +56,7 @@ function S(e) {
     })
   }, []), {
     memberCount: f,
-    onlineCount: x
+    onlineCount: b
   } = (0, a.cj)([g.Z], () => ({
     memberCount: g.Z.getMemberCount(n.id),
     onlineCount: g.Z.getOnlineCount(n.id)
@@ -123,11 +123,11 @@ function S(e) {
           maxLength: l.Us
         })]
       })]
-    }), (0, r.jsx)(b.Z, {
+    }), (0, r.jsx)(x.Z, {
       className: I.preview,
       guild: n,
       memberCount: f,
-      presenceCount: x
+      presenceCount: b
     })]
   })
 }
@@ -181,7 +181,7 @@ function T(e) {
         children: N.intl.string(N.t["4jnzlZ"])
       }), (0, r.jsx)("div", {
         className: I.editableSection,
-        children: (0, r.jsx)(x.Z, {
+        children: (0, r.jsx)(b.Z, {
           guild: t,
           guildMetadata: n
         })

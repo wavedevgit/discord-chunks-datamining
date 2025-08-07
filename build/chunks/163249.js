@@ -1,6 +1,6 @@
 /** Chunk was on 22988 **/
 n.d(t, {
-  Z: () => b
+  Z: () => x
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -71,7 +71,7 @@ function f(e) {
   })
 }
 
-function x() {
+function b() {
   let e = i.useMemo(() => [{
       backgroundClass: p.bannerClubs,
       username: "Wumpus#0000",
@@ -169,7 +169,7 @@ function x() {
   })
 }
 
-function b(e) {
+function x(e) {
   let {
     guild: t,
     everyoneRole: n,
@@ -186,7 +186,7 @@ function b(e) {
       tag: s.RB0.H2,
       children: [(0, r.jsxs)("div", {
         className: p.container,
-        children: [(0, r.jsx)(x, {}), (0, r.jsx)(s.X6q, {
+        children: [(0, r.jsx)(b, {}), (0, r.jsx)(s.X6q, {
           variant: "heading-xl/semibold",
           children: g.intl.string(g.t.ALlnbm)
         }), (0, r.jsx)(s.Text, {

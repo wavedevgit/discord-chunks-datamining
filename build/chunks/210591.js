@@ -42,7 +42,7 @@ function h(e) {
     children: t
   } = e, [n, l] = i.useState(!1), a = t.flatMap(e => e.items.map(e => e.completed)), o = a.filter(e => e).length / a.length, h = 1 === o, f = (0, c.q_F)({
     width: "".concat(100 * o, "%")
-  }), x = [m.intl.format(m.t.wtQtXl, {
+  }), b = [m.intl.format(m.t.wtQtXl, {
     promoPageGuideUrl: u.iv.PROMO_PAGE_GUIDE
   }), m.intl.format(m.t["0Fo0wc"], {
     caseStudiesUrl: u.iv.CASE_STUDIES
@@ -50,7 +50,7 @@ function h(e) {
     subscriptionOfferingGuideUrl: u.iv.SUBSCRIPTION_OFFERING_GUIDE
   }), m.intl.format(m.t.zkXN6O, {
     tierStructureGuideUrl: u.iv.TIER_STRUCTURE_GUIDE
-  })], b = n ? null : (0, r.jsxs)(r.Fragment, {
+  })], x = n ? null : (0, r.jsxs)(r.Fragment, {
     children: [!h && t.map((e, t) => {
       let {
         title: n,
@@ -72,7 +72,7 @@ function h(e) {
     }), (0, r.jsx)(c.vwX, {
       className: g.categoryTitle,
       children: m.intl.string(m.t.FO0AIS)
-    }), x.map((e, t) => (0, r.jsx)("div", {
+    }), b.map((e, t) => (0, r.jsx)("div", {
       className: g.row,
       children: (0, r.jsx)(c.Text, {
         variant: "text-md/normal",
@@ -101,7 +101,7 @@ function h(e) {
           className: g.progressBarInner,
           style: f
         })
-      }), b]
+      }), x]
     })
   })
 }

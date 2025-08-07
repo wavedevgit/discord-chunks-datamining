@@ -16,8 +16,8 @@ var r = n(255367),
   p = n(774380),
   h = n(404270),
   f = n(441536),
-  x = n(174604),
-  b = n(399829),
+  b = n(174604),
+  x = n(399829),
   j = n(428862),
   v = n(899667),
   _ = n(626135),
@@ -111,12 +111,12 @@ function w() {
           helpdeskArticle: y.Z.getArticleURL(N.BhN.GUILD_SUBSCRIPTIONS)
         })
       })]
-    }), null != e && (0, r.jsx)(x.Z, {
+    }), null != e && (0, r.jsx)(b.Z, {
       guild: e,
       onButtonClick: function() {
         null != e && ((0, c.xf)(), (0, f.Z)(e.id, m.Z.GUILD_POWERUPS_GUILD_SETTINGS_PREMIUM))
       }
-    }), (0, r.jsx)(b.Z, {
+    }), (0, r.jsx)(x.Z, {
       tiers: (0, O.cP)(null != e && e.features.has(N.oNc.COMMUNITY) && e.maxStageVideoChannelUsers >= N.B9o),
       renderTier: P
     }), (0, r.jsx)("div", {

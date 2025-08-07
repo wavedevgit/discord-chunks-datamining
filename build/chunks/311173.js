@@ -1,6 +1,6 @@
 /** Chunk was on 22988 **/
 n.d(t, {
-  Z: () => x
+  Z: () => b
 }), n(388685), n(953529);
 var r = n(255367),
   i = n(73800),
@@ -40,7 +40,7 @@ function f(e) {
   })
 }
 
-function x(e) {
+function b(e) {
   var t, n;
   let {
     rule: l,
@@ -48,8 +48,8 @@ function x(e) {
     className: o
   } = e, {
     patterns: m,
-    valueError: x,
-    errors: b,
+    valueError: b,
+    errors: x,
     validatePatternsChanged: j,
     validateEditingValueChanged: v
   } = (0, d.Z)(l, s), [_] = i.useState(() => ({
@@ -57,7 +57,7 @@ function x(e) {
     value: "",
     selections: [],
     isSelecting: !1
-  })), O = i.useMemo(() => b.reduce((e, t) => {
+  })), O = i.useMemo(() => x.reduce((e, t) => {
     let {
       pattern: n,
       message: r,
@@ -71,7 +71,7 @@ function x(e) {
       erroringCharacterLength: l,
       erroringCharacterOffset: a
     }), e
-  }, {}), [b, m]), y = i.useCallback(e => {
+  }, {}), [x, m]), y = i.useCallback(e => {
     j(e, m)
   }, [j, m]), C = i.useCallback(e => {
     v(e)
@@ -89,13 +89,13 @@ function x(e) {
       text: g.intl.format(g.t["PGC/AA"], {
         helpArticle: h
       }),
-      hasErrors: b.length > 0 || null != x,
-      errorText: null != (n = null == (t = b.find(e => {
+      hasErrors: x.length > 0 || null != b,
+      errorText: null != (n = null == (t = x.find(e => {
         let {
           pattern: t
         } = e;
         return t === d.r
-      })) ? void 0 : t.message) ? n : null == x ? void 0 : x.message
+      })) ? void 0 : t.message) ? n : null == b ? void 0 : b.message
     })]
   })
 }

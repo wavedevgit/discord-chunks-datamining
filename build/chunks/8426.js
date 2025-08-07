@@ -1,13 +1,13 @@
 /** Chunk was on 22988 **/
 n.d(t, {
-  Hr: () => b,
+  Hr: () => x,
   Hz: () => y,
   To: () => E,
   XG: () => O,
   _N: () => h,
   ad: () => v,
   bj: () => P,
-  el: () => x,
+  el: () => b,
   hS: () => j,
   lq: () => C,
   mM: () => N,
@@ -43,7 +43,7 @@ function f(e) {
   })
 }
 
-function x(e, t) {
+function b(e, t) {
   a.Z.dispatch({
     type: "GUILD_SETTINGS_ONBOARDING_UPDATE_NEW_MEMBER_ACTION",
     channelId: e,
@@ -51,7 +51,7 @@ function x(e, t) {
   })
 }
 
-function b(e) {
+function x(e) {
   a.Z.dispatch({
     type: "GUILD_SETTINGS_ONBOARDING_DELETE_NEW_MEMBER_ACTION",
     channelId: e
@@ -202,7 +202,7 @@ function E(e, t) {
   }), n)))
 }
 async function S(e, t) {
-  var n, r, o, u, m, h, f, x, b;
+  var n, r, o, u, m, h, f, b, x;
   a.Z.dispatch({
     type: "GUILD_HOME_SETTINGS_UPDATE_START"
   });
@@ -224,11 +224,11 @@ async function S(e, t) {
       welcome_message_length: null != (m = null == s || null == (o = s.welcomeMessage) || null == (r = o.message) ? void 0 : r.length) ? m : 0,
       member_action_channel_ids: (null != (h = null == s ? void 0 : s.newMemberActions) ? h : []).map(e => e.channelId),
       member_action_channel_actions: (null != (f = null == s ? void 0 : s.newMemberActions) ? f : []).map(e => e.actionType),
-      resource_channel_ids: (null != (x = null == s ? void 0 : s.resourceChannels) ? x : []).map(e => e.channelId),
+      resource_channel_ids: (null != (b = null == s ? void 0 : s.resourceChannels) ? b : []).map(e => e.channelId),
       enabled: null == s ? void 0 : s.enabled
     }), i.body
   } catch (t) {
-    let e = i().flatMap(null != (b = t.body) ? b : {}, e => e);
+    let e = i().flatMap(null != (x = t.body) ? x : {}, e => e);
     a.Z.dispatch({
       type: "GUILD_HOME_SETTINGS_UPDATE_FAIL"
     }), s.Z.show({

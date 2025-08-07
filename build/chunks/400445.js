@@ -1,35 +1,39 @@
 /** Chunk was on 92357 **/
 n.d(t, {
-  Z: () => d
+  Z: () => h
 });
 var r = n(255367),
   i = n(120356),
   l = n.n(i),
-  o = n(524437),
-  s = n(453473),
-  a = n(216789),
-  c = n(791914),
-  u = n(929968);
+  o = n(793030),
+  s = n(524437),
+  a = n(453473),
+  c = n(216789),
+  u = n(791914),
+  d = n(929968);
 
-function d(e) {
+function h(e) {
   let {
     setTab: t,
     closePopout: n,
     badgeState: i
-  } = e, d = (0, a.Us)({
+  } = e, h = (0, c.Us)({
     location: "ForLaterInbox"
   });
-  return (0, r.jsxs)("div", {
-    className: l()(u.container, {
-      [u.widerInbox]: d
+  return (0, r.jsx)("div", {
+    className: l()(d.container, {
+      [d.widerInbox]: h
     }),
-    children: [(0, r.jsx)(c.Z, {
-      tab: o.X.BOOKMARKS,
-      setTab: t,
-      closePopout: n,
-      badgeState: i
-    }), (0, r.jsx)(s.K, {
-      closePopout: n
-    })]
+    children: (0, r.jsx)(o.y5, {
+      component: (0, r.jsx)(u.Z, {
+        tab: s.X.BOOKMARKS,
+        setTab: t,
+        closePopout: n,
+        badgeState: i
+      }),
+      children: (0, r.jsx)(a.K, {
+        closePopout: n
+      })
+    })
   })
 }

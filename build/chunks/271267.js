@@ -1,7 +1,7 @@
 /** Chunk was on 22988 **/
 n.d(t, {
   Q: () => g,
-  Z: () => x
+  Z: () => b
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -143,7 +143,7 @@ function f(e) {
   })
 }
 
-function x(e) {
+function b(e) {
   let {
     guild: t,
     monetizationEligibility: n

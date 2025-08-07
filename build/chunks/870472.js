@@ -134,7 +134,7 @@ function c(e, t) {
         }
       })
     }, [u]),
-    x = r.useCallback(e => {
+    b = r.useCallback(e => {
       u(t => {
         let {
           tags: n,
@@ -150,7 +150,7 @@ function c(e, t) {
         }
       })
     }, [u]),
-    b = r.useCallback(function(e) {
+    x = r.useCallback(function(e) {
       let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
       u(n => {
         let {
@@ -295,8 +295,8 @@ function c(e, t) {
     }, [y, O, C, j, l]),
     handleRemoveTag: h,
     handleTagChangeEvent: f,
-    handleSelectTag: x,
-    handleUnselectTag: b,
+    handleSelectTag: b,
+    handleUnselectTag: x,
     handleResetTagSelections: j,
     handleInputBlurEvent: N
   }

@@ -18,7 +18,7 @@ var i = n(120356),
   h = n(388032),
   f = n(748812);
 
-function x(e) {
+function b(e) {
   let {
     subscribers: t
   } = e;
@@ -44,7 +44,7 @@ function x(e) {
   })
 }
 
-function b(e) {
+function x(e) {
   let {
     guildName: t,
     guildIcon: n,
@@ -67,7 +67,7 @@ function b(e) {
         variant: "heading-lg/semibold",
         color: "header-primary",
         children: t
-      }), null != l && (0, r.jsx)(x, {
+      }), null != l && (0, r.jsx)(b, {
         subscribers: l
       })]
     })]
@@ -176,13 +176,13 @@ function _(e) {
     guildName: g,
     guildAvatarUrl: p,
     subscriberCount: h,
-    emojisToShow: x,
+    emojisToShow: b,
     notShownEmojiCount: _,
     storePageUrl: O
   } = o.details;
   return (0, r.jsxs)("div", {
     className: f.guildCard,
-    children: [(0, r.jsx)(b, {
+    children: [(0, r.jsx)(x, {
       guildIcon: u,
       guildName: g,
       guildAvatarUrl: p,
@@ -192,7 +192,7 @@ function _(e) {
       quoteAttribution: l,
       quoteAttributionTitle: s
     }), (0, r.jsx)(v, {
-      emojisToShow: x,
+      emojisToShow: b,
       notShownEmojiCount: _,
       storePageUrl: O
     })]

@@ -1,6 +1,6 @@
 /** Chunk was on 22988 **/
 n.d(t, {
-  Z: () => b
+  Z: () => x
 }), n(388685);
 var r, i, l = n(255367),
   a = n(73800),
@@ -65,7 +65,7 @@ function f(e, t, n, r) {
     duration: n / t
   })))
 }
-class x extends(r = a.Component) {
+class b extends(r = a.Component) {
   componentDidMount() {
     this.startAnimation()
   }
@@ -214,5 +214,5 @@ class x extends(r = a.Component) {
     super(...e), g(this, "x", new u.Z.Value(0)), g(this, "y", new u.Z.Value(0)), g(this, "opacity", new u.Z.Value(1)), g(this, "fireScale", new u.Z.Value(1)), g(this, "currentAnimation", null), g(this, "isUnmounted", !1)
   }
 }
-g(x, "Stages", p);
-let b = x
+g(b, "Stages", p);
+let x = b

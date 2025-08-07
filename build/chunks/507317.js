@@ -16,8 +16,8 @@ var r = n(255367),
   p = n(981631),
   h = n(30513),
   f = n(486324),
-  x = n(200299),
-  b = n(388032),
+  b = n(200299),
+  x = n(388032),
   j = n(773100);
 let v = function(e) {
   let {
@@ -87,9 +87,9 @@ let v = function(e) {
     }) : null,
     disabled: !v,
     onChange: _,
-    hint: b.intl.string(b.t.NyXznp),
+    hint: x.intl.string(x.t.NyXznp),
     enabled: v,
-    maxFileSizeBytes: x.B
+    maxFileSizeBytes: b.B
   });
   return v ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
@@ -97,7 +97,7 @@ let v = function(e) {
       children: [(0, r.jsx)(a.X6q, {
         className: j.header,
         variant: "heading-lg/extrabold",
-        children: b.intl.string(b.t.BBj1nZ)
+        children: x.intl.string(x.t.BBj1nZ)
       }), (0, r.jsx)(o.Z, {
         className: j.boostIndicator,
         guild: t,
@@ -111,13 +111,13 @@ let v = function(e) {
         children: [(0, r.jsx)(a.Text, {
           variant: "text-sm/normal",
           color: "header-secondary",
-          children: b.intl.string(b.t.Vwintr)
+          children: x.intl.string(x.t.Vwintr)
         }), (0, r.jsx)(u.Z, {
           color: l.Tt.BRAND,
           className: j.uploadButton,
-          buttonCTA: b.intl.string(b.t.yG2pUl),
+          buttonCTA: x.intl.string(x.t.yG2pUl),
           onChange: _,
-          maxFileSizeBytes: x.B
+          maxFileSizeBytes: b.B
         })]
       }), (0, r.jsx)("div", {
         children: y
@@ -129,7 +129,7 @@ let v = function(e) {
       children: [(0, r.jsx)(a.X6q, {
         className: j.header,
         variant: "heading-lg/extrabold",
-        children: b.intl.string(b.t.BBj1nZ)
+        children: x.intl.string(x.t.BBj1nZ)
       }), (0, r.jsx)(o.Z, {
         className: j.boostIndicator,
         guild: t,
@@ -144,11 +144,11 @@ let v = function(e) {
           variant: "text-sm/normal",
           color: "header-secondary",
           className: j.bannerDescription,
-          children: b.intl.string(b.t.Vwintr)
+          children: x.intl.string(x.t.Vwintr)
         }), (0, r.jsx)(a.zxk, {
           variant: "expressive",
           icon: a.$Eu,
-          text: b.intl.string(b.t["+7XY39"]),
+          text: x.intl.string(x.t["+7XY39"]),
           onClick: O
         })]
       }), (0, r.jsx)("div", {

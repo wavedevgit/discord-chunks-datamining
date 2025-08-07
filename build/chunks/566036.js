@@ -41,7 +41,7 @@ function f(e) {
   })
 }
 
-function x(e) {
+function b(e) {
   let {
     gameApplicationIds: t,
     onRemoveGame: n,
@@ -57,14 +57,14 @@ function x(e) {
     }, e))
   })
 }
-let b = [];
+let x = [];
 
 function j(e) {
   var t;
   let {
     profile: n,
     canManageGuild: l
-  } = e, o = n.id, d = null != (t = null == n ? void 0 : n.gameApplicationIds) ? t : b, h = i.useCallback(e => {
+  } = e, o = n.id, d = null != (t = null == n ? void 0 : n.gameApplicationIds) ? t : x, h = i.useCallback(e => {
     c.Z.updateGuildProfile(o, {
       gameApplicationIds: e
     })
@@ -90,7 +90,7 @@ function j(e) {
         gameApplicationIds: d,
         handleChange: h,
         disabled: !l
-      }), (0, r.jsx)(x, {
+      }), (0, r.jsx)(b, {
         gameApplicationIds: _,
         onRemoveGame: j,
         disabled: !l

@@ -20,8 +20,8 @@ function h(e) {
   let {
     changeTitle: h,
     value: f,
-    options: x,
-    className: b,
+    options: b,
+    className: x,
     onChange: j
   } = e, [v, _] = i.useState(f), [O, y] = i.useState(!1), [C, N] = i.useState(!1), I = i.useRef(null);
   i.useEffect(() => {
@@ -29,7 +29,7 @@ function h(e) {
   }, [f]), i.useEffect(() => () => {
     clearTimeout(I.current)
   }, []);
-  let E = x.find(e => e.value === v),
+  let E = b.find(e => e.value === v),
     S = e => {
       e.disabled || e.value === v || (N(!0), null == j || j(e), _(e.value), I.current = setTimeout(() => {
         N(!1), y(!1)
@@ -46,8 +46,8 @@ function h(e) {
       children: g.intl.string(g.t.GEgsAw)
     }),
     loading: C,
-    className: b,
-    children: x.map((e, t) => (0, r.jsx)(m.Z, {
+    className: x,
+    children: b.map((e, t) => (0, r.jsx)(m.Z, {
       title: e.title,
       description: e.description,
       highlightColor: e.highlightColor,

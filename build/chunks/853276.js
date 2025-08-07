@@ -52,7 +52,7 @@ let h = i.forwardRef(function(e, t) {
     isEditing: d,
     forceShowErrorTooltip: u = !1,
     error: h
-  } = e, [f, x, b] = i.useMemo(() => {
+  } = e, [f, b, x] = i.useMemo(() => {
     if (null == h) return [];
     let {
       erroringCharacterOffset: e = 0,
@@ -67,13 +67,13 @@ let h = i.forwardRef(function(e, t) {
     }),
     ref: t,
     children: s
-  }) : (null != (n = null == f ? void 0 : f.length) ? n : 0) + (null != (l = null == x ? void 0 : x.length) ? l : 0) > 70 ? (0, r.jsx)(o.ua7, {
+  }) : (null != (n = null == f ? void 0 : f.length) ? n : 0) + (null != (l = null == b ? void 0 : b.length) ? l : 0) > 70 ? (0, r.jsx)(o.ua7, {
     "aria-label": h.message,
     text: () => (0, r.jsxs)("div", {
       "aria-label": h.message,
       children: [h.message, " ", (0, r.jsx)("span", {
         className: m.errorOverflowValue,
-        children: x
+        children: b
       })]
     }),
     tooltipClassName: m.errorTooltip,
@@ -92,9 +92,9 @@ let h = i.forwardRef(function(e, t) {
         children: f
       }), (0, r.jsx)("span", {
         className: m.errorValue,
-        children: x
-      }), (0, r.jsx)("span", {
         children: b
+      }), (0, r.jsx)("span", {
+        children: x
       })]
     }))
   }) : (0, r.jsxs)("div", {
@@ -112,10 +112,10 @@ let h = i.forwardRef(function(e, t) {
       forceOpen: u || void 0,
       children: e => (0, r.jsx)("span", p(g({}, e), {
         className: m.errorValue,
-        children: x
+        children: b
       }))
     }), (0, r.jsx)("span", {
-      children: b
+      children: x
     })]
   })
 });
@@ -128,8 +128,8 @@ function f(e) {
     onFocus: g,
     onRemove: p,
     isSelected: f,
-    isSelecting: x,
-    error: b,
+    isSelecting: b,
+    error: x,
     forceShowErrorTooltip: j
   } = e, v = i.useRef(null), _ = i.useRef(null), [O, y] = i.useState(!1), {
     ref: C,
@@ -175,8 +175,8 @@ function f(e) {
         [m.isEditing]: O,
         [m.smallBlink]: !O && !S,
         [m.isSelected]: f,
-        [m.isSelecting]: x,
-        [m.isError]: null != b && !O
+        [m.isSelecting]: b,
+        [m.isError]: null != x && !O
       }),
       children: [(0, r.jsxs)(o.P3F, {
         tag: "div",
@@ -186,14 +186,14 @@ function f(e) {
         onMouseEnter: () => P(!0),
         onMouseLeave: () => P(!1),
         className: a()(m.chipletContainerInner, {
-          [m.isSelecting]: x,
+          [m.isSelecting]: b,
           [m.isEditing]: O
         }),
         ref: _,
         children: [(0, r.jsx)("input", {
           className: a()(m.chipletInput, {
             [m.isEditing]: O,
-            [m.isSelecting]: x
+            [m.isSelecting]: b
           }),
           ref: v,
           onChange: Z,
@@ -207,7 +207,7 @@ function f(e) {
           value: t,
           isEditing: O,
           isSelected: f,
-          error: b,
+          error: x,
           forceShowErrorTooltip: T || O
         })]
       }), !O && (0, r.jsx)(o.P3F, {

@@ -16,8 +16,8 @@ var r = n(255367),
   p = n(724757),
   h = n(210887),
   f = n(387667),
-  x = n(598077),
-  b = n(592125),
+  b = n(598077),
+  x = n(592125),
   j = n(430824),
   v = n(246946),
   _ = n(594174),
@@ -137,7 +137,7 @@ let M = i.forwardRef((e, t) => {
       switch (t.targetType) {
         case T.KFR.CHANNEL:
         case T.KFR.CHANNEL_OVERWRITE:
-          let i = b.Z.getChannel(t.targetId),
+          let i = x.Z.getChannel(t.targetId),
             a = j.Z.getGuild(l);
           if (null != i && null != a) return (0, m.jW)(e, async () => {
             let {
@@ -393,7 +393,7 @@ class U extends i.PureComponent {
       }, null != (n = e.key) ? n : t)
     }), D(this, "renderUserQuickSelectItem", (e, t) => {
       var n;
-      if (e.user instanceof x.Z) {
+      if (e.user instanceof b.Z) {
         let t = e.user;
         return (0, r.jsxs)(d.lo1, {
           value: t.id,
@@ -454,7 +454,7 @@ class U extends i.PureComponent {
           valueLabel: P.intl.string(P.t.an9Ry8),
           value: null
         },
-        m = [u, ...s].map(e => e instanceof x.Z ? {
+        m = [u, ...s].map(e => e instanceof b.Z ? {
           label: e.username,
           value: e.id,
           user: e

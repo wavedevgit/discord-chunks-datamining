@@ -1,6 +1,6 @@
 /** Chunk was on 22988 **/
 n.d(t, {
-  Z: () => x
+  Z: () => b
 }), n(953529), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -106,7 +106,7 @@ let f = e => {
       })]
     })
   },
-  x = () => {
+  b = () => {
     let {
       guild: e
     } = (0, l.e7)([u.Z], () => u.Z.getProps()), [t, n] = i.useState(0), [o, g] = i.useState(!1);

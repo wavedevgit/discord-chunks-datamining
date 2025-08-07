@@ -16,8 +16,8 @@ var r = n(255367),
   p = n(852679),
   h = n(357156),
   f = n(713081),
-  x = n(151494),
-  b = n(639777),
+  b = n(151494),
+  x = n(639777),
   j = n(626135),
   v = n(267642),
   _ = n(926491),
@@ -124,7 +124,7 @@ let w = (e, t) => e < (0, v.A3)(I.Eu4.NONE) ? I.Eu4.NONE : e < (0, v.A3)(I.Eu4.T
       return null != (e = _.Z.getStickersByGuildId(t.id)) ? e : []
     }, [t]), {
       analyticsLocations: u
-    } = (0, m.ZP)(), j = (0, x.Z)(t.id), Z = t.features.has(I.oNc.MORE_STICKERS) ? I.Eu4.TIER_3 : t.premiumTier, k = t.features.has(I.oNc.MORE_STICKERS) ? I.oCV[I.Eu4.TIER_3] : j, L = (0, b.Z)(t.id);
+    } = (0, m.ZP)(), j = (0, b.Z)(t.id), Z = t.features.has(I.oNc.MORE_STICKERS) ? I.Eu4.TIER_3 : t.premiumTier, k = t.features.has(I.oNc.MORE_STICKERS) ? I.oCV[I.Eu4.TIER_3] : j, L = (0, x.Z)(t.id);
     if (i.useEffect(() => {
         window.dispatchEvent(new Event("resize"))
       }, [d]), l) return (0, r.jsx)(c.$jN, {});
@@ -183,13 +183,13 @@ let w = (e, t) => e < (0, v.A3)(I.Eu4.NONE) ? I.Eu4.NONE : e < (0, v.A3)(I.Eu4.T
             onSetRef: u,
             tier: m,
             tiers: p,
-            tierIndex: x
+            tierIndex: b
           } = e,
           {
-            canCreateExpressions: b,
+            canCreateExpressions: x,
             canManageGuildExpression: _
           } = (0, h.Gw)(t),
-          O = p[x - 1],
+          O = p[b - 1],
           C = null != O ? (0, v.A3)(O.tier) : 0,
           R = (0, v.A3)(m.tier, t),
           G = (0, v.ig)(m.tier),
@@ -197,7 +197,7 @@ let w = (e, t) => e < (0, v.A3)(I.Eu4.NONE) ? I.Eu4.NONE : e < (0, v.A3)(I.Eu4.T
           B = U.length > 0,
           F = Z < m.tier,
           H = w(d.length, t),
-          z = b && !F && H === m.tier && R !== U.length,
+          z = x && !F && H === m.tier && R !== U.length,
           W = z || U.length > 0,
           V = R - C,
           Y = n(872732),
@@ -213,8 +213,8 @@ let w = (e, t) => e < (0, v.A3)(I.Eu4.NONE) ? I.Eu4.NONE : e < (0, v.A3)(I.Eu4.T
           let e = E.Cp[m.tier];
           null != e && (0, f.H6)(t.id, e)
         }, J = S.intl.string(S.t.g7lkra), t.premiumTier + 1 !== m.tier && (ee = !0, i = S.intl.string(S.t.mTMkY2))) : (ee = !0, i = S.intl.string(S.t.hwPEJS)));
-        let et = H === x + 1 && H > Z,
-          en = z || et || x > Z;
+        let et = H === b + 1 && H > Z,
+          en = z || et || b > Z;
         return et ? l = (0, r.jsx)(g.Z, {
           guild: t,
           size: o.zx.Sizes.SMALL,
@@ -234,7 +234,7 @@ let w = (e, t) => e < (0, v.A3)(I.Eu4.NONE) ? I.Eu4.NONE : e < (0, v.A3)(I.Eu4.T
           tier: m,
           onSetRef: u,
           isAnimatedTo: s,
-          hasBottomMargin: x !== p.length - 1,
+          hasBottomMargin: b !== p.length - 1,
           withCardBody: !W,
           headerButton: l,
           showHeaderLockStatus: en,

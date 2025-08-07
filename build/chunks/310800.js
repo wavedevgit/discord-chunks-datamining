@@ -17,16 +17,16 @@ var i = n(755721),
   p = n(391181),
   h = n(388032),
   f = n(520880);
-let x = "guild-product-listings-header";
+let b = "guild-product-listings-header";
 
-function b(e) {
+function x(e) {
   let {
     guildId: t,
     handleCreateOrEditProduct: i
   } = e, m = (0, d.ue)(t, {
     publishedOnly: !1
   }), {
-    shouldRestrictUpdatingCreatorMonetizationSettings: b
+    shouldRestrictUpdatingCreatorMonetizationSettings: x
   } = (0, s.gX)(t), j = e => {
     (0, c.Je)(t, e, {
       published: !1
@@ -65,11 +65,11 @@ function b(e) {
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(l.vwX, {
       className: f.productListingsHeader,
-      id: x,
+      id: b,
       children: O ? h.intl.string(h.t.RwuStb) : h.intl.string(h.t.WKMcMT)
     }), O ? (0, r.jsx)("ul", {
       className: f.productListings,
-      "aria-labelledby": x,
+      "aria-labelledby": b,
       children: m.map(e => (0, r.jsx)("li", {
         children: (0, r.jsx)(p.Z, {
           guildId: t,
@@ -83,7 +83,7 @@ function b(e) {
             productId: e.id
           }),
           onReportProduct: () => {},
-          disabled: b
+          disabled: x
         })
       }, e.id))
     }) : (0, r.jsx)(a.Z, {
@@ -120,7 +120,7 @@ function j(e) {
       }), h.intl.string(h.t.riG6DQ)]
     }), (0, r.jsx)(l.LZC, {
       size: 24
-    }), (0, r.jsx)(b, {
+    }), (0, r.jsx)(x, {
       guildId: t,
       handleCreateOrEditProduct: a
     })]

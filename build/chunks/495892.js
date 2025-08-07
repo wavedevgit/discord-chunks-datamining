@@ -16,8 +16,8 @@ var r = n(255367),
   p = n(457414),
   h = n(154502),
   f = n(295708),
-  x = n(273504),
-  b = n(388032),
+  b = n(273504),
+  x = n(388032),
   j = n(260324);
 
 function v(e) {
@@ -136,9 +136,9 @@ function I(e) {
         onChange: s,
         checked: null != (t = null == n ? void 0 : n.enabled) && t
       }), (0, r.jsx)(a.ua7, {
-        text: b.intl.string(b.t.UKOtz8),
+        text: x.intl.string(x.t.UKOtz8),
         position: "top",
-        "aria-label": b.intl.string(b.t.PdRCRk),
+        "aria-label": x.intl.string(x.t.PdRCRk),
         children: e => (0, r.jsx)(a.P3F, _(v({}, e), {
           onClick: o,
           className: j.menuIconButton,
@@ -171,14 +171,14 @@ function S(e) {
     saveRule: m
   } = (0, g.w)(), {
     updateRule: h
-  } = (0, u.pH)(t.guildId), [f, x] = i.useState(t.enabled), y = (0, l.throttle)(async (e, n) => {
+  } = (0, u.pH)(t.guildId), [f, b] = i.useState(t.enabled), y = (0, l.throttle)(async (e, n) => {
     if (n.preventDefault(), n.stopPropagation(), !c) {
       let e = _(v({}, t), {
         enabled: !f
       });
-      x(!f);
+      b(!f);
       let n = await m(e, []);
-      null != n && (h(n), x(n.enabled))
+      null != n && (h(n), b(n.enabled))
     }
   }, 300), I = e => {
     C(e), s(e)
@@ -227,9 +227,9 @@ function S(e) {
         onChange: y,
         checked: null != f && f
       }), !n && (0, r.jsx)(a.ua7, {
-        text: b.intl.string(b.t.UKOtz8),
+        text: x.intl.string(x.t.UKOtz8),
         position: "top",
-        "aria-label": b.intl.string(b.t.PdRCRk),
+        "aria-label": x.intl.string(x.t.PdRCRk),
         children: e => (0, r.jsx)(a.P3F, _(v({}, e), {
           onClick: I,
           className: j.menuIconButton,
@@ -285,7 +285,7 @@ function T(e) {
       children: (0, r.jsx)(a.zxk, {
         variant: "primary",
         size: "sm",
-        text: t === x.fX.KEYWORD ? b.intl.string(b.t.CumH4u) : b.intl.string(b.t.oRs6mJ),
+        text: t === b.fX.KEYWORD ? x.intl.string(x.t.CumH4u) : x.intl.string(x.t.oRs6mJ),
         onClick: n
       })
     })]

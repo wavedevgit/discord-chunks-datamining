@@ -50,7 +50,7 @@ function m(e) {
     collapsed: g = !1
   } = e, [p, h] = i.useState(!g), f = i.useCallback(() => {
     h(!p)
-  }, [p, h]), x = i.useCallback(e => {
+  }, [p, h]), b = i.useCallback(e => {
     m(u(d({}, n), {
       triggerMetadata: u(d({}, n.triggerMetadata), {
         regexPatterns: e
@@ -61,7 +61,7 @@ function m(e) {
     isExpanded: p,
     collapsibleContent: (0, r.jsx)(s.Z, {
       rule: n,
-      onChangeText: x,
+      onChangeText: b,
       className: c.textAreaContainer,
       initialValue: null == (t = n.triggerMetadata) ? void 0 : t.regexPatterns
     }),
