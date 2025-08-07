@@ -169,7 +169,16 @@ function D(e) {
         guild: W
       }, "decoration"), w && (0, i.jsx)(p.Z, {
         user: k,
-        guild: W
+        guild: W,
+        titleIcon: (0, i.jsx)(l.ua7, {
+          text: y.intl.string(y.t["5AFxuL"]),
+          children: e => (0, i.jsx)(l.SrA, R(P({
+            size: "md",
+            color: "currentColor"
+          }, e), {
+            className: A.nitroWheel
+          }))
+        })
       }, "nameplate"), (0, i.jsx)(h.Z, {
         sectionTitle: (0, i.jsxs)(i.Fragment, {
           children: [y.intl.string(y.t.wR5wOj), (0, i.jsx)(l.ua7, {

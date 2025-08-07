@@ -21,40 +21,41 @@ var i = n(255367),
 function x(e) {
   let {
     user: t,
-    guild: n
+    guild: n,
+    titleIcon: x
   } = e, {
-    analyticsLocations: x
-  } = (0, o.ZP)(), _ = null != n, {
-    userNameplate: j,
-    guildNameplate: E,
-    pendingNameplate: C,
-    pendingErrors: O
-  } = (0, p.Zx)(t, null == n ? void 0 : n.id), v = [s.z.NAMEPLATE_USER_SETTINGS_PROFILE_PAGE_NEW_BADGE], [S, T] = (0, c.US)(v), I = S === s.z.NAMEPLATE_USER_SETTINGS_PROFILE_PAGE_NEW_BADGE, N = r.useCallback(() => {
-    T(h.L.TAKE_ACTION), (0, m.f)({
-      analyticsLocations: x,
+    analyticsLocations: _
+  } = (0, o.ZP)(), j = null != n, {
+    userNameplate: E,
+    guildNameplate: C,
+    pendingNameplate: O,
+    pendingErrors: v
+  } = (0, p.Zx)(t, null == n ? void 0 : n.id), S = [s.z.NAMEPLATE_USER_SETTINGS_PROFILE_PAGE_NEW_BADGE], [T, I] = (0, c.US)(S), N = T === s.z.NAMEPLATE_USER_SETTINGS_PROFILE_PAGE_NEW_BADGE, y = r.useCallback(() => {
+    I(h.L.TAKE_ACTION), (0, m.f)({
+      analyticsLocations: _,
       guildId: null == n ? void 0 : n.id
     })
-  }, [x, T, null == n ? void 0 : n.id]), y = r.useCallback(() => {
+  }, [_, I, null == n ? void 0 : n.id]), A = r.useCallback(() => {
     (null == n ? void 0 : n.id) != null ? (0, d.RH)(null) : (0, l.Rx)(null)
   }, [null == n ? void 0 : n.id]);
   return (0, i.jsx)(g.Z, {
     title: f.intl.string(f.t.x5CoXV),
-    titleIcon: I ? (0, i.jsx)(u.Z, {
+    titleIcon: N ? (0, i.jsx)(u.Z, {
       className: b.newBadge
-    }) : void 0,
-    errors: O,
+    }) : x,
+    errors: v,
     children: (0, i.jsxs)("div", {
       className: b.section,
       children: [(0, i.jsx)(a.zxk, {
         variant: "primary",
         size: "sm",
         text: f.intl.string(f.t.BwdeMz),
-        onClick: N
-      }), (void 0 === C ? (_ ? E : j) != null : null != C) && (0, i.jsx)(a.zxk, {
+        onClick: y
+      }), (void 0 === O ? (j ? C : E) != null : null != O) && (0, i.jsx)(a.zxk, {
         variant: "secondary",
         size: "sm",
         text: f.intl.string(f.t["9zwziY"]),
-        onClick: y
+        onClick: A
       })]
     })
   })
