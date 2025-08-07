@@ -2,9 +2,9 @@
 n.d(e, {
   Z: () => a
 }), n(953529);
-var r = n(255367);
+var i = n(255367);
 n(73800);
-var i = n(481060),
+var r = n(481060),
   s = n(948582);
 
 function a(t) {
@@ -15,21 +15,21 @@ function a(t) {
     header: o,
     description: c
   } = t;
-  return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)("img", {
+  return (0, i.jsxs)(i.Fragment, {
+    children: [(0, i.jsx)("img", {
       src: e,
       alt: n,
       className: s.heroImage
-    }), (0, r.jsxs)(i.hzk, {
+    }), (0, i.jsxs)(r.hzk, {
       "data-migration-pending": !0,
       className: s.body,
-      children: [(0, r.jsxs)("div", {
+      children: [(0, i.jsxs)("div", {
         className: s.textContainer,
-        children: [(0, r.jsx)(i.X6q, {
+        children: [(0, i.jsx)(r.X6q, {
           variant: "heading-xl/semibold",
           color: "header-primary",
           children: o
-        }), null != c && (0, r.jsx)(i.Text, {
+        }), null != c && (0, i.jsx)(r.Text, {
           variant: "text-md/medium",
           color: "header-secondary",
           className: s.description,

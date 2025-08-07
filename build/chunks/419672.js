@@ -22,7 +22,7 @@ let _ = function(t) {
     l.Z.open(d.oAB.CONTENT_AND_SOCIAL, null, {
       scrollPosition: T.FY.DM_SAFETY_ALERTS_V2
     }), e()
-  }, [e]), E = r.useCallback(() => {
+  }, [e]), g = r.useCallback(() => {
     _ || (b(!0), (0, o.Uj)(n).then(() => {
       e(), (0, c.t)({
         text: S.intl.string(S.t.FhgVWl),
@@ -53,7 +53,7 @@ let _ = function(t) {
           reportFalsePositiveHook: (t, e) => (0, i.jsx)(s.P3F, {
             className: x.reportFalsePositiveButton,
             tag: "span",
-            onClick: E,
+            onClick: g,
             children: t
           }, e)
         })
