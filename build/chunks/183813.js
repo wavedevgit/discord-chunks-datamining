@@ -1,30 +1,30 @@
 /** Chunk was on 31505 **/
-r.d(t, {
+t.d(r, {
   S: () => b
 });
-var n = r(255367),
-  i = r(73800),
-  o = r(512722),
-  l = r.n(o),
-  a = r(442837),
-  s = r(481060),
-  d = r(204418),
-  C = r(628952),
-  c = r(314404),
-  u = r(594174),
-  p = r(626135),
-  _ = r(987209),
-  f = r(563132),
-  m = r(409813),
-  x = r(27034),
-  h = r(981631),
-  j = r(388032),
-  L = r(529190);
+var n = t(255367),
+  i = t(73800),
+  o = t(512722),
+  a = t.n(o),
+  l = t(442837),
+  s = t(481060),
+  d = t(204418),
+  C = t(628952),
+  c = t(314404),
+  u = t(594174),
+  p = t(626135),
+  _ = t(987209),
+  f = t(563132),
+  m = t(409813),
+  x = t(27034),
+  h = t(981631),
+  j = t(388032),
+  L = t(529190);
 
 function b(e) {
   let {
-    handleStepChange: t,
-    handleClose: r
+    handleStepChange: r,
+    handleClose: t
   } = e, {
     selectedPlan: o,
     selectedSkuId: b,
@@ -33,22 +33,22 @@ function b(e) {
     setSelectedGiftingPromotionReward: y,
     selectedGiftingPromotionReward: S,
     claimableRewards: E
-  } = (0, _.wD)(), v = (0, a.e7)([u.default], () => u.default.getCurrentUser());
+  } = (0, _.wD)(), v = (0, l.e7)([u.default], () => u.default.getCurrentUser());
   i.useEffect(() => {
     let e = null != E && E.length > 0;
     null == S && e && y(E[0])
   }, [E, S, y]);
   let I = e => {
-    let t = e.skuId;
+    let r = e.skuId;
     return (0, n.jsx)(C.Z, {
-      skuId: t,
+      skuId: r,
       price: j.intl.string(j.t.QQsaCQ),
-      isSelected: t === (null == S ? void 0 : S.skuId),
+      isSelected: r === (null == S ? void 0 : S.skuId),
       onSelect: () => y(e),
       className: L.giftSelectItem
-    }, t)
+    }, r)
   };
-  l()(null != o, "Expected plan to selected"), l()(null != b, "Expected selectedSkuId"), l()(null != g, "Step should be set");
+  a()(null != o, "Expected plan to selected"), a()(null != b, "Expected selectedSkuId"), a()(null != g, "Step should be set");
   let w = null == E ? void 0 : E.map(e => I(e)),
     O = null != S && null != v ? (0, n.jsx)(d.Z, {
       avatarDecorationOverride: {
@@ -66,9 +66,9 @@ function b(e) {
             null != v && null != S && p.default.track(h.rMx.GIFT_PROMOTION_REWARD_SELECTED, {
               user_id: v.id,
               reward_sku_id: S.skuId
-            }), t(e)
+            }), r(e)
           },
-          onBackClick: () => t(m.h8.PLAN_SELECT),
+          onBackClick: () => r(m.h8.PLAN_SELECT),
           shouldRenderUpdatedPaymentModal: !0,
           showBackButton: !0,
           planOptions: [o.id],
@@ -89,7 +89,7 @@ function b(e) {
         justify: "space-between",
         align: "center",
         children: [M, (0, n.jsx)(s.olH, {
-          onClick: r
+          onClick: t
         })]
       })
     }), (0, n.jsx)(s.hzk, {

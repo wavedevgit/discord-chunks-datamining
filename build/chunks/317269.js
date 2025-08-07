@@ -97,7 +97,7 @@ function _(t) {
     } = t,
     {
       enablePremiumBrandRefresh: b,
-      isEligibleForPremiumBrandRefreshWowMomentConfirmation: k
+      isDisplayingWowMomentConfirmation: k
     } = (0, u.JL)(),
     {
       theme: w

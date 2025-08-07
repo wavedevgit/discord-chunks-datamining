@@ -1,0 +1,1 @@
+{"id":"453227","type":"store","data":{"name":"WowMomentConfirmationStore","functions":[{"name":"getState","args":[]},{"name":"isDisplayingWowMomentConfirmation","args":[]}],"events":["LOGOUT","WOW_MOMENT_CONFIRMATION_SET_IS_DISPLAYING_WOW_MOMENT_CONFIRMATION"]},"fromModule":{"id":"web.js"}}

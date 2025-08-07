@@ -19,8 +19,8 @@ var r = n(255367),
   h = n(211242),
   m = n(975298),
   g = n(892041),
-  E = n(47280),
-  b = n(164275),
+  E = n(453227),
+  b = n(47280),
   y = n(695346),
   O = n(882712),
   v = n(855775),
@@ -103,7 +103,7 @@ function J(e) {
     referralCode: er,
     excludeSubscriptionPlansBySKU: ei = !1,
     excludeSKUPurchasePreviews: eo = !1,
-    wasTier2Premium: ea = !1
+    wasTier2PremiumBeforePurchase: ea = !1
   } = e, es = (0, B.Z)(), el = (0, h.Q)(), ec = (0, D.Z)(), eu = Q[0], ed = (0, c.e7)([I.Z], () => I.Z.get(eu), [eu]), ef = null == ed ? void 0 : ed.eligiblePaymentGateways, {
     paymentSources: e_,
     hasPaymentSources: ep,
@@ -202,10 +202,14 @@ function J(e) {
     tO = (0, c.e7)([T.Z], () => null != eB ? T.Z.getForSKU(eB) : null, [eB]),
     [tv, tI] = i.useState(null),
     tT = null != (a = null == Y ? void 0 : Y.inReverseTrial) && a && !J,
-    tS = (0, E.Z)({
+    tS = (0, b.Z)({
       location: "PaymentModal"
     }) && tn,
-    tA = (0, b.P)(J, ea, eB),
+    {
+      isDisplayingWowMomentConfirmation: tA
+    } = (0, c.cj)([E.Z], () => ({
+      isDisplayingWowMomentConfirmation: E.Z.isDisplayingWowMomentConfirmation
+    })),
     tN = tS ? H.premiumBrandRefreshBackground : void 0,
     {
       enabled: tC
@@ -295,8 +299,9 @@ function J(e) {
       setInvoicePreview: tI,
       inReverseTrial: tT,
       enablePremiumBrandRefresh: tS,
-      isEligibleForPremiumBrandRefreshWowMomentConfirmation: tA,
-      premiumBrandRefreshBackgroundClassName: tN
+      isDisplayingWowMomentConfirmation: tA,
+      premiumBrandRefreshBackgroundClassName: tN,
+      wasTier2PremiumBeforePurchase: ea
     }),
     children: (0, r.jsx)(o.Elements, {
       options: F.OBo,

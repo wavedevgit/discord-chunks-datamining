@@ -1,22 +1,22 @@
 /** Chunk was on 31505 **/
-r.d(t, {
+t.d(r, {
   Z: () => i
 });
-var n = r(255367);
-r(73800);
+var n = t(255367);
+t(73800);
 let i = e => {
   let {
-    className: t,
-    width: r = 83,
+    className: r,
+    width: t = 83,
     height: i = 45
   } = e;
   return (0, n.jsxs)("svg", {
-    width: r,
+    width: t,
     height: i,
     viewBox: "0 0 83 45",
     fill: "none",
     xmlns: "http://www.w3.org/2000/svg",
-    className: t,
+    className: r,
     children: [(0, n.jsxs)("g", {
       opacity: "0.4",
       children: [(0, n.jsx)("path", {

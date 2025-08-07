@@ -32,7 +32,7 @@ function h(e) {
     giftRecipient: I,
     isEligibleForTrial: T,
     enablePremiumBrandRefresh: S,
-    isEligibleForPremiumBrandRefreshWowMomentConfirmation: A
+    isDisplayingWowMomentConfirmation: A
   } = e, N = (0, i.e7)([a.Z], () => a.Z.useReducedMotion), C = g ? f.nL.WINTER : f.nL.DEFAULT, R = () => {
     switch (t) {
       case s.h8.PLAN_SELECT:
@@ -58,7 +58,7 @@ function h(e) {
       innerClassName: p.closeButtonInner,
       "data-migration-pending": !0
     })]
-  }) : S || A && t === s.h8.CONFIRM ? (0, r.jsx)(c.Z, {
+  }) : S || A ? (0, r.jsx)(c.Z, {
     hideCloseOnFullScreen: !0,
     hideCloseButton: b,
     upgradeToPremiumType: m,

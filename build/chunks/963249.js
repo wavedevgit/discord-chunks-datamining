@@ -151,7 +151,7 @@ function A(e) {
         returnRef: V,
         subscription: H,
         skipConfirm: !!Y,
-        wasTier2Premium: q
+        wasTier2PremiumBeforePurchase: q
       }))
     }
   }, {

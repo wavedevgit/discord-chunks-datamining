@@ -42,7 +42,7 @@ function T(e) {
     purchaseType: R,
     selectedSku: P,
     enablePremiumBrandRefresh: w,
-    isEligibleForPremiumBrandRefreshWowMomentConfirmation: D
+    isDisplayingWowMomentConfirmation: D
   } = (0, g.JL)(), {
     isGift: L,
     selectedGiftStyle: x,
@@ -83,7 +83,7 @@ function T(e) {
       useWinterTheme: K,
       isEligibleForTrial: Z,
       enablePremiumBrandRefresh: w,
-      isEligibleForPremiumBrandRefreshWowMomentConfirmation: D
+      isDisplayingWowMomentConfirmation: D
     })), e
   }, [x, T, C, n, N, S, A, Z, H, k, G, j, R, L, M, K, w, D])
 }

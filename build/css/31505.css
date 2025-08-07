@@ -1,6 +1,6 @@
 /**
   Module ID: 31505
-  Original File Name: 77ea65f6652bf20a
+  Original File Name: 6a27ad2c50431be1
 **/
 .videoContainer__1bd8a {
     transform: translate(calc(-50% + 4px),-50%);
@@ -29,7 +29,6 @@
 
 .entryAnimationContainer__1bd8a {
     animation: wowMomentScaleIn__1bd8a .3s ease,wowMomentScaleSettle__1bd8a .3s ease .3s;
-    transform: scale(1);
     will-change: transform
 }
 
@@ -1091,4 +1090,4 @@
     flex-direction: row-reverse
 }
 
-/*# sourceMappingURL=77ea65f6652bf20a.css.map*/
+/*# sourceMappingURL=6a27ad2c50431be1.css.map*/
