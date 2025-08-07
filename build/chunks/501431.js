@@ -45,28 +45,28 @@ function p(e, t) {
   }), e
 }
 
-function g(e, t) {
+function f(e, t) {
   let r = new Set(e);
   return r.has(t) ? r.delete(t) : r.add(t), r
 }
-let f = {
+let g = {
     sortType: o.E.RECENCY,
     sortDirection: i.F.DESC
   },
-  h = {
+  b = {
     sortType: o.E.POPULARITY,
     sortDirection: i.F.DESC
   },
-  b = {
+  h = {
     sortType: o.E.RELEVANCE,
     sortDirection: i.F.DESC
   },
-  _ = {
+  m = {
     itemTypeFilters: new Set,
     colorFilters: new Set,
     themeFilters: new Set,
     orbEligible: !1,
-    sort: f,
+    sort: g,
     searchQuery: "",
     queryPageSize: 0,
     queryPageOffset: 0,
@@ -75,17 +75,17 @@ let f = {
     userHasSelectedSort: !1,
     currentTab: null
   },
-  m = e => {
+  _ = e => {
     let {
       colorFilters: t,
       themeFilters: r,
       searchQuery: n,
       itemTypeFilters: l
     } = e;
-    return t.size > 0 || r.size > 0 || "" !== n.trim() ? b : l.size > 0 ? h : f
+    return t.size > 0 || r.size > 0 || "" !== n.trim() ? h : l.size > 0 ? b : g
   },
-  v = (0, l.U)((0, a.XR)((e, t) => p(d({}, _), {
-    hasDefaultFilters: () => !t().hasFilters() && t().sort.sortType === f.sortType && t().sort.sortDirection === f.sortDirection,
+  v = (0, l.U)((0, a.XR)((e, t) => p(d({}, m), {
+    hasDefaultFilters: () => !t().hasFilters() && t().sort.sortType === g.sortType && t().sort.sortDirection === g.sortDirection,
     hasFilters: () => {
       let {
         itemTypeFilters: e,
@@ -106,32 +106,32 @@ let f = {
     },
     onToggleItemType: t => {
       e(e => {
-        let r = g(e.itemTypeFilters, t),
+        let r = f(e.itemTypeFilters, t),
           n = p(d({}, e), {
             itemTypeFilters: r,
             queryPageOffset: 0
           });
-        return e.userHasSelectedSort || (n.sort = m(n)), n
+        return e.userHasSelectedSort || (n.sort = _(n)), n
       })
     },
     onToggleColor: t => {
       e(e => {
-        let r = g(e.colorFilters, t),
+        let r = f(e.colorFilters, t),
           n = p(d({}, e), {
             colorFilters: r,
             queryPageOffset: 0
           });
-        return e.userHasSelectedSort || (n.sort = m(n)), n
+        return e.userHasSelectedSort || (n.sort = _(n)), n
       })
     },
     onToggleTheme: t => {
       e(e => {
-        let r = g(e.themeFilters, t),
+        let r = f(e.themeFilters, t),
           n = p(d({}, e), {
             themeFilters: r,
             queryPageOffset: 0
           });
-        return e.userHasSelectedSort || (n.sort = m(n)), n
+        return e.userHasSelectedSort || (n.sort = _(n)), n
       })
     },
     onToggleOrbEligible: () => {
@@ -140,7 +140,7 @@ let f = {
           orbEligible: !e.orbEligible,
           queryPageOffset: 0
         });
-        return e.userHasSelectedSort || (t.sort = m(t)), t
+        return e.userHasSelectedSort || (t.sort = _(t)), t
       })
     },
     onSetSort: t => {
@@ -159,7 +159,7 @@ let f = {
           searchQuery: t,
           queryPageOffset: 0
         });
-        return "" !== t.trim() ? (r.sort = b, r.userHasSelectedSort = !1) : e.userHasSelectedSort || (r.sort = m(r)), r
+        return "" !== t.trim() ? (r.sort = h, r.userHasSelectedSort = !1) : e.userHasSelectedSort || (r.sort = _(r)), r
       })
     },
     setQueryPageSize: t => {
@@ -182,7 +182,7 @@ let f = {
             itemTypeFilters: r,
             queryPageOffset: 0
           });
-        return e.userHasSelectedSort || (n.sort = m(n)), n
+        return e.userHasSelectedSort || (n.sort = _(n)), n
       })
     },
     clearFilters: () => {
@@ -198,7 +198,7 @@ let f = {
         queryPageSize: r,
         queryPageOffset: n
       } = t();
-      e(p(d({}, _), {
+      e(p(d({}, m), {
         queryPageSize: r,
         queryPageOffset: n
       }))
@@ -214,7 +214,7 @@ let f = {
       })
     }
   }))),
-  O = e => {
+  C = e => {
     let {
       itemTypeFilters: t,
       colorFilters: r,
@@ -237,7 +237,7 @@ let f = {
       search: "" !== i ? i : void 0
     }
   },
-  C = e => {
+  O = e => {
     let t = e.skus,
       r = e.pagination.total,
       n = e.pagination.has_more;
@@ -261,7 +261,7 @@ let f = {
           r(!0);
           try {
             let t = await (0, s.y)(n);
-            e(C(t))
+            e(O(t))
           } catch (e) {
             var l;
             t(null != (l = null == e ? void 0 : e.message) ? l : "Unknown error")
@@ -271,15 +271,15 @@ let f = {
         };
         l && 0 !== n.limit && a()
       };
-      n(O(v.getState()));
-      let a = v.subscribe(O, n, {
+      n(C(v.getState()));
+      let a = v.subscribe(C, n, {
           equalityFn: (e, t) => JSON.stringify(e) === JSON.stringify(t)
         }),
         i = v.subscribe(e => e.hasFilters(), (e, t) => {
           if (!e && t) {
             let e = v.getState();
             e.userHasSelectedSort || v.setState({
-              sort: m(e)
+              sort: _(e)
             })
           }
         });

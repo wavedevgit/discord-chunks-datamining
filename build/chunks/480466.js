@@ -1,16 +1,16 @@
-/** Chunk was on 47435 **/
-r.d(t, {
-  Z: () => i
-}), r(388685);
-var a = r(73800);
-let i = function(e, t) {
-  let [r, i] = a.useState(e);
-  return a.useEffect(() => {
-    let r = setTimeout(() => {
-      i(e)
+/** Chunk was on 83667 **/
+s.d(t, {
+  Z: () => n
+}), s(388685);
+var r = s(73800);
+let n = function(e, t) {
+  let [s, n] = r.useState(e);
+  return r.useEffect(() => {
+    let s = setTimeout(() => {
+      n(e)
     }, t);
     return () => {
-      clearTimeout(r)
+      clearTimeout(s)
     }
-  }, [e, t]), r
+  }, [e, t]), s
 }

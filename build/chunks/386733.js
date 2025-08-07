@@ -137,7 +137,7 @@ let I = e => {
     }), (0, c.ZDy)(async () => {
       let {
         default: e
-      } = await n.e("47435").then(n.bind(n, 204387));
+      } = await Promise.all([n.e("83667"), n.e("715")]).then(n.bind(n, 204387));
       return n => (0, i.jsx)(e, T(S({}, n), {
         sourceAnalyticsLocations: t
       }))

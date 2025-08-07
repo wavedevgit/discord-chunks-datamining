@@ -53,7 +53,8 @@ function h(e) {
       secondaryValue: null != (t = n[1]) ? t : void 0,
       onChange: _,
       onChangeGradientColors: O,
-      isGradient: S
+      isGradient: S,
+      gradientButtonClassName: m.gradientPicker
     })]
   })
 }

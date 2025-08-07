@@ -1,86 +1,86 @@
-/** Chunk was on 47435 **/
-r.d(t, {
-  Z: () => Z
-}), r(388685);
-var a = r(255367);
-r(73800);
-var i = r(120356),
-  s = r.n(i),
-  n = r(512722),
-  l = r.n(n),
-  o = r(442837),
-  C = r(780384),
-  d = r(481060),
-  c = r(493683),
-  x = r(37234),
-  f = r(410030),
-  p = r(518950),
-  u = r(819640),
-  h = r(63063),
-  m = r(51144),
-  j = r(281494),
-  _ = r(276444),
-  g = r(792451),
-  L = r(814667),
-  y = r(263885),
-  v = r(981631),
-  S = r(388032),
-  w = r(974149);
-let b = (e, t) => {
-    u.Z.hasLayers() && (0, x.xf)(), c.Z.openPrivateChannel({
+/** Chunk was on 715 **/
+t.d(r, {
+  Z: () => B
+}), t(388685);
+var a = t(255367);
+t(73800);
+var i = t(120356),
+  C = t.n(i),
+  s = t(512722),
+  l = t.n(s),
+  n = t(442837),
+  o = t(780384),
+  d = t(481060),
+  p = t(493683),
+  c = t(37234),
+  x = t(410030),
+  f = t(518950),
+  _ = t(819640),
+  h = t(63063),
+  u = t(51144),
+  j = t(281494),
+  L = t(276444),
+  m = t(792451),
+  y = t(814667),
+  g = t(263885),
+  F = t(981631),
+  S = t(388032),
+  w = t(974149);
+let U = (e, r) => {
+    _.Z.hasLayers() && (0, c.xf)(), p.Z.openPrivateChannel({
       recipientIds: e
-    }), t()
+    }), r()
   },
-  N = e => {
+  O = e => {
     let {
-      user: t,
-      trialCreationResult: r,
+      user: r,
+      trialCreationResult: t,
       onClose: i
     } = e, {
-      avatarSrc: n,
+      avatarSrc: s,
       eventHandlers: l
-    } = (0, p.Z)({
-      userId: null == t ? void 0 : t.id,
+    } = (0, f.Z)({
+      userId: null == r ? void 0 : r.id,
       size: d.EFr.SIZE_56
-    }), o = m.ZP.getName(t), C = t.username !== o && r === j.Fz.SUCCESS, c = r === j.Fz.FAIL;
+    }), n = u.ZP.getName(r), o = r.username !== n && t === j.Fz.SUCCESS, p = t === j.Fz.FAIL;
     return (0, a.jsxs)("div", {
       className: w.referredUserRowContainer,
       children: [(0, a.jsx)(d.qEK, function(e) {
-        for (var t = 1; t < arguments.length; t++) {
-          var r = null != arguments[t] ? arguments[t] : {},
-            a = Object.keys(r);
-          "function" == typeof Object.getOwnPropertySymbols && (a = a.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(r, e).enumerable
-          }))), a.forEach(function(t) {
+        for (var r = 1; r < arguments.length; r++) {
+          var t = null != arguments[r] ? arguments[r] : {},
+            a = Object.keys(t);
+          "function" == typeof Object.getOwnPropertySymbols && (a = a.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
+            return Object.getOwnPropertyDescriptor(t, e).enumerable
+          }))), a.forEach(function(r) {
             var a;
-            a = r[t], t in e ? Object.defineProperty(e, t, {
+            a = t[r], r in e ? Object.defineProperty(e, r, {
               value: a,
               enumerable: !0,
               configurable: !0,
               writable: !0
-            }) : e[t] = a
+            }) : e[r] = a
           })
         }
         return e
       }({
-        imageClassName: s()({
-          [w.erroredAvatar]: c
+        imageClassName: C()({
+          [w.erroredAvatar]: p
         }),
-        src: n,
-        "aria-label": o,
+        src: s,
+        "aria-label": n,
         size: d.EFr.SIZE_56
       }, l)), (0, a.jsxs)("div", {
         className: w.referredUserRowBody,
-        children: [c ? (0, a.jsxs)(a.Fragment, {
+        children: [p ? (0, a.jsxs)(a.Fragment, {
           children: [(0, a.jsx)(d.Text, {
             className: w.errorDisplayName,
             variant: "text-md/medium",
-            children: o
+            children: n
           }), (0, a.jsx)(d.Text, {
             variant: "text-md/medium",
             className: w.userName,
             children: S.intl.format(S.t.RO3T4O, {
-              userName: o
+              userName: n
             })
           })]
         }) : (0, a.jsx)(d.ua7, {
@@ -88,47 +88,47 @@ let b = (e, t) => {
           position: "right",
           children: e => {
             let {
-              onMouseEnter: r,
-              onMouseLeave: s
+              onMouseEnter: t,
+              onMouseLeave: C
             } = e;
             return (0, a.jsx)(d.P3F, {
-              onClick: () => b(t.id, i),
+              onClick: () => U(r.id, i),
               className: w.displayNameClickableContainer,
-              onMouseEnter: r,
-              onMouseLeave: s,
+              onMouseEnter: t,
+              onMouseLeave: C,
               children: (0, a.jsx)(d.Text, {
                 variant: "text-md/medium",
                 className: w.displayName,
-                children: o
+                children: n
               })
             })
           }
-        }), C && (0, a.jsx)(d.Text, {
+        }), o && (0, a.jsx)(d.Text, {
           variant: "text-md/medium",
           className: w.userName,
-          children: t.username
+          children: r.username
         })]
       })]
     })
   },
-  Z = e => {
+  B = e => {
     let {
-      selectedUsers: t,
-      trialCreationResult: r,
+      selectedUsers: r,
+      trialCreationResult: t,
       onClose: i
-    } = e, s = [...t].map(e => (0, a.jsx)(N, {
+    } = e, C = [...r].map(e => (0, a.jsx)(O, {
       user: e,
-      trialCreationResult: r.get(e.id),
+      trialCreationResult: t.get(e.id),
       onClose: i
-    }, e.id)), n = (0, o.e7)([_.Z], () => _.Z.getReferralsRemaining());
-    l()(null !== n, "Referrals remaining should not be null");
-    let c = (0, f.Fg)(),
-      x = (0, C.ap)(c) ? L.Z : g.Z,
-      p = S.intl.string(S.t.Pcb7KC),
-      u = [...r.values()].filter(e => e === j.Fz.SUCCESS).length;
-    return n > 0 && (p = S.intl.formatToPlainString(S.t.iWtOfH, {
-      numReferrals: u
-    })), 0 === u && (p = S.intl.string(S.t["7VBEub"])), (0, a.jsxs)("div", {
+    }, e.id)), s = (0, n.e7)([L.Z], () => L.Z.getReferralsRemaining());
+    l()(null !== s, "Referrals remaining should not be null");
+    let p = (0, x.Fg)(),
+      c = (0, o.ap)(p) ? y.Z : m.Z,
+      f = S.intl.string(S.t.Pcb7KC),
+      _ = [...t.values()].filter(e => e === j.Fz.SUCCESS).length;
+    return s > 0 && (f = S.intl.formatToPlainString(S.t.iWtOfH, {
+      numReferrals: _
+    })), 0 === _ && (f = S.intl.string(S.t["7VBEub"])), (0, a.jsxs)("div", {
       className: w.confrimationContainer,
       children: [(0, a.jsx)(d.P3F, {
         onClick: i,
@@ -138,20 +138,20 @@ let b = (e, t) => {
           width: 20,
           height: 20
         })
-      }), (0, a.jsx)(x, {
+      }), (0, a.jsx)(c, {
         className: w.headerIcon
       }), (0, a.jsx)(d.X6q, {
         variant: "heading-lg/bold",
         className: w.heading,
-        children: p
+        children: f
       }), (0, a.jsx)("div", {
         className: w.confirmedUserContainer,
-        children: s
+        children: C
       }), (0, a.jsx)(d.Text, {
         variant: "text-md/medium",
         children: S.intl.format(S.t.CZaMHh, {
-          days: y.p,
-          helpdeskArticle: h.Z.getArticleURL(v.BhN.REFERRAL_PROGRAM)
+          days: g.p,
+          helpdeskArticle: h.Z.getArticleURL(F.BhN.REFERRAL_PROGRAM)
         })
       })]
     })

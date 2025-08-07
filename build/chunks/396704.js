@@ -7,10 +7,10 @@ n.d(t, {
   VG: () => _,
   o8: () => h
 }), n(388685), n(415506);
-var r = n(308521),
-  i = n(97519),
-  o = n(570833),
-  a = n(493773);
+var r = n(73800),
+  i = n(308521),
+  o = n(97519),
+  a = n(570833);
 
 function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -53,21 +53,21 @@ function u(e, t) {
 var d = function(e) {
   return e.Loading = "loading", e.Loaded = "loaded", e
 }({});
-let f = (0, i.U)(() => ({
+let f = (0, o.U)(() => ({
   riveAssetCache: new Map,
   riveOverrideCache: {}
 }));
 
 function _(e) {
   let t = h(e),
-    n = f(t => t.riveAssetCache.get(e));
-  return ((0, a.ZP)(() => {
-    if (null != t || f.getState().riveAssetCache.has(e)) return;
-    let n = new r.RiveFile({
+    n = f(t => null == e ? null : t.riveAssetCache.get(e));
+  return ((0, r.useEffect)(() => {
+    if (null == e || null != t || f.getState().riveAssetCache.has(e)) return;
+    let n = new i.RiveFile({
         src: e
       }),
-      i = () => {
-        n.init(), n.on(r.EventType.Load, () => {
+      r = () => {
+        n.init(), n.on(i.EventType.Load, () => {
           let t = {
             status: "loaded",
             buffer: n.buffer
@@ -75,12 +75,12 @@ function _(e) {
           f.setState(n => ({
             riveAssetCache: n.riveAssetCache.set(e, t)
           }))
-        }), n.on(r.EventType.LoadError, t => {
+        }), n.on(i.EventType.LoadError, t => {
           console.error("Rive file load error", e, t)
         })
       };
-    (0, o.f)(i)
-  }), null != t) ? {
+    (0, a.f)(r)
+  }, [e, t]), null != t) ? {
     status: "loaded",
     buffer: t
   } : null != n ? n : {
@@ -99,7 +99,8 @@ function p(e, t) {
 }
 
 function h(e) {
-  return f(e => e.riveOverrideCache)[e]
+  let t = f(e => e.riveOverrideCache);
+  return null == e ? null : t[e]
 }
 
 function m(e) {

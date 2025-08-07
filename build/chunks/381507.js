@@ -1,25 +1,25 @@
 /** Chunk was on 31505 **/
-t.d(r, {
+r.d(t, {
   Z: () => f
 });
-var n = t(255367);
-t(73800);
-var i = t(780384),
-  o = t(481060),
-  l = t(410030),
-  a = t(518950),
-  s = t(51144),
-  d = t(105759),
-  C = t(898969),
-  c = t(703614),
-  u = t(182294),
-  p = t(388032),
-  _ = t(332546);
+var n = r(255367);
+r(73800);
+var i = r(780384),
+  o = r(481060),
+  l = r(410030),
+  a = r(518950),
+  s = r(51144),
+  d = r(105759),
+  C = r(898969),
+  c = r(703614),
+  u = r(182294),
+  p = r(388032),
+  _ = r(332546);
 let f = () => {
   let e = (0, d.Z)(),
     {
-      avatarSrc: r,
-      eventHandlers: t
+      avatarSrc: t,
+      eventHandlers: r
     } = (0, a.Z)({
       userId: null == e ? void 0 : e.id,
       size: u.EF.SIZE_32,
@@ -34,27 +34,27 @@ let f = () => {
     children: [(0, n.jsx)("div", {
       className: _.avatarContainer,
       children: (0, n.jsx)(o.qEK, function(e) {
-        for (var r = 1; r < arguments.length; r++) {
-          var t = null != arguments[r] ? arguments[r] : {},
-            n = Object.keys(t);
-          "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(t, e).enumerable
-          }))), n.forEach(function(r) {
+        for (var t = 1; t < arguments.length; t++) {
+          var r = null != arguments[t] ? arguments[t] : {},
+            n = Object.keys(r);
+          "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
+            return Object.getOwnPropertyDescriptor(r, e).enumerable
+          }))), n.forEach(function(t) {
             var n;
-            n = t[r], r in e ? Object.defineProperty(e, r, {
+            n = r[t], t in e ? Object.defineProperty(e, t, {
               value: n,
               enumerable: !0,
               configurable: !0,
               writable: !0
-            }) : e[r] = n
+            }) : e[t] = n
           })
         }
         return e
       }({
-        src: r,
+        src: t,
         "aria-label": e.username,
         size: u.EF.SIZE_32
-      }, t))
+      }, r))
     }), (0, n.jsx)(o.Text, {
       variant: "text-xs/bold",
       className: _.bannerHeader,

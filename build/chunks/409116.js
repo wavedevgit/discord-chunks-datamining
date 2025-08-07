@@ -30,44 +30,44 @@ let p = e => {
     },
     nitroIconType: l,
     nitroIconSize: p = "md",
-    className: g,
-    discountOfferAmount: f,
-    discount: h = s.f_,
-    variant: b = "heading-md/semibold"
-  } = e, _ = null != f, m = (0, o.qr)(t, r), v = h !== s.f_ && h.discountPercentage >= 5 && !_ ? (0, n.jsxs)(n.Fragment, {
+    className: f,
+    discountOfferAmount: g,
+    discount: b = s.f_,
+    variant: h = "heading-md/semibold"
+  } = e, m = null != g, _ = (0, o.qr)(t, r), v = b !== s.f_ && b.discountPercentage >= 5 && !m ? (0, n.jsxs)(n.Fragment, {
     children: [(0, n.jsx)(i.nn4, {
       children: c.intl.format(c.t.niC6DA, {
-        price: m,
-        discountPercentage: h.discountPercentage
+        price: _,
+        discountPercentage: b.discountPercentage
       })
     }), (0, n.jsx)("span", {
       "aria-hidden": !0,
-      children: m
+      children: _
     }), (0, n.jsxs)(i.Text, {
-      variant: b,
+      variant: h,
       color: "text-feedback-positive",
       className: u.discount,
       "aria-hidden": !0,
-      children: ["(-", h.discountPercentage, "%)"]
+      children: ["(-", b.discountPercentage, "%)"]
     })]
   }) : (0, n.jsxs)(n.Fragment, {
     children: [(0, n.jsx)(i.nn4, {
       children: c.intl.format(c.t["6C36MD"], {
-        price: m
+        price: _
       })
     }), (0, n.jsx)("span", {
       "aria-hidden": !0,
       className: a()({
-        [u.priceStrikethrough]: _
-      }, g),
-      children: m
+        [u.priceStrikethrough]: m
+      }, f),
+      children: _
     })]
   });
   return (0, n.jsxs)(i.Text, {
-    variant: b,
+    variant: h,
     className: a()({
-      [u.discountBackgroundColor]: _
-    }, u.container, g),
+      [u.discountBackgroundColor]: m
+    }, u.container, f),
     children: ["tooltip" === l ? (0, n.jsx)(i.ua7, {
       text: c.intl.string(c.t.MPFyJy),
       "aria-label": c.intl.string(c.t.X3Ekj4),
@@ -113,17 +113,17 @@ let p = e => {
       size: p,
       color: "currentColor",
       className: u.nitroIcon
-    }) : null, v, _ && (0, n.jsxs)(i.X6q, {
+    }) : null, v, m && (0, n.jsxs)(i.X6q, {
       variant: "heading-md/semibold",
       className: u.discountPill,
       children: [(0, n.jsx)(i.nn4, {
         children: c.intl.format(c.t.rItDb2, {
-          discountOfferAmount: f
+          discountOfferAmount: g
         })
       }), (0, n.jsx)("span", {
         "aria-hidden": !0,
         children: c.intl.formatToPlainString(c.t.AYcXGR, {
-          discountOfferAmount: f
+          discountOfferAmount: g
         })
       })]
     })]

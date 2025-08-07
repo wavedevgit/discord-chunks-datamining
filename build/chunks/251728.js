@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Y: () => f
+  Y: () => _
 });
 var r = n(685816),
   i = n(549616),
@@ -9,10 +9,11 @@ var r = n(685816),
   a = n(794934),
   s = n(885577),
   l = n(198647),
-  c = n(690913),
-  u = n(608413);
+  c = n(820200),
+  u = n(690913),
+  d = n(608413);
 
-function d(e, t, n) {
+function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -20,12 +21,12 @@ function d(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-class f {
+class _ {
   static fromServer(e) {
-    return new f(e)
+    return new _(e)
   }
   constructor(e) {
-    d(this, "shopBlocks", void 0), d(this, "categories", void 0), this.shopBlocks = e.shop_blocks.map(e => {
+    f(this, "shopBlocks", void 0), f(this, "categories", void 0), this.shopBlocks = e.shop_blocks.map(e => {
       switch (e.type) {
         case r.z.HERO:
           return l.s.fromServer(e);
@@ -34,11 +35,13 @@ class f {
         case r.z.FEED:
           return s.K.fromServer(e);
         case r.z.WIDE_BANNER:
-          return u.j.fromServer(e);
+          return d.j.fromServer(e);
         case r.z.SHELF:
-          return c.O.fromServer(e);
+          return u.O.fromServer(e);
         case r.z.COUNTDOWN_TIMER:
           return o.G.fromServer(e);
+        case r.z.IMMERSIVE_BANNER:
+          return c.k.fromServer(e);
         default:
           return
       }

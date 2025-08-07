@@ -1,6 +1,6 @@
 /**
   Module ID: 47495
-  Original File Name: 2fd6ac3af9a39bb0
+  Original File Name: e09d4af1d1eb42ca
 **/
 .gradientButtonContainer__488d9 {
     height: 50px;
@@ -92,6 +92,10 @@
     height: 50px;
     max-width: 52px;
     min-width: 52px
+}
+
+.gradientPicker_cd4367 {
+    width: 104px
 }
 
 .description_cd4367 {
@@ -373,4 +377,4 @@
     gap: 8px
 }
 
-/*# sourceMappingURL=2fd6ac3af9a39bb0.css.map*/
+/*# sourceMappingURL=e09d4af1d1eb42ca.css.map*/

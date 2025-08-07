@@ -46,7 +46,7 @@ class _ extends r.EventEmitter {
         overrideType: e.mimeType
       });
       this.filename = t.filename, this.isImage = t.isImage, this.isVideo = t.isVideo, this.mimeType = t.type, this.origin = e.origin, this.durationSecs = e.durationSecs, this.waveform = e.waveform, this.isRemix = e.isRemix
-    } else this.id = null != (r = e.id) ? r : o().uniqueId("upload"), this.classification = s.f3(e.file), this.isImage = "image" === this.classification, this.isVideo = "video" === this.classification, this.filename = e.file.name, this.mimeType = e.file.type;
+    } else this.id = null != (r = e.id) ? r : o().uniqueId("upload"), this.classification = s.f3(e.file), this.isImage = "image" === this.classification, this.isVideo = "video" === this.classification, this.filename = e.file.name, this.mimeType = e.file.type, this.origin = e.origin;
     this.isThumbnail = e.isThumbnail, this.clip = e.clip, this.uniqueId = (0, a.Z)(), this.showLargeMessageDialog = t, this.spoiler = !1, this.description = null
   }
 }

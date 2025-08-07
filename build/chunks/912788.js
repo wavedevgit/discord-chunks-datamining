@@ -32,18 +32,16 @@ function f() {
 
 function _(e) {
   let {
-    message: t,
-    code: n
+    message: t
   } = e;
-  l = new a.HF(t, n)
+  l = new a.HF(t)
 }
 
 function p(e) {
   let {
-    message: t,
-    code: n
+    message: t
   } = e;
-  l = new a.HF(t, n)
+  l = new a.HF(t)
 }
 
 function h() {

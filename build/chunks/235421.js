@@ -1,5 +1,6 @@
 /** Chunk was on 47495 **/
 e.exports = {
   colorPicker: "colorPicker_cd4367",
-  colorPickerContainer: "colorPickerContainer_cd4367"
+  colorPickerContainer: "colorPickerContainer_cd4367",
+  gradientPicker: "gradientPicker_cd4367"
 }

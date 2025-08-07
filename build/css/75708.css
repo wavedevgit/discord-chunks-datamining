@@ -1,6 +1,6 @@
 /**
   Module ID: 75708
-  Original File Name: 96e7cf50b4284965
+  Original File Name: 1def1ea3a7ff042d
 **/
 .phoneFieldPopout__61a01 {
     height: 240px;
@@ -15539,6 +15539,12 @@ div.nagbar_d74ef8 {
     top: -12px
 }
 
+.game_cc46f0.hoverCardNoMargin_cc46f0:before {
+    border-radius: 12px;
+    left: 0;
+    right: 0
+}
+
 .game_cc46f0:focus-within .overlayStatusText_cc46f0,.game_cc46f0:focus-within .overlayWarningIcon_cc46f0,.game_cc46f0:focus-within .removeGame_cc46f0,.game_cc46f0:hover .overlayStatusText_cc46f0,.game_cc46f0:hover .overlayWarningIcon_cc46f0,.game_cc46f0:hover .removeGame_cc46f0 {
     opacity: 1
 }
@@ -15641,6 +15647,12 @@ div.nagbar_d74ef8 {
     justify-content: flex-end
 }
 
+.subgameContainer_cc46f0 .subgame_cc46f0:before {
+    border-radius: 0;
+    left: 0;
+    right: 0
+}
+
 .subgame_cc46f0 {
     align-items: center;
     background-color: var(--bg-surface-raised);
@@ -15650,10 +15662,8 @@ div.nagbar_d74ef8 {
     width: 100%
 }
 
-.subgame_cc46f0:before {
-    border-radius: 0;
-    left: 0;
-    right: 0
+.subgame_cc46f0:last-child {
+    border-radius: 0 0 12px 12px
 }
 
 .subgame_cc46f0:last-child:before {
@@ -15716,17 +15726,11 @@ div.nagbar_d74ef8 {
     fill: var(--header-muted)
 }
 
-.hoverCardNoMargin_cc46f0:before {
-    border-radius: 12px;
-    left: 0;
-    right: 0
-}
-
-.gameHasSubgame_cc46f0 {
+.game_cc46f0.gameHasSubgame_cc46f0 {
     margin-bottom: 0
 }
 
-.gameHasSubgame_cc46f0,.gameHasSubgame_cc46f0:before {
+.game_cc46f0.gameHasSubgame_cc46f0,.game_cc46f0.gameHasSubgame_cc46f0:before {
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0
 }
@@ -19959,4 +19963,4 @@ html .invoiceCancelRow__968a4 {
     overflow: visible
 }
 
-/*# sourceMappingURL=96e7cf50b4284965.css.map*/
+/*# sourceMappingURL=1def1ea3a7ff042d.css.map*/

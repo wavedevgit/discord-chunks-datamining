@@ -1,7 +1,7 @@
 /** Chunk was on 78223 **/
 r.d(n, {
   Z: () => L,
-  n: () => P
+  n: () => A
 }), r(35282);
 var l = r(255367),
   t = r(73800),
@@ -21,14 +21,14 @@ var l = r(255367),
   f = r(884697),
   y = r(624377),
   j = r(141011),
-  B = r(813083),
-  h = r(372654),
+  h = r(813083),
+  B = r(372654),
   _ = r(794324),
   S = r(474936),
   T = r(388032),
   k = r(544348);
-let P = (0, f.IC)(90),
-  A = e => {
+let A = (0, f.IC)(90),
+  E = e => {
     let {
       category: n
     } = e, {
@@ -55,7 +55,7 @@ let P = (0, f.IC)(90),
       })
     })
   },
-  E = e => {
+  P = e => {
     let {
       src: n
     } = e;
@@ -87,10 +87,10 @@ function L(e) {
     asset: m,
     className: a()(k.shopBanner, r),
     style: null != o ? {
-      background: "".concat((0, h.nH)(o), " border-box border-box"),
+      background: "".concat((0, B.nH)(o), " border-box border-box"),
       outlineColor: o.border.toHslString()
     } : void 0,
-    children: [!d && null != p && g && (0, l.jsx)(E, {
+    children: [!d && null != p && g && (0, l.jsx)(P, {
       src: p
     }), (null == b ? void 0 : b.addAttributionLogo) ? (0, l.jsxs)("div", {
       className: k.discordLogo,
@@ -108,7 +108,7 @@ function L(e) {
     }), (null == b ? void 0 : b.addLogo) ? (0, l.jsx)("img", {
       className: k.categoryLogo,
       src: (0, f.uV)(n.logo, {
-        size: P
+        size: A
       }),
       alt: n.name,
       style: {
@@ -124,10 +124,10 @@ function L(e) {
         color: n.bannerTextColor
       } : void 0,
       variant: "text-md/normal",
-      children: n.skuId === u.T.DISXCORE ? (0, l.jsx)(A, {
+      children: n.skuId === u.T.DISXCORE ? (0, l.jsx)(E, {
         category: n
       }) : n.summary
-    }), !t && (0, l.jsx)(B.Z, {
+    }), !t && (0, l.jsx)(h.Z, {
       category: n,
       className: k.limitedTimeBadge,
       display: "banner"

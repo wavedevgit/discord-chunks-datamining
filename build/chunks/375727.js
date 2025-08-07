@@ -13,8 +13,8 @@ var r = n(255367),
   d = n(80932),
   m = n(493773),
   h = n(710845),
-  f = n(430824),
-  g = n(496675),
+  g = n(430824),
+  f = n(496675),
   x = n(914010),
   p = n(626135),
   _ = n(176354),
@@ -34,10 +34,10 @@ let w = new h.Z("EmojiStudio"),
     let {
       userImage: n,
       guildId: i
-    } = e, [h, T] = l.useState(n), k = (0, s.e7)([f.Z, x.Z, g.Z], () => {
+    } = e, [h, T] = l.useState(n), k = (0, s.e7)([g.Z, x.Z, f.Z], () => {
       let e = x.Z.getGuildId(),
-        t = f.Z.getGuild(e);
-      return g.Z.can(O.Plq.CREATE_GUILD_EXPRESSIONS, t) && null != t ? t.id : null
+        t = g.Z.getGuild(e);
+      return f.Z.can(O.Plq.CREATE_GUILD_EXPRESSIONS, t) && null != t ? t.id : null
     }), [A, P] = l.useState(null != i ? i : k), [D, z] = l.useState(null), [G, L] = l.useState(null), [Z, B] = l.useState(""), [U, H] = l.useState(null), [F, V] = l.useState(() => Date.now()), J = l.useRef(0), W = l.useRef(0), Y = l.useRef(!1), K = l.useCallback(e => {
       let {
         reason: t
@@ -48,9 +48,10 @@ let w = new h.Z("EmojiStudio"),
         has_image: null != h,
         error: null == n ? null : String(n),
         throttled_edit_count: W.current,
-        session_duration_ms: Date.now() - F
+        session_duration_ms: Date.now() - F,
+        has_guild_selected: null != A
       })
-    }, [D, G, F, h]);
+    }, [D, G, F, h, A]);
     (0, m.zq)(() => {
       Y.current || K({
         reason: "closed"

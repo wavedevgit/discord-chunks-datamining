@@ -1,18 +1,18 @@
-/** Chunk was on 47435 **/
-r.d(t, {
+/** Chunk was on 715 **/
+t.d(r, {
   Z: () => i
 });
-var a = r(255367);
-r(73800);
+var a = t(255367);
+t(73800);
 let i = e => {
   let {
-    className: t,
-    width: r = 214,
+    className: r,
+    width: t = 214,
     height: i = 165
   } = e;
   return (0, a.jsxs)("svg", {
-    className: t,
-    width: r,
+    className: r,
+    width: t,
     height: i,
     viewBox: "0 0 214 165",
     fill: "none",
