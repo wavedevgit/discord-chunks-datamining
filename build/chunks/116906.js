@@ -21,8 +21,8 @@ var l = n(442837),
   h = n(864141),
   y = n(228168),
   x = n(981631),
-  v = n(388032),
-  O = n(316879),
+  O = n(388032),
+  v = n(316879),
   _ = n(301150);
 
 function I(e) {
@@ -40,8 +40,8 @@ function I(e) {
   }), T = (0, u.b)({
     location: "UserProfileModalActivity"
   }), {
-    live: A,
-    recent: S,
+    live: S,
+    recent: A,
     stream: w
   } = (0, f.Z)(t.id), {
     voiceChannel: C,
@@ -52,14 +52,14 @@ function I(e) {
   }), L = (0, l.e7)([a.Z], () => a.Z.isFetchingUserOutbox(t.id)), R = t.id === n.id, M = (0, l.e7)([s.Z, c.Z], () => {
     let e = R ? s.Z.getStatus() : c.Z.getStatus(t.id);
     return e === o.Skl.OFFLINE || e === o.Skl.INVISIBLE
-  }), D = A.length > 0 || null != w, k = N && null == w && null == G && null != C, B = !M && (D || k), U = S.length > 0;
+  }), D = S.length > 0 || null != w, k = N && null == w && null == G && null != C, B = !M && (D || k), U = A.length > 0;
   return B || U || !L ? (0, r.jsxs)(o.zJl, {
-    className: O.scroller,
+    className: v.scroller,
     fade: !0,
     children: [B ? (0, r.jsx)(m.Z, {
-      "aria-label": v.intl.string(v.t.J6STd3),
+      "aria-label": O.intl.string(O.t.J6STd3),
       children: (0, r.jsxs)("ul", {
-        className: O.activityList,
+        className: v.activityList,
         children: [!T && k && (0, r.jsx)("li", {
           children: (0, r.jsx)(h.Z, {
             user: t,
@@ -76,7 +76,7 @@ function I(e) {
             onClose: Z,
             profileGuildId: null == I ? void 0 : I.guildId
           })
-        }), A.map((e, l) => (0, r.jsx)("li", {
+        }), S.map((e, l) => (0, r.jsx)("li", {
           children: (0, r.jsx)(g.Z, {
             user: t,
             currentUser: n,
@@ -87,8 +87,8 @@ function I(e) {
         }, "live-".concat(l)))]
       })
     }) : null, U ? (0, r.jsx)(m.Z, {
-      heading: v.intl.string(v.t.M0zgnZ),
-      introText: R ? v.intl.format(v.t["4bk9Ag"], {
+      heading: O.intl.string(O.t.M0zgnZ),
+      introText: R ? O.intl.format(O.t["4bk9Ag"], {
         learnMoreHook: (e, t) => (0, r.jsx)(o.eee, {
           href: d.Z.getArticleURL(x.BhN.ACTIVITY_STATUS_SETTINGS),
           children: e
@@ -96,8 +96,8 @@ function I(e) {
       }) : void 0,
       scrollIntoView: E === y.Tb.RECENT_ACTIVITY,
       children: (0, r.jsx)("ul", {
-        className: O.activityList,
-        children: S.map(e => (0, r.jsx)("li", {
+        className: v.activityList,
+        children: A.map(e => (0, r.jsx)("li", {
           children: (0, r.jsx)(b.Z, {
             location: "UserProfileModalActivity",
             user: t,

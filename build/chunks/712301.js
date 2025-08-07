@@ -7,11 +7,11 @@ t(73800);
 var i = t(442837),
   r = t(481060),
   a = t(749210),
-  o = t(287734),
-  u = t(933557),
+  u = t(287734),
+  o = t(933557),
   s = t(314897),
-  c = t(592125),
-  d = t(984933),
+  d = t(592125),
+  c = t(984933),
   g = t(271383),
   Z = t(430824),
   f = t(496675),
@@ -24,10 +24,10 @@ var i = t(442837),
   P = t(388032);
 
 function v(e, n) {
-  let t = (0, i.e7)([d.ZP], () => d.ZP.getChannels(n)[d.Zb], [n]),
-    v = (0, i.e7)([p.Z, c.Z], () => {
+  let t = (0, i.e7)([c.ZP], () => c.ZP.getChannels(n)[c.Zb], [n]),
+    v = (0, i.e7)([p.Z, d.Z], () => {
       let t = p.Z.getUserVoiceChannelId(n, e.id);
-      return c.Z.getChannel(t)
+      return d.Z.getChannel(t)
     }, [n, e.id]);
   if ((0, i.e7)([g.ZP], () => g.ZP.isGuestOrLurker(n, e.id), [n, e.id]) || null == v) return null;
   let x = e.id === s.default.getId();
@@ -52,9 +52,9 @@ function v(e, n) {
       return (0, l.jsx)(r.sNh, {
         id: i.id,
         action: () => {
-          e.id === s.default.getId() ? o.default.selectVoiceChannel(i.id) : a.Z.setChannel(n, e.id, i.id)
+          e.id === s.default.getId() ? u.default.selectVoiceChannel(i.id) : a.Z.setChannel(n, e.id, i.id)
         },
-        label: (0, u.F6)(i, O.default, b.Z)
+        label: (0, o.F6)(i, O.default, b.Z)
       }, i.id)
     })
   })

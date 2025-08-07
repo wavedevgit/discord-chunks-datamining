@@ -21,8 +21,8 @@ var l = n(442837),
   h = n(864141),
   y = n(264481),
   x = n(693408),
-  v = n(228168),
-  O = n(981631),
+  O = n(228168),
+  v = n(981631),
   _ = n(388032),
   I = n(514656);
 
@@ -36,10 +36,10 @@ function P(e) {
     subsection: N,
     onClose: T
   } = e, {
-    voiceActivityStatusEnabled: A
+    voiceActivityStatusEnabled: S
   } = (0, i.U)({
     location: "UserProfileModalV2Activity"
-  }), S = (0, f.b)({
+  }), A = (0, f.b)({
     location: "UserProfileModalV2Activity"
   }), {
     live: w,
@@ -54,7 +54,7 @@ function P(e) {
   }), M = (0, l.e7)([a.Z], () => a.Z.isFetchingUserOutbox(t.id)), D = t.id === n.id, k = (0, l.e7)([d.Z, s.Z], () => {
     let e = D ? d.Z.getStatus() : s.Z.getStatus(t.id);
     return e === o.Skl.OFFLINE || e === o.Skl.INVISIBLE
-  }), B = w.length > 0 || null != G, U = A && null == G && null == R && null != L, F = !k && (B || U), V = C.length > 0;
+  }), B = w.length > 0 || null != G, U = S && null == G && null == R && null != L, F = !k && (B || U), V = C.length > 0;
   if (!F && !V && M) return (0, r.jsx)("div", {
     className: I.cards,
     children: Array.from({
@@ -88,7 +88,7 @@ function P(e) {
       heading: _.intl.string(_.t.J6STd3),
       children: (0, r.jsxs)("ul", {
         className: I.cards,
-        children: [!S && U && (0, r.jsx)("li", {
+        children: [!A && U && (0, r.jsx)("li", {
           children: (0, r.jsx)(h.Z, {
             user: t,
             currentUser: n,
@@ -112,7 +112,7 @@ function P(e) {
             onClose: T,
             profileGuildId: null == P ? void 0 : P.guildId
           })
-        }, "live-".concat(l))), S && U && (0, r.jsx)("li", {
+        }, "live-".concat(l))), A && U && (0, r.jsx)("li", {
           children: (0, r.jsx)(h.Z, {
             user: t,
             currentUser: n,
@@ -125,11 +125,11 @@ function P(e) {
       heading: _.intl.string(_.t.jzgEoK),
       introText: D ? _.intl.format(_.t["4bk9Ag"], {
         learnMoreHook: (e, t) => (0, r.jsx)(o.eee, {
-          href: u.Z.getArticleURL(O.BhN.ACTIVITY_STATUS_SETTINGS),
+          href: u.Z.getArticleURL(v.BhN.ACTIVITY_STATUS_SETTINGS),
           children: e
         }, t)
       }) : void 0,
-      scrollIntoView: N === v.Tb.RECENT_ACTIVITY,
+      scrollIntoView: N === O.Tb.RECENT_ACTIVITY,
       children: (0, r.jsx)("ul", {
         className: I.cards,
         children: C.map(e => (0, r.jsx)("li", {

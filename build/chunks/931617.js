@@ -7,11 +7,11 @@ t(73800);
 var i = t(442837),
   r = t(481060),
   a = t(607070),
-  o = t(910693),
-  u = t(434404),
+  u = t(910693),
+  o = t(434404),
   s = t(402235),
-  c = t(345162),
-  d = t(271383),
+  d = t(345162),
+  c = t(271383),
   g = t(485386),
   Z = t(430824),
   f = t(496675),
@@ -47,7 +47,7 @@ function j(e, n) {
     P = (0, i.e7)([Z.Z], () => Z.Z.getGuild(n)),
     v = (0, i.e7)([g.Z], () => g.Z.getSortedRoles(n)),
     x = (0, i.e7)([a.Z], () => a.Z.roleStyle),
-    y = (0, o.sE)(n, {
+    y = (0, u.sE)(n, {
       location: m,
       targetUserId: e
     }),
@@ -55,8 +55,8 @@ function j(e, n) {
       userRoles: N,
       isGuildMember: E,
       canManageRoles: _
-    } = (0, i.cj)([d.ZP, f.Z], () => {
-      let t = d.ZP.getMember(n, e);
+    } = (0, i.cj)([c.ZP, f.Z], () => {
+      let t = c.ZP.getMember(n, e);
       return {
         userRoles: null != t ? t.roles : [],
         isGuildMember: null != t,
@@ -67,7 +67,7 @@ function j(e, n) {
   if (__OVERLAY__ || null == N || null == P || !E) return null;
   let I = f.Z.getHighestRole(P),
     S = _ && !j ? v.map(t => {
-      if ((0, c.fI)(t)) return null;
+      if ((0, d.fI)(t)) return null;
       let i = t.managed || !f.Z.isRoleHigher(P, I, t),
         a = N.includes(t.id);
       return i && !a ? null : (0, l.jsx)(r.S89, {
@@ -75,11 +75,11 @@ function j(e, n) {
         label: () => h(t, x, C),
         disabled: i,
         action: () => {
-          N.includes(t.id) ? (u.Z.updateMemberRoles(n, e, N.filter(e => e !== t.id), [], [t.id]), y(o.jQ.REMOVE_ROLE)) : (u.Z.updateMemberRoles(n, e, N.concat([t.id]), [t.id], []), y(o.jQ.ADD_ROLE))
+          N.includes(t.id) ? (o.Z.updateMemberRoles(n, e, N.filter(e => e !== t.id), [], [t.id]), y(u.jQ.REMOVE_ROLE)) : (o.Z.updateMemberRoles(n, e, N.concat([t.id]), [t.id], []), y(u.jQ.ADD_ROLE))
         },
         checked: a
       }, t.id)
-    }) : v.map(e => (0, c.fI)(e) || !N.includes(e.id) ? null : (0, l.jsx)(r.sNh, {
+    }) : v.map(e => (0, d.fI)(e) || !N.includes(e.id) ? null : (0, l.jsx)(r.sNh, {
       id: e.id,
       label: () => h(e, x, C)
     }, e.id));

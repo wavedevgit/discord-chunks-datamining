@@ -49,8 +49,8 @@ var r = n(255367),
   Y = n(306721),
   K = n(531551),
   q = n(38618),
-  X = n(972830),
-  Q = n(684572),
+  Q = n(972830),
+  X = n(684572),
   J = n(584233),
   $ = n(15274),
   ee = n(434404),
@@ -103,8 +103,8 @@ var r = n(255367),
   eY = n(944486),
   eK = n(914010),
   eq = n(695103),
-  eX = n(241890),
-  eQ = n(417363),
+  eQ = n(241890),
+  eX = n(417363),
   eJ = n(900974),
   e$ = n(358085),
   e0 = n(998502),
@@ -154,7 +154,7 @@ let e9 = (0, m.l)(e => {
     let {
       location: t
     } = e, n = (0, ek.default)(t.pathname);
-    return null != n && (0, X.h)(() => f.Z.open(n.section, n.subsection, {
+    return null != n && (0, Q.h)(() => f.Z.open(n.section, n.subsection, {
       openWithoutBackstack: !1,
       impressionSource: n.source
     })), (0, r.jsx)(g.Z, {
@@ -212,7 +212,7 @@ let e9 = (0, m.l)(e => {
   tt = (0, m.l)((0, T.e)(j.Z, null, {
     passProps: !1
   })),
-  tn = (0, T.e)(Q.default, null, {
+  tn = (0, T.e)(X.default, null, {
     passProps: !1
   }),
   tr = [e3.Z5c.GUILD_BOOSTING_MARKETING(ey.Hw.guildId()), ...Array.from(e8.Vg).map(e => e3.Z5c.CHANNEL(ey.Hw.guildId(), e))];
@@ -254,7 +254,7 @@ let tl = [{
     } = e, {
       id: n
     } = t.params;
-    return (0, X.h)(() => (0, ew.openUserProfileModal)({
+    return (0, Q.h)(() => (0, ew.openUserProfileModal)({
       userId: n,
       sourceAnalyticsLocations: [N.Z.URI_SCHEME]
     })), (0, r.jsx)(a.l_, {
@@ -270,7 +270,7 @@ let tl = [{
       gameId: n,
       action: i
     } = t.params;
-    return eQ.Z.whenInitialized(() => {
+    return eX.Z.whenInitialized(() => {
       eW.Z.whenInitialized(() => {
         switch (i) {
           case "launch": {
@@ -303,7 +303,7 @@ let tl = [{
 }, {
   path: [e3.Z5c.GUILD_CREATE],
   render: function() {
-    return (0, X.h)(() => D.Z.openCreateGuildModal({
+    return (0, Q.h)(() => D.Z.openCreateGuildModal({
       location: "External link"
     })), (0, r.jsx)(a.l_, {
       to: eB.Z.defaultRoute
@@ -318,7 +318,7 @@ let tl = [{
       section: n,
       subsection: i
     } = t.params, o = (0, l.parse)(location.search).feature;
-    return (0, X.h)(() => en.v({
+    return (0, Q.h)(() => en.v({
       section: (0, et.Z)(e3.pNK, n),
       subsection: (0, et.Z)(e3.KsC, i),
       feature: o
@@ -339,7 +339,7 @@ let tl = [{
     } = e, {
       guildId: i
     } = t.params;
-    return (0, X.h)(() => {
+    return (0, Q.h)(() => {
       (0, s.ZDy)(async () => {
         let {
           default: e
@@ -368,7 +368,7 @@ let tl = [{
 }, {
   path: [e3.Z5c.APPLICATION_LIBRARY_INVENTORY],
   render: function() {
-    return (0, X.h)(() => f.Z.open(e3.oAB.INVENTORY)), (0, r.jsx)(a.l_, {
+    return (0, Q.h)(() => f.Z.open(e3.oAB.INVENTORY)), (0, r.jsx)(a.l_, {
       to: eB.Z.defaultRoute
     })
   },
@@ -404,7 +404,7 @@ let tl = [{
       guildId: n,
       guildEventId: i
     } = t.params;
-    return (0, X.h)(() => {
+    return (0, Q.h)(() => {
       (0, $.bO)({
         eventId: i
       })
@@ -423,7 +423,7 @@ let tl = [{
       section: i,
       subsection: l
     } = t.params;
-    return (0, X.h)(() => {
+    return (0, Q.h)(() => {
       ee.Z.open(n, (0, et.Z)(e3.pNK, i), void 0, (0, et.Z)(e3.KsC, l))
     }), (0, r.jsx)(a.l_, {
       to: e3.Z5c.CHANNEL(n)
@@ -473,7 +473,7 @@ function to(e) {
 }
 class ts extends i.PureComponent {
   componentDidMount() {
-    e0.ZP.setZoomFactor(b.Z.zoom), eI.Z.init(), P.Z.initialize(), eg.Z.initialize(), z.Z.initialize(), eU.Z.initialize(), W.Z.initialize(), eb.Z.initialize(), M.Z.initialize(), el.Z.initialize(), _.Z.init(), K.Z.init(), Y.Z.init(), eu.Z.initialize(), I.Z.initialize(), V.Z.initialize(), e_.Z.initialize(), v.ZP.initialize(), H.ZP.initialize(), eM.Z.initialize(), ef.Z.initialize(), y.Z.initialize(), er.Z.init(), x.Z.init(), eJ.Z.init(), E.Z.initialize(), ex.Z.init(), eX.Z.init(), eR.Z.init(), eP.Z.initialize(), ej.Z.initialize(), eL.Z.initialize(), eD.Z.init(), G.Z.initialize(), O.Z.initialize(), eC.Z.initialize(), eT.Z.initialize(), ep.Z.initialize(), ed.Z.initialize(), eh.Z.initialize(), w.Z.initialize(), L.Z.initialize(), F.Z.initialize(), ei.Z.init({
+    e0.ZP.setZoomFactor(b.Z.zoom), eI.Z.init(), P.Z.initialize(), eg.Z.initialize(), z.Z.initialize(), eU.Z.initialize(), W.Z.initialize(), eb.Z.initialize(), M.Z.initialize(), el.Z.initialize(), _.Z.init(), K.Z.init(), Y.Z.init(), eu.Z.initialize(), I.Z.initialize(), V.Z.initialize(), e_.Z.initialize(), v.ZP.initialize(), H.ZP.initialize(), eM.Z.initialize(), ef.Z.initialize(), y.Z.initialize(), er.Z.init(), x.Z.init(), eJ.Z.init(), E.Z.initialize(), ex.Z.init(), eQ.Z.init(), eR.Z.init(), eP.Z.initialize(), ej.Z.initialize(), eL.Z.initialize(), eD.Z.init(), G.Z.initialize(), O.Z.initialize(), eC.Z.initialize(), eT.Z.initialize(), ep.Z.initialize(), ed.Z.initialize(), eh.Z.initialize(), w.Z.initialize(), L.Z.initialize(), F.Z.initialize(), ei.Z.init({
       hasModalOpen: s.$sL,
       openModal: () => (0, s.ZDy)(async () => {
         let {

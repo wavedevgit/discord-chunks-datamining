@@ -80,8 +80,8 @@ function h(e) {
     gameName: h,
     imageSrc: y,
     applicationId: x,
-    comment: v,
-    tags: O
+    comment: O,
+    tags: v
   } = i, _ = (0, f.Z)(i.applicationId), I = _.length > 0, P = () => (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(d.Z, {
       imageSrc: y,
@@ -95,13 +95,13 @@ function h(e) {
         variant: "text-md/normal",
         color: "text-default",
         children: h
-      }), null != v && (0, r.jsx)(b, {
-        text: v,
+      }), null != O && (0, r.jsx)(b, {
+        text: O,
         user: t,
         guildId: n,
         channelId: l
       }), (0, r.jsx)(u.Z, {
-        tags: O
+        tags: v
       }), I && (0, r.jsx)(s.Z, {
         label: p.intl.formatToPlainString(p.t.ujhJdH, {
           numFriends: _.length

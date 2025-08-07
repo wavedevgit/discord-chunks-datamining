@@ -27,19 +27,19 @@ function g(e) {
     onClose: y
   } = e, {
     newestAnalyticsLocation: x
-  } = (0, i.ZP)(), v = (0, a.Z)({
+  } = (0, i.ZP)(), O = (0, a.Z)({
     user: t,
     guildId: g,
     channelId: b,
     displayProfile: j,
     onClose: y
   }), {
-    gameFriends: O,
+    gameFriends: v,
     hasOutgoingPendingGameFriends: _,
     hasIncomingPendingGameFriends: I
   } = (0, p.H)({
     userId: t.id
-  }), P = O.length > 0 || _ || I;
+  }), P = v.length > 0 || _ || I;
   return h === m.OGo.BLOCKED ? null : t.id === n.id ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(c.Z, {
       user: t,
@@ -51,7 +51,7 @@ function g(e) {
       type: "icon",
       user: t,
       guildId: g,
-      viewProfileItem: v,
+      viewProfileItem: O,
       themeColor: "secondary"
     })]
   }) : t.bot ? (0, r.jsxs)(r.Fragment, {
@@ -64,7 +64,7 @@ function g(e) {
       type: "icon",
       user: t,
       guildId: g,
-      viewProfileItem: v,
+      viewProfileItem: O,
       themeColor: "secondary"
     })]
   }) : h === m.OGo.PENDING_INCOMING ? (0, r.jsxs)(r.Fragment, {
@@ -98,7 +98,7 @@ function g(e) {
       type: "icon",
       user: t,
       guildId: g,
-      viewProfileItem: v,
+      viewProfileItem: O,
       themeColor: "secondary"
     })]
   }) : h === m.OGo.NONE && P ? (0, r.jsxs)(r.Fragment, {
@@ -112,7 +112,7 @@ function g(e) {
       user: t,
       analyticsLocation: x,
       themeColor: "secondary",
-      gameFriends: O,
+      gameFriends: v,
       tooltipPosition: "top",
       tooltipAlign: "center",
       shouldShowTooltip: !0,
@@ -122,7 +122,7 @@ function g(e) {
       type: "icon",
       user: t,
       guildId: g,
-      viewProfileItem: v,
+      viewProfileItem: O,
       themeColor: "secondary"
     })]
   }) : (0, r.jsxs)(r.Fragment, {
@@ -141,7 +141,7 @@ function g(e) {
       type: "icon",
       user: t,
       guildId: g,
-      viewProfileItem: v,
+      viewProfileItem: O,
       themeColor: "secondary"
     })]
   })

@@ -26,8 +26,8 @@ function x(e) {
     entry: n,
     profileGuildId: o,
     className: x,
-    onClose: v,
-    hideContextMenu: O = !1
+    onClose: O,
+    hideContextMenu: v = !1
   } = e, _ = l.useRef(null), {
     analyticsLocations: I
   } = (0, c.ZP)(a.Z.USER_PROFILE_RECENT_ACTIVITY_CARD), {
@@ -65,17 +65,17 @@ function x(e) {
           onShowToolbar: () => N({
             action: "HOVER_ACTIVITY_CARD"
           }),
-          renderMoreButtonPopout: O ? void 0 : e => (0, r.jsx)(j.Z, {
+          renderMoreButtonPopout: v ? void 0 : e => (0, r.jsx)(j.Z, {
             display: "recent",
             entry: n,
             user: t,
-            onClose: v,
+            onClose: O,
             children: e
           }),
           children: (0, r.jsx)(b.Z, {
             entry: n,
             user: t,
-            onClose: v,
+            onClose: O,
             className: i()(x, {
               [y.hoisted]: E === h.n_.ACTIVITY && Z === n.id
             })

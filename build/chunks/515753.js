@@ -116,16 +116,18 @@ let ei = X.ZP.getEnableHardwareAcceleration() ? p.Xo$ : p.qEK,
     var {
       nameplate: t,
       icon: n,
-      forceShow: r = !1
-    } = e, s = en(e, ["nameplate", "icon", "forceShow"]);
-    let l = (0, L.A)(t);
+      forceShow: r = !1,
+      reducedClickTarget: s = !1
+    } = e, l = en(e, ["nameplate", "icon", "forceShow", "reducedClickTarget"]);
+    let o = (0, L.A)(t);
     return (0, i.jsx)(p.P3F, et(ee({
       className: a()($.closeButton, {
         [$.closeButtonPlated]: null != t,
-        [$.closeButtonForceShow]: r
+        [$.closeButtonForceShow]: r,
+        [$.reducedClickTarget]: s
       }),
-      style: l
-    }, s), {
+      style: o
+    }, l), {
       focusProps: {
         offset: {
           top: -2,
@@ -139,7 +141,7 @@ let ei = X.ZP.getEnableHardwareAcceleration() ? p.Xo$ : p.qEK,
           [$.innerCloseButtonPlated]: null != t
         }),
         children: (0, i.jsx)(n, {
-          size: "md",
+          size: "sm",
           color: "currentColor",
           className: a()($.closeIcon, {
             [$.closeIconPlated]: null != t
@@ -251,36 +253,39 @@ function ed(e) {
     ignored: z.Z.isIgnored(t.getRecipientId()),
     blocked: z.Z.isBlocked(t.getRecipientId())
   })), eN = eO && eT, ey = eO && eI, eA = (eS || eN || ey) && !(l || X), eP = (0, m.e7)([H.ZP], () => H.ZP.getMentionCount(t.id) > 0), eR = (0, T.ZP)(t), eD = (0, m.e7)([P.Z], () => P.Z.isFavorite(t.id)), {
-    dotsInsteadOfCloseButton: eZ
+    dotsInsteadOfCloseButton: eZ,
+    rearrangeContextMenu: ew
   } = D.Z.useExperiment({
     location: "private_channel"
   }, {
     autoTrackExposure: !0
-  }), ew = null != F && (l || X || em), ek = () => {
+  }), ek = null != F && (l || X || em), eL = () => {
     ec(!0)
-  }, eL = () => {
-    ec(!1)
   }, eM = () => {
-    eu(!0)
+    ec(!1)
   }, eB = () => {
+    eu(!0)
+  }, eU = () => {
     eu(!1)
-  }, eU = function(e) {
+  }, eV = function(e) {
     let n = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
     null != e && (e.preventDefault(), e.stopPropagation()), g.Z.closePrivateChannel(t.id, l, n)
-  }, eV = () => {
+  }, eG = () => {
     g.Z.preload(J.ME, t.id)
-  }, eG = e => {
-    e.stopPropagation()
   }, eF = e => {
+    e.stopPropagation()
+  }, eH = e => {
     if (e.target === e.currentTarget) {
       var t;
       null == (t = eg.current) || t.click()
     }
-  }, eH = e => {
+  }, ez = e => {
+    let r = "contextmenu" === e.type,
+      s = ew && !r;
     ep(!0), t.isMultiUserDM() ? (0, h.jW)(e, async () => {
       let {
         default: e
-      } = await Promise.all([n.e("79695"), n.e("70205"), n.e("53912"), n.e("19549")]).then(n.bind(n, 354741));
+      } = await Promise.all([n.e("79695"), n.e("70205"), n.e("57789"), n.e("19549")]).then(n.bind(n, 354741));
       return n => (0, i.jsx)(e, et(ee({}, n), {
         channel: t,
         selected: l
@@ -291,7 +296,7 @@ function ed(e) {
     }) : (0, h.jW)(e, async () => {
       let {
         default: e
-      } = await Promise.all([n.e("79695"), n.e("70205"), n.e("53912"), n.e("98783"), n.e("56826"), n.e("67326")]).then(n.bind(n, 131404));
+      } = s ? await n.e("56167").then(n.bind(n, 416951)) : await Promise.all([n.e("79695"), n.e("70205"), n.e("98783"), n.e("57789"), n.e("56826"), n.e("67326")]).then(n.bind(n, 131404));
       return n => (0, i.jsx)(e, et(ee({}, n), {
         user: u,
         channel: t,
@@ -300,7 +305,7 @@ function ed(e) {
     }, {
       onClose: () => ep(!1)
     })
-  }, ez = e => {
+  }, eW = e => {
     e.preventDefault(), e.stopPropagation();
     let r = Q.intl.formatToPlainString(Q.t.hJ5Ap6, {
         name: eR
@@ -319,10 +324,10 @@ function ed(e) {
       return t => (0, i.jsx)(e, ee({
         header: r,
         body: s,
-        onSubmit: eU
+        onSubmit: eV
       }, t))
     })
-  }, eW = () => t.isSystemDM() ? (0, i.jsx)("div", {
+  }, eY = () => t.isSystemDM() ? (0, i.jsx)("div", {
     className: $.subtext,
     children: (0, O.Z)(t.id) ? Q.intl.string(Q.t.FL5T09) : Q.intl.string(Q.t.NnY5lZ)
   }) : t.isMultiUserDM() ? (0, i.jsx)("div", {
@@ -344,7 +349,7 @@ function ed(e) {
     animateEmoji: X || ed || em,
     textClassName: $.activityStatusText,
     iconClassName: eA ? $.mutedIcon : void 0
-  }) : null, eY = () => {
+  }) : null, eK = () => {
     let e = p.EFr.SIZE_32;
     if (t.isMultiUserDM())
       if (t.recipients.length >= 2 && s && null == t.icon) return (0, i.jsx)(Z.Z, {
@@ -373,13 +378,13 @@ function ed(e) {
       "aria-label": u.username,
       statusTooltip: !0
     }))
-  }, eK = (0, i.jsx)(A.Z, {
+  }, eq = (0, i.jsx)(A.Z, {
     userName: eR,
     displayNameStyles: null == u ? void 0 : u.displayNameStyles,
     effectDisplayType: X || l || em ? y.F.ANIMATED : y.F.PLAIN,
     loop: X
-  }), eq = ev ? (0, i.jsxs)(i.Fragment, {
-    children: [eK, (0, i.jsx)(w.ZP, {
+  }), eX = ev ? (0, i.jsxs)(i.Fragment, {
+    children: [eq, (0, i.jsx)(w.ZP, {
       primaryGuild: null == u ? void 0 : u.primaryGuild,
       userId: null == u ? void 0 : u.id,
       inline: !0,
@@ -388,7 +393,7 @@ function ed(e) {
         [$.clanTagMuted]: eA
       })
     })]
-  }) : eK, eX = r.useRef(null);
+  }) : eq, eJ = r.useRef(null);
   return (0, i.jsx)(d.mh, {
     id: t.id,
     children: e => {
@@ -403,12 +408,12 @@ function ed(e) {
           ringTarget: ef
         }),
         ref: ef,
-        onMouseEnter: ek,
-        onMouseLeave: eL,
-        onMouseDown: eV,
-        onFocus: eM,
-        onBlur: eB,
-        onContextMenu: eH,
+        onMouseEnter: eL,
+        onMouseLeave: eM,
+        onMouseDown: eG,
+        onFocus: eB,
+        onBlur: eU,
+        onContextMenu: ez,
         "aria-setsize": q,
         "aria-posinset": K,
         children: [eP ? (0, i.jsx)("div", {
@@ -421,20 +426,20 @@ function ed(e) {
             [$.interactiveSelected]: l || em
           }),
           as: "div",
-          onClick: eF,
+          onClick: eH,
           muted: eA,
           selected: l,
           children: [(0, i.jsx)(B.Z, {
-            nameplate: ew ? F : void 0,
+            nameplate: ek ? F : void 0,
             selected: l,
             hovered: X,
-            content: eX,
+            content: eJ,
             placement: M.i.CHANNEL
           }), (0, i.jsx)(c.rU, et(ee({
             innerRef: eg,
             to: J.Z5c.CHANNEL(J.ME, t.id),
             className: a()($.link, {
-              [$.linkPlated]: ew
+              [$.linkPlated]: ek
             }),
             "aria-label": (0, v.ZP)({
               channel: t,
@@ -442,16 +447,16 @@ function ed(e) {
             })
           }, r), {
             children: (0, i.jsx)(C.Z, {
-              ref: eX,
-              avatar: eY(),
+              ref: eJ,
+              avatar: eK(),
               highlighted: eP && !eA,
               muted: eA,
-              subText: eW(),
+              subText: eY(),
               name: (0, i.jsx)(N.Z, {
                 className: a()($.overflowTooltip, {
                   [$.withDisplayNameStyles]: null == u ? void 0 : u.displayNameStyles
                 }),
-                children: eq
+                children: eX
               }),
               decorators: t.isSystemDM() ? (0, i.jsx)(E.Z, {
                 className: $.decorator,
@@ -459,19 +464,20 @@ function ed(e) {
                 verified: !0
               }) : null
             })
-          })), eD ? (0, i.jsx)(ea, {}) : null, eN ? (0, i.jsx)(el, {}) : null, ey ? (0, i.jsx)(eo, {}) : null, eZ ? (0, i.jsx)(es, {
+          })), eD && !em ? (0, i.jsx)(ea, {}) : null, eN ? (0, i.jsx)(el, {}) : null, ey ? (0, i.jsx)(eo, {}) : null, eZ ? (0, i.jsx)(es, {
             icon: p.xhG,
             "aria-label": Q.intl.string(Q.t.PdRCRk),
-            onClick: eH,
-            onMouseDown: eG,
+            onClick: ez,
+            onMouseDown: eF,
             nameplate: F,
             forceShow: em
           }) : (0, i.jsx)(es, {
             icon: p.Dio,
             "aria-label": ej ? Q.intl.string(Q.t["26C4oq"]) : Q.intl.string(Q.t.jsvgc3),
-            onClick: ej ? ez : eU,
-            onMouseDown: eG,
-            nameplate: F
+            onClick: ej ? eW : eV,
+            onMouseDown: eF,
+            nameplate: F,
+            reducedClickTarget: !0
           })]
         })]
       })

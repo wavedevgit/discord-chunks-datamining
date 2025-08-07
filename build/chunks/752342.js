@@ -1,6 +1,6 @@
 /** Chunk was on 11776 **/
 n.d(t, {
-  Z: () => A
+  Z: () => S
 }), n(388685);
 var r = n(255367);
 n(73800);
@@ -21,8 +21,8 @@ var l = n(481060),
   h = n(871604),
   y = n(952124),
   x = n(53558),
-  v = n(544989),
-  O = n(30556),
+  O = n(544989),
+  v = n(30556),
   _ = n(4517),
   I = n(740628),
   P = n(398145),
@@ -31,12 +31,12 @@ var l = n(481060),
   N = n(388032),
   T = n(405666);
 
-function A(e) {
+function S(e) {
   let {
     user: t,
     currentUser: n,
-    guildId: A,
-    channelId: S,
+    guildId: S,
+    channelId: A,
     messageId: w,
     roleId: C,
     sessionId: G,
@@ -46,14 +46,14 @@ function A(e) {
     openedAt: D,
     onClose: k,
     sourceAnalyticsLocations: B = []
-  } = e, U = A === Z.ME ? void 0 : A, F = (0, u.ZP)(t.id, U), V = s.ZP.getName(U, S, t), Y = (0, c.Dt)(), {
+  } = e, U = S === Z.ME ? void 0 : S, F = (0, u.ZP)(t.id, U), V = s.ZP.getName(U, A, t), Y = (0, c.Dt)(), {
     analyticsLocations: W
   } = (0, a.ZP)([...B, i.Z.USER_PROFILE_MODAL]), J = (0, d.ZB)({
     layout: "MODAL",
     userId: t.id,
     sourceSessionId: G,
     guildId: U,
-    channelId: S,
+    channelId: A,
     messageId: w,
     roleId: C
   }), H = (0, P.Z)(t);
@@ -85,7 +85,7 @@ function A(e) {
             user: t,
             displayProfile: F,
             themeType: E.lY.MODAL,
-            children: [(0, r.jsx)(v.Z, {
+            children: [(0, r.jsx)(O.Z, {
               children: (0, r.jsx)(y.Z, {
                 user: t,
                 guildId: U,
@@ -102,7 +102,7 @@ function A(e) {
                   user: t,
                   displayProfile: F,
                   guildId: U,
-                  channelId: S,
+                  channelId: A,
                   themeType: E.lY.MODAL
                 }), (0, r.jsx)(_.Z, {
                   location: "BotUserProfileModal",
@@ -113,12 +113,12 @@ function A(e) {
                   disableToolbar: !0
                 }), (0, r.jsxs)("div", {
                   className: T.headerButtons,
-                  children: [(0, r.jsx)(O.Z, {
+                  children: [(0, r.jsx)(v.Z, {
                     type: "text",
                     userId: t.id,
                     onClose: o.Z.popAll,
                     className: T.messageTextButton
-                  }), (0, r.jsx)(O.Z, {
+                  }), (0, r.jsx)(v.Z, {
                     type: "icon",
                     userId: t.id,
                     onClose: o.Z.popAll,

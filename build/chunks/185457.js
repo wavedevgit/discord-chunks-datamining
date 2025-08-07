@@ -2,9 +2,9 @@
 n.d(t, {
   Z: () => f
 });
-var i = n(255367);
+var l = n(255367);
 n(73800);
-var l = n(481060),
+var i = n(481060),
   r = n(906732),
   a = n(531301),
   o = n(892001),
@@ -28,7 +28,7 @@ function f(e) {
   } = (0, a.Z)(Z), p = !m && null != v && v.length > 0, O = b === d.IlC.POPOUT || b === d.IlC.OVERLAY, {
     analyticsLocations: h
   } = (0, r.ZP)();
-  return Z === s.default.getId() || u.Z.hidePersonalInformation || O ? null : (0, i.jsx)(l.sNh, {
+  return Z === s.default.getId() || u.Z.hidePersonalInformation || O ? null : (0, l.jsx)(i.sNh, {
     id: "note",
     label: m ? g.intl.string(g.t["WLKx//"]) : p ? g.intl.string(g.t.sHHsOD) : g.intl.string(g.t.Dglxra),
     subtext: g.intl.string(g.t.r1BOdX),

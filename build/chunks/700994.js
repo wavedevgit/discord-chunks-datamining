@@ -2,9 +2,9 @@
 n.d(t, {
   Z: () => f
 });
-var i = n(255367);
+var l = n(255367);
 n(73800);
-var l = n(442837),
+var i = n(442837),
   r = n(481060),
   a = n(846027),
   o = n(131951),
@@ -17,33 +17,33 @@ var l = n(442837),
 function f(e) {
   var t;
   let n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : c.Yn.DEFAULT,
-    f = (0, l.e7)([o.Z], () => o.Z.getLocalVolume(e, n), [e, n]),
+    f = (0, i.e7)([o.Z], () => o.Z.getLocalVolume(e, n), [e, n]),
     b = e === (null == (t = s.default.getCurrentUser()) ? void 0 : t.id),
     Z = n === c.Yn.STREAM;
-  return b ? null : (0, i.jsx)(r.II_, {
+  return b ? null : (0, l.jsx)(r.II_, {
     id: "user-volume",
     label: Z ? g.intl.string(g.t.t4JBnJ) : g.intl.string(g.t.m7TNdH),
-    control: (t, l) => {
+    control: (t, i) => {
       var o, s;
-      return (0, i.jsx)(r._wy, (o = function(e) {
+      return (0, l.jsx)(r._wy, (o = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
-            i = Object.keys(n);
-          "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+            l = Object.keys(n);
+          "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
-          }))), i.forEach(function(t) {
-            var i;
-            i = n[t], t in e ? Object.defineProperty(e, t, {
-              value: i,
+          }))), l.forEach(function(t) {
+            var l;
+            l = n[t], t in e ? Object.defineProperty(e, t, {
+              value: l,
               enumerable: !0,
               configurable: !0,
               writable: !0
-            }) : e[t] = i
+            }) : e[t] = l
           })
         }
         return e
       }({}, t), s = s = {
-        ref: l,
+        ref: i,
         value: (0, u.P)(f),
         maxValue: d.isPlatformEmbedded ? 200 : 100,
         onChange: t => a.Z.setLocalVolume(e, (0, u.A)(t), n),
@@ -51,8 +51,8 @@ function f(e) {
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(o, Object.getOwnPropertyDescriptors(s)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
-          var i = Object.getOwnPropertySymbols(e);
-          n.push.apply(n, i)
+          var l = Object.getOwnPropertySymbols(e);
+          n.push.apply(n, l)
         }
         return n
       })(Object(s)).forEach(function(e) {

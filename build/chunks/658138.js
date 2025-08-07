@@ -1,6 +1,6 @@
-/** Chunk was on 53912 **/
+/** Chunk was on 57789 **/
 n.d(t, {
-  D: () => h
+  D: () => p
 });
 var r = n(255367),
   i = n(73800),
@@ -14,9 +14,9 @@ var r = n(255367),
   f = n(54480),
   O = n(981631),
   b = n(388032),
-  p = n(837229);
+  _ = n(837229);
 
-function h(e) {
+function p(e) {
   let {
     openPickerForChannel: t
   } = (0, d.B)(), n = (0, i.useCallback)(() => {
@@ -24,27 +24,27 @@ function h(e) {
       channel_id: e.id
     })
   }, [e.id, t]), {
-    canAccessPicker: h
+    canAccessPicker: p
   } = (0, f.m)({
     location: "useChannelWallpaperItem",
     channelId: e.id
-  }), _ = e.isPrivate() && h;
+  }), h = e.isPrivate() && p;
   return ((0, c.Z)({
     type: l.ImpressionTypes.MENU,
     name: l.ImpressionNames.CHAT_WALLPAPER_DM_CONTEXT_MENU_ENTRY_POINT
   }, {
-    disableTrack: !_
-  }), _) ? (0, r.jsx)(a.sNh, {
+    disableTrack: !h
+  }), h) ? (0, r.jsx)(a.sNh, {
     id: "set-wallpaper",
     label: (0, r.jsxs)("div", {
-      className: p.label,
+      className: _.label,
       children: [b.intl.string(b.t.GixvUl), (0, r.jsx)(a.IGR, {
         text: b.intl.string(b.t.y2b7CA),
         color: s.Z.BG_BRAND
       })]
     }),
     icon: () => (0, r.jsx)("div", {
-      className: p.iconWrapper,
+      className: _.iconWrapper,
       children: (0, r.jsx)(a.SrA, {
         size: "xs"
       })

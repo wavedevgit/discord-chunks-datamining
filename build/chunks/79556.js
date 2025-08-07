@@ -220,7 +220,7 @@ class k extends P.ZP {
       if (t.type === T.d4z.GROUP_DM) return void(0, u.jW)(e, async () => {
         let {
           default: e
-        } = await Promise.all([n.e("79695"), n.e("53912"), n.e("2016")]).then(n.bind(n, 354741));
+        } = await Promise.all([n.e("79695"), n.e("57789"), n.e("2016")]).then(n.bind(n, 354741));
         return n => (0, r.jsx)(e, M(L({}, n), {
           channel: t,
           selected: !0
@@ -231,7 +231,7 @@ class k extends P.ZP {
         null != i && (0, u.jW)(e, async () => {
           let {
             default: e
-          } = await Promise.all([n.e("79695"), n.e("53912"), n.e("98783"), n.e("56826"), n.e("45903")]).then(n.bind(n, 131404));
+          } = await Promise.all([n.e("79695"), n.e("98783"), n.e("57789"), n.e("56826"), n.e("45903")]).then(n.bind(n, 131404));
           return n => (0, r.jsx)(e, M(L({}, n), {
             user: i,
             channel: t,

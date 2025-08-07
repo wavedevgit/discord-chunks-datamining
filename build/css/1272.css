@@ -1,6 +1,6 @@
 /**
   Module ID: 1272
-  Original File Name: 2fd081f009717ec4
+  Original File Name: 68525e6d2c4e8549
 **/
 .container__74da2 {
     align-items: center;
@@ -2551,6 +2551,11 @@
 
 .avatar_e88f3f {
     flex-shrink: 0
+}
+
+.key_e88f3f {
+    background-color: var(--button-filled-brand-inverted-background);
+    color: var(--button-filled-brand-inverted-text)
 }
 
 .channelNotice__4c43d {
@@ -8831,4 +8836,4 @@ html .tabBadge__35e86 {
     margin-bottom: 18px
 }
 
-/*# sourceMappingURL=2fd081f009717ec4.css.map*/
+/*# sourceMappingURL=68525e6d2c4e8549.css.map*/

@@ -19,5 +19,6 @@ e.exports = {
   locationContainer: "locationContainer_e88f3f",
   location: "location_e88f3f",
   locationIcon: "locationIcon_e88f3f",
-  avatar: "avatar_e88f3f"
+  avatar: "avatar_e88f3f",
+  key: "key_e88f3f"
 }

@@ -28,11 +28,11 @@ function g(e) {
   } = (0, a.ZP)(), {
     context: y,
     trackUserProfileAction: x
-  } = (0, c.KZ)(), v = (0, i.Z)();
+  } = (0, c.KZ)(), O = (0, i.Z)();
   l.useEffect(() => {
-    (0, d.Z)(t.id, v)
-  }, [t.id, v]);
-  let O = e => {
+    (0, d.Z)(t.id, O)
+  }, [t.id, O]);
+  let v = e => {
     var t, n;
     (0, u.openUserProfileModal)((t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -93,7 +93,7 @@ function g(e) {
         onSelect: () => {
           null == b || b(), x({
             action: "PRESS_MUTUAL_FRIEND"
-          }), O(l.id)
+          }), v(l.id)
         }
       }, t)
     })

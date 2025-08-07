@@ -1,6 +1,6 @@
 /**
   Module ID: 11776
-  Original File Name: e06cfa978336e3ed
+  Original File Name: 3353ba8c7bf9f22f
 **/
 .scroller__95bea {
     display: flex;
@@ -885,6 +885,11 @@
     margin: 0
 }
 
+.gameSearchCombobox__36be8 {
+    height: 336px;
+    width: 380px
+}
+
 .headerRow_cf2d33 {
     display: flex;
     justify-content: space-between
@@ -1499,4 +1504,4 @@
     border-color: var(--input-focused-border)
 }
 
-/*# sourceMappingURL=e06cfa978336e3ed.css.map*/
+/*# sourceMappingURL=3353ba8c7bf9f22f.css.map*/
