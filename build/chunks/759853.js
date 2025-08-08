@@ -110,10 +110,10 @@ let j = ["#51BC9D"],
           Object.defineProperty(a, e, Object.getOwnPropertyDescriptor(i, e))
         }), a), 100)
       }
-    }, [b, T, I, S]), Q = (0, d.Z)(v);
+    }, [b, T, I, S]), D = (0, d.Z)(v);
     return (s.useEffect(() => {
-      O && v && !Q && (y(), q())
-    }, [v, O, y, q, Q]), s.useEffect(() => {
+      O && v && !D && (y(), q())
+    }, [v, O, y, q, D]), s.useEffect(() => {
       O && !w && P && setTimeout(() => {
         y(), q()
       }, 200)

@@ -37,7 +37,7 @@ function S(e) {
     isVisibleInViewport: k,
     onReceiveErrorHints: I,
     sourceQuestContent: q
-  } = e, Q = s.useMemo(() => f.r.build(P.config), [P.config]), D = Q.defaultRewardName, V = Q.defaultRewardNameWithArticle, L = (null == (t = P.userStatus) ? void 0 : t.enrolledAt) != null, {
+  } = e, D = s.useMemo(() => f.r.build(P.config), [P.config]), Q = D.defaultRewardName, V = D.defaultRewardNameWithArticle, L = (null == (t = P.userStatus) ? void 0 : t.enrolledAt) != null, {
     ref: M,
     scrollHeight: Z
   } = (0, u.kE)(), W = 104 !== Z, {
@@ -88,7 +88,7 @@ function S(e) {
     })
   }) : F ? (0, r.jsx)(T, {
     questId: P.id,
-    children: D
+    children: Q
   }) : X ? y.intl.format(y.t.ro1szc, {
     balanceHook: () => (0, r.jsxs)(T, {
       questId: P.id,
@@ -102,7 +102,7 @@ function S(e) {
       questId: P.id,
       children: V
     })
-  }), [D, F, V, P.id, K, X]), ee = s.useMemo(() => {
+  }), [Q, F, V, P.id, K, X]), ee = s.useMemo(() => {
     if (null != J) return (0, r.jsx)(c.Text, {
       variant: "text-sm/medium",
       color: "text-muted",

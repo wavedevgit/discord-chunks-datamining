@@ -1,6 +1,6 @@
 /** Chunk was on 37082 **/
 n.d(t, {
-  Z: () => Q
+  Z: () => D
 }), n(784620), n(973216);
 var r = n(255367),
   s = n(73800),
@@ -161,7 +161,7 @@ function q(e) {
   })
 }
 
-function Q(e) {
+function D(e) {
   var t, n, o, i, c;
   let {
     quest: d,
@@ -172,24 +172,24 @@ function Q(e) {
     onCtxMenuClose: C,
     onCtxMenuOpen: w,
     onCtxMenuSelect: P,
-    sourceQuestContent: Q
-  } = e, D = (0, f.PB)(d), V = (0, p.ZP)(), L = ((0, l.wj)(V) ? N.BRd.DARK : N.BRd.LIGHT) === N.BRd.DARK, M = (0, h.tP)(d), Z = (null == (t = d.userStatus) ? void 0 : t.claimedAt) != null, W = (0, h.B6)(d.config.expiresAt, {
+    sourceQuestContent: D
+  } = e, Q = (0, f.PB)(d), V = (0, p.ZP)(), L = ((0, l.wj)(V) ? N.BRd.DARK : N.BRd.LIGHT) === N.BRd.DARK, M = (0, h.tP)(d), Z = (null == (t = d.userStatus) ? void 0 : t.claimedAt) != null, W = (0, h.B6)(d.config.expiresAt, {
     month: "numeric",
     day: "numeric"
   }), U = (null == (n = d.userStatus) ? void 0 : n.enrolledAt) != null, H = (null == (o = d.userStatus) ? void 0 : o.completedAt) != null, {
     onAssetLoadComplete: z
   } = s.useContext(S.k), F = s.useCallback(() => {
-    D && ((0, f.zi)(d) || U || (0, x.AH)(d.id, {
+    Q && ((0, f.zi)(d) || U || (0, x.AH)(d.id, {
       questContent: j.jn.QUEST_HOME_DESKTOP,
       questContentCTA: g.jZ.ACCEPT_QUEST,
-      sourceQuestContent: Q
+      sourceQuestContent: D
     }), (0, O.openVideoQuestModal)({
       quest: d,
       questContent: j.jn.QUEST_HOME_DESKTOP,
-      sourceQuestContent: Q,
+      sourceQuestContent: D,
       sourceQuestContentCTA: g.jZ.QUEST_HOME_TILE_HEADER_WATCH_VIDEO
     }))
-  }, [D, d, U, Q]);
+  }, [Q, d, U, D]);
   return (0, r.jsxs)("div", {
     className: R.container,
     children: [(0, r.jsx)("div", {
@@ -218,7 +218,7 @@ function Q(e) {
               className: R.eyebrowText,
               children: A.intl.string(A.t.SKNnqq)
             })
-          }), D && (0, r.jsx)(u.ua7, {
+          }), Q && (0, r.jsx)(u.ua7, {
             text: H ? A.intl.string(A.t.YsCuyM) : U ? A.intl.string(A.t["74Kqra"]) : (0, f.zi)(d) ? A.intl.string(A.t["I6JG4+"]) : A.intl.string(A.t.umdNio),
             children: e => (0, r.jsx)(u.P3F, k(B({}, e), {
               className: R.utilButtonWrapper,
@@ -238,7 +238,7 @@ function Q(e) {
             hideLearnMore: !0,
             shouldShowDisclosure: !0,
             showShareLink: !0,
-            sourceQuestContent: Q,
+            sourceQuestContent: D,
             children: e => (0, r.jsx)(u.P3F, k(B({}, e), {
               className: R.utilButtonWrapper,
               "aria-label": A.intl.string(A.t.DEoVWV),
@@ -283,7 +283,7 @@ function Q(e) {
         errorHints: _,
         warningHints: b,
         isDarkTheme: L,
-        sourceQuestContent: Q
+        sourceQuestContent: D
       })]
     })]
   })

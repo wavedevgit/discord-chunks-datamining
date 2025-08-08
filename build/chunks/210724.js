@@ -61,7 +61,7 @@ function B(e) {
   } = (0, E.qN)({
     quest: o,
     location: P.dr.QUESTS_BAR
-  }), Q = (0, l.e7)([d.Z], () => d.Z.useReducedMotion), D = (0, l.e7)([p.Z], () => p.Z.hasLayers()), V = s.useRef(null), L = s.useMemo(() => (0, f.q8)(o), [o]), M = (null == (t = o.userStatus) ? void 0 : t.enrolledAt) != null, Z = (0, u.Z)(M), W = (null == (n = o.userStatus) ? void 0 : n.completedAt) != null, U = (0, u.Z)(W), {
+  }), D = (0, l.e7)([d.Z], () => d.Z.useReducedMotion), Q = (0, l.e7)([p.Z], () => p.Z.hasLayers()), V = s.useRef(null), L = s.useMemo(() => (0, f.q8)(o), [o]), M = (null == (t = o.userStatus) ? void 0 : t.enrolledAt) != null, Z = (0, u.Z)(M), W = (null == (n = o.userStatus) ? void 0 : n.completedAt) != null, U = (0, u.Z)(W), {
     hasError: H,
     isLoading: z
   } = (0, O.d7)(), F = s.useContext(w.T) || B && I && !z && !k, X = s.useRef(F), K = (0, T.B)(o, F && !H), Y = s.useRef(-1), G = s.useRef(!1), [J, $] = s.useState(!1), [ee, et] = s.useState(!1), [en, er] = s.useState(!0), [es, eo] = s.useState(!0), [ea, ei] = s.useState(K.preEnrollmentExpandedHeight), el = s.useRef(null), ec = s.useCallback(e => {
@@ -143,9 +143,9 @@ function B(e) {
   s.useEffect(() => {
     eC({
       expansionSpring: +!!ee,
-      immediate: Q
+      immediate: D
     })
-  }, [ee, eC, Q]);
+  }, [ee, eC, D]);
   let {
     visibilitySpring: ey
   } = (0, c.q_F)({
@@ -219,7 +219,7 @@ function B(e) {
   return B && (F || !es || z) && !H ? (0, r.jsx)(C.A, {
     questOrQuests: o,
     questContent: K.trackingCtx.content,
-    overrideVisibility: !D && F,
+    overrideVisibility: !Q && F,
     sourceQuestContent: K.trackingCtx.content,
     children: (e, t) => {
       let n = K.component;
@@ -267,7 +267,7 @@ function B(e) {
                 onCtxMenuOpened: ep,
                 onCtxMenuSelection: eg,
                 quest: o,
-                useReducedMotion: Q,
+                useReducedMotion: D,
                 collapsedHeight: 70
               })
             })
