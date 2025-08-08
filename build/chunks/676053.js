@@ -152,6 +152,8 @@ function O(e) {
       children: [(0, r.jsx)(f.u, {
         onClick: w,
         colorMix: !0
+      }), (0, r.jsx)(d.$, {
+        caretConfig: y
       }), (0, r.jsx)(u.V, {
         asset: (0, r.jsx)("div", {
           className: p.assetContainer,
@@ -166,9 +168,7 @@ function O(e) {
         hasBottomMargin: null != g
       }), null != g ? (0, r.jsx)(c.k, {
         actions: [g]
-      }) : null, (0, r.jsx)(d.$, {
-        caretConfig: y
-      })]
+      }) : null]
     })
   }))
 }
