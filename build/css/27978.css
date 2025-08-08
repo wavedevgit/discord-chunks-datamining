@@ -1,6 +1,6 @@
 /**
   Module ID: 27978
-  Original File Name: d420c2a961cd1dae
+  Original File Name: 1a07763e78bf6663
 **/
 .textContainer__2215e {
     padding: 6px 0
@@ -1515,9 +1515,9 @@
 
 .message_fcf29c {
     color: var(--text-default);
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: var(--font-weight-medium);
-    line-height: 20px;
+    line-height: 1.25rem;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap
@@ -2859,4 +2859,4 @@
     height: 100px
 }
 
-/*# sourceMappingURL=d420c2a961cd1dae.css.map*/
+/*# sourceMappingURL=1a07763e78bf6663.css.map*/
