@@ -77,7 +77,7 @@ function ee(e) {
   } = (0, v.ZP)(_.Z.GO_LIVE_MODAL_V2), ea = (0, m.e7)([O.default], () => O.default.getCurrentUser()), ec = (0, M.Z)(), {
     state: ed,
     dispatch: eu
-  } = (0, U.Ti)(a, ea, ec, (0, Z.isWindows)() && null != a && ee ? "confirm" : "source_select"), [ef, em] = (0, b.L)(X.h7.AUDIO_INPUT, {
+  } = (0, U.Ti)(a, ea, ec, (0, Z.isWindows)() && null != a && ee ? "confirm" : "source_select"), [ef, em] = (0, b.Ls)(X.h7.AUDIO_INPUT, {
     location: "GoLiveModalV2"
   }), eh = ef.concat(em);
   (0, Y.Z)(es, eu, "confirm" === ed.modalStep);

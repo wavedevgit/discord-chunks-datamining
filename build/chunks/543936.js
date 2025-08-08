@@ -1,12 +1,12 @@
-/** Chunk was on 92357 **/
+/** Chunk was on 95193 **/
 n.d(t, {
   x: () => l
 }), n(388685);
-var r = n(73800),
-  i = n(960048);
-class l extends r.PureComponent {
+var i = n(73800),
+  r = n(960048);
+class l extends i.PureComponent {
   componentDidCatch(e, t) {
-    i.Z.captureException(e, {
+    r.Z.captureException(e, {
       tags: {
         app_context: "virtual_currency",
         source: this.props.errorSource

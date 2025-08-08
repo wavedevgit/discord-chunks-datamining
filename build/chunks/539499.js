@@ -1,4 +1,4 @@
-/** Chunk was on 92357 **/
+/** Chunk was on 17687 **/
 e.exports = {
   channelName: "channelName_cb862a",
   unread: "unread_cb862a",

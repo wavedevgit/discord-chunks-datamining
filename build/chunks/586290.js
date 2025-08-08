@@ -38,7 +38,7 @@ function S(e) {
   } = e;
   s()(null != t, "Camera capture device cannot be null");
   let o = (0, p.Z)(),
-    [a, c] = (0, m.L)(x.h7.AUDIO_INPUT, {
+    [a, c] = (0, m.Ls)(x.h7.AUDIO_INPUT, {
       location: "CaptureDeviceConfig"
     }),
     S = a.concat(c),

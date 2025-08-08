@@ -1,19 +1,25 @@
 /** Chunk was on 56826 **/
 e.d(n, {
-  Z: () => d
+  Z: () => u
 });
 var i = e(255367);
 e(73800);
 var r = e(481060),
   l = e(493683),
-  s = e(592125),
-  a = e(388032);
+  s = e(489618),
+  a = e(592125),
+  d = e(388032);
 
-function d(t, n) {
-  let e = s.Z.getChannel(t);
-  return null == e || e.isMultiUserDM() ? null : (0, i.jsx)(r.sNh, {
+function u(t, n) {
+  let {
+    rearrangeContextMenu: e
+  } = s.Z.useExperiment({
+    location: "useCloseDMItem"
+  }), u = a.Z.getChannel(t);
+  return null == u || u.isMultiUserDM() ? null : (0, i.jsx)(r.sNh, {
     id: "close-dm",
-    label: a.intl.string(a.t.jsvgc3),
+    label: d.intl.string(e ? d.t.oI64T0 : d.t.jsvgc3),
+    subtext: e ? d.intl.string(d.t.JENR6O) : void 0,
     action: () => l.Z.closePrivateChannel(t, n)
   })
 }

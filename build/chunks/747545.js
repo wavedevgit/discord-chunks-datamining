@@ -59,7 +59,7 @@ function A(e) {
     analyticsLocations: D
   } = (0, g.ZP)(), {
     id: Z
-  } = (0, f.p)(S.h7.VIDEO_INPUT), w = (0, c.e7)([j.Z], () => j.Z.isVideoAvailable()), k = x.qF.useSetting();
+  } = (0, f.p6)(S.h7.VIDEO_INPUT), w = (0, c.e7)([j.Z], () => j.Z.isVideoAvailable()), k = x.qF.useSetting();
   return (0, i.jsxs)(i.Fragment, {
     children: [y(Z), j.Z.isEnabled() ? null : (0, i.jsx)(u.Text, {
       className: I.permissionWarning,

@@ -1,7 +1,7 @@
-/** Chunk was on 92357 **/
+/** Chunk was on 27978 **/
 let r;
 n.d(t, {
-  Z: () => I
+  Z: () => y
 }), n(388685), n(539854);
 var i, l = n(442837),
   o = n(570140),
@@ -13,12 +13,12 @@ var i, l = n(442837),
   h = n(701190),
   p = n(496675),
   f = n(594174),
-  g = n(411198),
-  m = n(998502),
-  b = n(981631),
-  O = n(176505);
+  m = n(411198),
+  g = n(998502),
+  _ = n(981631),
+  x = n(176505);
 
-function _(e, t, n) {
+function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -27,83 +27,83 @@ function _(e, t, n) {
   }) : e[t] = n, e
 }
 
-function y(e) {
+function E(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      _(e, t, n[t])
+      b(e, t, n[t])
     })
   }
   return e
 }
-let C = b.IlC.APP,
-  v = !1,
+let v = _.IlC.APP,
   j = !1,
-  E = [];
+  I = !1,
+  O = [];
 
 function S() {
-  v = !0
+  j = !0
 }
-class x extends(i = l.ZP.Store) {
+class N extends(i = l.ZP.Store) {
   initialize() {
     this.waitFor(d.Z, h.Z, f.default)
   }
   isOpen() {
-    let e = __OVERLAY__ ? b.IlC.OVERLAY : b.IlC.APP;
-    return !!(v && E.length > 0 && C === e)
+    let e = __OVERLAY__ ? _.IlC.OVERLAY : _.IlC.APP;
+    return !!(j && O.length > 0 && v === e)
   }
   getProps() {
     return {
-      invite: E.length > 0 ? E[0][0] : null,
+      invite: O.length > 0 ? O[0][0] : null,
       error: null != r && "" !== r ? r : null,
-      submitting: j
+      submitting: I
     }
   }
 }
-_(x, "displayName", "InviteModalStore");
-let I = new x(o.Z, {
+b(N, "displayName", "InviteModalStore");
+let y = new N(o.Z, {
   OVERLAY_INITIALIZE: S,
   CONNECTION_OPEN: S,
   CONNECTION_CLOSED: function() {
-    v = !1
+    j = !1
   },
   INVITE_MODAL_OPEN: function(e) {
     let t = e.invite;
     if (null == t) return !1;
-    if (t.state !== b.r2o.EXPIRED && t.state !== b.r2o.BANNED && t.state !== b.r2o.ERROR) {
+    if (t.state !== _.r2o.EXPIRED && t.state !== _.r2o.BANNED && t.state !== _.r2o.ERROR) {
       let {
         channel: e,
         guild: n
       } = t;
       if (null == e) return !1;
       if ((0, c.bc)(e.type)) {
-        if (null != u.Z.getChannel(e.id)) return (0, a.XU)(b.ME, e.id), m.ZP.focus(), !1
+        if (null != u.Z.getChannel(e.id)) return (0, a.XU)(_.ME, e.id), g.ZP.focus(), !1
       } else {
         if (null == n) return !1;
         if (null != d.Z.getGuild(n.id) && !(0, s.TY)(t)) {
           let e = function(e) {
-            if ((0, s.W6)(e)) return O.oC.ROLE_SUBSCRIPTIONS;
+            if ((0, s.W6)(e)) return x.oC.ROLE_SUBSCRIPTIONS;
             let {
               channel: t
             } = e;
             if (null != t) {
               let e = u.Z.getChannel(t.id);
-              if (p.Z.can(b.Plq.VIEW_CHANNEL, e)) return t.id
+              if (p.Z.can(_.Plq.VIEW_CHANNEL, e)) return t.id
             }
             return null
           }(t);
-          return (0, a.XU)(n.id, e), m.ZP.focus(), !1
+          return (0, a.XU)(n.id, e), g.ZP.focus(), !1
         }
       }
     }
-    if (E.some(e => {
+    if (O.some(e => {
         let [n] = e;
         return n.code === t.code
       })) return !1;
-    C = e.context, j = !1;
+    v = e.context, I = !1;
     let n = function(e) {
       let {
         approximate_member_count: t,
@@ -130,23 +130,23 @@ let I = new x(o.Z, {
         type: c,
         is_nickname_changeable: h
       };
-      return null != u && (p.channel = y({}, u)), null != d && (p.guild = (0, g.Qs)(d)), null != e.inviter && (p.inviter = y({}, e.inviter)), p
+      return null != u && (p.channel = E({}, u)), null != d && (p.guild = (0, m.Qs)(d)), null != e.inviter && (p.inviter = E({}, e.inviter)), p
     }(t);
-    E.push([n, e.resolve])
+    O.push([n, e.resolve])
   },
   INVITE_MODAL_CLOSE: function() {
-    if (r = null, j = !1, E.length > 0) {
-      let [, e] = E.shift();
+    if (r = null, I = !1, O.length > 0) {
+      let [, e] = O.shift();
       null != e && e()
     }
   },
   INVITE_ACCEPT: function() {
-    j = !0
+    I = !0
   },
   INVITE_MODAL_ERROR: function(e) {
     let {
       message: t
     } = e;
-    r = t, j = !1
+    r = t, I = !1
   }
 })

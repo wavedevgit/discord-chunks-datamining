@@ -94,7 +94,7 @@ class _ {
   constructor() {
     c(this, d, {
       writable: !0,
-      value: {}
+      value: Object.create(null)
     }), c(this, f, {
       writable: !0,
       value: {

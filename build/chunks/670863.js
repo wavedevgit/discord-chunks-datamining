@@ -110,11 +110,11 @@ function T(e) {
     getLocation: R
   } = I(n), {
     analyticsLocations: P
-  } = (0, l.ZP)(), [w, D] = i.useState(c), L = R(s), [x, M] = (0, f.L)(n, {
+  } = (0, l.ZP)(), [w, D] = i.useState(c), L = R(s), [x, M] = (0, f.Ls)(n, {
     location: L
   }), {
     id: k
-  } = (0, f.p)(n), j = null != p ? p : k, U = (0, o.e7)([u.Z], () => N(u.Z)), G = (0, r.jsx)(a.R94, {
+  } = (0, f.p6)(n), j = null != p ? p : k, U = (0, o.e7)([u.Z], () => N(u.Z)), G = (0, r.jsx)(a.R94, {
     type: a.R94.Types.DESCRIPTION,
     className: g.marginTop8,
     children: C()

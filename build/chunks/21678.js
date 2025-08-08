@@ -1,4 +1,4 @@
-/** Chunk was on 92357 **/
+/** Chunk was on 17687 **/
 e.exports = {
   container: "container_ea5470",
   panelSpacing: "panelSpacing_ea5470",

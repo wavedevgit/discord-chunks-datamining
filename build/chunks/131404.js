@@ -17,16 +17,16 @@ var r = e(481060),
   h = e(607783),
   j = e(702321),
   p = e(461535),
-  v = e(776568),
-  x = e(658138),
-  S = e(299206),
-  Z = e(895563),
-  _ = e(212205),
-  I = e(62420),
+  x = e(776568),
+  v = e(658138),
+  Z = e(299206),
+  S = e(895563),
+  I = e(212205),
+  _ = e(62420),
   b = e(122074),
   O = e(819403),
-  y = e(777658),
-  N = e(858488),
+  N = e(777658),
+  y = e(858488),
   m = e(44652),
   E = e(185457),
   k = e(570870),
@@ -34,9 +34,9 @@ var r = e(481060),
   A = e(24311),
   C = e(794973),
   T = e(165855),
-  U = e(332576),
-  M = e(158508),
-  R = e(710631),
+  M = e(332576),
+  R = e(158508),
+  U = e(710631),
   D = e(47091),
   w = e(558924),
   Q = e(991307),
@@ -57,8 +57,8 @@ let K = (0, a.Z)((0, s.Z)(function(t) {
     targetIsUser: z = !1,
     context: B,
     onSelect: q,
-    onHeightUpdate: X,
-    onInteraction: J
+    onHeightUpdate: J,
+    onInteraction: X
   } = t, H = (0, V.Z)({
     userId: n.id,
     guildId: null
@@ -69,11 +69,11 @@ let K = (0, a.Z)((0, s.Z)(function(t) {
     user: n,
     channelId: e.id,
     context: B
-  }), tn = (0, N.Z)({
+  }), tn = (0, y.Z)({
     user: n
-  }), te = (0, F.Z)(n.id), ti = (0, C.Z)(e.id, s), tr = (0, R.Z)({
+  }), te = (0, F.Z)(n.id), ti = (0, C.Z)(e.id, s), tr = (0, U.Z)({
     user: n
-  }), tl = (0, u.Z)(null, n), ts = (0, W.Z)(n.id), ta = (0, w.O)(e.id, "DMUserContextMenu"), td = (0, w.Z)(n, ta), tu = (0, y.Z)({
+  }), tl = (0, u.Z)(null, n), ts = (0, W.Z)(n.id), ta = (0, w.O)(e.id, "DMUserContextMenu"), td = (0, w.Z)(n, ta), tu = (0, N.Z)({
     user: n
   }), to = (0, m.Z)({
     user: n
@@ -83,63 +83,63 @@ let K = (0, a.Z)((0, s.Z)(function(t) {
     userId: n.id,
     channelId: e.id,
     guildId: e.getGuildId()
-  }), th = (0, U.Z)(n.id, e.id), tj = (0, P.Z)({
+  }), th = (0, M.Z)(n.id, e.id), tj = (0, P.Z)({
     user: n,
     location: "DMUserContextMenu"
-  }), tp = (0, M.Z)({
+  }), tp = (0, R.Z)({
     user: n,
     location: "DMUserContextMenu"
-  }), tv = (0, v.ZP)(e), tx = (0, b.Uf)(Y.aIL, e.id, "trailing"), tS = (0, S.Z)({
+  }), tx = (0, x.ZP)(e), tv = (0, b.Uf)(Y.aIL, e.id, "trailing"), tZ = (0, Z.Z)({
     id: n.id,
     label: G.intl.string(G.t["/AXYnJ"])
-  }), tZ = (0, S.Z)({
+  }), tS = (0, Z.Z)({
     id: e.id,
     label: G.intl.string(G.t.gFHI3t)
-  }), t_ = (0, p.Z)(e), tI = (0, f.Z)(n.id), tb = (0, c.Z)(e.id), tO = (0, O.Z)(n), ty = (0, g.Z)(n.id), tN = (0, k.Z)({
+  }), tI = (0, p.Z)(e), t_ = (0, f.Z)(n.id), tb = (0, c.Z)(e.id), tO = (0, O.Z)(n), tN = (0, g.Z)(n.id), ty = (0, k.Z)({
     commandType: d.yU.USER,
     commandTargetId: n.id,
     channel: e,
     guildId: void 0,
-    onHeightUpdate: X
-  }), tm = (0, Z.l)(e), tE = (0, Z.P)(e), tk = (0, _.Z)(e), tP = (0, I.Z)(e), tA = (0, T.Z)({
+    onHeightUpdate: J
+  }), tm = (0, S.l)(e), tE = (0, S.P)(e), tk = (0, I.Z)(e), tP = (0, _.Z)(e), tA = (0, T.Z)({
     channel: e
-  }), tC = (0, x.D)(e), tT = e.isManaged(), tU = n.isNonUserBot();
+  }), tC = (0, v.D)(e), tT = e.isManaged(), tM = n.isNonUserBot();
   return (0, i.jsxs)(r.v2r, {
     navId: "user-context",
     onClose: l.Zy,
     "aria-label": G.intl.string(G.t.liqwPD),
     onSelect: q,
-    onInteraction: J,
+    onInteraction: X,
     children: [(0, i.jsx)(r.kSQ, {
-      children: !(tU && !(0, j.Z)(e.id)) && t_
+      children: !(tM && !(0, j.Z)(e.id)) && tI
     }), (0, i.jsxs)(r.kSQ, {
       children: [tm, tk, tP, tC]
     }), (0, i.jsx)(r.kSQ, {
-      children: !tU && tO
+      children: !tM && tO
     }), (0, i.jsxs)(r.kSQ, {
-      children: [!tU && (0, i.jsxs)(i.Fragment, {
+      children: [!tM && (0, i.jsxs)(i.Fragment, {
         children: [L && H, $, !tT && td, L && tt, L && tn, te]
       }), (0, j.Z)(e.id) && H, ti]
-    }), !tU && (0, i.jsxs)(i.Fragment, {
+    }), !tM && (0, i.jsxs)(i.Fragment, {
       children: [(0, i.jsx)(r.kSQ, {
         children: o && ts
       }), (0, i.jsx)(r.kSQ, {
         children: L && tl
       }), (0, i.jsxs)(r.kSQ, {
-        children: [o && tf, L && tg, o && th, tN, L && tr, tu, to, tc, L && tp, L && tj, o && ty]
+        children: [o && tf, L && tg, o && th, ty, L && tr, tu, to, tc, L && tp, L && tj, o && tN]
       }), (0, i.jsxs)(r.kSQ, {
-        children: [a && tv, tx]
+        children: [a && tx, tv]
       }), K && (0, i.jsxs)(r.kSQ, {
-        children: [tb, tI]
+        children: [tb, t_]
       })]
     }), (0, j.Z)(e.id) && (0, i.jsxs)(r.kSQ, {
-      children: [a && tv, tx]
+      children: [a && tx, tv]
     }), (0, i.jsx)(r.kSQ, {
       children: tE
     }), (0, i.jsx)(r.kSQ, {
       children: tA
     }), (0, i.jsxs)(r.kSQ, {
-      children: [tS, !z && tZ]
+      children: [tZ, !z && tS]
     })]
   })
 }, {
