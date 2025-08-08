@@ -1,6 +1,6 @@
 /**
   Module ID: 49152
-  Original File Name: 2fbd81ded7a65dcf
+  Original File Name: 771c8fd132d7ba7e
 **/
 @keyframes placeholderPulse_c8ffbb {
     0% {
@@ -1457,28 +1457,8 @@
 }
 
 .buttonContainer__664ff {
-    align-items: center;
-    background-color: var(--background-base-lower);
-    border-radius: 50%;
-    color: var(--interactive-normal);
     display: flex;
-    height: 32px;
-    justify-content: center;
-    width: 32px
-}
-
-.buttonContainer__664ff:hover {
-    background-color: var(--background-base-lowest);
-    color: var(--interactive-hover)
-}
-
-.buttonContainer__664ff:active {
-    background-color: var(--background-base-lowest);
-    color: var(--interactive-active)
-}
-
-.buttonMargin__664ff {
-    margin-left: 16px
+    gap: 8px
 }
 
 .selfSpeakerButton__664ff {
@@ -3109,4 +3089,4 @@
     position: relative
 }
 
-/*# sourceMappingURL=2fbd81ded7a65dcf.css.map*/
+/*# sourceMappingURL=771c8fd132d7ba7e.css.map*/

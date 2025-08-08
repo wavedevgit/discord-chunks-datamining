@@ -5,7 +5,6 @@ e.exports = {
   headerContainer: "headerContainer__664ff",
   contentContainer: "contentContainer__664ff",
   buttonContainer: "buttonContainer__664ff",
-  buttonMargin: "buttonMargin__664ff",
   listTitle: "listTitle__664ff",
   participantRowContainer: "participantRowContainer__664ff",
   participantMemberContainer: "participantMemberContainer__664ff",
