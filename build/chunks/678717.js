@@ -34,8 +34,8 @@ var C = a(392750),
   I = a(604776),
   R = a(912072),
   k = a(272193),
-  Z = a(685560),
-  A = a(735959),
+  A = a(685560),
+  Z = a(735959),
   D = a(572444),
   L = a(636500),
   B = a(246992),
@@ -157,7 +157,7 @@ function em(e) {
       id: "intl",
       name: "Intl",
       group: el.v0.UI,
-      render: () => (0, n.jsx)(A.Z, {})
+      render: () => (0, n.jsx)(Z.Z, {})
     }), e.push({
       id: "colors",
       name: "Colors",
@@ -281,7 +281,7 @@ function em(e) {
       id: "skill_trees",
       name: "Skill Trees",
       group: el.v0.GUILDS,
-      render: () => (0, n.jsx)(Z.Z, {})
+      render: () => (0, n.jsx)(A.Z, {})
     }), e.push({
       id: "language",
       name: "Language",

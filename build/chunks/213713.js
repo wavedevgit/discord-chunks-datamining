@@ -1,6 +1,6 @@
 /** Chunk was on 93886 **/
 a.d(t, {
-  Z: () => A
+  Z: () => Z
 }), a(388685);
 var n = a(255367),
   r = a(73800),
@@ -65,13 +65,13 @@ let k = [{
     let {
       type: t
     } = e;
-    return (0, n.jsx)(Z, {
+    return (0, n.jsx)(A, {
       type: t
     })
   }
 }];
 
-function Z(e) {
+function A(e) {
   var t, a;
   let {
     type: r
@@ -92,7 +92,7 @@ function Z(e) {
   })
 }
 
-function A() {
+function Z() {
   var e, t;
   let a = (0, u.e7)([E.Z], () => E.Z.getFeed(w.YN.GLOBAL_FEED)),
     l = (0, u.e7)([E.Z], () => E.Z.getDebugImpressionCappingDisabled()),
@@ -112,11 +112,11 @@ function A() {
       var e;
       return (null == (e = E.Z.getFeedState(w.YN.GLOBAL_FEED)) ? void 0 : e.loading) === !0
     }),
-    [Z, A] = r.useState(""),
+    [A, Z] = r.useState(""),
     L = (0, u.e7)([y.Z, b.Z], () => {
       var e, t, a;
-      return parseInt(Z) > 0 ? Z : null != (a = null == (e = y.Z.getGameByName(Z)) ? void 0 : e.id) ? a : null == (t = b.Z.getApplicationByName(Z)) ? void 0 : t.id
-    }, [Z]),
+      return parseInt(A) > 0 ? A : null != (a = null == (e = y.Z.getGameByName(A)) ? void 0 : e.id) ? a : null == (t = b.Z.getApplicationByName(A)) ? void 0 : t.id
+    }, [A]),
     B = (0, _.Z)({
       applicationId: L,
       location: "DevToolsContentInventory",
@@ -207,11 +207,11 @@ function A() {
           children: "Game Profile"
         }), (0, n.jsx)(x.Is, {
           placeholder: "App ID or full name",
-          onChange: e => (0 === e.length || e.length >= 18) && A(e),
+          onChange: e => (0 === e.length || e.length >= 18) && Z(e),
           onKeyDown: e => {
-            "Enter" === e.key && (Z === e.currentTarget.value ? null == B || B(e) : A(e.currentTarget.value))
+            "Enter" === e.key && (A === e.currentTarget.value ? null == B || B(e) : Z(e.currentTarget.value))
           },
-          error: Z.length > 0 && null == B ? "No game profile for ".concat(null != L ? L : Z + " - try by id", ".") : void 0,
+          error: A.length > 0 && null == B ? "No game profile for ".concat(null != L ? L : A + " - try by id", ".") : void 0,
           style: null != B ? {
             border: "1px solid green"
           } : {}

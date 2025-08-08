@@ -85,6 +85,14 @@ let f = {
     return t => (0, n.jsx)(e, b(h({}, t), {
       source: u.L0.NSFW_SERVER
     }))
+  },
+  AutomatedUnderageAppealModal: async () => {
+    let {
+      default: e
+    } = await a.e("75435").then(a.bind(a, 751744));
+    return t => (0, n.jsx)(e, b(h({}, t), {
+      classificationId: "123"
+    }))
   }
 };
 

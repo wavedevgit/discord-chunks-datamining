@@ -4,8 +4,8 @@ t.d(n, {
 });
 var i = t(255367);
 t(73800);
-var s = t(481060),
-  a = t(259580),
+var a = t(481060),
+  s = t(259580),
   l = t(935786);
 
 function r(e) {
@@ -14,19 +14,19 @@ function r(e) {
     text: t,
     onClick: r
   } = e;
-  return (0, i.jsx)(s.eee, {
+  return (0, i.jsx)(a.eee, {
     href: n,
     onClick: r,
     className: l.externalLinkWrapper,
-    children: (0, i.jsxs)(s.P3F, {
+    children: (0, i.jsxs)(a.P3F, {
       className: l.childButton,
-      children: [(0, i.jsx)(s.Text, {
+      children: [(0, i.jsx)(a.Text, {
         className: l.childText,
         variant: "text-md/semibold",
         children: t
-      }), (0, i.jsx)(a.Z, {
+      }), (0, i.jsx)(s.Z, {
         className: l.childIcon,
-        direction: a.Z.Directions.RIGHT
+        direction: s.Z.Directions.RIGHT
       })]
     })
   })

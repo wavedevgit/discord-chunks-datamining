@@ -52,8 +52,8 @@ var n, r, l = a(73800),
   I = a(856308),
   R = a(665352),
   k = a(394900),
-  Z = a(661105),
-  A = a(525169),
+  A = a(661105),
+  Z = a(525169),
   D = a(433517),
   L = a(521904),
   B = a(231338);
@@ -165,7 +165,7 @@ function Y(e) {
 }
 
 function J(e) {
-  return (0, k.Z)((0, Z.Z)(e, i.Z), {
+  return (0, k.Z)((0, A.Z)(e, i.Z), {
     format: "hex"
   })
 }
@@ -216,18 +216,18 @@ function er(e) {
     darkness: r,
     lightness: l,
     easingStrength: s = 1
-  } = e, o = U[e.colorSpace], c = (0, Z.Z)(a, o), d = (0, A.CD)(c, "white", 1 - r, {
+  } = e, o = U[e.colorSpace], c = (0, A.Z)(a, o), d = (0, Z.CD)(c, "white", 1 - r, {
     space: o,
     outputSpace: i.Z
-  }), u = (0, A.CD)(c, "black", 1 - l, {
+  }), u = (0, Z.CD)(c, "black", 1 - l, {
     space: o,
     outputSpace: i.Z
-  }), m = Math.floor(n / 2), x = n - m, p = (0, A.w6)(d, c, {
+  }), m = Math.floor(n / 2), x = n - m, p = (0, Z.w6)(d, c, {
     steps: m,
     outputSpace: o,
     space: o,
     progression: e => e ** s
-  }), h = (0, A.w6)(u, c, {
+  }), h = (0, Z.w6)(u, c, {
     steps: x,
     outputSpace: o,
     space: o,
