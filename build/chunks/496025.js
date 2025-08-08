@@ -97,7 +97,7 @@ function E() {
 }
 
 function T() {
-  let e = j.ZP.allByCategory(j.zU.MESSAGING).map(e => {
+  let e = (0, o.e7)([j.ZP], () => j.ZP.allByCategory(j.zU.MESSAGING), [], o.pF).map(e => {
     let [t, a, {
       label: r
     }] = e;
