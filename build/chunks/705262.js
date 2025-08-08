@@ -223,7 +223,7 @@ let W = Object.freeze({
     } = (0, h.ZP)(p.Z.CLIENT_THEMES_THEME_SELECTOR), [g, E] = (0, l.Wu)([N.Z], () => {
       var e;
       return [N.Z.isPreview, null == (e = N.Z.gradientPreset) ? void 0 : e.id]
-    }), [b, y] = i.useState(!1), [O, v] = i.useState(-1), I = (0, l.e7)([_.Z], () => _.Z.useReducedMotion), T = C.M.useExperiment({
+    }), [b, y] = i.useState(!1), [O, v] = i.useState(-1), I = (0, l.e7)([_.Z], () => _.Z.useReducedMotion), T = C.Mc.useExperiment({
       location: "GradientSelectors"
     }).enabled;
     i.useEffect(() => {

@@ -1,6 +1,6 @@
 /**
   Module ID: 93886
-  Original File Name: 711e102d9468a6de
+  Original File Name: cc3e847235fbb01b
 **/
 .panel_fe7ab2 {
     flex: 1;
@@ -2169,9 +2169,9 @@
 
 .message_fcf29c {
     color: var(--text-default);
-    font-size: 1rem;
+    font-size: 16px;
     font-weight: var(--font-weight-medium);
-    line-height: 1.25rem;
+    line-height: 20px;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap
@@ -3200,4 +3200,4 @@
     width: 100%
 }
 
-/*# sourceMappingURL=711e102d9468a6de.css.map*/
+/*# sourceMappingURL=cc3e847235fbb01b.css.map*/

@@ -25,7 +25,7 @@ let f = "data-client-themes",
   };
 
 function p() {
-  let e = d.M.useExperiment({
+  let e = d.Mc.useExperiment({
       location: "RootThemeContextProvider"
     }).enabled,
     t = (0, o.e7)([a.Z], () => a.Z.theme),

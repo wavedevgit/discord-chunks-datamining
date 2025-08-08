@@ -1,6 +1,6 @@
 /**
   Module ID: 81981
-  Original File Name: 8e9a3a94bb1bb680
+  Original File Name: ceddf730eb501399
 **/
 @value minColumnWidth: 460px;
 
@@ -458,9 +458,9 @@
 
 .message_fcf29c {
     color: var(--text-default);
-    font-size: 1rem;
+    font-size: 16px;
     font-weight: var(--font-weight-medium);
-    line-height: 1.25rem;
+    line-height: 20px;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap
@@ -1101,4 +1101,4 @@
     padding-top: var(--space-16)
 }
 
-/*# sourceMappingURL=8e9a3a94bb1bb680.css.map*/
+/*# sourceMappingURL=ceddf730eb501399.css.map*/

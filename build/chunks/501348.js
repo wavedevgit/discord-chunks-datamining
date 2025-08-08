@@ -584,7 +584,7 @@ function ei() {
     s = Z.L1.useSetting(),
     a = Z.hg.useSetting(),
     c = Z.YC.useSetting(),
-    d = j.M.useExperiment({
+    d = j.Mc.useExperiment({
       location: "UserSettingsAppearance"
     }).enabled;
   (0, g.ZP)(() => {

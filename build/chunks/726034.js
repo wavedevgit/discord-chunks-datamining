@@ -340,7 +340,7 @@ function et(e) {
     metadata: n,
     markAsDismissed: o,
     isCoachmark: a
-  } = e, u = P.M.useExperiment({
+  } = e, u = P.Mc.useExperiment({
     location: "ClientThemeColorPickerTools"
   }).enabled, d = (0, R.jJ)(), f = i.useRef(!1), {
     colors: _,

@@ -30,7 +30,7 @@ let v = function() {
     v = (0, c.g)(),
     {
       v2EditorEnabled: I
-    } = l.M.useExperiment({
+    } = l.Mc.useExperiment({
       location: "AppRightSidePanel"
     }),
     {
