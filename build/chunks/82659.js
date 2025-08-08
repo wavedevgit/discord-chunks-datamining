@@ -77,17 +77,19 @@ function h(e) {
     preview: p,
     actions: h,
     actionBarInput: m,
-    children: g
-  } = e, E = _(e, ["size", "title", "subtitle", "input", "preview", "actions", "actionBarInput", "children"]);
-  let b = null != t ? t : null != d || null != g ? "md" : "sm";
-  return (0, r.jsxs)(i.I, f(u({}, E), {
-    size: b,
+    listProps: g,
+    children: E
+  } = e, b = _(e, ["size", "title", "subtitle", "input", "preview", "actions", "actionBarInput", "listProps", "children"]);
+  let y = null != t ? t : null != d || null != E || null != g ? "md" : "sm";
+  return (0, r.jsxs)(i.I, f(u({}, b), {
+    size: y,
     children: [(0, r.jsx)(l.x, {
       title: n,
       subtitle: c
     }), (0, r.jsx)(a.f, {
       controls: d,
-      children: g
+      listProps: g,
+      children: E
     }), (0, r.jsx)(s.m, {
       children: p
     }), (0, r.jsx)(o.G, {

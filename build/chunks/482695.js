@@ -2,6 +2,7 @@
 "use strict";
 e.exports = {
   container: "container_dfb989",
+  inProfile: "inProfile_dfb989",
   innerContainer: "innerContainer_dfb989",
   glowContainer: "glowContainer_dfb989",
   emoji: "emoji_dfb989",

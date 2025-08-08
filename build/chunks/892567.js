@@ -63,7 +63,8 @@ let v = i.memo(function(e) {
     className: l()(O.container, N, T, {
       [O.showEffect]: s !== g.F.PLAIN,
       [O.animated]: s === g.F.ANIMATED && !C,
-      [O.loop]: S
+      [O.loop]: S,
+      [O.inProfile]: v
     }),
     style: G,
     children: [(0, r.jsx)("span", {

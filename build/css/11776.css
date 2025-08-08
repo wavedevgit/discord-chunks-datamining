@@ -1,6 +1,6 @@
 /**
   Module ID: 11776
-  Original File Name: 3aabe6a1cd334427
+  Original File Name: 684cb8c0f2c10cf7
 **/
 .scroller__95bea {
     display: flex;
@@ -1401,7 +1401,9 @@
     box-shadow: var(--shadow-medium);
     display: flex;
     flex-direction: column;
+    flex-shrink: 0;
     outline: 1px solid var(--border-subtle);
+    overflow: hidden;
     position: relative;
     width: 400px
 }
@@ -1511,4 +1513,4 @@
     border-color: var(--input-focused-border)
 }
 
-/*# sourceMappingURL=3aabe6a1cd334427.css.map*/
+/*# sourceMappingURL=684cb8c0f2c10cf7.css.map*/
