@@ -1,68 +1,7 @@
 /**
   Module ID: 31505
-  Original File Name: 6a27ad2c50431be1
+  Original File Name: 344ac8ae4658eb7a
 **/
-.videoContainer__1bd8a {
-    transform: translate(calc(-50% + 4px),-50%);
-    width: 1375px;
-    z-index: 0
-}
-
-.video__1bd8a,.videoContainer__1bd8a {
-    left: 50%;
-    position: absolute;
-    top: 50%
-}
-
-.video__1bd8a {
-    transform: translate(-50%,-50%);
-    width: 100%
-}
-
-.video__1bd8a.hidden__1bd8a {
-    visibility: hidden
-}
-
-.video__1bd8a.visible__1bd8a {
-    visibility: visible
-}
-
-.entryAnimationContainer__1bd8a {
-    animation: wowMomentScaleIn__1bd8a .3s ease,wowMomentScaleSettle__1bd8a .3s ease .3s;
-    will-change: transform
-}
-
-@keyframes wowMomentScaleIn__1bd8a {
-    0% {
-        transform: scale(.5)
-    }
-
-    to {
-        transform: scale(1.05)
-    }
-}
-
-@keyframes wowMomentScaleSettle__1bd8a {
-    0% {
-        transform: scale(1.05)
-    }
-
-    to {
-        transform: scale(1)
-    }
-}
-
-.wowAnimation__1bd8a {
-    height: 1028px;
-    left: 50%;
-    pointer-events: none;
-    position: absolute;
-    top: 50%;
-    transform: translate(-50%,-50%);
-    width: 1512px;
-    z-index: 1
-}
-
 .animationContainer__884d1,.container__884d1 {
     position: relative;
     z-index: 0
@@ -1090,4 +1029,4 @@
     flex-direction: row-reverse
 }
 
-/*# sourceMappingURL=6a27ad2c50431be1.css.map*/
+/*# sourceMappingURL=344ac8ae4658eb7a.css.map*/

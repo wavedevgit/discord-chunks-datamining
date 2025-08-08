@@ -1,5 +1,6 @@
-/** Chunk was on 31505 **/
-r.d(t, {
-  Z: () => n
+/** Chunk was on web.js **/
+"use strict";
+n.d(t, {
+  Z: () => r
 });
-let n = "https://cdn.discordapp.com/assets/content/639c92033d185e10adaaa771ec5a8172d85f7b16fe57945ad30e597e48b39c5c.webm"
+let r = "https://cdn.discordapp.com/assets/content/639c92033d185e10adaaa771ec5a8172d85f7b16fe57945ad30e597e48b39c5c.webm"
