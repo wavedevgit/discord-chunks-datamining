@@ -19,8 +19,8 @@ var r = n(255367),
   m = n(181430),
   g = n(821795),
   E = n(760692),
-  b = n(7284),
-  y = n(660662),
+  b = n(203872),
+  y = n(7284),
   O = n(482695);
 let v = i.memo(function(e) {
   let {
@@ -31,7 +31,7 @@ let v = i.memo(function(e) {
     textClassName: v,
     loop: T = !1,
     shouldWrap: S = !1
-  } = e, A = (0, b.j)({
+  } = e, A = (0, y.j)({
     displayNameStyles: n,
     inProfile: s
   }), {
@@ -48,30 +48,30 @@ let v = i.memo(function(e) {
     location: "useDisplayNameStylesFont"
   }), w = (0, m.Y)({
     location: "UserNameWithEffects"
-  }), D = (0, f.dQu)(f.TVs.colors.BACKGROUND_BASE_LOW).hex(), L = (0, f.qgQ)(t), x = (0, d.EJ)(L, (null == n ? void 0 : n.effectId) === c.m.TOON ? O.emoji : void 0), M = i.useMemo(() => null != n && w ? n.colors.map(e => {
+  }), D = (0, f.dQu)(f.TVs.colors.BACKGROUND_BASE_LOW).hex(), L = (0, b.J)(), x = (0, f.qgQ)(t), M = (0, d.EJ)(x, (null == n ? void 0 : n.effectId) === c.m.TOON ? O.emoji : void 0), k = i.useMemo(() => null != n && w ? n.colors.map(e => {
     let t = a()(e);
-    return R && (t = t.desaturate(1 - C)), (0, p.aP)(t.hex(), n.effectId === c.m.TOON ? "#333" : D, y.sS[n.effectId].minContrastRatio)
-  }) : [], [n, w, R, C, D]);
+    return R && (t = t.desaturate(1 - C)), (0, p.aP)(t.hex(), n.effectId === c.m.TOON ? "#333" : D, L[n.effectId].minContrastRatio)
+  }) : [], [n, w, R, C, D, L]);
   if (!w || !s && !P || null == n) return t;
-  let k = (0, E.K)(n.effectId, M, {
+  let j = (0, E.K)(n.effectId, k, {
       shouldWrap: S
     }),
-    j = I(n.effectId, o);
+    U = I(n.effectId, o);
   return (0, r.jsxs)("div", {
     className: l()(O.container, A, v, {
       [O.showEffect]: o !== g.F.PLAIN,
       [O.animated]: o === g.F.ANIMATED && !N,
       [O.loop]: T
     }),
-    style: k,
+    style: j,
     children: [(0, r.jsx)("span", {
-      "data-username-with-effects": L,
-      className: l()(O.innerContainer, null == j ? void 0 : j.effectClassName),
-      children: x
-    }), (null == j ? void 0 : j.glowClassName) != null && (0, r.jsx)("span", {
-      className: l()(O.glowContainer, O.innerContainer, j.glowClassName),
+      "data-username-with-effects": x,
+      className: l()(O.innerContainer, null == U ? void 0 : U.effectClassName),
+      children: M
+    }), (null == U ? void 0 : U.glowClassName) != null && (0, r.jsx)("span", {
+      className: l()(O.glowContainer, O.innerContainer, U.glowClassName),
       "aria-hidden": !0,
-      children: L
+      children: x
     })]
   })
 });

@@ -12,8 +12,8 @@ var o = n(120356),
   c = n(660662),
   d = n(698282),
   u = n(388032),
-  f = n(397419),
-  p = n(441047);
+  p = n(397419),
+  f = n(441047);
 
 function m(e) {
   let {
@@ -25,7 +25,7 @@ function m(e) {
     className: o,
     children: [(0, r.jsxs)(a.X6, {
       variant: "heading-md/semibold",
-      className: f.selectorHeading,
+      className: p.selectorHeading,
       children: [u.intl.string(d.default.nP0ngY), (0, r.jsx)(i.SrA, {
         size: "xs",
         color: i.TVs.colors.TEXT_DEFAULT
@@ -42,20 +42,20 @@ function m(e) {
           children: t => {
             let {
               onMouseEnter: d,
-              onMouseLeave: f
+              onMouseLeave: p
             } = t;
             return (0, r.jsx)(i.P3F, {
-              className: l()(p.fontButton, {
-                [p.selected]: c
+              className: l()(f.fontButton, {
+                [f.selected]: c
               }),
               onClick: () => n(e),
               "aria-label": u.intl.string(o.name),
               onMouseEnter: d,
-              onMouseLeave: f,
+              onMouseLeave: p,
               children: (0, r.jsx)(a.xv, {
                 variant: "text-lg/semibold",
                 color: c ? "text-primary" : "text-default",
-                className: l()(p.fontText, s.y[e].className),
+                className: l()(f.fontText, s.y[e].className),
                 children: "Gg"
               })
             })

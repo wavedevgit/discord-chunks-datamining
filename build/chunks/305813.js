@@ -1,6 +1,6 @@
 /** Chunk was on 47495 **/
 n.d(t, {
-  Z: () => k
+  Z: () => E
 }), n(388685);
 var r = n(255367),
   o = n(73800),
@@ -11,19 +11,19 @@ var r = n(255367),
   c = n(22267),
   d = n(786761),
   u = n(3148),
-  f = n(739566),
-  p = n(753206),
+  p = n(739566),
+  f = n(753206),
   m = n(678135),
   g = n(687158),
   h = n(28660),
   b = n(502762),
   x = n(598077),
   j = n(626135),
-  S = n(63063),
-  _ = n(981631),
-  O = n(228168),
-  C = n(698282),
-  y = n(388032),
+  _ = n(63063),
+  S = n(981631),
+  C = n(228168),
+  y = n(698282),
+  O = n(388032),
   P = n(454507);
 
 function v(e) {
@@ -45,7 +45,7 @@ function v(e) {
   return e
 }
 
-function E(e, t) {
+function k(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -58,33 +58,33 @@ function E(e, t) {
   }), e
 }
 
-function k(e) {
+function E(e) {
   let {
     user: t,
     selectedFontId: n,
     selectedEffectId: l,
-    selectedColors: k,
+    selectedColors: E,
     onClose: T
-  } = e, D = new x.Z(E(v({}, t), {
+  } = e, D = new x.Z(k(v({}, t), {
     displayNameStyles: {
       fontId: n,
       effectId: l,
-      colors: k
+      colors: E
     }
-  })), w = (0, s.ZP)(), L = (0, i.wjy)(w), [I, A] = (0, o.useState)(L), R = (0, g.ZP)(t.id, null), {
+  })), w = (0, s.ZP)(), I = (0, i.wjy)(w), [A, L] = (0, o.useState)(I), R = (0, g.ZP)(t.id, null), {
     bannerSrc: B
   } = (0, h.Z)({
     displayProfile: R,
     size: 413,
     canAnimate: !1
-  }), M = I ? _.BRd.DARK : _.BRd.LIGHT;
-  (L && I || !L && !I) && (M = w);
+  }), M = A ? S.BRd.DARK : S.BRd.LIGHT;
+  (I && A || !I && !A) && (M = w);
   let Z = (0, o.useCallback)(() => {
-      j.default.track(_.rMx.DISPLAY_NAME_STYLES_CLOSED), T()
+      j.default.track(S.rMx.DISPLAY_NAME_STYLES_CLOSED), T()
     }, [T]),
     Y = (0, o.useCallback)(e => {
-      A(e === _.BRd.DARK), j.default.track(_.rMx.DISPLAY_NAME_STYLES_THEME_TOGGLE, {
-        dark: e === _.BRd.DARK
+      L(e === S.BRd.DARK), j.default.track(S.rMx.DISPLAY_NAME_STYLES_THEME_TOGGLE, {
+        dark: e === S.BRd.DARK
       })
     }, []);
   return (0, r.jsxs)("div", {
@@ -101,7 +101,7 @@ function k(e) {
     }), null != B && (0, r.jsx)(b.Z, {
       user: D,
       displayProfile: R,
-      themeType: O.lY.MODAL_V2,
+      themeType: C.lY.MODAL_V2,
       className: P.backgroundThemeContainer,
       forceUserTheme: !0,
       children: (0, r.jsx)("div", {
@@ -125,13 +125,13 @@ function k(e) {
           containerClassName: P.profile,
           interactive: !1,
           hideViewFullProfileButton: !0
-        }), (0, r.jsx)(p.Z, {
-          author: (0, f.ij)(D, null),
-          message: (0, d.e5)(E(v({}, (0, u.ZP)({
+        }), (0, r.jsx)(f.Z, {
+          author: (0, p.ij)(D, null),
+          message: (0, d.e5)(k(v({}, (0, u.ZP)({
             channelId: "1337",
-            content: y.intl.string(C.default.h5Cuen)
+            content: O.intl.string(y.default.h5Cuen)
           })), {
-            state: _.yb.SENT,
+            state: S.yb.SENT,
             id: "0"
           })),
           isGroupStart: !0,
@@ -150,11 +150,11 @@ function k(e) {
       children: [(0, r.jsx)(i.Text, {
         variant: "text-xs/normal",
         color: "text-muted",
-        children: y.intl.format(C.default.prQba2, {
-          helpArticleLink: S.Z.getArticleURL(_.BhN.DISPLAY_NAME_STYLES)
+        children: O.intl.format(y.default.prQba2, {
+          helpArticleLink: _.Z.getArticleURL(S.BhN.DISPLAY_NAME_STYLES)
         })
       }), (0, r.jsx)(N, {
-        darkPreview: I,
+        darkPreview: A,
         onToggleTheme: Y
       })]
     })]
@@ -171,16 +171,16 @@ function N(e) {
     optionClassName: P.themeToggleOption,
     options: [{
       name: "",
-      tooltip: y.intl.string(y.t.b8Cei4),
-      value: _.BRd.DARK,
+      tooltip: O.intl.string(O.t.b8Cei4),
+      value: S.BRd.DARK,
       icon: i.Z6G
     }, {
       name: "",
-      tooltip: y.intl.string(y.t.K2sFfn),
-      value: _.BRd.LIGHT,
+      tooltip: O.intl.string(O.t.K2sFfn),
+      value: S.BRd.LIGHT,
       icon: i.chG
     }],
-    value: t ? _.BRd.DARK : _.BRd.LIGHT,
+    value: t ? S.BRd.DARK : S.BRd.LIGHT,
     onChange: e => {
       let {
         value: t
