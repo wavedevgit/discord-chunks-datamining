@@ -1,6 +1,6 @@
 /** Chunk was on 93886 **/
 a.d(t, {
-  Z: () => h
+  Z: () => p
 }), a(388685);
 var n = a(255367),
   r = a(73800),
@@ -13,7 +13,7 @@ var n = a(255367),
   u = a(246992),
   m = a(531578),
   x = a(521981);
-let p = [{
+let h = [{
   label: "second(s)",
   value: 1e3
 }, {
@@ -27,8 +27,8 @@ let p = [{
   value: 864e5
 }];
 
-function h() {
-  let [e, t] = r.useState(null), [a, h] = r.useState(0), [b, f] = r.useState(1e3), [v, g] = r.useState(0), j = (0, l.e7)([c.Z], () => {
+function p() {
+  let [e, t] = r.useState(null), [a, p] = r.useState(0), [b, f] = r.useState(1e3), [v, j] = r.useState(0), g = (0, l.e7)([c.Z], () => {
     var t;
     return null === e ? null : null != (t = c.Z.getFeedbackConfig(m.nw[e])) ? t : o.R[m.nw[e]]
   }), _ = Object.entries(m.nw), y = _.slice(_.length / 2).map(e => {
@@ -57,7 +57,7 @@ function h() {
       title: "Override Survey Cooldown",
       className: x.formElement,
       tag: i.RB0.H3,
-      children: [null != j && (0, n.jsxs)(n.Fragment, {
+      children: [null != g && (0, n.jsxs)(n.Fragment, {
         children: [(0, n.jsx)(d.Z, {
           className: x.formDividerTitle,
           children: (0, n.jsx)(i.Text, {
@@ -66,16 +66,16 @@ function h() {
           })
         }), (0, n.jsx)(i.Text, {
           variant: "text-sm/normal",
-          children: "".concat(j.cooldown / 1e3, " second(s) or")
+          children: "".concat(g.cooldown / 1e3, " second(s) or")
         }), (0, n.jsx)(i.Text, {
           variant: "text-sm/normal",
-          children: "".concat(j.cooldown / 6e4, " minute(s) or")
+          children: "".concat(g.cooldown / 6e4, " minute(s) or")
         }), (0, n.jsx)(i.Text, {
           variant: "text-sm/normal",
-          children: "".concat(j.cooldown / 36e5, " hour(s) or")
+          children: "".concat(g.cooldown / 36e5, " hour(s) or")
         }), (0, n.jsx)(i.Text, {
           variant: "text-sm/normal",
-          children: "".concat(j.cooldown / 864e5, " day(s)")
+          children: "".concat(g.cooldown / 864e5, " day(s)")
         })]
       }), (0, n.jsx)(d.Z, {
         className: x.formDividerTitle,
@@ -90,9 +90,9 @@ function h() {
           value: a.toString(),
           type: "number",
           placeholder: "Duration length",
-          onChange: e => h(parseFloat(e))
+          onChange: e => p(parseFloat(e))
         }), (0, n.jsx)(i.q4e, {
-          options: p,
+          options: h,
           value: b,
           onChange: e => {
             f(e)
@@ -104,7 +104,7 @@ function h() {
       title: "Override Survey Chance",
       className: x.formElement,
       tag: i.RB0.H3,
-      children: [null != j && (0, n.jsxs)(n.Fragment, {
+      children: [null != g && (0, n.jsxs)(n.Fragment, {
         children: [(0, n.jsx)(d.Z, {
           className: x.formDividerTitle,
           children: (0, n.jsx)(i.Text, {
@@ -113,7 +113,7 @@ function h() {
           })
         }), (0, n.jsx)(i.Text, {
           variant: "text-sm/normal",
-          children: "".concat(100 * j.chance, "%")
+          children: "".concat(100 * g.chance, "%")
         })]
       }), (0, n.jsx)(d.Z, {
         className: x.formDividerTitle,
@@ -128,7 +128,7 @@ function h() {
           max: 100,
           value: v.toString(),
           type: "number",
-          onChange: e => g(parseFloat(e))
+          onChange: e => j(parseFloat(e))
         }), (0, n.jsx)(i.Text, {
           variant: "text-md/normal",
           children: "%"
@@ -139,9 +139,9 @@ function h() {
       children: [(0, n.jsx)(i.zxk, {
         variant: "primary",
         text: "Update",
-        onClick: () => void(null != j && s.Z.dispatch({
+        onClick: () => void(null != g && s.Z.dispatch({
           type: "FEEDBACK_OVERRIDE_SET",
-          feedbackType: j.feedbackType,
+          feedbackType: g.feedbackType,
           cooldown: a * b,
           chance: v / 100
         })),
@@ -149,9 +149,9 @@ function h() {
       }), (0, n.jsx)(i.zxk, {
         variant: "primary",
         text: "Clear Override",
-        onClick: () => void(null != j && s.Z.dispatch({
+        onClick: () => void(null != g && s.Z.dispatch({
           type: "FEEDBACK_OVERRIDE_CLEAR",
-          feedbackType: j.feedbackType
+          feedbackType: g.feedbackType
         })),
         disabled: !C
       })]

@@ -13,9 +13,9 @@ var n = a(255367),
   u = a(723359),
   m = a(388032),
   x = a(546147),
-  p = a(616257);
+  h = a(616257);
 
-function h(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var a = null != arguments[t] ? arguments[t] : {},
       n = Object.keys(a);
@@ -51,13 +51,13 @@ let f = {
     let {
       default: e
     } = await a.e("77370").then(a.bind(a, 83950));
-    return t => (0, n.jsx)(e, h({}, t))
+    return t => (0, n.jsx)(e, p({}, t))
   },
   EmailEnterModal: async () => {
     let {
       default: e
     } = await a.e("93288").then(a.bind(a, 396410));
-    return t => (0, n.jsx)(e, b(h({}, t), {
+    return t => (0, n.jsx)(e, b(p({}, t), {
       headerText: m.intl.string(m.t.ZLRYGR),
       confirmButtonText: m.intl.string(m.t.PDTjLC),
       confirmButtonVariant: "primary"
@@ -67,7 +67,7 @@ let f = {
     let {
       default: e
     } = await a.e("94566").then(a.bind(a, 965072));
-    return t => (0, n.jsx)(e, b(h({}, t), {
+    return t => (0, n.jsx)(e, b(p({}, t), {
       headerText: m.intl.string(m.t.H3Q7U1),
       onFormSubmit: () => {},
       onResend: () => {},
@@ -82,7 +82,7 @@ let f = {
     let {
       default: e
     } = await Promise.all([a.e("6583"), a.e("1337"), a.e("33312")]).then(a.bind(a, 746882));
-    return t => (0, n.jsx)(e, b(h({}, t), {
+    return t => (0, n.jsx)(e, b(p({}, t), {
       source: u.L0.NSFW_SERVER
     }))
   },
@@ -90,7 +90,7 @@ let f = {
     let {
       default: e
     } = await a.e("75435").then(a.bind(a, 751744));
-    return t => (0, n.jsx)(e, b(h({}, t), {
+    return t => (0, n.jsx)(e, b(p({}, t), {
       classificationId: "123"
     }))
   }
@@ -103,7 +103,7 @@ function v() {
     })).sort((e, t) => e.label.localeCompare(t.label)), []),
     [t, a] = r.useState(e[0].value);
   return (0, n.jsx)(i.zJl, {
-    className: p.panel,
+    className: h.panel,
     children: (0, n.jsxs)("div", {
       className: x.panelInner,
       children: [(0, n.jsxs)("section", {

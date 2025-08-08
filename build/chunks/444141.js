@@ -1,6 +1,6 @@
 /** Chunk was on 11776 **/
 n.d(t, {
-  Z: () => p
+  Z: () => m
 });
 var r = n(255367),
   l = n(481060),
@@ -43,49 +43,49 @@ function f(e, t) {
   }), e
 }
 
-function p(e) {
+function m(e) {
   let {
     user: t,
     guildId: n,
-    channelId: p,
-    displayProfile: m,
+    channelId: m,
+    displayProfile: p,
     onClose: g
   } = e, {
     analyticsLocations: b,
-    sourceAnalyticsLocations: h
+    sourceAnalyticsLocations: j
   } = (0, i.ZP)(), {
-    context: j,
-    trackUserProfileAction: y
-  } = (0, a.KZ)(), x = (0, s.ZP)(t.id, n);
-  return (null == x ? void 0 : x.guildId) == null || null == j ? null : (null == m ? void 0 : m.guildId) != null ? (0, r.jsx)(l.sNh, {
+    context: h,
+    trackUserProfileAction: x
+  } = (0, a.KZ)(), y = (0, s.ZP)(t.id, n);
+  return (null == y ? void 0 : y.guildId) == null || null == h ? null : (null == p ? void 0 : p.guildId) != null ? (0, r.jsx)(l.sNh, {
     id: "view-main-profile",
     label: d.intl.string(d.t.GISTtb),
     subtext: d.intl.formatToPlainString(d.t["mn/nW1"], {
       displayName: o.ZP.getName(void 0, void 0, t)
     }),
     action: () => {
-      null == g || g(), (0, c.openUserProfileModal)(f(u({}, j), {
+      null == g || g(), (0, c.openUserProfileModal)(f(u({}, h), {
         showGuildProfile: !1,
-        sourceAnalyticsLocations: h
-      })), y(u({
+        sourceAnalyticsLocations: j
+      })), x(u({
         action: "PRESS_VIEW_MAIN_PROFILE",
         analyticsLocations: b
-      }, j))
+      }, h))
     }
   }) : (0, r.jsx)(l.sNh, {
     id: "view-server-profile",
     label: d.intl.string(d.t.DisZzM),
     subtext: d.intl.formatToPlainString(d.t["mn/nW1"], {
-      displayName: o.ZP.getName(n, p, t)
+      displayName: o.ZP.getName(n, m, t)
     }),
     action: () => {
-      null == g || g(), (0, c.openUserProfileModal)(f(u({}, j), {
+      null == g || g(), (0, c.openUserProfileModal)(f(u({}, h), {
         showGuildProfile: !0,
-        sourceAnalyticsLocations: h
-      })), y(u({
+        sourceAnalyticsLocations: j
+      })), x(u({
         action: "PRESS_VIEW_SERVER_PROFILE",
         analyticsLocations: b
-      }, j))
+      }, h))
     }
   })
 }

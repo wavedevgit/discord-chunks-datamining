@@ -1,6 +1,6 @@
 /** Chunk was on 11776 **/
 n.d(t, {
-  Z: () => h
+  Z: () => j
 });
 var r = n(255367),
   l = n(73800),
@@ -13,7 +13,7 @@ var r = n(255367),
   u = n(388032),
   f = n(436860);
 
-function p(e) {
+function m(e) {
   let {
     widgetType: t
   } = e, n = t === i.l.FAVORITE_GAMES ? d.J6["23"] : d.J6["58"], {
@@ -42,7 +42,7 @@ function p(e) {
   })
 }
 
-function m(e) {
+function p(e) {
   let {
     widgetType: t
   } = e, n = t === i.l.WANT_TO_PLAY_GAMES ? [d.J6["0"], d.J6["1"], d.J6["2"]] : [d.J6["20"], d.J6["35"], d.J6["42"]];
@@ -87,12 +87,12 @@ function b(e) {
       switch (t) {
         case i.l.FAVORITE_GAMES:
         case i.l.CURRENT_GAMES:
-          return (0, r.jsx)(p, {
+          return (0, r.jsx)(m, {
             widgetType: t
           });
         case i.l.WANT_TO_PLAY_GAMES:
         case i.l.PLAYED_GAMES:
-          return (0, r.jsx)(m, {
+          return (0, r.jsx)(p, {
             widgetType: t
           });
         default:
@@ -115,7 +115,7 @@ function b(e) {
   })
 }
 
-function h() {
+function j() {
   return (0, r.jsxs)("div", {
     className: f.empty,
     children: [(0, r.jsxs)("div", {

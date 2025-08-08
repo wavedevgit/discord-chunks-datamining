@@ -17,7 +17,13 @@ var r = n(255367),
   p = n(900365);
 
 function h() {
-  let [e, t] = i.useState(!1), n = (0, s.e7)([d.Z], () => d.Z.hasPendingChanges());
+  let [e, t] = i.useState(!1), {
+    hasPendingChanges: n,
+    pendingWidgets: o
+  } = (0, s.cj)([d.Z], () => ({
+    hasPendingChanges: d.Z.hasPendingChanges(),
+    pendingWidgets: d.Z.getPendingWidgets()
+  }));
   i.useEffect(() => {
     let e = null;
 
@@ -28,10 +34,10 @@ function h() {
       c.S.unsubscribe(f.CkL.EMPHASIZE_NOTICE, n), null !== e && clearTimeout(e)
     }
   }, []);
-  let o = i.useCallback(() => {
-      u.Z.savePendingWidgets()
-    }, []),
-    h = i.useCallback(() => {
+  let h = i.useCallback(async () => {
+      null !== o && await u.Z.savePendingWidgets(o)
+    }, [o]),
+    m = i.useCallback(() => {
       u.Z.clearPendingWidgets()
     }, []);
   return n ? (0, r.jsx)("div", {
@@ -56,12 +62,12 @@ function h() {
           size: "sm",
           variant: "secondary",
           text: _.intl.string(_.t.yBZMsb),
-          onClick: h
+          onClick: m
         }), (0, r.jsx)(l.zxk, {
           size: "sm",
           variant: "primary",
           text: _.intl.string(_.t.R3BPHx),
-          onClick: o
+          onClick: h
         })]
       })]
     })

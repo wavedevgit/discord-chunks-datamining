@@ -14,30 +14,30 @@ var r = n(255367),
 function u(e) {
   let {
     tags: t
-  } = e, n = null == t ? void 0 : t.filter(e => null != (0, c.z)(e)), i = (0, l.useRef)(new Map), o = (0, l.useRef)(null), [s, u] = (0, l.useState)(0), [b, h] = (0, l.useState)(!1), {
-    trackUserProfileAction: j
-  } = (0, a.KZ)(), y = g(o, n, i, u);
-  if ((0, l.useEffect)(() => (y(), window.addEventListener("resize", y), () => {
-      window.removeEventListener("resize", y)
-    }), [y, null == n ? void 0 : n.join("")]), null == n || 0 === n.length) return null;
-  let x = b ? n : n.slice(0, n.length - s);
+  } = e, n = null == t ? void 0 : t.filter(e => null != (0, c.z)(e)), i = (0, l.useRef)(new Map), o = (0, l.useRef)(null), [s, u] = (0, l.useState)(0), [b, j] = (0, l.useState)(!1), {
+    trackUserProfileAction: h
+  } = (0, a.KZ)(), x = g(o, n, i, u);
+  if ((0, l.useEffect)(() => (x(), window.addEventListener("resize", x), () => {
+      window.removeEventListener("resize", x)
+    }), [x, null == n ? void 0 : n.join("")]), null == n || 0 === n.length) return null;
+  let y = b ? n : n.slice(0, n.length - s);
   return (0, r.jsxs)("div", {
     className: d.tagListContainer,
-    children: [x.map(e => (0, r.jsx)(f, {
+    children: [y.map(e => (0, r.jsx)(f, {
       tag: e,
       ref: t => {
         null != t && i.current.set(e, t)
       }
-    }, e)), s > 0 && (b ? (0, r.jsx)(m, {
+    }, e)), s > 0 && (b ? (0, r.jsx)(p, {
       onClick: () => {
-        h(!1), j({
+        j(!1), h({
           action: "COLLAPSE_GAME_TAGS"
         })
       }
-    }) : (0, r.jsx)(p, {
+    }) : (0, r.jsx)(m, {
       numHidden: s,
       onClick: () => {
-        h(!0), j({
+        j(!0), h({
           action: "EXPAND_GAME_TAGS"
         })
       },
@@ -67,7 +67,7 @@ let f = e => {
       })]
     })
   },
-  p = e => {
+  m = e => {
     let {
       numHidden: t,
       onClick: n,
@@ -88,7 +88,7 @@ let f = e => {
       })
     })
   },
-  m = e => {
+  p = e => {
     let {
       onClick: t
     } = e;

@@ -13,20 +13,20 @@ var n = a(255367),
   u = a(621628),
   m = a(667815),
   x = a(645041),
-  p = a(713081),
-  h = a(675478),
+  h = a(713081),
+  p = a(675478),
   b = a(581883),
   f = a(899667),
   v = a(430824),
-  g = a(914010),
-  j = a(981631),
+  j = a(914010),
+  g = a(981631),
   _ = a(444048);
 let y = [o.z.GUILD_POWERUP_PERKS_COACHMARK, o.z.GUILD_POWERUPS_OVERVIEW_SIDEBAR_COACHMARK, o.z.GUILD_POWERUP_NOTIFICATION, o.z.GUILD_TAG_AVAILABLE_COACHMARK, o.z.GUILD_POWERUP_NEW_PERK_AVAILABLE_COACHMARK],
   C = [o.C.GUILD_POWERUP_LEVEL_1_COACHMARK, o.C.GUILD_POWERUP_LEVEL_2_COACHMARK, o.C.GUILD_POWERUP_LEVEL_3_COACHMARK, o.C.GUILD_POWERUP_SINGLE_SKU_PURCHASE_COACHMARK, o.C.GUILD_POWERUP_CHOICE_SKU_PURCHASE_COACHMARK],
   N = [o.C.ADOPT_CLAN_IDENTITY_NOTICE],
   O = [o.z.VANITY_URL_POWERUP_ROLLBACK_NOTIFICATION, o.z.VANITY_URL_POWERUP_ROLLBACK_MODAL, o.z.VANITY_URL_POWERUP_EDUCATIONAL_POPOVER];
 
-function E(e) {
+function T(e) {
   switch (e) {
     case o.C.GUILD_POWERUP_LEVEL_1_COACHMARK:
       return "GUILD_POWERUP_LEVEL_1_COACHMARK";
@@ -42,25 +42,25 @@ function E(e) {
       return "ADOPT_CLAN_IDENTITY_NOTICE"
   }
 }
-async function T(e, t, a) {
+async function E(e, t, a) {
   await Promise.all(t.map(e => s.tn.patch({
-    url: j.ANM.APPLIED_BOOST_MODIFY_END_DATE(e.id),
+    url: g.ANM.APPLIED_BOOST_MODIFY_END_DATE(e.id),
     body: a ? {} : {
       ends_at: l()().add(1, "day")
     },
     rejectWithError: !0
-  }))), (0, d.C0)(e), (0, p.Fm)(e, !0)
+  }))), (0, d.C0)(e), (0, h.Fm)(e, !0)
 }
 async function S(e) {
   await s.tn.post({
-    url: j.ANM.SEND_POWERUPS_SYSTEM_MESSAGE(e),
+    url: g.ANM.SEND_POWERUPS_SYSTEM_MESSAGE(e),
     rejectWithError: !0
   })
 }
 
 function P() {
   var e;
-  let t = (0, i.e7)([g.Z], () => g.Z.getGuildId()),
+  let t = (0, i.e7)([j.Z], () => j.Z.getGuildId()),
     a = (0, i.e7)([v.Z], () => {
       var e;
       return null == (e = v.Z.getGuild(t)) ? void 0 : e.name
@@ -92,7 +92,7 @@ function P() {
         variant: "primary",
         text: "Reset",
         onClick: () => {
-          (0, p.Qh)()
+          (0, h.Qh)()
         }
       })]
     }), (0, n.jsxs)("div", {
@@ -116,13 +116,13 @@ function P() {
           variant: "primary",
           text: "Set Half Boosts expiring in 1 day",
           onClick: () => {
-            T(t, s.slice(Math.floor(s.length / 2)), !1)
+            E(t, s.slice(Math.floor(s.length / 2)), !1)
           }
         }), (0, n.jsx)(c.zxk, {
           variant: "primary",
           text: "Reset End Date",
           onClick: () => {
-            T(t, s, !0)
+            E(t, s, !0)
           }
         })]
       })]
@@ -147,12 +147,12 @@ function P() {
       }), C.map(e => (0, n.jsx)(c.j7V, {
         className: _.formSwitch,
         onChange: a => {
-          a ? (0, x.Qd)(e, t, !1) : ((0, h.Z1)(o.z.GUILD_POWERUP_NOTIFICATION), (0, x.c7)(e, t))
+          a ? (0, x.Qd)(e, t, !1) : ((0, p.Z1)(o.z.GUILD_POWERUP_NOTIFICATION), (0, x.c7)(e, t))
         },
         value: r.includes(e),
         children: (0, n.jsx)(c.Text, {
           variant: "text-sm/normal",
-          children: E(e)
+          children: T(e)
         })
       }, e))]
     }), (0, n.jsxs)("div", {
@@ -163,12 +163,12 @@ function P() {
       }), N.map(e => (0, n.jsx)(c.j7V, {
         className: _.formSwitch,
         onChange: a => {
-          a ? (0, x.Qd)(e, t, !1) : ((0, h.Z1)(o.z.GUILD_POWERUP_NOTIFICATION), (0, x.c7)(e, t))
+          a ? (0, x.Qd)(e, t, !1) : ((0, p.Z1)(o.z.GUILD_POWERUP_NOTIFICATION), (0, x.c7)(e, t))
         },
         value: r.includes(e),
         children: (0, n.jsx)(c.Text, {
           variant: "text-sm/normal",
-          children: E(e)
+          children: T(e)
         })
       }, e))]
     }), (0, n.jsxs)("div", {

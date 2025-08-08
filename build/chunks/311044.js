@@ -12,8 +12,8 @@ var r = n(255367),
   d = n(806729),
   u = n(857302),
   f = n(892001),
-  p = n(252417),
-  m = n(264481),
+  m = n(252417),
+  p = n(264481),
   g = n(714905);
 
 function b(e) {
@@ -21,19 +21,19 @@ function b(e) {
     user: t,
     guildId: n,
     channelId: b,
-    onClose: h
+    onClose: j
   } = e, {
-    analyticsLocations: j
+    analyticsLocations: h
   } = (0, a.ZP)(), {
-    context: y,
-    trackUserProfileAction: x
+    context: x,
+    trackUserProfileAction: y
   } = (0, s.KZ)(), {
     mutualFriends: v,
     mutualFriendsCount: O
-  } = (0, d.Z)(t), _ = (0, o.Z)();
+  } = (0, d.Z)(t), I = (0, o.Z)();
   return l.useEffect(() => {
-    (0, u.Z)(t.id, _)
-  }, [t.id, _]), (0, r.jsx)(i.Ttm, {
+    (0, u.Z)(t.id, I)
+  }, [t.id, I]), (0, r.jsx)(i.Ttm, {
     className: g.scroller,
     fade: !0,
     children: null == v ? Array.from({
@@ -47,20 +47,20 @@ function b(e) {
         width: 135,
         opacity: .08
       })]
-    }, t)) : 0 === v.length ? (0, r.jsx)(m.s_, {}) : v.map(e => {
+    }, t)) : 0 === v.length ? (0, r.jsx)(p.s_, {}) : v.map(e => {
       let {
         key: t,
         user: l,
         status: i
       } = e;
-      return (0, r.jsx)(p.Z, {
+      return (0, r.jsx)(m.Z, {
         user: l,
         status: i,
         guildId: n,
         channelId: b,
         onSelect: () => {
           var e, t;
-          null == h || h(), x({
+          null == j || j(), y({
             action: "PRESS_MUTUAL_FRIEND"
           }), (0, f.openUserProfileModal)((e = function(e) {
             for (var t = 1; t < arguments.length; t++) {
@@ -79,9 +79,9 @@ function b(e) {
               })
             }
             return e
-          }({}, y), t = t = {
+          }({}, x), t = t = {
             userId: l.id,
-            sourceAnalyticsLocations: j
+            sourceAnalyticsLocations: h
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {

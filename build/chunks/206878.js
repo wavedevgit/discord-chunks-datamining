@@ -58,7 +58,7 @@ let s = new Set([r.jE.SHOP_ALL_BANNER_STATIC, r.jE.HERO_BANNER_STATIC, r.jE.HERO
     max: 25e4,
     warn: 5e4
   },
-  p = {
+  h = {
     [r.aB.PROFILE_EFFECT]: c,
     [r.aB.AVATAR_DECORATION]: d,
     [r.jE.HERO_BANNER_ANIMATED]: c,
@@ -79,7 +79,7 @@ let s = new Set([r.jE.SHOP_ALL_BANNER_STATIC, r.jE.HERO_BANNER_STATIC, r.jE.HERO
     [r.jE.PDP_LOGO]: x,
     [r.jE.COACHTIP_AVATAR]: x
   },
-  h = async e => {
+  p = async e => {
     let t = Object.values(r.CM),
       a = new Set,
       n = e.createReader();
@@ -105,14 +105,14 @@ let s = new Set([r.jE.SHOP_ALL_BANNER_STATIC, r.jE.HERO_BANNER_STATIC, r.jE.HERO
       let t = e.max > 1e6 ? "".concat(Math.round(e.max / 1e6), "MB") : "".concat(Math.round(e.max / 1e3), "KB");
       a("Files exceed the recommended size limit - make sure they are optimized!", ["".concat(i, " (max: ").concat(t, ")")])
     } else r > e.warn && n("Files are a tad chonky - are you sure they're optimized?", ["".concat(i)])
-  }, g = (e, t, a, n) => {
-    let r = p[e];
+  }, j = (e, t, a, n) => {
+    let r = h[e];
     if (null != r)
       for (let e of t) e.name.endsWith(".txt") || v(r, e, a, n)
-  }, j = (e, t, a) => {
+  }, g = (e, t, a) => {
     for (let n of e) {
       let e = (0, r.BU)(n),
-        l = null != e ? p[e] : null;
+        l = null != e ? h[e] : null;
       null != l && v(l, n, t, a)
     }
   }, _ = e => {
@@ -121,7 +121,7 @@ let s = new Set([r.jE.SHOP_ALL_BANNER_STATIC, r.jE.HERO_BANNER_STATIC, r.jE.HERO
       addError: a,
       addWarning: n
     } = e;
-    j(t.collectionFiles, a, n), f({
+    g(t.collectionFiles, a, n), f({
       names: t.collectionFiles.map(e => e.name),
       addError: a
     });
@@ -147,7 +147,7 @@ let s = new Set([r.jE.SHOP_ALL_BANNER_STATIC, r.jE.HERO_BANNER_STATIC, r.jE.HERO
           return e.substring(0, t > 0 ? t : e.length)
         }),
         addError: a
-      }), g(r.aB.PROFILE_EFFECT, l, a, n);
+      }), j(r.aB.PROFILE_EFFECT, l, a, n);
       let s = o.filter(e => !i.some(t => t.startsWith(e) && t.endsWith(".png"))).map(e => "".concat(t, "/").concat(e));
       s.length > 0 && a("Missing required PFX files with prefix", s), i.some(e => e.endsWith(".txt")) || a("PFX configs required - please include both exports! (exception: duplicate variant configs are optional)", [t]);
       let c = i.filter(e => !o.some(t => e.startsWith(t)) && !e.endsWith(".txt")).map(e => "".concat(t, "/").concat(e));
@@ -162,7 +162,7 @@ let s = new Set([r.jE.SHOP_ALL_BANNER_STATIC, r.jE.HERO_BANNER_STATIC, r.jE.HERO
     f({
       names: t.avatarDecorationFiles.map(e => e.name),
       addError: a
-    }), g(r.aB.AVATAR_DECORATION, t.avatarDecorationFiles, a, n)
+    }), j(r.aB.AVATAR_DECORATION, t.avatarDecorationFiles, a, n)
   }, N = (e, t, a) => {
     _({
       files: e,
@@ -213,7 +213,7 @@ let s = new Set([r.jE.SHOP_ALL_BANNER_STATIC, r.jE.HERO_BANNER_STATIC, r.jE.HERO
           if (e.length > 1) return void d("Uploaded multiple files. Expected 1 directory.");
           let t = e[0];
           if (!t.isDirectory) return void d("Uploaded a file. Expected a directory.");
-          let a = await h(t);
+          let a = await p(t);
           if (a.length > 0) return void d("Missing required directories", a);
           let n = await (0, r.LY)([t]);
           N(n, u, d)

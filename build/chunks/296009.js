@@ -1,5 +1,8 @@
-/** Chunk was on 93886 **/
-a.d(t, {
+/** Chunk was on web.js **/
+"use strict";
+n.d(t, {
   l: () => r
 });
-var n, r = ((n = {}).CURRENT_GAMES = "current_games", n.WANT_TO_PLAY_GAMES = "want_to_play_games", n.PLAYED_GAMES = "played_games", n.FAVORITE_GAMES = "favorite_games", n)
+var r = function(e) {
+  return e.CURRENT_GAMES = "current_games", e.WANT_TO_PLAY_GAMES = "want_to_play_games", e.PLAYED_GAMES = "played_games", e.FAVORITE_GAMES = "favorite_games", e
+}({})

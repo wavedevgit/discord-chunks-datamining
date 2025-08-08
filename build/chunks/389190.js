@@ -12,8 +12,8 @@ var r = n(255367),
   d = n(857302),
   u = n(892001),
   f = n(252417),
-  p = n(388032),
-  m = n(301150);
+  m = n(388032),
+  p = n(301150);
 
 function g(e) {
   let {
@@ -22,12 +22,12 @@ function g(e) {
     channelId: g,
     onClose: b
   } = e, {
-    mutualFriends: h
+    mutualFriends: j
   } = (0, s.Z)(t), {
-    analyticsLocations: j
+    analyticsLocations: h
   } = (0, a.ZP)(), {
-    context: y,
-    trackUserProfileAction: x
+    context: x,
+    trackUserProfileAction: y
   } = (0, c.KZ)(), v = (0, o.Z)();
   l.useEffect(() => {
     (0, d.Z)(t.id, v)
@@ -51,9 +51,9 @@ function g(e) {
         })
       }
       return e
-    }({}, y), n = n = {
+    }({}, x), n = n = {
       userId: e,
-      sourceAnalyticsLocations: j
+      sourceAnalyticsLocations: h
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
@@ -66,20 +66,20 @@ function g(e) {
     }), t))
   };
   return (0, r.jsx)(i.zJl, {
-    className: m.listScroller,
+    className: p.listScroller,
     fade: !0,
-    children: null == h ? (0, r.jsx)("div", {
-      className: m.empty,
+    children: null == j ? (0, r.jsx)("div", {
+      className: p.empty,
       children: (0, r.jsx)(i.$jN, {})
-    }) : 0 === h.length ? (0, r.jsxs)("div", {
-      className: m.empty,
+    }) : 0 === j.length ? (0, r.jsxs)("div", {
+      className: p.empty,
       children: [(0, r.jsx)("div", {
-        className: m.emptyIconFriends
+        className: p.emptyIconFriends
       }), (0, r.jsx)("div", {
-        className: m.emptyText,
-        children: p.intl.string(p.t["/5p4g4"])
+        className: p.emptyText,
+        children: m.intl.string(m.t["/5p4g4"])
       })]
-    }) : h.map(e => {
+    }) : j.map(e => {
       let {
         key: t,
         user: l,
@@ -91,7 +91,7 @@ function g(e) {
         guildId: n,
         channelId: g,
         onSelect: () => {
-          null == b || b(), x({
+          null == b || b(), y({
             action: "PRESS_MUTUAL_FRIEND"
           }), O(l.id)
         }

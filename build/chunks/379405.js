@@ -1,5 +1,8 @@
-/** Chunk was on 93886 **/
-a.d(t, {
+/** Chunk was on web.js **/
+"use strict";
+n.d(t, {
   _: () => r
 });
-var n, r = ((n = {}).LFG = "lfg", n.NOOB = "noob", n.LEARNING_THE_ROPES = "learning_the_ropes", n.GETTING_GOOD = "getting_good", n.GOD_TIER = "god_tier", n.OPEN_TO_PLAY = "open_to_play", n.LOOKING_FOR_TIPS = "looking_for_tips", n.LIKE_IT = "like_it", n)
+var r = function(e) {
+  return e.LFG = "lfg", e.NOOB = "noob", e.LEARNING_THE_ROPES = "learning_the_ropes", e.GETTING_GOOD = "getting_good", e.GOD_TIER = "god_tier", e.OPEN_TO_PLAY = "open_to_play", e.LOOKING_FOR_TIPS = "looking_for_tips", e.LIKE_IT = "like_it", e
+}({})

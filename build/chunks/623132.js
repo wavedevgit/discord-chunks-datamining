@@ -1,6 +1,6 @@
 /** Chunk was on 11776 **/
 n.d(t, {
-  Z: () => y
+  Z: () => x
 });
 var r = n(255367),
   l = n(73800),
@@ -12,12 +12,12 @@ var r = n(255367),
   d = n(817053),
   u = n(879877),
   f = n(853072),
-  p = n(388032),
-  m = n(436860),
+  m = n(388032),
+  p = n(436860),
   g = n(467514),
   b = n(418718);
 
-function h(e) {
+function j(e) {
   let {
     text: t,
     user: n,
@@ -30,7 +30,7 @@ function h(e) {
       color: i.TVs.colors.ICON_TERTIARY,
       className: b.icon
     }), (0, r.jsx)(i.nn4, {
-      children: p.intl.format(p.t.TM0XDQ, {
+      children: m.intl.format(m.t.TM0XDQ, {
         name: c.ZP.getName(l, o, n)
       })
     }), (0, r.jsx)(i.Text, {
@@ -41,7 +41,7 @@ function h(e) {
   })
 }
 
-function j(e) {
+function h(e) {
   let {
     applicationId: t,
     userId: n,
@@ -56,20 +56,20 @@ function j(e) {
     trackEntryPointImpression: !0
   }), f = l.useCallback(e => {
     e.target === e.currentTarget && (null == u || u(e))
-  }, [u]), m = null != c ? c : p.intl.string(p.t.GIWFlJ), g = null != u;
+  }, [u]), p = null != c ? c : m.intl.string(m.t.GIWFlJ), g = null != u;
   return (0, r.jsxs)("div", {
     className: s,
     children: [g && (0, r.jsx)(i.P3F, {
       className: b.clickableCard,
-      "aria-label": p.intl.formatToPlainString(p.t["8QLQBw"], {
-        gameName: m
+      "aria-label": m.intl.formatToPlainString(m.t["8QLQBw"], {
+        gameName: p
       }),
       onClick: f
     }), d]
   })
 }
 
-function y(e) {
+function x(e) {
   let {
     user: t,
     guildId: n,
@@ -78,15 +78,15 @@ function y(e) {
     loading: a = !1,
     disableInteraction: c = !1
   } = e, {
-    gameName: y,
-    imageSrc: x,
+    gameName: x,
+    imageSrc: y,
     applicationId: v,
     comment: O,
-    tags: _
-  } = o, I = (0, f.Z)(o.applicationId), P = I.length > 0, E = () => (0, r.jsxs)(r.Fragment, {
+    tags: I
+  } = o, _ = (0, f.Z)(o.applicationId), P = _.length > 0, Z = () => (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(d.Z, {
-      imageSrc: x,
-      gameName: y,
+      imageSrc: y,
+      gameName: x,
       applicationId: v,
       userId: t.id,
       disableInteraction: !0
@@ -95,20 +95,20 @@ function y(e) {
       children: [(0, r.jsx)(i.X6q, {
         variant: "text-md/normal",
         color: "text-default",
-        children: y
-      }), null != O && (0, r.jsx)(h, {
+        children: x
+      }), null != O && (0, r.jsx)(j, {
         text: O,
         user: t,
         guildId: n,
         channelId: l
       }), (0, r.jsx)(u.Z, {
-        tags: _
+        tags: I
       }), P && (0, r.jsx)(s.Z, {
-        label: p.intl.formatToPlainString(p.t.ujhJdH, {
-          numFriends: I.length
+        label: m.intl.formatToPlainString(m.t.ujhJdH, {
+          numFriends: _.length
         }),
         className: b.socialProof,
-        users: I,
+        users: _,
         guildId: n,
         channelId: l
       })]
@@ -121,22 +121,22 @@ function y(e) {
     }), (0, r.jsx)("div", {
       className: b.details,
       children: (0, r.jsxs)("div", {
-        className: m.placeholderText,
+        className: p.placeholderText,
         children: [(0, r.jsx)("div", {
-          className: m.placeholderBar
+          className: p.placeholderBar
         }), (0, r.jsx)("div", {
-          className: m.placeholderBar
+          className: p.placeholderBar
         })]
       })
     })]
   }) : c ? (0, r.jsx)("div", {
     className: b.card,
-    children: E()
-  }) : (0, r.jsx)(j, {
+    children: Z()
+  }) : (0, r.jsx)(h, {
     applicationId: v,
     userId: t.id,
-    gameName: y,
+    gameName: x,
     className: b.card,
-    children: E()
+    children: Z()
   })
 }

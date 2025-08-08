@@ -34,12 +34,12 @@ function f(e) {
   let {
     disabled: t,
     widgetType: n
-  } = e, [f] = (0, o.ynZ)(), p = l.useRef(null), m = l.useCallback(e => {
+  } = e, [f] = (0, o.ynZ)(), m = l.useRef(null), p = l.useCallback(e => {
     (0, c.ES)(n, e)
   }, [n]), {
     options: g,
     matchSorterOptions: b
-  } = (0, a.h)(), h = l.useCallback(e => {
+  } = (0, a.h)(), j = l.useCallback(e => {
     var t, n;
     return "" === e.trim() ? g : (0, i.Lu)(g, e, (t = u({}, b), n = n = {
       threshold: i.Lu.rankings.CONTAINS
@@ -55,7 +55,7 @@ function f(e) {
     }), t))
   }, [g, b]);
   return (0, r.jsx)(o.yRy, {
-    targetElementRef: p,
+    targetElementRef: m,
     position: "bottom",
     align: "center",
     renderPopout: e => {
@@ -68,13 +68,13 @@ function f(e) {
         autoFocus: !0,
         value: f,
         onChange: e => {
-          m(e), t()
+          p(e), t()
         },
         onClose: t,
         multiSelect: !1,
         showScrollbar: !0,
         maxVisibleItems: 7,
-        children: e => h(e).map(e => (0, r.jsx)(o.lo1, {
+        children: e => j(e).map(e => (0, r.jsx)(o.lo1, {
           value: String(e.value),
           children: (0, r.jsx)(o.lo1.Label, {
             children: (0, r.jsx)(o.Text, {
@@ -87,7 +87,7 @@ function f(e) {
       })
     },
     children: e => (0, r.jsx)("div", {
-      ref: p,
+      ref: m,
       children: (0, r.jsx)(o.zxk, u({
         variant: "primary",
         size: "sm",

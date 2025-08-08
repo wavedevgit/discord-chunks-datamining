@@ -1,6 +1,6 @@
 /** Chunk was on 11776 **/
 n.d(t, {
-  Z: () => p
+  Z: () => m
 });
 var r = n(255367);
 n(73800);
@@ -19,13 +19,13 @@ let f = {
   [i.l.PLAYED_GAMES]: () => d.intl.string(d.t.scOKER)
 };
 
-function p(e) {
+function m(e) {
   let {
     userId: t,
     widgetType: n,
-    headingId: p,
-    reachedMaxGamesLimit: m
-  } = e, g = (0, o.e7)([c.default], () => c.default.getId() === t), b = f[n](), h = g ? n === i.l.FAVORITE_GAMES ? d.intl.string(d.t.wiXdER) : d.intl.format(d.t["zR1+09"], {
+    headingId: m,
+    reachedMaxGamesLimit: p
+  } = e, g = (0, o.e7)([c.default], () => c.default.getId() === t), b = f[n](), j = g ? n === i.l.FAVORITE_GAMES ? d.intl.string(d.t.wiXdER) : d.intl.format(d.t["zR1+09"], {
     numGames: l.k[n]
   }) : void 0;
   return (0, r.jsxs)("div", {
@@ -35,17 +35,17 @@ function p(e) {
       children: [(0, r.jsx)(a.X6q, {
         variant: "heading-sm/medium",
         color: "text-default",
-        id: p,
+        id: m,
         children: b
-      }), null != h && (0, r.jsx)(a.Text, {
+      }), null != j && (0, r.jsx)(a.Text, {
         variant: "text-xs/normal",
         color: "text-secondary",
-        children: h
+        children: j
       })]
     }), g && (0, r.jsxs)("div", {
       className: u.actions,
       children: [(0, r.jsx)(s.Z, {
-        disabled: m,
+        disabled: p,
         widgetType: n
       }), (0, r.jsx)(a.hU, {
         icon: a.xhG,
