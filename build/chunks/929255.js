@@ -98,7 +98,7 @@ let j = e => {
     scrollerRef: x,
     sortedCategories: j,
     setCategoryRef: T
-  } = e, P = (0, d.FF)("CollectiblesBrowse"), L = l.useRef(null), I = (0, p.S)(e => e.hasDefaultFilters()), k = (0, u.sp)(), {
+  } = e, P = (0, d.FF)("CollectiblesBrowse"), L = l.useRef(null), k = (0, p.S)(e => e.hasDefaultFilters()), I = (0, u.sp)(), {
     handlePageChange: N,
     currentPage: A
   } = (0, _.h)({
@@ -106,31 +106,31 @@ let j = e => {
     sortedCategories: j
   }), w = l.useCallback(e => {
     c.default.track(E.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
-      collectibles_shop_session_id: null == k ? void 0 : k.sessionId,
-      page_section: null == k ? void 0 : k.pageSection,
-      page_category: null == k ? void 0 : k.pageCategory,
+      collectibles_shop_session_id: null == I ? void 0 : I.sessionId,
+      page_section: null == I ? void 0 : I.pageSection,
+      page_category: null == I ? void 0 : I.pageCategory,
       page_index: e,
-      page_size: null == k ? void 0 : k.pageSize,
+      page_size: null == I ? void 0 : I.pageSize,
       cta_name: "catalog page ".concat(e),
       page_type: "catalog"
     }), N(e)
-  }, [k, N]), B = l.useRef(null);
+  }, [I, N]), B = l.useRef(null);
   return l.useEffect(() => {
     if (!n || !a) return;
     let e = e => {
       let t = e.target;
       null === L.current || null === B.current || L.current.contains(t) || B.current.contains(t) || (c.default.track(E.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
-        collectibles_shop_session_id: null == k ? void 0 : k.sessionId,
-        page_section: null == k ? void 0 : k.pageSection,
-        page_category: null == k ? void 0 : k.pageCategory,
-        page_index: null == k ? void 0 : k.pageIndex,
-        page_size: null == k ? void 0 : k.pageSize,
+        collectibles_shop_session_id: null == I ? void 0 : I.sessionId,
+        page_section: null == I ? void 0 : I.pageSection,
+        page_category: null == I ? void 0 : I.pageCategory,
+        page_index: null == I ? void 0 : I.pageIndex,
+        page_size: null == I ? void 0 : I.pageSize,
         cta_name: "filter bar hide outside click",
         page_type: "catalog"
       }), s(!1))
     };
     return document.addEventListener("mousedown", e), () => document.removeEventListener("mousedown", e)
-  }, [n, a, s, k]), (0, r.jsx)("div", {
+  }, [n, a, s, I]), (0, r.jsx)("div", {
     className: y.inventoryWrapper,
     children: (0, r.jsxs)("div", {
       className: i()(y.inventory, {
@@ -158,11 +158,11 @@ let j = e => {
               onClick: () => {
                 let e = !a;
                 c.default.track(E.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
-                  collectibles_shop_session_id: null == k ? void 0 : k.sessionId,
-                  page_section: null == k ? void 0 : k.pageSection,
-                  page_category: null == k ? void 0 : k.pageCategory,
-                  page_index: null == k ? void 0 : k.pageIndex,
-                  page_size: null == k ? void 0 : k.pageSize,
+                  collectibles_shop_session_id: null == I ? void 0 : I.sessionId,
+                  page_section: null == I ? void 0 : I.pageSection,
+                  page_category: null == I ? void 0 : I.pageCategory,
+                  page_index: null == I ? void 0 : I.pageIndex,
+                  page_size: null == I ? void 0 : I.pageSize,
                   cta_name: "filter bar ".concat(e ? "show" : "hide"),
                   page_type: "catalog"
                 }), s(e)
@@ -181,7 +181,7 @@ let j = e => {
             children: (0, r.jsx)(m.Z, {})
           })
         })]
-      }), P && !I ? (0, r.jsx)(v.Z, {
+      }), P && !k ? (0, r.jsx)(v.Z, {
         isFullScreen: t,
         scrollerRef: x,
         tab: b

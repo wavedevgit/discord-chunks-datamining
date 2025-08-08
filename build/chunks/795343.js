@@ -35,16 +35,16 @@ function S(e) {
     noCache: T,
     includeUnpublished: P
   } = (0, v.Z)(), L = (0, o.e7)([c.default], () => c.default.getCurrentUser()), {
-    skus: I,
-    currentPage: k,
+    skus: k,
+    currentPage: I,
     totalCount: N,
     isFetchingResults: A
-  } = (0, b.a)(), w = (0, o.Wu)([p.Z], () => p.Z.getProductsBySkus(I)), B = l.useCallback(() => {
+  } = (0, b.a)(), w = (0, o.Wu)([p.Z], () => p.Z.getProductsBySkus(k)), B = l.useCallback(() => {
     var e;
     null == S || null == (e = S.current) || e.scrollToTop({
       animate: !0
     })
-  }, [S]), R = null == I ? void 0 : I.join("");
+  }, [S]), R = null == k ? void 0 : k.join("");
   l.useEffect(() => {
     B()
   }, [R, B]);
@@ -119,7 +119,7 @@ function S(e) {
       className: E.paginationContainer,
       children: (0, r.jsx)("div", {
         children: (0, r.jsx)(s.DsT, {
-          currentPage: k,
+          currentPage: I,
           totalCount: N,
           pageSize: W,
           onPageChange: q,

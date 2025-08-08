@@ -30,8 +30,8 @@ var r = n(255367),
   T = n(38900),
   P = n(709999),
   L = n(794324),
-  I = n(619899),
-  k = n(859788),
+  k = n(619899),
+  I = n(859788),
   N = n(215023),
   A = n(981631),
   w = n(388032),
@@ -120,7 +120,7 @@ let R = {
       heroLogo: Y,
       heroBannerStatic: X,
       heroBannerAnimated: J
-    } = (0, L.hr)(z), Q = null == G ? void 0 : G.heroBanner, $ = null != (t = null == q ? void 0 : q.responsive) && t, ee = null == q ? void 0 : q.backgroundStyle, et = l.useMemo(() => W(z.rankedSkuIds), [n, W, z.rankedSkuIds]), en = (0, y.a)()(et), er = (0, x.l)(en).slice(0, 4), el = (0, I.St)(er), ea = j === N.AW.ORBS ? w.intl.string(w.t["1CdL8f"]) : w.intl.formatToPlainString(w.t.wvKYCg, {
+    } = (0, L.hr)(z), Q = null == G ? void 0 : G.heroBanner, $ = null != (t = null == q ? void 0 : q.responsive) && t, ee = null == q ? void 0 : q.backgroundStyle, et = l.useMemo(() => W(z.rankedSkuIds), [n, W, z.rankedSkuIds]), en = (0, y.a)()(et), er = (0, x.l)(en).slice(0, 4), el = (0, k.St)(er), ea = j === N.AW.ORBS ? w.intl.string(w.t["1CdL8f"]) : w.intl.formatToPlainString(w.t.wvKYCg, {
       category_name: z.name
     }), ei = (0, E.FF)("CollectiblesContent");
     return null != H && (n || z !== R) ? (0, r.jsxs)("div", {
@@ -131,7 +131,7 @@ let R = {
         style: null != ee ? {
           background: ee
         } : void 0,
-        children: [(0, r.jsx)(k.Z, {
+        children: [(0, r.jsx)(I.Z, {
           bannerStatic: X,
           bannerAnimated: J,
           isResponsive: $

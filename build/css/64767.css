@@ -1,6 +1,6 @@
 /**
   Module ID: 64767
-  Original File Name: b06ec795554c4096
+  Original File Name: a2f50a6554c2fa25
 **/
 .perkCard_a1e8da {
     align-items: flex-start;
@@ -18,6 +18,10 @@
 
 .perkCard_a1e8da.disabled_a1e8da:hover {
     cursor: not-allowed
+}
+
+.activeCard_a1e8da:hover {
+    cursor: default
 }
 
 .perkCardImage_a1e8da {
@@ -112,4 +116,4 @@
     padding: var(--space-8)
 }
 
-/*# sourceMappingURL=b06ec795554c4096.css.map*/
+/*# sourceMappingURL=a2f50a6554c2fa25.css.map*/

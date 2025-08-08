@@ -11,8 +11,8 @@ var n = r(255367),
 function l(e) {
   var t, r, {
       guildId: l,
-      title: c,
-      description: d,
+      title: d,
+      description: c,
       powerups: u,
       footerInfoText: p,
       footerButtonText: f,
@@ -34,9 +34,9 @@ function l(e) {
       return o
     }(e, ["guildId", "title", "description", "powerups", "footerInfoText", "footerButtonText", "footerButtonOnClick"]);
   let j = null != p && p.length > 0,
-    C = null != f && f.length > 0 && null != x,
-    g = j || C,
-    v = (0, a.Z)(l);
+    v = null != f && f.length > 0 && null != x,
+    C = j || v,
+    g = (0, a.Z)(l);
   return (0, n.jsxs)(o.Y0X, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var r = null != arguments[t] ? arguments[t] : {},
@@ -63,20 +63,20 @@ function l(e) {
       scrollbarType: "none",
       children: [(0, n.jsx)(o.X6q, {
         variant: "heading-lg/semibold",
-        children: c
+        children: d
       }), (0, n.jsx)(o.Text, {
         variant: "text-sm/medium",
         color: "text-secondary",
-        children: d
+        children: c
       }), (0, n.jsx)("div", {
         className: s.perkCardsContainer,
         children: u.map(e => (0, n.jsx)(i.Z, {
           guildId: l,
           powerup: e,
-          canUseBoosts: null != v && v
+          canUseBoosts: null != g && g
         }, e.skuId))
       })]
-    }), g && (0, n.jsx)(o.mzw, {
+    }), C && (0, n.jsx)(o.mzw, {
       children: (0, n.jsxs)("div", {
         className: s.footerContainer,
         children: [j && (0, n.jsxs)("div", {
@@ -88,7 +88,7 @@ function l(e) {
             color: "text-secondary",
             children: p
           })]
-        }), C && (0, n.jsx)("div", {
+        }), v && (0, n.jsx)("div", {
           children: (0, n.jsx)(o.zxk, {
             variant: "secondary",
             size: "md",

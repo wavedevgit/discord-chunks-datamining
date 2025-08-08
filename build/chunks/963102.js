@@ -31,7 +31,7 @@ var r = n(255367),
   P = n(388032),
   L = n(774457);
 
-function I(e) {
+function k(e) {
   let {
     tab: t,
     displayText: n,
@@ -48,7 +48,7 @@ function I(e) {
   })
 }
 
-function k(e) {
+function I(e) {
   let {
     tab: t,
     selected: n,
@@ -198,12 +198,12 @@ function N(e) {
             tab: t,
             displayText: n
           } = e;
-          return t === j.AW.CATALOG ? (0, r.jsx)(k, {
+          return t === j.AW.CATALOG ? (0, r.jsx)(I, {
             tab: t,
             selected: (0, j.RE)(g) || g === t,
             displayText: n,
             handleTransition: f
-          }, t) : (0, r.jsx)(I, {
+          }, t) : (0, r.jsx)(k, {
             tab: t,
             displayText: n,
             selected: g === t,

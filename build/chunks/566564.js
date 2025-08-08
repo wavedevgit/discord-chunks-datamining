@@ -1,7 +1,7 @@
 /** Chunk was on 45620 **/
 "use strict";
 n.d(t, {
-  Z: () => k
+  Z: () => I
 }), n(388685);
 var r = n(255367),
   l = n(73800),
@@ -30,7 +30,7 @@ var r = n(255367),
   T = n(981631),
   P = n(388032),
   L = n(806734);
-let I = e => {
+let k = e => {
     var t;
     let {
       handleTransition: n,
@@ -41,10 +41,10 @@ let I = e => {
     } = e, {
       noCache: p,
       includeUnpublished: h
-    } = (0, m.Z)(), [y, T] = l.useState(!1), I = (0, d.sp)(), k = null != (t = null == I ? void 0 : I.sessionId) ? t : "";
+    } = (0, m.Z)(), [y, T] = l.useState(!1), k = (0, d.sp)(), I = null != (t = null == k ? void 0 : k.sessionId) ? t : "";
     l.useEffect(() => {
       (0, f.n)({
-        sessionId: k,
+        sessionId: I,
         checkpoint: f.a.SHOP_MOUNTED,
         tab: c,
         isFullScreen: u,
@@ -63,7 +63,7 @@ let I = e => {
       includeBundles: !0,
       logPerf: !0
     }, {
-      sessionId: k,
+      sessionId: I,
       tab: c,
       isFullScreen: u
     }), R = l.useCallback(() => {
@@ -71,14 +71,14 @@ let I = e => {
     }, [B]);
     if (l.useEffect(() => {
         null != A || N || 0 === w.length || (0, f.n)({
-          sessionId: k,
+          sessionId: I,
           checkpoint: f.a.SHOP_RENDERED,
           tab: c,
           isFullScreen: u,
           unpublishedCategoriesShown: h,
           cacheDisabled: p
         })
-      }, [A, N, w.length, h, p, k, c, u]), null != A) return (0, r.jsx)(b.Z, {
+      }, [A, N, w.length, h, p, I, c, u]), null != A) return (0, r.jsx)(b.Z, {
       onRetry: R,
       errorOrigin: b.i.SHOP_PAGE,
       errorMessage: A.message
@@ -173,7 +173,7 @@ let I = e => {
       children: w.map((e, t) => Z(e, t))
     })
   },
-  k = e => {
+  I = e => {
     let {
       isFullScreen: t,
       handleTransition: n,
@@ -202,7 +202,7 @@ let I = e => {
         className: L.shop,
         children: [(0, r.jsxs)("div", {
           className: L.mainContent,
-          children: [(0, r.jsx)(I, {
+          children: [(0, r.jsx)(k, {
             handleTransition: n,
             numVisibleItems: _,
             isFetchingCategories: b,
