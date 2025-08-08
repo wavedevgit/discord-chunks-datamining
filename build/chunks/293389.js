@@ -174,7 +174,7 @@ function k(e) {
       gameName: (0, x.le)(O) ? O.gameName : O.name
     }), d.ToastType.SUCCESS)), w(!0)
   }
-  let F = null != A && O.id === A.id && O.name === A.name,
+  let F = null != A && (0, g.rH)(O) === (0, g.rH)(A),
     H = null != C && C.id === (null == A ? void 0 : A.id) || F || null != h && h.some(e => e.id === (null == A ? void 0 : A.id));
   return (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsxs)("div", {
