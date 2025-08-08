@@ -56,7 +56,7 @@ let v = i.memo(function(e) {
   let j = (0, E.K)(n.effectId, k, {
       shouldWrap: S
     }),
-    U = I(n.effectId, o);
+    U = I(n.effectId);
   return (0, r.jsxs)("div", {
     className: l()(O.container, A, v, {
       [O.showEffect]: o !== g.F.PLAIN,
@@ -76,7 +76,7 @@ let v = i.memo(function(e) {
   })
 });
 
-function I(e, t) {
+function I(e) {
   switch (e) {
     case c.m.GRADIENT:
       return {
@@ -84,7 +84,7 @@ function I(e, t) {
       };
     case c.m.NEON:
       return {
-        effectClassName: O.neon, glowClassName: t !== g.F.PLAIN ? O.neonGlow : void 0
+        effectClassName: O.neon, glowClassName: O.neonGlow
       };
     case c.m.TOON:
       return {
