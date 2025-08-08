@@ -43,9 +43,9 @@ var r = n(255367),
   H = n(981631),
   G = n(388032),
   B = n(688826),
-  z = n(11847);
+  W = n(11847);
 
-function W(e) {
+function V(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -63,7 +63,7 @@ function W(e) {
   }
   return e
 }
-let V = U.ZP.getEnableHardwareAcceleration(),
+let z = U.ZP.getEnableHardwareAcceleration(),
   Y = 44 + F.x,
   q = i.memo(function(e) {
     let {
@@ -81,7 +81,7 @@ let V = U.ZP.getEnableHardwareAcceleration(),
         } = await Promise.all([n.e("79695"), n.e("70675"), n.e("70920")]).then(n.bind(n, 654663));
         return n => {
           var i, l;
-          return (0, r.jsx)(e, (i = W({}, n), l = l = {
+          return (0, r.jsx)(e, (i = V({}, n), l = l = {
             user: b,
             guildId: t.guild_id,
             channel: t
@@ -97,7 +97,7 @@ let V = U.ZP.getEnableHardwareAcceleration(),
           }), i))
         }
       })
-    }, [b, t]), z = i.useCallback(() => {
+    }, [b, t]), W = i.useCallback(() => {
       if (null == b) return;
       let e = "@".concat(M.ZP.getUserTag(b, {
           decoration: "never"
@@ -131,7 +131,7 @@ let V = U.ZP.getEnableHardwareAcceleration(),
       channelId: t.id,
       position: d.tq ? "window_center" : "left",
       spacing: 16,
-      onShiftClick: z,
+      onShiftClick: W,
       shouldShow: K,
       onRequestClose: () => Q(!1),
       children: e => {
@@ -153,10 +153,10 @@ let V = U.ZP.getEnableHardwareAcceleration(),
           }
           return i
         }(e, ["onClick", "onMouseDown"]);
-        return (0, r.jsx)(F.Z, W({
+        return (0, r.jsx)(F.Z, V({
           ref: o,
           onContextMenu: B,
-          shouldAnimateStatus: V,
+          shouldAnimateStatus: z,
           user: b,
           currentUser: y,
           nick: null == p ? void 0 : p.nick,
@@ -178,7 +178,7 @@ let V = U.ZP.getEnableHardwareAcceleration(),
           isOwner: U,
           nameplate: q,
           onClick: e => {
-            e.shiftKey ? null == z || z() : Q(e => !e)
+            e.shiftKey ? null == W || W() : Q(e => !e)
           },
           onMouseDown: e => {
             K ? e.stopPropagation() : null == i || i(e)
@@ -199,18 +199,18 @@ let V = U.ZP.getEnableHardwareAcceleration(),
       size: 16
     });
     return t === H.Skl.UNKNOWN ? (0, r.jsx)("div", {
-      className: z.membersGroup,
+      className: W.membersGroup,
       children: (0, r.jsx)("div", {
-        className: z.memberGroupsPlaceholder
+        className: W.memberGroupsPlaceholder
       })
     }) : (0, r.jsxs)(x.Z, {
-      className: z.membersGroup,
+      className: W.membersGroup,
       "aria-label": G.intl.formatToPlainString(G.t.UaqbkZ, {
         title: n,
         count: i
       }),
-      children: [null != a ? (0, r.jsx)(_.Z, W({
-        className: z.roleIcon
+      children: [null != a ? (0, r.jsx)(_.Z, V({
+        className: W.roleIcon
       }, a)) : null, (0, r.jsxs)("span", {
         "aria-hidden": !0,
         children: [n, " — ", i]
@@ -317,10 +317,10 @@ function X(e) {
       navigator: g,
       children: (0, r.jsx)(p.Wdt, {
         children: e => (0, r.jsx)("div", {
-          className: a()(z.membersWrap, z.hiddenMembers, B.container),
-          children: (0, r.jsx)(p.aVo, W({
+          className: a()(W.membersWrap, W.hiddenMembers, B.container),
+          children: (0, r.jsx)(p.aVo, V({
             ref: x,
-            className: z.members,
+            className: W.members,
             paddingTop: 0,
             sectionHeight: 40,
             renderSection: e => {
@@ -370,7 +370,7 @@ function J(e) {
     channel: t
   } = e;
   return (0, r.jsxs)("div", {
-    className: a()(z.membersWrap, z.hiddenMembers, z.members, B.emptyState),
+    className: a()(W.membersWrap, W.hiddenMembers, W.members, B.emptyState),
     children: [(0, r.jsx)(p.Text, {
       className: B.emptyStateHeader,
       variant: "text-xs/bold",

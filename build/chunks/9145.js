@@ -50,9 +50,9 @@ function B(e) {
   var t, n, l;
   let {
     maxHeight: B,
-    connectedLocation: z,
-    renderExternalHeader: W
-  } = e, V = (0, T.Z)(), Y = (0, s.Wu)([S.ZP], () => S.ZP.getEmbeddedActivitiesForLocation(z), [z]), q = (0, P.p)(z), K = (0, s.e7)([x.Z], () => x.Z.getChannel(q)), Q = (0, I.gb)(Y), X = (0, I.uF)(Q), J = i.useCallback(() => {
+    connectedLocation: W,
+    renderExternalHeader: V
+  } = e, z = (0, T.Z)(), Y = (0, s.Wu)([S.ZP], () => S.ZP.getEmbeddedActivitiesForLocation(W), [W]), q = (0, P.p)(W), K = (0, s.e7)([x.Z], () => x.Z.getChannel(q)), Q = (0, I.gb)(Y), X = (0, I.uF)(Q), J = i.useCallback(() => {
     (0, E.tg)(L.Ez.PIP)
   }, []), $ = i.useRef(null), ee = (0, s.e7)([S.ZP], () => S.ZP.getFocusedLayout()), et = ee !== L.MI.NO_CHAT, [en, er] = i.useState(null != (n = null != (t = g.ZP.activityPanelHeight) ? t : B) ? n : null), ei = i.useCallback(e => {
     u.ZP.updatedUnsyncedSettings({
@@ -76,13 +76,13 @@ function B(e) {
   let eo = ea.width / Math.max(ea.height, 1) < L.I0,
     ec = 0,
     eu = 0,
-    ed = (0, Z.Z)(null == V ? void 0 : V.id);
+    ed = (0, Z.Z)(null == z ? void 0 : z.id);
   if (!ed) {
     let e = ea.width,
       t = ea.height;
     eo ? ((t = ea.width / L.I0) > ea.height && (e = (t = ea.height) * L.I0), eu = (ea.height - t) / 2) : ((e = Math.min(ea.height * L.I0)) > ea.width && (t = (e = ea.width) / L.I0), ec = (ea.width - e) / 2)
   }
-  let eh = X.get(null != (l = null == V ? void 0 : V.id) ? l : ""),
+  let eh = X.get(null != (l = null == z ? void 0 : z.id) ? l : ""),
     ep = (0, s.e7)([j.Z], () => j.Z.getChannelId()),
     ef = (0, s.Wu)([_.ZP], () => {
       var e;
@@ -147,7 +147,7 @@ function B(e) {
     eb = (0, D.y)({
       location: "Activity Panel"
     });
-  if (null == V) return null;
+  if (null == z) return null;
   let ey = [];
   null != eh && (ey = Array.from(eh.embeddedActivity.userIds).map(e => O.default.getUser(e)).filter(e => null != e && void 0 !== e));
   let ex = e => {
@@ -171,7 +171,7 @@ function B(e) {
       className: a()(F.wrapper, G[ee], e),
       ref: $,
       style: em,
-      children: [null == W ? void 0 : W(), (0, r.jsxs)("div", {
+      children: [null == V ? void 0 : V(), (0, r.jsxs)("div", {
         className: F.activityPanelContainer,
         children: [et ? null : (0, r.jsx)("div", {
           className: F.header,
@@ -179,7 +179,7 @@ function B(e) {
             color: "header-primary",
             variant: "text-md/semibold",
             className: F.headerTitle,
-            children: null == V ? void 0 : V.name
+            children: null == z ? void 0 : z.name
           })
         }), (0, r.jsx)("div", {
           className: a()(F.activityContainer, {
@@ -194,7 +194,7 @@ function B(e) {
           ref: el,
           children: (0, r.jsx)(N.Z, {
             className: F.iframe,
-            embedId: (0, A.Z)(z.id, V.id)
+            embedId: (0, A.Z)(W.id, z.id)
           })
         }), null != ep ? (0, r.jsxs)("div", {
           className: F.footer,
@@ -220,8 +220,8 @@ function B(e) {
             }), (0, r.jsx)("div", {
               className: F.leaveButtonContainer,
               children: (0, r.jsx)(b.Z, {
-                applicationId: V.id,
-                location: z,
+                applicationId: z.id,
+                location: W,
                 centerButton: !0,
                 color: "disconnect"
               })

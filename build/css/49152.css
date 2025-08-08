@@ -1,6 +1,6 @@
 /**
   Module ID: 49152
-  Original File Name: 55f216b70e29fe35
+  Original File Name: 2fbd81ded7a65dcf
 **/
 @keyframes placeholderPulse_c8ffbb {
     0% {
@@ -1620,17 +1620,6 @@
     margin-left: 0
 }
 
-.eventsButton__4783a {
-    margin-left: 8px;
-    margin-right: 8px
-}
-
-.settingsButton__4783a {
-    align-items: center;
-    cursor: pointer;
-    display: flex
-}
-
 .buttonIcon__4783a {
     cursor: pointer
 }
@@ -1663,39 +1652,6 @@
     margin-right: -4px
 }
 
-.raisedHandButtonContainer__4783a {
-    opacity: 1
-}
-
-.full-motion .raisedHandButtonContainer__4783a {
-    transition: transform .2s ease-in-out,opacity .2s ease-in-out
-}
-
-.chatButtonContainer__4783a {
-    margin-right: -4px;
-    opacity: 1
-}
-
-.full-motion .chatButtonContainer__4783a {
-    transition: transform .2s ease-in-out,opacity .2s ease-in-out
-}
-
-.chatButtonContainer__4783a.chatButtonShowing__4783a {
-    filter: drop-shadow(0 1px 1px rgba(0,0,0,.4))
-}
-
-.chatButtonContainer__4783a.chatOpen__4783a {
-    opacity: 0;
-    pointer-events: none
-}
-
-.participantCountContainer__4783a {
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    gap: 2px
-}
-
 .boostUpsell__4783a {
     align-items: center;
     background-color: var(--background-base-lowest);
@@ -1703,19 +1659,6 @@
     display: flex;
     height: 52px;
     padding: 8px 16px
-}
-
-.boostUpsell__4783a .boostButton__4783a {
-    padding-left: 18px;
-    padding-right: 18px
-}
-
-.boostUpsell__4783a .boostButton__4783a,.boostUpsell__4783a .notNowButton__4783a {
-    font-weight: var(--font-weight-semibold)
-}
-
-.boostUpsell__4783a .notNowButton__4783a:hover {
-    text-decoration: underline
 }
 
 .boostUpsell__4783a .text__4783a {
@@ -1729,7 +1672,7 @@
     align-items: center;
     display: flex;
     flex-shrink: 0;
-    gap: 30px;
+    gap: 16px;
     margin-left: auto
 }
 
@@ -3166,4 +3109,4 @@
     position: relative
 }
 
-/*# sourceMappingURL=55f216b70e29fe35.css.map*/
+/*# sourceMappingURL=2fbd81ded7a65dcf.css.map*/

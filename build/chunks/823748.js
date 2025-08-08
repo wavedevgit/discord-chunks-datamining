@@ -43,9 +43,9 @@ var r = n(255367),
   H = n(266454),
   G = n(174130),
   B = n(588322),
-  z = n(591472),
-  W = n(446226),
-  V = n(517525),
+  W = n(591472),
+  V = n(446226),
+  z = n(517525),
   Y = n(445384),
   q = n(613464),
   K = n(705563),
@@ -97,9 +97,9 @@ var r = n(255367),
   eH = n(486472),
   eG = n(731290),
   eB = n(430824),
-  ez = n(158776),
-  eW = n(19780),
-  eV = n(944486),
+  eW = n(158776),
+  eV = n(19780),
+  ez = n(944486),
   eY = n(914010),
   eq = n(594174),
   eK = n(979651),
@@ -563,7 +563,7 @@ class ts extends i.PureComponent {
         selectedParticipant: e,
         premiumIndicatorEnabled: t
       } = this.props;
-      return (null == e ? void 0 : e.type) !== e2.fO.STREAM ? null : (0, r.jsx)(V.Z, {
+      return (null == e ? void 0 : e.type) !== e2.fO.STREAM ? null : (0, r.jsx)(z.Z, {
         size: e3.ZP.Sizes.LARGE,
         participant: e,
         showQuality: !0,
@@ -802,16 +802,16 @@ let to = (0, C.Z)(ts),
     var t;
     let {
       providedChannel: n
-    } = e, [l, a] = i.useState(null), s = (0, h.e7)([eV.Z], () => eV.Z.getChannelId()), o = (0, h.e7)([eV.Z], () => eV.Z.getVoiceChannelId()), c = (0, h.e7)([eU.Z], () => null != n ? n : eU.Z.getChannel(s), [s, n]), g = (0, h.e7)([eU.Z], () => eU.Z.getChannel(o), [o]), m = null == c ? void 0 : c.parent_id, y = (0, h.e7)([eU.Z], () => eU.Z.getChannel(m), [m]), x = (0, h.e7)([eB.Z], () => eB.Z.getGuild(null == c ? void 0 : c.guild_id), [c]), {
+    } = e, [l, a] = i.useState(null), s = (0, h.e7)([ez.Z], () => ez.Z.getChannelId()), o = (0, h.e7)([ez.Z], () => ez.Z.getVoiceChannelId()), c = (0, h.e7)([eU.Z], () => null != n ? n : eU.Z.getChannel(s), [s, n]), g = (0, h.e7)([eU.Z], () => eU.Z.getChannel(o), [o]), m = null == c ? void 0 : c.parent_id, y = (0, h.e7)([eU.Z], () => eU.Z.getChannel(m), [m]), x = (0, h.e7)([eB.Z], () => eB.Z.getGuild(null == c ? void 0 : c.guild_id), [c]), {
       needSubscriptionToAccess: _
     } = (0, X.Z)(null != (t = null == c ? void 0 : c.id) ? t : void 0), j = (0, h.e7)([A.Z], () => {
       let e = null != s ? A.Z.getParticipants(s) : [],
         t = null != s ? A.Z.getActivityParticipants(s) : [];
       return e.length - t.length > 0
-    }, [s]), O = (0, W.Z)(), v = (0, h.e7)([eV.Z], () => {
+    }, [s]), O = (0, V.Z)(), v = (0, h.e7)([ez.Z], () => {
       var e;
-      return (null != (e = null == O ? void 0 : O.channelId) ? e : eV.Z.getVoiceChannelId()) === (null == c ? void 0 : c.id)
-    }), C = (0, h.e7)([I.ZP], () => null != c ? I.ZP.getSelfEmbeddedActivityForChannel(c.id) : null, [c]), Z = (0, h.e7)([eW.Z], () => eW.Z.isConnected()), N = (0, S.Z)(Z), R = Z && !1 === N;
+      return (null != (e = null == O ? void 0 : O.channelId) ? e : ez.Z.getVoiceChannelId()) === (null == c ? void 0 : c.id)
+    }), C = (0, h.e7)([I.ZP], () => null != c ? I.ZP.getSelfEmbeddedActivityForChannel(c.id) : null, [c]), Z = (0, h.e7)([eV.Z], () => eV.Z.isConnected()), N = (0, S.Z)(Z), R = Z && !1 === N;
     i.useEffect(() => {
       v && R && null != C && null != c && b.Z.selectParticipant(c.id, (0, w.gN)({
         applicationId: C.applicationId,
@@ -824,12 +824,12 @@ let to = (0, C.Z)(ts),
       M = (0, h.e7)([eK.Z], () => null != c && c.isVocalThread() && !u().isEmpty(eK.Z.getVoiceStatesForChannel(c.id)), [c]),
       U = null != c && c.isPrivate() && !L && j,
       F = (null == c ? void 0 : c.isGuildVocal()) || U || M,
-      G = (0, h.e7)([z.Z], () => z.Z.getFrameLayoutMode() === e6.U.FOCUSED),
+      G = (0, h.e7)([W.Z], () => W.Z.getFrameLayoutMode() === e6.U.FOCUSED),
       {
         welcomeModalChannelId: B
       } = (0, d.TH)(),
-      V = (0, h.e7)([eg.Z], () => null != c && eg.Z.isLurking(c.guild_id), [c]),
-      Y = (0, h.e7)([ek.Z], () => ek.Z.hasSeen(null == c ? void 0 : c.guild_id, V), [c, V]),
+      z = (0, h.e7)([eg.Z], () => null != c && eg.Z.isLurking(c.guild_id), [c]),
+      Y = (0, h.e7)([ek.Z], () => ek.Z.hasSeen(null == c ? void 0 : c.guild_id, z), [c, z]),
       q = (0, h.e7)([A.Z, I.ZP], () => null != I.ZP.getConnectedActivityLocation() && I.ZP.getActivityPanelMode() === e5.Ez.PANEL ? I.ZP.getFocusedLayout() === e5.MI.NO_CHAT ? e7.AEg.NO_CHAT : e7.AEg.NORMAL : null != s ? A.Z.getLayout(s) : e7.AEg.NORMAL, [s]),
       K = (0, h.e7)([A.Z], () => null != c ? A.Z.getSelectedParticipant(c.id) : null),
       Q = (0, h.e7)([eq.default], () => eq.default.getCurrentUser()),
@@ -898,7 +898,7 @@ let to = (0, C.Z)(ts),
       voiceChannel: g,
       layout: q,
       needSubscriptionToAccess: _,
-      isLurking: V,
+      isLurking: z,
       hasModalOpen: ej,
       section: ee,
       channelSidebarState: et,
@@ -908,7 +908,7 @@ let to = (0, C.Z)(ts),
       showActivityPanel: L,
       showFramePanel: G,
       nsfwAgree: (0, h.e7)([eG.Z], () => eG.Z.didAgree(null == c ? void 0 : c.guild_id)),
-      isMobile: (0, h.e7)([ez.Z], () => (null == c ? void 0 : c.type) === e7.d4z.DM && ez.Z.isMobileOnline(c.getRecipientId()), [c]),
+      isMobile: (0, h.e7)([eW.Z], () => (null == c ? void 0 : c.type) === e7.d4z.DM && eW.Z.isMobileOnline(c.getRecipientId()), [c]),
       isUnavailable: (0, h.e7)([eH.Z], () => (null == c ? void 0 : c.guild_id) != null && eH.Z.isUnavailable(c.guild_id), [c]),
       showRealNameModal: J,
       showWelcomeModal: !Y && $,

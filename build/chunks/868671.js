@@ -76,7 +76,7 @@ function O(e) {
     ]
   }, [O, I, C, t, v, S, n, j, T, D, P]), F = r.useRef(0), H = r.useRef(I), G = r.useRef(void 0), B = r.useRef({
     impressionCappedEntryIds: Z
-  }), z = r.useCallback(e => {
+  }), W = r.useCallback(e => {
     var t;
     let n = Math.floor(e / m.YN),
       r = Math.min(null != (t = null == U ? void 0 : U.length) ? t : 0, n);
@@ -110,6 +110,6 @@ function O(e) {
     groups: k,
     rows: L,
     version: M,
-    updateMaxRowSeen: z
+    updateMaxRowSeen: W
   }
 }
