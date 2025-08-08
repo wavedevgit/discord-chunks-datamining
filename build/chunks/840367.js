@@ -23,8 +23,9 @@ function p(e) {
   let {
     userId: t,
     widgetType: n,
-    headingId: p
-  } = e, m = (0, o.e7)([c.default], () => c.default.getId() === t), g = f[n](), b = m ? n === i.l.FAVORITE_GAMES ? d.intl.string(d.t.wiXdER) : d.intl.format(d.t["zR1+09"], {
+    headingId: p,
+    reachedMaxGamesLimit: m
+  } = e, g = (0, o.e7)([c.default], () => c.default.getId() === t), b = f[n](), h = g ? n === i.l.FAVORITE_GAMES ? d.intl.string(d.t.wiXdER) : d.intl.format(d.t["zR1+09"], {
     numGames: l.k[n]
   }) : void 0;
   return (0, r.jsxs)("div", {
@@ -35,15 +36,18 @@ function p(e) {
         variant: "heading-sm/medium",
         color: "text-default",
         id: p,
-        children: g
-      }), null != b && (0, r.jsx)(a.Text, {
+        children: b
+      }), null != h && (0, r.jsx)(a.Text, {
         variant: "text-xs/normal",
         color: "text-secondary",
-        children: b
+        children: h
       })]
-    }), m && (0, r.jsxs)("div", {
+    }), g && (0, r.jsxs)("div", {
       className: u.actions,
-      children: [(0, r.jsx)(s.Z, {}), (0, r.jsx)(a.hU, {
+      children: [(0, r.jsx)(s.Z, {
+        disabled: m,
+        widgetType: n
+      }), (0, r.jsx)(a.hU, {
         icon: a.xhG,
         variant: "secondary",
         "aria-label": d.intl.string(d.t.xpSHSk),

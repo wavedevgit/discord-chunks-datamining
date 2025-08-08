@@ -6,8 +6,8 @@ var r = n(255367),
   l = n(73800),
   i = n(296009),
   o = n(481060),
-  a = n(634733),
-  c = n(210753),
+  a = n(210753),
+  c = n(86419),
   s = n(247397),
   d = n(570911),
   u = n(388032),
@@ -19,7 +19,7 @@ function p(e) {
   } = e, n = t === i.l.FAVORITE_GAMES ? d.J6["23"] : d.J6["58"], {
     coverImageUrl: l,
     localizedName: o
-  } = (0, c.$)(n);
+  } = (0, a.$)(n);
   return (0, r.jsxs)("div", {
     className: f.placeholderDetailCard,
     children: [(0, r.jsx)("div", {
@@ -60,7 +60,7 @@ function g(e) {
   } = e, {
     coverImageUrl: n,
     localizedName: l
-  } = (0, c.$)(t);
+  } = (0, a.$)(t);
   return (0, r.jsx)("div", {
     className: f.placeholderCoverItem,
     children: null != n && "" !== n ? (0, r.jsx)("img", {
@@ -77,7 +77,7 @@ function b(e) {
   let {
     widgetType: t
   } = e, n = l.useCallback(() => {
-    (0, a.w6)(t)
+    (0, c.qH)(t)
   }, [t]);
   return (0, r.jsxs)(o.P3F, {
     className: f.widgetPromptContainer,

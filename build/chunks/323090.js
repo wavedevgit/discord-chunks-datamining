@@ -26,8 +26,8 @@ function y(e) {
     currentUser: n,
     displayProfile: y,
     guildId: x,
-    subsection: O,
-    onClose: v
+    subsection: v,
+    onClose: O
   } = e, {
     trackUserProfileAction: _
   } = (0, s.KZ)(), I = (0, l.e7)([d.Z], () => {
@@ -45,12 +45,12 @@ function y(e) {
       commandIds: I.popularApplicationCommandIds,
       channel: P,
       guildId: x,
-      onClick: v
+      onClick: O
     }), (null == y ? void 0 : y.guildId) != null && (0, r.jsx)(g.Z, {
       user: t,
       currentUser: n,
       guildId: y.guildId,
-      scrollIntoView: O === b.Tb.ROLES
+      scrollIntoView: v === b.Tb.ROLES
     }), (0, r.jsx)(m.Z, {
       heading: h.intl.string(h.t["A//N4u"]),
       children: (0, r.jsx)(p.Z, {
@@ -60,11 +60,11 @@ function y(e) {
       })
     }), (0, r.jsx)(m.Z, {
       heading: h.intl.string(h.t["mQKv+v"]),
-      scrollIntoView: O === b.Tb.NOTE,
+      scrollIntoView: v === b.Tb.NOTE,
       children: (0, r.jsx)(o.Z, {
         userId: t.id,
         className: j.note,
-        autoFocus: O === b.Tb.NOTE,
+        autoFocus: v === b.Tb.NOTE,
         onUpdate: () => _({
           action: "SET_NOTE"
         })

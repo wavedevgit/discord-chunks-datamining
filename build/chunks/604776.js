@@ -1,6 +1,6 @@
 /** Chunk was on 93886 **/
 a.d(t, {
-  D: () => j,
+  D: () => g,
   Z: () => _
 }), a(388685);
 var n = a(255367),
@@ -25,7 +25,7 @@ let v = {
     [p.kNB.REVERSE_TRIAL]: "Reverse Trial",
     [p.kNB.FRACTIONAL_PREMIUM_GIVEBACK]: "Giveback"
   },
-  j = e => {
+  g = e => {
     var t;
     let {
       entitlement: a,
@@ -39,7 +39,7 @@ let v = {
         children: ["ID: ", a.id, " "]
       }), !r && (0, n.jsxs)(c.Text, {
         variant: "text-md/normal",
-        children: ["SKU: ", null == (t = g.find(e => e.value === a.skuId)) ? void 0 : t.label]
+        children: ["SKU: ", null == (t = j.find(e => e.value === a.skuId)) ? void 0 : t.label]
       }), null != a.startsAt && null != a.endsAt && (0, n.jsxs)(n.Fragment, {
         children: [(0, n.jsxs)(c.Text, {
           variant: "text-md/normal",
@@ -64,7 +64,7 @@ let v = {
       })]
     })
   },
-  g = [{
+  j = [{
     label: "1 hour",
     value: s.a.PREMIUM_TIER_2_1_HOUR
   }, {
@@ -78,8 +78,8 @@ let v = {
 function _() {
   let [e, t] = r.useState(!1), [a, l] = r.useState(s.a.PREMIUM_TIER_2_1_HOUR), [u, v] = r.useState([]), [_, y] = r.useState([]), {
     refreshEntitlementList: C,
-    grantFractionalPremium: O,
-    deleteFractionalPremium: N,
+    grantFractionalPremium: N,
+    deleteFractionalPremium: O,
     triggerNextEntitlementFulfillment: E,
     entitlements: T,
     loading: S
@@ -145,13 +145,13 @@ function _() {
         }), (0, n.jsx)(c.PhF, {
           serialize: e => e,
           isSelected: e => e === a,
-          options: g,
+          options: j,
           select: l,
           popoutLayerContext: m.O$
         }), (0, n.jsx)(c.zxk, {
           variant: "primary",
           text: "Grant Fractional Nitro",
-          onClick: () => O(a)
+          onClick: () => N(a)
         })]
       }), (0, n.jsxs)("section", {
         className: h.section,
@@ -180,7 +180,7 @@ function _() {
               size: o.zx.Sizes.TINY,
               color: o.zx.Colors.RED,
               look: o.zx.Looks.OUTLINED,
-              onClick: () => N(),
+              onClick: () => O(),
               children: "Delete all"
             }), (0, n.jsx)(o.zx, {
               disabled: S,
@@ -204,10 +204,10 @@ function _() {
             variant: "text-md/bold",
             children: "Active premium"
           }), (0, n.jsx)("div", {
-            children: u.map(e => (0, n.jsx)(j, {
+            children: u.map(e => (0, n.jsx)(g, {
               entitlement: e,
               active: !0,
-              onDelete: () => N(e.id)
+              onDelete: () => O(e.id)
             }, e.id))
           })]
         }), _.length > 0 && (0, n.jsxs)("div", {
@@ -218,7 +218,7 @@ function _() {
             variant: "text-md/bold",
             children: "Unconsumed Fractional Premium"
           }), (0, n.jsx)("div", {
-            children: _.map(e => (0, n.jsx)(j, {
+            children: _.map(e => (0, n.jsx)(g, {
               entitlement: e
             }, e.id))
           })]

@@ -47,7 +47,7 @@ let v = [{
       return t.getName()
     }
   }],
-  j = [{
+  g = [{
     id: "local",
     name: "Local Variables",
     group: x.v0.NONE,
@@ -80,7 +80,7 @@ let v = [{
     }
   }];
 
-function g(e) {
+function j(e) {
   let {
     store: t,
     initialHeight: a
@@ -88,7 +88,7 @@ function g(e) {
     TabBar: r,
     renderSelectedTab: l
   } = (0, x.ZP)({
-    tabs: j
+    tabs: g
   }, []);
   return (0, n.jsxs)(u.Z, {
     className: h.subPanel,
@@ -142,7 +142,7 @@ function _() {
       data: c,
       selectedRowKey: d,
       onClickRow: e => u(e.key)
-    }), null != x && (0, n.jsx)(g, {
+    }), null != x && (0, n.jsx)(j, {
       store: x,
       initialHeight: null != e.current ? e.current.clientHeight / 2 : 300
     })]

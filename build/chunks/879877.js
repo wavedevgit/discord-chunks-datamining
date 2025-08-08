@@ -29,13 +29,13 @@ function f(e) {
       tag: e,
       metadata: t
     }] : []
-  }), [JSON.stringify(t)]), [m, g] = l.useState([]), [b, h] = l.useState(296), [j, y] = l.useState(!1), x = l.useRef(null), O = l.useRef(0);
+  }), [JSON.stringify(t)]), [m, g] = l.useState([]), [b, h] = l.useState(296), [j, y] = l.useState(!1), x = l.useRef(null), v = l.useRef(0);
   l.useLayoutEffect(() => {
-    O.current = 0
+    v.current = 0
   }, [JSON.stringify(t)]);
-  let v = l.useRef(null);
+  let O = l.useRef(null);
   l.useLayoutEffect(() => {
-    if (j || null == v.current) return;
+    if (j || null == O.current) return;
     let e = new ResizeObserver(() => {
       let e = u(x.current),
         t = [],
@@ -46,7 +46,7 @@ function f(e) {
           let i = p[r],
             o = n.current[i.tag];
           if (null == o) {
-            0 === O.current && t.push(i);
+            0 === v.current && t.push(i);
             continue
           }
           let a = Math.min(o.getBoundingClientRect().width, l);
@@ -54,9 +54,9 @@ function f(e) {
           e += a + 4, t.push(i)
         }
       }
-      g(t.length === m.length ? m : t), h(r), O.current++
+      g(t.length === m.length ? m : t), h(r), v.current++
     });
-    return e.observe(v.current), () => {
+    return e.observe(O.current), () => {
       e.disconnect()
     }
   }, [p, m, j]);
@@ -76,7 +76,7 @@ function f(e) {
   return (0, r.jsxs)("div", {
     className: d.tagListContainer,
     children: [(0, r.jsx)("ul", {
-      ref: v,
+      ref: O,
       className: d.tagList,
       "aria-label": "Game Tags",
       children: E.map((e, t) => {

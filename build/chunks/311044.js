@@ -28,16 +28,16 @@ function b(e) {
     context: y,
     trackUserProfileAction: x
   } = (0, s.KZ)(), {
-    mutualFriends: O,
-    mutualFriendsCount: v
+    mutualFriends: v,
+    mutualFriendsCount: O
   } = (0, d.Z)(t), _ = (0, o.Z)();
   return l.useEffect(() => {
     (0, u.Z)(t.id, _)
   }, [t.id, _]), (0, r.jsx)(i.Ttm, {
     className: g.scroller,
     fade: !0,
-    children: null == O ? Array.from({
-      length: null != v ? v : 10
+    children: null == v ? Array.from({
+      length: null != O ? O : 10
     }).map((e, t) => (0, r.jsxs)("div", {
       className: g.friendsLoadingItem,
       children: [(0, r.jsx)(c.ZT, {
@@ -47,7 +47,7 @@ function b(e) {
         width: 135,
         opacity: .08
       })]
-    }, t)) : 0 === O.length ? (0, r.jsx)(m.s_, {}) : O.map(e => {
+    }, t)) : 0 === v.length ? (0, r.jsx)(m.s_, {}) : v.map(e => {
       let {
         key: t,
         user: l,

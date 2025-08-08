@@ -1,6 +1,6 @@
 /** Chunk was on 11776 **/
 n.d(t, {
-  Z: () => O
+  Z: () => v
 }), n(388685);
 var r = n(255367),
   l = n(73800),
@@ -63,7 +63,7 @@ function x(e) {
   })
 }
 
-function O(e) {
+function v(e) {
   var t, n, d;
   let {
     user: u,
@@ -71,8 +71,8 @@ function O(e) {
     displayProfile: p,
     guildId: m,
     items: g,
-    initialSection: O = b.oh.USER_INFO,
-    initialSubsection: v,
+    initialSection: v = b.oh.USER_INFO,
+    initialSubsection: O,
     onClose: _
   } = e, {
     trackUserProfileAction: I
@@ -84,9 +84,9 @@ function O(e) {
       let {
         section: t
       } = e;
-      return t === O
+      return t === v
     })) ? void 0 : t.section) ? d : null == (n = g[0]) ? void 0 : n.section,
-    subsection: v
+    subsection: O
   });
   l.useEffect(() => {
     null == g.find(e => e.section === E) && N({
@@ -94,7 +94,7 @@ function O(e) {
       subsection: void 0
     })
   }, [g, E]);
-  let T = l.useCallback(e => {
+  let S = l.useCallback(e => {
     I({
       action: "PRESS_SECTION",
       section: e
@@ -120,7 +120,7 @@ function O(e) {
       className: y.tabBar,
       type: "top",
       selectedItem: E,
-      onItemSelect: T,
+      onItemSelect: S,
       children: g.map(e => {
         let {
           section: t,

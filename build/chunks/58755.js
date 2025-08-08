@@ -1,6 +1,6 @@
 /** Chunk was on 93886 **/
 a.d(t, {
-  P: () => j
+  P: () => g
 }), a(388685), a(35282), a(49124);
 var n = a(255367),
   r = a(73800),
@@ -58,7 +58,7 @@ let f = Object.keys(x.jQ).map(e => ({
     label: e
   }));
 
-function j(e) {
+function g(e) {
   let {
     state: t,
     setState: a
@@ -105,7 +105,7 @@ function j(e) {
         })
       }, e.name))
     })]
-  }), u = l.find(e => e.name === i), f = null != u ? (0, n.jsx)(g, {
+  }), u = l.find(e => e.name === i), f = null != u ? (0, n.jsx)(j, {
     onClose: () => s(null),
     scale: u,
     setState: a
@@ -115,7 +115,7 @@ function j(e) {
   })
 }
 
-function g(e) {
+function j(e) {
   let {
     scale: t,
     setState: a,
@@ -125,12 +125,12 @@ function g(e) {
     base: h,
     darkness: b,
     lightness: v,
-    showColumnarPalettePreview: j,
-    colorSpace: g,
+    showColumnarPalettePreview: g,
+    colorSpace: j,
     easingStrength: _ = 1,
     useP3ColorSpace: C,
-    steps: O = 26
-  } = t, N = (0, x.XM)(t), E = (0, x.W6)(N, c);
+    steps: N = 26
+  } = t, O = (0, x.XM)(t), E = (0, x.W6)(O, c);
   return (0, n.jsxs)(d.hjN, {
     className: p.paletteSettings,
     children: [(0, n.jsxs)("div", {
@@ -148,7 +148,7 @@ function g(e) {
         children: c
       }), (0, n.jsx)(d.P3F, {
         onClick: function() {
-          let e = Object.entries(N).reduce((e, t) => {
+          let e = Object.entries(O).reduce((e, t) => {
             let [a, n] = t;
             return e[a] = {
               value: (0, l.Z)((0, i.Z)(n, x.HW.sRGB), {
@@ -185,7 +185,7 @@ function g(e) {
         children: "The color space used to generate the palette. Different color spaces will produce different results."
       }), (0, n.jsx)(d.q4e, {
         options: f,
-        value: g,
+        value: j,
         onChange: e => (0, x.t4)(c, e, a),
         popoutLayerContext: m.O$
       })]
@@ -247,7 +247,7 @@ function g(e) {
       children: [(0, n.jsx)(d.xJW, {
         children: (0, n.jsx)(d.j7V, {
           note: "Renders the palette preview in a single column, useful for comparing the luminance of each step.",
-          value: j,
+          value: g,
           onChange: e => (0, x.KB)(c, e, a),
           children: "Show columnar palette preview"
         })
@@ -260,10 +260,10 @@ function g(e) {
           children: "Use P3 Color Space"
         })
       }), (0, n.jsx)(d.xJW, {
-        title: "Steps (".concat(O, ")"),
+        title: "Steps (".concat(N, ")"),
         children: (0, n.jsx)(d.iRW, {
           onValueRender: () => null,
-          initialValue: O,
+          initialValue: N,
           minValue: (0, x.A0)(c).length,
           maxValue: 100,
           onValueChange: e => (0, x.YC)(c, Math.round(e), a),
@@ -273,22 +273,22 @@ function g(e) {
         title: "Palette Preview",
         children: (0, n.jsx)("div", {
           className: p.paletteOverrides,
-          "data-columnar": j,
-          children: Object.entries(N).map((e, a) => {
+          "data-columnar": g,
+          children: Object.entries(O).map((e, a) => {
             let [r, c] = e, u = (0, x.HI)(c), m = (0, s.Z)((0, o.Z)("black"), c) > 4.5 ? "black" : "white", p = E[r];
             return (0, n.jsxs)("div", {
               style: {
                 backgroundColor: u
               },
               children: [(0, n.jsxs)(d.Text, {
-                variant: j ? "text-sm/medium" : "text-xs/medium",
+                variant: g ? "text-sm/medium" : "text-xs/medium",
                 style: {
                   color: m
                 },
-                children: [t.name, ".", a + 1, j && null != p ? (0, n.jsx)("strong", {
+                children: [t.name, ".", a + 1, g && null != p ? (0, n.jsx)("strong", {
                   children: " - ".concat(p)
                 }) : ""]
-              }), j && (0, n.jsxs)(d.Text, {
+              }), g && (0, n.jsxs)(d.Text, {
                 variant: "text-xxs/medium",
                 style: {
                   opacity: .75,

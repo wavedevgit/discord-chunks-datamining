@@ -1,6 +1,6 @@
 /** Chunk was on 93886 **/
 a.d(t, {
-  ZP: () => g,
+  ZP: () => j,
   v0: () => b
 }), a(388685), a(539854), a(642613);
 var n, r = a(255367),
@@ -35,23 +35,23 @@ let f = ["Experiments", "Events", "Premium", "Billing", "Users", "Guilds", "UI",
     })
   });
 
-function j(e) {
+function g(e) {
   let {
     tabs: t,
     selectedTabId: a,
     onSelectTab: n
   } = e, i = l.useRef(new Map), [s, b] = l.useState(() => new Set), {
-    ref: j,
-    width: g
+    ref: g,
+    width: j
   } = (0, u.ZP)(), _ = l.useRef(null);
   l.useEffect(() => {
     var e, n, r, l;
-    if (null == g) return;
+    if (null == j) return;
     let s = new Set,
-      o = null != g ? g : 0;
+      o = null != j ? j : 0;
     for (let c of (o -= null != (n = null == (e = i.current.get(a)) ? void 0 : e.getBoundingClientRect().width) ? n : 0, t)) c.id !== a && (o -= null != (l = null == (r = i.current.get(c.id)) ? void 0 : r.getBoundingClientRect().width) ? l : 0) < 0 && s.add(c.id);
     b(s)
-  }, [t, g, j, a]);
+  }, [t, j, g, a]);
   let y = l.useCallback(e => {
     var a, l, i;
     let {
@@ -98,7 +98,7 @@ function j(e) {
     className: h.tabBarContainer,
     children: [(0, r.jsxs)("div", {
       className: h.tabBar,
-      ref: j,
+      ref: g,
       children: [t.map(e => {
         let {
           id: t,
@@ -182,7 +182,7 @@ function j(e) {
   })
 }
 
-function g(e, t) {
+function j(e, t) {
   var a, n, i;
   let {
     tabs: s,
@@ -190,7 +190,7 @@ function g(e, t) {
     onChangeTab: c
   } = e, [d, u] = l.useState(null != o ? o : null == (a = s[0]) ? void 0 : a.id);
   return {
-    TabBar: l.useCallback(() => (0, r.jsx)(j, {
+    TabBar: l.useCallback(() => (0, r.jsx)(g, {
       tabs: s,
       selectedTabId: d,
       onSelectTab: e => {

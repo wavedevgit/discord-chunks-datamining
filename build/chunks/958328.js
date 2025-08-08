@@ -1,6 +1,6 @@
 /** Chunk was on 93886 **/
 a.d(t, {
-  Z: () => g
+  Z: () => j
 });
 var n = a(255367);
 a(73800);
@@ -20,7 +20,7 @@ var r = a(120356),
   f = a(390094),
   v = a(616257);
 
-function j(e) {
+function g(e) {
   let {
     title: t,
     can: a
@@ -42,32 +42,32 @@ function j(e) {
   })
 }
 
-function g() {
+function j() {
   let e = (0, s.e7)([x.Z], () => x.Z.getChannelId()),
     t = (0, s.e7)([p.Z], () => p.Z.getGuildId()),
     a = (0, s.e7)([d.Z], () => d.Z.getChannel(e)),
     r = (0, s.e7)([u.Z], () => u.Z.getGuild(t)),
-    g = (0, s.e7)([m.Z], () => m.Z.computePermissions(a)),
+    j = (0, s.e7)([m.Z], () => m.Z.computePermissions(a)),
     _ = (0, s.e7)([m.Z], () => m.Z.computePermissions(r)),
     y = (0, c.ZP)(a, !0),
     C = null != a ? (0, b.IG)(a, !1) : null,
-    O = null != r ? h.Z.getGuildPermissionSpecMap(r) : null,
-    N = Object.values(null != C ? C : {}).map(e => {
+    N = null != r ? h.Z.getGuildPermissionSpecMap(r) : null,
+    O = Object.values(null != C ? C : {}).map(e => {
       let {
         title: t,
         flag: a
-      } = e, r = i.e$(g, a);
-      return (0, n.jsx)(j, {
+      } = e, r = i.e$(j, a);
+      return (0, n.jsx)(g, {
         title: t,
         can: r
       }, t)
     }),
-    E = Object.values(null != O ? O : {}).map(e => {
+    E = Object.values(null != N ? N : {}).map(e => {
       let {
         title: t,
         flag: a
       } = e, r = i.e$(_, a);
-      return (0, n.jsx)(j, {
+      return (0, n.jsx)(g, {
         title: t,
         can: r
       }, t)
@@ -81,7 +81,7 @@ function g() {
         children: [(0, n.jsx)(o.X6q, {
           variant: "heading-md/semibold",
           children: null != y ? "Permissions in ".concat(y) : "No channel selected"
-        }), N]
+        }), O]
       }), (0, n.jsxs)("section", {
         className: f.section,
         children: [(0, n.jsx)(o.X6q, {

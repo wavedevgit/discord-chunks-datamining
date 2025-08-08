@@ -1,18 +1,19 @@
 /** Chunk was on 11776 **/
 n.d(t, {
-  Z: () => o
+  Z: () => a
 });
 var r = n(255367);
 n(73800);
-var l = n(750312),
-  i = n(30344);
+var l = n(624238),
+  i = n(750312),
+  o = n(30344);
 
-function o(e) {
+function a(e) {
   var {
     user: t,
     widget: n,
-    isGameFetching: o
-  } = e, a = function(e, t) {
+    isGameFetching: a
+  } = e, c = function(e, t) {
     if (null == e) return {};
     var n, r, l = function(e, t) {
       if (null == e) return {};
@@ -27,10 +28,12 @@ function o(e) {
     }
     return l
   }(e, ["user", "widget", "isGameFetching"]);
-  return (0, r.jsx)(l.Z, {
+  let s = n.games.length >= l.k.want_to_play_games;
+  return (0, r.jsx)(i.Z, {
     userId: t.id,
     widgetType: n.type,
-    children: (0, r.jsx)(i.Z, function(e) {
+    reachedMaxGamesLimit: s,
+    children: (0, r.jsx)(o.Z, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -50,7 +53,7 @@ function o(e) {
     }({
       games: n.games,
       userId: t.id,
-      isGameFetching: o
-    }, a))
+      isGameFetching: a
+    }, c))
   })
 }

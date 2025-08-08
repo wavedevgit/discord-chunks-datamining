@@ -27,9 +27,11 @@ function o(e) {
     }
     return l
   }(e, ["user", "widget", "isGameFetching"]);
+  let c = null != n.game;
   return (0, r.jsx)(l.Z, {
     userId: t.id,
     widgetType: n.type,
+    reachedMaxGamesLimit: c,
     children: (0, r.jsx)(i.Z, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},

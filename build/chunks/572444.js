@@ -19,7 +19,7 @@ var n = a(255367),
   f = a(203759),
   v = a(616257);
 
-function j(e) {
+function g(e) {
   let {
     recording: t
   } = e;
@@ -46,7 +46,7 @@ function j(e) {
   })
 }
 
-function g(e) {
+function j(e) {
   let {
     recording: t,
     playing: a,
@@ -54,7 +54,7 @@ function g(e) {
     onStop: l
   } = e;
   return (0, n.jsx)(c.zF9, {
-    collapsibleContent: (0, n.jsx)(j, {
+    collapsibleContent: (0, n.jsx)(g, {
       recording: t
     }),
     children: e => {
@@ -100,7 +100,7 @@ function g(e) {
 function _() {
   let {
     name: e
-  } = (0, x.p6)(b.h7.AUDIO_INPUT), [t, a] = r.useState(!1), [l, i] = r.useState([]), j = (0, s.e7)([p.Z], () => p.Z.getKrispSuppressionLevel()), [_, y] = r.useState(null), C = r.useRef(null), O = r.useRef(null), [N, E] = r.useState(.5), {
+  } = (0, x.p6)(b.h7.AUDIO_INPUT), [t, a] = r.useState(!1), [l, i] = r.useState([]), g = (0, s.e7)([p.Z], () => p.Z.getKrispSuppressionLevel()), [_, y] = r.useState(null), C = r.useRef(null), N = r.useRef(null), [O, E] = r.useState(.5), {
     krispModels: T,
     krispModelOverride: S,
     inputMode: P,
@@ -138,7 +138,7 @@ function _() {
   function z(e) {
     if (t && G(), U(), null == F) return;
     let a = F.createBufferSource();
-    a.buffer = e.audioBuffer, O.current = F.createGain(), O.current.gain.value = N, a.connect(O.current), O.current.connect(F.destination), a.loop = !0, a.start(), C.current = a, y(e)
+    a.buffer = e.audioBuffer, N.current = F.createGain(), N.current.gain.value = O, a.connect(N.current), N.current.connect(F.destination), a.loop = !0, a.start(), C.current = a, y(e)
   }
   r.useEffect(() => {
     U()
@@ -183,7 +183,7 @@ function _() {
           title: "Krisp Suppression Level",
           tag: c.RB0.H3,
           children: (0, n.jsx)(c.iRW, {
-            initialValue: j,
+            initialValue: g,
             onValueChange: d.Z.setKrispSuppressionLevel,
             minValue: 0,
             maxValue: 100
@@ -285,7 +285,7 @@ function _() {
                 createdAt: Date.now(),
                 suppression: M,
                 echoCancellation: w,
-                krispSuppressionLevel: j
+                krispSuppressionLevel: g
               }])
             })
           },
@@ -295,9 +295,9 @@ function _() {
         title: "Volume",
         tag: c.RB0.H3,
         children: (0, n.jsx)(c.iRW, {
-          initialValue: N,
+          initialValue: O,
           asValueChanges: function(e) {
-            null != O.current && (O.current.gain.value = e, E(e))
+            null != N.current && (N.current.gain.value = e, E(e))
           },
           minValue: 0,
           maxValue: 1
@@ -305,7 +305,7 @@ function _() {
       }), (0, n.jsx)(c.hjN, {
         title: "Recordings",
         tag: c.RB0.H3,
-        children: l.map((e, t) => (0, n.jsx)(g, {
+        children: l.map((e, t) => (0, n.jsx)(j, {
           recording: e,
           playing: e === _,
           onPlay: z,

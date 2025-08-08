@@ -2,8 +2,8 @@
 n.d(t, {
   P9: () => _,
   Uf: () => P,
-  b0: () => v,
-  s_: () => O
+  b0: () => O,
+  s_: () => v
 }), n(388685);
 var r = n(255367),
   l = n(73800),
@@ -48,7 +48,7 @@ function x(e) {
   })
 }
 
-function O() {
+function v() {
   let e = m.intl.string(m.t.RnD2yc),
     [t] = l.useState(() => {
       var e;
@@ -60,7 +60,7 @@ function O() {
   })
 }
 
-function v() {
+function O() {
   let e = m.intl.string(m.t.bFgqYG),
     [t] = l.useState(() => {
       var e;

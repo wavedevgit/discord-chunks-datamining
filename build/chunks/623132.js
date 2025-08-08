@@ -80,14 +80,14 @@ function y(e) {
   } = e, {
     gameName: y,
     imageSrc: x,
-    applicationId: O,
-    comment: v,
+    applicationId: v,
+    comment: O,
     tags: _
   } = o, I = (0, f.Z)(o.applicationId), P = I.length > 0, E = () => (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(d.Z, {
       imageSrc: x,
       gameName: y,
-      applicationId: O,
+      applicationId: v,
       userId: t.id,
       disableInteraction: !0
     }), (0, r.jsxs)("div", {
@@ -96,8 +96,8 @@ function y(e) {
         variant: "text-md/normal",
         color: "text-default",
         children: y
-      }), null != v && (0, r.jsx)(h, {
-        text: v,
+      }), null != O && (0, r.jsx)(h, {
+        text: O,
         user: t,
         guildId: n,
         channelId: l
@@ -133,7 +133,7 @@ function y(e) {
     className: b.card,
     children: E()
   }) : (0, r.jsx)(j, {
-    applicationId: O,
+    applicationId: v,
     userId: t.id,
     gameName: y,
     className: b.card,

@@ -93,16 +93,16 @@ function f() {
     hasPreloaded: u.Z.hasPreloaded,
     hasMoreToLoad: u.Z.hasMoreToLoad,
     isLoadingComplete: u.Z.isLoadingComplete
-  })), j = (0, i.e7)([u.Z], () => u.Z.currentRequestAnalyticsPayload), g = (0, i.cj)([u.Z], () => u.Z.getChannelInfoMap()), _ = (0, i.cj)([d.Z], () => {
+  })), g = (0, i.e7)([u.Z], () => u.Z.currentRequestAnalyticsPayload), j = (0, i.cj)([u.Z], () => u.Z.getChannelInfoMap()), _ = (0, i.cj)([d.Z], () => {
     let e = {};
-    return Object.entries(g).forEach(t => {
+    return Object.entries(j).forEach(t => {
       let [a] = t, n = d.Z.getChannel(a);
       e[a] = null != n ? n : null
     }), e
   }), y = (0, i.cj)([d.Z], () => t.reduce((e, t) => {
     let a = d.Z.getChannel(t);
     return e[t] = null != a ? a : null, e
-  }, {})), C = (0, i.e7)([u.Z], () => u.Z.getInboxMessages()), O = (0, i.e7)([u.Z], () => u.Z.getDevOverrides().navOnClick);
+  }, {})), C = (0, i.e7)([u.Z], () => u.Z.getInboxMessages()), N = (0, i.e7)([u.Z], () => u.Z.getDevOverrides().navOnClick);
   return (0, n.jsx)("div", {
     className: p.panel,
     children: (0, n.jsxs)(s.zJl, {
@@ -128,7 +128,7 @@ function f() {
           children: [(0, n.jsx)("div", {
             children: "Nav On Click"
           }), (0, n.jsx)(s.XZJ, {
-            value: O,
+            value: N,
             onChange: e => {
               o.Z.dispatch({
                 type: "NOTIFICATIONS_INBOX_SET_DEV_OVERRIDES",
@@ -174,17 +174,17 @@ function f() {
         }), (0, n.jsxs)("div", {
           children: ["Is Loading Complete: ", v ? "✅" : "❌"]
         }), (0, n.jsxs)("div", {
-          children: ["Last Loading Trigger: ", null == j ? void 0 : j.loadingTrigger]
+          children: ["Last Loading Trigger: ", null == g ? void 0 : g.loadingTrigger]
         })]
       }), (0, n.jsxs)("div", {
         children: [(0, n.jsx)(s.X6q, {
           variant: "heading-lg/semibold",
           children: "Channel Info Map"
         }), (0, n.jsxs)("div", {
-          children: ["Total Channels: ", Object.keys(g).length]
+          children: ["Total Channels: ", Object.keys(j).length]
         }), (0, n.jsx)(c.Z, {
           columns: b,
-          data: Object.entries(g).map(e => {
+          data: Object.entries(j).map(e => {
             var t, a;
             let [n, r] = e;
             return {
