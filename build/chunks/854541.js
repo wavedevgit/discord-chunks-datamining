@@ -162,12 +162,13 @@ class D extends i.PureComponent {
       color: e,
       onChange: t,
       value: n,
-      disabled: i
+      disabled: i,
+      allowBlackCustomColor: o
     } = this.props;
     return (0, r.jsx)(w, {
       isDefault: !0,
       color: e,
-      isSelected: e === n || 0 === n,
+      isSelected: e === n || 0 === n && !o,
       onClick: t,
       disabled: i
     })
@@ -316,8 +317,9 @@ function k(e) {
     colorContainerClassName: h,
     isGradient: m,
     renderGradientCustomButton: g,
-    gradientDegrees: E
-  } = e, b = e => (0, r.jsx)("div", {
+    gradientDegrees: E,
+    allowBlackCustomColor: b
+  } = e, O = e => (0, r.jsx)("div", {
     className: y.colorPickerRow,
     children: m ? e.map(e => (0, r.jsx)(w, {
       gradientStart: e.start,
@@ -336,14 +338,14 @@ function k(e) {
       disabled: d,
       isGradient: !1
     }, e))
-  }), O = o.slice(0, o.length / 2), I = o.slice(o.length / 2, o.length), A = (0, l.ZP)({
+  }), I = o.slice(0, o.length / 2), A = o.slice(o.length / 2, o.length), N = (0, l.ZP)({
     id: "color-picker",
     isEnabled: !0,
     scrollToStart: R,
     scrollToEnd: R
   });
   return (0, r.jsx)(s.bG, {
-    navigator: A,
+    navigator: N,
     children: (0, r.jsx)(s.SJ, {
       children: e => {
         var {
@@ -362,7 +364,8 @@ function k(e) {
                 value: c,
                 color: n,
                 onChange: f,
-                disabled: d
+                disabled: d,
+                allowBlackCustomColor: b
               })
             }), (0, r.jsx)("div", {
               className: a()(y.customContainer, h),
@@ -380,7 +383,7 @@ function k(e) {
               disabled: d
             })
           }), (0, r.jsxs)("div", {
-            children: [b(O), b(I)]
+            children: [O(I), O(A)]
           })]
         }))
       }

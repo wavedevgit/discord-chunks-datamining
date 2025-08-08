@@ -156,8 +156,7 @@ let I = e => {
         case o.z.IMMERSIVE_BANNER:
           l = (0, r.jsx)(E.Z, {
             immersiveBannerBlock: e,
-            onVisibilityChange: e => T(!e),
-            handleTransition: n
+            onVisibilityChange: e => T(!e)
           }, t);
           break;
         default:

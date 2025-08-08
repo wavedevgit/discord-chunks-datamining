@@ -1,6 +1,6 @@
 /**
   Module ID: 45620
-  Original File Name: 0d3d3533539b009a
+  Original File Name: e2c308a777dc495b
 **/
 .shopWrapper__6db1d {
     background: var(--background-base-low);
@@ -1218,6 +1218,7 @@
 }
 
 .container__4d61a {
+    align-items: center;
     display: flex;
     flex-direction: row;
     gap: 2px
@@ -2112,4 +2113,4 @@ body.shop-takeover .dropdown-item,body.shop-takeover .dropdown-item *,body.shop-
     cursor: var(--custom-cursor-pointer)
 }
 
-/*# sourceMappingURL=0d3d3533539b009a.css.map*/
+/*# sourceMappingURL=e2c308a777dc495b.css.map*/

@@ -22,13 +22,13 @@ var r = n(255367),
   S = n(131016),
   _ = n(922626),
   O = n(579346),
-  y = n(438759),
-  C = n(512070),
+  C = n(438759),
+  y = n(512070),
   P = n(305813),
   v = n(203872),
   E = n(981631),
-  N = n(474936),
-  k = n(698282),
+  k = n(474936),
+  N = n(698282),
   T = n(388032),
   D = n(584794);
 
@@ -58,17 +58,17 @@ function L(e) {
     onClose: o,
     canApply: l,
     isApplying: a
-  } = e, i = (0, h.m)(N.p9.TIER_2), s = (0, r.jsx)(d.zxk, {
+  } = e, i = (0, h.m)(k.p9.TIER_2), s = (0, r.jsx)(d.zxk, {
     variant: "secondary",
     size: "md",
     onClick: n,
     icon: d.T$Z,
     iconPosition: "start",
-    text: T.intl.string(k.default.NOGFdn)
+    text: T.intl.string(N.default.NOGFdn)
   }), c = (0, r.jsxs)("div", {
     className: D.subscriberButtonContainer,
     children: [s, (0, r.jsx)(d.ua7, {
-      text: T.intl.string(k.default.cVTpnp),
+      text: T.intl.string(N.default.cVTpnp),
       shouldShow: !l,
       children: e => {
         var n, o;
@@ -106,7 +106,7 @@ function L(e) {
         variant: "text-md/medium",
         color: "text-default",
         className: D.description,
-        children: T.intl.format(k.default.PWf0xc, {
+        children: T.intl.format(N.default.PWf0xc, {
           onClickNitro: () => {
             x.default.track(E.rMx.DISPLAY_NAME_STYLES_NITRO_CLICKED), (0, m.$)(o)
           }
@@ -119,7 +119,7 @@ function L(e) {
           section: E.jXE.DISPLAY_NAME_STYLES_MODAL_FOOTER,
           object: E.qAy.PREMIUM_UPSELL_BUTTON
         },
-        subscriptionTier: N.Si.TIER_2
+        subscriptionTier: k.Si.TIER_2
       })]
     })]
   });
@@ -131,7 +131,7 @@ function L(e) {
 }
 
 function I(e) {
-  var t, n, m, g, h, N, w, I, A, R, B;
+  var t, n, m, g, h, k, w, I, A, R, B;
   let {
     transitionState: M,
     analyticsLocations: Z,
@@ -154,7 +154,7 @@ function I(e) {
       G()
     },
     onError: e => {}
-  }), Q = z !== (null == H || null == (N = H.displayNameStyles) ? void 0 : N.fontId) || X !== (null == H || null == (w = H.displayNameStyles) ? void 0 : w.effectId) || !(0, c.E)(V, null != (B = null == H || null == (I = H.displayNameStyles) ? void 0 : I.colors) ? B : []);
+  }), Q = z !== (null == H || null == (k = H.displayNameStyles) ? void 0 : k.fontId) || X !== (null == H || null == (w = H.displayNameStyles) ? void 0 : w.effectId) || !(0, c.E)(V, null != (B = null == H || null == (I = H.displayNameStyles) ? void 0 : I.colors) ? B : []);
   return (o.useEffect(() => {}, [W]), null == H) ? null : (0, r.jsx)(f.Gt, {
     value: W,
     children: (0, r.jsx)(j.k.Provider, {
@@ -181,13 +181,13 @@ function I(e) {
               className: D.sectionHeader,
               children: (0, r.jsx)(d.X6q, {
                 variant: "heading-lg/semibold",
-                children: T.intl.string(k.default.ZPMAlZ)
+                children: T.intl.string(N.default.ZPMAlZ)
               })
-            }), (0, r.jsx)(C.Z, {
+            }), (0, r.jsx)(y.Z, {
               selectedFontId: z,
               setSelectedFontId: U,
               className: D.selectionSubSection
-            }), (0, r.jsx)(y.Z, {
+            }), (0, r.jsx)(C.Z, {
               selectedEffectId: X,
               setSelectedEffectId: e => {
                 e === a.m.GRADIENT && 1 === V.length ? q(V.concat(E.p6O)) : (0 === V.length || (0, c.E)(V, F[X].defaultColors)) && q(F[e].defaultColors), K(e)
