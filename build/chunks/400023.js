@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => ei
+  Z: () => eo
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -100,9 +100,10 @@ function z(e, t) {
   for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let q = "messagesNavigationDescription";
+let q = "messagesNavigationDescription",
+  X = (0, s.animated)(u.eTT);
 
-function X(e) {
+function Q(e) {
   let t = i.useCallback(() => {
       var t;
       return null == (t = e.current) ? void 0 : t.scrollToBottom()
@@ -131,11 +132,11 @@ function X(e) {
   })
 }
 
-function Q(e) {
+function J(e) {
   return (0, c.e7)([y.Z], () => C.Z.can(B.Plq.READ_MESSAGE_HISTORY, e) ? null : y.Z.getViewingRolesTimestamp(e.getGuildId()))
 }
 
-function J(e) {
+function $(e) {
   var t, n;
   let {
     className: o,
@@ -195,12 +196,12 @@ function J(e) {
         animate: !p.Z.useReducedMotion
       })
     } else d.Z.jumpToPresent(h.id, B.AQB)
-  }, J = Q(h), {
-    channelStreamMarkup: $,
-    newMessagesBar: ee,
-    jumpToPresentBar: et,
-    forumPostActionBar: en,
-    safetyWarningBanner: er
+  }, $ = J(h), {
+    channelStreamMarkup: ee,
+    newMessagesBar: et,
+    jumpToPresentBar: en,
+    forumPostActionBar: er,
+    safetyWarningBanner: ei
   } = (0, G.Z)({
     channel: h,
     messages: m,
@@ -212,26 +213,26 @@ function J(e) {
     loadMore: V.loadMore,
     scrollManager: V,
     specs: k,
-    filterAfterTimestamp: null != N ? N : J,
+    filterAfterTimestamp: null != N ? N : $,
     showingQuarantineBanner: C,
     hideSummaries: R,
     jumpToPresent: z,
     jumpBarClassName: P
   });
-  X(V.ref);
-  let ei = (0, u.mFp)(),
-    eo = (0, l.l2)(Y),
+  Q(V.ref);
+  let eo = (0, u.mFp)(),
+    ea = (0, l.l2)(Y),
     {
-      ref: ea
-    } = eo,
-    es = K(eo, ["ref"]),
-    el = (0, _.Z)(e => {
+      ref: es
+    } = ea,
+    el = K(ea, ["ref"]),
+    ec = (0, _.Z)(e => {
       var t;
-      V.ref.current = e, ea.current = null != (t = null == e ? void 0 : e.getScrollerNode()) ? t : null
+      V.ref.current = e, es.current = null != (t = null == e ? void 0 : e.getScrollerNode()) ? t : null
     }),
     {
-      fadeStart: ec,
-      fadeEnd: eu
+      fadeStart: eu,
+      fadeEnd: ed
     } = (0, u.q_F)({
       fadeStart: w && !L ? 96 : w ? 32 : 16,
       fadeEnd: w && !L ? 24 : 24 * !!w,
@@ -243,13 +244,13 @@ function J(e) {
     });
   return (0, r.jsxs)(l.bG, {
     navigator: Y,
-    children: [null != er && er, (0, r.jsxs)(s.animated.div, {
+    children: [null != ei && ei, (0, r.jsxs)("div", {
       className: a()(F.messagesWrapper, o, "group-spacing-".concat(c)),
-      style: D ? {
-        mask: (0, s.to)([ec, eu], (e, t) => "linear-gradient(180deg, black 0%, black calc(100% - ".concat(e, "px), rgba(0,0,0,0) calc(100% - ").concat(t, "px), rgba(0,0,0,0) 100%)"))
-      } : void 0,
-      children: [null == er && ee, (0, r.jsxs)(u.eTT, W(H({
-        ref: el,
+      children: [null == ei && et, (0, r.jsxs)(X, W(H({
+        style: D ? {
+          mask: (0, s.to)([eu, ed], (e, t) => "linear-gradient(180deg, black 0%, black calc(100% - ".concat(e, "px), rgba(0,0,0,0) calc(100% - ").concat(t, "px), rgba(0,0,0,0) 100%)"))
+        } : void 0,
+        ref: ec,
         customTheme: !0,
         className: a()(f, F.scroller),
         contentClassName: F.scrollerContent,
@@ -257,23 +258,23 @@ function J(e) {
         onScroll: V.handleScroll,
         onMouseDown: V.handleMouseDown,
         onMouseUp: V.handleMouseUp
-      }, ei), {
+      }, eo), {
         tabIndex: -1,
         role: "group",
-        children: [en, (0, r.jsxs)("ol", W(H({
+        children: [er, (0, r.jsxs)("ol", W(H({
           className: a()(F.scrollerInner, {
             [F.scrollerAllowSticky]: h.isModeratorReportChannel()
           }),
           "aria-label": Z.intl.formatToPlainString(Z.t.XarRiI, {
             channelName: h.name
           })
-        }, es), {
+        }, el), {
           children: [(0, r.jsx)("span", {
             className: F.navigationDescription,
             id: q,
             "aria-hidden": !0,
             children: Z.intl.string(Z.t.Spb3s7)
-          }), $, (0, r.jsx)("div", {
+          }), ee, (0, r.jsx)("div", {
             className: a()({
               [F.scrollerSpacer]: !C,
               [F.empty]: 0 === m.length && !m.loadingMore,
@@ -281,13 +282,13 @@ function J(e) {
             })
           })]
         }))]
-      })), et]
+      })), en]
     })]
   })
 }
-let $ = i.memo(J, (e, t) => null != e.isHidden && null != t.isHidden && e.isHidden && t.isHidden);
+let ee = i.memo($, (e, t) => null != e.isHidden && null != t.isHidden && e.isHidden && t.isHidden);
 
-function ee(e) {
+function et(e) {
   var t, n;
   let r = (0, c.e7)([N.Z], () => N.Z.getMessages(e.id), [e.id]),
     o = (0, c.e7)([R.ZP], () => {
@@ -309,7 +310,7 @@ function ee(e) {
       return l && u && null != (t = O.Z.summaries(e.id)) ? t : []
     }, [l, e.id, u]),
     _ = (0, c.e7)([O.Z], () => l ? O.Z.selectedSummary(e.id) : null, [l, e.id]),
-    p = et(r);
+    p = en(r);
   (0, h.Z)(r, e);
   let m = i.useMemo(() => (0, x.Z)({
     channel: e,
@@ -330,7 +331,7 @@ function ee(e) {
   }
 }
 
-function et(e) {
+function en(e) {
   let t = i.useMemo(() => {
     let t = new Set;
     return e.forEach(e => {
@@ -340,7 +341,7 @@ function et(e) {
   return (0, m.Z)(t)
 }
 
-function en() {
+function er() {
   let e = v.jU.useSetting(),
     t = v.cC.useSetting(),
     {
@@ -368,7 +369,7 @@ function en() {
   }
 }
 
-function er(e) {
+function ei(e) {
   let t = e.getGuildId(),
     n = (0, c.e7)([A.Z], () => null == t || A.Z.canChatInGuild(t), [t]),
     {
@@ -384,7 +385,7 @@ function er(e) {
     canManageMessages: r
   }
 }
-let ei = i.memo(function(e) {
+let eo = i.memo(function(e) {
   var {
     channel: t,
     showingQuarantineBanner: n,
@@ -398,22 +399,22 @@ let ei = i.memo(function(e) {
     canManageMessages: d,
     permissionVersion: f,
     canChat: _
-  } = er(t), {
+  } = ei(t), {
     messageGroupSpacing: p,
     fontSize: h,
     messageDisplayCompact: m,
     renderSpoilers: E,
     keyboardModeEnabled: b
-  } = en(), {
+  } = er(), {
     messages: y,
     channelStream: O,
     oldestUnreadMessageId: v,
     editingMessageId: I
-  } = ee(t);
+  } = et(t);
   return (0, r.jsx)(g.aQ.Provider, {
     value: (0, L.Z)(E, d),
     children: (0, r.jsx)(k.v, {
-      children: (0, r.jsx)($, W(H({}, u), {
+      children: (0, r.jsx)(ee, W(H({}, u), {
         messageGroupSpacing: p,
         showNewMessagesBar: !0,
         channel: t,

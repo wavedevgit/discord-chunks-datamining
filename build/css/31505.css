@@ -1,6 +1,6 @@
 /**
   Module ID: 31505
-  Original File Name: 344ac8ae4658eb7a
+  Original File Name: 72c9d4cdad781523
 **/
 .animationContainer__884d1,.container__884d1 {
     position: relative;
@@ -69,8 +69,15 @@
     font-weight: 900;
     letter-spacing: -.76px;
     line-height: 100%;
+    overflow-wrap: anywhere;
+    padding: 0 var(--space-16);
     text-align: center;
-    text-transform: uppercase
+    text-transform: uppercase;
+    word-break: break-word
+}
+
+.textContainer__75558 {
+    min-height: 40px
 }
 
 .nameplatePreviewContainer__75558 {
@@ -1029,4 +1036,4 @@
     flex-direction: row-reverse
 }
 
-/*# sourceMappingURL=344ac8ae4658eb7a.css.map*/
+/*# sourceMappingURL=72c9d4cdad781523.css.map*/

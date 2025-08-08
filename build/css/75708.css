@@ -1,6 +1,6 @@
 /**
   Module ID: 75708
-  Original File Name: c405661513139846
+  Original File Name: 098e3eba949c870b
 **/
 .phoneFieldPopout__61a01 {
     height: 240px;
@@ -1527,8 +1527,13 @@ h1.title_feb59c,h2.title_feb59c {
     margin-top: -8px
 }
 
-.asset_e15fb1 {
+.asset_e15fb1,.betaTag_e15fb1 {
     margin: 0 auto
+}
+
+.betaTag_e15fb1 {
+    background: linear-gradient(90deg,#9b1da5,#1e2353);
+    display: inline-flex
 }
 
 .container_cdb3b1 {
@@ -19992,4 +19997,4 @@ html .invoiceCancelRow__968a4 {
     overflow: visible
 }
 
-/*# sourceMappingURL=c405661513139846.css.map*/
+/*# sourceMappingURL=098e3eba949c870b.css.map*/

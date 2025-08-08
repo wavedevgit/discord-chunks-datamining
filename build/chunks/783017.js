@@ -64,7 +64,10 @@ let Z = t => {
           className: M.nameplatePreview,
           nameplatePreviewSize: "large"
         })]
-      }), n, !H && (0, i.jsx)("div", {
+      }), (0, i.jsx)("div", {
+        className: M.textContainer,
+        children: n
+      }), !H && (0, i.jsx)("div", {
         className: M.footer,
         children: (0, i.jsx)(r.z, {
           variant: "expressive",
