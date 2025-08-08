@@ -119,11 +119,11 @@ let g = {
           rotation: f,
           size: b,
           skuId: h
-        } = e, _ = null == (l = m[t]) ? void 0 : l.items[0], v = null == (a = m[t]) ? void 0 : a.type, C = v === o.Z.AVATAR_DECORATION ? 384 : 512;
+        } = e, _ = null == (l = m[t]) ? void 0 : l.items[0], v = null == (a = m[t]) ? void 0 : a.type, O = v === o.Z.AVATAR_DECORATION ? 384 : 512;
         return (0, r.jsxs)("div", {
           className: p.asset,
           style: {
-            top: n ? -g - C : i,
+            top: n ? -g - O : i,
             left: n ? "".concat(c - 75 - 350 * Math.random()) : c,
             transform: "rotate(".concat(f, "deg)"),
             height: b.y,

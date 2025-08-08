@@ -20,8 +20,8 @@ var r = n(255367),
   m = n(38900),
   _ = n(709999),
   v = n(81136),
-  C = n(501638),
-  O = n(981631),
+  O = n(501638),
+  C = n(981631),
   E = n(538314);
 
 function S(e) {
@@ -38,8 +38,8 @@ function S(e) {
     skus: k,
     currentPage: I,
     totalCount: N,
-    isFetchingResults: A
-  } = (0, b.a)(), w = (0, o.Wu)([p.Z], () => p.Z.getProductsBySkus(k)), B = l.useCallback(() => {
+    isFetchingResults: w
+  } = (0, b.a)(), A = (0, o.Wu)([p.Z], () => p.Z.getProductsBySkus(k)), B = l.useCallback(() => {
     var e;
     null == S || null == (e = S.current) || e.scrollToTop({
       animate: !0
@@ -49,7 +49,7 @@ function S(e) {
     B()
   }, [R, B]);
   let Z = (0, g.a)(),
-    D = l.useMemo(() => Z(w), [Z, w]);
+    D = l.useMemo(() => Z(A), [Z, A]);
   l.useEffect(() => {
     n || (0, h.n)({
       sessionId: j,
@@ -67,7 +67,7 @@ function S(e) {
       queryPageSize: W
     } = (0, f.S)(),
     [V, U] = l.useState(!1),
-    z = n || A || null == L;
+    z = n || w || null == L;
   l.useEffect(() => {
     if (z) return void U(!1);
     D.length > 0 && U(!0)
@@ -80,7 +80,7 @@ function S(e) {
     if (null != F.current) return e.observe(F.current), () => e.disconnect()
   }, [M]);
   let q = l.useCallback(e => {
-    u.default.track(O.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+    u.default.track(C.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
       collectibles_shop_session_id: null == x ? void 0 : x.sessionId,
       page_section: null == x ? void 0 : x.pageSection,
       page_category: null == x ? void 0 : x.pageCategory,
@@ -95,7 +95,7 @@ function S(e) {
       className: i()({
         [E.productsEmpty]: G
       }),
-      children: [G && (0, r.jsx)(C.Z, {}), (0, r.jsxs)("div", {
+      children: [G && (0, r.jsx)(O.Z, {}), (0, r.jsxs)("div", {
         className: i()(E.products, {
           [E.loadIn]: V
         }),

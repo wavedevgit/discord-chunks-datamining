@@ -56,7 +56,7 @@ function T(e) {
     channelId: A,
     messageId: w,
     roleId: C
-  }), K = (0, P.Z)(t);
+  }), z = (0, P.Z)(t);
   return (0, r.jsx)(a.Gt, {
     value: W,
     children: (0, r.jsx)(d.Mt, {
@@ -153,7 +153,7 @@ function T(e) {
                 currentUser: n,
                 displayProfile: F,
                 guildId: U,
-                items: K,
+                items: z,
                 initialSection: null != L ? L : E.oh.BOT_INFO,
                 initialSubsection: M,
                 onClose: k

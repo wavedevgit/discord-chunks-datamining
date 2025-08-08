@@ -68,7 +68,7 @@ function u(e) {
       e.length > 0 && o.Z.getDetectableGamesSupplemental(e)
     }
   }, [t]);
-  let n = (0, i.e7)([a.Z], () => {
+  let n = (0, i.cj)([a.Z], () => {
     let e = {};
     return t.forEach(t => {
       e[t] = a.Z.getGame(t)

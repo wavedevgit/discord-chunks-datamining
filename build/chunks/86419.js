@@ -54,7 +54,7 @@ function x() {
   return {
     applicationId: m(n.length > 0 ? n : c.J6),
     comment: Math.random() > .5 ? m(o.x) : void 0,
-    tags: Math.random() > .3 ? (e = o.T, t = Math.floor(3 * Math.random()) + 1, [...e].sort(() => .5 - Math.random()).slice(0, t)) : void 0
+    tags: Math.random() > .3 ? (e = o.T, t = Math.floor(Math.random() * o.T.length) + 1, [...e].sort(() => .5 - Math.random()).slice(0, t)) : void 0
   }
 }
 

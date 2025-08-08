@@ -1,7 +1,7 @@
 /** Chunk was on 11776 **/
 n.d(t, {
-  Z: () => f
-}), n(361932), n(187205), n(49124), n(388685), n(539854);
+  Z: () => u
+}), n(388685);
 var r = n(255367),
   l = n(73800),
   i = n(481060),
@@ -10,103 +10,93 @@ var r = n(255367),
   c = n(286957),
   s = n(388032),
   d = n(300695);
-let u = e => {
-  if (null == e) return 0;
-  let {
-    width: t
-  } = e.getBoundingClientRect();
-  return t > 0 ? t + 4 : 0
-};
 
-function f(e) {
+function u(e) {
   let {
     tags: t
-  } = e, n = l.useRef({}), f = (e, t) => {
-    null != t ? n.current[e] = t : delete n.current[e]
-  }, p = l.useMemo(() => null == t || 0 === t.length ? [] : t.flatMap(e => {
-    let t = (0, c.z)(e);
-    return null != t ? [{
-      tag: e,
-      metadata: t
-    }] : []
-  }), [JSON.stringify(t)]), [m, g] = l.useState([]), [b, h] = l.useState(296), [j, y] = l.useState(!1), x = l.useRef(null), v = l.useRef(0);
-  l.useLayoutEffect(() => {
-    v.current = 0
-  }, [JSON.stringify(t)]);
-  let O = l.useRef(null);
-  l.useLayoutEffect(() => {
-    if (j || null == O.current) return;
-    let e = new ResizeObserver(() => {
-      let e = u(x.current),
-        t = [],
-        r = 296 - e;
-      for (let e = 0; e < 2; e++) {
-        let l = 1 === e ? r : 296;
-        for (let e = 0, r = t.length; r < p.length; r++) {
-          let i = p[r],
-            o = n.current[i.tag];
-          if (null == o) {
-            0 === v.current && t.push(i);
-            continue
-          }
-          let a = Math.min(o.getBoundingClientRect().width, l);
-          if (e + a > l) break;
-          e += a + 4, t.push(i)
-        }
-      }
-      g(t.length === m.length ? m : t), h(r), v.current++
-    });
-    return e.observe(O.current), () => {
-      e.disconnect()
-    }
-  }, [p, m, j]);
-  let {
-    trackUserProfileAction: _
-  } = (0, a.KZ)(), I = l.useCallback(() => {
-    y(!0), _({
-      action: "EXPAND_GAME_TAGS"
-    })
-  }, [_]), P = l.useCallback(() => {
-    y(!1), _({
-      action: "COLLAPSE_GAME_TAGS"
-    })
-  }, [_]);
-  if (0 === p.length) return null;
-  let E = j ? p : m;
+  } = e, n = null == t ? void 0 : t.filter(e => null != (0, c.z)(e)), i = (0, l.useRef)(new Map), o = (0, l.useRef)(null), [s, u] = (0, l.useState)(0), [b, h] = (0, l.useState)(!1), {
+    trackUserProfileAction: j
+  } = (0, a.KZ)(), y = g(o, n, i, u);
+  if ((0, l.useEffect)(() => (y(), window.addEventListener("resize", y), () => {
+      window.removeEventListener("resize", y)
+    }), [y, null == n ? void 0 : n.join("")]), null == n || 0 === n.length) return null;
+  let x = b ? n : n.slice(0, n.length - s);
   return (0, r.jsxs)("div", {
     className: d.tagListContainer,
-    children: [(0, r.jsx)("ul", {
-      ref: O,
-      className: d.tagList,
-      "aria-label": "Game Tags",
-      children: E.map((e, t) => {
-        let {
-          tag: n,
-          metadata: l
-        } = e, {
-          text: o,
-          icon: a
-        } = l;
-        return (0, r.jsxs)("li", {
-          className: d.tag,
-          ref: e => f(n, e),
-          style: {
-            maxWidth: j || t !== m.length - 1 ? 296 : b
-          },
-          children: [(0, r.jsx)(a, {
-            size: "xxs"
-          }), (0, r.jsx)(i.Text, {
-            variant: "text-xxs/medium",
-            color: "text-secondary",
-            children: o
-          })]
-        }, n)
+    children: [x.map(e => (0, r.jsx)(f, {
+      tag: e,
+      ref: t => {
+        null != t && i.current.set(e, t)
+      }
+    }, e)), s > 0 && (b ? (0, r.jsx)(m, {
+      onClick: () => {
+        h(!1), j({
+          action: "COLLAPSE_GAME_TAGS"
+        })
+      }
+    }) : (0, r.jsx)(p, {
+      numHidden: s,
+      onClick: () => {
+        h(!0), j({
+          action: "EXPAND_GAME_TAGS"
+        })
+      },
+      ref: o
+    }))]
+  })
+}
+let f = e => {
+    let {
+      tag: t,
+      ref: n
+    } = e, l = (0, c.z)(t);
+    if (null == l) return null;
+    let {
+      text: o,
+      icon: a
+    } = l;
+    return (0, r.jsxs)("div", {
+      className: d.tag,
+      ref: n,
+      children: [(0, r.jsx)(a, {
+        size: "xxs"
+      }), (0, r.jsx)(i.Text, {
+        variant: "text-xxs/medium",
+        color: "text-secondary",
+        children: o
+      })]
+    })
+  },
+  p = e => {
+    let {
+      numHidden: t,
+      onClick: n,
+      ref: l
+    } = e;
+    return (0, r.jsx)(i.DY3, {
+      className: d.buttonContainer,
+      text: s.intl.string(s.t.mriLXF),
+      children: (0, r.jsx)(i.P3F, {
+        onClick: n,
+        className: d.expandButton,
+        innerRef: l,
+        children: (0, r.jsx)(i.Text, {
+          variant: "text-xxs/medium",
+          color: "text-secondary",
+          children: "+".concat(t)
+        })
       })
-    }), m.length < p.length ? j ? (0, r.jsx)(i.DY3, {
+    })
+  },
+  m = e => {
+    let {
+      onClick: t
+    } = e;
+    return (0, r.jsx)(i.DY3, {
       className: d.buttonContainer,
       text: s.intl.string(s.t.z9VPra),
       children: (0, r.jsx)(i.P3F, {
-        onClick: P,
+        onClick: t,
         className: d.collapseButton,
         children: (0, r.jsx)(o.Z, {
           direction: o.Z.Directions.LEFT,
@@ -115,19 +105,29 @@ function f(e) {
           className: d.caret
         })
       })
-    }) : (0, r.jsx)(i.DY3, {
-      className: d.buttonContainer,
-      text: s.intl.string(s.t.mriLXF),
-      children: (0, r.jsx)(i.P3F, {
-        innerRef: x,
-        onClick: I,
-        className: d.expandButton,
-        children: (0, r.jsx)(i.Text, {
-          variant: "text-xxs/medium",
-          color: "text-secondary",
-          children: "+".concat(p.length - m.length)
-        })
-      })
-    }) : null]
-  })
-}
+    })
+  },
+  g = (e, t, n, r) => (0, l.useCallback)(() => {
+    var l, i;
+    if (null == t) return void r(0);
+    let o = null != (i = null == (l = e.current) ? void 0 : l.getBoundingClientRect().width) ? i : 0,
+      a = 0,
+      c = 0,
+      s = n.current;
+    for (let e = 0; e < t.length; e++) {
+      let n = s.get(t[e]);
+      if (null != n) {
+        if ((c += n.offsetWidth + 4) > 296) break;
+        a++
+      }
+    }
+    c = 0;
+    for (let e = a; e < t.length; e++) {
+      let n = s.get(t[e]);
+      if (null != n) {
+        if ((c += n.offsetWidth + 4) > 296 - o) break;
+        a++
+      }
+    }
+    r(t.length - a)
+  }, [e, null == t ? void 0 : t.join(""), n, r])

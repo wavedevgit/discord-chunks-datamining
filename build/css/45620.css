@@ -1,6 +1,6 @@
 /**
   Module ID: 45620
-  Original File Name: 8281784b53dfc847
+  Original File Name: 36c9d214dcb9708d
 **/
 .shopWrapper__6db1d {
     background: var(--background-base-low);
@@ -1939,6 +1939,11 @@
     line-height: 1
 }
 
+.learnMoreLink__43ce9 {
+    color: var(--text-default);
+    font-weight: var(--font-weight-bold)
+}
+
 .jumbleWrapper__014df {
     --custom-guild-gutter: 72px;
     --custom-channel-gutter: 240px;
@@ -2113,4 +2118,4 @@
     cursor: pointer
 }
 
-/*# sourceMappingURL=8281784b53dfc847.css.map*/
+/*# sourceMappingURL=36c9d214dcb9708d.css.map*/

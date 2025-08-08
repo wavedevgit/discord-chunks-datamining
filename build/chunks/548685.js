@@ -20,8 +20,8 @@ var r = n(255367),
   m = n(597688),
   _ = n(675997),
   v = n(243126),
-  C = n(38900),
-  O = n(709999),
+  O = n(38900),
+  C = n(709999),
   E = n(328626),
   S = n(619899),
   y = n(981631),
@@ -37,8 +37,8 @@ let P = e => {
     numVisibleItems: L,
     hasSorting: k,
     tab: I
-  } = e, N = (0, o.e7)([d.default], () => d.default.getCurrentUser()), A = b.ZP.canUseCollectibles(N), {
-    enableShopTakeOver: w
+  } = e, N = (0, o.e7)([d.default], () => d.default.getCurrentUser()), w = b.ZP.canUseCollectibles(N), {
+    enableShopTakeOver: A
   } = _.Z.useConfig({
     location: "FeedBlock"
   }), {
@@ -48,7 +48,7 @@ let P = e => {
     sortOptions: D,
     shuffleProducts: F,
     showRecommendationOption: M
-  } = (0, v.N)(P, A), H = (0, S.St)(Z), W = (0, o.e7)([u.Z], () => u.Z.useReducedMotion), V = (0, o.e7)([p.Z], () => p.Z.isFocused()), U = !W && V, {
+  } = (0, v.N)(P, w), H = (0, S.St)(Z), W = (0, o.e7)([u.Z], () => u.Z.useReducedMotion), V = (0, o.e7)([p.Z], () => p.Z.isFocused()), U = !W && V, {
     animationPhase: z,
     startAnimation: G
   } = (0, E.y)(), q = (0, h.sp)(), K = null != (t = null == q ? void 0 : q.sessionId) ? t : "", Y = l.useRef(null), X = l.useCallback(e => {
@@ -112,7 +112,7 @@ let P = e => {
         })]
       }), k ? (0, r.jsxs)("div", {
         className: i()(T.headerRight, {
-          [j.shopTakeOver]: w
+          [j.shopTakeOver]: A
         }),
         children: [(0, r.jsx)(s.Text, {
           variant: "text-md/medium",
@@ -124,7 +124,7 @@ let P = e => {
           isSelected: e => e === B,
           serialize: e => e,
           popoutClassName: i()({
-            [j.shopTakeOver]: w
+            [j.shopTakeOver]: A
           })
         }), (0, r.jsx)(s.zxk, {
           variant: "secondary",
@@ -145,7 +145,7 @@ let P = e => {
     }), (0, r.jsx)("div", {
       className: T.feed,
       children: n ? (0, r.jsx)(r.Fragment, {
-        children: [...Array(12)].map((e, t) => (0, r.jsx)(C.K, {}, t + 1))
+        children: [...Array(12)].map((e, t) => (0, r.jsx)(O.K, {}, t + 1))
       }) : H.slice(0, L).map((e, t) => {
         let n, l = m.Z.getCategoryForProduct(e.skuId);
         if (null == e || null == l) return null;
@@ -160,7 +160,7 @@ let P = e => {
             pageSection: "popular picks",
             categoryPosition: 2
           },
-          children: (0, r.jsx)(O.Z, {
+          children: (0, r.jsx)(C.Z, {
             product: e,
             category: l,
             user: N,

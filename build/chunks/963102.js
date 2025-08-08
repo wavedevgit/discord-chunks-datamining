@@ -20,8 +20,8 @@ var r = n(255367),
   m = n(507808),
   _ = n(822857),
   v = n(775451),
-  C = n(594174),
-  O = n(471731),
+  O = n(594174),
+  C = n(471731),
   E = n(335131),
   S = n(870289),
   y = n(304742),
@@ -146,8 +146,8 @@ function N(e) {
     onClose: a,
     selectedTab: g,
     handleTransition: f
-  } = e, y = (0, p.ZP)(), N = (0, s.e7)([C.default], () => C.default.getCurrentUser()), A = (null == N ? void 0 : N.isStaff()) || (null == N ? void 0 : N.isStaffPersonal()) || !1, {
-    enabled: w
+  } = e, y = (0, p.ZP)(), N = (0, s.e7)([O.default], () => O.default.getCurrentUser()), w = (null == N ? void 0 : N.isStaff()) || (null == N ? void 0 : N.isStaffPersonal()) || !1, {
+    enabled: A
   } = (0, _.WX)({
     location: "collectibles_shop_header_bar"
   }), B = [{
@@ -157,7 +157,7 @@ function N(e) {
     tab: j.AW.CATALOG,
     displayText: P.intl.string(P.t.Ah5sJi)
   }];
-  w && B.push({
+  A && B.push({
     tab: j.AW.ORBS,
     displayText: P.intl.string(P.t.EBYkzs)
   });
@@ -180,13 +180,13 @@ function N(e) {
       className: i()(e, L.headerBar, {
         [L.fullscreenHeaderBar]: t
       }),
-      innerClassname: w ? L.headerBarInner : void 0,
-      toolbar: t || !A ? null : (0, r.jsx)(l.Fragment, {}),
+      innerClassname: A ? L.headerBarInner : void 0,
+      toolbar: t || !w ? null : (0, r.jsx)(l.Fragment, {}),
       children: [(0, r.jsxs)(c.P3F, {
         className: L.shopHomeLink,
         onClick: () => f(j.AW.HOME),
         "aria-label": P.intl.string(P.t.pWG4zc) + " home",
-        children: [(0, r.jsx)(O.Z, {
+        children: [(0, r.jsx)(C.Z, {
           className: L.discordLogo
         }), (0, r.jsx)(b.Z.Title, {
           children: P.intl.string(P.t.pWG4zc)
@@ -210,12 +210,12 @@ function N(e) {
             handleTransition: f
           }, t)
         })
-      }), (w || t || F) && (0, r.jsxs)("div", {
+      }), (A || t || F) && (0, r.jsxs)("div", {
         className: L.alignedRightContent,
         children: [F && (0, r.jsx)(x.Z, {
           handleTransition: f,
           selectedTab: g
-        }), w && (0, r.jsx)(v.V9, {
+        }), A && (0, r.jsx)(v.V9, {
           anchorPillType: t ? "SHOP_FULLSCREEN" : "SHOP",
           analyticsPage: Z,
           cardAlignment: v.V9.CardAlignment.END,

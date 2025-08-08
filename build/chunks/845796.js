@@ -28,7 +28,7 @@ let v = () => {
     enableShopTakeOver: v
   } = p.Z.useConfig({
     location: "CollectiblesSortSelect"
-  }), C = n(), O = l.useMemo(() => f.aP.filter(e => e.sortType !== s.E.RELEVANCE || C), [C]), E = l.useCallback(e => {
+  }), O = n(), C = l.useMemo(() => f.aP.filter(e => e.sortType !== s.E.RELEVANCE || O), [O]), E = l.useCallback(e => {
     let {
       sortType: t,
       sortDirection: n
@@ -89,7 +89,7 @@ let v = () => {
     children: (0, r.jsx)(c.PhF, {
       look: c.qQH.CUSTOM,
       className: m.custom,
-      options: O.map(E),
+      options: C.map(E),
       select: y,
       isSelected: e => e === x.value,
       serialize: e => e,

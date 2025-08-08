@@ -21,23 +21,23 @@ var r = n(255367),
 let _ = e => {
   var t, n, a, _;
   let v, {
-    category: C,
-    subblock: O,
+    category: O,
+    subblock: C,
     badgeText: E,
     handleTransition: S
   } = e;
-  null != O && (v = null == (t = p.Z.getCategoryByStoreListingId(null == O ? void 0 : O.categoryStoreListingId)) ? void 0 : t.skuId);
-  let y = null != (n = null != v ? v : null == C ? void 0 : C.skuId) ? n : "",
+  null != C && (v = null == (t = p.Z.getCategoryByStoreListingId(null == C ? void 0 : C.categoryStoreListingId)) ? void 0 : t.skuId);
+  let y = null != (n = null != v ? v : null == O ? void 0 : O.skuId) ? n : "",
     {
       handleCardVisibilityChange: x
     } = (0, g.E)(y, "home", "marketing featured block"),
     {
       featuredBlockBanner: j
-    } = (0, f.YG)(C, O),
+    } = (0, f.YG)(O, C),
     T = l.useRef(null),
     P = y === o.T.NAMEPLATES_V3,
     L = P ? "NAMEPLATES VOL.3" : null,
-    k = null == O ? void 0 : O.bodyText,
+    k = null == C ? void 0 : C.bodyText,
     I = (0, d.sp)();
   return (0, r.jsx)(s.$, {
     innerRef: T,
@@ -73,7 +73,7 @@ let _ = e => {
             [m.featuredBlockTitleTextNameplate]: P
           }),
           style: {
-            color: null != (a = null == O ? void 0 : O.bannerTextColor) ? a : "white"
+            color: null != (a = null == C ? void 0 : C.bannerTextColor) ? a : "white"
           },
           variant: "heading-xl/semibold",
           children: L
@@ -81,7 +81,7 @@ let _ = e => {
           lineClamp: null != L ? 2 : 4,
           className: m.featuredBlockBodyText,
           style: {
-            color: null != (_ = null == O ? void 0 : O.bannerTextColor) ? _ : "white"
+            color: null != (_ = null == C ? void 0 : C.bannerTextColor) ? _ : "white"
           },
           variant: "heading-md/medium",
           children: k

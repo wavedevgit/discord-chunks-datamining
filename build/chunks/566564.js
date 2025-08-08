@@ -20,8 +20,8 @@ var r = n(255367),
   m = n(81136),
   _ = n(302933),
   v = n(953655),
-  C = n(548685),
-  O = n(580914),
+  O = n(548685),
+  C = n(580914),
   E = n(92589),
   S = n(963278),
   y = n(921120),
@@ -54,8 +54,8 @@ let k = e => {
     }, [c]);
     let {
       isFetchingShopHome: N,
-      fetchShopHomeError: A,
-      shopBlocks: w,
+      fetchShopHomeError: w,
+      shopBlocks: A,
       refreshShopHome: B
     } = (0, g.E)(c, {
       noCache: p,
@@ -70,7 +70,7 @@ let k = e => {
       B()
     }, [B]);
     if (l.useEffect(() => {
-        null != A || N || 0 === w.length || (0, f.n)({
+        null != w || N || 0 === A.length || (0, f.n)({
           sessionId: I,
           checkpoint: f.a.SHOP_RENDERED,
           tab: c,
@@ -78,14 +78,14 @@ let k = e => {
           unpublishedCategoriesShown: h,
           cacheDisabled: p
         })
-      }, [A, N, w.length, h, p, I, c, u]), null != A) return (0, r.jsx)(b.Z, {
+      }, [w, N, A.length, h, p, I, c, u]), null != w) return (0, r.jsx)(b.Z, {
       onRetry: R,
       errorOrigin: b.i.SHOP_PAGE,
-      errorMessage: A.message
+      errorMessage: w.message
     });
-    if (N || 0 === w.length) return (0, r.jsxs)("div", {
+    if (N || 0 === A.length) return (0, r.jsxs)("div", {
       className: i()(L.loadingContainer, L.feedContent),
-      children: [(0, r.jsx)(O.Z, {
+      children: [(0, r.jsx)(C.Z, {
         isLoading: N,
         handleTransition: n,
         tab: c
@@ -93,7 +93,7 @@ let k = e => {
         isLoading: N,
         handleTransition: n,
         categories: []
-      }), (0, r.jsx)(C.Z, {
+      }), (0, r.jsx)(O.Z, {
         isLoading: N,
         title: c === j.AW.ORBS ? P.intl.string(P.t.dFgeub) : P.intl.string(P.t.NSv5KS),
         numVisibleItems: a,
@@ -107,7 +107,7 @@ let k = e => {
         d = !1;
       switch (e.type) {
         case o.z.HERO:
-          l = (0, r.jsx)(O.Z, {
+          l = (0, r.jsx)(C.Z, {
             isLoading: N,
             handleTransition: n,
             heroBlock: e,
@@ -123,7 +123,7 @@ let k = e => {
           break;
         case o.z.FEED:
           let p = e.sortedSkuIds;
-          l = (0, r.jsx)(C.Z, {
+          l = (0, r.jsx)(O.Z, {
             title: c === j.AW.ORBS ? P.intl.string(P.t.dFgeub) : P.intl.string(P.t.NSv5KS),
             isLoading: N || s,
             numVisibleItems: a,
@@ -170,7 +170,7 @@ let k = e => {
       }, t)
     };
     return (0, r.jsx)(r.Fragment, {
-      children: w.map((e, t) => Z(e, t))
+      children: A.map((e, t) => Z(e, t))
     })
   },
   I = e => {
@@ -181,20 +181,20 @@ let k = e => {
       transitionState: i
     } = e, o = l.useRef(null), {
       handleScroll: g
-    } = (0, c.z)(o, a), f = (0, p.R)("CollectiblesFeedShop"), b = (0, h.R)(), m = (0, d.sp)(), [_, v] = l.useState(j.IV), [C, O] = l.useState(!1);
+    } = (0, c.z)(o, a), f = (0, p.R)("CollectiblesFeedShop"), b = (0, h.R)(), m = (0, d.sp)(), [_, v] = l.useState(j.IV), [O, C] = l.useState(!1);
     return l.useEffect(() => {
       if (null != o.current) {
         let e = () => {
             if (null == o.current) return;
             let e = o.current.getDistanceFromBottom();
-            _ >= f ? O(e < 20) : e <= 200 && v(e => e + j.IV)
+            _ >= f ? C(e < 20) : e <= 200 && v(e => e + j.IV)
           },
           t = o.current.getScrollerNode();
         return null == t || t.addEventListener("scroll", e), () => {
           null == t || t.removeEventListener("scroll", e)
         }
       }
-    }, [o, _, f, v, O]), (0, r.jsx)(s.Den, {
+    }, [o, _, f, v, C]), (0, r.jsx)(s.Den, {
       className: L.shopScroll,
       ref: o,
       onScroll: g,
@@ -229,13 +229,13 @@ let k = e => {
           })]
         }), !t && (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(y.Z, {
-            peaking: C,
+            peaking: O,
             transitioning: i === j.f7.OUT
           }), (0, r.jsx)(y.Z, {
             style: {
               left: 1850
             },
-            peaking: C,
+            peaking: O,
             transitioning: i === j.f7.OUT
           })]
         })]

@@ -214,7 +214,7 @@ let f = {
       })
     }
   }))),
-  C = e => {
+  O = e => {
     let {
       itemTypeFilters: t,
       colorFilters: n,
@@ -237,7 +237,7 @@ let f = {
       search: "" !== i ? i : void 0
     }
   },
-  O = e => {
+  C = e => {
     let t = e.skus,
       n = e.pagination.total,
       r = e.pagination.has_more;
@@ -261,7 +261,7 @@ let f = {
           n(!0);
           try {
             let t = await (0, s.y)(r);
-            e(O(t))
+            e(C(t))
           } catch (e) {
             var l;
             t(null != (l = null == e ? void 0 : e.message) ? l : "Unknown error")
@@ -271,8 +271,8 @@ let f = {
         };
         l && 0 !== r.limit && a()
       };
-      r(C(v.getState()));
-      let a = v.subscribe(C, r, {
+      r(O(v.getState()));
+      let a = v.subscribe(O, r, {
           equalityFn: (e, t) => JSON.stringify(e) === JSON.stringify(t)
         }),
         i = v.subscribe(e => e.hasFilters(), (e, t) => {

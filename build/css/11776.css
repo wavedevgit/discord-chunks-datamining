@@ -1,6 +1,6 @@
 /**
   Module ID: 11776
-  Original File Name: 67f0c84c7a644daa
+  Original File Name: 3aabe6a1cd334427
 **/
 .scroller__95bea {
     display: flex;
@@ -985,6 +985,7 @@
 }
 
 .tagListContainer__25a50 {
+    box-sizing: border-box;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -1510,4 +1511,4 @@
     border-color: var(--input-focused-border)
 }
 
-/*# sourceMappingURL=67f0c84c7a644daa.css.map*/
+/*# sourceMappingURL=3aabe6a1cd334427.css.map*/

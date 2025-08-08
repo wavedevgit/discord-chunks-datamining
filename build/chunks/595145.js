@@ -46,8 +46,8 @@ var r = n(255367),
   Y = n(179828),
   W = n(993160),
   H = n(574887),
-  K = n(693408),
-  z = n(661462),
+  z = n(693408),
+  K = n(661462),
   J = n(768111),
   X = n(228168),
   q = n(981631),
@@ -266,7 +266,7 @@ function ee(e) {
                       }, l)
                     }), n.isProvisional && (0, r.jsx)(U.Z.Overlay, {
                       className: $.profileOverlay,
-                      children: (0, r.jsx)(K.Z, {
+                      children: (0, r.jsx)(z.Z, {
                         heading: Q.intl.string(Q.t.Iyka0d),
                         headingVariant: "text-md/semibold",
                         headingIcon: (0, r.jsx)(a.Mgn, {
@@ -299,12 +299,12 @@ function ee(e) {
                     }), (null == eI ? void 0 : eI.bio) != null && (null == eI ? void 0 : eI.bio) !== "" && !eN && (0, r.jsx)(C.Z, {
                       userBio: eI.bio,
                       setLineClamp: !1
-                    }), eC.length > 0 && (0, r.jsx)(K.Z, {
+                    }), eC.length > 0 && (0, r.jsx)(z.Z, {
                       heading: Q.intl.string(Q.t["Uv/eT0"]),
                       children: (0, r.jsx)(M.Z, {
                         applicationIds: eC
                       })
-                    }), (0, r.jsx)(K.Z, {
+                    }), (0, r.jsx)(z.Z, {
                       heading: Q.intl.string(Q.t.a6XYDw),
                       children: (0, r.jsx)(k.Z, {
                         userId: n.id,
@@ -319,7 +319,7 @@ function ee(e) {
                       headingVariant: "text-xs/medium",
                       headingColor: "currentColor",
                       scrollIntoView: ea === X.Tb.ROLES
-                    }), eL.length > 0 && (0, r.jsx)(K.Z, {
+                    }), eL.length > 0 && (0, r.jsx)(z.Z, {
                       heading: Q.intl.string(Q.t["3fe7U1"]),
                       scrollIntoView: ea === X.Tb.CONNECTIONS,
                       children: (0, r.jsx)(H.Z, {
@@ -327,7 +327,7 @@ function ee(e) {
                         userId: n.id,
                         className: $.profileAppConnections
                       })
-                    }), (0, r.jsx)(K.Z, {
+                    }), (0, r.jsx)(z.Z, {
                       heading: Q.intl.string(Q.t["mQKv+v"]),
                       scrollIntoView: ea === X.Tb.NOTE,
                       children: (0, r.jsx)(c.Z, {
@@ -360,7 +360,7 @@ function ee(e) {
                     profileEffectId: null == eI ? void 0 : eI.profileEffectId,
                     isHovering: ej
                   })]
-                }), (0, r.jsx)(z.Z, {
+                }), (0, r.jsx)(K.Z, {
                   user: n,
                   currentUser: ee,
                   displayProfile: eI,
