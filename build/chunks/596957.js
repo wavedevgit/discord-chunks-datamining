@@ -29,9 +29,9 @@ var r = n(255367),
   T = n(617015),
   P = n(981631),
   j = n(388032),
-  A = n(222001);
+  x = n(222001);
 
-function Z(e) {
+function A(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -50,7 +50,7 @@ function Z(e) {
   return e
 }
 
-function x(e, t) {
+function Z(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -75,7 +75,7 @@ function R() {
     let {
       default: e
     } = await n.e("36312").then(n.bind(n, 153932));
-    return t => (0, r.jsx)(e, Z({}, t))
+    return t => (0, r.jsx)(e, A({}, t))
   })
 }
 
@@ -85,7 +85,7 @@ function D(e) {
     showSpamCta: n
   } = e, l = i.useMemo(() => n ? R : t !== P.pJs.PENDING ? L : void 0, [n, t]);
   return (0, r.jsx)("div", {
-    className: A.emptyStateContainer,
+    className: x.emptyStateContainer,
     children: (0, r.jsx)(y.Z, {
       type: t,
       onClick: l
@@ -130,26 +130,26 @@ let k = function(e) {
     }(e, ["key"]);
     switch (u) {
       case P.pJs.PENDING:
-        return (0, r.jsx)(v.Z, x(Z({}, n), {
+        return (0, r.jsx)(v.Z, Z(A({}, n), {
           isFocused: L
         }), t);
       case P.pJs.SUGGESTIONS:
-        return (0, r.jsx)(N.Z, x(Z({}, n), {
+        return (0, r.jsx)(N.Z, Z(A({}, n), {
           isFocused: L
         }), t);
       case P.pJs.ONLINE:
       case P.pJs.ALL:
       default:
-        return (0, r.jsx)(E.Z, x(Z({}, n), {
+        return (0, r.jsx)(E.Z, Z(A({}, n), {
           isFocused: L
         }), t)
     }
   }, [L, u]), H = i.useCallback(e => {
-    G(x(Z({}, U), {
+    G(Z(A({}, U), {
       [u]: e
     }))
   }, [U, u]), B = i.useCallback(() => {
-    G(x(Z({}, U), {
+    G(Z(A({}, U), {
       [u]: ""
     }))
   }, [U, u]), F = i.useMemo(() => u === P.pJs.PENDING && (l.filter(P.pJs.SPAM).length > 0 || l.filter(P.pJs.PENDING_IGNORED).length > 0), [l, u]), z = i.useMemo(() => l.filter(u, U[u]), [l, U, u]), W = u === P.pJs.PENDING, Y = i.useMemo(() => {
@@ -174,8 +174,8 @@ let k = function(e) {
       }
     }, [z, u]),
     q = i.useMemo(() => z.filter(e => e.type === P.OGo.PENDING_INCOMING).length, [z]),
-    Q = u === P.pJs.PENDING && q > 0 && q >= T.yf,
-    X = i.useCallback(e => {
+    X = u === P.pJs.PENDING && q > 0 && q >= T.yf,
+    Q = i.useCallback(e => {
       e.stopPropagation(), d.Z.confirmClearPendingRelationships(q)
     }, [q]),
     J = i.useCallback(e => {
@@ -204,27 +204,27 @@ let k = function(e) {
         }
       }(u, K[e].length, e);
       return u === P.pJs.PENDING && 0 === e ? (0, r.jsxs)("div", {
-        className: A.sectionTitle,
+        className: x.sectionTitle,
         children: [(0, r.jsx)(S.Z, {
           id: t,
           title: n
-        }), Q && (0, r.jsx)(s.zx, {
+        }), X && (0, r.jsx)(s.zx, {
           look: s.iL.LINK,
           color: s.Tt.LINK,
-          className: A.clearButton,
+          className: x.clearButton,
           size: s.zx.Sizes.TINY,
-          onClick: X,
+          onClick: Q,
           "aria-label": j.intl.string(j.t.O8k7Oz),
           children: j.intl.string(j.t.O8k7Oz)
         })]
       }, n) : (0, r.jsx)("div", {
-        className: A.sectionTitle,
+        className: x.sectionTitle,
         children: (0, r.jsx)(S.Z, {
           id: t,
           title: n
         })
       }, n)
-    }, [K, u, t, Q, X]);
+    }, [K, u, t, X, Q]);
   if (i.useEffect(() => {
       u === P.pJs.ALL && (0, m.d$)()
     }, [u]), 0 === z.length && "" === U[u]) return (0, r.jsx)(D, {
@@ -238,7 +238,7 @@ let k = function(e) {
     children: (0, r.jsxs)(p.Z, {
       section: P.jXE.FRIENDS_LIST,
       children: [M && (0, r.jsx)(C.R, {}), (0, r.jsx)(c.E1j, {
-        className: a()(A.searchBar, ee ? A.searchEmptyState : null),
+        className: a()(x.searchBar, ee ? x.searchEmptyState : null),
         query: U[u],
         onChange: H,
         onClear: B
@@ -251,8 +251,8 @@ let k = function(e) {
         hasSearchQuery: $,
         footer: F && !ee ? (0, r.jsx)(s.zx, {
           look: s.zx.Looks.LINK,
-          color: A.viewSpamButtonColor,
-          className: A.viewSpamButton,
+          color: x.viewSpamButtonColor,
+          className: x.viewSpamButton,
           onClick: R,
           size: s.Ph.TINY,
           children: (0, r.jsx)(c.Text, {
@@ -261,7 +261,7 @@ let k = function(e) {
           })
         }) : null
       }), ee && (0, r.jsx)("div", {
-        className: A.emptyStateContainer,
+        className: x.emptyStateContainer,
         children: (0, r.jsx)(y.Z, {
           type: y.j.SECTION_NO_RESULTS
         }, u)

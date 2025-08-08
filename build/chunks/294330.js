@@ -2,7 +2,7 @@
 n.d(t, {
   Eo: () => j,
   VD: () => T,
-  ZP: () => A
+  ZP: () => x
 }), n(388685), n(953529);
 var r = n(255367),
   i = n(73800),
@@ -34,14 +34,14 @@ function T(e) {
     guild: t,
     onClick: l,
     onView: o
-  } = e, [f, g] = i.useState(!1), [O, T] = i.useState(!1), [P, j] = i.useState(!1), A = i.useRef(null), Z = i.useCallback(async () => {
+  } = e, [f, g] = i.useState(!1), [O, T] = i.useState(!1), [P, j] = i.useState(!1), x = i.useRef(null), A = i.useCallback(async () => {
     T(!0);
     try {
       await l(t.id)
     } finally {
       T(!1)
     }
-  }, [t.id, l]), x = i.useCallback(e => {
+  }, [t.id, l]), Z = i.useCallback(e => {
     e && !f && (g(!0), null == o || o(t.id))
   }, [t.id, f, o]), w = i.useCallback(e => {
     (0, u.jW)(e, async () => {
@@ -109,14 +109,14 @@ function T(e) {
         className: I.spinner
       })
     }), (0, r.jsx)(s.$, {
-      innerRef: A,
-      onChange: x,
+      innerRef: x,
+      onChange: Z,
       active: !f,
       threshold: .55,
       children: (0, r.jsxs)(h.Z, {
-        ref: A,
+        ref: x,
         className: I.card,
-        onClick: Z,
+        onClick: A,
         disabled: O,
         onContextMenu: w,
         "aria-label": v.intl.string(v.t["M9wQ+f"]),
@@ -258,4 +258,4 @@ function j(e) {
     })
   })
 }
-let A = i.memo(P)
+let x = i.memo(P)

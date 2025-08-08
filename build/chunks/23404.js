@@ -30,7 +30,7 @@ var r = n(255367),
   P = n(388032),
   j = n(396896);
 
-function A(e) {
+function x(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -49,7 +49,7 @@ function A(e) {
   return e
 }
 
-function Z(e) {
+function A(e) {
   var t;
   let {
     quest: n
@@ -81,12 +81,12 @@ function Z(e) {
   })
 }
 
-function x(e) {
+function Z(e) {
   var t, n, l, u;
   let {
     nodeRef: _,
     quest: O
-  } = e, E = (0, d.O5)(), T = (0, o.e7)([g.Z], () => g.Z.isEnrolling(O.id), [O]), x = (0, o.e7)([g.Z], () => null != g.Z.questEnrollmentBlockedUntil, []), [w, L] = i.useState(!1), R = i.useCallback(() => L(!0), []), D = i.useCallback(() => L(!1), []), k = i.useCallback(e => {
+  } = e, E = (0, d.O5)(), T = (0, o.e7)([g.Z], () => g.Z.isEnrolling(O.id), [O]), Z = (0, o.e7)([g.Z], () => null != g.Z.questEnrollmentBlockedUntil, []), [w, L] = i.useState(!1), R = i.useCallback(() => L(!0), []), D = i.useCallback(() => L(!1), []), k = i.useCallback(e => {
     e.stopPropagation()
   }, []), M = i.useCallback(() => {
     (0, h.AH)(O.id, {
@@ -125,7 +125,7 @@ function x(e) {
     questContent: m.jn.ACTIVITY_PANEL,
     sourceQuestContent: m.jn.ACTIVITY_PANEL
   });
-  return W || H || z || x ? null : (0, r.jsxs)("div", {
+  return W || H || z || Z ? null : (0, r.jsxs)("div", {
     ref: e => {
       _.current = e
     },
@@ -140,7 +140,7 @@ function x(e) {
     onMouseLeave: D,
     children: [(0, r.jsxs)("div", {
       className: j.utils,
-      children: [B ? (0, r.jsx)(Z, {
+      children: [B ? (0, r.jsx)(A, {
         quest: O
       }) : (0, r.jsx)(y.Z, {}), (0, r.jsx)(I.r, {
         quest: O,
@@ -150,7 +150,7 @@ function x(e) {
         sourceQuestContent: m.jn.ACTIVITY_PANEL,
         children: e => {
           var t, n;
-          return (0, r.jsx)(c.P3F, (t = A({}, e), n = n = {
+          return (0, r.jsx)(c.P3F, (t = x({}, e), n = n = {
             "aria-label": P.intl.string(P.t.DEoVWV),
             children: (0, r.jsx)(c.xhG, {
               size: "md",
@@ -170,7 +170,7 @@ function x(e) {
         }
       })]
     }), !B && (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(Z, {
+      children: [(0, r.jsx)(A, {
         quest: O
       }), (0, r.jsx)("div", {
         className: j.instructions,
@@ -230,7 +230,7 @@ let w = function(e) {
     questOrQuests: e.quest,
     questContent: m.jn.ACTIVITY_PANEL,
     sourceQuestContent: m.jn.ACTIVITY_PANEL,
-    children: t => (0, r.jsx)(x, A({
+    children: t => (0, r.jsx)(Z, x({
       nodeRef: t
     }, e))
   })

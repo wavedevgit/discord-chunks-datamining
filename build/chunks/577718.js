@@ -29,9 +29,9 @@ var r = n(255367),
   T = n(388032),
   P = n(540835),
   j = n(519254),
-  A = n(741160),
-  Z = n(829972),
-  x = n(31932);
+  x = n(741160),
+  A = n(829972),
+  Z = n(31932);
 
 function w(e) {
   null != e && h.Z.open(e.id, I.pNK.BOOST_PERKS, {
@@ -94,7 +94,7 @@ let D = i.memo(function(e) {
       },
       location_stack: u
     })
-  }, D = (0, a.wj)(n) ? Z : x, [k, M] = (0, c.US)(t, C.R.GUILD_HEADER_TOOLTIPS);
+  }, D = (0, a.wj)(n) ? A : Z, [k, M] = (0, c.US)(t, C.R.GUILD_HEADER_TOOLTIPS);
   return (0, r.jsx)(r.Fragment, {
     children: (() => {
       switch (k) {
@@ -187,7 +187,7 @@ let D = i.memo(function(e) {
               header: T.intl.string(T.t["36wK8/"]),
               asset: (0, r.jsx)("img", {
                 alt: "",
-                src: A,
+                src: x,
                 className: j.fullWidthImage
               }),
               content: e,

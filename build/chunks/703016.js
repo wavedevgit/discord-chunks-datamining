@@ -29,35 +29,35 @@ var r = n(913527),
   T = n(441729),
   P = n(653477),
   j = n(981631),
-  A = n(388032);
-let Z = [],
-  x = null,
+  x = n(388032);
+let A = [],
+  Z = null,
   w = null,
   L = null,
   R = /\|\|([\s\S]+?)\|\|/g;
 
 function D(e, t, n, r) {
   let l = _.Z.getGuild(n),
-    a = e.replace(R, A.intl.string(A.t["F+x38P"])).replace(/<@!?(\d+)>/g, (e, t) => {
+    a = e.replace(R, x.intl.string(x.t["F+x38P"])).replace(/<@!?(\d+)>/g, (e, t) => {
       var r;
       let i = C.default.getUser(t);
       return null == i ? e : null != (r = m.ZP.getNick(n, i.id)) ? r : S.ZP.getName(i)
     }).replace(/<@&?(\d+)>/g, (e, t) => {
       let n = null != l ? b.Z.getRole(l.id, t) : null;
-      return null != n && null != n.name ? n.name : A.intl.string(A.t.dRcLAw)
+      return null != n && null != n.name ? n.name : x.intl.string(x.t.dRcLAw)
     }).replace(/<#(\d+)>/g, (e, t) => {
       let n = g.Z.getChannel(t);
       return null == n ? e : (0, s.F6)(n, C.default, y.Z)
-    }).replace(/<a?:(\w+):(\d+)>/g, (e, t) => "".concat(A.intl.string(A.t.sMOuub), " ").concat(t)).replace(/<\/([^\s]+?):(\d+)>/g, (e, t) => "/".concat(t)).replace(/<t:(\d+):([A-Z]|[a-z])>/g, (e, t, n) => {
+    }).replace(/<a?:(\w+):(\d+)>/g, (e, t) => "".concat(x.intl.string(x.t.sMOuub), " ").concat(t)).replace(/<\/([^\s]+?):(\d+)>/g, (e, t) => "/".concat(t)).replace(/<t:(\d+):([A-Z]|[a-z])>/g, (e, t, n) => {
       let r = c.Qh[n],
         l = 1e3 * parseInt(t, 10),
         a = i()(l);
       return null != r ? r(a) : a.format()
     });
-  return null == r ? A.intl.formatToPlainString(A.t["uIj77+"], {
+  return null == r ? x.intl.formatToPlainString(x.t["uIj77+"], {
     username: t,
     body: a
-  }) : A.intl.formatToPlainString(A.t["Ix4H+v"], {
+  }) : x.intl.formatToPlainString(x.t["Ix4H+v"], {
     username: t,
     body: a,
     replyUsername: r
@@ -76,7 +76,7 @@ function k() {
 }
 async function M(e, t, n, r, i) {
   let l = o.e6(e, n);
-  null !== l && (null == w && k(), t ? await (0, N.NB)() : null == x || x.removeEventListener("end", N.NB), l.addEventListener("end", N.NB), null != r && l.addEventListener("start", r), null != i && l.addEventListener("end", i), x = l, o.iq(l, w))
+  null !== l && (null == w && k(), t ? await (0, N.NB)() : null == Z || Z.removeEventListener("end", N.NB), l.addEventListener("end", N.NB), null != r && l.addEventListener("start", r), null != i && l.addEventListener("end", i), Z = l, o.iq(l, w))
 }
 
 function U(e, t, n, r, i) {
@@ -97,7 +97,7 @@ function G(e) {
 }
 
 function V() {
-  return null !== x && x.removeEventListener("end", N.NB), o.M9(), x = null, !0
+  return null !== Z && Z.removeEventListener("end", N.NB), o.M9(), Z = null, !0
 }
 
 function H(e) {
@@ -126,8 +126,8 @@ function B(e) {
     N = E.Z.getTTSType(),
     T = (null == (t = s.author) ? void 0 : t.id) !== h.default.getId() && (N === j.PrB.ALL_CHANNELS || N === j.PrB.SELECTED_CHANNEL && _);
   if ((C || T) && !y.Z.isBlockedOrIgnoredForMessage(s)) {
-    if (Z.indexOf(s.id) >= 0) return !1;
-    Z.unshift(s.id) > 10 && Z.pop();
+    if (A.indexOf(s.id) >= 0) return !1;
+    A.unshift(s.id) > 10 && A.pop();
     let e = u.getGuildId();
     if (null != e && I.ZP.getMutedChannels(e).has(o)) return !1;
     let t = null != (l = null != (i = m.ZP.getNick(e, null == (n = s.author) ? void 0 : n.id)) ? i : S.ZP.getName(s.author)) ? l : "",

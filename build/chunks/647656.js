@@ -101,9 +101,9 @@ let _ = ["349134787773988865"],
           secrets: T,
           timestamps: P,
           buttons: j,
-          type: A
+          type: x
         } = a;
-        if (null == A && (a.type = b.IIU.PLAYING), null != T) {
+        if (null == x && (a.type = b.IIU.PLAYING), null != T) {
           let e = i().values(T).filter(e => !!e);
           if (null != N && i().intersection(e, [N.id]).length > 0 && !_.includes(r.application.id)) throw new f.Z({
             errorCode: b.lTL.INVALID_ACTIVITY_SECRET

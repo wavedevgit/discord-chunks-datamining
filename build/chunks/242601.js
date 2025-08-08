@@ -29,9 +29,9 @@ var r = n(255367),
   T = n(43740),
   P = n(596557),
   j = n(817520),
-  A = n(999309),
-  Z = n(408987),
-  x = n(130734),
+  x = n(999309),
+  A = n(408987),
+  Z = n(130734),
   w = n(499137),
   L = n(258871),
   R = n(340541),
@@ -49,8 +49,8 @@ var r = n(255367),
   Y = n(592125),
   K = n(796974),
   q = n(486472),
-  Q = n(984933),
-  X = n(650774),
+  X = n(984933),
+  Q = n(650774),
   J = n(430824),
   $ = n(819640),
   ee = n(496675),
@@ -312,7 +312,7 @@ class eC extends i.PureComponent {
         className: eb.hubContainer,
         children: (0, r.jsx)(L.Z, {
           guild: n,
-          channel: null != i ? i : Q.ZP.getDefaultChannel(n.id)
+          channel: null != i ? i : X.ZP.getDefaultChannel(n.id)
         })
       });
       let e = n.id === eg._ ? eo.j : eo.E;
@@ -407,7 +407,7 @@ class eC extends i.PureComponent {
         guild: e,
         showGuildTemplateDirtyTooltip: t
       } = this.props;
-      null != e && t && Z.Z.hideGuildTemplateDirtyTooltip(e.id)
+      null != e && t && A.Z.hideGuildTemplateDirtyTooltip(e.id)
     }), e_(this, "renderMenuPopout", async () => {
       let {
         default: e
@@ -496,7 +496,7 @@ function eS(e) {
     h = (0, d.e7)([K.Z], () => K.Z.getGuildDimensions(n).scrollTo),
     g = (0, d.e7)([en.Z], () => en.Z.getChannelId()),
     [m, b] = (0, d.Wu)([ee.Z], () => [ee.Z.can(ep.Plq.MANAGE_GUILD, o), ee.Z.can(ep.Plq.MANAGE_THREADS, o)]),
-    Z = (0, d.e7)([q.Z], () => q.Z.isUnavailable(n)),
+    A = (0, d.e7)([q.Z], () => q.Z.isUnavailable(n)),
     L = (0, d.e7)([er.default], () => er.default.getCurrentUser()),
     R = (0, V.Ll)(),
     G = (0, d.e7)([W.Z], () => null != R ? R : W.Z.theme),
@@ -504,7 +504,7 @@ function eS(e) {
       enableStudyGroup: B
     } = (0, w.s)(o),
     z = (0, C.ZP)(e => e.currentlyShown.has(p.z.NAGBAR_NOTICE_CONNECT_PLAYSTATION)),
-    [Q, ea] = i.useState(!z),
+    [X, ea] = i.useState(!z),
     eo = (0, O.Z)(n),
     {
       analyticsLocations: es
@@ -512,9 +512,9 @@ function eS(e) {
   i.useEffect(() => {
     n !== eo && ea(!z)
   }, [n, eo, z]);
-  let [ec, eu] = (0, C.ZP)(e => [eh.XN.some(t => e.currentlyShown.has(t.dismissibleContentType)), e.currentlyShownGroup.has(ef.R.GUILD_HEADER_TOOLTIPS)], u.X), ed = (0, I.Z)(o), eg = (0, f.s9z)(f.JQI), em = (0, d.e7)([$.Z], () => $.Z.hasLayers()), eb = (0, d.e7)([F.Z], () => F.Z.shouldShow(ev)), e_ = m && (null == o ? void 0 : o.premiumProgressBarEnabled) === !1 && !el.s.isDisallowPopupsSet(), eO = (0, d.e7)([X.Z], () => X.Z.getMemberCount(n)), eE = m && null != eO && eO >= 30 && (null == o ? void 0 : o.premiumProgressBarEnabled) === !1 && !el.s.isDisallowPopupsSet(), ey = (0, A.Z)(n), eI = (null == o ? void 0 : o.features.has(ep.oNc.HUB)) === !0, eS = m && (null == o ? void 0 : o.features.has(ep.oNc.DISCOVERABLE)) === !0, eN = (0, v.Q)(), eT = (m || (null == o ? void 0 : o.premiumTier) === ep.Eu4.NONE) && !el.s.isDisallowPopupsSet() && !eN, eP = (0, d.e7)([x.Z, $.Z], () => null != o && null != L && m && !$.Z.hasLayers() && x.Z.shouldShowGuildTemplateDirtyTooltip(n)), ej = (0, d.e7)([Y.Z], () => Y.Z.getChannel(a)), {
-    isPopoutOpen: eA
-  } = (0, T.y)(), eZ = null != (t = null == o ? void 0 : o.features.has(ep.oNc.COMMUNITY)) && t, ex = (0, d.e7)([H.Z], () => !s().isEmpty(H.Z.getThreadsForGuild(n))), ew = ei.ZP.isNewUser(L), eL = Q && !ew;
+  let [ec, eu] = (0, C.ZP)(e => [eh.XN.some(t => e.currentlyShown.has(t.dismissibleContentType)), e.currentlyShownGroup.has(ef.R.GUILD_HEADER_TOOLTIPS)], u.X), ed = (0, I.Z)(o), eg = (0, f.s9z)(f.JQI), em = (0, d.e7)([$.Z], () => $.Z.hasLayers()), eb = (0, d.e7)([F.Z], () => F.Z.shouldShow(ev)), e_ = m && (null == o ? void 0 : o.premiumProgressBarEnabled) === !1 && !el.s.isDisallowPopupsSet(), eO = (0, d.e7)([Q.Z], () => Q.Z.getMemberCount(n)), eE = m && null != eO && eO >= 30 && (null == o ? void 0 : o.premiumProgressBarEnabled) === !1 && !el.s.isDisallowPopupsSet(), ey = (0, x.Z)(n), eI = (null == o ? void 0 : o.features.has(ep.oNc.HUB)) === !0, eS = m && (null == o ? void 0 : o.features.has(ep.oNc.DISCOVERABLE)) === !0, eN = (0, v.Q)(), eT = (m || (null == o ? void 0 : o.premiumTier) === ep.Eu4.NONE) && !el.s.isDisallowPopupsSet() && !eN, eP = (0, d.e7)([Z.Z, $.Z], () => null != o && null != L && m && !$.Z.hasLayers() && Z.Z.shouldShowGuildTemplateDirtyTooltip(n)), ej = (0, d.e7)([Y.Z], () => Y.Z.getChannel(a)), {
+    isPopoutOpen: ex
+  } = (0, T.y)(), eA = null != (t = null == o ? void 0 : o.features.has(ep.oNc.COMMUNITY)) && t, eZ = (0, d.e7)([H.Z], () => !s().isEmpty(H.Z.getThreadsForGuild(n))), ew = ei.ZP.isNewUser(L), eL = X && !ew;
   (0, P.Z)(o);
   let eR = (0, S.Nj)(p.z.PREMIUM_TUTORIAL_SERVER_MENU_TOOLTIP),
     eD = (0, D.Z)(n),
@@ -539,7 +539,7 @@ function eS(e) {
     voiceStates: c,
     rtcConnectedChannelId: eM,
     rtcDesyncedVoiceStatesCount: eU,
-    isUnavailable: Z,
+    isUnavailable: A,
     theme: G,
     user: L,
     hasChannelNotice: null != ed || ec,
@@ -552,14 +552,14 @@ function eS(e) {
     showGuildTemplateDirtyTooltip: eP,
     showRoleSubscriptionUpsell: ey,
     showHubPrivacySettingsTooltip: eI,
-    showNewUnreadsBar: eZ,
-    showActiveThreadsNotice: b && null != eO && eO >= 200 && ex,
+    showNewUnreadsBar: eA,
+    showActiveThreadsNotice: b && null != eO && eO >= 200 && eZ,
     showMediaChannelUpsell: eD,
     showTierTemplatesUpsell: ek,
-    isHeaderPopoutOpen: eA,
+    isHeaderPopoutOpen: ex,
     enableStudyGroup: B,
     isGuildHeaderDismissibleTooltipShown: eu,
-    canShowCoachMarkAtBottom: Q,
+    canShowCoachMarkAtBottom: X,
     headerAnalyticsLocations: es,
     isTutorialHighlightDismissed: eR,
     shouldRenderBurstCoachmark: eL,

@@ -194,22 +194,22 @@ class j {
     v(this, "_rows", void 0), this._rows = e
   }
 }
-let A = !0,
-  Z = !1,
-  x = E.pJs.ONLINE,
+let x = !0,
+  A = !1,
+  Z = E.pJs.ONLINE,
   w = new j,
   L = !0,
   R = !1;
 
 function D() {
   let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
-  A && (e || x !== E.pJs.ONLINE && x !== E.pJs.ADD_FRIEND) && !Z && (A = !1, Z = !0, s.Z.fetchRelationships())
+  x && (e || Z !== E.pJs.ONLINE && Z !== E.pJs.ADD_FRIEND) && !A && (x = !1, A = !0, s.Z.fetchRelationships())
 }
 
 function k() {
-  if (A = !0, L ? Z = !1 : D(), w = w.reset(), R) return;
+  if (x = !0, L ? A = !1 : D(), w = w.reset(), R) return;
   let e = w.getRelationshipCounts();
-  x = 0 === e[E.OGo.FRIEND] ? 0 !== e[E.OGo.PENDING_INCOMING] ? E.pJs.PENDING : E.pJs.ADD_FRIEND : E.pJs.ONLINE
+  Z = 0 === e[E.OGo.FRIEND] ? 0 !== e[E.OGo.PENDING_INCOMING] ? E.pJs.PENDING : E.pJs.ADD_FRIEND : E.pJs.ONLINE
 }
 
 function M() {
@@ -227,8 +227,8 @@ class G extends(r = a.ZP.Store) {
   }
   getState() {
     return {
-      fetching: Z,
-      section: x,
+      fetching: A,
+      section: Z,
       rows: w
     }
   }
@@ -239,7 +239,7 @@ let V = new G(o.Z, {
     k()
   },
   FRIENDS_SET_SECTION: function(e) {
-    x = e.section, D()
+    Z = e.section, D()
   },
   CHANNEL_SELECT: function(e) {
     let {
@@ -248,12 +248,12 @@ let V = new G(o.Z, {
     return L = null != t, M(), !L
   },
   LOAD_RELATIONSHIPS_SUCCESS: function() {
-    Z = !1
+    A = !1
   },
   LOAD_RELATIONSHIPS_FAILURE: function() {
-    A = !0, Z = !0
+    x = !0, A = !0
   },
   FRIENDS_SET_INITIAL_SECTION: function(e) {
-    x = e.section, R = !0
+    Z = e.section, R = !0
   }
 })

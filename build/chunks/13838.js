@@ -1,6 +1,6 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  Z: () => x
+  Z: () => Z
 }), n(388685);
 var r = n(392711),
   i = n.n(r),
@@ -46,11 +46,11 @@ function j(e) {
     errorCode: T.lTL.INVALID_CHANNEL
   }, "Invalid nsfw channel id: ".concat(i.id))
 }
-let A = e => (0, v.Z)(e).keys({
+let x = e => (0, v.Z)(e).keys({
   channel_id: e.string().allow(null)
 });
 
-function Z(e) {
+function A(e) {
   let {
     args: {
       channel_id: t
@@ -60,7 +60,7 @@ function Z(e) {
     errorCode: T.lTL.INVALID_CHANNEL
   }, "Invalid channel id: ".concat(t))
 }
-let x = {
+let Z = {
   [T.zMe.GUILD_STATUS]: {
     scope: l.x.RPC,
     validation: e => (0, v.Z)(e).required().keys({
@@ -225,15 +225,15 @@ let x = {
     scope: {
       [N.Gp.ANY]: [l.x.RPC, l.x.RPC_VOICE_READ, N.lH]
     },
-    validation: A,
-    handler: Z
+    validation: x,
+    handler: A
   },
   [T.zMe.SPEAKING_STOP]: {
     scope: {
       [N.Gp.ANY]: [l.x.RPC, l.x.RPC_VOICE_READ, N.lH]
     },
-    validation: A,
-    handler: Z
+    validation: x,
+    handler: A
   },
   [T.zMe.GUILD_CREATE]: {
     scope: l.x.RPC,

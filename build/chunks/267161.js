@@ -30,9 +30,9 @@ var r = n(255367),
   T = n(592125),
   P = n(430824),
   j = n(944486),
-  A = n(914010),
-  Z = n(451478),
-  x = n(768581),
+  x = n(914010),
+  A = n(451478),
+  Z = n(768581),
   w = n(998502),
   L = n(228488),
   R = n(950796),
@@ -81,7 +81,7 @@ let F = (0, a.U)(() => ({
 function z() {
   let e, t = (0, l.TH)(),
     n = (0, o.e7)([j.Z], () => j.Z.getChannelId()),
-    i = (0, o.e7)([A.Z], () => A.Z.getGuildId()),
+    i = (0, o.e7)([x.Z], () => x.Z.getGuildId()),
     a = (0, o.e7)([T.Z], () => T.Z.getChannel(n), [n]),
     c = null != i ? i : null == a ? void 0 : a.guild_id,
     d = (0, o.e7)([P.Z], () => P.Z.getGuild(c), [c]),
@@ -97,7 +97,7 @@ function z() {
         isFrameInFocusedMode: g.Z.getFrameLayoutMode() === M.U.FOCUSED
       }
     }),
-    O = null != m ? x.ZP.getApplicationIconURL({
+    O = null != m ? Z.ZP.getApplicationIconURL({
       id: m.id,
       icon: m.icon,
       bot: m.bot
@@ -165,7 +165,7 @@ let W = i.memo(function() {
     w.ZP.setMinimumSize(k.J, k.N)
   }, []);
   let b = (0, N.Ll)(),
-    v = (0, o.e7)([Z.Z, C.Z], () => (0, L.rB)()),
+    v = (0, o.e7)([A.Z, C.Z], () => (0, L.rB)()),
     T = function(e) {
       let {
         showCollapsedSidebarIcons: t,

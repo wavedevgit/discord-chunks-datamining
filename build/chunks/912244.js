@@ -1,11 +1,12 @@
-/** Chunk was on 75708 **/
-n.d(t, {
-  N: () => i
-});
+/** Chunk was on web.js **/
+"use strict";
 
-function i(e) {
+function r(e) {
   return {
     enabled: !0,
     eligibleToFetch: !0
   }
 }
+n.d(t, {
+  N: () => r
+})

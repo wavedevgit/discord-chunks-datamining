@@ -29,9 +29,9 @@ var r = n(255367),
   T = n(448206),
   P = n(670188),
   j = n(496675),
-  A = n(594174),
-  Z = n(662868),
-  x = n(981631),
+  x = n(594174),
+  A = n(662868),
+  Z = n(981631),
   w = n(765305),
   L = n(388032),
   R = n(29504);
@@ -50,7 +50,7 @@ function D(e) {
     isEventNoticeHidden: m.Z.isLiveChannelNoticeHidden({
       eventId: null == d ? void 0 : d.id
     })
-  }), [P, d]), U = null == l ? void 0 : l.id, G = (0, o.Wu)([C.Z], () => [...new Set(C.Z.getMutableParticipants(U, S.pV.SPEAKER).map(e => e.user))], [U]), V = (0, o.e7)([C.Z], () => null != U ? C.Z.getParticipantCount(U, S.pV.AUDIENCE) : 0, [U]), H = (0, o.e7)([j.Z], () => j.Z.can(x.Plq.CONNECT, l)), B = (0, T.Z)(null == l ? void 0 : l.id), F = null == d ? void 0 : d.creator_id, z = (0, o.e7)([A.default], () => A.default.getUser(F), [F]);
+  }), [P, d]), U = null == l ? void 0 : l.id, G = (0, o.Wu)([C.Z], () => [...new Set(C.Z.getMutableParticipants(U, S.pV.SPEAKER).map(e => e.user))], [U]), V = (0, o.e7)([C.Z], () => null != U ? C.Z.getParticipantCount(U, S.pV.AUDIENCE) : 0, [U]), H = (0, o.e7)([j.Z], () => j.Z.can(Z.Plq.CONNECT, l)), B = (0, T.Z)(null == l ? void 0 : l.id), F = null == d ? void 0 : d.creator_id, z = (0, o.e7)([x.default], () => x.default.getUser(F), [F]);
   i.useEffect(() => {
     null != F && (0, u.PR)(F)
   }, [F]);
@@ -59,8 +59,8 @@ function D(e) {
     title: Y,
     location: K,
     locationIcon: q,
-    canListenIn: Q,
-    buttonText: X,
+    canListenIn: X,
+    buttonText: Q,
     users: J,
     overflowUsers: $,
     onClose: ee
@@ -270,7 +270,7 @@ function D(e) {
       })
     }) : null, (0, r.jsxs)("div", {
       className: R.header,
-      children: [(0, r.jsx)(Z.Z, {
+      children: [(0, r.jsx)(A.Z, {
         color: s.Z.unsafe_rawColors.GREEN_230.css,
         width: 16,
         height: 16
@@ -298,15 +298,15 @@ function D(e) {
         className: R.location,
         children: K
       })]
-    }), Q || 1 === W ? (0, r.jsx)("div", {
+    }), X || 1 === W ? (0, r.jsx)("div", {
       "data-button-hoisted-classname-wrapper": !0,
       className: R.button,
       children: (0, r.jsx)(c.zxk, {
         variant: "active",
         size: "sm",
-        text: X,
+        text: Q,
         onClick: () => {
-          if (Q) null != l && null != l.getGuildId() && ((0, I.Cq)(l), (0, v.XU)(l.getGuildId(), l.id));
+          if (X) null != l && null != l.getGuildId() && ((0, I.Cq)(l), (0, v.XU)(l.getGuildId(), l.id));
           else {
             if (null == d) return;
             (0, h.bO)({

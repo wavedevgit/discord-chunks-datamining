@@ -29,9 +29,9 @@ var r = n(255367),
   T = n(646288),
   P = n(984370),
   j = n(706454),
-  A = n(210887),
-  Z = n(430824),
-  x = n(496675),
+  x = n(210887),
+  A = n(430824),
+  Z = n(496675),
   w = n(525395),
   L = n(558314),
   R = n(580130),
@@ -49,8 +49,8 @@ var r = n(255367),
   Y = n(15470),
   K = n(506648),
   q = n(449275),
-  Q = n(445986),
-  X = n(119520),
+  X = n(445986),
+  Q = n(119520),
   J = n(450233),
   $ = n(726581),
   ee = n(74153),
@@ -410,7 +410,7 @@ class ep extends i.PureComponent {
       return (0, r.jsxs)(i.Fragment, {
         children: [(0, r.jsx)(S.yY, {
           location: e.name
-        }), this.renderJsonLD(), this.renderHeader(e, t), (0, r.jsx)(X.Z, {
+        }), this.renderJsonLD(), this.renderHeader(e, t), (0, r.jsx)(Q.Z, {
           game: e
         }), n]
       })
@@ -478,7 +478,7 @@ class ep extends i.PureComponent {
         channel: e,
         guild: t
       } = this.props;
-      return null != e && null != t && (x.Z.can(el.Plq.CREATE_INSTANT_INVITE, t) || null != t.vanityURLCode) ? (0, r.jsx)(u.zx, {
+      return null != e && null != t && (Z.Z.can(el.Plq.CREATE_INSTANT_INVITE, t) || null != t.vanityURLCode) ? (0, r.jsx)(u.zx, {
         "aria-label": eo.intl.string(eo.t.zJrgTE),
         look: u.zx.Looks.BLANK,
         size: u.zx.Sizes.NONE,
@@ -577,7 +577,7 @@ class ep extends i.PureComponent {
       } = this.props;
       return (0, r.jsx)(m.Z, {
         section: el.jXE.HERO,
-        children: (0, r.jsx)(Q.Z, {
+        children: (0, r.jsx)(X.Z, {
           pageSize: n,
           items: t.carouselItems.map(n => this.parseMediaItems(e, n, t.assets)),
           autoplayInterval: 8e3,
@@ -600,7 +600,7 @@ class ep extends i.PureComponent {
     })
   }
 }
-let eh = (0, _.Z)((0, O.Z)(o.ZP.connectStores([L.Z, A.Z, j.default, U.Z, k.Z, D.Z, M.Z, E.Z, y.Z, w.Z, Z.Z, R.Z], e => {
+let eh = (0, _.Z)((0, O.Z)(o.ZP.connectStores([L.Z, x.Z, j.default, U.Z, k.Z, D.Z, M.Z, E.Z, y.Z, w.Z, A.Z, R.Z], e => {
   let t, n, r, {
     inputSkuId: i,
     applicationId: l,
@@ -632,8 +632,8 @@ let eh = (0, _.Z)((0, O.Z)(o.ZP.connectStores([L.Z, A.Z, j.default, U.Z, k.Z, D.
     }),
     isInTestMode: null != l && c,
     matureAgree: L.Z.didMatureAgree,
-    theme: A.Z.theme,
+    theme: x.Z.theme,
     locale: j.default.locale,
-    guild: null != s ? Z.Z.getGuild(s.getGuildId()) : null
+    guild: null != s ? A.Z.getGuild(s.getGuildId()) : null
   }
 })(ep)))

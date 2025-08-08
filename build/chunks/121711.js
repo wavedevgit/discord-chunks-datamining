@@ -1,6 +1,6 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  Z: () => Q
+  Z: () => X
 });
 var r = n(255367),
   i = n(73800),
@@ -29,9 +29,9 @@ var r = n(255367),
   T = n(775451),
   P = n(451478),
   j = n(526167),
-  A = n(63063),
-  Z = n(113434),
-  x = n(833435),
+  x = n(63063),
+  A = n(113434),
+  Z = n(833435),
   w = n(150560),
   L = n(672188),
   R = n(558652),
@@ -88,7 +88,7 @@ function q(e) {
     onLoad: t
   })
 }
-let Q = function() {
+let X = function() {
   let {
     selectedTab: e,
     onSelectTab: t,
@@ -96,7 +96,7 @@ let Q = function() {
   } = (0, G.z)(), {
     onScroll: l,
     scrollPosition: s
-  } = (0, b.M)(), d = w.Z.getState().getUtmCurrentContext(), m = (0, x._)({
+  } = (0, b.M)(), d = w.Z.getState().getUtmCurrentContext(), m = (0, Z._)({
     location: V.dr.QUEST_HOME_DESKTOP
   }) ? D.Z : D.j, P = (0, k.z)(e => e.registerAssetLoad), j = i.useRef(d);
   i.useEffect(() => {
@@ -127,14 +127,14 @@ let Q = function() {
     location: V.dr.QUEST_HOME_DESKTOP
   }), Y = i.useCallback(() => {
     if (L) return void window.open(H.EYA.PAID_TERMS_ORBS);
-    window.open(A.Z.getArticleURL(H.BhN.QUESTS_LEARN_MORE))
+    window.open(x.Z.getArticleURL(H.BhN.QUESTS_LEARN_MORE))
   }, [L]);
   (0, g.Tt)({
     location: F.intl.string(F.t.JALI2N)
   });
   let K = L ? F.intl.format(F.t.BCBIlp, {}) : F.intl.format(F.t.lmMBf3, {}),
-    Q = L ? F.intl.format(F.t.U9FY0N, {}) : F.intl.string(F.t.oWCrBg),
-    X = i.useRef(null),
+    X = L ? F.intl.format(F.t.U9FY0N, {}) : F.intl.string(F.t.oWCrBg),
+    Q = i.useRef(null),
     J = i.useCallback(() => {
       (0, C.Y)({
         pageType: H.ZY5.GLOBAL_DISCOVERY_QUESTS,
@@ -154,10 +154,10 @@ let Q = function() {
     children: (0, r.jsx)("div", {
       className: z.container,
       children: L ? (0, r.jsx)(U.t.Provider, {
-        value: X,
+        value: Q,
         children: (0, r.jsxs)(I.Z, {
           onScroll: l,
-          ref: X,
+          ref: Q,
           children: [(0, r.jsx)(v.a, {
             selectedTabId: e,
             handleTransition: t,
@@ -171,7 +171,7 @@ let Q = function() {
             })
           }), (0, r.jsxs)(_.Z, {
             title: K,
-            description: Q,
+            description: X,
             betaTag: L && W,
             button: L ? (0, r.jsxs)(r.Fragment, {
               children: [(0, r.jsx)(u.zxk, {
@@ -208,7 +208,7 @@ let Q = function() {
               onLoadComplete: P
             })]
           }), (0, r.jsx)(O.Z, {
-            children: e === Z.e5.CLAIMED ? (0, r.jsx)(m, {
+            children: e === A.e5.CLAIMED ? (0, r.jsx)(m, {
               onSelectTab: t
             }) : (0, r.jsx)(R.Z, {})
           })]
@@ -224,13 +224,13 @@ let Q = function() {
             icon: u.qDn
           })]
         }), (0, r.jsx)(U.t.Provider, {
-          value: X,
+          value: Q,
           children: (0, r.jsxs)(I.Z, {
             onScroll: l,
-            ref: X,
+            ref: Q,
             children: [(0, r.jsxs)(_.Z, {
               title: K,
-              description: Q,
+              description: X,
               button: (0, r.jsx)(u.zxk, {
                 variant: "overlay-primary",
                 text: F.intl.string(F.t.hvVgAQ),
@@ -256,7 +256,7 @@ let Q = function() {
                   selectedTab: e,
                   onTabSelect: t
                 })
-              }), e === Z.e5.CLAIMED ? (0, r.jsx)(m, {
+              }), e === A.e5.CLAIMED ? (0, r.jsx)(m, {
                 onSelectTab: t
               }) : (0, r.jsx)(R.Z, {})]
             })]

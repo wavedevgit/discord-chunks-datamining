@@ -39,9 +39,9 @@ function C() {
     P = (0, h.lg)(N),
     j = !E.MU.has(N),
     {
-      searchQuery: A,
-      onSearchTextChange: Z,
-      onClearSearch: x,
+      searchQuery: x,
+      onSearchTextChange: A,
+      onClearSearch: Z,
       onSearchSubmit: w,
       isSearchVisible: L
     } = (0, m.H)({
@@ -55,7 +55,7 @@ function C() {
       tabsClassName: U
     } = (0, o.U)({
       isSearchBarVisible: j,
-      isSearchBarEmpty: "" === A.trim(),
+      isSearchBarEmpty: "" === x.trim(),
       searchBarState: R,
       setSearchBarState: e => f.Z.setState({
         searchBarState: e
@@ -63,8 +63,8 @@ function C() {
     }),
     G = d.Z.useField("fetchedQuery"),
     V = i.useCallback(e => {
-      T(e), L && x()
-    }, [L, x, T]),
+      T(e), L && Z()
+    }, [L, Z, T]),
     H = i.useMemo(() => L ? S.filter(e => {
       let {
         id: t
@@ -95,7 +95,7 @@ function C() {
         scrollPosition: n
       }), L ? (0, r.jsx)(s.Cm, {
         icon: l.j9r,
-        onClick: x
+        onClick: Z
       }) : (0, r.jsx)(s.aV, {
         icon: l.QTo
       }), !L && (0, r.jsx)(c.Z, {
@@ -112,10 +112,10 @@ function C() {
           query: G
         })
       }), j && (0, r.jsx)(u.Z, {
-        query: A,
+        query: x,
         placeholder: v.intl.string(v.t["5h0QOD"]),
-        onTextChange: Z,
-        onClear: x,
+        onTextChange: A,
+        onClear: Z,
         onSubmit: w,
         onCollapsedClick: k,
         state: L ? y.GlobalDiscoverySearchBarState.DEFAULT : R,

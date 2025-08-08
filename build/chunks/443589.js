@@ -40,9 +40,9 @@ function P(e) {
   } = e, {
     analyticsLocations: j
   } = (0, d.ZP)(), {
-    isHovered: A,
-    setIsHovered: Z,
-    onMouseEnter: x,
+    isHovered: x,
+    setIsHovered: A,
+    onMouseEnter: Z,
     onMouseLeave: w
   } = (0, f.Z)(200, 300), {
     enableEmojiCTA: L
@@ -63,8 +63,8 @@ function P(e) {
     })
   }, [t, n]);
   let R = i.useCallback(e => {
-      "focus" !== e.type && x()
-    }, [x]),
+      "focus" !== e.type && Z()
+    }, [Z]),
     D = e => {
       e.stopPropagation();
       let r = g.Z.getUserAffinity(t.id);
@@ -131,18 +131,18 @@ function P(e) {
     animation: u.yRy.Animation.FADE,
     nudgeAlignIntoViewport: !1,
     closeOnScroll: !0,
-    shouldShow: A,
+    shouldShow: x,
     position: "right",
     align: "top",
     spacing: 9,
     onRequestClose: () => {
-      Z(!1)
+      A(!1)
     },
     renderPopout: e => (0, r.jsx)(y.Z, {
       giftIntentType: n,
       premiumGiftIntentCardType: y.U.COACHMARK,
       recipientUser: t,
-      onMouseEnter: x,
+      onMouseEnter: Z,
       onMouseLeave: w,
       popoutPosition: e.position,
       analyticsPage: l,

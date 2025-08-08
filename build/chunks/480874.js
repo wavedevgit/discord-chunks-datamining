@@ -37,17 +37,17 @@ function T() {
     {
       channelId: j
     } = (0, _._)(),
-    A = i.useCallback(() => {
+    x = i.useCallback(() => {
       (0, c.showToast)((0, c.createToast)(S.intl.string(S.t.EDYbS0), c.ToastType.FAILURE))
     }, []),
     {
-      rejectAll: Z
+      rejectAll: A
     } = (0, b.m)({
-      onError: A
+      onError: x
     }),
-    x = i.useCallback(() => {
-      Z(t.map(e => e.channel.id))
-    }, [t, Z]);
+    Z = i.useCallback(() => {
+      A(t.map(e => e.channel.id))
+    }, [t, A]);
   (0, d.ZP)(() => {
     g.default.track(C.rMx.SPAM_MESSAGE_REQUESTS_VIEWED, {
       num_spam_message_requests: n
@@ -85,11 +85,11 @@ function T() {
         }), (0, r.jsx)(c.Avr, {
           textVariant: "text-sm/normal",
           text: S.intl.string(S.t.p6t7RE),
-          onClick: x,
+          onClick: Z,
           "aria-label": S.intl.string(S.t.p6t7RE)
         })]
       }) : null]
-    }, "message-requests-spam-title"), [n, x, T]);
+    }, "message-requests-spam-title"), [n, Z, T]);
   return 0 === t.length ? (0, r.jsx)(y.Z, {
     section: I.pS.SPAM
   }) : (0, r.jsx)(o.bG, {

@@ -1,17 +1,17 @@
-/** Chunk was on 27978 **/
+/** Chunk was on 34779 **/
 n.d(t, {
-  NQ: () => _,
-  U1: () => E,
+  NQ: () => b,
+  U1: () => y,
   XW: () => d,
-  _J: () => g,
+  _J: () => m,
   aP: () => f,
-  e7: () => m,
-  h6: () => x,
+  e7: () => g,
+  h6: () => O,
   oE: () => p,
   pB: () => h,
-  y: () => b,
-  yS: () => v,
-  yr: () => j
+  y: () => _,
+  yS: () => C,
+  yr: () => v
 }), n(781311);
 var r = n(97519),
   i = n(524437),
@@ -120,14 +120,14 @@ let d = (0, r.U)(e => ({
     let e = d.getState();
     return e.nickname !== c.nickname || e.dmsAllowed !== c.dmsAllowed || e.showActivity !== u(e.guildSize) || e.mutedServer !== c.mutedServer
   },
-  m = () => d.getState().inviteCode,
-  g = () => d.getState().guildId,
-  _ = () => d.getState().touched,
-  x = () => d.getState().dmsAllowed,
-  b = () => d.getState().nickname,
-  E = () => d.getState().showActivity,
-  v = () => d.getState().mutedServer,
-  j = () => {
+  g = () => d.getState().inviteCode,
+  m = () => d.getState().guildId,
+  b = () => d.getState().touched,
+  O = () => d.getState().dmsAllowed,
+  _ = () => d.getState().nickname,
+  y = () => d.getState().showActivity,
+  C = () => d.getState().mutedServer,
+  v = () => {
     var e, t;
     let {
       nickname: n

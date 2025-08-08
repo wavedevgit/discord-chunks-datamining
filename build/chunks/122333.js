@@ -49,7 +49,7 @@ function j(e) {
   return e
 }
 
-function A(e, t) {
+function x(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -62,15 +62,15 @@ function A(e, t) {
   }), e
 }
 
-function Z() {
+function A() {
   null != r && (0, l.Mr3)(r)
 }
-class x extends o.Z {
+class Z extends o.Z {
   _initialize() {
-    a.Z.subscribe("CONNECTION_OPEN", this.handleConnectionOpen), a.Z.subscribe("LOGOUT", Z)
+    a.Z.subscribe("CONNECTION_OPEN", this.handleConnectionOpen), a.Z.subscribe("LOGOUT", A)
   }
   _terminate() {
-    a.Z.unsubscribe("CONNECTION_OPEN", this.handleConnectionOpen), a.Z.unsubscribe("LOGOUT", Z)
+    a.Z.unsubscribe("CONNECTION_OPEN", this.handleConnectionOpen), a.Z.unsubscribe("LOGOUT", A)
   }
   handleConnectionOpen() {
     var e;
@@ -87,12 +87,12 @@ class x extends o.Z {
         h.Z.flowStart(P.MK.ORGANIC_MARKETING, P.EW.NUF_STARTED)
     }
     let o = !1,
-      Z = _.Z.getGuildId();
+      A = _.Z.getGuildId();
     if (a === C.M5.INVITE_UNCLAIMED) {
-      let e = b.Z.getGuild(Z);
+      let e = b.Z.getGuild(A);
       null != e && (0, d.Dc)(e) && (o = !0, (0, f.RM)(e.id))
     }
-    let x = () => 0 === m.Z.totalGuilds && !y.isPlatformEmbedded,
+    let Z = () => 0 === m.Z.totalGuilds && !y.isPlatformEmbedded,
       w = s.bN();
     e = [{
       key: "Unified NUF Modal",
@@ -130,7 +130,7 @@ class x extends o.Z {
           let {
             default: e
           } = await Promise.all([n.e("6583"), n.e("1337"), n.e("42483"), n.e("70911")]).then(n.bind(n, 599219));
-          return n => (0, i.jsx)(e, A(j({}, n), {
+          return n => (0, i.jsx)(e, x(j({}, n), {
             onSlideChange: t
           }))
         }, {
@@ -139,11 +139,11 @@ class x extends o.Z {
           modalKey: r
         })
       },
-      predicate: () => x() && !T.a
+      predicate: () => Z() && !T.a
     }, {
       key: "New User Age Gate",
       open: c.i,
-      predicate: () => w && !x() && !T.a
+      predicate: () => w && !Z() && !T.a
     }, {
       key: "Claim Account Modal",
       open: e => c.j(y.isPlatformEmbedded, e),
@@ -153,7 +153,7 @@ class x extends o.Z {
       }
     }, {
       key: "Verification Gate with Claim Account",
-      open: e => (0, u.hk)(Z, null != e ? e : void 0),
+      open: e => (0, u.hk)(A, null != e ? e : void 0),
       predicate: () => {
         var e;
         return o && !(null == (e = O.default.getCurrentUser()) ? void 0 : e.isClaimed()) && !T.a
@@ -164,13 +164,13 @@ class x extends o.Z {
         let {
           default: e
         } = await n.e("77578").then(n.bind(n, 184782));
-        return t => (0, i.jsx)(e, A(j({}, t), {
-          guildId: Z
+        return t => (0, i.jsx)(e, x(j({}, t), {
+          guildId: A
         }))
       }, {
         onCloseCallback: e
       }),
-      predicate: () => null != Z && null != g.Z.get(Z) && g.Z.get(Z) !== g.a
+      predicate: () => null != A && null != g.Z.get(A) && g.Z.get(A) !== g.a
     }], t = () => {
       v.H(), h.Z.flowStep(P.MK.ANY, P.EW.NUF_COMPLETE, !0)
     }, [...e].reverse().forEach(e => {
@@ -181,4 +181,4 @@ class x extends o.Z {
     }), t()
   }
 }
-let w = new x
+let w = new Z

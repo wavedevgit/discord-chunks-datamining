@@ -1,11 +1,11 @@
-/** Chunk was on 95193 **/
+/** Chunk was on 34779 **/
 n.d(t, {
   P: () => s,
   _: () => o
 });
-var i = n(818083),
-  r = n(751823);
-let l = (0, i.B)({
+var r = n(818083),
+  i = n(751823);
+let l = (0, r.B)({
   kind: "user",
   id: "2025-08_device_changed_notification",
   label: "Device-changed notification experiment",
@@ -26,8 +26,8 @@ function o(e) {
     location: t,
     autoTrackExposure: n = !0
   } = e, {
-    isInHoldout: i
-  } = r.L.getCurrentConfig({
+    isInHoldout: r
+  } = i.L.getCurrentConfig({
     location: t
   }, {
     autoTrackExposure: n
@@ -35,7 +35,7 @@ function o(e) {
   return l.getCurrentConfig({
     location: t
   }, {
-    disable: i,
+    disable: r,
     autoTrackExposure: n
   })
 }
@@ -45,8 +45,8 @@ function s(e) {
     location: t,
     autoTrackExposure: n = !0
   } = e, {
-    isInHoldout: i
-  } = r.L.useExperiment({
+    isInHoldout: r
+  } = i.L.useExperiment({
     location: t
   }, {
     autoTrackExposure: n
@@ -54,7 +54,7 @@ function s(e) {
   return l.useExperiment({
     location: t
   }, {
-    disable: i,
+    disable: r,
     autoTrackExposure: n
   })
 }

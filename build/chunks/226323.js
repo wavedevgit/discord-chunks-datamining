@@ -1,6 +1,6 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  Z: () => A
+  Z: () => x
 }), n(388685), n(539854);
 var r = n(255367),
   i = n(73800),
@@ -96,9 +96,9 @@ function j(e) {
     {
       channel: O,
       user: j,
-      nick: A,
-      mute: Z,
-      deaf: x,
+      nick: x,
+      mute: A,
+      deaf: Z,
       serverMute: w,
       serverDeaf: L
     } = e,
@@ -109,7 +109,7 @@ function j(e) {
     }),
     k = null != (t = O.getGuildId()) ? t : void 0,
     M = j.getAvatarURL(O.guild_id, 24),
-    U = null != A ? A : y.ZP.getName(j),
+    U = null != x ? x : y.ZP.getName(j),
     {
       icon: G,
       colorize: V,
@@ -129,9 +129,9 @@ function j(e) {
       if (i) return P.mute
     }({
       serverDeaf: L,
-      deaf: x,
+      deaf: Z,
       serverMute: w,
-      mute: Z,
+      mute: A,
       localMute: R
     })) ? l : {},
     B = null != H ? I.intl.formatToPlainString(I.t["1+MVBA"], {
@@ -207,7 +207,7 @@ function j(e) {
   })
 }
 
-function A(e) {
+function x(e) {
   let {
     voiceStates: t,
     channel: n,
