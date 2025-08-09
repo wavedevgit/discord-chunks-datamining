@@ -384,7 +384,7 @@ class x extends y.ZP {
       if (this._aborted) return;
       if (t.length > 0 && t[0].success) {
         let e = t[0];
-        this.item.file = (0, v.ub)(e), this.currentSize = this.item.file.size, this.uploadAnalytics.convertedMimeType = "image/webp", C.log("webp conversion worked for ".concat(this.id, ": ").concat(e.sizeBefore, " -> ").concat(e.sizeAfter, " bytes (").concat(e.compressionRatio.toFixed(2), "x)"))
+        this.item.file = (0, v.ub)(e), this.currentSize = this.item.file.size, this.uploadAnalytics.convertedMimeType = "image/webp", null != e.hashTimeMs && (this.uploadAnalytics.timing.hashTimeMs = e.hashTimeMs), C.log("webp conversion worked for ".concat(this.id, ": ").concat(e.sizeBefore, " -> ").concat(e.sizeAfter, " bytes (").concat(e.compressionRatio.toFixed(2), "x)"))
       } else {
         var n, r;
         let e = null != (r = null == (n = t[0]) ? void 0 : n.reason) ? r : "unknown";
