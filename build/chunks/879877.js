@@ -52,7 +52,7 @@ let f = e => {
     } = e, l = (0, c.z)(t);
     if (null == l) return null;
     let {
-      text: o,
+      getText: o,
       icon: a
     } = l;
     return (0, r.jsxs)("div", {
@@ -63,7 +63,7 @@ let f = e => {
       }), (0, r.jsx)(i.Text, {
         variant: "text-xxs/medium",
         color: "text-secondary",
-        children: o
+        children: o()
       })]
     })
   },
@@ -80,6 +80,7 @@ let f = e => {
         onClick: n,
         className: d.expandButton,
         innerRef: l,
+        "aria-label": s.intl.string(s.t.mriLXF),
         children: (0, r.jsx)(i.Text, {
           variant: "text-xxs/medium",
           color: "text-secondary",
@@ -98,6 +99,7 @@ let f = e => {
       children: (0, r.jsx)(i.P3F, {
         onClick: t,
         className: d.collapseButton,
+        "aria-label": s.intl.string(s.t.z9VPra),
         children: (0, r.jsx)(o.Z, {
           direction: o.Z.Directions.LEFT,
           width: 12,

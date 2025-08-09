@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 let r, i, l;
 n.d(t, {
-  Z: () => h
+  Z: () => f
 }), n(388685);
 var a, o, s, c = n(442837),
   u = n(570140);
@@ -25,7 +25,7 @@ s = "ApplicationStatisticsStore", (o = "displayName") in p ? Object.defineProper
   configurable: !0,
   writable: !0
 }) : p[o] = s;
-let h = new p(u.Z, {
+let f = new p(u.Z, {
   APPLICATION_ACTIVITY_STATISTICS_FETCH_START: function(e) {
     let {
       applicationId: t

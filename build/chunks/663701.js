@@ -12,8 +12,8 @@ var r = n(255367),
   u = n(873546),
   d = n(442837),
   p = n(704215),
-  h = n(952265),
-  f = n(755721),
+  f = n(952265),
+  h = n(755721),
   g = n(481060),
   m = n(493683),
   b = n(529103),
@@ -121,29 +121,29 @@ let es = e => {
       }, {
         autoTrackExposure: !1
       }),
-      h = o && p;
+      f = o && p;
     i.useEffect(() => {
-      h && (0, E.h)({
+      f && (0, E.h)({
         name: s.ImpressionNames.GIFT_INTENT_BADGE,
         type: s.ImpressionTypes.VIEW,
         properties: {
           gift_intent_type: et.hX.FRIEND_ANNIVERSARY
         }
       })
-    }, [h]);
-    let [f, m] = i.useState(!1);
+    }, [f]);
+    let [h, m] = i.useState(!1);
     return (0, r.jsxs)("div", {
       className: ei.friendsButtonContainer,
       children: [(0, r.jsx)(X.Qj, ea(el({
         onClick: () => {
           let e;
-          h ? (K.default.track($.rMx.GIFT_INTENT_BADGE_CLICKED, {
+          f ? (K.default.track($.rMx.GIFT_INTENT_BADGE_CLICKED, {
             gift_intent_type: et.hX.FRIEND_ANNIVERSARY
           }), e = $.pJs.ALL, b.Z.setSection($.pJs.ALL), (0, Z.Gk)()) : e = Y.ZP.getState().section, (0, O.Z)({
             tab_opened: e
           })
         },
-        interactiveClassName: h ? ei.friendsBadge : void 0,
+        interactiveClassName: f ? ei.friendsBadge : void 0,
         selected: t,
         route: $.Z5c.FRIENDS,
         icon: g.iFz,
@@ -158,12 +158,12 @@ let es = e => {
         children: a > 0 ? (0, r.jsx)(g.mAB, {
           count: a
         }) : null
-      })), h && !u && (0, r.jsx)(k.Z, {
+      })), f && !u && (0, r.jsx)(k.Z, {
         className: ei.confetti,
         wind: 0,
         sprites: ee.CA,
         spriteColors: ee.Br,
-        firing: f,
+        firing: h,
         confettiConfig: {
           opacity: {
             type: "static",
@@ -240,18 +240,18 @@ let es = e => {
       },
       interactiveClassName: ei.familyCenterLinkButton
     }, l), {
-      children: (0, r.jsx)(eh, {
+      children: (0, r.jsx)(ef, {
         isParentHovered: a
       })
     }))
   },
-  eh = e => {
+  ef = e => {
     let {
       isParentHovered: t
     } = e, i = (0, P.gU)();
     return t ? (0, r.jsx)(X.bU, {
       onClick: () => {
-        (0, h.ZD)(async () => {
+        (0, f.ZD)(async () => {
           let {
             default: e
           } = await n.e("44153").then(n.bind(n, 760949));
@@ -278,7 +278,7 @@ let es = e => {
       }
     })
   },
-  ef = () => (0, M.$Z)("DM_SEARCH");
+  eh = () => (0, M.$Z)("DM_SEARCH");
 
 function eg(e) {
   switch (e) {
@@ -301,7 +301,7 @@ let em = i.memo(function(e) {
     isReferralProgramPopoverShowable: c,
     shouldShowMessageRequestsRow: d,
     shouldShowFamilyCenterRow: p,
-    selectedChannelId: h,
+    selectedChannelId: f,
     path: g
   } = e, m = i.useRef(null), b = i.useRef(null), _ = i.useRef(null), O = i.useRef(null), E = A.ZP.useExperiment({
     location: "NitroTabButton"
@@ -319,18 +319,18 @@ let em = i.memo(function(e) {
         className: a()(ei.searchBar, {
           [ei.themedHeaderMobile]: u.tq
         }),
-        children: (0, r.jsx)(f.zx, {
+        children: (0, r.jsx)(h.zx, {
           grow: !0,
-          color: f.zx.Colors.PRIMARY,
-          size: f.zx.Sizes.SMALL,
+          color: h.zx.Colors.PRIMARY,
+          size: h.zx.Sizes.SMALL,
           fullWidth: !0,
-          onClick: ef,
+          onClick: eh,
           children: en.intl.string(en.t.LzcpeX)
         })
       })
     }), (0, r.jsxs)(Q.Z, ea(el({}, e), {
       version: g,
-      selectedChannelId: h,
+      selectedChannelId: f,
       showDMHeader: !0,
       listScrollerRef: _,
       children: [(0, r.jsx)(es, {
@@ -409,8 +409,8 @@ function e_() {
       selected: null == c ? t : c.startsWith($.Z5c.APPLICATION_STORE)
     }),
     p = (0, L.eW)(),
-    h = (0, N.a)(),
-    f = function() {
+    f = (0, N.a)(),
+    h = function() {
       let e = H.Ex.useSetting(),
         t = (0, T.Z)();
       return !0 === e && !0 === t
@@ -424,8 +424,8 @@ function e_() {
     premiumTabSelected: t,
     shouldShowNitroTab: u,
     isReferralProgramPopoverShowable: p,
-    shouldShowMessageRequestsRow: h,
-    shouldShowFamilyCenterRow: f,
+    shouldShowMessageRequestsRow: f,
+    shouldShowFamilyCenterRow: h,
     selectedChannelId: s,
     path: c
   })

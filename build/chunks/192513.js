@@ -1,6 +1,6 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  Z: () => f
+  Z: () => h
 });
 var r, i, l, a = n(442837),
   o = n(570140),
@@ -14,7 +14,7 @@ function p() {
   if (null == e || e.mfaEnabled === d) return !1;
   d = e.mfaEnabled
 }
-class h extends(l = a.ZP.Store) {
+class f extends(l = a.ZP.Store) {
   initialize() {
     this.waitFor(c.default, s.ZP), this.syncWith([c.default, s.ZP], p)
   }
@@ -22,13 +22,13 @@ class h extends(l = a.ZP.Store) {
     return null != e && e.mfaLevel === u.BpS.ELEVATED && !1 === d && s.ZP.hasElevatedPermissions(e.id)
   }
 }
-i = "GuildMFAWarningStore", (r = "displayName") in h ? Object.defineProperty(h, r, {
+i = "GuildMFAWarningStore", (r = "displayName") in f ? Object.defineProperty(f, r, {
   value: i,
   enumerable: !0,
   configurable: !0,
   writable: !0
-}) : h[r] = i;
-let f = new h(o.Z, {
+}) : f[r] = i;
+let h = new f(o.Z, {
   CONNECTION_OPEN: p,
   GUILD_UPDATE: function() {
     return !0

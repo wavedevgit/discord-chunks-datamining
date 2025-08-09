@@ -12,8 +12,8 @@ var r = n(255367),
   u = n(586902),
   d = n(393903),
   p = n(448986),
-  h = n(100527),
-  f = n(906732),
+  f = n(100527),
+  h = n(906732),
   g = n(522651),
   m = n(795318),
   b = n(512384),
@@ -92,7 +92,7 @@ function j(e) {
   let d = i.useRef(null),
     {
       parentAnalyticsLocation: p
-    } = (0, f.ZP)(),
+    } = (0, h.ZP)(),
     {
       channel: O,
       user: j,
@@ -149,7 +149,7 @@ function j(e) {
         guildId: k,
         channel: O,
         showMediaItems: !0,
-        onInteraction: (0, m.u)("GuildChannelUserContextMenu", h.Z.RTC_PANEL, {
+        onInteraction: (0, m.u)("GuildChannelUserContextMenu", f.Z.RTC_PANEL, {
           targetUserId: j.id
         })
       }))
@@ -160,7 +160,7 @@ function j(e) {
       return t => (0, r.jsx)(e, N(S({}, t), {
         user: j,
         showMediaItems: !0,
-        onInteraction: (0, m.u)("UserGenericContextMenu", h.Z.RTC_PANEL, {
+        onInteraction: (0, m.u)("UserGenericContextMenu", f.Z.RTC_PANEL, {
           targetUserId: j.id
         })
       }))
@@ -212,8 +212,8 @@ function x(e) {
     voiceStates: t,
     channel: n,
     className: l
-  } = e, [c, u] = i.useState(!1), h = (0, o.e7)([O.default], () => O.default.getId()), {
-    containerRef: f,
+  } = e, [c, u] = i.useState(!1), f = (0, o.e7)([O.default], () => O.default.getId()), {
+    containerRef: h,
     maxVisibleAvatars: g
   } = function(e) {
     let [t, n] = i.useState(7), r = (0, p.Z)(() => {
@@ -236,7 +236,7 @@ function x(e) {
         if (r.length >= n) return [r, !0];
         r.push(i)
       } return [r, !1]
-  }(t, h, g), _ = c ? s.V_R : s.qJs, E = (0, r.jsx)(s.M0o, {
+  }(t, f, g), _ = c ? s.V_R : s.qJs, E = (0, r.jsx)(s.M0o, {
     onClick: () => u(!c),
     color: s.YX$.PRIMARY,
     size: s.tT7.SIZE_24,
@@ -251,7 +251,7 @@ function x(e) {
     className: a()(C.scroller, l),
     fade: !0,
     children: (0, r.jsxs)("div", {
-      ref: f,
+      ref: h,
       className: a()(C.voiceUsers, !c && C.collapsed),
       role: "group",
       "aria-label": I.intl.string(I.t["/ZgaVV"]),
@@ -261,7 +261,7 @@ function x(e) {
           nick: i,
           voiceState: l
         } = e;
-        return t.id !== h ? (0, r.jsx)(j, {
+        return t.id !== f ? (0, r.jsx)(j, {
           channel: n,
           user: t,
           nick: i,

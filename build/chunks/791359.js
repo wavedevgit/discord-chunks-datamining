@@ -12,8 +12,8 @@ var r = n(255367),
   u = n(481060),
   d = n(570140),
   p = n(509212),
-  h = n(569984),
-  f = n(93127),
+  f = n(569984),
+  h = n(93127),
   g = n(752048),
   m = n(594174),
   b = n(801077),
@@ -45,11 +45,11 @@ let x = 15 * O.Z.Millis.MINUTE,
       quest: a
     }), {
       partiedMembers: p,
-      applicationStreams: h,
-      currentActivities: f,
+      applicationStreams: f,
+      currentActivities: h,
       voiceChannels: g
-    } = t, m = p.length, b = h.length, O = f.length, E = g.length > 0, S = i.useCallback(() => {
-      let e = f.filter(e => {
+    } = t, m = p.length, b = f.length, O = h.length, E = g.length > 0, S = i.useCallback(() => {
+      let e = h.filter(e => {
         var t, n;
         return (null == (t = e.game) ? void 0 : t.name) != null && (0, _.isGameApplicationType)(null == (n = e.game) ? void 0 : n.type)
       }).map(e => e.game.name);
@@ -60,7 +60,7 @@ let x = 15 * O.Z.Millis.MINUTE,
         in_voice_channel: E,
         games_detected: e
       })
-    }, [m, b, O, E, f]), T = s()(S, x);
+    }, [m, b, O, E, h]), T = s()(S, x);
     return null != c || null != d ? (0, r.jsx)(u.yRy, {
       targetElementRef: o,
       position: "left",
@@ -118,7 +118,7 @@ let x = 15 * O.Z.Millis.MINUTE,
       }
     }) : null
   }),
-  Z = a().throttle(() => f._(), 3e5);
+  Z = a().throttle(() => h._(), 3e5);
 
 function w() {
   let {
@@ -133,7 +133,7 @@ function w() {
     needsRefresh: g.Z.shouldFetch(),
     fetching: g.Z.isFetching(),
     currentUser: m.default.getCurrentUser()
-  })), o = (0, c.e7)([h.Z], () => h.Z.quests);
+  })), o = (0, c.e7)([f.Z], () => f.Z.quests);
   i.useEffect(() => (d.Z.wait(() => E.L()), () => d.Z.wait(() => E.v())), [null == a ? void 0 : a.id]), i.useEffect(() => {
     n && !l && Z()
   }, [n, l]);
@@ -151,8 +151,8 @@ function w() {
       });
       return t
     }, [e, o]),
-    f = null;
-  return t ? f = e.length > 0 ? e.map(e => {
+    h = null;
+  return t ? h = e.length > 0 ? e.map(e => {
     let {
       party: t
     } = e;

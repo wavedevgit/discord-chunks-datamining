@@ -12,8 +12,8 @@ var r = n(255367),
   u = n(780384),
   d = n(481060),
   p = n(393238),
-  h = n(410030),
-  f = n(204418),
+  f = n(410030),
+  h = n(204418),
   g = n(70097),
   m = n(594174),
   b = n(626135),
@@ -34,7 +34,7 @@ let P = (0, i.memo)(function(e) {
   } = e, [Z, w] = (0, i.useState)(!1), [L, R] = (0, i.useState)(24), [D, k] = (0, i.useState)(!1), M = (0, i.useRef)(null), U = (0, i.useRef)(null), G = (0, i.useRef)(null), V = (0, c.e7)([m.default], () => m.default.getCurrentUser()), {
     ref: H,
     height: B = 0
-  } = (0, p.ZP)(), F = (0, h.ZP)(), z = (0, O.B6)(null == (t = A.userStatus) ? void 0 : t.claimedAt, {
+  } = (0, p.ZP)(), F = (0, f.ZP)(), z = (0, O.B6)(null == (t = A.userStatus) ? void 0 : t.claimedAt, {
     month: "numeric",
     day: "numeric"
   }), W = null != (j = null == (n = A.userStatus) ? void 0 : n.claimedTier) ? j : 0, Y = A.config.rewards[W], K = (null == Y ? void 0 : Y.type) === s.w.FRACTIONAL_PREMIUM, q = (null == Y ? void 0 : Y.type) === s.w.COLLECTIBLE, X = (null == Y ? void 0 : Y.type) === s.w.VIRTUAL_CURRENCY, Q = null == Y || null == (P = Y.collectibleProduct) || null == (l = P.items) ? void 0 : l[0], J = (null == Q ? void 0 : Q.type) === o.Z.AVATAR_DECORATION ? Q : null;
@@ -119,7 +119,7 @@ let P = (0, i.memo)(function(e) {
         style: {
           top: L
         },
-        children: (0, r.jsx)(f.Z, {
+        children: (0, r.jsx)(h.Z, {
           avatarDecorationOverride: J,
           user: V,
           guildId: null

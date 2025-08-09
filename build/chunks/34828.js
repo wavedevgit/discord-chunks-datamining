@@ -12,9 +12,9 @@ var r, i = n(392711),
   u = n(131951),
   d = n(358085),
   p = n(533583),
-  h = n(65154);
+  f = n(65154);
 
-function f(e, t, n) {
+function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -83,7 +83,7 @@ class N extends(r = a.ZP.DeviceSettingsStore) {
     return v
   }
 }
-f(N, "displayName", "ConnectedDeviceStore"), f(N, "persistKey", "ConnectedDeviceStore"), f(N, "migrations", [e => {
+h(N, "displayName", "ConnectedDeviceStore"), h(N, "persistKey", "ConnectedDeviceStore"), h(N, "migrations", [e => {
   if (null == e.ignoredDevices) {
     var t, n;
     return t = function(e) {
@@ -93,7 +93,7 @@ f(N, "displayName", "ConnectedDeviceStore"), f(N, "persistKey", "ConnectedDevice
         "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
           return Object.getOwnPropertyDescriptor(n, e).enumerable
         }))), r.forEach(function(t) {
-          f(e, t, n[t])
+          h(e, t, n[t])
         })
       }
       return e
@@ -119,7 +119,7 @@ let T = new N(o.Z, {
       outputDevices: n
     } = e, r = {};
     y.justChanged = !1, t.forEach(e => {
-      if (r[C(e)] = e.id, e.id === h.w5) {
+      if (r[C(e)] = e.id, e.id === f.w5) {
         var t;
         let n = null != (t = e.originalId) ? t : e.originalName;
         n !== y.id && (y.justChanged = !0), y.id = n
@@ -127,7 +127,7 @@ let T = new N(o.Z, {
     });
     let i = {};
     if (v.justChanged = !1, n.forEach(e => {
-        if (i[C(e)] = e.id, e.id === h.w5) {
+        if (i[C(e)] = e.id, e.id === f.w5) {
           var t;
           let n = null != (t = e.originalId) ? t : e.originalName;
           n !== v.id && (v.justChanged = !0), v.id = n

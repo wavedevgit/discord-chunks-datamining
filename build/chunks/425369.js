@@ -12,8 +12,8 @@ var r = n(255367),
   u = n(895991),
   d = n(993977),
   p = n(981631),
-  h = n(388032),
-  f = n(714943);
+  f = n(388032),
+  h = n(714943);
 
 function g() {
   return (0, r.jsxs)(l.rs, {
@@ -24,7 +24,7 @@ function g() {
         page: p.ZY5.LIBRARY_SETTINGS,
         root: !0,
         children: [(0, r.jsx)(s.yY, {
-          subsection: h.intl.string(h.t["3D5yo6"])
+          subsection: f.intl.string(f.t["3D5yo6"])
         }), (0, r.jsx)(d.Z, {})]
       })
     }), (0, r.jsx)(o.Z, {
@@ -33,7 +33,7 @@ function g() {
         page: p.ZY5.LIBRARY,
         root: !0,
         children: [(0, r.jsx)(s.yY, {
-          subsection: h.intl.string(h.t.p7ARTE)
+          subsection: f.intl.string(f.t.p7ARTE)
         }), (0, r.jsx)(u.Z, {})]
       })
     })]
@@ -43,9 +43,9 @@ let m = i.memo(function() {
   return i.useEffect(() => {
     (0, c.e)("application_library")
   }, []), (0, r.jsxs)("div", {
-    className: f.container,
+    className: h.container,
     children: [(0, r.jsx)(s.yY, {
-      location: h.intl.string(h.t.cw57am)
+      location: f.intl.string(f.t.cw57am)
     }), (0, r.jsx)(g, {})]
   })
 })

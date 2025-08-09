@@ -12,8 +12,8 @@ var r = n(255367),
   u = n(26323),
   d = n(433280),
   p = n(34131),
-  h = n(434404),
-  f = n(567458),
+  f = n(434404),
+  h = n(567458),
   g = n(782959),
   m = n(538445),
   b = n(933104),
@@ -34,13 +34,13 @@ var r = n(255367),
   Z = n(31932);
 
 function w(e) {
-  null != e && h.Z.open(e.id, I.pNK.BOOST_PERKS, {
+  null != e && f.Z.open(e.id, I.pNK.BOOST_PERKS, {
     section: I.jXE.PREMIUM_GUILD_PROGRESS_BAR
   })
 }
 
 function L(e, t) {
-  null != t && ((0, y.f2)(t, I.Eu4.TIER_1) ? h.Z.open(t.id, I.pNK.BOOST_PERKS, {
+  null != t && ((0, y.f2)(t, I.Eu4.TIER_1) ? f.Z.open(t.id, I.pNK.BOOST_PERKS, {
     section: I.jXE.PREMIUM_GUILD_INVITE_SPLASH
   }) : (0, u.Z)({
     analyticsLocations: e,
@@ -79,7 +79,7 @@ let D = i.memo(function(e) {
     renderGuildHeaderDropdownButton: o
   } = e, {
     analyticsLocations: u
-  } = (0, s.ZP)(), h = () => {
+  } = (0, s.ZP)(), f = () => {
     E.default.track(I.rMx.TOOLTIP_VIEWED, {
       type: N.cd.PREMIUM_PROGRESS_BAR,
       location: {
@@ -125,7 +125,7 @@ let D = i.memo(function(e) {
         case l.z.GUILD_HEADER_PREMIUM_GUILD_PROGRESS:
           return (0, r.jsx)(R, {
             renderPopout: (0, r.jsx)(O.ZP, {
-              onComponentMount: h,
+              onComponentMount: f,
               header: T.intl.string(T.t.nxtaFx),
               asset: (0, r.jsx)("img", {
                 alt: "",
@@ -144,7 +144,7 @@ let D = i.memo(function(e) {
         case l.z.GUILD_HEADER_PROGRESS_BAR_SIZE_COACH_MARK:
           return (0, r.jsx)(R, {
             renderPopout: (0, r.jsx)(O.ZP, {
-              onComponentMount: h,
+              onComponentMount: f,
               header: T.intl.string(T.t.KAsfPT),
               asset: (0, r.jsx)("img", {
                 alt: "",
@@ -201,7 +201,7 @@ let D = i.memo(function(e) {
           });
         case l.z.STUDENT_HUB_PRIVACY_SETTINGS_TOOLTIP:
           return (0, r.jsx)(R, {
-            renderPopout: (0, r.jsx)(f.Z, {
+            renderPopout: (0, r.jsx)(h.Z, {
               markAsDismissed: M
             }),
             renderGuildHeaderDropdownButton: o

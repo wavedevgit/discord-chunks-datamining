@@ -12,8 +12,8 @@ var r = n(255367),
   u = n(481060),
   d = n(749210),
   p = n(558381),
-  h = n(666743),
-  f = n(770146),
+  f = n(666743),
+  h = n(770146),
   g = n(600164),
   m = n(565138),
   b = n(41776),
@@ -73,7 +73,7 @@ class T extends i.PureComponent {
     if (t && n) return null;
     let d = (0, y.B3)(e),
       p = C.intl.string(C.t.pxwdrK),
-      h = this.handleJoinOrView,
+      f = this.handleJoinOrView,
       b = c.zx.Looks.FILLED,
       _ = c.zx.Colors.PRIMARY;
     return l ? n ? (b = c.zx.Looks.OUTLINED, _ = S.buttonColorInGuild, p = (0, r.jsxs)(g.Z, {
@@ -85,9 +85,9 @@ class T extends i.PureComponent {
         color: "currentColor",
         className: S.joinedCheckmark
       })]
-    })) : i && t && (p = C.intl.string(C.t.XpeFYm)) : (p = C.intl.string(C.t.dKhVQE), h = this.handleLogin), (0, r.jsxs)("div", {
+    })) : i && t && (p = C.intl.string(C.t.XpeFYm)) : (p = C.intl.string(C.t.dKhVQE), f = this.handleLogin), (0, r.jsxs)("div", {
       className: a()(o, s === v.b.SMALL ? S.inviteSmall : S.inviteLarge),
-      children: [(0, r.jsx)(f.Z, {
+      children: [(0, r.jsx)(h.Z, {
         children: C.intl.string(C.t.s1KcLi)
       }), (0, r.jsxs)("div", {
         className: S.content,
@@ -111,7 +111,7 @@ class T extends i.PureComponent {
           fullWidth: !0,
           color: _,
           look: b,
-          onClick: h,
+          onClick: f,
           children: p
         })]
       })]
@@ -144,7 +144,7 @@ class T extends i.PureComponent {
     })
   }
 }
-let P = (0, h.Z)(s.ZP.connectStores([E.Z, b.Z], e => {
+let P = (0, f.Z)(s.ZP.connectStores([E.Z, b.Z], e => {
   let {
     guild: t
   } = e, n = b.Z.isLurking(t.id);

@@ -12,8 +12,8 @@ var r = n(255367),
   u = n(377743),
   d = n(834743),
   p = n(862099),
-  h = n(704631),
-  f = n(819792),
+  f = n(704631),
+  h = n(819792),
   g = n(919285),
   m = n(118470),
   b = n(413307),
@@ -35,8 +35,8 @@ function P(e) {
   var t;
   let {
     guild: n
-  } = e, [p, f] = i.useState(null != (t = o.K.get(C.Iv)) ? t : 0), g = e => {
-    o.K.set(C.Iv, e), f(e)
+  } = e, [p, h] = i.useState(null != (t = o.K.get(C.Iv)) ? t : 0), g = e => {
+    o.K.set(C.Iv, e), h(e)
   }, m = (0, l.Wu)(C.HG, () => C.XN.filter(e => {
     let {
       dismissibleContentType: t,
@@ -56,7 +56,7 @@ function P(e) {
       }, o = (() => {
         switch (t) {
           case a.z.CHANNEL_NOTICE_HUBLINK:
-            return (0, r.jsx)(h.Z, {
+            return (0, r.jsx)(f.Z, {
               guild: n,
               markAsDismissed: l
             });
@@ -126,7 +126,7 @@ let j = e => {
         guild: t
       });
     case I.R.HUB_STUDY_ROOM:
-      return (0, r.jsx)(f.Z, {
+      return (0, r.jsx)(h.Z, {
         guild: t
       })
   }

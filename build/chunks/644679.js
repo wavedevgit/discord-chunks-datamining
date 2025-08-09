@@ -1,6 +1,6 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  Z: () => f
+  Z: () => h
 }), n(388685);
 var r = n(255367),
   i = n(481060),
@@ -20,7 +20,7 @@ function d(e, t, n) {
   }) : e[t] = n, e
 }
 let p = "CollectiblesExpiryModal";
-class h extends a.Z {
+class f extends a.Z {
   _initialize() {
     l.Z.subscribe("POST_CONNECTION_OPEN", this.handleMaybeOpenModal), l.Z.subscribe("CURRENT_USER_UPDATE", this.handleMaybeOpenModal)
   }
@@ -37,9 +37,9 @@ class h extends a.Z {
       var e, t;
       let l = s.default.getCurrentUser(),
         a = o.Z.getState(),
-        h = null == l || null == (e = l.avatarDecoration) ? void 0 : e.skuId,
-        f = null == l || null == (t = l.avatarDecoration) ? void 0 : t.expiresAt;
-      return null != l && !!(null != f && 1e3 * f < Date.now()) && a !== u.hes.RTC_CONNECTED && ((0, i.Mr3)(p), (0, i.ZDy)(async () => {
+        f = null == l || null == (e = l.avatarDecoration) ? void 0 : e.skuId,
+        h = null == l || null == (t = l.avatarDecoration) ? void 0 : t.expiresAt;
+      return null != l && !!(null != h && 1e3 * h < Date.now()) && a !== u.hes.RTC_CONNECTED && ((0, i.Mr3)(p), (0, i.ZDy)(async () => {
         let {
           default: e
         } = await n.e("77370").then(n.bind(n, 83950));
@@ -57,7 +57,7 @@ class h extends a.Z {
             }
             return e
           }({}, t), i = i = {
-            skuId: h
+            skuId: f
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {
@@ -75,4 +75,4 @@ class h extends a.Z {
     })
   }
 }
-let f = new h
+let h = new f

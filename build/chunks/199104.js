@@ -13,8 +13,8 @@ var i = n(442837),
   u = n(313201),
   d = n(243778),
   p = n(352455),
-  h = n(480294),
-  f = n(791359),
+  f = n(480294),
+  h = n(791359),
   g = n(981631),
   m = n(388032),
   b = n(530925);
@@ -22,7 +22,7 @@ var i = n(442837),
 function _() {
   let {
     analyticsLocations: e
-  } = (0, c.ZP)(s.Z.ACTIVE_NOW_COLUMN), t = (0, i.e7)([h.Z], () => h.Z.hasConsented(g.pjP.PERSONALIZATION)) ? [] : [l.z.NOW_PLAYING_CONSENT_CARD], n = (0, u.Dt)();
+  } = (0, c.ZP)(s.Z.ACTIVE_NOW_COLUMN), t = (0, i.e7)([f.Z], () => f.Z.hasConsented(g.pjP.PERSONALIZATION)) ? [] : [l.z.NOW_PLAYING_CONSENT_CARD], n = (0, u.Dt)();
   return (0, r.jsx)(c.Gt, {
     value: e,
     children: (0, r.jsx)(o.Z, {
@@ -49,7 +49,7 @@ function _() {
                 markAsDismissed: n
               })
             }
-          }), (0, r.jsx)(f.Z, {})]
+          }), (0, r.jsx)(h.Z, {})]
         })
       })
     })

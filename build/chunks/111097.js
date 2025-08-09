@@ -12,13 +12,13 @@ var r = n(72924),
   u = n(852926),
   d = n(186901),
   p = n(981631),
-  h = n(474936);
-let f = [i.Z.RPC];
+  f = n(474936);
+let h = [i.Z.RPC];
 
 function g(e, t) {
   let n = {
-    subscriptionTier: h.Si.TIER_2,
-    analyticsLocations: f,
+    subscriptionTier: f.Si.TIER_2,
+    analyticsLocations: h,
     analyticsObject: t
   };
   switch (e) {
@@ -52,7 +52,7 @@ let m = {
       }, "No application.");
       let {
         lock: o,
-        context: h
+        context: f
       } = (0, u.jU)(t.transport !== d.He.POST_MESSAGE ? i : null);
       if (null == (0, s.Z)()) throw new a.Z({
         errorCode: p.lTL.INVALID_CHANNEL
@@ -65,10 +65,10 @@ let m = {
           let e = await (0, r.S)({
             applicationId: l,
             skuId: n,
-            openPremiumPaymentModal: () => g(h, m),
-            analyticsLocations: f,
+            openPremiumPaymentModal: () => g(f, m),
+            analyticsLocations: h,
             analyticsLocationObject: m,
-            context: h
+            context: f
           });
           return o(), e
         } catch (e) {

@@ -12,8 +12,8 @@ var r = n(255367),
   u = n(481060),
   d = n(906732),
   p = n(213609),
-  h = n(963249),
-  f = n(579185),
+  f = n(963249),
+  h = n(579185),
   g = n(752048),
   m = n(626135),
   b = n(479446),
@@ -44,7 +44,7 @@ function P(e) {
     setIsHovered: A,
     onMouseEnter: Z,
     onMouseLeave: w
-  } = (0, f.Z)(200, 300), {
+  } = (0, h.Z)(200, 300), {
     enableEmojiCTA: L
   } = _.w.useExperiment({
     location: "GiftIntentActionButton"
@@ -71,7 +71,7 @@ function P(e) {
       m.default.track(I.rMx.GIFT_INTENT_ACTION_BUTTON_CLICKED, {
         gift_intent_type: n,
         affinity: null == r ? void 0 : r.communicationProbability
-      }), (0, h.Z)({
+      }), (0, f.Z)({
         isGift: !0,
         initialPlanId: null,
         giftRecipient: t,

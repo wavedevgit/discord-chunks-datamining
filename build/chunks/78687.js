@@ -1,6 +1,6 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  Z: () => f
+  Z: () => h
 }), n(388685), n(539854), n(35282);
 var r = n(392711),
   i = n.n(r),
@@ -13,7 +13,7 @@ var r = n(392711),
   d = n(981631);
 let p = "selectedChannelGuildFrecency";
 
-function h(e) {
+function f(e) {
   let {
     state: t
   } = l.ZP.PersistedStore.migrateAndReadStoreState("GIFFavoritesStore", [e => null == e ? {
@@ -34,10 +34,10 @@ function h(e) {
     }
   })
 }
-let f = [{
+let h = [{
   version: 2,
   run(e) {
-    let t = h(1);
+    let t = f(1);
     if (0 === t.length) return !1;
     for (let {
         url: n,
@@ -85,7 +85,7 @@ let f = [{
   version: 6,
   run(e) {
     null == e.favoriteGifs && (e.favoriteGifs = a.wK.create()), null == e.favoriteGifs.gifs && (e.favoriteGifs.gifs = {});
-    let t = h(1);
+    let t = f(1);
     if (0 === t.length) return !1;
     i()(e.favoriteGifs.gifs).values().sortBy("order").forEach((e, n) => e.order = t.length + 1 + n);
     let n = a.wK.toBinary(e.favoriteGifs).length,

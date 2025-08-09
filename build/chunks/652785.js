@@ -1,6 +1,6 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  HG: () => h,
+  HG: () => f,
   Iv: () => d,
   XN: () => p
 });
@@ -40,4 +40,4 @@ let d = "lastHiddenChannelNotice",
     type: u.vID.LINKED_ROLES_ADMIN,
     dismissibleContentType: r.z.LINKED_ROLE_ADMIN_GUILD
   }],
-  h = p.map(e => e.store).filter(c.lm)
+  f = p.map(e => e.store).filter(c.lm)

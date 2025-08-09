@@ -82,8 +82,8 @@ function x(e) {
     imageSrc: y,
     applicationId: v,
     comment: O,
-    tags: I
-  } = o, _ = (0, f.Z)(o.applicationId), P = _.length > 0, Z = () => (0, r.jsxs)(r.Fragment, {
+    tags: _
+  } = o, I = (0, f.Z)(o.applicationId), P = I.length > 0, Z = () => (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(d.Z, {
       imageSrc: y,
       gameName: x,
@@ -102,13 +102,13 @@ function x(e) {
         guildId: n,
         channelId: l
       }), (0, r.jsx)(u.Z, {
-        tags: I
+        tags: _
       }), P && (0, r.jsx)(s.Z, {
         label: m.intl.formatToPlainString(m.t.ujhJdH, {
-          numFriends: _.length
+          numFriends: I.length
         }),
         className: b.socialProof,
-        users: _,
+        users: I,
         guildId: n,
         channelId: l
       })]

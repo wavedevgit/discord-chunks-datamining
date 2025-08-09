@@ -65,8 +65,8 @@ function c(e) {
     }
     return i
   }(e, ["width", "height", "color", "foreground", "gradientConfig"]);
-  let h = null;
-  return null != d && (h = (0, r.jsx)(i.Z, o(a({}, d), {
+  let f = null;
+  return null != d && (f = (0, r.jsx)(i.Z, o(a({}, d), {
     color: c,
     id: s(d.id)
   }))), (0, r.jsxs)("svg", o(a({}, (0, l.Z)(p)), {
@@ -74,7 +74,7 @@ function c(e) {
     height: n,
     viewBox: "0 0 24 24",
     children: [(0, r.jsx)("defs", {
-      children: h
+      children: f
     }), (0, r.jsx)("path", {
       d: "M0 0h24v24H0z",
       fill: "none"

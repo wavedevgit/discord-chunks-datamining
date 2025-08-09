@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  H: () => f,
-  f: () => h
+  H: () => h,
+  f: () => f
 }), n(781311);
 var r = n(73800),
   i = n(442837),
@@ -14,7 +14,7 @@ var r = n(73800),
   d = n(859921),
   p = n(128449);
 
-function h(e) {
+function f(e) {
   let {
     loadId: t
   } = e, n = c.Z.useField("fetchedQuery"), l = c.Z.useField("categoryId"), a = c.Z.useField("languageCode"), u = r.useMemo(() => ({
@@ -24,10 +24,10 @@ function h(e) {
   }), [l, a, n]), d = (0, i.e7)([s.Z], () => {
     var e;
     return null != (e = s.Z.getGuildIds(u)) ? e : p.q5
-  }), h = (0, i.e7)([s.Z], () => {
+  }), f = (0, i.e7)([s.Z], () => {
     var e;
     return null != (e = s.Z.getIsFetching(u)) && e
-  }), f = c.Z.useField("resultsQuery"), g = f !== n, m = r.useCallback(() => {
+  }), h = c.Z.useField("resultsQuery"), g = h !== n, m = r.useCallback(() => {
     let e = s.Z.getGuildIds(u),
       n = s.Z.getTotal(u);
     if (null == e || null == n) return;
@@ -43,14 +43,14 @@ function h(e) {
   }, [t, u]);
   return r.useMemo(() => ({
     guildIds: d,
-    loading: g || h,
-    searchResultsQuery: f,
+    loading: g || f,
+    searchResultsQuery: h,
     loadMore: m,
     searchCategoryId: l
-  }), [d, g, h, f, m, l])
+  }), [d, g, f, h, m, l])
 }
 
-function f(e) {
+function h(e) {
   let {
     loadId: t
   } = e, n = d.Z.useField("isSearchVisible"), i = c.Z.useField("query");

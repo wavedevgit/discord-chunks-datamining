@@ -1,6 +1,6 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  Z: () => f
+  Z: () => h
 }), n(953529);
 var r = n(255367),
   i = n(73800),
@@ -24,7 +24,7 @@ let p = e => {
       })
     })
   },
-  h = e => {
+  f = e => {
     let {
       circle: t,
       smallHeader: n,
@@ -45,13 +45,13 @@ let p = e => {
       })]
     })
   };
-class f extends i.Component {
+class h extends i.Component {
   render() {
     let {
       reason: e,
       className: t
     } = this.props;
-    if (e.type === c.AzA.RECENT_RELEASE_DATE) return (0, r.jsx)(h, {
+    if (e.type === c.AzA.RECENT_RELEASE_DATE) return (0, r.jsx)(f, {
       className: t,
       circle: (0, r.jsx)(p, {
         IconComponent: o.Que
@@ -59,7 +59,7 @@ class f extends i.Component {
       smallHeader: u.intl.string(u.t.u81aYW),
       text: (0, s.vc)(e.releaseDate, "LL")
     });
-    if (e.type === c.AzA.RELEASE_DATE) return (0, r.jsx)(h, {
+    if (e.type === c.AzA.RELEASE_DATE) return (0, r.jsx)(f, {
       className: t,
       circle: (0, r.jsx)(p, {
         IconComponent: o.Que
@@ -68,7 +68,7 @@ class f extends i.Component {
       text: (0, s.vc)(e.releaseDate, "LL")
     });
     if (e.type === c.AzA.EARLY_ACCESS)
-      if (null != e.releaseDate) return (0, r.jsx)(h, {
+      if (null != e.releaseDate) return (0, r.jsx)(f, {
         className: t,
         circle: (0, r.jsx)(p, {
           IconComponent: o.d$P,
@@ -77,7 +77,7 @@ class f extends i.Component {
         smallHeader: u.intl.string(u.t.HYys0t),
         text: (0, s.vc)(e.releaseDate, "LL")
       });
-      else return (0, r.jsx)(h, {
+      else return (0, r.jsx)(f, {
         className: t,
         circle: (0, r.jsx)(p, {
           IconComponent: o.d$P,
@@ -85,13 +85,13 @@ class f extends i.Component {
         }),
         text: u.intl.string(u.t.HYys0t)
       });
-    return e.type === c.AzA.FLAVOR_TEXT ? (0, r.jsx)(h, {
+    return e.type === c.AzA.FLAVOR_TEXT ? (0, r.jsx)(f, {
       circle: (0, r.jsx)(p, {
         IconComponent: o.dz2
       }),
       text: e.flavorText,
       className: t
-    }) : e.type === c.AzA.HAS_FREE_PREMIUM_CONTENT ? (0, r.jsx)(h, {
+    }) : e.type === c.AzA.HAS_FREE_PREMIUM_CONTENT ? (0, r.jsx)(f, {
       className: t,
       circle: (0, r.jsx)(p, {
         IconComponent: o.SrA,

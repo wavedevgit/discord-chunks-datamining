@@ -12,9 +12,9 @@ var r = n(836560),
   u = n(631467),
   d = n(452426),
   p = n(186901),
-  h = n(981631);
+  f = n(981631);
 
-function f(e, t, n) {
+function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -35,28 +35,28 @@ class O extends r.EventEmitter {
     switch (i) {
       case u.Z.HANDSHAKE:
         if (null != e) throw new c.Z({
-          closeCode: h.$VG.CLOSE_UNSUPPORTED
+          closeCode: f.$VG.CLOSE_UNSUPPORTED
         }, "Already connected");
         return this.handleHandshake(t, l, r);
       case u.Z.FRAME:
         if (null == e) throw new c.Z({
-          closeCode: h.$VG.CLOSE_UNSUPPORTED
+          closeCode: f.$VG.CLOSE_UNSUPPORTED
         }, "Not connected");
         return this.handleFrame(t, e, l);
       case u.Z.CLOSE:
         if (null == e) throw new c.Z({
-          closeCode: h.$VG.CLOSE_UNSUPPORTED
+          closeCode: f.$VG.CLOSE_UNSUPPORTED
         }, "Not connected");
         return this.handleClose(e, l);
       default:
         throw new c.Z({
-          closeCode: h.$VG.CLOSE_UNSUPPORTED
+          closeCode: f.$VG.CLOSE_UNSUPPORTED
         }, "Invalid opcode")
     }
   }
   constructor(e, t, r, s) {
     var u;
-    super(), u = this, f(this, "validateSocketClient", void 0), f(this, "logger", void 0), f(this, "createPostMessageProxySocket", void 0), f(this, "onFrameHandled", void 0), f(this, "handshakeFailureTimeoutId", void 0), f(this, "disconnectSocket", function(e, t) {
+    super(), u = this, h(this, "validateSocketClient", void 0), h(this, "logger", void 0), h(this, "createPostMessageProxySocket", void 0), h(this, "onFrameHandled", void 0), h(this, "handshakeFailureTimeoutId", void 0), h(this, "disconnectSocket", function(e, t) {
       var n, r;
       let i = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
       u.emit("disconnect", e, i ? void 0 : t), e.close(t.code, null != (n = t.message) ? n : "Unknown");
@@ -65,14 +65,14 @@ class O extends r.EventEmitter {
         return r === e
       })) ? r : [null, null];
       null != l && m.delete(l)
-    }), f(this, "handleIFrameMount", e => {
+    }), h(this, "handleIFrameMount", e => {
       let {
         id: t
       } = e;
       b.add(t), this.handshakeFailureTimeoutId = setTimeout(() => {
         Array.from(i.ZP.getSelfEmbeddedActivities().entries()).forEach(e => {
           let [t, n] = e;
-          a.default.track(h.rMx.ACTIVITY_HANDSHAKE_TIMED_OUT, {
+          a.default.track(f.rMx.ACTIVITY_HANDSHAKE_TIMED_OUT, {
             application_id: t,
             channel_id: (0, l.p)(n.location),
             guild_id: (0, l.j)(n.location),
@@ -80,7 +80,7 @@ class O extends r.EventEmitter {
           })
         })
       }, g)
-    }), f(this, "handleIFrameUnmount", e => {
+    }), h(this, "handleIFrameUnmount", e => {
       var t;
       let {
         id: n
@@ -91,15 +91,15 @@ class O extends r.EventEmitter {
         return r.frameId === n
       })) ? t : [null, null];
       null != i && null != r && (this.disconnectSocket(i, {
-        code: h.$VG.CLOSE_NORMAL,
+        code: f.$VG.CLOSE_NORMAL,
         message: "iFrame gone"
       }, !0), m.delete(r))
-    }), f(this, "handleMessage", (e, t, n) => {
+    }), h(this, "handleMessage", (e, t, n) => {
       let r = m.get(t);
       try {
         this.routeEvent(r, t, e, n)
       } catch (e) {
-        if (e instanceof c.Z && e.errorCode === h.lTL.INVALID_PAYLOAD) throw e;
+        if (e instanceof c.Z && e.errorCode === f.lTL.INVALID_PAYLOAD) throw e;
         null != r ? this.disconnectSocket(r, {
           code: e.code,
           message: e.message
@@ -108,21 +108,21 @@ class O extends r.EventEmitter {
           message: e.message
         }, n)
       }
-    }), f(this, "handleFrame", (e, t, n) => {
+    }), h(this, "handleFrame", (e, t, n) => {
       var r;
       let i;
       if (e !== t.origin) throw new c.Z({
-        closeCode: h.$VG.INVALID_ORIGIN
+        closeCode: f.$VG.INVALID_ORIGIN
       }, "Origin has changed");
       try {
         i = "string" == typeof n ? JSON.parse(n) : n
       } catch (e) {
         throw new c.Z({
-          closeCode: h.$VG.CLOSE_UNSUPPORTED
+          closeCode: f.$VG.CLOSE_UNSUPPORTED
         }, "Payload not recognized encoding")
       }
       null == (r = this.onFrameHandled) || r.call(this, i, this.logger, t), this.emit("request", t, i)
-    }), f(this, "handleHandshake", async (e, t, r) => {
+    }), h(this, "handleHandshake", async (e, t, r) => {
       let i;
       null != this.handshakeFailureTimeoutId && clearTimeout(this.handshakeFailureTimeoutId);
       let l = (await n.e("85441").then(n.t.bind(n, 826753, 23))).default;
@@ -136,14 +136,14 @@ class O extends r.EventEmitter {
         }))
       } catch (e) {
         throw new c.Z({
-          closeCode: h.$VG.CLOSE_UNSUPPORTED
+          closeCode: f.$VG.CLOSE_UNSUPPORTED
         }, e.message)
       }
       let o = t.frame_id;
       if (!b.has(o)) throw this.logger.error("Unrecognized frame ID ".concat(o)), new c.Z({
-        closeCode: h.$VG.CLOSE_UNSUPPORTED
+        closeCode: f.$VG.CLOSE_UNSUPPORTED
       }, "Unrecognized frame ID ".concat(o));
-      null != t.sdk_version && a.default.track(h.rMx.ACTIVITY_HANDSHAKE, {
+      null != t.sdk_version && a.default.track(f.rMx.ACTIVITY_HANDSHAKE, {
         application_id: t.client_id,
         sdk_version: t.sdk_version
       });
@@ -164,25 +164,25 @@ class O extends r.EventEmitter {
       this.logger.info("Socket Opened: ".concat(i.id));
       try {
         if (await this.validateSocketClient(i, e, t.client_id), !b.has(o)) throw this.logger.error("Frame ID ".concat(o, " no longer exists")), new c.Z({
-          closeCode: h.$VG.CLOSE_UNSUPPORTED
+          closeCode: f.$VG.CLOSE_UNSUPPORTED
         }, "Unrecognized frame ID ".concat(o));
         m.set(e, i), b.delete(o), i.authorization.scopes.push(p.b_), this.emit("connect", i), this.logger.info("Socket Validated: ".concat(i.id))
       } catch (e) {
         throw this.logger.info("Socket Closed: ".concat(i.id, ", ").concat(e.message)), e
       }
-    }), f(this, "handleClose", async (e, t) => {
+    }), h(this, "handleClose", async (e, t) => {
       let r = (await n.e("85441").then(n.t.bind(n, 826753, 23))).default;
       try {
         r.assert(t, (0, d.Z)(r).required().keys({
-          code: r.number().valid(Object.values(h.$VG)).required(),
+          code: r.number().valid(Object.values(f.$VG)).required(),
           message: r.string().optional()
         }))
       } catch (e) {
         throw new c.Z({
-          closeCode: h.$VG.CLOSE_UNSUPPORTED
+          closeCode: f.$VG.CLOSE_UNSUPPORTED
         }, e.message)
       }
       this.disconnectSocket(e, t)
-    }), o.S.subscribe(h.CkL.IFRAME_MOUNT, this.handleIFrameMount), o.S.subscribe(h.CkL.IFRAME_UNMOUNT, this.handleIFrameUnmount), this.validateSocketClient = e, this.logger = t, this.createPostMessageProxySocket = r, this.onFrameHandled = s
+    }), o.S.subscribe(f.CkL.IFRAME_MOUNT, this.handleIFrameMount), o.S.subscribe(f.CkL.IFRAME_UNMOUNT, this.handleIFrameUnmount), this.validateSocketClient = e, this.logger = t, this.createPostMessageProxySocket = r, this.onFrameHandled = s
   }
 }

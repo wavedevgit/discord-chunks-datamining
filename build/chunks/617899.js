@@ -12,9 +12,9 @@ var r = n(255367),
   u = n(981631),
   d = n(921944),
   p = n(388032),
-  h = n(589148);
+  f = n(589148);
 
-function f(e, t, n) {
+function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -39,12 +39,12 @@ class g extends i.PureComponent {
       cta: t,
       trackingSource: u.PsQ.INVITE_NOTICE,
       type: u.vID.INVITE,
-      image: h,
+      image: f,
       imageMarginX: 46
     })
   }
   constructor(...e) {
-    super(...e), f(this, "handleInvite", () => {
+    super(...e), h(this, "handleInvite", () => {
       let {
         guild: e
       } = this.props;
@@ -61,7 +61,7 @@ class g extends i.PureComponent {
               "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
                 return Object.getOwnPropertyDescriptor(n, e).enumerable
               }))), r.forEach(function(t) {
-                f(e, t, n[t])
+                h(e, t, n[t])
               })
             }
             return e
@@ -80,7 +80,7 @@ class g extends i.PureComponent {
           }), i))
         }
       })
-    }), f(this, "handleClose", () => {
+    }), h(this, "handleClose", () => {
       let e = s.Z.getChannelId(),
         t = p.intl.formatToPlainString(p.t.DEn7np, {
           invitePeople: this.getInviteText()

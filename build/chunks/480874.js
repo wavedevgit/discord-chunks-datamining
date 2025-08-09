@@ -12,8 +12,8 @@ var r = n(255367),
   u = n(183126),
   d = n(493773),
   p = n(209613),
-  h = n(82295),
-  f = n(797614),
+  f = n(82295),
+  h = n(797614),
   g = n(626135),
   m = n(26373),
   b = n(486622),
@@ -51,7 +51,7 @@ function T() {
   (0, d.ZP)(() => {
     g.default.track(C.rMx.SPAM_MESSAGE_REQUESTS_VIEWED, {
       num_spam_message_requests: n
-    }), f.Z.increment({
+    }), h.Z.increment({
       name: s.V.SPAM_MESSAGE_REQUEST_VIEW
     })
   });
@@ -71,7 +71,7 @@ function T() {
         hasSingleMessageRequest: l
       }, u)
     }, [t, l, j]),
-    L = i.useCallback(() => (0, r.jsxs)(h.Z, {
+    L = i.useCallback(() => (0, r.jsxs)(f.Z, {
       className: N.sectionTitle,
       children: [S.intl.format(S.t.C79Edn, {
         count: n

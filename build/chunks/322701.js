@@ -1,6 +1,6 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  Z: () => h
+  Z: () => f
 });
 var r = n(255367),
   i = n(73800),
@@ -12,12 +12,12 @@ var r = n(255367),
   u = n(607070),
   d = n(981631),
   p = n(222001);
-let h = function(e) {
+let f = function(e) {
   let {
     rows: t,
     renderRow: n,
-    renderSection: h,
-    hasSearchQuery: f,
+    renderSection: f,
+    hasSearchQuery: h,
     sectionFilter: g,
     footer: m
   } = e, b = (0, o.e7)([u.Z], () => u.Z.keyboardModeEnabled), _ = (0, o.e7)([u.Z], () => u.Z.useReducedMotion), O = (0, l.ZP)({
@@ -25,13 +25,13 @@ let h = function(e) {
     isEnabled: b,
     async scrollToStart() {},
     async scrollToEnd() {}
-  }), E = g !== d.pJs.ONLINE && g !== d.pJs.ALL, y = _ || f || E, v = i.useMemo(() => t.map((e, t) => 0 === e.length ? null : y ? (0, r.jsxs)("div", {
-    children: [h(t), e.map(n)]
+  }), E = g !== d.pJs.ONLINE && g !== d.pJs.ALL, y = _ || h || E, v = i.useMemo(() => t.map((e, t) => 0 === e.length ? null : y ? (0, r.jsxs)("div", {
+    children: [f(t), e.map(n)]
   }, t) : (0, r.jsxs)(s.W, {
     transitionAppear: !1,
     component: "div",
-    children: [h(t), e.map(n)]
-  }, t)), [n, h, t, y]);
+    children: [f(t), e.map(n)]
+  }, t)), [n, f, t, y]);
   return (0, r.jsx)(a.bG, {
     navigator: O,
     children: (0, r.jsx)(a.SJ, {

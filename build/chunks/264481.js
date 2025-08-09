@@ -1,6 +1,6 @@
 /** Chunk was on 11776 **/
 n.d(t, {
-  P9: () => I,
+  P9: () => _,
   Uf: () => P,
   b0: () => O,
   s_: () => v
@@ -72,7 +72,7 @@ function O() {
   })
 }
 
-function I(e) {
+function _(e) {
   let {
     user: t,
     guildId: n,
@@ -103,7 +103,7 @@ function I(e) {
   })
 }
 
-function _() {
+function I() {
   let e = (0, s.ZP)();
   return (0, r.jsx)("div", {
     className: g.connectionPlatforms,
@@ -131,7 +131,7 @@ function P(e) {
   return (0, r.jsxs)(y, {
     heading: p.intl.string(p.t.VB6LWV),
     bodyText: p.intl.string(p.t.KpjsU1),
-    children: [(0, r.jsx)(_, {}), (0, r.jsxs)("div", {
+    children: [(0, r.jsx)(I, {}), (0, r.jsxs)("div", {
       className: g.buttonRow,
       children: [(0, r.jsx)(f.tG, {
         text: p.intl.string(p.t["/Hl24e"]),

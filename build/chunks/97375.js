@@ -1,6 +1,6 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  Z: () => f
+  Z: () => h
 });
 var r = n(24917),
   i = n(106351),
@@ -12,9 +12,9 @@ var r = n(24917),
   u = n(592125),
   d = n(600027),
   p = n(186901),
-  h = n(231338);
-let f = {
-  [h.Et.INVITE_USER_EMBEDDED]: (0, o.S)(h.Et.INVITE_USER_EMBEDDED, {
+  f = n(231338);
+let h = {
+  [f.Et.INVITE_USER_EMBEDDED]: (0, o.S)(f.Et.INVITE_USER_EMBEDDED, {
     scope: {
       [p.Gp.ANY]: [a.x.RELATIONSHIPS_READ]
     },
@@ -28,31 +28,31 @@ let f = {
         } = e,
         p = n.application.id;
       if (null == p) throw new r.O({
-        errorCode: h.lT.INVALID_COMMAND
+        errorCode: f.lT.INVALID_COMMAND
       }, "No application.");
-      let f = c.ZP.getConnectedActivityLocation();
-      if (null == f) throw new r.O({
-        errorCode: h.lT.NO_ELIGIBLE_ACTIVITY
+      let h = c.ZP.getConnectedActivityLocation();
+      if (null == h) throw new r.O({
+        errorCode: f.lT.NO_ELIGIBLE_ACTIVITY
       }, "No eligible activity for application. Ensure an activity was set using setActivity.");
-      switch (f.kind) {
+      switch (h.kind) {
         case l.E.GUILD_CHANNEL:
         case l.E.GUILD_CHANNEL_MESSAGE:
           t = (0, d.T)().channel;
           break;
         case l.E.PRIVATE_CHANNEL:
         case l.E.PRIVATE_CHANNEL_MESSAGE:
-          let g = u.Z.getChannel(f.channel_id);
+          let g = u.Z.getChannel(h.channel_id);
           if (null == g) throw new r.O({
-            errorCode: h.lT.INVALID_CHANNEL
+            errorCode: f.lT.INVALID_CHANNEL
           }, "Invalid channel");
           if (g.type === i.d.DM) throw new r.O({
-            errorCode: h.lT.INVALID_CHANNEL
+            errorCode: f.lT.INVALID_CHANNEL
           }, "Cannot send invite to a DM");
           t = g;
           break;
         default:
           throw new r.O({
-            errorCode: h.lT.NO_ELIGIBLE_ACTIVITY
+            errorCode: f.lT.NO_ELIGIBLE_ACTIVITY
           }, "Unsupported activity location")
       }
       try {
@@ -65,7 +65,7 @@ let f = {
         })
       } catch (e) {
         throw new r.O({
-          errorCode: h.lT.UNKNOWN_ERROR
+          errorCode: f.lT.UNKNOWN_ERROR
         }, "Failed to invite user")
       }
     }

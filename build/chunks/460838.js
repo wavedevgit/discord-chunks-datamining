@@ -16,8 +16,8 @@ var i, l = t(255367),
   m = t(496675),
   x = t(725436),
   g = t(274311),
-  p = t(854698),
-  j = t(285784),
+  j = t(854698),
+  p = t(285784),
   C = t(95291),
   f = t(742593),
   y = t(810561),
@@ -175,8 +175,8 @@ function P(e) {
     onStartClick: v,
     onInviteClick: m,
     onEndClick: x,
-    onJoinGuildClick: p
-  } = e, C = (0, g.Q)(n, t), f = (0, j.Zs)({
+    onJoinGuildClick: j
+  } = e, C = (0, g.Q)(n, t), f = (0, p.Zs)({
     entityType: t,
     isJoined: i,
     isActive: r,
@@ -189,12 +189,12 @@ function P(e) {
     onStartClick: v,
     onInviteClick: m,
     onEndClick: x,
-    onJoinGuildClick: p
+    onJoinGuildClick: j
   });
   return (0, l.jsxs)(o.hE2, {
     fullWidth: !1,
     size: "sm",
-    children: [null != u ? (0, l.jsx)(j.b5, {
+    children: [null != u ? (0, l.jsx)(p.b5, {
       onClick: u
     }) : null, null == f ? void 0 : f.map((e, n) => (0, l.jsx)(o.zxk, O({}, e), n))]
   })
@@ -214,7 +214,7 @@ function A(e) {
     onJoinGuildClick: h,
     onGoToGuildClick: v,
     onInviteClick: m
-  } = e, x = (0, g.Q)(n, t), p = (0, N.u)({
+  } = e, x = (0, g.Q)(n, t), j = (0, N.u)({
     isActive: r,
     isUserLurking: a,
     isMember: s,
@@ -230,7 +230,7 @@ function A(e) {
   return (0, l.jsx)(o.hE2, {
     fullWidth: !1,
     size: "sm",
-    children: null == p ? void 0 : p.map((e, n) => (0, l.jsx)(o.zxk, O({}, e), n))
+    children: null == j ? void 0 : j.map((e, n) => (0, l.jsx)(o.zxk, O({}, e), n))
   })
 }
 
@@ -249,7 +249,7 @@ function L(e) {
     isUserLurking: m,
     isJoined: x = !1,
     isMember: g = !1,
-    isHub: j = !1,
+    isHub: p = !1,
     speakers: N,
     speakerCount: E,
     rsvped: w,
@@ -272,8 +272,8 @@ function L(e) {
     recurrenceId: D
   } = e, q = c === b.WX.EXTERNAL, B = q ? e => e.stopPropagation() : void 0, K = [];
   if (null != V && null != event) {
-    let e = (0, p.Ho)(V);
-    K = (0, p.PJ)(4, e, new Date(H.scheduled_start_time))
+    let e = (0, j.Ho)(V);
+    K = (0, j.PJ)(4, e, new Date(H.scheduled_start_time))
   }
   let Q = K.length > 0;
   return (0, l.jsxs)(o.kL8, {
@@ -297,7 +297,7 @@ function L(e) {
         imageSource: 1 === d ? h : null,
         truncate: Z,
         guildId: null == t ? void 0 : t.id,
-        isHub: j,
+        isHub: p,
         isNew: z,
         guildEvent: H,
         eventPreview: U,
@@ -318,26 +318,28 @@ function L(e) {
           handleLocationClick: B,
           location: S,
           isExternal: q,
-          isHub: j
-        }), (0, l.jsx)(G, {
-          isHub: j,
-          channel: i,
-          entityType: c,
-          guild: t,
-          isActive: v,
-          isJoined: x,
-          isUserLurking: m,
-          isMember: g,
-          rsvped: w,
-          canInvite: O,
-          onContextMenu: T,
-          onRsvpClick: X,
-          onJoinGuildClick: A,
-          onGoToGuildClick: L,
-          onInviteClick: W,
-          onJoinClick: P,
-          onStartClick: R,
-          onEndClick: M
+          isHub: p
+        }), (0, l.jsx)("div", {
+          children: (0, l.jsx)(G, {
+            isHub: p,
+            channel: i,
+            entityType: c,
+            guild: t,
+            isActive: v,
+            isJoined: x,
+            isUserLurking: m,
+            isMember: g,
+            rsvped: w,
+            canInvite: O,
+            onContextMenu: T,
+            onRsvpClick: X,
+            onJoinGuildClick: A,
+            onGoToGuildClick: L,
+            onInviteClick: W,
+            onJoinClick: P,
+            onStartClick: R,
+            onEndClick: M
+          })
         })]
       }), Q && (0, l.jsx)("hr", {
         className: I.divider

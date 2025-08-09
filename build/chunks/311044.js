@@ -30,10 +30,10 @@ function b(e) {
   } = (0, s.KZ)(), {
     mutualFriends: v,
     mutualFriendsCount: O
-  } = (0, d.Z)(t), I = (0, o.Z)();
+  } = (0, d.Z)(t), _ = (0, o.Z)();
   return l.useEffect(() => {
-    (0, u.Z)(t.id, I)
-  }, [t.id, I]), (0, r.jsx)(i.Ttm, {
+    (0, u.Z)(t.id, _)
+  }, [t.id, _]), (0, r.jsx)(i.Ttm, {
     className: g.scroller,
     fade: !0,
     children: null == v ? Array.from({

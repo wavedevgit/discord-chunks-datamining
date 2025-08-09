@@ -49,21 +49,21 @@ function p(e) {
   return d("Thing", e)
 }
 
-function h(e) {
+function f(e) {
   return d("Product", e)
 }
-h.Image = function(e) {
+f.Image = function(e) {
   if (null == e) return null;
   let t = e.filter(e => null != e && "" !== e);
   return 0 === t.length ? null : 1 === t.length ? t[0] : t
 };
-var f = ((i = f || {}).DAMAGED = "http://schema.org/DamagedCondition", i.NEW = "http://schema.org/NewCondition", i.REFURBISHED = "http://schema.org/RefurbishedCondition", i.USED = "http://schema.org/UsedCondition", i),
+var h = ((i = h || {}).DAMAGED = "http://schema.org/DamagedCondition", i.NEW = "http://schema.org/NewCondition", i.REFURBISHED = "http://schema.org/RefurbishedCondition", i.USED = "http://schema.org/UsedCondition", i),
   g = ((l = g || {}).DISCONTINUED = "http://schema.org/Discontinued", l.IN_STOCK = "http://schema.org/InStock", l.IN_STORE_ONLY = "http://schema.org/InStoreOnly", l.LIMITED_AVAILABILITY = "http://schema.org/LimitedAvailability", l.ONLINE_ONLY = "http://schema.org/OnlineOnly", l.OUT_OF_STOCK = "http://schema.org/OutOfStock", l.PREORDER = "http://schema.org/PreOrder", l.PRESALE = "http://schema.org/PreSale", l.SOLD_OUT = "http://schema.org/SoldOut", l);
 
 function m(e) {
   return d("Offer", e)
 }
-m.ItemConditions = f, m.ItemAvailability = g;
+m.ItemConditions = h, m.ItemAvailability = g;
 var b = ((a = b || {}).YEARLY = "ANN", a.MONTHLY = "MON", a);
 
 function _(e) {
@@ -90,7 +90,7 @@ c(O, "Thing", p), c(O, "Brand", p), c(O, "Person", function(e) {
   return d("Organization", e)
 }), c(O, "ItemPage", function(e) {
   return d("ItemPage", e)
-}), c(O, "Product", h), c(O, "Offer", m), c(O, "Rating", function(e) {
+}), c(O, "Product", f), c(O, "Offer", m), c(O, "Rating", function(e) {
   return d("Rating", e)
 }), c(O, "AggregateRating", function(e) {
   return d("AggregateRating", e)

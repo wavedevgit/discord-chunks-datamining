@@ -7,8 +7,8 @@ var r, i, l, a, o = n(392711),
   d = n(592125);
 n(914010);
 var p = n(709054),
-  h = n(176505);
-let f = {},
+  f = n(176505);
+let h = {},
   g = {},
   m = {},
   b = {};
@@ -27,7 +27,7 @@ function _(e) {
 }
 
 function O(e, t, n, r) {
-  f[e].add(t);
+  h[e].add(t);
   let i = m[t];
   (null == i || i + 3e5 > Date.now()) && _(t), null == g[t] && (g[t] = []), g[t].push({
     id: n,
@@ -46,14 +46,14 @@ class y extends(a = c.ZP.Store) {
     return b[e]
   }
   getActiveChannelIds(e) {
-    return f[e]
+    return h[e]
   }
   getChannelMessageData(e) {
     return g[e]
   }
   shouldFetch(e) {
     var t;
-    return null == f[e] && !(null == (t = b[e]) ? void 0 : t.loading)
+    return null == h[e] && !(null == (t = b[e]) ? void 0 : t.loading)
   }
 }
 l = "ActiveChannelsStore", (i = "displayName") in(r = y) ? Object.defineProperty(r, i, {
@@ -67,8 +67,8 @@ l = "ActiveChannelsStore", (i = "displayName") in(r = y) ? Object.defineProperty
       channelId: t,
       guildId: n
     } = e;
-    if (!(0, h.ME)(t) || null == n) return !1;
-    let r = f[n];
+    if (!(0, f.ME)(t) || null == n) return !1;
+    let r = h[n];
     if (null == r) return !1;
     r.forEach(e => {
       var t;
@@ -78,7 +78,7 @@ l = "ActiveChannelsStore", (i = "displayName") in(r = y) ? Object.defineProperty
       var t, n;
       return -(null != (n = null == (t = g[e]) ? void 0 : t.length) ? n : 0)
     }).value();
-    f[n] = new Set(i)
+    h[n] = new Set(i)
   },
   MESSAGE_CREATE: function(e) {
     var t;
@@ -92,14 +92,14 @@ l = "ActiveChannelsStore", (i = "displayName") in(r = y) ? Object.defineProperty
     let a = d.Z.getChannel(n);
     if (null == a) return !1;
     let o = a.guild_id;
-    if (null == o || null == f[o]) return !1;
+    if (null == o || null == h[o]) return !1;
     O(o, n, r.id, null == (t = r.author) ? void 0 : t.id)
   },
   GUILD_DELETE: function(e) {
     let {
       guild: t
     } = e;
-    delete f[t.id]
+    delete h[t.id]
   },
   CHANNEL_DELETE: E,
   THREAD_DELETE: E,
@@ -122,7 +122,7 @@ l = "ActiveChannelsStore", (i = "displayName") in(r = y) ? Object.defineProperty
       loading: !1,
       error: null,
       fetchedAt: Date.now()
-    }, f[t] = new Set, n.forEach(e => {
+    }, h[t] = new Set, n.forEach(e => {
       let {
         channel_id: n,
         messages: r

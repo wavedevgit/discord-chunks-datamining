@@ -12,7 +12,7 @@ var r = n(496929),
   u = n(334288),
   d = n(186901),
   p = n(981631);
-async function h(e, t) {
+async function f(e, t) {
   let n = t.filter(e => e.type === p.epS.SUBSCRIPTION_GROUP),
     r = await Promise.all(n.map(async t => await (0, o.rx)(e, t.id))),
     i = [];
@@ -44,7 +44,7 @@ async function h(e, t) {
     }), r.filter(e => (null == e ? void 0 : e.price) != null).forEach(e => i.push(e))
   }), i
 }
-async function f(e) {
+async function h(e) {
   let {
     socket: t
   } = e;
@@ -55,11 +55,11 @@ async function f(e) {
   }, "No application.");
   if (s.Z.inTestModeForApplication(n) || a.Z.inDevModeForApplication(n)) {
     let e = await i.uE(n, !1),
-      t = await h(n, e);
+      t = await f(n, e);
     return [...e.filter(e => null != e.price), ...t]
   }
   let r = await l.oJ(n);
-  return [...r.filter(e => e.sku.type !== p.epS.SUBSCRIPTION_GROUP).map(e => e.sku).filter(e => null != e.price), ...await h(n, r.map(e => e.sku))]
+  return [...r.filter(e => e.sku.type !== p.epS.SUBSCRIPTION_GROUP).map(e => e.sku).filter(e => null != e.price), ...await f(n, r.map(e => e.sku))]
 }
 
 function g(e) {
@@ -76,7 +76,7 @@ function g(e) {
 let m = {
   [p.Etm.GET_SKUS]: {
     [d.Gp.ANY]: [d.wE, d.lH],
-    handler: f
+    handler: h
   },
   [p.Etm.GET_ENTITLEMENTS]: {
     [d.Gp.ANY]: [d.wE, d.lH],
@@ -85,7 +85,7 @@ let m = {
   [p.Etm.GET_SKUS_EMBEDDED]: {
     [d.Gp.ANY]: [d.wE, d.lH],
     handler: async e => ({
-      skus: await f(e)
+      skus: await h(e)
     })
   },
   [p.Etm.GET_ENTITLEMENTS_EMBEDDED]: {

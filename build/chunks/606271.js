@@ -12,8 +12,8 @@ var r = n(442837),
   u = n(158776),
   d = n(19780),
   p = n(699516),
-  h = n(944486),
-  f = n(594174),
+  f = n(944486),
+  h = n(594174),
   g = n(979651),
   m = n(626135),
   b = n(823379),
@@ -41,7 +41,7 @@ class T {
     for (let [e, t] of Object.entries(this.rpcEventHandlers)) this.rpcServer.setEventHandler(e, t)
   }
   init() {
-    this.rpcServer.getCurrentUser = () => f.default.getCurrentUser(), this.rpcServer.onConnect = e => {
+    this.rpcServer.getCurrentUser = () => h.default.getCurrentUser(), this.rpcServer.onConnect = e => {
       i.Z.dispatch({
         type: "RPC_APP_CONNECTED",
         socketId: e.id,
@@ -96,7 +96,7 @@ class T {
       if (0 === this.rpcServer.subscriptions.length) return;
       let t = 0 !== e.speakingFlags ? v.zMe.SPEAKING_START : v.zMe.SPEAKING_STOP;
       if (e.context === S.Yn.DEFAULT) {
-        let n = h.Z.getVoiceChannelId();
+        let n = f.Z.getVoiceChannelId();
         if (null != n) {
           let r = a.Z.getChannel(n);
           if (null == r) return;
@@ -203,9 +203,9 @@ class T {
         activity: l
       } = r;
       if (null == i || null == l || null == l.party_id) return;
-      let a = f.default.getUser(null == (t = r.author) ? void 0 : t.id);
+      let a = h.default.getUser(null == (t = r.author) ? void 0 : t.id);
       if (null == a) return;
-      let o = f.default.getCurrentUser();
+      let o = h.default.getCurrentUser();
       if (null == o || a.id === o.id) return;
       let s = l.type === v.mFx.JOIN_REQUEST ? u.Z.getApplicationActivity(o.id, i.id) : u.Z.getApplicationActivity(a.id, i.id);
       if (null == s || null == s.party || s.party.id !== l.party_id) return;
@@ -269,7 +269,7 @@ class T {
         }
       } = e;
       if (0 === this.rpcServer.subscriptions.length) return;
-      let r = f.default.getUser(t);
+      let r = h.default.getUser(t);
       if (null == r) return;
       let i = (0, O._J)(n, r);
       this.rpcServer.dispatchToSubscriptions(v.zMe.RELATIONSHIP_UPDATE, {}, e => (0, O.kb)(i, e.socket.application.id))
@@ -281,7 +281,7 @@ class T {
         }
       } = e;
       if (0 === this.rpcServer.subscriptions.length) return;
-      let r = f.default.getUser(t);
+      let r = h.default.getUser(t);
       if (null == r) return;
       let i = (0, O._J)(n, r);
       this.rpcServer.dispatchToSubscriptions(v.zMe.RELATIONSHIP_UPDATE, {}, e => (0, O.kb)(i, e.socket.application.id))
@@ -292,7 +292,7 @@ class T {
         }
       } = e;
       if (0 === this.rpcServer.subscriptions.length) return;
-      let n = f.default.getUser(t);
+      let n = h.default.getUser(t);
       if (null == n) return;
       let r = (0, O._J)(v.OGo.NONE, n);
       this.rpcServer.dispatchToSubscriptions(v.zMe.RELATIONSHIP_UPDATE, {}, e => (0, O.kb)(r, e.socket.application.id))
@@ -309,7 +309,7 @@ class T {
           })).values()) {
           let t = p.Z.getRelationshipType(e);
           if (t === v.OGo.NONE) continue;
-          let n = f.default.getUser(e);
+          let n = h.default.getUser(e);
           if (null == n) continue;
           let r = (0, O._J)(t, n);
           this.rpcServer.dispatchToSubscriptions(v.zMe.RELATIONSHIP_UPDATE, {}, e => (0, O.kb)(r, e.socket.application.id))
@@ -318,7 +318,7 @@ class T {
       if (0 !== this.rpcServer.subscriptions.length)
         for (let [e, t] of p.Z.getMutableRelationships().entries()) {
           if (t === v.OGo.NONE) continue;
-          let n = f.default.getUser(e);
+          let n = h.default.getUser(e);
           if (null == n) continue;
           let r = (0, O._J)(t, n);
           this.rpcServer.dispatchToSubscriptions(v.zMe.RELATIONSHIP_UPDATE, {}, e => (0, O.kb)(r, e.socket.application.id))
@@ -332,7 +332,7 @@ class T {
       if (0 === this.rpcServer.subscriptions.length) return;
       let n = p.Z.getRelationshipType(t);
       if (n === v.OGo.NONE) return;
-      let r = f.default.getUser(t);
+      let r = h.default.getUser(t);
       if (null == r) return;
       let i = (0, O._J)(n, r);
       this.rpcServer.dispatchToSubscriptions(v.zMe.RELATIONSHIP_UPDATE, {}, e => (0, O.kb)(i, e.socket.application.id))

@@ -13,8 +13,8 @@ var i = n(481060),
   u = n(710845),
   d = n(293273),
   p = n(885110),
-  h = n(996106),
-  f = n(914946),
+  f = n(996106),
+  h = n(914946),
   g = n(452426),
   m = n(852926),
   b = n(186901),
@@ -40,7 +40,7 @@ let O = new u.Z("RPCCommandsOverlay"),
         if (O.verbose("RPCCommands.SET_OVERLAY_LOCKED", {
             locked: t,
             pid: n
-          }), null == r.id) throw new h.Z({
+          }), null == r.id) throw new f.Z({
           errorCode: _.lTL.INVALID_COMMAND
         }, "No application.");
         s.Z.setInputLocked(t, n)
@@ -60,11 +60,11 @@ let O = new u.Z("RPCCommandsOverlay"),
             pid: r
           }
         } = e, i = t.application.id;
-        if (null == i) throw new h.Z({
+        if (null == i) throw new f.Z({
           errorCode: _.lTL.INVALID_COMMAND
         }, "No application.");
         let l = d.Z.getApplicationActivity(i);
-        if (null == l || null == l.secrets || !(0, f.t9)(n, l.party, l.secrets)) throw new h.Z({
+        if (null == l || null == l.secrets || !(0, h.t9)(n, l.party, l.secrets)) throw new f.Z({
           errorCode: _.lTL.NO_ELIGIBLE_ACTIVITY
         }, "No eligible activity for application. Ensure an activity includes a party and appropriate secret.");
         let {
@@ -72,7 +72,7 @@ let O = new u.Z("RPCCommandsOverlay"),
           context: s
         } = (0, m.jU)(r), u = (0, c.Z)(l, p.Z);
         return (0, a.h7)(l, u, s).then(() => {
-          if (o(), u) throw new h.Z({
+          if (o(), u) throw new f.Z({
             errorCode: _.lTL.NO_ELIGIBLE_ACTIVITY
           }, "No eligible activity for application. Ensure user does have have privacy enabled.")
         })
@@ -92,7 +92,7 @@ let O = new u.Z("RPCCommandsOverlay"),
           },
           socket: r
         } = e;
-        if (null == r.application.id) throw new h.Z({
+        if (null == r.application.id) throw new f.Z({
           errorCode: _.lTL.INVALID_COMMAND
         }, "No application.");
         return o.ZP.resolveInvite(t, "Game SDK").then(e => {
@@ -100,7 +100,7 @@ let O = new u.Z("RPCCommandsOverlay"),
             invite: t,
             code: r
           } = e;
-          if (null == t) throw new h.Z({
+          if (null == t) throw new f.Z({
             errorCode: _.lTL.INVALID_INVITE
           }, "Invalid invite id: ".concat(r));
           let {
@@ -131,7 +131,7 @@ let O = new u.Z("RPCCommandsOverlay"),
           },
           socket: l
         } = e, a = l.application.id;
-        if (null == a) throw new h.Z({
+        if (null == a) throw new f.Z({
           errorCode: _.lTL.INVALID_COMMAND
         }, "No application.");
         let {

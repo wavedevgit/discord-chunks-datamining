@@ -14,8 +14,8 @@ var r = n(255367),
   u = n(239091),
   d = n(410030),
   p = n(686546),
-  h = n(66637),
-  f = n(782738),
+  f = n(66637),
+  h = n(782738),
   g = n(371260),
   m = n(372769),
   b = n(134432),
@@ -34,7 +34,7 @@ function T(e) {
     guild: t,
     onClick: l,
     onView: o
-  } = e, [f, g] = i.useState(!1), [O, T] = i.useState(!1), [P, j] = i.useState(!1), x = i.useRef(null), A = i.useCallback(async () => {
+  } = e, [h, g] = i.useState(!1), [O, T] = i.useState(!1), [P, j] = i.useState(!1), x = i.useRef(null), A = i.useCallback(async () => {
     T(!0);
     try {
       await l(t.id)
@@ -42,8 +42,8 @@ function T(e) {
       T(!1)
     }
   }, [t.id, l]), Z = i.useCallback(e => {
-    e && !f && (g(!0), null == o || o(t.id))
-  }, [t.id, f, o]), w = i.useCallback(e => {
+    e && !h && (g(!0), null == o || o(t.id))
+  }, [t.id, h, o]), w = i.useCallback(e => {
     (0, u.jW)(e, async () => {
       let {
         default: e
@@ -111,9 +111,9 @@ function T(e) {
     }), (0, r.jsx)(s.$, {
       innerRef: x,
       onChange: Z,
-      active: !f,
+      active: !h,
       threshold: .55,
-      children: (0, r.jsxs)(h.Z, {
+      children: (0, r.jsxs)(f.Z, {
         ref: x,
         className: I.card,
         onClick: A,
@@ -230,7 +230,7 @@ function j(e) {
   } = e, o = i.useRef(null == t), s = i.useCallback((e, t, n, i) => null == t.guildId ? (0, r.jsx)(g.Z, {
     state: n,
     cleanUp: i,
-    children: (0, r.jsx)(f.Z, {
+    children: (0, r.jsx)(h.Z, {
       className: I.placeholder
     })
   }, e) : (0, r.jsx)(g.Z, {

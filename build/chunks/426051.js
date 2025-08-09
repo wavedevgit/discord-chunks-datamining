@@ -12,8 +12,8 @@ var r = n(255367),
   u = n(433355),
   d = n(26373),
   p = n(486622),
-  h = n(376191),
-  f = n(86203),
+  f = n(376191),
+  h = n(86203),
   g = n(388032),
   m = n(972308);
 
@@ -43,7 +43,7 @@ function b(e) {
   }), N = I || C, T = N || S;
   return (0, r.jsxs)("div", {
     className: m.container,
-    children: [(0, r.jsx)(h.Z, {
+    children: [(0, r.jsx)(f.Z, {
       otherUser: n,
       channel: b,
       active: t
@@ -58,7 +58,7 @@ function b(e) {
         },
         disabled: T,
         loading: N
-      }), (0, r.jsx)(f.Z, {
+      }), (0, r.jsx)(h.Z, {
         channel: b
       })]
     })]

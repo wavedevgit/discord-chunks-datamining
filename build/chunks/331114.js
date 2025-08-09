@@ -1,6 +1,6 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  Z: () => h
+  Z: () => f
 }), n(388685);
 var r, i = n(442837),
   l = n(570140),
@@ -52,7 +52,7 @@ class p extends(r = i.ZP.Store) {
   }
 }
 o(p, "displayName", "GlobalDiscoveryServersSearchCountStore");
-let h = new p(l.Z, {
+let f = new p(l.Z, {
   CONNECTION_OPEN: function() {
     s.clear()
   },

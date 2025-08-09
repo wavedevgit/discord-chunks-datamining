@@ -1,6 +1,6 @@
 /** Chunk was on 11776 **/
 n.d(t, {
-  Z: () => I
+  Z: () => _
 });
 var r = n(255367);
 n(73800);
@@ -132,7 +132,7 @@ function O(e) {
   })
 }
 
-function I(e) {
+function _(e) {
   let {
     connections: t,
     userId: n,

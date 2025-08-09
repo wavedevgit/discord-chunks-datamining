@@ -13,8 +13,8 @@ var i = n(481060),
   u = n(244080),
   d = n(247530),
   p = n(260889),
-  h = n(981631),
-  f = n(388032);
+  f = n(981631),
+  h = n(388032);
 
 function g(e) {
   let {
@@ -27,14 +27,14 @@ function g(e) {
       var t, n;
       return (null == (t = e.game) ? void 0 : t.name) != null && (0, a.isGameApplicationType)(null == (n = e.game) ? void 0 : n.type)
     }).map(e => e.game.name);
-    a.default.track(h.rMx.OPEN_POPOUT, {
+    a.default.track(f.rMx.OPEN_POPOUT, {
       type: "Now Playing Card Popout",
       games_detected: e
     })
   }), (0, r.jsxs)(i.v2r, {
     navId: "now-playing-menu",
     onClose: n,
-    "aria-label": f.intl.string(f.t.ogxXGh),
+    "aria-label": h.intl.string(h.t.ogxXGh),
     onSelect: g,
     children: [m, (0, r.jsxs)(i.kSQ, {
       children: [b, _]

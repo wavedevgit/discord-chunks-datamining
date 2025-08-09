@@ -1,6 +1,6 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  Z: () => f
+  Z: () => h
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -12,7 +12,7 @@ var r = n(255367),
   u = n(921944),
   d = n(388032),
   p = n(241626);
-class h extends i.PureComponent {
+class f extends i.PureComponent {
   render() {
     let {
       guild: e,
@@ -52,11 +52,11 @@ class h extends i.PureComponent {
     }) : this[t] = n
   }
 }
-let f = l.ZP.connectStores([s.Z], e => {
+let h = l.ZP.connectStores([s.Z], e => {
   let {
     guild: t
   } = e;
   return {
     memberCount: s.Z.getMemberCount(t.id)
   }
-})(h)
+})(f)

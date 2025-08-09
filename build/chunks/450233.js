@@ -1,6 +1,6 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  G: () => f,
+  G: () => h,
   Z: () => m
 });
 var r, i, l, a, o = n(255367),
@@ -9,21 +9,21 @@ var r, i, l, a, o = n(255367),
   u = n(570140),
   d = n(16084),
   p = n(855775),
-  h = n(388032),
-  f = ((r = {}).SHORT = "SHORT", r.LONG = "LONG", r);
+  f = n(388032),
+  h = ((r = {}).SHORT = "SHORT", r.LONG = "LONG", r);
 class g extends(a = s.PureComponent) {
   getText(e, t) {
     if (429 === e.status) switch (t) {
       case "SHORT":
-        return h.intl.string(h.t.T15lqq);
+        return f.intl.string(f.t.T15lqq);
       case "LONG":
-        return h.intl.string(h.t.XFShdH)
+        return f.intl.string(f.t.XFShdH)
     }
     switch (t) {
       case "SHORT":
-        return h.intl.string(h.t["+XstBw"]);
+        return f.intl.string(f.t["+XstBw"]);
       case "LONG":
-        return h.intl.string(h.t.epyCur)
+        return f.intl.string(f.t.epyCur)
     }
   }
   componentWillUnmount() {

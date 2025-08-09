@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 n.d(t, {
   ZP: () => b,
-  ro: () => h
+  ro: () => f
 });
 var r = n(570140),
   i = n(519938),
@@ -14,18 +14,18 @@ var r = n(570140),
   d = n(981631);
 let p = null;
 
-function h(e) {
+function f(e) {
   return "framepip:".concat(e.applicationId)
 }
 
-function f() {
+function h() {
   let e = u.Z.getConnectedFrame();
   if (null == e) {
     let e = p;
     null != e && c.Z.isOpen(e) && (r.Z.wait(() => i.xv(e)), p = null);
     return
   }
-  var t = h(e);
+  var t = f(e);
   if (c.Z.isOpen(t)) return !1;
   if (null != p) {
     let e = p;
@@ -48,10 +48,10 @@ function g() {
 }
 class m extends l.Z {
   _initialize() {
-    u.Z.addChangeListener(f), s.Z.addChangeListener(g)
+    u.Z.addChangeListener(h), s.Z.addChangeListener(g)
   }
   _terminate() {
-    u.Z.removeChangeListener(f), s.Z.removeChangeListener(g)
+    u.Z.removeChangeListener(h), s.Z.removeChangeListener(g)
   }
 }
 let b = new m

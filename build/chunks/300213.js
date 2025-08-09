@@ -21,7 +21,7 @@ function c(e) {
     d = (0, s.k5)(e),
     {
       isStageNoticeHidden: p,
-      isEventNoticeHidden: h
+      isEventNoticeHidden: f
     } = (0, r.cj)([o.Z], () => ({
       isStageNoticeHidden: o.Z.isLiveChannelNoticeHidden({
         stageId: null == u ? void 0 : u.id
@@ -32,7 +32,7 @@ function c(e) {
     }), [u, d]);
   if (null != d)
     if (null != u) return !p;
-    else return !h;
+    else return !f;
   return null != u && !p
 }
 n(765305), n(231338)

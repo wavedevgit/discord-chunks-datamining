@@ -13,8 +13,8 @@ var r = n(255367),
   u = n(812206),
   d = n(174556),
   p = n(320007),
-  h = n(540059),
-  f = n(916069),
+  f = n(540059),
+  h = n(916069),
   g = n(591472),
   m = n(111666),
   b = n(565138),
@@ -85,8 +85,8 @@ function z() {
     a = (0, o.e7)([T.Z], () => T.Z.getChannel(n), [n]),
     c = null != i ? i : null == a ? void 0 : a.guild_id,
     d = (0, o.e7)([P.Z], () => P.Z.getGuild(c), [c]),
-    p = (0, f.Z)(),
-    h = (0, v.D)(),
+    p = (0, h.Z)(),
+    f = (0, v.D)(),
     {
       application: m,
       isFrameInFocusedMode: _
@@ -109,7 +109,7 @@ function z() {
     src: O,
     "aria-hidden": !0,
     draggable: !1
-  })) : h ? (e = U.intl.string(U.t.HcoRu7), E = (0, r.jsx)(s.Dkj, {
+  })) : f ? (e = U.intl.string(U.t.HcoRu7), E = (0, r.jsx)(s.Dkj, {
     size: "xs"
   })) : null != d ? (E = p ? (0, r.jsx)(s.r7p, {
     size: "xs"
@@ -143,7 +143,7 @@ let W = i.memo(function() {
   i.useLayoutEffect(() => {
     w.ZP.setMinimumSize(k.J, k.N)
   }, []);
-  let e = (0, h.T)("AppTitleBar"),
+  let e = (0, f.T)("AppTitleBar"),
     t = F(e => e.isOpen),
     {
       notificationCenterVariant: n,
@@ -159,7 +159,7 @@ let W = i.memo(function() {
       autoTrackExposure: !1
     }),
     u = !t && e,
-    f = null !== n && l === y.u3.TITLE_BAR_LEFT,
+    h = null !== n && l === y.u3.TITLE_BAR_LEFT,
     g = null === n;
   i.useLayoutEffect(() => {
     w.ZP.setMinimumSize(k.J, k.N)
@@ -175,7 +175,7 @@ let W = i.memo(function() {
       return i.useMemo(() => t ? "SIDEBAR" : n ? "NOTIFICATIONS_INBOX" : r ? "RECENTS" : "HELP", [t, n, r])
     }({
       showCollapsedSidebarIcons: u,
-      showNotificationsInbox: f,
+      showNotificationsInbox: h,
       showRecentsButton: g
     });
   return v ? null : (0, r.jsx)(s.Wdt, {
@@ -203,7 +203,7 @@ let W = i.memo(function() {
                 color: "currentColor"
               })
             })]
-          }), f && (0, r.jsx)(I.Z, {
+          }), h && (0, r.jsx)(I.Z, {
             focusSectionProps: "NOTIFICATIONS_INBOX" === T ? e : void 0
           })]
         }),

@@ -1,6 +1,6 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  Z: () => f
+  Z: () => h
 }), n(388685);
 var r = n(846519),
   i = n(570140),
@@ -20,7 +20,7 @@ function p(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-class h extends l.Z {
+class f extends l.Z {
   _initialize() {
     this.focusedOrForegrounded = (0, u.H)(), i.Z.subscribe("WINDOW_FOCUS", this.handleWindowFocus), i.Z.subscribe("APP_STATE_UPDATE", this.handleAppStateUpdate), i.Z.subscribe("QUESTS_ENROLL_SUCCESS", this.handleEnrollmentSuccess), i.Z.subscribe("LOGIN_SUCCESS", this.handleLogin), i.Z.subscribe("LOGOUT", this.handleLogout), this.scheduleHeartbeatTracking()
   }
@@ -87,4 +87,4 @@ class h extends l.Z {
     })
   }
 }
-let f = new h
+let h = new f

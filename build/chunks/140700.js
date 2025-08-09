@@ -1,6 +1,6 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  Z: () => f
+  Z: () => h
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -13,7 +13,7 @@ var r = n(255367),
   d = n(388032),
   p = n(882375);
 
-function h(e) {
+function f(e) {
   let {
     count: t,
     categoryId: n
@@ -26,27 +26,27 @@ function h(e) {
   })
 }
 
-function f(e) {
+function h(e) {
   let {
     loadId: t
-  } = e, n = o.Z.useField("categoryId"), f = (0, c.q)(), g = (0, s.E)({
+  } = e, n = o.Z.useField("categoryId"), h = (0, c.q)(), g = (0, s.E)({
     categoryId: n
   }), m = i.useCallback(e => {
     (0, u.I)({
       loadId: t,
       categoryId: Number(e)
     })
-  }, [t]), b = i.useMemo(() => null == f ? [] : f.map(e => {
+  }, [t]), b = i.useMemo(() => null == h ? [] : h.map(e => {
     let [t, n] = e;
     return {
       id: "".concat(t),
-      label: (0, r.jsx)(h, {
+      label: (0, r.jsx)(f, {
         categoryId: t,
         count: n
       })
     }
-  }), [f]);
-  return null == f ? null : (0, r.jsxs)("div", {
+  }), [h]);
+  return null == h ? null : (0, r.jsxs)("div", {
     className: p.container,
     children: [(0, r.jsx)(l.Text, {
       variant: "text-sm/medium",

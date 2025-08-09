@@ -13,7 +13,7 @@ var r = n(413135),
   d = n(852926),
   p = n(981631);
 
-function h(e, t, n) {
+function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -21,7 +21,7 @@ function h(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let f = s.ZP.requireModule("discord_rpc").RPCIPC,
+let h = s.ZP.requireModule("discord_rpc").RPCIPC,
   g = new o.Z("RPCServer:IPC"),
   m = {
     HANDSHAKE: 0,
@@ -41,7 +41,7 @@ function _(e) {
 
 function O(e) {
   return new Promise((t, n) => {
-    "string" == typeof e && (e = f.net.createConnection(e));
+    "string" == typeof e && (e = h.net.createConnection(e));
     let r = new y(e, "json");
     e.on("data", t => {
       try {
@@ -144,7 +144,7 @@ class y extends u.Z {
     this.clientId = t.client_id, this.checkRpcVersion(+t.v), b(e, !0)
   }
   constructor(e, t) {
-    super("ipc", p.X6Q, t), h(this, "messageBuffer", r.Buffer.alloc(0)), h(this, "currentHeader", null), h(this, "MAX_BUFFER_SIZE", 5242880), h(this, "socket", void 0), h(this, "clientId", null), this.socket = e, b(e, !1)
+    super("ipc", p.X6Q, t), f(this, "messageBuffer", r.Buffer.alloc(0)), f(this, "currentHeader", null), f(this, "MAX_BUFFER_SIZE", 5242880), f(this, "socket", void 0), f(this, "clientId", null), this.socket = e, b(e, !1)
   }
 }
 class v extends i.EventEmitter {
@@ -181,8 +181,8 @@ class v extends i.EventEmitter {
   }
   constructor() {
     super();
-    let e = f.net.createServer(e => this.handleConnection(e));
-    e.on("error", e => g.error("Error: ".concat(e.message))), f.getAvailableSocket(O).then(t => {
+    let e = h.net.createServer(e => this.handleConnection(e));
+    e.on("error", e => g.error("Error: ".concat(e.message))), h.getAvailableSocket(O).then(t => {
       e.listen(t, () => {
         ("function" == typeof e.listening ? e.listening() : e.listening) && g.info("Starting on ".concat(e.address()))
       })

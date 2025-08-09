@@ -23,51 +23,52 @@ let _ = () => {
     transitionState: e,
     onClose: t,
     premiumType: n,
-    setStep: _,
-    applyOffer: j,
-    churnUserDiscountOffer: E,
-    discountedPrice: C,
-    fullPrice: O
-  } = (0, m.a)(), [v, S] = (0, r.useState)(!1), [T, I] = (0, r.useState)(!1), N = async () => {
-    if (null === E) return void I(!0);
-    S(!0), I(!1);
+    premiumSubscription: _,
+    setStep: j,
+    applyOffer: E,
+    churnUserDiscountOffer: C,
+    discountedPrice: O,
+    fullPrice: v
+  } = (0, m.a)(), [S, T] = (0, r.useState)(!1), [I, N] = (0, r.useState)(!1), y = async () => {
+    if (null === C) return void N(!0);
+    T(!0), N(!1);
     try {
-      await j(), _(u.R.DISCOUNT_APPLIED)
+      await E(), j(u.R.DISCOUNT_APPLIED)
     } catch (e) {
-      I(!0), S(!1)
+      N(!0), T(!1)
     }
   };
-  if (null === E) return null;
-  let y = n === p.p9.TIER_2,
-    A = [{
+  if (null === C) return null;
+  let A = n === p.p9.TIER_2,
+    P = [{
       text: h.intl.string(h.t.zl7LZm),
       onClick: () => t(),
       variant: "secondary",
-      disabled: v
+      disabled: S
     }, {
       text: h.intl.string(h.t.CKSuZG),
-      onClick: () => N(),
+      onClick: () => y(),
       variant: "primary",
       icon: l.SrA,
-      loading: v,
-      disabled: v
+      loading: S,
+      disabled: S
     }];
   return (0, i.jsxs)(a.I, {
     graphic: {
       type: "image",
-      src: y ? x : b
+      src: A ? x : b
     },
-    gradientColor: y ? "nitro-pink" : "nitro-green",
+    gradientColor: A ? "nitro-pink" : "nitro-green",
     transitionState: e,
-    title: "".concat(h.intl.format(h.t.q9Vxu7, {
-      percent: E.discount.amount
+    title: null != _.canceledAt ? h.intl.string(h.t["2Otztr"]) : "".concat(h.intl.format(h.t.q9Vxu7, {
+      percent: C.discount.amount
     })),
-    actions: A,
+    actions: P,
     onClose: async () => t(),
     children: [(0, i.jsx)("div", {
       className: f.offerDetailContainer,
       children: (0, i.jsx)(d.o, {
-        userDiscountOffer: E,
+        userDiscountOffer: C,
         offerState: d.w.CONFIRMING
       })
     }), (0, i.jsx)("div", {
@@ -75,15 +76,21 @@ let _ = () => {
       children: (0, i.jsx)(l.Text, {
         variant: "text-xs/medium",
         color: "text-secondary",
-        children: h.intl.format(h.t.hrGTjI, {
-          discountedPrice: C,
-          billingPeriod: (0, c.JP)(E.discount.user_usage_limit_interval),
-          numMonths: E.discount.user_usage_limit,
-          fullPrice: O,
+        children: null != _.canceledAt ? h.intl.format(h.t.mY3ysL, {
+          discountedPrice: O,
+          billingPeriod: (0, c.JP)(C.discount.user_usage_limit_interval),
+          numMonths: C.discount.user_usage_limit,
+          fullPrice: v,
+          paidURL: o.Z.getArticleURL(g.BhN.PAID_TERMS)
+        }) : h.intl.format(h.t.hrGTjI, {
+          discountedPrice: O,
+          billingPeriod: (0, c.JP)(C.discount.user_usage_limit_interval),
+          numMonths: C.discount.user_usage_limit,
+          fullPrice: v,
           helpdeskArticle: o.Z.getArticleURL(g.BhN.PAID_TERMS)
         })
       })
-    }), T ? (0, i.jsx)(s.k, {
+    }), I ? (0, i.jsx)(s.k, {
       children: h.intl.string(h.t["5mlOCQ"])
     }) : null]
   })

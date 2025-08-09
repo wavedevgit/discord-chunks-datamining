@@ -12,8 +12,8 @@ var r = n(255367),
   u = n(626135),
   d = n(986332),
   p = n(428695),
-  h = n(981631),
-  f = n(388032),
+  f = n(981631),
+  h = n(388032),
   g = n(431884);
 
 function m(e) {
@@ -52,7 +52,7 @@ let b = a().debounce(c.ZP.trackWithMetadata, 500),
       ctaColor: I
     } = e;
     i.useEffect(() => {
-      b(h.rMx.CHANNEL_NOTICE_VIEWED, {
+      b(f.rMx.CHANNEL_NOTICE_VIEWED, {
         notice_type: d,
         guild_id: t.id
       })
@@ -62,7 +62,7 @@ let b = a().debounce(c.ZP.trackWithMetadata, 500),
       className: g.btn,
       size: o.zx.Sizes.SMALL,
       onClick: () => {
-        null != d && u.default.track(h.rMx.CHANNEL_NOTICE_CTA_CLICKED, {
+        null != d && u.default.track(f.rMx.CHANNEL_NOTICE_CTA_CLICKED, {
           source: _,
           guild_id: t.id,
           notice_type: d
@@ -77,12 +77,12 @@ let b = a().debounce(c.ZP.trackWithMetadata, 500),
       className: g.channelNotice,
       children: [!0 === O ? null : (0, r.jsx)(s.P3F, {
         onClick: () => {
-          c.ZP.trackWithMetadata(h.rMx.CHANNEL_NOTICE_CLOSED, {
+          c.ZP.trackWithMetadata(f.rMx.CHANNEL_NOTICE_CLOSED, {
             notice_type: d
           }), null == E || E()
         },
         className: g.close,
-        "aria-label": f.intl.string(f.t.WAI6xs),
+        "aria-label": h.intl.string(h.t.WAI6xs),
         children: (0, r.jsx)(s.Dio, {
           size: "md",
           color: "currentColor",

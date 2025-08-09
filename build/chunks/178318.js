@@ -11,8 +11,8 @@ var l = n(836560),
   u = n(857192),
   d = n(591759),
   p = n(998502),
-  h = n(996106),
-  f = n(901077),
+  f = n(996106),
+  h = n(901077),
   g = n(76238),
   m = n(852926),
   b = n(186901),
@@ -88,7 +88,7 @@ function P(e, t, n, r) {
 }
 class j extends g.Z {
   send(e) {
-    (u.default.isLoggingOverlayEvents || e.cmd !== _.Etm.OVERLAY && e.evt !== _.zMe.OVERLAY) && I.info("Socket Emit: ".concat(this.id), (0, f.Z)(e)), null != r && "etf" === this.encoding ? this._socket.send(r.pack(e), {
+    (u.default.isLoggingOverlayEvents || e.cmd !== _.Etm.OVERLAY && e.evt !== _.zMe.OVERLAY) && I.info("Socket Emit: ".concat(this.id), (0, h.Z)(e)), null != r && "etf" === this.encoding ? this._socket.send(r.pack(e), {
       binary: !0
     }) : this._socket.send(JSON.stringify(e))
   }
@@ -96,10 +96,10 @@ class j extends g.Z {
     this._socket.close(e, t)
   }
   constructor(e, t, n) {
-    if (super("ws", t, n), E(this, "_socket", void 0), -1 === ["etf", "json"].indexOf(n)) throw new h.Z({
+    if (super("ws", t, n), E(this, "_socket", void 0), -1 === ["etf", "json"].indexOf(n)) throw new f.Z({
       closeCode: _.$VG.INVALID_ENCODING
     }, "Invalid Encoding: ".concat(n));
-    if ("etf" === n && null == r) throw new h.Z({
+    if ("etf" === n && null == r) throw new f.Z({
       closeCode: _.$VG.INVALID_ENCODING
     }, "Erlpack cannot be used on this client");
     this._socket = e
@@ -113,7 +113,7 @@ class x extends g.Z {
     this._closeCallback(t, e)
   }
   constructor(e, t, n, r) {
-    if (super("http", n, r), E(this, "_sendCallback", void 0), E(this, "_closeCallback", void 0), "json" !== r) throw new h.Z({
+    if (super("http", n, r), E(this, "_sendCallback", void 0), E(this, "_closeCallback", void 0), "json" !== r) throw new f.Z({
       closeCode: _.$VG.INVALID_ENCODING
     }, "Invalid Encoding: ".concat(r));
     this._sendCallback = e, this._closeCallback = t
@@ -187,7 +187,7 @@ class A extends l.EventEmitter {
     } catch (t) {
       e.close(_.$VG.CLOSE_UNSUPPORTED, "Payload not ".concat(e.encoding));
       return
-    }(u.default.isLoggingOverlayEvents || n.cmd !== _.Etm.OVERLAY) && I.info("Socket Message: ".concat(e.id), (0, f.Z)(n)), this.emit("request", e, n)
+    }(u.default.isLoggingOverlayEvents || n.cmd !== _.Etm.OVERLAY) && I.info("Socket Message: ".concat(e.id), (0, h.Z)(n)), this.emit("request", e, n)
   }
   constructor() {
     var e;

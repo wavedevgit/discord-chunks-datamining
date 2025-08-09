@@ -1,6 +1,6 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  Z: () => h
+  Z: () => f
 }), n(35282), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -13,10 +13,10 @@ var r = n(255367),
   d = n(388032),
   p = n(278812);
 
-function h(e) {
+function f(e) {
   let {
     applicationId: t
-  } = e.match.params, [h, f] = i.useState(!1), g = i.useRef(!1), [m, b] = i.useState(null), _ = !o.isPlatformEmbedded && !l.tq && !h;
+  } = e.match.params, [f, h] = i.useState(!1), g = i.useRef(!1), [m, b] = i.useState(null), _ = !o.isPlatformEmbedded && !l.tq && !f;
   return (i.useEffect(() => {
     _ && !0 !== g.current && (Promise.resolve().then(n.bind(n, 536285)).then(e => {
       let {
@@ -43,7 +43,7 @@ function h(e) {
     }), (0, r.jsx)(a.zxk, {
       variant: "primary",
       text: d.intl.string(d.t.fIv16O),
-      onClick: () => f(!0)
+      onClick: () => h(!0)
     })]
   }) : (0, r.jsxs)("div", {
     className: p.container,

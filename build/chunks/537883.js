@@ -1,6 +1,6 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  Z: () => h
+  Z: () => f
 });
 var r, i, l, a = n(442837),
   o = n(570140),
@@ -25,7 +25,7 @@ i = "GlobalDiscoveryServersSearchLayoutStore", (r = "displayName") in p ? Object
   configurable: !0,
   writable: !0
 }) : p[r] = i;
-let h = new p(o.Z, {
+let f = new p(o.Z, {
   CONNECTION_OPEN: d,
   GLOBAL_DISCOVERY_SERVERS_SEARCH_LAYOUT_RESET: d,
   GLOBAL_DISCOVERY_SERVERS_SEARCH_COUNT_SUCCESS: function(e) {

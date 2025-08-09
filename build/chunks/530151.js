@@ -12,8 +12,8 @@ var r = n(255367),
   u = n(692547),
   d = n(780384),
   p = n(755721),
-  h = n(481060),
-  f = n(570140),
+  f = n(481060),
+  h = n(570140),
   g = n(239091),
   m = n(51025),
   b = n(785547),
@@ -66,7 +66,7 @@ let U = e => {
       onClick: n,
       icon: i
     } = e;
-    return (0, r.jsx)(h.ua7, {
+    return (0, r.jsx)(f.ua7, {
       text: t,
       children: e => {
         let {
@@ -270,9 +270,9 @@ class W extends i.PureComponent {
     } = e;
     return (0, r.jsxs)(v.Z, {
       direction: v.Z.Direction.VERTICAL,
-      children: [(0, r.jsx)(h.Exd, {
+      children: [(0, r.jsx)(f.Exd, {
         percent: t,
-        size: h.Exd.Sizes.SMALL,
+        size: f.Exd.Sizes.SMALL,
         foregroundColor: (0, y.Lq)(n),
         foregroundGradientColor: null != i ? [(0, y.Lq)(i[0]), (0, y.Lq)(i[1])] : void 0,
         animate: this.isFocused
@@ -289,9 +289,9 @@ class W extends i.PureComponent {
     } = e;
     return (0, r.jsxs)(v.Z, {
       direction: v.Z.Direction.VERTICAL,
-      children: [(0, r.jsx)(h.yGy, {
+      children: [(0, r.jsx)(f.yGy, {
         percents: t,
-        size: h.yGy.Sizes.SMALL,
+        size: f.yGy.Sizes.SMALL,
         foregroundColors: G,
         animate: this.isFocused
       }), (0, r.jsx)("div", {
@@ -465,12 +465,12 @@ class W extends i.PureComponent {
   }
 }
 let Y = () => (0, r.jsx)(V, {
-    icon: h.o1U,
+    icon: f.o1U,
     tooltip: D.intl.string(D.t.YGm6SU),
     onClick: () => m.v4()
   }),
   K = () => (0, r.jsx)(V, {
-    icon: h.fpf,
+    icon: f.fpf,
     tooltip: D.intl.string(D.t.TVAd5O),
     onClick: () => m.wO()
   }),
@@ -479,7 +479,7 @@ let Y = () => (0, r.jsx)(V, {
       item: t
     } = e;
     return (0, r.jsx)(V, {
-      icon: h.wj7,
+      icon: f.wj7,
       tooltip: D.intl.string(D.t["Eqb+LC"]),
       onClick: () => m.A1(t.applicationId, t.branchId)
     })
@@ -489,7 +489,7 @@ let Y = () => (0, r.jsx)(V, {
       item: t
     } = e;
     return (0, r.jsx)(V, {
-      icon: h.Dio,
+      icon: f.Dio,
       tooltip: D.intl.string(D.t["0lFmCw"]),
       onClick: () => m.al(t.applicationId, t.branchId)
     })
@@ -553,7 +553,7 @@ class J extends i.PureComponent {
       applications: e
     } = this.props;
     e.forEach(e => {
-      e.finished && f.Z.wait(() => {
+      e.finished && h.Z.wait(() => {
         m.wi(e.applicationId, e.branchId)
       })
     }), window.removeEventListener("resize", this.throttledUpdateHeight), this.isUnmounted = !0

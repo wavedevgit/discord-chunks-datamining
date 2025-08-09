@@ -1,6 +1,6 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  Z: () => f
+  Z: () => h
 }), n(388685);
 var r = n(570140),
   i = n(317770),
@@ -20,7 +20,7 @@ function d(e, t, n) {
   }) : e[t] = n, e
 }
 let p = new Set;
-class h extends i.Z {
+class f extends i.Z {
   _initialize() {
     r.Z.subscribe("MESSAGE_CREATE", this.handleMessageCreate), r.Z.subscribe("POGGERMODE_SETTINGS_UPDATE", this.handleSettingsUpdate)
   }
@@ -44,12 +44,12 @@ class h extends i.Z {
         }
       } = e;
       if (!c.Z.isEnabled()) return !1;
-      let h = l.default.getId();
-      if ((null == d ? void 0 : d.find(e => e.id === h)) != null ? (0, a.T)(s.hn.PING_ME) : (null != (t = null == d ? void 0 : d.length) ? t : 0) > 0 && (null == r ? void 0 : r.id) === h && (0, a.T)(s.hn.PING_SOMEONE), !(0, u.wU)(null == r ? void 0 : r.id, h, i, p)) return !1;
-      let f = u.ZP.getMostRecentMessageCombo(n),
+      let f = l.default.getId();
+      if ((null == d ? void 0 : d.find(e => e.id === f)) != null ? (0, a.T)(s.hn.PING_ME) : (null != (t = null == d ? void 0 : d.length) ? t : 0) > 0 && (null == r ? void 0 : r.id) === f && (0, a.T)(s.hn.PING_SOMEONE), !(0, u.wU)(null == r ? void 0 : r.id, f, i, p)) return !1;
+      let h = u.ZP.getMostRecentMessageCombo(n),
         {
           combo: g
-        } = null != f ? f : {};
+        } = null != h ? h : {};
       if (null == g) return !1;
       Object.values(s.hn).forEach(e => {
         if (null != o.Z.getUnlocked(e)) return;
@@ -60,4 +60,4 @@ class h extends i.Z {
     })
   }
 }
-let f = new h
+let h = new f

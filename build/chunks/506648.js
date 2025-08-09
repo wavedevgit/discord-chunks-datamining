@@ -12,8 +12,8 @@ var r = n(255367),
   u = n(39377),
   d = n(981631),
   p = n(388032),
-  h = n(46703);
-let f = [{
+  f = n(46703);
+let h = [{
     feature: d.Qa3.SINGLE_PLAYER,
     getText: () => p.intl.string(p.t["V+/FjI"]),
     getTooltip: () => p.intl.string(p.t["w+X9sb"]),
@@ -86,7 +86,7 @@ let f = [{
       tooltip: i
     } = e;
     return (0, r.jsxs)("div", {
-      className: h.row,
+      className: f.row,
       children: [(0, r.jsx)(l.ua7, {
         text: i,
         children: e => (0, r.jsx)(t, function(e) {
@@ -107,15 +107,15 @@ let f = [{
           }
           return e
         }({
-          className: h.featureIcon
+          className: f.featureIcon
         }, e))
       }), (0, r.jsx)("span", {
-        className: h.featureText,
+        className: f.featureText,
         children: n
       }), (0, r.jsx)(l.dz2, {
         size: "md",
         color: "currentColor",
-        className: h.checkmarkIcon
+        className: f.checkmarkIcon
       })]
     })
   };
@@ -123,7 +123,7 @@ class m extends i.PureComponent {
   render() {
     let {
       sku: e
-    } = this.props, t = f.filter(t => {
+    } = this.props, t = h.filter(t => {
       let {
         feature: n
       } = t;
@@ -142,7 +142,7 @@ class m extends i.PureComponent {
       }, t)
     });
     return 0 === t.length ? null : (0, r.jsxs)("div", {
-      className: h.features,
+      className: f.features,
       children: [(0, r.jsx)(a.Z, {
         children: p.intl.string(p.t.XXENra)
       }), t]

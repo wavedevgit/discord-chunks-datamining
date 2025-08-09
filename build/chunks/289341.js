@@ -12,8 +12,8 @@ var r = n(73800),
   u = n(703656),
   d = n(594174),
   p = n(122613),
-  h = n(649256),
-  f = n(388032);
+  f = n(649256),
+  h = n(388032);
 
 function g(e) {
   var t, n;
@@ -35,7 +35,7 @@ function g(e) {
           r = null != (e = t.searchParams.get("referrer_id")) ? e : void 0,
           {
             customId: i
-          } = await (0, h.ur)(_, t.searchParams.get("link_id"), t.searchParams.get("custom_id"));
+          } = await (0, f.ur)(_, t.searchParams.get("link_id"), t.searchParams.get("custom_id"));
         await (0, p.Z)({
           targetApplicationId: _,
           channelId: n,
@@ -48,8 +48,8 @@ function g(e) {
   }, [b, _, E, y]), r.useEffect(() => {
     let e = setTimeout(() => {
       null == E && l.Z.show({
-        title: f.intl.string(f.t.PtobXV),
-        body: f.intl.string(f.t["IOy+Iy"])
+        title: h.intl.string(h.t.PtobXV),
+        body: h.intl.string(h.t["IOy+Iy"])
       })
     }, 5e3);
     return () => {

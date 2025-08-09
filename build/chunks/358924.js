@@ -11,8 +11,8 @@ var r, i = n(255367),
   u = n(481060),
   d = n(287734),
   p = n(438139),
-  h = n(2052),
-  f = n(726542),
+  f = n(2052),
+  h = n(726542),
   g = n(638880),
   m = n(655922),
   b = n(122810),
@@ -315,7 +315,7 @@ ei.Header = er, ei.Body = e => {
     partySize: a,
     members: s,
     onChannelContextMenu: c
-  } = e, p = l.useRef(null), h = (0, C.ZP)(r, !0), f = (0, R.EB)(n, 32), g = (0, R.gM)(n);
+  } = e, p = l.useRef(null), f = (0, C.ZP)(r, !0), h = (0, R.EB)(n, 32), g = (0, R.gM)(n);
   return (0, i.jsx)($, {
     children: (0, i.jsxs)("div", {
       className: Y.voiceSection,
@@ -327,9 +327,9 @@ ei.Header = er, ei.Body = e => {
         tabIndex: -1,
         children: (0, i.jsxs)("div", {
           className: Y.voiceSectionAssets,
-          children: [null != f ? (0, i.jsx)("img", {
+          children: [null != h ? (0, i.jsx)("img", {
             alt: "",
-            src: f,
+            src: h,
             className: o()(Y.voiceSectionGuildImage, Y.largeImageMask)
           }) : (0, i.jsx)("div", {
             className: Y.voiceSectionNoGuildImageWrapper,
@@ -358,7 +358,7 @@ ei.Header = er, ei.Body = e => {
         },
         children: (0, i.jsxs)("div", {
           className: Y.voiceSectionDetails,
-          children: [X(n.name, Y.voiceSectionText), Q(h, Y.voiceSectionText)]
+          children: [X(n.name, Y.voiceSectionText), Q(f, Y.voiceSectionText)]
         })
       }), (0, i.jsx)(F.Z, {
         partySize: a,
@@ -455,7 +455,7 @@ ei.Header = er, ei.Body = e => {
       name: c,
       details: d,
       assets: p,
-      application_id: h
+      application_id: f
     } = r;
   if (null != p && (0, E.Z)(r)) {
     var g;
@@ -468,7 +468,7 @@ ei.Header = er, ei.Body = e => {
         target: "_blank",
         children: [(0, i.jsx)("img", {
           alt: null != (g = p.large_text) ? g : "",
-          src: a(h, p.large_image, [900, 500]),
+          src: a(f, p.large_image, [900, 500]),
           className: Y.twitchSectionPreview
         }), (0, i.jsx)("img", {
           src: n(497726),
@@ -486,7 +486,7 @@ ei.Header = er, ei.Body = e => {
       }),
       children: [(0, i.jsx)("img", {
         alt: "",
-        src: f.Z.get(z.ABu.TWITCH).icon.lightSVG,
+        src: h.Z.get(z.ABu.TWITCH).icon.lightSVG,
         className: Y.twitchSectionIcon
       }), (0, i.jsxs)("div", {
         children: [X(c), null != d ? Q(d) : null]
@@ -506,7 +506,7 @@ ei.Header = er, ei.Body = e => {
     applicationStream: a,
     onPreviewClick: o,
     guildId: c
-  } = e, d = (0, s.e7)([k.Z], () => k.Z.getChannel(a.channelId)), [p, h] = (0, j.wq)(d), f = (0, i.jsxs)(u.P3F, {
+  } = e, d = (0, s.e7)([k.Z], () => k.Z.getChannel(a.channelId)), [p, f] = (0, j.wq)(d), h = (0, i.jsxs)(u.P3F, {
     onClick: p ? o : void 0,
     className: Y.applicationStreamingPreviewWrapper,
     children: [(0, i.jsx)(x.Z, {
@@ -516,7 +516,7 @@ ei.Header = er, ei.Body = e => {
       className: Y.applicationStreamingHoverText,
       variant: "text-sm/medium",
       color: "always-white",
-      children: (0, j.P9)(h)
+      children: (0, j.P9)(f)
     })]
   }), g = null != (n = null == (t = (0, y.Z)(r, a)) ? void 0 : t.activityText) ? n : W.intl.string(W.t.eXan7O);
   return (0, i.jsxs)($, {
@@ -532,7 +532,7 @@ ei.Header = er, ei.Body = e => {
       }), (0, i.jsx)(S.ZP, {
         size: S.ZP.Sizes.SMALL
       })]
-    }), f]
+    }), h]
   })
 }, ei.EmbeddedActivitySection = e => {
   let {
@@ -548,7 +548,7 @@ ei.Header = er, ei.Body = e => {
     })
   }, [d]);
   let p = (0, s.Wu)([M.default, D.default], () => Array.from(a).map(e => D.default.getId() === e ? null : M.default.getUser(e)).filter(H.lm)),
-    f = (0, h.O)(),
+    h = (0, f.O)(),
     {
       analyticsLocations: m
     } = (0, v.ZP)();
@@ -604,7 +604,7 @@ ei.Header = er, ei.Body = e => {
               e.stopPropagation(), (0, g.Z)({
                 applicationId: d,
                 activityChannelId: n.id,
-                locationObject: f.location,
+                locationObject: h.location,
                 analyticsLocations: m
               })
             }

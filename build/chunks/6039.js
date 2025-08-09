@@ -12,8 +12,8 @@ var r = n(255367),
   u = n(998730),
   d = n(703656),
   p = n(430824),
-  h = n(768581),
-  f = n(302221),
+  f = n(768581),
+  h = n(302221),
   g = n(693546),
   m = n(305325),
   b = n(246364),
@@ -31,7 +31,7 @@ function N(e) {
     guild: t,
     width: n,
     height: l
-  } = e, a = i.useMemo(() => (null == t ? void 0 : t.splash) != null ? h.ZP.getGuildSplashURL({
+  } = e, a = i.useMemo(() => (null == t ? void 0 : t.splash) != null ? f.ZP.getGuildSplashURL({
     id: null == t ? void 0 : t.id,
     splash: null == t ? void 0 : t.splash
   }) : null, [null == t ? void 0 : t.splash, null == t ? void 0 : t.id]), o = (0, u.N)(a);
@@ -47,7 +47,7 @@ function N(e) {
     }), null != o && (0, r.jsx)("div", {
       className: S.splashGradient,
       style: {
-        background: "linear-gradient(180deg, ".concat((0, f.aD)(o, .16), " 0%, ").concat((0, f.aD)(o, 1), " 100%)")
+        background: "linear-gradient(180deg, ".concat((0, h.aD)(o, .16), " 0%, ").concat((0, h.aD)(o, 1), " 100%)")
       }
     }), (0, r.jsx)("div", {
       className: S.splashGradient
@@ -61,7 +61,7 @@ let T = e => {
     ref: n,
     width: c,
     height: u
-  } = (0, s.ZP)(), [h, f] = i.useState(I.hO.INITIAL), T = (0, l.e7)([_.Z], () => _.Z.getRequest(t)), P = (0, l.e7)([p.Z], () => p.Z.getGuild(t)), {
+  } = (0, s.ZP)(), [f, h] = i.useState(I.hO.INITIAL), T = (0, l.e7)([_.Z], () => _.Z.getRequest(t)), P = (0, l.e7)([p.Z], () => p.Z.getGuild(t)), {
     hasFetchedRequestToJoinGuilds: j,
     guildPreviewDisabled: x
   } = (0, l.cj)([_.Z], () => ({
@@ -74,8 +74,8 @@ let T = e => {
     j || g.Z.fetchRequestToJoinGuilds()
   }, [j]);
   let A = i.useCallback(() => {
-      f(Math.max(h, I.hO.FILLING)), g.Z.removeGuildJoinRequest(t), (0, d.uL)(v.Z5c.ME)
-    }, [t, h]),
+      h(Math.max(f, I.hO.FILLING)), g.Z.removeGuildJoinRequest(t), (0, d.uL)(v.Z5c.ME)
+    }, [t, f]),
     Z = (e, t) => () => {
       (0, o.h7j)(n => {
         var i, l;

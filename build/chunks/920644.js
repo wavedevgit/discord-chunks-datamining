@@ -1,6 +1,6 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  Z: () => f
+  Z: () => h
 });
 var r = n(255367);
 n(73800);
@@ -14,13 +14,13 @@ var i = n(990547),
   d = n(388032),
   p = n(274978);
 
-function h() {
+function f() {
   (0, c.qV)(), (0, o.uL)(u.Z5c.LOGIN, {
     source: "existing_user_age_gate_underage"
   })
 }
 
-function f(e) {
+function h(e) {
   let {
     underageMessage: t,
     transitionState: o
@@ -71,7 +71,7 @@ function f(e) {
         size: "sm",
         text: d.intl.string(d.t.szzQ6O),
         fullWidth: !0,
-        onClick: h
+        onClick: f
       })
     })]
   })

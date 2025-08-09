@@ -1,6 +1,6 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  Z: () => f
+  Z: () => h
 });
 var r = n(255367);
 n(73800);
@@ -13,13 +13,13 @@ var i = n(100527),
   u = n(921944),
   d = n(30513),
   p = n(388032),
-  h = n(420569);
+  f = n(420569);
 
-function f(e) {
+function h(e) {
   let {
     guild: t,
     markAsDismissed: n
-  } = e, f = (0, s.KK)(t, c.Eu4.TIER_2), {
+  } = e, h = (0, s.KK)(t, c.Eu4.TIER_2), {
     analyticsLocations: g
   } = (0, l.ZP)(i.Z.GUILD_BANNER_NOTICE);
   return (0, r.jsx)(a.Z, {
@@ -27,10 +27,10 @@ function f(e) {
     onDismissed: () => n(u.L.UNKNOWN),
     cta: p.intl.string(p.t["oPAx7+"]),
     message: p.intl.format(p.t.AcaNY2, {
-      boostsNeeded: f
+      boostsNeeded: h
     }),
     type: c.vID.GUILD_BANNER,
-    image: h,
+    image: f,
     onClick: () => (0, o.Z)({
       analyticsLocations: g,
       analyticsSourceLocation: {

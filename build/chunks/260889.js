@@ -12,8 +12,8 @@ var r = n(255367),
   u = n(769654),
   d = n(496675),
   p = n(205129),
-  h = n(626135),
-  f = n(981631),
+  f = n(626135),
+  h = n(981631),
   g = n(388032);
 
 function m(e) {
@@ -49,15 +49,15 @@ function b(e, t) {
 }
 
 function _(e) {
-  let t = i.useContext(h.AnalyticsContext),
+  let t = i.useContext(f.AnalyticsContext),
     n = e.voiceChannels[0],
-    _ = (0, l.e7)([d.Z], () => null != n && d.Z.can(f.Plq.CONNECT, n.channel));
+    _ = (0, l.e7)([d.Z], () => null != n && d.Z.can(h.Plq.CONNECT, n.channel));
   return null == n ? null : [(0, r.jsx)(a.sNh, {
     id: "join-voice",
     action: function() {
-      (0, c.Kh)(n.channel.id), o.default.selectVoiceChannel(n.channel.id), s.ZP.trackWithMetadata(f.rMx.ACTIVITY_FEED_VOICE_CHANNEL_VISITED, m({
+      (0, c.Kh)(n.channel.id), o.default.selectVoiceChannel(n.channel.id), s.ZP.trackWithMetadata(h.rMx.ACTIVITY_FEED_VOICE_CHANNEL_VISITED, m({
         source: b(m({}, t.location), {
-          object: f.qAy.LIST_ITEM
+          object: h.qAy.LIST_ITEM
         }),
         guild_id: n.guild.id,
         channel_id: n.channel.id
@@ -68,9 +68,9 @@ function _(e) {
   }, "join-voice"), (0, r.jsx)(a.sNh, {
     id: "goto-server",
     action: function() {
-      (0, u.X)(n.guild.id), s.ZP.trackWithMetadata(f.rMx.ACTIVITY_FEED_GUILD_VISITED, m({
+      (0, u.X)(n.guild.id), s.ZP.trackWithMetadata(h.rMx.ACTIVITY_FEED_GUILD_VISITED, m({
         source: b(m({}, t.location), {
-          object: f.qAy.LIST_ITEM
+          object: h.qAy.LIST_ITEM
         }),
         guild_id: n.guild.id,
         af_recently_played: !1

@@ -1,6 +1,6 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  Z: () => f
+  Z: () => h
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -12,7 +12,7 @@ var r = n(255367),
   u = n(566840),
   d = n(921944),
   p = n(648106);
-let h = i.memo(function(e) {
+let f = i.memo(function(e) {
   let {
     state: t,
     markAsDismissed: n
@@ -31,7 +31,7 @@ let h = i.memo(function(e) {
   })
 });
 
-function f() {
+function h() {
   let e = (0, o.e7)([c.Z], () => c.Z.getGuildId()),
     t = (0, u.Eg)(e),
     [n, i] = (0, s.US)(Object.values(t).filter(e => {
@@ -49,7 +49,7 @@ function f() {
   let l = t[n];
   return null == l ? null : (0, r.jsx)("div", {
     className: p.container,
-    children: (0, r.jsx)(h, {
+    children: (0, r.jsx)(f, {
       state: l,
       markAsDismissed: i
     })

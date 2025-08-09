@@ -12,8 +12,8 @@ var r = n(255367),
   u = n(686546),
   d = n(944486),
   p = n(358085),
-  h = n(821020),
-  f = n(370774),
+  f = n(821020),
+  h = n(370774),
   g = n(128008),
   m = n(961040),
   b = n(981631),
@@ -27,7 +27,7 @@ function E(e) {
     popoutProps: l,
     ref: o,
     focusSectionProps: s
-  } = e, [d, h] = i.useState(!1), m = (0, f.D)(), b = n || m, E = n || b, y = (0, r.jsx)(c.Dkj, {
+  } = e, [d, f] = i.useState(!1), m = (0, h.D)(), b = n || m, E = n || b, y = (0, r.jsx)(c.Dkj, {
     className: O.icon,
     color: d || E ? c.TVs.colors.ICON_PRIMARY : c.TVs.colors.ICON_TERTIARY,
     size: "custom",
@@ -73,11 +73,11 @@ function E(e) {
         }, s, e, l), i = i = {
           onMouseEnter: () => {
             var t;
-            h(!0), null == (t = e.onMouseEnter) || t.call(e)
+            f(!0), null == (t = e.onMouseEnter) || t.call(e)
           },
           onMouseLeave: () => {
             var t;
-            h(!1), null == (t = e.onMouseLeave) || t.call(e)
+            f(!1), null == (t = e.onMouseLeave) || t.call(e)
           },
           onClick: () => {
             var n, r;
@@ -116,15 +116,15 @@ function y() {
     focusSectionProps: e
   } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}, t = i.useRef(null), {
     notificationCenterVariant: n
-  } = (0, h.pN)({
+  } = (0, f.pN)({
     location: "NotificationsInboxButton"
   }), l = (0, s.e7)([d.Z], () => d.Z.getChannelId()), a = i.useMemo(() => b.Z5c.CHANNEL(b.STv, null != l ? l : void 0), [l]), c = (0, g.mv)();
-  return n === h.jP.SIDEBAR ? (0, r.jsx)(E, {
+  return n === f.jP.SIDEBAR ? (0, r.jsx)(E, {
     onClick: () => {
       c(), (0, o.uL)(a)
     },
     focusSectionProps: e
-  }) : n === h.jP.POPOUT ? (0, r.jsx)(m.Z, {
+  }) : n === f.jP.POPOUT ? (0, r.jsx)(m.Z, {
     targetElementRef: t,
     popoutPosition: "bottom",
     popoutAlign: "left",

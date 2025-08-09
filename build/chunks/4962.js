@@ -12,8 +12,8 @@ var l = n(120356),
   u = n(451478),
   d = n(388032),
   p = n(36028),
-  h = ((r = h || {})[r.STAFF_NOTES = 1] = "STAFF_NOTES", r);
-let f = o.ZP.connectStores([u.Z], () => ({
+  f = ((r = f || {})[r.STAFF_NOTES = 1] = "STAFF_NOTES", r);
+let h = o.ZP.connectStores([u.Z], () => ({
     animate: u.Z.isFocused()
   }))(e => {
     let {
@@ -52,7 +52,7 @@ let f = o.ZP.connectStores([u.Z], () => ({
       } = t.staffNotes;
       return null == e ? null : (0, i.jsxs)("div", {
         className: n,
-        children: [(0, i.jsx)(f, {
+        children: [(0, i.jsx)(h, {
           user: e,
           className: p.header
         }), (0, i.jsx)("div", {
@@ -63,5 +63,5 @@ let f = o.ZP.connectStores([u.Z], () => ({
     }
     throw Error("Unknown type")
   };
-g.Types = h;
+g.Types = f;
 let m = g

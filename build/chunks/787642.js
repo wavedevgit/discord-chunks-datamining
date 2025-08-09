@@ -12,8 +12,8 @@ var r = n(255367),
   u = n(626135),
   d = n(768581),
   p = n(125631),
-  h = n(981631),
-  f = n(388032),
+  f = n(981631),
+  h = n(388032),
   g = n(507750);
 let m = (0, a.hQ)(),
   b = "".concat(m, "-decription");
@@ -43,9 +43,9 @@ function _(e, t, n) {
 }
 
 function O() {
-  let e = c.Z.getGuildsArray().filter(e => e.features.has(h.oNc.HUB)),
+  let e = c.Z.getGuildsArray().filter(e => e.features.has(f.oNc.HUB)),
     t = e => {
-      u.default.track(h.rMx.ADD_FRIEND_OTHER_PLACES_HUB_CLICKED, {
+      u.default.track(f.rMx.ADD_FRIEND_OTHER_PLACES_HUB_CLICKED, {
         guild_id: e
       }), (0, s.X)(e)
     };
@@ -55,14 +55,14 @@ function O() {
       children: [(0, r.jsx)(l.vwX, {
         tag: "h1",
         className: g.title,
-        children: f.intl.string(f.t.IuMx1d)
+        children: h.intl.string(h.t.IuMx1d)
       }), (0, r.jsx)(l.R94, {
         id: b,
         type: l.R94.Types.DESCRIPTION,
         children: (0, r.jsx)(l.Text, {
           tag: "div",
           variant: "heading-md/normal",
-          children: f.intl.string(f.t.DwevPj)
+          children: h.intl.string(h.t.DwevPj)
         })
       })]
     }), (0, r.jsxs)("div", {
@@ -73,8 +73,8 @@ function O() {
         size: 240
       }), e.name, () => {
         t(e.id)
-      })), _(l.Jmo, f.intl.string(f.t.AhKnz8), () => {
-        u.default.track(h.rMx.ADD_FRIEND_OTHER_PLACES_DISCOVERY_CLICKED), (0, o.uL)(h.Z5c.GUILD_DISCOVERY)
+      })), _(l.Jmo, h.intl.string(h.t.AhKnz8), () => {
+        u.default.track(f.rMx.ADD_FRIEND_OTHER_PLACES_DISCOVERY_CLICKED), (0, o.uL)(f.Z5c.GUILD_DISCOVERY)
       })]
     })]
   })

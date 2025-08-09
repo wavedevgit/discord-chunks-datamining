@@ -12,8 +12,8 @@ var r = n(255367),
   u = n(925329),
   d = n(79712),
   p = n(892001),
-  h = n(594174),
-  f = n(51144),
+  f = n(594174),
+  h = n(51144),
   g = n(743056),
   m = n(321488),
   b = n(417183),
@@ -29,7 +29,7 @@ function v(e) {
     applicationId: l,
     isGameRelationship: s,
     active: c
-  } = e, u = (null == (t = h.default.getCurrentUser()) ? void 0 : t.isStaff()) && (null == n ? void 0 : n.isStaff()), {
+  } = e, u = (null == (t = f.default.getCurrentUser()) ? void 0 : t.isStaff()) && (null == n ? void 0 : n.isStaff()), {
     acceptFriendRequest: d,
     cancelFriendRequest: p
   } = (0, g.u)({
@@ -37,7 +37,7 @@ function v(e) {
     applicationId: l,
     isGameRelationship: s,
     location: "Friends"
-  }), f = i.useCallback(e => {
+  }), h = i.useCallback(e => {
     e.stopPropagation(), d()
   }, [d]), b = i.useCallback(e => {
     e.stopPropagation(), p()
@@ -53,7 +53,7 @@ function v(e) {
       icon: o.dz2,
       actionType: m.Z.ActionTypes.ACCEPT,
       tooltip: E.intl.string(E.t.ZcibdX),
-      onClick: f,
+      onClick: h,
       shouldHighlight: c
     }), (0, r.jsx)(m.Z, {
       icon: o.Dio,
@@ -96,24 +96,24 @@ function C(e) {
     applicationId: n,
     userTag: a,
     isProvisional: s
-  } = e, p = i.useMemo(() => t ? E.intl.string(E.t["Uv/eT0"]) : a, [t, a]), h = (0, l.e7)([c.Z], () => null != n ? c.Z.getApplication(n) : null);
+  } = e, p = i.useMemo(() => t ? E.intl.string(E.t["Uv/eT0"]) : a, [t, a]), f = (0, l.e7)([c.Z], () => null != n ? c.Z.getApplication(n) : null);
   return (0, r.jsxs)("div", {
     className: y.applicationSublabel,
     children: [!s && (0, r.jsx)(o.Text, {
       variant: "text-sm/medium",
       color: "text-secondary",
       children: p
-    }), null != h && (0, r.jsxs)(r.Fragment, {
+    }), null != f && (0, r.jsxs)(r.Fragment, {
       children: [!s && (0, r.jsx)(d.Z, {
         height: 2,
         width: 2
       }), (0, r.jsx)(u.Z, {
-        game: h,
+        game: f,
         size: u.Z.Sizes.XXSMALL
       }), (0, r.jsx)(o.Text, {
         variant: "text-sm/medium",
         color: "text-secondary",
-        children: h.name
+        children: f.name
       })]
     })]
   })
@@ -126,7 +126,7 @@ function S(e) {
     status: i,
     isGameRelationship: l,
     applicationId: a
-  } = e, o = f.ZP.useUserTag(t);
+  } = e, o = h.ZP.useUserTag(t);
   return (0, r.jsx)(_.Z, {
     user: t,
     hovered: n,
@@ -151,14 +151,14 @@ function N(e) {
     isGameRelationship: c
   } = e, {
     analyticsLocations: u
-  } = (0, s.ZP)(), d = l === O.Skl.OFFLINE ? O.Skl.UNKNOWN : l, h = i.useCallback(() => (0, p.openUserProfileModal)({
+  } = (0, s.ZP)(), d = l === O.Skl.OFFLINE ? O.Skl.UNKNOWN : l, f = i.useCallback(() => (0, p.openUserProfileModal)({
     userId: t.id,
     sourceAnalyticsLocations: u
   }), [u, t.id]);
   return (0, r.jsx)(b.Z, {
     isFocused: a,
     user: t,
-    onClick: h,
+    onClick: f,
     children: e => (0, r.jsxs)("div", {
       className: y.listItemContents,
       children: [(0, r.jsx)(S, {

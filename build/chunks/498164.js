@@ -13,8 +13,8 @@ var i = n(756647),
   u = n(457330),
   d = n(533307),
   p = n(317381),
-  h = n(122613),
-  f = n(649256),
+  f = n(122613),
+  h = n(649256),
   g = n(100527),
   m = n(728345),
   b = n(185669),
@@ -230,8 +230,8 @@ let w = {
               d = null != (i = u.searchParams.get("referrer_id")) ? i : void 0,
               {
                 customId: b
-              } = await (0, f.ur)(e, u.searchParams.get("link_id"), u.searchParams.get("custom_id"));
-            await (0, h.Z)({
+              } = await (0, h.ur)(e, u.searchParams.get("link_id"), u.searchParams.get("custom_id"));
+            await (0, f.Z)({
               targetApplicationId: e,
               channelId: s,
               analyticsLocations: [g.Z.DEEPLINK],

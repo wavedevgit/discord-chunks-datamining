@@ -1,6 +1,6 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  Z: () => f
+  Z: () => h
 }), n(388685);
 var r = n(255367);
 n(73800);
@@ -14,15 +14,15 @@ var i = n(392711),
 let d = new Set(["DisplayPort"]),
   p = "connected-device-modal";
 
-function h() {
+function f() {
   let e;
   if ((0, a.nfh)(p)) return;
   let t = s.Z.getInputDeviceId(),
     i = s.Z.getOutputDeviceId();
   if (c.Z.getState().neverShowModal || l().isEmpty(c.Z.lastDeviceConnected)) return;
-  let h = (0, c.X)(s.Z.getInputDevices()[t]),
-    f = (0, c.X)(s.Z.getOutputDevices()[i]);
-  if (l().some(c.Z.lastDeviceConnected, e => d.has(e.displayName) || e.displayName === h || e.displayName === f)) return;
+  let f = (0, c.X)(s.Z.getInputDevices()[t]),
+    h = (0, c.X)(s.Z.getOutputDevices()[i]);
+  if (l().some(c.Z.lastDeviceConnected, e => d.has(e.displayName) || e.displayName === f || e.displayName === h)) return;
   let g = l().some(c.Z.lastDeviceConnected, e => o.Z.isCertified(c.Z.inputDevices[e.displayName]) || o.Z.isCertified(c.Z.outputDevices[e.displayName]));
   if ((t === u.w5 && c.Z.lastInputSystemDevice.justChanged || i === u.w5 && c.Z.lastOutputSystemDevice.justChanged) && !g) return;
   let m = l().first(Object.keys(c.Z.lastDeviceConnected)),
@@ -47,8 +47,8 @@ function h() {
     modalKey: p
   })))
 }
-let f = {
+let h = {
   init() {
-    c.Z.addChangeListener(h)
+    c.Z.addChangeListener(f)
   }
 }

@@ -1,6 +1,6 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  Z: () => h
+  Z: () => f
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -13,23 +13,23 @@ var r = n(255367),
   d = n(388032),
   p = n(950127);
 
-function h(e) {
+function f(e) {
   let {
     inboxIconRef: t,
     recentsPopoutShown: n
-  } = e, [h, f] = i.useState(!1), g = (0, l.e7)([s.Z], () => s.Z.getLastUnseenInvite()), m = (0, l.e7)([u.default], () => null != g ? u.default.getUser(g.inviter_id) : null);
+  } = e, [f, h] = i.useState(!1), g = (0, l.e7)([s.Z], () => s.Z.getLastUnseenInvite()), m = (0, l.e7)([u.default], () => null != g ? u.default.getUser(g.inviter_id) : null);
   return (i.useEffect(() => {
-    n && f(!1)
+    n && h(!1)
   }, [n]), i.useEffect(() => {
-    if (null == g) return void f(!1);
-    (0, c.Br)(g), f(!0);
+    if (null == g) return void h(!1);
+    (0, c.Br)(g), h(!0);
     let e = new a.V7;
     return e.start(5e3, () => {
-      f(!1)
+      h(!1)
     }), () => {
       e.stop()
     }
-  }, [g]), h && null != g && null != m) ? (0, r.jsxs)(o.Cys, {
+  }, [g]), f && null != g && null != m) ? (0, r.jsxs)(o.Cys, {
     tooltipClassName: p.tooltip,
     tooltipContentClassName: p.tooltipContent,
     targetElementRef: t,

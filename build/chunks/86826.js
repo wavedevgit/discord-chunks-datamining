@@ -18,10 +18,10 @@ let p = function(e) {
     title: n,
     className: i,
     color: p,
-    animate: h,
-    gradientStopColor: f,
+    animate: f,
+    gradientStopColor: h,
     getHistoricalTotalBytes: g
-  } = e, m = (0, a.Sl)(p).hex, b = null == (t = (0, a.Sl)(f)) ? void 0 : t.hex;
+  } = e, m = (0, a.Sl)(p).hex, b = null == (t = (0, a.Sl)(h)) ? void 0 : t.hex;
   return (0, r.jsx)(c.Z, {
     getHistoricalTotalBytes: g,
     children: (e, t, a) => {
@@ -54,7 +54,7 @@ let p = function(e) {
               color: m,
               gradientStopColor: b,
               numUpdatesToShow: a,
-              animate: h,
+              animate: f,
               pixelWidth: 600,
               pixelHeight: 48,
               lineWidth: 4

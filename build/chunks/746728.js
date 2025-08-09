@@ -1,6 +1,6 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  I: () => f,
+  I: () => h,
   Z: () => m
 }), n(388685);
 var r = n(255367),
@@ -13,9 +13,9 @@ var r = n(255367),
   u = n(164991),
   d = n(783393),
   p = n(112471),
-  h = n(384506);
+  f = n(384506);
 
-function f(e) {
+function h(e) {
   let {
     categoryId: t,
     loadId: n
@@ -36,7 +36,7 @@ function g(e) {
     categoryId: n,
     count: l
   } = e, c = i.useCallback(() => {
-    f({
+    h({
       categoryId: n,
       loadId: t
     })
@@ -45,16 +45,16 @@ function g(e) {
   });
   return (0, r.jsxs)(o.P3F, {
     onClick: c,
-    className: a()(h.category, {
-      [h.selected]: p
+    className: a()(f.category, {
+      [f.selected]: p
     }),
     children: [(0, r.jsx)(o.Text, {
-      className: h.name,
+      className: f.name,
       variant: "text-sm/medium",
       color: "header-primary",
       children: m
     }), (0, r.jsx)(o.Text, {
-      className: h.count,
+      className: f.count,
       variant: "text-sm/normal",
       color: "text-muted",
       children: g
@@ -66,7 +66,7 @@ let m = function(e) {
     loadId: t
   } = e, n = (0, p.q)();
   return null == n ? null : (0, r.jsx)("div", {
-    className: h.categories,
+    className: f.categories,
     children: n.map(e => {
       let [n, i] = e;
       return (0, r.jsx)(g, {

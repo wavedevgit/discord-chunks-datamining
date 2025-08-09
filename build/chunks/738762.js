@@ -1,6 +1,6 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  Z: () => h
+  Z: () => f
 });
 var r = n(255367),
   i = n(73800),
@@ -31,21 +31,21 @@ function p(e) {
   return e
 }
 
-function h(e) {
+function f(e) {
   let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
     {
       priorityMembers: n,
-      partiedMembers: h
+      partiedMembers: f
     } = e,
-    f = i.useContext(c.AnalyticsContext),
+    h = i.useContext(c.AnalyticsContext),
     g = n.map(e => {
       let {
         user: t
       } = e;
       return t.id
     }),
-    m = 1 === h.length && 1 === n.length,
-    b = n.length - h.length > 0;
+    m = 1 === f.length && 1 === n.length,
+    b = n.length - f.length > 0;
   return (m || t) && !b && 0 !== g.length ? (0, r.jsx)(l.sNh, {
     id: "message",
     action: function() {
@@ -54,7 +54,7 @@ function h(e) {
       }).then(t => {
         var n, r;
         return o.ZP.trackWithMetadata(u.rMx.ACTIVITY_FEED_DM_VISITED, p({
-          source: (n = p({}, f.location), r = r = {
+          source: (n = p({}, h.location), r = r = {
             object: u.qAy.LIST_ITEM
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
             var n = Object.keys(e);

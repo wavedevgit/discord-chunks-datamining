@@ -14,8 +14,8 @@ var r, i = n(255367),
   u = n(884338),
   d = n(471445),
   p = n(986332),
-  h = n(662842),
-  f = n(703656),
+  f = n(662842),
+  h = n(703656),
   g = n(922482),
   m = n(565799),
   b = n(501655),
@@ -158,13 +158,13 @@ function F(e) {
     guildEvent: n,
     noticeType: r
   } = e, a = (0, L.cS)(n), s = null != a ? (0, x.m)(a, !0) : null, u = (0, L.nE)(n), p = (0, d.KS)(u), {
-    startTime: h,
-    endTime: f
+    startTime: f,
+    endTime: h
   } = (0, Z.ZP)(n), {
     startDateTimeString: g,
     upcomingEvent: m,
     diffMinutes: b
-  } = (0, R.ub)(h.toISOString(), null == f ? void 0 : f.toISOString()), _ = m ? b > 0 ? U.intl.formatToPlainString(U.t.PQlCWl, {
+  } = (0, R.ub)(f.toISOString(), null == h ? void 0 : h.toISOString()), _ = m ? b > 0 ? U.intl.formatToPlainString(U.t.PQlCWl, {
     minutes: b
   }) : U.intl.string(U.t.WINqKS) : U.intl.formatToPlainString(U.t.DC6h3N, {
     date: g
@@ -301,7 +301,7 @@ function Y(e) {
       text: n,
       fullWidth: !0,
       onClick: () => {
-        null != t && null != t.getGuildId() && ((0, g.Cq)(t), (0, f.XU)(t.getGuildId(), t.id))
+        null != t && null != t.getGuildId() && ((0, g.Cq)(t), (0, h.XU)(t.getGuildId(), t.id))
       }
     })
   })
@@ -350,16 +350,16 @@ function X(e) {
     channel: t,
     speakers: n,
     voiceType: r
-  } = e, a = t.getGuildId(), d = l.useMemo(() => n.slice(0, 3), [n]), p = (0, s.e7)([y.Z], () => y.Z.can(M.Plq.CONNECT, t)), h = (0, E.Z)(t.id), f = U.intl.string(U.t.VJlc0d);
+  } = e, a = t.getGuildId(), d = l.useMemo(() => n.slice(0, 3), [n]), p = (0, s.e7)([y.Z], () => y.Z.can(M.Plq.CONNECT, t)), f = (0, E.Z)(t.id), h = U.intl.string(U.t.VJlc0d);
   switch (r) {
     case 1:
-      f = U.intl.string(U.t.VJlc0d);
+      h = U.intl.string(U.t.VJlc0d);
       break;
     case 2:
-      f = U.intl.string(U.t.ZYO5OD), (null == h ? void 0 : h.speaker) ? f = U.intl.string(U.t["/cnSFR"]) : null != h && (f = U.intl.string(U.t.btSGOj));
+      h = U.intl.string(U.t.ZYO5OD), (null == f ? void 0 : f.speaker) ? h = U.intl.string(U.t["/cnSFR"]) : null != f && (h = U.intl.string(U.t.btSGOj));
       break;
     case 3:
-      f = U.intl.string(U.t.wBoE6O);
+      h = U.intl.string(U.t.wBoE6O);
       break;
     default:
       (0, C.vE)(r)
@@ -378,9 +378,9 @@ function X(e) {
         className: G.userNames,
         children: (0, _.ER)(a, d, null == t ? void 0 : t.id, n.length)
       })]
-    }) : null, p && null == h && (0, i.jsx)(Y, {
+    }) : null, p && null == f && (0, i.jsx)(Y, {
       channel: t,
-      label: f
+      label: h
     })]
   })
 }
@@ -399,14 +399,14 @@ let Q = l.memo(function(e) {
     isEventNoticeHidden: P.Z.isLiveChannelNoticeHidden({
       eventId: null == l ? void 0 : l.id
     })
-  }), [o, l]), d = null, f = null != o && null != r && !c;
-  if (n) return (0, i.jsx)(h.Z, {
+  }), [o, l]), d = null, h = null != o && null != r && !c;
+  if (n) return (0, i.jsx)(f.Z, {
     guild: t
   });
-  null == l || u ? f && (d = (0, i.jsx)(K, {
+  null == l || u ? h && (d = (0, i.jsx)(K, {
     stageInstance: o,
     channel: r
-  })) : l.entity_type === k.WX.STAGE_INSTANCE && f ? d = (0, i.jsx)(K, {
+  })) : l.entity_type === k.WX.STAGE_INSTANCE && h ? d = (0, i.jsx)(K, {
     stageInstance: o,
     channel: r
   }) : l.entity_type === k.WX.EXTERNAL ? d = (0, i.jsx)(z, {

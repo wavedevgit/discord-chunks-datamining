@@ -26,8 +26,8 @@ var r, i, l = n(729594),
   u = n(155268),
   d = n(812206),
   p = n(454585),
-  h = n(739566),
-  f = n(973616),
+  f = n(739566),
+  h = n(973616),
   g = n(131704),
   m = n(598077),
   b = n(592125),
@@ -135,7 +135,7 @@ function B(e) {
     }).map(U),
     n = b.Z.getChannel(e.channel_id),
     r = null != e.author ? new m.Z(e.author) : void 0,
-    i = null != e.author ? (0, h.ij)(r, n) : void 0;
+    i = null != e.author ? (0, f.ij)(r, n) : void 0;
   return {
     id: e.id,
     blocked: e.blocked,
@@ -264,10 +264,10 @@ async function J(e, t, n) {
       }, "Invalid Origin")
     } else {
       let e = await Q(t);
-      if (r = f.ZP.createFromServer(e), !V(n, e.rpc_origins)) throw new P.Z({
+      if (r = h.ZP.createFromServer(e), !V(n, e.rpc_origins)) throw new P.Z({
         closeCode: A.$VG.INVALID_ORIGIN
       }, "Invalid Origin")
-    } null == r && (r = f.ZP.createFromServer(await Q(t)));
+    } null == r && (r = h.ZP.createFromServer(await Q(t)));
   let {
     id: i,
     name: l,

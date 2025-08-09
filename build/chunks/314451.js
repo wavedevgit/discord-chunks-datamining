@@ -13,7 +13,7 @@ var r = n(255367),
   d = n(665149),
   p = n(388032);
 
-function h(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -31,11 +31,11 @@ function h(e) {
   }
   return e
 }
-let f = () => (0, a.ZDy)(async () => {
+let h = () => (0, a.ZDy)(async () => {
   let {
     default: e
   } = await n.e("83051").then(n.bind(n, 115072));
-  return t => (0, r.jsx)(e, h({}, t))
+  return t => (0, r.jsx)(e, f({}, t))
 });
 
 function g(e) {
@@ -75,7 +75,7 @@ function g(e) {
               id: "staff-help-bug-reporter",
               label: p.intl.string(p.t["5Lqopa"]),
               icon: a.nnZ,
-              action: f
+              action: h
             }), n && (0, r.jsx)(a.sNh, {
               id: "staff-devtools",
               label: "Toggle DevTools",
@@ -97,9 +97,9 @@ function g(e) {
         let {
           isShown: l
         } = i;
-        return (0, r.jsx)(d.JO, h({
+        return (0, r.jsx)(d.JO, f({
           ref: E,
-          onClick: f,
+          onClick: h,
           icon: a.nnZ,
           "aria-label": p.intl.string(p.t.cqEoj4),
           selected: l,

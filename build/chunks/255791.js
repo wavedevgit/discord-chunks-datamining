@@ -9,31 +9,31 @@ var r, i, l, a = n(442837),
   u = n(430824),
   d = n(496675),
   p = n(981631);
-let h = {
+let f = {
   MAX_MEMBER_COUNT: new Set
 };
-class f extends(r = a.ZP.Store) {
+class h extends(r = a.ZP.Store) {
   initialize() {
     var e;
-    this.waitFor(d.Z, u.Z, c.Z), this.syncWith([d.Z, u.Z, c.Z], p.dG4), o.K.remove(p.vID.MAX_MEMBER_COUNT_100), o.K.remove(p.vID.MAX_MEMBER_COUNT_250), e = new Set(o.K.get(p.vID.MAX_MEMBER_COUNT)), h[p.vID.MAX_MEMBER_COUNT] = void 0 !== e ? e : new Set
+    this.waitFor(d.Z, u.Z, c.Z), this.syncWith([d.Z, u.Z, c.Z], p.dG4), o.K.remove(p.vID.MAX_MEMBER_COUNT_100), o.K.remove(p.vID.MAX_MEMBER_COUNT_250), e = new Set(o.K.get(p.vID.MAX_MEMBER_COUNT)), f[p.vID.MAX_MEMBER_COUNT] = void 0 !== e ? e : new Set
   }
   isVisible(e) {
     var t;
     if (null == e) return !1;
     let n = null != (t = c.Z.getMemberCount(e.id)) ? t : 0,
       r = d.Z.can(p.Plq.ADMINISTRATOR, e);
-    return !h[p.vID.MAX_MEMBER_COUNT].has(e.id) && r && e.maxMembers > 0 && e.maxMembers - n <= 1e4
+    return !f[p.vID.MAX_MEMBER_COUNT].has(e.id) && r && e.maxMembers > 0 && e.maxMembers - n <= 1e4
   }
 }
-l = "MaxMemberCountChannelNoticeStore", (i = "displayName") in f ? Object.defineProperty(f, i, {
+l = "MaxMemberCountChannelNoticeStore", (i = "displayName") in h ? Object.defineProperty(h, i, {
   value: l,
   enumerable: !0,
   configurable: !0,
   writable: !0
-}) : f[i] = l;
-let g = new f(s.Z, {
+}) : h[i] = l;
+let g = new h(s.Z, {
   MAX_MEMBER_COUNT_NOTICE_DISMISS: function(e) {
     let t = e.guildId;
-    if (!h[p.vID.MAX_MEMBER_COUNT].has(t)) return h[p.vID.MAX_MEMBER_COUNT].add(t), o.K.set(p.vID.MAX_MEMBER_COUNT, h[p.vID.MAX_MEMBER_COUNT]), !0
+    if (!f[p.vID.MAX_MEMBER_COUNT].has(t)) return f[p.vID.MAX_MEMBER_COUNT].add(t), o.K.set(p.vID.MAX_MEMBER_COUNT, f[p.vID.MAX_MEMBER_COUNT]), !0
   }
 })

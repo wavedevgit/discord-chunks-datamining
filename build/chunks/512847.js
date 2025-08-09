@@ -12,8 +12,8 @@ var r = n(255367),
   u = n(569545),
   d = n(106301),
   p = n(460181),
-  h = n(979283),
-  f = n(590415),
+  f = n(979283),
+  h = n(590415),
   g = n(131704),
   m = n(199902),
   b = n(314897),
@@ -70,7 +70,7 @@ function A() {
       videoEnabled: n,
       inVoiceChannel: r
     } = t;
-    if (!(0, h.O)()) return;
+    if (!(0, f.O)()) return;
     let {
       videoEnabled: i,
       inVoiceChannel: l
@@ -157,11 +157,11 @@ function k() {
 function M() {
   return j([I.Z, S.Z], () => {
     let e = I.Z.getVoiceChannelId();
-    if (null == e) return f.xO.NONE;
+    if (null == e) return h.xO.NONE;
     let t = S.Z.getVoiceStateForChannel(e);
-    return (0, f.gf)(t)
+    return (0, h.gf)(t)
   }, (e, t) => {
-    if (e !== t && t === f.xO.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK) return "reconnect"
+    if (e !== t && t === h.xO.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK) return "reconnect"
   }), null
 }
 

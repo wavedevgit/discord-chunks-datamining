@@ -12,8 +12,8 @@ var r = n(255367),
   u = n(704215),
   d = n(907862),
   p = n(481060),
-  h = n(150063),
-  f = n(230711),
+  f = n(150063),
+  h = n(230711),
   g = n(112724),
   m = n(183126),
   b = n(493773),
@@ -101,9 +101,9 @@ function er() {
     } = (0, G.m)({
       onError: u
     }),
-    h = (0, _.Z)("message-requests-list"),
+    f = (0, _.Z)("message-requests-list"),
     {
-      channelId: f
+      channelId: h
     } = (0, V._)(),
     g = i.useCallback(() => {
       d(n.map(e => e.channel.id))
@@ -116,14 +116,14 @@ function er() {
       return (0, r.jsx)(W.Z, {
         index: o,
         className: a()({
-          [$.selected]: null != f && f === u,
-          [$.siblingSelected]: null != f && f === c
+          [$.selected]: null != h && h === u,
+          [$.siblingSelected]: null != h && h === c
         }),
         channel: s.channel,
         user: s.user,
         hasSingleMessageRequest: l
       }, u)
-    }, [l, n, f]),
+    }, [l, n, h]),
     O = i.useCallback(() => (0, r.jsxs)(y.Z, {
       className: $.sectionTitle,
       children: [t > 0 ? J.intl.formatToPlainString(J.t.rA4iWV, {
@@ -148,7 +148,7 @@ function er() {
   }), 0 === n.length) ? (0, r.jsx)(z.Z, {
     section: K.pS.REQUESTS
   }) : (0, r.jsx)(o.bG, {
-    navigator: h,
+    navigator: f,
     children: (0, r.jsx)(o.SJ, {
       children: t => {
         var {
@@ -243,7 +243,7 @@ let el = e => {
           actions: [{
             text: J.intl.string(J.t.JN6EOD),
             onClick: e => {
-              e.stopPropagation(), f.Z.open(q.oAB.CONTENT_AND_SOCIAL, null, {
+              e.stopPropagation(), h.Z.open(q.oAB.CONTENT_AND_SOCIAL, null, {
                 scrollPosition: Q.FY.MESSAGE_REQUESTS_V2
               }), l(X.L.TAKE_ACTION)
             }
@@ -269,7 +269,7 @@ let eo = (0, g.Z)(function(e) {
     width: t
   } = e, n = (0, H.q)();
   (0, b.ZP)(() => {
-    h.Y(q.Z5c.MESSAGE_REQUESTS), (0, x.e)("message-requests"), R.default.track(q.rMx.MESSAGE_REQUESTS_VIEWED, {
+    f.Y(q.Z5c.MESSAGE_REQUESTS), (0, x.e)("message-requests"), R.default.track(q.rMx.MESSAGE_REQUESTS_VIEWED, {
       num_message_requests: n
     }), N.Z.increment({
       name: s.V.MESSAGE_REQUEST_VIEW
@@ -278,12 +278,12 @@ let eo = (0, g.Z)(function(e) {
   let l = (0, c.e7)([A.Z], () => A.Z.theme),
     o = (0, F.w)(),
     [u, d] = i.useState(!1),
-    f = (0, c.e7)([Z.ZP], () => {
+    h = (0, c.e7)([Z.ZP], () => {
       let e = Z.ZP.getSidebarState(Z.uZ);
       return null != e && e.type === j.tI.VIEW_MESSAGE_REQUEST ? e : null
     }),
-    g = null == f ? void 0 : f.channelId,
-    m = null != f,
+    g = null == h ? void 0 : h.channelId,
+    m = null != h,
     _ = (0, k.T)(g),
     O = (0, D.J)(g),
     E = i.useRef(null);

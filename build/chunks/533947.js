@@ -9,8 +9,8 @@ var a, o = n(392711),
   u = n(570140),
   d = n(308063),
   p = n(388610),
-  h = n(430824),
-  f = n(496675),
+  f = n(430824),
+  h = n(496675),
   g = n(855674),
   m = n(981631);
 
@@ -44,7 +44,7 @@ let O = [],
   S = null;
 
 function N() {
-  if (r = null != (i = p.Z.getChannel()) ? h.Z.getGuild(i.guild_id) : null, O = null != i && null != r && f.Z.can(m.Plq.MANAGE_WEBHOOKS, i) ? g.Z.getWebhooksForChannel(r.id, i.id) : [], null != E) {
+  if (r = null != (i = p.Z.getChannel()) ? f.Z.getGuild(i.guild_id) : null, O = null != i && null != r && h.Z.can(m.Plq.MANAGE_WEBHOOKS, i) ? g.Z.getWebhooksForChannel(r.id, i.id) : [], null != E) {
     let e = P(E.id);
     null != e && (E = e)
   }
@@ -64,7 +64,7 @@ function P(e) {
 }
 class j extends(a = c.ZP.Store) {
   initialize() {
-    this.waitFor(p.Z, h.Z, g.Z, f.Z)
+    this.waitFor(p.Z, f.Z, g.Z, h.Z)
   }
   hasChanges() {
     return C
