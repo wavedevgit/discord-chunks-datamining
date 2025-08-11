@@ -1,5 +1,5 @@
 /** Chunk was on 45620 **/
-/** chunk id: 763891, original params: e,t,n (module,exports,require) **/
+/** chunk id: 763891, original params: e,t,r (module,exports,require) **/
 "use strict";
 require.d(exports, {
   Z: () => N
@@ -37,7 +37,7 @@ var Chunk255367 = require("./255367.js"),
 function N(e) {
   var t;
   let {
-    isFetchingCategories: n,
+    isFetchingCategories: r,
     isFullScreen: N,
     scrollerRef: A,
     tab: w
@@ -74,7 +74,7 @@ function N(e) {
       cacheDisabled: Z
     })
   }, []), l.useEffect(() => {
-    n || (0, h.n)({
+    r || (0, h.n)({
       sessionId: R,
       checkpoint: h.a.SHOP_RENDERED,
       tab: w,
@@ -82,36 +82,36 @@ function N(e) {
       unpublishedCategoriesShown: D,
       cacheDisabled: Z
     })
-  }, [R, N, D, Z, n, w]), n || null == M) ? (0, r.jsx)(m.Z, {}) : (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)("div", {
+  }, [R, N, D, Z, r, w]), r || null == M) ? (0, n.jsx)(m.Z, {}) : (0, n.jsxs)(n.Fragment, {
+    children: [(0, n.jsx)("div", {
       style: {
         backgroundImage: "url(".concat(q, ")")
       },
       className: S.bannerContainer,
-      children: (0, r.jsx)(s.X6q, {
+      children: (0, n.jsx)(s.X6q, {
         variant: "heading-xxl/extrabold",
         children: G
       })
-    }), (0, r.jsx)("div", {
+    }), (0, n.jsx)("div", {
       className: S.products,
       children: J.slice(40 * (H - 1), 40 * H).map((e, t) => {
-        let n = g.Z.getCategory(e.categorySkuId);
-        return null == n ? null : (0, r.jsx)(p.k0, {
+        let r = g.Z.getCategory(e.categorySkuId);
+        return null == r ? null : (0, n.jsx)(p.k0, {
           newValue: {
             tilePosition: t
           },
-          children: (0, r.jsx)(_.Z, {
+          children: (0, n.jsx)(_.Z, {
             product: e,
             user: M,
-            category: n,
+            category: r,
             tab: w
           }, e.skuId)
         }, e.skuId)
       })
-    }), J.length > 40 && (0, r.jsx)("div", {
+    }), J.length > 40 && (0, n.jsx)("div", {
       className: S.paginationContainer,
-      children: (0, r.jsx)("div", {
-        children: (0, r.jsx)(s.DsT, {
+      children: (0, n.jsx)("div", {
+        children: (0, n.jsx)(s.DsT, {
           currentPage: H,
           totalCount: J.length,
           pageSize: 40,

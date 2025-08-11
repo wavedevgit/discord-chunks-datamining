@@ -1,5 +1,5 @@
 /** Chunk was on 45620 **/
-/** chunk id: 168020, original params: e,t,n (module,exports,require) **/
+/** chunk id: 168020, original params: e,t,r (module,exports,require) **/
 "use strict";
 require.d(exports, {
   R: () => s
@@ -13,33 +13,33 @@ var Chunk481060 = require("./481060.js"),
 let s = e => {
   let {
     endDate: t,
-    size: n = "md"
+    size: r = "md"
   } = e, {
     days: s,
     hours: c,
     minutes: u
-  } = (0, a.Z)(t), d = function(e, t, n) {
-    let r = e => "".concat(e.toString().padStart(2, "0"));
-    return [r(e), r(t), r(n)].join(":")
+  } = (0, a.Z)(t), d = function(e, t, r) {
+    let n = e => "".concat(e.toString().padStart(2, "0"));
+    return [n(e), n(t), n(r)].join(":")
   }(s, c, u);
-  return (0, r.jsxs)("div", {
+  return (0, n.jsxs)("div", {
     className: o.container,
     role: "timer",
-    children: [d.split("").map((e, t) => ":" === e ? (0, r.jsx)(l.Text, {
+    children: [d.split("").map((e, t) => ":" === e ? (0, n.jsx)(l.Text, {
       color: "none",
-      variant: "md" === n ? "heading-lg/extrabold" : "heading-xxl/extrabold",
+      variant: "md" === r ? "heading-lg/extrabold" : "heading-xxl/extrabold",
       className: o.delineator,
       "aria-hidden": true,
       tag: "div",
       children: e
-    }, t) : (0, r.jsx)(l.Text, {
+    }, t) : (0, n.jsx)(l.Text, {
       color: "always-white",
-      variant: "md" === n ? "heading-md/bold" : "heading-xl/bold",
+      variant: "md" === r ? "heading-md/bold" : "heading-xl/bold",
       className: o.number,
       "aria-hidden": true,
       tag: "div",
       children: e
-    }, t)), (0, r.jsx)(l.nn4, {
+    }, t)), (0, n.jsx)(l.nn4, {
       children: i.intl.format(i.t.j6IyVV, {
         days: s,
         hours: c,

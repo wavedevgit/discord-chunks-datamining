@@ -1,4 +1,4 @@
-/** Chunk was on 11912 **/
+/** Chunk was on 17613 **/
 /** chunk id: 813083, original params: e,t,r (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -22,11 +22,11 @@ let u = e => {
   let p = (0, s.OT)(t.unpublishedAt);
 
   function b(e) {
-    return (0, n.jsx)(i.IGR, {
+    return (0, n.jsx)(l.IGR, {
       disableColor: true,
       text: e,
       className: u,
-      style: (0, l.wj)(d) ? {
+      style: (0, i.wj)(d) ? {
         color: "var(--black-500)",
         backgroundColor: "var(--white-500)"
       } : {

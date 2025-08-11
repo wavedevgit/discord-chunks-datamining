@@ -1,5 +1,5 @@
 /** Chunk was on 45620 **/
-/** chunk id: 888302, original params: e,t,n (module,exports,require) **/
+/** chunk id: 888302, original params: e,t,r (module,exports,require) **/
 "use strict";
 require.d(exports, {
   Z: () => u
@@ -17,7 +17,7 @@ function u() {
     itemTypeFilters: e,
     searchQuery: t
   } = (0, Chunk501431.S)(e => e), {
-    totalCount: n,
+    totalCount: r,
     isFetchingResults: u
   } = (0, Chunk149705.a)(), d = (0, Chunk501431.S)(e => e.hasFilters()), p = Chunk73800.useCallback(() => {
     if (!d) return "";

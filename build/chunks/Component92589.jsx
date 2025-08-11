@@ -1,5 +1,5 @@
 /** Chunk was on 45620 **/
-/** chunk id: 92589, original params: e,t,n (module,exports,require) **/
+/** chunk id: 92589, original params: e,t,r (module,exports,require) **/
 "use strict";
 require.d(exports, {
   Z: () => d
@@ -15,18 +15,18 @@ var Chunk481060 = require("./481060.js"),
 
 function u(e) {
   for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      var r;
-      r = n[t], t in e ? Object.defineProperty(e, t, {
-        value: r,
+    var r = null != arguments[t] ? arguments[t] : {},
+      n = Object.keys(r);
+    "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(r, e).enumerable
+    }))), n.forEach(function(t) {
+      var n;
+      n = r[t], t in e ? Object.defineProperty(e, t, {
+        value: n,
         enumerable: true,
         configurable: true,
         writable: true
-      }) : e[t] = r
+      }) : e[t] = n
     })
   }
   return e
@@ -34,38 +34,38 @@ function u(e) {
 let d = e => {
   let {
     immersiveBannerBlock: t,
-    onVisibilityChange: n
+    onVisibilityChange: r
   } = e, d = (0, a.O)(e => {
-    null == n || n(e)
-  }, .33, null != n), p = null != t.textColor ? {
+    null == r || r(e)
+  }, .33, null != r), p = null != t.textColor ? {
     color: t.textColor
   } : true, g = null != t.body && "" !== t.body, f = null != t.helpCenterUrl && "" !== t.helpCenterUrl;
-  return (0, r.jsxs)("div", {
+  return (0, n.jsxs)("div", {
     ref: d,
     className: c.immersiveBannerBlock,
-    children: [(0, r.jsx)("div", {
+    children: [(0, n.jsx)("div", {
       className: c.banner,
-      children: (0, r.jsx)(o.Z, {
+      children: (0, n.jsx)(o.Z, {
         bannerStatic: t.bannerAsset.static,
         bannerAnimated: t.bannerAsset.animated
       })
-    }), (0, r.jsx)("div", {
+    }), (0, n.jsx)("div", {
       className: c.immersiveBannerContent,
-      children: (0, r.jsxs)("div", {
+      children: (0, n.jsxs)("div", {
         className: c.immersiveBannerTextContainer,
-        children: [null != t.endTime ? (0, r.jsx)(i.R, {
+        children: [null != t.endTime ? (0, n.jsx)(i.R, {
           endDate: t.endTime,
           size: "lg"
-        }) : null, (0, r.jsx)(l.X6q, {
+        }) : null, (0, n.jsx)(l.X6q, {
           variant: "heading-xxl/bold",
           className: c.title,
           color: "header-primary",
           style: u({}, p),
           children: t.title
-        }), g || f ? (0, r.jsxs)(l.Text, {
+        }), g || f ? (0, n.jsxs)(l.Text, {
           variant: "text-md/medium",
           style: u({}, p),
-          children: [g && t.body, g && f && " ", f && (0, r.jsx)(l.eee, {
+          children: [g && t.body, g && f && " ", f && (0, n.jsx)(l.eee, {
             href: t.helpCenterUrl,
             className: c.learnMoreLink,
             style: u({}, p),

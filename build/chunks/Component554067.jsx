@@ -1,5 +1,5 @@
 /** Chunk was on 45620 **/
-/** chunk id: 554067, original params: e,t,n (module,exports,require) **/
+/** chunk id: 554067, original params: e,t,r (module,exports,require) **/
 "use strict";
 require.d(exports, {
   Z: () => g
@@ -18,7 +18,7 @@ var Chunk255367 = require("./255367.js"),
 function g(e) {
   let {
     handleTransition: t,
-    selectedTab: n
+    selectedTab: r
   } = e, {
     searchQuery: g,
     onSetSearchQuery: f
@@ -30,20 +30,20 @@ function g(e) {
     return () => clearTimeout(e)
   }, [b, f]), l.useEffect(() => {
     h(g)
-  }, [g]), (0, r.jsx)(a.P3F, {
+  }, [g]), (0, n.jsx)(a.P3F, {
     ignoreKeyPress: true,
     onClick: () => {
-      n !== c.AW.CATALOG && t(c.AW.CATALOG), i.default.track(u.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+      r !== c.AW.CATALOG && t(c.AW.CATALOG), i.default.track(u.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
         collectibles_shop_session_id: null == m ? true : m.sessionId,
         page_section: null == m ? true : m.pageSection,
         page_category: null == m ? true : m.pageCategory,
         page_index: null == m ? true : m.pageIndex,
         page_size: null == m ? true : m.pageSize,
         cta_name: "search bar",
-        page_type: n
+        page_type: r
       })
     },
-    children: (0, r.jsx)(a.E1j, {
+    children: (0, n.jsx)(a.E1j, {
       size: "sm",
       className: p.searchBar,
       onKeyDown: e => {
@@ -59,7 +59,7 @@ function g(e) {
           page_index: null == m ? true : m.pageIndex,
           page_size: null == m ? true : m.pageSize,
           cta_name: "search bar clear",
-          page_type: n
+          page_type: r
         })
       },
       placeholder: d.intl.string(d.t["hIt/Nj"])

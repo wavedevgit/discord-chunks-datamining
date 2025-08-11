@@ -1,5 +1,5 @@
 /** Chunk was on 45620 **/
-/** chunk id: 304742, original params: e,t,n (module,exports,require) **/
+/** chunk id: 304742, original params: e,t,r (module,exports,require) **/
 "use strict";
 require.d(exports, {
   Z: () => p
@@ -17,7 +17,7 @@ var Chunk255367 = require("./255367.js"),
 function p(e) {
   let {
     handleTransition: t,
-    onClose: n
+    onClose: r
   } = e, {
     enableShopTakeOver: a
   } = s.Z.useConfig({
@@ -38,19 +38,19 @@ function p(e) {
     label: u.intl.string(u.t.xFcotb),
     value: c.AW.CATALOG
   }], []);
-  return (0, r.jsx)("div", {
+  return (0, n.jsx)("div", {
     className: i()({
       [d.shopTakeOver]: a
     }),
-    children: (0, r.jsx)(o.v2r, {
+    children: (0, n.jsx)(o.v2r, {
       navId: "collectibles-index-page-menu",
       className: i()({
         [d.shopTakeOver]: a
       }),
-      onClose: n,
+      onClose: r,
       "aria-label": u.intl.string(u.t.xFcotb),
       onSelect: () => {},
-      children: p.map(e => (0, r.jsx)(o.sNh, {
+      children: p.map(e => (0, n.jsx)(o.sNh, {
         id: e.value,
         label: e.label,
         action: () => {

@@ -1,8 +1,8 @@
-/** Chunk was on 45620 **/
-/** chunk id: 262786, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 262786, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  _: () => l
+  _: () => i
 });
 var Chunk474936 = require("./474936.js");
-let l = e => null == e ? null : e.includes(r.$X) ? 30 : e.includes(r.nC) ? 50 : null
+let i = e => null == e ? null : e.includes(r.$X) ? 30 : e.includes(r.nC) ? 50 : null

@@ -1,5 +1,5 @@
 /** Chunk was on 45620 **/
-/** chunk id: 558060, original params: e,t,n (module,exports,require) **/
+/** chunk id: 558060, original params: e,t,r (module,exports,require) **/
 "use strict";
 require.d(exports, {
   Z: () => d
@@ -15,7 +15,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk561197 = require("./561197.js");
 
 function d(e) {
-  var t, n;
+  var t, r;
   let {
     product: l,
     isPremiumUser: d,
@@ -27,49 +27,49 @@ function d(e) {
     nitroIconSize: m = "md"
   } = e, _ = (0, i.ql)(l, c.tuJ.DEFAULT);
   if (null == _) return null;
-  if (_.amount <= 0) return (0, r.jsx)("div", {
+  if (_.amount <= 0) return (0, n.jsx)("div", {
     className: a()(u.priceTagsContainer, g),
-    children: (0, r.jsx)(s.F, {
+    children: (0, n.jsx)(s.F, {
       price: _
     })
   });
   let v = (0, i.ql)(l, c.tuJ.PREMIUM_TIER_2),
     O = (0, i.x6)(l) && d ? (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-          r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-          return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-          var r;
-          r = n[t], t in e ? Object.defineProperty(e, t, {
-            value: r,
+        var r = null != arguments[t] ? arguments[t] : {},
+          n = Object.keys(r);
+        "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
+          return Object.getOwnPropertyDescriptor(r, e).enumerable
+        }))), n.forEach(function(t) {
+          var n;
+          n = r[t], t in e ? Object.defineProperty(e, t, {
+            value: n,
             enumerable: true,
             configurable: true,
             writable: true
-          }) : e[t] = r
+          }) : e[t] = n
         })
       }
       return e
-    }({}, _), n = n = {
+    }({}, _), r = r = {
       amount: p.original
-    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
-      var n = Object.keys(e);
+    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
+      var r = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
-        var r = Object.getOwnPropertySymbols(e);
-        n.push.apply(n, r)
+        var n = Object.getOwnPropertySymbols(e);
+        r.push.apply(r, n)
       }
-      return n
-    })(Object(n)).forEach(function(e) {
-      Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
+      return r
+    })(Object(r)).forEach(function(e) {
+      Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(r, e))
     }), t) : _,
     C = d && null != v;
-  return (0, r.jsxs)("div", {
+  return (0, n.jsxs)("div", {
     className: a()(u.priceTagsContainer, g),
-    children: [b ? null : (0, r.jsx)(o.y, {
+    children: [b ? null : (0, n.jsx)(o.y, {
       price: O,
       className: u.price
-    }), (0, r.jsx)(s.F, {
+    }), (0, n.jsx)(s.F, {
       price: C ? v : O,
       discount: p,
       className: a()({

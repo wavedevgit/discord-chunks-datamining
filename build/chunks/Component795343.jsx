@@ -1,5 +1,5 @@
 /** Chunk was on 45620 **/
-/** chunk id: 795343, original params: e,t,n (module,exports,require) **/
+/** chunk id: 795343, original params: e,t,r (module,exports,require) **/
 "use strict";
 require.d(exports, {
   Z: () => S
@@ -28,7 +28,7 @@ var Chunk255367 = require("./255367.js"),
 function S(e) {
   var t;
   let {
-    isFetchingCategories: n,
+    isFetchingCategories: r,
     isFullScreen: a,
     scrollerRef: S,
     tab: y
@@ -52,7 +52,7 @@ function S(e) {
   let Z = (0, g.a)(),
     D = l.useMemo(() => Z(w), [Z, w]);
   l.useEffect(() => {
-    n || (0, h.n)({
+    r || (0, h.n)({
       sessionId: j,
       checkpoint: h.a.SHOP_RENDERED,
       tab: y,
@@ -60,7 +60,7 @@ function S(e) {
       unpublishedCategoriesShown: P,
       cacheDisabled: T
     })
-  }, [j, a, P, T, n, y]);
+  }, [j, a, P, T, r, y]);
   let M = l.useRef(null),
     {
       setQueryPageSize: F,
@@ -68,7 +68,7 @@ function S(e) {
       queryPageSize: W
     } = (0, f.S)(),
     [V, U] = l.useState(false),
-    z = n || A || null == L;
+    z = r || A || null == L;
   l.useEffect(() => {
     if (z) return void U(false);
     D.length > 0 && U(true)
@@ -91,35 +91,35 @@ function S(e) {
       page_type: "catalog"
     }), H((e - 1) * W)
   }, [x, W, H]);
-  return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsxs)("div", {
+  return (0, n.jsxs)(n.Fragment, {
+    children: [(0, n.jsxs)("div", {
       className: i()({
         [E.productsEmpty]: G
       }),
-      children: [G && (0, r.jsx)(O.Z, {}), (0, r.jsxs)("div", {
+      children: [G && (0, n.jsx)(O.Z, {}), (0, n.jsxs)("div", {
         className: i()(E.products, {
           [E.loadIn]: V
         }),
         ref: M,
-        children: [z && [...Array(W)].map((e, t) => (0, r.jsx)(m.K, {}, t)), !z && D.map((e, t) => {
-          let n = p.Z.getCategory(e.categorySkuId);
-          return null == n ? null : (0, r.jsx)(d.k0, {
+        children: [z && [...Array(W)].map((e, t) => (0, n.jsx)(m.K, {}, t)), !z && D.map((e, t) => {
+          let r = p.Z.getCategory(e.categorySkuId);
+          return null == r ? null : (0, n.jsx)(d.k0, {
             newValue: {
               tilePosition: t
             },
-            children: (0, r.jsx)(_.Z, {
+            children: (0, n.jsx)(_.Z, {
               product: e,
               user: L,
-              category: n,
+              category: r,
               tab: y
             }, e.skuId)
           }, e.skuId)
         })]
       })]
-    }), N > W && (0, r.jsx)("div", {
+    }), N > W && (0, n.jsx)("div", {
       className: E.paginationContainer,
-      children: (0, r.jsx)("div", {
-        children: (0, r.jsx)(s.DsT, {
+      children: (0, n.jsx)("div", {
+        children: (0, n.jsx)(s.DsT, {
           currentPage: I,
           totalCount: N,
           pageSize: W,

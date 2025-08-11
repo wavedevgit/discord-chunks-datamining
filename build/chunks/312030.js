@@ -1,5 +1,5 @@
 /** Chunk was on 45620 **/
-/** chunk id: 312030, original params: e,t,n (module,exports,require) **/
+/** chunk id: 312030, original params: e,t,r (module,exports,require) **/
 "use strict";
 require.d(exports, {
   h: () => i
@@ -10,11 +10,11 @@ var Chunk73800 = require("./73800.js"),
 let i = e => {
   let {
     scrollerRef: t,
-    sortedCategories: n
-  } = e, [i, o] = r.useState(1), s = r.useCallback(e => {
-    let t = n.findIndex(t => t.skuId === e);
+    sortedCategories: r
+  } = e, [i, o] = n.useState(1), s = n.useCallback(e => {
+    let t = r.findIndex(t => t.skuId === e);
     return false === t ? 1 : Math.floor(t / a.kN) + 1
-  }, [n]), c = r.useCallback(e => {
+  }, [r]), c = n.useCallback(e => {
     if (null != e && e !== l.T.ORB) {
       let t = s(e);
       t !== i && o(t)
@@ -22,9 +22,9 @@ let i = e => {
   }, [s, i, o]);
   return {
     currentPage: i,
-    handlePageChange: r.useCallback(e => {
-      var n;
-      o(e), null == (n = t.current) || n.scrollTo({
+    handlePageChange: n.useCallback(e => {
+      var r;
+      o(e), null == (r = t.current) || r.scrollTo({
         to: 0
       })
     }, [t, o]),

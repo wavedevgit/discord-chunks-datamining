@@ -125,7 +125,8 @@ let E = e => (null == e ? true : e.premiumType) != null,
     return (null == (t = T(e, _.tuJ.DEFAULT)) ? true : t.amount) === 0
   },
   C = e => e.reduce((e, t) => null != t && t.type === i.Z.VARIANTS_GROUP && null != t.variants ? (0, r.concat)(e, t.variants.map(e => g(h({}, e), {
-    variantGroupStoreListingId: t.storeListingId
+    variantGroupStoreListingId: t.storeListingId,
+    eligibleOffers: t.eligibleOffers
   }))) : (e.push(t), e), []),
   R = (e, t) => {
     let n = (0, r.flatMap)([...e.values()], "products");

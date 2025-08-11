@@ -1,4 +1,4 @@
-/** Chunk was on 11912 **/
+/** Chunk was on 17613 **/
 /** chunk id: 653079, original params: e,t,r (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -6,7 +6,7 @@ require.d(exports, {
 });
 var Chunk255367 = require("./255367.js"),
   Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  i = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk597688 = require("./597688.js"),
@@ -21,9 +21,9 @@ let h = e => {
     guildId: r,
     selectedNameplate: a,
     purchased: h
-  } = e, f = (0, i.e7)([s.Z], () => s.Z.getProduct(null == a ? true : a.skuId)), v = (0, i.e7)([d.Z], () => d.Z.getPendingGlobalName());
+  } = e, f = (0, l.e7)([s.Z], () => s.Z.getProduct(null == a ? true : a.skuId)), v = (0, l.e7)([d.Z], () => d.Z.getPendingGlobalName());
   return (0, n.jsxs)("div", {
-    className: l()(b.previewBorder, {
+    className: i()(b.previewBorder, {
       [b.upsell]: !h && null != a
     }),
     children: [(0, n.jsx)("div", {

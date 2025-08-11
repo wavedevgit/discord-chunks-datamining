@@ -1,4 +1,4 @@
-/** Chunk was on 11912 **/
+/** Chunk was on 17613 **/
 /** chunk id: 576386, original params: e,t,r (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk120356 = require("./120356.js"),
-  i = require.n(Chunk120356),
+  l = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk22267 = require("./22267.jsx"),
@@ -19,7 +19,7 @@ let h = e => {
     var t;
     let {
       nameplate: r,
-      isPurchased: l = false,
+      isPurchased: i = false,
       isSelected: h = false,
       onClick: f
     } = e, v = (0, o.e7)([d.default], () => d.default.getCurrentUser()), [m, _] = (0, a.useState)(false);
@@ -35,10 +35,10 @@ let h = e => {
         showPlaceholderUser: true,
         isHighlighted: m
       }), (0, n.jsx)("div", {
-        className: i()(b.nameplateItemOverlay, {
+        className: l()(b.nameplateItemOverlay, {
           [b.selected]: h
         })
-      }), !l && (0, n.jsx)(s.G2e, {
+      }), !i && (0, n.jsx)(s.G2e, {
         icon: () => (0, n.jsx)(s.mBM, {
           size: "xxs",
           color: "currentColor"
@@ -53,7 +53,7 @@ let h = e => {
       selected: t,
       onSelect: r,
       onOpenShop: a,
-      available: l,
+      available: i,
       purchased: c
     } = e;
     return null == (0, o.e7)([d.default], () => d.default.getCurrentUser()) ? null : (0, n.jsxs)(s.u2D, {
@@ -64,7 +64,7 @@ let h = e => {
         }), (0, n.jsxs)("div", {
           className: b.inventoryControls,
           children: [(0, n.jsxs)(s.P3F, {
-            className: i()(b.inventoryControlsButton, {
+            className: l()(b.inventoryControlsButton, {
               [b.selected]: null == t
             }),
             onClick: () => r(null),
@@ -95,12 +95,12 @@ let h = e => {
             onClick: () => r(e, true)
           }, e.id))
         }) : null]
-      }), 0 !== l.length ? (0, n.jsxs)("div", {
+      }), 0 !== i.length ? (0, n.jsxs)("div", {
         children: [(0, n.jsx)(s.vwX, {
           children: p.intl.string(p.t["1vbbeX"])
         }), (0, n.jsx)("div", {
           className: b.list,
-          children: l.map(e => (0, n.jsx)(h, {
+          children: i.map(e => (0, n.jsx)(h, {
             nameplate: e,
             isSelected: (null == t ? true : t.id) === e.id,
             onClick: () => r(e, false)

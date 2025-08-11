@@ -1,5 +1,5 @@
 /** Chunk was on 45620 **/
-/** chunk id: 384067, original params: e,t,n (module,exports,require) **/
+/** chunk id: 384067, original params: e,t,r (module,exports,require) **/
 "use strict";
 require.d(exports, {
   Z: () => h
@@ -18,7 +18,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk806734 = require("./806734.js");
 let h = e => {
-  var t, n, a;
+  var t, r, a;
   let {
     wideBannerBlock: h,
     handleTransition: m,
@@ -41,20 +41,20 @@ let h = e => {
     j = h.bannerUrl;
   if (null == j) return null;
   let T = _ === p.AW.ORBS;
-  return (0, r.jsx)(o.$, {
+  return (0, n.jsx)(o.$, {
     innerRef: O,
     onChange: x,
     threshold: 0,
-    children: (0, r.jsxs)("div", {
+    children: (0, n.jsxs)("div", {
       ref: O,
       className: i()(b.row, b.between, b.bannerBlockContainer, b.centeredSection, {
         [b.extraRounded]: T
       }),
-      children: [(0, r.jsx)("div", {
+      children: [(0, n.jsx)("div", {
         className: i()(b.wideBannerBackgroundImg, {
           [b.extraRounded]: T
         }),
-        children: (0, r.jsx)("img", {
+        children: (0, n.jsx)("img", {
           ref: C,
           src: j,
           alt: h.title,
@@ -65,21 +65,21 @@ let h = e => {
             height: null != E ? "".concat(E, "px") : "auto"
           }
         })
-      }), (0, r.jsx)("div", {
+      }), (0, n.jsx)("div", {
         className: b.wideBannerContentContainer,
         style: {
           maxHeight: null != E ? "".concat(E, "px") : "auto"
         },
-        children: (0, r.jsxs)("div", {
+        children: (0, n.jsxs)("div", {
           className: b.wideBannerTextContainer,
-          children: [(0, r.jsx)(s.X6q, {
+          children: [(0, n.jsx)(s.X6q, {
             style: {
-              color: null != (n = h.bannerTextColor) ? n : "var(--header-primary)"
+              color: null != (r = h.bannerTextColor) ? r : "var(--header-primary)"
             },
             className: T ? b.wideBannerOrbsHeading : true,
             variant: T ? "heading-xl/bold" : "heading-lg/semibold",
             children: h.title
-          }), (0, r.jsx)(s.Text, {
+          }), (0, n.jsx)(s.Text, {
             style: {
               color: null != (a = h.bannerTextColor) ? a : "var(--text-muted)"
             },
@@ -90,9 +90,9 @@ let h = e => {
             }) : h.body
           })]
         })
-      }), true !== h.disableCta && (0, r.jsx)("div", {
+      }), true !== h.disableCta && (0, n.jsx)("div", {
         className: b.wideBannerBlockButton,
-        children: (0, r.jsx)(s.zxk, {
+        children: (0, n.jsx)(s.zxk, {
           variant: "overlay-primary",
           onClick: () => m("shop wide banner", y),
           text: f.intl.string(f.t.jVcuVV)

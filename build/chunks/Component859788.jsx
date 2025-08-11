@@ -1,5 +1,5 @@
 /** Chunk was on 45620 **/
-/** chunk id: 859788, original params: e,t,n (module,exports,require) **/
+/** chunk id: 859788, original params: e,t,r (module,exports,require) **/
 "use strict";
 require.d(exports, {
   Z: () => d
@@ -16,17 +16,17 @@ var Chunk120356 = require("./120356.js"),
 let d = e => {
   let {
     bannerStatic: t,
-    bannerAnimated: n,
+    bannerAnimated: r,
     isResponsive: l = false
   } = e, d = (0, i.e7)([o.Z], () => o.Z.useReducedMotion), p = (0, i.e7)([c.Z], () => c.Z.isFocused());
-  return null != n && !d && p ? (0, r.jsx)(s.Z, {
+  return null != r && !d && p ? (0, n.jsx)(s.Z, {
     className: a()({
       [u.responsive]: l
     }, u.bannerAsset, u.bannerVideoBackground),
-    src: n,
+    src: r,
     autoPlay: true,
     loop: true
-  }) : (0, r.jsx)("div", {
+  }) : (0, n.jsx)("div", {
     className: a()({
       [u.responsive]: l
     }, u.bannerAsset, u.bannerImage),

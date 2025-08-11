@@ -1,5 +1,5 @@
 /** Chunk was on 45620 **/
-/** chunk id: 426171, original params: e,t,n (module,exports,require) **/
+/** chunk id: 426171, original params: e,t,r (module,exports,require) **/
 "use strict";
 require.d(exports, {
   Kp: () => S,
@@ -26,7 +26,7 @@ let _ = "".concat("#").concat("itemSkuId", "="),
   O = [Chunk981631.Z5c.COLLECTIBLES_SHOP, Chunk981631.Z5c.COLLECTIBLES_SHOP_FULLSCREEN],
   C = e => {
     let t = (0, l.TH)();
-    r.useEffect(() => {
+    n.useEffect(() => {
       if (null != e && O.includes(t.pathname)) return () => {
         window.location.hash.startsWith(_) && window.location.replace("#")
       }
@@ -35,8 +35,8 @@ let _ = "".concat("#").concat("itemSkuId", "="),
   E = e => {
     let {
       productSkuId: t,
-      analyticsLocations: n,
-      analyticsSource: r,
+      analyticsLocations: r,
+      analyticsSource: n,
       tab: l
     } = e, a = u.Z.getProduct(t), i = u.Z.getCategoryForProduct(t);
     if (null != a && null != i) {
@@ -46,18 +46,18 @@ let _ = "".concat("#").concat("itemSkuId", "="),
         }),
         c = document.getElementById("shop-item-".concat(e.skuId));
       if (c !== document.activeElement && (null == c || c.focus()), null != a.variantGroupStoreListingId) {
-        let n = u.Z.getProductByStoreListingId(a.variantGroupStoreListingId);
-        if (null != n) {
+        let r = u.Z.getProductByStoreListingId(a.variantGroupStoreListingId);
+        if (null != r) {
           var o;
-          e = n;
-          let r = null == (o = n.variants) ? true : o.findIndex(e => e.skuId === t);
-          null != r && r > false && (0, p.$)(n, r)
+          e = r;
+          let n = null == (o = r.variants) ? true : o.findIndex(e => e.skuId === t);
+          null != n && n > false && (0, p.$)(r, n)
         }
       }(0, f.T)({
         product: e,
         category: i,
-        analyticsSource: r,
-        analyticsLocations: n,
+        analyticsSource: n,
+        analyticsLocations: r,
         tab: l,
         shouldCheckoutWithOrbs: s
       })
@@ -66,7 +66,7 @@ let _ = "".concat("#").concat("itemSkuId", "="),
   S = () => {
     let e = (0, Chunk442837.e7)([Chunk819640.Z], () => Chunk819640.Z.getLayers().includes(Chunk981631.S9g.COLLECTIBLES_SHOP)),
       t = (0, Chunk258939.R)(),
-      n = Chunk73800.useRef(null),
+      r = Chunk73800.useRef(null),
       i = (0, Chunk114858.TH)(),
       u = Chunk607070.pathname === Chunk981631.Z5c.COLLECTIBLES_SHOP ? Chunk100527.Z.HOME_PAGE_SHOP_TAB : Chunk607070.pathname === Chunk981631.Z5c.COLLECTIBLES_SHOP_FULLSCREEN ? Chunk100527.Z.COLLECTIBLES_SHOP_FULLSCREEN : Chunk100527.Z.COLLECTIBLES_SHOP,
       {
@@ -81,8 +81,8 @@ let _ = "".concat("#").concat("itemSkuId", "="),
     let h = (0, Chunk442837.e7)([Chunk328347.Z], () => Chunk328347.Z.initialProductSkuId);
     Chunk73800.useEffect(() => {
       if (exports) return;
-      let r = null;
-      if (null != (r = module ? Chunk956472 : require.current)) {
+      let n = null;
+      if (null != (n = module ? Chunk956472 : require.current)) {
         let e = setTimeout(() => {
           E({
             productSkuId: Chunk73800,
@@ -96,25 +96,25 @@ let _ = "".concat("#").concat("itemSkuId", "="),
     }, [module, Chunk429368, Chunk597688, exports, Chunk956472, Chunk237031])
   },
   y = e => {
-    let t = r.useRef({}),
-      n = (0, a.e7)([i.Z], () => i.Z.useReducedMotion),
+    let t = n.useRef({}),
+      r = (0, a.e7)([i.Z], () => i.Z.useReducedMotion),
       l = (0, a.e7)([u.Z], () => u.Z.isFetchingCategories),
-      [o, s] = r.useState(null),
-      c = r.useCallback((e, n) => {
-        t.current[e] = n
+      [o, s] = n.useState(null),
+      c = n.useCallback((e, r) => {
+        t.current[e] = r
       }, []),
-      d = r.useCallback(r => {
-        l ? s(r) : setTimeout(() => {
-          let l = t.current[r];
+      d = n.useCallback(n => {
+        l ? s(n) : setTimeout(() => {
+          let l = t.current[n];
           null != l && (null == e || e.scrollIntoViewNode({
             node: l,
             padding: 48,
-            animate: !n,
+            animate: !r,
             shouldScrollToStart: true
           }))
         }, 100)
-      }, [e, n, l, s]);
-    return r.useEffect(() => {
+      }, [e, r, l, s]);
+    return n.useEffect(() => {
       l || null == o || (d(o), s(null))
     }, [l, d, o, s]), {
       setCategoryRef: c,

@@ -1,5 +1,5 @@
 /** Chunk was on 45620 **/
-/** chunk id: 38900, original params: e,t,n (module,exports,require) **/
+/** chunk id: 38900, original params: e,t,r (module,exports,require) **/
 "use strict";
 require.d(exports, {
   K: () => p,
@@ -32,15 +32,15 @@ let u = () => 4 * Math.random() + 8,
   }),
   g = () => (0, Chunk255367.jsx)("div", {
     className: Chunk484920.skeletons,
-    children: d.map(e => (0, r.jsxs)("div", {
+    children: d.map(e => (0, n.jsxs)("div", {
       className: i.cardsContainer,
-      children: [(0, r.jsx)("div", {
+      children: [(0, n.jsx)("div", {
         className: a()(s.skeleton, o.shopBanner),
-        children: (0, r.jsx)("div", {
+        children: (0, n.jsx)("div", {
           className: s.bannerBody
         })
       }), Array.from({
         length: e
-      }, (e, t) => t).map(e => (0, r.jsx)(p, {}, e))]
+      }, (e, t) => t).map(e => (0, n.jsx)(p, {}, e))]
     }, e))
   })

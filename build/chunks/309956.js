@@ -1,5 +1,5 @@
 /** Chunk was on 45620 **/
-/** chunk id: 309956, original params: e,t,n (module,exports,require) **/
+/** chunk id: 309956, original params: e,t,r (module,exports,require) **/
 "use strict";
 require.d(exports, {
   B: () => g
@@ -21,17 +21,17 @@ let p = {
   },
   g = (e, t) => {
     let {
-      enabled: n
+      enabled: r
     } = (0, i.WX)({
       location: "useShopViewTransition"
     }), a = (0, o.FF)("CollectiblesBrowse"), {
       setItemTypeFilter: g,
       reset: f,
       setCurrentTab: b
-    } = (0, s.S)(), h = r.useMemo(() => e !== u.AW.ORBS || n ? (0, u.RE)(e) && a ? u.AW.CATALOG : e : u.AW.HOME, [e, n, a]), [m, _] = r.useState(h), [v, O] = r.useState(u.f7.VISIBLE);
-    r.useEffect(() => {
+    } = (0, s.S)(), h = n.useMemo(() => e !== u.AW.ORBS || r ? (0, u.RE)(e) && a ? u.AW.CATALOG : e : u.AW.HOME, [e, r, a]), [m, _] = n.useState(h), [v, O] = n.useState(u.f7.VISIBLE);
+    n.useEffect(() => {
       b(m)
-    }, [m, b]), r.useEffect(() => {
+    }, [m, b]), n.useEffect(() => {
       _(h)
     }, [h]);
     let C = e => new Promise(t => setTimeout(t, e)),
@@ -39,16 +39,16 @@ let p = {
         clearError: E
       } = (0, c.a)(),
       S = (0, l.k6)(),
-      y = r.useCallback(async (e, n) => {
+      y = n.useCallback(async (e, r) => {
         if (E(), e === u.AW.CATALOG) f();
         else if ((0, u.RE)(e) && e !== m) {
           let t = p[e];
           null != t ? g(t) : f()
         }
         if (m === e) return;
-        n && (O(u.f7.OUT), await C(1.1 * u.lb));
-        let r = a && ![u.AW.HOME, u.AW.ORBS].includes(e) ? u.AW.CATALOG : e;
-        _(r), n && O(u.f7.IN), t || S.push(d.Z5c.COLLECTIBLES_SHOP_WITH_TAB(r), {
+        r && (O(u.f7.OUT), await C(1.1 * u.lb));
+        let n = a && ![u.AW.HOME, u.AW.ORBS].includes(e) ? u.AW.CATALOG : e;
+        _(n), r && O(u.f7.IN), t || S.push(d.Z5c.COLLECTIBLES_SHOP_WITH_TAB(n), {
           shallow: true
         }), O(u.f7.VISIBLE)
       }, [S, t, a, g, f, m, E]);

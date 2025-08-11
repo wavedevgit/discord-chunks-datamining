@@ -1,5 +1,5 @@
 /** Chunk was on 45620 **/
-/** chunk id: 653654, original params: e,t,n (module,exports,require) **/
+/** chunk id: 653654, original params: e,t,r (module,exports,require) **/
 "use strict";
 require.d(exports, {
   y: () => o
@@ -10,7 +10,7 @@ var Chunk544891 = require("./544891.js"),
   Chunk981631 = require("./981631.js");
 let o = async e => {
   try {
-    return (await r.tn.get({
+    return (await n.tn.get({
       url: i.ANM.COLLECTIBLES_SEARCH,
       query: e,
       rejectWithError: true

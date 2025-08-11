@@ -1,5 +1,5 @@
 /** Chunk was on 45620 **/
-/** chunk id: 780475, original params: e,t,n (module,exports,require) **/
+/** chunk id: 780475, original params: e,t,r (module,exports,require) **/
 "use strict";
 require.d(exports, {
   EB: () => h,
@@ -37,45 +37,45 @@ let g = e => {
   f = e => {
     let {
       analyticsSource: t,
-      analyticsLocations: n
-    } = (0, l.cj)([c.Z], () => c.Z.getAnalytics()), r = g(e), {
+      analyticsLocations: r
+    } = (0, l.cj)([c.Z], () => c.Z.getAnalytics()), n = g(e), {
       analyticsLocations: o,
       newestAnalyticsLocation: s
-    } = (0, i.ZP)([...n, a.Z.COLLECTIBLES_SHOP, r]);
+    } = (0, i.ZP)([...r, a.Z.COLLECTIBLES_SHOP, n]);
     return {
       analyticsSource: t,
       analyticsLocations: o,
       newestAnalyticsLocation: s,
-      currentTabLocation: r
+      currentTabLocation: n
     }
   },
-  b = (e, t, n, l, a) => {
+  b = (e, t, r, l, a) => {
     let {
       analyticsLocations: i,
       analyticsSource: s,
       currentTabLocation: c,
       newestAnalyticsLocation: p
     } = f(t);
-    r.useEffect(() => {
+    n.useEffect(() => {
       if (l !== u.f7.VISIBLE || p !== c) return;
-      let r = t === u.AW.CATALOG ? a : s;
+      let n = t === u.AW.CATALOG ? a : s;
       o.default.track(d.rMx.COLLECTIBLES_SHOP_VIEWED, {
         location_stack: i,
-        source: r,
+        source: n,
         page_session_id: e,
         page_type: t === u.AW.CATALOG ? "full" : t,
-        category: t === u.AW.HOME ? true : n
+        category: t === u.AW.HOME ? true : r
       })
-    }, [i, e, t, n, c, l, a, s, p])
+    }, [i, e, t, r, c, l, a, s, p])
   },
   h = (e, t) => {
     let {
-      analyticsLocations: n
+      analyticsLocations: r
     } = f(e);
-    r.useEffect(() => {
+    n.useEffect(() => {
       null == t || s.ZP.canUseCollectibles(t) || o.default.track(d.rMx.PREMIUM_UPSELL_VIEWED, {
         type: p.cd.COLLECTIBLES_SHOP,
-        location_stack: n
+        location_stack: r
       })
-    }, [n, t])
+    }, [r, t])
   }
