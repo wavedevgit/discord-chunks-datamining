@@ -127,6 +127,12 @@ async function main() {
     const languagesChunks = {};
     const all = {};
     let remaining = everyChunks.length;
+
+    // check if chunk is component
+    if (code.includes(".jsx)(") || code.includes(".jsxs)(")) {
+      jsxChunks.push(chunk);
+      code = reverseJsxFromString(code);
+    }
     for (let chunk in everyChunks) {
       remaining -= 1;
       const [type, chunkData] = determineType(
@@ -226,11 +232,6 @@ async function main() {
         indent_size: 2,
         space_in_empty_paren: true,
       });
-      // check if chunk is component
-      if (code.includes(".jsx)(") || code.includes(".jsxs)(")) {
-        jsxChunks.push(chunk);
-        code = reverseJsxFromString(code);
-      }
 
       for (let chunk of jsxChunks) {
         if (code.includes(`"./${chunk}.js"`)) {
