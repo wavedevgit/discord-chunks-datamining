@@ -13,7 +13,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk74538 = require("./74538.js"),
   Chunk391110 = require("./391110.js"),
   Chunk474936 = require("./474936.js"),
-  Chunk388032 = require("./388032.js");
+  Chunk388032 = require("./388032.jsx");
 let u = (e, t, n) => (0, r.wj)(e) ? t : n,
   m = e => {
     let {

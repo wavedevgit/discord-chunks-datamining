@@ -1,0 +1,121 @@
+/** Chunk was on web.js **/
+/** chunk id: 955418, original params: e,t,n (module,exports,re quire) **/
+"use strict";
+require.d(exports, {
+  Z: () => O
+}), require("./388685.js"), require("./781311.js");
+var Chunk255367 = require("./255367.js"),
+  Chunk73800 = require("./73800.js"),
+  Chunk906732 = require("./906732.jsx"),
+  Chunk541716 = require("./541716.js"),
+  Chunk752305 = require("./752305.js"),
+  Chunk893718 = require("./893718.jsx"),
+  Chunk131704 = require("./131704.js"),
+  Chunk5192 = require("./5192.js"),
+  Chunk785717 = require("./785717.jsx"),
+  Chunk698305 = require("./698305.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk388032 = require("./388032.jsx"),
+  Chunk582970 = require("./582970.js");
+
+function m(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+
+function g(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      m(e, t, n[t])
+    })
+  }
+  return e
+}
+
+function E(e, t) {
+  var n = Object.keys(e);
+  if (Object.getOwnPropertySymbols) {
+    var r = Object.getOwnPropertySymbols(e);
+    t && (r = r.filter(function(t) {
+      return Object.getOwnPropertyDescriptor(e, t).enumerable
+    })), n.push.apply(n, r)
+  }
+  return n
+}
+
+function b(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : E(Object(t)).forEach(function(n) {
+    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+  }), e
+}
+let y = (0, Chunk131704.kt)({
+  id: "1",
+  type: Chunk981631.d4z.DM
+});
+
+function O(e) {
+  let {
+    user: t,
+    guildId: n,
+    channelId: c,
+    onClose: _,
+    disableAutoFocus: m = false
+  } = e, {
+    newestAnalyticsLocation: E
+  } = (0, o.ZP)(), {
+    trackUserProfileAction: O
+  } = (0, d.KZ)(), [v, I] = i.useState(""), [T, S] = i.useState((0, s.JM)(v)), A = i.useRef(false), N = i.useMemo(() => b(g({}, a.Ie.USER_PROFILE), {
+    disableAutoFocus: m
+  }), [m]);
+  return (0, r.jsx)(l.ZP, {
+    className: h.container,
+    editorClassName: h.editor,
+    type: N,
+    placeholder: p.intl.formatToPlainString(p.t["0ZQw/f"], {
+      name: u.ZP.getName(n, c, t)
+    }),
+    channel: y,
+    textValue: v,
+    richValue: T,
+    onChange: (e, t, n) => {
+      t !== v && (I(t), S(n))
+    },
+    focused: A.current,
+    onFocus: () => {
+      A.current = true
+    },
+    onBlur: () => {
+      A.current = false
+    },
+    onSubmit: async e => {
+      let {
+        value: n
+      } = e;
+      try {
+        return O({
+          action: "SEND_DIRECT_MESSAGE"
+        }), await (0, f.Z)({
+          userId: t.id,
+          content: n.trim(),
+          location: E
+        }), null == _ || _(), {
+          shouldClear: true,
+          shouldRefocus: false
+        }
+      } catch (e) {
+        return {
+          shouldClear: false,
+          shouldRefocus: false
+        }
+      }
+    }
+  })
+}

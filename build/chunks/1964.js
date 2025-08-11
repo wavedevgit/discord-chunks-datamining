@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk392711 = require("./392711.js"),
   i = require.n(Chunk392711),
   Chunk981631 = require("./981631.js"),
-  Chunk388032 = require("./388032.js");
+  Chunk388032 = require("./388032.jsx");
 let {
   CAPTCHA: o,
   EMAIL: a,

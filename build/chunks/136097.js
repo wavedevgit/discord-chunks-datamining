@@ -10,7 +10,7 @@ var Chunk73800 = require("./73800.js"),
   Chunk442837 = require("./442837.js"),
   Chunk314897 = require("./314897.js"),
   Chunk673096 = require("./673096.js"),
-  Chunk388032 = require("./388032.js");
+  Chunk388032 = require("./388032.jsx");
 
 function d() {
   let e = (0, Chunk442837.cj)([Chunk673096.Z], () => Chunk673096.Z.getSessions());

@@ -8,7 +8,7 @@ require.d(exports, {
   gD: () => i,
   lv: () => l,
   xA: () => r
-}), require("./63063.js"), require("./981631.js"), require("./388032.js");
+}), require("./63063.js"), require("./981631.js"), require("./388032.jsx");
 let r = 240,
   i = "834488117758001152",
   o = "stage-invite",

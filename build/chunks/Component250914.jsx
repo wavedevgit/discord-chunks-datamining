@@ -1,0 +1,74 @@
+/** Chunk was on 98137 **/
+/** chunk id: 250914, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
+  default: () => i
+});
+var Chunk255367 = require("./255367.js");
+require("./73800.js");
+var Chunk755721 = require("./755721.js"),
+  Chunk481060 = require("./481060.js"),
+  Chunk313201 = require("./313201.js"),
+  Chunk388032 = require("./388032.jsx"),
+  Chunk281373 = require("./281373.js");
+let i = e => {
+  var t, n;
+  let {
+    onClose: i
+  } = e, d = (0, a.Dt)();
+  return (0, r.jsxs)(c.Y0X, (t = function(e) {
+    for (var t = 1; t < arguments.length; t++) {
+      var n = null != arguments[t] ? arguments[t] : {},
+        r = Object.keys(n);
+      "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+        return Object.getOwnPropertyDescriptor(n, e).enumerable
+      }))), r.forEach(function(t) {
+        var r;
+        r = n[t], t in e ? Object.defineProperty(e, t, {
+          value: r,
+          enumerable: true,
+          configurable: true,
+          writable: true
+        }) : e[t] = r
+      })
+    }
+    return e
+  }({}, e), n = n = {
+    "aria-labelledby": d,
+    parentComponent: "QuarantineModeInfoModal",
+    children: [(0, r.jsxs)(c.xBx, {
+      separator: false,
+      className: l.modalHeader,
+      children: [(0, r.jsx)(c.X6q, {
+        id: d,
+        variant: "heading-xl/extrabold",
+        children: s.intl.string(s.t.EouHws)
+      }), (0, r.jsx)(c.olH, {
+        className: l.closeButton,
+        onClick: i
+      })]
+    }), (0, r.jsx)(c.hzk, {
+      className: l.modalContent,
+      children: (0, r.jsx)(c.Text, {
+        variant: "text-md/normal",
+        className: l.contentText,
+        children: s.intl.string(s.t.zNPBMD)
+      })
+    }), (0, r.jsx)(c.mzw, {
+      children: (0, r.jsx)(o.zx, {
+        className: l.button,
+        size: o.zx.Sizes.MIN,
+        onClick: i,
+        children: s.intl.string(s.t.BddRzc)
+      })
+    })]
+  }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
+    var n = Object.keys(e);
+    if (Object.getOwnPropertySymbols) {
+      var r = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, r)
+    }
+    return n
+  })(Object(n)).forEach(function(e) {
+    Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
+  }), t))
+}

@@ -4,7 +4,7 @@
 require.d(exports, {
   Z: () => i
 });
-var Chunk388032 = require("./388032.js");
+var Chunk388032 = require("./388032.jsx");
 
 function i(e) {
   return true === e ? r.intl.string(r.t["4lTDZm"]) : 0 === e ? r.intl.string(r.t.jpY0X1) : r.intl.formatToPlainString(r.t.eE3oen, {

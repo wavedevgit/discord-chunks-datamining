@@ -30,7 +30,7 @@ var Chunk73800 = require("./73800.js"),
   Chunk176505 = require("./176505.js"),
   Chunk443063 = require("./443063.js"),
   Chunk490897 = require("./490897.js"),
-  Chunk388032 = require("./388032.js");
+  Chunk388032 = require("./388032.jsx");
 
 function E(A, t) {
   A.index = t

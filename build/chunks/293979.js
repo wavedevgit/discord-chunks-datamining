@@ -24,11 +24,11 @@ var Chunk73800 = require("./73800.js"),
   Chunk768581 = require("./768581.js"),
   Chunk70956 = require("./70956.js"),
   Chunk709054 = require("./709054.js"),
-  Chunk970184 = require("./970184.js"),
+  Chunk970184 = require("./970184.jsx"),
   Chunk471073 = require("./471073.js"),
   Chunk892902 = require("./892902.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk388032 = require("./388032.js");
+  Chunk388032 = require("./388032.jsx");
 let A = e => {
   let t = true;
   return e.forEach(e => {

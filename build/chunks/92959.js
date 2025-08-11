@@ -10,7 +10,7 @@ var Chunk657707 = require("./657707.js"),
   Chunk679232 = require("./679232.js"),
   Chunk499356 = require("./499356.js"),
   Chunk523197 = require("./523197.js"),
-  Chunk388032 = require("./388032.js");
+  Chunk388032 = require("./388032.jsx");
 let d = (0, Chunk509613.wf)("Notifications", {
   icon: Chunk657707.Dkj,
   useTitle: () => Chunk388032.intl.string(Chunk388032.t.HcoRu7),

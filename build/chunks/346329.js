@@ -9,13 +9,13 @@ require.r(exports), require.d(exports, {
   updateApplication: () => _
 });
 var Chunk51025 = require("./51025.js"),
-  Chunk696748 = require("./696748.js"),
+  Chunk696748 = require("./696748.jsx"),
   Chunk812206 = require("./812206.js"),
   Chunk173747 = require("./173747.js"),
   Chunk7956 = require("./7956.js"),
   Chunk417363 = require("./417363.js"),
   Chunk941128 = require("./941128.js"),
-  Chunk702523 = require("./702523.js"),
+  Chunk702523 = require("./702523.jsx"),
   Chunk981631 = require("./981631.js");
 
 function f(e, t, n) {

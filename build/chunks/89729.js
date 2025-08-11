@@ -12,7 +12,7 @@ var Chunk392711 = require("./392711.js"),
   Chunk699516 = require("./699516.js"),
   Chunk5192 = require("./5192.js"),
   Chunk566006 = require("./566006.js"),
-  Chunk388032 = require("./388032.js");
+  Chunk388032 = require("./388032.jsx");
 let f = 3,
   _ = {
     standard: {

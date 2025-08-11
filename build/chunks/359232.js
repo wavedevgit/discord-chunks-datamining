@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk512722 = require("./512722.js"),
   i = require.n(Chunk512722),
   Chunk911969 = require("./911969.js"),
-  Chunk388032 = require("./388032.js");
+  Chunk388032 = require("./388032.jsx");
 
 function s(e) {
   return null == e ? 0 : e.type === o.re.STRING_SELECT ? e.values.length : e.selectedOptions.length

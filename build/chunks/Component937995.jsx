@@ -1,0 +1,86 @@
+/** Chunk was on web.js **/
+/** chunk id: 937995, original params: e,t,n (module,exports,re quire) **/
+"use strict";
+require.d(exports, {
+  ZP: () => u,
+  h9: () => c,
+  nM: () => l
+}), require("./388685.js");
+var Chunk255367 = require("./255367.js"),
+  Chunk73800 = require("./73800.js"),
+  Chunk846519 = require("./846519.js");
+
+function a(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+
+function s(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      a(e, t, n[t])
+    })
+  }
+  return e
+}
+let l = Chunk73800.createContext({
+    onPreventIdle: () => null,
+    onAllowIdle: () => null,
+    onForceIdle: () => null,
+    onActive: () => null
+  }),
+  c = Chunk73800.createContext(false);
+
+function u(e) {
+  let {
+    children: t,
+    timeout: n
+  } = e, [a, u] = i.useState(false), d = i.useRef(new Set), f = i.useRef(null);
+  i.useEffect(() => (f.current = new o.sW(n, () => u(true)), f.current.delay(), () => {
+    var e;
+    null == (e = f.current) || e.cancel(), f.current = null
+  }), [n]);
+  let _ = i.useCallback(e => {
+      var t;
+      u(false), d.current.add(e), null == (t = f.current) || t.cancel()
+    }, [d, f, u]),
+    p = i.useCallback(e => {
+      if (d.current.delete(e), 0 === d.current.size) {
+        var t;
+        null == (t = f.current) || t.delay()
+      }
+    }, [d, f]),
+    h = i.useCallback(() => {
+      if (u(false), 0 === d.current.size) {
+        var e;
+        null == (e = f.current) || e.delay()
+      }
+    }, [d, f, u]),
+    m = i.useCallback(() => {
+      var e;
+      d.current.size > 0 || (null == (e = f.current) || e.cancel(), u(true))
+    }, [f, u]),
+    g = i.useMemo(() => ({
+      onAllowIdle: p,
+      onPreventIdle: _,
+      onActive: h,
+      onForceIdle: m
+    }), [p, _, h, m]);
+  return (0, r.jsx)(c.Provider, {
+    value: a,
+    children: (0, r.jsx)(l.Provider, {
+      value: g,
+      children: t(s({
+        idle: a
+      }, g))
+    })
+  })
+}

@@ -4,7 +4,7 @@
 require.d(exports, {
   Z: () => i
 });
-var Chunk388032 = require("./388032.js");
+var Chunk388032 = require("./388032.jsx");
 
 function i(e) {
   let t = r.intl.currentLocale.toLowerCase();

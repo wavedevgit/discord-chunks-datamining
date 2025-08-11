@@ -1,0 +1,73 @@
+/** Chunk was on 93886 **/
+/** chunk id: 820400, original params: e,t,a (module,exports,require) **/
+require.d(exports, {
+  Z: () => d
+});
+var Chunk255367 = require("./255367.js");
+require("./73800.js");
+var Chunk296009 = require("./296009.js"),
+  Chunk481060 = require("./481060.js"),
+  Chunk592183 = require("./592183.js"),
+  Chunk86419 = require("./86419.js"),
+  Chunk447448 = require("./447448.js"),
+  Chunk148444 = require("./148444.js");
+
+function d() {
+  return (0, Chunk447448.k)({
+    location: "DevToolsWidgetsPanel",
+    autoTrackExposure: false
+  }) ? (0, Chunk255367.jsx)("div", {
+    className: Chunk148444.container,
+    children: (0, Chunk255367.jsxs)(Chunk481060.hjN, {
+      children: [(0, Chunk255367.jsx)(Chunk481060.vwX, {
+        children: "User Profile Widgets"
+      }), (0, Chunk255367.jsx)(Chunk481060.R94, {
+        children: "Generate and test different widget configurations for user profiles."
+      }), (0, Chunk255367.jsxs)("div", {
+        className: Chunk148444.buttonGroup,
+        children: [(0, Chunk255367.jsx)(Chunk481060.zxk, {
+          variant: "primary",
+          text: "Favorite Game Widget",
+          onClick: () => (0, Chunk86419.qH)(Chunk296009.l.FAVORITE_GAMES)
+        }), (0, Chunk255367.jsx)(Chunk481060.zxk, {
+          variant: "primary",
+          text: "Current Game Widget",
+          onClick: () => (0, Chunk86419.qH)(Chunk296009.l.CURRENT_GAMES)
+        }), (0, Chunk255367.jsx)(Chunk481060.zxk, {
+          variant: "primary",
+          text: "Want to Play Game Widget",
+          onClick: () => (0, Chunk86419.qH)(Chunk296009.l.WANT_TO_PLAY_GAMES)
+        }), (0, Chunk255367.jsx)(Chunk481060.zxk, {
+          variant: "primary",
+          text: "Played Game Widget",
+          onClick: () => (0, Chunk86419.qH)(Chunk296009.l.PLAYED_GAMES)
+        }), (0, Chunk255367.jsx)(Chunk481060.zxk, {
+          variant: "active",
+          text: "Show Empty State",
+          onClick: () => {
+            Chunk592183.Z.setPendingWidgets([])
+          }
+        }), (0, Chunk255367.jsx)(Chunk481060.zxk, {
+          variant: "critical-primary",
+          text: "Clear Pending Changes",
+          onClick: () => {
+            Chunk592183.Z.clearPendingWidgets()
+          }
+        })]
+      }), (0, Chunk255367.jsxs)("div", {
+        className: Chunk148444.buttonGroup,
+        children: [(0, Chunk255367.jsx)(Chunk481060.R94, {
+          children: "Backend integration:"
+        }), (0, Chunk255367.jsx)(Chunk481060.zxk, {
+          variant: "active",
+          text: "Save Widgets State",
+          onClick: () => (0, Chunk86419.X6)()
+        }), (0, Chunk255367.jsx)(Chunk481060.zxk, {
+          variant: "critical-primary",
+          text: "Clear Saved Widgets",
+          onClick: () => (0, Chunk86419.tk)()
+        })]
+      })]
+    })
+  }) : null
+}

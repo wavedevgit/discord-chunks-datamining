@@ -1,0 +1,105 @@
+/** Chunk was on 22988 **/
+/** chunk id: 516448, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
+  Z: () => v
+}), require("./388685.js");
+var Chunk255367 = require("./255367.js"),
+  Chunk73800 = require("./73800.js"),
+  Chunk481060 = require("./481060.js"),
+  Chunk313201 = require("./313201.js"),
+  Chunk723047 = require("./723047.js"),
+  Chunk727843 = require("./727843.jsx"),
+  Chunk290348 = require("./290348.js"),
+  Chunk164000 = require("./164000.js"),
+  Chunk783454 = require("./783454.jsx"),
+  Chunk862319 = require("./862319.jsx"),
+  Chunk140285 = require("./140285.jsx"),
+  Chunk390583 = require("./390583.jsx"),
+  Chunk641249 = require("./641249.jsx"),
+  Chunk574085 = require("./574085.jsx"),
+  Chunk293810 = require("./293810.js"),
+  Chunk388032 = require("./388032.jsx"),
+  Chunk301849 = require("./301849.js");
+
+function v(e) {
+  let {
+    allSubscriptionListings: t
+  } = e, {
+    editStateId: n,
+    guildId: v
+  } = (0, o.N)(), [_, O] = c.UE(n), [y, C] = c.R7(n), N = i.useMemo(() => t.filter(e => e.id !== n), [t, n]), {
+    isFullServerGating: I
+  } = (0, d.Z)(v), E = (0, a.Dt)(), S = (0, s.mY)();
+  return (0, r.jsxs)(u.Z, {
+    title: x.intl.string(x.t.YNw2Sk),
+    description: x.intl.string(x.t.zMW5r6),
+    children: [(0, r.jsxs)(l.hjN, {
+      title: x.intl.string(x.t.DFlDaG),
+      disabled: S,
+      children: [(0, r.jsx)(l.R94, {
+        type: l.R94.Types.DESCRIPTION,
+        className: j.formDescription,
+        disabled: S,
+        children: x.intl.string(x.t.kHalVF)
+      }), (0, r.jsx)(m.Z, {
+        channelBenefits: _,
+        intangibleBenefits: y,
+        subscriptionListings: N,
+        onImport: function(e, t) {
+          O(t => t.concat(e)), C(e => e.concat(t))
+        }
+      }), (0, r.jsx)(l.LZC, {
+        size: 8
+      }), (0, r.jsx)(m.w, {
+        guildId: v,
+        onImport: function(e) {
+          O(t => {
+            let n = new Set(t.map(e => {
+              let {
+                ref_id: t
+              } = e;
+              return t
+            }));
+            return [...t, ...e.filter(e => !n.has(e)).map(e => ({
+              ref_id: e,
+              ref_type: b.Qs.CHANNEL
+            }))]
+          })
+        },
+        disabled: S
+      })]
+    }), (0, r.jsx)(l.LZC, {
+      size: 24
+    }), (0, r.jsxs)(l.hjN, {
+      title: x.intl.string(x.t.S2kKzM),
+      titleId: E,
+      disabled: S,
+      children: [(0, r.jsx)(l.R94, {
+        type: l.R94.Types.DESCRIPTION,
+        className: j.formDescription,
+        disabled: S,
+        children: x.intl.string(x.t["5a4Axc"])
+      }), I && (0, r.jsxs)(r.Fragment, {
+        children: [(0, r.jsx)(g.Z, {
+          "aria-labelledby": E,
+          disabled: S
+        }), (0, r.jsx)(l.LZC, {
+          size: 8
+        })]
+      }), (0, r.jsx)(p.Z, {})]
+    }), (0, r.jsx)(l.LZC, {
+      size: 24
+    }), (0, r.jsxs)(l.hjN, {
+      title: x.intl.string(x.t.RdwKw8),
+      disabled: S,
+      children: [(0, r.jsx)(l.R94, {
+        type: l.R94.Types.DESCRIPTION,
+        className: j.formDescription,
+        disabled: S,
+        children: x.intl.string(x.t.zAww7e)
+      }), (0, r.jsx)(f.Z, {})]
+    }), (0, r.jsx)(l.LZC, {
+      size: 24
+    }), (0, r.jsx)(h.Z, {})]
+  })
+}

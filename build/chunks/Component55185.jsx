@@ -1,0 +1,307 @@
+/** Chunk was on 34779 **/
+/** chunk id: 55185, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
+  I: () => A,
+  N: () => T
+}), require("./388685.js");
+var r, Chunk255367 = require("./255367.js"),
+  Chunk73800 = require("./73800.js"),
+  Chunk793030 = require("./793030.js"),
+  Chunk442837 = require("./442837.js"),
+  Chunk381499 = require("./381499.js"),
+  Chunk755721 = require("./755721.js"),
+  Chunk481060 = require("./481060.js"),
+  Chunk695346 = require("./695346.js"),
+  Chunk675478 = require("./675478.js"),
+  Chunk885110 = require("./885110.js"),
+  Chunk63063 = require("./63063.js"),
+  Chunk316496 = require("./316496.js"),
+  Chunk223730 = require("./223730.jsx"),
+  Chunk981631 = require("./981631.js"),
+  Chunk29953 = require("./29953.js"),
+  Chunk388032 = require("./388032.jsx"),
+  Chunk22275 = require("./22275.js"),
+  Chunk354810 = require("./354810.js");
+async function v(e) {
+  await h.hW.updateAsync("status", t => {
+    t.status = a.Gm.create({
+      value: e
+    }), t.statusExpiresAtMs = "0"
+  }, h.fy.INFREQUENT_USER_ACTION)
+}
+
+function j(e) {
+  let {
+    closePopout: t
+  } = e;
+  return (0, i.jsx)("div", {
+    "data-button-hoisted-classname-wrapper": true,
+    className: y.goOnlineButton,
+    children: (0, i.jsx)(u.zxk, {
+      variant: "primary",
+      size: "sm",
+      text: _.intl.string(O.default.Poezn5),
+      onClick: () => {
+        t(), v(u.Skl.ONLINE)
+      },
+      fullWidth: true
+    })
+  })
+}
+
+function E(e) {
+  let {
+    showCurrentGame: t,
+    shouldShowStatus: n = false,
+    shouldShowCustomizeLink: r = false,
+    closePopout: l
+  } = e, o = (0, s.e7)([p.Z], () => p.Z.getStatus()), {
+    showLinkToSettings: a
+  } = (0, g.D)("popout");
+  return (0, i.jsxs)("div", {
+    className: y.toggleContainer,
+    children: [(0, i.jsxs)("div", {
+      className: y.toggleContainerText,
+      children: [(0, i.jsx)(u.Text, {
+        variant: "text-sm/medium",
+        color: "header-primary",
+        children: _.intl.string(_.t.KY0ilp)
+      }), n && (0, i.jsxs)("div", {
+        className: y.toggleContainerOnlineRow,
+        children: [(0, i.jsx)(u.qbd, {
+          status: u.Skl.ONLINE,
+          size: 8
+        }), (0, i.jsx)(u.Text, {
+          variant: "text-xs/normal",
+          color: "text-secondary",
+          children: o === u.Skl.INVISIBLE ? _.intl.string(O.default.a3AofX) : _.intl.string(_.t.WbGtnJ)
+        })]
+      }), r && a && (0, i.jsx)(m.K, {
+        onClosePopout: l
+      })]
+    }), (0, i.jsx)(u.rsf, {
+      onChange: e => {
+        d.G6.updateSetting(e), n && v(e ? u.Skl.ONLINE : u.Skl.INVISIBLE)
+      },
+      checked: t
+    })]
+  })
+}
+
+function S(e) {
+  let {
+    children: t,
+    closePopout: n
+  } = e, r = (0, l.useRef)(null);
+  (0, u.Tbt)(r);
+  let a = d.G6.useSetting(),
+    h = (0, s.e7)([p.Z], () => p.Z.getStatus()) === u.Skl.INVISIBLE && a;
+  return (0, i.jsxs)("div", {
+    className: y.wrapper,
+    ref: r,
+    children: [null != n && (0, i.jsx)("div", {
+      className: y.gradient
+    }), (0, i.jsxs)("div", {
+      className: y.content,
+      children: [null != n && (0, i.jsxs)(i.Fragment, {
+        children: [(0, i.jsx)(c.zx, {
+          className: y.closeButton,
+          "aria-label": _.intl.string(_.t.cpT0Cg),
+          look: c.zx.Looks.BLANK,
+          size: c.zx.Sizes.NONE,
+          onClick: n,
+          children: (0, i.jsx)(u.Dio, {
+            size: "xs",
+            color: "currentColor"
+          })
+        }), (0, i.jsx)("img", {
+          alt: "",
+          src: C.Z,
+          className: y.controllerImage
+        }), (0, i.jsx)(o.X6, {
+          variant: "heading-md/bold",
+          color: "header-primary",
+          className: y.nuxTitle,
+          children: _.intl.string(h ? O.default.MkgMBw : _.t.PRjSRk)
+        })]
+      }), t]
+    })]
+  })
+}
+
+function x(e) {
+  let {
+    closePopout: t
+  } = e, n = d.G6.useSetting();
+  return (0, i.jsxs)(S, {
+    closePopout: t,
+    children: [(0, i.jsx)(u.Text, {
+      variant: "text-xs/normal",
+      color: "text-secondary",
+      className: y.nuxContent,
+      children: _.intl.format(O.default.nHDuwM, {
+        learnMoreLink: f.Z.getArticleURL(b.BhN.ACTIVITY_STATUS_SETTINGS)
+      })
+    }), (0, i.jsx)("div", {
+      className: y.toggleContainerWrapper,
+      children: (0, i.jsx)(E, {
+        showCurrentGame: n,
+        shouldShowCustomizeLink: true,
+        closePopout: t
+      })
+    })]
+  })
+}
+
+function I(e) {
+  let {
+    closePopout: t
+  } = e;
+  return (0, i.jsxs)(S, {
+    closePopout: t,
+    children: [(0, i.jsx)(u.Text, {
+      variant: "text-xs/normal",
+      color: "text-secondary",
+      className: y.nuxContent,
+      children: _.intl.format(O.default["vtp/IS"], {
+        learnMoreLink: f.Z.getArticleURL(b.BhN.ACTIVITY_STATUS_SETTINGS)
+      })
+    }), (0, i.jsx)(j, {
+      closePopout: t
+    })]
+  })
+}
+
+function P(e) {
+  let {
+    closePopout: t
+  } = e, n = d.G6.useSetting();
+  return (0, i.jsxs)(S, {
+    closePopout: t,
+    children: [(0, i.jsx)(u.Text, {
+      variant: "text-xs/normal",
+      color: "text-secondary",
+      className: y.nuxContent,
+      children: _.intl.format(O.default.nHDuwM, {
+        learnMoreLink: f.Z.getArticleURL(b.BhN.ACTIVITY_STATUS_SETTINGS)
+      })
+    }), (0, i.jsx)("div", {
+      className: y.toggleContainerWrapper,
+      children: (0, i.jsx)(E, {
+        showCurrentGame: n,
+        shouldShowStatus: true,
+        closePopout: t
+      })
+    })]
+  })
+}
+
+function N(e) {
+  let {
+    closePopout: t
+  } = e, n = d.G6.useSetting(), {
+    showLinkToSettings: r
+  } = (0, g.D)("popout");
+  return (0, i.jsxs)(S, {
+    children: [(0, i.jsx)(E, {
+      showCurrentGame: n,
+      closePopout: t
+    }), (0, i.jsx)(u.$i$, {
+      className: y.divider
+    }), (0, i.jsx)(u.Text, {
+      variant: "text-xs/normal",
+      color: "text-secondary",
+      children: _.intl.format(O.default.nHDuwM, {
+        learnMoreLink: f.Z.getArticleURL(b.BhN.ACTIVITY_STATUS_SETTINGS)
+      })
+    }), r && (0, i.jsx)(m.y, {
+      onClosePopout: t
+    })]
+  })
+}
+
+function w(e) {
+  let {
+    closePopout: t
+  } = e;
+  return (0, i.jsxs)(S, {
+    children: [(0, i.jsx)(o.X6, {
+      variant: "heading-sm/semibold",
+      color: "header-primary",
+      className: y.controlTitle,
+      children: _.intl.string(O.default.MkgMBw)
+    }), (0, i.jsx)(u.Text, {
+      variant: "text-xs/normal",
+      color: "text-secondary",
+      children: _.intl.format(O.default["vtp/IS"], {
+        learnMoreLink: f.Z.getArticleURL(b.BhN.ACTIVITY_STATUS_SETTINGS)
+      })
+    }), (0, i.jsx)(j, {
+      closePopout: t
+    })]
+  })
+}
+
+function Z(e) {
+  let {
+    closePopout: t
+  } = e, n = d.G6.useSetting(), {
+    showLinkToSettings: r
+  } = (0, g.D)("popout");
+  return (0, i.jsxs)(S, {
+    children: [(0, i.jsx)(E, {
+      showCurrentGame: n,
+      shouldShowStatus: true,
+      closePopout: t
+    }), (0, i.jsx)(u.$i$, {
+      className: y.divider
+    }), (0, i.jsx)(u.Text, {
+      variant: "text-xs/normal",
+      color: "text-secondary",
+      children: _.intl.format(O.default.nHDuwM, {
+        learnMoreLink: f.Z.getArticleURL(b.BhN.ACTIVITY_STATUS_SETTINGS)
+      })
+    }), r && (0, i.jsx)(m.y, {
+      onClosePopout: t
+    })]
+  })
+}
+var T = ((r = {})[r.ActivityNux = 0] = "ActivityNux", r[r.StatusNux = 1] = "StatusNux", r[r.ActivityAndStatusNux = 2] = "ActivityAndStatusNux", r[r.Activity = 3] = "Activity", r[r.Status = 4] = "Status", r[r.ActivityAndStatus = 5] = "ActivityAndStatus", r);
+
+function A(e) {
+  let {
+    popoutState: t,
+    closePopout: n,
+    onOpen: r
+  } = e, [o] = (0, l.useState)(t);
+  switch ((0, l.useEffect)(() => {
+      r()
+    }, [r]), o) {
+    case 0:
+      return (0, i.jsx)(x, {
+        closePopout: n
+      });
+    case 1:
+      return (0, i.jsx)(I, {
+        closePopout: n
+      });
+    case 2:
+      return (0, i.jsx)(P, {
+        closePopout: n
+      });
+    case 3:
+      return (0, i.jsx)(N, {
+        closePopout: n
+      });
+    case 4:
+      return (0, i.jsx)(w, {
+        closePopout: n
+      });
+    case 5:
+      return (0, i.jsx)(Z, {
+        closePopout: n
+      });
+    default:
+      return null
+  }
+}

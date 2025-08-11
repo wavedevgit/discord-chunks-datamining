@@ -1,0 +1,80 @@
+/** Chunk was on 75708 **/
+/** chunk id: 922628, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
+  S: () => l,
+  V: () => a
+});
+var Chunk255367 = require("./255367.js"),
+  Chunk481060 = require("./481060.js"),
+  Chunk388032 = require("./388032.jsx");
+
+function a(e) {
+  var {
+    body: t
+  } = e, s = function(e, t) {
+    if (null == e) return {};
+    var n, i, r = function(e, t) {
+      if (null == e) return {};
+      var n, i, r = {},
+        s = Object.keys(e);
+      for (i = 0; i < s.length; i++) n = s[i], t.indexOf(n) >= 0 || (r[n] = e[n]);
+      return r
+    }(e, t);
+    if (Object.getOwnPropertySymbols) {
+      var s = Object.getOwnPropertySymbols(e);
+      for (i = 0; i < s.length; i++) n = s[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n])
+    }
+    return r
+  }(e, ["body"]);
+  (0, r.ZDy)(async () => {
+    let {
+      ConfirmModal: e
+    } = await Promise.resolve().then(n.bind(n, 481060));
+    return n => {
+      var a, l;
+      return (0, i.jsx)(e, (a = function(e) {
+        for (var t = 1; t < arguments.length; t++) {
+          var n = null != arguments[t] ? arguments[t] : {},
+            i = Object.keys(n);
+          "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+            return Object.getOwnPropertyDescriptor(n, e).enumerable
+          }))), i.forEach(function(t) {
+            var i;
+            i = n[t], t in e ? Object.defineProperty(e, t, {
+              value: i,
+              enumerable: true,
+              configurable: true,
+              writable: true
+            }) : e[t] = i
+          })
+        }
+        return e
+      }({}, n, s), l = l = {
+        children: (0, i.jsx)(r.Text, {
+          variant: "text-md/normal",
+          children: t
+        })
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(a, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
+        var n = Object.keys(e);
+        if (Object.getOwnPropertySymbols) {
+          var i = Object.getOwnPropertySymbols(e);
+          n.push.apply(n, i)
+        }
+        return n
+      })(Object(l)).forEach(function(e) {
+        Object.defineProperty(a, e, Object.getOwnPropertyDescriptor(l, e))
+      }), a))
+    }
+  })
+}
+
+function l(e) {
+  let {
+    message: t
+  } = e;
+  a({
+    header: s.intl.string(s.t.OjbtDg),
+    confirmText: s.intl.string(s.t.BddRzc),
+    body: t
+  })
+}

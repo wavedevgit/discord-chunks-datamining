@@ -5,9 +5,9 @@ require.d(exports, {
 });
 var Chunk497505 = require("./497505.js"),
   Chunk988303 = require("./988303.js"),
-  Chunk941348 = require("./941348.js"),
+  Chunk941348 = require("./941348.jsx"),
   Chunk658590 = require("./658590.js"),
-  Chunk647365 = require("./647365.js"),
+  Chunk647365 = require("./647365.jsx"),
   Chunk743294 = require("./743294.js");
 let c = {
     component: Chunk647365.Z,

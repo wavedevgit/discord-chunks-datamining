@@ -15,7 +15,7 @@ var Chunk544891 = require("./544891.js"),
   Chunk981631 = require("./981631.js"),
   Chunk468788 = require("./468788.js"),
   Chunk526761 = require("./526761.js"),
-  Chunk388032 = require("./388032.js");
+  Chunk388032 = require("./388032.jsx");
 let h = {
   open(e) {
     o.Z.dispatch({

@@ -1,0 +1,60 @@
+/** Chunk was on 49152 **/
+/** chunk id: 12779, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
+  Z: () => d
+});
+var Chunk255367 = require("./255367.js"),
+  Chunk73800 = require("./73800.js"),
+  Chunk120356 = require("./120356.js"),
+  a = require.n(Chunk120356),
+  Chunk481060 = require("./481060.js"),
+  Chunk194082 = require("./194082.jsx"),
+  Chunk14338 = require("./14338.jsx"),
+  Chunk76692 = require("./76692.js");
+let d = Chunk73800.memo(function(e) {
+  let {
+    label: t,
+    participantCount: n,
+    onClick: i,
+    className: l,
+    collapsed: d,
+    speakers: h,
+    channel: p,
+    isStreamLive: f
+  } = e;
+  return (0, r.jsxs)(s.P3F, {
+    onClick: i,
+    className: a()(u.container, l),
+    children: [null == h ? (0, r.jsx)(s.BFJ, {
+      size: "custom",
+      color: "currentColor",
+      width: 20,
+      height: 20,
+      className: u.micIcon
+    }) : (0, r.jsx)(s.S6n, {
+      size: "custom",
+      color: "currentColor",
+      width: 20,
+      height: 20,
+      className: u.micIcon
+    }), (0, r.jsxs)(s.Text, {
+      color: "header-primary",
+      variant: "text-md/semibold",
+      className: u.text,
+      children: [t, " — ", n]
+    }), d && null != p && null != h && h.length > 0 && (0, r.jsxs)(r.Fragment, {
+      children: [(0, r.jsx)(c.Z, {
+        channel: p,
+        speakers: h
+      }), f && (0, r.jsx)(o.ZP, {})]
+    }), (0, r.jsx)(s.CJ0, {
+      size: "custom",
+      color: "currentColor",
+      width: 20,
+      height: 20,
+      className: a()(u.downIcon, {
+        [u.upIcon]: d
+      })
+    })]
+  })
+})

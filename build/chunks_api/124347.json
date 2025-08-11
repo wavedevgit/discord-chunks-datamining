@@ -1,1 +1,1 @@
-{"id":"124347","type":"experiment","data":{"kind":"user","id":"2024-02_image_load_metrics","label":"Image load metrics Config User Experiment","defaultConfig":{"enabled":false},"treatments":[{"id":1,"label":"Do not send metrics for image load","config":{"enabled":false}},{"id":2,"label":"Send metrics for image load","config":{"enabled":true}}]},"fromModule":{"id":"web.js"}}
+{"id":"124347","type":"component","data":{},"fromModule":{"id":"web.js"}}

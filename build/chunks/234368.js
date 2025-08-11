@@ -6,7 +6,7 @@ require.d(exports, {
   rm: () => s
 });
 var r, Chunk93841 = require("./93841.js"),
-  Chunk388032 = require("./388032.js"),
+  Chunk388032 = require("./388032.jsx"),
   Chunk128647 = require("./128647.js"),
   s = ((r = {}).ENHANCED_ROLE_COLORS = "ENHANCED_ROLE_COLORS", r);
 let a = {

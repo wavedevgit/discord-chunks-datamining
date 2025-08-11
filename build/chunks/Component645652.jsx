@@ -1,0 +1,35 @@
+/** Chunk was on web.js **/
+/** chunk id: 645652, original params: e,t,n (module,exports,re quire) **/
+"use strict";
+require.d(exports, {
+  Z: () => l
+});
+var Chunk255367 = require("./255367.js");
+require("./73800.js");
+var Chunk120356 = require("./120356.js"),
+  o = require.n(Chunk120356),
+  Chunk819758 = require("./819758.jsx"),
+  Chunk863807 = require("./863807.js");
+
+function l(e) {
+  let {
+    className: t,
+    children: n,
+    forceUseColor: i = false,
+    hideStars: l
+  } = e;
+  return (0, r.jsxs)("span", {
+    className: o()(s.container, t, {
+      [s.containerColored]: i
+    }),
+    children: [n, l ? null : (0, r.jsxs)(r.Fragment, {
+      children: [(0, r.jsx)(a.Z, {
+        foreground: s.sparkleStarTopRight
+      }), (0, r.jsx)(a.Z, {
+        foreground: s.sparkleStarRight
+      }), (0, r.jsx)(a.Z, {
+        foreground: s.sparkleStarBottomLeft
+      })]
+    })]
+  })
+}

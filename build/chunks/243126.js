@@ -16,7 +16,7 @@ var Chunk73800 = require("./73800.js"),
   Chunk370039 = require("./370039.js"),
   Chunk937510 = require("./937510.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk388032 = require("./388032.js");
+  Chunk388032 = require("./388032.jsx");
 let h = (e, t) => {
   let n = (0, o.e7)([s.Z], () => s.Z.hasConsented(f.pjP.PERSONALIZATION)),
     l = r.useMemo(() => {

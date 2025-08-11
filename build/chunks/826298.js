@@ -8,7 +8,7 @@ require.d(exports, {
 }), require("./35282.js"), require("./125548.js");
 var Chunk895924 = require("./895924.js"),
   Chunk809090 = require("./809090.jsx"),
-  Chunk944877 = require("./944877.js"),
+  Chunk944877 = require("./944877.jsx"),
   Chunk689079 = require("./689079.js");
 let s = e => e.type === r.Qi.BUILT_IN ? o.Z : i.Z;
 

@@ -8,7 +8,7 @@ var Chunk367074 = require("./367074.js"),
   Chunk617799 = require("./617799.js"),
   Chunk61196 = require("./61196.js"),
   Chunk1844 = require("./1844.js"),
-  Chunk388032 = require("./388032.js");
+  Chunk388032 = require("./388032.jsx");
 async function o() {
   let e = Chunk1844.Z.bogoPromotion,
     t = null != module && new Date(module.endDate).valueOf() >= Date.now() && new Date(module.startDate).valueOf() <= Date.now(),

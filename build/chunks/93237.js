@@ -17,7 +17,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk276444 = require("./276444.js"),
   Chunk870041 = require("./870041.js"),
   Chunk533525 = require("./533525.js"),
-  Chunk388032 = require("./388032.js");
+  Chunk388032 = require("./388032.jsx");
 
 function f(e) {
   let t = (e - Date.now()) / a.Z.Millis.HOUR;

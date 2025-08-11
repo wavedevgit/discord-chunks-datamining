@@ -23,7 +23,7 @@ require.d(exports, {
 }), require("./953529.js");
 var Chunk348327 = require("./348327.js"),
   i = require.n(Chunk348327),
-  Chunk388032 = require("./388032.js");
+  Chunk388032 = require("./388032.jsx");
 
 function a(e, t) {
   if (null == e) return {};

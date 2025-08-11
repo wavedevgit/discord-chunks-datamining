@@ -10,8 +10,8 @@ var Chunk73800 = require("./73800.js"),
   Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
   Chunk821849 = require("./821849.js"),
-  Chunk906732 = require("./906732.js"),
-  Chunk680005 = require("./680005.js"),
+  Chunk906732 = require("./906732.jsx"),
+  Chunk680005 = require("./680005.jsx"),
   Chunk728345 = require("./728345.js"),
   Chunk349167 = require("./349167.js"),
   Chunk509545 = require("./509545.js"),
@@ -20,7 +20,7 @@ var Chunk73800 = require("./73800.js"),
   Chunk270144 = require("./270144.js"),
   Chunk488915 = require("./488915.js"),
   Chunk171246 = require("./171246.js"),
-  Chunk929011 = require("./929011.js");
+  Chunk929011 = require("./929011.jsx");
 
 function y(e) {
   var t, n;

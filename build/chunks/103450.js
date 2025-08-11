@@ -19,7 +19,7 @@ var Chunk73800 = require("./73800.js"),
   Chunk620662 = require("./620662.js"),
   Chunk841784 = require("./841784.js"),
   Chunk275920 = require("./275920.js"),
-  Chunk906732 = require("./906732.js"),
+  Chunk906732 = require("./906732.jsx"),
   Chunk835473 = require("./835473.js"),
   Chunk813370 = require("./813370.js"),
   Chunk592745 = require("./592745.js"),
@@ -39,7 +39,7 @@ var Chunk73800 = require("./73800.js"),
   Chunk804739 = require("./804739.js"),
   Chunk981631 = require("./981631.js"),
   Chunk701488 = require("./701488.js"),
-  Chunk388032 = require("./388032.js");
+  Chunk388032 = require("./388032.jsx");
 
 function G(e) {
   var t, n;

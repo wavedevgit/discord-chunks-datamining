@@ -11,7 +11,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk271383 = require("./271383.js"),
   Chunk699516 = require("./699516.js"),
   Chunk51144 = require("./51144.js"),
-  Chunk388032 = require("./388032.js");
+  Chunk388032 = require("./388032.jsx");
 
 function c(e, t, n) {
   if (null == n) return null;

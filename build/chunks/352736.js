@@ -21,7 +21,7 @@ var Chunk721355 = require("./721355.js"),
   Chunk5192 = require("./5192.js"),
   Chunk709054 = require("./709054.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk388032 = require("./388032.js");
+  Chunk388032 = require("./388032.jsx");
 let O = {
     "234395307759108106": "https://groovy.bot/commands",
     "365975655608745985": "https://www.pokecord.com/getting-started",

@@ -16,7 +16,7 @@ var Chunk866442 = require("./866442.js"),
   Chunk823379 = require("./823379.js"),
   Chunk280501 = require("./280501.js"),
   Chunk790642 = require("./790642.js"),
-  Chunk388032 = require("./388032.js");
+  Chunk388032 = require("./388032.jsx");
 let _ = new Chunk710845.Z("InteractionComponentUtils"),
   p = (e, t) => ({
     id: e.id,

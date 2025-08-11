@@ -12,7 +12,7 @@ var Chunk605387 = require("./605387.js"),
   i = require.n(Chunk605387),
   Chunk780771 = require("./780771.js");
 require("./231338.js");
-var Chunk388032 = require("./388032.js");
+var Chunk388032 = require("./388032.jsx");
 
 function s(e) {
   return e.name !== o.uj && (e.name !== o._j || l(e.darkBackground) && l(e.lightBackground))

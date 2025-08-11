@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk392711 = require("./392711.js"),
   i = require.n(Chunk392711),
   Chunk25209 = require("./25209.js"),
-  Chunk691424 = require("./691424.js"),
+  Chunk691424 = require("./691424.jsx"),
   Chunk428595 = require("./428595.js"),
   Chunk364458 = require("./364458.js");
 
@@ -57,7 +57,7 @@ function p(e, t) {
     mention: _
   }), (0, l.Z)([e, ...t, n])
 }
-_ = require("./878611.js").Z;
+_ = require("./878611.jsx").Z;
 let h = {
     enableBuildOverrides: false,
     enableEmojiClick: true

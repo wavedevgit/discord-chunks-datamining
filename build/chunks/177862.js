@@ -7,7 +7,7 @@ require.d(exports, {
   J$: () => a,
   wR: () => i,
   x2: () => r
-}), require("./388032.js");
+}), require("./388032.jsx");
 var r = function(e) {
     return e.BUG = "BUG", e.ALLOWED = "ALLOWED", e.MENTION_RAID_REMOVE_RESTRICTION = "MENTION_RAID_REMOVE_RESTRICTION", e
   }({}),

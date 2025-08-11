@@ -7,7 +7,7 @@ var Chunk73800 = require("./73800.js"),
   Chunk817460 = require("./817460.js"),
   Chunk293810 = require("./293810.js"),
   Chunk474936 = require("./474936.js"),
-  Chunk388032 = require("./388032.js");
+  Chunk388032 = require("./388032.jsx");
 
 function a(e) {
   return r.useMemo(() => {

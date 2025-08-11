@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk314794 = require("./314794.js"),
   Chunk442837 = require("./442837.js"),
   Chunk78839 = require("./78839.js"),
-  Chunk388032 = require("./388032.js");
+  Chunk388032 = require("./388032.jsx");
 let o = e => {
   let t = (0, l.e7)([a.Z], () => {
     let e = a.Z.getPremiumSubscription();

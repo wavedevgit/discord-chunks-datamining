@@ -10,7 +10,7 @@ var Chunk544891 = require("./544891.js"),
   Chunk624453 = require("./624453.js"),
   Chunk668781 = require("./668781.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk388032 = require("./388032.js");
+  Chunk388032 = require("./388032.jsx");
 
 function u(e, t) {
   let n = a.Z.getPins(e);

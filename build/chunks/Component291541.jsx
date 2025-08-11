@@ -1,0 +1,357 @@
+/** Chunk was on web.js **/
+/** chunk id: 291541, original params: e,t,n (module,exports,re quire) **/
+"use strict";
+require.d(exports, {
+  y: () => m
+}), require("./388685.js");
+var Chunk255367 = require("./255367.js"),
+  Chunk73800 = require("./73800.js"),
+  Chunk481060 = require("./481060.js"),
+  Chunk907862 = require("./907862.js"),
+  Chunk453707 = require("./453707.js"),
+  Chunk315416 = require("./315416.js"),
+  Chunk715720 = require("./715720.js");
+
+function u(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+
+function d(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      u(e, t, n[t])
+    })
+  }
+  return e
+}
+
+function f(e, t) {
+  var n = Object.keys(e);
+  if (Object.getOwnPropertySymbols) {
+    var r = Object.getOwnPropertySymbols(e);
+    t && (r = r.filter(function(t) {
+      return Object.getOwnPropertyDescriptor(e, t).enumerable
+    })), n.push.apply(n, r)
+  }
+  return n
+}
+
+function _(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
+    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+  }), e
+}
+
+function p(e, t) {
+  if (null == e) return {};
+  var n, r, i = h(e, t);
+  if (Object.getOwnPropertySymbols) {
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+  }
+  return i
+}
+
+function h(e, t) {
+  if (null == e) return {};
+  var n, r, i = {},
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+  return i
+}
+let m = {
+  title: "Popover",
+  stories: [{
+    name: "Popover",
+    id: "popover",
+    docs: "https://design.discord.tools/components/web/popover",
+    component: function(e) {
+      var {
+        showAsset: t,
+        showActions: n,
+        showTextLink: c,
+        caretPosition: u,
+        caretAlign: f,
+        size: h
+      } = e, m = p(e, ["showAsset", "showActions", "showTextLink", "caretPosition", "caretAlign", "size"]);
+      let [g, E] = i.useState(false), b = i.useRef(null);
+      return (0, r.jsxs)("div", {
+        children: [(0, r.jsx)(a.J2, _(d({}, m), {
+          size: h,
+          targetElementRef: b,
+          shouldShow: g,
+          onRequestClose: () => E(false),
+          asset: t ? (0, r.jsx)("img", {
+            src: "sm" === h ? l.Z : s.Z,
+            alt: "Placeholder"
+          }) : true,
+          caretConfig: {
+            position: u,
+            align: f
+          },
+          actions: n ? [{
+            text: "Close",
+            onClick: () => E(false)
+          }] : true,
+          textLink: c ? {
+            text: "Learn More",
+            link: "https://discord.com",
+            external: true
+          } : true
+        })), (0, r.jsx)(o.zxk, {
+          variant: "primary",
+          text: "Toggle Popover",
+          buttonRef: b,
+          onClick: () => E(!g)
+        })]
+      })
+    },
+    controls: {
+      title: {
+        label: "Title",
+        type: "text",
+        defaultValue: "Sample Popover"
+      },
+      body: {
+        label: "Body Text",
+        type: "text",
+        defaultValue: "This is a sample popover with customizable properties."
+      },
+      size: {
+        label: "Size",
+        type: "select",
+        defaultValue: "md",
+        options: [{
+          label: "Small",
+          value: "sm"
+        }, {
+          label: "Medium",
+          value: "md"
+        }]
+      },
+      badge: {
+        label: "Badge",
+        type: "select",
+        defaultValue: "new",
+        options: [{
+          label: "None",
+          value: true
+        }, {
+          label: "New",
+          value: "new"
+        }, {
+          label: "Beta",
+          value: "beta"
+        }, {
+          label: "Early Access",
+          value: "early_access"
+        }]
+      },
+      gradientColor: {
+        label: "Gradient Color",
+        type: "select",
+        defaultValue: true,
+        options: [{
+          label: "None",
+          value: true
+        }, {
+          label: "Purple",
+          value: "purple"
+        }, {
+          label: "Blue",
+          value: "blue"
+        }, {
+          label: "Nitro Pink",
+          value: "nitro-pink"
+        }]
+      },
+      caretPosition: {
+        label: "Caret Position",
+        type: "select",
+        defaultValue: "top",
+        options: [{
+          label: "Bottom",
+          value: "bottom"
+        }, {
+          label: "Top",
+          value: "top"
+        }, {
+          label: "Left",
+          value: "left"
+        }, {
+          label: "Right",
+          value: "right"
+        }]
+      },
+      caretAlign: {
+        label: "Caret Align",
+        type: "select",
+        defaultValue: "center",
+        options: [{
+          label: "Center",
+          value: "center"
+        }, {
+          label: "Start",
+          value: "start"
+        }, {
+          label: "End",
+          value: "end"
+        }]
+      },
+      showAsset: {
+        label: "Show Asset",
+        type: "boolean",
+        defaultValue: true
+      },
+      showActions: {
+        label: "Show Actions",
+        type: "boolean",
+        defaultValue: true
+      },
+      showTextLink: {
+        label: "Show Text Link",
+        type: "boolean",
+        defaultValue: false
+      }
+    }
+  }, {
+    name: "VideoPopover",
+    id: "video-popover",
+    docs: "https://design.discord.tools/components/web/popover",
+    component: function(e) {
+      let [t, n] = i.useState(false), s = i.useRef(null);
+      return (0, r.jsxs)("div", {
+        children: [(0, r.jsx)(a.Mb, _(d({}, e), {
+          targetElementRef: s,
+          shouldShow: t,
+          onRequestClose: () => n(false),
+          title: "Video Popover Demo",
+          body: "Click the video to view it in the media viewer!",
+          assetUrl: "https://cdn.discordapp.com/assets/server-subscription-tier-template/upsell.mov",
+          badge: "new",
+          action: {
+            text: "Learn More",
+            onClick: () => n(false)
+          }
+        })), (0, r.jsx)(o.zxk, {
+          variant: "primary",
+          text: "Show Video Popover",
+          buttonRef: s,
+          onClick: () => n(!t)
+        })]
+      })
+    },
+    controls: {
+      gradientColor: {
+        label: "Gradient Color",
+        type: "select",
+        defaultValue: "blue",
+        options: [{
+          label: "Purple",
+          value: "purple"
+        }, {
+          label: "Blue",
+          value: "blue"
+        }, {
+          label: "Nitro Pink",
+          value: "nitro-pink"
+        }]
+      }
+    }
+  }, {
+    name: "MultiStepPopover",
+    id: "multi-step-popover",
+    docs: "https://design.discord.tools/components/web/popover",
+    component: function(e) {
+      let {
+        showExpressive: t
+      } = e, [n, l] = i.useState(false), u = i.useRef(null), d = [{
+        title: "Welcome to the Feature!",
+        body: "This is the first step of our multi-step introduction.",
+        asset: (0, r.jsx)("img", {
+          src: s.Z,
+          alt: "Step 1"
+        }),
+        badge: "new",
+        action: {
+          text: "Next"
+        },
+        gradientColor: "blue"
+      }, {
+        title: "Learn the Benefits",
+        body: "Here are the amazing benefits you can enjoy with this feature.",
+        asset: (0, r.jsx)("img", {
+          src: c.Z,
+          alt: "Step 2"
+        }),
+        action: {
+          text: "Continue"
+        },
+        gradientColor: "purple"
+      }, {
+        title: "Get Started!",
+        body: "You're all set to begin using this awesome feature.",
+        asset: (0, r.jsx)("img", {
+          src: s.Z,
+          alt: "Step 3"
+        }),
+        action: {
+          text: "Get Started",
+          variant: t ? "expressive" : true
+        },
+        gradientColor: "nitro-pink",
+        textLink: {
+          text: "Learn More",
+          link: "https://discord.com",
+          external: true
+        }
+      }];
+      return (0, r.jsxs)("div", {
+        children: [(0, r.jsx)(a.e4, {
+          targetElementRef: u,
+          shouldShow: n,
+          onRequestClose: () => l(false),
+          steps: d,
+          caretConfig: {
+            position: "top",
+            align: "center"
+          },
+          onStepChange: () => {}
+        }), (0, r.jsx)(o.zxk, {
+          variant: "primary",
+          text: "Show Multi-Step",
+          buttonRef: u,
+          onClick: () => l(!n)
+        })]
+      })
+    },
+    controls: {
+      showExpressive: {
+        label: "Show Expressive Button",
+        type: "boolean",
+        defaultValue: false
+      },
+      size: {
+        label: "Size",
+        type: "select",
+        defaultValue: "md",
+        options: [{
+          label: "Small",
+          value: "sm"
+        }, {
+          label: "Medium",
+          value: "md"
+        }]
+      }
+    }
+  }]
+}

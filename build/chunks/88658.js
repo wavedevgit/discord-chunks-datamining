@@ -13,7 +13,7 @@ var Chunk695346 = require("./695346.js"),
   Chunk430824 = require("./430824.js");
 require("./626135.js");
 var Chunk981631 = require("./981631.js");
-require("./388032.js");
+require("./388032.jsx");
 let s = 864e5 * Chunk981631.eBq;
 
 function o() {

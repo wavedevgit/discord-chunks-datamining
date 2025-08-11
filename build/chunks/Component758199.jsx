@@ -1,0 +1,256 @@
+/** Chunk was on web.js **/
+/** chunk id: 758199, original params: e,t,n (module,exports,re quire) **/
+"use strict";
+require.d(exports, {
+  W: () => N,
+  u: () => T
+}), require("./190126.js"), require("./368063.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js"), require("./388685.js");
+var Chunk255367 = require("./255367.js"),
+  Chunk73800 = require("./73800.js"),
+  Chunk120356 = require("./120356.js"),
+  a = require.n(Chunk120356),
+  Chunk442837 = require("./442837.js"),
+  Chunk755721 = require("./755721.js"),
+  Chunk481060 = require("./481060.js"),
+  Chunk434650 = require("./434650.js"),
+  Chunk607070 = require("./607070.js"),
+  Chunk206295 = require("./206295.js"),
+  Chunk70097 = require("./70097.jsx"),
+  Chunk314897 = require("./314897.js"),
+  Chunk572004 = require("./572004.js"),
+  Chunk914498 = require("./914498.js"),
+  Chunk217702 = require("./217702.js"),
+  Chunk388032 = require("./388032.jsx"),
+  Chunk383195 = require("./383195.js");
+
+function y(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+
+function O() {
+  return (O = Object.assign || function(e) {
+    for (var t = 1; t < arguments.length; t++) {
+      var n = arguments[t];
+      for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
+    }
+    return e
+  }).apply(this, arguments)
+}
+
+function v(e) {
+  if (null == e) throw TypeError("Cannot destructure " + e);
+  return e
+}
+
+function I(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      y(e, t, n[t])
+    })
+  }
+  return e
+}
+var T = function(e) {
+  return e[e.BOT = 0] = "BOT", e[e.ACTIVITY = 1] = "ACTIVITY", e
+}({});
+
+function S(e) {
+  var t, n, r;
+  return {
+    id: null != (t = null == e ? true : e.id) ? t : "0",
+    linkType: null != (n = null == e ? true : e.linkType) ? n : m.Un.UNKNOWN,
+    referrerId: null != (r = null == e ? true : e.referrerId) ? r : p.default.getId(),
+    activityCustomId: null == e ? true : e.activityCustomId,
+    onView: null == e ? true : e.onView,
+    onLinkCopied: null == e ? true : e.onLinkCopied
+  }
+}
+
+function A(e) {
+  let {
+    onClick: t,
+    children: n,
+    className: i
+  } = e;
+  return null != t ? (0, r.jsx)(c.P3F, {
+    onClick: t,
+    className: a()({
+      [b.cursorPointer]: null != t
+    }, i),
+    children: n
+  }) : (0, r.jsx)("div", {
+    className: i,
+    children: n
+  })
+}
+
+function N(e) {
+  let {
+    title: t,
+    header: n,
+    footer: o,
+    info: p,
+    staticBannerSrc: y,
+    videoBannerSrc: T,
+    bannerAspectRatio: N = 0,
+    iconSrc: C,
+    embedUrl: R,
+    infoUrl: P,
+    actions: w = [],
+    trackingConfig: D,
+    onClickContent: L,
+    onClickBanner: x
+  } = e;
+  D = S(D);
+  let {
+    primaryColor: M,
+    secondaryColor: k
+  } = (0, f.Z)(null != C ? C : y), j = "linear-gradient(45deg, ".concat(M, ", ").concat(k, ")"), U = (0, s.e7)([d.Z], () => d.Z.useReducedMotion), G = i.useRef(false), B = (0, u.O)(e => {
+    if (false === G.current && e) {
+      var t;
+      null == D || null == (t = D.onView) || t.call(D), (0, m.GF)(D.id, D.linkType, D.referrerId, D.activityCustomId), G.current = true
+    }
+  }, true), Z = h.wS && null != R ? (0, r.jsx)(l.zx, {
+    look: l.zx.Looks.BLANK,
+    size: l.zx.Sizes.ICON,
+    "aria-label": E.intl.string(E.t.WqhZsr),
+    className: b.linkIcon,
+    onClick: () => {
+      (0, h.JG)(R, () => (0, c.showToast)((0, c.createToast)(E.intl.string(E.t["L/PwZW"]), c.ToastType.SUCCESS))), (0, m.Yu)(D.id, D.linkType)
+    },
+    children: (0, r.jsx)(c.xPt, {
+      size: "xs",
+      color: "currentColor"
+    })
+  }) : null, F = null != P ? (0, r.jsx)(c.eee, {
+    "aria-label": E.intl.string(E.t.wuRE8P),
+    className: b.linkIcon,
+    href: P,
+    children: (0, r.jsx)(c.d3s, {
+      size: "xs",
+      color: c.TVs.colors.APP_MESSAGE_EMBED_SECONDARY_TEXT.css
+    })
+  }) : null, V = null != y, H = null != T && false === U, Y = V || H, W = 0 === N ? b.bannerAspectRatioBot : b.bannerAspectRatioActivity, K = i.useRef(null), z = i.useCallback(() => {
+    let e = K.current;
+    null != e && ("hidden" === getComputedStyle(e).visibility ? e.pause() : e.play())
+  }, []), q = i.useMemo(() => !!H && new URL(T).pathname.endsWith(".gif"), [H, T]), X = i.useMemo(() => {
+    if (null != L) return e => {
+      L(e), (0, m.KX)(D.id, D.linkType, m.j_.CONTENT, D.referrerId, D.activityCustomId)
+    }
+  }, [L, D]), Q = i.useMemo(() => {
+    if (null != x) return e => {
+      x(e), (0, m.KX)(D.id, D.linkType, m.j_.BANNER, D.referrerId, D.activityCustomId)
+    }
+  }, [x, D]);
+  return (0, r.jsxs)("div", {
+    ref: B,
+    className: b.embed,
+    children: [Y && (0, r.jsxs)(A, {
+      onClick: Q,
+      className: a()(b.bannerWrapper, W, {
+        [b.showVideoOnFocus]: H
+      }),
+      children: [H && (q ? (0, r.jsx)("div", {
+        className: b.videoBanner,
+        style: {
+          backgroundImage: "url(".concat(T, ")")
+        }
+      }) : (0, r.jsx)(_.Z, {
+        ref: K,
+        src: T,
+        mediaLayoutType: g.hV.MOSAIC,
+        loop: true,
+        muted: true,
+        className: b.videoBanner
+      })), V && (0, r.jsx)("div", {
+        className: b.staticBanner,
+        style: {
+          backgroundImage: "url(".concat(y, ")")
+        },
+        onTransitionEnd: z
+      })]
+    }), (0, r.jsxs)("div", {
+      style: {
+        background: j
+      },
+      children: [(0, r.jsxs)("div", {
+        className: b.contentContainer,
+        children: [null != n && (0, r.jsxs)("div", {
+          className: b.header,
+          children: [(0, r.jsx)(c.Text, {
+            variant: "text-sm/semibold",
+            color: "none",
+            children: n
+          }), null != Z ? Z : F]
+        }), (0, r.jsxs)("div", {
+          className: b.contentAndCopyButtonWrapper,
+          children: [(0, r.jsxs)(A, {
+            onClick: X,
+            className: a()(b.contentWrapper, {
+              [b.contentWrapperClickable]: null != X
+            }),
+            children: [null != C && (0, r.jsx)("div", {
+              className: b.img,
+              style: {
+                backgroundImage: "url(".concat(C, ")")
+              }
+            }), (0, r.jsxs)("div", {
+              className: b.content,
+              children: [(0, r.jsx)(c.Text, {
+                variant: "text-md/semibold",
+                color: "none",
+                lineClamp: 1,
+                className: b.contentTitle,
+                children: t
+              }), (0, r.jsx)("div", {
+                className: b.contentInfoWrapper,
+                children: p
+              })]
+            })]
+          }), null == n && (null != Z ? Z : F)]
+        }), w.length > 0 && (0, r.jsx)("div", {
+          className: b.actionWrapper,
+          children: w.map((e, t) => {
+            let {
+              label: n,
+              icon: i,
+              onClick: o,
+              disabledReason: a,
+              submitting: s,
+              trackingArea: u
+            } = e, d = null != a, f = 0 === t, _ = null != i ? (0, r.jsxs)(r.Fragment, {
+              children: [i, (0, r.jsx)("span", {
+                children: n
+              })]
+            }) : n, p = {
+              color: f ? l.zx.Colors.WHITE : l.zx.Colors.TRANSPARENT,
+              className: f ? b.primaryButton : b.alwaysWhiteText,
+              disabled: d,
+              submitting: s,
+              children: _,
+              onClick(e) {
+                o(e), (0, m.KX)(D.id, D.linkType, u, D.referrerId, D.activityCustomId)
+              }
+            };
+            return d ? (0, r.jsx)(c.ua7, {
+              text: a,
+              children: e => {
+                var t = O({}, v(e));
+                return (0, r.jsx)(l.zx, I({}, p, t))
+              }
+            }, n) : (0, r.jsx)(l.zx, I({}, p), n)
+          })
+        })]
+      }), null != o && o]
+    })]
+  })
+}

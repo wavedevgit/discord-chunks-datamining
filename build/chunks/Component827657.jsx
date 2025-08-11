@@ -1,0 +1,41 @@
+/** Chunk was on 6850 **/
+/** chunk id: 827657, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
+  Z: () => d
+});
+var Chunk255367 = require("./255367.js"),
+  Chunk73800 = require("./73800.js"),
+  Chunk481060 = require("./481060.js"),
+  Chunk994463 = require("./994463.jsx"),
+  Chunk472596 = require("./472596.js"),
+  Chunk918192 = require("./918192.jsx"),
+  Chunk388032 = require("./388032.jsx"),
+  Chunk128863 = require("./128863.js");
+
+function d(e) {
+  let {
+    searchState: t
+  } = e, n = l.useMemo(() => ({
+    [a.po.LOADING]: null,
+    [a.po.SUCCESS_STILL_INDEXING]: {
+      icon: (0, r.jsx)(i.Z, {}),
+      message: c.intl.string(c.t.AXPbZm)
+    },
+    [a.po.SUCCESS_EMPTY]: {
+      icon: (0, r.jsx)(s.Z, {}),
+      message: c.intl.string(c.t["wdyR5+"])
+    },
+    [a.po.SUCCESS_FULL]: null
+  }), [])[t];
+  return null == n ? null : (0, r.jsxs)("div", {
+    className: u.noResultsContainer,
+    children: [(0, r.jsx)("div", {
+      className: u.__invalid_noResultsIconContainer,
+      children: n.icon
+    }), (0, r.jsx)(o.Text, {
+      variant: "text-md/normal",
+      color: "text-muted",
+      children: n.message
+    })]
+  })
+}

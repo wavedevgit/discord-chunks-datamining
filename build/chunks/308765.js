@@ -151,7 +151,7 @@ let i = {
   },
   LoginRequiredActionManager: {
     actions: ["POST_CONNECTION_OPEN"],
-    inlineRequire: () => require("./858386.js").Z
+    inlineRequire: () => require("./858386.jsx").Z
   },
   MemberSafetySearchManager: {
     actions: ["INITIALIZE_MEMBER_SAFETY_STORE", "GUILD_DELETE", "MEMBER_SAFETY_SEARCH_STATE_UPDATE", "MEMBER_SAFETY_PAGINATION_UPDATE", "MEMBER_SAFETY_GUILD_MEMBER_SEARCH_SUCCESS", "MEMBER_SAFETY_GUILD_MEMBER_SEARCH_STILL_INDEXING", "MEMBER_SAFETY_NEW_MEMBER_TIMESTAMP_REFRESH"],
@@ -271,7 +271,7 @@ let i = {
   },
   UrgentSystemDMManagerBase: {
     actions: ["POST_CONNECTION_OPEN", "MESSAGE_CREATE", "CHANNEL_SELECT"],
-    inlineRequire: () => require("./559523.js").Z,
+    inlineRequire: () => require("./559523.jsx").Z,
     neverLoadBeforeConnectionOpen: true
   },
   UserGuildSettingsManager: {
@@ -337,7 +337,7 @@ let i = {
   },
   NotificationMigrationManager: {
     actions: ["POST_CONNECTION_OPEN"],
-    inlineRequire: () => require("./392888.js").Z
+    inlineRequire: () => require("./392888.jsx").Z
   },
   UnreadSettingsManager: {
     actions: ["GUILD_CREATE", "POST_CONNECTION_OPEN"],
@@ -451,7 +451,7 @@ let i = {
   },
   ApplicationStreamingManager: {
     actions: ["STREAM_WATCH", "STREAM_START", "STREAM_CREATE", "STREAM_UPDATE", "STREAM_DELETE", "STREAM_CLOSE", "CALL_UPDATE", "CHANNEL_UPDATES", "VOICE_CHANNEL_SELECT", "VOICE_STATE_UPDATES"],
-    inlineRequire: () => require("./981283.js").Z,
+    inlineRequire: () => require("./981283.jsx").Z,
     neverLoadBeforeConnectionOpen: true
   },
   LibdiscoreExperimentManager: {

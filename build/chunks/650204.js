@@ -11,7 +11,7 @@ let o = new Chunk710845.Z("libdiscore");
     o.error("Failed to initialize libdiscore", module)
   }
   try {
-    require("./750081.js")
+    require("./750081.jsx")
   } finally {
     require("./998502.js").ZP.indexLoadedAsync()
   }

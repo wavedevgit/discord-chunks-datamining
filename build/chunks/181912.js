@@ -8,14 +8,14 @@ var Chunk26151 = require("./26151.js"),
   Chunk287734 = require("./287734.js"),
   Chunk43267 = require("./43267.js"),
   Chunk933557 = require("./933557.js"),
-  Chunk593481 = require("./593481.js"),
+  Chunk593481 = require("./593481.jsx"),
   Chunk614554 = require("./614554.js"),
   Chunk699516 = require("./699516.js"),
   Chunk594174 = require("./594174.js"),
   Chunk312839 = require("./312839.js"),
   Chunk981631 = require("./981631.js"),
   Chunk987650 = require("./987650.js"),
-  Chunk388032 = require("./388032.js");
+  Chunk388032 = require("./388032.jsx");
 
 function m(e) {
   let t = (0, s.F6)(e, u.default, d.Z),

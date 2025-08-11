@@ -12,7 +12,7 @@ require.d(exports, {
 var Chunk149765 = require("./149765.js"),
   Chunk700785 = require("./700785.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk388032 = require("./388032.js"),
+  Chunk388032 = require("./388032.jsx"),
   s = function(e) {
     return e[e.GUILD = 0] = "GUILD", e[e.GUILD_SCHEDULED_EVENT = 1] = "GUILD_SCHEDULED_EVENT", e
   }({}),

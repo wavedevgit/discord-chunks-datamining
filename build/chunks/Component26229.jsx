@@ -1,0 +1,22 @@
+/** Chunk was on 63141 **/
+/** chunk id: 26229, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
+  Z: () => r
+});
+var Chunk255367 = require("./255367.js");
+let r = require("./73800.js").memo(function(e) {
+  let {
+    layout: t,
+    layoutSize: n,
+    className: r,
+    renderWidget: o
+  } = e;
+  return null != t ? (0, i.jsx)("div", {
+    className: r,
+    style: {
+      width: n.width,
+      height: n.height
+    },
+    children: t.widgets.map(e => o(e, n))
+  }) : null
+})

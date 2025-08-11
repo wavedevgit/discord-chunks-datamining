@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk475179 = require("./475179.js"),
   Chunk904245 = require("./904245.js"),
   Chunk166459 = require("./166459.js"),
-  Chunk531643 = require("./531643.js"),
+  Chunk531643 = require("./531643.jsx"),
   Chunk141795 = require("./141795.js"),
   Chunk476326 = require("./476326.js"),
   Chunk367907 = require("./367907.js"),
@@ -23,7 +23,7 @@ var Chunk475179 = require("./475179.js"),
   Chunk981631 = require("./981631.js"),
   Chunk959517 = require("./959517.js"),
   Chunk474936 = require("./474936.js"),
-  Chunk388032 = require("./388032.js");
+  Chunk388032 = require("./388032.jsx");
 
 function v(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {

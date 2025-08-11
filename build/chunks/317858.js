@@ -19,7 +19,7 @@ var Chunk73800 = require("./73800.js"),
   Chunk998502 = require("./998502.js"),
   Chunk252618 = require("./252618.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk388032 = require("./388032.js");
+  Chunk388032 = require("./388032.jsx");
 let E = new Set(["Blink", "Gecko", "WebKit"]),
   y = Chunk981631.dG4;
 if (Chunk358085.isPlatformEmbedded) y = e => m.ZP.setBadge(e);

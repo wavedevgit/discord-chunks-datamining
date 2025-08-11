@@ -6,7 +6,7 @@ require.d(exports, {
   l: () => o
 });
 var Chunk485386 = require("./485386.js"),
-  Chunk388032 = require("./388032.js");
+  Chunk388032 = require("./388032.jsx");
 let o = e => {
     switch (e) {
       case "home":

@@ -4,7 +4,7 @@ require.d(exports, {
   Ib: () => s,
   hq: () => r
 });
-var Chunk388032 = require("./388032.js");
+var Chunk388032 = require("./388032.jsx");
 let r = {
     above_the_clouds: {
       preset: "above_the_clouds",

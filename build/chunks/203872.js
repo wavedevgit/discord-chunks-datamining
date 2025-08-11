@@ -10,7 +10,7 @@ var Chunk73800 = require("./73800.js"),
   Chunk242824 = require("./242824.js"),
   Chunk660662 = require("./660662.js"),
   Chunk698282 = require("./698282.js"),
-  Chunk388032 = require("./388032.js");
+  Chunk388032 = require("./388032.jsx");
 let u = {
     [Chunk522942.m.SOLID]: Chunk698282.default.OpWJ3d,
     [Chunk522942.m.GRADIENT]: Chunk698282.default["i9e/u7"],

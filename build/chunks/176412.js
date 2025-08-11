@@ -15,11 +15,11 @@ var Chunk73800 = require("./73800.js"),
   Chunk755721 = require("./755721.js"),
   Chunk2052 = require("./2052.js"),
   Chunk542094 = require("./542094.js"),
-  Chunk513202 = require("./513202.js"),
+  Chunk513202 = require("./513202.jsx"),
   Chunk367907 = require("./367907.js"),
   Chunk213459 = require("./213459.js"),
   Chunk895924 = require("./895924.js"),
-  Chunk691424 = require("./691424.js"),
+  Chunk691424 = require("./691424.jsx"),
   Chunk428595 = require("./428595.js"),
   Chunk364458 = require("./364458.js"),
   Chunk585483 = require("./585483.js"),
@@ -28,7 +28,7 @@ var Chunk73800 = require("./73800.js"),
   Chunk827498 = require("./827498.js"),
   Chunk346683 = require("./346683.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk388032 = require("./388032.js");
+  Chunk388032 = require("./388032.jsx");
 
 function S(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {

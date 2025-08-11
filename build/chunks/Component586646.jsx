@@ -1,0 +1,74 @@
+/** Chunk was on 82096 **/
+/** chunk id: 586646, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
+  Z: () => O
+});
+var Chunk255367 = require("./255367.js"),
+  Chunk73800 = require("./73800.js"),
+  Chunk442837 = require("./442837.js"),
+  Chunk481060 = require("./481060.js"),
+  Chunk19780 = require("./19780.js"),
+  Chunk571826 = require("./571826.js"),
+  Chunk630759 = require("./630759.js"),
+  Chunk301107 = require("./301107.js"),
+  Chunk785792 = require("./785792.jsx"),
+  Chunk190054 = require("./190054.jsx"),
+  Chunk760373 = require("./760373.js"),
+  Chunk388032 = require("./388032.jsx"),
+  Chunk764229 = require("./764229.js");
+
+function O(e) {
+  let {
+    channelId: t
+  } = e, n = (0, i.e7)([s.Z], () => {
+    var e;
+    return null == (e = s.Z.getSecureFramesState()) ? true : e.epochAuthenticator
+  }), O = (0, u.W)({
+    fingerprintBase64: n,
+    chunkSize: h.y6,
+    desiredLength: h.YP
+  }), N = l.useCallback(() => {
+    (0, a.PM)({
+      channelId: t
+    })
+  }, [t]);
+  return (0, r.jsxs)("div", {
+    className: p.container,
+    children: [(0, r.jsxs)("div", {
+      className: p.tag,
+      children: [(0, r.jsx)(o.mBM, {
+        size: "xxs",
+        color: o.TVs.colors.TEXT_FEEDBACK_POSITIVE
+      }), (0, r.jsx)(o.Text, {
+        variant: "text-xs/medium",
+        color: "text-feedback-positive",
+        children: g.intl.string(g.t["3BogKS"])
+      })]
+    }), (0, r.jsx)(o.Text, {
+      variant: "text-xs/normal",
+      color: "text-secondary",
+      children: g.intl.string(g.t.B9JNsr)
+    }), (0, r.jsxs)("div", {
+      className: p.header,
+      children: [(0, r.jsx)(o.X6q, {
+        variant: "text-sm/bold",
+        color: "header-primary",
+        children: g.intl.string(g.t.cTQI5u)
+      }), null != O && (0, r.jsx)(f.H, {
+        chunks: O,
+        color: o.TVs.colors.INTERACTIVE_NORMAL.css,
+        onCopy: N
+      })]
+    }), (0, r.jsx)(d.b, {
+      className: p.code,
+      chunks: O,
+      columns: h.WK
+    }), (0, r.jsx)(o.Text, {
+      variant: "text-xs/normal",
+      color: "text-secondary",
+      children: g.intl.format(g.t.wKxADQ, {
+        helpArticle: (0, c.uV)()
+      })
+    })]
+  })
+}

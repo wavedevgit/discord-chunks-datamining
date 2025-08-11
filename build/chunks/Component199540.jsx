@@ -1,0 +1,186 @@
+/** Chunk was on 34779 **/
+/** chunk id: 199540, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
+  Z: () => b
+}), require("./388685.js");
+var Chunk255367 = require("./255367.js"),
+  Chunk73800 = require("./73800.js"),
+  Chunk120356 = require("./120356.js"),
+  o = require.n(Chunk120356),
+  Chunk442837 = require("./442837.js"),
+  Chunk481060 = require("./481060.js"),
+  Chunk377171 = require("./377171.js"),
+  Chunk565138 = require("./565138.jsx"),
+  Chunk430824 = require("./430824.js"),
+  Chunk674552 = require("./674552.jsx"),
+  Chunk388032 = require("./388032.jsx"),
+  Chunk728492 = require("./728492.js");
+
+function g(e) {
+  let {
+    guildId: t,
+    animate: n
+  } = e, i = (0, s.e7)([d.Z], () => d.Z.getGuild(t), [t]), l = (0, a.dQu)(a.TVs.modules.guildbar.AVATAR_SIZE);
+  return null == i ? (0, r.jsx)("div", {
+    className: o()(f.folderPreviewGuildIcon, f.folderPreviewGuildIconError),
+    children: (0, r.jsx)(a.Mgn, {
+      color: "currentColor"
+    })
+  }) : (0, r.jsx)(u.Z, {
+    guild: i,
+    animate: n,
+    size: u.Z.Sizes.MINI,
+    iconSize: l,
+    lossless: true,
+    className: f.folderPreviewGuildIcon,
+    tabIndex: false
+  })
+}
+
+function m(e) {
+  let {
+    folderNode: t,
+    hovered: n,
+    sorting: i
+  } = e, {
+    children: l
+  } = t, s = n && i, c = (0, r.jsx)("div", {
+    className: f.folderIconWrapper,
+    children: (0, r.jsx)("div", {
+      className: f.folderIcon,
+      children: (0, r.jsx)(a.ROc, {
+        size: "sm",
+        color: "currentColor"
+      })
+    })
+  }), u = (0, r.jsx)("div", {
+    className: f.folderPreviewWrapper,
+    children: (0, r.jsx)("div", {
+      className: f.folderPreview,
+      children: l.slice(0, 4).map(e => (0, r.jsx)(g, {
+        guildId: e.id,
+        animate: n
+      }, e.id))
+    })
+  });
+  return (0, r.jsxs)("div", {
+    "aria-hidden": true,
+    className: o()({
+      [f.folderDragPreview]: s,
+      [f.folderButtonContent]: !s
+    }),
+    children: [!s && c, u]
+  })
+}
+
+function b(e) {
+  var t, n;
+  let {
+    folderNode: l,
+    expanded: o,
+    sorting: s,
+    mediaState: u,
+    mentionCount: d = 0,
+    isMentionLowImportance: g,
+    tooltipName: b,
+    folderGroupId: O,
+    folderButtonContent: _,
+    onClick: y,
+    onContextMenu: C,
+    onHoverChange: v,
+    onKeyDown: j,
+    treeItemProps: {
+      onFocus: E
+    },
+    "aria-setsize": S,
+    "aria-posinset": x
+  } = e, I = function(e, t) {
+    if (null == e) return {};
+    var n, r, i = function(e, t) {
+      if (null == e) return {};
+      var n, r, i = {},
+        l = Object.keys(e);
+      for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+      return i
+    }(e, t);
+    if (Object.getOwnPropertySymbols) {
+      var l = Object.getOwnPropertySymbols(e);
+      for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    }
+    return i
+  }(e.treeItemProps, ["onFocus"]), [P, N] = i.useState(false), w = i.useCallback(() => {
+    s || N(true), null == v || v(true)
+  }, [s, v]), Z = i.useCallback(() => {
+    s || N(false), null == v || v(false)
+  }, [s, v]), T = o || null == u ? null : (0, h.Or)(u), A = !o && d > 0 ? (0, h.Ne)(d, g ? c.Z.BACKGROUND_ACCENT : c.Z.STATUS_DANGER) : null;
+  return (0, r.jsx)(a.tEY, {
+    children: (0, r.jsx)(a.P3F, (t = function(e) {
+      for (var t = 1; t < arguments.length; t++) {
+        var n = null != arguments[t] ? arguments[t] : {},
+          r = Object.keys(n);
+        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+          return Object.getOwnPropertyDescriptor(n, e).enumerable
+        }))), r.forEach(function(t) {
+          var r;
+          r = n[t], t in e ? Object.defineProperty(e, t, {
+            value: r,
+            enumerable: true,
+            configurable: true,
+            writable: true
+          }) : e[t] = r
+        })
+      }
+      return e
+    }({
+      className: f.folderButton,
+      onClick: y,
+      onContextMenu: C,
+      onMouseEnter: w,
+      onMouseLeave: Z,
+      onKeyDown: j,
+      onFocus: E,
+      focusProps: {
+        enabled: false
+      }
+    }, I), n = n = {
+      role: "treeitem",
+      "aria-setsize": S,
+      "aria-posinset": x,
+      "aria-expanded": o,
+      "aria-owns": O,
+      children: (0, r.jsxs)(a.aRk, {
+        isFolder: true,
+        upperBadge: T,
+        lowerBadge: A,
+        lowerBadgeSize: {
+          width: (0, a.OVM)(d)
+        },
+        children: [(0, r.jsx)(a.nn4, {
+          children: p.intl.formatToPlainString(p.t["90/DwM"], {
+            folderName: b,
+            mentions: d
+          })
+        }), (0, r.jsx)("div", {
+          className: f.folderButtonInner,
+          children: null != _ ? (0, r.jsx)("div", {
+            className: f.folderIconWrapper,
+            children: _
+          }) : (0, r.jsx)(m, {
+            folderNode: l,
+            hovered: P,
+            sorting: s
+          })
+        })]
+      })
+    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
+      var n = Object.keys(e);
+      if (Object.getOwnPropertySymbols) {
+        var r = Object.getOwnPropertySymbols(e);
+        n.push.apply(n, r)
+      }
+      return n
+    })(Object(n)).forEach(function(e) {
+      Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
+    }), t))
+  })
+}

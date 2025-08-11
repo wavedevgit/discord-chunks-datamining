@@ -22,7 +22,7 @@ var Chunk581364 = require("./581364.js"),
   Chunk727072 = require("./727072.js"),
   Chunk85960 = require("./85960.js"),
   Chunk273504 = require("./273504.js"),
-  Chunk388032 = require("./388032.js");
+  Chunk388032 = require("./388032.jsx");
 let d = (e, t) => "".concat(e, "-").concat(t, "-new-rule"),
   f = e => (null == e ? true : e.triggerType) === c.fX.KEYWORD,
   _ = e => (null == e ? true : e.triggerType) === c.fX.ML_SPAM,

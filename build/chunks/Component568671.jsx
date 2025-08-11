@@ -1,0 +1,48 @@
+/** Chunk was on 75708 **/
+/** chunk id: 568671, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
+  Z: () => d
+});
+var Chunk255367 = require("./255367.js");
+require("./73800.js");
+var Chunk481060 = require("./481060.js"),
+  Chunk626135 = require("./626135.js"),
+  Chunk292352 = require("./292352.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk916723 = require("./916723.js"),
+  Chunk388032 = require("./388032.jsx");
+
+function d() {
+  return (0, Chunk255367.jsx)(Chunk481060.zxk, {
+    icon: Chunk481060.IkH,
+    variant: "primary",
+    text: Chunk388032.intl.string(Chunk916723.default.Ta9byc),
+    onClick: () => {
+      (0, Chunk481060.ZDy)(async () => {
+        let {
+          default: e
+        } = await Promise.all([require.e("68214"), require.e("90688")]).then(require.bind(require, 978305));
+        return t => (0, i.jsx)(e, function(e) {
+          for (var t = 1; t < arguments.length; t++) {
+            var n = null != arguments[t] ? arguments[t] : {},
+              i = Object.keys(n);
+            "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+              return Object.getOwnPropertyDescriptor(n, e).enumerable
+            }))), i.forEach(function(t) {
+              var i;
+              i = n[t], t in e ? Object.defineProperty(e, t, {
+                value: i,
+                enumerable: true,
+                configurable: true,
+                writable: true
+              }) : e[t] = i
+            })
+          }
+          return e
+        }({}, t))
+      }), Chunk626135.default.track(Chunk981631.rMx.FAMILY_CENTER_ACTION, {
+        action: Chunk292352.YC.ShowQRCodeModal
+      })
+    }
+  })
+}

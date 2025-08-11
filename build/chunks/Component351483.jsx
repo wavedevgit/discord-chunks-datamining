@@ -1,0 +1,34 @@
+/** Chunk was on web.js **/
+/** chunk id: 351483, original params: e,t,n (module,exports,re quire) **/
+"use strict";
+require.d(exports, {
+  Z: () => u
+});
+var Chunk255367 = require("./255367.js");
+require("./73800.js");
+var Chunk120356 = require("./120356.js"),
+  o = require.n(Chunk120356),
+  Chunk112560 = require("./112560.jsx"),
+  Chunk388032 = require("./388032.jsx"),
+  Chunk349525 = require("./349525.js");
+let Chunk978538 = require("./978538.js");
+
+function u(e) {
+  let {
+    width: t,
+    noArt: n = false,
+    selected: i = false
+  } = e;
+  return (0, r.jsx)("div", {
+    className: o()(l.content, l.streamHidden),
+    children: (0, r.jsx)(a.Z, {
+      className: l.streamHiddenEmptyState,
+      artURL: c,
+      noArt: n,
+      selected: i,
+      size: (0, a.L)(t),
+      header: s.intl.string(s.t.wxbmeH),
+      description: s.intl.string(s.t.odF9WF)
+    })
+  })
+}

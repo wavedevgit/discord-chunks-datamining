@@ -1,0 +1,70 @@
+/** Chunk was on 22988 **/
+/** chunk id: 594278, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
+  Z: () => g
+}), require("./388685.js");
+var Chunk255367 = require("./255367.js"),
+  Chunk73800 = require("./73800.js"),
+  Chunk120356 = require("./120356.js"),
+  a = require.n(Chunk120356),
+  Chunk846519 = require("./846519.js"),
+  Chunk481060 = require("./481060.js"),
+  Chunk259580 = require("./259580.jsx"),
+  Chunk81543 = require("./81543.jsx"),
+  Chunk388032 = require("./388032.jsx"),
+  Chunk448533 = require("./448533.js");
+let g = function(e) {
+  let {
+    items: t,
+    carouselClassName: n,
+    paginationCaretClassName: l,
+    intervalBetweenAutomaticItemRotations: g,
+    renderItem: p
+  } = e, h = i.useMemo(() => new s.Xp, []), [f, b] = i.useState(d.n.LEFT), [x, j] = i.useState(0), [v, _] = i.useState(false), [O, y] = i.useState(false), C = i.useCallback((e, t) => {
+    j(n => {
+      let r = n + t;
+      return r < 0 ? r = e.length - 1 : r > e.length - 1 && (r = 0), r
+    })
+  }, [j]), N = i.useCallback(() => {
+    O || C(t, 1)
+  }, [C, t, O]), I = i.useCallback(() => {
+    O || C(t, false)
+  }, [C, t, O]);
+  return i.useEffect(() => {
+    null != g && (v ? v && h.stop() : h.start(g, N))
+  }, [v, h, g, N]), (0, r.jsxs)("div", {
+    className: m.root,
+    onMouseEnter: () => _(true),
+    onMouseLeave: () => _(false),
+    children: [(0, r.jsx)(o.P3F, {
+      className: a()(m.carouselCaret, l),
+      onClick: I,
+      onMouseEnter: () => b(d.n.RIGHT),
+      ignoreKeyPress: O,
+      children: (0, r.jsx)(c.Z, {
+        direction: c.Z.Directions.LEFT,
+        height: 48,
+        width: 48,
+        "aria-label": u.intl.string(u.t.FAmEgo)
+      })
+    }), (0, r.jsx)(d.Z, {
+      step: x,
+      direction: f,
+      onAnimationStart: () => y(true),
+      onAnimationEnd: () => y(false),
+      className: a()(m.carousel, n),
+      children: p(t[x])
+    }), (0, r.jsx)(o.P3F, {
+      className: a()(m.carouselCaret, l),
+      onClick: N,
+      onMouseEnter: () => b(d.n.LEFT),
+      ignoreKeyPress: O,
+      children: (0, r.jsx)(c.Z, {
+        direction: c.Z.Directions.RIGHT,
+        height: 48,
+        width: 48,
+        "aria-label": u.intl.string(u.t.Fa8W1d)
+      })
+    })]
+  })
+}

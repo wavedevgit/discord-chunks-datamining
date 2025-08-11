@@ -13,10 +13,10 @@ require.d(exports, {
 var Chunk692547 = require("./692547.js"),
   Chunk481060 = require("./481060.js"),
   Chunk15385 = require("./15385.jsx"),
-  Chunk123245 = require("./123245.js"),
+  Chunk123245 = require("./123245.jsx"),
   Chunk981631 = require("./981631.js");
 require("./474936.js");
-var Chunk388032 = require("./388032.js");
+var Chunk388032 = require("./388032.jsx");
 let c = () => ({
     color: Chunk692547.Z.unsafe_rawColors.PREMIUM_PERK_GREEN.css,
     icon: Chunk481060.Ka2,

@@ -88,7 +88,7 @@ let S = {
     isNotSupported: N,
     trackToggleSelfMute: C,
     trackToggleSelfDeaf: R
-  } = S = require("./929782.js"),
+  } = S = require("./929782.jsx"),
   P = {
     enable: A,
     toggleSelfMute() {

@@ -4,7 +4,7 @@ require.d(exports, {
   Z: () => l
 });
 var Chunk489887 = require("./489887.js"),
-  Chunk388032 = require("./388032.js");
+  Chunk388032 = require("./388032.jsx");
 
 function l() {
   return Object.freeze({

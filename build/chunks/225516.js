@@ -11,7 +11,7 @@ var Chunk544891 = require("./544891.js"),
   Chunk881052 = require("./881052.js"),
   Chunk482207 = require("./482207.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk388032 = require("./388032.js");
+  Chunk388032 = require("./388032.jsx");
 async function d() {
   if (Chunk482207.Z.shouldFetch) {
     Chunk570140.Z.dispatch({

@@ -1,0 +1,77 @@
+/** Chunk was on web.js **/
+/** chunk id: 540440, original params: e,t,n (module,exports,re quire) **/
+"use strict";
+require.d(exports, {
+  B: () => _,
+  y: () => f
+});
+var Chunk255367 = require("./255367.js");
+require("./73800.js");
+var Chunk442837 = require("./442837.js"),
+  Chunk481060 = require("./481060.js"),
+  Chunk26033 = require("./26033.js"),
+  Chunk594174 = require("./594174.js"),
+  Chunk324745 = require("./324745.js"),
+  Chunk388032 = require("./388032.jsx");
+
+function u(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+
+function d(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      u(e, t, n[t])
+    })
+  }
+  return e
+}
+
+function f(e) {
+  return (0, a.dX)(e) ? c.intl.string(c.t["4f8iur"]) : (0, a.y0)(e) ? c.intl.string(c.t.yX2hNz) : (0, a.kq)(e) ? c.intl.string(c.t.oSs8en) : c.intl.string(c.t.bK9GT0)
+}
+
+function _(e) {
+  let {
+    user: t,
+    entry: c,
+    display: u,
+    onAction: _,
+    onClose: p
+  } = e, h = (0, l.Z)({
+    onClose: p
+  }), m = (0, i.e7)([s.default], () => s.default.getCurrentUser());
+  if (t.id !== (null == m ? true : m.id) || "recent" !== u || !(0, a.Rh)(c)) return null;
+  let g = () => {
+    (0, o.ZDy)(async () => {
+      let {
+        default: e
+      } = await Promise.all([n.e("62880"), n.e("26545")]).then(n.bind(n, 81596));
+      return n => (0, r.jsx)(e, d({
+        entry: c,
+        user: t,
+        onAction: _,
+        onOpenGameSettings: h
+      }, n))
+    })
+  };
+  return (0, r.jsx)(o.sNh, {
+    id: "delete-entry-history",
+    label: f(c),
+    action: () => {
+      null == _ || _({
+        action: "PRESS_DELETE_HISTORY_MENU_ITEM"
+      }), g()
+    },
+    color: "danger"
+  })
+}

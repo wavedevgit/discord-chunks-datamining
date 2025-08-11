@@ -18,7 +18,7 @@ require.d(exports, {
 }), require("./415506.js");
 var Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js"),
-  Chunk388032 = require("./388032.js"),
+  Chunk388032 = require("./388032.jsx"),
   a = function(e) {
     return e[e.RESOLUTION_480 = 480] = "RESOLUTION_480", e[e.RESOLUTION_720 = 720] = "RESOLUTION_720", e[e.RESOLUTION_1080 = 1080] = "RESOLUTION_1080", e[e.RESOLUTION_1440 = 1440] = "RESOLUTION_1440", e[e.RESOLUTION_SOURCE = 0] = "RESOLUTION_SOURCE", e
   }({});

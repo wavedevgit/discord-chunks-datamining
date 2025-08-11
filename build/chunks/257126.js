@@ -11,7 +11,7 @@ require.d(exports, {
   xx: () => u
 }), require("./781311.js"), require("./73800.js");
 var Chunk531578 = require("./531578.js"),
-  Chunk388032 = require("./388032.js");
+  Chunk388032 = require("./388032.jsx");
 let i = "other";
 
 function r(e) {

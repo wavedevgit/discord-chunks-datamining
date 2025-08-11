@@ -10,7 +10,7 @@ var Chunk201895 = require("./201895.js"),
   Chunk594174 = require("./594174.js"),
   Chunk293810 = require("./293810.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk388032 = require("./388032.js");
+  Chunk388032 = require("./388032.jsx");
 
 function u(e) {
   switch (e.ref_type) {

@@ -1,0 +1,91 @@
+/** Chunk was on 49152 **/
+/** chunk id: 66556, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
+  Z: () => g
+}), require("./388685.js");
+var Chunk255367 = require("./255367.js"),
+  Chunk73800 = require("./73800.js"),
+  Chunk442837 = require("./442837.js"),
+  Chunk481060 = require("./481060.js"),
+  Chunk622822 = require("./622822.js"),
+  Chunk665149 = require("./665149.jsx"),
+  Chunk731290 = require("./731290.js"),
+  Chunk594174 = require("./594174.js"),
+  Chunk91159 = require("./91159.js"),
+  Chunk593130 = require("./593130.jsx"),
+  Chunk388032 = require("./388032.jsx"),
+  Chunk522634 = require("./522634.js");
+
+function g(e) {
+  let {
+    channel: t
+  } = e, [n, g] = i.useState(false), m = i.useRef(null), b = (0, l.e7)([c.Z, u.default], () => {
+    let e = u.default.getCurrentUser();
+    return null == e || (0, s.aC)(t) && (!e.nsfwAllowed || !c.Z.didAgree(t.getGuildId()))
+  }, [t]), y = i.useCallback(() => {
+    g(false)
+  }, []), x = i.useCallback(() => {
+    n || (0, d.U4)("Popout"), g(!n)
+  }, [n]);
+  return (0, r.jsx)(a.yRy, {
+    targetElementRef: m,
+    animation: a.yRy.Animation.NONE,
+    position: "bottom",
+    align: "right",
+    autoInvert: false,
+    shouldShow: n,
+    onRequestClose: y,
+    renderPopout: function() {
+      return (0, r.jsx)(a.VqE, {
+        children: (0, r.jsx)(h.Z, {
+          className: f.browser,
+          channel: t,
+          onClose: y
+        })
+      })
+    },
+    clickTrap: true,
+    children: (e, t) => {
+      var n, i;
+      let {
+        isShown: l
+      } = t;
+      return (0, r.jsx)(o.JO, (n = function(e) {
+        for (var t = 1; t < arguments.length; t++) {
+          var n = null != arguments[t] ? arguments[t] : {},
+            r = Object.keys(n);
+          "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+            return Object.getOwnPropertyDescriptor(n, e).enumerable
+          }))), r.forEach(function(t) {
+            var r;
+            r = n[t], t in e ? Object.defineProperty(e, t, {
+              value: r,
+              enumerable: true,
+              configurable: true,
+              writable: true
+            }) : e[t] = r
+          })
+        }
+        return e
+      }({}, e), i = i = {
+        ref: m,
+        className: f.icon,
+        onClick: x,
+        icon: a.or_,
+        "aria-label": p.intl.string(p.t.B2panJ),
+        tooltip: l ? null : p.intl.string(p.t.B2panJ),
+        disabled: b,
+        selected: l
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
+        var n = Object.keys(e);
+        if (Object.getOwnPropertySymbols) {
+          var r = Object.getOwnPropertySymbols(e);
+          n.push.apply(n, r)
+        }
+        return n
+      })(Object(i)).forEach(function(e) {
+        Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(i, e))
+      }), n))
+    }
+  })
+}

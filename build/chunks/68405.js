@@ -32,7 +32,7 @@ var Chunk392711 = require("./392711.js"),
   Chunk668781 = require("./668781.js"),
   Chunk981631 = require("./981631.js"),
   Chunk526761 = require("./526761.js"),
-  Chunk388032 = require("./388032.js");
+  Chunk388032 = require("./388032.jsx");
 
 function O(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {

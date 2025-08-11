@@ -1,0 +1,77 @@
+/** Chunk was on 95468 **/
+/** chunk id: 650233, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
+  H: () => x,
+  default: () => f
+});
+var Chunk255367 = require("./255367.js"),
+  Chunk73800 = require("./73800.js"),
+  Chunk990547 = require("./990547.js"),
+  Chunk481060 = require("./481060.js"),
+  Chunk390885 = require("./390885.js"),
+  Chunk495784 = require("./495784.js"),
+  Chunk950012 = require("./950012.jsx"),
+  Chunk161836 = require("./161836.jsx"),
+  Chunk630724 = require("./630724.js"),
+  Chunk388032 = require("./388032.jsx"),
+  Chunk778360 = require("./778360.js");
+
+function f(e) {
+  let {
+    transitionState: t,
+    onClose: n,
+    isNUXFlow: f
+  } = e;
+  return l.useEffect(() => {
+    o.Z.hideHubUpsell(), f && s.Z.flowStep(u.MK.ORGANIC, u.EW.HUB_CONNECTION)
+  }, [f]), (0, r.jsx)(a.Y0X, {
+    className: h.modalRoot,
+    transitionState: t,
+    "aria-label": m.intl.string(m.t["3khS8P"]),
+    impression: {
+      impressionName: i.ImpressionNames.HUB_EMAIL_SIGNUP
+    },
+    parentComponent: "HubEmailConnectionModal",
+    children: (0, r.jsx)(a.hzk, {
+      style: {
+        overflow: "hidden",
+        paddingRight: "0px"
+      },
+      paddingFix: false,
+      className: h.modalContent,
+      children: (0, r.jsxs)("div", {
+        className: h.container,
+        children: [(0, r.jsx)("div", {
+          className: h.sidebarContainer,
+          children: (0, r.jsx)(d.Z, {})
+        }), (0, r.jsxs)("div", {
+          className: h.contentContainer,
+          children: [(0, r.jsx)(a.olH, {
+            onClick: n,
+            className: h.closeButton
+          }), (0, r.jsx)(c.Z, {
+            isNUXFlow: f,
+            onClose: n
+          })]
+        })]
+      })
+    })
+  })
+}
+let x = e => {
+  let {
+    invite: t
+  } = e;
+  return (0, r.jsxs)("div", {
+    className: h.container,
+    children: [(0, r.jsx)("div", {
+      className: h.sidebarContainer,
+      children: (0, r.jsx)(d.Z, {})
+    }), (0, r.jsx)("div", {
+      className: h.contentContainer,
+      children: (0, r.jsx)(c.Z, {
+        invite: t
+      })
+    })]
+  })
+}

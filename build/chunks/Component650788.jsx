@@ -1,0 +1,144 @@
+/** Chunk was on 78431 **/
+/** chunk id: 650788, original params: e,t,r (module,exports,require) **/
+require.r(exports), require.d(exports, {
+  default: () => U
+});
+var Chunk255367 = require("./255367.js"),
+  Chunk73800 = require("./73800.js"),
+  Chunk120356 = require("./120356.js"),
+  l = require.n(Chunk120356),
+  Chunk990547 = require("./990547.js"),
+  Chunk442837 = require("./442837.js"),
+  Chunk481060 = require("./481060.js"),
+  Chunk213609 = require("./213609.js"),
+  Chunk377171 = require("./377171.js"),
+  Chunk674180 = require("./674180.js"),
+  Chunk38618 = require("./38618.js"),
+  Chunk312217 = require("./312217.jsx"),
+  Chunk623299 = require("./623299.jsx"),
+  Chunk984370 = require("./984370.jsx"),
+  Chunk430824 = require("./430824.js"),
+  Chunk76535 = require("./76535.js"),
+  Chunk423000 = require("./423000.js"),
+  Chunk891561 = require("./891561.jsx"),
+  Chunk847033 = require("./847033.jsx"),
+  Chunk544978 = require("./544978.js"),
+  Chunk154522 = require("./154522.jsx"),
+  Chunk935554 = require("./935554.jsx"),
+  Chunk340529 = require("./340529.jsx"),
+  Chunk175390 = require("./175390.jsx"),
+  Chunk957572 = require("./957572.jsx"),
+  Chunk866104 = require("./866104.jsx"),
+  Chunk886176 = require("./886176.jsx"),
+  Chunk333866 = require("./333866.js"),
+  Chunk176505 = require("./176505.js"),
+  Chunk20281 = require("./20281.js"),
+  Chunk388032 = require("./388032.jsx"),
+  Chunk663457 = require("./663457.js"),
+  Chunk100658 = require("./100658.js");
+
+function E(e) {
+  var t;
+  let {
+    guildId: r,
+    productId: i
+  } = e, {
+    loaded: o,
+    subscriptionsSettings: l
+  } = (0, h.H)(r), s = (0, c.e7)([g.Z], () => g.Z.getGuild(r)), {
+    selectedTab: d,
+    isPhantomPreview: u,
+    categoryTabs: C
+  } = (0, O.m)(), p = !o || null == l;
+  return null == s || !u && p ? (0, n.jsx)(a.$jN, {}) : (0, n.jsx)(x.Z, {
+    defaultSortOption: null != (t = null == l ? true : l.store_page_guild_products_default_sort) ? t : Z.zJ.NAME,
+    children: (0, n.jsxs)("div", {
+      className: k.contentContainer,
+      children: [(0, n.jsx)(L.C, {
+        guild: s,
+        subscriptionsSettings: l
+      }), (0, n.jsx)(a.LZC, {
+        size: 32
+      }), C.length > 0 && (0, n.jsx)(w.z, {
+        guild: s
+      }), (0, n.jsxs)("div", {
+        className: k.tabContainer,
+        children: [(0, n.jsx)(a.LZC, {
+          size: 32
+        }), u && (0, n.jsx)(P.Z, {
+          guildId: r
+        }), d === v.y.GUILD_PRODUCTS && (0, n.jsx)(y.Q, {
+          guildId: r,
+          productId: i
+        }), d === v.y.GUILD_ROLE_SUBSCRIPTIONS && (0, n.jsx)(_.Z, {
+          guildId: r
+        })]
+      })]
+    })
+  })
+}
+
+function M(e) {
+  let {
+    guildId: t,
+    productId: r
+  } = e, o = (0, c.e7)([p.Z], () => p.Z.isConnected()), h = (0, c.e7)([g.Z], () => g.Z.getGuild(t)), {
+    shouldHideGuildPurchaseEntryPoints: x,
+    restrictionsLoading: v
+  } = (0, C.uP)(t), {
+    selectedTab: y,
+    isPhantomPreview: _,
+    categoryTabs: w
+  } = (0, O.m)(), P = o && (null == h || 0 === w.length && !_ || x && !v);
+  return i.useEffect(() => {
+    P && (0, m.M)(t, N.oC.GUILD_SHOP)
+  }, [t, P]), (0, d.Z)({
+    type: D.n.PAGE,
+    name: s.ImpressionNames.GUILD_SHOP_PAGE,
+    properties: {
+      product_id: r,
+      tab: y
+    }
+  }, {
+    disableTrack: P
+  }), (0, n.jsxs)("div", {
+    "data-has-border": true,
+    className: l()(R.chat, k.container),
+    children: [(0, n.jsxs)(j.Z, {
+      children: [(0, n.jsx)(j.Z.Icon, {
+        icon: (0, a.GSL)(I.Z),
+        "aria-hidden": true,
+        color: u.Z.INTERACTIVE_ACTIVE
+      }), (0, n.jsx)(j.Z.Title, {
+        children: T.intl.string(T.t.al5EXF)
+      }), (0, n.jsx)(S.Z, {})]
+    }), (0, n.jsx)(a.u2D, {
+      className: k.content,
+      children: o ? (0, n.jsx)(E, {
+        guildId: t,
+        productId: r
+      }) : (0, n.jsx)(a.$jN, {})
+    }), (0, n.jsx)(b.Z, {
+      className: k.sparkleCloudTop
+    }), (0, n.jsx)(f.Z, {
+      className: k.sparkleCloudBottom
+    })]
+  })
+}
+
+function U(e) {
+  let {
+    guildId: t,
+    productId: r,
+    initialTab: i
+  } = e;
+  return null == i && null != r && (i = v.y.GUILD_PRODUCTS), (0, n.jsx)(O.Z, {
+    initialTab: i,
+    guildId: t,
+    children: (0, n.jsx)(M, {
+      initialTab: i,
+      productId: r,
+      guildId: t
+    })
+  })
+}

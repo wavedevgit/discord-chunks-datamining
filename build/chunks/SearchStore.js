@@ -2,7 +2,7 @@
 /** chunk id: 518944, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => P
+  Z: () => y
 });
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -10,10 +10,9 @@ var r, Chunk442837 = require("./442837.js"),
   Chunk592125 = require("./592125.js"),
   Chunk430824 = require("./430824.js"),
   Chunk945577 = require("./945577.js"),
-  Chunk861262 = require("./861262.js"),
   Chunk981631 = require("./981631.js");
 
-function f(e, t, n) {
+function d(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -21,146 +20,57 @@ function f(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let _ = .05,
-  p = {};
+let f = false,
+  _ = null;
+
+function p(e) {
+  if (null == e);
+  else if (e === u.aib.DMS) return u.aib.DMS;
+  else if (e === u.I_8) return u.aib.FAVORITES;
+  else if (null != l.Z.getGuild(e)) return u.aib.GUILD;
+  else if (null != s.Z.getChannel(e)) return u.aib.CHANNEL;
+  return null
+}
 
 function h(e) {
-  return null == p[e] && (p[e] = {
-    searchId: e,
-    editorState: null,
-    showBlockedResults: false,
-    showNoResultsAlt: false,
-    searchResultsQueryString: null,
-    searchResultsQuery: null,
-    searchResultsOffset: null
-  }), p[e]
+  if (e === _) returnfalse;
+  _ = e
 }
 
-function m(e, t) {
-  let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : null;
-  if (null == e) return n;
-  let r = p[e];
-  return null == r ? n : t(r)
+function m() {
+  f = true, null != _ && p(_) === Chunk981631.aib.CHANNEL && (0, Chunk945577.ad)({
+    location: "SearchStore_handleConnectionOpen"
+  }) && h(Chunk981631.aib.DMS)
 }
-let g = false,
-  E = null;
 
-function b(e) {
+function g(e) {
   let {
-    id: t,
-    editorState: n
+    guildId: t,
+    channelId: n
   } = e;
-  h(t).editorState = n
+  null != t ? h(t) : (0, c.ad)({
+    location: "SearchStore_handleChannelSelect",
+    autoTrackExposure: f
+  }) ? h(u.aib.DMS) : h(n)
 }
 
-function y(e) {
+function E(e) {
   let {
     id: t
   } = e;
   h(t)
 }
-
-function O(e) {
-  let {
-    id: t
-  } = e;
-  if (null == p[t]) returnfalse;
-  delete p[t]
-}
-
-function v(e) {
-  if (e === E) returnfalse;
-  null != e && null == p[e] && h(e), E = e
-}
-
-function I() {
-  g = true, null != E && (0, Chunk861262.g)(E) === Chunk981631.aib.CHANNEL && (0, Chunk945577.ad)({
-    location: "SearchStore_handleConnectionOpen"
-  }) && v(Chunk981631.aib.DMS)
-}
-
-function T(e) {
-  let {
-    guildId: t,
-    channelId: n
-  } = e;
-  null != t ? v(t) : (0, c.ad)({
-    location: "SearchStore_handleChannelSelect",
-    autoTrackExposure: g
-  }) ? v(d.aib.DMS) : v(n)
-}
-
-function S(e) {
-  let {
-    id: t
-  } = e;
-  v(t)
-}
-
-function A(e) {
-  let {
-    id: t,
-    showBlocked: n
-  } = e;
-  h(t).showBlockedResults = n
-}
-
-function N(e) {
-  let {
-    id: t
-  } = e;
-  h(t).showNoResultsAlt = Math.random() < _
-}
-
-function C(e) {
-  let {
-    id: t,
-    queryString: n,
-    query: r,
-    offset: i
-  } = e, o = h(t);
-  o.searchResultsQueryString = n, o.searchResultsQuery = r, o.searchResultsOffset = null != i ? i : 0
-}
-class R extends(r = Chunk442837.ZP.Store) {
+class b extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk430824.Z, Chunk592125.Z, Chunk353926.Z)
   }
-  getCurrentSearchId() {
-    return E
-  }
-  getEditorState(e) {
-    return m(e, e => e.editorState)
-  }
-  shouldShowBlockedResults(e) {
-    var t;
-    return null != (t = m(e, e => e.showBlockedResults, false)) && t
-  }
-  shouldShowNoResultsAlt(e) {
-    var t;
-    return null != (t = m(e, e => e.showNoResultsAlt, false)) && t
-  }
-  getSearchResultsQueryString(e) {
-    return m(e, e => e.searchResultsQueryString)
-  }
-  getSearchResultsQuery(e) {
-    return m(e, e => e.searchResultsQuery)
-  }
-  getSearchResultsOffset(e) {
-    return m(e, e => e.searchResultsOffset)
-  }
-  hasSearchState(e) {
-    return null != e && null != p[e]
+  getSelectedSearchContextId() {
+    return _
   }
 }
-f(R, "displayName", "SearchStore");
-let P = new R(Chunk570140.Z, {
-  CONNECTION_OPEN: I,
-  SEARCH_RESULTS_QUERY_UPDATE: C,
-  SEARCH_EDITOR_STATE_CLEAR: O,
-  SEARCH_ENSURE_SEARCH_STATE: y,
-  SEARCH_EDITOR_STATE_CHANGE: b,
-  SEARCH_SET_SHOW_BLOCKED_RESULTS: A,
-  SEARCH_SET_SHOW_NO_RESULTS_ALT: N,
-  SEARCH_SCREEN_OPEN: S,
-  CHANNEL_SELECT: T
+d(b, "displayName", "SearchStore");
+let y = new b(Chunk570140.Z, {
+  CONNECTION_OPEN: m,
+  SEARCH_SCREEN_OPEN: E,
+  CHANNEL_SELECT: g
 })

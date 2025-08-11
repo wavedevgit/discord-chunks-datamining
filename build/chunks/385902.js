@@ -17,7 +17,7 @@ var Chunk73800 = require("./73800.js"),
   Chunk279604 = require("./279604.jsx"),
   Chunk535396 = require("./535396.js"),
   Chunk93841 = require("./93841.js"),
-  Chunk388032 = require("./388032.js");
+  Chunk388032 = require("./388032.jsx");
 
 function b(e, t) {
   let n = (0, l.e7)([a.Z], () => a.Z.getStateForGuild(e)),

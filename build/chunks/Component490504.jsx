@@ -1,0 +1,29 @@
+/** Chunk was on web.js **/
+/** chunk id: 490504, original params: e,t,n (module,exports,re quire) **/
+"use strict";
+require.d(exports, {
+  Z: () => a
+});
+var Chunk255367 = require("./255367.js");
+require("./73800.js");
+var Chunk481060 = require("./481060.js"),
+  Chunk903748 = require("./903748.js");
+let a = function(e) {
+  let {
+    message: t
+  } = e;
+  return (0, r.jsxs)("div", {
+    className: o.container,
+    children: [(0, r.jsx)(i.d3s, {
+      size: "custom",
+      className: o.icon,
+      width: 20,
+      height: 20,
+      color: i.TVs.colors.TEXT_FEEDBACK_WARNING
+    }), (0, r.jsx)(i.Text, {
+      variant: "text-sm/normal",
+      color: "header-muted",
+      children: t
+    })]
+  })
+}

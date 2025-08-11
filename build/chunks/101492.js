@@ -5,7 +5,7 @@ require.d(exports, {
 });
 var Chunk442837 = require("./442837.js"),
   Chunk674525 = require("./674525.js"),
-  Chunk388032 = require("./388032.js");
+  Chunk388032 = require("./388032.jsx");
 let a = {
   title: () => Chunk388032.intl.string(Chunk388032.t["KzCF//"]),
   description: () => Chunk388032.intl.string(Chunk388032.t["1ScBCw"]),

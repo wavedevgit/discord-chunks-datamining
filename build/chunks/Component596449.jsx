@@ -1,0 +1,70 @@
+/** Chunk was on 49152 **/
+/** chunk id: 596449, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
+  Z: () => c
+});
+var Chunk255367 = require("./255367.js");
+require("./73800.js");
+var Chunk692547 = require("./692547.js"),
+  Chunk481060 = require("./481060.js"),
+  Chunk576749 = require("./576749.js"),
+  Chunk688641 = require("./688641.jsx"),
+  Chunk388032 = require("./388032.jsx");
+
+function c(e) {
+  let {
+    className: t,
+    guildId: c
+  } = e, u = (0, a.Z)();
+  return (0, r.jsx)(s.Z, {
+    className: t,
+    icon: (0, r.jsx)(l.Que, {
+      size: "custom",
+      color: "currentColor",
+      height: 20,
+      width: 20
+    }),
+    color: i.Z.unsafe_rawColors.BRAND_500.css,
+    title: o.intl.string(o.t["60lJ0N"]),
+    description: o.intl.string(o.t["EYn7//"]),
+    onClick: function() {
+      (0, l.ZDy)(async () => {
+        let {
+          default: e
+        } = await Promise.all([n.e("22347"), n.e("82758"), n.e("58023"), n.e("82875")]).then(n.bind(n, 779250));
+        return t => {
+          var n, i;
+          return (0, r.jsx)(e, (n = function(e) {
+            for (var t = 1; t < arguments.length; t++) {
+              var n = null != arguments[t] ? arguments[t] : {},
+                r = Object.keys(n);
+              "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+                return Object.getOwnPropertyDescriptor(n, e).enumerable
+              }))), r.forEach(function(t) {
+                var r;
+                r = n[t], t in e ? Object.defineProperty(e, t, {
+                  value: r,
+                  enumerable: true,
+                  configurable: true,
+                  writable: true
+                }) : e[t] = r
+              })
+            }
+            return e
+          }({}, t), i = i = {
+            guildId: c
+          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
+            var n = Object.keys(e);
+            if (Object.getOwnPropertySymbols) {
+              var r = Object.getOwnPropertySymbols(e);
+              n.push.apply(n, r)
+            }
+            return n
+          })(Object(i)).forEach(function(e) {
+            Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(i, e))
+          }), n))
+        }
+      }, u)
+    }
+  })
+}

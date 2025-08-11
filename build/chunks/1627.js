@@ -9,7 +9,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk302155 = require("./302155.js"),
   Chunk71509 = require("./71509.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk388032 = require("./388032.js");
+  Chunk388032 = require("./388032.jsx");
 let c = new Chunk302155.Z({
   onSwitchSuccess(e, t) {
     setTimeout(() => {

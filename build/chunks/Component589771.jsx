@@ -1,0 +1,84 @@
+/** Chunk was on 86513 **/
+/** chunk id: 589771, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
+  Z: () => d
+}), require("./388685.js");
+var Chunk255367 = require("./255367.js"),
+  Chunk73800 = require("./73800.js"),
+  Chunk89057 = require("./89057.jsx"),
+  Chunk509545 = require("./509545.js"),
+  Chunk74538 = require("./74538.js"),
+  Chunk987209 = require("./987209.jsx"),
+  Chunk563132 = require("./563132.jsx"),
+  Chunk456251 = require("./456251.jsx");
+
+function d(e) {
+  let {
+    initialStep: t,
+    initialPlanId: n,
+    guildId: d,
+    setAnalyticsData: m,
+    handleClose: f
+  } = e, {
+    blockedPayments: p,
+    setStep: b,
+    hasFetchedSubscriptions: h,
+    hasFetchedSubscriptionPlans: g,
+    currencyLoading: x,
+    selectedSkuId: v,
+    setSelectedSkuId: j,
+    setSelectedPlanId: y,
+    priceOptions: C,
+    setSubscriptionMetadataRequest: O
+  } = (0, c.JL)(), {
+    isGift: S
+  } = (0, s.wD)(), [P, N] = r.useState(!h || !g || x);
+  return (r.useEffect(() => {
+    N(!h || !g || x)
+  }, [x, g, h]), r.useEffect(() => {
+    null != d && O({
+      guild_id: d
+    })
+  }, [d, O]), r.useEffect(() => {
+    y(n);
+    let e = null != n ? a.Z.get(n) : null;
+    P || p || (m(t => {
+      var n, i;
+      let r = null != e ? (0, o.aS)(e.id, false, S, C) : true;
+      return n = function(e) {
+        for (var t = 1; t < arguments.length; t++) {
+          var n = null != arguments[t] ? arguments[t] : {},
+            i = Object.keys(n);
+          "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+            return Object.getOwnPropertyDescriptor(n, e).enumerable
+          }))), i.forEach(function(t) {
+            var i;
+            i = n[t], t in e ? Object.defineProperty(e, t, {
+              value: i,
+              enumerable: true,
+              configurable: true,
+              writable: true
+            }) : e[t] = i
+          })
+        }
+        return e
+      }({}, t), i = i = {
+        subscription_plan_id: null == e ? true : e.id,
+        price: null == r ? true : r.amount,
+        regular_price: null == e ? true : e.price,
+        currency: C.currency
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
+        var n = Object.keys(e);
+        if (Object.getOwnPropertySymbols) {
+          var i = Object.getOwnPropertySymbols(e);
+          n.push.apply(n, i)
+        }
+        return n
+      })(Object(i)).forEach(function(e) {
+        Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(i, e))
+      }), n
+    }), null != e && (j(null == e ? true : e.skuId), b(t)))
+  }, [p, n, S, P, C, v, m, y, j, b, t]), P) ? (0, i.jsx)(u.Z, {}) : p ? (0, i.jsx)(l.Vq, {
+    onClose: f
+  }) : null
+}

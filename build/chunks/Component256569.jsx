@@ -1,0 +1,167 @@
+/** Chunk was on 22988 **/
+/** chunk id: 256569, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
+  Z: () => f
+}), require("./388685.js"), require("./358797.js");
+var Chunk255367 = require("./255367.js"),
+  Chunk73800 = require("./73800.js"),
+  Chunk120356 = require("./120356.js"),
+  a = require.n(Chunk120356),
+  Chunk481060 = require("./481060.js"),
+  Chunk110924 = require("./110924.js"),
+  Chunk347469 = require("./347469.js"),
+  Chunk853276 = require("./853276.jsx"),
+  Chunk596390 = require("./596390.js"),
+  Chunk870472 = require("./870472.js"),
+  Chunk673569 = require("./673569.js");
+
+function p(e) {
+  let {
+    resizableNode: t,
+    onResize: n,
+    onResizeEnd: i
+  } = e, l = (0, c.Z)({
+    minDimension: u.tq,
+    resizableDomNodeRef: t,
+    onElementResize: n,
+    onElementResizeEnd: i,
+    orientation: c.y.VERTICAL_BOTTOM,
+    throttleDuration: 16
+  });
+  return (0, r.jsx)("div", {
+    onMouseDown: l,
+    className: g.resizeHandle
+  })
+}
+let h = Chunk73800.forwardRef(function(e, t) {
+  let {
+    children: n,
+    onFocus: l,
+    onBlur: a,
+    onClick: o
+  } = e, c = i.useRef(null), [d, m] = i.useState(u.tq);
+  return (0, r.jsxs)(s.P3F, {
+    className: g.textArea,
+    onFocus: l,
+    onBlur: a,
+    onClick: o,
+    innerRef: c,
+    ignoreKeyPress: true,
+    style: {
+      minHeight: d
+    },
+    children: [(0, r.jsx)(s.Den, {
+      className: g.innerScroller,
+      style: {
+        minHeight: d - 2
+      },
+      ref: t,
+      children: n
+    }), (0, r.jsx)(p, {
+      resizableNode: c,
+      onResize: m,
+      onResizeEnd: e => {
+        m(e), null == l || l()
+      }
+    })]
+  })
+});
+
+function f(e) {
+  var t;
+  let {
+    initialValue: n,
+    onChangeTags: l,
+    onChangeNewTagValue: c,
+    tagErrors: u = {},
+    placeholder: p,
+    className: f,
+    maxTags: b
+  } = e, x = i.useRef(null), j = i.useRef(null), v = i.useRef(null), _ = (0, m.V)(n), {
+    handlePasteEvent: O,
+    handleInputChange: y,
+    handleKeyDown: C,
+    handleContainerKeyUp: N,
+    handleRemoveTag: I,
+    handleTagChangeEvent: E,
+    handleSelectTag: S,
+    handleUnselectTag: T,
+    handleResetTagSelections: P,
+    handleInputBlurEvent: w
+  } = (0, m.Q)(_, {
+    scrollerRef: v,
+    mainInputRef: x,
+    mainContainerRef: j
+  }), {
+    state: {
+      value: R,
+      tags: Z,
+      selections: D,
+      isSelecting: A
+    }
+  } = _, k = (0, o.Z)(Z), [L, M] = i.useState(false), G = i.useCallback(() => {
+    var e;
+    M(false), P(), null == (e = x.current) || e.focus({
+      preventScroll: true
+    })
+  }, [P]);
+  i.useEffect(() => {
+    k !== Z && l(Z)
+  }, [l, k, Z]), i.useEffect(() => {
+    L || c(R)
+  }, [c, R, L]);
+  let U = i.useCallback(function() {
+      let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
+      e && G(), M(false)
+    }, [G]),
+    B = i.useCallback(e => t => {
+      if (t) {
+        var n;
+        let t = D.includes(Z[e]);
+        null == (n = x.current) || n.focus(), t ? T(e) : (S(e), setImmediate(() => {
+          var e;
+          null == (e = x.current) || e.blur(), setTimeout(() => {
+            var e;
+            return null == (e = j.current) ? true : e.focus()
+          }, 16)
+        }))
+      } else T(e, true), M(true)
+    }, [S, T, D, Z]);
+  return (0, r.jsxs)("div", {
+    className: a()(g.mainContainer, f),
+    ref: j,
+    tabIndex: 0,
+    onKeyUp: N,
+    children: [(0, r.jsxs)(h, {
+      ref: v,
+      onClick: G,
+      children: [Z.map((e, t) => (0, r.jsx)(d.Z, {
+        value: e,
+        onChange: E(t),
+        onBlur: U,
+        onFocus: B(t),
+        onRemove: () => I(t),
+        isSelected: D.includes(e),
+        isSelecting: A,
+        error: u[e],
+        forceShowErrorTooltip: !L && t === Z.length - 1
+      }, t)), (0, r.jsx)("input", {
+        className: a()(g.mainTextInput, {
+          [g.isEditingOtherNodes]: L
+        }),
+        ref: x,
+        onChange: y,
+        onKeyDownCapture: C,
+        onPaste: O,
+        onBlur: w,
+        placeholder: 0 === Z.length ? p : true,
+        value: R
+      })]
+    }), null != b && (0, r.jsxs)(s.Text, {
+      variant: "text-xs/normal",
+      color: "text-muted",
+      className: g.maxTags,
+      children: [null != (t = null == Z ? true : Z.length) ? t : 0, "/", b]
+    })]
+  })
+}

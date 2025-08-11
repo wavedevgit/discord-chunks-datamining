@@ -1,0 +1,128 @@
+/** Chunk was on web.js **/
+/** chunk id: 336383, original params: e,t,n (module,exports,re quire) **/
+"use strict";
+require.d(exports, {
+  Z: () => v
+});
+var Chunk255367 = require("./255367.js"),
+  Chunk73800 = require("./73800.js"),
+  Chunk120356 = require("./120356.js"),
+  a = require.n(Chunk120356),
+  Chunk481060 = require("./481060.js"),
+  Chunk906732 = require("./906732.jsx"),
+  Chunk785717 = require("./785717.jsx"),
+  Chunk892001 = require("./892001.js"),
+  Chunk502762 = require("./502762.jsx"),
+  Chunk652853 = require("./652853.jsx"),
+  Chunk228168 = require("./228168.js"),
+  Chunk388032 = require("./388032.jsx"),
+  Chunk227832 = require("./227832.js");
+
+function m(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+
+function g(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      m(e, t, n[t])
+    })
+  }
+  return e
+}
+
+function E(e, t) {
+  var n = Object.keys(e);
+  if (Object.getOwnPropertySymbols) {
+    var r = Object.getOwnPropertySymbols(e);
+    t && (r = r.filter(function(t) {
+      return Object.getOwnPropertyDescriptor(e, t).enumerable
+    })), n.push.apply(n, r)
+  }
+  return n
+}
+
+function b(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : E(Object(t)).forEach(function(n) {
+    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+  }), e
+}
+
+function y(e, t) {
+  if (null == e) return {};
+  var n, r, i = O(e, t);
+  if (Object.getOwnPropertySymbols) {
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+  }
+  return i
+}
+
+function O(e, t) {
+  if (null == e) return {};
+  var n, r, i = {},
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+  return i
+}
+let v = Chunk73800.forwardRef(function(e, t) {
+  var {
+    children: n,
+    className: i,
+    subsection: o,
+    onAction: m,
+    onClose: E,
+    "aria-label": O,
+    "aria-labelledby": v
+  } = e, I = y(e, ["children", "className", "subsection", "onAction", "onClose", "aria-label", "aria-labelledby"]);
+  let {
+    themeType: T
+  } = (0, f.z)(), {
+    analyticsLocations: S
+  } = (0, l.ZP)(), {
+    context: A
+  } = (0, c.KZ)();
+  return T === _.lY.MODAL || T === _.lY.MODAL_V2 || (null == A ? true : A.userId) == null ? (0, r.jsx)("article", {
+    "aria-label": O,
+    "aria-labelledby": v,
+    children: (0, r.jsx)(d.Z.Overlay, b(g({
+      ref: t,
+      className: a()(h.card, i)
+    }, I), {
+      children: n
+    }))
+  }) : (0, r.jsx)("article", {
+    "aria-labelledby": v,
+    children: (0, r.jsx)(s.kL8, {
+      className: h.clickableContainer,
+      "aria-label": p.intl.string(p.t.pD1L1t),
+      focusProps: {
+        ringTarget: t
+      },
+      onClick: () => {
+        null == m || m({
+          action: "PRESS_CARD"
+        }), (0, u.openUserProfileModal)(g({
+          section: _.oh.ACTIVITY,
+          sourceAnalyticsLocations: S,
+          subsection: o
+        }, A)), null == E || E()
+      },
+      children: (0, r.jsx)(d.Z.Overlay, b(g({
+        ref: t,
+        className: a()(h.card, i)
+      }, I), {
+        children: n
+      }))
+    })
+  })
+})

@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk392711 = require("./392711.js"),
   Chunk509613 = require("./509613.js"),
   Chunk695346 = require("./695346.js"),
-  Chunk388032 = require("./388032.js");
+  Chunk388032 = require("./388032.jsx");
 let a = Chunk392711.range(1, 11).map(e => ({
     value: 60 * e,
     label: () => r.intl.formatToPlainString(r.t.iXLF9f, {

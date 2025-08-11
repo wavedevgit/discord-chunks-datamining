@@ -1,0 +1,64 @@
+/** Chunk was on 52030 **/
+/** chunk id: 873124, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
+  Z: () => o
+}), require("./388685.js"), require("./457542.js");
+var Chunk255367 = require("./255367.js"),
+  Chunk73800 = require("./73800.js"),
+  Chunk481060 = require("./481060.js"),
+  Chunk507453 = require("./507453.jsx"),
+  Chunk388032 = require("./388032.jsx");
+
+function o(e) {
+  let {
+    mfaChallenge: t,
+    finish: n,
+    setSlide: o,
+    onClose: d,
+    isSlideReady: c,
+    headerAlignStart: u
+  } = e, [h, f] = r.useState(false), [m, g] = r.useState(null), [x, p] = r.useState(""), S = r.useRef(null);
+  return r.useEffect(() => {
+    if (c) {
+      var e;
+      null == (e = S.current) || e.focus()
+    }
+  }, [c]), (0, l.jsxs)("form", {
+    onSubmit: e => {
+      e.preventDefault(), f(true), n({
+        mfaType: "password",
+        data: x
+      }).catch(e => {
+        var t, n;
+        g(null != (n = null == (t = e.body) ? true : t.message) ? n : e.message)
+      }).finally(() => {
+        f(false)
+      })
+    },
+    children: [(0, l.jsx)(s.Z.SlideHeader, {
+      onClose: d,
+      headerAlignStart: u
+    }), (0, l.jsx)(s.Z.SlideContent, {
+      children: (0, l.jsxs)(i.xJW, {
+        title: a.intl.string(a.t["CIGa+/"]),
+        children: [(0, l.jsx)(i.oil, {
+          inputRef: S,
+          onChange: p,
+          value: x,
+          type: "password",
+          autoComplete: "password",
+          spellCheck: "false",
+          disabled: h
+        }), (0, l.jsx)(s.Z.SlideError, {
+          error: m
+        })]
+      })
+    }), (0, l.jsx)(s.Z.SlideFooter, {
+      mfaChallenge: t,
+      setSlide: o,
+      showConfirm: true,
+      disabled: 0 === x.length,
+      submitting: h
+    })]
+  })
+}

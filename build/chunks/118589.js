@@ -6,7 +6,7 @@ require.d(exports, {
   VZ: () => o
 }), require("./388685.js"), require("./73800.js");
 var r, Chunk697498 = require("./697498.js"),
-  Chunk388032 = require("./388032.js"),
+  Chunk388032 = require("./388032.jsx"),
   l = ((r = {})[r.REFRESH_APP = false] = "REFRESH_APP", r[r.EMAIL_VERIFICATION = 3] = "EMAIL_VERIFICATION", r);
 let c = {
     EMAIL_VERIFICATION: "email_verification",

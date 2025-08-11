@@ -5,7 +5,7 @@ require.d(exports, {
 });
 var Chunk63063 = require("./63063.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk388032 = require("./388032.js");
+  Chunk388032 = require("./388032.jsx");
 
 function o() {
   return Chunk388032.intl.format(Chunk388032.t["+ALa7+"], {

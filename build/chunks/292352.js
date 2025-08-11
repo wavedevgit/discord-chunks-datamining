@@ -25,7 +25,7 @@ require.d(exports, {
 var i, r, l, a, d, u, s, Chunk860911 = require("./860911.js"),
   Chunk70956 = require("./70956.js"),
   Chunk916723 = require("./916723.js"),
-  Chunk388032 = require("./388032.js");
+  Chunk388032 = require("./388032.jsx");
 let T = 30 * Chunk70956.Z.Millis.SECOND,
   f = 8,
   S = 3,

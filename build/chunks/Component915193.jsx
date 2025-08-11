@@ -1,0 +1,135 @@
+/** Chunk was on 14126 **/
+/** chunk id: 915193, original params: e,n,r (module,exports,require) **/
+require.d(exports, {
+  Z: () => b
+});
+var Chunk255367 = require("./255367.js");
+require("./73800.js");
+var Chunk442837 = require("./442837.js"),
+  Chunk692547 = require("./692547.js"),
+  Chunk481060 = require("./481060.js"),
+  Chunk493683 = require("./493683.js"),
+  Chunk129861 = require("./129861.jsx"),
+  Chunk700582 = require("./700582.jsx"),
+  Chunk594174 = require("./594174.js"),
+  Chunk388032 = require("./388032.jsx"),
+  Chunk837014 = require("./837014.js");
+
+function h(e) {
+  let {
+    color: n,
+    className: r
+  } = e;
+  return (0, t.jsx)("svg", {
+    className: r,
+    height: "16",
+    width: "80",
+    viewBox: "0 0 80 16",
+    xmlns: "http://www.w3.org/2000/svg",
+    children: (0, t.jsxs)("g", {
+      fill: "none",
+      fillRule: "evenodd",
+      opacity: ".6",
+      children: [(0, t.jsx)("path", {
+        d: "m0 0h80v16h-80z"
+      }), (0, t.jsxs)("g", {
+        stroke: n,
+        strokeLinecap: "round",
+        strokeLinejoin: "round",
+        strokeWidth: "2",
+        children: [(0, t.jsx)("path", {
+          d: "m71 1h4v4.16"
+        }), (0, t.jsx)("path", {
+          d: "m2 1h4v4.16",
+          transform: "matrix(-1 0 0 1 8 0)"
+        }), (0, t.jsx)("path", {
+          d: "m51 1h4m6 0h4m-24 0h4m-14 0h4m-14 0h4m-23 11v-2m9-9h4"
+        }), (0, t.jsx)("path", {
+          d: "m72.13 10.474 2.869 3.12 2.631-3.12"
+        })]
+      })]
+    })
+  })
+}
+
+function b(e, n) {
+  let r = (0, i.e7)([c.default], () => c.default.getCurrentUser());
+  return null == r || n.ownerId !== r.id || e.id === r.id ? null : (0, t.jsx)(o.sNh, {
+    id: "make-dm-owner",
+    color: "danger",
+    label: u.intl.string(u.t["6t3CyM"]),
+    action: () => {
+      (0, o.h7j)(i => {
+        var c, b;
+        return (0, t.jsxs)(o.ConfirmModal, (c = function(e) {
+          for (var n = 1; n < arguments.length; n++) {
+            var r = null != arguments[n] ? arguments[n] : {},
+              t = Object.keys(r);
+            "function" == typeof Object.getOwnPropertySymbols && (t = t.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
+              return Object.getOwnPropertyDescriptor(r, e).enumerable
+            }))), t.forEach(function(n) {
+              var t;
+              t = r[n], n in e ? Object.defineProperty(e, n, {
+                value: t,
+                enumerable: true,
+                configurable: true,
+                writable: true
+              }) : e[n] = t
+            })
+          }
+          return e
+        }({
+          bodyClassName: m.confirmModal,
+          header: u.intl.string(u.t.WZoUsr),
+          confirmText: u.intl.string(u.t["cY+Ooa"]),
+          cancelText: u.intl.string(u.t["ETE/oK"]),
+          onConfirm: () => l.Z.setDMOwner(n.id, e.id)
+        }, i), b = b = {
+          children: [(0, t.jsx)(h, {
+            color: s.Z.unsafe_rawColors.PRIMARY_300.css
+          }), (0, t.jsxs)("div", {
+            className: m.fromToWrapper,
+            children: [(0, t.jsx)("div", {
+              className: m.from,
+              children: (0, t.jsx)(d.Z, {
+                user: r,
+                size: o.EFr.SIZE_80
+              })
+            }), (0, t.jsx)("div", {
+              className: m.to,
+              children: (0, t.jsx)(d.Z, {
+                user: e,
+                size: o.EFr.SIZE_80
+              })
+            })]
+          }), (0, t.jsx)(o.Text, {
+            variant: "text-md/normal",
+            children: u.intl.format(u.t.gsBb3N, {
+              usernameHook: (n, r) => (0, t.jsx)(a.Z, {
+                usernameIcon: (0, t.jsx)(o.qEK, {
+                  className: m.avatarIcon,
+                  src: e.getAvatarURL(true, 16),
+                  size: o.EFr.SIZE_16,
+                  "aria-hidden": true
+                }),
+                className: m.discordTag,
+                usernameClass: m.username,
+                discriminatorClass: m.discriminator,
+                user: e
+              }, r)
+            })
+          })]
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(c, Object.getOwnPropertyDescriptors(b)) : (function(e, n) {
+          var r = Object.keys(e);
+          if (Object.getOwnPropertySymbols) {
+            var t = Object.getOwnPropertySymbols(e);
+            r.push.apply(r, t)
+          }
+          return r
+        })(Object(b)).forEach(function(e) {
+          Object.defineProperty(c, e, Object.getOwnPropertyDescriptor(b, e))
+        }), c))
+      })
+    }
+  })
+}

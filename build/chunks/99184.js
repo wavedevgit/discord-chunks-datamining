@@ -5,7 +5,7 @@ require.d(exports, {
 });
 var Chunk509613 = require("./509613.js"),
   Chunk381426 = require("./381426.js"),
-  Chunk388032 = require("./388032.js");
+  Chunk388032 = require("./388032.jsx");
 let r = (0, Chunk509613.CB)("NotificationsAdvancedAccordion", {
     useTitle: e => e ? l.intl.string(l.t.RyimDg) : l.intl.string(l.t.CUICbG),
     useSubtitle: () => Chunk388032.intl.string(Chunk388032.t.SwKADQ),

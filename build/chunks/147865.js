@@ -4,7 +4,7 @@
 require.d(exports, {
   lY: () => i
 });
-var Chunk388032 = require("./388032.js");
+var Chunk388032 = require("./388032.jsx");
 
 function i(e) {
   return e > 0 ? "1-".concat(e) : r.intl.string(r.t.zMNEiI)

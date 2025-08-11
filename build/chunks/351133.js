@@ -13,7 +13,7 @@ var Chunk512722 = require("./512722.js"),
   Chunk160062 = require("./160062.js"),
   Chunk456007 = require("./456007.js"),
   Chunk581364 = require("./581364.js"),
-  Chunk388032 = require("./388032.js");
+  Chunk388032 = require("./388032.jsx");
 let _ = {
     [Chunk911969.jw.SUB_COMMAND]: () => ({
       success: false

@@ -1,0 +1,44 @@
+/** Chunk was on 62880 **/
+/** chunk id: 527790, original params: e,a,t (module,exports,require) **/
+require.d(exports, {
+  Z: () => d
+});
+var Chunk255367 = require("./255367.js");
+require("./73800.js");
+var Chunk100527 = require("./100527.js"),
+  Chunk906732 = require("./906732.jsx"),
+  Chunk26033 = require("./26033.js"),
+  Chunk194811 = require("./194811.jsx"),
+  Chunk382405 = require("./382405.jsx"),
+  Chunk670451 = require("./670451.jsx");
+
+function d(e) {
+  let {
+    user: a,
+    entry: t,
+    className: d,
+    onClose: x,
+    hideContextMenu: m = false,
+    appContext: j
+  } = e, {
+    analyticsLocations: u
+  } = (0, i.ZP)(n.Z.USER_PROFILE_RECENT_ACTIVITY_CARD);
+  return (0, l.Rh)(t) ? (0, s.jsx)(i.Gt, {
+    value: u,
+    children: (0, s.jsx)(c.Z, {
+      entry: t,
+      user: a,
+      className: d,
+      onClose: x,
+      header: (0, s.jsx)(r.Z, {
+        contextMenu: m ? null : (0, s.jsx)(o.Z, {
+          display: "recent",
+          entry: t,
+          user: a,
+          onClose: x,
+          appContext: j
+        })
+      })
+    })
+  }) : null
+}

@@ -10,7 +10,7 @@ var Chunk131704 = require("./131704.js"),
 require("./51144.js");
 var Chunk933557 = require("./933557.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk388032 = require("./388032.js");
+  Chunk388032 = require("./388032.jsx");
 
 function c(e) {
   let {

@@ -215,7 +215,7 @@ function Y(e) {
 }
 
 function W() {
-  let e = Chunk518944.Z.getCurrentSearchId();
+  let e = Chunk518944.Z.getSelectedSearchContextId();
   if (null == module) returnfalse;
   let t = Chunk171900.Z.hasSearchState(module);
   if (C === exports) returnfalse;

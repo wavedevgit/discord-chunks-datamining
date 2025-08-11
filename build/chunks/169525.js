@@ -19,7 +19,7 @@ var Chunk399606 = require("./399606.js"),
   Chunk630388 = require("./630388.js"),
   Chunk255269 = require("./255269.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk388032 = require("./388032.js");
+  Chunk388032 = require("./388032.jsx");
 let p = (e, t) => {
     let {
       spoiler: n,

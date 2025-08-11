@@ -14,7 +14,7 @@ var Chunk149765 = require("./149765.js"),
   Chunk637853 = require("./637853.js"),
   Chunk290511 = require("./290511.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk388032 = require("./388032.js");
+  Chunk388032 = require("./388032.jsx");
 async function _(e, t) {
   return null == e || await p(e, t, {
     removingView: true,

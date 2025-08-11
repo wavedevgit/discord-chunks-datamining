@@ -5,7 +5,7 @@ require.d(exports, {
 });
 var Chunk379405 = require("./379405.js"),
   Chunk481060 = require("./481060.js"),
-  Chunk388032 = require("./388032.js");
+  Chunk388032 = require("./388032.jsx");
 let o = {
     [Chunk379405._.BETTER_THAN_YOU]: {
       getText: () => Chunk388032.intl.string(Chunk388032.t.jbIRBA),

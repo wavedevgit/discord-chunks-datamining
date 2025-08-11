@@ -3,7 +3,7 @@
 require.d(exports, {
   P: () => r
 });
-var Chunk388032 = require("./388032.js");
+var Chunk388032 = require("./388032.jsx");
 let r = {
   get webauthn() {
     return Chunk388032.intl.string(Chunk388032.t.gTH4Dg)

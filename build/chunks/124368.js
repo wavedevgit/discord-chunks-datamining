@@ -15,7 +15,7 @@ require.d(exports, {
   zb: () => f
 }), require("./388685.js");
 var Chunk981631 = require("./981631.js"),
-  Chunk388032 = require("./388032.js");
+  Chunk388032 = require("./388032.jsx");
 let o = 4320,
   a = 50,
   s = 1e5,

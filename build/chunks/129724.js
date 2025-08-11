@@ -5,7 +5,7 @@ require.d(exports, {
 });
 var Chunk913527 = require("./913527.js"),
   r = require.n(Chunk913527),
-  Chunk388032 = require("./388032.js");
+  Chunk388032 = require("./388032.jsx");
 
 function l(e) {
   let t = !(arguments.length > 1) || true === arguments[1] || arguments[1],

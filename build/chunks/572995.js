@@ -7,7 +7,7 @@ require.d(exports, {
 });
 var i, r, Chunk230711 = require("./230711.js"),
   Chunk100527 = require("./100527.js"),
-  Chunk906732 = require("./906732.js"),
+  Chunk906732 = require("./906732.jsx"),
   Chunk300284 = require("./300284.js"),
   Chunk526167 = require("./526167.js"),
   Chunk63063 = require("./63063.js"),

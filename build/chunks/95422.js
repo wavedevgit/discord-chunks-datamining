@@ -5,7 +5,7 @@ require.d(exports, {
   a: () => o
 });
 var Chunk228624 = require("./228624.js"),
-  Chunk388032 = require("./388032.js");
+  Chunk388032 = require("./388032.jsx");
 let o = e => {
   let t = (0, r.ed)("usePurchasedProductName");
   if (null == e) return "";

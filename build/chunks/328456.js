@@ -6,7 +6,7 @@ require.d(exports, {
 }), require("./539854.js"), require("./388685.js");
 var Chunk73800 = require("./73800.js"),
   Chunk979554 = require("./979554.js"),
-  Chunk388032 = require("./388032.js");
+  Chunk388032 = require("./388032.jsx");
 class s {
   get firstAvatarDecoration() {
     return this.getFirstItemByType(Chunk979554.Z.AVATAR_DECORATION)

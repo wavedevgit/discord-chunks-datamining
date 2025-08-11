@@ -4,10 +4,10 @@
 require.d(exports, {
   A: () => s
 });
-var Chunk240872 = require("./240872.js"),
+var Chunk240872 = require("./240872.jsx"),
   Chunk403182 = require("./403182.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk388032 = require("./388032.js");
+  Chunk388032 = require("./388032.jsx");
 
 function s(e) {
   let {

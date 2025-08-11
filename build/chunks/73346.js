@@ -51,7 +51,7 @@ function I(e) {
   }
   return e
 }
-require("./388032.js"), l().shim();
+require("./388032.jsx"), l().shim();
 let T = !Chunk873546.tq && !Chunk873546.Em && false !== (0, Chunk526167.vu)(),
   S = 3;
 

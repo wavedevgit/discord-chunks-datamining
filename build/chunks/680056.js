@@ -4,9 +4,9 @@ require.d(exports, {
   Z: () => o
 });
 var Chunk73800 = require("./73800.js"),
-  Chunk906732 = require("./906732.js"),
+  Chunk906732 = require("./906732.jsx"),
   Chunk407316 = require("./407316.js"),
-  Chunk937784 = require("./937784.js");
+  Chunk937784 = require("./937784.jsx");
 let o = e => {
   let {
     channelId: t,

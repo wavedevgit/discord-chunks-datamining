@@ -7,9 +7,9 @@ require.d(exports, {
 var Chunk73800 = require("./73800.js"),
   Chunk704215 = require("./704215.js"),
   Chunk266454 = require("./266454.js"),
-  Chunk243778 = require("./243778.js"),
+  Chunk243778 = require("./243778.jsx"),
   Chunk848572 = require("./848572.js"),
-  Chunk388032 = require("./388032.js");
+  Chunk388032 = require("./388032.jsx");
 let c = () => {
     let e = (0, Chunk848572.y3)(),
       [t] = (0, Chunk243778.US)(null != module ? [Chunk704215.z.WHATS_NEW_TENURE_BADGE_REWARD] : []);

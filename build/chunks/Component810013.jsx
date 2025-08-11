@@ -1,0 +1,42 @@
+/** Chunk was on 46746 **/
+/** chunk id: 810013, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
+  Z: () => f
+});
+var Chunk255367 = require("./255367.js");
+require("./73800.js");
+var Chunk442837 = require("./442837.js"),
+  Chunk481060 = require("./481060.js"),
+  Chunk314897 = require("./314897.js"),
+  Chunk938475 = require("./938475.js"),
+  Chunk499596 = require("./499596.jsx"),
+  Chunk537135 = require("./537135.jsx"),
+  Chunk388032 = require("./388032.jsx"),
+  Chunk347226 = require("./347226.js");
+
+function f(e) {
+  let {
+    channel: t
+  } = e, n = (0, i.e7)([s.default], () => s.default.getId()), f = (0, i.e7)([o.ZP], () => o.ZP.getVoiceStatesForChannel(t), [t]);
+  return (0, r.jsx)(l.xJW, {
+    title: d.intl.string(d.t.KPuWsr),
+    className: u.modalContent,
+    titleClassName: u.formItemTitle,
+    children: (0, r.jsx)(c.Z, {
+      children: (0, r.jsx)(a.Z, {
+        channel: t,
+        users: f.filter(e => {
+          let {
+            user: t
+          } = e;
+          return t.id !== n
+        }).map(e => {
+          let {
+            user: t
+          } = e;
+          return t
+        })
+      })
+    })
+  })
+}

@@ -19,7 +19,7 @@ var r, Chunk73800 = require("./73800.js"),
   Chunk246364 = require("./246364.js"),
   Chunk983736 = require("./983736.js"),
   Chunk266395 = require("./266395.js"),
-  Chunk388032 = require("./388032.js"),
+  Chunk388032 = require("./388032.jsx"),
   g = ((r = {})[r.CLAIM_ACCOUNT = 0] = "CLAIM_ACCOUNT", r[r.EMAIL_CONFIRMATION = 1] = "EMAIL_CONFIRMATION", r[r.VERIFICATION_FORM = 2] = "VERIFICATION_FORM", r);
 
 function b(e, t, n) {

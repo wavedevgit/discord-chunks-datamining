@@ -15,11 +15,11 @@ require.d(exports, {
 });
 var Chunk592282 = require("./592282.jsx"),
   Chunk526714 = require("./526714.jsx"),
-  Chunk970677 = require("./970677.js"),
+  Chunk970677 = require("./970677.jsx"),
   Chunk756710 = require("./756710.jsx"),
-  Chunk911810 = require("./911810.js"),
+  Chunk911810 = require("./911810.jsx"),
   Chunk504135 = require("./504135.jsx"),
-  Chunk867333 = require("./867333.js"),
+  Chunk867333 = require("./867333.jsx"),
   Chunk153758 = require("./153758.jsx"),
   Chunk480962 = require("./480962.jsx"),
   Chunk460364 = require("./460364.jsx")

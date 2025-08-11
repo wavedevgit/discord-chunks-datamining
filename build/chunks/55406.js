@@ -60,7 +60,7 @@ let p = o().defaultRules.lheading,
   y = o().defaultRules.paragraph,
   O = /\{(.+?)}/,
   v = /^\$(\w+?)\$/;
-r = require("./235375.js");
+r = require("./235375.jsx");
 let I = e => {
     let {
       transformUpperCase: t = false

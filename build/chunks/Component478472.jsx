@@ -1,0 +1,68 @@
+/** Chunk was on 44462 **/
+/** chunk id: 478472, original params: e,t,r (module,exports,require) **/
+require.d(exports, {
+  default: () => i
+});
+var Chunk255367 = require("./255367.js");
+require("./73800.js");
+var Chunk481060 = require("./481060.js"),
+  Chunk388032 = require("./388032.jsx");
+
+function i(e) {
+  var t, r, {
+      ruleName: i
+    } = e,
+    l = function(e, t) {
+      if (null == e) return {};
+      var r, n, o = function(e, t) {
+        if (null == e) return {};
+        var r, n, o = {},
+          c = Object.keys(e);
+        for (n = 0; n < c.length; n++) r = c[n], t.indexOf(r) >= 0 || (o[r] = e[r]);
+        return o
+      }(e, t);
+      if (Object.getOwnPropertySymbols) {
+        var c = Object.getOwnPropertySymbols(e);
+        for (n = 0; n < c.length; n++) r = c[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (o[r] = e[r])
+      }
+      return o
+    }(e, ["ruleName"]);
+  let a = null != i ? i : c.intl.string(c.t.ffR2cH);
+  return (0, n.jsx)(o.ConfirmModal, (t = function(e) {
+    for (var t = 1; t < arguments.length; t++) {
+      var r = null != arguments[t] ? arguments[t] : {},
+        n = Object.keys(r);
+      "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
+        return Object.getOwnPropertyDescriptor(r, e).enumerable
+      }))), n.forEach(function(t) {
+        var n;
+        n = r[t], t in e ? Object.defineProperty(e, t, {
+          value: n,
+          enumerable: true,
+          configurable: true,
+          writable: true
+        }) : e[t] = n
+      })
+    }
+    return e
+  }({}, l), r = r = {
+    header: c.intl.string(c.t.Hy8XgI),
+    cancelText: c.intl.string(c.t["ETE/oK"]),
+    confirmText: c.intl.string(c.t["cY+Ooa"]),
+    children: (0, n.jsx)(o.Text, {
+      variant: "text-md/normal",
+      children: c.intl.format(c.t.hO7PgY, {
+        ruleName: a
+      })
+    })
+  }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
+    var r = Object.keys(e);
+    if (Object.getOwnPropertySymbols) {
+      var n = Object.getOwnPropertySymbols(e);
+      r.push.apply(r, n)
+    }
+    return r
+  })(Object(r)).forEach(function(e) {
+    Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(r, e))
+  }), t))
+}

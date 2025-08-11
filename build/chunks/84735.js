@@ -5,4 +5,4 @@ require.d(exports, {
   J: () => Chunk708816.Jc,
   t: () => Chunk708816.tE
 });
-var Chunk708816 = require("./708816.js")
+var Chunk708816 = require("./708816.jsx")

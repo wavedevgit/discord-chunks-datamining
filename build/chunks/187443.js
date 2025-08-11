@@ -4,8 +4,8 @@ require.d(exports, {
   u: () => s
 }), require("./539854.js"), require("./73800.js");
 var Chunk481060 = require("./481060.js"),
-  Chunk285784 = require("./285784.js"),
-  Chunk388032 = require("./388032.js");
+  Chunk285784 = require("./285784.jsx"),
+  Chunk388032 = require("./388032.jsx");
 
 function s(t) {
   let {

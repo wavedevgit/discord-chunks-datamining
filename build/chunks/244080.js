@@ -3,7 +3,7 @@
 require.d(exports, {
   Z: () => i
 });
-var Chunk380349 = require("./380349.js");
+var Chunk380349 = require("./380349.jsx");
 
 function i(e) {
   let {

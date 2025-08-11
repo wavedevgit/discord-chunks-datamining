@@ -1,0 +1,131 @@
+/** Chunk was on web.js **/
+/** chunk id: 372564, original params: e,t,n (module,exports,re quire) **/
+"use strict";
+require.d(exports, {
+  Z: () => v
+}), require("./388685.js");
+var Chunk255367 = require("./255367.js"),
+  Chunk73800 = require("./73800.js"),
+  Chunk120356 = require("./120356.js"),
+  a = require.n(Chunk120356),
+  Chunk374470 = require("./374470.js"),
+  Chunk481060 = require("./481060.js"),
+  Chunk239091 = require("./239091.js"),
+  Chunk454585 = require("./454585.js"),
+  Chunk984370 = require("./984370.jsx"),
+  Chunk981631 = require("./981631.js"),
+  Chunk388032 = require("./388032.jsx"),
+  Chunk916560 = require("./916560.js"),
+  Chunk73433 = require("./73433.js");
+
+function m(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+
+function g(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      m(e, t, n[t])
+    })
+  }
+  return e
+}
+
+function E(e, t) {
+  var n = Object.keys(e);
+  if (Object.getOwnPropertySymbols) {
+    var r = Object.getOwnPropertySymbols(e);
+    t && (r = r.filter(function(t) {
+      return Object.getOwnPropertyDescriptor(e, t).enumerable
+    })), n.push.apply(n, r)
+  }
+  return n
+}
+
+function b(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : E(Object(t)).forEach(function(n) {
+    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+  }), e
+}
+
+function y(e) {
+  return e.matches("a") || "highlight" === e.className || e.className.includes("mention")
+}
+class O extends Chunk73800.Component {
+  render() {
+    let {
+      channel: e
+    } = this.props;
+    if (module.isMultiUserDM()) return null;
+    let t = null != module.topic && module.topic.length > 0;
+    return null != module.linkedLobby || exports ? (0, Chunk255367.jsxs)(Chunk73800.Fragment, {
+      children: [(0, Chunk255367.jsx)(Chunk984370.Z.Divider, {}), (0, Chunk255367.jsxs)("div", {
+        className: a()(Chunk916560.topic, Chunk916560.expandable, Chunk73433.markup),
+        onMouseDown: this.onMouseDown,
+        onMouseMove: this.onMouseMove,
+        onMouseUp: this.onMouseUp,
+        onContextMenu: this.handleContextMenu,
+        onClick: this.handleClick,
+        children: [(0, Chunk255367.jsx)(Chunk481060.P3F, {
+          onClick: this.handleClick,
+          "aria-label": Chunk388032.intl.string(Chunk388032.t.mKwsSk),
+          className: Chunk916560.topicClickTarget
+        }), null == module.linkedLobby || exports ? Chunk454585.Z.parseTopic(module.topic, true, {
+          channelId: module.id
+        }) : Chunk388032.intl.string(Chunk388032.t.XJVlf3)]
+      })]
+    }) : null
+  }
+  constructor(...e) {
+    super(...e), m(this, "_mouseDown", false), m(this, "_mouseUp", false), m(this, "handleOpenTopic", e => {
+      let t = e.target;
+      if ((0, s.k)(t)) {
+        if (y(t)) return;
+        let e = t.parentNode;
+        if ((0, s.k)(e) && y(e)) return
+      }(0, l.ZDy)(async () => {
+        let {
+          default: e
+        } = await n.e("65631").then(n.bind(n, 10722));
+        return t => (0, r.jsx)(e, g({}, t, this.props))
+      })
+    }), m(this, "onMouseDown", () => {
+      this._mouseDown = true
+    }), m(this, "onMouseMove", () => {
+      this._mouseDown && (this._mouseDown = false)
+    }), m(this, "onMouseUp", e => {
+      this._mouseDown && e.button !== f.AeJ.SECONDARY && this.handleOpenTopic(e), this._mouseUp = true, this._mouseDown = false
+    }), m(this, "handleContextMenu", e => {
+      let {
+        channel: t,
+        guild: i
+      } = this.props;
+      (0, c.jW)(e, async () => {
+        let {
+          default: e
+        } = await Promise.all([n.e("66549"), n.e("25548"), n.e("2686"), n.e("49049"), n.e("62856"), n.e("12097"), n.e("46154"), n.e("91315"), n.e("16459"), n.e("49152"), n.e("24783"), n.e("26735")]).then(n.bind(n, 439635));
+        return n => (0, r.jsx)(e, b(g({}, n), {
+          channel: t,
+          guild: i,
+          includeTopic: true
+        }))
+      })
+    }), m(this, "handleClick", e => {
+      if (this._mouseUp) {
+        this._mouseUp = false;
+        return
+      }
+      this.handleOpenTopic(e)
+    })
+  }
+}
+let v = O

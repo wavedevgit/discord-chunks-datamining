@@ -4,7 +4,7 @@ require.d(exports, {
   Z: () => s
 });
 var Chunk981631 = require("./981631.js"),
-  Chunk388032 = require("./388032.js");
+  Chunk388032 = require("./388032.jsx");
 
 function s(e) {
   if (null == e) return null;

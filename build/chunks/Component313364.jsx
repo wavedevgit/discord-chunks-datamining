@@ -1,0 +1,138 @@
+/** Chunk was on 22988 **/
+/** chunk id: 313364, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
+  Z: () => R
+});
+var Chunk255367 = require("./255367.js"),
+  Chunk73800 = require("./73800.js"),
+  Chunk120356 = require("./120356.js"),
+  a = require.n(Chunk120356),
+  Chunk399606 = require("./399606.js"),
+  Chunk481060 = require("./481060.js"),
+  Chunk100527 = require("./100527.js"),
+  Chunk906732 = require("./906732.jsx"),
+  Chunk189357 = require("./189357.js"),
+  Chunk613464 = require("./613464.jsx"),
+  Chunk434404 = require("./434404.js"),
+  Chunk6025 = require("./6025.js"),
+  Chunk892001 = require("./892001.js"),
+  Chunk433355 = require("./433355.js"),
+  Chunk430824 = require("./430824.js"),
+  Chunk893966 = require("./893966.js"),
+  Chunk527379 = require("./527379.js"),
+  Chunk305473 = require("./305473.jsx"),
+  Chunk113679 = require("./113679.jsx"),
+  Chunk440857 = require("./440857.jsx"),
+  Chunk472596 = require("./472596.js"),
+  Chunk598948 = require("./598948.jsx"),
+  Chunk428936 = require("./428936.jsx"),
+  Chunk41586 = require("./41586.jsx"),
+  Chunk918192 = require("./918192.jsx"),
+  Chunk981631 = require("./981631.js"),
+  Chunk388032 = require("./388032.jsx"),
+  Chunk881786 = require("./881786.js"),
+  Chunk319586 = require("./319586.js");
+
+function R(e) {
+  let {
+    guildId: t
+  } = e, n = (0, s.e7)([b.Z], () => b.Z.getGuild(t)), {
+    analyticsLocations: l
+  } = (0, d.ZP)(c.Z.GUILD_SETTINGS_MEMBERS_PAGE), R = (0, u.m)(t), Z = (0, s.e7)([f.ZP], () => f.ZP.getGuildSidebarState(t), [t]), D = i.useCallback(() => {
+    p.Z.closeGuildSidebar(t)
+  }, [t]), A = false == !!(null == n ? true : n.features.has(S.oNc.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY)), k = (0, s.e7)([x.Z], () => x.Z.getEstimatedMemberSearchCountByGuildId(t), [t]), L = i.useCallback(e => {
+    null != e && (0, h.openUserProfileModal)({
+      userId: e.userId,
+      guildId: e.guildId,
+      sourceAnalyticsLocations: l
+    })
+  }, [l]), M = i.useRef(null), G = i.useCallback(() => {
+    var e;
+    null == (e = M.current) || e.resetSearchText()
+  }, []);
+  if (null == n) return null;
+  let U = (0, y.xb)(false, false, k);
+  return (0, r.jsxs)(d.Gt, {
+    value: l,
+    children: [(0, r.jsx)("div", {
+      className: a()(w.customColumn, P.override, P.settingsColumn),
+      children: (0, r.jsx)("div", {
+        className: w.customContainer,
+        children: (0, r.jsx)(o.w0Z, {
+          className: w.customScroller,
+          orientation: "auto",
+          children: (0, r.jsx)(o.w0Z, {
+            className: P.settingsHorizontalScroller,
+            orientation: "auto",
+            children: (0, r.jsxs)("main", {
+              className: a()(w.customColumn, w.contentColumnDefault, P.override, P.settingsColumn, P.settingsContent),
+              children: [(0, r.jsx)(o.hjN, {
+                className: P.header,
+                children: (0, r.jsx)(o.vwX, {
+                  tag: o.RB0.H1,
+                  children: T.intl.string(T.t["S40K6+"])
+                })
+              }, "header"), (0, r.jsx)(o.hjN, {
+                children: (0, r.jsxs)("div", {
+                  className: P.tableContainer,
+                  children: [(0, r.jsx)(_.Z, {
+                    guild: n
+                  }), (0, r.jsx)(v.Z, {
+                    guild: n
+                  }), A ? (0, r.jsxs)("div", {
+                    className: P.mainTableContainer,
+                    children: [(0, r.jsx)(I.Z, {
+                      guild: n,
+                      ref: M
+                    }), (0, r.jsx)(C.Z, {
+                      guild: n,
+                      searchState: U,
+                      compact: true,
+                      onSelectRow: L,
+                      onResetForNewMembers: G
+                    }), U !== y.po.SUCCESS_STILL_INDEXING && (0, r.jsx)(N.Z, {
+                      guildId: n.id
+                    })]
+                  }) : (0, r.jsx)("div", {
+                    className: P.movedTable,
+                    children: (0, r.jsxs)("div", {
+                      className: P.noResultsContainer,
+                      children: [(0, r.jsx)("div", {
+                        children: (0, r.jsx)(E.Z, {})
+                      }), (0, r.jsx)(o.Text, {
+                        variant: "text-md/normal",
+                        color: "text-muted",
+                        children: T.intl.format(T.t.Bf6yxM, {
+                          onClick: e => {
+                            null != n && (e.preventDefault(), g.Z.close(), (0, j._X)(n.id))
+                          }
+                        })
+                      })]
+                    })
+                  })]
+                })
+              }, "body"), (0, r.jsx)(O.Z, {
+                guildId: n.id
+              })]
+            })
+          })
+        })
+      })
+    }), R && null != Z && (0, r.jsxs)(r.Fragment, {
+      children: [(0, r.jsx)(o.ZMr, {
+        isVisible: true,
+        onClick: D
+      }), (0, r.jsx)("div", {
+        className: P.modViewSidebarContainer,
+        style: {
+          width: S.$Y6
+        },
+        children: (0, r.jsx)(m.Z, {
+          userId: Z.details.userId,
+          guildId: Z.details.guildId,
+          onClose: D
+        })
+      })]
+    })]
+  })
+}

@@ -6,7 +6,7 @@ require.d(exports, {
   w0: () => a,
   zJ: () => o
 });
-var Chunk627472 = require("./627472.js"),
+var Chunk627472 = require("./627472.jsx"),
   Chunk789304 = require("./789304.js");
 let o = (0, Chunk627472.z)(Chunk789304.thin, Chunk789304.fade),
   a = (0, Chunk627472.z)(Chunk789304.auto, Chunk789304.fade),

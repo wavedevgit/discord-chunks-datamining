@@ -4,8 +4,8 @@ require.d(exports, {
   Z: () => o
 });
 var Chunk846027 = require("./846027.js"),
-  Chunk240872 = require("./240872.js"),
-  Chunk388032 = require("./388032.js");
+  Chunk240872 = require("./240872.jsx"),
+  Chunk388032 = require("./388032.jsx");
 
 function o(e, t) {
   if (e) return void i.Z.show({

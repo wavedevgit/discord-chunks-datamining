@@ -1,0 +1,448 @@
+/** Chunk was on web.js **/
+/** chunk id: 135793, original params: e,t,n (module,exports,re quire) **/
+"use strict";
+require.d(exports, {
+  default: () => G,
+  s: () => U
+}), require("./388685.js"), require("./704826.js"), require("./35282.js");
+var Chunk255367 = require("./255367.js"),
+  Chunk73800 = require("./73800.js"),
+  Chunk990547 = require("./990547.js"),
+  Chunk311570 = require("./311570.js"),
+  Chunk704215 = require("./704215.js"),
+  Chunk481060 = require("./481060.js"),
+  Chunk596454 = require("./596454.jsx"),
+  Chunk100527 = require("./100527.js"),
+  Chunk906732 = require("./906732.jsx"),
+  Chunk266454 = require("./266454.js"),
+  Chunk688465 = require("./688465.jsx"),
+  Chunk333867 = require("./333867.jsx"),
+  Chunk592125 = require("./592125.js"),
+  Chunk63063 = require("./63063.js"),
+  Chunk937615 = require("./937615.js"),
+  Chunk980463 = require("./980463.js"),
+  Chunk328908 = require("./328908.js"),
+  Chunk992970 = require("./992970.js"),
+  Chunk317951 = require("./317951.js"),
+  Chunk287941 = require("./287941.js"),
+  Chunk235894 = require("./235894.js"),
+  Chunk883998 = require("./883998.jsx"),
+  Chunk576645 = require("./576645.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk921944 = require("./921944.js"),
+  Chunk388032 = require("./388032.jsx"),
+  Chunk956589 = require("./956589.js"),
+  Chunk99713 = require("./99713.js");
+
+function w(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+
+function D(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      w(e, t, n[t])
+    })
+  }
+  return e
+}
+
+function L(e, t) {
+  var n = Object.keys(e);
+  if (Object.getOwnPropertySymbols) {
+    var r = Object.getOwnPropertySymbols(e);
+    t && (r = r.filter(function(t) {
+      return Object.getOwnPropertyDescriptor(e, t).enumerable
+    })), n.push.apply(n, r)
+  }
+  return n
+}
+
+function x(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : L(Object(t)).forEach(function(n) {
+    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+  }), e
+}
+let M = 190,
+  k = 178,
+  j = "MESSAGE_CONFETTI_POTION_MODAL_KEY",
+  U = e => {
+    let {
+      channelId: t,
+      message: i,
+      onRedeem: o,
+      onClose: a,
+      buttonUseState: c = "activate",
+      source: u
+    } = e, d = h.Z.getChannel(t);
+    null != d && ((0, f.Q3)(s.z.CONFETTI_POTION_UPSELL, {
+      dismissAction: N.L.INDIRECT_ACTION
+    }), (0, l.ZDy)(async () => {
+      let {
+        default: e
+      } = await Promise.resolve().then(n.bind(n, 135793));
+      return t => (0, r.jsx)(e, x(D({}, t), {
+        channel: d,
+        message: i,
+        onRedeem: o,
+        onUnmount: a,
+        source: u,
+        buttonUseState: c
+      }))
+    }, {
+      modalKey: j
+    }))
+  };
+
+function G(e) {
+  let {
+    transitionState: t,
+    channel: n,
+    message: a,
+    onRedeem: s,
+    onUnmount: c,
+    buttonUseState: u,
+    source: d
+  } = e;
+  return (0, i.useEffect)(() => c, [c]), (0, r.jsx)(l.Y0X, {
+    size: l.CgR.DYNAMIC,
+    transitionState: t,
+    impression: {
+      impressionName: o.ImpressionNames.CONFETTI_POTION_MODAL,
+      impressionProperties: {
+        source: d
+      }
+    },
+    parentComponent: "MessageConfettiConsumableModal",
+    children: (0, r.jsx)(B, {
+      channel: n,
+      message: a,
+      onRedeem: s,
+      buttonUseState: u
+    })
+  })
+}
+
+function B(e) {
+  let {
+    channel: t,
+    message: n,
+    onRedeem: o,
+    buttonUseState: s
+  } = e, c = null != n, f = c && (0, I.Uw)(n), _ = (0, b.Qj)(t.id, c), {
+    price: h,
+    fetchingPrice: m,
+    error: g
+  } = (0, S.R2)(O.D1), {
+    entitlement: y,
+    fetchedEntitlement: v,
+    error: T
+  } = (0, S.t6)(O.D1), N = g || T, {
+    analyticsLocations: C
+  } = (0, d.ZP)([u.Z.CONFETTI_POTION_MODAL]), R = null != y && !y.consumed, P = m || !v;
+  (0, i.useEffect)(() => () => {
+    N && (0, E.SN)(O.D1)
+  }, [N, c]);
+  let w = (0, i.useCallback)(() => {
+      null != _ && ((0, l.pTH)(), o(_))
+    }, [_, o]),
+    D = (0, i.useCallback)(() => {
+      (0, p.Z)({
+        skuId: O.D1,
+        analyticsLocations: C,
+        onComplete: () => {
+          w(), (0, E.gA)(O.D1)
+        },
+        variantsReturnStyle: a.v.INDIVIDUAL_PRODUCTS
+      })
+    }, [w, C]),
+    L = (0, i.useCallback)(() => R ? w() : D(), [w, D, R]),
+    x = (0, i.useMemo)(() => {
+      if (null != y) {
+        if ("apply" === s) return 3;
+        if (y.type === A.qc2.DEVELOPER_GIFT) return 1;
+        if (R) return 2
+      }
+      return 0
+    }, [y, R, s]),
+    M = (0, i.useMemo)(() => 0 === x ? 1 : f ? 2 : 3 * (null == _), [f, _, x]);
+  return (0, r.jsx)(Z, {
+    channel: t,
+    buttonPurchaseState: x,
+    buttonDisabledState: M,
+    price: h,
+    onActionClick: L,
+    loading: P,
+    selectedEmoji: null != _ ? _ : true,
+    isReaction: c
+  })
+}
+let Z = e => {
+    let {
+      channel: t,
+      buttonPurchaseState: n,
+      buttonDisabledState: o,
+      price: a,
+      onActionClick: s,
+      loading: l,
+      selectedEmoji: c,
+      isReaction: u
+    } = e, d = (0, i.useRef)(null);
+    return ((0, i.useEffect)(() => {
+      var e;
+      if (null == c) return;
+      let t = null == (e = d.current) ? true : e.getBoundingClientRect();
+      if (null == t) return;
+      let n = (0, I.NV)(c),
+        {
+          x: r,
+          y: i,
+          width: o,
+          height: a
+        } = t;
+      (0, v.I)(n, {
+        x: r,
+        y: i,
+        w: o,
+        h: a
+      }, true, y.LL.ConfettiPreview)
+    }, [c]), l) ? (0, r.jsx)(z, {}) : null == a ? (0, r.jsx)(K, {}) : (0, r.jsxs)(r.Fragment, {
+      children: [(0, r.jsx)("div", {
+        className: R.modal,
+        ref: d,
+        children: (0, r.jsx)(F, {
+          channel: t,
+          selectedEmoji: c,
+          isReaction: u
+        })
+      }), (0, r.jsx)(H, {
+        buttonPurchaseState: n,
+        buttonDisabledState: o,
+        price: a,
+        onActionClick: s
+      })]
+    })
+  },
+  F = e => {
+    let {
+      channel: t,
+      selectedEmoji: n,
+      isReaction: i
+    } = e;
+    return (0, r.jsxs)("div", {
+      className: R.body,
+      children: [(0, r.jsxs)("div", {
+        className: R.header,
+        children: [(0, r.jsxs)("div", {
+          className: R.heading,
+          children: [(0, r.jsx)(l.X6q, {
+            variant: "heading-lg/bold",
+            children: C.intl.string(C.t["5/knv7"])
+          }), (0, r.jsx)(_.Z, {})]
+        }), (0, r.jsx)(l.Text, {
+          variant: "text-sm/normal",
+          children: C.intl.string(C.t.NFTQoa)
+        }), (0, r.jsx)(l.Text, {
+          color: "text-link",
+          variant: "text-sm/normal",
+          children: C.intl.format(C.t["jerM9/"], {
+            helpCenterLink: m.Z.getArticleURL(A.BhN.CONFETTI_POTION)
+          })
+        })]
+      }), (0, r.jsx)("div", {
+        className: R.divider
+      }), (0, r.jsxs)("div", {
+        className: R.selectContainer,
+        children: [(0, r.jsx)(l.Text, {
+          variant: "eyebrow",
+          children: C.intl.string(C.t.o8XwoK)
+        }), (0, r.jsx)(V, {
+          channel: t,
+          selectedEmoji: n,
+          isReaction: i
+        })]
+      })]
+    })
+  },
+  V = e => {
+    let {
+      channel: t,
+      selectedEmoji: n,
+      isReaction: o
+    } = e, [a, s] = (0, i.useState)(false), u = (0, i.useCallback)(() => {
+      s(false)
+    }, []), d = (0, i.useCallback)(e => (0, b.t0)(e, t.id, o), [o, t.id]), {
+      emojiName: f,
+      selectionText: _
+    } = (0, i.useMemo)(() => null == n ? {
+      emojiName: null,
+      selectionText: C.intl.string(C.t.KgK5qq)
+    } : {
+      emojiName: null == n.id ? n.optionallyDiverseSequence : n.name,
+      selectionText: n.name.replace(/_/g, " ")
+    }, [n]), p = (0, i.useRef)(null);
+    return (0, r.jsx)(T.Z, {
+      channel: t,
+      shouldShow: a,
+      onRequestClose: u,
+      setEmojiConfetti: d,
+      positionRef: p,
+      position: "left",
+      align: "top",
+      children: () => (0, r.jsx)(l.P3F, {
+        onClick: () => s(!a),
+        className: R.emojiSelect,
+        children: (0, r.jsxs)("div", {
+          className: R.emojiContent,
+          children: [(0, r.jsxs)("div", {
+            className: R.selectedEmoji,
+            children: [(0, r.jsx)("div", {
+              ref: p,
+              children: null == n ? (0, r.jsx)(l.EO4, {
+                color: "currentColor",
+                size: "custom",
+                className: R.emojiIcon
+              }) : (0, r.jsx)(c.Z, {
+                animated: false,
+                emojiId: n.id,
+                emojiName: f,
+                className: R.emojiIcon
+              })
+            }), (0, r.jsx)(l.Text, {
+              color: "interactive-active",
+              variant: "text-sm/normal",
+              children: _
+            })]
+          }), a ? (0, r.jsx)(l.u04, {
+            color: "currentColor",
+            size: "custom",
+            className: R.chevron
+          }) : (0, r.jsx)(l.CJ0, {
+            color: "currentColor",
+            size: "custom",
+            className: R.chevron
+          })]
+        })
+      })
+    })
+  },
+  H = e => {
+    let {
+      buttonPurchaseState: t,
+      buttonDisabledState: n,
+      price: i,
+      onActionClick: o
+    } = e;
+    return (0, r.jsxs)("div", {
+      className: R.footer,
+      children: [(0, r.jsx)(l.zxk, {
+        variant: "secondary",
+        text: C.intl.string(C.t.w2Qbd3),
+        onClick: () => {
+          (0, l.Mr3)(j)
+        }
+      }), (0, r.jsxs)("div", {
+        className: R.footerRight,
+        children: [(0, r.jsx)(Y, {}), (0, r.jsx)(W, {
+          buttonPurchaseState: t,
+          buttonDisabledState: n,
+          price: i,
+          onActionClick: o
+        })]
+      })]
+    })
+  },
+  Y = () => {
+    let {
+      entitlement: e,
+      numPotions: t
+    } = (0, Chunk576645.t6)(Chunk317951.D1);
+    if (null == exports || 0 === exports) return null;
+    let n = (null == module ? true : module.type) === Chunk981631.qc2.DEVELOPER_GIFT ? Chunk388032.t["b+P6ra"] : Chunk388032.t.RiQ4cn;
+    return (0, Chunk255367.jsxs)("div", {
+      className: Chunk956589.remaining,
+      children: [(0, Chunk255367.jsx)(Chunk481060.l22, {
+        color: "currentColor",
+        className: Chunk956589.shootingStar
+      }), (0, Chunk255367.jsx)(Chunk481060.Text, {
+        color: "none",
+        variant: "text-sm/semibold",
+        children: Chunk388032.intl.formatToPlainString(require, {
+          numPotions: exports
+        })
+      })]
+    })
+  },
+  W = e => {
+    let {
+      buttonPurchaseState: t,
+      buttonDisabledState: n,
+      price: o,
+      onActionClick: a
+    } = e, {
+      isDisabled: s,
+      copy: c,
+      tooltipCopy: u
+    } = (0, i.useMemo)(() => {
+      let e = {
+          0: C.intl.formatToPlainString(C.t.POGRmp, {
+            amount: O.pe,
+            price: (0, g.T4)(o.amount, o.currency)
+          }),
+          1: C.intl.string(C.t.RrKeDw),
+          2: C.intl.string(C.t.WOXaWF),
+          3: C.intl.string(C.t["1Qm829"])
+        },
+        r = {
+          1: C.intl.string(C.t["Cb8/7+"]),
+          2: C.intl.string(C.t.fMkB9P),
+          3: C.intl.string(C.t["59ElNj"])
+        },
+        i = 0 !== n;
+      return {
+        isDisabled: i,
+        copy: e[t],
+        tooltipCopy: i ? r[n] : ""
+      }
+    }, [n, t, o.amount, o.currency]);
+    return (0, r.jsx)(l.ua7, {
+      tooltipContentClassName: R.tooltip,
+      text: u,
+      shouldShow: !!s,
+      children: e => (0, r.jsx)(l.zxk, x(D({}, e), {
+        onClick: a,
+        disabled: s,
+        text: c
+      }))
+    })
+  },
+  K = () => (0, Chunk255367.jsx)("div", {
+    className: Chunk956589.anomaly,
+    children: (0, Chunk255367.jsxs)("div", {
+      className: Chunk956589.error,
+      children: [(0, Chunk255367.jsx)(Chunk481060.Eep, {
+        src: Chunk99713,
+        width: k,
+        height: M
+      }), (0, Chunk255367.jsx)(Chunk481060.Text, {
+        variant: "text-md/normal",
+        children: Chunk388032.intl.string(Chunk388032.t.oKJdSk)
+      })]
+    })
+  }),
+  z = () => (0, Chunk255367.jsx)("div", {
+    className: Chunk956589.anomaly,
+    children: (0, Chunk255367.jsx)("div", {
+      className: Chunk956589.spinner,
+      children: (0, Chunk255367.jsx)(Chunk481060.$jN, {})
+    })
+  })

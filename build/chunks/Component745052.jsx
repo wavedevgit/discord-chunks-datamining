@@ -1,0 +1,350 @@
+/** Chunk was on 1272 **/
+/** chunk id: 745052, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
+  Z: () => eo
+}), require("./388685.js");
+var Chunk255367 = require("./255367.js"),
+  Chunk73800 = require("./73800.js"),
+  Chunk120356 = require("./120356.js"),
+  a = require.n(Chunk120356),
+  Chunk91192 = require("./91192.jsx"),
+  Chunk286379 = require("./286379.js"),
+  Chunk442837 = require("./442837.js"),
+  Chunk704215 = require("./704215.js"),
+  Chunk907862 = require("./907862.js"),
+  Chunk481060 = require("./481060.js"),
+  Chunk150063 = require("./150063.js"),
+  Chunk230711 = require("./230711.js"),
+  Chunk112724 = require("./112724.jsx"),
+  Chunk183126 = require("./183126.js"),
+  Chunk493773 = require("./493773.js"),
+  Chunk209613 = require("./209613.js"),
+  Chunk325708 = require("./325708.jsx"),
+  Chunk320149 = require("./320149.jsx"),
+  Chunk82295 = require("./82295.jsx"),
+  Chunk252618 = require("./252618.js"),
+  Chunk605236 = require("./605236.js"),
+  Chunk243778 = require("./243778.jsx"),
+  Chunk984370 = require("./984370.jsx"),
+  Chunk797614 = require("./797614.js"),
+  Chunk359110 = require("./359110.js"),
+  Chunk6025 = require("./6025.js"),
+  Chunk897473 = require("./897473.js"),
+  Chunk108427 = require("./108427.js"),
+  Chunk210887 = require("./210887.js"),
+  Chunk433355 = require("./433355.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk819640 = require("./819640.js"),
+  Chunk626135 = require("./626135.js"),
+  Chunk647090 = require("./647090.js"),
+  Chunk385956 = require("./385956.js"),
+  Chunk610697 = require("./610697.js"),
+  Chunk26373 = require("./26373.js"),
+  Chunk486622 = require("./486622.js"),
+  Chunk488634 = require("./488634.js"),
+  Chunk899740 = require("./899740.js"),
+  Chunk177033 = require("./177033.js"),
+  Chunk355350 = require("./355350.js"),
+  Chunk307947 = require("./307947.jsx"),
+  Chunk96479 = require("./96479.jsx"),
+  Chunk480874 = require("./480874.jsx"),
+  Chunk687683 = require("./687683.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk921944 = require("./921944.js"),
+  Chunk526761 = require("./526761.js"),
+  Chunk388032 = require("./388032.jsx"),
+  Chunk596576 = require("./596576.js"),
+  Chunk100658 = require("./100658.js");
+
+function et(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      var r;
+      r = n[t], t in e ? Object.defineProperty(e, t, {
+        value: r,
+        enumerable: true,
+        configurable: true,
+        writable: true
+      }) : e[t] = r
+    })
+  }
+  return e
+}
+
+function en(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
+    var n = Object.keys(e);
+    if (Object.getOwnPropertySymbols) {
+      var r = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, r)
+    }
+    return n
+  })(Object(t)).forEach(function(n) {
+    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+  }), e
+}
+
+function er() {
+  let e = Chunk73800.useRef(null),
+    t = (0, Chunk899740.q)(),
+    n = (0, Chunk177033.Z)(),
+    l = (0, Chunk26373.K)(),
+    c = (0, Chunk183126.N)(),
+    u = Chunk73800.useCallback(() => {
+      (0, Chunk481060.showToast)((0, Chunk481060.createToast)(Chunk388032.intl.string(Chunk388032.t.EDYbS0), Chunk481060.ToastType.FAILURE))
+    }, []),
+    {
+      rejectAll: d
+    } = (0, Chunk486622.m)({
+      onError: Chunk704215
+    }),
+    f = (0, Chunk209613.Z)("message-requests-list"),
+    {
+      channelId: h
+    } = (0, Chunk488634._)(),
+    g = Chunk73800.useCallback(() => {
+      Chunk907862(require.map(e => e.channel.id))
+    }, [require, Chunk907862]),
+    b = Chunk73800.useCallback(e => {
+      var t, i;
+      let {
+        row: o
+      } = e, s = n[o], c = null == (i = n[o + 1]) || null == (t = i.channel) ? true : t.id, u = s.channel.id;
+      return (0, r.jsx)(W.Z, {
+        index: o,
+        className: a()({
+          [$.selected]: null != h && h === u,
+          [$.siblingSelected]: null != h && h === c
+        }),
+        channel: s.channel,
+        user: s.user,
+        hasSingleMessageRequest: l
+      }, u)
+    }, [Chunk120356, require, Chunk230711]),
+    O = Chunk73800.useCallback(() => (0, Chunk255367.jsxs)(Chunk82295.Z, {
+      className: Chunk596576.sectionTitle,
+      children: [exports > 0 ? Chunk388032.intl.formatToPlainString(Chunk388032.t.rA4iWV, {
+        count: exports
+      }) : Chunk388032.intl.string(Chunk388032.t.flPU6u), Chunk442837 && exports > 0 ? (0, Chunk255367.jsxs)(Chunk255367.Fragment, {
+        children: [(0, Chunk255367.jsx)(Chunk481060.Text, {
+          className: Chunk596576.titleDivider,
+          variant: "eyebrow",
+          color: "header-secondary",
+          tag: "span",
+          children: "•"
+        }), (0, Chunk255367.jsx)(Chunk481060.Avr, {
+          onClick: Chunk112724,
+          textVariant: "text-sm/normal",
+          text: Chunk388032.intl.string(Chunk388032.t.p6t7RE),
+          "aria-label": Chunk388032.intl.string(Chunk388032.t.p6t7RE)
+        })]
+      }) : null]
+    }, "title"), [exports, Chunk112724, Chunk442837]);
+  return (require.length !== exports && Chunk797614.Z.increment({
+    name: Chunk286379.V.MESSAGE_REQUEST_COUNT_DRIFT
+  }), 0 === require.length) ? (0, Chunk255367.jsx)(Chunk307947.Z, {
+    section: Chunk687683.pS.REQUESTS
+  }) : (0, Chunk255367.jsx)(Chunk91192.bG, {
+    navigator: Chunk150063,
+    children: (0, Chunk255367.jsx)(Chunk91192.SJ, {
+      children: t => {
+        var {
+          ref: i,
+          role: l
+        } = t, a = function(e, t) {
+          if (null == e) return {};
+          var n, r, i = function(e, t) {
+            if (null == e) return {};
+            var n, r, i = {},
+              l = Object.keys(e);
+            for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+            return i
+          }(e, t);
+          if (Object.getOwnPropertySymbols) {
+            var l = Object.getOwnPropertySymbols(e);
+            for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+          }
+          return i
+        }(t, ["ref", "role"]);
+        return (0, r.jsx)(p.aVo, et({
+          className: $.list,
+          innerRole: l,
+          innerAriaLabel: J.intl.string(J.t.e7GWjY),
+          ref: t => {
+            var n;
+            e.current = t, i.current = null != (n = null == t ? true : t.getScrollerNode()) ? n : null
+          },
+          paddingTop: 24,
+          paddingBottom: 24,
+          sectionHeight: K.oi,
+          rowHeight: K.WN,
+          renderSection: O,
+          renderRow: b,
+          sections: [n.length],
+          chunkSize: 30,
+          fade: true
+        }, a), "message-requests-list")
+      }
+    })
+  })
+}
+
+function ei(e) {
+  let {
+    pageWidth: t,
+    onSidebarResize: n
+  } = e, i = (0, c.e7)([Z.ZP], () => Z.ZP.getSidebarState(Z.uZ)), l = (0, c.e7)([w.Z], () => w.Z.getChannel(null == i ? true : i.channelId));
+  if (null == i || i.type !== j.tI.VIEW_MESSAGE_REQUEST || null == l || !l.isPrivate()) return null;
+  let a = t - q.R7I;
+  return (0, r.jsx)(O.Z, {
+    sidebarType: O.y.MessageRequestSidebar,
+    maxWidth: a,
+    onWidthChange: n,
+    children: (0, r.jsx)(E.Z, {
+      channel: l,
+      baseChannelId: Z.uZ
+    })
+  })
+}
+let el = e => {
+  let t = (0, M.Z)();
+  return (i.useEffect(() => {
+    (0, I.kk)(u.z.MESSAGE_REQUEST_SETTINGS_COACH_MARK)
+  }, []), null == e.targetElementRef.current || L.Z.hasLayers() || (0, p.$sL)()) ? e.children : (0, r.jsx)(C.ZP, {
+    contentTypes: [u.z.MESSAGE_REQUEST_SETTINGS_COACH_MARK],
+    children: n => {
+      let {
+        visibleContent: i,
+        markAsDismissed: l
+      } = n, a = {
+        position: "bottom",
+        caretConfig: {
+          position: "top",
+          align: "center"
+        },
+        shouldShow: true,
+        onRequestClose: () => l(X.L.USER_DISMISS),
+        targetElementRef: e.targetElementRef
+      };
+      return i === u.z.MESSAGE_REQUEST_SETTINGS_COACH_MARK ? (0, r.jsxs)(r.Fragment, {
+        children: [e.children, t ? (0, r.jsx)(d.J2, en(et({}, a), {
+          title: J.intl.string(J.t.hRT8tb),
+          body: J.intl.string(J.t.apPgJC),
+          actions: [{
+            text: J.intl.string(J.t.LNoAQU),
+            onClick: () => l(X.L.TAKE_ACTION)
+          }]
+        })) : (0, r.jsx)(d.J2, en(et({}, a), {
+          title: J.intl.string(J.t.hRT8tb),
+          body: J.intl.string(J.t["8JWodn"]),
+          actions: [{
+            text: J.intl.string(J.t.JN6EOD),
+            onClick: e => {
+              e.stopPropagation(), h.Z.open(q.oAB.CONTENT_AND_SOCIAL, null, {
+                scrollPosition: Q.FY.MESSAGE_REQUESTS_V2
+              }), l(X.L.TAKE_ACTION)
+            }
+          }, {
+            text: J.intl.string(J.t.LNoAQU),
+            onClick: () => l(X.L.USER_DISMISS),
+            variant: "secondary"
+          }]
+        }))]
+      }) : e.children
+    }
+  })
+};
+
+function ea(e) {
+  let {
+    section: t
+  } = e;
+  return t === K.pS.SPAM ? (0, r.jsx)(Y.Z, {}) : (0, r.jsx)(er, {})
+}
+let eo = (0, Chunk112724.Z)(function(e) {
+  let {
+    width: t
+  } = e, n = (0, H.q)();
+  (0, b.ZP)(() => {
+    f.Y(q.Z5c.MESSAGE_REQUESTS), (0, x.e)("message-requests"), R.default.track(q.rMx.MESSAGE_REQUESTS_VIEWED, {
+      num_message_requests: n
+    }), N.Z.increment({
+      name: s.V.MESSAGE_REQUEST_VIEW
+    })
+  });
+  let l = (0, c.e7)([A.Z], () => A.Z.theme),
+    o = (0, F.w)(),
+    [u, d] = i.useState(false),
+    h = (0, c.e7)([Z.ZP], () => {
+      let e = Z.ZP.getSidebarState(Z.uZ);
+      return null != e && e.type === j.tI.VIEW_MESSAGE_REQUEST ? e : null
+    }),
+    g = null == h ? true : h.channelId,
+    m = null != h,
+    _ = (0, k.T)(g),
+    O = (0, D.J)(g),
+    E = i.useRef(null);
+  i.useEffect(() => {
+    null != g && !_ && O && m && ((0, T.Kh)(g), P.Z.closeChannelSidebar(Z.uZ))
+  }, [g, O, m, _]);
+  let [y, I] = i.useState(K.pS.REQUESTS), C = e => {
+    I(e)
+  };
+  return (0, v.Tt)({
+    location: J.intl.string(J.t.e7GWjY)
+  }), (0, r.jsxs)(r.Fragment, {
+    children: [(0, r.jsxs)("div", {
+      className: a()(ee.chat, $.container, {
+        [ee.threadSidebarOpen]: m,
+        [ee.threadSidebarFloating]: m && u
+      }),
+      children: [(0, r.jsx)(p.f6W, {
+        theme: l,
+        children: e => (0, r.jsxs)(S.Z, {
+          className: e,
+          toolbar: true,
+          children: [(0, r.jsx)(S.Z.Icon, {
+            icon: p._XJ,
+            "aria-hidden": true
+          }), (0, r.jsx)(el, {
+            targetElementRef: E,
+            children: (0, r.jsx)(S.Z.Title, {
+              ref: E,
+              children: J.intl.string(J.t.e7GWjY)
+            })
+          }), (0, r.jsx)(S.Z.Divider, {}), (0, r.jsxs)(p.njP, {
+            "aria-label": J.intl.string(J.t.e7GWjY),
+            selectedItem: y,
+            type: "top-pill",
+            onItemSelect: C,
+            children: [(0, r.jsx)(p.njP.Item, {
+              id: K.pS.REQUESTS,
+              className: $.item,
+              children: J.intl.string(J.t["7RFcXV"])
+            }), (0, r.jsx)(p.njP.Item, {
+              id: K.pS.SPAM,
+              className: $.item,
+              children: 0 === o ? J.intl.string(J.t.ulKXHh) : J.intl.formatToPlainString(J.t["5jtrlZ"], {
+                count: o
+              })
+            })]
+          })]
+        })
+      }), (0, r.jsx)("div", {
+        className: ee.content,
+        children: (0, r.jsx)(ea, {
+          section: y
+        })
+      })]
+    }), m && (0, r.jsx)(ei, {
+      pageWidth: t,
+      onSidebarResize: (e, t) => {
+        d(t)
+      }
+    })]
+  })
+})

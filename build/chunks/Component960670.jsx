@@ -1,0 +1,82 @@
+/** Chunk was on 14604 **/
+/** chunk id: 960670, original params: e,t,r (module,exports,require) **/
+require.d(exports, {
+  default: () => a
+}), require("./388685.js");
+var Chunk255367 = require("./255367.js"),
+  Chunk73800 = require("./73800.js"),
+  Chunk481060 = require("./481060.js"),
+  Chunk388032 = require("./388032.jsx"),
+  Chunk277841 = require("./277841.js");
+
+function a(e) {
+  var t, r, {
+      header: a,
+      body: s,
+      onSubmit: b
+    } = e,
+    u = function(e, t) {
+      if (null == e) return {};
+      var r, n, o = function(e, t) {
+        if (null == e) return {};
+        var r, n, o = {},
+          c = Object.keys(e);
+        for (n = 0; n < c.length; n++) r = c[n], t.indexOf(r) >= 0 || (o[r] = e[r]);
+        return o
+      }(e, t);
+      if (Object.getOwnPropertySymbols) {
+        var c = Object.getOwnPropertySymbols(e);
+        for (n = 0; n < c.length; n++) r = c[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (o[r] = e[r])
+      }
+      return o
+    }(e, ["header", "body", "onSubmit"]);
+  let [p, f] = o.useState(false);
+  return (0, n.jsxs)(c.ConfirmModal, (t = function(e) {
+    for (var t = 1; t < arguments.length; t++) {
+      var r = null != arguments[t] ? arguments[t] : {},
+        n = Object.keys(r);
+      "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
+        return Object.getOwnPropertyDescriptor(r, e).enumerable
+      }))), n.forEach(function(t) {
+        var n;
+        n = r[t], t in e ? Object.defineProperty(e, t, {
+          value: n,
+          enumerable: true,
+          configurable: true,
+          writable: true
+        }) : e[t] = n
+      })
+    }
+    return e
+  }({
+    header: a,
+    confirmText: i.intl.string(i.t["26C4oq"]),
+    cancelText: i.intl.string(i.t["ETE/oK"]),
+    onConfirm: () => {
+      b(null, p)
+    }
+  }, u), r = r = {
+    children: [(0, n.jsx)(c.Text, {
+      variant: "text-md/normal",
+      children: s
+    }), (0, n.jsx)(c.XZJ, {
+      type: c.XZJ.Types.INVERTED,
+      value: p,
+      onChange: () => f(e => !e),
+      className: l.checkbox,
+      children: (0, n.jsx)(c.Text, {
+        variant: "text-md/normal",
+        children: i.intl.string(i.t.bq3JXl)
+      })
+    })]
+  }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
+    var r = Object.keys(e);
+    if (Object.getOwnPropertySymbols) {
+      var n = Object.getOwnPropertySymbols(e);
+      r.push.apply(r, n)
+    }
+    return r
+  })(Object(r)).forEach(function(e) {
+    Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(r, e))
+  }), t))
+}

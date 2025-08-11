@@ -8,13 +8,13 @@ var Chunk73800 = require("./73800.js"),
   Chunk668781 = require("./668781.js"),
   Chunk493683 = require("./493683.js"),
   Chunk100527 = require("./100527.js"),
-  Chunk906732 = require("./906732.js"),
+  Chunk906732 = require("./906732.jsx"),
   Chunk835473 = require("./835473.js"),
   Chunk703656 = require("./703656.js"),
   Chunk594174 = require("./594174.js"),
   Chunk122613 = require("./122613.js"),
   Chunk649256 = require("./649256.js"),
-  Chunk388032 = require("./388032.js");
+  Chunk388032 = require("./388032.jsx");
 
 function g(e) {
   var t, n;

@@ -39,15 +39,15 @@ var i, Chunk512722 = require("./512722.js"),
   Chunk388627 = require("./388627.js"),
   Chunk996050 = require("./996050.js"),
   Chunk609626 = require("./609626.js"),
-  Chunk421824 = require("./421824.js"),
+  Chunk421824 = require("./421824.jsx"),
   Chunk777036 = require("./777036.js"),
-  Chunk955978 = require("./955978.js"),
+  Chunk955978 = require("./955978.jsx"),
   Chunk333727 = require("./333727.js"),
   Chunk672199 = require("./672199.js"),
-  Chunk585708 = require("./585708.js"),
-  Chunk588909 = require("./588909.js"),
+  Chunk585708 = require("./585708.jsx"),
+  Chunk588909 = require("./588909.jsx"),
   Chunk981631 = require("./981631.js"),
-  Chunk388032 = require("./388032.js");
+  Chunk388032 = require("./388032.jsx");
 
 function K(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {

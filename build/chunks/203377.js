@@ -8,7 +8,7 @@ require.d(exports, {
   _0: () => s,
   mf: () => d
 });
-var r, Chunk388032 = require("./388032.js");
+var r, Chunk388032 = require("./388032.jsx");
 let l = 5,
   a = 10,
   s = 30;

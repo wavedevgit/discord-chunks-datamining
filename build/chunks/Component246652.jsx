@@ -1,0 +1,39 @@
+/** Chunk was on 75708 **/
+/** chunk id: 246652, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
+  k: () => l
+}), require("./388685.js");
+var Chunk255367 = require("./255367.js"),
+  Chunk73800 = require("./73800.js"),
+  Chunk481060 = require("./481060.js"),
+  Chunk517791 = require("./517791.js");
+class l extends Chunk73800.PureComponent {
+  componentDidCatch(e, t) {
+    console.error("Error rendering component (LocalErrorBoundary): ", e), this.setState({
+      error: e,
+      info: t
+    })
+  }
+  render() {
+    return null != this.state.error ? (0, Chunk255367.jsx)("div", {
+      children: (0, Chunk255367.jsx)(Chunk481060.Text, {
+        color: "text-danger",
+        variant: "text-md/normal",
+        className: Chunk517791.labelSpacing,
+        children: "Error rendering component. Check console for more information on the error."
+      })
+    }) : this.props.children
+  }
+  constructor(...e) {
+    var t, n;
+    super(...e), n = {
+      error: null,
+      info: null
+    }, (t = "state") in this ? Object.defineProperty(this, t, {
+      value: n,
+      enumerable: true,
+      configurable: true,
+      writable: true
+    }) : this[t] = n
+  }
+}

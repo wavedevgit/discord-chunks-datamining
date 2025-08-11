@@ -1,1 +1,1 @@
-{"id":"640108","type":"experiment","data":{"kind":"user","id":"2024-03_media_play_metrics","label":"Media play metrics User Experiment","defaultConfig":{"enabled":false},"treatments":[{"id":1,"label":"Send metrics","config":{"enabled":true}}]},"fromModule":{"id":"web.js"}}
+{"id":"640108","type":"component","data":{},"fromModule":{"id":"web.js"}}

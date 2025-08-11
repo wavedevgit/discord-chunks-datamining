@@ -1,0 +1,36 @@
+/** Chunk was on web.js **/
+/** chunk id: 976015, original params: e,t,n (module,exports,re quire) **/
+"use strict";
+require.d(exports, {
+  Z: () => c
+});
+var Chunk255367 = require("./255367.js"),
+  Chunk793030 = require("./793030.js"),
+  Chunk958783 = require("./958783.jsx"),
+  Chunk499997 = require("./499997.jsx"),
+  Chunk388032 = require("./388032.jsx"),
+  Chunk526361 = require("./526361.js");
+let c = e => {
+  let {
+    showSubtext: t = false
+  } = e;
+  return (0, r.jsxs)(o.Z, {
+    assetComponent: (0, r.jsx)(a.Z, {
+      className: l.orbBadgeAsset
+    }),
+    tooltipWordmarkComponent: (0, r.jsx)(i.X6, {
+      variant: "heading-md/extrabold",
+      className: l.tooltipWordmark,
+      children: s.intl.string(s.t.ElYQFR)
+    }),
+    children: [(0, r.jsx)(i.X6, {
+      variant: "heading-xl/extrabold",
+      className: t ? true : l.orbHeaderWithSpacing,
+      children: s.intl.string(s.t.lTHkqa)
+    }), t ? (0, r.jsx)(i.xv, {
+      variant: "text-xs/normal",
+      className: l.orbSubtext,
+      children: s.intl.string(s.t.MEV0GB)
+    }) : true]
+  })
+}

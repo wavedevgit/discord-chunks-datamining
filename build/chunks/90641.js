@@ -11,11 +11,11 @@ var Chunk570140 = require("./570140.js"),
   Chunk314897 = require("./314897.js"),
   Chunk592125 = require("./592125.js"),
   Chunk979651 = require("./979651.js"),
-  Chunk352954 = require("./352954.js"),
+  Chunk352954 = require("./352954.jsx"),
   Chunk630759 = require("./630759.js"),
   Chunk760373 = require("./760373.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk388032 = require("./388032.js");
+  Chunk388032 = require("./388032.jsx");
 
 function h() {
   let e = Chunk979651.Z.getVoiceStateForUser(Chunk314897.default.getId()),

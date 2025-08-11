@@ -1,1 +1,1 @@
-{"id":"644956","type":"experiment","data":{"kind":"user","id":"2021-07_role_popout","label":"Role Popout","defaultConfig":{"enabled":false},"treatments":[{"id":1,"label":"Enable Popout","config":{"enabled":true}}]},"fromModule":{"id":"web.js"}}
+{"id":"644956","type":"component","data":{},"fromModule":{"id":"web.js"}}

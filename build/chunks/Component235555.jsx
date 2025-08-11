@@ -1,0 +1,112 @@
+/** Chunk was on 1272 **/
+/** chunk id: 235555, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
+  Z: () => E
+}), require("./388685.js");
+var Chunk255367 = require("./255367.js"),
+  Chunk73800 = require("./73800.js"),
+  Chunk392711 = require("./392711.js"),
+  a = require.n(Chunk392711),
+  Chunk442837 = require("./442837.js"),
+  Chunk239091 = require("./239091.js"),
+  Chunk476669 = require("./476669.jsx"),
+  Chunk524331 = require("./524331.js"),
+  Chunk768419 = require("./768419.js"),
+  Chunk831506 = require("./831506.js"),
+  Chunk699516 = require("./699516.js"),
+  Chunk594174 = require("./594174.js"),
+  Chunk823379 = require("./823379.js"),
+  Chunk824138 = require("./824138.jsx"),
+  Chunk388032 = require("./388032.jsx");
+
+function _(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+class O extends Chunk73800.PureComponent {
+  hasParty(e) {
+    return e.length > 1
+  }
+  handleStopListening() {
+    (0, Chunk524331.Z)()
+  }
+  render() {
+    let {
+      currentUser: e,
+      host: t,
+      party: n
+    } = this.props;
+    return this.hasParty(require) && null != module ? (0, Chunk255367.jsx)(Chunk824138.Z, {
+      currentUser: module,
+      host: exports,
+      party: require,
+      renderOverflowPopout: this.renderOverflowPopout,
+      onStopListening: this.handleStopListening,
+      onUserContextMenu: this.handleUserContextMenu
+    }) : null
+  }
+  constructor(...e) {
+    super(...e), _(this, "handleUserContextMenu", (e, t) => {
+      (0, s.jW)(e, async () => {
+        let {
+          default: e
+        } = await Promise.all([n.e("79695"), n.e("69220")]).then(n.bind(n, 881351));
+        return n => {
+          var i, l;
+          return (0, r.jsx)(e, (i = function(e) {
+            for (var t = 1; t < arguments.length; t++) {
+              var n = null != arguments[t] ? arguments[t] : {},
+                r = Object.keys(n);
+              "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+                return Object.getOwnPropertyDescriptor(n, e).enumerable
+              }))), r.forEach(function(t) {
+                _(e, t, n[t])
+              })
+            }
+            return e
+          }({}, n), l = l = {
+            user: t
+          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
+            var n = Object.keys(e);
+            if (Object.getOwnPropertySymbols) {
+              var r = Object.getOwnPropertySymbols(e);
+              n.push.apply(n, r)
+            }
+            return n
+          })(Object(l)).forEach(function(e) {
+            Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(l, e))
+          }), i))
+        }
+      })
+    }), _(this, "renderOverflowPopout", () => {
+      let {
+        party: e
+      } = this.props;
+      return (0, r.jsx)(c.Z, {
+        party: e,
+        header: b.intl.formatToPlainString(b.t.I9et19, {
+          count: e.length
+        })
+      })
+    })
+  }
+}
+let E = Chunk442837.ZP.connectStores([Chunk768419.Z, Chunk594174.default, Chunk699516.Z, Chunk831506.Z], () => {
+  let e, t, n = Chunk768419.Z.getSyncingWith(),
+    r = Chunk768419.Z.getActivity(),
+    i = Chunk594174.default.getCurrentUser(),
+    l = [];
+  if (null != require ? (e = Chunk594174.default.getUser(require.userId), t = require.partyId) : null != Chunk255367 && null != Chunk255367.party && null != Chunk255367.party.id && (e = Chunk73800, t = Chunk255367.party.id), null != exports) {
+    var o;
+    l = a()(Array.from(null != (o = Chunk831506.Z.getParty(exports)) ? Chunk442837 : [])).map(e => h.default.getUser(e)).filter(Chunk823379.lm).orderBy([t => null == e || e.id === t.id, e => f.Z.isFriend(e.id)], ["desc", "desc"]).value()
+  }
+  return {
+    currentUser: Chunk73800,
+    host: module,
+    party: Chunk392711
+  }
+})(O)

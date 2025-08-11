@@ -4,7 +4,7 @@
 require.d(exports, {
   X$: () => i,
   _f: () => o
-}), require("./906732.js");
+}), require("./906732.jsx");
 let r = (0, require("./818083.js").B)({
   kind: "user",
   id: "2023-08_remix_ga",

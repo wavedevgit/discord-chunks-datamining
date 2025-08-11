@@ -1,0 +1,112 @@
+/** Chunk was on web.js **/
+/** chunk id: 740594, original params: e,t,n (module,exports,re quire) **/
+"use strict";
+require.d(exports, {
+  Z: () => _
+});
+var Chunk255367 = require("./255367.js"),
+  Chunk680018 = require("./680018.jsx"),
+  Chunk648613 = require("./648613.jsx"),
+  Chunk864218 = require("./864218.js");
+
+function s(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+
+function l(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      s(e, t, n[t])
+    })
+  }
+  return e
+}
+
+function c(e, t) {
+  var n = Object.keys(e);
+  if (Object.getOwnPropertySymbols) {
+    var r = Object.getOwnPropertySymbols(e);
+    t && (r = r.filter(function(t) {
+      return Object.getOwnPropertyDescriptor(e, t).enumerable
+    })), n.push.apply(n, r)
+  }
+  return n
+}
+
+function u(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : c(Object(t)).forEach(function(n) {
+    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+  }), e
+}
+
+function d(e, t) {
+  if (null == e) return {};
+  var n, r, i = f(e, t);
+  if (Object.getOwnPropertySymbols) {
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+  }
+  return i
+}
+
+function f(e, t) {
+  if (null == e) return {};
+  var n, r, i = {},
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+  return i
+}
+let _ = function(e) {
+  var {
+    subscriptionTier: t,
+    onClick: n,
+    postSuccessGuild: s,
+    onSubscribeModalClose: c,
+    premiumModalAnalyticsLocation: f,
+    applicationId: _,
+    confirmationFooter: p,
+    paymentModalBanner: h,
+    buttonTextOverride: m,
+    defaultTextOverride: g,
+    iconOverride: E,
+    variantOverride: b
+  } = e, y = d(e, ["subscriptionTier", "onClick", "postSuccessGuild", "onSubscribeModalClose", "premiumModalAnalyticsLocation", "applicationId", "confirmationFooter", "paymentModalBanner", "buttonTextOverride", "defaultTextOverride", "iconOverride", "variantOverride"]);
+  let O = {
+      onClick: n,
+      subscriptionTier: t,
+      postSuccessGuild: s,
+      onSubscribeModalClose: c,
+      premiumModalAnalyticsLocation: f,
+      applicationId: _,
+      confirmationFooter: p,
+      paymentModalBanner: h
+    },
+    {
+      subscribeButtonProps: v
+    } = (0, a.F)({
+      subscriptionTier: t,
+      buttonTextOverride: m,
+      defaultTextOverride: g,
+      iconOverride: E,
+      variantOverride: b
+    });
+  return (0, r.jsx)(o.Z, u(l({}, O), {
+    children: e => {
+      let {
+        onClick: t
+      } = e;
+      return (0, r.jsx)(i.z, l({
+        onClick: t
+      }, v, y))
+    }
+  }))
+}

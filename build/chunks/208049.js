@@ -29,7 +29,7 @@ var Chunk392711 = require("./392711.js"),
   Chunk710111 = require("./710111.js"),
   Chunk981631 = require("./981631.js"),
   Chunk526761 = require("./526761.js"),
-  Chunk388032 = require("./388032.js");
+  Chunk388032 = require("./388032.jsx");
 let E = async () => {
   try {
     let e = (await Chunk544891.tn.get({

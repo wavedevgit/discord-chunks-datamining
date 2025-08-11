@@ -1,0 +1,35 @@
+/** Chunk was on 54844 **/
+/** chunk id: 289809, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
+  Z: () => o
+});
+var Chunk255367 = require("./255367.js"),
+  Chunk73800 = require("./73800.js"),
+  Chunk481060 = require("./481060.js"),
+  Chunk454585 = require("./454585.js"),
+  Chunk126694 = require("./126694.js");
+
+function o(e) {
+  let {
+    element: {
+      data: {
+        header: t,
+        body: n,
+        is_localized: o
+      }
+    }
+  } = e, c = l.useRef(a.Z.reactParserFor(a.Z.defaultRules));
+  return o && (null != t || null != n) ? (0, r.jsxs)("div", {
+    className: s.container,
+    children: [null != t && (0, r.jsx)(i.X6q, {
+      variant: "heading-sm/semibold",
+      color: "header-secondary",
+      className: s.header,
+      children: t
+    }), null != n && (0, r.jsx)(i.Text, {
+      variant: "text-sm/normal",
+      className: s.bodyText,
+      children: c.current(n)
+    })]
+  }) : null
+}

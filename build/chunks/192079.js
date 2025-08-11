@@ -13,7 +13,7 @@ var Chunk19780 = require("./19780.js"),
   Chunk157925 = require("./157925.js"),
   Chunk981631 = require("./981631.js"),
   Chunk71080 = require("./71080.js"),
-  Chunk388032 = require("./388032.js");
+  Chunk388032 = require("./388032.jsx");
 
 function d(e, t, n, r) {
   let o = t[0],

@@ -6,12 +6,12 @@ require.d(exports, {
 var Chunk278323 = require("./278323.js"),
   Chunk13245 = require("./13245.js"),
   Chunk45114 = require("./45114.js"),
-  Chunk593481 = require("./593481.js"),
+  Chunk593481 = require("./593481.jsx"),
   Chunk237997 = require("./237997.js"),
   Chunk312839 = require("./312839.js"),
   Chunk981631 = require("./981631.js"),
   Chunk987650 = require("./987650.js"),
-  Chunk388032 = require("./388032.js");
+  Chunk388032 = require("./388032.jsx");
 
 function h(e, t, n, h) {
   let p = t.username,

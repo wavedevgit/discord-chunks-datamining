@@ -4,7 +4,7 @@
 require.d(exports, {
   $: () => i
 });
-var Chunk881824 = require("./881824.js");
+var Chunk881824 = require("./881824.jsx");
 
 function i(e) {
   r.$Q(e)

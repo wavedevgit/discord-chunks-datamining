@@ -5,7 +5,7 @@ require.d(exports, {
 });
 var Chunk70956 = require("./70956.js"),
   Chunk51144 = require("./51144.js"),
-  Chunk388032 = require("./388032.js");
+  Chunk388032 = require("./388032.jsx");
 let a = +Chunk70956.Z.Millis.DAY;
 
 function s(e) {

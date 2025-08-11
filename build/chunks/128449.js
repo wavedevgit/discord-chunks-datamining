@@ -19,7 +19,7 @@ require.d(exports, {
   vf: () => p
 }), require("./388685.js");
 var Chunk70956 = require("./70956.js"),
-  Chunk388032 = require("./388032.js");
+  Chunk388032 = require("./388032.jsx");
 
 function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {

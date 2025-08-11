@@ -5,7 +5,7 @@ require.d(exports, {
   k: () => o
 });
 var Chunk70956 = require("./70956.js"),
-  Chunk388032 = require("./388032.js");
+  Chunk388032 = require("./388032.jsx");
 
 function o(e) {
   if (e >= r.Z.Seconds.HOUR) {

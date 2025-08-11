@@ -9,7 +9,7 @@ require.d(exports, {
 }), require("./539854.js"), require("./388685.js"), require("./35282.js");
 var Chunk515149 = require("./515149.js"),
   Chunk362383 = require("./362383.js"),
-  Chunk388032 = require("./388032.js"),
+  Chunk388032 = require("./388032.jsx"),
   Chunk252517 = require("./252517.js");
 r = require("./330711.js").Z;
 let l = (0, Chunk362383.F)((e, t) => ({

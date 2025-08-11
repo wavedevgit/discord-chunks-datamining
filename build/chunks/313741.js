@@ -9,7 +9,7 @@ var Chunk73800 = require("./73800.js"),
   Chunk101492 = require("./101492.js"),
   Chunk710091 = require("./710091.js"),
   Chunk496675 = require("./496675.js"),
-  Chunk388032 = require("./388032.js");
+  Chunk388032 = require("./388032.jsx");
 let o = {
     "server-subscriptions-onboarding": Chunk710091.Z,
     "server-subscriptions-finish-setting-up": Chunk101492.Z,

@@ -1,0 +1,316 @@
+/** Chunk was on web.js **/
+/** chunk id: 665149, original params: e,t,n (module,exports,re quire) **/
+"use strict";
+require.d(exports, {
+  JO: () => v,
+  ZP: () => N,
+  iz: () => T
+});
+var Chunk255367 = require("./255367.js"),
+  Chunk73800 = require("./73800.js"),
+  Chunk120356 = require("./120356.js"),
+  a = require.n(Chunk120356),
+  Chunk608863 = require("./608863.jsx"),
+  Chunk873546 = require("./873546.js"),
+  Chunk481060 = require("./481060.js"),
+  Chunk290297 = require("./290297.js"),
+  Chunk686546 = require("./686546.jsx"),
+  Chunk79712 = require("./79712.jsx"),
+  Chunk658672 = require("./658672.js");
+
+function p(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+
+function h(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      p(e, t, n[t])
+    })
+  }
+  return e
+}
+
+function m(e, t) {
+  var n = Object.keys(e);
+  if (Object.getOwnPropertySymbols) {
+    var r = Object.getOwnPropertySymbols(e);
+    t && (r = r.filter(function(t) {
+      return Object.getOwnPropertyDescriptor(e, t).enumerable
+    })), n.push.apply(n, r)
+  }
+  return n
+}
+
+function g(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
+    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+  }), e
+}
+
+function E(e, t) {
+  if (null == e) return {};
+  var n, r, i = b(e, t);
+  if (Object.getOwnPropertySymbols) {
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+  }
+  return i
+}
+
+function b(e, t) {
+  if (null == e) return {};
+  var n, r, i = {},
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+  return i
+}
+let y = 24,
+  O = e => {
+    let {
+      className: t,
+      wrapperClassName: n,
+      children: i,
+      onContextMenu: o,
+      onClick: s,
+      onKeyDown: l,
+      id: u,
+      muted: d = false,
+      level: f = 1,
+      ref: p
+    } = e, h = (0, r.jsx)(c.y5t, {
+      forceLevel: f,
+      children: (0, r.jsx)(c.X6q, {
+        variant: "text-md/medium",
+        color: d ? "header-secondary" : true,
+        className: a()(t, _.title, {
+          [_.titleClickable]: null != s
+        }),
+        id: u,
+        children: i
+      })
+    });
+    return null != s ? (0, r.jsx)(c.P3F, {
+      innerRef: p,
+      onClick: s,
+      onContextMenu: o,
+      onKeyDown: l,
+      className: a()(n, _.titleWrapper),
+      children: h
+    }) : (0, r.jsx)("div", {
+      ref: p,
+      className: a()(n, _.titleWrapper),
+      onContextMenu: o,
+      onKeyDown: l,
+      children: h
+    })
+  },
+  v = Chunk73800.forwardRef(function(e, t) {
+    let {
+      className: n,
+      iconClassName: i,
+      children: o,
+      selected: s = false,
+      disabled: l = false,
+      showBadge: u = false,
+      badgePosition: f = "bottom",
+      color: p,
+      foreground: m,
+      background: g,
+      icon: E,
+      iconSize: b = y,
+      onClick: O,
+      onContextMenu: v,
+      tooltip: I = null,
+      tooltipColor: T,
+      tooltipPosition: S = "bottom",
+      tooltipAlign: A,
+      tooltipDisabled: N,
+      tooltipSpacing: C,
+      hideOnClick: R = true,
+      role: P,
+      "aria-label": w,
+      "aria-hidden": D,
+      "aria-checked": L,
+      "aria-expanded": x,
+      "aria-haspopup": M,
+      "data-jump-section": k
+    } = e, j = null != g ? {
+      secondaryColorClass: g
+    } : {}, U = (0, r.jsx)(E, h({
+      x: 0,
+      y: 0,
+      width: b,
+      height: b,
+      size: "custom",
+      className: a()(i, _.icon),
+      colorClass: null != m ? m : true,
+      color: null != p ? p : "currentColor"
+    }, j)), G = w;
+    return null == G && "string" == typeof I && (G = I), (0, r.jsx)(c.ua7, {
+      text: I,
+      color: T,
+      position: S,
+      align: A,
+      hideOnClick: R,
+      shouldShow: !N,
+      spacing: C,
+      children: e => {
+        let {
+          onMouseEnter: g,
+          onMouseLeave: y,
+          onFocus: I,
+          onBlur: T
+        } = e;
+        return null == O ? (0, r.jsx)("div", {
+          ref: t,
+          className: a()(n, _.iconWrapper, {
+            [_.iconDisabled]: l
+          }),
+          children: (0, r.jsx)(E, h({
+            x: 0,
+            y: 0,
+            width: b,
+            height: b,
+            size: "custom",
+            className: a()(i, _.icon),
+            colorClass: null != m ? m : true,
+            color: null != p ? p : "currentColor",
+            "aria-hidden": D,
+            onMouseEnter: g,
+            onMouseLeave: y,
+            onFocus: I,
+            onBlur: T
+          }, j))
+        }) : (0, r.jsxs)(c.P3F, {
+          innerRef: t,
+          tag: "div",
+          onClick: l ? true : O,
+          onContextMenu: l ? true : v,
+          onMouseEnter: g,
+          onMouseLeave: y,
+          onFocus: I,
+          onBlur: T,
+          className: a()(n, {
+            [_.iconWrapper]: true,
+            [_.clickable]: !l && null != O,
+            [_.selected]: s,
+            [_.iconDisabled]: l
+          }),
+          role: P,
+          "aria-label": G,
+          "aria-hidden": D,
+          "aria-checked": L,
+          "aria-haspopup": M,
+          "aria-expanded": x,
+          tabIndex: l || null == O ? false : 0,
+          "data-jump-section": k,
+          children: [u ? (0, r.jsx)(d.ZP, {
+            mask: "top" === f ? d.ZP.Masks.HEADER_BAR_BADGE_TOP : d.ZP.Masks.HEADER_BAR_BADGE_BOTTOM,
+            height: b,
+            width: b,
+            children: U
+          }) : U, u ? (0, r.jsx)("span", {
+            className: a()(_.iconBadge, "top" === f ? _.iconBadgeTop : _.iconBadgeBottom)
+          }) : null, o]
+        })
+      }
+    })
+  }),
+  I = Chunk73800.forwardRef(function(e, t) {
+    var {
+      className: n
+    } = e, i = E(e, ["className"]);
+    return (0, r.jsx)(v, g(h({}, i), {
+      className: a()(_.channelIcon, n),
+      ref: t
+    }))
+  }),
+  T = e => {
+    let {
+      className: t
+    } = e;
+    return (0, r.jsx)(f.Z, {
+      className: a()(_.dot, t)
+    })
+  };
+
+function S(e) {
+  let {
+    direction: t = "right",
+    className: n
+  } = e;
+  return "right" === t ? (0, r.jsx)(c.Fbu, {
+    size: "md",
+    color: "currentColor",
+    className: a()(_.caret, n)
+  }) : (0, r.jsx)(c.V7D, {
+    size: "md",
+    color: "currentColor",
+    className: a()(_.caret, n)
+  })
+}
+let A = e => {
+  let {
+    className: t,
+    innerClassName: n,
+    toolbarClassName: o,
+    children: d,
+    childrenBottom: f,
+    toolbar: p,
+    onDoubleClick: h,
+    "aria-label": m,
+    "aria-labelledby": g,
+    role: E,
+    scrollable: b,
+    transparent: y = false,
+    showToolbar: O = true
+  } = e, v = i.useRef(null), I = i.useContext(u.Z);
+  return (0, r.jsx)("section", {
+    className: a()(t, _.container, {
+      [_.themed]: !y,
+      [_.transparent]: y,
+      [_.themedMobile]: l.tq,
+      [_.showToolbar]: O
+    }),
+    "aria-label": m,
+    "aria-labelledby": g,
+    role: E,
+    ref: v,
+    children: (0, r.jsxs)(c.JcV, {
+      containerRef: v,
+      children: [(0, r.jsxs)("div", {
+        className: a()(_.upperContainer, {
+          [_.showToolbar]: O
+        }),
+        children: [(0, r.jsxs)("div", {
+          className: a()(_.children, n, {
+            [_.scrollable]: b,
+            [_.showToolbar]: O
+          }),
+          onDoubleClick: h,
+          children: [l.tq && null != I ? (0, r.jsx)(s.r, {
+            onClick: I,
+            className: _.hamburger
+          }) : null, d]
+        }), null != p ? (0, r.jsx)("div", {
+          className: a()(_.toolbar, o, {
+            [_.showToolbar]: O
+          }),
+          children: p
+        }) : null]
+      }), f]
+    })
+  })
+};
+A.Icon = v, A.ChannelIcon = I, A.Title = O, A.Divider = T, A.Caret = S;
+let N = A

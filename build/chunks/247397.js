@@ -7,7 +7,7 @@ require.d(exports, {
   rR: () => a
 });
 var Chunk296009 = require("./296009.js"),
-  Chunk388032 = require("./388032.js");
+  Chunk388032 = require("./388032.jsx");
 let o = {
     [Chunk296009.l.FAVORITE_GAMES]: 1,
     [Chunk296009.l.CURRENT_GAMES]: 3,

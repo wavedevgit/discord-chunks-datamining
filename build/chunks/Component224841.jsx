@@ -1,0 +1,32 @@
+/** Chunk was on 27978 **/
+/** chunk id: 224841, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
+  Z: () => u
+});
+var Chunk255367 = require("./255367.js");
+require("./73800.js");
+var Chunk481060 = require("./481060.js"),
+  Chunk388905 = require("./388905.jsx"),
+  Chunk63063 = require("./63063.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk388032 = require("./388032.jsx"),
+  Chunk963650 = require("./963650.js");
+let u = () => (0, Chunk255367.jsx)(Chunk388905.ZP, {
+  children: (0, Chunk255367.jsxs)("div", {
+    className: Chunk963650.contentContainer,
+    children: [(0, Chunk255367.jsx)(Chunk388905.Dx, {
+      className: Chunk963650.title,
+      children: Chunk388032.intl.string(Chunk388032.t.nCB6GR)
+    }), (0, Chunk255367.jsx)(Chunk388905.DK, {
+      className: Chunk963650.subtitle,
+      children: Chunk388032.intl.format(Chunk388032.t.KQgoxM, {
+        underageMessage: Chunk388032.intl.string(Chunk388032.t.WqEH4O)
+      })
+    }), (0, Chunk255367.jsx)(Chunk481060.zxk, {
+      icon: Chunk481060.Gr1,
+      text: Chunk388032.intl.string(Chunk388032.t.hvVgAQ),
+      onClick: () => window.open(Chunk63063.Z.getArticleURL(Chunk981631.BhN.AGE_GATE), "_blank"),
+      iconPosition: "end"
+    })]
+  })
+})

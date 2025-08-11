@@ -12,7 +12,7 @@ require.d(exports, {
   n4: () => a,
   zr: () => i
 });
-var Chunk388032 = require("./388032.js");
+var Chunk388032 = require("./388032.jsx");
 let i = "SAFETY_WARNING_BANNER_WEB",
   o = "https://www.crisistextline.org/",
   a = "https://nofiltr.org/resources-hub/",

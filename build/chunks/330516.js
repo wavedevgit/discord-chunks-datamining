@@ -6,7 +6,7 @@ require.d(exports, {
 });
 var Chunk424218 = require("./424218.js"),
   Chunk186901 = require("./186901.js"),
-  Chunk388032 = require("./388032.js");
+  Chunk388032 = require("./388032.jsx");
 
 function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {

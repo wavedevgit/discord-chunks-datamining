@@ -1,0 +1,303 @@
+/** Chunk was on 54844 **/
+/** chunk id: 255514, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
+  Z: () => Q
+}), require("./388685.js"), require("./457542.js");
+var Chunk255367 = require("./255367.js"),
+  Chunk73800 = require("./73800.js"),
+  Chunk741086 = require("./741086.js"),
+  Chunk481060 = require("./481060.js"),
+  Chunk600164 = require("./600164.jsx"),
+  Chunk155647 = require("./155647.js"),
+  Chunk185625 = require("./185625.js"),
+  Chunk273389 = require("./273389.jsx"),
+  Chunk778231 = require("./778231.jsx"),
+  Chunk816342 = require("./816342.jsx"),
+  Chunk15667 = require("./15667.jsx"),
+  Chunk76264 = require("./76264.jsx"),
+  Chunk805746 = require("./805746.jsx"),
+  Chunk822686 = require("./822686.jsx"),
+  Chunk356110 = require("./356110.jsx"),
+  Chunk730719 = require("./730719.jsx"),
+  Chunk996701 = require("./996701.jsx"),
+  Chunk238122 = require("./238122.jsx"),
+  Chunk273514 = require("./273514.jsx"),
+  Chunk995712 = require("./995712.jsx"),
+  Chunk763431 = require("./763431.jsx"),
+  Chunk234937 = require("./234937.jsx"),
+  Chunk473121 = require("./473121.jsx"),
+  Chunk497954 = require("./497954.jsx"),
+  Chunk449413 = require("./449413.jsx"),
+  Chunk266080 = require("./266080.jsx"),
+  Chunk316617 = require("./316617.jsx"),
+  Chunk15682 = require("./15682.jsx"),
+  Chunk189472 = require("./189472.jsx"),
+  Chunk749534 = require("./749534.jsx"),
+  Chunk157759 = require("./157759.jsx"),
+  Chunk521332 = require("./521332.jsx"),
+  Chunk905434 = require("./905434.jsx"),
+  Chunk196627 = require("./196627.jsx"),
+  Chunk289809 = require("./289809.jsx"),
+  Chunk739319 = require("./739319.jsx"),
+  Chunk842401 = require("./842401.jsx"),
+  Chunk375790 = require("./375790.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk388032 = require("./388032.jsx"),
+  Chunk130883 = require("./130883.js"),
+  Chunk88309 = require("./88309.js");
+
+function X(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      var r;
+      r = n[t], t in e ? Object.defineProperty(e, t, {
+        value: r,
+        enumerable: true,
+        configurable: true,
+        writable: true
+      }) : e[t] = r
+    })
+  }
+  return e
+}
+let q = ["user_urf", "message_urf", "guild_urf"];
+
+function H(e, t) {
+  let {
+    elements: n
+  } = e;
+  return n.find(e => {
+    let {
+      type: n
+    } = e;
+    return n === t
+  })
+}
+
+function V(e, t) {
+  let {
+    elements: n
+  } = e;
+  return n.filter(e => {
+    let {
+      type: n
+    } = e;
+    return n === t
+  })
+}
+let Q = e => {
+  let {
+    node: t,
+    reportType: n,
+    reportSubType: Q,
+    history: K,
+    onSelectChild: J,
+    onModalClose: Y,
+    onSubmit: $,
+    multiSelect: ee,
+    reportId: et,
+    textInput: en
+  } = e, er = H(t, "checkbox"), el = H(t, "text_line_resource"), ei = V(t, "external_link"), ea = V(t, "free_text"), es = V(t, "dropdown"), eo = H(t, "text"), ec = i.s.REPORT_TO_MOD.has(n.name), [ed, eu] = l.useState(false), [em, ep] = l.useState(false), [eg, ex] = l.useState(""), [e_, eb] = l.useState(() => ({})), [eh, ef] = l.useState(() => ({})), ev = l.useMemo(() => "message" === n.name ? n.record.channel_id : true, [n]), ej = l.useCallback(e => ({
+    nodeRef: t.id,
+    destination: e,
+    textInput: null != ea || null != es ? eh : true,
+    multiSelect: null != er ? {
+      name: er.name,
+      state: e_
+    } : true
+  }), [t, ea, es, er, e_, eh]), ey = l.useMemo(() => (0, c.VP)(ea, es, er, eh, e_), [ea, es, er, eh, e_]), eO = function(e, t) {
+    let n = !(arguments.length > 2) || true === arguments[2] || arguments[2],
+      r = X({}, eh);
+    r[e] = {
+      value: t,
+      isValid: n
+    }, ef(r)
+  }, eZ = e => {
+    J(ej(e))
+  };
+  l.useEffect(() => {
+    null != ee && eb(ee), null != en && ef(en)
+  }, [ee, en]), l.useEffect(() => {
+    if (null != er) {
+      let e = er.data;
+      if (null != e)
+        for (let [t, n, r, l] of e) l && eb(e => (function(e, t) {
+          return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
+            var n = Object.keys(e);
+            if (Object.getOwnPropertySymbols) {
+              var r = Object.getOwnPropertySymbols(e);
+              n.push.apply(n, r)
+            }
+            return n
+          })(Object(t)).forEach(function(n) {
+            Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+          }), e
+        })(X({}, e), {
+          [t]: n
+        }))
+    }
+  }, [er]);
+  let eI = e => {
+      e === G.evJ.INVALID_FORM_BODY ? ex(z.intl.string(z.t.VjAAuL)) : ec ? ex(z.intl.string(W.default.psKFdH)) : ex(z.intl.string(z.t.h6D8V1))
+    },
+    eC = () => {
+      let t = ["", e.successNodeId];
+      $(ej(t)).then(() => {
+        ex(""), eZ(t)
+      }).catch(e => {
+        var t;
+        eI(null == (t = e.body) ? true : t.code)
+      }).finally(() => {
+        eu(false)
+      })
+    };
+  l.useEffect(() => {
+    t.is_auto_submit && !em && (ep(true), $(ej(["", t.id])))
+  }, [t.is_auto_submit, em, $, ej, t.id]);
+  let eS = (0, o.fW)(Q),
+    eN = null != H(t, "ignore_users") && ("message" === n.name || "first_dm" === n.name || "user" === n.name);
+  return (0, r.jsxs)("div", {
+    className: F.container,
+    children: [(0, r.jsxs)(a.xBx, {
+      "data-migration-pending": true,
+      separator: false,
+      direction: s.Z.Direction.VERTICAL,
+      className: F.header,
+      children: [(0, r.jsx)(M.Z, {
+        element: H(t, "success")
+      }), (0, r.jsx)(I.Z, {
+        node: t,
+        isModeratorReport: ec
+      }), (0, r.jsx)(S.Z, {
+        node: t
+      })]
+    }), (0, r.jsxs)(a.hzk, {
+      "data-migration-pending": true,
+      className: F.body,
+      children: [null != el && (0, r.jsx)(L.Z, {
+        element: el
+      }), null != eo && (0, r.jsx)(A.Z, {
+        element: eo
+      }), null != H(t, "message_preview") && ("message" === n.name || "first_dm" === n.name || "report_to_mod_message" === n.name) && (0, r.jsx)(T.Z, {
+        message: n.record
+      }), null != H(t, "user_preview") && "user" === n.name ? (0, r.jsx)(B.Z, {
+        user: n.record
+      }) : null, null != H(t, "guild_preview") && "guild" === n.name ? (0, r.jsx)(O.Z, {
+        guild: n.record
+      }) : null, null != H(t, "breadcrumbs") && (0, r.jsx)(p.Z, {
+        isModeratorReport: ec,
+        history: K
+      }), function(e) {
+        let {
+          elements: t
+        } = e;
+        return t.some(e => {
+          let {
+            type: t
+          } = e;
+          return U.O.includes(t)
+        })
+      }(t) && (0, r.jsxs)(k.Z, {
+        children: [eN && (0, r.jsx)(C.Z, {
+          user: "user" === n.name ? n.record : n.record.author,
+          channelId: ev,
+          reportId: et
+        }), null != H(t, "block_users") && ("message" === n.name || "first_dm" === n.name || "user" === n.name || "report_to_mod_message" === n.name || "application" === n.name && null != n.record.bot) && (0, r.jsx)(m.Z, {
+          user: "application" === n.name ? n.record.bot : "user" === n.name ? n.record : n.record.author,
+          channelId: ev,
+          reportId: et,
+          reportType: n
+        }), !eN && null != H(t, "mute_users") && ("message" === n.name || "first_dm" === n.name || "user" === n.name || "report_to_mod_message" === n.name) && (0, r.jsx)(E.Z, {
+          user: "user" === n.name ? n.record : n.record.author,
+          channelId: ev,
+          reportId: et
+        }), null != H(t, "delete_message") && ("message" === n.name || "report_to_mod_message" === n.name) && (0, r.jsx)(_.Z, {
+          message: n.record,
+          reportId: et
+        }), null != H(t, "leave_guild") && "guild" === n.name && (0, r.jsx)(N.Z, {
+          guildId: n.record.id,
+          reportId: et
+        }), null != H(t, "deauthorize_app") && "application" === n.name && (0, r.jsx)(x.Z, {
+          application: n.record,
+          reportId: et
+        }), null != H(t, "deauthorize_app") && "application" === n.name && (0, r.jsx)(D.Z, {
+          application: n.record,
+          reportId: et
+        })]
+      }), null != H(t, "settings_upsells") && ("message" === n.name || "report_to_mod_message" === n.name) && null != eS && (0, r.jsx)(R.Z, {
+        settingsUpsells: eS,
+        channelId: n.record.channel_id,
+        onModalClose: Y,
+        reportId: et,
+        reportType: n,
+        reportSubType: Q
+      }), null != H(t, "channel_preview") && "stage_channel" === n.name && (0, r.jsx)(w.Z, {
+        stageInstance: n.record
+      }), null != H(t, "guild_scheduled_event_preview") && "guild_scheduled_event" === n.name && (0, r.jsx)(Z.Z, {
+        event: n.record
+      }), null != H(t, "guild_directory_entry_preview") && "guild_directory_entry" === n.name && (0, r.jsx)(j.Z, {
+        entry: n.record
+      }), null != H(t, "guild_discovery_preview") && "guild_discovery" === n.name && (0, r.jsx)(y.Z, {
+        entry: n.record
+      }), null != H(t, "app_preview") && "application" === n.name && (0, r.jsx)(u.Z, {
+        entry: n.record
+      }), null != er && (0, r.jsx)(P.Z, {
+        element: er,
+        onChange: (e, t) => {
+          let n = X({}, e_);
+          e in e_ ? delete n[e] : n[e] = t, eb(n)
+        },
+        state: e_
+      }), q.includes(n.name) && null != es && es.length > 0 && (0, r.jsx)(b.Z, {
+        elements: es,
+        onChange: eO,
+        state: eh
+      }), q.includes(n.name) && null != ea && ea.length > 0 && (0, r.jsx)(v.Z, {
+        elements: ea,
+        onChange: eO,
+        state: eh
+      }), (0, r.jsxs)("div", {
+        className: F.listContainer,
+        children: [(0, r.jsx)(g.Z, {
+          node: t,
+          onSelectChild: eZ
+        }), null != ei && ei.length > 0 ? (0, r.jsx)(f.Z, {
+          elements: ei
+        }) : null]
+      }), (0, r.jsx)(h.Z, {
+        errorMessage: eg,
+        onClose: () => {
+          ex("")
+        }
+      })]
+    }), (0, r.jsx)(d.Z, {
+      button: t.button,
+      submitting: ed,
+      disableNext: ey,
+      isModeratorReport: ec,
+      onClick: e => {
+        switch (e.type) {
+          case "done":
+          case "cancel":
+            Y();
+            break;
+          case "next":
+            eZ(["", e.target]);
+            break;
+          case "submit":
+            eu(true), eC()
+        }
+      },
+      onBackClicked: e.onNavigateBack,
+      canNavigateBack: K.length > 0
+    }), (0, r.jsx)(a.olH, {
+      "data-migration-pending": true,
+      className: F.closeButton,
+      onClick: Y
+    })]
+  })
+}

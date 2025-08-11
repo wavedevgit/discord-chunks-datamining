@@ -1,0 +1,35 @@
+/** Chunk was on 42018 **/
+/** chunk id: 343056, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
+  Z: () => l
+});
+var Chunk255367 = require("./255367.js"),
+  Chunk481060 = require("./481060.js");
+
+function l(e) {
+  (0, r.ZDy)(async () => {
+    let {
+      default: t
+    } = await n.e("7099").then(n.bind(n, 846632));
+    return n => (0, i.jsx)(t, function(e) {
+      for (var t = 1; t < arguments.length; t++) {
+        var n = null != arguments[t] ? arguments[t] : {},
+          i = Object.keys(n);
+        "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+          return Object.getOwnPropertyDescriptor(n, e).enumerable
+        }))), i.forEach(function(t) {
+          var i;
+          i = n[t], t in e ? Object.defineProperty(e, t, {
+            value: i,
+            enumerable: true,
+            configurable: true,
+            writable: true
+          }) : e[t] = i
+        })
+      }
+      return e
+    }({
+      guildId: e
+    }, n))
+  })
+}

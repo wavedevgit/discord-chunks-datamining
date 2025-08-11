@@ -81,7 +81,7 @@ function I(e, t) {
   for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-require("./388032.js");
+require("./388032.jsx");
 
 function T() {
   (0, Chunk367907.yw)(Chunk981631.rMx.THREAD_BROWSER_TAB_CHANGED)

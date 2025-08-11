@@ -1,0 +1,163 @@
+/** Chunk was on 46746 **/
+/** chunk id: 560749, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
+  Z: () => E
+}), require("./35282.js"), require("./539854.js"), require("./388685.js"), require("./387201.js"), require("./642613.js");
+var Chunk255367 = require("./255367.js"),
+  Chunk73800 = require("./73800.js"),
+  Chunk120356 = require("./120356.js"),
+  s = require.n(Chunk120356),
+  Chunk442837 = require("./442837.js"),
+  Chunk481060 = require("./481060.js"),
+  Chunk212819 = require("./212819.js"),
+  Chunk938078 = require("./938078.js"),
+  Chunk318374 = require("./318374.jsx"),
+  Chunk823385 = require("./823385.js"),
+  Chunk601565 = require("./601565.js"),
+  Chunk131704 = require("./131704.js"),
+  Chunk601964 = require("./601964.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk580005 = require("./580005.js"),
+  Chunk984933 = require("./984933.js"),
+  Chunk430824 = require("./430824.js"),
+  Chunk496675 = require("./496675.js"),
+  Chunk914010 = require("./914010.js"),
+  Chunk594174 = require("./594174.js"),
+  Chunk938475 = require("./938475.js"),
+  Chunk823379 = require("./823379.js"),
+  Chunk102172 = require("./102172.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk676462 = require("./676462.js"),
+  Chunk388032 = require("./388032.jsx"),
+  Chunk152965 = require("./152965.js");
+
+function T(e) {
+  let {
+    result: t,
+    onSelectChannel: n
+  } = e, i = (0, o.e7)([v.Z], () => v.Z.getGuild(t.record.guild_id)), l = (0, o.Wu)([C.ZP, S.default], () => C.ZP.getVoiceStatesForChannel(t.record).map(e => S.default.getUser(e.user.id)).filter(y.lm));
+  return (0, r.jsxs)(a.P3F, {
+    className: N.channelResult,
+    onClick: () => n(t.record.id),
+    children: [(0, r.jsxs)("div", {
+      className: N.channelResultInfo,
+      children: [(0, r.jsx)("img", {
+        alt: "",
+        src: null != i ? (0, p.EB)(i, 32) : true,
+        className: N.guildIcon
+      }), (0, r.jsxs)("div", {
+        children: [(0, r.jsxs)(a.Text, {
+          className: N.channelName,
+          variant: "text-md/medium",
+          color: "interactive-normal",
+          children: [(0, r.jsx)(a.gj8, {
+            size: "xs",
+            color: "currentColor"
+          }), " ", t.record.name]
+        }), (0, r.jsx)(a.Text, {
+          variant: "text-xs/medium",
+          color: "text-muted",
+          children: null == i ? true : i.name
+        })]
+      })]
+    }), (0, r.jsx)(u.Z, {
+      users: l,
+      maxUsers: 3,
+      hideOverflowCount: true
+    })]
+  })
+}
+
+function E(e) {
+  let {
+    onSelectChannel: t,
+    className: n
+  } = e, {
+    search: l,
+    query: u,
+    results: p
+  } = (0, m.Z)({
+    searchOptions: {
+      frecencyBoosters: true
+    }
+  }), S = (0, o.Wu)([b.Z, _.ZP, x.Z, v.Z, j.Z], () => {
+    let e = [],
+      t = b.Z.getGuildId();
+    if (null == t) return e;
+    for (let n of _.ZP.getVocalChannelIds(t)) {
+      let t = x.Z.getChannel(n);
+      null != t && (0, O.JL)(t, v.Z, j.Z) && e.push(t)
+    }
+    return e
+  }), C = (0, o.Wu)([f.Z, x.Z, g.Z, v.Z, j.Z], () => {
+    let e = [],
+      t = new Set;
+    for (let n of f.Z.getChannelHistory()) {
+      let r = x.Z.getChannel(n);
+      (null == r ? true : r.type) === I.d4z.GUILD_VOICE && (0, O.JL)(r, v.Z, j.Z) && (t.add(r.id), e.push(r))
+    }
+    for (let n of g.Z.getFrequentlyWithoutFetchingLatest()) n instanceof h.Sf && n.type === I.d4z.GUILD_VOICE && !t.has(n.id) && (0, O.JL)(n, v.Z, j.Z) && (t.add(n.id), e.push(n));
+    return e
+  }), E = i.useMemo(() => {
+    let e = new Set(C.map(e => e.id)),
+      t = new Set(S.map(e => e.id));
+    return [...S.toSorted((t, n) => e.has(t.id) && !e.has(n.id) ? false : e.has(n.id) && !e.has(t.id) ? 1 : 0).map(e => (0, d.Z)(e.id)).filter(y.lm), ...C.filter(e => !t.has(e.id)).map(e => (0, d.Z)(e.id)).filter(y.lm)]
+  }, [C, S]), R = "" !== u ? p : E;
+  return (0, r.jsxs)("div", {
+    className: s()(N.root, n),
+    children: [(0, r.jsx)(a.E1j, {
+      className: N.searchBar,
+      placeholder: w.intl.string(w.t["3jvv+/"]),
+      query: u,
+      onChange: e => l({
+        query: e,
+        resultTypes: [c.h8.VOICE_CHANNEL]
+      }),
+      onClear: () => l({
+        query: "",
+        resultTypes: [c.h8.VOICE_CHANNEL]
+      }),
+      autoFocus: true
+    }), R.length > 0 ? (0, r.jsx)(a.aVo, {
+      renderListHeader: function() {
+        return (0, r.jsx)(a.Text, {
+          variant: "text-xs/semibold",
+          color: "text-muted",
+          children: w.intl.string(Z.default.FZ9Fl5)
+        })
+      },
+      sections: [R.length],
+      sectionHeight: 0,
+      rowHeight: 48,
+      renderRow: function(e) {
+        let {
+          rowIndex: n
+        } = e, i = R[n];
+        return (0, r.jsx)(T, {
+          result: i,
+          onSelectChannel: t
+        }, i.record.id)
+      }
+    }) : (0, r.jsx)(P, {})]
+  })
+}
+
+function P() {
+  return (0, Chunk255367.jsxs)("div", {
+    className: Chunk152965.emptyState,
+    children: [(0, Chunk255367.jsx)(Chunk481060._Ve, {
+      className: Chunk152965.emptyIcon,
+      size: "md",
+      color: Chunk481060.TVs.colors.ICON_MUTED
+    }), (0, Chunk255367.jsx)(Chunk481060.Text, {
+      className: Chunk152965.emptyHeader,
+      variant: "text-lg/medium",
+      color: "header-primary",
+      children: Chunk388032.intl.string(Chunk676462.default.sWGfr6)
+    }), (0, Chunk255367.jsx)(Chunk481060.Text, {
+      variant: "text-sm/medium",
+      color: "text-secondary",
+      children: Chunk388032.intl.string(Chunk676462.default.nBRtt7)
+    })]
+  })
+}

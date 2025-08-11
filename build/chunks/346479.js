@@ -22,7 +22,7 @@ var Chunk697988 = require("./697988.js"),
   Chunk952537 = require("./952537.js"),
   Chunk981631 = require("./981631.js"),
   Chunk176505 = require("./176505.js"),
-  Chunk388032 = require("./388032.js");
+  Chunk388032 = require("./388032.jsx");
 
 function v(e, t) {
   return i.tn.patch({

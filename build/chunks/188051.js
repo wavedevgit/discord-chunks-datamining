@@ -4,7 +4,7 @@ require.d(exports, {
   w: () => s
 });
 var Chunk481060 = require("./481060.js"),
-  Chunk423932 = require("./423932.js");
+  Chunk423932 = require("./423932.jsx");
 let s = {
   binds: ["mod+alt+shift+w"],
   comboKeysBindGlobal: true,

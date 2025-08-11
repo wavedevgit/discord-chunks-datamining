@@ -1,0 +1,314 @@
+/** Chunk was on web.js **/
+/** chunk id: 365831, original params: e,t,n (module,exports,re quire) **/
+"use strict";
+require.d(exports, {
+  y: () => C
+}), require("./388685.js"), require("./953529.js");
+var Chunk255367 = require("./255367.js"),
+  Chunk73800 = require("./73800.js"),
+  Chunk120356 = require("./120356.js"),
+  a = require.n(Chunk120356),
+  Chunk126663 = require("./126663.js"),
+  Chunk442837 = require("./442837.js"),
+  Chunk481060 = require("./481060.js"),
+  Chunk846027 = require("./846027.js"),
+  Chunk110924 = require("./110924.js"),
+  Chunk460181 = require("./460181.js"),
+  Chunk131951 = require("./131951.js"),
+  Chunk743498 = require("./743498.js"),
+  Chunk56848 = require("./56848.js"),
+  Chunk378441 = require("./378441.js"),
+  Chunk388032 = require("./388032.jsx"),
+  Chunk270217 = require("./270217.js");
+
+function b(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+
+function y(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      b(e, t, n[t])
+    })
+  }
+  return e
+}
+
+function O(e, t) {
+  var n = Object.keys(e);
+  if (Object.getOwnPropertySymbols) {
+    var r = Object.getOwnPropertySymbols(e);
+    t && (r = r.filter(function(t) {
+      return Object.getOwnPropertyDescriptor(e, t).enumerable
+    })), n.push.apply(n, r)
+  }
+  return n
+}
+
+function v(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : O(Object(t)).forEach(function(n) {
+    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+  }), e
+}
+let I = e => 1 - Math.pow(1 - e, 4),
+  T = {
+    mass: 1,
+    friction: 64,
+    tension: 1e3,
+    clamp: true
+  },
+  S = {
+    mass: 1,
+    friction: 64,
+    tension: 1e3
+  },
+  A = {
+    mass: 1,
+    friction: 35,
+    tension: 1e3
+  };
+
+function N() {
+  let {
+    activeVoice: e
+  } = (0, Chunk378441.o)(), t = (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.getVoiceFilterPlaybackEnabled()), n = Chunk73800.useCallback(() => {
+    (0, Chunk460181.GN)(exports ? "voice_filter_loopback_off" : "voice_filter_loopback_on"), (0, Chunk743498._j)(!exports)
+  }, [exports]);
+  return Chunk73800.useEffect(() => (Chunk846027.Z.setLoopback("voice_filter_preview", null != module && exports), () => {
+    Chunk846027.Z.setLoopback("voice_filter_preview", false)
+  }), [exports, module]), {
+    isLoopbackEnabled: exports,
+    toggleLoopback: require
+  }
+}
+
+function C(e) {
+  var t;
+  let {} = e, {
+    activeVoice: n
+  } = (0, m.o)(), o = (0, d.Z)(n), l = (0, h.z)(n), {
+    toggleLoopback: u,
+    isLoopbackEnabled: f
+  } = N(), _ = f ? c.Iy5 : c.X_q, b = i.useCallback(() => (0, p.v6)(null), []), O = (0, c.dQu)(c.TVs.colors.BACKGROUND_BASE_LOWER).hex(), C = (0, c.dQu)(c.TVs.colors.WHITE).hex(), R = i.useRef(0), P = n !== o ? R.current + 1 : R.current;
+  i.useEffect(() => {
+    R.current = P
+  }, [P]);
+  let w = null != n,
+    D = !w,
+    L = w && null != o,
+    x = null == n && null != o,
+    M = (0, c.q_F)({
+      opacity: +!!w,
+      height: 72 * !!w,
+      pointerEvents: w ? "auto" : "none",
+      backgroundColor: null != (t = null == l ? true : l.baseColor) ? t : O,
+      config: e => "backgroundColor" === e ? {
+        easing: I,
+        duration: 200
+      } : T,
+      delay: 100 * !!L
+    }, "respect-motion-settings"),
+    k = (0, c.Yzy)(null == l ? true : l.id, {
+      key: P,
+      from: {
+        opacity: 0,
+        background: null == l ? true : l.splashGradient
+      },
+      enter: {
+        opacity: 1,
+        delay: L ? 100 : 50
+      },
+      leave: {
+        opacity: 0,
+        delay: L ? 100 : 150
+      },
+      config: {
+        easing: I,
+        duration: L ? 250 : 200
+      }
+    }, "respect-motion-settings"),
+    [j] = (0, c.bYB)(2, e => ({
+      from: L ? {
+        translateY: 0,
+        opacity: 1
+      } : {
+        translateY: 16,
+        opacity: 0
+      },
+      to: null == n ? {
+        translateY: 16,
+        opacity: 0
+      } : L ? null : {
+        translateY: 0,
+        opacity: 1
+      },
+      config: e => "opacity" === e ? {
+        easing: I,
+        duration: 200
+      } : S,
+      delay: x ? 50 - 50 * e : 200 + 50 * e
+    }), "respect-motion-settings", [n]),
+    U = (0, c.Yzy)(null == l ? true : l.iconURL, {
+      key: P,
+      from: {
+        opacity: 0,
+        scale: 80 / 88,
+        translateX: L ? false : 0
+      },
+      enter: {
+        opacity: 1,
+        scale: 1,
+        translateX: 0,
+        delay: 50
+      },
+      leave: {
+        opacity: 0,
+        scale: w ? 80 / 88 : 1,
+        translateX: 24 * !!w,
+        delay: 150 * !L
+      },
+      config: e => "opacity" === e ? {
+        easing: I,
+        duration: 200
+      } : w ? T : A
+    }, "respect-motion-settings"),
+    G = (0, c.Yzy)(null == l ? true : l.name, {
+      key: P,
+      from: {
+        opacity: 0,
+        scale: L ? .9 : 1,
+        translateY: 16 * !L
+      },
+      enter: {
+        opacity: 1,
+        scale: 1,
+        translateX: 0,
+        translateY: 0,
+        delay: 150,
+        config: e => "opacity" === e ? {
+          easing: I,
+          duration: 200
+        } : L ? T : S
+      },
+      leave: {
+        opacity: 0,
+        translateX: 24 * (null != n),
+        translateY: 16 * (null == n),
+        delay: x ? 100 : 50,
+        config: e => "opacity" === e ? {
+          easing: I,
+          duration: 200
+        } : L ? T : S
+      }
+    }, "respect-motion-settings"),
+    B = g.intl.string(f ? g.t.esVyo6 : g.t.UQqFCA);
+  return (0, r.jsxs)(s.animated.div, {
+    className: E.voiceFilterHero,
+    "aria-hidden": D,
+    style: M,
+    children: [(0, r.jsx)("div", {
+      className: a()([E.bgGradient, E.bgGradientHighlight])
+    }), k(e => (0, r.jsx)(s.animated.div, {
+      className: E.bgGradient,
+      style: e
+    })), (0, r.jsx)("div", {
+      className: E.iconWrapper,
+      children: U((e, t) => (0, r.jsx)(s.animated.img, {
+        className: E.activeVoiceIcon,
+        style: e,
+        alt: "",
+        src: t
+      }, t))
+    }), (0, r.jsx)("div", {
+      className: E.descriptionWrapper,
+      children: G((e, t) => (0, r.jsxs)(s.animated.div, {
+        className: E.description,
+        style: e,
+        children: [(0, r.jsx)(c.Text, {
+          variant: "text-xs/normal",
+          color: "always-white",
+          className: E.offWhiteText,
+          children: g.intl.string(g.t.WW5DAA)
+        }), (0, r.jsx)(c.Text, {
+          variant: "text-md/medium",
+          color: "always-white",
+          children: null != t ? g.intl.string(t) : ""
+        })]
+      }))
+    }), (0, r.jsxs)("div", {
+      className: E.buttonWrapper,
+      children: [(0, r.jsx)(c.ua7, {
+        "aria-label": B,
+        tooltipClassName: E.tooltip,
+        tooltipContentClassName: E.tooltipContent,
+        shouldShow: w,
+        text: (0, r.jsxs)(r.Fragment, {
+          children: [(0, r.jsx)(c.X6q, {
+            variant: "heading-sm/normal",
+            color: "header-primary",
+            className: E.tooltipHeader,
+            children: B
+          }), (0, r.jsx)(c.Text, {
+            variant: "text-xs/normal",
+            color: "header-muted",
+            children: g.intl.string(f ? g.t.Sg6cfn : g.t.ZKhtw8)
+          })]
+        }),
+        children: e => (0, r.jsx)(s.animated.div, {
+          className: E.buttonWrapper,
+          style: j[0],
+          children: (0, r.jsx)(c.P3F, v(y({
+            className: a()(E.button, {
+              [E.loopbackEnabled]: f
+            }),
+            "aria-hidden": D,
+            focusProps: {
+              enabled: w
+            },
+            tabIndex: w ? 0 : false
+          }, e), {
+            onClick: () => u(),
+            children: (0, r.jsx)(_, {
+              size: "custom",
+              width: 20,
+              height: 20,
+              color: C
+            })
+          }))
+        })
+      }), (0, r.jsx)(c.ua7, {
+        shouldShow: w,
+        text: g.intl.string(g.t.UvMx7O),
+        children: e => (0, r.jsx)(s.animated.div, {
+          className: E.buttonWrapper,
+          style: j[1],
+          children: (0, r.jsx)(c.P3F, v(y({
+            className: E.button,
+            "aria-hidden": D,
+            focusProps: {
+              enabled: w
+            },
+            tabIndex: w ? 0 : false
+          }, e), {
+            onClick: b,
+            children: (0, r.jsx)(c.k$p, {
+              size: "custom",
+              width: 20,
+              height: 20,
+              color: C
+            })
+          }))
+        })
+      })]
+    })]
+  })
+}
