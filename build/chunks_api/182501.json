@@ -1,0 +1,1 @@
+{"id":"182501","type":"experiment","data":{"name":"2025-07-gif-picker-delay","kind":"user","defaultConfig":{"enabled":false,"delayMs":0,"inExperiment":false},"variations":{"undefined":{"enabled":true,"delayMs":200,"inExperiment":true}}},"fromModule":{"id":"web.js"}}

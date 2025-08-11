@@ -1,4 +1,5 @@
 /** Chunk was on web.js **/
+/** chunk id: 304611, original params: e (module,exports,re quire) **/
 "use strict";
 
 function t(e) {
@@ -7,8 +8,8 @@ function t(e) {
   }
 }
 var n = function() {};
-n.thatReturns = t, n.thatReturnsFalse = t(!1), n.thatReturnsTrue = t(!0), n.thatReturnsNull = t(null), n.thatReturnsThis = function() {
+n.thatReturns = t, n.thatReturnsFalse = t(false), n.thatReturnsTrue = t(true), n.thatReturnsNull = t(null), n.thatReturnsThis = function() {
   return this
 }, n.thatReturnsArgument = function(e) {
   return e
-}, e.exports = n
+}, module.exports = n

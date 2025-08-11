@@ -1,5 +1,6 @@
 /** Chunk was on 46746 **/
-e.exports = {
+/** chunk id: 801268, original params: e,t,n (module,exports,require) **/
+module.exports = {
   upsellBanner: "upsellBanner__39bd2",
   enhancedBanner: "enhancedBanner__39bd2",
   gradientGlow: "gradientGlow__39bd2",

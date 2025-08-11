@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 768780, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   body: "body__6da2d",
   streamPreviewWrapper: "streamPreviewWrapper__6da2d",
   mounted: "mounted__6da2d",

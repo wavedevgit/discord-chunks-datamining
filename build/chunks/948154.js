@@ -1,28 +1,29 @@
 /** Chunk was on web.js **/
+/** chunk id: 948154, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => A
-}), n(539854), n(388685);
-var r = n(392711),
-  i = n(570140),
-  o = n(235820),
-  a = n(904245),
-  s = n(45114),
-  l = n(455199),
-  c = n(703656),
-  u = n(306680),
-  d = n(709054),
-  f = n(804932),
-  _ = n(787879),
-  p = n(982183),
-  h = n(981631);
+}), require("./539854.js"), require("./388685.js");
+var Chunk392711 = require("./392711.js"),
+  Chunk570140 = require("./570140.js"),
+  Chunk235820 = require("./235820.js"),
+  Chunk904245 = require("./904245.js"),
+  Chunk45114 = require("./45114.js"),
+  Chunk455199 = require("./455199.js"),
+  Chunk703656 = require("./703656.js"),
+  Chunk306680 = require("./306680.js"),
+  Chunk709054 = require("./709054.js"),
+  Chunk804932 = require("./804932.jsx"),
+  Chunk787879 = require("./787879.js"),
+  Chunk982183 = require("./982183.js"),
+  Chunk981631 = require("./981631.js");
 
 function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -68,14 +69,14 @@ function v(e) {
     feature: p.Lr
   })
 }
-let I = (0, r.throttle)(S, O);
+let I = (0, Chunk392711.throttle)(S, O);
 
 function T(e) {
   let t = _.Z.getChannelInfoMap(),
     n = [];
   for (let i of e) {
     var r;
-    if ((null == (r = t[i]) ? void 0 : r.loadState) === p.a7.LOADED) continue;
+    if ((null == (r = t[i]) ? true : r.loadState) === p.a7.LOADED) continue;
     let e = u.ZP.lastMessageId(i),
       o = null != e && d.default.age(e) > p.ib;
     if (n.length >= y || o) break;
@@ -84,13 +85,13 @@ function T(e) {
       limit: p.AQ,
       feature: p.Lr
     });
-    !1 !== s && null != s && n.push(s)
+    false !== s && null != s && n.push(s)
   }
   return n
 }
 async function S(e) {
   var t, {
-      preload: n = !1
+      preload: n = false
     } = e,
     r = E(e, ["preload"]);
   let o = Date.now(),
@@ -99,11 +100,11 @@ async function S(e) {
   let s = n ? [] : T(a),
     c = l.ZP.getMentions(),
     u = null != c && c.length > 0 ? c[c.length - 1].id : null,
-    d = !1;
-  if (l.ZP.hasMore && !l.ZP.loading && (s.push(v(u)), d = !0), 0 === s.length) return void i.Z.dispatch({
+    d = false;
+  if (l.ZP.hasMore && !l.ZP.loading && (s.push(v(u)), d = true), 0 === s.length) return void i.Z.dispatch({
     type: "NOTIFICATIONS_INBOX_LOAD_MORE_INBOX_SUCCESS",
     preload: n,
-    finished: !0
+    finished: true
   });
   try {
     await Promise.all(s);
@@ -127,19 +128,19 @@ async function S(e) {
 }
 let A = {
   loadMoreInbox() {
-    let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
+    let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {};
     var {
-      preload: t = !1
-    } = e, n = E(e, ["preload"]);
-    if (!_.Z.canLoadMore({
-        preload: t
-      })) return !1;
-    i.Z.dispatch({
+      preload: t = false
+    } = module, n = E(module, ["preload"]);
+    if (!Chunk787879.Z.canLoadMore({
+        preload: exports
+      })) returnfalse;
+    Chunk570140.Z.dispatch({
       type: "NOTIFICATIONS_INBOX_LOAD_MORE_INBOX_START",
-      preload: t
+      preload: exports
     }), I(g({
-      preload: t
-    }, n))
+      preload: exports
+    }, require))
   },
   inboxItemClick: function(e) {
     let {
@@ -148,7 +149,7 @@ let A = {
       isUnread: r,
       isSidebar: o,
       viewId: l,
-      track: u = !0
+      track: u = true
     } = e;
     i.Z.dispatch({
       type: "NOTIFICATIONS_INBOX_ITEM_CLICK",
@@ -163,7 +164,7 @@ let A = {
       section: h.jXE.INBOX,
       object: h.qAy.ACK_MESSAGE_VIEWED,
       objectType: h.Qqv.ACK_SEMI_AUTOMATIC
-    }, !0, void 0, t.id), a.Z.trackJump(n.id, t.id, p.JP);
+    }, true, true, t.id), a.Z.trackJump(n.id, t.id, p.JP);
     let d = o ? h.STv : n.guild_id;
     (0, c.uL)(h.Z5c.CHANNEL(d, n.id, t.id))
   }

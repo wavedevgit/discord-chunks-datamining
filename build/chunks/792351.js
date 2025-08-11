@@ -1,5 +1,6 @@
 /** Chunk was on 93886 **/
-e.exports = {
+/** chunk id: 792351, original params: e,t,a (module,exports,require) **/
+module.exports = {
   uploadArea: "uploadArea_dae93f",
   uploadModal: "uploadModal_dae93f",
   droppable: "droppable_dae93f",

@@ -1,21 +1,22 @@
 /** Chunk was on web.js **/
+/** chunk id: 298579, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => l
-}), n(388685);
-var r = n(147913),
-  i = n(592125),
-  o = n(851268);
+}), require("./388685.js");
+var Chunk147913 = require("./147913.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk851268 = require("./851268.js");
 
 function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
-class s extends r.Z {
+class s extends Chunk147913.Z {
   handleVoiceChannelSelect(e) {
     let {
       channelId: t,

@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 611480, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   ED: () => i,
   Ht: () => c,
   OC: () => u,
@@ -14,7 +15,7 @@ n.d(t, {
 let r = "sticker-picker-tab-panel",
   i = "sticker-picker-tab",
   o = "sticker-picker-grid",
-  a = -1,
+  a = false,
   s = 160,
   l = ["781323769960202280", "809209266556764241", "818597810047680532", "819129296374595614"],
   c = 524288,

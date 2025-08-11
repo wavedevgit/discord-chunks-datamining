@@ -1,5 +1,6 @@
 /** Chunk was on 49078 **/
-e.exports = {
+/** chunk id: 28898, original params: e,t,r (module,exports,require) **/
+module.exports = {
   addFriendInputWrapper: "addFriendInputWrapper__72ba7",
   error: "error__72ba7",
   success: "success__72ba7",

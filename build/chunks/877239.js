@@ -1,12 +1,13 @@
 /** Chunk was on 23357 **/
+/** chunk id: 877239, original params: e,t,n (module,exports,require) **/
 "use strict";
-var r = n(220159),
-  o = n(857186);
-r({
+var Chunk220159 = require("./220159.js"),
+  Chunk857186 = require("./857186.js");
+Chunk220159({
   target: "String",
-  proto: !0,
+  proto: true,
   name: "trimStart",
-  forced: void 0 !== o
+  forced: true !== Chunk857186
 }, {
-  trimLeft: o
+  trimLeft: Chunk857186
 })

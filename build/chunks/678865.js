@@ -1,19 +1,20 @@
 /** Chunk was on 31649 **/
-n.d(e, {
+/** chunk id: 678865, original params: t,e,n (module,exports,require) **/
+require.d(exports, {
   Z: () => r
 });
-var l = n(481060),
-  a = n(695346);
+var Chunk481060 = require("./481060.js"),
+  Chunk695346 = require("./695346.js");
 
 function r() {
-  switch (a.co.getSetting()) {
-    case l.Skl.IDLE:
-      return l.Skl.IDLE;
-    case l.Skl.DND:
-      return l.Skl.DND;
-    case l.Skl.INVISIBLE:
-      return l.Skl.INVISIBLE;
+  switch (Chunk695346.co.getSetting()) {
+    case Chunk481060.Skl.IDLE:
+      return Chunk481060.Skl.IDLE;
+    case Chunk481060.Skl.DND:
+      return Chunk481060.Skl.DND;
+    case Chunk481060.Skl.INVISIBLE:
+      return Chunk481060.Skl.INVISIBLE;
     default:
-      return l.Skl.ONLINE
+      return Chunk481060.Skl.ONLINE
   }
 }

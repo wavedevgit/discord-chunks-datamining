@@ -1,7 +1,8 @@
 /** Chunk was on web.js **/
+/** chunk id: 126417, original params: e (module,exports,re quire) **/
 "use strict";
 var t = TypeError;
-e.exports = function(e) {
+module.exports = function(e) {
   if (!e || "function" != typeof e.next) throw new t("iterator must be an object with a `next` method");
   if (arguments.length > 1) {
     var n, r = arguments[1];

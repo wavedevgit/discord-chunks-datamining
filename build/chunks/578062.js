@@ -1,24 +1,25 @@
 /** Chunk was on 21153 **/
+/** chunk id: 578062, original params: e,t,r (module,exports,require) **/
 "use strict";
-Object.defineProperty(t, "__esModule", {
-  value: !0
-}), t.isvalidColorString = t.red = t.getContrastingColor = t.isValidHex = t.toState = t.simpleCheckForValidColor = void 0;
-var n = a(r(876344)),
-  o = a(r(979590));
+Object.defineProperty(exports, "__esModule", {
+  value: true
+}), exports.isvalidColorString = exports.red = exports.getContrastingColor = exports.isValidHex = exports.toState = exports.simpleCheckForValidColor = true;
+var n = a(require("./876344.js")),
+  o = a(require("./979590.js"));
 
 function a(e) {
   return e && e.__esModule ? e : {
     default: e
   }
 }
-t.simpleCheckForValidColor = function(e) {
+exports.simpleCheckForValidColor = function(e) {
   var t = 0,
     r = 0;
   return (0, n.default)(["r", "g", "b", "a", "h", "s", "l", "v"], function(n) {
     e[n] && (t += 1, isNaN(e[n]) || (r += 1), ("s" === n || "l" === n) && /^\d+%$/.test(e[n]) && (r += 1))
   }), t === r && e
 };
-var i = t.toState = function(e, t) {
+var i = exports.toState = function(e, t) {
   var r = e.hex ? (0, o.default)(e.hex) : (0, o.default)(e),
     n = r.toHsl(),
     a = r.toHsv(),
@@ -33,15 +34,15 @@ var i = t.toState = function(e, t) {
     source: e.source
   }
 };
-t.isValidHex = function(e) {
-  if ("transparent" === e) return !0;
+exports.isValidHex = function(e) {
+  if ("transparent" === e) returntrue;
   var t = +("#" === String(e).charAt(0));
   return e.length !== 4 + t && e.length < 7 + t && (0, o.default)(e).isValid()
-}, t.getContrastingColor = function(e) {
+}, exports.getContrastingColor = function(e) {
   if (!e) return "#fff";
   var t = i(e);
   return "transparent" === t.hex ? "rgba(0,0,0,0.4)" : (299 * t.rgb.r + 587 * t.rgb.g + 114 * t.rgb.b) / 1e3 >= 128 ? "#000" : "#fff"
-}, t.red = {
+}, exports.red = {
   hsl: {
     a: 1,
     h: 0,
@@ -61,7 +62,7 @@ t.isValidHex = function(e) {
     v: 1,
     a: 1
   }
-}, t.isvalidColorString = function(e, t) {
+}, exports.isvalidColorString = function(e, t) {
   var r = e.replace("\xb0", "");
   return (0, o.default)(t + " (" + r + ")")._ok
 }

@@ -1,0 +1,33 @@
+/** Chunk was on web.js **/
+/** chunk id: 994102, original params: e,t,n (module,exports,re quire) **/
+"use strict";
+require.d(exports, {
+  Z: () => d
+});
+var Chunk255367 = require("./255367.js");
+require("./73800.js");
+var Chunk755721 = require("./755721.js"),
+  Chunk481060 = require("./481060.js"),
+  Chunk206074 = require("./206074.js"),
+  Chunk652853 = require("./652853.jsx"),
+  Chunk475413 = require("./475413.jsx"),
+  Chunk228168 = require("./228168.js"),
+  Chunk388032 = require("./388032.jsx");
+
+function d(e) {
+  let {
+    application: t,
+    onAction: n,
+    onClose: d
+  } = e, {
+    themeType: f
+  } = (0, s.z)(), _ = (0, a.Z)({
+    application: t,
+    location: "User Profile Activity"
+  });
+  return null == _ ? null : <l.tG icon={o.v3n} text={u.intl.string(u.t["jaYS/v"])} size={f === c.lY.MODAL_V2 ? i.Ph.TINY : i.Ph.SMALL} fullWidth={f !== c.lY.MODAL_V2} themeColor={"secondary"} onClick={e => {
+      e.stopPropagation(), null == n || n({
+        action: "PRESS_CLOUD_PLAY_BUTTON"
+      }), _(), null == d || d()
+    }} />
+}

@@ -1,11 +1,12 @@
 /** Chunk was on 68214 **/
+/** chunk id: 884835, original params: t,e,r (module,exports,require) **/
 "use strict";
-var o = r(311596);
+var Chunk311596 = require("./311596.js");
 
 function n() {}
 
 function i() {}
-i.resetWarningCache = n, t.exports = function() {
+i.resetWarningCache = n, module.exports = function() {
   function t(t, e, r, n, i, a) {
     if (a !== o) {
       var u = Error("Calling PropTypes validators directly is not supported by the `prop-types` package. Use PropTypes.checkPropTypes() to call them. Read more at http://fb.me/use-check-prop-types");
@@ -14,31 +15,31 @@ i.resetWarningCache = n, t.exports = function() {
   }
 
   function e() {
-    return t
+    return module
   }
-  t.isRequired = t;
+  module.isRequired = module;
   var r = {
-    array: t,
-    bigint: t,
-    bool: t,
-    func: t,
-    number: t,
-    object: t,
-    string: t,
-    symbol: t,
-    any: t,
-    arrayOf: e,
-    element: t,
-    elementType: t,
-    instanceOf: e,
-    node: t,
-    objectOf: e,
-    oneOf: e,
-    oneOfType: e,
-    shape: e,
-    exact: e,
+    array: module,
+    bigint: module,
+    bool: module,
+    func: module,
+    number: module,
+    object: module,
+    string: module,
+    symbol: module,
+    any: module,
+    arrayOf: exports,
+    element: module,
+    elementType: module,
+    instanceOf: exports,
+    node: module,
+    objectOf: exports,
+    oneOf: exports,
+    oneOfType: exports,
+    shape: exports,
+    exact: exports,
     checkPropTypes: i,
     resetWarningCache: n
   };
-  return r.PropTypes = r, r
+  return require.PropTypes = require, require
 }

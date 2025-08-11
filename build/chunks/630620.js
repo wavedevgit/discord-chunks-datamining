@@ -1,5 +1,6 @@
 /** Chunk was on 6850 **/
-e.exports = {
+/** chunk id: 630620, original params: e,t,n (module,exports,require) **/
+module.exports = {
   searchBar: "searchBar__98d1c",
   searchHeaderContainer: "searchHeaderContainer__98d1c",
   searchHeader: "searchHeader__98d1c",

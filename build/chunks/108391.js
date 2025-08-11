@@ -1,5 +1,6 @@
 /** Chunk was on 55183 **/
-e.exports = {
+/** chunk id: 108391, original params: e,t,r (module,exports,require) **/
+module.exports = {
   previewContainer: "previewContainer__92e52",
   effectDescriptionBorder: "effectDescriptionBorder__92e52",
   effectDescriptionBorderWithGradient: "effectDescriptionBorderWithGradient__92e52 effectDescriptionBorder__92e52",

@@ -1,0 +1,79 @@
+/** Chunk was on web.js **/
+/** chunk id: 591146, original params: e,t,n (module,exports,re quire) **/
+"use strict";
+require.d(exports, {
+  CL: () => a,
+  Ml: () => o,
+  VM: () => s
+});
+var Chunk338390 = require("./338390.js");
+let i = (0, require("./818083.js").B)({
+  kind: "user",
+  id: "2025-04_desktop_refresh_fast_follows",
+  label: "Desktop Refresh Fast Follows",
+  defaultConfig: {
+    largerGuildIcons: false,
+    darkerGuildListBackground: false,
+    distinctBorders: false
+  },
+  treatments: [{
+    id: 1,
+    label: "Larger Guild Icons",
+    config: {
+      largerGuildIcons: true,
+      darkerGuildListBackground: false,
+      distinctBorders: false
+    }
+  }, {
+    id: 2,
+    label: "Darker Guild List Background",
+    config: {
+      largerGuildIcons: false,
+      darkerGuildListBackground: true,
+      distinctBorders: false
+    }
+  }, {
+    id: 3,
+    label: "Larger Guild Icons and Darker Guild List Background",
+    config: {
+      largerGuildIcons: true,
+      darkerGuildListBackground: true,
+      distinctBorders: false
+    }
+  }, {
+    id: 4,
+    label: "More Distinct Chassis Borders",
+    config: {
+      largerGuildIcons: false,
+      darkerGuildListBackground: false,
+      distinctBorders: true
+    }
+  }, {
+    id: 5,
+    label: "Larger Guild Icons and More Distinct Chassis Borders",
+    config: {
+      largerGuildIcons: true,
+      darkerGuildListBackground: false,
+      distinctBorders: true
+    }
+  }]
+});
+
+function o(e) {
+  let t = (0, r.Z)(e);
+  return i.useExperiment({
+    location: e
+  }).largerGuildIcons && !t
+}
+
+function a(e) {
+  return i.useExperiment({
+    location: e
+  }).darkerGuildListBackground
+}
+
+function s(e) {
+  return i.useExperiment({
+    location: e
+  }).distinctBorders
+}

@@ -1,14 +1,15 @@
 /** Chunk was on 71879 **/
+/** chunk id: 337077, original params: e,t,n (module,exports,require) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   M: () => c
-}), n(35282), n(388685), n(539854);
-var r = n(73800),
-  i = n(392711),
-  a = n(990169),
-  l = n(591759),
-  s = n(158222),
-  o = n(154135);
+}), require("./35282.js"), require("./388685.js"), require("./539854.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk392711 = require("./392711.js"),
+  Chunk990169 = require("./990169.js"),
+  Chunk591759 = require("./591759.js"),
+  Chunk158222 = require("./158222.js"),
+  Chunk154135 = require("./154135.js");
 
 function c(e, t, n) {
   let c = r.useRef(new Map),
@@ -30,13 +31,13 @@ function c(e, t, n) {
       if (null == t) return;
       let n = e.current,
         r = new Set(n.keys()),
-        i = t.filter(e => !(null == r ? void 0 : r.has(e)));
+        i = t.filter(e => !(null == r ? true : r.has(e)));
       if (0 !== i.length) try {
         var a, l, o;
         let t = await s.V6(i);
-        a = new Map(n), l = i, o = null == t ? void 0 : t.embeds, null == o || o.forEach(e => {
+        a = new Map(n), l = i, o = null == t ? true : t.embeds, null == o || o.forEach(e => {
           var t, n;
-          let r = (t = l, n = e, t.find(e => (null == n ? void 0 : n.url) != null && e.startsWith(n.url)));
+          let r = (t = l, n = e, t.find(e => (null == n ? true : n.url) != null && e.startsWith(n.url)));
           if (null == r) return;
           let i = a.get(r);
           null == i ? a.set(r, [e]) : i.push(e)

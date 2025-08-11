@@ -1,8 +1,9 @@
 /** Chunk was on web.js **/
+/** chunk id: 242433, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   d: () => r
-}), n(388685);
+}), require("./388685.js");
 var r = function(e) {
   return e.SEASONAL_GIFTING_2024_BALLOONS_REWARD_SKU_ID = "1301993378484850769", e.SEASONAL_GIFTING_2024_CAT_EARS_REWARD_SKU_ID = "1301993378484850771", e.SEASONAL_GIFTING_2024_SNOWFLAKES_REWARD_SKU_ID = "1301993378484850773", e.VALENTINES_GIFTING_2025_HEARTS_SKU_ID = "1326347611069874277", e.SUMMER_2025_GIFTING_REWARD_SKU_ID = "1369404111484751873", e
 }({})

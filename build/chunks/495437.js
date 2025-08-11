@@ -1,14 +1,15 @@
 /** Chunk was on web.js **/
+/** chunk id: 495437, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   EB: () => a,
   Je: () => l,
   cf: () => s,
   mh: () => c
 });
-var r = n(570140),
-  i = n(881052),
-  o = n(824389);
+var Chunk570140 = require("./570140.js"),
+  Chunk881052 = require("./881052.js"),
+  Chunk824389 = require("./824389.js");
 let a = async e => {
   r.Z.dispatch({
     type: "GUILD_PRODUCTS_FETCH",
@@ -57,5 +58,5 @@ async function c(e, t) {
   return await o.mh(e, t), r.Z.dispatch({
     type: "GUILD_PRODUCT_DELETE",
     productId: t
-  }), !0
+  }), true
 }

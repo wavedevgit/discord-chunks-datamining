@@ -1,9 +1,10 @@
 /** Chunk was on web.js **/
+/** chunk id: 667895, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => s
 });
-var r = n(261168),
+var Chunk261168 = require("./261168.js"),
   i = {
     full: "EEEE, MMMM do, y",
     long: "MMMM do, y",
@@ -23,15 +24,15 @@ var r = n(261168),
     short: "{{date}}, {{time}}"
   };
 let s = {
-  date: (0, r.Z)({
+  date: (0, Chunk261168.Z)({
     formats: i,
     defaultWidth: "full"
   }),
-  time: (0, r.Z)({
+  time: (0, Chunk261168.Z)({
     formats: o,
     defaultWidth: "full"
   }),
-  dateTime: (0, r.Z)({
+  dateTime: (0, Chunk261168.Z)({
     formats: a,
     defaultWidth: "full"
   })

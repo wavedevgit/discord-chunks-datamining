@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 171166, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   categoryItem: "categoryItem_b9ee0c",
   categoryItemGuildCategory: "categoryItemGuildCategory_b9ee0c categoryItem_b9ee0c",
   categoryItemDefaultCategory: "categoryItemDefaultCategory_b9ee0c categoryItem_b9ee0c",

@@ -1,32 +1,33 @@
 /** Chunk was on web.js **/
+/** chunk id: 562224, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => A
-}), n(388685);
-var r = n(268146),
-  i = n(872810),
-  o = n(594190),
-  a = n(751571),
-  s = n(695346),
-  l = n(361291),
-  c = n(592125),
-  u = n(430824),
-  d = n(131951),
-  f = n(944486),
-  _ = n(594174),
-  p = n(358085),
-  h = n(451467),
-  m = n(537413),
-  g = n(143135),
-  E = n(37113),
-  b = n(761274);
+}), require("./388685.js");
+var Chunk268146 = require("./268146.js"),
+  Chunk872810 = require("./872810.js"),
+  Chunk594190 = require("./594190.js"),
+  Chunk751571 = require("./751571.js"),
+  Chunk695346 = require("./695346.js"),
+  Chunk361291 = require("./361291.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk430824 = require("./430824.js"),
+  Chunk131951 = require("./131951.js"),
+  Chunk944486 = require("./944486.js"),
+  Chunk594174 = require("./594174.js"),
+  Chunk358085 = require("./358085.js"),
+  Chunk451467 = require("./451467.js"),
+  Chunk537413 = require("./537413.js"),
+  Chunk143135 = require("./143135.js"),
+  Chunk37113 = require("./37113.js"),
+  Chunk761274 = require("./761274.js");
 
 function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -68,8 +69,8 @@ function S(e) {
   if (T(e)) return {
     pid: e.pid
   };
-  let t = (0, g.Z)(void 0, e, o.ZP.getRunningGames()),
-    n = !(0, p.isWindows)() || null == t || (null == e ? void 0 : e.id.startsWith(r.vA.CAMERA)) || null == t ? null : t.pid;
+  let t = (0, g.Z)(true, e, o.ZP.getRunningGames()),
+    n = !(0, p.isWindows)() || null == t || (null == e ? true : e.id.startsWith(r.vA.CAMERA)) || null == t ? null : t.pid;
   return null != n ? {
     pid: n
   } : {
@@ -83,29 +84,29 @@ async function A(e, t) {
   let C = _.default.getCurrentUser(),
     R = f.Z.getVoiceChannelId(),
     P = c.Z.getChannel(R),
-    w = null == P ? void 0 : P.getGuildId(),
-    D = null == (n = u.Z.getGuild(w)) ? void 0 : n.premiumTier;
-  if (null == C || null == P || null == R) return [!1, "no user or channel"];
+    w = null == P ? true : P.getGuildId(),
+    D = null == (n = u.Z.getGuild(w)) ? true : n.premiumTier;
+  if (null == C || null == P || null == R) return [false, "no user or channel"];
   let L = null;
-  if (null == (L = "number" == typeof e ? o.ZP.getGameForPID(e) : e)) return [!1, "no source"];
+  if (null == (L = "number" == typeof e ? o.ZP.getGameForPID(e) : e)) return [false, "no source"];
   if (!d.Z.getUseSystemScreensharePicker() && !await a.Z.hasPermission(b.Eu.SCREEN_RECORDING, {
-      showAuthorizationError: !1
-    })) return [!1, "no permission"];
+      showAuthorizationError: false
+    })) return [false, "no permission"];
   let {
     preset: x,
     resolution: M,
     fps: k,
     soundshareEnabled: j
-  } = l.Z.getState(), U = null != (g = null == t ? void 0 : t.preset) ? g : x, [G, B] = null != (y = (0, m.Z)(U, C, D)) ? y : [], Z = null != (v = null != G ? G : null == t ? void 0 : t.resolution) ? v : M, F = null != (T = null != B ? B : null == t ? void 0 : t.fps) ? T : k, V = null != (A = null == t ? void 0 : t.previewDisabled) ? A : s.I0.getSetting(), H = null != (N = null == t ? void 0 : t.soundshareEnabled) ? N : j;
+  } = l.Z.getState(), U = null != (g = null == t ? true : t.preset) ? g : x, [G, B] = null != (y = (0, m.Z)(U, C, D)) ? y : [], Z = null != (v = null != G ? G : null == t ? true : t.resolution) ? v : M, F = null != (T = null != B ? B : null == t ? true : t.fps) ? T : k, V = null != (A = null == t ? true : t.previewDisabled) ? A : s.I0.getSetting(), H = null != (N = null == t ? true : t.soundshareEnabled) ? N : j;
   return (0, h.Z)(U, Z, F, C, D, P) || (U = E.tI.PRESET_VIDEO, Z = E.LY.RESOLUTION_720, F = E.ws.FPS_30), (0, i.Rc)({
     preset: U,
     resolution: Z,
     frameRate: F,
     soundshareEnabled: H
   }), (0, i.WH)(w, R, I(O({}, S(L)), {
-    audioSourceId: (null == (p = L.id) ? void 0 : p.startsWith(r.vA.CAMERA)) ? null == t ? void 0 : t.audioSourceId : void 0,
+    audioSourceId: (null == (p = L.id) ? true : p.startsWith(r.vA.CAMERA)) ? null == t ? true : t.audioSourceId : true,
     sound: H,
     previewDisabled: V,
-    goLiveModalDurationMs: null == t ? void 0 : t.goLiveModalDurationMs
-  })), [!0, void 0]
+    goLiveModalDurationMs: null == t ? true : t.goLiveModalDurationMs
+  })), [true, true]
 }

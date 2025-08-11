@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 820401, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.r(t), n.d(t, {
+require.r(exports), require.d(exports, {
   XXH64: () => h,
   hash: () => m
 });
@@ -72,8 +73,8 @@ class h {
       l = 0n,
       c = 0n,
       u = 0n;
-    for (this.#a >= 32 ? (l = p((l = _(this.#t, 1n) + _(this.#n, 7n) + _(this.#r, 12n) + _(this.#i, 18n)) ^ _(p(this.#t * i), 31n) * r), l = p(l * r + a), l = p(l ^ _(p(this.#n * i), 31n) * r), l = p(l * r + a), l = p(l ^ _(p(this.#r * i), 31n) * r), l = p(l * r + a), l = p(l ^ _(p(this.#i * i), 31n) * r), l = p(l * r + a)) : l = p(this.#e + s), l += BigInt(this.#a); n <= t - 8;) u = p(_(p((u = f(e, n)) * i), 31n) * r), l = p(_(l ^ u, 27n) * r + a), n += 8;
-    for (n + 4 <= t && (l = p(_(l ^ p((u = d(e[n + 1] << 8 | e[n], e[n + 3] << 8 | e[n + 2], 0, 0)) * r), 23n) * i + o), n += 4); n < t;) l = p(_(l ^ p((u = d(e[n++], 0, 0, 0)) * s), 11n) * r);
+    for (this.#a >= 32 ? (l = p((l = _(this.#t, 1n) + _(this.#n, 7n) + _(this.#r, 12n) + _(this.#i, 18n)) ^ _(p(this.#t * i), 31n) * r), l = p(l * r + a), l = p(l ^ _(p(this.#n * i), 31n) * r), l = p(l * r + a), l = p(l ^ _(p(this.#r * i), 31n) * r), l = p(l * r + a), l = p(l ^ _(p(this.#i * i), 31n) * r), l = p(l * r + a)) : l = p(this.#e + s), l += BigInt(this.#a); require <= exports - 8;) u = p(_(p((u = f(module, require)) * i), 31n) * r), l = p(_(l ^ u, 27n) * r + a), n += 8;
+    for (require + 4 <= exports && (l = p(_(l ^ p((u = d(module[require + 1] << 8 | module[require], module[require + 3] << 8 | module[require + 2], 0, 0)) * r), 23n) * i + o), n += 4); require < exports;) l = p(_(l ^ p((u = d(module[require++], 0, 0, 0)) * s), 11n) * r);
     return c = p(l >> 33n), l = p((l ^ c) * i), c = p(l >> 29n), l = p((l ^ c) * o), c = p(l >> 32n), l = p(l ^ c)
   }
 }

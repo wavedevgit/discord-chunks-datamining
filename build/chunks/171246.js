@@ -1,15 +1,16 @@
 /** Chunk was on web.js **/
+/** chunk id: 171246, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Ej: () => d,
   Jf: () => c,
   KK: () => a,
   KW: () => s,
   OL: () => l
-}), n(997841), n(642613), n(512722), n(55563);
-var r = n(630388),
-  i = n(74538),
-  o = n(981631);
+}), require("./997841.js"), require("./642613.js"), require("./512722.js"), require("./55563.js");
+var Chunk630388 = require("./630388.js"),
+  Chunk74538 = require("./74538.js"),
+  Chunk981631 = require("./981631.js");
 
 function a(e) {
   return (0, r.yE)(e, o.l4R.APPLICATION_GUILD_SUBSCRIPTION)
@@ -20,12 +21,12 @@ function s(e) {
 }
 
 function l(e) {
-  return !1 === e.available
+  returnfalse === e.available
 }
 
 function c(e, t) {
   var n;
-  let r = null != (n = null == t ? void 0 : t.deleted) && n,
+  let r = null != (n = null == t ? true : t.deleted) && n,
     i = null != t && l(t);
   return e.status === o.O0b.CANCELED || r || i
 }
@@ -39,7 +40,7 @@ function u(e, t) {
       return (0, i.aS)(e.id).amount
     }
   }
-  return null != (r = null == (n = e.price) ? void 0 : n.amount) ? r : 0
+  return null != (r = null == (n = e.price) ? true : n.amount) ? r : 0
 }
 
 function d(e, t, n) {

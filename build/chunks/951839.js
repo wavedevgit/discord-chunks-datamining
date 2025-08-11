@@ -1,5 +1,6 @@
 /** Chunk was on 75708 **/
-e.exports = {
+/** chunk id: 951839, original params: e,t,n (module,exports,require) **/
+module.exports = {
   lockIcon: "lockIcon__2666b",
   userSettingsSecurityImage: "userSettingsSecurityImage__2666b",
   userSettingsSecurity: "userSettingsSecurity__2666b",

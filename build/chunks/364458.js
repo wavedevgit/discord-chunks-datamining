@@ -1,12 +1,13 @@
 /** Chunk was on web.js **/
+/** chunk id: 364458, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 
 function r(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -29,6 +30,6 @@ function o(e) {
     for (let e in n) e in t ? t[e] = i({}, t[e], n[e]) : t[e] = i({}, n[e]);
   return t
 }
-n.d(t, {
+require.d(exports, {
   Z: () => o
-}), n(388685)
+}), require("./388685.js")

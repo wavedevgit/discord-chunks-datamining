@@ -1,5 +1,6 @@
 /** Chunk was on 13616 **/
-n.d(t, {
+/** chunk id: 951284, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   b: () => r
-}), n(388685);
+}), require("./388685.js");
 var i, r = ((i = {}).DISCORD = "discord", i.TWITCH = "twitch", i.YOUTUBE = "youtube", i.GUILD_SUBSCRIPTION = "guild_subscription", i)

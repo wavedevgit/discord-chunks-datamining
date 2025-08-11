@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 781793, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   premiumCards: "premiumCards_ac86f6",
   card: "card_ac86f6",
   withCardHover: "withCardHover_ac86f6",

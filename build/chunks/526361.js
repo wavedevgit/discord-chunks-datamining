@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 526361, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   tooltipWordmark: "tooltipWordmark_d4ff11",
   orbBadgeAsset: "orbBadgeAsset_d4ff11",
   orbHeaderWithSpacing: "orbHeaderWithSpacing_d4ff11",

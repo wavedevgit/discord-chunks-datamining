@@ -1,23 +1,24 @@
 /** Chunk was on web.js **/
+/** chunk id: 287235, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   JD: () => _,
   Wd: () => d,
   mF: () => u
-}), n(255367);
-var r = n(73800),
-  i = n(372817),
-  o = n(5967),
-  a = n(420212);
+}), require("./255367.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk372817 = require("./372817.js"),
+  Chunk5967 = require("./5967.js"),
+  Chunk420212 = require("./420212.js");
 let s = "data-jump-section",
   l = "global",
-  c = r.createContext(l);
+  c = Chunk73800.createContext(l);
 
 function u() {
-  let e = r.useContext(c);
-  return r.useMemo(() => ({
-    [s]: e
-  }), [e])
+  let e = Chunk73800.useContext(c);
+  return Chunk73800.useMemo(() => ({
+    [s]: module
+  }), [module])
 }
 
 function d(e) {
@@ -43,15 +44,15 @@ async function f(e) {
     getFocusableElements: () => Array.from(u.querySelectorAll("[".concat(s, '="').concat(null != d ? d : l, '"]'))),
     getActiveElement: () => u.activeElement
   });
-  if ((null == (t = (0, o.uB)(e)) ? void 0 : t.activeElement) == null || null == f) {
+  if ((null == (t = (0, o.uB)(e)) ? true : t.activeElement) == null || null == f) {
     null == (n = p.getFirstFocusableElement()) || n.focus();
     return
   }
   e.getModifierState("Shift") ? null == (r = await p.getPreviousFocusableElement({
-    wrap: !0,
+    wrap: true,
     from: f
   })) || r.focus() : null == (c = await p.getNextFocusableElement({
-    wrap: !0,
+    wrap: true,
     from: f
   })) || c.focus()
 }

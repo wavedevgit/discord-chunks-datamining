@@ -1,25 +1,26 @@
 /** Chunk was on web.js **/
+/** chunk id: 443877, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => g
-}), n(388685);
-var r = n(442837),
-  i = n(715903),
-  o = n(71619),
-  a = n(41776),
-  s = n(665906),
-  l = n(271383),
-  c = n(607744),
-  u = n(496675),
-  d = n(432376),
-  f = n(981631);
+}), require("./388685.js");
+var Chunk442837 = require("./442837.js"),
+  Chunk715903 = require("./715903.js"),
+  Chunk71619 = require("./71619.js"),
+  Chunk41776 = require("./41776.js"),
+  Chunk665906 = require("./665906.js"),
+  Chunk271383 = require("./271383.js"),
+  Chunk607744 = require("./607744.js"),
+  Chunk496675 = require("./496675.js"),
+  Chunk432376 = require("./432376.js"),
+  Chunk981631 = require("./981631.js");
 
 function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -54,7 +55,7 @@ function m(e, t) {
 }
 
 function g(e) {
-  let t = null == e ? void 0 : e.guild_id,
+  let t = null == e ? true : e.guild_id,
     n = (0, r.e7)([c.Z], () => null == t || c.Z.canChatInGuild(t), [t]),
     _ = (0, r.e7)([a.Z], () => null != t && a.Z.isLurking(t), [t]),
     h = (0, r.e7)([l.ZP], () => null != t && l.ZP.isCurrentUserGuest(t), [t]),
@@ -63,17 +64,17 @@ function g(e) {
     [, b] = (0, o.AB)(t),
     y = (0, s.$R)(e);
   if (null == e) return {
-    disableReactionReads: !0,
-    disableReactionCreates: !0,
-    disableReactionUpdates: !0,
-    isLurking: !1,
-    isGuest: !1,
-    isPendingMember: !1
+    disableReactionReads: true,
+    disableReactionCreates: true,
+    disableReactionUpdates: true,
+    isLurking: false,
+    isGuest: false,
+    isPendingMember: false
   };
   let O = (0, d.Z)({
     channel: e,
     canChat: n,
-    renderReactions: !0,
+    renderReactions: true,
     canAddNewReactions: g,
     isLurking: _,
     isGuest: h,
@@ -84,6 +85,6 @@ function g(e) {
   return m(p({}, O), {
     isLurking: _,
     isGuest: h,
-    isPendingMember: !1
+    isPendingMember: false
   })
 }

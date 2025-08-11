@@ -1,32 +1,33 @@
 /** Chunk was on 75708 **/
-n.d(t, {
+/** chunk id: 52647, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => u
-}), n(410992), n(227481), n(730884), n(20464), n(341884), n(364341), n(629680), n(505025), n(918970), n(121784), n(644351), n(146733);
-var i = n(73800),
-  r = n(442837),
-  s = n(704215),
-  a = n(570140),
-  l = n(972118),
-  o = n(113434),
-  c = n(581883),
-  d = n(46140);
+}), require("./410992.js"), require("./227481.js"), require("./730884.js"), require("./20464.js"), require("./341884.js"), require("./364341.js"), require("./629680.js"), require("./505025.js"), require("./918970.js"), require("./121784.js"), require("./644351.js"), require("./146733.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk442837 = require("./442837.js"),
+  Chunk704215 = require("./704215.js"),
+  Chunk570140 = require("./570140.js"),
+  Chunk972118 = require("./972118.js"),
+  Chunk113434 = require("./113434.js"),
+  Chunk581883 = require("./581883.js"),
+  Chunk46140 = require("./46140.js");
 let u = () => {
   var e;
-  let t = null != (e = (0, r.e7)([c.Z], () => {
+  let t = null != (e = (0, Chunk442837.e7)([Chunk581883.Z], () => {
       var e;
-      return null == (e = c.Z.settings.userContent) ? void 0 : e.dismissedContents
-    })) ? e : new Uint8Array,
-    n = (0, l.Z)(s.z.VIRTUAL_CURRENCY_ONBOARDING_ANNOUNCEMENT_MODAL, t),
-    u = (0, l.Z)(s.z.VIRTUAL_CURRENCY_DISCOVERY_ONBOARDING_COACHMARK, t),
-    m = (0, l.Z)(s.z.VIRTUAL_CURRENCY_SHOP_ONBOARDING_COACHMARK, t),
-    p = i.useCallback(() => {
-      n.isDismissed && n.handleToggleDismissState(), u.isDismissed && u.handleToggleDismissState(), m.isDismissed && m.handleToggleDismissState(), a.Z.dispatch({
+      return null == (e = Chunk581883.Z.settings.userContent) ? true : module.dismissedContents
+    })) ? module : new Uint8Array,
+    n = (0, Chunk972118.Z)(Chunk704215.z.VIRTUAL_CURRENCY_ONBOARDING_ANNOUNCEMENT_MODAL, exports),
+    u = (0, Chunk972118.Z)(Chunk704215.z.VIRTUAL_CURRENCY_DISCOVERY_ONBOARDING_COACHMARK, exports),
+    m = (0, Chunk972118.Z)(Chunk704215.z.VIRTUAL_CURRENCY_SHOP_ONBOARDING_COACHMARK, exports),
+    p = Chunk73800.useCallback(() => {
+      require.isDismissed && require.handleToggleDismissState(), u.isDismissed && u.handleToggleDismissState(), m.isDismissed && m.handleToggleDismissState(), Chunk570140.Z.dispatch({
         type: "VIRTUAL_CURRENCY_ONBOARDING_MODAL_RESET"
       })
-    }, [u, m, n]),
+    }, [u, m, require]),
     {
       handleResetStatusClick: g
-    } = (0, o.kJ)(d.V6);
+    } = (0, Chunk113434.kJ)(Chunk46140.V6);
   return {
     resetOnboardingAnnouncementModal: p,
     resetQuestStatus: g

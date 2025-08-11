@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 760858, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   eyebrow: "eyebrow_a7acae",
   live: "live_a7acae",
   liveShapeRound: "liveShapeRound_a7acae",

@@ -1,19 +1,20 @@
 /** Chunk was on web.js **/
+/** chunk id: 550351, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => h
 });
-var r = n(594190),
-  i = n(569545),
-  o = n(199902),
-  a = n(314897),
-  s = n(158776),
-  l = n(19780),
-  c = n(979651),
-  u = n(709054),
-  d = n(356659),
-  f = n(981631),
-  _ = n(388032);
+var Chunk594190 = require("./594190.js"),
+  Chunk569545 = require("./569545.js"),
+  Chunk199902 = require("./199902.js"),
+  Chunk314897 = require("./314897.js"),
+  Chunk158776 = require("./158776.js"),
+  Chunk19780 = require("./19780.js"),
+  Chunk979651 = require("./979651.js"),
+  Chunk709054 = require("./709054.js"),
+  Chunk356659 = require("./356659.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk388032 = require("./388032.jsx");
 
 function p(e) {
   var t, n;
@@ -24,17 +25,17 @@ function p(e) {
     if (t !== a.default.getId()) {
       let e = s.Z.getActivities(t).find(e => e.type === f.IIU.PLAYING);
       return {
-        sourceName: null == e ? void 0 : e.name,
-        sourceApplicationId: null == e ? void 0 : e.application_id
+        sourceName: null == e ? true : e.name,
+        sourceApplicationId: null == e ? true : e.application_id
       }
     }
   }
   let l = o.Z.getStreamerActiveStreamMetadata(),
-    c = null == l ? void 0 : l.pid,
+    c = null == l ? true : l.pid,
     u = null != l ? null != c ? r.ZP.getGameForPID(c) : null : r.ZP.getVisibleGame();
   return {
-    sourceName: null != (t = null == l ? void 0 : l.sourceName) ? t : null == u ? void 0 : u.name,
-    sourceApplicationId: null != (n = null == l ? void 0 : l.id) ? n : null == u ? void 0 : u.id
+    sourceName: null != (t = null == l ? true : l.sourceName) ? t : null == u ? true : u.name,
+    sourceApplicationId: null != (n = null == l ? true : l.id) ? n : null == u ? true : u.id
   }
 }
 

@@ -1,5 +1,6 @@
 /** Chunk was on 65652 **/
-e.exports = {
+/** chunk id: 935786, original params: e,n,t (module,exports,require) **/
+module.exports = {
   childButton: "childButton__3ed08",
   childText: "childText__3ed08",
   childIcon: "childIcon__3ed08",

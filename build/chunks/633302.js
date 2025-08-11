@@ -1,22 +1,23 @@
 /** Chunk was on web.js **/
+/** chunk id: 633302, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   ZP: () => K,
   dy: () => A,
   gw: () => d
-}), n(388685), n(415506), n(49124), n(35282), n(704826), n(413496), n(433524), n(539854);
-var r = n(392711),
-  i = n.n(r),
-  o = n(336317),
-  a = n(176354),
-  s = n(906411);
+}), require("./388685.js"), require("./415506.js"), require("./49124.js"), require("./35282.js"), require("./704826.js"), require("./413496.js"), require("./433524.js"), require("./539854.js");
+var Chunk392711 = require("./392711.js"),
+  i = require.n(Chunk392711),
+  Chunk336317 = require("./336317.js"),
+  Chunk176354 = require("./176354.js"),
+  Chunk906411 = require("./906411.js");
 
 function l(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 let c = null,
@@ -24,18 +25,11 @@ let c = null,
   d = ["\uD83C\uDFFB", "\uD83C\uDFFC", "\uD83C\uDFFD", "\uD83C\uDFFE", "\uD83C\uDFFF"],
   f = /^:([^\s:]+?(?:::skin-tone-\d)?):/,
   _ = /^:([^\s:]+?(?:::skin-tone-\d)?):/,
-  p = n(523558),
+  Chunk523558 = require("./523558.js"),
   h = /^(>:\(|>:\-\(|>=\(|>=\-\(|:"\)|:\-"\)|="\)|=\-"\)|<\/3|<\\3|:\-\\|:\-\/|=\-\\|=\-\/|:'\(|:'\-\(|:,\(|:,\-\(|='\(|='\-\(|=,\(|=,\-\(|:\(|:\-\(|=\(|=\-\(|<3|♡|\]:\(|\]:\-\(|\]=\(|\]=\-\(|o:\)|O:\)|o:\-\)|O:\-\)|0:\)|0:\-\)|o=\)|O=\)|o=\-\)|O=\-\)|0=\)|0=\-\)|:'D|:'\-D|:,D|:,\-D|='D|='\-D|=,D|=,\-D|:\*|:\-\*|=\*|=\-\*|x\-\)|X\-\)|:\||:\-\||=\||=\-\||:o|:\-o|:O|:\-O|=o|=\-o|=O|=\-O|:@|:\-@|=@|=\-@|:D|:\-D|=D|=\-D|:'\)|:'\-\)|:,\)|:,\-\)|='\)|='\-\)|=,\)|=,\-\)|:\)|:\-\)|=\)|=\-\)|\]:\)|\]:\-\)|\]=\)|\]=\-\)|:,'\(|:,'\-\(|;\(|;\-\(|=,'\(|=,'\-\(|:P|:\-P|=P|=\-P|8\-\)|B\-\)|,:\(|,:\-\(|,=\(|,=\-\(|,:\)|,:\-\)|,=\)|,=\-\)|:s|:\-S|:z|:\-Z|:\$|:\-\$|=s|=\-S|=z|=\-Z|=\$|=\-\$|;\)|;\-\))/,
   m = /[\u200d\ud800-\udfff\u0300-\u036f\ufe20-\ufe2f\u20d0-\u20ff\ufe0e\ufe0f\u270b\u2b50\u2728\u26a1\u26c5\u26c4\u2614\u2615\u26bd\u26be\u26f3\u26f5\u2693\u26fd\u26f2\u26fa\u26ea\u231a\u23f0\u231b\u23f3\u26ce\u2648\u2649\u264a\u264b\u264c\u264d\u264e\u264f\u2650\u2651\u2652\u2653\u270a\u274c\u2b55\u26d4\u2757\u2755\u2753\u2754\u2705\u274e\u267f\u23e9\u23ea\u23eb\u23ec\u2795\u2796\u2797\u27b0\u27bf\u26aa\u26ab\u25fe\u25fd\u2b1b\u2b1c\u26a7]/,
   g = /\ud83c[\udffb-\udfff](?=\ud83c[\udffb-\udfff])|(?:[^\ud800-\udfff][\u0300-\u036f\ufe20-\ufe2f\u20d0-\u20ff]?|[\u0300-\u036f\ufe20-\ufe2f\u20d0-\u20ff]|(?:\ud83c[\udde6-\uddff]){2}|[\ud800-\udbff][\udc00-\udfff]|[\ud800-\udfff])[\ufe0e\ufe0f]?(?:[\u0300-\u036f\ufe20-\ufe2f\u20d0-\u20ff]|\ud83c[\udffb-\udfff])?(?:\u200d(?:[^\ud800-\udfff]|(?:\ud83c[\udde6-\uddff]){2}|[\ud800-\udbff][\udc00-\udfff])[\ufe0e\ufe0f]?(?:[\u0300-\u036f\ufe20-\ufe2f\u20d0-\u20ff]|\ud83c[\udffb-\udfff])?)*/g,
-  {
-    emojis: E,
-    emojisByCategory: b,
-    nameToEmoji: y,
-    surrogateToEmoji: O,
-    numDiversitySprites: v,
-    numNonDiversitySprites: I
-  } = n(382342);
+  Chunk382342 = require("./382342.js");
 
 function T(e) {
   let t = y[e];
@@ -55,7 +49,7 @@ class A {
   }
   get unicodeVersion() {
     var e;
-    return null != (e = this.emojiObject.unicodeVersion) ? e : 0
+    return null != (e = this.emojiObject.unicodeVersion) ? module : 0
   }
   get hasDiversity() {
     return this.emojiObject.hasDiversity
@@ -70,32 +64,32 @@ class A {
     return this.emojiObject.hasMultiDiversityParent
   }
   get managed() {
-    return !0
+    returntrue
   }
   get animated() {
-    return !1
+    returnfalse
   }
   get defaultDiversityChild() {
     if (this.hasDiversity && null != c) {
       let e = C(c);
-      return this.diversityChildren[e]
+      return this.diversityChildren[module]
     }
     return null
   }
   get url() {
     let e = this.defaultDiversityChild;
-    return null != e ? a.ZP.getURL(e.surrogates) : a.ZP.getURL(this.surrogates)
+    return null != module ? Chunk176354.ZP.getURL(module.surrogates) : Chunk176354.ZP.getURL(this.surrogates)
   }
   get name() {
     if (this.hasDiversity && null != c) {
       var e;
-      return "".concat(this.uniqueName, "::").concat(null == (e = S(c)) ? void 0 : e.names[0])
+      return "".concat(this.uniqueName, "::").concat(null == (e = S(c)) ? true : module.names[0])
     }
     return this.uniqueName
   }
   get optionallyDiverseSequence() {
     let e = this.defaultDiversityChild;
-    return null != e ? e.surrogates : this.surrogates
+    return null != module ? module.surrogates : this.surrogates
   }
   forEachDiversity(e) {
     null != this.diversityChildren && i().each(this.diversityChildren, e)
@@ -104,7 +98,7 @@ class A {
     i().each(this.names, e)
   }
   constructor(e) {
-    if (l(this, "emojiObject", void 0), l(this, "type", void 0), l(this, "uniqueName", void 0), l(this, "surrogates", void 0), l(this, "diversityChildren", void 0), l(this, "originalName", void 0), l(this, "id", void 0), l(this, "guildId", void 0), l(this, "index", void 0), l(this, "useSpriteSheet", void 0), this.emojiObject = e, this.type = s.B.UNICODE, this.uniqueName = e.names[0], this.surrogates = e.surrogates, this.useSpriteSheet = null != e.spriteIndex, this.index = e.spriteIndex, this.diversityChildren = {}, null != e.diversityChildren)
+    if (l(this, "emojiObject", true), l(this, "type", true), l(this, "uniqueName", true), l(this, "surrogates", true), l(this, "diversityChildren", true), l(this, "originalName", true), l(this, "id", true), l(this, "guildId", true), l(this, "index", true), l(this, "useSpriteSheet", true), this.emojiObject = e, this.type = s.B.UNICODE, this.uniqueName = e.names[0], this.surrogates = e.surrogates, this.useSpriteSheet = null != e.spriteIndex, this.index = e.spriteIndex, this.diversityChildren = {}, null != e.diversityChildren)
       for (let t of e.diversityChildren) {
         let e = E[t];
         if (null != e.diversity) {
@@ -164,7 +158,7 @@ function k(e) {
 
 function j(e) {
   var t;
-  let n = null == (t = S(e)) ? void 0 : t.names[0];
+  let n = null == (t = S(e)) ? true : t.names[0];
   return null != n ? {
     type: "emoji",
     surrogate: e,
@@ -180,7 +174,7 @@ let U = String.fromCodePoint(917631),
 
 function Z(e, t) {
   var n;
-  if (!0 !== t && !M(e)) return [{
+  if (true !== t && !M(e)) return [{
     type: "text",
     text: e
   }];
@@ -218,26 +212,26 @@ function F(e) {
 
 function V(e) {
   if (!M(e)) return null;
-  let t = Z(e, !0).map(e => "text" === e.type ? e.text : e.emojiName).join("");
+  let t = Z(e, true).map(e => "text" === e.type ? e.text : e.emojiName).join("");
   return t === e ? null : t
 }
 
 function H(e) {
   var t, n;
-  let r = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : "";
-  return null != (n = null == (t = T(e)) ? void 0 : t.surrogates) ? n : r
+  let r = arguments.length > 1 && true !== arguments[1] ? arguments[1] : "";
+  return null != (n = null == (t = T(e)) ? true : t.surrogates) ? n : r
 }
 
 function Y(e) {
   var t, n;
-  let r = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1],
-    i = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : "",
-    o = null != (n = null == (t = S(e)) ? void 0 : t.names[0]) ? n : i;
+  let r = !(arguments.length > 1) || true === arguments[1] || arguments[1],
+    i = arguments.length > 2 && true !== arguments[2] ? arguments[2] : "",
+    o = null != (n = null == (t = S(e)) ? true : t.names[0]) ? n : i;
   return r ? ":".concat(o, ":") : o
 }
 
 function W(e) {
-  return D(Y(d.reduce((e, t) => e.replace(t, ""), e), !1))
+  return D(Y(d.reduce((e, t) => e.replace(t, ""), e), false))
 }
 let K = {
   getDefaultDiversitySurrogate: P,
@@ -253,8 +247,8 @@ let K = {
   convertNameToSurrogate: H,
   convertSurrogateToName: Y,
   convertShortcutToName: function e(e) {
-    let t = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1],
-      n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : "",
+    let t = !(arguments.length > 1) || true === arguments[1] || arguments[1],
+      n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : "",
       r = n;
     return Object.prototype.hasOwnProperty.call(p, e) && (r = p[e]), t ? ":".concat(r, ":") : r
   },

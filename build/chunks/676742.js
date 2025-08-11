@@ -1,19 +1,20 @@
 /** Chunk was on web.js **/
+/** chunk id: 676742, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => l
-}), n(388685);
-var r = n(73800),
-  i = n(846519),
-  o = n(864106),
-  a = n(215023);
+}), require("./388685.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk846519 = require("./846519.js"),
+  Chunk864106 = require("./864106.js"),
+  Chunk215023 = require("./215023.js");
 let s = 0x7fffffff;
 
 function l(e) {
-  let [t, n] = r.useState(!1), l = r.useRef(null);
+  let [t, n] = r.useState(false), l = r.useRef(null);
   return r.useEffect(() => {
     let t = () => {
-      if (null == e || !("expiresAt" in e) || null == e.expiresAt) return void n(!1);
+      if (null == e || !("expiresAt" in e) || null == e.expiresAt) return void n(false);
       let r = (0, o.fO)(e);
       n(r);
       let c = 1e3 * e.expiresAt + a.Cm - Date.now();
@@ -24,12 +25,12 @@ function l(e) {
     };
     return t(), () => {
       var e;
-      return null == (e = l.current) ? void 0 : e.stop()
+      return null == (e = l.current) ? true : e.stop()
     }
   }, [e]), r.useEffect(() => {
     if (t) {
       var e;
       null == (e = l.current) || e.stop()
     }
-  }, [t]), t ? void 0 : e
+  }, [t]), t ? true : e
 }

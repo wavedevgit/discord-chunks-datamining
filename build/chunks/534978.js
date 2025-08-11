@@ -1,8 +1,9 @@
 /** Chunk was on web.js **/
+/** chunk id: 534978, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-var r = n(152477),
-  i = n(467159);
-e.exports = function(e, t, n, o, a) {
+var Chunk152477 = require("./152477.js"),
+  Chunk467159 = require("./467159.js");
+module.exports = function(e, t, n, o, a) {
   var s = i(e.getSelection()),
     l = r.decode(t),
     c = l.blockKey,
@@ -18,7 +19,7 @@ e.exports = function(e, t, n, o, a) {
     E = d ? m + n : null,
     b = h ? g + a : null;
   if (s.getAnchorKey() === c && s.getAnchorOffset() === E && s.getFocusKey() === _ && s.getFocusOffset() === b) return s;
-  var y = !1;
+  var y = false;
   if (c === _) {
     var O = d.get("end"),
       v = h.get("end");

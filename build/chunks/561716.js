@@ -1,11 +1,12 @@
 /** Chunk was on 75708 **/
-n.d(t, {
+/** chunk id: 561716, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   $: () => s
 });
-var i = n(51596),
-  r = n(819640);
+var Chunk51596 = require("./51596.js"),
+  Chunk819640 = require("./819640.js");
 let s = {
   binds: ["mod+k", "mod+t"],
-  comboKeysBindGlobal: !0,
-  action: () => (r.Z.hasLayers() || (0, i.$Z)(), !1)
+  comboKeysBindGlobal: true,
+  action: () => (Chunk819640.Z.hasLayers() || (0, Chunk51596.$Z)(), false)
 }

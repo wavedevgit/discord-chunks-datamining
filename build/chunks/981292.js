@@ -1,10 +1,11 @@
 /** Chunk was on web.js **/
+/** chunk id: 981292, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   W3: () => s,
   pJ: () => i
-}), n(388685), n(539854), n(255367);
-var r = n(73800),
+}), require("./388685.js"), require("./539854.js"), require("./255367.js");
+var Chunk73800 = require("./73800.js"),
   i = function(e) {
     return e[e.MOUNTED = 0] = "MOUNTED", e[e.ENTERED = 1] = "ENTERED", e[e.YEETED = 2] = "YEETED", e
   }({});
@@ -21,13 +22,13 @@ function s(e) {
     getItemKey: i,
     wrapChildren: s = a,
     lazyCleanUpDelay: l
-  } = e, c = r.useRef(-1);
+  } = e, c = r.useRef(false);
   r.useLayoutEffect(() => {
-    -1 !== c.current && clearTimeout(c.current)
+    false !== c.current && clearTimeout(c.current)
   }, []);
   let [, u] = r.useState(o), d = r.useRef(null), f = r.useMemo(() => {
     var e;
-    let r = new Set(null == (e = d.current) ? void 0 : e.keys()),
+    let r = new Set(null == (e = d.current) ? true : e.keys()),
       o = new Map(d.current);
     for (let e of t) {
       let t = i(e),
@@ -36,7 +37,7 @@ function s(e) {
         let r = +(null != d.current),
           i = () => {
             var e, n;
-            let r = null == (e = d.current) ? void 0 : e.get(t);
+            let r = null == (e = d.current) ? true : e.get(t);
             null == r || (2 === r.state ? (null == (n = d.current) || n.delete(t), null != l ? (clearTimeout(c.current), c.current = setTimeout(() => u({}), l)) : u({})) : __DEV__ && console.warn("SimpleTransitionGroup.cleanUp: Attempted to remove an item that isn't yeetable: ".concat(t)))
           },
           o = n(t, e, r, i);
@@ -82,7 +83,7 @@ function s(e) {
   }, [t, i, n, l]);
   r.useInsertionEffect(() => (d.current = f, () => {
     var e;
-    return null == (e = d.current) ? void 0 : e.clear()
+    return null == (e = d.current) ? true : e.clear()
   }), [f]);
   let _ = [];
   for (let [, e] of f) _.push(e.children);

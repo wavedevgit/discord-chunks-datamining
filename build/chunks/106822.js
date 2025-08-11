@@ -1,2 +1,0 @@
-/** Chunk was on 66051 **/
-h.exports = JSON.parse('{"8ZcEfn":"M\xe0u sắc","AsmU8/":"T\xf9y chỉnh chủ đề của bạn","xRdYAQ":"T\xf9y chỉnh chủ đề [Beta] kh\xf4ng hoạt động tr\xean di động.","2hAz8f":"T\xf9y chỉnh chủ đề của bạn","23QUzs":"Mới! T\xf9y chỉnh Chủ đề","TRCE4u":"Phối m\xe0u theo cảm x\xfac với v\xf4 số tổ hợp m\xe0u sắc. H\xe3y thử ngay, chỉ c\xf3 khi đăng k\xfd Nitro."}')

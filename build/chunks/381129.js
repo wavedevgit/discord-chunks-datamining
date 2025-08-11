@@ -1,14 +1,15 @@
 /** Chunk was on web.js **/
+/** chunk id: 381129, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => _
-}), n(413496), n(433524), n(35282), n(388685);
-var r = n(512722),
-  i = n.n(r),
-  o = n(957730),
-  a = n(439170),
-  s = n(496675),
-  l = n(981631);
+}), require("./413496.js"), require("./433524.js"), require("./35282.js"), require("./388685.js");
+var Chunk512722 = require("./512722.js"),
+  i = require.n(Chunk512722),
+  Chunk957730 = require("./957730.js"),
+  Chunk439170 = require("./439170.js"),
+  Chunk496675 = require("./496675.js"),
+  Chunk981631 = require("./981631.js");
 let c = new RegExp(/@(:?everyone|here)/),
   u = 30;
 
@@ -27,7 +28,7 @@ function f(e) {
   if ("string" == typeof e.content) {
     var t;
     if ("inlineCode" === e.type || "codeBlock" === e.type) return null;
-    let n = null == (t = e.content) ? void 0 : t.match(c);
+    let n = null == (t = e.content) ? true : t.match(c);
     if (null != n) {
       let [e] = n;
       return e

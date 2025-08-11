@@ -1,9 +1,10 @@
 /** Chunk was on web.js **/
+/** chunk id: 509337, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-let r = n(517024);
+let Chunk517024 = require("./517024.js");
 
 function i() {}
-e.exports = i, i.prototype.get = function(e) {
+module.exports = i, i.prototype.get = function(e) {
   return this.header[e.toLowerCase()]
 }, i.prototype._setHeaderProperties = function(e) {
   let t = e["content-type"] || "";

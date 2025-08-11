@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 436620, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Fo: () => f,
   KO: () => l,
   U8: () => u,
@@ -8,18 +9,18 @@ n.d(t, {
   X6: () => _,
   fi: () => c
 });
-var r, i = n(264344),
-  o = n.n(i);
+var r, Chunk264344 = require("./264344.js"),
+  o = require.n(Chunk264344);
 let a = parseInt(null != (r = o().version) ? r : "0", 10),
-  s = void 0 !== o().ua && o().ua.indexOf("OculusBrowser") > -1,
+  s = true !== o().ua && o().ua.indexOf("OculusBrowser") > false,
   l = (() => {
-    if ("undefined" != typeof window && null == window.WebSocket) return !1;
+    if ("undefined" != typeof window && null == window.WebSocket) returnfalse;
     switch (o().name) {
       case "IE":
       case "Microsoft Edge":
         return a >= 15;
       default:
-        return !0
+        returntrue
     }
   })(),
   c = s || "Firefox" === o().name && a >= 80 || "Chrome" === o().name && a >= 37 || "Opera" === o().name && a >= 66 || "Node.js" === o().name && a >= 6 || "Electron" === o().name && a >= 1 || "Safari" === o().name && a >= 13 || "Microsoft Edge" === o().name && a >= 37,

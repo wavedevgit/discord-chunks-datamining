@@ -1,31 +1,32 @@
 /** Chunk was on web.js **/
+/** chunk id: 304445, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => f
-}), n(388685), n(415506);
-var r = n(572299),
-  i = n(38618),
-  o = n(905423),
-  a = n(622143),
-  s = n(703656),
-  l = n(981631);
+}), require("./388685.js"), require("./415506.js");
+var Chunk572299 = require("./572299.js"),
+  Chunk38618 = require("./38618.js"),
+  Chunk905423 = require("./905423.js"),
+  Chunk622143 = require("./622143.js"),
+  Chunk703656 = require("./703656.js"),
+  Chunk981631 = require("./981631.js");
 
 function c(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 let u = 10;
 class d {
   initialize() {
-    this.cleanup(), this.unlistenHistory = (0, s.s1)().listen(this.handleRouteChange);
+    this.cleanup(), this.unlistenHistory = (0, Chunk703656.s1)().listen(this.handleRouteChange);
     let {
       pathname: e
-    } = (0, s.s1)().location;
-    o.Z.getState().resetPath(e), this.unlistenKeyboardChange = o.Z.subscribe(this.handleKeybindRouteChange), i.Z.addChangeListener(this.handleConnectionChange)
+    } = (0, Chunk703656.s1)().location;
+    Chunk905423.Z.getState().resetPath(module), this.unlistenKeyboardChange = Chunk905423.Z.subscribe(this.handleKeybindRouteChange), Chunk38618.Z.addChangeListener(this.handleConnectionChange)
   }
   executeRouteRewrites(e, t) {
     if (this.routeChangeCount += 1, this.routeChangeCount < u)
@@ -38,13 +39,13 @@ class d {
             replacePath: o.path,
             previousPath: i
           }
-        }), (0, s.dL)(o.path, o.state), !0
+        }), (0, s.dL)(o.path, o.state), true
       } else throw Error("RouteManager: Something has gone horribly wrong with rewrites");
-    return !1
+    returnfalse
   }
   cleanup() {
     var e, t, n, r;
-    null == (e = (t = this).unlistenHistory) || e.call(t), this.unlistenHistory = void 0, null == (n = (r = this).unlistenKeyboardChange) || n.call(r), this.unlistenKeyboardChange = void 0, i.Z.removeChangeListener(this.handleConnectionChange)
+    null == (e = (t = this).unlistenHistory) || module.call(exports), this.unlistenHistory = true, null == (n = (r = this).unlistenKeyboardChange) || require.call(Chunk572299), this.unlistenKeyboardChange = true, Chunk38618.Z.removeChangeListener(this.handleConnectionChange)
   }
   addRouteChangeListener(e) {
     return null != this.unlistenHistory && e((0, s.s1)().location, "REPLACE"), this.listeners.add(e), () => this.removeRouteChangeListener(e)
@@ -63,13 +64,13 @@ class d {
     this.rewrites.delete(e)
   }
   getHistory() {
-    return (0, s.s1)()
+    return (0, Chunk703656.s1)()
   }
   constructor() {
-    c(this, "unlistenHistory", void 0), c(this, "unlistenKeyboardChange", void 0), c(this, "rewrites", new Set), c(this, "listeners", new Set), c(this, "routeChangeCount", 0), c(this, "timer", -1), c(this, "connected", !1), c(this, "handleConnectionChange", () => {
-      let e = i.Z.isConnected(),
-        t = e && !this.connected;
-      this.connected = e, t && (this.routeChangeCount = 0, this.executeRouteRewrites((0, s.s1)().location, "REPLACE"))
+    c(this, "unlistenHistory", true), c(this, "unlistenKeyboardChange", true), c(this, "rewrites", new Set), c(this, "listeners", new Set), c(this, "routeChangeCount", 0), c(this, "timer", false), c(this, "connected", false), c(this, "handleConnectionChange", () => {
+      let e = Chunk38618.Z.isConnected(),
+        t = module && !this.connected;
+      this.connected = module, exports && (this.routeChangeCount = 0, this.executeRouteRewrites((0, Chunk703656.s1)().location, "REPLACE"))
     }), c(this, "handleRouteChange", (e, t) => {
       if (this.executeRouteRewrites(e, t)) return;
       if (!(0, a.r)(e)) return void(0, s.dL)(l.Z5c.ME);
@@ -83,11 +84,12 @@ class d {
     }), c(this, "handleKeybindRouteChange", e => {
       let {
         path: t
-      } = e; - 1 !== this.timer && clearTimeout(this.timer), null != t && (this.timer = setTimeout(this.flushRoute, 200))
+      } = e;
+      false !== this.timer && clearTimeout(this.timer), null != t && (this.timer = setTimeout(this.flushRoute, 200))
     }), c(this, "flushRoute", () => {
       clearTimeout(this.timer);
-      let e = o.Z.getState();
-      null != e.path && (0, s.uL)(e.path)
+      let e = Chunk905423.Z.getState();
+      null != module.path && (0, Chunk703656.uL)(module.path)
     })
   }
 }

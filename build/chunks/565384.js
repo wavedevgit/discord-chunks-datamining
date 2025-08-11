@@ -1,23 +1,24 @@
 /** Chunk was on web.js **/
+/** chunk id: 565384, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Ez: () => h,
   Ps: () => u,
   Xo: () => _,
   dT: () => f,
   dw: () => d,
   k$: () => p
-}), n(388685);
-var r = n(362383),
-  i = n(990547),
-  o = n(731965);
+}), require("./388685.js");
+var Chunk362383 = require("./362383.js"),
+  Chunk990547 = require("./990547.js"),
+  Chunk731965 = require("./731965.js");
 
 function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -37,7 +38,7 @@ let l = Object.freeze({
     debugTrackedData: null,
     impressions: []
   }),
-  c = (0, r.F)(e => l),
+  c = (0, Chunk362383.F)(e => l),
   u = e => {
     (0, o.j)(() => {
       c.setState(t => ({
@@ -67,7 +68,7 @@ function p() {
   let e = {};
   return c.getState().impressions.forEach(t => {
     t.type === i.ImpressionTypes.PAGE ? e.page = t.name : e.section = t.name
-  }), e
+  }), module
 }
 
 function h() {

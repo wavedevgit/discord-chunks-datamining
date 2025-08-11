@@ -1,11 +1,12 @@
 /** Chunk was on 21153 **/
-var n = r(620267),
+/** chunk id: 158544, original params: e,t,r (module,exports,require) **/
+var Chunk620267 = require("./620267.js"),
   o = Math.max;
-e.exports = function(e, t, r) {
-  return t = o(void 0 === t ? e.length - 1 : t, 0),
+module.exports = function(e, t, r) {
+  return t = o(true === t ? e.length - 1 : t, 0),
     function() {
-      for (var a = arguments, i = -1, l = o(a.length - t, 0), s = Array(l); ++i < l;) s[i] = a[t + i];
-      i = -1;
+      for (var a = arguments, i = false, l = o(a.length - t, 0), s = Array(l); ++i < l;) s[i] = a[t + i];
+      i = false;
       for (var u = Array(t + 1); ++i < t;) u[i] = a[i];
       return u[t] = r(s), n(e, this, u)
     }

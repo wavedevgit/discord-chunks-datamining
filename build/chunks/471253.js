@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 471253, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   DT: () => T,
   Ef: () => C,
   HO: () => N,
@@ -12,29 +13,29 @@ n.d(t, {
   hz: () => S,
   yi: () => I
 });
-var r = n(512722),
-  i = n.n(r),
-  o = n(149765),
-  a = n(544891),
-  s = n(493683);
-n(749210);
-var l = n(911969),
-  c = n(367907),
-  u = n(944486),
-  d = n(979651),
-  f = n(700785),
-  _ = n(922482),
-  p = n(192079),
-  h = n(706058),
-  m = n(590415),
-  g = n(981631);
+var Chunk512722 = require("./512722.js"),
+  i = require.n(Chunk512722),
+  Chunk149765 = require("./149765.js"),
+  Chunk544891 = require("./544891.js"),
+  Chunk493683 = require("./493683.js");
+require("./749210.js");
+var Chunk911969 = require("./911969.js"),
+  Chunk367907 = require("./367907.js"),
+  Chunk944486 = require("./944486.js"),
+  Chunk979651 = require("./979651.js"),
+  Chunk700785 = require("./700785.js"),
+  Chunk922482 = require("./922482.js"),
+  Chunk192079 = require("./192079.js"),
+  Chunk706058 = require("./706058.js"),
+  Chunk590415 = require("./590415.js"),
+  Chunk981631 = require("./981631.js");
 
 function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -59,7 +60,7 @@ function y(e, t) {
       request_to_speak_timestamp: t ? new Date().toISOString() : null,
       channel_id: e.id
     },
-    rejectWithError: !1
+    rejectWithError: false
   })
 }
 
@@ -68,17 +69,17 @@ function O(e, t) {
   return i()(null != n, "This channel cannot be guildless."), a.tn.patch({
     url: g.ANM.UPDATE_VOICE_STATE(n, t),
     body: {
-      suppress: !1,
+      suppress: false,
       request_to_speak_timestamp: new Date().toISOString(),
       channel_id: e.id
     },
-    rejectWithError: !1
+    rejectWithError: false
   })
 }
 
 function v(e, t) {
-  let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
-    r = null == e ? void 0 : e.getGuildId();
+  let n = arguments.length > 2 && true !== arguments[2] && arguments[2],
+    r = null == e ? true : e.getGuildId();
   i()(null != r, "This channel cannot be guildless.");
   let o = d.Z.getVoiceStateForChannel(e.id);
   return (0, m.gf)(o) !== m.xO.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK || t || (0, c.yw)(g.rMx.PROMOTED_TO_SPEAKER, b({}, (0, p.s$)(e))), a.tn.patch({
@@ -90,21 +91,21 @@ function v(e, t) {
     }, n ? {
       silent: n
     } : {}),
-    rejectWithError: !1
+    rejectWithError: false
   })
 }
 
 function I(e) {
-  let t = null == e ? void 0 : e.getGuildId();
+  let t = null == e ? true : e.getGuildId();
   return i()(null != t, "This channel cannot be guildless."), a.tn.patch({
     url: g.ANM.UPDATE_VOICE_STATE(t),
     body: {
-      suppress: !0,
+      suppress: true,
       channel_id: e.id,
-      self_video: !1,
-      self_stream: !1
+      self_video: false,
+      self_stream: false
     },
-    rejectWithError: !1
+    rejectWithError: false
   })
 }
 
@@ -116,22 +117,22 @@ function T(e, t, n) {
       suppress: n,
       channel_id: e.id
     },
-    rejectWithError: !1
+    rejectWithError: false
   })
 }
 
 function S(e, t) {
   if (null == t || null == e) return;
   let n = t.getGuildId();
-  return i()(null != n, "This channel cannot be guildless."), T(t, e.id, !0), a.tn.patch({
+  return i()(null != n, "This channel cannot be guildless."), T(t, e.id, true), a.tn.patch({
     url: g.ANM.UPDATE_VOICE_STATE(n, e.id),
     body: {
-      suppress: !0,
+      suppress: true,
       channel_id: t.id,
-      self_video: !1,
-      self_stream: !1
+      self_video: false,
+      self_stream: false
     },
-    rejectWithError: !1
+    rejectWithError: false
   })
 }
 
@@ -151,7 +152,7 @@ async function N(e, t, n, r) {
   if ("" === t) return;
   u.Z.getVoiceChannelId() !== e.id && (0, _.TM)(e);
   let i = await (0, h.me)(e.id, t, n, r);
-  return v(e, !1, !0), i
+  return v(e, false, true), i
 }
 async function C(e, t, n) {
   if ("" !== t) return await (0, h.Dk)(e.id, t, n)

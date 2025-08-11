@@ -1,71 +1,72 @@
 /** Chunk was on web.js **/
+/** chunk id: 888875, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => P
-}), n(539854), n(388685);
-var r = n(392711),
-  i = n.n(r),
-  o = n(377108),
-  a = n(147913),
-  s = n(654455),
-  l = n(822245),
-  c = n(339085),
-  u = n(178106),
-  d = n(822179),
-  f = n(580005),
-  _ = n(70956),
-  p = n(675478),
-  h = n(581883),
-  m = n(48481),
-  g = n(526761),
-  E = n(674563);
+}), require("./539854.js"), require("./388685.js");
+var Chunk392711 = require("./392711.js"),
+  i = require.n(Chunk392711),
+  Chunk377108 = require("./377108.js"),
+  Chunk147913 = require("./147913.js"),
+  Chunk654455 = require("./654455.js"),
+  Chunk822245 = require("./822245.js"),
+  Chunk339085 = require("./339085.js"),
+  Chunk178106 = require("./178106.js"),
+  Chunk822179 = require("./822179.js"),
+  Chunk580005 = require("./580005.js"),
+  Chunk70956 = require("./70956.js"),
+  Chunk675478 = require("./675478.js"),
+  Chunk581883 = require("./581883.js"),
+  Chunk48481 = require("./48481.js"),
+  Chunk526761 = require("./526761.js"),
+  Chunk674563 = require("./674563.js");
 
 function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
-let y = 10 + Math.random() * (10 * _.Z.Millis.SECOND),
-  O = 2 * _.Z.Millis.HOUR + Math.floor(Math.random() * (10 * _.Z.Millis.MINUTE)),
+let y = 10 + Math.random() * (10 * Chunk70956.Z.Millis.SECOND),
+  O = 2 * Chunk70956.Z.Millis.HOUR + Math.floor(Math.random() * (10 * Chunk70956.Z.Millis.MINUTE)),
   v = null,
-  I = !1;
-class T extends a.Z {
+  I = false;
+class T extends Chunk147913.Z {
   _initialize() {
-    p.DZ.beforeSendCallbacks.push({
-      hasChanges: () => !1,
+    Chunk675478.DZ.beforeSendCallbacks.push({
+      hasChanges: () => false,
       processProto: () => {
-        R(O, !1)
+        R(O, false)
       }
-    }), p.DZ.beforeSendCallbacks.push({
-      hasChanges: () => d.Z.hasPendingUsage() && h.Z.hasLoaded(g.yP.FRECENCY_AND_FAVORITES_SETTINGS),
+    }), Chunk675478.DZ.beforeSendCallbacks.push({
+      hasChanges: () => Chunk822179.Z.hasPendingUsage() && Chunk581883.Z.hasLoaded(Chunk526761.yP.FRECENCY_AND_FAVORITES_SETTINGS),
       processProto: e => {
         d.Z.hasPendingUsage() && h.Z.hasLoaded(g.yP.FRECENCY_AND_FAVORITES_SETTINGS) && (e.stickerFrecency = o.ls.create(), e.stickerFrecency.stickers = (0, m.tU)(d.Z.stickerFrecencyWithoutFetchingLatest.usageHistory, 100))
       }
-    }), p.DZ.beforeSendCallbacks.push({
-      hasChanges: () => c.ZP.hasPendingUsage() && h.Z.hasLoaded(g.yP.FRECENCY_AND_FAVORITES_SETTINGS),
+    }), Chunk675478.DZ.beforeSendCallbacks.push({
+      hasChanges: () => Chunk339085.ZP.hasPendingUsage() && Chunk581883.Z.hasLoaded(Chunk526761.yP.FRECENCY_AND_FAVORITES_SETTINGS),
       processProto: e => {
         c.ZP.hasPendingUsage() && h.Z.hasLoaded(g.yP.FRECENCY_AND_FAVORITES_SETTINGS) && (e.emojiFrecency = o.PL.create(), e.emojiReactionFrecency = o.PL.create(), e.emojiFrecency.emojis = (0, m.tU)(c.ZP.emojiFrecencyWithoutFetchingLatest.usageHistory, 100), e.emojiReactionFrecency.emojis = (0, m.tU)(c.ZP.emojiReactionFrecencyWithoutFetchingLatest.usageHistory, 100))
       }
-    }), p.DZ.beforeSendCallbacks.push({
-      hasChanges: () => u.Z.hasPendingUsage() && h.Z.hasLoaded(g.yP.FRECENCY_AND_FAVORITES_SETTINGS),
+    }), Chunk675478.DZ.beforeSendCallbacks.push({
+      hasChanges: () => Chunk178106.Z.hasPendingUsage() && Chunk581883.Z.hasLoaded(Chunk526761.yP.FRECENCY_AND_FAVORITES_SETTINGS),
       processProto: e => {
         u.Z.hasPendingUsage() && h.Z.hasLoaded(g.yP.FRECENCY_AND_FAVORITES_SETTINGS) && (i().isEmpty(u.Z.playedSoundHistory) || (e.playedSoundFrecency = o.pL.create(), e.playedSoundFrecency.playedSounds = (0, m.tU)(u.Z.playedSoundHistory, 100)))
       }
-    }), p.DZ.beforeSendCallbacks.push({
-      hasChanges: () => s.ZP.hasPendingUsage() && h.Z.hasLoaded(g.yP.FRECENCY_AND_FAVORITES_SETTINGS),
+    }), Chunk675478.DZ.beforeSendCallbacks.push({
+      hasChanges: () => Chunk654455.ZP.hasPendingUsage() && Chunk581883.Z.hasLoaded(Chunk526761.yP.FRECENCY_AND_FAVORITES_SETTINGS),
       processProto: e => {
         s.ZP.hasPendingUsage() && h.Z.hasLoaded(g.yP.FRECENCY_AND_FAVORITES_SETTINGS) && (e.applicationCommandFrecency = o.YI.create(), e.applicationCommandFrecency.applicationCommands = (0, m.tU)(s.ZP.getCommandFrecencyWithoutLoadingLatest().usageHistory, 500))
       }
-    }), p.DZ.beforeSendCallbacks.push({
-      hasChanges: () => l.Z.hasPendingUsage() && h.Z.hasLoaded(g.yP.FRECENCY_AND_FAVORITES_SETTINGS),
+    }), Chunk675478.DZ.beforeSendCallbacks.push({
+      hasChanges: () => Chunk822245.Z.hasPendingUsage() && Chunk581883.Z.hasLoaded(Chunk526761.yP.FRECENCY_AND_FAVORITES_SETTINGS),
       processProto: e => {
         l.Z.hasPendingUsage() && h.Z.hasLoaded(g.yP.FRECENCY_AND_FAVORITES_SETTINGS) && (e.applicationFrecency = o.UY.create(), e.applicationFrecency.applications = (0, m.tU)(l.Z.getApplicationFrecencyWithoutLoadingLatest().usageHistory, E.yP))
       }
-    }), p.DZ.beforeSendCallbacks.push({
-      hasChanges: () => f.Z.hasPendingUsage() && h.Z.hasLoaded(g.yP.FRECENCY_AND_FAVORITES_SETTINGS),
+    }), Chunk675478.DZ.beforeSendCallbacks.push({
+      hasChanges: () => Chunk580005.Z.hasPendingUsage() && Chunk581883.Z.hasLoaded(Chunk526761.yP.FRECENCY_AND_FAVORITES_SETTINGS),
       processProto: e => {
         f.Z.hasPendingUsage() && h.Z.hasLoaded(g.yP.FRECENCY_AND_FAVORITES_SETTINGS) && (e.guildAndChannelFrecency = o.lG.create(), e.guildAndChannelFrecency.guildAndChannels = (0, m.tU)(f.Z.frecencyWithoutFetchingLatest.usageHistory, f.C))
       }
@@ -82,18 +83,18 @@ class T extends a.Z {
 }
 
 function S() {
-  I = !0, R(y, !0)
+  I = true, R(y, true)
 }
 
 function A(e) {
-  I && "active" !== e.state && (clearTimeout(v), v = null, C(!1))
+  I && "active" !== e.state && (clearTimeout(v), v = null, C(false))
 }
 
 function N() {
-  I && (clearTimeout(v), v = null, C(!1))
+  I && (clearTimeout(v), v = null, C(false))
 }
 async function C(e) {
-  R(O, !1), !h.Z.hasLoaded(g.yP.FRECENCY_AND_FAVORITES_SETTINGS) && (d.Z.hasPendingUsage() || c.ZP.hasPendingUsage() || s.ZP.hasPendingUsage() || l.Z.hasPendingUsage() || f.Z.hasPendingUsage() && !e) && ((0, p.T6)(), await p.DZ.loadIfNecessary()), i().forEach(p.aj, e => {
+  R(O, false), !h.Z.hasLoaded(g.yP.FRECENCY_AND_FAVORITES_SETTINGS) && (d.Z.hasPendingUsage() || c.ZP.hasPendingUsage() || s.ZP.hasPendingUsage() || l.Z.hasPendingUsage() || f.Z.hasPendingUsage() && !e) && ((0, p.T6)(), await p.DZ.loadIfNecessary()), i().forEach(p.aj, e => {
     e.markDirtyIfHasPendingChange()
   })
 }

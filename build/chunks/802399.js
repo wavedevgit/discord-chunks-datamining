@@ -1,5 +1,6 @@
 /** Chunk was on web.js **/
-e.exports = function(e) {
+/** chunk id: 802399, original params: e (module,exports,re quire) **/
+module.exports = function(e) {
   let t = "([0-9]_*)+",
     n = "([0-9a-fA-F]_*)+",
     r = "([01]_*)+",
@@ -61,7 +62,7 @@ e.exports = function(e) {
     name: "Haskell",
     aliases: ["hs"],
     keywords: "let in if then else case of where do module import hiding qualified type data newtype deriving class instance as default infix infixl infixr foreign export ccall stdcall cplusplus jvm dotnet safe unsafe family forall mdo proc rec",
-    unicodeRegex: !0,
+    unicodeRegex: true,
     contains: [{
       beginKeywords: "module",
       end: "where",

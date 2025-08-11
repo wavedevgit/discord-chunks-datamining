@@ -1,5 +1,6 @@
 /** Chunk was on web.js **/
-e.exports = {
+/** chunk id: 942177, original params: e (module,exports,re quire) **/
+module.exports = {
   MAX_LENGTH: 256,
   MAX_SAFE_COMPONENT_LENGTH: 16,
   MAX_SAFE_BUILD_LENGTH: 250,

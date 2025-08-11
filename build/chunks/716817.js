@@ -1,5 +1,6 @@
 /** Chunk was on 87626 **/
-a.r(e.exports = {
+/** chunk id: 716817, original params: e,t,a (module,exports,require) **/
+require.r(module.exports = {
   footer: "footer__0c41a",
   footerPrimary: "footerPrimary__0c41a footer__0c41a",
   footerBackgroundPrimary: "footerBackgroundPrimary__0c41a",

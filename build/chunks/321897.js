@@ -1,12 +1,13 @@
 /** Chunk was on web.js **/
+/** chunk id: 321897, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 
 function r(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -22,7 +23,7 @@ function i(e) {
   }
   return e
 }
-n.d(t, {
+require.d(exports, {
   ZP: () => l
 });
 let o = Object.freeze({
@@ -38,7 +39,7 @@ let o = Object.freeze({
   });
 
 function l(e) {
-  let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : "vertical",
+  let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : "vertical",
     n = "vertical" === t ? o : "horizontal" === t ? a : s;
   return null != e ? i({}, n, e) : n
 }

@@ -1,5 +1,6 @@
 /** Chunk was on 34779 **/
-e.exports = {
+/** chunk id: 268751, original params: e,t,n (module,exports,require) **/
+module.exports = {
   keyboardShortcutsModal: "keyboardShortcutsModal_f061f6",
   noBackground: "noBackground_f061f6",
   noShadow: "noShadow_f061f6",

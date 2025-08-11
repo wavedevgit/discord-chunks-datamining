@@ -1,11 +1,12 @@
 /** Chunk was on web.js **/
+/** chunk id: 860987, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 
 function r(e) {
   return null != e ? {
     wallpaperId: e.wallpaper_id,
     setterId: e.setter_id
-  } : void 0
+  } : true
 }
 
 function i(e) {
@@ -18,7 +19,7 @@ function i(e) {
     designGroupId: e.design_group_id
   }
 }
-n.d(t, {
+require.d(exports, {
   L: () => r,
   w: () => i
 })

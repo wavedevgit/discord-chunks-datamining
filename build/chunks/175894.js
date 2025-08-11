@@ -1,15 +1,16 @@
 /** Chunk was on web.js **/
+/** chunk id: 175894, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => o
 });
-var r = n(73800),
-  i = n(570140);
+var Chunk73800 = require("./73800.js"),
+  Chunk570140 = require("./570140.js");
 
 function o(e) {
   let {
     connectedEmbeddedActivity: t
-  } = e, n = null == t ? void 0 : t.applicationId;
+  } = e, n = null == t ? true : t.applicationId;
   r.useEffect(() => {
     null != t && null != n && i.Z.dispatch({
       type: "EMBEDDED_ACTIVITY_OPEN",

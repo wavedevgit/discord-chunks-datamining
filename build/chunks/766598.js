@@ -1,5 +1,6 @@
 /** Chunk was on web.js **/
+/** chunk id: 766598, original params: e (module,exports,re quire) **/
 var t = Object.prototype.toString;
-e.exports = function(e) {
+module.exports = function(e) {
   return t.call(e)
 }

@@ -1,24 +1,25 @@
 /** Chunk was on web.js **/
+/** chunk id: 483019, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => d
-}), n(388685);
-var r = n(392711),
-  i = n.n(r),
-  o = n(846519),
-  a = n(710845),
-  s = n(70956),
-  l = n(709054);
+}), require("./388685.js");
+var Chunk392711 = require("./392711.js"),
+  i = require.n(Chunk392711),
+  Chunk846519 = require("./846519.js"),
+  Chunk710845 = require("./710845.js"),
+  Chunk70956 = require("./70956.js"),
+  Chunk709054 = require("./709054.js");
 
 function c(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
-let u = +s.Z.Millis.MINUTE;
+let u = +Chunk70956.Z.Millis.MINUTE;
 class d {
   reset() {
     this._subscriptions = {}, this._unsubscriptions = {}, this._unsubscribe.cancel()
@@ -46,11 +47,11 @@ class d {
     var n, r;
     if (!this.isSubscribed(e, t)) return;
     let i = null != (n = this._unsubscriptions[e]) ? n : {};
-    i[t] = (null != (r = i[t]) ? r : 0) + 1, this._unsubscriptions[e] = i, 1 === i[t] && this._unsubscribe.delay(!1)
+    i[t] = (null != (r = i[t]) ? r : 0) + 1, this._unsubscriptions[e] = i, 1 === i[t] && this._unsubscribe.delay(false)
   }
   checkForLeaks(e, t) {
     var n, r, i, o;
-    let s = (null != (i = null == (n = this._subscriptions[e]) ? void 0 : n[t]) ? i : 0) - (null != (o = null == (r = this._unsubscriptions[e]) ? void 0 : r[t]) ? o : 0);
+    let s = (null != (i = null == (n = this._subscriptions[e]) ? true : n[t]) ? i : 0) - (null != (o = null == (r = this._unsubscriptions[e]) ? true : r[t]) ? o : 0);
     s > 5 && new a.Z("GuildMemberSubscriptions").warn("GuildMemberSubscriptions.subscribe(...): Potential reference leak! (".concat(s, " subscriptions)"))
   }
   flushUnsubscriptions() {
@@ -63,6 +64,6 @@ class d {
     }), this._unsubscriptions = {})
   }
   constructor(e) {
-    c(this, "_subscriptions", {}), c(this, "_unsubscriptions", {}), c(this, "_onChange", void 0), c(this, "_unsubscribe", new o.sW(u, () => this.flushUnsubscriptions())), this._onChange = e
+    c(this, "_subscriptions", {}), c(this, "_unsubscriptions", {}), c(this, "_onChange", true), c(this, "_unsubscribe", new o.sW(u, () => this.flushUnsubscriptions())), this._onChange = e
   }
 }

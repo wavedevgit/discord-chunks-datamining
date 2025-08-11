@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 85960, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   I6: () => c,
   V9: () => _,
   Z6: () => h,
@@ -9,76 +10,76 @@ n.d(t, {
   vT: () => l,
   vh: () => u,
   yU: () => p
-}), n(388685), n(997841), n(415506);
-var r = n(73800),
-  i = n(467319),
-  o = n(676317),
-  a = n(273504),
-  s = n(388032),
+}), require("./388685.js"), require("./997841.js"), require("./415506.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk467319 = require("./467319.js"),
+  Chunk676317 = require("./676317.js"),
+  Chunk273504 = require("./273504.js"),
+  Chunk388032 = require("./388032.js"),
   l = function(e) {
     return e.NEW = "new", e.RECOMMENDED = "recommended", e.BETA = "beta", e.ALPHA = "alpha", e
   }({});
 let c = {
-  [a.fX.SPAM_LINK]: {
-    getDefaultRuleName: () => s.intl.string(s.t.ffR2cH),
-    type: a.fX.SPAM_LINK,
-    eventType: a.q4.MESSAGE_SEND,
+  [Chunk273504.fX.SPAM_LINK]: {
+    getDefaultRuleName: () => Chunk388032.intl.string(Chunk388032.t.ffR2cH),
+    type: Chunk273504.fX.SPAM_LINK,
+    eventType: Chunk273504.q4.MESSAGE_SEND,
     perGuildMaxCount: 0,
     availableActionTypes: new Set,
     flags: new Set,
     defaultActionTypes: new Set
   },
-  [a.fX.KEYWORD]: {
-    getDefaultRuleName: () => s.intl.string(s.t.ffR2cH),
-    type: a.fX.KEYWORD,
-    eventType: a.q4.MESSAGE_SEND,
+  [Chunk273504.fX.KEYWORD]: {
+    getDefaultRuleName: () => Chunk388032.intl.string(Chunk388032.t.ffR2cH),
+    type: Chunk273504.fX.KEYWORD,
+    eventType: Chunk273504.q4.MESSAGE_SEND,
     perGuildMaxCount: 6,
-    availableActionTypes: new Set([a.jj.BLOCK_MESSAGE, a.jj.FLAG_TO_CHANNEL, a.jj.USER_COMMUNICATION_DISABLED]),
+    availableActionTypes: new Set([Chunk273504.jj.BLOCK_MESSAGE, Chunk273504.jj.FLAG_TO_CHANNEL, Chunk273504.jj.USER_COMMUNICATION_DISABLED]),
     flags: new Set,
-    defaultActionTypes: new Set([a.jj.BLOCK_MESSAGE])
+    defaultActionTypes: new Set([Chunk273504.jj.BLOCK_MESSAGE])
   },
-  [a.fX.ML_SPAM]: {
-    getDefaultRuleName: () => s.intl.string(s.t["puF/Oj"]),
-    type: a.fX.ML_SPAM,
-    eventType: a.q4.MESSAGE_SEND,
+  [Chunk273504.fX.ML_SPAM]: {
+    getDefaultRuleName: () => Chunk388032.intl.string(Chunk388032.t["puF/Oj"]),
+    type: Chunk273504.fX.ML_SPAM,
+    eventType: Chunk273504.q4.MESSAGE_SEND,
     perGuildMaxCount: 1,
-    availableActionTypes: new Set([a.jj.BLOCK_MESSAGE, a.jj.FLAG_TO_CHANNEL]),
+    availableActionTypes: new Set([Chunk273504.jj.BLOCK_MESSAGE, Chunk273504.jj.FLAG_TO_CHANNEL]),
     flags: new Set([]),
-    defaultActionTypes: new Set([a.jj.BLOCK_MESSAGE])
+    defaultActionTypes: new Set([Chunk273504.jj.BLOCK_MESSAGE])
   },
-  [a.fX.DEFAULT_KEYWORD_LIST]: {
-    getDefaultRuleName: () => s.intl.string(s.t.LnGhZm),
-    type: a.fX.DEFAULT_KEYWORD_LIST,
-    eventType: a.q4.MESSAGE_SEND,
+  [Chunk273504.fX.DEFAULT_KEYWORD_LIST]: {
+    getDefaultRuleName: () => Chunk388032.intl.string(Chunk388032.t.LnGhZm),
+    type: Chunk273504.fX.DEFAULT_KEYWORD_LIST,
+    eventType: Chunk273504.q4.MESSAGE_SEND,
     perGuildMaxCount: 1,
-    availableActionTypes: new Set([a.jj.BLOCK_MESSAGE, a.jj.FLAG_TO_CHANNEL]),
+    availableActionTypes: new Set([Chunk273504.jj.BLOCK_MESSAGE, Chunk273504.jj.FLAG_TO_CHANNEL]),
     flags: new Set([]),
-    defaultActionTypes: new Set([a.jj.BLOCK_MESSAGE])
+    defaultActionTypes: new Set([Chunk273504.jj.BLOCK_MESSAGE])
   },
-  [a.fX.MENTION_SPAM]: {
-    getDefaultRuleName: () => s.intl.string(s.t.pX7i6u),
-    type: a.fX.MENTION_SPAM,
-    eventType: a.q4.MESSAGE_SEND,
+  [Chunk273504.fX.MENTION_SPAM]: {
+    getDefaultRuleName: () => Chunk388032.intl.string(Chunk388032.t.pX7i6u),
+    type: Chunk273504.fX.MENTION_SPAM,
+    eventType: Chunk273504.q4.MESSAGE_SEND,
     perGuildMaxCount: 1,
-    availableActionTypes: new Set([a.jj.BLOCK_MESSAGE, a.jj.FLAG_TO_CHANNEL, a.jj.USER_COMMUNICATION_DISABLED]),
+    availableActionTypes: new Set([Chunk273504.jj.BLOCK_MESSAGE, Chunk273504.jj.FLAG_TO_CHANNEL, Chunk273504.jj.USER_COMMUNICATION_DISABLED]),
     flags: new Set([]),
-    defaultActionTypes: new Set([a.jj.BLOCK_MESSAGE])
+    defaultActionTypes: new Set([Chunk273504.jj.BLOCK_MESSAGE])
   },
-  [a.fX.USER_PROFILE]: {
-    getDefaultRuleName: () => s.intl.string(s.t.q1L2v7),
-    type: a.fX.USER_PROFILE,
-    eventType: a.q4.GUILD_MEMBER_JOIN_OR_UPDATE,
+  [Chunk273504.fX.USER_PROFILE]: {
+    getDefaultRuleName: () => Chunk388032.intl.string(Chunk388032.t.q1L2v7),
+    type: Chunk273504.fX.USER_PROFILE,
+    eventType: Chunk273504.q4.GUILD_MEMBER_JOIN_OR_UPDATE,
     perGuildMaxCount: 1,
-    availableActionTypes: new Set([a.jj.QUARANTINE_USER, a.jj.FLAG_TO_CHANNEL]),
+    availableActionTypes: new Set([Chunk273504.jj.QUARANTINE_USER, Chunk273504.jj.FLAG_TO_CHANNEL]),
     flags: new Set([]),
-    defaultActionTypes: new Set([a.jj.QUARANTINE_USER])
+    defaultActionTypes: new Set([Chunk273504.jj.QUARANTINE_USER])
   },
-  [a.fX.SERVER_POLICY]: {
-    getDefaultRuleName: () => s.intl.string(s.t.ZQr92N),
-    type: a.fX.SERVER_POLICY,
-    eventType: a.q4.MESSAGE_SEND,
+  [Chunk273504.fX.SERVER_POLICY]: {
+    getDefaultRuleName: () => Chunk388032.intl.string(Chunk388032.t.ZQr92N),
+    type: Chunk273504.fX.SERVER_POLICY,
+    eventType: Chunk273504.q4.MESSAGE_SEND,
     perGuildMaxCount: 1,
-    availableActionTypes: new Set([a.jj.FLAG_TO_CHANNEL]),
+    availableActionTypes: new Set([Chunk273504.jj.FLAG_TO_CHANNEL]),
     flags: new Set(["alpha"]),
     defaultActionTypes: new Set
   }
@@ -87,8 +88,8 @@ var u = function(e) {
   return e.MEMBERS = "members", e.CONTENT = "content", e
 }({});
 let d = {
-    members: [c[a.fX.USER_PROFILE]],
-    content: [c[a.fX.SERVER_POLICY], c[a.fX.MENTION_SPAM], c[a.fX.ML_SPAM], c[a.fX.DEFAULT_KEYWORD_LIST], c[a.fX.KEYWORD]]
+    members: [c[Chunk273504.fX.USER_PROFILE]],
+    content: [c[Chunk273504.fX.SERVER_POLICY], c[Chunk273504.fX.MENTION_SPAM], c[Chunk273504.fX.ML_SPAM], c[Chunk273504.fX.DEFAULT_KEYWORD_LIST], c[Chunk273504.fX.KEYWORD]]
   },
   f = (e, t) => c[e].flags.has(t);
 

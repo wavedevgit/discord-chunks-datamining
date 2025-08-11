@@ -1,7 +1,8 @@
 /** Chunk was on web.js **/
+/** chunk id: 38465, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-var r = n(581079);
-e.exports = function(e, t) {
+var Chunk581079 = require("./581079.js");
+module.exports = function(e, t) {
   var n = [];
   return e.findEntityRanges(function(e) {
     return e.getEntity() === t
@@ -10,5 +11,5 @@ e.exports = function(e, t) {
       start: e,
       end: t
     })
-  }), n.length || r(!1), n
+  }), n.length || r(false), n
 }

@@ -1,3 +1,4 @@
 /** Chunk was on web.js **/
+/** chunk id: 782961, original params: e (module,exports,re quire) **/
 "use strict";
-e.exports = "data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='66' height='38' viewBox='0 0 66 38'%3E%3Cpath d='M0 0h66v38H0z' style='fill:%23000;stroke:%23000'/%3E%3C/svg%3E"
+module.exports = "data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='66' height='38' viewBox='0 0 66 38'%3E%3Cpath d='M0 0h66v38H0z' style='fill:%23000;stroke:%23000'/%3E%3C/svg%3E"

@@ -1,12 +1,13 @@
 /** Chunk was on web.js **/
+/** chunk id: 317271, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   F: () => a,
   n: () => s
-}), n(388685);
-var r = n(474936),
-  i = n(981631);
-let o = new Set([i.Sbl.FRIEND_ANNIVERSARIES_CHAT, i.Sbl.FRIEND_ANNIVERSARIES_ACTION_BUTTON, i.Sbl.FRIEND_ANNIVERSARIES_ACTION_BUTTON_COACHMARK]);
+}), require("./388685.js");
+var Chunk474936 = require("./474936.js"),
+  Chunk981631 = require("./981631.js");
+let o = new Set([Chunk981631.Sbl.FRIEND_ANNIVERSARIES_CHAT, Chunk981631.Sbl.FRIEND_ANNIVERSARIES_ACTION_BUTTON, Chunk981631.Sbl.FRIEND_ANNIVERSARIES_ACTION_BUTTON_COACHMARK]);
 
 function a(e) {
   return e === r.hX.FRIEND_ANNIVERSARY ? {

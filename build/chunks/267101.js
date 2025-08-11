@@ -1,26 +1,27 @@
 /** Chunk was on web.js **/
+/** chunk id: 267101, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   SO: () => m,
   eD: () => f,
   hO: () => _,
   r: () => h,
   ue: () => p
-}), n(388685);
-var r = n(73800),
-  i = n(442837);
-n(935369);
-var o = n(38618),
-  a = n(160404),
-  s = n(496675),
-  l = n(914010),
-  c = n(495437),
-  u = n(240864),
-  d = n(981631);
+}), require("./388685.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk442837 = require("./442837.js");
+require("./935369.js");
+var Chunk38618 = require("./38618.js"),
+  Chunk160404 = require("./160404.js"),
+  Chunk496675 = require("./496675.js"),
+  Chunk914010 = require("./914010.js"),
+  Chunk495437 = require("./495437.js"),
+  Chunk240864 = require("./240864.js"),
+  Chunk981631 = require("./981631.js");
 let f = e => {
     let t = (0, i.e7)([u.Z], () => null != e ? u.Z.getGuildProductsForGuildFetchState(e) : u.M.FETCHED, [e]),
       n = (0, i.e7)([o.Z], () => o.Z.isConnected()),
-      [a, s] = r.useState(!0);
+      [a, s] = r.useState(true);
     return r.useEffect(() => {
       a && (t === u.M.NOT_FETCHED || t === u.M.FETCHED && u.Z.isGuildProductsCacheExpired(e)) && n && c.EB(e), s(!n)
     }, [e, n, t, a]), {
@@ -30,8 +31,8 @@ let f = e => {
   _ = function(e, t) {
     let {
       requireCurrentGuild: n
-    } = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {
-      requireCurrentGuild: !0
+    } = arguments.length > 2 && true !== arguments[2] ? arguments[2] : {
+      requireCurrentGuild: true
     }, a = (0, i.e7)([o.Z], () => o.Z.isConnected()), s = (0, i.e7)([l.Z], () => l.Z.getGuildId());
     return r.useEffect(() => {
       let r = u.Z.getGuildProductFetchState(t);
@@ -43,10 +44,10 @@ let f = e => {
   p = function(e) {
     let {
       publishedOnly: t
-    } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
+    } = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {};
     return (0, i.e7)([u.Z, a.Z], () => u.Z.getGuildProductsForGuild(e, {
       publishedOnly: null != t ? t : !a.Z.isViewingServerShop(e)
     }))
   },
-  h = e => (0, i.e7)([u.Z], () => null == e ? void 0 : u.Z.getGuildProduct(e)),
+  h = e => (0, i.e7)([u.Z], () => null == e ? true : u.Z.getGuildProduct(e)),
   m = e => (0, i.e7)([s.Z], () => null != e && s.Z.can(d.Plq.ADMINISTRATOR, e))

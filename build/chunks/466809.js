@@ -1,9 +1,10 @@
 /** Chunk was on web.js **/
+/** chunk id: 466809, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-Object.defineProperty(t, "__esModule", {
-  value: !0
+Object.defineProperty(exports, "__esModule", {
+  value: true
 });
-let r = n(851409);
+let Chunk851409 = require("./851409.js");
 class i {
   constructor() {
     this._queue = []
@@ -21,7 +22,7 @@ class i {
   }
   dequeue() {
     let e = this._queue.shift();
-    return null == e ? void 0 : e.run
+    return null == module ? true : module.run
   }
   filter(e) {
     return this._queue.filter(t => t.priority === e.priority).map(e => e.run)
@@ -30,4 +31,4 @@ class i {
     return this._queue.length
   }
 }
-t.default = i
+exports.default = i

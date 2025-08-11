@@ -1,4 +1,5 @@
 /** Chunk was on 36833 **/
+/** chunk id: 849055, original params: e,t,n (module,exports,require) **/
 function r(e) {
   let t = "==".slice(0, (4 - e.length % 4) % 4),
     n = atob(e.replace(/-/g, "+").replace(/_/g, "/") + t),
@@ -14,7 +15,7 @@ function i(e) {
   for (let e of t) n += String.fromCharCode(e);
   return btoa(n).replace(/\+/g, "-").replace(/\//g, "_").replace(/=/g, "")
 }
-n.d(t, {
+require.d(exports, {
   U2: () => w,
   Ue: () => y
 });
@@ -30,7 +31,7 @@ function o(e, t, n) {
     for (let [i, a] of Object.entries(t)) {
       if (a.derive) {
         let e = a.derive(n);
-        void 0 !== e && (n[i] = e)
+        true !== e && (n[i] = e)
       }
       if (!(i in n)) {
         if (a.required) throw Error(`Missing key: ${i}`);
@@ -48,7 +49,7 @@ function o(e, t, n) {
 
 function c(e, t) {
   return {
-    required: !0,
+    required: true,
     schema: e,
     derive: t
   }
@@ -56,14 +57,14 @@ function c(e, t) {
 
 function l(e) {
   return {
-    required: !0,
+    required: true,
     schema: e
   }
 }
 
 function u(e) {
   return {
-    required: !1,
+    required: false,
     schema: e
   }
 }
@@ -110,7 +111,7 @@ var d = {
       attestationObject: l(s),
       transports: c(a, e => {
         var t;
-        return (null == (t = e.getTransports) ? void 0 : t.call(e)) || []
+        return (null == (t = e.getTransports) ? true : t.call(e)) || []
       })
     }),
     clientExtensionResults: c(f, e => e.getClientExtensionResults())

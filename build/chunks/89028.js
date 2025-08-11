@@ -1,22 +1,23 @@
 /** Chunk was on 75708 **/
-n.d(t, {
+/** chunk id: 89028, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   f: () => a
 });
-var i = n(2818),
-  r = n(585483),
-  s = n(981631);
+var Chunk2818 = require("./2818.js"),
+  Chunk585483 = require("./585483.js"),
+  Chunk981631 = require("./981631.js");
 let a = {
   binds: ["mod+l"],
-  comboKeysBindGlobal: !0,
+  comboKeysBindGlobal: true,
   action() {
     let {
       enabled: e,
       inInbox: t
-    } = i.Z.getCurrentConfig({
+    } = Chunk2818.Z.getCurrentConfig({
       location: "keybinds"
     }, {
-      autoTrackExposure: !1
+      autoTrackExposure: false
     });
-    if (e && !t) return r.S.dispatch(s.CkL.TOGGLE_FOR_LATER), !1
+    if (module && !exports) return Chunk585483.S.dispatch(Chunk981631.CkL.TOGGLE_FOR_LATER), false
   }
 }

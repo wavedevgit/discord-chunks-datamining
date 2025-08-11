@@ -1,27 +1,28 @@
 /** Chunk was on web.js **/
+/** chunk id: 503856, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   p: () => l,
   r: () => c
 });
-var r = n(442837),
-  i = n(592125),
-  o = n(430824),
-  a = n(944486),
-  s = n(981631);
+var Chunk442837 = require("./442837.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk430824 = require("./430824.js"),
+  Chunk944486 = require("./944486.js"),
+  Chunk981631 = require("./981631.js");
 let l = () => {
-    let e = a.Z.getVoiceChannelId();
-    if (null == e) return !1;
-    let t = i.Z.getChannel(e);
-    if (null == t) return !1;
-    let n = o.Z.getGuild(t.getGuildId());
-    return null != n && n.features.has(s.oNc.HUB)
+    let e = Chunk944486.Z.getVoiceChannelId();
+    if (null == module) returnfalse;
+    let t = Chunk592125.Z.getChannel(module);
+    if (null == exports) returnfalse;
+    let n = Chunk430824.Z.getGuild(exports.getGuildId());
+    return null != require && require.features.has(Chunk981631.oNc.HUB)
   },
   c = e => (0, r.e7)([a.Z, i.Z, o.Z], () => {
     let t = a.Z.getVoiceChannelId();
-    if (null == t) return !1;
+    if (null == t) returnfalse;
     let n = i.Z.getChannel(t);
-    if (null == n) return !1;
+    if (null == n) returnfalse;
     let r = o.Z.getGuild(n.getGuildId());
     return null != r && r.id === e
   })

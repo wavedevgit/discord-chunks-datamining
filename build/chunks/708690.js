@@ -1,9 +1,10 @@
 /** Chunk was on web.js **/
+/** chunk id: 708690, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => i
 });
-var r = n(570140);
+var Chunk570140 = require("./570140.js");
 let i = {
   search(e, t) {
     r.Z.dispatch({
@@ -44,7 +45,7 @@ let i = {
     })
   },
   close() {
-    r.Z.dispatch({
+    Chunk570140.Z.dispatch({
       type: "PRIVATE_CHANNEL_RECIPIENTS_INVITE_CLOSE"
     })
   }

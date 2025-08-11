@@ -1,11 +1,12 @@
 /** Chunk was on 22988 **/
-n.d(t, {
+/** chunk id: 310291, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => o
-}), n(388685);
-var r = n(73800),
-  i = n(392711),
-  l = n.n(i),
-  a = n(232473);
+}), require("./388685.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk392711 = require("./392711.js"),
+  l = require.n(Chunk392711),
+  Chunk232473 = require("./232473.js");
 let s = e => {
     let t = {};
     for (let n of e) {
@@ -26,16 +27,16 @@ let s = e => {
     let {
       groupType: n,
       teamId: i
-    } = t, [l, o] = r.useState(!0), [c, d] = r.useState([]), u = r.useCallback(async () => {
-      if (d([]), null == e) return void o(!1);
+    } = t, [l, o] = r.useState(true), [c, d] = r.useState([]), u = r.useCallback(async () => {
+      if (d([]), null == e) return void o(false);
       try {
-        o(!0);
+        o(true);
         let t = await a.C(e, {
           grouping_type: n
         });
         d(t)
       } catch (e) {} finally {
-        o(!1)
+        o(false)
       }
     }, [e, n]);
     return r.useEffect(() => {

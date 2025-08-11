@@ -1,13 +1,14 @@
 /** Chunk was on 21153 **/
+/** chunk id: 109275, original params: e,t,r (module,exports,require) **/
 "use strict";
-var n = r(73800),
-  o = r(476400),
-  a = r.n(o),
-  i = r(9196),
-  l = r(329022),
-  s = r(829307),
-  u = r(442626),
-  c = r(116850),
+var Chunk73800 = require("./73800.js"),
+  Chunk476400 = require("./476400.js"),
+  a = require.n(Chunk476400),
+  Chunk9196 = require("./9196.js"),
+  Chunk329022 = require("./329022.js"),
+  Chunk829307 = require("./829307.js"),
+  Chunk442626 = require("./442626.js"),
+  Chunk116850 = require("./116850.js"),
   p = function(e) {
     var t = e.onChange,
       r = e.onSwatchHover,
@@ -113,7 +114,7 @@ var n = r(73800),
             right: "12px"
           }
         }
-      }, void 0 === d ? {} : d), {
+      }, true === d ? {} : d), {
         "hide-triangle": "hide" === f,
         "top-left-triangle": "top-left" === f,
         "top-right-triangle": "top-right" === f
@@ -126,7 +127,7 @@ var n = r(73800),
       };
     return n.createElement("div", {
       style: b.card,
-      className: "twitter-picker " + (void 0 === h ? "" : h)
+      className: "twitter-picker " + (true === h ? "" : h)
     }, n.createElement("div", {
       style: b.triangleShadow
     }), n.createElement("div", {
@@ -168,4 +169,4 @@ p.propTypes = {
   colors: ["#FF6900", "#FCB900", "#7BDCB5", "#00D084", "#8ED1FC", "#0693E3", "#ABB8C3", "#EB144C", "#F78DA7", "#9900EF"],
   triangle: "top-left",
   styles: {}
-}, (0, c.t1)(p)
+}, (0, Chunk116850.t1)(p)

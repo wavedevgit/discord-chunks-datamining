@@ -1,11 +1,12 @@
 /** Chunk was on web.js **/
+/** chunk id: 449217, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => a
-}), n(388685);
-var r = n(399606),
-  i = n(597688),
-  o = n(1870);
+}), require("./388685.js");
+var Chunk399606 = require("./399606.js"),
+  Chunk597688 = require("./597688.js"),
+  Chunk1870 = require("./1870.js");
 let a = e => {
   let [t, n] = (0, r.Wu)([i.Z], () => [i.Z.getCategoryForProduct(e), i.Z.getProduct(e)]);
   return {

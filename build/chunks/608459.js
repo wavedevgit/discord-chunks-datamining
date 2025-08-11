@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 608459, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   cardsList: "cardsList__84832",
   activityContainer: "activityContainer__84832",
   firstCardContainer: "firstCardContainer__84832",

@@ -1,5 +1,6 @@
 /** Chunk was on 44799 **/
-e.exports = {
+/** chunk id: 808353, original params: e,t,n (module,exports,require) **/
+module.exports = {
   container: "container_cba0a7",
   image: "image_cba0a7",
   close: "close_cba0a7",

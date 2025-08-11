@@ -1,11 +1,12 @@
 /** Chunk was on web.js **/
+/** chunk id: 128014, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   b: () => i
 });
-var r = n(960048);
+var Chunk960048 = require("./960048.js");
 
 function i() {
   let e = parseInt("429655");
-  return Number.isNaN(e) && (r.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("429655")), e = 0), e
+  return Number.isNaN(module) && (Chunk960048.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("429655")), e = 0), module
 }

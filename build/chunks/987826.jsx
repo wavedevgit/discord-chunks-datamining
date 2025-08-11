@@ -1,0 +1,28 @@
+/** Chunk was on web.js **/
+/** chunk id: 987826, original params: e,t,n (module,exports,re quire) **/
+"use strict";
+require.d(exports, {
+  Z: () => l
+});
+var Chunk255367 = require("./255367.js");
+require("./73800.js");
+var Chunk120356 = require("./120356.js"),
+  o = require.n(Chunk120356),
+  Chunk481060 = require("./481060.js"),
+  Chunk362560 = require("./362560.js");
+
+function l(e) {
+  var t;
+  let {
+    name: n,
+    className: i,
+    state: l,
+    isInline: c,
+    onClick: u
+  } = e, d = n + (c ? ":" : ""), f = null;
+  (null == l ? true : l.isActive) && !c ? f = s.active : (null == l || null == (t = l.lastValidationResult) ? true : t.success) === false ? f = s.error : (null == l ? true : l.hasValue) && !c && (f = s.set);
+  let _ = <a.Text variant={c ? "text-md/normal" : "text-sm/normal"} color={"text-primary"} className={o()(s.option, {
+      [s.inline]: c
+    }, f, i)}>{d}</a.Text>;
+  return null == u ? _ : <a.P3F className={s.clickable} onClick={() => u(n)}>{_}</a.P3F>
+}

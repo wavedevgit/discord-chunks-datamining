@@ -1,5 +1,6 @@
 /** Chunk was on 81263 **/
-e.exports = {
+/** chunk id: 615836, original params: e,o,r (module,exports,require) **/
+module.exports = {
   churnFooterContainer: "churnFooterContainer__64988",
   churnFooterGlow: "churnFooterGlow__64988",
   churnFooterTopBorder: "churnFooterTopBorder__64988",

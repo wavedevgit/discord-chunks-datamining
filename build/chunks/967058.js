@@ -1,5 +1,6 @@
 /** Chunk was on web.js **/
-e.exports = function(e) {
+/** chunk id: 967058, original params: e (module,exports,re quire) **/
+module.exports = function(e) {
   return {
     name: "Coq",
     keywords: {
@@ -8,7 +9,7 @@ e.exports = function(e) {
     },
     contains: [e.QUOTE_STRING_MODE, e.COMMENT("\\(\\*", "\\*\\)"), e.C_NUMBER_MODE, {
       className: "type",
-      excludeBegin: !0,
+      excludeBegin: true,
       begin: "\\|\\s*",
       end: "\\w+"
     }, {

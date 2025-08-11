@@ -1,20 +1,21 @@
 /** Chunk was on web.js **/
+/** chunk id: 267097, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => o
 });
-var r = n(580747),
-  i = n(479801);
+var Chunk580747 = require("./580747.js"),
+  Chunk479801 = require("./479801.js");
 
 function o(e, t) {
-  let n = null == e ? void 0 : e.paymentGateway,
+  let n = null == e ? true : e.paymentGateway,
     o = (0, r.Z)("shop_disable_cache"),
     a = (0, r.Z)("shop_include_unpublished");
   return (0, i.e)({
     noCache: o,
     includeUnpublished: a,
     paymentGateway: n,
-    includeBundles: !0,
-    logPerf: null == e ? void 0 : e.logPerf
-  }, void 0, t)
+    includeBundles: true,
+    logPerf: null == e ? true : e.logPerf
+  }, true, t)
 }

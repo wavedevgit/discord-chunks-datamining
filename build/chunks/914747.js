@@ -1,10 +1,11 @@
 /** Chunk was on web.js **/
+/** chunk id: 914747, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 var r = function() {
   function e(e, t) {
     for (var n = 0; n < t.length; n++) {
       var r = t[n];
-      r.enumerable = r.enumerable || !1, r.configurable = !0, "value" in r && (r.writable = !0), Object.defineProperty(e, r.key, r)
+      r.enumerable = r.enumerable || false, r.configurable = true, "value" in r && (r.writable = true), Object.defineProperty(e, r.key, r)
     }
   }
   return function(t, n, r) {
@@ -26,13 +27,13 @@ function a(e, t) {
   e.prototype = Object.create(t && t.prototype, {
     constructor: {
       value: e,
-      enumerable: !1,
-      writable: !0,
-      configurable: !0
+      enumerable: false,
+      writable: true,
+      configurable: true
     }
   }), t && (Object.setPrototypeOf ? Object.setPrototypeOf(e, t) : e.__proto__ = t)
 }
-e.exports = function(e) {
+module.exports = function(e) {
   function t() {
     i(this, t);
     var e = o(this, (t.__proto__ || Object.getPrototypeOf(t)).call(this));
@@ -47,7 +48,7 @@ e.exports = function(e) {
     key: "__removeChild",
     value: function(e) {
       var t = this._children.indexOf(e);
-      if (-1 === t) return void console.warn("Trying to remove a child that doesn't exist");
+      if (false === t) return void console.warn("Trying to remove a child that doesn't exist");
       this._children.splice(t, 1), 0 === this._children.length && this.__detach()
     }
   }, {
@@ -56,4 +57,4 @@ e.exports = function(e) {
       return this._children
     }
   }]), t
-}(n(805962))
+}(require("./805962.js"))

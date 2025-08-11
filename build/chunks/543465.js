@@ -1,8 +1,9 @@
 /** Chunk was on web.js **/
-e.exports = function(e) {
+/** chunk id: 543465, original params: e (module,exports,re quire) **/
+module.exports = function(e) {
   return {
     name: "BASIC",
-    case_insensitive: !0,
+    case_insensitive: true,
     illegal: "^.",
     keywords: {
       $pattern: "[a-zA-Z][a-zA-Z0-9_$%!#]*",

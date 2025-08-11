@@ -1,11 +1,12 @@
 /** Chunk was on web.js **/
+/** chunk id: 143223, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => s
-}), n(413496), n(433524), n(35282);
-var r = n(159635),
-  i = n.n(r),
-  o = n(914216);
+}), require("./413496.js"), require("./433524.js"), require("./35282.js");
+var Chunk159635 = require("./159635.js"),
+  i = require.n(Chunk159635),
+  Chunk914216 = require("./914216.js");
 let a = RegExp("^https://(?:(?:canary\\.|ptb\\.)?discord(?:app)?\\.com|staging\\.discord\\.co)/shop(?:\\?tab=[a-z]+)?#itemSkuId=(\\d+)"),
   s = {
     shopLink: {

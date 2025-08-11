@@ -1,5 +1,6 @@
 /** Chunk was on 67544 **/
-e.exports = {
+/** chunk id: 412190, original params: e,t,n (module,exports,require) **/
+module.exports = {
   container: "container__7a0c3",
   fullscreenItems: "fullscreenItems__7a0c3",
   aboveGround: "aboveGround__7a0c3",

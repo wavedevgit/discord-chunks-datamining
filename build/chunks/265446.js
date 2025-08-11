@@ -1,11 +1,12 @@
 /** Chunk was on web.js **/
+/** chunk id: 265446, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => s
-}), n(35282), n(388685);
-var r = n(53529),
-  i = n(436660),
-  o = n(887490);
+}), require("./35282.js"), require("./388685.js");
+var Chunk53529 = require("./53529.js"),
+  Chunk436660 = require("./436660.js"),
+  Chunk887490 = require("./887490.js");
 let a = ["applicationCommand"];
 
 function s(e) {
@@ -22,10 +23,10 @@ function s(e) {
     let o = t.split(/\r\n|\r|\n/);
     if (!l(e)) return void n(o.join(" "));
     r.T.withSingleEntry(e, () => {
-      let t = !1;
+      let t = false;
       for (let r of o) t && i.Q.splitNodes(e, {
-        always: !0
-      }), n(r), t = !0
+        always: true
+      }), n(r), t = true
     })
   }, e
 }

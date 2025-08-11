@@ -1,5 +1,6 @@
 /** Chunk was on web.js **/
-e.exports = function(e) {
+/** chunk id: 646896, original params: e (module,exports,re quire) **/
+module.exports = function(e) {
   e.regex;
   let t = e.COMMENT(/\(;/, /;\)/);
   t.contains.push("self");

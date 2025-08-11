@@ -1,6 +1,7 @@
 /** Chunk was on 45620 **/
+/** chunk id: 484920, original params: e,t,n (module,exports,require) **/
 "use strict";
-e.exports = {
+module.exports = {
   shopViewWrapper: "shopViewWrapper__6db1d",
   visible: "visible__6db1d",
   out: "out__6db1d",

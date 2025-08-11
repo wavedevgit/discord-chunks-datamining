@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 159759, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n(42547), e.exports = function(e, t) {
+require("./42547.js"), module.exports = function(e, t) {
   var n = e.getSelection(),
     r = e.getCurrentContent(),
     i = n.getStartKey(),
@@ -14,6 +15,6 @@ n(42547), e.exports = function(e, t) {
   return n.merge({
     focusKey: a,
     focusOffset: s,
-    isBackward: !0
+    isBackward: true
   })
 }

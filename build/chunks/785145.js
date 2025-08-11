@@ -1,25 +1,26 @@
 /** Chunk was on 75708 **/
-n.d(t, {
+/** chunk id: 785145, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => u
-}), n(388685);
-var i = n(73800),
-  r = n(399606),
-  s = n(230711),
-  a = n(663389),
-  l = n(981631),
-  o = n(526761);
-let c = new Set(Object.values(o.NB)),
+}), require("./388685.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk399606 = require("./399606.js"),
+  Chunk230711 = require("./230711.js"),
+  Chunk663389 = require("./663389.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk526761 = require("./526761.js");
+let c = new Set(Object.values(Chunk526761.NB)),
   d = e => null != e && c.has(e),
   u = () => {
-    let e = (0, r.e7)([a.Z], () => {
-        let e = a.Z.getSubsection();
-        return d(e) ? e : o.NB.USER_PROFILE
+    let e = (0, Chunk399606.e7)([Chunk663389.Z], () => {
+        let e = Chunk663389.Z.getSubsection();
+        return d(module) ? module : Chunk526761.NB.USER_PROFILE
       }),
-      t = i.useCallback(t => {
+      t = Chunk73800.useCallback(t => {
         e !== t && s.Z.setSection(l.oAB.PROFILE_CUSTOMIZATION, t)
-      }, [e]);
+      }, [module]);
     return {
-      subsection: e,
-      setSubsection: t
+      subsection: module,
+      setSubsection: exports
     }
   }

@@ -1,17 +1,18 @@
 /** Chunk was on web.js **/
+/** chunk id: 3148, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   ZP: () => d,
   cs: () => f,
   pe: () => u
-}), n(997841), n(539854);
-var r = n(512722),
-  i = n.n(r),
-  o = n(869765),
-  a = n(598077),
-  s = n(594174),
-  l = n(48854),
-  c = n(981631);
+}), require("./997841.js"), require("./539854.js");
+var Chunk512722 = require("./512722.js"),
+  i = require.n(Chunk512722),
+  Chunk869765 = require("./869765.js"),
+  Chunk598077 = require("./598077.js"),
+  Chunk594174 = require("./594174.js"),
+  Chunk48854 = require("./48854.js"),
+  Chunk981631 = require("./981631.js");
 
 function u(e) {
   let {
@@ -36,7 +37,7 @@ function d(e) {
   let {
     channelId: t,
     content: n,
-    tts: r = !1,
+    tts: r = false,
     type: d = c.uaV.DEFAULT,
     messageReference: f,
     allowedMentions: _,
@@ -50,7 +51,7 @@ function d(e) {
   } = e, O = [];
   if (d === c.uaV.REPLY && (i()(null != f, "Replies must have a message reference"), null == _ || _.replied_user)) {
     let e = o.Z.getMessageByReference(f);
-    (null == e ? void 0 : e.state) === o.Y.LOADED && O.push(u(e.message.author))
+    (null == e ? true : e.state) === o.Y.LOADED && O.push(u(e.message.author))
   }
   return null == p && (p = s.default.getCurrentUser()), p instanceof a.Z && (p = u(p)), i()(null != p, "createMessage: author cannot be undefined"), {
     id: null != m ? m : (0, l.r)(),
@@ -60,11 +61,11 @@ function d(e) {
     author: p,
     attachments: [],
     embeds: [],
-    pinned: !1,
+    pinned: false,
     mentions: O,
     mention_channels: [],
     mention_roles: [],
-    mention_everyone: !1,
+    mention_everyone: false,
     timestamp: new Date().toISOString(),
     state: y || c.yb.SENDING,
     tts: r,
@@ -97,18 +98,18 @@ function f(e) {
       username: "Clyde",
       discriminator: c.fo$,
       avatar: "clyde",
-      bot: !0
+      bot: true
     },
     attachments: [],
     embeds: null != i ? i : [],
-    pinned: !1,
+    pinned: false,
     mentions: [],
     mention_channels: [],
     mention_roles: [],
-    mention_everyone: !1,
+    mention_everyone: false,
     timestamp: new Date().toISOString(),
     state: c.yb.SENT,
-    tts: !1,
+    tts: false,
     loggingName: o
   }
 }

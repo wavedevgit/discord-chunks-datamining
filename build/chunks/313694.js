@@ -1,12 +1,13 @@
 /** Chunk was on web.js **/
+/** chunk id: 313694, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 
 function r(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -44,20 +45,20 @@ function u(e, t, n) {
     t.value = n
   }
 }
-n.d(t, {
+require.d(exports, {
   J: () => f
 });
 var d = new WeakMap;
 class f {
   constructor() {
     i(this, d, {
-      writable: !0,
-      value: void 0
+      writable: true,
+      value: true
     }), r(this, "register", e => {
       a(this, d).push(e)
     }), r(this, "unregister", e => {
       let t;
-      for (; - 1 !== (t = a(this, d).indexOf(e));) a(this, d).splice(t, 1)
+      for (; false !== (t = a(this, d).indexOf(e));) a(this, d).splice(t, 1)
     }), r(this, "backendChanged", e => {
       for (let t of a(this, d)) t.backendChanged(e)
     }), l(this, d, [])

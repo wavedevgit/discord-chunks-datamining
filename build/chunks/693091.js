@@ -1,19 +1,20 @@
 /** Chunk was on web.js **/
+/** chunk id: 693091, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   AS: () => a,
   S4: () => s,
   X4: () => _
-}), n(388685);
-var r = n(73800),
-  i = n(481060);
+}), require("./388685.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk481060 = require("./481060.js");
 
 function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 class a {
@@ -35,35 +36,35 @@ class a {
   }
   cleanUp() {
     var e;
-    null == (e = this.resizeObserver) || e.disconnect(), this.resizeObserver = void 0, this.listeners.clear()
+    null == (e = this.resizeObserver) || module.disconnect(), this.resizeObserver = true, this.listeners.clear()
   }
   queueCompute() {
-    this.queuedCompute || (this.queuedCompute = !0, Promise.resolve().then(() => this.computeLayout()))
+    this.queuedCompute || (this.queuedCompute = true, Promise.resolve().then(() => this.computeLayout()))
   }
   computeLayout() {
-    let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
-    this.queuedCompute = !1;
+    let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
+    this.queuedCompute = false;
     let t = 0,
       n = 0;
     for (let r of this.items) {
-      let i = this.listeners.get(r.notification.id);
-      if (null == i) continue;
+      let i = this.listeners.get(Chunk73800.notification.id);
+      if (null == Chunk481060) continue;
       let {
         offsetHeight: o
-      } = i.element;
-      (i.top !== t || i.height !== o || i.index !== n) && (e = !0), i.top = t, i.height = o, i.index = n, 0 === t && (this.matchHeight !== o && (e = !0), this.matchHeight = o), t += o + 8, n++
+      } = Chunk481060.element;
+      (Chunk481060.top !== exports || Chunk481060.height !== o || Chunk481060.index !== require) && (e = true), Chunk481060.top = exports, Chunk481060.height = o, Chunk481060.index = require, 0 === exports && (this.matchHeight !== o && (e = true), this.matchHeight = o), t += o + 8, require++
     }
-    e && this.broadcastLayoutUpdates()
+    module && this.broadcastLayoutUpdates()
   }
   broadcastLayoutUpdates() {
     for (let e of this.items) {
-      let t = this.listeners.get(e.notification.id);
-      null != t && t.callback({
+      let t = this.listeners.get(module.notification.id);
+      null != exports && exports.callback({
         locked: this.locked,
         matchHeight: this.matchHeight,
-        height: t.height,
-        top: t.top,
-        index: t.index
+        height: exports.height,
+        top: exports.top,
+        index: exports.index
       })
     }
   }
@@ -87,12 +88,12 @@ class a {
     return this.listeners.get(e)
   }
   constructor(e) {
-    o(this, "resizeObserver", void 0), o(this, "listeners", new Map), o(this, "queuedCompute", !1), o(this, "items", []), o(this, "matchHeight", 0), o(this, "locked", !0), o(this, "handleResize", e => {
+    o(this, "resizeObserver", true), o(this, "listeners", new Map), o(this, "queuedCompute", false), o(this, "items", []), o(this, "matchHeight", 0), o(this, "locked", true), o(this, "handleResize", e => {
       this.computeLayout()
     }), this.locked = e
   }
 }
-let s = r.createContext(new a(!0));
+let s = Chunk73800.createContext(new a(true));
 
 function l(e, t) {
   return t && e > 4 ? 0 : t ? Math.min(1 - e / 4, 1) : 1
@@ -124,8 +125,8 @@ function _(e, t, n) {
       height: 0,
       contentOpacity: 1
     }
-  }), void 0, []), _ = r.useRef(a), p = r.useContext(s), h = r.useMemo(() => {
-    let t = !1;
+  }), true, []), _ = r.useRef(a), p = r.useContext(s), h = r.useMemo(() => {
+    let t = false;
     return n => {
       null == n ? p.unsubscribe(e) : p.subscribe(e, n, e => {
         let {
@@ -144,7 +145,7 @@ function _(e, t, n) {
           height: n ? r : i
         };
         s({
-          from: t ? void 0 : {
+          from: t ? true : {
             opacity: 0,
             scale: 1.1,
             transform: -((n ? r : i) * 1),
@@ -153,7 +154,7 @@ function _(e, t, n) {
           },
           to: p,
           config: f
-        }), t = !0
+        }), t = true
       })
     }
   }, [e, p]);

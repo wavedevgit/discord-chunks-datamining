@@ -1,0 +1,19 @@
+/** Chunk was on web.js **/
+/** chunk id: 759875, original params: e,t,n (module,exports,re quire) **/
+"use strict";
+require.d(exports, {
+  Z: () => c
+});
+var Chunk255367 = require("./255367.js");
+require("./73800.js");
+var Chunk481060 = require("./481060.js"),
+  Chunk868643 = require("./868643.js"),
+  Chunk245216 = require("./245216.jsx"),
+  Chunk996861 = require("./996861.js"),
+  Chunk388032 = require("./388032.jsx");
+
+function c(e, t) {
+  return (0, o.a)(e) ? <i.sNh id={"forward"} label={l.intl.string(l.t.I3ltXF)} icon={a.Z} action={() => {
+      (0, s.ts)(t, e)
+    }} /> : null
+}

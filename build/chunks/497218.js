@@ -1,10 +1,11 @@
 /** Chunk was on web.js **/
+/** chunk id: 497218, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-var r, i = n(166898),
-  o = n(65183),
-  a = n(467159),
-  s = o.OrderedMap;
-e.exports = {
+var r, Chunk166898 = require("./166898.js"),
+  Chunk65183 = require("./65183.js"),
+  Chunk467159 = require("./467159.js"),
+  s = Chunk65183.OrderedMap;
+module.exports = {
   getDirectionMap: function(e, t) {
     r ? r.reset() : r = new i;
     var n = e.getBlockMap(),

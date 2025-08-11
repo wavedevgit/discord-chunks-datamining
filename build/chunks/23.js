@@ -1,5 +1,6 @@
 /** Chunk was on 6850 **/
-e.exports = {
+/** chunk id: 23, original params: e,t,n (module,exports,require) **/
+module.exports = {
   labelWithIconContainer: "labelWithIconContainer_c2c6a6",
   icon: "icon_c2c6a6",
   radioSelection: "radioSelection_c2c6a6",

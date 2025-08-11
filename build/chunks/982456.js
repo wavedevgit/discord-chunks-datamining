@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 982456, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   button: "button__201d5",
   contents: "contents__201d5",
   lookFilled: "lookFilled__201d5",
@@ -8,7 +9,7 @@ e.exports = {
   spinnerItem: "spinnerItem__201d5",
   colorBrandInverted: "colorBrandInverted__201d5",
   lookOutlined: "lookOutlined__201d5",
-  lookLink: "lookLink__201d5 " + n(361585).lowSaturationUnderline,
+  lookLink: "lookLink__201d5 " + require("./361585.js").lowSaturationUnderline,
   colorPrimary: "colorPrimary__201d5",
   colorLink: "colorLink__201d5",
   colorWhite: "colorWhite__201d5",

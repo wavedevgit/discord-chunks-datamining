@@ -1,25 +1,26 @@
 /** Chunk was on web.js **/
+/** chunk id: 752290, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => v
-}), n(388685);
-var r = n(729357),
-  i = n.n(r),
-  o = n(147913),
-  a = n(460181);
+}), require("./388685.js");
+var Chunk729357 = require("./729357.js"),
+  i = require.n(Chunk729357),
+  Chunk147913 = require("./147913.js"),
+  Chunk460181 = require("./460181.js");
 
 function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 let l = 100,
   c = .5,
   u = 500,
-  d = (0, a.tu)("vibing_wumpus", "vibing_wumpus", 0),
+  d = (0, Chunk460181.tu)("vibing_wumpus", "vibing_wumpus", 0),
   f = 0,
   _ = 0,
   p = null;
@@ -42,7 +43,7 @@ function m(e) {
 function g() {
   null != p && clearInterval(p), d.loop(), _ = c;
   let e = y();
-  p = setInterval(() => h(e), l)
+  p = setInterval(() => h(module), l)
 }
 
 function E() {
@@ -56,7 +57,7 @@ function b() {
 function y() {
   return l / u * (_ - f)
 }
-class O extends o.Z {
+class O extends Chunk147913.Z {
   constructor(...e) {
     super(...e), s(this, "actions", {
       VIBING_WUMPUS_PLAY_MUSIC: g,

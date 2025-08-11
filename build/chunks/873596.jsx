@@ -1,0 +1,132 @@
+/** Chunk was on 82096 **/
+/** chunk id: 873596, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
+  Z: () => T
+}), require("./388685.js");
+var Chunk255367 = require("./255367.js"),
+  Chunk73800 = require("./73800.js"),
+  Chunk442837 = require("./442837.js"),
+  Chunk481060 = require("./481060.js"),
+  Chunk313201 = require("./313201.js"),
+  Chunk19780 = require("./19780.js"),
+  Chunk979651 = require("./979651.js"),
+  Chunk362446 = require("./362446.js"),
+  Chunk571826 = require("./571826.js"),
+  Chunk277642 = require("./277642.js"),
+  Chunk441894 = require("./441894.js"),
+  Chunk160038 = require("./160038.jsx"),
+  Chunk586646 = require("./586646.jsx"),
+  Chunk760373 = require("./760373.js"),
+  Chunk388032 = require("./388032.jsx"),
+  Chunk935179 = require("./935179.js");
+
+function b(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      var r;
+      r = n[t], t in e ? Object.defineProperty(e, t, {
+        value: r,
+        enumerable: true,
+        configurable: true,
+        writable: true
+      }) : e[t] = r
+    })
+  }
+  return e
+}
+
+function x(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
+    var n = Object.keys(e);
+    if (Object.getOwnPropertySymbols) {
+      var r = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, r)
+    }
+    return n
+  })(Object(t)).forEach(function(n) {
+    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+  }), e
+}
+
+function E(e) {
+  let {
+    lobbyId: t,
+    connectionTypeText: n,
+    closePopout: l
+  } = e, o = (0, i.cj)([u.Z], () => ({
+    connectionState: u.Z.getConnectionState(t),
+    hostname: u.Z.getHostname(t),
+    averagePing: u.Z.getAveragePing(t),
+    lastPing: u.Z.getLastPing(t),
+    pings: u.Z.getPings(),
+    outboundLossRate: u.Z.getOutboundLossRate(t)
+  }));
+  return <g.Z{...x(b({}, o), {
+    closePopout: l,
+    connectionTypeText: n
+  })} />
+}
+
+function m(e) {
+  let {
+    closePopout: t,
+    connectionTypeText: n
+  } = e, l = (0, i.cj)([a.Z], () => ({
+    connectionState: a.Z.getState(),
+    hostname: a.Z.getHostname(),
+    averagePing: a.Z.getAveragePing(),
+    lastPing: a.Z.getLastPing(),
+    outboundLossRate: a.Z.getOutboundLossRate(),
+    pings: a.Z.getPings()
+  }));
+  return <g.Z{...x(b({}, l), {
+    closePopout: t,
+    connectionTypeText: n
+  })} />
+}
+
+function C(e) {
+  let {
+    channelId: t,
+    isOverlay: n,
+    lobbyId: l,
+    closePopout: i
+  } = e, o = (0, h.J)({
+    channelId: t
+  }) ? N.intl.string(N.t["3BogKS"]) : N.intl.string(N.t.ETIVvr);
+  return n ? <E lobbyId={l} closePopout={i} connectionTypeText={o} /> : <m closePopout={i} connectionTypeText={o} />
+}
+
+function v(e) {
+  let t = (0, i.e7)([c.Z], () => c.Z.hasVideo(e.channelId)),
+    [n, a] = l.useState(O.tu.RTC_DEBUG_PANEL),
+    u = (0, s.Dt)(),
+    h = l.useMemo(() => {
+      switch (n) {
+        case O.tu.RTC_DEBUG_PANEL:
+          return <C{...b({}, e)} />;
+        case O.tu.RTC_SECURE_FRAMES:
+          return <p.Z channelId={e.channelId} />
+      }
+    }, [e, n]);
+  l.useEffect(() => {
+    (0, d.sN)({
+      channelId: e.channelId,
+      selectedTab: n
+    })
+  }, [e.channelId, n]);
+  let g = (0, f.r)();
+  return l.useEffect(() => {
+    g && a(O.tu.RTC_DEBUG_PANEL)
+  }, [g]), <div className={y.container}>{<o.X6q className={y.title} variant={"heading-lg/bold"} color={"header-primary"}>{t ? N.intl.string(N.t.IlHdW1) : N.intl.string(N.t.WsOisr)}</o.X6q>}{<o.njP className={y.tabs} selectedItem={n} type={"top"} look={"brand"} onItemSelect={a}>{<o.njP.Item id={O.tu.RTC_DEBUG_PANEL} className={y.tabBarItem}>{N.intl.string(N.t.MBY1Pj)}</o.njP.Item>}{g ? null : <o.njP.Item id={O.tu.RTC_SECURE_FRAMES} className={y.tabBarItem}>{N.intl.string(N.t.zC6o3t)}</o.njP.Item>}</o.njP>}{<o.njP.Panel id={n} aria-labelledby={u}>{h}</o.njP.Panel>}</div>
+}
+
+function T(e) {
+  return (0, h.J)({
+    channelId: e.channelId
+  }) ? <v{...b({}, e)} /> : <div className={y.debugPanelStandalone}><section className={y.debugPanelSection}><C{...b({}, e)} /></section></div>
+}

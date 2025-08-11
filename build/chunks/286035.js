@@ -1,20 +1,21 @@
 /** Chunk was on web.js **/
+/** chunk id: 286035, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Pg: () => a,
   Te: () => i,
   kb: () => o
 });
-var r = n(570140);
+var Chunk570140 = require("./570140.js");
 
 function i() {
-  r.Z.wait(() => r.Z.dispatch({
+  Chunk570140.Z.wait(() => Chunk570140.Z.dispatch({
     type: "DOMAIN_MIGRATION_START"
   }))
 }
 
 function o() {
-  r.Z.dispatch({
+  Chunk570140.Z.dispatch({
     type: "DOMAIN_MIGRATION_FAILURE"
   })
 }

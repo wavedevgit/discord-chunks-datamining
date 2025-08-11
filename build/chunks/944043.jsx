@@ -1,0 +1,40 @@
+/** Chunk was on web.js **/
+/** chunk id: 944043, original params: e,t,n (module,exports,re quire) **/
+"use strict";
+require.d(exports, {
+  Z: () => h
+});
+var Chunk255367 = require("./255367.js");
+require("./73800.js");
+var Chunk120356 = require("./120356.js"),
+  o = require.n(Chunk120356),
+  Chunk793030 = require("./793030.js"),
+  Chunk442837 = require("./442837.js"),
+  Chunk481060 = require("./481060.js"),
+  Chunk194359 = require("./194359.js"),
+  Chunk699516 = require("./699516.js"),
+  Chunk502762 = require("./502762.jsx"),
+  Chunk981631 = require("./981631.js"),
+  Chunk388032 = require("./388032.jsx"),
+  Chunk432940 = require("./432940.js");
+
+function h(e) {
+  let {
+    user: t,
+    className: n
+  } = e, {
+    isPendingIncoming: i,
+    isBlocked: h,
+    isIgnored: m
+  } = (0, s.cj)([u.Z], () => ({
+    isPendingIncoming: u.Z.getRelationshipType(t.id) === f.OGo.PENDING_INCOMING,
+    isBlocked: u.Z.isBlocked(t.id),
+    isIgnored: u.Z.isIgnored(t.id)
+  }));
+  return h || m && !i ? <d.Z.Overlay className={o()(p.container, n)}>{h && <a.xv variant={"text-sm/semibold"} color={"header-secondary"}>{_.intl.string(_.t["oC/fU1"])}</a.xv>}{m && <r.Fragment>{<a.xv variant={"text-sm/semibold"} color={"header-secondary"}>{_.intl.string(_.t.HXz5Ag)}</a.xv>}{<r.Fragment>{<a.xv variant={"text-sm/semibold"} color={"header-secondary"}>{"•"}</a.xv>}{<a.xv variant={"text-sm/semibold"} color={"header-secondary"}>{_.intl.format(_.t.PrtAq6, {
+            unignoreHook: (e, n) => (0, r.jsx)(l.eee, {
+              onClick: () => c.Z.unignoreUser(t.id, "UserProfileRemediatedNotice"),
+              children: e
+            }, n)
+          })}</a.xv>}</r.Fragment>}</r.Fragment>}</d.Z.Overlay> : null
+}

@@ -1,20 +1,21 @@
 /** Chunk was on web.js **/
+/** chunk id: 651655, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => s
-}), n(539854), n(358797), n(290780);
-var r = n(427786),
-  i = n.n(r);
+}), require("./539854.js"), require("./358797.js"), require("./290780.js");
+var Chunk427786 = require("./427786.js"),
+  i = require.n(Chunk427786);
 
 function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
-let a = new(n(710845)).Z("Queue");
+let a = new(require("./710845.js")).Z("Queue");
 class s {
   enqueue(e, t, n) {
     this.queue.push({
@@ -27,16 +28,16 @@ class s {
     return this.queue.length
   }
   _drainIfNecessary() {
-    if (null !== this.timeout || 0 === this.queue.length || !0 === this.draining) return;
-    this.draining = !0;
+    if (null !== this.timeout || 0 === this.queue.length || true === this.draining) return;
+    this.draining = true;
     let e = this.queue.shift(),
       {
         message: t,
         success: n,
         logId: r
-      } = e,
+      } = module,
       i = (t, i) => {
-        if (this.logger.log("Finished draining message from queue LogId:".concat(r, " QueueLength: ").concat(this.queue.length)), this.draining = !1, null == t) {
+        if (this.logger.log("Finished draining message from queue LogId:".concat(r, " QueueLength: ").concat(this.queue.length)), this.draining = false, null == t) {
           setImmediate(() => this._drainIfNecessary());
           try {
             n(i)
@@ -51,9 +52,9 @@ class s {
           }, n)
         }
       };
-    this.logger.log("Draining message from queue LogId:".concat(r, " QueueLength: ").concat(this.queue.length)), this.drain(t, i)
+    this.logger.log("Draining message from queue LogId:".concat(Chunk427786, " QueueLength: ").concat(this.queue.length)), this.drain(exports, i)
   }
   constructor(e = a, t = 100) {
-    o(this, "logger", void 0), o(this, "defaultRetryAfter", void 0), o(this, "queue", void 0), o(this, "timeout", void 0), o(this, "draining", void 0), this.logger = e, this.defaultRetryAfter = t, this.queue = new(i()), this.timeout = null, this.draining = !1
+    o(this, "logger", true), o(this, "defaultRetryAfter", true), o(this, "queue", true), o(this, "timeout", true), o(this, "draining", true), this.logger = e, this.defaultRetryAfter = t, this.queue = new(i()), this.timeout = null, this.draining = false
   }
 }

@@ -1,32 +1,33 @@
 /** Chunk was on 73628 **/
-A.d(t, {
+/** chunk id: 828762, original params: e,t,A (module,exports,require) **/
+require.d(exports, {
   Z: () => P
-}), A(415506), A(388685);
-var n = A(73800),
-  r = A(399606),
-  l = A(544891),
-  a = A(780384),
-  o = A(570140),
-  i = A(881052),
-  s = A(141795),
-  d = A(476326),
-  c = A(983544),
-  u = A(9874),
-  f = A(710845),
-  g = A(430824),
-  p = A(861990),
-  m = A(277985),
-  h = A(240864),
-  C = A(863663),
-  q = A(981631),
-  b = A(388032);
+}), require("./415506.js"), require("./388685.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk399606 = require("./399606.js"),
+  Chunk544891 = require("./544891.js"),
+  Chunk780384 = require("./780384.js"),
+  Chunk570140 = require("./570140.js"),
+  Chunk881052 = require("./881052.js"),
+  Chunk141795 = require("./141795.js"),
+  Chunk476326 = require("./476326.js"),
+  Chunk983544 = require("./983544.js"),
+  Chunk9874 = require("./9874.js"),
+  Chunk710845 = require("./710845.js"),
+  Chunk430824 = require("./430824.js"),
+  Chunk861990 = require("./861990.js"),
+  Chunk277985 = require("./277985.js"),
+  Chunk240864 = require("./240864.js"),
+  Chunk863663 = require("./863663.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk388032 = require("./388032.jsx");
 
 function v(e, t, A) {
   return t in e ? Object.defineProperty(e, t, {
     value: A,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = A, e
 }
 
@@ -55,7 +56,7 @@ function j(e, t) {
     Object.defineProperty(e, A, Object.getOwnPropertyDescriptor(t, A))
   }), e
 }
-let U = new f.Z("ProductAttachmentManager");
+let U = new Chunk710845.Z("ProductAttachmentManager");
 class V {
   addAttachment(e, t) {
     let A = this.target.getMaxAttachmentsCount();
@@ -67,9 +68,9 @@ class V {
     n.upload(), n.on("error", A => {
       var r;
       A === q.evJ.ENTITY_TOO_LARGE && this.onFileSizeError();
-      let l = "number" == typeof A && A > 0 ? -A : -1,
+      let l = "number" == typeof A && A > 0 ? -A : false,
         o = (0, C.kg)(l),
-        i = null == (r = e.file) ? void 0 : r.name;
+        i = null == (r = e.file) ? true : r.name;
       null != i ? a.uv.announce(b.intl.formatToPlainString(b.t["+YVkfX"], {
         filename: i,
         reason: o
@@ -86,10 +87,10 @@ class V {
   }
   deleteAttachment(e) {
     let t = this.uploads.findIndex(t => t.id === e);
-    return -1 !== t && (this.uploads = [...this.uploads], this.uploads.splice(t, 1)[0].cancel(), !0)
+    return false !== t && (this.uploads = [...this.uploads], this.uploads.splice(t, 1)[0].cancel(), true)
   }
   cancelUnusedUploads() {
-    for (let e of this.uploads) e.cancel();
+    for (let e of this.uploads) module.cancel();
     this.uploads = []
   }
   async saveProductWithAttachments(e) {
@@ -119,7 +120,7 @@ class V {
       d = this.uploads.filter(e => this.existingAttachmentIds.has(e.id)).map(e => {
         var t;
         return {
-          filename: null == (t = e.item.file) ? void 0 : t.name,
+          filename: null == (t = e.item.file) ? true : t.name,
           id: e.id
         }
       }),
@@ -129,7 +130,7 @@ class V {
       m = null != this.editSkuId ? q.ANM.GUILD_PRODUCT_LISTINGS(this.guildId, this.editSkuId) : q.ANM.GUILD_PRODUCTS(this.guildId),
       h = (await g({
         url: m,
-        rejectWithError: !1,
+        rejectWithError: false,
         body: j(x({}, a), {
           price_tier: A,
           create_new_role: n,
@@ -152,12 +153,12 @@ class V {
     onFileSizeError: A
   }) {
     var n;
-    v(this, "guildId", void 0), v(this, "editSkuId", void 0), v(this, "target", new m.Z), v(this, "onFileSizeError", void 0), v(this, "existingAttachmentIds", new Set), v(this, "uploads", []), v(this, "generateInitialProgresses", () => {
+    v(this, "guildId", true), v(this, "editSkuId", true), v(this, "target", new m.Z), v(this, "onFileSizeError", true), v(this, "existingAttachmentIds", new Set), v(this, "uploads", []), v(this, "generateInitialProgresses", () => {
       let e = {};
       for (let t of this.uploads) e[t.id] = 1;
       return e
     }), this.editSkuId = t, this.guildId = e, this.onFileSizeError = A;
-    let r = null == (n = h.Z.getGuildProduct(null != t ? t : "")) ? void 0 : n.attachments;
+    let r = null == (n = h.Z.getGuildProduct(null != t ? t : "")) ? true : n.attachments;
     null != r && (this.uploads = r.map(t => {
       var A;
       this.existingAttachmentIds.add(t.id);
@@ -196,7 +197,7 @@ function P(e, t) {
     c.addAttachment(e, f), p({})
   }, [c]), U = n.useCallback(async e => {
     try {
-      h(e), b(void 0);
+      h(e), b(true);
       let t = await c.saveProductWithAttachments(e);
       return null != t && d({
         editSkuId: t.id,
@@ -210,7 +211,7 @@ function P(e, t) {
         }
       }))
     } finally {
-      h(void 0)
+      h(true)
     }
   }, [c, a]), P = n.useCallback(() => {
     c.cancelUnusedUploads(), p({})
@@ -233,6 +234,6 @@ function P(e, t) {
     saveError: C,
     hasUnsavedAttachmentChanges: I,
     canAttachFiles: O.length < c.target.getMaxAttachmentsCount(),
-    canAttachArchives: null != (A = null == o ? void 0 : o.features.has(q.oNc.GUILD_PRODUCTS_ALLOW_ARCHIVED_FILE)) && A
+    canAttachArchives: null != (A = null == o ? true : o.features.has(q.oNc.GUILD_PRODUCTS_ALLOW_ARCHIVED_FILE)) && A
   }
 }

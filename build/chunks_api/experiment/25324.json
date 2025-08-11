@@ -1,1 +1,0 @@
-{"id":"25324","type":"experiment","data":{"kind":"user","id":"2025-06_android_shop_lazy_load_price","label":"Android Shop Lazy Load Price","defaultConfig":{"lazyLoadPrice":false},"commonTriggerPoint":"l.$P.COLLECTIBLES_SHOP_OPEN","treatments":[{"id":1,"label":"Lazy load price","config":{"lazyLoadPrice":false}}]},"fromModule":{"id":"45620"}}

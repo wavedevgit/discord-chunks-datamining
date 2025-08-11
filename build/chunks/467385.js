@@ -1,5 +1,6 @@
 /** Chunk was on web.js **/
-e.exports = function(e) {
+/** chunk id: 467385, original params: e (module,exports,re quire) **/
+module.exports = function(e) {
   let t = "[a-zA-Z_$][a-zA-Z0-9_$]*",
     n = /(-?)(\b0[xX][a-fA-F0-9_]+|(\b\d+(\.[\d_]*)?|\.[\d_]+)(([eE][-+]?\d+)|i32|u32|i64|f64)?)/;
   return {
@@ -34,7 +35,7 @@ e.exports = function(e) {
       className: "meta",
       begin: /@:?/,
       end: /\(|$/,
-      excludeEnd: !0
+      excludeEnd: true
     }, {
       className: "meta",
       begin: "#",
@@ -46,21 +47,21 @@ e.exports = function(e) {
       className: "type",
       begin: /:[ \t]*/,
       end: /[^A-Za-z0-9_ \t\->]/,
-      excludeBegin: !0,
-      excludeEnd: !0,
+      excludeBegin: true,
+      excludeEnd: true,
       relevance: 0
     }, {
       className: "type",
       begin: /:[ \t]*/,
       end: /\W/,
-      excludeBegin: !0,
-      excludeEnd: !0
+      excludeBegin: true,
+      excludeEnd: true
     }, {
       className: "type",
       beginKeywords: "new",
       end: /\W/,
-      excludeBegin: !0,
-      excludeEnd: !0
+      excludeBegin: true,
+      excludeEnd: true
     }, {
       className: "title.class",
       beginKeywords: "enum",
@@ -74,20 +75,20 @@ e.exports = function(e) {
         className: "type",
         begin: /\(/,
         end: /\)/,
-        excludeBegin: !0,
-        excludeEnd: !0
+        excludeBegin: true,
+        excludeEnd: true
       }, {
         className: "type",
         begin: /from +/,
         end: /\W/,
-        excludeBegin: !0,
-        excludeEnd: !0
+        excludeBegin: true,
+        excludeEnd: true
       }, {
         className: "type",
         begin: /to +/,
         end: /\W/,
-        excludeBegin: !0,
-        excludeEnd: !0
+        excludeBegin: true,
+        excludeEnd: true
       }, e.TITLE_MODE],
       keywords: {
         keyword: "abstract from to"
@@ -96,7 +97,7 @@ e.exports = function(e) {
       className: "title.class",
       begin: /\b(class|interface) +/,
       end: /[\{$]/,
-      excludeEnd: !0,
+      excludeEnd: true,
       keywords: "class interface",
       contains: [{
         className: "keyword",
@@ -112,7 +113,7 @@ e.exports = function(e) {
       className: "title.function",
       beginKeywords: "function",
       end: /\(/,
-      excludeEnd: !0,
+      excludeEnd: true,
       illegal: /\S/,
       contains: [e.TITLE_MODE]
     }],

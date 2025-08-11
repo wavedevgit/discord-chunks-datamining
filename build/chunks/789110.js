@@ -1,21 +1,22 @@
 /** Chunk was on web.js **/
+/** chunk id: 789110, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => l
-}), n(388685);
-var r = n(147913),
-  i = n(626135),
-  o = n(981631);
+}), require("./388685.js");
+var Chunk147913 = require("./147913.js"),
+  Chunk626135 = require("./626135.js"),
+  Chunk981631 = require("./981631.js");
 
 function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
-class s extends r.Z {
+class s extends Chunk147913.Z {
   handleMessageCreate(e) {
     let {
       message: t
@@ -41,7 +42,7 @@ class s extends r.Z {
       i.default.track(o.rMx.MESSAGE_DISPATCH_SESSION_METADATA_FOUND, {
         message_id: e.id,
         channel_id: e.channel_id,
-        author_id: null == (t = e.author) ? void 0 : t.id,
+        author_id: null == (t = e.author) ? true : t.id,
         authorized_application_ids: this._getAuthorizedApplicationIds(e.session_metadata)
       })
     }

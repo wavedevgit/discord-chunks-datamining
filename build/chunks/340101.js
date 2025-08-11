@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 340101, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Aw: () => l,
   C5: () => c,
   Tu: () => o,
@@ -8,7 +9,7 @@ n.d(t, {
   js: () => s,
   kL: () => i
 });
-var r = n(981631),
+var Chunk981631 = require("./981631.js"),
   i = function(e) {
     return e[e.GENERIC = 0] = "GENERIC", e[e.TEXT = 1] = "TEXT", e[e.INCOMING_CALL = 2] = "INCOMING_CALL", e[e.NUDGE = 3] = "NUDGE", e
   }({}),
@@ -17,7 +18,7 @@ var r = n(981631),
   }({});
 
 function a(e) {
-  return (null == e ? void 0 : e.type) === r.Odu.GO_LIVE
+  return (null == e ? true : e.type) === r.Odu.GO_LIVE
 }
 
 function s(e) {

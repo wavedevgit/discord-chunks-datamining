@@ -1,15 +1,16 @@
 /** Chunk was on web.js **/
+/** chunk id: 356647, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   f: () => _
-}), n(388685), n(997841);
-var r = n(602715),
-  i = n(258732),
-  o = n(314897),
-  a = n(630388),
-  s = n(786761),
-  l = n(3148),
-  c = n(981631);
+}), require("./388685.js"), require("./997841.js");
+var Chunk602715 = require("./602715.js"),
+  Chunk258732 = require("./258732.js"),
+  Chunk314897 = require("./314897.js"),
+  Chunk630388 = require("./630388.js"),
+  Chunk786761 = require("./786761.js"),
+  Chunk3148 = require("./3148.js"),
+  Chunk981631 = require("./981631.js");
 let u = new Map;
 
 function d(e, t) {
@@ -31,7 +32,7 @@ function f(e, t) {
   if (null == e.applicationId || !(0, a.yE)(e.flags, c.iLy.SENT_BY_SOCIAL_LAYER_INTEGRATION) || !t.isDM() || e.author.id === o.default.getId() || (0, a.yE)(null != (n = t.recipientFlags) ? n : 0, r.V.DISMISSED_IN_GAME_MESSAGE_NUX) || u.has(t.id)) return null;
   let l = d(e, t.id);
   u.set(t.id, e.id);
-  let f = (0, a.mB)(null != (s = t.recipientFlags) ? s : 0, r.V.DISMISSED_IN_GAME_MESSAGE_NUX, !0);
+  let f = (0, a.mB)(null != (s = t.recipientFlags) ? s : 0, r.V.DISMISSED_IN_GAME_MESSAGE_NUX, true);
   return i.Z.updatePrivateChannelRecipientFlags(t.id, f), l
 }
 

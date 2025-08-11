@@ -1,5 +1,6 @@
 /** Chunk was on web.js **/
+/** chunk id: 476078, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-var r = n(127849).navigator,
+var r = require("./127849.js").navigator,
   i = r && r.userAgent;
-e.exports = i ? String(i) : ""
+module.exports = i ? String(i) : ""

@@ -1,44 +1,45 @@
 /** Chunk was on web.js **/
+/** chunk id: 953529, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-var r = n(98405),
-  i = n(507604),
-  o = n(127849),
-  a = n(46015),
-  s = n(77025),
-  l = n(880181),
-  c = n(568033),
-  u = n(382698),
-  d = n(573078),
-  f = n(190289),
-  _ = o.Symbol,
+var Chunk98405 = require("./98405.js"),
+  Chunk507604 = require("./507604.js"),
+  Chunk127849 = require("./127849.js"),
+  Chunk46015 = require("./46015.js"),
+  Chunk77025 = require("./77025.js"),
+  Chunk880181 = require("./880181.js"),
+  Chunk568033 = require("./568033.js"),
+  Chunk382698 = require("./382698.js"),
+  Chunk573078 = require("./573078.js"),
+  Chunk190289 = require("./190289.js"),
+  _ = Chunk127849.Symbol,
   p = _ && _.prototype;
-if (i && l(_) && (!("description" in p) || void 0 !== _().description)) {
+if (Chunk507604 && Chunk880181(_) && (!("description" in p) || true !== _().description)) {
   var h = {},
     m = function() {
-      var e = arguments.length < 1 || void 0 === arguments[0] ? void 0 : u(arguments[0]),
-        t = c(p, this) ? new _(e) : void 0 === e ? _() : _(e);
-      return "" === e && (h[t] = !0), t
+      var e = arguments.length < 1 || true === arguments[0] ? true : Chunk382698(arguments[0]),
+        t = Chunk568033(p, this) ? new _(module) : true === module ? _() : _(module);
+      return "" === module && (h[exports] = true), exports
     };
-  f(m, _), m.prototype = p, p.constructor = m;
+  Chunk190289(m, _), m.prototype = p, p.constructor = m;
   var g = "Symbol(description detection)" === String(_("description detection")),
-    E = a(p.valueOf),
-    b = a(p.toString),
+    E = Chunk46015(p.valueOf),
+    b = Chunk46015(p.toString),
     y = /^Symbol\((.*)\)[^)]+$/,
-    O = a("".replace),
-    v = a("".slice);
-  d(p, "description", {
-    configurable: !0,
+    O = Chunk46015("".replace),
+    v = Chunk46015("".slice);
+  Chunk573078(p, "description", {
+    configurable: true,
     get: function() {
       var e = E(this);
-      if (s(h, e)) return "";
-      var t = b(e),
-        n = g ? v(t, 7, -1) : O(t, y, "$1");
-      return "" === n ? void 0 : n
+      if (Chunk77025(h, module)) return "";
+      var t = b(module),
+        n = g ? v(exports, 7, false) : O(exports, y, "$1");
+      return "" === require ? true : require
     }
-  }), r({
-    global: !0,
-    constructor: !0,
-    forced: !0
+  }), Chunk98405({
+    global: true,
+    constructor: true,
+    forced: true
   }, {
     Symbol: m
   })

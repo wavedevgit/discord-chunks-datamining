@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 91313, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   HZ: () => h,
   IB: () => E,
   cr: () => p,
@@ -9,17 +10,17 @@ n.d(t, {
   tM: () => g,
   xi: () => y,
   zb: () => O
-}), n(413496), n(433524), n(35282), n(539854), n(388685), n(467055), n(781311);
-var r = n(911969),
-  i = n(555573),
-  o = n(998698),
-  a = n(509716),
-  s = n(703558),
-  l = n(117530),
-  c = n(752305),
-  u = n(925994),
-  d = n(887490),
-  f = n(42530);
+}), require("./413496.js"), require("./433524.js"), require("./35282.js"), require("./539854.js"), require("./388685.js"), require("./467055.js"), require("./781311.js");
+var Chunk911969 = require("./911969.js"),
+  Chunk555573 = require("./555573.js"),
+  Chunk998698 = require("./998698.js"),
+  Chunk509716 = require("./509716.js"),
+  Chunk703558 = require("./703558.js"),
+  Chunk117530 = require("./117530.js"),
+  Chunk752305 = require("./752305.js"),
+  Chunk925994 = require("./925994.js"),
+  Chunk887490 = require("./887490.js"),
+  Chunk42530 = require("./42530.js");
 let _ = RegExp("([\\p{L}\\p{N}\\p{sc=Deva}\\p{sc=Thai}_-]+):", "gu");
 
 function p(e) {
@@ -43,7 +44,7 @@ function h(e) {
 function m(e) {
   let t = p(e),
     n = [],
-    r = null == t ? void 0 : t[0].children;
+    r = null == t ? true : t[0].children;
   if (null != r)
     for (let e of r) d.aj.isType(e, "applicationCommandOption") && n.push(e.optionName);
   return n
@@ -54,7 +55,7 @@ function g(e, t, n) {
   if (null == t.options) return {};
   let i = p(e),
     o = Object.fromEntries(t.options.map(e => [e.name, e])),
-    a = null == i ? void 0 : i[0].children;
+    a = null == i ? true : i[0].children;
   if (null != a) {
     for (let t of a)
       if (d.aj.isType(t, "applicationCommandOption")) {
@@ -116,7 +117,7 @@ function b(e, t, n, r, o) {
 
 function y(e, t, n, r, s) {
   var l;
-  let [c] = r, u = o.Z.getActiveCommand(n), d = null == u || null == (l = u.options) ? void 0 : l.find(e => e.name === c.optionName);
+  let [c] = r, u = o.Z.getActiveCommand(n), d = null == u || null == (l = u.options) ? true : l.find(e => e.name === c.optionName);
   if (null == d) return;
   let f = E(e, d, c, n),
     _ = a.f({

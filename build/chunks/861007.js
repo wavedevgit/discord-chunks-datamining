@@ -1,11 +1,12 @@
 /** Chunk was on 75708 **/
-n.d(t, {
+/** chunk id: 861007, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   u: () => s
 });
-var i = n(585483),
-  r = n(981631);
+var Chunk585483 = require("./585483.js"),
+  Chunk981631 = require("./981631.js");
 let s = {
   binds: ["mod+p"],
-  comboKeysBindGlobal: !0,
-  action: () => (i.S.dispatch(r.CkL.TOGGLE_CHANNEL_PINS), !1)
+  comboKeysBindGlobal: true,
+  action: () => (Chunk585483.S.dispatch(Chunk981631.CkL.TOGGLE_CHANNEL_PINS), false)
 }

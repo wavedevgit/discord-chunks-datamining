@@ -1,5 +1,6 @@
 /** Chunk was on 89298 **/
-e.exports = {
+/** chunk id: 565655, original params: e,t,n (module,exports,require) **/
+module.exports = {
   panelGroup: "panelGroup__2f37f",
   rightAligned: "rightAligned__2f37f",
   measurement: "measurement__2f37f",

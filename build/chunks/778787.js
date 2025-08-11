@@ -1,25 +1,26 @@
 /** Chunk was on web.js **/
+/** chunk id: 778787, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => y,
   q: () => O
-}), n(314940), n(539854);
-var r = n(278074),
-  i = n(979554),
-  o = n(922347),
-  a = n(587177),
-  s = n(311850),
-  l = n(803358),
-  c = n(135483),
-  u = n(212161),
-  d = n(981631);
+}), require("./314940.js"), require("./539854.js");
+var Chunk278074 = require("./278074.js"),
+  Chunk979554 = require("./979554.js"),
+  Chunk922347 = require("./922347.js"),
+  Chunk587177 = require("./587177.js"),
+  Chunk311850 = require("./311850.js"),
+  Chunk803358 = require("./803358.js"),
+  Chunk135483 = require("./135483.js"),
+  Chunk212161 = require("./212161.js"),
+  Chunk981631 = require("./981631.js");
 
 function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -81,7 +82,7 @@ let E = e => (0, r.EQ)(e).with({
     let n = E(t);
     return null != n && e.push(n), e
   }, []) : [];
-class y extends l.Z {
+class y extends Chunk803358.Z {
   static fromServer(e) {
     var {
       type: t,
@@ -97,14 +98,14 @@ class y extends l.Z {
       categorySkuId: r,
       prices: (0, s.l)(i),
       items: b(c.items),
-      bundledProducts: null == o ? void 0 : o.map(a.Z.fromServer),
-      variants: null == l ? void 0 : l.map(O.fromServer),
+      bundledProducts: null == o ? true : o.map(a.Z.fromServer),
+      variants: null == l ? true : l.map(O.fromServer),
       googleSkuIds: c.google_sku_ids,
       eligibleOffers: c.eligible_offers
     }))
   }
   constructor(e) {
-    super(e), f(this, "prices", void 0), f(this, "type", void 0), f(this, "premiumType", void 0), f(this, "items", void 0), f(this, "categorySkuId", void 0), f(this, "bundledProducts", void 0), f(this, "variants", void 0), f(this, "variantGroupStoreListingId", void 0), f(this, "googleSkuIds", void 0), f(this, "eligibleOffers", void 0), this.summary = e.summary, this.type = e.type, this.premiumType = e.premiumType, this.items = e.items, this.categorySkuId = e.categorySkuId, this.prices = e.prices, this.bundledProducts = e.bundledProducts, this.googleSkuIds = e.googleSkuIds, this.variants = e.variants, this.eligibleOffers = e.eligibleOffers
+    super(e), f(this, "prices", true), f(this, "type", true), f(this, "premiumType", true), f(this, "items", true), f(this, "categorySkuId", true), f(this, "bundledProducts", true), f(this, "variants", true), f(this, "variantGroupStoreListingId", true), f(this, "googleSkuIds", true), f(this, "eligibleOffers", true), this.summary = e.summary, this.type = e.type, this.premiumType = e.premiumType, this.items = e.items, this.categorySkuId = e.categorySkuId, this.prices = e.prices, this.bundledProducts = e.bundledProducts, this.googleSkuIds = e.googleSkuIds, this.variants = e.variants, this.eligibleOffers = e.eligibleOffers
   }
 }
 class O extends y {
@@ -123,6 +124,6 @@ class O extends y {
     }))
   }
   constructor(e) {
-    super(e), f(this, "baseVariantName", void 0), f(this, "baseVariantSkuId", void 0), f(this, "variantLabel", void 0), f(this, "variantValue", void 0), this.baseVariantName = e.baseVariantName, this.baseVariantSkuId = e.baseVariantSkuId, this.variantLabel = e.variantLabel, this.variantValue = e.variantValue
+    super(e), f(this, "baseVariantName", true), f(this, "baseVariantSkuId", true), f(this, "variantLabel", true), f(this, "variantValue", true), this.baseVariantName = e.baseVariantName, this.baseVariantSkuId = e.baseVariantSkuId, this.variantLabel = e.variantLabel, this.variantValue = e.variantValue
   }
 }

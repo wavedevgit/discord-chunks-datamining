@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 979007, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.r(t), n.d(t, {
+require.r(exports), require.d(exports, {
   EMPTY_QUERY: () => i,
   GLOBAL_DISCOVERY_APPS_FEATURED_CATEGORY_ID: () => r,
   GlobalDiscoveryAppsSections: () => s,

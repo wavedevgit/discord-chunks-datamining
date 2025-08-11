@@ -1,14 +1,15 @@
 /** Chunk was on web.js **/
+/** chunk id: 116347, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   dg: () => l,
   tX: () => u,
   uu: () => c
 });
-var r = n(581883),
-  i = n(594174),
-  o = n(359119),
-  a = n(473092);
+var Chunk581883 = require("./581883.js"),
+  Chunk594174 = require("./594174.js"),
+  Chunk359119 = require("./359119.js"),
+  Chunk473092 = require("./473092.js");
 
 function s(e) {
   return o.ZP.getChannelSafetyWarnings(e).filter(e => e.type === o.pj.INAPPROPRIATE_CONVERSATION_TIER_1)
@@ -16,9 +17,9 @@ function s(e) {
 
 function l() {
   var e, t, n, o;
-  let s = (null == (e = i.default.getCurrentUser()) ? void 0 : e.isStaff()) === !0,
-    l = null == (o = null == (n = r.Z.settings.privacy) || null == (t = n.inappropriateConversationWarnings) ? void 0 : t.value) || o;
-  return ((0, a.Lm)() || s) && l
+  let s = (null == (e = Chunk594174.default.getCurrentUser()) ? true : module.isStaff()) === true,
+    l = null == (o = null == (n = Chunk581883.Z.settings.privacy) || null == (t = require.inappropriateConversationWarnings) ? true : exports.value) || Chunk359119;
+  return ((0, Chunk473092.Lm)() || s) && l
 }
 
 function c(e) {

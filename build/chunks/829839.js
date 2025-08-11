@@ -1,29 +1,30 @@
 /** Chunk was on web.js **/
+/** chunk id: 829839, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   AQ: () => g,
   DY: () => p,
   yQ: () => h
-}), n(539854), n(290780);
-var r, i, o, a, s, l, c = n(553813),
-  u = n.n(c),
-  d = n(65154);
+}), require("./539854.js"), require("./290780.js");
+var r, i, o, a, s, l, Chunk553813 = require("./553813.js"),
+  u = require.n(Chunk553813),
+  Chunk65154 = require("./65154.js");
 let f = [{
   name: "H265",
-  encode: "undefined" == typeof window || (null == (i = window) || null == (r = i.DiscordNative) ? void 0 : r.process.platform) !== "darwin" || (null == (a = window) || null == (o = a.DiscordNative) ? void 0 : o.os.arch) === "arm64" && u().satisfies(null == (l = window) || null == (s = l.DiscordNative) ? void 0 : s.os.release, d.n4),
-  decode: !0
+  encode: "undefined" == typeof window || (null == (i = window) || null == (r = i.DiscordNative) ? true : r.process.platform) !== "darwin" || (null == (a = window) || null == (o = a.DiscordNative) ? true : o.os.arch) === "arm64" && u().satisfies(null == (l = window) || null == (s = l.DiscordNative) ? true : s.os.release, Chunk65154.n4),
+  decode: true
 }, {
   name: "H264",
-  encode: !0,
-  decode: !0
+  encode: true,
+  decode: true
 }, {
   name: "VP8",
-  encode: !0,
-  decode: !0
+  encode: true,
+  decode: true
 }, {
   name: "VP9",
-  encode: !0,
-  decode: !0
+  encode: true,
+  decode: true
 }];
 
 function _(e, t) {
@@ -43,12 +44,12 @@ function p(e) {
   let t = [];
   return e.has(d.V8.SIGNAL_AV1_DECODE) ? t.unshift({
     name: "AV1",
-    encode: !1,
-    decode: !0
+    encode: false,
+    decode: true
   }) : e.has(d.V8.SIGNAL_AV1) && t.unshift({
     name: "AV1",
-    encode: !0,
-    decode: !0
+    encode: true,
+    decode: true
   }), t
 }
 
@@ -59,8 +60,8 @@ function h(e, t) {
     decode: e.decode
   })), t) : _(e.map(e => ({
     codec: m(e),
-    encode: !0,
-    decode: !0
+    encode: true,
+    decode: true
   })), t)
 }
 

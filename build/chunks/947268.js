@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 947268, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-var r = n(567701),
+var Chunk567701 = require("./567701.js"),
   i = "Unknown",
   o = {
     "Mac OS": "Mac OS X"
@@ -21,9 +22,9 @@ function s(e) {
     minor: t[1]
   }
 }
-var l = new r().getResult(),
+var l = new Chunk567701().getResult(),
   c = s(l.browser.version);
-e.exports = {
+module.exports = {
   browserArchitecture: l.cpu.architecture || i,
   browserFullVersion: l.browser.version || i,
   browserMinorVersion: c.minor || i,

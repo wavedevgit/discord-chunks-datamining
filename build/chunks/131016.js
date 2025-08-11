@@ -1,14 +1,15 @@
 /** Chunk was on web.js **/
+/** chunk id: 131016, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   aY: () => c,
   bN: () => l,
   hX: () => s
 });
-var r = n(688619),
-  i = n.n(r),
-  o = n(522942),
-  a = n(660662);
+var Chunk688619 = require("./688619.js"),
+  i = require.n(Chunk688619),
+  Chunk522942 = require("./522942.js"),
+  Chunk660662 = require("./660662.js");
 
 function s(e) {
   let t = i()(e),
@@ -31,15 +32,15 @@ function l(e) {
 }
 
 function c() {
-  let e, t = a.mH[Math.floor(Math.random() * a.mH.length)],
-    n = a.P$[Math.floor(Math.random() * a.P$.length)];
-  if (t === o.m.GRADIENT) {
-    let t = a.vK[Math.floor(Math.random() * a.vK.length)];
-    e = [t.start, t.end]
-  } else e = [a.gD[Math.floor(Math.random() * a.gD.length)]];
+  let e, t = Chunk660662.mH[Math.floor(Math.random() * Chunk660662.mH.length)],
+    n = Chunk660662.P$[Math.floor(Math.random() * Chunk660662.P$.length)];
+  if (exports === Chunk522942.m.GRADIENT) {
+    let t = Chunk660662.vK[Math.floor(Math.random() * Chunk660662.vK.length)];
+    e = [exports.start, exports.end]
+  } else e = [Chunk660662.gD[Math.floor(Math.random() * Chunk660662.gD.length)]];
   return {
-    fontId: n,
-    effectId: t,
-    colors: e
+    fontId: require,
+    effectId: exports,
+    colors: module
   }
 }

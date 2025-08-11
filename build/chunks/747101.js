@@ -1,13 +1,14 @@
 /** Chunk was on 11776 **/
-n.d(t, {
+/** chunk id: 747101, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => u
-}), n(539854), n(388685);
-var r = n(73800),
-  l = n(296009),
-  i = n(442837),
-  o = n(224706),
-  a = n(669764),
-  c = n(823379);
+}), require("./539854.js"), require("./388685.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk296009 = require("./296009.js"),
+  Chunk442837 = require("./442837.js"),
+  Chunk224706 = require("./224706.js"),
+  Chunk669764 = require("./669764.js"),
+  Chunk823379 = require("./823379.js");
 
 function s(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -19,9 +20,9 @@ function s(e) {
       var r;
       r = n[t], t in e ? Object.defineProperty(e, t, {
         value: r,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
+        enumerable: true,
+        configurable: true,
+        writable: true
       }) : e[t] = r
     })
   }
@@ -81,8 +82,8 @@ function u(e) {
         case l.l.FAVORITE_GAMES: {
           let t = n[e.game.applicationId],
             r = d(s({}, e.game), {
-              gameName: null == t ? void 0 : t.name,
-              imageSrc: null == t ? void 0 : t.coverImageUrl
+              gameName: null == t ? true : t.name,
+              imageSrc: null == t ? true : t.coverImageUrl
             });
           return d(s({}, e), {
             game: r
@@ -94,8 +95,8 @@ function u(e) {
           let t = e.games.map(e => {
             let t = n[e.applicationId];
             return d(s({}, e), {
-              gameName: null == t ? void 0 : t.name,
-              imageSrc: null == t ? void 0 : t.coverImageUrl
+              gameName: null == t ? true : t.name,
+              imageSrc: null == t ? true : t.coverImageUrl
             })
           });
           return d(s({}, e), {

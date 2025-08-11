@@ -1,17 +1,18 @@
 /** Chunk was on 79457 **/
-a.d(e, {
+/** chunk id: 484928, original params: i,e,a (module,exports,require) **/
+require.d(exports, {
   Z: () => r
 });
-var t = a(475637);
+var Chunk475637 = require("./475637.js");
 let r = {
-  ordinalNumber: (0, a(925300).Z)({
+  ordinalNumber: (0, require("./925300.js").Z)({
     matchPattern: /^(\d+)(-oji)?/i,
     parsePattern: /\d+/i,
     valueCallback: function(i) {
       return parseInt(i, 10)
     }
   }),
-  era: (0, t.Z)({
+  era: (0, Chunk475637.Z)({
     matchPatterns: {
       narrow: /^p(r|o)\.?\s?(kr\.?|me)/i,
       abbreviated: /^(pr\.\s?(kr\.|m\.\s?e\.)|po\s?kr\.|mūsų eroje)/i,
@@ -24,7 +25,7 @@ let r = {
     },
     defaultParseWidth: "any"
   }),
-  quarter: (0, t.Z)({
+  quarter: (0, Chunk475637.Z)({
     matchPatterns: {
       narrow: /^([1234])/i,
       abbreviated: /^(I|II|III|IV)\s?ketv?\.?/i,
@@ -40,7 +41,7 @@ let r = {
       return i + 1
     }
   }),
-  month: (0, t.Z)({
+  month: (0, Chunk475637.Z)({
     matchPatterns: {
       narrow: /^[svkbglr]/i,
       abbreviated: /^(saus\.|vas\.|kov\.|bal\.|geg\.|birž\.|liep\.|rugp\.|rugs\.|spal\.|lapkr\.|gruod\.)/i,
@@ -53,7 +54,7 @@ let r = {
     },
     defaultParseWidth: "any"
   }),
-  day: (0, t.Z)({
+  day: (0, Chunk475637.Z)({
     matchPatterns: {
       narrow: /^[spatkš]/i,
       short: /^(sk|pr|an|tr|kt|pn|št)/i,
@@ -68,7 +69,7 @@ let r = {
     },
     defaultParseWidth: "any"
   }),
-  dayPeriod: (0, t.Z)({
+  dayPeriod: (0, Chunk475637.Z)({
     matchPatterns: {
       narrow: /^(pr.\s?p.|pop.|vidurnaktis|(vidurdienis|perpiet)|rytas|(diena|popietė)|vakaras|naktis)/i,
       any: /^(priešpiet|popiet$|vidurnaktis|(vidurdienis|perpiet)|rytas|(diena|popietė)|vakaras|naktis)/i

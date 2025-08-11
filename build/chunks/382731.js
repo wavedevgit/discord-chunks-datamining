@@ -1,10 +1,11 @@
 /** Chunk was on web.js **/
+/** chunk id: 382731, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => a
 });
-var r = n(73800),
-  i = n(867309);
+var Chunk73800 = require("./73800.js"),
+  Chunk867309 = require("./867309.js");
 let o = Object.freeze({
   box: "border-box"
 });

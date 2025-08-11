@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 496232, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   K: () => r
 });
-let r = n(70956).Z.Millis.DAY
+let r = require("./70956.js").Z.Millis.DAY

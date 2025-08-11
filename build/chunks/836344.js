@@ -1,5 +1,6 @@
 /** Chunk was on 34779 **/
-e.exports = {
+/** chunk id: 836344, original params: e,t,n (module,exports,require) **/
+module.exports = {
   facepile: "facepile_aaa08b",
   facepileItemContainer: "facepileItemContainer_aaa08b",
   textItem: "textItem_aaa08b",

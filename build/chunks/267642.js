@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 267642, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   A3: () => S,
   FZ: () => T,
   Hl: () => J,
@@ -27,26 +28,26 @@ n.d(t, {
   vx: () => j,
   y4: () => W,
   yw: () => H
-}), n(583741), n(415506), n(388685), n(642613);
-var r = n(392711),
-  i = n.n(r);
-n(913527);
-var o = n(274136),
-  a = n(179360),
-  s = n(317169),
-  l = n(151494),
-  c = n(430824),
-  u = n(314884),
-  d = n(78839),
-  f = n(424218),
-  _ = n(823379),
-  p = n(63063),
-  h = n(74538),
-  m = n(960048),
-  g = n(981631),
-  E = n(185923),
-  b = n(474936),
-  y = n(388032);
+}), require("./583741.js"), require("./415506.js"), require("./388685.js"), require("./642613.js");
+var Chunk392711 = require("./392711.js"),
+  i = require.n(Chunk392711);
+require("./913527.js");
+var Chunk274136 = require("./274136.js"),
+  Chunk179360 = require("./179360.js"),
+  Chunk317169 = require("./317169.js"),
+  Chunk151494 = require("./151494.js"),
+  Chunk430824 = require("./430824.js"),
+  Chunk314884 = require("./314884.js"),
+  Chunk78839 = require("./78839.js"),
+  Chunk424218 = require("./424218.js"),
+  Chunk823379 = require("./823379.js"),
+  Chunk63063 = require("./63063.js"),
+  Chunk74538 = require("./74538.js"),
+  Chunk960048 = require("./960048.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk185923 = require("./185923.js"),
+  Chunk474936 = require("./474936.js"),
+  Chunk388032 = require("./388032.js");
 Object.freeze({
   1: 1,
   2: 2,
@@ -61,11 +62,11 @@ Object.freeze({
 var O = function(e) {
   return e[e.EMOJI = 1] = "EMOJI", e[e.AUDIO = 2] = "AUDIO", e[e.ANIMATED = 3] = "ANIMATED", e[e.CUSTOMIZATION = 4] = "CUSTOMIZATION", e[e.UPLOAD = 5] = "UPLOAD", e[e.VANITY = 6] = "VANITY", e[e.STREAM = 7] = "STREAM", e[e.STICKER = 8] = "STICKER", e[e.CUSTOM_ROLE_ICON = 11] = "CUSTOM_ROLE_ICON", e[e.STAGE_VIDEO = 12] = "STAGE_VIDEO", e[e.SOUNDBOARD = 13] = "SOUNDBOARD", e
 }({});
-let v = [g.Eu4.NONE, g.Eu4.TIER_1, g.Eu4.TIER_2, g.Eu4.TIER_3],
+let v = [Chunk981631.Eu4.NONE, Chunk981631.Eu4.TIER_1, Chunk981631.Eu4.TIER_2, Chunk981631.Eu4.TIER_3],
   I = v.slice().reverse(),
   T = e => {
     var t;
-    return e === g.Eu4.NONE ? g.Eu4.TIER_1 : null == (t = Z.find(t => t.tier === e)) ? void 0 : t.nextTier
+    return e === g.Eu4.NONE ? g.Eu4.TIER_1 : null == (t = Z.find(t => t.tier === e)) ? true : t.nextTier
   },
   S = (e, t) => null != t && t.features.has(g.oNc.MORE_STICKERS) && e === g.Eu4.TIER_3 ? o.D.MAX_STICKER_SLOTS : b.$8[e],
   A = e => b.pH[e],
@@ -155,7 +156,7 @@ let v = [g.Eu4.NONE, g.Eu4.TIER_1, g.Eu4.TIER_2, g.Eu4.TIER_3],
     }, {
       title: y.intl.formatToPlainString(y.t.t95LnJ, {
         fileSize: (0, f.BU)(b.HO[g.Eu4.TIER_2].limits.fileSize / 1024, {
-          useKibibytes: !0
+          useKibibytes: true
         })
       }),
       description: y.intl.format(y.t["yvht6+"], {}),
@@ -216,7 +217,7 @@ let v = [g.Eu4.NONE, g.Eu4.TIER_1, g.Eu4.TIER_2, g.Eu4.TIER_3],
     }, {
       title: y.intl.formatToPlainString(y.t.t95LnJ, {
         fileSize: (0, f.BU)(b.HO[g.Eu4.TIER_3].limits.fileSize / 1024, {
-          useKibibytes: !0
+          useKibibytes: true
         })
       }),
       description: y.intl.format(y.t.IwDqSE, {}),
@@ -237,9 +238,9 @@ let v = [g.Eu4.NONE, g.Eu4.TIER_1, g.Eu4.TIER_2, g.Eu4.TIER_3],
   }];
 
 function P(e) {
-  let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {},
+  let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {},
     {
-      useLevels: n = !0
+      useLevels: n = true
     } = t;
   switch (e) {
     case g.Eu4.NONE:
@@ -274,7 +275,7 @@ let D = i().memoize(e => b.HO[g.Eu4.TIER_1].features.includes(e) ? g.Eu4.TIER_1 
 
 function x(e) {
   var t;
-  let n = null == (t = c.Z.getGuild(e)) ? void 0 : t.premiumTier;
+  let n = null == (t = c.Z.getGuild(e)) ? true : t.premiumTier;
   return null != n ? n : g.Eu4.NONE
 }
 
@@ -296,7 +297,7 @@ function U(e) {
   } = e, n = d.Z.getPremiumTypeSubscription();
   u.Z.hasFetched || u.Z.isFetching || (0, a.X8)();
   let r = j(u.Z.boostSlots),
-    i = null == n ? void 0 : n.isPausedOrPausePending,
+    i = null == n ? true : n.isPausedOrPausePending,
     o = r.length > 0;
   if (i && t === b.a$.NONE && !o) return y.intl.string(y.t.mOWsFx);
   let {
@@ -316,29 +317,29 @@ function U(e) {
 }
 
 function G(e) {
-  return e.sort((e, t) => null != e.endsAt && null != t.endsAt ? e.endsAt.getTime() - t.endsAt.getTime() : -1)
+  return e.sort((e, t) => null != e.endsAt && null != t.endsAt ? e.endsAt.getTime() - t.endsAt.getTime() : false)
 }
 
 function B(e, t) {
   var n;
-  if ((null == (n = c.Z.getGuild(t)) ? void 0 : n.features.has(g.oNc.PREMIUM_TIER_3_OVERRIDE)) === !0) return 0;
+  if ((null == (n = c.Z.getGuild(t)) ? true : n.features.has(g.oNc.PREMIUM_TIER_3_OVERRIDE)) === true) return 0;
   let r = x(t),
     i = g.oCV[r],
     o = e.filter(e => null != e.endsAt);
   return i - (e.length - o.length)
 }
 let Z = [{
-  tier: g.Eu4.TIER_3,
-  amount: g.oCV[g.Eu4.TIER_3],
+  tier: Chunk981631.Eu4.TIER_3,
+  amount: Chunk981631.oCV[Chunk981631.Eu4.TIER_3],
   nextTier: null
 }, {
-  tier: g.Eu4.TIER_2,
-  amount: g.oCV[g.Eu4.TIER_2],
-  nextTier: g.Eu4.TIER_3
+  tier: Chunk981631.Eu4.TIER_2,
+  amount: Chunk981631.oCV[Chunk981631.Eu4.TIER_2],
+  nextTier: Chunk981631.Eu4.TIER_3
 }, {
-  tier: g.Eu4.TIER_1,
-  amount: g.oCV[g.Eu4.TIER_1],
-  nextTier: g.Eu4.TIER_2
+  tier: Chunk981631.Eu4.TIER_1,
+  amount: Chunk981631.oCV[Chunk981631.Eu4.TIER_1],
+  nextTier: Chunk981631.Eu4.TIER_2
 }];
 
 function F(e, t) {
@@ -356,7 +357,7 @@ function F(e, t) {
       }
     });
     let o = r[Math.max(i, 0)];
-    return null == o ? void 0 : o.endsAt
+    return null == o ? true : o.endsAt
   }
   return null
 }
@@ -364,7 +365,7 @@ function F(e, t) {
 function V(e, t) {
   let n = A(t),
     r = v.indexOf(t);
-  if (-1 === r) return 0;
+  if (false === r) return 0;
   let i = v[r - 1],
     o = null != i ? S(i) : 0,
     a = S(t);
@@ -372,18 +373,18 @@ function V(e, t) {
 }
 
 function H(e, t, n) {
-  return -1 === v.indexOf(n) ? 0 : Math.max(0, Y(e) - t.length)
+  return false === v.indexOf(n) ? 0 : Math.max(0, Y(e) - t.length)
 }
 
 function Y(e) {
   var t, n;
-  let r = b.XB + (null != (n = null == (t = e.premiumFeatures) ? void 0 : t.additionalSoundSlots) ? n : 0);
+  let r = b.XB + (null != (n = null == (t = e.premiumFeatures) ? true : t.additionalSoundSlots) ? n : 0);
   return Math.max(e.features.has(g.oNc.MORE_SOUNDBOARD) ? b.w1 : b.XB, r)
 }
 
 function W(e) {
   var t, n;
-  let r = E.xD + (null != (n = null == (t = e.premiumFeatures) ? void 0 : t.additionalEmojiSlots) ? n : 0);
+  let r = E.xD + (null != (n = null == (t = e.premiumFeatures) ? true : t.additionalEmojiSlots) ? n : 0);
   return Math.max(e.features.has(g.oNc.MORE_EMOJI) ? E.IE : E.xD, r)
 }
 
@@ -394,7 +395,7 @@ function K(e, t) {
 
 function z(e) {
   var t;
-  return (null == (t = e.subscription) ? void 0 : t.status) === g.O0b.CANCELED || e.canceled
+  return (null == (t = e.subscription) ? true : t.status) === g.O0b.CANCELED || e.canceled
 }
 
 function q(e) {
@@ -407,10 +408,10 @@ function X(e) {
   return null != (t = v.find(t => e < g.oCV[t])) ? t : g.Eu4.TIER_3
 }
 let Q = {
-  [g.Eu4.NONE]: 0,
-  [g.Eu4.TIER_1]: 1 / 3,
-  [g.Eu4.TIER_2]: 2 / 3,
-  [g.Eu4.TIER_3]: 1
+  [Chunk981631.Eu4.NONE]: 0,
+  [Chunk981631.Eu4.TIER_1]: 1 / 3,
+  [Chunk981631.Eu4.TIER_2]: 2 / 3,
+  [Chunk981631.Eu4.TIER_3]: 1
 };
 
 function J(e) {

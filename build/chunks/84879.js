@@ -1,5 +1,6 @@
 /** Chunk was on 27978 **/
-e.exports = {
+/** chunk id: 84879, original params: e,t,n (module,exports,require) **/
+module.exports = {
   qrLogin: "qrLogin_e16417",
   qrLoginInner: "qrLoginInner_e16417",
   qrCode: "qrCode_e16417",

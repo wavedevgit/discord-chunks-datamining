@@ -1,11 +1,12 @@
 /** Chunk was on web.js **/
+/** chunk id: 870456, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   u: () => r
 });
 let r = {
-  allowList: !0,
-  allowHeading: !0,
-  allowLinks: !0,
-  previewLinkTarget: !0
+  allowList: true,
+  allowHeading: true,
+  allowLinks: true,
+  previewLinkTarget: true
 }

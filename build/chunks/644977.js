@@ -1,11 +1,12 @@
 /** Chunk was on web.js **/
+/** chunk id: 644977, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Q: () => s
 });
-var r = n(175730),
-  i = n(641862),
-  o = n(839826),
+var Chunk175730 = require("./175730.js"),
+  Chunk641862 = require("./641862.js"),
+  Chunk839826 = require("./839826.js"),
   a = function(e) {
     return !(0, o.zd)(e) && !(0, o.jD)(e) && "inline" === getComputedStyle(e).display
   },
@@ -16,8 +17,8 @@ var r = n(175730),
         blockSize: 0
       }
     }
-    return e.prototype.isActive = function() {
-      var e = (0, i.Y)(this.target, this.observedBox, !0);
-      return a(this.target) && (this.lastReportedSize = e), this.lastReportedSize.inlineSize !== e.inlineSize || this.lastReportedSize.blockSize !== e.blockSize
-    }, e
+    return module.prototype.isActive = function() {
+      var e = (0, Chunk641862.Y)(this.target, this.observedBox, true);
+      return a(this.target) && (this.lastReportedSize = module), this.lastReportedSize.inlineSize !== module.inlineSize || this.lastReportedSize.blockSize !== module.blockSize
+    }, module
   }()

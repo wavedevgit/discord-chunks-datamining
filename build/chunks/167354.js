@@ -1,20 +1,21 @@
 /** Chunk was on 75708 **/
-n.d(t, {
+/** chunk id: 167354, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => o
-}), n(642613);
-var i = n(73800),
-  r = n(442837),
-  s = n(314897),
-  a = n(78839),
-  l = n(231338);
+}), require("./642613.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk442837 = require("./442837.js"),
+  Chunk314897 = require("./314897.js"),
+  Chunk78839 = require("./78839.js"),
+  Chunk231338 = require("./231338.js");
 let o = function(e) {
   let {
     subscriptionFilter: t
-  } = e, n = (0, r.e7)([a.Z], () => a.Z.getSubscriptions(!0)), o = i.useMemo(() => null == n ? [] : Object.values(n).filter(e => e.type === l.NY.PREMIUM && e.userId === s.default.getId() && (null == t || !!t(e))), [n, t]);
+  } = e, n = (0, r.e7)([a.Z], () => a.Z.getSubscriptions(true)), o = i.useMemo(() => null == n ? [] : Object.values(n).filter(e => e.type === l.NY.PREMIUM && e.userId === s.default.getId() && (null == t || !!t(e))), [n, t]);
   return o.sort((e, t) => {
     var n, i;
     let r = null != (n = e.paymentGateway) ? n : 0,
       s = null != (i = t.paymentGateway) ? i : 0;
-    return r < s ? -1 : +(r > s)
+    return r < s ? false : +(r > s)
   }), o
 }

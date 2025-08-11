@@ -1,6 +1,7 @@
 /** Chunk was on 67244 **/
+/** chunk id: 150817, original params: e,t (module,exports,require) **/
 "use strict";
-t.__esModule = !0, t.default = {
+exports.__esModule = true, exports.default = {
   scheme: "harmonic16",
   author: "jannik siebert (https://github.com/janniks)",
   base00: "#0b1c2c",
@@ -19,4 +20,4 @@ t.__esModule = !0, t.default = {
   base0D: "#8b56bf",
   base0E: "#bf568b",
   base0F: "#bf5656"
-}, e.exports = t.default
+}, module.exports = exports.default

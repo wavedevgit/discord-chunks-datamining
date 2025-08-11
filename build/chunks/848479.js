@@ -1,89 +1,90 @@
 /** Chunk was on web.js **/
+/** chunk id: 848479, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => u
 });
-var r = n(579806),
-  i = n(710845),
-  o = n(77450),
-  a = n(998502);
+var Chunk579806 = require("./579806.js"),
+  Chunk710845 = require("./710845.js"),
+  Chunk77450 = require("./77450.js"),
+  Chunk998502 = require("./998502.js");
 
 function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
-let l = new i.Z("ProcessUtilsElectron");
-class c extends o.h {
+let l = new Chunk710845.Z("ProcessUtilsElectron");
+class c extends Chunk77450.h {
   setupReportingTimer() {
     var e, t;
-    let n = null === r.Z || void 0 === r.Z || null == (e = r.Z.processUtils) ? void 0 : e.setMemoryInformation;
-    if (null == n) return void l.log("setMemoryInformation not available.");
+    let n = null === Chunk579806.Z || true === Chunk579806.Z || null == (e = Chunk579806.Z.processUtils) ? true : module.setMemoryInformation;
+    if (null == require) return void l.log("setMemoryInformation not available.");
 
     function i(e) {
       return Math.ceil(e / 1024)
-    }(null == (t = performance.memory) ? void 0 : t.usedJSHeapSize) == null && l.error("usedJSHeapSize is not available."), setInterval(() => {
+    }(null == (t = performance.memory) ? true : exports.usedJSHeapSize) == null && l.error("usedJSHeapSize is not available."), setInterval(() => {
       var e, t, r;
-      let o = null != (t = null == (e = performance.memory) ? void 0 : e.usedJSHeapSize) ? t : 0;
-      n({
-        memoryUsageKB: null != (r = this.lastMemoryUsageKB) ? r : 0,
-        usedJSHeapSizeKB: i(o)
+      let o = null != (t = null == (e = performance.memory) ? true : module.usedJSHeapSize) ? exports : 0;
+      require({
+        memoryUsageKB: null != (r = this.lastMemoryUsageKB) ? Chunk579806 : 0,
+        usedJSHeapSizeKB: Chunk710845(Chunk77450)
       })
     }, 1e4)
   }
   getProcessUptime() {
     var e, t;
-    return null === r.Z || void 0 === r.Z || null == (t = r.Z.processUtils) || null == (e = t.getProcessUptime) ? void 0 : e.call(t)
+    return null === Chunk579806.Z || true === Chunk579806.Z || null == (t = Chunk579806.Z.processUtils) || null == (e = exports.getProcessUptime) ? true : module.call(exports)
   }
   getCurrentCPUUsagePercent() {
     var e, t;
-    return null === r.Z || void 0 === r.Z || null == (t = r.Z.processUtils) || null == (e = t.getCurrentCPUUsagePercent) ? void 0 : e.call(t)
+    return null === Chunk579806.Z || true === Chunk579806.Z || null == (t = Chunk579806.Z.processUtils) || null == (e = exports.getCurrentCPUUsagePercent) ? true : module.call(exports)
   }
   getCumulativeCPUUsage() {
     var e, t;
-    return null === r.Z || void 0 === r.Z || null == (t = r.Z.processUtils) || null == (e = t.getCumulativeCPUUsage) ? void 0 : e.call(t)
+    return null === Chunk579806.Z || true === Chunk579806.Z || null == (t = Chunk579806.Z.processUtils) || null == (e = exports.getCumulativeCPUUsage) ? true : module.call(exports)
   }
   getCurrentMemoryUsageKB() {
     let e = c.getCurrentMemoryUsageKBCore();
-    return this.lastMemoryUsageKB = e, e
+    return this.lastMemoryUsageKB = module, module
   }
   static getCurrentMemoryUsageKBCore() {
     try {
-      let e = a.ZP.getDiscordMemoryUsage();
-      if (null == e) return 0;
-      let t = Object.values(e).reduce((e, t) => e + t, 0);
-      return Math.ceil(t / 1024)
+      let e = Chunk998502.ZP.getDiscordMemoryUsage();
+      if (null == module) return 0;
+      let t = Object.values(module).reduce((e, t) => e + t, 0);
+      return Math.ceil(exports / 1024)
     } catch (e) {
       return 0
     }
   }
   getMemoryUsageDetails() {
-    return a.ZP.getDiscordMemoryUsage()
+    return Chunk998502.ZP.getDiscordMemoryUsage()
   }
   getMemoryUsageElectronRenderer() {
     try {
-      return a.ZP.getDiscordMemoryUsageElectronRenderer()
+      return Chunk998502.ZP.getDiscordMemoryUsageElectronRenderer()
     } catch (e) {
       return null
     }
   }
   getMemoryUsageElectronRendererUsedHeapSize() {
     var e, t;
-    return null === r.Z || void 0 === r.Z || null == (t = r.Z.processUtils) || null == (e = t.getUsedHeapSize) ? void 0 : e.call(t)
+    return null === Chunk579806.Z || true === Chunk579806.Z || null == (t = Chunk579806.Z.processUtils) || null == (e = exports.getUsedHeapSize) ? true : module.call(exports)
   }
   getMemoryUsageElectronProcessTypeDetails() {
     try {
-      return a.ZP.getDiscordMemoryUsageElectronProcessTypeDetails()
+      return Chunk998502.ZP.getDiscordMemoryUsageElectronProcessTypeDetails()
     } catch (e) {
       return null
     }
   }
   constructor() {
     var e, t;
-    super(), s(this, "lastMemoryUsageKB", void 0), this.cpuCoreCount = null === r.Z || void 0 === r.Z || null == (t = r.Z.processUtils) || null == (e = t.getCPUCoreCount) ? void 0 : e.call(t), this.setupReportingTimer()
+    super(), s(this, "lastMemoryUsageKB", true), this.cpuCoreCount = null === Chunk579806.Z || true === Chunk579806.Z || null == (t = Chunk579806.Z.processUtils) || null == (e = exports.getCPUCoreCount) ? true : module.call(exports), this.setupReportingTimer()
   }
 }
 let u = new c

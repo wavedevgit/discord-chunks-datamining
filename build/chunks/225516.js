@@ -1,29 +1,30 @@
 /** Chunk was on 89289 **/
-n.d(t, {
+/** chunk id: 225516, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   B: () => f,
   N: () => d
 });
-var r = n(544891),
-  a = n(481060),
-  l = n(570140),
-  i = n(668781),
-  s = n(881052),
-  o = n(482207),
-  c = n(981631),
-  u = n(388032);
+var Chunk544891 = require("./544891.js"),
+  Chunk481060 = require("./481060.js"),
+  Chunk570140 = require("./570140.js"),
+  Chunk668781 = require("./668781.js"),
+  Chunk881052 = require("./881052.js"),
+  Chunk482207 = require("./482207.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk388032 = require("./388032.js");
 async function d() {
-  if (o.Z.shouldFetch) {
-    l.Z.dispatch({
+  if (Chunk482207.Z.shouldFetch) {
+    Chunk570140.Z.dispatch({
       type: "RECENT_AVATARS_FETCH_START"
     });
     try {
-      let e = await r.tn.get({
-        url: c.ANM.RECENT_AVATARS,
-        rejectWithError: !0
+      let e = await Chunk544891.tn.get({
+        url: Chunk981631.ANM.RECENT_AVATARS,
+        rejectWithError: true
       });
-      l.Z.dispatch({
+      Chunk570140.Z.dispatch({
         type: "RECENT_AVATARS_FETCH_SUCCESS",
-        avatars: e.body.avatars.map(e => {
+        avatars: module.body.avatars.map(e => {
           var t, n, {
               storage_hash: r
             } = e,
@@ -52,9 +53,9 @@ async function d() {
                 var r;
                 r = n[t], t in e ? Object.defineProperty(e, t, {
                   value: r,
-                  enumerable: !0,
-                  configurable: !0,
-                  writable: !0
+                  enumerable: true,
+                  configurable: true,
+                  writable: true
                 }) : e[t] = r
               })
             }
@@ -74,9 +75,9 @@ async function d() {
         })
       })
     } catch (e) {
-      l.Z.dispatch({
+      Chunk570140.Z.dispatch({
         type: "RECENT_AVATARS_FETCH_FAILURE",
-        error: new s.Hx(e)
+        error: new Chunk881052.Hx(module)
       })
     }
   }
@@ -85,7 +86,7 @@ async function f(e) {
   try {
     await r.tn.del({
       url: c.ANM.RECENT_AVATARS_DELETE(e),
-      rejectWithError: !0
+      rejectWithError: true
     }), await l.Z.dispatch({
       type: "RECENT_AVATAR_DELETE",
       avatarId: e

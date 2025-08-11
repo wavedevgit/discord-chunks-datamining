@@ -1,5 +1,6 @@
 /** Chunk was on web.js **/
-e.exports = function(e) {
+/** chunk id: 985818, original params: e (module,exports,re quire) **/
+module.exports = function(e) {
   let t = e.COMMENT("--", "$"),
     n = "\\$([a-zA-Z_]?|[a-zA-Z_][a-zA-Z_0-9]*)\\$",
     r = "<<\\s*[a-zA-Z_][a-zA-Z_0-9$]*\\s*>>",
@@ -20,7 +21,7 @@ e.exports = function(e) {
     name: "PostgreSQL",
     aliases: ["postgres", "postgresql"],
     supersetOf: "sql",
-    case_insensitive: !0,
+    case_insensitive: true,
     keywords: {
       keyword: i + a + o,
       built_in: c + u + d
@@ -128,7 +129,7 @@ e.exports = function(e) {
     }, {
       begin: /\bEXTRACT\s*\(/,
       end: /\bFROM\b/,
-      returnEnd: !0,
+      returnEnd: true,
       keywords: {
         type: "CENTURY DAY DECADE DOW DOY EPOCH HOUR ISODOW ISOYEAR MICROSECONDS MILLENNIUM MILLISECONDS MINUTE MONTH QUARTER SECOND TIMEZONE TIMEZONE_HOUR TIMEZONE_MINUTE WEEK YEAR"
       }
@@ -145,7 +146,7 @@ e.exports = function(e) {
     }, {
       beginKeywords: "CACHE INCREMENT MAXVALUE MINVALUE",
       end: e.C_NUMBER_RE,
-      returnEnd: !0,
+      returnEnd: true,
       keywords: "BY CACHE INCREMENT MAXVALUE MINVALUE"
     }, {
       className: "type",
@@ -192,7 +193,7 @@ e.exports = function(e) {
       end: n,
       contains: [{
         subLanguage: ["pgsql", "perl", "python", "tcl", "r", "lua", "java", "php", "ruby", "bash", "scheme", "xml", "json"],
-        endsWithParent: !0
+        endsWithParent: true
       }]
     }), {
       begin: '"',

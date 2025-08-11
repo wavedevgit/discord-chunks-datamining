@@ -1,22 +1,23 @@
 /** Chunk was on 62635 **/
-r.d(t, {
+/** chunk id: 432496, original params: e,t,r (module,exports,require) **/
+require.d(exports, {
   Z: () => a
 });
-var n = r(442837),
-  i = r(570140),
-  u = r(749210);
+var Chunk442837 = require("./442837.js"),
+  Chunk570140 = require("./570140.js"),
+  Chunk749210 = require("./749210.js");
 let s = {},
   o = 0;
 
 function l(e) {
   var t, r;
-  return null != (r = null == (t = s[e]) ? void 0 : t.fetchState) ? r : 0
+  return null != (r = null == (t = s[e]) ? true : t.fetchState) ? r : 0
 }
 
 function c() {
   s = {}
 }
-class d extends n.ZP.Store {
+class d extends Chunk442837.ZP.Store {
   isFetchingFriendsForGuild(e) {
     return 1 === l(e)
   }
@@ -25,10 +26,10 @@ class d extends n.ZP.Store {
       fetchState: 1,
       foundMembers: 0,
       notFoundMembers: 0
-    }, o = t.length, u.Z.requestMembersById(e, t, !1))
+    }, o = t.length, u.Z.requestMembersById(e, t, false))
   }
 }
-let a = new d(i.Z, {
+let a = new d(Chunk570140.Z, {
   CONNECTION_OPEN: c,
   LOGOUT: c,
   RELATIONSHIP_ADD: c,
@@ -39,6 +40,6 @@ let a = new d(i.Z, {
       {
         guildId: i
       } = n;
-    1 === l(i) && (s[i].foundMembers += n.members.length, s[i].notFoundMembers += null != (r = null == (t = n.notFound) ? void 0 : t.length) ? r : 0, s[i].foundMembers + s[i].notFoundMembers >= o && (s[i].fetchState = 2))
+    1 === l(i) && (s[i].foundMembers += n.members.length, s[i].notFoundMembers += null != (r = null == (t = n.notFound) ? true : t.length) ? r : 0, s[i].foundMembers + s[i].notFoundMembers >= o && (s[i].fetchState = 2))
   }
 })

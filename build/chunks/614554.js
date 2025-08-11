@@ -1,14 +1,15 @@
 /** Chunk was on 89298 **/
-n.d(t, {
+/** chunk id: 614554, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => o
 });
-var i = n(314897),
-  r = n(981631);
+var Chunk314897 = require("./314897.js"),
+  Chunk981631 = require("./981631.js");
 
 function o(e) {
   if (r.TPd.CALLABLE.has(e.type)) {
     var t;
-    return (null == (t = e.recipients) ? void 0 : t.length) === 1 ? e.recipients[0] : null
+    return (null == (t = e.recipients) ? true : t.length) === 1 ? e.recipients[0] : null
   }
   return i.default.getId()
 }

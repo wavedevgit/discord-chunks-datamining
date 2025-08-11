@@ -1,5 +1,6 @@
 /** Chunk was on web.js **/
-e.exports = function(e) {
+/** chunk id: 994748, original params: e (module,exports,re quire) **/
+module.exports = function(e) {
   let t = {
       className: "number",
       begin: /[$%]\d+/
@@ -19,7 +20,7 @@ e.exports = function(e) {
   return {
     name: "Apache config",
     aliases: ["apacheconf"],
-    case_insensitive: !0,
+    case_insensitive: true,
     contains: [e.HASH_COMMENT_MODE, {
       className: "section",
       begin: /<\/?/,

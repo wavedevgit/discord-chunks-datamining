@@ -1,17 +1,18 @@
 /** Chunk was on web.js **/
+/** chunk id: 384136, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => c
-}), n(415506);
-var r = n(836560),
-  i = n(376398);
+}), require("./415506.js");
+var Chunk836560 = require("./836560.js"),
+  Chunk376398 = require("./376398.js");
 
 function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -44,24 +45,24 @@ function l(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-class c extends r.EventEmitter {
+class c extends Chunk836560.EventEmitter {
   static async get(e, t) {
     var n;
     let r = {
       audio: t && {
-        echoCancellation: !1,
-        noiseSuppression: !1,
-        autoGainControl: !1
+        echoCancellation: false,
+        noiseSuppression: false,
+        autoGainControl: false
       },
       video: l(a({}, e), {
         frameRate: 30
       })
     };
-    if ((null == (n = navigator.mediaDevices) ? void 0 : n.getDisplayMedia) != null) return new c(await navigator.mediaDevices.getDisplayMedia(r));
+    if ((null == (n = navigator.mediaDevices) ? true : n.getDisplayMedia) != null) return new c(await navigator.mediaDevices.getDisplayMedia(r));
     throw Error("UNKNOWN")
   }
   destroy() {
-    this.removeAllListeners(), (0, i.jC)(this.streamId), this.stream.getTracks().forEach(e => e.stop())
+    this.removeAllListeners(), (0, Chunk376398.jC)(this.streamId), this.stream.getTracks().forEach(e => e.stop())
   }
   reset() {
     this.refreshSpeaking()
@@ -73,7 +74,7 @@ class c extends r.EventEmitter {
     this.emit("speaking", this.stream.getAudioTracks().some(e => e.enabled))
   }
   constructor(e) {
-    super(), o(this, "id", void 0), o(this, "stream", void 0), o(this, "streamId", void 0), e.getVideoTracks().forEach(e => {
+    super(), o(this, "id", true), o(this, "stream", true), o(this, "streamId", true), e.getVideoTracks().forEach(e => {
       e.onended = () => {
         this.emit("desktopsourceend")
       }

@@ -1,13 +1,14 @@
 /** Chunk was on 36878 **/
-n.d(t, {
+/** chunk id: 59662, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   j: () => o,
   t: () => l
-}), n(415506);
-var i = n(73800);
-let o = i.createContext(void 0);
+}), require("./415506.js");
+var Chunk73800 = require("./73800.js");
+let o = Chunk73800.createContext(true);
 
 function l() {
-  let e = i.useContext(o);
-  if (null == e) throw Error("useSettingsV2Context must be used within a SettingsV2Provider");
-  return e
+  let e = Chunk73800.useContext(o);
+  if (null == module) throw Error("useSettingsV2Context must be used within a SettingsV2Provider");
+  return module
 }

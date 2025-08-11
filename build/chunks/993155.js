@@ -1,15 +1,16 @@
 /** Chunk was on web.js **/
+/** chunk id: 993155, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-var r = n(98405),
-  i = n(580983),
-  o = n(896471),
-  a = n(655745),
-  s = n(555648),
-  l = n(683385);
-r({
+var Chunk98405 = require("./98405.js"),
+  Chunk580983 = require("./580983.js"),
+  Chunk896471 = require("./896471.js"),
+  Chunk655745 = require("./655745.js"),
+  Chunk555648 = require("./555648.js"),
+  Chunk683385 = require("./683385.js");
+Chunk98405({
   target: "Promise",
-  stat: !0,
-  forced: n(168527)
+  stat: true,
+  forced: require("./168527.js")
 }, {
   allSettled: function(e) {
     var t = this,
@@ -23,14 +24,14 @@ r({
           c = 1;
         l(e, function(e) {
           var o = s++,
-            l = !1;
+            l = false;
           c++, i(n, t, e).then(function(e) {
-            !l && (l = !0, a[o] = {
+            !l && (l = true, a[o] = {
               status: "fulfilled",
               value: e
             }, --c || r(a))
           }, function(e) {
-            !l && (l = !0, a[o] = {
+            !l && (l = true, a[o] = {
               status: "rejected",
               reason: e
             }, --c || r(a))

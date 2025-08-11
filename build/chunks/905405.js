@@ -1,18 +1,19 @@
 /** Chunk was on web.js **/
+/** chunk id: 905405, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   p: () => o
 });
-var r = n(592204),
-  i = n(712950);
+var Chunk592204 = require("./592204.js"),
+  Chunk712950 = require("./712950.js");
 let o = () => {
   var e;
   let {
     profanity: t,
     sexualContent: n,
     slurs: o
-  } = (0, i.g)();
-  return !!(0, r.Xo)({
+  } = (0, Chunk712950.g)();
+  return !!(0, Chunk592204.Xo)({
     location: "use-should-filter-keywords"
-  }) && null != (e = t || n || o) && e
+  }) && null != (e = exports || require || o) && module
 }

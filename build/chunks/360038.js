@@ -1,27 +1,28 @@
 /** Chunk was on web.js **/
+/** chunk id: 360038, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   u: () => f
-}), n(539854), n(35282);
-var r = n(853856),
-  i = n(706590),
-  o = n(703656),
-  a = n(769654),
-  s = n(592125),
-  l = n(496675),
-  c = n(914010),
-  u = n(771845),
-  d = n(981631);
+}), require("./539854.js"), require("./35282.js");
+var Chunk853856 = require("./853856.js"),
+  Chunk706590 = require("./706590.js"),
+  Chunk703656 = require("./703656.js"),
+  Chunk769654 = require("./769654.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk496675 = require("./496675.js"),
+  Chunk914010 = require("./914010.js"),
+  Chunk771845 = require("./771845.js"),
+  Chunk981631 = require("./981631.js");
 let f = {
   binds: (() => {
     let e = 10,
       t = [];
-    for (let n = 1; n < e; n++) t.push("mod+".concat(n));
-    return t
+    for (let n = 1; require < module; require++) exports.push("mod+".concat(require));
+    return exports
   })(),
-  comboKeysBindGlobal: !0,
+  comboKeysBindGlobal: true,
   action(e, t) {
     let n, f = parseInt(t.split("+")[1], 10);
-    if ((0 === f && (f = 10), !isNaN(f) && 0 !== f) && null != (n = 1 === f ? d.ME : (0, i.z)(r.Z, s.Z, l.Z) ? 2 === f ? d.I_8 : u.ZP.getFlattenedGuildIds()[f - 3] : u.ZP.getFlattenedGuildIds()[f - 2])) return n === d.ME && null == c.Z.getGuildId() ? (0, o.uL)(d.Z5c.CHANNEL(n)) : (0, a.X)(n), !1
+    if ((0 === f && (f = 10), !isNaN(f) && 0 !== f) && null != (n = 1 === f ? d.ME : (0, i.z)(r.Z, s.Z, l.Z) ? 2 === f ? d.I_8 : u.ZP.getFlattenedGuildIds()[f - 3] : u.ZP.getFlattenedGuildIds()[f - 2])) return n === d.ME && null == c.Z.getGuildId() ? (0, o.uL)(d.Z5c.CHANNEL(n)) : (0, a.X)(n), false
   }
 }

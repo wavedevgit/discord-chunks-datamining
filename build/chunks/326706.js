@@ -1,12 +1,13 @@
 /** Chunk was on 71879 **/
+/** chunk id: 326706, original params: e,t,n (module,exports,require) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   W: () => s
 });
-var r = n(73800),
-  i = n(22382),
-  a = n(747071),
-  l = n(469121);
+var Chunk73800 = require("./73800.js"),
+  Chunk22382 = require("./22382.js"),
+  Chunk747071 = require("./747071.js"),
+  Chunk469121 = require("./469121.js");
 
 function s(e) {
   let {
@@ -21,8 +22,8 @@ function s(e) {
     playSound: r.useCallback(() => {
       var t;
       return !!n({
-        volume: (0, a.Z)(null != (t = null == e ? void 0 : e.volume) ? t : 1)
+        volume: (0, a.Z)(null != (t = null == e ? true : e.volume) ? t : 1)
       })
-    }, [n, null == e ? void 0 : e.volume])
+    }, [n, null == e ? true : e.volume])
   }
 }

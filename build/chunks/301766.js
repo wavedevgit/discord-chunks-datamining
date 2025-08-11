@@ -1,22 +1,23 @@
 /** Chunk was on web.js **/
+/** chunk id: 301766, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Q0: () => l,
   ZP: () => c,
   kH: () => s
-}), n(388685);
-var r = n(81825),
-  i = n(474936);
+}), require("./388685.js");
+var Chunk81825 = require("./81825.js"),
+  Chunk474936 = require("./474936.js");
 
 function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
-class a extends r.Z {
+class a extends Chunk81825.Z {
   static createFromServer(e) {
     let t = {};
     return null != e.prices && (t = Object.keys(e.prices).reduce((t, n) => {
@@ -46,13 +47,13 @@ class a extends r.Z {
   }
   get premiumSubscriptionType() {
     switch (this.skuId) {
-      case i.Si.LEGACY:
-      case i.Si.TIER_2:
-        return i.p9.TIER_2;
-      case i.Si.TIER_1:
-        return i.p9.TIER_1;
-      case i.Si.TIER_0:
-        return i.p9.TIER_0;
+      case Chunk474936.Si.LEGACY:
+      case Chunk474936.Si.TIER_2:
+        return Chunk474936.p9.TIER_2;
+      case Chunk474936.Si.TIER_1:
+        return Chunk474936.p9.TIER_1;
+      case Chunk474936.Si.TIER_0:
+        return Chunk474936.p9.TIER_0;
       default:
         return null
     }
@@ -77,12 +78,12 @@ class a extends r.Z {
       tax_inclusive: this.taxInclusive,
       currency: this.currency,
       price: this.price,
-      prices: e,
+      prices: module,
       price_tier: this.price
     }
   }
   constructor(e) {
-    super(), o(this, "id", void 0), o(this, "name", void 0), o(this, "interval", void 0), o(this, "intervalCount", void 0), o(this, "taxInclusive", void 0), o(this, "skuId", void 0), o(this, "currency", void 0), o(this, "price", void 0), o(this, "prices", void 0), this.id = e.id, this.name = e.name, this.interval = e.interval, this.intervalCount = e.intervalCount, this.taxInclusive = e.taxInclusive, this.skuId = e.skuId, this.currency = e.currency, this.price = e.price, this.prices = e.prices
+    super(), o(this, "id", true), o(this, "name", true), o(this, "interval", true), o(this, "intervalCount", true), o(this, "taxInclusive", true), o(this, "skuId", true), o(this, "currency", true), o(this, "price", true), o(this, "prices", true), this.id = e.id, this.name = e.name, this.interval = e.interval, this.intervalCount = e.intervalCount, this.taxInclusive = e.taxInclusive, this.skuId = e.skuId, this.currency = e.currency, this.price = e.price, this.prices = e.prices
   }
 }
 

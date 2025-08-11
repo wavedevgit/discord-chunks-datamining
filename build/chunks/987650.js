@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 987650, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Vk: () => s,
   YK: () => a,
   ap: () => u,
@@ -10,8 +11,8 @@ n.d(t, {
   nc: () => o,
   wF: () => d
 });
-var r = n(358085);
-let i = r.isPlatformEmbedded && ((0, r.isWindows)() || !1);
+var Chunk358085 = require("./358085.js");
+let i = Chunk358085.isPlatformEmbedded && ((0, Chunk358085.isWindows)() || false);
 var o = function(e) {
   return e[e.WELCOME = 0] = "WELCOME", e[e.NEWS = 1] = "NEWS", e[e.GO_LIVE_VOICE = 2] = "GO_LIVE_VOICE", e[e.GO_LIVE_NON_VOICE = 3] = "GO_LIVE_NON_VOICE", e[e.KEYBIND_INDICATORS = 4] = "KEYBIND_INDICATORS", e[e.CONTENT_INVENTORY = 5] = "CONTENT_INVENTORY", e[e.OOP_WELCOME = 6] = "OOP_WELCOME", e
 }({});

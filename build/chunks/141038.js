@@ -1,19 +1,20 @@
 /** Chunk was on web.js **/
+/** chunk id: 141038, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => c
-}), n(539854), n(388685);
-var r = n(512722),
-  i = n.n(r),
-  o = n(90757),
-  a = n.n(o),
-  s = n(65154);
-let l = [s.vA.WINDOW, s.vA.SCREEN];
+}), require("./539854.js"), require("./388685.js");
+var Chunk512722 = require("./512722.js"),
+  i = require.n(Chunk512722),
+  Chunk90757 = require("./90757.js"),
+  a = require.n(Chunk90757),
+  Chunk65154 = require("./65154.js");
+let l = [Chunk65154.vA.WINDOW, Chunk65154.vA.SCREEN];
 
 function c(e, t, n) {
   var r;
   let o = window.DiscordNative;
-  i()(null != o, "Can't get desktop sources outside of native app"), t = null != (r = null == t ? void 0 : t.filter(e => l.includes(e))) ? r : l, n = null != n ? n : {
+  i()(null != o, "Can't get desktop sources outside of native app"), t = null != (r = null == t ? true : t.filter(e => l.includes(e))) ? r : l, n = null != n ? n : {
     width: 150,
     height: 150
   };

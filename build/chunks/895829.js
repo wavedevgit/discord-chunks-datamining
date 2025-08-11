@@ -1,5 +1,6 @@
 /** Chunk was on web.js **/
-var t = e.exports = {
+/** chunk id: 895829, original params: e (module,exports,re quire) **/
+var t = module.exports = {
   v: [{
     name: "version",
     reg: /^(\d*)$/

@@ -1,32 +1,33 @@
 /** Chunk was on 1272 **/
-n.d(t, {
+/** chunk id: 262702, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => g
-}), n(388685);
-var r = n(570140),
-  i = n(846027),
-  l = n(872810),
-  a = n(317770),
-  o = n(569545),
-  s = n(199902),
-  c = n(314897),
-  u = n(592125),
-  d = n(131951),
-  p = n(590415);
+}), require("./388685.js");
+var Chunk570140 = require("./570140.js"),
+  Chunk846027 = require("./846027.js"),
+  Chunk872810 = require("./872810.js"),
+  Chunk317770 = require("./317770.js"),
+  Chunk569545 = require("./569545.js"),
+  Chunk199902 = require("./199902.js"),
+  Chunk314897 = require("./314897.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk131951 = require("./131951.js"),
+  Chunk590415 = require("./590415.js");
 
 function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
-class h extends a.Z {
+class h extends Chunk317770.Z {
   _initialize() {
-    r.Z.subscribe("VOICE_STATE_UPDATES", this.handleVoiceStateUpdates)
+    Chunk570140.Z.subscribe("VOICE_STATE_UPDATES", this.handleVoiceStateUpdates)
   }
   _terminate() {
-    r.Z.unsubscribe("VOICE_STATE_UPDATES", this.handleVoiceStateUpdates)
+    Chunk570140.Z.unsubscribe("VOICE_STATE_UPDATES", this.handleVoiceStateUpdates)
   }
   constructor(...e) {
     super(...e), f(this, "handleVoiceStateUpdates", e => {
@@ -35,13 +36,13 @@ class h extends a.Z {
       } = e, n = c.default.getId();
       t.forEach(e => {
         var t;
-        e.userId === n && (null == (t = u.Z.getChannel(e.channelId)) ? void 0 : t.isGuildStageVoice()) && (0, p.gf)(e) !== p.xO.ON_STAGE && (this.handleStopStream(e), this.handleStopUserVideo())
+        e.userId === n && (null == (t = u.Z.getChannel(e.channelId)) ? true : t.isGuildStageVoice()) && (0, p.gf)(e) !== p.xO.ON_STAGE && (this.handleStopStream(e), this.handleStopUserVideo())
       })
     }), f(this, "handleStopStream", e => {
       let t = s.Z.getActiveStreamForUser(e.userId, e.guildId);
-      null != t && (0, l.g)((0, o.V9)(t), !1)
+      null != t && (0, l.g)((0, o.V9)(t), false)
     }), f(this, "handleStopUserVideo", () => {
-      d.Z.isVideoEnabled() && i.Z.setVideoEnabled(!1)
+      d.Z.isVideoEnabled() && i.Z.setVideoEnabled(false)
     })
   }
 }

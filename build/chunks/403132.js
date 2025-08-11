@@ -1,9 +1,10 @@
 /** Chunk was on web.js **/
+/** chunk id: 403132, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 
 function r(e, t) {
   return null != t && !!e.mentions.includes(t.author.id)
 }
-n.d(t, {
+require.d(exports, {
   Z: () => r
 })

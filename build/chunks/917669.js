@@ -1,5 +1,6 @@
 /** Chunk was on 34779 **/
-e.exports = {
+/** chunk id: 917669, original params: e,t,n (module,exports,require) **/
+module.exports = {
   container: "container_f37cb1",
   clickable: "clickable_f37cb1",
   animatedBannerHoverLayer: "animatedBannerHoverLayer_f37cb1",

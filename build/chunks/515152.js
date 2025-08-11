@@ -1,15 +1,16 @@
 /** Chunk was on 23357 **/
+/** chunk id: 515152, original params: e,t,n (module,exports,require) **/
 "use strict";
-var r = n(220159),
-  o = n(764908),
-  a = n(936839),
+var Chunk220159 = require("./220159.js"),
+  Chunk764908 = require("./764908.js"),
+  Chunk936839 = require("./936839.js"),
   i = RangeError,
   s = String.fromCharCode,
   c = String.fromCodePoint,
-  l = o([].join);
-r({
+  l = Chunk764908([].join);
+Chunk220159({
   target: "String",
-  stat: !0,
+  stat: true,
   arity: 1,
   forced: !!c && 1 !== c.length
 }, {

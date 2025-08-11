@@ -1,23 +1,24 @@
 /** Chunk was on web.js **/
+/** chunk id: 811654, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   HI: () => h,
   _H: () => m,
   af: () => g,
   tx: () => E
-}), n(388685);
-var r = n(524846),
-  i = n(911969),
-  o = n(592125),
-  a = n(271383),
-  s = n(485386),
-  l = n(430824),
-  c = n(594174),
-  u = n(483360),
-  d = n(823379),
-  f = n(5192),
-  _ = n(280501);
-n(892902);
+}), require("./388685.js");
+var Chunk524846 = require("./524846.js"),
+  Chunk911969 = require("./911969.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk271383 = require("./271383.js"),
+  Chunk485386 = require("./485386.js"),
+  Chunk430824 = require("./430824.js"),
+  Chunk594174 = require("./594174.js"),
+  Chunk483360 = require("./483360.js"),
+  Chunk823379 = require("./823379.js"),
+  Chunk5192 = require("./5192.js"),
+  Chunk280501 = require("./280501.js");
+require("./892902.js");
 let p = 15,
   h = 1e3;
 
@@ -32,13 +33,13 @@ function m(e, t, n) {
     } = u.ZP.queryMentionResults({
       query: t,
       channel: r,
-      canMentionEveryone: !1,
-      canMentionHere: !1,
+      canMentionEveryone: false,
+      canMentionHere: false,
       canMentionUsers: a,
       canMentionRoles: s,
-      includeAllGuildUsers: !0,
-      includeNonMentionableRoles: !0,
-      checkRecentlyTalkedOnEmptyQuery: !1,
+      includeAllGuildUsers: true,
+      includeNonMentionableRoles: true,
+      checkRecentlyTalkedOnEmptyQuery: false,
       limit: p
     });
   return [...l.map(e => {
@@ -71,7 +72,7 @@ function g(e, t, n) {
 }
 
 function E(e, t) {
-  let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : [];
+  let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : [];
   if (null == e) return;
   let i = l.Z.getGuild(t);
   return e.map(e => {
@@ -80,7 +81,7 @@ function E(e, t) {
         var t;
         let n = c.default.getUser(e.id);
         if (null == n) return null;
-        let r = null != i ? a.ZP.getNick(i.id, n.id) : void 0;
+        let r = null != i ? a.ZP.getNick(i.id, n.id) : true;
         return {
           type: _.tM.USER,
           value: n.id,

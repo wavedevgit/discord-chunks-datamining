@@ -1,28 +1,29 @@
 /** Chunk was on web.js **/
+/** chunk id: 86419, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   ES: () => I,
   X6: () => S,
   qH: () => v,
   tk: () => A,
   vH: () => T
-}), n(388685), n(642613), n(539854);
-var r = n(296009),
-  i = n(224706),
-  o = n(594174),
-  a = n(621853),
-  s = n(592183),
-  l = n(224724),
-  c = n(247397),
-  u = n(925434),
-  d = n(570911);
+}), require("./388685.js"), require("./642613.js"), require("./539854.js");
+var Chunk296009 = require("./296009.js"),
+  Chunk224706 = require("./224706.js"),
+  Chunk594174 = require("./594174.js"),
+  Chunk621853 = require("./621853.js"),
+  Chunk592183 = require("./592183.js"),
+  Chunk224724 = require("./224724.js"),
+  Chunk247397 = require("./247397.js"),
+  Chunk925434 = require("./925434.js"),
+  Chunk570911 = require("./570911.js");
 
 function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -65,12 +66,12 @@ function g(e, t) {
 }
 
 function E(e) {
-  let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : new Set,
+  let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : new Set,
     n = d.J6.filter(e => !t.has(e)),
     i = {
       applicationId: m(n.length > 0 ? n : d.J6)
     };
-  return e === r.l.FAVORITE_GAMES && (i.comment = Math.random() > .5 ? m(u.x) : void 0), e === r.l.CURRENT_GAMES && (i.tags = Math.random() > .3 ? g(u.T, Math.floor(3 * Math.random()) + 1) : void 0), i
+  return e === r.l.FAVORITE_GAMES && (i.comment = Math.random() > .5 ? m(u.x) : true), e === r.l.CURRENT_GAMES && (i.tags = Math.random() > .3 ? g(u.T, Math.floor(3 * Math.random()) + 1) : true), i
 }
 
 function b(e) {
@@ -102,7 +103,7 @@ function v(e) {
   else {
     let e = o.default.getCurrentUser(),
       t = null != e ? a.Z.getUserProfile(e.id) : null;
-    u = null != (n = null == t ? void 0 : t.widgets) ? n : []
+    u = null != (n = null == t ? true : t.widgets) ? n : []
   }
   let f = u.find(t => t.type === e);
   if (null != f)
@@ -128,13 +129,13 @@ function I(e, t) {
   else {
     let e = o.default.getCurrentUser(),
       t = null != e ? a.Z.getUserProfile(e.id) : null;
-    f = null != (u = null == t ? void 0 : t.widgets) ? u : []
+    f = null != (u = null == t ? true : t.widgets) ? u : []
   }
   let p = f.find(t => t.type === e),
     h = c.Xe[e];
   if (null != p) {
     if (e === r.l.FAVORITE_GAMES);
-    else if (((null == (d = p.games) ? void 0 : d.length) || 0) >= h) return
+    else if (((null == (d = p.games) ? true : d.length) || 0) >= h) return
   }
   let m = {
     applicationId: t
@@ -158,17 +159,17 @@ function T(e) {
   }
 }
 async function S() {
-  let e = l.Z.getPendingWidgets();
-  if (null !== e) try {
-    await s.Z.savePendingWidgets(e)
+  let e = Chunk224724.Z.getPendingWidgets();
+  if (null !== module) try {
+    await Chunk592183.Z.savePendingWidgets(module)
   } catch (e) {
-    console.error("Failed to save sample widgets:", e)
+    console.error("Failed to save sample widgets:", module)
   }
 }
 async function A() {
   try {
-    await s.Z.savePendingWidgets([])
+    await Chunk592183.Z.savePendingWidgets([])
   } catch (e) {
-    console.error("Failed to clear saved widgets", e)
+    console.error("Failed to clear saved widgets", module)
   }
 }

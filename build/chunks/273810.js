@@ -1,5 +1,6 @@
 /** Chunk was on 58121 **/
-e.exports = {
+/** chunk id: 273810, original params: e,t,n (module,exports,require) **/
+module.exports = {
   scroller: "scroller__5d7c9",
   pageBody: "pageBody__5d7c9",
   newBorder: "newBorder__5d7c9",

@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 124368, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   AX: () => o,
   M3: () => s,
   RN: () => p,
@@ -12,9 +13,9 @@ n.d(t, {
   vw: () => a,
   yX: () => l,
   zb: () => f
-}), n(388685);
-var r = n(981631),
-  i = n(388032);
+}), require("./388685.js");
+var Chunk981631 = require("./981631.js"),
+  Chunk388032 = require("./388032.js");
 let o = 4320,
   a = 50,
   s = 1e5,
@@ -33,17 +34,17 @@ var d = function(e) {
 function f() {
   return [{
     setting: u.ALL_MESSAGES,
-    label: i.intl.string(i.t["n/bTaW"])
+    label: Chunk388032.intl.string(Chunk388032.t["n/bTaW"])
   }, {
     setting: u.ONLY_MENTIONS,
-    label: i.intl.format(i.t.L2hmY2, {})
+    label: Chunk388032.intl.format(Chunk388032.t.L2hmY2, {})
   }, {
     setting: u.NO_MESSAGES,
-    label: i.intl.string(i.t.CtVGyc)
+    label: Chunk388032.intl.string(Chunk388032.t.CtVGyc)
   }]
 }
 var _ = function(e) {
   return e.LATEST_ACTIVITY = "Last Message", e.CREATION_DATE = "Creation", e
 }({});
-let p = new Set([r.evJ.TOO_MANY_ATTACHMENTS, r.evJ.EXPLICIT_CONTENT, r.evJ.ENTITY_TOO_LARGE, r.evJ.EXPLICIT_CONTENT]),
-  h = new Set([r.evJ.AUTOMOD_MESSAGE_BLOCKED, r.evJ.AUTOMOD_TITLE_BLOCKED])
+let p = new Set([Chunk981631.evJ.TOO_MANY_ATTACHMENTS, Chunk981631.evJ.EXPLICIT_CONTENT, Chunk981631.evJ.ENTITY_TOO_LARGE, Chunk981631.evJ.EXPLICIT_CONTENT]),
+  h = new Set([Chunk981631.evJ.AUTOMOD_MESSAGE_BLOCKED, Chunk981631.evJ.AUTOMOD_TITLE_BLOCKED])

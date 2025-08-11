@@ -1,0 +1,24 @@
+/** Chunk was on web.js **/
+/** chunk id: 355827, original params: e,t,n (module,exports,re quire) **/
+"use strict";
+require.d(exports, {
+  Z: () => d
+});
+var Chunk255367 = require("./255367.js");
+require("./73800.js");
+var Chunk442837 = require("./442837.js"),
+  Chunk481060 = require("./481060.js"),
+  Chunk207055 = require("./207055.jsx"),
+  Chunk938475 = require("./938475.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk388032 = require("./388032.js"),
+  Chunk595922 = require("./595922.js");
+
+function d(e) {
+  let {
+    channel: t
+  } = e, n = (0, i.e7)([s.ZP], () => s.ZP.getVoiceStatesForChannel(t));
+  return <div className={u.root}>{<o.Text variant={"text-xs/bold"} className={u.header}>{c.intl.format(c.t.e95u3N, {
+        count: n.length
+      })}</o.Text>}{<o.Ttm className={u.scroller}><a.Z allowDragging={false} allowPreviews={false} className={u.voiceUsers} channel={t} voiceStates={n} collapsed={false} location={l.Sbl.CHANNEL_CALL} /></o.Ttm>}</div>
+}

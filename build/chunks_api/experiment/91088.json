@@ -1,1 +1,0 @@
-{"id":"91088","type":"experiment","data":{"kind":"user","id":"2025-07_remove_voice_user_overflow_menu","label":"Remove Voice User Overflow Menu","defaultConfig":{"enabled":false},"treatments":[{"id":1,"label":"Remove the Voice User Overflow Menu","config":{"enabled":false}}]},"fromModule":{"id":"web.js"}}

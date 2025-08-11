@@ -1,10 +1,11 @@
 /** Chunk was on 1272 **/
-n.d(t, {
+/** chunk id: 998730, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   N: () => o
-}), n(388685);
-var r = n(73800),
-  i = n(302221),
-  l = n(956664);
+}), require("./388685.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk302221 = require("./302221.js"),
+  Chunk956664 = require("./956664.js");
 async function a(e) {
   return (await new Promise((t, n) => {
     let r = new Image;
@@ -20,8 +21,8 @@ async function a(e) {
 }
 
 function o(e) {
-  let [t, n] = r.useState(), i = r.useRef(!1);
-  return null == e || null != t || i.current || (i.current = !0, a(e).then(e => {
+  let [t, n] = r.useState(), i = r.useRef(false);
+  return null == e || null != t || i.current || (i.current = true, a(e).then(e => {
     n(e[0])
   })), t
 }

@@ -1,4 +1,5 @@
 /** Chunk was on web.js **/
+/** chunk id: 538892, original params: e (module,exports,re quire) **/
 var t = "\ud800-\udfff",
   n = "[" + t + "]",
   r = "[\\u0300-\\u036f\\ufe20-\\ufe2f\\u20d0-\\u20ff]",
@@ -11,6 +12,6 @@ var t = "\ud800-\udfff",
   u = "(?:\\u200d(?:" + [o, a, s].join("|") + ")" + c + l + ")*",
   d = c + l + u,
   f = RegExp(i + "(?=" + i + ")|" + ("(?:" + [o + r + "?", r, a, s, n].join("|")) + ")" + d, "g");
-e.exports = function(e) {
+module.exports = function(e) {
   return e.match(f) || []
 }

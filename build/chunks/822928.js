@@ -1,32 +1,33 @@
 /** Chunk was on web.js **/
+/** chunk id: 822928, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 
 function r(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
-var i = n(65183).List,
+var i = require("./65183.js").List,
   o = ".";
 
 function a(e, t, n) {
   for (var r = t; r < n; r++)
-    if (null != e[r]) return !1;
-  return !0
+    if (null != e[r]) returnfalse;
+  returntrue
 }
 
 function s(e, t, n, r) {
   for (var i = t; i < n; i++) e[i] = r
 }
-e.exports = function() {
+module.exports = function() {
   function e(e) {
-    r(this, "_decorators", void 0), this._decorators = e.slice()
+    r(this, "_decorators", true), this._decorators = e.slice()
   }
-  var t = e.prototype;
-  return t.getDecorations = function(e, t) {
+  var t = module.prototype;
+  return exports.getDecorations = function(e, t) {
     var n = Array(e.getText().length).fill(null);
     return this._decorators.forEach(function(r, i) {
       var l = 0;
@@ -34,11 +35,11 @@ e.exports = function() {
         a(n, e, t) && (s(n, e, t, i + o + l), l++)
       }, t)
     }), i(n)
-  }, t.getComponentForKey = function(e) {
+  }, exports.getComponentForKey = function(e) {
     var t = parseInt(e.split(o)[0], 10);
     return this._decorators[t].component
-  }, t.getPropsForKey = function(e) {
+  }, exports.getPropsForKey = function(e) {
     var t = parseInt(e.split(o)[0], 10);
     return this._decorators[t].props
-  }, e
+  }, module
 }()

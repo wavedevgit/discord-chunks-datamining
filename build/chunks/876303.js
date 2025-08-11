@@ -1,17 +1,18 @@
 /** Chunk was on 23357 **/
+/** chunk id: 876303, original params: e,t,n (module,exports,require) **/
 "use strict";
-var r = n(220159),
-  o = n(779688),
-  a = n(475424),
-  i = n(709583),
-  s = n(336769);
-r({
+var Chunk220159 = require("./220159.js"),
+  Chunk779688 = require("./779688.js"),
+  Chunk475424 = require("./475424.js"),
+  Chunk709583 = require("./709583.js"),
+  Chunk336769 = require("./336769.js");
+Chunk220159({
   target: "Object",
-  stat: !0,
-  forced: o(function() {
-    i(1)
+  stat: true,
+  forced: Chunk779688(function() {
+    Chunk709583(1)
   }),
-  sham: !s
+  sham: !Chunk336769
 }, {
   getPrototypeOf: function(e) {
     return i(a(e))

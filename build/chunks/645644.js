@@ -1,39 +1,40 @@
 /** Chunk was on web.js **/
+/** chunk id: 645644, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => en
-}), n(388685), n(642613), n(415506);
-var r = n(772848),
-  i = n(379649),
-  o = n(570140),
-  a = n(593472),
-  s = n(147913),
-  l = n(579806),
-  c = n(710845),
-  u = n(581567),
-  d = n(594190),
-  f = n(486016),
-  _ = n(837268),
-  p = n(371651),
-  h = n(624864),
-  m = n(449224),
-  g = n(808506),
-  E = n(237997),
-  b = n(626135),
-  y = n(998502),
-  O = n(145597),
-  v = n(830917),
-  I = n(554174),
-  T = n(938038),
-  S = n(981631),
-  A = n(987650);
+}), require("./388685.js"), require("./642613.js"), require("./415506.js");
+var Chunk772848 = require("./772848.js"),
+  Chunk379649 = require("./379649.js"),
+  Chunk570140 = require("./570140.js"),
+  Chunk593472 = require("./593472.js"),
+  Chunk147913 = require("./147913.js"),
+  Chunk579806 = require("./579806.js"),
+  Chunk710845 = require("./710845.js"),
+  Chunk581567 = require("./581567.js"),
+  Chunk594190 = require("./594190.js"),
+  Chunk486016 = require("./486016.js"),
+  Chunk837268 = require("./837268.js"),
+  Chunk371651 = require("./371651.js"),
+  Chunk624864 = require("./624864.js"),
+  Chunk449224 = require("./449224.js"),
+  Chunk808506 = require("./808506.js"),
+  Chunk237997 = require("./237997.js"),
+  Chunk626135 = require("./626135.js"),
+  Chunk998502 = require("./998502.js"),
+  Chunk145597 = require("./145597.js"),
+  Chunk830917 = require("./830917.js"),
+  Chunk554174 = require("./554174.js"),
+  Chunk938038 = require("./938038.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk987650 = require("./987650.js");
 
 function N(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -67,8 +68,8 @@ function P(e, t) {
   }), e
 }
 let w = 3,
-  D = !1,
-  L = new c.Z("OverlayUsageStatsManager");
+  D = false,
+  L = new Chunk710845.Z("OverlayUsageStatsManager");
 D || (L.verbose = () => {});
 class x {
   increment(e) {
@@ -86,20 +87,20 @@ class x {
   }
   constructor() {
     N(this, "actions", {
-      [A.bv.Viewed]: 0,
-      [A.bv.Clicked]: 0
+      [Chunk987650.bv.Viewed]: 0,
+      [Chunk987650.bv.Clicked]: 0
     })
   }
 }
 class M {
   static makeEmptyGroupAnalytics() {
     return {
-      [A.Vk.Nudge]: 0,
-      [A.Vk.TextChat]: 0,
-      [A.Vk.VoiceCall]: 0,
-      [A.Vk.Activity]: 0,
-      [A.Vk.Clips]: 0,
-      [A.Vk.Other]: 0
+      [Chunk987650.Vk.Nudge]: 0,
+      [Chunk987650.Vk.TextChat]: 0,
+      [Chunk987650.Vk.VoiceCall]: 0,
+      [Chunk987650.Vk.Activity]: 0,
+      [Chunk987650.Vk.Clips]: 0,
+      [Chunk987650.Vk.Other]: 0
     }
   }
   increment(e, t) {
@@ -113,23 +114,23 @@ class M {
     i.increment(t)
   }
   getAnalytics() {
-    let e = this.groupCounters[A.bv.Viewed],
-      t = this.groupCounters[A.bv.Clicked];
+    let e = this.groupCounters[Chunk987650.bv.Viewed],
+      t = this.groupCounters[Chunk987650.bv.Clicked];
     return {
-      notices_viewed: this.actionCounters[A.bv.Viewed],
-      notices_clicked: this.actionCounters[A.bv.Clicked],
-      notice_nudge_viewed: e[A.Vk.Nudge],
-      notice_text_chat_viewed: e[A.Vk.TextChat],
-      notice_voice_call_viewed: e[A.Vk.VoiceCall],
-      notice_activity_viewed: e[A.Vk.Activity],
-      notice_clips_viewed: e[A.Vk.Clips],
-      notice_other_viewed: e[A.Vk.Other],
-      notice_nudge_clicked: t[A.Vk.Nudge],
-      notice_text_chat_clicked: t[A.Vk.TextChat],
-      notice_voice_call_clicked: t[A.Vk.VoiceCall],
-      notice_activity_clicked: t[A.Vk.Activity],
-      notice_clips_clicked: t[A.Vk.Clips],
-      notice_other_clicked: t[A.Vk.Other]
+      notices_viewed: this.actionCounters[Chunk987650.bv.Viewed],
+      notices_clicked: this.actionCounters[Chunk987650.bv.Clicked],
+      notice_nudge_viewed: module[Chunk987650.Vk.Nudge],
+      notice_text_chat_viewed: module[Chunk987650.Vk.TextChat],
+      notice_voice_call_viewed: module[Chunk987650.Vk.VoiceCall],
+      notice_activity_viewed: module[Chunk987650.Vk.Activity],
+      notice_clips_viewed: module[Chunk987650.Vk.Clips],
+      notice_other_viewed: module[Chunk987650.Vk.Other],
+      notice_nudge_clicked: exports[Chunk987650.Vk.Nudge],
+      notice_text_chat_clicked: exports[Chunk987650.Vk.TextChat],
+      notice_voice_call_clicked: exports[Chunk987650.Vk.VoiceCall],
+      notice_activity_clicked: exports[Chunk987650.Vk.Activity],
+      notice_clips_clicked: exports[Chunk987650.Vk.Clips],
+      notice_other_clicked: exports[Chunk987650.Vk.Other]
     }
   }
   getCounterAnalytics(e) {
@@ -140,38 +141,38 @@ class M {
   }
   constructor() {
     N(this, "actionCounters", {
-      [A.bv.Viewed]: 0,
-      [A.bv.Clicked]: 0
+      [Chunk987650.bv.Viewed]: 0,
+      [Chunk987650.bv.Clicked]: 0
     }), N(this, "groupCounters", {
-      [A.bv.Viewed]: M.makeEmptyGroupAnalytics(),
-      [A.bv.Clicked]: M.makeEmptyGroupAnalytics()
+      [Chunk987650.bv.Viewed]: M.makeEmptyGroupAnalytics(),
+      [Chunk987650.bv.Clicked]: M.makeEmptyGroupAnalytics()
     }), N(this, "counters", {
-      [A.n0.NewsNudge]: new x,
-      [A.n0.WelcomeNudge]: new x,
-      [A.n0.OopWelcomeNudge]: new x,
-      [A.n0.TextChat]: new x,
-      [A.n0.ActivityUserJoin]: new x,
-      [A.n0.ActivityInvite]: new x,
-      [A.n0.IncomingCall]: new x,
-      [A.n0.GoLiveNudge]: new x,
-      [A.n0.GoLiveNonVoiceNudge]: new x,
-      [A.n0.OverlayCrashed]: new x,
-      [A.n0.ClipsReminderNotification]: new x,
-      [A.n0.ClipsNotification]: new x,
-      [A.n0.KeybindIndicatorsNotification]: new x,
-      [A.n0.SendGameInvitesNotification]: new x,
-      [A.n0.NowPlayingNotification]: new x,
-      [A.n0.RequestToStream]: new x
+      [Chunk987650.n0.NewsNudge]: new x,
+      [Chunk987650.n0.WelcomeNudge]: new x,
+      [Chunk987650.n0.OopWelcomeNudge]: new x,
+      [Chunk987650.n0.TextChat]: new x,
+      [Chunk987650.n0.ActivityUserJoin]: new x,
+      [Chunk987650.n0.ActivityInvite]: new x,
+      [Chunk987650.n0.IncomingCall]: new x,
+      [Chunk987650.n0.GoLiveNudge]: new x,
+      [Chunk987650.n0.GoLiveNonVoiceNudge]: new x,
+      [Chunk987650.n0.OverlayCrashed]: new x,
+      [Chunk987650.n0.ClipsReminderNotification]: new x,
+      [Chunk987650.n0.ClipsNotification]: new x,
+      [Chunk987650.n0.KeybindIndicatorsNotification]: new x,
+      [Chunk987650.n0.SendGameInvitesNotification]: new x,
+      [Chunk987650.n0.NowPlayingNotification]: new x,
+      [Chunk987650.n0.RequestToStream]: new x
     })
   }
 }
 class k {
   static makeEmptyAnalytics() {
     return {
-      initialized: !1,
+      initialized: false,
       pinnedToggledCount: 0,
-      visibleDuration: new i.G9,
-      pinned: !1
+      visibleDuration: new Chunk379649.G9,
+      pinned: false
     }
   }
   getByType(e) {
@@ -191,12 +192,12 @@ class k {
     let e = this.types[0],
       t = this.types[1];
     return {
-      widget_voice_pin_toggle_count: e.pinnedToggledCount,
-      widget_voice_visible_duration: e.visibleDuration.elapsed().asMilliseconds(),
-      widget_voice_pinned: e.pinned,
-      widget_text_pin_toggle_count: t.pinnedToggledCount,
-      widget_text_visible_duration: t.visibleDuration.elapsed().asMilliseconds(),
-      widget_text_pinned: t.pinned
+      widget_voice_pin_toggle_count: module.pinnedToggledCount,
+      widget_voice_visible_duration: module.visibleDuration.elapsed().asMilliseconds(),
+      widget_voice_pinned: module.pinned,
+      widget_text_pin_toggle_count: exports.pinnedToggledCount,
+      widget_text_visible_duration: exports.visibleDuration.elapsed().asMilliseconds(),
+      widget_text_pinned: exports.pinned
     }
   }
   constructor() {
@@ -209,68 +210,68 @@ class k {
 class j {
   update() {
     let e = this.game,
-      t = y.ZP.GetWindowFullscreenTypeByPid(e.pid, e.name, e.fullscreenType);
-    if (t !== this.lastscreenType) {
-      if (!(t in this.counters)) {
-        let n = p.default.getTrackedGameByPid(e.pid);
-        L.error("ScreenTypeAnalytics: Unknown screen type for ".concat(this.game.name, ": ").concat(t), {
+      t = Chunk998502.ZP.GetWindowFullscreenTypeByPid(module.pid, module.name, module.fullscreenType);
+    if (exports !== this.lastscreenType) {
+      if (!(exports in this.counters)) {
+        let n = Chunk371651.default.getTrackedGameByPid(module.pid);
+        L.error("ScreenTypeAnalytics: Unknown screen type for ".concat(this.game.name, ": ").concat(exports), {
           rawGame: this.game,
-          overlayTrackedGame: n
+          overlayTrackedGame: require
         });
         return
       }
-      this.counters[t].start(), null != this.lastscreenType && this.counters[this.lastscreenType].stop(), this.lastscreenType = t
+      this.counters[exports].start(), null != this.lastscreenType && this.counters[this.lastscreenType].stop(), this.lastscreenType = exports
     }
   }
   getAnalytics() {
     var e, t;
     let n = e => this.counters[e].elapsed().asMilliseconds(),
       r = {
-        [a.Jx.UNKNOWN]: n(a.Jx.UNKNOWN),
-        [a.Jx.WINDOWED]: n(a.Jx.WINDOWED),
-        [a.Jx.MAXIMIZED]: n(a.Jx.MAXIMIZED),
-        [a.Jx.BORDERLESS_FULLSCREEN]: n(a.Jx.BORDERLESS_FULLSCREEN),
-        [a.Jx.FULLSCREEN]: n(a.Jx.FULLSCREEN),
-        [a.Jx.MINIMIZED]: n(a.Jx.MINIMIZED)
+        [Chunk593472.Jx.UNKNOWN]: require(Chunk593472.Jx.UNKNOWN),
+        [Chunk593472.Jx.WINDOWED]: require(Chunk593472.Jx.WINDOWED),
+        [Chunk593472.Jx.MAXIMIZED]: require(Chunk593472.Jx.MAXIMIZED),
+        [Chunk593472.Jx.BORDERLESS_FULLSCREEN]: require(Chunk593472.Jx.BORDERLESS_FULLSCREEN),
+        [Chunk593472.Jx.FULLSCREEN]: require(Chunk593472.Jx.FULLSCREEN),
+        [Chunk593472.Jx.MINIMIZED]: require(Chunk593472.Jx.MINIMIZED)
       },
-      i = Object.entries(r).sort((e, t) => {
+      i = Object.entries(Chunk772848).sort((e, t) => {
         let [n, r] = e, [i, o] = t;
         return o - r
       })[0],
-      o = parseInt(i[0], 10),
-      s = isNaN(o) ? a.Jx.UNKNOWN : o;
-    isNaN(o) && L.error("ScreenTypeAnalytics: Unknown most used screen type: ".concat(i), r);
-    let l = T.c.getGameDisplayMode(null != (e = this.game.name) ? e : this.game.id);
-    T.c.setGameDisplayMode(null != (t = this.game.name) ? t : this.game.id, s);
+      o = parseInt(Chunk379649[0], 10),
+      s = isNaN(Chunk570140) ? Chunk593472.Jx.UNKNOWN : Chunk570140;
+    isNaN(Chunk570140) && L.error("ScreenTypeAnalytics: Unknown most used screen type: ".concat(Chunk379649), Chunk772848);
+    let l = Chunk938038.c.getGameDisplayMode(null != (e = this.game.name) ? module : this.game.id);
+    Chunk938038.c.setGameDisplayMode(null != (t = this.game.name) ? exports : this.game.id, Chunk147913);
     let c = {
-      screentype_unknown_duration: r[a.Jx.UNKNOWN],
-      screentype_windowed_duration: r[a.Jx.WINDOWED],
-      screentype_maximized_duration: r[a.Jx.MAXIMIZED],
-      screentype_borderless_fullscreen_duration: r[a.Jx.BORDERLESS_FULLSCREEN],
-      screentype_fullscreen_duration: r[a.Jx.FULLSCREEN],
-      screentype_minimized_duration: r[a.Jx.MINIMIZED]
+      screentype_unknown_duration: Chunk772848[Chunk593472.Jx.UNKNOWN],
+      screentype_windowed_duration: Chunk772848[Chunk593472.Jx.WINDOWED],
+      screentype_maximized_duration: Chunk772848[Chunk593472.Jx.MAXIMIZED],
+      screentype_borderless_fullscreen_duration: Chunk772848[Chunk593472.Jx.BORDERLESS_FULLSCREEN],
+      screentype_fullscreen_duration: Chunk772848[Chunk593472.Jx.FULLSCREEN],
+      screentype_minimized_duration: Chunk772848[Chunk593472.Jx.MINIMIZED]
     };
-    return P(C({}, c), {
-      screentype_global_supported_duration: c.screentype_windowed_duration + c.screentype_maximized_duration + c.screentype_borderless_fullscreen_duration,
-      screentype_global_unsupported_duration: c.screentype_fullscreen_duration,
-      screentype_initial: a.Jx[this.game.fullscreenType],
-      screentype_most_used: a.Jx[s],
-      screentype_most_used_previous: null == l ? null : a.Jx[l],
-      game_display_mode_is_adjustment_supported: y.ZP.GameDisplayModeIsGameSupported(this.game.name)
+    return P(C({}, Chunk710845), {
+      screentype_global_supported_duration: Chunk710845.screentype_windowed_duration + Chunk710845.screentype_maximized_duration + Chunk710845.screentype_borderless_fullscreen_duration,
+      screentype_global_unsupported_duration: Chunk710845.screentype_fullscreen_duration,
+      screentype_initial: Chunk593472.Jx[this.game.fullscreenType],
+      screentype_most_used: Chunk593472.Jx[Chunk147913],
+      screentype_most_used_previous: null == Chunk579806 ? null : Chunk593472.Jx[Chunk579806],
+      game_display_mode_is_adjustment_supported: Chunk998502.ZP.GameDisplayModeIsGameSupported(this.game.name)
     })
   }
   destroy() {
     clearInterval(this.updateScreenInterval)
   }
   constructor(e) {
-    N(this, "game", void 0), N(this, "counters", void 0), N(this, "lastscreenType", void 0), N(this, "updateScreenInterval", void 0), this.game = e, this.counters = {
+    N(this, "game", true), N(this, "counters", true), N(this, "lastscreenType", true), N(this, "updateScreenInterval", true), this.game = e, this.counters = {
       [a.Jx.UNKNOWN]: new i.G9,
       [a.Jx.WINDOWED]: new i.G9,
       [a.Jx.MAXIMIZED]: new i.G9,
       [a.Jx.BORDERLESS_FULLSCREEN]: new i.G9,
       [a.Jx.FULLSCREEN]: new i.G9,
       [a.Jx.MINIMIZED]: new i.G9
-    }, this.lastscreenType = void 0, this.update(), this.updateScreenInterval = setInterval(() => this.update(), 1e4)
+    }, this.lastscreenType = true, this.update(), this.updateScreenInterval = setInterval(() => this.update(), 1e4)
   }
 }
 
@@ -278,7 +279,7 @@ function U() {
   try {
     return crypto.randomUUID()
   } catch (e) {
-    return L.error("OverlayUsageStatsManager: Failed to generate UUID", e), (0, r.Z)()
+    return L.error("OverlayUsageStatsManager: Failed to generate UUID", module), (0, Chunk772848.Z)()
   }
 }
 class G {
@@ -302,7 +303,7 @@ class G {
         legacyEnabled: i
       } = p.default.getPerGameEnabledStatus(t),
       o = {
-        legacy_override: !0 === i,
+        legacy_override: true === i,
         enabled: r || i,
         quns_mode: this.getQunsName(a.Ng.QUNS_UNKNOWN)
       };
@@ -345,8 +346,8 @@ class G {
     if (null == e) return null;
     let n = null == (t = d.ZP.getRunningGames().find(t => {
       var n;
-      return (null == (n = t.name) ? void 0 : n.toLowerCase()) === e.toLowerCase()
-    })) ? void 0 : t.pid;
+      return (null == (n = t.name) ? true : n.toLowerCase()) === e.toLowerCase()
+    })) ? true : t.pid;
     return null != n ? G.gamesByPid[n] : null
   }
   static getByPid(e) {
@@ -373,37 +374,37 @@ class G {
     })
   }
   getSettingMethod() {
-    return null == this.overlayMethod ? _.gl[_.gl.Disabled] : _.gl[this.overlayMethod]
+    return null == this.overlayMethod ? Chunk837268.gl[Chunk837268.gl.Disabled] : Chunk837268.gl[this.overlayMethod]
   }
   async getAnalytics() {
     var e, t, n, r, i, o, a, s, c;
-    let p = null != (n = this.overlayMethod) ? n : _.gl.Disabled,
+    let p = null != (n = this.overlayMethod) ? require : Chunk837268.gl.Disabled,
       m = {
-        setting_is_enabled: g.default.enabled,
+        setting_is_enabled: Chunk808506.default.enabled,
         setting_method: this.getSettingMethod(),
-        setting_display_user: E.default.getDisplayUserMode(),
-        setting_display_name: E.default.getDisplayNameMode(),
-        setting_avatar_size: E.default.getAvatarSizeMode(),
-        setting_notification_position: E.default.getNotificationPositionMode(),
-        setting_chat_notification: h.Z.isNotificationDisabled(f.OverlayNotificationDisabledSetting.TEXT_CHAT) ? "DISABLED" : "ENABLED"
+        setting_display_user: Chunk237997.default.getDisplayUserMode(),
+        setting_display_name: Chunk237997.default.getDisplayNameMode(),
+        setting_avatar_size: Chunk237997.default.getAvatarSizeMode(),
+        setting_notification_position: Chunk237997.default.getNotificationPositionMode(),
+        setting_chat_notification: Chunk624864.Z.isNotificationDisabled(Chunk486016.OverlayNotificationDisabledSetting.TEXT_CHAT) ? "DISABLED" : "ENABLED"
       },
-      b = (0, d.b6)(this.game),
-      y = (0, u.G8)(this.game),
-      O = null != (r = this.overlayMethodStats) ? r : this.buildOverlayMethodStats(p, this.game),
-      v = null != O.any_other_method ? _.gl[O.any_other_method] : null,
-      I = b.enabledLegacy || b.enabledOOP;
+      b = (0, Chunk594190.b6)(this.game),
+      y = (0, Chunk581567.G8)(this.game),
+      O = null != (r = this.overlayMethodStats) ? Chunk772848 : this.buildOverlayMethodStats(Chunk371651, this.game),
+      v = null != Chunk145597.any_other_method ? Chunk837268.gl[Chunk145597.any_other_method] : null,
+      I = Chunk626135.enabledLegacy || Chunk626135.enabledOOP;
     return {
       usage: P(C(P(C({
         event_uuid: this.uuid,
         overlay_usage_stats_version: w
-      }, this.notificationAnalytics.getAnalytics(), this.widgetAnalytics.getAnalytics(), this.screenAnalytics.getAnalytics(), m), {
-        overlay_status_game_enabled: I,
-        overlay_status_game_source: b.source,
-        game_name: null != (i = y.gameName) ? i : null,
-        game_id: null != (o = y.gameId) ? o : null,
-        game_exe: null != (a = y.exe) ? a : null,
+      }, this.notificationAnalytics.getAnalytics(), this.widgetAnalytics.getAnalytics(), this.screenAnalytics.getAnalytics(), Chunk449224), {
+        overlay_status_game_enabled: Chunk554174,
+        overlay_status_game_source: Chunk626135.source,
+        game_name: null != (i = Chunk998502.gameName) ? Chunk379649 : null,
+        game_id: null != (o = Chunk998502.gameId) ? Chunk570140 : null,
+        game_exe: null != (a = Chunk998502.exe) ? Chunk593472 : null,
         game_elevated: this.game.elevated,
-        game_is_launcher: null != (s = this.game.isLauncher) && s,
+        game_is_launcher: null != (s = this.game.isLauncher) && Chunk147913,
         game_duration: this.gameTimer.elapsed().asMilliseconds(),
         game_focused_duration: this.gameFocusedTimer.elapsed().asMilliseconds(),
         game_focused_change_count: this.gameFocusChangedCount,
@@ -414,7 +415,7 @@ class G {
         soundboard_shown_duration: this.soundboardShownTimer.elapsed().asMilliseconds(),
         soundboard_shown_count: this.soundboardShownCount,
         soundboard_keep_open_count: this.soundboardKeepOpenCount,
-        hardware_display_count: null != (c = await (null === l.Z || void 0 === l.Z || null == (t = l.Z.hardware) || null == (e = t.getDisplayCount) ? void 0 : e.call(t))) ? c : null,
+        hardware_display_count: null != (c = await (null === Chunk579806.Z || true === Chunk579806.Z || null == (t = Chunk579806.Z.hardware) || null == (e = exports.getDisplayCount) ? true : module.call(exports))) ? Chunk710845 : null,
         message_ack_count: this.overlayMessageAckCount,
         message_created_count: this.overlayMessageCreateCount,
         desktop_message_ack_count: this.desktopMessageAckCount,
@@ -424,9 +425,9 @@ class G {
         rtc_connection_duration: this.rtcConnectionTimer.elapsed().asMilliseconds(),
         mute_toggled_count: this.muteToggledCount,
         overlay_successfully_shown: this._successfullyShown
-      }), O), {
-        original_method: _.gl[O.original_method],
-        any_other_method: v
+      }), Chunk145597), {
+        original_method: Chunk837268.gl[Chunk145597.original_method],
+        any_other_method: Chunk830917
       }),
       notifications: this.notificationAnalytics.getCounterAnalytics(this.uuid)
     }
@@ -435,10 +436,10 @@ class G {
     e ? (this.unlockedTimer.stop(), ++this.uiLockedCount) : (this.unlockedTimer.start(), ++this.uiUnlockedCount)
   }
   static gameSetAllUnfocused() {
-    for (let e of Object.values(G.gamesByPid)) e.gameFocusedTimer.stop()
+    for (let e of Object.values(G.gamesByPid)) module.gameFocusedTimer.stop()
   }
   static incrementConcurrentGameCount() {
-    for (let e of Object.values(G.gamesByPid)) ++e.gameConcurrentGameCount
+    for (let e of Object.values(G.gamesByPid)) ++module.gameConcurrentGameCount
   }
   gameSetFocused(e) {
     this.gameFocusedTimer.toggle(e), e && ++this.gameFocusChangedCount
@@ -447,7 +448,7 @@ class G {
     this.soundboardShownTimer.toggle(e), e && (++this.soundboardShownCount, t && ++this.soundboardKeepOpenCount)
   }
   static handleMuteToggled() {
-    for (let e of Object.values(G.gamesByPid)) ++e.muteToggledCount
+    for (let e of Object.values(G.gamesByPid)) ++module.muteToggledCount
   }
   static desktopSetFocused(e) {
     if (e !== G.desktopMainWindowHasFocus) {
@@ -469,7 +470,7 @@ class G {
   }
   constructor(e) {
     var t, n;
-    N(this, "game", void 0), N(this, "uuid", void 0), N(this, "overlayStatus", void 0), N(this, "overlayMethod", void 0), N(this, "overlayMethodStats", void 0), N(this, "notificationAnalytics", void 0), N(this, "widgetAnalytics", void 0), N(this, "screenAnalytics", void 0), N(this, "uiUnlockedCount", void 0), N(this, "uiLockedCount", void 0), N(this, "gameFocusChangedCount", void 0), N(this, "gameConcurrentGameCount", void 0), N(this, "overlayMessageAckCount", void 0), N(this, "overlayMessageCreateCount", void 0), N(this, "gameTimer", void 0), N(this, "gameFocusedTimer", void 0), N(this, "unlockedTimer", void 0), N(this, "rtcConnectionTimer", void 0), N(this, "desktopFocusedTimer", void 0), N(this, "desktopFocusChangedCount", void 0), N(this, "desktopMessageAckCount", void 0), N(this, "desktopMessageCreateCount", void 0), N(this, "soundboardShownTimer", void 0), N(this, "soundboardShownCount", void 0), N(this, "soundboardKeepOpenCount", void 0), N(this, "muteToggledCount", void 0), N(this, "_successfullyShown", void 0), this.game = e, this.uuid = U(), this.overlayMethod = null, this.overlayMethodStats = null, this.notificationAnalytics = new M, this.widgetAnalytics = new k, this.uiUnlockedCount = 0, this.uiLockedCount = 0, this.gameFocusChangedCount = 0, this.gameConcurrentGameCount = 0, this.overlayMessageAckCount = 0, this.overlayMessageCreateCount = 0, this.gameTimer = i.G9.startNew(), this.gameFocusedTimer = new i.G9, this.unlockedTimer = new i.G9, this.rtcConnectionTimer = new i.G9, this.desktopFocusedTimer = new i.G9, this.desktopFocusChangedCount = 0, this.desktopMessageAckCount = 0, this.desktopMessageCreateCount = 0, this.soundboardShownTimer = new i.G9, this.soundboardShownCount = 0, this.soundboardKeepOpenCount = 0, this.muteToggledCount = 0, this._successfullyShown = !1, this.screenAnalytics = new j(e), this.overlayStatus = (0, d.b6)(e), this.overlayMethod = null != (n = null == (t = this.overlayStatus) ? void 0 : t.overlayMethod) ? n : null, this.overlayMethodStats = this.buildOverlayMethodStats(this.overlayMethod, e), G.desktopMainWindowHasFocus && this.desktopFocusedTimer.start(), $.hasConnection() && this.rtcConnectionTimer.start()
+    N(this, "game", true), N(this, "uuid", true), N(this, "overlayStatus", true), N(this, "overlayMethod", true), N(this, "overlayMethodStats", true), N(this, "notificationAnalytics", true), N(this, "widgetAnalytics", true), N(this, "screenAnalytics", true), N(this, "uiUnlockedCount", true), N(this, "uiLockedCount", true), N(this, "gameFocusChangedCount", true), N(this, "gameConcurrentGameCount", true), N(this, "overlayMessageAckCount", true), N(this, "overlayMessageCreateCount", true), N(this, "gameTimer", true), N(this, "gameFocusedTimer", true), N(this, "unlockedTimer", true), N(this, "rtcConnectionTimer", true), N(this, "desktopFocusedTimer", true), N(this, "desktopFocusChangedCount", true), N(this, "desktopMessageAckCount", true), N(this, "desktopMessageCreateCount", true), N(this, "soundboardShownTimer", true), N(this, "soundboardShownCount", true), N(this, "soundboardKeepOpenCount", true), N(this, "muteToggledCount", true), N(this, "_successfullyShown", true), this.game = e, this.uuid = U(), this.overlayMethod = null, this.overlayMethodStats = null, this.notificationAnalytics = new M, this.widgetAnalytics = new k, this.uiUnlockedCount = 0, this.uiLockedCount = 0, this.gameFocusChangedCount = 0, this.gameConcurrentGameCount = 0, this.overlayMessageAckCount = 0, this.overlayMessageCreateCount = 0, this.gameTimer = i.G9.startNew(), this.gameFocusedTimer = new i.G9, this.unlockedTimer = new i.G9, this.rtcConnectionTimer = new i.G9, this.desktopFocusedTimer = new i.G9, this.desktopFocusChangedCount = 0, this.desktopMessageAckCount = 0, this.desktopMessageCreateCount = 0, this.soundboardShownTimer = new i.G9, this.soundboardShownCount = 0, this.soundboardKeepOpenCount = 0, this.muteToggledCount = 0, this._successfullyShown = false, this.screenAnalytics = new j(e), this.overlayStatus = (0, d.b6)(e), this.overlayMethod = null != (n = null == (t = this.overlayStatus) ? true : t.overlayMethod) ? n : null, this.overlayMethodStats = this.buildOverlayMethodStats(this.overlayMethod, e), G.desktopMainWindowHasFocus && this.desktopFocusedTimer.start(), $.hasConnection() && this.rtcConnectionTimer.start()
   }
 }
 
@@ -503,14 +504,14 @@ function V(e) {
   let n = G.getByName(null != (t = e.gameName) ? t : e.gameId);
   if (null == n) return void L.error("OVERLAY_WIDGET_CHANGED: Game not found", e, G.debug);
   let r = n.widgetAnalytics.getByWidget(e.widgetType);
-  null != r && (r.initialized || (r.initialized = !0, r.pinned = e.pinned), r.pinned !== e.pinned && ++r.pinnedToggledCount, r.pinned = e.pinned, r.visibleDuration.toggle(e.visible))
+  null != r && (r.initialized || (r.initialized = true, r.pinned = e.pinned), r.pinned !== e.pinned && ++r.pinnedToggledCount, r.pinned = e.pinned, r.visibleDuration.toggle(e.visible))
 }
 
 function H(e) {
   if (L.verbose("OVERLAY_FOCUSED", e), G.gameSetAllUnfocused(), null == e.pid || e.pid === O.DEV_PID) return;
   let t = G.getByPid(e.pid);
   if (null == t) return void L.error("OVERLAY_FOCUSED: Game not found", e, G.debug);
-  t.gameSetFocused(!0)
+  t.gameSetFocused(true)
 }
 
 function Y(e) {
@@ -562,7 +563,7 @@ function Q(e) {
   if (e.pid === O.DEV_PID) return;
   let t = G.getByPid(e.pid);
   if (null == t) return void L.error("OVERLAY_SUCCESSFULLY_SHOWN: Game not found", e, G.debug);
-  t.successfullyShown = !0
+  t.successfullyShown = true
 }
 
 function J(e) {
@@ -589,7 +590,7 @@ class $ {
     $.previousHasConnection !== r && (G.toggleRtcConnection(r), $.previousHasConnection = r)
   }
 }
-N($, "connections", new Set), N($, "previousHasConnection", !1);
+N($, "connections", new Set), N($, "previousHasConnection", false);
 class ee {
   static handleMessageAcked(e) {
     L.verbose("MESSAGE_ACKED", e);
@@ -616,9 +617,9 @@ class ee {
   }
 }
 D && !__OVERLAY__ && setInterval(async () => {
-  for (let e of Object.values(G.debug.gamesByName)) L.verbose("Game analytics", await e.getAnalytics())
+  for (let e of Object.values(G.debug.gamesByName)) L.verbose("Game analytics", await module.getAnalytics())
 }, 5e3);
-class et extends s.Z {
+class et extends Chunk147913.Z {
   constructor(...e) {
     super(...e), N(this, "actions", __OVERLAY__ ? {
       MESSAGE_ACKED: ee.handleMessageAcked,

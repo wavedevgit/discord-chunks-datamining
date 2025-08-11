@@ -1,7 +1,8 @@
 /** Chunk was on web.js **/
+/** chunk id: 323240, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-var r = n(48511),
-  i = n(815329),
+var Chunk48511 = require("./48511.js"),
+  Chunk815329 = require("./815329.js"),
   o = function(e, t, n) {
     for (var r, i = e; null != (r = i.next); i = r)
       if (r.key === t) return i.next = r.next, n || (r.next = e.next, e.next = r), r
@@ -24,9 +25,9 @@ var r = n(48511),
     return !!e && !!o(e, t)
   },
   c = function(e, t) {
-    if (e) return o(e, t, !0)
+    if (e) return o(e, t, true)
   };
-e.exports = function() {
+module.exports = function() {
   var e, t = {
     assert: function(e) {
       if (!t.has(e)) throw new i("Side channel does not contain " + r(e))
@@ -34,7 +35,7 @@ e.exports = function() {
     delete: function(t) {
       var n = e && e.next,
         r = c(e, t);
-      return r && n && n === r && (e = void 0), !!r
+      return r && n && n === r && (e = true), !!r
     },
     get: function(t) {
       return a(e, t)
@@ -44,9 +45,9 @@ e.exports = function() {
     },
     set: function(t, n) {
       e || (e = {
-        next: void 0
+        next: true
       }), s(e, t, n)
     }
   };
-  return t
+  return exports
 }

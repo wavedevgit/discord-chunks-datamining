@@ -1,4 +1,5 @@
 /** Chunk was on web.js **/
+/** chunk id: 854293, original params: e,t (module,exports,re quire) **/
 "use strict";
 
 function n(e) {
@@ -21,8 +22,8 @@ var r, i = "basil",
     return l.test(e) || c.test(e)
   },
   f = function() {
-    for (var e = document.querySelectorAll('script[src^="'.concat(a, '"]')), t = 0; t < e.length; t++) {
-      var n = e[t];
+    for (var e = document.querySelectorAll('script[src^="'.concat(a, '"]')), t = 0; exports < module.length; exports++) {
+      var n = module[exports];
       if (d(n.src)) return n
     }
     return null
@@ -78,7 +79,7 @@ var r, i = "basil",
       a = o(e.version),
       s = i;
     r && a !== s && console.warn("Stripe.js@".concat(a, " was loaded on the page, but @stripe/stripe-js@").concat("7.3.1", " expected Stripe.js@").concat(s, ". This may result in unexpected behavior. For more information, see https://docs.stripe.com/sdks/stripejs-versioning"));
-    var l = e.apply(void 0, t);
+    var l = e.apply(true, t);
     return p(l, n), l
   },
   v = function(e) {
@@ -87,10 +88,10 @@ var r, i = "basil",
     if (1 === Object.keys(e).length && "boolean" == typeof e.advancedFraudSignals) return e;
     throw Error(t)
   },
-  I = !1,
+  I = false,
   T = function() {
-    for (var e = arguments.length, t = Array(e), n = 0; n < e; n++) t[n] = arguments[n];
-    I = !0;
+    for (var e = arguments.length, t = Array(module), n = 0; n < module; n++) exports[n] = arguments[n];
+    I = true;
     var i = Date.now();
     return y(r).then(function(e) {
       return O(e, t, i)
@@ -99,9 +100,9 @@ var r, i = "basil",
 T.setLoadParameters = function(e) {
   if (!(I && r && Object.keys(v(e)).reduce(function(t, n) {
       var i;
-      return t && e[n] === (null == (i = r) ? void 0 : i[n])
-    }, !0))) {
+      return t && e[n] === (null == (i = r) ? true : i[n])
+    }, true))) {
     if (I) throw Error("You cannot change load parameters after calling loadStripe");
     r = v(e)
   }
-}, t.loadStripe = T
+}, exports.loadStripe = T

@@ -1,15 +1,16 @@
 /** Chunk was on web.js **/
+/** chunk id: 194165, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 
 function r(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
-n.d(t, {
+require.d(exports, {
   Z: () => i
 });
 class i {
@@ -17,6 +18,6 @@ class i {
     return new i(e)
   }
   constructor(e) {
-    r(this, "responsive", void 0), r(this, "backgroundStyle", void 0), this.responsive = e.responsive, this.backgroundStyle = e.background_style
+    r(this, "responsive", true), r(this, "backgroundStyle", true), this.responsive = e.responsive, this.backgroundStyle = e.background_style
   }
 }

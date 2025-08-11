@@ -1,25 +1,26 @@
 /** Chunk was on web.js **/
+/** chunk id: 526120, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   C3: () => E,
   Fg: () => g,
   Oh: () => y,
   cP: () => m,
   gp: () => b
-}), n(388685);
-var r = n(544891),
-  i = n(570140),
-  o = n(904245),
-  a = n(593472),
-  s = n(160404),
-  l = n(359110),
-  c = n(592125),
-  u = n(626135),
-  d = n(709054),
-  f = n(563534),
-  _ = n(734893),
-  p = n(846121),
-  h = n(981631);
+}), require("./388685.js");
+var Chunk544891 = require("./544891.js"),
+  Chunk570140 = require("./570140.js"),
+  Chunk904245 = require("./904245.js"),
+  Chunk593472 = require("./593472.js"),
+  Chunk160404 = require("./160404.js"),
+  Chunk359110 = require("./359110.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk626135 = require("./626135.js"),
+  Chunk709054 = require("./709054.js"),
+  Chunk563534 = require("./563534.js"),
+  Chunk734893 = require("./734893.js"),
+  Chunk846121 = require("./846121.js"),
+  Chunk981631 = require("./981631.js");
 let m = async e => {
   i.Z.dispatch({
     type: "GUILD_HOME_SETTINGS_FETCH_START",
@@ -28,8 +29,8 @@ let m = async e => {
   try {
     let t = await r.tn.get({
         url: h.ANM.GUILD_HOME_SETTINGS(e),
-        oldFormErrors: !0,
-        rejectWithError: !0
+        oldFormErrors: true,
+        rejectWithError: true
       }),
       n = (0, _.tB)(t.body);
     return i.Z.dispatch({
@@ -52,8 +53,8 @@ let m = async e => {
     try {
       let t = await r.tn.get({
           url: h.ANM.GUILD_MEMBER_ACTIONS(e),
-          oldFormErrors: !0,
-          rejectWithError: !0
+          oldFormErrors: true,
+          rejectWithError: true
         }),
         n = (0, _.rk)(t.body);
       return i.Z.dispatch({
@@ -69,7 +70,7 @@ let m = async e => {
     }
   }
 }, E = function(e, t) {
-  let n = !(arguments.length > 2) || void 0 === arguments[2] || arguments[2];
+  let n = !(arguments.length > 2) || true === arguments[2] || arguments[2];
   if (i.Z.dispatch({
       type: "SELECT_HOME_RESOURCE_CHANNEL",
       guildId: e,
@@ -81,13 +82,13 @@ let m = async e => {
     guild_id: e,
     channel_id: r.id,
     server_guide_channel_type: "resource",
-    channel_action_type: -1
+    channel_action_type: false
   }), n && (0, l.Kh)(t, {
-    navigationReplace: !1
+    navigationReplace: false
   }), o.Z.jumpToMessage({
     channelId: t,
     messageId: d.default.castChannelIdAsMessageId(t),
-    flash: !1,
+    flash: false,
     jumpType: a.SR.INSTANT
   })
 }, b = (e, t) => {
@@ -120,11 +121,11 @@ let m = async e => {
       guild_id: n.guild_id,
       channel_id: n.id,
       channel_action_type: o.actionType,
-      has_completed_all: r.reduce((e, n) => e && t.includes(n.channelId), !0)
+      has_completed_all: r.reduce((e, n) => e && t.includes(n.channelId), true)
     })
   }
   r.tn.post({
     url: h.ANM.GUILD_MEMBER_ACTION_UPDATE(e, t),
-    rejectWithError: !0
+    rejectWithError: true
   })
 }

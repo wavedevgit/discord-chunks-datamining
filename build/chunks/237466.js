@@ -1,5 +1,6 @@
 /** Chunk was on 82875 **/
-e.exports = {
+/** chunk id: 237466, original params: e,n,t (module,exports,require) **/
+module.exports = {
   content: "content_f70348",
   channelName: "channelName_f70348",
   icon: "icon_f70348",

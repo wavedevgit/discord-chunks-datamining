@@ -1,6 +1,7 @@
 /** Chunk was on 31077 **/
-e.exports = function(e) {
+/** chunk id: 975412, original params: e (module,exports,require) **/
+module.exports = function(e) {
   return function(t) {
-    return null == e ? void 0 : e[t]
+    return null == e ? true : e[t]
   }
 }

@@ -1,22 +1,23 @@
 /** Chunk was on web.js **/
+/** chunk id: 239091, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Zy: () => d,
   jW: () => _,
   vq: () => f
-}), n(457542);
-var r = n(570140),
-  i = n(40851),
-  o = n(358085),
-  a = n(601993),
-  s = n(981631);
+}), require("./457542.js");
+var Chunk570140 = require("./570140.js"),
+  Chunk40851 = require("./40851.jsx"),
+  Chunk358085 = require("./358085.js"),
+  Chunk601993 = require("./601993.js"),
+  Chunk981631 = require("./981631.js");
 
 function l(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -61,7 +62,7 @@ function f(e, t, n, r) {
   let _ = 0,
     p = 0;
   if ("pageX" in e && (_ = e.pageX, p = e.pageY), 0 === _ && 0 === p) {
-    let t = null == (l = e.target) ? void 0 : l.getBoundingClientRect(),
+    let t = null == (l = e.target) ? true : l.getBoundingClientRect(),
       {
         left: n = 0,
         top: r = 0,
@@ -79,7 +80,7 @@ function f(e, t, n, r) {
       context: __OVERLAY__ ? s.IlC.OVERLAY : null != (f = (0, i.GB)()) ? f : s.IlC.APP
     }, n)
   };
-  if ((null == n ? void 0 : n.enableSpellCheck) && (0, o.isDesktop)()) {
+  if ((null == n ? true : n.enableSpellCheck) && (0, o.isDesktop)()) {
     let e = () => {
         t(), u(h)
       },
@@ -88,5 +89,5 @@ function f(e, t, n, r) {
 }
 
 function _(e, t, n) {
-  f(e, void 0, n, t)
+  f(e, true, n, t)
 }

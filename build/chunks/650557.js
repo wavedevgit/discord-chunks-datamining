@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 650557, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   BU: () => tz,
   CX: () => tR,
   F3: () => ey,
@@ -9,25 +10,25 @@ n.d(t, {
   mH: () => tF,
   vt: () => eY
 });
-var r = n(653603),
-  i = n.n(r),
-  o = n(889678),
-  a = n.n(o),
-  s = n(123763),
-  l = n.n(s),
-  c = n(73800),
-  u = n(367989),
-  d = n(327432),
-  f = n(690096),
-  _ = n(247187),
-  p = n(867309);
+var Chunk653603 = require("./653603.js"),
+  i = require.n(Chunk653603),
+  Chunk889678 = require("./889678.js"),
+  a = require.n(Chunk889678),
+  Chunk123763 = require("./123763.js"),
+  l = require.n(Chunk123763),
+  Chunk73800 = require("./73800.js"),
+  Chunk367989 = require("./367989.js"),
+  Chunk327432 = require("./327432.js"),
+  Chunk690096 = require("./690096.js"),
+  Chunk247187 = require("./247187.js"),
+  Chunk867309 = require("./867309.js");
 
 function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -106,25 +107,25 @@ var y = new WeakMap,
   },
   J = e => {
     for (var t = e && e.parentNode; t;) {
-      if ("[object ShadowRoot]" === t.toString()) return !0;
+      if ("[object ShadowRoot]" === t.toString()) returntrue;
       t = t.parentNode
     }
-    return !1
+    returnfalse
   },
   $ = (e, t, n) => {
     for (var {
         childNodes: r
-      } = e, i = r[t], o = t, a = !1, s = !1;
+      } = e, i = r[t], o = t, a = false, s = false;
       (Y(i) || W(i) && 0 === i.childNodes.length || W(i) && "false" === i.getAttribute("contenteditable")) && (!a || !s);) {
       if (o >= r.length) {
-        a = !0, o = t - 1, n = "backward";
+        a = true, o = t - 1, n = "backward";
         continue
       }
       if (o < 0) {
-        s = !0, o = t + 1, n = "forward";
+        s = true, o = t + 1, n = "forward";
         continue
       }
-      i = r[o], t = o, o += "forward" === n ? 1 : -1
+      i = r[o], t = o, o += "forward" === n ? 1 : false
     }
     return [i, t]
   },
@@ -151,12 +152,12 @@ var y = new WeakMap,
     var {
       target: r
     } = t;
-    if (W(r) && r.matches('[contentEditable="false"]')) return !1;
+    if (W(r) && r.matches('[contentEditable="false"]')) returnfalse;
     var {
       document: i
     } = ey.getWindow(e);
     if (i.contains(r)) return ey.hasDOMNode(e, r, {
-      editable: !0
+      editable: true
     });
     var o = n.find(e => {
       var {
@@ -164,13 +165,13 @@ var y = new WeakMap,
         removedNodes: n
       } = e;
       for (var i of t)
-        if (i === r || i.contains(r)) return !0;
+        if (i === r || i.contains(r)) returntrue;
       for (var o of n)
-        if (o === r || o.contains(r)) return !0
+        if (o === r || o.contains(r)) returntrue
     });
     return !!o && o !== t && ei(e, o, n)
   },
-  eo = parseInt(c.version.split(".")[0], 10) >= 17,
+  eo = parseInt(Chunk73800.version.split(".")[0], 10) >= 17,
   ea = "undefined" != typeof navigator && "undefined" != typeof window && /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream,
   es = "undefined" != typeof navigator && /Mac OS X/.test(navigator.userAgent),
   el = "undefined" != typeof navigator && /Android/.test(navigator.userAgent),
@@ -183,7 +184,7 @@ var y = new WeakMap,
   eh = "undefined" != typeof navigator && /^(?!.*Seamonkey)(?=.*Firefox\/(?:[0-7][0-9]|[0-8][0-6])(?:\.)).*/i.test(navigator.userAgent),
   em = "undefined" != typeof navigator && /.*UCBrowser/.test(navigator.userAgent),
   eg = "undefined" != typeof navigator && /.*Wechat/.test(navigator.userAgent),
-  eE = "undefined" != typeof window && void 0 !== window.document && void 0 !== window.document.createElement,
+  eE = "undefined" != typeof window && true !== window.document && true !== window.document.createElement,
   eb = (!e_ || !ep) && !ed && "undefined" != typeof globalThis && globalThis.InputEvent && "function" == typeof globalThis.InputEvent.prototype.getTargetRanges,
   ey = {
     isComposing: e => !!w.get(e),
@@ -218,13 +219,13 @@ var y = new WeakMap,
     blur(e) {
       var t = ey.toDOMNode(e, e),
         n = ey.findDocumentOrShadowRoot(e);
-      P.set(e, !1), n.activeElement === t && t.blur()
+      P.set(e, false), n.activeElement === t && t.blur()
     },
     focus(e) {
       var t = ey.toDOMNode(e, e),
         n = ey.findDocumentOrShadowRoot(e);
-      P.set(e, !0), n.activeElement !== t && t.focus({
-        preventScroll: !0
+      P.set(e, true), n.activeElement !== t && t.focus({
+        preventScroll: true
       })
     },
     deselect(e) {
@@ -234,9 +235,9 @@ var y = new WeakMap,
       n && n.rangeCount > 0 && n.removeAllRanges(), t && d.YR.deselect(e)
     },
     hasDOMNode(e, t) {
-      var n, r = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {},
+      var n, r = arguments.length > 2 && true !== arguments[2] ? arguments[2] : {},
         {
-          editable: i = !1
+          editable: i = false
         } = r,
         o = ey.toDOMNode(e, e);
       try {
@@ -256,7 +257,7 @@ var y = new WeakMap,
     },
     toDOMNode(e, t) {
       var n = C.get(e),
-        r = d.ML.isEditor(t) ? I.get(e) : null == n ? void 0 : n.get(ey.findKey(e, t));
+        r = d.ML.isEditor(t) ? I.get(e) : null == n ? true : n.get(ey.findKey(e, t));
       if (!r) throw Error("Cannot resolve a DOM node from Slate node: ".concat(d.o4.stringify(t)));
       return r
     },
@@ -333,8 +334,8 @@ var y = new WeakMap,
       }
       if (!n) throw Error("Cannot resolve a Slate range from a DOM event: ".concat(t));
       return ey.toSlateRange(e, n, {
-        exactMatch: !1,
-        suppressThrow: !1
+        exactMatch: false,
+        suppressThrow: false
       })
     },
     toSlatePoint(e, t, n) {
@@ -378,7 +379,7 @@ var y = new WeakMap,
       if (el && !l && !r) {
         var I = s.hasAttribute("data-slate-node") ? s : s.closest("[data-slate-node]");
         if (I && ey.hasDOMNode(e, I, {
-            editable: !0
+            editable: true
           })) {
           var T = ey.toSlateNode(e, I),
             {
@@ -407,7 +408,7 @@ var y = new WeakMap,
         suppressThrow: u
       } = n;
       if ((z(t) ? t.anchorNode : t.startContainer) && (z(t) ? (r = t.anchorNode, i = t.anchorOffset, o = t.focusNode, a = t.focusOffset, s = ef && J(r) ? t.anchorNode === t.focusNode && t.anchorOffset === t.focusOffset : t.isCollapsed) : (r = t.startContainer, i = t.startOffset, o = t.endContainer, a = t.endOffset, s = t.collapsed)), null == r || null == o || null == i || null == a) throw Error("Cannot resolve a Slate range from DOM range: ".concat(t));
-      "getAttribute" in o && "false" === o.getAttribute("contenteditable") && (o = r, a = (null == (l = r.textContent) ? void 0 : l.length) || 0);
+      "getAttribute" in o && "false" === o.getAttribute("contenteditable") && (o = r, a = (null == (l = r.textContent) ? true : l.length) || 0);
       var f = ey.toSlatePoint(e, [r, i], {
         exactMatch: c,
         suppressThrow: u
@@ -431,7 +432,7 @@ var y = new WeakMap,
         at: m.focus,
         mode: "highest"
       }) && (m = d.ML.unhangRange(e, m, {
-        voids: !0
+        voids: true
       })), m
     },
     hasRange(e, t) {
@@ -443,11 +444,11 @@ var y = new WeakMap,
     },
     hasTarget: (e, t) => K(t) && ey.hasDOMNode(e, t),
     hasEditableTarget: (e, t) => K(t) && ey.hasDOMNode(e, t, {
-      editable: !0
+      editable: true
     }),
     hasSelectableTarget: (e, t) => ey.hasEditableTarget(e, t) || ey.isTargetInsideNonReadonlyVoid(e, t),
     isTargetInsideNonReadonlyVoid(e, t) {
-      if (R.get(e)) return !1;
+      if (R.get(e)) returnfalse;
       var n = ey.hasTarget(e, t) && ey.toSlateNode(e, t);
       return d.W_.isElement(n) && d.ML.isVoid(e, n)
     },
@@ -466,49 +467,49 @@ var y = new WeakMap,
     return e[Z] === t[Z] && eI(n, r)
   },
   eS = (e, t) => {
-    if (e.length !== t.length) return !1;
+    if (e.length !== t.length) returnfalse;
     for (var n = 0; n < e.length; n++) {
       var r = e[n],
         i = t[n];
-      if (!d.e6.equals(r, i) || !eT(r, i)) return !1
+      if (!d.e6.equals(r, i) || !eT(r, i)) returnfalse
     }
-    return !0
+    returntrue
   },
   eA = (e, t) => {
-    if (e.length !== t.length) return !1;
+    if (e.length !== t.length) returnfalse;
     for (var n = 0; n < e.length; n++) {
       var r = e[n],
         i = t[n];
-      if (r.anchor.offset !== i.anchor.offset || r.focus.offset !== i.focus.offset || !eT(r, i)) return !1
+      if (r.anchor.offset !== i.anchor.offset || r.focus.offset !== i.focus.offset || !eT(r, i)) returnfalse
     }
-    return !0
+    returntrue
   },
-  eN = eE ? c.useLayoutEffect : c.useEffect,
+  eN = eE ? Chunk73800.useLayoutEffect : Chunk73800.useEffect,
   eC = e => {
     var {
       isLast: t,
       leaf: n,
       parent: r,
       text: i
-    } = e, o = eL(), a = ey.findPath(o, i), s = d.y$.parent(a), l = !0 === n[F];
+    } = e, o = eL(), a = ey.findPath(o, i), s = d.y$.parent(a), l = true === n[F];
     return o.isVoid(r) ? c.createElement(ew, {
       length: d.NB.string(r).length
     }) : "" !== n.text || r.children[r.children.length - 1] !== i || o.isInline(r) || "" !== d.ML.string(o, s) ? "" === n.text ? c.createElement(ew, {
       isMarkPlaceholder: l
-    }) : t && "\n" === n.text.slice(-1) ? c.createElement(eR, {
-      isTrailing: !0,
+    }) : t && "\n" === n.text.slice(false) ? c.createElement(eR, {
+      isTrailing: true,
       text: n.text
     }) : c.createElement(eR, {
       text: n.text
     }) : c.createElement(ew, {
-      isLineBreak: !0,
+      isLineBreak: true,
       isMarkPlaceholder: l
     })
   },
   eR = e => {
     var {
       text: t,
-      isTrailing: n = !1
+      isTrailing: n = false
     } = e, r = (0, c.useRef)(null), i = () => "".concat(null != t ? t : "").concat(n ? "\n" : ""), [o] = (0, c.useState)(i);
     return eN(() => {
       var e = i();
@@ -517,26 +518,26 @@ var y = new WeakMap,
       ref: r
     }, o)
   },
-  eP = (0, c.memo)((0, c.forwardRef)((e, t) => c.createElement("span", {
-    "data-slate-string": !0,
+  eP = (0, Chunk73800.memo)((0, Chunk73800.forwardRef)((e, t) => c.createElement("span", {
+    "data-slate-string": true,
     ref: t
   }, e.children))),
   ew = e => {
     var {
       length: t = 0,
-      isLineBreak: n = !1,
-      isMarkPlaceholder: r = !1
+      isLineBreak: n = false,
+      isMarkPlaceholder: r = false
     } = e, i = {
       "data-slate-zero-width": n ? "n" : "z",
       "data-slate-length": t
     };
-    return r && (i["data-slate-mark-placeholder"] = !0), c.createElement("span", Object.assign({}, i), el && n ? null : "\uFEFF", n ? c.createElement("br", null) : null)
+    return r && (i["data-slate-mark-placeholder"] = true), c.createElement("span", Object.assign({}, i), el && n ? null : "\uFEFF", n ? c.createElement("br", null) : null)
   },
-  eD = (0, c.createContext)(null),
+  eD = (0, Chunk73800.createContext)(null),
   eL = () => {
-    var e = (0, c.useContext)(eD);
-    if (!e) throw Error("The `useSlateStatic` hook must be used inside the <Slate> component's context.");
-    return e
+    var e = (0, Chunk73800.useContext)(eD);
+    if (!module) throw Error("The `useSlateStatic` hook must be used inside the <Slate> component's context.");
+    return module
   },
   ex = e => {
     var {
@@ -550,7 +551,7 @@ var y = new WeakMap,
     (0, c.useEffect)(() => () => {
       d.current && d.current.disconnect()
     }, []), (0, c.useEffect)(() => {
-      var e = null == l ? void 0 : l.current;
+      var e = null == l ? true : l.current;
       if (e ? T.set(u, e) : T.delete(u), d.current ? (d.current.disconnect(), e && d.current.observe(e)) : e && (d.current = new(window.ResizeObserver || f.do)(() => {
           var e = B.get(u);
           null == e || e()
@@ -572,7 +573,7 @@ var y = new WeakMap,
       var p = {
         children: t.placeholder,
         attributes: {
-          "data-slate-placeholder": !0,
+          "data-slate-placeholder": true,
           style: {
             position: "absolute",
             pointerEvents: "none",
@@ -583,7 +584,7 @@ var y = new WeakMap,
             userSelect: "none",
             textDecoration: "none"
           },
-          contentEditable: !1,
+          contentEditable: false,
           ref: l
         }
       };
@@ -591,14 +592,14 @@ var y = new WeakMap,
     }
     return a({
       attributes: {
-        "data-slate-leaf": !0
+        "data-slate-leaf": true
       },
       children: _,
       leaf: t,
       text: r
     })
   },
-  eM = c.memo(ex, (e, t) => t.parent === e.parent && t.isLast === e.isLast && t.renderLeaf === e.renderLeaf && t.renderPlaceholder === e.renderPlaceholder && t.text === e.text && d.xv.equals(t.leaf, e.leaf) && t.leaf[Z] === e.leaf[Z]),
+  eM = Chunk73800.memo(ex, (e, t) => t.parent === e.parent && t.isLast === e.isLast && t.renderLeaf === e.renderLeaf && t.renderPlaceholder === e.renderPlaceholder && t.text === e.text && d.xv.equals(t.leaf, e.leaf) && t.leaf[Z] === e.leaf[Z]),
   ek = e => {
     var {
       attributes: t,
@@ -635,7 +636,7 @@ var y = new WeakMap,
       ref: m
     }, _)
   },
-  eU = c.memo(ej, (e, t) => t.parent === e.parent && t.isLast === e.isLast && t.renderLeaf === e.renderLeaf && t.renderPlaceholder === e.renderPlaceholder && t.text === e.text && eA(t.decorations, e.decorations)),
+  eU = Chunk73800.memo(ej, (e, t) => t.parent === e.parent && t.isLast === e.isLast && t.renderLeaf === e.renderLeaf && t.renderPlaceholder === e.renderPlaceholder && t.text === e.text && eA(t.decorations, e.decorations)),
   eG = e => {
     var {
       decorations: t,
@@ -658,19 +659,19 @@ var y = new WeakMap,
       "data-slate-node": "element",
       ref: p
     };
-    if (f && (m["data-slate-inline"] = !0), !f && d.ML.hasInlines(l, n)) {
+    if (f && (m["data-slate-inline"] = true), !f && d.ML.hasInlines(l, n)) {
       var g = d.NB.string(n),
         E = i()(g);
       "rtl" === E && (m.dir = E)
     }
     if (d.ML.isVoid(l, n)) {
-      m["data-slate-void"] = !0, !u && f && (m.contentEditable = !1);
+      m["data-slate-void"] = true, !u && f && (m.contentEditable = false);
       var b = f ? "span" : "div",
         [
           [v]
         ] = d.NB.texts(n);
       h = c.createElement(b, {
-        "data-slate-spacer": !0,
+        "data-slate-spacer": true,
         style: {
           height: "0",
           color: "transparent",
@@ -680,7 +681,7 @@ var y = new WeakMap,
       }, c.createElement(eU, {
         renderPlaceholder: o,
         decorations: [],
-        isLast: !1,
+        isLast: false,
         parent: n,
         text: v
       })), y.set(v, 0), O.set(v, n)
@@ -692,7 +693,7 @@ var y = new WeakMap,
       decorations: t
     })
   },
-  eB = c.memo(eG, (e, t) => e.element === t.element && e.renderElement === t.renderElement && e.renderLeaf === t.renderLeaf && e.renderPlaceholder === t.renderPlaceholder && eS(e.decorations, t.decorations) && (e.selection === t.selection || !!e.selection && !!t.selection && d.e6.equals(e.selection, t.selection))),
+  eB = Chunk73800.memo(eG, (e, t) => e.element === t.element && e.renderElement === t.renderElement && e.renderLeaf === t.renderLeaf && e.renderPlaceholder === t.renderPlaceholder && eS(e.decorations, t.decorations) && (e.selection === t.selection || !!e.selection && !!t.selection && d.e6.equals(e.selection, t.selection))),
   eZ = e => {
     var {
       attributes: t,
@@ -705,10 +706,10 @@ var y = new WeakMap,
       }
     }), n)
   },
-  eF = (0, c.createContext)(() => []),
-  eV = () => (0, c.useContext)(eF),
-  eH = (0, c.createContext)(!1),
-  eY = () => (0, c.useContext)(eH),
+  eF = (0, Chunk73800.createContext)(() => []),
+  eV = () => (0, Chunk73800.useContext)(eF),
+  eH = (0, Chunk73800.createContext)(false),
+  eY = () => (0, Chunk73800.useContext)(eH),
   eW = e => {
     for (var {
         decorations: t,
@@ -751,16 +752,16 @@ var y = new WeakMap,
     }
     return f
   },
-  eK = (0, c.createContext)(!1),
-  ez = () => (0, c.useContext)(eK),
-  eq = (0, c.createContext)(null),
+  eK = (0, Chunk73800.createContext)(false),
+  ez = () => (0, Chunk73800.useContext)(eK),
+  eq = (0, Chunk73800.createContext)(null),
   eX = () => {
-    var e = (0, c.useContext)(eq);
-    if (!e) throw Error("The `useSlate` hook must be used inside the <Slate> component's context.");
+    var e = (0, Chunk73800.useContext)(eq);
+    if (!module) throw Error("The `useSlate` hook must be used inside the <Slate> component's context.");
     var {
       editor: t
-    } = e;
-    return t
+    } = module;
+    return exports
   },
   eQ = 3,
   eJ = {
@@ -860,12 +861,12 @@ var y = new WeakMap,
     }
   },
   e5 = {
-    subtree: !0,
-    childList: !0,
-    characterData: !0,
-    characterDataOldValue: !0
+    subtree: true,
+    childList: true,
+    characterData: true,
+    characterDataOldValue: true
   };
-class e4 extends c.Component {
+class e4 extends Chunk73800.Component {
   constructor() {
     super(...arguments), this.context = null, this.manager = null, this.mutationObserver = null
   }
@@ -873,26 +874,26 @@ class e4 extends c.Component {
     var e, {
       node: t
     } = this.props;
-    if (!t.current) throw Error("Failed to attach MutationObserver, `node` is undefined");
-    null == (e = this.mutationObserver) || e.observe(t.current, e5)
+    if (!exports.current) throw Error("Failed to attach MutationObserver, `node` is undefined");
+    null == (e = this.mutationObserver) || module.observe(exports.current, e5)
   }
   componentDidMount() {
     var {
       receivedUserInput: e
     } = this.props, t = this.context;
-    this.manager = e3(t, e), this.mutationObserver = new MutationObserver(this.manager.registerMutations), this.observe()
+    this.manager = e3(exports, module), this.mutationObserver = new MutationObserver(this.manager.registerMutations), this.observe()
   }
   getSnapshotBeforeUpdate() {
-    var e, t, n, r, i = null == (e = this.mutationObserver) ? void 0 : e.takeRecords();
-    return null != i && i.length && (null == (r = this.manager) || r.registerMutations(i)), null == (t = this.mutationObserver) || t.disconnect(), null == (n = this.manager) || n.restoreDOM(), null
+    var e, t, n, r, i = null == (e = this.mutationObserver) ? true : module.takeRecords();
+    return null != i && i.length && (null == (r = this.manager) || Chunk653603.registerMutations(i)), null == (t = this.mutationObserver) || exports.disconnect(), null == (n = this.manager) || require.restoreDOM(), null
   }
   componentDidUpdate() {
     var e;
-    null == (e = this.manager) || e.clear(), this.observe()
+    null == (e = this.manager) || module.clear(), this.observe()
   }
   componentWillUnmount() {
     var e;
-    null == (e = this.mutationObserver) || e.disconnect()
+    null == (e = this.mutationObserver) || module.disconnect()
   }
   render() {
     return this.props.children
@@ -911,12 +912,12 @@ function e8(e, t) {
     path: n,
     diff: r
   } = t;
-  if (!d.ML.hasPath(e, n)) return !1;
+  if (!d.ML.hasPath(e, n)) returnfalse;
   var i = d.NB.get(e, n);
-  if (!d.xv.isText(i)) return !1;
+  if (!d.xv.isText(i)) returnfalse;
   if (r.start !== i.text.length || 0 === r.text.length) return i.text.slice(r.start, r.start + r.text.length) === r.text;
   var o = d.y$.next(n);
-  if (!d.ML.hasPath(e, o)) return !1;
+  if (!d.ML.hasPath(e, o)) returnfalse;
   var a = d.NB.get(e, o);
   return d.xv.isText(a) && a.text.startsWith(r.text)
 }
@@ -1024,7 +1025,7 @@ function to(e, t) {
 
 function ta(e, t, n) {
   var r = j.get(e),
-    i = null == r ? void 0 : r.find(e => {
+    i = null == r ? true : r.find(e => {
       var {
         path: n
       } = e;
@@ -1181,7 +1182,7 @@ function tc(e, t) {
 function tu(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {};
-    t % 2 ? tc(Object(n), !0).forEach(function(t) {
+    t % 2 ? tc(Object(n), true).forEach(function(t) {
       h(e, t, n[t])
     }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : tc(Object(n)).forEach(function(t) {
       Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
@@ -1192,14 +1193,14 @@ function tu(e) {
 var td = 25,
   tf = 200,
   t_ = function() {},
-  tp = e => (null == e ? void 0 : e.constructor.name) === "DataTransfer";
+  tp = e => (null == e ? true : e.constructor.name) === "DataTransfer";
 
 function th(e) {
   var {
     editor: t,
     scheduleOnDOMSelectionChange: n,
     onDOMSelectionChange: r
-  } = e, i = !1, o = null, a = null, s = null, l = 0, c = !1, u = () => {
+  } = e, i = false, o = null, a = null, s = null, l = 0, c = false, u = () => {
     var e = G.get(t);
     if (G.delete(t), e) {
       var {
@@ -1220,33 +1221,33 @@ function th(e) {
     }
   }, _ = () => {
     if (a && (clearTimeout(a), a = null), s && (clearTimeout(s), s = null), !y() && !b()) return void u();
-    i || (i = !0, setTimeout(() => i = !1)), b() && (i = "action");
+    i || (i = true, setTimeout(() => i = false)), b() && (i = "action");
     var e = t.selection && d.ML.rangeRef(t, t.selection, {
       affinity: "forward"
     });
     k.set(t, t.marks), t_("flush", U.get(t), j.get(t));
-    for (var o = y(); l = null == (_ = j.get(t)) ? void 0 : _[0];) {
+    for (var o = y(); l = null == (_ = j.get(t)) ? true : _[0];) {
       var l, _, p, h = M.get(t);
-      void 0 !== h && (M.delete(t), t.marks = h), h && !1 === c && (c = null);
+      true !== h && (M.delete(t), t.marks = h), h && false === c && (c = null);
       var m = tr(l);
-      t.selection && d.e6.equals(t.selection, m) || d.YR.select(t, m), l.diff.text ? d.ML.insertText(t, l.diff.text) : d.ML.deleteFragment(t), j.set(t, null == (p = j.get(t)) ? void 0 : p.filter(e => {
+      t.selection && d.e6.equals(t.selection, m) || d.YR.select(t, m), l.diff.text ? d.ML.insertText(t, l.diff.text) : d.ML.deleteFragment(t), j.set(t, null == (p = j.get(t)) ? true : p.filter(e => {
         var {
           id: t
         } = e;
         return t !== l.id
-      })), e8(t, l) || (o = !1, U.delete(t), k.delete(t), i = "action", G.delete(t), n.cancel(), r.cancel(), null == e || e.unref())
+      })), e8(t, l) || (o = false, U.delete(t), k.delete(t), i = "action", G.delete(t), n.cancel(), r.cancel(), null == e || e.unref())
     }
-    var g = null == e ? void 0 : e.unref();
+    var g = null == e ? true : e.unref();
     if (!g || G.get(t) || t.selection && d.e6.equals(g, t.selection) || d.YR.select(t, g), b()) return void f();
     o && n(), n.flush(), r.flush(), u();
     var E = k.get(t);
-    k.delete(t), void 0 !== E && (t.marks = E, t.onChange())
+    k.delete(t), true !== E && (t.marks = E, t.onChange())
   }, p = e => {
     o && clearTimeout(o), o = setTimeout(() => {
-      w.set(t, !1), _()
+      w.set(t, false), _()
     }, td)
   }, h = function() {
-    var e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
+    var e = arguments.length > 0 && true !== arguments[0] && arguments[0],
       n = T.get(t);
     if (n) {
       if (y() || e) {
@@ -1279,8 +1280,8 @@ function th(e) {
   }, g = function(e) {
     var {
       at: i
-    } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
-    c = !1, G.delete(t), n.cancel(), r.cancel(), b() && _(), U.set(t, {
+    } = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {};
+    c = false, G.delete(t), n.cancel(), r.cancel(), b() && _(), U.set(t, {
       at: i,
       run: e
     }), s = setTimeout(_)
@@ -1288,19 +1289,19 @@ function th(e) {
     a && (clearTimeout(a), a = null);
     var {
       inputType: n
-    } = e, r = null, i = e.dataTransfer || e.data || void 0;
-    !1 !== c && "insertText" !== n && "insertCompositionText" !== n && (c = !1);
+    } = e, r = null, i = e.dataTransfer || e.data || true;
+    false !== c && "insertText" !== n && "insertCompositionText" !== n && (c = false);
     var [o] = e.getTargetRanges();
     o && (r = ey.toSlateRange(t, o, {
-      exactMatch: !1,
-      suppressThrow: !0
+      exactMatch: false,
+      suppressThrow: true
     }));
     var s = ey.getWindow(t).getSelection();
     if (!r && s && (o = s, r = ey.toSlateRange(t, s, {
-        exactMatch: !1,
-        suppressThrow: !0
+        exactMatch: false,
+        suppressThrow: true
       })), r = null != (P = r) ? P : t.selection) {
-      var l = !0;
+      var l = true;
       if (n.startsWith("delete")) {
         if (d.e6.isExpanded(r)) {
           var [u, f] = d.e6.edges(r);
@@ -1324,9 +1325,9 @@ function th(e) {
             end: E.offset
           },
           I = j.get(t),
-          T = null == I ? void 0 : I.find(e => d.y$.equals(e.path, y)),
+          T = null == I ? true : I.find(e => d.y$.equals(e.path, y)),
           S = T ? [T.diff, O] : [O];
-        if (0 === e7(b.text, ...S).length && (l = !1), d.e6.isExpanded(r)) {
+        if (0 === e7(b.text, ...S).length && (l = false), d.e6.isExpanded(r)) {
           if (l && d.y$.equals(r.anchor.path, r.focus.path)) {
             var N = {
               path: r.anchor.path,
@@ -1447,7 +1448,7 @@ function th(e) {
             at: r
           });
           var x = null != i ? i : "";
-          if (M.get(t) && (x = x.replace("\uFEFF", "")), "insertText" === n && /.*\n.*\n$/.test(x) && (x = x.slice(0, -1)), x.includes("\n")) return g(() => {
+          if (M.get(t) && (x = x.replace("\uFEFF", "")), "insertText" === n && /.*\n.*\n$/.test(x) && (x = x.slice(0, false)), x.includes("\n")) return g(() => {
             var e = x.split("\n");
             e.forEach((n, r) => {
               n && d.ML.insertText(t, n), r !== e.length - 1 && d.ML.insertSoftBreak(t)
@@ -1463,7 +1464,7 @@ function th(e) {
             };
             if (x && c && "insertCompositionText" === n) {
               var B = c.start + c.text.search(/\S|$/);
-              G.start + G.text.search(/\S|$/) === B + 1 && G.end === c.start + c.text.length ? (G.start -= 1, c = null, A()) : c = !1
+              G.start + G.text.search(/\S|$/) === B + 1 && G.end === c.start + c.text.length ? (G.start -= 1, c = null, A()) : c = false
             } else c = "insertText" === n && (null === c ? G : !!(c && d.e6.isCollapsed(r)) && c.end + c.text.length === k.offset && tu(tu({}, c), {}, {
               text: c.text + x
             }));
@@ -1484,13 +1485,13 @@ function th(e) {
     } = t;
     if (e) {
       var r = !n || !d.y$.equals(n.anchor.path, e.anchor.path),
-        i = !n || !d.y$.equals(n.anchor.path.slice(0, -1), e.anchor.path.slice(0, -1));
-      (r && c || i) && (c = !1), (r || y()) && (a = setTimeout(_, tf))
+        i = !n || !d.y$.equals(n.anchor.path.slice(0, false), e.anchor.path.slice(0, false));
+      (r && c || i) && (c = false), (r || y()) && (a = setTimeout(_, tf))
     }
   }, I = () => {
     (b() || !y()) && _()
   }, S = e => {
-    y() || (h(!0), setTimeout(h))
+    y() || (h(true), setTimeout(h))
   }, A = () => {
     b() || (s = setTimeout(_))
   }, N = e => {
@@ -1509,7 +1510,7 @@ function th(e) {
     handleUserSelect: v,
     handleCompositionEnd: p,
     handleCompositionStart: e => {
-      w.set(t, !0), o && (clearTimeout(o), o = null)
+      w.set(t, true), o && (clearTimeout(o), o = null)
     },
     handleDOMBeforeInput: E,
     handleKeyDown: S,
@@ -1519,10 +1520,10 @@ function th(e) {
 }
 
 function tm() {
-  var e = (0, c.useRef)(!1);
-  return (0, c.useEffect)(() => (e.current = !0, () => {
-    e.current = !1
-  }), []), e.current
+  var e = (0, Chunk73800.useRef)(false);
+  return (0, Chunk73800.useEffect)(() => (module.current = true, () => {
+    module.current = false
+  }), []), module.current
 }
 
 function tg(e, t, n) {
@@ -1550,7 +1551,7 @@ function tb(e, t) {
 function ty(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {};
-    t % 2 ? tb(Object(n), !0).forEach(function(t) {
+    t % 2 ? tb(Object(n), true).forEach(function(t) {
       h(e, t, n[t])
     }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : tb(Object(n)).forEach(function(t) {
       Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
@@ -1559,9 +1560,9 @@ function ty(e) {
   return e
 }
 var tO = {
-  subtree: !0,
-  childList: !0,
-  characterData: !0
+  subtree: true,
+  childList: true,
+  characterData: true
 };
 
 function tv(e) {
@@ -1579,20 +1580,20 @@ function tv(e) {
 
 function tI() {
   var e = eL(),
-    t = (0, c.useRef)(!1),
-    n = (0, c.useRef)(0),
-    r = (0, c.useCallback)(() => {
-      if (!t.current) {
-        t.current = !0;
-        var r = ey.getWindow(e);
-        r.cancelAnimationFrame(n.current), n.current = r.requestAnimationFrame(() => {
-          t.current = !1
+    t = (0, Chunk73800.useRef)(false),
+    n = (0, Chunk73800.useRef)(0),
+    r = (0, Chunk73800.useCallback)(() => {
+      if (!exports.current) {
+        exports.current = true;
+        var r = ey.getWindow(module);
+        Chunk653603.cancelAnimationFrame(require.current), require.current = Chunk653603.requestAnimationFrame(() => {
+          exports.current = false
         })
       }
     }, []);
-  return (0, c.useEffect)(() => () => cancelAnimationFrame(n.current), []), {
-    receivedUserInput: t,
-    onUserInput: r
+  return (0, Chunk73800.useEffect)(() => () => cancelAnimationFrame(require.current), []), {
+    receivedUserInput: exports,
+    onUserInput: Chunk653603
   }
 }
 var tT = ["autoFocus", "decorate", "onDOMBeforeInput", "placeholder", "readOnly", "renderElement", "renderLeaf", "renderPlaceholder", "scrollSelectionIntoView", "style", "as", "disableDefaultStyles"],
@@ -1612,7 +1613,7 @@ function tA(e, t) {
 function tN(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {};
-    t % 2 ? tA(Object(n), !0).forEach(function(t) {
+    t % 2 ? tA(Object(n), true).forEach(function(t) {
       h(e, t, n[t])
     }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : tA(Object(n)).forEach(function(t) {
       Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
@@ -1628,18 +1629,18 @@ var tC = e => c.createElement(c.Fragment, null, eW(e)),
         decorate: s = tw,
         onDOMBeforeInput: u,
         placeholder: f,
-        readOnly: _ = !1,
+        readOnly: _ = false,
         renderElement: p,
         renderLeaf: h,
         renderPlaceholder: m = r,
         scrollSelectionIntoView: E = tD,
         style: b = {},
         as: y = "div",
-        disableDefaultStyles: O = !1
+        disableDefaultStyles: O = false
       } = e,
       N = g(e, tT),
       C = eX(),
-      [L, x] = (0, c.useState)(!1),
+      [L, x] = (0, c.useState)(false),
       j = (0, c.useRef)(null),
       U = (0, c.useRef)([]),
       {
@@ -1649,10 +1650,10 @@ var tC = e => c.createElement(c.Fragment, null, eW(e)),
       [, Y] = (0, c.useReducer)(e => e + 1, 0);
     B.set(C, Y), R.set(C, _);
     var z = (0, c.useMemo)(() => ({
-      isDraggingInternally: !1,
-      isUpdatingSelection: !1,
+      isDraggingInternally: false,
+      isUpdatingSelection: false,
       latestElement: null,
-      hasMarkPlaceholder: !1
+      hasMarkPlaceholder: false
     }), []);
     (0, c.useLayoutEffect)(() => () => {
       null != z && null != z.latestElement && (z.latestElement.remove(), z.latestElement = null)
@@ -1667,15 +1668,15 @@ var tC = e => c.createElement(c.Fragment, null, eW(e)),
             } = e,
             n = ey.toDOMNode(C, C),
             r = e.getSelection();
-          if (t === n ? (z.latestElement = t, P.set(C, !0)) : P.delete(C), !r) return d.YR.deselect(C);
+          if (t === n ? (z.latestElement = t, P.set(C, true)) : P.delete(C), !r) return d.YR.deselect(C);
           var {
             anchorNode: i,
             focusNode: o
           } = r, a = ey.hasEditableTarget(C, i) || ey.isTargetInsideNonReadonlyVoid(C, i), s = ey.hasEditableTarget(C, o) || ey.isTargetInsideNonReadonlyVoid(C, o);
           if (a && s) {
             var l = ey.toSlateRange(C, r, {
-              exactMatch: !1,
-              suppressThrow: !0
+              exactMatch: false,
+              suppressThrow: true
             });
             l && (ey.isComposing(C) || null != J && J.hasPendingChanges() || null != J && J.isFlushing() ? null == J || J.handleUserSelect(l) : d.YR.select(C, l))
           }!_ || a && s || d.YR.deselect(C)
@@ -1698,11 +1699,11 @@ var tC = e => c.createElement(c.Fragment, null, eW(e)),
             var r = "None" !== n.type;
             if (t || r) {
               var i = I.get(C),
-                o = !1;
-              if (i.contains(n.anchorNode) && i.contains(n.focusNode) && (o = !0), r && o && t && !e) {
+                o = false;
+              if (i.contains(n.anchorNode) && i.contains(n.focusNode) && (o = true), r && o && t && !e) {
                 var a = ey.toSlateRange(C, n, {
-                  exactMatch: !0,
-                  suppressThrow: !0
+                  exactMatch: true,
+                  suppressThrow: true
                 });
                 if (a && d.e6.equals(a, t)) {
                   if (!z.hasMarkPlaceholder) return;
@@ -1714,20 +1715,20 @@ var tC = e => c.createElement(c.Fragment, null, eW(e)),
               }
               if (t && !ey.hasRange(C, t)) {
                 C.selection = ey.toSlateRange(C, n, {
-                  exactMatch: !1,
-                  suppressThrow: !0
+                  exactMatch: false,
+                  suppressThrow: true
                 });
                 return
               }
-              z.isUpdatingSelection = !0;
+              z.isUpdatingSelection = true;
               var c = t && ey.toDOMRange(C, t);
               return c ? (d.e6.isBackward(t) ? n.setBaseAndExtent(c.endContainer, c.endOffset, c.startContainer, c.startOffset) : n.setBaseAndExtent(c.startContainer, c.startOffset, c.endContainer, c.endOffset), E(C, c)) : n.removeAllRanges(), c
             }
           },
           i = r(),
-          o = (null == J ? void 0 : J.isFlushing()) === "action";
+          o = (null == J ? true : J.isFlushing()) === "action";
         if (!el || !o) return void setTimeout(() => {
-          i && ec && ey.toDOMNode(C, C).focus(), z.isUpdatingSelection = !1
+          i && ec && ey.toDOMNode(C, C).focus(), z.isUpdatingSelection = false
         });
         var a = null,
           s = requestAnimationFrame(() => {
@@ -1738,7 +1739,7 @@ var tC = e => c.createElement(c.Fragment, null, eW(e)),
                 } catch (e) {}
               };
               e(), a = setTimeout(() => {
-                e(!0), z.isUpdatingSelection = !1
+                e(true), z.isUpdatingSelection = false
               })
             }
           });
@@ -1755,35 +1756,35 @@ var tC = e => c.createElement(c.Fragment, null, eW(e)),
             selection: t
           } = C, {
             inputType: n
-          } = e, r = e.dataTransfer || e.data || void 0, i = "insertCompositionText" === n || "deleteCompositionText" === n;
+          } = e, r = e.dataTransfer || e.data || true, i = "insertCompositionText" === n || "deleteCompositionText" === n;
           if (!(i && ey.isComposing(C))) {
-            var o = !1;
+            var o = false;
             if ("insertText" === n && t && d.e6.isCollapsed(t) && e.data && 1 === e.data.length && /[a-z ]/i.test(e.data) && 0 !== t.anchor.offset) {
-              o = !0, C.marks && (o = !1);
+              o = true, C.marks && (o = false);
               var {
                 anchor: a
-              } = t, [s, l] = ey.toDOMPoint(C, a), c = null == (h = s.parentElement) ? void 0 : h.closest("a"), f = ey.getWindow(C);
+              } = t, [s, l] = ey.toDOMPoint(C, a), c = null == (h = s.parentElement) ? true : h.closest("a"), f = ey.getWindow(C);
               if (o && c && ey.hasDOMNode(C, c)) {
-                var p, h, m, g, E = null == f ? void 0 : f.document.createTreeWalker(c, NodeFilter.SHOW_TEXT).lastChild();
-                E === s && (null == (g = E.textContent) ? void 0 : g.length) === l && (o = !1)
+                var p, h, m, g, E = null == f ? true : f.document.createTreeWalker(c, NodeFilter.SHOW_TEXT).lastChild();
+                E === s && (null == (g = E.textContent) ? true : g.length) === l && (o = false)
               }
-              if (o && s.parentElement && (null == f || null == (m = f.getComputedStyle(s.parentElement)) ? void 0 : m.whiteSpace) === "pre") {
+              if (o && s.parentElement && (null == f || null == (m = f.getComputedStyle(s.parentElement)) ? true : m.whiteSpace) === "pre") {
                 var b = d.ML.above(C, {
                   at: a.path,
                   match: e => d.W_.isElement(e) && d.ML.isBlock(C, e)
                 });
-                b && d.NB.string(b[0]).includes("	") && (o = !1)
+                b && d.NB.string(b[0]).includes("	") && (o = false)
               }
             }
             if (!n.startsWith("delete") || n.startsWith("deleteBy")) {
               var [y] = e.getTargetRanges();
               if (y) {
                 var O = ey.toSlateRange(C, y, {
-                  exactMatch: !1,
-                  suppressThrow: !1
+                  exactMatch: false,
+                  suppressThrow: false
                 });
                 if (!t || !d.e6.equals(t, O)) {
-                  o = !1;
+                  o = false;
                   var v = !i && C.selection && d.ML.rangeRef(C, C.selection);
                   d.YR.select(C, O), v && D.set(C, v)
                 }
@@ -1859,9 +1860,9 @@ var tC = e => c.createElement(c.Fragment, null, eW(e)),
                 case "insertFromYank":
                 case "insertReplacementText":
                 case "insertText":
-                  "insertFromComposition" === n && ey.isComposing(C) && (x(!1), w.set(C, !1)), (null == r ? void 0 : r.constructor.name) === "DataTransfer" ? ey.insertData(C, r) : "string" == typeof r && (o ? U.current.push(() => d.ML.insertText(C, r)) : d.ML.insertText(C, r))
+                  "insertFromComposition" === n && ey.isComposing(C) && (x(false), w.set(C, false)), (null == r ? true : r.constructor.name) === "DataTransfer" ? ey.insertData(C, r) : "string" == typeof r && (o ? U.current.push(() => d.ML.insertText(C, r)) : d.ML.insertText(C, r))
               }
-              var T = null == (p = D.get(C)) ? void 0 : p.unref();
+              var T = null == (p = D.get(C)) ? true : p.unref();
               D.delete(C), !T || C.selection && d.e6.equals(C.selection, T) || d.YR.select(C, T)
             }
           }
@@ -1880,7 +1881,7 @@ var tC = e => c.createElement(c.Fragment, null, eW(e)),
     if (f && 1 === C.children.length && 1 === Array.from(d.NB.texts(C)).length && "" === d.NB.string(C) && !L) {
       var en = d.ML.start(C, []);
       et.push({
-        [Z]: !0,
+        [Z]: true,
         placeholder: f,
         anchor: en,
         focus: en
@@ -1889,17 +1890,17 @@ var tC = e => c.createElement(c.Fragment, null, eW(e)),
     var {
       marks: er
     } = C;
-    if (z.hasMarkPlaceholder = !1, C.selection && d.e6.isCollapsed(C.selection) && er) {
+    if (z.hasMarkPlaceholder = false, C.selection && d.e6.isCollapsed(C.selection) && er) {
       var {
         anchor: ei
       } = C.selection, eo = d.NB.leaf(C, ei.path), es = g(eo, tS);
       if (!d.xv.equals(eo, er, {
-          loose: !0
+          loose: true
         })) {
-        z.hasMarkPlaceholder = !0;
+        z.hasMarkPlaceholder = true;
         var ed = Object.fromEntries(Object.keys(es).map(e => [e, null]));
         et.push(tN(tN(tN({
-          [F]: !0
+          [F]: true
         }, ed), er), {}, {
           anchor: ei,
           focus: ei
@@ -1915,13 +1916,13 @@ var tC = e => c.createElement(c.Fragment, null, eW(e)),
             anchor: t
           } = e, n = d.NB.leaf(C, t.path);
           if (er && !d.xv.equals(n, er, {
-              loose: !0
+              loose: true
             })) return void M.set(C, er)
         }
         M.delete(C)
       })
     });
-    var e_ = null == (t = T.get(C)) || null == (n = t.getBoundingClientRect()) ? void 0 : n.height;
+    var e_ = null == (t = T.get(C)) || null == (n = t.getBoundingClientRect()) ? true : n.height;
     return c.createElement(eK.Provider, {
       value: _
     }, c.createElement(eF.Provider, {
@@ -1930,17 +1931,17 @@ var tC = e => c.createElement(c.Fragment, null, eW(e)),
       node: j,
       receivedUserInput: V
     }, c.createElement(y, Object.assign({
-      role: _ ? void 0 : "textbox",
-      "aria-multiline": !_ || void 0
+      role: _ ? true : "textbox",
+      "aria-multiline": !_ || true
     }, N, {
       spellCheck: (!!eb || !eE) && N.spellCheck,
       autoCorrect: eb || !eE ? N.autoCorrect : "false",
       autoCapitalize: eb || !eE ? N.autoCapitalize : "false",
-      "data-slate-editor": !0,
+      "data-slate-editor": true,
       "data-slate-node": "value",
       contentEditable: !_,
-      zindex: -1,
-      suppressContentEditableWarning: !0,
+      zindex: false,
+      suppressContentEditableWarning: true,
       ref: ee,
       style: tN(tN({}, O ? {} : tN({
         position: "relative",
@@ -1995,7 +1996,7 @@ var tC = e => c.createElement(c.Fragment, null, eW(e)),
                   match: e => d.W_.isElement(e) && d.ML.isBlock(C, e),
                   at: n
                 });
-                r = null != (i = null == o ? void 0 : o[1]) ? i : n.slice(0, 1)
+                r = null != (i = null == o ? true : o[1]) ? i : n.slice(0, 1)
               }
               var a = d.ML.range(C, r);
               d.YR.select(C, a);
@@ -2019,19 +2020,19 @@ var tC = e => c.createElement(c.Fragment, null, eW(e)),
         }
       }, [_, N.onClick]),
       onCompositionEnd: (0, c.useCallback)(e => {
-        if (ey.hasSelectableTarget(C, e.target) && (ey.isComposing(C) && (x(!1), w.set(C, !1)), null == J || J.handleCompositionEnd(e), !tL(e, N.onCompositionEnd) && !el && !eu && !eh && !ea && !eg && !em) && e.data) {
+        if (ey.hasSelectableTarget(C, e.target) && (ey.isComposing(C) && (x(false), w.set(C, false)), null == J || J.handleCompositionEnd(e), !tL(e, N.onCompositionEnd) && !el && !eu && !eh && !ea && !eg && !em) && e.data) {
           var t = M.get(C);
-          M.delete(C), void 0 !== t && (k.set(C, C.marks), C.marks = t), d.ML.insertText(C, e.data);
+          M.delete(C), true !== t && (k.set(C, C.marks), C.marks = t), d.ML.insertText(C, e.data);
           var n = k.get(C);
-          k.delete(C), void 0 !== n && (C.marks = n)
+          k.delete(C), true !== n && (C.marks = n)
         }
       }, [N.onCompositionEnd]),
       onCompositionUpdate: (0, c.useCallback)(e => {
-        !ey.hasSelectableTarget(C, e.target) || tL(e, N.onCompositionUpdate) || ey.isComposing(C) || (x(!0), w.set(C, !0))
+        !ey.hasSelectableTarget(C, e.target) || tL(e, N.onCompositionUpdate) || ey.isComposing(C) || (x(true), w.set(C, true))
       }, [N.onCompositionUpdate]),
       onCompositionStart: (0, c.useCallback)(e => {
         if (ey.hasSelectableTarget(C, e.target) && (null == J || J.handleCompositionStart(e), !tL(e, N.onCompositionStart) && !el)) {
-          x(!0);
+          x(true);
           var {
             selection: t
           } = C;
@@ -2083,12 +2084,12 @@ var tC = e => c.createElement(c.Fragment, null, eW(e)),
             n = ey.findPath(C, t);
           if (d.W_.isElement(t) && d.ML.isVoid(C, t) || d.ML.void(C, {
               at: n,
-              voids: !0
+              voids: true
             })) {
             var r = d.ML.range(C, n);
             d.YR.select(C, r)
           }
-          z.isDraggingInternally = !0, ey.setFragmentData(C, e.dataTransfer, "drag")
+          z.isDraggingInternally = true, ey.setFragmentData(C, e.dataTransfer, "drag")
         }
       }, [_, N.onDragStart]),
       onDrop: (0, c.useCallback)(e => {
@@ -2099,21 +2100,21 @@ var tC = e => c.createElement(c.Fragment, null, eW(e)),
             r = e.dataTransfer;
           d.YR.select(C, n), z.isDraggingInternally && t && !d.e6.equals(t, n) && !d.ML.void(C, {
             at: n,
-            voids: !0
+            voids: true
           }) && d.YR.delete(C, {
             at: t
           }), ey.insertData(C, r), ey.isFocused(C) || ey.focus(C)
         }
-        z.isDraggingInternally = !1
+        z.isDraggingInternally = false
       }, [_, N.onDrop]),
       onDragEnd: (0, c.useCallback)(e => {
-        !_ && z.isDraggingInternally && N.onDragEnd && ey.hasTarget(C, e.target) && N.onDragEnd(e), z.isDraggingInternally = !1
+        !_ && z.isDraggingInternally && N.onDragEnd && ey.hasTarget(C, e.target) && N.onDragEnd(e), z.isDraggingInternally = false
       }, [_, N.onDragEnd]),
       onFocus: (0, c.useCallback)(e => {
         if (!_ && !z.isUpdatingSelection && ey.hasEditableTarget(C, e.target) && !tL(e, N.onFocus)) {
           var t = ey.toDOMNode(C, C);
           if (z.latestElement = ey.findDocumentOrShadowRoot(C).activeElement, ec && e.target !== t) return void t.focus();
-          P.set(C, !0)
+          P.set(C, true)
         }
       }, [_, N.onFocus]),
       onKeyDown: (0, c.useCallback)(e => {
@@ -2122,7 +2123,7 @@ var tC = e => c.createElement(c.Fragment, null, eW(e)),
           var {
             nativeEvent: t
           } = e;
-          if (ey.isComposing(C) && !1 === t.isComposing && (w.set(C, !1), x(!1)), !(tL(e, N.onKeyDown) || ey.isComposing(C))) {
+          if (ey.isComposing(C) && false === t.isComposing && (w.set(C, false), x(false)), !(tL(e, N.onKeyDown) || ey.isComposing(C))) {
             var {
               selection: n
             } = C, r = C.children[null !== n ? n.focus.path[0] : 0], o = "rtl" === i()(d.NB.string(r));
@@ -2141,7 +2142,7 @@ var tC = e => c.createElement(c.Fragment, null, eW(e)),
             if (e2.isMoveLineBackward(t)) {
               e.preventDefault(), d.YR.move(C, {
                 unit: "line",
-                reverse: !0
+                reverse: true
               });
               return
             }
@@ -2155,7 +2156,7 @@ var tC = e => c.createElement(c.Fragment, null, eW(e)),
               e.preventDefault(), d.YR.move(C, {
                 unit: "line",
                 edge: "focus",
-                reverse: !0
+                reverse: true
               });
               return
             }
@@ -2297,22 +2298,22 @@ var tC = e => c.createElement(c.Fragment, null, eW(e)),
     }
   },
   tL = (e, t) => {
-    if (!t) return !1;
+    if (!t) returnfalse;
     var n = t(e);
     return null != n ? n : e.isDefaultPrevented() || e.isPropagationStopped()
   },
   tx = (e, t) => {
-    if (!t) return !1;
+    if (!t) returnfalse;
     var n = t(e);
     return null != n ? n : e.defaultPrevented
   },
-  tM = (0, c.createContext)(!1),
-  tk = () => (0, c.useContext)(tM);
+  tM = (0, Chunk73800.createContext)(false),
+  tk = () => (0, Chunk73800.useContext)(tM);
 
 function tj(e) {
   return e instanceof Error
 }
-var tU = (0, c.createContext)({}),
+var tU = (0, Chunk73800.createContext)({}),
   tG = (e, t) => e === t;
 
 function tB(e) {
@@ -2340,7 +2341,7 @@ var tZ = ["editor", "children", "onChange", "value"],
       children: n,
       onChange: r,
       value: i
-    } = e, o = g(e, tZ), a = (0, c.useRef)(!1), [s, l] = c.useState(() => {
+    } = e, o = g(e, tZ), a = (0, c.useRef)(false), [s, l] = c.useState(() => {
       if (!d.NB.isNodeList(i)) throw Error("[Slate] value is invalid! Expected a list of elements but got: ".concat(d.o4.stringify(i)));
       if (!d.ML.isEditor(t)) throw Error("[Slate] editor is invalid! You passed: ".concat(d.o4.stringify(t)));
       return t.children = i, Object.assign(t, o), {
@@ -2357,7 +2358,7 @@ var tZ = ["editor", "children", "onChange", "value"],
       })), f(t)
     }, [r]);
     (0, c.useEffect)(() => (L.set(t, _), () => {
-      L.set(t, () => {}), a.current = !0
+      L.set(t, () => {}), a.current = true
     }), [_]);
     var [p, h] = (0, c.useState)(ey.isFocused(t));
     return (0, c.useEffect)(() => {
@@ -2366,8 +2367,8 @@ var tZ = ["editor", "children", "onChange", "value"],
       var e = () => h(ey.isFocused(t));
       return eo ? (document.addEventListener("focusin", e), document.addEventListener("focusout", e), () => {
         document.removeEventListener("focusin", e), document.removeEventListener("focusout", e)
-      }) : (document.addEventListener("focus", e, !0), document.addEventListener("blur", e, !0), () => {
-        document.removeEventListener("focus", e, !0), document.removeEventListener("blur", e, !0)
+      }) : (document.addEventListener("focus", e, true), document.addEventListener("blur", e, true), () => {
+        document.removeEventListener("focus", e, true), document.removeEventListener("blur", e, true)
       })
     }, []), c.createElement(tU.Provider, {
       value: u
@@ -2416,7 +2417,7 @@ function tW(e, t) {
 function tK(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {};
-    t % 2 ? tW(Object(n), !0).forEach(function(t) {
+    t % 2 ? tW(Object(n), true).forEach(function(t) {
       h(e, t, n[t])
     }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : tW(Object(n)).forEach(function(t) {
       Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
@@ -2425,7 +2426,7 @@ function tK(e) {
   return e
 }
 var tz = function(e) {
-    var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : "x-slate-fragment",
+    var t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : "x-slate-fragment",
       n = e,
       {
         apply: r,
@@ -2465,7 +2466,7 @@ var tz = function(e) {
       s && G.set(n, ts(n, s, e));
       var l = U.get(n);
       if (null != l && l.at) {
-        var c = d.E9.isPoint(null == l ? void 0 : l.at) ? ta(n, l.at, e) : ts(n, l.at, e);
+        var c = d.E9.isPoint(null == l ? true : l.at) ? ta(n, l.at, e) : ts(n, l.at, e);
         U.set(n, c ? tK(tK({}, l), {}, {
           at: c
         }) : null)
@@ -2535,20 +2536,20 @@ var tz = function(e) {
       var r = e.getData("application/".concat(t)) || er(e);
       if (r) {
         var i = JSON.parse(decodeURIComponent(window.atob(r)));
-        return n.insertFragment(i), !0
+        return n.insertFragment(i), true
       }
-      return !1
+      returnfalse
     }, n.insertTextData = e => {
       var t = e.getData("text/plain");
       if (t) {
         var r = t.split(/\r\n|\r|\n/),
-          i = !1;
+          i = false;
         for (var o of r) i && d.YR.splitNodes(n, {
-          always: !0
-        }), n.insertText(o), i = !0;
-        return !0
+          always: true
+        }), n.insertText(o), i = true;
+        returntrue
       }
-      return !1
+      returnfalse
     }, n.onChange = e => {
       p.unstable_batchedUpdates(() => {
         var t = L.get(n);

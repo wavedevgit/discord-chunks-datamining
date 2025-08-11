@@ -1,24 +1,25 @@
 /** Chunk was on web.js **/
+/** chunk id: 369111, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => f
 });
-var r = n(73800),
-  i = n(399606),
-  o = n(311395),
-  a = n(778825),
-  s = n(150039),
-  l = n(271383),
-  c = n(25990),
-  u = n(594174),
-  d = n(350327);
+var Chunk73800 = require("./73800.js"),
+  Chunk399606 = require("./399606.js"),
+  Chunk311395 = require("./311395.js"),
+  Chunk778825 = require("./778825.js"),
+  Chunk150039 = require("./150039.js"),
+  Chunk271383 = require("./271383.js"),
+  Chunk25990 = require("./25990.js"),
+  Chunk594174 = require("./594174.js"),
+  Chunk350327 = require("./350327.js");
 
 function f(e) {
   let {
     isTryItOut: t,
     analyticsLocations: n,
     guildId: f
-  } = e, _ = (0, i.e7)([u.default], () => u.default.getCurrentUser()), p = (0, i.e7)([l.ZP], () => null != f && null != _ ? l.ZP.getMember(f, _.id) : null), h = null != p ? p.avatarDecoration : null == _ ? void 0 : _.avatarDecoration, m = (0, o.Z)(n), {
+  } = e, _ = (0, i.e7)([u.default], () => u.default.getCurrentUser()), p = (0, i.e7)([l.ZP], () => null != f && null != _ ? l.ZP.getMember(f, _.id) : null), h = null != p ? p.avatarDecoration : null == _ ? true : _.avatarDecoration, m = (0, o.Z)(n), {
     pendingAvatar: g,
     pendingAvatarDecoration: E,
     pendingErrors: b
@@ -26,7 +27,7 @@ function f(e) {
     pendingAvatar: t ? c.Z.getTryItOutAvatar() : null != f ? a.Z.getPendingAvatar() : c.Z.getPendingAvatar(),
     pendingAvatarDecoration: t ? c.Z.getTryItOutAvatarDecoration() : null != f ? a.Z.getPendingAvatarDecoration() : c.Z.getPendingAvatarDecoration(),
     pendingErrors: null != f ? a.Z.getErrors().avatarDecoration : c.Z.getErrors().avatarDecoration
-  })), y = (0, r.useCallback)(e => (0, s.Jw)(e, null == _ ? void 0 : _.avatar), [null == _ ? void 0 : _.avatar]), O = (0, r.useCallback)(e => {
+  })), y = (0, r.useCallback)(e => (0, s.Jw)(e, null == _ ? true : _.avatar), [null == _ ? true : _.avatar]), O = (0, r.useCallback)(e => {
     (0, s.PO)(f, e), null != e && m(e)
   }, [m, f]);
   return {

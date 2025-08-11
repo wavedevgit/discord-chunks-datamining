@@ -1,22 +1,23 @@
 /** Chunk was on 95257 **/
-l.d(n, {
+/** chunk id: 593214, original params: e,n,l (module,exports,require) **/
+require.d(exports, {
   Mt: () => m,
   li: () => h,
   s4: () => v,
   up: () => x,
   zv: () => f
-}), l(388685), l(539854);
-var t = l(73800),
-  i = l(106351),
-  a = l(442837);
-l(592125);
-var d = l(984933),
-  o = l(914010);
-l(709054);
-var r = l(853856),
-  c = l(362658),
-  s = l(434065),
-  u = l(981631);
+}), require("./388685.js"), require("./539854.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk106351 = require("./106351.js"),
+  Chunk442837 = require("./442837.js");
+require("./592125.js");
+var Chunk984933 = require("./984933.js"),
+  Chunk914010 = require("./914010.js");
+require("./709054.js");
+var Chunk853856 = require("./853856.js"),
+  Chunk362658 = require("./362658.js"),
+  Chunk434065 = require("./434065.js"),
+  Chunk981631 = require("./981631.js");
 
 function h(e) {
   let {
@@ -31,27 +32,27 @@ function v(e) {
 }
 
 function f() {
-  return (0, a.e7)([d.ZP], () => d.ZP.getChannels(u.I_8))[i.d.GUILD_CATEGORY].map(e => ({
+  return (0, Chunk442837.e7)([Chunk984933.ZP], () => Chunk984933.ZP.getChannels(Chunk981631.I_8))[Chunk106351.d.GUILD_CATEGORY].map(e => ({
     id: "null" === e.channel.id ? null : e.channel.id,
     name: e.channel.name
   }))
 }
 
 function m() {
-  return (0, a.e7)([o.Z], () => o.Z.getGuildId()) === u.I_8
+  return (0, Chunk442837.e7)([Chunk914010.Z], () => Chunk914010.Z.getGuildId()) === Chunk981631.I_8
 }
 
 function x() {
   let {
     isFavoritesPerk: e
-  } = (0, c.z)("useFavoriteAdded"), n = (0, s.r)(), l = t.useCallback(() => {
-    e && n.notifyFavoriteAdded()
-  }, [n, e]), i = t.useCallback(() => {
-    e && n.clearFavoriteAdded()
-  }, [n, e]);
+  } = (0, Chunk362658.z)("useFavoriteAdded"), n = (0, Chunk434065.r)(), l = Chunk73800.useCallback(() => {
+    module && exports.notifyFavoriteAdded()
+  }, [exports, module]), i = Chunk73800.useCallback(() => {
+    module && exports.clearFavoriteAdded()
+  }, [exports, module]);
   return {
-    favoriteAdded: n.favoriteAdded,
-    notifyFavoriteAdded: l,
-    clearFavoriteAdded: i
+    favoriteAdded: exports.favoriteAdded,
+    notifyFavoriteAdded: require,
+    clearFavoriteAdded: Chunk106351
   }
 }

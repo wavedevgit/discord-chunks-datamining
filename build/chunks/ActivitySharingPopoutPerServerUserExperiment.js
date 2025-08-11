@@ -1,0 +1,66 @@
+/** Chunk was on 75708 **/
+/** chunk id: 316496, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
+  D: () => r
+});
+let i = (0, require("./818083.js").B)({
+  kind: "user",
+  id: "2025-05_activity_sharing_popout_per_server",
+  label: "Activity Sharing Popout Per Server",
+  defaultConfig: {
+    isEnabled: false,
+    showActivitySharingIndicatorWhenSharing: false,
+    showUpdatedSettingsPage: false,
+    showLinkToSettings: false,
+    variantName: "control"
+  },
+  treatments: [{
+    id: 1,
+    label: "Popout not available when already sharing",
+    config: {
+      isEnabled: true,
+      showActivitySharingIndicatorWhenSharing: false,
+      showUpdatedSettingsPage: true,
+      showLinkToSettings: true,
+      variantName: "treatment_1"
+    }
+  }, {
+    id: 2,
+    label: "Popout always available",
+    config: {
+      isEnabled: true,
+      showActivitySharingIndicatorWhenSharing: true,
+      showUpdatedSettingsPage: true,
+      showLinkToSettings: true,
+      variantName: "treatment_2"
+    }
+  }, {
+    id: 3,
+    label: "Updated popout only",
+    config: {
+      isEnabled: true,
+      showActivitySharingIndicatorWhenSharing: false,
+      showUpdatedSettingsPage: false,
+      showLinkToSettings: false,
+      variantName: "treatment_3"
+    }
+  }, {
+    id: 4,
+    label: "[Holdout] Popout not available when already sharing",
+    config: {
+      isEnabled: true,
+      showActivitySharingIndicatorWhenSharing: false,
+      showUpdatedSettingsPage: true,
+      showLinkToSettings: true,
+      variantName: "treatment_4"
+    }
+  }]
+});
+
+function r(e) {
+  return i.useExperiment({
+    location: e
+  }, {
+    autoTrackExposure: true
+  })
+}

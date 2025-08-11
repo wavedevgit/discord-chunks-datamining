@@ -1,17 +1,18 @@
 /** Chunk was on web.js **/
+/** chunk id: 479446, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Ou: () => f,
   SR: () => u,
   YD: () => d
-}), n(415506);
-var r = n(512722),
-  i = n.n(r),
-  o = n(493683),
-  a = n(904245),
-  s = n(957730),
-  l = n(592125),
-  c = n(669079),
+}), require("./415506.js");
+var Chunk512722 = require("./512722.js"),
+  i = require.n(Chunk512722),
+  Chunk493683 = require("./493683.js"),
+  Chunk904245 = require("./904245.js"),
+  Chunk957730 = require("./957730.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk669079 = require("./669079.js"),
   u = function(e) {
     return e.ACTION = "action", e.LOOP = "loop", e.IDLE = "idle", e
   }({});
@@ -26,7 +27,7 @@ let d = async (e, t) => {
       return t
     }),
     r = (0, c.Nz)(t);
-  return a.Z.sendMessage(n.id, s.ZP.parse(n, r), void 0, {
-    isGiftLinkSentOnBehalfOfUser: !0
+  return a.Z.sendMessage(n.id, s.ZP.parse(n, r), true, {
+    isGiftLinkSentOnBehalfOfUser: true
   })
 }, f = e => {}

@@ -1,28 +1,29 @@
 /** Chunk was on web.js **/
+/** chunk id: 558985, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   $: () => d
-}), n(388685), n(415506);
-var r, i = n(73800),
-  o = n(772848),
-  a = n(324404);
+}), require("./388685.js"), require("./415506.js");
+var r, Chunk73800 = require("./73800.js"),
+  Chunk772848 = require("./772848.js"),
+  Chunk324404 = require("./324404.js");
 
 function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
-let l = (0, o.Z)(),
+let l = (0, Chunk772848.Z)(),
   c = new Map,
   u = new Map;
-class d extends(r = i.Component) {
+class d extends(r = Chunk73800.Component) {
   componentDidMount() {
     if (this.props.active) {
       let e = this.getVisibilityObserver();
-      e.observe(this, this.props.innerRef), this.isVisible = e.isVisible(this), this.props.onChange(this.isVisible)
+      module.observe(this, this.props.innerRef), this.isVisible = module.isVisible(this), this.props.onChange(this.isVisible)
     }
   }
   componentDidUpdate(e) {
@@ -38,19 +39,19 @@ class d extends(r = i.Component) {
       rootMargin: e,
       threshold: t
     } = this.props;
-    return "".concat(this.elementId, " ").concat(e, " ").concat(t)
+    return "".concat(this.elementId, " ").concat(module, " ").concat(exports)
   }
   getVisibilityObserver() {
     let e = this.getVisibilityObserverId(),
-      t = u.get(e);
-    if (!t) throw Error("Visibility sensor with id ".concat(e, " not found."));
-    return t
+      t = u.get(module);
+    if (!exports) throw Error("Visibility sensor with id ".concat(module, " not found."));
+    return exports
   }
   render() {
-    return i.Children.only(this.props.children)
+    return Chunk73800.Children.only(this.props.children)
   }
   constructor(e) {
-    super(e), s(this, "elementId", void 0), s(this, "isVisible", !1);
+    super(e), s(this, "elementId", true), s(this, "isVisible", false);
     let {
       root: t,
       rootMargin: n,
@@ -66,8 +67,8 @@ class d extends(r = i.Component) {
   }
 }
 s(d, "defaultProps", {
-  active: !0,
-  children: i.createElement("span"),
+  active: true,
+  children: Chunk73800.createElement("span"),
   root: null,
   rootMargin: "0px 0px 0px 0px",
   threshold: [0, Number.MIN_VALUE]

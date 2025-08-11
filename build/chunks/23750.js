@@ -1,27 +1,28 @@
 /** Chunk was on web.js **/
+/** chunk id: 23750, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Hx: () => g,
   ZP: () => y,
   hv: () => b,
   pi: () => m
-}), n(997841), n(539854);
-var r = n(373793),
-  i = n(81825),
-  o = n(712057),
-  a = n(978003),
-  s = n(566006),
-  l = n(995774),
-  c = n(630388),
-  u = n(358085),
-  d = n(981631);
+}), require("./997841.js"), require("./539854.js");
+var Chunk373793 = require("./373793.js"),
+  Chunk81825 = require("./81825.js"),
+  Chunk712057 = require("./712057.js"),
+  Chunk978003 = require("./978003.js"),
+  Chunk566006 = require("./566006.js"),
+  Chunk995774 = require("./995774.js"),
+  Chunk630388 = require("./630388.js"),
+  Chunk358085 = require("./358085.js"),
+  Chunk981631 = require("./981631.js");
 
 function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -54,19 +55,19 @@ function h(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-class m extends i.Z {
+class m extends Chunk81825.Z {
   hasFlag(e) {
     return (0, c.yE)(this.flags, e)
   }
   constructor(e) {
     var t, n, r, i, o, a, s, l, c, u, _, p, h;
-    super(), f(this, "type", void 0), f(this, "content", void 0), f(this, "attachments", void 0), f(this, "embeds", void 0), f(this, "timestamp", void 0), f(this, "editedTimestamp", void 0), f(this, "flags", void 0), f(this, "components", void 0), f(this, "codedLinks", void 0), f(this, "stickers", void 0), f(this, "stickerItems", void 0), f(this, "soundboardSounds", void 0), this.type = null != (t = e.type) ? t : d.uaV.DEFAULT, this.content = null != (n = e.content) ? n : "", this.attachments = null != (r = e.attachments) ? r : [], this.embeds = null != (i = e.embeds) ? i : [], this.timestamp = null != (o = e.timestamp) ? o : new Date, this.editedTimestamp = null != (a = e.editedTimestamp) ? a : null, this.flags = null != (s = e.flags) ? s : 0, this.components = null != (l = e.components) ? l : [], this.codedLinks = null != (c = e.codedLinks) ? c : [], this.stickers = null != (u = e.stickers) ? u : [], this.stickerItems = null != (p = null != (_ = e.sticker_items) ? _ : e.stickerItems) ? p : [], this.soundboardSounds = null != (h = e.soundboard_sounds) ? h : e.soundboardSounds
+    super(), f(this, "type", true), f(this, "content", true), f(this, "attachments", true), f(this, "embeds", true), f(this, "timestamp", true), f(this, "editedTimestamp", true), f(this, "flags", true), f(this, "components", true), f(this, "codedLinks", true), f(this, "stickers", true), f(this, "stickerItems", true), f(this, "soundboardSounds", true), this.type = null != (t = e.type) ? t : d.uaV.DEFAULT, this.content = null != (n = e.content) ? n : "", this.attachments = null != (r = e.attachments) ? r : [], this.embeds = null != (i = e.embeds) ? i : [], this.timestamp = null != (o = e.timestamp) ? o : new Date, this.editedTimestamp = null != (a = e.editedTimestamp) ? a : null, this.flags = null != (s = e.flags) ? s : 0, this.components = null != (l = e.components) ? l : [], this.codedLinks = null != (c = e.codedLinks) ? c : [], this.stickers = null != (u = e.stickers) ? u : [], this.stickerItems = null != (p = null != (_ = e.sticker_items) ? _ : e.stickerItems) ? p : [], this.soundboardSounds = null != (h = e.soundboard_sounds) ? h : e.soundboardSounds
   }
 }
-class g extends i.Z {
+class g extends Chunk81825.Z {
   constructor(e) {
     var t;
-    super(), f(this, "message", void 0), f(this, "moderatorReport", void 0), this.message = new m(e.message), this.moderatorReport = null != (t = e.moderator_report) ? t : null
+    super(), f(this, "message", true), f(this, "moderatorReport", true), this.message = new m(e.message), this.moderatorReport = null != (t = e.moderator_report) ? t : null
   }
 }
 class E extends m {
@@ -80,7 +81,7 @@ class E extends m {
     return this.reactions.find(t => (0, l.ir)(t.emoji, e))
   }
   getContentMessage() {
-    return (0, a.Z)(this) ? this.messageSnapshots[0].message : this
+    return (0, Chunk978003.Z)(this) ? this.messageSnapshots[0].message : this
   }
   userHasReactedWithEmoji(e, t) {
     return this.reactions.some(n => {
@@ -88,10 +89,10 @@ class E extends m {
     })
   }
   addReaction(e) {
-    let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
-      n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : [],
-      r = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : s.O.NORMAL,
-      i = -1,
+    let t = arguments.length > 1 && true !== arguments[1] && arguments[1],
+      n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : [],
+      r = arguments.length > 3 && true !== arguments[3] ? arguments[3] : s.O.NORMAL,
+      i = false,
       a = this.reactions.map((a, c) => {
         if ((0, l.ir)(a.emoji, e))
           if (i = c, r === s.O.BURST) {
@@ -112,7 +113,7 @@ class E extends m {
             })
           } else if (r === s.O.VOTE) {
           var d, f;
-          let e = null != (f = null == (d = a.count_details) ? void 0 : d.vote) ? f : 0,
+          let e = null != (f = null == (d = a.count_details) ? true : d.vote) ? f : 0,
             n = t && a.me_vote ? e : e + 1;
           a = h(_({}, a), {
             count_details: h(_({}, a.count_details), {
@@ -133,9 +134,9 @@ class E extends m {
         }
         return a
       });
-    return -1 === i && (r === s.O.BURST ? a.push({
+    return false === i && (r === s.O.BURST ? a.push({
       emoji: e,
-      me: !1,
+      me: false,
       me_burst: t,
       count: 0,
       count_details: {
@@ -150,8 +151,8 @@ class E extends m {
       })
     }) : r === s.O.VOTE ? a.push({
       emoji: e,
-      me: !1,
-      me_burst: !1,
+      me: false,
+      me_burst: false,
       me_vote: t,
       count: 0,
       count_details: {
@@ -164,7 +165,7 @@ class E extends m {
     }) : a.push({
       emoji: e,
       me: t,
-      me_burst: !1,
+      me_burst: false,
       count: 1,
       count_details: {
         burst: 0,
@@ -186,9 +187,9 @@ class E extends m {
   }
   removeReaction(e) {
     var t, n, r, i;
-    let o = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
-      a = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : s.O.NORMAL,
-      c = -1,
+    let o = arguments.length > 1 && true !== arguments[1] && arguments[1],
+      a = arguments.length > 2 && true !== arguments[2] ? arguments[2] : s.O.NORMAL,
+      c = false,
       u = this.reactions.map((t, n) => {
         if ((0, l.ir)(t.emoji, e)) {
           if (a === s.O.BURST) {
@@ -202,7 +203,7 @@ class E extends m {
             })
           } else if (a === s.O.VOTE) {
             var r, i;
-            let e = null != (i = null == (r = t.count_details) ? void 0 : r.vote) ? i : 0,
+            let e = null != (i = null == (r = t.count_details) ? true : r.vote) ? i : 0,
               n = o && !t.me_vote ? e : e - 1;
             t = h(_({}, t), {
               count_details: h(_({}, t.count_details), {
@@ -229,10 +230,10 @@ class E extends m {
         burst_count: f,
         count_details: p
       } = null != (t = u[c]) ? t : {},
-      m = null != (n = null == p ? void 0 : p.normal) ? n : 0,
-      g = null != (r = null == p ? void 0 : p.burst) ? r : 0,
-      E = null != (i = null == p ? void 0 : p.vote) ? i : 0;
-    return -1 !== c && d <= 0 && f <= 0 && m <= 0 && g <= 0 && E <= 0 && u.splice(c, 1), this.set("reactions", u)
+      m = null != (n = null == p ? true : p.normal) ? n : 0,
+      g = null != (r = null == p ? true : p.burst) ? r : 0,
+      E = null != (i = null == p ? true : p.vote) ? i : 0;
+    return false !== c && d <= 0 && f <= 0 && m <= 0 && g <= 0 && E <= 0 && u.splice(c, 1), this.set("reactions", u)
   }
   removeReactionsForEmoji(e) {
     return this.set("reactions", this.reactions.filter(t => !(0, l.ir)(t.emoji, e)))
@@ -241,23 +242,23 @@ class E extends m {
     return this.author.isSystemUser()
   }
   isCommandType() {
-    return this.type === d.uaV.CHAT_INPUT_COMMAND || this.type === d.uaV.CONTEXT_MENU_COMMAND
+    return this.type === Chunk981631.uaV.CHAT_INPUT_COMMAND || this.type === Chunk981631.uaV.CONTEXT_MENU_COMMAND
   }
   isPoll() {
     return null != this.poll
   }
   hasPotions() {
     var e, t;
-    return (null != (t = null == (e = this.potions) ? void 0 : e.length) ? t : 0) > 0
+    return (null != (t = null == (e = this.potions) ? true : module.length) ? exports : 0) > 0
   }
   isInteractionPlaceholder() {
     return null != this.interaction && this.author.isNonUserBot()
   }
   canDeleteOwnMessage(e) {
     var t, n, i;
-    if (this.author.id === e) return !0;
-    let o = null != (i = null == (t = this.interactionMetadata) ? void 0 : t.authorizing_integration_owners) ? i : {};
-    return (null == (n = this.interactionMetadata) ? void 0 : n.user.id) === e && 1 === Object.keys(o).length && r.Y.USER_INSTALL in o
+    if (this.author.id === e) returntrue;
+    let o = null != (i = null == (t = this.interactionMetadata) ? true : t.authorizing_integration_owners) ? i : {};
+    return (null == (n = this.interactionMetadata) ? true : n.user.id) === e && 1 === Object.keys(o).length && r.Y.USER_INSTALL in o
   }
   toJS() {
     return h(_({}, this), {
@@ -271,7 +272,7 @@ class E extends m {
   }
   constructor(e) {
     var t, n, r;
-    super(e), f(this, "id", void 0), f(this, "channel_id", void 0), f(this, "author", void 0), f(this, "bot", void 0), f(this, "customRenderedContent", void 0), f(this, "pinned", void 0), f(this, "mentions", void 0), f(this, "mentionRoles", void 0), f(this, "mentionChannels", void 0), f(this, "mentionGames", void 0), f(this, "mentionEveryone", void 0), f(this, "mentioned", void 0), f(this, "tts", void 0), f(this, "giftCodes", void 0), f(this, "state", void 0), f(this, "nonce", void 0), f(this, "blocked", void 0), f(this, "ignored", void 0), f(this, "call", void 0), f(this, "webhookId", void 0), f(this, "reactions", void 0), f(this, "applicationId", void 0), f(this, "application", void 0), f(this, "activity", void 0), f(this, "activityInstance", void 0), f(this, "interaction", void 0), f(this, "interactionData", void 0), f(this, "interactionMetadata", void 0), f(this, "interactionError", void 0), f(this, "messageReference", void 0), f(this, "isSearchHit", void 0), f(this, "roleSubscriptionData", void 0), f(this, "purchaseNotification", void 0), f(this, "poll", void 0), f(this, "potions", void 0), f(this, "loggingName", void 0), f(this, "referralTrialOfferId", void 0), f(this, "giftInfo", void 0), f(this, "giftingPrompt", void 0), f(this, "messageSnapshots", void 0), f(this, "isUnsupported", void 0), f(this, "changelogId", void 0), f(this, "chatWallpaperInfo", void 0), f(this, "colorString", void 0), f(this, "nick", void 0), this.id = e.id, this.channel_id = e.channel_id, this.author = e.author, this.customRenderedContent = e.customRenderedContent, this.mentions = e.mentions || [], this.mentionRoles = e.mentionRoles || [], this.mentionChannels = e.mentionChannels || [], this.mentionGames = e.mentionGames || [], this.mentioned = e.mentioned || !1, this.pinned = e.pinned || !1, this.mentionEveryone = e.mentionEveryone || !1, this.tts = e.tts || !1, this.giftCodes = e.giftCodes || [], this.state = e.state || d.yb.SENT, this.nonce = null != (t = e.nonce) ? t : void 0, this.blocked = e.blocked || !1, this.ignored = e.ignored || !1, this.call = e.call || null, this.bot = e.bot || !1, this.webhookId = e.webhookId || null, this.reactions = e.reactions || [], this.applicationId = e.application_id || e.applicationId || null, this.application = e.application || null, this.activity = e.activity || null, this.activityInstance = e.activity_instance || e.activityInstance || null, this.messageReference = e.messageReference || null, this.isSearchHit = e.hit || e.isSearchHit || !1, this.loggingName = e.loggingName || null, this.colorString = e.colorString, this.nick = e.nick, this.interaction = e.interaction || null, this.interactionData = e.interactionData || null, this.interactionMetadata = e.interactionMetadata || null, this.interactionError = e.interactionError || null, this.roleSubscriptionData = e.roleSubscriptionData, this.purchaseNotification = e.purchaseNotification, this.poll = e.poll, this.potions = e.potions, this.referralTrialOfferId = e.referralTrialOfferId || null, this.giftInfo = null != (n = e.gift_info) ? n : e.giftInfo, this.giftingPrompt = e.giftingPrompt || null, this.messageSnapshots = e.messageSnapshots || [], this.isUnsupported = e.isUnsupported || !1, this.changelogId = null != (r = e.changelog_id) ? r : e.changelogId || null, this.chatWallpaperInfo = e.chatWallpaperInfo || null
+    super(e), f(this, "id", true), f(this, "channel_id", true), f(this, "author", true), f(this, "bot", true), f(this, "customRenderedContent", true), f(this, "pinned", true), f(this, "mentions", true), f(this, "mentionRoles", true), f(this, "mentionChannels", true), f(this, "mentionGames", true), f(this, "mentionEveryone", true), f(this, "mentioned", true), f(this, "tts", true), f(this, "giftCodes", true), f(this, "state", true), f(this, "nonce", true), f(this, "blocked", true), f(this, "ignored", true), f(this, "call", true), f(this, "webhookId", true), f(this, "reactions", true), f(this, "applicationId", true), f(this, "application", true), f(this, "activity", true), f(this, "activityInstance", true), f(this, "interaction", true), f(this, "interactionData", true), f(this, "interactionMetadata", true), f(this, "interactionError", true), f(this, "messageReference", true), f(this, "isSearchHit", true), f(this, "roleSubscriptionData", true), f(this, "purchaseNotification", true), f(this, "poll", true), f(this, "potions", true), f(this, "loggingName", true), f(this, "referralTrialOfferId", true), f(this, "giftInfo", true), f(this, "giftingPrompt", true), f(this, "messageSnapshots", true), f(this, "isUnsupported", true), f(this, "changelogId", true), f(this, "chatWallpaperInfo", true), f(this, "colorString", true), f(this, "nick", true), this.id = e.id, this.channel_id = e.channel_id, this.author = e.author, this.customRenderedContent = e.customRenderedContent, this.mentions = e.mentions || [], this.mentionRoles = e.mentionRoles || [], this.mentionChannels = e.mentionChannels || [], this.mentionGames = e.mentionGames || [], this.mentioned = e.mentioned || false, this.pinned = e.pinned || false, this.mentionEveryone = e.mentionEveryone || false, this.tts = e.tts || false, this.giftCodes = e.giftCodes || [], this.state = e.state || d.yb.SENT, this.nonce = null != (t = e.nonce) ? t : true, this.blocked = e.blocked || false, this.ignored = e.ignored || false, this.call = e.call || null, this.bot = e.bot || false, this.webhookId = e.webhookId || null, this.reactions = e.reactions || [], this.applicationId = e.application_id || e.applicationId || null, this.application = e.application || null, this.activity = e.activity || null, this.activityInstance = e.activity_instance || e.activityInstance || null, this.messageReference = e.messageReference || null, this.isSearchHit = e.hit || e.isSearchHit || false, this.loggingName = e.loggingName || null, this.colorString = e.colorString, this.nick = e.nick, this.interaction = e.interaction || null, this.interactionData = e.interactionData || null, this.interactionMetadata = e.interactionMetadata || null, this.interactionError = e.interactionError || null, this.roleSubscriptionData = e.roleSubscriptionData, this.purchaseNotification = e.purchaseNotification, this.poll = e.poll, this.potions = e.potions, this.referralTrialOfferId = e.referralTrialOfferId || null, this.giftInfo = null != (n = e.gift_info) ? n : e.giftInfo, this.giftingPrompt = e.giftingPrompt || null, this.messageSnapshots = e.messageSnapshots || [], this.isUnsupported = e.isUnsupported || false, this.changelogId = null != (r = e.changelog_id) ? r : e.changelogId || null, this.chatWallpaperInfo = e.chatWallpaperInfo || null
   }
 }
 

@@ -1,31 +1,32 @@
 /** Chunk was on web.js **/
+/** chunk id: 63063, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => _,
   w: () => s
 });
-var r = n(299379),
-  i = n(706454),
-  o = n(358085),
-  a = n(981631);
-let s = "https://".concat(a.xr4),
-  l = "https://".concat(a.rxP),
+var Chunk299379 = require("./299379.js"),
+  Chunk706454 = require("./706454.js"),
+  Chunk358085 = require("./358085.js"),
+  Chunk981631 = require("./981631.js");
+let s = "https://".concat(Chunk981631.xr4),
+  l = "https://".concat(Chunk981631.rxP),
   c = "https://creator-support.discord.com",
   u = "https://support-apps.discord.com";
 
 function d(e) {
-  let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : s;
+  let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : s;
   return t + e
 }
 
 function f() {
-  return i.default.locale.toLowerCase()
+  return Chunk706454.default.locale.toLowerCase()
 }
 let _ = {
   getArticleURL: e => d("/hc/".concat(f(), "/articles/").concat(e)),
   getDevArticleURL: e => d("/hc/".concat(f(), "/articles/").concat(e), l),
   getCreatorSupportArticleURL: e => d("/hc/".concat(f(), "/articles/").concat(e), c),
-  getTwitterURL: () => (0, r.Z)(a.RK.TWITTER),
+  getTwitterURL: () => (0, Chunk299379.Z)(Chunk981631.RK.TWITTER),
   getCommunityURL: () => d("/hc/".concat(f())),
   getSubmitRequestURL(e) {
     let t = d("/hc/".concat(f(), "/requests/new?platform=").concat(encodeURIComponent((0, o.getPlatformName)())));

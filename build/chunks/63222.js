@@ -1,11 +1,12 @@
 /** Chunk was on web.js **/
+/** chunk id: 63222, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   x: () => u
 });
-var r = n(793981),
-  i = n(413815),
-  o = n(521548);
+var Chunk793981 = require("./793981.js"),
+  Chunk413815 = require("./413815.js"),
+  Chunk521548 = require("./521548.js");
 
 function a(e, t) {
   if (!(e instanceof t)) throw TypeError("Cannot call a class as a function")
@@ -14,7 +15,7 @@ function a(e, t) {
 function s(e, t) {
   for (var n = 0; n < t.length; n++) {
     var r = t[n];
-    r.enumerable = r.enumerable || !1, r.configurable = !0, "value" in r && (r.writable = !0), Object.defineProperty(e, r.key, r)
+    r.enumerable = r.enumerable || false, r.configurable = true, "value" in r && (r.writable = true), Object.defineProperty(e, r.key, r)
   }
 }
 
@@ -25,9 +26,9 @@ function l(e, t, n) {
 function c(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 var u = function() {
@@ -40,9 +41,9 @@ var u = function() {
       dragPreview: function(e, t) {
         n.clearDragPreview(), n.dragPreviewOptions = t || null, (0, i.d)(e) ? n.dragPreviewRef = e : n.dragPreviewNode = e, n.reconnectDragPreview()
       }
-    })), c(this, "handlerId", null), c(this, "dragSourceRef", null), c(this, "dragSourceNode", void 0), c(this, "dragSourceOptionsInternal", null), c(this, "dragSourceUnsubscribe", void 0), c(this, "dragPreviewRef", null), c(this, "dragPreviewNode", void 0), c(this, "dragPreviewOptionsInternal", null), c(this, "dragPreviewUnsubscribe", void 0), c(this, "lastConnectedHandlerId", null), c(this, "lastConnectedDragSource", null), c(this, "lastConnectedDragSourceOptions", null), c(this, "lastConnectedDragPreview", null), c(this, "lastConnectedDragPreviewOptions", null), c(this, "backend", void 0), this.backend = t
+    })), c(this, "handlerId", null), c(this, "dragSourceRef", null), c(this, "dragSourceNode", true), c(this, "dragSourceOptionsInternal", null), c(this, "dragSourceUnsubscribe", true), c(this, "dragPreviewRef", null), c(this, "dragPreviewNode", true), c(this, "dragPreviewOptionsInternal", null), c(this, "dragPreviewUnsubscribe", true), c(this, "lastConnectedHandlerId", null), c(this, "lastConnectedDragSource", null), c(this, "lastConnectedDragSourceOptions", null), c(this, "lastConnectedDragPreview", null), c(this, "lastConnectedDragPreviewOptions", null), c(this, "backend", true), this.backend = t
   }
-  return l(e, [{
+  return l(module, [{
     key: "receiveHandlerId",
     value: function(e) {
       this.handlerId !== e && (this.handlerId = e, this.reconnect())
@@ -78,12 +79,12 @@ var u = function() {
     value: function() {
       var e = this.dragSource,
         t = this.didHandlerIdChange() || this.didConnectedDragSourceChange() || this.didDragSourceOptionsChange();
-      if (t && this.disconnectDragSource(), this.handlerId) {
-        if (!e) {
-          this.lastConnectedDragSource = e;
+      if (exports && this.disconnectDragSource(), this.handlerId) {
+        if (!module) {
+          this.lastConnectedDragSource = module;
           return
         }
-        t && (this.lastConnectedHandlerId = this.handlerId, this.lastConnectedDragSource = e, this.lastConnectedDragSourceOptions = this.dragSourceOptions, this.dragSourceUnsubscribe = this.backend.connectDragSource(this.handlerId, e, this.dragSourceOptions))
+        exports && (this.lastConnectedHandlerId = this.handlerId, this.lastConnectedDragSource = module, this.lastConnectedDragSourceOptions = this.dragSourceOptions, this.dragSourceUnsubscribe = this.backend.connectDragSource(this.handlerId, module, this.dragSourceOptions))
       }
     }
   }, {
@@ -91,12 +92,12 @@ var u = function() {
     value: function() {
       var e = this.dragPreview,
         t = this.didHandlerIdChange() || this.didConnectedDragPreviewChange() || this.didDragPreviewOptionsChange();
-      if (t && this.disconnectDragPreview(), this.handlerId) {
-        if (!e) {
-          this.lastConnectedDragPreview = e;
+      if (exports && this.disconnectDragPreview(), this.handlerId) {
+        if (!module) {
+          this.lastConnectedDragPreview = module;
           return
         }
-        t && (this.lastConnectedHandlerId = this.handlerId, this.lastConnectedDragPreview = e, this.lastConnectedDragPreviewOptions = this.dragPreviewOptions, this.dragPreviewUnsubscribe = this.backend.connectDragPreview(this.handlerId, e, this.dragPreviewOptions))
+        exports && (this.lastConnectedHandlerId = this.handlerId, this.lastConnectedDragPreview = module, this.lastConnectedDragPreviewOptions = this.dragPreviewOptions, this.dragPreviewUnsubscribe = this.backend.connectDragPreview(this.handlerId, module, this.dragPreviewOptions))
       }
     }
   }, {
@@ -117,22 +118,22 @@ var u = function() {
   }, {
     key: "didDragSourceOptionsChange",
     value: function() {
-      return !(0, o.w)(this.lastConnectedDragSourceOptions, this.dragSourceOptions)
+      return !(0, Chunk521548.w)(this.lastConnectedDragSourceOptions, this.dragSourceOptions)
     }
   }, {
     key: "didDragPreviewOptionsChange",
     value: function() {
-      return !(0, o.w)(this.lastConnectedDragPreviewOptions, this.dragPreviewOptions)
+      return !(0, Chunk521548.w)(this.lastConnectedDragPreviewOptions, this.dragPreviewOptions)
     }
   }, {
     key: "disconnectDragSource",
     value: function() {
-      this.dragSourceUnsubscribe && (this.dragSourceUnsubscribe(), this.dragSourceUnsubscribe = void 0)
+      this.dragSourceUnsubscribe && (this.dragSourceUnsubscribe(), this.dragSourceUnsubscribe = true)
     }
   }, {
     key: "disconnectDragPreview",
     value: function() {
-      this.dragPreviewUnsubscribe && (this.dragPreviewUnsubscribe(), this.dragPreviewUnsubscribe = void 0, this.dragPreviewNode = null, this.dragPreviewRef = null)
+      this.dragPreviewUnsubscribe && (this.dragPreviewUnsubscribe(), this.dragPreviewUnsubscribe = true, this.dragPreviewNode = null, this.dragPreviewRef = null)
     }
   }, {
     key: "dragSource",
@@ -154,5 +155,5 @@ var u = function() {
     value: function() {
       this.dragPreviewNode = null, this.dragPreviewRef = null
     }
-  }]), e
+  }]), module
 }()

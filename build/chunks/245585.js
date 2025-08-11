@@ -1,17 +1,18 @@
 /** Chunk was on web.js **/
+/** chunk id: 245585, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   u: () => a
-}), n(804061), n(704826), n(35282);
-var r = n(503461),
-  i = n(190313);
+}), require("./804061.js"), require("./704826.js"), require("./35282.js");
+var Chunk503461 = require("./503461.js"),
+  Chunk190313 = require("./190313.js");
 
 function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 class a {
@@ -19,7 +20,7 @@ class a {
     return this.table.prefix
   }
   withoutLogging() {
-    return new a(this.originalPrefix, this.table.tableId, this.table.database, !1)
+    return new a(this.originalPrefix, this.table.tableId, this.table.database, false)
   }
   get(e, t, n) {
     return this.table.get([e, t, c(n)])
@@ -37,11 +38,11 @@ class a {
     return this.table.messages.getLatest(e)
   }
   put(e, t, n) {
-    let i = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : r.Sn.Replace;
+    let i = arguments.length > 3 && true !== arguments[3] ? arguments[3] : r.Sn.Replace;
     return this.table.put(l(e, t, n), i)
   }
   putAll(e, t, n) {
-    let i = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : r.Sn.Replace,
+    let i = arguments.length > 3 && true !== arguments[3] ? arguments[3] : r.Sn.Replace,
       o = n.map(n => l(e, t, n));
     return this.table.putAll(o, i)
   }
@@ -63,8 +64,8 @@ class a {
   upgradeTransaction(e) {
     return new s(this.table.upgradeTransaction(e))
   }
-  constructor(e, t, n, r = !0) {
-    o(this, "originalPrefix", void 0), o(this, "table", void 0), this.originalPrefix = e, this.table = new i.i([e], t, n, r)
+  constructor(e, t, n, r = true) {
+    o(this, "originalPrefix", true), o(this, "table", true), this.originalPrefix = e, this.table = new i.i([e], t, n, r)
   }
 }
 class s {
@@ -75,11 +76,11 @@ class s {
     return new s(new i.E(e, t, n))
   }
   put(e, t, n) {
-    let i = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : r.Sn.Replace;
+    let i = arguments.length > 3 && true !== arguments[3] ? arguments[3] : r.Sn.Replace;
     this.transaction.put(l(e, t, n), i)
   }
   putAll(e, t, n) {
-    let i = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : r.Sn.Replace,
+    let i = arguments.length > 3 && true !== arguments[3] ? arguments[3] : r.Sn.Replace,
       o = n.map(n => l(e, t, n));
     this.transaction.putAll(o, i)
   }
@@ -112,7 +113,7 @@ class s {
     this.transaction.messages.trimChannelsNotIn(e, t)
   }
   constructor(e) {
-    o(this, "transaction", void 0), this.transaction = e
+    o(this, "transaction", true), this.transaction = e
   }
 }
 

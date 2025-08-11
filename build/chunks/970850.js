@@ -1,12 +1,13 @@
 /** Chunk was on 49152 **/
-n.d(t, {
+/** chunk id: 970850, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => o
-}), n(388685), n(49124);
-var r = n(73800),
-  i = n(442837),
-  l = n(518944),
-  a = n(607802),
-  s = n(981631);
+}), require("./388685.js"), require("./49124.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk442837 = require("./442837.js"),
+  Chunk518944 = require("./518944.js"),
+  Chunk607802 = require("./607802.js"),
+  Chunk981631 = require("./981631.js");
 
 function o(e) {
   let {
@@ -17,8 +18,8 @@ function o(e) {
   }), u = r.useRef(null);
   return r.useEffect(() => {
     JSON.stringify(u.current) !== JSON.stringify(c) && (o((0, a.Vj)({
-      sort_by: null == c ? void 0 : c.sort_by,
-      sort_order: null == c ? void 0 : c.sort_order
+      sort_by: null == c ? true : c.sort_by,
+      sort_order: null == c ? true : c.sort_order
     })), u.current = c)
   }, [c]), {
     searchMode: n,

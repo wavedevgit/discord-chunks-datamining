@@ -1,5 +1,6 @@
 /** Chunk was on 47495 **/
-e.exports = {
+/** chunk id: 454507, original params: e,t,n (module,exports,require) **/
+module.exports = {
   previewSection: "previewSection__4671c",
   sectionHeader: "sectionHeader__4671c",
   previewCards: "previewCards__4671c",

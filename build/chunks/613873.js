@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 613873, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   summaryDivider: "summaryDivider__3aab5",
   summaryDividerStart: "summaryDividerStart__3aab5",
   summaryDividerEnd: "summaryDividerEnd__3aab5",

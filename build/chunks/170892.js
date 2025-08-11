@@ -1,2 +1,3 @@
 /** Chunk was on 62718 **/
-s.exports = JSON.parse('{"yfwZu7":"내 배지 보기","UnPGio":"배지가 프로필에 추가되었어요.","nvaTQk":"Orbs 프로필 배지를 수집했어요!"}')
+/** chunk id: 170892, original params: s (module,exports,require) **/
+module.exports = JSON.parse('{"yfwZu7":"내 배지 보기","UnPGio":"배지가 프로필에 추가되었어요.","nvaTQk":"Orbs 프로필 배지를 수집했어요!"}')

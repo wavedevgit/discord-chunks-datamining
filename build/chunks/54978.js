@@ -1,18 +1,19 @@
 /** Chunk was on 50448 **/
+/** chunk id: 54978, original params: t,r,n (module,exports,require) **/
 "use strict";
-var e = n(220159),
-  o = n(764908),
-  i = n(270498),
-  u = n(829575),
-  s = n(185698),
-  c = n(85328).f,
-  f = n(777985),
-  a = n(206804),
-  p = n(788811),
-  l = n(290619),
-  v = n(642280),
-  y = !1,
-  h = l("meta"),
+var Chunk220159 = require("./220159.js"),
+  Chunk764908 = require("./764908.js"),
+  Chunk270498 = require("./270498.js"),
+  Chunk829575 = require("./829575.js"),
+  Chunk185698 = require("./185698.js"),
+  c = require("./85328.js").f,
+  Chunk777985 = require("./777985.js"),
+  Chunk206804 = require("./206804.js"),
+  Chunk788811 = require("./788811.js"),
+  Chunk290619 = require("./290619.js"),
+  Chunk642280 = require("./642280.js"),
+  y = false,
+  h = Chunk290619("meta"),
   x = 0,
   d = function(t) {
     c(t, h, {
@@ -22,24 +23,24 @@ var e = n(220159),
       }
     })
   },
-  g = t.exports = {
+  g = module.exports = {
     enable: function() {
-      g.enable = function() {}, y = !0;
-      var t = f.f,
-        r = o([].splice),
+      g.enable = function() {}, y = true;
+      var t = Chunk777985.f,
+        r = Chunk764908([].splice),
         n = {};
-      n[h] = 1, t(n).length && (f.f = function(n) {
+      require[h] = 1, module(require).length && (Chunk777985.f = function(n) {
         for (var e = t(n), o = 0, i = e.length; o < i; o++)
           if (e[o] === h) {
             r(e, o, 1);
             break
           } return e
-      }, e({
+      }, Chunk220159({
         target: "Object",
-        stat: !0,
-        forced: !0
+        stat: true,
+        forced: true
       }, {
-        getOwnPropertyNames: a.f
+        getOwnPropertyNames: Chunk206804.f
       }))
     },
     fastKey: function(t, r) {
@@ -53,8 +54,8 @@ var e = n(220159),
     },
     getWeakData: function(t, r) {
       if (!s(t, h)) {
-        if (!p(t)) return !0;
-        if (!r) return !1;
+        if (!p(t)) returntrue;
+        if (!r) returnfalse;
         d(t)
       }
       return t[h].weakData
@@ -63,4 +64,4 @@ var e = n(220159),
       return v && y && p(t) && !s(t, h) && d(t), t
     }
   };
-i[h] = !0
+Chunk270498[h] = true

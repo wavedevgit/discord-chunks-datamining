@@ -1,30 +1,31 @@
 /** Chunk was on web.js **/
+/** chunk id: 745752, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   I1: () => v,
   eM: () => y,
   rK: () => O,
   rj: () => b
-}), n(997841);
-var r = n(544891),
-  i = n(570140),
-  o = n(367907),
-  a = n(314897),
-  s = n(271383),
-  l = n(430824),
-  c = n(626135),
-  u = n(630388),
-  d = n(45966),
-  f = n(290511),
-  _ = n(981631),
-  p = n(372897);
+}), require("./997841.js");
+var Chunk544891 = require("./544891.js"),
+  Chunk570140 = require("./570140.js"),
+  Chunk367907 = require("./367907.js"),
+  Chunk314897 = require("./314897.js"),
+  Chunk271383 = require("./271383.js"),
+  Chunk430824 = require("./430824.js"),
+  Chunk626135 = require("./626135.js"),
+  Chunk630388 = require("./630388.js"),
+  Chunk45966 = require("./45966.js"),
+  Chunk290511 = require("./290511.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk372897 = require("./372897.js");
 
 function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -60,7 +61,7 @@ function E(e, t) {
 
 function b(e) {
   c.default.track(_.rMx.GUILD_ONBOARDING_LOADED, E(m({}, (0, o.hH)(e)), {
-    has_new_prompts: !1,
+    has_new_prompts: false,
     number_of_prompts: 0
   }))
 }
@@ -71,7 +72,7 @@ function y(e) {
     guildId: e
   }), r.tn.get({
     url: _.ANM.GUILD_ONBOARDING(e),
-    rejectWithError: !1
+    rejectWithError: false
   }).then(t => {
     let {
       body: n
@@ -88,7 +89,7 @@ function y(e) {
 async function O(e) {
   var t, n;
   let r = a.default.getId(),
-    i = (0, u.yE)(null != (n = null == (t = s.ZP.getMember(e, r)) ? void 0 : t.flags) ? n : 0, p.q.COMPLETED_ONBOARDING),
+    i = (0, u.yE)(null != (n = null == (t = s.ZP.getMember(e, r)) ? true : t.flags) ? n : 0, p.q.COMPLETED_ONBOARDING),
     o = l.Z.getGuild(e);
   if (null == o || !o.features.has(_.oNc.GUILD_ONBOARDING)) return Promise.resolve();
   let c = d.Z.shouldFetchPrompts(e),
@@ -104,16 +105,16 @@ function v(e) {
     guildId: e
   })
 }
-let I = -2;
+let I = false;
 
 function T(e) {
   c.default.track(_.rMx.GUILD_ONBOARDING_STEP_VIEWED, E(m({}, (0, o.hH)(e)), {
     step: I,
-    required: !0
+    required: true
   })), c.default.track(_.rMx.GUILD_ONBOARDING_STEP_COMPLETED, E(m({}, (0, o.hH)(e)), {
     step: I,
-    skipped: !1,
-    is_final_step: !0,
-    in_onboarding: !0
+    skipped: false,
+    is_final_step: true,
+    in_onboarding: true
   }))
 }

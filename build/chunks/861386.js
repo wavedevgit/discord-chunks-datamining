@@ -1,5 +1,6 @@
 /** Chunk was on web.js **/
-e.exports = function(e) {
+/** chunk id: 861386, original params: e (module,exports,re quire) **/
+module.exports = function(e) {
   let t = "foreach do while for if from to step else on-error and or not in",
     n = "global local beep delay put len typeof pick log time set find environment terminal error execute parse resolve toarray tobool toid toip toip6 tonum tostr totime",
     r = "add remove enable disable set get print export edit find run debug error info warning",
@@ -32,7 +33,7 @@ e.exports = function(e) {
   return {
     name: "MikroTik RouterOS script",
     aliases: ["mikrotik"],
-    case_insensitive: !0,
+    case_insensitive: true,
     keywords: {
       $pattern: /:?[\w-]+/,
       literal: i,
@@ -53,13 +54,13 @@ e.exports = function(e) {
     }, e.COMMENT("^#", "$"), s, l, a, {
       begin: /[\w-]+=([^\s{}[\]()>]+)/,
       relevance: 0,
-      returnBegin: !0,
+      returnBegin: true,
       contains: [{
         className: "attribute",
         begin: /[^=]+/
       }, {
         begin: /=/,
-        endsWithParent: !0,
+        endsWithParent: true,
         relevance: 0,
         contains: [s, l, a, {
           className: "literal",
@@ -73,7 +74,7 @@ e.exports = function(e) {
       begin: /\*[0-9a-fA-F]+/
     }, {
       begin: "\\b(" + r.split(" ").join("|") + ")([\\s[(\\]|])",
-      returnBegin: !0,
+      returnBegin: true,
       contains: [{
         className: "built_in",
         begin: /\w+/

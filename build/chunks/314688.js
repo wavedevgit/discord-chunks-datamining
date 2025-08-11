@@ -1,5 +1,6 @@
 /** Chunk was on web.js **/
-e.exports = function(e) {
+/** chunk id: 314688, original params: e (module,exports,re quire) **/
+module.exports = function(e) {
   let t = "[a-z][a-zA-Z0-9_]*",
     n = {
       className: "string",
@@ -22,7 +23,7 @@ e.exports = function(e) {
       relevance: 0
     }, e.C_NUMBER_MODE, r, n, {
       begin: "\\|[ ]*" + t + "([ ]+" + t + ")*[ ]*\\|",
-      returnBegin: !0,
+      returnBegin: true,
       end: /\|/,
       illegal: /\S/,
       contains: [{

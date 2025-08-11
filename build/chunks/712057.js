@@ -1,12 +1,13 @@
 /** Chunk was on web.js **/
+/** chunk id: 712057, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => u,
   u: () => c
 });
-var r = n(564334),
-  i = n(302221),
-  o = n(563114);
+var Chunk564334 = require("./564334.js"),
+  Chunk302221 = require("./302221.js"),
+  Chunk563114 = require("./563114.js");
 let a = "#ffffff",
   s = "#36393e",
   l = e => {
@@ -25,12 +26,12 @@ let a = "#ffffff",
     if (null == f) return null;
     let _ = (0, i.AZ)(f.red, f.blue, f.green),
       p = null != (t = (0, i.k8)({
-        colors: [(0, i.j)(f, .6, !0), u],
+        colors: [(0, i.j)(f, .6, true), u],
         ratio: 3,
         saturationFactor: l
       })) ? t : f,
       h = null != (n = (0, i.k8)({
-        colors: [(0, i.j)(f, .6, !1), d],
+        colors: [(0, i.j)(f, .6, false), d],
         ratio: 5,
         saturationFactor: l
       })) ? n : f,
@@ -46,22 +47,22 @@ let a = "#ffffff",
       });
     return {
       LIGHT: {
-        accentColor: null == m ? void 0 : m.toHexString(),
+        accentColor: null == m ? true : m.toHexString(),
         backgroundColor: (0, i.xj)({
           colorRGB: p,
           saturationFactor: l
         }),
-        highlightColor: null == f ? void 0 : f.toHexString(),
-        opacity: (null == _ ? void 0 : _.saturation) < .1 ? .35 : .1
+        highlightColor: null == f ? true : f.toHexString(),
+        opacity: (null == _ ? true : _.saturation) < .1 ? .35 : .1
       },
       DARK: {
-        accentColor: null == g ? void 0 : g.toHexString(),
+        accentColor: null == g ? true : g.toHexString(),
         backgroundColor: (0, i.xj)({
           colorRGB: h,
           saturationFactor: l
         }),
-        highlightColor: null == f ? void 0 : f.toHexString(),
-        opacity: (null == _ ? void 0 : _.saturation) < .1 ? .5 : .2
+        highlightColor: null == f ? true : f.toHexString(),
+        opacity: (null == _ ? true : _.saturation) < .1 ? .5 : .2
       }
     }
   },
@@ -69,7 +70,7 @@ let a = "#ffffff",
     let {
       colors: t,
       saturationFactor: n = 1,
-      shouldProcessMobileColors: r = !1
+      shouldProcessMobileColors: r = false
     } = e, i = l({
       colors: t,
       saturationFactor: n
@@ -86,11 +87,11 @@ let a = "#ffffff",
         colors: e,
         saturationFactor: t
       }),
-      o = n ? null == i ? void 0 : i.DARK : null == i ? void 0 : i.LIGHT;
+      o = n ? null == i ? true : i.DARK : null == i ? true : i.LIGHT;
     return {
-      backgroundColor: null == o ? void 0 : o.backgroundColor,
-      accentColor: null == o ? void 0 : o.accentColor,
-      highlightColor: null == o ? void 0 : o.highlightColor,
-      opacity: null != (r = null == o ? void 0 : o.opacity) ? r : .15
+      backgroundColor: null == o ? true : o.backgroundColor,
+      accentColor: null == o ? true : o.accentColor,
+      highlightColor: null == o ? true : o.highlightColor,
+      opacity: null != (r = null == o ? true : o.opacity) ? r : .15
     }
   }

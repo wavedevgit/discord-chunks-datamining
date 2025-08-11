@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 876557, original params: e (module,exports,re quire) **/
 var t = Object.prototype;
-e.exports = function(e) {
+module.exports = function(e) {
   var n = e && e.constructor;
   return e === ("function" == typeof n && n.prototype || t)
 }

@@ -1,33 +1,34 @@
 /** Chunk was on web.js **/
+/** chunk id: 368478, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   J: () => E,
   Z: () => g
-}), n(388685), n(997841);
-var r = n(73800),
-  i = n(442837),
-  o = n(317381),
-  a = n(122613),
-  s = n(16609),
-  l = n(574952),
-  c = n(100527),
-  u = n(906732),
-  d = n(783097),
-  f = n(895924),
-  _ = n(812236),
-  p = n(630388),
-  h = n(981631),
-  m = n(388032);
+}), require("./388685.js"), require("./997841.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk442837 = require("./442837.js"),
+  Chunk317381 = require("./317381.js"),
+  Chunk122613 = require("./122613.js"),
+  Chunk16609 = require("./16609.js"),
+  Chunk574952 = require("./574952.js"),
+  Chunk100527 = require("./100527.js"),
+  Chunk906732 = require("./906732.js"),
+  Chunk783097 = require("./783097.js"),
+  Chunk895924 = require("./895924.js"),
+  Chunk812236 = require("./812236.js"),
+  Chunk630388 = require("./630388.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk388032 = require("./388032.js");
 
 function g(e) {
   let {
     context: t,
     primaryEntryPointCommand: n,
     application: a,
-    showAppLauncherPopup: l = !1
-  } = e, [f, g] = r.useState(!1), E = (0, i.e7)([o.ZP], () => o.ZP.getCurrentEmbeddedActivity()), b = l ? m.t.cpT0Cg : m.t["0hKkS0"], y = r.useMemo(() => null != n ? (0, d.XZ)(n.displayName) : m.intl.string(m.t["3xjX0d"]), [n]), O = void 0 !== a.flags && (0, p.yE)(a.flags, h.udG.EMBEDDED), v = null != E && E.applicationId === a.id && (0, s.p)(E.location) === t.channel.id, {
+    showAppLauncherPopup: l = false
+  } = e, [f, g] = r.useState(false), E = (0, i.e7)([o.ZP], () => o.ZP.getCurrentEmbeddedActivity()), b = l ? m.t.cpT0Cg : m.t["0hKkS0"], y = r.useMemo(() => null != n ? (0, d.XZ)(n.displayName) : m.intl.string(m.t["3xjX0d"]), [n]), O = true !== a.flags && (0, p.yE)(a.flags, h.udG.EMBEDDED), v = null != E && E.applicationId === a.id && (0, s.p)(E.location) === t.channel.id, {
     analyticsLocations: I
-  } = (0, u.ZP)(c.Z.APP_DMS_ENTRY_POINT_COMMAND_BUTTON), T = null != t.channel.recipients ? t.channel.recipients[0] : void 0;
+  } = (0, u.ZP)(c.Z.APP_DMS_ENTRY_POINT_COMMAND_BUTTON), T = null != t.channel.recipients ? t.channel.recipients[0] : true;
   return {
     isExecutingLaunchInteraction: f,
     buttonText: (0, _.ms)({
@@ -63,12 +64,12 @@ function E(e) {
     o && null != s ? (0, l.Z)().leaveActivity({
       location: s.location,
       applicationId: s.applicationId
-    }) : (d(!0), (0, a.Z)({
+    }) : (d(true), (0, a.Z)({
       targetApplicationId: n.id,
       channelId: t.channel.id,
       analyticsLocations: p,
       onExecutedCallback: () => {
-        d(!1)
+        d(false)
       },
       commandOrigin: f.bB.APP_DMS_ENTRY_POINT_COMMAND_BUTTON
     }))

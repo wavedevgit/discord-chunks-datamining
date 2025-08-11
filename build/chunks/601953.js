@@ -1,4 +1,5 @@
 /** Chunk was on 7654 **/
+/** chunk id: 601953, original params: e,t,n (module,exports,require) **/
 function l(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
@@ -9,9 +10,9 @@ function l(e) {
       var l;
       l = n[t], t in e ? Object.defineProperty(e, t, {
         value: l,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
+        enumerable: true,
+        configurable: true,
+        writable: true
       }) : e[t] = l
     })
   }
@@ -37,19 +38,19 @@ function r(e, t) {
     max_uses: null != (s = e.maxUses) ? s : null,
     max_age: null != (a = e.maxAge) ? a : null,
     temporary: null != (o = e.temporary) ? o : null
-  }, (null == (n = e.targetUser) ? void 0 : n.id) == null ? {} : {
+  }, (null == (n = e.targetUser) ? true : n.id) == null ? {} : {
     target_user_id: e.targetUser.id
   }), {
     target_type: null != (u = e.targetType) ? u : null
-  }), (null == (r = e.targetApplication) ? void 0 : r.id) == null ? {} : {
+  }), (null == (r = e.targetApplication) ? true : r.id) == null ? {} : {
     target_application_id: e.targetApplication.id
   }), {
     flags: null != (d = e.flags) ? d : null
   });
   for (let e of Object.keys(t))
-    if (t[e] !== c[e]) return !1;
-  return !0
+    if (t[e] !== c[e]) returnfalse;
+  returntrue
 }
-n.d(t, {
+require.d(exports, {
   m: () => r
-}), n(997841), n(388685)
+}), require("./997841.js"), require("./388685.js")

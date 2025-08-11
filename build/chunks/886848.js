@@ -1,38 +1,39 @@
 /** Chunk was on web.js **/
+/** chunk id: 886848, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   G: () => s,
   Z: () => l
 });
-var r = n(47770),
-  i = n(68721),
-  o = n(591218);
+var Chunk47770 = require("./47770.js"),
+  Chunk68721 = require("./68721.js"),
+  Chunk591218 = require("./591218.js");
 
 function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 var s = function(e) {
   return e.Stream = "stream", e.Video = "video", e.Mute = "mute", e.VoiceActivity = "voiceactivity", e.DesktopSourceEnd = "desktopsourceend", e.Speaking = "speaking", e.AudioPermission = "audio-permission", e.VideoPermission = "video-permission", e.AddVideoTrack = "add-video-track", e
 }({});
-class l extends r.Z {
+class l extends Chunk47770.Z {
   destroy() {
     this.removeAllListeners(), this.destroyStreams()
   }
   destroyStreams() {
     var e;
-    this.audio.destroy(), this.video.destroy(), null == (e = this.desktop) || e.destroy()
+    this.audio.destroy(), this.video.destroy(), null == (e = this.desktop) || module.destroy()
   }
   setDesktop(e) {
     this.destroyStreams(), null == e || e.addListener("desktopsourceend", this.handleDesktopSourceEnd), null == e || e.addListener("speaking", this.handleSpeaking), this.desktop = e, this.mergeStreams()
   }
   reset() {
     var e;
-    this.audio.reset(), null == (e = this.desktop) || e.reset()
+    this.audio.reset(), null == (e = this.desktop) || module.reset()
   }
   getVideoStream() {
     return null != this.desktop ? this.desktop.stream : this.video.stream
@@ -86,7 +87,7 @@ class l extends r.Z {
     return null != this.desktop
   }
   constructor(e) {
-    super(), a(this, "audio", void 0), a(this, "video", new o.Z), a(this, "desktop", null), a(this, "stream", void 0), a(this, "mergeStreams", () => {
+    super(), a(this, "audio", true), a(this, "video", new o.Z), a(this, "desktop", null), a(this, "stream", true), a(this, "mergeStreams", () => {
       var e, t, n;
       let r = new MediaStream;
       return null != this.desktop ? (null == (e = this.desktop.stream) || e.getTracks().forEach(e => r.addTrack(e)), this.desktop.refreshSpeaking()) : (null == (t = this.audio.stream) || t.getAudioTracks().forEach(e => r.addTrack(e)), null == (n = this.video.stream) || n.getVideoTracks().forEach(e => r.addTrack(e))), this.stream = r, this.emit("stream", r), this.emit("video", this.getVideoStreamId()), r

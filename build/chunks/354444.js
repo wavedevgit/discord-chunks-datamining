@@ -1,5 +1,6 @@
 /** Chunk was on 22988 **/
-e.exports = {
+/** chunk id: 354444, original params: e,t,n (module,exports,require) **/
+module.exports = {
   progressBar: "progressBar_c44edb",
   bar: "bar_c44edb",
   background: "background_c44edb bar_c44edb",

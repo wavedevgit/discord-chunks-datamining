@@ -1,15 +1,16 @@
 /** Chunk was on web.js **/
+/** chunk id: 369829, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => o
 });
-var r = n(49691),
+var Chunk49691 = require("./49691.js"),
   i = {
-    passive: !0
+    passive: true
   };
 let o = {
   name: "eventListeners",
-  enabled: !0,
+  enabled: true,
   phase: "write",
   fn: function() {},
   effect: function(e) {
@@ -17,9 +18,9 @@ let o = {
       n = e.instance,
       o = e.options,
       a = o.scroll,
-      s = void 0 === a || a,
+      s = true === a || a,
       l = o.resize,
-      c = void 0 === l || l,
+      c = true === l || l,
       u = (0, r.Z)(t.elements.popper),
       d = [].concat(t.scrollParents.reference, t.scrollParents.popper);
     return s && d.forEach(function(e) {

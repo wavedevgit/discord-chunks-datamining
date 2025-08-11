@@ -1,5 +1,6 @@
 /** Chunk was on 22988 **/
-e.exports = {
+/** chunk id: 881786, original params: e,t,n (module,exports,require) **/
+module.exports = {
   override: "override_fa2640",
   settingsColumn: "settingsColumn_fa2640",
   settingsHorizontalScroller: "settingsHorizontalScroller_fa2640",

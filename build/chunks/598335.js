@@ -1,12 +1,13 @@
 /** Chunk was on web.js **/
+/** chunk id: 598335, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-var r = n(147521),
-  i = n(574369),
-  o = n(169774),
-  a = o.isPlatform("Mac OS X"),
-  s = a && o.isBrowser("Firefox < 29"),
-  l = r.hasCommandModifier,
-  c = r.isCtrlKeyCommand;
+var Chunk147521 = require("./147521.js"),
+  Chunk574369 = require("./574369.js"),
+  Chunk169774 = require("./169774.js"),
+  a = Chunk169774.isPlatform("Mac OS X"),
+  s = a && Chunk169774.isBrowser("Firefox < 29"),
+  l = Chunk147521.hasCommandModifier,
+  c = Chunk147521.isCtrlKeyCommand;
 
 function u(e) {
   return a && e.altKey || c(e)
@@ -23,7 +24,7 @@ function f(e) {
 function _(e) {
   return l(e) && a ? "backspace-to-start-of-line" : u(e) ? "backspace-word" : "backspace"
 }
-e.exports = function(e) {
+module.exports = function(e) {
   switch (e.keyCode) {
     case 66:
       return l(e) ? "bold" : null;

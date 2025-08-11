@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 954332, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   translate: "translate_faf9c0",
   animatorTop: "animatorTop_faf9c0",
   animatorBottom: "animatorBottom_faf9c0",

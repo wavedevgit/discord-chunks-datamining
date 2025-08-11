@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 112360, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   inlineElement: "inlineElement__1464f",
   inlineVoid: "inlineVoid__1464f",
   applicationCommand: "applicationCommand__1464f",

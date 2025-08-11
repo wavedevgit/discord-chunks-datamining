@@ -1,24 +1,25 @@
 /** Chunk was on web.js **/
+/** chunk id: 894017, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => o,
   c: () => a
 });
-var r = n(442837),
-  i = n(924301);
+var Chunk442837 = require("./442837.js"),
+  Chunk924301 = require("./924301.js");
 
 function o(e, t) {
   return s((0, r.Wu)([i.ZP], () => {
     var e, n;
-    return null != (n = null == (e = i.ZP.getGuildScheduledEvent(t)) ? void 0 : e.guild_scheduled_event_exceptions) ? n : []
+    return null != (n = null == (e = i.ZP.getGuildScheduledEvent(t)) ? true : e.guild_scheduled_event_exceptions) ? n : []
   }), e)
 }
 
 function a(e, t) {
   var n, r;
-  return s(null != (r = null == (n = i.ZP.getGuildScheduledEvent(t)) ? void 0 : n.guild_scheduled_event_exceptions) ? r : [], e)
+  return s(null != (r = null == (n = i.ZP.getGuildScheduledEvent(t)) ? true : n.guild_scheduled_event_exceptions) ? r : [], e)
 }
 
 function s(e, t) {
-  return null == e ? void 0 : e.find(e => e.event_exception_id === t)
+  return null == e ? true : e.find(e => e.event_exception_id === t)
 }

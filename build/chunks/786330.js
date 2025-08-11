@@ -1,4 +1,6 @@
-/** Chunk was on web.js **/ ! function(e, t) {
+/** Chunk was on web.js **/
+/** chunk id: 786330, original params: e,t,n (module,exports,re quire) **/
+! function(e, t) {
   t(n(913527))
 }(0, function(e) {
   return e.defineLocale("ka", {
@@ -35,7 +37,7 @@
         return /(წამი|წუთი|საათი|წელი)/.test(e) ? e.replace(/ი$/, "ში") : e + "ში"
       },
       past: function(e) {
-        return /(წამი|წუთი|საათი|დღე|თვე)/.test(e) ? e.replace(/(ი|ე)$/, "ის წინ") : /წელი/.test(e) ? e.replace(/წელი$/, "წლის წინ") : void 0
+        return /(წამი|წუთი|საათი|დღე|თვე)/.test(e) ? e.replace(/(ი|ე)$/, "ის წინ") : /წელი/.test(e) ? e.replace(/წელი$/, "წლის წინ") : true
       },
       s: "რამდენიმე წამი",
       ss: "%d წამი",

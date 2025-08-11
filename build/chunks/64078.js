@@ -1,23 +1,24 @@
 /** Chunk was on web.js **/
+/** chunk id: 64078, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   AI: () => f,
   EL: () => h,
   SE: () => _,
   ew: () => p
 });
-var r = n(570140),
-  i = n(314897),
-  o = n(351780),
-  a = n(843693),
-  s = n(112606);
+var Chunk570140 = require("./570140.js"),
+  Chunk314897 = require("./314897.js"),
+  Chunk351780 = require("./351780.js"),
+  Chunk843693 = require("./843693.js"),
+  Chunk112606 = require("./112606.js");
 
 function l(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -70,7 +71,7 @@ function p(e) {
   r.Z.dispatch({
     type: "POGGERMODE_UPDATE_MESSAGE_COMBO",
     comboMessage: d(c({}, e), {
-      displayed: !0
+      displayed: true
     })
   })
 }
@@ -85,10 +86,10 @@ function h(e, t) {
       combo: s,
       channelId: e,
       messageId: t,
-      displayed: !1
+      displayed: false
     }
   });
-  let l = null != s && (null == s ? void 0 : s.value) > 0 ? (null != (n = null == s ? void 0 : s.multiplier) ? n : 0) + 1 : 1;
+  let l = null != s && (null == s ? true : s.value) > 0 ? (null != (n = null == s ? true : s.multiplier) ? n : 0) + 1 : 1;
   r.Z.dispatch({
     type: "POGGERMODE_UPDATE_COMBO",
     channelId: e,

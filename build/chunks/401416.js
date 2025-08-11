@@ -1,23 +1,24 @@
 /** Chunk was on web.js **/
+/** chunk id: 401416, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Y: () => c,
   Z: () => u
-}), n(388685);
-var r = n(544891),
-  i = n(147913),
-  o = n(25733),
-  a = n(981631);
+}), require("./388685.js");
+var Chunk544891 = require("./544891.js"),
+  Chunk147913 = require("./147913.js"),
+  Chunk25733 = require("./25733.jsx"),
+  Chunk981631 = require("./981631.js");
 
 function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
-class l extends i.Z {
+class l extends Chunk147913.Z {
   handleDmSettingsUpsellShow(e) {
     o.Z.openDmSettingsUpsellModal(e.guildId)
   }
@@ -31,7 +32,7 @@ class l extends i.Z {
 function c(e) {
   return r.tn.post({
     url: a.ANM.DM_SETTINGS_UPSELL_ACK(e),
-    rejectWithError: !1
+    rejectWithError: false
   })
 }
 let u = new l

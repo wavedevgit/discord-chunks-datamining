@@ -1,5 +1,6 @@
 /** Chunk was on 39991 **/
-e.exports = {
+/** chunk id: 915887, original params: e,t,n (module,exports,require) **/
+module.exports = {
   containerDefault: "containerDefault_c69b6d",
   containerDragAfter: "containerDragAfter_c69b6d",
   containerDragBefore: "containerDragBefore_c69b6d",

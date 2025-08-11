@@ -1,8 +1,9 @@
 /** Chunk was on web.js **/
+/** chunk id: 478743, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   N: () => o
 });
-var r = n(149765),
-  i = n(981631);
-let o = r.$e(i.Plq.ADMINISTRATOR, i.Plq.MANAGE_GUILD, i.Plq.BAN_MEMBERS, i.Plq.KICK_MEMBERS, i.Plq.MODERATE_MEMBERS, i.Plq.MANAGE_ROLES, i.Plq.MANAGE_NICKNAMES)
+var Chunk149765 = require("./149765.js"),
+  Chunk981631 = require("./981631.js");
+let o = Chunk149765.$e(Chunk981631.Plq.ADMINISTRATOR, Chunk981631.Plq.MANAGE_GUILD, Chunk981631.Plq.BAN_MEMBERS, Chunk981631.Plq.KICK_MEMBERS, Chunk981631.Plq.MODERATE_MEMBERS, Chunk981631.Plq.MANAGE_ROLES, Chunk981631.Plq.MANAGE_NICKNAMES)

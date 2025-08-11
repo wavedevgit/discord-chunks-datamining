@@ -1,1 +1,0 @@
-{"id":"596691","type":"experiment","data":{"kind":"user","id":"2024-08_mobile_perguild_collectibles_edit","label":"Mobile Per-guild Collectibles Edit","defaultConfig":{"enabled":false},"treatments":[{"id":1,"label":"Enable Mobile Per-guild Collectibles Edit","config":{"enabled":false}}],"commonTriggerPoint":"i.$P.OPEN_USER_SETTINGS"},"fromModule":{"id":"web.js"}}

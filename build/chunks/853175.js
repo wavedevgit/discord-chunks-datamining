@@ -1,9 +1,10 @@
 /** Chunk was on 23357 **/
+/** chunk id: 853175, original params: e,t,n (module,exports,require) **/
 "use strict";
-n(220159)({
+require("./220159.js")({
   target: "Object",
-  stat: !0,
-  sham: !n(181794)
+  stat: true,
+  sham: !require("./181794.js")
 }, {
-  create: n(425184)
+  create: require("./425184.js")
 })

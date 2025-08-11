@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 400003, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   oneByOneGrid: "oneByOneGrid_f4758a",
   oneByOneGridSingle: "oneByOneGridSingle_f4758a",
   oneByOneGridMosaic: "oneByOneGridMosaic_f4758a",

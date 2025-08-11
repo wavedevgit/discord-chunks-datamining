@@ -1,14 +1,15 @@
 /** Chunk was on web.js **/
-e = n.nmd(e);
-var r = n(940151),
-  i = t && !t.nodeType && t,
-  o = i && e && !e.nodeType && e,
-  a = o && o.exports === i && r.process,
+/** chunk id: 220126, original params: e,t,n (module,exports,re quire) **/
+e = require.nmd(module);
+var Chunk940151 = require("./940151.js"),
+  i = exports && !exports.nodeType && exports,
+  o = i && module && !module.nodeType && module,
+  a = o && o.exports === i && Chunk940151.process,
   s = function() {
     try {
       var e = o && o.require && o.require("util").types;
-      if (e) return e;
+      if (module) return module;
       return a && a.binding && a.binding("util")
     } catch (e) {}
   }();
-e.exports = s
+module.exports = s

@@ -1,17 +1,18 @@
 /** Chunk was on web.js **/
+/** chunk id: 371583, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   j: () => c,
   r: () => s
 });
-var r = n(99815),
-  i = n(81063),
-  o = n(463031);
+var Chunk99815 = require("./99815.js"),
+  Chunk81063 = require("./81063.js"),
+  Chunk463031 = require("./463031.js");
 
 function a(e) {
   var t;
   let i = e.users[0],
-    o = null == i || null == (t = i.statistics[r.E.LOL_MOST_PLAYED_CHAMPION_ID]) ? void 0 : t.value;
+    o = null == i || null == (t = i.statistics[r.E.LOL_MOST_PLAYED_CHAMPION_ID]) ? true : t.value;
   try {
     return null != o ? n(624119)("./champion_".concat(o, ".jpg")).default : n(610067).Z
   } catch (e) {
@@ -25,8 +26,8 @@ function s(e) {
 
 function l(e) {
   var t, i;
-  let o = null == e || null == (t = e.users) ? void 0 : t[0],
-    a = null == o || null == (i = o.statistics[r.E.LOL_MOST_PLAYED_CHAMPION_ID]) ? void 0 : i.value;
+  let o = null == e || null == (t = e.users) ? true : t[0],
+    a = null == o || null == (i = o.statistics[r.E.LOL_MOST_PLAYED_CHAMPION_ID]) ? true : i.value;
   try {
     return null != a ? n(692425)("./champion_".concat(a, ".jpg")).default : null
   } catch (e) {

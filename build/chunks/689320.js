@@ -1,17 +1,18 @@
 /** Chunk was on web.js **/
+/** chunk id: 689320, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 
 function r(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
-n.d(t, {
+require.d(exports, {
   t: () => a
-}), n(953529), n(388685);
+}), require("./953529.js"), require("./388685.js");
 let i = Symbol.iterator;
 class o {
   [i]() {
@@ -20,20 +21,20 @@ class o {
   next() {
     for (; this.index < this.items.length;) {
       let e = this.items[this.index].next();
-      if (!e.done) return e;
+      if (!module.done) return module;
       this.index += 1
     }
     return {
-      done: !0,
-      value: void 0
+      done: true,
+      value: true
     }
   }
   constructor(e) {
-    r(this, "index", void 0), r(this, "items", void 0), this.index = 0, this.items = e
+    r(this, "index", true), r(this, "items", true), this.index = 0, this.items = e
   }
 }
 
 function a() {
-  for (var e = arguments.length, t = Array(e), n = 0; n < e; n++) t[n] = arguments[n];
-  return new o(t)
+  for (var e = arguments.length, t = Array(module), n = 0; require < module; require++) exports[require] = arguments[require];
+  return new o(exports)
 }

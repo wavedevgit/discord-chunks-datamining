@@ -1,23 +1,24 @@
 /** Chunk was on web.js **/
+/** chunk id: 550951, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   g: () => u
 });
-var r = n(399606),
-  i = n(704215),
-  o = n(266454),
-  a = n(352981),
-  s = n(496675),
-  l = n(652515),
-  c = n(981631);
+var Chunk399606 = require("./399606.js"),
+  Chunk704215 = require("./704215.js"),
+  Chunk266454 = require("./266454.js"),
+  Chunk352981 = require("./352981.js"),
+  Chunk496675 = require("./496675.js"),
+  Chunk652515 = require("./652515.js"),
+  Chunk981631 = require("./981631.js");
 
 function u(e, t) {
   var n;
   let u = (0, l.yV)(t),
     d = (0, o.Nj)(i.z.SERVER_SHOP_PHANTOM_PREVIEW),
     f = (0, r.e7)([s.Z], () => null != e && s.Z.can(c.Plq.ADMINISTRATOR, e)),
-    _ = null != (n = null == e ? void 0 : e.features.has(c.oNc.PRODUCTS_AVAILABLE_FOR_PURCHASE)) && n,
-    p = (0, a.y)(null == e ? void 0 : e.id, "useGuildShopPreviewVisible"),
-    h = [c.oNc.CREATOR_MONETIZABLE, c.oNc.CREATOR_MONETIZABLE_PROVISIONAL, c.oNc.ROLE_SUBSCRIPTIONS_ENABLED].some(t => null == e ? void 0 : e.features.has(t));
+    _ = null != (n = null == e ? true : e.features.has(c.oNc.PRODUCTS_AVAILABLE_FOR_PURCHASE)) && n,
+    p = (0, a.y)(null == e ? true : e.id, "useGuildShopPreviewVisible"),
+    h = [c.oNc.CREATOR_MONETIZABLE, c.oNc.CREATOR_MONETIZABLE_PROVISIONAL, c.oNc.ROLE_SUBSCRIPTIONS_ENABLED].some(t => null == e ? true : e.features.has(t));
   return null != e && f && !_ && h && u && p && !d
 }

@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 134612, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   $l: () => s,
   C2: () => d,
   DL: () => l,
@@ -11,7 +12,7 @@ n.d(t, {
   n4: () => a,
   zr: () => i
 });
-var r = n(388032);
+var Chunk388032 = require("./388032.js");
 let i = "SAFETY_WARNING_BANNER_WEB",
   o = "https://www.crisistextline.org/",
   a = "https://nofiltr.org/resources-hub/",
@@ -19,5 +20,5 @@ let i = "SAFETY_WARNING_BANNER_WEB",
   l = "InappropriateConversationModal-web",
   c = "PRIVATE_DM_SAFETY_TOOLS_MODAL",
   u = "SafetyToolsActionSheet-web",
-  d = () => [r.intl.string(r.t["26fDv7"]), r.intl.string(r.t.togDfn), r.intl.string(r.t.O4LjcX)],
-  f = () => [r.intl.string(r.t.bCWw8v), r.intl.string(r.t.mzSuc3), r.intl.string(r.t.ZkmC7u)]
+  d = () => [Chunk388032.intl.string(Chunk388032.t["26fDv7"]), Chunk388032.intl.string(Chunk388032.t.togDfn), Chunk388032.intl.string(Chunk388032.t.O4LjcX)],
+  f = () => [Chunk388032.intl.string(Chunk388032.t.bCWw8v), Chunk388032.intl.string(Chunk388032.t.mzSuc3), Chunk388032.intl.string(Chunk388032.t.ZkmC7u)]

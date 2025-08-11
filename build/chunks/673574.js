@@ -1,5 +1,6 @@
 /** Chunk was on 50448 **/
+/** chunk id: 673574, original params: t,r,n (module,exports,require) **/
 "use strict";
-var e = n(424353).navigator,
+var e = require("./424353.js").navigator,
   o = e && e.userAgent;
-t.exports = o ? String(o) : ""
+module.exports = o ? String(o) : ""

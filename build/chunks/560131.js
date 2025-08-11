@@ -1,5 +1,6 @@
 /** Chunk was on 22988 **/
-e.exports = {
+/** chunk id: 560131, original params: e,t,n (module,exports,require) **/
+module.exports = {
   tabBarContainer: "tabBarContainer_eb3aa4",
   tabBar: "tabBar_eb3aa4",
   tabBarItem: "tabBarItem_eb3aa4",

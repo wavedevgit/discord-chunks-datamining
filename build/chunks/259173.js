@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 259173, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   rankContainer: "rankContainer__632c2",
   goldBorder: "goldBorder__632c2",
   silverBorder: "silverBorder__632c2",

@@ -1,18 +1,19 @@
 /** Chunk was on web.js **/
+/** chunk id: 836215, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-var r = n(98405),
-  i = n(967333),
-  o = n(861567),
-  a = n(914331),
-  s = n(201390),
-  l = n(146063),
-  c = n(77826),
+var Chunk98405 = require("./98405.js"),
+  Chunk967333 = require("./967333.js"),
+  Chunk861567 = require("./861567.js"),
+  Chunk914331 = require("./914331.js"),
+  Chunk201390 = require("./201390.js"),
+  Chunk146063 = require("./146063.js"),
+  Chunk77826 = require("./77826.js"),
   u = Array,
   d = Math.max,
   f = Math.min;
-r({
+Chunk98405({
   target: "Array",
-  proto: !0
+  proto: true
 }, {
   toSpliced: function(e, t) {
     var n, r, i, _, p = l(this),
@@ -25,4 +26,4 @@ r({
     for (; E < i; E++) _[E] = p[E + r - n];
     return _
   }
-}), i("toSpliced")
+}), Chunk967333("toSpliced")

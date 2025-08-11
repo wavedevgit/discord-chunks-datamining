@@ -1,17 +1,18 @@
 /** Chunk was on web.js **/
+/** chunk id: 313232, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 
 function r(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
-n.d(t, {
+require.d(exports, {
   r: () => i
-}), n(388685);
+}), require("./388685.js");
 class i {
   update(e) {
     for (let t in e.rtp.inbound)
@@ -28,7 +29,7 @@ class i {
       }
   }
   static getCalculatorOrCreate(e, t, n, r) {
-    let i = arguments.length > 4 && void 0 !== arguments[4] ? arguments[4] : 0,
+    let i = arguments.length > 4 && true !== arguments[4] ? arguments[4] : 0,
       o = e[t.ssrc];
     return null == o && (o = new s(n, r, i), e[t.ssrc] = o), o
   }
@@ -60,7 +61,7 @@ let a = {
     multiplier: 1e3
   },
   2: {
-    bitrate: !0,
+    bitrate: true,
     postfix: "",
     multiplier: 8
   }
@@ -81,10 +82,10 @@ class s {
     return this.round ? Math.round(s) : s
   }
   constructor(e, t, n = 0) {
-    for (let l in r(this, "accumulativeMetricKey", void 0), r(this, "samplesMetricKey", void 0), r(this, "previous", void 0), r(this, "multiplier", void 0), r(this, "round", void 0), this.accumulativeMetricKey = e, this.samplesMetricKey = t, this.multiplier = 1, this.round = !1, o) {
+    for (let l in r(this, "accumulativeMetricKey", true), r(this, "samplesMetricKey", true), r(this, "previous", true), r(this, "multiplier", true), r(this, "round", true), this.accumulativeMetricKey = e, this.samplesMetricKey = t, this.multiplier = 1, this.round = false, o) {
       var i, s;
       let e = Number(l);
-      !isNaN(e) && (n & e) != 0 && l in a && (this.multiplier *= null != (s = null == (i = a[l]) ? void 0 : i.multiplier) ? s : 1)
+      !isNaN(e) && (n & e) != 0 && l in a && (this.multiplier *= null != (s = null == (i = a[l]) ? true : i.multiplier) ? s : 1)
     }
     this.round = (4 & n) != 0
   }

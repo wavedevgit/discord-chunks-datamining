@@ -1,29 +1,30 @@
 /** Chunk was on web.js **/
+/** chunk id: 96150, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => d
-}), n(388685);
-var r = n(570140),
-  i = n(317770),
-  o = n(280837),
-  a = n(592125),
-  s = n(914010),
-  l = n(823379);
+}), require("./388685.js");
+var Chunk570140 = require("./570140.js"),
+  Chunk317770 = require("./317770.js"),
+  Chunk280837 = require("./280837.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk914010 = require("./914010.js"),
+  Chunk823379 = require("./823379.js");
 
 function c(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
-class u extends i.Z {
+class u extends Chunk317770.Z {
   _initialize() {
-    r.Z.subscribe("VOICE_CHANNEL_SELECT", this.handleVoiceChannelSelect), r.Z.subscribe("LOGOUT", this.handleLogout)
+    Chunk570140.Z.subscribe("VOICE_CHANNEL_SELECT", this.handleVoiceChannelSelect), Chunk570140.Z.subscribe("LOGOUT", this.handleLogout)
   }
   _terminate() {
-    r.Z.unsubscribe("VOICE_CHANNEL_SELECT", this.handleVoiceChannelSelect), r.Z.unsubscribe("LOGOUT", this.handleLogout)
+    Chunk570140.Z.unsubscribe("VOICE_CHANNEL_SELECT", this.handleVoiceChannelSelect), Chunk570140.Z.unsubscribe("LOGOUT", this.handleLogout)
   }
   constructor(...e) {
     super(...e), c(this, "handleVoiceChannelSelect", e => {

@@ -1,11 +1,12 @@
 /** Chunk was on web.js **/
+/** chunk id: 854160, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-var r = n(970661),
+var Chunk970661 = require("./970661.js"),
   i = function() {
     try {
       return !!Object.defineProperty({}, "a", {})
     } catch (e) {
-      return !1
+      returnfalse
     }
   }();
 i || Object.prototype.__defineGetter__;
@@ -19,4 +20,4 @@ var o = i ? Object.defineProperty : function(e, t, n) {
     for (i in a.prototype = e, n = new a, t) r.hop.call(t, i) && o(n, i, t[i]);
     return n
   };
-t.defineProperty = o, t.objCreate = a
+exports.defineProperty = o, exports.objCreate = a

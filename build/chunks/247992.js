@@ -1,5 +1,0 @@
-/** Chunk was on 45620 **/
-"use strict";
-e.exports = {
-  shopTakeOver: "shopTakeOver__6c6a6"
-}

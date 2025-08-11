@@ -1,26 +1,27 @@
 /** Chunk was on web.js **/
+/** chunk id: 65856, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => b
-}), n(290780), n(49124), n(539854), n(415506), n(388685);
-var r = n(512722),
-  i = n.n(r),
-  o = n(392711),
-  a = n.n(o),
-  s = n(626135),
-  l = n(70956),
-  c = n(996106),
-  u = n(863141),
-  d = n(34954),
-  f = n(186901),
-  _ = n(981631);
+}), require("./290780.js"), require("./49124.js"), require("./539854.js"), require("./415506.js"), require("./388685.js");
+var Chunk512722 = require("./512722.js"),
+  i = require.n(Chunk512722),
+  Chunk392711 = require("./392711.js"),
+  a = require.n(Chunk392711),
+  Chunk626135 = require("./626135.js"),
+  Chunk70956 = require("./70956.js"),
+  Chunk996106 = require("./996106.js"),
+  Chunk863141 = require("./863141.js"),
+  Chunk34954 = require("./34954.js"),
+  Chunk186901 = require("./186901.js"),
+  Chunk981631 = require("./981631.js");
 
 function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 let h = "RPC_STORE_WAIT",
@@ -31,7 +32,7 @@ function g(e, t) {
 }
 
 function E(e) {
-  return !!m.includes(e) || (m.unshift(e), m.splice(50), !1)
+  return !!m.includes(e) || (m.unshift(e), m.splice(50), false)
 }
 class b {
   registerTransport(e) {
@@ -80,7 +81,7 @@ class b {
       if (null != e.validation) {
         let o = await this.getJoi();
         i()(null != e.validation, "command.validation must not be null"), o.validate(t.args, e.validation(o), {
-          convert: !1
+          convert: false
         }, t => {
           if (null != t) return void r(new c.Z({
             errorCode: _.lTL.INVALID_PAYLOAD
@@ -115,10 +116,10 @@ class b {
     this.events[e] = t
   }
   dispatch(e) {
-    let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : null,
-      n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : _.Etm.DISPATCH,
-      r = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : null,
-      i = arguments.length > 4 && void 0 !== arguments[4] ? arguments[4] : null;
+    let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : null,
+      n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : _.Etm.DISPATCH,
+      r = arguments.length > 3 && true !== arguments[3] ? arguments[3] : null,
+      i = arguments.length > 4 && true !== arguments[4] ? arguments[4] : null;
     e.send({
       cmd: n,
       data: i,
@@ -127,10 +128,10 @@ class b {
     })
   }
   error(e) {
-    let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : null,
-      n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : _.Etm.DISPATCH,
-      r = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : _.lTL.UNKNOWN_ERROR,
-      i = arguments.length > 4 && void 0 !== arguments[4] ? arguments[4] : "Unknown Error";
+    let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : null,
+      n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : _.Etm.DISPATCH,
+      r = arguments.length > 3 && true !== arguments[3] ? arguments[3] : _.lTL.UNKNOWN_ERROR,
+      i = arguments.length > 4 && true !== arguments[4] ? arguments[4] : "Unknown Error";
     s.default.track(_.rMx.RPC_SERVER_ERROR_CAUGHT, {
       command: n,
       code: r,
@@ -141,13 +142,13 @@ class b {
     })
   }
   isSubscribed(e, t) {
-    return void 0 !== this.subscriptions.find(n => n.socket.application.id === e && n.evt === t)
+    return true !== this.subscriptions.find(n => n.socket.application.id === e && n.evt === t)
   }
   getSubscription(e, t, n) {
     return this.subscriptions.find(r => r.socket === e && r.evt === t && a().isEqual(r.args, n))
   }
   addSubscription(e, t, n) {
-    let r = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : null,
+    let r = arguments.length > 3 && true !== arguments[3] ? arguments[3] : null,
       i = this.dispatch.bind(this, e, null, _.Etm.DISPATCH, t);
     null == this.getSubscription(e, t, n) && this.subscriptions.push({
       update: r,
@@ -198,6 +199,6 @@ class b {
     }).then(e => (o(), e))
   }
   constructor(e) {
-    p(this, "getCurrentUser", () => null), p(this, "onConnect", () => {}), p(this, "onDisconnect", () => {}), p(this, "getJoi", void 0), p(this, "events", {}), p(this, "commands", {}), p(this, "sockets", new Set), p(this, "subscriptions", []), this.getJoi = e
+    p(this, "getCurrentUser", () => null), p(this, "onConnect", () => {}), p(this, "onDisconnect", () => {}), p(this, "getJoi", true), p(this, "events", {}), p(this, "commands", {}), p(this, "sockets", new Set), p(this, "subscriptions", []), this.getJoi = e
   }
 }

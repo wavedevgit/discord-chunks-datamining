@@ -1,9 +1,10 @@
 /** Chunk was on web.js **/
-e.exports = function(e) {
+/** chunk id: 859739, original params: e (module,exports,re quire) **/
+module.exports = function(e) {
   return {
     name: "Dockerfile",
     aliases: ["docker"],
-    case_insensitive: !0,
+    case_insensitive: true,
     keywords: ["from", "maintainer", "expose", "env", "arg", "user", "onbuild", "stopsignal"],
     contains: [e.HASH_COMMENT_MODE, e.APOS_STRING_MODE, e.QUOTE_STRING_MODE, e.NUMBER_MODE, {
       beginKeywords: "run cmd entrypoint volume add copy workdir label healthcheck shell",

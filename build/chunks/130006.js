@@ -1,31 +1,32 @@
 /** Chunk was on web.js **/
+/** chunk id: 130006, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-var r = n(98405),
-  i = n(580983),
-  o = n(511696),
-  a = n(938373),
-  s = n(880181),
-  l = n(280481),
-  c = n(961050),
-  u = n(769827),
-  d = n(25124),
-  f = n(436207),
-  _ = n(556585),
-  p = n(751736),
-  h = n(933121),
-  m = n(112493),
-  g = a.PROPER,
-  E = a.CONFIGURABLE,
-  b = m.IteratorPrototype,
-  y = m.BUGGY_SAFARI_ITERATORS,
-  O = p("iterator"),
+var Chunk98405 = require("./98405.js"),
+  Chunk580983 = require("./580983.js"),
+  Chunk511696 = require("./511696.js"),
+  Chunk938373 = require("./938373.js"),
+  Chunk880181 = require("./880181.js"),
+  Chunk280481 = require("./280481.js"),
+  Chunk961050 = require("./961050.js"),
+  Chunk769827 = require("./769827.js"),
+  Chunk25124 = require("./25124.js"),
+  Chunk436207 = require("./436207.js"),
+  Chunk556585 = require("./556585.js"),
+  Chunk751736 = require("./751736.js"),
+  Chunk933121 = require("./933121.js"),
+  Chunk112493 = require("./112493.js"),
+  g = Chunk938373.PROPER,
+  E = Chunk938373.CONFIGURABLE,
+  b = Chunk112493.IteratorPrototype,
+  y = Chunk112493.BUGGY_SAFARI_ITERATORS,
+  O = Chunk751736("iterator"),
   v = "keys",
   I = "values",
   T = "entries",
   S = function() {
     return this
   };
-e.exports = function(e, t, n, a, p, m, A) {
+module.exports = function(e, t, n, a, p, m, A) {
   l(n, t, a);
   var N, C, R, P = function(e) {
       if (e === p && M) return M;
@@ -43,12 +44,12 @@ e.exports = function(e, t, n, a, p, m, A) {
       }
     },
     w = t + " Iterator",
-    D = !1,
+    D = false,
     L = e.prototype,
     x = L[O] || L["@@iterator"] || p && L[p],
     M = !y && x || P(p),
     k = "Array" === t && L.entries || x;
-  if (k && (N = c(k.call(new e))) !== Object.prototype && N.next && (!o && c(N) !== b && (u ? u(N, b) : s(N[O]) || _(N, O, S)), d(N, w, !0, !0), o && (h[w] = S)), g && p === I && x && x.name !== I && (!o && E ? f(L, "name", I) : (D = !0, M = function() {
+  if (k && (N = c(k.call(new e))) !== Object.prototype && N.next && (!o && c(N) !== b && (u ? u(N, b) : s(N[O]) || _(N, O, S)), d(N, w, true, true), o && (h[w] = S)), g && p === I && x && x.name !== I && (!o && E ? f(L, "name", I) : (D = true, M = function() {
       return i(x, this)
     })), p)
     if (C = {
@@ -59,7 +60,7 @@ e.exports = function(e, t, n, a, p, m, A) {
       for (R in C) !y && !D && R in L || _(L, R, C[R]);
     else r({
       target: t,
-      proto: !0,
+      proto: true,
       forced: y || D
     }, C);
   return (!o || A) && L[O] !== M && _(L, O, M, {

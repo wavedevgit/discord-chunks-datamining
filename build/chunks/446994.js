@@ -1,31 +1,33 @@
-/** Chunk was on web.js **/ ! function(t, n) {
+/** Chunk was on web.js **/
+/** chunk id: 446994, original params: e (module,exports,re quire) **/
+! function(t, n) {
   e.exports = n()
 }(globalThis, function() {
   return (() => {
     var e = {
         506: e => {
           e.exports = function(e) {
-            if (void 0 === e) throw ReferenceError("this hasn't been initialised - super() hasn't been called");
+            if (true === e) throw ReferenceError("this hasn't been initialised - super() hasn't been called");
             return e
-          }, e.exports.__esModule = !0, e.exports.default = e.exports
+          }, e.exports.__esModule = true, e.exports.default = e.exports
         },
         575: e => {
           e.exports = function(e, t) {
             if (!(e instanceof t)) throw TypeError("Cannot call a class as a function")
-          }, e.exports.__esModule = !0, e.exports.default = e.exports
+          }, e.exports.__esModule = true, e.exports.default = e.exports
         },
         913: e => {
           function t(e, t) {
             for (var n = 0; n < t.length; n++) {
               var r = t[n];
-              r.enumerable = r.enumerable || !1, r.configurable = !0, "value" in r && (r.writable = !0), Object.defineProperty(e, r.key, r)
+              r.enumerable = r.enumerable || false, r.configurable = true, "value" in r && (r.writable = true), Object.defineProperty(e, r.key, r)
             }
           }
           e.exports = function(e, n, r) {
             return n && t(e.prototype, n), r && t(e, r), Object.defineProperty(e, "prototype", {
-              writable: !1
+              writable: false
             }), e
-          }, e.exports.__esModule = !0, e.exports.default = e.exports
+          }, e.exports.__esModule = true, e.exports.default = e.exports
         },
         525: (e, t, n) => {
           var r = n(331);
@@ -37,17 +39,17 @@
                 var o = Object.getOwnPropertyDescriptor(i, t);
                 return o.get ? o.get.call(arguments.length < 3 ? e : n) : o.value
               }
-            }, e.exports.__esModule = !0, e.exports.default = e.exports, i.apply(this, arguments)
+            }, e.exports.__esModule = true, e.exports.default = e.exports, i.apply(this, arguments)
           }
-          e.exports = i, e.exports.__esModule = !0, e.exports.default = e.exports
+          e.exports = i, e.exports.__esModule = true, e.exports.default = e.exports
         },
         754: e => {
           function t(n) {
             return e.exports = t = Object.setPrototypeOf ? Object.getPrototypeOf : function(e) {
               return e.__proto__ || Object.getPrototypeOf(e)
-            }, e.exports.__esModule = !0, e.exports.default = e.exports, t(n)
+            }, e.exports.__esModule = true, e.exports.default = e.exports, t(n)
           }
-          e.exports = t, e.exports.__esModule = !0, e.exports.default = e.exports
+          e.exports = t, e.exports.__esModule = true, e.exports.default = e.exports
         },
         205: (e, t, n) => {
           var r = n(489);
@@ -56,44 +58,44 @@
             e.prototype = Object.create(t && t.prototype, {
               constructor: {
                 value: e,
-                writable: !0,
-                configurable: !0
+                writable: true,
+                configurable: true
               }
             }), Object.defineProperty(e, "prototype", {
-              writable: !1
+              writable: false
             }), t && r(e, t)
-          }, e.exports.__esModule = !0, e.exports.default = e.exports
+          }, e.exports.__esModule = true, e.exports.default = e.exports
         },
         318: e => {
           e.exports = function(e) {
             return e && e.__esModule ? e : {
               default: e
             }
-          }, e.exports.__esModule = !0, e.exports.default = e.exports
+          }, e.exports.__esModule = true, e.exports.default = e.exports
         },
         585: (e, t, n) => {
           var r = n(8).default,
             i = n(506);
           e.exports = function(e, t) {
             if (t && ("object" === r(t) || "function" == typeof t)) return t;
-            if (void 0 !== t) throw TypeError("Derived constructors may only return object or undefined");
+            if (true !== t) throw TypeError("Derived constructors may only return object or undefined");
             return i(e)
-          }, e.exports.__esModule = !0, e.exports.default = e.exports
+          }, e.exports.__esModule = true, e.exports.default = e.exports
         },
         489: e => {
           function t(n, r) {
             return e.exports = t = Object.setPrototypeOf || function(e, t) {
               return e.__proto__ = t, e
-            }, e.exports.__esModule = !0, e.exports.default = e.exports, t(n, r)
+            }, e.exports.__esModule = true, e.exports.default = e.exports, t(n, r)
           }
-          e.exports = t, e.exports.__esModule = !0, e.exports.default = e.exports
+          e.exports = t, e.exports.__esModule = true, e.exports.default = e.exports
         },
         331: (e, t, n) => {
           var r = n(754);
           e.exports = function(e, t) {
             for (; !Object.prototype.hasOwnProperty.call(e, t) && null !== (e = r(e)););
             return e
-          }, e.exports.__esModule = !0, e.exports.default = e.exports
+          }, e.exports.__esModule = true, e.exports.default = e.exports
         },
         8: e => {
           function t(n) {
@@ -101,9 +103,9 @@
               return typeof e
             } : function(e) {
               return e && "function" == typeof Symbol && e.constructor === Symbol && e !== Symbol.prototype ? "symbol" : typeof e
-            }, e.exports.__esModule = !0, e.exports.default = e.exports, t(n)
+            }, e.exports.__esModule = true, e.exports.default = e.exports, t(n)
           }
-          e.exports = t, e.exports.__esModule = !0, e.exports.default = e.exports
+          e.exports = t, e.exports.__esModule = true, e.exports.default = e.exports
         },
         848: e => {
           window,
@@ -114,27 +116,27 @@
               if (t[r]) return t[r].exports;
               var i = t[r] = {
                 i: r,
-                l: !1,
+                l: false,
                 exports: {}
               };
-              return e[r].call(i.exports, i, i.exports, n), i.l = !0, i.exports
+              return e[r].call(i.exports, i, i.exports, n), i.l = true, i.exports
             }
             return n.m = e, n.c = t, n.d = function(e, t, r) {
               n.o(e, t) || Object.defineProperty(e, t, {
-                enumerable: !0,
+                enumerable: true,
                 get: r
               })
             }, n.r = function(e) {
               "undefined" != typeof Symbol && Symbol.toStringTag && Object.defineProperty(e, Symbol.toStringTag, {
                 value: "Module"
               }), Object.defineProperty(e, "__esModule", {
-                value: !0
+                value: true
               })
             }, n.t = function(e, t) {
               if (1 & t && (e = n(e)), 8 & t || 4 & t && "object" == typeof e && e && e.__esModule) return e;
               var r = Object.create(null);
               if (n.r(r), Object.defineProperty(r, "default", {
-                  enumerable: !0,
+                  enumerable: true,
                   value: e
                 }), 2 & t && "string" != typeof e)
                 for (var i in e) n.d(r, i, (function(t) {
@@ -167,14 +169,14 @@
               for (var t = [], n = 0; n < this.channels; n++) t[n] = new Float32Array(e);
               return t
             }, n.prototype.validate = function(e) {
-              if (e.length !== this.channels) return !1;
+              if (e.length !== this.channels) returnfalse;
               for (var t, n = 0; n < e.length; n++) {
                 var r = e[n];
-                if (!(r instanceof Float32Array)) return !1;
+                if (!(r instanceof Float32Array)) returnfalse;
                 if (0 == n) t = r.length;
-                else if (r.length !== t) return !1
+                else if (r.length !== t) returnfalse
               }
-              return !0
+              returntrue
             }, n.prototype.appendBuffer = function(e) {
               if (!this.validate(e)) throw "Invalid audio buffer passed to BufferQueue.appendBuffer";
               for (var t = e[0].length, n = this.channels, r = this._pendingPos, i = this._pendingBuffer, o = this.bufferSize, a = 0; a < t; a++) {
@@ -205,7 +207,7 @@
                 r = n(4);
 
               function i(e) {
-                this._options = e || {}, this._backend = null, this._resampleFractional = 0, this._resampleLastSampleData = void 0, this._tempoChanger = null
+                this._options = e || {}, this._backend = null, this._resampleFractional = 0, this._resampleLastSampleData = true, this._tempoChanger = null
               }
               i.prototype.rate = 0, i.prototype.targetRate = 0, i.prototype.channels = 0, i.prototype.bufferSize = 0, Object.defineProperty(i.prototype, "bufferDuration", {
                 get: function() {
@@ -241,9 +243,9 @@
                   this._backend.muted = e
                 }
               }), i.prototype.mute = function() {
-                this.muted = !0
+                this.muted = true
               }, i.prototype.unmute = function() {
-                this.muted = !1
+                this.muted = false
               }, Object.defineProperty(i.prototype, "volume", {
                 get: function() {
                   if (this._backend) return this._backend.volume;
@@ -308,7 +310,7 @@
                   _ >= n && (p = 0);
                   var h = e[p],
                     m = new Float32Array(u);
-                  o(h, m, this._resampleLastSampleData ? this._resampleLastSampleData[p] : void 0, f), a.push(m)
+                  o(h, m, this._resampleLastSampleData ? this._resampleLastSampleData[p] : true, f), a.push(m)
                 }
                 return this._resampleFractional = d, this._resampleLastSampleData = e, a
               }, i.prototype.bufferData = function(e) {
@@ -331,7 +333,7 @@
                 if (!this._backend) throw "Invalid state: AudioFeeder cannot stop before init";
                 this._backend.stop()
               }, i.prototype.flush = function() {
-                if (this._resampleFractional = 0, this._resampleLastSampleData = void 0, !this._backend) throw "Invalid state: AudioFeeder cannot flush before init";
+                if (this._resampleFractional = 0, this._resampleLastSampleData = true, !this._backend) throw "Invalid state: AudioFeeder cannot flush before init";
                 this._tempoChanger.flush(this.durationBuffered), this._backend.flush()
               }, i.prototype.close = function() {
                 this._backend && (this._backend.close(), this._backend = null)
@@ -362,7 +364,7 @@
                 set: function(e) {
                   this._volume = +e
                 }
-              }), o.prototype._muted = !1, Object.defineProperty(o.prototype, "muted", {
+              }), o.prototype._muted = false, Object.defineProperty(o.prototype, "muted", {
                 get: function() {
                   return this._muted
                 },
@@ -432,7 +434,7 @@
             }()
           }, function(e, t) {
             e.exports = function() {
-              if (void 0 !== window.setImmediate) return window.setImmediate;
+              if (true !== window.setImmediate) return window.setImmediate;
               if (window && window.postMessage) {
                 var e = [];
                 return window.addEventListener("message", function(t) {
@@ -446,7 +448,7 @@
                   }),
                   function(t) {
                     e.push(t), window.postMessage({
-                      nextTickBrowserPingMessage: !0
+                      nextTickBrowserPingMessage: true
                     }, document.location.toString())
                   }
               }
@@ -464,27 +466,27 @@
                   if (t[r]) return t[r].exports;
                   var i = t[r] = {
                     i: r,
-                    l: !1,
+                    l: false,
                     exports: {}
                   };
-                  return e[r].call(i.exports, i, i.exports, n), i.l = !0, i.exports
+                  return e[r].call(i.exports, i, i.exports, n), i.l = true, i.exports
                 }
                 return n.m = e, n.c = t, n.d = function(e, t, r) {
                   n.o(e, t) || Object.defineProperty(e, t, {
-                    enumerable: !0,
+                    enumerable: true,
                     get: r
                   })
                 }, n.r = function(e) {
                   "undefined" != typeof Symbol && Symbol.toStringTag && Object.defineProperty(e, Symbol.toStringTag, {
                     value: "Module"
                   }), Object.defineProperty(e, "__esModule", {
-                    value: !0
+                    value: true
                   })
                 }, n.t = function(e, t) {
                   if (1 & t && (e = n(e)), 8 & t || 4 & t && "object" == typeof e && e && e.__esModule) return e;
                   var r = Object.create(null);
                   if (n.r(r), Object.defineProperty(r, "default", {
-                      enumerable: !0,
+                      enumerable: true,
                       value: e
                     }), 2 & t && "string" != typeof e)
                     for (var i in e) n.d(r, i, (function(t) {
@@ -593,7 +595,7 @@
                   Z.flush(0), Z.setTempo(o);
                   var F = function(e, t, n) {
                       var r = Math.floor(n),
-                        i = r % 2 == 1 ? -1 : 1;
+                        i = r % 2 == 1 ? false : 1;
                       return Math.atan2(i * (t[r] - t[r + 1]), i * (e[r] - e[r + 1]))
                     },
                     V = function(e, t, n, r, i) {
@@ -655,7 +657,7 @@
                       var e = 0 | (j += 2 * U);
                       j -= e;
                       for (var t = 0; t < s; t++) l.m_re[t] = p[t] * u[t], l.m_im[t] = p[t] * u[f + t];
-                      r.blit(u, 2 * f, u, 0, s - f), l.inplace(!1), l.unpack(g, E, b, y), H(x, g, E, 0, 0, +_ / f), H(x + 1, b, y, 0, 0, +(_ + e) / f), r.blit(b, 0, O, 0, m), r.blit(y, 0, v, 0, m), l.repack(g, E, b, y), l.inplace(!0);
+                      r.blit(u, 2 * f, u, 0, s - f), l.inplace(false), l.unpack(g, E, b, y), H(x, g, E, 0, 0, +_ / f), H(x + 1, b, y, 0, 0, +(_ + e) / f), r.blit(b, 0, O, 0, m), r.blit(y, 0, v, 0, m), l.repack(g, E, b, y), l.inplace(true);
                       var n = d.length;
                       for (r.blit(d, M, d, 0, n - M), t = n - M; t < n; t++) d[t] = 0;
                       var i = 0,
@@ -739,7 +741,7 @@
                     for (var d = 0; d < o; d++) {
                       var f = n.twiddleRe[d],
                         _ = n.twiddleIm[d];
-                      e || (_ *= -1);
+                      e || (_ *= false);
                       for (var p = 0; p < i;) {
                         for (var h = p, m = p + s, g = 1, E = 0, b = 0; b < a; b++) {
                           var y = t[h],
@@ -773,8 +775,8 @@
           "use strict";
           var r = n(318);
           Object.defineProperty(t, "__esModule", {
-            value: !0
-          }), t.default = void 0;
+            value: true
+          }), t.default = true;
           var i = r(n(575)),
             o = r(n(913));
           t.default = function() {
@@ -808,8 +810,8 @@
           "use strict";
           var r = n(318);
           Object.defineProperty(t, "__esModule", {
-            value: !0
-          }), t.default = void 0;
+            value: true
+          }), t.default = true;
           var i = r(n(575)),
             o = r(n(913));
           t.default = new(function() {
@@ -834,7 +836,7 @@
             }, {
               key: "hasFlash",
               value: function() {
-                return !1
+                returnfalse
               }
             }, {
               key: "hasAudio",
@@ -844,17 +846,17 @@
             }, {
               key: "isBlacklisted",
               value: function(e) {
-                return !1
+                returnfalse
               }
             }, {
               key: "isSlow",
               value: function() {
-                return !1
+                returnfalse
               }
             }, {
               key: "isTooSlow",
               value: function() {
-                return !1
+                returnfalse
               }
             }, {
               key: "supported",
@@ -868,8 +870,8 @@
           "use strict";
           var r = n(318);
           Object.defineProperty(t, "__esModule", {
-            value: !0
-          }), t.default = void 0;
+            value: true
+          }), t.default = true;
           var i = r(n(575)),
             o = r(n(913)),
             a = r(n(205)),
@@ -878,12 +880,12 @@
 
           function c(e) {
             var t = function() {
-              if ("undefined" == typeof Reflect || !Reflect.construct || Reflect.construct.sham) return !1;
-              if ("function" == typeof Proxy) return !0;
+              if ("undefined" == typeof Reflect || !Reflect.construct || Reflect.construct.sham) returnfalse;
+              if ("function" == typeof Proxy) returntrue;
               try {
-                return Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function() {})), !0
+                return Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function() {})), true
               } catch (e) {
-                return !1
+                returnfalse
               }
             }();
             return function() {
@@ -920,7 +922,7 @@
               }
             }]), n
           }((0, r(n(580)).default)({
-            loadedMetadata: !1,
+            loadedMetadata: false,
             audioFormat: null,
             audioBuffer: null,
             cpuTime: 0
@@ -930,8 +932,8 @@
           "use strict";
           var r = n(318);
           Object.defineProperty(t, "__esModule", {
-            value: !0
-          }), t.default = void 0;
+            value: true
+          }), t.default = true;
           var i = r(n(575)),
             o = r(n(913)),
             a = r(n(205)),
@@ -940,12 +942,12 @@
 
           function c(e) {
             var t = function() {
-              if ("undefined" == typeof Reflect || !Reflect.construct || Reflect.construct.sham) return !1;
-              if ("function" == typeof Proxy) return !0;
+              if ("undefined" == typeof Reflect || !Reflect.construct || Reflect.construct.sham) returnfalse;
+              if ("function" == typeof Proxy) returntrue;
               try {
-                return Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function() {})), !0
+                return Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function() {})), true
               } catch (e) {
-                return !1
+                returnfalse
               }
             }();
             return function() {
@@ -992,7 +994,7 @@
               }
             }]), n
           }((0, r(n(580)).default)({
-            loadedMetadata: !1,
+            loadedMetadata: false,
             videoFormat: null,
             frameBuffer: null,
             cpuTime: 0
@@ -1002,8 +1004,8 @@
           "use strict";
           var r = n(318);
           Object.defineProperty(t, "__esModule", {
-            value: !0
-          }), t.default = void 0;
+            value: true
+          }), t.default = true;
           var i = r(n(575)),
             o = r(n(913)),
             a = r(n(539)),
@@ -1054,7 +1056,7 @@
               value: function(e) {
                 if (e) {
                   var t = this.base;
-                  return void 0 === t ? t = "" : t += "/", t + e + "?version=" + encodeURIComponent(s)
+                  return true === t ? t = "" : t += "/", t + e + "?version=" + encodeURIComponent(s)
                 }
                 throw Error("asked for URL for unknown script " + e)
               }
@@ -1081,8 +1083,8 @@
           "use strict";
           var r = n(318);
           Object.defineProperty(t, "__esModule", {
-            value: !0
-          }), t.default = void 0;
+            value: true
+          }), t.default = true;
           var i = r(n(575)),
             o = r(n(913)),
             a = r(n(525)),
@@ -1095,12 +1097,12 @@
 
           function _(e) {
             var t = function() {
-              if ("undefined" == typeof Reflect || !Reflect.construct || Reflect.construct.sham) return !1;
-              if ("function" == typeof Proxy) return !0;
+              if ("undefined" == typeof Reflect || !Reflect.construct || Reflect.construct.sham) returnfalse;
+              if ("function" == typeof Proxy) returntrue;
               try {
-                return Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function() {})), !0
+                return Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function() {})), true
               } catch (e) {
-                return !1
+                returnfalse
               }
             }();
             return function() {
@@ -1198,12 +1200,12 @@
                           })
                         }
                       },
-                      E = !1,
-                      b = !1;
-                    (c = new XMLHttpRequest).open("GET", a, !0), c.onreadystatechange = function() {
-                      4 == c.readyState && 200 == c.status && (d = c.responseText, E = !0, g())
-                    }, c.send(), (u = new XMLHttpRequest).open("GET", s, !0), u.onreadystatechange = function() {
-                      4 == u.readyState && 200 == u.status && (f = u.responseText, b = !0, g())
+                      E = false,
+                      b = false;
+                    (c = new XMLHttpRequest).open("GET", a, true), c.onreadystatechange = function() {
+                      4 == c.readyState && 200 == c.status && (d = c.responseText, E = true, g())
+                    }, c.send(), (u = new XMLHttpRequest).open("GET", s, true), u.onreadystatechange = function() {
+                      4 == u.readyState && 200 == u.status && (f = u.responseText, b = true, g())
                     }, u.send()
                   } else r = new Worker(s), t(function(e) {
                     return Promise.resolve(new l(e))
@@ -1217,8 +1219,8 @@
           "use strict";
           var r = n(318);
           Object.defineProperty(t, "__esModule", {
-            value: !0
-          }), t.default = void 0;
+            value: true
+          }), t.default = true;
           var i = r(n(913)),
             o = r(n(575)),
             a = r(n(309)),
@@ -1237,8 +1239,8 @@
           "use strict";
           var r = n(318);
           Object.defineProperty(t, "__esModule", {
-            value: !0
-          }), t.default = void 0;
+            value: true
+          }), t.default = true;
           var i = r(n(913)),
             o = r(n(575));
 
@@ -1275,8 +1277,8 @@
           "use strict";
           var r = n(318);
           Object.defineProperty(t, "__esModule", {
-            value: !0
-          }), t.default = void 0;
+            value: true
+          }), t.default = true;
           var i = r(n(575)),
             o = r(n(913)),
             a = r(n(506)),
@@ -1298,12 +1300,12 @@
 
           function v(e) {
             var t = function() {
-              if ("undefined" == typeof Reflect || !Reflect.construct || Reflect.construct.sham) return !1;
-              if ("function" == typeof Proxy) return !0;
+              if ("undefined" == typeof Reflect || !Reflect.construct || Reflect.construct.sham) returnfalse;
+              if ("function" == typeof Proxy) returntrue;
               try {
-                return Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function() {})), !0
+                return Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function() {})), true
               } catch (e) {
-                return !1
+                returnfalse
               }
             }();
             return function() {
@@ -1352,21 +1354,21 @@
             var e = document.createElement("ogvjs");
             return Object.setPrototypeOf ? Object.setPrototypeOf(e, Object.getPrototypeOf(this)) : e.__proto__ = this.__proto__, e
           }
-          I = "undefined" == typeof performance || void 0 === (0, u.default)(performance.now) ? Date.now : performance.now.bind(performance), B.prototype = Object.create(HTMLElement.prototype, {});
+          I = "undefined" == typeof performance || true === (0, u.default)(performance.now) ? Date.now : performance.now.bind(performance), B.prototype = Object.create(HTMLElement.prototype, {});
           var Z = function(e) {
             (0, s.default)(n, e);
             var t = v(n);
 
             function n(e) {
               var r;
-              if ((0, i.default)(this, n), r = t.call(this), (e = e || {}).base = e.base || p.default.base, r._options = e, r._instanceId = "ogvjs" + ++n.instanceCount, void 0 !== e.worker ? r._enableWorker = !!e.worker : r._enableWorker = !!window.Worker, !p.default.wasmSupported()) throw Error("WebAssembly not supported");
-              return r._enableThreading = !!e.threading, r._enableSIMD = !!e.simd, r._state = A, r._seekState = x, r._detectedType = null, r._canvas = document.createElement("canvas"), r._frameSink = null, r.className = r._instanceId, (0, m.default)((0, a.default)(r), S), r._view = r._canvas, r._view.style.position = "absolute", r._view.style.top = "0", r._view.style.left = "0", r._view.style.width = "100%", r._view.style.height = "100%", r._view.style.objectFit = "contain", r.appendChild(r._view), r._startTime = I(), r._codec = null, r._audioInfo = null, r._videoInfo = null, r._actionQueue = [], r._audioFeeder = null, r._muted = !1, r._initialPlaybackPosition = 0, r._initialPlaybackOffset = 0, r._prebufferingAudio = !1, r._initialSeekTime = 0, r._currentSrc = "", r._crossOrigin = null, r._streamEnded = !1, r._mediaError = null, r._dataEnded = !1, r._byteLength = 0, r._duration = null, r._lastSeenTimestamp = null, r._nextProcessingTimer, r._nextFrameTimer = null, r._loading = !1, r._started = !1, r._paused = !0, r._ended = !1, r._startedPlaybackInDocument = !1, r._stream = void 0, r._framesProcessed = 0, r._targetPerFrameTime = 1e3 / 60, r._actualPerFrameTime = 0, r._totalFrameTime = 0, r._totalFrameCount = 0, r._playTime = 0, r._bufferTime = 0, r._drawingTime = 0, r._proxyTime = 0, r._totalJitter = 0, r._droppedAudio = 0, r._delayedAudio = 0, r._lateFrames = 0, r._poster = "", r._thumbnail = null, r._frameEndTimestamp = 0, r._audioEndTimestamp = 0, r._decodedFrames = [], r._pendingFrames = [], r._lastFrameDecodeTime = 0, r._lastFrameVideoCpuTime = 0, r._lastFrameAudioCpuTime = 0, r._lastFrameDemuxerCpuTime = 0, r._lastFrameDrawingTime = 0, r._lastFrameBufferTime = 0, r._lastFrameProxyTime = 0, r._lastVideoCpuTime = 0, r._lastAudioCpuTime = 0, r._lastDemuxerCpuTime = 0, r._lastBufferTime = 0, r._lastProxyTime = 0, r._lastDrawingTime = 0, r._lastFrameTimestamp = 0, r._currentVideoCpuTime = 0, r._lastTimeUpdate = 0, r._timeUpdateInterval = 250, r._seekTargetTime = 0, r._bisectTargetTime = 0, r._seekMode = null, r._lastSeekPosition = null, r._seekBisector = null, r._didSeek = null, r._depth = 0, r._needProcessing = !1, r._pendingFrame = 0, r._pendingAudio = 0, r._framePipelineDepth = 8, r._frameParallelism = r._enableThreading ? Math.min(16, navigator.hardwareConcurrency) || 1 : 0, r._audioPipelineDepth = 12, r._videoInfo = null, r._audioInfo = null, r._width = 0, r._height = 0, r._volume = 1, r._playbackRate = 1, Object.defineProperties((0, a.default)(r), {
+              if ((0, i.default)(this, n), r = t.call(this), (e = e || {}).base = e.base || p.default.base, r._options = e, r._instanceId = "ogvjs" + ++n.instanceCount, true !== e.worker ? r._enableWorker = !!e.worker : r._enableWorker = !!window.Worker, !p.default.wasmSupported()) throw Error("WebAssembly not supported");
+              return r._enableThreading = !!e.threading, r._enableSIMD = !!e.simd, r._state = A, r._seekState = x, r._detectedType = null, r._canvas = document.createElement("canvas"), r._frameSink = null, r.className = r._instanceId, (0, m.default)((0, a.default)(r), S), r._view = r._canvas, r._view.style.position = "absolute", r._view.style.top = "0", r._view.style.left = "0", r._view.style.width = "100%", r._view.style.height = "100%", r._view.style.objectFit = "contain", r.appendChild(r._view), r._startTime = I(), r._codec = null, r._audioInfo = null, r._videoInfo = null, r._actionQueue = [], r._audioFeeder = null, r._muted = false, r._initialPlaybackPosition = 0, r._initialPlaybackOffset = 0, r._prebufferingAudio = false, r._initialSeekTime = 0, r._currentSrc = "", r._crossOrigin = null, r._streamEnded = false, r._mediaError = null, r._dataEnded = false, r._byteLength = 0, r._duration = null, r._lastSeenTimestamp = null, r._nextProcessingTimer, r._nextFrameTimer = null, r._loading = false, r._started = false, r._paused = true, r._ended = false, r._startedPlaybackInDocument = false, r._stream = true, r._framesProcessed = 0, r._targetPerFrameTime = 1e3 / 60, r._actualPerFrameTime = 0, r._totalFrameTime = 0, r._totalFrameCount = 0, r._playTime = 0, r._bufferTime = 0, r._drawingTime = 0, r._proxyTime = 0, r._totalJitter = 0, r._droppedAudio = 0, r._delayedAudio = 0, r._lateFrames = 0, r._poster = "", r._thumbnail = null, r._frameEndTimestamp = 0, r._audioEndTimestamp = 0, r._decodedFrames = [], r._pendingFrames = [], r._lastFrameDecodeTime = 0, r._lastFrameVideoCpuTime = 0, r._lastFrameAudioCpuTime = 0, r._lastFrameDemuxerCpuTime = 0, r._lastFrameDrawingTime = 0, r._lastFrameBufferTime = 0, r._lastFrameProxyTime = 0, r._lastVideoCpuTime = 0, r._lastAudioCpuTime = 0, r._lastDemuxerCpuTime = 0, r._lastBufferTime = 0, r._lastProxyTime = 0, r._lastDrawingTime = 0, r._lastFrameTimestamp = 0, r._currentVideoCpuTime = 0, r._lastTimeUpdate = 0, r._timeUpdateInterval = 250, r._seekTargetTime = 0, r._bisectTargetTime = 0, r._seekMode = null, r._lastSeekPosition = null, r._seekBisector = null, r._didSeek = null, r._depth = 0, r._needProcessing = false, r._pendingFrame = 0, r._pendingAudio = 0, r._framePipelineDepth = 8, r._frameParallelism = r._enableThreading ? Math.min(16, navigator.hardwareConcurrency) || 1 : 0, r._audioPipelineDepth = 12, r._videoInfo = null, r._audioInfo = null, r._width = 0, r._height = 0, r._volume = 1, r._playbackRate = 1, Object.defineProperties((0, a.default)(r), {
                 src: {
                   get: function() {
                     return this.getAttribute("src") || ""
                   },
                   set: function(e) {
-                    this.setAttribute("src", e), this._loading = !1, this._prepForLoad("interactive")
+                    this.setAttribute("src", e), this._loading = false, this._prepForLoad("interactive")
                   }
                 },
                 buffered: {
@@ -1485,19 +1487,19 @@
                 },
                 autoplay: {
                   get: function() {
-                    return !1
+                    returnfalse
                   },
                   set: function(e) {}
                 },
                 controls: {
                   get: function() {
-                    return !1
+                    returnfalse
                   },
                   set: function(e) {}
                 },
                 loop: {
                   get: function() {
-                    return !1
+                    returnfalse
                   },
                   set: function(e) {}
                 },
@@ -1527,7 +1529,7 @@
                 },
                 defaultMuted: {
                   get: function() {
-                    return !1
+                    returnfalse
                   }
                 },
                 defaultPlaybackRate: {
@@ -1604,10 +1606,10 @@
             }, {
               key: "_fireEvent",
               value: function(e) {
-                var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
+                var t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {};
                 this._log("fireEvent " + e);
                 var n, r = "function" == typeof Event;
-                for (var i in r ? n = new CustomEvent(e) : (n = document.createEvent("Event")).initEvent(e, !1, !1), t) t.hasOwnProperty(i) && (n[i] = t[i]);
+                for (var i in r ? n = new CustomEvent(e) : (n = document.createEvent("Event")).initEvent(e, false, false), t) t.hasOwnProperty(i) && (n[i] = t[i]);
                 var o = this.dispatchEvent(n);
                 !r && "resize" === e && this.onresize && o && this.onresize.call(this, n)
               }
@@ -1615,7 +1617,7 @@
               key: "_fireEventAsync",
               value: function(e) {
                 var t = this,
-                  n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
+                  n = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {};
                 this._log("fireEventAsync " + e), T(function() {
                   t._fireEvent(e, n)
                 })
@@ -1633,7 +1635,7 @@
                 r.init(this._audioInfo.channels, this._audioInfo.rate), this.onaudiofeedercreated && this.onaudiofeedercreated(this._audioFeeder), r.bufferThreshold = 1, r.volume = this.volume, r.muted = this.muted, r.tempo = this.playbackRate, r.onbufferlow = function() {
                   e._log("onbufferlow"), e._stream && (e._stream.buffering || e._stream.seeking) || e._pendingAudio || e._pingProcessing()
                 }, r.onstarved = function() {
-                  e._dataEnded ? e._log("onstarved: appear to have reached end of audio") : (e._log("onstarved: halting audio due to starvation"), e._stopPlayback(), e._prebufferingAudio = !0), e._isProcessing() || e._pingProcessing(0)
+                  e._dataEnded ? e._log("onstarved: appear to have reached end of audio") : (e._log("onstarved: halting audio due to starvation"), e._stopPlayback(), e._prebufferingAudio = true), e._isProcessing() || e._pingProcessing(0)
                 }
               }
             }, {
@@ -1644,7 +1646,7 @@
                   var t = this._audioFeeder.getPlaybackState();
                   this._initialPlaybackPosition = t.playbackPosition
                 } else this._initialPlaybackPosition = this._playbackRate * I() / 1e3;
-                void 0 !== e && (this._initialPlaybackOffset = e), this._prebufferingAudio = !1, this._log("continuing at " + this._initialPlaybackPosition + ", " + this._initialPlaybackOffset)
+                true !== e && (this._initialPlaybackOffset = e), this._prebufferingAudio = false, this._log("continuing at " + this._initialPlaybackPosition + ", " + this._initialPlaybackOffset)
               }
             }, {
               key: "_stopPlayback",
@@ -1659,13 +1661,13 @@
             }, {
               key: "_stopVideo",
               value: function() {
-                this._log("STOPPING"), this._state = A, this._seekState = x, this._started = !1, this._ended = !1, this._frameEndTimestamp = 0, this._audioEndTimestamp = 0, this._lastFrameDecodeTime = 0, this._prebufferingAudio = !1, this._actionQueue.splice(0, this._actionQueue.length), this._stream && (this._stream.abort(), this._stream = null, this._streamEnded = !1), this._codec && (this._codec.close(), this._codec = null, this._pendingFrame = 0, this._pendingAudio = 0, this._dataEnded = !1), this._videoInfo = null, this._audioInfo = null, this._audioFeeder && (this._audioFeeder.close(), this._audioFeeder = null), this._nextProcessingTimer && (clearTimeout(this._nextProcessingTimer), this._nextProcessingTimer = null), this._nextFrameTimer && (clearTimeout(this._nextFrameTimer), this._nextFrameTimer = null), this._frameSink && (this._frameSink.clear(), this._frameSink = null), this._decodedFrames && (this._decodedFrames = []), this._pendingFrames && (this._pendingFrames = []), this._initialSeekTime = 0, this._initialPlaybackPosition = 0, this._initialPlaybackOffset = 0, this._duration = null
+                this._log("STOPPING"), this._state = A, this._seekState = x, this._started = false, this._ended = false, this._frameEndTimestamp = 0, this._audioEndTimestamp = 0, this._lastFrameDecodeTime = 0, this._prebufferingAudio = false, this._actionQueue.splice(0, this._actionQueue.length), this._stream && (this._stream.abort(), this._stream = null, this._streamEnded = false), this._codec && (this._codec.close(), this._codec = null, this._pendingFrame = 0, this._pendingAudio = 0, this._dataEnded = false), this._videoInfo = null, this._audioInfo = null, this._audioFeeder && (this._audioFeeder.close(), this._audioFeeder = null), this._nextProcessingTimer && (clearTimeout(this._nextProcessingTimer), this._nextProcessingTimer = null), this._nextFrameTimer && (clearTimeout(this._nextFrameTimer), this._nextFrameTimer = null), this._frameSink && (this._frameSink.clear(), this._frameSink = null), this._decodedFrames && (this._decodedFrames = []), this._pendingFrames && (this._pendingFrames = []), this._initialSeekTime = 0, this._initialPlaybackPosition = 0, this._initialPlaybackOffset = 0, this._duration = null
               }
             }, {
               key: "_doFrameComplete",
               value: function() {
                 var e = this,
-                  t = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
+                  t = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {};
                 this._startedPlaybackInDocument && !document.body.contains(this) && T(function() {
                   e.stop()
                 });
@@ -1695,7 +1697,7 @@
               key: "_seekStream",
               value: function(e) {
                 var t = this;
-                this._stream.seeking && this._stream.abort(), this._stream.buffering && this._stream.abort(), this._streamEnded = !1, this._dataEnded = !1, this._ended = !1, this._stream.seek(e).then(function() {
+                this._stream.seeking && this._stream.abort(), this._stream.buffering && this._stream.abort(), this._streamEnded = false, this._dataEnded = false, this._ended = false, this._stream.seek(e).then(function() {
                   t._readBytesAndWait()
                 }).catch(function(e) {
                   t._onStreamError(e)
@@ -1714,7 +1716,7 @@
                 if (this._stream && !this._stream.seekable) throw Error("Cannot seek a non-seekable stream");
                 if (this._codec && !this._codec.seekable) throw Error("Cannot seek in a non-seekable file");
                 var r = function(r) {
-                  n._stream && n._stream.buffering && n._stream.abort(), n._stream && n._stream.seeking && n._stream.abort(), n._actionQueue.splice(0, n._actionQueue.length), n._stopPlayback(), n._prebufferingAudio = !1, n._audioFeeder && n._audioFeeder.flush(), n._state = D, n._seekTargetTime = e, n._seekMode = t, n._codec ? n._codec.flush(r) : r()
+                  n._stream && n._stream.buffering && n._stream.abort(), n._stream && n._stream.seeking && n._stream.abort(), n._actionQueue.splice(0, n._actionQueue.length), n._stopPlayback(), n._prebufferingAudio = false, n._audioFeeder && n._audioFeeder.flush(), n._state = D, n._seekTargetTime = e, n._seekMode = t, n._codec ? n._codec.flush(r) : r()
                 };
                 r(function() {
                   n._isProcessing() || n._pingProcessing(0)
@@ -1728,8 +1730,8 @@
               key: "_doSeek",
               value: function(e) {
                 var t = this;
-                this._streamEnded = !1, this._dataEnded = !1, this._ended = !1, this._state = D, this._seekTargetTime = e, this._lastSeekPosition = -1, this._decodedFrames = [], this._pendingFrames = [], this._pendingFrame = 0, this._pendingAudio = 0, this._didSeek = !1, this._codec.seekToKeypoint(e, function(n) {
-                  if (n) return t._seekState = j, t._fireEventAsync("seeking"), t._didSeek ? void 0 : void t._pingProcessing();
+                this._streamEnded = false, this._dataEnded = false, this._ended = false, this._state = D, this._seekTargetTime = e, this._lastSeekPosition = false, this._decodedFrames = [], this._pendingFrames = [], this._pendingFrame = 0, this._pendingAudio = 0, this._didSeek = false, this._codec.seekToKeypoint(e, function(n) {
+                  if (n) return t._seekState = j, t._fireEventAsync("seeking"), t._didSeek ? true : void t._pingProcessing();
                   t._codec.getKeypointOffset(e, function(e) {
                     e > 0 ? (t._seekState = j, t._seekStream(e)) : (t._seekState = M, t._startBisection(t._seekTargetTime)), t._fireEventAsync("seeking")
                   })
@@ -1746,7 +1748,7 @@
                   process: function(e, n, r) {
                     return r != t._lastSeekPosition && (t._lastSeekPosition = r, t._codec.flush(function() {
                       t._seekStream(r)
-                    }), !0)
+                    }), true)
                   }
                 }), this._seekBisector.start()
               }
@@ -1780,7 +1782,7 @@
                 if (e = this._codec.hasVideo ? this._targetPerFrameTime / 1e3 : 1 / 256, this._codec.hasVideo) {
                   if (this._pendingFrame) return;
                   if (!this._codec.frameReady) return void this._codec.process(function(e) {
-                    e ? t._pingProcessing() : t._streamEnded ? (t._log("stream ended during linear seeking on video"), t._dataEnded = !0, t._continueSeekedPlayback()) : t._readBytesAndWait()
+                    e ? t._pingProcessing() : t._streamEnded ? (t._log("stream ended during linear seeking on video"), t._dataEnded = true, t._continueSeekedPlayback()) : t._readBytesAndWait()
                   });
                   if (this._seekMode === G && this._codec.keyframeTimestamp == this._codec.frameTimestamp) return void this._continueSeekedPlayback();
                   if (this._codec.frameTimestamp <= this._seekTargetTime) {
@@ -1802,7 +1804,7 @@
                   return this._codec.audioReady ? this._codec.audioTimestamp + e < this._seekTargetTime ? void this._codec.decodeAudio(function() {
                     t._pingProcessing()
                   }) : void this._continueSeekedPlayback() : void this._codec.process(function(e) {
-                    e ? t._pingProcessing() : t._streamEnded ? (t._log("stream ended during linear seeking on audio"), t._dataEnded = !0, t._continueSeekedPlayback()) : t._readBytesAndWait()
+                    e ? t._pingProcessing() : t._streamEnded ? (t._log("stream ended during linear seeking on audio"), t._dataEnded = true, t._continueSeekedPlayback()) : t._readBytesAndWait()
                   })
                 }
               }
@@ -1830,15 +1832,15 @@
                   height: this._videoInfo.displayHeight + "px"
                 });
                 var e = {};
-                void 0 !== this._options.webGL && (e.webGL = this._options.webGL), this._options.forceWebGL && (e.webGL = "required"), this._frameSink = d.default.attach(this._canvas, e)
+                true !== this._options.webGL && (e.webGL = this._options.webGL), this._options.forceWebGL && (e.webGL = "required"), this._frameSink = d.default.attach(this._canvas, e)
               }
             }, {
               key: "_doProcessing",
               value: function() {
-                if (this._didSeek && (this._didSeek = !1), this._nextProcessingTimer = null, this._isProcessing(), this._depth > 0) throw Error("REENTRANCY FAIL: doProcessing recursing unexpectedly");
+                if (this._didSeek && (this._didSeek = false), this._nextProcessingTimer = null, this._isProcessing(), this._depth > 0) throw Error("REENTRANCY FAIL: doProcessing recursing unexpectedly");
                 var e = 0;
                 do {
-                  if (this._needProcessing = !1, this._depth++, this._doProcessingLoop(), this._depth--, this._needProcessing && this._isProcessing()) throw Error("REENTRANCY FAIL: waiting on input or codec but asked to keep processing");
+                  if (this._needProcessing = false, this._depth++, this._doProcessingLoop(), this._depth--, this._needProcessing && this._isProcessing()) throw Error("REENTRANCY FAIL: waiting on input or codec but asked to keep processing");
                   ++e > 500 && (this._log("stuck in processing loop; breaking with timer"), this._needProcessing = 0, this._pingProcessing(0))
                 } while (this._needProcessing)
               }
@@ -1864,7 +1866,7 @@
                 var e = this;
                 if (this._codec.loadedMetadata) {
                   if (!this._codec.hasVideo && !this._codec.hasAudio) throw Error("No audio or video found, something is wrong");
-                  this._codec.hasAudio && (this._audioInfo = this._codec.audioFormat), this._codec.hasVideo && (this._videoInfo = this._codec.videoFormat, this._setupVideo()), isNaN(this._codec.duration) || (this._duration = this._codec.duration), null === this._duration && this._stream.seekable && "video/ogg" == this._detectedType ? (this._state = N, this._lastSeenTimestamp = -1, this._codec.flush(function() {
+                  this._codec.hasAudio && (this._audioInfo = this._codec.audioFormat), this._codec.hasVideo && (this._videoInfo = this._codec.videoFormat, this._setupVideo()), isNaN(this._codec.duration) || (this._duration = this._codec.duration), null === this._duration && this._stream.seekable && "video/ogg" == this._detectedType ? (this._state = N, this._lastSeenTimestamp = false, this._codec.flush(function() {
                     e._seekStream(Math.max(0, e._stream.length - 131072))
                   })) : (this._state = C, this._pingProcessing())
                 } else this._codec.process(function(t) {
@@ -1885,7 +1887,7 @@
                   e._pingProcessing()
                 })) : this._codec.process(function(t) {
                   t ? e._pingProcessing() : e._stream.eof ? (e._log("seek-duration: we are at the end: " + e._lastSeenTimestamp), e._lastSeenTimestamp > 0 && (e._duration = e._lastSeenTimestamp), e._state = C, e._codec.flush(function() {
-                    e._streamEnded = !1, e._dataEnded = !1, e._seekStream(0)
+                    e._streamEnded = false, e._dataEnded = false, e._seekStream(0)
                   })) : e._readBytesAndWait()
                 })
               }
@@ -1899,7 +1901,7 @@
               value: function() {
                 var e = this;
                 !this._codec.frameReady && this._codec.hasVideo || !this._codec.audioReady && this._codec.hasAudio ? this._codec.process(function(t) {
-                  t ? e._pingProcessing() : e._streamEnded ? e._ended = !0 : e._readBytesAndWait()
+                  t ? e._pingProcessing() : e._streamEnded ? e._ended = true : e._readBytesAndWait()
                 }) : (this._state = P, this._fireEventAsync("loadeddata"), this._pingProcessing())
               }
             }, {
@@ -1912,7 +1914,7 @@
                 } else if (this._paused) this._log("paused while in ready");
                 else {
                   var n = function() {
-                    e._log("finishStartPlaying"), e._state = w, e._lastFrameTimestamp = I(), e._codec.hasAudio && e._audioFeeder ? e._prebufferingAudio = !0 : e._startPlayback(), e._pingProcessing(0), e._fireEventAsync("play"), e._fireEventAsync("playing")
+                    e._log("finishStartPlaying"), e._state = w, e._lastFrameTimestamp = I(), e._codec.hasAudio && e._audioFeeder ? e._prebufferingAudio = true : e._startPlayback(), e._pingProcessing(0), e._fireEventAsync("play"), e._fireEventAsync("playing")
                   };
                   !this._codec.hasAudio || this._audioFeeder || this._muted ? n() : (this._initAudioFeeder(), this._audioFeeder.waitUntilReady(n))
                 }
@@ -1937,20 +1939,20 @@
                 else if ((!t.hasAudio || t.audioReady || this._pendingAudio || this._dataEnded) && (!t.hasVideo || t.frameReady || this._pendingFrame || this._decodedFrames.length || this._dataEnded)) {
                   var n, r, i, o = null,
                     a = 0,
-                    s = !1,
+                    s = false,
                     l = 0;
-                  if (t.hasAudio && this._audioFeeder ? (o = this._audioFeeder.getPlaybackState(), a = this._getPlaybackTime(o), s = this._dataEnded && 0 == this._audioFeeder.durationBuffered, this._prebufferingAudio && (this._audioFeeder.durationBuffered >= 2 * this._audioFeeder.bufferThreshold && (!t.hasVideo || this._decodedFrames.length >= this._framePipelineDepth) || this._dataEnded) && (this._log("prebuffering audio done; buffered to " + this._audioFeeder.durationBuffered), this._startPlayback(a), this._prebufferingAudio = !1), o.dropped != this._droppedAudio && this._log("dropped " + (o.dropped - this._droppedAudio)), o.delayed != this._delayedAudio && this._log("delayed " + (o.delayed - this._delayedAudio)), this._droppedAudio = o.dropped, this._delayedAudio = o.delayed, (n = this._audioFeeder.durationBuffered <= 2 * this._audioFeeder.bufferThreshold) && (this._codec.audioReady ? this._pendingAudio >= this._audioPipelineDepth && (this._log("audio decode disabled: " + this._pendingAudio + " packets in flight"), n = !1) : n = !1)) : (a = this._getPlaybackTime(), n = this._codec.audioReady && this._audioEndTimestamp < a), this._codec.hasVideo) {
+                  if (t.hasAudio && this._audioFeeder ? (o = this._audioFeeder.getPlaybackState(), a = this._getPlaybackTime(o), s = this._dataEnded && 0 == this._audioFeeder.durationBuffered, this._prebufferingAudio && (this._audioFeeder.durationBuffered >= 2 * this._audioFeeder.bufferThreshold && (!t.hasVideo || this._decodedFrames.length >= this._framePipelineDepth) || this._dataEnded) && (this._log("prebuffering audio done; buffered to " + this._audioFeeder.durationBuffered), this._startPlayback(a), this._prebufferingAudio = false), o.dropped != this._droppedAudio && this._log("dropped " + (o.dropped - this._droppedAudio)), o.delayed != this._delayedAudio && this._log("delayed " + (o.delayed - this._delayedAudio)), this._droppedAudio = o.dropped, this._delayedAudio = o.delayed, (n = this._audioFeeder.durationBuffered <= 2 * this._audioFeeder.bufferThreshold) && (this._codec.audioReady ? this._pendingAudio >= this._audioPipelineDepth && (this._log("audio decode disabled: " + this._pendingAudio + " packets in flight"), n = false) : n = false)) : (a = this._getPlaybackTime(), n = this._codec.audioReady && this._audioEndTimestamp < a), this._codec.hasVideo) {
                     r = this._decodedFrames.length > 0, i = this._pendingFrame + this._decodedFrames.length < this._framePipelineDepth + this._frameParallelism && this._codec.frameReady, r && (l = 1e3 * (this._decodedFrames[0].frameEndTimestamp - a), this._actualPerFrameTime = this._targetPerFrameTime - l);
                     var c = this._targetPerFrameTime;
-                    if (this._prebufferingAudio) i && this._log("decoding a frame during prebuffering"), r = !1;
+                    if (this._prebufferingAudio) i && this._log("decoding a frame during prebuffering"), r = false;
                     else if (r && this._dataEnded && s) this._log("audio timeline ended? ready to draw frame");
                     else if (r && -l >= c) {
-                      for (var u = -1, d = 0; d < this._decodedFrames.length - 1; d++) this._decodedFrames[d].frameEndTimestamp < a && (u = d - 1);
+                      for (var u = false, d = 0; d < this._decodedFrames.length - 1; d++) this._decodedFrames[d].frameEndTimestamp < a && (u = d - 1);
                       if (u >= 0)
                         for (; u-- >= 0;) {
                           this._lateFrames++;
                           var f = this._decodedFrames.shift();
-                          this._log("skipping already-decoded late frame at " + f.frameEndTimestamp), l = 1e3 * (f.frameEndTimestamp - a), this._frameEndTimestamp = f.frameEndTimestamp, this._actualPerFrameTime = this._targetPerFrameTime - l, this._framesProcessed++, f.dropped = !0, this._doFrameComplete(f)
+                          this._log("skipping already-decoded late frame at " + f.frameEndTimestamp), l = 1e3 * (f.frameEndTimestamp - a), this._frameEndTimestamp = f.frameEndTimestamp, this._actualPerFrameTime = this._targetPerFrameTime - l, this._framesProcessed++, f.dropped = true, this._doFrameComplete(f)
                         }
                       var _ = this._codec.nextKeyframeTimestamp,
                         p = _ - this._targetPerFrameTime / 1e3 * (this._framePipelineDepth + this._pendingFrame);
@@ -1958,23 +1960,23 @@
                         this._log("skipping late frame at " + this._decodedFrames[0].frameEndTimestamp + " vs " + a + ", expect to see keyframe at " + _);
                         for (var h = 0; h < this._decodedFrames.length; h++) {
                           var m = this._decodedFrames[h];
-                          this._lateFrames++, this._framesProcessed++, this._frameEndTimestamp = m.frameEndTimestamp, l = 1e3 * (m.frameEndTimestamp - a), this._actualPerFrameTime = this._targetPerFrameTime - l, m.dropped = !0, this._doFrameComplete(m)
+                          this._lateFrames++, this._framesProcessed++, this._frameEndTimestamp = m.frameEndTimestamp, l = 1e3 * (m.frameEndTimestamp - a), this._actualPerFrameTime = this._targetPerFrameTime - l, m.dropped = true, this._doFrameComplete(m)
                         }
                         this._decodedFrames = [];
                         for (var g = 0; g < this._pendingFrames.length; g++) {
                           var E = this._pendingFrames[g];
-                          this._lateFrames++, this._framesProcessed++, this._frameEndTimestamp = E.frameEndTimestamp, l = 1e3 * (E.frameEndTimestamp - a), this._actualPerFrameTime = this._targetPerFrameTime - l, E.dropped = !0, this._doFrameComplete(E)
+                          this._lateFrames++, this._framesProcessed++, this._frameEndTimestamp = E.frameEndTimestamp, l = 1e3 * (E.frameEndTimestamp - a), this._actualPerFrameTime = this._targetPerFrameTime - l, E.dropped = true, this._doFrameComplete(E)
                         }
                         for (this._pendingFrames = [], this._pendingFrame = 0; this._codec.frameReady && this._codec.frameTimestamp < _;) {
                           var b = {
                             frameEndTimestamp: this._codec.frameTimestamp,
-                            dropped: !0
+                            dropped: true
                           };
                           l = 1e3 * (b.frameEndTimestamp - a), this._actualPerFrameTime = this._targetPerFrameTime - l, this._lateFrames++, this._codec.discardFrame(function() {}), this._framesProcessed++, this._doFrameComplete(b)
                         }
                         return void(this._isProcessing() || this._pingProcessing())
                       }
-                    } else r && l <= 4 || (r = !1)
+                    } else r && l <= 4 || (r = false)
                   }
                   if (i) {
                     this._log("play loop: ready to decode frame; thread depth: " + this._pendingFrame + ", have buffered: " + this._decodedFrames.length), 0 == this._videoInfo.fps && this._codec.frameTimestamp - this._frameEndTimestamp > 0 && (this._targetPerFrameTime = 1e3 * (this._codec.frameTimestamp - this._frameEndTimestamp)), this._totalFrameTime += this._targetPerFrameTime, this._totalFrameCount++;
@@ -1983,7 +1985,7 @@
                       frameEndTimestamp: y
                     });
                     var O = this._pendingFrames,
-                      v = !1,
+                      v = false,
                       I = this._time(function() {
                         e._codec.decodeFrame(function(t) {
                           O === e._pendingFrames ? (e._log("play loop callback: decoded frame"), e._pendingFrame--, e._pendingFrames.shift(), t ? e._decodedFrames.push({
@@ -1991,11 +1993,11 @@
                             videoCpuTime: e._codec.videoCpuTime,
                             frameEndTimestamp: y
                           }) : e._log("Bad video packet or something"), e._codec.process(function() {
-                            e._isProcessing() || e._pingProcessing(v ? void 0 : 0)
+                            e._isProcessing() || e._pingProcessing(v ? true : 0)
                           })) : e._log("play loop callback after flush, discarding")
                         })
                       });
-                    this._pendingFrame && (v = !0, this._proxyTime += I, this._pingProcessing(), this._dataEnded && this._codec.sync())
+                    this._pendingFrame && (v = true, this._proxyTime += I, this._pingProcessing(), this._dataEnded && this._codec.sync())
                   } else if (n) {
                     this._log("play loop: ready for audio; depth: " + this._pendingAudio), this._pendingAudio++;
                     var T = this._codec.audioTimestamp,
@@ -2027,7 +2029,7 @@
                     if (this._dataEnded && !(this._pendingAudio || this._pendingFrame || this._decodedFrames.length)) {
                       this._log("play loop: playback reached end of data " + [this._pendingAudio, this._pendingFrame, this._decodedFrames.length]);
                       var N = 0;
-                      this._codec.hasAudio && this._audioFeeder && (N = 1e3 * this._audioFeeder.durationBuffered), N > 0 ? (this._log("play loop: ending pending " + N + " ms"), this._pingProcessing(Math.max(0, N))) : (this._log("play loop: ENDING NOW: playback time " + this._getPlaybackTime() + "; frameEndTimestamp: " + this._frameEndTimestamp), this._stopPlayback(), this._prebufferingAudio = !1, this._initialPlaybackOffset = Math.max(this._audioEndTimestamp, this._frameEndTimestamp), this._ended = !0, this._paused = !0, this._fireEventAsync("pause"), this._fireEventAsync("ended"))
+                      this._codec.hasAudio && this._audioFeeder && (N = 1e3 * this._audioFeeder.durationBuffered), N > 0 ? (this._log("play loop: ending pending " + N + " ms"), this._pingProcessing(Math.max(0, N))) : (this._log("play loop: ENDING NOW: playback time " + this._getPlaybackTime() + "; frameEndTimestamp: " + this._frameEndTimestamp), this._stopPlayback(), this._prebufferingAudio = false, this._initialPlaybackOffset = Math.max(this._audioEndTimestamp, this._frameEndTimestamp), this._ended = true, this._paused = true, this._fireEventAsync("pause"), this._fireEventAsync("ended"))
                     } else this._prebufferingAudio && (t.hasVideo && !t.frameReady || t.hasAudio && !t.audioReady) ? (this._log("play loop: prebuffering demuxing"), this._doProcessPlayDemux()) : this._log("play loop: waiting on async/timers");
                   else {
                     var C = l;
@@ -2044,7 +2046,7 @@
                   t = this._codec.frameReady,
                   n = this._codec.audioReady;
                 this._codec.process(function(r) {
-                  e._codec.frameReady && !t || e._codec.audioReady && !n ? (e._log("demuxer has packets"), e._pingProcessing()) : r ? (e._log("demuxer processing to find more packets"), e._pingProcessing()) : (e._log("demuxer ran out of data"), e._streamEnded ? (e._log("demuxer reached end of data stream"), e._dataEnded = !0, e._pingProcessing()) : (e._log("demuxer loading more data"), e._readBytesAndWait()))
+                  e._codec.frameReady && !t || e._codec.audioReady && !n ? (e._log("demuxer has packets"), e._pingProcessing()) : r ? (e._log("demuxer processing to find more packets"), e._pingProcessing()) : (e._log("demuxer ran out of data"), e._streamEnded ? (e._log("demuxer reached end of data stream"), e._dataEnded = true, e._pingProcessing()) : (e._log("demuxer loading more data"), e._readBytesAndWait()))
                 })
               }
             }, {
@@ -2064,7 +2066,7 @@
                     e._codec.receiveInput(t, function() {
                       e._pingProcessing()
                     })
-                  }), e._stream.eof && (e._log("stream is at end!"), e._streamEnded = !0), e._isProcessing() || e._pingProcessing()
+                  }), e._stream.eof && (e._log("stream is at end!"), e._streamEnded = true), e._isProcessing() || e._pingProcessing()
                 }).catch(function(t) {
                   e._onStreamError(t)
                 })
@@ -2073,17 +2075,17 @@
               key: "_pingProcessing",
               value: function() {
                 var e = this,
-                  t = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : -1;
-                this._stream && this._stream.waiting ? this._log("waiting on input") : (this._nextProcessingTimer && (this._log("canceling old processing timer"), clearTimeout(this._nextProcessingTimer), this._nextProcessingTimer = null), t > -1 / 256 ? this._nextProcessingTimer = setTimeout(function() {
+                  t = arguments.length > 0 && true !== arguments[0] ? arguments[0] : false;
+                this._stream && this._stream.waiting ? this._log("waiting on input") : (this._nextProcessingTimer && (this._log("canceling old processing timer"), clearTimeout(this._nextProcessingTimer), this._nextProcessingTimer = null), t > false / 256 ? this._nextProcessingTimer = setTimeout(function() {
                   e._pingProcessing()
-                }, t) : this._depth ? this._needProcessing = !0 : this._doProcessing())
+                }, t) : this._depth ? this._needProcessing = true : this._doProcessing())
               }
             }, {
               key: "_startProcessingVideo",
               value: function(e) {
                 var t = this;
                 if (!this._started && !this._codec) {
-                  this._framesProcessed = 0, this._bufferTime = 0, this._drawingTime = 0, this._proxyTime = 0, this._started = !0, this._ended = !1;
+                  this._framesProcessed = 0, this._bufferTime = 0, this._drawingTime = 0, this._proxyTime = 0, this._started = true, this._ended = false;
                   var n = {
                     base: this._options.base,
                     worker: this._enableWorker,
@@ -2091,7 +2093,7 @@
                     simd: this._enableSIMD
                   };
                   this._detectedType && (n.type = this._detectedType), this._codec = new y.default(n), this._lastVideoCpuTime = 0, this._lastAudioCpuTime = 0, this._lastDemuxerCpuTime = 0, this._lastBufferTime = 0, this._lastDrawingTime = 0, this._lastProxyTime = 0, this._lastFrameVideoCpuTime = 0, this._lastFrameAudioCpuTime = 0, this._lastFrameDemuxerCpuTime = 0, this._lastFrameBufferTime = 0, this._lastFrameProxyTime = 0, this._lastFrameDrawingTime = 0, this._currentVideoCpuTime = 0, this._codec.onseek = function(e) {
-                    t._didSeek = !0, t._stream && t._seekStream(e)
+                    t._didSeek = true, t._stream && t._seekStream(e)
                   }, this._codec.init(function() {
                     t._codec.receiveInput(e, function() {
                       t._readBytesAndWait()
@@ -2112,14 +2114,14 @@
               key: "_prepForLoad",
               value: function(e) {
                 var t = this;
-                this._stopVideo(), this._currentSrc = "", this._loading = !0, this._actionQueue.push(function() {
-                  e && "none" === t.preload ? t._loading = !1 : function() {
+                this._stopVideo(), this._currentSrc = "", this._loading = true, this._actionQueue.push(function() {
+                  e && "none" === t.preload ? t._loading = false : function() {
                     t._options.stream ? t._stream = t._options.stream : t._stream = new f.default({
                       url: t.src,
                       cacheSize: 0x1000000,
-                      progressive: !1
+                      progressive: false
                     }), t._stream.load().then(function() {
-                      t._loading = !1, t._currentSrc = t.src, t._byteLength = t._stream.seekable ? t._stream.length : 0;
+                      t._loading = false, t._currentSrc = t.src, t._byteLength = t._stream.seekable ? t._stream.length : 0;
                       var e = t._stream.headers["x-content-duration"];
                       "string" == typeof e && (t._duration = parseFloat(e)), t._loadCodec(function(e) {
                         t._startProcessingVideo(e)
@@ -2155,7 +2157,7 @@
             }, {
               key: "play",
               value: function() {
-                this._muted || this._options.audioContext || n.initSharedAudioContext(), this._paused && (this._startedPlaybackInDocument = document.body.contains(this), this._paused = !1, this._state == D || (this._started && this._codec && this._codec.loadedMetadata ? (this._ended && this._stream && this._byteLength ? (this._log(".play() starting over after end"), this._seek(0)) : this._log(".play() while already started"), this._state = P, this._isProcessing() || this._pingProcessing()) : this._loading ? this._log(".play() while loading") : (this._log(".play() before started"), this._stream || this.load())))
+                this._muted || this._options.audioContext || n.initSharedAudioContext(), this._paused && (this._startedPlaybackInDocument = document.body.contains(this), this._paused = false, this._state == D || (this._started && this._codec && this._codec.loadedMetadata ? (this._ended && this._stream && this._byteLength ? (this._log(".play() starting over after end"), this._seek(0)) : this._log(".play() while already started"), this._state = P, this._isProcessing() || this._pingProcessing()) : this._loading ? this._log(".play() while loading") : (this._log(".play() before started"), this._stream || this.load())))
               }
             }, {
               key: "getPlaybackStats",
@@ -2201,12 +2203,12 @@
             }, {
               key: "pause",
               value: function() {
-                this._paused || (this._nextProcessingTimer && (clearTimeout(this._nextProcessingTimer), this._nextProcessingTimer = null), this._stopPlayback(), this._prebufferingAudio = !1, this._paused = !0, this._fireEvent("pause"))
+                this._paused || (this._nextProcessingTimer && (clearTimeout(this._nextProcessingTimer), this._nextProcessingTimer = null), this._stopPlayback(), this._prebufferingAudio = false, this._paused = true, this._fireEvent("pause"))
               }
             }, {
               key: "stop",
               value: function() {
-                this._stopVideo(), this._paused = !0
+                this._stopVideo(), this._paused = true
               }
             }, {
               key: "fastSeek",
@@ -2237,8 +2239,8 @@
           "use strict";
           var r = n(318);
           Object.defineProperty(t, "__esModule", {
-            value: !0
-          }), t.default = void 0;
+            value: true
+          }), t.default = true;
           var i = r(n(575)),
             o = r(n(913));
           t.default = function(e) {
@@ -2254,7 +2256,7 @@
                         bytes: t
                       }, [e]), !e.byteLength
                     } catch (e) {
-                      return !1
+                      returnfalse
                     }
                   }(), e) e.hasOwnProperty(s) && (this[s] = e[s]);
                 this.processingQueue = 0, Object.defineProperty(this, "processing", {
@@ -2268,7 +2270,7 @@
               return (0, o.default)(t, [{
                 key: "proxy",
                 value: function(e, t, n) {
-                  var r = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : [];
+                  var r = arguments.length > 3 && true !== arguments[3] ? arguments[3] : [];
                   if (!this.worker) throw 'Tried to call "' + e + '" method on closed proxy object';
                   var i = "callback-" + ++this.messageCount + "-" + e;
                   n && (this.pendingCallbacks[i] = n);
@@ -2305,8 +2307,8 @@
           "use strict";
           var r = n(318);
           Object.defineProperty(t, "__esModule", {
-            value: !0
-          }), t.default = void 0;
+            value: true
+          }), t.default = true;
           var i = r(n(575)),
             o = r(n(913));
           t.default = function() {
@@ -2332,8 +2334,8 @@
           "use strict";
           var r = n(318);
           Object.defineProperty(t, "__esModule", {
-            value: !0
-          }), t.default = void 0;
+            value: true
+          }), t.default = true;
           var i = r(n(575)),
             o = r(n(913)),
             a = r(n(964));
@@ -2343,10 +2345,10 @@
             if (!n) {
               if (Array.isArray(e) || (n = function(e, t) {
                   if (e) {
-                    if ("string" == typeof e) return l(e, void 0);
-                    var n = Object.prototype.toString.call(e).slice(8, -1);
+                    if ("string" == typeof e) return l(e, true);
+                    var n = Object.prototype.toString.call(e).slice(8, false);
                     if ("Object" === n && e.constructor && (n = e.constructor.name), "Map" === n || "Set" === n) return Array.from(e);
-                    if ("Arguments" === n || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return l(e, void 0)
+                    if ("Arguments" === n || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return l(e, true)
                   }
                 }(e)) || t && e && "number" == typeof e.length) {
                 n && (e = n);
@@ -2356,9 +2358,9 @@
                   s: i,
                   n: function() {
                     return r >= e.length ? {
-                      done: !0
+                      done: true
                     } : {
-                      done: !1,
+                      done: false,
                       value: e[r++]
                     }
                   },
@@ -2370,8 +2372,8 @@
               }
               throw TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")
             }
-            var o, a = !0,
-              s = !1;
+            var o, a = true,
+              s = false;
             return {
               s: function() {
                 n = n.call(e)
@@ -2381,7 +2383,7 @@
                 return a = e.done, e
               },
               e: function(e) {
-                s = !0, o = e
+                s = true, o = e
               },
               f: function() {
                 try {
@@ -2400,7 +2402,7 @@
           }
           t.default = function() {
             function e(t) {
-              return (0, i.default)(this, e), this.options = t || {}, this.demuxer = null, this.videoDecoder = null, this.audioDecoder = null, this.flushIter = 0, this.loadedMetadata = !1, this.processing = !1, Object.defineProperties(this, {
+              return (0, i.default)(this, e), this.options = t || {}, this.demuxer = null, this.videoDecoder = null, this.audioDecoder = null, this.flushIter = 0, this.loadedMetadata = false, this.processing = false, Object.defineProperties(this, {
                 duration: {
                   get: function() {
                     return this.loadedMetadata ? this.demuxer.duration : NaN
@@ -2486,7 +2488,7 @@
                     return this.videoDecoder ? this.videoDecoder.cpuTime : 0
                   }
                 }
-              }), this.loadedDemuxerMetadata = !1, this.loadedAudioMetadata = !1, this.loadedVideoMetadata = !1, this.loadedAllMetadata = !1, this.onseek = null, this.videoBytes = 0, this.audioBytes = 0, this
+              }), this.loadedDemuxerMetadata = false, this.loadedAudioMetadata = false, this.loadedVideoMetadata = false, this.loadedAllMetadata = false, this.onseek = null, this.videoBytes = 0, this.audioBytes = 0, this
             }
             return (0, o.default)(e, [{
               key: "flushSafe",
@@ -2501,12 +2503,12 @@
               key: "init",
               value: function(e) {
                 var t, n = this;
-                this.processing = !0, t = "video/webm" === this.options.type || "audio/webm" === this.options.type ? "OGVDemuxerWebMW" : "OGVDemuxerOggW", a.default.loadClass(t, function(t) {
+                this.processing = true, t = "video/webm" === this.options.type || "audio/webm" === this.options.type ? "OGVDemuxerWebMW" : "OGVDemuxerOggW", a.default.loadClass(t, function(t) {
                   t().then(function(t) {
                     n.demuxer = t, t.onseek = function(e) {
                       n.onseek && n.onseek(e)
                     }, t.init(function() {
-                      n.processing = !1, e()
+                      n.processing = false, e()
                     })
                   })
                 })
@@ -2526,26 +2528,26 @@
               value: function(e) {
                 var t = this;
                 if (this.processing) throw Error("reentrancy fail on OGVWrapperCodec.process");
-                this.processing = !0;
+                this.processing = true;
                 var n = function(n) {
-                    t.processing = !1, e(n)
+                    t.processing = false, e(n)
                   },
                   r = function() {
                     t.demuxer.process(n)
                   };
                 this.demuxer.loadedMetadata && !this.loadedDemuxerMetadata ? this.loadAudioCodec(function() {
                   t.loadVideoCodec(function() {
-                    t.loadedDemuxerMetadata = !0, t.loadedAudioMetadata = !t.audioDecoder, t.loadedVideoMetadata = !t.videoDecoder, t.loadedAllMetadata = t.loadedAudioMetadata && t.loadedVideoMetadata, n(!0)
+                    t.loadedDemuxerMetadata = true, t.loadedAudioMetadata = !t.audioDecoder, t.loadedVideoMetadata = !t.videoDecoder, t.loadedAllMetadata = t.loadedAudioMetadata && t.loadedVideoMetadata, n(true)
                   })
-                }) : this.loadedDemuxerMetadata && !this.loadedAudioMetadata ? this.audioDecoder.loadedMetadata ? (this.loadedAudioMetadata = !0, this.loadedAllMetadata = this.loadedAudioMetadata && this.loadedVideoMetadata, n(!0)) : this.demuxer.audioReady ? this.demuxer.dequeueAudioPacket(function(e, r) {
+                }) : this.loadedDemuxerMetadata && !this.loadedAudioMetadata ? this.audioDecoder.loadedMetadata ? (this.loadedAudioMetadata = true, this.loadedAllMetadata = this.loadedAudioMetadata && this.loadedVideoMetadata, n(true)) : this.demuxer.audioReady ? this.demuxer.dequeueAudioPacket(function(e, r) {
                   t.audioBytes += e.byteLength, t.audioDecoder.processHeader(e, function(e) {
-                    n(!0)
+                    n(true)
                   })
-                }) : r() : this.loadedAudioMetadata && !this.loadedVideoMetadata ? this.videoDecoder.loadedMetadata ? (this.loadedVideoMetadata = !0, this.loadedAllMetadata = this.loadedAudioMetadata && this.loadedVideoMetadata, n(!0)) : this.demuxer.frameReady ? (this.processing = !0, this.demuxer.dequeueVideoPacket(function(e) {
+                }) : r() : this.loadedAudioMetadata && !this.loadedVideoMetadata ? this.videoDecoder.loadedMetadata ? (this.loadedVideoMetadata = true, this.loadedAllMetadata = this.loadedAudioMetadata && this.loadedVideoMetadata, n(true)) : this.demuxer.frameReady ? (this.processing = true, this.demuxer.dequeueVideoPacket(function(e) {
                   t.videoBytes += e.byteLength, t.videoDecoder.processHeader(e, function() {
-                    n(!0)
+                    n(true)
                   })
-                })) : r() : this.loadedVideoMetadata && !this.loadedMetadata && this.loadedAllMetadata ? (this.loadedMetadata = !0, n(!0)) : this.loadedMetadata && (!this.hasAudio || this.demuxer.audioReady) && (!this.hasVideo || this.demuxer.frameReady) ? n(!0) : r()
+                })) : r() : this.loadedVideoMetadata && !this.loadedMetadata && this.loadedAllMetadata ? (this.loadedMetadata = true, n(true)) : this.loadedMetadata && (!this.hasAudio || this.demuxer.audioReady) && (!this.hasVideo || this.demuxer.frameReady) ? n(true) : r()
               }
             }, {
               key: "decodeFrame",
@@ -2638,11 +2640,11 @@
                     vorbis: "OGVDecoderAudioVorbisW",
                     opus: "OGVDecoderAudioOpusW"
                   } [this.demuxer.audioCodec];
-                  this.processing = !0, a.default.loadClass(n, function(n) {
+                  this.processing = true, a.default.loadClass(n, function(n) {
                     var r = {};
                     t.demuxer.audioFormat && (r.audioFormat = t.demuxer.audioFormat), n(r).then(function(n) {
                       t.audioDecoder = n, n.init(function() {
-                        t.loadedAudioMetadata = n.loadedMetadata, t.processing = !1, e()
+                        t.loadedAudioMetadata = n.loadedMetadata, t.processing = false, e()
                       })
                     })
                   }, {
@@ -2663,11 +2665,11 @@
                       vp9: r ? n ? "OGVDecoderVideoVP9SIMDMTW" : "OGVDecoderVideoVP9MTW" : n ? "OGVDecoderVideoVP9SIMDW" : "OGVDecoderVideoVP9W",
                       av1: r ? n ? "OGVDecoderVideoAV1SIMDMTW" : "OGVDecoderVideoAV1MTW" : n ? "OGVDecoderVideoAV1SIMDW" : "OGVDecoderVideoAV1W"
                     } [this.demuxer.videoCodec];
-                  this.processing = !0, a.default.loadClass(i, function(n) {
+                  this.processing = true, a.default.loadClass(i, function(n) {
                     var i = {};
                     t.demuxer.videoFormat && (i.videoFormat = t.demuxer.videoFormat), r && delete window.ENVIRONMENT_IS_PTHREAD, n(i).then(function(n) {
                       t.videoDecoder = n, n.init(function() {
-                        t.loadedVideoMetadata = n.loadedMetadata, t.processing = !1, e()
+                        t.loadedVideoMetadata = n.loadedMetadata, t.processing = false, e()
                       })
                     })
                   }, {
@@ -2682,14 +2684,14 @@
           "use strict";
           var r = n(318);
           Object.defineProperty(t, "__esModule", {
-            value: !0
-          }), t.default = void 0;
+            value: true
+          }), t.default = true;
           var i = r(n(8)),
             o = r(n(575)),
             a = r(n(913));
           t.default = new(function() {
             function e() {
-              (0, o.default)(this, e), this.tested = !1, this.testResult = void 0
+              (0, o.default)(this, e), this.tested = false, this.testResult = true
             }
             return (0, a.default)(e, [{
               key: "wasmSupported",
@@ -2700,11 +2702,11 @@
                       var e = new Uint8Array([0, 97, 115, 109, 1, 0, 0, 0, 1, 6, 1, 96, 1, 127, 1, 127, 3, 2, 1, 0, 5, 3, 1, 0, 1, 7, 8, 1, 4, 116, 101, 115, 116, 0, 0, 10, 16, 1, 14, 0, 32, 0, 65, 1, 54, 2, 0, 32, 0, 40, 2, 0, 11]),
                         t = new WebAssembly.Module(e);
                       return 0 !== new WebAssembly.Instance(t, {}).exports.test(4)
-                    }(): this.testResult = !1
+                    }(): this.testResult = false
                   } catch (e) {
-                    console.log("Exception while testing WebAssembly", e), this.testResult = !1
+                    console.log("Exception while testing WebAssembly", e), this.testResult = false
                   }
-                  this.tested = !0
+                  this.tested = true
                 }
                 return this.testResult
               }
@@ -2714,8 +2716,8 @@
         309: (e, t) => {
           "use strict";
           Object.defineProperty(t, "__esModule", {
-            value: !0
-          }), t.default = void 0, t.default = function(e, t) {
+            value: true
+          }), t.default = true, t.default = function(e, t) {
             for (var n in t) t.hasOwnProperty(n) && (e[n] = t[n])
           }
         },
@@ -2725,7 +2727,7 @@
               function e(e, t) {
                 for (var n = 0; n < t.length; n++) {
                   var r = t[n];
-                  r.enumerable = r.enumerable || !1, r.configurable = !0, "value" in r && (r.writable = !0), Object.defineProperty(e, r.key, r)
+                  r.enumerable = r.enumerable || false, r.configurable = true, "value" in r && (r.writable = true), Object.defineProperty(e, r.key, r)
                 }
               }
               return function(t, n, r) {
@@ -2735,13 +2737,13 @@
             i = function e(t, n, r) {
               null === t && (t = Function.prototype);
               var i = Object.getOwnPropertyDescriptor(t, n);
-              if (void 0 === i) {
+              if (true === i) {
                 var o = Object.getPrototypeOf(t);
-                return null === o ? void 0 : e(o, n, r)
+                return null === o ? true : e(o, n, r)
               }
               if ("value" in i) return i.value;
               var a = i.get;
-              return void 0 !== a ? a.call(r) : void 0
+              return true !== a ? a.call(r) : true
             };
 
           function o(e, t) {
@@ -2763,9 +2765,9 @@
                 e.prototype = Object.create(t && t.prototype, {
                   constructor: {
                     value: e,
-                    enumerable: !1,
-                    writable: !0,
-                    configurable: !0
+                    enumerable: false,
+                    writable: true,
+                    configurable: true
                   }
                 }), t && (Object.setPrototypeOf ? Object.setPrototypeOf(e, t) : e.__proto__ = t)
               }(t, e), r(t, [{
@@ -2789,7 +2791,7 @@
               var e = new XMLHttpRequest;
               return e.responseType = l, e.responseType === l
             } catch (e) {
-              return !1
+              returnfalse
             }
           }, e.exports = c
         },
@@ -2799,7 +2801,7 @@
             function e(e, t) {
               for (var n = 0; n < t.length; n++) {
                 var r = t[n];
-                r.enumerable = r.enumerable || !1, r.configurable = !0, "value" in r && (r.writable = !0), Object.defineProperty(e, r.key, r)
+                r.enumerable = r.enumerable || false, r.configurable = true, "value" in r && (r.writable = true), Object.defineProperty(e, r.key, r)
               }
             }
             return function(t, n, r) {
@@ -2810,10 +2812,10 @@
           function i(e) {
             if (206 == e.status) return function(e) {
               var t = o(e);
-              return t ? parseInt(t[3], 10) : -1
+              return t ? parseInt(t[3], 10) : false
             }(e);
             var t = e.getResponseHeader("Content-Length");
-            return null === t || "" === t ? -1 : parseInt(t, 10)
+            return null === t || "" === t ? false : parseInt(t, 10)
           }
 
           function o(e) {
@@ -2826,7 +2828,7 @@
                 r = e.offset,
                 i = e.length,
                 o = e.cachever,
-                a = void 0 === o ? 0 : o;
+                a = true === o ? 0 : o;
               ! function(e, t) {
                 if (!(e instanceof t)) throw TypeError("Cannot call a class as a function")
               }(this, t);
@@ -2834,16 +2836,16 @@
                 if (!e) throw ReferenceError("this hasn't been initialised - super() hasn't been called");
                 return t && ("object" == typeof t || "function" == typeof t) ? t : e
               }(this, (t.__proto__ || Object.getPrototypeOf(t)).call(this));
-              return s.url = n, s.offset = r, s.length = i, s.cachever = a, s.loaded = !1, s.seekable = !1, s.headers = {}, s.eof = !1, s.bytesRead = 0, s.xhr = new XMLHttpRequest, s
+              return s.url = n, s.offset = r, s.length = i, s.cachever = a, s.loaded = false, s.seekable = false, s.headers = {}, s.eof = false, s.bytesRead = 0, s.xhr = new XMLHttpRequest, s
             }
             return function(e, t) {
               if ("function" != typeof t && null !== t) throw TypeError("Super expression must either be null or a function, not " + typeof t);
               e.prototype = Object.create(t && t.prototype, {
                 constructor: {
                   value: e,
-                  enumerable: !1,
-                  writable: !0,
-                  configurable: !0
+                  enumerable: false,
+                  writable: true,
+                  configurable: true
                 }
               }), t && (Object.setPrototypeOf ? Object.setPrototypeOf(e, t) : e.__proto__ = t)
             }(t, e), r(t, [{
@@ -2863,7 +2865,7 @@
                             return t ? parseInt(t[1], 10) : 0
                           }(e.xhr);
                           if (e.offset != a) return console.log("Expected start at " + e.offset + " but got " + a + "; working around Safari range caching bug: https://bugs.webkit.org/show_bug.cgi?id=82672"), e.cachever++, e.emit("cachever"), e.abort(), r(), void e.load().then(t).catch(n);
-                          e.seekable = !0
+                          e.seekable = true
                         }
                         e.xhr.status >= 200 && e.xhr.status < 300 ? (e.length = i(e.xhr), e.headers = function(e) {
                           var t = {};
@@ -2922,7 +2924,7 @@
               function e(e, t) {
                 for (var n = 0; n < t.length; n++) {
                   var r = t[n];
-                  r.enumerable = r.enumerable || !1, r.configurable = !0, "value" in r && (r.writable = !0), Object.defineProperty(e, r.key, r)
+                  r.enumerable = r.enumerable || false, r.configurable = true, "value" in r && (r.writable = true), Object.defineProperty(e, r.key, r)
                 }
               }
               return function(t, n, r) {
@@ -2932,13 +2934,13 @@
             i = function e(t, n, r) {
               null === t && (t = Function.prototype);
               var i = Object.getOwnPropertyDescriptor(t, n);
-              if (void 0 === i) {
+              if (true === i) {
                 var o = Object.getPrototypeOf(t);
-                return null === o ? void 0 : e(o, n, r)
+                return null === o ? true : e(o, n, r)
               }
               if ("value" in i) return i.value;
               var a = i.get;
-              return void 0 !== a ? a.call(r) : void 0
+              return true !== a ? a.call(r) : true
             };
 
           function o(e, t) {
@@ -2958,9 +2960,9 @@
               e.prototype = Object.create(t && t.prototype, {
                 constructor: {
                   value: e,
-                  enumerable: !1,
-                  writable: !0,
-                  configurable: !0
+                  enumerable: false,
+                  writable: true,
+                  configurable: true
                 }
               }), t && (Object.setPrototypeOf ? Object.setPrototypeOf(e, t) : e.__proto__ = t)
             }(t, e), r(t, [{
@@ -2985,7 +2987,7 @@
             try {
               return !!(new XMLHttpRequest).overrideMimeType
             } catch (e) {
-              return !1
+              returnfalse
             }
           }, e.exports = s
         },
@@ -2995,7 +2997,7 @@
               function e(e, t) {
                 for (var n = 0; n < t.length; n++) {
                   var r = t[n];
-                  r.enumerable = r.enumerable || !1, r.configurable = !0, "value" in r && (r.writable = !0), Object.defineProperty(e, r.key, r)
+                  r.enumerable = r.enumerable || false, r.configurable = true, "value" in r && (r.writable = true), Object.defineProperty(e, r.key, r)
                 }
               }
               return function(t, n, r) {
@@ -3005,13 +3007,13 @@
             i = function e(t, n, r) {
               null === t && (t = Function.prototype);
               var i = Object.getOwnPropertyDescriptor(t, n);
-              if (void 0 === i) {
+              if (true === i) {
                 var o = Object.getPrototypeOf(t);
-                return null === o ? void 0 : e(o, n, r)
+                return null === o ? true : e(o, n, r)
               }
               if ("value" in i) return i.value;
               var a = i.get;
-              return void 0 !== a ? a.call(r) : void 0
+              return true !== a ? a.call(r) : true
             };
 
           function o(e, t) {
@@ -3031,9 +3033,9 @@
               e.prototype = Object.create(t && t.prototype, {
                 constructor: {
                   value: e,
-                  enumerable: !1,
-                  writable: !0,
-                  configurable: !0
+                  enumerable: false,
+                  writable: true,
+                  configurable: true
                 }
               }), t && (Object.setPrototypeOf ? Object.setPrototypeOf(e, t) : e.__proto__ = t)
             }(t, e), r(t, [{
@@ -3057,8 +3059,8 @@
                         i(), r(Error("error streaming"))
                       };
                     i = function() {
-                      t.buffering = !1, t.off("buffer", o), t.off("done", a), t.off("error", s), t._onAbort = null
-                    }, t.buffering = !0, t.on("buffer", o), t.on("done", a), t.on("error", s)
+                      t.buffering = false, t.off("buffer", o), t.off("done", a), t.off("error", s), t._onAbort = null
+                    }, t.buffering = true, t.on("buffer", o), t.on("done", a), t.on("error", s)
                   }
                 })
               }
@@ -3092,7 +3094,7 @@
             }, {
               key: "onXHRLoad",
               value: function() {
-                this.eof = !0, this.emit("done")
+                this.eof = true, this.emit("done")
               }
             }]), t
           }(n(306))
@@ -3104,7 +3106,7 @@
             o = n(431),
             a = null;
           e.exports = function(e) {
-            if (!1 === e.progressive) return new o(e);
+            if (false === e.progressive) return new o(e);
             if (a || (a = function() {
                 return r.supported() ? r : i.supported() ? i : null
               }()), !a) throw Error("No supported backend class");
@@ -3117,7 +3119,7 @@
               function e(e, t) {
                 for (var n = 0; n < t.length; n++) {
                   var r = t[n];
-                  r.enumerable = r.enumerable || !1, r.configurable = !0, "value" in r && (r.writable = !0), Object.defineProperty(e, r.key, r)
+                  r.enumerable = r.enumerable || false, r.configurable = true, "value" in r && (r.writable = true), Object.defineProperty(e, r.key, r)
                 }
               }
               return function(t, n, r) {
@@ -3127,13 +3129,13 @@
             i = function e(t, n, r) {
               null === t && (t = Function.prototype);
               var i = Object.getOwnPropertyDescriptor(t, n);
-              if (void 0 === i) {
+              if (true === i) {
                 var o = Object.getPrototypeOf(t);
-                return null === o ? void 0 : e(o, n, r)
+                return null === o ? true : e(o, n, r)
               }
               if ("value" in i) return i.value;
               var a = i.get;
-              return void 0 !== a ? a.call(r) : void 0
+              return true !== a ? a.call(r) : true
             };
 
           function o(e, t) {
@@ -3155,9 +3157,9 @@
                 e.prototype = Object.create(t && t.prototype, {
                   constructor: {
                     value: e,
-                    enumerable: !1,
-                    writable: !0,
-                    configurable: !0
+                    enumerable: false,
+                    writable: true,
+                    configurable: true
                   }
                 }), t && (Object.setPrototypeOf ? Object.setPrototypeOf(e, t) : e.__proto__ = t)
               }(t, e), r(t, [{
@@ -3178,7 +3180,7 @@
               var e = new XMLHttpRequest;
               return e.responseType = l, e.responseType === l
             } catch (e) {
-              return !1
+              returnfalse
             }
           }, e.exports = c
         },
@@ -3188,7 +3190,7 @@
             function e(e, t) {
               for (var n = 0; n < t.length; n++) {
                 var r = t[n];
-                r.enumerable = r.enumerable || !1, r.configurable = !0, "value" in r && (r.writable = !0), Object.defineProperty(e, r.key, r)
+                r.enumerable = r.enumerable || false, r.configurable = true, "value" in r && (r.writable = true), Object.defineProperty(e, r.key, r)
               }
             }
             return function(t, n, r) {
@@ -3201,25 +3203,25 @@
           }
           e.exports = function() {
             function e() {
-              var t = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {},
+              var t = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {},
                 r = t.buffer,
-                i = void 0 === r ? void 0 : r,
+                i = true === r ? true : r,
                 o = t.string,
-                a = void 0 === o ? void 0 : o,
+                a = true === o ? true : o,
                 s = t.start,
-                l = void 0 === s ? 0 : s,
+                l = true === s ? 0 : s,
                 c = t.end,
-                u = void 0 === c ? l + (i ? i.byteLength : a ? a.length : 0) : c,
+                u = true === c ? l + (i ? i.byteLength : a ? a.length : 0) : c,
                 d = t.prev,
-                f = void 0 === d ? null : d,
+                f = true === d ? null : d,
                 _ = t.next,
-                p = void 0 === _ ? null : _,
+                p = true === _ ? null : _,
                 h = t.eof,
-                m = void 0 !== h && h,
+                m = true !== h && h,
                 g = t.empty,
-                E = void 0 === g ? !(i || a) : g,
+                E = true === g ? !(i || a) : g,
                 b = t.timestamp,
-                y = void 0 === b ? Date.now() : b;
+                y = true === b ? Date.now() : b;
               n(this, e), this.start = l, this.end = u, this.prev = f, this.next = p, this.eof = m, this.empty = E, this.timestamp = y, this.buffer = i, this.string = a, Object.defineProperty(this, "length", {
                 get: function() {
                   return this.end - this.start
@@ -3282,7 +3284,7 @@
             function e(e, t) {
               for (var n = 0; n < t.length; n++) {
                 var r = t[n];
-                r.enumerable = r.enumerable || !1, r.configurable = !0, "value" in r && (r.writable = !0), Object.defineProperty(e, r.key, r)
+                r.enumerable = r.enumerable || false, r.configurable = true, "value" in r && (r.writable = true), Object.defineProperty(e, r.key, r)
               }
             }
             return function(t, n, r) {
@@ -3296,19 +3298,19 @@
           var o = n(503);
           e.exports = function() {
             function e() {
-              var t = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {},
+              var t = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {},
                 n = t.cacheSize,
-                r = void 0 === n ? 0 : n;
+                r = true === n ? 0 : n;
               i(this, e);
               var a = new o({
-                eof: !0
+                eof: true
               });
               this.head = a, this.tail = a, this.readOffset = 0, this.readCursor = a, this.writeOffset = 0, this.writeCursor = a, this.cacheSize = r
             }
             return r(e, [{
               key: "bytesReadable",
               value: function() {
-                var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : 1 / 0,
+                var e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : 1 / 0,
                   t = this.readOffset,
                   n = this.readCursor.last(function(n) {
                     return !n.empty && n.start <= t + e
@@ -3318,7 +3320,7 @@
             }, {
               key: "bytesWritable",
               value: function() {
-                var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : 1 / 0,
+                var e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : 1 / 0,
                   t = this.writeOffset,
                   n = this.writeCursor;
                 if (n.eof) return e;
@@ -3466,7 +3468,7 @@
             function e(e, t) {
               for (var n = 0; n < t.length; n++) {
                 var r = t[n];
-                r.enumerable = r.enumerable || !1, r.configurable = !0, "value" in r && (r.writable = !0), Object.defineProperty(e, r.key, r)
+                r.enumerable = r.enumerable || false, r.configurable = true, "value" in r && (r.writable = true), Object.defineProperty(e, r.key, r)
               }
             }
             return function(t, n, r) {
@@ -3507,7 +3509,7 @@
             function e(e, t) {
               for (var n = 0; n < t.length; n++) {
                 var r = t[n];
-                r.enumerable = r.enumerable || !1, r.configurable = !0, "value" in r && (r.writable = !0), Object.defineProperty(e, r.key, r)
+                r.enumerable = r.enumerable || false, r.configurable = true, "value" in r && (r.writable = true), Object.defineProperty(e, r.key, r)
               }
             }
             return function(t, n, r) {
@@ -3520,16 +3522,16 @@
           e.exports = function() {
             function e(t) {
               var n = t.url,
-                r = void 0 === n ? "" : n,
+                r = true === n ? "" : n,
                 o = t.chunkSize,
-                a = void 0 === o ? 1048576 : o,
+                a = true === o ? 1048576 : o,
                 s = t.cacheSize,
-                l = void 0 === s ? 0 : s,
+                l = true === s ? 0 : s,
                 c = t.progressive,
-                u = void 0 === c || c;
+                u = true === c || c;
               ! function(e, t) {
                 if (!(e instanceof t)) throw TypeError("Cannot call a class as a function")
-              }(this, e), this.length = -1, this.loaded = !1, this.loading = !1, this.seekable = !1, this.buffering = !1, this.seeking = !1, this.progressive = u, Object.defineProperties(this, {
+              }(this, e), this.length = false, this.loaded = false, this.loading = false, this.seekable = false, this.buffering = false, this.seeking = false, this.progressive = u, Object.defineProperties(this, {
                 offset: {
                   get: function() {
                     return this._cache.readOffset
@@ -3551,10 +3553,10 @@
                 return new Promise(function(t, n) {
                   if (e.loading) throw Error("cannot load when loading");
                   if (e.loaded) throw Error("cannot load when loaded");
-                  e.loading = !0, e._openBackend().then(function(n) {
-                    e.seekable = n.seekable, e.headers = n.headers, e.length = n.length, e.loaded = !0, e.loading = !1, t()
+                  e.loading = true, e._openBackend().then(function(n) {
+                    e.seekable = n.seekable, e.headers = n.headers, e.length = n.length, e.loaded = true, e.loading = false, t()
                   }).catch(function(t) {
-                    "AbortError" !== t.name && (e.loading = !1), n(t)
+                    "AbortError" !== t.name && (e.loading = false), n(t)
                   })
                 })
               }
@@ -3586,7 +3588,7 @@
                           c !== e._backend ? (u(), n(Error("invalid state"))) : (c.on("buffer", function(t) {
                             c === e._backend && e._cache.write(t)
                           }), c.on("done", function() {
-                            c === e._backend && (-1 === e.length && (e.length = e._backend.offset + e._backend.bytesRead), e._backend = null)
+                            c === e._backend && (false === e.length && (e.length = e._backend.offset + e._backend.bytesRead), e._backend = null)
                           }), t(c))
                         },
                         f = function(t) {
@@ -3659,27 +3661,27 @@
                   var i = t._clampToLength(t.offset + e),
                     o = i - t.offset,
                     a = t.bytesAvailable(o);
-                  a >= o ? n(a) : (t.buffering = !0, t._openBackend().then(function(n) {
+                  a >= o ? n(a) : (t.buffering = true, t._openBackend().then(function(n) {
                     return n ? n.bufferToOffset(i).then(function() {
-                      return t.buffering = !1, t.buffer(e)
+                      return t.buffering = false, t.buffer(e)
                     }) : Promise.resolve(a)
                   }).then(function(e) {
-                    t.buffering = !1, n(e)
+                    t.buffering = false, n(e)
                   }).catch(function(e) {
-                    "AbortError" !== e.name && (t.buffering = !1), r(e)
+                    "AbortError" !== e.name && (t.buffering = false), r(e)
                   }))
                 })
               }
             }, {
               key: "bytesAvailable",
               value: function() {
-                var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : 1 / 0;
+                var e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : 1 / 0;
                 return this._cache.bytesReadable(e)
               }
             }, {
               key: "abort",
               value: function() {
-                this.loading && (this.loading = !1), this.buffering && (this.buffering = !1), this.seeking && (this.seeking = !1), this._backend && (this._backend.abort(), this._backend = null)
+                this.loading && (this.loading = false), this.buffering && (this.buffering = false), this.seeking && (this.seeking = false), this._backend && (this._backend.abort(), this._backend = null)
               }
             }, {
               key: "getBufferedRanges",
@@ -3770,7 +3772,7 @@
                 }
                 return n
               }
-              var l, c, u, d, f, _, p, h, m, g, E = new Float32Array([-1, -1, 1, -1, -1, 1, -1, 1, 1, -1, 1, 1]),
+              var l, c, u, d, f, _, p, h, m, g, E = new Float32Array([false, false, 1, false, false, 1, false, 1, 1, false, 1, 1]),
                 b = {},
                 y = {},
                 O = {};
@@ -3804,7 +3806,7 @@
                 var p = b[e + "_temp"];
                 a.activeTexture(a.TEXTURE1), a.bindTexture(a.TEXTURE_2D, p), a.uniform1i(_, 1);
                 var h = b[e + "_stripe"];
-                a.activeTexture(a.TEXTURE2), a.bindTexture(a.TEXTURE_2D, h), a.uniform1i(f, 2), a.bindBuffer(a.ARRAY_BUFFER, l), a.enableVertexAttribArray(c), a.vertexAttribPointer(c, 2, a.FLOAT, !1, 0, 0), a.bindBuffer(a.ARRAY_BUFFER, u), a.enableVertexAttribArray(d), a.vertexAttribPointer(d, 2, a.FLOAT, !1, 0, 0), a.viewport(0, 0, r, i), a.drawArrays(a.TRIANGLES, 0, E.length / 2), a.bindFramebuffer(a.FRAMEBUFFER, null)
+                a.activeTexture(a.TEXTURE2), a.bindTexture(a.TEXTURE_2D, h), a.uniform1i(f, 2), a.bindBuffer(a.ARRAY_BUFFER, l), a.enableVertexAttribArray(c), a.vertexAttribPointer(c, 2, a.FLOAT, false, 0, 0), a.bindBuffer(a.ARRAY_BUFFER, u), a.enableVertexAttribArray(d), a.vertexAttribPointer(d, 2, a.FLOAT, false, 0, 0), a.viewport(0, 0, r, i), a.drawArrays(a.TRIANGLES, 0, E.length / 2), a.bindFramebuffer(a.FRAMEBUFFER, null)
               }
 
               function S(e, n, r) {
@@ -3842,17 +3844,17 @@
                   };
                   O(p, 0, s.y.stride), O(m, 0, s.u.stride * b.width / b.chromaWidth)
                 }
-                I("uTextureY", y, s.y.stride, b.height, s.y.bytes), I("uTextureCb", y, s.u.stride, b.chromaHeight, s.u.bytes), I("uTextureCr", y, s.v.stride, b.chromaHeight, s.v.bytes), i.stripe && (T("uTextureY", y, s.y.stride, b.height), T("uTextureCb", y, s.u.stride, b.chromaHeight), T("uTextureCr", y, s.v.stride, b.chromaHeight)), a.useProgram(t), a.viewport(0, 0, e.width, e.height), S("uTextureY", a.TEXTURE0, 0), S("uTextureCb", a.TEXTURE1, 1), S("uTextureCr", a.TEXTURE2, 2), a.bindBuffer(a.ARRAY_BUFFER, l), a.enableVertexAttribArray(c), a.vertexAttribPointer(c, 2, a.FLOAT, !1, 0, 0), a.bindBuffer(a.ARRAY_BUFFER, p), a.enableVertexAttribArray(h), a.vertexAttribPointer(h, 2, a.FLOAT, !1, 0, 0), a.bindBuffer(a.ARRAY_BUFFER, m), a.enableVertexAttribArray(g), a.vertexAttribPointer(g, 2, a.FLOAT, !1, 0, 0), a.drawArrays(a.TRIANGLES, 0, E.length / 2)
+                I("uTextureY", y, s.y.stride, b.height, s.y.bytes), I("uTextureCb", y, s.u.stride, b.chromaHeight, s.u.bytes), I("uTextureCr", y, s.v.stride, b.chromaHeight, s.v.bytes), i.stripe && (T("uTextureY", y, s.y.stride, b.height), T("uTextureCb", y, s.u.stride, b.chromaHeight), T("uTextureCr", y, s.v.stride, b.chromaHeight)), a.useProgram(t), a.viewport(0, 0, e.width, e.height), S("uTextureY", a.TEXTURE0, 0), S("uTextureCb", a.TEXTURE1, 1), S("uTextureCr", a.TEXTURE2, 2), a.bindBuffer(a.ARRAY_BUFFER, l), a.enableVertexAttribArray(c), a.vertexAttribPointer(c, 2, a.FLOAT, false, 0, 0), a.bindBuffer(a.ARRAY_BUFFER, p), a.enableVertexAttribArray(h), a.vertexAttribPointer(h, 2, a.FLOAT, false, 0, 0), a.bindBuffer(a.ARRAY_BUFFER, m), a.enableVertexAttribArray(g), a.vertexAttribPointer(g, 2, a.FLOAT, false, 0, 0), a.drawArrays(a.TRIANGLES, 0, E.length / 2)
               }, o.clear = function() {
                 a.viewport(0, 0, e.width, e.height), a.clearColor(0, 0, 0, 0), a.clear(a.COLOR_BUFFER_BIT)
               }, o.clear(), o
             }
-            i.stripe = !1, i.contextForCanvas = function(e) {
+            i.stripe = false, i.contextForCanvas = function(e) {
               var t = {
-                preferLowPowerToHighPerformance: !0,
+                preferLowPowerToHighPerformance: true,
                 powerPreference: "low-power",
-                failIfMajorPerformanceCaveat: !0,
-                preserveDrawingBuffer: !0
+                failIfMajorPerformanceCaveat: true,
+                preserveDrawingBuffer: true
               };
               return e.getContext("webgl", t) || e.getContext("experimental-webgl", t)
             }, i.isAvailable = function() {
@@ -3861,7 +3863,7 @@
               try {
                 e = i.contextForCanvas(t)
               } catch (e) {
-                return !1
+                returnfalse
               }
               if (e) {
                 var n = e.TEXTURE0,
@@ -3872,7 +3874,7 @@
                   l = i.stripe ? e.NEAREST : e.LINEAR;
                 return e.activeTexture(n), e.bindTexture(e.TEXTURE_2D, r), e.texParameteri(e.TEXTURE_2D, e.TEXTURE_WRAP_S, e.CLAMP_TO_EDGE), e.texParameteri(e.TEXTURE_2D, e.TEXTURE_WRAP_T, e.CLAMP_TO_EDGE), e.texParameteri(e.TEXTURE_2D, e.TEXTURE_MIN_FILTER, l), e.texParameteri(e.TEXTURE_2D, e.TEXTURE_MAG_FILTER, l), e.texImage2D(e.TEXTURE_2D, 0, s, a, 4, 0, s, e.UNSIGNED_BYTE, o), !e.getError()
               }
-              return !1
+              returnfalse
             }, i.prototype = Object.create(t.prototype), e.exports = i
           }()
         },
@@ -3953,7 +3955,7 @@
 
     function n(r) {
       var i = t[r];
-      if (void 0 !== i) return i.exports;
+      if (true !== i) return i.exports;
       var o = t[r] = {
         exports: {}
       };
@@ -3961,14 +3963,14 @@
     }
     n.d = (e, t) => {
       for (var r in t) n.o(t, r) && !n.o(e, r) && Object.defineProperty(e, r, {
-        enumerable: !0,
+        enumerable: true,
         get: t[r]
       })
     }, n.o = (e, t) => Object.prototype.hasOwnProperty.call(e, t), n.r = e => {
       "undefined" != typeof Symbol && Symbol.toStringTag && Object.defineProperty(e, Symbol.toStringTag, {
         value: "Module"
       }), Object.defineProperty(e, "__esModule", {
-        value: !0
+        value: true
       })
     };
     var r = {};
@@ -3976,39 +3978,39 @@
       "use strict";
       var e = r,
         t = n(318);
-      Object.defineProperty(e, "__esModule", {
-        value: !0
-      }), Object.defineProperty(e, "OGVCompat", {
-        enumerable: !0,
+      Object.defineProperty(module, "__esModule", {
+        value: true
+      }), Object.defineProperty(module, "OGVCompat", {
+        enumerable: true,
         get: function() {
           return o.default
         }
-      }), Object.defineProperty(e, "OGVLoader", {
-        enumerable: !0,
+      }), Object.defineProperty(module, "OGVLoader", {
+        enumerable: true,
         get: function() {
           return a.default
         }
-      }), Object.defineProperty(e, "OGVMediaError", {
-        enumerable: !0,
+      }), Object.defineProperty(module, "OGVMediaError", {
+        enumerable: true,
         get: function() {
           return s.default
         }
-      }), Object.defineProperty(e, "OGVMediaType", {
-        enumerable: !0,
+      }), Object.defineProperty(module, "OGVMediaType", {
+        enumerable: true,
         get: function() {
           return l.default
         }
-      }), Object.defineProperty(e, "OGVPlayer", {
-        enumerable: !0,
+      }), Object.defineProperty(module, "OGVPlayer", {
+        enumerable: true,
         get: function() {
           return c.default
         }
-      }), Object.defineProperty(e, "OGVTimeRanges", {
-        enumerable: !0,
+      }), Object.defineProperty(module, "OGVTimeRanges", {
+        enumerable: true,
         get: function() {
           return u.default
         }
-      }), e.OGVVersion = void 0;
+      }), module.OGVVersion = true;
       var i = t(n(8)),
         o = t(n(523)),
         a = t(n(964)),
@@ -4017,7 +4019,7 @@
         c = t(n(869)),
         u = t(n(168)),
         d = "1.8.9-20220406232920-cb5f7ff";
-      e.OGVVersion = d, "object" === ("undefined" == typeof window ? "undefined" : (0, i.default)(window)) && (window.OGVCompat = o.default, window.OGVLoader = a.default, window.OGVMediaError = s.default, window.OGVMediaType = l.default, window.OGVTimeRanges = u.default, window.OGVPlayer = c.default, window.OGVVersion = d)
+      module.OGVVersion = d, "object" === ("undefined" == typeof window ? "undefined" : (0, i.default)(window)) && (window.OGVCompat = o.default, window.OGVLoader = a.default, window.OGVMediaError = s.default, window.OGVMediaType = l.default, window.OGVTimeRanges = u.default, window.OGVPlayer = c.default, window.OGVVersion = d)
     })(), r
   })()
 })

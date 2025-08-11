@@ -1,40 +1,41 @@
 /** Chunk was on web.js **/
+/** chunk id: 614571, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => v
-}), n(388685);
-var r = n(846519),
-  i = n(147913),
-  o = n(553795),
-  a = n(430824),
-  s = n(626135),
-  l = n(425128),
-  c = n(276344),
-  u = n(981631);
+}), require("./388685.js");
+var Chunk846519 = require("./846519.js"),
+  Chunk147913 = require("./147913.js"),
+  Chunk553795 = require("./553795.js"),
+  Chunk430824 = require("./430824.js"),
+  Chunk626135 = require("./626135.js"),
+  Chunk425128 = require("./425128.js"),
+  Chunk276344 = require("./276344.js"),
+  Chunk981631 = require("./981631.js");
 
 function d(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 let f = "League of Legends",
-  _ = new r.V7,
-  p = !1,
-  h = !1;
+  _ = new Chunk846519.V7,
+  p = false,
+  h = false;
 
 function m(e) {
   return e.some(e => e.name === f)
 }
 
 function g() {
-  let e = o.Z.getAccount(null, u.ABu.RIOT_GAMES),
-    t = o.Z.getAccount(null, u.ABu.LEAGUE_OF_LEGENDS);
-  return null == e && null == t ? "missing_connections" : null == e ? "missing_riot_connection" : null == t ? "missing_league_of_legends_connection" : {
-    riotConnection: e,
-    lolConnection: t
+  let e = Chunk553795.Z.getAccount(null, Chunk981631.ABu.RIOT_GAMES),
+    t = Chunk553795.Z.getAccount(null, Chunk981631.ABu.LEAGUE_OF_LEGENDS);
+  return null == module && null == exports ? "missing_connections" : null == module ? "missing_riot_connection" : null == exports ? "missing_league_of_legends_connection" : {
+    riotConnection: module,
+    lolConnection: exports
   }
 }
 async function E(e) {
@@ -46,7 +47,7 @@ async function E(e) {
   if (!p && (!h || !r)) {
     _.stop();
     try {
-      p = !0;
+      p = true;
       let {
         next_update_timestamp: e
       } = await (0, l._7)({
@@ -54,7 +55,7 @@ async function E(e) {
         lolConnectionId: n,
         onlyUpdateIfStale: r
       });
-      p = !1, h = !1;
+      p = false, h = false;
       let i = new Date(1e3 * e),
         o = new Date,
         a = Math.max(0, i.getTime() - o.getTime());
@@ -63,16 +64,16 @@ async function E(e) {
         lolConnectionId: n
       }))
     } catch (e) {
-      p = !1, h = !0
+      p = false, h = true
     }
   }
 }
 
 function b() {
-  return a.Z.getGuildsArray().some(e => e.features.has(u.oNc.LEADERBOARD_ENABLED) && (0, c.NM)({
+  return Chunk430824.Z.getGuildsArray().some(e => e.features.has(u.oNc.LEADERBOARD_ENABLED) && (0, c.NM)({
     guildId: e.id,
     location: "LeagueOfLegendsLifecycleManager.handleDependantStoreChanges",
-    autoTrackExposure: !1
+    autoTrackExposure: false
   }))
 }
 
@@ -81,7 +82,7 @@ function y(e) {
     reason: e
   })
 }
-class O extends i.Z {
+class O extends Chunk147913.Z {
   handleRunningGameChange(e) {
     let {
       removed: t
@@ -97,12 +98,12 @@ class O extends i.Z {
   }
   handleDependantStoreChanges() {
     let e = g(),
-      t = "string" != typeof e,
-      n = b() && t;
-    _.isStarted() && !n ? _.stop() : !_.isStarted() && n && E({
-      riotConnectionId: e.riotConnection.id,
-      lolConnectionId: e.lolConnection.id,
-      onlyUpdateIfStale: !0
+      t = "string" != typeof module,
+      n = b() && exports;
+    _.isStarted() && !require ? _.stop() : !_.isStarted() && require && E({
+      riotConnectionId: module.riotConnection.id,
+      lolConnectionId: module.lolConnection.id,
+      onlyUpdateIfStale: true
     })
   }
   constructor(...e) {

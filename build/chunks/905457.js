@@ -1,5 +1,6 @@
 /** Chunk was on 73217 **/
-e.exports = {
+/** chunk id: 905457, original params: e,t,n (module,exports,require) **/
+module.exports = {
   gradientSplash: "gradientSplash__6d426",
   modalHeader: "modalHeader__6d426",
   title: "title__6d426",

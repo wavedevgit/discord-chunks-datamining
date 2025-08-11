@@ -1,2 +1,3 @@
 /** Chunk was on 64446 **/
-e.exports = JSON.parse('{"+utqa2":["Επιλογή φόντου δώρου: ",[1,"giftStyle"]],"B9XqQk":"Κουτί","AJ4iio":"Τούρτα","P5keo6":"Σεντούκι","w84vER":"Καφές","6dCq/v":"Φλιτζάνι","+HMF8v":"Nitroween","vd1fu7":"Εορταστικό κουτί","aubYGR":"Εορταστική τούρτα","vjxYqa":"Εορταστικό σεντούκι","bHuJLS":"Εορταστικός καφές","M6cPwM":"Χιονόμπαλα","GzPel5":"Κουτί"}')
+/** chunk id: 549546, original params: e (module,exports,require) **/
+module.exports = JSON.parse('{"+utqa2":["Επιλογή φόντου δώρου: ",[1,"giftStyle"]],"B9XqQk":"Κουτί","AJ4iio":"Τούρτα","P5keo6":"Σεντούκι","w84vER":"Καφές","6dCq/v":"Φλιτζάνι","+HMF8v":"Nitroween","vd1fu7":"Εορταστικό κουτί","aubYGR":"Εορταστική τούρτα","vjxYqa":"Εορταστικό σεντούκι","bHuJLS":"Εορταστικός καφές","M6cPwM":"Χιονόμπαλα","GzPel5":"Κουτί"}')

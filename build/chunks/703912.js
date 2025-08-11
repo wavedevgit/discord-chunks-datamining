@@ -1,27 +1,28 @@
 /** Chunk was on 1272 **/
-n.d(t, {
+/** chunk id: 703912, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => P
-}), n(35282), n(997841), n(388685), n(190126), n(368063), n(65234), n(111804), n(490233), n(97749);
-var r = n(664751),
-  i = n(373793),
-  l = n(243814),
-  a = n(149765),
-  o = n(544891),
-  s = n(45792),
-  c = n(433517),
-  u = n(570140),
-  d = n(812206),
-  p = n(979200),
-  f = n(489863),
-  h = n(166148),
-  g = n(307643),
-  m = n(973616),
-  b = n(594174),
-  _ = n(630388),
-  O = n(700785),
-  E = n(996106),
-  y = n(186901),
-  v = n(981631);
+}), require("./35282.js"), require("./997841.js"), require("./388685.js"), require("./190126.js"), require("./368063.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js");
+var Chunk664751 = require("./664751.js"),
+  Chunk373793 = require("./373793.js"),
+  Chunk243814 = require("./243814.js"),
+  Chunk149765 = require("./149765.js"),
+  Chunk544891 = require("./544891.js"),
+  Chunk45792 = require("./45792.js"),
+  Chunk433517 = require("./433517.js"),
+  Chunk570140 = require("./570140.js"),
+  Chunk812206 = require("./812206.js"),
+  Chunk979200 = require("./979200.js"),
+  Chunk489863 = require("./489863.js"),
+  Chunk166148 = require("./166148.js"),
+  Chunk307643 = require("./307643.js"),
+  Chunk973616 = require("./973616.js"),
+  Chunk594174 = require("./594174.js"),
+  Chunk630388 = require("./630388.js"),
+  Chunk700785 = require("./700785.js"),
+  Chunk996106 = require("./996106.js"),
+  Chunk186901 = require("./186901.js"),
+  Chunk981631 = require("./981631.js");
 
 function I(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -33,9 +34,9 @@ function I(e) {
       var r;
       r = n[t], t in e ? Object.defineProperty(e, t, {
         value: r,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
+        enumerable: true,
+        configurable: true,
+        writable: true
       }) : e[t] = r
     })
   }
@@ -75,7 +76,7 @@ async function N(e, t, n) {
     signal: D,
     isSocketRpcPrivateScope: k
   } = e;
-  if (null == D ? void 0 : D.aborted) throw new E.Z({
+  if (null == D ? true : D.aborted) throw new E.Z({
     errorCode: v.lTL.UNKNOWN_ERROR
   }, "Request aborted");
   if (null == u) throw new E.Z({
@@ -92,7 +93,7 @@ async function N(e, t, n) {
   else {
     let e = e => {
         var t;
-        return null != e && (0, _.yE)(e.flags, v.udG.EMBEDDED) && (null == (t = e.integrationTypesConfig) ? void 0 : t[i.Y.USER_INSTALL]) != null
+        return null != e && (0, _.yE)(e.flags, v.udG.EMBEDDED) && (null == (t = e.integrationTypesConfig) ? true : t[i.Y.USER_INSTALL]) != null
       },
       t = d.Z.getApplication(u);
     l = e(t) || e(t = m.ZP.createFromServer(await (0, g.UM)(u, D))) ? i.Y.USER_INSTALL : i.Y.GUILD_INSTALL
@@ -118,11 +119,11 @@ async function N(e, t, n) {
     } = t;
     throw new E.Z({
       errorCode: v.lTL.OAUTH2_ERROR
-    }, "OAuth2 Authorization Error: ".concat((null == e ? void 0 : e.message) || "Unknown Error"))
+    }, "OAuth2 Authorization Error: ".concat((null == e ? true : e.message) || "Unknown Error"))
   }
   if (Z === h.s.NONE && null != o && o.authorized && c) try {
     return (await (0, f.Iq)({
-      authorize: !0,
+      authorize: true,
       clientId: u,
       scopes: M,
       responseType: y,
@@ -139,7 +140,7 @@ async function N(e, t, n) {
     } = t;
     throw new E.Z({
       errorCode: v.lTL.OAUTH2_ERROR
-    }, "OAuth2 Authorize Error: ".concat((null == e ? void 0 : e.message) || "Unknown Error"))
+    }, "OAuth2 Authorize Error: ".concat((null == e ? true : e.message) || "Unknown Error"))
   }
   null == n || n(o.application, A, R);
   let U = O.Hn;
@@ -174,15 +175,15 @@ function T(e, t) {
   if (e.authorization.authing) throw new E.Z({
     errorCode: v.lTL.INVALID_COMMAND
   }, "Already authenticating");
-  return e.authorization.authing = !0, o.tn.get({
+  return e.authorization.authing = true, o.tn.get({
     url: v.ANM.OAUTH2_CURRENT_AUTH,
     headers: {
       Authorization: "Bearer ".concat(t)
     },
-    oldFormErrors: !0,
-    rejectWithError: !1
+    oldFormErrors: true,
+    rejectWithError: false
   }).then(n => {
-    e.authorization.authing = !1;
+    e.authorization.authing = false;
     let {
       application: r,
       user: i,
@@ -208,7 +209,7 @@ function T(e, t) {
       errorCode: v.lTL.INVALID_TOKEN
     }, "Invalid access token: ".concat(t))
   }).catch(t => {
-    throw e.authorization.authing = !1, t
+    throw e.authorization.authing = false, t
   })
 }
 
@@ -234,7 +235,7 @@ function P(e, t) {
               scope: s,
               response_type: "token",
               signal: a,
-              isSocketRpcPrivateScope: !1
+              isSocketRpcPrivateScope: false
             }, e, t).then(e => {
               if (null == e) throw new E.Z({
                 errorCode: v.lTL.UNKNOWN_ERROR
@@ -292,11 +293,11 @@ function P(e, t) {
         if (r.authorization.authing) throw new E.Z({
           errorCode: v.lTL.INVALID_COMMAND
         }, "Already authing");
-        if (r.authorization.authing = !0, "token" === l.response_type) throw r.authorization.authing = !1, new E.Z({
+        if (r.authorization.authing = true, "token" === l.response_type) throw r.authorization.authing = false, new E.Z({
           errorCode: v.lTL.INVALID_COMMAND
         }, 'Authorization response_type "token" is not supported');
         let o = r.authorization.scopes.includes(y.cE);
-        if (!o && r.application.id !== a) throw r.authorization.authing = !1, new E.Z({
+        if (!o && r.application.id !== a) throw r.authorization.authing = false, new E.Z({
           errorCode: v.lTL.INVALID_CLIENTID
         }, "Application does not match the connection's");
         let s = l.scopes || l.scope;
@@ -305,7 +306,7 @@ function P(e, t) {
           signal: i,
           isSocketRpcPrivateScope: o
         }), e, t).then(e => {
-          if (r.authorization.authing = !1, null == e) throw new E.Z({
+          if (r.authorization.authing = false, null == e) throw new E.Z({
             errorCode: v.lTL.UNKNOWN_ERROR
           }, "Unknown error occurred");
           let t = new URL(e),
@@ -329,7 +330,7 @@ function P(e, t) {
             code: n
           }
         }).catch(e => {
-          throw r.authorization.authing = !1, e
+          throw r.authorization.authing = false, e
         })
       }
     }

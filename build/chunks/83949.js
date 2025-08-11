@@ -1,31 +1,32 @@
 /** Chunk was on web.js **/
+/** chunk id: 83949, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => f
 });
-var r = n(73800),
-  i = n(719711),
-  o = n(433517),
-  a = n(579806),
-  s = n(626135),
-  l = n(998502),
-  c = n(286035),
-  u = n(981631);
+var Chunk73800 = require("./73800.js"),
+  Chunk719711 = require("./719711.js"),
+  Chunk433517 = require("./433517.js"),
+  Chunk579806 = require("./579806.js"),
+  Chunk626135 = require("./626135.js"),
+  Chunk998502 = require("./998502.js"),
+  Chunk286035 = require("./286035.js"),
+  Chunk981631 = require("./981631.js");
 
 function d(e) {
   var t;
-  return null == e || null == (t = e._state) ? void 0 : t.lastTestTimestamp
+  return null == e || null == (t = e._state) ? true : t.lastTestTimestamp
 }
 
 function f() {
-  return r.useEffect(() => {
-    window.location.origin === window.GLOBAL_ENV.MIGRATION_DESTINATION_ORIGIN && !0 !== o.K.get(i.SV) && l.ZP.supportsFeature(u.eRX.USER_DATA_CACHE) && (c.Te(), a.Z.userDataCache.getCached().then(e => {
+  return Chunk73800.useEffect(() => {
+    window.location.origin === window.GLOBAL_ENV.MIGRATION_DESTINATION_ORIGIN && true !== Chunk433517.K.get(Chunk719711.SV) && Chunk998502.ZP.supportsFeature(Chunk981631.eRX.USER_DATA_CACHE) && (Chunk286035.Te(), Chunk579806.Z.userDataCache.getCached().then(e => {
       if (null == e) {
         c.kb(), s.default.track(u.rMx.DOMAIN_MIGRATED, {
-          success: !1,
-          has_data: !1
+          success: false,
+          has_data: false
         }, {
-          flush: !0
+          flush: true
         });
         return
       }
@@ -40,12 +41,12 @@ function f() {
           o.K.set(t, JSON.parse(n))
         } catch (e) {}
       })), s.default.track(u.rMx.DOMAIN_MIGRATED, {
-        success: !0,
+        success: true,
         current_is_newer: f,
         has_data: n
       }, {
-        flush: !0
-      }), o.K.set(i.SV, !0), a.Z.userDataCache.deleteCache(), c.Pg()
+        flush: true
+      }), o.K.set(i.SV, true), a.Z.userDataCache.deleteCache(), c.Pg()
     }))
   }, []), null
 }

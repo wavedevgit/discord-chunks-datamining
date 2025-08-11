@@ -1,0 +1,22 @@
+/** Chunk was on 85831 **/
+/** chunk id: 659700, original params: e,n,t (module,exports,require) **/
+require.d(exports, {
+  X: () => l,
+  x: () => c
+});
+var Chunk255367 = require("./255367.js");
+
+function l(e) {
+  let {
+    level: n,
+    children: t
+  } = e;
+  return <"h".concat(n)>{t}</"h".concat(n)>
+}
+
+function c(e) {
+  let {
+    children: n
+  } = e;
+  return <small>{n}</small>
+}

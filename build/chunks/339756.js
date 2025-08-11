@@ -1,4 +1,5 @@
 /** Chunk was on 1272 **/
-e.exports = {
+/** chunk id: 339756, original params: e,t,n (module,exports,require) **/
+module.exports = {
   divider: "divider_c87e85"
 }

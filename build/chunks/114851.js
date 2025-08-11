@@ -1,20 +1,21 @@
 /** Chunk was on 88934 **/
-n.d(t, {
+/** chunk id: 114851, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   M: () => i
 });
-var r = n(73800),
-  a = n(660384);
+var Chunk73800 = require("./73800.js"),
+  Chunk660384 = require("./660384.js");
 
 function i() {
-  let e = r.useRef(new a.Z),
-    t = r.useCallback(t => {
+  let e = Chunk73800.useRef(new Chunk660384.Z),
+    t = Chunk73800.useCallback(t => {
       e.current.handleScroll(t)
     }, []);
   return {
-    resetScrollPosition: r.useCallback(() => {
-      e.current.scrollPosition.set(0)
+    resetScrollPosition: Chunk73800.useCallback(() => {
+      module.current.scrollPosition.set(0)
     }, []),
-    scrollPosition: e.current.scrollPosition,
-    onScroll: t
+    scrollPosition: module.current.scrollPosition,
+    onScroll: exports
   }
 }

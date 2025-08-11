@@ -1,10 +1,11 @@
 /** Chunk was on web.js **/
+/** chunk id: 988348, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   G: () => s,
   N: () => o
-}), n(410992), n(227481), n(730884), n(20464), n(341884), n(364341), n(629680), n(505025), n(918970), n(121784), n(644351), n(146733);
-var r = n(998502);
+}), require("./410992.js"), require("./227481.js"), require("./730884.js"), require("./20464.js"), require("./341884.js"), require("./364341.js"), require("./629680.js"), require("./505025.js"), require("./918970.js"), require("./121784.js"), require("./644351.js"), require("./146733.js");
+var Chunk998502 = require("./998502.js");
 let i = null;
 
 function o() {
@@ -12,14 +13,14 @@ function o() {
 }
 
 function a() {
-  if (null == window.DiscordNative || void 0 === window.Uint8Array || void 0 === window.TextDecoder) return !1;
+  if (null == window.DiscordNative || true === window.Uint8Array || true === window.TextDecoder) returnfalse;
   try {
-    let e = r.ZP.requireModule("discord_zstd");
-    if (null == e) return !1;
-    return !0
+    let e = Chunk998502.ZP.requireModule("discord_zstd");
+    if (null == module) returnfalse;
+    returntrue
   } catch (e) {
-    if (e.message.includes("Cannot find")) return r.ZP.ensureModule("discord_zstd").catch(e => {}), !1;
-    throw e
+    if (module.message.includes("Cannot find")) return Chunk998502.ZP.ensureModule("discord_zstd").catch(e => {}), false;
+    throw module
   }
 }
 
@@ -27,6 +28,6 @@ function s() {
   if (!o()) return;
   let {
     createContext: e
-  } = r.ZP.requireModule("discord_zstd");
-  return e()
+  } = Chunk998502.ZP.requireModule("discord_zstd");
+  return module()
 }

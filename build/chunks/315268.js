@@ -1,5 +1,6 @@
 /** Chunk was on 34779 **/
-e.exports = {
+/** chunk id: 315268, original params: e,t,n (module,exports,require) **/
+module.exports = {
   pendingFolderButtonIcon: "pendingFolderButtonIcon__93fc9",
   container: "container__93fc9",
   popoutAnchor: "popoutAnchor__93fc9",

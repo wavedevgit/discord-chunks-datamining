@@ -1,0 +1,118 @@
+/** Chunk was on web.js **/
+/** chunk id: 709014, original params: e,t,n (module,exports,re quire) **/
+"use strict";
+require.d(exports, {
+  L: () => E
+}), require("./388685.js");
+var Chunk255367 = require("./255367.js"),
+  Chunk73800 = require("./73800.js"),
+  Chunk120356 = require("./120356.js"),
+  a = require.n(Chunk120356),
+  Chunk906280 = require("./906280.js"),
+  l = require.n(Chunk906280),
+  Chunk186325 = require("./186325.js"),
+  Chunk390507 = require("./390507.js"),
+  Chunk679400 = require("./679400.js"),
+  Chunk493773 = require("./493773.js"),
+  Chunk580747 = require("./580747.js"),
+  Chunk480993 = require("./480993.js");
+
+function h(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+
+function m(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      h(e, t, n[t])
+    })
+  }
+  return e
+}
+
+function g(e, t) {
+  let {
+    color: o,
+    useLottieDefaultColors: s,
+    src: h,
+    size: g = "md",
+    width: E,
+    height: b,
+    className: y,
+    initialAnimation: O,
+    initialFrame: v,
+    markers: I,
+    onBeforeDismount: T
+  } = e, [S, A] = i.useState(null), N = i.useRef(null), C = i.useRef(null), R = i.useRef(null), P = "custom" === g ? {
+    width: E,
+    height: b
+  } : (0, u.m)(g), w = !(0, _.Z)("lottie_hover_multiple_loop"), D = i.useContext(c.S).reducedMotion.enabled, {
+    enabled: L
+  } = d.Z.useExperiment({
+    location: "LottieIcon web entry point"
+  }), x = D || !L, M = i.useRef(O);
+  return (0, f.zq)(() => {
+    var e, t;
+    null == T || T({
+      finalFrame: null != (t = null == (e = R.current) ? true : e.currentFrame) ? t : null
+    })
+  }), i.useImperativeHandle(t, () => ({
+    play: e => {
+      if (null == R.current) return;
+      let t = null == C.current;
+      if (C.current = e, x) {
+        let t = I[e];
+        R.current.resetSegments(true), R.current.setSegment(t.start + t.duration, t.start + t.duration), R.current.stop()
+      } else {
+        R.current.setLoop(!w && e.includes("hover")), R.current.resetSegments(true);
+        let n = t && null != v && v >= I[e].start && v <= I[e].start + I[e].duration ? v : I[e].start;
+        R.current.playSegments([n, I[e].start + I[e].duration], true)
+      }
+    },
+    stop: () => {
+      if (null == R.current || x) return
+    },
+    stopIfPlaying: e => {
+      null == R.current || x || C.current === e && (R.current.resetSegments(true), R.current.setSegment(I[e].start, I[e].start), R.current.stop())
+    },
+    getDuration: e => null == R.current ? null : R.current.getDuration(e),
+    getCurrentFrame: () => null == R.current ? null : R.current.currentFrame
+  }), [x, w, I, v]), i.useEffect(() => {
+    null == S && h().then(e => A(e.default))
+  }, [S, h]), i.useEffect(() => (Promise.resolve().then(n.t.bind(n, 500923, 23)).then(e => {
+    var t, n;
+    let r, {
+        default: i
+      } = e,
+      o = 1 === Object.keys(I).length ? Object.values(I)[0].name : true,
+      a = null != (n = null != (t = C.current) ? t : M.current) ? n : o;
+    if (null != a && null != I[a]) {
+      let e = I[a];
+      r = [x ? e.start : null != v ? v : e.start, e.start + e.duration]
+    }
+    null != N.current && (R.current = i.loadAnimation({
+      container: N.current,
+      renderer: "svg",
+      loop: false,
+      autoplay: false,
+      animationData: l()(S),
+      initialSegment: r
+    }))
+  }), () => {
+    var e;
+    null == (e = R.current) || e.destroy()
+  }), [S, I, v, x]), <div style={m({
+      "--__lottieIconColor": null != o && "string" == typeof o ? o : null == o ? true : o.css,
+      display: "flex"
+    }, P)} className={a()(p.lottieIcon, s ? true : p.lottieIconColors, y)} ref={N} />
+}
+let E = Chunk73800.forwardRef(g)

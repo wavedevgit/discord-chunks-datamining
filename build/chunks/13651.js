@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 13651, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   formNotice: "formNotice_f43ba5",
   formNoticeTitle: "formNoticeTitle_f43ba5",
   formNoticeBody: "formNoticeBody_f43ba5",

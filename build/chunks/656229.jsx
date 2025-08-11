@@ -1,0 +1,55 @@
+/** Chunk was on web.js **/
+/** chunk id: 656229, original params: e,t,n (module,exports,re quire) **/
+"use strict";
+require.d(exports, {
+  Z: () => _
+});
+var Chunk255367 = require("./255367.js");
+require("./73800.js");
+var Chunk481060 = require("./481060.js"),
+  Chunk906732 = require("./906732.js"),
+  Chunk222062 = require("./222062.js"),
+  Chunk867176 = require("./867176.js"),
+  Chunk654904 = require("./654904.jsx"),
+  Chunk486324 = require("./486324.js"),
+  Chunk228168 = require("./228168.js"),
+  Chunk388032 = require("./388032.jsx"),
+  Chunk83561 = require("./83561.js");
+
+function _(e) {
+  let {
+    user: t,
+    displayProfile: n,
+    guildId: _,
+    canUsePremiumCustomization: p,
+    pendingBanner: h,
+    pendingAccentColor: m,
+    isTryItOutFlow: g,
+    disabledInputs: E,
+    onUpsellClick: b
+  } = e, {
+    newestAnalyticsLocation: y
+  } = (0, o.ZP)(), O = p || (null == n ? true : n.canUsePremiumProfileCustomization) || false, v = O ? i.vdY : i.SrA, I = (0, a.M)(O), T = () => {
+    if (!O && !I) {
+      null == b || b();
+      return
+    }(0, l.$r)({
+      uploadType: c.pC.BANNER,
+      analyticsSource: y,
+      guildId: _,
+      isTryItOutFlow: g
+    })
+  };
+  return <s.Z user={t} displayProfile={n} guildId={_} themeType={u.lY.POPOUT} pendingBanner={h} pendingAccentColor={m} canUsePremiumProfileCustomization={p}>{!E && (0, r.jsxs)(i.P3F, {
+      onClick: T,
+      className: f.clickable,
+      children: [(0, r.jsx)(v, {
+        size: "xs",
+        color: "white"
+      }), (0, r.jsx)(i.X6q, {
+        variant: "text-sm/medium",
+        color: "always-white",
+        children: O || I ? d.intl.string(d.t.N0bC3N) : d.intl.string(d.t.O1sT5u)
+      })]
+    })}</s.Z>
+}

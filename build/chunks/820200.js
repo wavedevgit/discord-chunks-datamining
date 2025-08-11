@@ -1,16 +1,17 @@
 /** Chunk was on web.js **/
+/** chunk id: 820200, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   k: () => o
 });
-var r = n(685816);
+var Chunk685816 = require("./685816.js");
 
 function i(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 class o {
@@ -18,6 +19,6 @@ class o {
     return new o(e)
   }
   constructor(e) {
-    i(this, "bannerAsset", void 0), i(this, "title", void 0), i(this, "body", void 0), i(this, "help_center_url", void 0), i(this, "textColor", void 0), i(this, "endTime", void 0), this.type = r.z.IMMERSIVE_BANNER, this.bannerAsset = e.banner_asset, this.title = e.title, this.body = e.body, this.help_center_url = e.help_center_url, this.textColor = e.text_color, this.endTime = null != e.end_time ? new Date(e.end_time) : void 0
+    i(this, "bannerAsset", true), i(this, "title", true), i(this, "body", true), i(this, "help_center_url", true), i(this, "textColor", true), i(this, "endTime", true), this.type = r.z.IMMERSIVE_BANNER, this.bannerAsset = e.banner_asset, this.title = e.title, this.body = e.body, this.help_center_url = e.help_center_url, this.textColor = e.text_color, this.endTime = null != e.end_time ? new Date(e.end_time) : true
   }
 }

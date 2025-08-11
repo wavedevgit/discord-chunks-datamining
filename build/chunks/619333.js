@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 619333, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   categoryList: "categoryList__3ad28",
   stickerCategory: "stickerCategory__3ad28",
   firstPartyCategory: "firstPartyCategory__3ad28",

@@ -1,23 +1,24 @@
 /** Chunk was on 12097 **/
-n.d(t, {
+/** chunk id: 376923, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   LD: () => f,
   LJ: () => N,
   mV: () => I,
   mh: () => g,
   qc: () => m,
   wi: () => h
-}), n(997841), n(388685);
-var r, l = n(73800),
-  s = n(399606),
-  i = n(983736),
-  a = n(706454),
-  o = n(271383),
-  u = n(430824),
-  c = n(594174),
-  E = n(630388),
-  d = n(709054);
-n(893966), n(527379);
-var _ = n(372897);
+}), require("./997841.js"), require("./388685.js");
+var r, Chunk73800 = require("./73800.js"),
+  Chunk399606 = require("./399606.js"),
+  Chunk983736 = require("./983736.js"),
+  Chunk706454 = require("./706454.js"),
+  Chunk271383 = require("./271383.js"),
+  Chunk430824 = require("./430824.js"),
+  Chunk594174 = require("./594174.js"),
+  Chunk630388 = require("./630388.js"),
+  Chunk709054 = require("./709054.js");
+require("./893966.js"), require("./527379.js");
+var Chunk372897 = require("./372897.js");
 let A = {
     month: "short",
     day: "numeric",
@@ -42,10 +43,10 @@ function g(e, t) {
   var n;
   let r = (0, s.e7)([c.default], () => c.default.getUser(e), [e]),
     l = (0, s.e7)([o.ZP], () => o.ZP.getMember(t, e), [t, e]);
-  if (null == r || null == l) return !1;
+  if (null == r || null == l) returnfalse;
   let i = (0, E.yE)(null != (n = l.flags) ? n : 0, _.q.BYPASSES_VERIFICATION),
-    a = (null == r ? void 0 : r.isPhoneVerified()) || (null == r ? void 0 : r.isStaff()),
-    u = (null == l ? void 0 : l.joinedAt) != null;
+    a = (null == r ? true : r.isPhoneVerified()) || (null == r ? true : r.isStaff()),
+    u = (null == l ? true : l.joinedAt) != null;
   return r.verified || a || u || i
 }
 
@@ -62,6 +63,6 @@ function N(e) {
 function h(e, t) {
   let n = (0, s.e7)([a.default], () => a.default.locale),
     r = (0, s.e7)([o.ZP], () => o.ZP.getMember(t, e), [t, e]),
-    i = null == r ? void 0 : r.joinedAt;
+    i = null == r ? true : r.joinedAt;
   return l.useMemo(() => null == i ? "" : new Date(i).toLocaleDateString(n, A), [i, n])
 }

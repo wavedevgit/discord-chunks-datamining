@@ -1,20 +1,21 @@
 /** Chunk was on 63141 **/
-n.d(t, {
+/** chunk id: 181912, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => m
 });
-var i = n(26151),
-  r = n(13245),
-  o = n(287734),
-  l = n(43267),
-  s = n(933557),
-  a = n(593481),
-  c = n(614554),
-  d = n(699516),
-  u = n(594174),
-  h = n(312839),
-  p = n(981631),
-  f = n(987650),
-  g = n(388032);
+var Chunk26151 = require("./26151.js"),
+  Chunk13245 = require("./13245.js"),
+  Chunk287734 = require("./287734.js"),
+  Chunk43267 = require("./43267.js"),
+  Chunk933557 = require("./933557.js"),
+  Chunk593481 = require("./593481.js"),
+  Chunk614554 = require("./614554.js"),
+  Chunk699516 = require("./699516.js"),
+  Chunk594174 = require("./594174.js"),
+  Chunk312839 = require("./312839.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk987650 = require("./987650.js"),
+  Chunk388032 = require("./388032.js");
 
 function m(e) {
   let t = (0, s.F6)(e, u.default, d.Z),
@@ -51,7 +52,7 @@ function m(e) {
         location: "Overlay Notificaiton",
         guild_id: e.guild_id,
         channel_id: e.id,
-        video_enabled: !1
+        video_enabled: false
       })
     },
     onCancelClick: () => {

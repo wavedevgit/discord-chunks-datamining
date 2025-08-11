@@ -1,0 +1,1 @@
+{"id":"372454","type":"experiment","data":{"kind":"guild","id":"2023-08_improved_bans_page","label":"Guild Settings Improved Bans Page","defaultConfig":{"enabled":false},"treatments":[{"id":1,"label":"Guild Settings Improved Bans Page","config":{"enabled":true}}]},"fromModule":{"id":"web.js"}}

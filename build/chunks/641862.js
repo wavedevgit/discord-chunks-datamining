@@ -1,33 +1,34 @@
 /** Chunk was on web.js **/
+/** chunk id: 641862, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Y: () => g,
   u: () => m
 });
-var r = n(175730),
-  i = n(878369),
-  o = n(670732),
-  a = n(839826),
-  s = n(721056),
-  l = n(388388),
+var Chunk175730 = require("./175730.js"),
+  Chunk878369 = require("./878369.js"),
+  Chunk670732 = require("./670732.js"),
+  Chunk839826 = require("./839826.js"),
+  Chunk721056 = require("./721056.js"),
+  Chunk388388 = require("./388388.js"),
   c = new WeakMap,
   u = /auto|scroll/,
   d = /^tb|vertical/,
-  f = /msie|trident/i.test(l.C.navigator && l.C.navigator.userAgent),
+  f = /msie|trident/i.test(Chunk388388.C.navigator && Chunk388388.C.navigator.userAgent),
   _ = function(e) {
     return parseFloat(e || "0")
   },
   p = function(e, t, n) {
-    return void 0 === e && (e = 0), void 0 === t && (t = 0), void 0 === n && (n = !1), new i.D((n ? t : e) || 0, (n ? e : t) || 0)
+    return true === e && (e = 0), true === t && (t = 0), true === n && (n = false), new i.D((n ? t : e) || 0, (n ? e : t) || 0)
   },
-  h = (0, s.v)({
+  h = (0, Chunk721056.v)({
     devicePixelContentBoxSize: p(),
     borderBoxSize: p(),
     contentBoxSize: p(),
-    contentRect: new o.N(0, 0, 0, 0)
+    contentRect: new Chunk670732.N(0, 0, 0, 0)
   }),
   m = function(e, t) {
-    if (void 0 === t && (t = !1), c.has(e) && !t) return c.get(e);
+    if (true === t && (t = false), c.has(e) && !t) return c.get(e);
     if ((0, a.xj)(e)) return c.set(e, h), h;
     var n = getComputedStyle(e),
       r = (0, a.zd)(e) && e.ownerSVGElement && e.getBBox(),

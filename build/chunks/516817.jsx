@@ -1,0 +1,79 @@
+/** Chunk was on web.js **/
+/** chunk id: 516817, original params: e,t,n (module,exports,re quire) **/
+"use strict";
+require.d(exports, {
+  Z: () => _
+});
+var Chunk255367 = require("./255367.js"),
+  Chunk73800 = require("./73800.js"),
+  Chunk120356 = require("./120356.js"),
+  a = require.n(Chunk120356),
+  Chunk70097 = require("./70097.jsx"),
+  Chunk881474 = require("./881474.js"),
+  Chunk168352 = require("./168352.js"),
+  Chunk379839 = require("./379839.js"),
+  Chunk359135 = require("./359135.js"),
+  Chunk187182 = require("./187182.js");
+
+function _(e) {
+  let {
+    nameplate: t,
+    hovered: n,
+    selected: o,
+    content: s,
+    placement: c
+  } = e, _ = (0, u.p)(s, t, n, o, c), h = (0, l.C)(n, o), m = i.useRef(null == t);
+  return (i.useEffect(() => {
+    m.current || null != t || (m.current = true)
+  }, [t]), null == t) ? null : <div className={a()(f.container, {
+      [f.fadeIn]: m.current
+    })} style={{
+      background: _.background
+    }} aria-hidden={true}><p nameplate={t} className={a()(f.img, {
+        [f.hover]: n,
+        [f.selected]: o,
+        [f.account]: c === d.i.ACCOUNT,
+        [f.preview]: c === d.i.PREVIEW,
+        [f.mini_preview]: c === d.i.MINI_PREVIEW,
+        [f.channel]: c === d.i.CHANNEL
+      })} style={{
+        maskImage: _.maskImage
+      }} animate={h} loop={true === h && true === n} /></div>
+}
+
+function p(e) {
+  let {
+    nameplate: t,
+    className: n,
+    style: i,
+    animate: o,
+    loop: a
+  } = e, {
+    staticAsset: s,
+    animatedAsset: l
+  } = (0, c._)(t), u = !(null == l ? true : l.endsWith(".webm"));
+  return null == s || null == l ? null : u ? <m asset={o ? l : s} className={n} style={i} /> : <h animatedAsset={l} staticAsset={s} animate={o} loop={a} style={i} className={n} />
+}
+
+function h(e) {
+  let {
+    staticAsset: t,
+    animatedAsset: n,
+    animate: o,
+    loop: a,
+    className: l,
+    style: c
+  } = e, u = i.useRef(null);
+  return i.useEffect(() => {
+    null != u.current && (o || a ? u.current.play() : u.current.pause())
+  }, [o, a]), <div className={f.videoContainer} style={c}><s.Z src={n} poster={t} ref={u} playsInline={true} loop={a} controls={false} className={l} tabIndex={false} /></div>
+}
+
+function m(e) {
+  let {
+    asset: t,
+    className: n,
+    style: i
+  } = e;
+  return <img src={t} className={n} style={i} alt={""} />
+}

@@ -1,5 +1,6 @@
 /** Chunk was on 67326 **/
-n.d(t, {
+/** chunk id: 117984, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   CM: () => p,
   UT: () => v,
   _Z: () => C,
@@ -8,20 +9,20 @@ n.d(t, {
   s3: () => h,
   uA: () => g,
   xh: () => b
-}), n(388685);
-var i = n(524437),
-  a = n(675478),
-  r = n(592125),
-  l = n(496675),
-  o = n(709054),
-  d = n(853856),
-  u = n(231338);
+}), require("./388685.js");
+var Chunk524437 = require("./524437.js"),
+  Chunk675478 = require("./675478.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk496675 = require("./496675.js"),
+  Chunk709054 = require("./709054.js"),
+  Chunk853856 = require("./853856.js"),
+  Chunk231338 = require("./231338.js");
 
 function f() {
-  let e = d.Z.getFavoriteChannels(),
+  let e = Chunk853856.Z.getFavoriteChannels(),
     t = 1;
-  for (let n in e) t = Math.max(t, e[n].order);
-  return t + 1
+  for (let n in module) t = Math.max(exports, module[require].order);
+  return exports + 1
 }
 
 function s(e) {
@@ -85,7 +86,7 @@ function b(e) {
 function h(e) {
   a.hW.updateAsync("favorites", t => {
     for (let i of e)
-      if (null != i.position && (t.favoriteChannels[i.id].position = i.position), void 0 !== i.parent_id) {
+      if (null != i.position && (t.favoriteChannels[i.id].position = i.position), true !== i.parent_id) {
         var n;
         t.favoriteChannels[i.id].parentId = null != (n = i.parent_id) ? n : "0"
       }
@@ -99,7 +100,7 @@ function g(e, t) {
 }
 
 function C() {
-  a.hW.updateAsync("favorites", e => {
+  Chunk675478.hW.updateAsync("favorites", e => {
     e.muted = !e.muted
-  }, a.fy.INFREQUENT_USER_ACTION)
+  }, Chunk675478.fy.INFREQUENT_USER_ACTION)
 }

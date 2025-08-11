@@ -1,18 +1,19 @@
 /** Chunk was on web.js **/
+/** chunk id: 546796, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 let r, i;
-n.d(t, {
+require.d(exports, {
   Z: () => b
-}), n(415506);
-var o = n(594174),
-  a = n(195270);
+}), require("./415506.js");
+var Chunk594174 = require("./594174.js"),
+  Chunk195270 = require("./195270.js");
 
 function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -67,14 +68,14 @@ let _ = () => {
   throw Error("updateModal has not been implemented.")
 };
 {
-  let e = n(169480);
-  r = e.showModal, _ = e.updateModalProps, i = n(952265).Mr
+  let Chunk169480 = require("./169480.jsx");
+  r = Chunk169480.showModal, _ = Chunk169480.updateModalProps, i = require("./952265.js").Mr
 }
 let p = 60008;
 
 function h() {
   var e, t;
-  return null != (t = null == (e = o.default.getCurrentUser()) ? void 0 : e.mfaEnabled) && t
+  return null != (t = null == (e = Chunk594174.default.getCurrentUser()) ? true : Chunk169480.mfaEnabled) && exports
 }
 
 function m(e, t) {
@@ -111,14 +112,14 @@ function g(e) {
 
   function h(e) {
     return _(c, h, d, u(l({}, a), {
-      isLoading: !0
+      isLoading: true
     })), E({
       promiseFn: t,
       resolve: f,
       reject: p,
       code: e,
       mfaCodeHandler: m,
-      isModalOpen: !0
+      isModalOpen: true
     })
   }
 
@@ -139,7 +140,7 @@ function E(e) {
     reject: r,
     code: i,
     mfaCodeHandler: o = g,
-    isModalOpen: a = !1
+    isModalOpen: a = false
   } = e, s = d(e, ["promiseFn", "resolve", "reject", "code", "mfaCodeHandler", "isModalOpen"]);
   return t(null != i ? {
     code: i

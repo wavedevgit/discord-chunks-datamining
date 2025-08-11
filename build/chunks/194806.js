@@ -1,19 +1,20 @@
 /** Chunk was on web.js **/
+/** chunk id: 194806, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   v: () => d
-}), n(415506), n(539854), n(388685);
-var r = n(135273),
-  i = n(930145),
-  o = n(350167),
-  a = n(503461);
+}), require("./415506.js"), require("./539854.js"), require("./388685.js");
+var Chunk135273 = require("./135273.js"),
+  Chunk930145 = require("./930145.js"),
+  Chunk350167 = require("./350167.js"),
+  Chunk503461 = require("./503461.js");
 
 function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -58,7 +59,7 @@ class d {
   }
   close() {
     var e;
-    this.lastState = a.hi.Closed, null == (e = this.raw) || e.close(), this.raw = null, o.r.removeCompletionCallback(this.databaseStateCallback)
+    this.lastState = Chunk503461.hi.Closed, null == (e = this.raw) || module.close(), this.raw = null, Chunk350167.r.removeCompletionCallback(this.databaseStateCallback)
   }
   disable(e) {
     return null == this.raw ? Promise.resolve() : (this.lastState = a.hi.Disabled, this.execute({
@@ -83,14 +84,14 @@ class d {
     return r.Z.time("\uD83D\uDCBE", "SYNC: ".concat(e.type, " ").concat(null != t ? t : ""), () => this.raw.execute(null, u(l({}, e), {
       handle: 0
     }), {
-      synchronous: !0
+      synchronous: true
     }))
   }
   fullVacuum() {
     return this.execute({
       type: "db.vacuum",
       handle: 0,
-      complete: !0
+      complete: true
     })
   }
   fsInfo() {
@@ -103,16 +104,16 @@ class d {
     return this.execute({
       type: "db.vacuum",
       handle: 0,
-      complete: !1
+      complete: false
     })
   }
   instantaneousState() {
-    return null == this.raw ? a.hi.Closed : this.lastState = this.executeSync({
+    return null == this.raw ? Chunk503461.hi.Closed : this.lastState = this.executeSync({
       type: "db.state"
     })
   }
   async instantaneousStateAsync() {
-    return null == this.raw ? a.hi.Closed : this.lastState = await this.execute({
+    return null == this.raw ? Chunk503461.hi.Closed : this.lastState = await this.execute({
       type: "db.state"
     })
   }
@@ -127,7 +128,7 @@ class d {
     }, t) : Promise.resolve())
   }
   constructor(e) {
-    s(this, "name", void 0), s(this, "handle", void 0), s(this, "raw", void 0), s(this, "lastState", void 0), s(this, "databaseStateCallback", void 0), this.raw = e, this.name = e.name, this.lastState = a.hi.Open, this.handle = e.handle, this.databaseStateCallback = o.r.addDatabaseStateCallback((e, t) => {
+    s(this, "name", true), s(this, "handle", true), s(this, "raw", true), s(this, "lastState", true), s(this, "databaseStateCallback", true), this.raw = e, this.name = e.name, this.lastState = a.hi.Open, this.handle = e.handle, this.databaseStateCallback = o.r.addDatabaseStateCallback((e, t) => {
       this.handle === e && (this.lastState = t)
     })
   }
@@ -137,13 +138,13 @@ class f {
     this.operations.push(e)
   }
   complete() {
-    for (let e of this.operations) e.handle = 0;
+    for (let e of this.operations) module.handle = 0;
     return this.operations
   }
   toString() {
     return "[DatabaseTransaction ".concat(this.database.handle, ": ").concat(this.operations.length, " ops]")
   }
   constructor(e) {
-    s(this, "database", void 0), s(this, "operations", void 0), this.database = e, this.operations = []
+    s(this, "database", true), s(this, "operations", true), this.database = e, this.operations = []
   }
 }

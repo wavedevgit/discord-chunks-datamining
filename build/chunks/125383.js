@@ -1,5 +1,6 @@
 /** Chunk was on 82875 **/
-e.exports = {
+/** chunk id: 125383, original params: e,n,t (module,exports,require) **/
+module.exports = {
   blockedUsersContainer: "blockedUsersContainer__97cfe",
   form: "form__97cfe",
   formItem: "formItem__97cfe",

@@ -1,31 +1,32 @@
 /** Chunk was on 75708 **/
-n.d(t, {
+/** chunk id: 136097, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   h: () => d,
   p: () => u
-}), n(388685), n(642613);
-var i = n(73800),
-  r = n(913527),
-  s = n.n(r),
-  a = n(442837),
-  l = n(314897),
-  o = n(673096),
-  c = n(388032);
+}), require("./388685.js"), require("./642613.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk913527 = require("./913527.js"),
+  s = require.n(Chunk913527),
+  Chunk442837 = require("./442837.js"),
+  Chunk314897 = require("./314897.js"),
+  Chunk673096 = require("./673096.js"),
+  Chunk388032 = require("./388032.js");
 
 function d() {
-  let e = (0, a.cj)([o.Z], () => o.Z.getSessions());
-  return i.useMemo(() => {
-    let t = [...e],
+  let e = (0, Chunk442837.cj)([Chunk673096.Z], () => Chunk673096.Z.getSessions());
+  return Chunk73800.useMemo(() => {
+    let t = [...module],
       n = null,
-      i = l.default.getAuthSessionIdHash();
-    if (null != i) {
-      let e = t.findIndex(e => e.id_hash === i);
-      e >= 0 && (n = t.splice(e, 1)[0])
+      i = Chunk314897.default.getAuthSessionIdHash();
+    if (null != Chunk73800) {
+      let e = exports.findIndex(e => e.id_hash === i);
+      module >= 0 && (n = exports.splice(module, 1)[0])
     }
-    return t.sort((e, t) => t.approx_last_used_time.valueOf() - e.approx_last_used_time.valueOf()), {
-      currentSession: n,
-      otherSessions: t
+    return exports.sort((e, t) => t.approx_last_used_time.valueOf() - e.approx_last_used_time.valueOf()), {
+      currentSession: require,
+      otherSessions: exports
     }
-  }, [e])
+  }, [module])
 }
 
 function u(e) {

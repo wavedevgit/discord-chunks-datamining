@@ -1,9 +1,10 @@
 /** Chunk was on web.js **/
+/** chunk id: 984880, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-var r = n(381538);
+var Chunk381538 = require("./381538.js");
 
 function i() {
-  return (i = r || function(e) {
+  return (i = Chunk381538 || function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = arguments[t];
       for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
@@ -28,21 +29,21 @@ function o(e) {
 function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
 function s(e, t) {
   e.prototype = Object.create(t.prototype), e.prototype.constructor = e, e.__proto__ = t
 }
-var l = n(962759),
-  c = n(152477),
-  u = n(73800),
-  d = n(606166),
-  f = n(679785),
-  _ = n(467159),
+var Chunk962759 = require("./962759.js"),
+  Chunk152477 = require("./152477.js"),
+  Chunk73800 = require("./73800.js"),
+  Chunk606166 = require("./606166.js"),
+  Chunk679785 = require("./679785.js"),
+  Chunk467159 = require("./467159.js"),
   p = function(e, t, n, r) {
     return d({
       "public/DraftStyleDefault/unorderedListItem": "unordered-list-item" === e,
@@ -57,7 +58,7 @@ var l = n(962759),
       "public/DraftStyleDefault/listRTL": "RTL" === r
     })
   };
-e.exports = function(e) {
+module.exports = function(e) {
   function t() {
     return e.apply(this, arguments) || this
   }
@@ -66,11 +67,11 @@ e.exports = function(e) {
   return n.shouldComponentUpdate = function(e) {
     var t = this.props.editorState,
       n = e.editorState;
-    if (t.getDirectionMap() !== n.getDirectionMap() || t.getSelection().getHasFocus() !== n.getSelection().getHasFocus()) return !0;
+    if (t.getDirectionMap() !== n.getDirectionMap() || t.getSelection().getHasFocus() !== n.getSelection().getHasFocus()) returntrue;
     var r = n.getNativelyRenderedContent(),
       i = t.isInCompositionMode(),
       o = n.isInCompositionMode();
-    if (t === n || null !== r && n.getCurrentContent() === r || i && o) return !1;
+    if (t === n || null !== r && n.getCurrentContent() === r || i && o) returnfalse;
     var a = t.getCurrentContent(),
       s = n.getCurrentContent(),
       l = t.getDecorator(),
@@ -82,9 +83,9 @@ e.exports = function(e) {
         R = C.getKey(),
         P = C.getType(),
         w = n(C),
-        D = void 0,
-        L = void 0,
-        x = void 0;
+        D = true,
+        L = true,
+        x = true;
       w && (D = w.component, L = w.props, x = w.editable);
       var M = g || v.get(R),
         k = c.encode(R, 0, 0),
@@ -115,14 +116,14 @@ e.exports = function(e) {
       var H = D || l,
         Y = {
           className: F,
-          "data-block": !0,
+          "data-block": true,
           "data-editor": h,
           "data-offset-key": k,
           key: R
         };
-      void 0 !== x && (Y = o({}, Y, {
+      true !== x && (Y = o({}, Y, {
         contentEditable: x,
-        suppressContentEditableWarning: !0
+        suppressContentEditableWarning: true
       }));
       var W = u.createElement(B, Y, u.createElement(H, i({}, j, {
         key: R
@@ -150,4 +151,4 @@ e.exports = function(e) {
       "data-contents": "true"
     }, K)
   }, t
-}(u.Component)
+}(Chunk73800.Component)

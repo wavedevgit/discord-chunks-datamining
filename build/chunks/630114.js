@@ -1,29 +1,30 @@
 /** Chunk was on web.js **/
+/** chunk id: 630114, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => E
-}), n(539854), n(388685), n(997841), n(49124);
-var r = n(392711),
-  i = n.n(r),
-  o = n(131704),
-  a = n(680089),
-  s = n(592125),
-  l = n(480294),
-  c = n(580005),
-  u = n(496675),
-  d = n(9156),
-  f = n(70956),
-  _ = n(630388),
-  p = n(823379),
-  h = n(789662),
-  m = n(981631),
-  g = n(526761);
+}), require("./539854.js"), require("./388685.js"), require("./997841.js"), require("./49124.js");
+var Chunk392711 = require("./392711.js"),
+  i = require.n(Chunk392711),
+  Chunk131704 = require("./131704.js"),
+  Chunk680089 = require("./680089.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk480294 = require("./480294.js"),
+  Chunk580005 = require("./580005.js"),
+  Chunk496675 = require("./496675.js"),
+  Chunk9156 = require("./9156.js"),
+  Chunk70956 = require("./70956.js"),
+  Chunk630388 = require("./630388.js"),
+  Chunk823379 = require("./823379.js"),
+  Chunk789662 = require("./789662.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk526761 = require("./526761.js");
 
 function E(e, t, n, r, i) {
   if (t !== h.AR.UseGreyDot) return [{
     label: "Setting the guild to a white dot unread",
     apply: (e, t) => {
-      v(e, t, !0)
+      v(e, t, true)
     }
   }];
   let o = [],
@@ -36,9 +37,9 @@ function b(e, t) {
   let n = [{
       label: "Unmuting the guild and marking it as read",
       apply: e => {
-        e.muted = !1, e.mute_config = null
+        e.muted = false, e.mute_config = null
       },
-      needsMarkedAsRead: !0
+      needsMarkedAsRead: true
     }],
     r = t.filter(t => d.ZP.getChannelMessageNotifications(e.id, t.id) === m.bL.ALL_MESSAGES);
   return r.length > 0 && n.push({
@@ -65,7 +66,7 @@ function O() {
   return {
     label: "Setting the guild to a grey dot unread",
     apply: (e, t) => {
-      v(e, t, !1)
+      v(e, t, false)
     }
   }
 }
@@ -85,7 +86,7 @@ function I(e) {
     label: "Setting ".concat(r.length, " announcement channels to white-dot"),
     debug: r.map(e => "\n    - #".concat(e.name)).join(""),
     apply: (e, t) => {
-      for (let n of r) R(e, t, n.id, !0)
+      for (let n of r) R(e, t, n.id, true)
     }
   }), t
 }
@@ -98,8 +99,8 @@ function T(e) {
     label: "Unmuting ".concat(n.length, " categories and setting to grey-dot"),
     debug: n.map(e => "\n    - #".concat(e.name)).join(""),
     apply: (e, t) => {
-      for (let r of n) R(e, t, r.id, !1), C(e, t, r.id, e => {
-        e.muted = !1, e.mute_config = null
+      for (let r of n) R(e, t, r.id, false), C(e, t, r.id, e => {
+        e.muted = false, e.mute_config = null
       })
     }
   }), t
@@ -130,7 +131,7 @@ function S(e, t, n, r, o) {
     label: "Setting ".concat(f.length, " channels to white-dot since they are recent and frequently viewed"),
     debug: f.map(e => "\n    - #".concat(e.name, " (").concat(JSON.stringify(l[e.id]), ")")).join(""),
     apply: (e, t) => {
-      for (let n of f) R(e, t, n.id, !0)
+      for (let n of f) R(e, t, n.id, true)
     }
   }), _.length > 0 && p.push({
     label: "NOT setting ".concat(_.length, " channels to white-dot because they were only viewed a little."),
@@ -145,14 +146,14 @@ function A(e, t) {
     i = Date.now() - f.Z.Millis.DAYS_30,
     a = c.Z.getFrequentlyWithoutFetchingLatest().filter(e => e instanceof o.Sf && r.has(e.id)).filter(e => {
       var t, n;
-      let r = null != (n = null == (t = c.Z.frecencyWithoutFetchingLatest.usageHistory[e.id]) ? void 0 : t.recentUses) ? n : [];
+      let r = null != (n = null == (t = c.Z.frecencyWithoutFetchingLatest.usageHistory[e.id]) ? true : t.recentUses) ? n : [];
       return 0 !== r.length && r[r.length - 1] >= i
     });
   return a.length > 0 && n.push({
     label: "Setting ".concat(a.length, " channels to white-dot since they are recent and frequently viewed"),
     debug: a.map(e => "\n    - #".concat(e.name)).join(""),
     apply: (e, t) => {
-      for (let n of a) R(e, t, n.id, !0)
+      for (let n of a) R(e, t, n.id, true)
     }
   }), n
 }
@@ -169,21 +170,21 @@ function N(e) {
     label: "Setting ".concat(n.length, " channels to white-dot since they were explicitly All Messages"),
     debug: n.map(e => "\n    - #".concat(e.name)).join(""),
     apply: (e, t) => {
-      for (let r of n) R(e, t, r.id, !0)
+      for (let r of n) R(e, t, r.id, true)
     }
   }), r.length > 0 && t.push({
     label: "Setting ".concat(r.length, " channels to grey-dot since they were explicitly Mentions Only"),
     debug: r.map(e => "\n    - #".concat(e.name)).join(""),
     apply: (e, t) => {
-      for (let n of r) R(e, t, n.id, !1)
+      for (let n of r) R(e, t, n.id, false)
     }
   }), t
 }
 
 function C(e, t, n, r) {
   var o, a, s, l;
-  let c = null != (s = null == (o = e.channel_overrides) ? void 0 : o[n]) ? s : {};
-  r(c, null != (l = null == (a = t.channel_overrides) ? void 0 : a[n]) ? l : {}), i().isEmpty(c) || (null == e.channel_overrides && (e.channel_overrides = {}), e.channel_overrides[n] = c)
+  let c = null != (s = null == (o = e.channel_overrides) ? true : o[n]) ? s : {};
+  r(c, null != (l = null == (a = t.channel_overrides) ? true : a[n]) ? l : {}), i().isEmpty(c) || (null == e.channel_overrides && (e.channel_overrides = {}), e.channel_overrides[n] = c)
 }
 
 function R(e, t, n, r) {

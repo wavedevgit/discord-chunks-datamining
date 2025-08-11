@@ -1,35 +1,36 @@
 /** Chunk was on 1272 **/
-n.d(t, {
+/** chunk id: 703016, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => W
-}), n(704826), n(35282), n(290780);
-var r = n(913527),
-  i = n.n(r),
-  l = n(570140),
-  a = n(241601),
-  o = n(419363),
-  s = n(933557),
-  c = n(660199),
-  u = n(869765),
-  d = n(706454),
-  p = n(695346),
-  f = n(314897),
-  h = n(433355),
-  g = n(592125),
-  m = n(271383),
-  b = n(485386),
-  _ = n(430824),
-  O = n(131951),
-  E = n(292959),
-  y = n(699516),
-  v = n(944486),
-  I = n(9156),
-  C = n(594174),
-  S = n(51144),
-  N = n(196051),
-  T = n(441729),
-  P = n(653477),
-  j = n(981631),
-  x = n(388032);
+}), require("./704826.js"), require("./35282.js"), require("./290780.js");
+var Chunk913527 = require("./913527.js"),
+  i = require.n(Chunk913527),
+  Chunk570140 = require("./570140.js"),
+  Chunk241601 = require("./241601.js"),
+  Chunk419363 = require("./419363.js"),
+  Chunk933557 = require("./933557.js"),
+  Chunk660199 = require("./660199.js"),
+  Chunk869765 = require("./869765.js"),
+  Chunk706454 = require("./706454.js"),
+  Chunk695346 = require("./695346.js"),
+  Chunk314897 = require("./314897.js"),
+  Chunk433355 = require("./433355.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk271383 = require("./271383.js"),
+  Chunk485386 = require("./485386.js"),
+  Chunk430824 = require("./430824.js"),
+  Chunk131951 = require("./131951.js"),
+  Chunk292959 = require("./292959.js"),
+  Chunk699516 = require("./699516.js"),
+  Chunk944486 = require("./944486.js"),
+  Chunk9156 = require("./9156.js"),
+  Chunk594174 = require("./594174.js"),
+  Chunk51144 = require("./51144.js"),
+  Chunk196051 = require("./196051.js"),
+  Chunk441729 = require("./441729.js"),
+  Chunk653477 = require("./653477.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk388032 = require("./388032.jsx");
 let A = [],
   Z = null,
   w = null,
@@ -65,14 +66,14 @@ function D(e, t, n, r) {
 }
 
 function k() {
-  if (!o.Zh) return !1;
-  let e = d.default.locale;
+  if (!Chunk419363.Zh) returnfalse;
+  let e = Chunk706454.default.locale;
   if (null == L) {
     var t;
-    L = null == (t = window.speechSynthesis) ? void 0 : t.getVoices()
+    L = null == (t = window.speechSynthesis) ? true : exports.getVoices()
   }
   let n = L.filter(t => t.lang === e || t.lang.slice(0, e.length) === e);
-  w = n.length > 0 ? n[0] : null
+  w = require.length > 0 ? require[0] : null
 }
 async function M(e, t, n, r, i) {
   let l = o.e6(e, n);
@@ -97,7 +98,7 @@ function G(e) {
 }
 
 function V() {
-  return null !== Z && Z.removeEventListener("end", N.NB), o.M9(), Z = null, !0
+  return null !== Z && Z.removeEventListener("end", Chunk196051.NB), Chunk419363.M9(), Z = null, true
 }
 
 function H(e) {
@@ -105,8 +106,8 @@ function H(e) {
   let {
     message: i,
     channel: l
-  } = e, a = i.type === j.uaV.REPLY ? u.Z.getMessageByReference(i.messageReference) : null, o = (null == a ? void 0 : a.state) === u.Y.LOADED ? null == a || null == (t = a.message) ? void 0 : t.author : null, s = null != o ? null != (n = m.ZP.getNick(l.guild_id, null == o ? void 0 : o.id)) ? n : S.ZP.getName(o) : null, c = l.getGuildId(), d = null != (r = m.ZP.getNick(c, i.author.id)) ? r : S.ZP.getName(i.author);
-  return U(D(i.content, d, c, s), !0, l.id, i.id), !0
+  } = e, a = i.type === j.uaV.REPLY ? u.Z.getMessageByReference(i.messageReference) : null, o = (null == a ? true : a.state) === u.Y.LOADED ? null == a || null == (t = a.message) ? true : t.author : null, s = null != o ? null != (n = m.ZP.getNick(l.guild_id, null == o ? true : o.id)) ? n : S.ZP.getName(o) : null, c = l.getGuildId(), d = null != (r = m.ZP.getNick(c, i.author.id)) ? r : S.ZP.getName(i.author);
+  return U(D(i.content, d, c, s), true, l.id, i.id), true
 }
 
 function B(e) {
@@ -116,26 +117,26 @@ function B(e) {
     message: s,
     optimistic: c
   } = e;
-  if (c || O.Z.isSelfDeaf()) return !1;
+  if (c || O.Z.isSelfDeaf()) returnfalse;
   let u = g.Z.getChannel(o);
-  if (null == u) return !1;
+  if (null == u) returnfalse;
   let d = v.Z.getChannelId(),
     b = h.ZP.getCurrentSidebarChannelId(d),
     _ = o === d || o === b,
     C = p.OW.getSetting() && s.tts && _,
     N = E.Z.getTTSType(),
-    T = (null == (t = s.author) ? void 0 : t.id) !== f.default.getId() && (N === j.PrB.ALL_CHANNELS || N === j.PrB.SELECTED_CHANNEL && _);
+    T = (null == (t = s.author) ? true : t.id) !== f.default.getId() && (N === j.PrB.ALL_CHANNELS || N === j.PrB.SELECTED_CHANNEL && _);
   if ((C || T) && !y.Z.isBlockedOrIgnoredForMessage(s)) {
-    if (A.indexOf(s.id) >= 0) return !1;
+    if (A.indexOf(s.id) >= 0) returnfalse;
     A.unshift(s.id) > 10 && A.pop();
     let e = u.getGuildId();
-    if (null != e && I.ZP.getMutedChannels(e).has(o)) return !1;
-    let t = null != (l = null != (i = m.ZP.getNick(e, null == (n = s.author) ? void 0 : n.id)) ? i : S.ZP.getName(s.author)) ? l : "",
-      c = s.type === j.uaV.REPLY ? null == (r = s.referenced_message) ? void 0 : r.author : null,
-      d = null != c ? null != (a = m.ZP.getNick(e, null == c ? void 0 : c.id)) ? a : S.ZP.getName(c) : null;
-    U(D(s.content, t, e, d), !1, u.id, s.id, P.f)
+    if (null != e && I.ZP.getMutedChannels(e).has(o)) returnfalse;
+    let t = null != (l = null != (i = m.ZP.getNick(e, null == (n = s.author) ? true : n.id)) ? i : S.ZP.getName(s.author)) ? l : "",
+      c = s.type === j.uaV.REPLY ? null == (r = s.referenced_message) ? true : r.author : null,
+      d = null != c ? null != (a = m.ZP.getNick(e, null == c ? true : c.id)) ? a : S.ZP.getName(c) : null;
+    U(D(s.content, t, e, d), false, u.id, s.id, P.f)
   }
-  return !1
+  returnfalse
 }
 
 function F(e) {
@@ -143,14 +144,14 @@ function F(e) {
     id: t,
     channelId: n
   } = e, r = T.Z.currentMessage;
-  return null != r && t === r.messageId && n === r.channelId && ((0, N.NB)(), !0)
+  return null != r && t === r.messageId && n === r.channelId && ((0, N.NB)(), true)
 }
 
 function z() {
-  O.Z.isSelfDeaf() && o.M9()
+  Chunk131951.Z.isSelfDeaf() && Chunk419363.M9()
 }
 let W = {
   init() {
-    l.Z.subscribe("SPEAK_TEXT", G), l.Z.subscribe("SPEAK_MESSAGE", H), l.Z.subscribe("STOP_SPEAKING", V), l.Z.subscribe("MESSAGE_CREATE", B), l.Z.subscribe("MESSAGE_DELETE", F), l.Z.subscribe("AUDIO_TOGGLE_SELF_DEAF", z), l.Z.subscribe("USER_SETTINGS_PROTO_UPDATE", k), (0, a.Ql)(k)
+    Chunk570140.Z.subscribe("SPEAK_TEXT", G), Chunk570140.Z.subscribe("SPEAK_MESSAGE", H), Chunk570140.Z.subscribe("STOP_SPEAKING", V), Chunk570140.Z.subscribe("MESSAGE_CREATE", B), Chunk570140.Z.subscribe("MESSAGE_DELETE", F), Chunk570140.Z.subscribe("AUDIO_TOGGLE_SELF_DEAF", z), Chunk570140.Z.subscribe("USER_SETTINGS_PROTO_UPDATE", k), (0, Chunk241601.Ql)(k)
   }
 }

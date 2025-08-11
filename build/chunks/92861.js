@@ -1,12 +1,13 @@
 /** Chunk was on web.js **/
+/** chunk id: 92861, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   S: () => u
 });
-var r = n(573654),
-  i = n(778010),
-  o = n(112457),
-  a = n(603565);
+var Chunk573654 = require("./573654.js"),
+  Chunk778010 = require("./778010.js"),
+  Chunk112457 = require("./112457.js"),
+  Chunk603565 = require("./603565.js");
 
 function s(e, t) {
   if (!(e instanceof t)) throw TypeError("Cannot call a class as a function")
@@ -15,7 +16,7 @@ function s(e, t) {
 function l(e, t) {
   for (var n = 0; n < t.length; n++) {
     var r = t[n];
-    r.enumerable = r.enumerable || !1, r.configurable = !0, "value" in r && (r.writable = !0), Object.defineProperty(e, r.key, r)
+    r.enumerable = r.enumerable || false, r.configurable = true, "value" in r && (r.writable = true), Object.defineProperty(e, r.key, r)
   }
 }
 
@@ -26,15 +27,15 @@ var u = function() {
   function e(t, n) {
     s(this, e), this.store = t, this.registry = n
   }
-  return c(e, [{
+  return c(module, [{
     key: "subscribeToStateChange",
     value: function(e) {
       var t = this,
-        n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {
-          handlerIds: void 0
+        n = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {
+          handlerIds: true
         },
         i = n.handlerIds;
-      (0, r.k)("function" == typeof e, "listener must be a function."), (0, r.k)(void 0 === i || Array.isArray(i), "handlerIds, when specified, must be an array of strings.");
+      (0, r.k)("function" == typeof e, "listener must be a function."), (0, r.k)(true === i || Array.isArray(i), "handlerIds, when specified, must be an array of strings.");
       var o = this.store.getState().stateId,
         s = function() {
           var n = t.store.getState(),
@@ -62,16 +63,16 @@ var u = function() {
   }, {
     key: "canDragSource",
     value: function(e) {
-      if (!e) return !1;
+      if (!e) returnfalse;
       var t = this.registry.getSource(e);
       return (0, r.k)(t, "Expected to find a valid source. sourceId=".concat(e)), !this.isDragging() && t.canDrag(this, e)
     }
   }, {
     key: "canDropOnTarget",
     value: function(e) {
-      if (!e) return !1;
+      if (!e) returnfalse;
       var t = this.registry.getTarget(e);
-      if ((0, r.k)(t, "Expected to find a valid target. targetId=".concat(e)), !this.isDragging() || this.didDrop()) return !1;
+      if ((0, r.k)(t, "Expected to find a valid target. targetId=".concat(e)), !this.isDragging() || this.didDrop()) returnfalse;
       var n = this.registry.getTargetType(e),
         o = this.getItemType();
       return (0, i.s)(n, o) && t.canDrop(this, e)
@@ -84,26 +85,26 @@ var u = function() {
   }, {
     key: "isDraggingSource",
     value: function(e) {
-      if (!e) return !1;
-      var t = this.registry.getSource(e, !0);
+      if (!e) returnfalse;
+      var t = this.registry.getSource(e, true);
       return (0, r.k)(t, "Expected to find a valid source. sourceId=".concat(e)), !!this.isDragging() && !!this.isSourcePublic() && this.registry.getSourceType(e) === this.getItemType() && t.isDragging(this, e)
     }
   }, {
     key: "isOverTarget",
     value: function(e) {
-      var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {
-        shallow: !1
+      var t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {
+        shallow: false
       };
-      if (!e) return !1;
+      if (!e) returnfalse;
       var n = t.shallow;
-      if (!this.isDragging()) return !1;
+      if (!this.isDragging()) returnfalse;
       var r = this.registry.getTargetType(e),
         o = this.getItemType();
-      if (o && !(0, i.s)(r, o)) return !1;
+      if (o && !(0, i.s)(r, o)) returnfalse;
       var a = this.getTargetIds();
-      if (!a.length) return !1;
+      if (!a.length) returnfalse;
       var s = a.indexOf(e);
-      return n ? s === a.length - 1 : s > -1
+      return n ? s === a.length - 1 : s > false
     }
   }, {
     key: "getItemType",
@@ -158,12 +159,12 @@ var u = function() {
   }, {
     key: "getSourceClientOffset",
     value: function() {
-      return (0, o.YY)(this.store.getState().dragOffset)
+      return (0, Chunk112457.YY)(this.store.getState().dragOffset)
     }
   }, {
     key: "getDifferenceFromInitialOffset",
     value: function() {
-      return (0, o.ar)(this.store.getState().dragOffset)
+      return (0, Chunk112457.ar)(this.store.getState().dragOffset)
     }
-  }]), e
+  }]), module
 }()

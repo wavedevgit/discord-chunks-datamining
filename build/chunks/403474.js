@@ -1,18 +1,19 @@
 /** Chunk was on 2686 **/
-n.d(t, {
+/** chunk id: 403474, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   k: () => l
 });
-var r = n(539600),
-  i = n(981631);
-let l = (0, r.gp)({
+var Chunk539600 = require("./539600.js"),
+  Chunk981631 = require("./981631.js");
+let l = (0, Chunk539600.gp)({
   id: "0",
   guildId: "0",
   name: "",
-  mentionable: !1,
-  managed: !1,
+  mentionable: false,
+  managed: false,
   position: 0,
-  hoist: !1,
-  permissions: i.Plq.SEND_MESSAGES,
+  hoist: false,
+  permissions: Chunk981631.Plq.SEND_MESSAGES,
   color: 0,
   colors: {
     primary_color: 0,

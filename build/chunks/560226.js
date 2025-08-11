@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 560226, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   animationWrapper: "animationWrapper_e8d31f",
   clickZone: "clickZone_e8d31f",
   clickable: "clickable_e8d31f",

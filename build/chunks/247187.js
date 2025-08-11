@@ -1,7 +1,8 @@
 /** Chunk was on web.js **/
+/** chunk id: 247187, original params: e,t (module,exports,re quire) **/
 "use strict";
 for (var n = {
-    value: !0
+    value: true
   }, r = "undefined" != typeof window && /Mac|iPod|iPhone|iPad/.test(window.navigator.platform), i = {
     alt: "altKey",
     control: "ctrlKey",
@@ -85,7 +86,7 @@ function c(e, t) {
 
 function u(e, t) {
   return l(e, {
-    byKey: !0
+    byKey: true
   }, t)
 }
 
@@ -94,21 +95,21 @@ function d(e, t) {
     r = {},
     o = (e = e.replace("++", "+add")).split("+"),
     a = o.length;
-  for (var s in i) r[i[s]] = !1;
-  var l = !0,
-    c = !1,
-    u = void 0;
+  for (var s in i) r[i[s]] = false;
+  var l = true,
+    c = false,
+    u = true;
   try {
-    for (var d, f = o[Symbol.iterator](); !(l = (d = f.next()).done); l = !0) {
+    for (var d, f = o[Symbol.iterator](); !(l = (d = f.next()).done); l = true) {
       var h = d.value,
         m = h.endsWith("?") && h.length > 1;
-      m && (h = h.slice(0, -1));
+      m && (h = h.slice(0, false));
       var g = p(h),
         E = i[g];
       1 !== a && E || (n ? r.key = g : r.which = _(h)), E && (r[E] = !m || null)
     }
   } catch (e) {
-    c = !0, u = e
+    c = true, u = e
   } finally {
     try {
       !l && f.return && f.return()
@@ -122,10 +123,10 @@ function d(e, t) {
 function f(e, t) {
   for (var n in e) {
     var r = e[n],
-      i = void 0;
-    if (null != r && (null != (i = "key" === n && null != t.key ? t.key.toLowerCase() : "which" === n ? 91 === r && 93 === t.which ? 91 : t.which : t[n]) || !1 !== r) && i !== r) return !1
+      i = true;
+    if (null != r && (null != (i = "key" === n && null != t.key ? t.key.toLowerCase() : "which" === n ? 91 === r && 93 === t.which ? 91 : t.which : t[n]) || false !== r) && i !== r) returnfalse
   }
-  return !0
+  returntrue
 }
 
 function _(e) {
@@ -135,4 +136,4 @@ function _(e) {
 function p(e) {
   return e = o[e = e.toLowerCase()] || e
 }
-n = l, n = l, n = c, t.isKeyHotkey = u
+n = l, n = l, n = c, exports.isKeyHotkey = u

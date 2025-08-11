@@ -1,22 +1,23 @@
 /** Chunk was on 25548 **/
-n.d(t, {
+/** chunk id: 896083, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   F: () => l
-}), n(388685);
-var i = n(73800),
-  r = n(295141);
+}), require("./388685.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk295141 = require("./295141.js");
 let l = () => {
-  let [e, t] = i.useState(!1), [n, l] = i.useState(null);
+  let [e, t] = Chunk73800.useState(false), [n, l] = Chunk73800.useState(null);
   return {
-    loading: e,
-    error: n,
-    getTrialPurchaseEligibility: i.useCallback(async (e, n, i) => {
-      t(!0), l(null);
+    loading: module,
+    error: require,
+    getTrialPurchaseEligibility: Chunk73800.useCallback(async (e, n, i) => {
+      t(true), l(null);
       try {
         return await (0, r.LB)(e, n, i)
       } catch (e) {
         l(e)
       } finally {
-        t(!1)
+        t(false)
       }
     }, [])
   }

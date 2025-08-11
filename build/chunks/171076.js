@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 171076, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   placeholderPulse: "placeholderPulse__27cc6",
   multiplePlaceholder: "multiplePlaceholder__27cc6",
   placeholder: "placeholder__27cc6",

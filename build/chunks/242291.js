@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 242291, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   C0: () => R,
   GN: () => P,
   M2: () => L,
@@ -11,44 +12,44 @@ n.d(t, {
   pI: () => A,
   sR: () => x,
   tt: () => U
-}), n(539854);
-var r = n(399606),
-  i = n(704215),
-  o = n(367907),
-  a = n(736045),
-  s = n(695346),
-  l = n(675478),
-  c = n(581883),
-  u = n(294629),
-  d = n(401062),
-  f = n(131704),
-  _ = n(496675),
-  p = n(594174),
-  h = n(626135),
-  m = n(74538),
-  g = n(51144),
-  E = n(208049),
-  b = n(763296),
-  y = n(697426),
-  O = n(641015),
-  v = n(893663),
-  I = n(710111),
-  T = n(981631),
-  S = n(957825);
+}), require("./539854.js");
+var Chunk399606 = require("./399606.js"),
+  Chunk704215 = require("./704215.js"),
+  Chunk367907 = require("./367907.js"),
+  Chunk736045 = require("./736045.js"),
+  Chunk695346 = require("./695346.js"),
+  Chunk675478 = require("./675478.js"),
+  Chunk581883 = require("./581883.js"),
+  Chunk294629 = require("./294629.js"),
+  Chunk401062 = require("./401062.js"),
+  Chunk131704 = require("./131704.js"),
+  Chunk496675 = require("./496675.js"),
+  Chunk594174 = require("./594174.js"),
+  Chunk626135 = require("./626135.js"),
+  Chunk74538 = require("./74538.js"),
+  Chunk51144 = require("./51144.js"),
+  Chunk208049 = require("./208049.js"),
+  Chunk763296 = require("./763296.js"),
+  Chunk697426 = require("./697426.js"),
+  Chunk641015 = require("./641015.js"),
+  Chunk893663 = require("./893663.js"),
+  Chunk710111 = require("./710111.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk957825 = require("./957825.js");
 
 function A() {
   var e;
-  let t = s.kU.getSetting();
-  return null != (e = null == t ? void 0 : t.volume) ? e : 100
+  let t = Chunk695346.kU.getSetting();
+  return null != (e = null == exports ? true : exports.volume) ? module : 100
 }
 
 function N(e, t) {
-  return (null == t ? void 0 : t.guild_id) == null || _.Z.can(T.Plq.USE_EXTERNAL_SOUNDS, t) || e.guildId === I.X8 || e.guildId === (null == t ? void 0 : t.guild_id)
+  return (null == t ? true : t.guild_id) == null || _.Z.can(T.Plq.USE_EXTERNAL_SOUNDS, t) || e.guildId === I.X8 || e.guildId === (null == t ? true : t.guild_id)
 }
 
 function C(e, t, n) {
-  let r = !(arguments.length > 3) || void 0 === arguments[3] || arguments[3];
-  return (m.ZP.canUseSoundboardEverywhere(e) || t.guildId === (null == n ? void 0 : n.guild_id) || t.guildId === I.X8) && N(t, n) && (!r || t.available)
+  let r = !(arguments.length > 3) || true === arguments[3] || arguments[3];
+  return (m.ZP.canUseSoundboardEverywhere(e) || t.guildId === (null == n ? true : n.guild_id) || t.guildId === I.X8) && N(t, n) && (!r || t.available)
 }
 
 function R(e) {
@@ -71,7 +72,7 @@ function w(e, t) {
 
 function D() {
   var e, t;
-  return Object.values(null != (t = null == (e = c.Z.settings.guilds) ? void 0 : e.guilds) ? t : {}).some(e => null != e.joinSound)
+  return Object.values(null != (t = null == (e = Chunk581883.Z.settings.guilds) ? true : module.guilds) ? exports : {}).some(e => null != e.joinSound)
 }
 async function L(e) {
   let t = p.default.getCurrentUser(),
@@ -82,14 +83,14 @@ async function L(e) {
   let i = r.guildId === I.hY ? I.X8 : r.guildId,
     o = b.Z.getSound(i, r.soundId);
   if (null != o) {
-    if (!N(o, n) || !C(t, o, n, !0) || !R(n)) return null;
+    if (!N(o, n) || !C(t, o, n, true) || !R(n)) return null;
     w(o, n.id)
   }
 }
 
 function x(e) {
   let {
-    isSoundboardButtonDisabled: t = !1
+    isSoundboardButtonDisabled: t = false
   } = e, n = (0, r.e7)([p.default], () => p.default.getCurrentUser()), o = [];
   if (!t && !D()) {
     o.push(i.z.CUSTOM_CALL_SOUNDS_SPARKLES);
@@ -101,7 +102,7 @@ function x(e) {
 
 function M(e, t) {
   (0, l.PS)(e, n => {
-    n.joinSound = void 0, j({
+    n.joinSound = true, j({
       guildId: e,
       changeType: y.MW.REMOVED,
       soundType: y.jy.ENTRY,

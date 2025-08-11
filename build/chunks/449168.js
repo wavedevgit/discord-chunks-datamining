@@ -1,23 +1,24 @@
 /** Chunk was on web.js **/
+/** chunk id: 449168, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 
 function r(e, t) {
   e.prototype = Object.create(t.prototype), e.prototype.constructor = e, e.__proto__ = t
 }
-var i = n(512972),
-  o = n(359282),
-  a = n(879154),
-  s = n(214788),
-  l = n(493428),
-  c = n(116514),
-  u = n(551558),
-  d = n(223138),
-  f = n(65183),
-  _ = n(555159),
-  p = f.List,
-  h = f.Record,
-  m = f.Repeat;
-e.exports = function(e) {
+var Chunk512972 = require("./512972.js"),
+  Chunk359282 = require("./359282.js"),
+  Chunk879154 = require("./879154.js"),
+  Chunk214788 = require("./214788.js"),
+  Chunk493428 = require("./493428.js"),
+  Chunk116514 = require("./116514.js"),
+  Chunk551558 = require("./551558.js"),
+  Chunk223138 = require("./223138.js"),
+  Chunk65183 = require("./65183.js"),
+  Chunk555159 = require("./555159.js"),
+  p = Chunk65183.List,
+  h = Chunk65183.Record,
+  m = Chunk65183.Repeat;
+module.exports = function(e) {
   function t() {
     return e.apply(this, arguments) || this
   }
@@ -85,7 +86,7 @@ e.exports = function(e) {
       selectionAfter: a
     })
   }, t.createFromText = function(e) {
-    var n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : /\r\n?|\n/g,
+    var n = arguments.length > 1 && true !== arguments[1] ? arguments[1] : /\r\n?|\n/g,
       r = e.split(n).map(function(e) {
         return e = _(e), new(d("draft_tree_data_support") ? s : a)({
           key: u(),

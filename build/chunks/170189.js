@@ -1,48 +1,49 @@
 /** Chunk was on web.js **/
+/** chunk id: 170189, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-Object.defineProperty(t, "__esModule", {
-  value: !0
-}), t.stringFormatter = t.DEFAULT_REACT_RICH_TEXT_ELEMENTS = t.makeReactFormatter = t.reactFormatter = t.markdownFormatter = t.RichTextNodeType = t.astFormatter = void 0;
-var r = n(697825);
-Object.defineProperty(t, "astFormatter", {
-  enumerable: !0,
+Object.defineProperty(exports, "__esModule", {
+  value: true
+}), exports.stringFormatter = exports.DEFAULT_REACT_RICH_TEXT_ELEMENTS = exports.makeReactFormatter = exports.reactFormatter = exports.markdownFormatter = exports.RichTextNodeType = exports.astFormatter = true;
+var Chunk697825 = require("./697825.js");
+Object.defineProperty(exports, "astFormatter", {
+  enumerable: true,
   get: function() {
-    return r.astFormatter
+    return Chunk697825.astFormatter
   }
-}), Object.defineProperty(t, "RichTextNodeType", {
-  enumerable: !0,
+}), Object.defineProperty(exports, "RichTextNodeType", {
+  enumerable: true,
   get: function() {
-    return r.RichTextNodeType
-  }
-});
-var i = n(219442);
-Object.defineProperty(t, "markdownFormatter", {
-  enumerable: !0,
-  get: function() {
-    return i.markdownFormatter
+    return Chunk697825.RichTextNodeType
   }
 });
-var o = n(405796);
-Object.defineProperty(t, "reactFormatter", {
-  enumerable: !0,
+var Chunk219442 = require("./219442.js");
+Object.defineProperty(exports, "markdownFormatter", {
+  enumerable: true,
   get: function() {
-    return o.reactFormatter
-  }
-}), Object.defineProperty(t, "makeReactFormatter", {
-  enumerable: !0,
-  get: function() {
-    return o.makeReactFormatter
-  }
-}), Object.defineProperty(t, "DEFAULT_REACT_RICH_TEXT_ELEMENTS", {
-  enumerable: !0,
-  get: function() {
-    return o.DEFAULT_REACT_RICH_TEXT_ELEMENTS
+    return Chunk219442.markdownFormatter
   }
 });
-var a = n(866138);
-Object.defineProperty(t, "stringFormatter", {
-  enumerable: !0,
+var Chunk405796 = require("./405796.js");
+Object.defineProperty(exports, "reactFormatter", {
+  enumerable: true,
   get: function() {
-    return a.stringFormatter
+    return Chunk405796.reactFormatter
+  }
+}), Object.defineProperty(exports, "makeReactFormatter", {
+  enumerable: true,
+  get: function() {
+    return Chunk405796.makeReactFormatter
+  }
+}), Object.defineProperty(exports, "DEFAULT_REACT_RICH_TEXT_ELEMENTS", {
+  enumerable: true,
+  get: function() {
+    return Chunk405796.DEFAULT_REACT_RICH_TEXT_ELEMENTS
+  }
+});
+var Chunk866138 = require("./866138.js");
+Object.defineProperty(exports, "stringFormatter", {
+  enumerable: true,
+  get: function() {
+    return Chunk866138.stringFormatter
   }
 })

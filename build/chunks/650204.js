@@ -1,17 +1,18 @@
 /** Chunk was on web.js **/
+/** chunk id: 650204, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-var r = n(710845),
-  i = n(511495);
-let o = new r.Z("libdiscore");
+var Chunk710845 = require("./710845.js"),
+  Chunk511495 = require("./511495.js");
+let o = new Chunk710845.Z("libdiscore");
 !async function() {
   try {
-    __OVERLAY__ || await (0, i.e)()
+    __OVERLAY__ || await (0, Chunk511495.e)()
   } catch (e) {
-    o.error("Failed to initialize libdiscore", e)
+    o.error("Failed to initialize libdiscore", module)
   }
   try {
-    n(750081)
+    require("./750081.js")
   } finally {
-    n(998502).ZP.indexLoadedAsync()
+    require("./998502.js").ZP.indexLoadedAsync()
   }
 }()

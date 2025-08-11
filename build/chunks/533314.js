@@ -1,5 +1,6 @@
 /** Chunk was on web.js **/
-e.exports = function(e) {
+/** chunk id: 533314, original params: e (module,exports,re quire) **/
+module.exports = function(e) {
   let t = {
       className: "subst",
       variants: [{
@@ -83,7 +84,7 @@ e.exports = function(e) {
       className: "class",
       beginKeywords: "class interface",
       end: /\{/,
-      excludeEnd: !0,
+      excludeEnd: true,
       contains: [{
         beginKeywords: "extends implements"
       }, e.UNDERSCORE_TITLE_MODE]

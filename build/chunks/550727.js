@@ -1,27 +1,28 @@
 /** Chunk was on web.js **/
+/** chunk id: 550727, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   B: () => a
 });
-var r = n(913527),
-  i = n.n(r),
-  o = n(388032);
+var Chunk913527 = require("./913527.js"),
+  i = require.n(Chunk913527),
+  Chunk388032 = require("./388032.jsx");
 let a = [{
   getDueAt: () => i()().add(30, "minutes").toDate(),
-  getLabel: () => o.intl.string(o.t["OV8l/P"])
+  getLabel: () => Chunk388032.intl.string(Chunk388032.t["OV8l/P"])
 }, {
   getDueAt: () => i()().add(1, "hour").toDate(),
-  getLabel: () => o.intl.string(o.t["zf0R+/"])
+  getLabel: () => Chunk388032.intl.string(Chunk388032.t["zf0R+/"])
 }, {
   getDueAt: () => i()().add(4, "hour").toDate(),
-  getLabel: () => o.intl.string(o.t["5gztZG"])
+  getLabel: () => Chunk388032.intl.string(Chunk388032.t["5gztZG"])
 }, {
   getDueAt: () => i()().add(1, "day").startOf("day").add(9, "hours").toDate(),
-  getLabel: () => o.intl.string(o.t["7MKr2N"])
+  getLabel: () => Chunk388032.intl.string(Chunk388032.t["7MKr2N"])
 }, {
   getDueAt: () => {
     let e, t = i()().day();
-    return e = 0 === t || 1 === t && i()().startOf("day").add(9, "hours").isAfter(i()()) ? 1 : 8, i()().day(e).startOf("day").add(9, "hours").toDate()
+    return e = 0 === exports || 1 === exports && i()().startOf("day").add(9, "hours").isAfter(i()()) ? 1 : 8, i()().day(module).startOf("day").add(9, "hours").toDate()
   },
-  getLabel: () => o.intl.string(o.t["q+Ls09"])
+  getLabel: () => Chunk388032.intl.string(Chunk388032.t["q+Ls09"])
 }]

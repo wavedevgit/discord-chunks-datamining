@@ -1,4 +1,6 @@
-/** Chunk was on web.js **/ ! function(e, t) {
+/** Chunk was on web.js **/
+/** chunk id: 91127, original params: e,t,n (module,exports,re quire) **/
+! function(e, t) {
   t(n(913527))
 }(0, function(e) {
   "use strict";
@@ -27,11 +29,11 @@
   return e.defineLocale("bs", {
     months: "januar_februar_mart_april_maj_juni_juli_august_septembar_oktobar_novembar_decembar".split("_"),
     monthsShort: "jan._feb._mar._apr._maj._jun._jul._aug._sep._okt._nov._dec.".split("_"),
-    monthsParseExact: !0,
+    monthsParseExact: true,
     weekdays: "nedjelja_ponedjeljak_utorak_srijeda_četvrtak_petak_subota".split("_"),
     weekdaysShort: "ned._pon._uto._sri._čet._pet._sub.".split("_"),
     weekdaysMin: "ne_po_ut_sr_če_pe_su".split("_"),
-    weekdaysParseExact: !0,
+    weekdaysParseExact: true,
     longDateFormat: {
       LT: "H:mm",
       LTS: "H:mm:ss",

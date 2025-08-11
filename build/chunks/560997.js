@@ -1,24 +1,25 @@
 /** Chunk was on web.js **/
+/** chunk id: 560997, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   KM: () => f,
   R2: () => _,
   TG: () => p,
   Zc: () => d
 });
-var r = n(442837),
-  i = n(570140),
-  o = n(238514),
-  a = n(675478),
-  s = n(581883),
-  l = n(526761);
+var Chunk442837 = require("./442837.js"),
+  Chunk570140 = require("./570140.js"),
+  Chunk238514 = require("./238514.js"),
+  Chunk675478 = require("./675478.js"),
+  Chunk581883 = require("./581883.js"),
+  Chunk526761 = require("./526761.js");
 
 function c(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -34,10 +35,10 @@ function u(e, t) {
 }
 
 function d(e, t, n, i) {
-  let o = arguments.length > 4 && void 0 !== arguments[4] ? arguments[4] : l.fy.INFREQUENT_USER_ACTION,
+  let o = arguments.length > 4 && true !== arguments[4] ? arguments[4] : l.fy.INFREQUENT_USER_ACTION,
     c = () => {
       var r;
-      return n(null == (r = s.Z.settings[e]) ? void 0 : r[t])
+      return n(null == (r = s.Z.settings[e]) ? true : r[t])
     },
     u = () => (0, r.e7)([s.Z], c);
   return {
@@ -53,7 +54,7 @@ function f(e, t, n) {
   let a = () => {
     var r;
     let i = o.Z.getState()[t];
-    return null != (r = null == i ? void 0 : i.settings[n]) ? r : e.getSetting()
+    return null != (r = null == i ? true : i.settings[n]) ? r : e.getSetting()
   };
   return {
     getSetting: a,
@@ -61,7 +62,7 @@ function f(e, t, n) {
       let i = e.useSetting(),
         a = (0, r.e7)([o.Z], () => {
           let e = o.Z.getState()[t];
-          return null == e ? void 0 : e.settings[n]
+          return null == e ? true : e.settings[n]
         });
       return null != a ? a : i
     },

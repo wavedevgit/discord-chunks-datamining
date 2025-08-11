@@ -1,29 +1,30 @@
 /** Chunk was on 76815 **/
-n.d(e, {
+/** chunk id: 832239, original params: t,e,n (module,exports,require) **/
+require.d(exports, {
   JO: () => o,
   KK: () => u,
   Vp: () => l,
   hW: () => s,
   zu: () => c
 });
-var r = n(544891),
-  i = n(570140),
-  a = n(981631);
+var Chunk544891 = require("./544891.js"),
+  Chunk570140 = require("./570140.js"),
+  Chunk981631 = require("./981631.js");
 
 function o() {
-  i.Z.dispatch({
+  Chunk570140.Z.dispatch({
     type: "VIBING_WUMPUS_PLAY_MUSIC"
   })
 }
 
 function c() {
-  i.Z.dispatch({
+  Chunk570140.Z.dispatch({
     type: "VIBING_WUMPUS_STOP_MUSIC"
   })
 }
 
 function s() {
-  i.Z.dispatch({
+  Chunk570140.Z.dispatch({
     type: "VIBING_WUMPUS_PAUSE_MUSIC"
   })
 }
@@ -31,7 +32,7 @@ function s() {
 function l(t) {
   return r.tn.del({
     url: a.ANM.DELETE_SAFETY_WARNINGS(t),
-    rejectWithError: !1
+    rejectWithError: false
   })
 }
 
@@ -41,6 +42,6 @@ function u(t, e) {
     body: {
       safety_warning_type: e
     },
-    rejectWithError: !1
+    rejectWithError: false
   })
 }

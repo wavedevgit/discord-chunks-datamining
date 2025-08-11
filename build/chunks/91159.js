@@ -1,35 +1,36 @@
 /** Chunk was on web.js **/
+/** chunk id: 91159, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   A_: () => T,
   Ok: () => C,
   U4: () => S,
-  Ye: () => h.Z,
+  Ye: () => Chunk814391.Z,
   ZJ: () => N,
   q: () => A
-}), n(997841);
-var r = n(913527),
-  i = n.n(r),
-  o = n(442837),
-  a = n(367907),
-  s = n(731429),
-  l = n(306680),
-  c = n(9156),
-  u = n(626135),
-  d = n(630388),
-  f = n(621600),
-  _ = n(709054),
-  p = n(569471),
-  h = n(814391),
-  m = n(124368),
-  g = n(981631);
+}), require("./997841.js");
+var Chunk913527 = require("./913527.js"),
+  i = require.n(Chunk913527),
+  Chunk442837 = require("./442837.js"),
+  Chunk367907 = require("./367907.js"),
+  Chunk731429 = require("./731429.js"),
+  Chunk306680 = require("./306680.js"),
+  Chunk9156 = require("./9156.js"),
+  Chunk626135 = require("./626135.js"),
+  Chunk630388 = require("./630388.js"),
+  Chunk621600 = require("./621600.js"),
+  Chunk709054 = require("./709054.js"),
+  Chunk569471 = require("./569471.js"),
+  Chunk814391 = require("./814391.js"),
+  Chunk124368 = require("./124368.js"),
+  Chunk981631 = require("./981631.js");
 
 function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -80,22 +81,22 @@ function I(e, t) {
   for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-n(388032);
+require("./388032.js");
 
 function T() {
-  (0, a.yw)(g.rMx.THREAD_BROWSER_TAB_CHANGED)
+  (0, Chunk367907.yw)(Chunk981631.rMx.THREAD_BROWSER_TAB_CHANGED)
 }
 
 function S() {
-  let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "Modal";
-  (0, a.yw)(g.rMx.OPEN_MODAL, {
+  let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : "Modal";
+  (0, Chunk367907.yw)(Chunk981631.rMx.OPEN_MODAL, {
     type: "Thread Browser",
-    location_section: e
+    location_section: module
   })
 }
 
 function A() {
-  u.default.track(g.rMx.OPEN_POPOUT, {
+  Chunk626135.default.track(Chunk981631.rMx.OPEN_POPOUT, {
     type: "Active Threads Popout"
   })
 }
@@ -137,7 +138,7 @@ let C = e => {
   var t, n;
   let r = (0, o.e7)([l.ZP], () => l.ZP.lastMessageId(e.id)),
     a = null != r ? _.default.extractTimestamp(r) : null,
-    s = null == (t = e.threadMetadata) ? void 0 : t.createTimestamp,
+    s = null == (t = e.threadMetadata) ? true : t.createTimestamp,
     c = null != s ? i()(s).valueOf() : null;
   return null != (n = null != a ? a : c) ? n : _.default.extractTimestamp(e.id)
 }

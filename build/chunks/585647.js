@@ -1,14 +1,15 @@
 /** Chunk was on 30634 **/
-n.d(t, {
+/** chunk id: 585647, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => u
-}), n(388685), n(35282);
-var r = n(485589),
-  a = n(14160),
-  l = n(247123),
-  i = n(207662);
+}), require("./388685.js"), require("./35282.js");
+var Chunk485589 = require("./485589.js"),
+  Chunk14160 = require("./14160.js"),
+  Chunk247123 = require("./247123.js"),
+  Chunk207662 = require("./207662.js");
 let u = {
   id: "aria-attribute-valid-value",
-  selector: i.J8,
+  selector: Chunk207662.J8,
   tags: [],
   metadata: {
     description: "ARIA attributes must use valid values",
@@ -38,28 +39,28 @@ let u = {
             case "number":
               return d = k, isFinite(f = i) ? l.w : "".concat(d, " requires a numeric value but got ").concat(f);
             case "boolean":
-              return h = k, b = i, m = I, "true" === b || "false" === b || "" === b && !0 === m.allowundefined ? l.w : "".concat(h, ' must be either "true" or "false"');
+              return h = k, b = i, m = I, "true" === b || "false" === b || "" === b && true === m.allowundefined ? l.w : "".concat(h, ' must be either "true" or "false"');
             case "token":
               return function(e, t, n) {
                 var r, a;
                 let i = function(e) {
                   switch (e) {
                     case "true":
-                      return !0;
+                      returntrue;
                     case "false":
-                      return !1;
+                      returnfalse;
                     default:
                       return e
                   }
                 }(t);
-                return (null == (r = n.values) ? void 0 : r.includes(i)) ? l.w : "".concat(e, " was ").concat(t, " but must be: ").concat(null == (a = n.values) ? void 0 : a.join(", "))
+                return (null == (r = n.values) ? true : r.includes(i)) ? l.w : "".concat(e, " was ").concat(t, " but must be: ").concat(null == (a = n.values) ? true : a.join(", "))
               }(k, i, I);
             case "tokenlist":
               var u, o, c, s, d, f, h, b, m, p, g, v = k,
                 w = i,
                 A = I;
               for (let e of w.split(" ")) {
-                if (null == (p = A.values) || !p.includes(e)) return "".concat(v, " included ").concat(w, " but is restricted to: ").concat(null == (g = A.values) ? void 0 : g.join(", "))
+                if (null == (p = A.values) || !p.includes(e)) return "".concat(v, " included ").concat(w, " but is restricted to: ").concat(null == (g = A.values) ? true : g.join(", "))
               }
               return l.w;
             case "tristate":

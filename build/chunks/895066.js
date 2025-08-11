@@ -1,23 +1,24 @@
 /** Chunk was on web.js **/
+/** chunk id: 895066, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   B: () => h,
   Z: () => m
-}), n(388685), n(539854);
-var r = n(392711),
-  i = n.n(r),
-  o = n(47770),
-  a = n(46973),
-  s = n(379649),
-  l = n(140828),
-  c = n(179654);
+}), require("./388685.js"), require("./539854.js");
+var Chunk392711 = require("./392711.js"),
+  i = require.n(Chunk392711),
+  Chunk47770 = require("./47770.js"),
+  Chunk46973 = require("./46973.js"),
+  Chunk379649 = require("./379649.js"),
+  Chunk140828 = require("./140828.js"),
+  Chunk179654 = require("./179654.js");
 
 function u(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -62,12 +63,12 @@ function p(e) {
 var h = function(e) {
   return e.InputDeviceSampleRateChanged = "input-device-sample-rate-changed", e
 }({});
-class m extends o.Z {
+class m extends Chunk47770.Z {
   start() {
-    this.connection.on(a.Sh.Stats, this.sampleStats)
+    this.connection.on(Chunk46973.Sh.Stats, this.sampleStats)
   }
   stop() {
-    this.connection.off(a.Sh.Stats, this.sampleStats)
+    this.connection.off(Chunk46973.Sh.Stats, this.sampleStats)
   }
   getMosStats() {
     let e = i().reduce(this.inboundStats, (e, t) => {
@@ -80,11 +81,11 @@ class m extends o.Z {
       mosBuckets: [0, 0, 0, 0, 0]
     });
     return {
-      mos_mean: e.mosCount > 0 ? e.mosSum / e.mosCount : 0,
-      mos_1: e.mosBuckets[1],
-      mos_2: e.mosBuckets[2],
-      mos_3: e.mosBuckets[3],
-      mos_4: e.mosBuckets[4]
+      mos_mean: module.mosCount > 0 ? module.mosSum / module.mosCount : 0,
+      mos_1: module.mosBuckets[1],
+      mos_2: module.mosBuckets[2],
+      mos_3: module.mosBuckets[3],
+      mos_4: module.mosBuckets[4]
     }
   }
   getPacketStats() {
@@ -98,11 +99,11 @@ class m extends o.Z {
     return {
       packets_sent: this.outboundStats.packetsSent,
       packets_sent_lost: this.outboundStats.packetsLost,
-      packets_received: e.packetsReceived,
-      packets_received_lost: e.packetsReceivedLost,
-      num_nacks_sent: e.nackCount,
-      fec_packets_received: e.fecPacketsReceived,
-      fec_packets_discarded: e.fecPacketsDiscarded
+      packets_received: module.packetsReceived,
+      packets_received_lost: module.packetsReceivedLost,
+      num_nacks_sent: module.nackCount,
+      fec_packets_received: module.fecPacketsReceived,
+      fec_packets_discarded: module.fecPacketsDiscarded
     }
   }
   getBytesStats() {
@@ -110,9 +111,9 @@ class m extends o.Z {
       t = this.outboundStats.aggregationDurationMs / 1e3;
     return {
       bytes_sent: this.outboundStats.bytesSent,
-      bytes_received: e,
-      outbound_bandwidth_estimate: t > 0 ? Math.round(8 * this.outboundStats.bytesAvailable / t) : 0,
-      audio_target_bitrate: t > 0 ? Math.round(8 * this.outboundStats.bytesTarget / t) : 0
+      bytes_received: module,
+      outbound_bandwidth_estimate: exports > 0 ? Math.round(8 * this.outboundStats.bytesAvailable / exports) : 0,
+      audio_target_bitrate: exports > 0 ? Math.round(8 * this.outboundStats.bytesTarget / exports) : 0
     }
   }
   getNetworkStats() {
@@ -124,11 +125,11 @@ class m extends o.Z {
   getBufferStats() {
     let e = i().reduce(this.inboundStats, (e, t) => ((null == e || null != t.bufferStats.audioJitterBuffer && null != e.audioJitterBuffer && t.bufferStats.audioJitterBuffer.p75 > e.audioJitterBuffer.p75) && (e = t.bufferStats), e), null);
     return d({}, p({
-      audio_jitter_buffer: null != e ? e.audioJitterBuffer : null,
-      audio_jitter_target: null != e ? e.audioJitterTarget : null,
-      audio_jitter_delay: null != e ? e.audioJitterDelay : null,
-      relative_reception_delay: null != e ? e.relativeReceptionDelay : null,
-      relative_playout_delay: null != e ? e.relativePlayoutDelay : null
+      audio_jitter_buffer: null != module ? module.audioJitterBuffer : null,
+      audio_jitter_target: null != module ? module.audioJitterTarget : null,
+      audio_jitter_delay: null != module ? module.audioJitterDelay : null,
+      relative_reception_delay: null != module ? module.relativeReceptionDelay : null,
+      relative_playout_delay: null != module ? module.relativePlayoutDelay : null
     }))
   }
   getFrameOpStats() {
@@ -142,13 +143,13 @@ class m extends o.Z {
       cng: 0
     });
     return {
-      frame_op_silent: e.silent,
-      frame_op_normal: e.normal,
-      frame_op_merged: e.merged,
-      frame_op_expanded: e.expanded,
-      frame_op_accelerated: e.accelerated,
-      frame_op_preemptive_expanded: e.preemptiveExpanded,
-      frame_op_cng: e.cng
+      frame_op_silent: module.silent,
+      frame_op_normal: module.normal,
+      frame_op_merged: module.merged,
+      frame_op_expanded: module.expanded,
+      frame_op_accelerated: module.accelerated,
+      frame_op_preemptive_expanded: module.preemptiveExpanded,
+      frame_op_cng: module.cng
     }
   }
   getDurationStats() {
@@ -180,14 +181,14 @@ class m extends o.Z {
       decryptFailureAfterSuccessCount: 0
     });
     return {
-      decrypt_passthrough_count: e.passthroughCount,
-      decrypt_success_count: e.decryptSuccessCount,
-      decrypt_failure_count: e.decryptFailureCount,
-      decrypt_duration: e.decryptDuration,
-      decrypt_attempts: e.decryptAttempts,
-      decrypt_missing_key_count: e.decryptMissingKeyCount,
-      decrypt_invalid_nonce_count: e.decryptInvalidNonceCount,
-      decrypt_failure_after_success_count: e.decryptFailureAfterSuccessCount,
+      decrypt_passthrough_count: module.passthroughCount,
+      decrypt_success_count: module.decryptSuccessCount,
+      decrypt_failure_count: module.decryptFailureCount,
+      decrypt_duration: module.decryptDuration,
+      decrypt_attempts: module.decryptAttempts,
+      decrypt_missing_key_count: module.decryptMissingKeyCount,
+      decrypt_invalid_nonce_count: module.decryptInvalidNonceCount,
+      decrypt_failure_after_success_count: module.decryptFailureAfterSuccessCount,
       encrypt_passthrough_count: this.outboundStats.passthroughCount,
       encrypt_success_count: this.outboundStats.encryptSuccessCount,
       encrypt_failure_count: this.outboundStats.encryptFailureCount,
@@ -200,12 +201,12 @@ class m extends o.Z {
   getAudioDeviceStats() {
     var e, t, n, r;
     return {
-      input_device_restart_count: null == (e = this.inputDeviceStats.restartCount) ? void 0 : e.accumulated,
-      output_device_restart_count: null == (t = this.outputDeviceStats.restartCount) ? void 0 : t.accumulated,
+      input_device_restart_count: null == (e = this.inputDeviceStats.restartCount) ? true : module.accumulated,
+      output_device_restart_count: null == (t = this.outputDeviceStats.restartCount) ? true : exports.accumulated,
       input_device_time_to_first_audio: this.inputDeviceStats.timeToFirstCallbackMs,
       output_device_time_to_first_audio: this.outputDeviceStats.timeToFirstCallbackMs,
-      input_device_buffer_overfull_count: null == (n = this.inputDeviceStats.bufferViolations) ? void 0 : n.accumulated,
-      output_device_buffer_underrun_count: null == (r = this.outputDeviceStats.bufferViolations) ? void 0 : r.accumulated,
+      input_device_buffer_overfull_count: null == (n = this.inputDeviceStats.bufferViolations) ? true : require.accumulated,
+      output_device_buffer_underrun_count: null == (r = this.outputDeviceStats.bufferViolations) ? true : Chunk392711.accumulated,
       input_device_session_sample_rate: this.inputDeviceStats.sessionSampleRate,
       output_device_session_sample_rate: this.outputDeviceStats.sessionSampleRate,
       input_device_time_from_connect_to_first_audio_ms: this.inputDeviceStats.timeFromConnectToFirstCallbackMs,
@@ -222,16 +223,16 @@ class m extends o.Z {
         previousTimestampMs: y,
         numRateSamples: O
       } = m;
-      if (void 0 !== y && b > y) {
+      if (true !== y && b > y) {
         var t, n, r, i, o, a, s, l, c, u, d, f, _, p;
         let v = b - y,
           I = {
             userId: h,
-            silent: null != (n = E.silent) ? n : 0 - (null != (t = g.silent) ? t : 0),
-            normal: null != (i = E.normal) ? i : 0 - (null != (r = g.normal) ? r : 0),
-            merged: null != (a = E.merged) ? a : 0 - (null != (o = g.merged) ? o : 0),
-            expanded: null != (l = E.expanded) ? l : 0 - (null != (s = g.expanded) ? s : 0),
-            accelerated: null != (u = E.accelerated) ? u : 0 - (null != (c = g.accelerated) ? c : 0),
+            silent: null != (n = E.silent) ? require : 0 - (null != (t = g.silent) ? exports : 0),
+            normal: null != (i = E.normal) ? i : 0 - (null != (r = g.normal) ? Chunk392711 : 0),
+            merged: null != (a = E.merged) ? Chunk46973 : 0 - (null != (o = g.merged) ? Chunk47770 : 0),
+            expanded: null != (l = E.expanded) ? Chunk140828 : 0 - (null != (s = g.expanded) ? Chunk379649 : 0),
+            accelerated: null != (u = E.accelerated) ? u : 0 - (null != (c = g.accelerated) ? Chunk179654 : 0),
             preemptiveExpanded: null != (f = E.preemptiveExpanded) ? f : 0 - (null != (d = g.preemptiveExpanded) ? d : 0),
             cng: null != (p = E.cng) ? p : 0 - (null != (_ = g.cng) ? _ : 0),
             accelerateRate: m.accelerateRateSum / O,
@@ -240,11 +241,11 @@ class m extends o.Z {
             speechExpandRate: m.speechExpandRateSum / O,
             durationMs: v
           };
-        I.normal + I.merged + I.expanded + I.accelerated + I.preemptiveExpanded > 0 && e.push(I)
+        I.normal + I.merged + I.expanded + I.accelerated + I.preemptiveExpanded > 0 && module.push(I)
       }
       this.periodicInboundStats[h].accelerateRateSum = 0, this.periodicInboundStats[h].expandRateSum = 0, this.periodicInboundStats[h].preemptiveExpandRateSum = 0, this.periodicInboundStats[h].speechExpandRateSum = 0, this.periodicInboundStats[h].numRateSamples = 0, this.periodicInboundStats[h].previous = E, this.periodicInboundStats[h].previousTimestampMs = b
     }
-    return e
+    return module
   }
   calculateMos(e, t) {
     let n = this.calculateR(e, t);
@@ -254,12 +255,12 @@ class m extends o.Z {
     return 93.4 - (.024 * e + (e > 177.3 ? .11 * (e - 177.3) : 0)) - (10 + 122 * t / (t + 10))
   }
   constructor(e) {
-    super(), u(this, "connection", void 0), u(this, "inboundStats", void 0), u(this, "outboundStats", void 0), u(this, "networkQuality", void 0), u(this, "systemResources", void 0), u(this, "duration", void 0), u(this, "decryptionFailures", void 0), u(this, "routingFailures", void 0), u(this, "periodicInboundStats", void 0), u(this, "inputDeviceStats", void 0), u(this, "outputDeviceStats", void 0), u(this, "sampleAudioDevice", void 0), u(this, "appendTargetRates", void 0), u(this, "sampleStats", void 0), this.connection = e, this.sampleAudioDevice = (e, t) => {
+    super(), u(this, "connection", true), u(this, "inboundStats", true), u(this, "outboundStats", true), u(this, "networkQuality", true), u(this, "systemResources", true), u(this, "duration", true), u(this, "decryptionFailures", true), u(this, "routingFailures", true), u(this, "periodicInboundStats", true), u(this, "inputDeviceStats", true), u(this, "outputDeviceStats", true), u(this, "sampleAudioDevice", true), u(this, "appendTargetRates", true), u(this, "sampleStats", true), this.connection = e, this.sampleAudioDevice = (e, t) => {
       var n, r, i;
-      void 0 !== e && (void 0 !== e.restartCount && (t.restartCount = g(e.restartCount, t.restartCount)), void 0 !== e.bufferViolations && (t.bufferViolations = g(e.bufferViolations, t.bufferViolations)), (null != (n = e.timeToFirstCallbackMs) ? n : 0) !== 0 && void 0 === t.timeToFirstCallbackMs && (t.timeToFirstCallbackMs = e.timeToFirstCallbackMs), (null != (r = e.sessionSampleRate) ? r : 0) !== 0 && (t.sessionSampleRate !== e.sessionSampleRate && this.emit("input-device-sample-rate-changed", null != (i = e.sessionSampleRate) ? i : 0), t.sessionSampleRate = e.sessionSampleRate), void 0 !== e.timeFromConnectToFirstCallbackMs && void 0 === t.timeFromConnectToFirstCallbackMs && (t.timeFromConnectToFirstCallbackMs = e.timeFromConnectToFirstCallbackMs))
+      true !== e && (true !== e.restartCount && (t.restartCount = g(e.restartCount, t.restartCount)), true !== e.bufferViolations && (t.bufferViolations = g(e.bufferViolations, t.bufferViolations)), (null != (n = e.timeToFirstCallbackMs) ? n : 0) !== 0 && true === t.timeToFirstCallbackMs && (t.timeToFirstCallbackMs = e.timeToFirstCallbackMs), (null != (r = e.sessionSampleRate) ? r : 0) !== 0 && (t.sessionSampleRate !== e.sessionSampleRate && this.emit("input-device-sample-rate-changed", null != (i = e.sessionSampleRate) ? i : 0), t.sessionSampleRate = e.sessionSampleRate), true !== e.timeFromConnectToFirstCallbackMs && true === t.timeFromConnectToFirstCallbackMs && (t.timeFromConnectToFirstCallbackMs = e.timeFromConnectToFirstCallbackMs))
     }, this.appendTargetRates = function(e) {
-      let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 0,
-        n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : 0;
+      let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : 0,
+        n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : 0;
       if (0 === e.previousTimestampMs) {
         e.previousTimestampMs = performance.now();
         return
@@ -335,7 +336,7 @@ class m extends o.Z {
                 o = N - e.packetsLost,
                 a = 0,
                 s = e.mosBuckets,
-                l = null != (m = e.decryptFailureBeforeSuccessCount) ? m : M.decryptSuccessCount > 0 ? M.decryptFailureCount : void 0;
+                l = null != (m = e.decryptFailureBeforeSuccessCount) ? m : M.decryptSuccessCount > 0 ? M.decryptFailureCount : true;
               r > 0 && o >= 0 && (a = this.calculateMos(S + D, i().clamp(o / (r + o), 0, 1)), s[Math.floor(a)]++), this.inboundStats[n] = d({
                 packetsReceived: A,
                 bytesReceived: C,
@@ -387,12 +388,12 @@ class m extends o.Z {
             }
           }
         })
-      }), void 0 !== e.audioDevice && (this.sampleAudioDevice(e.audioDevice.input, this.inputDeviceStats), this.sampleAudioDevice(e.audioDevice.output, this.outputDeviceStats));
-      let o = !1,
-        a = !1;
-      this.outboundStats.packetsSent > t && (o = !0, this.duration.speaking++), i().reduce(this.inboundStats, (e, t) => (e.packetsReceived += t.packetsReceived, e), {
+      }), true !== e.audioDevice && (this.sampleAudioDevice(e.audioDevice.input, this.inputDeviceStats), this.sampleAudioDevice(e.audioDevice.output, this.outputDeviceStats));
+      let o = false,
+        a = false;
+      this.outboundStats.packetsSent > t && (o = true, this.duration.speaking++), i().reduce(this.inboundStats, (e, t) => (e.packetsReceived += t.packetsReceived, e), {
         packetsReceived: 0
-      }).packetsReceived > n.packetsReceived && (a = !0, this.duration.listening++), (o || a) && this.duration.participation++
+      }).packetsReceived > n.packetsReceived && (a = true, this.duration.listening++), (o || a) && this.duration.participation++
     }, this.networkQuality = new l.Z, this.systemResources = new c.Z, this.inboundStats = {}, this.outboundStats = {
       packetsSent: 0,
       bytesSent: 0,

@@ -1,18 +1,19 @@
 /** Chunk was on web.js **/
+/** chunk id: 410030, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Fg: () => o,
   ZP: () => l,
   i6: () => a
 });
-var r = n(780384),
-  i = n(981631);
+var Chunk780384 = require("./780384.js"),
+  Chunk981631 = require("./981631.js");
 
 function o() {
   let {
     theme: e
-  } = (0, r.TC)();
-  return e
+  } = (0, Chunk780384.TC)();
+  return module
 }
 
 function a() {

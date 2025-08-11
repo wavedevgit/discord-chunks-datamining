@@ -1,5 +1,6 @@
 /** Chunk was on web.js **/
-e.exports = function(e) {
+/** chunk id: 616022, original params: e (module,exports,re quire) **/
+module.exports = function(e) {
   let t = {
     begin: /\|[A-Za-z]+:?/,
     keywords: {
@@ -10,7 +11,7 @@ e.exports = function(e) {
   return {
     name: "Django",
     aliases: ["jinja"],
-    case_insensitive: !0,
+    case_insensitive: true,
     subLanguage: "xml",
     contains: [e.COMMENT(/\{%\s*comment\s*%\}/, /\{%\s*endcomment\s*%\}/), e.COMMENT(/\{#/, /#\}/), {
       className: "template-tag",
@@ -23,7 +24,7 @@ e.exports = function(e) {
           name: "comment endcomment load templatetag ifchanged endifchanged if endif firstof for endfor ifnotequal endifnotequal widthratio extends include spaceless endspaceless regroup ifequal endifequal ssi now with cycle url filter endfilter debug block endblock else autoescape endautoescape csrf_token empty elif endwith static trans blocktrans endblocktrans get_static_prefix get_media_prefix plural get_current_language language get_available_languages get_current_language_bidi get_language_info get_language_info_list localize endlocalize localtime endlocaltime timezone endtimezone get_current_timezone verbatim"
         },
         starts: {
-          endsWithParent: !0,
+          endsWithParent: true,
           keywords: "in by as",
           contains: [t],
           relevance: 0

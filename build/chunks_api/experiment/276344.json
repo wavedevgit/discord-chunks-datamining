@@ -1,1 +1,0 @@
-{"id":"276344","type":"experiment","data":{"kind":"guild","id":"2024-09_league_of_legends_leaderboard","label":"League of Legends Leaderboard","defaultConfig":{"enabled":false},"treatments":[{"id":1,"label":"Enable Leaderboard","config":{"enabled":false}}]},"fromModule":{"id":"web.js"}}

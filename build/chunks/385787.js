@@ -1,25 +1,26 @@
 /** Chunk was on 67244 **/
+/** chunk id: 385787, original params: e,t,r (module,exports,require) **/
 "use strict";
-r.d(t, {
+require.d(exports, {
   Z: () => M,
   t: () => Z
 });
-var a = r(665352),
-  n = r(147591),
-  s = r(216397),
-  o = r(677524),
-  i = r(37484);
+var Chunk665352 = require("./665352.js"),
+  Chunk147591 = require("./147591.js"),
+  Chunk216397 = require("./216397.js"),
+  Chunk677524 = require("./677524.js"),
+  Chunk37484 = require("./37484.js");
 let c = 216 / 24389,
   l = 24389 / 27,
-  u = o.p["0"]["0"],
-  f = o.p["0"]["1"],
-  b = o.p["0"]["2"],
-  d = o.p["1"]["0"],
-  h = o.p["1"]["1"],
-  p = o.p["1"]["2"],
-  m = o.p["2"]["0"],
-  g = o.p["2"]["1"],
-  y = o.p["2"]["2"];
+  u = Chunk677524.p["0"]["0"],
+  f = Chunk677524.p["0"]["1"],
+  b = Chunk677524.p["0"]["2"],
+  d = Chunk677524.p["1"]["0"],
+  h = Chunk677524.p["1"]["1"],
+  p = Chunk677524.p["1"]["2"],
+  m = Chunk677524.p["2"]["0"],
+  g = Chunk677524.p["2"]["1"],
+  y = Chunk677524.p["2"]["2"];
 
 function v(e, t, r) {
   let a = t / (Math.sin(r) - e * Math.cos(r));
@@ -62,7 +63,7 @@ function w(e, t) {
     o = v(e.g1s, e.g1i, r);
   return Math.min(a, n, s, o, v(e.b0s, e.b0i, r), v(e.b1s, e.b1i, r))
 }
-let M = new a.Z({
+let M = new Chunk665352.Z({
   id: "hsluv",
   name: "HSLuv",
   coords: {
@@ -80,8 +81,8 @@ let M = new a.Z({
       name: "Lightness"
     }
   },
-  base: n.Z,
-  gamutSpace: s.Z,
+  base: Chunk147591.Z,
+  gamutSpace: Chunk216397.Z,
   fromBase(e) {
     let t, [r, a, n] = [(0, i.sI)(e[0]), (0, i.sI)(e[1]), (0, i.sI)(e[2])];
     return r > 99.9999999 ? (t = 0, r = 100) : r < 1e-8 ? (t = 0, r = 0) : t = a / w(Z(r), n) * 100, [n, t, r]

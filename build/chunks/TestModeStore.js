@@ -1,0 +1,132 @@
+/** Chunk was on web.js **/
+/** chunk id: 695103, original params: e,t,n (module,exports,re quire) **/
+"use strict";
+let r, i, o;
+require.d(exports, {
+  Z: () => A
+}), require("./388685.js"), require("./358797.js");
+var a, Chunk442837 = require("./442837.js"),
+  Chunk570140 = require("./570140.js"),
+  Chunk238514 = require("./238514.js"),
+  Chunk695346 = require("./695346.js"),
+  Chunk581883 = require("./581883.js"),
+  Chunk283595 = require("./283595.js");
+
+function _(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+
+function p(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      _(e, t, n[t])
+    })
+  }
+  return e
+}
+let h = {
+    applicationId: null,
+    originURL: null
+  },
+  m = h,
+  g = new Set,
+  E = false;
+
+function b() {
+  o = null
+}
+
+function y() {
+  r = null, i = null, g = new Set, m.applicationId = null, m.originURL = null, b()
+}
+
+function O(e) {
+  let {
+    applicationId: t
+  } = e;
+  g.add(t), o = null
+}
+
+function v(e) {
+  let {
+    applicationId: t,
+    originURL: n
+  } = e;
+  r = t, i = n, g.delete(t), o = null, m.applicationId = t, m.originURL = n
+}
+
+function I(e) {
+  let {
+    applicationId: t,
+    error: n
+  } = e;
+  g.delete(t), o = n
+}
+
+function T(e) {
+  let {
+    testModeApplicationId: t
+  } = e;
+  r = t
+}
+class S extends(a = Chunk442837.ZP.PersistedStore) {
+  initialize(e) {
+    r = (m = p({}, null != e ? e : h)).applicationId, i = m.originURL, this.waitFor(d.Z, c.Z), this.syncWith([d.Z, c.Z], () => true), f.Z.whenInitialized(() => {
+      E = true
+    })
+  }
+  inTestModeForApplication(e) {
+    return r === e
+  }
+  inTestModeForEmbeddedApplication(e) {
+    return r === e && null != i
+  }
+  shouldDisplayTestMode(e) {
+    return u.Sb.getSetting() && this.inTestModeForApplication(e)
+  }
+  getState() {
+    return m
+  }
+  get isTestMode() {
+    return null != r
+  }
+  get isFetchingAuthorization() {
+    return g.size > 0
+  }
+  get testModeEmbeddedApplicationId() {
+    return null != i ? r : null
+  }
+  get testModeApplicationId() {
+    return r
+  }
+  get testModeOriginURL() {
+    return i
+  }
+  get error() {
+    return o
+  }
+  whenInitialized(e) {
+    this.addConditionalChangeListener(() => {
+      if (E) return setImmediate(e), false
+    })
+  }
+}
+_(S, "displayName", "TestModeStore"), _(S, "persistKey", "TestModeStore");
+let A = new S(Chunk570140.Z, {
+  DEVELOPER_TEST_MODE_AUTHORIZATION_START: O,
+  DEVELOPER_TEST_MODE_AUTHORIZATION_SUCCESS: v,
+  DEVELOPER_TEST_MODE_AUTHORIZATION_FAIL: I,
+  OVERLAY_INITIALIZE: T,
+  DEVELOPER_TEST_MODE_RESET_ERROR: b,
+  LOGOUT: y,
+  DEVELOPER_TEST_MODE_RESET: y
+})

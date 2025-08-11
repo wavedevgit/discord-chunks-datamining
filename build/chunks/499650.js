@@ -1,5 +1,6 @@
 /** Chunk was on 22988 **/
-e.exports = {
+/** chunk id: 499650, original params: e,t,n (module,exports,require) **/
+module.exports = {
   buttonsContainer: "buttonsContainer__24d0d",
   colorSwatch: "colorSwatch__24d0d",
   swatchDescription: "swatchDescription__24d0d",

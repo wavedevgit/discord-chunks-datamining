@@ -1,5 +1,6 @@
 /** Chunk was on 75708 **/
-n.r(e.exports = {
+/** chunk id: 969397, original params: e,t,n (module,exports,require) **/
+require.r(module.exports = {
   perksContainer: "perksContainer_b62c4e",
   perksTitle: "perksTitle_b62c4e",
   perksTitleStackedCards: "perksTitleStackedCards_b62c4e",

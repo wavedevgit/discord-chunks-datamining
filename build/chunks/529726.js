@@ -1,21 +1,22 @@
 /** Chunk was on web.js **/
+/** chunk id: 529726, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => m
-}), n(388685), n(539854);
-var r = n(31775),
-  i = n.n(r),
-  o = n(147913),
-  a = n(626135),
-  s = n(709054),
-  l = n(981631);
+}), require("./388685.js"), require("./539854.js");
+var Chunk31775 = require("./31775.js"),
+  i = require.n(Chunk31775),
+  Chunk147913 = require("./147913.js"),
+  Chunk626135 = require("./626135.js"),
+  Chunk709054 = require("./709054.js"),
+  Chunk981631 = require("./981631.js");
 
 function c(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 let u = 6e4,
@@ -23,7 +24,7 @@ let u = 6e4,
   f = 10,
   _ = 2e3,
   p = 500;
-class h extends o.Z {
+class h extends Chunk147913.Z {
   handleMessageBecameVisible(e) {
     let {
       messageId: t
@@ -46,16 +47,16 @@ class h extends o.Z {
     for (let e of s.default.keys(this.currentlyVisibleMessageTimers)) t.has(e) || this.handleMessageLostVisibility(e)
   }
   handleChannelSelect() {
-    for (let e of Object.values(this.currentlyVisibleMessageTimers)) clearTimeout(e);
+    for (let e of Object.values(this.currentlyVisibleMessageTimers)) clearTimeout(module);
     this.currentlyVisibleMessageTimers = {}, this.viewsInCurrentChannel.clear(), this.drainBuffer()
   }
   drainBuffer() {
-    for (let e of this.batchBuffer) a.default.track(l.rMx.ANNOUNCEMENT_MESSAGE_VIEWED, {
-      message_id: e.messageId,
-      channel_id: e.channelId,
-      guild_id: e.guildId,
-      source_channel_id: e.sourceChannelId,
-      source_guild_id: e.sourceGuildId
+    for (let e of this.batchBuffer) Chunk626135.default.track(Chunk981631.rMx.ANNOUNCEMENT_MESSAGE_VIEWED, {
+      message_id: module.messageId,
+      channel_id: module.channelId,
+      guild_id: module.guildId,
+      source_channel_id: module.sourceChannelId,
+      source_guild_id: module.sourceGuildId
     });
     this.batchBuffer = [], null != this.batchTimerId && (clearTimeout(this.batchTimerId), this.batchTimerId = null)
   }

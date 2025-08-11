@@ -1,9 +1,10 @@
 /** Chunk was on web.js **/
+/** chunk id: 239470, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => i
 });
-var r = n(647162);
+var Chunk647162 = require("./647162.js");
 
 function i(e, t, n, i) {
   var o, a, s;
@@ -12,12 +13,12 @@ function i(e, t, n, i) {
     u = e.getTrack(),
     d = e.getSyncingWith(),
     f = e.getActivity(),
-    _ = null != (s = null != (a = null == u ? void 0 : u.id) ? a : null == f ? void 0 : f.sync_id) ? s : e.getLastPlayedTrackId(),
+    _ = null != (s = null != (a = null == u ? true : u.id) ? a : null == f ? true : f.sync_id) ? s : e.getLastPlayedTrackId(),
     p = n.id === t.getId(),
     h = l && !c,
-    m = null != _ && _ === (null == i ? void 0 : i.sync_id),
-    g = (null == f ? void 0 : f.party) != null && (null == i || null == (o = i.party) ? void 0 : o.id) === f.party.id,
-    E = (null == d ? void 0 : d.userId) != null && (null == d ? void 0 : d.userId) === n.id,
+    m = null != _ && _ === (null == i ? true : i.sync_id),
+    g = (null == f ? true : f.party) != null && (null == i || null == (o = i.party) ? true : o.id) === f.party.id,
+    E = (null == d ? true : d.userId) != null && (null == d ? true : d.userId) === n.id,
     b = p || h || m,
     y = p || E || g;
   return {

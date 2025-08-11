@@ -1,0 +1,41 @@
+/** Chunk was on 1272 **/
+/** chunk id: 119520, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
+  Z: () => p
+}), require("./388685.js");
+var Chunk255367 = require("./255367.js"),
+  Chunk73800 = require("./73800.js"),
+  Chunk558381 = require("./558381.js"),
+  Chunk480916 = require("./480916.js"),
+  Chunk986035 = require("./986035.js"),
+  Chunk388032 = require("./388032.js"),
+  Chunk576823 = require("./576823.js");
+
+function u(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+class d extends Chunk73800.PureComponent {
+  render() {
+    let {
+      game: {
+        name: e
+      }
+    } = this.props;
+    return <div className={Chunk576823.matureListing}><Chunk986035.Z modalType={Chunk480916.it.NSFW_APP_LISTING} onAgree={this.handleAgree} onDisagree={this.handleDisagree} title={Chunk388032.intl.formatToPlainString(Chunk388032.t.n5PGER, {
+          name: module
+        })} description={Chunk388032.intl.string(Chunk388032.t["bJx/aG"])} agreement={Chunk388032.intl.string(Chunk388032.t.odZq8f)} disagreement={Chunk388032.intl.string(Chunk388032.t.hieTsL)} /></div>
+  }
+  constructor(...e) {
+    super(...e), u(this, "handleDisagree", () => {
+      (0, l.M9)()
+    }), u(this, "handleAgree", () => {
+      (0, l.cj)()
+    })
+  }
+}
+let p = d

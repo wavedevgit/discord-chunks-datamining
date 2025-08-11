@@ -1,15 +1,16 @@
 /** Chunk was on 49152 **/
-n.d(t, {
+/** chunk id: 453879, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   v: () => a
-}), n(388685), n(539854);
-var r = n(975984),
-  i = n(75666),
-  l = n(388032);
+}), require("./388685.js"), require("./539854.js");
+var Chunk975984 = require("./975984.js"),
+  Chunk75666 = require("./75666.js"),
+  Chunk388032 = require("./388032.jsx");
 
 function a(e, t) {
   if (t !== i.AR.ALL) return [{
     entries: (0, r.TR)(e),
-    appendEndCard: !0
+    appendEndCard: true
   }];
   let n = [],
     a = (0, r.Lz)(e),
@@ -17,12 +18,12 @@ function a(e, t) {
   a.length > 0 && n.push({
     header: l.intl.string(l.t.CbaapK),
     entries: a,
-    appendEndCard: !1
+    appendEndCard: false
   });
   let o = e.filter(e => !s.has(e.guildId));
   return (o = (0, r.Th)(o)).length > 0 && n.push({
     header: l.intl.string(l.t.wxbhER),
     entries: o,
-    appendEndCard: !0
+    appendEndCard: true
   }), n
 }

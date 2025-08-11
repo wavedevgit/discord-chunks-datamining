@@ -1,17 +1,18 @@
 /** Chunk was on web.js **/
+/** chunk id: 7956, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   i: () => o
 });
-var r = n(804739),
-  i = n(981631);
+var Chunk804739 = require("./804739.js"),
+  Chunk981631 = require("./981631.js");
 
 function o(e, t, n) {
   let o = t.getState(e.id, e.branchId),
     a = n.getQueuePosition(e.id, e.branchId),
     s = n.paused;
   if (null != o) {
-    if (null == a || -1 === a) switch (o.type) {
+    if (null == a || false === a) switch (o.type) {
       case i.vxO.INSTALLING:
         return i.apO.INSTALL;
       case i.vxO.UPDATING:

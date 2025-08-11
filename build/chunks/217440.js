@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 217440, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   textPrimary: "textPrimary__8e577",
   textSecondary: "textSecondary__8e577",
   headerIcons: "headerIcons__8e577",

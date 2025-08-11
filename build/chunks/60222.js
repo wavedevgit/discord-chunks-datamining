@@ -1,16 +1,17 @@
 /** Chunk was on 62856 **/
-E.d(i, {
+/** chunk id: 60222, original params: t,i,E (module,exports,require) **/
+require.d(exports, {
   A: () => r,
   m: () => e
-}), E(388685);
-var n = E(442837),
-  l = E(430824),
-  S = E(981631);
+}), require("./388685.js");
+var Chunk442837 = require("./442837.js"),
+  Chunk430824 = require("./430824.js"),
+  Chunk981631 = require("./981631.js");
 
 function r(t) {
   var i;
-  let [E] = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : [l.Z];
-  return !!(null == (i = E.getGuild(t)) ? void 0 : i.features.has(S.oNc.COMMUNITY))
+  let [E] = arguments.length > 1 && true !== arguments[1] ? arguments[1] : [l.Z];
+  return !!(null == (i = E.getGuild(t)) ? true : i.features.has(S.oNc.COMMUNITY))
 }
 
 function e(t) {

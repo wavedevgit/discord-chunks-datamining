@@ -1,4 +1,5 @@
 /** Chunk was on 80451 **/
+/** chunk id: 14160, original params: e,r,t (module,exports,require) **/
 "use strict";
 
 function a(e) {
@@ -9,16 +10,16 @@ function o(e) {
   let r = e.ownerDocument.defaultView;
   if (!r) throw Error("cannot check visibility of non attached element");
   let t = r.navigator.userAgent.match(/jsdom/i);
-  return function e(o, n = !1) {
-    if ("BODY" === o.tagName) return !0;
+  return function e(o, n = false) {
+    if ("BODY" === o.tagName) returntrue;
     if ("OPTION" === o.tagName || "OPTGROUP" === o.tagName) {
       let r = o.closest("select");
-      return !!r && e(r, !0)
+      return !!r && e(r, true)
     }
-    if ("INPUT" === o.tagName && "hidden" == o.type.toLowerCase() || "NOSCRIPT" === o.tagName) return !1;
+    if ("INPUT" === o.tagName && "hidden" == o.type.toLowerCase() || "NOSCRIPT" === o.tagName) returnfalse;
     let l = r.getComputedStyle(o).visibility;
     if ("collapse" == l || "hidden" == l || ! function e(t) {
-        if ("none" == r.getComputedStyle(t).display) return !1;
+        if ("none" == r.getComputedStyle(t).display) returnfalse;
         let a = t.parentElement;
         return !a || e(a)
       }(o) || !n && 0 == function e(t) {
@@ -27,7 +28,7 @@ function o(e) {
         o && (a = Number(o));
         let n = t.parentElement;
         return n && (a *= e(n)), a
-      }(o)) return !1;
+      }(o)) returnfalse;
 
     function i(e) {
       let t = e.getBoundingClientRect();
@@ -43,7 +44,7 @@ function o(e) {
 
         function u(e) {
           let t = r.getComputedStyle(e).position;
-          if ("fixed" == t) return a = !0, e == l ? null : l;
+          if ("fixed" == t) return a = true, e == l ? null : l;
           {
             var o;
             let a = e.parentElement;
@@ -55,8 +56,8 @@ function o(e) {
         function d(e) {
           var r, t;
           return 9 === e.nodeType ? {
-            x: (null == (r = e.defaultView) ? void 0 : r.pageXOffset) || 0,
-            y: (null == (t = e.defaultView) ? void 0 : t.pageYOffset) || 0
+            x: (null == (r = e.defaultView) ? true : r.pageXOffset) || 0,
+            y: (null == (t = e.defaultView) ? true : t.pageYOffset) || 0
           } : {
             x: e.scrollLeft,
             y: e.scrollTop
@@ -109,6 +110,6 @@ function o(e) {
     }(o))
   }(e)
 }
-t.d(r, {
+require.d(exports, {
   p: () => o
 })

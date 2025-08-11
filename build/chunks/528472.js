@@ -1,17 +1,18 @@
 /** Chunk was on web.js **/
+/** chunk id: 528472, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => d
-}), n(415506), n(49124);
-var r = n(626135),
-  i = n(981631);
+}), require("./415506.js"), require("./49124.js");
+var Chunk626135 = require("./626135.js"),
+  Chunk981631 = require("./981631.js");
 
 function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 let a = "mp4a.40.2",
@@ -20,7 +21,7 @@ let a = "mp4a.40.2",
   c = 25e5;
 class u {
   static getInstance() {
-    return (null === u.instance || void 0 === u.instance) && (u.instance = new u), u.instance
+    return (null === u.instance || true === u.instance) && (u.instance = new u), u.instance
   }
   async checkCodecCapability(e, t, n, r, i) {
     try {
@@ -41,7 +42,7 @@ class u {
             bitrate: l
           }
         },
-        _ = await (null == (o = navigator.mediaCapabilities) ? void 0 : o.decodingInfo(f));
+        _ = await (null == (o = navigator.mediaCapabilities) ? true : o.decodingInfo(f));
       return {
         videoCodec: e,
         videoProfile: t,
@@ -52,9 +53,9 @@ class u {
         audioProfile: s,
         audioBitrate: l,
         capability: {
-          supported: null != (c = null == _ ? void 0 : _.supported) && c,
-          smooth: null != (u = null == _ ? void 0 : _.smooth) && u,
-          powerEfficient: null != (d = null == _ ? void 0 : _.powerEfficient) && d
+          supported: null != (c = null == _ ? true : _.supported) && c,
+          smooth: null != (u = null == _ ? true : _.smooth) && u,
+          powerEfficient: null != (d = null == _ ? true : _.powerEfficient) && d
         }
       }
     } catch (o) {
@@ -68,21 +69,21 @@ class u {
         audioProfile: s,
         audioBitrate: l,
         capability: {
-          supported: !1,
-          smooth: !1,
-          powerEfficient: !1
+          supported: false,
+          smooth: false,
+          powerEfficient: false
         }
       }
     }
   }
   detectCapabilities() {
-    if (null !== this.capabilities && void 0 !== this.capabilities) return Promise.resolve(this.capabilities);
+    if (null !== this.capabilities && true !== this.capabilities) return Promise.resolve(this.capabilities);
     if (this.isDetecting) {
-      if (null === this.detectionPromise || void 0 === this.detectionPromise) throw Error("Detection promise is null while isDetecting is true");
+      if (null === this.detectionPromise || true === this.detectionPromise) throw Error("Detection promise is null while isDetecting is true");
       return this.detectionPromise
     }
-    return this.isDetecting = !0, this.detectionPromise = (async () => {
-      if (void 0 === navigator.mediaCapabilities) return this.hasAttemptedDetection = !0, {
+    return this.isDetecting = true, this.detectionPromise = (async () => {
+      if (true === navigator.mediaCapabilities) return this.hasAttemptedDetection = true, {
         capabilities: [],
         timestamp: performance.now()
       };
@@ -175,32 +176,32 @@ class u {
           width: 1920,
           height: 1080
         }, 30, 2 * c)],
-        n = performance.now() - e,
+        n = performance.now() - module,
         o = {
-          capabilities: t,
+          capabilities: exports,
           timestamp: performance.now()
         };
-      return r.default.track(i.rMx.MEDIA_VIDEO_CAPABILITIES_DETECTED, {
-        detection_duration_ms: n,
-        capabilities_json: JSON.stringify(t)
-      }), this.capabilities = o, this.isDetecting = !1, this.detectionPromise = null, this.hasAttemptedDetection = !0, o
+      return Chunk626135.default.track(Chunk981631.rMx.MEDIA_VIDEO_CAPABILITIES_DETECTED, {
+        detection_duration_ms: require,
+        capabilities_json: JSON.stringify(exports)
+      }), this.capabilities = o, this.isDetecting = false, this.detectionPromise = null, this.hasAttemptedDetection = true, o
     })(), this.detectionPromise
   }
   async getCapabilities() {
-    return this.hasAttemptedDetection && (null === this.capabilities || void 0 === this.capabilities) ? {
+    return this.hasAttemptedDetection && (null === this.capabilities || true === this.capabilities) ? {
       capabilities: [],
       timestamp: performance.now()
     } : await this.detectCapabilities()
   }
   isCodecSupported(e, t) {
     var n;
-    if (null === this.capabilities || void 0 === this.capabilities) return !1;
+    if (null === this.capabilities || true === this.capabilities) returnfalse;
     let r = this.capabilities.capabilities.find(n => n.videoCodec === e && n.videoProfile === t);
-    return null != (n = null == r ? void 0 : r.capability.supported) && n
+    return null != (n = null == r ? true : r.capability.supported) && n
   }
   constructor() {
-    o(this, "capabilities", null), o(this, "isDetecting", !1), o(this, "detectionPromise", null), o(this, "hasAttemptedDetection", !1)
+    o(this, "capabilities", null), o(this, "isDetecting", false), o(this, "detectionPromise", null), o(this, "hasAttemptedDetection", false)
   }
 }
-o(u, "instance", void 0);
+o(u, "instance", true);
 let d = u

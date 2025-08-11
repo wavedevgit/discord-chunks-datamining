@@ -1,5 +1,6 @@
 /** Chunk was on 99133 **/
-A.exports = {
+/** chunk id: 952849, original params: A,t,e (module,exports,require) **/
+module.exports = {
   premiumTrialBadge: "premiumTrialBadge__4c1e4",
   premiumOfferUnackedBadge: "premiumOfferUnackedBadge__4c1e4",
   premiumTrialAcknowledgedBadge: "premiumTrialAcknowledgedBadge__4c1e4",

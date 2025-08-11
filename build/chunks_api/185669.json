@@ -1,0 +1,1 @@
+{"id":"185669","type":"experiment","data":{"kind":"user","id":"2024-11_connection_flow_refactor_v2","label":"Connection Flow Refactor","defaultConfig":{"enabled":false},"treatments":[{"id":0,"label":"Disabled","config":{"enabled":false}},{"id":1,"label":"Enabled","config":{"enabled":true}}]},"fromModule":{"id":"web.js"}}

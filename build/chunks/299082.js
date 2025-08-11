@@ -1,5 +1,6 @@
 /** Chunk was on web.js **/
-e.exports = function(e) {
+/** chunk id: 299082, original params: e (module,exports,re quire) **/
+module.exports = function(e) {
   let t = "\\[=*\\[",
     n = "\\]=*\\]",
     r = {
@@ -29,7 +30,7 @@ e.exports = function(e) {
       }), {
         className: "params",
         begin: "\\(",
-        endsWithParent: !0,
+        endsWithParent: true,
         contains: i
       }].concat(i)
     }, e.C_NUMBER_MODE, e.APOS_STRING_MODE, e.QUOTE_STRING_MODE, {

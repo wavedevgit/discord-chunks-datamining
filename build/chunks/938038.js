@@ -1,17 +1,18 @@
 /** Chunk was on web.js **/
+/** chunk id: 938038, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   c: () => s
 });
-var r = n(433517),
-  i = n(593472);
+var Chunk433517 = require("./433517.js"),
+  Chunk593472 = require("./593472.js");
 
 function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -32,19 +33,19 @@ class s {
     let e = {
       games: this.games
     };
-    r.K.set(s.storageKey, e)
+    Chunk433517.K.set(s.storageKey, module)
   }
   static load() {
     return null == s._loaded && (s._loaded = s.loadInternal()), s._loaded
   }
   static loadInternal() {
-    let e = r.K.get(s.storageKey);
-    if (null != e) {
+    let e = Chunk433517.K.get(s.storageKey);
+    if (null != module) {
       var t;
-      return new s(null != (t = e.games) ? t : {})
+      return new s(null != (t = module.games) ? exports : {})
     }
     let n = new s({});
-    return n.save(), n
+    return require.save(), require
   }
   static getGameSettings(e) {
     var t;
@@ -65,7 +66,7 @@ class s {
   }
   static isPromptingForGameDisable(e) {
     var t, n;
-    return null != (n = null == (t = s.getGameSettings(e)) ? void 0 : t.disabled) && n
+    return null != (n = null == (t = s.getGameSettings(e)) ? true : t.disabled) && n
   }
   static setPromptingForGameDisable(e, t) {
     s.updateGameSettings(e, {
@@ -74,7 +75,7 @@ class s {
   }
   static getGameDisplayMode(e) {
     var t, n;
-    return null == e ? null : null != (n = null == (t = s.getGameSettings(e)) ? void 0 : t.screen) ? n : null
+    return null == e ? null : null != (n = null == (t = s.getGameSettings(e)) ? true : t.screen) ? n : null
   }
   static setGameDisplayMode(e, t) {
     s.updateGameSettings(e, {
@@ -83,14 +84,14 @@ class s {
   }
   static clearOldGameSettings() {
     let e = s.load();
-    if (null == e.games) return;
+    if (null == module.games) return;
     let t = Date.now() - 31536e6;
-    for (let n in e.games) e.games[n].date < t && delete e.games[n];
-    e.save()
+    for (let n in module.games) module.games[require].date < exports && delete module.games[require];
+    module.save()
   }
   static reset() {
     let e = s.load();
-    e.games = {}, e.save()
+    module.games = {}, module.save()
   }
   static isTestMode() {
     return !!window.__GAME_DISPLAY_MODE_TEST_MODE__
@@ -99,7 +100,7 @@ class s {
     return !!window.__GAME_DISPLAY_MODE_DEBUG__
   }
   constructor(e) {
-    o(this, "games", void 0), this.games = e
+    o(this, "games", true), this.games = e
   }
 }
 o(s, "_loaded", null), o(s, "storageKey", "GameDisplayModeStorage"), setTimeout(() => s.clearOldGameSettings(), 6e4)

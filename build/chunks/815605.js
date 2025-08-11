@@ -1,20 +1,21 @@
 /** Chunk was on web.js **/
+/** chunk id: 815605, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Vz: () => c,
   Zn: () => _,
   aB: () => f
-}), n(49124), n(704826), n(35282);
-var r = n(392711),
-  i = n(772848),
-  o = n(134432),
-  a = n(963838),
-  s = n(302221),
-  l = n(347904);
+}), require("./49124.js"), require("./704826.js"), require("./35282.js");
+var Chunk392711 = require("./392711.js"),
+  Chunk772848 = require("./772848.js"),
+  Chunk134432 = require("./134432.js"),
+  Chunk963838 = require("./963838.js"),
+  Chunk302221 = require("./302221.js"),
+  Chunk347904 = require("./347904.js");
 let c = 7.5,
   u = 128,
   d = 32,
-  f = (0, r.memoize)((e, t, n, r) => new Promise(e => {
+  f = (0, Chunk392711.memoize)((e, t, n, r) => new Promise(e => {
     let i = new Image;
     i.src = t, i.crossOrigin = "Anonymous", i.onload = () => {
       let t = d * (0, o.x_)(),
@@ -32,7 +33,7 @@ function _(e, t, n, r) {
     emojiSize: o,
     key: s,
     messageId: l
-  } = null != r ? r : {}, c = null != o ? 2 * o : void 0, u = (0, a._r)(e, c);
+  } = null != r ? r : {}, c = null != o ? 2 * o : true, u = (0, a._r)(e, c);
   return {
     channelId: n,
     messageId: l,

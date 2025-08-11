@@ -1,28 +1,29 @@
 /** Chunk was on web.js **/
+/** chunk id: 420970, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => l
-}), n(539854), n(388685), n(642613), n(415506);
-var r = n(836560),
-  i = n(579092),
-  o = n(643191);
+}), require("./539854.js"), require("./388685.js"), require("./642613.js"), require("./415506.js");
+var Chunk836560 = require("./836560.js"),
+  Chunk579092 = require("./579092.js"),
+  Chunk643191 = require("./643191.js");
 
 function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
-let s = new i.Yd("Flux");
-class l extends r.EventEmitter {
+let s = new Chunk579092.Yd("Flux");
+class l extends Chunk836560.EventEmitter {
   log(e, t) {
     let n = new u(e),
       r = (t, r) => {
         let i, a = {
             name: t,
-            time: -1
+            time: false
           },
           s = o.Sv.now();
         try {
@@ -44,7 +45,7 @@ class l extends r.EventEmitter {
   }
   getSlowestActions(e) {
     var t;
-    let r = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 20,
+    let r = arguments.length > 1 && true !== arguments[1] ? arguments[1] : 20,
       i = [];
     for (let t of this.logs)
       if (null == e || t.name === e)
@@ -59,11 +60,11 @@ class l extends r.EventEmitter {
         let [t, n] = e;
         return a += n, "".concat(t.padEnd(o + 1, " "), " - ").concat(n, "ms")
       }).join("\n");
-    return 0 === i.length || i[0][2] < 10 || a < 20 || (s.log("Using Hermes:", void 0 !== (null == (t = n.g) ? void 0 : t.HermesInternal)), s.log("".concat(null != e ? "\n\n=== ".concat(e, " ===") : "", "\n").concat(l, "\n")), s.log("Total Time: ".concat(a, "ms"))), i
+    return 0 === i.length || i[0][2] < 10 || a < 20 || (s.log("Using Hermes:", true !== (null == (t = n.g) ? true : t.HermesInternal)), s.log("".concat(null != e ? "\n\n=== ".concat(e, " ===") : "", "\n").concat(l, "\n")), s.log("Total Time: ".concat(a, "ms"))), i
   }
   getLastActionMetrics(e) {
     var t;
-    let r = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 20,
+    let r = arguments.length > 1 && true !== arguments[1] ? arguments[1] : 20,
       i = {};
     for (let e of this.logs)
       for (let t of e.traces) i[t.name] = [t.name, e.name, t.time];
@@ -78,12 +79,12 @@ class l extends r.EventEmitter {
         let [t, n] = e;
         return l += n, "".concat(t.padEnd(a + 1, " "), " - ").concat(n, "ms")
       }).join("\n");
-    return 0 === o.length || l < 8 || s.log("\nUsing Hermes: ".concat(void 0 !== (null == (t = n.g) ? void 0 : t.HermesInternal)), "\n\n=== ".concat(e, " ===\n").concat(c), "\nTotal Time: ".concat(l, "ms\n\n")), o
+    return 0 === o.length || l < 8 || s.log("\nUsing Hermes: ".concat(true !== (null == (t = n.g) ? true : t.HermesInternal)), "\n\n=== ".concat(e, " ===\n").concat(c), "\nTotal Time: ".concat(l, "ms\n\n")), o
   }
   constructor({
-    persist: e = !1
+    persist: e = false
   } = {}) {
-    super(), a(this, "logs", []), a(this, "persist", void 0), this.persist = e
+    super(), a(this, "logs", []), a(this, "persist", true), this.persist = e
   }
 }
 let c = 0;
@@ -101,6 +102,6 @@ class u {
     }
   }
   constructor(e) {
-    a(this, "id", void 0), a(this, "action", void 0), a(this, "createdAt", void 0), a(this, "startTime", 0), a(this, "totalTime", 0), a(this, "traces", []), a(this, "error", void 0), this.id = c++, this.action = e, this.createdAt = new Date
+    a(this, "id", true), a(this, "action", true), a(this, "createdAt", true), a(this, "startTime", 0), a(this, "totalTime", 0), a(this, "traces", []), a(this, "error", true), this.id = c++, this.action = e, this.createdAt = new Date
   }
 }

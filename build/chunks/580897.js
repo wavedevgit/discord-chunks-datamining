@@ -1,10 +1,11 @@
 /** Chunk was on web.js **/
-var r = n(457965);
-e.exports = function(e, t, n) {
+/** chunk id: 580897, original params: e,t,n (module,exports,re quire) **/
+var Chunk457965 = require("./457965.js");
+module.exports = function(e, t, n) {
   "__proto__" == t && r ? r(e, t, {
-    configurable: !0,
-    enumerable: !0,
+    configurable: true,
+    enumerable: true,
     value: n,
-    writable: !0
+    writable: true
   }) : e[t] = n
 }

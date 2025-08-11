@@ -1,3 +1,4 @@
 /** Chunk was on 23357 **/
+/** chunk id: 943071, original params: e,t,n (module,exports,require) **/
 "use strict";
-n(325806), e.exports = n(981994).Object.getOwnPropertyDescriptors
+require("./325806.js"), module.exports = require("./981994.js").Object.getOwnPropertyDescriptors

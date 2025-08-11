@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 660694, original params: e (module,exports,re quire) **/
 "use strict";
-e.exports = function(e, t, n, r) {
+module.exports = function(e, t, n, r) {
   for (var i = 65535 & e | 0, o = e >>> 16 & 65535 | 0, a = 0; 0 !== n;) {
     a = n > 2e3 ? 2e3 : n, n -= a;
     do o = o + (i = i + t[r++] | 0) | 0; while (--a);

@@ -1,2 +1,0 @@
-/** Chunk was on 7561 **/
-s.exports = JSON.parse('{"xRdYAQ":"Los temas personalizados [Beta] no est\xe1n disponibles en la versi\xf3n m\xf3vil.","2hAz8f":"Personalizar tu tema","23QUzs":"\xa1Nuevo! Temas personalizados","TRCE4u":"Configura tu estado de \xe1nimo con infinitas combinaciones de color. Prueba hoy mismo esta funci\xf3n exclusiva de Nitro."}')

@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 30517, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   textArea: "textArea__89a34",
   resizeable: "resizeable__89a34",
   inputMaxLength: "inputMaxLength__89a34",

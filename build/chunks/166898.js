@@ -1,25 +1,26 @@
 /** Chunk was on web.js **/
+/** chunk id: 166898, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 
 function r(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
-var i = n(746117),
-  o = n(856084),
-  a = n(581079);
-e.exports = function() {
+var Chunk746117 = require("./746117.js"),
+  Chunk856084 = require("./856084.js"),
+  Chunk581079 = require("./581079.js");
+module.exports = function() {
   function e(e) {
-    r(this, "_defaultDir", void 0), r(this, "_lastDir", void 0), e ? o.isStrong(e) || a(!1) : e = o.getGlobalDir(), this._defaultDir = e, this.reset()
+    r(this, "_defaultDir", true), r(this, "_lastDir", true), e ? o.isStrong(e) || a(false) : e = o.getGlobalDir(), this._defaultDir = e, this.reset()
   }
-  var t = e.prototype;
-  return t.reset = function() {
+  var t = module.prototype;
+  return exports.reset = function() {
     this._lastDir = this._defaultDir
-  }, t.getDirection = function(e) {
+  }, exports.getDirection = function(e) {
     return this._lastDir = i.getDirection(e, this._lastDir), this._lastDir
-  }, e
+  }, module
 }()

@@ -1,10 +1,11 @@
 /** Chunk was on web.js **/
+/** chunk id: 893908, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 
 function r(e) {
   var t, n;
-  return null != (n = null == (t = e.moderatorReporting) ? void 0 : t.moderatorReportChannelId) ? n : null
+  return null != (n = null == (t = e.moderatorReporting) ? true : t.moderatorReportChannelId) ? n : null
 }
-n.d(t, {
+require.d(exports, {
   Z: () => r
 })

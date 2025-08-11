@@ -1,13 +1,14 @@
 /** Chunk was on 50448 **/
+/** chunk id: 613694, original params: t,r,n (module,exports,require) **/
 "use strict";
-var e = n(178476),
-  o = n(605486),
-  i = e("Map");
-t.exports = {
+var Chunk178476 = require("./178476.js"),
+  Chunk605486 = require("./605486.js"),
+  i = Chunk178476("Map");
+module.exports = {
   Map: i,
-  set: o("set", 2),
-  get: o("get", 1),
-  has: o("has", 1),
-  remove: o("delete", 1),
+  set: Chunk605486("set", 2),
+  get: Chunk605486("get", 1),
+  has: Chunk605486("has", 1),
+  remove: Chunk605486("delete", 1),
   proto: i.prototype
 }

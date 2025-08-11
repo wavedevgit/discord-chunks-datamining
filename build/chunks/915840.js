@@ -1,11 +1,12 @@
 /** Chunk was on web.js **/
+/** chunk id: 915840, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   V: () => i
 });
 let {
   Themes: r
-} = n(15202).V, i = {
+} = require("./15202.js").V, i = {
   SemanticColorHighContrast: {
     APP_BORDER_FRAME: {
       [r.DARK]: {

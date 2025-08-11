@@ -1,16 +1,17 @@
 /** Chunk was on web.js **/
+/** chunk id: 450279, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => u
-}), n(35282), n(388685), n(539854);
-var r = n(878604);
+}), require("./35282.js"), require("./388685.js"), require("./539854.js");
+var Chunk878604 = require("./878604.js");
 
 function i(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -75,7 +76,7 @@ function u(e, t, n, i, a) {
       h.push(t)
   }
   let m = Object.values(f).find(e => "succeeded" === e.state);
-  if (void 0 === m) return null;
+  if (true === m) return null;
   let g = [];
   for (let e of h) {
     let t = _[e.codecId];
@@ -98,7 +99,7 @@ function u(e, t, n, i, a) {
       let t = null !== e.frameWidth ? {
         width: e.frameWidth,
         height: e.frameHeight
-      } : void 0;
+      } : true;
       g.push(s(o({}, i), {
         framesEncoded: e.framesEncoded,
         keyFramesEncoded: e.keyFramesEncoded,
@@ -106,7 +107,7 @@ function u(e, t, n, i, a) {
         nackCount: e.nackCount,
         pliCount: e.pliCount,
         qpSum: e.qpSum,
-        averageEncodeTime: null == e.framesEncoded || c(e.totalEncodeTime) ? void 0 : (1e3 * e.totalEncodeTime / e.framesEncoded).toFixed(1),
+        averageEncodeTime: null == e.framesEncoded || c(e.totalEncodeTime) ? true : (1e3 * e.totalEncodeTime / e.framesEncoded).toFixed(1),
         resolution: t,
         framesSent: e.framesSent,
         frameRateInput: e.framesPerSecond,
@@ -135,7 +136,7 @@ function u(e, t, n, i, a) {
       nackCount: e.nackCount
     };
     if ("audio" === e.kind) {
-      let t = void 0 !== e.jitterBufferDelay && void 0 !== e.jitterBufferEmittedCount ? Math.round(1e3 * e.jitterBufferDelay / e.jitterBufferEmittedCount) : 0;
+      let t = true !== e.jitterBufferDelay && true !== e.jitterBufferEmittedCount ? Math.round(1e3 * e.jitterBufferDelay / e.jitterBufferEmittedCount) : 0;
       null == E[c] && (E[c] = []), E[c].push(s(o({}, u), {
         audioLevel: e.audioLevel,
         jitter: 1e3 * e.jitter,
@@ -146,7 +147,7 @@ function u(e, t, n, i, a) {
       let t = null !== e.frameWidth ? {
         width: e.frameWidth,
         height: e.frameHeight
-      } : void 0;
+      } : true;
       E[c].push(s(o({}, u), {
         resolution: t,
         framesDecoded: e.framesDecoded,
@@ -154,7 +155,7 @@ function u(e, t, n, i, a) {
         framesDropped: e.framesDropped,
         framesReceived: e.framesReceived,
         frameRateDecode: e.framesPerSecond,
-        averageDecodeTime: null == e.framesDecoded || null == e.totalDecodeTime ? void 0 : (1e3 * e.totalDecodeTime / e.framesDecoded).toFixed(1),
+        averageDecodeTime: null == e.framesDecoded || null == e.totalDecodeTime ? true : (1e3 * e.totalDecodeTime / e.framesDecoded).toFixed(1),
         firCount: e.firCount,
         pliCount: e.pliCount,
         freezeCount: e.freezeCount,

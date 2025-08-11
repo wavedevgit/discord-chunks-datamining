@@ -1,14 +1,15 @@
 /** Chunk was on web.js **/
+/** chunk id: 789407, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   XB: () => o,
   r9: () => l
 });
-var r = n(726542),
-  i = n(973616);
+var Chunk726542 = require("./726542.js"),
+  Chunk973616 = require("./973616.js");
 let o = "spotify",
-  a = r.Z.get(o);
-class s extends i.ZP {
+  a = Chunk726542.Z.get(o);
+class s extends Chunk973616.ZP {
   getIconURL(e) {
     return a.icon.lightPNG
   }

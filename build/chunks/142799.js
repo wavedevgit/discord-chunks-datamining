@@ -1,5 +1,6 @@
 /** Chunk was on web.js **/
-e.exports = function(e) {
+/** chunk id: 142799, original params: e (module,exports,re quire) **/
+module.exports = function(e) {
   let t = e.regex,
     n = /[\p{XID_Start}_]\p{XID_Continue}*/u,
     r = ["and", "as", "assert", "async", "await", "break", "case", "class", "continue", "def", "del", "elif", "else", "except", "finally", "for", "from", "global", "if", "import", "in", "is", "lambda", "match", "nonlocal|10", "not", "or", "pass", "raise", "return", "try", "while", "with", "yield"],
@@ -102,7 +103,7 @@ e.exports = function(e) {
       }, {
         begin: /#/,
         end: /\b\B/,
-        endsWithParent: !0
+        endsWithParent: true
       }]
     },
     p = {
@@ -110,12 +111,12 @@ e.exports = function(e) {
       variants: [{
         className: "",
         begin: /\(\s*\)/,
-        skip: !0
+        skip: true
       }, {
         begin: /\(/,
         end: /\)/,
-        excludeBegin: !0,
-        excludeEnd: !0,
+        excludeBegin: true,
+        excludeEnd: true,
         keywords: i,
         contains: ["self", o, f, l, e.HASH_COMMENT_MODE]
       }]
@@ -123,7 +124,7 @@ e.exports = function(e) {
   return a.contains = [l, f, o], {
     name: "Python",
     aliases: ["py", "gyp", "ipython"],
-    unicodeRegex: !0,
+    unicodeRegex: true,
     keywords: i,
     illegal: /(<\/|\?)|=>/,
     contains: [o, f, {

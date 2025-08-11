@@ -1,12 +1,13 @@
 /** Chunk was on web.js **/
+/** chunk id: 686478, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   $_: () => s,
   _l: () => i,
   jk: () => a,
   vL: () => o
 });
-var r = n(786761),
+var Chunk786761 = require("./786761.js"),
   i = function(e) {
     return e.ALL = "ALL", e.REMINDER = "REMINDER", e.BOOKMARK = "BOOKMARK", e
   }({});
@@ -19,10 +20,10 @@ function o(e) {
     authorSummary: e.author_summary,
     channelSummary: e.channel_summary,
     messageSummary: e.message_summary,
-    guildId: 0 === e.guild_id ? void 0 : e.guild_id,
-    authorId: 0 === e.author_id ? void 0 : e.author_id,
+    guildId: 0 === e.guild_id ? true : e.guild_id,
+    authorId: 0 === e.author_id ? true : e.author_id,
     notes: e.notes,
-    dueAt: null != e.due_at ? new Date(e.due_at) : void 0
+    dueAt: null != e.due_at ? new Date(e.due_at) : true
   }
 }
 

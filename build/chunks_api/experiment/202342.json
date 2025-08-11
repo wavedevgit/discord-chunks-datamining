@@ -1,1 +1,0 @@
-{"id":"202342","type":"experiment","data":{"kind":"user","id":"2025-05_mobile_shop_gifting","label":"Mobile Shop Gifting","commonTriggerPoint":"l.$P.COLLECTIBLES_SHOP_OPEN","defaultConfig":{"enabled":false},"treatments":[{"id":1,"label":"Turn on Mobile Shop Gifting","config":{"enabled":false}}]},"fromModule":{"id":"45620"}}

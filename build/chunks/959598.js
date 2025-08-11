@@ -1,4 +1,5 @@
 /** Chunk was on web.js **/
+/** chunk id: 959598, original params: e,t,n (module,exports,re quire) **/
 var r = {
   "./neo-castel/neocastel-400-normal.woff2": ["759857"],
   "./bangers/bangers-400-normal.woff2": ["707341", "20045"],
@@ -70,4 +71,4 @@ function i(e) {
     return n.t(i, 17)
   })
 }
-i.keys = () => Object.keys(r), i.id = 959598, e.exports = i
+i.keys = () => Object.keys(r), i.id = 959598, module.exports = i

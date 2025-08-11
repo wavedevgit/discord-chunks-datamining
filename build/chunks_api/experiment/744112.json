@@ -1,1 +1,0 @@
-{"id":"744112","type":"experiment","data":{"kind":"user","id":"2024-09_collectibles_shop_preload","label":"Collectibles Shop Preload","defaultConfig":{"enabled":false},"treatments":[{"id":1,"label":"Preloads collectible shop payload","config":{"enabled":false}}]},"fromModule":{"id":"1272"}}

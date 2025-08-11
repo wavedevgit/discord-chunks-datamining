@@ -1,38 +1,39 @@
 /** Chunk was on web.js **/
+/** chunk id: 349540, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => d
-}), n(388685);
-var r = n(147913),
-  i = n(594174),
-  o = n(74538);
-n(367074);
-var a = n(163684),
-  s = n(748770),
-  l = n(474936);
+}), require("./388685.js");
+var Chunk147913 = require("./147913.js"),
+  Chunk594174 = require("./594174.js"),
+  Chunk74538 = require("./74538.js");
+require("./367074.js");
+var Chunk163684 = require("./163684.js"),
+  Chunk748770 = require("./748770.js"),
+  Chunk474936 = require("./474936.js");
 
 function c(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
-class u extends r.Z {
+class u extends Chunk147913.Z {
   async onPostConnectionOpen() {
     this.maybeFetchActiveOutboundPromotions(), await this.maybeFetchBogoPromotion()
   }
   maybeFetchActiveOutboundPromotions() {
-    let e = i.default.getCurrentUser(),
-      t = o.ZP.isPremiumExactly(e, l.p9.TIER_2),
-      n = a.g.getCurrentConfig({
+    let e = Chunk594174.default.getCurrentUser(),
+      t = Chunk74538.ZP.isPremiumExactly(module, Chunk474936.p9.TIER_2),
+      n = Chunk163684.g.getCurrentConfig({
         location: "maybeFetchActiveOutboundPromotions"
       }, {
-        autoTrackExposure: !1,
-        disable: t
+        autoTrackExposure: false,
+        disable: exports
       }).enabled;
-    (t || n) && (0, s.vM)()
+    (exports || require) && (0, Chunk748770.vM)()
   }
   constructor(...e) {
     super(...e), c(this, "actions", {

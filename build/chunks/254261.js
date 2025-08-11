@@ -1,5 +1,6 @@
 /** Chunk was on web.js **/
-e.exports = function(e) {
+/** chunk id: 254261, original params: e (module,exports,re quire) **/
+module.exports = function(e) {
   let t = e.regex,
     n = ["GET", "POST", "HEAD", "PUT", "DELETE", "CONNECT", "OPTIONS", "PATCH", "TRACE"];
   return {

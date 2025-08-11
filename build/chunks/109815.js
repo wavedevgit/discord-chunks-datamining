@@ -1,16 +1,17 @@
 /** Chunk was on 1272 **/
-n.d(t, {
+/** chunk id: 109815, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   T: () => d,
   Z: () => p
 });
-var r = n(570140),
-  i = n(447543),
-  l = n(703656),
-  a = n(314897),
-  o = n(998502),
-  s = n(996106),
-  c = n(186901),
-  u = n(981631);
+var Chunk570140 = require("./570140.js"),
+  Chunk447543 = require("./447543.js"),
+  Chunk703656 = require("./703656.js"),
+  Chunk314897 = require("./314897.js"),
+  Chunk998502 = require("./998502.js"),
+  Chunk996106 = require("./996106.js"),
+  Chunk186901 = require("./186901.js"),
+  Chunk981631 = require("./981631.js");
 async function d(e, t) {
   let {
     invite: n
@@ -29,8 +30,8 @@ async function d(e, t) {
   }
 }
 let p = {
-  [u.Etm.OPEN_INVITE]: {
-    scope: c.lH,
+  [Chunk981631.Etm.OPEN_INVITE]: {
+    scope: Chunk186901.lH,
     async handler(e) {
       let {
         args: {

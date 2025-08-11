@@ -1,41 +1,42 @@
 /** Chunk was on web.js **/
+/** chunk id: 234488, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-var r = n(46015),
-  i = n(621523),
-  o = n(880181),
-  a = n(214027),
-  s = n(154028),
-  l = n(845691),
+var Chunk46015 = require("./46015.js"),
+  Chunk621523 = require("./621523.js"),
+  Chunk880181 = require("./880181.js"),
+  Chunk214027 = require("./214027.js"),
+  Chunk154028 = require("./154028.js"),
+  Chunk845691 = require("./845691.js"),
   c = function() {},
-  u = s("Reflect", "construct"),
+  u = Chunk154028("Reflect", "construct"),
   d = /^\s*(?:class|function)\b/,
-  f = r(d.exec),
+  f = Chunk46015(d.exec),
   _ = !d.test(c),
   p = function(e) {
-    if (!o(e)) return !1;
+    if (!o(e)) returnfalse;
     try {
-      return u(c, [], e), !0
+      return u(c, [], e), true
     } catch (e) {
-      return !1
+      returnfalse
     }
   },
   h = function(e) {
-    if (!o(e)) return !1;
+    if (!o(e)) returnfalse;
     switch (a(e)) {
       case "AsyncFunction":
       case "GeneratorFunction":
       case "AsyncGeneratorFunction":
-        return !1
+        returnfalse
     }
     try {
       return _ || !!f(d, l(e))
     } catch (e) {
-      return !0
+      returntrue
     }
   };
-h.sham = !0, e.exports = !u || i(function() {
+h.sham = true, module.exports = !u || Chunk621523(function() {
   var e;
   return p(p.call) || !p(Object) || !p(function() {
-    e = !0
-  }) || e
+    e = true
+  }) || module
 }) ? h : p

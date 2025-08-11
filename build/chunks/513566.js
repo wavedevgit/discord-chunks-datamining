@@ -1,42 +1,43 @@
 /** Chunk was on web.js **/
+/** chunk id: 513566, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => T
-}), n(388685);
-var r = n(348327),
-  i = n.n(r),
-  o = n(392711),
-  a = n.n(o),
-  s = n(570140),
-  l = n(846027),
-  c = n(287734),
-  u = n(317770),
-  d = n(829750),
-  f = n(189771),
-  _ = n(67844),
-  p = n(173507),
-  h = n(592125),
-  m = n(131951),
-  g = n(944486),
-  E = n(358085),
-  b = n(998502),
-  y = n(981631),
-  O = n(388032);
+}), require("./388685.js");
+var Chunk348327 = require("./348327.js"),
+  i = require.n(Chunk348327),
+  Chunk392711 = require("./392711.js"),
+  a = require.n(Chunk392711),
+  Chunk570140 = require("./570140.js"),
+  Chunk846027 = require("./846027.js"),
+  Chunk287734 = require("./287734.js"),
+  Chunk317770 = require("./317770.js"),
+  Chunk829750 = require("./829750.js"),
+  Chunk189771 = require("./189771.js"),
+  Chunk67844 = require("./67844.js"),
+  Chunk173507 = require("./173507.jsx"),
+  Chunk592125 = require("./592125.js"),
+  Chunk131951 = require("./131951.js"),
+  Chunk944486 = require("./944486.js"),
+  Chunk358085 = require("./358085.js"),
+  Chunk998502 = require("./998502.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk388032 = require("./388032.jsx");
 
 function v(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
-class I extends u.Z {
+class I extends Chunk317770.Z {
   _initialize() {
-    this.isSupported && (s.Z.subscribe("AUDIO_SET_MODE", this.handleViewUpdate), s.Z.subscribe("VOICE_CHANNEL_SELECT", this.handleViewUpdate), s.Z.subscribe("START_SESSION", this.handleViewUpdate), s.Z.subscribe("CONNECTION_OPEN", this.handleViewUpdate), s.Z.subscribe("CONNECTION_CLOSED", this.handleViewUpdate), s.Z.subscribe("CALL_CREATE", this.handleViewUpdate), s.Z.subscribe("CALL_UPDATE", this.handleViewUpdate), s.Z.subscribe("CALL_DELETE", this.handleViewUpdate), s.Z.subscribe("CHANNEL_DELETE", this.handleViewUpdate), s.Z.subscribe("VOICE_STATE_UPDATES", this.handleViewUpdate), s.Z.subscribe("AUDIO_TOGGLE_SELF_MUTE", this.handleViewUpdate), s.Z.subscribe("AUDIO_TOGGLE_SELF_DEAF", this.handleViewUpdate), s.Z.subscribe("AUDIO_TOGGLE_LOCAL_MUTE", this.handleViewUpdate), s.Z.subscribe("AUDIO_SET_LOCAL_VIDEO_DISABLED", this.handleViewUpdate), b.ZP.on("THUMBAR_BUTTONS_CLICKED", (e, t) => this.buttonClicked(t)))
+    this.isSupported && (Chunk570140.Z.subscribe("AUDIO_SET_MODE", this.handleViewUpdate), Chunk570140.Z.subscribe("VOICE_CHANNEL_SELECT", this.handleViewUpdate), Chunk570140.Z.subscribe("START_SESSION", this.handleViewUpdate), Chunk570140.Z.subscribe("CONNECTION_OPEN", this.handleViewUpdate), Chunk570140.Z.subscribe("CONNECTION_CLOSED", this.handleViewUpdate), Chunk570140.Z.subscribe("CALL_CREATE", this.handleViewUpdate), Chunk570140.Z.subscribe("CALL_UPDATE", this.handleViewUpdate), Chunk570140.Z.subscribe("CALL_DELETE", this.handleViewUpdate), Chunk570140.Z.subscribe("CHANNEL_DELETE", this.handleViewUpdate), Chunk570140.Z.subscribe("VOICE_STATE_UPDATES", this.handleViewUpdate), Chunk570140.Z.subscribe("AUDIO_TOGGLE_SELF_MUTE", this.handleViewUpdate), Chunk570140.Z.subscribe("AUDIO_TOGGLE_SELF_DEAF", this.handleViewUpdate), Chunk570140.Z.subscribe("AUDIO_TOGGLE_LOCAL_MUTE", this.handleViewUpdate), Chunk570140.Z.subscribe("AUDIO_SET_LOCAL_VIDEO_DISABLED", this.handleViewUpdate), Chunk998502.ZP.on("THUMBAR_BUTTONS_CLICKED", (e, t) => this.buttonClicked(t)))
   }
   _terminate() {
-    this.isSupported && (s.Z.unsubscribe("AUDIO_SET_MODE", this.handleViewUpdate), s.Z.unsubscribe("VOICE_CHANNEL_SELECT", this.handleViewUpdate), s.Z.unsubscribe("START_SESSION", this.handleViewUpdate), s.Z.unsubscribe("CONNECTION_OPEN", this.handleViewUpdate), s.Z.unsubscribe("CONNECTION_CLOSED", this.handleViewUpdate), s.Z.unsubscribe("CALL_CREATE", this.handleViewUpdate), s.Z.unsubscribe("CALL_UPDATE", this.handleViewUpdate), s.Z.unsubscribe("CALL_DELETE", this.handleViewUpdate), s.Z.unsubscribe("CHANNEL_DELETE", this.handleViewUpdate), s.Z.unsubscribe("VOICE_STATE_UPDATES", this.handleViewUpdate), s.Z.unsubscribe("AUDIO_TOGGLE_SELF_MUTE", this.handleViewUpdate), s.Z.unsubscribe("AUDIO_TOGGLE_SELF_DEAF", this.handleViewUpdate), s.Z.unsubscribe("AUDIO_TOGGLE_LOCAL_MUTE", this.handleViewUpdate), s.Z.unsubscribe("AUDIO_SET_LOCAL_VIDEO_DISABLED", this.handleViewUpdate))
+    this.isSupported && (Chunk570140.Z.unsubscribe("AUDIO_SET_MODE", this.handleViewUpdate), Chunk570140.Z.unsubscribe("VOICE_CHANNEL_SELECT", this.handleViewUpdate), Chunk570140.Z.unsubscribe("START_SESSION", this.handleViewUpdate), Chunk570140.Z.unsubscribe("CONNECTION_OPEN", this.handleViewUpdate), Chunk570140.Z.unsubscribe("CONNECTION_CLOSED", this.handleViewUpdate), Chunk570140.Z.unsubscribe("CALL_CREATE", this.handleViewUpdate), Chunk570140.Z.unsubscribe("CALL_UPDATE", this.handleViewUpdate), Chunk570140.Z.unsubscribe("CALL_DELETE", this.handleViewUpdate), Chunk570140.Z.unsubscribe("CHANNEL_DELETE", this.handleViewUpdate), Chunk570140.Z.unsubscribe("VOICE_STATE_UPDATES", this.handleViewUpdate), Chunk570140.Z.unsubscribe("AUDIO_TOGGLE_SELF_MUTE", this.handleViewUpdate), Chunk570140.Z.unsubscribe("AUDIO_TOGGLE_SELF_DEAF", this.handleViewUpdate), Chunk570140.Z.unsubscribe("AUDIO_TOGGLE_LOCAL_MUTE", this.handleViewUpdate), Chunk570140.Z.unsubscribe("AUDIO_SET_LOCAL_VIDEO_DISABLED", this.handleViewUpdate))
   }
   setThumbarButtons(e) {
     i()(this.prevButtons, e) || (this.prevButtons = e, b.ZP.setThumbarButtons(e))
@@ -44,7 +45,7 @@ class I extends u.Z {
   constructor(...e) {
     super(...e), v(this, "callbackActions", {
       [b.tS.VIDEO]: () => {
-        m.Z.isVideoEnabled() ? l.Z.setVideoEnabled(!1) : (0, p.Z)(() => l.Z.setVideoEnabled(!0), y.IlC.APP)
+        m.Z.isVideoEnabled() ? l.Z.setVideoEnabled(false) : (0, p.Z)(() => l.Z.setVideoEnabled(true), y.IlC.APP)
       },
       [b.tS.MUTE]: () => l.Z.toggleSelfMute({
         location: "Thumbar"
@@ -69,12 +70,12 @@ class I extends u.Z {
           reachedLimit: s,
           limit: l
         } = null != o ? (0, d.t)(o) : {
-          reachedLimit: void 0,
-          limit: void 0
+          reachedLimit: true,
+          limit: true
         },
         c = (0, _.X)({
           enabled: r,
-          join: !1,
+          join: false,
           channel: o,
           cameraUnavailable: !i,
           hasPermission: a,
@@ -96,7 +97,7 @@ class I extends u.Z {
         tooltip: n ? O.intl.string(O.t["2US87+"]) : O.intl.string(O.t.wjcRFR)
       }, {
         name: b.tS.DISCONNECT,
-        active: !0,
+        active: true,
         tooltip: O.intl.string(O.t["6vrfgo"])
       }])
     }, 100))

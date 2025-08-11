@@ -1,6 +1,7 @@
 /** Chunk was on 67244 **/
+/** chunk id: 924950, original params: e,t (module,exports,require) **/
 "use strict";
-t.__esModule = !0, t.default = {
+exports.__esModule = true, exports.default = {
   scheme: "codeschool",
   author: "brettof86",
   base00: "#232c31",
@@ -19,4 +20,4 @@ t.__esModule = !0, t.default = {
   base0D: "#484d79",
   base0E: "#c59820",
   base0F: "#c98344"
-}, e.exports = t.default
+}, module.exports = exports.default

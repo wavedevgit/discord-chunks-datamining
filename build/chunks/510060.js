@@ -1,6 +1,7 @@
 /** Chunk was on 71879 **/
+/** chunk id: 510060, original params: e,t,n (module,exports,require) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   I8: () => s,
   KW: () => m,
   LT: () => u,
@@ -8,15 +9,15 @@ n.d(t, {
   eU: () => c,
   rI: () => d
 });
-var r = n(512722),
-  i = n.n(r);
+var Chunk512722 = require("./512722.js"),
+  i = require.n(Chunk512722);
 
 function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 let l = 2 / 3,
@@ -43,7 +44,7 @@ class o {
     maxWidth: t,
     gap: n
   }) {
-    a(this, "minWidth", void 0), a(this, "maxWidth", void 0), a(this, "gap", void 0), i()(e < t, "minWidth needs to be smaller than maxWidth"), this.minWidth = e, this.maxWidth = t, this.gap = n
+    a(this, "minWidth", true), a(this, "maxWidth", true), a(this, "gap", true), i()(e < t, "minWidth needs to be smaller than maxWidth"), this.minWidth = e, this.maxWidth = t, this.gap = n
   }
 }
 let c = {

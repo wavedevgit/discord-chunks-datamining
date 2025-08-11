@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 370774, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   D: () => y,
   O4: () => v,
   Tj: () => T,
@@ -9,23 +10,23 @@ n.d(t, {
   j4: () => O,
   ux: () => I
 });
-var r = n(995638),
-  i = n(114858),
-  o = n(442837),
-  a = n(230711),
-  s = n(455199),
-  l = n(2818),
-  c = n(768943),
-  u = n(175006),
-  d = n(592125),
-  f = n(430824);
-n(375954);
-var _ = n(306680);
-n(594174), n(70956);
-var p = n(709054),
-  h = n(787879),
-  m = n(982183),
-  g = n(981631);
+var Chunk995638 = require("./995638.js"),
+  Chunk114858 = require("./114858.js"),
+  Chunk442837 = require("./442837.js"),
+  Chunk230711 = require("./230711.js"),
+  Chunk455199 = require("./455199.js"),
+  Chunk2818 = require("./2818.js"),
+  Chunk768943 = require("./768943.js"),
+  Chunk175006 = require("./175006.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk430824 = require("./430824.js");
+require("./375954.js");
+var Chunk306680 = require("./306680.js");
+require("./594174.js"), require("./70956.js");
+var Chunk709054 = require("./709054.js"),
+  Chunk787879 = require("./787879.js"),
+  Chunk982183 = require("./982183.js"),
+  Chunk981631 = require("./981631.js");
 
 function E(e) {
   let {
@@ -35,9 +36,9 @@ function E(e) {
     ReadStateStore_: i = _.ZP,
     GuildStore_: o = f.Z
   } = e;
-  if (!i.hasUnread(n)) return !1;
+  if (!i.hasUnread(n)) returnfalse;
   let a = o.getGuild(r);
-  if (null == a || null == a.joinedAt) return !1;
+  if (null == a || null == a.joinedAt) returnfalse;
   let s = i.ackMessageId(n);
   if (null == s) {
     let e = o.getGuild(r);
@@ -56,30 +57,30 @@ function b(e) {
 function y() {
   let {
     pathname: e
-  } = (0, i.TH)();
-  return e.startsWith(g.Z5c.CHANNEL(g.STv))
+  } = (0, Chunk114858.TH)();
+  return module.startsWith(Chunk981631.Z5c.CHANNEL(Chunk981631.STv))
 }
 
 function O(e) {
-  a.Z.open(g.oAB.NOTIFICATIONS, void 0, {
+  a.Z.open(g.oAB.NOTIFICATIONS, true, {
     analyticsLocations: e
   })
 }
 
 function v() {
-  let e = (0, o.Wu)([h.Z], () => {
+  let e = (0, Chunk442837.Wu)([Chunk787879.Z], () => {
       var e;
-      return null != (e = h.Z.getNotifyingChannelIds()) ? e : []
+      return null != (e = Chunk787879.Z.getNotifyingChannelIds()) ? module : []
     }),
-    t = (0, o.Wu)([_.ZP], () => e.filter(e => _.ZP.hasUnread(e)), [e]),
-    n = (0, o.Wu)([s.ZP], () => {
+    t = (0, Chunk442837.Wu)([Chunk306680.ZP], () => module.filter(e => _.ZP.hasUnread(e)), [module]),
+    n = (0, Chunk442837.Wu)([Chunk455199.ZP], () => {
       var e;
-      return null != (e = s.ZP.getSettingsFilteredMentions()) ? e : []
+      return null != (e = Chunk455199.ZP.getSettingsFilteredMentions()) ? module : []
     });
   return {
-    unreadRecentMentionsCount: (0, o.e7)([_.ZP, d.Z, f.Z], () => {
+    unreadRecentMentionsCount: (0, Chunk442837.e7)([Chunk306680.ZP, Chunk592125.Z, Chunk430824.Z], () => {
       var e, t;
-      return null != (t = null == n || null == (e = n.filter(e => {
+      return null != (t = null == require || null == (e = require.filter(e => {
         let t = d.Z.getBasicChannel(e.channel_id);
         return null != t && E({
           messageId: e.id,
@@ -88,9 +89,9 @@ function v() {
           ReadStateStore_: _.ZP,
           GuildStore_: f.Z
         })
-      })) ? void 0 : e.length) ? t : 0
-    }, [n]),
-    unreadChannelIds: t
+      })) ? true : module.length) ? exports : 0
+    }, [require]),
+    unreadChannelIds: exports
   }
 }
 
@@ -98,10 +99,10 @@ function I() {
   let {
     enabled: e,
     inInbox: t
-  } = l.Z.useExperiment({
+  } = Chunk2818.Z.useExperiment({
     location: "NotificationsInboxUtils"
-  }), n = (0, o.e7)([c.Z], () => c.Z.getSavedMessageCount());
-  return e && t && (n > 0 || (0, u.Z)())
+  }), n = (0, Chunk442837.e7)([Chunk768943.Z], () => Chunk768943.Z.getSavedMessageCount());
+  return module && exports && (require > 0 || (0, Chunk175006.Z)())
 }
 
 function T(e, t) {

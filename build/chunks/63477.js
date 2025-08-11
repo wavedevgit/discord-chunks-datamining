@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 63477, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   invoiceTable: "invoiceTable__25766",
   invoiceRow: "invoiceRow__25766",
   invoiceTagColumn: "invoiceTagColumn__25766",

@@ -1,5 +1,6 @@
 /** Chunk was on web.js **/
-e.exports = function(e) {
+/** chunk id: 321580, original params: e (module,exports,re quire) **/
+module.exports = function(e) {
   let t = {
       match: [/^\s*(?=\S)/, /[^:]+/, /:\s*/, /$/],
       className: {
@@ -38,7 +39,7 @@ e.exports = function(e) {
     aliases: ["nt"],
     contains: [e.inherit(e.HASH_COMMENT_MODE, {
       begin: /^\s*(?=#)/,
-      excludeBegin: !0
+      excludeBegin: true
     }), i, r, t, n]
   }
 }

@@ -1,5 +1,6 @@
 /** Chunk was on 14126 **/
-e.exports = {
+/** chunk id: 837014, original params: e,n,r (module,exports,require) **/
+module.exports = {
   confirmModal: "confirmModal__1b38b",
   discordTag: "discordTag__1b38b",
   avatarIcon: "avatarIcon__1b38b",

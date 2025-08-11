@@ -1,36 +1,37 @@
 /** Chunk was on web.js **/
+/** chunk id: 224706, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => j
-}), n(388685), n(35282), n(415506);
-var r = n(664751),
-  i = n(990547),
-  o = n(243814),
-  a = n(544891),
-  s = n(283693),
-  l = n(570140),
-  c = n(638880),
-  u = n(812206),
-  d = n(439849),
-  f = n(510839),
-  _ = n(813370),
-  p = n(669764),
-  h = n(706454),
-  m = n(757266),
-  g = n(77498),
-  E = n(283595),
-  b = n(417363),
-  y = n(626135),
-  O = n(630388),
-  v = n(877481),
-  I = n(358085),
-  T = n(573261),
-  S = n(278323),
-  A = n(58642),
-  N = n(254854),
-  C = n(981631),
-  R = n(701488),
-  P = n(388032);
+}), require("./388685.js"), require("./35282.js"), require("./415506.js");
+var Chunk664751 = require("./664751.js"),
+  Chunk990547 = require("./990547.js"),
+  Chunk243814 = require("./243814.js"),
+  Chunk544891 = require("./544891.js"),
+  Chunk283693 = require("./283693.js"),
+  Chunk570140 = require("./570140.js"),
+  Chunk638880 = require("./638880.js"),
+  Chunk812206 = require("./812206.js"),
+  Chunk439849 = require("./439849.js"),
+  Chunk510839 = require("./510839.js"),
+  Chunk813370 = require("./813370.js"),
+  Chunk669764 = require("./669764.js"),
+  Chunk706454 = require("./706454.js"),
+  Chunk757266 = require("./757266.js"),
+  Chunk77498 = require("./77498.js"),
+  Chunk283595 = require("./283595.js"),
+  Chunk417363 = require("./417363.js"),
+  Chunk626135 = require("./626135.js"),
+  Chunk630388 = require("./630388.js"),
+  Chunk877481 = require("./877481.js"),
+  Chunk358085 = require("./358085.js"),
+  Chunk573261 = require("./573261.js"),
+  Chunk278323 = require("./278323.js"),
+  Chunk58642 = require("./58642.js"),
+  Chunk254854 = require("./254854.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk701488 = require("./701488.js"),
+  Chunk388032 = require("./388032.js");
 let w = 3,
   D = 20;
 
@@ -40,7 +41,7 @@ function L(e) {
     secret: n,
     channelId: r,
     intent: i = R.Ws.PLAY,
-    embedded: o = !1,
+    embedded: o = false,
     source: a,
     locationObject: s,
     analyticsLocations: c
@@ -83,10 +84,10 @@ function M(e) {
     },
     retries: 3,
     body: {
-      authorize: !0
+      authorize: true
     },
-    oldFormErrors: !0,
-    rejectWithError: !1
+    oldFormErrors: true,
+    rejectWithError: false
   }).then(e => {
     let t = e.body.location.split(/#|\?/),
       n = r.parse(t[t.length - 1]);
@@ -106,7 +107,7 @@ async function k(e) {
     applicationId: t,
     branchId: n,
     channelId: r,
-    embedded: i = !1,
+    embedded: i = false,
     source: o,
     locationObject: a = {},
     analyticsLocations: s = []
@@ -117,7 +118,7 @@ async function k(e) {
       applicationId: t
     }), 0) : await (0, c.Z)({
       applicationId: t,
-      activityChannelId: null != r ? r : void 0,
+      activityChannelId: null != r ? r : true,
       source: o,
       locationObject: a,
       analyticsLocations: s
@@ -219,8 +220,8 @@ let j = {
   getDetectableGamesSupplemental(e) {
     let {
       forceFetch: t
-    } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {
-      forceFetch: !1
+    } = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {
+      forceFetch: false
     }, n = t ? e : e.filter(p.Z.canFetch);
     if (0 === n.length) return;
     l.Z.dispatch({
@@ -234,7 +235,7 @@ let j = {
           query: {
             application_ids: e
           },
-          rejectWithError: !0
+          rejectWithError: true
         });
         l.Z.dispatch({
           type: "DETECTABLE_GAME_SUPPLEMENTAL_FETCH_SUCCESS",
@@ -251,29 +252,29 @@ let j = {
     for (; n.length > 0;) r(n.splice(0, D))
   },
   getDetectableGames() {
-    if (!g.Z.canFetchDetectableGames()) return;
-    let e = g.Z.detectableGamesEtag;
-    l.Z.wait(() => {
-      l.Z.dispatch({
+    if (!Chunk77498.Z.canFetchDetectableGames()) return;
+    let e = Chunk77498.Z.detectableGamesEtag;
+    Chunk570140.Z.wait(() => {
+      Chunk570140.Z.dispatch({
         type: "GAMES_DATABASE_FETCH"
-      }), T.Z.get({
-        url: C.ANM.APPLICATIONS_DETECTABLE,
+      }), Chunk573261.Z.get({
+        url: Chunk981631.ANM.APPLICATIONS_DETECTABLE,
         headers: {
-          "If-None-Match": e
+          "If-None-Match": module
         },
         retries: 1,
-        oldFormErrors: !0,
+        oldFormErrors: true,
         trackedActionData: {
-          event: i.NetworkActionNames.DETECTABLE_APPLICATIONS_FETCH,
+          event: Chunk990547.NetworkActionNames.DETECTABLE_APPLICATIONS_FETCH,
           properties: t => {
             var n;
             return (0, s.iG)({
               sent_etag: e,
-              received_etag: null == t || null == (n = t.headers) ? void 0 : n.etag
+              received_etag: null == t || null == (n = t.headers) ? true : n.etag
             })
           }
         },
-        rejectWithError: !1
+        rejectWithError: false
       }).then(e => {
         let {
           body: t,
@@ -321,8 +322,8 @@ let j = {
         report_version: w
       },
       retries: 1,
-      oldFormErrors: !0,
-      rejectWithError: !0
+      oldFormErrors: true,
+      rejectWithError: true
     }).then(e => {
       let {
         body: {
@@ -348,8 +349,8 @@ let j = {
         icon: n
       },
       retries: 1,
-      oldFormErrors: !0,
-      rejectWithError: !0
+      oldFormErrors: true,
+      rejectWithError: true
     })
   },
   deleteEntry(e) {
@@ -367,7 +368,7 @@ let j = {
       channelId: i,
       messageId: o,
       intent: a = R.Ws.PLAY,
-      embedded: s = !1,
+      embedded: s = false,
       source: c,
       locationObject: u,
       analyticsLocations: d
@@ -379,7 +380,7 @@ let j = {
       applicationId: r,
       channelId: i,
       messageId: o
-    }), Promise.resolve(!0);
+    }), Promise.resolve(true);
     l.Z.dispatch({
       type: "ACTIVITY_JOIN_LOADING",
       applicationId: r
@@ -395,12 +396,12 @@ let j = {
         source: c,
         locationObject: u,
         analyticsLocations: d
-      }), !0
+      }), true
     } catch (e) {
       return l.Z.dispatch({
         type: "ACTIVITY_JOIN_FAILED",
         applicationId: r
-      }), !1
+      }), false
     }
   },
   joinWithSecret: L

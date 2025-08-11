@@ -1,25 +1,26 @@
 /** Chunk was on web.js **/
+/** chunk id: 644914, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   TE: () => y,
   h_: () => A
-}), n(388685);
-var r = n(73800),
-  i = n(392711),
-  o = n.n(i),
-  a = n(442837),
-  s = n(159300),
-  l = n(901461),
-  c = n(314897),
-  u = n(592125),
-  d = n(984933),
-  f = n(650774),
-  _ = n(430824),
-  p = n(819640),
-  h = n(375954),
-  m = n(496675),
-  g = n(709054),
-  E = n(981631);
+}), require("./388685.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk392711 = require("./392711.js"),
+  o = require.n(Chunk392711),
+  Chunk442837 = require("./442837.js"),
+  Chunk159300 = require("./159300.js"),
+  Chunk901461 = require("./901461.js"),
+  Chunk314897 = require("./314897.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk984933 = require("./984933.js"),
+  Chunk650774 = require("./650774.js"),
+  Chunk430824 = require("./430824.js"),
+  Chunk819640 = require("./819640.js"),
+  Chunk375954 = require("./375954.js"),
+  Chunk496675 = require("./496675.js"),
+  Chunk709054 = require("./709054.js"),
+  Chunk981631 = require("./981631.js");
 let b = 500;
 
 function y(e, t) {
@@ -33,7 +34,7 @@ function y(e, t) {
 
 function O(e) {
   return (0, a.e7)([d.ZP], () => {
-    let t = d.ZP.getChannels(null == e ? void 0 : e.id),
+    let t = d.ZP.getChannels(null == e ? true : e.id),
       n = t[d.Zb];
 
     function r(t) {
@@ -44,11 +45,11 @@ function O(e) {
 }
 
 function v(e) {
-  let t = (0, a.e7)([u.Z], () => u.Z.getChannel(null == e ? void 0 : e.systemChannelId)),
+  let t = (0, a.e7)([u.Z], () => u.Z.getChannel(null == e ? true : e.systemChannelId)),
     n = (0, a.Wu)([h.Z], () => null != t ? h.Z.getMessages(t.id).toArray() : []);
   return (0, a.e7)([f.Z], () => {
     var t;
-    let r = null != (t = f.Z.getMemberCount(null == e ? void 0 : e.id)) ? t : 0,
+    let r = null != (t = f.Z.getMemberCount(null == e ? true : e.id)) ? t : 0,
       i = n.some(e => e.type === E.uaV.USER_JOIN);
     return r > 1 || i
   }, [e, n])
@@ -56,8 +57,8 @@ function v(e) {
 
 function I(e) {
   let t = (0, a.e7)([p.Z], () => p.Z.hasLayers()),
-    n = (0, a.e7)([_.Z], () => _.Z.getGuild(null == e ? void 0 : e.id));
-  return (null == n ? void 0 : n.icon) != null && !t
+    n = (0, a.e7)([_.Z], () => _.Z.getGuild(null == e ? true : e.id));
+  return (null == n ? true : n.icon) != null && !t
 }
 
 function T(e) {

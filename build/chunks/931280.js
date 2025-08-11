@@ -1,17 +1,18 @@
 /** Chunk was on web.js **/
+/** chunk id: 931280, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-var r = n(621796),
-  i = n(172367),
-  o = n(292489),
-  a = n(458545),
-  s = n(685536),
-  l = n(302354);
+var Chunk621796 = require("./621796.js"),
+  Chunk172367 = require("./172367.js"),
+  Chunk292489 = require("./292489.js"),
+  Chunk458545 = require("./458545.js"),
+  Chunk685536 = require("./685536.js"),
+  Chunk302354 = require("./302354.js");
 
 function c(e) {
   var t = r.removeRange(e.getCurrentContent(), e.getSelection(), "forward");
   return i.push(e, t, "remove-range")
 }
-e.exports = function(e, t) {
+module.exports = function(e, t) {
   var n, r = e._latestEditorState,
     i = r.getSelection(),
     u = t.target;

@@ -1,18 +1,19 @@
 /** Chunk was on 1272 **/
-n.d(t, {
+/** chunk id: 468136, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => o
-}), n(388685);
-var r = n(544891),
-  i = n(626135),
-  l = n(186901),
-  a = n(981631);
+}), require("./388685.js");
+var Chunk544891 = require("./544891.js"),
+  Chunk626135 = require("./626135.js"),
+  Chunk186901 = require("./186901.js"),
+  Chunk981631 = require("./981631.js");
 let o = {
-  [a.Etm.GET_NETWORKING_CONFIG]: {
-    scope: l.lH,
-    handler: () => Promise.all([r.tn.get({
+  [Chunk981631.Etm.GET_NETWORKING_CONFIG]: {
+    scope: Chunk186901.lH,
+    handler: () => Promise.all([Chunk544891.tn.get({
       url: location.protocol + window.GLOBAL_ENV.NETWORKING_ENDPOINT,
       retries: 3,
-      rejectWithError: !1
+      rejectWithError: false
     }).then(e => {
       let {
         body: {
@@ -20,11 +21,11 @@ let o = {
         }
       } = e;
       return t
-    }), r.tn.post({
-      url: a.ANM.NETWORKING_TOKEN,
+    }), Chunk544891.tn.post({
+      url: Chunk981631.ANM.NETWORKING_TOKEN,
       retries: 3,
-      oldFormErrors: !0,
-      rejectWithError: !1
+      oldFormErrors: true,
+      rejectWithError: false
     }).then(e => {
       let {
         body: {
@@ -40,8 +41,8 @@ let o = {
       }
     })
   },
-  [a.Etm.NETWORKING_SYSTEM_METRICS]: {
-    scope: l.lH,
+  [Chunk981631.Etm.NETWORKING_SYSTEM_METRICS]: {
+    scope: Chunk186901.lH,
     handler(e) {
       let {
         socket: t,
@@ -50,8 +51,8 @@ let o = {
       n.application_id = t.application.id, i.default.track(a.rMx.NETWORKING_SYSTEM_METRICS, n)
     }
   },
-  [a.Etm.NETWORKING_PEER_METRICS]: {
-    scope: l.lH,
+  [Chunk981631.Etm.NETWORKING_PEER_METRICS]: {
+    scope: Chunk186901.lH,
     handler(e) {
       let {
         socket: t,
@@ -60,13 +61,13 @@ let o = {
       n.application_id = t.application.id, i.default.track(a.rMx.NETWORKING_PEER_METRICS, n)
     }
   },
-  [a.Etm.NETWORKING_CREATE_TOKEN]: {
-    scope: l.lH,
-    handler: () => r.tn.post({
-      url: a.ANM.NETWORKING_TOKEN,
+  [Chunk981631.Etm.NETWORKING_CREATE_TOKEN]: {
+    scope: Chunk186901.lH,
+    handler: () => Chunk544891.tn.post({
+      url: Chunk981631.ANM.NETWORKING_TOKEN,
       retries: 1,
-      oldFormErrors: !0,
-      rejectWithError: !1
+      oldFormErrors: true,
+      rejectWithError: false
     }).then(e => e.body)
   }
 }

@@ -1,5 +1,6 @@
 /** Chunk was on 89744 **/
-n.d(t, {
+/** chunk id: 756148, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   I: () => r
 });
 class r {
@@ -12,7 +13,7 @@ class r {
       return
     }
     let r = document.createElement("script");
-    r.src = "https://www.google.com/recaptcha/enterprise.js?render=".concat(this.getSiteKey(e)), r.id = "recaptcha-script-".concat(this.getSiteKey(e)), r.async = !0, r.defer = !0, document.body.appendChild(r), null != t && (r.onload = () => {
+    r.src = "https://www.google.com/recaptcha/enterprise.js?render=".concat(this.getSiteKey(e)), r.id = "recaptcha-script-".concat(this.getSiteKey(e)), r.async = true, r.defer = true, document.body.appendChild(r), null != t && (r.onload = () => {
       null == n || n("recaptcha-script-onload-callback"), t()
     })
   }

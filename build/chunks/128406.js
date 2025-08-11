@@ -1,7 +1,8 @@
 /** Chunk was on 34779 **/
-e.exports = {
-  container: "container__2692d " + n(384323).recentMentionsPopout,
-  widerInbox: "widerInbox__2692d " + n(384323).widerInbox,
+/** chunk id: 128406, original params: e,t,n (module,exports,require) **/
+module.exports = {
+  container: "container__2692d " + require("./384323.js").recentMentionsPopout,
+  widerInbox: "widerInbox__2692d " + require("./384323.js").widerInbox,
   spinner: "spinner__2692d",
   tutorial: "tutorial__2692d",
   tutorialIcon: "tutorialIcon__2692d",

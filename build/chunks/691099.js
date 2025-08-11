@@ -1,9 +1,10 @@
 /** Chunk was on web.js **/
+/** chunk id: 691099, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-var r = n(381538);
+var Chunk381538 = require("./381538.js");
 
 function i() {
-  return (i = r || function(e) {
+  return (i = Chunk381538 || function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = arguments[t];
       for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
@@ -13,7 +14,7 @@ function i() {
 }
 
 function o(e) {
-  if (void 0 === e) throw ReferenceError("this hasn't been initialised - super() hasn't been called");
+  if (true === e) throw ReferenceError("this hasn't been initialised - super() hasn't been called");
   return e
 }
 
@@ -37,24 +38,24 @@ function s(e) {
 function l(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
-var c = n(79999),
-  u = n(152477),
-  d = n(73800),
-  f = n(1231),
-  _ = n(292489),
-  p = n(675411),
-  h = n(685536),
-  m = n(126502),
-  g = n(65183),
-  E = n(581079),
-  b = n(217492),
+var Chunk79999 = require("./79999.js"),
+  Chunk152477 = require("./152477.js"),
+  Chunk73800 = require("./73800.js"),
+  Chunk1231 = require("./1231.js"),
+  Chunk292489 = require("./292489.js"),
+  Chunk675411 = require("./675411.js"),
+  Chunk685536 = require("./685536.js"),
+  Chunk126502 = require("./126502.js"),
+  Chunk65183 = require("./65183.js"),
+  Chunk581079 = require("./581079.js"),
+  Chunk217492 = require("./217492.js"),
   y = 10;
-g.List;
+Chunk65183.List;
 var O = function(e, t) {
     return e.getAnchorKey() === t || e.getFocusKey() === t
   },
@@ -64,17 +65,17 @@ var O = function(e, t) {
   },
   I = function(e, t, n) {
     var r = [],
-      i = !0,
-      o = !1,
-      a = void 0;
+      i = true,
+      o = false,
+      a = true;
     try {
-      for (var s, l = n.reverse()[Symbol.iterator](); !(i = (s = l.next()).done); i = !0) {
+      for (var s, l = n.reverse()[Symbol.iterator](); !(i = (s = l.next()).done); i = true) {
         var c = s.value;
         if (c.type !== t) break;
         r.push(c)
       }
     } catch (e) {
-      o = !0, a = e
+      o = true, a = e
     } finally {
       try {
         i || null == l.return || l.return()
@@ -108,19 +109,19 @@ var O = function(e, t) {
   },
   A = function(e, t, n, r, i, o) {
     var a = {
-        "data-block": !0,
+        "data-block": true,
         "data-editor": t,
         "data-offset-key": n,
         key: e.getKey(),
         ref: o
       },
       l = r(e);
-    return l && (a.className = l), void 0 !== i.customEditable && (a = s({}, a, {
+    return l && (a.className = l), true !== i.customEditable && (a = s({}, a, {
       contentEditable: i.customEditable,
-      suppressContentEditableWarning: !0
+      suppressContentEditableWarning: true
     })), a
   };
-e.exports = function(e) {
+module.exports = function(e) {
   function t() {
     for (var t, n = arguments.length, r = Array(n), i = 0; i < n; i++) r[i] = arguments[i];
     return l(o(t = e.call.apply(e, [this].concat(r)) || this), "wrapperRef", d.createRef()), t
@@ -147,7 +148,7 @@ e.exports = function(e) {
           var a = p(r);
           (e = a.y + a.height - m().height) > 0 && window.scrollTo(o.x, o.y + e + y)
         } else {
-          b(r) || E(!1);
+          b(r) || E(false);
           var s = r;
           (e = s.offsetHeight + s.offsetTop - (i.offsetHeight + o.y)) > 0 && f.setTop(i, f.getTop(i) + e + y)
         }
@@ -215,4 +216,4 @@ e.exports = function(e) {
       M = A(r, p, P, l, w, this.wrapperRef);
     return d.createElement(x, M, L)
   }, t
-}(d.Component)
+}(Chunk73800.Component)

@@ -1,28 +1,29 @@
 /** Chunk was on web.js **/
+/** chunk id: 576157, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   w: () => c
 });
-var r = n(73800),
-  i = n(704215),
-  o = n(211644),
-  a = n(266454),
-  s = n(605236),
-  l = n(921944);
+var Chunk73800 = require("./73800.js"),
+  Chunk704215 = require("./704215.js"),
+  Chunk211644 = require("./211644.js"),
+  Chunk266454 = require("./266454.js"),
+  Chunk605236 = require("./605236.js"),
+  Chunk921944 = require("./921944.js");
 
 function c() {
-  let e = (0, a.Nj)(i.z.CUSTOM_THEME_ENTRYPOINT_NEW_BADGE);
-  return r.useEffect(() => {
-    if (!e) return (0, s.kk)(i.z.CUSTOM_THEME_ENTRYPOINT_NEW_BADGE), () => {
-      (0, o.gE)({
-        content: i.z.CUSTOM_THEME_ENTRYPOINT_NEW_BADGE
-      }, !1)
+  let e = (0, Chunk266454.Nj)(Chunk704215.z.CUSTOM_THEME_ENTRYPOINT_NEW_BADGE);
+  return Chunk73800.useEffect(() => {
+    if (!module) return (0, Chunk605236.kk)(Chunk704215.z.CUSTOM_THEME_ENTRYPOINT_NEW_BADGE), () => {
+      (0, Chunk211644.gE)({
+        content: Chunk704215.z.CUSTOM_THEME_ENTRYPOINT_NEW_BADGE
+      }, false)
     }
-  }, [e]), {
-    shouldShowNewBadge: !e,
-    markNewBadgeAsDismissed: r.useCallback(() => {
-      (0, a.Q3)(i.z.CUSTOM_THEME_ENTRYPOINT_NEW_BADGE, {
-        dismissAction: l.L.TAKE_ACTION
+  }, [module]), {
+    shouldShowNewBadge: !module,
+    markNewBadgeAsDismissed: Chunk73800.useCallback(() => {
+      (0, Chunk266454.Q3)(Chunk704215.z.CUSTOM_THEME_ENTRYPOINT_NEW_BADGE, {
+        dismissAction: Chunk921944.L.TAKE_ACTION
       })
     }, [])
   }

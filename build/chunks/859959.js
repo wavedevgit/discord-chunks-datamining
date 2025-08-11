@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 859959, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   breadcrumbs: "breadcrumbs__0f692",
   breadcrumbWrapper: "breadcrumbWrapper__0f692",
   breadcrumbFinalWrapper: "breadcrumbFinalWrapper__0f692",

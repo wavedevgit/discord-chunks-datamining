@@ -1,23 +1,24 @@
 /** Chunk was on web.js **/
+/** chunk id: 175255, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => u
-}), n(388685);
-var r = n(147913),
-  i = n(336197),
-  o = n(341298),
-  a = n(558921),
-  s = n(981631);
+}), require("./388685.js");
+var Chunk147913 = require("./147913.js"),
+  Chunk336197 = require("./336197.js"),
+  Chunk341298 = require("./341298.js"),
+  Chunk558921 = require("./558921.js"),
+  Chunk981631 = require("./981631.js");
 
 function l(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
-class c extends r.Z {
+class c extends Chunk147913.Z {
   async handleChannelCreate(e) {
     let {
       channel: t

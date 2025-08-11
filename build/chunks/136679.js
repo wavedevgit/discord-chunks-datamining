@@ -1,2 +1,0 @@
-/** Chunk was on 61563 **/
-e.exports = JSON.parse('{"+tTysr":"Ajouter une couleur","8ZcEfn":"Couleurs","xlXkaG":"Intensit\xe9 de la couleur","dZkwg4":"Direction du d\xe9grad\xe9","AsmU8/":"Personnalise ton th\xe8me","xRdYAQ":"Les th\xe8mes personnalis\xe9s [b\xeata] ne sont pas disponibles sur mobile.","2hAz8f":"Personnalise ton th\xe8me","23QUzs":"Nouveau\xa0: les th\xe8mes personnalis\xe9s\xa0!","TRCE4u":"Exprime ton humeur avec une infinit\xe9 de combinaisons de couleurs. Essaie \xe7a d\xe8s maintenant, uniquement avec Nitro."}')

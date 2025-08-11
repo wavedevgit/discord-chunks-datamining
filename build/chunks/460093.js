@@ -1,22 +1,23 @@
 /** Chunk was on web.js **/
+/** chunk id: 460093, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => p
-}), n(388685);
-var r = n(481060),
-  i = n(147913),
-  o = n(626135),
-  a = n(510839),
-  s = n(591472),
-  l = n(981631),
-  c = n(388032);
+}), require("./388685.js");
+var Chunk481060 = require("./481060.js"),
+  Chunk147913 = require("./147913.js"),
+  Chunk626135 = require("./626135.js"),
+  Chunk510839 = require("./510839.js"),
+  Chunk591472 = require("./591472.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk388032 = require("./388032.jsx");
 
 function u(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -27,7 +28,7 @@ function d(e) {
   } = e, r = n.id;
   if (null == r || null == t) return;
   let i = s.Z.getConnectedFrame();
-  (null == i ? void 0 : i.applicationId) === r && ((0, a.xT)({
+  (null == i ? true : i.applicationId) === r && ((0, a.xT)({
     applicationId: r
   }), t.code !== l.$VG.CLOSE_NORMAL && (o.default.track(l.rMx.ACTIVITY_CLOSED_RPC_ERROR, {
     rpc_close_code: t.code,
@@ -45,7 +46,7 @@ function f(e) {
   }), ": ").concat(n);
   (0, r.showToast)((0, r.createToast)(i, r.ToastType.FAILURE))
 }
-class _ extends i.Z {
+class _ extends Chunk147913.Z {
   constructor(...e) {
     super(...e), u(this, "actions", {
       RPC_APP_DISCONNECTED: e => {

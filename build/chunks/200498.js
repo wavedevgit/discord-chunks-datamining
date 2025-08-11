@@ -1,32 +1,33 @@
 /** Chunk was on web.js **/
+/** chunk id: 200498, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   B: () => m,
   Os: () => p,
   _L: () => _,
   jU: () => g,
   nG: () => h
 });
-var r = n(149765),
-  i = n(442837),
-  o = n(41776);
-n(601964), n(314897);
-var a = n(592125),
-  s = n(430824),
-  l = n(496675),
-  c = n(700785),
-  u = n(146085),
-  d = n(427679),
-  f = n(981631);
+var Chunk149765 = require("./149765.js"),
+  Chunk442837 = require("./442837.js"),
+  Chunk41776 = require("./41776.js");
+require("./601964.js"), require("./314897.js");
+var Chunk592125 = require("./592125.js"),
+  Chunk430824 = require("./430824.js"),
+  Chunk496675 = require("./496675.js"),
+  Chunk700785 = require("./700785.js"),
+  Chunk146085 = require("./146085.js"),
+  Chunk427679 = require("./427679.js"),
+  Chunk981631 = require("./981631.js");
 
 function _(e, t, n) {
   var i, o;
-  let a = null == n ? void 0 : n.permissionOverwrites[e];
+  let a = null == n ? true : n.permissionOverwrites[e];
   return {
     id: e,
     type: t,
-    deny: null != (i = null == a ? void 0 : a.deny) ? i : c.Hn,
-    allow: r.Od(null != (o = null == a ? void 0 : a.allow) ? o : c.Hn, u.yP)
+    deny: null != (i = null == a ? true : a.deny) ? i : c.Hn,
+    allow: r.Od(null != (o = null == a ? true : a.allow) ? o : c.Hn, u.yP)
   }
 }
 
@@ -41,8 +42,8 @@ function p(e) {
 function h(e) {
   return (0, i.e7)([l.Z, s.Z, a.Z], () => {
     let t = a.Z.getChannel(e),
-      n = s.Z.getGuild(null == t ? void 0 : t.getGuildId());
-    return !!(l.Z.can(f.Plq.ADMINISTRATOR, n) || l.Z.can(f.Plq.MANAGE_ROLES, t, void 0, void 0, !0) || l.Z.can(u.N, t))
+      n = s.Z.getGuild(null == t ? true : t.getGuildId());
+    return !!(l.Z.can(f.Plq.ADMINISTRATOR, n) || l.Z.can(f.Plq.MANAGE_ROLES, t, true, true, true) || l.Z.can(u.N, t))
   }, [e])
 }
 

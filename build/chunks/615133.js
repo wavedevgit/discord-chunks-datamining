@@ -1,5 +1,6 @@
 /** Chunk was on 12097 **/
-e.exports = {
+/** chunk id: 615133, original params: e,t,n (module,exports,require) **/
+module.exports = {
   inviteContainer: "inviteContainer__23437",
   inviterTooltipContainer: "inviterTooltipContainer__23437",
   linkedChannelContainer: "linkedChannelContainer__23437",

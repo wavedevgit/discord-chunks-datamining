@@ -1,9 +1,10 @@
 /** Chunk was on web.js **/
+/** chunk id: 788737, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-var r = n(381538);
+var Chunk381538 = require("./381538.js");
 
 function i() {
-  return (i = r || function(e) {
+  return (i = Chunk381538 || function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = arguments[t];
       for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
@@ -26,54 +27,54 @@ function o(e) {
 }
 
 function a(e) {
-  if (void 0 === e) throw ReferenceError("this hasn't been initialised - super() hasn't been called");
+  if (true === e) throw ReferenceError("this hasn't been initialised - super() hasn't been called");
   return e
 }
 
 function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
 function l(e, t) {
   e.prototype = Object.create(t.prototype), e.prototype.constructor = e, e.__proto__ = t
 }
-var c = n(687655),
-  u = n(101166),
-  d = n(66115),
-  f = n(424599),
-  _ = n(209930),
-  p = n(938054),
-  h = n(398891),
-  m = n(112046),
-  g = n(484216),
-  E = n(172367),
-  b = n(73800),
-  y = n(1231),
-  O = n(292489),
-  v = n(169774),
-  I = n(606166),
-  T = n(551558),
-  S = n(598335),
-  A = n(685536),
-  N = n(223138),
-  C = n(581079),
-  R = n(217492),
-  P = n(467159),
-  w = v.isBrowser("IE"),
+var Chunk687655 = require("./687655.js"),
+  Chunk101166 = require("./101166.js"),
+  Chunk66115 = require("./66115.js"),
+  Chunk424599 = require("./424599.js"),
+  Chunk209930 = require("./209930.js"),
+  Chunk938054 = require("./938054.js"),
+  Chunk398891 = require("./398891.js"),
+  Chunk112046 = require("./112046.js"),
+  Chunk484216 = require("./484216.js"),
+  Chunk172367 = require("./172367.js"),
+  Chunk73800 = require("./73800.js"),
+  Chunk1231 = require("./1231.js"),
+  Chunk292489 = require("./292489.js"),
+  Chunk169774 = require("./169774.js"),
+  Chunk606166 = require("./606166.js"),
+  Chunk551558 = require("./551558.js"),
+  Chunk598335 = require("./598335.js"),
+  Chunk685536 = require("./685536.js"),
+  Chunk223138 = require("./223138.js"),
+  Chunk581079 = require("./581079.js"),
+  Chunk217492 = require("./217492.js"),
+  Chunk467159 = require("./467159.js"),
+  w = Chunk169774.isBrowser("IE"),
   D = !w,
   L = {
-    edit: p,
-    composite: d,
-    drag: _,
+    edit: Chunk938054,
+    composite: Chunk66115,
+    drag: Chunk209930,
     cut: null,
     render: null
   },
-  x = !1,
+  x = false,
   M = function(e) {
     function t() {
       return e.apply(this, arguments) || this
@@ -88,13 +89,13 @@ var c = n(687655),
       this._update()
     }, n._update = function() {
       var e = this.props.editor;
-      e._latestEditorState = this.props.editorState, e._blockSelectEvents = !0
+      e._latestEditorState = this.props.editorState, e._blockSelectEvents = true
     }, t
-  }(b.Component),
+  }(Chunk73800.Component),
   k = function(e) {
     function t(t) {
       var n;
-      return s(a(n = e.call(this, t) || this), "_blockSelectEvents", void 0), s(a(n), "_clipboard", void 0), s(a(n), "_handler", void 0), s(a(n), "_dragCount", void 0), s(a(n), "_internalDrag", void 0), s(a(n), "_editorKey", void 0), s(a(n), "_placeholderAccessibilityID", void 0), s(a(n), "_latestEditorState", void 0), s(a(n), "_latestCommittedEditorState", void 0), s(a(n), "_pendingStateFromBeforeInput", void 0), s(a(n), "_onBeforeInput", void 0), s(a(n), "_onBlur", void 0), s(a(n), "_onCharacterData", void 0), s(a(n), "_onCompositionEnd", void 0), s(a(n), "_onCompositionStart", void 0), s(a(n), "_onCopy", void 0), s(a(n), "_onCut", void 0), s(a(n), "_onDragEnd", void 0), s(a(n), "_onDragOver", void 0), s(a(n), "_onDragStart", void 0), s(a(n), "_onDrop", void 0), s(a(n), "_onInput", void 0), s(a(n), "_onFocus", void 0), s(a(n), "_onKeyDown", void 0), s(a(n), "_onKeyPress", void 0), s(a(n), "_onKeyUp", void 0), s(a(n), "_onMouseDown", void 0), s(a(n), "_onMouseUp", void 0), s(a(n), "_onPaste", void 0), s(a(n), "_onSelect", void 0), s(a(n), "editor", void 0), s(a(n), "editorContainer", void 0), s(a(n), "focus", void 0), s(a(n), "blur", void 0), s(a(n), "setMode", void 0), s(a(n), "exitCurrentMode", void 0), s(a(n), "restoreEditorDOM", void 0), s(a(n), "setClipboard", void 0), s(a(n), "getClipboard", void 0), s(a(n), "getEditorKey", void 0), s(a(n), "update", void 0), s(a(n), "onDragEnter", void 0), s(a(n), "onDragLeave", void 0), s(a(n), "_handleEditorContainerRef", function(e) {
+      return s(a(n = e.call(this, t) || this), "_blockSelectEvents", true), s(a(n), "_clipboard", true), s(a(n), "_handler", true), s(a(n), "_dragCount", true), s(a(n), "_internalDrag", true), s(a(n), "_editorKey", true), s(a(n), "_placeholderAccessibilityID", true), s(a(n), "_latestEditorState", true), s(a(n), "_latestCommittedEditorState", true), s(a(n), "_pendingStateFromBeforeInput", true), s(a(n), "_onBeforeInput", true), s(a(n), "_onBlur", true), s(a(n), "_onCharacterData", true), s(a(n), "_onCompositionEnd", true), s(a(n), "_onCompositionStart", true), s(a(n), "_onCopy", true), s(a(n), "_onCut", true), s(a(n), "_onDragEnd", true), s(a(n), "_onDragOver", true), s(a(n), "_onDragStart", true), s(a(n), "_onDrop", true), s(a(n), "_onInput", true), s(a(n), "_onFocus", true), s(a(n), "_onKeyDown", true), s(a(n), "_onKeyPress", true), s(a(n), "_onKeyUp", true), s(a(n), "_onMouseDown", true), s(a(n), "_onMouseUp", true), s(a(n), "_onPaste", true), s(a(n), "_onSelect", true), s(a(n), "editor", true), s(a(n), "editorContainer", true), s(a(n), "focus", true), s(a(n), "blur", true), s(a(n), "setMode", true), s(a(n), "exitCurrentMode", true), s(a(n), "restoreEditorDOM", true), s(a(n), "setClipboard", true), s(a(n), "getClipboard", true), s(a(n), "getEditorKey", true), s(a(n), "update", true), s(a(n), "onDragEnter", true), s(a(n), "onDragLeave", true), s(a(n), "_handleEditorContainerRef", function(e) {
         n.editorContainer = e, n.editor = null !== e ? e.firstChild : null
       }), s(a(n), "focus", function(e) {
         var t = n.props.editorState,
@@ -105,11 +106,11 @@ var c = n(687655),
             a = e || A(o),
             s = a.x,
             l = a.y;
-          R(i) || C(!1), i.focus(), o === window ? window.scrollTo(s, l) : y.setTop(o, l), r || n.update(E.forceSelection(t, t.getSelection()))
+          R(i) || C(false), i.focus(), o === window ? window.scrollTo(s, l) : y.setTop(o, l), r || n.update(E.forceSelection(t, t.getSelection()))
         }
       }), s(a(n), "blur", function() {
         var e = n.editor;
-        e && (R(e) || C(!1), e.blur())
+        e && (R(e) || C(false), e.blur())
       }), s(a(n), "setMode", function(e) {
         var t = n.props,
           r = t.onPaste,
@@ -137,7 +138,7 @@ var c = n(687655),
         n._dragCount++
       }), s(a(n), "onDragLeave", function() {
         n._dragCount--, 0 === n._dragCount && n.exitCurrentMode()
-      }), n._blockSelectEvents = !1, n._clipboard = null, n._handler = null, n._dragCount = 0, n._editorKey = t.editorKey || T(), n._placeholderAccessibilityID = "placeholder-" + n._editorKey, n._latestEditorState = t.editorState, n._latestCommittedEditorState = t.editorState, n._onBeforeInput = n._buildHandler("onBeforeInput"), n._onBlur = n._buildHandler("onBlur"), n._onCharacterData = n._buildHandler("onCharacterData"), n._onCompositionEnd = n._buildHandler("onCompositionEnd"), n._onCompositionStart = n._buildHandler("onCompositionStart"), n._onCopy = n._buildHandler("onCopy"), n._onCut = n._buildHandler("onCut"), n._onDragEnd = n._buildHandler("onDragEnd"), n._onDragOver = n._buildHandler("onDragOver"), n._onDragStart = n._buildHandler("onDragStart"), n._onDrop = n._buildHandler("onDrop"), n._onInput = n._buildHandler("onInput"), n._onFocus = n._buildHandler("onFocus"), n._onKeyDown = n._buildHandler("onKeyDown"), n._onKeyPress = n._buildHandler("onKeyPress"), n._onKeyUp = n._buildHandler("onKeyUp"), n._onMouseDown = n._buildHandler("onMouseDown"), n._onMouseUp = n._buildHandler("onMouseUp"), n._onPaste = n._buildHandler("onPaste"), n._onSelect = n._buildHandler("onSelect"), n.getEditorKey = function() {
+      }), n._blockSelectEvents = false, n._clipboard = null, n._handler = null, n._dragCount = 0, n._editorKey = t.editorKey || T(), n._placeholderAccessibilityID = "placeholder-" + n._editorKey, n._latestEditorState = t.editorState, n._latestCommittedEditorState = t.editorState, n._onBeforeInput = n._buildHandler("onBeforeInput"), n._onBlur = n._buildHandler("onBlur"), n._onCharacterData = n._buildHandler("onCharacterData"), n._onCompositionEnd = n._buildHandler("onCompositionEnd"), n._onCompositionStart = n._buildHandler("onCompositionStart"), n._onCopy = n._buildHandler("onCopy"), n._onCut = n._buildHandler("onCut"), n._onDragEnd = n._buildHandler("onDragEnd"), n._onDragOver = n._buildHandler("onDragOver"), n._onDragStart = n._buildHandler("onDragStart"), n._onDrop = n._buildHandler("onDrop"), n._onInput = n._buildHandler("onInput"), n._onFocus = n._buildHandler("onFocus"), n._onKeyDown = n._buildHandler("onKeyDown"), n._onKeyPress = n._buildHandler("onKeyPress"), n._onKeyUp = n._buildHandler("onKeyUp"), n._onMouseDown = n._buildHandler("onMouseDown"), n._onMouseUp = n._buildHandler("onMouseUp"), n._onPaste = n._buildHandler("onPaste"), n._onSelect = n._buildHandler("onSelect"), n.getEditorKey = function() {
         return n._editorKey
       }, n.state = {
         contentsKey: 0
@@ -181,7 +182,7 @@ var c = n(687655),
         _ = e.textAlignment,
         p = e.textDirectionality,
         h = I({
-          "DraftEditor/root": !0,
+          "DraftEditor/root": true,
           "DraftEditor/alignLeft": "left" === _,
           "DraftEditor/alignRight": "right" === _,
           "DraftEditor/alignCenter": "center" === _
@@ -226,7 +227,7 @@ var c = n(687655),
         autoCorrect: this.props.autoCorrect,
         className: I({
           notranslate: !d,
-          "public/DraftEditor/content": !0
+          "public/DraftEditor/content": true
         }),
         contentEditable: !d,
         "data-testid": this.props.webDriverTestID,
@@ -254,7 +255,7 @@ var c = n(687655),
         role: d ? null : g,
         spellCheck: D && this.props.spellCheck,
         style: m,
-        suppressContentEditableWarning: !0,
+        suppressContentEditableWarning: true,
         tabIndex: this.props.tabIndex
       }, b.createElement(M, {
         editor: this,
@@ -263,21 +264,21 @@ var c = n(687655),
         key: "contents" + this.state.contentsKey
       })))))
     }, r.componentDidMount = function() {
-      this._blockSelectEvents = !1, !x && N("draft_ods_enabled") && (x = !0, g.initODS()), this.setMode("edit"), w && (this.editor ? this.editor.ownerDocument.execCommand("AutoUrlDetect", !1, !1) : n.g.execCommand("AutoUrlDetect", !1, !1))
+      this._blockSelectEvents = false, !x && N("draft_ods_enabled") && (x = true, g.initODS()), this.setMode("edit"), w && (this.editor ? this.editor.ownerDocument.execCommand("AutoUrlDetect", false, false) : n.g.execCommand("AutoUrlDetect", false, false))
     }, r.componentDidUpdate = function() {
-      this._blockSelectEvents = !1, this._latestEditorState = this.props.editorState, this._latestCommittedEditorState = this.props.editorState
+      this._blockSelectEvents = false, this._latestEditorState = this.props.editorState, this._latestCommittedEditorState = this.props.editorState
     }, t
-  }(b.Component);
+  }(Chunk73800.Component);
 s(k, "defaultProps", {
-  blockRenderMap: c,
+  blockRenderMap: Chunk687655,
   blockRendererFn: function() {
     return null
   },
   blockStyleFn: function() {
     return ""
   },
-  keyBindingFn: S,
-  readOnly: !1,
-  spellCheck: !1,
-  stripPastedStyles: !1
-}), e.exports = k
+  keyBindingFn: Chunk598335,
+  readOnly: false,
+  spellCheck: false,
+  stripPastedStyles: false
+}), module.exports = k

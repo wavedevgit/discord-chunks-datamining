@@ -1,13 +1,14 @@
 /** Chunk was on web.js **/
+/** chunk id: 359282, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 
 function r(e, t) {
   e.prototype = Object.create(t.prototype), e.prototype.constructor = e, e.__proto__ = t
 }
-var i = n(65183),
-  o = i.Map,
-  a = i.OrderedSet,
-  s = i.Record,
+var Chunk65183 = require("./65183.js"),
+  o = Chunk65183.Map,
+  a = Chunk65183.OrderedSet,
+  s = Chunk65183.Record,
   l = a(),
   c = {
     style: l,
@@ -50,4 +51,4 @@ var i = n(65183),
   f = o([
     [o(c), d]
   ]);
-u.EMPTY = d, e.exports = u
+u.EMPTY = d, module.exports = u

@@ -1,0 +1,98 @@
+/** Chunk was on 1272 **/
+/** chunk id: 120998, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
+  Z: () => p
+}), require("./388685.js");
+var r, Chunk255367 = require("./255367.js"),
+  Chunk73800 = require("./73800.js"),
+  Chunk392711 = require("./392711.js"),
+  o = require.n(Chunk392711),
+  Chunk302221 = require("./302221.js"),
+  Chunk33963 = require("./33963.js");
+
+function u(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+class d extends(r = Chunk73800.PureComponent) {
+  onDataUpdate(e, t) {
+    let {
+      maxValue: n,
+      data: r,
+      animate: i
+    } = this.props, l = null == e || e.data !== t.data && !o().isEqual(e.data, t.data);
+    if (l && (this.dataChangedAt = performance.now(), this.maxValue = null != n ? n : Math.max(...r)), l || null == e || !e.animate && i || e.color !== this.props.color) {
+      let e = s.oo(this.props.color);
+      this.fillColor = "rgba(".concat(e.r, ", ").concat(e.g, ", ").concat(e.b, ", 0.5)"), window.cancelAnimationFrame(this.animationFrameRequestId), this.animationFrameRequestId = window.requestAnimationFrame(this.updateAnimation)
+    }
+  }
+  componentDidMount() {
+    this.animationFrameRequestId = 0, this.onDataUpdate(null, this.props)
+  }
+  componentDidUpdate(e) {
+    this.onDataUpdate(e, this.props)
+  }
+  componentWillUnmount() {
+    window.cancelAnimationFrame(this.animationFrameRequestId), this.animationFrameRequestId = 0
+  }
+  render() {
+    let {
+      className: e,
+      pixelWidth: t,
+      pixelHeight: n
+    } = this.props;
+    return <div className={module}><canvas ref={this.canvas} className={Chunk33963.canvas} width={exports} height={require} /></div>
+  }
+  constructor(...e) {
+    super(...e), u(this, "dataChangedAt", true), u(this, "fillColor", true), u(this, "maxValue", true), u(this, "canvas", l.createRef()), u(this, "animationFrameRequestId", true), u(this, "updateAnimation", e => {
+      let t, n, r = this.canvas.current;
+      if (null == r) return;
+      let {
+        data: i,
+        updateInterval: l,
+        color: a,
+        numUpdatesToShow: o,
+        lineWidth: c,
+        animate: u,
+        gradientStopColor: d
+      } = this.props;
+      if (i.length < 2) return;
+      let p = Math.max(Math.min((e - this.dataChangedAt) / l, 1), 0),
+        f = r.getContext("2d"),
+        h = this.maxValue;
+      f.strokeStyle = a, f.lineWidth = c;
+      let g = r.height - f.lineWidth,
+        m = f.createLinearGradient(0, 0, 0, g);
+      if (null != d) m.addColorStop(0, d);
+      else {
+        let {
+          r: e,
+          g: t,
+          b: n
+        } = s.oo(a);
+        m.addColorStop(0, "rgba(".concat(e, ", ").concat(t, ", ").concat(n, ", 0)"))
+      }
+      m.addColorStop(1, this.fillColor), f.fillStyle = m;
+      let b = i.length >= o ? o : i.length;
+      f.setTransform(1, 0, 0, false, 0, r.height), f.clearRect(0, 0, r.width, r.height), f.translate(0, .5 * f.lineWidth);
+      let _ = Math.floor(r.width / (b - 3)),
+        O = .5 * _;
+      f.translate(_ - _ * p, 0), f.beginPath();
+      let E = -_;
+      i.forEach((e, r) => {
+        t = {
+          x: E,
+          y: g * e / h
+        }, 0 === r ? f.moveTo(t.x, t.y) : f.bezierCurveTo(n.x + O, n.y, t.x - O, t.y, t.x, t.y), n = t, E += _
+      }), f.stroke(), f.lineTo(E - _, 0), f.lineTo(0, 0), f.fill(), u && p < 1 && (this.animationFrameRequestId = window.requestAnimationFrame(this.updateAnimation))
+    })
+  }
+}
+u(d, "defaultProps", {
+  animate: true
+});
+let p = d

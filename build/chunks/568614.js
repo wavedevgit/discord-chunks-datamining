@@ -1,5 +1,6 @@
 /** Chunk was on 58121 **/
-e.exports = {
+/** chunk id: 568614, original params: e,t,n (module,exports,require) **/
+module.exports = {
   upsellHeader: "upsellHeader_d9161f",
   islands: "islands_d9161f",
   mainIsland: "mainIsland_d9161f",

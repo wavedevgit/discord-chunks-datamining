@@ -1,19 +1,20 @@
 /** Chunk was on web.js **/
+/** chunk id: 563089, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   ZP: () => a
 });
-var r = n(81825);
+var Chunk81825 = require("./81825.js");
 
 function i(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
-class o extends r.Z {
+class o extends Chunk81825.Z {
   static createFromServer(e) {
     return new o({
       userId: e.user_id,
@@ -40,7 +41,7 @@ class o extends r.Z {
     return this.expectedChargeTime > new Date().toISOString()
   }
   constructor(e) {
-    super(), i(this, "userId", void 0), i(this, "subscriptionId", void 0), i(this, "oldCurrency", void 0), i(this, "oldPrice", void 0), i(this, "newCurrency", void 0), i(this, "newPrice", void 0), i(this, "priceChangeMode", void 0), i(this, "expectedChargeTime", void 0), i(this, "priceChangeId", void 0), this.userId = e.userId, this.subscriptionId = e.subscriptionId, this.oldCurrency = e.oldCurrency, this.oldPrice = e.oldPrice, this.newCurrency = e.newCurrency, this.newPrice = e.newPrice, this.priceChangeMode = e.priceChangeMode, this.expectedChargeTime = e.expectedChargeTime, this.priceChangeId = e.priceChangeId
+    super(), i(this, "userId", true), i(this, "subscriptionId", true), i(this, "oldCurrency", true), i(this, "oldPrice", true), i(this, "newCurrency", true), i(this, "newPrice", true), i(this, "priceChangeMode", true), i(this, "expectedChargeTime", true), i(this, "priceChangeId", true), this.userId = e.userId, this.subscriptionId = e.subscriptionId, this.oldCurrency = e.oldCurrency, this.oldPrice = e.oldPrice, this.newCurrency = e.newCurrency, this.newPrice = e.newPrice, this.priceChangeMode = e.priceChangeMode, this.expectedChargeTime = e.expectedChargeTime, this.priceChangeId = e.priceChangeId
   }
 }
 let a = o

@@ -1,24 +1,25 @@
 /** Chunk was on web.js **/
+/** chunk id: 600040, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-var r, i = n(264344),
-  o = n.n(i),
-  a = n(345546);
-window.AudioContext = null != (r = window.AudioContext) ? r : window.webkitAudioContext, null != window.RTCPeerConnection && "Chrome" === o().name && 52 > (0, a.n)() && ["createOffer", "createAnswer"].forEach(e => {
+var r, Chunk264344 = require("./264344.js"),
+  o = require.n(Chunk264344),
+  Chunk345546 = require("./345546.js");
+window.AudioContext = null != (r = window.AudioContext) ? r : window.webkitAudioContext, null != window.RTCPeerConnection && "Chrome" === o().name && 52 > (0, Chunk345546.n)() && ["createOffer", "createAnswer"].forEach(e => {
   let t = RTCPeerConnection.prototype[e];
   RTCPeerConnection.prototype[e] = function() {
     for (var e = arguments.length, n = Array(e), r = 0; r < e; r++) n[r] = arguments[r];
     let i = this;
     if (n.length < 1 || 1 === n.length && "object" == typeof n[0]) {
-      let e = 1 === n.length ? n[0] : void 0;
+      let e = 1 === n.length ? n[0] : true;
       return null != e && (e = {
         mandatory: {
-          OfferToReceiveAudio: e.offerToReceiveAudio || !1,
-          OfferToReceiveVideo: e.offerToReceiveVideo || !1
+          OfferToReceiveAudio: e.offerToReceiveAudio || false,
+          OfferToReceiveVideo: e.offerToReceiveVideo || false
         },
         optional: [{
-          VoiceActivityDetection: e.voiceActivityDetection || !1
+          VoiceActivityDetection: e.voiceActivityDetection || false
         }, {
-          IceRestart: e.iceRestart || !1
+          IceRestart: e.iceRestart || false
         }]
       }), new Promise((n, r) => t.apply(i, [n, r, e]))
     }

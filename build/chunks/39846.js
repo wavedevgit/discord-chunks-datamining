@@ -1,35 +1,36 @@
 /** Chunk was on web.js **/
+/** chunk id: 39846, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => O
-}), n(388685);
-var r = n(147913),
-  i = n(751571),
-  o = n(88751),
-  a = n(590415),
-  s = n(189786),
-  l = n(314897),
-  c = n(592125),
-  u = n(131951),
-  d = n(19780),
-  f = n(876506),
-  _ = n(981631),
-  p = n(761274);
+}), require("./388685.js");
+var Chunk147913 = require("./147913.js"),
+  Chunk751571 = require("./751571.js"),
+  Chunk88751 = require("./88751.js"),
+  Chunk590415 = require("./590415.js"),
+  Chunk189786 = require("./189786.js"),
+  Chunk314897 = require("./314897.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk131951 = require("./131951.js"),
+  Chunk19780 = require("./19780.js"),
+  Chunk876506 = require("./876506.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk761274 = require("./761274.js");
 
 function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 let m = null;
 
 function g() {
-  i.Z.requestPermission(p.Eu.AUDIO).then(e => {
-    e && (0, f.Z)(!0)
-  }), u.Z.getMode() === _.pM4.PUSH_TO_TALK && i.Z.requestPermission(p.Eu.INPUT_MONITORING)
+  Chunk751571.Z.requestPermission(Chunk761274.Eu.AUDIO).then(e => {
+    e && (0, f.Z)(true)
+  }), Chunk131951.Z.getMode() === Chunk981631.pM4.PUSH_TO_TALK && Chunk751571.Z.requestPermission(Chunk761274.Eu.INPUT_MONITORING)
 }
 
 function E(e, t) {
@@ -40,7 +41,7 @@ function E(e, t) {
 function b(e) {
   return (0, a.gf)(e) === a.xO.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK
 }
-class y extends r.Z {
+class y extends Chunk147913.Z {
   handleVoiceChannelSelect(e) {
     let {
       channelId: t

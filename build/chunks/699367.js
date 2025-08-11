@@ -1,22 +1,23 @@
 /** Chunk was on web.js **/
+/** chunk id: 699367, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-var r = n(815329),
-  i = n(706165),
+var Chunk815329 = require("./815329.js"),
+  Chunk706165 = require("./706165.js"),
   o = {
     __proto__: null,
-    "[[Configurable]]": !0,
-    "[[Enumerable]]": !0,
-    "[[Get]]": !0,
-    "[[Set]]": !0,
-    "[[Value]]": !0,
-    "[[Writable]]": !0
+    "[[Configurable]]": true,
+    "[[Enumerable]]": true,
+    "[[Get]]": true,
+    "[[Set]]": true,
+    "[[Value]]": true,
+    "[[Writable]]": true
   };
-e.exports = function(e) {
-  if (!e || "object" != typeof e) return !1;
+module.exports = function(e) {
+  if (!e || "object" != typeof e) returnfalse;
   for (var t in e)
-    if (i(e, t) && !o[t]) return !1;
+    if (i(e, t) && !o[t]) returnfalse;
   var n = i(e, "[[Value]]") || i(e, "[[Writable]]"),
     a = i(e, "[[Get]]") || i(e, "[[Set]]");
   if (n && a) throw new r("Property Descriptors may not be both accessor and data descriptors");
-  return !0
+  returntrue
 }

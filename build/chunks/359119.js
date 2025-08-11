@@ -1,20 +1,21 @@
 /** Chunk was on web.js **/
+/** chunk id: 359119, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   ZP: () => C,
   ny: () => f,
   pj: () => d
-}), n(388685);
-var r = n(442837),
-  i = n(570140),
-  o = n(592125);
+}), require("./388685.js");
+var Chunk442837 = require("./442837.js"),
+  Chunk570140 = require("./570140.js"),
+  Chunk592125 = require("./592125.js");
 
 function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -47,7 +48,7 @@ function c(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let u = 5 * n(70956).Z.Millis.SECOND;
+let u = 5 * require("./70956.js").Z.Millis.SECOND;
 var d = function(e) {
     return e[e.STRANGER_DANGER = 1] = "STRANGER_DANGER", e[e.INAPPROPRIATE_CONVERSATION_TIER_1 = 2] = "INAPPROPRIATE_CONVERSATION_TIER_1", e[e.INAPPROPRIATE_CONVERSATION_TIER_2 = 3] = "INAPPROPRIATE_CONVERSATION_TIER_2", e[e.LIKELY_ATO = 4] = "LIKELY_ATO", e
   }({}),
@@ -102,7 +103,7 @@ function v(e) {
     channelId: t
   } = e, n = p[t];
   h.delete(t), null != n && (p[t] = n.map(e => c(s({}, e), {
-    dismiss_timestamp: void 0
+    dismiss_timestamp: true
   })))
 }
 
@@ -126,7 +127,7 @@ function T(e) {
 }
 
 function S() {
-  p = {}, Object.values(o.Z.getMutablePrivateChannels()).forEach(e => {
+  p = {}, Object.values(Chunk592125.Z.getMutablePrivateChannels()).forEach(e => {
     g(e)
   })
 }
@@ -134,13 +135,13 @@ function S() {
 function A(e) {
   return new Date(e).getTime() > Date.now() - u
 }
-class N extends r.ZP.Store {
+class N extends Chunk442837.ZP.Store {
   initialize() {
-    this.waitFor(o.Z)
+    this.waitFor(Chunk592125.Z)
   }
   getChannelSafetyWarning(e, t) {
     var n;
-    return null == (n = p[e]) ? void 0 : n.find(e => e.id === t)
+    return null == (n = p[e]) ? true : n.find(e => e.id === t)
   }
   getChannelSafetyWarnings(e) {
     var t;
@@ -150,7 +151,7 @@ class N extends r.ZP.Store {
     return h.has(e)
   }
 }
-let C = new N(i.Z, {
+let C = new N(Chunk570140.Z, {
   CHANNEL_CREATE: E,
   CHANNEL_DELETE: y,
   CHANNEL_UPDATES: b,

@@ -1,27 +1,28 @@
 /** Chunk was on web.js **/
+/** chunk id: 727072, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   I2: () => v,
   RD: () => I,
   mY: () => O,
   pH: () => T
-}), n(539854), n(388685);
-var r = n(73800),
-  i = n(94171),
-  o = n(362383),
-  a = n(731965),
-  s = n(881052),
-  l = n(36459),
-  c = n(866894),
-  u = n(273504),
-  d = n(981631);
+}), require("./539854.js"), require("./388685.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk94171 = require("./94171.js"),
+  Chunk362383 = require("./362383.js"),
+  Chunk731965 = require("./731965.js"),
+  Chunk881052 = require("./881052.js"),
+  Chunk36459 = require("./36459.js"),
+  Chunk866894 = require("./866894.js"),
+  Chunk273504 = require("./273504.js"),
+  Chunk981631 = require("./981631.js");
 
 function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -78,9 +79,9 @@ let b = e => {
       null == (n = t[r]) || n.push(e)
     }), t
   },
-  y = (0, o.F)((e, t) => ({
+  y = (0, Chunk362383.F)((e, t) => ({
     rules: {},
-    fetching: !1,
+    fetching: false,
     error: null,
     updateRule: n => {
       var r, i;
@@ -148,16 +149,16 @@ let b = e => {
   })),
   O = (e, t) => {
     var n, r;
-    return (null != (r = null == (n = y.getState().rules[e]) ? void 0 : n[t]) ? r : []).length
+    return (null != (r = null == (n = y.getState().rules[e]) ? true : n[t]) ? r : []).length
   };
 
 function v(e) {
-  let [t, n] = r.useState(!1), [o, a] = y(e => [e.syncRules, e.fetching], i.X);
+  let [t, n] = r.useState(false), [o, a] = y(e => [e.syncRules, e.fetching], i.X);
   return [t, r.useCallback(async () => {
     if (!a && null != e) try {
-      n(!0), await o(e)
+      n(true), await o(e)
     } finally {
-      n(!1)
+      n(false)
     }
   }, [e, a, o])]
 }

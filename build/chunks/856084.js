@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 856084, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-var r = n(581079),
+var Chunk581079 = require("./581079.js"),
   i = "LTR",
   o = "RTL",
   a = null;
@@ -10,11 +11,11 @@ function s(e) {
 }
 
 function l(e) {
-  return s(e) || r(!1), e === i ? "ltr" : "rtl"
+  return s(e) || r(false), e === i ? "ltr" : "rtl"
 }
 
 function c(e, t) {
-  return s(e) || r(!1), s(t) || r(!1), e === t ? null : l(e)
+  return s(e) || r(false), s(t) || r(false), e === t ? null : l(e)
 }
 
 function u(e) {
@@ -24,7 +25,7 @@ function u(e) {
 function d() {
   u(i)
 }
-e.exports = {
+module.exports = {
   NEUTRAL: "NEUTRAL",
   LTR: i,
   RTL: o,
@@ -34,6 +35,6 @@ e.exports = {
   setGlobalDir: u,
   initGlobalDir: d,
   getGlobalDir: function() {
-    return a || this.initGlobalDir(), a || r(!1), a
+    return a || this.initGlobalDir(), a || Chunk581079(false), a
   }
 }

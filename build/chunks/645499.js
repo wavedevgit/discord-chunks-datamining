@@ -1,9 +1,10 @@
 /** Chunk was on web.js **/
+/** chunk id: 645499, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 
 function r(e) {
   return /^(?:discord:\/)?\/[a-zA-Z0-9_-]/.test(e)
 }
-n.d(t, {
+require.d(exports, {
   B: () => r
-}), n(35282)
+}), require("./35282.js")

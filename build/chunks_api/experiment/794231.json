@@ -1,1 +1,0 @@
-{"id":"794231","type":"experiment","data":{"kind":"user","id":"2025-07_virtual_currency_beta_tag","label":"Virtual Currency Beta Tag","defaultConfig":{"showBetaTag":false},"treatments":[{"id":1,"label":"Disable Beta Tag on Virtual Currency surfaces","config":{"showBetaTag":false}}]},"fromModule":{"id":"86653"}}

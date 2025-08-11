@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 42656, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   wrapper: "wrapper__61a6b",
   flexWrapper: "flexWrapper__61a6b",
   image: "image__61a6b",

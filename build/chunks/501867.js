@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 501867, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   topPerksCard: "topPerksCard__3add8",
   animatedTopPerksCard: "animatedTopPerksCard__3add8",
   animate: "animate__3add8",

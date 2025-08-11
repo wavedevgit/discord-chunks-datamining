@@ -1,11 +1,12 @@
 /** Chunk was on web.js **/
+/** chunk id: 805797, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-var r = n(621796),
-  i = n(172367),
-  o = n(148727),
-  a = n(467159),
+var Chunk621796 = require("./621796.js"),
+  Chunk172367 = require("./172367.js"),
+  Chunk148727 = require("./148727.js"),
+  Chunk467159 = require("./467159.js"),
   s = null;
-e.exports = {
+module.exports = {
   cut: function(e) {
     var t = e.getCurrentContent(),
       n = e.getSelection(),

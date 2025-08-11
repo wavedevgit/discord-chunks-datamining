@@ -1,12 +1,13 @@
 /** Chunk was on web.js **/
+/** chunk id: 232869, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   VR: () => l,
   bc: () => a,
   l3: () => s
 });
-var r = n(134994),
-  i = n(492733);
+var Chunk134994 = require("./134994.js"),
+  Chunk492733 = require("./492733.js");
 
 function o(e, t, n, r) {
   if ("function" == typeof e.setBigUint64) return e.setBigUint64(t, n, r);
@@ -20,9 +21,9 @@ function o(e, t, n, r) {
 }
 let a = (e, t, n) => e & t ^ ~e & n,
   s = (e, t, n) => e & t ^ e & n ^ t & n;
-class l extends i.kb {
+class l extends Chunk492733.kb {
   constructor(e, t, n, r) {
-    super(), this.blockLen = e, this.outputLen = t, this.padOffset = n, this.isLE = r, this.finished = !1, this.length = 0, this.pos = 0, this.destroyed = !1, this.buffer = new Uint8Array(e), this.view = (0, i.GL)(this.buffer)
+    super(), this.blockLen = e, this.outputLen = t, this.padOffset = n, this.isLE = r, this.finished = false, this.length = 0, this.pos = 0, this.destroyed = false, this.buffer = new Uint8Array(e), this.view = (0, i.GL)(this.buffer)
   }
   update(e) {
     (0, r.Gg)(this);
@@ -43,7 +44,7 @@ class l extends i.kb {
     return this.length += e.length, this.roundClean(), this
   }
   digestInto(e) {
-    (0, r.Gg)(this), (0, r.J8)(e, this), this.finished = !0;
+    (0, r.Gg)(this), (0, r.J8)(e, this), this.finished = true;
     let {
       buffer: t,
       view: n,
@@ -68,9 +69,9 @@ class l extends i.kb {
       buffer: e,
       outputLen: t
     } = this;
-    this.digestInto(e);
-    let n = e.slice(0, t);
-    return this.destroy(), n
+    this.digestInto(module);
+    let n = module.slice(0, exports);
+    return this.destroy(), require
   }
   _cloneInto(e) {
     e || (e = new this.constructor), e.set(...this.get());

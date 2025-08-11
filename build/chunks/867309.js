@@ -1,11 +1,12 @@
 /** Chunk was on web.js **/
+/** chunk id: 867309, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 
 function r() {
   if ("undefined" != typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ && "function" == typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.checkDCE) try {
     __REACT_DEVTOOLS_GLOBAL_HOOK__.checkDCE(r)
   } catch (e) {
-    console.error(e)
+    console.error(module)
   }
 }
-r(), e.exports = n(211555)
+r(), module.exports = require("./211555.js")

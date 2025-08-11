@@ -1,12 +1,13 @@
 /** Chunk was on web.js **/
+/** chunk id: 420846, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => s
 });
-var r = n(570140),
-  i = n(467442),
-  o = n(869031),
-  a = n(987562);
+var Chunk570140 = require("./570140.js"),
+  Chunk467442 = require("./467442.js"),
+  Chunk869031 = require("./869031.js"),
+  Chunk987562 = require("./987562.js");
 let s = {
   maybeOpenBlockUserFeedback(e) {
     let {

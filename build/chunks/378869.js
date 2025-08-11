@@ -1,5 +1,6 @@
 /** Chunk was on 12097 **/
-e.exports = {
+/** chunk id: 378869, original params: e,t,n (module,exports,require) **/
+module.exports = {
   searchResultGroup: "searchResultGroup_c68065",
   channelNameContainer: "channelNameContainer_c68065",
   channelNameText: "channelNameText_c68065",

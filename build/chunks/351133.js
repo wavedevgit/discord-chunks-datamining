@@ -1,35 +1,36 @@
 /** Chunk was on web.js **/
+/** chunk id: 351133, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => E
-}), n(781311);
-var r = n(512722),
-  i = n.n(r),
-  o = n(911969),
-  a = n(465343),
-  s = n(706454),
-  l = n(117530),
-  c = n(160062),
-  u = n(456007),
-  d = n(581364),
-  f = n(388032);
+}), require("./781311.js");
+var Chunk512722 = require("./512722.js"),
+  i = require.n(Chunk512722),
+  Chunk911969 = require("./911969.js"),
+  Chunk465343 = require("./465343.js"),
+  Chunk706454 = require("./706454.js"),
+  Chunk117530 = require("./117530.js"),
+  Chunk160062 = require("./160062.js"),
+  Chunk456007 = require("./456007.js"),
+  Chunk581364 = require("./581364.js"),
+  Chunk388032 = require("./388032.js");
 let _ = {
-    [o.jw.SUB_COMMAND]: () => ({
-      success: !1
+    [Chunk911969.jw.SUB_COMMAND]: () => ({
+      success: false
     }),
-    [o.jw.SUB_COMMAND_GROUP]: () => ({
-      success: !1
+    [Chunk911969.jw.SUB_COMMAND_GROUP]: () => ({
+      success: false
     }),
-    [o.jw.BOOLEAN]: e => {
+    [Chunk911969.jw.BOOLEAN]: e => {
       if ("text" !== e.type) return {
-        success: !1
+        success: false
       };
       let t = e.text.trim();
       return {
         success: null != (0, c.Kl)(t)
       }
     },
-    [o.jw.STRING]: (e, t, n) => {
+    [Chunk911969.jw.STRING]: (e, t, n) => {
       let r;
       switch (i()(t.type === o.jw.STRING, "option type must match validator type"), e.type) {
         case "emoji":
@@ -40,19 +41,19 @@ let _ = {
           break;
         default:
           return {
-            success: !1
+            success: false
           }
       }
       if (null != t.choices) return {
         success: null != (0, c.cT)(t.choices, r)
       };
       if (t.autocomplete && null != (0, c.Wv)(n, t.name, r)) return {
-        success: !0
+        success: true
       };
       let a = r;
-      if (void 0 !== t.minLength || void 0 !== t.maxLength) {
+      if (true !== t.minLength || true !== t.maxLength) {
         if (null == a) return {
-          success: !1
+          success: false
         };
         let e = m(a, t, {
           exactRangeErrorMessage: f.t["e+9/SU"],
@@ -63,96 +64,96 @@ let _ = {
         if (!e.success) return e
       }
       return {
-        success: !0
+        success: true
       }
     },
-    [o.jw.INTEGER]: (e, t, n) => {
+    [Chunk911969.jw.INTEGER]: (e, t, n) => {
       i()(t.type === o.jw.INTEGER, "option type must match validator type");
       let r = "text" === e.type ? e.text.trim() : null;
       if (null == r || 0 === r.length) return {
-        success: !1
+        success: false
       };
       if (null != t.choices) return {
         success: null != (0, c.l1)(t.choices, r)
       };
       if (t.autocomplete && null != (0, c.xg)(n, t.name, r)) return {
-        success: !0
+        success: true
       };
       let a = Number(u.AS(s.default.locale, r));
       return null == a || isNaN(a) || !Number.isInteger(a) || !Number.isSafeInteger(a) ? {
-        success: !1
+        success: false
       } : h(a, t, f.t["8Y5zsr"], f.t.CyRLmJ, f.t["VD3Q+f"])
     },
-    [o.jw.NUMBER]: (e, t, n) => {
+    [Chunk911969.jw.NUMBER]: (e, t, n) => {
       i()(t.type === o.jw.NUMBER, "option type must match validator type");
       let r = "text" === e.type ? e.text.trim() : null;
       if (null == r || 0 === r.length) return {
-        success: !1
+        success: false
       };
       if (null != t.choices) return {
         success: null != (0, c.l1)(t.choices, r)
       };
       if (t.autocomplete && null != (0, c.xg)(n, t.name, r)) return {
-        success: !0
+        success: true
       };
       let a = Number(u.AS(s.default.locale, r));
       return isNaN(a) || a > Number.MAX_SAFE_INTEGER || a < Number.MIN_SAFE_INTEGER ? {
-        success: !1
+        success: false
       } : h(a, t, f.t["8Y5zsr"], f.t.CyRLmJ, f.t["VD3Q+f"])
     },
-    [o.jw.USER]: (e, t, n, r) => {
+    [Chunk911969.jw.USER]: (e, t, n, r) => {
       if ("text" !== e.type) return {
         success: "userMention" === e.type
       };
       {
         if ((0, d.BH)(e.text)) return {
-          success: !0
+          success: true
         };
         let t = (0, a.K)(e.text, r, n, {
-          allowRoles: !1
+          allowRoles: false
         });
         return {
-          success: (null == t ? void 0 : t.type) === "userMention"
+          success: (null == t ? true : t.type) === "userMention"
         }
       }
     },
-    [o.jw.CHANNEL]: (e, t, n, r) => {
+    [Chunk911969.jw.CHANNEL]: (e, t, n, r) => {
       if ("text" !== e.type) return {
         success: "channelMention" === e.type
       };
       {
         if ((0, d.BH)(e.text)) return {
-          success: !0
+          success: true
         };
         let t = (0, a.K)(e.text, r, n);
         return {
-          success: (null == t ? void 0 : t.type) === "channelMention"
+          success: (null == t ? true : t.type) === "channelMention"
         }
       }
     },
-    [o.jw.ROLE]: (e, t, n, r) => {
+    [Chunk911969.jw.ROLE]: (e, t, n, r) => {
       if ("text" !== e.type) return {
         success: p(e)
       };
       {
         if ((0, d.BH)(e.text)) return {
-          success: !0
+          success: true
         };
         let t = (0, a.K)(e.text, r, n, {
-          allowUsers: !1
+          allowUsers: false
         });
         return {
-          success: (null == t ? void 0 : t.type) === "roleMention"
+          success: (null == t ? true : t.type) === "roleMention"
         }
       }
     },
-    [o.jw.MENTIONABLE]: (e, t, n, r) => {
+    [Chunk911969.jw.MENTIONABLE]: (e, t, n, r) => {
       if ("text" !== e.type) return {
         success: "userMention" === e.type || p(e)
       };
       {
         if ((0, d.BH)(e.text)) return {
-          success: !0
+          success: true
         };
         let t = (0, a.K)(e.text, r, n);
         return {
@@ -160,9 +161,9 @@ let _ = {
         }
       }
     },
-    [o.jw.ATTACHMENT]: (e, t, n, r, i) => {
+    [Chunk911969.jw.ATTACHMENT]: (e, t, n, r, i) => {
       if ("text" !== e.type) return {
-        success: !1
+        success: false
       };
       let o = l.Z.getUpload(n, t.name, (0, d.D7)(i));
       return {
@@ -175,66 +176,66 @@ let _ = {
 function h(e, t, n, r, i) {
   if (null != t.minValue && e < t.minValue || null != t.maxValue && e > t.maxValue) {
     if (null != t.maxValue && null != t.minValue) return {
-      success: !1,
+      success: false,
       error: f.intl.formatToPlainString(n, {
         minimum: g(t.minValue),
         maximum: g(t.maxValue)
       })
     };
     else if (null != t.minValue) return {
-      success: !1,
+      success: false,
       error: f.intl.formatToPlainString(r, {
         minimum: g(t.minValue)
       })
     };
     else if (null != t.maxValue) return {
-      success: !1,
+      success: false,
       error: f.intl.formatToPlainString(i, {
         maximum: g(t.maxValue)
       })
     }
   }
   return {
-    success: !0
+    success: true
   }
 }
 
 function m(e, t, n) {
-  if (void 0 !== t.minLength && e.length < t.minLength || void 0 !== t.maxLength && e.length > t.maxLength) {
-    if (void 0 !== t.maxLength && void 0 !== t.minLength && t.minLength === t.maxLength) return {
-      success: !1,
+  if (true !== t.minLength && e.length < t.minLength || true !== t.maxLength && e.length > t.maxLength) {
+    if (true !== t.maxLength && true !== t.minLength && t.minLength === t.maxLength) return {
+      success: false,
       error: f.intl.formatToPlainString(n.exactRangeErrorMessage, {
         value: g(t.minLength)
       })
     };
-    else if (void 0 !== t.maxLength && void 0 !== t.minLength) return {
-      success: !1,
+    else if (true !== t.maxLength && true !== t.minLength) return {
+      success: false,
       error: f.intl.formatToPlainString(n.rangeErrorMessage, {
         minimum: g(t.minLength),
         maximum: g(t.maxLength)
       })
     };
-    else if (void 0 !== t.minLength) return {
-      success: !1,
+    else if (true !== t.minLength) return {
+      success: false,
       error: f.intl.formatToPlainString(n.minErrorMessage, {
         minimum: g(t.minLength)
       })
     };
-    else if (void 0 !== t.maxLength) return {
-      success: !1,
+    else if (true !== t.maxLength) return {
+      success: false,
       error: f.intl.formatToPlainString(n.maxErrorMessage, {
         maximum: g(t.maxLength)
       })
     }
   }
   return {
-    success: !0
+    success: true
   }
 }
 
 function g(e) {
   return e.toLocaleString(f.intl.currentLocale, {
-    useGrouping: !1
+    useGrouping: false
   })
 }
 let E = _

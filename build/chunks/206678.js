@@ -1,9 +1,10 @@
 /** Chunk was on web.js **/
+/** chunk id: 206678, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => o
-}), n(388685);
-var r = n(73800);
+}), require("./388685.js");
+var Chunk73800 = require("./73800.js");
 
 function i(e, t) {
   let n = e.getBoundingClientRect();
@@ -16,14 +17,14 @@ function o(e) {
     onDrag: n,
     onDragStart: o,
     onDragEnd: a
-  } = e, [s, l] = r.useState(!1);
+  } = e, [s, l] = r.useState(false);
   return r.useEffect(() => {
     if (s) return window.addEventListener("mouseup", e), window.addEventListener("mousemove", r), () => {
       window.removeEventListener("mouseup", e), window.removeEventListener("mousemove", r)
     };
 
     function e() {
-      null == a || a(), l(!1)
+      null == a || a(), l(false)
     }
 
     function r(e) {
@@ -33,6 +34,6 @@ function o(e) {
   }, [t, s, a, n]), [s, r.useCallback(e => {
     e.preventDefault();
     let r = t.current;
-    null != r && (l(!0), null == o || o(), null == n || n(i(r, e)))
+    null != r && (l(true), null == o || o(), null == n || n(i(r, e)))
   }, [t, o, n])]
 }

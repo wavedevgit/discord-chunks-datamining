@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 51144, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   EO: () => T,
   Fc: () => I,
   Ft: () => N,
@@ -10,19 +11,19 @@ n.d(t, {
   oY: () => g,
   u5: () => O,
   vP: () => C
-}), n(415506);
-var r = n(442837),
-  i = n(246946),
-  o = n(594174),
-  a = n(981631),
-  s = n(388032);
+}), require("./415506.js");
+var Chunk442837 = require("./442837.js"),
+  Chunk246946 = require("./246946.js"),
+  Chunk594174 = require("./594174.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk388032 = require("./388032.js");
 
 function l(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -46,7 +47,7 @@ let u = 864e5,
     mode: "full",
     decoration: "never",
     identifiable: "auto",
-    forcePomelo: !1
+    forcePomelo: false
   };
 
 function h(e) {
@@ -62,7 +63,7 @@ function g(e) {
   if (null == e) return;
   let n = i.Z.hidePersonalInformation,
     r = m(e);
-  return n && r.toLocaleLowerCase() === (null == (t = e.username) ? void 0 : t.toLocaleLowerCase()) && "0" === e.discriminator && (r = f(r)), r
+  return n && r.toLocaleLowerCase() === (null == (t = e.username) ? true : t.toLocaleLowerCase()) && "0" === e.discriminator && (r = f(r)), r
 }
 
 function E(e) {
@@ -70,7 +71,7 @@ function E(e) {
   let n = (0, r.e7)([i.Z], () => i.Z.hidePersonalInformation);
   if (null == e) return;
   let o = m(e);
-  return n && o.toLocaleLowerCase() === (null == (t = e.username) ? void 0 : t.toLocaleLowerCase()) && "0" === e.discriminator && (o = f(o)), o
+  return n && o.toLocaleLowerCase() === (null == (t = e.username) ? true : t.toLocaleLowerCase()) && "0" === e.discriminator && (o = f(o)), o
 }
 
 function b(e) {
@@ -82,7 +83,7 @@ function b(e) {
 
 function y(e) {
   var t;
-  let n = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
+  let n = arguments.length > 1 && true !== arguments[1] && arguments[1];
   if (null == e) return d;
   let r = b(e),
     i = n ? A(e) : null != (t = e.username) ? t : d;
@@ -90,7 +91,7 @@ function y(e) {
 }
 
 function O(e) {
-  let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
+  let t = arguments.length > 1 && true !== arguments[1] && arguments[1];
   switch (e) {
     case a.Skl.ONLINE:
       return t ? s.intl.string(s.t["9hghLC"]) : s.intl.string(s.t.WbGtnJ);
@@ -115,7 +116,7 @@ function v(e, t) {
     maxDaysOld: n,
     minDaysOld: r = 0
   } = t;
-  if (null == e) return !1;
+  if (null == e) returnfalse;
   let i = Date.now() - e.createdAt.getTime(),
     o = null == n || i <= u * n,
     a = i >= u * r;
@@ -140,7 +141,7 @@ function S(e, t, n) {
   if (null == e) return s.intl.string(s.t.sKdZ6e);
   if (!h(e.username)) return d;
   let r = n;
-  if ("always" === t.identifiable ? r = !1 : "never" === t.identifiable && (r = !0), "0" !== e.discriminator && e.discriminator !== a.fo$ && !t.forcePomelo) return "username" === t.mode || r ? e.username : "".concat(e.username, "#").concat(e.discriminator);
+  if ("always" === t.identifiable ? r = false : "never" === t.identifiable && (r = true), "0" !== e.discriminator && e.discriminator !== a.fo$ && !t.forcePomelo) return "username" === t.mode || r ? e.username : "".concat(e.username, "#").concat(e.discriminator);
   let i = r ? f(e.username) : e.username;
   return "never" !== t.decoration ? _(i) : i
 }
@@ -158,8 +159,8 @@ function N(e) {
 }
 
 function C() {
-  let e = o.default.getCurrentUser();
-  return null != e && e.isStaff()
+  let e = Chunk594174.default.getCurrentUser();
+  return null != module && module.isStaff()
 }
 let R = {
   getName: g,

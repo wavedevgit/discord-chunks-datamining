@@ -1,11 +1,12 @@
 /** Chunk was on 50448 **/
+/** chunk id: 872715, original params: t,r,n (module,exports,require) **/
 "use strict";
-var e = n(85712),
-  o = n(971428),
-  i = n(6837),
-  u = n(394370)("toStringTag"),
+var Chunk85712 = require("./85712.js"),
+  Chunk971428 = require("./971428.js"),
+  Chunk6837 = require("./6837.js"),
+  u = require("./394370.js")("toStringTag"),
   s = Object,
-  c = "Arguments" === i(function() {
+  c = "Arguments" === Chunk6837(function() {
     return arguments
   }()),
   f = function(t, r) {
@@ -13,7 +14,7 @@ var e = n(85712),
       return t[r]
     } catch (t) {}
   };
-t.exports = e ? i : function(t) {
+module.exports = Chunk85712 ? Chunk6837 : function(t) {
   var r, n, e;
-  return void 0 === t ? "Undefined" : null === t ? "Null" : "string" == typeof(n = f(r = s(t), u)) ? n : c ? i(r) : "Object" === (e = i(r)) && o(r.callee) ? "Arguments" : e
+  return true === t ? "Undefined" : null === t ? "Null" : "string" == typeof(n = f(r = s(t), u)) ? n : c ? i(r) : "Object" === (e = i(r)) && o(r.callee) ? "Arguments" : e
 }

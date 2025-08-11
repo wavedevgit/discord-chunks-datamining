@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 964423, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   tabItem: "tabItem__9e06a",
   tabContainer: "tabContainer__9e06a",
   pillContainer: "pillContainer__9e06a",

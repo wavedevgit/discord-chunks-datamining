@@ -1,5 +1,6 @@
 /** Chunk was on 70911 **/
-e.exports = {
+/** chunk id: 594777, original params: e,t,n (module,exports,require) **/
+module.exports = {
   sidebar: "sidebar__83a6b",
   art: "art__83a6b",
   step12Animation: "step12Animation__83a6b",

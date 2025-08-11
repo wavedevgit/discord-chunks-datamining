@@ -1,16 +1,17 @@
 /** Chunk was on 75708 **/
-n.d(t, {
+/** chunk id: 639814, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   c_: () => o,
   is: () => l
 });
-var i = n(442837),
-  r = n(430824),
-  s = n(997950),
-  a = n(981631);
-let l = () => (0, s.xu)().selectedGuildId,
+var Chunk442837 = require("./442837.js"),
+  Chunk430824 = require("./430824.js"),
+  Chunk997950 = require("./997950.js"),
+  Chunk981631 = require("./981631.js");
+let l = () => (0, Chunk997950.xu)().selectedGuildId,
   o = () => {
     var e;
     let t = l(),
-      n = (0, i.e7)([r.Z], () => r.Z.getGuild(t));
-    return null != (e = null == n ? void 0 : n.features.has(a.oNc.HUB)) && e
+      n = (0, Chunk442837.e7)([Chunk430824.Z], () => Chunk430824.Z.getGuild(exports));
+    return null != (e = null == require ? true : require.features.has(Chunk981631.oNc.HUB)) && module
   }

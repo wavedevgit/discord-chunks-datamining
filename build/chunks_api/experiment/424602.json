@@ -1,1 +1,0 @@
-{"id":"424602","type":"experiment","data":{"kind":"guild","id":"2025-02_filter_wordle_from_voice_channel_launcher","label":"Filter Wordle From Voice Channel Launcher","defaultConfig":{"enabled":false},"treatments":[{"id":1,"label":"Filter Wordle From Voice Channels","config":{"enabled":false}}]},"fromModule":{"id":"web.js"}}

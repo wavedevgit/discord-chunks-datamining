@@ -1,10 +1,11 @@
 /** Chunk was on 21153 **/
+/** chunk id: 26443, original params: e,t,r (module,exports,require) **/
 "use strict";
-r.d(t, {
+require.d(exports, {
   C: () => a
 });
-var n = r(73800),
-  o = r(9196);
+var Chunk73800 = require("./73800.js"),
+  Chunk9196 = require("./9196.js");
 let a = function(e) {
   var t = e.onClick,
     r = e.label,

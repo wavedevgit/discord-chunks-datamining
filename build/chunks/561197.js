@@ -1,6 +1,7 @@
 /** Chunk was on 45620 **/
+/** chunk id: 561197, original params: e,t,n (module,exports,require) **/
 "use strict";
-e.exports = {
+module.exports = {
   priceTagsContainer: "priceTagsContainer_f73e93",
   price: "price_f73e93"
 }

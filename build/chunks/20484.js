@@ -1,5 +1,6 @@
 /** Chunk was on 72739 **/
-e.exports = {
+/** chunk id: 20484, original params: e,t,i (module,exports,require) **/
+module.exports = {
   clipItem: "clipItem__1d12e",
   disabled: "disabled__1d12e",
   newIcon: "newIcon__1d12e",

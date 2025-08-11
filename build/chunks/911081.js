@@ -1,5 +1,6 @@
 /** Chunk was on web.js **/
-e.exports = n(676001)({
+/** chunk id: 911081, original params: e,t,n (module,exports,re quire) **/
+module.exports = require("./676001.js")({
   À: "A",
   Á: "A",
   Â: "A",

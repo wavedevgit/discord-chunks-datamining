@@ -1,5 +1,6 @@
 /** Chunk was on web.js **/
-e.exports = function(e) {
+/** chunk id: 463099, original params: e (module,exports,re quire) **/
+module.exports = function(e) {
   let t = {
       className: "string",
       variants: [e.inherit(e.QUOTE_STRING_MODE, {

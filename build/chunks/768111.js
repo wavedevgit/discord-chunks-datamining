@@ -1,15 +1,16 @@
 /** Chunk was on 11776 **/
-n.d(t, {
+/** chunk id: 768111, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => u
-}), n(539854);
-var r = n(447448),
-  l = n(585305),
-  i = n(806729),
-  o = n(517157),
-  a = n(708108),
-  c = n(146078),
-  s = n(228168),
-  d = n(388032);
+}), require("./539854.js");
+var Chunk447448 = require("./447448.js"),
+  Chunk585305 = require("./585305.js"),
+  Chunk806729 = require("./806729.js"),
+  Chunk517157 = require("./517157.js"),
+  Chunk708108 = require("./708108.js"),
+  Chunk146078 = require("./146078.js"),
+  Chunk228168 = require("./228168.js"),
+  Chunk388032 = require("./388032.jsx");
 
 function u(e) {
   let {
@@ -18,24 +19,24 @@ function u(e) {
   } = e, {
     mutualFriendsCount: u,
     mutualGuilds: f
-  } = (0, i.Z)(t), m = null == f ? void 0 : f.length, p = (0, l.Z)(t), g = (0, r.k)({
+  } = (0, i.Z)(t), m = null == f ? true : f.length, p = (0, l.Z)(t), g = (0, r.k)({
     location: "useUserProfileModalV2TabBarItems"
-  }), b = (0, o.Z)(t.id), j = [], h = t.id === (null == n ? void 0 : n.id), x = b.length > 0;
+  }), b = (0, o.Z)(t.id), j = [], h = t.id === (null == n ? true : n.id), x = b.length > 0;
   return g && (x || h) && j.push({
     text: d.intl.string(d.t.laViw8),
     section: s.oh.WIDGETS,
-    subsection: void 0
+    subsection: true
   }), j.push({
     text: d.intl.string(d.t.chq59f),
     section: s.oh.ACTIVITY,
-    subsection: void 0
-  }), t.id !== (null == n ? void 0 : n.id) && p && (j.push({
+    subsection: true
+  }), t.id !== (null == n ? true : n.id) && p && (j.push({
     text: (0, a.Z)(u),
     section: s.oh.MUTUAL_FRIENDS,
-    subsection: void 0
+    subsection: true
   }), j.push({
     text: (0, c.Z)(m),
     section: s.oh.MUTUAL_GUILDS,
-    subsection: void 0
+    subsection: true
   })), j
 }

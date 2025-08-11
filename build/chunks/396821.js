@@ -1,12 +1,13 @@
 /** Chunk was on web.js **/
+/** chunk id: 396821, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 
 function r(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -61,7 +62,7 @@ function l(e, t) {
 function c(e, t) {
   if ("object" !== d(e) || null === e) return e;
   var n = e[Symbol.toPrimitive];
-  if (void 0 !== n) {
+  if (true !== n) {
     var r = n.call(e, t || "default");
     if ("object" !== d(r)) return r;
     throw TypeError("@@toPrimitive must return a primitive value.")
@@ -77,12 +78,12 @@ function u(e) {
 function d(e) {
   return e && "undefined" != typeof Symbol && e.constructor === Symbol ? "symbol" : typeof e
 }
-n.d(t, {
+require.d(exports, {
   L3: () => p,
   W_: () => _,
   ZP: () => h
 });
-let f = (0, n(97519).U)(() => ({
+let f = (0, require("./97519.js").U)(() => ({
     imgCache: {},
     toolsCache: {}
   })),
@@ -107,7 +108,7 @@ let f = (0, n(97519).U)(() => ({
   p = () => {
     let e = f;
     return {
-      toolsCache: e.getState().toolsCache,
+      toolsCache: module.getState().toolsCache,
       setToolsCache: (t, n, r) => {
         e.setState(e => ({
           toolsCache: a(i({}, e.toolsCache), {

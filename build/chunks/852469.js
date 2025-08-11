@@ -1,24 +1,25 @@
 /** Chunk was on 36878 **/
-n.d(t, {
+/** chunk id: 852469, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => s
 });
-var i = n(524437),
-  o = n(995774),
-  l = n(509613),
-  r = n(695346),
-  a = n(388032);
-let s = (0, l.Em)("ReactionNotifications", {
-  useTitle: () => a.intl.string(a.t.Rq0NFh),
+var Chunk524437 = require("./524437.js"),
+  Chunk995774 = require("./995774.js"),
+  Chunk509613 = require("./509613.js"),
+  Chunk695346 = require("./695346.js"),
+  Chunk388032 = require("./388032.jsx");
+let s = (0, Chunk509613.Em)("ReactionNotifications", {
+  useTitle: () => Chunk388032.intl.string(Chunk388032.t.Rq0NFh),
   options: [{
-    label: () => a.intl.string(a.t["9x/Rtb"]),
-    value: i.Ns.NOTIFICATIONS_ENABLED
+    label: () => Chunk388032.intl.string(Chunk388032.t["9x/Rtb"]),
+    value: Chunk524437.Ns.NOTIFICATIONS_ENABLED
   }, {
-    label: () => a.intl.string(a.t.fJAbQU),
-    value: i.Ns.ONLY_DMS
+    label: () => Chunk388032.intl.string(Chunk388032.t.fJAbQU),
+    value: Chunk524437.Ns.ONLY_DMS
   }, {
-    label: () => a.intl.string(a.t["xu+UDQ"]),
-    value: i.Ns.NOTIFICATIONS_DISABLED
+    label: () => Chunk388032.intl.string(Chunk388032.t["xu+UDQ"]),
+    value: Chunk524437.Ns.NOTIFICATIONS_DISABLED
   }],
-  useValue: r.fz.useSetting,
+  useValue: Chunk695346.fz.useSetting,
   setValue: e => (0, o.MR)(e, r.fz.getSetting())
 })

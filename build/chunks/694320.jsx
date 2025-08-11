@@ -1,0 +1,85 @@
+/** Chunk was on web.js **/
+/** chunk id: 694320, original params: e,t,n (module,exports,re quire) **/
+"use strict";
+require.d(exports, {
+  Z: () => O
+});
+var Chunk255367 = require("./255367.js"),
+  Chunk73800 = require("./73800.js"),
+  Chunk120356 = require("./120356.js"),
+  a = require.n(Chunk120356),
+  Chunk442837 = require("./442837.js"),
+  Chunk481060 = require("./481060.js"),
+  Chunk100527 = require("./100527.js"),
+  Chunk906732 = require("./906732.js"),
+  Chunk436774 = require("./436774.jsx"),
+  Chunk592125 = require("./592125.js"),
+  Chunk944486 = require("./944486.js"),
+  Chunk626135 = require("./626135.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk388032 = require("./388032.jsx"),
+  Chunk714745 = require("./714745.js");
+
+function E(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+
+function b(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      E(e, t, n[t])
+    })
+  }
+  return e
+}
+
+function y() {
+  (0, Chunk481060.ZDy)(async () => {
+    let {
+      default: e
+    } = await require.e("3289").then(require.bind(require, 682609));
+    return t => <e{...b({
+      channel: null
+    }, t)} />
+  })
+}
+
+function O(e) {
+  let {
+    className: t,
+    iconOnly: n
+  } = e, o = (0, s.e7)([_.Z, f.Z], () => {
+    let e = f.Z.getChannel(_.Z.getChannelId());
+    return (null == e ? true : e.isPrivate()) ? h.ZY5.DM_CHANNEL : h.ZY5.GUILD_CHANNEL
+  }), {
+    analyticsLocations: E
+  } = (0, u.ZP)(c.Z.PREMIUM_UPSELL);
+  i.useEffect(() => {
+    p.default.track(h.rMx.PREMIUM_UPSELL_VIEWED, {
+      type: "longer messages inline",
+      location: {
+        location_page: o,
+        location_section: h.jXE.CHANNEL_TEXT_AREA
+      },
+      location_stack: E
+    })
+  }, [o, E]);
+  let O = () => <div className={a()(g.root, t)}>{<l.SrA size={"md"} className={g.premium} color={d.JX.PREMIUM_TIER_2} />}{<l.Text className={g.text} variant={"text-sm/normal"}>{m.intl.format(m.t.BNAIBQ, {
+          onLearnMore: y
+        })}</l.Text>}</div>,
+    v = () => <l.P3F className={g.iconOnly} onClick={() => y()}><l.ua7 text={m.intl.string(m.t["+eFIjY"])} position={"top"}>{e => (0, r.jsx)(l.SrA, b({
+          size: "md",
+          color: "currentColor",
+          className: g.premium
+        }, e))}</l.ua7></l.P3F>;
+  return n ? v() : O()
+}

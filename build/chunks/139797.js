@@ -1,5 +1,6 @@
 /** Chunk was on 43404 **/
-e.exports = {
+/** chunk id: 139797, original params: e,t,n (module,exports,require) **/
+module.exports = {
   main: "main__4d307",
   checkerboard: "checkerboard__4d307",
   previewPlaceholder: "previewPlaceholder__4d307",

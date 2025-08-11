@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 861391, original params: e (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   "~": "`",
   "!": "1",
   "@": "2",

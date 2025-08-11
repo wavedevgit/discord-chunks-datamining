@@ -1,15 +1,16 @@
 /** Chunk was on 72762 **/
-n.d(t, {
+/** chunk id: 446094, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => o
-}), n(388685);
-var r = n(73800),
-  i = n(300284),
-  l = n(321114),
-  s = n(526761);
+}), require("./388685.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk300284 = require("./300284.js"),
+  Chunk321114 = require("./321114.js"),
+  Chunk526761 = require("./526761.js");
 
 function o(e, t) {
-  let [n, o] = r.useState(!1), a = r.useCallback(async () => {
-    o(!0), await (0, l.c)(e, !0), o(!1), null == t || t()
+  let [n, o] = r.useState(false), a = r.useCallback(async () => {
+    o(true), await (0, l.c)(e, true), o(false), null == t || t()
   }, [e, t]), c = (0, i.Z)({
     scrollPosition: s.Y_.GUILD_TAG
   });

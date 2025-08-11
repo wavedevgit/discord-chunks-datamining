@@ -1,17 +1,18 @@
 /** Chunk was on web.js **/
+/** chunk id: 694312, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   E: () => f
-}), n(388685);
-var r = n(73800),
-  i = n(442837),
-  o = n(835473),
-  a = n(594174),
-  s = n(695103),
-  l = n(823379),
-  c = n(358085),
-  u = n(317381),
-  d = n(761122);
+}), require("./388685.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk442837 = require("./442837.js"),
+  Chunk835473 = require("./835473.js"),
+  Chunk594174 = require("./594174.js"),
+  Chunk695103 = require("./695103.js"),
+  Chunk823379 = require("./823379.js"),
+  Chunk358085 = require("./358085.js"),
+  Chunk317381 = require("./317381.js"),
+  Chunk761122 = require("./761122.js");
 
 function f(e) {
   let t = (0, i.e7)([a.default], a.default.getCurrentUser),
@@ -42,6 +43,6 @@ function f(e) {
     let {
       activity: n
     } = e;
-    return !n.requires_age_gate || (null == t ? void 0 : t.nsfwAllowed) === !0 || (null == t ? void 0 : t.nsfwAllowed) == null
-  }), [null == t ? void 0 : t.nsfwAllowed, E, g])
+    return !n.requires_age_gate || (null == t ? true : t.nsfwAllowed) === true || (null == t ? true : t.nsfwAllowed) == null
+  }), [null == t ? true : t.nsfwAllowed, E, g])
 }

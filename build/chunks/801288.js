@@ -1,17 +1,18 @@
 /** Chunk was on web.js **/
+/** chunk id: 801288, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   L: () => a
-}), n(804061), n(704826), n(35282);
-var r = n(503461),
-  i = n(190313);
+}), require("./804061.js"), require("./704826.js"), require("./35282.js");
+var Chunk503461 = require("./503461.js"),
+  Chunk190313 = require("./190313.js");
 
 function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 class a {
@@ -19,7 +20,7 @@ class a {
     return this.table.prefix
   }
   withoutLogging() {
-    return new a(this.originalPrefix, this.table.tableId, this.table.database, !1)
+    return new a(this.originalPrefix, this.table.tableId, this.table.database, false)
   }
   get(e) {
     return this.table.get([e])
@@ -43,11 +44,11 @@ class a {
     return this.table.getParentId([null, e])
   }
   put(e) {
-    let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : r.Sn.Replace;
+    let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : r.Sn.Replace;
     return this.transaction(n => n.put(e, t), "".concat(this.prefix, " put"))
   }
   putAll(e) {
-    let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : r.Sn.Replace;
+    let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : r.Sn.Replace;
     return this.transaction(n => n.putAll(e, t), "".concat(this.prefix, " putAll"))
   }
   replaceAll(e) {
@@ -75,8 +76,8 @@ class a {
       generation: t
     }
   }
-  constructor(e, t, n, r = !0) {
-    o(this, "originalPrefix", void 0), o(this, "table", void 0), this.originalPrefix = e, this.table = new i.i([e], t, n, r)
+  constructor(e, t, n, r = true) {
+    o(this, "originalPrefix", true), o(this, "table", true), this.originalPrefix = e, this.table = new i.i([e], t, n, r)
   }
 }
 class s {
@@ -84,11 +85,11 @@ class s {
     return new s(new i.E(e, t, n))
   }
   put(e) {
-    let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : r.Sn.Replace;
+    let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : r.Sn.Replace;
     return this.transaction.put(a.cell(e, null), t)
   }
   putAll(e) {
-    let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : r.Sn.Replace;
+    let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : r.Sn.Replace;
     return this.transaction.putAll(e.map(e => a.cell(e, null)), t)
   }
   replaceAll(e) {
@@ -98,6 +99,6 @@ class s {
     return 0 == arguments.length ? this.transaction.delete([]) : this.transaction.delete([e])
   }
   constructor(e) {
-    o(this, "transaction", void 0), this.transaction = e
+    o(this, "transaction", true), this.transaction = e
   }
 }

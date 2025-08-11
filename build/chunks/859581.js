@@ -1,5 +1,6 @@
 /** Chunk was on 67110 **/
-e.exports = {
+/** chunk id: 859581, original params: e,t,a (module,exports,require) **/
+module.exports = {
   activeWrapper: "activeWrapper__452c3",
   wrapper: "wrapper__452c3",
   videoWrapper: "videoWrapper__452c3",

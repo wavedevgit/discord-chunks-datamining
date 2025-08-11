@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 77239, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-var r = n(754793),
+var Chunk754793 = require("./754793.js"),
   i = 15,
   o = 852,
   a = 592,
@@ -11,7 +12,7 @@ var r = n(754793),
   d = [16, 16, 16, 16, 16, 16, 16, 16, 17, 17, 17, 17, 18, 18, 18, 18, 19, 19, 19, 19, 20, 20, 20, 20, 21, 21, 21, 21, 16, 72, 78],
   f = [1, 2, 3, 4, 5, 7, 9, 13, 17, 25, 33, 49, 65, 97, 129, 193, 257, 385, 513, 769, 1025, 1537, 2049, 3073, 4097, 6145, 8193, 12289, 16385, 24577, 0, 0],
   _ = [16, 16, 16, 16, 17, 17, 18, 18, 19, 19, 20, 20, 21, 21, 22, 22, 23, 23, 24, 24, 25, 25, 26, 26, 27, 27, 28, 28, 29, 29, 64, 64];
-e.exports = function(e, t, n, p, h, m, g, E) {
+module.exports = function(e, t, n, p, h, m, g, E) {
   var b, y, O, v, I, T, S, A, N, C = E.bits,
     R = 0,
     P = 0,
@@ -35,11 +36,11 @@ e.exports = function(e, t, n, p, h, m, g, E) {
   if (L > D && (L = D), 0 === D) return h[m++] = 0x1400000, h[m++] = 0x1400000, E.bits = 1, 0;
   for (w = 1; w < D && 0 === Z[w]; w++);
   for (L < w && (L = w), k = 1, R = 1; R <= i; R++)
-    if (k <<= 1, (k -= Z[R]) < 0) return -1;
-  if (k > 0 && (e === s || 1 !== D)) return -1;
+    if (k <<= 1, (k -= Z[R]) < 0) return false;
+  if (k > 0 && (e === s || 1 !== D)) return false;
   for (R = 1, F[1] = 0; R < i; R++) F[R + 1] = F[R] + Z[R];
   for (P = 0; P < p; P++) 0 !== t[n + P] && (g[F[t[n + P]]++] = P);
-  if (e === s ? (G = V = g, T = 19) : e === l ? (G = u, B -= 257, V = d, H -= 257, T = 256) : (G = f, V = _, T = -1), U = 0, P = 0, R = w, I = m, x = L, M = 0, O = -1, v = (j = 1 << L) - 1, e === l && j > o || e === c && j > a) return 1;
+  if (e === s ? (G = V = g, T = 19) : e === l ? (G = u, B -= 257, V = d, H -= 257, T = 256) : (G = f, V = _, T = false), U = 0, P = 0, R = w, I = m, x = L, M = 0, O = false, v = (j = 1 << L) - 1, e === l && j > o || e === c && j > a) return 1;
   for (;;) {
     S = R - M, g[P] < T ? (A = 0, N = g[P]) : g[P] > T ? (A = V[H + g[P]], N = G[B + g[P]]) : (A = 96, N = 0), b = 1 << R - M, w = y = 1 << x;
     do h[I + (U >> M) + (y -= b)] = S << 24 | A << 16 | N | 0; while (0 !== y);

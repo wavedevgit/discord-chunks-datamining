@@ -1,13 +1,14 @@
 /** Chunk was on 67244 **/
+/** chunk id: 694626, original params: e,t,r (module,exports,require) **/
 "use strict";
-r.d(t, {
+require.d(exports, {
   Z: () => u
 });
-var a = r(665352),
-  n = r(147591),
-  s = r(677524),
-  o = r(37484),
-  i = r(385787);
+var Chunk665352 = require("./665352.js"),
+  Chunk147591 = require("./147591.js"),
+  Chunk677524 = require("./677524.js"),
+  Chunk37484 = require("./37484.js"),
+  Chunk385787 = require("./385787.js");
 
 function c(e, t) {
   return Math.abs(t) / Math.sqrt(Math.pow(e, 2) + 1)
@@ -16,8 +17,8 @@ function c(e, t) {
 function l(e) {
   return Math.min(c(e.r0s, e.r0i), c(e.r1s, e.r1i), c(e.g0s, e.g0i), c(e.g1s, e.g1i), c(e.b0s, e.b0i), c(e.b1s, e.b1i))
 }
-s.p["0"]["0"], s.p["0"]["1"], s.p["0"]["2"], s.p["1"]["0"], s.p["1"]["1"], s.p["1"]["2"], s.p["2"]["0"], s.p["2"]["1"], s.p["2"]["2"];
-let u = new a.Z({
+Chunk677524.p["0"]["0"], Chunk677524.p["0"]["1"], Chunk677524.p["0"]["2"], Chunk677524.p["1"]["0"], Chunk677524.p["1"]["1"], Chunk677524.p["1"]["2"], Chunk677524.p["2"]["0"], Chunk677524.p["2"]["1"], Chunk677524.p["2"]["2"];
+let u = new Chunk665352.Z({
   id: "hpluv",
   name: "HPLuv",
   coords: {
@@ -35,7 +36,7 @@ let u = new a.Z({
       name: "Lightness"
     }
   },
-  base: n.Z,
+  base: Chunk147591.Z,
   gamutSpace: "self",
   fromBase(e) {
     let t, [r, a, n] = [(0, o.sI)(e[0]), (0, o.sI)(e[1]), (0, o.sI)(e[2])];

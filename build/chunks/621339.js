@@ -1,18 +1,19 @@
 /** Chunk was on 36878 **/
-n.d(t, {
+/** chunk id: 621339, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => s
 });
-var i = n(657707),
-  o = n(509613),
-  l = n(393681),
-  r = n(388032);
-let a = (0, o.x1)("AccountPane", {
-    useTitle: () => r.intl.string(r.t["JAIM/v"]),
+var Chunk657707 = require("./657707.js"),
+  Chunk509613 = require("./509613.js"),
+  Chunk393681 = require("./393681.jsx"),
+  Chunk388032 = require("./388032.jsx");
+let a = (0, Chunk509613.x1)("AccountPane", {
+    useTitle: () => Chunk388032.intl.string(Chunk388032.t["JAIM/v"]),
     layout: [],
-    render: l.Z
+    render: Chunk393681.Z
   }),
-  s = (0, o.wf)("Account", {
-    useTitle: () => r.intl.string(r.t["JAIM/v"]),
-    icon: i.tBG,
+  s = (0, Chunk509613.wf)("Account", {
+    useTitle: () => Chunk388032.intl.string(Chunk388032.t["JAIM/v"]),
+    icon: Chunk657707.tBG,
     layout: [a]
   })

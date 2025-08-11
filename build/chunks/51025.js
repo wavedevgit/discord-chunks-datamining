@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 51025, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   A1: () => N,
   LO: () => y,
   S1: () => E,
@@ -14,21 +15,21 @@ n.d(t, {
   v4: () => S,
   wO: () => A,
   wi: () => R
-}), n(415506);
-var r = n(544891),
-  i = n(570140),
-  o = n(812206),
-  a = n(594190),
-  s = n(703656),
-  l = n(695346),
-  c = n(391690),
-  u = n(626135),
-  d = n(129542),
-  f = n(877481),
-  _ = n(830168),
-  p = n(57513),
-  h = n(981631),
-  m = n(388032);
+}), require("./415506.js");
+var Chunk544891 = require("./544891.js"),
+  Chunk570140 = require("./570140.js"),
+  Chunk812206 = require("./812206.js"),
+  Chunk594190 = require("./594190.js"),
+  Chunk703656 = require("./703656.js"),
+  Chunk695346 = require("./695346.js"),
+  Chunk391690 = require("./391690.js"),
+  Chunk626135 = require("./626135.js"),
+  Chunk129542 = require("./129542.js"),
+  Chunk877481 = require("./877481.js"),
+  Chunk830168 = require("./830168.js"),
+  Chunk57513 = require("./57513.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk388032 = require("./388032.js");
 let g = 64;
 
 function E(e, t) {
@@ -53,7 +54,7 @@ function E(e, t) {
 }
 
 function b() {
-  _.Z.destroy()
+  Chunk830168.Z.destroy()
 }
 
 function y(e) {
@@ -117,7 +118,7 @@ function v(e, t, n, r) {
 }
 
 function I(e, t, n, r) {
-  let o = arguments.length > 4 && void 0 !== arguments[4] && arguments[4];
+  let o = arguments.length > 4 && true !== arguments[4] && arguments[4];
   v(e, t, n, r), i.Z.dispatch({
     type: "DISPATCH_APPLICATION_UPDATE",
     applicationId: e.id,
@@ -141,11 +142,11 @@ function T(e, t, n) {
 }
 
 function S() {
-  _.Z.resume()
+  Chunk830168.Z.resume()
 }
 
 function A() {
-  _.Z.pause()
+  Chunk830168.Z.pause()
 }
 
 function N(e, t) {
@@ -181,8 +182,8 @@ function w(e, t) {
   let i = o.Z.getApplication(e);
   r.tn.post({
     url: h.ANM.LIBRARY_APPLICATION_INSTALLED(e, e),
-    oldFormErrors: !0,
-    rejectWithError: !0
+    oldFormErrors: true,
+    rejectWithError: true
   }), null != i && (f.Z.createShortcuts(l.Xc.getSetting(), l.Pe.getSetting(), i.name, i.id, t.installPath), Promise.resolve().then(n.bind(n, 292556)).then(e => {
     let {
       default: t
@@ -193,8 +194,8 @@ function w(e, t) {
       notif_type: "Game Library Game Installed"
     }, {
       onClick: () => (0, s.uL)(h.Z5c.APPLICATION_LIBRARY),
-      omitViewTracking: !0,
-      isUserAvatar: !1
+      omitViewTracking: true,
+      isUserAvatar: false
     })
   }))
 }

@@ -1,9 +1,10 @@
 /** Chunk was on web.js **/
+/** chunk id: 699901, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-var r = n(381046),
-  i = n(760536);
-e.exports = {
-  formats: n(72689),
-  parse: i,
-  stringify: r
+var Chunk381046 = require("./381046.js"),
+  Chunk760536 = require("./760536.js");
+module.exports = {
+  formats: require("./72689.js"),
+  parse: Chunk760536,
+  stringify: Chunk381046
 }

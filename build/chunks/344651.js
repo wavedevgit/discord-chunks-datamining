@@ -1,45 +1,46 @@
 /** Chunk was on web.js **/
+/** chunk id: 344651, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => W
-}), n(539854), n(388685), n(997841), n(415506);
-var r = n(392711),
-  i = n.n(r);
-n(724522);
-var o = n(442837),
-  a = n(570140),
-  s = n(749210),
-  l = n(821849),
-  c = n(232567),
-  u = n(864106),
-  d = n(710845),
-  f = n(292419),
-  _ = n(566006),
-  p = n(686478),
-  h = n(952537),
-  m = n(218543),
-  g = n(48481),
-  E = n(131704),
-  b = n(209747),
-  y = n(598077),
-  O = n(592125),
-  v = n(271383),
-  I = n(819640),
-  T = n(594174),
-  S = n(979651),
-  A = n(509545),
-  N = n(78839),
-  C = n(936101),
-  R = n(868158),
-  P = n(483012),
-  w = n(955132);
+}), require("./539854.js"), require("./388685.js"), require("./997841.js"), require("./415506.js");
+var Chunk392711 = require("./392711.js"),
+  i = require.n(Chunk392711);
+require("./724522.js");
+var Chunk442837 = require("./442837.js"),
+  Chunk570140 = require("./570140.js"),
+  Chunk749210 = require("./749210.js"),
+  Chunk821849 = require("./821849.js"),
+  Chunk232567 = require("./232567.js"),
+  Chunk864106 = require("./864106.js"),
+  Chunk710845 = require("./710845.js"),
+  Chunk292419 = require("./292419.js"),
+  Chunk566006 = require("./566006.js"),
+  Chunk686478 = require("./686478.js"),
+  Chunk952537 = require("./952537.js"),
+  Chunk218543 = require("./218543.js"),
+  Chunk48481 = require("./48481.js"),
+  Chunk131704 = require("./131704.js"),
+  Chunk209747 = require("./209747.js"),
+  Chunk598077 = require("./598077.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk271383 = require("./271383.js"),
+  Chunk819640 = require("./819640.js"),
+  Chunk594174 = require("./594174.js"),
+  Chunk979651 = require("./979651.js"),
+  Chunk509545 = require("./509545.js"),
+  Chunk78839 = require("./78839.js"),
+  Chunk936101 = require("./936101.js"),
+  Chunk868158 = require("./868158.js"),
+  Chunk483012 = require("./483012.js"),
+  Chunk955132 = require("./955132.js");
 
 function D(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -90,8 +91,8 @@ function j(e, t) {
   for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let U = new d.Z("ConnectionStore"),
-  G = new P.Z(w.Wb, (e, t) => {
+let U = new Chunk710845.Z("ConnectionStore"),
+  G = new Chunk483012.Z(Chunk955132.Wb, (e, t) => {
     var n;
     e = null != e ? e : {
       type: "CHANNEL_UPDATES",
@@ -99,13 +100,13 @@ let U = new d.Z("ConnectionStore"),
     };
     let r = (0, E.q_)(t),
       i = O.Z.getChannel(t.id),
-      o = null == i ? void 0 : i.merge(M(L({}, r), {
+      o = null == i ? true : i.merge(M(L({}, r), {
         recipients: i.recipients,
         bitrate: null != (n = r.bitrate) ? n : i.bitrate
       }));
     return e.channels.push(null != o ? o : r), e
   }, e => "CHANNEL_UPDATE" !== e),
-  B = new P.Z(w.Wb, (e, t) => ((e = null == e ? {
+  B = new Chunk483012.Z(Chunk955132.Wb, (e, t) => ((e = null == e ? {
     type: "SOUNDBOARD_SOUNDS_RECEIVED",
     updates: []
   } : e).updates.push({
@@ -121,11 +122,11 @@ let U = new d.Z("ConnectionStore"),
       guildId: t.guild_id
     }))
   }), e), e => "SOUNDBOARD_SOUNDS" !== e),
-  Z = new P.Z(w.Wb, (e, t) => ((e = null != e ? e : {
+  Z = new Chunk483012.Z(Chunk955132.Wb, (e, t) => ((e = null != e ? e : {
     type: "GUILD_MEMBERS_CHUNK_BATCH",
     chunks: []
   }).chunks.push(t), e), e => "GUILD_MEMBERS_CHUNK" !== e),
-  F = new P.Z(w.Wb, (e, t) => ((e = null == e ? {
+  F = new Chunk483012.Z(Chunk955132.Wb, (e, t) => ((e = null == e ? {
     type: "PRESENCE_UPDATES",
     updates: []
   } : e).updates.push(t), e), e => "PRESENCE_UPDATE" !== e && "GUILD_MEMBERS_CHUNK" !== e),
@@ -162,9 +163,9 @@ function K(e) {
       deaf: i.deaf,
       selfMute: i.self_mute,
       selfDeaf: i.self_deaf,
-      selfVideo: i.self_video || !1,
+      selfVideo: i.self_video || false,
       suppress: i.suppress,
-      selfStream: i.self_stream || !1,
+      selfStream: i.self_stream || false,
       requestToSpeakTimestamp: null != (n = i.request_to_speak_timestamp) ? n : null,
       discoverable: null == (r = i.discoverable) || r,
       oldChannelId: S.Z.getUserVoiceChannelId(i.guild_id, i.user_id)
@@ -288,9 +289,9 @@ Y(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : O.o.loadGuildIds([e.id
             deaf: e.deaf,
             selfMute: e.self_mute,
             selfDeaf: e.self_deaf,
-            selfVideo: e.self_video || !1,
+            selfVideo: e.self_video || false,
             suppress: e.suppress,
-            selfStream: e.self_stream || !1,
+            selfStream: e.self_stream || false,
             requestToSpeakTimestamp: null != (n = e.request_to_speak_timestamp) ? n : null,
             discoverable: null == (r = e.discoverable) || r
           }
@@ -311,7 +312,7 @@ Y(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : O.o.loadGuildIds([e.id
           hiddenActivities: e.hidden_activities,
           processedAtTimestamp: e.processed_at_timestamp
         })),
-        i = e.guilds.filter(e => !0 !== e.unavailable);
+        i = e.guilds.filter(e => true !== e.unavailable);
       i.forEach(e => {
         e.presences = r(e.presences || [])
       });
@@ -326,7 +327,7 @@ Y(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : O.o.loadGuildIds([e.id
           presences: o,
           lazyPrivateChannels: a,
           gameInvites: s,
-          userActivities: null != (t = e.user_activities) ? t : void 0
+          userActivities: null != (t = e.user_activities) ? t : true
         })
       });
       let l = [];
@@ -342,9 +343,9 @@ Y(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : O.o.loadGuildIds([e.id
             deaf: t.deaf,
             selfMute: t.self_mute,
             selfDeaf: t.self_deaf,
-            selfVideo: t.self_video || !1,
+            selfVideo: t.self_video || false,
             suppress: t.suppress,
-            selfStream: t.self_stream || !1,
+            selfStream: t.self_stream || false,
             requestToSpeakTimestamp: null != (n = t.request_to_speak_timestamp) ? n : null,
             discoverable: null == (r = t.discoverable) || r
           })
@@ -352,7 +353,7 @@ Y(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : O.o.loadGuildIds([e.id
       }), z({
         type: "VOICE_STATE_UPDATES",
         voiceStates: l,
-        initial: !0
+        initial: true
       }), w.GC.update()
     })
   }), setTimeout(() => z({
@@ -363,7 +364,7 @@ Y(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : O.o.loadGuildIds([e.id
   let n = R.Eb(),
     r = e.guilds.filter(e => {
       var t, n;
-      return !e.unavailable && "partial" === e.data_mode && ((null != (t = e.partial_updates.channels) ? t : []).length > 0 || (null != (n = e.partial_updates.deleted_channel_ids) ? n : []).length > 0 || void 0)
+      return !e.unavailable && "partial" === e.data_mode && ((null != (t = e.partial_updates.channels) ? t : []).length > 0 || (null != (n = e.partial_updates.deleted_channel_ids) ? n : []).length > 0 || true)
     }).map(e => e.id);
   return Promise.all([n, null != (t = O.o.loadGuildIds(r)) ? t : Promise.resolve()]).then(e => {
     let [t] = e;
@@ -376,13 +377,13 @@ Y(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : O.o.loadGuildIds([e.id
   m.Z.ready.measure(() => {
     o.ZP.Emitter.batched(() => {
       let t = (e = m.Z.hydrateReady.measure(() => R.IM(e, w.Wb.identifyStartTime, n))).private_channels.map(e => (0, E.q_)(e)),
-        r = e.guilds.filter(e => !0 === e.unavailable && !0 !== e.geo_restricted).map(e => e.id),
-        i = e.guilds.filter(e => !0 !== e.unavailable),
-        o = e.guilds.filter(e => !0 === e.geo_restricted);
+        r = e.guilds.filter(e => true === e.unavailable && true !== e.geo_restricted).map(e => e.id),
+        i = e.guilds.filter(e => true !== e.unavailable),
+        o = e.guilds.filter(e => true === e.geo_restricted);
       i.forEach(e => {
         e.presences = []
       });
-      let a = null == e.user_settings_proto ? void 0 : (0, g.ac)(e.user_settings_proto);
+      let a = null == e.user_settings_proto ? true : (0, g.ac)(e.user_settings_proto);
       m.Z.dispatchReady.measure(() => {
         var n, s;
         z({
@@ -406,12 +407,12 @@ Y(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : O.o.loadGuildIds([e.id
           experiments: e.experiments,
           connectedAccounts: e.connected_accounts,
           guildExperiments: e.guild_experiments,
-          apexExperiments: null != (n = e.apex_experiments) ? n : void 0,
+          apexExperiments: null != (n = e.apex_experiments) ? n : true,
           requiredAction: e.required_action,
           consents: e.consents,
           sessions: Q(e.sessions || []),
           pendingPayments: e.pending_payments,
-          countryCode: null != (s = e.country_code) ? s : void 0,
+          countryCode: null != (s = e.country_code) ? s : true,
           guildJoinRequests: e.guild_join_requests || [],
           userSettingsProto: a,
           apiCodeVersion: e.api_code_version,
@@ -434,11 +435,11 @@ Y(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : O.o.loadGuildIds([e.id
   var t, n;
   z({
     type: "CONNECTION_OPEN_STATE_UPDATE",
-    apexExperiments: null != (t = e.apex_experiments) ? t : void 0,
-    userActivities: null != (n = e.user_activities) ? n : void 0
+    apexExperiments: null != (t = e.apex_experiments) ? t : true,
+    userActivities: null != (n = e.user_activities) ? n : true
   })
 }), H(["RESUMED"], () => {
-  w.RR.forceUpdate(), w.GC.forceUpdate(), z({
+  Chunk955132.RR.forceUpdate(), Chunk955132.GC.forceUpdate(), z({
     type: "CONNECTION_RESUMED"
   })
 }), H(["TYPING_START"], e => {
@@ -482,8 +483,8 @@ Y(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : O.o.loadGuildIds([e.id
     guildId: e.guild_id,
     channelId: e.channel_id,
     message: e,
-    optimistic: !1,
-    isPushNotification: !1
+    optimistic: false,
+    isPushNotification: false
   })
 }), Y(["MESSAGE_UPDATE"], e => O.o.loadGuildIds([e.guild_id]), e => {
   X(e), z({
@@ -586,7 +587,7 @@ Y(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : O.o.loadGuildIds([e.id
       return null != t && (e.nsfw = t.nsfw, e.parentChannelThreadType = t.type), (0, E.q_)(e)
     }),
     mostRecentMessages: e.most_recent_messages,
-    members: e.members ? i().map(e.members, h.Z) : void 0,
+    members: e.members ? i().map(e.members, h.Z) : true,
     channelIds: e.channel_ids
   })
 }), H(["THREAD_MEMBER_UPDATE"], e => {
@@ -607,7 +608,7 @@ Y(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : O.o.loadGuildIds([e.id
     id: e.id,
     guildId: e.guild_id,
     memberCount: e.member_count,
-    addedMembers: null == (t = e.added_members) ? void 0 : t.map(t => ({
+    addedMembers: null == (t = e.added_members) ? true : t.map(t => ({
       id: t.id,
       guildId: e.guild_id,
       userId: t.user_id,
@@ -658,9 +659,9 @@ Y(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : O.o.loadGuildIds([e.id
           deaf: e.deaf,
           selfMute: e.self_mute,
           selfDeaf: e.self_deaf,
-          selfVideo: e.self_video || !1,
+          selfVideo: e.self_video || false,
           suppress: e.suppress,
-          selfStream: e.self_stream || !1,
+          selfStream: e.self_stream || false,
           requestToSpeakTimestamp: null != (n = e.request_to_speak_timestamp) ? n : null,
           discoverable: null == (r = e.discoverable) || r
         }
@@ -849,12 +850,12 @@ Y(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : O.o.loadGuildIds([e.id
       user: e.user,
       since: e.since,
       nickname: e.nickname,
-      isSpamRequest: e.is_spam_request || !1,
-      isStrangerRequest: e.is_stranger_request || !1,
-      userIgnored: e.user_ignored || !1,
+      isSpamRequest: e.is_spam_request || false,
+      isStrangerRequest: e.is_stranger_request || false,
+      userIgnored: e.user_ignored || false,
       originApplicationId: e.origin_application_id
     },
-    shouldNotify: !0 === e.should_notify
+    shouldNotify: true === e.should_notify
   })
 }), H(["RELATIONSHIP_REMOVE"], e => {
   z({
@@ -870,9 +871,9 @@ Y(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : O.o.loadGuildIds([e.id
       user: e.user,
       nickname: e.nickname,
       since: e.since,
-      isSpamRequest: e.is_spam_request || !1,
-      isStrangerRequest: e.is_stranger_request || !1,
-      userIgnored: e.user_ignored || !1,
+      isSpamRequest: e.is_spam_request || false,
+      isStrangerRequest: e.is_stranger_request || false,
+      userIgnored: e.user_ignored || false,
       originApplicationId: e.origin_application_id
     }
   })
@@ -948,9 +949,9 @@ Y(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : O.o.loadGuildIds([e.id
         deaf: e.deaf,
         selfMute: e.self_mute,
         selfDeaf: e.self_deaf,
-        selfVideo: e.self_video || !1,
+        selfVideo: e.self_video || false,
         suppress: e.suppress,
-        selfStream: e.self_stream || !1,
+        selfStream: e.self_stream || false,
         requestToSpeakTimestamp: null != (t = e.request_to_speak_timestamp) ? t : null,
         discoverable: null == (n = e.discoverable) || n
       }
@@ -1086,9 +1087,9 @@ Y(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : O.o.loadGuildIds([e.id
     entitlement: e
   })
 }), H(["USER_PAYMENT_SOURCES_UPDATE"], () => {
-  I.Z.hasLayers() && (n(355467).tZ(), l.Gn(A.Z.getFetchedSKUIDs()))
+  Chunk819640.Z.hasLayers() && (require("./355467.js").tZ(), Chunk821849.Gn(Chunk509545.Z.getFetchedSKUIDs()))
 }), H(["USER_SUBSCRIPTIONS_UPDATE"], () => {
-  c.k(), I.Z.hasLayers() && n(355467).jg()
+  Chunk232567.k(), Chunk819640.Z.hasLayers() && require("./355467.js").jg()
 }), H(["USER_PREMIUM_GUILD_SUBSCRIPTION_SLOT_CREATE"], e => {
   z({
     type: "GUILD_BOOST_SLOT_CREATE",
@@ -1252,7 +1253,7 @@ Y(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : O.o.loadGuildIds([e.id
   z({
     type: "NOTIFICATION_CENTER_ITEMS_ACK",
     ids: [e.id],
-    optimistic: !1
+    optimistic: false
   })
 }), H(["NOTIFICATION_CENTER_ITEM_COMPLETED"], e => {
   z({
@@ -1570,13 +1571,13 @@ Y(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : O.o.loadGuildIds([e.id
       var t, n;
       return {
         channelId: e.channel_id,
-        deaf: e.deaf || !1,
-        mute: e.mute || !1,
+        deaf: e.deaf || false,
+        mute: e.mute || false,
         requestToSpeakTimestamp: null != (t = e.request_to_speak_timestamp) ? t : null,
-        selfDeaf: e.self_deaf || !1,
-        selfMute: e.self_mute || !1,
-        selfStream: e.self_stream || !1,
-        selfVideo: e.self_video || !1,
+        selfDeaf: e.self_deaf || false,
+        selfMute: e.self_mute || false,
+        selfStream: e.self_stream || false,
+        selfVideo: e.self_video || false,
         sessionId: e.session_id,
         suppress: e.suppress,
         userId: e.user_id,

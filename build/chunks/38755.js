@@ -1,10 +1,11 @@
 /** Chunk was on web.js **/
+/** chunk id: 38755, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => o
-}), n(388685);
-var r = n(73800),
-  i = n(763520);
+}), require("./388685.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk763520 = require("./763520.js");
 
 function o(e) {
   let {
@@ -13,7 +14,7 @@ function o(e) {
     userId: o,
     streamId: a,
     loading: s,
-    paused: l = !1
+    paused: l = false
   } = e, [c] = r.useState(() => new i.o(t));
   r.useEffect(() => {
     l || (s ? c.onSpinnerStarted() : null != a && c.trackSpinnerDuration(n, o, a))

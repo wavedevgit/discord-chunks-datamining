@@ -1,9 +1,10 @@
 /** Chunk was on web.js **/
+/** chunk id: 925434, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   T: () => o,
   x: () => i
 });
-var r = n(379405);
+var Chunk379405 = require("./379405.js");
 let i = ["My absolute favorite!", "Best game ever made", "Can't stop playing this", "Really long text to test the overflow logic lets make this a little bit longer of a comment to see if it works"],
-  o = [r._.LFG, r._.NOOB, r._.LEARNING_THE_ROPES, r._.GETTING_GOOD, r._.GOD_TIER, r._.OPEN_TO_PLAY, r._.LOOKING_FOR_TIPS, r._.LIKE_IT]
+  o = [Chunk379405._.LFG, Chunk379405._.NOOB, Chunk379405._.LEARNING_THE_ROPES, Chunk379405._.GETTING_GOOD, Chunk379405._.GOD_TIER, Chunk379405._.OPEN_TO_PLAY, Chunk379405._.LOOKING_FOR_TIPS, Chunk379405._.LIKE_IT]

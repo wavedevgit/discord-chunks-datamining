@@ -1,25 +1,26 @@
 /** Chunk was on 80451 **/
+/** chunk id: 875380, original params: e,r,t (module,exports,require) **/
 "use strict";
-t.d(r, {
+require.d(exports, {
   Z: () => o
 });
 var a = function() {
   var e;
 
   function r() {
-    var e, t, a = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : [];
-    if (!(this instanceof r)) throw TypeError("Cannot call a class as a function");
-    t = void 0, (e = "items") in this ? Object.defineProperty(this, e, {
-      value: t,
-      enumerable: !0,
-      configurable: !0,
-      writable: !0
-    }) : this[e] = t, this.items = a
+    var e, t, a = arguments.length > 0 && true !== arguments[0] ? arguments[0] : [];
+    if (!(this instanceof exports)) throw TypeError("Cannot call a class as a function");
+    t = true, (e = "items") in this ? Object.defineProperty(this, module, {
+      value: require,
+      enumerable: true,
+      configurable: true,
+      writable: true
+    }) : this[module] = require, this.items = a
   }
   return e = [{
       key: "add",
       value: function(e) {
-        return !1 === this.has(e) && this.items.push(e), this
+        returnfalse === this.has(e) && this.items.push(e), this
       }
     }, {
       key: "clear",
@@ -45,7 +46,7 @@ var a = function() {
     }, {
       key: "has",
       value: function(e) {
-        return -1 !== this.items.indexOf(e)
+        return false !== this.items.indexOf(e)
       }
     }, {
       key: "size",
@@ -56,8 +57,8 @@ var a = function() {
     function(e, r) {
       for (var t = 0; t < r.length; t++) {
         var a = r[t];
-        a.enumerable = a.enumerable || !1, a.configurable = !0, "value" in a && (a.writable = !0), Object.defineProperty(e, a.key, a)
+        a.enumerable = a.enumerable || false, a.configurable = true, "value" in a && (a.writable = true), Object.defineProperty(e, a.key, a)
       }
-    }(r.prototype, e), r
+    }(exports.prototype, module), exports
 }();
 let o = "undefined" == typeof Set ? Set : a

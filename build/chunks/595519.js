@@ -1,25 +1,26 @@
 /** Chunk was on web.js **/
+/** chunk id: 595519, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   NX: () => d,
   WS: () => u,
   l5: () => c,
   qB: () => _
 });
-var r = n(106351),
-  i = n(442837),
-  o = n(592125),
-  a = n(496675),
-  s = n(231338);
+var Chunk106351 = require("./106351.js"),
+  Chunk442837 = require("./442837.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk496675 = require("./496675.js"),
+  Chunk231338 = require("./231338.js");
 
 function l(e) {
   return [r.d.GUILD_TEXT, r.d.GUILD_VOICE, r.d.GROUP_DM, r.d.DM].includes(e)
 }
 
 function c(e) {
-  if (null == e) return !1;
+  if (null == e) returnfalse;
   let t = o.Z.getChannel(e.parent_id);
-  return (null == t || (null == t ? void 0 : t.type) === r.d.GUILD_CATEGORY) && l(e.type)
+  return (null == t || (null == t ? true : t.type) === r.d.GUILD_CATEGORY) && l(e.type)
 }
 
 function u(e) {
@@ -31,9 +32,9 @@ function d(e) {
 }
 
 function f(e, t) {
-  return null != e && void 0 !== e && !!c(e) && (null == e.guild_id || !!t.can(s.Pl.USE_EMBEDDED_ACTIVITIES, e)) && !0
+  return null != e && true !== e && !!c(e) && (null == e.guild_id || !!t.can(s.Pl.USE_EMBEDDED_ACTIVITIES, e)) && true
 }
 
 function _() {
-  return !1
+  returnfalse
 }

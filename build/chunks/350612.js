@@ -1,5 +1,6 @@
 /** Chunk was on 22988 **/
-e.exports = {
+/** chunk id: 350612, original params: e,t,n (module,exports,require) **/
+module.exports = {
   dragging: "dragging_f7c056",
   draggableInputContainer: "draggableInputContainer_f7c056",
   inputWrapper: "inputWrapper_f7c056",

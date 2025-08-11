@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 451316, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   modalHeaderCustomGift: "modalHeaderCustomGift_b54a5b",
   closeButton: "closeButton_b54a5b",
   closeButtonInner: "closeButtonInner_b54a5b",

@@ -1,22 +1,23 @@
 /** Chunk was on web.js **/
+/** chunk id: 424218, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   BU: () => l,
   IC: () => c,
   XD: () => i
 });
-var r = n(388032);
+var Chunk388032 = require("./388032.jsx");
 let i = 1024,
   o = 1024,
   a = 1024,
   s = {
-    useKibibytes: !1,
-    showDecimalForGB: !0,
-    useSpace: !0
+    useKibibytes: false,
+    showDecimalForGB: true,
+    useSpace: true
   };
 
 function l(e) {
-  let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : s,
+  let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : s,
     n = t.useKibibytes ? o : 1e3,
     i = t.useKibibytes ? a : 1e3,
     l = Math.ceil(e / n);
@@ -34,7 +35,7 @@ function l(e) {
 }
 
 function c(e) {
-  let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : s,
+  let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : s,
     n = t.useKibibytes ? i : 1e3,
     a = t.useKibibytes ? o : 1e3,
     c = e / n;

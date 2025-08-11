@@ -1,17 +1,18 @@
 /** Chunk was on 34779 **/
-n.d(t, {
+/** chunk id: 231664, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => a
 });
-var r = n(442837),
-  i = n(361291),
-  l = n(557457),
-  o = n(933843),
-  s = n(37113);
+var Chunk442837 = require("./442837.js"),
+  Chunk361291 = require("./361291.js"),
+  Chunk557457 = require("./557457.js"),
+  Chunk933843 = require("./933843.js"),
+  Chunk37113 = require("./37113.js");
 
 function a() {
   let {
     resolution: e,
     fps: t
-  } = (0, r.cj)([i.Z], () => i.Z.getState());
-  if (!(0, o.m)(e, t)) return "".concat((0, s.o6)(e), " ").concat((0, l.bp)(t))
+  } = (0, Chunk442837.cj)([Chunk361291.Z], () => Chunk361291.Z.getState());
+  if (!(0, Chunk933843.m)(module, exports)) return "".concat((0, Chunk37113.o6)(module), " ").concat((0, Chunk557457.bp)(exports))
 }

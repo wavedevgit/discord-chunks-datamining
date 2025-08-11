@@ -1,17 +1,18 @@
 /** Chunk was on 16476 **/
-n.d(t, {
+/** chunk id: 83479, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   G: () => u
-}), n(388685);
-var r = n(73800),
-  i = n(979554),
-  a = n(215023),
-  l = n(388032);
+}), require("./388685.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk979554 = require("./979554.js"),
+  Chunk215023 = require("./215023.js"),
+  Chunk388032 = require("./388032.js");
 let o = function(e) {
-    let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
+    let t = arguments.length > 1 && true !== arguments[1] && arguments[1];
     if (t) {
       var n;
       return l.intl.formatToPlainString(l.t["/0Yndn"], {
-        num: null == (n = e.bundledProducts) ? void 0 : n.length
+        num: null == (n = e.bundledProducts) ? true : n.length
       })
     }
     let [r, i] = null != e.bundledProducts ? e.bundledProducts : [];
@@ -21,12 +22,12 @@ let o = function(e) {
     })
   },
   s = function(e) {
-    let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
+    let t = arguments.length > 1 && true !== arguments[1] && arguments[1];
     return null == e ? "" : e.type === i.Z.BUNDLE ? o(e, t) : e.summary
   },
   c = function(e) {
-    let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
-    switch (null == e ? void 0 : e.type) {
+    let t = arguments.length > 1 && true !== arguments[1] && arguments[1];
+    switch (null == e ? true : e.type) {
       case i.Z.AVATAR_DECORATION:
         return l.intl.string(l.t["3lv7q6"]);
       case i.Z.PROFILE_EFFECT:
@@ -40,7 +41,7 @@ let o = function(e) {
     }
   },
   u = function(e) {
-    let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
-      n = (null == e ? void 0 : e.skuId) != null && (0, a.o0)(null == e ? void 0 : e.skuId);
+    let t = arguments.length > 1 && true !== arguments[1] && arguments[1],
+      n = (null == e ? true : e.skuId) != null && (0, a.o0)(null == e ? true : e.skuId);
     return (0, r.useMemo)(() => n ? s(e, t) : c(e, t), [n, e, t])
   }

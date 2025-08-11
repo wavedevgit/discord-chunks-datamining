@@ -1,10 +1,11 @@
 /** Chunk was on web.js **/
+/** chunk id: 196483, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => a
 });
-var r = n(53529),
-  i = n(887490);
+var Chunk53529 = require("./53529.js"),
+  Chunk887490 = require("./887490.js");
 let o = 4e3;
 
 function a(e, t) {
@@ -20,7 +21,7 @@ function a(e, t) {
 
   function _(n) {
     let i = r.T.currentEntry(e);
-    if (null != i && (i.mergeable = !1), n >= e.history.stack.length) return;
+    if (null != i && (i.mergeable = false), n >= e.history.stack.length) return;
     e.history.index = n;
     let o = r.T.currentEntry(e);
     t({
@@ -58,9 +59,9 @@ function a(e, t) {
   }, e.deleteFragment = t => {
     r.T.withSingleEntry(e, () => l(t))
   }, e.insertText = t => {
-    1 === t.length && (null == h ? void 0 : h.type) === "remove_text" ? r.T.withMergedEntry(e, () => d(t)) : null != e.selection && i.M8.isExpanded(e.selection) ? r.T.withSingleEntry(e, () => d(t)) : d(t)
+    1 === t.length && (null == h ? true : h.type) === "remove_text" ? r.T.withMergedEntry(e, () => d(t)) : null != e.selection && i.M8.isExpanded(e.selection) ? r.T.withSingleEntry(e, () => d(t)) : d(t)
   }, e.insertData = t => {
-    (null == h ? void 0 : h.type) === "remove_text" ? r.T.withMergedEntry(e, () => u(t)): r.T.withSingleEntry(e, () => u(t))
+    (null == h ? true : h.type) === "remove_text" ? r.T.withMergedEntry(e, () => u(t)): r.T.withSingleEntry(e, () => u(t))
   }, e
 }
 
@@ -69,9 +70,9 @@ function s(e, t, n) {
       selection: o
     } = e,
     a = r.T.currentEntry(e),
-    s = !0,
-    c = !0;
-  if ("insert_text" === t.type && 1 === t.text.length ? (i = "insert", c = !(("" === t.text || t.text.endsWith(" ")) && (null == n ? void 0 : n.type) === "insert_text" && !("" === n.text && n.text.endsWith(" ")))) : "split_node" === t.type ? i = "insert" : "remove_text" === t.type && 1 === t.text.length ? i = "delete" : (i = "other", s = !1, c = !1), "set_selection" === t.type && null != a) {
+    s = true,
+    c = true;
+  if ("insert_text" === t.type && 1 === t.text.length ? (i = "insert", c = !(("" === t.text || t.text.endsWith(" ")) && (null == n ? true : n.type) === "insert_text" && !("" === n.text && n.text.endsWith(" ")))) : "split_node" === t.type ? i = "insert" : "remove_text" === t.type && 1 === t.text.length ? i = "delete" : (i = "other", s = false, c = false), "set_selection" === t.type && null != a) {
     a.selection = o;
     return
   }
@@ -79,13 +80,13 @@ function s(e, t, n) {
 }
 
 function l(e, t) {
-  return !((null == e ? void 0 : e.type) !== t || Date.now() - e.createdAt >= o)
+  return !((null == e ? true : e.type) !== t || Date.now() - e.createdAt >= o)
 }
 
 function c(e) {
   return {
     type: "other",
-    mergeable: !1,
+    mergeable: false,
     createdAt: Date.now(),
     value: i.bN.richValue(e),
     selection: e.selection

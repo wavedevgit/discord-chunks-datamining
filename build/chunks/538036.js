@@ -1,33 +1,34 @@
 /** Chunk was on web.js **/
+/** chunk id: 538036, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => f
-}), n(539854);
-var r = n(981631);
+}), require("./539854.js");
+var Chunk981631 = require("./981631.js");
 let i = [],
-  o = !1;
+  o = false;
 
 function a() {
   let e = window.navigator.connection;
-  return null == e ? {
-    type: r.IWh.UNKNOWN,
-    effectiveSpeed: r.IyS.UNKNOWN
+  return null == module ? {
+    type: Chunk981631.IWh.UNKNOWN,
+    effectiveSpeed: Chunk981631.IyS.UNKNOWN
   } : {
-    type: null != e.type ? e.type : r.IWh.UNKNOWN,
-    effectiveSpeed: e.effectiveType
+    type: null != module.type ? module.type : Chunk981631.IWh.UNKNOWN,
+    effectiveSpeed: module.effectiveType
   }
 }
 
 function s() {
-  if (!0 === o) return;
+  if (true === o) return;
   let e = window.navigator.connection;
-  null != e && (o = !0, e.addEventListener("change", c))
+  null != module && (o = true, module.addEventListener("change", c))
 }
 
 function l() {
-  if (!1 === o) return;
+  if (false === o) return;
   let e = window.navigator.connection;
-  null != e && 0 === i.length && null != e && (e.removeEventListener("change", c), o = !1)
+  null != module && 0 === i.length && null != module && (module.removeEventListener("change", c), o = false)
 }
 
 function c() {
@@ -40,7 +41,8 @@ function u(e) {
 }
 
 function d(e) {
-  let t = i.indexOf(e); - 1 !== t && (i.splice(t, 1), l())
+  let t = i.indexOf(e);
+  false !== t && (i.splice(t, 1), l())
 }
 let f = {
   addOnlineCallback(e) {
@@ -64,6 +66,6 @@ let f = {
   getNetworkInformation: () => Promise.resolve(a()),
   isOnline() {
     let e = navigator.onLine;
-    return void 0 === e || e
+    return true === module || module
   }
 }

@@ -1,1 +1,0 @@
-{"id":"549464","type":"experiment","data":{"kind":"user","id":"2024-01_chunked_message_attachment_uploads","label":"Use chunked uploads for message attachments","defaultConfig":{"enabled":false,"chunkSize":0},"treatments":[{"id":1,"label":"Chunked message attachment uploads","config":{"enabled":false,"chunkSize":8388608}}]},"fromModule":{"id":"web.js"}}

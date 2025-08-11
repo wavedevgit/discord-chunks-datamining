@@ -1,18 +1,19 @@
 /** Chunk was on web.js **/
+/** chunk id: 721359, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   W: () => s
 });
-var r = n(493773),
-  i = n(436952),
-  o = n(411149),
-  a = n(151480);
+var Chunk493773 = require("./493773.js"),
+  Chunk436952 = require("./436952.js"),
+  Chunk411149 = require("./411149.js"),
+  Chunk151480 = require("./151480.js");
 
 function s() {
-  let e = (0, i.sX)({
+  let e = (0, Chunk436952.sX)({
     location: "channel_context_menu"
   });
-  (0, r.ZP)(() => {
-    o.Z.hasFetchedWallpapers || o.Z.isFetchingWallpapers || !e.enabled || (0, a.k9)()
+  (0, Chunk493773.ZP)(() => {
+    Chunk411149.Z.hasFetchedWallpapers || Chunk411149.Z.isFetchingWallpapers || !module.enabled || (0, Chunk151480.k9)()
   })
 }

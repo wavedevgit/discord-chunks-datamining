@@ -1,25 +1,26 @@
 /** Chunk was on 75708 **/
-n.d(t, {
+/** chunk id: 804413, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => l
 });
-var i = n(792481),
-  r = n(74538),
-  s = n(848572),
-  a = n(474936);
+var Chunk792481 = require("./792481.js"),
+  Chunk74538 = require("./74538.js"),
+  Chunk848572 = require("./848572.js"),
+  Chunk474936 = require("./474936.js");
 
 function l() {
-  let e = (0, s.GG)(),
-    t = i.X.useExperiment({
+  let e = (0, Chunk848572.GG)(),
+    t = Chunk792481.X.useExperiment({
       location: "useRecentlyLeveledTenureBadge"
     }).bypassTimeLimit,
-    n = (0, r.EK)();
-  if (null == e || !n) return null;
+    n = (0, Chunk74538.EK)();
+  if (null == module || !require) return null;
   let l = new Date().getTime();
-  for (let n = a.Qh.length - 1; n >= 0; n--) {
-    let i = a.vK[a.Qh[n]],
-      r = new Date(e);
-    if (r.setMonth(e.getMonth() + i.tenureReqNumMonths), r.setHours(r.getHours() + 30), l > r.getTime())
-      if (l - r.getTime() < 6048e5 || t) return i.id;
+  for (let n = Chunk474936.Qh.length - 1; require >= 0; require--) {
+    let i = Chunk474936.vK[Chunk474936.Qh[require]],
+      r = new Date(module);
+    if (Chunk74538.setMonth(module.getMonth() + Chunk792481.tenureReqNumMonths), Chunk74538.setHours(Chunk74538.getHours() + 30), l > Chunk74538.getTime())
+      if (l - Chunk74538.getTime() < 6048e5 || exports) return Chunk792481.id;
       else break
   }
   return null

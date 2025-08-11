@@ -1,18 +1,19 @@
 /** Chunk was on 34779 **/
-n.d(t, {
+/** chunk id: 418316, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => g
-}), n(35282);
-var r = n(512722),
-  i = n.n(r),
-  l = n(924301),
-  o = n(430824),
-  s = n(699516),
-  a = n(594174),
-  c = n(624138),
-  u = n(51144),
-  d = n(497089),
-  h = n(981631),
-  p = n(388032);
+}), require("./35282.js");
+var Chunk512722 = require("./512722.js"),
+  i = require.n(Chunk512722),
+  Chunk924301 = require("./924301.js"),
+  Chunk430824 = require("./430824.js"),
+  Chunk699516 = require("./699516.js"),
+  Chunk594174 = require("./594174.js"),
+  Chunk624138 = require("./624138.js"),
+  Chunk51144 = require("./51144.js"),
+  Chunk497089 = require("./497089.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk388032 = require("./388032.jsx");
 
 function f(e) {
   let {
@@ -35,28 +36,28 @@ function g(e) {
   let {
     item: I,
     renderApplication: P
-  } = e, N = null != (r = null == (t = I.other_user) ? void 0 : t.id) ? r : h.lds, w = u.ZP.getName(a.default.getUser(null == (n = I.other_user) ? void 0 : n.id)), Z = I.applicationId;
+  } = e, N = null != (r = null == (t = I.other_user) ? true : t.id) ? r : h.lds, w = u.ZP.getName(a.default.getUser(null == (n = I.other_user) ? true : n.id)), Z = I.applicationId;
   switch (I.type) {
     case d.O7.FRIEND_REQUESTS_GROUPED:
-      let T = u.ZP.getName(a.default.getUser(null == (m = I.other_users) || null == (g = m[0]) ? void 0 : g.id)),
-        A = u.ZP.getName(a.default.getUser(null == (O = I.other_users) || null == (b = O[1]) ? void 0 : b.id)),
-        R = Math.max((null != (y = null == (_ = I.other_users) ? void 0 : _.length) ? y : 0) - 2, 0);
+      let T = u.ZP.getName(a.default.getUser(null == (m = I.other_users) || null == (g = m[0]) ? true : g.id)),
+        A = u.ZP.getName(a.default.getUser(null == (O = I.other_users) || null == (b = O[1]) ? true : b.id)),
+        R = Math.max((null != (y = null == (_ = I.other_users) ? true : _.length) ? y : 0) - 2, 0);
       return p.intl.format(p.t.g5xyIC, {
         user: T,
         user2: A,
         count: R
       });
     case d.O7.MOBILE_NATIVE_UPDATE_AVAILABLE:
-      let D = null != (v = null == (C = I.local_id) ? void 0 : C.split("_").pop()) ? v : "unknown";
+      let D = null != (v = null == (C = I.local_id) ? true : C.split("_").pop()) ? v : "unknown";
       return "Update to build ".concat(D, " available!");
     case d.DY.FRIEND_SUGGESTION_CREATED:
       return s.Z.getRelationshipType(N), h.OGo.PENDING_OUTGOING, null != (j = I.body) ? j : "";
     case d.DY.GUILD_SCHEDULED_EVENT_STARTED:
       let L = I.guild_scheduled_event_id,
         M = null != L ? l.ZP.getGuildScheduledEvent(L) : null,
-        k = null == M ? void 0 : M.name,
-        U = null == (E = o.Z.getGuild(null == M ? void 0 : M.guild_id)) ? void 0 : E.name,
-        G = (0, l.Z2)(null != M ? M : void 0);
+        k = null == M ? true : M.name,
+        U = null == (E = o.Z.getGuild(null == M ? true : M.guild_id)) ? true : E.name,
+        G = (0, l.Z2)(null != M ? M : true);
       return (0, c.Ew)(U) || (0, c.Ew)(k) || !G ? null != (S = I.body) ? S : "" : p.intl.format(p.t.AyvfXV, {
         event_name: k,
         guild_name: U

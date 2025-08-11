@@ -1,8 +1,9 @@
 /** Chunk was on web.js **/
+/** chunk id: 15543, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-var r = n(581079),
-  i = n(217492);
-e.exports = function(e) {
+var Chunk581079 = require("./581079.js"),
+  Chunk217492 = require("./217492.js");
+module.exports = function(e) {
   var t = e.editorContainer;
-  return t || r(!1), i(t.firstChild) || r(!1), t.firstChild
+  return t || r(false), i(t.firstChild) || r(false), t.firstChild
 }

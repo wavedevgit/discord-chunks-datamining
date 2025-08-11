@@ -1,12 +1,13 @@
 /** Chunk was on web.js **/
+/** chunk id: 897325, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   E: () => s,
   _: () => a
-}), n(314940);
-var r = n(278074),
-  i = n(263568),
-  o = n(228127);
+}), require("./314940.js");
+var Chunk278074 = require("./278074.js"),
+  Chunk263568 = require("./263568.js"),
+  Chunk228127 = require("./228127.js");
 
 function a(e, t) {
   let n = (0, r.EQ)(t).with(i.C.IMAGE_ONLY_ANSWERS, () => o.normalStylesImageOnlyAnswers).otherwise(() => o.normalStylesDefault);
@@ -25,5 +26,5 @@ function a(e, t) {
 }
 
 function s(e, t) {
-  return e.getAvatarURL(t, 20, !1)
+  return e.getAvatarURL(t, 20, false)
 }

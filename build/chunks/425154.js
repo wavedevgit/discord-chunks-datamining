@@ -1,5 +1,6 @@
 /** Chunk was on 75708 **/
-e.exports = {
+/** chunk id: 425154, original params: e,t,n (module,exports,require) **/
+module.exports = {
   channel: "channel__972a0",
   fullWidth: "fullWidth__972a0",
   unreadPill: "unreadPill__972a0",

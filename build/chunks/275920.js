@@ -1,10 +1,11 @@
 /** Chunk was on web.js **/
+/** chunk id: 275920, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => o
 });
-var r = n(626135),
-  i = n(981631);
+var Chunk626135 = require("./626135.js"),
+  Chunk981631 = require("./981631.js");
 
 function o(e) {
   let {
@@ -29,7 +30,7 @@ function o(e) {
     channel_id: s,
     channel_type: l,
     application_id: c,
-    party_id: null != u ? u : void 0,
+    party_id: null != u ? u : true,
     other_user_id: o,
     message_id: d,
     location: f,

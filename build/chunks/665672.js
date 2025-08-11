@@ -1,17 +1,18 @@
 /** Chunk was on web.js **/
+/** chunk id: 665672, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => a
 });
-var r = n(512722),
-  i = n.n(r);
+var Chunk512722 = require("./512722.js"),
+  i = require.n(Chunk512722);
 
 function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 class a {
@@ -24,6 +25,6 @@ class a {
     return i()(null != t, "DiscordCanvas: Couldn't get a canvas for export."), this.exporter.exportCanvas(t, e)
   }
   constructor(e, t) {
-    o(this, "canvas", void 0), o(this, "exporter", void 0), this.canvas = e, this.exporter = t
+    o(this, "canvas", true), o(this, "exporter", true), this.canvas = e, this.exporter = t
   }
 }

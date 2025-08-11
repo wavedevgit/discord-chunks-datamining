@@ -1,4 +1,5 @@
 /** Chunk was on web.js **/
+/** chunk id: 921738, original params: e,t (module,exports,re quire) **/
 function n(e) {
   if (e && "object" == typeof e) {
     var t = e.which || e.keyCode || e.charCode;
@@ -9,22 +10,22 @@ function n(e) {
     o = r[n.toLowerCase()];
   if (o) return o;
   var o = i[n.toLowerCase()];
-  return o || (1 === n.length ? n.charCodeAt(0) : void 0)
+  return o || (1 === n.length ? n.charCodeAt(0) : true)
 }
 n.isEventKey = function(e, t) {
   if (e && "object" == typeof e) {
     var n = e.which || e.keyCode || e.charCode;
-    if (null == n) return !1;
+    if (null == n) returnfalse;
     if ("string" == typeof t) {
       var o = r[t.toLowerCase()];
       if (o) return o === n;
       var o = i[t.toLowerCase()];
       if (o) return o === n
     } else if ("number" == typeof t) return t === n;
-    return !1
+    returnfalse
   }
 };
-var r = (t = e.exports = n).code = t.codes = {
+var r = (t = module.exports = n).code = exports.codes = {
     backspace: 8,
     tab: 9,
     enter: 13,
@@ -69,7 +70,7 @@ var r = (t = e.exports = n).code = t.codes = {
     "]": 221,
     "'": 222
   },
-  i = t.aliases = {
+  i = exports.aliases = {
     windows: 91,
     "⇧": 16,
     "⌥": 18,
@@ -95,6 +96,6 @@ for (o = 97; o < 123; o++) r[String.fromCharCode(o)] = o - 32;
 for (var o = 48; o < 58; o++) r[o - 48] = o;
 for (o = 1; o < 13; o++) r["f" + o] = o + 111;
 for (o = 0; o < 10; o++) r["numpad " + o] = o + 96;
-var a = t.names = t.title = {};
+var a = exports.names = exports.title = {};
 for (o in r) a[r[o]] = o;
 for (var s in i) r[s] = i[s]

@@ -1,28 +1,29 @@
 /** Chunk was on web.js **/
+/** chunk id: 911560, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => E
 });
-var r = n(114858),
-  i = n(544891),
-  o = n(570140),
-  a = n(333023),
-  s = n(38618),
-  l = n(893607),
-  c = n(131704),
-  u = n(592125),
-  d = n(944486),
-  f = n(981631),
-  _ = n(176505);
+var Chunk114858 = require("./114858.js"),
+  Chunk544891 = require("./544891.js"),
+  Chunk570140 = require("./570140.js"),
+  Chunk333023 = require("./333023.js"),
+  Chunk38618 = require("./38618.js"),
+  Chunk893607 = require("./893607.js"),
+  Chunk131704 = require("./131704.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk944486 = require("./944486.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk176505 = require("./176505.js");
 let p = {},
-  h = !1;
+  h = false;
 
 function m() {
-  h || (h = !0, o.Z.subscribe("CONNECTION_OPEN", () => {
+  h || (h = true, Chunk570140.Z.subscribe("CONNECTION_OPEN", () => {
     p = {};
-    let e = d.Z.getChannelId(),
-      t = u.Z.getChannel(e);
-    null != e && null == t && g(e)
+    let e = Chunk944486.Z.getChannelId(),
+      t = Chunk592125.Z.getChannel(module);
+    null != module && null == exports && g(module)
   }))
 }
 
@@ -34,11 +35,11 @@ function g(e) {
     else return Promise.resolve();
   let n = (0, r.LX)(location.pathname, {
       path: f.Z5c.CHANNEL(l.Hw.guildId(), l.Hw.channelId(), ":messageId"),
-      exact: !0
+      exact: true
     }),
     d = i.tn.get({
       url: f.ANM.CHANNEL(e),
-      rejectWithError: !1
+      rejectWithError: false
     }).then(t => {
       let {
         body: r
@@ -50,7 +51,7 @@ function g(e) {
         o.Z.dispatch({
           type: "THREAD_CREATE",
           channel: (0, c.q_)(r),
-          messageId: null == n || null == (i = n.params) ? void 0 : i.messageId
+          messageId: null == n || null == (i = n.params) ? true : i.messageId
         })
       }
     }).catch(() => {
@@ -61,8 +62,8 @@ function g(e) {
         type: "CHANNEL_DELETE",
         channel: {
           id: e,
-          guild_id: null == n || null == (t = n.params) ? void 0 : t.guildId,
-          parent_id: void 0
+          guild_id: null == n || null == (t = n.params) ? true : t.guildId,
+          parent_id: true
         }
       })
     });

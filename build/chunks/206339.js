@@ -1,4 +1,5 @@
 /** Chunk was on web.js **/
+/** chunk id: 206339, original params: e (module,exports,re quire) **/
 function t(e) {
   if (e) return n(e)
 }
@@ -7,7 +8,7 @@ function n(e) {
   for (var n in t.prototype) e[n] = t.prototype[n];
   return e
 }
-e.exports = t, t.prototype.on = t.prototype.addEventListener = function(e, t) {
+module.exports = t, t.prototype.on = t.prototype.addEventListener = function(e, t) {
   return this._callbacks = this._callbacks || {}, (this._callbacks["$" + e] = this._callbacks["$" + e] || []).push(t), this
 }, t.prototype.once = function(e, t) {
   function n() {

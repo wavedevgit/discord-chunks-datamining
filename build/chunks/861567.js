@@ -1,8 +1,9 @@
 /** Chunk was on web.js **/
+/** chunk id: 861567, original params: e (module,exports,re quire) **/
 "use strict";
 var t = TypeError,
   n = 0x1fffffffffffff;
-e.exports = function(e) {
+module.exports = function(e) {
   if (e > n) throw t("Maximum allowed index exceeded");
   return e
 }

@@ -1,5 +1,6 @@
 /** Chunk was on 97573 **/
-e.exports = {
+/** chunk id: 612657, original params: e,t,n (module,exports,require) **/
+module.exports = {
   container: "container_a429ea",
   row: "row_a429ea",
   revokeInvite: "revokeInvite_a429ea",

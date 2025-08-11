@@ -1,4 +1,5 @@
 /** Chunk was on 31077 **/
+/** chunk id: 519342, original params: e (module,exports,require) **/
 var t = "\ud800-\udfff",
   u = "\\u2700-\\u27bf",
   r = "a-z\\xdf-\\xf6\\xf8-\\xff",
@@ -20,6 +21,6 @@ var t = "\ud800-\udfff",
   A = "(?:\\u200d(?:" + ["[^" + t + "]", d, c].join("|") + ")" + g + E + ")*",
   b = "(?:" + ["[" + u + "]", d, c].join("|") + ")" + (g + E + A),
   y = RegExp([x + "?" + s + "+" + h + "(?=" + [i, x, "$"].join("|") + ")", p + "+" + v + "(?=" + [i, x + l, "$"].join("|") + ")", x + "?" + l + "+" + h, x + "+" + v, "\\d*(?:1ST|2ND|3RD|(?![123])\\dTH)(?=\\b|[a-z_])", "\\d*(?:1st|2nd|3rd|(?![123])\\dth)(?=\\b|[A-Z_])", "\\d+", b].join("|"), "g");
-e.exports = function(e) {
+module.exports = function(e) {
   return e.match(y) || []
 }

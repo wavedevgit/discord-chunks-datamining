@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 99420, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   tile: "tile__90dc5",
   noBorder: "noBorder__90dc5"
 }

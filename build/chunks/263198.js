@@ -1,10 +1,11 @@
 /** Chunk was on web.js **/
+/** chunk id: 263198, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   C: () => c
 });
-var r = n(688619),
-  i = n.n(r);
+var Chunk688619 = require("./688619.js"),
+  i = require.n(Chunk688619);
 let o = ["#94E0CF", "#9AF0B1", "#9A90FF", "#9A53FF", "#FDA6E4", "#FFE6C0", "#EFB4AA", "#56B69F", "#29C566", "#5348CA", "#6D24D4", "#CA48C8", "#F0AE29", "#DF4232"],
   a = [0, 45, 90, 135, 180, 225, 270, 315],
   s = [20, 40, 60, 80],
@@ -15,18 +16,18 @@ function c() {
   if (!(.8 > Math.random())) return {
     type: "solid",
     colors: [o[Math.floor(Math.random() * o.length)]],
-    intensity: e
+    intensity: module
   };
   let t = a[Math.floor(Math.random() * a.length)];
   if ("path1" == (.2 > Math.random() ? "path1" : "path2")) {
     let n = Math.floor(Math.random() * o.length),
       r = Math.floor(Math.random() * o.length);
-    for (; r === n;) r = Math.floor(Math.random() * o.length);
+    for (; Chunk688619 === require;) r = Math.floor(Math.random() * o.length);
     return {
       type: "gradient",
-      colors: [o[n], o[r]],
-      angle: t,
-      intensity: e,
+      colors: [o[require], o[Chunk688619]],
+      angle: exports,
+      intensity: module,
       gradientType: "two-color"
     }
   } {
@@ -34,10 +35,10 @@ function c() {
       r = l[Math.floor(Math.random() * l.length)];
     return {
       type: "gradient",
-      colors: p(n, r),
-      angle: t,
-      intensity: e,
-      gradientType: r
+      colors: p(require, Chunk688619),
+      angle: exports,
+      intensity: module,
+      gradientType: Chunk688619
     }
   }
 }

@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 30804, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   ephemeral: "ephemeral__5126c",
   nitroMessage: "nitroMessage__5126c",
   automodMessage: "automodMessage__5126c",

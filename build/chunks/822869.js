@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 822869, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Ad: () => m,
   Lb: () => d,
   ZF: () => p,
@@ -8,19 +9,19 @@ n.d(t, {
   mh: () => h,
   sF: () => f
 });
-var r = n(73800),
-  i = n(392711),
-  o = n(367907),
-  a = n(592125),
-  s = n(626135),
-  l = n(981631);
+var Chunk73800 = require("./73800.js"),
+  Chunk392711 = require("./392711.js"),
+  Chunk367907 = require("./367907.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk626135 = require("./626135.js"),
+  Chunk981631 = require("./981631.js");
 
 function c(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -86,12 +87,12 @@ function _(e) {
     s.default.track(l.rMx.MESSAGE_SHORTCUT_ACTION_SENT, u({
       action: "forward",
       original_message_id: n
-    }, (0, o.hH)(null == e ? void 0 : e.guild_id), (0, o.v_)(e)))
+    }, (0, o.hH)(null == e ? true : e.guild_id), (0, o.v_)(e)))
   }
 }
 
 function p() {
-  return r.useMemo(() => (0, i.once)((e, t, n) => {
+  return Chunk73800.useMemo(() => (0, Chunk392711.once)((e, t, n) => {
     s.default.track(l.rMx.FORWARD_ADD_RECIPIENT, {
       channel_id: e,
       message_id: t,
@@ -101,7 +102,7 @@ function p() {
 }
 
 function h() {
-  return r.useMemo(() => (0, i.once)((e, t) => {
+  return Chunk73800.useMemo(() => (0, Chunk392711.once)((e, t) => {
     s.default.track(l.rMx.FORWARD_EDIT_SEARCH, {
       channel_id: e,
       message_id: t
@@ -110,7 +111,7 @@ function h() {
 }
 
 function m() {
-  return r.useMemo(() => (0, i.once)((e, t) => {
+  return Chunk73800.useMemo(() => (0, Chunk392711.once)((e, t) => {
     s.default.track(l.rMx.FORWARD_EDIT_CONTEXT_MESSAGE, {
       channel_id: e,
       message_id: t

@@ -1,1 +1,0 @@
-{"id":"321231","type":"experiment","data":{"kind":"user","id":"2024-12_app_embeds_redesign","label":"App Embeds Redesign","defaultConfig":{"enabled":false},"commonTriggerPoint":"i.$P.CONNECTION_OPEN","treatments":[{"id":1,"label":"Enable","config":{"enabled":false}}]},"fromModule":{"id":"1272"}}

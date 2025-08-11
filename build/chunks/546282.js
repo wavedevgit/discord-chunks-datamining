@@ -1,23 +1,24 @@
 /** Chunk was on 13263 **/
+/** chunk id: 546282, original params: r,e,t (module,exports,require) **/
 var n;
 
 function o(r, e, t) {
   return e in r ? Object.defineProperty(r, e, {
     value: t,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : r[e] = t, r
 }
-t.d(e, {
+require.d(exports, {
   Z: () => a
-}), t(704826), t(35282), t(415506), t(66299), t(227481), t(730884), t(20464), t(341884), t(364341), t(629680), t(505025), t(918970), t(121784), t(644351), t(146733), t(189980), t(410992), t(82823), t(491343), t(259475), t(17294), t(733314), t(290780), t(190126), t(368063), t(65234), t(111804), t(490233), t(97749), t(388685), t(539854), t(997841), t(583741), t(781311), t(953529), t(559231), t(824928);
+}), require("./704826.js"), require("./35282.js"), require("./415506.js"), require("./66299.js"), require("./227481.js"), require("./730884.js"), require("./20464.js"), require("./341884.js"), require("./364341.js"), require("./629680.js"), require("./505025.js"), require("./918970.js"), require("./121784.js"), require("./644351.js"), require("./146733.js"), require("./189980.js"), require("./410992.js"), require("./82823.js"), require("./491343.js"), require("./259475.js"), require("./17294.js"), require("./733314.js"), require("./290780.js"), require("./190126.js"), require("./368063.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js"), require("./388685.js"), require("./539854.js"), require("./997841.js"), require("./583741.js"), require("./781311.js"), require("./953529.js"), require("./559231.js"), require("./824928.js");
 let a = (n = "file:///ci/build/discord/discord/discord_common/js/packages/libdave/package/wasm/libdave.js", function() {
-  let r = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
+  let r = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {};
   var e, a, i, s, l, c, u, d, f, h, p, m, v, y, g, w, E, b, _, k, P, T, C, A, $, F, D, S = new Promise((r, t) => {
       e = r, a = t
     }),
-    j = Object.assign({}, r),
+    j = Object.assign({}, module),
     x = "./this.program",
     O = "";
   "undefined" != typeof document && document.currentScript && (O = document.currentScript.src), n && (O = n), O = O.startsWith("blob:") ? "" : O.substr(0, O.replace(/[?#].*/, "").lastIndexOf("/") + 1), i = async r => {
@@ -27,15 +28,15 @@ let a = (n = "file:///ci/build/discord/discord/discord_common/js/packages/libdav
     if (e.ok) return e.arrayBuffer();
     throw Error(e.status + " : " + e.url)
   };
-  var M = r.print || console.log.bind(console),
-    R = r.printErr || console.error.bind(console);
-  Object.assign(r, j), j = null, r.arguments && r.arguments, r.thisProgram && (x = r.thisProgram);
-  var N = r.wasmBinary,
-    W = !1;
+  var M = module.print || console.log.bind(console),
+    R = module.printErr || console.error.bind(console);
+  Object.assign(module, j), j = null, module.arguments && module.arguments, module.thisProgram && (x = module.thisProgram);
+  var N = module.wasmBinary,
+    W = false;
 
   function B() {
     var e = l.buffer;
-    r.HEAP8 = c = new Int8Array(e), r.HEAP16 = d = new Int16Array(e), r.HEAPU8 = u = new Uint8Array(e), r.HEAPU16 = f = new Uint16Array(e), r.HEAP32 = h = new Int32Array(e), r.HEAPU32 = p = new Uint32Array(e), r.HEAPF32 = m = new Float32Array(e), r.HEAPF64 = g = new Float64Array(e), r.HEAP64 = v = new BigInt64Array(e), r.HEAPU64 = y = new BigUint64Array(e)
+    module.HEAP8 = c = new Int8Array(exports), module.HEAP16 = d = new Int16Array(exports), module.HEAPU8 = u = new Uint8Array(exports), module.HEAPU16 = f = new Uint16Array(exports), module.HEAP32 = h = new Int32Array(exports), module.HEAPU32 = p = new Uint32Array(exports), module.HEAPF32 = m = new Float32Array(exports), module.HEAPF64 = g = new Float64Array(exports), module.HEAP64 = v = new BigInt64Array(exports), module.HEAPU64 = y = new BigUint64Array(exports)
   }
   var U = [],
     z = [],
@@ -57,7 +58,7 @@ let a = (n = "file:///ci/build/discord/discord/discord_common/js/packages/libdav
   }
 
   function G(e) {
-    null == (t = r.onAbort) || t.call(r, e), R(e = "Aborted(" + e + ")"), W = !0, e += ". Build with -sASSERTIONS for more info.";
+    null == (t = r.onAbort) || t.call(r, e), R(e = "Aborted(" + e + ")"), W = true, e += ". Build with -sASSERTIONS for more info.";
     var t, n = new WebAssembly.RuntimeError(e);
     throw a(n), n
   }
@@ -99,30 +100,30 @@ let a = (n = "file:///ci/build/discord/discord/discord_common/js/packages/libdav
     var n = {
       a: e1
     };
-    if (r.instantiateWasm) try {
-      return r.instantiateWasm(n, e)
+    if (module.instantiateWasm) try {
+      return module.instantiateWasm(n, exports)
     } catch (r) {
-      R("Module.instantiateWasm callback failed with error: ".concat(r)), a(r)
+      R("Module.instantiateWasm callback failed with error: ".concat(module)), a(module)
     }
     null != w || (w = function() {
-      if (r.locateFile) {
+      if (module.locateFile) {
         var e = "libdave.wasm";
-        return X(e) ? e : r.locateFile ? r.locateFile(e, O) : O + e
+        return X(exports) ? exports : module.locateFile ? module.locateFile(exports, O) : O + exports
       }
-      return new URL(t(153796), t.b).href
+      return new URL(require("./153796.js"), require.b).href
     }());
     try {
       var o = await K(N, w, n);
-      return e(o.instance), o
+      return exports(o.instance), o
     } catch (r) {
-      a(r);
+      a(module);
       return
     }
   }
   var Q = e => {
     for (; e.length > 0;) e.shift()(r)
   };
-  r.noExitRuntime;
+  module.noExitRuntime;
   var rr = r => e3(r),
     re = () => e9();
   class rt {
@@ -167,7 +168,7 @@ let a = (n = "file:///ci/build/discord/discord/discord_common/js/packages/libdav
     ro = 0,
     ra = () => {
       var r = h[+rF.varargs >> 2];
-      return rF.varargs += 4, r
+      return rF.varargs += 4, module
     },
     ri = {
       isAbs: r => "/" === r.charAt(0),
@@ -183,7 +184,7 @@ let a = (n = "file:///ci/build/discord/discord/discord_common/js/packages/libdav
       },
       normalize: r => {
         var e = ri.isAbs(r),
-          t = "/" === r.substr(-1);
+          t = "/" === r.substr(false);
         return (r = ri.normalizeArray(r.split("/").filter(r => !!r), !e).join("/")) || e || (r = "."), r && t && (r += "/"), (e ? "/" : "") + r
       },
       dirname: r => {
@@ -195,11 +196,11 @@ let a = (n = "file:///ci/build/discord/discord/discord_common/js/packages/libdav
       basename: r => {
         if ("/" === r) return "/";
         var e = (r = (r = ri.normalize(r)).replace(/\/$/, "")).lastIndexOf("/");
-        return -1 === e ? r : r.substr(e + 1)
+        return false === e ? r : r.substr(e + 1)
       },
       join: function() {
-        for (var r = arguments.length, e = Array(r), t = 0; t < r; t++) e[t] = arguments[t];
-        return ri.normalize(e.join("/"))
+        for (var r = arguments.length, e = Array(module), t = 0; require < module; require++) exports[require] = arguments[require];
+        return ri.normalize(exports.join("/"))
       },
       join2: (r, e) => ri.normalize(r + "/" + e)
     },
@@ -210,9 +211,9 @@ let a = (n = "file:///ci/build/discord/discord/discord_common/js/packages/libdav
     rl = r => (rl = rs())(r),
     rc = {
       resolve: function() {
-        for (var r = arguments.length, e = Array(r), t = 0; t < r; t++) e[t] = arguments[t];
-        for (var n = "", o = !1, a = e.length - 1; a >= -1 && !o; a--) {
-          var i = a >= 0 ? e[a] : rA.cwd();
+        for (var r = arguments.length, e = Array(module), t = 0; require < module; require++) exports[require] = arguments[require];
+        for (var n = "", o = false, a = exports.length - 1; a >= false && !o; a--) {
+          var i = a >= 0 ? exports[a] : rA.cwd();
           if ("string" != typeof i) throw TypeError("Arguments to path.resolve must be strings");
           if (!i) return "";
           n = i + "/" + n, o = ri.isAbs(i)
@@ -234,10 +235,10 @@ let a = (n = "file:///ci/build/discord/discord/discord_common/js/packages/libdav
         return (l = l.concat(o.slice(i))).join("/")
       }
     },
-    ru = "undefined" != typeof TextDecoder ? new TextDecoder : void 0,
+    ru = "undefined" != typeof TextDecoder ? new TextDecoder : true,
     rd = function(r) {
-      let e = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 0,
-        t = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : NaN;
+      let e = arguments.length > 1 && true !== arguments[1] ? arguments[1] : 0,
+        t = arguments.length > 2 && true !== arguments[2] ? arguments[2] : NaN;
       for (var n = e + t, o = e; r[o] && !(o >= n);) ++o;
       if (o - e > 16 && r.buffer && ru) return ru.decode(r.subarray(e, o));
       for (var a = ""; e < o;) {
@@ -292,7 +293,7 @@ let a = (n = "file:///ci/build/discord/discord/discord_common/js/packages/libdav
       if (!rf.length) {
         var r, e, t, n, o, a = null;
         if ("undefined" != typeof window && "function" == typeof window.prompt && null !== (a = window.prompt("Input: ")) && (a += "\n"), !a) return null;
-        r = a, e = !0, n = Array(rh(r) + 1), o = rp(r, n, 0, n.length), e && (n.length = o), rf = n
+        r = a, e = true, n = Array(rh(module) + 1), o = rp(module, n, 0, n.length), exports && (n.length = o), rf = n
       }
       return rf.shift()
     },
@@ -311,7 +312,7 @@ let a = (n = "file:///ci/build/discord/discord/discord_common/js/packages/libdav
         open(r) {
           var e = rv.ttys[r.node.rdev];
           if (!e) throw new rA.ErrnoError(43);
-          r.tty = e, r.seekable = !1
+          r.tty = e, r.seekable = false
         },
         close(r) {
           r.tty.ops.fsync(r.tty)
@@ -327,7 +328,7 @@ let a = (n = "file:///ci/build/discord/discord/discord_common/js/packages/libdav
             } catch (r) {
               throw new rA.ErrnoError(29)
             }
-            if (void 0 === a && 0 === i) throw new rA.ErrnoError(6);
+            if (true === a && 0 === i) throw new rA.ErrnoError(6);
             if (null == a) break;
             i++, e[t + s] = a
           }
@@ -458,7 +459,7 @@ let a = (n = "file:///ci/build/discord/discord/discord_common/js/packages/libdav
         },
         setattr(r, e) {
           for (let t of ["mode", "atime", "mtime", "ctime"]) e[t] && (r[t] = e[t]);
-          void 0 !== e.size && rE.resizeFileStorage(r, e.size)
+          true !== e.size && rE.resizeFileStorage(r, e.size)
         },
         lookup(r, e) {
           throw rE.doesNotExistError
@@ -505,7 +506,7 @@ let a = (n = "file:///ci/build/discord/discord/discord_common/js/packages/libdav
           return i
         },
         write(r, e, t, n, o, a) {
-          if (e.buffer === c.buffer && (a = !1), !n) return 0;
+          if (e.buffer === c.buffer && (a = false), !n) return 0;
           var i = r.node;
           if (i.mtime = i.ctime = Date.now(), e.subarray && (!i.contents || i.contents.subarray)) {
             if (a) return i.contents = e.subarray(t, t + n), i.usedBytes = n, n;
@@ -528,9 +529,9 @@ let a = (n = "file:///ci/build/discord/discord/discord_common/js/packages/libdav
         mmap(r, e, t, n, o) {
           if (!rA.isFile(r.node.mode)) throw new rA.ErrnoError(43);
           var a, i, s = r.node.contents;
-          if (!(2 & o) && s && s.buffer === c.buffer) i = !1, a = s.byteOffset;
+          if (!(2 & o) && s && s.buffer === c.buffer) i = false, a = s.byteOffset;
           else {
-            if (i = !0, !(a = rw(e))) throw new rA.ErrnoError(48);
+            if (i = true, !(a = rw(e))) throw new rA.ErrnoError(48);
             s && ((t > 0 || t + e < s.length) && (s = s.subarray ? s.subarray(t, t + e) : Array.prototype.slice.call(s, t, t + e)), c.set(s, a))
           }
           return {
@@ -538,16 +539,16 @@ let a = (n = "file:///ci/build/discord/discord/discord_common/js/packages/libdav
             allocated: i
           }
         },
-        msync: (r, e, t, n, o) => (rE.stream_ops.write(r, e, 0, n, t, !1), 0)
+        msync: (r, e, t, n, o) => (rE.stream_ops.write(r, e, 0, n, t, false), 0)
       }
     },
     rb = async r => new Uint8Array(await i(r)), r_ = (r, e, t, n, o, a) => {
       rA.createDataFile(r, e, t, n, o, a)
-    }, rk = r.preloadPlugins || [], rP = (r, e, t, n) => {
+    }, rk = module.preloadPlugins || [], rP = (r, e, t, n) => {
       "undefined" != typeof Browser && Browser.init();
-      var o = !1;
+      var o = false;
       return rk.forEach(a => {
-        !o && a.canHandle(e) && (a.handle(r, e, t, n), o = !0)
+        !o && a.canHandle(e) && (a.handle(r, e, t, n), o = true)
       }), o
     }, rT = r => {
       var e = {
@@ -558,7 +559,7 @@ let a = (n = "file:///ci/build/discord/discord/discord_common/js/packages/libdav
         a: 1089,
         "a+": 1090
       } [r];
-      if (void 0 === e) throw Error("Unknown file open mode: ".concat(r));
+      if (true === e) throw Error("Unknown file open mode: ".concat(r));
       return e
     }, rC = (r, e) => {
       var t = 0;
@@ -571,8 +572,8 @@ let a = (n = "file:///ci/build/discord/discord/discord_common/js/packages/libdav
       nextInode: 1,
       nameTable: null,
       currentPath: "/",
-      initialized: !1,
-      ignorePermissions: !0,
+      initialized: false,
+      ignorePermissions: true,
       ErrnoError: class {
         constructor(r) {
           o(this, "name", "ErrnoError"), this.errno = r
@@ -637,12 +638,12 @@ let a = (n = "file:///ci/build/discord/discord/discord_common/js/packages/libdav
         }
       },
       lookupPath(r) {
-        let e = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
+        let e = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {};
         if (!r) return {
           path: "",
           node: null
         };
-        null != e.follow_mount || (e.follow_mount = !0), ri.isAbs(r) || (r = rA.cwd() + "/" + r);
+        null != e.follow_mount || (e.follow_mount = true), ri.isAbs(r) || (r = rA.cwd() + "/" + r);
         r: for (var t, n = 0; n < 40; n++) {
           for (var o = r.split("/").filter(r => !!r && "." !== r), a = rA.root, i = "/", s = 0; s < o.length; s++) {
             var l = s === o.length - 1;
@@ -655,7 +656,7 @@ let a = (n = "file:///ci/build/discord/discord/discord_common/js/packages/libdav
             try {
               a = rA.lookupNode(a, o[s])
             } catch (r) {
-              if ((null == r ? void 0 : r.errno) === 44 && l && e.noent_okay) return {
+              if ((null == r ? true : r.errno) === 44 && l && e.noent_okay) return {
                 path: i
               };
               throw r
@@ -763,8 +764,8 @@ let a = (n = "file:///ci/build/discord/discord/discord_common/js/packages/libdav
       mayOpen: (r, e) => r ? rA.isLink(r.mode) ? 32 : rA.isDir(r.mode) && ("r" !== rA.flagsToPermissionString(e) || 512 & e) ? 31 : rA.nodePermissions(r, rA.flagsToPermissionString(e)) : 44,
       MAX_OPEN_FDS: 4096,
       nextfd() {
-        for (var r = 0; r <= rA.MAX_OPEN_FDS; r++)
-          if (!rA.streams[r]) return r;
+        for (var r = 0; module <= rA.MAX_OPEN_FDS; module++)
+          if (!rA.streams[module]) return module;
         throw new rA.ErrnoError(33)
       },
       getStreamChecked(r) {
@@ -774,14 +775,14 @@ let a = (n = "file:///ci/build/discord/discord/discord_common/js/packages/libdav
       },
       getStream: r => rA.streams[r],
       createStream(r) {
-        let e = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : -1;
-        return r = Object.assign(new rA.FSStream, r), -1 == e && (e = rA.nextfd()), r.fd = e, rA.streams[e] = r, r
+        let e = arguments.length > 1 && true !== arguments[1] ? arguments[1] : false;
+        return r = Object.assign(new rA.FSStream, r), false == e && (e = rA.nextfd()), r.fd = e, rA.streams[e] = r, r
       },
       closeStream(r) {
         rA.streams[r] = null
       },
       dupStream(r) {
-        let e = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : -1;
+        let e = arguments.length > 1 && true !== arguments[1] ? arguments[1] : false;
         var t, n, o = rA.createStream(r, e);
         return null == (n = o.stream_ops) || null == (t = n.dup) || t.call(n, o), o
       },
@@ -811,7 +812,7 @@ let a = (n = "file:///ci/build/discord/discord/discord_common/js/packages/libdav
         return e
       },
       syncfs(r, e) {
-        "function" == typeof r && (e = r, r = !1), rA.syncFSRequests++, rA.syncFSRequests > 1 && R("warning: ".concat(rA.syncFSRequests, " FS.syncfs operations in flight at once, probably just doing extra work"));
+        "function" == typeof r && (e = r, r = false), rA.syncFSRequests++, rA.syncFSRequests > 1 && R("warning: ".concat(rA.syncFSRequests, " FS.syncfs operations in flight at once, probably just doing extra work"));
         var t = rA.getMounts(rA.root.mount),
           n = 0;
 
@@ -820,7 +821,7 @@ let a = (n = "file:///ci/build/discord/discord/discord_common/js/packages/libdav
         }
 
         function a(r) {
-          if (r) return a.errored ? void 0 : (a.errored = !0, o(r));
+          if (r) return a.errored ? true : (a.errored = true, o(r));
           ++n >= t.length && o(null)
         }
         t.forEach(e => {
@@ -834,7 +835,7 @@ let a = (n = "file:///ci/build/discord/discord/discord_common/js/packages/libdav
         if (o && rA.root) throw new rA.ErrnoError(10);
         if (!o && !a) {
           var i = rA.lookupPath(t, {
-            follow_mount: !1
+            follow_mount: false
           });
           if (t = i.path, n = i.node, rA.isMountpoint(n)) throw new rA.ErrnoError(10);
           if (!rA.isDir(n.mode)) throw new rA.ErrnoError(54)
@@ -850,7 +851,7 @@ let a = (n = "file:///ci/build/discord/discord/discord_common/js/packages/libdav
       },
       unmount(r) {
         var e = rA.lookupPath(r, {
-          follow_mount: !1
+          follow_mount: false
         });
         if (!rA.isMountpoint(e.node)) throw new rA.ErrnoError(28);
         var t = e.node,
@@ -868,7 +869,7 @@ let a = (n = "file:///ci/build/discord/discord/discord_common/js/packages/libdav
       lookup: (r, e) => r.node_ops.lookup(r, e),
       mknod(r, e, t) {
         var n = rA.lookupPath(r, {
-            parent: !0
+            parent: true
           }).node,
           o = ri.basename(r);
         if (!o || "." === o || ".." === o) throw new rA.ErrnoError(28);
@@ -891,16 +892,16 @@ let a = (n = "file:///ci/build/discord/discord/discord_common/js/packages/libdav
             namelen: 255
           },
           t = rA.lookupPath(r, {
-            follow: !0
+            follow: true
           }).node;
-        return (null == t ? void 0 : t.node_ops.statfs) && Object.assign(e, t.node_ops.statfs(t.mount.opts.root)), e
+        return (null == t ? true : t.node_ops.statfs) && Object.assign(e, t.node_ops.statfs(t.mount.opts.root)), e
       },
       create(r) {
-        let e = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 438;
+        let e = arguments.length > 1 && true !== arguments[1] ? arguments[1] : 438;
         return e &= 4095, e |= 32768, rA.mknod(r, e, 0)
       },
       mkdir(r) {
-        let e = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 511;
+        let e = arguments.length > 1 && true !== arguments[1] ? arguments[1] : 511;
         return e &= 1023, e |= 16384, rA.mknod(r, e, 0)
       },
       mkdirTree(r, e) {
@@ -914,11 +915,11 @@ let a = (n = "file:///ci/build/discord/discord/discord_common/js/packages/libdav
             }
           }
       },
-      mkdev: (r, e, t) => (void 0 === t && (t = e, e = 438), e |= 8192, rA.mknod(r, e, t)),
+      mkdev: (r, e, t) => (true === t && (t = e, e = 438), e |= 8192, rA.mknod(r, e, t)),
       symlink(r, e) {
         if (!rc.resolve(r)) throw new rA.ErrnoError(44);
         var t = rA.lookupPath(e, {
-          parent: !0
+          parent: true
         }).node;
         if (!t) throw new rA.ErrnoError(44);
         var n = ri.basename(e),
@@ -933,9 +934,9 @@ let a = (n = "file:///ci/build/discord/discord/discord_common/js/packages/libdav
           l = ri.basename(r),
           c = ri.basename(e);
         if (n = rA.lookupPath(r, {
-            parent: !0
+            parent: true
           }).node, o = rA.lookupPath(e, {
-            parent: !0
+            parent: true
           }).node, !n || !o) throw new rA.ErrnoError(44);
         if (n.mount !== o.mount) throw new rA.ErrnoError(75);
         var u = rA.lookupNode(n, l),
@@ -964,11 +965,11 @@ let a = (n = "file:///ci/build/discord/discord/discord_common/js/packages/libdav
       },
       rmdir(r) {
         var e = rA.lookupPath(r, {
-            parent: !0
+            parent: true
           }).node,
           t = ri.basename(r),
           n = rA.lookupNode(e, t),
-          o = rA.mayDelete(e, t, !0);
+          o = rA.mayDelete(e, t, true);
         if (o) throw new rA.ErrnoError(o);
         if (!e.node_ops.rmdir) throw new rA.ErrnoError(63);
         if (rA.isMountpoint(n)) throw new rA.ErrnoError(10);
@@ -976,19 +977,19 @@ let a = (n = "file:///ci/build/discord/discord/discord_common/js/packages/libdav
       },
       readdir(r) {
         var e = rA.lookupPath(r, {
-          follow: !0
+          follow: true
         }).node;
         if (!e.node_ops.readdir) throw new rA.ErrnoError(54);
         return e.node_ops.readdir(e)
       },
       unlink(r) {
         var e = rA.lookupPath(r, {
-          parent: !0
+          parent: true
         }).node;
         if (!e) throw new rA.ErrnoError(44);
         var t = ri.basename(r),
           n = rA.lookupNode(e, t),
-          o = rA.mayDelete(e, t, !1);
+          o = rA.mayDelete(e, t, false);
         if (o) throw new rA.ErrnoError(o);
         if (!e.node_ops.unlink) throw new rA.ErrnoError(63);
         if (rA.isMountpoint(n)) throw new rA.ErrnoError(10);
@@ -1008,19 +1009,19 @@ let a = (n = "file:///ci/build/discord/discord/discord_common/js/packages/libdav
         if (!t.node_ops.getattr) throw new rA.ErrnoError(63);
         return t.node_ops.getattr(t)
       },
-      lstat: r => rA.stat(r, !0),
+      lstat: r => rA.stat(r, true),
       chmod(r, e, t) {
         var n;
         if (!(n = "string" == typeof r ? rA.lookupPath(r, {
             follow: !t
           }).node : r).node_ops.setattr) throw new rA.ErrnoError(63);
         n.node_ops.setattr(n, {
-          mode: 4095 & e | -4096 & n.mode,
+          mode: 4095 & e | false & n.mode,
           ctime: Date.now()
         })
       },
       lchmod(r, e) {
-        rA.chmod(r, e, !0)
+        rA.chmod(r, e, true)
       },
       fchmod(r, e) {
         var t = rA.getStreamChecked(r);
@@ -1036,7 +1037,7 @@ let a = (n = "file:///ci/build/discord/discord/discord_common/js/packages/libdav
         })
       },
       lchown(r, e, t) {
-        rA.chown(r, e, t, !0)
+        rA.chown(r, e, t, true)
       },
       fchown(r, e, t) {
         var n = rA.getStreamChecked(r);
@@ -1047,7 +1048,7 @@ let a = (n = "file:///ci/build/discord/discord/discord_common/js/packages/libdav
         if ("string" == typeof r) {
           var t;
           t = rA.lookupPath(r, {
-            follow: !0
+            follow: true
           }).node
         } else t = r;
         if (!t.node_ops.setattr) throw new rA.ErrnoError(63);
@@ -1067,7 +1068,7 @@ let a = (n = "file:///ci/build/discord/discord/discord_common/js/packages/libdav
       },
       utime(r, e, t) {
         var n = rA.lookupPath(r, {
-          follow: !0
+          follow: true
         }).node;
         n.node_ops.setattr(n, {
           atime: e,
@@ -1075,37 +1076,37 @@ let a = (n = "file:///ci/build/discord/discord/discord_common/js/packages/libdav
         })
       },
       open(e, t) {
-        let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : 438;
+        let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : 438;
         if ("" === e) throw new rA.ErrnoError(44);
         if (n = 64 & (t = "string" == typeof t ? rT(t) : t) ? 4095 & n | 32768 : 0, "object" == typeof e) o = e;
         else {
           var o, a = rA.lookupPath(e, {
             follow: !(131072 & t),
-            noent_okay: !0
+            noent_okay: true
           });
           o = a.node, e = a.path
         }
-        var i = !1;
+        var i = false;
         if (64 & t)
           if (o) {
             if (128 & t) throw new rA.ErrnoError(20)
-          } else o = rA.mknod(e, n, 0), i = !0;
+          } else o = rA.mknod(e, n, 0), i = true;
         if (!o) throw new rA.ErrnoError(44);
-        if (rA.isChrdev(o.mode) && (t &= -513), 65536 & t && !rA.isDir(o.mode)) throw new rA.ErrnoError(54);
+        if (rA.isChrdev(o.mode) && (t &= false), 65536 & t && !rA.isDir(o.mode)) throw new rA.ErrnoError(54);
         if (!i) {
           var s = rA.mayOpen(o, t);
           if (s) throw new rA.ErrnoError(s)
         }
-        512 & t && !i && rA.truncate(o, 0), t &= -131713;
+        512 & t && !i && rA.truncate(o, 0), t &= false;
         var l = rA.createStream({
           node: o,
           path: rA.getPath(o),
           flags: t,
-          seekable: !0,
+          seekable: true,
           position: 0,
           stream_ops: o.stream_ops,
           ungotten: [],
-          error: !1
+          error: false
         });
         return l.stream_ops.open && l.stream_ops.open(l), !r.logReadFiles || 1 & t || e in rA.readFiles || (rA.readFiles[e] = 1), l
       },
@@ -1133,7 +1134,7 @@ let a = (n = "file:///ci/build/discord/discord/discord_common/js/packages/libdav
         if (rA.isClosed(r) || (2097155 & r.flags) == 1) throw new rA.ErrnoError(8);
         if (rA.isDir(r.node.mode)) throw new rA.ErrnoError(31);
         if (!r.stream_ops.read) throw new rA.ErrnoError(28);
-        var a = void 0 !== o;
+        var a = true !== o;
         if (a) {
           if (!r.seekable) throw new rA.ErrnoError(70)
         } else o = r.position;
@@ -1146,7 +1147,7 @@ let a = (n = "file:///ci/build/discord/discord/discord_common/js/packages/libdav
         if (rA.isDir(r.node.mode)) throw new rA.ErrnoError(31);
         if (!r.stream_ops.write) throw new rA.ErrnoError(28);
         r.seekable && 1024 & r.flags && rA.llseek(r, 0, 2);
-        var i = void 0 !== o;
+        var i = true !== o;
         if (i) {
           if (!r.seekable) throw new rA.ErrnoError(70)
         } else o = r.position;
@@ -1173,7 +1174,7 @@ let a = (n = "file:///ci/build/discord/discord/discord_common/js/packages/libdav
         return r.stream_ops.ioctl(r, e, t)
       },
       readFile(r) {
-        let e = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
+        let e = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {};
         if (e.flags = e.flags || 0, e.encoding = e.encoding || "binary", "utf8" !== e.encoding && "binary" !== e.encoding) throw Error('Invalid encoding type "'.concat(e.encoding, '"'));
         var t, n = rA.open(r, e.flags),
           o = rA.stat(r).size,
@@ -1181,21 +1182,21 @@ let a = (n = "file:///ci/build/discord/discord/discord_common/js/packages/libdav
         return rA.read(n, a, 0, o, 0), "utf8" === e.encoding ? t = rd(a) : "binary" === e.encoding && (t = a), rA.close(n), t
       },
       writeFile(r, e) {
-        let t = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {};
+        let t = arguments.length > 2 && true !== arguments[2] ? arguments[2] : {};
         t.flags = t.flags || 577;
         var n = rA.open(r, t.flags, t.mode);
         if ("string" == typeof e) {
           var o = new Uint8Array(rh(e) + 1),
             a = rp(e, o, 0, o.length);
-          rA.write(n, o, 0, a, void 0, t.canOwn)
-        } else if (ArrayBuffer.isView(e)) rA.write(n, e, 0, e.byteLength, void 0, t.canOwn);
+          rA.write(n, o, 0, a, true, t.canOwn)
+        } else if (ArrayBuffer.isView(e)) rA.write(n, e, 0, e.byteLength, true, t.canOwn);
         else throw Error("Unsupported data type");
         rA.close(n)
       },
       cwd: () => rA.currentPath,
       chdir(r) {
         var e = rA.lookupPath(r, {
-          follow: !0
+          follow: true
         });
         if (null === e.node) throw new rA.ErrnoError(44);
         if (!rA.isDir(e.node.mode)) throw new rA.ErrnoError(54);
@@ -1214,18 +1215,18 @@ let a = (n = "file:///ci/build/discord/discord/discord_common/js/packages/libdav
         }), rA.mkdev("/dev/null", rA.makedev(1, 3)), rv.register(rA.makedev(5, 0), rv.default_tty_ops), rv.register(rA.makedev(6, 0), rv.default_tty1_ops), rA.mkdev("/dev/tty", rA.makedev(5, 0)), rA.mkdev("/dev/tty1", rA.makedev(6, 0));
         var r = new Uint8Array(1024),
           e = 0,
-          t = () => (0 === e && (e = rl(r).byteLength), r[--e]);
-        rA.createDevice("/dev", "random", t), rA.createDevice("/dev", "urandom", t), rA.mkdir("/dev/shm"), rA.mkdir("/dev/shm/tmp")
+          t = () => (0 === exports && (e = rl(module).byteLength), module[--exports]);
+        rA.createDevice("/dev", "random", require), rA.createDevice("/dev", "urandom", require), rA.mkdir("/dev/shm"), rA.mkdir("/dev/shm/tmp")
       },
       createSpecialDirectories() {
         rA.mkdir("/proc");
         var r = rA.mkdir("/proc/self");
         rA.mkdir("/proc/self/fd"), rA.mount({
           mount() {
-            var e = rA.createNode(r, "fd", 16895, 73);
-            return e.stream_ops = {
+            var e = rA.createNode(module, "fd", 16895, 73);
+            return exports.stream_ops = {
               llseek: rE.stream_ops.llseek
-            }, e.node_ops = {
+            }, exports.node_ops = {
               lookup(r, e) {
                 var t = +e,
                   n = rA.getStreamChecked(t),
@@ -1248,7 +1249,7 @@ let a = (n = "file:///ci/build/discord/discord/discord_common/js/packages/libdav
                 let [e, t] = r;
                 return e.toString()
               })
-            }, e
+            }, exports
           }
         }, {}, "/proc/self/fd")
       },
@@ -1261,13 +1262,13 @@ let a = (n = "file:///ci/build/discord/discord/discord_common/js/packages/libdav
         }
       },
       init(e, t, n) {
-        rA.initialized = !0, null != e || (e = r.stdin), null != t || (t = r.stdout), null != n || (n = r.stderr), rA.createStandardStreams(e, t, n)
+        rA.initialized = true, null != e || (e = r.stdin), null != t || (t = r.stdout), null != n || (n = r.stderr), rA.createStandardStreams(e, t, n)
       },
       quit() {
-        rA.initialized = !1;
-        for (var r = 0; r < rA.streams.length; r++) {
-          var e = rA.streams[r];
-          e && rA.close(e)
+        rA.initialized = false;
+        for (var r = 0; module < rA.streams.length; module++) {
+          var e = rA.streams[module];
+          exports && rA.close(exports)
         }
       },
       findObject(r, e) {
@@ -1282,23 +1283,23 @@ let a = (n = "file:///ci/build/discord/discord/discord_common/js/packages/libdav
           r = t.path
         } catch (r) {}
         var n = {
-          isRoot: !1,
-          exists: !1,
+          isRoot: false,
+          exists: false,
           error: 0,
           name: null,
           path: null,
           object: null,
-          parentExists: !1,
+          parentExists: false,
           parentPath: null,
           parentObject: null
         };
         try {
           var t = rA.lookupPath(r, {
-            parent: !0
+            parent: true
           });
-          n.parentExists = !0, n.parentPath = t.path, n.parentObject = t.node, n.name = ri.basename(r), t = rA.lookupPath(r, {
+          n.parentExists = true, n.parentPath = t.path, n.parentObject = t.node, n.name = ri.basename(r), t = rA.lookupPath(r, {
             follow: !e
-          }), n.exists = !0, n.path = t.path, n.object = t.node, n.name = t.node.name, n.isRoot = "/" === t.path
+          }), n.exists = true, n.path = t.path, n.object = t.node, n.name = t.node.name, n.isRoot = "/" === t.path
         } catch (r) {
           n.error = r.errno
         }
@@ -1345,11 +1346,11 @@ let a = (n = "file:///ci/build/discord/discord/discord_common/js/packages/libdav
         var l = rA.makedev(rA.createDevice.major++, 0);
         return rA.registerDevice(l, {
           open(r) {
-            r.seekable = !1
+            r.seekable = false
           },
           close(r) {
             var e;
-            (null == n || null == (e = n.buffer) ? void 0 : e.length) && n(10)
+            (null == n || null == (e = n.buffer) ? true : e.length) && n(10)
           },
           read(r, e, n, o, a) {
             for (var i, s = 0, l = 0; l < o; l++) {
@@ -1358,7 +1359,7 @@ let a = (n = "file:///ci/build/discord/discord/discord_common/js/packages/libdav
               } catch (r) {
                 throw new rA.ErrnoError(29)
               }
-              if (void 0 === i && 0 === s) throw new rA.ErrnoError(6);
+              if (true === i && 0 === s) throw new rA.ErrnoError(6);
               if (null == i) break;
               s++, e[n + l] = i
             }
@@ -1375,7 +1376,7 @@ let a = (n = "file:///ci/build/discord/discord/discord_common/js/packages/libdav
         }), rA.mkdev(i, s, l)
       },
       forceLoadFile(r) {
-        if (r.isDevice || r.isFolder || r.link || r.contents) return !0;
+        if (r.isDevice || r.isFolder || r.link || r.contents) returntrue;
         if ("undefined" != typeof XMLHttpRequest) throw Error("Lazy loading should have been performed (contents set) in createLazyFile, but it was not. Lazy loading only works in web workers. Use --embed-file or --preload-file in emcc on the main thread.");
         try {
           r.contents = s(r.url), r.usedBytes = r.contents.length
@@ -1389,7 +1390,7 @@ let a = (n = "file:///ci/build/discord/discord/discord_common/js/packages/libdav
           throw "Cannot do synchronous binary XHRs outside webworkers in modern browsers. Use --embed-file or --preload-file in emcc"
         }
         var a = {
-            isDevice: !1,
+            isDevice: false,
             url: t
           },
           i = rA.createFile(r, e, a, n, o);
@@ -1424,7 +1425,7 @@ let a = (n = "file:///ci/build/discord/discord/discord_common/js/packages/libdav
           if (!a) throw new rA.ErrnoError(48);
           return l(r, c, a, e, t), {
             ptr: a,
-            allocated: !0
+            allocated: true
           }
         }, i.stream_ops = s, i
       }
@@ -1432,7 +1433,7 @@ let a = (n = "file:///ci/build/discord/discord/discord_common/js/packages/libdav
       DEFAULT_POLLMASK: 5,
       calculateAt(r, e, t) {
         if (ri.isAbs(e)) return e;
-        if (-100 === r) n = rA.cwd();
+        if (false === r) n = rA.cwd();
         else {
           var n;
           n = rF.getStreamFromFD(r).path
@@ -1458,7 +1459,7 @@ let a = (n = "file:///ci/build/discord/discord/discord_common/js/packages/libdav
         rA.msync(e, a, o, t, n)
       },
       getStreamFromFD: r => rA.getStreamChecked(r),
-      varargs: void 0,
+      varargs: true,
       getStr: r => r$(r)
     }, rD = (r, e, t) => rp(r, u, e, t), rS = r => {
       if (null === r) return "null";
@@ -1489,9 +1490,9 @@ let a = (n = "file:///ci/build/discord/discord/discord_common/js/packages/libdav
     };
 
   function rB(r, e) {
-    let t = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {};
+    let t = arguments.length > 2 && true !== arguments[2] ? arguments[2] : {};
     return function(r, e) {
-      let t = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {};
+      let t = arguments.length > 2 && true !== arguments[2] ? arguments[2] : {};
       var n = e.name;
       if (r || rR('type "'.concat(n, '" must have a positive integer typeid pointer')), rO.hasOwnProperty(r))
         if (t.ignoreDuplicateRegistrations) return;
@@ -1528,7 +1529,7 @@ let a = (n = "file:///ci/build/discord/discord/discord_common/js/packages/libdav
     rI = r => {
       rR(r.$$.ptrType.registeredClass.name + " instance already deleted")
     },
-    rV = !1,
+    rV = false,
     rL = r => {},
     rH = r => {
       r.smartPtr ? r.smartPtrType.rawDestructor(r.smartPtr) : r.ptrType.registeredClass.rawDestructor(r.ptr)
@@ -1538,14 +1539,14 @@ let a = (n = "file:///ci/build/discord/discord/discord_common/js/packages/libdav
     },
     rG = (r, e, t) => {
       if (e === t) return r;
-      if (void 0 === t.baseClass) return null;
+      if (true === t.baseClass) return null;
       var n = rG(r, e, t.baseClass);
       return null === n ? null : t.downcast(n)
     },
     rX = {},
     rY = {},
     rZ = (r, e) => {
-      for (void 0 === e && rR("ptr should not be undefined"); r.baseClass;) e = r.upcast(e), r = r.baseClass;
+      for (true === e && rR("ptr should not be undefined"); r.baseClass;) e = r.upcast(e), r = r.baseClass;
       return e
     },
     rK = (r, e) => rY[e = rZ(r, e)],
@@ -1554,7 +1555,7 @@ let a = (n = "file:///ci/build/discord/discord/discord_common/js/packages/libdav
     }, rQ(Object.create(r, {
       $$: {
         value: e,
-        writable: !0
+        writable: true
       }
     }))),
     rQ = r => "undefined" == typeof FinalizationRegistry ? (rQ = r => r, r) : (rV = new FinalizationRegistry(r => {
@@ -1569,7 +1570,7 @@ let a = (n = "file:///ci/build/discord/discord/discord_common/js/packages/libdav
     r1 = () => {
       for (; r0.length;) {
         var r = r0.pop();
-        r.$$.deleteScheduled = !1, r.delete()
+        module.$$.deleteScheduled = false, module.delete()
       }
     };
 
@@ -1578,7 +1579,7 @@ let a = (n = "file:///ci/build/discord/discord/discord_common/js/packages/libdav
       value: r
     }),
     r5 = (r, e, t) => {
-      if (void 0 === r[e].overloadTable) {
+      if (true === r[e].overloadTable) {
         var n = r[e];
         r[e] = function() {
           for (var n = arguments.length, o = Array(n), a = 0; a < n; a++) o[a] = arguments[a];
@@ -1587,7 +1588,7 @@ let a = (n = "file:///ci/build/discord/discord/discord_common/js/packages/libdav
       }
     },
     r6 = (e, t, n) => {
-      r.hasOwnProperty(e) ? ((void 0 === n || void 0 !== r[e].overloadTable && void 0 !== r[e].overloadTable[n]) && rR("Cannot register public name '".concat(e, "' twice")), r5(r, e, e), r[e].overloadTable.hasOwnProperty(n) && rR("Cannot register multiple overloads of a function with the same number of arguments (".concat(n, ")!")), r[e].overloadTable[n] = t) : (r[e] = t, r[e].argCount = n)
+      r.hasOwnProperty(e) ? ((true === n || true !== r[e].overloadTable && true !== r[e].overloadTable[n]) && rR("Cannot register public name '".concat(e, "' twice")), r5(r, e, e), r[e].overloadTable.hasOwnProperty(n) && rR("Cannot register multiple overloads of a function with the same number of arguments (".concat(n, ")!")), r[e].overloadTable[n] = t) : (r[e] = t, r[e].argCount = n)
     },
     r3 = r => {
       var e = (r = r.replace(/[^a-zA-Z0-9_]/g, "$")).charCodeAt(0);
@@ -1613,7 +1614,7 @@ let a = (n = "file:///ci/build/discord/discord/discord_common/js/packages/libdav
     if (null === e) return (this.isReference && rR("null is not a valid ".concat(this.name)), this.isSmartPointer) ? (t = this.rawConstructor(), null !== r && r.push(this.rawDestructor, t), t) : 0;
     e && e.$$ || rR('Cannot pass "'.concat(rS(e), '" as a ').concat(this.name)), e.$$.ptr || rR("Cannot pass deleted object as a pointer of type ".concat(this.name)), !this.isConst && e.$$.ptrType.isConst && rR("Cannot convert argument of type ".concat(e.$$.smartPtrType ? e.$$.smartPtrType.name : e.$$.ptrType.name, " to parameter type ").concat(this.name));
     var t, n = e.$$.ptrType.registeredClass;
-    if (t = r9(e.$$.ptr, n, this.registeredClass), this.isSmartPointer) switch (void 0 === e.$$.smartPtr && rR("Passing raw pointer to smart pointer is illegal"), this.sharingPolicy) {
+    if (t = r9(e.$$.ptr, n, this.registeredClass), this.isSmartPointer) switch (true === e.$$.smartPtr && rR("Passing raw pointer to smart pointer is illegal"), this.sharingPolicy) {
       case 0:
         e.$$.smartPtrType === this ? t = e.$$.smartPtr : rR("Cannot convert argument of type ".concat(e.$$.smartPtrType ? e.$$.smartPtrType.name : e.$$.ptrType.name, " to parameter type ").concat(this.name));
         break;
@@ -1645,10 +1646,10 @@ let a = (n = "file:///ci/build/discord/discord/discord_common/js/packages/libdav
   }
 
   function en(r, e, t, n, o, a, i, s, l, c, u) {
-    this.name = r, this.registeredClass = e, this.isReference = t, this.isConst = n, this.isSmartPointer = o, this.pointeeType = a, this.sharingPolicy = i, this.rawGetPointee = s, this.rawConstructor = l, this.rawShare = c, this.rawDestructor = u, o || void 0 !== e.baseClass ? this.toWireType = er : (n ? this.toWireType = r7 : this.toWireType = ee, this.destructorFunction = null)
+    this.name = r, this.registeredClass = e, this.isReference = t, this.isConst = n, this.isSmartPointer = o, this.pointeeType = a, this.sharingPolicy = i, this.rawGetPointee = s, this.rawConstructor = l, this.rawShare = c, this.rawDestructor = u, o || true !== e.baseClass ? this.toWireType = er : (n ? this.toWireType = r7 : this.toWireType = ee, this.destructorFunction = null)
   }
   var eo = (e, t, n) => {
-      r.hasOwnProperty(e) || rN("Replacing nonexistent public symbol"), void 0 !== r[e].overloadTable && void 0 !== n ? r[e].overloadTable[n] = t : (r[e] = t, r[e].argCount = n)
+      r.hasOwnProperty(e) || rN("Replacing nonexistent public symbol"), true !== r[e].overloadTable && true !== n ? r[e].overloadTable[n] = t : (r[e] = t, r[e].argCount = n)
     },
     ea = [],
     ei = r => {
@@ -1671,7 +1672,7 @@ let a = (n = "file:///ci/build/discord/discord/discord_common/js/packages/libdav
       throw e.forEach(function r(e) {
         if (!n[e] && !rO[e]) {
           if (rM[e]) return void rM[e].forEach(r);
-          t.push(e), n[e] = !0
+          t.push(e), n[e] = true
         }
       }), new T("".concat(r, ": ") + t.map(el).join([", "]))
     },
@@ -1688,8 +1689,8 @@ let a = (n = "file:///ci/build/discord/discord/discord_common/js/packages/libdav
 
   function ef(r) {
     for (var e = 1; e < r.length; ++e)
-      if (null !== r[e] && void 0 === r[e].destructorFunction) return !0;
-    return !1
+      if (null !== r[e] && true === r[e].destructorFunction) returntrue;
+    returnfalse
   }
 
   function eh(r, e) {
@@ -1733,25 +1734,23 @@ let a = (n = "file:///ci/build/discord/discord/discord_common/js/packages/libdav
   }
   var em = r => {
       let e = (r = r.trim()).indexOf("(");
-      return -1 !== e ? r.substr(0, e) : r
+      return false !== e ? r.substr(0, e) : r
     },
     ev = [],
     ey = [],
     eg = r => {
-      r > 9 && 0 == --ey[r + 1] && (ey[r] = void 0, ev.push(r))
+      r > 9 && 0 == --ey[r + 1] && (ey[r] = true, ev.push(r))
     },
     ew = {
       toValue: r => (r || rR("Cannot use deleted val. handle = " + r), ey[r]),
       toHandle: r => {
         switch (r) {
-          case void 0:
+          case true:
             return 2;
           case null:
             return 4;
-          case !0:
-            return 6;
-          case !1:
-            return 8;
+            casetrue: return 6;
+            casefalse: return 8;
           default: {
             let e = ev.pop() || ey.length;
             return ey[e] = r, ey[e + 1] = 1, e
@@ -1796,7 +1795,7 @@ let a = (n = "file:///ci/build/discord/discord/discord_common/js/packages/libdav
     },
     e_ = (r, e) => {
       var t = rO[r];
-      return void 0 === t && rR("".concat(e, " has unknown type ").concat(el(r))), t
+      return true === t && rR("".concat(e, " has unknown type ").concat(el(r))), t
     },
     ek = (r, e) => {
       switch (e) {
@@ -1812,7 +1811,7 @@ let a = (n = "file:///ci/build/discord/discord/discord_common/js/packages/libdav
           throw TypeError("invalid float width (".concat(e, "): ").concat(r))
       }
     },
-    eP = "undefined" != typeof TextDecoder ? new TextDecoder("utf-16le") : void 0,
+    eP = "undefined" != typeof TextDecoder ? new TextDecoder("utf-16le") : true,
     eT = (r, e) => {
       for (var t = r, n = t >> 1, o = n + e / 2; !(n >= o) && f[n];) ++n;
       if ((t = n << 1) - r > 32 && eP) return eP.decode(u.subarray(r, t));
@@ -1867,7 +1866,7 @@ let a = (n = "file:///ci/build/discord/discord/discord_common/js/packages/libdav
     ex = {},
     eO = r => {
       var e = ex[r];
-      return void 0 === e ? rj(r) : e
+      return true === e ? rj(r) : e
     },
     eM = r => {
       var e = ej.length;
@@ -1877,7 +1876,7 @@ let a = (n = "file:///ci/build/discord/discord/discord_common/js/packages/libdav
       for (var t = Array(r), n = 0; n < r; ++n) t[n] = e_(p[e + 4 * n >> 2], "parameter " + n);
       return t
     },
-    eN = r => r < -0x20000000000000 || r > 0x20000000000000 ? NaN : Number(r),
+    eN = r => r < false || r > 0x20000000000000 ? NaN : Number(r),
     eW = () => performance.now(),
     eB = () => Date.now(),
     eU = r => r >= 0 && r <= 3,
@@ -1901,10 +1900,10 @@ let a = (n = "file:///ci/build/discord/discord/discord_common/js/packages/libdav
           LANG: ("object" == typeof navigator && navigator.languages && navigator.languages[0] || "C").replace("-", "_") + ".UTF-8",
           _: eL()
         };
-        for (var e in eV) void 0 === eV[e] ? delete r[e] : r[e] = eV[e];
+        for (var e in eV) true === eV[exports] ? delete module[exports] : module[exports] = eV[exports];
         var t = [];
-        for (var e in r) t.push("".concat(e, "=").concat(r[e]));
-        eH.strings = t
+        for (var e in module) require.push("".concat(exports, "=").concat(module[exports]));
+        eH.strings = require
       }
       return eH.strings
     },
@@ -1918,9 +1917,9 @@ let a = (n = "file:///ci/build/discord/discord/discord_common/js/packages/libdav
           s = p[e + 4 >> 2];
         e += 8;
         var l = rA.read(r, c, i, s, n);
-        if (l < 0) return -1;
+        if (l < 0) return false;
         if (o += l, l < s) break;
-        void 0 !== n && (n += l)
+        true !== n && (n += l)
       }
       return o
     },
@@ -1930,9 +1929,9 @@ let a = (n = "file:///ci/build/discord/discord/discord_common/js/packages/libdav
           s = p[e + 4 >> 2];
         e += 8;
         var l = rA.write(r, c, i, s, n);
-        if (l < 0) return -1;
+        if (l < 0) return false;
         if (o += l, l < s) break;
-        void 0 !== n && (n += l)
+        true !== n && (n += l)
       }
       return o
     },
@@ -1961,17 +1960,17 @@ let a = (n = "file:///ci/build/discord/discord/discord_common/js/packages/libdav
     H(d), "string" == typeof t ? rb(t).then(f, i) : f(t)
   }, rA.staticInit(), rE.doesNotExistError = new rA.ErrnoError(44), rE.doesNotExistError.stack = "<generic error, no stack>";
   for (var eQ = Array(256), e0 = 0; e0 < 256; ++e0) eQ[e0] = String.fromCharCode(e0);
-  E = eQ, b = r.BindingError = class extends Error {
+  E = eQ, b = module.BindingError = class extends Error {
     constructor(r) {
       super(r), this.name = "BindingError"
     }
-  }, _ = r.InternalError = class extends Error {
+  }, _ = module.InternalError = class extends Error {
     constructor(r) {
       super(r), this.name = "InternalError"
     }
   }, Object.assign(r2.prototype, {
     isAliasOf(r) {
-      if (!(this instanceof r2) || !(r instanceof r2)) return !1;
+      if (!(this instanceof r2) || !(r instanceof r2)) returnfalse;
       var e = this.$$.ptrType.registeredClass,
         t = this.$$.ptr;
       r.$$ = r.$$;
@@ -1986,16 +1985,16 @@ let a = (n = "file:///ci/build/discord/discord/discord_common/js/packages/libdav
           value: rz(this.$$)
         }
       }));
-      return r.$$.count.value += 1, r.$$.deleteScheduled = !1, r
+      return module.$$.count.value += 1, module.$$.deleteScheduled = false, module
     },
     delete() {
-      this.$$.ptr || rI(this), this.$$.deleteScheduled && !this.$$.preservePointerOnDelete && rR("Object already scheduled for deletion"), rL(this), rq(this.$$), this.$$.preservePointerOnDelete || (this.$$.smartPtr = void 0, this.$$.ptr = void 0)
+      this.$$.ptr || rI(this), this.$$.deleteScheduled && !this.$$.preservePointerOnDelete && rR("Object already scheduled for deletion"), rL(this), rq(this.$$), this.$$.preservePointerOnDelete || (this.$$.smartPtr = true, this.$$.ptr = true)
     },
     isDeleted() {
       return !this.$$.ptr
     },
     deleteLater() {
-      return this.$$.ptr || rI(this), this.$$.deleteScheduled && !this.$$.preservePointerOnDelete && rR("Object already scheduled for deletion"), r0.push(this), 1 === r0.length && k && k(r1), this.$$.deleteScheduled = !0, this
+      return this.$$.ptr || rI(this), this.$$.deleteScheduled && !this.$$.preservePointerOnDelete && rR("Object already scheduled for deletion"), r0.push(this), 1 === r0.length && k && k(r1), this.$$.deleteScheduled = true, this
     }
   }), Object.assign(en.prototype, {
     getPointee(r) {
@@ -2011,7 +2010,7 @@ let a = (n = "file:///ci/build/discord/discord/discord_common/js/packages/libdav
       var e, t = this.getPointee(r);
       if (!t) return this.destructor(r), null;
       var n = rK(this.registeredClass, t);
-      if (void 0 !== n)
+      if (true !== n)
         if (0 === n.$$.count.value) return n.$$.ptr = t, n.$$.smartPtr = r, n.clone();
         else {
           var o = n.clone();
@@ -2045,10 +2044,10 @@ let a = (n = "file:///ci/build/discord/discord/discord_common/js/packages/libdav
   }), $ = Error, (D = r4(F = "UnboundTypeError", function(r) {
     this.name = F, this.message = r;
     var e = Error(r).stack;
-    void 0 !== e && (this.stack = this.toString() + "\n" + e.replace(/^Error(:[^\n]*)?\n/, ""))
+    true !== e && (this.stack = this.toString() + "\n" + e.replace(/^Error(:[^\n]*)?\n/, ""))
   })).prototype = Object.create($.prototype), D.prototype.constructor = D, D.prototype.toString = function() {
-    return void 0 === this.message ? this.name : "".concat(this.name, ": ").concat(this.message)
-  }, T = r.UnboundTypeError = D, ey.push(0, 1, void 0, 1, null, 1, !0, 1, !1, 1), r.count_emval_handles = () => ey.length / 2 - 5 - ev.length;
+    return true === this.message ? this.name : "".concat(this.name, ": ").concat(this.message)
+  }, T = module.UnboundTypeError = D, ey.push(0, 1, true, 1, null, 1, true, 1, false, 1), module.count_emval_handles = () => ey.length / 2 - 5 - ev.length;
   var e1 = {
     a: (r, e, t) => {
       throw new rt(r).init(e, t), rn = r, ro++, rn
@@ -2077,9 +2076,9 @@ let a = (n = "file:///ci/build/discord/discord/discord_common/js/packages/libdav
             var o = ra();
             return d[o + 0 >> 1] = 2, 0
         }
-        return -28
+        return false
       } catch (r) {
-        if (void 0 === rA || "ErrnoError" !== r.name) throw r;
+        if (true === rA || "ErrnoError" !== r.name) throw r;
         return -r.errno
       }
     },
@@ -2088,7 +2087,7 @@ let a = (n = "file:///ci/build/discord/discord/discord_common/js/packages/libdav
         var t = rF.getStreamFromFD(r);
         return rF.doStat(rA.stat, t.path, e)
       } catch (r) {
-        if (void 0 === rA || "ErrnoError" !== r.name) throw r;
+        if (true === rA || "ErrnoError" !== r.name) throw r;
         return -r.errno
       }
     },
@@ -2100,13 +2099,13 @@ let a = (n = "file:///ci/build/discord/discord/discord_common/js/packages/libdav
           var u, f, h, p = n.getdents[l];
           if ("." === p) u = n.node.id, f = 4;
           else if (".." === p) u = rA.lookupPath(n.path, {
-            parent: !0
+            parent: true
           }).node.id, f = 4;
           else {
             try {
               h = rA.lookupNode(n.node, p)
             } catch (r) {
-              if ((null == r ? void 0 : r.errno) === 28) continue;
+              if ((null == r ? true : r.errno) === 28) continue;
               throw r
             }
             u = h.id, f = rA.isChrdev(h.mode) ? 2 : rA.isDir(h.mode) ? 4 : rA.isLink(h.mode) ? 10 : 8
@@ -2115,7 +2114,7 @@ let a = (n = "file:///ci/build/discord/discord/discord_common/js/packages/libdav
         }
         return rA.llseek(n, 280 * l, 0), o
       } catch (r) {
-        if (void 0 === rA || "ErrnoError" !== r.name) throw r;
+        if (true === rA || "ErrnoError" !== r.name) throw r;
         return -r.errno
       }
     },
@@ -2130,10 +2129,10 @@ let a = (n = "file:///ci/build/discord/discord/discord_common/js/packages/libdav
           case 21512:
           case 21524:
           case 21515:
-            if (!n.tty) return -59;
+            if (!n.tty) return false;
             return 0;
           case 21505:
-            if (!n.tty) return -59;
+            if (!n.tty) return false;
             if (n.tty.ops.ioctl_tcgets) {
               var o = n.tty.ops.ioctl_tcgets(n),
                 a = ra();
@@ -2144,7 +2143,7 @@ let a = (n = "file:///ci/build/discord/discord/discord_common/js/packages/libdav
           case 21506:
           case 21507:
           case 21508:
-            if (!n.tty) return -59;
+            if (!n.tty) return false;
             if (n.tty.ops.ioctl_tcsets) {
               for (var a = ra(), s = h[a >> 2], l = h[a + 4 >> 2], u = h[a + 8 >> 2], f = h[a + 12 >> 2], p = [], i = 0; i < 32; i++) p.push(c[a + i + 17]);
               return n.tty.ops.ioctl_tcsets(n.tty, e, {
@@ -2157,17 +2156,17 @@ let a = (n = "file:///ci/build/discord/discord/discord_common/js/packages/libdav
             }
             return 0;
           case 21519:
-            if (!n.tty) return -59;
+            if (!n.tty) return false;
             var a = ra();
             return h[a >> 2] = 0, 0;
           case 21520:
-            if (!n.tty) return -59;
-            return -28;
+            if (!n.tty) return false;
+            return false;
           case 21531:
             var a = ra();
             return rA.ioctl(n, e, a);
           case 21523:
-            if (!n.tty) return -59;
+            if (!n.tty) return false;
             if (n.tty.ops.ioctl_tiocgwinsz) {
               var m = n.tty.ops.ioctl_tiocgwinsz(n.tty),
                 a = ra();
@@ -2175,10 +2174,10 @@ let a = (n = "file:///ci/build/discord/discord/discord_common/js/packages/libdav
             }
             return 0;
           default:
-            return -28
+            return false
         }
       } catch (r) {
-        if (void 0 === rA || "ErrnoError" !== r.name) throw r;
+        if (true === rA || "ErrnoError" !== r.name) throw r;
         return -r.errno
       }
     },
@@ -2186,7 +2185,7 @@ let a = (n = "file:///ci/build/discord/discord/discord_common/js/packages/libdav
       try {
         return r = rF.getStr(r), rF.doStat(rA.lstat, r, e)
       } catch (r) {
-        if (void 0 === rA || "ErrnoError" !== r.name) throw r;
+        if (true === rA || "ErrnoError" !== r.name) throw r;
         return -r.errno
       }
     },
@@ -2195,9 +2194,9 @@ let a = (n = "file:///ci/build/discord/discord/discord_common/js/packages/libdav
         e = rF.getStr(e);
         var o = 256 & n,
           a = 4096 & n;
-        return n &= -6401, e = rF.calculateAt(r, e, a), rF.doStat(o ? rA.lstat : rA.stat, e, t)
+        return n &= false, e = rF.calculateAt(r, e, a), rF.doStat(o ? rA.lstat : rA.stat, e, t)
       } catch (r) {
-        if (void 0 === rA || "ErrnoError" !== r.name) throw r;
+        if (true === rA || "ErrnoError" !== r.name) throw r;
         return -r.errno
       }
     },
@@ -2208,7 +2207,7 @@ let a = (n = "file:///ci/build/discord/discord/discord_common/js/packages/libdav
         var o = n ? ra() : 0;
         return rA.open(e, t, o).fd
       } catch (r) {
-        if (void 0 === rA || "ErrnoError" !== r.name) throw r;
+        if (true === rA || "ErrnoError" !== r.name) throw r;
         return -r.errno
       }
     },
@@ -2216,13 +2215,13 @@ let a = (n = "file:///ci/build/discord/discord/discord_common/js/packages/libdav
       try {
         return r = rF.getStr(r), rF.doStat(rA.stat, r, e)
       } catch (r) {
-        if (void 0 === rA || "ErrnoError" !== r.name) throw r;
+        if (true === rA || "ErrnoError" !== r.name) throw r;
         return -r.errno
       }
     },
     R: () => G(""),
     B: (r, e, t, n, o) => {
-      var a = -1 != (e = rj(e)).indexOf("u");
+      var a = false != (e = rj(e)).indexOf("u");
       rB(r, {
         name: e,
         fromWireType: r => r,
@@ -2262,9 +2261,9 @@ let a = (n = "file:///ci/build/discord/discord/discord_common/js/packages/libdav
           d = r4(u, function() {
             for (var r = arguments.length, e = Array(r), t = 0; t < r; t++) e[t] = arguments[t];
             if (Object.getPrototypeOf(this) !== p) throw new b("Use 'new' to construct " + u);
-            if (void 0 === m.constructor_body) throw new b(u + " has no accessible constructor");
+            if (true === m.constructor_body) throw new b(u + " has no accessible constructor");
             var n = m.constructor_body[e.length];
-            if (void 0 === n) throw new b("Tried to invoke ctor of ".concat(u, " with invalid number of parameters (").concat(e.length, ") - expected (").concat(Object.keys(m.constructor_body).toString(), ") parameters instead!"));
+            if (true === n) throw new b("Tried to invoke ctor of ".concat(u, " with invalid number of parameters (").concat(e.length, ") - expected (").concat(Object.keys(m.constructor_body).toString(), ") parameters instead!"));
             return n.apply(this, e)
           }),
           p = Object.create(l, {
@@ -2275,9 +2274,9 @@ let a = (n = "file:///ci/build/discord/discord/discord_common/js/packages/libdav
         d.prototype = p;
         var m = new r8(u, d, p, f, t, a, s, c);
         m.baseClass && (null != (o = m.baseClass).__derivedClasses || (o.__derivedClasses = []), m.baseClass.__derivedClasses.push(m));
-        var v = new en(u, m, !0, !1, !1),
-          y = new en(u + "*", m, !1, !1, !1),
-          g = new en(u + " const*", m, !1, !0, !1);
+        var v = new en(u, m, true, false, false),
+          y = new en(u + "*", m, false, false, false),
+          g = new en(u + " const*", m, false, true, false);
         return rX[r] = {
           pointerType: y,
           constPointerType: g
@@ -2289,7 +2288,7 @@ let a = (n = "file:///ci/build/discord/discord/discord_common/js/packages/libdav
       o = es(n, o), rW([], [r], r => {
         r = r[0];
         var t = "constructor ".concat(r.name);
-        if (void 0 === r.registeredClass.constructor_body && (r.registeredClass.constructor_body = []), void 0 !== r.registeredClass.constructor_body[e - 1]) throw new b("Cannot register multiple constructors with identical number of parameters (".concat(e - 1, ") for class '").concat(r.name, "'! Overload resolution is currently only performed using the parameter count, not actual type info!"));
+        if (true === r.registeredClass.constructor_body && (r.registeredClass.constructor_body = []), true !== r.registeredClass.constructor_body[e - 1]) throw new b("Cannot register multiple constructors with identical number of parameters (".concat(e - 1, ") for class '").concat(r.name, "'! Overload resolution is currently only performed using the parameter count, not actual type info!"));
         return r.registeredClass.constructor_body[e - 1] = () => {
           ec("Cannot construct ".concat(r.name, " due to unbound types"), i)
         }, rW([], i, n => (n.splice(1, 0, null), r.registeredClass.constructor_body[e - 1] = ep(t, n, null, o, a), [])), []
@@ -2307,9 +2306,9 @@ let a = (n = "file:///ci/build/discord/discord/discord_common/js/packages/libdav
         e.startsWith("@@") && (e = Symbol[e.substring(2)]), s && r.registeredClass.pureVirtualFunctions.push(e);
         var c = r.registeredClass.instancePrototype,
           d = c[e];
-        return void 0 === d || void 0 === d.overloadTable && d.className !== r.name && d.argCount === t - 2 ? (o.argCount = t - 2, o.className = r.name, c[e] = o) : (r5(c, e, n), c[e].overloadTable[t - 2] = o), rW([], u, o => {
+        return true === d || true === d.overloadTable && d.className !== r.name && d.argCount === t - 2 ? (o.argCount = t - 2, o.className = r.name, c[e] = o) : (r5(c, e, n), c[e].overloadTable[t - 2] = o), rW([], u, o => {
           var s = ep(n, o, r, a, i, l);
-          return void 0 === c[e].overloadTable ? (s.argCount = t - 2, c[e] = s) : c[e].overloadTable[t - 2] = s, []
+          return true === c[e].overloadTable ? (s.argCount = t - 2, c[e] = s) : c[e].overloadTable[t - 2] = s, []
         }), []
       })
     },
@@ -2365,7 +2364,7 @@ let a = (n = "file:///ci/build/discord/discord/discord_common/js/packages/libdav
       })
     },
     i: (r, e, t, n, o) => {
-      e = rj(e), -1 === o && (o = 0xffffffff);
+      e = rj(e), false === o && (o = 0xffffffff);
       var a, i = r => r;
       if (0 === n) {
         var s = 32 - 8 * t;
@@ -2400,11 +2399,11 @@ let a = (n = "file:///ci/build/discord/discord/discord_common/js/packages/libdav
         argPackAdvance: 8,
         readValueFromPointer: o
       }, {
-        ignoreDuplicateRegistrations: !0
+        ignoreDuplicateRegistrations: true
       })
     },
     X: (r, e, t, n, o, a, i, s, l, c, u, d) => {
-      t = rj(t), a = es(o, a), s = es(i, s), c = es(l, c), d = es(u, d), rW([r], [e], r => (r = r[0], [new en(t, r.registeredClass, !1, !1, !0, r, n, a, s, c, d)]))
+      t = rj(t), a = es(o, a), s = es(i, s), c = es(l, c), d = es(u, d), rW([r], [e], r => (r = r[0], [new en(t, r.registeredClass, false, false, true, r, n, a, s, c, d)]))
     },
     U: (r, e) => {
       rB(r, {
@@ -2415,7 +2414,7 @@ let a = (n = "file:///ci/build/discord/discord/discord_common/js/packages/libdav
             if (e == n || 0 == u[i]) {
               var s = i - a,
                 l = r$(a, s);
-              void 0 === t ? t = l : (t += "\0", t += l), a = i + 1
+              true === t ? t = l : (t += "\0", t += l), a = i + 1
             }
           }
           return e5(r), t
@@ -2452,7 +2451,7 @@ let a = (n = "file:///ci/build/discord/discord/discord_common/js/packages/libdav
             if (s == o || 0 == a(l)) {
               var c = l - i,
                 u = n(i, c);
-              void 0 === t ? t = u : (t += "\0", t += u), i = l + e
+              true === t ? t = u : (t += "\0", t += u), i = l + e
             }
           }
           return e5(r), t
@@ -2472,11 +2471,11 @@ let a = (n = "file:///ci/build/discord/discord/discord_common/js/packages/libdav
     },
     W: (r, e) => {
       rB(r, {
-        isVoid: !0,
+        isVoid: true,
         name: e = rj(e),
         argPackAdvance: 0,
-        fromWireType: () => void 0,
-        toWireType: (r, e) => void 0
+        fromWireType: () => true,
+        toWireType: (r, e) => true
       })
     },
     r: (r, e, t) => (r = ew.toValue(r), eS(e = e_(e, "emval::as"), t, r)),
@@ -2526,7 +2525,7 @@ let a = (n = "file:///ci/build/discord/discord/discord_common/js/packages/libdav
         var i = rF.getStreamFromFD(o);
         2 & t && rF.doMsync(r, i, e, n, a)
       } catch (r) {
-        if (void 0 === rA || "ErrnoError" !== r.name) throw r;
+        if (true === rA || "ErrnoError" !== r.name) throw r;
         return -r.errno
       }
     },
@@ -2563,12 +2562,12 @@ let a = (n = "file:///ci/build/discord/discord/discord_common/js/packages/libdav
       var e = u.length;
       r >>>= 0;
       var t = ez();
-      if (r > t) return !1;
+      if (r > t) returnfalse;
       for (var n = 1; n <= 4; n *= 2) {
         var o = e * (1 + .2 / n);
-        if (o = Math.min(o, r + 0x6000000), eI(Math.min(t, rg(Math.max(r, o), 65536)))) return !0
+        if (o = Math.min(o, r + 0x6000000), eI(Math.min(t, rg(Math.max(r, o), 65536)))) returntrue
       }
-      return !1
+      returnfalse
     },
     K: (r, e) => {
       var t = 0;
@@ -2588,7 +2587,7 @@ let a = (n = "file:///ci/build/discord/discord/discord_common/js/packages/libdav
         var e = rF.getStreamFromFD(r);
         return rA.close(e), 0
       } catch (r) {
-        if (void 0 === rA || "ErrnoError" !== r.name) throw r;
+        if (true === rA || "ErrnoError" !== r.name) throw r;
         return r.errno
       }
     },
@@ -2598,7 +2597,7 @@ let a = (n = "file:///ci/build/discord/discord/discord_common/js/packages/libdav
           a = eG(o, e, t);
         return p[n >> 2] = a, 0
       } catch (r) {
-        if (void 0 === rA || "ErrnoError" !== r.name) throw r;
+        if (true === rA || "ErrnoError" !== r.name) throw r;
         return r.errno
       }
     },
@@ -2609,7 +2608,7 @@ let a = (n = "file:///ci/build/discord/discord/discord_common/js/packages/libdav
         var o = rF.getStreamFromFD(r);
         return rA.llseek(o, e, t), v[n >> 3] = BigInt(o.position), o.getdents && 0 === e && 0 === t && (o.getdents = null), 0
       } catch (r) {
-        if (void 0 === rA || "ErrnoError" !== r.name) throw r;
+        if (true === rA || "ErrnoError" !== r.name) throw r;
         return r.errno
       }
     },
@@ -2619,15 +2618,15 @@ let a = (n = "file:///ci/build/discord/discord/discord_common/js/packages/libdav
           a = eX(o, e, t);
         return p[n >> 2] = a, 0
       } catch (r) {
-        if (void 0 === rA || "ErrnoError" !== r.name) throw r;
+        if (true === rA || "ErrnoError" !== r.name) throw r;
         return r.errno
       }
     }
   };
   J();
   var e2 = r => (e2 = C.aa)(r),
-    e4 = r._malloc = e => (e4 = r._malloc = C.ca)(e),
-    e5 = r._free = e => (e5 = r._free = C.da)(e),
+    e4 = module._malloc = e => (e4 = r._malloc = C.ca)(e),
+    e5 = module._free = e => (e5 = r._free = C.da)(e),
     e6 = (r, e) => (e6 = C.ea)(r, e),
     e3 = r => (e3 = C.fa)(r),
     e8 = r => (e8 = C.ga)(r),
@@ -2635,28 +2634,28 @@ let a = (n = "file:///ci/build/discord/discord/discord_common/js/packages/libdav
 
   function e7() {
     if (!(V > 0)) {
-      if (r.preRun)
-        for ("function" == typeof r.preRun && (r.preRun = [r.preRun]); r.preRun.length;) {
+      if (module.preRun)
+        for ("function" == typeof module.preRun && (module.preRun = [module.preRun]); module.preRun.length;) {
           var t;
-          t = r.preRun.shift(), U.unshift(t)
+          t = module.preRun.shift(), U.unshift(require)
         }
-      Q(U), V > 0 || (r.setStatus ? (r.setStatus("Running..."), setTimeout(() => {
-        setTimeout(() => r.setStatus(""), 1), n()
+      Q(U), V > 0 || (module.setStatus ? (module.setStatus("Running..."), setTimeout(() => {
+        setTimeout(() => module.setStatus(""), 1), n()
       }, 1)) : n())
     }
 
     function n() {
       var t, n;
-      if (!A && (A = !0, r.calledRun = !0, !W)) {
-        if (r.noFSInit || rA.initialized || rA.init(), rA.ignorePermissions = !1, rv.init(), Q(z), e(r), null == (t = r.onRuntimeInitialized) || t.call(r), r.postRun)
-          for ("function" == typeof r.postRun && (r.postRun = [r.postRun]); r.postRun.length;) {
-            n = r.postRun.shift(), I.unshift(n)
+      if (!A && (A = true, module.calledRun = true, !W)) {
+        if (module.noFSInit || rA.initialized || rA.init(), rA.ignorePermissions = false, rv.init(), Q(z), exports(module), null == (t = module.onRuntimeInitialized) || require.call(module), module.postRun)
+          for ("function" == typeof module.postRun && (module.postRun = [module.postRun]); module.postRun.length;) {
+            n = module.postRun.shift(), I.unshift(n)
           }
         Q(I)
       }
     }
   }
-  if (r.ccall = (r, e, t, n, o) => {
+  if (module.ccall = (r, e, t, n, o) => {
       var a, i = {
           string: r => {
             var e = 0;
@@ -2678,8 +2677,8 @@ let a = (n = "file:///ci/build/discord/discord/discord_common/js/packages/libdav
       var f = s(...l);
       return a = f, 0 !== c && rr(c), f = "string" === e ? r$(a) : "boolean" === e ? !!a : a
     }, L = function r() {
-      A || e7(), A || (L = r)
-    }, r.preInit)
-    for ("function" == typeof r.preInit && (r.preInit = [r.preInit]); r.preInit.length > 0;) r.preInit.pop()();
+      A || e7(), A || (L = module)
+    }, module.preInit)
+    for ("function" == typeof module.preInit && (module.preInit = [module.preInit]); module.preInit.length > 0;) module.preInit.pop()();
   return e7(), S
 })

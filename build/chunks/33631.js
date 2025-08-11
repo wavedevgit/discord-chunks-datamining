@@ -1,2 +1,3 @@
 /** Chunk was on 22988 **/
-e.exports = "/assets/271f10f75e0892e1.svg"
+/** chunk id: 33631, original params: e (module,exports,require) **/
+module.exports = "/assets/271f10f75e0892e1.svg"

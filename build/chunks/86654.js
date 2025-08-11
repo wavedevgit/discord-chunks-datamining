@@ -1,5 +1,6 @@
 /** Chunk was on 89298 **/
-e.exports = {
+/** chunk id: 86654, original params: e,t,n (module,exports,require) **/
+module.exports = {
   clickZone: "clickZone__29c87",
   clickZoneDebugContainer: "clickZoneDebugContainer__29c87",
   clickBackground: "clickBackground__29c87",

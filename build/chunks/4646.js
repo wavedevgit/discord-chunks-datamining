@@ -1,19 +1,20 @@
 /** Chunk was on web.js **/
+/** chunk id: 4646, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 
 function r(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
-n.d(t, {
+require.d(exports, {
   ZP: () => s,
   k2: () => o
-}), n(388685);
-let i = new(n(710845)).Z("AssetMap");
+}), require("./388685.js");
+let i = new(require("./710845.js")).Z("AssetMap");
 async function o(e) {
   let t = new a,
     n = Object.entries(e).map(e => {
@@ -37,7 +38,7 @@ class a {
     return null != this.assets[e]
   }
   constructor() {
-    r(this, "assets", {}), r(this, "fontManager", void 0)
+    r(this, "assets", {}), r(this, "fontManager", true)
   }
 }
 let s = a

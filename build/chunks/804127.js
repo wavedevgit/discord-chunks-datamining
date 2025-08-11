@@ -1,13 +1,14 @@
 /** Chunk was on 61643 **/
-r.d(t, {
+/** chunk id: 804127, original params: e,t,r (module,exports,require) **/
+require.d(exports, {
   G: () => c,
   u: () => i
-}), r(388685);
-var n = r(73800),
-  o = r(782568),
-  a = r(49012),
-  s = r(617136),
-  l = r(272008);
+}), require("./388685.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk782568 = require("./782568.js"),
+  Chunk49012 = require("./49012.js"),
+  Chunk617136 = require("./617136.js"),
+  Chunk272008 = require("./272008.js");
 
 function i(e) {
   let {
@@ -19,22 +20,22 @@ function i(e) {
     rewardCode: i,
     selectedPlatformType: c,
     preview: u
-  } = e, [d, p] = n.useState(!1), [m, f] = n.useState(!1), b = n.useCallback(async (e, t, r) => {
+  } = e, [d, p] = n.useState(false), [m, f] = n.useState(false), b = n.useCallback(async (e, t, r) => {
     try {
-      f(!0), await (0, l.QB)(e, t, r), p(!1), f(!1)
+      f(true), await (0, l.QB)(e, t, r), p(false), f(false)
     } catch (e) {
-      p(!0), f(!1)
+      p(true), f(false)
     }
   }, []), h = n.useCallback(e => {
     try {
       (0, l.pf)(e)
     } catch (e) {
-      p(!0)
+      p(true)
     }
   }, []);
   return n.useEffect(() => {
     var e, n;
-    !0 === u || null != i || d || t || m || r || s || (p(!1), (null == (e = a.userStatus) ? void 0 : e.claimedAt) == null && null != c ? b(a.id, c, o) : (null == (n = a.userStatus) ? void 0 : n.claimedAt) != null && h(a.id))
+    true === u || null != i || d || t || m || r || s || (p(false), (null == (e = a.userStatus) ? true : e.claimedAt) == null && null != c ? b(a.id, c, o) : (null == (n = a.userStatus) ? true : n.claimedAt) != null && h(a.id))
   }, [b, h, d, t, m, r, o, a, s, i, c, u]), {
     claimCode: b,
     fetchCode: h,
@@ -67,7 +68,7 @@ function c(e) {
       questContentCTA: p,
       questContentPosition: m,
       sourceQuestContent: y
-    })) : i ? (null == (e = u.userStatus) ? void 0 : e.claimedAt) != null ? l(u.id) : null != b && (r(u.id, b, d), O({
+    })) : i ? (null == (e = u.userStatus) ? true : e.claimedAt) != null ? l(u.id) : null != b && (r(u.id, b, d), O({
       questId: u.id,
       questContent: d,
       questContentCTA: p,
@@ -91,5 +92,5 @@ function c(e) {
         }), (0, o.Z)(h)
       }
     })), c())
-  }, [r, l, i, c, u.id, null == (t = u.userStatus) ? void 0 : t.claimedAt, d, p, m, f, b, O, h, y])
+  }, [r, l, i, c, u.id, null == (t = u.userStatus) ? true : t.claimedAt, d, p, m, f, b, O, h, y])
 }

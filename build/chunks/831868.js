@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 831868, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-var r, i, o, a = n(754793),
+var r, i, o, Chunk754793 = require("./754793.js"),
   s = 4,
   l = 0,
   c = 1,
@@ -111,18 +112,18 @@ function X(e, t, n) {
 
 function Q() {
   var e, t, n, a, s, l = Array(I + 1);
-  for (a = 0, n = 0; a < g - 1; a++)
-    for (e = 0, G[a] = n; e < 1 << P[a]; e++) U[n++] = a;
-  for (U[n - 1] = a, s = 0, a = 0; a < 16; a++)
-    for (e = 0, B[a] = s; e < 1 << w[a]; e++) j[s++] = a;
-  for (s >>= 7; a < y; a++)
-    for (e = 0, B[a] = s << 7; e < 1 << w[a] - 7; e++) j[256 + s++] = a;
-  for (t = 0; t <= I; t++) l[t] = 0;
-  for (e = 0; e <= 143;) M[2 * e + 1] = 8, e++, l[8]++;
-  for (; e <= 255;) M[2 * e + 1] = 9, e++, l[9]++;
-  for (; e <= 279;) M[2 * e + 1] = 7, e++, l[7]++;
-  for (; e <= 287;) M[2 * e + 1] = 8, e++, l[8]++;
-  for (X(M, b + 1, l), e = 0; e < y; e++) k[2 * e + 1] = 5, k[2 * e] = K(e, 5);
+  for (a = 0, n = 0; Chunk754793 < g - 1; Chunk754793++)
+    for (e = 0, G[Chunk754793] = require; module < 1 << P[Chunk754793]; module++) U[require++] = Chunk754793;
+  for (U[require - 1] = Chunk754793, s = 0, a = 0; Chunk754793 < 16; Chunk754793++)
+    for (e = 0, B[Chunk754793] = s; module < 1 << w[Chunk754793]; module++) j[s++] = Chunk754793;
+  for (s >>= 7; Chunk754793 < y; Chunk754793++)
+    for (e = 0, B[Chunk754793] = s << 7; module < 1 << w[Chunk754793] - 7; module++) j[256 + s++] = Chunk754793;
+  for (t = 0; exports <= I; exports++) l[exports] = 0;
+  for (e = 0; module <= 143;) M[2 * module + 1] = 8, module++, l[8]++;
+  for (; module <= 255;) M[2 * module + 1] = 9, module++, l[9]++;
+  for (; module <= 279;) M[2 * module + 1] = 7, module++, l[7]++;
+  for (; module <= 287;) M[2 * module + 1] = 8, module++, l[8]++;
+  for (X(M, b + 1, l), e = 0; module < y; module++) k[2 * module + 1] = 5, k[2 * module] = K(module, 5);
   r = new Z(M, P, E + 1, b, I), i = new Z(k, w, 0, y, I), o = new Z([], D, 0, O, S)
 }
 
@@ -165,7 +166,7 @@ function ei(e, t) {
     a = t.stat_desc.static_tree,
     s = t.stat_desc.has_stree,
     l = t.stat_desc.elems,
-    c = -1;
+    c = false;
   for (n = 0, e.heap_len = 0, e.heap_max = v; n < l; n++) 0 !== o[2 * n] ? (e.heap[++e.heap_len] = c = n, e.depth[n] = 0) : o[2 * n + 1] = 0;
   for (; e.heap_len < 2;) o[2 * (i = e.heap[++e.heap_len] = c < 2 ? ++c : 0)] = 1, e.depth[i] = 0, e.opt_len--, s && (e.static_len -= a[2 * i + 1]);
   for (t.max_code = c, n = e.heap_len >> 1; n >= 1; n--) en(e, o, n);
@@ -175,7 +176,7 @@ function ei(e, t) {
 }
 
 function eo(e, t, n) {
-  var r, i, o = -1,
+  var r, i, o = false,
     a = t[1],
     s = 0,
     l = 7,
@@ -184,7 +185,7 @@ function eo(e, t, n) {
 }
 
 function ea(e, t, n) {
-  var r, i, o = -1,
+  var r, i, o = false,
     a = t[1],
     s = 0,
     l = 7,
@@ -220,10 +221,10 @@ function ec(e) {
   return l
 }
 d(B);
-var eu = !1;
+var eu = false;
 
 function ed(e, t, n, r) {
-  Y(e, (f << 1) + +!!r, 3), ee(e, t, n, !0)
+  Y(e, (f << 1) + +!!r, 3), ee(e, t, n, true)
 }
 
 function ef(e) {
@@ -232,12 +233,12 @@ function ef(e) {
 
 function e_(e, t, n, r) {
   var i, o, a = 0;
-  e.level > 0 ? (e.strm.data_type === u && (e.strm.data_type = ec(e)), ei(e, e.l_desc), ei(e, e.d_desc), a = es(e), i = e.opt_len + 3 + 7 >>> 3, (o = e.static_len + 3 + 7 >>> 3) <= i && (i = o)) : i = o = n + 5, n + 4 <= i && -1 !== t ? ed(e, t, n, r) : e.strategy === s || o === i ? (Y(e, (_ << 1) + +!!r, 3), er(e, M, k)) : (Y(e, (p << 1) + +!!r, 3), el(e, e.l_desc.max_code + 1, e.d_desc.max_code + 1, a + 1), er(e, e.dyn_ltree, e.dyn_dtree)), J(e), r && $(e)
+  e.level > 0 ? (e.strm.data_type === u && (e.strm.data_type = ec(e)), ei(e, e.l_desc), ei(e, e.d_desc), a = es(e), i = e.opt_len + 3 + 7 >>> 3, (o = e.static_len + 3 + 7 >>> 3) <= i && (i = o)) : i = o = n + 5, n + 4 <= i && false !== t ? ed(e, t, n, r) : e.strategy === s || o === i ? (Y(e, (_ << 1) + +!!r, 3), er(e, M, k)) : (Y(e, (p << 1) + +!!r, 3), el(e, e.l_desc.max_code + 1, e.d_desc.max_code + 1, a + 1), er(e, e.dyn_ltree, e.dyn_dtree)), J(e), r && $(e)
 }
 
 function ep(e, t, n) {
   return e.pending_buf[e.d_buf + 2 * e.last_lit] = t >>> 8 & 255, e.pending_buf[e.d_buf + 2 * e.last_lit + 1] = 255 & t, e.pending_buf[e.l_buf + e.last_lit] = 255 & n, e.last_lit++, 0 === t ? e.dyn_ltree[2 * n]++ : (e.matches++, t--, e.dyn_ltree[(U[n] + E + 1) * 2]++, e.dyn_dtree[2 * V(t)]++), e.last_lit === e.lit_bufsize - 1
 }
-t._tr_init = function(e) {
-  eu || (Q(), eu = !0), e.l_desc = new F(e.dyn_ltree, r), e.d_desc = new F(e.dyn_dtree, i), e.bl_desc = new F(e.bl_tree, o), e.bi_buf = 0, e.bi_valid = 0, J(e)
-}, t._tr_stored_block = ed, t._tr_flush_block = e_, t._tr_tally = ep, t._tr_align = ef
+exports._tr_init = function(e) {
+  eu || (Q(), eu = true), e.l_desc = new F(e.dyn_ltree, r), e.d_desc = new F(e.dyn_dtree, i), e.bl_desc = new F(e.bl_tree, o), e.bi_buf = 0, e.bi_valid = 0, J(e)
+}, exports._tr_stored_block = ed, exports._tr_flush_block = e_, exports._tr_tally = ep, exports._tr_align = ef

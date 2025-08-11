@@ -1,9 +1,10 @@
 /** Chunk was on web.js **/
+/** chunk id: 337829, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = function() {
+module.exports = function() {
   var e, t = this,
-    r = t.constructor;
+    r = exports.constructor;
   if (!r.REVERSE_MAP)
-    for (var i in r.REVERSE_MAP = {}, e = n(618336)) i > 95 && i < 112 || e.hasOwnProperty(i) && (r.REVERSE_MAP[e[i]] = i);
+    for (var i in r.REVERSE_MAP = {}, e = require("./618336.js")) i > 95 && i < 112 || module.hasOwnProperty(i) && (r.REVERSE_MAP[module[i]] = i);
   return r.REVERSE_MAP
 }

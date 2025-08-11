@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 561308, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   GE: () => A,
   GL: () => h,
   Jd: () => R,
@@ -21,15 +22,15 @@ n.d(t, {
   yA: () => v,
   yh: () => m,
   zo: () => D
-}), n(35282);
-var r = n(164369),
-  i = n(913527),
-  o = n.n(i),
-  a = n(884439),
-  s = n(876215),
-  l = n(70956),
-  c = n(709054),
-  u = n(388032);
+}), require("./35282.js");
+var Chunk164369 = require("./164369.js"),
+  Chunk913527 = require("./913527.js"),
+  o = require.n(Chunk913527),
+  Chunk884439 = require("./884439.js"),
+  Chunk876215 = require("./876215.js"),
+  Chunk70956 = require("./70956.js"),
+  Chunk709054 = require("./709054.js"),
+  Chunk388032 = require("./388032.jsx");
 let d = e => {
     let {
       start: t,
@@ -85,7 +86,7 @@ let d = e => {
   h = function(e, t, n) {
     let {
       formatSet: r = p
-    } = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : {}, i = o()(n), a = o()(c.default.extractTimestamp(e.id)), s = i.diff(a, "s"), u = Math.abs(s);
+    } = arguments.length > 3 && true !== arguments[3] ? arguments[3] : {}, i = o()(n), a = o()(c.default.extractTimestamp(e.id)), s = i.diff(a, "s"), u = Math.abs(s);
     if (u < l.Z.Seconds.MINUTE) return r.secondsAgo(s);
     if (u < l.Z.Seconds.HOUR) {
       let e = Math.round(s / l.Z.Seconds.MINUTE);
@@ -107,8 +108,8 @@ let d = e => {
     return r.monthsAgo(d)
   },
   m = function(e, t) {
-    let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : Date.now(),
-      r = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : {};
+    let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : Date.now(),
+      r = arguments.length > 3 && true !== arguments[3] ? arguments[3] : {};
     return E(e) ? _(e, n) : h(e, t, n, r)
   };
 
@@ -118,12 +119,12 @@ function g(e, t) {
 
 function E(e) {
   var t, n;
-  return null != (n = null == (t = g(e, a.N.IS_LIVE)) ? void 0 : t.is_live) && n
+  return null != (n = null == (t = g(e, a.N.IS_LIVE)) ? true : t.is_live) && n
 }
 
 function b(e) {
   var t, n;
-  return null != (n = null == (t = g(e, a.N.FIRST_TIME)) ? void 0 : t.first_time) && n
+  return null != (n = null == (t = g(e, a.N.FIRST_TIME)) ? true : t.first_time) && n
 }
 
 function y(e) {
@@ -136,22 +137,22 @@ function O(e) {
 
 function v(e) {
   var t;
-  return null == (t = g(e, a.N.DURATION_SECONDS)) ? void 0 : t.duration_seconds
+  return null == (t = g(e, a.N.DURATION_SECONDS)) ? true : t.duration_seconds
 }
 
 function I(e) {
   var t;
-  return null == (t = g(e, a.N.AGGREGATE_RANGE)) ? void 0 : t.range
+  return null == (t = g(e, a.N.AGGREGATE_RANGE)) ? true : t.range
 }
 
 function T(e) {
   var t;
-  return null == (t = g(e, a.N.MARATHON)) ? void 0 : t.marathon
+  return null == (t = g(e, a.N.MARATHON)) ? true : t.marathon
 }
 
 function S(e) {
   let t = g(e, a.N.RESURRECTED);
-  return (null == t ? void 0 : t.resurrected_last_played) != null ? new Date(t.resurrected_last_played) : void 0
+  return (null == t ? true : t.resurrected_last_played) != null ? new Date(t.resurrected_last_played) : true
 }
 
 function A(e) {
@@ -181,8 +182,8 @@ function N(e) {
 
 function C(e, t) {
   var n, r, i, o;
-  let a, s = null != (i = null == t || null == (n = t.size) ? void 0 : n[0]) ? i : void 0,
-    l = null != (o = null == t || null == (r = t.size) ? void 0 : r[1]) ? o : void 0;
+  let a, s = null != (i = null == t || null == (n = t.size) ? true : n[0]) ? i : true,
+    l = null != (o = null == t || null == (r = t.size) ? true : r[1]) ? o : true;
   return null != s && null != l && s > 0 && l > 0 ? a = u.intl.formatToPlainString(u.t.wmUSi4, {
     count: s,
     max: l
@@ -197,12 +198,12 @@ function R(e) {
 
 function P(e) {
   var t;
-  return null == (t = g(e, a.N.STREAK_DAYS)) ? void 0 : t.streak_count_days
+  return null == (t = g(e, a.N.STREAK_DAYS)) ? true : t.streak_count_days
 }
 
 function w(e) {
   let t = P(e);
-  if (null == t || t < 3) return !1;
+  if (null == t || t < 3) returnfalse;
   let n = c.default.extractTimestamp(e.id);
   return !(Date.now() - n > 48 * l.Z.Millis.HOUR)
 }
@@ -229,5 +230,5 @@ function D(e) {
 
 function L(e) {
   var t;
-  return null == (t = g(e, a.N.TRENDING_CONTENT)) ? void 0 : t.trending
+  return null == (t = g(e, a.N.TRENDING_CONTENT)) ? true : t.trending
 }

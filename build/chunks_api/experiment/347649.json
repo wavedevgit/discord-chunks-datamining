@@ -1,1 +1,0 @@
-{"id":"347649","type":"experiment","data":{"kind":"user","id":"2024-01_uu_forced_migration","label":"Unique Username Forced Migration UI","defaultConfig":{"enabled":false},"treatments":[{"id":1,"label":"Enable Forced Migration UI","config":{"enabled":false}}]},"fromModule":{"id":"web.js"}}

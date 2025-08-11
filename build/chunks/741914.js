@@ -1,20 +1,21 @@
 /** Chunk was on web.js **/
+/** chunk id: 741914, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => h
 });
-var r = n(392711),
-  i = n.n(r),
-  o = n(723454),
-  a = n(428595),
-  s = n(454585);
+var Chunk392711 = require("./392711.js"),
+  i = require.n(Chunk392711),
+  Chunk723454 = require("./723454.js"),
+  Chunk428595 = require("./428595.js"),
+  Chunk454585 = require("./454585.js");
 
 function l(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -47,8 +48,8 @@ function d(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let f = i().omit(a.Z.RULES, ["codeBlock", "heading"]),
-  _ = d(c({}, o.Z), {
+let f = i().omit(Chunk428595.Z.RULES, ["codeBlock", "heading"]),
+  _ = d(c({}, Chunk723454.Z), {
     parse: function(e, t, n) {
       var r;
       let i = o.Z.parse(e, t, n),
@@ -58,7 +59,7 @@ let f = i().omit(a.Z.RULES, ["codeBlock", "heading"]),
       })
     }
   }),
-  p = s.Z.combineAndInjectMentionRule(f, [s.Z.createReactRules(s.Z.defaultReactRuleOptions), {
+  p = Chunk454585.Z.combineAndInjectMentionRule(f, [Chunk454585.Z.createReactRules(Chunk454585.Z.defaultReactRuleOptions), {
     header: _
   }]),
-  h = s.Z.reactParserFor(p)
+  h = Chunk454585.Z.reactParserFor(p)

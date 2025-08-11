@@ -1,5 +1,6 @@
 /** Chunk was on 12014 **/
-e.exports = {
+/** chunk id: 23525, original params: e,n,t (module,exports,require) **/
+module.exports = {
   root: "root__10a0c",
   content: "content__10a0c",
   fullbleed: "fullbleed__10a0c",

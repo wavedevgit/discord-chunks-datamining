@@ -1,35 +1,36 @@
 /** Chunk was on web.js **/
+/** chunk id: 70655, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => m
-}), n(388685);
-var r = n(70780),
-  i = n(147913),
-  o = n(710845),
-  a = n(131951),
-  s = n(936349),
-  l = n(70956),
-  c = n(358085);
+}), require("./388685.js");
+var Chunk70780 = require("./70780.js"),
+  Chunk147913 = require("./147913.js"),
+  Chunk710845 = require("./710845.js"),
+  Chunk131951 = require("./131951.js"),
+  Chunk936349 = require("./936349.js"),
+  Chunk70956 = require("./70956.js"),
+  Chunk358085 = require("./358085.js");
 
 function u(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
-let d = +l.Z.Millis.SECOND,
-  f = 30 * l.Z.Millis.SECOND,
+let d = +Chunk70956.Z.Millis.SECOND,
+  f = 30 * Chunk70956.Z.Millis.SECOND,
   _ = 360,
-  p = new o.Z("RTCLatencyTestManager");
-p.enableNativeLogger(!0);
-class h extends i.Z {
+  p = new Chunk710845.Z("RTCLatencyTestManager");
+p.enableNativeLogger(true);
+class h extends Chunk147913.Z {
   _terminate() {
     null != this.refetchTimeout && clearTimeout(this.refetchTimeout)
   }
   constructor(...e) {
-    super(...e), u(this, "refetchTimeout", void 0), u(this, "actions", {
+    super(...e), u(this, "refetchTimeout", true), u(this, "actions", {
       POST_CONNECTION_OPEN: () => this._handleConnectionOpen()
     }), u(this, "_handleTestRegionsResponse", e => {
       let t = e.map(e => e.region);

@@ -1,13 +1,14 @@
 /** Chunk was on web.js **/
+/** chunk id: 157925, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   $z: () => a,
   BM: () => s,
   Df: () => o,
   gD: () => i,
   lv: () => l,
   xA: () => r
-}), n(63063), n(981631), n(388032);
+}), require("./63063.js"), require("./981631.js"), require("./388032.js");
 let r = 240,
   i = "834488117758001152",
   o = "stage-invite",

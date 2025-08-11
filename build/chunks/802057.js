@@ -1,17 +1,18 @@
 /** Chunk was on 5950 **/
-n.d(t, {
+/** chunk id: 802057, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => i
 });
-var a = n(475637);
+var Chunk475637 = require("./475637.js");
 let i = {
-  ordinalNumber: (0, n(925300).Z)({
+  ordinalNumber: (0, require("./925300.js").Z)({
     matchPattern: /^(第\s*)?\d+(日|時|分|秒)?/i,
     parsePattern: /\d+/i,
     valueCallback: function(e) {
       return parseInt(e, 10)
     }
   }),
-  era: (0, a.Z)({
+  era: (0, Chunk475637.Z)({
     matchPatterns: {
       narrow: /^(前)/i,
       abbreviated: /^(前)/i,
@@ -23,7 +24,7 @@ let i = {
     },
     defaultParseWidth: "any"
   }),
-  quarter: (0, a.Z)({
+  quarter: (0, Chunk475637.Z)({
     matchPatterns: {
       narrow: /^[1234]/i,
       abbreviated: /^第[一二三四]刻/i,
@@ -38,7 +39,7 @@ let i = {
       return e + 1
     }
   }),
-  month: (0, a.Z)({
+  month: (0, Chunk475637.Z)({
     matchPatterns: {
       narrow: /^(一|二|三|四|五|六|七|八|九|十[二一])/i,
       abbreviated: /^(一|二|三|四|五|六|七|八|九|十[二一]|\d|1[12])月/i,
@@ -51,7 +52,7 @@ let i = {
     },
     defaultParseWidth: "any"
   }),
-  day: (0, a.Z)({
+  day: (0, Chunk475637.Z)({
     matchPatterns: {
       narrow: /^[一二三四五六日]/i,
       short: /^[一二三四五六日]/i,
@@ -64,7 +65,7 @@ let i = {
     },
     defaultParseWidth: "any"
   }),
-  dayPeriod: (0, a.Z)({
+  dayPeriod: (0, Chunk475637.Z)({
     matchPatterns: {
       any: /^(上午?|下午?|午夜|[中正]午|早上?|下午|晚上?|凌晨)/i
     },

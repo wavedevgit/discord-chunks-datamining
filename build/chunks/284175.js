@@ -1,2 +1,0 @@
-/** Chunk was on 62441 **/
-e.exports = JSON.parse('{"8ZcEfn":"Farger","AsmU8/":"Tilpass temaet","xRdYAQ":"Egendefinerte temaer [beta] er ikke tilgjengelig p\xe5 mobil.","2hAz8f":"Tilpass temaet","23QUzs":"Nyhet! Tilpassede temaer","TRCE4u":"Finn riktig stemning med en uendelig mengde fargekombinasjoner. Pr\xf8v n\xe5, bare med Nitro."}')

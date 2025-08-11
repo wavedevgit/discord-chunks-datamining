@@ -1,2 +1,3 @@
 /** Chunk was on 87052 **/
-i.exports = JSON.parse('{"i9e/u7":"Liukuv\xe4ritys","2akt9v":"Wumpus","x68b1N":"Neon","OpWJ3d":"Kiinte\xe4","rN7cub":"Sakura","JOpi7+":"Valitse v\xe4ri","cVTpnp":"Lis\xe4\xe4 v\xe4rit ensin","NOGFdn":"Yll\xe4t\xe4 minut"}')
+/** chunk id: 937739, original params: i (module,exports,require) **/
+module.exports = JSON.parse('{"i9e/u7":"Liukuv\xe4ritys","2akt9v":"Wumpus","x68b1N":"Neon","OpWJ3d":"Kiinte\xe4","rN7cub":"Sakura","JOpi7+":"Valitse v\xe4ri","cVTpnp":"Lis\xe4\xe4 v\xe4rit ensin","NOGFdn":"Yll\xe4t\xe4 minut"}')

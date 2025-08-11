@@ -1,14 +1,15 @@
 /** Chunk was on web.js **/
+/** chunk id: 965638, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Ij: () => c,
   MQ: () => s,
   O4: () => l
 });
-var r = n(442837),
-  i = n(487419),
-  o = n(496675),
-  a = n(981631);
+var Chunk442837 = require("./442837.js"),
+  Chunk487419 = require("./487419.js"),
+  Chunk496675 = require("./496675.js"),
+  Chunk981631 = require("./981631.js");
 
 function s(e) {
   return (0, r.e7)([o.Z], () => null != e && o.Z.can(a.Plq.MANAGE_GUILD, e), [e])
@@ -16,7 +17,7 @@ function s(e) {
 
 function l(e) {
   let t = (0, r.e7)([i.Z], () => null != e ? i.Z.getGuildIncident(e.id) : null);
-  return (null == e ? void 0 : e.features.has(a.oNc.INVITES_DISABLED)) || (null == t ? void 0 : t.invitesDisabledUntil) != null && new Date(t.invitesDisabledUntil) > new Date
+  return (null == e ? true : e.features.has(a.oNc.INVITES_DISABLED)) || (null == t ? true : t.invitesDisabledUntil) != null && new Date(t.invitesDisabledUntil) > new Date
 }
 
 function c(e) {

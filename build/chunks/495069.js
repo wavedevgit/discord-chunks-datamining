@@ -1,5 +1,6 @@
 /** Chunk was on web.js **/
-e.exports = function(e) {
+/** chunk id: 495069, original params: e (module,exports,re quire) **/
+module.exports = function(e) {
   return {
     aliases: ["pycon"],
     contains: [{

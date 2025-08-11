@@ -1,5 +1,6 @@
 /** Chunk was on 81843 **/
-a.d(t, {
+/** chunk id: 209576, original params: e,t,a (module,exports,require) **/
+require.d(exports, {
   Z: () => s
 });
 var i = ["vas\xe1rnap", "h\xe9tfőn", "kedden", "szerd\xe1n", "cs\xfct\xf6rt\xf6k\xf6n", "p\xe9nteken", "szombaton"];
@@ -11,11 +12,11 @@ function n(e) {
   }
 }
 var r = {
-  lastWeek: n(!1),
+  lastWeek: n(false),
   yesterday: "'tegnap' p'-kor'",
   today: "'ma' p'-kor'",
   tomorrow: "'holnap' p'-kor'",
-  nextWeek: n(!0),
+  nextWeek: n(true),
   other: "P"
 };
 let s = function(e, t) {

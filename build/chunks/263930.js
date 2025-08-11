@@ -1,5 +1,6 @@
 /** Chunk was on 89311 **/
-e.exports = {
+/** chunk id: 263930, original params: e,t,r (module,exports,require) **/
+module.exports = {
   row: "row__8e830",
   column: "column__8e830",
   gapXs: "gapXs__8e830",

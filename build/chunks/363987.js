@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 363987, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   voiceCallWrapper: "voiceCallWrapper_a21736",
   videoGridWrapper: "videoGridWrapper_a21736",
   flexCenter: "flexCenter_a21736",

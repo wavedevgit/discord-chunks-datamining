@@ -1,7 +1,8 @@
 /** Chunk was on 1272 **/
-e.exports = {
+/** chunk id: 64648, original params: e,t,n (module,exports,require) **/
+module.exports = {
   spinner: "spinner_a2f514",
-  container: "container_a2f514 " + n(992648).fixClipping,
+  container: "container_a2f514 " + require("./992648.js").fixClipping,
   text: "text_a2f514",
   ready: "ready_a2f514",
   content: "content_a2f514",

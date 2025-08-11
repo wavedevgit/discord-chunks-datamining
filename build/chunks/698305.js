@@ -1,21 +1,22 @@
 /** Chunk was on web.js **/
+/** chunk id: 698305, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => u
-}), n(415506);
-var r = n(493683),
-  i = n(904245),
-  o = n(541716),
-  a = n(656709),
-  s = n(957730),
-  l = n(592125),
-  c = n(838440);
+}), require("./415506.js");
+var Chunk493683 = require("./493683.js"),
+  Chunk904245 = require("./904245.js"),
+  Chunk541716 = require("./541716.js"),
+  Chunk656709 = require("./656709.js"),
+  Chunk957730 = require("./957730.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk838440 = require("./838440.js");
 let u = async e => {
   let {
     userId: t,
     content: n,
     location: u,
-    openChannel: d = !0,
+    openChannel: d = true,
     whenReady: f,
     entry: _
   } = e, {

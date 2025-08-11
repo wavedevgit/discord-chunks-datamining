@@ -1,8 +1,9 @@
 /** Chunk was on 27434 **/
-e.d(n, {
+/** chunk id: 495279, original params: t,n,e (module,exports,require) **/
+require.d(exports, {
   Z: () => i
 });
-var l = e(482241);
+var Chunk482241 = require("./482241.js");
 
 function i(t, n, e, i) {
   let {
@@ -12,6 +13,6 @@ function i(t, n, e, i) {
   return null == r && null == o ? l.Z.deleteGuildEventException(n, e, i) : l.Z.updateGuildEventException({
     scheduled_start_time: r,
     scheduled_end_time: o,
-    is_canceled: !1
+    is_canceled: false
   }, n, e, i)
 }

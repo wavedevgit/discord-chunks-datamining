@@ -1,29 +1,30 @@
 /** Chunk was on web.js **/
+/** chunk id: 420001, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => v
-}), n(35282), n(781311), n(704826);
-var r = n(911969),
-  i = n(10718),
-  o = n(367790),
-  a = n(895924),
-  s = n(826298),
-  l = n(588468),
-  c = n(695346),
-  u = n(594174),
-  d = n(5192),
-  f = n(417574),
-  _ = n(877565),
-  p = n(590921),
-  h = n(126226),
-  m = n(388032);
+}), require("./35282.js"), require("./781311.js"), require("./704826.js");
+var Chunk911969 = require("./911969.js"),
+  Chunk10718 = require("./10718.js"),
+  Chunk367790 = require("./367790.js"),
+  Chunk895924 = require("./895924.js"),
+  Chunk826298 = require("./826298.js"),
+  Chunk588468 = require("./588468.js"),
+  Chunk695346 = require("./695346.js"),
+  Chunk594174 = require("./594174.js"),
+  Chunk5192 = require("./5192.js"),
+  Chunk417574 = require("./417574.js"),
+  Chunk877565 = require("./877565.js"),
+  Chunk590921 = require("./590921.js"),
+  Chunk126226 = require("./126226.jsx"),
+  Chunk388032 = require("./388032.jsx");
 
 function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -70,11 +71,11 @@ function O(e) {
   }
   return null
 }
-let v = y(E({}, h.Z), {
-  sentinel: void 0,
-  focusMode: p.QZ.MANUAL,
+let v = y(E({}, Chunk126226.Z), {
+  sentinel: true,
+  focusMode: Chunk590921.QZ.MANUAL,
   matches(e, t, n, r, i) {
-    if (i.commands === p.L8.DISABLED || i.commands === p.L8.OLD_BUILT_INS || n.length < 2 || !c.Xk.getSetting()) return !1;
+    if (i.commands === p.L8.DISABLED || i.commands === p.L8.OLD_BUILT_INS || n.length < 2 || !c.Xk.getSetting()) returnfalse;
     let o = O(n);
     return null != o && o.cleanedQuery.length > 0
   },
@@ -109,7 +110,7 @@ let v = y(E({}, h.Z), {
       results: {
         entries: m.slice(0, p.AQ).map(e => ({
           command: e,
-          section: null == _ ? void 0 : _.find(t => t.id === e.applicationId)
+          section: null == _ ? true : _.find(t => t.id === e.applicationId)
         }))
       }
     }
@@ -146,14 +147,14 @@ let v = y(E({}, h.Z), {
           command: t,
           channel: i,
           guildId: i.guild_id,
-          showImage: !0,
+          showImage: true,
           section: n
         }
       },
       getQuery: e => {
         let t = O(e);
         if ("mention" !== t.type) return e;
-        let n = d.ZP.getName(null == r ? void 0 : r.id, i.id, t.user);
+        let n = d.ZP.getName(null == r ? true : r.id, i.id, t.user);
         return e.replace(f.X, "@".concat(n))
       },
       key: "commands"

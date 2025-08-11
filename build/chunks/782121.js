@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 782121, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   body: "body_d31d57",
   nonTopInputWrapper: "nonTopInputWrapper_d31d57",
   bankSelectionStub: "bankSelectionStub_d31d57"

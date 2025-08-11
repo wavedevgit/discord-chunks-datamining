@@ -1,9 +1,10 @@
 /** Chunk was on web.js **/
+/** chunk id: 195875, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-var r = n(381538);
+var Chunk381538 = require("./381538.js");
 
 function i() {
-  return (i = r || function(e) {
+  return (i = Chunk381538 || function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = arguments[t];
       for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
@@ -15,11 +16,11 @@ function i() {
 function o(e, t) {
   e.prototype = Object.create(t.prototype), e.prototype.constructor = e, e.__proto__ = t
 }
-var a = n(691099),
-  s = n(152477),
-  l = n(73800),
-  c = n(467159);
-e.exports = function(e) {
+var Chunk691099 = require("./691099.js"),
+  Chunk152477 = require("./152477.js"),
+  Chunk73800 = require("./73800.js"),
+  Chunk467159 = require("./467159.js");
+module.exports = function(e) {
   function t() {
     return e.apply(this, arguments) || this
   }
@@ -28,11 +29,11 @@ e.exports = function(e) {
   return n.shouldComponentUpdate = function(e) {
     var t = this.props.editorState,
       n = e.editorState;
-    if (t.getDirectionMap() !== n.getDirectionMap() || t.getSelection().getHasFocus() !== n.getSelection().getHasFocus()) return !0;
+    if (t.getDirectionMap() !== n.getDirectionMap() || t.getSelection().getHasFocus() !== n.getSelection().getHasFocus()) returntrue;
     var r = n.getNativelyRenderedContent(),
       i = t.isInCompositionMode(),
       o = n.isInCompositionMode();
-    if (t === n || null !== r && n.getCurrentContent() === r || i && o) return !1;
+    if (t === n || null !== r && n.getCurrentContent() === r || i && o) returnfalse;
     var a = t.getCurrentContent(),
       s = n.getCurrentContent(),
       l = t.getDecorator(),
@@ -85,4 +86,4 @@ e.exports = function(e) {
       "data-contents": "true"
     }, A)
   }, t
-}(l.Component)
+}(Chunk73800.Component)

@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 517895, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   button: "button_fb7f94",
   icon: "icon_fb7f94",
   banner: "banner_fb7f94",

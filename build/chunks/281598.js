@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 281598, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   BU: () => v,
   CM: () => h,
   Eo: () => m,
@@ -11,18 +12,18 @@ n.d(t, {
   aB: () => f,
   hm: () => P,
   jE: () => d
-}), n(388685), n(539854), n(472816), n(794429), n(642613);
-var r = n(73800),
-  i = n(481060),
-  o = n(406432),
-  a = n(619899);
+}), require("./388685.js"), require("./539854.js"), require("./472816.js"), require("./794429.js"), require("./642613.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk481060 = require("./481060.js"),
+  Chunk406432 = require("./406432.js"),
+  Chunk619899 = require("./619899.js");
 
 function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -181,7 +182,7 @@ let m = e => {
     }
     return t.collectionFiles.sort((e, t) => e.name.localeCompare(t.name)), t.avatarDecorationFiles.sort((e, t) => e.name.localeCompare(t.name)), t.ignoredFilenames.sort((e, t) => e.localeCompare(t)), t
   }, P = () => {
-    let [e, t] = r.useState(() => ({
+    let [e, t] = Chunk73800.useState(() => ({
       collectionFiles: [],
       avatarDecorationFiles: [],
       profileEffectFilesMap: {},
@@ -189,7 +190,7 @@ let m = e => {
     })), {
       upsertCollectionAsset: n,
       upsertAvatarDecorationAsset: i
-    } = (0, a.N9)(), o = r.useCallback(async e => {
+    } = (0, Chunk619899.N9)(), o = Chunk73800.useCallback(async e => {
       let r = await R(e);
       t(r), (0 !== r.collectionFiles.length || 0 !== r.avatarDecorationFiles.length) && (r.collectionFiles.forEach(e => {
         E(e, e => {
@@ -201,21 +202,21 @@ let m = e => {
           i(e)
         })
       }))
-    }, [n, i]), s = r.useCallback(() => {
-      t(e => u(l({}, e), {
+    }, [require, Chunk481060]), s = Chunk73800.useCallback(() => {
+      exports(e => u(l({}, e), {
         collectionFiles: [],
         avatarDecorationFiles: [],
         profileEffectFilesMap: {}
       }))
-    }, []), c = r.useCallback(() => {
-      t(e => u(l({}, e), {
+    }, []), c = Chunk73800.useCallback(() => {
+      exports(e => u(l({}, e), {
         ignoredFilenames: []
       }))
     }, []);
     return {
-      ignoredFilenames: e.ignoredFilenames,
+      ignoredFilenames: module.ignoredFilenames,
       clearAssets: s,
       clearIgnoredFilenames: c,
-      processAndUpsertAssets: o
+      processAndUpsertAssets: Chunk406432
     }
   }

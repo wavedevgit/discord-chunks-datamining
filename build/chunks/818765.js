@@ -1,54 +1,55 @@
 /** Chunk was on 34779 **/
-n.d(t, {
+/** chunk id: 818765, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => x
-}), n(388685), n(539854);
-var r = n(570140),
-  i = n(317770),
-  l = n(460181),
-  o = n(474873),
-  s = n(314897),
-  a = n(19780),
-  c = n(944486),
-  u = n(111583),
-  d = n(351780),
-  h = n(843693),
-  p = n(981631);
-let f = (0, l.uk)("poggermode_applause", o.Z.getSoundpack()),
-  g = !1,
-  m = !1,
+}), require("./388685.js"), require("./539854.js");
+var Chunk570140 = require("./570140.js"),
+  Chunk317770 = require("./317770.js"),
+  Chunk460181 = require("./460181.js"),
+  Chunk474873 = require("./474873.js"),
+  Chunk314897 = require("./314897.js"),
+  Chunk19780 = require("./19780.js"),
+  Chunk944486 = require("./944486.js"),
+  Chunk111583 = require("./111583.js"),
+  Chunk351780 = require("./351780.js"),
+  Chunk843693 = require("./843693.js"),
+  Chunk981631 = require("./981631.js");
+let f = (0, Chunk460181.uk)("poggermode_applause", Chunk474873.Z.getSoundpack()),
+  g = false,
+  m = false,
   b = [],
   O = null,
   _ = () => {
-    g || (f.loop(), g = !0)
+    g || (f.loop(), g = true)
   },
   y = () => {
-    f.stop(), g = !1
+    f.stop(), g = false
   },
   C = () => {
-    let e = d.Z.isEnabled(),
-      t = d.Z.comboSoundsEnabled;
-    return !!e && !!t && null != c.Z.getChannelId()
+    let e = Chunk351780.Z.isEnabled(),
+      t = Chunk351780.Z.comboSoundsEnabled;
+    return !!module && !!exports && null != Chunk944486.Z.getChannelId()
   },
   v = () => {
     if (0 === b.length || !C() || m) return;
-    m = !0;
+    m = true;
     let [e, t] = b[b.length - 1];
-    (0, l.GN)(e, t), O = setTimeout(j, 1e3)
+    (0, Chunk460181.GN)(module, exports), O = setTimeout(j, 1e3)
   },
   j = () => {
-    b.pop(), m = !1, v()
+    b.pop(), m = false, v()
   },
   E = function(e) {
-    let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 1,
+    let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : 1,
       n = a.Z.isConnected();
     b.push([e, t * (n ? .1 : 1)]), v()
   };
-class S extends i.Z {
+class S extends Chunk317770.Z {
   _initialize() {
-    h.ZP.addChangeListener(this.startAudio), r.Z.subscribe("RTC_CONNECTION_STATE", this.setVolume), r.Z.subscribe("TYPING_STOP", this.stopAudio), r.Z.subscribe("TYPING_STOP_LOCAL", this.stopAudio), r.Z.subscribe("CHANNEL_SELECT", this.stopAudio), r.Z.subscribe("POGGERMODE_SETTINGS_UPDATE", this.stopAudio)
+    Chunk843693.ZP.addChangeListener(this.startAudio), Chunk570140.Z.subscribe("RTC_CONNECTION_STATE", this.setVolume), Chunk570140.Z.subscribe("TYPING_STOP", this.stopAudio), Chunk570140.Z.subscribe("TYPING_STOP_LOCAL", this.stopAudio), Chunk570140.Z.subscribe("CHANNEL_SELECT", this.stopAudio), Chunk570140.Z.subscribe("POGGERMODE_SETTINGS_UPDATE", this.stopAudio)
   }
   _terminate() {
-    h.ZP.removeChangeListener(this.startAudio), r.Z.unsubscribe("RTC_CONNECTION_STATE", this.setVolume), r.Z.unsubscribe("TYPING_STOP", this.stopAudio), r.Z.unsubscribe("TYPING_STOP_LOCAL", this.stopAudio), r.Z.unsubscribe("CHANNEL_SELECT", this.stopAudio), r.Z.unsubscribe("POGGERMODE_SETTINGS_UPDATE", this.stopAudio), clearTimeout(O)
+    Chunk843693.ZP.removeChangeListener(this.startAudio), Chunk570140.Z.unsubscribe("RTC_CONNECTION_STATE", this.setVolume), Chunk570140.Z.unsubscribe("TYPING_STOP", this.stopAudio), Chunk570140.Z.unsubscribe("TYPING_STOP_LOCAL", this.stopAudio), Chunk570140.Z.unsubscribe("CHANNEL_SELECT", this.stopAudio), Chunk570140.Z.unsubscribe("POGGERMODE_SETTINGS_UPDATE", this.stopAudio), clearTimeout(O)
   }
   setVolume(e) {
     let {
@@ -68,13 +69,13 @@ class S extends i.Z {
   startAudio() {
     var e;
     if (!C()) return;
-    let t = c.Z.getChannelId();
-    if (null == t) return;
-    let n = s.default.getId(),
-      r = u.Z.isTyping(t, n),
-      i = h.ZP.getUserCombo(n, t),
-      l = null != (e = null == i ? void 0 : i.multiplier) ? e : 1;
-    r && l >= 7 ? _() : y()
+    let t = Chunk944486.Z.getChannelId();
+    if (null == exports) return;
+    let n = Chunk314897.default.getId(),
+      r = Chunk111583.Z.isTyping(exports, require),
+      i = Chunk843693.ZP.getUserCombo(require, exports),
+      l = null != (e = null == Chunk317770 ? true : Chunk317770.multiplier) ? module : 1;
+    Chunk570140 && Chunk460181 >= 7 ? _() : y()
   }
   playAchievementUnlockSound() {
     C() && E("poggermode_achievement_unlock")

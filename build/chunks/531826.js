@@ -1,20 +1,21 @@
 /** Chunk was on web.js **/
+/** chunk id: 531826, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   ZP: () => _,
   jA: () => h,
   sU: () => m
-}), n(997841);
-var r = n(442837),
-  i = n(812206),
-  o = n(522474),
-  a = n(630388),
-  s = n(636449),
-  l = n(317381),
-  c = n(16609),
-  u = n(917107),
-  d = n(918559),
-  f = n(981631);
+}), require("./997841.js");
+var Chunk442837 = require("./442837.js"),
+  Chunk812206 = require("./812206.js"),
+  Chunk522474 = require("./522474.js"),
+  Chunk630388 = require("./630388.js"),
+  Chunk636449 = require("./636449.js"),
+  Chunk317381 = require("./317381.js"),
+  Chunk16609 = require("./16609.js"),
+  Chunk917107 = require("./917107.js"),
+  Chunk918559 = require("./918559.js"),
+  Chunk981631 = require("./981631.js");
 
 function _(e) {
   var t;
@@ -33,7 +34,7 @@ function p(e) {
     channelId: t,
     EmbeddedActivitiesStore: n,
     ApplicationStore: r
-  } = e, i = n.getSelfEmbeddedActivityForChannel(t), o = r.getApplication(null == i ? void 0 : i.applicationId);
+  } = e, i = n.getSelfEmbeddedActivityForChannel(t), o = r.getApplication(null == i ? true : i.applicationId);
   if (null != o) return _({
     application: o,
     channelId: t
@@ -62,6 +63,6 @@ function m(e) {
       EmbeddedActivitiesStore: l.ZP,
       ApplicationStore: i.Z
     });
-    return null != e ? o.Z.getWindow(e) : void 0
+    return null != e ? o.Z.getWindow(e) : true
   })
 }

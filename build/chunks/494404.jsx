@@ -1,0 +1,290 @@
+/** Chunk was on web.js **/
+/** chunk id: 494404, original params: e,t,n (module,exports,re quire) **/
+"use strict";
+require.d(exports, {
+  ZP: () => Y,
+  h4: () => B,
+  nH: () => Z
+}), require("./388685.js"), require("./539854.js");
+var Chunk255367 = require("./255367.js"),
+  Chunk73800 = require("./73800.js"),
+  Chunk120356 = require("./120356.js"),
+  a = require.n(Chunk120356),
+  Chunk392711 = require("./392711.js"),
+  l = require.n(Chunk392711),
+  Chunk91192 = require("./91192.jsx"),
+  Chunk442837 = require("./442837.js"),
+  Chunk755721 = require("./755721.js"),
+  Chunk481060 = require("./481060.js"),
+  Chunk904245 = require("./904245.js"),
+  Chunk724757 = require("./724757.js"),
+  Chunk576855 = require("./576855.js"),
+  Chunk804063 = require("./804063.js"),
+  Chunk294218 = require("./294218.jsx"),
+  Chunk703656 = require("./703656.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk375954 = require("./375954.js"),
+  Chunk496675 = require("./496675.js"),
+  Chunk933429 = require("./933429.js"),
+  Chunk451478 = require("./451478.js"),
+  Chunk626135 = require("./626135.js"),
+  Chunk585483 = require("./585483.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk388032 = require("./388032.jsx"),
+  Chunk555565 = require("./555565.js");
+
+function R(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+
+function P(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      R(e, t, n[t])
+    })
+  }
+  return e
+}
+
+function w(e, t) {
+  var n = Object.keys(e);
+  if (Object.getOwnPropertySymbols) {
+    var r = Object.getOwnPropertySymbols(e);
+    t && (r = r.filter(function(t) {
+      return Object.getOwnPropertyDescriptor(e, t).enumerable
+    })), n.push.apply(n, r)
+  }
+  return n
+}
+
+function D(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : w(Object(t)).forEach(function(n) {
+    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+  }), e
+}
+
+function L(e, t) {
+  if (null == e) return {};
+  var n, r, i = x(e, t);
+  if (Object.getOwnPropertySymbols) {
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+  }
+  return i
+}
+
+function x(e, t) {
+  if (null == e) return {};
+  var n, r, i = {},
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+  return i
+}
+let M = 43,
+  k = 25,
+  j = 40,
+  U = 250;
+
+function G(e) {
+  e.stopPropagation()
+}
+let B = e => {
+    let {
+      title: t,
+      icon: n,
+      children: i,
+      className: o
+    } = e;
+    return <div className={a()(o, C.header)}>{<div className={C.titleContainer}>{null != n ? <n color={f.TVs.colors.INTERACTIVE_NORMAL} /> : null}{null == t ? null : <f.Text variant={"text-lg/semibold"} color={"interactive-active"}>{t}</f.Text>}</div>}{i}</div>
+  },
+  Z = e => {
+    let {
+      msg: t,
+      image: n
+    } = e;
+    return <div className={C.emptyPlaceholder}>{<div className={C.image} style={{
+          backgroundImage: "url(".concat(n, ")")
+        }} />}{<div className={C.body}>{t}</div>}</div>
+  };
+class F extends Chunk73800.PureComponent {
+  renderJumpButton() {
+    let {
+      jumping: e
+    } = this.props;
+    return <Chunk481060.P3F className={Chunk555565.jumpButton} onClick={this.handleClickJump}>{<div className={a()(Chunk555565.__invalid_text, {
+          hidden: module
+        })}>{Chunk388032.intl.string(Chunk388032.t.k5WiPT)}</div>}{<Chunk481060.$jN type={Chunk481060.$jN.Type.PULSING_ELLIPSIS} className={a()(Chunk555565.loading, {
+          [Chunk555565.visible]: module
+        })} />}</Chunk481060.P3F>
+  }
+  renderCloseButton() {
+    let {
+      onCloseMessage: e,
+      canCloseAllMessages: t,
+      canManageMessages: n,
+      channel: i
+    } = this.props;
+    return null != module && (exports || require || null != Chunk73800 && Chunk73800.isPrivate()) ? <Chunk755721.zx look={Chunk755721.zx.Looks.BLANK} size={Chunk755721.zx.Sizes.NONE} onClick={this.handleClickClose}><Chunk481060.Dio size={"md"} color={"currentColor"} className={Chunk555565.closeIcon} /></Chunk755721.zx> : null
+  }
+  render() {
+    return <div className={Chunk555565.actionButtons}>{this.renderJumpButton()}{this.renderCloseButton()}</div>
+  }
+  constructor(...e) {
+    super(...e), R(this, "handleClickJump", e => {
+      let {
+        jumpTo: t,
+        message: n
+      } = this.props;
+      t(n, e)
+    }), R(this, "handleClickClose", e => {
+      let {
+        onCloseMessage: t,
+        message: n
+      } = this.props;
+      null != t && t(n, e)
+    })
+  }
+}
+let V = Chunk442837.ZP.connectStores([Chunk496675.Z], e => {
+  let {
+    channel: t
+  } = e;
+  return {
+    canManageMessages: null != t && O.Z.can(A.Plq.MANAGE_MESSAGES, t)
+  }
+})(F);
+
+function H(e) {
+  let {
+    analyticsName: t,
+    items: n,
+    hasMore: o,
+    loading: s,
+    loadMore: _,
+    renderHeader: m,
+    renderEmptyState: g,
+    renderItem: E,
+    getProTip: b,
+    scrollerClassName: y,
+    className: O,
+    listName: R
+  } = e, w = i.useRef(null), x = (0, p.Z)(R, w), B = (0, u.e7)([v.ZP], () => v.ZP.hasNotice()), Z = (0, u.e7)([I.Z], () => I.Z.windowSize());
+  i.useEffect(() => {
+    T.default.track(A.rMx.OPEN_POPOUT, {
+      type: t
+    })
+  }, [t]), i.useEffect(() => {
+    function e() {
+      var e;
+      null == (e = w.current) || e.scrollPageUp({
+        animate: true
+      })
+    }
+
+    function t() {
+      var e;
+      null == (e = w.current) || e.scrollPageDown({
+        animate: true
+      })
+    }
+    return S.S.subscribe(A.CkL.SCROLL_PAGE_DOWN, t), S.S.subscribe(A.CkL.SCROLL_PAGE_UP, e), () => {
+      S.S.unsubscribe(A.CkL.SCROLL_PAGE_DOWN, t), S.S.unsubscribe(A.CkL.SCROLL_PAGE_UP, e)
+    }
+  }, []);
+  let F = i.useCallback(() => {
+      var e;
+      let t = null == (e = w.current) ? true : e.getScrollerState();
+      null != t && t.scrollHeight - t.scrollTop - t.offsetHeight < U && o && !s && (null == _ || _())
+    }, [o, _, s]),
+    V = [],
+    H = true;
+  null == n || s && 0 === n.length ? V = [<div className={a()(C.emptyPlaceholder, C.loadingPlaceholder)}><f.$jN /></div>] : 0 === n.length ? V.push(<i.Fragment>{g()}</i.Fragment>) : (H = false, V = [], l().each(n, e => {
+    V.push(...E(e))
+  }));
+  let Y = null;
+  null != n && n.length > 0 && null != _ && (Y = s ? <div className={C.loadingMore}><f.$jN /></div> : o ? <div className={C.hasMore}><d.zx look={d.zx.Looks.FILLED} color={d.zx.Colors.PRIMARY} size={d.zx.Sizes.MAX} onClick={_}>{N.intl.string(N.t.XBlaiI)}</d.zx></div> : <div className={C.scrollingFooterWrap}>{g()}</div>);
+  let W = null == b ? true : b(),
+    K = H && null != W ? <div className={C.footer}><h.Z style={{
+          width: "100%",
+          paddingTop: 10,
+          paddingBottom: 10
+        }}>{W}</h.Z></div> : null,
+    z = {
+      maxHeight: Z.height - M - k - 48
+    };
+  B && (z.maxHeight -= j);
+  let q = null != _ && o;
+  return <div className={a()(O, C.messagesPopoutWrap)} style={z} onClick={G} onDoubleClick={G} aria-label={e["aria-label"]}><f.y5t component={m()}>{<f.Den className={a()(C.messagesPopout, y)} onScroll={q ? F : true} ref={w}>{<c.bG navigator={x}><c.SJ>{e => {
+              var {
+                ref: t
+              } = e, n = L(e, ["ref"]);
+              return (0, r.jsx)("div", D(P({
+                ref: t
+              }, n), {
+                children: V
+              }))
+            }}</c.SJ></c.bG>}{Y}</f.Den>}{K}</f.y5t></div>
+}
+
+function Y(e) {
+  let {
+    analyticsName: t,
+    onFetch: n,
+    channel: o,
+    messages: a,
+    hasMore: s,
+    loading: l,
+    loadMore: c,
+    onJump: d,
+    canCloseAllMessages: f = false,
+    renderHeader: p,
+    renderEmptyState: h,
+    renderMessage: O,
+    getProTip: v,
+    scrollerClassName: I,
+    className: T,
+    onCloseMessage: S,
+    listName: N
+  } = e, R = (0, u.e7)([y.Z], () => {
+    let e = null != o ? y.Z.getMessages(o.id) : null;
+    return null != e && null != e.jumpTargetId && e.loadingMore && null == e.get(e.jumpTargetId)
+  });
+
+  function P(e, n) {
+    if ((0, m.Z)(e) && !R) {
+      let {
+        id: r,
+        channel_id: i
+      } = e, o = b.Z.getChannel(i);
+      null != o && (_.Z.trackJump(i, r, t), (0, E.uL)(A.Z5c.CHANNEL(o.getGuildId(), i, r))), null == d || d(n)
+    }
+  }
+
+  function w(e) {
+    let {
+      message: t,
+      channel: n
+    } = e;
+    if (null == t) return [];
+    if (null != O) return O(t, e => P(t, e));
+    let i = [];
+    return null == n ? [] : (i.push(<div className={C.messageGroupWrapper}>{<g.Z className={C.messageGroupCozy} message={t} channel={n} />}{<V channel={o} message={t} jumping={R} canCloseAllMessages={f} jumpTo={P} onCloseMessage={S} />}</div>), i)
+  }
+  i.useEffect(() => {
+    n(o)
+  }, [o, n]);
+  let D = i.useMemo(() => null == a ? true : a.map(e => ({
+    message: e,
+    channel: o
+  })), [a, o]);
+  return <H className={T} scrollerClassName={I} items={D} loading={l} analyticsName={t} renderEmptyState={h} renderHeader={p} hasMore={s} loadMore={c} getProTip={v} renderItem={w} listName={N} aria-label={e["aria-label"]} />
+}

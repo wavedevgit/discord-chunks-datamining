@@ -1,4 +1,5 @@
 /** Chunk was on 68214 **/
+/** chunk id: 353515, original params: t,e,r (module,exports,require) **/
 "use strict";
 var o = Object.assign || function(t) {
     for (var e = 1; e < arguments.length; e++) {
@@ -7,12 +8,12 @@ var o = Object.assign || function(t) {
     }
     return t
   },
-  n = f(r(459721)),
-  i = f(r(933982)),
-  a = f(r(639519)),
-  u = r(73800),
-  s = f(u),
-  l = f(r(258800));
+  n = f(require("./459721.js")),
+  i = f(require("./933982.js")),
+  a = f(require("./639519.js")),
+  Chunk73800 = require("./73800.js"),
+  s = f(Chunk73800),
+  l = f(require("./258800.js"));
 
 function f(t) {
   return t && t.__esModule ? t : {
@@ -26,7 +27,7 @@ var h = {
     size: a.default.number,
     value: a.default.string.isRequired
   },
-  g = (0, u.forwardRef)(function(t, e) {
+  g = (0, Chunk73800.forwardRef)(function(t, e) {
     var r = t.bgColor,
       a = t.fgColor,
       u = t.level,
@@ -37,7 +38,7 @@ var h = {
         for (var o in t) !(e.indexOf(o) >= 0) && Object.prototype.hasOwnProperty.call(t, o) && (r[o] = t[o]);
         return r
       }(t, ["bgColor", "fgColor", "level", "size", "value"]),
-      c = new n.default(-1, i.default[u]);
+      c = new n.default(false, i.default[u]);
     c.addData(h), c.make();
     var d = c.modules;
     return s.default.createElement(l.default, o({}, g, {
@@ -63,4 +64,4 @@ g.displayName = "QRCode", g.propTypes = h, g.defaultProps = {
   fgColor: "#000000",
   level: "L",
   size: 256
-}, e.default = g
+}, exports.default = g

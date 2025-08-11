@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 10718, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Hf: () => v,
   JT: () => T,
   Nk: () => y,
@@ -9,25 +10,25 @@ n.d(t, {
   Xq: () => E,
   YZ: () => S,
   wi: () => I
-}), n(388685), n(539854);
-var r = n(73800),
-  i = n(442837),
-  o = n(430824),
-  a = n(823379),
-  s = n(254711),
-  l = n(213459),
-  c = n(367790),
-  u = n(895924),
-  d = n(581364),
-  f = n(689079),
-  _ = n(981631);
+}), require("./388685.js"), require("./539854.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk442837 = require("./442837.js"),
+  Chunk430824 = require("./430824.js"),
+  Chunk823379 = require("./823379.js"),
+  Chunk254711 = require("./254711.js"),
+  Chunk213459 = require("./213459.js"),
+  Chunk367790 = require("./367790.js"),
+  Chunk895924 = require("./895924.js"),
+  Chunk581364 = require("./581364.js"),
+  Chunk689079 = require("./689079.js"),
+  Chunk981631 = require("./981631.js");
 
 function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -64,16 +65,16 @@ function g(e, t) {
 function E(e, t, n) {
   var r, i, o, a;
   if (null == t) return {
-    application: void 0,
-    command: void 0
+    application: true,
+    command: true
   };
   let s = l.ZP.getUserState(),
     c = l.ZP.getContextState(e),
-    u = Object.values(null != (o = null == (r = s.result) ? void 0 : r.sections) ? o : {}).concat(Object.values(null != (a = null == (i = c.result) ? void 0 : i.sections) ? a : {}));
+    u = Object.values(null != (o = null == (r = s.result) ? true : r.sections) ? o : {}).concat(Object.values(null != (a = null == (i = c.result) ? true : i.sections) ? a : {}));
   if (null != n) {
     let e = u.find(e => {
       var t;
-      return (null == (t = e.descriptor.application) ? void 0 : t.id) === n
+      return (null == (t = e.descriptor.application) ? true : t.id) === n
     });
     if (null != e) {
       let n = b(e, t);
@@ -91,8 +92,8 @@ function E(e, t, n) {
       }
     }
   return {
-    application: void 0,
-    command: void 0
+    application: true,
+    command: true
   }
 }
 
@@ -102,13 +103,13 @@ function b(e, t) {
   if (null != e.commands[t]) return e.commands[t];
   let o = null == (n = Object.values(e.commands).find(e => {
     var n;
-    return (null == (n = e.rootCommand) ? void 0 : n.id) === t
-  })) ? void 0 : n.rootCommand;
+    return (null == (n = e.rootCommand) ? true : n.id) === t
+  })) ? true : n.rootCommand;
   return null != o ? (0, d.Z8)({
     rootCommand: o,
     command: o,
-    applicationId: null != (i = null == (r = e.descriptor.application) ? void 0 : r.id) ? i : ""
-  }) : void 0
+    applicationId: null != (i = null == (r = e.descriptor.application) ? true : r.id) ? i : ""
+  }) : true
 }
 
 function y(e, t, n) {
@@ -116,8 +117,8 @@ function y(e, t, n) {
   let f = l.ZP.getUserState(),
     _ = l.ZP.getContextState(e),
     p = l.ZP.getApplicationState(n),
-    h = null != (d = null != (u = null == (i = f.result) || null == (r = i.sections) ? void 0 : r[n]) ? u : null == (a = _.result) || null == (o = a.sections) ? void 0 : o[n]) ? d : null == (c = p.result) || null == (s = c.sections) ? void 0 : s[n];
-  return null == h ? void 0 : h.descriptor
+    h = null != (d = null != (u = null == (i = f.result) || null == (r = i.sections) ? true : r[n]) ? u : null == (a = _.result) || null == (o = a.sections) ? true : o[n]) ? d : null == (c = p.result) || null == (s = c.sections) ? true : s[n];
+  return null == h ? true : h.descriptor
 }
 
 function O(e, t, n) {
@@ -126,7 +127,7 @@ function O(e, t, n) {
     text: n
   }, {
     scoreMethod: c.p.COMMAND_OR_APPLICATION,
-    allowFetch: !1
+    allowFetch: false
   });
   return {
     commands: r.commands,
@@ -137,7 +138,7 @@ function O(e, t, n) {
 function v(e) {
   let t = l.ZP.getUserState(),
     n = l.ZP.getContextState(e);
-  return [null == t ? void 0 : t.result, null == n ? void 0 : n.result]
+  return [null == t ? true : t.result, null == n ? true : n.result]
 }
 
 function I(e) {
@@ -164,7 +165,7 @@ function I(e) {
       activeSections: p,
       commandsByActiveSection: E,
       filteredSectionId: y,
-      hasMoreAfter: !1,
+      hasMoreAfter: false,
       placeholders: b ? v : [],
       sectionDescriptors: p,
       filterSection: e => {
@@ -209,12 +210,12 @@ function T(e, t, n) {
 }
 
 function S(e, t) {
-  let n = (0, l.PL)(!0, !0),
-    i = (0, l.em)(e, !0, !0);
+  let n = (0, l.PL)(true, true),
+    i = (0, l.em)(e, true, true);
   return r.useMemo(() => {
     if (null != t) {
       var e, r, o, a;
-      for (let s of Object.values(null != (o = null == (e = n.result) ? void 0 : e.sections) ? o : {}).concat(Object.values(null != (a = null == (r = i.result) ? void 0 : r.sections) ? a : {}))) {
+      for (let s of Object.values(null != (o = null == (e = n.result) ? true : e.sections) ? o : {}).concat(Object.values(null != (a = null == (r = i.result) ? true : r.sections) ? a : {}))) {
         let e = s.commands[t];
         if (null != e) return {
           command: e,
@@ -223,32 +224,32 @@ function S(e, t) {
       }
     }
     return {
-      command: void 0,
-      application: void 0
+      command: true,
+      application: true
     }
   }, [i.result, n.result, t])
 }
 
 function A(e, t, n) {
-  let i = (0, l.PL)(!0, !0),
-    o = (0, l.em)(e, !0, !0);
+  let i = (0, l.PL)(true, true),
+    o = (0, l.em)(e, true, true);
   return r.useMemo(() => {
     var e, r, s, l, c, u;
-    let f = null != (c = null == (r = i.result) || null == (e = r.sections) ? void 0 : e[t]) ? c : null == (s = o.result) ? void 0 : s.sections[t],
-      _ = Object.values(null != (u = null == f ? void 0 : f.commands) ? u : {}).map(e => null == e.rootCommand ? e : (0, d.Z8)({
+    let f = null != (c = null == (r = i.result) || null == (e = r.sections) ? true : e[t]) ? c : null == (s = o.result) ? true : s.sections[t],
+      _ = Object.values(null != (u = null == f ? true : f.commands) ? u : {}).map(e => null == e.rootCommand ? e : (0, d.Z8)({
         rootCommand: e.rootCommand,
         command: e.rootCommand,
         applicationId: e.applicationId
       })).reduce((e, t) => (e[t.id] = t, e), {});
     return {
-      application: null == f || null == (l = f.descriptor) ? void 0 : l.application,
+      application: null == f || null == (l = f.descriptor) ? true : l.application,
       commands: n.map(e => _[e]).filter(a.lm)
     }
-  }, [null == i ? void 0 : i.result, null == o ? void 0 : o.result, t, n])
+  }, [null == i ? true : i.result, null == o ? true : o.result, t, n])
 }
 let N = {
   id: "placeholder-section",
-  type: u.Qi.APPLICATION,
+  type: Chunk895924.Qi.APPLICATION,
   name: ""
 };
 

@@ -1,4 +1,5 @@
 /** Chunk was on web.js **/
+/** chunk id: 752305, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 
 function r() {
@@ -19,12 +20,12 @@ function i(e) {
     richValue: a(e)
   }
 }
-n.d(t, {
+require.d(exports, {
   H2: () => r,
   JM: () => a,
   VI: () => s,
   eK: () => i
-}), n(35282), n(415506);
+}), require("./35282.js"), require("./415506.js");
 let o = Object.freeze([Object.freeze({
   type: "line",
   children: Object.freeze([Object.freeze({

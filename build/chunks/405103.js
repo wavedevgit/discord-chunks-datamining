@@ -1,4 +1,5 @@
 /** Chunk was on web.js **/
+/** chunk id: 405103, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 
 function r(e) {
@@ -7,6 +8,6 @@ function r(e) {
     scrollTop: e.scrollTop
   }
 }
-n.d(t, {
+require.d(exports, {
   Z: () => r
 })

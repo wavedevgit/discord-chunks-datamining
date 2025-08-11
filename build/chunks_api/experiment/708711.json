@@ -1,1 +1,0 @@
-{"id":"708711","type":"experiment","data":{"kind":"user","id":"2025-01_tiered_tenure_badges_mobile","label":"Tiered Tenure Badging Mobile Experience","commonTriggerPoint":"i.$P.CONNECTION_OPEN","defaultConfig":{"enabled":false},"treatments":[{"id":2,"label":"Enable Tiered Tenure Badges v2 on mobile","config":{"enabled":false}}]},"fromModule":{"id":"1272"}}

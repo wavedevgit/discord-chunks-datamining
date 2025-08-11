@@ -1,9 +1,10 @@
 /** Chunk was on web.js **/
+/** chunk id: 827171, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   roleDotRight: "roleDotRight__703b9",
   roleDotLeft: "roleDotLeft__703b9",
-  username: "username__703b9 " + n(361585).desaturateUserColors,
+  username: "username__703b9 " + require("./361585.js").desaturateUserColors,
   container: "container__703b9",
   nameContainer: "nameContainer__703b9",
   name: "name__703b9",

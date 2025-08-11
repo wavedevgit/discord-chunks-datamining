@@ -1,27 +1,28 @@
 /** Chunk was on web.js **/
+/** chunk id: 827837, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   N: () => c
 });
-var r = n(544891),
-  i = n(570140),
-  o = n(230307),
-  a = n(70956),
-  s = n(981631);
-let l = 6 * a.Z.Millis.HOUR;
+var Chunk544891 = require("./544891.js"),
+  Chunk570140 = require("./570140.js"),
+  Chunk230307 = require("./230307.js"),
+  Chunk70956 = require("./70956.js"),
+  Chunk981631 = require("./981631.js");
+let l = 6 * Chunk70956.Z.Millis.HOUR;
 async function c() {
-  let e = o.Z.lastFetched;
-  if (!(null != e && Date.now() - e < l)) try {
-    let e = await r.tn.get({
-      url: s.ANM.USER_ACTIVITY_STATISTICS,
-      oldFormErrors: !0,
-      rejectWithError: !1
+  let e = Chunk230307.Z.lastFetched;
+  if (!(null != module && Date.now() - module < l)) try {
+    let e = await Chunk544891.tn.get({
+      url: Chunk981631.ANM.USER_ACTIVITY_STATISTICS,
+      oldFormErrors: true,
+      rejectWithError: false
     });
-    i.Z.dispatch({
+    Chunk570140.Z.dispatch({
       type: "USER_ACTIVITY_STATISTICS_FETCH_SUCCESS",
-      statistics: e.body
+      statistics: module.body
     })
   } catch (e) {
-    return e
+    return module
   }
 }

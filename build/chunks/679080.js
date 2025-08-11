@@ -1,14 +1,15 @@
 /** Chunk was on 75708 **/
-n.d(t, {
+/** chunk id: 679080, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   S: () => o
 });
-var i = n(255963),
-  r = n(819640),
-  s = n(585483),
-  a = n(981631),
-  l = n(185923);
+var Chunk255963 = require("./255963.js"),
+  Chunk819640 = require("./819640.js"),
+  Chunk585483 = require("./585483.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk185923 = require("./185923.js");
 let o = {
   binds: ["mod+e"],
-  comboKeysBindGlobal: !0,
-  action: () => !(r.Z.getLayers().length > 0) && ((0, i.x)(l.qR.SearchEmojiKeybindPressed), s.S.dispatchToLastSubscribed(a.CkL.TOGGLE_EMOJI_POPOUT), !1)
+  comboKeysBindGlobal: true,
+  action: () => !(Chunk819640.Z.getLayers().length > 0) && ((0, Chunk255963.x)(Chunk185923.qR.SearchEmojiKeybindPressed), Chunk585483.S.dispatchToLastSubscribed(Chunk981631.CkL.TOGGLE_EMOJI_POPOUT), false)
 }

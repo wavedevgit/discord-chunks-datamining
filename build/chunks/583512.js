@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 583512, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   applicationName: "applicationName__9e50d",
   systemMessage: "systemMessage__9e50d"
 }

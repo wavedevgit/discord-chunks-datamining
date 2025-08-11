@@ -1,30 +1,31 @@
 /** Chunk was on web.js **/
+/** chunk id: 579237, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => c
-}), n(388685), n(35282);
-var r = n(836560),
-  i = n(68721),
-  o = n(961304),
-  a = n(65154);
+}), require("./388685.js"), require("./35282.js");
+var Chunk836560 = require("./836560.js"),
+  Chunk68721 = require("./68721.js"),
+  Chunk961304 = require("./961304.js"),
+  Chunk65154 = require("./65154.js");
 
 function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 let l = {
-  voiceActivityDetection: !0,
-  offerToReceiveAudio: !0,
-  offerToReceiveVideo: !1,
-  iceRestart: !1
+  voiceActivityDetection: true,
+  offerToReceiveAudio: true,
+  offerToReceiveVideo: false,
+  iceRestart: false
 };
-class c extends r.EventEmitter {
+class c extends Chunk836560.EventEmitter {
   stop() {
-    for (let e of (this.pc1.close(), this.pc2.close(), this.input.destroy(), Object.keys(this.outputs))) this.destroyOutput(e)
+    for (let e of (this.pc1.close(), this.pc2.close(), this.input.destroy(), Object.keys(this.outputs))) this.destroyOutput(module)
   }
   setAudioSource(e) {
     this.input.setSource(e)
@@ -37,7 +38,7 @@ class c extends r.EventEmitter {
   }
   createOutput(e, t) {
     let n = this.outputs[e];
-    null == n && ((n = new o.Z(this.userId, this.audioContext)).mute = !1, n.volume = 100, n.setSpeakingFlags(a.Dg.VOICE), n.setSinkId(this.sinkId), this.outputs[e] = n), n.addTrack(t), n.play()
+    null == n && ((n = new o.Z(this.userId, this.audioContext)).mute = false, n.volume = 100, n.setSpeakingFlags(a.Dg.VOICE), n.setSinkId(this.sinkId), this.outputs[e] = n), n.addTrack(t), n.play()
   }
   destroyOutput(e, t) {
     let n = this.outputs[e];
@@ -65,7 +66,7 @@ class c extends r.EventEmitter {
     })
   }
   constructor(e, t, n, r = "") {
-    super(), s(this, "userId", void 0), s(this, "sinkId", void 0), s(this, "input", void 0), s(this, "pc1", void 0), s(this, "pc2", void 0), s(this, "senders", []), s(this, "outputs", {}), s(this, "audioContext", void 0), s(this, "handleStream", () => {
+    super(), s(this, "userId", true), s(this, "sinkId", true), s(this, "input", true), s(this, "pc1", true), s(this, "pc2", true), s(this, "senders", []), s(this, "outputs", {}), s(this, "audioContext", true), s(this, "handleStream", () => {
       let e = this.input.getDelayedStream();
       this.senders.forEach(e => this.pc1.removeTrack(e)), this.senders = [...e.getAudioTracks().map(t => this.pc1.addTrack(t, e))], this.handshake()
     }), s(this, "handleTrack", e => {

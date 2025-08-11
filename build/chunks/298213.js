@@ -1,22 +1,23 @@
 /** Chunk was on web.js **/
+/** chunk id: 298213, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => g
 });
-var r = n(570140),
-  i = n(194359),
-  o = n(855796),
-  a = n(497060),
-  s = n(699516),
-  l = n(885149),
-  c = n(981631);
+var Chunk570140 = require("./570140.js"),
+  Chunk194359 = require("./194359.js"),
+  Chunk855796 = require("./855796.js"),
+  Chunk497060 = require("./497060.js"),
+  Chunk699516 = require("./699516.js"),
+  Chunk885149 = require("./885149.js"),
+  Chunk981631 = require("./981631.js");
 
 function u(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -55,7 +56,7 @@ function p(e) {
     userId: t,
     applicationId: n,
     location: r,
-    confirmStrangerRequest: a = !1
+    confirmStrangerRequest: a = false
   } = e;
   return null != n ? o.Z.acceptGameFriendRequest({
     userId: t,
@@ -77,13 +78,13 @@ function h(e) {
     onConfirm: i,
     onCancel: o
   } = e, c = (0, a.pB)("useFriendRequestActions"), u = s.Z.isStranger(t);
-  return null == n && c && !1 !== u ? u && c ? void(0, l.c)({
+  return null == n && c && false !== u ? u && c ? void(0, l.c)({
     onConfirm: () => {
       p({
         userId: t,
         applicationId: n,
         location: r,
-        confirmStrangerRequest: !0
+        confirmStrangerRequest: true
       }), null == i || i()
     },
     onCancel: () => {
@@ -109,11 +110,11 @@ function h(e) {
       onConfirm: i,
       onCancel: o
     })
-  }) : void 0 : p({
+  }) : true : p({
     userId: t,
     applicationId: n,
     location: r,
-    confirmStrangerRequest: !0
+    confirmStrangerRequest: true
   }).then(() => {
     null == i || i()
   })
@@ -121,26 +122,26 @@ function h(e) {
 
 function m(e, t) {
   var n;
-  return (null == (n = e.body) ? void 0 : n.code) === c.evJ.RELATIONSHIP_INVALID_NO_CONFIRMATION ? (r.Z.dispatch({
+  return (null == (n = e.body) ? true : n.code) === c.evJ.RELATIONSHIP_INVALID_NO_CONFIRMATION ? (r.Z.dispatch({
     type: "UPDATE_STRANGER_STATUS",
     userId: t.userId,
-    isStranger: !0
+    isStranger: true
   }), (0, l.c)({
     onConfirm: () => {
       var e;
       p(_(d({}, t), {
-        confirmStrangerRequest: !0
+        confirmStrangerRequest: true
       })), null == (e = t.onConfirm) || e.call(t)
     },
     onCancel: () => {
       var e;
       null == (e = t.onCancel) || e.call(t)
     }
-  }), !0) : (e.ok && r.Z.dispatch({
+  }), true) : (e.ok && r.Z.dispatch({
     type: "UPDATE_STRANGER_STATUS",
     userId: t.userId,
-    isStranger: !1
-  }), !1)
+    isStranger: false
+  }), false)
 }
 let g = {
   removeFriend: function(e) {

@@ -1,5 +1,6 @@
 /** Chunk was on web.js **/
+/** chunk id: 923492, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   actionMenuButton: "actionMenuButton_d84e0f"
 }

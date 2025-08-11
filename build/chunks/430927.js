@@ -1,16 +1,17 @@
 /** Chunk was on 84722 **/
-t.d(n, {
+/** chunk id: 430927, original params: e,n,t (module,exports,require) **/
+require.d(exports, {
   T: () => h,
   o: () => d
 });
-var i = t(512722),
-  l = t.n(i),
-  r = t(287734),
-  a = t(471253),
-  s = t(922482),
-  c = t(592125),
-  o = t(19780),
-  u = t(765305);
+var Chunk512722 = require("./512722.js"),
+  l = require.n(Chunk512722),
+  Chunk287734 = require("./287734.js"),
+  Chunk471253 = require("./471253.js"),
+  Chunk922482 = require("./922482.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk19780 = require("./19780.js"),
+  Chunk765305 = require("./765305.js");
 async function d(e, n) {
   let {
     entity_type: t
@@ -19,7 +20,7 @@ async function d(e, n) {
     case u.WX.STAGE_INSTANCE: {
       let n = o.Z.getChannelId(),
         t = c.Z.getChannel(e.channel_id);
-      l()(null != t, "could not find channel"), n !== t.id && (await s.TM(t, !0), await s.R5(t, null, !1)), await (0, a.RK)(t, !1, !0);
+      l()(null != t, "could not find channel"), n !== t.id && (await s.TM(t, true), await s.R5(t, null, false)), await (0, a.RK)(t, false, true);
       break
     }
     case u.WX.VOICE: {

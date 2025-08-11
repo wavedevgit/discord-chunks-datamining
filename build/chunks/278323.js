@@ -1,16 +1,17 @@
 /** Chunk was on web.js **/
+/** chunk id: 278323, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => d
 });
-var r = n(544891),
-  i = n(570140),
-  o = n(367907),
-  a = n(957730),
-  s = n(592125),
-  l = n(493683),
-  c = n(904245),
-  u = n(981631);
+var Chunk544891 = require("./544891.js"),
+  Chunk570140 = require("./570140.js"),
+  Chunk367907 = require("./367907.js"),
+  Chunk957730 = require("./957730.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk493683 = require("./493683.js"),
+  Chunk904245 = require("./904245.js"),
+  Chunk981631 = require("./981631.js");
 let d = {
   updateActivity(e) {
     let {
@@ -19,7 +20,7 @@ let d = {
       shareActivity: o,
       token: a = null,
       duration: s = 0,
-      closed: l = !1,
+      closed: l = false,
       exePath: c = null,
       voiceChannelId: d = null,
       sessionId: f = null,
@@ -45,8 +46,8 @@ let d = {
         media_session_id: _
       },
       retries: 1,
-      oldFormErrors: !0,
-      rejectWithError: !0
+      oldFormErrors: true,
+      rejectWithError: true
     }).then(e => {
       let {
         body: {
@@ -78,7 +79,7 @@ let d = {
     } = e, f = s.Z.getChannel(t);
     if (null == f) return Promise.resolve(null);
     let _ = a.ZP.parse(f, null != i ? i : "");
-    return c.Z.sendMessage(f.id, _, !1, {
+    return c.Z.sendMessage(f.id, _, false, {
       activityAction: {
         type: n,
         activity: r,
@@ -115,7 +116,7 @@ let d = {
       url: u.ANM.USER_ACTIVITY_JOIN(e, t, n),
       retries: 3,
       query: a,
-      rejectWithError: !1
+      rejectWithError: false
     })).body.secret
   },
   async subscribeActivities(e) {
@@ -141,7 +142,7 @@ let d = {
         subscriptions: t
       },
       retries: 1,
-      rejectWithError: !1
+      rejectWithError: false
     })).body
   }
 }

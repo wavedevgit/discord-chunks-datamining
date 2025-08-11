@@ -1,0 +1,46 @@
+/** Chunk was on 18831 **/
+/** chunk id: 384725, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
+  Z: () => r
+});
+var Chunk255367 = require("./255367.js");
+require("./73800.js");
+var Chunk481060 = require("./481060.js"),
+  Chunk570140 = require("./570140.js");
+let r = {
+  open(e) {
+    l.Z.dispatch({
+      type: "SAFETY_HUB_APPEAL_OPEN",
+      classificationId: e
+    }), (0, a.ZDy)(async () => {
+      let {
+        default: t
+      } = await n.e("65652").then(n.bind(n, 208265));
+      return n => <t{...function(e) {
+        for (var t = 1; t < arguments.length; t++) {
+          var n = null != arguments[t] ? arguments[t] : {},
+            i = Object.keys(n);
+          "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+            return Object.getOwnPropertyDescriptor(n, e).enumerable
+          }))), i.forEach(function(t) {
+            var i;
+            i = n[t], t in e ? Object.defineProperty(e, t, {
+              value: i,
+              enumerable: true,
+              configurable: true,
+              writable: true
+            }) : e[t] = i
+          })
+        }
+        return e
+      }({
+        classificationId: e
+      }, n)} />
+    })
+  },
+  close() {
+    Chunk570140.Z.dispatch({
+      type: "SAFETY_HUB_APPEAL_CLOSE"
+    })
+  }
+}

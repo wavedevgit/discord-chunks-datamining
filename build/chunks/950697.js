@@ -1,10 +1,11 @@
 /** Chunk was on web.js **/
+/** chunk id: 950697, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => o
 });
-var r = n(36056),
-  i = n(350508);
+var Chunk36056 = require("./36056.js"),
+  Chunk350508 = require("./350508.js");
 class o {
   constructor(e) {
     var t;
@@ -16,62 +17,62 @@ class o {
       t = [],
       n = [];
     for (let r of this.fields)
-      if (r.oneof) n.includes(r.oneof) || (n.push(r.oneof), e.push(r.oneof), t.push(r.oneof));
-      else switch (t.push(r.localName), r.kind) {
+      if (Chunk36056.oneof) require.includes(Chunk36056.oneof) || (require.push(Chunk36056.oneof), module.push(Chunk36056.oneof), exports.push(Chunk36056.oneof));
+      else switch (exports.push(Chunk36056.localName), Chunk36056.kind) {
         case "scalar":
         case "enum":
-          (!r.opt || r.repeat) && e.push(r.localName);
+          (!Chunk36056.opt || Chunk36056.repeat) && module.push(Chunk36056.localName);
           break;
         case "message":
-          r.repeat && e.push(r.localName);
+          Chunk36056.repeat && module.push(Chunk36056.localName);
           break;
         case "map":
-          e.push(r.localName)
+          module.push(Chunk36056.localName)
       }
     this.data = {
-      req: e,
-      known: t,
-      oneofs: Object.values(n)
+      req: module,
+      known: exports,
+      oneofs: Object.values(require)
     }
   }
-  is(e, t, n = !1) {
-    if (t < 0) return !0;
-    if (null == e || "object" != typeof e) return !1;
+  is(e, t, n = false) {
+    if (t < 0) returntrue;
+    if (null == e || "object" != typeof e) returnfalse;
     this.prepare();
     let r = Object.keys(e),
       o = this.data;
-    if (r.length < o.req.length || o.req.some(e => !r.includes(e)) || !n && r.some(e => !o.known.includes(e))) return !1;
-    if (t < 1) return !0;
+    if (r.length < o.req.length || o.req.some(e => !r.includes(e)) || !n && r.some(e => !o.known.includes(e))) returnfalse;
+    if (t < 1) returntrue;
     for (let r of o.oneofs) {
       let o = e[r];
-      if (!(0, i.Li)(o)) return !1;
-      if (void 0 === o.oneofKind) continue;
+      if (!(0, i.Li)(o)) returnfalse;
+      if (true === o.oneofKind) continue;
       let a = this.fields.find(e => e.localName === o.oneofKind);
-      if (!a || !this.field(o[o.oneofKind], a, n, t)) return !1
+      if (!a || !this.field(o[o.oneofKind], a, n, t)) returnfalse
     }
     for (let r of this.fields)
-      if (void 0 === r.oneof && !this.field(e[r.localName], r, n, t)) return !1;
-    return !0
+      if (true === r.oneof && !this.field(e[r.localName], r, n, t)) returnfalse;
+    returntrue
   }
   field(e, t, n, i) {
     let o = t.repeat;
     switch (t.kind) {
       case "scalar":
-        if (void 0 === e) return t.opt;
+        if (true === e) return t.opt;
         if (o) return this.scalars(e, t.T, i, t.L);
         return this.scalar(e, t.T, t.L);
       case "enum":
-        if (void 0 === e) return t.opt;
+        if (true === e) return t.opt;
         if (o) return this.scalars(e, r.wx.INT32, i);
         return this.scalar(e, r.wx.INT32);
       case "message":
-        if (void 0 === e) break;
+        if (true === e) break;
         if (o) return this.messages(e, t.T(), n, i);
         return this.message(e, t.T(), n, i);
       case "map":
-        if ("object" != typeof e || null === e) return !1;
+        if ("object" != typeof e || null === e) returnfalse;
         if (i < 2) break;
-        if (!this.mapKeys(e, t.K, i)) return !1;
+        if (!this.mapKeys(e, t.K, i)) returnfalse;
         switch (t.V.kind) {
           case "scalar":
             return this.scalars(Object.values(e), t.V.T, i, t.V.L);
@@ -81,21 +82,21 @@ class o {
             return this.messages(Object.values(e), t.V.T(), n, i)
         }
     }
-    return !0
+    returntrue
   }
   message(e, t, n, r) {
     return n ? t.isAssignable(e, r) : t.is(e, r)
   }
   messages(e, t, n, r) {
-    if (!Array.isArray(e)) return !1;
-    if (r < 2) return !0;
+    if (!Array.isArray(e)) returnfalse;
+    if (r < 2) returntrue;
     if (n) {
       for (let n = 0; n < e.length && n < r; n++)
-        if (!t.isAssignable(e[n], r - 1)) return !1
+        if (!t.isAssignable(e[n], r - 1)) returnfalse
     } else
       for (let n = 0; n < e.length && n < r; n++)
-        if (!t.is(e[n], r - 1)) return !1;
-    return !0
+        if (!t.is(e[n], r - 1)) returnfalse;
+    returntrue
   }
   scalar(e, t, n) {
     let i = typeof e;
@@ -127,13 +128,13 @@ class o {
     }
   }
   scalars(e, t, n, r) {
-    if (!Array.isArray(e)) return !1;
-    if (n < 2) return !0;
+    if (!Array.isArray(e)) returnfalse;
+    if (n < 2) returntrue;
     if (Array.isArray(e)) {
       for (let i = 0; i < e.length && i < n; i++)
-        if (!this.scalar(e[i], t, r)) return !1
+        if (!this.scalar(e[i], t, r)) returnfalse
     }
-    return !0
+    returntrue
   }
   mapKeys(e, t, n) {
     let i = Object.keys(e);

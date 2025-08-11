@@ -1,9 +1,10 @@
 /** Chunk was on web.js **/
+/** chunk id: 358294, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-Object.defineProperty(t, "__esModule", {
-  value: !0
-}), t.InternalIntlMessage = void 0;
-let r = n(628184);
+Object.defineProperty(exports, "__esModule", {
+  value: true
+}), exports.InternalIntlMessage = true;
+let Chunk628184 = require("./628184.js");
 class i {
   constructor(e, t) {
     this.locale = t, this.ast = (0, r.isCompressedAst)(e) ? e : (0, r.compressFormatJsToAst)(e)
@@ -13,7 +14,7 @@ class i {
     let e = {
       value: ""
     };
-    return o(this.ast, e), e.value
+    return o(this.ast, module), module.value
   }
 }
 
@@ -78,4 +79,4 @@ function a(e, t) {
       t.value += "$[", o(e[2], t), t.value += "](" + e[1] + ")"
   }
 }
-t.InternalIntlMessage = i
+exports.InternalIntlMessage = i

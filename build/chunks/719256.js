@@ -1,29 +1,30 @@
 /** Chunk was on 1272 **/
-n.d(t, {
+/** chunk id: 719256, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => p
-}), n(388685), n(539854);
-var r = n(846519),
-  i = n(570140),
-  l = n(317770),
-  a = n(220082),
-  o = n(594174),
-  s = n(125268),
-  c = n(813900);
+}), require("./388685.js"), require("./539854.js");
+var Chunk846519 = require("./846519.js"),
+  Chunk570140 = require("./570140.js"),
+  Chunk317770 = require("./317770.js"),
+  Chunk220082 = require("./220082.js"),
+  Chunk594174 = require("./594174.js"),
+  Chunk125268 = require("./125268.js"),
+  Chunk813900 = require("./813900.js");
 
 function u(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
-class d extends l.Z {
+class d extends Chunk317770.Z {
   _initialize() {
-    __OVERLAY__ || (i.Z.subscribe("SHARED_CANVAS_DRAW_LINE_POINT", this._handleDrawLinePoint), i.Z.subscribe("VOICE_CHANNEL_EFFECT_SEND", this._handleVoiceChannelEffectReceived))
+    __OVERLAY__ || (Chunk570140.Z.subscribe("SHARED_CANVAS_DRAW_LINE_POINT", this._handleDrawLinePoint), Chunk570140.Z.subscribe("VOICE_CHANNEL_EFFECT_SEND", this._handleVoiceChannelEffectReceived))
   }
   _terminate() {
-    __OVERLAY__ || (i.Z.unsubscribe("SHARED_CANVAS_DRAW_LINE_POINT", this._handleDrawLinePoint), i.Z.unsubscribe("VOICE_CHANNEL_EFFECT_SEND", this._handleVoiceChannelEffectReceived), this.lineBatchTimer.stop())
+    __OVERLAY__ || (Chunk570140.Z.unsubscribe("SHARED_CANVAS_DRAW_LINE_POINT", this._handleDrawLinePoint), Chunk570140.Z.unsubscribe("VOICE_CHANNEL_EFFECT_SEND", this._handleVoiceChannelEffectReceived), this.lineBatchTimer.stop())
   }
   _handleVoiceChannelEffectReceived(e) {
     var t;
@@ -34,7 +35,7 @@ class d extends l.Z {
       streamerId: l,
       emojiHose: u
     } = e;
-    if (null != l && i !== (null == (t = o.default.getCurrentUser()) ? void 0 : t.id))
+    if (null != l && i !== (null == (t = o.default.getCurrentUser()) ? true : t.id))
       if (null != r && null != n) {
         let e = o.default.getUser(i);
         null != e && (0, a.vM)(e.getAvatarURL(null, c.Ks)), (0, s.cV)(n, i, l, r)

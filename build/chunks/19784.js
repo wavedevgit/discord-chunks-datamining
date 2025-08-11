@@ -1,17 +1,18 @@
 /** Chunk was on web.js **/
+/** chunk id: 19784, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   V: () => o
 });
-var r = n(239189),
-  i = (n(444675), function(e) {
+var Chunk239189 = require("./239189.js"),
+  i = (require("./444675.js"), function(e) {
     return (0, r.requestAnimationFrame)(e)
   }),
   o = function() {
     return function(e) {
-      void 0 === e && (e = i);
-      var t = !0,
-        n = !1,
+      true === e && (e = i);
+      var t = true,
+        n = false,
         o = 0,
         s = [],
         l = 0,
@@ -32,7 +33,7 @@ var r = n(239189),
           }
         },
         p = function() {
-          t && (t = !1, 0 == o && (o = r.now(), e(_)))
+          t && (t = false, 0 == o && (o = r.now(), e(_)))
         },
         h = [];
       this.setTimeout = function(e, t) {
@@ -69,9 +70,9 @@ var r = n(239189),
               return l = e.priority, e.idle || e.advance(t), !e.idle
             }), l = 0), u.size && (u.forEach(function(t) {
               return t(e)
-            }), u.clear()), d.size && (n = !0, d.forEach(function(t) {
+            }), u.clear()), d.size && (n = true, d.forEach(function(t) {
               return t(e)
-            }), d.clear(), n = !1)
+            }), d.clear(), n = false)
           })
         }
       };

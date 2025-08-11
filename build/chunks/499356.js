@@ -1,13 +1,14 @@
 /** Chunk was on 36878 **/
-n.d(t, {
+/** chunk id: 499356, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => s
 });
-var i = n(509613),
-  o = n(210275),
-  l = n(852469),
-  r = n(134582),
-  a = n(388032);
-let s = (0, i.k4)("NotificationsOverview", {
-  useTitle: () => a.intl.string(a.t["/dp6yc"]),
-  layout: [o.Z, r.Z, l.Z]
+var Chunk509613 = require("./509613.js"),
+  Chunk210275 = require("./210275.js"),
+  Chunk852469 = require("./852469.js"),
+  Chunk134582 = require("./134582.js"),
+  Chunk388032 = require("./388032.jsx");
+let s = (0, Chunk509613.k4)("NotificationsOverview", {
+  useTitle: () => Chunk388032.intl.string(Chunk388032.t["/dp6yc"]),
+  layout: [Chunk210275.Z, Chunk134582.Z, Chunk852469.Z]
 })

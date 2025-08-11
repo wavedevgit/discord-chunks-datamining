@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 220087, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   error: "error__4cd16",
   icon: "icon__4cd16",
   text: "text__4cd16",

@@ -1,39 +1,40 @@
 /** Chunk was on web.js **/
+/** chunk id: 838611, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => d
-}), n(388685);
-var r = n(392711),
-  i = n(147913),
-  o = n(948154),
-  a = n(787879),
-  s = n(982183);
+}), require("./388685.js");
+var Chunk392711 = require("./392711.js"),
+  Chunk147913 = require("./147913.js"),
+  Chunk948154 = require("./948154.js"),
+  Chunk787879 = require("./787879.js"),
+  Chunk982183 = require("./982183.js");
 
 function l(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 let c = 5e3;
-class u extends i.Z {
+class u extends Chunk147913.Z {
   preloadInbox() {
-    o.Z.loadMoreInbox({
-      preload: !0,
-      loadingTrigger: s.X.AUTO_LOAD
+    Chunk948154.Z.loadMoreInbox({
+      preload: true,
+      loadingTrigger: Chunk982183.X.AUTO_LOAD
     })
   }
   _terminate() {
     this.throttledPreloadInbox.cancel()
   }
   constructor() {
-    super(), l(this, "throttledPreloadInbox", void 0), l(this, "stores", new Map().set(a.Z, () => {
-      !a.Z.hasPreloaded && a.Z.canLoadMore({
-        preload: !0
+    super(), l(this, "throttledPreloadInbox", true), l(this, "stores", new Map().set(Chunk787879.Z, () => {
+      !Chunk787879.Z.hasPreloaded && Chunk787879.Z.canLoadMore({
+        preload: true
       }) && this.throttledPreloadInbox()
-    })), this.throttledPreloadInbox = (0, r.throttle)(this.preloadInbox, c)
+    })), this.throttledPreloadInbox = (0, Chunk392711.throttle)(this.preloadInbox, c)
   }
 }
 let d = new u

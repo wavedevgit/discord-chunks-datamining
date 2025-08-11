@@ -1,3 +1,4 @@
 /** Chunk was on web.js **/
+/** chunk id: 344894, original params: e (module,exports,re quire) **/
 "use strict";
-e.exports = ["constructor", "hasOwnProperty", "isPrototypeOf", "propertyIsEnumerable", "toLocaleString", "toString", "valueOf"]
+module.exports = ["constructor", "hasOwnProperty", "isPrototypeOf", "propertyIsEnumerable", "toLocaleString", "toString", "valueOf"]

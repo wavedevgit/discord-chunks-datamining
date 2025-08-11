@@ -1,3 +1,4 @@
 /** Chunk was on 23357 **/
+/** chunk id: 280152, original params: e,t,n (module,exports,require) **/
 "use strict";
-n(30201), e.exports = n(981994).Object.freeze
+require("./30201.js"), module.exports = require("./981994.js").Object.freeze

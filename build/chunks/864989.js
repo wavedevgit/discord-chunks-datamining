@@ -1,5 +1,6 @@
 /** Chunk was on 34779 **/
-e.exports = {
+/** chunk id: 864989, original params: e,t,n (module,exports,require) **/
+module.exports = {
   panel: "panel__5dec7",
   body: "body__5dec7",
   gameWrapper: "gameWrapper__5dec7",

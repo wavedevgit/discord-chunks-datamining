@@ -1,10 +1,11 @@
 /** Chunk was on 34779 **/
-n.d(t, {
+/** chunk id: 899740, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   q: () => l
 });
-var r = n(442837),
-  i = n(355298);
+var Chunk442837 = require("./442837.js"),
+  Chunk355298 = require("./355298.js");
 
 function l() {
-  return (0, r.e7)([i.Z], () => i.Z.getMessageRequestsCount())
+  return (0, Chunk442837.e7)([Chunk355298.Z], () => Chunk355298.Z.getMessageRequestsCount())
 }

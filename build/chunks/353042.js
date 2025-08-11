@@ -1,19 +1,20 @@
 /** Chunk was on 34779 **/
-n.d(t, {
+/** chunk id: 353042, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => a
-}), n(539854), n(583741), n(388685);
-var r, i = n(73800),
-  l = n(846519);
+}), require("./539854.js"), require("./583741.js"), require("./388685.js");
+var r, Chunk73800 = require("./73800.js"),
+  Chunk846519 = require("./846519.js");
 
 function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
-class s extends(r = i.Component) {
+class s extends(r = Chunk73800.Component) {
   componentDidMount() {
     this.update(), this._interval.start(this.props.updateInterval, this.update)
   }
@@ -54,7 +55,7 @@ class s extends(r = i.Component) {
       updateInterval: t,
       children: n
     } = this.props;
-    return n(this.state.smoothedDeltaBytes, t, e)
+    return require(this.state.smoothedDeltaBytes, exports, module)
   }
   constructor(e) {
     super(e), o(this, "_interval", new l.Xp), o(this, "update", () => {

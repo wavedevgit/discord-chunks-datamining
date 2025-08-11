@@ -1,9 +1,10 @@
 /** Chunk was on 22988 **/
-e.exports = {
-  settingsColumn: "settingsColumn_ebb372 " + n(319586).customColumn,
-  settingsContainer: "settingsContainer_ebb372 " + n(319586).customContainer,
-  settingsScroller: "settingsScroller_ebb372 " + n(319586).customScroller + " " + n(319586).contentRegionScroller,
-  settingsContent: "settingsContent_ebb372 " + n(319586).contentColumnDefault + " settingsColumn_ebb372 " + n(319586).customColumn,
+/** chunk id: 869562, original params: e,t,n (module,exports,require) **/
+module.exports = {
+  settingsColumn: "settingsColumn_ebb372 " + require("./319586.js").customColumn,
+  settingsContainer: "settingsContainer_ebb372 " + require("./319586.js").customContainer,
+  settingsScroller: "settingsScroller_ebb372 " + require("./319586.js").customScroller + " " + require("./319586.js").contentRegionScroller,
+  settingsContent: "settingsContent_ebb372 " + require("./319586.js").contentColumnDefault + " settingsColumn_ebb372 " + require("./319586.js").customColumn,
   container: "container_ebb372",
   mainContent: "mainContent_ebb372",
   betaTag: "betaTag_ebb372",

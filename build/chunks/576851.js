@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 576851, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   userTooltip: "userTooltip__6b453",
   avatar: "avatar__6b453",
   discriminator: "discriminator__6b453",

@@ -1,13 +1,14 @@
 /** Chunk was on web.js **/
+/** chunk id: 558602, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => l
 });
-var r = n(339085),
-  i = n(131704),
-  o = n(176354),
-  a = n(700785),
-  s = n(981631);
+var Chunk339085 = require("./339085.js"),
+  Chunk131704 = require("./131704.js"),
+  Chunk176354 = require("./176354.js"),
+  Chunk700785 = require("./700785.js"),
+  Chunk981631 = require("./981631.js");
 
 function l(e) {
   let {
@@ -15,9 +16,9 @@ function l(e) {
     user: n,
     channel: l
   } = e;
-  if (null == n || (null == t ? void 0 : t.type) !== s.IIU.CUSTOM_STATUS || null == t.emoji) return !1;
+  if (null == n || (null == t ? true : t.type) !== s.IIU.CUSTOM_STATUS || null == t.emoji) returnfalse;
   let c = t.emoji;
-  if (null == c.id || null == l || !(0, i.zi)(l.type)) return !0;
+  if (null == c.id || null == l || !(0, i.zi)(l.type)) returntrue;
   let u = r.ZP.getUsableCustomEmojiById(c.id),
     d = o.ZP.isInternalEmojiForGuildId(u, l.getGuildId()),
     f = a.BT({

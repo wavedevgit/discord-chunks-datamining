@@ -1,11 +1,12 @@
 /** Chunk was on 30042 **/
-n.d(t, {
+/** chunk id: 326279, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Gl: () => l,
   Wz: () => o,
   mo: () => a,
   oI: () => r
 });
-var i = n(570140);
+var Chunk570140 = require("./570140.js");
 
 function a(e, t, n) {
   i.Z.dispatch({
@@ -31,7 +32,7 @@ function l(e) {
 }
 
 function r() {
-  i.Z.dispatch({
+  Chunk570140.Z.dispatch({
     type: "CONNECTED_DEVICE_NEVER_SHOW_MODAL"
   })
 }

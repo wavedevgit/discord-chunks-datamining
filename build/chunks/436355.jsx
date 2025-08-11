@@ -1,0 +1,78 @@
+/** Chunk was on web.js **/
+/** chunk id: 436355, original params: e,t,n (module,exports,re quire) **/
+"use strict";
+require.d(exports, {
+  Z: () => m
+});
+var Chunk255367 = require("./255367.js"),
+  Chunk442837 = require("./442837.js"),
+  Chunk481060 = require("./481060.js"),
+  Chunk946273 = require("./946273.js"),
+  Chunk271383 = require("./271383.js"),
+  Chunk496675 = require("./496675.js"),
+  Chunk796263 = require("./796263.js"),
+  Chunk130883 = require("./130883.js"),
+  Chunk388032 = require("./388032.jsx");
+
+function f(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+
+function _(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      f(e, t, n[t])
+    })
+  }
+  return e
+}
+
+function p(e, t) {
+  var n = Object.keys(e);
+  if (Object.getOwnPropertySymbols) {
+    var r = Object.getOwnPropertySymbols(e);
+    t && (r = r.filter(function(t) {
+      return Object.getOwnPropertyDescriptor(e, t).enumerable
+    })), n.push.apply(n, r)
+  }
+  return n
+}
+
+function h(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : p(Object(t)).forEach(function(n) {
+    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+  }), e
+}
+
+function m(e) {
+  let {
+    channel: t,
+    user: f,
+    guild: p
+  } = e, m = (0, i.e7)([l.Z], () => null != f && null != p && (0, a.nX)(f, p, [l.Z])), g = (0, i.e7)([s.ZP], () => null == f || null == s.ZP.getMember(t.guild_id, f.id));
+  if (!m) return null;
+  let E = () => {
+      null != f && (0, o.ZDy)(async () => {
+        let {
+          default: e
+        } = await n.e("36760").then(n.bind(n, 854360));
+        return n => <e{...h(_({}, n), {
+          guildId: t.guild_id,
+          user: f,
+          modReportId: t.id
+        })} />
+      })
+    },
+    b = g ? d.intl.string(u.default.Ux67nZ) : d.intl.string(u.default["snp/lJ"]),
+    y = "kick-user-".concat(null == f ? true : f.id);
+  return <c.Z text={b} icon={o.I9k} onClick={E} disabled={g} />
+}

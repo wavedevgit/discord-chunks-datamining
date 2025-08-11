@@ -1,21 +1,22 @@
 /** Chunk was on web.js **/
+/** chunk id: 115610, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   O: () => b
-}), n(642613), n(472816), n(794429);
-var r = n(904245),
-  i = n(339085),
-  o = n(957730),
-  a = n(285651),
-  s = n(268350),
-  l = n(926491),
-  c = n(373228),
-  u = n(430824),
-  d = n(594174),
-  f = n(176354),
-  _ = n(709054),
-  p = n(981631),
-  h = n(185923);
+}), require("./642613.js"), require("./472816.js"), require("./794429.js");
+var Chunk904245 = require("./904245.js"),
+  Chunk339085 = require("./339085.js"),
+  Chunk957730 = require("./957730.js"),
+  Chunk285651 = require("./285651.js"),
+  Chunk268350 = require("./268350.js"),
+  Chunk926491 = require("./926491.js"),
+  Chunk373228 = require("./373228.js"),
+  Chunk430824 = require("./430824.js"),
+  Chunk594174 = require("./594174.js"),
+  Chunk176354 = require("./176354.js"),
+  Chunk709054 = require("./709054.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk185923 = require("./185923.js");
 let m = 5,
   g = 10;
 
@@ -36,7 +37,7 @@ async function b(e, t) {
     let i = [I[Math.floor(Math.pow(Math.random(), 2) * I.length)].id];
     r.Z.sendStickers(t.id, i, "", {
       messageReference: {
-        guild_id: null != (n = t.getGuildId()) ? n : void 0,
+        guild_id: null != (n = t.getGuildId()) ? n : true,
         channel_id: t.id,
         message_id: e
       }
@@ -51,9 +52,9 @@ async function b(e, t) {
   })).sort((e, t) => -_.default.compare(e.id, t.id));
   if (T.length > g) {
     let n = T[Math.floor(Math.pow(Math.random(), 2) * T.length)];
-    r.Z.sendMessage(t.id, o.ZP.parse(t, n.allNamesString), !1, {
+    r.Z.sendMessage(t.id, o.ZP.parse(t, n.allNamesString), false, {
       messageReference: {
-        guild_id: null != (p = t.getGuildId()) ? p : void 0,
+        guild_id: null != (p = t.getGuildId()) ? p : true,
         channel_id: t.id,
         message_id: e
       }
@@ -64,7 +65,7 @@ async function b(e, t) {
     A = [S[Math.floor(Math.random() * S.length)].id];
   r.Z.sendStickers(t.id, A, "", {
     messageReference: {
-      guild_id: null != (b = t.getGuildId()) ? b : void 0,
+      guild_id: null != (b = t.getGuildId()) ? b : true,
       channel_id: t.id,
       message_id: e
     }

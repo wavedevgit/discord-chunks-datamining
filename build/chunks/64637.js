@@ -1,10 +1,11 @@
 /** Chunk was on web.js **/
+/** chunk id: 64637, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-var r = n(507604),
-  i = n(621523),
-  o = n(809290);
-e.exports = !r && !i(function() {
-  return 7 !== Object.defineProperty(o("div"), "a", {
+var Chunk507604 = require("./507604.js"),
+  Chunk621523 = require("./621523.js"),
+  Chunk809290 = require("./809290.js");
+module.exports = !Chunk507604 && !Chunk621523(function() {
+  return 7 !== Object.defineProperty(Chunk809290("div"), "a", {
     get: function() {
       return 7
     }

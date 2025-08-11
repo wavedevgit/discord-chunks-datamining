@@ -1,5 +1,6 @@
 /** Chunk was on web.js **/
-e.exports = function(e) {
+/** chunk id: 386835, original params: e (module,exports,re quire) **/
+module.exports = function(e) {
   let t = e.regex,
     n = /[a-zA-Z]\w*/,
     r = ["as", "break", "class", "construct", "continue", "else", "for", "foreign", "if", "import", "in", "is", "return", "static", "var", "while"],
@@ -53,7 +54,7 @@ e.exports = function(e) {
       className: "property",
       begin: t.concat(/\./, t.lookahead(n)),
       end: n,
-      excludeBegin: !0,
+      excludeBegin: true,
       relevance: 0
     },
     p = {

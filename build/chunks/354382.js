@@ -1,17 +1,18 @@
 /** Chunk was on 3277 **/
-n.d(t, {
+/** chunk id: 354382, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => o
 });
-var i = n(475637),
-  a = n(925300),
-  r = n(99887);
+var Chunk475637 = require("./475637.js"),
+  Chunk925300 = require("./925300.js"),
+  Chunk99887 = require("./99887.js");
 let o = {
-  ordinalNumber: (0, a.Z)({
+  ordinalNumber: (0, Chunk925300.Z)({
     matchPattern: /^[०१२३४५६७८९]+/i,
     parsePattern: /^[०१२३४५६७८९]+/i,
-    valueCallback: r.n
+    valueCallback: Chunk99887.n
   }),
-  era: (0, i.Z)({
+  era: (0, Chunk475637.Z)({
     matchPatterns: {
       narrow: /^(ईसा-पूर्व|ईस्वी)/i,
       abbreviated: /^(ईसा\.?\s?पूर्व\.?|ईसा\.?)/i,
@@ -23,7 +24,7 @@ let o = {
     },
     defaultParseWidth: "any"
   }),
-  quarter: (0, i.Z)({
+  quarter: (0, Chunk475637.Z)({
     matchPatterns: {
       narrow: /^[1234]/i,
       abbreviated: /^ति[1234]/i,
@@ -38,7 +39,7 @@ let o = {
       return e + 1
     }
   }),
-  month: (0, i.Z)({
+  month: (0, Chunk475637.Z)({
     matchPatterns: {
       narrow: /^[जफ़माअप्मईजूनजुअगसिअक्तनदि]/i,
       abbreviated: /^(जन|फ़र|मार्च|अप्|मई|जून|जुल|अग|सित|अक्तू|नव|दिस)/i,
@@ -51,7 +52,7 @@ let o = {
     },
     defaultParseWidth: "any"
   }),
-  day: (0, i.Z)({
+  day: (0, Chunk475637.Z)({
     matchPatterns: {
       narrow: /^[रविसोममंगलबुधगुरुशुक्रशनि]/i,
       short: /^(रवि|सोम|मंगल|बुध|गुरु|शुक्र|शनि)/i,
@@ -65,7 +66,7 @@ let o = {
     },
     defaultParseWidth: "any"
   }),
-  dayPeriod: (0, i.Z)({
+  dayPeriod: (0, Chunk475637.Z)({
     matchPatterns: {
       narrow: /^(पू|अ|म|द.\?|सु|दो|शा|रा)/i,
       any: /^(पूर्वाह्न|अपराह्न|म|द.\?|सु|दो|शा|रा)/i

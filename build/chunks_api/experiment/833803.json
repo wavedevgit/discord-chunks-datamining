@@ -1,1 +1,0 @@
-{"id":"833803","type":"experiment","data":{"kind":"user","id":"2024-09_improved_reaction_button","label":"Improved Reaction Button","defaultConfig":{"canShowImprovedReactionButton":false},"treatments":[{"id":1,"label":"Show improved reaction button","config":{"canShowImprovedReactionButton":false}}]},"fromModule":{"id":"2900"}}

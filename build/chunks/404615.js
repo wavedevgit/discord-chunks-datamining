@@ -1,21 +1,22 @@
 /** Chunk was on 75708 **/
-n.d(t, {
+/** chunk id: 404615, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   _: () => o
 });
-var i = n(442837),
-  r = n(607070),
-  s = n(391110),
-  a = n(758114);
+var Chunk442837 = require("./442837.js"),
+  Chunk607070 = require("./607070.js"),
+  Chunk391110 = require("./391110.js"),
+  Chunk758114 = require("./758114.js");
 let l = {
     subtitle: {
-      onlyShowOnHover: !1
+      onlyShowOnHover: false
     },
     description: {
-      onlyShowOnHover: !0,
-      className: a.cardDescription
+      onlyShowOnHover: true,
+      className: Chunk758114.cardDescription
     },
     descriptionCta: {
-      onlyShowOnHover: !0
+      onlyShowOnHover: true
     }
   },
   o = e => {
@@ -24,20 +25,20 @@ let l = {
         [s.zW.DEFAULT]: l,
         [s.zW.REWARD]: {
           subtitle: {
-            onlyShowOnHover: !0,
+            onlyShowOnHover: true,
             textVariant: "text-sm/semibold"
           },
           description: {
-            onlyShowOnHover: !0,
+            onlyShowOnHover: true,
             className: a.cardDescriptionTenureReward
           },
           descriptionCta: {
-            onlyShowOnHover: !1,
-            hideOnHoverComponent: !0,
+            onlyShowOnHover: false,
+            hideOnHoverComponent: true,
             className: a.descriptionCTATenureReward
           },
           cardContainer: {
-            className: t ? void 0 : a.nitroGradientBorderHover
+            className: t ? true : a.nitroGradientBorderHover
           }
         },
         [s.zW.NITRO_GRADIENT_HOVER_BORDER]: {

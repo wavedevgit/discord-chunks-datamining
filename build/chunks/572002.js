@@ -1,12 +1,13 @@
 /** Chunk was on 80451 **/
+/** chunk id: 572002, original params: e,r,t (module,exports,require) **/
 "use strict";
-t(864733)(r, "__esModule", {
-  value: !0
-}), r.default = void 0, r.default = {
-  abstract: !1,
-  accessibleNameRequired: !0,
+require("./864733.js")(exports, "__esModule", {
+  value: true
+}), exports.default = true, exports.default = {
+  abstract: false,
+  accessibleNameRequired: true,
   baseConcepts: [],
-  childrenPresentational: !0,
+  childrenPresentational: true,
   nameFrom: ["author"],
   prohibitedProps: [],
   props: {

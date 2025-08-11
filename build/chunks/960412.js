@@ -1,37 +1,38 @@
 /** Chunk was on 75708 **/
-n.d(t, {
+/** chunk id: 960412, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Y7: () => c,
   oc: () => u,
   pR: () => d
 });
-var i = n(990547),
-  r = n(283693),
-  s = n(570140),
-  a = n(573261),
-  l = n(930441),
-  o = n(981631);
+var Chunk990547 = require("./990547.js"),
+  Chunk283693 = require("./283693.js"),
+  Chunk570140 = require("./570140.js"),
+  Chunk573261 = require("./573261.js"),
+  Chunk930441 = require("./930441.js"),
+  Chunk981631 = require("./981631.js");
 async function c() {
   try {
-    let e = await a.Z.get({
-      url: o.ANM.EMAIL_SETTINGS,
+    let e = await Chunk573261.Z.get({
+      url: Chunk981631.ANM.EMAIL_SETTINGS,
       trackedActionData: {
-        event: i.NetworkActionNames.EMAIL_SETTINGS_FETCH,
+        event: Chunk990547.NetworkActionNames.EMAIL_SETTINGS_FETCH,
         properties: e => {
           var t;
-          let n = null == e || null == (t = e.body) ? void 0 : t.initialized;
+          let n = null == e || null == (t = e.body) ? true : t.initialized;
           return (0, r.iG)({
             initialized: n
           })
         }
       },
-      rejectWithError: !0
+      rejectWithError: true
     });
-    return s.Z.dispatch({
+    return Chunk570140.Z.dispatch({
       type: "EMAIL_SETTINGS_FETCH_SUCCESS",
-      settings: e.body
-    }), e.body
+      settings: module.body
+    }), module.body
   } catch (e) {
-    s.Z.dispatch({
+    Chunk570140.Z.dispatch({
       type: "EMAIL_SETTINGS_FETCH_FAILURE"
     })
   }
@@ -60,7 +61,7 @@ async function d(e, t) {
           value: t
         }
       },
-      rejectWithError: !0
+      rejectWithError: true
     });
     s.Z.dispatch({
       type: "EMAIL_SETTINGS_UPDATE_SUCCESS",
@@ -73,7 +74,7 @@ async function d(e, t) {
   }
 }
 async function u() {
-  let e = l.M0.reduce((e, t) => {
+  let e = Chunk930441.M0.reduce((e, t) => {
     var n, i;
     return n = function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -85,15 +86,15 @@ async function u() {
           var i;
           i = n[t], t in e ? Object.defineProperty(e, t, {
             value: i,
-            enumerable: !0,
-            configurable: !0,
-            writable: !0
+            enumerable: true,
+            configurable: true,
+            writable: true
           }) : e[t] = i
         })
       }
       return e
     }({}, e), i = i = {
-      [t]: !1
+      [t]: false
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
@@ -105,33 +106,33 @@ async function u() {
       Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(i, e))
     }), n
   }, {});
-  s.Z.dispatch({
+  Chunk570140.Z.dispatch({
     type: "EMAIL_SETTINGS_UPDATE",
-    updates: e
+    updates: module
   });
   try {
-    let t = await a.Z.patch({
-      url: o.ANM.EMAIL_SETTINGS,
+    let t = await Chunk573261.Z.patch({
+      url: Chunk981631.ANM.EMAIL_SETTINGS,
       body: {
         settings: {
-          categories: e
+          categories: module
         }
       },
       trackedActionData: {
-        event: i.NetworkActionNames.EMAIL_SETTINGS_UPDATE,
+        event: Chunk990547.NetworkActionNames.EMAIL_SETTINGS_UPDATE,
         properties: {
           category: "marketing",
-          value: !1
+          value: false
         }
       },
-      rejectWithError: !0
+      rejectWithError: true
     });
-    s.Z.dispatch({
+    Chunk570140.Z.dispatch({
       type: "EMAIL_SETTINGS_UPDATE_SUCCESS",
-      settings: t.body
+      settings: exports.body
     })
   } catch (e) {
-    s.Z.dispatch({
+    Chunk570140.Z.dispatch({
       type: "EMAIL_SETTINGS_UPDATE_FAILURE"
     })
   }

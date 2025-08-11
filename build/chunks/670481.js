@@ -1,17 +1,18 @@
 /** Chunk was on web.js **/
+/** chunk id: 670481, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   OU: () => d,
   ZP: () => f,
   fC: () => a
 });
-var r = n(73800),
+var Chunk73800 = require("./73800.js"),
   i = function() {
     this.locks = [], this.listeners = []
   };
 
 function o(e, t, n) {
-  void 0 === n && (n = !1);
+  true === n && (n = false);
   var r = function(e) {
       return document.createTreeWalker(e, NodeFilter.SHOW_ELEMENT, {
         acceptNode: function(e) {
@@ -27,24 +28,24 @@ i.prototype.add = function(e, t) {
   var n = {
     uid: e,
     setEnabled: t,
-    enabled: !1
+    enabled: false
   };
-  this.toggleLayer(this.current(), !1), this.locks.push(n), this.toggleLayer(n, !0), this.emit()
+  this.toggleLayer(this.current(), false), this.locks.push(n), this.toggleLayer(n, true), this.emit()
 }, i.prototype.remove = function(e) {
   var t = this.locks.find(function(t) {
     return t.uid === e
   });
-  this.toggleLayer(t, !1);
+  this.toggleLayer(t, false);
   var n = this.current(),
     r = null != n && n.uid === e;
   this.locks = this.locks.filter(function(t) {
     return t.uid !== e
-  }), r && this.toggleLayer(this.current(), !0), this.emit()
+  }), r && this.toggleLayer(this.current(), true), this.emit()
 }, i.prototype.current = function() {
   return this.locks[this.locks.length - 1]
 }, i.prototype.isActive = function() {
   var e = this.current();
-  return null != e && e.enabled
+  return null != module && module.enabled
 }, i.prototype.toggleLayer = function(e, t) {
   null != e && (e.setEnabled(t), e.enabled = t)
 }, i.prototype.subscribe = function(e) {
@@ -86,7 +87,7 @@ function u(e) {
   var t = (0, r.useState)(function() {
       return e || "lock-" + s++
     })[0],
-    n = (0, r.useRef)(!1);
+    n = (0, r.useRef)(false);
   return (0, r.useLayoutEffect)(function() {
     return a.add(t, function(e) {
         return n.current = e
@@ -96,11 +97,11 @@ function u(e) {
       }
   }, [t]), n
 }
-var d = (0, r.memo)(function() {
-  var e = (0, r.useState)(!1),
-    t = e[0];
-  return l(e[1]), (0, r.createElement)("div", {
-    tabIndex: t ? 0 : void 0,
+var d = (0, Chunk73800.memo)(function() {
+  var e = (0, Chunk73800.useState)(false),
+    t = module[0];
+  return l(module[1]), (0, Chunk73800.createElement)("div", {
+    tabIndex: exports ? 0 : true,
     style: {
       position: "fixed",
       opacity: 0,
@@ -110,16 +111,16 @@ var d = (0, r.memo)(function() {
 });
 
 function f(e, t) {
-  void 0 === t && (t = {});
+  true === t && (t = {});
   var n = t.returnRef,
     i = t.disableReturnRef,
     a = t.attachTo;
-  void 0 === a && (a = document);
+  true === a && (a = document);
   var s = t.disable,
     l = a instanceof HTMLElement ? a.ownerDocument : a,
     d = u();
   (0, r.useEffect)(function() {
-    s && (d.current = !1)
+    s && (d.current = false)
   }, [s, d]), (0, r.useLayoutEffect)(function() {
     var t = e.current;
 
@@ -143,16 +144,16 @@ function f(e, t) {
         }
       }
     }
-    return null == t || null == l.activeElement || t.contains(l.activeElement) || null != t.querySelector("[autofocus]") || o(t, l.activeElement, !0), a.addEventListener("focusin", n, {
-        capture: !0
+    return null == t || null == l.activeElement || t.contains(l.activeElement) || null != t.querySelector("[autofocus]") || o(t, l.activeElement, true), a.addEventListener("focusin", n, {
+        capture: true
       }), a.addEventListener("focusout", r, {
-        capture: !0
+        capture: true
       }),
       function() {
         a.removeEventListener("focusin", n, {
-          capture: !0
+          capture: true
         }), a.removeEventListener("focusout", r, {
-          capture: !0
+          capture: true
         })
       }
   }, [a, l, e, d]), c(n, i)

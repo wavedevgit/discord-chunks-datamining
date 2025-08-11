@@ -1,21 +1,22 @@
 /** Chunk was on web.js **/
+/** chunk id: 454585, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => N
-}), n(388685);
-var r = n(392711),
-  i = n.n(r),
-  o = n(25209),
-  a = n(691424),
-  s = n(428595),
-  l = n(364458);
+}), require("./388685.js");
+var Chunk392711 = require("./392711.js"),
+  i = require.n(Chunk392711),
+  Chunk25209 = require("./25209.js"),
+  Chunk691424 = require("./691424.js"),
+  Chunk428595 = require("./428595.js"),
+  Chunk364458 = require("./364458.js");
 
 function c(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -56,58 +57,58 @@ function p(e, t) {
     mention: _
   }), (0, l.Z)([e, ...t, n])
 }
-_ = n(878611).Z;
+_ = require("./878611.js").Z;
 let h = {
-    enableBuildOverrides: !1,
-    enableEmojiClick: !0
+    enableBuildOverrides: false,
+    enableEmojiClick: true
   },
-  m = p(s.Z.RULES, [(0, a.Z)({
-    enableBuildOverrides: !0
+  m = p(Chunk428595.Z.RULES, [(0, Chunk691424.Z)({
+    enableBuildOverrides: true
   })]),
-  g = i().omit(p(s.Z.RULES, [(0, a.Z)(h)]), "paragraph", "newline"),
-  E = p(s.Z.CHANNEL_TOPIC_RULES, [(0, a.Z)(f(u({}, h), {
+  g = i().omit(p(Chunk428595.Z.RULES, [(0, Chunk691424.Z)(h)]), "paragraph", "newline"),
+  E = p(Chunk428595.Z.CHANNEL_TOPIC_RULES, [(0, Chunk691424.Z)(f(u({}, h), {
     emojiTooltipPosition: "bottom"
   })), {
     codeBlock: {
-      react: s.Z.RULES.text.react
+      react: Chunk428595.Z.RULES.text.react
     }
   }]),
-  b = p(s.Z.VOICE_CHANNEL_STATUS_RULES, [(0, a.Z)(f(u({}, h), {
-    enableEmojiClick: !1
+  b = p(Chunk428595.Z.VOICE_CHANNEL_STATUS_RULES, [(0, Chunk691424.Z)(f(u({}, h), {
+    enableEmojiClick: false
   }))]),
-  y = p(s.Z.EMBED_TITLE_RULES, [(0, a.Z)(h)]),
-  O = p(s.Z.INLINE_REPLY_RULES, [(0, a.Z)(h)]),
-  v = p(s.Z.GUILD_VERIFICATION_FORM_RULES, [(0, a.Z)(h)]),
-  I = p(s.Z.GUILD_EVENT_RULES, [(0, a.Z)(h)]),
-  T = p(s.Z.AUTO_MODERATION_SYSTEM_MESSAGE_RULES, [(0, a.Z)(h)]),
-  S = i().omit(p(s.Z.RULES, [(0, a.Z)(h)]), "paragraph", "newline", "strong", "codeBlock", "inlineCode", "u", "link", "url", "autolink", "list", "heading", "subtext"),
+  y = p(Chunk428595.Z.EMBED_TITLE_RULES, [(0, Chunk691424.Z)(h)]),
+  O = p(Chunk428595.Z.INLINE_REPLY_RULES, [(0, Chunk691424.Z)(h)]),
+  v = p(Chunk428595.Z.GUILD_VERIFICATION_FORM_RULES, [(0, Chunk691424.Z)(h)]),
+  I = p(Chunk428595.Z.GUILD_EVENT_RULES, [(0, Chunk691424.Z)(h)]),
+  T = p(Chunk428595.Z.AUTO_MODERATION_SYSTEM_MESSAGE_RULES, [(0, Chunk691424.Z)(h)]),
+  S = i().omit(p(Chunk428595.Z.RULES, [(0, Chunk691424.Z)(h)]), "paragraph", "newline", "strong", "codeBlock", "inlineCode", "u", "link", "url", "autolink", "list", "heading", "subtext"),
   A = {
-    text: s.Z.RULES.text
+    text: Chunk428595.Z.RULES.text
   },
   N = {
     combineAndInjectMentionRule: p,
-    createReactRules: a.Z,
+    createReactRules: Chunk691424.Z,
     defaultReactRuleOptions: h,
     defaultRules: m,
     guildEventRules: I,
     notifCenterV2MessagePreviewRules: S,
     lockscreenWidgetMessageRules: A,
-    astParserFor: o._p,
-    reactParserFor: o.w4,
-    parse: o.w4(m),
+    astParserFor: Chunk25209._p,
+    reactParserFor: Chunk25209.w4,
+    parse: Chunk25209.w4(m),
     parseTopic: (e, t, n, r) => o.w4(E)(e, t, u({
-      allowLinks: !0
+      allowLinks: true
     }, n), r),
-    parseVoiceChannelStatus: o.w4(b),
-    parseEmbedTitle: o.w4(y),
-    parseInlineReply: o.w4(O),
-    parseGuildVerificationFormRule: o.w4(v),
-    parseGuildEventDescription: o.w4(I),
-    parseAutoModerationSystemMessage: o.w4(T),
-    parseForumPostGuidelines: o.w4(g),
-    parseToAST: o._p(m),
-    parseTopicToAST: o._p(E),
-    parseEmbedTitleToAST: o._p(y),
-    parseInlineReplyToAST: o._p(O),
-    parseAutoModerationSystemMessageToAST: o._p(T)
+    parseVoiceChannelStatus: Chunk25209.w4(b),
+    parseEmbedTitle: Chunk25209.w4(y),
+    parseInlineReply: Chunk25209.w4(O),
+    parseGuildVerificationFormRule: Chunk25209.w4(v),
+    parseGuildEventDescription: Chunk25209.w4(I),
+    parseAutoModerationSystemMessage: Chunk25209.w4(T),
+    parseForumPostGuidelines: Chunk25209.w4(g),
+    parseToAST: Chunk25209._p(m),
+    parseTopicToAST: Chunk25209._p(E),
+    parseEmbedTitleToAST: Chunk25209._p(y),
+    parseInlineReplyToAST: Chunk25209._p(O),
+    parseAutoModerationSystemMessageToAST: Chunk25209._p(T)
   }

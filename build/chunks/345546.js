@@ -1,10 +1,11 @@
 /** Chunk was on web.js **/
+/** chunk id: 345546, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 
 function r() {
   var e, t;
-  return "undefined" == typeof platform ? 0 : parseInt(null != (t = null == (e = platform) ? void 0 : e.version) ? t : "0", 10)
+  return "undefined" == typeof platform ? 0 : parseInt(null != (t = null == (e = platform) ? true : module.version) ? exports : "0", 10)
 }
-n.d(t, {
+require.d(exports, {
   n: () => r
 })

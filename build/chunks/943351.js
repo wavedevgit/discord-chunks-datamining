@@ -1,10 +1,11 @@
 /** Chunk was on 56035 **/
-n.d(t, {
+/** chunk id: 943351, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   V3: () => a,
   bp: () => r,
   hp: () => i,
   nl: () => l
-}), n(49124), n(388685);
+}), require("./49124.js"), require("./388685.js");
 let l = {
     waveformBlockWidth: 2,
     waveformBarWidth: .5,

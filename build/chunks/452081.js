@@ -1,29 +1,30 @@
 /** Chunk was on 1272 **/
-n.d(t, {
+/** chunk id: 452081, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   z: () => s
 });
-var r = n(73800),
-  i = n(703656),
-  l = n(113434),
-  a = n(220068),
-  o = n(388032);
+var Chunk73800 = require("./73800.js"),
+  Chunk703656 = require("./703656.js"),
+  Chunk113434 = require("./113434.js"),
+  Chunk220068 = require("./220068.js"),
+  Chunk388032 = require("./388032.jsx");
 
 function s() {
-  let e = a.Z.useField("tab"),
-    t = r.useCallback(e => {
+  let e = Chunk220068.Z.useField("tab"),
+    t = Chunk73800.useCallback(e => {
       (0, i.dL)("#"), a.Z.setState({
         tab: e
       })
     }, []);
   return {
-    tabs: r.useMemo(() => [{
-      id: l.e5.ALL,
-      label: o.intl.string(o.t["0SzXmp"])
+    tabs: Chunk73800.useMemo(() => [{
+      id: Chunk113434.e5.ALL,
+      label: Chunk388032.intl.string(Chunk388032.t["0SzXmp"])
     }, {
-      id: l.e5.CLAIMED,
-      label: o.intl.string(o.t.zyNYND)
+      id: Chunk113434.e5.CLAIMED,
+      label: Chunk388032.intl.string(Chunk388032.t.zyNYND)
     }], []),
-    selectedTab: e,
-    onSelectTab: t
+    selectedTab: module,
+    onSelectTab: exports
   }
 }

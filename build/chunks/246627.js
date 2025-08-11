@@ -1,11 +1,12 @@
 /** Chunk was on web.js **/
+/** chunk id: 246627, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => a
-}), n(388685), n(539854);
-var r = n(73800),
-  i = n(442837),
-  o = n(235587);
+}), require("./388685.js"), require("./539854.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk442837 = require("./442837.js"),
+  Chunk235587 = require("./235587.js");
 
 function a(e) {
   let {
@@ -14,10 +15,10 @@ function a(e) {
     intervalStart: a
   } = e, s = (0, i.Wu)([o.Z], () => {
     var e, r;
-    return null != (r = null == (e = o.Z.getPrevLeaderboardRanks(t, n, a)) ? void 0 : e.ranks) ? r : []
+    return null != (r = null == (e = o.Z.getPrevLeaderboardRanks(t, n, a)) ? true : e.ranks) ? r : []
   }, [t, a, n]), l = (0, i.Wu)([o.Z], () => {
     var e, r;
-    return null != (r = null == (e = o.Z.getCurrentLeaderboardRanks(t, n, a)) ? void 0 : e.ranks) ? r : []
+    return null != (r = null == (e = o.Z.getCurrentLeaderboardRanks(t, n, a)) ? true : e.ranks) ? r : []
   }, [t, a, n]);
   return {
     rankChanges: r.useMemo(() => {

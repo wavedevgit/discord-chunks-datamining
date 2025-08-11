@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 672058, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   root: "root_c5bcbe",
   pipMode: "pipMode_c5bcbe",
   pipModeShort: "pipModeShort_c5bcbe",

@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 473092, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   KQ: () => l,
   Lm: () => d,
   MC: () => a,
@@ -8,9 +9,9 @@ n.d(t, {
   pb: () => s,
   qc: () => u
 });
-var r = n(594174),
-  i = n(626135),
-  o = n(981631);
+var Chunk594174 = require("./594174.js"),
+  Chunk626135 = require("./626135.js"),
+  Chunk981631 = require("./981631.js");
 
 function a(e, t) {
   let {
@@ -21,7 +22,7 @@ function a(e, t) {
   } = t;
   i.default.track(e, {
     channel_id: n,
-    warning_id: null != r ? parseInt(r) : void 0,
+    warning_id: null != r ? parseInt(r) : true,
     warning_type: a,
     other_user_id: o
   })
@@ -41,7 +42,7 @@ function l(e) {
   } = e;
   i.default.track(o.rMx.SAFETY_WARNING_VIEWED, {
     channel_id: t,
-    warning_id: null != n ? parseInt(n) : void 0,
+    warning_id: null != n ? parseInt(n) : true,
     warning_type: a,
     other_user_id: r,
     view_name: s,
@@ -63,7 +64,7 @@ function u(e) {
   } = e;
   i.default.track(o.rMx.SAFETY_WARNING_CTA_CLICKED, {
     channel_id: t,
-    warning_id: null != n ? parseInt(n) : void 0,
+    warning_id: null != n ? parseInt(n) : true,
     warning_type: a,
     other_user_id: r,
     cta: s,
@@ -73,5 +74,5 @@ function u(e) {
 
 function d() {
   var e;
-  return !1 === (null == (e = r.default.getCurrentUser()) ? void 0 : e.nsfwAllowed)
+  returnfalse === (null == (e = Chunk594174.default.getCurrentUser()) ? true : module.nsfwAllowed)
 }

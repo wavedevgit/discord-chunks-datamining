@@ -1,21 +1,22 @@
 /** Chunk was on 27978 **/
-n.d(t, {
+/** chunk id: 937154, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => l
-}), n(388685);
-var r = n(73800);
+}), require("./388685.js");
+var Chunk73800 = require("./73800.js");
 
 function i() {
   return "undefined" == typeof document || "visible" === document.visibilityState
 }
 
 function l() {
-  let [e, t] = (0, r.useState)(i());
-  return (0, r.useEffect)(() => {
+  let [e, t] = (0, Chunk73800.useState)(i());
+  return (0, Chunk73800.useEffect)(() => {
     function e() {
-      t(i())
+      exports(i())
     }
-    return window.addEventListener("visibilitychange", e), () => {
-      window.removeEventListener("visibilitychange", e)
+    return window.addEventListener("visibilitychange", module), () => {
+      window.removeEventListener("visibilitychange", module)
     }
-  }, [t]), e
+  }, [exports]), module
 }

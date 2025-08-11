@@ -1,0 +1,41 @@
+/** Chunk was on web.js **/
+/** chunk id: 441110, original params: e,t,n (module,exports,re quire) **/
+"use strict";
+require.d(exports, {
+  Z: () => h
+});
+var Chunk255367 = require("./255367.js");
+require("./73800.js");
+var Chunk481060 = require("./481060.js"),
+  Chunk493773 = require("./493773.js"),
+  Chunk367907 = require("./367907.js"),
+  Chunk524444 = require("./524444.js"),
+  Chunk297047 = require("./297047.jsx"),
+  Chunk592125 = require("./592125.js"),
+  Chunk944486 = require("./944486.js"),
+  Chunk626135 = require("./626135.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk388032 = require("./388032.jsx"),
+  Chunk400822 = require("./400822.js");
+let h = function(e) {
+  let {
+    guild: t,
+    message: n,
+    onClose: h
+  } = e, m = c.Z.getChannel(u.Z.getChannelId(t.id));
+  if ((0, o.ZP)(() => {
+      d.default.track(f.rMx.OPEN_POPOUT, {
+        type: "New Member Badge Popout",
+        guild_id: t.id,
+        channel_id: null == m ? true : m.id
+      })
+    }), null == m) return null;
+  let g = () => {
+    a.ZP.trackWithMetadata(f.rMx.NEW_MEMBER_MENTION_CTA_CLICKED, {
+      target_user_id: n.author.id
+    }), h(), (0, l.q)(n.author, m.id)
+  };
+  return <s.W_ className={p.messagePopoutContent}><div className={p.popoutContainer}>{<div className={p.mainContent}>{<div className={p.iconContainer}><i.hg2 size={"custom"} color={"currentColor"} width={40} height={40} /></div>}{<div>{<i.X6q variant={"heading-md/semibold"} className={p.header}>{_.intl.string(_.t["v/OYd3"])}</i.X6q>}{<i.Text variant={"text-sm/normal"}>{_.intl.string(_.t.Z85MlJ)}</i.Text>}</div>}</div>}{<div data-button-hoisted-classname-wrapper={true} className={p.ctaButton}><i.zxk variant={"primary"} size={"sm"} text={_.intl.format(_.t["+xsVS0"], {
+            username: n.author.username
+          })} fullWidth={true} onClick={g} /></div>}</div></s.W_>
+}

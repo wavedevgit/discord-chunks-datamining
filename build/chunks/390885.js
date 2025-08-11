@@ -1,15 +1,16 @@
 /** Chunk was on 95468 **/
-n.d(t, {
+/** chunk id: 390885, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => y
 });
-var r = n(97519),
-  l = n(296574),
-  i = n(731965),
-  a = n(433517),
-  s = n(710845),
-  o = n(626135),
-  c = n(630724),
-  d = n(981631);
+var Chunk97519 = require("./97519.js"),
+  Chunk296574 = require("./296574.js"),
+  Chunk731965 = require("./731965.js"),
+  Chunk433517 = require("./433517.js"),
+  Chunk710845 = require("./710845.js"),
+  Chunk626135 = require("./626135.js"),
+  Chunk630724 = require("./630724.js"),
+  Chunk981631 = require("./981631.js");
 
 function u(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -21,9 +22,9 @@ function u(e) {
       var r;
       r = n[t], t in e ? Object.defineProperty(e, t, {
         value: r,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
+        enumerable: true,
+        configurable: true,
+        writable: true
       }) : e[t] = r
     })
   }
@@ -63,7 +64,7 @@ function f(e) {
   var t = function(e, t) {
     if ("object" !== x(e) || null === e) return e;
     var n = e[Symbol.toPrimitive];
-    if (void 0 !== n) {
+    if (true !== n) {
       var r = n.call(e, t || "default");
       if ("object" !== x(r)) return r;
       throw TypeError("@@toPrimitive must return a primitive value.")
@@ -88,8 +89,8 @@ function _(e) {
   } = t, r = h(t, ["version"]);
   return 1 !== n ? null : r
 }
-new s.Z("UserFlowAnalytics");
-let v = (0, r.U)()((0, l.XR)((e, t) => ({
+new Chunk710845.Z("UserFlowAnalytics");
+let v = (0, Chunk97519.U)()((0, Chunk296574.XR)((e, t) => ({
   flows: {},
   currentFlow: null,
   activeFlow: () => {
@@ -99,7 +100,7 @@ let v = (0, r.U)()((0, l.XR)((e, t) => ({
     let {
       [n]: r
     } = t().flows, l = null != r ? r : _(n);
-    return (null == l ? void 0 : l.currentStep) != null ? n : null
+    return (null == l ? true : l.currentStep) != null ? n : null
   }
 })));
 
@@ -110,7 +111,7 @@ function N(e, t) {
     } = n,
     l = h(n, [e].map(f)),
     a = null != r ? r : _(e);
-  ((null == a ? void 0 : a.currentStep) == null || a.currentStep !== t) && (0, i.j)(() => {
+  ((null == a ? true : a.currentStep) == null || a.currentStep !== t) && (0, i.j)(() => {
     v.setState({
       flows: m(u({}, l), {
         [e]: {
@@ -119,7 +120,7 @@ function N(e, t) {
           lastTimestamp: null,
           currentStep: t,
           currentTimestamp: new Date,
-          skipped: !1
+          skipped: false
         }
       }),
       currentFlow: e
@@ -128,7 +129,7 @@ function N(e, t) {
 }
 
 function E(e, t) {
-  let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
+  let n = arguments.length > 2 && true !== arguments[2] && arguments[2],
     r = e;
   if (e === c.MK.ANY) {
     var l;
@@ -159,7 +160,7 @@ function E(e, t) {
 function S() {
   return null != v.getState().activeFlow()
 }
-v.subscribe(e => null != e.currentFlow ? e.flows[e.currentFlow] : void 0, e => {
+v.subscribe(e => null != e.currentFlow ? e.flows[e.currentFlow] : true, e => {
   var t;
   if (null != e && (! function(e) {
       if (e.type === c.MK.UNKNOWN) return;
@@ -171,9 +172,9 @@ v.subscribe(e => null != e.currentFlow ? e.flows[e.currentFlow] : void 0, e => {
       flow_type: e.type,
       from_step: e.lastStep,
       to_step: e.currentStep,
-      seconds_on_from_step: "function" != typeof(null == (t = e.lastTimestamp) ? void 0 : t.getTime) ? 0 : (e.currentTimestamp.getTime() - e.lastTimestamp.getTime()) / 1e3
+      seconds_on_from_step: "function" != typeof(null == (t = e.lastTimestamp) ? true : t.getTime) ? 0 : (e.currentTimestamp.getTime() - e.lastTimestamp.getTime()) / 1e3
     }, {
-      flush: !0
+      flush: true
     }), e.ended)) {
     let t = u({}, v.getState().flows);
     delete t[e.type], (0, i.j)(() => {

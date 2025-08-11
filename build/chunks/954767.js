@@ -1,5 +1,6 @@
 /** Chunk was on 49152 **/
-e.exports = {
+/** chunk id: 954767, original params: e,t,n (module,exports,require) **/
+module.exports = {
   overlay: "overlay__3b260",
   divider: "divider__3b260",
   list: "list__3b260",

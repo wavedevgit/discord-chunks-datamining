@@ -1,2 +1,0 @@
-/** Chunk was on 64910 **/
-e.exports = JSON.parse('{"+tTysr":"Farbe hinzuf\xfcgen","8ZcEfn":"Farben","xlXkaG":"Farbintensit\xe4t","dZkwg4":"Farbverlauf-Richtung","AsmU8/":"Passe dein Schema an","xRdYAQ":"[Beta] f\xfcr benutzerdefinierte Schemata ist auf Mobilger\xe4ten nicht verf\xfcgbar.","2hAz8f":"Passe dein Schema an","23QUzs":"Neu! Benutzerdefinierte\xa0Schemata","TRCE4u":"Verleihe deiner Stimmung mit endlosen Farbkombinationen Ausdruck. Probier es jetzt aus, nur mit Nitro."}')

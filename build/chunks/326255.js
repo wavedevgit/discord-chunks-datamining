@@ -1,9 +1,10 @@
 /** Chunk was on web.js **/
+/** chunk id: 326255, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => i
 });
-var r = n(231338);
+var Chunk231338 = require("./231338.js");
 
 function i(e) {
   var t;
@@ -13,5 +14,5 @@ function i(e) {
     applicationStream: o,
     voiceChannel: a
   } = e;
-  return i !== r.Sk.OFFLINE && i !== r.Sk.INVISIBLE && (null != o || null != a || (null != (t = null == n ? void 0 : n.length) ? t : 0) > 0)
+  return i !== r.Sk.OFFLINE && i !== r.Sk.INVISIBLE && (null != o || null != a || (null != (t = null == n ? true : n.length) ? t : 0) > 0)
 }

@@ -1,20 +1,21 @@
 /** Chunk was on web.js **/
+/** chunk id: 441894, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   J: () => l
-}), n(388685);
-var r = n(442837),
-  i = n(592125),
-  o = n(19780),
-  a = n(760373);
+}), require("./388685.js");
+var Chunk442837 = require("./442837.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk19780 = require("./19780.js"),
+  Chunk760373 = require("./760373.js");
 
 function s(e) {
   var t;
-  let [n, r] = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : [o.Z, i.Z];
-  if (null == e || n.getChannelId() !== e) return !1;
+  let [n, r] = arguments.length > 1 && true !== arguments[1] ? arguments[1] : [o.Z, i.Z];
+  if (null == e || n.getChannelId() !== e) returnfalse;
   let s = r.getChannel(e);
-  if (null == s || s.isGuildStageVoice()) return !1;
-  let l = null == (t = n.getSecureFramesState()) ? void 0 : t.version;
+  if (null == s || s.isGuildStageVoice()) returnfalse;
+  let l = null == (t = n.getSecureFramesState()) ? true : t.version;
   return null != l && l !== a.Eg
 }
 

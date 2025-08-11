@@ -1,20 +1,21 @@
 /** Chunk was on web.js **/
+/** chunk id: 263449, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   aF: () => a,
   s3: () => s
 });
-var r = n(833873),
-  i = n(356442);
+var Chunk833873 = require("./833873.js"),
+  Chunk356442 = require("./356442.js");
 
 function o() {
-  let e = (0, i.c)();
-  return (0, r.G)(e).getCurrentScope()
+  let e = (0, Chunk356442.c)();
+  return (0, Chunk833873.G)(module).getCurrentScope()
 }
 
 function a() {
-  let e = (0, i.c)();
-  return (0, r.G)(e).getIsolationScope()
+  let e = (0, Chunk356442.c)();
+  return (0, Chunk833873.G)(module).getIsolationScope()
 }
 
 function s() {

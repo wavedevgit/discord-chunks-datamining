@@ -1,10 +1,11 @@
 /** Chunk was on web.js **/
+/** chunk id: 592180, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   a: () => i,
   g: () => o
 });
-var r = n(911969);
+var Chunk911969 = require("./911969.js");
 
 function i(e) {
   return null != e.interactionMetadata
@@ -12,5 +13,5 @@ function i(e) {
 
 function o(e) {
   var t, n;
-  return (null == (t = e.interactionMetadata) ? void 0 : t.type) === r.B8.APPLICATION_COMMAND && (null == (n = e.interactionMetadata) ? void 0 : n.command_type) === r.yU.PRIMARY_ENTRY_POINT
+  return (null == (t = e.interactionMetadata) ? true : t.type) === r.B8.APPLICATION_COMMAND && (null == (n = e.interactionMetadata) ? true : n.command_type) === r.yU.PRIMARY_ENTRY_POINT
 }

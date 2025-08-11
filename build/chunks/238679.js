@@ -1,28 +1,29 @@
 /** Chunk was on 1272 **/
-n.d(t, {
+/** chunk id: 238679, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   KW: () => f,
   dO: () => p,
   gQ: () => h
 });
-var r = n(392711),
-  i = n.n(r),
-  l = n(317381),
-  a = n(16609),
-  o = n(594174),
-  s = n(823379),
-  c = n(5192),
-  u = n(863141),
-  d = n(186901);
+var Chunk392711 = require("./392711.js"),
+  i = require.n(Chunk392711),
+  Chunk317381 = require("./317381.js"),
+  Chunk16609 = require("./16609.js"),
+  Chunk594174 = require("./594174.js"),
+  Chunk823379 = require("./823379.js"),
+  Chunk5192 = require("./5192.js"),
+  Chunk863141 = require("./863141.js"),
+  Chunk186901 = require("./186901.js");
 
 function p() {
-  let e = l.ZP.getCurrentEmbeddedActivity();
-  if (null == e) return {
+  let e = Chunk317381.ZP.getCurrentEmbeddedActivity();
+  if (null == module) return {
     participants: []
   };
-  let t = (0, a.j)(e.location),
-    n = (0, a.p)(e.location);
+  let t = (0, Chunk16609.j)(module.location),
+    n = (0, Chunk16609.p)(module.location);
   return {
-    participants: Array.from(e.userIds, e => {
+    participants: Array.from(module.userIds, e => {
       var r, i;
       let l = o.default.getUser(e);
       if (null == l) return;
@@ -37,15 +38,15 @@ function p() {
             var r;
             r = n[t], t in e ? Object.defineProperty(e, t, {
               value: r,
-              enumerable: !0,
-              configurable: !0,
-              writable: !0
+              enumerable: true,
+              configurable: true,
+              writable: true
             }) : e[t] = r
           })
         }
         return e
       }({}, (0, u.Z)(l)), i = i = {
-        nickname: null != a ? a : void 0
+        nickname: null != a ? a : true
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
@@ -56,11 +57,11 @@ function p() {
       })(Object(i)).forEach(function(e) {
         Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(i, e))
       }), r
-    }).filter(s.lm)
+    }).filter(Chunk823379.lm)
   }
 }
 let f = {
-    [d.Gp.ANY]: [d.wE]
+    [Chunk186901.Gp.ANY]: [Chunk186901.wE]
   },
   h = {
     scope: f,

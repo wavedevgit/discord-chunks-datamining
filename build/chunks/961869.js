@@ -1,15 +1,16 @@
 /** Chunk was on web.js **/
+/** chunk id: 961869, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.r(t), n.d(t, {
+require.r(exports), require.d(exports, {
   getKrispModel: () => i,
   setKrispModelOverride: () => a,
   setKrispSuppressionLevel: () => o
 });
-var r = n(579806);
+var Chunk579806 = require("./579806.js");
 
 function i() {
   try {
-    return r.Z.nativeModules.requireModule("discord_krisp").getNcModelFilename()
+    return Chunk579806.Z.nativeModules.requireModule("discord_krisp").getNcModelFilename()
   } catch (e) {
     return Promise.resolve(null)
   }

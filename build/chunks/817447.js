@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 817447, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   wrapper: "wrapper_b76891",
   copy: "copy_b76891",
   rewardTile: "rewardTile_b76891"

@@ -1,3 +1,4 @@
 /** Chunk was on web.js **/
+/** chunk id: 896859, original params: e (module,exports,re quire) **/
 "use strict";
-e.exports = "SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED"
+module.exports = "SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED"

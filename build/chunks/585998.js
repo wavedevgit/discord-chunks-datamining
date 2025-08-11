@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 585998, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   headerWave: "headerWave__1dfae",
   bodyWave: "bodyWave__1dfae",
   bodyWaveGradientStop1: "bodyWaveGradientStop1__1dfae",

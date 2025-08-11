@@ -1,18 +1,19 @@
 /** Chunk was on web.js **/
+/** chunk id: 674180, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   eC: () => p,
   gX: () => _,
   uP: () => f
 });
-var r = n(73800),
-  i = n(442837),
-  o = n(81897),
-  a = n(423117),
-  s = n(289393),
-  l = n(430824),
-  c = n(738774),
-  u = n(981631);
+var Chunk73800 = require("./73800.js"),
+  Chunk442837 = require("./442837.js"),
+  Chunk81897 = require("./81897.js"),
+  Chunk423117 = require("./423117.js"),
+  Chunk289393 = require("./289393.js"),
+  Chunk430824 = require("./430824.js"),
+  Chunk738774 = require("./738774.js"),
+  Chunk981631 = require("./981631.js");
 let d = e => {
     let t = (0, o.Z)();
     r.useEffect(() => {
@@ -20,7 +21,7 @@ let d = e => {
         signal: t
       })
     }, [e, t]);
-    let n = null == e ? void 0 : e.id;
+    let n = null == e ? true : e.id;
     return {
       restrictions: (0, i.Wu)([s.Z], () => {
         var e;
@@ -37,7 +38,7 @@ let d = e => {
         restrictionsLoading: o
       } = d(n);
     return {
-      shouldHideGuildPurchaseEntryPoints: !((null == n ? void 0 : n.features.has(u.oNc.CREATOR_MONETIZABLE)) || (null == n ? void 0 : n.features.has(u.oNc.CREATOR_MONETIZABLE_PROVISIONAL))) || (o ? null == (t = null == n ? void 0 : n.features.has(u.oNc.CREATOR_MONETIZABLE_RESTRICTED)) || t : (0, c.uq)(r)),
+      shouldHideGuildPurchaseEntryPoints: !((null == n ? true : n.features.has(u.oNc.CREATOR_MONETIZABLE)) || (null == n ? true : n.features.has(u.oNc.CREATOR_MONETIZABLE_PROVISIONAL))) || (o ? null == (t = null == n ? true : n.features.has(u.oNc.CREATOR_MONETIZABLE_RESTRICTED)) || t : (0, c.uq)(r)),
       restrictionsLoading: o
     }
   },
@@ -48,8 +49,8 @@ let d = e => {
         restrictions: r,
         restrictionsLoading: o
       } = d(n),
-      a = o ? null == (t = null == n ? void 0 : n.features.has(u.oNc.CREATOR_MONETIZABLE_RESTRICTED)) || t : (0, c.Q6)(r),
-      s = !!(null == n ? void 0 : n.features.has(u.oNc.CREATOR_MONETIZABLE_PENDING_NEW_OWNER_ONBOARDING));
+      a = o ? null == (t = null == n ? true : n.features.has(u.oNc.CREATOR_MONETIZABLE_RESTRICTED)) || t : (0, c.Q6)(r),
+      s = !!(null == n ? true : n.features.has(u.oNc.CREATOR_MONETIZABLE_PENDING_NEW_OWNER_ONBOARDING));
     return {
       shouldRestrictUpdatingCreatorMonetizationSettings: a || s,
       allowSelfRemoveMonetization: !a,

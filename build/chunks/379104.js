@@ -1,8 +1,9 @@
 /** Chunk was on web.js **/
-var r = n(829132);
+/** chunk id: 379104, original params: e,t,n (module,exports,re quire) **/
+var Chunk829132 = require("./829132.js");
 
 function i(e) {
-  this.data = e, this.left = null, this.right = null, this.red = !0
+  this.data = e, this.left = null, this.right = null, this.red = true
 }
 
 function o(e) {
@@ -15,7 +16,7 @@ function a(e) {
 
 function s(e, t) {
   var n = e.get_child(!t);
-  return e.set_child(!t, n.get_child(t)), n.set_child(t, e), e.red = !0, n.red = !1, n
+  return e.set_child(!t, n.get_child(t)), n.set_child(t, e), e.red = true, n.red = false, n
 }
 
 function l(e, t) {
@@ -25,11 +26,11 @@ i.prototype.get_child = function(e) {
   return e ? this.right : this.left
 }, i.prototype.set_child = function(e, t) {
   e ? this.right = t : this.left = t
-}, o.prototype = new r, o.prototype.insert = function(e) {
-  var t = !1;
-  if (null === this._root) this._root = new i(e), t = !0, this.size++;
+}, o.prototype = new Chunk829132, o.prototype.insert = function(e) {
+  var t = false;
+  if (null === this._root) this._root = new i(e), t = true, this.size++;
   else {
-    var n = new i(void 0),
+    var n = new i(true),
       r = 0,
       o = 0,
       c = null,
@@ -37,7 +38,7 @@ i.prototype.get_child = function(e) {
       d = null,
       f = this._root;
     for (u.right = this._root;;) {
-      if (null === f ? (f = new i(e), d.set_child(r, f), t = !0, this.size++) : a(f.left) && a(f.right) && (f.red = !0, f.left.red = !1, f.right.red = !1), a(f) && a(d)) {
+      if (null === f ? (f = new i(e), d.set_child(r, f), t = true, this.size++) : a(f.left) && a(f.right) && (f.red = true, f.left.red = false, f.right.red = false), a(f) && a(d)) {
         var _ = u.right === c;
         f === d.get_child(o) ? u.set_child(_, s(c, !o)) : u.set_child(_, l(c, !o))
       }
@@ -47,10 +48,10 @@ i.prototype.get_child = function(e) {
     }
     this._root = n.right
   }
-  return this._root.red = !1, t
+  return this._root.red = false, t
 }, o.prototype.remove = function(e) {
-  if (null === this._root) return !1;
-  var t = new i(void 0),
+  if (null === this._root) returnfalse;
+  var t = new i(true),
     n = t;
   n.right = this._root;
   for (var r = null, o = null, c = null, u = 1; null !== n.get_child(u);) {
@@ -68,10 +69,10 @@ i.prototype.get_child = function(e) {
             var h = o.right === r;
             a(p.get_child(d)) ? o.set_child(h, l(r, d)) : a(p.get_child(!d)) && o.set_child(h, s(r, d));
             var m = o.get_child(h);
-            m.red = !0, n.red = !0, m.left.red = !1, m.right.red = !1
-          } else r.red = !1, p.red = !0, n.red = !0
+            m.red = true, n.red = true, m.left.red = false, m.right.red = false
+          } else r.red = false, p.red = true, n.red = true
       }
     }
   }
-  return null !== c && (c.data = n.data, r.set_child(r.right === n, n.get_child(null === n.left)), this.size--), this._root = t.right, null !== this._root && (this._root.red = !1), null !== c
-}, e.exports = o
+  return null !== c && (c.data = n.data, r.set_child(r.right === n, n.get_child(null === n.left)), this.size--), this._root = t.right, null !== this._root && (this._root.red = false), null !== c
+}, module.exports = o

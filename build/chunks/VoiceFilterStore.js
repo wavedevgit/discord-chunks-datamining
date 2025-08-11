@@ -1,0 +1,296 @@
+/** Chunk was on web.js **/
+/** chunk id: 709706, original params: e,t,n (module,exports,re quire) **/
+"use strict";
+require.d(exports, {
+  Z: () => U,
+  r: () => m
+}), require("./642613.js"), require("./388685.js"), require("./825670.js"), require("./467055.js");
+var r, Chunk315008 = require("./315008.js"),
+  Chunk347715 = require("./347715.js"),
+  Chunk442837 = require("./442837.js"),
+  Chunk570140 = require("./570140.js"),
+  Chunk579806 = require("./579806.js"),
+  Chunk710845 = require("./710845.js"),
+  Chunk750180 = require("./750180.js"),
+  Chunk999224 = require("./999224.js");
+
+function f(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+
+function _(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      f(e, t, n[t])
+    })
+  }
+  return e
+}
+
+function p(e, t) {
+  var n = Object.keys(e);
+  if (Object.getOwnPropertySymbols) {
+    var r = Object.getOwnPropertySymbols(e);
+    t && (r = r.filter(function(t) {
+      return Object.getOwnPropertyDescriptor(e, t).enumerable
+    })), n.push.apply(n, r)
+  }
+  return n
+}
+
+function h(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : p(Object(t)).forEach(function(n) {
+    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+  }), e
+}
+var m = function(e) {
+  return e.ERROR_DOWNLOADING_DEPENDENCY = "ERROR_DOWNLOADING_DEPENDENCY", e.ERROR_ACTIVATING_VOICE_FILTER = "ERROR_ACTIVATING_VOICE_FILTER", e
+}({});
+let g = new Chunk710845.Z("VoiceFilterStore"),
+  E = {
+    nativeVoiceFilterModuleState: Chunk750180.O.UNINITIALIZED,
+    models: {},
+    voiceFilters: {},
+    modelState: {},
+    sortedVoiceFilters: [],
+    catalogFetchFailed: false,
+    catalogLastFetchTime: true,
+    catalogUpdateTime: true,
+    limitedTimeVoices: true,
+    error: null
+  },
+  b = null;
+
+function y() {
+  return (null === Chunk579806.Z || true === Chunk579806.Z ? true : Chunk579806.Z.remoteApp.getVersion()) === "0.0.0"
+}
+
+function O(e) {
+  return e.available ? 0 : e.temporarilyAvailable ? 1 : 2
+}
+
+function v(e) {
+  if (null != e) {
+    let t = new Date,
+      n = new Date(e.current_set_start),
+      r = new Date(e.current_set_end),
+      i = new Date(e.next_set_start),
+      o = new Date(e.next_set_end);
+    if (t >= n && t < r) return {
+      currentSet: e.current_set,
+      catalogUpdateTime: r
+    };
+    if (t >= i && t < o) return {
+      currentSet: e.next_set,
+      catalogUpdateTime: o
+    }
+  }
+  return {
+    currentSet: [],
+    catalogUpdateTime: true
+  }
+}
+
+function I(e) {
+  if (null == E.limitedTimeVoices) return void g.warn("No limited time voices available to update");
+  E.limitedTimeVoices.current_set_end = e.toISOString(), E.limitedTimeVoices.next_set_start = e.toISOString(), E.limitedTimeVoices.next_set_end = (0, i.default)(e, 2).toISOString(), C()
+}
+
+function T(e) {
+  return Object.entries(e).sort((e, t) => O(e[1]) - O(t[1])).map(e => {
+    let [t] = e;
+    return t
+  })
+}
+
+function S(e) {
+  let {
+    catalog: t,
+    initialModelState: n
+  } = e, r = y();
+  E.catalogFetchFailed = false, E.models = t.models, E.limitedTimeVoices = t.limited_time_voices;
+  let i = {},
+    o = v(E.limitedTimeVoices);
+  if (E.catalogUpdateTime = o.catalogUpdateTime, r)
+    for (let e of Object.keys(d.x)) i[e] = h(_({}, d.x[e]), {
+      id: e,
+      modelIds: true,
+      available: true
+    });
+  for (let {
+      id: e,
+      models: n,
+      available: a
+    }
+    of t.voices) Object.hasOwn(d.x, e) && (i[e] = h(_({}, d.x[e]), {
+    id: e,
+    modelIds: n,
+    available: !!r || a,
+    temporarilyAvailable: o.currentSet.includes(e)
+  }));
+  E.voiceFilters = i, E.sortedVoiceFilters = T(E.voiceFilters), E.catalogLastFetchTime = new Date, null != n && (Object.keys(E.modelState).length > 0 ? E.modelState = n : g.warn("Attempted to replace existing model state with initial model state"))
+}
+
+function A() {
+  E.catalogFetchFailed = true
+}
+class N extends(r = Chunk442837.ZP.Store) {
+  getVoiceFilterModels() {
+    return E.models
+  }
+  getVoiceFilters() {
+    return E.voiceFilters
+  }
+  getVoiceFilter(e) {
+    return E.voiceFilters[e]
+  }
+  getModelState(e) {
+    return E.modelState[e]
+  }
+  getOngoingDownloads() {
+    return Object.fromEntries(Object.entries(E.modelState).filter(e => {
+      let [t, {
+        status: n
+      }] = e;
+      return n === u.L.DOWNLOADING
+    }))
+  }
+  isVoiceFilterDownloaded(e) {
+    var t, n;
+    return Object.values(null != (n = null == (t = E.voiceFilters[e]) ? true : t.modelIds) ? n : {}).every(e => {
+      var t;
+      return (null == (t = E.modelState[e]) ? true : t.status) === u.L.DOWNLOADED
+    })
+  }
+  isModelDownloaded(e) {
+    var t;
+    return (null == (t = E.modelState[e]) ? true : t.status) === u.L.DOWNLOADED
+  }
+  getSortedVoiceFilters() {
+    return E.sortedVoiceFilters.map(e => E.voiceFilters[e])
+  }
+  getCatalogLastFetchTime() {
+    return E.catalogLastFetchTime
+  }
+  getCatalogUpdateTime() {
+    return E.catalogUpdateTime
+  }
+  getLimitedTimeVoices() {
+    return E.limitedTimeVoices
+  }
+  isNativeModuleLoaded() {
+    return E.nativeVoiceFilterModuleState === Chunk750180.O.LOADED
+  }
+  isNativeModuleLoading() {
+    return E.nativeVoiceFilterModuleState === Chunk750180.O.LOADING
+  }
+  hasNativeModuleFailed() {
+    return E.nativeVoiceFilterModuleState === Chunk750180.O.FAILED
+  }
+  getCatalogFetchFailed() {
+    return E.catalogFetchFailed
+  }
+  getError() {
+    return E.error
+  }
+  getLastReportedLagTimestamp() {
+    return b
+  }
+}
+
+function C() {
+  let e = v(E.limitedTimeVoices);
+  E.catalogUpdateTime = module.catalogUpdateTime, Object.keys(E.voiceFilters).forEach(t => {
+    E.voiceFilters[t].temporarilyAvailable = e.currentSet.includes(t)
+  }), E.sortedVoiceFilters = T(E.voiceFilters)
+}
+
+function R(e) {
+  let {
+    modelId: t
+  } = e;
+  E.modelState[t] = h(_({}, E.modelState[t]), {
+    status: u.L.DOWNLOADING,
+    downloadedBytes: 0
+  })
+}
+
+function P(e) {
+  let {
+    modelId: t,
+    downloadedBytes: n,
+    totalBytes: r
+  } = e;
+  E.modelState[t] = h(_({}, E.modelState[t]), {
+    downloadedBytes: n,
+    totalBytes: r
+  })
+}
+
+function w(e) {
+  var t;
+  let {
+    modelId: n,
+    error: r
+  } = e;
+  (null == (t = E.modelState[n]) ? true : t.status) !== u.L.DOWNLOADED && (E.modelState[n] = h(_({}, E.modelState[n]), {
+    status: u.L.MISSING
+  }), "USER_CANCELED_DOWNLOAD" in (null != r ? r : {}) || (E.error = "ERROR_DOWNLOADING_DEPENDENCY"))
+}
+
+function D(e) {
+  let {
+    modelId: t
+  } = e;
+  E.modelState[t] = h(_({}, E.modelState[t]), {
+    status: u.L.DOWNLOADED,
+    downloadedBytes: true
+  })
+}
+
+function L(e) {
+  let {
+    timeInSeconds: t
+  } = e;
+  I((0, o.Z)(new Date, t))
+}
+
+function x(e) {
+  E.nativeVoiceFilterModuleState = e.state
+}
+
+function M() {
+  E.error = "ERROR_ACTIVATING_VOICE_FILTER"
+}
+
+function k() {
+  E.error = null
+}
+
+function j() {
+  b = Date.now()
+}
+f(N, "displayName", "VoiceFilterStore");
+let U = new N(Chunk570140.Z, {
+  VOICE_FILTER_DOWNLOAD_STARTED: R,
+  VOICE_FILTER_DOWNLOAD_PROGRESS: P,
+  VOICE_FILTER_DOWNLOAD_FAILED: w,
+  VOICE_FILTER_FILE_READY: D,
+  VOICE_FILTER_CATALOG_FETCH_SUCCESS: S,
+  VOICE_FILTER_CATALOG_FETCH_FAILED: A,
+  VOICE_FILTER_UPDATE_LIMITED_TIME_VOICES: C,
+  VOICE_FILTER_DEV_TOOLS_SET_UPDATE_TIME: L,
+  VOICE_FILTER_NATIVE_MODULE_STATE_CHANGE: x,
+  VOICE_FILTER_APPLY_FAILED: M,
+  VOICE_FILTER_REQUEST_SWITCH: k,
+  VOICE_FILTER_LAGGING: j
+})

@@ -1,5 +1,6 @@
 /** Chunk was on 22988 **/
-e.exports = {
+/** chunk id: 311400, original params: e,t,n (module,exports,require) **/
+module.exports = {
   optionCard: "optionCard_b96967",
   singleColumn: "singleColumn_b96967",
   optionCardRow: "optionCardRow_b96967",

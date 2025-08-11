@@ -1,86 +1,87 @@
 /** Chunk was on 11776 **/
-n.d(t, {
+/** chunk id: 286957, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   z: () => a
 });
-var r = n(379405),
-  l = n(481060),
-  i = n(388032);
+var Chunk379405 = require("./379405.js"),
+  Chunk481060 = require("./481060.js"),
+  Chunk388032 = require("./388032.js");
 let o = {
-    [r._.BETTER_THAN_YOU]: {
-      getText: () => i.intl.string(i.t.jbIRBA),
-      icon: l.jrt
+    [Chunk379405._.BETTER_THAN_YOU]: {
+      getText: () => Chunk388032.intl.string(Chunk388032.t.jbIRBA),
+      icon: Chunk481060.jrt
     },
-    [r._.NOOB]: {
-      getText: () => i.intl.string(i.t.JCbfAw),
-      icon: l.jrt
+    [Chunk379405._.NOOB]: {
+      getText: () => Chunk388032.intl.string(Chunk388032.t.JCbfAw),
+      icon: Chunk481060.jrt
     },
-    [r._.LEARNING_THE_ROPES]: {
-      getText: () => i.intl.string(i.t.S1X0kp),
-      icon: l.jrt
+    [Chunk379405._.LEARNING_THE_ROPES]: {
+      getText: () => Chunk388032.intl.string(Chunk388032.t.S1X0kp),
+      icon: Chunk481060.jrt
     },
-    [r._.GETTING_GOOD]: {
-      getText: () => i.intl.string(i.t.i4LREx),
-      icon: l.jrt
+    [Chunk379405._.GETTING_GOOD]: {
+      getText: () => Chunk388032.intl.string(Chunk388032.t.i4LREx),
+      icon: Chunk481060.jrt
     },
-    [r._.SKILLED]: {
-      getText: () => i.intl.string(i.t["BQmP7+"]),
-      icon: l.jrt
+    [Chunk379405._.SKILLED]: {
+      getText: () => Chunk388032.intl.string(Chunk388032.t["BQmP7+"]),
+      icon: Chunk481060.jrt
     },
-    [r._.EXPERT]: {
-      getText: () => i.intl.string(i.t.RIOFc3),
-      icon: l.jrt
+    [Chunk379405._.EXPERT]: {
+      getText: () => Chunk388032.intl.string(Chunk388032.t.RIOFc3),
+      icon: Chunk481060.jrt
     },
-    [r._.MASTER]: {
-      getText: () => i.intl.string(i.t.E755U1),
-      icon: l.jrt
+    [Chunk379405._.MASTER]: {
+      getText: () => Chunk388032.intl.string(Chunk388032.t.E755U1),
+      icon: Chunk481060.jrt
     },
-    [r._.LIKE_IT]: {
-      getText: () => i.intl.string(i.t["AXQ+hY"]),
-      icon: l.lbB
+    [Chunk379405._.LIKE_IT]: {
+      getText: () => Chunk388032.intl.string(Chunk388032.t["AXQ+hY"]),
+      icon: Chunk481060.lbB
     },
-    [r._.LOVE_IT]: {
-      getText: () => i.intl.string(i.t["1rN7BA"]),
-      icon: l.lbB
+    [Chunk379405._.LOVE_IT]: {
+      getText: () => Chunk388032.intl.string(Chunk388032.t["1rN7BA"]),
+      icon: Chunk481060.lbB
     },
-    [r._.KIND_OF_LOVE_IT]: {
-      getText: () => i.intl.string(i.t.bCBpVl),
-      icon: l.lbB
+    [Chunk379405._.KIND_OF_LOVE_IT]: {
+      getText: () => Chunk388032.intl.string(Chunk388032.t.bCBpVl),
+      icon: Chunk481060.lbB
     },
-    [r._.KIND_OF_HATE_IT]: {
-      getText: () => i.intl.string(i.t["/WcmcH"]),
-      icon: l.kZ9
+    [Chunk379405._.KIND_OF_HATE_IT]: {
+      getText: () => Chunk388032.intl.string(Chunk388032.t["/WcmcH"]),
+      icon: Chunk481060.kZ9
     },
-    [r._.FRUSTRATED]: {
-      getText: () => i.intl.string(i.t.R98Ol5),
-      icon: l.kZ9
+    [Chunk379405._.FRUSTRATED]: {
+      getText: () => Chunk388032.intl.string(Chunk388032.t.R98Ol5),
+      icon: Chunk481060.kZ9
     },
-    [r._.RAGE_QUITTING]: {
-      getText: () => i.intl.string(i.t["NXZ/MT"]),
-      icon: l.kZ9
+    [Chunk379405._.RAGE_QUITTING]: {
+      getText: () => Chunk388032.intl.string(Chunk388032.t["NXZ/MT"]),
+      icon: Chunk481060.kZ9
     },
-    [r._.TOO_EASY]: {
-      getText: () => i.intl.string(i.t["8105aG"]),
-      icon: l.kZ9
+    [Chunk379405._.TOO_EASY]: {
+      getText: () => Chunk388032.intl.string(Chunk388032.t["8105aG"]),
+      icon: Chunk481060.kZ9
     },
-    [r._.LFG]: {
-      getText: () => i.intl.string(i.t.DWWAAQ),
-      icon: l.iFz
+    [Chunk379405._.LFG]: {
+      getText: () => Chunk388032.intl.string(Chunk388032.t.DWWAAQ),
+      icon: Chunk481060.iFz
     },
-    [r._.OPEN_TO_PLAY]: {
-      getText: () => i.intl.string(i.t.q30PoK),
-      icon: l.iFz
+    [Chunk379405._.OPEN_TO_PLAY]: {
+      getText: () => Chunk388032.intl.string(Chunk388032.t.q30PoK),
+      icon: Chunk481060.iFz
     },
-    [r._.LOOKING_FOR_TIPS]: {
-      getText: () => i.intl.string(i.t.KQDVvL),
-      icon: l.iFz
+    [Chunk379405._.LOOKING_FOR_TIPS]: {
+      getText: () => Chunk388032.intl.string(Chunk388032.t.KQDVvL),
+      icon: Chunk481060.iFz
     },
-    [r._.LOOKING_TO_LEARN]: {
-      getText: () => i.intl.string(i.t.zG3Hzc),
-      icon: l.iFz
+    [Chunk379405._.LOOKING_TO_LEARN]: {
+      getText: () => Chunk388032.intl.string(Chunk388032.t.zG3Hzc),
+      icon: Chunk481060.iFz
     },
-    [r._.OPEN_TO_TEACH]: {
-      getText: () => i.intl.string(i.t["5HhQo6"]),
-      icon: l.iFz
+    [Chunk379405._.OPEN_TO_TEACH]: {
+      getText: () => Chunk388032.intl.string(Chunk388032.t["5HhQo6"]),
+      icon: Chunk481060.iFz
     }
   },
   a = e => {

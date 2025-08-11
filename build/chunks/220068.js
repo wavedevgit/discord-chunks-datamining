@@ -1,9 +1,10 @@
 /** Chunk was on 1272 **/
-n.d(t, {
+/** chunk id: 220068, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => l
 });
-var r = n(972959);
+var Chunk972959 = require("./972959.js");
 let i = Object.freeze({
-    tab: n(113434).e5.ALL
+    tab: require("./113434.js").e5.ALL
   }),
-  l = (0, r.H)(() => i)
+  l = (0, Chunk972959.H)(() => i)

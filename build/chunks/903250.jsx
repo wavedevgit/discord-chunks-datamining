@@ -1,0 +1,52 @@
+/** Chunk was on 75708 **/
+/** chunk id: 903250, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
+  Z: () => P
+});
+var Chunk255367 = require("./255367.js"),
+  Chunk73800 = require("./73800.js"),
+  Chunk120356 = require("./120356.js"),
+  a = require.n(Chunk120356),
+  Chunk442837 = require("./442837.js"),
+  Chunk755721 = require("./755721.js"),
+  Chunk481060 = require("./481060.js"),
+  Chunk607070 = require("./607070.js"),
+  Chunk100527 = require("./100527.js"),
+  Chunk906732 = require("./906732.js"),
+  Chunk70097 = require("./70097.jsx"),
+  Chunk526167 = require("./526167.js"),
+  Chunk357355 = require("./357355.js"),
+  Chunk140465 = require("./140465.js"),
+  Chunk775412 = require("./775412.js"),
+  Chunk47280 = require("./47280.js"),
+  Chunk105759 = require("./105759.js"),
+  Chunk736519 = require("./736519.jsx"),
+  Chunk422034 = require("./422034.jsx"),
+  Chunk710220 = require("./710220.jsx"),
+  Chunk635921 = require("./635921.jsx"),
+  Chunk638631 = require("./638631.jsx"),
+  Chunk869783 = require("./869783.js"),
+  Chunk388032 = require("./388032.jsx"),
+  Chunk909176 = require("./909176.js"),
+  Chunk181960 = require("./181960.js"),
+  Chunk313199 = require("./313199.js"),
+  Chunk821969 = require("./821969.js");
+let P = Chunk73800.forwardRef((e, t) => {
+  let {
+    className: n,
+    buttonClassName: r,
+    subscriptionTier: s,
+    isDarkMode: P,
+    isEligibleForBogoPromotion: R,
+    videoRef: D
+  } = e, {
+    analyticsLocations: Z
+  } = (0, m.ZP)(u.Z.PREMIUM_MARKETING_HERO_CTA), w = (0, b._O)(), k = (0, f.Nx)(), L = (0, l.e7)([h.Z], () => h.Z.affinities), M = (0, _.Z)(), B = null != M, U = P ? o.Tt.WHITE : o.Tt.BRAND, V = L.length > 0, G = (0, x.Z)({
+    location: "HeroHeading"
+  }) ? T.intl.string(T.t["EW+VIS"]) : T.intl.string(T.t.YCZldH), F = (0, g.rO)(), H = (0, l.e7)([d.Z], () => d.Z.useReducedMotion);
+  return <m.Gt value={Z}><div className={a()(I.container, I.heroHeadingContainer, n)} ref={t} data-testid={"marketing-page-hero-header"}>{<div className={I.container}><div className={I.marketingPageTextContainer}>{k && <v.Z />}{<c.X6q className={I.marketingPageHeading} variant={"display-sm"} color={"header-primary"}>{G}</c.X6q>}{B ? <C.Z referrer={M} /> : V && <div className={I.affinityDescriptionContainer}><E.Z textColor={"text-default"} smallerText={false} isApplicationHome={true} /></div>}{w ? <div className={a()(I.buttonContainer, I.marketingPageCTAContainer, {
+              [I.marketingPageCTAMargin]: !(V || B)
+            })}><j.Z className={a()(I.button, r)} color={U} /></div> : <O.PK subscriptionTier={s} inOfferExperience={k} containerClassName={a()(I.marketingPageCTAContainer, {
+              [I.marketingPageCTAMargin]: !(V || B)
+            })} buttonClassName={r} isApplicationHome={true} isDarkMode={P} isEligibleForBogoPromotion={R} />}{<O._O variant={"text-sm/normal"} withBottomMargin={false} isApplicationHome={true} />}</div></div>}{<div className={I.heroHeadingV2ArtContainer}><p.Z autoPlay={!H} playsInline={true} preload={H ? "none" : "auto"} poster={y.Z} loop={true} className={I.heroHeadingV2Art} ref={D}><source src={F ? N.Z : A.Z} type={F ? S.m.MP4 : S.m.WEBM} /></p.Z></div>}</div></m.Gt>
+})

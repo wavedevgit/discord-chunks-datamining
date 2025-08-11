@@ -1,28 +1,29 @@
 /** Chunk was on web.js **/
+/** chunk id: 481369, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => f
 });
-var r = n(399606),
-  i = n(317381),
-  o = n(16609),
-  a = n(917107),
-  s = n(592125),
-  l = n(226027),
-  c = n(918559);
+var Chunk399606 = require("./399606.js"),
+  Chunk317381 = require("./317381.js"),
+  Chunk16609 = require("./16609.js"),
+  Chunk917107 = require("./917107.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk226027 = require("./226027.js"),
+  Chunk918559 = require("./918559.js");
 let u = "no_text_activity",
   d = {
-    [u]: [l.E.NEW_MESSAGES, l.E.OPT_IN_CHANNEL, l.E.SUMMARIES],
-    [c.Ez.DISCONNECTED]: [l.E.NEW_MESSAGES, l.E.OPT_IN_CHANNEL, l.E.SUMMARIES],
-    [c.Ez.LAUNCHING_WITH_ORIENTATION_CHANGE]: [l.E.NEW_MESSAGES, l.E.OPT_IN_CHANNEL, l.E.SUMMARIES],
-    [c.Ez.PANEL]: [],
-    [c.Ez.PIP]: [l.E.NEW_MESSAGES, l.E.OPT_IN_CHANNEL, l.E.SUMMARIES],
-    [c.Ez.ACTIVITY_POPOUT_WINDOW]: [l.E.NEW_MESSAGES, l.E.OPT_IN_CHANNEL, l.E.SUMMARIES]
+    [u]: [Chunk226027.E.NEW_MESSAGES, Chunk226027.E.OPT_IN_CHANNEL, Chunk226027.E.SUMMARIES],
+    [Chunk918559.Ez.DISCONNECTED]: [Chunk226027.E.NEW_MESSAGES, Chunk226027.E.OPT_IN_CHANNEL, Chunk226027.E.SUMMARIES],
+    [Chunk918559.Ez.LAUNCHING_WITH_ORIENTATION_CHANGE]: [Chunk226027.E.NEW_MESSAGES, Chunk226027.E.OPT_IN_CHANNEL, Chunk226027.E.SUMMARIES],
+    [Chunk918559.Ez.PANEL]: [],
+    [Chunk918559.Ez.PIP]: [Chunk226027.E.NEW_MESSAGES, Chunk226027.E.OPT_IN_CHANNEL, Chunk226027.E.SUMMARIES],
+    [Chunk918559.Ez.ACTIVITY_POPOUT_WINDOW]: [Chunk226027.E.NEW_MESSAGES, Chunk226027.E.OPT_IN_CHANNEL, Chunk226027.E.SUMMARIES]
   };
 
 function f() {
-  let e = (0, r.e7)([i.ZP], () => i.ZP.getCurrentEmbeddedActivity()),
-    t = (0, r.e7)([i.ZP], () => i.ZP.getActivityPanelMode()),
-    n = (0, o.p)(null == e ? void 0 : e.location);
-  return void 0 === e || (0, a.Z)(n, s.Z) ? d[u] : d[t]
+  let e = (0, Chunk399606.e7)([Chunk317381.ZP], () => Chunk317381.ZP.getCurrentEmbeddedActivity()),
+    t = (0, Chunk399606.e7)([Chunk317381.ZP], () => Chunk317381.ZP.getActivityPanelMode()),
+    n = (0, Chunk16609.p)(null == module ? true : module.location);
+  return true === module || (0, Chunk917107.Z)(require, Chunk592125.Z) ? d[u] : d[exports]
 }

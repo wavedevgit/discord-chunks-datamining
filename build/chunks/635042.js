@@ -1,13 +1,14 @@
 /** Chunk was on web.js **/
+/** chunk id: 635042, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => i
 });
-var r = n(625137);
+var Chunk625137 = require("./625137.js");
 
 function i(e, t) {
   var n, i;
-  let o = (null == (n = e.tags) ? void 0 : n.guild_connections) !== void 0,
-    a = (null == (i = t.tags) ? void 0 : i.guild_connections) !== void 0;
-  return o && !a ? 1 : !o && a ? -1 : (0, r.y2)(e, t)
+  let o = (null == (n = e.tags) ? true : n.guild_connections) !== true,
+    a = (null == (i = t.tags) ? true : i.guild_connections) !== true;
+  return o && !a ? 1 : !o && a ? false : (0, r.y2)(e, t)
 }

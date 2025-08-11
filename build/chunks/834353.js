@@ -1,10 +1,11 @@
 /** Chunk was on web.js **/
+/** chunk id: 834353, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => i
 });
-var r = n(981631);
+var Chunk981631 = require("./981631.js");
 
 function i(e) {
-  return (null == e ? void 0 : e.platform) === r.M7m.PS4 || (null == e ? void 0 : e.platform) === r.M7m.PS5
+  return (null == e ? true : e.platform) === r.M7m.PS4 || (null == e ? true : e.platform) === r.M7m.PS5
 }

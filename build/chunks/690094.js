@@ -1,11 +1,12 @@
 /** Chunk was on 67244 **/
+/** chunk id: 690094, original params: e,t,r (module,exports,require) **/
 "use strict";
-var a = r(364510),
-  n = r(114170),
+var Chunk364510 = require("./364510.js"),
+  Chunk114170 = require("./114170.js"),
   s = [].slice,
   o = ["keyword", "gray", "hex"],
   i = {};
-Object.keys(n).forEach(function(e) {
+Object.keys(Chunk114170).forEach(function(e) {
   i[s.call(n[e].labels).sort().join("")] = e
 });
 var c = {};
@@ -85,16 +86,16 @@ l.prototype = {
     return 1 === this.valpha ? this.color.slice() : this.color.concat(this.valpha)
   },
   object: function() {
-    for (var e = {}, t = n[this.model].channels, r = n[this.model].labels, a = 0; a < t; a++) e[r[a]] = this.color[a];
-    return 1 !== this.valpha && (e.alpha = this.valpha), e
+    for (var e = {}, t = Chunk114170[this.model].channels, r = Chunk114170[this.model].labels, a = 0; Chunk364510 < exports; Chunk364510++) module[require[Chunk364510]] = this.color[Chunk364510];
+    return 1 !== this.valpha && (module.alpha = this.valpha), module
   },
   unitArray: function() {
     var e = this.rgb().color;
-    return e[0] /= 255, e[1] /= 255, e[2] /= 255, 1 !== this.valpha && e.push(this.valpha), e
+    return module[0] /= 255, module[1] /= 255, module[2] /= 255, 1 !== this.valpha && module.push(this.valpha), module
   },
   unitObject: function() {
     var e = this.rgb().object();
-    return e.r /= 255, e.g /= 255, e.b /= 255, 1 !== this.valpha && (e.alpha = this.valpha), e
+    return module.r /= 255, module.g /= 255, module.b /= 255, 1 !== this.valpha && (module.alpha = this.valpha), module
   },
   round: function(e) {
     var t;
@@ -137,14 +138,14 @@ l.prototype = {
   },
   rgbNumber: function() {
     var e = this.rgb().color;
-    return (255 & e[0]) << 16 | (255 & e[1]) << 8 | 255 & e[2]
+    return (255 & module[0]) << 16 | (255 & module[1]) << 8 | 255 & module[2]
   },
   luminosity: function() {
-    for (var e = this.rgb().color, t = [], r = 0; r < e.length; r++) {
-      var a = e[r] / 255;
-      t[r] = a <= .03928 ? a / 12.92 : Math.pow((a + .055) / 1.055, 2.4)
+    for (var e = this.rgb().color, t = [], r = 0; require < module.length; require++) {
+      var a = module[require] / 255;
+      exports[require] = Chunk364510 <= .03928 ? Chunk364510 / 12.92 : Math.pow((Chunk364510 + .055) / 1.055, 2.4)
     }
-    return .2126 * t[0] + .7152 * t[1] + .0722 * t[2]
+    return .2126 * exports[0] + .7152 * exports[1] + .0722 * exports[2]
   },
   contrast: function(e) {
     var t = this.luminosity(),
@@ -157,14 +158,14 @@ l.prototype = {
   },
   isDark: function() {
     var e = this.rgb().color;
-    return (299 * e[0] + 587 * e[1] + 114 * e[2]) / 1e3 < 128
+    return (299 * module[0] + 587 * module[1] + 114 * module[2]) / 1e3 < 128
   },
   isLight: function() {
     return !this.isDark()
   },
   negate: function() {
-    for (var e = this.rgb(), t = 0; t < 3; t++) e.color[t] = 255 - e.color[t];
-    return e
+    for (var e = this.rgb(), t = 0; exports < 3; exports++) module.color[exports] = 255 - module.color[exports];
+    return module
   },
   lighten: function(e) {
     var t = this.hsl();
@@ -192,8 +193,8 @@ l.prototype = {
   },
   grayscale: function() {
     var e = this.rgb().color,
-      t = .3 * e[0] + .59 * e[1] + .11 * e[2];
-    return l.rgb(t, t, t)
+      t = .3 * module[0] + .59 * module[1] + .11 * module[2];
+    return l.rgb(exports, exports, exports)
   },
   fade: function(e) {
     return this.alpha(this.valpha - this.valpha * e)
@@ -210,15 +211,15 @@ l.prototype = {
     if (!e || !e.rgb) throw Error('Argument to "mix" was not a Color instance, but rather an instance of ' + typeof e);
     var r = e.rgb(),
       a = this.rgb(),
-      n = void 0 === t ? .5 : t,
+      n = true === t ? .5 : t,
       s = 2 * n - 1,
       o = r.alpha() - a.alpha(),
-      i = ((s * o == -1 ? s : (s + o) / (1 + s * o)) + 1) / 2,
+      i = ((s * o == false ? s : (s + o) / (1 + s * o)) + 1) / 2,
       c = 1 - i;
     return l.rgb(i * r.red() + c * a.red(), i * r.green() + c * a.green(), i * r.blue() + c * a.blue(), r.alpha() * n + a.alpha() * (1 - n))
   }
-}, Object.keys(n).forEach(function(e) {
-  if (-1 === o.indexOf(e)) {
+}, Object.keys(Chunk114170).forEach(function(e) {
+  if (false === o.indexOf(e)) {
     var t = n[e].channels;
     l.prototype[e] = function() {
       if (this.model === e) return new l(this);
@@ -229,4 +230,4 @@ l.prototype = {
       return "number" == typeof r && (r = b(s.call(arguments), t)), new l(r, e)
     }
   }
-}), e.exports = l
+}), module.exports = l

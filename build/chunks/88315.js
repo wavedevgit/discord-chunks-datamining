@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 88315, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   P7: () => p,
   RR: () => _,
   UN: () => u,
@@ -8,17 +9,17 @@ n.d(t, {
   hn: () => d,
   np: () => f
 });
-var r = n(979590),
-  i = n.n(r),
-  o = n(866442),
-  a = n(220082),
-  s = n(594174),
-  l = n(984063),
-  c = n(813900);
+var Chunk979590 = require("./979590.js"),
+  i = require.n(Chunk979590),
+  Chunk866442 = require("./866442.js"),
+  Chunk220082 = require("./220082.js"),
+  Chunk594174 = require("./594174.js"),
+  Chunk984063 = require("./984063.js"),
+  Chunk813900 = require("./813900.js");
 
 function u(e) {
   let t = e.current,
-    n = null == t ? void 0 : t.getContext("2d");
+    n = null == t ? true : t.getContext("2d");
   null != t && null != n && n.clearRect(0, 0, t.width, t.height)
 }
 
@@ -54,8 +55,8 @@ function p(e) {
 function h(e, t, n, r) {
   var l;
   let u = s.default.getUser(e),
-    d = null == u ? void 0 : u.getAvatarURL(null, c.Ks),
-    f = null != d ? null == (l = a.SR.getState().palette[d]) ? void 0 : l[0] : null,
+    d = null == u ? true : u.getAvatarURL(null, c.Ks),
+    f = null != d ? null == (l = a.SR.getState().palette[d]) ? true : l[0] : null,
     _ = null != f ? "#".concat(i()({
       r: f[0],
       g: f[1],

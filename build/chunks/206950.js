@@ -1,15 +1,16 @@
 /** Chunk was on 22988 **/
-n.d(t, {
+/** chunk id: 206950, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   F: () => u
 });
-var r = n(73800),
-  i = n(232567),
-  l = n(786761),
-  a = n(3148),
-  s = n(598077),
-  o = n(981631),
-  c = n(388032),
-  d = n(540167);
+var Chunk73800 = require("./73800.js"),
+  Chunk232567 = require("./232567.js"),
+  Chunk786761 = require("./786761.js"),
+  Chunk3148 = require("./3148.js"),
+  Chunk598077 = require("./598077.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk388032 = require("./388032.js"),
+  Chunk540167 = require("./540167.js");
 
 function u(e) {
   return r.useMemo(() => {
@@ -24,9 +25,9 @@ function u(e) {
             var r;
             r = n[t], t in e ? Object.defineProperty(e, t, {
               value: r,
-              enumerable: !0,
-              configurable: !0,
-              writable: !0
+              enumerable: true,
+              configurable: true,
+              writable: true
             }) : e[t] = r
           })
         }
@@ -51,7 +52,7 @@ function u(e) {
         id: "313337",
         username: c.intl.string(c.t.cqpybG),
         discriminator: "0000",
-        bot: !1
+        bot: false
       });
     r.author = u;
     let m = i.$k(u);

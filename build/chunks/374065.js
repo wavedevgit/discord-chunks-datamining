@@ -1,21 +1,22 @@
 /** Chunk was on web.js **/
+/** chunk id: 374065, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Hn: () => p,
   KF: () => h,
   e4: () => _,
   g5: () => m,
   jy: () => f
 });
-var r = n(442837),
-  i = n(592125),
-  o = n(430824),
-  a = n(496675),
-  s = n(979651),
-  l = n(790920),
-  c = n(701488),
-  u = n(981631),
-  d = n(388032),
+var Chunk442837 = require("./442837.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk430824 = require("./430824.js"),
+  Chunk496675 = require("./496675.js"),
+  Chunk979651 = require("./979651.js"),
+  Chunk790920 = require("./790920.js"),
+  Chunk701488 = require("./701488.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk388032 = require("./388032.js"),
   f = function(e) {
     return e[e.CAN_LAUNCH = 0] = "CAN_LAUNCH", e[e.NO_USE_EMBEDDED_ACTIVITIES_PERMISSION = 1] = "NO_USE_EMBEDDED_ACTIVITIES_PERMISSION", e[e.NO_CHANNEL_CONNECT_PERMISSION = 2] = "NO_CHANNEL_CONNECT_PERMISSION", e[e.NO_CHANNEL = 3] = "NO_CHANNEL", e[e.NO_GUILD = 4] = "NO_GUILD", e[e.IS_AFK_CHANNEL = 5] = "IS_AFK_CHANNEL", e[e.ACTIVITIES_FEATURE_NOT_ENABLED_FOR_OS = 6] = "ACTIVITIES_FEATURE_NOT_ENABLED_FOR_OS", e[e.ACTIVITIES_FEATURE_NOT_ENABLED_FOR_CHANNEL = 7] = "ACTIVITIES_FEATURE_NOT_ENABLED_FOR_CHANNEL", e
   }({});
@@ -35,7 +36,7 @@ function _(e) {
     let e = a.getGuildId();
     if (null == e) return 4;
     let n = r.getGuild(e);
-    if ((null == n ? void 0 : n.afkChannelId) === a.id) return 5;
+    if ((null == n ? true : n.afkChannelId) === a.id) return 5;
     let s = i.can(u.Plq.CONNECT, a);
     if (!i.can(u.Plq.USE_EMBEDDED_ACTIVITIES, a)) return 1;
     let l = o.getCurrentClientVoiceChannelId(a.getGuildId()) === t;

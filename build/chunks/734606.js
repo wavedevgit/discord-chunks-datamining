@@ -1,12 +1,13 @@
 /** Chunk was on web.js **/
+/** chunk id: 734606, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-Object.defineProperty(t, "__esModule", {
-  value: !0
-}), t.makeDataFormatters = o;
-let r = n(180660),
-  i = n(912913);
+Object.defineProperty(exports, "__esModule", {
+  value: true
+}), exports.makeDataFormatters = o;
+let Chunk180660 = require("./180660.js"),
+  Chunk912913 = require("./912913.js");
 
-function o(e, t, n = !1) {
+function o(e, t, n = false) {
   function a(e) {
     return n ? Object.assign(Object.assign({}, e), {
       localeMatcher: "lookup"

@@ -1,68 +1,69 @@
 /** Chunk was on web.js **/
+/** chunk id: 780771, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   N3: () => i,
   _j: () => a,
   jD: () => s,
   uj: () => o,
   vs: () => l
 });
-var r = n(359135);
+var Chunk359135 = require("./359135.js");
 let i = {
-    [r.P.Crimson]: {
+    [Chunk359135.P.Crimson]: {
       darkBackground: "#900007",
       lightBackground: "#E7040F",
-      name: r.P.Crimson
+      name: Chunk359135.P.Crimson
     },
-    [r.P.Berry]: {
+    [Chunk359135.P.Berry]: {
       darkBackground: "#893A99",
       lightBackground: "#B11FCF",
-      name: r.P.Berry
+      name: Chunk359135.P.Berry
     },
-    [r.P.Sky]: {
+    [Chunk359135.P.Sky]: {
       darkBackground: "#0080B7",
       lightBackground: "#56CCFF",
-      name: r.P.Sky
+      name: Chunk359135.P.Sky
     },
-    [r.P.Teal]: {
+    [Chunk359135.P.Teal]: {
       darkBackground: "#086460",
       lightBackground: "#7DEED7",
-      name: r.P.Teal
+      name: Chunk359135.P.Teal
     },
-    [r.P.Forest]: {
+    [Chunk359135.P.Forest]: {
       darkBackground: "#2D5401",
       lightBackground: "#6AA624",
-      name: r.P.Forest
+      name: Chunk359135.P.Forest
     },
-    [r.P.BubbleGum]: {
+    [Chunk359135.P.BubbleGum]: {
       darkBackground: "#DC3E97",
       lightBackground: "#F957B3",
-      name: r.P.BubbleGum
+      name: Chunk359135.P.BubbleGum
     },
-    [r.P.Violet]: {
+    [Chunk359135.P.Violet]: {
       darkBackground: "#730BC8",
       lightBackground: "#972FED",
-      name: r.P.Violet
+      name: Chunk359135.P.Violet
     },
-    [r.P.Cobalt]: {
+    [Chunk359135.P.Cobalt]: {
       darkBackground: "#0131C2",
       lightBackground: "#4278FF",
-      name: r.P.Cobalt
+      name: Chunk359135.P.Cobalt
     },
-    [r.P.Clover]: {
+    [Chunk359135.P.Clover]: {
       darkBackground: "#047B20",
       lightBackground: "#63CD5A",
-      name: r.P.Clover
+      name: Chunk359135.P.Clover
     },
-    [r.P.Lemon]: {
+    [Chunk359135.P.Lemon]: {
       darkBackground: "#F6CD12",
       lightBackground: "#FED400",
-      name: r.P.Lemon
+      name: Chunk359135.P.Lemon
     },
-    [r.P.White]: {
+    [Chunk359135.P.White]: {
       darkBackground: "#FFFFFF",
       lightBackground: "#FFFFFF",
-      name: r.P.White
+      name: Chunk359135.P.White
     }
   },
   o = "invalid_palette",

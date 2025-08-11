@@ -1,16 +1,17 @@
 /** Chunk was on 75708 **/
-n.d(t, {
+/** chunk id: 908552, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   X3: () => s,
   nq: () => r
 });
-var i = n(452913);
+var Chunk452913 = require("./452913.js");
 let r = {
     binds: ["mod+alt+down", "mod+shift+]", "ctrl+tab"],
-    comboKeysBindGlobal: !0,
-    action: e => (e.preventDefault(), e.stopPropagation(), (0, i.Z)(), !1)
+    comboKeysBindGlobal: true,
+    action: e => (e.preventDefault(), e.stopPropagation(), (0, i.Z)(), false)
   },
   s = {
     binds: ["mod+alt+up", "mod+shift+[", "ctrl+shift+tab"],
-    comboKeysBindGlobal: !0,
-    action: e => (e.preventDefault(), e.stopPropagation(), (0, i.Z)(-1), !1)
+    comboKeysBindGlobal: true,
+    action: e => (e.preventDefault(), e.stopPropagation(), (0, i.Z)(false), false)
   }

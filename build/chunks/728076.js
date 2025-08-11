@@ -1,17 +1,18 @@
 /** Chunk was on 68784 **/
-n.d(t, {
+/** chunk id: 728076, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => b
-}), n(388685), n(190126), n(368063), n(65234), n(111804), n(490233), n(97749), n(781311);
-var r = n(73800),
-  a = n(263568),
-  l = n(935369),
-  i = n(398805),
-  o = n(524100),
-  s = n(316758),
-  c = n(203143),
-  u = n(79390),
-  d = n(489887),
-  f = n(388032);
+}), require("./388685.js"), require("./190126.js"), require("./368063.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js"), require("./781311.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk263568 = require("./263568.js"),
+  Chunk935369 = require("./935369.js"),
+  Chunk398805 = require("./398805.js"),
+  Chunk524100 = require("./524100.js"),
+  Chunk316758 = require("./316758.js"),
+  Chunk203143 = require("./203143.js"),
+  Chunk79390 = require("./79390.js"),
+  Chunk489887 = require("./489887.js"),
+  Chunk388032 = require("./388032.jsx");
 
 function m(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -23,9 +24,9 @@ function m(e) {
       var r;
       r = n[t], t in e ? Object.defineProperty(e, t, {
         value: r,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
+        enumerable: true,
+        configurable: true,
+        writable: true
       }) : e[t] = r
     })
   }
@@ -50,13 +51,13 @@ function b(e, t, n, b) {
   let w = e.id,
     [v, x] = r.useState(() => {
       var e, t;
-      return null != (t = null == b || null == (e = b.initialAnswers) ? void 0 : e.map(e => m({}, (0, u.Uu)(), e))) ? t : [(0, u.Uu)(), (0, u.Uu)()]
+      return null != (t = null == b || null == (e = b.initialAnswers) ? true : e.map(e => m({}, (0, u.Uu)(), e))) ? t : [(0, u.Uu)(), (0, u.Uu)()]
     }),
-    [O, y] = r.useState(null != (h = null == b ? void 0 : b.initialQuestion) ? h : ""),
-    [P, C] = r.useState(!1),
-    [_, R] = r.useState(null != (j = null == b ? void 0 : b.initialDuration) ? j : d.lc.ONE_DAY),
+    [O, y] = r.useState(null != (h = null == b ? true : b.initialQuestion) ? h : ""),
+    [P, C] = r.useState(false),
+    [_, R] = r.useState(null != (j = null == b ? true : b.initialDuration) ? j : d.lc.ONE_DAY),
     [E, k] = r.useState({}),
-    [A, D] = r.useState(!1),
+    [A, D] = r.useState(false),
     S = v.filter(e => (0, u.cS)(e)),
     I = v.filter(e => (0, u.uY)(e)),
     N = O.length > 0 && S.length >= d.gY && 0 === I.length,
@@ -99,7 +100,7 @@ function b(e, t, n, b) {
     F = r.useCallback((e, t, n) => {
       var r;
       let a = v[t],
-        l = null == (r = a.image) ? void 0 : r.mediaAttachmentState;
+        l = null == (r = a.image) ? true : r.mediaAttachmentState;
       null != l && l.mediaURL !== n && s.P(e, a.localCreationAnswerId, (0, i.Yk)(a.localCreationAnswerId, l.mediaURL))
     }, [v]),
     M = r.useCallback(async (e, t, n) => {
@@ -115,15 +116,15 @@ function b(e, t, n, b) {
     q = r.useCallback((e, t) => {
       F(w, t), z({
         emoji: e,
-        stickerId: void 0,
-        mediaAttachmentState: void 0
+        stickerId: true,
+        mediaAttachmentState: true
       }, t)
     }, [w, z, F]),
     H = r.useCallback(e => {
       x(t => {
         let n = [...t];
         return n[e] = p(m({}, n[e]), {
-          image: void 0
+          image: true
         }), n
       })
     }, []),
@@ -145,10 +146,10 @@ function b(e, t, n, b) {
     s.xt(w)
   }, [w]);
   let V = r.useCallback(() => {
-      let e = !0,
+      let e = true,
         t = {};
-      return 0 === O.trim().length && (e = !1, t.question = f.intl.string(f.t.gPX3oK)), v.filter(e => (0, u.cS)(e)).length < d.gY && (e = !1, t["answer-".concat(v[0].localCreationAnswerId)] = f.intl.string(f.t.fYvzER)), v.forEach(n => {
-        (0, u.uY)(n) && (e = !1, t["answer-".concat(n.localCreationAnswerId)] = f.intl.string(f.t["8Qqkc3"]))
+      return 0 === O.trim().length && (e = false, t.question = f.intl.string(f.t.gPX3oK)), v.filter(e => (0, u.cS)(e)).length < d.gY && (e = false, t["answer-".concat(v[0].localCreationAnswerId)] = f.intl.string(f.t.fYvzER)), v.forEach(n => {
+        (0, u.uY)(n) && (e = false, t["answer-".concat(n.localCreationAnswerId)] = f.intl.string(f.t["8Qqkc3"]))
       }), k(t), D(!e), e
     }, [v, O]),
     J = r.useCallback(async () => {
@@ -200,7 +201,7 @@ function g(e, t) {
       status: t,
       mediaURL: e
     },
-    emoji: void 0,
-    stickerId: void 0
+    emoji: true,
+    stickerId: true
   }
 }

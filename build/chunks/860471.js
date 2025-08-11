@@ -1,12 +1,13 @@
 /** Chunk was on web.js **/
+/** chunk id: 860471, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-var r = n(98405),
-  i = n(57447);
-r({
+var Chunk98405 = require("./98405.js"),
+  Chunk57447 = require("./57447.js");
+Chunk98405({
   target: "String",
-  proto: !0,
+  proto: true,
   name: "trimEnd",
-  forced: void 0 !== i
+  forced: true !== Chunk57447
 }, {
-  trimRight: i
+  trimRight: Chunk57447
 })

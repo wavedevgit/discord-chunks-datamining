@@ -1,5 +1,6 @@
 /** Chunk was on web.js **/
-var r = n(706627);
-e.exports = function(e) {
+/** chunk id: 92801, original params: e,t,n (module,exports,re quire) **/
+var Chunk706627 = require("./706627.js");
+module.exports = function(e) {
   return e == e && !r(e)
 }

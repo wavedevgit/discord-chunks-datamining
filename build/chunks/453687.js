@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 453687, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Dv: () => c,
   Gq: () => s,
   Gx: () => _,
@@ -9,10 +10,10 @@ n.d(t, {
   bY: () => u,
   iG: () => f,
   ut: () => a
-}), n(781311);
-var r = n(446108),
-  i = n(901461),
-  o = n(981631);
+}), require("./781311.js");
+var Chunk446108 = require("./446108.js"),
+  Chunk901461 = require("./901461.js"),
+  Chunk981631 = require("./981631.js");
 
 function a(e) {
   return "message-content-".concat(e.id)
@@ -51,7 +52,7 @@ function f(e, t, n) {
     b = f && e.content === e.embeds[0].url && e.embeds[0].type === o.hBH.GIFV,
     y = e.type !== o.uaV.DEFAULT || !b && "" !== e.content,
     O = (0, i.Z)(e),
-    v = !O && (null == n ? void 0 : n.hasTimestamp) !== !1,
+    v = !O && (null == n ? true : n.hasTimestamp) !== false,
     I = !O,
     T = l(e, t),
     S = s(e),

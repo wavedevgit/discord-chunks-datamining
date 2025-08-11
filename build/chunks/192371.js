@@ -1,8 +1,9 @@
 /** Chunk was on 44799 **/
-n.d(t, {
+/** chunk id: 192371, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => o
 });
-var r = n(706454);
+var Chunk706454 = require("./706454.js");
 
 function o(e) {
   return new Date(e).toLocaleDateString(r.default.locale, {

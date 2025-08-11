@@ -1,5 +1,6 @@
 /** Chunk was on 75708 **/
-n.r(e.exports = {
+/** chunk id: 790895, original params: e,t,n (module,exports,require) **/
+require.r(module.exports = {
   boxBackdrop: "boxBackdrop_b0db00",
   bentoSectionHeader: "bentoSectionHeader_b0db00",
   bentoBoxesGrid: "bentoBoxesGrid_b0db00",

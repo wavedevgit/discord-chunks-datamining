@@ -1,13 +1,14 @@
 /** Chunk was on 75708 **/
-n.d(t, {
+/** chunk id: 87820, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   r: () => a
 });
-var i = n(73800),
-  r = n(88658),
-  s = n(695346);
+var Chunk73800 = require("./73800.js"),
+  Chunk88658 = require("./88658.js"),
+  Chunk695346 = require("./695346.js");
 
 function a() {
-  let e = s.xq.useSetting(),
-    t = i.useMemo(() => (0, r.bL)(e), [e]);
-  return t.mutualGuilds && !t.all
+  let e = Chunk695346.xq.useSetting(),
+    t = Chunk73800.useMemo(() => (0, Chunk88658.bL)(module), [module]);
+  return exports.mutualGuilds && !exports.all
 }

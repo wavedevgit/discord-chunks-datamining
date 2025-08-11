@@ -1,28 +1,29 @@
 /** Chunk was on web.js **/
+/** chunk id: 14516, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => l
-}), n(388685);
-var r = n(147913),
-  i = n(19780),
-  o = n(358221);
+}), require("./388685.js");
+var Chunk147913 = require("./147913.js"),
+  Chunk19780 = require("./19780.js"),
+  Chunk358221 = require("./358221.js");
 
 function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
-class s extends r.Z {
+class s extends Chunk147913.Z {
   handleFocusParticipant() {
-    let e = i.Z.getChannelId();
-    if (null != e) {
+    let e = Chunk19780.Z.getChannelId();
+    if (null != module) {
       var t, n;
-      let r = o.Z.getSelectedParticipantId(e),
-        a = o.Z.getVideoParticipants(e);
-      null == (n = i.Z.getRTCConnection()) || n.setSelectedParticipant(null == (t = a.find(e => e.id === r && !e.localVideoDisabled)) ? void 0 : t.id)
+      let r = Chunk358221.Z.getSelectedParticipantId(module),
+        a = Chunk358221.Z.getVideoParticipants(module);
+      null == (n = Chunk19780.Z.getRTCConnection()) || require.setSelectedParticipant(null == (t = a.find(e => e.id === r && !e.localVideoDisabled)) ? true : exports.id)
     }
   }
   constructor(...e) {

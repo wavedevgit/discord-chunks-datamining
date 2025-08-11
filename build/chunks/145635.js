@@ -1,5 +1,6 @@
 /** Chunk was on 22988 **/
-e.exports = {
+/** chunk id: 145635, original params: e,t,n (module,exports,require) **/
+module.exports = {
   grid: "grid_d87d30",
   placeholderCard: "placeholderCard_d87d30",
   placeholderImg: "placeholderImg_d87d30",

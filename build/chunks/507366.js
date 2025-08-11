@@ -1,12 +1,13 @@
 /** Chunk was on web.js **/
+/** chunk id: 507366, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 
 function r(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -39,11 +40,11 @@ function a(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-n.d(t, {
+require.d(exports, {
   Z: () => c,
   c: () => l
 });
-let s = (0, n(972959).H)(() => ({
+let s = (0, require("./972959.js").H)(() => ({
   channelDrafts: {}
 }));
 
@@ -53,8 +54,8 @@ function l(e, t) {
       o = {
         heroFile: null,
         title: "",
-        publish: !0,
-        createThread: !0
+        publish: true,
+        createThread: true
       };
     return {
       channelDrafts: a(i({}, n.channelDrafts), {

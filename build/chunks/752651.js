@@ -1,10 +1,11 @@
 /** Chunk was on 22988 **/
-e.exports = {
+/** chunk id: 752651, original params: e,t,n (module,exports,require) **/
+module.exports = {
   creatorBenefitsContainer: "creatorBenefitsContainer__02e4c",
-  creatorBenefitCard: "creatorBenefitCard__02e4c " + n(551131).card,
-  earningBenefitCard: "earningBenefitCard__02e4c creatorBenefitCard__02e4c " + n(551131).card,
-  followerBenefitCard: "followerBenefitCard__02e4c creatorBenefitCard__02e4c " + n(551131).card,
-  revenueShareBenefitCard: "revenueShareBenefitCard__02e4c creatorBenefitCard__02e4c " + n(551131).card,
+  creatorBenefitCard: "creatorBenefitCard__02e4c " + require("./551131.js").card,
+  earningBenefitCard: "earningBenefitCard__02e4c creatorBenefitCard__02e4c " + require("./551131.js").card,
+  followerBenefitCard: "followerBenefitCard__02e4c creatorBenefitCard__02e4c " + require("./551131.js").card,
+  revenueShareBenefitCard: "revenueShareBenefitCard__02e4c creatorBenefitCard__02e4c " + require("./551131.js").card,
   earningsPreviewContainer: "earningsPreviewContainer__02e4c",
   avatarGridContainer: "avatarGridContainer__02e4c",
   avatarCard: "avatarCard__02e4c",

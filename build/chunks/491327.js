@@ -1,30 +1,31 @@
 /** Chunk was on 1272 **/
-n.d(t, {
+/** chunk id: 491327, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => v
-}), n(388685);
-var r = n(392711),
-  i = n.n(r),
-  l = n(243814),
-  a = n(447543),
-  o = n(287734),
-  s = n(703656),
-  c = n(131704),
-  u = n(592125),
-  d = n(430824),
-  p = n(496675),
-  f = n(944486),
-  h = n(979651),
-  g = n(934415),
-  m = n(996106),
-  b = n(914946),
-  _ = n(452426),
-  O = n(561205),
-  E = n(186901),
-  y = n(981631);
+}), require("./388685.js");
+var Chunk392711 = require("./392711.js"),
+  i = require.n(Chunk392711),
+  Chunk243814 = require("./243814.js"),
+  Chunk447543 = require("./447543.js"),
+  Chunk287734 = require("./287734.js"),
+  Chunk703656 = require("./703656.js"),
+  Chunk131704 = require("./131704.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk430824 = require("./430824.js"),
+  Chunk496675 = require("./496675.js"),
+  Chunk944486 = require("./944486.js"),
+  Chunk979651 = require("./979651.js"),
+  Chunk934415 = require("./934415.js"),
+  Chunk996106 = require("./996106.js"),
+  Chunk914946 = require("./914946.js"),
+  Chunk452426 = require("./452426.js"),
+  Chunk561205 = require("./561205.js"),
+  Chunk186901 = require("./186901.js"),
+  Chunk981631 = require("./981631.js");
 let v = {
-  [y.Etm.GET_CHANNEL]: {
+  [Chunk981631.Etm.GET_CHANNEL]: {
     scope: {
-      [E.Gp.ANY]: [l.x.RPC, l.x.GUILDS, l.x.GUILDS_CHANNELS_READ]
+      [Chunk186901.Gp.ANY]: [Chunk243814.x.RPC, Chunk243814.x.GUILDS, Chunk243814.x.GUILDS_CHANNELS_READ]
     },
     handler(e) {
       let {
@@ -45,8 +46,8 @@ let v = {
       return (0, b.T5)(r, (0, b.zM)(r, n.application.id, n.authorization.scopes))
     }
   },
-  [y.Etm.GET_CHANNELS]: {
-    scope: l.x.RPC,
+  [Chunk981631.Etm.GET_CHANNELS]: {
+    scope: Chunk243814.x.RPC,
     handler(e) {
       let {
         args: {
@@ -81,9 +82,9 @@ let v = {
       }
     }
   },
-  [y.Etm.GET_CHANNEL_PERMISSIONS]: {
+  [Chunk981631.Etm.GET_CHANNEL_PERMISSIONS]: {
     scope: {
-      [E.Gp.ANY]: [l.x.GUILDS_MEMBERS_READ, l.x.GUILDS_CHANNELS_READ]
+      [Chunk186901.Gp.ANY]: [Chunk243814.x.GUILDS_MEMBERS_READ, Chunk243814.x.GUILDS_CHANNELS_READ]
     },
     handler(e) {
       let t = (0, O.Z)();
@@ -95,8 +96,8 @@ let v = {
       }
     }
   },
-  [y.Etm.SELECT_VOICE_CHANNEL]: {
-    scope: l.x.RPC,
+  [Chunk981631.Etm.SELECT_VOICE_CHANNEL]: {
+    scope: Chunk243814.x.RPC,
     validation: e => (0, _.Z)(e).required().keys({
       channel_id: e.string().allow(null),
       timeout: e.number().min(0).max(60),
@@ -110,13 +111,13 @@ let v = {
         args: {
           channel_id: r,
           timeout: i = 0,
-          force: l = !1,
-          navigate: a = !1
+          force: l = false,
+          navigate: a = false
         }
       } = e;
       if (!r) return o.default.selectVoiceChannel(null), null;
       let _ = f.Z.getVoiceChannelId();
-      if (null != _ && _ !== r && !1 === l) throw new m.Z({
+      if (null != _ && _ !== r && false === l) throw new m.Z({
         errorCode: y.lTL.SELECT_VOICE_FORCE_REQUIRED
       }, "User is already joined to a voice channel.");
       return t.storeWait(n, () => u.Z.getChannel(r), i).catch(() => {
@@ -145,9 +146,9 @@ let v = {
       })
     }
   },
-  [y.Etm.GET_SELECTED_VOICE_CHANNEL]: {
+  [Chunk981631.Etm.GET_SELECTED_VOICE_CHANNEL]: {
     scope: {
-      [E.Gp.ANY]: [l.x.RPC, l.x.RPC_VOICE_READ]
+      [Chunk186901.Gp.ANY]: [Chunk243814.x.RPC, Chunk243814.x.RPC_VOICE_READ]
     },
     handler(e) {
       let {
@@ -156,8 +157,8 @@ let v = {
       return null != r ? (0, b.T5)(r, (0, b.zM)(r, t.application.id, t.authorization.scopes)) : null
     }
   },
-  [y.Etm.SELECT_TEXT_CHANNEL]: {
-    scope: l.x.RPC,
+  [Chunk981631.Etm.SELECT_TEXT_CHANNEL]: {
+    scope: Chunk243814.x.RPC,
     validation: e => (0, _.Z)(e).required().keys({
       channel_id: e.string().allow(null),
       timeout: e.number().min(0).max(60)
@@ -192,8 +193,8 @@ let v = {
       }) : ((0, s.uL)(y.Z5c.ME), null)
     }
   },
-  [y.Etm.CREATE_CHANNEL_INVITE]: {
-    scope: l.x.RPC,
+  [Chunk981631.Etm.CREATE_CHANNEL_INVITE]: {
+    scope: Chunk243814.x.RPC,
     handler(e) {
       var {
         args: {

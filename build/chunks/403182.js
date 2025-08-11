@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 403182, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Ng: () => O,
   OC: () => A,
   dg: () => v,
@@ -11,18 +12,18 @@ n.d(t, {
   qF: () => m,
   uV: () => y,
   vY: () => S
-}), n(35282), n(388685);
-var r = n(112456),
-  i = n.n(r),
-  o = n(392711),
-  a = n.n(o),
-  s = n(430824),
-  l = n(594174),
-  c = n(424218),
-  u = n(74538),
-  d = n(981631),
-  f = n(474936),
-  _ = n(388032);
+}), require("./35282.js"), require("./388685.js");
+var Chunk112456 = require("./112456.js"),
+  i = require.n(Chunk112456),
+  Chunk392711 = require("./392711.js"),
+  a = require.n(Chunk392711),
+  Chunk430824 = require("./430824.js"),
+  Chunk594174 = require("./594174.js"),
+  Chunk424218 = require("./424218.js"),
+  Chunk74538 = require("./74538.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk474936 = require("./474936.js"),
+  Chunk388032 = require("./388032.jsx");
 let p = 524288e3,
   h = 524288e3;
 
@@ -85,7 +86,7 @@ function b(e) {
 
 function y(e, t) {
   var n;
-  e = null != (n = null == e ? void 0 : e.toLowerCase()) ? n : "";
+  e = null != (n = null == e ? true : e.toLowerCase()) ? n : "";
   let r = a().find(E, n => null != n.reType && null != t ? n.reType.test(t) : null != n.reName && "" !== e && n.reName.test(e));
   return null != r ? r.klass : "unknown"
 }
@@ -118,8 +119,8 @@ function S(e) {
 }
 
 function A() {
-  let e = l.default.getCurrentUser();
-  return null != e && e.isStaff() ? h : p
+  let e = Chunk594174.default.getCurrentUser();
+  return null != module && module.isStaff() ? h : p
 }
 
 function N(e) {
@@ -127,9 +128,9 @@ function N(e) {
     guildId: t,
     onClick: n
   } = e, r = (0, c.BU)(v(t) / 1024, {
-    useKibibytes: !0
+    useKibibytes: true
   }), i = (0, c.BU)(f.Uq / 1024, {
-    useKibibytes: !0
+    useKibibytes: true
   });
   return _.intl.format(_.t.tRuxk5, {
     maxSize: r,

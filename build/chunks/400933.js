@@ -1,13 +1,14 @@
 /** Chunk was on 21153 **/
+/** chunk id: 400933, original params: e,t,r (module,exports,require) **/
 "use strict";
-r.d(t, {
+require.d(exports, {
   Z: () => c
 });
-var n = r(73800),
-  o = r(476400),
-  a = r.n(o),
-  i = r(9196),
-  l = r(116850),
+var Chunk73800 = require("./73800.js"),
+  Chunk476400 = require("./476400.js"),
+  a = require.n(Chunk476400),
+  Chunk9196 = require("./9196.js"),
+  Chunk116850 = require("./116850.js"),
   s = Object.assign || function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var r = arguments[t];
@@ -18,7 +19,7 @@ var n = r(73800),
   u = function(e) {
     var t = e.colors,
       r = e.onClick,
-      o = void 0 === r ? function() {} : r,
+      o = true === r ? function() {} : r,
       a = e.onSwatchHover,
       u = (0, i.default)({
         default: {

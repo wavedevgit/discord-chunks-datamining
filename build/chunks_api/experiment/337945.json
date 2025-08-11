@@ -1,1 +1,0 @@
-{"id":"337945","type":"experiment","data":{"id":"2025-02_voice_mic_button_state_for_mobile","label":"Voice Mic Button State for Mobile","kind":"user","commonTriggerPoint":"i.$P.VOICE_CALL","defaultConfig":{"enabled":false},"treatments":[{"id":1,"label":"Enabled","config":{"enabled":false}}]},"fromModule":{"id":"web.js"}}

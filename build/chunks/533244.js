@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 533244, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   CG: () => u,
   OY: () => E,
   SG: () => g,
@@ -12,12 +13,12 @@ n.d(t, {
   sN: () => m,
   sO: () => _,
   ur: () => h
-}), n(539854);
-var r = n(913527),
-  i = n.n(r),
-  o = n(666657),
-  a = n(676770),
-  s = n(388032);
+}), require("./539854.js");
+var Chunk913527 = require("./913527.js"),
+  i = require.n(Chunk913527),
+  Chunk666657 = require("./666657.js"),
+  Chunk676770 = require("./676770.js"),
+  Chunk388032 = require("./388032.jsx");
 let l = {
   month: "numeric",
   day: "numeric",
@@ -38,7 +39,7 @@ function d(e) {
 }
 
 function f(e) {
-  return null == e ? void 0 : u(e) ? o.Hl.JOIN_RAID : o.Hl.DM_RAID
+  return null == e ? true : u(e) ? o.Hl.JOIN_RAID : o.Hl.DM_RAID
 }
 
 function _(e, t) {
@@ -56,11 +57,11 @@ function h(e) {
 }
 
 function m(e) {
-  return (null == e ? void 0 : e.dmsDisabledUntil) != null && new Date(e.dmsDisabledUntil) > new Date
+  return (null == e ? true : e.dmsDisabledUntil) != null && new Date(e.dmsDisabledUntil) > new Date
 }
 
 function g(e) {
-  return (null == e ? void 0 : e.invitesDisabledUntil) != null && new Date(e.invitesDisabledUntil) > new Date
+  return (null == e ? true : e.invitesDisabledUntil) != null && new Date(e.invitesDisabledUntil) > new Date
 }
 
 function E(e, t) {
@@ -69,7 +70,7 @@ function E(e, t) {
   if (null == r) return "";
   let i = null != e.dmsDisabledUntil,
     o = null != e.invitesDisabledUntil;
-  switch (!0) {
+  switch (true) {
     case i && o:
       return s.intl.formatToPlainString(s.t.hCZitb, {
         guildName: t,

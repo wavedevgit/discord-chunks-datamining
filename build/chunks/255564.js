@@ -1,19 +1,20 @@
 /** Chunk was on web.js **/
+/** chunk id: 255564, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => c
-}), n(388685);
-var r = n(150039),
-  i = n(768581),
-  o = n(74538),
-  a = n(474936);
+}), require("./388685.js");
+var Chunk150039 = require("./150039.js"),
+  Chunk768581 = require("./768581.js"),
+  Chunk74538 = require("./74538.js"),
+  Chunk474936 = require("./474936.js");
 
 function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -32,10 +33,10 @@ class c {
   }
   get primaryColor() {
     var e, t;
-    return null != (t = null == (e = this.themeColors) ? void 0 : e[0]) ? t : this.accentColor
+    return null != (t = null == (e = this.themeColors) ? true : module[0]) ? exports : this.accentColor
   }
   get canUsePremiumProfileCustomization() {
-    return o.ZP.isPremiumAtLeast(this.premiumType, a.p9.TIER_2)
+    return Chunk74538.ZP.isPremiumAtLeast(this.premiumType, Chunk474936.p9.TIER_2)
   }
   get canEditThemes() {
     return this.canUsePremiumProfileCustomization
@@ -44,26 +45,26 @@ class c {
     return this._userProfile.application
   }
   get isLoaded() {
-    return void 0 !== this._userProfile && (null == this.guildId || void 0 !== this._guildMemberProfile)
+    return true !== this._userProfile && (null == this.guildId || true !== this._guildMemberProfile)
   }
   hasThemeColors() {
     var e, t;
-    return (null == (e = this.themeColors) ? void 0 : e[0]) != null || (null == (t = this.themeColors) ? void 0 : t[1]) != null
+    return (null == (e = this.themeColors) ? true : module[0]) != null || (null == (t = this.themeColors) ? true : exports[1]) != null
   }
   hasPremiumCustomization() {
     return this.isUsingGuildMemberBanner() || this.isUsingGuildMemberBio() || null != this.banner || this.hasThemeColors() || null != this.popoutAnimationParticleType
   }
   isUsingGuildMemberBanner() {
     var e;
-    return (null == (e = this._guildMemberProfile) ? void 0 : e.banner) != null
+    return (null == (e = this._guildMemberProfile) ? true : module.banner) != null
   }
   isUsingGuildMemberBio() {
     var e, t;
-    return (null == (e = this._guildMemberProfile) ? void 0 : e.bio) != null && (null == (t = this._guildMemberProfile) ? void 0 : t.bio) !== ""
+    return (null == (e = this._guildMemberProfile) ? true : module.bio) != null && (null == (t = this._guildMemberProfile) ? true : exports.bio) !== ""
   }
   isUsingGuildMemberPronouns() {
     var e, t;
-    return (null == (e = this._guildMemberProfile) ? void 0 : e.pronouns) != null && (null == (t = this._guildMemberProfile) ? void 0 : t.pronouns) !== ""
+    return (null == (e = this._guildMemberProfile) ? true : module.pronouns) != null && (null == (t = this._guildMemberProfile) ? true : exports.pronouns) !== ""
   }
   getBannerURL(e) {
     let {
@@ -84,7 +85,7 @@ class c {
     })
   }
   getPreviewBanner(e, t) {
-    let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : 480;
+    let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : 480;
     return null != e ? e : null === e ? this.isUsingGuildMemberBanner() ? (0, i.aN)({
       id: this.userId,
       banner: this._userProfile.banner,
@@ -97,20 +98,20 @@ class c {
   }
   getPreviewBio(e) {
     var t;
-    return (0, r.Wx)(e, null == (t = this._guildMemberProfile) ? void 0 : t.bio, this._userProfile.bio, null != this.guildId)
+    return (0, r.Wx)(e, null == (t = this._guildMemberProfile) ? true : t.bio, this._userProfile.bio, null != this.guildId)
   }
   getPreviewThemeColors(e) {
-    return (null == e ? void 0 : e[0]) != null && (null == e ? void 0 : e[1]) != null ? e : void 0 !== e ? this._userProfile.themeColors : this.themeColors
+    return (null == e ? true : e[0]) != null && (null == e ? true : e[1]) != null ? e : true !== e ? this._userProfile.themeColors : this.themeColors
   }
   getBadges() {
     var e, t, n;
-    return [...null != (t = this._userProfile.badges) ? t : [], ...null != (n = null == (e = this._guildMemberProfile) ? void 0 : e.badges) ? n : []]
+    return [...null != (t = this._userProfile.badges) ? exports : [], ...null != (n = null == (e = this._guildMemberProfile) ? true : module.badges) ? require : []]
   }
   getLegacyUsername() {
     return this._userProfile.legacyUsername
   }
   constructor(e, t) {
     var n, r, i;
-    s(this, "userId", void 0), s(this, "guildId", void 0), s(this, "banner", void 0), s(this, "bio", void 0), s(this, "pronouns", void 0), s(this, "accentColor", void 0), s(this, "themeColors", void 0), s(this, "popoutAnimationParticleType", void 0), s(this, "profileEffectId", void 0), s(this, "profileEffectExpiresAt", void 0), s(this, "fetchStartedAt", void 0), s(this, "fetchEndedAt", void 0), s(this, "_userProfile", void 0), s(this, "_guildMemberProfile", void 0), this.userId = e.userId, this.guildId = null == t ? void 0 : t.guildId, this.banner = null != (n = null == t ? void 0 : t.banner) ? n : e.banner, this.bio = l(e.bio, null == t ? void 0 : t.bio), this.pronouns = l(e.pronouns, null == t ? void 0 : t.pronouns), this.accentColor = e.accentColor, this.themeColors = null != (r = null == t ? void 0 : t.themeColors) ? r : e.themeColors, this.popoutAnimationParticleType = null != (i = null == t ? void 0 : t.popoutAnimationParticleType) ? i : e.popoutAnimationParticleType, (null == t ? void 0 : t.profileEffectId) != null ? (this.profileEffectId = t.profileEffectId, this.profileEffectExpiresAt = t.profileEffectExpiresAt) : null != e.profileEffectId && (this.profileEffectId = e.profileEffectId, this.profileEffectExpiresAt = e.profileEffectExpiresAt), this.fetchStartedAt = e.fetchStartedAt, this.fetchEndedAt = e.fetchEndedAt, this._userProfile = e, this._guildMemberProfile = t
+    s(this, "userId", true), s(this, "guildId", true), s(this, "banner", true), s(this, "bio", true), s(this, "pronouns", true), s(this, "accentColor", true), s(this, "themeColors", true), s(this, "popoutAnimationParticleType", true), s(this, "profileEffectId", true), s(this, "profileEffectExpiresAt", true), s(this, "fetchStartedAt", true), s(this, "fetchEndedAt", true), s(this, "_userProfile", true), s(this, "_guildMemberProfile", true), this.userId = e.userId, this.guildId = null == t ? true : t.guildId, this.banner = null != (n = null == t ? true : t.banner) ? n : e.banner, this.bio = l(e.bio, null == t ? true : t.bio), this.pronouns = l(e.pronouns, null == t ? true : t.pronouns), this.accentColor = e.accentColor, this.themeColors = null != (r = null == t ? true : t.themeColors) ? r : e.themeColors, this.popoutAnimationParticleType = null != (i = null == t ? true : t.popoutAnimationParticleType) ? i : e.popoutAnimationParticleType, (null == t ? true : t.profileEffectId) != null ? (this.profileEffectId = t.profileEffectId, this.profileEffectExpiresAt = t.profileEffectExpiresAt) : null != e.profileEffectId && (this.profileEffectId = e.profileEffectId, this.profileEffectExpiresAt = e.profileEffectExpiresAt), this.fetchStartedAt = e.fetchStartedAt, this.fetchEndedAt = e.fetchEndedAt, this._userProfile = e, this._guildMemberProfile = t
   }
 }

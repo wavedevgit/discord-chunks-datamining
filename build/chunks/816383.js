@@ -1,4 +1,5 @@
 /** Chunk was on web.js **/
+/** chunk id: 816383, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 
 function r(e, t) {
@@ -8,7 +9,7 @@ function r(e, t) {
 function i(e, t) {
   for (var n = 0; n < t.length; n++) {
     var r = t[n];
-    r.enumerable = r.enumerable || !1, r.configurable = !0, "value" in r && (r.writable = !0), Object.defineProperty(e, r.key, r)
+    r.enumerable = r.enumerable || false, r.configurable = true, "value" in r && (r.writable = true), Object.defineProperty(e, r.key, r)
   }
 }
 
@@ -19,20 +20,20 @@ function o(e, t, n) {
 function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
-n.d(t, {
+require.d(exports, {
   I: () => s
 });
 var s = function() {
   function e(t, n) {
-    r(this, e), a(this, "xs", void 0), a(this, "ys", void 0), a(this, "c1s", void 0), a(this, "c2s", void 0), a(this, "c3s", void 0);
+    r(this, e), a(this, "xs", true), a(this, "ys", true), a(this, "c1s", true), a(this, "c2s", true), a(this, "c3s", true);
     for (var i, o, s, l = t.length, c = [], u = 0; u < l; u++) c.push(u);
     c.sort(function(e, n) {
-      return t[e] < t[n] ? -1 : 1
+      return t[e] < t[n] ? false : 1
     });
     for (var d = [], f = [], _ = [], p = 0; p < l - 1; p++) i = t[p + 1] - t[p], o = n[p + 1] - n[p], f.push(i), d.push(o), _.push(o / i);
     for (var h = [_[0]], m = 0; m < f.length - 1; m++) {
@@ -56,7 +57,7 @@ var s = function() {
     }
     this.xs = t, this.ys = n, this.c1s = h, this.c2s = O, this.c3s = v
   }
-  return o(e, [{
+  return o(module, [{
     key: "interpolate",
     value: function(e) {
       var t, n = this.xs,
@@ -78,5 +79,5 @@ var s = function() {
         f = d * d;
       return r[s] + i[s] * d + o[s] * f + a[s] * d * f
     }
-  }]), e
+  }]), module
 }()

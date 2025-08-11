@@ -1,16 +1,17 @@
 /** Chunk was on 6310 **/
-l.d(t, {
+/** chunk id: 812545, original params: n,t,l (module,exports,require) **/
+require.d(exports, {
   Z: () => r
-}), l(388685);
-var e = l(73800),
-  i = l(442837),
-  o = l(528963),
-  s = l(606956);
-let a = +l(70956).Z.Millis.HOUR;
+}), require("./388685.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk442837 = require("./442837.js"),
+  Chunk528963 = require("./528963.js"),
+  Chunk606956 = require("./606956.js");
+let a = +require("./70956.js").Z.Millis.HOUR;
 
 function r(n) {
-  let [t, l] = e.useState(!1), r = (0, i.e7)([s.Z], () => s.Z.getFollowerStatsForChannel(n), [n]);
+  let [t, l] = e.useState(false), r = (0, i.e7)([s.Z], () => s.Z.getFollowerStatsForChannel(n), [n]);
   return e.useEffect(() => {
-    (null == r || Date.now() - r.lastFetched > a) && !t ? (l(!0), o.Z.fetchChannelFollowerStats(n)) : null != r && t && l(!1)
+    (null == r || Date.now() - r.lastFetched > a) && !t ? (l(true), o.Z.fetchChannelFollowerStats(n)) : null != r && t && l(false)
   }, [n, r, t]), [r, t]
 }

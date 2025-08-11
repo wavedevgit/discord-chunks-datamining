@@ -1,5 +1,6 @@
 /** Chunk was on web.js **/
-e.exports = function(e) {
+/** chunk id: 761563, original params: e (module,exports,re quire) **/
+module.exports = function(e) {
   let t = "a-zA-Z_\\-!.?+*=<>&'",
     n = "[#]?[" + t + "][" + t + "0-9/;:$#]*",
     r = "def defonce defprotocol defstruct defmulti defmethod defn- defn defmacro deftype defrecord",
@@ -76,7 +77,7 @@ e.exports = function(e) {
       end: "\\)"
     },
     m = {
-      endsWithParent: !0,
+      endsWithParent: true,
       relevance: 0
     },
     g = {
@@ -98,8 +99,8 @@ e.exports = function(e) {
       className: "title",
       begin: n,
       relevance: 0,
-      excludeEnd: !0,
-      endsParent: !0
+      excludeEnd: true,
+      endsParent: true
     }].concat(E)
   }, g, m], m.contains = E, _.contains = E, {
     name: "Clojure",

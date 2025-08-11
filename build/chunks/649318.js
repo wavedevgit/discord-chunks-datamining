@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 649318, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   $6: () => P,
   MP: () => S,
   Mg: () => O,
@@ -9,26 +10,26 @@ n.d(t, {
   Rx: () => A,
   nX: () => w,
   sc: () => R
-}), n(388685), n(472816), n(794429), n(415506), n(539854), n(49124), n(413496), n(433524), n(35282), n(482853), n(781311);
-var r = n(403644),
-  i = n.n(r),
-  o = n(565925),
-  a = n.n(o),
-  s = n(21690),
-  l = n.n(s),
-  c = n(264344),
-  u = n.n(c),
-  d = n(909430),
-  f = n(579092),
-  _ = n(65154),
-  p = n(436620);
+}), require("./388685.js"), require("./472816.js"), require("./794429.js"), require("./415506.js"), require("./539854.js"), require("./49124.js"), require("./413496.js"), require("./433524.js"), require("./35282.js"), require("./482853.js"), require("./781311.js");
+var Chunk403644 = require("./403644.js"),
+  i = require.n(Chunk403644),
+  Chunk565925 = require("./565925.js"),
+  a = require.n(Chunk565925),
+  Chunk21690 = require("./21690.js"),
+  l = require.n(Chunk21690),
+  Chunk264344 = require("./264344.js"),
+  u = require.n(Chunk264344),
+  Chunk909430 = require("./909430.js"),
+  Chunk579092 = require("./579092.js"),
+  Chunk65154 = require("./65154.js"),
+  Chunk436620 = require("./436620.js");
 
 function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -45,7 +46,7 @@ function m(e) {
   return e
 }
 let g = 4,
-  E = new f.Yd("SDP");
+  E = new Chunk579092.Yd("SDP");
 var b = function(e) {
   return e.SENDRECV = "sendrecv", e.SENDONLY = "sendonly", e.RECVONLY = "recvonly", e.INACTIVE = "inactive", e
 }({});
@@ -145,7 +146,7 @@ function T(e) {
       payload: l,
       rate: 0
     }],
-    mid: void 0,
+    mid: true,
     type: n
   };
   let {
@@ -171,7 +172,7 @@ function T(e) {
       else if (v.ext = h.filter(e => "urn:ietf:params:rtp-hdrext:ssrc-audio-level" === e.uri || "http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01" === e.uri), v.rtcpFb = [{
           type: "transport-cc",
           payload: l
-        }], !0 === O) {
+        }], true === O) {
         var I;
         null == (I = v.rtcpFb) || I.push({
           type: "nack",
@@ -399,13 +400,13 @@ function C(e) {
         [_.ad.OPUS].forEach((t, n) => {
           let o = N(i, a, r, t, n);
           null != o && e.codecs.push(o)
-        }), "sendrecv" === s && null != (n = null == o ? void 0 : o.find(e => "cname" === e.attribute)) && (e.audioSSRC = n.id);
+        }), "sendrecv" === s && null != (n = null == o ? true : o.find(e => "cname" === e.attribute)) && (e.audioSSRC = n.id);
         break;
       case "video":
         [_.ad.H264, _.ad.VP8, _.ad.VP9].forEach((t, n) => {
           let o = N(i, a, r, t, n);
           null != o && e.codecs.push(o)
-        }), "sendrecv" === s && (null != (n = null == o ? void 0 : o.find(e => "cname" === e.attribute)) && (e.videoSSRC = n.id), null != (n = null == o ? void 0 : o.findLast(e => "cname" === e.attribute)) && (n.id === e.videoSSRC && E.warn("Unable to find a unique rtx SSRC!"), e.rtxSSRC = n.id))
+        }), "sendrecv" === s && (null != (n = null == o ? true : o.find(e => "cname" === e.attribute)) && (e.videoSSRC = n.id), null != (n = null == o ? true : o.findLast(e => "cname" === e.attribute)) && (n.id === e.videoSSRC && E.warn("Unable to find a unique rtx SSRC!"), e.rtxSSRC = n.id))
     }
     return e
   }, {
@@ -422,7 +423,7 @@ function R(e) {
   var t;
   let {
     codecs: n
-  } = C(e), r = n.find(e => e.name === _.ad.VP8), i = RegExp("^a=ice|a=extmap|a=fingerprint|opus|VP8|".concat(null != (t = null == r ? void 0 : r.rtxPayloadType) ? t : 0, " rtx"), "i");
+  } = C(e), r = n.find(e => e.name === _.ad.VP8), i = RegExp("^a=ice|a=extmap|a=fingerprint|opus|VP8|".concat(null != (t = null == r ? true : r.rtxPayloadType) ? t : 0, " rtx"), "i");
   return {
     sdp: [...new Set(e.split(/\r\n/).filter(e => i.test(e)))].join("\n"),
     codecs: n
@@ -430,13 +431,13 @@ function R(e) {
 }
 
 function P(e) {
-  if (!e.includes("a=fingerprint")) return E.error("Remote SDP does not include fingerprint!"), !1;
-  if (!e.includes("a=ice-ufrag")) return E.error("Remote SDP does not include ICE user name!"), !1;
-  if (!e.includes("a=ice-pwd")) return E.error("Remote SDP does not include ICE password!"), !1;
-  if (!e.includes("a=candidate")) return E.error("Remote SDP does not include ICE candidate!"), !1;
-  if (!e.includes("c=")) return E.error("Remote SDP does not include c-line!"), !1;
+  if (!e.includes("a=fingerprint")) return E.error("Remote SDP does not include fingerprint!"), false;
+  if (!e.includes("a=ice-ufrag")) return E.error("Remote SDP does not include ICE user name!"), false;
+  if (!e.includes("a=ice-pwd")) return E.error("Remote SDP does not include ICE password!"), false;
+  if (!e.includes("a=candidate")) return E.error("Remote SDP does not include ICE candidate!"), false;
+  if (!e.includes("c=")) return E.error("Remote SDP does not include c-line!"), false;
   let t = e.split("\n").filter(e => e.startsWith("c=")).join().trim();
-  return !(t.split(" ").length < 3) || (E.error("Incorrect c-line: ".concat(t)), !1)
+  return !(t.split(" ").length < 3) || (E.error("Incorrect c-line: ".concat(t)), false)
 }
 
 function w(e) {

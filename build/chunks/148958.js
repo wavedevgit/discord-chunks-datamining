@@ -1,22 +1,23 @@
 /** Chunk was on web.js **/
+/** chunk id: 148958, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   h: () => p
-}), n(388685), n(539854), n(642613);
-var r = n(73800),
-  i = n(442837),
-  o = n(581364),
-  a = n(675478),
-  s = n(709054),
-  l = n(822245),
-  c = n(526761);
+}), require("./388685.js"), require("./539854.js"), require("./642613.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk442837 = require("./442837.js"),
+  Chunk581364 = require("./581364.js"),
+  Chunk675478 = require("./675478.js"),
+  Chunk709054 = require("./709054.js"),
+  Chunk822245 = require("./822245.js"),
+  Chunk526761 = require("./526761.js");
 
 function u(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -58,17 +59,17 @@ function p(e, t) {
     u = r.useMemo(() => null == t || 0 === t.length ? e : e.map(e => {
       var n;
       return _(d({}, e), {
-        isUserApp: null != (n = null == t ? void 0 : t.some(t => t.application.id === e.id)) && n
+        isUserApp: null != (n = null == t ? true : t.some(t => t.application.id === e.id)) && n
       })
     }), [e, t]),
-    f = r.useMemo(() => null == t ? void 0 : t.filter(t => !e.some(e => e.id === t.application.id)), [e, t]),
+    f = r.useMemo(() => null == t ? true : t.filter(t => !e.some(e => e.id === t.application.id)), [e, t]),
     p = r.useMemo(() => {
       var e;
       null == f || f.forEach(e => {
         let t = s.default.extractTimestamp(e.id);
         null == n.getEntry(e.application.id) && n.track(e.application.id, t)
       }), n.compute();
-      let t = null != (e = null == f ? void 0 : f.map(e => (0, o.X0)(e.application, !0))) ? e : [],
+      let t = null != (e = null == f ? true : f.map(e => (0, o.X0)(e.application, true))) ? e : [],
         r = [...u];
       return r.push(...t), r.sort((e, t) => {
         var r, i;
@@ -84,10 +85,10 @@ function p(e, t) {
       (null == o || t > o) && (i = e, o = t)
     }), u.forEach(e => {
       var t, r;
-      let a = Math.max(...null != (r = null == (t = n.getEntry(e.id)) ? void 0 : t.recentUses) ? r : []);
+      let a = Math.max(...null != (r = null == (t = n.getEntry(e.id)) ? true : t.recentUses) ? r : []);
       (null == o || a > o) && (i = e, o = a)
     });
-    let a = null != (r = null == i || null == (e = i.application) ? void 0 : e.id) ? r : "";
+    let a = null != (r = null == i || null == (e = i.application) ? true : e.id) ? r : "";
     return [...p.filter(e => e.id === a), ...p.filter(e => e.id !== a)]
   }, [p, u, n, t])
 }

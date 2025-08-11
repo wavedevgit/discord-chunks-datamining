@@ -1,31 +1,32 @@
 /** Chunk was on web.js **/
+/** chunk id: 863249, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   ZP: () => S
-}), n(953529);
-var r = n(544891),
-  i = n(570140),
-  o = n(668781),
-  a = n(239091),
-  s = n(881052),
-  l = n(406218),
-  c = n(962086),
-  u = n(160404),
-  d = n(264229),
-  f = n(271383),
-  _ = n(701190),
-  p = n(594174),
-  h = n(626135),
-  m = n(246364),
-  g = n(981631),
-  E = n(388032);
+}), require("./953529.js");
+var Chunk544891 = require("./544891.js"),
+  Chunk570140 = require("./570140.js"),
+  Chunk668781 = require("./668781.js"),
+  Chunk239091 = require("./239091.js"),
+  Chunk881052 = require("./881052.js"),
+  Chunk406218 = require("./406218.js"),
+  Chunk962086 = require("./962086.js"),
+  Chunk160404 = require("./160404.js"),
+  Chunk264229 = require("./264229.js"),
+  Chunk271383 = require("./271383.js"),
+  Chunk701190 = require("./701190.js"),
+  Chunk594174 = require("./594174.js"),
+  Chunk626135 = require("./626135.js"),
+  Chunk246364 = require("./246364.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk388032 = require("./388032.jsx");
 
 function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -58,7 +59,7 @@ function v(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let I = -1;
+let I = false;
 
 function T(e) {
   i.Z.dispatch({
@@ -70,16 +71,16 @@ let S = {
   fetchVerificationForm: async (e, t) => {
     let n = null != t ? t : _.Z.getInviteKeyForGuildId(e),
       o = p.default.getCurrentUser(),
-      a = !f.ZP.isMember(e, null == o ? void 0 : o.id);
+      a = !f.ZP.isMember(e, null == o ? true : o.id);
     try {
       let t = await r.tn.get({
         url: g.ANM.GUILD_MEMBER_VERIFICATION(e),
         query: {
           with_guild: a,
-          invite_code: null != n ? (0, d.jX)(n) : void 0
+          invite_code: null != n ? (0, d.jX)(n) : true
         },
-        oldFormErrors: !0,
-        rejectWithError: !1
+        oldFormErrors: true,
+        rejectWithError: false
       });
       if (null == t.body) throw t;
       let {
@@ -113,8 +114,8 @@ let S = {
         enabled: n,
         bulk_action: o
       },
-      oldFormErrors: !0,
-      rejectWithError: !1
+      oldFormErrors: true,
+      rejectWithError: false
     });
     i.Z.dispatch({
       type: "MEMBER_VERIFICATION_FORM_UPDATE",
@@ -133,7 +134,7 @@ let S = {
       form: {
         formFields: t
       },
-      isLocalUpdate: !0
+      isLocalUpdate: true
     })
   },
   updateVerificationFormDescription: async (e, t) => {
@@ -144,8 +145,8 @@ let S = {
       body: {
         description: t
       },
-      oldFormErrors: !0,
-      rejectWithError: !1
+      oldFormErrors: true,
+      rejectWithError: false
     });
     i.Z.dispatch({
       type: "MEMBER_VERIFICATION_FORM_UPDATE",
@@ -164,7 +165,7 @@ let S = {
       form: {
         description: t
       },
-      isLocalUpdate: !0
+      isLocalUpdate: true
     })
   },
   enableVerificationForm: async (e, t) => {
@@ -173,15 +174,15 @@ let S = {
       body: {
         enabled: t
       },
-      oldFormErrors: !0,
-      rejectWithError: !1
+      oldFormErrors: true,
+      rejectWithError: false
     })
   },
   submitVerificationForm: async function(e, t) {
-    let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : 200;
+    let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : 200;
     if (u.Z.isFullServerPreview(e)) return void(0, c.aq)(e, {
       memberOptions: {
-        isPending: !1
+        isPending: false
       }
     });
     try {
@@ -193,7 +194,7 @@ let S = {
           version: t.version,
           form_fields: t.formFields
         },
-        rejectWithError: !1
+        rejectWithError: false
       });
       return i.Z.dispatch({
         type: "USER_GUILD_JOIN_REQUEST_UPDATE",
@@ -226,7 +227,7 @@ let S = {
     }
   },
   clearCoachmark: function() {
-    i.Z.dispatch({
+    Chunk570140.Z.dispatch({
       type: "USER_GUILD_JOIN_REQUEST_COACHMARK_CLEAR"
     })
   },

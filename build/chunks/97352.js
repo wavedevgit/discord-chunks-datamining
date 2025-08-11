@@ -1,21 +1,22 @@
 /** Chunk was on web.js **/
+/** chunk id: 97352, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => d
 });
-var r = n(73800),
-  i = n(399606),
-  o = n(570140),
-  a = n(607070),
-  s = n(222677),
-  l = n(695346),
-  c = n(960020),
-  u = n(566006);
+var Chunk73800 = require("./73800.js"),
+  Chunk399606 = require("./399606.js"),
+  Chunk570140 = require("./570140.js"),
+  Chunk607070 = require("./607070.js"),
+  Chunk222677 = require("./222677.js"),
+  Chunk695346 = require("./695346.js"),
+  Chunk960020 = require("./960020.js"),
+  Chunk566006 = require("./566006.js");
 
 function d() {
-  let e = l.Yk.useSetting(),
-    t = (0, i.e7)([a.Z], () => a.Z.useReducedMotion);
-  r.useEffect(() => {
+  let e = Chunk695346.Yk.useSetting(),
+    t = (0, Chunk399606.e7)([Chunk607070.Z], () => Chunk607070.Z.useReducedMotion);
+  Chunk73800.useEffect(() => {
     function n(n) {
       let {
         messageId: r,
@@ -31,8 +32,8 @@ function d() {
         key: c.I.EXTERNAL
       })
     }
-    return o.Z.subscribe("MESSAGE_REACTION_ADD", n), () => {
-      o.Z.unsubscribe("MESSAGE_REACTION_ADD", n)
+    return Chunk570140.Z.subscribe("MESSAGE_REACTION_ADD", require), () => {
+      Chunk570140.Z.unsubscribe("MESSAGE_REACTION_ADD", require)
     }
-  }, [e, t])
+  }, [module, exports])
 }

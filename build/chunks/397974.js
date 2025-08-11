@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 397974, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   collapseable: "collapseable__217b7",
   toggled: "toggled__217b7",
   header: "header__217b7",

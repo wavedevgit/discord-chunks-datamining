@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 368159, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   headerContainerGift: "headerContainerGift__57a87",
   closeButtonGift: "closeButtonGift__57a87"
 }

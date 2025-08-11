@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 161492, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   assetWrapper: "assetWrapper__31fc2",
   assetWrapperMasked: "assetWrapperMasked__31fc2",
   stickerAsset: "stickerAsset__31fc2",

@@ -1,1 +1,0 @@
-{"id":"72462","type":"experiment","data":{"kind":"user","id":"2024-12_collectibles_share_link","label":"Collectibles Share Link Experiment","defaultConfig":{"showShareLinkButton":false},"treatments":[{"id":1,"label":"Show shop share link button","config":{"showShareLinkButton":false}}]},"fromModule":{"id":"2026"}}

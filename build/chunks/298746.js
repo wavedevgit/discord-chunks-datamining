@@ -1,5 +1,6 @@
 /** Chunk was on 34779 **/
-e.exports = {
+/** chunk id: 298746, original params: e,t,n (module,exports,require) **/
+module.exports = {
   quickswitcher: "quickswitcher_ac6cb0",
   input: "input_ac6cb0",
   autocompleteQuerySymbol: "autocompleteQuerySymbol_ac6cb0",

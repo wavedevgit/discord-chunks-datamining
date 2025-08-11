@@ -1,9 +1,10 @@
 /** Chunk was on web.js **/
+/** chunk id: 173033, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => i
 });
-var r = n(374470);
+var Chunk374470 = require("./374470.js");
 
 function i(e, t) {
   let n = e.offsetTop,

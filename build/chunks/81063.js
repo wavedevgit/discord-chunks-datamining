@@ -1,19 +1,20 @@
 /** Chunk was on web.js **/
+/** chunk id: 81063, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Vh: () => S,
   f: () => I,
   hR: () => R,
   xF: () => T
-}), n(35282), n(190126), n(368063), n(65234), n(111804), n(490233), n(97749), n(388685);
-var r = n(512722),
-  i = n.n(r),
-  o = n(544891),
-  a = n(570140),
-  s = n(430449),
-  l = n(710845),
-  c = n(134432),
-  u = n(981631);
+}), require("./35282.js"), require("./190126.js"), require("./368063.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js"), require("./388685.js");
+var Chunk512722 = require("./512722.js"),
+  i = require.n(Chunk512722),
+  Chunk544891 = require("./544891.js"),
+  Chunk570140 = require("./570140.js"),
+  Chunk430449 = require("./430449.js"),
+  Chunk710845 = require("./710845.js"),
+  Chunk134432 = require("./134432.js"),
+  Chunk981631 = require("./981631.js");
 let d = "mp",
   f = 36e5,
   _ = "https://i.scdn.co/image/",
@@ -22,18 +23,18 @@ let d = "mp",
   m = e => "https://i.ytimg.com/vi/".concat(e, "/hqdefault_live.jpg"),
   g = /https:\/\/i\.ytimg\.com\/vi\/([a-zA-Z0-9_-]+)\/hqdefault_live\.jpg/,
   E = {
-    [u.ABu.SPOTIFY]: {
+    [Chunk981631.ABu.SPOTIFY]: {
       deserialize: e => "".concat(_).concat(encodeURIComponent(e)),
       serialize: e => e.split(_)[1]
     },
-    [u.ABu.TWITCH]: {
+    [Chunk981631.ABu.TWITCH]: {
       deserialize: (e, t) => p(encodeURIComponent(e), t[0], t[1]),
       serialize: e => {
         let t = e.match(h);
         return null != t ? t[1] : null
       }
     },
-    [u.ABu.YOUTUBE]: {
+    [Chunk981631.ABu.YOUTUBE]: {
       deserialize: e => m(encodeURIComponent(e)),
       serialize: e => {
         let t = e.match(g);
@@ -62,8 +63,8 @@ async function O(e) {
     body: t
   } = await o.tn.get({
     url: u.ANM.APPLICATION_ASSETS(e),
-    oldFormErrors: !0,
-    rejectWithError: !1
+    oldFormErrors: true,
+    rejectWithError: false
   });
   return a.Z.dispatch({
     type: "APPLICATION_ASSETS_UPDATE",
@@ -85,7 +86,7 @@ function I(e, t) {
 function T(e, t, n) {
   if (null != t && t.includes(":")) {
     let [e, r] = t.split(":");
-    return e === u.ABu.TWITCH ? null == n || "number" == typeof n ? void new l.Z("ApplicationAssetUtils").warn("getAssetImage: size must === [number, number] for Twitch") : E[u.ABu.TWITCH].deserialize(r, n) : Object.prototype.hasOwnProperty.call(E, e) ? E[e].deserialize(r) : void 0
+    return e === u.ABu.TWITCH ? null == n || "number" == typeof n ? void new l.Z("ApplicationAssetUtils").warn("getAssetImage: size must === [number, number] for Twitch") : E[u.ABu.TWITCH].deserialize(r, n) : Object.prototype.hasOwnProperty.call(E, e) ? E[e].deserialize(r) : true
   }
   if (null == e || null == t) return;
   let r = Array.isArray(n) ? Math.max(...n) : n,
@@ -94,7 +95,7 @@ function T(e, t, n) {
 }
 async function S(e) {
   let t = await v(e);
-  return null == t ? void 0 : t.assets
+  return null == t ? true : t.assets
 }
 async function A(e, t) {
   let n = t.filter(e => null != e && !Object.prototype.hasOwnProperty.call(b, e) && null == b[e]);
@@ -106,8 +107,8 @@ async function A(e, t) {
     body: {
       urls: n
     },
-    oldFormErrors: !0,
-    rejectWithError: !1
+    oldFormErrors: true,
+    rejectWithError: false
   });
   for (let {
       url: e,
@@ -118,18 +119,18 @@ async function A(e, t) {
 
 function N(e, t) {
   let n = 0;
-  if (e.filter(e => (null == e ? void 0 : e.startsWith("http:")) || (null == e ? void 0 : e.startsWith("https:"))).length > 0)
+  if (e.filter(e => (null == e ? true : e.startsWith("http:")) || (null == e ? true : e.startsWith("https:"))).length > 0)
     for (let r = 0; r < e.length; r++) {
       let i = e[r];
       if (null == i) continue;
-      let o = Object.prototype.hasOwnProperty.call(b, i) ? b[i] : void 0;
+      let o = Object.prototype.hasOwnProperty.call(b, i) ? b[i] : true;
       null != o && (t[r] = I(d, o), n++)
     }
   return n === e.length
 }
 
 function C(e, t, n, r) {
-  let i = !1;
+  let i = false;
   for (let o = 0; o < e.length; o++) {
     let a = e[o];
     if (null == a || null != t[o]) continue;
@@ -139,20 +140,20 @@ function C(e, t, n, r) {
         t[o] = null;
         continue
       }
-      i = !0
+      i = true
     }
     t[o] = s.id
   }
   return i
 }
 async function R(e, t) {
-  let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : 1;
+  let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : 1;
   a.Z.dispatch({
     type: "APPLICATION_ASSETS_FETCH",
     applicationId: e
   });
   let r = [],
-    i = t.filter(e => (null == e ? void 0 : e.startsWith("http:")) || (null == e ? void 0 : e.startsWith("https:")));
+    i = t.filter(e => (null == e ? true : e.startsWith("http:")) || (null == e ? true : e.startsWith("https:")));
   if (i.length > 0 && await A(e, i), N(t, r)) return a.Z.dispatch({
     type: "APPLICATION_ASSETS_FETCH_SUCCESS",
     applicationId: e

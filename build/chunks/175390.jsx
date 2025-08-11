@@ -1,0 +1,45 @@
+/** Chunk was on 78431 **/
+/** chunk id: 175390, original params: e,t,r (module,exports,require) **/
+require.d(exports, {
+  Z: () => m
+});
+var Chunk255367 = require("./255367.js");
+require("./73800.js");
+var Chunk399606 = require("./399606.js"),
+  Chunk481060 = require("./481060.js"),
+  Chunk607070 = require("./607070.js"),
+  Chunk357352 = require("./357352.js"),
+  Chunk623488 = require("./623488.js"),
+  Chunk695346 = require("./695346.js"),
+  Chunk937615 = require("./937615.js"),
+  Chunk506071 = require("./506071.js"),
+  Chunk724598 = require("./724598.js"),
+  Chunk629481 = require("./629481.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk388032 = require("./388032.js"),
+  Chunk529135 = require("./529135.js");
+
+function g() {
+  let e = Chunk695346.QK.useSetting(),
+    t = (0, Chunk506071.n)(),
+    r = (0, Chunk399606.e7)([Chunk607070.Z], () => Chunk607070.Z.useReducedMotion),
+    o = exports && module && !require ? (0, Chunk357352.b)("server_products/storefront/question-mark.gif") : (0, Chunk357352.b)("server_products/storefront/question-mark.png");
+  return <div className={Chunk529135.previewListingCard}>{<Chunk623488.Z role={true} ctaComponent={null} imageUrl={(0, Chunk357352.b)("server_products/storefront/preview-thumbnail.png")} name={Chunk388032.intl.string(Chunk388032.t.U2hvDg)} description={Chunk388032.intl.string(Chunk388032.t["w/TNGR"])} formattedPrice={(0, Chunk937615.T4)(0, Chunk981631.pKx.USD, {
+        localeMatcher: "best fit",
+        style: "currency",
+        maximumSignificantDigits: 1
+      })} shouldShowFullDescriptionButton={false} productType={Chunk388032.intl.string(Chunk388032.t.ih4QMT)} onTapCard={() => null} hideRoleTag={true} lineClamp={3} thumbnailHeight={197} cardWidth={332} descriptionTextVariant={"text-xs/normal"} />}{<img className={Chunk529135.questionMark} alt={""} src={Chunk481060} />}</div>
+}
+
+function h() {
+  return <div className={Chunk529135.learnMoreTipContainer}>{<Chunk481060.d3s size={"md"} color={"currentColor"} className={Chunk529135.infoCircle} />}{<Chunk481060.Text variant={"text-sm/normal"} color={"text-muted"}>{Chunk388032.intl.format(Chunk388032.t.umfZ8v, {
+        learnMoreLink: Chunk629481.P4
+      })}</Chunk481060.Text>}</div>
+}
+
+function m(e) {
+  let {
+    guildId: t
+  } = e;
+  return <div className={j.previewContentContainer}>{<div className={j.previewContent}>{<g />}{<C.Z guildId={t} showCTA={true} />}</div>}{<h />}</div>
+}

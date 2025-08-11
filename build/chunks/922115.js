@@ -1,4 +1,5 @@
 /** Chunk was on web.js **/
+/** chunk id: 922115, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 var r = {
   container: "container__73454",
@@ -9,4 +10,4 @@ var r = {
   "nitro-pink": "nitro-pink__73454",
   "nitro-green": "nitro-green__73454"
 };
-n.r(e.exports = r)
+require.r(module.exports = r)

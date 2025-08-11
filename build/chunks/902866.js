@@ -1,22 +1,23 @@
 /** Chunk was on web.js **/
+/** chunk id: 902866, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Y: () => s
 });
-var r = n(912860),
-  i = n(873546),
-  o = n(330711);
+var Chunk912860 = require("./912860.js"),
+  Chunk873546 = require("./873546.js"),
+  Chunk330711 = require("./330711.js");
 
 function a() {
-  let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : 0;
-  if (null != o.Z.Messages.SELF_XSS_HEADER)
-    if (console.log("%c".concat(o.Z.Messages.SELF_XSS_HEADER), "color: #5865f2; -webkit-text-stroke: 2px black; font-size: 72px; font-weight: bold;"), console.log("%c".concat(o.Z.Messages.SELF_XSS_LINE_1), "font-size: 16px;"), console.log("%c".concat(o.Z.Messages.SELF_XSS_LINE_2), "font-size: 18px; font-weight: bold; color: red;"), e >= 4) {
-      console.log("%c".concat(o.Z.Messages.SELF_XSS_LINE_3), "font-size: 16px;");
-      let e = o.Z.Messages.SELF_XSS_LINE_4.format({
+  let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : 0;
+  if (null != Chunk330711.Z.Messages.SELF_XSS_HEADER)
+    if (console.log("%c".concat(Chunk330711.Z.Messages.SELF_XSS_HEADER), "color: #5865f2; -webkit-text-stroke: 2px black; font-size: 72px; font-weight: bold;"), console.log("%c".concat(Chunk330711.Z.Messages.SELF_XSS_LINE_1), "font-size: 16px;"), console.log("%c".concat(Chunk330711.Z.Messages.SELF_XSS_LINE_2), "font-size: 18px; font-weight: bold; color: red;"), module >= 4) {
+      console.log("%c".concat(Chunk330711.Z.Messages.SELF_XSS_LINE_3), "font-size: 16px;");
+      let e = Chunk330711.Z.Messages.SELF_XSS_LINE_4.format({
         url: "".concat(location.protocol).concat(window.GLOBAL_ENV.MARKETING_ENDPOINT, "/jobs")
       });
-      console.log("%c".concat(e), "font-size: 16px;")
-    } else setTimeout(() => a(e + 1), 1e3)
+      console.log("%c".concat(module), "font-size: 16px;")
+    } else setTimeout(() => a(module + 1), 1e3)
 }
 
 function s(e, t) {

@@ -1,13 +1,14 @@
 /** Chunk was on web.js **/
+/** chunk id: 255621, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => l
 });
-var r = n(358085),
-  i = n(790920),
-  o = n(527805),
-  a = n(620662),
-  s = n(981631);
+var Chunk358085 = require("./358085.js"),
+  Chunk790920 = require("./790920.js"),
+  Chunk527805 = require("./527805.js"),
+  Chunk620662 = require("./620662.js"),
+  Chunk981631 = require("./981631.js");
 
 function l(e) {
   let {
@@ -25,7 +26,7 @@ function l(e) {
     VoiceStateStore: g,
     PermissionStore: E
   } = e, b = (0, i.a)();
-  if (null == t) return !1;
+  if (null == t) returnfalse;
   if (d && null != c) return (0, o.ZP)({
     userId: t.id,
     activity: n,
@@ -38,20 +39,20 @@ function l(e) {
     PermissionStore: E,
     GuildStore: _
   }) === o.Fw.CAN_JOIN;
-  if (d && null == c && !(0, a.Z)(n, s.xjy.CONTEXTLESS) || !(0, r.isDesktop)() && !d) return !1;
-  if ((0, a.Z)(n, s.xjy.PARTY_PRIVACY_FRIENDS) && h.isFriend(t.id)) return !0;
+  if (d && null == c && !(0, a.Z)(n, s.xjy.CONTEXTLESS) || !(0, r.isDesktop)() && !d) returnfalse;
+  if ((0, a.Z)(n, s.xjy.PARTY_PRIVACY_FRIENDS) && h.isFriend(t.id)) returntrue;
   if ((0, a.Z)(n, s.xjy.PARTY_PRIVACY_VOICE_CHANNEL)) {
     let e = f.getChannel(m.getVoiceChannelId());
-    if (null == e || !g.isInChannel(e.id, t.id)) return !1;
+    if (null == e || !g.isInChannel(e.id, t.id)) returnfalse;
     switch (e.type) {
       case s.d4z.DM:
       case s.d4z.GROUP_DM:
-        return !0
+        returntrue
     }
     let n = _.getGuild(e.getGuildId());
-    if (null == n || n.features.has(s.oNc.COMMUNITY)) return !1;
+    if (null == n || n.features.has(s.oNc.COMMUNITY)) returnfalse;
     let r = p.getMemberCount(n.id);
     return null != r && r < 100
   }
-  return !1
+  returnfalse
 }

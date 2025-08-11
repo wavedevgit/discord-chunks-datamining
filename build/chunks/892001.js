@@ -1,20 +1,21 @@
 /** Chunk was on web.js **/
+/** chunk id: 892001, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.r(t), n.d(t, {
+require.r(exports), require.d(exports, {
   closeUserProfileModal: () => m,
   openUserProfileModal: () => h
 });
-var r = n(481060),
-  i = n(570140),
-  o = n(232567),
-  a = n(911284),
-  s = n(710845),
-  l = n(314897),
-  c = n(594174),
-  u = n(9161),
-  d = n(484459);
-let f = (0, r.pxk)(r.EFr.SIZE_120),
-  _ = new s.Z("UserProfileModalActionCreators"),
+var Chunk481060 = require("./481060.js"),
+  Chunk570140 = require("./570140.js"),
+  Chunk232567 = require("./232567.js"),
+  Chunk911284 = require("./911284.js"),
+  Chunk710845 = require("./710845.js"),
+  Chunk314897 = require("./314897.js"),
+  Chunk594174 = require("./594174.js"),
+  Chunk9161 = require("./9161.js"),
+  Chunk484459 = require("./484459.js");
+let f = (0, Chunk481060.pxk)(Chunk481060.EFr.SIZE_120),
+  _ = new Chunk710845.Z("UserProfileModalActionCreators"),
   p = async e => {
     let t = l.default.getId() === e,
       {
@@ -44,30 +45,30 @@ async function h(e) {
     sourceAnalyticsLocations: E,
     appContext: b,
     customStatusPrompt: y = null,
-    disableActionsForPreview: O = !1
+    disableActionsForPreview: O = false
   } = e, v = c.default.getUser(t);
   p(t), null == v ? await (0, o.In)(t, {
     type: "modal",
-    guildId: m && null != n ? n : void 0,
-    withMutualFriendsCount: !0,
-    withMutualFriends: !1,
-    withMutualGuilds: !0,
+    guildId: m && null != n ? n : true,
+    withMutualFriendsCount: true,
+    withMutualFriends: false,
+    withMutualGuilds: true,
     joinRequestId: u
-  }) : (0, d.Z)(v.id, v.getAvatarURL(void 0, f), {
+  }) : (0, d.Z)(v.id, v.getAvatarURL(true, f), {
     type: "modal",
-    guildId: m && null != n ? n : void 0,
+    guildId: m && null != n ? n : true,
     withMutualFriendsCount: !v.bot,
-    withMutualFriends: !1,
-    withMutualGuilds: !0,
+    withMutualFriends: false,
+    withMutualGuilds: true,
     joinRequestId: u
   }), i.Z.dispatch({
     type: "USER_PROFILE_MODAL_OPEN",
     userId: t,
-    guildId: null != n ? n : void 0,
-    channelId: null != r ? r : void 0,
-    messageId: null != a ? a : void 0,
-    roleId: null != s ? s : void 0,
-    sessionId: null != l ? l : void 0,
+    guildId: null != n ? n : true,
+    channelId: null != r ? r : true,
+    messageId: null != a ? a : true,
+    roleId: null != s ? s : true,
+    sessionId: null != l ? l : true,
     openedAt: Date.now(),
     customStatusPrompt: y,
     section: _,
@@ -81,7 +82,7 @@ async function h(e) {
 }
 
 function m() {
-  i.Z.dispatch({
+  Chunk570140.Z.dispatch({
     type: "USER_PROFILE_MODAL_CLOSE"
   })
 }

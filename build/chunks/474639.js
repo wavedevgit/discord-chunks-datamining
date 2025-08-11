@@ -1,39 +1,40 @@
 /** Chunk was on web.js **/
+/** chunk id: 474639, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => S
-}), n(35282), n(388685);
-var r = n(46973),
-  i = n(570140),
-  o = n(147913),
-  a = n(579806),
-  s = n(569545),
-  l = n(441167),
-  c = n(695346),
-  u = n(314897),
-  d = n(131951),
-  f = n(19780),
-  _ = n(959457),
-  p = n(704806),
-  h = n(626135),
-  m = n(358085),
-  g = n(924557),
-  E = n(435064),
-  b = n(894694),
-  y = n(779618),
-  O = n(356659),
-  v = n(981631),
-  I = n(70722);
+}), require("./35282.js"), require("./388685.js");
+var Chunk46973 = require("./46973.js"),
+  Chunk570140 = require("./570140.js"),
+  Chunk147913 = require("./147913.js"),
+  Chunk579806 = require("./579806.js"),
+  Chunk569545 = require("./569545.js"),
+  Chunk441167 = require("./441167.js"),
+  Chunk695346 = require("./695346.js"),
+  Chunk314897 = require("./314897.js"),
+  Chunk131951 = require("./131951.js"),
+  Chunk19780 = require("./19780.js"),
+  Chunk959457 = require("./959457.js"),
+  Chunk704806 = require("./704806.js"),
+  Chunk626135 = require("./626135.js"),
+  Chunk358085 = require("./358085.js"),
+  Chunk924557 = require("./924557.js"),
+  Chunk435064 = require("./435064.js"),
+  Chunk894694 = require("./894694.js"),
+  Chunk779618 = require("./779618.js"),
+  Chunk356659 = require("./356659.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk70722 = require("./70722.js");
 
 function T(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
-class S extends o.Z {
+class S extends Chunk147913.Z {
   handleRTCConnectionState(e) {
     let {
       context: t,
@@ -94,14 +95,14 @@ class S extends o.Z {
   }
   handleClipsAllowVoiceRecordingUpdate() {
     var e;
-    null == (e = f.Z.getUserIds()) || e.forEach(e => this.maybeShowClipsWarning(e))
+    null == (e = Chunk19780.Z.getUserIds()) || module.forEach(e => this.maybeShowClipsWarning(e))
   }
   handlePostConnectionOpen() {
-    if ((0, y.Z)(d.Z)) {
-      if (this.applyNativeClipsSettings(), !(0, g.ln)()) {
-        E.Z.getSettings().clipsEnabled && this.disableClips();
+    if ((0, Chunk779618.Z)(Chunk131951.Z)) {
+      if (this.applyNativeClipsSettings(), !(0, Chunk924557.ln)()) {
+        Chunk435064.Z.getSettings().clipsEnabled && this.disableClips();
         return
-      }(null == E.Z.getHardwareClassification() || null == E.Z.getHardwareClassificationForDecoupled() || E.Z.getHardwareClassificationVersion() !== O.WM) && this.classifyHardwareAndTrack().then(e => {
+      }(null == Chunk435064.Z.getHardwareClassification() || null == Chunk435064.Z.getHardwareClassificationForDecoupled() || Chunk435064.Z.getHardwareClassificationVersion() !== Chunk356659.WM) && this.classifyHardwareAndTrack().then(e => {
         i.Z.dispatch({
           type: "CLIPS_CLASSIFY_HARDWARE",
           classification: e
@@ -131,35 +132,35 @@ class S extends o.Z {
         gpuModels: e,
         classification: t
       } = await (async () => {
-        let e = await (0, p.q)();
-        if ((null == e ? void 0 : e.gpus) != null) {
-          let t = e.gpus.map(e => e.brand),
-            n = this.classifyHardware(t);
+        let e = await (0, Chunk704806.q)();
+        if ((null == module ? true : module.gpus) != null) {
+          let t = module.gpus.map(e => e.brand),
+            n = this.classifyHardware(exports);
           return {
-            gpuModels: t,
-            classification: n
+            gpuModels: exports,
+            classification: require
           }
         } {
-          let e = (await a.Z.processUtils.getSystemInfo()).gpus.map(e => {
+          let e = (await Chunk579806.Z.processUtils.getSystemInfo()).gpus.map(e => {
               let {
                 model: t
               } = e;
               return t
             }),
-            t = this.classifyHardware(e);
+            t = this.classifyHardware(module);
           return {
-            gpuModels: e,
-            classification: t
+            gpuModels: module,
+            classification: exports
           }
         }
       })();
-      return h.default.track(v.rMx.CLIPS_HARDWARE_CLASSIFICATION, {
-        classification: t,
-        version: O.WM,
-        gpu_models: e
-      }), t
+      return Chunk626135.default.track(Chunk981631.rMx.CLIPS_HARDWARE_CLASSIFICATION, {
+        classification: exports,
+        version: Chunk356659.WM,
+        gpu_models: module
+      }), exports
     } catch (e) {
-      return b.x.UNKNOWN
+      return Chunk894694.x.UNKNOWN
     }
   }
   classifyHardware(e) {

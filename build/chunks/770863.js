@@ -1,5 +1,6 @@
 /** Chunk was on web.js **/
-e.exports = function(e) {
+/** chunk id: 770863, original params: e (module,exports,re quire) **/
+module.exports = function(e) {
   return {
     name: "Mojolicious",
     subLanguage: "xml",
@@ -14,8 +15,8 @@ e.exports = function(e) {
       begin: "<%{1,2}={0,2}",
       end: "={0,1}%>",
       subLanguage: "perl",
-      excludeBegin: !0,
-      excludeEnd: !0
+      excludeBegin: true,
+      excludeEnd: true
     }]
   }
 }

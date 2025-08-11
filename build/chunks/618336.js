@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 618336, original params: e (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   8: "backspace",
   9: "tab",
   13: "enter",
@@ -26,5 +27,5 @@ e.exports = {
   189: "minus",
   224: "meta"
 };
-for (var t = 1; t < 20; ++t) e.exports[111 + t] = "f" + t;
-for (t = 0; t <= 9; ++t) e.exports[t + 96] = t
+for (var t = 1; t < 20; ++t) module.exports[111 + t] = "f" + t;
+for (t = 0; t <= 9; ++t) module.exports[t + 96] = t

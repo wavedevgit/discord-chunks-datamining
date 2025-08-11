@@ -1,12 +1,13 @@
 /** Chunk was on web.js **/
+/** chunk id: 335854, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   E: () => i,
   X: () => r
 });
 let r = {
-  getDefaultLinkInterceptor: () => void 0,
-  useTrackNavigatorScreenImpression: () => void 0
+  getDefaultLinkInterceptor: () => true,
+  useTrackNavigatorScreenImpression: () => true
 };
 
 function i(e) {

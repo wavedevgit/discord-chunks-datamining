@@ -1,14 +1,15 @@
 /** Chunk was on 45620 **/
+/** chunk id: 937510, original params: e,t,n (module,exports,require) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   l: () => c
-}), n(388685), n(539854);
-var r = n(73800),
-  l = n(952639),
-  a = n.n(l),
-  i = n(399606),
-  o = n(1870),
-  s = n(724994);
+}), require("./388685.js"), require("./539854.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk952639 = require("./952639.js"),
+  a = require.n(Chunk952639),
+  Chunk399606 = require("./399606.js"),
+  Chunk1870 = require("./1870.js"),
+  Chunk724994 = require("./724994.js");
 let c = e => {
   let t = (0, i.e7)([o.Z], () => o.Z.purchases);
   return (0, r.useMemo)(() => {

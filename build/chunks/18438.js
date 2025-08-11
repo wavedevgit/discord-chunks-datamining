@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 18438, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Cf: () => p,
   Fq: () => l,
   HP: () => s,
@@ -18,10 +19,10 @@ n.d(t, {
   sr: () => m,
   xn: () => f,
   z5: () => g
-}), n(415506);
-var r = n(544891),
-  i = n(570140),
-  o = n(981631);
+}), require("./415506.js");
+var Chunk544891 = require("./544891.js"),
+  Chunk570140 = require("./570140.js"),
+  Chunk981631 = require("./981631.js");
 async function a(e, t) {
   let {
     nick: n,
@@ -40,21 +41,21 @@ async function a(e, t) {
     avatar: a,
     avatar_description: s,
     avatar_id: l,
-    avatar_decoration_id: null === c ? null : null == c ? void 0 : c.id,
-    avatar_decoration_sku_id: null === c ? null : null == c ? void 0 : c.skuId,
-    collectibles: void 0 !== u ? {
+    avatar_decoration_id: null === c ? null : null == c ? true : c.id,
+    avatar_decoration_sku_id: null === c ? null : null == c ? true : c.skuId,
+    collectibles: true !== u ? {
       nameplate: null === u ? null : {
         id: u.id,
         sku_id: u.skuId
       }
-    } : void 0
+    } : true
   };
   try {
     let t = await r.tn.patch({
         url: o.ANM.SET_GUILD_MEMBER(e),
         body: d,
-        oldFormErrors: !0,
-        rejectWithError: !1
+        oldFormErrors: true,
+        rejectWithError: false
       }),
       n = t.body;
     return i.Z.dispatch({
@@ -68,7 +69,7 @@ async function a(e, t) {
     }), t
   } catch (t) {
     let e = t.body;
-    return (null == e ? void 0 : e.username) != null && (e.nick = e.username, delete e.username), i.Z.dispatch({
+    return (null == e ? true : e.username) != null && (e.nick = e.username, delete e.username), i.Z.dispatch({
       type: "GUILD_IDENTITY_SETTINGS_SUBMIT_FAILURE",
       errors: t.body
     }), t
@@ -90,7 +91,7 @@ function l(e) {
 }
 
 function c() {
-  i.Z.dispatch({
+  Chunk570140.Z.dispatch({
     type: "GUILD_IDENTITY_SETTINGS_RESET_AND_CLOSE_FORM"
   })
 }
@@ -159,25 +160,25 @@ function E(e) {
 }
 
 function b() {
-  i.Z.dispatch({
+  Chunk570140.Z.dispatch({
     type: "GUILD_IDENTITY_SETTINGS_RESET_PENDING_MEMBER_CHANGES"
   })
 }
 
 function y() {
-  i.Z.dispatch({
+  Chunk570140.Z.dispatch({
     type: "GUILD_IDENTITY_SETTINGS_RESET_PENDING_PROFILE_CHANGES"
   })
 }
 
 function O() {
-  i.Z.dispatch({
+  Chunk570140.Z.dispatch({
     type: "GUILD_IDENTITY_SETTINGS_RESET_ALL_PENDING"
   })
 }
 
 function v() {
-  i.Z.dispatch({
+  Chunk570140.Z.dispatch({
     type: "GUILD_IDENTITY_SETTINGS_CLEAR_ERRORS"
   })
 }

@@ -1,5 +1,6 @@
 /** Chunk was on 54642 **/
-e.exports = {
+/** chunk id: 455864, original params: e,t,n (module,exports,require) **/
+module.exports = {
   bottomMargin: "bottomMargin_d5f35b",
   topMargin: "topMargin_d5f35b",
   body: "body_d5f35b",

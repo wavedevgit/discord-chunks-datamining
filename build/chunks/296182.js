@@ -1,16 +1,17 @@
 /** Chunk was on web.js **/
+/** chunk id: 296182, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Jj: () => u,
   Lz: () => f,
   gS: () => d,
   s$: () => _,
   wV: () => s
 });
-var r = n(829883),
-  i = n(378233),
-  o = n(591759),
-  a = n(998502);
+var Chunk829883 = require("./829883.js"),
+  Chunk378233 = require("./378233.js"),
+  Chunk591759 = require("./591759.js"),
+  Chunk998502 = require("./998502.js");
 let s = "png",
   l = "https://media.discordapp.net",
   c = "cdn.discordapp.com";

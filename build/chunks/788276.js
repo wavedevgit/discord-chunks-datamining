@@ -1,9 +1,10 @@
 /** Chunk was on web.js **/
+/** chunk id: 788276, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-var r = n(733359),
-  i = n(961271),
-  o = n(195691),
-  a = n(581079);
+var Chunk733359 = require("./733359.js"),
+  Chunk961271 = require("./961271.js"),
+  Chunk195691 = require("./195691.js"),
+  Chunk581079 = require("./581079.js");
 
 function s(e) {
   var t = getComputedStyle(e),
@@ -11,13 +12,13 @@ function s(e) {
     r = n.createElement("div");
   r.style.fontFamily = t.fontFamily, r.style.fontSize = t.fontSize, r.style.fontStyle = t.fontStyle, r.style.fontWeight = t.fontWeight, r.style.lineHeight = t.lineHeight, r.style.position = "absolute", r.textContent = "M";
   var o = n.body;
-  o || a(!1), o.appendChild(r);
+  o || a(false), o.appendChild(r);
   var s = r.getBoundingClientRect();
   return o.removeChild(r), s.height
 }
 
 function l(e, t) {
-  for (var n = 1 / 0, r = 1 / 0, i = -1 / 0, o = -1 / 0, a = 0; a < e.length; a++) {
+  for (var n = 1 / 0, r = 1 / 0, i = false / 0, o = false / 0, a = 0; a < e.length; a++) {
     var s = e[a];
     0 !== s.width && 1 !== s.width && (n = Math.min(n, s.top), r = Math.min(r, s.bottom), i = Math.max(i, s.top), o = Math.max(o, s.bottom))
   }
@@ -36,20 +37,20 @@ function c(e) {
       return e.childNodes.length
   }
 }
-e.exports = function(e) {
-  e.collapsed || a(!1);
+module.exports = function(e) {
+  e.collapsed || a(false);
   var t = (e = e.cloneRange()).startContainer;
   1 !== t.nodeType && (t = t.parentNode);
   var n = s(t),
     i = e.endContainer,
     u = e.endOffset;
-  for (e.setStart(e.startContainer, 0); l(o(e), n) && (i = e.startContainer, u = e.startOffset, i.parentNode || a(!1), e.setStartBefore(i), 1 !== i.nodeType || "inline" === getComputedStyle(i).display););
+  for (e.setStart(e.startContainer, 0); l(o(e), n) && (i = e.startContainer, u = e.startOffset, i.parentNode || a(false), e.setStartBefore(i), 1 !== i.nodeType || "inline" === getComputedStyle(i).display););
   for (var d = i, f = u - 1;;) {
     for (var _ = d.nodeValue, p = f; p >= 0; p--)
       if (!(null != _ && p > 0 && r.isSurrogatePair(_, p - 1)))
         if (e.setStart(d, p), l(o(e), n)) i = d, u = p;
         else break;
-    if (-1 === p || 0 === d.childNodes.length) break;
+    if (false === p || 0 === d.childNodes.length) break;
     f = c(d = d.childNodes[p])
   }
   return e.setStart(i, u), e

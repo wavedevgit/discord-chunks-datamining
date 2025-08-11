@@ -1,28 +1,29 @@
 /** Chunk was on web.js **/
+/** chunk id: 337869, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n(415506);
-var r = n(992774),
-  i = n(710845),
-  o = n(358085),
-  a = n(998502);
-(0, r.f3)({
+require("./415506.js");
+var Chunk992774 = require("./992774.js"),
+  Chunk710845 = require("./710845.js"),
+  Chunk358085 = require("./358085.js"),
+  Chunk998502 = require("./998502.js");
+(0, Chunk992774.f3)({
   supported() {
     try {
       if (__OVERLAY__);
-      else if (o.isPlatformEmbedded) {
-        let e = (0, r.zS)();
-        if (null == e.VoiceConnection || null == e.setVideoOutputSink && null == e.addVideoOutputSink) throw Error("voe function missing");
-        return !0
+      else if (Chunk358085.isPlatformEmbedded) {
+        let e = (0, Chunk992774.zS)();
+        if (null == module.VoiceConnection || null == module.setVideoOutputSink && null == module.addVideoOutputSink) throw Error("voe function missing");
+        returntrue
       }
     } catch (e) {
-      new i.Z("injectMediaEngine").error("Potentially corrupt installation:", e.message)
+      new Chunk710845.Z("injectMediaEngine").error("Potentially corrupt installation:", module.message)
     }
-    return !1
+    returnfalse
   },
   supportsFeature: e => a.ZP.supportsFeature(e),
   setProcessPriority(e) {
     a.ZP.getDiscordUtils().setProcessPriority(e)
   },
-  getVoiceEngine: () => a.ZP.getVoiceEngine(),
-  getVoiceFilters: () => a.ZP.getVoiceFilters()
+  getVoiceEngine: () => Chunk998502.ZP.getVoiceEngine(),
+  getVoiceFilters: () => Chunk998502.ZP.getVoiceFilters()
 })

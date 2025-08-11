@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 356659, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Bg: () => _,
   D5: () => l,
   D_: () => c,
@@ -28,8 +29,8 @@ n.d(t, {
   wD: () => T,
   yl: () => A
 });
-var r = n(710845),
-  i = n(70956),
+var Chunk710845 = require("./710845.js"),
+  Chunk70956 = require("./70956.js"),
   o = function(e) {
     return e[e.SECONDS_30 = 30 * i.Z.Millis.SECOND] = "SECONDS_30", e[e.MINUTES_1 = i.Z.Millis.MINUTE] = "MINUTES_1", e[e.MINUTES_2 = 2 * i.Z.Millis.MINUTE] = "MINUTES_2", e
   }({}),
@@ -43,8 +44,8 @@ var r = n(710845),
     return e[e.Error = 0] = "Error", e[e.Disabled = 1] = "Disabled", e[e.Enabled = 2] = "Enabled", e
   }({});
 let c = "alt+c",
-  u = 6 * i.Z.Millis.SECOND,
-  d = new r.Z("Clips"),
+  u = 6 * Chunk70956.Z.Millis.SECOND,
+  d = new Chunk710845.Z("Clips"),
   f = e => "Discord_Clip_".concat(e, ".mp4"),
   _ = 3,
   p = 2,
@@ -64,4 +65,4 @@ let c = "alt+c",
   C = 3e4,
   R = 30,
   P = 10;
-i.Z.Millis.DAY
+Chunk70956.Z.Millis.DAY

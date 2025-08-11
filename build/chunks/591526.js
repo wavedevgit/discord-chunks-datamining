@@ -1,11 +1,12 @@
 /** Chunk was on web.js **/
+/** chunk id: 591526, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => a
-}), n(388685);
-var r = n(710845),
-  i = n(287328);
-let o = new r.Z("ChannelReader");
+}), require("./388685.js");
+var Chunk710845 = require("./710845.js"),
+  Chunk287328 = require("./287328.js");
+let o = new Chunk710845.Z("ChannelReader");
 class a {
   static getSync(e, t) {
     let n = performance.now(),
@@ -22,12 +23,12 @@ class a {
   static async getGuildIds() {
     try {
       var e;
-      let t = i.Z.channels();
-      if (null == t) return new Set;
-      let n = (null != (e = await t.getGuildIds()) ? e : []).filter(e => null !== e && "string" == typeof e);
-      return new Set(n)
+      let t = Chunk287328.Z.channels();
+      if (null == exports) return new Set;
+      let n = (null != (e = await exports.getGuildIds()) ? module : []).filter(e => null !== e && "string" == typeof e);
+      return new Set(require)
     } catch (e) {
-      return o.warn("couldn't get guild ids", e), new Set
+      return o.warn("couldn't get guild ids", module), new Set
     }
   }
 }

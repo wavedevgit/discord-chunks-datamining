@@ -1,26 +1,27 @@
 /** Chunk was on web.js **/
+/** chunk id: 85521, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => f
-}), n(997841);
-var r = n(913527),
-  i = n.n(r),
-  o = n(81825),
-  a = n(812206),
-  s = n(630388),
-  l = n(959546),
-  c = n(981631);
+}), require("./997841.js");
+var Chunk913527 = require("./913527.js"),
+  i = require.n(Chunk913527),
+  Chunk81825 = require("./81825.js"),
+  Chunk812206 = require("./812206.js"),
+  Chunk630388 = require("./630388.js"),
+  Chunk959546 = require("./959546.js"),
+  Chunk981631 = require("./981631.js");
 
 function u(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 let d = "master";
-class f extends o.Z {
+class f extends Chunk81825.Z {
   static createFromServer(e) {
     return new f({
       id: e.application.id,
@@ -49,9 +50,9 @@ class f extends o.Z {
       sku: {
         id: e.skuId,
         type: c.epS.DURABLE_PRIMARY,
-        premium: !1
+        premium: false
       },
-      isTestMode: !0
+      isTestMode: true
     })
   }
   getFlags() {
@@ -61,13 +62,13 @@ class f extends o.Z {
     return s.yE(this.flags, e)
   }
   isHidden() {
-    return this.hasFlag(c.eHb.HIDDEN)
+    return this.hasFlag(Chunk981631.eHb.HIDDEN)
   }
   isLegacyOverlayEnabled() {
-    return !this.hasFlag(c.eHb.OVERLAY_DISABLED)
+    return !this.hasFlag(Chunk981631.eHb.OVERLAY_DISABLED)
   }
   isOverlayV3Enabled() {
-    return !this.hasFlag(c.eHb.OVERLAY_V3_DISABLED)
+    return !this.hasFlag(Chunk981631.eHb.OVERLAY_V3_DISABLED)
   }
   isOverlayEnabled() {
     return this.isLegacyOverlayEnabled() || this.isOverlayV3Enabled()
@@ -76,7 +77,7 @@ class f extends o.Z {
     return this.branchId === this.id
   }
   isDiscordApplication() {
-    return !0
+    returntrue
   }
   isEntitled(e, t) {
     return !!this.isTestMode || this.entitlements.some(n => n.isValid(e, t, this.branchId))
@@ -85,7 +86,7 @@ class f extends o.Z {
     return null != this.sku.preorderReleaseAt || null != this.sku.preorderApproximateReleaseDate
   }
   getDistributor() {
-    return c.GQo.DISCORD
+    return Chunk981631.GQo.DISCORD
   }
   getBranchName() {
     return null != this.branch ? this.branch.name : d
@@ -97,15 +98,15 @@ class f extends o.Z {
     return this.sku.id
   }
   getAnalyticsData() {
-    let e = a.Z.getApplication(this.id);
+    let e = Chunk812206.Z.getApplication(this.id);
     return {
-      application_id: null != e ? e.id : null,
-      application_name: null != e ? e.name : null,
+      application_id: null != module ? module.id : null,
+      application_name: null != module ? module.name : null,
       sku_id: this.getSkuIdForAnalytics(),
       launcher_platform: this.getDistributor()
     }
   }
   constructor(e) {
-    super(), u(this, "id", void 0), u(this, "branchId", void 0), u(this, "flags", void 0), u(this, "createdAt", void 0), u(this, "entitlements", void 0), u(this, "branch", void 0), u(this, "sku", void 0), u(this, "isTestMode", void 0), this.id = e.id, this.createdAt = e.createdAt, this.flags = e.flags, this.branchId = e.branchId, this.entitlements = e.entitlements, this.branch = e.branch, this.sku = e.sku, this.isTestMode = e.isTestMode || !1
+    super(), u(this, "id", true), u(this, "branchId", true), u(this, "flags", true), u(this, "createdAt", true), u(this, "entitlements", true), u(this, "branch", true), u(this, "sku", true), u(this, "isTestMode", true), this.id = e.id, this.createdAt = e.createdAt, this.flags = e.flags, this.branchId = e.branchId, this.entitlements = e.entitlements, this.branch = e.branch, this.sku = e.sku, this.isTestMode = e.isTestMode || false
   }
 }

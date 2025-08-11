@@ -1,5 +1,6 @@
 /** Chunk was on 37082 **/
-e.exports = {
+/** chunk id: 505939, original params: e,t,n (module,exports,require) **/
+module.exports = {
   questProgressWrapper: "questProgressWrapper__1d950",
   questProgressRewardTile: "questProgressRewardTile__1d950",
   questProgressCopy: "questProgressCopy__1d950",

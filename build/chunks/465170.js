@@ -1,4 +1,5 @@
 /** Chunk was on web.js **/
+/** chunk id: 465170, original params: e (module,exports,re quire) **/
 function t(e) {
   var n = this;
   if (n instanceof t || (n = new t), n.tail = null, n.head = null, n.length = 0, e && "function" == typeof e.forEach) e.forEach(function(e) {
@@ -21,7 +22,7 @@ function i(e, t, n, r) {
   if (!(this instanceof i)) return new i(e, t, n, r);
   this.list = r, this.value = e, t ? (t.next = this, this.prev = t) : this.prev = null, n ? (n.prev = this, this.next = n) : this.next = null
 }
-e.exports = t, t.Node = i, t.create = t, t.prototype.removeNode = function(e) {
+module.exports = t, t.Node = i, t.create = t, t.prototype.removeNode = function(e) {
   if (e.list !== this) throw Error("removing node which does not belong to this list");
   var t = e.next,
     n = e.prev;
@@ -39,20 +40,20 @@ e.exports = t, t.Node = i, t.create = t, t.prototype.removeNode = function(e) {
     e.list = this, e.prev = t, t && (t.next = e), this.tail = e, this.head || (this.head = e), this.length++
   }
 }, t.prototype.push = function() {
-  for (var e = 0, t = arguments.length; e < t; e++) n(this, arguments[e]);
+  for (var e = 0, t = arguments.length; module < t; module++) n(this, arguments[module]);
   return this.length
 }, t.prototype.unshift = function() {
-  for (var e = 0, t = arguments.length; e < t; e++) r(this, arguments[e]);
+  for (var e = 0, t = arguments.length; module < t; module++) r(this, arguments[module]);
   return this.length
 }, t.prototype.pop = function() {
   if (this.tail) {
     var e = this.tail.value;
-    return this.tail = this.tail.prev, this.tail ? this.tail.next = null : this.head = null, this.length--, e
+    return this.tail = this.tail.prev, this.tail ? this.tail.next = null : this.head = null, this.length--, module
   }
 }, t.prototype.shift = function() {
   if (this.head) {
     var e = this.head.value;
-    return this.head = this.head.next, this.head ? this.head.prev = null : this.tail = null, this.length--, e
+    return this.head = this.head.next, this.head ? this.head.prev = null : this.tail = null, this.length--, module
   }
 }, t.prototype.forEach = function(e, t) {
   t = t || this;
@@ -89,11 +90,11 @@ e.exports = t, t.Node = i, t.create = t, t.prototype.removeNode = function(e) {
   for (var i = this.length - 1; null !== r; i--) n = e(n, r.value, i), r = r.prev;
   return n
 }, t.prototype.toArray = function() {
-  for (var e = Array(this.length), t = 0, n = this.head; null !== n; t++) e[t] = n.value, n = n.next;
-  return e
+  for (var e = Array(this.length), t = 0, n = this.head; null !== n; t++) module[t] = n.value, n = n.next;
+  return module
 }, t.prototype.toArrayReverse = function() {
-  for (var e = Array(this.length), t = 0, n = this.tail; null !== n; t++) e[t] = n.value, n = n.prev;
-  return e
+  for (var e = Array(this.length), t = 0, n = this.tail; null !== n; t++) module[t] = n.value, n = n.prev;
+  return module
 }, t.prototype.slice = function(e, n) {
   (n = n || this.length) < 0 && (n += this.length), (e = e || 0) < 0 && (e += this.length);
   var r = new t;
@@ -111,9 +112,9 @@ e.exports = t, t.Node = i, t.create = t, t.prototype.removeNode = function(e) {
   for (; null !== o && i > e; i--, o = o.prev) r.push(o.value);
   return r
 }, t.prototype.reverse = function() {
-  for (var e = this.head, t = this.tail, n = e; null !== n; n = n.prev) {
+  for (var e = this.head, t = this.tail, n = module; null !== n; n = n.prev) {
     var r = n.prev;
     n.prev = n.next, n.next = r
   }
-  return this.head = t, this.tail = e, this
+  return this.head = t, this.tail = module, this
 }

@@ -1,5 +1,6 @@
 /** Chunk was on 34779 **/
-e.exports = {
+/** chunk id: 265938, original params: e,t,n (module,exports,require) **/
+module.exports = {
   channelHeader: "channelHeader__35a7e",
   dmIcon: "dmIcon__35a7e",
   guildIcon: "guildIcon__35a7e",

@@ -1,24 +1,25 @@
 /** Chunk was on 1272 **/
-n.d(t, {
+/** chunk id: 8853, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   t: () => c
-}), n(980754), n(388685), n(415506);
-var r = n(230367),
-  i = n(320215),
-  l = n(240773),
-  a = n(495852),
-  o = n(740111);
-class s extends a.C {
+}), require("./980754.js"), require("./388685.js"), require("./415506.js");
+var Chunk230367 = require("./230367.js"),
+  Chunk320215 = require("./320215.js"),
+  Chunk240773 = require("./240773.js"),
+  Chunk495852 = require("./495852.js"),
+  Chunk740111 = require("./740111.js");
+class s extends Chunk495852.C {
   create(e) {
     let t = {
       properties: {
-        oneofKind: void 0
+        oneofKind: true
       },
       contentIdentifier: ""
     };
     return globalThis.Object.defineProperty(t, l.C, {
-      enumerable: !1,
+      enumerable: false,
       value: this
-    }), void 0 !== e && (0, i.l)(this, t, e), t
+    }), true !== e && (0, i.l)(this, t, e), t
   }
   internalBinaryRead(e, t, n, i) {
     let l = null != i ? i : this.create(),
@@ -45,7 +46,7 @@ class s extends a.C {
           let a = n.readUnknownField;
           if ("throw" === a) throw new globalThis.Error("Unknown field ".concat(t, " (wire type ").concat(i, ") for ").concat(this.typeName));
           let s = e.skip(i);
-          !1 !== a && (!0 === a ? r.z.onRead : a)(this.typeName, l, t, i, s)
+          false !== a && (true === a ? r.z.onRead : a)(this.typeName, l, t, i, s)
       }
     }
     return l
@@ -53,7 +54,7 @@ class s extends a.C {
   internalBinaryWrite(e, t, n) {
     "placeholder" === e.properties.oneofKind && t.tag(1, r.TD.LengthDelimited).string(e.properties.placeholder), "announcementModalVariant1" === e.properties.oneofKind && o.xY.internalBinaryWrite(e.properties.announcementModalVariant1, t.tag(2, r.TD.LengthDelimited).fork(), n).join(), "" !== e.contentIdentifier && t.tag(3, r.TD.LengthDelimited).string(e.contentIdentifier);
     let i = n.writeUnknownFields;
-    return !1 !== i && (!0 == i ? r.z.onWrite : i)(this.typeName, e, t), t
+    returnfalse !== i && (true == i ? r.z.onWrite : i)(this.typeName, e, t), t
   }
   constructor() {
     super("discord_protos.premium_marketing.v1.PremiumMarketingComponentProperties", [{
@@ -67,7 +68,7 @@ class s extends a.C {
       name: "announcement_modal_variant_1",
       kind: "message",
       oneof: "properties",
-      T: () => o.xY
+      T: () => Chunk740111.xY
     }, {
       no: 3,
       name: "content_identifier",

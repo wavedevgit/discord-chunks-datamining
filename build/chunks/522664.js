@@ -1,13 +1,14 @@
 /** Chunk was on web.js **/
+/** chunk id: 522664, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Eq: () => a,
   Uj: () => o,
   gx: () => l,
   qO: () => s
 });
-var r = n(544891),
-  i = n(981631);
+var Chunk544891 = require("./544891.js"),
+  Chunk981631 = require("./981631.js");
 
 function o(e, t, n, o) {
   return r.tn.post({
@@ -18,7 +19,7 @@ function o(e, t, n, o) {
       attachment_ids: n,
       embed_ids: o
     },
-    rejectWithError: !1
+    rejectWithError: false
   })
 }
 
@@ -31,7 +32,7 @@ function a(e, t, n, o) {
       attachment_ids: n,
       filenames: o
     },
-    rejectWithError: !1
+    rejectWithError: false
   })
 }
 
@@ -41,7 +42,7 @@ function s(e, t) {
     body: {
       message_ids: t
     },
-    rejectWithError: !1
+    rejectWithError: false
   })
 }
 
@@ -55,6 +56,6 @@ function l(e) {
     body: {
       messages: t
     },
-    rejectWithError: !1
+    rejectWithError: false
   })
 }

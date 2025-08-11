@@ -1,8 +1,9 @@
 /** Chunk was on web.js **/
+/** chunk id: 777754, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => u
-}), n(35282);
+}), require("./35282.js");
 let r = /^([\w-+]+(?:\.[\w-+]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,63}(?:\.[a-z]{2})?)$/i,
   i = /^((https:\/\/)?(discord\.gg\/)|(discord\.com\/)(invite\/)?)?[A-Za-z0-9]{8,8}$/,
   o = /^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$/,
@@ -28,7 +29,7 @@ let r = /^([\w-+]+(?:\.[\w-+]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,63}(?:\
           r = c.includes(e);
         return !n && !r
       }
-      return !1
+      returnfalse
     },
     isDiscoveryLink: function(e) {
       return s.test(e)

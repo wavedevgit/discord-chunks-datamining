@@ -1,0 +1,59 @@
+/** Chunk was on 1272 **/
+/** chunk id: 957657, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
+  Z: () => h
+});
+var Chunk255367 = require("./255367.js"),
+  Chunk73800 = require("./73800.js"),
+  Chunk481060 = require("./481060.js"),
+  Chunk984370 = require("./984370.js"),
+  Chunk703656 = require("./703656.js"),
+  Chunk626135 = require("./626135.js"),
+  Chunk804739 = require("./804739.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk388032 = require("./388032.jsx"),
+  Chunk449160 = require("./449160.js");
+let f = (0, Chunk804739.Q)() || false,
+  h = Chunk73800.memo(function(e) {
+    let {
+      currentRoute: t,
+      renderToolbar: n
+    } = e, c = i.useContext(s.AnalyticsContext), h = f || t === u.Z5c.APPLICATION_LIBRARY_SETTINGS;
+    return <a.Z className={p.libraryHeader} toolbar={null == n ? true : n()}>{<a.Z.Icon icon={l.vqy} aria-hidden={true} />}{<a.Z.Title>{d.intl.string(d.t.cw57am)}</a.Z.Title>}{<a.Z.Divider />}{<l.njP type={"top-pill"} selectedItem={t} onItemSelect={function(e) {
+          var n, r;
+          e !== t && (0, o.uL)(e, {
+            state: {
+              analyticsSource: (n = function(e) {
+                for (var t = 1; t < arguments.length; t++) {
+                  var n = null != arguments[t] ? arguments[t] : {},
+                    r = Object.keys(n);
+                  "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+                    return Object.getOwnPropertyDescriptor(n, e).enumerable
+                  }))), r.forEach(function(t) {
+                    var r;
+                    r = n[t], t in e ? Object.defineProperty(e, t, {
+                      value: r,
+                      enumerable: true,
+                      configurable: true,
+                      writable: true
+                    }) : e[t] = r
+                  })
+                }
+                return e
+              }({}, c.location), r = r = {
+                section: u.jXE.TABS,
+                object: u.qAy.NAVIGATION_LINK
+              }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
+                var n = Object.keys(e);
+                if (Object.getOwnPropertySymbols) {
+                  var r = Object.getOwnPropertySymbols(e);
+                  n.push.apply(n, r)
+                }
+                return n
+              })(Object(r)).forEach(function(e) {
+                Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(r, e))
+              }), n)
+            }
+          })
+        }}>{<l.njP.Item id={u.Z5c.APPLICATION_LIBRARY}>{d.intl.string(d.t.p7ARTE)}</l.njP.Item>}{h ? <l.njP.Item id={u.Z5c.APPLICATION_LIBRARY_SETTINGS}>{d.intl.string(d.t["3D5yo6"])}</l.njP.Item> : null}</l.njP>}</a.Z>
+  })

@@ -1,11 +1,12 @@
 /** Chunk was on web.js **/
+/** chunk id: 635477, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   L: () => a,
   Z: () => s
 });
-var r = n(729594),
-  i = n(981631);
+var Chunk729594 = require("./729594.js"),
+  Chunk981631 = require("./981631.js");
 let o = "music.apple.com";
 
 function a(e) {
@@ -14,11 +15,11 @@ function a(e) {
 
 function s(e) {
   var t;
-  if (null == e.url || (null == (t = e.provider) ? void 0 : t.name) !== "Apple Music" || e.type !== i.hBH.ARTICLE && e.type !== i.hBH.LINK) return !1;
+  if (null == e.url || (null == (t = e.provider) ? true : t.name) !== "Apple Music" || e.type !== i.hBH.ARTICLE && e.type !== i.hBH.LINK) returnfalse;
   try {
-    let t = r.parse(e.url, !0).host;
+    let t = r.parse(e.url, true).host;
     return a(t)
   } catch (e) {
-    return !1
+    returnfalse
   }
 }

@@ -1,5 +1,6 @@
 /** Chunk was on 1272 **/
-e.exports = {
+/** chunk id: 795243, original params: e,t,n (module,exports,require) **/
+module.exports = {
   scroller: "scroller__68617",
   voiceUsers: "voiceUsers__68617",
   collapsed: "collapsed__68617",

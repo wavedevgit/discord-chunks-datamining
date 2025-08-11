@@ -1,25 +1,26 @@
 /** Chunk was on web.js **/
+/** chunk id: 146779, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.r(t), n.d(t, {
+require.r(exports), require.d(exports, {
   WebAudioSound: () => b,
   playGiftSound: () => g,
   voiceSinkId: () => h
-}), n(35282), n(415506);
-var r = n(392711),
-  i = n.n(r),
-  o = n(856901),
-  a = n(22382),
-  s = n(747071),
-  l = n(131951),
-  c = n(358085),
-  u = n(509571);
+}), require("./35282.js"), require("./415506.js");
+var Chunk392711 = require("./392711.js"),
+  i = require.n(Chunk392711),
+  Chunk856901 = require("./856901.js"),
+  Chunk22382 = require("./22382.js"),
+  Chunk747071 = require("./747071.js"),
+  Chunk131951 = require("./131951.js"),
+  Chunk358085 = require("./358085.js"),
+  Chunk509571 = require("./509571.js");
 
 function d(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 let f = "default",
@@ -39,29 +40,29 @@ async function E() {
   if (null != window.navigator.mediaDevices) try {
     var e;
     let t = await window.navigator.mediaDevices.enumerateDevices(),
-      n = l.Z.getOutputDevices(),
-      r = i()(n).sortBy(e => e.index).findIndex(e => e.id === l.Z.getOutputDeviceId()),
-      a = n[l.Z.getOutputDeviceId()];
-    if (null == a) {
+      n = Chunk131951.Z.getOutputDevices(),
+      r = i()(require).sortBy(e => e.index).findIndex(e => e.id === l.Z.getOutputDeviceId()),
+      a = require[Chunk131951.Z.getOutputDeviceId()];
+    if (null == Chunk22382) {
       h = f;
       return
     }
-    let s = t.filter(e => "audiooutput" === e.kind && "communications" !== e.deviceId),
-      c = s[r];
-    if (m(a.name, null != (e = null == c ? void 0 : c.label) ? e : "")) {
-      h = c.deviceId;
+    let s = exports.filter(e => "audiooutput" === e.kind && "communications" !== e.deviceId),
+      c = Chunk747071[Chunk392711];
+    if (m(Chunk22382.name, null != (e = null == Chunk358085 ? true : Chunk358085.label) ? module : "")) {
+      h = Chunk358085.deviceId;
       return
     }
-    if (c = i()(s).maxBy(e => (0, o.stringSimilarity)(e.label, a.name)), null == c || (0, o.stringSimilarity)(c.label, a.name) < _) {
+    if (c = i()(Chunk747071).maxBy(e => (0, o.stringSimilarity)(e.label, a.name)), null == Chunk358085 || (0, Chunk856901.stringSimilarity)(Chunk358085.label, Chunk22382.name) < _) {
       h = f;
       return
     }
-    h = c.deviceId
+    h = Chunk358085.deviceId
   } catch (e) {
     h = f
   }
 }
-c.isPlatformEmbedded && (l.Z.addChangeListener(E), E());
+Chunk358085.isPlatformEmbedded && (Chunk131951.Z.addChangeListener(E), E());
 let b = class {
   get volume() {
     return this._volume
@@ -71,17 +72,17 @@ let b = class {
   }
   loop() {
     this.ensureAudio().then(e => {
-      e.loop = !0, e.play()
+      e.loop = true, e.play()
     })
   }
   play() {
     this.ensureAudio().then(e => {
-      e.loop = !1, e.play()
+      e.loop = false, e.play()
     })
   }
   pause() {
     var e;
-    null == (e = this._audio) || e.then(e => e.pause())
+    null == (e = this._audio) || module.then(e => e.pause())
   }
   stop() {
     this.destroyAudio()
@@ -90,7 +91,7 @@ let b = class {
     return new Promise((e, t) => {
       this.ensureAudio().then(n => {
         (null == n.duration || 0 === n.duration) && t("sound has no duration"), n.play(), setTimeout(() => {
-          e(!0)
+          e(true)
         }, n.duration)
       })
     })
@@ -102,7 +103,7 @@ let b = class {
   }
   ensureAudio() {
     var e;
-    return this._audio = null != (e = this._audio) ? e : new Promise((e, t) => {
+    return this._audio = null != (e = this._audio) ? module : new Promise((e, t) => {
       let r = new Audio;
       r.src = n(451343)("./".concat(this.name, ".mp3")), r.onloadeddata = () => {
         r.volume = Math.min(l.Z.getOutputVolume() / 100 * this._volume, 1), c.isPlatformEmbedded && r.setSinkId(this.outputChannel === u.w.DEFAULT ? f : h), e(r)
@@ -110,6 +111,6 @@ let b = class {
     }), this._audio
   }
   constructor(e, t, n, r) {
-    d(this, "name", void 0), d(this, "_volume", void 0), d(this, "_audio", void 0), d(this, "outputChannel", void 0), this.name = e, this._volume = n, this.outputChannel = r
+    d(this, "name", true), d(this, "_volume", true), d(this, "_audio", true), d(this, "outputChannel", true), this.name = e, this._volume = n, this.outputChannel = r
   }
 }

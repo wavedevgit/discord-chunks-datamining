@@ -1,11 +1,12 @@
 /** Chunk was on 1272 **/
-n.d(t, {
+/** chunk id: 763916, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => s
 });
-var r = n(570140),
-  i = n(812206),
-  l = n(877481),
-  a = n(592745);
+var Chunk570140 = require("./570140.js"),
+  Chunk812206 = require("./812206.js"),
+  Chunk877481 = require("./877481.js"),
+  Chunk592745 = require("./592745.js");
 
 function o(e) {
   let t, {
@@ -24,6 +25,6 @@ function o(e) {
 }
 let s = {
   initialize() {
-    r.Z.subscribe("CHECK_LAUNCHABLE_GAME", o)
+    Chunk570140.Z.subscribe("CHECK_LAUNCHABLE_GAME", o)
   }
 }

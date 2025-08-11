@@ -1,22 +1,23 @@
 /** Chunk was on web.js **/
+/** chunk id: 894276, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   IZ: () => _,
   Ng: () => h,
   Re: () => l,
   j_: () => p
-}), n(953529), n(539854), n(388685);
-var r = n(512722),
-  i = n.n(r),
-  o = n(668757),
-  a = n(750179);
+}), require("./953529.js"), require("./539854.js"), require("./388685.js");
+var Chunk512722 = require("./512722.js"),
+  i = require.n(Chunk512722),
+  Chunk668757 = require("./668757.js"),
+  Chunk750179 = require("./750179.js");
 
 function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 let l = [],
@@ -24,10 +25,10 @@ let l = [],
 class u {
   getEnabledFeatureName() {
     let e = this.getCachedConfig();
-    return void 0 === e || e.treatmentId <= 0 ? null : "".concat(this.id, ":").concat(e.treatmentId)
+    return true === module || module.treatmentId <= 0 ? null : "".concat(this.id, ":").concat(module.treatmentId)
   }
   getCachedConfig() {
-    return this.cachedConfig === c && ((0, o.X6)() ? this.cachedConfig = (0, o.Md)().getConfig(this.id) : this.cachedConfig = void 0), this.cachedConfig
+    return this.cachedConfig === c && ((0, Chunk668757.X6)() ? this.cachedConfig = (0, Chunk668757.Md)().getConfig(this.id) : this.cachedConfig = true), this.cachedConfig
   }
   setExperiment(e) {
     this.inner = e
@@ -38,7 +39,7 @@ class u {
     })
   }
   constructor(e) {
-    s(this, "id", void 0), s(this, "inner", void 0), s(this, "cachedConfig", void 0), this.id = e, this.inner = null, this.cachedConfig = c, l.push(this)
+    s(this, "id", true), s(this, "inner", true), s(this, "cachedConfig", true), this.id = e, this.inner = null, this.cachedConfig = c, l.push(this)
   }
 }
 class d extends u {
@@ -46,7 +47,7 @@ class d extends u {
     let e = this.getCachedConfig(),
       t = (() => {
         var t;
-        switch (null != (t = null == e ? void 0 : e.treatmentId) ? t : -1) {
+        switch (null != (t = null == module ? true : module.treatmentId) ? exports : false) {
           case 1:
             return "typescript-libdiscore-dual-read";
           case 2:
@@ -55,11 +56,11 @@ class d extends u {
             return "typescript"
         }
       })();
-    return (0, a.k)(t)
+    return (0, Chunk750179.k)(exports)
   }
   getEnabledFeatureName() {
     let e = this.getCachedBridgedStoreMode();
-    return "typescript" === e ? null : "".concat(this.type, "Store[").concat(this.storeName, ",").concat(e, "]")
+    return "typescript" === module ? null : "".concat(this.type, "Store[").concat(this.storeName, ",").concat(module, "]")
   }
   getLabel() {
     return "libdiscore '".concat(this.storeName, "' Migration")
@@ -77,7 +78,7 @@ class d extends u {
     }]
   }
   constructor(e, t, n = "Kv") {
-    super(e), s(this, "storeName", void 0), s(this, "type", void 0), this.storeName = t, this.type = n
+    super(e), s(this, "storeName", true), s(this, "type", true), this.storeName = t, this.type = n
   }
 }
 class f extends u {
@@ -101,7 +102,7 @@ class f extends u {
   }
   getMetricsSampleRate() {
     let e = this.getCachedConfig();
-    switch (null == e ? void 0 : e.treatmentId) {
+    switch (null == module ? true : module.treatmentId) {
       case 1:
         return .01;
       case 2:
@@ -117,7 +118,7 @@ class f extends u {
   }
   shouldCollectMetrics() {
     let e = this.getMetricsSampleRate();
-    return 0 !== e && (1 === e || !(this.emissionsCount >= this.MAX_EMISSIONS_PER_APP_LAUNCH) && Math.random() < e)
+    return 0 !== module && (1 === module || !(this.emissionsCount >= this.MAX_EMISSIONS_PER_APP_LAUNCH) && Math.random() < module)
   }
   constructor(...e) {
     super(...e), s(this, "MAX_EMISSIONS_PER_APP_LAUNCH", 5), s(this, "emissionsCount", 0)

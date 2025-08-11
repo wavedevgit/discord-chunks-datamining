@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 24008, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   container: "container__2d263",
   volumeButton: "volumeButton__2d263",
   volumeButtonSlider: "volumeButtonSlider__2d263",

@@ -1,47 +1,48 @@
 /** Chunk was on 1272 **/
-n.d(t, {
+/** chunk id: 853678, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => N
-}), n(388685), n(190126), n(368063), n(65234), n(111804), n(490233), n(97749), n(997841);
-var r = n(45792),
-  i = n(230711),
-  l = n(782568),
-  a = n(636449),
-  o = n(317381),
-  s = n(611577),
-  c = n(840074),
-  u = n(16609),
-  d = n(812206),
-  p = n(12647),
-  f = n(630388),
-  h = n(49012),
-  g = n(358085),
-  m = n(996106),
-  b = n(914946),
-  _ = n(452426),
-  O = n(186901),
-  E = n(981631),
-  y = n(701488),
-  v = n(674563);
-let I = new Set([y.Fu, y.JT]),
+}), require("./388685.js"), require("./190126.js"), require("./368063.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js"), require("./997841.js");
+var Chunk45792 = require("./45792.js"),
+  Chunk230711 = require("./230711.js"),
+  Chunk782568 = require("./782568.js"),
+  Chunk636449 = require("./636449.js"),
+  Chunk317381 = require("./317381.js"),
+  Chunk611577 = require("./611577.js"),
+  Chunk840074 = require("./840074.jsx"),
+  Chunk16609 = require("./16609.js"),
+  Chunk812206 = require("./812206.js"),
+  Chunk12647 = require("./12647.js"),
+  Chunk630388 = require("./630388.js"),
+  Chunk49012 = require("./49012.js"),
+  Chunk358085 = require("./358085.js"),
+  Chunk996106 = require("./996106.js"),
+  Chunk914946 = require("./914946.js"),
+  Chunk452426 = require("./452426.js"),
+  Chunk186901 = require("./186901.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk701488 = require("./701488.js"),
+  Chunk674563 = require("./674563.js");
+let I = new Set([Chunk701488.Fu, Chunk701488.JT]),
   C = new Set(["www.nytimes.com", "apps.apple.com", "play.google.com"]),
   S = new Map([
-    [v.Vt, {
+    [Chunk674563.Vt, {
       trustedHosts: C,
       trustedUntilEpochMs: new Date("2027-01-15T00:00:00").valueOf()
     }],
-    [v.fd, {
+    [Chunk674563.fd, {
       trustedHosts: C,
       trustedUntilEpochMs: new Date("2027-01-15T00:00:00").valueOf()
     }],
-    [v.He, {
+    [Chunk674563.He, {
       trustedHosts: C,
       trustedUntilEpochMs: new Date("2027-01-15T00:00:00").valueOf()
     }]
   ]),
   N = {
-    [E.Etm.OPEN_EXTERNAL_LINK]: {
+    [Chunk981631.Etm.OPEN_EXTERNAL_LINK]: {
       scope: {
-        [O.Gp.ANY]: [O.wE, O.b_]
+        [Chunk186901.Gp.ANY]: [Chunk186901.wE, Chunk186901.b_]
       },
       validation: e => (0, _.Z)(e).required().keys({
         url: e.string().required()
@@ -61,28 +62,28 @@ let I = new Set([y.Fu, y.JT]),
             o = e.toString();
           if (g.isPlatformEmbedded) {
             let e = (0, a.R)() ? E.KJ3.ACTIVITY_POPOUT : null;
-            p.Z.focus(e, !0)
+            p.Z.focus(e, true)
           }
-          let c = d.Z.getApplication(null == (i = t.application) ? void 0 : i.id),
-            f = (0, u.p)(null == r ? void 0 : r.location),
-            m = (null == c ? void 0 : c.id) !== void 0 ? S.get(c.id) : void 0;
-          if (void 0 !== m && m.trustedUntilEpochMs >= Date.now() && m.trustedHosts.has(e.host)) return (0, l.Z)(o), Promise.resolve({
-            opened: !0
+          let c = d.Z.getApplication(null == (i = t.application) ? true : i.id),
+            f = (0, u.p)(null == r ? true : r.location),
+            m = (null == c ? true : c.id) !== true ? S.get(c.id) : true;
+          if (true !== m && m.trustedUntilEpochMs >= Date.now() && m.trustedHosts.has(e.host)) return (0, l.Z)(o), Promise.resolve({
+            opened: true
           });
           return new Promise(e => (0, h.q)({
             href: o,
-            shouldConfirm: !0,
+            shouldConfirm: true,
             onConfirm: () => {
               (0, l.Z)(o), e({
-                opened: !0
+                opened: true
               })
             },
             onCancel: () => {
               e({
-                opened: !1
+                opened: false
               })
             }
-          }, void 0, void 0, (0, s.z)({
+          }, true, true, (0, s.z)({
             application: c,
             channelId: f
           })))
@@ -93,10 +94,10 @@ let I = new Set([y.Fu, y.JT]),
         }
       }
     },
-    [E.Etm.NAVIGATE_TO_CONNECTIONS]: {
+    [Chunk981631.Etm.NAVIGATE_TO_CONNECTIONS]: {
       validation: e => (0, _.Z)(e),
       scope: {
-        [O.Gp.ANY]: [O.wE]
+        [Chunk186901.Gp.ANY]: [Chunk186901.wE]
       },
       handler(e) {
         let {
@@ -110,9 +111,9 @@ let I = new Set([y.Fu, y.JT]),
         i.Z.open(E.oAB.CONNECTIONS)
       }
     },
-    [E.Etm.SHARE_LINK]: (0, r.S)(E.Etm.SHARE_LINK, {
+    [Chunk981631.Etm.SHARE_LINK]: (0, Chunk45792.S)(Chunk981631.Etm.SHARE_LINK, {
       scope: {
-        [O.Gp.ANY]: [O.wE]
+        [Chunk186901.Gp.ANY]: [Chunk186901.wE]
       },
       handler(e) {
         var t;

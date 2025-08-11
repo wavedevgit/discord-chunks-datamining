@@ -1,5 +1,6 @@
 /** Chunk was on 1272 **/
-e.exports = {
+/** chunk id: 400709, original params: e,t,n (module,exports,require) **/
+module.exports = {
   layers: "layers__960e4",
   layer: "layer__960e4",
   animating: "animating__960e4",

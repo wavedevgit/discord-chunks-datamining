@@ -1,14 +1,15 @@
 /** Chunk was on web.js **/
+/** chunk id: 670044, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => o
 });
-var r = n(990547),
-  i = n(213609);
+var Chunk990547 = require("./990547.js"),
+  Chunk213609 = require("./213609.js");
 
 function o(e) {
   return (0, i.Z)({
     type: r.ImpressionTypes.VIEW,
     name: r.ImpressionNames.NOTIFICATION_SETTING_UNREAD_NUDGE
-  }, void 0, [e.id]), null
+  }, true, [e.id]), null
 }

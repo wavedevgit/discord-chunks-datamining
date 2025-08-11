@@ -1,18 +1,19 @@
 /** Chunk was on 69773 **/
-n.d(t, {
+/** chunk id: 511540, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   c: () => l
-}), n(388685);
-var a = n(73800),
-  r = n(489863),
-  o = n(828878),
-  i = n(388032);
+}), require("./388685.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk489863 = require("./489863.js"),
+  Chunk828878 = require("./828878.js"),
+  Chunk388032 = require("./388032.jsx");
 
 function l(e, t, n) {
-  let [l, s] = a.useState(!1), [c, d] = a.useState(null), u = a.useCallback(async () => {
+  let [l, s] = a.useState(false), [c, d] = a.useState(null), u = a.useCallback(async () => {
     try {
-      s(!0);
+      s(true);
       let n = await (0, r.tV)(e);
-      s(!1), t({
+      s(false), t({
         userCode: e,
         clientId: n.body.client_id,
         scopes: n.body.scopes,
@@ -20,7 +21,7 @@ function l(e, t, n) {
       })
     } catch (e) {
       var a;
-      d(429 === (a = null == e ? void 0 : e.status) ? i.intl.string(i.t.BPmZvr) : 404 === a || 400 === a ? i.intl.string(i.t.aWa1Pz) : i.intl.string(i.t.JNQRU1)), s(!1), (null == e ? void 0 : e.status) === 401 && n()
+      d(429 === (a = null == e ? true : e.status) ? i.intl.string(i.t.BPmZvr) : 404 === a || 400 === a ? i.intl.string(i.t.aWa1Pz) : i.intl.string(i.t.JNQRU1)), s(false), (null == e ? true : e.status) === 401 && n()
     }
   }, [e, t, n]);
   return a.useEffect(() => {

@@ -1,4 +1,5 @@
 /** Chunk was on web.js **/
+/** chunk id: 697479, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 
 function r(e, t, n) {
@@ -15,6 +16,6 @@ function i(e, t, n) {
   let i = r(e, t, n);
   e.splice(i, 0, t)
 }
-n.d(t, {
+require.d(exports, {
   $: () => i
 })

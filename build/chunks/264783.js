@@ -1,36 +1,37 @@
 /** Chunk was on web.js **/
+/** chunk id: 264783, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   A: () => s
-}), n(388685);
-var r = n(73800),
-  i = n(524437),
-  o = n(695346);
+}), require("./388685.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk524437 = require("./524437.js"),
+  Chunk695346 = require("./695346.js");
 
 function a() {
-  let [e, t] = r.useState("cozy");
-  return r.useEffect(() => {
+  let [e, t] = Chunk73800.useState("cozy");
+  return Chunk73800.useEffect(() => {
     let e = window.matchMedia("(min-width: 1024px) and (min-height: 820px)"),
       n = e => {
         t(e.matches ? "cozy" : "compact")
       };
-    return e.addEventListener("change", n), () => {
-      e.removeEventListener("change", n)
+    return module.addEventListener("change", require), () => {
+      module.removeEventListener("change", require)
     }
-  }, []), e
+  }, []), module
 }
 
 function s() {
-  let e = o.YC.useSetting(),
+  let e = Chunk695346.YC.useSetting(),
     t = a();
-  switch (e) {
-    case i.Pi.RESPONSIVE:
-      return t;
-    case i.Pi.COZY:
+  switch (module) {
+    case Chunk524437.Pi.RESPONSIVE:
+      return exports;
+    case Chunk524437.Pi.COZY:
       return "cozy";
-    case i.Pi.DEFAULT:
+    case Chunk524437.Pi.DEFAULT:
       return "default";
-    case i.Pi.COMPACT:
+    case Chunk524437.Pi.COMPACT:
       return "compact";
     default:
       return "default"

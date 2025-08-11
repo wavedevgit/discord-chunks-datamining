@@ -1,10 +1,11 @@
 /** Chunk was on web.js **/
+/** chunk id: 311819, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   H: () => i,
   J: () => o
-}), n(190126), n(368063), n(65234), n(111804), n(490233), n(97749), n(388685);
-var r = n(981631);
+}), require("./190126.js"), require("./368063.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js"), require("./388685.js");
+var Chunk981631 = require("./981631.js");
 
 function i(e) {
   let {
@@ -26,7 +27,7 @@ function o(e) {
   if (null != n) return n;
   let a = new URLSearchParams;
   a.set("client_id", t);
-  let s = null != o && Object.values(o).some(e => (null == e ? void 0 : e.oauth2_install_params) != null || (null == e ? void 0 : e.oauth2InstallParams) != null);
+  let s = null != o && Object.values(o).some(e => (null == e ? true : e.oauth2_install_params) != null || (null == e ? true : e.oauth2InstallParams) != null);
   if (null != i && !s) {
     let {
       permissions: e,

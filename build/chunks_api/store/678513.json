@@ -1,1 +1,0 @@
-{"id":"678513","type":"store","data":{"name":"SignUpStore","functions":[{"name":"getActiveUserSignUp","args":[]},{"name":"getActiveGuildSignUp","args":["e"]},{"name":"hasCompletedTarget","args":["e"]}],"events":["ENABLE_USER_SIGN_UP","ENABLE_GUILD_SIGN_UP","COMPLETE_SIGN_UP","DISMISS_SIGN_UP"]},"fromModule":{"id":"21247"}}

@@ -1,10 +1,11 @@
 /** Chunk was on web.js **/
+/** chunk id: 833157, original params: e (module,exports,re quire) **/
 "use strict";
 var t = function() {
   function e(e, t) {
     for (var n = 0; n < t.length; n++) {
       var r = t[n];
-      r.enumerable = r.enumerable || !1, r.configurable = !0, "value" in r && (r.writable = !0), Object.defineProperty(e, r.key, r)
+      r.enumerable = r.enumerable || false, r.configurable = true, "value" in r && (r.writable = true), Object.defineProperty(e, r.key, r)
     }
   }
   return function(t, n, r) {
@@ -15,11 +16,11 @@ var t = function() {
 function n(e, t) {
   if (!(e instanceof t)) throw TypeError("Cannot call a class as a function")
 }
-e.exports = function() {
+module.exports = function() {
   function e() {
-    n(this, e)
+    n(this, module)
   }
-  return t(e, [{
+  return t(module, [{
     key: "start",
     value: function(e, t, n, r) {}
   }, {
@@ -31,5 +32,5 @@ e.exports = function() {
       var t = this.__onEnd;
       this.__onEnd = null, t && t(e)
     }
-  }]), e
+  }]), module
 }()

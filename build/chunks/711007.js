@@ -1,11 +1,12 @@
 /** Chunk was on web.js **/
+/** chunk id: 711007, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   p: () => a
 });
-var r = n(73800),
-  i = n(409813),
-  o = n(882712);
+var Chunk73800 = require("./73800.js"),
+  Chunk409813 = require("./409813.js"),
+  Chunk882712 = require("./882712.js");
 
 function a(e, t, n) {
   r.useEffect(() => {

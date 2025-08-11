@@ -1,16 +1,17 @@
 /** Chunk was on 36878 **/
-n.d(t, {
+/** chunk id: 134582, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => s
 });
-var i = n(509613),
-  o = n(462354),
-  l = n(210176),
-  r = n(695346),
-  a = n(388032);
-let s = (0, i.qs)("VoiceActivityNotifications", {
-  useTitle: () => a.intl.string(a.t.wtk08f),
-  useSubtitle: () => a.intl.string(a.t.rngMNz),
-  useValue: r.d8.useSetting,
-  setValue: l.I,
-  usePredicate: () => (0, o.JN)("VoiceActivityNotifications")
+var Chunk509613 = require("./509613.js"),
+  Chunk462354 = require("./462354.js"),
+  Chunk210176 = require("./210176.js"),
+  Chunk695346 = require("./695346.js"),
+  Chunk388032 = require("./388032.js");
+let s = (0, Chunk509613.qs)("VoiceActivityNotifications", {
+  useTitle: () => Chunk388032.intl.string(Chunk388032.t.wtk08f),
+  useSubtitle: () => Chunk388032.intl.string(Chunk388032.t.rngMNz),
+  useValue: Chunk695346.d8.useSetting,
+  setValue: Chunk210176.I,
+  usePredicate: () => (0, Chunk462354.JN)("VoiceActivityNotifications")
 })

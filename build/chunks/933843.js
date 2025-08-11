@@ -1,8 +1,9 @@
 /** Chunk was on 34779 **/
-n.d(t, {
+/** chunk id: 933843, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   m: () => i
 });
-var r = n(37113);
+var Chunk37113 = require("./37113.js");
 
 function i(e, t) {
   return e === r.LY.RESOLUTION_720 && t !== r.ws.FPS_60

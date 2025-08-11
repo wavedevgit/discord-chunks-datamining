@@ -1,5 +1,6 @@
 /** Chunk was on web.js **/
-var r = n(895829),
+/** chunk id: 115040, original params: e,t,n (module,exports,re quire) **/
+var Chunk895829 = require("./895829.js"),
   i = /%[sdv%]/g,
   o = function(e) {
     var t = 1,
@@ -31,7 +32,7 @@ var r = n(895829),
   },
   s = ["v", "o", "s", "i", "u", "e", "p", "c", "b", "t", "r", "z", "a"],
   l = ["i", "c", "b", "a"];
-e.exports = function(e, t) {
+module.exports = function(e, t) {
   t = t || {}, null == e.version && (e.version = 0), null == e.name && (e.name = " "), e.media.forEach(function(e) {
     null == e.payloads && (e.payloads = "")
   });

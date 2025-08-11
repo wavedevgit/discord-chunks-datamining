@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 367753, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   sliderContainer: "sliderContainer__14ad3",
   slider: "slider__14ad3",
   betaBadge: "betaBadge__14ad3",

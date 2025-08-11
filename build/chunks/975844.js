@@ -1,15 +1,16 @@
 /** Chunk was on 86915 **/
+/** chunk id: 975844, original params: e,t,n (module,exports,require) **/
 "use strict";
-var i = n(98405),
-  l = n(209957),
-  r = n(146063),
-  s = n(967333),
+var Chunk98405 = require("./98405.js"),
+  Chunk209957 = require("./209957.js"),
+  Chunk146063 = require("./146063.js"),
+  Chunk967333 = require("./967333.js"),
   a = Array;
-i({
+Chunk98405({
   target: "Array",
-  proto: !0
+  proto: true
 }, {
   toReversed: function() {
-    return l(r(this), a)
+    return Chunk209957(Chunk146063(this), a)
   }
-}), s("toReversed")
+}), Chunk967333("toReversed")

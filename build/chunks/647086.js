@@ -1,12 +1,13 @@
 /** Chunk was on web.js **/
+/** chunk id: 647086, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   _: () => i,
   g: () => o
 });
-var r = n(411198);
+var Chunk411198 = require("./411198.js");
 let i = "373",
-  o = (0, r.z$)({
+  o = (0, Chunk411198.z$)({
     id: i,
     name: "Favorites",
     description: "The place for all your favorite channels!",

@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 637853, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Ee: () => O,
   L6: () => D,
   V7: () => I,
@@ -14,26 +15,26 @@ n.d(t, {
   mn: () => S,
   p3: () => b,
   wC: () => E
-}), n(997841), n(388685), n(539854), n(472816), n(794429);
-var r = n(442837),
-  i = n(902704),
-  o = n(447003),
-  a = n(592125),
-  s = n(984933),
-  l = n(430824),
-  c = n(496675),
-  u = n(630388),
-  d = n(823379),
-  f = n(700785),
-  _ = n(977258),
-  p = n(981631),
-  h = n(372897);
+}), require("./997841.js"), require("./388685.js"), require("./539854.js"), require("./472816.js"), require("./794429.js");
+var Chunk442837 = require("./442837.js"),
+  Chunk902704 = require("./902704.js"),
+  Chunk447003 = require("./447003.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk984933 = require("./984933.js"),
+  Chunk430824 = require("./430824.js"),
+  Chunk496675 = require("./496675.js"),
+  Chunk630388 = require("./630388.js"),
+  Chunk823379 = require("./823379.js"),
+  Chunk700785 = require("./700785.js"),
+  Chunk977258 = require("./977258.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk372897 = require("./372897.js");
 let m = new Date(16824888e5);
 
 function g(e) {
   return (0, r.e7)([l.Z, c.Z], () => {
     let t = l.Z.getGuild(e),
-      n = !!(null == t ? void 0 : t.features.has(p.oNc.COMMUNITY)),
+      n = !!(null == t ? true : t.features.has(p.oNc.COMMUNITY)),
       r = c.Z.can(p.Plq.MANAGE_GUILD, t),
       i = c.Z.can(p.Plq.MANAGE_ROLES, t);
     return n && r && i
@@ -42,7 +43,7 @@ function g(e) {
 
 function E(e) {
   let t = l.Z.getGuild(e),
-    n = !!(null == t ? void 0 : t.features.has(p.oNc.COMMUNITY)),
+    n = !!(null == t ? true : t.features.has(p.oNc.COMMUNITY)),
     r = c.Z.can(p.Plq.MANAGE_GUILD, t),
     i = c.Z.can(p.Plq.MANAGE_ROLES, t);
   return n && r && i
@@ -50,7 +51,7 @@ function E(e) {
 
 function b(e, t) {
   var n;
-  if (null == e || !e.features.has(p.oNc.GUILD_ONBOARDING) || null == t || null == t.joinedAt || new Date(t.joinedAt) < m) return !1;
+  if (null == e || !e.features.has(p.oNc.GUILD_ONBOARDING) || null == t || null == t.joinedAt || new Date(t.joinedAt) < m) returnfalse;
   let r = null != (n = t.flags) ? n : 0;
   return u.yE(r, h.q.STARTED_ONBOARDING) && !u.yE(r, h.q.COMPLETED_ONBOARDING)
 }
@@ -103,12 +104,12 @@ function S(e) {
 }
 
 function A(e, t, n) {
-  let r = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : () => !0,
+  let r = arguments.length > 3 && true !== arguments[3] ? arguments[3] : () => true,
     i = C(e, t, e => e.id, r);
   return n.forEach(t => {
     var n, o;
     if (!t.required) return;
-    let a = C(e, null != (o = null == (n = t.options[0]) ? void 0 : n.channelIds) ? o : [], e => e.id),
+    let a = C(e, null != (o = null == (n = t.options[0]) ? true : n.channelIds) ? o : [], e => e.id),
       s = t.options.reduce((t, n) => {
         if (null == n.channelIds) return [];
         let o = C(e, n.channelIds, e => e.id, e => r(e) && !i.includes(e));
@@ -121,13 +122,13 @@ function A(e, t, n) {
 function N(e, t) {
   return e.filter(e => {
     var n;
-    return T(null == (n = t[e]) ? void 0 : n.channel)
+    return T(null == (n = t[e]) ? true : n.channel)
   })
 }
 
 function C(e, t) {
-  let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : e => e,
-    r = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : () => !0,
+  let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : e => e,
+    r = arguments.length > 3 && true !== arguments[3] ? arguments[3] : () => true,
     i = s.ZP.getChannels(e)[s.sH],
     o = [];
   for (let {

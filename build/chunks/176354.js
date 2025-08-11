@@ -1,26 +1,27 @@
 /** Chunk was on web.js **/
+/** chunk id: 176354, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   B6: () => I,
   ZP: () => v,
   qc: () => T
-}), n(388685), n(704826), n(35282), n(539854);
-var r = n(738774),
-  i = n(906411),
-  o = n(889564),
-  a = n(131704),
-  s = n(496675),
-  l = n(594174),
-  c = n(768581),
-  u = n(563114),
-  d = n(956664),
-  f = n(74538),
-  _ = n(981631),
-  p = n(185923);
+}), require("./388685.js"), require("./704826.js"), require("./35282.js"), require("./539854.js");
+var Chunk738774 = require("./738774.js"),
+  Chunk906411 = require("./906411.js"),
+  Chunk889564 = require("./889564.js"),
+  Chunk131704 = require("./131704.js"),
+  Chunk496675 = require("./496675.js"),
+  Chunk594174 = require("./594174.js"),
+  Chunk768581 = require("./768581.js"),
+  Chunk563114 = require("./563114.js"),
+  Chunk956664 = require("./956664.js"),
+  Chunk74538 = require("./74538.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk185923 = require("./185923.js");
 let h = 2097152,
-  m = new Set([p.Z5.PREMIUM_LOCKED, p.Z5.ROLE_SUBSCRIPTION_LOCKED]),
-  g = new Set([...m, p.Z5.GUILD_SUBSCRIPTION_UNAVAILABLE, p.Z5.ROLE_SUBSCRIPTION_UNAVAILABLE]),
-  E = new Set([p.Z5.DISALLOW_CUSTOM, p.Z5.DISALLOW_EXTERNAL, p.Z5.GUILD_SUBSCRIPTION_UNAVAILABLE, p.Z5.ONLY_GUILD_EMOJIS_ALLOWED]);
+  m = new Set([Chunk185923.Z5.PREMIUM_LOCKED, Chunk185923.Z5.ROLE_SUBSCRIPTION_LOCKED]),
+  g = new Set([...m, Chunk185923.Z5.GUILD_SUBSCRIPTION_UNAVAILABLE, Chunk185923.Z5.ROLE_SUBSCRIPTION_UNAVAILABLE]),
+  E = new Set([Chunk185923.Z5.DISALLOW_CUSTOM, Chunk185923.Z5.DISALLOW_EXTERNAL, Chunk185923.Z5.GUILD_SUBSCRIPTION_UNAVAILABLE, Chunk185923.Z5.ONLY_GUILD_EMOJIS_ALLOWED]);
 
 function b(e) {
   return e.type === i.B.GUILD || null != e.guildId
@@ -34,7 +35,7 @@ function O(e) {
   let {
     emoji: t,
     channel: n,
-    guildId: i = null == n ? void 0 : n.getGuildId(),
+    guildId: i = null == n ? true : n.getGuildId(),
     intention: c,
     forceIncludeExternalGuilds: u
   } = e;
@@ -52,15 +53,15 @@ function O(e) {
     if (c === p.Hz.STATUS) return p.Z5.PREMIUM_LOCKED;
     else if (!t.managed) return p.Z5.PREMIUM_LOCKED
   }
-  return (0, o.Fv)(t, null != i ? i : void 0) ? (0, r.Ol)(t.guildId) ? p.Z5.ROLE_SUBSCRIPTION_UNAVAILABLE : p.Z5.ROLE_SUBSCRIPTION_LOCKED : !t.animated || f.ZP.canUseAnimatedEmojis(E) || (0, o.yH)(t) ? null : p.Z5.PREMIUM_LOCKED
+  return (0, o.Fv)(t, null != i ? i : true) ? (0, r.Ol)(t.guildId) ? p.Z5.ROLE_SUBSCRIPTION_UNAVAILABLE : p.Z5.ROLE_SUBSCRIPTION_LOCKED : !t.animated || f.ZP.canUseAnimatedEmojis(E) || (0, o.yH)(t) ? null : p.Z5.PREMIUM_LOCKED
 }
 let v = {
   sanitizeEmojiName(e) {
     for (e = e.replace(p.sW, "").slice(0, p.Yc); e.length < 2;) e += "_";
     return e
   },
-  filterUnsupportedEmojis: u.Z.filterUnsupportedEmojis,
-  getURL: u.Z.getURL,
+  filterUnsupportedEmojis: Chunk563114.Z.filterUnsupportedEmojis,
+  getURL: Chunk563114.Z.getURL,
   isInternalEmojiForGuildId: y,
   getEmojiUnavailableReason: O,
   isCustomEmoji: b,
@@ -70,7 +71,7 @@ let v = {
       channel: n,
       guildId: r,
       intention: i
-    } = e, o = new Set, a = [], s = 0, l = !1;
+    } = e, o = new Set, a = [], s = 0, l = false;
     for (let e of t) {
       let t = O({
         emoji: e,
@@ -82,7 +83,7 @@ let v = {
         a.push(e);
         continue
       }
-      E.has(t) || a.push(e), g.has(t) && (null != e.id && o.add(e.id), m.has(t) && (l || t !== p.Z5.PREMIUM_LOCKED || (l = !0), s++))
+      E.has(t) || a.push(e), g.has(t) && (null != e.id && o.add(e.id), m.has(t) && (l || t !== p.Z5.PREMIUM_LOCKED || (l = true), s++))
     }
     return {
       emojisDisabled: o,
@@ -105,7 +106,7 @@ let v = {
       channel: n,
       guildId: r,
       intention: i
-    } = e, o = !1, a = 0;
+    } = e, o = false, a = 0;
     for (let e of t) {
       let t = O({
         emoji: e,
@@ -113,7 +114,7 @@ let v = {
         intention: i,
         guildId: r
       });
-      t === p.Z5.PREMIUM_LOCKED ? (o = !0, a++) : t === p.Z5.GUILD_SUBSCRIPTION_UNAVAILABLE && a++
+      t === p.Z5.PREMIUM_LOCKED ? (o = true, a++) : t === p.Z5.GUILD_SUBSCRIPTION_UNAVAILABLE && a++
     }
     return o && a === t.length
   },
@@ -132,7 +133,7 @@ async function I(e) {
 }
 
 function T(e) {
-  let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 32,
+  let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : 32,
     {
       id: n,
       name: r,

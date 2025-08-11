@@ -1,39 +1,40 @@
 /** Chunk was on web.js **/
+/** chunk id: 392370, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Q2: () => H,
   pe: () => V
-}), n(388685), n(539854), n(35282), n(472816), n(794429);
-var r = n(73800),
-  i = n(392711),
-  o = n.n(i),
-  a = n(373793),
-  s = n(288385),
-  l = n(442837),
-  c = n(911969),
-  u = n(127255),
-  d = n(654455),
-  f = n(213459),
-  _ = n(807169),
-  p = n(104793),
-  h = n(822245),
-  m = n(471518),
-  g = n(177653),
-  E = n(631827),
-  b = n(827498),
-  y = n(783097),
-  O = n(689079),
-  v = n(761652);
+}), require("./388685.js"), require("./539854.js"), require("./35282.js"), require("./472816.js"), require("./794429.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk392711 = require("./392711.js"),
+  o = require.n(Chunk392711),
+  Chunk373793 = require("./373793.js"),
+  Chunk288385 = require("./288385.js"),
+  Chunk442837 = require("./442837.js"),
+  Chunk911969 = require("./911969.js"),
+  Chunk127255 = require("./127255.js"),
+  Chunk654455 = require("./654455.js"),
+  Chunk213459 = require("./213459.js"),
+  Chunk807169 = require("./807169.js"),
+  Chunk104793 = require("./104793.js"),
+  Chunk822245 = require("./822245.js"),
+  Chunk471518 = require("./471518.js"),
+  Chunk177653 = require("./177653.js"),
+  Chunk631827 = require("./631827.js"),
+  Chunk827498 = require("./827498.js"),
+  Chunk783097 = require("./783097.js"),
+  Chunk689079 = require("./689079.js"),
+  Chunk761652 = require("./761652.js");
 
 function I(e) {
   let {
     context: t,
     onlyWithCommands: n,
     includeBuiltIn: i,
-    allowFetch: o = !0,
+    allowFetch: o = true,
     includeEmbeddedApps: a,
     includeNonEmbeddedApps: s
-  } = e, l = "channel" === t.type ? t.channel : void 0, u = (0, _.Hs)(l, [c.yU.CHAT]).hasBaseAccessPermissions, d = (0, f.em)(t, u, o), p = (0, f.PL)(u, o), h = r.useCallback(e => {
+  } = e, l = "channel" === t.type ? t.channel : true, u = (0, _.Hs)(l, [c.yU.CHAT]).hasBaseAccessPermissions, d = (0, f.em)(t, u, o), p = (0, f.PL)(u, o), h = r.useCallback(e => {
     let t = e.descriptor.application;
     return null != t && (!!(a && (0, y.ye)(t)) || null != t && s && !(0, y.ye)(t) && (!n || Object.keys(e.commands).length > 0))
   }, [a, s, n]), m = [], g = new Set;
@@ -49,7 +50,7 @@ function I(e) {
     }
   return s && i && m.push(y.Wx), {
     apps: m,
-    loading: (null == d ? void 0 : d.fetchState.fetching) === !0 || (null == p ? void 0 : p.fetchState.fetching) === !0
+    loading: (null == d ? true : d.fetchState.fetching) === true || (null == p ? true : p.fetchState.fetching) === true
   }
 }
 
@@ -57,13 +58,13 @@ function T(e) {
   var t, n;
   let {
     context: i,
-    includeBuiltIn: o = !0,
-    allowFetch: a = !0
-  } = e, s = (0, f.em)(i, !0, a), l = (0, f.PL)(!0, a);
+    includeBuiltIn: o = true,
+    allowFetch: a = true
+  } = e, s = (0, f.em)(i, true, a), l = (0, f.PL)(true, a);
   return r.useMemo(() => {
     var e, t, n, r, a;
-    let c = null != (n = null == (e = s.result) ? void 0 : e.sections) ? n : {},
-      u = null != (r = null == (t = l.result) ? void 0 : t.sections) ? r : {},
+    let c = null != (n = null == (e = s.result) ? true : e.sections) ? n : {},
+      u = null != (r = null == (t = l.result) ? true : t.sections) ? r : {},
       d = [...Object.keys(c), ...Object.keys(u).filter(e => !(e in c))];
     o && d.push(O.bi.BUILT_IN);
     let _ = [],
@@ -78,13 +79,13 @@ function T(e) {
     return {
       commands: _,
       commandSectionMap: p,
-      loading: !0 === s.fetchState.fetching || !0 === l.fetchState.fetching
+      loading: true === s.fetchState.fetching || true === l.fetchState.fetching
     }
-  }, [i, o, s.fetchState.fetching, null == (t = s.result) ? void 0 : t.sections, l.fetchState.fetching, null == (n = l.result) ? void 0 : n.sections])
+  }, [i, o, s.fetchState.fetching, null == (t = s.result) ? true : t.sections, l.fetchState.fetching, null == (n = l.result) ? true : n.sections])
 }
 
 function S(e) {
-  let t = (0, _.k)("channel" === e.type ? e.channel : void 0, [c.yU.CHAT, c.yU.PRIMARY_ENTRY_POINT]);
+  let t = (0, _.k)("channel" === e.type ? e.channel : true, [c.yU.CHAT, c.yU.PRIMARY_ENTRY_POINT]);
   return n => {
     let {
       context: r,
@@ -96,11 +97,11 @@ function S(e) {
       sectionCommands: l,
       isGuildInstalled: c,
       isUserInstalled: u
-    } = (0, f.If)(e, n.id), d = (null == r ? void 0 : r.guild_id) != null ? p.ML(null == s ? void 0 : s.permissions, r.guild_id, i, o, a) : null, _ = (null == r ? void 0 : r.guild_id) != null ? p.ZJ(null == s ? void 0 : s.permissions, r, r.guild_id) : null;
+    } = (0, f.If)(e, n.id), d = (null == r ? true : r.guild_id) != null ? p.ML(null == s ? true : s.permissions, r.guild_id, i, o, a) : null, _ = (null == r ? true : r.guild_id) != null ? p.ZJ(null == s ? true : s.permissions, r, r.guild_id) : null;
     return null == l || !(l.length > 0) || l.some(e => p.Ft(e, t, {
       applicationAllowedForUser: d,
       applicationAllowedForChannel: _,
-      commandBotId: null == s ? void 0 : s.botId,
+      commandBotId: null == s ? true : s.botId,
       isGuildInstalled: c,
       isUserInstalled: u
     }) === p.mF.ALLOWED)
@@ -122,16 +123,16 @@ function C(e) {
 function R(e) {
   return t => {
     var n, r;
-    let i = null == (n = (0, y.jD)(t)) ? void 0 : n.toLocaleLowerCase();
-    return null != (r = null == i ? void 0 : i.startsWith(e.toLocaleLowerCase())) && r
+    let i = null == (n = (0, y.jD)(t)) ? true : n.toLocaleLowerCase();
+    return null != (r = null == i ? true : i.startsWith(e.toLocaleLowerCase())) && r
   }
 }
 
 function P(e) {
   return t => {
     var n, r;
-    let i = null == (n = (0, y.jD)(t)) ? void 0 : n.toLocaleLowerCase();
-    return null != (r = null == i ? void 0 : i.includes(e.toLocaleLowerCase())) && r
+    let i = null == (n = (0, y.jD)(t)) ? true : n.toLocaleLowerCase();
+    return null != (r = null == i ? true : i.includes(e.toLocaleLowerCase())) && r
   }
 }
 
@@ -147,7 +148,7 @@ function D(e, t) {
 }
 
 function L(e) {
-  let t = (0, _.k)("channel" === e.type ? e.channel : void 0, [c.yU.CHAT]),
+  let t = (0, _.k)("channel" === e.type ? e.channel : true, [c.yU.CHAT]),
     n = {};
   return r => {
     let {
@@ -161,7 +162,7 @@ function L(e) {
         descriptor: t,
         isGuildInstalled: l,
         isUserInstalled: c
-      } = (0, f.If)(e, r.applicationId), u = (null == i ? void 0 : i.guild_id) != null ? p.ML(null == t ? void 0 : t.permissions, i.guild_id, o, a, s) : null, d = (null == i ? void 0 : i.guild_id) != null ? p.ZJ(null == t ? void 0 : t.permissions, i, i.guild_id) : null;
+      } = (0, f.If)(e, r.applicationId), u = (null == i ? true : i.guild_id) != null ? p.ML(null == t ? true : t.permissions, i.guild_id, o, a, s) : null, d = (null == i ? true : i.guild_id) != null ? p.ZJ(null == t ? true : t.permissions, i, i.guild_id) : null;
       n[r.applicationId] = {
         descriptor: t,
         applicationAllowedForUser: u,
@@ -180,7 +181,7 @@ function L(e) {
     return p.Ft(r, t, {
       applicationAllowedForUser: u,
       applicationAllowedForChannel: c,
-      commandBotId: null == l ? void 0 : l.botId,
+      commandBotId: null == l ? true : l.botId,
       isGuildInstalled: d,
       isUserInstalled: _
     }) === p.mF.ALLOWED
@@ -200,13 +201,13 @@ function M(e) {
 }
 
 function k(e) {
-  let t = null == e ? void 0 : e.split(" "),
+  let t = null == e ? true : e.split(" "),
     n = t[0],
     r = t.slice(1).join(" ");
   return e => {
     let t = e.untranslatedName,
       i = e.displayName;
-    return !!(t.startsWith(n) && t.split(" ").slice(1).join(" ").startsWith(r) || i.startsWith(n) && i.split(" ").slice(1).join(" ").startsWith(r)) || !1
+    return !!(t.startsWith(n) && t.split(" ").slice(1).join(" ").startsWith(r) || i.startsWith(n) && i.split(" ").slice(1).join(" ").startsWith(r)) || false
   }
 }
 
@@ -226,8 +227,8 @@ function U(e) {
         serverLocalizedName: i
       }
       of null != (n = t.options) ? n : [])
-      if (r.startsWith(e) || "".concat(t.untranslatedName, " ").concat(r).startsWith(e) || null != t.displayName && "".concat(t.displayName, " ").concat(r).startsWith(e) || null != i && (i.startsWith(e) || "".concat(t.untranslatedName, " ").concat(i).startsWith(e) || null != t.displayName && "".concat(t.displayName, " ").concat(i).startsWith(e))) return !0;
-    return !1
+      if (r.startsWith(e) || "".concat(t.untranslatedName, " ").concat(r).startsWith(e) || null != t.displayName && "".concat(t.displayName, " ").concat(r).startsWith(e) || null != i && (i.startsWith(e) || "".concat(t.untranslatedName, " ").concat(i).startsWith(e) || null != t.displayName && "".concat(t.displayName, " ").concat(i).startsWith(e))) returntrue;
+    returnfalse
   }
 }
 
@@ -239,8 +240,8 @@ function G(e) {
         serverLocalizedName: i
       }
       of null != (n = t.options) ? n : [])
-      if (r.includes(e) || (null == i ? void 0 : i.includes(e))) return !0;
-    return !1
+      if (r.includes(e) || (null == i ? true : i.includes(e))) returntrue;
+    returnfalse
   }
 }
 
@@ -265,9 +266,9 @@ function V(e) {
     query: n,
     commandLimit: i,
     applicationLimit: a,
-    searchesCommands: s = !0,
-    searchesBots: l = !0,
-    searchesActivities: c = !0
+    searchesCommands: s = true,
+    searchesBots: l = true,
+    searchesActivities: c = true
   } = e;
   n.startsWith("".concat(v.GI)) && (n = n.substring(1));
   let {
@@ -276,13 +277,13 @@ function V(e) {
     loading: _
   } = T({
     context: t,
-    includeBuiltIn: !0
+    includeBuiltIn: true
   }), {
     apps: p
   } = I({
     context: t,
-    onlyWithCommands: !0,
-    includeBuiltIn: !0,
+    onlyWithCommands: true,
+    includeBuiltIn: true,
     includeEmbeddedApps: c,
     includeNonEmbeddedApps: l
   }), h = (0, u.Z)({
@@ -292,7 +293,7 @@ function V(e) {
     filterPredicates: [L(t)],
     bucketPredicates: x(n),
     sortComparers: B({
-      channel: "channel" === t.type ? t.channel : void 0
+      channel: "channel" === t.type ? t.channel : true
     })
   }) : [], [s, d, i, t, n]), g = r.useMemo(() => {
     if (0 === m.length) return [];
@@ -352,13 +353,13 @@ function H(e) {
   let {
     context: t,
     query: n,
-    fetches: i = !0,
+    fetches: i = true,
     pageLimit: o = 1 / 0,
     entrypoint: c
   } = e;
   n.startsWith("".concat(v.GI)) && (n = n.substring(1));
   let u = c === b._b.VOICE,
-    d = "channel" === t.type ? t.channel.guild_id : void 0,
+    d = "channel" === t.type ? t.channel.guild_id : true,
     [f, _] = r.useState(1),
     p = r.useRef(f);
   p.current = f;
@@ -374,9 +375,9 @@ function H(e) {
         page: f,
         integrationType: a.Y.USER_INSTALL,
         minUserInstallCommandCount: 1,
-        excludeAppsWithCustomInstallUrl: !0,
+        excludeAppsWithCustomInstallUrl: true,
         excludeNonEmbeddedApps: u,
-        excludeEmbeddedAppsWithoutPrimaryEntryPointAppCommand: !0,
+        excludeEmbeddedAppsWithoutPrimaryEntryPointAppCommand: true,
         source: s.F.APP_LAUNCHER
       }),
       totalPages: null != (t = null == (e = g.Z.getSearchResults({
@@ -385,11 +386,11 @@ function H(e) {
         page: f,
         integrationType: a.Y.USER_INSTALL,
         minUserInstallCommandCount: 1,
-        excludeAppsWithCustomInstallUrl: !0,
+        excludeAppsWithCustomInstallUrl: true,
         excludeNonEmbeddedApps: u,
-        excludeEmbeddedAppsWithoutPrimaryEntryPointAppCommand: !0,
+        excludeEmbeddedAppsWithoutPrimaryEntryPointAppCommand: true,
         source: s.F.APP_LAUNCHER
-      })) ? void 0 : e.totalPages) ? t : 0
+      })) ? true : e.totalPages) ? t : 0
     }
   }, [n, d, f, u]), y = r.useMemo(() => Array.from({
     length: h === g.M.FETCHED || h === g.M.ERROR ? f : f - 1
@@ -401,11 +402,11 @@ function H(e) {
       page: t + 1,
       integrationType: a.Y.USER_INSTALL,
       minUserInstallCommandCount: 1,
-      excludeAppsWithCustomInstallUrl: !0,
+      excludeAppsWithCustomInstallUrl: true,
       excludeNonEmbeddedApps: u,
-      excludeEmbeddedAppsWithoutPrimaryEntryPointAppCommand: !0,
+      excludeEmbeddedAppsWithoutPrimaryEntryPointAppCommand: true,
       source: s.F.APP_LAUNCHER
-    })) ? void 0 : r.results) ? i : []
+    })) ? true : r.results) ? i : []
   }), [h, d, n, f, u]), O = r.useCallback(() => {
     let e = y.length;
     h === g.M.FETCHED && e === p.current && e > 0 && e < E && e < o && y[e - 1].length > 0 && (p.current++, _(e => e + 1))
@@ -422,9 +423,9 @@ function H(e) {
         page: n,
         integrationType: a.Y.USER_INSTALL,
         minUserInstallCommandCount: 1,
-        excludeAppsWithCustomInstallUrl: !0,
+        excludeAppsWithCustomInstallUrl: true,
         excludeNonEmbeddedApps: u,
-        excludeEmbeddedAppsWithoutPrimaryEntryPointAppCommand: !0,
+        excludeEmbeddedAppsWithoutPrimaryEntryPointAppCommand: true,
         source: s.F.APP_LAUNCHER
       }
     })

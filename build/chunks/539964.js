@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 539964, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   tierCards: "tierCards_be48d0",
   tierCard: "tierCard_be48d0",
   tierCardCurrentTier: "tierCardCurrentTier_be48d0",

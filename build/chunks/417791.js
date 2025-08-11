@@ -1,7 +1,8 @@
 /** Chunk was on 50448 **/
+/** chunk id: 417791, original params: t,r,n (module,exports,require) **/
 "use strict";
-var e = n(779688),
-  o = n(971428),
+var Chunk779688 = require("./779688.js"),
+  Chunk971428 = require("./971428.js"),
   i = /#|\.prototype\./,
   u = function(t, r) {
     var n = c[s(t)];
@@ -13,4 +14,4 @@ var e = n(779688),
   c = u.data = {},
   f = u.NATIVE = "N",
   a = u.POLYFILL = "P";
-t.exports = u
+module.exports = u

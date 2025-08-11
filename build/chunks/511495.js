@@ -1,13 +1,14 @@
 /** Chunk was on web.js **/
+/** chunk id: 511495, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   X: () => _,
   e: () => f
 });
-var r = n(579092),
-  i = n(128813);
+var Chunk579092 = require("./579092.js"),
+  Chunk128813 = require("./128813.js");
 let o = null,
-  a = new r.Yd("libdiscore");
+  a = new Chunk579092.Yd("libdiscore");
 
 function s(e) {
   a.error(e)
@@ -31,12 +32,12 @@ function d(e) {
 
 function f() {
   return null == o && (o = (async () => {
-    await i.mX();
-    let e = i.Qw();
-    e.installLogCallback(s, l, c, u, d), await e.initLibdiscore()
+    await Chunk128813.mX();
+    let e = Chunk128813.Qw();
+    module.installLogCallback(s, l, c, u, d), await module.initLibdiscore()
   })()), o
 }
 
 function _() {
-  return void 0 !== window._libdiscoreWasm
+  return true !== window._libdiscoreWasm
 }

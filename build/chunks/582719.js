@@ -1,2 +1,3 @@
 /** Chunk was on 2429 **/
-p.exports = c.p + "0640a78957378fbd.woff2"
+/** chunk id: 582719, original params: p,s,c (module,exports,require) **/
+module.exports = require.p + "0640a78957378fbd.woff2"

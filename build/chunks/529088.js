@@ -1,5 +1,6 @@
 /** Chunk was on 34779 **/
-e.exports = {
+/** chunk id: 529088, original params: e,t,n (module,exports,require) **/
+module.exports = {
   ragingDemon: "ragingDemon_ac6454",
   visible: "visible_ac6454",
   symbol: "symbol_ac6454",

@@ -1,37 +1,38 @@
 /** Chunk was on web.js **/
+/** chunk id: 462997, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   q: () => o
 });
-var r = n(481060),
-  i = n(228168);
+var Chunk481060 = require("./481060.js"),
+  Chunk228168 = require("./228168.js");
 let o = {
-  [i.lY.POPOUT]: {
-    avatarSize: r.EFr.SIZE_80,
+  [Chunk228168.lY.POPOUT]: {
+    avatarSize: Chunk481060.EFr.SIZE_80,
     avatarOffsetX: 10,
     avatarOffsetY: 4,
     bannerWidth: 300,
     bannerHeight: 105,
     themePadding: 4
   },
-  [i.lY.MODAL]: {
-    avatarSize: r.EFr.SIZE_120,
+  [Chunk228168.lY.MODAL]: {
+    avatarSize: Chunk481060.EFr.SIZE_120,
     avatarOffsetX: 16,
     avatarOffsetY: 5,
     bannerWidth: 600,
     bannerHeight: 210,
     themePadding: 0
   },
-  [i.lY.MODAL_V2]: {
-    avatarSize: r.EFr.SIZE_120,
+  [Chunk228168.lY.MODAL_V2]: {
+    avatarSize: Chunk481060.EFr.SIZE_120,
     avatarOffsetX: 24,
     avatarOffsetY: 0,
     bannerWidth: 400,
     bannerHeight: 140,
     themePadding: 0
   },
-  [i.lY.SIDEBAR]: {
-    avatarSize: r.EFr.SIZE_80,
+  [Chunk228168.lY.SIDEBAR]: {
+    avatarSize: Chunk481060.EFr.SIZE_80,
     avatarOffsetX: 10,
     avatarOffsetY: 8,
     bannerWidth: 340,

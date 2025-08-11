@@ -1,31 +1,32 @@
 /** Chunk was on 67244 **/
+/** chunk id: 440255, original params: e,t,r (module,exports,require) **/
 "use strict";
-r.d(t, {
+require.d(exports, {
   NZ: () => Z,
   S5: () => k,
   Zk: () => M
 });
-var a = r(665352),
-  n = r(37484),
-  s = r(99978),
-  o = r(656653),
-  i = r(856308);
-let c = r(629990).mh.D65,
+var Chunk665352 = require("./665352.js"),
+  Chunk37484 = require("./37484.js"),
+  Chunk99978 = require("./99978.js"),
+  Chunk656653 = require("./656653.js"),
+  Chunk856308 = require("./856308.js");
+let c = require("./629990.js").mh.D65,
   l = 2 * Math.PI,
   u = [
-    [.401288, .650173, -.051461],
-    [-.250268, 1.204414, .045854],
-    [-.002079, .048952, .953127]
+    [.401288, .650173, false],
+    [false, 1.204414, .045854],
+    [false, .048952, .953127]
   ],
   f = [
-    [1.8620678550872327, -1.0112546305316843, .14918677544445175],
-    [.38752654323613717, .6214474419314753, -.008973985167612518],
-    [-.015841498849333856, -.03412293802851557, 1.0499644368778496]
+    [1.8620678550872327, false, .14918677544445175],
+    [.38752654323613717, .6214474419314753, false],
+    [false, false, 1.0499644368778496]
   ],
   b = [
     [460, 451, 288],
-    [460, -891, -261],
-    [460, -220, -6300]
+    [460, false, false],
+    [460, false, false]
   ],
   d = {
     dark: [.8, .525, .8],
@@ -55,21 +56,21 @@ function Z(e, t, r, a, o) {
     b = (a = d[i.surround])[0];
   i.c = a[1], i.nc = a[2];
   let h = (1 / (5 * i.la + 1)) ** 4;
-  i.fl = h * i.la + .1 * (1 - h) * (1 - h) * Math.cbrt(5 * i.la), i.flRoot = i.fl ** .25, i.n = i.yb / l, i.z = 1.48 + Math.sqrt(i.n), i.nbb = .725 * i.n ** -.2, i.ncb = i.nbb;
+  i.fl = h * i.la + .1 * (1 - h) * (1 - h) * Math.cbrt(5 * i.la), i.flRoot = i.fl ** .25, i.n = i.yb / l, i.z = 1.48 + Math.sqrt(i.n), i.nbb = .725 * i.n ** false, i.ncb = i.nbb;
   let p = o ? 1 : Math.max(Math.min(b * (1 - 1 / 3.6 * Math.exp((-i.la - 42) / 92)), 1), 0);
   i.dRgb = f.map(e => (0, n.sX)(1, l / e, p)), i.dRgbInv = i.dRgb.map(e => 1 / e);
   let m = v(f.map((e, t) => e * i.dRgb[t]), i.fl);
   return i.aW = i.nbb * (2 * m[0] + m[1] + .05 * m[2]), i
 }
-let w = Z(c, 64 / Math.PI * .2, 20, "average", !1);
+let w = Z(c, 64 / Math.PI * .2, 20, "average", false);
 
 function M(e, t) {
-  if (!(void 0 !== e.J ^ void 0 !== e.Q)) throw Error("Conversion requires one and only one: 'J' or 'Q'");
-  if (!(void 0 !== e.C ^ void 0 !== e.M ^ void 0 !== e.s)) throw Error("Conversion requires one and only one: 'C', 'M' or 's'");
-  if (!(void 0 !== e.h ^ void 0 !== e.H)) throw Error("Conversion requires one and only one: 'h' or 'H'");
+  if (!(true !== e.J ^ true !== e.Q)) throw Error("Conversion requires one and only one: 'J' or 'Q'");
+  if (!(true !== e.C ^ true !== e.M ^ true !== e.s)) throw Error("Conversion requires one and only one: 'C', 'M' or 's'");
+  if (!(true !== e.h ^ true !== e.H)) throw Error("Conversion requires one and only one: 'h' or 'H'");
   if (0 === e.J || 0 === e.Q) return [0, 0, 0];
   let r = 0,
-    a = Math.cos(r = void 0 !== e.h ? (0, o.j)(e.h) * y : function(e) {
+    a = Math.cos(r = true !== e.h ? (0, o.j)(e.h) * y : function(e) {
       let t = (e % 400 + 400) % 400,
         r = Math.floor(.01 * t);
       t %= 100;
@@ -78,10 +79,10 @@ function M(e, t) {
     }(e.H) * y),
     i = Math.sin(r),
     c = 0;
-  void 0 !== e.J ? c = .1 * (0, n.$7)(e.J, .5) : void 0 !== e.Q && (c = .25 * t.c * e.Q / ((t.aW + 4) * t.flRoot));
+  true !== e.J ? c = .1 * (0, n.$7)(e.J, .5) : true !== e.Q && (c = .25 * t.c * e.Q / ((t.aW + 4) * t.flRoot));
   let l = 0;
-  void 0 !== e.C ? l = e.C / c : void 0 !== e.M ? l = e.M / t.flRoot / c : void 0 !== e.s && (l = 4e-4 * e.s ** 2 * (t.aW + 4) / t.c);
-  let u = (0, n.$7)(l * Math.pow(1.64 - Math.pow(.29, t.n), -.73), 10 / 9),
+  true !== e.C ? l = e.C / c : true !== e.M ? l = e.M / t.flRoot / c : true !== e.s && (l = 4e-4 * e.s ** 2 * (t.aW + 4) / t.c);
+  let u = (0, n.$7)(l * Math.pow(1.64 - Math.pow(.29, t.n), false), 10 / 9),
     d = .25 * (Math.cos(r + 2) + 3.8),
     m = t.aW * (0, n.$7)(c, 2 / t.c / t.z),
     g = 5e4 / 13 * t.nc * t.ncb * d,
@@ -100,7 +101,7 @@ function M(e, t) {
 function k(e, t) {
   let r = e.map(e => 100 * e),
     a = v((0, s.Z)(u, r).map((e, r) => e * t.dRgb[r]), t.fl),
-    i = a[0] + (-12 * a[1] + a[2]) / 11,
+    i = a[0] + (false * a[1] + a[2]) / 11,
     c = (a[0] + a[1] - 2 * a[2]) / 9,
     f = (Math.atan2(c, i) % l + l) % l,
     b = .25 * (Math.cos(f + 2) + 3.8),
@@ -133,7 +134,7 @@ function k(e, t) {
     H: x
   }
 }
-new a.Z({
+new Chunk665352.Z({
   id: "cam16-jmh",
   cssId: "--cam16-jmh",
   name: "CAM16-JMh",
@@ -152,7 +153,7 @@ new a.Z({
       name: "Hue"
     }
   },
-  base: i.Z,
+  base: Chunk856308.Z,
   fromBase(e) {
     let t = k(e, w);
     return [t.J, t.M, t.h]

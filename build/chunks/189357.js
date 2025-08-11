@@ -1,25 +1,26 @@
 /** Chunk was on web.js **/
+/** chunk id: 189357, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Y: () => c,
   m: () => u
-}), n(388685);
-var r = n(149765),
-  i = n(442837),
-  o = n(430824),
-  a = n(594174),
-  s = n(700785),
-  l = n(478743);
+}), require("./388685.js");
+var Chunk149765 = require("./149765.js"),
+  Chunk442837 = require("./442837.js"),
+  Chunk430824 = require("./430824.js"),
+  Chunk594174 = require("./594174.js"),
+  Chunk700785 = require("./700785.js"),
+  Chunk478743 = require("./478743.js");
 let c = function(e) {
-  let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : [o.Z, a.default];
-  if (null == e) return !1;
+  let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : [o.Z, a.default];
+  if (null == e) returnfalse;
   let [n, i] = t, c = n.getGuild(e);
-  if (null == c) return !1;
+  if (null == c) returnfalse;
   let u = i.getCurrentUser();
   return r.Db(s.uB({
     user: u,
     context: c,
-    checkElevated: !1
+    checkElevated: false
   }), l.N)
 };
 

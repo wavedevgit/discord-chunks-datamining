@@ -1,9 +1,10 @@
 /** Chunk was on web.js **/
+/** chunk id: 194625, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => o
-}), n(388685), n(539854);
-var r = n(887490);
+}), require("./388685.js"), require("./539854.js");
+var Chunk887490 = require("./887490.js");
 let i = "applicationCommand";
 
 function o(e, t) {
@@ -20,6 +21,6 @@ function o(e, t) {
       path: o,
       offset: 0 + s.command.displayName.length + 1
     },
-    commandName: !0
+    commandName: true
   }), a
 }

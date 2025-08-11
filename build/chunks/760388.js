@@ -1,4 +1,5 @@
 /** Chunk was on web.js **/
+/** chunk id: 760388, original params:  (module,exports,re quire) **/
 IntlMessageFormat.__addLocaleData({
   locale: "fi",
   pluralRuleFunction: function(e, t) {

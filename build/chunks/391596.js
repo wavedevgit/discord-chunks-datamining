@@ -1,4 +1,5 @@
 /** Chunk was on web.js **/
-e.exports = function(e, t) {
-  return null == e ? void 0 : e[t]
+/** chunk id: 391596, original params: e (module,exports,re quire) **/
+module.exports = function(e, t) {
+  return null == e ? true : e[t]
 }

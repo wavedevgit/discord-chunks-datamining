@@ -1,7 +1,0 @@
-/** Chunk was on web.js **/
-"use strict";
-e.exports = {
-  channelHeader: "channelHeader__9f71b",
-  header: "header__9f71b",
-  icon: "icon__9f71b"
-}

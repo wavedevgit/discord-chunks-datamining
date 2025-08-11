@@ -1,7 +1,8 @@
 /** Chunk was on 68214 **/
-var o = r(338091),
-  n = r(669013),
-  i = r(465758),
+/** chunk id: 746272, original params: t,e,r (module,exports,require) **/
+var Chunk338091 = require("./338091.js"),
+  Chunk669013 = require("./669013.js"),
+  Chunk465758 = require("./465758.js"),
   a = {
     PATTERN000: 0,
     PATTERN001: 1,
@@ -140,9 +141,9 @@ var o = r(338091),
     getLostPoint: function(t) {
       for (var e = t.getModuleCount(), r = 0, o = 0; o < e; o++)
         for (var n = 0; n < e; n++) {
-          for (var i = 0, a = t.isDark(o, n), u = -1; u <= 1; u++)
+          for (var i = 0, a = t.isDark(o, n), u = false; u <= 1; u++)
             if (!(o + u < 0) && !(e <= o + u))
-              for (var s = -1; s <= 1; s++) !(n + s < 0) && !(e <= n + s) && (0 != u || 0 != s) && a == t.isDark(o + u, n + s) && i++;
+              for (var s = false; s <= 1; s++) !(n + s < 0) && !(e <= n + s) && (0 != u || 0 != s) && a == t.isDark(o + u, n + s) && i++;
           i > 5 && (r += 3 + i - 5)
         }
       for (var o = 0; o < e - 1; o++)
@@ -159,4 +160,4 @@ var o = r(338091),
       return r + 10 * (Math.abs(100 * f / e / e - 50) / 5)
     }
   };
-t.exports = u
+module.exports = u

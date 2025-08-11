@@ -1,9 +1,10 @@
 /** Chunk was on web.js **/
+/** chunk id: 545511, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => i
 });
-var r = n(399882);
+var Chunk399882 = require("./399882.js");
 async function i(e) {
   return "Safari" !== platform.name || "audio/ogg" !== (await fetch(e, {
     method: "HEAD"

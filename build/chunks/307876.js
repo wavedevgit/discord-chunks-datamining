@@ -1,25 +1,26 @@
 /** Chunk was on web.js **/
+/** chunk id: 307876, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => p
 });
-var r = n(232567),
-  i = n(147913),
-  o = n(592125),
-  a = n(944486),
-  s = n(594174),
-  l = n(894257),
-  c = n(981631);
+var Chunk232567 = require("./232567.js"),
+  Chunk147913 = require("./147913.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk944486 = require("./944486.js"),
+  Chunk594174 = require("./594174.js"),
+  Chunk894257 = require("./894257.js"),
+  Chunk981631 = require("./981631.js");
 
 function u(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
-let d = !1;
+let d = false;
 
 function f(e) {
   if (__OVERLAY__) return;
@@ -30,18 +31,18 @@ function f(e) {
   if (!t.hasUrgentMessages() || r === n) return _({
     channelId: n
   });
-  d || (d = !0, e())
+  d || (d = true, e())
 }
 
 function _(e) {
   let {
     channelId: t
   } = e, n = s.default.getCurrentUser(), i = t === o.Z.getDMFromUserId(l.I);
-  null != n && n.hasUrgentMessages() && i && (d = !1, r.mB(c.xW$.HAS_UNREAD_URGENT_MESSAGES, !1))
+  null != n && n.hasUrgentMessages() && i && (d = false, r.mB(c.xW$.HAS_UNREAD_URGENT_MESSAGES, false))
 }
-class p extends i.Z {
+class p extends Chunk147913.Z {
   constructor(e) {
-    super(), u(this, "handleShowUrgentMessageAlert", void 0), u(this, "actions", void 0), this.handleShowUrgentMessageAlert = e, this.actions = {
+    super(), u(this, "handleShowUrgentMessageAlert", true), u(this, "actions", true), this.handleShowUrgentMessageAlert = e, this.actions = {
       POST_CONNECTION_OPEN: () => f(this.handleShowUrgentMessageAlert),
       MESSAGE_CREATE: () => f(this.handleShowUrgentMessageAlert),
       CHANNEL_SELECT: _

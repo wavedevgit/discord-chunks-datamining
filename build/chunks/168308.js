@@ -1,21 +1,22 @@
 /** Chunk was on web.js **/
+/** chunk id: 168308, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Jw: () => a,
   bC: () => l
 });
-var r = n(442837),
-  i = n(610394),
-  o = n(358085);
+var Chunk442837 = require("./442837.js"),
+  Chunk610394 = require("./610394.js"),
+  Chunk358085 = require("./358085.js");
 
 function a() {
-  return o.isPlatformEmbedded
+  return Chunk358085.isPlatformEmbedded
 }
 
 function s(e) {
-  return e || !1
+  return e || false
 }
 
 function l() {
-  return s((0, r.e7)([i.ZP], () => i.ZP.isSupported()))
+  return s((0, Chunk442837.e7)([Chunk610394.ZP], () => Chunk610394.ZP.isSupported()))
 }

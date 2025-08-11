@@ -1,10 +1,11 @@
 /** Chunk was on web.js **/
+/** chunk id: 116514, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 
 function r(e, t) {
   e.prototype = Object.create(t.prototype), e.prototype.constructor = e, e.__proto__ = t
 }
-e.exports = function(e) {
+module.exports = function(e) {
   function t() {
     return e.apply(this, arguments) || this
   }
@@ -32,7 +33,7 @@ e.exports = function(e) {
         a = this.getEndOffset();
       return t <= o && o <= n || t <= a && a <= n
     }
-    if (e !== r && e !== i) return !1;
+    if (e !== r && e !== i) returnfalse;
     var s = e === r ? this.getAnchorOffset() : this.getFocusOffset();
     return t <= s && n >= s
   }, n.isCollapsed = function() {
@@ -51,15 +52,15 @@ e.exports = function(e) {
       anchorOffset: 0,
       focusKey: e,
       focusOffset: 0,
-      isBackward: !1,
-      hasFocus: !1
+      isBackward: false,
+      hasFocus: false
     })
   }, t
-}((0, n(65183).Record)({
+}((0, require("./65183.js").Record)({
   anchorKey: "",
   anchorOffset: 0,
   focusKey: "",
   focusOffset: 0,
-  isBackward: !1,
-  hasFocus: !1
+  isBackward: false,
+  hasFocus: false
 }))

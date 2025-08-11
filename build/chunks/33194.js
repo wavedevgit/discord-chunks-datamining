@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 33194, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   OS: () => _,
   YF: () => u,
   _$: () => d,
@@ -10,15 +11,15 @@ n.d(t, {
   nC: () => m,
   v3: () => p
 });
-var r = n(97519),
-  i = n(296574);
+var Chunk97519 = require("./97519.js"),
+  Chunk296574 = require("./296574.js");
 
 function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -51,14 +52,14 @@ function l(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let c = (0, r.U)((0, i.tJ)(e => ({
+let c = (0, Chunk97519.U)((0, Chunk296574.tJ)(e => ({
   channelDismissTimestamps: {},
   userDismissTimestamps: {},
   globalDismissTimestamp: null,
-  queuedWarning: !1
+  queuedWarning: false
 }), {
   name: "shared-spaces-warning-storage",
-  storage: (0, i.FL)(() => localStorage)
+  storage: (0, Chunk296574.FL)(() => localStorage)
 }));
 
 function u(e) {
@@ -79,7 +80,7 @@ function _() {
 
 function p() {
   c.setState({
-    queuedWarning: !1
+    queuedWarning: false
   })
 }
 

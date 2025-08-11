@@ -1,18 +1,19 @@
 /** Chunk was on 42483 **/
-e.d(n, {
+/** chunk id: 539379, original params: t,n,e (module,exports,require) **/
+require.d(exports, {
   U: () => a
 });
-var i = e(481060);
-e(43236);
-var l = e(103714);
-e(940328), e(888395), e(389028), e(142390), e(425506);
+var Chunk481060 = require("./481060.js");
+require("./43236.js");
+var Chunk103714 = require("./103714.js");
+require("./940328.js"), require("./888395.js"), require("./389028.js"), require("./142390.js"), require("./425506.js");
 let a = {
-  CREATE: i.B0A,
-  GAMING: i.Tg$,
-  FRIENDS: i.z93,
-  CLUBS: l,
-  SCHOOL_CLUB: i.FGi,
-  STUDY: i.Dwq,
-  LOCAL_COMMUNITY: i.YdV,
-  CREATORS: i.lor
+  CREATE: Chunk481060.B0A,
+  GAMING: Chunk481060.Tg$,
+  FRIENDS: Chunk481060.z93,
+  CLUBS: Chunk103714,
+  SCHOOL_CLUB: Chunk481060.FGi,
+  STUDY: Chunk481060.Dwq,
+  LOCAL_COMMUNITY: Chunk481060.YdV,
+  CREATORS: Chunk481060.lor
 }

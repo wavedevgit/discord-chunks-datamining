@@ -1,7 +1,8 @@
 /** Chunk was on web.js **/
+/** chunk id: 222671, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-var r = n(808570);
-e.exports = function(e) {
+var Chunk808570 = require("./808570.js");
+module.exports = function(e) {
   var t = e.ownerDocument.documentElement;
   if (!("getBoundingClientRect" in e) || !r(t, e)) return {
     left: 0,

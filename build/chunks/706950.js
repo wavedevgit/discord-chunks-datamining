@@ -1,7 +1,8 @@
 /** Chunk was on web.js **/
+/** chunk id: 706950, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-var r = n(682146);
-e.exports = function(e) {
+var Chunk682146 = require("./682146.js");
+module.exports = function(e) {
   var t = e.getSelection();
   if (!t.rangeCount) return null;
   var n = r(t.getRangeAt(0)),

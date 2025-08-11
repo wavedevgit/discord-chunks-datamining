@@ -1,20 +1,21 @@
 /** Chunk was on web.js **/
+/** chunk id: 202107, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => g
-}), n(388685);
-var r = n(570140),
-  i = n(147913),
-  o = n(271383),
-  a = n(594174),
-  s = n(69882);
+}), require("./388685.js");
+var Chunk570140 = require("./570140.js"),
+  Chunk147913 = require("./147913.js"),
+  Chunk271383 = require("./271383.js"),
+  Chunk594174 = require("./594174.js"),
+  Chunk69882 = require("./69882.js");
 
 function l(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -50,8 +51,8 @@ function d(e, t) {
 let f = 1e4,
   _ = null,
   p = () => {
-    let e = o.ZP.getCommunicationDisabledUserMap();
-    Object.keys(e).forEach(t => {
+    let e = Chunk271383.ZP.getCommunicationDisabledUserMap();
+    Object.keys(module).forEach(t => {
       let n = t,
         r = (0, o.O5)(n),
         i = (0, o.V6)(n),
@@ -67,13 +68,13 @@ let f = 1e4,
     let m = d(c({}, p), {
       guildId: e,
       nick: null != (n = p.nick) ? n : h.username,
-      avatar: null != (i = p.avatar) ? i : void 0,
-      avatarDecoration: null != p.avatarDecoration ? c({}, p.avatarDecoration) : void 0,
-      premiumSince: null != (l = p.premiumSince) ? l : void 0,
+      avatar: null != (i = p.avatar) ? i : true,
+      avatarDecoration: null != p.avatarDecoration ? c({}, p.avatarDecoration) : true,
+      premiumSince: null != (l = p.premiumSince) ? l : true,
       isPending: null != (u = p.isPending) && u,
       user: d(c({}, h), {
-        email: null != (f = h.email) ? f : void 0,
-        phone: null != (_ = h.phone) ? _ : void 0
+        email: null != (f = h.email) ? f : true,
+        phone: null != (_ = h.phone) ? _ : true
       }),
       communicationDisabledUntil: null
     });
@@ -81,7 +82,7 @@ let f = 1e4,
       type: "GUILD_MEMBER_UPDATE"
     }, m))
   };
-class m extends i.Z {
+class m extends Chunk147913.Z {
   _initialize() {
     _ = setInterval(() => p(), f)
   }

@@ -1,25 +1,26 @@
 /** Chunk was on web.js **/
+/** chunk id: 754688, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Ao: () => g,
   Jv: () => p,
   M0: () => h,
   Qj: () => m,
   VO: () => b,
   YO: () => E
-}), n(413496), n(433524), n(35282);
-var r = n(592125),
-  i = n(430824),
-  o = n(496675),
-  a = n(226951),
-  s = n(981631);
-let l = Array.from(n(176505).Vg).map(e => a.Z.escape(e)).join("|"),
-  c = new RegExp("^/channels/(\\d+|".concat(s.ME, ")(?:/)?(\\d+|").concat(l, ")?")),
-  u = new RegExp("^/channels/(\\d+|".concat(s.ME, ")(?:/)(\\d+|").concat(l, ")(?:/)(\\d+)")),
+}), require("./413496.js"), require("./433524.js"), require("./35282.js");
+var Chunk592125 = require("./592125.js"),
+  Chunk430824 = require("./430824.js"),
+  Chunk496675 = require("./496675.js"),
+  Chunk226951 = require("./226951.js"),
+  Chunk981631 = require("./981631.js");
+let l = Array.from(require("./176505.js").Vg).map(e => a.Z.escape(e)).join("|"),
+  c = new RegExp("^/channels/(\\d+|".concat(Chunk981631.ME, ")(?:/)?(\\d+|").concat(l, ")?")),
+  u = new RegExp("^/channels/(\\d+|".concat(Chunk981631.ME, ")(?:/)(\\d+|").concat(l, ")(?:/)(\\d+)")),
   d = RegExp("^/channels/(\\d+)(?:/)(\\d+)(?:/threads/)(\\d+)(?:/)(\\d+)"),
   f = RegExp("^/guild-stages/(\\d+)(?:/)?(\\d+)?"),
   _ = RegExp("^/events/(\\d+)(?:/)(\\d+)?((?:/)(\\d+))?"),
-  p = new RegExp("^https://(?:(?:canary\\.|ptb\\.)?discord(?:app)?.com|staging\\.discord\\.co)/channels/(\\d+|".concat(s.ME, ")(?:/(\\d+|[a-zA-Z-]+))?(?:/(\\d+|[a-zA-Z-]+))?")),
+  p = new RegExp("^https://(?:(?:canary\\.|ptb\\.)?discord(?:app)?.com|staging\\.discord\\.co)/channels/(\\d+|".concat(Chunk981631.ME, ")(?:/(\\d+|[a-zA-Z-]+))?(?:/(\\d+|[a-zA-Z-]+))?")),
   h = RegExp("^https://(?:(?:canary\\.|ptb\\.)?discord(?:app)?.com|staging\\.discord\\.co)/channels/(\\d+)(?:/)(\\d+)(?:/threads/)(\\d+)(?:/)(\\d+)");
 
 function m(e) {
@@ -42,7 +43,7 @@ function m(e) {
     var i;
     return {
       guildId: r[1],
-      channelId: null != (i = r[2]) ? i : void 0
+      channelId: null != (i = r[2]) ? i : true
     }
   }
   let o = e.match(f);
@@ -70,8 +71,8 @@ function b(e) {
     guildId: t,
     channelId: n
   } = e;
-  if (null == i.Z.getGuild(t) && t !== s.ME) return !1;
-  if (null == n) return !0;
+  if (null == i.Z.getGuild(t) && t !== s.ME) returnfalse;
+  if (null == n) returntrue;
   let o = r.Z.getChannel(n);
   return null != o && E(o)
 }

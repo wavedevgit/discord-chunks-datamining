@@ -1,4 +1,6 @@
-/** Chunk was on web.js **/ ! function(e, t) {
+/** Chunk was on web.js **/
+/** chunk id: 643108, original params: e,t,n (module,exports,re quire) **/
+! function(e, t) {
   t(n(913527))
 }(0, function(e) {
   "use strict";
@@ -28,7 +30,7 @@
     weekdays: "Bazar_Bazar ertəsi_\xc7ərşənbə axşamı_\xc7ərşənbə_C\xfcmə axşamı_C\xfcmə_Şənbə".split("_"),
     weekdaysShort: "Baz_BzE_\xc7Ax_\xc7ər_CAx_C\xfcm_Şən".split("_"),
     weekdaysMin: "Bz_BE_\xc7A_\xc7ə_CA_C\xfc_Şə".split("_"),
-    weekdaysParseExact: !0,
+    weekdaysParseExact: true,
     longDateFormat: {
       LT: "HH:mm",
       LTS: "HH:mm:ss",

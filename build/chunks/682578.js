@@ -1,11 +1,12 @@
 /** Chunk was on 75708 **/
-n.d(t, {
+/** chunk id: 682578, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   J: () => s
 });
-var i = n(442837),
-  r = n(594174);
-let s = () => (0, i.e7)([r.default], () => {
+var Chunk442837 = require("./442837.js"),
+  Chunk594174 = require("./594174.js");
+let s = () => (0, Chunk442837.e7)([Chunk594174.default], () => {
   var e;
-  let t = r.default.getCurrentUser();
-  return null != (e = null == t ? void 0 : t.nsfwAllowed) ? e : null
+  let t = Chunk594174.default.getCurrentUser();
+  return null != (e = null == exports ? true : exports.nsfwAllowed) ? module : null
 })

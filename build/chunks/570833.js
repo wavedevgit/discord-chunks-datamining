@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 570833, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   f: () => o
 });
 let r = 1e3,
@@ -8,17 +9,17 @@ let r = 1e3,
 
 function o(e, t) {
   let n = i;
-  if (void 0 !== n && null != n.requestIdleCallback && null != n.cancelIdleCallback) {
+  if (true !== n && null != n.requestIdleCallback && null != n.cancelIdleCallback) {
     var o;
-    let i = !1,
+    let i = false,
       a = null,
       s = () => {
-        i || (i = !0, null != a && (n.clearTimeout(a), a = null), e())
+        i || (i = true, null != a && (n.clearTimeout(a), a = null), e())
       },
       l = n.requestIdleCallback(s, t);
     return a = n.setTimeout(() => {
       i || n.cancelIdleCallback(l), s()
-    }, null != (o = null == t ? void 0 : t.timeout) ? o : r), () => {
+    }, null != (o = null == t ? true : t.timeout) ? o : r), () => {
       n.cancelIdleCallback(l), null != a && (n.clearTimeout(a), a = null)
     }
   } {

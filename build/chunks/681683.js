@@ -1,10 +1,11 @@
 /** Chunk was on web.js **/
-e.exports = function(e) {
+/** chunk id: 681683, original params: e (module,exports,re quire) **/
+module.exports = function(e) {
   let t = "if eq ne lt lte gt gte select default math sep";
   return {
     name: "Dust",
     aliases: ["dst"],
-    case_insensitive: !0,
+    case_insensitive: true,
     subLanguage: "xml",
     contains: [{
       className: "template-tag",
@@ -15,7 +16,7 @@ e.exports = function(e) {
         className: "name",
         begin: /[a-zA-Z\.-]+/,
         starts: {
-          endsWithParent: !0,
+          endsWithParent: true,
           relevance: 0,
           contains: [e.QUOTE_STRING_MODE]
         }

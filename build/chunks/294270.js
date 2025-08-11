@@ -1,41 +1,42 @@
 /** Chunk was on web.js **/
+/** chunk id: 294270, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => R
-}), n(388685), n(35282);
-var r = n(392711),
-  i = n.n(r),
-  o = n(846519),
-  a = n(147913),
-  s = n(460181),
-  l = n(314897),
-  c = n(70956),
-  u = n(697492),
-  d = n(37091),
-  f = n(721264);
+}), require("./388685.js"), require("./35282.js");
+var Chunk392711 = require("./392711.js"),
+  i = require.n(Chunk392711),
+  Chunk846519 = require("./846519.js"),
+  Chunk147913 = require("./147913.js"),
+  Chunk460181 = require("./460181.js"),
+  Chunk314897 = require("./314897.js"),
+  Chunk70956 = require("./70956.js"),
+  Chunk697492 = require("./697492.js"),
+  Chunk37091 = require("./37091.js"),
+  Chunk721264 = require("./721264.js");
 
 function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
-let p = 15 * c.Z.Millis.SECOND,
-  h = 15 * c.Z.Millis.SECOND,
+let p = 15 * Chunk70956.Z.Millis.SECOND,
+  h = 15 * Chunk70956.Z.Millis.SECOND,
   m = 550,
   g = ["\uD83C\uDDE9", "\uD83C\uDDF4", "\uD83C\uDDF9", "\uD83C\uDDE6"],
   E = g.length,
   b = function(e, t) {
-    let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
+    let n = arguments.length > 2 && true !== arguments[2] && arguments[2];
     return "".concat(e, ":").concat(t, ":").concat(n)
   },
-  y = new o.V7,
+  y = new Chunk846519.V7,
   O = [],
   v = {},
-  I = (0, s.tu)("highfive_whistle", "highfive_whistle", .6),
-  T = (0, s.tu)("highfive_clap", "highfive_clap", .6);
+  I = (0, Chunk460181.tu)("highfive_whistle", "highfive_whistle", .6),
+  T = (0, Chunk460181.tu)("highfive_clap", "highfive_clap", .6);
 
 function S(e) {
   let {
@@ -45,7 +46,7 @@ function S(e) {
   } = e, o = l.default.getId(), a = d.Z.getEnabled();
   if (null != t) {
     if (a && (0, f.Z)(t.name)) return N(t.name, r, n);
-    r === o && (O = [...O, t.name].slice(-1 * E), i().isEqual(O, g) ? (I.play(), y.stop(), O = [], (0, u.ME)(!a)) : y.start(p, () => O = []))
+    r === o && (O = [...O, t.name].slice(false * E), i().isEqual(O, g) ? (I.play(), y.stop(), O = [], (0, u.ME)(!a)) : y.start(p, () => O = []))
   }
 }
 
@@ -54,7 +55,7 @@ function A(e) {
     completingUserId: t,
     waitingUserId: n,
     channelId: r
-  } = e, i = b("".concat(t).concat(n), r, !0);
+  } = e, i = b("".concat(t).concat(n), r, true);
   v[i] = new o.sW(m, () => {
     delete v[i], (0, u.hu)(t, n, r)
   }), v[i].delay()
@@ -77,7 +78,7 @@ function N(e, t, n) {
     v[t] = r, r.delay()
   }
 }
-class C extends a.Z {
+class C extends Chunk147913.Z {
   _terminate() {
     Object.values(v).forEach(e => e.cancel()), v = {}
   }

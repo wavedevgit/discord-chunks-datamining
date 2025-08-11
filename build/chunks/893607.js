@@ -1,14 +1,15 @@
 /** Chunk was on web.js **/
+/** chunk id: 893607, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Hw: () => d,
   Ss: () => l,
   cq: () => c
-}), n(35282), n(388685);
-var r = n(392711),
-  i = n(860911),
-  o = n(981631),
-  a = n(176505);
+}), require("./35282.js"), require("./388685.js");
+var Chunk392711 = require("./392711.js"),
+  Chunk860911 = require("./860911.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk176505 = require("./176505.js");
 let s = /^\d+$/;
 
 function l(e) {
@@ -21,27 +22,27 @@ function c(e) {
 
 function u(e, t) {
   let {
-    optional: n = !1
-  } = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {};
+    optional: n = false
+  } = arguments.length > 2 && true !== arguments[2] ? arguments[2] : {};
   return new i.Zn(":".concat((0, r.escapeRegExp)(e), "(").concat(t, ")").concat(n ? "?" : ""))
 }
 let d = {
   guildId() {
     let {
       name: e = "guildId",
-      optional: t = !1
-    } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}, n = [o.ME, o.I_8, o.o_z, o.STv].map(r.escapeRegExp).join("|");
-    return u(e, "".concat(n, "|\\d+"), {
-      optional: t
+      optional: t = false
+    } = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {}, n = [Chunk981631.ME, Chunk981631.I_8, Chunk981631.o_z, Chunk981631.STv].map(Chunk392711.escapeRegExp).join("|");
+    return u(module, "".concat(require, "|\\d+"), {
+      optional: exports
     })
   },
   channelId() {
     let {
       name: e = "channelId",
-      optional: t = !1
-    } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}, n = [...a.Vg].map(r.escapeRegExp).join("|");
-    return u(e, "".concat(n, "|\\d+"), {
-      optional: t
+      optional: t = false
+    } = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {}, n = [...Chunk176505.Vg].map(Chunk392711.escapeRegExp).join("|");
+    return u(module, "".concat(require, "|\\d+"), {
+      optional: exports
     })
   }
 }

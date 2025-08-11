@@ -1,5 +1,6 @@
 /** Chunk was on 13616 **/
-e.exports = {
+/** chunk id: 541056, original params: e,t,n (module,exports,require) **/
+module.exports = {
   inviteSettingsInviteRow: "inviteSettingsInviteRow__1de14",
   header: "header__1de14",
   actions: "actions__1de14",

@@ -1,18 +1,19 @@
 /** Chunk was on 49152 **/
-n.d(t, {
+/** chunk id: 737, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => g
-}), n(388685), n(539854);
-var r = n(442837),
-  i = n(963374),
-  l = n(735020),
-  a = n(627050),
-  s = n(905405),
-  o = n(937889),
-  c = n(23750),
-  u = n(699516),
-  d = n(171900),
-  h = n(518944),
-  p = n(607802);
+}), require("./388685.js"), require("./539854.js");
+var Chunk442837 = require("./442837.js"),
+  Chunk963374 = require("./963374.js"),
+  Chunk735020 = require("./735020.js"),
+  Chunk627050 = require("./627050.js"),
+  Chunk905405 = require("./905405.js"),
+  Chunk937889 = require("./937889.js"),
+  Chunk23750 = require("./23750.js"),
+  Chunk699516 = require("./699516.js"),
+  Chunk171900 = require("./171900.js"),
+  Chunk518944 = require("./518944.js"),
+  Chunk607802 = require("./607802.js");
 let f = [];
 
 function g(e) {
@@ -38,8 +39,8 @@ function g(e) {
           })), e
         }(t, [l.Z])).isSearchHit ? t.set("customRenderedContent", (0, o.ZP)(t, {
           postProcessor: u,
-          allowHeading: !0,
-          allowList: !0,
+          allowHeading: true,
+          allowList: true,
           allowGameMentions: g,
           shouldFilterKeywords: n
         })) : t;

@@ -1,5 +1,6 @@
 /** Chunk was on 22988 **/
-e.exports = {
+/** chunk id: 264054, original params: e,t,n (module,exports,require) **/
+module.exports = {
   metricsContainer: "metricsContainer_cd734c",
   totalMembersIcon: "totalMembersIcon_cd734c",
   currentMonthEarningsTable: "currentMonthEarningsTable_cd734c",

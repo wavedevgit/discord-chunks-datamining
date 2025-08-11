@@ -1,6 +1,7 @@
 /** Chunk was on 45620 **/
+/** chunk id: 940326, original params: e,t,n (module,exports,require) **/
 "use strict";
-e.exports = {
+module.exports = {
   container: "container__4d61a",
   number: "number__4d61a",
   delineator: "delineator__4d61a"

@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 601964, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Cx: () => c,
   EB: () => u,
   VI: () => l,
@@ -11,27 +12,27 @@ n.d(t, {
   lV: () => h,
   yn: () => _,
   zN: () => p
-}), n(388685);
-var r = n(311929),
-  i = n(768581),
-  o = n(709054),
-  a = n(624138),
-  s = n(981631);
+}), require("./388685.js");
+var Chunk311929 = require("./311929.js"),
+  Chunk768581 = require("./768581.js"),
+  Chunk709054 = require("./709054.js"),
+  Chunk624138 = require("./624138.js"),
+  Chunk981631 = require("./981631.js");
 let l = "Guild",
   c = Object.freeze({
-    mfaLevel: s.BpS.NONE,
+    mfaLevel: Chunk981631.BpS.NONE,
     preferredLocale: "en-US",
     afkTimeout: 0,
-    defaultMessageNotifications: s.bL.ALL_MESSAGES,
-    verificationLevel: s.sFg.NONE,
-    explicitContentFilter: s.lxg.DISABLED,
-    premiumProgressBarEnabled: !1,
+    defaultMessageNotifications: Chunk981631.bL.ALL_MESSAGES,
+    verificationLevel: Chunk981631.sFg.NONE,
+    explicitContentFilter: Chunk981631.lxg.DISABLED,
+    premiumProgressBarEnabled: false,
     systemChannelFlags: 0,
-    maxStageVideoChannelUsers: -1,
-    maxVideoChannelUsers: -1,
-    maxMembers: -1,
-    premiumTier: s.Eu4.NONE,
-    nsfwLevel: s.V_K.DEFAULT,
+    maxStageVideoChannelUsers: false,
+    maxVideoChannelUsers: false,
+    maxMembers: false,
+    premiumTier: Chunk981631.Eu4.NONE,
+    nsfwLevel: Chunk981631.V_K.DEFAULT,
     premiumSubscriberCount: 0,
     features: new Set,
     description: null,
@@ -58,8 +59,8 @@ let l = "Guild",
   });
 
 function u(e, t) {
-  let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
-    r = arguments.length > 3 && void 0 !== arguments[3] && arguments[3];
+  let n = arguments.length > 2 && true !== arguments[2] && arguments[2],
+    r = arguments.length > 3 && true !== arguments[3] && arguments[3];
   return i.ZP.getGuildIconURL({
     id: e.id,
     size: t,

@@ -1,21 +1,22 @@
 /** Chunk was on web.js **/
+/** chunk id: 549771, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   h: () => d
-}), n(290780);
-var r = n(73800),
-  i = n(399606),
-  o = n(496675),
-  a = n(771845),
-  s = n(594174),
-  l = n(74538),
-  c = n(981631),
-  u = n(231338);
+}), require("./290780.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk399606 = require("./399606.js"),
+  Chunk496675 = require("./496675.js"),
+  Chunk771845 = require("./771845.js"),
+  Chunk594174 = require("./594174.js"),
+  Chunk74538 = require("./74538.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk231338 = require("./231338.js");
 
 function d(e, t) {
   var n;
   let d = (0, i.e7)([s.default], () => s.default.getCurrentUser()),
-    f = null != (n = null == e ? void 0 : e.guild_id) ? n : c.lds,
+    f = null != (n = null == e ? true : e.guild_id) ? n : c.lds,
     _ = (0, i.e7)([a.ZP], () => a.ZP.getFlattenedGuildIds()),
     p = (0, i.e7)([o.Z], () => null == e || null == e.guild_id || o.Z.can(u.Pl.USE_EXTERNAL_SOUNDS, e));
   return r.useMemo(() => {

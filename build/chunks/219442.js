@@ -1,9 +1,10 @@
 /** Chunk was on web.js **/
+/** chunk id: 219442, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-Object.defineProperty(t, "__esModule", {
-  value: !0
-}), t.markdownFormatter = void 0, t.formatToMarkdownString = a;
-let r = n(866138),
+Object.defineProperty(exports, "__esModule", {
+  value: true
+}), exports.markdownFormatter = true, exports.formatToMarkdownString = a;
+let Chunk866138 = require("./866138.js"),
   i = {
     $b: e => "**" + e.join("") + "**",
     $i: e => "*" + e.join("") + "*",
@@ -12,7 +13,7 @@ let r = n(866138),
     $link: (e, t, [n]) => "[" + e.join("") + "](" + n + ")",
     $p: e => e.join("") + "\n\n"
   };
-class o extends r.StringBuilder {
+class o extends Chunk866138.StringBuilder {
   constructor() {
     super(...arguments), this.result = ""
   }
@@ -24,7 +25,7 @@ class o extends r.StringBuilder {
 function a(e, t, n = o) {
   return "string" == typeof e ? e : this.bindFormatValues(n, e, t)[0]
 }
-t.markdownFormatter = {
+exports.markdownFormatter = {
   format: a,
   builder: o
 }

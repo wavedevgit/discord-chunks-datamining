@@ -1,18 +1,19 @@
 /** Chunk was on web.js **/
+/** chunk id: 366297, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   _: () => l
 });
-var r = n(258609),
-  i = n(740492),
-  o = n(314897),
-  a = n(430824),
-  s = n(979651);
+var Chunk258609 = require("./258609.js"),
+  Chunk740492 = require("./740492.js"),
+  Chunk314897 = require("./314897.js"),
+  Chunk430824 = require("./430824.js"),
+  Chunk979651 = require("./979651.js");
 
 function l(e) {
-  if (i.ZP.disableVoiceChannelChangeAlert) return !1;
+  if (i.ZP.disableVoiceChannelChangeAlert) returnfalse;
   let t = r.Z.getRemoteSessionId();
-  if (null != s.Z.getVoiceStateForSession(o.default.getId(), t) || !s.Z.isCurrentClientInVoiceChannel() || s.Z.isInChannel(e.id)) return !1;
+  if (null != s.Z.getVoiceStateForSession(o.default.getId(), t) || !s.Z.isCurrentClientInVoiceChannel() || s.Z.isInChannel(e.id)) returnfalse;
   let n = a.Z.getGuild(e.getGuildId());
-  return !((null == n ? void 0 : n.afkChannelId) != null && s.Z.isInChannel(n.afkChannelId))
+  return !((null == n ? true : n.afkChannelId) != null && s.Z.isInChannel(n.afkChannelId))
 }

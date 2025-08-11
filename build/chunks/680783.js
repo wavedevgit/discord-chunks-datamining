@@ -1,26 +1,27 @@
 /** Chunk was on web.js **/
+/** chunk id: 680783, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => u
 });
-var r = n(442837),
-  i = n(780384),
-  o = n(410030),
-  a = n(592125),
-  s = n(436952),
-  l = n(839606),
-  c = n(373076);
+var Chunk442837 = require("./442837.js"),
+  Chunk780384 = require("./780384.js"),
+  Chunk410030 = require("./410030.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk436952 = require("./436952.js"),
+  Chunk839606 = require("./839606.js"),
+  Chunk373076 = require("./373076.js");
 
 function u(e) {
   let t = (0, r.e7)([a.Z], () => {
       var t;
-      return null == (t = a.Z.getChannel(e)) ? void 0 : t.wallpaper
+      return null == (t = a.Z.getChannel(e)) ? true : t.wallpaper
     }),
     {
       previewWallpaperId: n,
       activePickerChannelId: u
     } = (0, l.B)(),
-    d = (0, c.P)(null == t ? void 0 : t.setterId),
+    d = (0, c.P)(null == t ? true : t.setterId),
     f = (0, i.wj)((0, o.ZP)()),
     _ = (0, s.sQ)({
       location: "ChatWallpaperSetSystemMessage"
@@ -28,13 +29,13 @@ function u(e) {
     p = s.qM.useExperiment({
       location: "ChatWallpaperSetSystemMessage"
     });
-  return null == e ? void 0 : u === e && void 0 !== n ? {
+  return null == e ? true : u === e && true !== n ? {
     wallpaperId: n,
-    setterId: void 0,
-    isPreview: !0,
+    setterId: true,
+    isPreview: true,
     isViewable: _
-  } : void 0 !== t ? {
+  } : true !== t ? {
     wallpaperId: t.wallpaperId,
     isViewable: _ && d && (f || p.lightMode)
-  } : void 0
+  } : true
 }

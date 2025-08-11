@@ -1,12 +1,13 @@
 /** Chunk was on web.js **/
+/** chunk id: 728675, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 
 function r(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -41,7 +42,7 @@ function a(e, t) {
 }
 
 function s(e, t) {
-  let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {},
+  let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : {},
     {
       onBeforeBatch: r
     } = n,
@@ -113,7 +114,7 @@ function s(e, t) {
     POST_CONNECTION_OPEN: l,
     MESSAGE_CREATE: {
       callback: u,
-      autoSubscribe: !1
+      autoSubscribe: false
     },
     MESSAGE_UPDATE: u,
     LOAD_MESSAGES_SUCCESS: d,
@@ -124,10 +125,10 @@ function s(e, t) {
     MOD_VIEW_SEARCH_MESSAGES_SUCCESS: p,
     CHANNEL_SELECT: {
       callback: c,
-      autoSubscribe: !1
+      autoSubscribe: false
     }
   })
 }
-n.d(t, {
+require.d(exports, {
   Z: () => s
-}), n(388685)
+}), require("./388685.js")

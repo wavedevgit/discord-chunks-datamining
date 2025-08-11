@@ -1,15 +1,16 @@
 /** Chunk was on 75708 **/
-n.d(t, {
+/** chunk id: 396402, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   w: () => l
 });
-var i = n(442837),
-  r = n(271383),
-  s = n(430824),
-  a = n(731722);
+var Chunk442837 = require("./442837.js"),
+  Chunk271383 = require("./271383.js"),
+  Chunk430824 = require("./430824.js"),
+  Chunk731722 = require("./731722.js");
 
 function l() {
-  return (0, i.Wu)([s.Z, r.ZP], () => s.Z.getGuildsArray().filter(e => {
+  return (0, Chunk442837.Wu)([Chunk430824.Z, Chunk271383.ZP], () => Chunk430824.Z.getGuildsArray().filter(e => {
     var t, n;
-    return (0, a.up)(e) && (null == (t = r.ZP.getSelfMember(e.id)) ? void 0 : t.joinedAt) != null && (null == (n = e.profile) ? void 0 : n.tag) != null
+    return (0, a.up)(e) && (null == (t = r.ZP.getSelfMember(e.id)) ? true : t.joinedAt) != null && (null == (n = e.profile) ? true : n.tag) != null
   }))
 }

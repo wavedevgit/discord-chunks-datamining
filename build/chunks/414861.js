@@ -1,15 +1,16 @@
 /** Chunk was on web.js **/
+/** chunk id: 414861, original params: e (module,exports,re quire) **/
 "use strict";
-e.exports = function(e) {
+module.exports = function(e) {
   var t = {},
     n = e.stopCallback;
   return e.stopCallback = function(e, r, i, o) {
     return !t[i] && !t[o] && n(e, r, i)
   }, e.bindGlobal = function(e, n, r) {
     if (this.bind(e, n, r), e instanceof Array) {
-      for (var i = 0; i < e.length; i++) t[e[i]] = !0;
+      for (var i = 0; i < e.length; i++) t[e[i]] = true;
       return
     }
-    t[e] = !0
+    t[e] = true
   }, e
 }

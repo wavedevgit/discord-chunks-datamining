@@ -1,15 +1,16 @@
 /** Chunk was on web.js **/
+/** chunk id: 347016, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   d: () => o
 });
-var r = n(708816),
-  i = n(607070);
-n(606944), n(447368);
+var Chunk708816 = require("./708816.js"),
+  Chunk607070 = require("./607070.js");
+require("./606944.js"), require("./447368.js");
 let o = {
   init() {
-    i.Z.addChangeListener(() => {
-      i.Z.keyboardModeEnabled ? (r.dx.setRingsEnabled(!0), r.dx.enableAnimationTracking()) : (r.dx.setRingsEnabled(!1), r.dx.disableAnimationTracking())
+    Chunk607070.Z.addChangeListener(() => {
+      Chunk607070.Z.keyboardModeEnabled ? (Chunk708816.dx.setRingsEnabled(true), Chunk708816.dx.enableAnimationTracking()) : (Chunk708816.dx.setRingsEnabled(false), Chunk708816.dx.disableAnimationTracking())
     })
   }
 }

@@ -1,21 +1,22 @@
 /** Chunk was on web.js **/
+/** chunk id: 593294, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => c
-}), n(388685);
-var r = n(442837),
-  i = n(317381),
-  o = n(835473),
-  a = n(158776),
-  s = n(719247),
-  l = n(567493);
+}), require("./388685.js");
+var Chunk442837 = require("./442837.js"),
+  Chunk317381 = require("./317381.js"),
+  Chunk835473 = require("./835473.js"),
+  Chunk158776 = require("./158776.js"),
+  Chunk719247 = require("./719247.js"),
+  Chunk567493 = require("./567493.js");
 
 function c(e) {
   let t = (0, r.e7)([s.Z, a.Z], () => (0, l.KF)(e) ? (0, l.hQ)(e, a.Z) : s.Z.getMatchingActivity(e)),
-    [n, c] = (0, o.Z)([null == t ? void 0 : t.application_id, "application_id" in e.extra ? e.extra.application_id : void 0]);
+    [n, c] = (0, o.Z)([null == t ? true : t.application_id, "application_id" in e.extra ? e.extra.application_id : true]);
   return {
     activity: t,
-    embeddedActivity: (0, r.e7)([i.ZP], () => i.ZP.getEmbeddedActivityForUserId(e.author_id, null == n ? void 0 : n.id)),
+    embeddedActivity: (0, r.e7)([i.ZP], () => i.ZP.getEmbeddedActivityForUserId(e.author_id, null == n ? true : n.id)),
     anyMatchingApplication: null != n ? n : c,
     activityApplication: n,
     fallbackApplication: c

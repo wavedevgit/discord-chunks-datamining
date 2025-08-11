@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 976962, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   wrapper: "wrapper_cc5dd2",
   svg: "svg_cc5dd2",
   shiftSVG: "shiftSVG_cc5dd2",

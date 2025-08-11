@@ -1,5 +1,6 @@
 /** Chunk was on 84575 **/
-n.exports = {
+/** chunk id: 282287, original params: n,o,e (module,exports,require) **/
+module.exports = {
   phoneVerificationModal: "phoneVerificationModal_db41ea",
   animationContainer: "animationContainer_db41ea",
   title: "title_db41ea",

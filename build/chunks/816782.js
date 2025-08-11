@@ -1,21 +1,22 @@
 /** Chunk was on 25548 **/
-n.d(t, {
+/** chunk id: 816782, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => r
 });
-var i = n(570140);
+var Chunk570140 = require("./570140.js");
 let r = {
   toggleMembersSection() {
-    i.Z.dispatch({
+    Chunk570140.Z.dispatch({
       type: "CHANNEL_TOGGLE_MEMBERS_SECTION"
     })
   },
   toggleUserProfileSidebarSection() {
-    i.Z.dispatch({
+    Chunk570140.Z.dispatch({
       type: "USER_PROFILE_SIDEBAR_TOGGLE_SECTION"
     })
   },
   toggleSummariesSection() {
-    i.Z.dispatch({
+    Chunk570140.Z.dispatch({
       type: "CHANNEL_TOGGLE_SUMMARIES_SECTION"
     })
   }

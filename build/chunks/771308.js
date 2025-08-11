@@ -1,15 +1,16 @@
 /** Chunk was on 1337 **/
-r.d(t, {
+/** chunk id: 771308, original params: e,t,r (module,exports,require) **/
+require.d(exports, {
   Av: () => s,
   hp: () => d,
   wE: () => u
 });
-var n = r(544891),
-  l = r(570140),
-  a = r(959776),
-  o = r(626135),
-  i = r(723359),
-  c = r(981631);
+var Chunk544891 = require("./544891.js"),
+  Chunk570140 = require("./570140.js"),
+  Chunk959776 = require("./959776.js"),
+  Chunk626135 = require("./626135.js"),
+  Chunk723359 = require("./723359.js"),
+  Chunk981631 = require("./981631.js");
 
 function s(e, t) {
   return (0, a.Z)(e, t), o.default.track(c.rMx.AGE_GATE_ACTION, {
@@ -17,11 +18,11 @@ function s(e, t) {
     action: i.Al.AGE_GATE_SUBMITTED
   }), n.tn.patch({
     url: c.ANM.ME,
-    oldFormErrors: !0,
+    oldFormErrors: true,
     body: {
       date_of_birth: e.format("YYYY-MM-DD")
     },
-    rejectWithError: !1
+    rejectWithError: false
   }).then(e => {
     let r = e.body;
     l.Z.dispatch({

@@ -1,13 +1,15 @@
-/** Chunk was on web.js **/ ! function() {
+/** Chunk was on web.js **/
+/** chunk id: 120356, original params: e (module,exports,re quire) **/
+! function() {
   "use strict";
   var t = {}.hasOwnProperty;
 
   function n() {
     for (var e = "", t = 0; t < arguments.length; t++) {
       var n = arguments[t];
-      n && (e = i(e, r(n)))
+      n && (e = i(module, r(n)))
     }
-    return e
+    return module
   }
 
   function r(e) {
@@ -23,7 +25,7 @@
   function i(e, t) {
     return t ? e ? e + " " + t : e + t : e
   }
-  e.exports ? (n.default = n, e.exports = n) : "function" == typeof define && "object" == typeof define.amd && define.amd ? define("classnames", [], function() {
+  module.exports ? (n.default = n, module.exports = n) : "function" == typeof define && "object" == typeof define.amd && define.amd ? define("classnames", [], function() {
     return n
   }) : window.classNames = n
 }()

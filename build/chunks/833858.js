@@ -1,62 +1,63 @@
 /** Chunk was on web.js **/
+/** chunk id: 833858, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   O8: () => p,
   V: () => f,
   tV: () => _
 });
-var r = n(981631),
-  i = n(388032),
-  o = n(337258),
-  a = n(705196),
-  s = n(190878),
-  l = n(991254),
-  c = n(485686),
-  u = n(400976),
-  d = n(443909);
+var Chunk981631 = require("./981631.js"),
+  Chunk388032 = require("./388032.jsx"),
+  Chunk337258 = require("./337258.js"),
+  Chunk705196 = require("./705196.js"),
+  Chunk190878 = require("./190878.js"),
+  Chunk991254 = require("./991254.js"),
+  Chunk485686 = require("./485686.js"),
+  Chunk400976 = require("./400976.js"),
+  Chunk443909 = require("./443909.js");
 let f = () => ({
-    [r.tNA.CHILLING]: {
-      title: i.intl.string(i.t["vkpn7+"]),
-      icon: a,
+    [Chunk981631.tNA.CHILLING]: {
+      title: Chunk388032.intl.string(Chunk388032.t["vkpn7+"]),
+      icon: Chunk705196,
       color: "#567C7E"
     },
-    [r.tNA.GAMING]: {
-      title: i.intl.string(i.t.lZslwM),
-      icon: s,
+    [Chunk981631.tNA.GAMING]: {
+      title: Chunk388032.intl.string(Chunk388032.t.lZslwM),
+      icon: Chunk190878,
       color: "#685F8C"
     },
-    [r.tNA.FOCUSING]: {
-      title: i.intl.string(i.t.b6AscH),
-      icon: c,
+    [Chunk981631.tNA.FOCUSING]: {
+      title: Chunk388032.intl.string(Chunk388032.t.b6AscH),
+      icon: Chunk485686,
       color: "#7F6956"
     },
-    [r.tNA.BRB]: {
-      title: i.intl.string(i.t["30yqZW"]),
-      icon: o,
+    [Chunk981631.tNA.BRB]: {
+      title: Chunk388032.intl.string(Chunk388032.t["30yqZW"]),
+      icon: Chunk337258,
       color: "#76567E"
     },
-    [r.tNA.EATING]: {
-      title: i.intl.string(i.t.UVSEhY),
-      icon: l,
+    [Chunk981631.tNA.EATING]: {
+      title: Chunk388032.intl.string(Chunk388032.t.UVSEhY),
+      icon: Chunk991254,
       color: "#717B54"
     },
-    [r.tNA.IN_TRANSIT]: {
-      title: i.intl.string(i.t["l0q9/f"]),
-      icon: u,
+    [Chunk981631.tNA.IN_TRANSIT]: {
+      title: Chunk388032.intl.string(Chunk388032.t["l0q9/f"]),
+      icon: Chunk400976,
       color: "#56697F"
     },
-    [r.tNA.WATCHING]: {
-      title: i.intl.string(i.t.di6IFx),
-      icon: d,
+    [Chunk981631.tNA.WATCHING]: {
+      title: Chunk388032.intl.string(Chunk388032.t.di6IFx),
+      icon: Chunk443909,
       color: "#7C5571"
     }
   }),
   _ = e => {
-    if ((null == e ? void 0 : e.type) !== r.IIU.HANG_STATUS || (null == e ? void 0 : e.state) == null) return null;
+    if ((null == e ? true : e.type) !== r.IIU.HANG_STATUS || (null == e ? true : e.state) == null) return null;
     let t = e.state;
     return t === r.tNA.CUSTOM ? null : f()[t]
   },
   p = e => {
     var t;
-    return ((null == e ? void 0 : e.state) != null ? e.state : null) === r.tNA.CUSTOM ? null == e ? void 0 : e.details : null == (t = _(e)) ? void 0 : t.title
+    return ((null == e ? true : e.state) != null ? e.state : null) === r.tNA.CUSTOM ? null == e ? true : e.details : null == (t = _(e)) ? true : t.title
   }

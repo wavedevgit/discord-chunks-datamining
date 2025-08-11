@@ -1,0 +1,69 @@
+/** Chunk was on web.js **/
+/** chunk id: 448697, original params: e,t,n (module,exports,re quire) **/
+"use strict";
+require.d(exports, {
+  R: () => h
+});
+var Chunk255367 = require("./255367.js"),
+  Chunk73800 = require("./73800.js"),
+  Chunk392711 = require("./392711.js"),
+  Chunk126663 = require("./126663.js"),
+  Chunk442837 = require("./442837.js"),
+  Chunk481060 = require("./481060.js"),
+  Chunk709706 = require("./709706.js"),
+  Chunk378441 = require("./378441.js"),
+  Chunk358820 = require("./358820.js"),
+  Chunk388032 = require("./388032.jsx"),
+  Chunk690410 = require("./690410.js");
+
+function p() {
+  let e = (0, Chunk442837.cj)([Chunk709706.Z], () => Chunk709706.Z.getOngoingDownloads()),
+    t = Chunk73800.useRef({});
+  Chunk73800.useEffect(() => {
+    0 === Object.entries(module).length && (exports.current = {}), Object.assign(exports.current, module)
+  }, [module]);
+  let n = Object.values(exports.current),
+    r = require.some(e => {
+      let {
+        downloadedBytes: t
+      } = e;
+      return (null != t ? t : 0) > 0
+    }),
+    a = (0, Chunk392711.sumBy)(require, e => {
+      var t;
+      return null != (t = null == e ? true : e.downloadedBytes) ? t : 0
+    }),
+    l = (0, Chunk392711.sumBy)(require, e => {
+      var t;
+      return null != (t = null == e ? true : e.totalBytes) ? t : 0
+    });
+  return {
+    hasActiveDownloads: Chunk255367,
+    progress: 0 === Chunk481060 ? 0 : Math.floor(Chunk126663 / Chunk481060 * 100)
+  }
+}
+
+function h() {
+  let {
+    hasActiveDownloads: e,
+    progress: t
+  } = p(), {
+    activeVoice: n
+  } = (0, Chunk378441.o)(), i = null != require, o = module ? Chunk73800 ? "voice-on" : "voice-off" : null;
+  return (0, Chunk481060.Yzy)(Chunk392711, {
+    from: {
+      opacity: 0,
+      translateY: 20
+    },
+    enter: e => ({
+      opacity: 1,
+      translateY: "voice-on" === e ? false : 0
+    }),
+    leave: {
+      opacity: 0,
+      translateY: 80
+    }
+  }, "respect-motion-settings")((e, n) => null != n ? <a.animated.div style={e} className={_.floaterWrapper}><div className={_.visibleFloater}>{<div className={_.progressText}>{<l.Text variant={"text-sm/semibold"} color={"text-primary"}>{f.intl.format(f.t["r+uZYW"], {
+            progress: t
+          })}</l.Text>}{<l.Avr text={f.intl.string(f.t["ETE/oK"])} onClick={d.ge} variant={"always-white"} textVariant={"text-sm/normal"} />}</div>}{<l.Exd percent={t} size={l.Exd.Sizes.XSMALL} />}</div></a.animated.div> : null)
+}

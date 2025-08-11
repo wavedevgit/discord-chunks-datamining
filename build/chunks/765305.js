@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 765305, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   $I: () => d,
   Fc: () => y,
   Ku: () => c,
@@ -21,9 +22,9 @@ n.d(t, {
   wm: () => a,
   zV: () => v,
   zw: () => l
-}), n(388685);
-var r = n(70956),
-  i = n(981631);
+}), require("./388685.js");
+var Chunk70956 = require("./70956.js"),
+  Chunk981631 = require("./981631.js");
 let o = 100,
   a = 1e3,
   s = 100,
@@ -43,8 +44,8 @@ var f = function(e) {
     return e[e.PUBLIC = 1] = "PUBLIC", e[e.GUILD_ONLY = 2] = "GUILD_ONLY", e
   }({});
 let h = {
-    1: i.d4z.GUILD_STAGE_VOICE,
-    2: i.d4z.GUILD_VOICE
+    1: Chunk981631.d4z.GUILD_STAGE_VOICE,
+    2: Chunk981631.d4z.GUILD_VOICE
   },
   m = new Set([3]),
   g = new Set([1, 2]);
@@ -52,8 +53,8 @@ var E = function(e) {
   return e[e.EVENT_INFO = 0] = "EVENT_INFO", e[e.RSVP_LIST = 1] = "RSVP_LIST", e
 }({});
 let b = 100,
-  y = 2 * r.Z.Millis.DAY,
-  O = 12 * r.Z.Millis.HOUR,
+  y = 2 * Chunk70956.Z.Millis.DAY,
+  O = 12 * Chunk70956.Z.Millis.HOUR,
   v = 4;
 var I = function(e) {
     return e.NEW_EVENT = "Upcoming Event Notice", e.EVENT_STARTING_SOON = "Event Starting Soon Notice", e

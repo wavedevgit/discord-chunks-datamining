@@ -1,5 +1,6 @@
 /** Chunk was on 31505 **/
-e.exports = {
+/** chunk id: 677163, original params: e,r,n (module,exports,require) **/
+module.exports = {
   skuSelectModalHeader: "skuSelectModalHeader_e50a4d",
   skuSelectModalContent: "skuSelectModalContent_e50a4d",
   modalPadding: "modalPadding_e50a4d",

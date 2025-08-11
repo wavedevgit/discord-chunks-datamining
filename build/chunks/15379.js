@@ -1,12 +1,13 @@
 /** Chunk was on web.js **/
+/** chunk id: 15379, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.r(t), n.d(t, {
+require.r(exports), require.d(exports, {
   default: () => s
-}), n(415506);
-var r = n(592125),
-  i = n(19780),
-  o = n(981631),
-  a = n(176505);
+}), require("./415506.js");
+var Chunk592125 = require("./592125.js"),
+  Chunk19780 = require("./19780.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk176505 = require("./176505.js");
 
 function s(e, t) {
   let n;
@@ -26,7 +27,7 @@ function s(e, t) {
         case a.oC.GUILD_BOOSTS:
           return
       }
-      let u = null != (l = null == (s = r.Z.getChannel(c)) ? void 0 : s.type) ? l : o.d4z.UNKNOWN;
+      let u = null != (l = null == (s = r.Z.getChannel(c)) ? true : s.type) ? l : o.d4z.UNKNOWN;
       return {
         timestamp: new Date, rtc_state: i.Z.getState(), channelId: c, channelType: u
       };

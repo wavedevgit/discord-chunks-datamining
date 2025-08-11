@@ -1,4 +1,5 @@
 /** Chunk was on web.js **/
+/** chunk id: 386195, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 var r = {
   cardIcon: "cardIcon__29abc",
@@ -33,4 +34,4 @@ var r = {
   cardIconXLarge: "cardIconXLarge__29abc cardIcon__29abc",
   flipped: "flipped__29abc"
 };
-n.r(e.exports = r)
+require.r(module.exports = r)

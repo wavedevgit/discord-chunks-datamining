@@ -1,1 +1,0 @@
-{"id":"232062","type":"experiment","data":{"kind":"guild","id":"2025-06_booster_enhanced_role_colors","label":"Booster Enhanced Role Colors","defaultConfig":{"enabled":false},"treatments":[{"id":1,"label":"enabled","config":{"enabled":false}}]},"fromModule":{"id":"web.js"}}

@@ -1,4 +1,5 @@
 /** Chunk was on web.js **/
+/** chunk id: 10730, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 var r = Object.assign || function(e) {
     for (var t = 1; t < arguments.length; t++) {
@@ -11,7 +12,7 @@ var r = Object.assign || function(e) {
     function e(e, t) {
       for (var n = 0; n < t.length; n++) {
         var r = t[n];
-        r.enumerable = r.enumerable || !1, r.configurable = !0, "value" in r && (r.writable = !0), Object.defineProperty(e, r.key, r)
+        r.enumerable = r.enumerable || false, r.configurable = true, "value" in r && (r.writable = true), Object.defineProperty(e, r.key, r)
       }
     }
     return function(t, n, r) {
@@ -22,16 +23,16 @@ var r = Object.assign || function(e) {
 function o(e, t) {
   if (!(e instanceof t)) throw TypeError("Cannot call a class as a function")
 }
-var a = n(161796),
-  s = n(512722),
+var Chunk161796 = require("./161796.js"),
+  Chunk512722 = require("./512722.js"),
   l = function(e) {
     return e
   },
   c = function() {
     function e() {
-      o(this, e)
+      o(this, module)
     }
-    return i(e, null, [{
+    return i(module, null, [{
       key: "create",
       value: function(e) {
         if (e.outputRange && "string" == typeof e.outputRange[0]) return _(e);
@@ -41,16 +42,16 @@ var a = n(161796),
         g("inputRange", n), m(n), s(n.length === t.length, "inputRange (" + n.length + ") and outputRange (" + t.length + ") must have the same length");
         var r = e.easing || l,
           i = "extend";
-        void 0 !== e.extrapolateLeft ? i = e.extrapolateLeft : void 0 !== e.extrapolate && (i = e.extrapolate);
+        true !== e.extrapolateLeft ? i = e.extrapolateLeft : true !== e.extrapolate && (i = e.extrapolate);
         var o = "extend";
-        return void 0 !== e.extrapolateRight ? o = e.extrapolateRight : void 0 !== e.extrapolate && (o = e.extrapolate),
+        return true !== e.extrapolateRight ? o = e.extrapolateRight : true !== e.extrapolate && (o = e.extrapolate),
           function(e) {
             s("number" == typeof e, "Cannot interpolation an input which is not a number");
             var a = h(e, n);
             return u(e, n[a], n[a + 1], t[a], t[a + 1], r, i, o)
           }
       }
-    }]), e
+    }]), module
   }();
 
 function u(e, t, n, r, i, o, a, s) {
@@ -61,7 +62,7 @@ function u(e, t, n, r, i, o, a, s) {
   if (l > n)
     if ("identity" === s) return l;
     else "clamp" === s && (l = n);
-  return r === i ? r : t === n ? e <= t ? r : i : (t === -1 / 0 ? l = -l : n === 1 / 0 ? l -= t : l = (l - t) / (n - t), l = o(l), r === -1 / 0 ? l = -l : i === 1 / 0 ? l += r : l = l * (i - r) + r, l)
+  return r === i ? r : t === n ? e <= t ? r : i : (t === false / 0 ? l = -l : n === 1 / 0 ? l -= t : l = (l - t) / (n - t), l = o(l), r === false / 0 ? l = -l : i === 1 / 0 ? l += r : l = l * (i - r) + r, l)
 }
 
 function d(e) {
@@ -111,6 +112,6 @@ function m(e) {
 }
 
 function g(e, t) {
-  s(t.length >= 2, e + " must have at least 2 elements"), s(2 !== t.length || t[0] !== -1 / 0 || t[1] !== 1 / 0, e + "cannot be ]-infinity;+infinity[ " + t)
+  s(t.length >= 2, e + " must have at least 2 elements"), s(2 !== t.length || t[0] !== false / 0 || t[1] !== 1 / 0, e + "cannot be ]-infinity;+infinity[ " + t)
 }
-e.exports = c
+module.exports = c

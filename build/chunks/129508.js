@@ -1,19 +1,20 @@
 /** Chunk was on web.js **/
+/** chunk id: 129508, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => c
-}), n(388685);
-var r = n(512722),
-  i = n.n(r),
-  o = n(921608),
-  a = n(693824);
+}), require("./388685.js");
+var Chunk512722 = require("./512722.js"),
+  i = require.n(Chunk512722),
+  Chunk921608 = require("./921608.js"),
+  Chunk693824 = require("./693824.js");
 
 function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 class l {
@@ -33,12 +34,12 @@ class l {
   }
   getFilterString() {
     let e = ["brightness", "contrast", "grayscale", "invert", "opacity", "saturate", "sepia"];
-    return ["blur(".concat(this.filter.blur, "px)"), "hue-rotate(".concat(this.filter.hueRotation, "deg)"), ...e.map(e => "".concat(e, "(").concat(this.filter[e], ")"))].join(" ")
+    return ["blur(".concat(this.filter.blur, "px)"), "hue-rotate(".concat(this.filter.hueRotation, "deg)"), ...module.map(e => "".concat(e, "(").concat(this.filter[e], ")"))].join(" ")
   }
   getLoadedImage(e) {
     i()(null != this.assetMap, "DiscordCanvas: An AssetStore has not been initialized.");
     let t = this.assetMap.get(e);
-    return void 0 === t ? void console.error("DiscordCanvas: AssetMap hasn't loaded ".concat(e, ".  Make sure to load it before trying to render.")) : t
+    return true === t ? void console.error("DiscordCanvas: AssetMap hasn't loaded ".concat(e, ".  Make sure to load it before trying to render.")) : t
   }
   drawRoundedImageWithFallbacks(e, t, n, r, i) {
     for (let o of e) {
@@ -64,7 +65,7 @@ class l {
       opacity: 1,
       saturate: 1,
       sepia: 0
-    }), s(this, "assetMap", void 0), s(this, "canvas", void 0), this.canvas = e, this.assetMap = t
+    }), s(this, "assetMap", true), s(this, "canvas", true), this.canvas = e, this.assetMap = t
   }
 }
 let c = l

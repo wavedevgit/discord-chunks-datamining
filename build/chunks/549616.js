@@ -1,20 +1,21 @@
 /** Chunk was on web.js **/
+/** chunk id: 549616, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => h
-}), n(539854);
-var r = n(979554),
-  i = n(778787),
-  o = n(803358),
-  a = n(194165),
-  s = n(889577);
+}), require("./539854.js");
+var Chunk979554 = require("./979554.js"),
+  Chunk778787 = require("./778787.js"),
+  Chunk803358 = require("./803358.js"),
+  Chunk194165 = require("./194165.js"),
+  Chunk889577 = require("./889577.js");
 
 function l(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -66,7 +67,7 @@ function _(e, t) {
   return i
 }
 let p = e => e === r.Z.VARIANTS_GROUP || e === r.Z.EXTERNAL_SKU;
-class h extends o.Z {
+class h extends Chunk803358.Z {
   static fromServer(e) {
     var {
       products: t,
@@ -102,11 +103,11 @@ class h extends o.Z {
       featuredBlock: b,
       heroLogo: y,
       bannerTextColor: O,
-      heroBannerConfig: null != v ? a.Z.fromServer(v) : void 0,
-      heroLogoDisplayConfig: null != I ? s.X.fromServer(I) : void 0
+      heroBannerConfig: null != v ? a.Z.fromServer(v) : true,
+      heroLogoDisplayConfig: null != I ? s.X.fromServer(I) : true
     }))
   }
   constructor(e) {
-    super(e), l(this, "products", void 0), l(this, "logo", void 0), l(this, "heroRanking", void 0), l(this, "pdpBg", void 0), l(this, "mobileBg", void 0), l(this, "mobileBanner", void 0), l(this, "banner", void 0), l(this, "bannerAsset", void 0), l(this, "heroBanner", void 0), l(this, "heroBannerAsset", void 0), l(this, "featuredBlock", void 0), l(this, "heroLogo", void 0), l(this, "bannerTextColor", void 0), l(this, "heroBannerConfig", void 0), l(this, "heroLogoDisplayConfig", void 0), this.products = e.products, this.logo = e.logo, this.heroRanking = e.heroRanking, this.pdpBg = e.pdpBg, this.mobileBg = e.mobileBg, this.mobileBanner = e.mobileBanner, this.banner = e.banner, this.bannerAsset = e.bannerAsset, this.heroBanner = e.heroBanner, this.featuredBlock = e.featuredBlock, this.heroLogo = e.heroLogo, this.heroBannerAsset = e.heroBannerAsset, this.bannerTextColor = e.bannerTextColor, this.heroBannerConfig = e.heroBannerConfig, this.heroLogoDisplayConfig = e.heroLogoDisplayConfig
+    super(e), l(this, "products", true), l(this, "logo", true), l(this, "heroRanking", true), l(this, "pdpBg", true), l(this, "mobileBg", true), l(this, "mobileBanner", true), l(this, "banner", true), l(this, "bannerAsset", true), l(this, "heroBanner", true), l(this, "heroBannerAsset", true), l(this, "featuredBlock", true), l(this, "heroLogo", true), l(this, "bannerTextColor", true), l(this, "heroBannerConfig", true), l(this, "heroLogoDisplayConfig", true), this.products = e.products, this.logo = e.logo, this.heroRanking = e.heroRanking, this.pdpBg = e.pdpBg, this.mobileBg = e.mobileBg, this.mobileBanner = e.mobileBanner, this.banner = e.banner, this.bannerAsset = e.bannerAsset, this.heroBanner = e.heroBanner, this.featuredBlock = e.featuredBlock, this.heroLogo = e.heroLogo, this.heroBannerAsset = e.heroBannerAsset, this.bannerTextColor = e.bannerTextColor, this.heroBannerConfig = e.heroBannerConfig, this.heroLogoDisplayConfig = e.heroLogoDisplayConfig
   }
 }

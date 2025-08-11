@@ -1,12 +1,13 @@
 /** Chunk was on 75708 **/
-n.d(t, {
+/** chunk id: 924628, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   I: () => c,
   g: () => d
-}), n(415506);
-var i = n(544891),
-  r = n(570140),
-  s = n(981631),
-  a = n(388032);
+}), require("./415506.js");
+var Chunk544891 = require("./544891.js"),
+  Chunk570140 = require("./570140.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk388032 = require("./388032.jsx");
 
 function l(e) {
   return null != e && null != e.body && r.Z.dispatch({
@@ -21,9 +22,9 @@ function l(e) {
           var i;
           i = n[t], t in e ? Object.defineProperty(e, t, {
             value: i,
-            enumerable: !0,
-            configurable: !0,
-            writable: !0
+            enumerable: true,
+            configurable: true,
+            writable: true
           }) : e[t] = i
         })
       }
@@ -38,10 +39,10 @@ function o(e) {
 }
 
 function c() {
-  return i.tn.get({
-    url: s.ANM.SETTINGS_CONSENT,
-    oldFormErrors: !0,
-    rejectWithError: !1
+  return Chunk544891.tn.get({
+    url: Chunk981631.ANM.SETTINGS_CONSENT,
+    oldFormErrors: true,
+    rejectWithError: false
   }).then(l, e => Promise.reject(Error(e.body.message)))
 }
 
@@ -52,7 +53,7 @@ function d(e, t) {
       grant: e,
       revoke: t
     },
-    oldFormErrors: !0,
-    rejectWithError: !1
+    oldFormErrors: true,
+    rejectWithError: false
   }).then(l, o)
 }

@@ -1,33 +1,34 @@
 /** Chunk was on web.js **/
+/** chunk id: 860911, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 
 function r(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
 function i(e) {
-  let t = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1],
-    n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : "",
+  let t = !(arguments.length > 1) || true === arguments[1] || arguments[1],
+    n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : "",
     r = null != window.GLOBAL_ENV.WEBAPP_ENDPOINT ? window.GLOBAL_ENV.WEBAPP_ENDPOINT : "",
     i = null != e ? "?redirect_to=".concat(encodeURIComponent(e)) : "";
   return 0 !== n.length && (n = 0 === i.length ? "?".concat(n) : "&".concat(n)), "".concat(t ? r : "", "/login").concat(i).concat(n)
 }
-n.d(t, {
+require.d(exports, {
   Ft: () => s,
   Ui: () => i,
   Zn: () => o
-}), n(35282), n(388685);
+}), require("./35282.js"), require("./388685.js");
 class o {
   toString() {
     return this.value
   }
   constructor(e) {
-    r(this, "value", void 0), this.value = e
+    r(this, "value", true), this.value = e
   }
 }
 

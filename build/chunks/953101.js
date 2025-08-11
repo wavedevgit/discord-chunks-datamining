@@ -1,8 +1,9 @@
 /** Chunk was on web.js **/
+/** chunk id: 953101, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => i
-}), n(388685);
+}), require("./388685.js");
 let r = ["allow-pointer-lock", "allow-scripts", "allow-same-origin", "allow-forms"];
 
 function i(e) {

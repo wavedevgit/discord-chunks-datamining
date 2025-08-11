@@ -1,17 +1,18 @@
 /** Chunk was on web.js **/
+/** chunk id: 252759, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   A: () => o,
   a: () => a
 });
-var r = n(75834);
+var Chunk75834 = require("./75834.js");
 
 function i(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 var o = function(e) {
@@ -35,11 +36,11 @@ class a {
   }
   onCaptureEnd(e, t) {
     var n;
-    (null == (n = this.application) ? void 0 : n.windowHandle) === t && this._update(e)
+    (null == (n = this.application) ? true : n.windowHandle) === t && this._update(e)
   }
   onCaptureLegacyEnd(e) {
     var t;
-    return (null == (t = this.application) ? void 0 : t.windowHandle) != null ? this.onCaptureEnd(e, this.application.windowHandle) : this._stop()
+    return (null == (t = this.application) ? true : t.windowHandle) != null ? this.onCaptureEnd(e, this.application.windowHandle) : this._stop()
   }
   _update(e) {
     let t = (0, r.s)(e, this.application);
@@ -48,15 +49,15 @@ class a {
   }
   _stream(e) {
     var t;
-    let n = (null == (t = this.application) ? void 0 : t.windowHandle) !== e.windowHandle;
-    this.active = !0, this.application = Object.assign({}, e), n && this.callback({
+    let n = (null == (t = this.application) ? true : t.windowHandle) !== e.windowHandle;
+    this.active = true, this.application = Object.assign({}, e), n && this.callback({
       type: "stream",
       sourceId: "window:".concat(this.application.windowHandle),
       sound: this.sound
     })
   }
   _kill() {
-    this.active = !1, this.application = null
+    this.active = false, this.application = null
   }
   _stop() {
     this.active && (this._kill(), this.callback({
@@ -69,6 +70,6 @@ class a {
     }))
   }
   constructor(e) {
-    i(this, "callback", void 0), i(this, "active", void 0), i(this, "application", void 0), i(this, "sound", void 0), this.callback = e, this.active = !1, this.application = null, this.sound = !0
+    i(this, "callback", true), i(this, "active", true), i(this, "application", true), i(this, "sound", true), this.callback = e, this.active = false, this.application = null, this.sound = true
   }
 }

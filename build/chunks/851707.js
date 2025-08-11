@@ -1,5 +1,6 @@
 /** Chunk was on 31077 **/
-e.exports = u(975412)({
+/** chunk id: 851707, original params: e,t,u (module,exports,require) **/
+module.exports = require("./975412.js")({
   À: "A",
   Á: "A",
   Â: "A",

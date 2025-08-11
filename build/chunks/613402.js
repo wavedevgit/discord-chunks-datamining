@@ -1,32 +1,33 @@
 /** Chunk was on web.js **/
+/** chunk id: 613402, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => c
-}), n(388685);
-var r = n(570140),
-  i = n(147913),
-  o = n(885110);
+}), require("./388685.js");
+var Chunk570140 = require("./570140.js"),
+  Chunk147913 = require("./147913.js"),
+  Chunk885110 = require("./885110.js");
 
 function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
-class s extends i.Z {
+class s extends Chunk147913.Z {
   constructor(...e) {
     super(...e), a(this, "stores", new Map().set(o.Z, l))
   }
 }
 
 function l() {
-  r.Z.dispatch({
+  Chunk570140.Z.dispatch({
     type: "SELF_PRESENCE_STORE_UPDATE",
-    status: o.Z.getStatus(),
-    activities: o.Z.getActivities(!0),
-    hiddenActivities: o.Z.getHiddenActivities()
+    status: Chunk885110.Z.getStatus(),
+    activities: Chunk885110.Z.getActivities(true),
+    hiddenActivities: Chunk885110.Z.getHiddenActivities()
   })
 }
 let c = new s

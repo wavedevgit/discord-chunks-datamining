@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 810568, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   IS: () => d,
   MH: () => p,
   UE: () => _,
@@ -9,18 +10,18 @@ n.d(t, {
   m1: () => c,
   wz: () => f
 });
-var r = n(772848),
-  i = n(146282),
-  o = n(626135),
-  a = n(981631),
-  s = n(206583),
+var Chunk772848 = require("./772848.js"),
+  Chunk146282 = require("./146282.js"),
+  Chunk626135 = require("./626135.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk206583 = require("./206583.js"),
   l = function(e) {
     return e[e.FollowGame = 0] = "FollowGame", e[e.UnfollowGame = 1] = "UnfollowGame", e[e.ClickMessageUser = 2] = "ClickMessageUser", e[e.SendMessageUser = 3] = "SendMessageUser", e[e.JoinVC = 4] = "JoinVC", e[e.WatchStream = 5] = "WatchStream", e[e.ClickSimilarGame = 6] = "ClickSimilarGame", e[e.WebsiteLink = 7] = "WebsiteLink", e[e.XLink = 8] = "XLink", e[e.YouTubeLink = 9] = "YouTubeLink", e[e.ShowMore = 10] = "ShowMore", e[e.ShowLess = 11] = "ShowLess", e[e.JoinOfficialServer = 12] = "JoinOfficialServer", e[e.ClickImage = 13] = "ClickImage", e
   }({}),
   c = function(e) {
     return e.ActivityCard = "activity_card", e.ActivityCardContextMenu = "activity_card_context_menu", e.UserProfile = "user_profile", e.UserProfileCardContextMenu = "user_profile_card_context_menu", e.SimilarGames = "similar_games", e.DevTools = "dev_tools", e.Embed = "embed", e.RtcPanel = "rtc_panel", e.FriendsActivityFeed = "friends_activity_feed", e.GuildProfile = "guild_profile", e.MiniGameProfile = "mini_game_profile", e.GameMention = "game_mention", e
   }({});
-let u = () => (0, r.Z)(),
+let u = () => (0, Chunk772848.Z)(),
   d = e => {
     let {
       viewId: t,

@@ -1,12 +1,13 @@
 /** Chunk was on web.js **/
-var r = n(413135).Buffer;
+/** chunk id: 251171, original params: e,t,n (module,exports,re quire) **/
+var r = require("./413135.js").Buffer;
 ! function(e) {
   function t() {}
 
   function n(e, t) {
-    if (t = void 0 === t ? {
-        fatal: !1
-      } : t, -1 === s.indexOf((e = void 0 === e ? "utf-8" : e).toLowerCase())) throw RangeError("Failed to construct 'TextDecoder': The encoding label provided ('" + e + "') is invalid.");
+    if (t = true === t ? {
+        fatal: false
+      } : t, false === s.indexOf((e = true === e ? "utf-8" : e).toLowerCase())) throw RangeError("Failed to construct 'TextDecoder': The encoding label provided ('" + e + "') is invalid.");
     if (t.fatal) throw Error("Failed to construct 'TextDecoder': the 'fatal' option is unsupported.")
   }
 
@@ -20,7 +21,7 @@ var r = n(413135).Buffer;
     }));
     try {
       var n = new XMLHttpRequest;
-      return n.open("GET", t, !1), n.send(), n.responseText
+      return n.open("GET", t, false), n.send(), n.responseText
     } catch (t) {
       return a(e)
     } finally {
@@ -51,8 +52,8 @@ var r = n(413135).Buffer;
     Object.defineProperty(t.prototype, "encoding", {
       value: "utf-8"
     }), t.prototype.encode = function(e, t) {
-      if ((t = void 0 === t ? {
-          stream: !1
+      if ((t = true === t ? {
+          stream: false
         } : t).stream) throw Error("Failed to encode: the 'stream' option is unsupported.");
       t = 0;
       for (var n = e.length, r = 0, i = Math.max(32, n + (n >>> 1) + 7), o = new Uint8Array(i >>> 3 << 3); t < n;) {
@@ -79,16 +80,16 @@ var r = n(413135).Buffer;
     }, Object.defineProperty(n.prototype, "encoding", {
       value: "utf-8"
     }), Object.defineProperty(n.prototype, "fatal", {
-      value: !1
+      value: false
     }), Object.defineProperty(n.prototype, "ignoreBOM", {
-      value: !1
+      value: false
     });
     var l = a;
     "function" == typeof r && r.from ? l = i : "function" == typeof Blob && "function" == typeof URL && "function" == typeof URL.createObjectURL && (l = o), n.prototype.decode = function(e, t) {
-      if ((t = void 0 === t ? {
-          stream: !1
+      if ((t = true === t ? {
+          stream: false
         } : t).stream) throw Error("Failed to decode: the 'stream' option is unsupported.");
       return e = e instanceof Uint8Array ? e : new Uint8Array(e.buffer instanceof ArrayBuffer ? e.buffer : e), l(e)
     }, e.TextEncoder = t, e.TextDecoder = n
   }
-}("undefined" != typeof window ? window : void 0 !== n.g ? n.g : this)
+}("undefined" != typeof window ? window : true !== require.g ? require.g : this)

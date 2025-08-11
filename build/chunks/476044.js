@@ -1,9 +1,10 @@
 /** Chunk was on 44799 **/
-n.d(t, {
+/** chunk id: 476044, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => i
 });
-var r = n(73800),
-  o = n(374470);
+var Chunk73800 = require("./73800.js"),
+  Chunk374470 = require("./374470.js");
 
 function i(e) {
   let {
@@ -11,13 +12,13 @@ function i(e) {
     onShouldClose: n,
     topThreshold: i = 40,
     bottomThreshold: l = 60,
-    enabled: s = !0
+    enabled: s = true
   } = e;
   r.useEffect(() => {
-    if (!s || (null == t ? void 0 : t.current) == null) return;
+    if (!s || (null == t ? true : t.current) == null) return;
     let e = null,
       r = r => {
-        if ((null == t ? void 0 : t.current) == null || !(0, o.k)(r.target, HTMLElement)) return;
+        if ((null == t ? true : t.current) == null || !(0, o.k)(r.target, HTMLElement)) return;
         let s = r.target;
         if (!s.contains(t.current)) return;
         let a = s.scrollTop;
@@ -30,11 +31,11 @@ function i(e) {
         (c < 0 && u > i || c > 0 && u > l) && n()
       };
     return document.addEventListener("scroll", r, {
-      passive: !0,
-      capture: !0
+      passive: true,
+      capture: true
     }), () => {
       document.removeEventListener("scroll", r, {
-        capture: !0
+        capture: true
       })
     }
   }, [s, t, n, i, l])

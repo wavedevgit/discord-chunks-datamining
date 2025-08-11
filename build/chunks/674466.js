@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 674466, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Mq: () => m,
   Su: () => f,
   bU: () => b,
@@ -11,17 +12,17 @@ n.d(t, {
   u7: () => d,
   z4: () => y,
   z_: () => E
-}), n(388685), n(539854), n(467055);
-var r = n(379649),
-  i = n(909766),
-  o = n(179654);
+}), require("./388685.js"), require("./539854.js"), require("./467055.js");
+var Chunk379649 = require("./379649.js"),
+  Chunk909766 = require("./909766.js"),
+  Chunk179654 = require("./179654.js");
 
 function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 let s = [0, 5e5, 1e6, 15e5, 2e6, 3e6, 4e6, 5e6, 6e6, 7e6, 8e6],
@@ -224,8 +225,8 @@ class O {
   }
   getCodecsUsed() {
     let e = new Set;
-    for (let [t, n] of Object.entries(this.codecBuckets)) n > 0 && e.add(t);
-    return e
+    for (let [t, n] of Object.entries(this.codecBuckets)) require > 0 && module.add(exports);
+    return module
   }
   constructor(e) {
     a(this, "decoderBuckets", Object.fromEntries(Object.values(_).map(e => [e, 0]))), a(this, "codecBuckets", {
@@ -235,7 +236,7 @@ class O {
       VP9: 0,
       AV1: 0,
       UNKNOWN: 0
-    }), a(this, "statsWindow", []), a(this, "fpsHistogram", new i.b), a(this, "bitrateHistogram", new i.b), a(this, "inboundBitrateEstimateHistogram", new i.b), a(this, "resolutionHistogram", new i.b), a(this, "localWantHistogram", new i.b), a(this, "systemResources", new o.Z), a(this, "decoderCodec", "UNKNOWN"), a(this, "startTime", void 0), a(this, "timeToFirstFrame", void 0), a(this, "aggregatedProperties", {
+    }), a(this, "statsWindow", []), a(this, "fpsHistogram", new i.b), a(this, "bitrateHistogram", new i.b), a(this, "inboundBitrateEstimateHistogram", new i.b), a(this, "resolutionHistogram", new i.b), a(this, "localWantHistogram", new i.b), a(this, "systemResources", new o.Z), a(this, "decoderCodec", "UNKNOWN"), a(this, "startTime", true), a(this, "timeToFirstFrame", true), a(this, "aggregatedProperties", {
       framesCodec: 0,
       framesNetwork: 0,
       packets: 0,
@@ -264,7 +265,7 @@ class O {
       qualityScoreErrors: 0,
       qualityFrameDrops: 0,
       qualitySizeMismatches: 0
-    }), a(this, "aggregationDuration", 0), a(this, "bitrateBuckets", {}), a(this, "fpsBuckets", {}), a(this, "resolutionBuckets", {}), a(this, "resolutionTotal", 0), a(this, "minorResolutionTotal", 0), a(this, "majorResolutionTotal", 0), a(this, "intervalTotal", 0), a(this, "cryptorMaxAttempts", 0), a(this, "cryptorFailureBeforeSuccessCount", void 0), a(this, "videoStoppedWatch", void 0), a(this, "videoStoppedReason", 0), this.startTime = e.now(), this.videoStoppedWatch = new r.G9(e), s.forEach(e => {
+    }), a(this, "aggregationDuration", 0), a(this, "bitrateBuckets", {}), a(this, "fpsBuckets", {}), a(this, "resolutionBuckets", {}), a(this, "resolutionTotal", 0), a(this, "minorResolutionTotal", 0), a(this, "majorResolutionTotal", 0), a(this, "intervalTotal", 0), a(this, "cryptorMaxAttempts", 0), a(this, "cryptorFailureBeforeSuccessCount", true), a(this, "videoStoppedWatch", true), a(this, "videoStoppedReason", 0), this.startTime = e.now(), this.videoStoppedWatch = new r.G9(e), s.forEach(e => {
       this.bitrateBuckets[e] = 0
     }), l.forEach(e => {
       this.fpsBuckets[e] = 0

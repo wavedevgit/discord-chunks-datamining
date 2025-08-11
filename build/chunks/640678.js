@@ -1,11 +1,12 @@
 /** Chunk was on 33213 **/
-n.d(t, {
+/** chunk id: 640678, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   t: () => a
 });
-var i = n(163400),
-  r = n(995532),
-  l = n(496675),
-  s = n(896007);
+var Chunk163400 = require("./163400.js"),
+  Chunk995532 = require("./995532.js"),
+  Chunk496675 = require("./496675.js"),
+  Chunk896007 = require("./896007.js");
 let o = {
   HEADER: "HEADER",
   DIVIDER: "DIVIDER"
@@ -25,15 +26,15 @@ function a(e) {
         var i;
         i = n[t], t in e ? Object.defineProperty(e, t, {
           value: i,
-          enumerable: !0,
-          configurable: !0,
-          writable: !0
+          enumerable: true,
+          configurable: true,
+          writable: true
         }) : e[t] = i
       })
     }
     return e
   }({
-    showDirtyGuildTemplateIndicator: !1
+    showDirtyGuildTemplateIndicator: false
   }, a), n = n = {
     canUnlinkChannels: c,
     welcomeScreenEmpty: r.Z.isEmpty(e.id)

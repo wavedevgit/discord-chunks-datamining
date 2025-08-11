@@ -1,1 +1,0 @@
-{"id":"909688","type":"experiment","data":{"kind":"user","id":"2025-01_mobile_shop_adaptive_back_button_color","label":"mobile shop adaptive back button color","defaultConfig":{"enabled":false},"treatments":[{"id":1,"label":"Based on banner dominate color","config":{"enabled":false}}],"commonTriggerPoint":"l.$P.COLLECTIBLES_SHOP_OPEN"},"fromModule":{"id":"45620"}}

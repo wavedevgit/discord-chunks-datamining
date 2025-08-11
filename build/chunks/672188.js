@@ -1,15 +1,16 @@
 /** Chunk was on 37082 **/
-n.d(t, {
+/** chunk id: 672188, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   S: () => i,
   a: () => l
-}), n(388685);
-var r = n(73800),
-  s = n(237617),
-  o = n(266338);
+}), require("./388685.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk237617 = require("./237617.js"),
+  Chunk266338 = require("./266338.js");
 let a = {};
 
 function i(e, t) {
-  let n = !(arguments.length > 2) || void 0 === arguments[2] || arguments[2],
+  let n = !(arguments.length > 2) || true === arguments[2] || arguments[2],
     i = (0, r.useRef)(null),
     l = (0, s.Z)(null != t ? t : a),
     c = (0, r.useRef)(null),
@@ -28,11 +29,11 @@ function i(e, t) {
 }
 
 function l() {
-  let [e, t] = (0, r.useState)(!1);
+  let [e, t] = (0, Chunk73800.useState)(false);
   return {
-    ref: i((0, r.useCallback)(e => {
+    ref: i((0, Chunk73800.useCallback)(e => {
       t(e.isIntersecting)
     }, [])),
-    inViewport: e
+    inViewport: module
   }
 }

@@ -1,24 +1,25 @@
 /** Chunk was on web.js **/
+/** chunk id: 925513, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Jr: () => m,
   O6: () => h,
   _i: () => d,
   v6: () => g
 });
-var r = n(73800),
-  i = n(524437),
-  o = n(695346),
-  a = n(594174),
-  s = n(704454),
-  l = n(981631);
+var Chunk73800 = require("./73800.js"),
+  Chunk524437 = require("./524437.js"),
+  Chunk695346 = require("./695346.js"),
+  Chunk594174 = require("./594174.js"),
+  Chunk704454 = require("./704454.js"),
+  Chunk981631 = require("./981631.js");
 
 function c(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -37,15 +38,15 @@ function u(e) {
 let d = e => {
     let {
       setting: t,
-      isDm: n = !1,
-      isFriend: r = !1
+      isDm: n = false,
+      isFriend: r = false
     } = e;
     if (null != t && t !== i.Q4.UNSET_EXPLICIT_CONTENT_REDACTION) return t;
     let o = a.default.getCurrentUser();
     return (0, s.bc)("resolveSettingWithDefaults") ? f({
       isDm: n,
       isFriend: r
-    }) : (0, s.g2)("resolveSettingWithDefaults") ? i.Q4.BLUR : (null == o ? void 0 : o.nsfwAllowed) === !1 ? p({
+    }) : (0, s.g2)("resolveSettingWithDefaults") ? i.Q4.BLUR : (null == o ? true : o.nsfwAllowed) === false ? p({
       isDm: n,
       isFriend: r
     }) : _({
@@ -55,22 +56,22 @@ let d = e => {
   },
   f = e => {
     let {
-      isDm: t = !1,
-      isFriend: n = !1
+      isDm: t = false,
+      isFriend: n = false
     } = e;
     return t && !n ? i.Q4.BLOCK : i.Q4.BLUR
   },
   _ = e => {
     let {
-      isDm: t = !1,
-      isFriend: n = !1
+      isDm: t = false,
+      isFriend: n = false
     } = e;
     return t && n ? i.Q4.SHOW : t ? i.Q4.BLOCK : i.Q4.SHOW
   },
   p = e => {
     let {
-      isDm: t = !1,
-      isFriend: n = !1
+      isDm: t = false,
+      isFriend: n = false
     } = e;
     return t && n ? i.Q4.BLUR : t ? i.Q4.BLOCK : i.Q4.BLUR
   },
@@ -78,16 +79,16 @@ let d = e => {
     let t = null != e ? e : o.j7.getSetting();
     return {
       goreContentGuilds: d({
-        setting: null == t ? void 0 : t.goreContentGuilds
+        setting: null == t ? true : t.goreContentGuilds
       }),
       goreContentNonFriendDm: d({
-        setting: null == t ? void 0 : t.goreContentNonFriendDm,
-        isDm: !0
+        setting: null == t ? true : t.goreContentNonFriendDm,
+        isDm: true
       }),
       goreContentFriendDm: d({
-        setting: null == t ? void 0 : t.goreContentFriendDm,
-        isDm: !0,
-        isFriend: !0
+        setting: null == t ? true : t.goreContentFriendDm,
+        isDm: true,
+        isFriend: true
       })
     }
   },
@@ -95,4 +96,4 @@ let d = e => {
     let t = h();
     o.j7.updateSetting(u({}, t, e))
   },
-  g = () => r.useMemo(() => l.BhN.EXPLICIT_MEDIA_REDACTION, [])
+  g = () => Chunk73800.useMemo(() => Chunk981631.BhN.EXPLICIT_MEDIA_REDACTION, [])

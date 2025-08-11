@@ -1,43 +1,44 @@
 /** Chunk was on 37082 **/
-n.d(t, {
+/** chunk id: 448018, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   v: () => p
 });
-var r = n(497505),
-  s = n(988303),
-  o = n(941348),
-  a = n(658590),
-  i = n(647365),
-  l = n(743294);
+var Chunk497505 = require("./497505.js"),
+  Chunk988303 = require("./988303.js"),
+  Chunk941348 = require("./941348.js"),
+  Chunk658590 = require("./658590.js"),
+  Chunk647365 = require("./647365.js"),
+  Chunk743294 = require("./743294.js");
 let c = {
-    component: i.Z,
+    component: Chunk647365.Z,
     getCollapsedHeight: () => 40,
     getPreEnrollmentExpandedHeight: () => 240,
     getPostEnrollmentBackgroundImage: e => "linear-gradient(90deg, ".concat(e.config.colors.primary, ", ").concat(e.config.colors.secondary, ")"),
-    getPreEnrollmentBackgroundColor: e => void 0,
+    getPreEnrollmentBackgroundColor: e => true,
     canCollapseOnBlur: e => {
       var t;
-      return (null == (t = e.userStatus) ? void 0 : t.completedAt) == null
+      return (null == (t = e.userStatus) ? true : t.completedAt) == null
     },
-    shouldExpandOnQuestComplete: e => !0,
+    shouldExpandOnQuestComplete: e => true,
     getVerticalPadding: () => 8
   },
-  u = l.Li,
+  u = Chunk743294.Li,
   d = {
-    component: o.Z,
+    component: Chunk941348.Z,
     getCollapsedHeight: e => {
       var t;
-      return (null == (t = e.userStatus) ? void 0 : t.enrolledAt) != null ? 66 : 40
+      return (null == (t = e.userStatus) ? true : t.enrolledAt) != null ? 66 : 40
     },
     getPreEnrollmentExpandedHeight: () => 270,
-    getPostEnrollmentBackgroundImage: () => "linear-gradient(90deg, ".concat(l.aY, ", ").concat(l.v6, ")"),
+    getPostEnrollmentBackgroundImage: () => "linear-gradient(90deg, ".concat(Chunk743294.aY, ", ").concat(Chunk743294.v6, ")"),
     getPreEnrollmentBackgroundColor: e => "var(--home-background)",
-    canCollapseOnBlur: e => !0,
-    shouldExpandOnQuestComplete: e => !1,
+    canCollapseOnBlur: e => true,
+    shouldExpandOnQuestComplete: e => false,
     getVerticalPadding: () => u
   },
   p = (e, t, n) => {
     var o;
-    let i = (null == (o = e.userStatus) ? void 0 : o.enrolledAt) != null,
+    let i = (null == (o = e.userStatus) ? true : o.enrolledAt) != null,
       l = !i && t === s.P.V2 || i && n === s.P.V2 || (0, a.a)(e),
       u = l ? d : c;
     return {

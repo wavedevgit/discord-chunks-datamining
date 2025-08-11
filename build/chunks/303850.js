@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 303850, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
-  R: () => r.R
+require.d(exports, {
+  R: () => Chunk761609.R
 });
-var r = n(761609)
+var Chunk761609 = require("./761609.js")

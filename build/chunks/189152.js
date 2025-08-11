@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 189152, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   pictureInPicture: "pictureInPicture__6341f",
   dragging: "dragging__6341f",
   pictureInPictureWindow: "pictureInPictureWindow__6341f",

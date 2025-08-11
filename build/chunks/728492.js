@@ -1,5 +1,6 @@
 /** Chunk was on 34779 **/
-e.exports = {
+/** chunk id: 728492, original params: e,t,n (module,exports,require) **/
+module.exports = {
   folderGroup: "folderGroup__48112",
   folderGroupBackground: "folderGroupBackground__48112",
   isExpanded: "isExpanded__48112",

@@ -1,13 +1,14 @@
 /** Chunk was on web.js **/
+/** chunk id: 510839, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   eU: () => l,
   s2: () => a,
   xT: () => s
 });
-var r = n(570140),
-  i = n(566620),
-  o = n(317381);
+var Chunk570140 = require("./570140.js"),
+  Chunk566620 = require("./566620.js"),
+  Chunk317381 = require("./317381.js");
 
 function a(e) {
   let {
@@ -16,7 +17,7 @@ function a(e) {
   null != n && (0, i.mW)({
     location: n.location,
     applicationId: n.applicationId,
-    showFeedback: !1
+    showFeedback: false
   }), r.Z.dispatch({
     type: "FRAME_LAUNCH",
     applicationId: t

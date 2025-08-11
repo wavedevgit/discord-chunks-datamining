@@ -1,12 +1,13 @@
 /** Chunk was on web.js **/
+/** chunk id: 488968, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   d: () => o,
   v: () => i
 });
-var r = n(73800);
-let i = r.createContext(null);
+var Chunk73800 = require("./73800.js");
+let i = Chunk73800.createContext(null);
 
 function o() {
-  return r.useContext(i)
+  return Chunk73800.useContext(i)
 }

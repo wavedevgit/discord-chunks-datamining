@@ -1,5 +1,6 @@
 /** Chunk was on 88934 **/
-e.exports = {
+/** chunk id: 265072, original params: e,t,n (module,exports,require) **/
+module.exports = {
   alignCenter: "alignCenter__31873",
   alignLeft: "alignLeft__31873",
   horizontalPaginationItemContainer: "horizontalPaginationItemContainer__31873",

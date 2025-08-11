@@ -1,17 +1,18 @@
 /** Chunk was on web.js **/
+/** chunk id: 576635, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => f
-}), n(388685);
-var r = n(866442),
-  i = n(442837),
-  o = n(780384),
-  a = n(410030),
-  s = n(607070),
-  l = n(220082),
-  c = n(44315),
-  u = n(168631),
-  d = n(981631);
+}), require("./388685.js");
+var Chunk866442 = require("./866442.js"),
+  Chunk442837 = require("./442837.js"),
+  Chunk780384 = require("./780384.js"),
+  Chunk410030 = require("./410030.js"),
+  Chunk607070 = require("./607070.js"),
+  Chunk220082 = require("./220082.js"),
+  Chunk44315 = require("./44315.js"),
+  Chunk168631 = require("./168631.js"),
+  Chunk981631 = require("./981631.js");
 
 function f(e) {
   var t, n, f;
@@ -22,15 +23,15 @@ function f(e) {
     pendingAvatarSrc: m,
     isPreview: g,
     forceUserTheme: E
-  } = e, b = (0, a.ZP)(), y = (0, i.e7)([s.Z], () => s.Z.syncProfileThemeWithUserTheme), O = null != m ? m : null == _ ? void 0 : _.getAvatarURL(null == p ? void 0 : p.guildId, 80), v = (0, c.Sl)(d.Ilk.PRIMARY_530).hex, [I, T] = (0, l.Cf)(O, v, !1);
-  if (!(null == p ? void 0 : p.canEditThemes) && !g) return {
+  } = e, b = (0, a.ZP)(), y = (0, i.e7)([s.Z], () => s.Z.syncProfileThemeWithUserTheme), O = null != m ? m : null == _ ? true : _.getAvatarURL(null == p ? true : p.guildId, 80), v = (0, c.Sl)(d.Ilk.PRIMARY_530).hex, [I, T] = (0, l.Cf)(O, v, false);
+  if (!(null == p ? true : p.canEditThemes) && !g) return {
     theme: b,
     primaryColor: null,
     secondaryColor: null
   };
-  let S = null == p ? void 0 : p.getPreviewThemeColors(h),
-    A = null != (t = null == S ? void 0 : S[0]) ? t : (0, r._i)(I),
-    N = null != (n = null == S ? void 0 : S[1]) ? n : (0, r._i)(T),
+  let S = null == p ? true : p.getPreviewThemeColors(h),
+    A = null != (t = null == S ? true : S[0]) ? t : (0, r._i)(I),
+    N = null != (n = null == S ? true : S[1]) ? n : (0, r._i)(T),
     C = y || E ? b : null != (f = (0, u.V3)(A)) ? f : b;
   return C === d.BRd.DARK && (0, o.wj)(b) ? C = b : C === d.BRd.DARK && (0, o.ap)(b) && (C = d.BRd.DARKER), {
     theme: C,

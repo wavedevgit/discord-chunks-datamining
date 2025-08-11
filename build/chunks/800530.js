@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 800530, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Cg: () => s,
   Cp: () => v,
   Cs: () => g,
@@ -20,15 +21,15 @@ n.d(t, {
   sQ: () => a,
   wo: () => l
 });
-var r = n(990547),
-  i = n(981631);
+var Chunk990547 = require("./990547.js"),
+  Chunk981631 = require("./981631.js");
 
 function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 class a {}
@@ -47,12 +48,12 @@ var u = function(e) {
     return e[e.SystemDM = 0] = "SystemDM", e[e.StandingTab = 1] = "StandingTab", e[e.AppealIngestion = 2] = "AppealIngestion", e
   }({});
 Object.freeze({
-  SPEED_BUMP: i.jXE.APPEAL_INGESTION_SPEED_BUMP,
-  COLLECT_SIGNAL: i.jXE.APPEAL_INGESTION_COLLECT_SIGNAL,
-  CONFIRM_SUBMISSION: i.jXE.APPEAL_INGESTION_CONFIRM_SUBMISSION,
-  REQUEST_SENT: i.jXE.APPEAL_INGESTION_REQUEST_SENT,
-  THANKS: i.jXE.APPEAL_INGESTION_THANKS,
-  SPAM: i.jXE.APPEAL_INGESTION_SPAM
+  SPEED_BUMP: Chunk981631.jXE.APPEAL_INGESTION_SPEED_BUMP,
+  COLLECT_SIGNAL: Chunk981631.jXE.APPEAL_INGESTION_COLLECT_SIGNAL,
+  CONFIRM_SUBMISSION: Chunk981631.jXE.APPEAL_INGESTION_CONFIRM_SUBMISSION,
+  REQUEST_SENT: Chunk981631.jXE.APPEAL_INGESTION_REQUEST_SENT,
+  THANKS: Chunk981631.jXE.APPEAL_INGESTION_THANKS,
+  SPAM: Chunk981631.jXE.APPEAL_INGESTION_SPAM
 });
 var f = function(e) {
   return e[e.DIDNT_VIOLATE_POLICY = 0] = "DIDNT_VIOLATE_POLICY", e[e.TOO_STRICT_UNFAIR = 1] = "TOO_STRICT_UNFAIR", e[e.DONT_AGREE_PENALTY = 2] = "DONT_AGREE_PENALTY", e[e.SOMETHING_ELSE = 3] = "SOMETHING_ELSE", e
@@ -61,7 +62,7 @@ let _ = [0, 1, 2, 3],
   p = 372,
   h = 279,
   m = {
-    impression_group: r.ImpressionGroups.APPEAL_INGESTION
+    impression_group: Chunk990547.ImpressionGroups.APPEAL_INGESTION
   };
 var g = function(e) {
   return e.SPEED_BUMP = "speed-bump", e.COLLECT_SIGNAL = "collect-signal", e.CONFIRM_SUBMISSION = "confirm-submission", e.REQUEST_SENT = "request-sent", e.THANKS = "thanks", e

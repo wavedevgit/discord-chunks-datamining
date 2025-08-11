@@ -1,0 +1,227 @@
+/** Chunk was on web.js **/
+/** chunk id: 866885, original params: e,t,n (module,exports,re quire) **/
+"use strict";
+require.d(exports, {
+  Z: () => H
+}), require("./388685.js");
+var Chunk255367 = require("./255367.js"),
+  Chunk73800 = require("./73800.js"),
+  Chunk120356 = require("./120356.js"),
+  a = require.n(Chunk120356),
+  Chunk442837 = require("./442837.js"),
+  Chunk481060 = require("./481060.js"),
+  Chunk570140 = require("./570140.js"),
+  Chunk475179 = require("./475179.js"),
+  Chunk925549 = require("./925549.js"),
+  Chunk37234 = require("./37234.js"),
+  Chunk100527 = require("./100527.js"),
+  Chunk906732 = require("./906732.js"),
+  Chunk835473 = require("./835473.js"),
+  Chunk413523 = require("./413523.js"),
+  Chunk358221 = require("./358221.js"),
+  Chunk703656 = require("./703656.js"),
+  Chunk607187 = require("./607187.jsx"),
+  Chunk937995 = require("./937995.js"),
+  Chunk366050 = require("./366050.js"),
+  Chunk944486 = require("./944486.js"),
+  Chunk594174 = require("./594174.js"),
+  Chunk566620 = require("./566620.js"),
+  Chunk317381 = require("./317381.js"),
+  Chunk531826 = require("./531826.js"),
+  Chunk175894 = require("./175894.js"),
+  Chunk963614 = require("./963614.js"),
+  Chunk917107 = require("./917107.js"),
+  Chunk208156 = require("./208156.jsx"),
+  Chunk748492 = require("./748492.jsx"),
+  Chunk701488 = require("./701488.js"),
+  Chunk918559 = require("./918559.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk354459 = require("./354459.js"),
+  Chunk672058 = require("./672058.js"),
+  Chunk992955 = require("./992955.js"),
+  Chunk20795 = require("./20795.js");
+
+function G(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+
+function B(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      G(e, t, n[t])
+    })
+  }
+  return e
+}
+
+function Z(e, t) {
+  if (null == e) return {};
+  var n, r, i = F(e, t);
+  if (Object.getOwnPropertySymbols) {
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+  }
+  return i
+}
+
+function F(e, t) {
+  if (null == e) return {};
+  var n, r, i = {},
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+  return i
+}
+
+function V(e) {
+  var t, n, o;
+  let {
+    channel: _,
+    isLoading: p
+  } = e, [N, G] = i.useState(false), B = (0, s.e7)([S.ZP], () => S.ZP.getCurrentEmbeddedActivity()), Z = (0, s.e7)([S.ZP], () => S.ZP.getActivityPanelMode()), F = (0, h.q)(null == B ? true : B.applicationId), V = null == B ? true : B.launchId, H = (0, s.e7)([v.Z], () => v.Z.getChannelId() === (null == _ ? true : _.id)), {
+    dockedRect: Y,
+    isHidden: W
+  } = (0, s.cj)([O.Z], () => {
+    let e = O.Z.pipWindow;
+    return {
+      dockedRect: null != e ? O.Z.getDockedRect(e.id) : null,
+      isHidden: O.Z.isEmbeddedActivityHidden()
+    }
+  }), K = (0, A.sU)({
+    channelId: null == _ ? true : _.id
+  }), {
+    activityParticipant: z,
+    selectedParticipant: q,
+    participantsOpen: X
+  } = (0, s.cj)([g.Z], () => ({
+    activityParticipant: null != B && null != _ ? g.Z.getParticipant(_.id, (0, m.gN)({
+      applicationId: B.applicationId,
+      instanceId: B.compositeInstanceId
+    })) : null,
+    selectedParticipant: null != _ ? g.Z.getSelectedParticipant(_.id) : null,
+    participantsOpen: null != _ && g.Z.getParticipantsOpen(_.id)
+  })), Q = H || null != K, J = (0, R.Z)(null == _ ? true : _.id), $ = J && (null == q ? true : q.type) !== M.fO.ACTIVITY, ee = !J && Z === L.Ez.PIP, et = Q && ($ || ee) && null == Y, en = (!Q || et) && !W, er = en && null != O.Z.pipVideoWindow && null != O.Z.pipActivityWindow;
+
+  function ei() {
+    if (null != _) {
+      var e;
+      null != B && u.Z.selectParticipant(_.id, (0, m.gN)({
+        applicationId: B.applicationId,
+        instanceId: B.compositeInstanceId
+      }));
+      let t = null != (e = _.getGuildId()) ? e : x.ME;
+      d.Z.channelListScrollTo(t, _.id), (0, E.XU)(t, _.id)
+    }
+    null == K && (0, f.Ou)()
+  }
+
+  function eo() {
+    G(!N)
+  }
+
+  function ea(e) {
+    var t;
+    let {
+      onActive: n,
+      onForceIdle: i,
+      idle: o,
+      isActivityInTextChannel: a,
+      users: s
+    } = e;
+    return en && null != B && ((null == z ? true : z.type) === M.fO.ACTIVITY || a) ? (null == (t = B.config) ? true : t.useInteractivePIP) ? <w.of onJumpToChannel={ei} applicationId={B.applicationId} channel={_} showControls={!o} onMouseDown={n} onMouseMove={n} onMouseLeave={i} onToggleHeight={eo} isExpanded={N} hideExpandedButton={a} embeddedActivity={B} /> : a ? <w.q5 idle={o} onMouseMove={n} onMouseDown={n} onMouseLeave={i} onJumpToChannel={() => {
+        ei(), (0, T.tg)(L.Ez.PANEL)
+      }} channel={_} applicationId={B.applicationId} users={s} embeddedActivity={B} /> : null == z ? null : <r.Fragment>{<div onMouseMove={n} onMouseDown={n} onMouseLeave={i} className={k.clickShield} onDoubleClick={ei} />}{<w.YB idle={o} onMouseMove={n} onMouseDown={n} onMouseLeave={i} onJumpToChannel={ei} channel={_} applicationId={B.applicationId} selectedParticipant={z} embeddedActivity={B} />}</r.Fragment> : null
+  }
+  if (i.useEffect(() => {
+      if ((null == B ? true : B.applicationId) != null) {
+        let e = en ? D.cE.PIP : D.cE.FOCUSED;
+        c.Z.dispatch({
+          type: "ACTIVITY_LAYOUT_MODE_UPDATE",
+          layoutMode: e,
+          applicationId: B.applicationId
+        })
+      }
+    }, [null == B ? true : B.applicationId, en]), null == B || null == V || (0, R.Z)(null == _ ? true : _.id) && null == z || null == F) return null;
+  let es = Array.from(B.userIds).map(e => I.default.getUser(e)).filter(e => null != e),
+    el = {
+      instance_id: null != (o = null != (n = B.compositeInstanceId) ? n : B.launchId) ? o : "",
+      location_id: null == (t = B.location) ? true : t.id,
+      launch_id: B.launchId,
+      referrer_id: B.referrerId,
+      custom_id: B.customId
+    };
+  return (null == _ ? true : _.guild_id) != null && (null == _ ? true : _.guild_id) !== "" && (el.guild_id = _.guild_id), (null == _ ? true : _.id) != null && (null == _ ? true : _.id) !== "" && (el.channel_id = _.id), <y.ZP timeout={2e3}>{e => {
+      var t, n;
+      let {
+        idle: i,
+        onActive: o,
+        onForceIdle: s
+      } = e;
+      return (0, r.jsxs)(b.Z, {
+        className: a()(k.root, {
+          [k.pipMode]: en,
+          [U.elevationHigh]: en,
+          [j.idle]: i && !(null == (t = B.config) ? true : t.useInteractivePIP),
+          [k.pipModeShort]: en && !N,
+          [k.pipModeTall]: en && N,
+          [k.hidden]: W,
+          [k.multiPIPMode]: er
+        }),
+        noBorder: !en,
+        children: [(0, r.jsx)("div", {
+          className: "theme-dark",
+          children: ea({
+            onActive: o,
+            onForceIdle: s,
+            idle: i,
+            isActivityInTextChannel: ee,
+            users: es
+          })
+        }), p ? (0, r.jsx)(l.$jN, {
+          className: a()(k.iframe, {
+            [k.pipModeShort]: en && !N,
+            [k.pipModeTall]: en && N
+          })
+        }) : (0, r.jsx)(P.J, {
+          allowPopups: (0, C.h)(F),
+          referrerPolicy: D.um.has(B.applicationId) ? "no-referrer" : "origin",
+          url: B.url,
+          queryParams: el,
+          className: a()(k.iframe, {
+            [k.pipModeShort]: en && !N,
+            [k.pipModeTall]: en && N,
+            [k.pipNonInteractive]: en && !(null == (n = B.config) ? true : n.useInteractivePIP)
+          }),
+          shouldRefocus: !en && H
+        }), !en && null != _ && (0, r.jsx)(w.Ds, {
+          participantsOpen: X,
+          showToggleParticipants: false,
+          channelId: _.id
+        })]
+      })
+    }}</y.ZP>
+}
+let H = e => {
+  var {
+    channel: t
+  } = e, n = Z(e, ["channel"]);
+  let i = S.ZP.getCurrentEmbeddedActivity();
+  (0, N.Z)({
+    connectedEmbeddedActivity: i
+  });
+  let {
+    analyticsLocations: o
+  } = (0, p.ZP)(_.Z.ACTIVITY_PIP), a = null == i;
+  return <p.Gt value={o}><V{...B({
+      channel: t,
+      isLoading: a
+    }, n)} /></p.Gt>
+}

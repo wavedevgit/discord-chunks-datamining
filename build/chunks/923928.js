@@ -1,24 +1,25 @@
 /** Chunk was on web.js **/
+/** chunk id: 923928, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => i
 });
-var r = n(570140);
+var Chunk570140 = require("./570140.js");
 let i = {
   clearVADWarning() {
-    r.Z.dispatch({
+    Chunk570140.Z.dispatch({
       type: "PERMISSION_CLEAR_VAD_WARNING"
     })
   },
   clearSuppressWarning() {
-    let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
-    r.Z.dispatch({
+    let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
+    Chunk570140.Z.dispatch({
       type: "PERMISSION_CLEAR_SUPPRESS_WARNING",
-      forever: e
+      forever: module
     })
   },
   clearPTTAdminWarning() {
-    r.Z.dispatch({
+    Chunk570140.Z.dispatch({
       type: "PERMISSION_CLEAR_PTT_ADMIN_WARNING"
     })
   },
@@ -29,7 +30,7 @@ let i = {
     })
   },
   clearElevatedProcess() {
-    r.Z.dispatch({
+    Chunk570140.Z.dispatch({
       type: "PERMISSION_CLEAR_ELEVATED_PROCESS"
     })
   },

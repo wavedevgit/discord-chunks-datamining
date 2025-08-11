@@ -1,18 +1,19 @@
 /** Chunk was on web.js **/
+/** chunk id: 46973, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Mt: () => d,
-  Sh: () => r.S,
+  Sh: () => Chunk839548.S,
   TO: () => l,
   W$: () => a,
-  Yn: () => o.Yn,
-  aB: () => i.a,
+  Yn: () => Chunk65154.Yn,
+  aB: () => Chunk946695.a,
   jj: () => u,
   zZ: () => s
 });
-var r = n(839548),
-  i = n(946695),
-  o = n(65154),
+var Chunk839548 = require("./839548.js"),
+  Chunk946695 = require("./946695.js"),
+  Chunk65154 = require("./65154.js"),
   a = function(e) {
     return e.INPUT_DEVICE = "input_device", e.STREAM = "stream", e
   }({}),
@@ -37,7 +38,7 @@ function c(e) {
 
 function u() {
   var e;
-  return null != (e = [o.AS.NATIVE, o.AS.WEBRTC].find(e => c(e).supported())) ? e : o.AS.DUMMY
+  return null != (e = [Chunk65154.AS.NATIVE, Chunk65154.AS.WEBRTC].find(e => c(e).supported())) ? module : Chunk65154.AS.DUMMY
 }
 
 function d(e) {

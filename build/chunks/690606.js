@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 690606, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   inviteDetailsContainer: "inviteDetailsContainer_da5e8d",
   clickable: "clickable_da5e8d",
   guildChannelInfoContainer: "guildChannelInfoContainer_da5e8d",

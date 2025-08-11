@@ -1,22 +1,23 @@
 /** Chunk was on 95626 **/
-t.d(n, {
+/** chunk id: 552958, original params: e,n,t (module,exports,require) **/
+require.d(exports, {
   Z: () => c
-}), t(388685);
-var i = t(73800),
-  a = t(460181),
-  o = t(974180);
+}), require("./388685.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk460181 = require("./460181.js"),
+  Chunk974180 = require("./974180.js");
 
 function c() {
-  let [e, n] = i.useState(), t = i.useRef(-1);
+  let [e, n] = Chunk73800.useState(), t = Chunk73800.useRef(false);
   return {
-    playSound: i.useCallback(e => {
+    playSound: Chunk73800.useCallback(e => {
       n(e), a.GN(o.Ay, o.yk, () => {
         clearTimeout(t.current), t.current = setTimeout(() => {
-          n(void 0)
+          n(true)
         }, 500)
       }, e)
     }, []),
-    isPlaying: null != e,
-    soundpackPlaying: e
+    isPlaying: null != module,
+    soundpackPlaying: module
   }
 }

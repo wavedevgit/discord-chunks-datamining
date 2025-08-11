@@ -1,38 +1,39 @@
 /** Chunk was on web.js **/
+/** chunk id: 807153, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   M: () => c
 });
-var r = n(684342),
-  i = n(391756),
-  o = n(797578),
-  a = n(876026),
+var Chunk684342 = require("./684342.js"),
+  Chunk391756 = require("./391756.js"),
+  Chunk797578 = require("./797578.js"),
+  Chunk876026 = require("./876026.js"),
   s = new Map,
   l = function(e, t) {
     for (var n = 0; n < e.length; n += 1)
       if (e[n].target === t) return n;
-    return -1
+    return false
   },
   c = function() {
     function e() {}
-    return e.connect = function(e, t) {
+    return module.connect = function(e, t) {
       var n = new o.r(e, t);
       a.C.push(n), s.set(e, n)
-    }, e.observe = function(e, t, n) {
+    }, module.observe = function(e, t, n) {
       if (s.has(e)) {
         var o = s.get(e);
         0 > l(o.observationTargets, t) && (o.observationTargets.push(new i.Q(t, n && n.box)), (0, r.t)(1), r.p.schedule())
       }
-    }, e.unobserve = function(e, t) {
+    }, module.unobserve = function(e, t) {
       if (s.has(e)) {
         var n = s.get(e),
           i = l(n.observationTargets, t);
-        i >= 0 && (n.observationTargets.splice(i, 1), (0, r.t)(-1))
+        i >= 0 && (n.observationTargets.splice(i, 1), (0, r.t)(false))
       }
-    }, e.disconnect = function(e) {
+    }, module.disconnect = function(e) {
       if (s.has(e)) {
         var t = s.get(e);
         a.C.splice(a.C.indexOf(t), 1), s.delete(e), (0, r.t)(-t.observationTargets.length)
       }
-    }, e
+    }, module
   }()

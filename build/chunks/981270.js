@@ -1,5 +1,6 @@
 /** Chunk was on web.js **/
-e.exports = function(e) {
+/** chunk id: 981270, original params: e (module,exports,re quire) **/
+module.exports = function(e) {
   let t = e.regex,
     n = {
       className: "variable",
@@ -12,7 +13,7 @@ e.exports = function(e) {
       }]
     },
     r = {
-      endsWithParent: !0,
+      endsWithParent: true,
       keywords: {
         $pattern: /[a-z_]{2,}|\/dev\/poll/,
         literal: ["on", "off", "yes", "no", "true", "false", "none", "blocked", "debug", "info", "notice", "warn", "error", "crit", "select", "break", "last", "permanent", "redirect", "kqueue", "rtsig", "epoll", "poll", "/dev/poll"]
@@ -32,8 +33,8 @@ e.exports = function(e) {
       }, {
         begin: "([a-z]+):/",
         end: "\\s",
-        endsWithParent: !0,
-        excludeEnd: !0,
+        endsWithParent: true,
+        excludeEnd: true,
         contains: [n]
       }, {
         className: "regexp",
@@ -41,11 +42,11 @@ e.exports = function(e) {
         variants: [{
           begin: "\\s\\^",
           end: "\\s|\\{|;",
-          returnEnd: !0
+          returnEnd: true
         }, {
           begin: "~\\*?\\s+",
           end: "\\s|\\{|;",
-          returnEnd: !0
+          returnEnd: true
         }, {
           begin: "\\*(\\.[a-z\\-]+)+"
         }, {

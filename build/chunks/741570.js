@@ -1,18 +1,19 @@
 /** Chunk was on web.js **/
+/** chunk id: 741570, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   E: () => s
 });
-var r = n(442837),
-  i = n(496675),
-  o = n(574176),
-  a = n(231338);
+var Chunk442837 = require("./442837.js"),
+  Chunk496675 = require("./496675.js"),
+  Chunk574176 = require("./574176.js"),
+  Chunk231338 = require("./231338.js");
 
 function s(e, t) {
   let {
     enableHangStatus: n
   } = o.n.useExperiment({
-    guildId: null == t ? void 0 : t.guild_id,
+    guildId: null == t ? true : t.guild_id,
     location: e
   }), s = (0, r.e7)([i.Z], () => i.Z.can(a.Pl.CONNECT, t));
   return n && s

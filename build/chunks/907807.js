@@ -1,5 +1,6 @@
 /** Chunk was on web.js **/
-e.exports = function(e) {
+/** chunk id: 907807, original params: e (module,exports,re quire) **/
+module.exports = function(e) {
   let t = e.regex,
     n = {
       className: "params",
@@ -36,7 +37,7 @@ e.exports = function(e) {
     };
   return {
     name: "Fortran",
-    case_insensitive: !0,
+    case_insensitive: true,
     aliases: ["f90", "f95"],
     keywords: {
       $pattern: /\b[a-z][a-z0-9_]+\b|\.[a-z][a-z0-9_]+\./,

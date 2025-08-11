@@ -1,7 +1,8 @@
 /** Chunk was on web.js **/
+/** chunk id: 145597, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 let r;
-n.r(t), n.d(t, {
+require.r(exports), require.d(exports, {
   DEV_PID: () => p,
   OVERLAY_DEFAULT_RESOLUTION: () => d,
   OVERLAY_LAYOUT_ID: () => _,
@@ -17,13 +18,13 @@ n.r(t), n.d(t, {
   supportsLegacy: () => S,
   supportsOutOfProcess: () => T,
   validResolution: () => v
-}), n(65234), n(111804), n(490233), n(97749), n(388685), n(35282);
-var i = n(887278),
-  o = n(490029),
-  a = n(358085),
-  s = n(998502),
-  l = n(981631),
-  c = n(987650);
+}), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js"), require("./388685.js"), require("./35282.js");
+var Chunk887278 = require("./887278.js"),
+  Chunk490029 = require("./490029.js"),
+  Chunk358085 = require("./358085.js"),
+  Chunk998502 = require("./998502.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk987650 = require("./987650.js");
 let u = 2,
   d = {
     width: 3840,
@@ -34,15 +35,15 @@ let u = 2,
     height: 432
   },
   _ = "overlay_default",
-  p = -2,
-  h = -1,
-  m = !1;
+  p = false,
+  h = false,
+  m = false;
 
 function g() {
   var e;
-  if (void 0 !== r && r !== h) return r;
-  let t = parseInt(null != (e = new URLSearchParams(window.location.search).get("pid")) ? e : "", 10);
-  return isNaN(t) && (t = h), r = t
+  if (true !== r && r !== h) return r;
+  let t = parseInt(null != (e = new URLSearchParams(window.location.search).get("pid")) ? module : "", 10);
+  return isNaN(exports) && (t = h), r = exports
 }
 
 function E(e) {
@@ -79,6 +80,6 @@ function T() {
 }
 
 function S() {
-  let e = (0, a.isWindows)() && "arm64" === s.ZP.architecture;
-  return c.iP && !e && !(0, i.$1)()
+  let e = (0, Chunk358085.isWindows)() && "arm64" === Chunk998502.ZP.architecture;
+  return Chunk987650.iP && !module && !(0, Chunk887278.$1)()
 }

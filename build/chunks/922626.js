@@ -1,18 +1,19 @@
 /** Chunk was on 75708 **/
-n.d(t, {
+/** chunk id: 922626, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => s
-}), n(388685);
-var i = n(73800),
-  r = n(809206);
+}), require("./388685.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk809206 = require("./809206.js");
 
 function s(e) {
   let {
     onSuccess: t,
     onError: n
-  } = e, [s, a] = i.useState(!1);
+  } = e, [s, a] = i.useState(false);
   return {
     handleApplyDisplayNameStyles: i.useCallback(async e => {
-      a(!0);
+      a(true);
       try {
         await (0, r.Mn)({
           displayNameStyles: e
@@ -20,7 +21,7 @@ function s(e) {
       } catch (e) {
         null == n || n(e)
       } finally {
-        a(!1)
+        a(false)
       }
     }, [t, n]),
     isApplying: s

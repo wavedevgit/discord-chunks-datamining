@@ -1,16 +1,17 @@
 /** Chunk was on web.js **/
+/** chunk id: 586502, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => a
 });
-var r = n(442837),
-  i = n(607070),
-  o = n(36927);
+var Chunk442837 = require("./442837.js"),
+  Chunk607070 = require("./607070.js"),
+  Chunk36927 = require("./36927.js");
 
 function a() {
-  let e = o.J.useExperiment({
+  let e = Chunk36927.J.useExperiment({
       location: "useIsTenureBadgeAmbient"
     }),
-    t = (0, r.e7)([i.Z], () => i.Z.useReducedMotion);
-  return e.enabled && !t
+    t = (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.useReducedMotion);
+  return module.enabled && !exports
 }

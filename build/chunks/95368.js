@@ -1,6 +1,7 @@
 /** Chunk was on 45620 **/
+/** chunk id: 95368, original params: e,t,n (module,exports,require) **/
 "use strict";
-e.exports = {
+module.exports = {
   inventory: "inventory__1feb0",
   inventoryFilter: "inventoryFilter__1feb0",
   pageFullscreen: "pageFullscreen__1feb0",

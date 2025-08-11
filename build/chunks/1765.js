@@ -1,5 +1,6 @@
 /** Chunk was on 49152 **/
-e.exports = {
+/** chunk id: 1765, original params: e,t,n (module,exports,require) **/
+module.exports = {
   searchHeader: "searchHeader__83bd4",
   searchPageBox: "searchPageBox__83bd4",
   searchPageInput: "searchPageInput__83bd4",

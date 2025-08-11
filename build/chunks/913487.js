@@ -1,8 +1,9 @@
 /** Chunk was on 63141 **/
-var i = n(570140),
-  r = n(703656),
-  o = n(981631);
-__OVERLAY__ && i.Z.subscribe("OVERLAY_OPEN_MESSAGE", function(e) {
+/** chunk id: 913487, original params: e,t,n (module,exports,require) **/
+var Chunk570140 = require("./570140.js"),
+  Chunk703656 = require("./703656.js"),
+  Chunk981631 = require("./981631.js");
+__OVERLAY__ && Chunk570140.Z.subscribe("OVERLAY_OPEN_MESSAGE", function(e) {
   let {
     guildId: t,
     channelId: n,

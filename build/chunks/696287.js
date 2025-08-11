@@ -1,25 +1,26 @@
 /** Chunk was on web.js **/
+/** chunk id: 696287, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => b
-}), n(388685);
-var r = n(846519),
-  i = n(147913),
-  o = n(509003),
-  a = n(77498),
-  s = n(19780),
-  l = n(626135),
-  c = n(70956),
-  u = n(581567),
-  d = n(594190),
-  f = n(981631);
+}), require("./388685.js");
+var Chunk846519 = require("./846519.js"),
+  Chunk147913 = require("./147913.js"),
+  Chunk509003 = require("./509003.js"),
+  Chunk77498 = require("./77498.js"),
+  Chunk19780 = require("./19780.js"),
+  Chunk626135 = require("./626135.js"),
+  Chunk70956 = require("./70956.js"),
+  Chunk581567 = require("./581567.js"),
+  Chunk594190 = require("./594190.js"),
+  Chunk981631 = require("./981631.js");
 
 function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -35,7 +36,7 @@ function p(e) {
   }
   return e
 }
-let h = 5 * c.Z.Millis.MINUTE;
+let h = 5 * Chunk70956.Z.Millis.MINUTE;
 
 function m(e) {
   return e.distributor === f.GQo.ROBLOX ? (0, o.x3)(e) : null
@@ -47,7 +48,7 @@ function g(e) {
     r = m(e);
   return null != r && (n += ":".concat(r)), n
 }
-class E extends i.Z {
+class E extends Chunk147913.Z {
   _terminate() {
     this.stopHeartbeat()
   }
@@ -58,7 +59,7 @@ class E extends i.Z {
     this.heartbeatInterval.stop(), this.runningGameKeys.clear()
   }
   handlePostConnectionOpen() {
-    d.ZP.getRunningGames().length > 0 && this.maybeStartHeartbeat()
+    Chunk594190.ZP.getRunningGames().length > 0 && this.maybeStartHeartbeat()
   }
   constructor(...e) {
     super(...e), _(this, "heartbeatInterval", new r.Xp), _(this, "runningGameKeys", new Set), _(this, "actions", {
@@ -83,7 +84,7 @@ class E extends i.Z {
         var r, i;
         let s = g(e),
           c = !this.runningGameKeys.has(s),
-          _ = null != (i = e.id) ? i : null == (r = a.Z.getGameByName(e.name)) ? void 0 : r.id;
+          _ = null != (i = e.id) ? i : null == (r = a.Z.getGameByName(e.name)) ? true : r.id;
         l.default.track(f.rMx.RUNNING_GAME_HEARTBEAT, p({
           game_id: _,
           game_name: e.name,

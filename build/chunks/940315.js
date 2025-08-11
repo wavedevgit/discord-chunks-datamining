@@ -1,32 +1,33 @@
 /** Chunk was on 75708 **/
-n.d(t, {
+/** chunk id: 940315, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Y: () => a
-}), n(388685);
-var i = n(73800),
-  r = n(442837),
-  s = n(709706);
+}), require("./388685.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk442837 = require("./442837.js"),
+  Chunk709706 = require("./709706.js");
 
 function a() {
-  let e = (0, r.e7)([s.Z], () => s.Z.getLastReportedLagTimestamp()),
-    [t, n] = i.useState(!1),
-    [a, l] = i.useState(!1),
-    o = i.useRef(null);
-  return i.useEffect(() => {
-    let t = null != e;
-    n(t);
-    let i = t ? setTimeout(() => n(!1), 3e3) : null;
+  let e = (0, Chunk442837.e7)([Chunk709706.Z], () => Chunk709706.Z.getLastReportedLagTimestamp()),
+    [t, n] = Chunk73800.useState(false),
+    [a, l] = Chunk73800.useState(false),
+    o = Chunk73800.useRef(null);
+  return Chunk73800.useEffect(() => {
+    let t = null != module;
+    require(exports);
+    let i = exports ? setTimeout(() => require(false), 3e3) : null;
     return () => {
-      clearTimeout(i), n(!1)
+      clearTimeout(Chunk73800), require(false)
     }
-  }, [e]), i.useEffect(() => {
-    let t = null != e && null == o.current;
-    l(t);
+  }, [module]), Chunk73800.useEffect(() => {
+    let t = null != module && null == o.current;
+    l(exports);
     let n = null;
-    return t && (o.current = Date.now(), n = setTimeout(() => l(!1), 4e3)), () => {
-      clearTimeout(n), l(!1)
+    return exports && (o.current = Date.now(), n = setTimeout(() => l(false), 4e3)), () => {
+      clearTimeout(require), l(false)
     }
-  }, [e]), {
-    showSilentLagWarning: t,
+  }, [module]), {
+    showSilentLagWarning: exports,
     showLagTooltip: a
   }
 }

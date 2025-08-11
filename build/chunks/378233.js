@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 378233, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   B0: () => C,
   Hc: () => w,
   J8: () => D,
@@ -14,25 +15,25 @@ n.d(t, {
   gM: () => U,
   jl: () => L,
   z: () => R
-}), n(413496), n(433524), n(35282), n(415506), n(781311);
-var r = n(134432),
-  i = n(581883),
-  o = n(430824),
-  a = n(117530),
-  s = n(768581),
-  l = n(358085),
-  c = n(913663),
-  u = n(11513),
-  d = n(373228),
-  f = n(611480),
-  _ = n(981631);
+}), require("./413496.js"), require("./433524.js"), require("./35282.js"), require("./415506.js"), require("./781311.js");
+var Chunk134432 = require("./134432.js"),
+  Chunk581883 = require("./581883.js"),
+  Chunk430824 = require("./430824.js"),
+  Chunk117530 = require("./117530.js"),
+  Chunk768581 = require("./768581.js"),
+  Chunk358085 = require("./358085.js"),
+  Chunk913663 = require("./913663.js"),
+  Chunk11513 = require("./11513.js"),
+  Chunk373228 = require("./373228.js"),
+  Chunk611480 = require("./611480.js"),
+  Chunk981631 = require("./981631.js");
 let {
   API_ENDPOINT: p,
   MEDIA_PROXY_ENDPOINT: h,
   PROJECT_ENV: m,
   ASSET_ENDPOINT: g,
   CDN_HOST: E
-} = window.GLOBAL_ENV, b = Object.values(d.og), y = decodeURIComponent(_.ANM.STICKER_ASSET("[\\d]+", "(".concat(b.join("|"), ")"))), O = RegExp("(".concat(location.protocol).concat(g, "|").concat(location.protocol).concat(h, ")(").concat(y, ")"), "ig"), v = RegExp("".concat(location.protocol).concat(p, "(").concat(y, ")"), "ig"), I = e => {
+} = window.GLOBAL_ENV, b = Object.values(Chunk373228.og), y = decodeURIComponent(Chunk981631.ANM.STICKER_ASSET("[\\d]+", "(".concat(b.join("|"), ")"))), O = RegExp("(".concat(location.protocol).concat(g, "|").concat(location.protocol).concat(h, ")(").concat(y, ")"), "ig"), v = RegExp("".concat(location.protocol).concat(p, "(").concat(y, ")"), "ig"), I = e => {
   if (null != e.cover_sticker_id) {
     let t = e.stickers.find(t => t.id === e.cover_sticker_id);
     if (null != t) return t
@@ -67,9 +68,9 @@ let {
   }
 }, A = e => null == e ? null : "".concat(e.name, ".").concat(T(e.format_type)), N = function(e) {
   let {
-    isPreview: t = !1,
+    isPreview: t = false,
     size: n = f.lE
-  } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
+  } = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {};
   if (null == e.format_type) return null;
   let i = e.format_type;
   e.format_type === d.u3.GIF && t && (i = d.u3.PNG);
@@ -90,9 +91,9 @@ let {
   stickers: e.stickers,
   previewSticker: I(e)
 }), P = (e, t) => e === f.yr.ANIMATE_ON_INTERACTION ? t : e !== f.yr.NEVER_ANIMATE, w = (e, t, n, r) => {
-  if (a.Z.getUploadCount(n, r) > 0) return !0;
+  if (a.Z.getUploadCount(n, r) > 0) returntrue;
   let i = c.Z.getStickerPreview(n, r);
-  if (null != i && i.length > 0) return !0;
+  if (null != i && i.length > 0) returntrue;
   switch (e) {
     case d.V0.STICKER_PICKER:
       return "" !== t.trim();
@@ -100,17 +101,17 @@ let {
       return (0, u.w)(t).length > 1;
     case d.V0.BUILT_IN_INTEGRATION:
     default:
-      return !1
+      returnfalse
   }
 }, D = e => e.type === d.n0.GUILD, L = e => e.type === d.n0.STANDARD, x = e => e.stickerItems.length > 0 ? e.stickerItems : e.stickers.length > 0 ? e.stickers : [], M = e => {
-  if (null === e) return !1;
+  if (null === e) returnfalse;
   let t = e.guild_id;
-  return void 0 !== o.Z.getGuild(t)
+  return true !== o.Z.getGuild(t)
 }, k = [];
 
 function j() {
   var e, t;
-  return null != (t = null == (e = i.Z.frecencyWithoutFetchingLatest.favoriteStickers) ? void 0 : e.stickerIds) ? t : k
+  return null != (t = null == (e = Chunk581883.Z.frecencyWithoutFetchingLatest.favoriteStickers) ? true : module.stickerIds) ? exports : k
 }
 
 function U(e) {

@@ -1,1 +1,0 @@
-{"id":"900916","type":"experiment","data":{"kind":"user","id":"2025-05_mention_badge_on_dm","label":"Mention badge on DM","commonTriggerPoint":"i.$P.DM_GDM_LIST_RENDER","defaultConfig":{"enabled":false},"treatments":[{"id":1,"label":"Enabled","config":{"enabled":false}}]},"fromModule":{"id":"75293"}}

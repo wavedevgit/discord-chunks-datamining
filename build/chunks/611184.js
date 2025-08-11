@@ -1,19 +1,20 @@
 /** Chunk was on web.js **/
+/** chunk id: 611184, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => u
-}), n(388685);
-var r = n(147913),
-  i = n(594190),
-  o = n(77498),
-  a = n(454293);
+}), require("./388685.js");
+var Chunk147913 = require("./147913.js"),
+  Chunk594190 = require("./594190.js"),
+  Chunk77498 = require("./77498.js"),
+  Chunk454293 = require("./454293.js");
 
 function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -21,10 +22,10 @@ function l(e) {
   var t, n;
   let {
     game: r
-  } = e, s = i.ZP.isDetectionEnabled(r), l = null != (n = r.id) ? n : null == (t = o.Z.getGameByName(r.name)) ? void 0 : t.id;
+  } = e, s = i.ZP.isDetectionEnabled(r), l = null != (n = r.id) ? n : null == (t = o.Z.getGameByName(r.name)) ? true : t.id;
   null != l && (0, a.M)(l, s)
 }
-class c extends r.Z {
+class c extends Chunk147913.Z {
   constructor(...e) {
     super(...e), s(this, "actions", {
       RUNNING_GAME_TOGGLE_DETECTION: l,

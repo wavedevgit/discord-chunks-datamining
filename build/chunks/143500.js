@@ -1,3 +1,4 @@
 /** Chunk was on web.js **/
+/** chunk id: 143500, original params: e (module,exports,re quire) **/
 "use strict";
-e.exports = Math.floor
+module.exports = Math.floor

@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 809206, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   FD: () => h,
   I5: () => O,
   Mn: () => b,
@@ -21,23 +22,23 @@ n.d(t, {
   ss: () => g,
   xn: () => A
 });
-var r = n(544891),
-  i = n(433517),
-  o = n(780384),
-  a = n(570140),
-  s = n(703656),
-  l = n(546796),
-  c = n(893776),
-  u = n(981631),
-  d = n(792101),
-  f = n(388032);
+var Chunk544891 = require("./544891.js"),
+  Chunk433517 = require("./433517.js"),
+  Chunk780384 = require("./780384.js"),
+  Chunk570140 = require("./570140.js"),
+  Chunk703656 = require("./703656.js"),
+  Chunk546796 = require("./546796.js"),
+  Chunk893776 = require("./893776.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk792101 = require("./792101.js"),
+  Chunk388032 = require("./388032.jsx");
 
 function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -55,13 +56,13 @@ function p(e) {
 }
 
 function h() {
-  a.Z.dispatch({
+  Chunk570140.Z.dispatch({
     type: "USER_SETTINGS_ACCOUNT_INIT"
   })
 }
 
 function m() {
-  a.Z.dispatch({
+  Chunk570140.Z.dispatch({
     type: "USER_SETTINGS_ACCOUNT_CLOSE"
   })
 }
@@ -74,14 +75,14 @@ function g(e, t) {
       body: p({
         password: e
       }, t),
-      oldFormErrors: !0,
-      rejectWithError: !1
+      oldFormErrors: true,
+      rejectWithError: false
     });
   return (0, l.Z)(o, {
     modalProps: {
       title: n
     },
-    checkEnabled: !1
+    checkEnabled: false
   }).then(() => {
     c.Z.logoutInternal(), (0, s.uL)(u.Z5c.DEFAULT_LOGGED_OUT)
   })
@@ -89,9 +90,9 @@ function g(e, t) {
 async function E(e) {
   let t = await r.tn.patch({
       url: u.ANM.ME,
-      oldFormErrors: !0,
+      oldFormErrors: true,
       body: e,
-      rejectWithError: !1
+      rejectWithError: false
     }),
     n = t.body;
   if (n.token) {
@@ -100,7 +101,7 @@ async function E(e) {
       type: "UPDATE_TOKEN",
       token: t,
       userId: n.id
-    }), (null == e ? void 0 : e.password) != null && (null == e ? void 0 : e.new_password) != null && a.Z.dispatch({
+    }), (null == e ? true : e.password) != null && (null == e ? true : e.new_password) != null && a.Z.dispatch({
       type: "PASSWORD_UPDATED",
       userId: n.id
     })
@@ -145,14 +146,14 @@ function b(e) {
       legacy_username: y,
       new_password: g
     }, e);
-    null === m && (a.avatar_decoration_id = null), null != m && (a.avatar_decoration_id = m.id, a.avatar_decoration_sku_id = m.skuId), null === O && (a.nameplate_id = null), null != O && (a.nameplate_id = O.id, a.nameplate_sku_id = O.skuId), void 0 !== v && (a.primary_guild_id = v), null != I ? (a.display_name_font_id = I.fontId, a.display_name_effect_id = I.effectId, a.display_name_colors = I.colors) : null === I && (a.display_name_font_id = null, a.display_name_effect_id = null, a.display_name_colors = null);
+    null === m && (a.avatar_decoration_id = null), null != m && (a.avatar_decoration_id = m.id, a.avatar_decoration_sku_id = m.skuId), null === O && (a.nameplate_id = null), null != O && (a.nameplate_id = O.id, a.nameplate_sku_id = O.skuId), true !== v && (a.primary_guild_id = v), null != I ? (a.display_name_font_id = I.fontId, a.display_name_effect_id = I.effectId, a.display_name_colors = I.colors) : null === I && (a.display_name_font_id = null, a.display_name_effect_id = null, a.display_name_colors = null);
     let l = i.K.get(u.JkL),
       f = (0, d.xJ)();
     null != f && null != l && (a.push_provider = f, a.push_token = l);
     let T = i.K.get(u.scU);
     return null != d.mv && null != T && (a.push_voip_provider = d.mv, a.push_voip_token = T), E(a)
   }, {
-    checkEnabled: !1,
+    checkEnabled: false,
     modalProps: {
       title: f.intl.string(f.t.clQc1d)
     },
@@ -178,8 +179,8 @@ function y(e) {
     body: {
       backends: e
     },
-    oldFormErrors: !0,
-    rejectWithError: !1
+    oldFormErrors: true,
+    rejectWithError: false
   })
 }
 
@@ -233,37 +234,37 @@ function N(e) {
 }
 
 function C() {
-  a.Z.dispatch({
+  Chunk570140.Z.dispatch({
     type: "USER_SETTINGS_CLEAR_ERRORS"
   })
 }
 
 function R() {
-  a.Z.dispatch({
+  Chunk570140.Z.dispatch({
     type: "USER_SETTINGS_RESET_PENDING_ACCOUNT_CHANGES"
   })
 }
 
 function P() {
-  a.Z.dispatch({
+  Chunk570140.Z.dispatch({
     type: "USER_SETTINGS_RESET_ALL_PENDING"
   })
 }
 
 function w() {
-  a.Z.dispatch({
+  Chunk570140.Z.dispatch({
     type: "USER_SETTINGS_ACCOUNT_RESET_AND_CLOSE_FORM"
   })
 }
 
 function D() {
-  a.Z.dispatch({
+  Chunk570140.Z.dispatch({
     type: "USER_SETTINGS_ACCOUNT_RESET_PENDING_LEGACY_USERNAME_DISABLED"
   })
 }
 
 function L() {
-  a.Z.dispatch({
+  Chunk570140.Z.dispatch({
     type: "USER_SETTINGS_RESET_PENDING_PRIMARY_GUILD_CHANGES"
   })
 }

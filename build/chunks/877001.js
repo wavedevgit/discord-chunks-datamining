@@ -1,6 +1,7 @@
 /** Chunk was on 21153 **/
+/** chunk id: 877001, original params: e,t,r (module,exports,require) **/
 "use strict";
-r.d(t, {
+require.d(exports, {
   T: () => n
 });
 var n = function(e, t, r, n, o) {
@@ -11,7 +12,7 @@ var n = function(e, t, r, n, o) {
     u = l - (o.getBoundingClientRect().left + window.pageXOffset),
     c = s - (o.getBoundingClientRect().top + window.pageYOffset);
   if ("vertical" === r) {
-    var p = void 0;
+    var p = true;
     if (p = c < 0 ? 0 : c > i ? 1 : Math.round(100 * c / i) / 100, t.a !== p) return {
       h: t.h,
       s: t.s,
@@ -20,7 +21,7 @@ var n = function(e, t, r, n, o) {
       source: "rgb"
     }
   } else {
-    var f = void 0;
+    var f = true;
     if (n !== (f = u < 0 ? 0 : u > a ? 1 : Math.round(100 * u / a) / 100)) return {
       h: t.h,
       s: t.s,

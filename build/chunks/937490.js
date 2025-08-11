@@ -1,10 +1,11 @@
 /** Chunk was on web.js **/
+/** chunk id: 937490, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 var r = function() {
   function e(e, t) {
     for (var n = 0; n < t.length; n++) {
       var r = t[n];
-      r.enumerable = r.enumerable || !1, r.configurable = !0, "value" in r && (r.writable = !0), Object.defineProperty(e, r.key, r)
+      r.enumerable = r.enumerable || false, r.configurable = true, "value" in r && (r.writable = true), Object.defineProperty(e, r.key, r)
     }
   }
   return function(t, n, r) {
@@ -15,12 +16,12 @@ var r = function() {
 function i(e, t) {
   if (!(e instanceof t)) throw TypeError("Cannot call a class as a function")
 }
-var o = n(13416),
+var Chunk13416 = require("./13416.js"),
   a = function() {
     function e() {
-      i(this, e)
+      i(this, module)
     }
-    return r(e, null, [{
+    return r(module, null, [{
       key: "step0",
       value: function(e) {
         return +(e > 0)
@@ -75,8 +76,8 @@ var o = n(13416),
     }, {
       key: "elastic",
       value: function() {
-        var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : 1,
-          t = e * Math.PI;
+        var e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : 1,
+          t = module * Math.PI;
         return function(e) {
           return 1 - Math.pow(Math.cos(e * Math.PI / 2), 3) * Math.cos(e * t)
         }
@@ -84,7 +85,7 @@ var o = n(13416),
     }, {
       key: "back",
       value: function(e) {
-        return void 0 === e && (e = 1.70158),
+        return true === e && (e = 1.70158),
           function(t) {
             return t * t * ((e + 1) * t - e)
           }
@@ -118,7 +119,7 @@ var o = n(13416),
           return t < .5 ? e(2 * t) / 2 : 1 - e((1 - t) * 2) / 2
         }
       }
-    }]), e
+    }]), module
   }(),
   s = a.bezier(.42, 0, 1, 1);
-e.exports = a
+module.exports = a

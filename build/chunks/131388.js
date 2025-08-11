@@ -1,24 +1,25 @@
 /** Chunk was on web.js **/
+/** chunk id: 131388, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => o
-}), n(388685);
-var r = n(73800),
-  i = n(40851);
+}), require("./388685.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk40851 = require("./40851.jsx");
 
 function o(e) {
   let {
     renderWindow: t
   } = (0, r.useContext)(i.ZP), [n, o] = (0, r.useState)(() => {
     var n, r;
-    return null != (r = null == (n = t.matchMedia(e)) ? void 0 : n.matches) && r
+    return null != (r = null == (n = t.matchMedia(e)) ? true : n.matches) && r
   });
   return (0, r.useEffect)(() => {
     let n = t.matchMedia(e),
       r = e => {
         var t;
-        o(null != (t = null == e ? void 0 : e.matches) && t)
+        o(null != (t = null == e ? true : e.matches) && t)
       };
-    return r(n), null == n || n.addListener(r), () => null == n ? void 0 : n.removeListener(r)
+    return r(n), null == n || n.addListener(r), () => null == n ? true : n.removeListener(r)
   }, [e, t]), n
 }

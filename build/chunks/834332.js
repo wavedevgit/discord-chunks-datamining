@@ -1,30 +1,31 @@
 /** Chunk was on web.js **/
+/** chunk id: 834332, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => g
-}), n(388685);
-var r = n(275726),
-  i = n(904245),
-  o = n(147913),
-  a = n(314897),
-  s = n(592125),
-  l = n(375954),
-  c = n(496675),
-  u = n(944486),
-  d = n(594174),
-  f = n(146085),
-  _ = n(96052),
-  p = n(981631);
+}), require("./388685.js");
+var Chunk275726 = require("./275726.js"),
+  Chunk904245 = require("./904245.js"),
+  Chunk147913 = require("./147913.js"),
+  Chunk314897 = require("./314897.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk375954 = require("./375954.js"),
+  Chunk496675 = require("./496675.js"),
+  Chunk944486 = require("./944486.js"),
+  Chunk594174 = require("./594174.js"),
+  Chunk146085 = require("./146085.js"),
+  Chunk96052 = require("./96052.js"),
+  Chunk981631 = require("./981631.js");
 
 function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
-class m extends o.Z {
+class m extends Chunk147913.Z {
   handleVoiceStateUpdates(e) {
     let {
       voiceStates: t
@@ -42,7 +43,7 @@ class m extends o.Z {
           null != e && (0, _.U)(t, e, h)
         } else {
           let e = l.Z.getMessages(t).findNewest(e => e.type === r.u.STAGE_RAISE_HAND && e.hasFlag(p.iLy.EPHEMERAL) && e.author.id === n);
-          null != e && i.Z.deleteMessage(t, e.id, !0)
+          null != e && i.Z.deleteMessage(t, e.id, true)
         }
     })
   }

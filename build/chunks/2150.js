@@ -1,5 +1,6 @@
 /** Chunk was on 72762 **/
-n.d(t, {
+/** chunk id: 2150, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   q: () => i
 });
 var r, i = ((r = {}).ACCENT = "accent", r.GREEN = "statusGreen", r.YELLOW = "statusYellow", r.ORANGE = "statusOrange", r.RED = "statusRed", r.NONE = "transparent", r)

@@ -1,10 +1,11 @@
 /** Chunk was on web.js **/
+/** chunk id: 109515, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => g
 });
-var r = n(475637),
-  i = n(925300),
+var Chunk475637 = require("./475637.js"),
+  Chunk925300 = require("./925300.js"),
   o = /^(\d+)(th|st|nd|rd)?/i,
   a = /\d+/i,
   s = {
@@ -59,20 +60,20 @@ var r = n(475637),
     }
   };
 let g = {
-  ordinalNumber: (0, i.Z)({
+  ordinalNumber: (0, Chunk925300.Z)({
     matchPattern: o,
     parsePattern: a,
     valueCallback: function(e) {
       return parseInt(e, 10)
     }
   }),
-  era: (0, r.Z)({
+  era: (0, Chunk475637.Z)({
     matchPatterns: s,
     defaultMatchWidth: "wide",
     parsePatterns: l,
     defaultParseWidth: "any"
   }),
-  quarter: (0, r.Z)({
+  quarter: (0, Chunk475637.Z)({
     matchPatterns: c,
     defaultMatchWidth: "wide",
     parsePatterns: u,
@@ -81,19 +82,19 @@ let g = {
       return e + 1
     }
   }),
-  month: (0, r.Z)({
+  month: (0, Chunk475637.Z)({
     matchPatterns: d,
     defaultMatchWidth: "wide",
     parsePatterns: f,
     defaultParseWidth: "any"
   }),
-  day: (0, r.Z)({
+  day: (0, Chunk475637.Z)({
     matchPatterns: _,
     defaultMatchWidth: "wide",
     parsePatterns: p,
     defaultParseWidth: "any"
   }),
-  dayPeriod: (0, r.Z)({
+  dayPeriod: (0, Chunk475637.Z)({
     matchPatterns: h,
     defaultMatchWidth: "any",
     parsePatterns: m,

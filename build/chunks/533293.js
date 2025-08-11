@@ -1,23 +1,24 @@
 /** Chunk was on web.js **/
+/** chunk id: 533293, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 
 function r(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
-n.d(t, {
+require.d(exports, {
   Z: () => i
-}), n(953529);
+}), require("./953529.js");
 class i {
   constructor(e, t, n) {
-    r(this, "name", void 0), r(this, "description", void 0), r(this, "getFeatureValue", void 0), this.name = e, this.description = n, this.getFeatureValue = t, Object.defineProperty(this, "getFeatureValue", {
+    r(this, "name", true), r(this, "description", true), r(this, "getFeatureValue", true), this.name = e, this.description = n, this.getFeatureValue = t, Object.defineProperty(this, "getFeatureValue", {
       value: t,
-      configurable: !1,
-      writable: !1
+      configurable: false,
+      writable: false
     })
   }
 }

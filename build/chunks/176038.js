@@ -1,53 +1,54 @@
 /** Chunk was on 93886 **/
-a.d(t, {
+/** chunk id: 176038, original params: e,t,a (module,exports,require) **/
+require.d(exports, {
   Z: () => _
-}), a(388685), a(457542);
-var n = a(73800),
-  r = a(442837),
-  l = a(809206),
-  i = a(153867),
-  s = a(1870),
-  o = a(884697),
-  c = a(223143),
-  d = a(164946),
-  u = a(675478),
-  m = a(25990),
-  x = a(594174),
-  h = a(74538),
-  p = a(981631),
-  b = a(469115);
-let f = [p.BRd.DARK, p.BRd.LIGHT, p.BRd.DARKER, p.BRd.MIDNIGHT];
+}), require("./388685.js"), require("./457542.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk442837 = require("./442837.js"),
+  Chunk809206 = require("./809206.js"),
+  Chunk153867 = require("./153867.js"),
+  Chunk1870 = require("./1870.js"),
+  Chunk884697 = require("./884697.js"),
+  Chunk223143 = require("./223143.js"),
+  Chunk164946 = require("./164946.js"),
+  Chunk675478 = require("./675478.js"),
+  Chunk25990 = require("./25990.js"),
+  Chunk594174 = require("./594174.js"),
+  Chunk74538 = require("./74538.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk469115 = require("./469115.js");
+let f = [Chunk981631.BRd.DARK, Chunk981631.BRd.LIGHT, Chunk981631.BRd.DARKER, Chunk981631.BRd.MIDNIGHT];
 
 function v(e) {
   return e[Math.floor(Math.random() * e.length)]
 }
 async function j() {
   let e = function() {
-      let e = x.default.getCurrentUser();
-      return h.ZP.canUseClientThemes(e) ? Object.keys(b.qt).map(e => Number(e)) : []
+      let e = Chunk594174.default.getCurrentUser();
+      return Chunk74538.ZP.canUseClientThemes(module) ? Object.keys(Chunk469115.qt).map(e => Number(e)) : []
     }(),
-    t = e.length > 0 && Math.random() > .7;
+    t = module.length > 0 && Math.random() > .7;
   try {
-    if (t) {
-      let t, n = [...e, null],
-        r = v(n);
-      if (null != r) {
+    if (exports) {
+      let t, n = [...module, null],
+        r = v(Chunk73800);
+      if (null != Chunk442837) {
         var a;
-        let e = b.qt[r];
-        t = null != (a = null == e ? void 0 : e.theme) ? a : p.BRd.DARK
-      } else t = v([p.BRd.DARK, p.BRd.DARKER, p.BRd.MIDNIGHT]);
-      await i.ZI({
-        theme: t,
-        backgroundGradientPresetId: null != r ? r : void 0,
-        customUserThemeSettings: void 0
-      }, u.fy.INFREQUENT_USER_ACTION)
+        let e = Chunk469115.qt[Chunk442837];
+        t = null != (a = null == module ? true : module.theme) ? require : Chunk981631.BRd.DARK
+      } else t = v([Chunk981631.BRd.DARK, Chunk981631.BRd.DARKER, Chunk981631.BRd.MIDNIGHT]);
+      await Chunk153867.ZI({
+        theme: exports,
+        backgroundGradientPresetId: null != Chunk442837 ? Chunk442837 : true,
+        customUserThemeSettings: true
+      }, Chunk675478.fy.INFREQUENT_USER_ACTION)
     } else {
       let e = v(f);
-      await i.ZI({
-        theme: e,
-        backgroundGradientPresetId: void 0,
-        customUserThemeSettings: void 0
-      }, u.fy.INFREQUENT_USER_ACTION)
+      await Chunk153867.ZI({
+        theme: module,
+        backgroundGradientPresetId: true,
+        customUserThemeSettings: true
+      }, Chunk675478.fy.INFREQUENT_USER_ACTION)
     }
   } catch (e) {}
 }
@@ -70,17 +71,17 @@ async function g(e, t) {
 }
 
 function _() {
-  (0, c.mw)();
-  let [e, t] = (0, r.Wu)([s.Z], () => {
-    let e = s.Z.purchases;
-    return [(0, o.Ad)(e), (0, o.jT)(e)]
-  }), a = n.useCallback(() => {
-    j(), g(e, t)
-  }, [e, t]);
-  n.useEffect(() => {
+  (0, Chunk223143.mw)();
+  let [e, t] = (0, Chunk442837.Wu)([Chunk1870.Z], () => {
+    let e = Chunk1870.Z.purchases;
+    return [(0, Chunk884697.Ad)(module), (0, Chunk884697.jT)(module)]
+  }), a = Chunk73800.useCallback(() => {
+    j(), g(module, exports)
+  }, [module, exports]);
+  Chunk73800.useEffect(() => {
     let e = setInterval(() => {
-      a()
+      require()
     }, 5e3);
-    return () => clearInterval(e)
-  }, [a])
+    return () => clearInterval(module)
+  }, [require])
 }

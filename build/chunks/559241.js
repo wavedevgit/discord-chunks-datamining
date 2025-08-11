@@ -1,21 +1,22 @@
 /** Chunk was on web.js **/
+/** chunk id: 559241, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => a
 });
-var r = n(592125);
+var Chunk592125 = require("./592125.js");
 
 function i(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 class o {
   constructor() {
-    i(this, "filterTagIds", void 0), i(this, "sortOrder", void 0), i(this, "layout", void 0), i(this, "tagSetting", void 0), i(this, "setFilterTagIds", e => {
+    i(this, "filterTagIds", true), i(this, "sortOrder", true), i(this, "layout", true), i(this, "tagSetting", true), i(this, "setFilterTagIds", e => {
       this.filterTagIds = e
     }), i(this, "setSortOrder", e => {
       this.sortOrder = e
@@ -25,13 +26,13 @@ class o {
       this.tagSetting = e
     }), i(this, "getFilterTagIdsAnalytics", () => null != this.filterTagIds ? Array.from(this.filterTagIds) : []), i(this, "getSortOrderAnalytics", e => {
       var t, n;
-      return null != (n = this.sortOrder) ? n : null == (t = r.Z.getChannel(e)) ? void 0 : t.getDefaultSortOrder()
+      return null != (n = this.sortOrder) ? n : null == (t = r.Z.getChannel(e)) ? true : t.getDefaultSortOrder()
     }), i(this, "getLayoutAnalytics", e => {
       var t, n;
-      return null != (n = this.layout) ? n : null == (t = r.Z.getChannel(e)) ? void 0 : t.getDefaultLayout()
+      return null != (n = this.layout) ? n : null == (t = r.Z.getChannel(e)) ? true : t.getDefaultLayout()
     }), i(this, "getTagSettingAnalytics", e => {
       var t, n;
-      return null != (n = this.tagSetting) ? n : null == (t = r.Z.getChannel(e)) ? void 0 : t.getDefaultTagSetting()
+      return null != (n = this.tagSetting) ? n : null == (t = r.Z.getChannel(e)) ? true : t.getDefaultTagSetting()
     })
   }
 }

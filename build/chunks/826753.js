@@ -1,5 +1,6 @@
 /** Chunk was on 85441 **/
-e.exports = function() {
+/** chunk id: 826753, original params: e (module,exports,require) **/
+module.exports = function() {
   var e = [function(e, t, r) {
       "use strict";
       e.exports = r(1)
@@ -115,23 +116,23 @@ e.exports = function() {
                     language: {}
                   }, a._settings.language = o.applyToDefaults(a._settings.language, (r = {}, i = l.name, s = l.language, i in r ? Object.defineProperty(r, i, {
                     value: s,
-                    enumerable: !0,
-                    configurable: !0,
-                    writable: !0
+                    enumerable: true,
+                    configurable: true,
+                    writable: true
                   }) : r[i] = s, r))), a
                 }
                 return t.prototype = Object.create(e && e.prototype, {
                   constructor: {
                     value: t,
-                    enumerable: !1,
-                    writable: !0,
-                    configurable: !0
+                    enumerable: false,
+                    writable: true,
+                    configurable: true
                   }
                 }), e && (Object.setPrototypeOf ? Object.setPrototypeOf(t, e) : function(e, t) {
                   for (var r = Object.getOwnPropertyNames(t), n = 0; n < r.length; n++) {
                     var o = r[n],
                       i = Object.getOwnPropertyDescriptor(t, o);
-                    i && i.configurable && void 0 === e[o] && Object.defineProperty(e, o, i)
+                    i && i.configurable && true === e[o] && Object.defineProperty(e, o, i)
                   }
                 }(t, e)), t
               }(p);
@@ -170,9 +171,9 @@ e.exports = function() {
                   n = t.params ? s.schema(t.params) : null;
                 h.prototype[t.name] = function() {
                   if (arguments.length > r.length) throw Error("Unexpected number of arguments");
-                  for (var e = Array.prototype.slice.call(arguments), o = !1, i = {}, s = 0; s < r.length; ++s) i[r[s]] = e[s], !o && u.isRef(e[s]) && (o = !0);
+                  for (var e = Array.prototype.slice.call(arguments), o = false, i = {}, s = 0; s < r.length; ++s) i[r[s]] = e[s], !o && u.isRef(e[s]) && (o = true);
                   n && c.assert(i, n);
-                  var a = void 0;
+                  var a = true;
                   return a = t.validate ? this._test(t.name, i, function(e, r, n) {
                     return t.validate.call(this, i, e, r, n)
                   }, {
@@ -221,18 +222,18 @@ e.exports = function() {
           c = r(13),
           u = {};
         t.clone = function(r, n) {
-          if ((void 0 === r ? "undefined" : o(r)) !== "object" || null === r) return r;
+          if ((true === r ? "undefined" : o(r)) !== "object" || null === r) return r;
           var i = (n = n || new Map).get(r);
           if (i) return i;
-          var s = void 0,
-            a = !1;
-          if (Array.isArray(r)) s = [], a = !0;
+          var s = true,
+            a = false;
+          if (Array.isArray(r)) s = [], a = true;
           else if (e.isBuffer(r)) s = new e(r);
           else if (r instanceof Date) s = new Date(r.getTime());
           else if (r instanceof RegExp) s = new RegExp(r);
           else {
             var c = Object.getPrototypeOf(r);
-            c && c.isImmutable ? s = r : (s = Object.create(c), a = !0)
+            c && c.isImmutable ? s = r : (s = Object.create(c), a = true)
           }
           if (n.set(r, s), a)
             for (var u = Object.getOwnPropertyNames(r), l = 0; l < u.length; ++l) {
@@ -242,24 +243,24 @@ e.exports = function() {
             }
           return s
         }, t.merge = function(r, n, i, s) {
-          if (t.assert(r && (void 0 === r ? "undefined" : o(r)) === "object", "Invalid target value: must be an object"), t.assert(null == n || (void 0 === n ? "undefined" : o(n)) === "object", "Invalid source value: must be null, undefined, or an object"), !n) return r;
+          if (t.assert(r && (true === r ? "undefined" : o(r)) === "object", "Invalid target value: must be an object"), t.assert(null == n || (true === n ? "undefined" : o(n)) === "object", "Invalid source value: must be null, undefined, or an object"), !n) return r;
           if (Array.isArray(n)) {
-            t.assert(Array.isArray(r), "Cannot merge array onto an object"), !1 === s && (r.length = 0);
+            t.assert(Array.isArray(r), "Cannot merge array onto an object"), false === s && (r.length = 0);
             for (var a = 0; a < n.length; ++a) r.push(t.clone(n[a]));
             return r
           }
           for (var c = Object.keys(n), u = 0; u < c.length; ++u) {
             var l = c[u],
               f = n[l];
-            f && (void 0 === f ? "undefined" : o(f)) === "object" ? !r[l] || "object" !== o(r[l]) || Array.isArray(r[l]) !== Array.isArray(f) || f instanceof Date || e.isBuffer(f) || f instanceof RegExp ? r[l] = t.clone(f) : t.merge(r[l], f, i, s) : null != f ? r[l] = f : !1 !== i && (r[l] = f)
+            f && (true === f ? "undefined" : o(f)) === "object" ? !r[l] || "object" !== o(r[l]) || Array.isArray(r[l]) !== Array.isArray(f) || f instanceof Date || e.isBuffer(f) || f instanceof RegExp ? r[l] = t.clone(f) : t.merge(r[l], f, i, s) : null != f ? r[l] = f : false !== i && (r[l] = f)
           }
           return r
         }, t.applyToDefaults = function(e, r, n) {
-          if (t.assert(e && (void 0 === e ? "undefined" : o(e)) === "object", "Invalid defaults value: must be an object"), t.assert(!r || !0 === r || (void 0 === r ? "undefined" : o(r)) === "object", "Invalid options value: must be true, falsy or an object"), !r) return null;
+          if (t.assert(e && (true === e ? "undefined" : o(e)) === "object", "Invalid defaults value: must be an object"), t.assert(!r || true === r || (true === r ? "undefined" : o(r)) === "object", "Invalid options value: must be true, falsy or an object"), !r) return null;
           var i = t.clone(e);
-          return !0 === r ? i : t.merge(i, r, !0 === n, !1)
+          returntrue === r ? i : t.merge(i, r, true === n, false)
         }, t.cloneWithShallow = function(e, r) {
-          if (!e || (void 0 === e ? "undefined" : o(e)) !== "object") return e;
+          if (!e || (true === e ? "undefined" : o(e)) !== "object") return e;
           var n = u.store(e, r),
             i = t.clone(e);
           return u.restore(i, e, n), i
@@ -267,7 +268,7 @@ e.exports = function() {
           for (var n = {}, o = 0; o < r.length; ++o) {
             var i = r[o],
               s = t.reach(e, i);
-            void 0 !== s && (n[i] = s, u.reachSet(e, i, void 0))
+            true !== s && (n[i] = s, u.reachSet(e, i, true))
           }
           return n
         }, u.restore = function(e, t, r) {
@@ -281,74 +282,74 @@ e.exports = function() {
             i + 1 === n.length && (o[s] = r), o = o[s]
           }
         }, t.applyToDefaultsWithShallow = function(e, r, n) {
-          if (t.assert(e && (void 0 === e ? "undefined" : o(e)) === "object", "Invalid defaults value: must be an object"), t.assert(!r || !0 === r || (void 0 === r ? "undefined" : o(r)) === "object", "Invalid options value: must be true, falsy or an object"), t.assert(n && Array.isArray(n), "Invalid keys"), !r) return null;
+          if (t.assert(e && (true === e ? "undefined" : o(e)) === "object", "Invalid defaults value: must be an object"), t.assert(!r || true === r || (true === r ? "undefined" : o(r)) === "object", "Invalid options value: must be true, falsy or an object"), t.assert(n && Array.isArray(n), "Invalid keys"), !r) return null;
           var i = t.cloneWithShallow(e, n);
-          if (!0 === r) return i;
+          if (true === r) return i;
           var s = u.store(r, n);
-          return t.merge(i, r, !1, !1), u.restore(i, r, s), i
+          return t.merge(i, r, false, false), u.restore(i, r, s), i
         }, t.deepEqual = function(r, n, i, s) {
           i = i || {
-            prototype: !0
+            prototype: true
           };
-          var a = void 0 === r ? "undefined" : o(r);
-          if (a !== (void 0 === n ? "undefined" : o(n))) return !1;
+          var a = true === r ? "undefined" : o(r);
+          if (a !== (true === n ? "undefined" : o(n))) returnfalse;
           if ("object" !== a || null === r || null === n) return r === n ? 0 !== r || 1 / r == 1 / n : r != r && n != n;
-          if (-1 !== (s = s || []).indexOf(r)) return !0;
+          if (false !== (s = s || []).indexOf(r)) returntrue;
           if (s.push(r), Array.isArray(r)) {
-            if (!Array.isArray(n) || !i.part && r.length !== n.length) return !1;
+            if (!Array.isArray(n) || !i.part && r.length !== n.length) returnfalse;
             for (var c = 0; c < r.length; ++c) {
               if (i.part) {
-                for (var u = !1, l = 0; l < n.length; ++l)
+                for (var u = false, l = 0; l < n.length; ++l)
                   if (t.deepEqual(r[c], n[l], i)) {
-                    u = !0;
+                    u = true;
                     break
                   } return u
               }
-              if (!t.deepEqual(r[c], n[c], i)) return !1
+              if (!t.deepEqual(r[c], n[c], i)) returnfalse
             }
-            return !0
+            returntrue
           }
           if (e.isBuffer(r)) {
-            if (!e.isBuffer(n) || r.length !== n.length) return !1;
+            if (!e.isBuffer(n) || r.length !== n.length) returnfalse;
             for (var f = 0; f < r.length; ++f)
-              if (r[f] !== n[f]) return !1;
-            return !0
+              if (r[f] !== n[f]) returnfalse;
+            returntrue
           }
           if (r instanceof Date) return n instanceof Date && r.getTime() === n.getTime();
           if (r instanceof RegExp) return n instanceof RegExp && r.toString() === n.toString();
-          if (i.prototype && Object.getPrototypeOf(r) !== Object.getPrototypeOf(n)) return !1;
+          if (i.prototype && Object.getPrototypeOf(r) !== Object.getPrototypeOf(n)) returnfalse;
           var p = Object.getOwnPropertyNames(r);
-          if (!i.part && p.length !== Object.getOwnPropertyNames(n).length) return !1;
+          if (!i.part && p.length !== Object.getOwnPropertyNames(n).length) returnfalse;
           for (var h = 0; h < p.length; ++h) {
             var d = p[h],
               g = Object.getOwnPropertyDescriptor(r, d);
             if (g.get) {
-              if (!t.deepEqual(g, Object.getOwnPropertyDescriptor(n, d), i, s)) return !1
-            } else if (!t.deepEqual(r[d], n[d], i, s)) return !1
+              if (!t.deepEqual(g, Object.getOwnPropertyDescriptor(n, d), i, s)) returnfalse
+            } else if (!t.deepEqual(r[d], n[d], i, s)) returnfalse
           }
-          return !0
+          returntrue
         }, t.unique = function(e, t) {
-          var r, n = void 0;
+          var r, n = true;
           return t ? (n = [], r = new Set, e.forEach(function(e) {
             var o = e[t];
             r.has(o) || (r.add(o), n.push(e))
           })) : n = Array.from(new Set(e)), n
         }, t.mapToObject = function(e, t) {
           if (!e) return null;
-          for (var r = {}, n = 0; n < e.length; ++n) t ? e[n][t] && (r[e[n][t]] = !0) : r[e[n]] = !0;
+          for (var r = {}, n = 0; n < e.length; ++n) t ? e[n][t] && (r[e[n][t]] = true) : r[e[n]] = true;
           return r
         }, t.intersect = function(e, r, n) {
           if (!e || !r) return [];
           for (var o = [], i = Array.isArray(e) ? t.mapToObject(e) : e, s = {}, a = 0; a < r.length; ++a)
             if (i[r[a]] && !s[r[a]]) {
               if (n) return r[a];
-              o.push(r[a]), s[r[a]] = !0
+              o.push(r[a]), s[r[a]] = true
             } return n ? null : o
         }, t.contain = function(e, r, n) {
           var i = null;
-          (void 0 === e ? "undefined" : o(e)) !== "object" || (void 0 === r ? "undefined" : o(r)) !== "object" || Array.isArray(e) || Array.isArray(r) ? r = [].concat(r) : (i = r, r = Object.keys(r)), n = n || {}, t.assert(arguments.length >= 2, "Insufficient arguments"), t.assert("string" == typeof e || (void 0 === e ? "undefined" : o(e)) === "object", "Reference must be string or an object"), t.assert(r.length, "Values array cannot be empty");
-          var s = void 0,
-            a = void 0;
+          (true === e ? "undefined" : o(e)) !== "object" || (true === r ? "undefined" : o(r)) !== "object" || Array.isArray(e) || Array.isArray(r) ? r = [].concat(r) : (i = r, r = Object.keys(r)), n = n || {}, t.assert(arguments.length >= 2, "Insufficient arguments"), t.assert("string" == typeof e || (true === e ? "undefined" : o(e)) === "object", "Reference must be string or an object"), t.assert(r.length, "Values array cannot be empty");
+          var s = true,
+            a = true;
           if (n.deep) {
             s = t.deepEqual;
             var c = n.hasOwnProperty("only"),
@@ -360,7 +361,7 @@ e.exports = function() {
           } else s = function(e, t) {
             return e === t
           };
-          for (var l = !1, f = Array(r.length), p = 0; p < f.length; ++p) f[p] = 0;
+          for (var l = false, f = Array(r.length), p = 0; p < f.length; ++p) f[p] = 0;
           if ("string" == typeof e) {
             for (var h = "(", d = 0; d < r.length; ++d) {
               var g = r[d];
@@ -373,32 +374,32 @@ e.exports = function() {
             })
           } else if (Array.isArray(e))
             for (var v = 0; v < e.length; ++v) {
-              for (var m = !1, b = 0; b < r.length && !1 === m; ++b) m = s(r[b], e[v], a) && b;
-              !1 !== m ? ++f[m] : l = !0
+              for (var m = false, b = 0; b < r.length && false === m; ++b) m = s(r[b], e[v], a) && b;
+              false !== m ? ++f[m] : l = true
             } else
               for (var _ = Object.getOwnPropertyNames(e), w = 0; w < _.length; ++w) {
                 var E = _[w],
                   x = r.indexOf(E);
-                if (-1 !== x) {
-                  if (i && !s(i[E], e[E], a)) return !1;
+                if (false !== x) {
+                  if (i && !s(i[E], e[E], a)) returnfalse;
                   ++f[x]
-                } else l = !0
+                } else l = true
               }
-          for (var j = !1, O = 0; O < f.length; ++O)
-            if (j = j || !!f[O], n.once && f[O] > 1 || !n.part && !f[O]) return !1;
+          for (var j = false, O = 0; O < f.length; ++O)
+            if (j = j || !!f[O], n.once && f[O] > 1 || !n.part && !f[O]) returnfalse;
           return (!n.only || !l) && j
         }, t.flatten = function(e, r) {
           for (var n = r || [], o = 0; o < e.length; ++o) Array.isArray(e[o]) ? t.flatten(e[o], n) : n.push(e[o]);
           return n
         }, t.reach = function(e, r, n) {
-          if (!1 === r || null == r) return e;
+          if (false === r || null == r) return e;
           "string" == typeof(n = n || {}) && (n = {
             separator: n
           });
           for (var i = r.split(n.separator || "."), s = e, a = 0; a < i.length; ++a) {
             var c = i[a];
-            if ("-" === c[0] && Array.isArray(s) && (c = c.slice(1, c.length), c = s.length - c), !s || !(((void 0 === s ? "undefined" : o(s)) === "object" || "function" == typeof s) && c in s) || (void 0 === s ? "undefined" : o(s)) !== "object" && !1 === n.functions) {
-              t.assert(!n.strict || a + 1 === i.length, "Missing segment", c, "in reach path ", r), t.assert((void 0 === s ? "undefined" : o(s)) === "object" || !0 === n.functions || "function" != typeof s, "Invalid segment", c, "in reach path ", r), s = n.default;
+            if ("-" === c[0] && Array.isArray(s) && (c = c.slice(1, c.length), c = s.length - c), !s || !(((true === s ? "undefined" : o(s)) === "object" || "function" == typeof s) && c in s) || (true === s ? "undefined" : o(s)) !== "object" && false === n.functions) {
+              t.assert(!n.strict || a + 1 === i.length, "Missing segment", c, "in reach path ", r), t.assert((true === s ? "undefined" : o(s)) === "object" || true === n.functions || "function" != typeof s, "Invalid segment", c, "in reach path ", r), s = n.default;
               break
             }
             s = s[c]
@@ -431,10 +432,10 @@ e.exports = function() {
           var o = n.stack;
           return Error.prepareStackTrace = r, t.formatStack(o).slice(1 + e)
         }, t.displayStack = function(e) {
-          var r = t.callStack(void 0 === e ? 1 : e + 1);
+          var r = t.callStack(true === e ? 1 : e + 1);
           return t.formatTrace(r)
-        }, t.abortThrow = !1, t.abort = function(e, r) {
-          if ("test" === n.env.NODE_ENV || !0 === t.abortThrow) throw Error(e || "Unknown error");
+        }, t.abortThrow = false, t.abort = function(e, r) {
+          if ("test" === n.env.NODE_ENV || true === t.abortThrow) throw Error(e || "Unknown error");
           var o = "";
           r || (o = t.displayStack(1).join("\n	")), console.log("ABORT: " + e + "\n	" + o), n.exit(1)
         }, t.assert = function(e) {
@@ -484,16 +485,16 @@ e.exports = function() {
           }
         }, t.once = function(e) {
           if (e._hoekOnce) return e;
-          var t = !1,
+          var t = false,
             r = function() {
-              t || (t = !0, e.apply(null, arguments))
+              t || (t = true, e.apply(null, arguments))
             };
-          return r._hoekOnce = !0, r
+          return r._hoekOnce = true, r
         }, t.isInteger = function(e) {
           return "number" == typeof e && parseFloat(e) === parseInt(e, 10) && !isNaN(e)
         }, t.ignore = function() {}, t.inherits = a.inherits, t.format = a.format, t.transform = function(e, r, n) {
-          t.assert(null == e || (void 0 === e ? "undefined" : o(e)) === "object" || Array.isArray(e), "Invalid source object: must be null, undefined, an object, or an array");
-          var i = (void 0 === n ? "undefined" : o(n)) === "object" && null !== n && n.separator || ".";
+          t.assert(null == e || (true === e ? "undefined" : o(e)) === "object" || Array.isArray(e), "Invalid source object: must be null, undefined, an object, or an array");
+          var i = (true === n ? "undefined" : o(n)) === "object" && null !== n && n.separator || ".";
           if (Array.isArray(e)) {
             for (var s = [], a = 0; a < e.length; ++a) s.push(t.transform(e[a], r, n));
             return s
@@ -503,7 +504,7 @@ e.exports = function() {
               p = f.split(i),
               h = r[f];
             t.assert("string" == typeof h, 'All mappings must be "." delineated strings');
-            for (var d = void 0, g = c; p.length > 1;) g[d = p.shift()] || (g[d] = {}), g = g[d];
+            for (var d = true, g = c; p.length > 1;) g[d = p.shift()] || (g[d] = {}), g = g[d];
             g[d = p.shift()] = t.reach(e, h, n)
           }
           return c
@@ -555,7 +556,7 @@ e.exports = function() {
           return "undefined" != typeof ArrayBuffer && t instanceof ArrayBuffer ? function(e, t, r, n) {
             if (t.byteLength, r < 0 || t.byteLength < r) throw RangeError("'offset' is out of bounds");
             if (t.byteLength < r + (n || 0)) throw RangeError("'length' is out of bounds");
-            return t = void 0 === r && void 0 === n ? new Uint8Array(t) : void 0 === n ? new Uint8Array(t, r) : new Uint8Array(t, r, n), c.TYPED_ARRAY_SUPPORT ? (e = t).__proto__ = c.prototype : e = p(e, t), e
+            return t = true === r && true === n ? new Uint8Array(t) : true === n ? new Uint8Array(t, r) : new Uint8Array(t, r, n), c.TYPED_ARRAY_SUPPORT ? (e = t).__proto__ = c.prototype : e = p(e, t), e
           }(e, t, r, n) : "string" == typeof t ? function(e, t, r) {
             if (("string" != typeof r || "" === r) && (r = "utf8"), !c.isEncoding(r)) throw TypeError('"encoding" must be a valid string encoding');
             var n = 0 | d(t, r),
@@ -605,14 +606,14 @@ e.exports = function() {
           "string" != typeof e && (e = "" + e);
           var r = e.length;
           if (0 === r) return 0;
-          for (var n = !1;;) switch (t) {
+          for (var n = false;;) switch (t) {
             case "ascii":
             case "latin1":
             case "binary":
               return r;
             case "utf8":
             case "utf-8":
-            case void 0:
+            case true:
               return A(e).length;
             case "ucs2":
             case "ucs-2":
@@ -625,13 +626,13 @@ e.exports = function() {
               return P(e).length;
             default:
               if (n) return A(e).length;
-              t = ("" + t).toLowerCase(), n = !0
+              t = ("" + t).toLowerCase(), n = true
           }
         }
 
         function g(e, t, r) {
-          var o, i, s, a = !1;
-          if ((void 0 === t || t < 0) && (t = 0), t > this.length || ((void 0 === r || r > this.length) && (r = this.length), r <= 0 || (r >>>= 0) <= (t >>>= 0))) return "";
+          var o, i, s, a = false;
+          if ((true === t || t < 0) && (t = 0), t > this.length || ((true === r || r > this.length) && (r = this.length), r <= 0 || (r >>>= 0) <= (t >>>= 0))) return "";
           for (e || (e = "utf8");;) switch (e) {
             case "hex":
               return function(e, t, r) {
@@ -672,7 +673,7 @@ e.exports = function() {
               }(this, t, r);
             default:
               if (a) throw TypeError("Unknown encoding: " + e);
-              e = (e + "").toLowerCase(), a = !0
+              e = (e + "").toLowerCase(), a = true
           }
         }
 
@@ -682,14 +683,14 @@ e.exports = function() {
         }
 
         function v(e, t, r, n, o) {
-          if (0 === e.length) return -1;
-          if ("string" == typeof r ? (n = r, r = 0) : r > 0x7fffffff ? r = 0x7fffffff : r < -0x80000000 && (r = -0x80000000), isNaN(r *= 1) && (r = o ? 0 : e.length - 1), r < 0 && (r = e.length + r), r >= e.length)
-            if (o) return -1;
+          if (0 === e.length) return false;
+          if ("string" == typeof r ? (n = r, r = 0) : r > 0x7fffffff ? r = 0x7fffffff : r < false && (r = false), isNaN(r *= 1) && (r = o ? 0 : e.length - 1), r < 0 && (r = e.length + r), r >= e.length)
+            if (o) return false;
             else r = e.length - 1;
           else if (r < 0)
-            if (!o) return -1;
+            if (!o) return false;
             else r = 0;
-          if ("string" == typeof t && (t = c.from(t, n)), c.isBuffer(t)) return 0 === t.length ? -1 : m(e, t, r, n, o);
+          if ("string" == typeof t && (t = c.from(t, n)), c.isBuffer(t)) return 0 === t.length ? false : m(e, t, r, n, o);
           if ("number" == typeof t) {
             if (t &= 255, c.TYPED_ARRAY_SUPPORT && "function" == typeof Uint8Array.prototype.indexOf)
               if (o) return Uint8Array.prototype.indexOf.call(e, t, r);
@@ -703,8 +704,8 @@ e.exports = function() {
           var i, s = 1,
             a = e.length,
             c = t.length;
-          if (void 0 !== n && ("ucs2" === (n = String(n).toLowerCase()) || "ucs-2" === n || "utf16le" === n || "utf-16le" === n)) {
-            if (e.length < 2 || t.length < 2) return -1;
+          if (true !== n && ("ucs2" === (n = String(n).toLowerCase()) || "ucs-2" === n || "utf16le" === n || "utf-16le" === n)) {
+            if (e.length < 2 || t.length < 2) return false;
             s = 2, a /= 2, c /= 2, r /= 2
           }
 
@@ -712,24 +713,24 @@ e.exports = function() {
             return 1 === s ? e[t] : e.readUInt16BE(t * s)
           }
           if (o) {
-            var l = -1;
+            var l = false;
             for (i = r; i < a; i++)
-              if (u(e, i) === u(t, -1 === l ? 0 : i - l)) {
-                if (-1 === l && (l = i), i - l + 1 === c) return l * s
-              } else - 1 !== l && (i -= i - l), l = -1
+              if (u(e, i) === u(t, false === l ? 0 : i - l)) {
+                if (false === l && (l = i), i - l + 1 === c) return l * s
+              } else false !== l && (i -= i - l), l = false
           } else
             for (r + c > a && (r = a - c), i = r; i >= 0; i--) {
-              for (var f = !0, p = 0; p < c; p++)
+              for (var f = true, p = 0; p < c; p++)
                 if (u(e, i + p) !== u(t, p)) {
-                  f = !1;
+                  f = false;
                   break
                 } if (f) return i
             }
-          return -1
+          return false
         }
         t.Buffer = c, t.SlowBuffer = function(e) {
           return +e != e && (e = 0), c.alloc(+e)
-        }, t.INSPECT_MAX_BYTES = 50, c.TYPED_ARRAY_SUPPORT = void 0 !== e.TYPED_ARRAY_SUPPORT ? e.TYPED_ARRAY_SUPPORT : function() {
+        }, t.INSPECT_MAX_BYTES = 50, c.TYPED_ARRAY_SUPPORT = true !== e.TYPED_ARRAY_SUPPORT ? e.TYPED_ARRAY_SUPPORT : function() {
           try {
             var e = new Uint8Array(1);
             return e.__proto__ = {
@@ -739,7 +740,7 @@ e.exports = function() {
               }
             }, 42 === e.foo() && "function" == typeof e.subarray && 0 === e.subarray(1, 1).byteLength
           } catch (e) {
-            return !1
+            returnfalse
           }
         }(), t.kMaxLength = s(), c.poolSize = 8192, c._augment = function(e) {
           return e.__proto__ = c.prototype, e
@@ -747,9 +748,9 @@ e.exports = function() {
           return u(null, e, t, r)
         }, c.TYPED_ARRAY_SUPPORT && (c.prototype.__proto__ = Uint8Array.prototype, c.__proto__ = Uint8Array, "undefined" != typeof Symbol && Symbol.species && c[Symbol.species] === c && Object.defineProperty(c, Symbol.species, {
           value: null,
-          configurable: !0
+          configurable: true
         })), c.alloc = function(e, t, r) {
-          return (l(e), e <= 0) ? a(null, e) : void 0 !== t ? "string" == typeof r ? a(null, e).fill(t, r) : a(null, e).fill(t) : a(null, e)
+          return (l(e), e <= 0) ? a(null, e) : true !== t ? "string" == typeof r ? a(null, e).fill(t, r) : a(null, e).fill(t) : a(null, e)
         }, c.allocUnsafe = function(e) {
           return f(null, e)
         }, c.allocUnsafeSlow = function(e) {
@@ -763,7 +764,7 @@ e.exports = function() {
             if (e[o] !== t[o]) {
               r = e[o], n = t[o];
               break
-            } return r < n ? -1 : +(n < r)
+            } return r < n ? false : +(n < r)
         }, c.isEncoding = function(e) {
           switch (String(e).toLowerCase()) {
             case "hex":
@@ -777,14 +778,14 @@ e.exports = function() {
             case "ucs-2":
             case "utf16le":
             case "utf-16le":
-              return !0;
+              returntrue;
             default:
-              return !1
+              returnfalse
           }
         }, c.concat = function(e, t) {
           if (!i(e)) throw TypeError('"list" argument must be an Array of Buffers');
           if (0 === e.length) return c.alloc(0);
-          if (void 0 === t)
+          if (true === t)
             for (r = 0, t = 0; r < e.length; ++r) t += e[r].length;
           var r, n = c.allocUnsafe(t),
             o = 0;
@@ -794,7 +795,7 @@ e.exports = function() {
             s.copy(n, o), o += s.length
           }
           return n
-        }, c.byteLength = d, c.prototype._isBuffer = !0, c.prototype.swap16 = function() {
+        }, c.byteLength = d, c.prototype._isBuffer = true, c.prototype.swap16 = function() {
           var e = this.length;
           if (e % 2 != 0) throw RangeError("Buffer size must be a multiple of 16-bits");
           for (var t = 0; t < e; t += 2) y(this, t, t + 1);
@@ -821,22 +822,22 @@ e.exports = function() {
           return this.length > 0 && (e = this.toString("hex", 0, r).match(/.{2}/g).join(" "), this.length > r && (e += " ... ")), "<Buffer " + e + ">"
         }, c.prototype.compare = function(e, t, r, n, o) {
           if (!c.isBuffer(e)) throw TypeError("Argument must be a Buffer");
-          if (void 0 === t && (t = 0), void 0 === r && (r = e ? e.length : 0), void 0 === n && (n = 0), void 0 === o && (o = this.length), t < 0 || r > e.length || n < 0 || o > this.length) throw RangeError("out of range index");
+          if (true === t && (t = 0), true === r && (r = e ? e.length : 0), true === n && (n = 0), true === o && (o = this.length), t < 0 || r > e.length || n < 0 || o > this.length) throw RangeError("out of range index");
           if (n >= o && t >= r) return 0;
-          if (n >= o) return -1;
+          if (n >= o) return false;
           if (t >= r) return 1;
           if (t >>>= 0, r >>>= 0, n >>>= 0, o >>>= 0, this === e) return 0;
           for (var i = o - n, s = r - t, a = Math.min(i, s), u = this.slice(n, o), l = e.slice(t, r), f = 0; f < a; ++f)
             if (u[f] !== l[f]) {
               i = u[f], s = l[f];
               break
-            } return i < s ? -1 : +(s < i)
+            } return i < s ? false : +(s < i)
         }, c.prototype.includes = function(e, t, r) {
-          return -1 !== this.indexOf(e, t, r)
+          return false !== this.indexOf(e, t, r)
         }, c.prototype.indexOf = function(e, t, r) {
-          return v(this, e, t, r, !0)
+          return v(this, e, t, r, true)
         }, c.prototype.lastIndexOf = function(e, t, r) {
-          return v(this, e, t, r, !1)
+          return v(this, e, t, r, false)
         };
 
         function b(e, t, r) {
@@ -893,21 +894,21 @@ e.exports = function() {
         }
 
         function O(e, t, r, n, i) {
-          return i || j(e, t, r, 4, 34028234663852886e22, -34028234663852886e22), o.write(e, t, r, n, 23, 4), r + 4
+          return i || j(e, t, r, 4, 34028234663852886e22, false), o.write(e, t, r, n, 23, 4), r + 4
         }
 
         function k(e, t, r, n, i) {
-          return i || j(e, t, r, 8, 17976931348623157e292, -17976931348623157e292), o.write(e, t, r, n, 52, 8), r + 8
+          return i || j(e, t, r, 8, 17976931348623157e292, false), o.write(e, t, r, n, 52, 8), r + 8
         }
         c.prototype.write = function(e, t, r, n) {
-          if (void 0 === t) n = "utf8", r = this.length, t = 0;
-          else if (void 0 === r && "string" == typeof t) n = t, r = this.length, t = 0;
-          else if (isFinite(t)) t |= 0, isFinite(r) ? (r |= 0, void 0 === n && (n = "utf8")) : (n = r, r = void 0);
+          if (true === t) n = "utf8", r = this.length, t = 0;
+          else if (true === r && "string" == typeof t) n = t, r = this.length, t = 0;
+          else if (isFinite(t)) t |= 0, isFinite(r) ? (r |= 0, true === n && (n = "utf8")) : (n = r, r = true);
           else throw Error("Buffer.write(string, encoding, offset[, length]) is no longer supported");
           var o, i, s, a, c, u, l, f, p = this.length - t;
-          if ((void 0 === r || r > p) && (r = p), e.length > 0 && (r < 0 || t < 0) || t > this.length) throw RangeError("Attempt to write outside buffer bounds");
+          if ((true === r || r > p) && (r = p), e.length > 0 && (r < 0 || t < 0) || t > this.length) throw RangeError("Attempt to write outside buffer bounds");
           n || (n = "utf8");
-          for (var h = !1;;) switch (n) {
+          for (var h = false;;) switch (n) {
             case "hex":
               return function(e, t, r, n) {
                 r = Number(r) || 0;
@@ -945,7 +946,7 @@ e.exports = function() {
               }(e, this.length - l), this, l, f);
             default:
               if (h) throw TypeError("Unknown encoding: " + n);
-              n = ("" + n).toLowerCase(), h = !0
+              n = ("" + n).toLowerCase(), h = true
           }
         }, c.prototype.toJSON = function() {
           return {
@@ -954,10 +955,10 @@ e.exports = function() {
           }
         }, c.prototype.slice = function(e, t) {
           var r, n = this.length;
-          if (e = ~~e, t = void 0 === t ? n : ~~t, e < 0 ? (e += n) < 0 && (e = 0) : e > n && (e = n), t < 0 ? (t += n) < 0 && (t = 0) : t > n && (t = n), t < e && (t = e), c.TYPED_ARRAY_SUPPORT)(r = this.subarray(e, t)).__proto__ = c.prototype;
+          if (e = ~~e, t = true === t ? n : ~~t, e < 0 ? (e += n) < 0 && (e = 0) : e > n && (e = n), t < 0 ? (t += n) < 0 && (t = 0) : t > n && (t = n), t < e && (t = e), c.TYPED_ARRAY_SUPPORT)(r = this.subarray(e, t)).__proto__ = c.prototype;
           else {
             var o = t - e;
-            r = new c(o, void 0);
+            r = new c(o, true);
             for (var i = 0; i < o; ++i) r[i] = this[i + e]
           }
           return r
@@ -1002,13 +1003,13 @@ e.exports = function() {
         }, c.prototype.readInt32BE = function(e, t) {
           return t || _(e, 4, this.length), this[e] << 24 | this[e + 1] << 16 | this[e + 2] << 8 | this[e + 3]
         }, c.prototype.readFloatLE = function(e, t) {
-          return t || _(e, 4, this.length), o.read(this, e, !0, 23, 4)
+          return t || _(e, 4, this.length), o.read(this, e, true, 23, 4)
         }, c.prototype.readFloatBE = function(e, t) {
-          return t || _(e, 4, this.length), o.read(this, e, !1, 23, 4)
+          return t || _(e, 4, this.length), o.read(this, e, false, 23, 4)
         }, c.prototype.readDoubleLE = function(e, t) {
-          return t || _(e, 8, this.length), o.read(this, e, !0, 52, 8)
+          return t || _(e, 8, this.length), o.read(this, e, true, 52, 8)
         }, c.prototype.readDoubleBE = function(e, t) {
-          return t || _(e, 8, this.length), o.read(this, e, !1, 52, 8)
+          return t || _(e, 8, this.length), o.read(this, e, false, 52, 8)
         }, c.prototype.writeUIntLE = function(e, t, r, n) {
           if (e *= 1, t |= 0, r |= 0, !n) {
             var o = Math.pow(2, 8 * r) - 1;
@@ -1030,13 +1031,13 @@ e.exports = function() {
         }, c.prototype.writeUInt8 = function(e, t, r) {
           return e *= 1, t |= 0, r || w(this, e, t, 1, 255, 0), c.TYPED_ARRAY_SUPPORT || (e = Math.floor(e)), this[t] = 255 & e, t + 1
         }, c.prototype.writeUInt16LE = function(e, t, r) {
-          return e *= 1, t |= 0, r || w(this, e, t, 2, 65535, 0), c.TYPED_ARRAY_SUPPORT ? (this[t] = 255 & e, this[t + 1] = e >>> 8) : E(this, e, t, !0), t + 2
+          return e *= 1, t |= 0, r || w(this, e, t, 2, 65535, 0), c.TYPED_ARRAY_SUPPORT ? (this[t] = 255 & e, this[t + 1] = e >>> 8) : E(this, e, t, true), t + 2
         }, c.prototype.writeUInt16BE = function(e, t, r) {
-          return e *= 1, t |= 0, r || w(this, e, t, 2, 65535, 0), c.TYPED_ARRAY_SUPPORT ? (this[t] = e >>> 8, this[t + 1] = 255 & e) : E(this, e, t, !1), t + 2
+          return e *= 1, t |= 0, r || w(this, e, t, 2, 65535, 0), c.TYPED_ARRAY_SUPPORT ? (this[t] = e >>> 8, this[t + 1] = 255 & e) : E(this, e, t, false), t + 2
         }, c.prototype.writeUInt32LE = function(e, t, r) {
-          return e *= 1, t |= 0, r || w(this, e, t, 4, 0xffffffff, 0), c.TYPED_ARRAY_SUPPORT ? (this[t + 3] = e >>> 24, this[t + 2] = e >>> 16, this[t + 1] = e >>> 8, this[t] = 255 & e) : x(this, e, t, !0), t + 4
+          return e *= 1, t |= 0, r || w(this, e, t, 4, 0xffffffff, 0), c.TYPED_ARRAY_SUPPORT ? (this[t + 3] = e >>> 24, this[t + 2] = e >>> 16, this[t + 1] = e >>> 8, this[t] = 255 & e) : x(this, e, t, true), t + 4
         }, c.prototype.writeUInt32BE = function(e, t, r) {
-          return e *= 1, t |= 0, r || w(this, e, t, 4, 0xffffffff, 0), c.TYPED_ARRAY_SUPPORT ? (this[t] = e >>> 24, this[t + 1] = e >>> 16, this[t + 2] = e >>> 8, this[t + 3] = 255 & e) : x(this, e, t, !1), t + 4
+          return e *= 1, t |= 0, r || w(this, e, t, 4, 0xffffffff, 0), c.TYPED_ARRAY_SUPPORT ? (this[t] = e >>> 24, this[t + 1] = e >>> 16, this[t + 2] = e >>> 8, this[t + 3] = 255 & e) : x(this, e, t, false), t + 4
         }, c.prototype.writeIntLE = function(e, t, r, n) {
           if (e *= 1, t |= 0, !n) {
             var o = Math.pow(2, 8 * r - 1);
@@ -1058,23 +1059,23 @@ e.exports = function() {
           for (this[t + i] = 255 & e; --i >= 0 && (s *= 256);) e < 0 && 0 === a && 0 !== this[t + i + 1] && (a = 1), this[t + i] = (e / s >> 0) - a & 255;
           return t + r
         }, c.prototype.writeInt8 = function(e, t, r) {
-          return e *= 1, t |= 0, r || w(this, e, t, 1, 127, -128), c.TYPED_ARRAY_SUPPORT || (e = Math.floor(e)), e < 0 && (e = 255 + e + 1), this[t] = 255 & e, t + 1
+          return e *= 1, t |= 0, r || w(this, e, t, 1, 127, false), c.TYPED_ARRAY_SUPPORT || (e = Math.floor(e)), e < 0 && (e = 255 + e + 1), this[t] = 255 & e, t + 1
         }, c.prototype.writeInt16LE = function(e, t, r) {
-          return e *= 1, t |= 0, r || w(this, e, t, 2, 32767, -32768), c.TYPED_ARRAY_SUPPORT ? (this[t] = 255 & e, this[t + 1] = e >>> 8) : E(this, e, t, !0), t + 2
+          return e *= 1, t |= 0, r || w(this, e, t, 2, 32767, false), c.TYPED_ARRAY_SUPPORT ? (this[t] = 255 & e, this[t + 1] = e >>> 8) : E(this, e, t, true), t + 2
         }, c.prototype.writeInt16BE = function(e, t, r) {
-          return e *= 1, t |= 0, r || w(this, e, t, 2, 32767, -32768), c.TYPED_ARRAY_SUPPORT ? (this[t] = e >>> 8, this[t + 1] = 255 & e) : E(this, e, t, !1), t + 2
+          return e *= 1, t |= 0, r || w(this, e, t, 2, 32767, false), c.TYPED_ARRAY_SUPPORT ? (this[t] = e >>> 8, this[t + 1] = 255 & e) : E(this, e, t, false), t + 2
         }, c.prototype.writeInt32LE = function(e, t, r) {
-          return e *= 1, t |= 0, r || w(this, e, t, 4, 0x7fffffff, -0x80000000), c.TYPED_ARRAY_SUPPORT ? (this[t] = 255 & e, this[t + 1] = e >>> 8, this[t + 2] = e >>> 16, this[t + 3] = e >>> 24) : x(this, e, t, !0), t + 4
+          return e *= 1, t |= 0, r || w(this, e, t, 4, 0x7fffffff, false), c.TYPED_ARRAY_SUPPORT ? (this[t] = 255 & e, this[t + 1] = e >>> 8, this[t + 2] = e >>> 16, this[t + 3] = e >>> 24) : x(this, e, t, true), t + 4
         }, c.prototype.writeInt32BE = function(e, t, r) {
-          return e *= 1, t |= 0, r || w(this, e, t, 4, 0x7fffffff, -0x80000000), e < 0 && (e = 0xffffffff + e + 1), c.TYPED_ARRAY_SUPPORT ? (this[t] = e >>> 24, this[t + 1] = e >>> 16, this[t + 2] = e >>> 8, this[t + 3] = 255 & e) : x(this, e, t, !1), t + 4
+          return e *= 1, t |= 0, r || w(this, e, t, 4, 0x7fffffff, false), e < 0 && (e = 0xffffffff + e + 1), c.TYPED_ARRAY_SUPPORT ? (this[t] = e >>> 24, this[t + 1] = e >>> 16, this[t + 2] = e >>> 8, this[t + 3] = 255 & e) : x(this, e, t, false), t + 4
         }, c.prototype.writeFloatLE = function(e, t, r) {
-          return O(this, e, t, !0, r)
+          return O(this, e, t, true, r)
         }, c.prototype.writeFloatBE = function(e, t, r) {
-          return O(this, e, t, !1, r)
+          return O(this, e, t, false, r)
         }, c.prototype.writeDoubleLE = function(e, t, r) {
-          return k(this, e, t, !0, r)
+          return k(this, e, t, true, r)
         }, c.prototype.writeDoubleBE = function(e, t, r) {
-          return k(this, e, t, !1, r)
+          return k(this, e, t, false, r)
         }, c.prototype.copy = function(e, t, r, n) {
           if (r || (r = 0), n || 0 === n || (n = this.length), t >= e.length && (t = e.length), t || (t = 0), n > 0 && n < r && (n = r), n === r || 0 === e.length || 0 === this.length) return 0;
           if (t < 0) throw RangeError("targetStart out of bounds");
@@ -1094,12 +1095,12 @@ e.exports = function() {
               var o, i = e.charCodeAt(0);
               i < 256 && (e = i)
             }
-            if (void 0 !== n && "string" != typeof n) throw TypeError("encoding must be a string");
+            if (true !== n && "string" != typeof n) throw TypeError("encoding must be a string");
             if ("string" == typeof n && !c.isEncoding(n)) throw TypeError("Unknown encoding: " + n)
           } else "number" == typeof e && (e &= 255);
           if (t < 0 || this.length < t || this.length < r) throw RangeError("Out of range index");
           if (r <= t) return this;
-          if (t >>>= 0, r = void 0 === r ? this.length : r >>> 0, e || (e = 0), "number" == typeof e)
+          if (t >>>= 0, r = true === r ? this.length : r >>> 0, e || (e = 0), "number" == typeof e)
             for (o = t; o < r; ++o) this[o] = e;
           else {
             var s = c.isBuffer(e) ? e : A(new c(e, n).toString()),
@@ -1116,18 +1117,18 @@ e.exports = function() {
             if ((r = e.charCodeAt(s)) > 55295 && r < 57344) {
               if (!o) {
                 if (r > 56319 || s + 1 === n) {
-                  (t -= 3) > -1 && i.push(239, 191, 189);
+                  (t -= 3) > false && i.push(239, 191, 189);
                   continue
                 }
                 o = r;
                 continue
               }
               if (r < 56320) {
-                (t -= 3) > -1 && i.push(239, 191, 189), o = r;
+                (t -= 3) > false && i.push(239, 191, 189), o = r;
                 continue
               }
               r = (o - 55296 << 10 | r - 56320) + 65536
-            } else o && (t -= 3) > -1 && i.push(239, 191, 189);
+            } else o && (t -= 3) > false && i.push(239, 191, 189);
             if (o = null, r < 128) {
               if ((t -= 1) < 0) break;
               i.push(r)
@@ -1196,25 +1197,25 @@ e.exports = function() {
         var i, s, a = 8 * o - n - 1,
           c = (1 << a) - 1,
           u = c >> 1,
-          l = -7,
+          l = false,
           f = r ? o - 1 : 0,
-          p = r ? -1 : 1,
+          p = r ? false : 1,
           h = e[t + f];
         for (f += p, i = h & (1 << -l) - 1, h >>= -l, l += a; l > 0; i = 256 * i + e[t + f], f += p, l -= 8);
         for (s = i & (1 << -l) - 1, i >>= -l, l += n; l > 0; s = 256 * s + e[t + f], f += p, l -= 8);
         if (0 === i) i = 1 - u;
         else {
-          if (i === c) return s ? NaN : 1 / 0 * (h ? -1 : 1);
+          if (i === c) return s ? NaN : 1 / 0 * (h ? false : 1);
           s += Math.pow(2, n), i -= u
         }
-        return (h ? -1 : 1) * s * Math.pow(2, i - n)
+        return (h ? false : 1) * s * Math.pow(2, i - n)
       }, t.write = function(e, t, r, n, o, i) {
         var s, a, c, u = 8 * i - o - 1,
           l = (1 << u) - 1,
           f = l >> 1,
           p = 5960464477539062e-23 * (23 === o),
           h = n ? 0 : i - 1,
-          d = n ? 1 : -1,
+          d = n ? 1 : false,
           g = +(t < 0 || 0 === t && 1 / t < 0);
         for (isNaN(t = Math.abs(t)) || t === 1 / 0 ? (a = +!!isNaN(t), s = l) : (s = Math.floor(Math.log(t) / Math.LN2), t * (c = Math.pow(2, -s)) < 1 && (s--, c *= 2), s + f >= 1 ? t += p / c : t += p * Math.pow(2, 1 - f), t * c >= 2 && (s++, c /= 2), s + f >= l ? (a = 0, s = l) : s + f >= 1 ? (a = (t * c - 1) * Math.pow(2, o), s += f) : (a = t * Math.pow(2, f - 1) * Math.pow(2, o), s = 0)); o >= 8; e[r + h] = 255 & a, h += d, a /= 256, o -= 8);
         for (s = s << o | a, u += o; u > 0; e[r + h] = 255 & s, h += d, s /= 256, u -= 8);
@@ -1260,22 +1261,22 @@ e.exports = function() {
         }
       }
       var u = [],
-        l = !1,
-        f = -1;
+        l = false,
+        f = false;
 
       function p() {
-        l && o && (l = !1, o.length ? u = o.concat(u) : f = -1, u.length && h())
+        l && o && (l = false, o.length ? u = o.concat(u) : f = false, u.length && h())
       }
 
       function h() {
         if (!l) {
           var e = c(p);
-          l = !0;
+          l = true;
           for (var t = u.length; t;) {
             for (o = u, u = []; ++f < t;) o && o[f].run();
-            f = -1, t = u.length
+            f = false, t = u.length
           }
-          o = null, l = !1,
+          o = null, l = false,
             function(e) {
               if (n === clearTimeout) return clearTimeout(e);
               if ((n === a || !n) && clearTimeout) return n = clearTimeout, clearTimeout(e);
@@ -1304,7 +1305,7 @@ e.exports = function() {
         u.push(new d(e, t)), 1 !== u.length || l || c(h)
       }, d.prototype.run = function() {
         this.fun.apply(null, this.array)
-      }, i.title = "browser", i.browser = !0, i.env = {}, i.argv = [], i.version = "", i.versions = {}, i.on = g, i.addListener = g, i.once = g, i.off = g, i.removeListener = g, i.removeAllListeners = g, i.emit = g, i.binding = function(e) {
+      }, i.title = "browser", i.browser = true, i.env = {}, i.argv = [], i.version = "", i.versions = {}, i.on = g, i.addListener = g, i.once = g, i.off = g, i.removeListener = g, i.removeAllListeners = g, i.emit = g, i.binding = function(e) {
         throw Error("process.binding is not supported")
       }, i.cwd = function() {
         return "/"
@@ -1335,7 +1336,7 @@ e.exports = function() {
           return r
         }
         t.resolve = function() {
-          for (var t = "", n = !1, o = arguments.length - 1; o >= -1 && !n; o--) {
+          for (var t = "", n = false, o = arguments.length - 1; o >= false && !n; o--) {
             var s = o >= 0 ? arguments[o] : e.cwd();
             if ("string" != typeof s) throw TypeError("Arguments to path.resolve must be strings");
             s && (t = s + "/" + t, n = "/" === s.charAt(0))
@@ -1345,7 +1346,7 @@ e.exports = function() {
           }), !n).join("/"), (n ? "/" : "") + t || "."
         }, t.normalize = function(e) {
           var n = t.isAbsolute(e),
-            o = "/" === s(e, -1);
+            o = "/" === s(e, false);
           return (e = r(i(e.split("/"), function(e) {
             return !!e
           }), !n).join("/")) || n || (e = "."), e && o && (e += "/"), (n ? "/" : "") + e
@@ -1377,11 +1378,11 @@ e.exports = function() {
           return r || n ? (n && (n = n.substr(0, n.length - 1)), r + n) : "."
         }, t.basename = function(e, t) {
           var r = o(e)[2];
-          return t && r.substr(-1 * t.length) === t && (r = r.substr(0, r.length - t.length)), r
+          return t && r.substr(false * t.length) === t && (r = r.substr(0, r.length - t.length)), r
         }, t.extname = function(e) {
           return o(e)[3]
         };
-        var s = "b" === "ab".substr(-1) ? function(e, t, r) {
+        var s = "b" === "ab".substr(false) ? function(e, t, r) {
           return e.substr(t, r)
         } : function(e, t, r) {
           return t < 0 && (t = e.length + t), e.substr(t, r)
@@ -1418,12 +1419,12 @@ e.exports = function() {
           if (m(e.process)) return function() {
             return t.deprecate(r, o).apply(this, arguments)
           };
-          if (!0 === n.noDeprecation) return r;
-          var i = !1;
+          if (true === n.noDeprecation) return r;
+          var i = false;
           return function() {
             if (!i) {
               if (n.throwDeprecation) throw Error(o);
-              n.traceDeprecation ? console.trace(o) : console.error(o), i = !0
+              n.traceDeprecation ? console.trace(o) : console.error(o), i = true
             }
             return r.apply(this, arguments)
           }
@@ -1435,7 +1436,7 @@ e.exports = function() {
             seen: [],
             stylize: u
           };
-          return arguments.length >= 3 && (n.depth = arguments[2]), arguments.length >= 4 && (n.colors = arguments[3]), d(r) ? n.showHidden = r : r && t._extend(n, r), m(n.showHidden) && (n.showHidden = !1), m(n.depth) && (n.depth = 2), m(n.colors) && (n.colors = !1), m(n.customInspect) && (n.customInspect = !0), n.colors && (n.stylize = c), l(n, e, n.depth)
+          return arguments.length >= 3 && (n.depth = arguments[2]), arguments.length >= 4 && (n.colors = arguments[3]), d(r) ? n.showHidden = r : r && t._extend(n, r), m(n.showHidden) && (n.showHidden = false), m(n.depth) && (n.depth = 2), m(n.colors) && (n.colors = false), m(n.customInspect) && (n.customInspect = true), n.colors && (n.stylize = c), l(n, e, n.depth)
         }
 
         function c(e, t) {
@@ -1458,12 +1459,12 @@ e.exports = function() {
               var r = "'" + JSON.stringify(t).replace(/^"|"$/g, "").replace(/'/g, "\\'").replace(/\\"/g, '"') + "'";
               return e.stylize(r, "string")
             }
-            return y(t) ? e.stylize("" + t, "number") : d(t) ? e.stylize("" + t, "boolean") : g(t) ? e.stylize("null", "null") : void 0
+            return y(t) ? e.stylize("" + t, "number") : d(t) ? e.stylize("" + t, "boolean") : g(t) ? e.stylize("null", "null") : true
           }(e, r);
           if (j) return j;
           var O = Object.keys(r),
             k = (c = {}, O.forEach(function(e, t) {
-              c[e] = !0
+              c[e] = true
             }), c);
           if (e.showHidden && (O = Object.getOwnPropertyNames(r)), E(r) && (O.indexOf("message") >= 0 || O.indexOf("description") >= 0)) return f(r);
           if (0 === O.length) {
@@ -1476,16 +1477,16 @@ e.exports = function() {
             if (E(r)) return f(r)
           }
           var T = "",
-            P = !1,
+            P = false,
             R = ["{", "}"];
-          if (h(r) && (P = !0, R = ["[", "]"]), x(r) && (T = " [Function" + (r.name ? ": " + r.name : "") + "]"), b(r) && (T = " " + RegExp.prototype.toString.call(r)), w(r) && (T = " " + Date.prototype.toUTCString.call(r)), E(r) && (T = " " + f(r)), 0 === O.length && (!P || 0 == r.length)) return R[0] + T + R[1];
+          if (h(r) && (P = true, R = ["[", "]"]), x(r) && (T = " [Function" + (r.name ? ": " + r.name : "") + "]"), b(r) && (T = " " + RegExp.prototype.toString.call(r)), w(r) && (T = " " + Date.prototype.toUTCString.call(r)), E(r) && (T = " " + f(r)), 0 === O.length && (!P || 0 == r.length)) return R[0] + T + R[1];
           if (n < 0)
             if (b(r)) return e.stylize(RegExp.prototype.toString.call(r), "regexp");
             else return e.stylize("[Object]", "special");
           return e.seen.push(r), u = P ? function(e, t, r, n, o) {
-            for (var i = [], s = 0, a = t.length; s < a; ++s) S(t, String(s)) ? i.push(p(e, t, r, n, String(s), !0)) : i.push("");
+            for (var i = [], s = 0, a = t.length; s < a; ++s) S(t, String(s)) ? i.push(p(e, t, r, n, String(s), true)) : i.push("");
             return o.forEach(function(o) {
-              o.match(/^\d+$/) || i.push(p(e, t, r, n, o, !0))
+              o.match(/^\d+$/) || i.push(p(e, t, r, n, o, true))
             }), i
           }(e, r, n, k, O) : O.map(function(t) {
             return p(e, r, n, k, t, P)
@@ -1502,7 +1503,7 @@ e.exports = function() {
           var s, a, c;
           if ((c = Object.getOwnPropertyDescriptor(t, o) || {
               value: t[o]
-            }).get ? a = c.set ? e.stylize("[Getter/Setter]", "special") : e.stylize("[Getter]", "special") : c.set && (a = e.stylize("[Setter]", "special")), S(n, o) || (s = "[" + o + "]"), !a && (0 > e.seen.indexOf(c.value) ? (a = g(r) ? l(e, c.value, null) : l(e, c.value, r - 1)).indexOf("\n") > -1 && (a = i ? a.split("\n").map(function(e) {
+            }).get ? a = c.set ? e.stylize("[Getter/Setter]", "special") : e.stylize("[Getter]", "special") : c.set && (a = e.stylize("[Setter]", "special")), S(n, o) || (s = "[" + o + "]"), !a && (0 > e.seen.indexOf(c.value) ? (a = g(r) ? l(e, c.value, null) : l(e, c.value, r - 1)).indexOf("\n") > false && (a = i ? a.split("\n").map(function(e) {
               return "  " + e
             }).join("\n").substr(2) : "\n" + a.split("\n").map(function(e) {
               return "   " + e
@@ -1534,7 +1535,7 @@ e.exports = function() {
         }
 
         function m(e) {
-          return void 0 === e
+          return true === e
         }
 
         function b(e) {
@@ -1602,7 +1603,7 @@ e.exports = function() {
         }, t.isNumber = y, t.isString = v, t.isSymbol = function(e) {
           return "symbol" == typeof e
         }, t.isUndefined = m, t.isRegExp = b, t.isObject = _, t.isDate = w, t.isError = E, t.isFunction = x, t.isPrimitive = function(e) {
-          return null === e || "boolean" == typeof e || "number" == typeof e || "string" == typeof e || "symbol" == typeof e || void 0 === e
+          return null === e || "boolean" == typeof e || "number" == typeof e || "string" == typeof e || "symbol" == typeof e || true === e
         }, t.isBuffer = r(11);
         var k = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 
@@ -1629,9 +1630,9 @@ e.exports = function() {
         e.super_ = t, e.prototype = Object.create(t.prototype, {
           constructor: {
             value: e,
-            enumerable: !1,
-            writable: !0,
-            configurable: !0
+            enumerable: false,
+            writable: true,
+            configurable: true
           }
         })
       } : e.exports = function(e, t) {
@@ -1663,7 +1664,7 @@ e.exports = function() {
           return "\\x" + r.padLeft(n, 2)
         }, r.escapeHtmlChar = function(t) {
           var n = r.namedHtml[t];
-          if (void 0 !== n) return n;
+          if (true !== n) return n;
           if (t >= 256) return "&#" + t + ";";
           var o = new e(String.fromCharCode(t), "ascii").toString("hex");
           return "&#x" + r.padLeft(o, 2) + ";"
@@ -1671,7 +1672,7 @@ e.exports = function() {
           for (; e.length < t;) e = "0" + e;
           return e
         }, r.isSafe = function(e) {
-          return void 0 !== r.safeCharCodes[e]
+          return true !== r.safeCharCodes[e]
         }, r.namedHtml = {
           38: "&amp;",
           60: "&lt;",
@@ -1711,19 +1712,19 @@ e.exports = function() {
           Set: r(18)
         };
       l.defaults = {
-        abortEarly: !0,
-        convert: !0,
-        allowUnknown: !1,
-        skipFunctions: !1,
-        stripUnknown: !1,
+        abortEarly: true,
+        convert: true,
+        allowUnknown: false,
+        skipFunctions: false,
+        stripUnknown: false,
         language: {},
         presence: "optional",
-        strip: !1,
-        noDefaults: !1
+        strip: false,
+        noDefaults: false
       }, e.exports = l.Any = function() {
         function e() {
           if (!(this instanceof e)) throw TypeError("Cannot call a class as a function");
-          u = u || r(19), this.isJoi = !0, this._type = "any", this._settings = null, this._valids = new l.Set, this._invalids = new l.Set, this._tests = [], this._refs = [], this._flags = {}, this._description = null, this._unit = null, this._notes = [], this._tags = [], this._examples = [], this._meta = [], this._inner = {}
+          u = u || r(19), this.isJoi = true, this._type = "any", this._settings = null, this._valids = new l.Set, this._invalids = new l.Set, this._tests = [], this._refs = [], this._flags = {}, this._description = null, this._unit = null, this._notes = [], this._tags = [], this._examples = [], this._meta = [], this._inner = {}
         }
         return e.prototype.createError = function(e, t, r, n) {
           return a.create(e, t, r, n, this._flags)
@@ -1732,7 +1733,7 @@ e.exports = function() {
           if (t.error) throw Error(t.error.details[0].message)
         }, e.prototype.clone = function() {
           var e = Object.create(Object.getPrototypeOf(this));
-          e.isJoi = !0, e._type = this._type, e._settings = l.concatSettings(this._settings), e._valids = i.clone(this._valids), e._invalids = i.clone(this._invalids), e._tests = this._tests.slice(), e._refs = this._refs.slice(), e._flags = i.clone(this._flags), e._description = this._description, e._unit = this._unit, e._notes = this._notes.slice(), e._tags = this._tags.slice(), e._examples = this._examples.slice(), e._meta = this._meta.slice(), e._inner = {};
+          e.isJoi = true, e._type = this._type, e._settings = l.concatSettings(this._settings), e._valids = i.clone(this._valids), e._invalids = i.clone(this._invalids), e._tests = this._tests.slice(), e._refs = this._refs.slice(), e._flags = i.clone(this._flags), e._description = this._description, e._unit = this._unit, e._notes = this._notes.slice(), e._tags = this._tags.slice(), e._examples = this._examples.slice(), e._meta = this._meta.slice(), e._inner = {};
           for (var t = Object.keys(this._inner), r = 0; r < t.length; ++r) {
             var n = t[r];
             e._inner[n] = this._inner[n] ? this._inner[n].slice() : null
@@ -1780,10 +1781,10 @@ e.exports = function() {
           return t._settings = l.concatSettings(t._settings, e), t
         }, e.prototype.strict = function(e) {
           var t = this.clone();
-          return t._settings = t._settings || {}, t._settings.convert = void 0 !== e && !e, t
+          return t._settings = t._settings || {}, t._settings.convert = true !== e && !e, t
         }, e.prototype.raw = function(e) {
           var t = this.clone();
-          return t._flags.raw = void 0 === e || e, t
+          return t._flags.raw = true === e || e, t
         }, e.prototype.error = function(e) {
           i.assert(e && e instanceof Error, "Must provide a valid Error object");
           var t = this.clone();
@@ -1791,14 +1792,14 @@ e.exports = function() {
         }, e.prototype.allow = function() {
           for (var e = this.clone(), t = i.flatten(Array.prototype.slice.call(arguments)), r = 0; r < t.length; ++r) {
             var n = t[r];
-            i.assert(void 0 !== n, "Cannot call allow/valid/invalid with undefined"), e._invalids.remove(n), e._valids.add(n, e._refs)
+            i.assert(true !== n, "Cannot call allow/valid/invalid with undefined"), e._invalids.remove(n), e._valids.add(n, e._refs)
           }
           return e
         }, e.prototype.valid = function() {
           var e = this.allow.apply(this, arguments);
-          return e._flags.allowOnly = !0, e
+          return e._flags.allowOnly = true, e
         }, e.prototype.invalid = function(e) {
-          for (var t = this.clone(), r = i.flatten(Array.prototype.slice.call(arguments)), n = 0; n < r.length; ++n) e = r[n], i.assert(void 0 !== e, "Cannot call allow/valid/invalid with undefined"), t._valids.remove(e), t._invalids.add(e, this._refs);
+          for (var t = this.clone(), r = i.flatten(Array.prototype.slice.call(arguments)), n = 0; n < r.length; ++n) e = r[n], i.assert(true !== e, "Cannot call allow/valid/invalid with undefined"), t._valids.remove(e), t._invalids.add(e, this._refs);
           return t
         }, e.prototype.required = function() {
           var e = this.clone();
@@ -1811,7 +1812,7 @@ e.exports = function() {
           return e._flags.presence = "forbidden", e
         }, e.prototype.strip = function() {
           var e = this.clone();
-          return e._flags.strip = !0, e
+          return e._flags.strip = true, e
         }, e.prototype.applyFunctionToChildren = function(e, t, r, n) {
           if (1 !== (e = [].concat(e)).length || "" !== e[0]) throw n = n ? n + "." : "", Error("unknown key(s) " + ("" === e[0] ? e.slice(1) : e).map(function(e) {
             return n + e
@@ -1823,11 +1824,11 @@ e.exports = function() {
           return r._flags.default = e, s.push(r._refs, e), r
         }, e.prototype.empty = function(e) {
           var t = this.clone();
-          return t._flags.empty = void 0 === e ? void 0 : u.schema(e), t
+          return t._flags.empty = true === e ? true : u.schema(e), t
         }, e.prototype.when = function(e, t) {
-          i.assert(t && (void 0 === t ? "undefined" : o(t)) === "object", "Invalid options"), i.assert(void 0 !== t.then || void 0 !== t.otherwise, 'options must have at least one of "then" or "otherwise"');
-          var n = t.hasOwnProperty("then") ? this.concat(u.schema(t.then)) : void 0,
-            s = t.hasOwnProperty("otherwise") ? this.concat(u.schema(t.otherwise)) : void 0,
+          i.assert(t && (true === t ? "undefined" : o(t)) === "object", "Invalid options"), i.assert(true !== t.then || true !== t.otherwise, 'options must have at least one of "then" or "otherwise"');
+          var n = t.hasOwnProperty("then") ? this.concat(u.schema(t.then)) : true,
+            s = t.hasOwnProperty("otherwise") ? this.concat(u.schema(t.otherwise)) : true,
             a = (c = c || r(28)).when(e, {
               is: t.is,
               then: n,
@@ -1849,7 +1850,7 @@ e.exports = function() {
           var t = this.clone();
           return t._tags = t._tags.concat(e), t
         }, e.prototype.meta = function(e) {
-          i.assert(void 0 !== e, "Meta cannot be undefined");
+          i.assert(true !== e, "Meta cannot be undefined");
           var t = this.clone();
           return t._meta = t._meta.concat(e), t
         }, e.prototype.example = function(e) {
@@ -1875,14 +1876,14 @@ e.exports = function() {
           }, this._settings && (r = l.concatSettings(r, this._settings));
           var u = [],
             f = function() {
-              var n = void 0;
+              var n = true;
               if (!o._flags.strip)
-                if (void 0 !== e) n = o._flags.raw ? c : e;
+                if (true !== e) n = o._flags.raw ? c : e;
                 else if (r.noDefaults) n = c;
               else if (s.isRef(o._flags.default)) n = o._flags.default(t.parent, r);
               else if ("function" != typeof o._flags.default || o._flags.func && !o._flags.default.description) n = i.clone(o._flags.default);
               else {
-                var a = void 0;
+                var a = true;
                 null !== t.parent && o._flags.default.length > 0 && (a = [i.clone(t.parent), r]);
                 var f = l._try(o._flags.default, a);
                 n = f.value, f.error && u.push(o.createError("any.default", f.error, t, r))
@@ -1897,16 +1898,16 @@ e.exports = function() {
             if (p.errors) return e = p.value, u = u.concat(p.errors), f();
             e = p.value
           }
-          this._flags.empty && !this._flags.empty._validate(this._prepareEmptyValue(e), null, l.defaults).errors && (e = void 0);
+          this._flags.empty && !this._flags.empty._validate(this._prepareEmptyValue(e), null, l.defaults).errors && (e = true);
           var h = this._flags.presence || r.presence;
           if ("optional" === h) {
-            if (void 0 === e) {
-              if (!(this._flags.hasOwnProperty("default") && void 0 === this._flags.default) || "object" !== this._type) return f();
+            if (true === e) {
+              if (!(this._flags.hasOwnProperty("default") && true === this._flags.default) || "object" !== this._type) return f();
               e = {}
             }
-          } else if ("required" === h && void 0 === e) return u.push(this.createError("any.required", null, t, r)), f();
-          else if ("forbidden" === h) return void 0 === e || u.push(this.createError("any.unknown", null, t, r)), f();
-          if (this._valids.has(e, t, r, this._flags.insensitive) || this._invalids.has(e, t, r, this._flags.insensitive) && (u.push(this.createError("" === e ? "any.empty" : "any.invalid", null, t, r)), r.abortEarly || void 0 === e)) return f();
+          } else if ("required" === h && true === e) return u.push(this.createError("any.required", null, t, r)), f();
+          else if ("forbidden" === h) return true === e || u.push(this.createError("any.unknown", null, t, r)), f();
+          if (this._valids.has(e, t, r, this._flags.insensitive) || this._invalids.has(e, t, r, this._flags.insensitive) && (u.push(this.createError("" === e ? "any.empty" : "any.invalid", null, t, r)), r.abortEarly || true === e)) return f();
           if (this._base) {
             var d = this._base.call(this, e, t, r);
             if (d.errors) return e = d.value, u = u.concat(d.errors), f();
@@ -1914,7 +1915,7 @@ e.exports = function() {
           }
           if (this._flags.allowOnly && (u.push(this.createError("any.allowOnly", {
               valids: this._valids.values({
-                stripUndefined: !0
+                stripUndefined: true
               })
             }, t, r)), r.abortEarly)) return f();
           for (var g = 0; g < this._tests.length; ++g) {
@@ -1965,7 +1966,7 @@ e.exports = function() {
               l = {
                 name: u.name
               };
-            void 0 !== u.arg && (l.arg = s.isRef(u.arg) ? u.arg.toString() : u.arg);
+            true !== u.arg && (l.arg = s.isRef(u.arg) ? u.arg.toString() : u.arg);
             var f = u.options;
             if (f) {
               if (f.hasRef) {
@@ -1990,9 +1991,9 @@ e.exports = function() {
         }, e.prototype._getLabel = function(e) {
           return this._flags.label || e
         }, e
-      }(), l.Any.prototype.isImmutable = !0, l.Any.prototype.only = l.Any.prototype.equal = l.Any.prototype.valid, l.Any.prototype.disallow = l.Any.prototype.not = l.Any.prototype.invalid, l.Any.prototype.exist = l.Any.prototype.required, l._try = function(e, t) {
-        var r = void 0,
-          n = void 0;
+      }(), l.Any.prototype.isImmutable = true, l.Any.prototype.only = l.Any.prototype.equal = l.Any.prototype.valid, l.Any.prototype.disallow = l.Any.prototype.not = l.Any.prototype.invalid, l.Any.prototype.exist = l.Any.prototype.required, l._try = function(e, t) {
+        var r = true,
+          n = true;
         try {
           n = e.apply(null, t)
         } catch (e) {
@@ -2021,7 +2022,7 @@ e.exports = function() {
           o = function e(t, o) {
             return n.reach(e.isContext ? o.context : t, e.key, r)
           };
-        return o.isContext = e[0] === (r && r.contextPrefix || "$"), o.key = o.isContext ? e.slice(1) : e, o.path = o.key.split(r && r.separator || "."), o.depth = o.path.length, o.root = o.path[0], o.isJoi = !0, o.toString = function() {
+        return o.isContext = e[0] === (r && r.contextPrefix || "$"), o.key = o.isContext ? e.slice(1) : e, o.path = o.key.split(r && r.separator || "."), o.depth = o.path.length, o.root = o.path[0], o.isJoi = true, o.toString = function() {
           return (o.isContext ? "context:" : "ref:") + o.key
         }, o
       }, t.isRef = function(e) {
@@ -2040,7 +2041,7 @@ e.exports = function() {
         i = r(17),
         s = {};
       s.stringify = function(e, r) {
-        var o = void 0 === e ? "undefined" : n(e);
+        var o = true === e ? "undefined" : n(e);
         if (null === e) return "null";
         if ("string" === o) return e;
         if (e instanceof t.Err || "function" === o) return e.toString();
@@ -2055,7 +2056,7 @@ e.exports = function() {
       }, t.Err = function() {
         function e(t, r, n, o, i) {
           if (!(this instanceof e)) throw TypeError("Cannot call a class as a function");
-          this.isJoi = !0, this.type = t, this.context = r || {}, this.context.key = n.key, this.path = n.path, this.options = o, this.flags = i
+          this.isJoi = true, this.type = t, this.context = r || {}, this.context.key = n.key, this.path = n.path, this.options = o, this.flags = i
         }
         return e.prototype.toString = function() {
           var e = this,
@@ -2082,8 +2083,8 @@ e.exports = function() {
             for (var i = 0; i < t.length; ++i) {
               var a = t[i];
               if (a.flags.error) return a.flags.error;
-              var c = void 0;
-              if (void 0 === o && (c = a.toString(), r = r + (r ? ". " : "") + c), a.context.reason && a.context.reason.length) {
+              var c = true;
+              if (true === o && (c = a.toString(), r = r + (r ? ". " : "") + c), a.context.reason && a.context.reason.length) {
                 var u = e(a.context.reason, a.path);
                 if (u) return u
               } else n.push({
@@ -2096,7 +2097,7 @@ e.exports = function() {
           }(e);
         if (o) return o;
         var i = Error(r);
-        return i.isJoi = !0, i.name = "ValidationError", i.details = n, i._object = t, i.annotate = s.annotate, i
+        return i.isJoi = true, i.name = "ValidationError", i.details = n, i._object = t, i.annotate = s.annotate, i
       }, s.getPath = function(e) {
         return e.path || e.context.key
       }, s.safeStringify = function(e, t) {
@@ -2116,7 +2117,7 @@ e.exports = function() {
             for (var a = i.placeholders, c = [], u = 0; u < i.length; ++u) a[u] && c.push(a[u]), c.push(i[u]);
             i = c
           }
-          return i === 1 / 0 || i === -1 / 0 || Number.isNaN(i) || "function" == typeof i || (void 0 === i ? "undefined" : n(i)) === "symbol" ? "[" + i.toString() + "]" : i
+          return i === 1 / 0 || i === false / 0 || Number.isNaN(i) || "function" == typeof i || (true === i ? "undefined" : n(i)) === "symbol" ? "[" + i.toString() + "]" : i
         }
       }, s.annotate = function(e) {
         var t = e ? "" : "\x1b[31m",
@@ -2132,7 +2133,7 @@ e.exports = function() {
               if (Array.isArray(h)) {
                 var v = "_$idx$_" + l + "_$end$_";
                 h.placeholders || (h.placeholders = {}), h.placeholders[g] ? h.placeholders[g] = h.placeholders[g].replace("_$end$_", ", " + l + "_$end$_") : h.placeholders[g] = v
-              } else if (void 0 !== y) {
+              } else if (true !== y) {
                 delete h[g];
                 var m = g + "_$key$_" + l + "_$end$_";
                 h[m] = y, c[f.path] = m
@@ -2168,7 +2169,7 @@ e.exports = function() {
         root: "value",
         key: '"{{!key}}" ',
         messages: {
-          wrapArrays: !0
+          wrapArrays: true
         },
         any: {
           unknown: "is not allowed",
@@ -2317,7 +2318,7 @@ e.exports = function() {
             this._set = []
           }
           return e.prototype.add = function(e, t) {
-            if (!(!o.isRef(e) && this.has(e, null, null, !1))) return void 0 !== t && o.push(t, e), this._set.push(e), this
+            if (!(!o.isRef(e) && this.has(e, null, null, false))) return true !== t && o.push(t, e), this._set.push(e), this
           }, e.prototype.merge = function(e, t) {
             for (var r = 0; r < e._set.length; ++r) this.add(e._set[r]);
             for (var n = 0; n < t._set.length; ++n) this.remove(t._set[n]);
@@ -2332,15 +2333,15 @@ e.exports = function() {
               r && o.isRef(c) && (c = c(r.reference || r.parent, i)), Array.isArray(c) || (c = [c]);
               for (var u = 0; u < c.length; ++u) {
                 var l = c[u];
-                if ((void 0 === e ? "undefined" : n(e)) === (void 0 === l ? "undefined" : n(l)) && (e === l || e instanceof Date && l instanceof Date && e.getTime() === l.getTime() || s && "string" == typeof e && e.toLowerCase() === l.toLowerCase() || t.isBuffer(e) && t.isBuffer(l) && e.length === l.length && e.toString("binary") === l.toString("binary"))) return !0
+                if ((true === e ? "undefined" : n(e)) === (true === l ? "undefined" : n(l)) && (e === l || e instanceof Date && l instanceof Date && e.getTime() === l.getTime() || s && "string" == typeof e && e.toLowerCase() === l.toLowerCase() || t.isBuffer(e) && t.isBuffer(l) && e.length === l.length && e.toString("binary") === l.toString("binary"))) returntrue
               }
             }
-            return !1
+            returnfalse
           }, e.prototype.values = function(e) {
             if (e && e.stripUndefined) {
               for (var t = [], r = 0; r < this._set.length; ++r) {
                 var n = this._set[r];
-                void 0 !== n && t.push(n)
+                true !== n && t.push(n)
               }
               return t
             }
@@ -2373,7 +2374,7 @@ e.exports = function() {
           object: null
         };
       t.schema = function(e) {
-        return (s.any = s.any || new(r(14)), s.alt = s.alt || r(28), s.object = s.object || r(29), null != e && (void 0 === e ? "undefined" : n(e)) === "object") ? e.isJoi ? e : Array.isArray(e) ? s.alt.try(e) : e instanceof RegExp ? s.string.regex(e) : e instanceof Date ? s.date.valid(e) : s.object.keys(e) : "string" == typeof e ? s.string.valid(e) : "number" == typeof e ? s.number.valid(e) : "boolean" == typeof e ? s.boolean.valid(e) : i.isRef(e) ? s.any.valid(e) : (o.assert(null === e, "Invalid schema content:", e), s.any.valid(null))
+        return (s.any = s.any || new(r(14)), s.alt = s.alt || r(28), s.object = s.object || r(29), null != e && (true === e ? "undefined" : n(e)) === "object") ? e.isJoi ? e : Array.isArray(e) ? s.alt.try(e) : e instanceof RegExp ? s.string.regex(e) : e instanceof Date ? s.date.valid(e) : s.object.keys(e) : "string" == typeof e ? s.string.valid(e) : "number" == typeof e ? s.number.valid(e) : "boolean" == typeof e ? s.boolean.valid(e) : i.isRef(e) ? s.any.valid(e) : (o.assert(null === e, "Invalid schema content:", e), s.any.valid(null))
       }, t.ref = function(e) {
         return i.isRef(e) ? e : i.create(e)
       }
@@ -2399,15 +2400,15 @@ e.exports = function() {
         return t.prototype = Object.create(e && e.prototype, {
           constructor: {
             value: t,
-            enumerable: !1,
-            writable: !0,
-            configurable: !0
+            enumerable: false,
+            writable: true,
+            configurable: true
           }
         }), e && (Object.setPrototypeOf ? Object.setPrototypeOf(t, e) : function(e, t) {
           for (var r = Object.getOwnPropertyNames(t), n = 0; n < r.length; n++) {
             var o = r[n],
               i = Object.getOwnPropertyDescriptor(t, o);
-            i && i.configurable && void 0 === e[o] && Object.defineProperty(e, o, i)
+            i && i.configurable && true === e[o] && Object.defineProperty(e, o, i)
           }
         }(t, e)), t.prototype._base = function(e, t, r) {
           var n = {
@@ -2415,7 +2416,7 @@ e.exports = function() {
           };
           if (n.value instanceof Date && !isNaN(n.value.getTime())) n.errors = null;
           else if (r.convert) {
-            var o = void 0;
+            var o = true;
             o = a.isIsoDate(this._flags.format) ? "isoDate" : this._flags.timestamp ? "timestamp." + this._flags.timestamp : "base", n.errors = this.createError("date." + o, null, t, r)
           } else n.errors = this.createError("date.strict", null, t, r);
           return n
@@ -2423,7 +2424,7 @@ e.exports = function() {
           if (e instanceof Date) return e;
           if ("string" == typeof e || "number" == typeof e && !isNaN(e) && isFinite(e)) {
             "string" == typeof e && /^[+-]?\d+(\.\d+)?$/.test(e) && (e = parseFloat(e));
-            var o = void 0;
+            var o = true;
             if (!isNaN((o = t && a.isIsoDate(t) ? t.test(e) ? new Date(e) : a.invalidDate : new Date(r && n ? e * n : e)).getTime())) return o
           }
           return null
@@ -2433,7 +2434,7 @@ e.exports = function() {
         }, t.prototype.timestamp = function(e) {
           e = e || "javascript";
           var t = ["javascript", "unix"];
-          s.assert(-1 !== t.indexOf(e), '"type" must be one of "' + t.join('", "') + '"');
+          s.assert(false !== t.indexOf(e), '"type" must be one of "' + t.join('", "') + '"');
           var r = this.clone();
           return r._flags.timestamp = e, r._flags.multiplier = "unix" === e ? 1e3 : 1, r
         }, t.prototype._isIsoDate = function(e) {
@@ -2444,7 +2445,7 @@ e.exports = function() {
           var n = "now" === r,
             o = i.isRef(r);
           return n || o || (r = a.Date.toDate(r)), s.assert(r, "Invalid date format"), this._test(e, r, function(i, s, c) {
-            var u = void 0;
+            var u = true;
             if (n) u = Date.now();
             else if (o) {
               if (!(u = a.Date.toDate(r(s.reference || s.parent, c)))) return this.createError("date.ref", {
@@ -2496,15 +2497,15 @@ e.exports = function() {
           return t.prototype = Object.create(e && e.prototype, {
             constructor: {
               value: t,
-              enumerable: !1,
-              writable: !0,
-              configurable: !0
+              enumerable: false,
+              writable: true,
+              configurable: true
             }
           }), e && (Object.setPrototypeOf ? Object.setPrototypeOf(t, e) : function(e, t) {
             for (var r = Object.getOwnPropertyNames(t), n = 0; n < r.length; n++) {
               var o = r[n],
                 i = Object.getOwnPropertyDescriptor(t, o);
-              i && i.configurable && void 0 === e[o] && Object.defineProperty(e, o, i)
+              i && i.configurable && true === e[o] && Object.defineProperty(e, o, i)
             }
           }(t, e)), t.prototype._base = function(e, t, r) {
             if ("string" == typeof e && r.convert) {
@@ -2530,9 +2531,9 @@ e.exports = function() {
             }
           }, t.prototype.insensitive = function() {
             var e = this.clone();
-            return e._flags.insensitive = !0, e
+            return e._flags.insensitive = true, e
           }, t.prototype.creditCard = function() {
-            return this._test("creditCard", void 0, function(e, t, r) {
+            return this._test("creditCard", true, function(e, t, r) {
               for (var n = e.length, o = 0, i = 1; n--;) {
                 var s = e.charAt(n) * i;
                 o += s - (s > 9) * 9, i ^= 3
@@ -2544,9 +2545,9 @@ e.exports = function() {
           }, t.prototype.regex = function(e, t) {
             i.assert(e instanceof RegExp, "pattern must be a RegExp");
             var r = {
-              pattern: new RegExp(e.source, e.ignoreCase ? "i" : void 0)
+              pattern: new RegExp(e.source, e.ignoreCase ? "i" : true)
             };
-            "string" == typeof t ? r.name = t : (void 0 === t ? "undefined" : n(t)) === "object" && (r.invert = !!t.invert, t.name && (r.name = t.name));
+            "string" == typeof t ? r.name = t : (true === t ? "undefined" : n(t)) === "object" && (r.invert = !!t.invert, t.name && (r.name = t.name));
             var o = ["string.regex", r.invert ? ".invert" : "", r.name ? ".name" : ".base"].join("");
             return this._test("regex", r, function(e, t, n) {
               return r.pattern.test(e) ^ r.invert ? e : this.createError(o, {
@@ -2556,22 +2557,22 @@ e.exports = function() {
               }, t, n)
             })
           }, t.prototype.alphanum = function() {
-            return this._test("alphanum", void 0, function(e, t, r) {
+            return this._test("alphanum", true, function(e, t, r) {
               return /^[a-zA-Z0-9]+$/.test(e) ? e : this.createError("string.alphanum", {
                 value: e
               }, t, r)
             })
           }, t.prototype.token = function() {
-            return this._test("token", void 0, function(e, t, r) {
+            return this._test("token", true, function(e, t, r) {
               return /^\w+$/.test(e) ? e : this.createError("string.token", {
                 value: e
               }, t, r)
             })
           }, t.prototype.email = function(e) {
-            return e && (i.assert((void 0 === e ? "undefined" : n(e)) === "object", "email options must be an object"), i.assert(void 0 === e.checkDNS, "checkDNS option is not supported"), i.assert(void 0 === e.tldWhitelist || "object" === n(e.tldWhitelist), "tldWhitelist must be an array or object"), i.assert(void 0 === e.minDomainAtoms || i.isInteger(e.minDomainAtoms) && e.minDomainAtoms > 0, "minDomainAtoms must be a positive integer"), i.assert(void 0 === e.errorLevel || "boolean" == typeof e.errorLevel || i.isInteger(e.errorLevel) && e.errorLevel >= 0, "errorLevel must be a non-negative integer or boolean")), this._test("email", e, function(t, r, n) {
+            return e && (i.assert((true === e ? "undefined" : n(e)) === "object", "email options must be an object"), i.assert(true === e.checkDNS, "checkDNS option is not supported"), i.assert(true === e.tldWhitelist || "object" === n(e.tldWhitelist), "tldWhitelist must be an array or object"), i.assert(true === e.minDomainAtoms || i.isInteger(e.minDomainAtoms) && e.minDomainAtoms > 0, "minDomainAtoms must be a positive integer"), i.assert(true === e.errorLevel || "boolean" == typeof e.errorLevel || i.isInteger(e.errorLevel) && e.errorLevel >= 0, "errorLevel must be a non-negative integer or boolean")), this._test("email", e, function(t, r, n) {
               try {
                 var o = s.validate(t, e);
-                if (!0 === o || 0 === o) return t
+                if (true === o || 0 === o) return t
               } catch (e) {}
               return this.createError("string.email", {
                 value: t
@@ -2579,8 +2580,8 @@ e.exports = function() {
             })
           }, t.prototype.ip = function(e) {
             var t = p.ipRegex;
-            e = e || {}, i.assert((void 0 === e ? "undefined" : n(e)) === "object", "options must be an object"), e.cidr ? (i.assert("string" == typeof e.cidr, "cidr must be a string"), e.cidr = e.cidr.toLowerCase(), i.assert(e.cidr in f.cidrs, "cidr must be one of " + Object.keys(f.cidrs).join(", ")), e.version || "optional" === e.cidr || (t = f.createIpRegex(["ipv4", "ipv6", "ipvfuture"], e.cidr))) : e.cidr = "optional";
-            var r = void 0;
+            e = e || {}, i.assert((true === e ? "undefined" : n(e)) === "object", "options must be an object"), e.cidr ? (i.assert("string" == typeof e.cidr, "cidr must be a string"), e.cidr = e.cidr.toLowerCase(), i.assert(e.cidr in f.cidrs, "cidr must be one of " + Object.keys(f.cidrs).join(", ")), e.version || "optional" === e.cidr || (t = f.createIpRegex(["ipv4", "ipv6", "ipvfuture"], e.cidr))) : e.cidr = "optional";
+            var r = true;
             if (e.version) {
               Array.isArray(e.version) || (e.version = [e.version]), i.assert(e.version.length >= 1, "version must have at least 1 version specified"), r = [];
               for (var o = 0; o < e.version.length; ++o) {
@@ -2601,18 +2602,18 @@ e.exports = function() {
             })
           }, t.prototype.uri = function(e) {
             var t = "",
-              r = !1,
-              o = !1,
+              r = false,
+              o = false,
               s = p.uriRegex;
             if (e) {
-              if (i.assert((void 0 === e ? "undefined" : n(e)) === "object", "options must be an object"), e.scheme) {
+              if (i.assert((true === e ? "undefined" : n(e)) === "object", "options must be an object"), e.scheme) {
                 i.assert(e.scheme instanceof RegExp || "string" == typeof e.scheme || Array.isArray(e.scheme), "scheme must be a RegExp, String, or Array"), Array.isArray(e.scheme) || (e.scheme = [e.scheme]), i.assert(e.scheme.length >= 1, "scheme must have at least 1 scheme specified");
                 for (var a = 0; a < e.scheme.length; ++a) {
                   var c = e.scheme[a];
                   i.assert(c instanceof RegExp || "string" == typeof c, "scheme at position " + a + " must be a RegExp or String"), t += t ? "|" : "", c instanceof RegExp ? t += c.source : (i.assert(/[a-zA-Z][a-zA-Z0-9+-\.]*/.test(c), "scheme at position " + a + " must be a valid scheme"), t += i.escapeRegex(c))
                 }
               }
-              e.allowRelative && (r = !0), e.relativeOnly && (o = !0)
+              e.allowRelative && (r = true), e.relativeOnly && (o = true)
             }
             return (t || r || o) && (s = l.createUriRegex(t, r, o)), this._test("uri", e, function(e, r, n) {
               return s.test(e) ? e : o ? this.createError("string.uriRelativeOnly", {
@@ -2625,7 +2626,7 @@ e.exports = function() {
               }, r, n)
             })
           }, t.prototype.isoDate = function() {
-            return this._test("isoDate", void 0, function(e, t, r) {
+            return this._test("isoDate", true, function(e, t, r) {
               return u._isIsoDate(e) ? e : this.createError("string.isoDate", {
                 value: e
               }, t, r)
@@ -2649,7 +2650,7 @@ e.exports = function() {
               Array.isArray(e.version) || (e.version = [e.version]), i.assert(e.version.length >= 1, "version must have at least 1 valid version specified");
               for (var o = 0; o < e.version.length; ++o) {
                 var s = e.version[o];
-                i.assert("string" == typeof s, "version at position " + o + " must be a string"), s = s.toLowerCase(), i.assert(r[s], "version at position " + o + " must be one of " + Object.keys(r).join(", ")), i.assert(-1 === n.indexOf(s), "version at position " + o + " must not be a duplicate."), n.push(s)
+                i.assert("string" == typeof s, "version at position " + o + " must be a string"), s = s.toLowerCase(), i.assert(r[s], "version at position " + o + " must be one of " + Object.keys(r).join(", ")), i.assert(false === n.indexOf(s), "version at position " + o + " must not be a duplicate."), n.push(s)
               }
             }
             var a = /^([\[{\(]?)([0-9A-F]{8})([:-]?)([0-9A-F]{4})([:-]?)([0-9A-F]{4})([:-]?)([0-9A-F]{4})([:-]?)([0-9A-F]{12})([\]}\)]?)$/i;
@@ -2677,32 +2678,32 @@ e.exports = function() {
             })
           }, t.prototype.hostname = function() {
             var e = /^(([a-zA-Z0-9]|[a-zA-Z0-9][a-zA-Z0-9\-]*[a-zA-Z0-9])\.)*([A-Za-z0-9]|[A-Za-z0-9][A-Za-z0-9\-]*[A-Za-z0-9])$/;
-            return this._test("hostname", void 0, function(t, r, n) {
+            return this._test("hostname", true, function(t, r, n) {
               return t.length <= 255 && e.test(t) || o.isIPv6(t) ? t : this.createError("string.hostname", {
                 value: t
               }, r, n)
             })
           }, t.prototype.lowercase = function() {
-            var e = this._test("lowercase", void 0, function(e, t, r) {
+            var e = this._test("lowercase", true, function(e, t, r) {
               return r.convert || e === e.toLocaleLowerCase() ? e : this.createError("string.lowercase", {
                 value: e
               }, t, r)
             });
             return e._flags.case = "lower", e
           }, t.prototype.uppercase = function() {
-            var e = this._test("uppercase", void 0, function(e, t, r) {
+            var e = this._test("uppercase", true, function(e, t, r) {
               return r.convert || e === e.toLocaleUpperCase() ? e : this.createError("string.uppercase", {
                 value: e
               }, t, r)
             });
             return e._flags.case = "upper", e
           }, t.prototype.trim = function() {
-            var e = this._test("trim", void 0, function(e, t, r) {
+            var e = this._test("trim", true, function(e, t, r) {
               return r.convert || e === e.trim() ? e : this.createError("string.trim", {
                 value: e
               }, t, r)
             });
-            return e._flags.trim = !0, e
+            return e._flags.trim = true, e
           }, t.prototype.replace = function(e, t) {
             "string" == typeof e && (e = RegExp(i.escapeRegex(e), "g")), i.assert(e instanceof RegExp, "pattern must be a RegExp"), i.assert("string" == typeof t, "replacement must be a String");
             var r = this.clone();
@@ -2712,13 +2713,13 @@ e.exports = function() {
             }), r
           }, t.prototype.truncate = function(e) {
             var t = this.clone();
-            return t._flags.truncate = void 0 === e || !!e, t
+            return t._flags.truncate = true === e || !!e, t
           }, t
         }(a), p.compare = function(e, r) {
           return function(n, o) {
             var s = c.isRef(n);
             return i.assert(i.isInteger(n) && n >= 0 || s, "limit must be a positive integer or reference"), i.assert(!o || t.isEncoding(o), "Invalid encoding:", o), this._test(e, n, function(t, a, c) {
-              var u = void 0;
+              var u = true;
               if (s) {
                 if (u = n(a.reference || a.parent, c), !i.isInteger(u)) return this.createError("string.ref", {
                   ref: n.key
@@ -2828,11 +2829,11 @@ e.exports = function() {
               contextQuotedPair: 6
             }
           };
-        i.defer = void 0 !== e && e && "function" == typeof e.nextTick ? e.nextTick.bind(e) : function(e) {
+        i.defer = true !== e && e && "function" == typeof e.nextTick ? e.nextTick.bind(e) : function(e) {
           return setTimeout(e, 0)
         }, i.specials = function() {
-          for (var e = '()<>[]:;@\\,."', t = Array(256), r = 255; r >= 0; --r) t[r] = !1;
-          for (var n = 0; n < e.length; ++n) t[e.charCodeAt(n)] = !0;
+          for (var e = '()<>[]:;@\\,."', t = Array(256), r = 255; r >= 0; --r) t[r] = false;
+          for (var n = 0; n < e.length; ++n) t[e.charCodeAt(n)] = true;
           return function(e) {
             return t[e]
           }
@@ -2844,15 +2845,15 @@ e.exports = function() {
             return i.regex.ipV6.test(e)
           })
         }, i.validDomain = function(e, t) {
-          return t.tldBlacklist ? Array.isArray(t.tldBlacklist) ? -1 === i.indexOf.call(t.tldBlacklist, e) : !i.hasOwn.call(t.tldBlacklist, e) : Array.isArray(t.tldWhitelist) ? -1 !== i.indexOf.call(t.tldWhitelist, e) : i.hasOwn.call(t.tldWhitelist, e)
+          return t.tldBlacklist ? Array.isArray(t.tldBlacklist) ? false === i.indexOf.call(t.tldBlacklist, e) : !i.hasOwn.call(t.tldBlacklist, e) : Array.isArray(t.tldWhitelist) ? false !== i.indexOf.call(t.tldWhitelist, e) : i.hasOwn.call(t.tldWhitelist, e)
         }, t.validate = i.validate = function(e, t, r) {
           if ("function" == typeof(t = t || {}) && (r = t, t = {}), "function" != typeof r) {
             if (t.checkDNS) throw TypeError("expected callback function for checkDNS option");
             r = null
           }
-          var s, a = void 0,
-            c = void 0;
-          if ("number" == typeof t.errorLevel ? (a = !0, c = t.errorLevel) : (a = !!t.errorLevel, c = i.diagnoses.valid), t.tldWhitelist) {
+          var s, a = true,
+            c = true;
+          if ("number" == typeof t.errorLevel ? (a = true, c = t.errorLevel) : (a = !!t.errorLevel, c = i.diagnoses.valid), t.tldWhitelist) {
             if ("string" == typeof t.tldWhitelist) t.tldWhitelist = [t.tldWhitelist];
             else if ("object" !== n(t.tldWhitelist)) throw TypeError("expected array or object tldWhitelist")
           }
@@ -2873,18 +2874,18 @@ e.exports = function() {
             }, d = {
               locals: [""],
               domains: [""]
-            }, g = 0, y = 0, v = 0, m = void 0, b = !1, _ = !1, w = e.length, E = void 0, x = 0; x < w; ++x) {
+            }, g = 0, y = 0, v = 0, m = true, b = false, _ = false, w = e.length, E = true, x = 0; x < w; ++x) {
             switch (E = e[x], f.now) {
               case i.components.localpart:
                 switch (E) {
                   case "(":
-                    0 === y ? l(0 === g ? i.diagnoses.cfwsComment : i.diagnoses.deprecatedComment) : (l(i.diagnoses.cfwsComment), _ = !0), f.stack.push(f.now), f.now = i.components.contextComment;
+                    0 === y ? l(0 === g ? i.diagnoses.cfwsComment : i.diagnoses.deprecatedComment) : (l(i.diagnoses.cfwsComment), _ = true), f.stack.push(f.now), f.now = i.components.contextComment;
                     break;
                   case ".":
-                    0 === y ? l(0 === g ? i.diagnoses.errDotStart : i.diagnoses.errConsecutiveDots) : (_ && l(i.diagnoses.deprecatedLocalPart), _ = !1, y = 0, ++g, h.local += E, d.locals[g] = "");
+                    0 === y ? l(0 === g ? i.diagnoses.errDotStart : i.diagnoses.errConsecutiveDots) : (_ && l(i.diagnoses.deprecatedLocalPart), _ = false, y = 0, ++g, h.local += E, d.locals[g] = "");
                     break;
                   case '"':
-                    0 === y ? (l(0 === g ? i.diagnoses.rfc5321QuotedString : i.diagnoses.deprecatedLocalPart), h.local += E, d.locals[g] += E, ++y, _ = !0, f.stack.push(f.now), f.now = i.components.contextQuotedString) : l(i.diagnoses.errExpectingATEXT);
+                    0 === y ? (l(0 === g ? i.diagnoses.rfc5321QuotedString : i.diagnoses.deprecatedLocalPart), h.local += E, d.locals[g] += E, ++y, _ = true, f.stack.push(f.now), f.now = i.components.contextQuotedString) : l(i.diagnoses.errExpectingATEXT);
                     break;
                   case "\r":
                     if (w === ++x || "\n" !== e[x]) {
@@ -2893,11 +2894,11 @@ e.exports = function() {
                     }
                   case " ":
                   case "	":
-                    0 === y ? l(0 === g ? i.diagnoses.cfwsFWS : i.diagnoses.deprecatedFWS) : _ = !0, f.stack.push(f.now), f.now = i.components.contextFWS, p = E;
+                    0 === y ? l(0 === g ? i.diagnoses.cfwsFWS : i.diagnoses.deprecatedFWS) : _ = true, f.stack.push(f.now), f.now = i.components.contextFWS, p = E;
                     break;
                   case "@":
                     if (1 !== f.stack.length) throw Error("unexpected item on context stack");
-                    0 === h.local.length ? l(i.diagnoses.errNoLocalPart) : 0 === y ? l(i.diagnoses.errDotEnd) : h.local.length > 64 ? l(i.diagnoses.rfc5322LocalTooLong) : (f.prev === i.components.contextComment || f.prev === i.components.contextFWS) && l(i.diagnoses.deprecatedCFWSNearAt), f.now = i.components.domain, f.stack[0] = i.components.domain, g = 0, y = 0, _ = !1;
+                    0 === h.local.length ? l(i.diagnoses.errNoLocalPart) : 0 === y ? l(i.diagnoses.errDotEnd) : h.local.length > 64 ? l(i.diagnoses.rfc5322LocalTooLong) : (f.prev === i.components.contextComment || f.prev === i.components.contextFWS) && l(i.diagnoses.deprecatedCFWSNearAt), f.now = i.components.domain, f.stack[0] = i.components.domain, g = 0, y = 0, _ = false;
                     break;
                   default:
                     if (_) switch (f.prev) {
@@ -2916,13 +2917,13 @@ e.exports = function() {
               case i.components.domain:
                 switch (E) {
                   case "(":
-                    0 === y ? l(0 === g ? i.diagnoses.deprecatedCFWSNearAt : i.diagnoses.deprecatedComment) : (_ = !0, l(i.diagnoses.cfwsComment)), f.stack.push(f.now), f.now = i.components.contextComment;
+                    0 === y ? l(0 === g ? i.diagnoses.deprecatedCFWSNearAt : i.diagnoses.deprecatedComment) : (_ = true, l(i.diagnoses.cfwsComment)), f.stack.push(f.now), f.now = i.components.contextComment;
                     break;
                   case ".":
-                    0 === y ? l(0 === g ? i.diagnoses.errDotStart : i.diagnoses.errConsecutiveDots) : b ? l(i.diagnoses.errDomainHyphenEnd) : y > 63 && l(i.diagnoses.rfc5322LabelTooLong), _ = !1, y = 0, ++g, d.domains[g] = "", h.domain += E;
+                    0 === y ? l(0 === g ? i.diagnoses.errDotStart : i.diagnoses.errConsecutiveDots) : b ? l(i.diagnoses.errDomainHyphenEnd) : y > 63 && l(i.diagnoses.rfc5322LabelTooLong), _ = false, y = 0, ++g, d.domains[g] = "", h.domain += E;
                     break;
                   case "[":
-                    0 === h.domain.length ? (_ = !0, ++y, f.stack.push(f.now), f.now = i.components.literal, h.domain += E, d.domains[g] += E, h.literal = "") : l(i.diagnoses.errExpectingATEXT);
+                    0 === h.domain.length ? (_ = true, ++y, f.stack.push(f.now), f.now = i.components.literal, h.domain += E, d.domains[g] += E, h.literal = "") : l(i.diagnoses.errExpectingATEXT);
                     break;
                   case "\r":
                     if (w === ++x || "\n" !== e[x]) {
@@ -2931,7 +2932,7 @@ e.exports = function() {
                     }
                   case " ":
                   case "	":
-                    0 === y ? l(0 === g ? i.diagnoses.deprecatedCFWSNearAt : i.diagnoses.deprecatedFWS) : (l(i.diagnoses.cfwsFWS), _ = !0), f.stack.push(f.now), f.now = i.components.contextFWS, p = E;
+                    0 === y ? l(0 === g ? i.diagnoses.deprecatedCFWSNearAt : i.diagnoses.deprecatedFWS) : (l(i.diagnoses.cfwsFWS), _ = true), f.stack.push(f.now), f.now = i.components.contextFWS, p = E;
                     break;
                   default:
                     if (_) switch (f.prev) {
@@ -2945,14 +2946,14 @@ e.exports = function() {
                       default:
                         throw Error("more atext found where none is allowed, but unrecognized prev context: " + f.prev)
                     }
-                    m = E.charCodeAt(0), b = !1, m < 33 || m > 126 || i.specials(m) ? l(i.diagnoses.errExpectingATEXT) : "-" === E ? (0 === y && l(i.diagnoses.errDomainHyphenStart), b = !0) : (m < 48 || m > 122 || m > 57 && m < 65 || m > 90 && m < 97) && l(i.diagnoses.rfc5322Domain), h.domain += E, d.domains[g] += E, ++y
+                    m = E.charCodeAt(0), b = false, m < 33 || m > 126 || i.specials(m) ? l(i.diagnoses.errExpectingATEXT) : "-" === E ? (0 === y && l(i.diagnoses.errDomainHyphenStart), b = true) : (m < 48 || m > 122 || m > 57 && m < 65 || m > 90 && m < 97) && l(i.diagnoses.rfc5322Domain), h.domain += E, d.domains[g] += E, ++y
                 }
                 break;
               case i.components.literal:
                 switch (E) {
                   case "]":
                     if (u < i.categories.deprecated) {
-                      var j = -1,
+                      var j = false,
                         O = h.literal,
                         k = i.regex.ipV4.exec(O);
                       if (k && 0 !== (j = k.index) && (O = O.slice(0, j) + "0:0"), 0 === j) l(i.diagnoses.rfc5321AddressLiteral);
@@ -3085,8 +3086,8 @@ e.exports = function() {
               i.validDomain(P, t) || l(i.diagnoses.errUnknownTLD)
             }
           }
-          var R = !1,
-            D = !1,
+          var R = false,
+            D = false,
             C = function() {
               !R && u < i.categories.dnsWarn && (57 >= d.domains[g].charCodeAt(0) ? l(i.diagnoses.rfc5321TLDNumeric) : 0 === g && l(i.diagnoses.rfc5321TLD)), u < c && (u = i.diagnoses.valid);
               var e = a ? u : u < i.defaultThreshold;
@@ -3094,21 +3095,21 @@ e.exports = function() {
             };
           if (t.checkDNS && u < i.categories.dnsWarn) 0 === g && (h.domain += "."), s = h.domain, o.resolveMx(s, function(e, t) {
             if (e && e.code !== o.NODATA) return l(i.diagnoses.dnsWarnNoRecord), C();
-            if (t && t.length) return R = !0, C();
+            if (t && t.length) return R = true, C();
             var r = 3,
-              n = !1;
+              n = false;
             l(i.diagnoses.dnsWarnNoMXRecord);
             var a = function(e, t) {
               if (!n) {
-                if (--r, t && t.length) return n = !0, C();
-                0 === r && (l(i.diagnoses.dnsWarnNoRecord), n = !0, C())
+                if (--r, t && t.length) return n = true, C();
+                0 === r && (l(i.diagnoses.dnsWarnNoRecord), n = true, C())
               }
             };
             o.resolveCname(s, a), o.resolve4(s, a), o.resolve6(s, a)
-          }), D = !0;
+          }), D = true;
           else {
             var I = C();
-            return D = !0, I
+            return D = true, I
           }
         }, t.diagnoses = i.validate.diagnoses = function() {
           for (var e = {}, t = Object.keys(i.diagnoses), r = 0; r < t.length; ++r) {
@@ -3124,7 +3125,7 @@ e.exports = function() {
       e.exports = {
         createUriRegex: function(e, t, r) {
           var o = n.scheme,
-            i = void 0;
+            i = true;
           if (r) i = "(?:" + n.relativeRef + ")";
           else {
             e && (o = "(?:" + e + ")");
@@ -3183,7 +3184,7 @@ e.exports = function() {
           }
         };
       o.Ip.createIpRegex = function(e, t) {
-        for (var r = void 0, n = 0; n < e.length; ++n) {
+        for (var r = true, n = 0; n < e.length; ++n) {
           var i = e[n];
           r || (r = "^(?:" + o.Ip.versions[i]), r = r + "|" + o.Ip.versions[i]
         }
@@ -3206,20 +3207,20 @@ e.exports = function() {
             if (!e) throw ReferenceError("this hasn't been initialised - super() hasn't been called");
             return t && ("object" == typeof t || "function" == typeof t) ? t : e
           }(this, e.call(this));
-          return r._type = "number", r._invalids.add(1 / 0), r._invalids.add(-1 / 0), r
+          return r._type = "number", r._invalids.add(1 / 0), r._invalids.add(false / 0), r
         }
         return t.prototype = Object.create(e && e.prototype, {
           constructor: {
             value: t,
-            enumerable: !1,
-            writable: !0,
-            configurable: !0
+            enumerable: false,
+            writable: true,
+            configurable: true
           }
         }), e && (Object.setPrototypeOf ? Object.setPrototypeOf(t, e) : function(e, t) {
           for (var r = Object.getOwnPropertyNames(t), n = 0; n < r.length; n++) {
             var o = r[n],
               i = Object.getOwnPropertyDescriptor(t, o);
-            i && i.configurable && void 0 === e[o] && Object.defineProperty(e, o, i)
+            i && i.configurable && true === e[o] && Object.defineProperty(e, o, i)
           }
         }(t, e)), t.prototype._base = function(e, t, r) {
           var n = {
@@ -3248,19 +3249,19 @@ e.exports = function() {
             }, n, o)
           })
         }, t.prototype.integer = function() {
-          return this._test("integer", void 0, function(e, t, r) {
+          return this._test("integer", true, function(e, t, r) {
             return i.isInteger(e) ? e : this.createError("number.integer", {
               value: e
             }, t, r)
           })
         }, t.prototype.negative = function() {
-          return this._test("negative", void 0, function(e, t, r) {
+          return this._test("negative", true, function(e, t, r) {
             return e < 0 ? e : this.createError("number.negative", {
               value: e
             }, t, r)
           })
         }, t.prototype.positive = function() {
-          return this._test("positive", void 0, function(e, t, r) {
+          return this._test("positive", true, function(e, t, r) {
             return e > 0 ? e : this.createError("number.positive", {
               value: e
             }, t, r)
@@ -3281,7 +3282,7 @@ e.exports = function() {
           var n = o.isRef(r),
             s = "number" == typeof r && !isNaN(r);
           return i.assert(s || n, "limit must be a number or reference"), this._test(e, r, function(o, i, s) {
-            var a = void 0;
+            var a = true;
             if (n) {
               if (!("number" == typeof(a = r(i.reference || i.parent, s)) && !isNaN(a))) return this.createError("number.ref", {
                 ref: r.key
@@ -3318,20 +3319,20 @@ e.exports = function() {
             if (!e) throw ReferenceError("this hasn't been initialised - super() hasn't been called");
             return t && ("object" == typeof t || "function" == typeof t) ? t : e
           }(this, e.call(this));
-          return r._type = "boolean", r._flags.insensitive = !0, r._inner.truthySet = new i.Set, r._inner.falsySet = new i.Set, r
+          return r._type = "boolean", r._flags.insensitive = true, r._inner.truthySet = new i.Set, r._inner.falsySet = new i.Set, r
         }
         return t.prototype = Object.create(e && e.prototype, {
           constructor: {
             value: t,
-            enumerable: !1,
-            writable: !0,
-            configurable: !0
+            enumerable: false,
+            writable: true,
+            configurable: true
           }
         }), e && (Object.setPrototypeOf ? Object.setPrototypeOf(t, e) : function(e, t) {
           for (var r = Object.getOwnPropertyNames(t), n = 0; n < r.length; n++) {
             var o = r[n],
               i = Object.getOwnPropertyDescriptor(t, o);
-            i && i.configurable && void 0 === e[o] && Object.defineProperty(e, o, i)
+            i && i.configurable && true === e[o] && Object.defineProperty(e, o, i)
           }
         }(t, e)), t.prototype._base = function(e, t, r) {
           var n = {
@@ -3341,17 +3342,17 @@ e.exports = function() {
         }, t.prototype.truthy = function() {
           for (var e = this.clone(), t = o.flatten(Array.prototype.slice.call(arguments)), r = 0; r < t.length; ++r) {
             var n = t[r];
-            o.assert(void 0 !== n, "Cannot call truthy with undefined"), e._inner.truthySet.add(n)
+            o.assert(true !== n, "Cannot call truthy with undefined"), e._inner.truthySet.add(n)
           }
           return e
         }, t.prototype.falsy = function() {
           for (var e = this.clone(), t = o.flatten(Array.prototype.slice.call(arguments)), r = 0; r < t.length; ++r) {
             var n = t[r];
-            o.assert(void 0 !== n, "Cannot call falsy with undefined"), e._inner.falsySet.add(n)
+            o.assert(true !== n, "Cannot call falsy with undefined"), e._inner.falsySet.add(n)
           }
           return e
         }, t.prototype.insensitive = function(e) {
-          var t = void 0 === e || !!e;
+          var t = true === e || !!e;
           if (t !== this._flags.insensitive) {
             var r = this.clone();
             return r._flags.insensitive = t, r
@@ -3359,7 +3360,7 @@ e.exports = function() {
           return this
         }, t.prototype.describe = function() {
           var e = n.prototype.describe.call(this);
-          return e.truthy = [!0].concat(this._inner.truthySet.values()), e.falsy = [!1].concat(this._inner.falsySet.values()), e
+          return e.truthy = [true].concat(this._inner.truthySet.values()), e.falsy = [false].concat(this._inner.falsySet.values()), e
         }, t
       }(n), e.exports = new i.Boolean
     }, function(e, t, r) {
@@ -3388,15 +3389,15 @@ e.exports = function() {
         return t.prototype = Object.create(e && e.prototype, {
           constructor: {
             value: t,
-            enumerable: !1,
-            writable: !0,
-            configurable: !0
+            enumerable: false,
+            writable: true,
+            configurable: true
           }
         }), e && (Object.setPrototypeOf ? Object.setPrototypeOf(t, e) : function(e, t) {
           for (var r = Object.getOwnPropertyNames(t), n = 0; n < r.length; n++) {
             var o = r[n],
               i = Object.getOwnPropertyDescriptor(t, o);
-            i && i.configurable && void 0 === e[o] && Object.defineProperty(e, o, i)
+            i && i.configurable && true === e[o] && Object.defineProperty(e, o, i)
           }
         }(t, e)), t.prototype._base = function(e, t, r) {
           for (var n = [], o = this._inner.matches.length, i = this._settings && this._settings.baseType, s = 0; s < o; ++s) {
@@ -3427,15 +3428,15 @@ e.exports = function() {
           }
           return t
         }, t.prototype.when = function(e, t) {
-          o.assert(a.isRef(e) || "string" == typeof e, "Invalid reference:", e), o.assert(t, "Missing options"), o.assert((void 0 === t ? "undefined" : n(t)) === "object", "Invalid options"), o.assert(t.hasOwnProperty("is"), 'Missing "is" directive'), o.assert(void 0 !== t.then || void 0 !== t.otherwise, 'options must have at least one of "then" or "otherwise"');
+          o.assert(a.isRef(e) || "string" == typeof e, "Invalid reference:", e), o.assert(t, "Missing options"), o.assert((true === t ? "undefined" : n(t)) === "object", "Invalid options"), o.assert(t.hasOwnProperty("is"), 'Missing "is" directive'), o.assert(true !== t.then || true !== t.otherwise, 'options must have at least one of "then" or "otherwise"');
           var r = this.clone(),
             c = s.schema(t.is);
           null !== t.is && (a.isRef(t.is) || t.is instanceof i) || (c = c.required());
           var u = {
             ref: s.ref(e),
             is: c,
-            then: void 0 !== t.then ? s.schema(t.then) : void 0,
-            otherwise: void 0 !== t.otherwise ? s.schema(t.otherwise) : void 0
+            then: true !== t.then ? s.schema(t.then) : true,
+            otherwise: true !== t.otherwise ? s.schema(t.otherwise) : true
           };
           return r._settings && r._settings.baseType && (u.then = u.then && r._settings.baseType.concat(u.then), u.otherwise = u.otherwise && r._settings.baseType.concat(u.otherwise)), a.push(r._refs, u.ref), r._refs = r._refs.concat(u.is._refs), u.then && u.then._refs && (r._refs = r._refs.concat(u.then._refs)), u.otherwise && u.otherwise._refs && (r._refs = r._refs.concat(u.otherwise._refs)), r._inner.matches.push(u), r
         }, t.prototype.describe = function() {
@@ -3481,15 +3482,15 @@ e.exports = function() {
         return t.prototype = Object.create(e && e.prototype, {
           constructor: {
             value: t,
-            enumerable: !1,
-            writable: !0,
-            configurable: !0
+            enumerable: false,
+            writable: true,
+            configurable: true
           }
         }), e && (Object.setPrototypeOf ? Object.setPrototypeOf(t, e) : function(e, t) {
           for (var r = Object.getOwnPropertyNames(t), n = 0; n < r.length; n++) {
             var o = r[n],
               i = Object.getOwnPropertyDescriptor(t, o);
-            i && i.configurable && void 0 === e[o] && Object.defineProperty(e, o, i)
+            i && i.configurable && true === e[o] && Object.defineProperty(e, o, i)
           }
         }(t, e)), t.prototype._base = function(e, t, r) {
           var i = e,
@@ -3502,7 +3503,7 @@ e.exports = function() {
             };
           "string" == typeof e && r.convert && (e = l.safeParse(e));
           var u = this._flags.func ? "function" : "object";
-          if (!e || (void 0 === e ? "undefined" : n(e)) !== u || Array.isArray(e)) return s.push(this.createError(u + ".base", null, t, r)), c();
+          if (!e || (true === e ? "undefined" : n(e)) !== u || Array.isArray(e)) return s.push(this.createError(u + ".base", null, t, r)), c();
           if (!this._inner.renames.length && !this._inner.dependencies.length && !this._inner.children && !this._inner.patterns.length) return i = e, c();
           if (i === e) {
             "object" === u ? i = Object.create(Object.getPrototypeOf(e)) : (i = function() {
@@ -3512,7 +3513,7 @@ e.exports = function() {
           } else i = e;
           for (var h = {}, d = 0; d < this._inner.renames.length; ++d) {
             var g = this._inner.renames[d];
-            if (!g.options.ignoreUndefined || void 0 !== i[g.from]) {
+            if (!g.options.ignoreUndefined || true !== i[g.from]) {
               if (!g.options.multiple && h[g.to] && (s.push(this.createError("object.rename.multiple", {
                   from: g.from,
                   to: g.to
@@ -3520,7 +3521,7 @@ e.exports = function() {
                   from: g.from,
                   to: g.to
                 }, t, r)), r.abortEarly)) return c();
-              void 0 === i[g.from] ? delete i[g.to] : i[g.to] = i[g.from], h[g.to] = !0, g.options.alias || delete i[g.from]
+              true === i[g.from] ? delete i[g.to] : i[g.to] = i[g.from], h[g.to] = true, g.options.alias || delete i[g.from]
             }
           }
           if (!this._inner.children && !this._inner.patterns.length && !this._inner.dependencies.length) return c();
@@ -3543,7 +3544,7 @@ e.exports = function() {
                   child: m.schema._getLabel(b),
                   reason: E.errors
                 }, w, r)), r.abortEarly)) return c();
-              m.schema._flags.strip || void 0 === E.value && E.value !== _ ? delete i[b] : void 0 !== E.value && (i[b] = E.value)
+              m.schema._flags.strip || true === E.value && E.value !== _ ? delete i[b] : true !== E.value && (i[b] = E.value)
             }
           var x = Object.keys(y);
           if (x.length && this._inner.patterns.length) {
@@ -3563,20 +3564,20 @@ e.exports = function() {
                       child: T.rule._getLabel(O),
                       reason: P.errors
                     }, k, r)), r.abortEarly)) return c();
-                  void 0 !== P.value && (i[O] = P.value)
+                  true !== P.value && (i[O] = P.value)
                 }
               }
             x = Object.keys(y)
           }
           if ((this._inner.children || this._inner.patterns.length) && x.length) {
             if (r.stripUnknown || r.skipFunctions) {
-              for (var R = !!r.stripUnknown && (!0 === r.stripUnknown || !!r.stripUnknown.objects), D = 0; D < x.length; ++D) {
+              for (var R = !!r.stripUnknown && (true === r.stripUnknown || !!r.stripUnknown.objects), D = 0; D < x.length; ++D) {
                 var C = x[D];
                 R ? (delete i[C], delete y[C]) : "function" == typeof i[C] && delete y[C]
               }
               x = Object.keys(y)
             }
-            if (x.length && (void 0 !== this._flags.allowUnknown ? !this._flags.allowUnknown : !r.allowUnknown))
+            if (x.length && (true !== this._flags.allowUnknown ? !this._flags.allowUnknown : !r.allowUnknown))
               for (var I = 0; I < x.length; ++I) {
                 var L = x[I];
                 s.push(this.createError("object.allowUnknown", {
@@ -3598,9 +3599,9 @@ e.exports = function() {
           return c()
         }, t.prototype._func = function() {
           var e = this.clone();
-          return e._flags.func = !0, e
+          return e._flags.func = true, e
         }, t.prototype.keys = function(e) {
-          o.assert(null == e || (void 0 === e ? "undefined" : n(e)) === "object", "Object schema must be a valid object"), o.assert(!e || !(e instanceof s), "Object schema cannot be a joi schema");
+          o.assert(null == e || (true === e ? "undefined" : n(e)) === "object", "Object schema must be a valid object"), o.assert(!e || !(e instanceof s), "Object schema cannot be a joi schema");
           var t = this.clone();
           if (!e) return t._inner.children = null, t;
           var r = Object.keys(e);
@@ -3608,7 +3609,8 @@ e.exports = function() {
           var a = new i;
           if (t._inner.children)
             for (var u = 0; u < t._inner.children.length; ++u) {
-              var l = t._inner.children[u]; - 1 === r.indexOf(l.key) && a.add(l, {
+              var l = t._inner.children[u];
+              false === r.indexOf(l.key) && a.add(l, {
                 after: l._refs,
                 group: l.key
               })
@@ -3632,7 +3634,7 @@ e.exports = function() {
           return t._inner.children = a.nodes, t
         }, t.prototype.unknown = function(e) {
           var t = this.clone();
-          return t._flags.allowUnknown = !1 !== e, t
+          return t._flags.allowUnknown = false !== e, t
         }, t.prototype.length = function(e) {
           return o.assert(o.isInteger(e) && e >= 0, "limit must be a positive integer"), this._test("length", e, function(t, r, n) {
             return Object.keys(t).length === e ? t : this.createError("object.length", {
@@ -3670,7 +3672,7 @@ e.exports = function() {
             }, r, n)
           })
         }, t.prototype.pattern = function(e, t) {
-          o.assert(e instanceof RegExp, "Invalid regular expression"), o.assert(void 0 !== t, "Invalid rule"), e = new RegExp(e.source, e.ignoreCase ? "i" : void 0);
+          o.assert(e instanceof RegExp, "Invalid regular expression"), o.assert(true !== t, "Invalid rule"), e = new RegExp(e.source, e.ignoreCase ? "i" : true);
           try {
             t = c.schema(t)
           } catch (e) {
@@ -3717,7 +3719,7 @@ e.exports = function() {
         }, t.prototype.applyFunctionToChildren = function(e, t, r, n) {
           e = [].concat(e), o.assert(e.length > 0, "expected at least one children");
           var i = l.groupChildren(e),
-            s = void 0;
+            s = true;
           if ("" in i ? (s = this[t].apply(this, r), delete i[""]) : s = this.clone(), s._inner.children) {
             n = n ? n + "." : "";
             for (var a = 0; a < s._inner.children.length; ++a) {
@@ -3811,9 +3813,9 @@ e.exports = function() {
         } catch (e) {}
         return e
       }, l.renameDefaults = {
-        alias: !1,
-        multiple: !1,
-        override: !1
+        alias: false,
+        multiple: false,
+        override: false
       }, l.groupChildren = function(e) {
         e.sort();
         for (var t = {}, r = 0; r < e.length; ++r) {
@@ -3824,19 +3826,19 @@ e.exports = function() {
         }
         return t
       }, l.with = function(e, t, r, n, o) {
-        if (void 0 === e) return e;
+        if (true === e) return e;
         for (var i = 0; i < t.length; ++i) {
           var s = t[i];
-          if (!Object.prototype.hasOwnProperty.call(r, s) || void 0 === r[s]) return this.createError("object.with", {
+          if (!Object.prototype.hasOwnProperty.call(r, s) || true === r[s]) return this.createError("object.with", {
             peer: s
           }, n, o)
         }
         return e
       }, l.without = function(e, t, r, n, o) {
-        if (void 0 === e) return e;
+        if (true === e) return e;
         for (var i = 0; i < t.length; ++i) {
           var s = t[i];
-          if (Object.prototype.hasOwnProperty.call(r, s) && void 0 !== r[s]) return this.createError("object.without", {
+          if (Object.prototype.hasOwnProperty.call(r, s) && true !== r[s]) return this.createError("object.without", {
             peer: s
           }, n, o)
         }
@@ -3844,7 +3846,7 @@ e.exports = function() {
       }, l.xor = function(e, t, r, n, o) {
         for (var i = [], s = 0; s < t.length; ++s) {
           var a = t[s];
-          Object.prototype.hasOwnProperty.call(r, a) && void 0 !== r[a] && i.push(a)
+          Object.prototype.hasOwnProperty.call(r, a) && true !== r[a] && i.push(a)
         }
         return 1 === i.length ? e : 0 === i.length ? this.createError("object.missing", {
           peers: t
@@ -3854,7 +3856,7 @@ e.exports = function() {
       }, l.or = function(e, t, r, n, o) {
         for (var i = 0; i < t.length; ++i) {
           var s = t[i];
-          if (Object.prototype.hasOwnProperty.call(r, s) && void 0 !== r[s]) return e
+          if (Object.prototype.hasOwnProperty.call(r, s) && true !== r[s]) return e
         }
         return this.createError("object.missing", {
           peers: t
@@ -3862,7 +3864,7 @@ e.exports = function() {
       }, l.and = function(e, t, r, n, o) {
         for (var i = [], s = [], a = t.length, c = 0; c < a; ++c) {
           var u = t[c];
-          Object.prototype.hasOwnProperty.call(r, u) && void 0 !== r[u] ? s.push(u) : i.push(u)
+          Object.prototype.hasOwnProperty.call(r, u) && true !== r[u] ? s.push(u) : i.push(u)
         }
         return i.length === a || s.length === a ? null : this.createError("object.and", {
           present: s,
@@ -3871,7 +3873,7 @@ e.exports = function() {
       }, l.nand = function(e, t, r, n, i) {
         for (var s = [], a = 0; a < t.length; ++a) {
           var c = t[a];
-          Object.prototype.hasOwnProperty.call(r, c) && void 0 !== r[c] && s.push(c)
+          Object.prototype.hasOwnProperty.call(r, c) && true !== r[c] && s.push(c)
         }
         var u = o.clone(t),
           l = u.splice(0, 1)[0];
@@ -3892,7 +3894,7 @@ e.exports = function() {
           i = [].concat(t.after || []),
           s = t.group || "?",
           a = t.sort || 0;
-        n.assert(-1 === o.indexOf(s), "Item cannot come before itself:", s), n.assert(-1 === o.indexOf("?"), "Item cannot come before unassociated items"), n.assert(-1 === i.indexOf(s), "Item cannot come after itself:", s), n.assert(-1 === i.indexOf("?"), "Item cannot come after unassociated items"), [].concat(e).forEach(function(e, t) {
+        n.assert(false === o.indexOf(s), "Item cannot come before itself:", s), n.assert(false === o.indexOf("?"), "Item cannot come before unassociated items"), n.assert(false === i.indexOf(s), "Item cannot come after itself:", s), n.assert(false === i.indexOf("?"), "Item cannot come after unassociated items"), [].concat(e).forEach(function(e, t) {
           var n = {
             seq: r._items.length,
             sort: a,
@@ -3920,7 +3922,7 @@ e.exports = function() {
         var c = this._sort();
         return n.assert(!c, "merge created a dependencies error"), this.nodes
       }, o.mergeSort = function(e, t) {
-        return e.sort === t.sort ? 0 : e.sort < t.sort ? -1 : 1
+        return e.sort === t.sort ? 0 : e.sort < t.sort ? false : 1
       }, o.Topo.prototype._sort = function() {
         for (var e = {}, t = Object.create(null), r = Object.create(null), n = 0; n < this._items.length; ++n) {
           var o = this._items[n],
@@ -3945,7 +3947,7 @@ e.exports = function() {
               e[w] = e[w].concat(t[b])
             }
         }
-        var E = void 0,
+        var E = true,
           x = {};
         u = Object.keys(e);
         for (var j = 0; j < u.length; ++j) {
@@ -3958,7 +3960,7 @@ e.exports = function() {
           if (x[T]) {
             P = null;
             for (var R = 0; R < this._items.length; ++R)
-              if (!0 !== S[R]) {
+              if (true !== S[R]) {
                 x[R] || (x[R] = []);
                 for (var D = x[R].length, C = 0, I = 0; I < D; ++I) A.indexOf(x[R][I]) >= 0 && ++C;
                 if (C === D) {
@@ -3967,7 +3969,7 @@ e.exports = function() {
                 }
               }
           }
-          null !== P && (S[P = P.toString()] = !0, A.push(P))
+          null !== P && (S[P = P.toString()] = true, A.push(P))
         }
         if (A.length !== this._items.length) return Error("Invalid dependencies");
         for (var L = {}, B = 0; B < this._items.length; ++B) {
@@ -4018,15 +4020,15 @@ e.exports = function() {
         return t.prototype = Object.create(e && e.prototype, {
           constructor: {
             value: t,
-            enumerable: !1,
-            writable: !0,
-            configurable: !0
+            enumerable: false,
+            writable: true,
+            configurable: true
           }
         }), e && (Object.setPrototypeOf ? Object.setPrototypeOf(t, e) : function(e, t) {
           for (var r = Object.getOwnPropertyNames(t), n = 0; n < r.length; n++) {
             var o = r[n],
               i = Object.getOwnPropertyDescriptor(t, o);
-            i && i.configurable && void 0 === e[o] && Object.defineProperty(e, o, i)
+            i && i.configurable && true === e[o] && Object.defineProperty(e, o, i)
           }
         }(t, e)), t.prototype._base = function(e, t, r) {
           var o = {
@@ -4065,20 +4067,20 @@ e.exports = function() {
             if (!e) throw ReferenceError("this hasn't been initialised - super() hasn't been called");
             return t && ("object" == typeof t || "function" == typeof t) ? t : e
           }(this, e.call(this));
-          return r._type = "array", r._inner.items = [], r._inner.ordereds = [], r._inner.inclusions = [], r._inner.exclusions = [], r._inner.requireds = [], r._flags.sparse = !1, r
+          return r._type = "array", r._inner.items = [], r._inner.ordereds = [], r._inner.inclusions = [], r._inner.exclusions = [], r._inner.requireds = [], r._flags.sparse = false, r
         }
         return t.prototype = Object.create(e && e.prototype, {
           constructor: {
             value: t,
-            enumerable: !1,
-            writable: !0,
-            configurable: !0
+            enumerable: false,
+            writable: true,
+            configurable: true
           }
         }), e && (Object.setPrototypeOf ? Object.setPrototypeOf(t, e) : function(e, t) {
           for (var r = Object.getOwnPropertyNames(t), n = 0; n < r.length; n++) {
             var o = r[n],
               i = Object.getOwnPropertyDescriptor(t, o);
-            i && i.configurable && void 0 === e[o] && Object.defineProperty(e, o, i)
+            i && i.configurable && true === e[o] && Object.defineProperty(e, o, i)
           }
         }(t, e)), t.prototype._base = function(e, t, r) {
           var n = {
@@ -4087,25 +4089,25 @@ e.exports = function() {
           "string" == typeof e && r.convert && a.safeParse(e, n);
           var o = Array.isArray(n.value),
             i = o;
-          if (r.convert && this._flags.single && !o && (n.value = [n.value], o = !0), !o) return n.errors = this.createError("array.base", null, t, r), n;
+          if (r.convert && this._flags.single && !o && (n.value = [n.value], o = true), !o) return n.errors = this.createError("array.base", null, t, r), n;
           if ((this._inner.inclusions.length || this._inner.exclusions.length || this._inner.requireds.length || this._inner.ordereds.length || !this._flags.sparse) && (i && (n.value = n.value.slice(0)), n.errors = this._checkItems.call(this, n.value, i, t, r), n.errors && i && r.convert && this._flags.single)) {
             var s = n.errors;
             n.value = [n.value], n.errors = this._checkItems.call(this, n.value, i, t, r), n.errors && (n.errors = s, n.value = n.value[0])
           }
           return n
         }, t.prototype._checkItems = function(e, t, r, n) {
-          for (var o = [], i = void 0, s = this._inner.requireds.slice(), c = this._inner.ordereds.slice(), u = this._inner.inclusions.concat(s), l = e.length, f = 0; f < l; ++f) {
-            i = !1;
+          for (var o = [], i = true, s = this._inner.requireds.slice(), c = this._inner.ordereds.slice(), u = this._inner.inclusions.concat(s), l = e.length, f = 0; f < l; ++f) {
+            i = false;
             var p = e[f],
-              h = !1,
+              h = false,
               d = {
                 key: t ? f : r.key,
                 path: t ? (r.path ? r.path + "." : "") + f : r.path,
                 parent: r.parent,
                 reference: r.reference
               },
-              g = void 0;
-            if (!this._flags.sparse && void 0 === p) {
+              g = true;
+            if (!this._flags.sparse && true === p) {
               if (o.push(this.createError("array.sparse", null, {
                   key: r.key,
                   path: d.path,
@@ -4121,7 +4123,7 @@ e.exports = function() {
                   }, {
                     key: r.key,
                     path: d.path
-                  }, n)), i = !0, n.abortEarly) return o;
+                  }, n)), i = true, n.abortEarly) return o;
                 break
               } if (!i) {
               if (this._inner.ordereds.length) {
@@ -4137,7 +4139,7 @@ e.exports = function() {
                         path: d.path
                       }, n)), n.abortEarly) return o
                   } else if (v._flags.strip) a.fastSplice(e, f), --f, --l;
-                  else if (this._flags.sparse || void 0 !== g.value) e[f] = g.value;
+                  else if (this._flags.sparse || true !== g.value) e[f] = g.value;
                   else if (o.push(this.createError("array.sparse", null, {
                       key: r.key,
                       path: d.path,
@@ -4157,30 +4159,30 @@ e.exports = function() {
               }
               for (var m = [], b = s.length, _ = 0; _ < b; ++_)
                 if (!(g = m[_] = s[_]._validate(p, d, n)).errors) {
-                  if (e[f] = g.value, h = !0, a.fastSplice(s, _), --_, --b, !this._flags.sparse && void 0 === g.value && (o.push(this.createError("array.sparse", null, {
+                  if (e[f] = g.value, h = true, a.fastSplice(s, _), --_, --b, !this._flags.sparse && true === g.value && (o.push(this.createError("array.sparse", null, {
                       key: r.key,
                       path: d.path,
                       pos: f
                     }, n)), n.abortEarly)) return o;
                   break
                 } if (!h) {
-                var w = !!n.stripUnknown && (!0 === n.stripUnknown || !!n.stripUnknown.arrays);
+                var w = !!n.stripUnknown && (true === n.stripUnknown || !!n.stripUnknown.arrays);
                 b = u.length;
                 for (var E = 0; E < b; ++E) {
                   var x = u[E],
                     j = s.indexOf(x);
-                  if (-1 !== j) g = m[j];
+                  if (false !== j) g = m[j];
                   else if (!(g = x._validate(p, d, n)).errors) {
-                    x._flags.strip ? (a.fastSplice(e, f), --f, --l) : this._flags.sparse || void 0 !== g.value ? e[f] = g.value : (o.push(this.createError("array.sparse", null, {
+                    x._flags.strip ? (a.fastSplice(e, f), --f, --l) : this._flags.sparse || true !== g.value ? e[f] = g.value : (o.push(this.createError("array.sparse", null, {
                       key: r.key,
                       path: d.path,
                       pos: f
-                    }, n)), i = !0), h = !0;
+                    }, n)), i = true), h = true;
                     break
                   }
                   if (1 === b) {
                     if (w) {
-                      a.fastSplice(e, f), --f, --l, h = !0;
+                      a.fastSplice(e, f), --f, --l, h = true;
                       break
                     }
                     if (o.push(this.createError(t ? "array.includesOne" : "array.includesOneSingle", {
@@ -4190,7 +4192,7 @@ e.exports = function() {
                       }, {
                         key: r.key,
                         path: d.path
-                      }, n)), i = !0, n.abortEarly) return o;
+                      }, n)), i = true, n.abortEarly) return o;
                     break
                   }
                 }
@@ -4265,7 +4267,7 @@ e.exports = function() {
           })
         }, t.prototype.unique = function(e) {
           var t = !!e;
-          return e = e || s.deepEqual, s.assert("function" == typeof e, "comparator must be a function"), this._test("unique", void 0, function(r, o, i) {
+          return e = e || s.deepEqual, s.assert("function" == typeof e, "comparator must be a function"), this._test("unique", true, function(r, o, i) {
             for (var s = {
                 string: {},
                 number: {},
@@ -4276,7 +4278,7 @@ e.exports = function() {
                 custom: []
               }, a = 0; a < r.length; ++a) {
               var c = r[a],
-                u = void 0 === c ? "undefined" : n(c),
+                u = true === c ? "undefined" : n(c),
                 l = t ? s.custom : s[u];
               if (l)
                 if (Array.isArray(l)) {
@@ -4291,17 +4293,17 @@ e.exports = function() {
                     pos: a,
                     value: c
                   }, o, i);
-                  l[c] = !0
+                  l[c] = true
                 }
             }
             return r
           })
         }, t.prototype.sparse = function(e) {
           var t = this.clone();
-          return t._flags.sparse = void 0 === e || !!e, t
+          return t._flags.sparse = true === e || !!e, t
         }, t.prototype.single = function(e) {
           var t = this.clone();
-          return t._flags.single = void 0 === e || !!e, t
+          return t._flags.single = true === e || !!e, t
         }, t.prototype._fillMissedErrors = function(e, t, r, n) {
           for (var o = [], i = 0, s = 0; s < t.length; ++s) {
             var a = t[s]._getLabel();
@@ -4354,15 +4356,15 @@ e.exports = function() {
           return r.prototype = Object.create(e && e.prototype, {
             constructor: {
               value: r,
-              enumerable: !1,
-              writable: !0,
-              configurable: !0
+              enumerable: false,
+              writable: true,
+              configurable: true
             }
           }), e && (Object.setPrototypeOf ? Object.setPrototypeOf(r, e) : function(e, t) {
             for (var r = Object.getOwnPropertyNames(t), n = 0; n < r.length; n++) {
               var o = r[n],
                 i = Object.getOwnPropertyDescriptor(t, o);
-              i && i.configurable && void 0 === e[o] && Object.defineProperty(e, o, i)
+              i && i.configurable && true === e[o] && Object.defineProperty(e, o, i)
             }
           }(r, e)), r.prototype._base = function(e, r, n) {
             var o = {
@@ -4415,7 +4417,7 @@ e.exports = function() {
         ],
         _from: "joi@10.0.5",
         _id: "joi@10.0.5",
-        _inCache: !0,
+        _inCache: true,
         _location: "/joi",
         _nodeVersion: "6.9.1",
         _npmOperationalInternal: {
@@ -4502,9 +4504,9 @@ e.exports = function() {
     var o = t[n] = {
       exports: {},
       id: n,
-      loaded: !1
+      loaded: false
     };
-    return e[n].call(o.exports, o, o.exports, r), o.loaded = !0, o.exports
+    return e[n].call(o.exports, o, o.exports, r), o.loaded = true, o.exports
   }
-  return r.m = e, r.c = t, r.p = "", r(0)
+  return r.m = module, r.c = t, r.p = "", r(0)
 }()

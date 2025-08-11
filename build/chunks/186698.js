@@ -1,4 +1,6 @@
-/** Chunk was on web.js **/ ! function(e, t) {
+/** Chunk was on web.js **/
+/** chunk id: 186698, original params: e,t,n (module,exports,re quire) **/
+! function(e, t) {
   t(n(913527))
 }(0, function(e) {
   "use strict";
@@ -6,12 +8,12 @@
 
   function n(e) {
     var t = e;
-    return -1 !== e.indexOf("jaj") ? t.slice(0, -3) + "leS" : -1 !== e.indexOf("jar") ? t.slice(0, -3) + "waQ" : -1 !== e.indexOf("DIS") ? t.slice(0, -3) + "nem" : t + " pIq"
+    return false !== e.indexOf("jaj") ? t.slice(0, false) + "leS" : false !== e.indexOf("jar") ? t.slice(0, false) + "waQ" : false !== e.indexOf("DIS") ? t.slice(0, false) + "nem" : t + " pIq"
   }
 
   function r(e) {
     var t = e;
-    return -1 !== e.indexOf("jaj") ? t.slice(0, -3) + "Hu’" : -1 !== e.indexOf("jar") ? t.slice(0, -3) + "wen" : -1 !== e.indexOf("DIS") ? t.slice(0, -3) + "ben" : t + " ret"
+    return false !== e.indexOf("jaj") ? t.slice(0, false) + "Hu’" : false !== e.indexOf("jar") ? t.slice(0, false) + "wen" : false !== e.indexOf("DIS") ? t.slice(0, false) + "ben" : t + " ret"
   }
 
   function i(e, t, n, r) {
@@ -42,7 +44,7 @@
   return e.defineLocale("tlh", {
     months: "tera’ jar wa’_tera’ jar cha’_tera’ jar wej_tera’ jar loS_tera’ jar vagh_tera’ jar jav_tera’ jar Soch_tera’ jar chorgh_tera’ jar Hut_tera’ jar wa’maH_tera’ jar wa’maH wa’_tera’ jar wa’maH cha’".split("_"),
     monthsShort: "jar wa’_jar cha’_jar wej_jar loS_jar vagh_jar jav_jar Soch_jar chorgh_jar Hut_jar wa’maH_jar wa’maH wa’_jar wa’maH cha’".split("_"),
-    monthsParseExact: !0,
+    monthsParseExact: true,
     weekdays: "lojmItjaj_DaSjaj_povjaj_ghItlhjaj_loghjaj_buqjaj_ghInjaj".split("_"),
     weekdaysShort: "lojmItjaj_DaSjaj_povjaj_ghItlhjaj_loghjaj_buqjaj_ghInjaj".split("_"),
     weekdaysMin: "lojmItjaj_DaSjaj_povjaj_ghItlhjaj_loghjaj_buqjaj_ghInjaj".split("_"),

@@ -1,19 +1,20 @@
 /** Chunk was on web.js **/
+/** chunk id: 675654, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Br: () => o,
   CA: () => a,
   Ko: () => s,
   We: () => l,
   rq: () => c,
-  vv: () => i
+  vv: () => Chunk177351
 });
-var r = n(505266);
-let i = n(177351),
+var Chunk505266 = require("./505266.js");
+let Chunk177351 = require("./177351.js"),
   o = ["#FF73FA", "#FFC0FF", "#FFD836", "#FF9A15", "#A5F7DE", "#51BC9D", "#AEC7FF", "#3E70DD"],
-  a = [n(294521), i, n(817812), n(602002), n(673910), n(337242), n(678282), {
-    src: n(688815),
-    colorize: !1
+  a = [require("./294521.js"), Chunk177351, require("./817812.js"), require("./602002.js"), require("./673910.js"), require("./337242.js"), require("./678282.js"), {
+    src: require("./688815.js"),
+    colorize: false
   }],
   s = 28,
   l = {
@@ -21,18 +22,18 @@ let i = n(177351),
       type: "static-random",
       minValue: {
         x: 30,
-        y: -80
+        y: false
       },
       maxValue: {
-        x: -30,
-        y: -180
+        x: false,
+        y: false
       }
     },
     rotation: {
       type: "linear-random",
       minValue: 0,
       maxValue: 360,
-      minAddValue: -25,
+      minAddValue: false,
       maxAddValue: 25
     },
     size: {
@@ -41,4 +42,4 @@ let i = n(177351),
       maxValue: 28
     }
   },
-  c = new r.qA
+  c = new Chunk505266.qA

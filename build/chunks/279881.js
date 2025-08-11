@@ -1,12 +1,13 @@
 /** Chunk was on 22988 **/
-n.d(t, {
+/** chunk id: 279881, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   I: () => s
-}), n(388685);
-var r = n(97519),
-  i = n(731965),
-  l = n(699553);
+}), require("./388685.js");
+var Chunk97519 = require("./97519.js"),
+  Chunk731965 = require("./731965.js"),
+  Chunk699553 = require("./699553.js");
 let a = new Map,
-  s = (0, r.U)((e, t) => ({
+  s = (0, Chunk97519.U)((e, t) => ({
     topGames: new Map,
     tryFetchTopGames: async n => {
       let r = t().topGames,

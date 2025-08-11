@@ -1,0 +1,170 @@
+/** Chunk was on web.js **/
+/** chunk id: 225779, original params: e,t,n (module,exports,re quire) **/
+"use strict";
+require.d(exports, {
+  DM: () => E,
+  Ey: () => b,
+  No: () => v,
+  Ry: () => T,
+  qX: () => S,
+  u3: () => I
+});
+var Chunk255367 = require("./255367.js");
+require("./73800.js");
+var Chunk120356 = require("./120356.js"),
+  o = require.n(Chunk120356),
+  Chunk873546 = require("./873546.js"),
+  Chunk481060 = require("./481060.js"),
+  Chunk626135 = require("./626135.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk388032 = require("./388032.js"),
+  Chunk240211 = require("./240211.js");
+
+function f(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+
+function _(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      f(e, t, n[t])
+    })
+  }
+  return e
+}
+
+function p(e, t) {
+  var n = Object.keys(e);
+  if (Object.getOwnPropertySymbols) {
+    var r = Object.getOwnPropertySymbols(e);
+    t && (r = r.filter(function(t) {
+      return Object.getOwnPropertyDescriptor(e, t).enumerable
+    })), n.push.apply(n, r)
+  }
+  return n
+}
+
+function h(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : p(Object(t)).forEach(function(n) {
+    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+  }), e
+}
+
+function m(e, t) {
+  if (null == e) return {};
+  var n, r, i = g(e, t);
+  if (Object.getOwnPropertySymbols) {
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+  }
+  return i
+}
+
+function g(e, t) {
+  if (null == e) return {};
+  var n, r, i = {},
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+  return i
+}
+let E = Object.freeze({
+  DEFAULT: Chunk240211.colorDefault,
+  NEUTRAL: Chunk240211.colorNeutral,
+  BRAND: Chunk240211.colorBrand,
+  WARNING: Chunk240211.colorWarning,
+  DANGER: Chunk240211.colorDanger,
+  INFO: Chunk240211.colorInfo,
+  STREAMER_MODE: Chunk240211.colorStreamerMode,
+  CUSTOM: Chunk240211.colorCustom,
+  SPOTIFY: Chunk240211.colorSpotify,
+  PLAYSTATION: Chunk240211.colorPlayStation,
+  PREMIUM_TIER_0: Chunk240211.colorPremiumTier0,
+  PREMIUM_TIER_1: Chunk240211.colorPremiumTier1,
+  PREMIUM_TIER_2: Chunk240211.colorPremiumTier2
+});
+
+function b(e) {
+  var {
+    children: t,
+    className: n,
+    minor: i = false
+  } = e, a = m(e, ["children", "className", "minor"]);
+  return <s.tEY><button{...h(_({
+      className: o()(d.button, n, {
+        [d.buttonMinor]: i
+      })
+    }, a), {
+      children: t
+    })} /></s.tEY>
+}
+
+function y(e, t) {
+  null != e && l.default.track(c.rMx.APP_NOTICE_PRIMARY_CTA_OPENED, _({
+    notice_type: e
+  }, t))
+}
+
+function O(e) {
+  null != e && l.default.track(c.rMx.APP_NOTICE_CLOSED, {
+    notice_type: e
+  })
+}
+
+function v(e) {
+  var {
+    children: t,
+    noticeType: n,
+    additionalTrackingProps: i
+  } = e, o = m(e, ["children", "noticeType", "additionalTrackingProps"]);
+  return <b{...h(_({}, o), {
+    onClick: e => {
+      null != o.onClick && o.onClick(e), y(n, i)
+    },
+    children: t
+  })} />
+}
+
+function I(e) {
+  var {
+    children: t,
+    href: n
+  } = e, i = m(e, ["children", "href"]);
+  return <s.eee{...h(_({}, i), {
+    className: d.button,
+    href: n,
+    children: t
+  })} />
+}
+
+function T(e) {
+  let {
+    onClick: t,
+    noticeType: n
+  } = e;
+  return <s.P3F focusProps={{
+      offset: 6
+    }} className={d.closeButton} onClick={() => {
+      t(), O(n)
+    }} aria-label={u.intl.string(u.t.WAI6xs)}><s.Dio size={"sm"} color={"currentColor"} className={d.closeIcon} /></s.P3F>
+}
+
+function S(e) {
+  let {
+    color: t = E.DEFAULT,
+    className: n,
+    style: i,
+    children: s
+  } = e;
+  return <div className={o()(d.notice, {
+      [d.isMobile]: a.tq
+    }, n, t)} style={null != i ? i : true}>{s}</div>
+}

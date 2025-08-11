@@ -1,12 +1,13 @@
 /** Chunk was on web.js **/
+/** chunk id: 44163, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => s
 });
-var r = n(585483),
-  i = n(5967),
-  o = n(933513),
-  a = n(981631);
+var Chunk585483 = require("./585483.js"),
+  Chunk5967 = require("./5967.js"),
+  Chunk933513 = require("./933513.js"),
+  Chunk981631 = require("./981631.js");
 let s = {
   init() {
     document.addEventListener("paste", e => {

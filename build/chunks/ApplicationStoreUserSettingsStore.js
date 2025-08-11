@@ -1,0 +1,85 @@
+/** Chunk was on web.js **/
+/** chunk id: 850840, original params: e,t,n (module,exports,re quire) **/
+"use strict";
+let r;
+require.d(exports, {
+  Z: () => h
+}), require("./539854.js");
+var i, Chunk442837 = require("./442837.js"),
+  Chunk570140 = require("./570140.js");
+
+function s(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+
+function l(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      s(e, t, n[t])
+    })
+  }
+  return e
+}
+
+function c(e, t) {
+  var n = Object.keys(e);
+  if (Object.getOwnPropertySymbols) {
+    var r = Object.getOwnPropertySymbols(e);
+    t && (r = r.filter(function(t) {
+      return Object.getOwnPropertyDescriptor(e, t).enumerable
+    })), n.push.apply(n, r)
+  }
+  return n
+}
+
+function u(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : c(Object(t)).forEach(function(n) {
+    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+  }), e
+}
+let d = {
+  hasAcceptedStoreTerms: false,
+  hasAcceptedEulaIds: []
+};
+
+function f() {
+  r.hasAcceptedStoreTerms = true
+}
+
+function _(e) {
+  let {
+    eulaId: t
+  } = e;
+  if (r.hasAcceptedEulaIds.includes(t)) returnfalse;
+  r.hasAcceptedEulaIds.push(t)
+}
+class p extends(i = Chunk442837.ZP.PersistedStore) {
+  initialize(e) {
+    r = null != e ? e : d
+  }
+  getState() {
+    return r
+  }
+  get hasAcceptedStoreTerms() {
+    return r.hasAcceptedStoreTerms
+  }
+  hasAcceptedEULA(e) {
+    return r.hasAcceptedEulaIds.includes(e)
+  }
+}
+s(p, "displayName", "ApplicationStoreUserSettingsStore"), s(p, "persistKey", "ApplicationStoreUserSettingsStore"), s(p, "migrations", [e => null == e.hasAcceptedEulaIds ? u(l({}, e), {
+  hasAcceptedEulaIds: []
+}) : e]);
+let h = new p(Chunk570140.Z, {
+  APPLICATION_STORE_ACCEPT_STORE_TERMS: f,
+  APPLICATION_STORE_ACCEPT_EULA: _
+})

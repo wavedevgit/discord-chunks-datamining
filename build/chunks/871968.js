@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 871968, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   header: "header__6e500",
   members: "members__6e500",
   memberCount: "memberCount__6e500",

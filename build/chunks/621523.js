@@ -1,9 +1,10 @@
 /** Chunk was on web.js **/
+/** chunk id: 621523, original params: e (module,exports,re quire) **/
 "use strict";
-e.exports = function(e) {
+module.exports = function(e) {
   try {
     return !!e()
   } catch (e) {
-    return !0
+    returntrue
   }
 }

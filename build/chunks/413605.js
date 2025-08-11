@@ -1,17 +1,18 @@
 /** Chunk was on web.js **/
+/** chunk id: 413605, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   $P: () => c,
   P1: () => f,
   TY: () => u,
   Tx: () => s,
   VR: () => _,
   W6: () => l,
-  wx: () => o.wx
-}), n(749958), n(997431);
-var r = n(924301),
-  i = n(131704),
-  o = n(245335);
+  wx: () => Chunk245335.wx
+}), require("./749958.js"), require("./997431.js");
+var Chunk924301 = require("./924301.js"),
+  Chunk131704 = require("./131704.js"),
+  Chunk245335 = require("./245335.js");
 
 function a(e) {
   return e.type === o.wx.GROUP_DM || null != e.channel && (0, i.bc)(e.channel.type)

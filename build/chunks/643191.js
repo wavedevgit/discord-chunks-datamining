@@ -1,33 +1,34 @@
 /** Chunk was on web.js **/
+/** chunk id: 643191, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Sv: () => o,
   mb: () => r,
   v0: () => i
-}), n(258558);
+}), require("./258558.js");
 try {
   null == Date.now && (Date.now = () => new Date().valueOf())
 } catch (e) {}
 let r = (() => {
     try {
       var e;
-      return null != (e = n.g.performance.timing.navigationStart) ? e : n.g.performance.now()
+      return null != (e = require.g.performance.timing.navigationStart) ? module : require.g.performance.now()
     } catch (e) {}
     return Date.now()
   })(),
   i = (() => {
     try {
       var e;
-      return null != (e = n.g.performance.timeOrigin) ? e : r
+      return null != (e = require.g.performance.timeOrigin) ? module : r
     } catch (e) {}
     return Date.now()
   })();
-if (null == n.g.performance.timing) try {
-  n.g.performance.timing = {
+if (null == require.g.performance.timing) try {
+  require.g.performance.timing = {
     navigationStart: r
   }
 } catch (e) {}
-if (null == n.g.performance.timeOrigin) try {
-  n.g.performance.timeOrigin = i
+if (null == require.g.performance.timeOrigin) try {
+  require.g.performance.timeOrigin = i
 } catch (e) {}
-let o = n.g.performance
+let o = require.g.performance

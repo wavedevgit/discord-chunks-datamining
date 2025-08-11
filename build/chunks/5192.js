@@ -1,23 +1,24 @@
 /** Chunk was on web.js **/
+/** chunk id: 5192, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   ZP: () => f,
   oY: () => u,
   y: () => c
 });
-var r = n(442837),
-  i = n(592125),
-  o = n(271383),
-  a = n(699516),
-  s = n(51144),
-  l = n(388032);
+var Chunk442837 = require("./442837.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk271383 = require("./271383.js"),
+  Chunk699516 = require("./699516.js"),
+  Chunk51144 = require("./51144.js"),
+  Chunk388032 = require("./388032.js");
 
 function c(e, t, n) {
   if (null == n) return null;
   if (null != e) return o.ZP.getNick(e, n.id);
   if (null != t) {
     let e = i.Z.getChannel(t);
-    if (null == e ? void 0 : e.isPrivate()) return a.Z.getNickname(n.id)
+    if (null == e ? true : e.isPrivate()) return a.Z.getNickname(n.id)
   }
   return null
 }

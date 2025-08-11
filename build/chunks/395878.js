@@ -1,13 +1,14 @@
 /** Chunk was on 75708 **/
-n.d(t, {
+/** chunk id: 395878, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   K: () => l
 });
-var i = n(475468),
-  r = n(914010),
-  s = n(585483),
-  a = n(981631);
+var Chunk475468 = require("./475468.js"),
+  Chunk914010 = require("./914010.js"),
+  Chunk585483 = require("./585483.js"),
+  Chunk981631 = require("./981631.js");
 let l = {
   binds: ["mod+shift+t"],
-  comboKeysBindGlobal: !0,
-  action: () => (null != r.Z.getGuildId() && (0, i.K)(a.ME), s.S.safeDispatch(a.CkL.TOGGLE_DM_CREATE), !1)
+  comboKeysBindGlobal: true,
+  action: () => (null != Chunk914010.Z.getGuildId() && (0, Chunk475468.K)(Chunk981631.ME), Chunk585483.S.safeDispatch(Chunk981631.CkL.TOGGLE_DM_CREATE), false)
 }

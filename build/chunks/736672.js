@@ -1,17 +1,18 @@
 /** Chunk was on 78607 **/
-n.d(t, {
+/** chunk id: 736672, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => i
 });
-var a = n(475637);
+var Chunk475637 = require("./475637.js");
 let i = {
-  ordinalNumber: (0, n(925300).Z)({
+  ordinalNumber: (0, require("./925300.js").Z)({
     matchPattern: /^(\d+)(일|번째)?/i,
     parsePattern: /\d+/i,
     valueCallback: function(e) {
       return parseInt(e, 10)
     }
   }),
-  era: (0, a.Z)({
+  era: (0, Chunk475637.Z)({
     matchPatterns: {
       narrow: /^(b\.?\s?c\.?|b\.?\s?c\.?\s?e\.?|a\.?\s?d\.?|c\.?\s?e\.?)/i,
       abbreviated: /^(b\.?\s?c\.?|b\.?\s?c\.?\s?e\.?|a\.?\s?d\.?|c\.?\s?e\.?)/i,
@@ -23,7 +24,7 @@ let i = {
     },
     defaultParseWidth: "any"
   }),
-  quarter: (0, a.Z)({
+  quarter: (0, Chunk475637.Z)({
     matchPatterns: {
       narrow: /^[1234]/i,
       abbreviated: /^q[1234]/i,
@@ -38,7 +39,7 @@ let i = {
       return e + 1
     }
   }),
-  month: (0, a.Z)({
+  month: (0, Chunk475637.Z)({
     matchPatterns: {
       narrow: /^(1[012]|[123456789])/,
       abbreviated: /^(1[012]|[123456789])월/i,
@@ -50,7 +51,7 @@ let i = {
     },
     defaultParseWidth: "any"
   }),
-  day: (0, a.Z)({
+  day: (0, Chunk475637.Z)({
     matchPatterns: {
       narrow: /^[일월화수목금토]/,
       short: /^[일월화수목금토]/,
@@ -63,7 +64,7 @@ let i = {
     },
     defaultParseWidth: "any"
   }),
-  dayPeriod: (0, a.Z)({
+  dayPeriod: (0, Chunk475637.Z)({
     matchPatterns: {
       any: /^(am|pm|오전|오후|자정|정오|아침|저녁|밤)/i
     },

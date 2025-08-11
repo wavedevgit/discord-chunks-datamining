@@ -1,5 +1,6 @@
 /** Chunk was on 22988 **/
-e.exports = {
+/** chunk id: 877248, original params: e,t,n (module,exports,require) **/
+module.exports = {
   contentWidth: "contentWidth_c6bf1b",
   header: "header_c6bf1b",
   stickyHeader: "stickyHeader_c6bf1b",

@@ -1,12 +1,13 @@
 /** Chunk was on web.js **/
+/** chunk id: 112046, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 
 function r(e, t) {
   e.prototype = Object.create(t.prototype), e.prototype.constructor = e, e.__proto__ = t
 }
-var i = n(73800),
-  o = n(606166);
-e.exports = function(e) {
+var Chunk73800 = require("./73800.js"),
+  Chunk606166 = require("./606166.js");
+module.exports = function(e) {
   function t() {
     return e.apply(this, arguments) || this
   }
@@ -16,7 +17,7 @@ e.exports = function(e) {
     return this.props.text !== e.text || this.props.editorState.getSelection().getHasFocus() !== e.editorState.getSelection().getHasFocus()
   }, n.render = function() {
     var e = o({
-        "public/DraftEditorPlaceholder/root": !0,
+        "public/DraftEditorPlaceholder/root": true,
         "public/DraftEditorPlaceholder/hasFocus": this.props.editorState.getSelection().getHasFocus()
       }),
       t = {
@@ -30,4 +31,4 @@ e.exports = function(e) {
       style: t
     }, this.props.text))
   }, t
-}(i.Component)
+}(Chunk73800.Component)

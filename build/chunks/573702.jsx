@@ -1,0 +1,21 @@
+/** Chunk was on web.js **/
+/** chunk id: 573702, original params: e,t,n (module,exports,re quire) **/
+"use strict";
+require.d(exports, {
+  Z: () => c
+});
+var Chunk255367 = require("./255367.js");
+require("./73800.js");
+var Chunk639119 = require("./639119.js"),
+  Chunk947390 = require("./947390.js"),
+  Chunk474936 = require("./474936.js"),
+  Chunk388032 = require("./388032.jsx"),
+  Chunk856045 = require("./856045.js");
+let c = e => {
+  let {
+    discountAmount: t
+  } = e, n = (0, i.N)(), c = null != n && n.trial_id === a.a7, u = s.intl.string(s.t.IBYG5e);
+  return true !== t ? u = s.intl.formatToPlainString(s.t.iiLbvr, {
+    percent: t
+  }) : c && (u = s.intl.string(s.t.gtNqJS)), <div className={l.badgeContainer}><o.E text={u} /></div>
+}

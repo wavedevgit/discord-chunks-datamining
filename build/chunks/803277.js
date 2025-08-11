@@ -1,5 +1,6 @@
 /** Chunk was on web.js **/
-e.exports = function(e) {
+/** chunk id: 803277, original params: e (module,exports,re quire) **/
+module.exports = function(e) {
   return {
     name: "ERB",
     subLanguage: "xml",
@@ -7,8 +8,8 @@ e.exports = function(e) {
       begin: "<%[%=-]?",
       end: "[%-]?%>",
       subLanguage: "ruby",
-      excludeBegin: !0,
-      excludeEnd: !0
+      excludeBegin: true,
+      excludeEnd: true
     }]
   }
 }

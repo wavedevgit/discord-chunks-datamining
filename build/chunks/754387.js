@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 754387, original params: e (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   logBlockedSelectionEvent: function() {
     return null
   },

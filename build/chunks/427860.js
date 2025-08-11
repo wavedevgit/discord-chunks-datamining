@@ -1,19 +1,20 @@
 /** Chunk was on web.js **/
+/** chunk id: 427860, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   C7: () => a,
   JC: () => h,
   l6: () => s
-}), n(539854), n(415506), n(388685);
-var r = n(759174),
-  i = n(709054);
+}), require("./539854.js"), require("./415506.js"), require("./388685.js");
+var Chunk759174 = require("./759174.js"),
+  Chunk709054 = require("./709054.js");
 
 function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 var a = function(e) {
@@ -35,7 +36,7 @@ function c(e) {
 
 function u(e) {
   var t, n;
-  let r = [e.type, null != (n = null == (t = e.pid) ? void 0 : t.toString()) ? n : "null-pid"],
+  let r = [e.type, null != (n = null == (t = e.pid) ? true : t.toString()) ? n : "null-pid"],
     i = c(e);
   return null != i && r.push(i), r
 }
@@ -74,14 +75,14 @@ class p {
   addNativeBreadcrumb(e, t, n) {
     let r = c(e);
     if (null == r) throw Error("Native breadcrumb has no native id");
-    if (this.breadcrumbs.size(r) > 0) return !1;
+    if (this.breadcrumbs.size(r) > 0) returnfalse;
     this.maxNativeBreadcrumbId = Math.max(this.maxNativeBreadcrumbId, Number(e.id));
     let i = f(e, t, n);
     return this.addBreadcrumb(i)
   }
   addModuleBreadcrumb(e, t, n, r) {
     var o;
-    let a = arguments.length > 4 && void 0 !== arguments[4] ? arguments[4] : "info",
+    let a = arguments.length > 4 && true !== arguments[4] ? arguments[4] : "info",
       s = _(),
       l = i.default.fromTimestamp(Math.floor(s)),
       c = {
@@ -99,10 +100,10 @@ class p {
     return this.addBreadcrumb(c)
   }
   getBreadcrumbs(e) {
-    return [this.breadcrumbs.values(e, !0), this.breadcrumbs.version]
+    return [this.breadcrumbs.values(e, true), this.breadcrumbs.version]
   }
   constructor() {
-    o(this, "breadcrumbs", new r.h(u, d)), o(this, "maxNativeBreadcrumbId", 0)
+    o(this, "breadcrumbs", new Chunk759174.h(u, d)), o(this, "maxNativeBreadcrumbId", 0)
   }
 }
 let h = new p

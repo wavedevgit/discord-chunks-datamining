@@ -1,21 +1,22 @@
 /** Chunk was on web.js **/
+/** chunk id: 633182, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   o: () => u
 });
-var r = n(592125),
-  i = n(594174),
-  o = n(5192),
-  a = n(51144),
-  s = n(484710),
-  l = n(388032),
-  c = n(130883);
+var Chunk592125 = require("./592125.js"),
+  Chunk594174 = require("./594174.js"),
+  Chunk5192 = require("./5192.js"),
+  Chunk51144 = require("./51144.js"),
+  Chunk484710 = require("./484710.js"),
+  Chunk388032 = require("./388032.jsx"),
+  Chunk130883 = require("./130883.js");
 
 function u(e, t, n) {
   var u;
   let d = i.default.getUser(t),
     f = r.Z.getChannel(n),
-    _ = null != (u = o.ZP.getName(null == f ? void 0 : f.guild_id, null == f ? void 0 : f.id, d)) ? u : a.ZP.getGlobalName(d);
+    _ = null != (u = o.ZP.getName(null == f ? true : f.guild_id, null == f ? true : f.id, d)) ? u : a.ZP.getGlobalName(d);
   switch (e) {
     case s.wQ.IGNORE_SUCCESS:
       return l.intl.formatToPlainString(l.t["+joqrK"], {

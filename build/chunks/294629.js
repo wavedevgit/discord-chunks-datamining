@@ -1,16 +1,17 @@
 /** Chunk was on web.js **/
+/** chunk id: 294629, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => d,
   b: () => u
 });
-var r = n(442837),
-  i = n(160404),
-  o = n(314897),
-  a = n(131951),
-  s = n(496675),
-  l = n(979651),
-  c = n(981631);
+var Chunk442837 = require("./442837.js"),
+  Chunk160404 = require("./160404.js"),
+  Chunk314897 = require("./314897.js"),
+  Chunk131951 = require("./131951.js"),
+  Chunk496675 = require("./496675.js"),
+  Chunk979651 = require("./979651.js"),
+  Chunk981631 = require("./981631.js");
 
 function u(e) {
   var t;
@@ -21,11 +22,11 @@ function u(e) {
     mediaEngineStore: d = a.Z,
     permissionStore: f = s.Z,
     impersonateStore: _ = i.Z
-  } = e, p = null != n ? u.getVoiceState(n.getGuildId(), r.getId()) : null, h = d.isSelfMute() || d.isSelfMutedTemporarily(), m = null == n ? void 0 : n.getGuildId(), g = _.isViewingRoles(m) && !f.can(c.Plq.SPEAK, n);
+  } = e, p = null != n ? u.getVoiceState(n.getGuildId(), r.getId()) : null, h = d.isSelfMute() || d.isSelfMutedTemporarily(), m = null == n ? true : n.getGuildId(), g = _.isViewingRoles(m) && !f.can(c.Plq.SPEAK, n);
   return {
     selfMute: h,
-    suppress: (null == p ? void 0 : p.suppress) || g,
-    mute: null != (t = null == p ? void 0 : p.mute) && t
+    suppress: (null == p ? true : p.suppress) || g,
+    mute: null != (t = null == p ? true : p.mute) && t
   }
 }
 

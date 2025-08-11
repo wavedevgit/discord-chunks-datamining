@@ -1,10 +1,11 @@
 /** Chunk was on web.js **/
+/** chunk id: 298552, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => s
-}), n(35282);
-var r = n(159635),
-  i = n.n(r);
+}), require("./35282.js");
+var Chunk159635 = require("./159635.js"),
+  i = require.n(Chunk159635);
 let o = /^https:\/\/(?:(?:media|images)\.discordapp\.net|(?:cdn\.discordapp\.com))\/(?:attachments|ephemeral-attachments)\/\d+\/\d+\/([A-Za-z0-9._-]*[A-Za-z0-9_-])(?:[?][a-zA-Z0-9?&=_-]*)?/;
 
 function a(e, t) {

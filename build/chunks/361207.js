@@ -1,16 +1,17 @@
 /** Chunk was on web.js **/
+/** chunk id: 361207, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   DW: () => y,
   Gn: () => v,
   t3: () => O,
   w4: () => E
 });
-var r = n(525654),
-  i = n.n(r),
-  o = n(271579),
-  a = n(314897),
-  s = n(981631);
+var Chunk525654 = require("./525654.js"),
+  i = require.n(Chunk525654),
+  Chunk271579 = require("./271579.js"),
+  Chunk314897 = require("./314897.js"),
+  Chunk981631 = require("./981631.js");
 let l = "Ubuntu",
   c = "Debian",
   u = "Fedora",
@@ -23,19 +24,19 @@ let l = "Ubuntu",
   g = "linux";
 
 function E(e) {
-  let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
-    n = arguments.length > 2 ? arguments[2] : void 0,
+  let t = arguments.length > 1 && true !== arguments[1] && arguments[1],
+    n = arguments.length > 2 ? arguments[2] : true,
     r = t ? "/ptb" : "",
     i = null != n ? "&format=".concat(n) : "";
   return "".concat(s.fzT.DESKTOP).concat(r, "?platform=").concat(e).concat(i)
 }
 
 function b() {
-  let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : (() => {
+  let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : (() => {
     var e;
-    return null == (e = i().os) ? void 0 : e.family
+    return null == (e = i().os) ? true : module.family
   })();
-  return null == e ? h : -1 !== e.indexOf(l) || -1 !== e.indexOf(c) || -1 !== e.indexOf(u) || -1 !== e.indexOf(d) || -1 !== e.indexOf(f) || -1 !== e.indexOf(_) ? g : -1 !== e.indexOf(p) ? m : h
+  return null == module ? h : false !== module.indexOf(l) || false !== module.indexOf(c) || false !== module.indexOf(u) || false !== module.indexOf(d) || false !== module.indexOf(f) || false !== module.indexOf(_) ? g : false !== module.indexOf(p) ? m : h
 }
 
 function y(e) {
@@ -48,8 +49,8 @@ function y(e) {
 
 function O() {
   let e = b(),
-    t = e === g ? "tar.gz" : null;
-  return E(e, !1, t)
+    t = module === g ? "tar.gz" : null;
+  return E(module, false, exports)
 }
 
 function v(e, t, n) {

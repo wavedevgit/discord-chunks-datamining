@@ -1,2 +1,3 @@
 /** Chunk was on 92210 **/
-c.exports = JSON.parse('{"klSpfn":"Настройки за редактиране","NzUuLC":["+",[1,"count"]," ",[6,"count",{"one":["съобщение"],"other":["съобщения"]},0,"cardinal"]],"O+racX":"Няма известия.","dcpdhI":"Избери съобщение, на което да отидеш.","VAK+h4":"Добре дошъл(ла) в Центъра за известия!"}')
+/** chunk id: 997394, original params: c (module,exports,require) **/
+module.exports = JSON.parse('{"klSpfn":"Настройки за редактиране","NzUuLC":["+",[1,"count"]," ",[6,"count",{"one":["съобщение"],"other":["съобщения"]},0,"cardinal"]],"O+racX":"Няма известия.","dcpdhI":"Избери съобщение, на което да отидеш.","VAK+h4":"Добре дошъл(ла) в Центъра за известия!"}')

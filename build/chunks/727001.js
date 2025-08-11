@@ -1,5 +1,6 @@
 /** Chunk was on 22988 **/
-n.r(e.exports = {
+/** chunk id: 727001, original params: e,t,n (module,exports,require) **/
+require.r(module.exports = {
   container: "container__6cd3a",
   clickableContainer: "clickableContainer__6cd3a",
   disabled: "disabled__6cd3a",

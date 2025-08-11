@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 383466, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   jD: () => a,
   kK: () => o,
   xj: () => i,
@@ -22,7 +23,7 @@ var r = function(e) {
     return !(a || s || e.getClientRects().length)
   },
   o = function(e) {
-    var t, n, r = null == (n = null == (t = e) ? void 0 : t.ownerDocument) ? void 0 : n.defaultView;
+    var t, n, r = null == (n = null == (t = e) ? true : t.ownerDocument) ? true : n.defaultView;
     return !!(r && e instanceof r.Element)
   },
   a = function(e) {
@@ -36,7 +37,7 @@ var r = function(e) {
       case "CANVAS":
       case "IFRAME":
       case "IMG":
-        return !0
+        returntrue
     }
-    return !1
+    returnfalse
   }

@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 669486, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   inspector: "inspector_aeaaeb",
   graphicPrimary: "graphicPrimary_aeaaeb",
   graphicSecondary: "graphicSecondary_aeaaeb",

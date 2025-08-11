@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 39472, original params: e (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   getRemovalRange: function(e, t, n, r, i) {
     var o, a = n.split(" ");
     a = a.map(function(e, t) {

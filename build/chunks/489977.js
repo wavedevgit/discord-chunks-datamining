@@ -1,17 +1,18 @@
 /** Chunk was on 1272 **/
-n.d(t, {
+/** chunk id: 489977, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => m
 });
-var r = n(570140),
-  i = n(809206),
-  l = n(317770),
-  a = n(18438),
-  o = n(378879),
-  s = n(643879),
-  c = n(350327),
-  u = n(594174),
-  d = n(74538),
-  p = n(486324);
+var Chunk570140 = require("./570140.js"),
+  Chunk809206 = require("./809206.js"),
+  Chunk317770 = require("./317770.js"),
+  Chunk18438 = require("./18438.js"),
+  Chunk378879 = require("./378879.jsx"),
+  Chunk643879 = require("./643879.js"),
+  Chunk350327 = require("./350327.js"),
+  Chunk594174 = require("./594174.js"),
+  Chunk74538 = require("./74538.js"),
+  Chunk486324 = require("./486324.js");
 let f = e => {
     let {
       image: t,
@@ -47,21 +48,21 @@ let f = e => {
     let s = u.default.getCurrentUser(),
       f = null != n ? a.g_ : c.g_,
       h = d.ZP.canUsePremiumProfileCustomization(s);
-    return d.ZP.canUsePremiumProfileCustomization(s) ? void f(l) : null == s || h ? void 0 : void(0, o.s)({
+    return d.ZP.canUsePremiumProfileCustomization(s) ? void f(l) : null == s || h ? true : void(0, o.s)({
       uploadType: p.pC.BANNER,
       imageSrc: l,
       analyticsSource: r
     })
   };
-class g extends l.Z {
+class g extends Chunk317770.Z {
   _initialize() {
-    r.Z.subscribe("PROFILE_CUSTOMIZATION_OPEN_PREVIEW_MODAL", this.maybeOpenProfilePreviewModal)
+    Chunk570140.Z.subscribe("PROFILE_CUSTOMIZATION_OPEN_PREVIEW_MODAL", this.maybeOpenProfilePreviewModal)
   }
   _terminate() {
-    r.Z.unsubscribe("PROFILE_CUSTOMIZATION_OPEN_PREVIEW_MODAL", this.maybeOpenProfilePreviewModal)
+    Chunk570140.Z.unsubscribe("PROFILE_CUSTOMIZATION_OPEN_PREVIEW_MODAL", this.maybeOpenProfilePreviewModal)
   }
   maybeOpenProfilePreviewModal(e) {
-    return e.uploadType === p.pC.AVATAR ? f(e) : e.uploadType === p.pC.BANNER ? h(e) : void 0
+    return e.uploadType === p.pC.AVATAR ? f(e) : e.uploadType === p.pC.BANNER ? h(e) : true
   }
 }
 let m = new g

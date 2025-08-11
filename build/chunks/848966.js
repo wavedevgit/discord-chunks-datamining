@@ -1,18 +1,19 @@
 /** Chunk was on web.js **/
+/** chunk id: 848966, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => _
 });
-var r = n(37258),
-  i = n(652853),
-  o = n(347328),
-  a = n(540440),
-  s = n(553375),
-  l = n(365583),
-  c = n(582546),
-  u = n(888317),
-  d = n(228168),
-  f = n(388032);
+var Chunk37258 = require("./37258.jsx"),
+  Chunk652853 = require("./652853.jsx"),
+  Chunk347328 = require("./347328.jsx"),
+  Chunk540440 = require("./540440.jsx"),
+  Chunk553375 = require("./553375.jsx"),
+  Chunk365583 = require("./365583.jsx"),
+  Chunk582546 = require("./582546.jsx"),
+  Chunk888317 = require("./888317.js"),
+  Chunk228168 = require("./228168.js"),
+  Chunk388032 = require("./388032.jsx");
 
 function _(e) {
   let {
@@ -23,7 +24,7 @@ function _(e) {
     userId: e.user.id,
     section: d.oh.ACTIVITY,
     label: f.intl.string(f.t.pD1L1t),
-    onAction: () => null == t ? void 0 : t({
+    onAction: () => null == t ? true : t({
       action: "PRESS_VIEW_ALL_ACTIVITY_MENU_ITEM"
     })
   });

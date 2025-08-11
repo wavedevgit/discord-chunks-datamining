@@ -1,10 +1,11 @@
 /** Chunk was on 1272 **/
-n.d(t, {
+/** chunk id: 96051, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => s
 });
-var r = n(570140),
-  i = n(317770),
-  l = n(117984);
+var Chunk570140 = require("./570140.js"),
+  Chunk317770 = require("./317770.js"),
+  Chunk117984 = require("./117984.js");
 
 function a(e) {
   let {
@@ -14,12 +15,12 @@ function a(e) {
   } = e;
   (0, l.oC)(t)
 }
-class o extends i.Z {
+class o extends Chunk317770.Z {
   _initialize() {
-    r.Z.subscribe("CHANNEL_DELETE", a)
+    Chunk570140.Z.subscribe("CHANNEL_DELETE", a)
   }
   _terminate() {
-    r.Z.unsubscribe("CHANNEL_DELETE", a)
+    Chunk570140.Z.unsubscribe("CHANNEL_DELETE", a)
   }
 }
 let s = new o

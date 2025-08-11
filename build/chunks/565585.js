@@ -1,5 +1,6 @@
 /** Chunk was on 82875 **/
-e.exports = {
+/** chunk id: 565585, original params: e,n,t (module,exports,require) **/
+module.exports = {
   card: "card__88264",
   lurking: "lurking__88264",
   padding: "padding__88264",

@@ -1,9 +1,10 @@
 /** Chunk was on web.js **/
+/** chunk id: 240481, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   g: () => i
 });
-var r = n(890465);
+var Chunk890465 = require("./890465.js");
 class i {
   create(e) {
     let t = this.freeTasks,

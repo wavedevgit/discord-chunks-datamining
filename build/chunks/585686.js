@@ -1,16 +1,17 @@
 /** Chunk was on web.js **/
+/** chunk id: 585686, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => i
-}), n(388685), n(642613);
-var r = n(73800);
+}), require("./388685.js"), require("./642613.js");
+var Chunk73800 = require("./73800.js");
 
 function i(e) {
   var t;
   let {
     stepConfigs: n,
     breadcrumbs: i
-  } = e, [o, a] = r.useState(null == (t = n[0]) ? void 0 : t.key), s = r.useRef(null);
+  } = e, [o, a] = r.useState(null == (t = n[0]) ? true : t.key), s = r.useRef(null);
   return r.useEffect(() => {
     s.current = o
   }, [s, o]), {
@@ -19,7 +20,7 @@ function i(e) {
     setStep: a,
     breadcrumbsData: n.filter(e => {
       var t;
-      return null != e.key && (null == e || null == (t = e.options) ? void 0 : t.useBreadcrumbLabel) != null
+      return null != e.key && (null == e || null == (t = e.options) ? true : t.useBreadcrumbLabel) != null
     }).map(e => ({
       id: e.key,
       useBreadcrumbLabel: e.options.useBreadcrumbLabel,

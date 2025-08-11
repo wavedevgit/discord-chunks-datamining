@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 125268, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   AX: () => c,
   BR: () => d,
   Bo: () => m,
@@ -12,11 +13,11 @@ n.d(t, {
   gr: () => p,
   oW: () => l
 });
-var r = n(261470),
-  i = n(544891),
-  o = n(570140),
-  a = n(984063),
-  s = n(981631);
+var Chunk261470 = require("./261470.js"),
+  Chunk544891 = require("./544891.js"),
+  Chunk570140 = require("./570140.js"),
+  Chunk984063 = require("./984063.js"),
+  Chunk981631 = require("./981631.js");
 
 function l(e, t, n, r, i) {
   o.Z.dispatch({
@@ -36,7 +37,7 @@ function c(e, t, n, r) {
       line_id: t,
       points: r
     },
-    rejectWithError: !1
+    rejectWithError: false
   })
 }
 
@@ -56,7 +57,7 @@ function d(e, t, n) {
     body: {
       emoji_hose: n
     },
-    rejectWithError: !1
+    rejectWithError: false
   })
 }
 
@@ -64,7 +65,7 @@ function f(e, t, n) {
   i.tn.del({
     url: s.ANM.SHARED_CANVAS_EMOJI_HOSE(e, t, n),
     backoff: new r.Z,
-    rejectWithError: !0
+    rejectWithError: true
   })
 }
 
@@ -102,7 +103,7 @@ function m(e) {
 }
 
 function g() {
-  o.Z.dispatch({
+  Chunk570140.Z.dispatch({
     type: "TOGGLE_OVERLAY_CANVAS"
   })
 }

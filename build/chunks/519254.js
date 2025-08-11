@@ -1,4 +1,5 @@
 /** Chunk was on web.js **/
+/** chunk id: 519254, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 var r = {
   colorBrand: "colorBrand__675aa",
@@ -22,4 +23,4 @@ var r = {
   fullWidthImage: "fullWidthImage__675aa",
   content: "content__675aa"
 };
-n.r(e.exports = r)
+require.r(module.exports = r)

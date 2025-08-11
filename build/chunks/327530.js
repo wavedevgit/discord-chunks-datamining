@@ -1,5 +1,6 @@
 /** Chunk was on 34779 **/
-n.d(t, {
+/** chunk id: 327530, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   $k: () => s,
   JD: () => h,
   MF: () => f,
@@ -26,7 +27,7 @@ let r = 8,
   p = 5,
   f = {
     origin: {
-      x: -36,
+      x: false,
       y: 7
     },
     targetWidth: 232,

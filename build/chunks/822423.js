@@ -1,17 +1,18 @@
 /** Chunk was on 41023 **/
-i.d(t, {
+/** chunk id: 822423, original params: e,t,i (module,exports,require) **/
+require.d(exports, {
   Z: () => a
 });
-var n = i(475637);
+var Chunk475637 = require("./475637.js");
 let a = {
-  ordinalNumber: (0, i(925300).Z)({
+  ordinalNumber: (0, require("./925300.js").Z)({
     matchPattern: /^\d+/i,
     parsePattern: /\d+/i,
     valueCallback: function(e) {
       return parseInt(e, 10)
     }
   }),
-  era: (0, n.Z)({
+  era: (0, Chunk475637.Z)({
     matchPatterns: {
       narrow: /^([bB]|[aA]|คศ)/i,
       abbreviated: /^([bB]\.?\s?[cC]\.?|b\.?\s?c\.?\s?e\.?|a\.?\s?d\.?|c\.?\s?e\.?|ค\.?ศ\.?)/i,
@@ -23,7 +24,7 @@ let a = {
     },
     defaultParseWidth: "any"
   }),
-  quarter: (0, n.Z)({
+  quarter: (0, Chunk475637.Z)({
     matchPatterns: {
       narrow: /^[1234]/i,
       abbreviated: /^q[1234]/i,
@@ -38,7 +39,7 @@ let a = {
       return e + 1
     }
   }),
-  month: (0, n.Z)({
+  month: (0, Chunk475637.Z)({
     matchPatterns: {
       narrow: /^(ม\.?ค\.?|ก\.?พ\.?|มี\.?ค\.?|เม\.?ย\.?|พ\.?ค\.?|มิ\.?ย\.?|ก\.?ค\.?|ส\.?ค\.?|ก\.?ย\.?|ต\.?ค\.?|พ\.?ย\.?|ธ\.?ค\.?)/i,
       abbreviated: /^(ม\.?ค\.?|ก\.?พ\.?|มี\.?ค\.?|เม\.?ย\.?|พ\.?ค\.?|มิ\.?ย\.?|ก\.?ค\.?|ส\.?ค\.?|ก\.?ย\.?|ต\.?ค\.?|พ\.?ย\.?|ธ\.?ค\.?')/i,
@@ -51,7 +52,7 @@ let a = {
     },
     defaultParseWidth: "any"
   }),
-  day: (0, n.Z)({
+  day: (0, Chunk475637.Z)({
     matchPatterns: {
       narrow: /^(อา\.?|จ\.?|อ\.?|พฤ\.?|พ\.?|ศ\.?|ส\.?)/i,
       short: /^(อา\.?|จ\.?|อ\.?|พฤ\.?|พ\.?|ศ\.?|ส\.?)/i,
@@ -65,7 +66,7 @@ let a = {
     },
     defaultParseWidth: "any"
   }),
-  dayPeriod: (0, n.Z)({
+  dayPeriod: (0, Chunk475637.Z)({
     matchPatterns: {
       any: /^(ก่อนเที่ยง|หลังเที่ยง|เที่ยงคืน|เที่ยง|(ตอน.*?)?.*(เที่ยง|เช้า|บ่าย|เย็น|กลางคืน))/i
     },

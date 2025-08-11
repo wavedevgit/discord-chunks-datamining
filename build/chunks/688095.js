@@ -1,5 +1,6 @@
 /** Chunk was on 89298 **/
-e.exports = {
+/** chunk id: 688095, original params: e,t,n (module,exports,require) **/
+module.exports = {
   recentChannelsMenu: "recentChannelsMenu__711d3",
   recentChannelsMenuHeader: "recentChannelsMenuHeader__711d3",
   guildIconWrapper: "guildIconWrapper__711d3",

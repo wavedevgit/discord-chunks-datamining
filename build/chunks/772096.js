@@ -1,28 +1,29 @@
 /** Chunk was on web.js **/
+/** chunk id: 772096, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   ZP: () => P,
   yw: () => R
-}), n(388685), n(35282), n(415506), n(49124), n(190126), n(368063), n(65234), n(111804), n(490233), n(97749), n(781311);
-var r = n(392711),
-  i = n.n(r),
-  o = n(31775),
-  a = n.n(o);
-n(711739);
-var s = n(159635),
-  l = n.n(s),
-  c = n(830121),
-  u = n(823379),
-  d = n(591759),
-  f = n(172244),
-  _ = n(571989);
+}), require("./388685.js"), require("./35282.js"), require("./415506.js"), require("./49124.js"), require("./190126.js"), require("./368063.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js"), require("./781311.js");
+var Chunk392711 = require("./392711.js"),
+  i = require.n(Chunk392711),
+  Chunk31775 = require("./31775.js"),
+  a = require.n(Chunk31775);
+require("./711739.js");
+var Chunk159635 = require("./159635.js"),
+  l = require.n(Chunk159635),
+  Chunk830121 = require("./830121.js"),
+  Chunk823379 = require("./823379.js"),
+  Chunk591759 = require("./591759.js"),
+  Chunk172244 = require("./172244.js"),
+  Chunk571989 = require("./571989.js");
 
 function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -72,16 +73,16 @@ function b(e) {
   return E.set(t, o), o
 }
 let y = ["http:", "https:", "discord:", "tel:", "sms:", "mailto:"],
-  O = [f.b.TEXT, f.b.UNDERLINE, f.b.STRONG, f.b.ITALICS, f.b.STRIKETHROUGH, f.b.INLINE_CODE, f.b.SPOILER, f.b.LINE_BREAK, f.b.TIMESTAMP],
-  v = [...O, f.b.EMOJI, f.b.CUSTOM_EMOJI],
-  I = [f.b.LIST, f.b.HEADING, f.b.BLOCK_QUOTE, f.b.SUBTEXT],
-  T = [f.b.TEXT],
-  S = [f.b.UNDERLINE, f.b.STRONG, f.b.ITALICS, f.b.STRIKETHROUGH, f.b.INLINE_CODE, f.b.SPOILER, f.b.LINE_BREAK, f.b.TIMESTAMP, f.b.EMOJI, f.b.CUSTOM_EMOJI, f.b.LIST, f.b.HEADING, f.b.BLOCK_QUOTE, f.b.SUBTEXT];
+  O = [Chunk172244.b.TEXT, Chunk172244.b.UNDERLINE, Chunk172244.b.STRONG, Chunk172244.b.ITALICS, Chunk172244.b.STRIKETHROUGH, Chunk172244.b.INLINE_CODE, Chunk172244.b.SPOILER, Chunk172244.b.LINE_BREAK, Chunk172244.b.TIMESTAMP],
+  v = [...O, Chunk172244.b.EMOJI, Chunk172244.b.CUSTOM_EMOJI],
+  I = [Chunk172244.b.LIST, Chunk172244.b.HEADING, Chunk172244.b.BLOCK_QUOTE, Chunk172244.b.SUBTEXT],
+  T = [Chunk172244.b.TEXT],
+  S = [Chunk172244.b.UNDERLINE, Chunk172244.b.STRONG, Chunk172244.b.ITALICS, Chunk172244.b.STRIKETHROUGH, Chunk172244.b.INLINE_CODE, Chunk172244.b.SPOILER, Chunk172244.b.LINE_BREAK, Chunk172244.b.TIMESTAMP, Chunk172244.b.EMOJI, Chunk172244.b.CUSTOM_EMOJI, Chunk172244.b.LIST, Chunk172244.b.HEADING, Chunk172244.b.BLOCK_QUOTE, Chunk172244.b.SUBTEXT];
 
 function A(e, t) {
-  let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : [];
+  let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : [];
   for (let r of (Array.isArray(e) || (e = [e]), e)) {
-    if (void 0 === r || !t.includes(r.type)) return null;
+    if (true === r || !t.includes(r.type)) return null;
     if (r.type === f.b.INLINE_CODE) {
       let e = [...t, ...n];
       if (null == A(r.validationChildContent, e)) return null
@@ -130,10 +131,10 @@ function N(e) {
 }
 
 function C(e) {
-  if ((0, c.wT)(e) || b(e).whitespaceSanitized !== e) return !0;
+  if ((0, c.wT)(e) || b(e).whitespaceSanitized !== e) returntrue;
   let t = d.Z.toURLSafe(e);
-  if (null == t) return !0;
-  if ("http:" !== t.protocol && "https:" !== t.protocol) return !1;
+  if (null == t) returntrue;
+  if ("http:" !== t.protocol && "https:" !== t.protocol) returnfalse;
   let n = e.split("/");
   return n.length < 3 || "" !== n[1] || d.Z.safeDecodeURIComponent(n[2]) !== n[2]
 }
@@ -178,8 +179,8 @@ let P = g(h({}, l().defaultRules.link), {
       L = (0, c.ZP)(o).length > 0 || (0, c.ZP)(s).length > 0;
     if (D || L) return u();
     let x = g(h({}, n), {
-        allowEscape: !1,
-        parseInlineCodeChildContent: !0
+        allowEscape: false,
+        parseInlineCodeChildContent: true
       }),
       M = n.allowEmojiLinks ? v : O,
       k = [...M, ...I],

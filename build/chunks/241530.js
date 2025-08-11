@@ -1,8 +1,9 @@
 /** Chunk was on 50448 **/
+/** chunk id: 241530, original params: t,r,n (module,exports,require) **/
 "use strict";
-n(220159)({
+require("./220159.js")({
   target: "Array",
-  stat: !0
+  stat: true
 }, {
-  isArray: n(884805)
+  isArray: require("./884805.js")
 })

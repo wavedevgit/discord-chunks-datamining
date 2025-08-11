@@ -1,8 +1,9 @@
 /** Chunk was on web.js **/
+/** chunk id: 755448, original params: e (module,exports,re quire) **/
 "use strict";
 var t = 30,
   n = 12;
-e.exports = function(e, r) {
+module.exports = function(e, r) {
   var i, o, a, s, l, c, u, d, f, _, p, h, m, g, E, b, y, O, v, I, T, S, A, N, C;
   i = e.state, o = e.next_in, N = e.input, a = o + (e.avail_in - 5), s = e.next_out, C = e.output, l = s - (r - e.avail_out), c = s + (e.avail_out - 257), u = i.dmax, d = i.wsize, f = i.whave, _ = i.wnext, p = i.window, h = i.hold, m = i.bits, g = i.lencode, E = i.distcode, b = (1 << i.lenbits) - 1, y = (1 << i.distbits) - 1;
   r: do

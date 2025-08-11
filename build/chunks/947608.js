@@ -1,16 +1,17 @@
 /** Chunk was on 80451 **/
+/** chunk id: 947608, original params: e,r,t (module,exports,require) **/
 "use strict";
-t(791877);
-var a = t(872715),
-  o = t(185698),
-  n = t(658538),
-  l = t(303957),
+require("./791877.js");
+var Chunk872715 = require("./872715.js"),
+  Chunk185698 = require("./185698.js"),
+  Chunk658538 = require("./658538.js"),
+  Chunk303957 = require("./303957.js"),
   i = Array.prototype,
   s = {
-    DOMTokenList: !0,
-    NodeList: !0
+    DOMTokenList: true,
+    NodeList: true
   };
-e.exports = function(e) {
+module.exports = function(e) {
   var r = e.keys;
   return e === i || n(i, e) && r === i.keys || o(s, a(e)) ? l : r
 }

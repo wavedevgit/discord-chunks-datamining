@@ -1,11 +1,12 @@
 /** Chunk was on web.js **/
+/** chunk id: 347469, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => l,
   y: () => a
-}), n(388685);
-var r = n(73800),
-  i = n(392711);
+}), require("./388685.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk392711 = require("./392711.js");
 let o = 300;
 var a = function(e) {
   return e[e.VERTICAL_TOP = 0] = "VERTICAL_TOP", e[e.VERTICAL_BOTTOM = 1] = "VERTICAL_BOTTOM", e[e.HORIZONTAL_LEFT = 2] = "HORIZONTAL_LEFT", e[e.HORIZONTAL_RIGHT = 3] = "HORIZONTAL_RIGHT", e
@@ -25,16 +26,16 @@ let l = e => {
     onElementResizeEnd: d,
     throttleDuration: f = o,
     orientation: _,
-    usePointerEvents: p = !1,
+    usePointerEvents: p = false,
     getClampedValue: h = i.clamp
-  } = e, [m, g] = r.useState(!1), E = r.useRef(0), b = r.useRef(!1), y = r.useRef(null == t ? 0 : t);
+  } = e, [m, g] = r.useState(false), E = r.useRef(0), b = r.useRef(false), y = r.useRef(null == t ? 0 : t);
   return r.useLayoutEffect(() => {
     if (!m || null == n.current) return;
 
     function e(e) {
       let t = 1 === s(_) ? e.screenX : e.screenY,
         n = 0 === _ || 2 === _,
-        r = (t - E.current) * (n ? -1 : 1);
+        r = (t - E.current) * (n ? false : 1);
       return y.current + r
     }
 
@@ -47,13 +48,13 @@ let l = e => {
         let o = e(i),
           a = t(o),
           l = 1 === s(_) ? "width" : "height";
-        n.current.style[l] = "".concat(a, "px"), b.current || (b.current = !0, null == u || u(a)), r(a, o)
+        n.current.style[l] = "".concat(a, "px"), b.current || (b.current = true, null == u || u(a)), r(a, o)
       },
       O = n => {
-        g(!1);
+        g(false);
         let r = e(n),
           i = t(r);
-        c(i, r), null == d || d(i), b.current = !1
+        c(i, r), null == d || d(i), b.current = false
       },
       v = p ? "pointerup" : "mouseup",
       I = p ? "pointermove" : "mousemove",
@@ -63,6 +64,6 @@ let l = e => {
     }
   }, [m, c, l, a, _, n, f, d, p, h, u]), r.useCallback(e => {
     let t = 1 === s(_);
-    null != n.current && (y.current = t ? n.current.offsetWidth : n.current.offsetHeight), E.current = t ? e.screenX : e.screenY, g(!0)
+    null != n.current && (y.current = t ? n.current.offsetWidth : n.current.offsetHeight), E.current = t ? e.screenX : e.screenY, g(true)
   }, [_, n])
 }

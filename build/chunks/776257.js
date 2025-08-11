@@ -1,5 +1,6 @@
 /** Chunk was on web.js **/
-e.exports = function(e) {
+/** chunk id: 776257, original params: e (module,exports,re quire) **/
+module.exports = function(e) {
   return {
     name: "Q",
     aliases: ["k", "kdb"],

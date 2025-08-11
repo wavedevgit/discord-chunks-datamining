@@ -1,13 +1,14 @@
 /** Chunk was on web.js **/
+/** chunk id: 651144, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-var r = n(511696),
-  i = n(127849),
-  o = n(587218),
+var Chunk511696 = require("./511696.js"),
+  Chunk127849 = require("./127849.js"),
+  Chunk587218 = require("./587218.js"),
   a = "__core-js_shared__",
-  s = e.exports = i[a] || o(a, {});
+  s = module.exports = Chunk127849[a] || Chunk587218(a, {});
 (s.versions || (s.versions = [])).push({
   version: "3.41.0",
-  mode: r ? "pure" : "global",
+  mode: Chunk511696 ? "pure" : "global",
   copyright: "\xa9 2014-2025 Denis Pushkarev (zloirock.ru)",
   license: "https://github.com/zloirock/core-js/blob/v3.41.0/LICENSE",
   source: "https://github.com/zloirock/core-js"

@@ -1,6 +1,7 @@
 /** Chunk was on 86915 **/
+/** chunk id: 483112, original params: e,t,n (module,exports,require) **/
 "use strict";
-e.exports = {
+module.exports = {
   container: "container__0ab2c",
   sidebarHeader: "sidebarHeader__0ab2c",
   layoutStyle: "layoutStyle__0ab2c",

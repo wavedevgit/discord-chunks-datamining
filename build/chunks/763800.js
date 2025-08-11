@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 763800, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   svgContentRight: "svgContentRight__7b484",
   svgContentLeft: "svgContentLeft__7b484",
   svgContentLines: "svgContentLines__7b484",

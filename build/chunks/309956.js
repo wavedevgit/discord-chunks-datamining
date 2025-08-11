@@ -1,22 +1,23 @@
 /** Chunk was on 45620 **/
+/** chunk id: 309956, original params: e,t,n (module,exports,require) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   B: () => g
-}), n(388685), n(539854);
-var r = n(73800),
-  l = n(114858),
-  a = n(335818),
-  i = n(822857),
-  o = n(870289),
-  s = n(501431),
-  c = n(149705),
-  u = n(215023),
-  d = n(981631);
+}), require("./388685.js"), require("./539854.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk114858 = require("./114858.js"),
+  Chunk335818 = require("./335818.js"),
+  Chunk822857 = require("./822857.js"),
+  Chunk870289 = require("./870289.js"),
+  Chunk501431 = require("./501431.js"),
+  Chunk149705 = require("./149705.js"),
+  Chunk215023 = require("./215023.js"),
+  Chunk981631 = require("./981631.js");
 let p = {
-    [u.AW.AVATAR_DECORATIONS]: a.G.AVATAR_DECORATION,
-    [u.AW.PROFILE_EFFECTS]: a.G.PROFILE_EFFECT,
-    [u.AW.NAMEPLATES]: a.G.NAMEPLATE,
-    [u.AW.BUNDLES]: a.G.BUNDLE
+    [Chunk215023.AW.AVATAR_DECORATIONS]: Chunk335818.G.AVATAR_DECORATION,
+    [Chunk215023.AW.PROFILE_EFFECTS]: Chunk335818.G.PROFILE_EFFECT,
+    [Chunk215023.AW.NAMEPLATES]: Chunk335818.G.NAMEPLATE,
+    [Chunk215023.AW.BUNDLES]: Chunk335818.G.BUNDLE
   },
   g = (e, t) => {
     let {
@@ -48,7 +49,7 @@ let p = {
         n && (O(u.f7.OUT), await C(1.1 * u.lb));
         let r = a && ![u.AW.HOME, u.AW.ORBS].includes(e) ? u.AW.CATALOG : e;
         _(r), n && O(u.f7.IN), t || S.push(d.Z5c.COLLECTIBLES_SHOP_WITH_TAB(r), {
-          shallow: !0
+          shallow: true
         }), O(u.f7.VISIBLE)
       }, [S, t, a, g, f, m, E]);
     return {

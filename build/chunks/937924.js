@@ -1,3 +1,4 @@
 /** Chunk was on 23357 **/
+/** chunk id: 937924, original params: e,t,n (module,exports,require) **/
 "use strict";
-n(515152), e.exports = n(981994).String.fromCodePoint
+require("./515152.js"), module.exports = require("./981994.js").String.fromCodePoint

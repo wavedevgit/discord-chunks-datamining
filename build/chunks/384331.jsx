@@ -1,0 +1,155 @@
+/** Chunk was on 86590 **/
+/** chunk id: 384331, original params: e,n,t (module,exports,require) **/
+require.d(exports, {
+  ForwardFailedAlertModal: () => S
+});
+var Chunk255367 = require("./255367.js"),
+  Chunk73800 = require("./73800.js"),
+  Chunk442837 = require("./442837.js"),
+  Chunk755721 = require("./755721.js"),
+  Chunk481060 = require("./481060.js"),
+  Chunk700582 = require("./700582.js"),
+  Chunk933557 = require("./933557.js"),
+  Chunk266076 = require("./266076.jsx"),
+  Chunk810123 = require("./810123.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk430824 = require("./430824.js"),
+  Chunk158776 = require("./158776.js"),
+  Chunk699516 = require("./699516.js"),
+  Chunk594174 = require("./594174.js"),
+  Chunk51144 = require("./51144.js"),
+  Chunk912332 = require("./912332.js"),
+  Chunk388032 = require("./388032.js"),
+  Chunk547754 = require("./547754.js");
+
+function x(e) {
+  let {
+    icon: n,
+    label: t
+  } = e;
+  return <div className={O.failedRow}>{n}{<o.Text className={O.label} variant={"text-md/medium"} lineClamp={1}>{t}</o.Text>}</div>
+}
+
+function _(e) {
+  let {
+    channel: n
+  } = e, t = (0, s.ZP)(n);
+  return <x icon={(0, l.jsx)(u.Z, {
+      "aria-hidden": true,
+      size: o.EFr.SIZE_32,
+      channel: n,
+      experimentLocation: "forward-failed-retry-modal"
+    })} label={t} />
+}
+
+function v(e) {
+  let {
+    user: n
+  } = e, t = b.ZP.useName(n), r = (0, i.e7)([p.Z], () => p.Z.getNickname(n.id)), c = (0, i.e7)([m.Z], () => m.Z.getStatus(n.id));
+  return <x icon={(0, l.jsx)(a.Z, {
+      "aria-hidden": true,
+      size: o.EFr.SIZE_32,
+      user: n,
+      status: c
+    })} label={null != r ? r : t} />
+}
+
+function w(e) {
+  let {
+    channel: n
+  } = e, t = (0, i.e7)([h.Z], () => h.Z.getGuild(null == n ? true : n.guild_id)), r = (0, s.ZP)(n);
+  return <x icon={(0, l.jsx)(d.Z, {
+      size: d.E.SMALL_32,
+      guild: t,
+      channel: n
+    })} label={r} />
+}
+
+function P(e) {
+  let {
+    destination: n
+  } = e, {
+    channel: t,
+    user: r
+  } = (0, i.cj)([f.Z, j.default], () => ({
+    channel: "channel" === n.type ? f.Z.getChannel(n.id) : null,
+    user: "user" === n.type ? j.default.getUser(n.id) : null
+  }));
+  return (null == t ? true : t.isGroupDM()) ? <_ channel={t} /> : null != r ? <v user={r} /> : null != t ? <w channel={t} /> : null
+}
+
+function S(e) {
+  var n, t, {
+      message: i,
+      failedDestinations: a,
+      forwardOptions: s
+    } = e,
+    u = function(e, n) {
+      if (null == e) return {};
+      var t, l, r = function(e, n) {
+        if (null == e) return {};
+        var t, l, r = {},
+          i = Object.keys(e);
+        for (l = 0; l < i.length; l++) t = i[l], n.indexOf(t) >= 0 || (r[t] = e[t]);
+        return r
+      }(e, n);
+      if (Object.getOwnPropertySymbols) {
+        var i = Object.getOwnPropertySymbols(e);
+        for (l = 0; l < i.length; l++) t = i[l], !(n.indexOf(t) >= 0) && Object.prototype.propertyIsEnumerable.call(e, t) && (r[t] = e[t])
+      }
+      return r
+    }(e, ["message", "failedDestinations", "forwardOptions"]);
+  let d = r.useCallback(() => {
+    (0, g.l8)({
+      message: i,
+      source: "retry-modal",
+      initialSelectedDestinations: a,
+      forwardOptions: s
+    })
+  }, [a, i, s]);
+  return <o.ConfirmModal{...n = function(e) {
+    for (var n = 1; n < arguments.length; n++) {
+      var t = null != arguments[n] ? arguments[n] : {},
+        l = Object.keys(t);
+      "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
+        return Object.getOwnPropertyDescriptor(t, e).enumerable
+      }))), l.forEach(function(n) {
+        var l;
+        l = t[n], n in e ? Object.defineProperty(e, n, {
+          value: l,
+          enumerable: true,
+          configurable: true,
+          writable: true
+        }) : e[n] = l
+      })
+    }
+    return e
+  }({
+    header: y.intl.string(y.t["/OPIaG"]),
+    confirmText: y.intl.string(y.t["5911LS"]),
+    cancelText: y.intl.string(y.t["ETE/oK"]),
+    confirmButtonColor: c.zx.Colors.BRAND,
+    onConfirm: d
+  }, u), t = t = {
+    children: [(0, l.jsx)(o.Text, {
+      variant: "text-md/medium",
+      children: y.intl.format(y.t.cn9vFR, {
+        count: a.length
+      })
+    }), (0, l.jsx)("div", {
+      className: O.failedDestinations,
+      children: a.map((e, n) => (0, l.jsx)(P, {
+        destination: e
+      }, n))
+    })]
+  }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(t)) : (function(e, n) {
+    var t = Object.keys(e);
+    if (Object.getOwnPropertySymbols) {
+      var l = Object.getOwnPropertySymbols(e);
+      t.push.apply(t, l)
+    }
+    return t
+  })(Object(t)).forEach(function(e) {
+    Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(t, e))
+  }), n} />
+}

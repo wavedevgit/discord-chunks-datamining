@@ -1,7 +1,8 @@
 /** Chunk was on web.js **/
+/** chunk id: 541568, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   L: () => i
 });
-var r = n(73800),
-  i = "undefined" != typeof window ? r.useLayoutEffect : r.useEffect
+var Chunk73800 = require("./73800.js"),
+  i = "undefined" != typeof window ? Chunk73800.useLayoutEffect : Chunk73800.useEffect

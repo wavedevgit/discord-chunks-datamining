@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 36344, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   layerContainer: "layerContainer_da8173",
   clickTrapContainer: "clickTrapContainer_da8173",
   trapClicks: "trapClicks_da8173",

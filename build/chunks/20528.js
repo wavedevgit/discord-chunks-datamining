@@ -1,35 +1,36 @@
 /** Chunk was on web.js **/
+/** chunk id: 20528, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => j
-}), n(388685);
-var r = n(392711),
-  i = n(846519),
-  o = n(570140),
-  a = n(872810),
-  s = n(147913),
-  l = n(458725),
-  c = n(442741),
-  u = n(695346),
-  d = n(199902),
-  f = n(314897),
-  _ = n(592125),
-  p = n(650774),
-  h = n(936349),
-  m = n(944486),
-  g = n(959457),
-  E = n(594174),
-  b = n(70956),
-  y = n(569545),
-  O = n(70722),
-  v = n(981631);
+}), require("./388685.js");
+var Chunk392711 = require("./392711.js"),
+  Chunk846519 = require("./846519.js"),
+  Chunk570140 = require("./570140.js"),
+  Chunk872810 = require("./872810.js"),
+  Chunk147913 = require("./147913.js"),
+  Chunk458725 = require("./458725.js"),
+  Chunk442741 = require("./442741.js"),
+  Chunk695346 = require("./695346.js"),
+  Chunk199902 = require("./199902.js"),
+  Chunk314897 = require("./314897.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk650774 = require("./650774.js"),
+  Chunk936349 = require("./936349.js"),
+  Chunk944486 = require("./944486.js"),
+  Chunk959457 = require("./959457.js"),
+  Chunk594174 = require("./594174.js"),
+  Chunk70956 = require("./70956.js"),
+  Chunk569545 = require("./569545.js"),
+  Chunk70722 = require("./70722.js"),
+  Chunk981631 = require("./981631.js");
 
 function I(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -45,12 +46,12 @@ function T(e) {
   }
   return e
 }
-let S = (0, r.debounce)(a.xc, 1e3),
+let S = (0, Chunk392711.debounce)(Chunk872810.xc, 1e3),
   A = {},
   N = {},
-  C = 3 * b.Z.Millis.MINUTE,
-  R = 5 * b.Z.Millis.SECOND,
-  P = 12 * b.Z.Millis.SECOND,
+  C = 3 * Chunk70956.Z.Millis.MINUTE,
+  R = 5 * Chunk70956.Z.Millis.SECOND,
+  P = 12 * Chunk70956.Z.Millis.SECOND,
   w = null;
 
 function D(e) {
@@ -64,15 +65,15 @@ function L(e) {
 }
 
 function x(e, t) {
-  if (m.Z.getVoiceChannelId() !== e) return !1;
+  if (m.Z.getVoiceChannelId() !== e) returnfalse;
   let n = _.Z.getChannel(e);
-  if (null == n || !n.isDM() && !n.isGuildStageVoice() || null != d.Z.getActiveStreamForUser(t, n.getGuildId())) return !1;
+  if (null == n || !n.isDM() && !n.isGuildStageVoice() || null != d.Z.getActiveStreamForUser(t, n.getGuildId())) returnfalse;
   let r = d.Z.getStreamForUser(t, n.getGuildId());
-  if (null == r) return !1;
+  if (null == r) returnfalse;
   let i = (0, y.V9)(r);
   return i !== w && (w = i, (0, a.rn)(r, {
-    noFocus: !0
-  }), !0)
+    noFocus: true
+  }), true)
 }
 
 function M(e, t) {
@@ -91,7 +92,7 @@ function k(e, t) {
     })
   })
 }
-class j extends s.Z {
+class j extends Chunk147913.Z {
   constructor(...e) {
     super(...e), I(this, "handleStreamWatch", e => {
       let {
@@ -100,9 +101,9 @@ class j extends s.Z {
       } = e, {
         channelId: r
       } = (0, y.my)(t), i = _.Z.getChannel(r);
-      k(t, null == i ? void 0 : i.isGuildStageVoice()), D(t), n || d.Z.getAllActiveStreams().forEach(e => {
+      k(t, null == i ? true : i.isGuildStageVoice()), D(t), n || d.Z.getAllActiveStreams().forEach(e => {
         let n = (0, y.V9)(e);
-        e.ownerId !== f.default.getId() && n !== t && (0, a.g)(n, !1)
+        e.ownerId !== f.default.getId() && n !== t && (0, a.g)(n, false)
       })
     }), I(this, "handleStreamStart", e => {
       let {
@@ -115,7 +116,7 @@ class j extends s.Z {
         guildId: r,
         channelId: t,
         ownerId: f.default.getId()
-      }), null == i ? void 0 : i.isGuildStageVoice()), this.platformHandleStreamStart(e)
+      }), null == i ? true : i.isGuildStageVoice()), this.platformHandleStreamStart(e)
     }), I(this, "handleStreamCreate", e => {
       var t;
       let {
@@ -126,7 +127,7 @@ class j extends s.Z {
         ownerId: r,
         guildId: i
       } = (0, y.my)(n);
-      if (null == i || null == r || r !== (null == (t = E.default.getCurrentUser()) ? void 0 : t.id)) return;
+      if (null == i || null == r || r !== (null == (t = E.default.getCurrentUser()) ? true : t.id)) return;
       let o = p.Z.getMemberCount(i);
       null == o || o < 2 || o > O.tB || u.eo.getSetting() && S(n)
     }), I(this, "handleStreamUpdate", e => {
@@ -141,7 +142,7 @@ class j extends s.Z {
       } = e;
       L(n), t === v.si2.STREAM_FULL && ((0, l.kr)(T({
         type: l.u.STREAM_FULL
-      }, (0, c.rT)(n))), (0, a.aP)(n, !1), this.platformShowStreamFull())
+      }, (0, c.rT)(n))), (0, a.aP)(n, false), this.platformShowStreamFull())
     }), I(this, "handleStreamClose", e => {
       let {
         streamKey: t
@@ -179,7 +180,7 @@ class j extends s.Z {
               var s;
               let t = (0, y.V9)(e),
                 n = null != (s = A[t]) ? s : new i.V7;
-              n.start(C, () => (0, a.aP)(t, !1)), A[t] = n
+              n.start(C, () => (0, a.aP)(t, false)), A[t] = n
             }
             if (o && e.state === v.jm8.ENDED) {
               D((0, y.V9)(e));
@@ -195,7 +196,7 @@ class j extends s.Z {
         channelId: t,
         region: n
       } = e, r = d.Z.getCurrentUserActiveStream();
-      (null == r ? void 0 : r.channelId) === t && M((0, y.V9)(r), n)
+      (null == r ? true : r.channelId) === t && M((0, y.V9)(r), n)
     }), I(this, "handleChannelUpdates", e => {
       let {
         channels: t

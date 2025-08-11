@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 35125, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   PA: () => d,
   Tn: () => u,
   _i: () => g,
@@ -8,13 +9,13 @@ n.d(t, {
   vp: () => p,
   y8: () => m
 });
-var r = n(367907),
-  i = n(200876),
-  o = n(430824),
-  a = n(594174);
-n(709054), n(523361);
-var s = n(981631),
-  l = n(388032);
+var Chunk367907 = require("./367907.js"),
+  Chunk200876 = require("./200876.js"),
+  Chunk430824 = require("./430824.js"),
+  Chunk594174 = require("./594174.js");
+require("./709054.js"), require("./523361.js");
+var Chunk981631 = require("./981631.js"),
+  Chunk388032 = require("./388032.js");
 
 function c(e) {
   return e
@@ -63,13 +64,13 @@ function d(e) {
 function f(e, t) {
   var n, r;
   let i = o.Z.getGuild(e),
-    a = null != (n = null == t ? void 0 : t.total_months_subscribed) ? n : 0,
+    a = null != (n = null == t ? true : t.total_months_subscribed) ? n : 0,
     s = a > 0;
   return {
     guild: i,
     totalMonthsSubscribed: a,
     showWithDuration: s,
-    isRenewal: null != (r = null == t ? void 0 : t.is_renewal) && r
+    isRenewal: null != (r = null == t ? true : t.is_renewal) && r
   }
 }
 
@@ -91,9 +92,9 @@ function _(e) {
     formatParams: {
       username: t,
       usernameHook: n,
-      guildName: null == a ? void 0 : a.name,
+      guildName: null == a ? true : a.name,
       handleGuildNameClick: r,
-      tierName: null == o ? void 0 : o.tier_name,
+      tierName: null == o ? true : o.tier_name,
       months: u
     }
   }
@@ -114,8 +115,8 @@ function p(e) {
       isRenewal: p
     } = f(o, a);
   return t = _ ? p ? l.t.OQ0OU1 : l.t["+N9bxs"] : p ? l.t.OxP1ND : l.t["6Z1E+/"], l.intl.formatToParts(t, {
-    guildName: null == u ? void 0 : u.name,
-    tierName: null == a ? void 0 : a.tier_name,
+    guildName: null == u ? true : u.name,
+    tierName: null == a ? true : a.tier_name,
     username: n,
     usernameOnClick: r,
     roleSubscriptionOnClick: i,
@@ -131,7 +132,7 @@ function m(e, t, n, i) {
   var o;
   r.ZP.trackWithMetadata(s.rMx.ROLE_SUBSCRIPTION_PURCHASE_SYSTEM_MESSAGE_CLICKED, {
     guild_id: e,
-    user_id: null == (o = a.default.getCurrentUser()) ? void 0 : o.id,
+    user_id: null == (o = a.default.getCurrentUser()) ? true : o.id,
     channel_id: t,
     message_id: n,
     role_subscription_listing_id: i
@@ -142,7 +143,7 @@ function g(e, t) {
   var n;
   return {
     guild_id: e.guild_id,
-    sender: null == (n = a.default.getCurrentUser()) ? void 0 : n.id,
+    sender: null == (n = a.default.getCurrentUser()) ? true : n.id,
     target_user: t.author.id,
     channel_id: e.id,
     message_id: t.id

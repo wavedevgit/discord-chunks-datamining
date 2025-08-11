@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 577604, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   pill: "pill_dfa8b6",
   role: "role_dfa8b6 pill_dfa8b6",
   roleFlowerStar: "roleFlowerStar_dfa8b6",

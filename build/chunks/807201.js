@@ -1,5 +1,6 @@
 /** Chunk was on 57486 **/
-e.exports = {
+/** chunk id: 807201, original params: e,t,i (module,exports,require) **/
+module.exports = {
   noScroll: "noScroll_afb566",
   container: "container_afb566 noScroll_afb566",
   sequencer: "sequencer_afb566",

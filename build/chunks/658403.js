@@ -1,8 +1,9 @@
 /** Chunk was on 33065 **/
-t.d(i, {
+/** chunk id: 658403, original params: e,i,t (module,exports,require) **/
+require.d(exports, {
   Z: () => d
 });
-var a = t(757490),
+var Chunk757490 = require("./757490.js"),
   n = ["domenica", "luned\xec", "marted\xec", "mercoled\xec", "gioved\xec", "venerd\xec", "sabato"];
 
 function o(e) {

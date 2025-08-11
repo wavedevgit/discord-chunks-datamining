@@ -1,8 +1,9 @@
 /** Chunk was on web.js **/
+/** chunk id: 836392, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-var r = n(159063),
-  i = n(65183);
-e.exports = function(e, t, n) {
+var Chunk159063 = require("./159063.js"),
+  Chunk65183 = require("./65183.js");
+module.exports = function(e, t, n) {
   var o = e.getBlockMap(),
     a = t.getStartKey(),
     s = t.getStartOffset(),

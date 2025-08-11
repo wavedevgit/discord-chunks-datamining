@@ -1,17 +1,18 @@
 /** Chunk was on web.js **/
+/** chunk id: 66999, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   $: () => u,
   Z: () => c
 });
-var r = n(442837),
-  i = n(430198),
-  o = n(592125),
-  a = n(496675),
-  s = n(981631);
+var Chunk442837 = require("./442837.js"),
+  Chunk430198 = require("./430198.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk496675 = require("./496675.js"),
+  Chunk981631 = require("./981631.js");
 let l = {
-  needSubscriptionToAccess: !1,
-  isSubscriptionGated: !1
+  needSubscriptionToAccess: false,
+  isSubscriptionGated: false
 };
 
 function c(e) {
@@ -19,15 +20,15 @@ function c(e) {
 }
 
 function u(e) {
-  let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : o.Z,
-    n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : i.Z,
-    r = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : a.Z,
+  let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : o.Z,
+    n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : i.Z,
+    r = arguments.length > 3 && true !== arguments[3] ? arguments[3] : a.Z,
     c = t.getChannel(e);
-  return (null == c ? void 0 : c.isRoleSubscriptionTemplatePreviewChannel()) ? {
-    isSubscriptionGated: !0,
-    needSubscriptionToAccess: !0
+  return (null == c ? true : c.isRoleSubscriptionTemplatePreviewChannel()) ? {
+    isSubscriptionGated: true,
+    needSubscriptionToAccess: true
   } : null != c && n.isChannelGated(c.guild_id, c.id) ? {
-    isSubscriptionGated: !0,
+    isSubscriptionGated: true,
     needSubscriptionToAccess: c.isGuildVocal() ? !r.can(s.Plq.CONNECT, c) : !r.can(s.Plq.VIEW_CHANNEL, c)
   } : l
 }

@@ -1,28 +1,29 @@
 /** Chunk was on web.js **/
+/** chunk id: 887278, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   $1: () => b,
   YT: () => v,
   pn: () => I
-}), n(415506);
-var r = n(570140),
-  i = n(923928),
-  o = n(593472),
-  a = n(594190),
-  s = n(77498),
-  l = n(594174),
-  c = n(626135),
-  u = n(358085),
-  d = n(998502),
-  f = n(789465),
-  _ = n(981631);
+}), require("./415506.js");
+var Chunk570140 = require("./570140.js"),
+  Chunk923928 = require("./923928.js"),
+  Chunk593472 = require("./593472.js"),
+  Chunk594190 = require("./594190.js"),
+  Chunk77498 = require("./77498.js"),
+  Chunk594174 = require("./594174.js"),
+  Chunk626135 = require("./626135.js"),
+  Chunk358085 = require("./358085.js"),
+  Chunk998502 = require("./998502.js"),
+  Chunk789465 = require("./789465.js"),
+  Chunk981631 = require("./981631.js");
 
 function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -64,14 +65,14 @@ let E = {
 
 function b() {
   var e;
-  return !(null === d.ZP || void 0 === d.ZP || null == (e = d.ZP.isModuleVersionAtLeast) ? void 0 : e.call(d.ZP, "discord_hook", E))
+  return !(null === Chunk998502.ZP || true === Chunk998502.ZP || null == (e = Chunk998502.ZP.isModuleVersionAtLeast) ? true : module.call(Chunk998502.ZP, "discord_hook", E))
 }
 async function y() {
-  if (!(0, u.isWindows)()) return Promise.reject(Error("Hook is only available on Windows"));
+  if (!(0, Chunk358085.isWindows)()) return Promise.reject(Error("Hook is only available on Windows"));
   if (b()) return Promise.reject(Error("Hook module is too old"));
-  await d.ZP.ensureModule("discord_hook");
-  let e = await d.ZP.requireModule("discord_hook");
-  return O(e), e
+  await Chunk998502.ZP.ensureModule("discord_hook");
+  let e = await Chunk998502.ZP.requireModule("discord_hook");
+  return O(module), module
 }
 
 function O(e) {
@@ -80,7 +81,7 @@ function O(e) {
     n = f.Z.getCurrentConfig({
       location: "edd7d3_1"
     }, {
-      autoTrackExposure: !1
+      autoTrackExposure: false
     });
   n.enableCrashReporting && (console.log("Hook: Enabling crash reporting."), t |= 1);
   let r = l.default.getCurrentUser();
@@ -90,7 +91,7 @@ function O(e) {
 function v(e, t) {
   return y().then(n => {
     var l;
-    let u = null == (l = a.ZP.getGameForPID(e)) ? void 0 : l.name,
+    let u = null == (l = a.ZP.getGameForPID(e)) ? true : l.name,
       d = s.Z.getGameByName(u),
       f = null;
     return new Promise(s => {
@@ -107,7 +108,7 @@ function v(e, t) {
           elevate: a.ZP.shouldElevateProcessForPID(e)
         });
       null == m.allowHook || m.allowHook ? (f = setTimeout(() => {
-        n.cancelAttachToProcess(e), l("Timed out waiting for hook response", !1)
+        n.cancelAttachToProcess(e), l("Timed out waiting for hook response", false)
       }, 12e4), n.attachToProcess(e, m, l), r.Z.wait(() => i.Z.clearElevatedProcess())) : s("Hook is disabled for this game")
     })
   })

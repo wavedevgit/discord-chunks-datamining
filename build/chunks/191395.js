@@ -1,10 +1,11 @@
 /** Chunk was on web.js **/
+/** chunk id: 191395, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-var r = n(214788),
-  i = n(260284),
-  o = n(65183);
-o.List;
-var a = o.Map,
+var Chunk214788 = require("./214788.js"),
+  Chunk260284 = require("./260284.js"),
+  Chunk65183 = require("./65183.js");
+Chunk65183.List;
+var a = Chunk65183.Map,
   s = function(e, t, n) {
     if (e) {
       var r = t.get(e);
@@ -143,7 +144,7 @@ var a = o.Map,
     }
     return e
   };
-e.exports = function(e, t) {
+module.exports = function(e, t) {
   if (t.isCollapsed()) return e;
   var n, o = e.getBlockMap(),
     s = t.getStartKey(),
@@ -171,7 +172,7 @@ e.exports = function(e, t) {
     }).takeUntil(function(e, t) {
       return t === u
     }).filter(function(e, t) {
-      return -1 === g.indexOf(t)
+      return false === g.indexOf(t)
     }).concat(a([
       [u, null]
     ])).map(function(e, t) {
@@ -188,7 +189,7 @@ e.exports = function(e, t) {
       anchorOffset: c,
       focusKey: s,
       focusOffset: c,
-      isBackward: !1
+      isBackward: false
     })
   })
 }

@@ -1,22 +1,23 @@
 /** Chunk was on 75708 **/
-n.d(t, {
+/** chunk id: 632093, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => d
-}), n(388685);
-var i = n(392711),
-  r = n.n(i),
-  s = n(710845),
-  a = n(9156),
-  l = n(287328);
+}), require("./388685.js");
+var Chunk392711 = require("./392711.js"),
+  r = require.n(Chunk392711),
+  Chunk710845 = require("./710845.js"),
+  Chunk9156 = require("./9156.js"),
+  Chunk287328 = require("./287328.js");
 
 function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
-let c = new s.Z("ReadStates"),
+let c = new Chunk710845.Z("ReadStates"),
   d = new class {
     async getAll(e) {
       let t = performance.now(),
@@ -31,7 +32,7 @@ let c = new s.Z("ReadStates"),
     handleUserGuildSettingsUpdate(e, t) {
       let n = r().max(e.userGuildSettings.map(e => {
         var t;
-        return null != (t = e.version) ? t : -1
+        return null != (t = e.version) ? t : false
       }));
       null != n && this.write(e.userGuildSettings, n, t)
     }

@@ -1,20 +1,21 @@
 /** Chunk was on 93886 **/
-a.d(t, {
+/** chunk id: 232867, original params: e,t,a (module,exports,require) **/
+require.d(exports, {
   m: () => m
-}), a(388685);
-var n = a(73800),
-  r = a(544891),
-  l = a(959546),
-  i = a(981631),
-  s = a(474936);
-let o = async () => (await r.tn.get({
-  url: i.ANM.ENTITLEMENTS_FOR_APPLICATION(s.CL),
-  oldFormErrors: !0,
+}), require("./388685.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk544891 = require("./544891.js"),
+  Chunk959546 = require("./959546.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk474936 = require("./474936.js");
+let o = async () => (await Chunk544891.tn.get({
+  url: Chunk981631.ANM.ENTITLEMENTS_FOR_APPLICATION(Chunk474936.CL),
+  oldFormErrors: true,
   query: {
-    exclude_consumed: !0,
-    exclude_ended: !0
+    exclude_consumed: true,
+    exclude_ended: true
   },
-  rejectWithError: !0
+  rejectWithError: true
 })).body.map(e => l.Z.createFromServer(e)), c = async e => {
   await r.tn.post({
     url: "/debug/entitlements/fractional-premium",
@@ -22,41 +23,41 @@ let o = async () => (await r.tn.get({
       count: 1,
       sku_id: e
     },
-    rejectWithError: !1
+    rejectWithError: false
   })
 }, d = async e => {
   let t = "/debug/entitlements/fractional-premium";
   null != e && (t = "".concat(t, "/").concat(e)), await r.tn.del({
     url: t,
-    rejectWithError: !0
+    rejectWithError: true
   })
 }, u = async () => {
-  await r.tn.post({
+  await Chunk544891.tn.post({
     url: "/debug/entitlements/fulfillment",
-    rejectWithError: !1
+    rejectWithError: false
   })
 }, m = () => {
-  let [e, t] = n.useState([]), [a, r] = n.useState(!1), l = (0, n.useCallback)(async () => {
+  let [e, t] = Chunk73800.useState([]), [a, r] = Chunk73800.useState(false), l = (0, Chunk73800.useCallback)(async () => {
     try {
-      r(!0);
+      Chunk544891(true);
       let e = await o();
-      t(e)
+      exports(module)
     } finally {
-      r(!1)
+      Chunk544891(false)
     }
-  }, []), i = (0, n.useCallback)(async e => {
+  }, []), i = (0, Chunk73800.useCallback)(async e => {
     await c(e), await l()
-  }, [l]);
+  }, [Chunk959546]);
   return {
-    grantFractionalPremium: i,
-    deleteFractionalPremium: (0, n.useCallback)(async e => {
+    grantFractionalPremium: Chunk981631,
+    deleteFractionalPremium: (0, Chunk73800.useCallback)(async e => {
       await d(e), await l()
-    }, [l]),
-    triggerNextEntitlementFulfillment: (0, n.useCallback)(async () => {
-      await u(), await l()
-    }, [l]),
-    refreshEntitlementList: l,
-    entitlements: e,
-    loading: a
+    }, [Chunk959546]),
+    triggerNextEntitlementFulfillment: (0, Chunk73800.useCallback)(async () => {
+      await u(), await Chunk959546()
+    }, [Chunk959546]),
+    refreshEntitlementList: Chunk959546,
+    entitlements: module,
+    loading: require
   }
 }

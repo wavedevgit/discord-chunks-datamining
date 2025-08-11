@@ -1,19 +1,20 @@
 /** Chunk was on web.js **/
+/** chunk id: 112843, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => u
 });
-var r = n(73800),
-  i = n(399606),
-  o = n(745510),
-  a = n(351780);
+var Chunk73800 = require("./73800.js"),
+  Chunk399606 = require("./399606.js"),
+  Chunk745510 = require("./745510.js"),
+  Chunk351780 = require("./351780.js");
 
 function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -34,20 +35,20 @@ let c = 7;
 function u() {
   let {
     createMultipleConfettiAt: e
-  } = r.useContext(o.h), t = (0, i.e7)([a.Z], () => a.Z.getState()), n = r.useCallback(e => ({
+  } = Chunk73800.useContext(Chunk745510.h), t = (0, Chunk399606.e7)([Chunk351780.Z], () => Chunk351780.Z.getState()), n = Chunk73800.useCallback(e => ({
     size: {
       type: "static-random",
       minValue: e.confettiSize - c,
       maxValue: e.confettiSize + c
     }
   }), []);
-  return r.useMemo(() => ({
+  return Chunk73800.useMemo(() => ({
     fire: (r, i, o) => {
       var a, s;
-      let c = (null == o ? void 0 : o.settings) != null ? l({}, t, o.settings) : t;
-      e(r, i, n(c), (null != (a = null == o ? void 0 : o.count) ? a : c.confettiCount) * (null != (s = null == o ? void 0 : o.countMultiplier) ? s : 1), {
-        sprite: null == o ? void 0 : o.sprite
+      let c = (null == o ? true : o.settings) != null ? l({}, t, o.settings) : t;
+      e(r, i, n(c), (null != (a = null == o ? true : o.count) ? a : c.confettiCount) * (null != (s = null == o ? true : o.countMultiplier) ? s : 1), {
+        sprite: null == o ? true : o.sprite
       })
     }
-  }), [e, n, t])
+  }), [module, require, exports])
 }

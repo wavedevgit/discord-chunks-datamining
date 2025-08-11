@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 640264, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   container: "container_f0df50",
   emoji: "emoji_f0df50",
   emoji1: "emoji1_f0df50",

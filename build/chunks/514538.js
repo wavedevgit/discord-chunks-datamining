@@ -1,4 +1,5 @@
 /** Chunk was on web.js **/
+/** chunk id: 514538, original params: e (module,exports,re quire) **/
 function t(e) {
   return RegExp(e.replace(/[-/\\^$*+?.()|[\]{}]/g, "\\$&"), "m")
 }
@@ -23,7 +24,7 @@ function o(e) {
 function a(...e) {
   return "(" + (o(e).capture ? "" : "?:") + e.map(e => n(e)).join("|") + ")"
 }
-e.exports = function(e) {
+module.exports = function(e) {
   let n = {
       scope: "keyword",
       match: /\b(yield|return|let|do|match|use)!/
@@ -71,10 +72,10 @@ e.exports = function(e) {
       }
     },
     h = p({
-      includeEqual: !0
+      includeEqual: true
     }),
     m = p({
-      includeEqual: !1
+      includeEqual: false
     }),
     g = function(t, n) {
       return {

@@ -1,15 +1,16 @@
 /** Chunk was on 89298 **/
-n.d(t, {
+/** chunk id: 620954, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   P: () => d,
   R: () => u
-}), n(35282);
-var i = n(13245),
-  r = n(556296),
-  o = n(237997),
-  l = n(13140),
-  a = n(145597),
-  s = n(987650),
-  c = n(981631);
+}), require("./35282.js");
+var Chunk13245 = require("./13245.js"),
+  Chunk556296 = require("./556296.js"),
+  Chunk237997 = require("./237997.js"),
+  Chunk13140 = require("./13140.js"),
+  Chunk145597 = require("./145597.js"),
+  Chunk987650 = require("./987650.js"),
+  Chunk981631 = require("./981631.js");
 
 function u(e, t) {
   return {
@@ -29,9 +30,9 @@ function u(e, t) {
             var i;
             i = n[t], t in e ? Object.defineProperty(e, t, {
               value: i,
-              enumerable: !0,
-              configurable: !0,
-              writable: !0
+              enumerable: true,
+              configurable: true,
+              writable: true
             }) : e[t] = i
           })
         }
@@ -54,6 +55,6 @@ function u(e, t) {
 }
 
 function d() {
-  let e = r.ZP.getOverlayKeybind();
-  return null != e ? (0, l.BB)(e.shortcut, !0).split(" + ") : ["???"]
+  let e = Chunk556296.ZP.getOverlayKeybind();
+  return null != module ? (0, Chunk13140.BB)(module.shortcut, true).split(" + ") : ["???"]
 }

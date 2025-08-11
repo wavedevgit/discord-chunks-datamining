@@ -1,11 +1,12 @@
 /** Chunk was on 79764 **/
-n.d(t, {
+/** chunk id: 458879, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => r
 });
-var i = n(990547),
-  s = n(881052),
-  l = n(573261),
-  a = n(981631);
+var Chunk990547 = require("./990547.js"),
+  Chunk881052 = require("./881052.js"),
+  Chunk573261 = require("./573261.js"),
+  Chunk981631 = require("./981631.js");
 let r = {
   createGuildFromTemplate: async function(e, t, n, r, o) {
     try {
@@ -18,7 +19,7 @@ let r = {
           system_channel_id: n.system_channel_id,
           roles: n.roles,
           guild_template_code: n.code,
-          staff_only: !!o || void 0
+          staff_only: !!o || true
         },
         trackedActionData: {
           event: i.NetworkActionNames.GUILD_CREATE,
@@ -27,7 +28,7 @@ let r = {
             is_community_intent: r
           }
         },
-        rejectWithError: !1
+        rejectWithError: false
       })).body
     } catch (e) {
       throw new s.Hx(e)

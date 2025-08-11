@@ -1,5 +1,6 @@
 /** Chunk was on 22988 **/
-e.exports = {
+/** chunk id: 587072, original params: e,t,n (module,exports,require) **/
+module.exports = {
   helpText: "helpText_db0ee9",
   migrationInfoBox: "migrationInfoBox_db0ee9",
   searchContainer: "searchContainer_db0ee9",

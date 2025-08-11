@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 304222, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   replyInput: "replyInput__5ba62",
   reaction: "reaction__5ba62"
 }

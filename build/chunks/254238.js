@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 254238, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   LO: () => C,
   On: () => S,
   Vv: () => I,
@@ -9,29 +10,29 @@ n.d(t, {
   ef: () => v,
   s6: () => O,
   sh: () => D
-}), n(539854), n(388685);
-var r = n(434179),
-  i = n(771649),
-  o = n(544891),
-  a = n(570140),
-  s = n(668781),
-  l = n(340332),
-  c = n(19780),
-  u = n(797258),
-  d = n(626135),
-  f = n(960048),
-  _ = n(607214),
-  p = n(258609),
-  h = n(893387),
-  m = n(981631),
-  g = n(388032);
+}), require("./539854.js"), require("./388685.js");
+var Chunk434179 = require("./434179.js"),
+  Chunk771649 = require("./771649.js"),
+  Chunk544891 = require("./544891.js"),
+  Chunk570140 = require("./570140.js"),
+  Chunk668781 = require("./668781.js"),
+  Chunk340332 = require("./340332.js"),
+  Chunk19780 = require("./19780.js"),
+  Chunk797258 = require("./797258.js"),
+  Chunk626135 = require("./626135.js"),
+  Chunk960048 = require("./960048.js"),
+  Chunk607214 = require("./607214.js"),
+  Chunk258609 = require("./258609.js"),
+  Chunk893387 = require("./893387.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk388032 = require("./388032.js");
 
 function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -52,23 +53,23 @@ function y(e, t) {
   var n, r;
   d.default.track(m.rMx.REMOTE_COMMAND_SENT, {
     command_type: e,
-    remote_platform: null == (r = u.Z.getSessionById(t)) || null == (n = r.clientInfo) ? void 0 : n.os
+    remote_platform: null == (r = u.Z.getSessionById(t)) || null == (n = r.clientInfo) ? true : n.os
   })
 }
 async function O() {
-  let e = p.Z.getAwaitingRemoteSessionInfo(),
-    t = null == e ? void 0 : e.nonce;
-  a.Z.dispatch({
+  let e = Chunk258609.Z.getAwaitingRemoteSessionInfo(),
+    t = null == module ? true : module.nonce;
+  Chunk570140.Z.dispatch({
     type: "REMOTE_SESSION_DISCONNECT"
   });
   let n = [];
-  ((null == e ? void 0 : e.type) === m.ABu.PLAYSTATION || (null == e ? void 0 : e.type) === m.ABu.PLAYSTATION_STAGING) && (null == e ? void 0 : e.commandId) != null && (null == e ? void 0 : e.deviceId) != null && n.push(w(e.type, e.deviceId, e.commandId)), null != t && n.push(N(t));
+  ((null == module ? true : module.type) === Chunk981631.ABu.PLAYSTATION || (null == module ? true : module.type) === Chunk981631.ABu.PLAYSTATION_STAGING) && (null == module ? true : module.commandId) != null && (null == module ? true : module.deviceId) != null && require.push(w(module.type, module.deviceId, module.commandId)), null != exports && require.push(N(exports));
   try {
-    await Promise.all(n)
+    await Promise.all(require)
   } catch (e) {
-    s.Z.show({
-      title: g.intl.string(g.t.LNhXcH),
-      body: g.intl.string(g.t.QnKxtL)
+    Chunk668781.Z.show({
+      title: Chunk388032.intl.string(Chunk388032.t.LNhXcH),
+      body: Chunk388032.intl.string(Chunk388032.t.QnKxtL)
     })
   }
 }
@@ -121,26 +122,26 @@ function S(e, t, n, r) {
 async function A() {
   let e;
   try {
-    let t = null != c.Z.getRTCConnectionId() ? i.o.TRANSFER_EXISTING_CALL : i.o.CREATE_NEW_CALL;
-    e = (await o.tn.post({
-      url: m.ANM.CONNECT_REQUEST_CREATE,
+    let t = null != Chunk19780.Z.getRTCConnectionId() ? Chunk771649.o.TRANSFER_EXISTING_CALL : Chunk771649.o.CREATE_NEW_CALL;
+    e = (await Chunk544891.tn.post({
+      url: Chunk981631.ANM.CONNECT_REQUEST_CREATE,
       body: {
         analytics_properties: {
-          handoff_type: t
+          handoff_type: exports
         }
       },
-      rejectWithError: !1
+      rejectWithError: false
     })).body.nonce
   } catch (e) {
-    f.Z.captureException(e)
+    Chunk960048.Z.captureException(module)
   }
-  return e
+  return module
 }
 
 function N(e) {
   return o.tn.del({
     url: m.ANM.CONNECT_REQUEST(e),
-    rejectWithError: !1
+    rejectWithError: false
   })
 }
 async function C(e) {
@@ -152,7 +153,7 @@ async function C(e) {
   try {
     t = await o.tn.get({
       url: m.ANM.CONSOLES_DEVICES(e),
-      rejectWithError: !1
+      rejectWithError: false
     })
   } catch (t) {
     throw a.Z.dispatch({
@@ -191,7 +192,7 @@ async function P(e, t, n, i) {
         guild_id: n.guild_id,
         nonce: i
       },
-      rejectWithError: !1
+      rejectWithError: false
     })
   } catch (t) {
     throw a.Z.dispatch({
@@ -220,7 +221,7 @@ async function w(e, t, n) {
   try {
     await o.tn.del({
       url: m.ANM.CONSOLES_DEVICES_COMMAND(e, t, n),
-      rejectWithError: !1
+      rejectWithError: false
     })
   } catch (r) {
     throw a.Z.dispatch({

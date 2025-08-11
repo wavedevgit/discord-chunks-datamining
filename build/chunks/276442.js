@@ -1,28 +1,29 @@
 /** Chunk was on web.js **/
+/** chunk id: 276442, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   J: () => y
 });
-var r = n(512722),
-  i = n.n(r),
-  o = n(554908),
-  a = n(639119),
-  s = n(3409),
-  l = n(626135),
-  c = n(358085),
-  u = n(987209),
-  d = n(563132),
-  f = n(409813),
-  _ = n(45572),
-  p = n(981631),
-  h = n(474936);
+var Chunk512722 = require("./512722.js"),
+  i = require.n(Chunk512722),
+  Chunk554908 = require("./554908.js"),
+  Chunk639119 = require("./639119.js"),
+  Chunk3409 = require("./3409.jsx"),
+  Chunk626135 = require("./626135.js"),
+  Chunk358085 = require("./358085.js"),
+  Chunk987209 = require("./987209.js"),
+  Chunk563132 = require("./563132.js"),
+  Chunk409813 = require("./409813.js"),
+  Chunk45572 = require("./45572.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk474936 = require("./474936.js");
 
 function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -107,7 +108,7 @@ function y(e) {
     appendSteps: [f.h8.REVIEW, f.h8.CONFIRM],
     breadcrumpSteps: r,
     currentBreadcrumpStep: I,
-    usePaymentModalStep: !0,
+    usePaymentModalStep: true,
     analyticsData: t,
     onReturn: Z,
     onComplete: e => {

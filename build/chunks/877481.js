@@ -1,28 +1,29 @@
 /** Chunk was on web.js **/
+/** chunk id: 877481, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => L
-}), n(415506), n(388685);
-var r = n(274616),
-  i = n(710845),
-  o = n(893988),
-  a = n(812967),
-  s = n(314897),
-  l = n(757266),
-  c = n(906467),
-  u = n(6132),
-  d = n(830168),
-  f = n(358085),
-  _ = n(591759),
-  p = n(998502),
-  h = n(981631);
+}), require("./415506.js"), require("./388685.js");
+var Chunk274616 = require("./274616.js"),
+  Chunk710845 = require("./710845.js"),
+  Chunk893988 = require("./893988.js"),
+  Chunk812967 = require("./812967.js"),
+  Chunk314897 = require("./314897.js"),
+  Chunk757266 = require("./757266.js"),
+  Chunk906467 = require("./906467.js"),
+  Chunk6132 = require("./6132.js"),
+  Chunk830168 = require("./830168.js"),
+  Chunk358085 = require("./358085.js"),
+  Chunk591759 = require("./591759.js"),
+  Chunk998502 = require("./998502.js"),
+  Chunk981631 = require("./981631.js");
 
 function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -55,7 +56,7 @@ function b(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let y = new i.Z("Games"),
+let y = new Chunk710845.Z("Games"),
   O = {},
   v = 0,
   I = null,
@@ -64,9 +65,9 @@ let y = new i.Z("Games"),
   A = 36e5;
 
 function N() {
-  return null != I ? Promise.resolve(I) : (0, f.isDesktop)() ? p.ZP.ensureModule("discord_game_utils").then(() => {
-    let e = p.ZP.getGameUtils();
-    return null != e && null != e.findLaunchable ? (I = e, e) : Promise.reject(Error("game utils not found"))
+  return null != I ? Promise.resolve(I) : (0, Chunk358085.isDesktop)() ? Chunk998502.ZP.ensureModule("discord_game_utils").then(() => {
+    let e = Chunk998502.ZP.getGameUtils();
+    return null != module && null != module.findLaunchable ? (I = module, module) : Promise.reject(Error("game utils not found"))
   }) : Promise.reject(Error("not desktop client"))
 }
 
@@ -89,7 +90,7 @@ function R(e) {
   }
 }
 async function P(e) {
-  if (Array.isArray(e) || (e = [e]), c.Z.isDeveloper || (e = e.filter(e => null == e.thirdPartySkus || -1 === e.thirdPartySkus.findIndex(e => {
+  if (Array.isArray(e) || (e = [e]), c.Z.isDeveloper || (e = e.filter(e => null == e.thirdPartySkus || false === e.thirdPartySkus.findIndex(e => {
       let {
         distributor: t
       } = e;
@@ -108,7 +109,7 @@ async function P(e) {
 }
 
 function w(e, t, n) {
-  let r = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : 0;
+  let r = arguments.length > 3 && true !== arguments[3] ? arguments[3] : 0;
   if (e()) return void t();
   setTimeout(() => {
     r * T <= S ? w(e, t, n, r + 1) : n()
@@ -125,7 +126,7 @@ let L = {
   waitConnected(e) {
     return new Promise(w.bind(this, () => l.Z.isConnected(e)))
   },
-  isLaunchable: e => P(C(e)).then(e => null != e).catch(() => !1),
+  isLaunchable: e => P(C(e)).then(e => null != e).catch(() => false),
   launch: e => P(C(e)).then(D),
   launchDispatchApplication(e, t, n, i, a) {
     let {
@@ -162,27 +163,27 @@ let L = {
   },
   removeShortcuts: e => (0, f.isWindows)() ? N().then(t => {
     var n, r;
-    return null != (r = null == (n = t.removeShortcuts) ? void 0 : n.call(t, e)) && r
-  }) : Promise.resolve(!1),
+    return null != (r = null == (n = t.removeShortcuts) ? true : n.call(t, e)) && r
+  }) : Promise.resolve(false),
   createShortcuts(e, t, n, r, i) {
-    if (null == i || !(0, f.isWindows)()) return Promise.resolve(!1);
+    if (null == i || !(0, f.isWindows)()) return Promise.resolve(false);
     let o = "discord:///library/".concat(r, "/launch"),
       a = "".concat(i, "\\icon.ico");
     return N().then(r => {
       var i, s;
-      return null != (s = null == (i = r.createShortcuts) ? void 0 : i.call(r, e, t, n, o, a)) && s
+      return null != (s = null == (i = r.createShortcuts) ? true : i.call(r, e, t, n, o, a)) && s
     })
   },
-  isGameLaunchable: e => P(R(e)).then(e => null != e).catch(() => !1),
+  isGameLaunchable: e => P(R(e)).then(e => null != e).catch(() => false),
   launchGame: e => l.Z.isConnected(e) ? Promise.resolve() : P(R(e)).then(D),
   isProtocolRegistered: e => N().then(t => {
     var n, r;
-    return null != (r = null == (n = t.isProtocolSchemeRegistered) ? void 0 : n.call(t, e)) && r
+    return null != (r = null == (n = t.isProtocolSchemeRegistered) ? true : n.call(t, e)) && r
   }),
   setRecentGames(e) {
     N().then(t => {
       var n;
-      return null == (n = t.setRecentGames) ? void 0 : n.call(t, e)
+      return null == (n = t.setRecentGames) ? true : n.call(t, e)
     }).catch(() => {})
   }
 }

@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 452463, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   G: () => a
 });
 var r, i = [],
@@ -14,7 +15,7 @@ var r, i = [],
       var t = 0,
         n = document.createTextNode(""),
         a = {
-          characterData: !0
+          characterData: true
         };
       new MutationObserver(function() {
         return o()

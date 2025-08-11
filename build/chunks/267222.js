@@ -1,4 +1,5 @@
 /** Chunk was on web.js **/
+/** chunk id: 267222, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 
 function r(e) {
@@ -17,17 +18,17 @@ function r(e) {
 function i(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
-var o = n(879154),
-  a = n(214788),
-  s = n(370260),
-  l = n(653192),
-  c = n(330296),
-  u = n(581079),
+var Chunk879154 = require("./879154.js"),
+  Chunk214788 = require("./214788.js"),
+  Chunk370260 = require("./370260.js"),
+  Chunk653192 = require("./653192.js"),
+  Chunk330296 = require("./330296.js"),
+  Chunk581079 = require("./581079.js"),
   d = function(e, t) {
     return {
       key: e.getKey(),
@@ -41,7 +42,7 @@ var o = n(879154),
   },
   f = function(e, t, n, i) {
     if (e instanceof o) return void n.push(d(e, t));
-    e instanceof a || u(!1);
+    e instanceof a || u(false);
     var s = e.getParentKey(),
       l = i[e.getKey()] = r({}, d(e, t), {
         children: []
@@ -84,7 +85,7 @@ var o = n(879154),
       entityMap: i
     }
   };
-e.exports = function(e) {
+module.exports = function(e) {
   var t = {
     entityMap: {},
     blocks: []

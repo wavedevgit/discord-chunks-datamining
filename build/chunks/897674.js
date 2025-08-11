@@ -1,15 +1,16 @@
 /** Chunk was on web.js **/
+/** chunk id: 897674, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => u,
   g: () => c
-}), n(388685);
-var r = n(73800),
-  i = n(442837),
-  o = n(146282),
-  a = n(327220),
-  s = n(959580),
-  l = n(371177);
+}), require("./388685.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk442837 = require("./442837.js"),
+  Chunk146282 = require("./146282.js"),
+  Chunk327220 = require("./327220.js"),
+  Chunk959580 = require("./959580.js"),
+  Chunk371177 = require("./371177.js");
 
 function c(e, t) {
   let {
@@ -21,7 +22,7 @@ function c(e, t) {
 function u(e) {
   let {
     id: t,
-    unrankedEntries: n = !1
+    unrankedEntries: n = false
   } = e, {
     feed: u,
     filters: d
@@ -29,8 +30,8 @@ function u(e) {
     feed: o.Z.getFeed(t),
     filters: o.Z.getFilters()
   })), f = r.useMemo(() => {
-    let e = n ? null == u ? void 0 : u.unranked_game_entries.map(e => e.content) : null == u ? void 0 : u.entries.map(e => e.content);
-    return null != d ? null == e ? void 0 : e.filter(e => c(d, e)) : e
+    let e = n ? null == u ? true : u.unranked_game_entries.map(e => e.content) : null == u ? true : u.entries.map(e => e.content);
+    return null != d ? null == e ? true : e.filter(e => c(d, e)) : e
   }, [u, d, n]);
   return f = (0, a.Z)(f), f = (0, s.Z)(f), f = (0, l.Z)(f)
 }

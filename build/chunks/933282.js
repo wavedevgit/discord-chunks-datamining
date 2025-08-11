@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 933282, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   featureBorder: "featureBorder__65c15",
   premiumFeatureBorder: "premiumFeatureBorder__65c15 featureBorder__65c15",
   limitedFeatureBorder: "limitedFeatureBorder__65c15 featureBorder__65c15",

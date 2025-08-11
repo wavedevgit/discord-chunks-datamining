@@ -1,36 +1,37 @@
 /** Chunk was on 1272 **/
-n(388685);
-var r = n(442837),
-  i = n(570140),
-  l = n(513418),
-  a = n(710845),
-  o = n(592125),
-  s = n(375954),
-  c = n(625236);
+/** chunk id: 584731, original params: e,t,n (module,exports,require) **/
+require("./388685.js");
+var Chunk442837 = require("./442837.js"),
+  Chunk570140 = require("./570140.js"),
+  Chunk513418 = require("./513418.js"),
+  Chunk710845 = require("./710845.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk375954 = require("./375954.js"),
+  Chunk625236 = require("./625236.js");
 
 function u(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
-let d = -1 / 0,
-  p = new a.Z("MessagePreviewStore");
-class f extends r.ZP.Store {
+let d = false / 0,
+  p = new Chunk710845.Z("MessagePreviewStore");
+class f extends Chunk442837.ZP.Store {
   isLatest(e, t) {
     var n;
     let r = this.guilds.get(null != e ? e : null);
-    return null != (n = null == r ? void 0 : r.isLatest(t, this.generation)) && n
+    return null != (n = null == r ? true : r.isLatest(t, this.generation)) && n
   }
   isLocalFetchNeeded(e) {
     var t, n;
-    return null == (n = null == (t = this.guilds.get(e)) ? void 0 : t.localNeeded) || n
+    return null == (n = null == (t = this.guilds.get(e)) ? true : t.localNeeded) || n
   }
   message(e, t) {
     var n, r;
-    return null != (r = null == (n = this.guilds.get(e)) ? void 0 : n.messageRecord(t)) ? r : null
+    return null != (r = null == (n = this.guilds.get(e)) ? true : n.messageRecord(t)) ? r : null
   }
   data(e) {
     return this.guilds.has(e) || this.guilds.set(e, new c.B), this.guilds.get(e)
@@ -38,7 +39,7 @@ class f extends r.ZP.Store {
   handleOneGuildCreate(e) {
     var t, n;
     let r = this.data(e.id);
-    r.putMany(null != (t = e.lastMessages) ? t : [], this.generation), r.putMany(null != (n = e.threadMessages) ? n : [], this.generation), null != e.lastMessages && (r.localNeeded = !1)
+    r.putMany(null != (t = e.lastMessages) ? t : [], this.generation), r.putMany(null != (n = e.threadMessages) ? n : [], this.generation), null != e.lastMessages && (r.localNeeded = false)
   }
   handleConnectionOpen(e) {
     for (let t of (this.generation += 1, e.guilds)) this.handleOneGuildCreate(t)
@@ -51,13 +52,13 @@ class f extends r.ZP.Store {
   }
   handleMessageCreate(e) {
     var t;
-    if (e.optimistic || e.isPushNotification) return !1;
+    if (e.optimistic || e.isPushNotification) returnfalse;
     this.data(null != (t = e.guildId) ? t : null).put(e.message.channel_id, e.message, this.generation)
   }
   handleMessageDelete(e) {
     var t, n;
     let r = null != (n = e.guildId) ? n : null;
-    if ((null == (t = this.data(r)) ? void 0 : t.messageId(e.channelId)) === e.id) {
+    if ((null == (t = this.data(r)) ? true : t.messageId(e.channelId)) === e.id) {
       let t = s.Z.getMessages(e.channelId),
         n = t.hasMoreAfter ? null : t.last();
       null != n ? this.data(r).put(e.channelId, n, this.generation) : this.data(r).delete(e.channelId)
@@ -68,9 +69,9 @@ class f extends r.ZP.Store {
     let n = null != (t = e.guildId) ? t : null,
       r = e.message.channel_id,
       i = e.message.id;
-    if (null == r || null == i) return !1;
+    if (null == r || null == i) returnfalse;
     let l = this.data(n);
-    if ((null == l ? void 0 : l.messageId(r)) !== i) return !1;
+    if ((null == l ? true : l.messageId(r)) !== i) returnfalse;
     null == l || l.update(e.message)
   }
   handleThreadListSync(e) {
@@ -80,7 +81,7 @@ class f extends r.ZP.Store {
   handleLoadMessagesSuccess(e) {
     var t, n;
     let r = o.Z.getBasicChannel(e.channelId);
-    if (null == r) return !1;
+    if (null == r) returnfalse;
     (0, l.Z)(e.messages), e.isAfter || e.isBefore || e.hasMoreAfter ? this.data(r.guild_id).putNew(e.channelId, null != (n = e.messages[0]) ? n : null, this.generation) : this.data(r.guild_id).put(e.channelId, null != (t = e.messages[0]) ? t : null, this.generation)
   }
   handleLocalMessagesLoaded(e) {
@@ -99,13 +100,13 @@ class f extends r.ZP.Store {
     p.verbose("adding local previews (guildId: ".concat(e.guildId, ", messages: ").concat(e.messages.length, ")"));
     let t = this.data(e.guildId);
     for (let [n, r] of e.messages) t.has(n) || t.put(n, r, d);
-    t.localNeeded = !1
+    t.localNeeded = false
   }
   handleLogout(e) {
     this.guilds.clear()
   }
   constructor() {
-    super(i.Z, {
+    super(Chunk570140.Z, {
       CONNECTION_OPEN: e => this.handleConnectionOpen(e),
       GUILD_CREATE: e => this.handleGuildCreate(e),
       GUILD_DELETE: e => this.handleGuildDelete(e),

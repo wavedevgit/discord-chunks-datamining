@@ -1,21 +1,22 @@
 /** Chunk was on web.js **/
+/** chunk id: 149071, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => I
-}), n(388685);
-var r = n(544891),
-  i = n(147913),
-  o = n(680089),
-  a = n(592125),
-  s = n(70956),
-  l = n(981631);
+}), require("./388685.js");
+var Chunk544891 = require("./544891.js"),
+  Chunk147913 = require("./147913.js"),
+  Chunk680089 = require("./680089.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk70956 = require("./70956.js"),
+  Chunk981631 = require("./981631.js");
 
 function c(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -50,10 +51,10 @@ function f(e, t) {
 }
 let _ = {},
   p = 0,
-  h = 15 * s.Z.Millis.SECOND;
+  h = 15 * Chunk70956.Z.Millis.SECOND;
 
 function m() {
-  _ = u({}, o.Z.getCollapsedCategories())
+  _ = u({}, Chunk680089.Z.getCollapsedCategories())
 }
 
 function g() {
@@ -63,7 +64,7 @@ async function E(e, t) {
   null == e || e === l.ME ? await r.tn.patch({
     url: l.ANM.USER_GUILD_SETTINGS(l.ME),
     body: t,
-    rejectWithError: !1
+    rejectWithError: false
   }) : await b(null != t ? {
     [null != e ? e : l.ME]: t
   } : {})
@@ -77,29 +78,29 @@ async function b(e) {
     let i = a.Z.getChannel(r);
     null != i && null != i.guild_id && (i.guild_id in e || (e[i.guild_id] = {}), null == e[i.guild_id].channel_overrides && (e[i.guild_id].channel_overrides = {}), e[i.guild_id].channel_overrides[i.id] = f(u({}, e[i.guild_id].channel_overrides[i.id]), {
       collapsed: i.id in n
-    }), t = !0)
+    }), t = true)
   }
   return t ? (_ = u({}, n), delete e[l.I_8], (await r.tn.patch({
     url: l.ANM.USER_GUILD_SETTINGS_BULK,
     body: {
       guilds: e
     },
-    rejectWithError: !1
+    rejectWithError: false
   })).body) : []
 }
 
 function y() {
   let e = {},
-    t = o.Z.getCollapsedCategories();
-  for (let n in t) t[n] !== _[n] && (e[n] = !0);
-  for (let n in _) t[n] !== _[n] && (e[n] = !0);
-  return e
+    t = Chunk680089.Z.getCollapsedCategories();
+  for (let n in exports) exports[require] !== _[require] && (module[require] = true);
+  for (let n in _) exports[require] !== _[require] && (module[require] = true);
+  return module
 }
 
 function O() {
-  _ = u({}, o.Z.getCollapsedCategories())
+  _ = u({}, Chunk680089.Z.getCollapsedCategories())
 }
-class v extends i.Z {
+class v extends Chunk147913.Z {
   constructor(...e) {
     super(...e), c(this, "actions", {
       CATEGORY_COLLAPSE: g,

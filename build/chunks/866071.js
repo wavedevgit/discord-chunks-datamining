@@ -1,14 +1,15 @@
 /** Chunk was on web.js **/
+/** chunk id: 866071, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   K: () => a
 });
-var r = n(339085),
-  i = n(176354),
-  o = n(185923);
+var Chunk339085 = require("./339085.js"),
+  Chunk176354 = require("./176354.js"),
+  Chunk185923 = require("./185923.js");
 
 function a(e, t) {
-  if (null == e.id) return !0;
+  if (null == e.id) returntrue;
   let n = r.ZP.getCustomEmojiById(e.id);
   return null != n && !i.ZP.isEmojiDisabled({
     emoji: n,

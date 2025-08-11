@@ -1,16 +1,17 @@
 /** Chunk was on 75708 **/
-n.d(t, {
+/** chunk id: 261744, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => a
-}), n(388685);
-var i = n(442837),
-  r = n(687476),
-  s = n(293810);
+}), require("./388685.js");
+var Chunk442837 = require("./442837.js"),
+  Chunk687476 = require("./687476.js"),
+  Chunk293810 = require("./293810.js");
 
 function a() {
-  return (0, i.e7)([r.Z], () => (function() {
-    let [e] = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : [r.Z], t = e.getGuildIdsWithPurchasableRoles(), n = !1;
-    return (t.forEach(t => {
-      e.getUserSubscriptionRoles(t).size > 0 && (n = !0)
-    }), n) ? s.PY.SUBSCRIBED : 0 === t.size ? s.PY.NONE : s.PY.IN_SUBSCRIPTION_SERVER
-  })([r.Z]))
+  return (0, Chunk442837.e7)([Chunk687476.Z], () => (function() {
+    let [e] = arguments.length > 0 && true !== arguments[0] ? arguments[0] : [Chunk687476.Z], t = module.getGuildIdsWithPurchasableRoles(), n = false;
+    return (exports.forEach(t => {
+      e.getUserSubscriptionRoles(t).size > 0 && (n = true)
+    }), require) ? Chunk293810.PY.SUBSCRIBED : 0 === exports.size ? Chunk293810.PY.NONE : Chunk293810.PY.IN_SUBSCRIPTION_SERVER
+  })([Chunk687476.Z]))
 }

@@ -1,9 +1,10 @@
 /** Chunk was on 22988 **/
-n.d(t, {
+/** chunk id: 641806, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   $: () => l
 });
-var r = n(970648),
-  i = n(981631);
+var Chunk970648 = require("./970648.js"),
+  Chunk981631 = require("./981631.js");
 async function l(e) {
   let t = r.Z.generateNonce();
   try {

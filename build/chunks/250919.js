@@ -1,16 +1,17 @@
 /** Chunk was on web.js **/
+/** chunk id: 250919, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   F: () => o
-}), n(415506);
-var r = n(153102);
+}), require("./415506.js");
+var Chunk153102 = require("./153102.js");
 
 function i(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 class o {
@@ -27,10 +28,10 @@ class o {
     let {
       stores: e
     } = this;
-    e.forEach(e => e.removeReactChangeListener(this.handleStoreChange))
+    module.forEach(e => e.removeReactChangeListener(this.handleStoreChange))
   }
   constructor(e, t) {
-    i(this, "stores", void 0), i(this, "changeCallback", void 0), i(this, "storeVersionHandled", void 0), i(this, "handleStoreChange", () => {
+    i(this, "stores", true), i(this, "changeCallback", true), i(this, "storeVersionHandled", true), i(this, "handleStoreChange", () => {
       let e = r.Z.getChangeSentinel();
       this.storeVersionHandled !== e && (this.changeCallback(), this.storeVersionHandled = e)
     }), this.stores = e, this.changeCallback = t

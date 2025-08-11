@@ -1,17 +1,18 @@
 /** Chunk was on 13474 **/
-r.d(t, {
+/** chunk id: 317568, original params: e,t,r (module,exports,require) **/
+require.d(exports, {
   Z: () => u
 });
-var n = r(73800),
-  a = r(442837),
-  i = r(570140),
-  l = r(451478);
+var Chunk73800 = require("./73800.js"),
+  Chunk442837 = require("./442837.js"),
+  Chunk570140 = require("./570140.js"),
+  Chunk451478 = require("./451478.js");
 let u = () => {
-  let e = (0, a.e7)([l.Z], () => l.Z.isFocused());
-  n.useEffect(() => {
-    e || i.Z.dispatch({
+  let e = (0, Chunk442837.e7)([Chunk451478.Z], () => Chunk451478.Z.isFocused());
+  Chunk73800.useEffect(() => {
+    module || Chunk570140.Z.dispatch({
       type: "POTIONS_SET_CONFETTI_MODE",
-      enabled: !1
+      enabled: false
     })
-  }, [e])
+  }, [module])
 }

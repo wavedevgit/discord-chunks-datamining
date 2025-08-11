@@ -1,12 +1,13 @@
 /** Chunk was on web.js **/
+/** chunk id: 31074, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => s
 });
-var r = n(73800),
-  i = n(442837),
-  o = n(231757),
-  a = n(553795);
+var Chunk73800 = require("./73800.js"),
+  Chunk442837 = require("./442837.js"),
+  Chunk231757 = require("./231757.js"),
+  Chunk553795 = require("./553795.js");
 
 function s(e) {
   let t = (0, i.e7)([a.Z], () => a.Z.getAccounts().some(t => t.type === e)),
@@ -17,5 +18,5 @@ function s(e) {
         location: "Member List Content Popout"
       })
     }, [e]);
-  if (null != e) return t ? void 0 : n
+  if (null != e) return t ? true : n
 }

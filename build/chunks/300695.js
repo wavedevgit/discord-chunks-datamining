@@ -1,5 +1,6 @@
 /** Chunk was on 11776 **/
-e.exports = {
+/** chunk id: 300695, original params: e,t,n (module,exports,require) **/
+module.exports = {
   tagListContainer: "tagListContainer__25a50",
   tag: "tag__25a50",
   buttonContainer: "buttonContainer__25a50",

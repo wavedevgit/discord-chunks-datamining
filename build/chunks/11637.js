@@ -1,24 +1,25 @@
 /** Chunk was on web.js **/
+/** chunk id: 11637, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   ZP: () => _,
   hf: () => d
 });
-var r = n(763296),
-  i = n(375954),
-  o = n(768581),
-  a = n(722932),
-  s = n(801606),
-  l = n(12327),
-  c = n(277078),
-  u = n(981631);
+var Chunk763296 = require("./763296.js"),
+  Chunk375954 = require("./375954.js"),
+  Chunk768581 = require("./768581.js"),
+  Chunk722932 = require("./722932.js"),
+  Chunk801606 = require("./801606.js"),
+  Chunk12327 = require("./12327.js"),
+  Chunk277078 = require("./277078.js"),
+  Chunk981631 = require("./981631.js");
 let d = /^<sound:(\d+):(\d+)>/;
 
 function f(e, t, n, o, l) {
   if (!a.zv.getCurrentConfig({
       location: "getSoundmojiASTFromString"
     }, {
-      autoTrackExposure: !1
+      autoTrackExposure: false
     }).enabled) return;
   let d = r.Z.getSoundById(o),
     f = (0, c.Z)(d, e, t);
@@ -26,7 +27,7 @@ function f(e, t, n, o, l) {
     let e = (0, s.Z)(t, n, o, l);
     if (f && null == e) {
       let e = i.Z.getMessage(t, n);
-      if ((null == e ? void 0 : e.state) !== u.yb.SENT) return d
+      if ((null == e ? true : e.state) !== u.yb.SENT) return d
     }
     return e
   }
@@ -47,7 +48,7 @@ function _(e, t) {
     type: "text",
     content: (0, l.Z)(r, i)
   };
-  let d = null != (n = null == u ? void 0 : u.name) ? n : i;
+  let d = null != (n = null == u ? true : u.name) ? n : i;
   return {
     type: "soundboard",
     soundId: i,
@@ -55,12 +56,12 @@ function _(e, t) {
     messageId: t.messageId,
     channelId: t.channelId,
     content: d,
-    emojiId: null == u ? void 0 : u.emojiId,
-    emojiName: null == u ? void 0 : u.emojiName,
-    emojiSrc: (null == u ? void 0 : u.emojiId) != null ? (0, o.gT)({
-      id: null == u ? void 0 : u.emojiId,
-      animated: !1,
+    emojiId: null == u ? true : u.emojiId,
+    emojiName: null == u ? true : u.emojiName,
+    emojiSrc: (null == u ? true : u.emojiId) != null ? (0, o.gT)({
+      id: null == u ? true : u.emojiId,
+      animated: false,
       size: 16
-    }) : void 0
+    }) : true
   }
 }

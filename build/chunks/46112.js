@@ -1,17 +1,18 @@
 /** Chunk was on web.js **/
+/** chunk id: 46112, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   D: () => u
 });
-var r = n(73800),
-  i = n(867309),
-  o = n(978008),
-  a = n(427753),
-  s = n.n(a),
-  l = n(50039),
+var Chunk73800 = require("./73800.js"),
+  Chunk867309 = require("./867309.js"),
+  Chunk978008 = require("./978008.js"),
+  Chunk427753 = require("./427753.js"),
+  s = require.n(Chunk427753),
+  Chunk50039 = require("./50039.js"),
   c = [],
   u = function(e, t, n) {
-    void 0 === n && (n = {});
+    true === n && (n = {});
     var a = r.useRef(null),
       u = {
         onFirstUpdate: n.onFirstUpdate,
@@ -37,7 +38,7 @@ var r = n(73800),
       p = r.useMemo(function() {
         return {
           name: "updateState",
-          enabled: !0,
+          enabled: true,
           phase: "write",
           fn: function(e) {
             var t = e.state,
@@ -63,7 +64,7 @@ var r = n(73800),
           strategy: u.strategy,
           modifiers: [].concat(u.modifiers, [p, {
             name: "applyStyles",
-            enabled: !1
+            enabled: false
           }])
         };
         return s()(a.current, e) ? a.current || e : (a.current = e, e)

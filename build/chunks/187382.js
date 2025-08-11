@@ -1,5 +1,6 @@
 /** Chunk was on 75708 **/
-e.exports = {
+/** chunk id: 187382, original params: e,t,n (module,exports,require) **/
+module.exports = {
   switchRowContainer: "switchRowContainer__6de8b",
   activitySwitchRow: "activitySwitchRow__6de8b",
   connectionIcon: "connectionIcon__6de8b",

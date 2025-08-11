@@ -1,8 +1,9 @@
 /** Chunk was on 21153 **/
+/** chunk id: 460390, original params: e,t,r (module,exports,require) **/
 "use strict";
-Object.defineProperty(t, "__esModule", {
-  value: !0
-}), t.ColorWrap = void 0;
+Object.defineProperty(exports, "__esModule", {
+  value: true
+}), exports.ColorWrap = true;
 var n = Object.assign || function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var r = arguments[t];
@@ -14,30 +15,30 @@ var n = Object.assign || function(e) {
     function e(e, t) {
       for (var r = 0; r < t.length; r++) {
         var n = t[r];
-        n.enumerable = n.enumerable || !1, n.configurable = !0, "value" in n && (n.writable = !0), Object.defineProperty(e, n.key, n)
+        n.enumerable = n.enumerable || false, n.configurable = true, "value" in n && (n.writable = true), Object.defineProperty(e, n.key, n)
       }
     }
     return function(t, r, n) {
       return r && e(t.prototype, r), n && e(t, n), t
     }
   }(),
-  a = r(73800),
-  i = u(a),
-  l = u(r(889678)),
+  Chunk73800 = require("./73800.js"),
+  i = u(Chunk73800),
+  l = u(require("./889678.js")),
   s = function(e) {
     if (e && e.__esModule) return e;
     var t = {};
     if (null != e)
       for (var r in e) Object.prototype.hasOwnProperty.call(e, r) && (t[r] = e[r]);
     return t.default = e, t
-  }(r(578062));
+  }(require("./578062.js"));
 
 function u(e) {
   return e && e.__esModule ? e : {
     default: e
   }
 }
-var c = t.ColorWrap = function(e) {
+var c = exports.ColorWrap = function(e) {
   var t = function(t) {
     if ("function" != typeof t && null !== t) throw TypeError("Super expression must either be null or a function, not " + typeof t);
 
@@ -64,9 +65,9 @@ var c = t.ColorWrap = function(e) {
     return r.prototype = Object.create(t && t.prototype, {
       constructor: {
         value: r,
-        enumerable: !1,
-        writable: !0,
-        configurable: !0
+        enumerable: false,
+        writable: true,
+        configurable: true
       }
     }), t && (Object.setPrototypeOf ? Object.setPrototypeOf(r, t) : r.__proto__ = t), o(r, [{
       key: "render",
@@ -92,4 +93,4 @@ var c = t.ColorWrap = function(e) {
     }
   }), t
 };
-t.default = c
+exports.default = c

@@ -1,17 +1,18 @@
 /** Chunk was on 22988 **/
-n.d(t, {
+/** chunk id: 827907, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   EH: () => m,
   Mf: () => d,
   lL: () => g,
   t4: () => u
 });
-var r = n(442837),
-  i = n(592125),
-  l = n(430824),
-  a = n(700785),
-  s = n(889369),
-  o = n(981631),
-  c = n(388032);
+var Chunk442837 = require("./442837.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk430824 = require("./430824.js"),
+  Chunk700785 = require("./700785.js"),
+  Chunk889369 = require("./889369.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk388032 = require("./388032.jsx");
 
 function d(e, t) {
   return (0, r.e7)([s.Z], () => s.Z.editedDefaultChannelIds.has(e) || null != t && s.Z.editedDefaultChannelIds.has(t))
@@ -22,17 +23,17 @@ function u(e, t) {
 }
 
 function m(e, t) {
-  return (0, r.e7)([s.Z, i.Z], () => null != t && s.Z.editedDefaultChannelIds.has(t) ? c.intl.string(c.t.Lz94y8) : a.Uu(o.Plq.VIEW_CHANNEL, i.Z.getChannel(e)) ? void 0 : c.intl.string(c.t["031cXl"]))
+  return (0, r.e7)([s.Z, i.Z], () => null != t && s.Z.editedDefaultChannelIds.has(t) ? c.intl.string(c.t.Lz94y8) : a.Uu(o.Plq.VIEW_CHANNEL, i.Z.getChannel(e)) ? true : c.intl.string(c.t["031cXl"]))
 }
 
 function g(e, t) {
   let n = (0, r.e7)([l.Z], () => {
       var n;
-      return (null == (n = l.Z.getGuild(e)) ? void 0 : n.rulesChannelId) === t
+      return (null == (n = l.Z.getGuild(e)) ? true : n.rulesChannelId) === t
     }),
     a = (0, r.e7)([i.Z], () => {
       var e;
-      return null == (e = i.Z.getChannel(t)) ? void 0 : e.isGuildVocal()
+      return null == (e = i.Z.getChannel(t)) ? true : e.isGuildVocal()
     });
-  return n ? c.intl.string(c.t["2XWEKy"]) : a ? c.intl.string(c.t.t6iJLS) : void 0
+  return n ? c.intl.string(c.t["2XWEKy"]) : a ? c.intl.string(c.t.t6iJLS) : true
 }

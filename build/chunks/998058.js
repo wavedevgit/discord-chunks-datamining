@@ -1,17 +1,18 @@
 /** Chunk was on 89311 **/
-r.d(t, {
+/** chunk id: 998058, original params: e,t,r (module,exports,require) **/
+require.d(exports, {
   i: () => o
 });
-var n = r(544891),
-  a = r(570140),
-  i = r(881052),
-  l = r(981631);
+var Chunk544891 = require("./544891.js"),
+  Chunk570140 = require("./570140.js"),
+  Chunk881052 = require("./881052.js"),
+  Chunk981631 = require("./981631.js");
 let o = async e => {
   try {
     var t;
     let r = (null != (t = (await n.tn.get({
       url: l.ANM.SIMILAR_GAMES(e),
-      rejectWithError: !1
+      rejectWithError: false
     })).body.similar_games) ? t : []).filter(t => t !== e);
     a.Z.dispatch({
       type: "GAME_PROFILE_GET_SIMILAR_GAMES_SUCCESS",

@@ -1,23 +1,24 @@
 /** Chunk was on 29709 **/
-n.d(t, {
+/** chunk id: 388380, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => s
 });
-var i = n(544891),
-  r = n(570140),
-  l = n(981631);
+var Chunk544891 = require("./544891.js"),
+  Chunk570140 = require("./570140.js"),
+  Chunk981631 = require("./981631.js");
 let s = {
   async fetch() {
     try {
-      let e = await i.tn.get({
-        url: l.ANM.FRIEND_SUGGESTIONS,
-        rejectWithError: !0
+      let e = await Chunk544891.tn.get({
+        url: Chunk981631.ANM.FRIEND_SUGGESTIONS,
+        rejectWithError: true
       });
-      r.Z.dispatch({
+      Chunk570140.Z.dispatch({
         type: "LOAD_FRIEND_SUGGESTIONS_SUCCESS",
-        suggestions: e.body
+        suggestions: module.body
       })
     } catch (e) {
-      r.Z.dispatch({
+      Chunk570140.Z.dispatch({
         type: "LOAD_FRIEND_SUGGESTIONS_FAILURE"
       })
     }
@@ -25,7 +26,7 @@ let s = {
   ignore(e) {
     i.tn.del({
       url: l.ANM.FRIEND_SUGGESTION(e),
-      rejectWithError: !0
+      rejectWithError: true
     })
   }
 }

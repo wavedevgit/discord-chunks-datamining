@@ -1,19 +1,20 @@
 /** Chunk was on 18912 **/
-n.d(e, {
+/** chunk id: 648159, original params: t,e,n (module,exports,require) **/
+require.d(exports, {
   Z: () => s
 });
-var l = n(73800),
-  r = n(252618),
-  i = n(358085),
-  a = n(388032);
+var Chunk73800 = require("./73800.js"),
+  Chunk252618 = require("./252618.js"),
+  Chunk358085 = require("./358085.js"),
+  Chunk388032 = require("./388032.jsx");
 
 function s() {
-  return l.useEffect(() => {
-    i.isPlatformEmbedded || (0, r.EM)({
-      messages: [a.intl.string(a.t.KIX3cn), a.intl.string(a.t["UbO+8v"]), a.intl.string(a.t.MbySu7)],
+  return Chunk73800.useEffect(() => {
+    Chunk358085.isPlatformEmbedded || (0, Chunk252618.EM)({
+      messages: [Chunk388032.intl.string(Chunk388032.t.KIX3cn), Chunk388032.intl.string(Chunk388032.t["UbO+8v"]), Chunk388032.intl.string(Chunk388032.t.MbySu7)],
       interval: 600,
       count: 20,
-      onlyWhenBlurred: !0
+      onlyWhenBlurred: true
     })
   }, []), null
 }

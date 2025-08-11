@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 108665, original params: e (module,exports,re quire) **/
 "use strict";
 var t = /\r\n?|\n/g;
-e.exports = function(e) {
+module.exports = function(e) {
   return e.split(t)
 }

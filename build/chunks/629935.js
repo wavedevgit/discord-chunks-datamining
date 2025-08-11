@@ -1,12 +1,13 @@
 /** Chunk was on web.js **/
+/** chunk id: 629935, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   W4: () => c,
   Yk: () => o,
   dw: () => u
-}), n(388685);
-var r = n(688619),
-  i = n.n(r),
+}), require("./388685.js");
+var Chunk688619 = require("./688619.js"),
+  i = require.n(Chunk688619),
   o = function(e) {
     return e.THEME_BASE_MIX_AMOUNT = "--custom-theme-base-color-amount", e.THEME_TEXT_MIX_AMOUNT = "--custom-theme-text-color-amount", e.THEME_BASE_COLOR = "--custom-theme-base-color", e.THEME_TEXT_COLOR = "--custom-theme-text-color", e.THEME_BASE_COLOR_HSL = "--custom-theme-base-color-hsl", e.LIGHT_THEME_BASE_COLOR = "--custom-theme-base-color-light", e.LIGHT_THEME_TEXT_COLOR = "--custom-theme-text-color-light", e.LIGHT_THEME_BASE_COLOR_HSL = "--custom-theme-base-color-light-hsl", e.DARK_THEME_BASE_COLOR = "--custom-theme-base-color-dark", e.DARK_THEME_TEXT_COLOR = "--custom-theme-text-color-dark", e.DARK_THEME_BASE_COLOR_HSL = "--custom-theme-base-color-dark-hsl", e
   }({});
@@ -42,14 +43,14 @@ function c(e) {
   } = l({
     primaryColor: n,
     secondaryColor: r,
-    isDarkTheme: !0
+    isDarkTheme: true
   }), {
     base: f,
     text: _
   } = l({
     primaryColor: n,
     secondaryColor: r,
-    isDarkTheme: !1
+    isDarkTheme: false
   });
   return {
     "--custom-theme-base-color-amount": "".concat(t ? i : 0, "%"),

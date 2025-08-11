@@ -1,15 +1,16 @@
 /** Chunk was on web.js **/
+/** chunk id: 337682, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Y$: () => i,
   a8: () => s,
   jS: () => o,
   tZ: () => a
 });
-var r = n(570140);
+var Chunk570140 = require("./570140.js");
 
 function i() {
-  r.Z.dispatch({
+  Chunk570140.Z.dispatch({
     type: "DEVELOPER_ACTIVITY_SHELF_TOGGLE_USE_ACTIVITY_URL_OVERRIDE"
   })
 }

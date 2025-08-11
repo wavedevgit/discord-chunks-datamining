@@ -1,16 +1,17 @@
 /** Chunk was on 49152 **/
-n.d(t, {
+/** chunk id: 975984, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Lz: () => d,
   MQ: () => o,
   TR: () => h,
   Th: () => u,
   _N: () => c
-}), n(953529), n(388685);
-var r = n(512722),
-  i = n.n(r),
-  l = n(392711),
-  a = n.n(l),
-  s = n(75666);
+}), require("./953529.js"), require("./388685.js");
+var Chunk512722 = require("./512722.js"),
+  i = require.n(Chunk512722),
+  Chunk392711 = require("./392711.js"),
+  a = require.n(Chunk392711),
+  Chunk75666 = require("./75666.js");
 
 function o(e) {
   var t, n, r, l, a, o, c;
@@ -22,13 +23,13 @@ function o(e) {
     createdAt: e.created_at,
     description: e.description,
     primaryCategoryId: e.primary_category_id,
-    name: null == (t = e.guild) ? void 0 : t.name,
-    icon: null == (n = e.guild) ? void 0 : n.icon,
-    splash: null == (r = e.guild) ? void 0 : r.splash,
-    features: new Set(null == (l = e.guild) ? void 0 : l.features),
-    approximateMemberCount: null == (a = e.guild) ? void 0 : a.approximate_member_count,
-    approximatePresenceCount: null == (o = e.guild) ? void 0 : o.approximate_presence_count,
-    featurableInDirectory: null == (c = e.guild) ? void 0 : c.featurable_in_directory
+    name: null == (t = e.guild) ? true : t.name,
+    icon: null == (n = e.guild) ? true : n.icon,
+    splash: null == (r = e.guild) ? true : r.splash,
+    features: new Set(null == (l = e.guild) ? true : l.features),
+    approximateMemberCount: null == (a = e.guild) ? true : a.approximate_member_count,
+    approximatePresenceCount: null == (o = e.guild) ? true : o.approximate_presence_count,
+    featurableInDirectory: null == (c = e.guild) ? true : c.featurable_in_directory
   }
 }
 let c = 5;

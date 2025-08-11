@@ -1,15 +1,16 @@
 /** Chunk was on web.js **/
+/** chunk id: 399654, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   a: () => u
 });
-var r = n(544891),
-  i = n(570140),
-  o = n(706454),
-  a = n(70956),
-  s = n(844439),
-  l = n(981631);
-let c = 10 * a.Z.Millis.MINUTE;
+var Chunk544891 = require("./544891.js"),
+  Chunk570140 = require("./570140.js"),
+  Chunk706454 = require("./706454.js"),
+  Chunk70956 = require("./70956.js"),
+  Chunk844439 = require("./844439.js"),
+  Chunk981631 = require("./981631.js");
+let c = 10 * Chunk70956.Z.Millis.MINUTE;
 async function u(e) {
   let {
     channelId: t,
@@ -45,7 +46,7 @@ async function u(e) {
           location: n,
           with_commands: a
         },
-        rejectWithError: !1
+        rejectWithError: false
       });
       i.Z.dispatch({
         type: "APP_RECOMMENDATIONS_FETCH_RECOMMENDATIONS_SUCCESS",

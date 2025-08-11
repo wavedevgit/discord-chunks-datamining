@@ -1,20 +1,21 @@
 /** Chunk was on 1272 **/
-n.d(t, {
+/** chunk id: 662194, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => p
-}), n(388685);
-var r = n(243814),
-  i = n(846027),
-  l = n(131951),
-  a = n(594174),
-  o = n(996106),
-  s = n(452426),
-  c = n(852926),
-  u = n(186901),
-  d = n(981631);
+}), require("./388685.js");
+var Chunk243814 = require("./243814.js"),
+  Chunk846027 = require("./846027.js"),
+  Chunk131951 = require("./131951.js"),
+  Chunk594174 = require("./594174.js"),
+  Chunk996106 = require("./996106.js"),
+  Chunk452426 = require("./452426.js"),
+  Chunk852926 = require("./852926.js"),
+  Chunk186901 = require("./186901.js"),
+  Chunk981631 = require("./981631.js");
 let p = {
-  [d.Etm.SET_USER_VOICE_SETTINGS]: {
+  [Chunk981631.Etm.SET_USER_VOICE_SETTINGS]: {
     scope: {
-      [u.Gp.ANY]: [r.x.RPC, r.x.RPC_VOICE_WRITE]
+      [Chunk186901.Gp.ANY]: [Chunk243814.x.RPC, Chunk243814.x.RPC_VOICE_WRITE]
     },
     validation: e => (0, s.Z)(e).required().keys({
       user_id: e.string().required(),
@@ -34,7 +35,7 @@ let p = {
           mute: s
         }
       } = e, c = a.default.getCurrentUser();
-      if (null == a.default.getUser(t) || (null == c ? void 0 : c.id) === t) throw new o.Z({
+      if (null == a.default.getUser(t) || (null == c ? true : c.id) === t) throw new o.Z({
         errorCode: d.lTL.INVALID_USER
       }, "Invalid user id: ".concat(t));
       if (null != n && i.Z.setLocalPan(t, n.left, n.right), null != r && i.Z.setLocalVolume(t, r), null != s) {
@@ -49,15 +50,15 @@ let p = {
       }
     }
   },
-  [d.Etm.GET_VOICE_SETTINGS]: {
+  [Chunk981631.Etm.GET_VOICE_SETTINGS]: {
     scope: {
-      [u.Gp.ANY]: [r.x.RPC, r.x.RPC_VOICE_READ]
+      [Chunk186901.Gp.ANY]: [Chunk243814.x.RPC, Chunk243814.x.RPC_VOICE_READ]
     },
-    handler: () => (0, c._X)()
+    handler: () => (0, Chunk852926._X)()
   },
-  [d.Etm.SET_VOICE_SETTINGS]: {
+  [Chunk981631.Etm.SET_VOICE_SETTINGS]: {
     scope: {
-      [u.Gp.ANY]: [r.x.RPC, r.x.RPC_VOICE_WRITE]
+      [Chunk186901.Gp.ANY]: [Chunk243814.x.RPC, Chunk243814.x.RPC_VOICE_WRITE]
     },
     validation: e => (0, s.Z)(e).required().keys({
       input: (0, s.Z)(e).keys({
@@ -71,7 +72,7 @@ let p = {
       mode: (0, s.Z)(e).keys({
         type: e.string().valid(Object.keys(d.pM4)),
         auto_threshold: e.boolean(),
-        threshold: e.number().min(-100).max(0),
+        threshold: e.number().min(false).max(0),
         shortcut: e.array().items((0, s.Z)(e).keys({
           type: e.number().min(0).max(3).required(),
           code: e.number().required(),

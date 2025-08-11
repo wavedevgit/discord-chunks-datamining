@@ -1,5 +1,6 @@
 /** Chunk was on web.js **/
-e.exports = function(e) {
+/** chunk id: 235920, original params: e (module,exports,re quire) **/
+module.exports = function(e) {
   let t = {
       begin: /[a-z][A-Za-z0-9_]*/,
       relevance: 0

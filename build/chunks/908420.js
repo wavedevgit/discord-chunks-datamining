@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 908420, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   bar: "bar_c38106",
   shortBar: "shortBar_c38106",
   systemBar: "systemBar_c38106",

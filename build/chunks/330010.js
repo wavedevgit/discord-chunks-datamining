@@ -1,21 +1,22 @@
 /** Chunk was on web.js **/
+/** chunk id: 330010, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   R: () => _,
   i: () => f
 });
-var r = n(544891),
-  i = n(570140),
-  o = n(973616),
-  a = n(598077),
-  s = n(981631);
+var Chunk544891 = require("./544891.js"),
+  Chunk570140 = require("./570140.js"),
+  Chunk973616 = require("./973616.js"),
+  Chunk598077 = require("./598077.js"),
+  Chunk981631 = require("./981631.js");
 
 function l(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -52,14 +53,14 @@ async function f(e) {
   let t = (await r.tn.get({
     url: s.ANM.GUILD_INTEGRATIONS(e),
     query: {
-      include_applications: !0,
-      include_role_connections_metadata: !0
+      include_applications: true,
+      include_role_connections_metadata: true
     },
-    oldFormErrors: !0,
-    rejectWithError: !1
+    oldFormErrors: true,
+    rejectWithError: false
   })).body.map(e => d(c({}, e), {
-    application: "application" in e && null != e.application ? o.ZN.createFromServer(e.application) : void 0,
-    user: "user" in e && null != e.user ? new a.Z(e.user) : void 0
+    application: "application" in e && null != e.application ? o.ZN.createFromServer(e.application) : true,
+    user: "user" in e && null != e.user ? new a.Z(e.user) : true
   }));
   return i.Z.dispatch({
     type: "GUILD_SETTINGS_LOADED_INTEGRATIONS",
@@ -71,8 +72,8 @@ async function f(e) {
 function _(e) {
   return r.tn.get({
     url: s.ANM.GUILD_WIDGET(e),
-    oldFormErrors: !0,
-    rejectWithError: !0
+    oldFormErrors: true,
+    rejectWithError: true
   }).then(e => {
     i.Z.dispatch({
       type: "GUILD_SETTINGS_SET_WIDGET",

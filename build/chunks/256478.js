@@ -1,5 +1,6 @@
 /** Chunk was on 27978 **/
-e.exports = {
+/** chunk id: 256478, original params: e,t,n (module,exports,require) **/
+module.exports = {
   checkbox: "checkbox_e17bcd",
   subText: "subText_e17bcd"
 }

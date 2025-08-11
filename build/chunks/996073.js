@@ -1,22 +1,23 @@
 /** Chunk was on web.js **/
+/** chunk id: 996073, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => _
 });
-var r = n(73800),
-  i = n(442837),
-  o = n(230711),
-  a = n(607070),
-  s = n(663389),
-  l = n(526761),
-  c = n(981631);
+var Chunk73800 = require("./73800.js"),
+  Chunk442837 = require("./442837.js"),
+  Chunk230711 = require("./230711.js"),
+  Chunk607070 = require("./607070.js"),
+  Chunk663389 = require("./663389.js"),
+  Chunk526761 = require("./526761.js"),
+  Chunk981631 = require("./981631.js");
 
 function u(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -33,20 +34,20 @@ function d(e) {
   return e
 }
 let f = Object.freeze({
-    [l.KQ.ProfileCustomizationScrollPositions.TRY_IT_OUT]: c.oAB.PROFILE_CUSTOMIZATION,
-    [l.KQ.ProfileCustomizationScrollPositions.GUILD_TAG]: c.oAB.PROFILE_CUSTOMIZATION,
-    [l.KQ.AccessibilityScrollPositions.REDUCED_MOTION]: c.oAB.ACCESSIBILITY,
-    [l.KQ.AccessibilityScrollPositions.SYNC_PROFILE_THEME_WITH_USER_THEME]: c.oAB.ACCESSIBILITY,
-    [l.KQ.AccessibilityScrollPositions.LEGACY_CHAT_INPUT]: c.oAB.ACCESSIBILITY,
-    [l.KQ.VoiceAndVideoScrollPositions.HARDWARE_ACCELERATION]: c.oAB.VOICE,
-    [l.KQ.AppearanceScrollPositions.CUSTOM_APP_ICONS]: c.oAB.APPEARANCE,
-    [l.KQ.ContentAndSocialScrollPositions.DM_SAFETY_ALERTS_V2]: c.oAB.CONTENT_AND_SOCIAL,
-    [l.KQ.ContentAndSocialScrollPositions.MESSAGE_REQUESTS_V2]: c.oAB.CONTENT_AND_SOCIAL,
-    [l.KQ.ContentAndSocialScrollPositions.EXPLICIT_MEDIA_REDACTION_V2]: c.oAB.CONTENT_AND_SOCIAL,
-    [l.KQ.ContentAndSocialScrollPositions.RESTRICTED_ACCOUNTS]: c.oAB.CONTENT_AND_SOCIAL
+    [Chunk526761.KQ.ProfileCustomizationScrollPositions.TRY_IT_OUT]: Chunk981631.oAB.PROFILE_CUSTOMIZATION,
+    [Chunk526761.KQ.ProfileCustomizationScrollPositions.GUILD_TAG]: Chunk981631.oAB.PROFILE_CUSTOMIZATION,
+    [Chunk526761.KQ.AccessibilityScrollPositions.REDUCED_MOTION]: Chunk981631.oAB.ACCESSIBILITY,
+    [Chunk526761.KQ.AccessibilityScrollPositions.SYNC_PROFILE_THEME_WITH_USER_THEME]: Chunk981631.oAB.ACCESSIBILITY,
+    [Chunk526761.KQ.AccessibilityScrollPositions.LEGACY_CHAT_INPUT]: Chunk981631.oAB.ACCESSIBILITY,
+    [Chunk526761.KQ.VoiceAndVideoScrollPositions.HARDWARE_ACCELERATION]: Chunk981631.oAB.VOICE,
+    [Chunk526761.KQ.AppearanceScrollPositions.CUSTOM_APP_ICONS]: Chunk981631.oAB.APPEARANCE,
+    [Chunk526761.KQ.ContentAndSocialScrollPositions.DM_SAFETY_ALERTS_V2]: Chunk981631.oAB.CONTENT_AND_SOCIAL,
+    [Chunk526761.KQ.ContentAndSocialScrollPositions.MESSAGE_REQUESTS_V2]: Chunk981631.oAB.CONTENT_AND_SOCIAL,
+    [Chunk526761.KQ.ContentAndSocialScrollPositions.EXPLICIT_MEDIA_REDACTION_V2]: Chunk981631.oAB.CONTENT_AND_SOCIAL,
+    [Chunk526761.KQ.ContentAndSocialScrollPositions.RESTRICTED_ACCOUNTS]: Chunk981631.oAB.CONTENT_AND_SOCIAL
   }),
   _ = function(e, t, n) {
-    let l = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : 0,
+    let l = arguments.length > 3 && true !== arguments[3] ? arguments[3] : 0,
       c = (0, i.e7)([a.Z], () => a.Z.useReducedMotion),
       u = (0, i.e7)([s.Z], () => s.Z.getScrollPosition());
     (0, r.useEffect)(() => {

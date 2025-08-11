@@ -1,14 +1,15 @@
 /** Chunk was on web.js **/
+/** chunk id: 168352, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   _: () => c
 });
-var r = n(73800),
-  i = n(442837),
-  o = n(607070),
-  a = n(357352),
-  s = n(358085),
-  l = n(396821);
+var Chunk73800 = require("./73800.js"),
+  Chunk442837 = require("./442837.js"),
+  Chunk607070 = require("./607070.js"),
+  Chunk357352 = require("./357352.js"),
+  Chunk358085 = require("./358085.js"),
+  Chunk396821 = require("./396821.js");
 
 function c(e) {
   let {
@@ -20,8 +21,8 @@ function c(e) {
       c = (0, a.b)("collectibles/".concat(e.src, "asset.webm")),
       u = (0, a.b)("collectibles/".concat(e.src, "static.png"));
     if (e.preview) return {
-      staticAsset: null == (r = t(e.src)) ? void 0 : r.staticUrl,
-      animatedAsset: null == (i = t(e.src)) ? void 0 : i.animatedUrl
+      staticAsset: null == (r = t(e.src)) ? true : r.staticUrl,
+      animatedAsset: null == (i = t(e.src)) ? true : i.animatedUrl
     };
     let d = (null != (o = platform.name) ? o : "unknown").toLowerCase();
     return {

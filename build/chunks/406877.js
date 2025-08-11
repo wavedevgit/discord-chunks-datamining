@@ -1,22 +1,23 @@
 /** Chunk was on web.js **/
+/** chunk id: 406877, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => c
-}), n(388685);
-var r = n(73800),
-  i = n(668781),
-  o = n(881052),
-  a = n(824389),
-  s = n(179838),
-  l = n(388032);
+}), require("./388685.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk668781 = require("./668781.js"),
+  Chunk881052 = require("./881052.js"),
+  Chunk824389 = require("./824389.js"),
+  Chunk179838 = require("./179838.js"),
+  Chunk388032 = require("./388032.jsx");
 
 function c(e, t) {
-  let [n, c] = r.useState(!1);
+  let [n, c] = r.useState(false);
   return {
     isLoading: n,
     downloadAttachment: r.useCallback(async n => {
       if (null != e && null != t) {
-        c(!0);
+        c(true);
         try {
           let {
             url: r
@@ -27,13 +28,13 @@ function c(e, t) {
           });
           await s.L(r)
         } catch (t) {
-          let e = t instanceof o.Hx ? t.getAnyErrorMessage() : void 0;
+          let e = t instanceof o.Hx ? t.getAnyErrorMessage() : true;
           i.Z.show({
             title: l.intl.string(l.t.R0RpRU),
             body: null != e ? e : l.intl.string(l.t.eAn6z8)
           })
         } finally {
-          c(!1)
+          c(false)
         }
       }
     }, [e, t])

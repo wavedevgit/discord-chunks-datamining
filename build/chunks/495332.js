@@ -1,20 +1,21 @@
 /** Chunk was on web.js **/
+/** chunk id: 495332, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => f
 });
-var r = n(73800),
-  i = n(806966),
-  o = n(697426),
-  a = n(294206),
-  s = n(280880);
+var Chunk73800 = require("./73800.js"),
+  Chunk806966 = require("./806966.js"),
+  Chunk697426 = require("./697426.js"),
+  Chunk294206 = require("./294206.jsx"),
+  Chunk280880 = require("./280880.jsx");
 
 function l(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -73,11 +74,11 @@ function f(e) {
         focused: I,
         onMouseEnter: () => m(u),
         onSelectItem: e => h(t, e),
-        enableSecondaryActions: !0,
+        enableSecondaryActions: true,
         buttonOverlay: g,
         inNitroLockedSection: E,
         showLockForDisabledSound: b,
-        isSoundmoji: !0 === y
+        isSoundmoji: true === y
       }));
     case o.vB.ADD_SOUND:
       return (0, r.createElement)(s.Z, d(c({}, p(u)), {

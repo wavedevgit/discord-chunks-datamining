@@ -1,1 +1,0 @@
-{"id":"522811","type":"experiment","data":{"kind":"user","id":"2024-08_soundboard_refresh","label":"Soundboard UI Refresh","defaultConfig":{"refreshEnabled":false},"treatments":[{"id":1,"label":"Enable the updated soundboard picker UI","config":{"refreshEnabled":false}}]},"fromModule":{"id":"web.js"}}

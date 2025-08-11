@@ -1,0 +1,151 @@
+/** Chunk was on web.js **/
+/** chunk id: 793148, original params: e,t,n (module,exports,re quire) **/
+"use strict";
+require.d(exports, {
+  Z: () => m
+}), require("./388685.js");
+var r, Chunk255367 = require("./255367.js"),
+  Chunk73800 = require("./73800.js"),
+  Chunk120356 = require("./120356.js"),
+  s = require.n(Chunk120356),
+  Chunk755721 = require("./755721.js"),
+  Chunk481060 = require("./481060.js"),
+  Chunk540026 = require("./540026.jsx"),
+  Chunk388032 = require("./388032.jsx"),
+  Chunk24008 = require("./24008.js");
+
+function _(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+let p = 150;
+class h extends(r = Chunk73800.PureComponent) {
+  componentDidMount() {
+    this.updateMediaBar()
+  }
+  componentDidUpdate(e) {
+    (this.props.value !== e.value || this.props.muted !== e.muted) && this.updateMediaBar()
+  }
+  updateMediaBar() {
+    let {
+      muted: e,
+      value: t,
+      maxValue: n
+    } = this.props, r = this._mediaBar.current;
+    null != r && (module ? r.setGrabber(0) : r.setGrabber(exports / require))
+  }
+  render() {
+    let {
+      iconClassName: e,
+      iconColor: t,
+      className: n,
+      sliderWrapperClassName: r,
+      sliderClassName: o,
+      currentWindow: a,
+      muted: _,
+      minValue: h,
+      maxValue: m,
+      value: g,
+      onVolumeShow: E,
+      onVolumeHide: b
+    } = this.props, {
+      hovered: y,
+      focused: O,
+      dragging: v
+    } = this.state, I = Chunk481060.gj8;
+    return _ || g === h ? I = Chunk481060.OyP : g < m / 2 && (I = Chunk481060.X2j), <div className={s()(require, Chunk24008.container)} onMouseEnter={() => {
+        clearTimeout(this._hoverTimeout), this.setState({
+          hovered: true
+        }), null == E || E()
+      }} onMouseLeave={() => {
+        clearTimeout(this._hoverTimeout), this._hoverTimeout = setTimeout(() => {
+          this.setState({
+            hovered: false
+          }), null == b || b()
+        }, p)
+      }} onBlur={() => this.setState({
+        focused: false
+      })} onKeyDown={this.handleKeyDown}>{<div className={s()(Chunk24008.volumeButtonSlider, r, {
+          [Chunk24008.sliderVisible]: y || O || v
+        })} onMouseEnter={() => {
+          clearTimeout(this._hoverTimeout), this.setState({
+            hovered: true
+          })
+        }} onMouseLeave={() => {
+          clearTimeout(this._hoverTimeout), this._hoverTimeout = setTimeout(() => this.setState({
+            hovered: false
+          }), p)
+        }}><Chunk540026.Z sliderClassName={Chunk73800} type={Chunk540026.Z.Types.VOLUME} value={g / m} onDrag={this.handleValueChange} onDragStart={this.handleDragStart} onDragEnd={this.handleDragEnd} currentWindow={Chunk120356} ref={this._mediaBar} /></div>}{<Chunk755721.zx className={Chunk24008.volumeButton} aria-label={Chunk388032.intl.string(Chunk388032.t["19lt29"])} size={Chunk755721.zx.Sizes.NONE} look={Chunk755721.zx.Looks.BLANK} onClick={this.handleToggleMute}><I color={exports} className={module} /></Chunk755721.zx>}</div>
+  }
+  constructor(...e) {
+    super(...e), _(this, "_mediaBar", o.createRef()), _(this, "_hoverTimeout", true), _(this, "state", {
+      hovered: false,
+      focused: false,
+      dragging: false
+    }), _(this, "handleValueChange", e => {
+      let {
+        maxValue: t,
+        onValueChange: n
+      } = this.props, r = e * t;
+      null == n || n(r)
+    }), _(this, "handleToggleMute", () => {
+      let {
+        onToggleMute: e
+      } = this.props;
+      null == e || e()
+    }), _(this, "handleKeyDown", e => {
+      let {
+        minValue: t,
+        value: n,
+        maxValue: r,
+        onValueChange: i
+      } = this.props, o = .05 * (r - t);
+      switch (e.key) {
+        case "ArrowUp":
+          if (e.stopPropagation(), e.preventDefault(), !this.state.focused) {
+            this.setState({
+              focused: true
+            });
+            break
+          }
+          null == i || i(Math.min(r, n + o));
+          break;
+        case "ArrowDown":
+          if (e.stopPropagation(), e.preventDefault(), !this.state.focused) {
+            this.setState({
+              focused: true
+            });
+            break
+          }
+          null == i || i(Math.max(t, n - o));
+          break;
+        case "Escape":
+          this.setState({
+            focused: false
+          }), e.stopPropagation(), e.preventDefault()
+      }
+    }), _(this, "handleDragStart", () => {
+      this.setState({
+        dragging: true
+      })
+    }), _(this, "handleDragEnd", () => {
+      this.setState({
+        dragging: false
+      })
+    }), _(this, "blur", () => {
+      this.setState({
+        focused: false
+      })
+    })
+  }
+}
+_(h, "defaultProps", {
+  minValue: 0,
+  maxValue: 100,
+  handleSize: 16
+});
+let m = h

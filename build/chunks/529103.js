@@ -1,12 +1,13 @@
 /** Chunk was on web.js **/
+/** chunk id: 529103, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => l
 });
-var r = n(570140),
-  i = n(557968),
-  o = n(703656),
-  a = n(981631);
+var Chunk570140 = require("./570140.js"),
+  Chunk557968 = require("./557968.js"),
+  Chunk703656 = require("./703656.js"),
+  Chunk981631 = require("./981631.js");
 
 function s(e) {
   r.Z.dispatch({
@@ -17,8 +18,8 @@ function s(e) {
 let l = {
   transitionToSection(e) {
     let {
-      explicit: t = !1
-    } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
+      explicit: t = false
+    } = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {};
     (0, o.s1)().location.pathname !== a.Z5c.FRIENDS && (0, o.uL)(a.Z5c.FRIENDS), s(e), t && (0, i.Z)({
       tab_opened: e
     })

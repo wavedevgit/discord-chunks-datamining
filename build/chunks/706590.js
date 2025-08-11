@@ -1,18 +1,19 @@
 /** Chunk was on web.js **/
+/** chunk id: 706590, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => _,
   z: () => f
-}), n(388685);
-var r = n(392711),
-  i = n.n(r),
-  o = n(442837),
-  a = n(592125),
-  s = n(496675),
-  l = n(709054),
-  c = n(853856),
-  u = n(362658),
-  d = n(231338);
+}), require("./388685.js");
+var Chunk392711 = require("./392711.js"),
+  i = require.n(Chunk392711),
+  Chunk442837 = require("./442837.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk496675 = require("./496675.js"),
+  Chunk709054 = require("./709054.js"),
+  Chunk853856 = require("./853856.js"),
+  Chunk362658 = require("./362658.js"),
+  Chunk231338 = require("./231338.js");
 
 function f(e, t, n) {
   let {
@@ -21,12 +22,12 @@ function f(e, t, n) {
   } = u.Z.getCurrentConfig({
     location: "isFavoritesGuildVisible"
   }, {
-    autoTrackExposure: !1
+    autoTrackExposure: false
   });
-  if (o) return !0;
-  if (!r) return !1;
+  if (o) returntrue;
+  if (!r) returnfalse;
   let a = e.getFavoriteChannels();
-  if (i().isEmpty(a)) return !1;
+  if (i().isEmpty(a)) returnfalse;
   let s = l.default.keys(a).filter(e => {
     let r = t.getChannel(e);
     return null != r && (!!r.isPrivate() || n.can(d.Pl.VIEW_CHANNEL, r))
@@ -38,6 +39,6 @@ function _() {
   let {
     canShow: e,
     isFavoritesPerk: t
-  } = (0, u.z)("useIsFavoritesGuildVisible"), n = (0, o.e7)([c.Z, a.Z, s.Z], () => e && f(c.Z, a.Z, s.Z));
-  return !!t || n
+  } = (0, Chunk362658.z)("useIsFavoritesGuildVisible"), n = (0, Chunk442837.e7)([Chunk853856.Z, Chunk592125.Z, Chunk496675.Z], () => module && f(Chunk853856.Z, Chunk592125.Z, Chunk496675.Z));
+  return !!exports || require
 }

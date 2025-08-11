@@ -1,15 +1,16 @@
 /** Chunk was on 30634 **/
-n.d(t, {
+/** chunk id: 646785, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => o
-}), n(388685);
-var r = n(485589),
-  a = n(424706),
-  l = n(14160),
-  i = n(247123),
-  u = n(207662);
+}), require("./388685.js");
+var Chunk485589 = require("./485589.js"),
+  Chunk424706 = require("./424706.js"),
+  Chunk14160 = require("./14160.js"),
+  Chunk247123 = require("./247123.js"),
+  Chunk207662 = require("./207662.js");
 let o = {
   id: "aria-allowed-attributes",
-  selector: u.J8,
+  selector: Chunk207662.J8,
   tags: ["wcag2a", "wcag412"],
   metadata: {
     description: "Only use supported ARIA attributes",

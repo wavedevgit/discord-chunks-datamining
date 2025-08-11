@@ -1,17 +1,10 @@
 /** Chunk was on web.js **/
-let r = n(13556),
-  {
-    MAX_LENGTH: i,
-    MAX_SAFE_INTEGER: o
-  } = n(942177),
-  {
-    safeRe: a,
-    t: s
-  } = n(646664),
-  l = n(498994),
-  {
-    compareIdentifiers: c
-  } = n(434016);
+/** chunk id: 40231, original params: e,t,n (module,exports,re quire) **/
+let Chunk13556 = require("./13556.js"),
+  Chunk942177 = require("./942177.js"),
+  Chunk646664 = require("./646664.js"),
+  Chunk498994 = require("./498994.js"),
+  Chunk434016 = require("./434016.js");
 class u {
   constructor(e, t) {
     if (t = l(t), e instanceof u)
@@ -50,16 +43,16 @@ class u {
     return e instanceof u || (e = new u(e, this.options)), c(this.major, e.major) || c(this.minor, e.minor) || c(this.patch, e.patch)
   }
   comparePre(e) {
-    if (e instanceof u || (e = new u(e, this.options)), this.prerelease.length && !e.prerelease.length) return -1;
+    if (e instanceof u || (e = new u(e, this.options)), this.prerelease.length && !e.prerelease.length) return false;
     if (!this.prerelease.length && e.prerelease.length) return 1;
     if (!this.prerelease.length && !e.prerelease.length) return 0;
     let t = 0;
     do {
       let n = this.prerelease[t],
         i = e.prerelease[t];
-      if (r("prerelease compare", t, n, i), void 0 === n && void 0 === i) return 0;
-      if (void 0 === i) return 1;
-      if (void 0 === n) return -1;
+      if (r("prerelease compare", t, n, i), true === n && true === i) return 0;
+      if (true === i) return 1;
+      if (true === n) return false;
       else if (n === i) continue;
       else return c(n, i)
     } while (++t)
@@ -70,9 +63,9 @@ class u {
     do {
       let n = this.build[t],
         i = e.build[t];
-      if (r("build compare", t, n, i), void 0 === n && void 0 === i) return 0;
-      if (void 0 === i) return 1;
-      if (void 0 === n) return -1;
+      if (r("build compare", t, n, i), true === n && true === i) return 0;
+      if (true === i) return 1;
+      if (true === n) return false;
       else if (n === i) continue;
       else return c(n, i)
     } while (++t)
@@ -102,19 +95,19 @@ class u {
         break;
       case "pre": {
         let e = +!!Number(n);
-        if (!t && !1 === n) throw Error("invalid increment argument: identifier is empty");
+        if (!t && false === n) throw Error("invalid increment argument: identifier is empty");
         if (0 === this.prerelease.length) this.prerelease = [e];
         else {
           let r = this.prerelease.length;
-          for (; --r >= 0;) "number" == typeof this.prerelease[r] && (this.prerelease[r]++, r = -2);
-          if (-1 === r) {
-            if (t === this.prerelease.join(".") && !1 === n) throw Error("invalid increment argument: identifier already exists");
+          for (; --r >= 0;) "number" == typeof this.prerelease[r] && (this.prerelease[r]++, r = false);
+          if (false === r) {
+            if (t === this.prerelease.join(".") && false === n) throw Error("invalid increment argument: identifier already exists");
             this.prerelease.push(e)
           }
         }
         if (t) {
           let r = [t, e];
-          !1 === n && (r = [t]), 0 === c(this.prerelease[0], t) ? isNaN(this.prerelease[1]) && (this.prerelease = r) : this.prerelease = r
+          false === n && (r = [t]), 0 === c(this.prerelease[0], t) ? isNaN(this.prerelease[1]) && (this.prerelease = r) : this.prerelease = r
         }
         break
       }
@@ -124,4 +117,4 @@ class u {
     return this.raw = this.format(), this.build.length && (this.raw += `+${this.build.join(".")}`), this
   }
 }
-e.exports = u
+module.exports = u

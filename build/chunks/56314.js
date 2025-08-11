@@ -1,13 +1,14 @@
 /** Chunk was on web.js **/
+/** chunk id: 56314, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   v: () => l
 });
-var r = n(442837),
-  i = n(780384),
-  o = n(607070),
-  a = n(210887),
-  s = n(712057);
+var Chunk442837 = require("./442837.js"),
+  Chunk780384 = require("./780384.js"),
+  Chunk607070 = require("./607070.js"),
+  Chunk210887 = require("./210887.js"),
+  Chunk712057 = require("./712057.js");
 let l = e => {
   let t = (0, r.e7)([o.Z], () => o.Z.saturation),
     n = (0, r.e7)([a.Z], () => (0, i.wj)(a.Z.theme));

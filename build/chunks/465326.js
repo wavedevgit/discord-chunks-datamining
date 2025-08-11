@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 465326, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   mediaBarInteraction: "mediaBarInteraction_b26b79",
   mediaBarInteractionDragging: "mediaBarInteractionDragging_b26b79",
   mediaBarWrapper: "mediaBarWrapper_b26b79 fakeEdges_b26b79",

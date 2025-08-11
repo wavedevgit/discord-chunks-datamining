@@ -1,25 +1,26 @@
 /** Chunk was on web.js **/
+/** chunk id: 638880, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => y
 });
-var r = n(812206),
-  i = n(592125),
-  o = n(944486),
-  a = n(594174),
-  s = n(595519),
-  l = n(636449),
-  c = n(566620),
-  u = n(317381),
-  d = n(672181),
-  f = n(882347),
-  _ = n(16609),
-  p = n(224189),
-  h = n(574952),
-  m = n(917107),
-  g = n(89425),
-  E = n(197386),
-  b = n(701488);
+var Chunk812206 = require("./812206.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk944486 = require("./944486.js"),
+  Chunk594174 = require("./594174.js"),
+  Chunk595519 = require("./595519.js"),
+  Chunk636449 = require("./636449.js"),
+  Chunk566620 = require("./566620.js"),
+  Chunk317381 = require("./317381.js"),
+  Chunk672181 = require("./672181.js"),
+  Chunk882347 = require("./882347.js"),
+  Chunk16609 = require("./16609.js"),
+  Chunk224189 = require("./224189.js"),
+  Chunk574952 = require("./574952.js"),
+  Chunk917107 = require("./917107.js"),
+  Chunk89425 = require("./89425.js"),
+  Chunk197386 = require("./197386.js"),
+  Chunk701488 = require("./701488.js");
 
 function y(e) {
   return (0, l.C)((0, l.R)(), () => O(e))
@@ -39,13 +40,13 @@ async function O(e) {
     } = e,
     C = (0, h.Z)(),
     R = i.Z.getChannel(l),
-    P = null == R ? void 0 : R.getGuildId(),
+    P = null == R ? true : R.getGuildId(),
     w = null == P || "" === P,
     D = a.default.getCurrentUser();
-  if (null == D) return !1;
-  if (null == R || w && !R.isPrivate() || null == l) return Promise.resolve(!1);
+  if (null == D) returnfalse;
+  if (null == R || w && !R.isPrivate() || null == l) return Promise.resolve(false);
   let L = u.ZP.getCurrentEmbeddedActivity();
-  if ((null == L ? void 0 : L.applicationId) != null && (t = r.Z.getApplication(null == L ? void 0 : L.applicationId)), o.Z.getVoiceChannelId() === l && null != L && L.applicationId === n && (0, _.p)(L.location) === o.Z.getVoiceChannelId()) return (0, E.Z)(P, L.location), Promise.resolve(!0);
+  if ((null == L ? true : L.applicationId) != null && (t = r.Z.getApplication(null == L ? true : L.applicationId)), o.Z.getVoiceChannelId() === l && null != L && L.applicationId === n && (0, _.p)(L.location) === o.Z.getVoiceChannelId()) return (0, E.Z)(P, L.location), Promise.resolve(true);
   let x = await (0, p.Z)(n, l);
   if (!await (0, f.p)({
       applicationId: n,
@@ -54,7 +55,7 @@ async function O(e) {
       currentEmbeddedApplication: t,
       embeddedActivitiesManager: C,
       user: D
-    })) return !1;
+    })) returnfalse;
   if (null != R) {
     let e = (0, m.Z)(R.id),
       n = b.wP.includes(R.type);
@@ -62,13 +63,13 @@ async function O(e) {
       if (!await (0, g.Z)({
           channelId: R.id,
           bypassChangeModal: null != t
-        })) return !1
-    } else if (!(0, s.WS)(R) || !n) return !1
-  } else if (null == R) return !1;
+        })) returnfalse
+    } else if (!(0, s.WS)(R) || !n) returnfalse
+  } else if (null == R) returnfalse;
   return null != l && (0, d.Z)(l), null != L && (0, c.cG)(L.location), await (0, c.G6)({
     channelId: l,
     applicationId: n,
-    isStart: !1,
+    isStart: false,
     embeddedActivitiesManager: C,
     analyticsLocations: O,
     locationObject: y,

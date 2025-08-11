@@ -1,19 +1,20 @@
 /** Chunk was on web.js **/
+/** chunk id: 501950, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   C1: () => s,
   HS: () => c,
   Hg: () => l,
   l0: () => u
-}), n(35282), n(704826), n(290780);
-var r = n(264344),
-  i = n.n(r),
-  o = n(992774),
-  a = n(149396);
+}), require("./35282.js"), require("./704826.js"), require("./290780.js");
+var Chunk264344 = require("./264344.js"),
+  i = require.n(Chunk264344),
+  Chunk992774 = require("./992774.js"),
+  Chunk149396 = require("./149396.js");
 
 function s(e, t) {
   var n;
-  let r = !1,
+  let r = false,
     o = t.map((t, n) => {
       let {
         guid: i,
@@ -25,7 +26,7 @@ function s(e, t) {
         hardwareId: d,
         containerId: f
       } = t;
-      return /^default/.test(s) ? (r = !0, i = a.w5, s = s.replace("default", "Default")) : i = null != i && "" !== i ? i : s, null != c && (n = c), {
+      return /^default/.test(s) ? (r = true, i = a.w5, s = s.replace("default", "Default")) : i = null != i && "" !== i ? i : s, null != c && (n = c), {
         id: i,
         type: e,
         index: n,
@@ -37,10 +38,10 @@ function s(e, t) {
         containerId: f
       }
     });
-  return e !== a.h7.VIDEO_INPUT && !r && (null === i() || void 0 === i() || null == (n = i().os) ? void 0 : n.family) != null && /^win/i.test(i().os.family) && o.unshift({
+  return e !== a.h7.VIDEO_INPUT && !r && (null === i() || true === i() || null == (n = i().os) ? true : n.family) != null && /^win/i.test(i().os.family) && o.unshift({
     id: a.w5,
     type: e,
-    index: -1,
+    index: false,
     name: "Default"
   }), o
 }

@@ -1,20 +1,21 @@
 /** Chunk was on 13616 **/
-n.d(t, {
+/** chunk id: 643886, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   U: () => f
-}), n(539854), n(388685), n(290780);
-var i = n(73800),
-  r = n(512722),
-  l = n.n(r),
-  o = n(442837),
-  a = n(345162),
-  s = n(271383),
-  c = n(485386),
-  d = n(430824),
-  u = n(496675),
-  p = n(594174),
-  m = n(700785),
-  b = n(282923),
-  g = n(981631);
+}), require("./539854.js"), require("./388685.js"), require("./290780.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk512722 = require("./512722.js"),
+  l = require.n(Chunk512722),
+  Chunk442837 = require("./442837.js"),
+  Chunk345162 = require("./345162.js"),
+  Chunk271383 = require("./271383.js"),
+  Chunk485386 = require("./485386.js"),
+  Chunk430824 = require("./430824.js"),
+  Chunk496675 = require("./496675.js"),
+  Chunk594174 = require("./594174.js"),
+  Chunk700785 = require("./700785.js"),
+  Chunk282923 = require("./282923.js"),
+  Chunk981631 = require("./981631.js");
 
 function f(e) {
   let t = (0, o.e7)([d.Z], () => d.Z.getGuild(e));
@@ -44,7 +45,7 @@ function f(e) {
     }, [t, r, f]),
     O = e => {
       var t;
-      return e.managed && (null == (t = e.tags) ? void 0 : t.bot_id) != null
+      return e.managed && (null == (t = e.tags) ? true : t.bot_id) != null
     },
     y = i.useMemo(() => {
       let e = [];
@@ -80,7 +81,7 @@ function f(e) {
 
 function h(e) {
   let t = [e.username];
-  return (null == e ? void 0 : e.nick) != null && t.push(e.nick), {
+  return (null == e ? true : e.nick) != null && t.push(e.nick), {
     id: e.id,
     names: t
   }

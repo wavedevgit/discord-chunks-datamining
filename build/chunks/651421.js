@@ -1,9 +1,10 @@
 /** Chunk was on 21153 **/
+/** chunk id: 651421, original params: e,t,r (module,exports,require) **/
 "use strict";
-Object.defineProperty(t, "__esModule", {
-  value: !0
-}), t.autoprefix = void 0;
-var n, o = (n = r(320403)) && n.__esModule ? n : {
+Object.defineProperty(exports, "__esModule", {
+  value: true
+}), exports.autoprefix = true;
+var n, o = (n = require("./320403.js")) && n.__esModule ? n : {
     default: n
   },
   a = Object.assign || function(e) {
@@ -98,7 +99,7 @@ var n, o = (n = r(320403)) && n.__esModule ? n : {
       }
     }
   },
-  l = t.autoprefix = function(e) {
+  l = exports.autoprefix = function(e) {
     var t = {};
     return (0, o.default)(e, function(e, r) {
       var n = {};
@@ -108,4 +109,4 @@ var n, o = (n = r(320403)) && n.__esModule ? n : {
       }), t[r] = n
     }), t
   };
-t.default = l
+exports.default = l

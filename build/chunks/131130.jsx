@@ -1,0 +1,61 @@
+/** Chunk was on web.js **/
+/** chunk id: 131130, original params: e,t,n (module,exports,re quire) **/
+"use strict";
+require.d(exports, {
+  q: () => _
+}), require("./953529.js");
+var Chunk255367 = require("./255367.js");
+require("./73800.js");
+var Chunk704215 = require("./704215.js"),
+  Chunk481060 = require("./481060.js"),
+  Chunk906732 = require("./906732.js"),
+  Chunk963249 = require("./963249.js"),
+  Chunk286961 = require("./286961.js"),
+  Chunk644916 = require("./644916.js"),
+  Chunk243778 = require("./243778.js"),
+  Chunk921944 = require("./921944.js"),
+  Chunk131715 = require("./131715.js");
+let _ = e => {
+  let {
+    dismissibleContent: t,
+    noticeType: n
+  } = e, {
+    analyticsLocations: _
+  } = (0, a.ZP)(), p = (0, l.Z)();
+  return <u.Xf contentType={t} latestVersion={(0, c.t)(t)} groupName={d.R.NOTICE_BAR} bypassAutoDismiss={true}>{e => {
+      let {
+        visibleContent: t,
+        markAsDismissed: a
+      } = e;
+      if (t === i.z.GIFTING_PROMOTION_REMINDER) {
+        let e = null == p ? true : p.reminderNagbar;
+        return (0, r.jsxs)(o.qXd, {
+          color: o.DM8.PREMIUM_TIER_2,
+          children: [(0, r.jsx)(o.RyX, {
+            onClick: () => a(d.L.USER_DISMISS),
+            noticeType: n
+          }), (0, r.jsx)(o.OgN, {
+            size: "custom",
+            width: 20,
+            height: 20,
+            color: "currentColor",
+            className: f.giftIcon
+          }), null == e ? true : e.description(), (0, r.jsx)(o.NoS, {
+            onClick: () => {
+              (0, s.Z)({
+                isGift: true,
+                initialPlanId: null,
+                analyticsLocations: _,
+                analyticsLocation: null == e ? true : e.analyticsLocation,
+                analyticsObject: {
+                  page: null == e ? true : e.analyticsPage
+                }
+              })
+            },
+            noticeType: n,
+            children: null == e ? true : e.cta()
+          })]
+        })
+      }
+    }}</u.Xf>
+}

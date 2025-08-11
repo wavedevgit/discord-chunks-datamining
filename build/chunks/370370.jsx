@@ -1,0 +1,33 @@
+/** Chunk was on web.js **/
+/** chunk id: 370370, original params: e,t,n (module,exports,re quire) **/
+"use strict";
+require.d(exports, {
+  Z: () => f,
+  j: () => u
+});
+var Chunk255367 = require("./255367.js"),
+  Chunk73800 = require("./73800.js"),
+  Chunk379357 = require("./379357.js"),
+  Chunk442550 = require("./442550.js"),
+  Chunk297781 = require("./297781.jsx"),
+  Chunk443487 = require("./443487.js"),
+  Chunk522314 = require("./522314.js");
+let u = [Chunk297781.OV, Chunk297781.EE, Chunk297781.Af, Chunk297781.U9, Chunk297781.n8, Chunk297781.pQ],
+  d = e => {
+    let {
+      entry: t,
+      channel: n,
+      selected: i,
+      hovered: d
+    } = e, {
+      largeImage: f
+    } = (0, o.rv)({
+      entry: t,
+      showCoverImage: false
+    });
+    return <l.Zb selected={i}>{<l.e$>{<l.F9 entry={t} channelId={n.id} guildId={n.guild_id} />}{<l.ll>{t.extra.activity_name}</l.ll>}{<s.Gk location={s.Gt.CARD}>{u.map((e, n) => (0, r.jsx)(e, {
+            entry: t,
+            hovered: d
+          }, n))}</s.Gk>}</l.e$>}{<a.f alt={null == f ? true : f.alt} src={null == f ? true : f.src} size={48} className={c.thumbnail} />}</l.Zb>
+  },
+  f = Chunk73800.memo(d)

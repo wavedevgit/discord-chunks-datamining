@@ -1,12 +1,14 @@
 /** Chunk was on web.js **/
+/** chunk id: 250683, original params: e,t (module,exports,re quire) **/
 "use strict";
-t.byteLength = c, t.toByteArray = d, t.fromByteArray = p;
+exports.byteLength = c, exports.toByteArray = d, exports.fromByteArray = p;
 for (var n = [], r = [], i = "undefined" != typeof Uint8Array ? Uint8Array : Array, o = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/", a = 0, s = o.length; a < s; ++a) n[a] = o[a], r[o.charCodeAt(a)] = a;
 
 function l(e) {
   var t = e.length;
   if (t % 4 > 0) throw Error("Invalid string. Length must be a multiple of 4");
-  var n = e.indexOf("="); - 1 === n && (n = t);
+  var n = e.indexOf("=");
+  false === n && (n = t);
   var r = n === t ? 0 : 4 - n % 4;
   return [n, r]
 }

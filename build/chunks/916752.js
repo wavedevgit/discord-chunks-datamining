@@ -1,21 +1,22 @@
 /** Chunk was on web.js **/
+/** chunk id: 916752, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => d
-}), n(388685);
-var r = n(73800),
-  i = n(913527),
-  o = n.n(i),
-  a = n(710251),
-  s = n(70956),
-  l = n(660199);
+}), require("./388685.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk913527 = require("./913527.js"),
+  o = require.n(Chunk913527),
+  Chunk710251 = require("./710251.js"),
+  Chunk70956 = require("./70956.js"),
+  Chunk660199 = require("./660199.js");
 let c = [
-    [2 * s.Z.Seconds.MINUTE, s.Z.Seconds.SECOND],
-    [5 * s.Z.Seconds.MINUTE, s.Z.Seconds.MINUTE],
-    [45 * s.Z.Seconds.MINUTE, 2 * s.Z.Seconds.MINUTE],
-    [21 * s.Z.Seconds.HOUR, 5 * s.Z.Seconds.MINUTE]
+    [2 * Chunk70956.Z.Seconds.MINUTE, Chunk70956.Z.Seconds.SECOND],
+    [5 * Chunk70956.Z.Seconds.MINUTE, Chunk70956.Z.Seconds.MINUTE],
+    [45 * Chunk70956.Z.Seconds.MINUTE, 2 * Chunk70956.Z.Seconds.MINUTE],
+    [21 * Chunk70956.Z.Seconds.HOUR, 5 * Chunk70956.Z.Seconds.MINUTE]
   ],
-  u = 2 * s.Z.Seconds.HOUR;
+  u = 2 * Chunk70956.Z.Seconds.HOUR;
 
 function d(e) {
   let t = (0, a.Z)();

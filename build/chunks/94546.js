@@ -1,5 +1,6 @@
 /** Chunk was on 53512 **/
-e.exports = {
+/** chunk id: 94546, original params: e,t,n (module,exports,require) **/
+module.exports = {
   container: "container_adcef2",
   tabs: "tabs_adcef2",
   tab: "tab_adcef2",

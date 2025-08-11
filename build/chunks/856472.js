@@ -1,20 +1,21 @@
 /** Chunk was on web.js **/
+/** chunk id: 856472, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => l
-}), n(388685), n(704826), n(35282), n(539854), n(804061);
-var r = n(710845),
-  i = n(287328);
+}), require("./388685.js"), require("./704826.js"), require("./35282.js"), require("./539854.js"), require("./804061.js");
+var Chunk710845 = require("./710845.js"),
+  Chunk287328 = require("./287328.js");
 
 function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
-let a = new r.Z("GuildStickers");
+let a = new Chunk710845.Z("GuildStickers");
 class s {
   async getAsync(e) {
     let t = performance.now(),

@@ -1,11 +1,12 @@
 /** Chunk was on web.js **/
+/** chunk id: 539854, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-var r = n(98405),
-  i = n(527160),
-  o = n(914331),
-  a = n(640883),
-  s = n(861567),
-  l = n(621523)(function() {
+var Chunk98405 = require("./98405.js"),
+  Chunk527160 = require("./527160.js"),
+  Chunk914331 = require("./914331.js"),
+  Chunk640883 = require("./640883.js"),
+  Chunk861567 = require("./861567.js"),
+  l = require("./621523.js")(function() {
     return 0x100000001 !== [].push.call({
       length: 0x100000000
     }, 1)
@@ -13,15 +14,15 @@ var r = n(98405),
   c = function() {
     try {
       Object.defineProperty([], "length", {
-        writable: !1
+        writable: false
       }).push()
     } catch (e) {
-      return e instanceof TypeError
+      return module instanceof TypeError
     }
   };
-r({
+Chunk98405({
   target: "Array",
-  proto: !0,
+  proto: true,
   arity: 1,
   forced: l || !c()
 }, {

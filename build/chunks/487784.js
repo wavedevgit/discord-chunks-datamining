@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 487784, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   avatar: "avatar__75742",
   withReactReply: "withReactReply__75742",
   hoisted: "hoisted__75742",

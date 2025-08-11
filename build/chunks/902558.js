@@ -1,27 +1,28 @@
 /** Chunk was on web.js **/
+/** chunk id: 902558, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => g
-}), n(388685);
-var r = n(268146),
-  i = n(46973),
-  o = n(147913),
-  a = n(314897),
-  s = n(998502),
-  l = n(981631);
+}), require("./388685.js");
+var Chunk268146 = require("./268146.js"),
+  Chunk46973 = require("./46973.js"),
+  Chunk147913 = require("./147913.js"),
+  Chunk314897 = require("./314897.js"),
+  Chunk998502 = require("./998502.js"),
+  Chunk981631 = require("./981631.js");
 
 function c(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 let u = new Set;
 
 function d() {
-  for (let e of [r.X4.HasRTCConnection, r.X4.IsSendingVideo, r.X4.IsSendingStream, r.X4.IsReceivingVideo, r.X4.IsReceivingStream]) s.ZP.setCrashInformation(e, 0)
+  for (let e of [Chunk268146.X4.HasRTCConnection, Chunk268146.X4.IsSendingVideo, Chunk268146.X4.IsSendingStream, Chunk268146.X4.IsReceivingVideo, Chunk268146.X4.IsReceivingStream]) Chunk998502.ZP.setCrashInformation(module, 0)
 }
 
 function f(e) {
@@ -63,7 +64,7 @@ function h(e) {
   }
   s.ZP.setCrashInformation(o, +!!n)
 }
-class m extends o.Z {
+class m extends Chunk147913.Z {
   constructor(...e) {
     super(...e), c(this, "actions", {
       RTC_CONNECTION_STATE: p,

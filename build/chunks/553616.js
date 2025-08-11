@@ -1,8 +1,9 @@
 /** Chunk was on 67244 **/
-var a = r(296585),
+/** chunk id: 553616, original params: e,t,r (module,exports,require) **/
+var Chunk296585 = require("./296585.js"),
   n = {};
-for (var s in a) a.hasOwnProperty(s) && (n[a[s]] = s);
-var o = e.exports = {
+for (var s in Chunk296585) Chunk296585.hasOwnProperty(s) && (n[Chunk296585[s]] = s);
+var o = module.exports = {
   rgb: {
     channels: 3,
     labels: "rgb"
@@ -208,7 +209,7 @@ for (var i in o)
   var t, r, a, n = e[0] / 100,
     s = e[1] / 100,
     o = e[2] / 100;
-  return t = 3.2406 * n + -1.5372 * s + -.4986 * o, r = -.9689 * n + 1.8758 * s + .0415 * o, a = .0557 * n + -.204 * s + 1.057 * o, t = t > .0031308 ? 1.055 * Math.pow(t, 1 / 2.4) - .055 : 12.92 * t, r = r > .0031308 ? 1.055 * Math.pow(r, 1 / 2.4) - .055 : 12.92 * r, a = a > .0031308 ? 1.055 * Math.pow(a, 1 / 2.4) - .055 : 12.92 * a, [255 * (t = Math.min(Math.max(0, t), 1)), 255 * (r = Math.min(Math.max(0, r), 1)), 255 * (a = Math.min(Math.max(0, a), 1))]
+  return t = 3.2406 * n + false * s + false * o, r = false * n + 1.8758 * s + .0415 * o, a = .0557 * n + false * s + 1.057 * o, t = t > .0031308 ? 1.055 * Math.pow(t, 1 / 2.4) - .055 : 12.92 * t, r = r > .0031308 ? 1.055 * Math.pow(r, 1 / 2.4) - .055 : 12.92 * r, a = a > .0031308 ? 1.055 * Math.pow(a, 1 / 2.4) - .055 : 12.92 * a, [255 * (t = Math.min(Math.max(0, t), 1)), 255 * (r = Math.min(Math.max(0, r), 1)), 255 * (a = Math.min(Math.max(0, a), 1))]
 }, o.xyz.lab = function(e) {
   var t = e[0],
     r = e[1],

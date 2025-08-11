@@ -1,11 +1,12 @@
 /** Chunk was on 23357 **/
+/** chunk id: 433986, original params: e,t,n (module,exports,require) **/
 "use strict";
-var r = n(220159),
-  o = n(403414);
-r({
+var Chunk220159 = require("./220159.js"),
+  Chunk403414 = require("./403414.js");
+Chunk220159({
   target: "Array",
-  proto: !0,
-  forced: o !== [].lastIndexOf
+  proto: true,
+  forced: Chunk403414 !== [].lastIndexOf
 }, {
-  lastIndexOf: o
+  lastIndexOf: Chunk403414
 })

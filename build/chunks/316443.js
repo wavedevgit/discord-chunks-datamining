@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 316443, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   sectionContainer: "sectionContainer__61424",
   sectionContainerNitroLocked: "sectionContainerNitroLocked__61424",
   sectionHeader: "sectionHeader__61424",

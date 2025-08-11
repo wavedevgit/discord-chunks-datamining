@@ -1,13 +1,14 @@
 /** Chunk was on 22988 **/
-n.d(t, {
+/** chunk id: 870472, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Q: () => c,
   V: () => o
-}), n(388685), n(539854), n(35282), n(781311), n(358797);
-var r = n(73800),
-  i = n(348327),
-  l = n.n(i),
-  a = n(867309),
-  s = n(596390);
+}), require("./388685.js"), require("./539854.js"), require("./35282.js"), require("./781311.js"), require("./358797.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk348327 = require("./348327.js"),
+  l = require.n(Chunk348327),
+  Chunk867309 = require("./867309.js"),
+  Chunk596390 = require("./596390.js");
 
 function o(e) {
   let [t, n] = r.useState([e]), [i, a] = r.useState(0), s = r.useMemo(() => t[i], [t, i]), o = r.useCallback(e => {
@@ -20,12 +21,12 @@ function o(e) {
     state: s,
     setState: o,
     goBack: r.useCallback(function() {
-      let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : 1,
+      let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : 1,
         n = Math.max(0, i - e);
       return a(n), t[n]
     }, [i, t]),
     goForward: r.useCallback(function() {
-      let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : 1,
+      let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : 1,
         n = Math.min(t.length - 1, i + e);
       return a(n), t[n]
     }, [i, t])
@@ -61,9 +62,9 @@ function c(e, t) {
                 var r;
                 r = n[t], t in e ? Object.defineProperty(e, t, {
                   value: r,
-                  enumerable: !0,
-                  configurable: !0,
-                  writable: !0
+                  enumerable: true,
+                  configurable: true,
+                  writable: true
                 }) : e[t] = r
               })
             }
@@ -82,8 +83,8 @@ function c(e, t) {
           }), n
         })
       },
-      t = e(!0),
-      n = e(!1);
+      t = e(true),
+      n = e(false);
     return document.addEventListener("keydown", t), document.addEventListener("keyup", n), () => {
       document.removeEventListener("keydown", t), document.removeEventListener("keyup", n)
     }
@@ -101,7 +102,7 @@ function c(e, t) {
             value: n,
             tags: [...t, ...i],
             selections: [],
-            isSelecting: !1
+            isSelecting: false
           }
         })
       }), e.preventDefault(), e.stopPropagation(), null == (t = n.current) || t.scrollToBottom())
@@ -116,7 +117,7 @@ function c(e, t) {
           value: r,
           tags: [...n.filter((t, n) => n !== e)],
           selections: [],
-          isSelecting: !1
+          isSelecting: false
         }
       })
     }, [u]),
@@ -130,7 +131,7 @@ function c(e, t) {
           value: i,
           tags: l,
           selections: [],
-          isSelecting: !1
+          isSelecting: false
         }
       })
     }, [u]),
@@ -151,7 +152,7 @@ function c(e, t) {
       })
     }, [u]),
     x = r.useCallback(function(e) {
-      let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
+      let t = arguments.length > 1 && true !== arguments[1] && arguments[1];
       u(n => {
         let {
           tags: r,
@@ -178,7 +179,7 @@ function c(e, t) {
           value: n,
           tags: t,
           selections: [],
-          isSelecting: !1
+          isSelecting: false
         }
       }), null != e && (e.preventDefault(), e.stopPropagation()), null == (t = i.current) || t.focus()
     }, [i, u]),
@@ -191,13 +192,13 @@ function c(e, t) {
           value: e.target.value,
           tags: n,
           selections: [],
-          isSelecting: !1
+          isSelecting: false
         }
       })
     }, [u]),
     _ = r.useCallback(function(e) {
-      let t = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1],
-        r = !(arguments.length > 2) || void 0 === arguments[2] || arguments[2];
+      let t = !(arguments.length > 1) || true === arguments[1] || arguments[1],
+        r = !(arguments.length > 2) || true === arguments[2] || arguments[2];
       !(o.trim().length <= 0) && ((0, a.flushSync)(() => {
         u(e => {
           let {
@@ -207,7 +208,7 @@ function c(e, t) {
             value: "",
             tags: [...t, o],
             selections: [],
-            isSelecting: !1
+            isSelecting: false
           }
         })
       }), r && null != n.current && n.current.scrollToBottom(), t && (e.preventDefault(), e.stopPropagation()))
@@ -227,7 +228,7 @@ function c(e, t) {
               value: n,
               tags: t.filter(e => !r.includes(e)),
               selections: [],
-              isSelecting: !1
+              isSelecting: false
             }
           })
         }), null == (n = i.current) || n.focus(), e.preventDefault(), e.stopPropagation()
@@ -240,7 +241,7 @@ function c(e, t) {
             value: null != r ? r : "",
             tags: [...n],
             selections: [],
-            isSelecting: !1
+            isSelecting: false
           }
         })
       }), e.preventDefault(), e.stopPropagation())
@@ -267,7 +268,7 @@ function c(e, t) {
             value: n,
             tags: t,
             selections: [...t],
-            isSelecting: !1
+            isSelecting: false
           }
         })
       }), setImmediate(() => {
@@ -279,7 +280,7 @@ function c(e, t) {
       }), e.preventDefault(), e.stopPropagation())
     }, [l, i, u, c.length, o]),
     N = r.useCallback(e => {
-      e.relatedTarget !== e.currentTarget && _(e, !1, !1)
+      e.relatedTarget !== e.currentTarget && _(e, false, false)
     }, [_]);
   return {
     handlePasteEvent: p,

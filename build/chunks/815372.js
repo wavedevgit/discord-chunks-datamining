@@ -1,24 +1,25 @@
 /** Chunk was on web.js **/
+/** chunk id: 815372, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   FL: () => s,
   Ky: () => a
-}), n(415506);
-var r = n(81825),
-  i = n(981631);
+}), require("./415506.js");
+var Chunk81825 = require("./81825.js"),
+  Chunk981631 = require("./981631.js");
 
 function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 var a = function(e) {
   return e.SHOP = "SHOP", e.NITRO_HOME = "NITRO_HOME", e.QUEST_HOME = "QUEST_HOME", e.APPS_HOME = "APPS_HOME", e.SETTINGS = "SETTINGS", e
 }(a || {});
-class s extends r.Z {
+class s extends Chunk81825.Z {
   static fromType(e, t, n) {
     switch (e) {
       case "SHOP":
@@ -52,6 +53,6 @@ class s extends r.Z {
     }
   }
   constructor(e) {
-    super(), o(this, "id", void 0), o(this, "path", void 0), o(this, "type", void 0), o(this, "label", void 0), this.id = e.type, this.path = e.path, this.type = e.type, this.label = e.label
+    super(), o(this, "id", true), o(this, "path", true), o(this, "type", true), o(this, "label", true), this.id = e.type, this.path = e.path, this.type = e.type, this.label = e.label
   }
 }

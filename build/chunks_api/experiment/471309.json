@@ -1,1 +1,0 @@
-{"id":"471309","type":"experiment","data":{"kind":"user","id":"2024-08_tiered_tenure_badges","label":"Tiered Tenure Badging","defaultConfig":{"enabled":false},"commonTriggerPoint":"l.$P.CONNECTION_OPEN","treatments":[{"id":2,"label":"Enable Tiered Tenure Badges v2","config":{"enabled":false}}]},"fromModule":{"id":"89839"}}

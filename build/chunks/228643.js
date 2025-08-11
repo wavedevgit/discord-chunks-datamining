@@ -1,18 +1,19 @@
 /** Chunk was on 54597 **/
-n.d(t, {
+/** chunk id: 228643, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   L_: () => r,
   nj: () => c,
   sE: () => l
 });
-var i = n(544891),
-  a = n(570140),
-  o = n(480608),
-  s = n(981631);
+var Chunk544891 = require("./544891.js"),
+  Chunk570140 = require("./570140.js"),
+  Chunk480608 = require("./480608.js"),
+  Chunk981631 = require("./981631.js");
 
 function l(e, t) {
   i.tn.get({
     url: s.ANM.GUILD_ROLE_CONNECTIONS_CONFIGURATION(e, t),
-    rejectWithError: !0
+    rejectWithError: true
   }).then(e => {
     let n = [];
     e.body.length > 0 && (n = e.body.map(e => e.map(e => ({
@@ -39,8 +40,8 @@ async function r(e, t, n) {
     r = await i.tn.put({
       url: s.ANM.GUILD_ROLE_CONNECTIONS_CONFIGURATION(e, t),
       body: 0 === l.length ? [] : l,
-      oldFormErrors: !0,
-      rejectWithError: !1
+      oldFormErrors: true,
+      rejectWithError: false
     }).then(e => {
       let t = [];
       return e.body.length > 0 && (t = e.body.map(e => e.map(e => ({
@@ -51,7 +52,7 @@ async function r(e, t, n) {
         value: e.value
       })))), t
     }),
-    c = await (0, o.H)(e, t, !1);
+    c = await (0, o.H)(e, t, false);
   null != c && a.Z.dispatch({
     type: "GUILD_ROLE_MEMBER_COUNT_UPDATE",
     guildId: e,
@@ -64,8 +65,8 @@ async function r(e, t, n) {
   })
 }
 async function c() {
-  return (await i.tn.get({
-    url: s.ANM.APPLICATION_USER_ROLE_CONNECTIONS,
-    rejectWithError: !1
+  return (await Chunk544891.tn.get({
+    url: Chunk981631.ANM.APPLICATION_USER_ROLE_CONNECTIONS,
+    rejectWithError: false
   })).body
 }

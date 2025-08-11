@@ -1,5 +1,6 @@
 /** Chunk was on 75708 **/
-e.exports = {
+/** chunk id: 60503, original params: e,t,n (module,exports,require) **/
+module.exports = {
   navBar: "navBar__88ef1",
   nitroWheelIcon: "nitroWheelIcon__88ef1",
   nitroWheelIconColor: "nitroWheelIconColor__88ef1",

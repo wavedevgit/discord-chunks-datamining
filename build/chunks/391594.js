@@ -1,38 +1,39 @@
 /** Chunk was on 30141 **/
-n.d(e, {
+/** chunk id: 391594, original params: t,e,n (module,exports,require) **/
+require.d(exports, {
   $0: () => B,
   Xw: () => R,
   cf: () => L,
   f1: () => D,
   ys: () => C
-}), n(314940), n(539854), n(388685);
-var r = n(73800),
-  i = n(505266),
-  l = n(512722),
-  a = n.n(l),
-  s = n(278074),
-  o = n(979554),
-  u = n(481060),
-  c = n(37234),
-  d = n(230711),
-  p = n(1585),
-  f = n(318110),
-  O = n(333867),
-  y = n(98278),
-  b = n(642619),
-  g = n(110560),
-  h = n(507808),
-  P = n(626135),
-  m = n(585483),
-  v = n(63063),
-  A = n(884697),
-  E = n(328456),
-  I = n(302800),
-  T = n(215023),
-  j = n(981631),
-  w = n(474936),
-  S = n(427487),
-  _ = n(388032);
+}), require("./314940.js"), require("./539854.js"), require("./388685.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk505266 = require("./505266.js"),
+  Chunk512722 = require("./512722.js"),
+  a = require.n(Chunk512722),
+  Chunk278074 = require("./278074.js"),
+  Chunk979554 = require("./979554.js"),
+  Chunk481060 = require("./481060.js"),
+  Chunk37234 = require("./37234.js"),
+  Chunk230711 = require("./230711.js"),
+  Chunk1585 = require("./1585.jsx"),
+  Chunk318110 = require("./318110.jsx"),
+  Chunk333867 = require("./333867.jsx"),
+  Chunk98278 = require("./98278.js"),
+  Chunk642619 = require("./642619.js"),
+  Chunk110560 = require("./110560.jsx"),
+  Chunk507808 = require("./507808.js"),
+  Chunk626135 = require("./626135.js"),
+  Chunk585483 = require("./585483.js"),
+  Chunk63063 = require("./63063.js"),
+  Chunk884697 = require("./884697.js"),
+  Chunk328456 = require("./328456.js"),
+  Chunk302800 = require("./302800.js"),
+  Chunk215023 = require("./215023.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk474936 = require("./474936.js"),
+  Chunk427487 = require("./427487.js"),
+  Chunk388032 = require("./388032.jsx");
 let k = t => null != t ? _.intl.format(_.t["4kp0AA"], {
     itemName: t
   }) : null,
@@ -93,7 +94,7 @@ let k = t => null != t ? _.intl.format(_.t["4kp0AA"], {
       purchased_item: i,
       suggested_item: l
     });
-    return (0, s.EQ)(null == e ? void 0 : e.type).with(o.Z.BUNDLE, () => {
+    return (0, s.EQ)(null == e ? true : e.type).with(o.Z.BUNDLE, () => {
       let {
         itemOneName: t,
         itemTwoName: n
@@ -162,7 +163,7 @@ let k = t => null != t ? _.intl.format(_.t["4kp0AA"], {
       onClick: t => {
         t.stopPropagation(), (0, O.Z)({
           skuId: n.skuId,
-          isGift: !0,
+          isGift: true,
           giftingOrigin: w.Wt.SHOP_PAGE,
           analyticsLocations: i,
           variantsReturnStyle: v,

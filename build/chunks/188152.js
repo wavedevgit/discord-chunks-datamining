@@ -1,11 +1,12 @@
 /** Chunk was on 67244 **/
+/** chunk id: 188152, original params: e,t,r (module,exports,require) **/
 "use strict";
-r.d(t, {
+require.d(exports, {
   Z: () => c
 });
-var a = r(565294),
-  n = r(667929),
-  s = r(326655);
+var Chunk565294 = require("./565294.js"),
+  Chunk667929 = require("./667929.js"),
+  Chunk326655 = require("./326655.js");
 
 function o(e, t) {
   var r = Object.keys(e);
@@ -21,7 +22,7 @@ function o(e, t) {
 function i(e) {
   for (var t = 1; t < arguments.length; t++) {
     var r = null != arguments[t] ? arguments[t] : {};
-    t % 2 ? o(Object(r), !0).forEach(function(t) {
+    t % 2 ? o(Object(r), true).forEach(function(t) {
       (0, a.Z)(e, t, r[t])
     }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r)) : o(Object(r)).forEach(function(t) {
       Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
@@ -29,7 +30,7 @@ function i(e) {
   }
   return e
 }
-let c = (0, n.t7)(function(e) {
+let c = (0, Chunk667929.t7)(function(e) {
   var t = {
     BACKGROUND_COLOR: e.base00,
     TEXT_COLOR: e.base07,
@@ -198,5 +199,5 @@ let c = (0, n.t7)(function(e) {
     }
   }
 }, {
-  defaultBase16: s.Z
+  defaultBase16: Chunk326655.Z
 })

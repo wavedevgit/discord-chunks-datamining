@@ -1,8 +1,9 @@
 /** Chunk was on 75708 **/
-n.d(t, {
+/** chunk id: 652262, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   M: () => s
 });
-var i = n(399606);
-n(594174);
-var r = n(914788);
-let s = () => (0, i.e7)([r.Z], () => r.Z.getSelectedTeenId())
+var Chunk399606 = require("./399606.js");
+require("./594174.js");
+var Chunk914788 = require("./914788.js");
+let s = () => (0, Chunk399606.e7)([Chunk914788.Z], () => Chunk914788.Z.getSelectedTeenId())

@@ -1,5 +1,6 @@
 /** Chunk was on 49152 **/
-e.exports = {
+/** chunk id: 409826, original params: e,t,n (module,exports,require) **/
+module.exports = {
   containerColumn: "containerColumn_fcb27c",
   container: "container_fcb27c",
   buttonWithTextButton: "buttonWithTextButton_fcb27c",

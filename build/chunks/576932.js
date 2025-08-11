@@ -1,5 +1,6 @@
 /** Chunk was on 22988 **/
-e.exports = {
+/** chunk id: 576932, original params: e,t,n (module,exports,require) **/
+module.exports = {
   chipletFlexContainer: "chipletFlexContainer__3b3ff",
   blinkAsEdited: "blinkAsEdited__3b3ff",
   chipletContainer: "chipletContainer__3b3ff",

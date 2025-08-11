@@ -1,0 +1,254 @@
+/** Chunk was on web.js **/
+/** chunk id: 289393, original params: e,t,n (module,exports,re quire) **/
+"use strict";
+require.d(exports, {
+  M: () => d,
+  Z: () => K
+}), require("./388685.js");
+var r, Chunk512722 = require("./512722.js"),
+  o = require.n(Chunk512722),
+  Chunk442837 = require("./442837.js"),
+  Chunk759174 = require("./759174.js"),
+  Chunk570140 = require("./570140.js"),
+  Chunk308636 = require("./308636.js");
+
+function u(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+var d = function(e) {
+  return e[e.NOT_FETCHED = 0] = "NOT_FETCHED", e[e.FETCHING = 1] = "FETCHING", e[e.FETCHED = 2] = "FETCHED", e
+}({});
+
+function f(e) {
+  return "guild:".concat(e)
+}
+
+function _(e) {
+  return "subscription_listing:".concat(e)
+}
+
+function p(e) {
+  return "application:".concat(e)
+}
+
+function h(e) {
+  return "plan:".concat(e)
+}
+let m = new Chunk759174.h(e => [f(e.guild_id), ...e.subscription_listings_ids.map(_)], e => e.id),
+  g = new Chunk759174.h(e => [p(e.application_id), h(e.subscription_plans[0].id)], e => e.id),
+  E = {},
+  b = new Set,
+  y = {},
+  O = {},
+  v = {},
+  I = {},
+  T = new Map;
+
+function S(e) {
+  return m.values(f(e))
+}
+
+function A(e) {
+  var t;
+  for (let n of (m.set(e.id, e), T.set(e.guild_id, e.application_id), null != (t = e.subscription_listings) ? t : [])) N(n)
+}
+
+function N(e) {
+  g.set(e.id, e)
+}
+
+function C() {
+  m.clear(), g.clear(), E = {}, b.clear(), y = {}, O = {}, v = {}, I = {}, T.clear()
+}
+
+function R(e) {
+  let {
+    settings: t
+  } = e;
+  y[t.guild_id] = t
+}
+
+function P(e) {
+  let {
+    guildId: t
+  } = e;
+  for (let e of (E[t] = 1, S(t)))
+    for (let t of (m.delete(e.id), e.subscription_listings_ids)) g.delete(t)
+}
+
+function w(e) {
+  let {
+    guildId: t,
+    groupListings: n,
+    settings: r,
+    subscriptionTrials: i
+  } = e;
+  for (let e of (E[t] = 2, n)) A(e);
+  for (let e of (y[t] = r, i)) O[e.id] = e
+}
+
+function D(e) {
+  let {
+    guildId: t
+  } = e;
+  E[t] = 2
+}
+
+function L(e) {
+  let {
+    listing: t
+  } = e;
+  A(t)
+}
+
+function x(e) {
+  let {
+    groupListingId: t
+  } = e;
+  m.delete(t)
+}
+
+function M(e) {
+  let {
+    planId: t
+  } = e;
+  b.add(t)
+}
+
+function k(e) {
+  let {
+    groupListing: t
+  } = e;
+  A(t)
+}
+
+function j(e) {
+  let {
+    listing: t,
+    groupListing: n
+  } = e;
+  N(t), A(n)
+}
+
+function U(e) {
+  let {
+    listing: t
+  } = e;
+  N(t)
+}
+
+function G(e) {
+  let {
+    listingId: t
+  } = e;
+  return g.delete(t)
+}
+
+function B(e) {
+  let {
+    subscriptionTrial: t
+  } = e;
+  O[t.id] = t
+}
+
+function Z(e) {
+  let {
+    guildId: t
+  } = e;
+  I[t] = 1
+}
+
+function F(e) {
+  let {
+    guildId: t,
+    restrictions: n
+  } = e;
+  v[t] = n, I[t] = 2
+}
+
+function V(e) {
+  let {
+    guildId: t
+  } = e;
+  I[t] = 2, v[t] = c.m
+}
+
+function H(e) {
+  let {
+    guildId: t
+  } = e;
+  I[t] = 0
+}
+let Y = [];
+class W extends(r = Chunk442837.ZP.Store) {
+  getSubscriptionGroupListingsForGuildFetchState(e) {
+    var t;
+    return null != (t = E[e]) ? t : 0
+  }
+  getDidFetchListingForSubscriptionPlanId(e) {
+    return b.has(e)
+  }
+  getSubscriptionGroupListing(e) {
+    return m.get(e)
+  }
+  getSubscriptionGroupListingsForGuild(e) {
+    return S(e)
+  }
+  getSubscriptionGroupListingForSubscriptionListing(e) {
+    let t = m.values(_(e));
+    return o()(t.length <= 1, "Found multiple group listings for listing"), t[0]
+  }
+  getSubscriptionListing(e) {
+    return g.get(e)
+  }
+  getSubscriptionListingsForGuild(e) {
+    var t;
+    let n = null == (t = this.getSubscriptionGroupListingsForGuild(e)[0]) ? true : t.application_id;
+    return null != n ? g.values(p(n)) : Y
+  }
+  getSubscriptionListingForPlan(e) {
+    let t = g.values(h(e));
+    return o()(t.length <= 1, "Found multiple listings for plan"), t[0]
+  }
+  getSubscriptionSettings(e) {
+    return y[e]
+  }
+  getSubscriptionTrial(e) {
+    return O[e]
+  }
+  getMonetizationRestrictions(e) {
+    return v[e]
+  }
+  getMonetizationRestrictionsFetchState(e) {
+    var t;
+    return null != (t = I[e]) ? t : 0
+  }
+  getApplicationIdForGuild(e) {
+    return T.get(e)
+  }
+}
+u(W, "displayName", "GuildRoleSubscriptionsStore");
+let K = new W(Chunk570140.Z, {
+  CONNECTION_OPEN: C,
+  GUILD_ROLE_SUBSCRIPTIONS_UPDATE_SUBSCRIPTIONS_SETTINGS: R,
+  GUILD_ROLE_SUBSCRIPTIONS_FETCH_LISTINGS: P,
+  GUILD_ROLE_SUBSCRIPTIONS_FETCH_LISTINGS_SUCCESS: w,
+  GUILD_ROLE_SUBSCRIPTIONS_FETCH_LISTINGS_FAILURE: D,
+  GUILD_ROLE_SUBSCRIPTIONS_UPDATE_GROUP_LISTING: L,
+  GUILD_ROLE_SUBSCRIPTIONS_DELETE_GROUP_LISTING: x,
+  GUILD_ROLE_SUBSCRIPTIONS_FETCH_LISTING_FOR_PLAN: M,
+  GUILD_ROLE_SUBSCRIPTIONS_FETCH_LISTING_FOR_PLAN_SUCCESS: k,
+  GUILD_ROLE_SUBSCRIPTIONS_CREATE_LISTING: j,
+  GUILD_ROLE_SUBSCRIPTIONS_UPDATE_LISTING: U,
+  GUILD_ROLE_SUBSCRIPTIONS_DELETE_LISTING: G,
+  GUILD_ROLE_SUBSCRIPTIONS_UPDATE_SUBSCRIPTION_TRIAL: B,
+  GUILD_ROLE_SUBSCRIPTIONS_FETCH_RESTRICTIONS: Z,
+  GUILD_ROLE_SUBSCRIPTIONS_FETCH_RESTRICTIONS_SUCCESS: F,
+  GUILD_ROLE_SUBSCRIPTIONS_FETCH_RESTRICTIONS_FAILURE: V,
+  GUILD_ROLE_SUBSCRIPTIONS_FETCH_RESTRICTIONS_ABORTED: H
+})

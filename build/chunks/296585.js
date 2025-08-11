@@ -1,6 +1,7 @@
 /** Chunk was on 67244 **/
+/** chunk id: 296585, original params: e (module,exports,require) **/
 "use strict";
-e.exports = {
+module.exports = {
   aliceblue: [240, 248, 255],
   antiquewhite: [250, 235, 215],
   aqua: [0, 255, 255],

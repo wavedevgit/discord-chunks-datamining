@@ -1,0 +1,150 @@
+/** Chunk was on web.js **/
+/** chunk id: 580005, original params: e,t,n (module,exports,re quire) **/
+"use strict";
+require.d(exports, {
+  C: () => v,
+  Z: () => w
+}), require("./35282.js"), require("./539854.js");
+var r, Chunk392711 = require("./392711.js"),
+  o = require.n(Chunk392711),
+  Chunk442837 = require("./442837.js"),
+  Chunk570140 = require("./570140.js"),
+  Chunk704907 = require("./704907.js"),
+  Chunk581883 = require("./581883.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk430824 = require("./430824.js"),
+  Chunk944486 = require("./944486.js"),
+  Chunk914010 = require("./914010.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk526761 = require("./526761.js");
+
+function m(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+
+function g(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      m(e, t, n[t])
+    })
+  }
+  return e
+}
+
+function E(e, t) {
+  var n = Object.keys(e);
+  if (Object.getOwnPropertySymbols) {
+    var r = Object.getOwnPropertySymbols(e);
+    t && (r = r.filter(function(t) {
+      return Object.getOwnPropertyDescriptor(e, t).enumerable
+    })), n.push.apply(n, r)
+  }
+  return n
+}
+
+function b(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : E(Object(t)).forEach(function(n) {
+    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+  }), e
+}
+let y = 10,
+  O = 100,
+  v = 100,
+  I = new Chunk704907.ZP({
+    computeBonus: () => O,
+    computeWeight: e => {
+      let t = 1;
+      return 0 === e ? t = 100 : e >= 1 && e < 2 ? t = 70 : e >= 2 && e < 4 ? t = 50 : e >= 4 && e < 7 ? t = 30 : e >= 7 && (t = 10), t
+    },
+    lookupKey: e => {
+      var t, n;
+      return null != (n = null != (t = d.Z.getGuild(e)) ? t : u.Z.getChannel(e)) ? n : u.Z.getChannel(u.Z.getDMFromUserId(e))
+    },
+    afterCompute: () => {},
+    numFrequentlyItems: v,
+    maxSamples: y
+  }),
+  T = null,
+  S = null;
+
+function A(e) {
+  let {
+    guildId: t,
+    channelId: n
+  } = e, r = false;
+  return n !== T && (T = null != n ? n : null, null != n && p.Xyh.test(n) && (r = true, I.track(n), R.pendingUsages.push({
+    key: n,
+    timestamp: Date.now()
+  }))), t !== S && (S = null != t ? t : null, null != t && p.Xyh.test(t) && (r = true, I.track(t), R.pendingUsages.push({
+    key: t,
+    timestamp: Date.now()
+  }))), r
+}
+
+function N(e) {
+  let {
+    settings: {
+      type: t
+    },
+    wasSaved: n
+  } = e;
+  return t === h.yP.FRECENCY_AND_FAVORITES_SETTINGS && !!n && (R.pendingUsages = [], true)
+}
+
+function C() {
+  var e;
+  let t = null == (e = Chunk581883.Z.frecencyWithoutFetchingLatest.guildAndChannelFrecency) ? true : module.guildAndChannels;
+  if (null == exports) returnfalse;
+  I.overwriteHistory(o().mapValues(exports, e => b(g({}, e), {
+    recentUses: e.recentUses.map(Number).filter(e => e > 0)
+  })), R.pendingUsages)
+}
+let R = {
+  pendingUsages: []
+};
+class P extends(r = Chunk442837.ZP.PersistedStore) {
+  initialize(e) {
+    this.waitFor(_.Z, f.Z), null != e && (e.pendingUsages = e.pendingUsages.filter(e => null != e && p.Xyh.test(e.key)), R = e), this.syncWith([c.Z], C)
+  }
+  getState() {
+    return R
+  }
+  hasPendingUsage() {
+    return R.pendingUsages.length > 0
+  }
+  get frecencyWithoutFetchingLatest() {
+    return I
+  }
+  getFrequentlyWithoutFetchingLatest() {
+    return I.frequently
+  }
+  getScoreWithoutFetchingLatest(e) {
+    var t;
+    return null != (t = I.getFrecency(e)) ? t : 0
+  }
+  getScoreForDMWithoutFetchingLatest(e) {
+    let t = u.Z.getDMFromUserId(e);
+    return null != t ? this.getScoreWithoutFetchingLatest(t) : 0
+  }
+  getMaxScore() {
+    return v * y
+  }
+  getBonusScore() {
+    return O
+  }
+}
+m(P, "displayName", "FrecencyStore"), m(P, "persistKey", "FrecencyStore");
+let w = new P(Chunk570140.Z, {
+  CHANNEL_SELECT: A,
+  VOICE_CHANNEL_SELECT: A,
+  USER_SETTINGS_PROTO_UPDATE: N
+})

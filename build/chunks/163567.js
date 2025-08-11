@@ -1,5 +1,6 @@
 /** Chunk was on web.js **/
+/** chunk id: 163567, original params: e (module,exports,re quire) **/
 "use strict";
-e.exports = function(e) {
+module.exports = function(e) {
   return "string" == typeof e || "symbol" == typeof e
 }

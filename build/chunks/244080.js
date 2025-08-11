@@ -1,13 +1,14 @@
 /** Chunk was on 1272 **/
-n.d(t, {
+/** chunk id: 244080, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => i
 });
-var r = n(380349);
+var Chunk380349 = require("./380349.js");
 
 function i(e) {
   let {
     currentActivities: t,
     isSpotifyActivity: n
-  } = e, i = t[0], l = (0, r.Z)(null == i ? void 0 : i.activity, null == i ? void 0 : i.activityUser);
+  } = e, i = t[0], l = (0, r.Z)(null == i ? true : i.activity, null == i ? true : i.activityUser);
   return n ? l : null
 }

@@ -1,2 +1,3 @@
 /** Chunk was on web.js **/
-e.exports = n(854293)
+/** chunk id: 36140, original params: e,t,n (module,exports,re quire) **/
+module.exports = require("./854293.js")

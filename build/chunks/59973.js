@@ -1,14 +1,15 @@
 /** Chunk was on web.js **/
+/** chunk id: 59973, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   m: () => l
 });
-var r = n(573654),
-  i = n(158545),
-  o = n(144459),
-  a = n(964742),
+var Chunk573654 = require("./573654.js"),
+  Chunk158545 = require("./158545.js"),
+  Chunk144459 = require("./144459.js"),
+  Chunk964742 = require("./964742.js"),
   s = {
-    type: a.TL,
+    type: Chunk964742.TL,
     payload: {
       clientOffset: null,
       sourceClientOffset: null
@@ -17,12 +18,12 @@ var r = n(573654),
 
 function l(e) {
   return function() {
-    var t = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : [],
-      n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {
-        publishSource: !0
+    var t = arguments.length > 0 && true !== arguments[0] ? arguments[0] : [],
+      n = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {
+        publishSource: true
       },
       r = n.publishSource,
-      o = void 0 === r || r,
+      o = true === r || r,
       l = n.clientOffset,
       _ = n.getSourceClientOffset,
       p = e.getMonitor(),

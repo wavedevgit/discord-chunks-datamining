@@ -1,8 +1,9 @@
 /** Chunk was on web.js **/
-e.exports = function(e) {
+/** chunk id: 171383, original params: e (module,exports,re quire) **/
+module.exports = function(e) {
   return {
     name: "Cach\xe9 Object Script",
-    case_insensitive: !0,
+    case_insensitive: true,
     aliases: ["cls"],
     keywords: "property parameter class classmethod clientmethod extends as break catch close continue do d|0 else elseif for goto halt hang h|0 if job j|0 kill k|0 lock l|0 merge new open quit q|0 read r|0 return set s|0 tcommit throw trollback try tstart use view while write w|0 xecute x|0 zkill znspace zn ztrap zwrite zw zzdump zzwrite print zbreak zinsert zload zprint zremove zsave zzprint mv mvcall mvcrt mvdim mvprint zquit zsync ascii",
     contains: [{
@@ -42,14 +43,14 @@ e.exports = function(e) {
     }, {
       begin: /&sql\(/,
       end: /\)/,
-      excludeBegin: !0,
-      excludeEnd: !0,
+      excludeBegin: true,
+      excludeEnd: true,
       subLanguage: "sql"
     }, {
       begin: /&(js|jscript|javascript)</,
       end: />/,
-      excludeBegin: !0,
-      excludeEnd: !0,
+      excludeBegin: true,
+      excludeEnd: true,
       subLanguage: "javascript"
     }, {
       begin: /&html<\s*</,

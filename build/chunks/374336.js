@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 374336, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   qualityIndicator: "qualityIndicator__30845",
   clickable: "clickable__30845",
   qualityIndicatorFullQuality: "qualityIndicatorFullQuality__30845",

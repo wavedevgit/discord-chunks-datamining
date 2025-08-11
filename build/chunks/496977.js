@@ -1,25 +1,26 @@
 /** Chunk was on web.js **/
+/** chunk id: 496977, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => l
-}), n(539854);
-var r = n(73800),
-  i = n(442837),
-  o = n(835473),
-  a = n(541099),
-  s = n(695676);
+}), require("./539854.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk442837 = require("./442837.js"),
+  Chunk835473 = require("./835473.js"),
+  Chunk541099 = require("./541099.js"),
+  Chunk695676 = require("./695676.js");
 
 function l() {
-  let e = (0, i.e7)([a.Z], () => a.Z.initialState(), []),
-    t = (0, o.q)(null == e ? void 0 : e.applicationId);
-  return r.useMemo(() => {
-    if (null == e) return;
+  let e = (0, Chunk442837.e7)([Chunk541099.Z], () => Chunk541099.Z.initialState(), []),
+    t = (0, Chunk835473.q)(null == module ? true : module.applicationId);
+  return Chunk73800.useMemo(() => {
+    if (null == module) return;
     let n = [{
-      type: s.gc.HOME
+      type: Chunk695676.gc.HOME
     }];
-    return null != e.applicationId && null != t && n.push({
-      type: s.gc.APPLICATION,
-      application: t
-    }), n
-  }, [e, t])
+    return null != module.applicationId && null != exports && require.push({
+      type: Chunk695676.gc.APPLICATION,
+      application: exports
+    }), require
+  }, [module, exports])
 }

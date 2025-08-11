@@ -1,9 +1,10 @@
 /** Chunk was on web.js **/
+/** chunk id: 159277, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   M: () => i,
   t: () => r
-}), n(388685);
+}), require("./388685.js");
 var r = function(e) {
   return e.XBOX_APPLICATION_ID = "622174530214821906", e.PLAYSTATION_APPLICATION_ID = "1008890872156405890", e.PLAYSTATION_STAGING_APPLICATION_ID = "984193235868065795", e
 }({});

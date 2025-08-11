@@ -1,14 +1,15 @@
 /** Chunk was on web.js **/
+/** chunk id: 961050, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-var r = n(77025),
-  i = n(880181),
-  o = n(527160),
-  a = n(661314),
-  s = n(87185),
-  l = a("IE_PROTO"),
+var Chunk77025 = require("./77025.js"),
+  Chunk880181 = require("./880181.js"),
+  Chunk527160 = require("./527160.js"),
+  Chunk661314 = require("./661314.js"),
+  Chunk87185 = require("./87185.js"),
+  l = Chunk661314("IE_PROTO"),
   c = Object,
   u = c.prototype;
-e.exports = s ? c.getPrototypeOf : function(e) {
+module.exports = Chunk87185 ? c.getPrototypeOf : function(e) {
   var t = o(e);
   if (r(t, l)) return t[l];
   var n = t.constructor;

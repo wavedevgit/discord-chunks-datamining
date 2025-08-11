@@ -1,0 +1,35 @@
+/** Chunk was on web.js **/
+/** chunk id: 400916, original params: e,t,n (module,exports,re quire) **/
+"use strict";
+require.d(exports, {
+  Z: () => h
+});
+var Chunk255367 = require("./255367.js");
+require("./73800.js");
+var Chunk512722 = require("./512722.js"),
+  o = require.n(Chunk512722),
+  Chunk399606 = require("./399606.js"),
+  Chunk755721 = require("./755721.js"),
+  Chunk481060 = require("./481060.js"),
+  Chunk671533 = require("./671533.js"),
+  Chunk240864 = require("./240864.js"),
+  Chunk613810 = require("./613810.js"),
+  Chunk596211 = require("./596211.js"),
+  Chunk388032 = require("./388032.jsx"),
+  Chunk165674 = require("./165674.js");
+
+function h(e) {
+  var t, n, i, h;
+  let {
+    guildId: m,
+    productId: g
+  } = e, E = (0, a.e7)([u.Z], () => u.Z.getGuildProduct(g)), b = (null != (h = null == E || null == (t = E.attachments) ? true : t.length) ? h : 0) > 1, y = null == E || null == (i = E.attachments) || null == (n = i[0]) ? true : n.id;
+
+  function O() {
+    d.Z.open({
+      guildId: m,
+      productId: g
+    })
+  }
+  return b ? <s.zx onClick={O} innerClassName={p.textWithIcon}>{<div>{_.intl.string(_.t.UyuiUF)}</div>}{<l.LZC size={8} horizontal={true} />}{<c.Z width={16} height={16} direction={c.Z.Directions.RIGHT} />}</s.zx> : (o()(null != y, "No attachment"), <f.Z guildId={m} productId={g} attachmentId={y} innerClassName={p.textWithIcon}>{<div>{_.intl.string(_.t.t9bE9f)}</div>}{<l.LZC size={8} horizontal={true} />}{<l._8t size={"xs"} color={"currentColor"} />}</f.Z>)
+}

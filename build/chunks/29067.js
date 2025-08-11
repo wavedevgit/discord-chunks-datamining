@@ -1,12 +1,13 @@
 /** Chunk was on 21153 **/
+/** chunk id: 29067, original params: e,t,r (module,exports,require) **/
 "use strict";
-r.d(t, {
+require.d(exports, {
   Z: () => l
 });
-var n = r(73800),
-  o = r(9196),
-  a = r(442626),
-  i = r(116850);
+var Chunk73800 = require("./73800.js"),
+  Chunk9196 = require("./9196.js"),
+  Chunk442626 = require("./442626.js"),
+  Chunk116850 = require("./116850.js");
 let l = function(e) {
   var t = e.color,
     r = e.onClick,
@@ -57,7 +58,7 @@ let l = function(e) {
   return n.createElement(i.m4, {
     style: u.color,
     color: t,
-    onClick: void 0 === r ? function() {} : r,
+    onClick: true === r ? function() {} : r,
     onHover: l,
     focusStyle: {
       boxShadow: "0 0 4px " + t

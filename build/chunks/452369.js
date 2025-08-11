@@ -1,13 +1,14 @@
 /** Chunk was on web.js **/
+/** chunk id: 452369, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => g
-}), n(388685);
-var r = n(442837),
-  i = n(570140),
-  o = n(699516),
-  a = n(979651),
-  s = n(414509);
+}), require("./388685.js");
+var Chunk442837 = require("./442837.js"),
+  Chunk570140 = require("./570140.js"),
+  Chunk699516 = require("./699516.js"),
+  Chunk979651 = require("./979651.js"),
+  Chunk414509 = require("./414509.js");
 let l = {},
   c = {},
   u = new Set;
@@ -18,11 +19,11 @@ function d() {
 
 function f() {
   d();
-  let e = a.Z.getAllVoiceStates(),
-    t = !1;
-  for (let n of Object.values(e))
-    for (let e of Object.values(n)) null != e.channelId && (t = h(e.channelId, e.userId) || t);
-  return t
+  let e = Chunk979651.Z.getAllVoiceStates(),
+    t = false;
+  for (let n of Object.values(module))
+    for (let e of Object.values(require)) null != module.channelId && (t = h(module.channelId, module.userId) || exports);
+  return exports
 }
 
 function _(e) {
@@ -35,29 +36,29 @@ function _(e) {
 function p(e) {
   let {
     voiceStates: t
-  } = e, n = !1;
+  } = e, n = false;
   return t.forEach(e => {
     if (null != e.oldChannelId) {
       var t, r;
-      null != l[e.oldChannelId] && (null == (t = l[e.oldChannelId]) || t.delete(e.userId), n = !0), null != c[e.oldChannelId] && (null == (r = c[e.oldChannelId]) || r.delete(e.userId), n = !0)
+      null != l[e.oldChannelId] && (null == (t = l[e.oldChannelId]) || t.delete(e.userId), n = true), null != c[e.oldChannelId] && (null == (r = c[e.oldChannelId]) || r.delete(e.userId), n = true)
     }
     null != e.channelId && (n = h(e.channelId, e.userId) || n)
   }), n
 }
 
 function h(e, t) {
-  let n = !1,
-    r = !1,
+  let n = false,
+    r = false,
     i = new Set(l[e]),
     a = o.Z.isBlocked(t);
-  a && !i.has(t) ? (i.add(t), r = !0, n = !0) : a || (n = i.delete(t)), 0 === i.size && n ? delete l[e] : n && (l[e] = i);
+  a && !i.has(t) ? (i.add(t), r = true, n = true) : a || (n = i.delete(t)), 0 === i.size && n ? delete l[e] : n && (l[e] = i);
   let u = new Set(c[e]),
     d = o.Z.isIgnored(t);
-  return d && !u.has(t) ? (u.add(t), r = !0, n = !0) : d || (n = u.delete(t)), 0 === u.size && n ? delete c[e] : n && (c[e] = u), r && s.ZP.handleBlockedOrIgnoredUserVoiceChannelJoin(e, t), n
+  return d && !u.has(t) ? (u.add(t), r = true, n = true) : d || (n = u.delete(t)), 0 === u.size && n ? delete c[e] : n && (c[e] = u), r && s.ZP.handleBlockedOrIgnoredUserVoiceChannelJoin(e, t), n
 }
-class m extends r.ZP.Store {
+class m extends Chunk442837.ZP.Store {
   initialize() {
-    this.waitFor(o.Z, a.Z)
+    this.waitFor(Chunk699516.Z, Chunk979651.Z)
   }
   getBlockedUsersForVoiceChannel(e) {
     var t;
@@ -68,7 +69,7 @@ class m extends r.ZP.Store {
     return null != (t = c[e]) ? t : u
   }
 }
-let g = new m(i.Z, {
+let g = new m(Chunk570140.Z, {
   CONNECTION_OPEN: d,
   LOGOUT: d,
   OVERLAY_INITIALIZE: f,

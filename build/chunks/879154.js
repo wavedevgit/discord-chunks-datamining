@@ -1,17 +1,18 @@
 /** Chunk was on web.js **/
+/** chunk id: 879154, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 
 function r(e, t) {
   e.prototype = Object.create(t.prototype), e.prototype.constructor = e, e.__proto__ = t
 }
-var i = n(359282),
-  o = n(720379),
-  a = n(65183),
-  s = a.List,
-  l = a.Map,
-  c = a.OrderedSet,
-  u = a.Record,
-  d = a.Repeat,
+var Chunk359282 = require("./359282.js"),
+  Chunk720379 = require("./720379.js"),
+  Chunk65183 = require("./65183.js"),
+  s = Chunk65183.List,
+  l = Chunk65183.Map,
+  c = Chunk65183.OrderedSet,
+  u = Chunk65183.Record,
+  d = Chunk65183.Repeat,
   f = c(),
   _ = u({
     key: "",
@@ -35,7 +36,7 @@ function h(e, t) {
 function m(e, t) {
   return e.getEntity() === t.getEntity()
 }
-e.exports = function(e) {
+module.exports = function(e) {
   function t(t) {
     return e.call(this, p(t)) || this
   }

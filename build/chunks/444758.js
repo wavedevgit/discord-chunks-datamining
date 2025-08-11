@@ -1,33 +1,34 @@
 /** Chunk was on web.js **/
+/** chunk id: 444758, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => G
-}), n(35282);
-var r = n(159635),
-  i = n.n(r),
-  o = n(430198),
-  a = n(933557),
-  s = n(66999),
-  l = n(754688),
-  c = n(592125),
-  u = n(430824),
-  d = n(496675),
-  f = n(699516),
-  _ = n(594174),
-  p = n(768581),
-  h = n(934415),
-  m = n(624138),
-  g = n(699450),
-  E = n(594199),
-  b = n(981631),
-  y = n(388032);
+}), require("./35282.js");
+var Chunk159635 = require("./159635.js"),
+  i = require.n(Chunk159635),
+  Chunk430198 = require("./430198.js"),
+  Chunk933557 = require("./933557.js"),
+  Chunk66999 = require("./66999.js"),
+  Chunk754688 = require("./754688.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk430824 = require("./430824.js"),
+  Chunk496675 = require("./496675.js"),
+  Chunk699516 = require("./699516.js"),
+  Chunk594174 = require("./594174.js"),
+  Chunk768581 = require("./768581.js"),
+  Chunk934415 = require("./934415.js"),
+  Chunk624138 = require("./624138.js"),
+  Chunk699450 = require("./699450.js"),
+  Chunk594199 = require("./594199.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk388032 = require("./388032.jsx");
 
 function O(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -62,7 +63,7 @@ function T(e, t) {
 }
 let S = e => {
   let t = c.Z.getChannel(e);
-  return null == t ? void 0 : t.getGuildId()
+  return null == t ? true : t.getGuildId()
 };
 
 function A(e) {
@@ -130,11 +131,11 @@ function P(e, t) {
       name: n.name,
       isDm: null != r && r.isPrivate(),
       isForumPost: null != r && r.isForumPost(),
-      isMentionable: !0,
-      canViewChannel: !0,
+      isMentionable: true,
+      canViewChannel: true,
       roleSubscriptionGated: i,
       iconType: u,
-      parentId: null == r ? void 0 : r.parent_id
+      parentId: null == r ? true : r.parent_id
     }
   }
   return null != r ? {
@@ -160,7 +161,7 @@ function w(e) {
       content: e
     }],
     target: e,
-    title: void 0
+    title: true
   }
 }
 
@@ -177,15 +178,15 @@ function L(e) {
 
 function x() {
   return N({
-    name: y.intl.string(y.t.zLZPmp).toLowerCase(),
-    type: b.d4z.UNKNOWN,
+    name: Chunk388032.intl.string(Chunk388032.t.zLZPmp).toLowerCase(),
+    type: Chunk981631.d4z.UNKNOWN,
     iconType: "text"
   }, "italics")
 }
 
 function M(e, t, n, r, i) {
   let o = u.Z.getGuild(e),
-    a = (null == o ? void 0 : o.id) === r;
+    a = (null == o ? true : o.id) === r;
   return {
     type: "channelMention",
     guildId: e,
@@ -227,7 +228,7 @@ function k(e, t, n, r) {
   } : !n && r ? {
     inContent: [i],
     content: [t.isForumPost ? o : a]
-  } : n || r ? void 0 : {
+  } : n || r ? true : {
     inContent: [i],
     content: [o]
   }
@@ -248,14 +249,14 @@ function j(e, t, n, r) {
     if (e.isDm) return T(v({}, i), {
       guildId: b.ME,
       inContent: [N(e)],
-      content: [R(!1)]
+      content: [R(false)]
     });
     else return L(r);
   let a = e.guildId === n;
   return v({}, i, k(o, e, a, null != t))
 }
 let U = {
-    order: E.ZP.order,
+    order: Chunk594199.ZP.order,
     requiredFirstCharacters: ["<"],
     match: e => /^<#(\d+)>/.exec(e),
     parse(e, t, n) {

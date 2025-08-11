@@ -1,24 +1,25 @@
 /** Chunk was on 62856 **/
-E.d(i, {
+/** chunk id: 233608, original params: t,i,E (module,exports,require) **/
+require.d(exports, {
   Z: () => p
-}), E(388685);
-var n = E(230711),
-  l = E(200876),
-  S = E(228392),
-  r = E(676317),
-  e = E(434404),
-  A = E(190263),
-  s = E(208884),
-  P = E(722932),
-  _ = E(368442),
-  o = E(60222),
-  N = E(665906),
-  T = E(131704),
-  g = E(430824),
-  M = E(63063),
-  I = E(981631),
-  R = E(71080),
-  O = E(388032);
+}), require("./388685.js");
+var Chunk230711 = require("./230711.js"),
+  Chunk200876 = require("./200876.js"),
+  Chunk228392 = require("./228392.js"),
+  Chunk676317 = require("./676317.js"),
+  Chunk434404 = require("./434404.js"),
+  Chunk190263 = require("./190263.js"),
+  Chunk208884 = require("./208884.js"),
+  Chunk722932 = require("./722932.js"),
+  Chunk368442 = require("./368442.js"),
+  Chunk60222 = require("./60222.js"),
+  Chunk665906 = require("./665906.js"),
+  Chunk131704 = require("./131704.js"),
+  Chunk430824 = require("./430824.js"),
+  Chunk63063 = require("./63063.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk71080 = require("./71080.js"),
+  Chunk388032 = require("./388032.js");
 
 function a(t) {
   let i = (0, o.A)(t),
@@ -42,8 +43,8 @@ function a(t) {
       helpCenterArticle: M.Z.getArticleURL(I.BhN.SOUNDBOARD)
     }),
     showStageChannelPermissions: i,
-    showExperimental: !0,
-    showMembershipManualApprovalPermissions: !0,
+    showExperimental: true,
+    showMembershipManualApprovalPermissions: true,
     showCreatorMonetizationAnalyticsPermission: S,
     inSoundmojiExperiment: r,
     inPinPermissionExperiment: e
@@ -71,54 +72,54 @@ let p = {
     switch (i.type) {
       case I.d4z.GUILD_CATEGORY:
         return [s.zO(p, O.intl.string(O.t.AkPxc3)), s.Ny(p, O.intl.string(O.t.Ny49TE)), s.vq(p, O.intl.string(O.t.cKobOz), {
-          showPrivateThreads: !0,
-          showCreateThreads: !0,
+          showPrivateThreads: true,
+          showCreateThreads: true,
           inSoundmojiExperiment: U,
           inPinPermissionExperiment: d
         }), s.WV(p, O.intl.string(O.t["46Ra1d"])), s.xU(p, O.intl.string(O.t["rrh/W1"])), ...(l = D.showStageChannelPermissions, o = () => s.kv(p, O.intl.string(O.t.yniaur)), l ? [o()] : []), s.uu(p, O.intl.string(O.t.b8lplZ))];
       case I.d4z.GUILD_VOICE:
         return [s.zO(p, O.intl.string(O.t.ouHggI), {
-          showManageWebhooks: !0
+          showManageWebhooks: true
         }), s.Ny(p, O.intl.string(O.t.Ny49TE)), s.WV(p, O.intl.string(O.t["46Ra1d"])), s.aW(p, O.intl.string(O.t.iqlsnJ), {
           sectionDescription: u ? O.intl.format(O.t["4Z9FbW"], {
             setUpAutomod: () => {
               e.Z.open(t, I.pNK.GUILD_AUTOMOD)
             }
-          }) : void 0,
+          }) : true,
           inSoundmojiExperiment: U
         }), s.uu(p, O.intl.string(O.t.b8lplZ)), s.xU(p, O.intl.string(O.t["rrh/W1"]))];
       case I.d4z.GUILD_STAGE_VOICE:
         return [s.zO(p, O.intl.string(O.t.ouHggI), {
-          showManageWebhooks: !1
+          showManageWebhooks: false
         }), s.Ny(p, O.intl.string(O.t.Ny49TE)), s.FX(p, O.intl.string(O.t["46Ra1d"]), C), s.kv(p, O.intl.string(O.t.yniaur)), s.uu(p, O.intl.string(O.t.b8lplZ)), s.aW(p, O.intl.string(O.t.iqlsnJ), {
           sectionDescription: u ? O.intl.format(O.t["4Z9FbW"], {
             setUpAutomod: () => {
               e.Z.open(t, I.pNK.GUILD_AUTOMOD)
             }
-          }) : void 0,
+          }) : true,
           inSoundmojiExperiment: U
         }), s.xU(p, O.intl.string(O.t["rrh/W1"]), {
-          showActivities: !1
+          showActivities: false
         })];
       case I.d4z.GUILD_FORUM:
       case I.d4z.GUILD_MEDIA:
         let L = f ? O.intl.string(O.t.aSjPg4) : O.intl.string(O.t.TS7CnZ),
           G = f ? O.t.YjJTtL : O.t["1MTnqa"];
         return [s.zO(p, O.intl.string(O.t.ouHggI)), s.Ny(p, O.intl.string(O.t.Ny49TE)), s.vq(p, L, {
-          showPrivateThreads: !1,
-          showCreateThreads: !1,
+          showPrivateThreads: false,
+          showCreateThreads: false,
           sectionDescription: u ? O.intl.format(G, {
             setUpAutomod: () => {
               f || (0, S.MO)(), e.Z.open(t, I.pNK.GUILD_AUTOMOD)
             }
-          }) : void 0,
+          }) : true,
           inSoundmojiExperiment: U,
           inPinPermissionExperiment: d
         }), s.xU(p, O.intl.string(O.t["rrh/W1"])), ...(g = () => s.WV(p, O.intl.string(O.t["46Ra1d"])), c ? [g()] : [])];
       default:
         return [s.zO(p, O.intl.string(O.t.ouHggI)), s.Ny(p, O.intl.string(O.t.Ny49TE)), s.vq(p, O.intl.string(O.t.cKobOz), {
           showPrivateThreads: i.type !== I.d4z.GUILD_ANNOUNCEMENT,
-          showCreateThreads: !0,
+          showCreateThreads: true,
           inSoundmojiExperiment: U,
           inPinPermissionExperiment: d
         }), s.xU(p, O.intl.string(O.t["rrh/W1"])), ...(M = () => s.WV(p, O.intl.string(O.t["46Ra1d"])), c ? [M()] : [])]
@@ -139,9 +140,9 @@ let p = {
             var n;
             n = E[i], i in t ? Object.defineProperty(t, i, {
               value: n,
-              enumerable: !0,
-              configurable: !0,
-              writable: !0
+              enumerable: true,
+              configurable: true,
+              writable: true
             }) : t[i] = n
           })
         }

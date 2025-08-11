@@ -1,28 +1,29 @@
 /** Chunk was on web.js **/
+/** chunk id: 364964, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.r(t), n.d(t, {
+require.r(exports), require.d(exports, {
   default: () => _
-}), n(388685), n(35282), n(415506), n(704826);
-var r = n(466332),
-  i = n(392711),
-  o = n.n(i),
-  a = n(462176);
-r.Z.registerLanguage("ansi", a.Z);
+}), require("./388685.js"), require("./35282.js"), require("./415506.js"), require("./704826.js");
+var Chunk466332 = require("./466332.js"),
+  Chunk392711 = require("./392711.js"),
+  o = require.n(Chunk392711),
+  Chunk462176 = require("./462176.js");
+Chunk466332.Z.registerLanguage("ansi", Chunk462176.Z);
 let s = /(<script\/?\\?>)|(html\\?`)/g,
   l = new Set(["html", "xml", "javascript", "typescript", "handlebars"]),
   c = /^[a-z0-9_+\-.#]+$/,
-  u = r.Z.listLanguages(),
+  u = Chunk466332.Z.listLanguages(),
   d = new Map;
 for (let e of u) {
-  e = e.toLowerCase();
-  let t = r.Z.getLanguage(e);
-  if (null == t) continue;
-  let n = t.aliases;
-  if (d.set(e, e), null != n)
-    for (let t of n) d.set(t.toLowerCase(), e)
+  e = module.toLowerCase();
+  let t = Chunk466332.Z.getLanguage(module);
+  if (null == exports) continue;
+  let n = exports.aliases;
+  if (d.set(module, module), null != require)
+    for (let t of require) d.set(exports.toLowerCase(), module)
 }
 for (let [e, t] of d)
-  if (null == e.match(c)) throw Error("Language name does not match regex: ".concat(e));
+  if (null == module.match(c)) throw Error("Language name does not match regex: ".concat(module));
 
 function f(e) {
   return d.get(e.toLowerCase())
@@ -44,19 +45,19 @@ let _ = {
   p = o().repeat("/", 15);
 
 function h(e, t) {
-  if (e.indexOf(p) >= 0) return !1;
+  if (e.indexOf(p) >= 0) returnfalse;
   let n = 0;
   for (let t of e.split("\n")) {
-    if (t.length > 1e3) return !1;
+    if (t.length > 1e3) returnfalse;
     null == t.match(/^\s*[/][/]/) && null != t.match(/[^/]/) && (n = 0);
     let e = t.match(/[/]/g);
-    if (null != e && (n += e.length) > 30) return !1
+    if (null != e && (n += e.length) > 30) returnfalse
   }
   let r = f(t);
   if (null != r && l.has(r)) {
     var i;
     let t = e.replace(/\s*/g, "").match(s);
-    if ((null != (i = null == t ? void 0 : t.length) ? i : 0) > 10) return !1
+    if ((null != (i = null == t ? true : t.length) ? i : 0) > 10) returnfalse
   }
-  return !0
+  returntrue
 }

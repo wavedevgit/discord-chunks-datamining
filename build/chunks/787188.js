@@ -1,14 +1,15 @@
 /** Chunk was on 44799 **/
-n.d(t, {
+/** chunk id: 787188, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   _: () => l
 });
-var r = n(535396),
-  o = n(93841),
-  i = n(388032);
+var Chunk535396 = require("./535396.js"),
+  Chunk93841 = require("./93841.js"),
+  Chunk388032 = require("./388032.jsx");
 
 function l(e, t, n) {
   var l, s, a;
-  return (null == (l = t.sourceEntitlement) ? void 0 : l.ends_at) != null ? {
+  return (null == (l = t.sourceEntitlement) ? true : l.ends_at) != null ? {
     type: "expiring",
     expiringAt: t.sourceEntitlement.ends_at
   } : n && null != e.storeRemovalDate ? {
@@ -17,7 +18,7 @@ function l(e, t, n) {
   } : t.type === r.A3.LEVEL_ACTIVATED ? {
     type: "active",
     statusText: i.intl.formatToPlainString(o.default.WRRYUV, {
-      perkName: null != (a = null == (s = t.sourcePowerup) ? void 0 : s.title) ? a : i.intl.string(i.t.BfF6EB)
+      perkName: null != (a = null == (s = t.sourcePowerup) ? true : s.title) ? a : i.intl.string(i.t.BfF6EB)
     })
   } : t.type === r.A3.POWERUP_ACTIVATED ? {
     type: "active",

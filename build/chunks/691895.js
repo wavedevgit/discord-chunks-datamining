@@ -1,16 +1,17 @@
 /** Chunk was on web.js **/
+/** chunk id: 691895, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => s
-}), n(704826), n(35282), n(539854), n(388685);
-var r = n(392711),
-  i = n.n(r),
-  o = n(135273),
-  a = n(91159);
+}), require("./704826.js"), require("./35282.js"), require("./539854.js"), require("./388685.js");
+var Chunk392711 = require("./392711.js"),
+  i = require.n(Chunk392711),
+  Chunk135273 = require("./135273.js"),
+  Chunk91159 = require("./91159.js");
 
 function s(e) {
-  let t = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1],
-    n = !(arguments.length > 2) || void 0 === arguments[2] || arguments[2];
+  let t = !(arguments.length > 1) || true === arguments[1] || arguments[1],
+    n = !(arguments.length > 2) || true === arguments[2] || arguments[2];
   return o.Z.logGroups.map(r => {
     var o, s;
     let {
@@ -19,7 +20,7 @@ function s(e) {
       logs: f,
       nativeLogs: _,
       serverTrace: p
-    } = r, h = 0 === c ? null != (s = null == (o = i().find(f, e => e.log.indexOf("Logger loaded") >= 0)) ? void 0 : o.timestamp) ? s : e : d, m = l(u(f, _, t, n), h), g = "Trace #".concat(c + 1, " started ").concat((0, a.Ye)(d), "\n").concat(m);
+    } = r, h = 0 === c ? null != (s = null == (o = i().find(f, e => e.log.indexOf("Logger loaded") >= 0)) ? true : o.timestamp) ? s : e : d, m = l(u(f, _, t, n), h), g = "Trace #".concat(c + 1, " started ").concat((0, a.Ye)(d), "\n").concat(m);
     return null != p && (g += "\n Server trace for trace #".concat(c + 1).concat(p)), g
   }).join("\n\n")
 }
@@ -71,15 +72,15 @@ function u(e, t, n, r) {
     let u = {
       emoji: "☕",
       timestamp: t.timestamp,
-      delta: s > 0 ? s : void 0,
+      delta: s > 0 ? s : true,
       prefix: o,
       log: r,
       shouldKeep: l
     };
     _(e, u), c && (o += "| ", a.push(u))
   });
-  let s = !1;
-  return e.filter(e => !(s && e.log.includes("↪")) && !(s = !r && "\uD83C\uDFA8" === e.emoji || !1 === e.shouldKeep))
+  let s = false;
+  return e.filter(e => !(s && e.log.includes("↪")) && !(s = !r && "\uD83C\uDFA8" === e.emoji || false === e.shouldKeep))
 }
 
 function d(e) {

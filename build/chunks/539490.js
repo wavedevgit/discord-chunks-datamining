@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 539490, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   wrapper: "wrapper_c0e32c",
   isBurstReactionPicker: "isBurstReactionPicker_c0e32c",
   emojiPickerHasTabWrapper: "emojiPickerHasTabWrapper_c0e32c",

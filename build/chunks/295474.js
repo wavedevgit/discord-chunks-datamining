@@ -1,28 +1,29 @@
 /** Chunk was on web.js **/
+/** chunk id: 295474, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Ux: () => g,
   gS: () => E,
   ww: () => b
-}), n(997841);
-var r = n(73800),
-  i = n(399606),
-  o = n(230711),
-  a = n(18438),
-  s = n(314897),
-  l = n(271383),
-  c = n(430824),
-  u = n(496675),
-  d = n(914010),
-  f = n(715903),
-  _ = n(981631),
-  p = n(372897),
-  h = n(526761),
-  m = n(388032);
+}), require("./997841.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk399606 = require("./399606.js"),
+  Chunk230711 = require("./230711.js"),
+  Chunk18438 = require("./18438.js"),
+  Chunk314897 = require("./314897.js"),
+  Chunk271383 = require("./271383.js"),
+  Chunk430824 = require("./430824.js"),
+  Chunk496675 = require("./496675.js"),
+  Chunk914010 = require("./914010.js"),
+  Chunk715903 = require("./715903.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk372897 = require("./372897.js"),
+  Chunk526761 = require("./526761.js"),
+  Chunk388032 = require("./388032.js");
 
 function g(e) {
   return (0, i.e7)([s.default, l.ZP], () => {
-    if (null == e) return !1;
+    if (null == e) returnfalse;
     let t = s.default.getId();
     return (0, f.EY)(l.ZP.getMember(e, t))
   }, [e])
@@ -31,8 +32,8 @@ function g(e) {
 function E(e) {
   return (0, i.cj)([s.default, l.ZP, d.Z, c.Z], () => {
     let t = {
-        nick: void 0,
-        bio: void 0
+        nick: true,
+        bio: true
       },
       n = d.Z.getGuildId(),
       r = null != e ? e : n,
@@ -40,7 +41,7 @@ function E(e) {
     if (null == i || null == r) return t;
     let o = s.default.getId(),
       a = l.ZP.getMember(r, o),
-      u = (0, f.Ow)(null == a ? void 0 : a.flags);
+      u = (0, f.Ow)(null == a ? true : a.flags);
     if (0 === u.size) return t;
     if (u.has(p.q.AUTOMOD_QUARANTINED_USERNAME_OR_GUILD_NICKNAME))
       if (null == e) {

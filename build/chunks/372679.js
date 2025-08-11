@@ -1,38 +1,39 @@
 /** Chunk was on web.js **/
+/** chunk id: 372679, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 let r;
-n.d(t, {
+require.d(exports, {
   K: () => c,
   M: () => u
-}), n(388685), n(415506);
-var i = n(710845),
-  o = n(998502),
-  a = n(987650);
-let s = new i.Z("OverlayModuleUtils"),
+}), require("./388685.js"), require("./415506.js");
+var Chunk710845 = require("./710845.js"),
+  Chunk998502 = require("./998502.js"),
+  Chunk987650 = require("./987650.js");
+let s = new Chunk710845.Z("OverlayModuleUtils"),
   l = null;
 
 function c() {
   function e(e) {
-    for (let t of ["createHostProcess", "connectProcess", "disconnectProcess", "destroyHostProcess"]) null == e[t] && (s.info("polyfilling OverlayModule.".concat(t, "(); Overlay module is probably out of date.")), e[t] = () => void 0);
+    for (let t of ["createHostProcess", "connectProcess", "disconnectProcess", "destroyHostProcess"]) null == e[t] && (s.info("polyfilling OverlayModule.".concat(t, "(); Overlay module is probably out of date.")), e[t] = () => true);
     return e
   }
   async function t() {
-    if (!a.iP) throw s.error("Attempted to load overlay on an unsupported platform."), Error("Overlay is not supported on this platform.");
+    if (!Chunk987650.iP) throw s.error("Attempted to load overlay on an unsupported platform."), Error("Overlay is not supported on this platform.");
     try {
-      return await o.ZP.ensureModule("discord_overlay2"), r = e(o.ZP.requireModule("discord_overlay2"))
+      return await Chunk998502.ZP.ensureModule("discord_overlay2"), r = module(Chunk998502.ZP.requireModule("discord_overlay2"))
     } catch (e) {
-      s.error("failed ensuring discord_overlay2", e);
+      s.error("failed ensuring discord_overlay2", module);
       return
     }
   }
-  return null != r ? Promise.resolve(r) : (null == l && (l = t()), l)
+  return null != r ? Promise.resolve(r) : (null == l && (l = exports()), l)
 }
 
 function u() {
   if (null == r) try {
-    r = o.ZP.requireModule("discord_overlay2")
+    r = Chunk998502.ZP.requireModule("discord_overlay2")
   } catch (e) {
-    s.error("failed ensuring discord_overlay2", e);
+    s.error("failed ensuring discord_overlay2", module);
     return
   }
   return r

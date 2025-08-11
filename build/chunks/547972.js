@@ -1,12 +1,13 @@
 /** Chunk was on web.js **/
+/** chunk id: 547972, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => l
 });
-var r = n(230711),
-  i = n(202527),
-  o = n(332325),
-  a = n(981631);
+var Chunk230711 = require("./230711.js"),
+  Chunk202527 = require("./202527.js"),
+  Chunk332325 = require("./332325.js"),
+  Chunk981631 = require("./981631.js");
 
 function s(e) {
   switch (e) {
@@ -22,13 +23,13 @@ function s(e) {
 }
 
 function l(e) {
-  let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {},
+  let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {},
     {
       shouldMergeGameSettings: n
     } = i.b.getCurrentConfig({
       location: "navigator"
     }, {
-      autoTrackExposure: !1
+      autoTrackExposure: false
     });
   n ? r.Z.open(a.oAB.GAMES, e, t) : r.Z.open(s(e), null, t)
 }

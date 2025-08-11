@@ -1,1 +1,0 @@
-{"id":"14457","type":"experiment","data":{"kind":"user","id":"2024-09_rustadm","label":"Rust Audio Device Manager","defaultConfig":{"enabled":false},"treatments":[{"id":1,"label":"Automatic is Rust ADM (previous cohort)","config":{"enabled":false}},{"id":2,"label":"Automatic is Rust ADM (new stats slice)","config":{"enabled":false}}]},"fromModule":{"id":"web.js"}}

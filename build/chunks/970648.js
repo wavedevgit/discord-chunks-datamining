@@ -1,13 +1,14 @@
 /** Chunk was on 27978 **/
-n.d(t, {
+/** chunk id: 970648, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => o
-}), n(415506);
-var r = n(772848),
-  i = n(544891),
-  l = n(981631);
+}), require("./415506.js");
+var Chunk772848 = require("./772848.js"),
+  Chunk544891 = require("./544891.js"),
+  Chunk981631 = require("./981631.js");
 let o = {
   generateNonce: function() {
-    return (0, r.Z)()
+    return (0, Chunk772848.Z)()
   },
   createHandoffToken: async function(e) {
     let {
@@ -19,9 +20,9 @@ let o = {
       body: {
         key: e
       },
-      oldFormErrors: !0,
+      oldFormErrors: true,
       retries: 1,
-      rejectWithError: !1
+      rejectWithError: false
     });
     if (null != t) return t;
     throw Error("Missing handoff token!")

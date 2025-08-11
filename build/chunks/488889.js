@@ -1,14 +1,15 @@
 /** Chunk was on 9343 **/
-n.d(t, {
+/** chunk id: 488889, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   S: () => i
 });
-var s = n(308569),
-  a = n(388032);
+var Chunk308569 = require("./308569.js"),
+  Chunk388032 = require("./388032.jsx");
 let r = {
-  [s.pw.DISCORD_EMPLOYEE_ASKED_ME_TO]: () => a.intl.string(a.t.naBTFB),
-  [s.pw.SOMEONE_ASKED_ME_TO]: () => a.intl.string(a.t.LQ0RUF),
-  [s.pw.NEW_EMAIL]: () => a.intl.string(a.t.oOqQj4),
-  [s.pw.SOMETHING_ELSE]: () => a.intl.string(a.t.p38n1d)
+  [Chunk308569.pw.DISCORD_EMPLOYEE_ASKED_ME_TO]: () => Chunk388032.intl.string(Chunk388032.t.naBTFB),
+  [Chunk308569.pw.SOMEONE_ASKED_ME_TO]: () => Chunk388032.intl.string(Chunk388032.t.LQ0RUF),
+  [Chunk308569.pw.NEW_EMAIL]: () => Chunk388032.intl.string(Chunk388032.t.oOqQj4),
+  [Chunk308569.pw.SOMETHING_ELSE]: () => Chunk388032.intl.string(Chunk388032.t.p38n1d)
 };
 
 function i(e) {

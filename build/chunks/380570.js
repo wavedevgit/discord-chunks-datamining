@@ -1,27 +1,28 @@
 /** Chunk was on 1272 **/
-n.d(t, {
+/** chunk id: 380570, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => u
-}), n(388685);
-var r = n(748780),
-  i = n(570140),
-  l = n(317770),
-  a = n(716578),
-  o = n(928518);
+}), require("./388685.js");
+var Chunk748780 = require("./748780.js"),
+  Chunk570140 = require("./570140.js"),
+  Chunk317770 = require("./317770.js"),
+  Chunk716578 = require("./716578.js"),
+  Chunk928518 = require("./928518.js");
 
 function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
-class c extends l.Z {
+class c extends Chunk317770.Z {
   _initialize() {
-    o.Z.addChangeListener(this.handlePopoutWindowChange), i.Z.subscribe("WINDOW_FOCUS", this.handleMainWindowFocus)
+    Chunk928518.Z.addChangeListener(this.handlePopoutWindowChange), Chunk570140.Z.subscribe("WINDOW_FOCUS", this.handleMainWindowFocus)
   }
   _terminate() {
-    o.Z.removeChangeListener(this.handlePopoutWindowChange), i.Z.unsubscribe("WINDOW_FOCUS", this.handleMainWindowFocus), this.injectWindowAnimationFrame(window)
+    Chunk928518.Z.removeChangeListener(this.handlePopoutWindowChange), Chunk570140.Z.unsubscribe("WINDOW_FOCUS", this.handleMainWindowFocus), this.injectWindowAnimationFrame(window)
   }
   injectWindowAnimationFrame(e) {
     let t = t => e.requestAnimationFrame(t),

@@ -1,12 +1,13 @@
 /** Chunk was on 95468 **/
-n.d(t, {
+/** chunk id: 231239, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => o
-}), n(35282);
-var r = n(990547),
-  l = n(283693),
-  i = n(570140),
-  a = n(573261),
-  s = n(981631);
+}), require("./35282.js");
+var Chunk990547 = require("./990547.js"),
+  Chunk283693 = require("./283693.js"),
+  Chunk570140 = require("./570140.js"),
+  Chunk573261 = require("./573261.js"),
+  Chunk981631 = require("./981631.js");
 let o = {
   signup: (e, t) => a.Z.post({
     url: s.ANM.HUB_WAITLIST_SIGNUP,
@@ -18,14 +19,14 @@ let o = {
       event: r.NetworkActionNames.HUB_WAITLIST_SIGNUP,
       properties: e => {
         var t;
-        let n = !1,
-          r = null == e || null == (t = e.body) ? void 0 : t.email_domain;
-        return null != r && (n = -1 !== r.split(".").indexOf("edu")), (0, l.iG)({
+        let n = false,
+          r = null == e || null == (t = e.body) ? true : t.email_domain;
+        return null != r && (n = false !== r.split(".").indexOf("edu")), (0, l.iG)({
           is_edu_email: n
         })
       }
     },
-    rejectWithError: !1
+    rejectWithError: false
   }),
   sendVerificationEmail: async (e, t, n) => (await a.Z.post({
     url: s.ANM.HUB_EMAIL_VERIFY_SEND,
@@ -33,19 +34,19 @@ let o = {
       email: e,
       guild_id: n,
       allow_multiple_guilds: t,
-      use_verification_code: !0
+      use_verification_code: true
     },
     trackedActionData: {
       event: r.NetworkActionNames.HUB_EMAIL_VERIFY_SEND,
       properties: e => {
         var t;
-        let n = null == e || null == (t = e.body) ? void 0 : t.has_matching_guild;
+        let n = null == e || null == (t = e.body) ? true : t.has_matching_guild;
         return (0, l.iG)({
           has_matching_guild: n
         })
       }
     },
-    rejectWithError: !1
+    rejectWithError: false
   })).body,
   async verify(e) {
     if (null != e) try {
@@ -58,8 +59,8 @@ let o = {
         trackedActionData: {
           event: r.NetworkActionNames.HUB_EMAIL_VERIFY
         },
-        rejectWithError: !1
-      })).body.guild) ? void 0 : t.id;
+        rejectWithError: false
+      })).body.guild) ? true : t.id;
       i.Z.dispatch({
         type: "HUB_VERIFY_EMAIL_SUCCESS",
         guildId: n
@@ -84,9 +85,9 @@ let o = {
           trackedActionData: {
             event: r.NetworkActionNames.HUB_EMAIL_VERIFY
           },
-          rejectWithError: !1
+          rejectWithError: false
         }),
-        c = null == (l = o.body.guild) ? void 0 : l.id;
+        c = null == (l = o.body.guild) ? true : l.id;
       return i.Z.dispatch({
         type: "HUB_VERIFY_EMAIL_SUCCESS",
         guildId: c

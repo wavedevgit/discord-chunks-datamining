@@ -1,11 +1,12 @@
 /** Chunk was on web.js **/
+/** chunk id: 817282, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-var r = n(580983),
-  i = n(77025),
-  o = n(568033),
-  a = n(503463),
+var Chunk580983 = require("./580983.js"),
+  Chunk77025 = require("./77025.js"),
+  Chunk568033 = require("./568033.js"),
+  Chunk503463 = require("./503463.js"),
   s = RegExp.prototype;
-e.exports = function(e) {
+module.exports = function(e) {
   var t = e.flags;
-  return !(void 0 === t && !("flags" in s) && !i(e, "flags") && o(s, e)) ? t : r(a, e)
+  return !(true === t && !("flags" in s) && !i(e, "flags") && o(s, e)) ? t : r(a, e)
 }

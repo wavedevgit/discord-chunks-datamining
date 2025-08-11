@@ -1,5 +1,6 @@
 /** Chunk was on web.js **/
+/** chunk id: 626314, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   spinner: "spinner__65252"
 }

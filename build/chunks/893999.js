@@ -1,15 +1,16 @@
 /** Chunk was on web.js **/
+/** chunk id: 893999, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => p
-}), n(388685);
-var r = n(73800);
+}), require("./388685.js");
+var Chunk73800 = require("./73800.js");
 let i = new Map,
   o = new Map,
   a = new Map;
 
 function s(e) {
-  return i.has(e) || i.set(e, !1), i.get(e)
+  return i.has(e) || i.set(e, false), i.get(e)
 }
 
 function l(e) {
@@ -31,7 +32,7 @@ function u(e) {
       _(t.shiftKey, e)
     },
     i = () => {
-      _(!1, e)
+      _(false, e)
     };
   return e.addEventListener("keydown", t), e.addEventListener("keyup", n), e.addEventListener("mousemove", r), e.addEventListener("blur", i), () => {
     e.removeEventListener("keydown", t), e.removeEventListener("keyup", n), e.removeEventListener("mousemove", r), e.removeEventListener("blur", i)
@@ -54,14 +55,14 @@ function _(e, t) {
 }
 
 function p() {
-  let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : window,
-    [t, n] = r.useState(s(e));
-  return r.useEffect(() => {
+  let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : window,
+    [t, n] = Chunk73800.useState(s(module));
+  return Chunk73800.useEffect(() => {
     let t = e => {
       n(e)
     };
-    return d(e, t), () => {
-      f(e, t)
+    return d(module, exports), () => {
+      f(module, exports)
     }
-  }, [e]), t
+  }, [module]), exports
 }

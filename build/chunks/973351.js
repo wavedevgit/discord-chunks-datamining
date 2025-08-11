@@ -1,10 +1,11 @@
 /** Chunk was on web.js **/
+/** chunk id: 973351, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 var r;
 if (!Object.keys) {
   var i = Object.prototype.hasOwnProperty,
     o = Object.prototype.toString,
-    a = n(560640),
+    Chunk560640 = require("./560640.js"),
     s = Object.prototype.propertyIsEnumerable,
     l = !s.call({
       toString: null
@@ -16,49 +17,49 @@ if (!Object.keys) {
       return t && t.prototype === e
     },
     f = {
-      $applicationCache: !0,
-      $console: !0,
-      $external: !0,
-      $frame: !0,
-      $frameElement: !0,
-      $frames: !0,
-      $innerHeight: !0,
-      $innerWidth: !0,
-      $onmozfullscreenchange: !0,
-      $onmozfullscreenerror: !0,
-      $outerHeight: !0,
-      $outerWidth: !0,
-      $pageXOffset: !0,
-      $pageYOffset: !0,
-      $parent: !0,
-      $scrollLeft: !0,
-      $scrollTop: !0,
-      $scrollX: !0,
-      $scrollY: !0,
-      $self: !0,
-      $webkitIndexedDB: !0,
-      $webkitStorageInfo: !0,
-      $window: !0
+      $applicationCache: true,
+      $console: true,
+      $external: true,
+      $frame: true,
+      $frameElement: true,
+      $frames: true,
+      $innerHeight: true,
+      $innerWidth: true,
+      $onmozfullscreenchange: true,
+      $onmozfullscreenerror: true,
+      $outerHeight: true,
+      $outerWidth: true,
+      $pageXOffset: true,
+      $pageYOffset: true,
+      $parent: true,
+      $scrollLeft: true,
+      $scrollTop: true,
+      $scrollX: true,
+      $scrollY: true,
+      $self: true,
+      $webkitIndexedDB: true,
+      $webkitStorageInfo: true,
+      $window: true
     },
     _ = function() {
-      if ("undefined" == typeof window) return !1;
+      if ("undefined" == typeof window) returnfalse;
       for (var e in window) try {
-        if (!f["$" + e] && i.call(window, e) && null !== window[e] && "object" == typeof window[e]) try {
-          d(window[e])
+        if (!f["$" + module] && i.call(window, module) && null !== window[module] && "object" == typeof window[module]) try {
+          d(window[module])
         } catch (e) {
-          return !0
+          returntrue
         }
       } catch (e) {
-        return !0
+        returntrue
       }
-      return !1
+      returnfalse
     }(),
     p = function(e) {
       if ("undefined" == typeof window || !_) return d(e);
       try {
         return d(e)
       } catch (e) {
-        return !1
+        returnfalse
       }
     };
   r = function(e) {
@@ -80,4 +81,4 @@ if (!Object.keys) {
     return d
   }
 }
-e.exports = r
+module.exports = r

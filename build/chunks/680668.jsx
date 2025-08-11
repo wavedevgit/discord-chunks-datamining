@@ -1,0 +1,116 @@
+/** Chunk was on web.js **/
+/** chunk id: 680668, original params: e,t,n (module,exports,re quire) **/
+"use strict";
+require.d(exports, {
+  Z: () => I
+}), require("./997841.js"), require("./388685.js");
+var Chunk255367 = require("./255367.js"),
+  Chunk73800 = require("./73800.js"),
+  Chunk533800 = require("./533800.js"),
+  Chunk481060 = require("./481060.js"),
+  Chunk447543 = require("./447543.js"),
+  Chunk100527 = require("./100527.js"),
+  Chunk906732 = require("./906732.js"),
+  Chunk857395 = require("./857395.js"),
+  Chunk358555 = require("./358555.jsx"),
+  Chunk955415 = require("./955415.js"),
+  Chunk131704 = require("./131704.js"),
+  Chunk630388 = require("./630388.js"),
+  Chunk411198 = require("./411198.js"),
+  Chunk277707 = require("./277707.js"),
+  Chunk358595 = require("./358595.jsx"),
+  Chunk981631 = require("./981631.js"),
+  Chunk388032 = require("./388032.jsx"),
+  Chunk273254 = require("./273254.js");
+
+function O(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+
+function v(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      O(e, t, n[t])
+    })
+  }
+  return e
+}
+
+function I(e) {
+  var t, O, I;
+  let T, S, A, {
+      onTransitionToInviteChannel: N,
+      onAcceptInstantInvite: C,
+      guild: R,
+      invite: P,
+      message: w,
+      currentUserId: D
+    } = e,
+    L = D === w.author.id,
+    {
+      channel: x,
+      approximate_member_count: M,
+      approximate_presence_count: k
+    } = P,
+    j = P.state === E.r2o.ACCEPTING,
+    U = null != x ? (0, _.jD)(x) : null,
+    G = null != R,
+    B = null != U,
+    Z = null != U && U.isGuildVocal(),
+    F = null != U && U.isGuildStageVoice(),
+    V = (0, p.yE)(null != (t = P.flags) ? t : 0, o.$.IS_GUEST_INVITE),
+    H = null != (O = null == R ? true : R.features.has(E.oNc.HUB)) && O,
+    Y = null == R ? true : R.id,
+    {
+      analyticsLocations: W
+    } = (0, c.ZP)(l.Z.INVITE_EMBED),
+    [K, z] = i.useState(false),
+    q = i.useCallback(() => z(false), []),
+    X = i.useRef(null),
+    Q = i.useCallback(() => {
+      z(true), (0, s.CB)(Y, "show profile", W)
+    }, [Y, W]),
+    J = i.useCallback(() => {
+      let e = "noop";
+      G ? (N(), e = "transition") : (C(), e = "accept"), (0, s.r$)({
+        invite: P,
+        action: e,
+        inviter_id: w.author.id,
+        invite_message_id: w.id
+      }, W)
+    }, [P, w, W, G, N, C]);
+  if (null == R) {
+    if (null == P.guild) return <g.Z />;
+    (R = h.Qs(P.guild)).premiumTier = null != (I = P.guild.premium_tier) ? I : E.Eu4.NONE
+  }
+  let $ = (0, m.e)({
+    isVoiceChannel: Z,
+    isOwnInvite: L,
+    isGuest: V,
+    isHubGuild: H,
+    isStage: F,
+    isStream: false
+  });
+  return S = <span className={y.infoTitle}>{<u.Z guildId={R.id} name={R.name} shouldShow={K} onRequestClose={q} targetElementRef={X}>{() => (0, r.jsx)(f.Z.GuildName, {
+        guild: R,
+        ref: X
+      })}</u.Z>}{<span className={y.infoBadge}><d.Z guild={R} isBannerVisible={false} disableBoostClick={true} /></span>}</span>, V && (A = <a.DY3 className={y.tooltipContainer} text={b.intl.string(b.t["/FeTKy"])}><a.d3s size={"md"} color={"currentColor"} className={y.infoIcon} /></a.DY3>), Z ? (S = <f.Z.Channel channel={U} />, T = <span className={y.infoTitle}>{b.intl.format(b.t["2wimj4"], {
+      guildName: R.name
+    })}{<span className={y.infoBadge}><d.Z guild={R} isBannerVisible={false} /></span>}</span>) : null != M && M >= 5 || null != k && k > 0 ? T = <f.Z.Data members={M} membersOnline={k} /> : B && (T = <f.Z.Channel channel={U} guild={R} />), <f.Z>{<f.Z.GuildSplash guild={R} />}{<f.Z.Header text={$} extra={A} />}{<f.Z.Body>{<div className={y.headerLine}>{<f.Z.Icon guild={R} />}{<f.Z.Info title={S} onClick={Q}>{T}</f.Z.Info>}</div>}{<f.Z.Button onClick={J} submitting={j} color={f.Z.Button.Colors.GREEN}>{Z ? F ? b.intl.string(b.t["7vb2cX"]) : b.intl.string(b.t.gpqgam) : G ? b.intl.string(b.t.cEnaW1) : b.intl.string(b.t.XpeFYm)}</f.Z.Button>}</f.Z.Body>}{R.features.has(E.oNc.HUB) && <r.Fragment>{<div className={y.separator} />}{<a.Text variant={"text-sm/normal"} color={"header-secondary"}>{b.intl.format(b.t["/o1IfH"], {
+          onClick: () => (0, a.ZDy)(async () => {
+            let {
+              default: e
+            } = await Promise.all([n.e("95468"), n.e("46343")]).then(n.bind(n, 650233));
+            return t => (0, r.jsx)(e, v({}, t))
+          })
+        })}</a.Text>}</r.Fragment>}</f.Z>
+}

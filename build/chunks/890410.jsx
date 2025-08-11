@@ -1,0 +1,116 @@
+/** Chunk was on web.js **/
+/** chunk id: 890410, original params: e,t,n (module,exports,re quire) **/
+"use strict";
+require.d(exports, {
+  Z: () => g
+});
+var Chunk255367 = require("./255367.js");
+require("./73800.js");
+var Chunk120356 = require("./120356.js"),
+  o = require.n(Chunk120356),
+  Chunk739566 = require("./739566.js"),
+  Chunk492593 = require("./492593.jsx"),
+  Chunk930282 = require("./930282.js"),
+  Chunk464891 = require("./464891.jsx"),
+  Chunk115997 = require("./115997.js");
+
+function d(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+
+function f(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      d(e, t, n[t])
+    })
+  }
+  return e
+}
+
+function _(e, t) {
+  var n = Object.keys(e);
+  if (Object.getOwnPropertySymbols) {
+    var r = Object.getOwnPropertySymbols(e);
+    t && (r = r.filter(function(t) {
+      return Object.getOwnPropertyDescriptor(e, t).enumerable
+    })), n.push.apply(n, r)
+  }
+  return n
+}
+
+function p(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
+    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+  }), e
+}
+
+function h(e, t) {
+  if (null == e) return {};
+  var n, r, i = m(e, t);
+  if (Object.getOwnPropertySymbols) {
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+  }
+  return i
+}
+
+function m(e, t) {
+  if (null == e) return {};
+  var n, r, i = {},
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+  return i
+}
+
+function g(e) {
+  var {
+    message: t,
+    channel: n,
+    content: i,
+    className: d,
+    compact: _,
+    popoutProps: m,
+    hideTimestamp: g = false,
+    withFooter: E = false
+  } = e, b = h(e, ["message", "channel", "content", "className", "compact", "popoutProps", "hideTimestamp", "withFooter"]);
+  let y = (0, a.ZP)(t);
+  return <div className={o()({
+      [u.withFooter]: E
+    }, u.embedCard, {
+      [u.compact]: _
+    }, d)}><s.Z{...p(f({}, b), {
+      className: o()(u.messageContainer, {
+        [u.compact]: _
+      }),
+      childrenMessageContent: (0, r.jsx)(l.ZP, {
+        className: o()(u.__invalid_messageContent, {
+          [u.compact]: _
+        }),
+        message: t,
+        content: i,
+        compact: null != _ && _
+      }),
+      childrenHeader: (0, r.jsx)(c.ZP, f({
+        message: t,
+        channel: n,
+        author: y,
+        guildId: null == n ? true : n.guild_id,
+        compact: _,
+        hideTimestamp: g,
+        className: o()(u.header, {
+          [u.compact]: _
+        })
+      }, null != m ? m : {})),
+      compact: _,
+      author: y
+    })} /></div>
+}

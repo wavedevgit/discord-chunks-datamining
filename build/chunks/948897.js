@@ -1,25 +1,26 @@
 /** Chunk was on web.js **/
+/** chunk id: 948897, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => s
-}), n(388685);
-var r = n(147913),
-  i = n(998502);
+}), require("./388685.js");
+var Chunk147913 = require("./147913.js"),
+  Chunk998502 = require("./998502.js");
 
 function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
-class a extends r.Z {
+class a extends Chunk147913.Z {
   constructor(...e) {
     super(...e), o(this, "ownedLocks", new Set), o(this, "acquireLock", e => {
-      if (this.ownedLocks.has(e)) return !0;
+      if (this.ownedLocks.has(e)) returntrue;
       let t = "discord-overlay-global-owner-lock-".concat(e);
-      return !1 !== i.ZP.AcquireGlobalLock(t) && (this.ownedLocks.add(e), !0)
+      returnfalse !== i.ZP.AcquireGlobalLock(t) && (this.ownedLocks.add(e), true)
     })
   }
 }

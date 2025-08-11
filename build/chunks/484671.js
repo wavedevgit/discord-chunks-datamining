@@ -1,5 +1,6 @@
 /** Chunk was on 75708 **/
-e.exports = {
+/** chunk id: 484671, original params: e,t,n (module,exports,require) **/
+module.exports = {
   voiceModalContainer: "voiceModalContainer__25eff",
   voiceModalRootContainer: "voiceModalRootContainer__25eff",
   channelIdSection: "channelIdSection__25eff",

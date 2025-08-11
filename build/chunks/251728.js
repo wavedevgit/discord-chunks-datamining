@@ -1,24 +1,25 @@
 /** Chunk was on web.js **/
+/** chunk id: 251728, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Y: () => _
 });
-var r = n(685816),
-  i = n(549616),
-  o = n(472756),
-  a = n(794934),
-  s = n(885577),
-  l = n(198647),
-  c = n(820200),
-  u = n(690913),
-  d = n(608413);
+var Chunk685816 = require("./685816.js"),
+  Chunk549616 = require("./549616.js"),
+  Chunk472756 = require("./472756.js"),
+  Chunk794934 = require("./794934.js"),
+  Chunk885577 = require("./885577.js"),
+  Chunk198647 = require("./198647.js"),
+  Chunk820200 = require("./820200.js"),
+  Chunk690913 = require("./690913.js"),
+  Chunk608413 = require("./608413.js");
 
 function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 class _ {
@@ -26,7 +27,7 @@ class _ {
     return new _(e)
   }
   constructor(e) {
-    f(this, "shopBlocks", void 0), f(this, "categories", void 0), this.shopBlocks = e.shop_blocks.map(e => {
+    f(this, "shopBlocks", true), f(this, "categories", true), this.shopBlocks = e.shop_blocks.map(e => {
       switch (e.type) {
         case r.z.HERO:
           return l.s.fromServer(e);
@@ -45,6 +46,6 @@ class _ {
         default:
           return
       }
-    }).filter(e => void 0 !== e), this.categories = e.categories.map(e => i.Z.fromServer(e))
+    }).filter(e => true !== e), this.categories = e.categories.map(e => i.Z.fromServer(e))
   }
 }

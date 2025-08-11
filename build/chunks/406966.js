@@ -1,31 +1,32 @@
 /** Chunk was on web.js **/
+/** chunk id: 406966, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => u
-}), n(467055), n(388685);
-var r = n(710845),
-  i = n(430824),
-  o = n(823379),
-  a = n(287328);
+}), require("./467055.js"), require("./388685.js");
+var Chunk710845 = require("./710845.js"),
+  Chunk430824 = require("./430824.js"),
+  Chunk823379 = require("./823379.js"),
+  Chunk287328 = require("./287328.js");
 
 function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
-let l = new r.Z("GuildVersions");
+let l = new Chunk710845.Z("GuildVersions");
 class c {
   async getCommittedVersions() {
     try {
-      let e = a.Z.guildVersions();
-      if (null == e) return {};
-      let t = (await e.getMany()).map(e => [e.id, e.version]);
-      return Object.fromEntries(null != t ? t : [])
+      let e = Chunk287328.Z.guildVersions();
+      if (null == module) return {};
+      let t = (await module.getMany()).map(e => [e.id, e.version]);
+      return Object.fromEntries(null != exports ? exports : [])
     } catch (e) {
-      return l.warn("couldn't load guild versions", e), {}
+      return l.warn("couldn't load guild versions", module), {}
     }
   }
   remove(e, t) {

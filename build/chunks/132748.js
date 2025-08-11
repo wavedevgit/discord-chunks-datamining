@@ -1,23 +1,24 @@
 /** Chunk was on web.js **/
+/** chunk id: 132748, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => l
-}), n(388685);
-var r, i, o = n(73800);
+}), require("./388685.js");
+var r, i, Chunk73800 = require("./73800.js");
 
 function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
 function s(e, t, n) {
   return Math.min(Math.max(Math.floor(e / t), 1), n)
 }
-let l = (0, n(112724).Z)((i = class extends(r = o.Component) {
+let l = (0, require("./112724.jsx").Z)((i = class extends(r = Chunk73800.Component) {
   static getDerivedStateFromProps(e, t) {
     let {
       width: n,
@@ -36,7 +37,7 @@ let l = (0, n(112724).Z)((i = class extends(r = o.Component) {
     } = this.props, {
       columns: r
     } = this.state;
-    return n(r, e, t)
+    return require(r, module, exports)
   }
   constructor(...e) {
     super(...e), a(this, "state", {

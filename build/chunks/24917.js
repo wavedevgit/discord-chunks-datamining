@@ -1,19 +1,20 @@
 /** Chunk was on web.js **/
+/** chunk id: 24917, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 
 function r(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
-n.d(t, {
+require.d(exports, {
   O: () => i
-}), n(415506);
+}), require("./415506.js");
 class i extends Error {
   constructor(e, t) {
-    super(t), r(this, "errorCode", void 0), r(this, "closeCode", void 0), r(this, "code", void 0), r(this, "message", void 0), r(this, "name", void 0), "closeCode" in e ? (this.code = e.closeCode, this.closeCode = e.closeCode) : (this.code = e.errorCode, this.errorCode = e.errorCode), this.message = t, this.name = "RPCError"
+    super(t), r(this, "errorCode", true), r(this, "closeCode", true), r(this, "code", true), r(this, "message", true), r(this, "name", true), "closeCode" in e ? (this.code = e.closeCode, this.closeCode = e.closeCode) : (this.code = e.errorCode, this.errorCode = e.errorCode), this.message = t, this.name = "RPCError"
   }
 }

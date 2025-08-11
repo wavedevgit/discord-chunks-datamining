@@ -1,0 +1,97 @@
+/** Chunk was on 69773 **/
+/** chunk id: 197528, original params: e,t,n (module,exports,require) **/
+require.r(exports), require.d(exports, {
+  default: () => E
+}), require("./388685.js"), require("./35282.js");
+var Chunk255367 = require("./255367.js"),
+  Chunk73800 = require("./73800.js"),
+  Chunk593473 = require("./593473.js"),
+  Chunk114858 = require("./114858.js"),
+  Chunk399606 = require("./399606.js"),
+  Chunk893776 = require("./893776.js"),
+  Chunk702493 = require("./702493.js"),
+  Chunk77987 = require("./77987.jsx"),
+  Chunk133853 = require("./133853.jsx"),
+  Chunk353926 = require("./353926.js"),
+  Chunk703656 = require("./703656.js"),
+  Chunk314897 = require("./314897.js"),
+  Chunk643366 = require("./643366.js"),
+  Chunk94628 = require("./94628.jsx"),
+  Chunk659154 = require("./659154.js"),
+  Chunk581690 = require("./581690.js"),
+  Chunk902928 = require("./902928.js"),
+  Chunk521937 = require("./521937.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk350730 = require("./350730.js");
+let Chunk575703 = require("./575703.js");
+
+function w() {
+  let e, t = (0, Chunk114858.TH)(),
+    [n, d] = Chunk73800.useState(() => {
+      if (exports.pathname === Chunk981631.Z5c.ACTIVATE_HANDOFF) {
+        let {
+          user_code: e
+        } = Chunk593473.parse(window.location.search);
+        return {
+          type: "handoff",
+          code: module
+        }
+      }
+      return {
+        type: "user-code-input",
+        usePrefilledCode: true
+      }
+    }),
+    w = (0, Chunk399606.e7)([Chunk353926.Z], () => Chunk353926.Z.hasLoadedExperiments);
+  Chunk73800.useEffect(() => {
+    Chunk314897.default.isAuthenticated() && !w && Chunk893776.Z.getExperiments()
+  }, [w]), (0, Chunk702493.Z)(), (0, Chunk643366.Y)(require);
+  let N = Chunk73800.useCallback(() => {
+      Chunk77987({
+        type: "user-code-input"
+      })
+    }, [Chunk77987]),
+    E = Chunk73800.useCallback(e => {
+      d({
+        type: "authorization",
+        userCodeData: e
+      })
+    }, [Chunk77987]),
+    k = Chunk73800.useCallback(e => {
+      d({
+        type: "success",
+        userCodeData: e
+      })
+    }, [Chunk77987]),
+    I = Chunk73800.useCallback(e => {
+      d({
+        type: "error",
+        userCodeData: e
+      })
+    }, [Chunk77987]),
+    T = true;
+  switch (require.type) {
+    case "handoff":
+      e = <Chunk581690.c code={require.code} />, T = false;
+      break;
+    case "user-code-input":
+      e = <Chunk521937.v usePrefilledCode={require.usePrefilledCode || false} onUserCodeAccepted={E} />;
+      break;
+    case "authorization":
+      e = <Chunk94628.B data={require.userCodeData} onDenied={N} onError={I} onSuccess={k} />, T = false;
+      break;
+    case "success":
+      e = <Chunk902928.u onComplete={() => (0, Chunk703656.uL)(Chunk981631.Z5c.ME)} data={require.userCodeData} />;
+      break;
+    case "error":
+      e = <Chunk659154.c onTryAgain={N} />;
+      break;
+    default:
+      e = null
+  }
+  return <div className={Chunk350730.activatePage}>{<img className={Chunk350730.artwork} src={Chunk575703} alt={""} />}{<Chunk133853.Z show={true} className={Chunk350730.logo} />}{T ? <div className={Chunk350730.content}>{module}</div> : module}</div>
+}
+let N = (0, Chunk77987.e)(w),
+  E = function() {
+    return (0, Chunk114858.TH)().pathname !== Chunk981631.Z5c.ACTIVATE_HANDOFF ? <N /> : <w />
+  }

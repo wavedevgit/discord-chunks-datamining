@@ -1,14 +1,15 @@
 /** Chunk was on web.js **/
+/** chunk id: 583405, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => c
 });
-var r = n(73800),
-  i = n(979590),
-  o = n.n(i),
-  a = n(866442),
-  s = n(442837),
-  l = n(607070);
+var Chunk73800 = require("./73800.js"),
+  Chunk979590 = require("./979590.js"),
+  o = require.n(Chunk979590),
+  Chunk866442 = require("./866442.js"),
+  Chunk442837 = require("./442837.js"),
+  Chunk607070 = require("./607070.js");
 let c = e => {
   let t = (0, s.e7)([l.Z], () => l.Z.desaturateUserColors ? l.Z.saturation : 1);
   return (0, r.useMemo)(() => {

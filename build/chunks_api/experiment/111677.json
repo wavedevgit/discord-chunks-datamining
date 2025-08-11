@@ -1,1 +1,0 @@
-{"id":"111677","type":"experiment","data":{"kind":"user","id":"2025-06_flamingo_signed_catalog","label":"Flamingo Signed Catalog","defaultConfig":{"enabled":false},"treatments":[{"id":1,"label":"Enabled","config":{"enabled":false}}]},"fromModule":{"id":"web.js"}}

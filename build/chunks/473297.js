@@ -1,8 +1,9 @@
 /** Chunk was on web.js **/
+/** chunk id: 473297, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-var r = n(621796),
-  i = n(223138)("draft_tree_data_support");
-e.exports = function(e, t, n) {
+var Chunk621796 = require("./621796.js"),
+  i = require("./223138.js")("draft_tree_data_support");
+module.exports = function(e, t, n) {
   var o = e.getSelection(),
     a = e.getCurrentContent(),
     s = o,

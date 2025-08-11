@@ -1,16 +1,17 @@
 /** Chunk was on 11776 **/
-n.d(t, {
+/** chunk id: 398145, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => a
 });
-var r = n(806729),
-  l = n(146078),
-  i = n(228168),
-  o = n(388032);
+var Chunk806729 = require("./806729.js"),
+  Chunk146078 = require("./146078.js"),
+  Chunk228168 = require("./228168.js"),
+  Chunk388032 = require("./388032.jsx");
 
 function a(e) {
   let {
     mutualGuilds: t
-  } = (0, r.Z)(e), n = null == t ? void 0 : t.length;
+  } = (0, r.Z)(e), n = null == t ? true : t.length;
   return [{
     section: i.oh.BOT_INFO,
     text: o.intl.string(o.t.jGoPJS)

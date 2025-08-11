@@ -1,5 +1,6 @@
 /** Chunk was on 81263 **/
-e.exports = {
+/** chunk id: 970612, original params: e,o,r (module,exports,require) **/
+module.exports = {
   animationContainer: "animationContainer__884d1",
   container: "container__884d1",
   svgBorder: "svgBorder__884d1",

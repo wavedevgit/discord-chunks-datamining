@@ -1,4 +1,5 @@
 /** Chunk was on web.js **/
+/** chunk id: 676011, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 var r = {
   wrapper: "wrapper_d5f3cd",
@@ -40,4 +41,4 @@ var r = {
   resolvingBackground: "resolvingBackground_d5f3cd",
   resolvingFakeButton: "resolvingFakeButton_d5f3cd"
 };
-n.r(e.exports = r)
+require.r(module.exports = r)

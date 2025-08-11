@@ -1,10 +1,11 @@
 /** Chunk was on web.js **/
+/** chunk id: 718538, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   V: () => o
-}), n(388685);
-var r = n(442837),
-  i = n(375954);
+}), require("./388685.js");
+var Chunk442837 = require("./442837.js"),
+  Chunk375954 = require("./375954.js");
 
 function o(e, t) {
   return (0, r.e7)([i.Z], () => {
@@ -14,7 +15,7 @@ function o(e, t) {
     if (null != r) {
       for (let e of n.toArray()) {
         if (e.author.id !== t) break;
-        e.content.length > (null == r ? void 0 : r.content.length) && (r = e)
+        e.content.length > (null == r ? true : r.content.length) && (r = e)
       }
       return r
     }

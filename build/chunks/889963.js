@@ -1,32 +1,33 @@
 /** Chunk was on web.js **/
+/** chunk id: 889963, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   W: () => c,
   s: () => l
-}), n(388685), n(539854);
-var r, i = n(73800),
-  o = n(392711),
-  a = n.n(o);
+}), require("./388685.js"), require("./539854.js");
+var r, Chunk73800 = require("./73800.js"),
+  Chunk392711 = require("./392711.js"),
+  a = require.n(Chunk392711);
 
 function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 var l = function(e) {
   return e.PAGE = "PAGE", e.GAP = "GAP", e.BACK = "BACK", e.NEXT = "NEXT", e
 }({});
-class c extends(r = i.PureComponent) {
+class c extends(r = Chunk73800.PureComponent) {
   getNeighborBounds() {
     let {
       totalPageCount: e,
       maxVisiblePages: t,
       selectedPage: n
-    } = this.props, r = Math.ceil(t / 2), i = Math.floor(t / 2), o = [1, e], [a, s] = o = n <= r ? [1, t] : n > e - i ? [e - t + 1, e] : [n - r + 1, n + i];
-    return [Math.max(a, 1), Math.min(s, e)]
+    } = this.props, r = Math.ceil(exports / 2), i = Math.floor(exports / 2), o = [1, module], [a, s] = o = require <= r ? [1, exports] : require > module - Chunk73800 ? [module - exports + 1, module] : [require - r + 1, require + Chunk73800];
+    return [Math.max(a, 1), Math.min(s, module)]
   }
   getPageList() {
     let {
@@ -36,14 +37,14 @@ class c extends(r = i.PureComponent) {
     } = this.props, [r, i] = this.getNeighborBounds(), o = {
       type: "BACK",
       key: "back",
-      disabled: 1 === t,
-      selected: !1,
+      disabled: 1 === exports,
+      selected: false,
       navigateToPage: this.handleBackward
     }, s = {
       type: "NEXT",
       key: "next",
-      disabled: t === e,
-      selected: !1,
+      disabled: exports === module,
+      selected: false,
       navigateToPage: this.handleForward
     }, l = [], c = [];
     return r > 1 && (l = [{
@@ -54,20 +55,20 @@ class c extends(r = i.PureComponent) {
     }, {
       type: "GAP",
       key: "left-gap"
-    }], r += 2), i < e && (c = [{
+    }], r += 2), Chunk73800 < module && (c = [{
       type: "GAP",
       key: "right-gap"
-    }], n || c.push({
+    }], require || c.push({
       type: "PAGE",
-      key: "page-".concat(e),
-      targetPage: e,
-      navigateToPage: () => this.handleJump(e)
-    }), i -= 2), [o, ...l, ...a().range(r, i + 1).map(e => ({
+      key: "page-".concat(module),
+      targetPage: module,
+      navigateToPage: () => this.handleJump(module)
+    }), i -= 2), [Chunk392711, ...l, ...a().range(r, Chunk73800 + 1).map(e => ({
       type: "PAGE",
       key: "page-".concat(e),
       targetPage: e,
       selected: e === t,
-      disabled: !1,
+      disabled: false,
       navigateToPage: () => this.handleJump(e)
     })), ...c, s]
   }
@@ -76,9 +77,9 @@ class c extends(r = i.PureComponent) {
       totalPageCount: e,
       children: t
     } = this.props;
-    return t({
+    return exports({
       pages: this.getPageList(),
-      hasMultiplePages: e > 1
+      hasMultiplePages: module > 1
     })
   }
   constructor(...e) {
@@ -99,5 +100,5 @@ class c extends(r = i.PureComponent) {
 }
 s(c, "defaultProps", {
   maxVisiblePages: 9,
-  hideMaxPage: !1
+  hideMaxPage: false
 })

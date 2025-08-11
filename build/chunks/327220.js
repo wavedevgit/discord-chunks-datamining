@@ -1,12 +1,13 @@
 /** Chunk was on web.js **/
+/** chunk id: 327220, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => l
-}), n(388685);
-var r = n(73800),
-  i = n(442837),
-  o = n(592125),
-  a = n(9156);
+}), require("./388685.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk442837 = require("./442837.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk9156 = require("./9156.js");
 let s = null;
 
 function l(e) {
@@ -22,9 +23,9 @@ function l(e) {
       }
       return e
     }, [n, l]);
-  return r.useMemo(() => null == e ? void 0 : e.filter(e => {
+  return r.useMemo(() => null == e ? true : e.filter(e => {
     for (let t of e.participants)
-      if (c.has(t)) return !1;
-    return !0
+      if (c.has(t)) returnfalse;
+    returntrue
   }), [e, c])
 }

@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 668370, original params: e (module,exports,re quire) **/
 "use strict";
-e.exports = function(e, t, n, r) {
+module.exports = function(e, t, n, r) {
   var i = t.getStartKey(),
     o = t.getEndKey(),
     a = e.getBlockMap(),

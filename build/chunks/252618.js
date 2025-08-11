@@ -1,23 +1,24 @@
 /** Chunk was on web.js **/
+/** chunk id: 252618, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   EM: () => b,
   PR: () => g,
   Tt: () => v,
   ZD: () => A,
   yY: () => I
-}), n(388685);
-var r = n(73800),
-  i = n(94171),
-  o = n(362383),
-  a = n(731965);
+}), require("./388685.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk94171 = require("./94171.js"),
+  Chunk362383 = require("./362383.js"),
+  Chunk731965 = require("./731965.js");
 
 function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -51,17 +52,17 @@ function u(e, t) {
   }), e
 }
 let d = {
-    base: n(358085).isPlatformEmbedded ? void 0 : "Discord"
+    base: require("./358085.js").isPlatformEmbedded ? true : "Discord"
   },
   f = 0,
   _ = {
     count: 3,
-    onlyWhenBlurred: !1,
+    onlyWhenBlurred: false,
     interval: 1e3
   },
-  p = (0, o.F)(() => ({
+  p = (0, Chunk362383.F)(() => ({
     titles: [d],
-    notificationCount: void 0,
+    notificationCount: true,
     flashQueue: []
   }));
 
@@ -132,36 +133,36 @@ function T() {
       flashQueue: t
     } = e, n = h(e).filter(e => null != e).join(" | "), r = m(e);
     return ["".concat(r).concat(n), t[0]]
-  }, i.X), [n, o] = r.useState(!1), a = r.useRef(0), s = null == t ? void 0 : t.messages[a.current % t.messages.length];
-  return r.useEffect(() => {
-    if (null == t) {
-      a.current = 0, o(!1);
+  }, Chunk94171.X), [n, o] = Chunk73800.useState(false), a = Chunk73800.useRef(0), s = null == exports ? true : exports.messages[Chunk731965.current % exports.messages.length];
+  return Chunk73800.useEffect(() => {
+    if (null == exports) {
+      Chunk731965.current = 0, Chunk362383(false);
       return
     }
-    if (document.hasFocus() && t.onlyWhenBlurred) {
-      y(t.id), o(!1);
+    if (document.hasFocus() && exports.onlyWhenBlurred) {
+      y(exports.id), Chunk362383(false);
       return
     }
     let e = setInterval(() => {
-      if (a.current >= t.count) {
-        y(t.id), o(!1);
+      if (Chunk731965.current >= exports.count) {
+        y(exports.id), Chunk362383(false);
         return
       }
-      o(e => !e || (a.current += 1, !1))
-    }, t.interval);
-    return () => clearInterval(e)
-  }, [t]), n ? s : e
+      Chunk362383(e => !e || (a.current += 1, false))
+    }, exports.interval);
+    return () => clearInterval(module)
+  }, [exports]), require ? s : module
 }
 
 function S() {
-  r.useEffect(() => {
+  Chunk73800.useEffect(() => {
     function e() {
       O()
     }
-    return document.addEventListener("focusin", e, {
-      capture: !0
-    }), () => document.removeEventListener("focusin", e, {
-      capture: !0
+    return document.addEventListener("focusin", module, {
+      capture: true
+    }), () => document.removeEventListener("focusin", module, {
+      capture: true
     })
   }, [])
 }
@@ -169,11 +170,11 @@ function S() {
 function A() {
   let {
     skipsSettingDefaultPageTitle: e
-  } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
+  } = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {};
   S();
   let t = T();
-  r.useEffect(() => {
-    let n = t === d.base;
-    e && n || (document.title = t)
-  }, [e, t])
+  Chunk73800.useEffect(() => {
+    let n = exports === d.base;
+    module && require || (document.title = exports)
+  }, [module, exports])
 }

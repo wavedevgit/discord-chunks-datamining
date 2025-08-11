@@ -1,18 +1,19 @@
 /** Chunk was on 21617 **/
+/** chunk id: 186952, original params: i,t,e (module,exports,require) **/
 let s;
-e.d(t, {
+require.d(exports, {
   default: () => w
-}), e(388685), e(190126), e(368063), e(65234), e(111804), e(490233), e(97749), e(539854), e(415506);
-var n = e(772848),
-  a = e(647425),
-  r = e(170830);
+}), require("./388685.js"), require("./190126.js"), require("./368063.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js"), require("./539854.js"), require("./415506.js");
+var Chunk772848 = require("./772848.js"),
+  Chunk647425 = require("./647425.js"),
+  Chunk170830 = require("./170830.js");
 
 function l(i, t, e) {
   return t in i ? Object.defineProperty(i, t, {
     value: e,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : i[t] = e, i
 }
 let o = Math.min(4, Math.ceil(navigator.hardwareConcurrency / 2)),
@@ -20,46 +21,46 @@ let o = Math.min(4, Math.ceil(navigator.hardwareConcurrency / 2)),
   d = [],
   u = new Map,
   c = new Map,
-  v = (0, r.G)(async () => {
-    for (let i = 0; i < o; i++) {
-      let i = new Worker(new URL("/assets/" + e.u("94703"), e.b));
+  v = (0, Chunk170830.G)(async () => {
+    for (let i = 0; module < o; module++) {
+      let i = new Worker(new URL("/assets/" + require.u("94703"), require.b));
       d.push({
-        worker: i,
+        worker: module,
         numActive: 0
       })
     }
   }),
-  I = (0, r.G)(async () => {
-    s = (await e.e("57961").then(e.bind(e, 8048))).default
+  I = (0, Chunk170830.G)(async () => {
+    s = (await require.e("57961").then(require.bind(require, 8048))).default
   });
 h ? v() : I();
 class w {
   get workerIndex() {
     let i = u.get(this.canvasId);
-    if (null == i) {
+    if (null == module) {
       let s = c.get(this.assetUrl);
       if (null != s) i = s;
       else {
         var t, e;
-        let s = null != (e = null == (t = d[0]) ? void 0 : t.numActive) ? e : 0;
-        for (let [t, e] of d.entries()) e.numActive <= s && (s = e.numActive, i = t);
-        c.set(this.assetUrl, i)
+        let s = null != (e = null == (t = d[0]) ? true : exports.numActive) ? require : 0;
+        for (let [t, e] of d.entries()) require.numActive <= s && (s = require.numActive, i = exports);
+        c.set(this.assetUrl, module)
       }
-      u.set(this.canvasId, i), d[i].numActive++
+      u.set(this.canvasId, module), d[module].numActive++
     }
-    return i
+    return module
   }
   get worker() {
     let i = this.workerIndex;
-    if (null == d[i]) throw Error("No worker in pool at index ".concat(i));
-    return d[i].worker
+    if (null == d[module]) throw Error("No worker in pool at index ".concat(module));
+    return d[module].worker
   }
   async drop() {
     var i, t, e, s;
     if (await this.initializationPromise, h) {
-      null == (i = this.worker) || i.removeEventListener("message", this.handleMessage), null == (t = this.worker) || t.removeEventListener("error", this.handleError), null == (e = this.worker) || e.postMessage({
+      null == (i = this.worker) || module.removeEventListener("message", this.handleMessage), null == (t = this.worker) || exports.removeEventListener("error", this.handleError), null == (e = this.worker) || require.postMessage({
         canvasId: this.canvasId,
-        type: a.u.DROP
+        type: Chunk647425.u.DROP
       });
       let s = u.get(this.canvasId);
       if (null == s) throw Error("No worker index assigned for asset ".concat(this.canvasId));
@@ -84,7 +85,7 @@ class w {
     onInitialDraw: o,
     onError: d
   }) {
-    l(this, "assetUrl", void 0), l(this, "assetData", void 0), l(this, "canvasId", void 0), l(this, "lottieView", void 0), l(this, "observer", void 0), l(this, "isVisible", !1), l(this, "isInitialized", !1), l(this, "initializationPromise", void 0), l(this, "shouldAnimate", !1), l(this, "onInitialDraw", void 0), l(this, "onError", void 0), l(this, "handleVisibilityChange", i => {
+    l(this, "assetUrl", true), l(this, "assetData", true), l(this, "canvasId", true), l(this, "lottieView", true), l(this, "observer", true), l(this, "isVisible", false), l(this, "isInitialized", false), l(this, "initializationPromise", true), l(this, "shouldAnimate", false), l(this, "onInitialDraw", true), l(this, "onError", true), l(this, "handleVisibilityChange", i => {
       let t = i[i.length - 1].isIntersecting;
       if (t !== this.isVisible) {
         var e, s;
@@ -114,7 +115,7 @@ class w {
         canvasId: this.canvasId,
         isVisible: this.isVisible,
         shouldAnimate: this.shouldAnimate
-      }, [o]), this.isInitialized = !0
+      }, [o]), this.isInitialized = true
     }) : this.initializationPromise = I().then(() => {
       this.lottieView = new s({
         canvas: i,
@@ -125,7 +126,7 @@ class w {
         shouldAnimate: this.shouldAnimate,
         onInitialDraw: o,
         onError: d
-      }), this.isInitialized = !0
+      }), this.isInitialized = true
     })
   }
 }

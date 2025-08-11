@@ -1,2 +1,3 @@
 /** Chunk was on 71444 **/
-s.exports = JSON.parse('{"WfH9io":"ปิด","m3Vfcn":"อย่าแสดงสิ่งนี้อีก","cgdAs7":"(จะเปิดในแท็บใหม่)"}')
+/** chunk id: 707084, original params: s (module,exports,require) **/
+module.exports = JSON.parse('{"WfH9io":"ปิด","m3Vfcn":"อย่าแสดงสิ่งนี้อีก","cgdAs7":"(จะเปิดในแท็บใหม่)"}')

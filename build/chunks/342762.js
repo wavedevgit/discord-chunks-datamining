@@ -1,6 +1,7 @@
 /** Chunk was on 67244 **/
+/** chunk id: 342762, original params: e,t (module,exports,require) **/
 "use strict";
-t.__esModule = !0, t.default = {
+exports.__esModule = true, exports.default = {
   scheme: "summerfruit",
   author: "christopher corley (http://cscorley.github.io/)",
   base00: "#151515",
@@ -19,4 +20,4 @@ t.__esModule = !0, t.default = {
   base0D: "#3777E6",
   base0E: "#AD00A1",
   base0F: "#cc6633"
-}, e.exports = t.default
+}, module.exports = exports.default

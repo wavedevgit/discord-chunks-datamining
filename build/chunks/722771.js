@@ -1,5 +1,6 @@
 /** Chunk was on 96114 **/
-e.exports = {
+/** chunk id: 722771, original params: e,t,o (module,exports,require) **/
+module.exports = {
   ratingSelector: "ratingSelector__5c58b",
   textLabels: "textLabels__5c58b",
   emojis: "emojis__5c58b",

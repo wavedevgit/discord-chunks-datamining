@@ -1,38 +1,39 @@
 /** Chunk was on 67544 **/
-n.d(t, {
+/** chunk id: 873164, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => m
-}), n(388685);
-var r = n(392711),
-  s = n.n(r),
-  o = n(570140),
-  a = n(317770),
-  i = n(120421),
-  c = n(477839),
-  l = n(981631),
-  u = n(603571),
-  d = n(388032);
+}), require("./388685.js");
+var Chunk392711 = require("./392711.js"),
+  s = require.n(Chunk392711),
+  Chunk570140 = require("./570140.js"),
+  Chunk317770 = require("./317770.js"),
+  Chunk120421 = require("./120421.js"),
+  Chunk477839 = require("./477839.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk603571 = require("./603571.js"),
+  Chunk388032 = require("./388032.jsx");
 
 function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
-class p extends a.Z {
+class p extends Chunk317770.Z {
   _initialize() {
-    this.loaded = !0, this.startingTime = Date.now(), i.Z.addChangeListener(this._onStoreChange)
+    this.loaded = true, this.startingTime = Date.now(), Chunk120421.Z.addChangeListener(this._onStoreChange)
   }
   _terminate() {
-    this.loaded = !1, i.Z.removeChangeListener(this._onStoreChange), o.Z.dispatch({
+    this.loaded = false, Chunk120421.Z.removeChangeListener(this._onStoreChange), Chunk570140.Z.dispatch({
       type: "LOCAL_ACTIVITY_UPDATE",
       socketId: "clicker-game",
-      activity: void 0
+      activity: true
     })
   }
   constructor(...e) {
-    super(...e), f(this, "startingTime", 0), f(this, "loaded", !1), f(this, "_onStoreChange", s().debounce(() => {
+    super(...e), f(this, "startingTime", 0), f(this, "loaded", false), f(this, "_onStoreChange", s().debounce(() => {
       if (!this.loaded) return;
       let e = {
         application_id: c.bO,

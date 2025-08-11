@@ -1,5 +1,6 @@
 /** Chunk was on 75708 **/
-e.exports = {
+/** chunk id: 628000, original params: e,t,n (module,exports,require) **/
+module.exports = {
   item: "item__740f2",
   keybindMessage: "keybindMessage__740f2",
   switch: "switch__740f2",

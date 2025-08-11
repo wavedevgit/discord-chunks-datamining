@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 400641, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   premiumRetentionNotice: "premiumRetentionNotice_a606ef",
   premiumRetentionNoticeIcon: "premiumRetentionNoticeIcon_a606ef",
   premiumRetentionNoticeClose: "premiumRetentionNoticeClose_a606ef",

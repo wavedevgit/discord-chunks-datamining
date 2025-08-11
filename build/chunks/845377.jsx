@@ -1,0 +1,207 @@
+/** Chunk was on 22988 **/
+/** chunk id: 845377, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
+  Z: () => E
+}), require("./953529.js"), require("./388685.js");
+var Chunk255367 = require("./255367.js"),
+  Chunk73800 = require("./73800.js"),
+  Chunk120356 = require("./120356.js"),
+  a = require.n(Chunk120356),
+  Chunk498607 = require("./498607.js"),
+  o = require.n(Chunk498607),
+  Chunk913527 = require("./913527.js"),
+  d = require.n(Chunk913527),
+  Chunk442837 = require("./442837.js"),
+  Chunk692547 = require("./692547.js"),
+  Chunk755721 = require("./755721.js"),
+  Chunk481060 = require("./481060.js"),
+  Chunk984933 = require("./984933.js"),
+  Chunk63063 = require("./63063.js"),
+  Chunk709054 = require("./709054.js"),
+  Chunk434404 = require("./434404.js"),
+  Chunk118215 = require("./118215.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk388032 = require("./388032.jsx"),
+  Chunk252151 = require("./252151.js");
+
+function y(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      var r;
+      r = n[t], t in e ? Object.defineProperty(e, t, {
+        value: r,
+        enumerable: true,
+        configurable: true,
+        writable: true
+      }) : e[t] = r
+    })
+  }
+  return e
+}
+
+function C(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
+    var n = Object.keys(e);
+    if (Object.getOwnPropertySymbols) {
+      var r = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, r)
+    }
+    return n
+  })(Object(t)).forEach(function(n) {
+    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+  }), e
+}
+let N = e => {
+  let {
+    name: t,
+    failingName: n,
+    description: i,
+    checked: l,
+    pending: a,
+    pendingDescription: s,
+    failingDescription: o
+  } = e, c = t, d = null, u = null;
+  return a ? (d = <p.Mgn size={"custom"} color={m.Z.unsafe_rawColors.YELLOW_300.css} width={20} height={20} />, u = null != s ? s : i) : l ? (d = <p.XZJ readOnly={true} shape={p.XZJ.Shapes.ROUND} size={20} type={p.XZJ.Types.INVERTED} value={true} />, u = i) : (d = <p.k$p size={"custom"} color={m.Z.unsafe_rawColors.RED_400.css} width={20} height={20} />, c = null != n ? n : t, u = null != o ? o : i), <div className={O.checklistItem}>{<div className={O.checklistIcon}>{d}</div>}{<div className={O.checklistText}>{<p.X6q variant={"heading-md/semibold"}>{c}</p.X6q>}{<p.Text color={"text-muted"} variant={"text-sm/normal"}>{u}</p.Text>}</div>}</div>
+};
+
+function I(e, t) {
+  return o()(null == e ? true : e.map(e => {
+    let [t, n] = e;
+    return null == t ? true : t.id
+  }), null == t ? true : t.map(e => {
+    let [t, n] = e;
+    return null == t ? true : t.id
+  }))
+}
+let E = e => {
+  let {
+    guild: t,
+    guildId: l,
+    className: s,
+    headerContent: o,
+    failedItemsOnly: c = false
+  } = e, [m, E] = (0, u.Wu)([j.ZP], () => [j.ZP.getDiscoveryChecklist(l), j.ZP.isLoading()], [l]), {
+    nsfwProperties: S
+  } = null != m ? m : {}, T = null == t ? true : t.features.has(v.oNc.PARTNERED), P = null == S ? true : S.channels_banned_keywords, w = (0, u.e7)([h.ZP], () => {
+    var e, n, r;
+    if (null == P) return [];
+    let i = null != (n = (null != (e = h.ZP.getChannels(t.id)) ? e : {})[h.sH]) ? n : [],
+      l = null != (r = null == i ? true : i.map(e => e.channel).reduce((e, t) => C(y({}, e), {
+        [t.id]: t
+      }), {})) ? r : {};
+    return null == P ? [] : Object.entries(P).map(e => {
+      let [t, n] = e;
+      return [l[t], n]
+    })
+  }, [t.id, P], I);
+  if (E || null == m) return <div className={a()(O.container, O.loaderContainer, s)}>{<p.X6q className={O.loadingText} variant={"heading-md/semibold"} color={"header-secondary"}>{_.intl.string(_.t.e1gm0d)}</p.X6q>}{<p.$jN className={O.__invalid_spinner} />}</div>;
+  let R = T ? _.t["WH+1Y2"] : _.t.a4MYDA,
+    Z = [{
+      name: _.intl.string(_.t.yvk9p6),
+      failingName: _.intl.string(_.t["IY/UT0"]),
+      description: _.intl.string(_.t.hSLSMz),
+      failingDescription: _.intl.format(_.t.odsGg4, {
+        termsURL: v.EYA.TERMS,
+        guidelinesURL: f.Z.getArticleURL(v.BhN.PUBLIC_GUILD_GUILDLINES)
+      }),
+      checked: null == m ? true : m.safeEnvironment
+    }, {
+      name: _.intl.formatToPlainString(_.t.NYovAw, {
+        minMembers: m.minimumGuildSize
+      }),
+      failingName: _.intl.formatToPlainString(_.t.wvJwYm, {
+        minMembers: m.minimumGuildSize.toLocaleString()
+      }),
+      description: null,
+      failingDescription: _.intl.format(R, {
+        minMembers: m.minimumGuildSize.toLocaleString()
+      }),
+      checked: null == m ? true : m.size
+    }, {
+      name: _.intl.string(_.t.PtxOCA),
+      failingName: _.intl.string(_.t.JPF5IC),
+      description: _.intl.formatToPlainString(_.t.VT0bQE, {
+        minimumGuildAge: Math.ceil(m.minimumGuildAge / 7)
+      }),
+      failingDescription: _.intl.formatToPlainString(_.t.jYwM1d, {
+        minimumGuildAge: Math.ceil(m.minimumGuildAge / 7),
+        passDate: d()(b.default.extractTimestamp(l)).add(m.minimumGuildAge, "days").format("LL")
+      }),
+      checked: null == m ? true : m.age
+    }, {
+      name: (null == m ? true : m.healthScorePending) ? _.intl.string(_.t.G77ud3) : _.intl.string(_.t["95nW0N"]),
+      failingName: _.intl.string(_.t["+GHxPz"]),
+      description: _.intl.string(_.t.rTWJwc),
+      failingDescription: <r.Fragment>{<p.Text color={"text-muted"} className={O.healthFailingDescription} variant={"text-sm/normal"}>{_.intl.string(_.t.LjqS0N)}</p.Text>}{(null == m ? true : m.engagementHealthy) ? null : <p.Text color={"text-danger"} variant={"text-sm/normal"}>{_.intl.string(_.t["X8Lt7+"])}</p.Text>}{(null == m ? true : m.retentionHealthy) ? null : <p.Text color={"text-danger"} variant={"text-sm/normal"}>{_.intl.string(_.t["esdy8/"])}</p.Text>}{(() => {
+          if (null == m || null == m.healthScore) returnfalse;
+          let {
+            retentionHealthy: e,
+            engagementHealthy: t,
+            healthScore: n
+          } = m, {
+            avg_nonnew_participators: r,
+            avg_nonnew_communicators: i,
+            perc_ret_w1_intentful: l
+          } = n;
+          return !e && null != l || !t && null != r && null != i
+        })() && <g.zx className={O.detailsButton} look={g.zx.Looks.LINK} size={g.zx.Sizes.NONE} color={g.zx.Colors.LINK} onClick={() => (0, p.ZDy)(async () => {
+            let {
+              default: e
+            } = await n.e("23401").then(n.bind(n, 666599));
+            return t => (0, r.jsx)(e, C(y({}, t), {
+              guildChecklist: m
+            }))
+          })}>{_.intl.string(_.t.qyiTHx)}</g.zx>}</r.Fragment>,
+      pendingDescription: (null == m ? true : m.size) ? _.intl.format(_.t.ALtXIC, {
+        checkBackHook: (e, t) => <strong className={O.healthPending}>{e}</strong>
+      }) : _.intl.formatToPlainString(_.t["6S/96O"], {
+        minMembers: 200
+      }),
+      checked: null == m ? true : m.healthy,
+      pending: null == m ? true : m.healthScorePending
+    }, {
+      name: _.intl.string(_.t["/cghSE"]),
+      failingName: _.intl.string(_.t["0HJNa2"]),
+      description: _.intl.string(_.t.Pbu9AQ),
+      failingDescription: <r.Fragment>{(null == S ? true : S.channels) != null ? <p.Text color={"text-muted"} variant={"text-sm/normal"}>{_.intl.format(_.t["T+DQYW"], {
+            channelHook: (e, t) => (0, r.jsx)("span", {
+              className: O.doesNot,
+              children: e
+            }, t)
+          })}</p.Text> : null}{w.length > 0 ? <div className={O.indent}>{w.map(e => {
+            let [t, n] = e;
+            return null != t ? (0, r.jsxs)(p.Text, {
+              color: "text-muted",
+              variant: "text-sm/normal",
+              children: ["#", t.name, ": ", n.join(", ")]
+            }, t.id) : null
+          })}</div> : null}{(null == S ? true : S.name) != null ? <p.Text color={"text-muted"} variant={"text-sm/normal"}>{_.intl.format(_.t.KVD8Ex, {
+            nameHook: (e, t) => (0, r.jsx)("span", {
+              className: O.doesNot,
+              children: e
+            }, t)
+          })}</p.Text> : null}{(null == S ? true : S.description) != null ? <p.Text color={"text-muted"} variant={"text-sm/normal"}>{_.intl.format(_.t["/W9Ken"], {
+            descriptionHook: (e, t) => (0, r.jsx)("span", {
+              className: O.doesNot,
+              children: e
+            }, t)
+          })}</p.Text> : null}</r.Fragment>,
+      checked: null == S || 0 === Object.keys(S).length
+    }, {
+      name: _.intl.string(_.t.lSXnLy),
+      failingName: _.intl.string(_.t.awA3PT),
+      description: _.intl.string(_.t.QbBJ7e),
+      failingDescription: _.intl.format(_.t.kBXInZ, {
+        onClick: () => x.Z.setSection(v.pNK.SAFETY, v.KsC.SAFETY_PERMISSIONS)
+      }),
+      checked: null == m ? true : m.protected
+    }];
+  return <div className={a()(O.container, s)}>{(() => {
+      let e = (null == m ? true : m.sufficient) ? n(909425) : n(177266);
+      return null == o ? null : <div className={O.header}>{<img alt={""} src={e} className={O.headerIcon} width={40} />}{o}</div>
+    })()}{Z.filter(e => !c || null == e.checked || !e.checked).map((e, t) => <i.Fragment>{<N{...y({}, e)} />}{t < Z.length - 1 ? <hr className={O.separator} /> : null}</i.Fragment>)}</div>
+}

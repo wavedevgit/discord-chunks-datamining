@@ -1,30 +1,31 @@
 /** Chunk was on web.js **/
+/** chunk id: 405826, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   N: () => v
-}), n(704826), n(35282), n(388685);
-var r = n(623279),
-  i = n(392711),
-  o = n.n(i),
-  a = n(374470),
-  s = n(579806),
-  l = n(710845),
-  c = n(706454),
-  u = n(823379),
-  d = n(598105),
-  f = n(643413);
+}), require("./704826.js"), require("./35282.js"), require("./388685.js");
+var Chunk623279 = require("./623279.js"),
+  Chunk392711 = require("./392711.js"),
+  o = require.n(Chunk392711),
+  Chunk374470 = require("./374470.js"),
+  Chunk579806 = require("./579806.js"),
+  Chunk710845 = require("./710845.js"),
+  Chunk706454 = require("./706454.js"),
+  Chunk823379 = require("./823379.js"),
+  Chunk598105 = require("./598105.js"),
+  Chunk643413 = require("./643413.js");
 
 function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 let p = 250,
-  h = new l.Z("Spellchecker"),
-  m = null === s.Z || void 0 === s.Z ? void 0 : s.Z.spellCheck;
+  h = new Chunk710845.Z("Spellchecker"),
+  m = null === Chunk579806.Z || true === Chunk579806.Z ? true : Chunk579806.Z.spellCheck;
 
 function g(e) {
   var t;
@@ -77,13 +78,13 @@ class E {
     m.replaceMisspelling(e)
   }
   constructor(e) {
-    _(this, "languageDetector", void 0), _(this, "regionPreference", void 0), _(this, "_enabled", !0), _(this, "misspelledWord", ""), _(this, "corrections", []);
+    _(this, "languageDetector", true), _(this, "regionPreference", true), _(this, "_enabled", true), _(this, "misspelledWord", ""), _(this, "corrections", []);
     let [t, n] = c.default.locale.split("-");
     this.regionPreference = n;
     let r = this.getAvailableLanguages(e);
     this.languageDetector = new d.Z(t, n => {
       let i = "".concat(n, "-").concat(this.regionPreference);
-      if (-1 !== e.indexOf(i)) this.setLocale(i);
+      if (false !== e.indexOf(i)) this.setLocale(i);
       else {
         var o;
         let e = null != (o = r[n]) ? o : f.Z[t];
@@ -100,14 +101,14 @@ let b = o().debounce((e, t) => {
 }, p);
 
 function y(e) {
-  null != document.body && document.body.addEventListener("beforeinput", t => b(e, t.target), !0)
+  null != document.body && document.body.addEventListener("beforeinput", t => b(e, t.target), true)
 }
 
 function O(e) {
-  return null == e ? null : (0, a.k)(e, HTMLInputElement) || (0, a.k)(e, HTMLTextAreaElement) ? e.value : (0, a.k)(e) && e.hasAttribute("contenteditable") ? e.textContent : void 0
+  return null == e ? null : (0, a.k)(e, HTMLInputElement) || (0, a.k)(e, HTMLTextAreaElement) ? e.value : (0, a.k)(e) && e.hasAttribute("contenteditable") ? e.textContent : true
 }
 async function v() {
   var e;
-  let t = new E((null != (e = await m.getAvailableDictionaries()) ? e : []).map(g).filter(u.lm));
-  return y(t), t
+  let t = new E((null != (e = await m.getAvailableDictionaries()) ? module : []).map(g).filter(Chunk823379.lm));
+  return y(exports), exports
 }

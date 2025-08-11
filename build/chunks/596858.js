@@ -1,5 +1,6 @@
 /** Chunk was on web.js **/
-e.exports = function(e) {
+/** chunk id: 596858, original params: e (module,exports,re quire) **/
+module.exports = function(e) {
   let t = e.regex,
     n = /(?:(?:[a-zA-Z]|\.[._a-zA-Z])[._a-zA-Z0-9]*)|\.(?!\d)/,
     r = t.either(/0[xX][0-9a-fA-F]+\.[0-9a-fA-F]*[pP][+-]?\d+i?/, /0[xX][0-9a-fA-F]+(?:[pP][+-]?\d+)?[Li]?/, /(?:\d+(?:\.\d*)?|\.\d+)(?:[eE][+-]?\d+)?[Li]?/),
@@ -19,7 +20,7 @@ e.exports = function(e) {
         match: /@examples/,
         starts: {
           end: t.lookahead(t.either(/\n^#'\s*(?=@[a-zA-Z]+)/, /\n^(?!#')/)),
-          endsParent: !0
+          endsParent: true
         }
       }, {
         scope: "doctag",
@@ -32,7 +33,7 @@ e.exports = function(e) {
           }, {
             match: /`(?:\\.|[^`\\])+`/
           }],
-          endsParent: !0
+          endsParent: true
         }]
       }, {
         scope: "doctag",

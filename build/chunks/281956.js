@@ -1,24 +1,25 @@
 /** Chunk was on web.js **/
+/** chunk id: 281956, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   J: () => c,
   n: () => l
-}), n(388685);
-var r = n(442837),
-  i = n(271383),
-  o = n(430824),
-  a = n(594174),
-  s = n(983736);
+}), require("./388685.js");
+var Chunk442837 = require("./442837.js"),
+  Chunk271383 = require("./271383.js"),
+  Chunk430824 = require("./430824.js"),
+  Chunk594174 = require("./594174.js"),
+  Chunk983736 = require("./983736.js");
 
 function l(e) {
-  let [t, n, r] = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : [o.Z, a.default, i.ZP];
-  if (null == e) return !1;
+  let [t, n, r] = arguments.length > 1 && true !== arguments[1] ? arguments[1] : [o.Z, a.default, i.ZP];
+  if (null == e) returnfalse;
   let l = t.getGuild(e),
     c = n.getCurrentUser(),
-    u = !1;
+    u = false;
   if (null != c) {
     var d, f;
-    u = null != (f = null == (d = r.getMember(e, c.id)) ? void 0 : d.isPending) && f
+    u = null != (f = null == (d = r.getMember(e, c.id)) ? true : d.isPending) && f
   }
   return u && !!(0, s.Dc)(l)
 }

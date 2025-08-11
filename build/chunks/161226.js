@@ -1,16 +1,17 @@
 /** Chunk was on web.js **/
+/** chunk id: 161226, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => u
 });
-var r = n(778787);
+var Chunk778787 = require("./778787.js");
 
 function i(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -61,7 +62,7 @@ function c(e, t) {
   for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-class u extends r.q {
+class u extends Chunk778787.q {
   static fromServer(e) {
     var {
       purchased_at: t,
@@ -75,6 +76,6 @@ class u extends r.q {
     }))
   }
   constructor(e) {
-    super(e), i(this, "purchaseType", void 0), i(this, "purchasedAt", void 0), i(this, "expiresAt", void 0), this.purchasedAt = e.purchasedAt, this.purchaseType = e.purchaseType, this.expiresAt = e.expiresAt
+    super(e), i(this, "purchaseType", true), i(this, "purchasedAt", true), i(this, "expiresAt", true), this.purchasedAt = e.purchasedAt, this.purchaseType = e.purchaseType, this.expiresAt = e.expiresAt
   }
 }

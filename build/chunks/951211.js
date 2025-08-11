@@ -1,17 +1,18 @@
 /** Chunk was on web.js **/
+/** chunk id: 951211, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => f,
   r: () => d
-}), n(539854);
-var r = n(481060),
-  i = n(620662),
-  o = n(933557),
-  a = n(377171),
-  s = n(699516),
-  l = n(594174),
-  c = n(981631),
-  u = n(388032),
+}), require("./539854.js");
+var Chunk481060 = require("./481060.js"),
+  Chunk620662 = require("./620662.js"),
+  Chunk933557 = require("./933557.js"),
+  Chunk377171 = require("./377171.js"),
+  Chunk699516 = require("./699516.js"),
+  Chunk594174 = require("./594174.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk388032 = require("./388032.jsx"),
   d = function(e) {
     return e.UPLOAD_A_FILE = "UPLOAD_A_FILE", e.UPLOAD_TEXT_AS_FILE = "UPLOAD_TEXT_AS_FILE", e.INVITE_TO_PLAY_GAME = "INVITE_TO_GAME", e.INVITE_TO_LISTEN = "INVITE_TO_LISTEN", e.INVITE_TO_WATCH = "INVITE_TO_WATCH", e.CREATE_THREAD = "CREATE_THREAD", e.SLASH_COMMAND = "SLASH_COMMAND", e.CLIPS = "CLIPS", e.POLL = "POLL", e.ACTIVITY = "ACTIVITY", e.SCHEDULED_MESSAGE = "SCHEDULED_MESSAGE", e
   }({});
@@ -66,7 +67,7 @@ function f(e) {
       type: "INVITE_TO_GAME",
       icon: r.xoD,
       display: u.intl.formatToPlainString(u.t["KHLo+P"], {
-        channel: (0, o.F6)(p, l.default, s.Z, !0),
+        channel: (0, o.F6)(p, l.default, s.Z, true),
         game: null != e ? e.name : ""
       }),
       activity: e
@@ -74,7 +75,7 @@ function f(e) {
       type: "INVITE_TO_LISTEN",
       icon: r.iOO,
       display: u.intl.formatToPlainString(u.t.I479p6, {
-        channel: (0, o.F6)(p, l.default, s.Z, !0),
+        channel: (0, o.F6)(p, l.default, s.Z, true),
         name: null != e ? e.name : ""
       }),
       activity: e
@@ -82,7 +83,7 @@ function f(e) {
       type: "INVITE_TO_WATCH",
       icon: r.tEF,
       display: u.intl.formatToPlainString(u.t["EvCP/v"], {
-        channel: (0, o.F6)(p, l.default, s.Z, !0),
+        channel: (0, o.F6)(p, l.default, s.Z, true),
         name: null != e ? e.name : ""
       }),
       activity: e

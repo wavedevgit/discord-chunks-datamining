@@ -1,10 +1,11 @@
 /** Chunk was on web.js **/
+/** chunk id: 491257, original params: e (module,exports,re quire) **/
 "use strict";
 
 function t(e, t) {
   return Object.prototype.hasOwnProperty.call(e, t)
 }
-e.exports = function(e, n, r, i) {
+module.exports = function(e, n, r, i) {
   n = n || "&", r = r || "=";
   var o = {};
   if ("string" != typeof e || 0 === e.length) return o;

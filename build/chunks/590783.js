@@ -1,22 +1,23 @@
 /** Chunk was on web.js **/
+/** chunk id: 590783, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => f
-}), n(997841);
-var r = n(913527),
-  i = n.n(r),
-  o = n(81825),
-  a = n(630388),
-  s = n(605338),
-  l = n(301766),
-  c = n(474936);
+}), require("./997841.js");
+var Chunk913527 = require("./913527.js"),
+  i = require.n(Chunk913527),
+  Chunk81825 = require("./81825.js"),
+  Chunk630388 = require("./630388.js"),
+  Chunk605338 = require("./605338.js"),
+  Chunk301766 = require("./301766.js"),
+  Chunk474936 = require("./474936.js");
 
 function u(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 let d = Object.freeze({
@@ -24,7 +25,7 @@ let d = Object.freeze({
   EXISTING_PREMIUM_SUBSCRIPTION_DISALLOWED: 2,
   NOT_SELF_REDEEMABLE: 4
 });
-class f extends o.Z {
+class f extends Chunk81825.Z {
   static createFromServer(e) {
     return new f({
       userId: null != e.user ? e.user.id : null,
@@ -38,7 +39,7 @@ class f extends o.Z {
       redeemed: e.redeemed,
       subscriptionPlanId: null != e.subscription_plan ? e.subscription_plan.id : e.subscription_plan_id,
       subscriptionPlan: null != e.subscription_plan ? l.ZP.createFromServer(e.subscription_plan) : null,
-      revoked: !1,
+      revoked: false,
       entitlementBranches: null != e.entitlement_branches ? e.entitlement_branches : null,
       flags: null != e.flags ? e.flags : 0,
       giftStyle: e.gift_style,
@@ -53,7 +54,7 @@ class f extends o.Z {
   }
   isExpired() {
     let e = this.expiresAt;
-    return null != e && i()().isAfter(e)
+    return null != module && i()().isAfter(module)
   }
   get hasMultipleCopies() {
     return this.maxUses > 1
@@ -68,13 +69,13 @@ class f extends o.Z {
     return null != this.subscriptionPlanId
   }
   get premiumSubscriptionType() {
-    return this.isSubscription && c.y7[this.skuId] || null
+    return this.isSubscription && Chunk474936.y7[this.skuId] || null
   }
   get isSelfRedeemable() {
-    return !(0, a.yE)(this.flags, d.NOT_SELF_REDEEMABLE)
+    return !(0, Chunk630388.yE)(this.flags, d.NOT_SELF_REDEEMABLE)
   }
   get isExistingPremiumSubscriptionDisallowed() {
-    return (0, a.yE)(this.flags, d.EXISTING_PREMIUM_SUBSCRIPTION_DISALLOWED)
+    return (0, Chunk630388.yE)(this.flags, d.EXISTING_PREMIUM_SUBSCRIPTION_DISALLOWED)
   }
   get analyticsData() {
     return {
@@ -86,6 +87,6 @@ class f extends o.Z {
     return this.code
   }
   constructor(e) {
-    super(), u(this, "userId", void 0), u(this, "code", void 0), u(this, "skuId", void 0), u(this, "applicationId", void 0), u(this, "uses", void 0), u(this, "maxUses", void 0), u(this, "expiresAt", void 0), u(this, "redeemed", void 0), u(this, "storeListingId", void 0), u(this, "subscriptionPlanId", void 0), u(this, "subscriptionPlan", void 0), u(this, "revoked", void 0), u(this, "entitlementBranches", void 0), u(this, "flags", void 0), u(this, "subscriptionTrial", void 0), u(this, "promotion", void 0), u(this, "giftStyle", void 0), this.userId = e.userId, this.code = e.code, this.skuId = e.skuId, this.applicationId = e.applicationId, this.uses = e.uses, this.maxUses = e.maxUses, this.expiresAt = e.expiresAt, this.redeemed = e.redeemed, this.storeListingId = e.storeListingId, this.subscriptionPlanId = e.subscriptionPlanId, this.subscriptionPlan = e.subscriptionPlan, this.revoked = e.revoked, this.entitlementBranches = e.entitlementBranches, this.flags = e.flags, this.subscriptionTrial = e.subscriptionTrial, this.promotion = e.promotion, this.giftStyle = e.giftStyle
+    super(), u(this, "userId", true), u(this, "code", true), u(this, "skuId", true), u(this, "applicationId", true), u(this, "uses", true), u(this, "maxUses", true), u(this, "expiresAt", true), u(this, "redeemed", true), u(this, "storeListingId", true), u(this, "subscriptionPlanId", true), u(this, "subscriptionPlan", true), u(this, "revoked", true), u(this, "entitlementBranches", true), u(this, "flags", true), u(this, "subscriptionTrial", true), u(this, "promotion", true), u(this, "giftStyle", true), this.userId = e.userId, this.code = e.code, this.skuId = e.skuId, this.applicationId = e.applicationId, this.uses = e.uses, this.maxUses = e.maxUses, this.expiresAt = e.expiresAt, this.redeemed = e.redeemed, this.storeListingId = e.storeListingId, this.subscriptionPlanId = e.subscriptionPlanId, this.subscriptionPlan = e.subscriptionPlan, this.revoked = e.revoked, this.entitlementBranches = e.entitlementBranches, this.flags = e.flags, this.subscriptionTrial = e.subscriptionTrial, this.promotion = e.promotion, this.giftStyle = e.giftStyle
   }
 }

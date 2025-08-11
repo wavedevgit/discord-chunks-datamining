@@ -1,9 +1,10 @@
 /** Chunk was on web.js **/
+/** chunk id: 90463, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 
 function r(e) {
   return e.replace(/[\s-~]+/g, "-").replace(/^-+/, "").replace(/[\\'!"#$%&()*+,./:;<=>?@[\]^`{|}~]/g, "").toLowerCase()
 }
-n.d(t, {
+require.d(exports, {
   Z: () => r
-}), n(704826), n(35282)
+}), require("./704826.js"), require("./35282.js")

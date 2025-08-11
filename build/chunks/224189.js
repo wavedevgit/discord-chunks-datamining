@@ -1,19 +1,20 @@
 /** Chunk was on web.js **/
+/** chunk id: 224189, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => c
 });
-var r = n(812206),
-  i = n(307643),
-  o = n(973616),
-  a = n(592125),
-  s = n(566620),
-  l = n(969345);
+var Chunk812206 = require("./812206.js"),
+  Chunk307643 = require("./307643.js"),
+  Chunk973616 = require("./973616.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk566620 = require("./566620.js"),
+  Chunk969345 = require("./969345.js");
 async function c(e, t) {
   var n;
   let c = r.Z.getApplication(e);
   if (u(c)) return c;
-  let d = null == (n = a.Z.getChannel(t)) ? void 0 : n.guild_id,
+  let d = null == (n = a.Z.getChannel(t)) ? true : n.guild_id,
     {
       activityConfigs: f,
       applications: _
@@ -25,7 +26,7 @@ async function c(e, t) {
       activityConfigs: f,
       applications: _
     });
-  if (u(null == p ? void 0 : p.application)) return null == p ? void 0 : p.application;
+  if (u(null == p ? true : p.application)) return null == p ? true : p.application;
   {
     let t = await (0, i.UM)(e);
     return o.ZP.createFromServer(t)

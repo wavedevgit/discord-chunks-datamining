@@ -1,33 +1,34 @@
 /** Chunk was on web.js **/
+/** chunk id: 275131, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => h
-}), n(388685);
-var r = n(664751),
-  i = n(975641),
-  o = n(544891),
-  a = n(570140),
-  s = n(147913),
-  l = n(900849),
-  c = n(356164),
-  u = n(726115),
-  d = n(128449),
-  f = n(981631);
+}), require("./388685.js");
+var Chunk664751 = require("./664751.js"),
+  Chunk975641 = require("./975641.js"),
+  Chunk544891 = require("./544891.js"),
+  Chunk570140 = require("./570140.js"),
+  Chunk147913 = require("./147913.js"),
+  Chunk900849 = require("./900849.js"),
+  Chunk356164 = require("./356164.js"),
+  Chunk726115 = require("./726115.js"),
+  Chunk128449 = require("./128449.js"),
+  Chunk981631 = require("./981631.js");
 
 function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
-class p extends s.Z {
+class p extends Chunk147913.Z {
   constructor(...e) {
     super(...e), _(this, "actions", {
       POST_CONNECTION_OPEN: () => this.handleConnectionOpen()
-    }), _(this, "queue", new Set), _(this, "isFetchEnabled", !1), _(this, "handleConnectionOpen", () => {
-      this.isFetchEnabled = !0, this.queue.forEach(e => {
+    }), _(this, "queue", new Set), _(this, "isFetchEnabled", false), _(this, "handleConnectionOpen", () => {
+      this.isFetchEnabled = true, this.queue.forEach(e => {
         e === d.Hk ? this.fetchFeaturedGuilds() : this.fetchCategoryFeaturedGuilds({
           categoryId: e
         })
@@ -35,7 +36,7 @@ class p extends s.Z {
     }), _(this, "fetchFeaturedGuilds", async e => {
       var t;
       if (!this.isFetchEnabled) return void this.queue.add(d.Hk);
-      let n = null != (t = null == e ? void 0 : e.forceRefresh) && t,
+      let n = null != (t = null == e ? true : e.forceRefresh) && t,
         s = c.Z.getLastFetchTimestamp({
           categoryId: d.Hk
         });
@@ -43,7 +44,7 @@ class p extends s.Z {
         a.Z.dispatch({
           type: "GLOBAL_DISCOVERY_SERVERS_SEARCH_START",
           categoryId: d.Hk,
-          reset: !0
+          reset: true
         });
         try {
           let e = await o.tn.get({
@@ -52,8 +53,8 @@ class p extends s.Z {
                 offset: 0,
                 limit: i.g.FEATURED_DEFAULT_LIMIT
               }),
-              oldFormErrors: !0,
-              rejectWithError: !1
+              oldFormErrors: true,
+              rejectWithError: false
             }),
             t = e.body.total,
             n = e.body.guilds.map(u.Uv);
@@ -76,7 +77,7 @@ class p extends s.Z {
     }), _(this, "fetchCategoryFeaturedGuilds", async e => {
       let {
         categoryId: t,
-        forceRefresh: n = !1
+        forceRefresh: n = false
       } = e;
       if (!this.isFetchEnabled) return void this.queue.add(t);
       let i = c.Z.getLastFetchTimestamp({
@@ -86,7 +87,7 @@ class p extends s.Z {
         a.Z.dispatch({
           type: "GLOBAL_DISCOVERY_SERVERS_SEARCH_START",
           categoryId: t,
-          reset: !0
+          reset: true
         });
         try {
           let e = await o.tn.get({
@@ -94,8 +95,8 @@ class p extends s.Z {
               query: r.stringify({
                 categories: [t]
               }),
-              oldFormErrors: !0,
-              rejectWithError: !1
+              oldFormErrors: true,
+              rejectWithError: false
             }),
             n = e.body.total,
             i = e.body.guilds.map(u.Uv);

@@ -1,5 +1,6 @@
 /** Chunk was on 67544 **/
-e.exports = {
+/** chunk id: 364491, original params: e,t,n (module,exports,require) **/
+module.exports = {
   image: "image__78658",
   imageFlipped: "imageFlipped__78658 image__78658",
   absoluteImage: "absoluteImage__78658 image__78658",

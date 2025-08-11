@@ -1,5 +1,6 @@
 /** Chunk was on 34779 **/
-e.exports = {
+/** chunk id: 683560, original params: e,t,n (module,exports,require) **/
+module.exports = {
   ping: "ping__06d62",
   largePing: "largePing__06d62",
   rtcConnectionStatus: "rtcConnectionStatus__06d62",

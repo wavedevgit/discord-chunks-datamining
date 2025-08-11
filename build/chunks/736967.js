@@ -1,5 +1,6 @@
 /** Chunk was on 93886 **/
-e.exports = {
+/** chunk id: 736967, original params: e,t,a (module,exports,require) **/
+module.exports = {
   container: "container_db0ccb",
   resizeHandle: "resizeHandle_db0ccb",
   sidebarContent: "sidebarContent_db0ccb",

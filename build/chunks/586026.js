@@ -1,11 +1,12 @@
 /** Chunk was on web.js **/
+/** chunk id: 586026, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-var r = n(214788),
-  i = n(260284),
-  o = n(65183),
-  a = n(581079),
-  s = o.OrderedMap,
-  l = o.List,
+var Chunk214788 = require("./214788.js"),
+  Chunk260284 = require("./260284.js"),
+  Chunk65183 = require("./65183.js"),
+  Chunk581079 = require("./581079.js"),
+  s = Chunk65183.OrderedMap,
+  l = Chunk65183.List,
   c = function(e, t, n) {
     if (e) {
       var r = t.get(e);
@@ -62,11 +63,11 @@ var r = n(214788),
       })
     })
   };
-e.exports = function(e, t, n, o) {
-  "replace" === o && a(!1);
+module.exports = function(e, t, n, o) {
+  "replace" === o && a(false);
   var l = n.getKey(),
     c = t.getKey();
-  c === l && a(!1);
+  c === l && a(false);
   var d = e.getBlockMap(),
     f = t instanceof r,
     _ = [t],
@@ -98,12 +99,12 @@ e.exports = function(e, t, n, o) {
     E = s();
   if ("before" === o) {
     var b = e.getBlockBefore(l);
-    b && b.getKey() === t.getKey() && a(!1), E = h.concat([].concat(g, [
+    b && b.getKey() === t.getKey() && a(false), E = h.concat([].concat(g, [
       [l, n]
     ]), m).toOrderedMap()
   } else if ("after" === o) {
     var y = e.getBlockAfter(l);
-    y && y.getKey() === c && a(!1), E = h.concat([
+    y && y.getKey() === c && a(false), E = h.concat([
       [l, n]
     ].concat(g), m).toOrderedMap()
   }

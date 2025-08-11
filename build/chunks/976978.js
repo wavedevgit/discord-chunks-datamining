@@ -1,12 +1,13 @@
 /** Chunk was on 75708 **/
-n.d(t, {
+/** chunk id: 976978, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   q: () => s
 });
-var i = n(750832),
-  r = n(695346);
+var Chunk750832 = require("./750832.js"),
+  Chunk695346 = require("./695346.js");
 let s = () => {
-  let e = r.iG.useSetting(),
-    t = r.gR.useSetting(),
-    n = (0, i.nS)("useDefaultGuildsRestricted");
-  return null != t ? t : !!e || !!n || e
+  let e = Chunk695346.iG.useSetting(),
+    t = Chunk695346.gR.useSetting(),
+    n = (0, Chunk750832.nS)("useDefaultGuildsRestricted");
+  return null != exports ? exports : !!module || !!require || module
 }

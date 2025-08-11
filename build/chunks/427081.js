@@ -1,43 +1,44 @@
 /** Chunk was on web.js **/
+/** chunk id: 427081, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => S
-}), n(388685);
-var r = n(754700),
-  i = n(147913),
-  o = n(317381),
-  a = n(594190),
-  s = n(569545),
-  l = n(199902),
-  c = n(77498),
-  u = n(938475),
-  d = n(70956),
-  f = n(823379),
-  _ = n(509212),
-  p = n(272008),
-  h = n(569984),
-  m = n(5881),
-  g = n(46140);
+}), require("./388685.js");
+var Chunk754700 = require("./754700.js"),
+  Chunk147913 = require("./147913.js"),
+  Chunk317381 = require("./317381.js"),
+  Chunk594190 = require("./594190.js"),
+  Chunk569545 = require("./569545.js"),
+  Chunk199902 = require("./199902.js"),
+  Chunk77498 = require("./77498.js"),
+  Chunk938475 = require("./938475.js"),
+  Chunk70956 = require("./70956.js"),
+  Chunk823379 = require("./823379.js"),
+  Chunk509212 = require("./509212.js"),
+  Chunk272008 = require("./272008.js"),
+  Chunk569984 = require("./569984.js"),
+  Chunk5881 = require("./5881.js"),
+  Chunk46140 = require("./46140.js");
 
 function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
-let b = +d.Z.Millis.MINUTE,
+let b = +Chunk70956.Z.Millis.MINUTE,
   y = 2,
-  O = +d.Z.Millis.SECOND,
-  v = (0, m.T)({
-    location: g.dr.QUESTS_MANAGER
+  O = +Chunk70956.Z.Millis.SECOND,
+  v = (0, Chunk5881.T)({
+    location: Chunk46140.dr.QUESTS_MANAGER
   });
 
 function I(e) {
   return !(0, _.zi)(e) && null != e.userStatus && null != e.userStatus.enrolledAt && null == e.userStatus.completedAt
 }
-class T extends i.Z {
+class T extends Chunk147913.Z {
   syncHeartbeats(e, t) {
     for (let n of ("VOICE_STATE_UPDATES" !== t && "PASSIVE_UPDATE_V2" !== t && v.log("~ syncHeartbeats -> syncing heartbeats for taskTypes: ".concat(e.join(", "), " (triggered by: ").concat(t, ")")), e)) {
       let e = this.heartbeats[n],
@@ -60,54 +61,54 @@ class T extends i.Z {
   }
   getActivelyProgressingPlayOnDesktopQuestIds() {
     let e = new Set,
-      t = a.ZP.getRunningGames(),
-      n = h.Z.quests;
-    v.log("~ getActivelyProgressingPlayOnDesktopQuestIds -> Running games: ", t);
+      t = Chunk594190.ZP.getRunningGames(),
+      n = Chunk569984.Z.quests;
+    v.log("~ getActivelyProgressingPlayOnDesktopQuestIds -> Running games: ", exports);
     let r = new Set;
-    for (let e of t) {
-      if (e.isLauncher) continue;
-      if (null != e.id) {
-        r.add(e.id);
+    for (let e of exports) {
+      if (module.isLauncher) continue;
+      if (null != module.id) {
+        Chunk754700.add(module.id);
         continue
       }
-      let t = a.ZP.getOverrideForGame(e);
-      if (null == e.distributor && null != t) continue;
-      let n = c.Z.getGameByName(e.name);
-      if ((null == n ? void 0 : n.id) != null) {
-        r.add(n.id);
+      let t = Chunk594190.ZP.getOverrideForGame(module);
+      if (null == module.distributor && null != exports) continue;
+      let n = Chunk77498.Z.getGameByName(module.name);
+      if ((null == require ? true : require.id) != null) {
+        Chunk754700.add(require.id);
         continue
       }
     }
-    for (let t of r)
-      for (let r of n.values()) I(r) && (0, _.Nj)({
-        quest: r
-      }) && r.config.application.id === t && e.add(r.id);
-    return v.log("~ getActivelyProgressingPlayOnDesktopQuestIds -> Actively progressing questIds: ", e), e
+    for (let t of Chunk754700)
+      for (let r of require.values()) I(Chunk754700) && (0, Chunk509212.Nj)({
+        quest: Chunk754700
+      }) && Chunk754700.config.application.id === exports && module.add(Chunk754700.id);
+    return v.log("~ getActivelyProgressingPlayOnDesktopQuestIds -> Actively progressing questIds: ", module), module
   }
   getActivelyProgressingStreamOnDesktopQuestIds() {
     let e = new Set,
-      t = l.Z.getCurrentUserActiveStream();
-    if (null == t || u.ZP.countVoiceStatesForChannel(t.channelId) < y) return e;
-    let n = l.Z.getStreamerActiveStreamMetadata();
-    if (null == n) return e;
-    v.log("~ getActivelyProgressingStreamOnDesktopQuestIds -> Active stream metadata: ", n);
-    let r = n.id;
-    if (null == r) return e;
-    for (let t of h.Z.quests.values()) I(t) && (0, _.Dr)({
-      quest: t
-    }) && t.config.application.id === r && e.add(t.id);
-    return v.log("~ getActivelyProgressingStreamOnDesktopQuestIds -> Actively progressing questIds: ", e), e
+      t = Chunk199902.Z.getCurrentUserActiveStream();
+    if (null == exports || Chunk938475.ZP.countVoiceStatesForChannel(exports.channelId) < y) return module;
+    let n = Chunk199902.Z.getStreamerActiveStreamMetadata();
+    if (null == require) return module;
+    v.log("~ getActivelyProgressingStreamOnDesktopQuestIds -> Active stream metadata: ", require);
+    let r = require.id;
+    if (null == Chunk754700) return module;
+    for (let t of Chunk569984.Z.quests.values()) I(exports) && (0, Chunk509212.Dr)({
+      quest: exports
+    }) && exports.config.application.id === Chunk754700 && module.add(exports.id);
+    return v.log("~ getActivelyProgressingStreamOnDesktopQuestIds -> Actively progressing questIds: ", module), module
   }
   getActivelyProgressingActivityQuestIds() {
     let e = new Set,
-      t = o.ZP.getSelfEmbeddedActivities(),
-      n = t.size > 0;
-    if (v.log("~ getActivelyProgressingActivityQuestIds -> Embedded activities: ", t), !n) return e;
-    let r = h.Z.quests;
-    for (let n of t.keys())
-      for (let t of r.values()) I(t) && (0, _.pO)(t) && t.config.application.id === n && e.add(t.id);
-    for (let t of r.values()) I(t) && (0, _.KM)(t) && n && e.add(t.id);
-    return v.log("~ getActivelyProgressingActivityQuestIds -> Actively progressing questIds: ", e), e
+      t = Chunk317381.ZP.getSelfEmbeddedActivities(),
+      n = exports.size > 0;
+    if (v.log("~ getActivelyProgressingActivityQuestIds -> Embedded activities: ", exports), !require) return module;
+    let r = Chunk569984.Z.quests;
+    for (let n of exports.keys())
+      for (let t of Chunk754700.values()) I(exports) && (0, Chunk509212.pO)(exports) && exports.config.application.id === require && module.add(exports.id);
+    for (let t of Chunk754700.values()) I(exports) && (0, Chunk509212.KM)(exports) && require && module.add(exports.id);
+    return v.log("~ getActivelyProgressingActivityQuestIds -> Actively progressing questIds: ", module), module
   }
   constructor(...e) {
     super(...e), E(this, "heartbeats", {
@@ -156,7 +157,7 @@ class T extends i.Z {
         let t = r.get(e);
         null != t && I(t) && (v.log("~ terminateHeartbeat -> Sending terminal heartbeat for questId: ".concat(e)), (0, p.m0)({
           questId: e,
-          terminal: !0
+          terminal: true
         }))
       }
     }), E(this, "handleSendHeartbeatSuccess", e => {

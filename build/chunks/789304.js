@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 789304, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   scrollerBase: "scrollerBase_d125d2",
   auto: "auto_d125d2 scrollerBase_d125d2",
   none: "none_d125d2 scrollerBase_d125d2",

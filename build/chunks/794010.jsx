@@ -1,0 +1,87 @@
+/** Chunk was on 87626 **/
+/** chunk id: 794010, original params: e,t,a (module,exports,require) **/
+require.d(exports, {
+  Z: () => i
+}), require("./388685.js");
+var n, Chunk255367 = require("./255367.js"),
+  Chunk73800 = require("./73800.js");
+
+function l(e, t, a) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: a,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = a, e
+}
+class i extends(n = Chunk73800.PureComponent) {
+  render() {
+    var e, t;
+    let a = this.props,
+      {
+        tag: n,
+        children: s,
+        eventName: i,
+        data: o,
+        track: c,
+        trackOutboundLink: d
+      } = require,
+      u = function(e, t) {
+        if (null == e) return {};
+        var a, n, r = function(e, t) {
+          if (null == e) return {};
+          var a, n, r = {},
+            s = Object.keys(e);
+          for (n = 0; n < s.length; n++) a = s[n], t.indexOf(a) >= 0 || (r[a] = e[a]);
+          return r
+        }(e, t);
+        if (Object.getOwnPropertySymbols) {
+          var s = Object.getOwnPropertySymbols(e);
+          for (n = 0; n < s.length; n++) a = s[n], !(t.indexOf(a) >= 0) && Object.prototype.propertyIsEnumerable.call(e, a) && (r[a] = e[a])
+        }
+        return r
+      }(require, ["tag", "children", "eventName", "data", "track", "trackOutboundLink"]);
+    return null == n ? null : <n{...e = function(e) {
+      for (var t = 1; t < arguments.length; t++) {
+        var a = null != arguments[t] ? arguments[t] : {},
+          n = Object.keys(a);
+        "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(a).filter(function(e) {
+          return Object.getOwnPropertyDescriptor(a, e).enumerable
+        }))), n.forEach(function(t) {
+          l(e, t, a[t])
+        })
+      }
+      return e
+    }({}, u), t = t = {
+      onClick: this.handleClick,
+      children: Chunk73800
+    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(module, Object.getOwnPropertyDescriptors(exports)) : (function(e, t) {
+      var a = Object.keys(e);
+      if (Object.getOwnPropertySymbols) {
+        var n = Object.getOwnPropertySymbols(e);
+        a.push.apply(a, n)
+      }
+      return a
+    })(Object(exports)).forEach(function(a) {
+      Object.defineProperty(e, a, Object.getOwnPropertyDescriptor(t, a))
+    }), module} />
+  }
+  constructor(...e) {
+    super(...e), l(this, "handleClick", e => {
+      let {
+        eventName: t,
+        data: a,
+        href: n,
+        onClick: r,
+        trackOutboundLink: s,
+        track: l
+      } = this.props;
+      if (a.googleAnalytics && s && (null != n ? s(n) : console.warn("TrackClick.handleClick: No href provided when using data.googleAnalytics")), r && r(e), !t) returnfalse;
+      l(t, a)
+    })
+  }
+}
+l(i, "defaultProps", {
+  tag: "a",
+  data: {}
+})

@@ -1,34 +1,35 @@
 /** Chunk was on web.js **/
-let r = n(889658),
-  i = n(721919),
+/** chunk id: 948501, original params: e,t,n (module,exports,re quire) **/
+let Chunk889658 = require("./889658.js"),
+  Chunk721919 = require("./721919.js"),
   {
     ANY: o
-  } = i,
-  a = n(839525),
-  s = n(15496),
+  } = Chunk721919,
+  Chunk839525 = require("./839525.js"),
+  Chunk15496 = require("./15496.js"),
   l = (e, t, n = {}) => {
-    if (e === t) return !0;
+    if (e === t) returntrue;
     e = new r(e, n), t = new r(t, n);
-    let i = !1;
+    let i = false;
     s: for (let r of e.set) {
       for (let e of t.set) {
         let t = d(r, e, n);
         if (i = i || null !== t, t) continue s
       }
-      if (i) return !1
+      if (i) returnfalse
     }
-    return !0
+    returntrue
   },
-  c = [new i(">=0.0.0-0")],
-  u = [new i(">=0.0.0")],
+  c = [new Chunk721919(">=0.0.0-0")],
+  u = [new Chunk721919(">=0.0.0")],
   d = (e, t, n) => {
     let r, i, l, d, p, h, m;
-    if (e === t) return !0;
+    if (e === t) returntrue;
     if (1 === e.length && e[0].semver === o)
-      if (1 === t.length && t[0].semver === o) return !0;
+      if (1 === t.length && t[0].semver === o) returntrue;
       else e = n.includePrerelease ? c : u;
     if (1 === t.length && t[0].semver === o)
-      if (n.includePrerelease) return !0;
+      if (n.includePrerelease) returntrue;
       else t = u;
     let g = new Set;
     for (let t of e) ">" === t.operator || ">=" === t.operator ? r = f(r, t, n) : "<" === t.operator || "<=" === t.operator ? i = _(i, t, n) : g.add(t.semver);
@@ -37,25 +38,25 @@ let r = n(889658),
     for (let e of g) {
       if (r && !a(e, String(r), n) || i && !a(e, String(i), n)) return null;
       for (let r of t)
-        if (!a(e, String(r), n)) return !1;
-      return !0
+        if (!a(e, String(r), n)) returnfalse;
+      returntrue
     }
     let E = !!i && !n.includePrerelease && !!i.semver.prerelease.length && i.semver,
       b = !!r && !n.includePrerelease && !!r.semver.prerelease.length && r.semver;
-    for (let e of (E && 1 === E.prerelease.length && "<" === i.operator && 0 === E.prerelease[0] && (E = !1), t)) {
+    for (let e of (E && 1 === E.prerelease.length && "<" === i.operator && 0 === E.prerelease[0] && (E = false), t)) {
       if (m = m || ">" === e.operator || ">=" === e.operator, h = h || "<" === e.operator || "<=" === e.operator, r) {
-        if (b && e.semver.prerelease && e.semver.prerelease.length && e.semver.major === b.major && e.semver.minor === b.minor && e.semver.patch === b.patch && (b = !1), ">" === e.operator || ">=" === e.operator) {
-          if ((d = f(r, e, n)) === e && d !== r) return !1
-        } else if (">=" === r.operator && !a(r.semver, String(e), n)) return !1
+        if (b && e.semver.prerelease && e.semver.prerelease.length && e.semver.major === b.major && e.semver.minor === b.minor && e.semver.patch === b.patch && (b = false), ">" === e.operator || ">=" === e.operator) {
+          if ((d = f(r, e, n)) === e && d !== r) returnfalse
+        } else if (">=" === r.operator && !a(r.semver, String(e), n)) returnfalse
       }
       if (i) {
-        if (E && e.semver.prerelease && e.semver.prerelease.length && e.semver.major === E.major && e.semver.minor === E.minor && e.semver.patch === E.patch && (E = !1), "<" === e.operator || "<=" === e.operator) {
-          if ((p = _(i, e, n)) === e && p !== i) return !1
-        } else if ("<=" === i.operator && !a(i.semver, String(e), n)) return !1
+        if (E && e.semver.prerelease && e.semver.prerelease.length && e.semver.major === E.major && e.semver.minor === E.minor && e.semver.patch === E.patch && (E = false), "<" === e.operator || "<=" === e.operator) {
+          if ((p = _(i, e, n)) === e && p !== i) returnfalse
+        } else if ("<=" === i.operator && !a(i.semver, String(e), n)) returnfalse
       }
-      if (!e.operator && (i || r) && 0 !== l) return !1
+      if (!e.operator && (i || r) && 0 !== l) returnfalse
     }
-    return (!r || !h || !!i || 0 === l) && (!i || !m || !!r || 0 === l) && !b && !E && !0
+    return (!r || !h || !!i || 0 === l) && (!i || !m || !!r || 0 === l) && !b && !E && true
   },
   f = (e, t, n) => {
     if (!e) return t;
@@ -67,4 +68,4 @@ let r = n(889658),
     let r = s(e.semver, t.semver, n);
     return r < 0 ? e : r > 0 || "<" === t.operator && "<=" === e.operator ? t : e
   };
-e.exports = l
+module.exports = l

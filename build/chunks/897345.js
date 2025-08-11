@@ -1,27 +1,28 @@
 /** Chunk was on web.js **/
+/** chunk id: 897345, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   r: () => c,
   u: () => l
 });
-var r = n(674180),
-  i = n(994592),
-  o = n(652515),
-  a = n(550951),
-  s = n(981631);
+var Chunk674180 = require("./674180.js"),
+  Chunk994592 = require("./994592.js"),
+  Chunk652515 = require("./652515.js"),
+  Chunk550951 = require("./550951.js"),
+  Chunk981631 = require("./981631.js");
 
 function l(e) {
-  let t = (0, o.RF)(null == e ? void 0 : e.id, "channel_list"),
-    n = (0, i.mY)(null == e ? void 0 : e.id),
+  let t = (0, o.RF)(null == e ? true : e.id, "channel_list"),
+    n = (0, i.mY)(null == e ? true : e.id),
     l = (0, a.g)(e, "channel_list"),
     {
       shouldHideGuildPurchaseEntryPoints: c
-    } = (0, r.uP)(null == e ? void 0 : e.id);
+    } = (0, r.uP)(null == e ? true : e.id);
   return null != e && !c && (e.features.has(s.oNc.PRODUCTS_AVAILABLE_FOR_PURCHASE) || t && n || l)
 }
 
 function c(e, t) {
-  let n = (0, o.C4)(null == e ? void 0 : e.id, "channel_list"),
-    r = (0, i.on)(null == e ? void 0 : e.id, t);
+  let n = (0, o.C4)(null == e ? true : e.id, "channel_list"),
+    r = (0, i.on)(null == e ? true : e.id, t);
   return null != e && (e.features.has(s.oNc.PRODUCTS_AVAILABLE_FOR_PURCHASE) || n && r)
 }

@@ -1,11 +1,12 @@
 /** Chunk was on 1272 **/
-n.d(t, {
+/** chunk id: 549388, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Q: () => i
 });
-var r = n(570140);
+var Chunk570140 = require("./570140.js");
 
 function i() {
-  r.Z.dispatch({
+  Chunk570140.Z.dispatch({
     type: "AUTO_UPDATER_QUIT_AND_INSTALL"
   })
 }

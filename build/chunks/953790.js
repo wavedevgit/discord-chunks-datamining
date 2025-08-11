@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 953790, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   chipletContainerInner: "chipletContainerInner__10651",
   chipletContainerInline: "chipletContainerInline__10651",
   clickable: "clickable__10651",

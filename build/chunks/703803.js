@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 703803, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   spoilerContent: "spoilerContent__54ab5",
   hidden: "hidden__54ab5",
   opaque: "opaque__54ab5",

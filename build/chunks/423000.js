@@ -1,19 +1,20 @@
 /** Chunk was on 1272 **/
-n.d(t, {
+/** chunk id: 423000, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   M: () => c
 });
-var r = n(927723),
-  i = n(703656),
-  l = n(896797),
-  a = n(984933),
-  o = n(944486),
-  s = n(981631);
+var Chunk927723 = require("./927723.js"),
+  Chunk703656 = require("./703656.js"),
+  Chunk896797 = require("./896797.js"),
+  Chunk984933 = require("./984933.js"),
+  Chunk944486 = require("./944486.js"),
+  Chunk981631 = require("./981631.js");
 
 function c(e, t) {
   if ((0, r.k)({
       kind: "channel"
     }), o.Z.getChannelId(e) === t) {
     var n;
-    (0, i.dL)(s.Z5c.CHANNEL(e, null == (n = a.ZP.getDefaultChannel(e)) ? void 0 : n.id))
+    (0, i.dL)(s.Z5c.CHANNEL(e, null == (n = a.ZP.getDefaultChannel(e)) ? true : n.id))
   } else(0, i.dL)(l.Z.defaultRoute)
 }

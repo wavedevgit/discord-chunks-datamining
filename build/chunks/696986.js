@@ -1,5 +1,6 @@
 /** Chunk was on web.js **/
-e.exports = function(e) {
+/** chunk id: 696986, original params: e (module,exports,re quire) **/
+module.exports = function(e) {
   let t = {
       className: "keyword",
       begin: "\\$(f[asn]|t|vp[rtd]|children)"

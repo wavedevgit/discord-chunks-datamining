@@ -1,16 +1,17 @@
 /** Chunk was on web.js **/
+/** chunk id: 974223, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   M: () => a,
   u: () => o
 });
-var r = n(73800);
+var Chunk73800 = require("./73800.js");
 let i = {
-    size: void 0,
-    fullWidth: void 0
+    size: true,
+    fullWidth: true
   },
-  o = r.createContext(i),
+  o = Chunk73800.createContext(i),
   a = () => {
-    let e = r.useContext(o);
-    return null == e ? i : e
+    let e = Chunk73800.useContext(o);
+    return null == module ? i : module
   }

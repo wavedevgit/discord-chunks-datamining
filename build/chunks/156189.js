@@ -1,5 +1,6 @@
 /** Chunk was on web.js **/
+/** chunk id: 156189, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   badge: "badge__6ba43"
 }

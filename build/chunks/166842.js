@@ -1,23 +1,24 @@
 /** Chunk was on web.js **/
+/** chunk id: 166842, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   C8: () => i,
   dK: () => a,
   mq: () => o
 });
-var r = n(73800),
-  i = r.createContext(),
-  o = r.createContext();
+var Chunk73800 = require("./73800.js"),
+  i = Chunk73800.createContext(),
+  o = Chunk73800.createContext();
 
 function a(e) {
   var t = e.children,
     n = r.useState(null),
     a = n[0],
     s = n[1],
-    l = r.useRef(!1);
+    l = r.useRef(false);
   r.useEffect(function() {
     return function() {
-      l.current = !0
+      l.current = true
     }
   }, []);
   var c = r.useCallback(function(e) {

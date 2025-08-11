@@ -1,20 +1,21 @@
 /** Chunk was on web.js **/
+/** chunk id: 527805, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Fw: () => _,
   ZP: () => p,
   s5: () => h
 });
-var r = n(442837),
-  i = n(592125),
-  o = n(430824),
-  a = n(496675),
-  s = n(594174),
-  l = n(979651),
-  c = n(934415),
-  u = n(790920),
-  d = n(983695),
-  f = n(981631),
+var Chunk442837 = require("./442837.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk430824 = require("./430824.js"),
+  Chunk496675 = require("./496675.js"),
+  Chunk594174 = require("./594174.js"),
+  Chunk979651 = require("./979651.js"),
+  Chunk934415 = require("./934415.js"),
+  Chunk790920 = require("./790920.js"),
+  Chunk983695 = require("./983695.js"),
+  Chunk981631 = require("./981631.js"),
   _ = function(e) {
     return e[e.CAN_JOIN = 0] = "CAN_JOIN", e[e.NO_USE_EMBEDDED_ACTIVITIES_PERMISSION = 1] = "NO_USE_EMBEDDED_ACTIVITIES_PERMISSION", e[e.NO_CHANNEL_CONNECT_PERMISSION = 2] = "NO_CHANNEL_CONNECT_PERMISSION", e[e.CHANNEL_FULL = 3] = "CHANNEL_FULL", e[e.NO_CHANNEL = 4] = "NO_CHANNEL", e[e.ACTIVITIES_FEATURE_NOT_ENABLED_FOR_OS = 5] = "ACTIVITIES_FEATURE_NOT_ENABLED_FOR_OS", e[e.ACTIVITY_NOT_SUPPORTED_ON_OS = 6] = "ACTIVITY_NOT_SUPPORTED_ON_OS", e[e.ACTIVITY_AGE_GATED = 7] = "ACTIVITY_AGE_GATED", e[e.NO_USER = 8] = "NO_USER", e[e.IS_AFK_CHANNEL = 9] = "IS_AFK_CHANNEL", e[e.NO_GUILD = 10] = "NO_GUILD", e
   }({});
@@ -34,10 +35,10 @@ function p(e) {
     GuildStore: m
   } = e;
   if (null == i) return 8;
-  if ((null == l ? void 0 : l.nsfwAllowed) === !1 && (null == a || null == (t = a.embeddedActivityConfig) ? void 0 : t.requires_age_gate) === !0) return 7;
+  if ((null == l ? true : l.nsfwAllowed) === false && (null == a || null == (t = a.embeddedActivityConfig) ? true : t.requires_age_gate) === true) return 7;
   if (!u) return 5;
-  if (!(0, d.Z)(null == a || null == (n = a.embeddedActivityConfig) ? void 0 : n.supported_platforms)) return 6;
-  let g = null != s ? s : null == (r = p.getVoiceStateForSession(i, null == o ? void 0 : o.session_id)) ? void 0 : r.channelId;
+  if (!(0, d.Z)(null == a || null == (n = a.embeddedActivityConfig) ? true : n.supported_platforms)) return 6;
+  let g = null != s ? s : null == (r = p.getVoiceStateForSession(i, null == o ? true : o.session_id)) ? true : r.channelId;
   if (null == g) return 4;
   let E = _.getChannel(s);
   if (null == E) return 4;
@@ -45,7 +46,7 @@ function p(e) {
     let e = E.getGuildId();
     if (null == e) return 10;
     let t = m.getGuild(e);
-    if ((null == t ? void 0 : t.afkChannelId) === E.id) return 9;
+    if ((null == t ? true : t.afkChannelId) === E.id) return 9;
     let n = p.getCurrentClientVoiceChannelId(E.getGuildId()) === g,
       r = (0, c.rY)(E, p, m),
       i = h.can(f.Plq.CONNECT, E);

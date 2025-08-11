@@ -1,14 +1,15 @@
 /** Chunk was on 75708 **/
-n.d(t, {
+/** chunk id: 381496, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   j: () => a
 });
-var i = n(544891),
-  r = n(570140),
-  s = n(981631);
-let a = () => i.tn.get({
-  url: s.ANM.GUILD_AFFINITIES,
-  oldFormErrors: !0,
-  rejectWithError: !1
+var Chunk544891 = require("./544891.js"),
+  Chunk570140 = require("./570140.js"),
+  Chunk981631 = require("./981631.js");
+let a = () => Chunk544891.tn.get({
+  url: Chunk981631.ANM.GUILD_AFFINITIES,
+  oldFormErrors: true,
+  rejectWithError: false
 }).then(e => {
   let {
     body: {
@@ -20,7 +21,7 @@ let a = () => i.tn.get({
     guildAffinities: t
   })
 }, () => {
-  r.Z.dispatch({
+  Chunk570140.Z.dispatch({
     type: "LOAD_GUILD_AFFINITIES_FAILURE"
   })
 })

@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 270217, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   voiceFilterHero: "voiceFilterHero_cb3698",
   bgGradient: "bgGradient_cb3698",
   bgGradientHighlight: "bgGradientHighlight_cb3698",

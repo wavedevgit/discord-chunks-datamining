@@ -1,4 +1,5 @@
 /** Chunk was on web.js **/
+/** chunk id: 369426, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 var r = {
   button: "button__6af3a",
@@ -39,4 +40,4 @@ var r = {
   fullWidth: "fullWidth__6af3a",
   rounded: "rounded__6af3a"
 };
-n.r(e.exports = r)
+require.r(module.exports = r)

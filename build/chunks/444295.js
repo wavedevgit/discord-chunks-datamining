@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 444295, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   AE: () => c,
   JS: () => p,
   Qu: () => h,
@@ -9,13 +10,13 @@ n.d(t, {
   ee: () => f,
   ou: () => d,
   zi: () => _
-}), n(388685);
-var r = n(73800),
-  i = n(77498),
-  o = n(19780),
-  a = n(626135),
-  s = n(837268),
-  l = n(981631),
+}), require("./388685.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk77498 = require("./77498.js"),
+  Chunk19780 = require("./19780.js"),
+  Chunk626135 = require("./626135.js"),
+  Chunk837268 = require("./837268.js"),
+  Chunk981631 = require("./981631.js"),
   c = function(e) {
     return e.OOP = "oop", e.OOP_GAME = "oop game", e.LEGACY = "legacy", e.LEGACY_GAME = "legacy game", e
   }({});
@@ -38,14 +39,14 @@ function d(e, t, r) {
     {
       default: _
     } = n(371651),
-    p = null != (o = null == _ ? void 0 : _.getMostRecentOverlayRenderMethod()) ? o : void 0,
-    h = null != p ? s.gl[p] : void 0;
+    p = null != (o = null == _ ? true : _.getMostRecentOverlayRenderMethod()) ? o : true,
+    h = null != p ? s.gl[p] : true;
   a.default.track(l.rMx.OVERLAY_TOGGLED, {
     enabled: e,
     setting_type: u(t),
     client_setting_type: t,
-    application_id: null != (c = null == f ? void 0 : f.id) ? c : void 0,
-    application_name: null != (d = null == f ? void 0 : f.name) ? d : void 0,
+    application_id: null != (c = null == f ? true : f.id) ? c : true,
+    application_name: null != (d = null == f ? true : f.name) ? d : true,
     most_recent_overlay_render_method: h
   })
 }
@@ -75,7 +76,7 @@ function _(e, t) {
     liveUserIds: u,
     contentInventoryIds: d
   } = t;
-  ((null != (n = null == c ? void 0 : c.length) ? n : 0) !== 0 || (null != (r = null == u ? void 0 : u.length) ? r : 0) !== 0 || (null != (i = null == d ? void 0 : d.length) ? i : 0) !== 0) && a.default.track(l.rMx.WIDGET_CONTENT_SHOWN, {
+  ((null != (n = null == c ? true : c.length) ? n : 0) !== 0 || (null != (r = null == u ? true : u.length) ? r : 0) !== 0 || (null != (i = null == d ? true : d.length) ? i : 0) !== 0) && a.default.track(l.rMx.WIDGET_CONTENT_SHOWN, {
     overlay_locked: s,
     widget_type: e,
     shown_user_ids: c,

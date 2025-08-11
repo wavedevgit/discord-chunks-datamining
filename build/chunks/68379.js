@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 68379, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   videoHeight: "videoHeight__94748",
   animated: "animated__94748",
   normal: "normal__94748",

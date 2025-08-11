@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 883904, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   EG: () => a,
   KC: () => l,
   Nj: () => s,
@@ -8,7 +9,7 @@ n.d(t, {
   cm: () => i,
   pR: () => c
 });
-var r = n(570140);
+var Chunk570140 = require("./570140.js");
 let i = (e, t) => {
     r.Z.dispatch({
       type: "DCF_HANDLE_DC_SHOWN",
@@ -23,7 +24,7 @@ let i = (e, t) => {
     })
   },
   a = () => {
-    r.Z.dispatch({
+    Chunk570140.Z.dispatch({
       type: "DCF_RESET"
     })
   },

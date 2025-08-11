@@ -1,5 +1,6 @@
 /** Chunk was on 1272 **/
-e.exports = {
+/** chunk id: 610725, original params: e,t,n (module,exports,require) **/
+module.exports = {
   container: "container__133bf",
   inviteToolbar: "inviteToolbar__133bf",
   peopleColumn: "peopleColumn__133bf",

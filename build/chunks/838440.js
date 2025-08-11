@@ -1,18 +1,19 @@
 /** Chunk was on web.js **/
+/** chunk id: 838440, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   v: () => h
-}), n(388685), n(73800);
-var r = n(570140),
-  i = n(668781),
-  o = n(673750),
-  a = n(300429),
-  s = n(594174),
-  l = n(626135),
-  c = n(760729),
-  u = n(74538),
-  d = n(981631),
-  f = n(388032);
+}), require("./388685.js"), require("./73800.js");
+var Chunk570140 = require("./570140.js"),
+  Chunk668781 = require("./668781.js"),
+  Chunk673750 = require("./673750.js"),
+  Chunk300429 = require("./300429.js"),
+  Chunk594174 = require("./594174.js"),
+  Chunk626135 = require("./626135.js"),
+  Chunk760729 = require("./760729.js"),
+  Chunk74538 = require("./74538.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk388032 = require("./388032.jsx");
 
 function _(e, t) {
   i.Z.show({
@@ -42,8 +43,8 @@ function p(e) {
     userCanUsePremiumMessageLength: E,
     resolve: b
   } = e;
-  if (0 === l.length && !(null == (t = s.submit) ? void 0 : t.allowEmptyMessage) && (null == u || 0 === u.length) && (null == p || 0 === p.length)) return void b({
-    valid: !1,
+  if (0 === l.length && !(null == (t = s.submit) ? true : t.allowEmptyMessage) && (null == u || 0 === u.length) && (null == p || 0 === p.length)) return void b({
+    valid: false,
     failureReason: d.zYc.EMPTY_MESSAGE
   });
   let y = E ? d.en1 : d.J6R,
@@ -54,14 +55,14 @@ function p(e) {
       channel: h,
       content: l
     }) : _(l.length, y), b({
-      valid: !1,
+      valid: false,
       failureReason: d.zYc.MESSAGE_TOO_LONG
     });
     return
   }
   if (null != h) {
     if (null != h.getGuildId() && g && a.Z.getSlowmodeCooldownGuess(h.id) > 0) return void b({
-      valid: !1,
+      valid: false,
       failureReason: d.zYc.SLOWMODE_COOLDOWN
     });
     if (null != n)
@@ -72,15 +73,15 @@ function p(e) {
         }
         of c.$) {
         let i = e(l, h, m);
-        if (!1 !== i) return void n({
+        if (false !== i) return void n({
           analyticsType: t,
           channel: h,
           onCancel: () => b({
-            valid: !1,
+            valid: false,
             failureReason: d.zYc.SHOUTING_CANCELLED
           }),
           onConfirm: () => b({
-            valid: !0
+            valid: true
           }),
           popoutText: i,
           animation: r
@@ -93,13 +94,13 @@ function p(e) {
       body: f.intl.string(f.t.gi6XHh),
       confirmText: f.intl.string(f.t.Z4U1g4)
     }), b({
-      valid: !1,
+      valid: false,
       failureReason: d.zYc.RATE_LIMITED
     });
     return
   }
   b({
-    valid: !0
+    valid: true
   })
 }
 
@@ -111,8 +112,8 @@ function h(e) {
     stickers: i,
     uploads: o,
     channel: a,
-    restrictMentions: l = !0,
-    respectCooldown: c = !0
+    restrictMentions: l = true,
+    respectCooldown: c = true
   } = e, d = u.ZP.canUseIncreasedMessageLength(s.default.getCurrentUser());
   return new Promise(e => p({
     openWarningPopout: t,

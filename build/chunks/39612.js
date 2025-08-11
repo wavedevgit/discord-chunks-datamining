@@ -1,4 +1,5 @@
 /** Chunk was on web.js **/
+/** chunk id: 39612, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 
 function r(e) {
@@ -12,7 +13,7 @@ function i(e) {
 function o() {
   return "".concat(location.protocol, "//").concat(window.GLOBAL_ENV.WEBAPP_ENDPOINT, "/channels/@me")
 }
-n.d(t, {
+require.d(exports, {
   Gk: () => o,
   Oh: () => i,
   z0: () => r

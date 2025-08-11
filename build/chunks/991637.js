@@ -1,18 +1,19 @@
 /** Chunk was on web.js **/
+/** chunk id: 991637, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-var r = n(638934),
-  i = n(286233),
-  o = n(535213),
-  a = n(383252),
-  s = n(234268),
-  l = n(751340);
-o();
-var c = r(s()),
+var Chunk638934 = require("./638934.js"),
+  Chunk286233 = require("./286233.js"),
+  Chunk535213 = require("./535213.js"),
+  Chunk383252 = require("./383252.js"),
+  Chunk234268 = require("./234268.js"),
+  Chunk751340 = require("./751340.js");
+Chunk535213();
+var c = Chunk638934(Chunk234268()),
   u = function(e) {
-    return c(void 0 === this ? Promise : this, e)
+    return c(true === this ? Promise : this, e)
   };
-i(u, {
-  getPolyfill: s,
-  implementation: a,
-  shim: l
-}), e.exports = u
+Chunk286233(u, {
+  getPolyfill: Chunk234268,
+  implementation: Chunk383252,
+  shim: Chunk751340
+}), module.exports = u

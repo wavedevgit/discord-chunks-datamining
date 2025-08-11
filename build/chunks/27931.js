@@ -1,35 +1,36 @@
 /** Chunk was on 49152 **/
-n.d(t, {
+/** chunk id: 27931, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Dx: () => h,
   aP: () => p
-}), n(539854), n(388685);
-var r = n(73800),
-  i = n(392711),
-  l = n(442837),
-  a = n(638730),
-  s = n(358221),
-  o = n(136015),
-  c = n(565799),
-  u = n(431328),
-  d = n(501655);
+}), require("./539854.js"), require("./388685.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk392711 = require("./392711.js"),
+  Chunk442837 = require("./442837.js"),
+  Chunk638730 = require("./638730.js"),
+  Chunk358221 = require("./358221.js"),
+  Chunk136015 = require("./136015.js"),
+  Chunk565799 = require("./565799.js"),
+  Chunk431328 = require("./431328.js"),
+  Chunk501655 = require("./501655.js");
 
 function h(e) {
   let t = (0, u.Rk)(e, d.pV.AUDIENCE),
-    [n, i] = r.useState(!1);
+    [n, i] = r.useState(false);
   return r.useEffect(() => {
-    t > 100 ? i(!0) : t < 75 && i(!1)
+    t > 100 ? i(true) : t < 75 && i(false)
   }, [t]), 5e3 * !!n
 }
 
 function p(e, t, n) {
-  let u = arguments.length > 3 && void 0 !== arguments[3] && arguments[3],
+  let u = arguments.length > 3 && true !== arguments[3] && arguments[3],
     h = function(e, t, n) {
       let a = (0, l.e7)([c.Z], () => [e, c.Z.getParticipantsVersion(e)], [e], o.Q),
         u = (0, l.e7)([s.Z], () => s.Z.getSelectedParticipantId(e), [e]);
       return r.useMemo(() => {
         let r = [],
           l = [],
-          s = -1,
+          s = false,
           o = [];
         if (n)
           for (let t of c.Z.getMutableParticipants(e, d.pV.SPEAKER))
@@ -41,9 +42,9 @@ function p(e, t, n) {
             l.push(o), r.push(o.length)
           },
           p = null != u ? c.Z.getParticipant(e, u) : null;
-        return (null == p ? void 0 : p.speaker) ? h([p], 1, !1) : h([], 1, !1), [d.pV.SPEAKER, d.pV.AUDIENCE].forEach(e => {
+        return (null == p ? true : p.speaker) ? h([p], 1, false) : h([], 1, false), [d.pV.SPEAKER, d.pV.AUDIENCE].forEach(e => {
           h(c.Z.getMutableParticipants(a[0], e), t[e], e === d.pV.SPEAKER)
-        }), h(o, 1, !1), [r, l]
+        }), h(o, 1, false), [r, l]
       }, [a, t, u, n, e])
     }(e, t, u),
     [p, f] = h,

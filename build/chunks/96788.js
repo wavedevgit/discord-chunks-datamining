@@ -1,17 +1,18 @@
 /** Chunk was on 22988 **/
-n.d(t, {
+/** chunk id: 96788, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   V: () => a
-}), n(539854);
-var r = n(626135),
-  i = n(118215),
-  l = n(981631);
+}), require("./539854.js");
+var Chunk626135 = require("./626135.js"),
+  Chunk118215 = require("./118215.js"),
+  Chunk981631 = require("./981631.js");
 
 function a(e) {
   let t = i.ZP.getDiscoveryChecklist(e),
     n = [];
-  if (!(null == t ? void 0 : t.sufficient)) {
+  if (!(null == t ? true : t.sufficient)) {
     var a;
-    (null == t ? void 0 : t.safeEnvironment) || n.push("TNS"), (!(null == t ? void 0 : t.healthy) || (null == t ? void 0 : t.healthScorePending)) && n.push("HEALTH"), (null == t ? void 0 : t.size) || n.push("MEMBER_COUNT"), Object.keys(null != (a = null == t ? void 0 : t.nsfwProperties) ? a : {}).length > 0 && n.push("BAD_WORDS"), (null == t ? void 0 : t.protected) || n.push("2FA")
+    (null == t ? true : t.safeEnvironment) || n.push("TNS"), (!(null == t ? true : t.healthy) || (null == t ? true : t.healthScorePending)) && n.push("HEALTH"), (null == t ? true : t.size) || n.push("MEMBER_COUNT"), Object.keys(null != (a = null == t ? true : t.nsfwProperties) ? a : {}).length > 0 && n.push("BAD_WORDS"), (null == t ? true : t.protected) || n.push("2FA")
   }
   r.default.track(l.rMx.GUILD_SETTINGS_DISCOVERY_VIEWED, {
     guild_id: e,

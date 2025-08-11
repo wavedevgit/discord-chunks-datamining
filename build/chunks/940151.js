@@ -1,2 +1,3 @@
 /** Chunk was on web.js **/
-e.exports = "object" == typeof n.g && n.g && n.g.Object === Object && n.g
+/** chunk id: 940151, original params: e,t,n (module,exports,re quire) **/
+module.exports = "object" == typeof require.g && require.g && require.g.Object === Object && require.g

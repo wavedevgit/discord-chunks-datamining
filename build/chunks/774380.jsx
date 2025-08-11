@@ -1,0 +1,30 @@
+/** Chunk was on 22988 **/
+/** chunk id: 774380, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
+  Z: () => p
+});
+var Chunk255367 = require("./255367.js");
+require("./73800.js");
+var Chunk442837 = require("./442837.js"),
+  Chunk481060 = require("./481060.js"),
+  Chunk98278 = require("./98278.js"),
+  Chunk823188 = require("./823188.js"),
+  Chunk594174 = require("./594174.js"),
+  Chunk74538 = require("./74538.js"),
+  Chunk474936 = require("./474936.js"),
+  Chunk388032 = require("./388032.jsx"),
+  Chunk561012 = require("./561012.js");
+let g = e => {
+    let {
+      onOpenPremiumClick: t
+    } = e, n = <div data-button-hoisted-classname-wrapper={true} className={m.tier0Button}><l.zxk variant={"overlay-primary"} size={"md"} fullWidth={true} text={u.intl.string(u.t.hvVgAQ)} onClick={() => {
+          (0, a.z)(), null != t && t()
+        }} /></div>;
+    return <div className={m.tier0Container}>{<l.X6q className={m.tier0Heading} variant={"heading-xxl/extrabold"}>{u.intl.string(u.t["qUl+Ky"])}</l.X6q>}{<s.wp className={m.tier0Card} ctaButton={n} featureSet={s.uZ.BOOSTING} showWumpus={true} showYearlyPrice={true} />}</div>
+  },
+  p = e => {
+    let {
+      onOpenPremiumClick: t
+    } = e, n = (0, i.e7)([o.default], () => o.default.getCurrentUser());
+    return c.ZP.isPremium(n, d.p9.TIER_2) ? null : <g onOpenPremiumClick={t} />
+  }

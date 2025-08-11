@@ -1,5 +1,6 @@
 /** Chunk was on 93886 **/
-e.exports = {
+/** chunk id: 248520, original params: e,t,a (module,exports,require) **/
+module.exports = {
   panel: "panel_a81334",
   toolbar: "toolbar_a81334",
   searchBar: "searchBar_a81334",

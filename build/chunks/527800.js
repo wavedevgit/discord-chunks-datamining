@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 527800, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = function(e, t, r, i) {
+module.exports = function(e, t, r, i) {
   var o = this;
 
   function a(t) {

@@ -1,14 +1,15 @@
 /** Chunk was on web.js **/
+/** chunk id: 836388, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   x: () => i
 });
-var r = n(73800);
+var Chunk73800 = require("./73800.js");
 
 function i() {
-  let e = (0, r.useRef)(new Map),
-    t = (0, r.useCallback)((t, n, r, i) => {
-      let o = (null == i ? void 0 : i.once) ? (...t) => {
+  let e = (0, Chunk73800.useRef)(new Map),
+    t = (0, Chunk73800.useCallback)((t, n, r, i) => {
+      let o = (null == i ? true : i.once) ? (...t) => {
         e.current.delete(r), r(...t)
       } : r;
       e.current.set(r, {
@@ -18,19 +19,19 @@ function i() {
         options: i
       }), t.addEventListener(n, o, i)
     }, []),
-    n = (0, r.useCallback)((t, n, r, i) => {
+    n = (0, Chunk73800.useCallback)((t, n, r, i) => {
       var o;
-      let a = (null == (o = e.current.get(r)) ? void 0 : o.fn) || r;
+      let a = (null == (o = e.current.get(r)) ? true : o.fn) || r;
       t.removeEventListener(n, a, i), e.current.delete(r)
     }, []),
-    i = (0, r.useCallback)(() => {
-      e.current.forEach((e, t) => {
+    i = (0, Chunk73800.useCallback)(() => {
+      module.current.forEach((e, t) => {
         n(e.eventTarget, e.type, t, e.options)
       })
-    }, [n]);
-  return (0, r.useEffect)(() => i, [i]), {
-    addGlobalListener: t,
-    removeGlobalListener: n,
+    }, [require]);
+  return (0, Chunk73800.useEffect)(() => i, [i]), {
+    addGlobalListener: exports,
+    removeGlobalListener: require,
     removeAllGlobalListeners: i
   }
 }

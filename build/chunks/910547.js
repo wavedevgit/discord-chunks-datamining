@@ -1,5 +1,6 @@
 /** Chunk was on web.js **/
-e.exports = function(e) {
+/** chunk id: 910547, original params: e (module,exports,re quire) **/
+module.exports = function(e) {
   let t = {
       className: "string",
       begin: '(~)?"',
@@ -20,12 +21,12 @@ e.exports = function(e) {
       className: "function",
       begin: "\\b(Procedure|Declare)(C|CDLL|DLL)?\\b",
       end: "\\(",
-      excludeEnd: !0,
-      returnBegin: !0,
+      excludeEnd: true,
+      returnBegin: true,
       contains: [{
         className: "keyword",
         begin: "(Procedure|Declare)(C|CDLL|DLL)?",
-        excludeEnd: !0
+        excludeEnd: true
       }, {
         className: "type",
         begin: "\\.\\w*"

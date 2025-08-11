@@ -1,15 +1,16 @@
 /** Chunk was on web.js **/
+/** chunk id: 6025, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => u
 });
-var r = n(570140),
-  i = n(904245),
-  o = n(593472),
-  a = n(526120),
-  s = n(348245),
-  l = n(897473),
-  c = n(176505);
+var Chunk570140 = require("./570140.js"),
+  Chunk904245 = require("./904245.js"),
+  Chunk593472 = require("./593472.js"),
+  Chunk526120 = require("./526120.js"),
+  Chunk348245 = require("./348245.js"),
+  Chunk897473 = require("./897473.js"),
+  Chunk176505 = require("./176505.js");
 let u = {
   openPrivateChannelAsSidebar(e) {
     let {
@@ -30,7 +31,7 @@ let u = {
     }), null != n ? i.Z.jumpToMessage({
       channelId: t,
       messageId: n,
-      flash: !0
+      flash: true
     }) : s.Z.fetchMessages({
       channelId: t
     })
@@ -40,7 +41,7 @@ let u = {
       guildId: t,
       channelId: n,
       baseChannelId: a,
-      flash: c = !0,
+      flash: c = true,
       details: u
     } = e;
     r.Z.dispatch({
@@ -51,7 +52,7 @@ let u = {
       channelId: n,
       details: u
     });
-    let d = null == u ? void 0 : u.initialMessageId;
+    let d = null == u ? true : u.initialMessageId;
     null != d ? i.Z.jumpToMessage({
       channelId: n,
       messageId: d,
@@ -67,7 +68,7 @@ let u = {
       guildId: t,
       channelId: n
     } = e;
-    null != t && ((0, a.C3)(t, n, !1), r.Z.dispatch({
+    null != t && ((0, a.C3)(t, n, false), r.Z.dispatch({
       type: "SIDEBAR_VIEW_CHANNEL",
       sidebarType: l.tI.VIEW_CHANNEL,
       guildId: t,
@@ -80,7 +81,7 @@ let u = {
       guildId: t,
       baseChannelId: n,
       channelId: a,
-      flash: c = !0,
+      flash: c = true,
       details: u
     } = e;
     r.Z.dispatch({
@@ -89,7 +90,7 @@ let u = {
       baseChannelId: n,
       channelId: a,
       details: u
-    }), (null == u ? void 0 : u.initialMessageId) != null ? i.Z.jumpToMessage({
+    }), (null == u ? true : u.initialMessageId) != null ? i.Z.jumpToMessage({
       channelId: a,
       messageId: u.initialMessageId,
       flash: c,
@@ -104,7 +105,7 @@ let u = {
       guildId: t,
       baseChannelId: n,
       channelId: a,
-      flash: c = !0,
+      flash: c = true,
       details: u
     } = e;
     r.Z.dispatch({
@@ -113,7 +114,7 @@ let u = {
       baseChannelId: n,
       channelId: a,
       details: u
-    }), (null == u ? void 0 : u.initialMessageId) != null ? i.Z.jumpToMessage({
+    }), (null == u ? true : u.initialMessageId) != null ? i.Z.jumpToMessage({
       channelId: a,
       messageId: u.initialMessageId,
       flash: c,

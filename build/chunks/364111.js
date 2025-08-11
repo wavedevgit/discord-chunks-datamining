@@ -1,15 +1,16 @@
 /** Chunk was on 1272 **/
-n.d(t, {
+/** chunk id: 364111, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   E: () => d
-}), n(388685);
-var r = n(73800),
-  i = n(442837),
-  l = n(353926),
-  a = n(358085),
-  o = n(335131),
-  s = n(597688),
-  c = n(52030),
-  u = n(228624);
+}), require("./388685.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk442837 = require("./442837.js"),
+  Chunk353926 = require("./353926.js"),
+  Chunk358085 = require("./358085.js"),
+  Chunk335131 = require("./335131.js"),
+  Chunk597688 = require("./597688.js"),
+  Chunk52030 = require("./52030.js"),
+  Chunk228624 = require("./228624.js");
 
 function d(e, t, n) {
   let d = (0, i.e7)([l.Z], () => l.Z.hasLoadedExperiments),
@@ -32,9 +33,9 @@ function d(e, t, n) {
             var r;
             r = n[t], t in e ? Object.defineProperty(e, t, {
               value: r,
-              enumerable: !0,
-              configurable: !0,
-              writable: !0
+              enumerable: true,
+              configurable: true,
+              writable: true
             }) : e[t] = r
           })
         }
@@ -42,8 +43,8 @@ function d(e, t, n) {
       }({}, t), n = n = {
         variantsReturnStyle: f,
         includeBundles: h,
-        includePopularPicks: !0,
-        includeDynamicBlocks: !0,
+        includePopularPicks: true,
+        includeDynamicBlocks: true,
         shopHomeConfig: y,
         skipNumCategories: p
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {

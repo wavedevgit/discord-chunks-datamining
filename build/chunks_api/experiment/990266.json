@@ -1,1 +1,0 @@
-{"id":"990266","type":"experiment","data":{"kind":"user","id":"2024-11_expression_suggestions_disabled","label":"Expression Suggestions Disabled Experiment","defaultConfig":{"disabled":false},"commonTriggerPoint":"i.$P.CONNECTION_OPEN","treatments":[{"id":1,"label":"Disable sticker expression suggestions","config":{"disabled":false}}]},"fromModule":{"id":"web.js"}}

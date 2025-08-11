@@ -1,26 +1,27 @@
 /** Chunk was on web.js **/
+/** chunk id: 830168, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 let r, i;
-n.d(t, {
+require.d(exports, {
   Z: () => O
-}), n(388685), n(415506), n(49124);
-var o = n(570140),
-  a = n(330516),
-  s = n(710845),
-  l = n(594174),
-  c = n(436181),
-  u = n(626135),
-  d = n(358085),
-  f = n(998502),
-  _ = n(981631),
-  p = n(186901);
-let h = new s.Z("NativeDispatchUtils");
+}), require("./388685.js"), require("./415506.js"), require("./49124.js");
+var Chunk570140 = require("./570140.js"),
+  Chunk330516 = require("./330516.js"),
+  Chunk710845 = require("./710845.js"),
+  Chunk594174 = require("./594174.js"),
+  Chunk436181 = require("./436181.js"),
+  Chunk626135 = require("./626135.js"),
+  Chunk358085 = require("./358085.js"),
+  Chunk998502 = require("./998502.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk186901 = require("./186901.js");
+let h = new Chunk710845.Z("NativeDispatchUtils");
 
 function m() {
-  return null != r ? Promise.resolve(r) : (0, d.isDesktop)() ? Promise.all([f.ZP.ensureModule("discord_dispatch"), f.ZP.ensureModule("discord_modules")]).then(() => {
-    f.ZP.requireModule("discord_modules");
-    let e = f.ZP.getDispatch();
-    return null != e ? (r = e, e) : Promise.reject(Error("dispatch not found"))
+  return null != r ? Promise.resolve(r) : (0, Chunk358085.isDesktop)() ? Promise.all([Chunk998502.ZP.ensureModule("discord_dispatch"), Chunk998502.ZP.ensureModule("discord_modules")]).then(() => {
+    Chunk998502.ZP.requireModule("discord_modules");
+    let e = Chunk998502.ZP.getDispatch();
+    return null != module ? (r = module, module) : Promise.reject(Error("dispatch not found"))
   }) : Promise.reject(Error("not desktop client"))
 }
 
@@ -106,7 +107,7 @@ let O = {
   },
   destroy() {
     let e = g();
-    null != e && void 0 !== e.destroy && (e.destroy(), i = null)
+    null != module && true !== module.destroy && (module.destroy(), i = null)
   },
   setTargetManifest(e) {
     let {
@@ -138,7 +139,7 @@ let O = {
       action: n,
       user_id: r,
       user_token: i
-    }), b), !0)
+    }), b), true)
   },
   setCredentials(e, t) {
     let n = g();
@@ -166,13 +167,13 @@ let O = {
   },
   pause() {
     let e = g();
-    null != e && e.command(JSON.stringify({
+    null != module && module.command(JSON.stringify({
       command: "Pause"
     }), b)
   },
   resume() {
     let e = g();
-    null != e && e.command(JSON.stringify({
+    null != module && module.command(JSON.stringify({
       command: "Resume"
     }), b)
   },

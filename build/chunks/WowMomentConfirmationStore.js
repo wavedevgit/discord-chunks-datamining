@@ -1,0 +1,50 @@
+/** Chunk was on web.js **/
+/** chunk id: 453227, original params: e,t,n (module,exports,re quire) **/
+"use strict";
+require.d(exports, {
+  Z: () => f
+});
+var r, Chunk442837 = require("./442837.js"),
+  Chunk570140 = require("./570140.js");
+
+function a(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+let s = {
+  isDisplayingWowMomentConfirmation: false
+};
+
+function l() {
+  s = {
+    isDisplayingWowMomentConfirmation: false
+  }
+}
+
+function c() {
+  l()
+}
+
+function u(e) {
+  let {
+    value: t
+  } = e;
+  s.isDisplayingWowMomentConfirmation = t
+}
+class d extends(r = Chunk442837.ZP.Store) {
+  getState() {
+    return s
+  }
+  get isDisplayingWowMomentConfirmation() {
+    return s.isDisplayingWowMomentConfirmation
+  }
+}
+a(d, "displayName", "WowMomentConfirmationStore");
+let f = new d(Chunk570140.Z, {
+  LOGOUT: c,
+  WOW_MOMENT_CONFIRMATION_SET_IS_DISPLAYING_WOW_MOMENT_CONFIRMATION: u
+})

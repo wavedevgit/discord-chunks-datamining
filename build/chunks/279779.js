@@ -1,31 +1,32 @@
 /** Chunk was on web.js **/
+/** chunk id: 279779, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => N
-}), n(997841), n(539854), n(190126), n(368063), n(65234), n(111804), n(490233), n(97749), n(388685), n(415506), n(361932), n(187205);
-var r = n(392711),
-  i = n.n(r),
-  o = n(772848),
-  a = n(147913),
-  s = n(131704),
-  l = n(598077),
-  c = n(592125),
-  u = n(271383),
-  d = n(699516),
-  f = n(594174),
-  _ = n(630388),
-  p = n(823379),
-  h = n(960048),
-  m = n(709054),
-  g = n(51144),
-  E = n(981631);
+}), require("./997841.js"), require("./539854.js"), require("./190126.js"), require("./368063.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js"), require("./388685.js"), require("./415506.js"), require("./361932.js"), require("./187205.js");
+var Chunk392711 = require("./392711.js"),
+  i = require.n(Chunk392711),
+  Chunk772848 = require("./772848.js"),
+  Chunk147913 = require("./147913.js"),
+  Chunk131704 = require("./131704.js"),
+  Chunk598077 = require("./598077.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk271383 = require("./271383.js"),
+  Chunk699516 = require("./699516.js"),
+  Chunk594174 = require("./594174.js"),
+  Chunk630388 = require("./630388.js"),
+  Chunk823379 = require("./823379.js"),
+  Chunk960048 = require("./960048.js"),
+  Chunk709054 = require("./709054.js"),
+  Chunk51144 = require("./51144.js"),
+  Chunk981631 = require("./981631.js");
 
 function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 let y = 10;
@@ -38,7 +39,7 @@ function O(e) {
     username: "0" !== e.discriminator ? "".concat(e.username, "#").concat(e.discriminator) : e.username,
     nicknames: {}
   };
-  return null != g.ZP.getGlobalName(e) && (r.globalName = e.globalName), e.bot && (r.isBot = !0), e instanceof l.Z ? r.isProvisional = e.isProvisional : "flags" in e ? r.isProvisional = _.yE(null != (t = e.flags) ? t : 0, E.xW$.PROVISIONAL_ACCOUNT) : r.isProvisional = !1, d.Z.isFriend(e.id) && (r.isFriend = !0, r.friendNickname = d.Z.getNickname(e.id)), e instanceof l.Z ? r.isStaff = e.isStaff() : "flags" in e ? r.isStaff = _.yE(null != (n = e.flags) ? n : 0, E.xW$.STAFF) : r.isStaff = !1, r
+  return null != g.ZP.getGlobalName(e) && (r.globalName = e.globalName), e.bot && (r.isBot = true), e instanceof l.Z ? r.isProvisional = e.isProvisional : "flags" in e ? r.isProvisional = _.yE(null != (t = e.flags) ? t : 0, E.xW$.PROVISIONAL_ACCOUNT) : r.isProvisional = false, d.Z.isFriend(e.id) && (r.isFriend = true, r.friendNickname = d.Z.getNickname(e.id)), e instanceof l.Z ? r.isStaff = e.isStaff() : "flags" in e ? r.isStaff = _.yE(null != (n = e.flags) ? n : 0, E.xW$.STAFF) : r.isStaff = false, r
 }
 
 function v(e, t, n) {
@@ -69,16 +70,16 @@ class S {
     this._limit = e, null != this._nextQuery && (this._nextQuery.limit = e)
   }
   subscribe() {
-    null == this._worker || this._subscribed || (this._worker.addEventListener("message", this.handleMessages, !1), this._subscribed = !0, this._setNextQuery())
+    null == this._worker || this._subscribed || (this._worker.addEventListener("message", this.handleMessages, false), this._subscribed = true, this._setNextQuery())
   }
   unsubscribe() {
-    null != this._worker && this._subscribed && (this._worker.removeEventListener("message", this.handleMessages, !1), this._subscribed = !1)
+    null != this._worker && this._subscribed && (this._worker.removeEventListener("message", this.handleMessages, false), this._subscribed = false)
   }
   destroy() {
     this.clearQuery(), this.unsubscribe()
   }
   clearQuery() {
-    this._currentQuery = !1, this._nextQuery = null, null != this._worker && this._subscribed && this._worker.postMessage({
+    this._currentQuery = false, this._nextQuery = null, null != this._worker && this._subscribed && this._worker.postMessage({
       uuid: this._uuid,
       type: "QUERY_CLEAR"
     })
@@ -101,20 +102,20 @@ class S {
     }, this._setNextQuery()
   }
   _setNextQuery() {
-    (null == this._currentQuery || !1 === this._currentQuery) && null != this._nextQuery && (null != this._worker && this._subscribed ? (this._currentQuery = this._nextQuery, this._nextQuery = null, this._worker.postMessage({
+    (null == this._currentQuery || false === this._currentQuery) && null != this._nextQuery && (null != this._worker && this._subscribed ? (this._currentQuery = this._nextQuery, this._nextQuery = null, this._worker.postMessage({
       uuid: this._uuid,
       type: "QUERY_SET",
       payload: this._currentQuery
     })) : this._subscribed || this.subscribe())
   }
   constructor(e, t, n = y) {
-    b(this, "_worker", void 0), b(this, "_uuid", void 0), b(this, "_callback", void 0), b(this, "_limit", void 0), b(this, "_currentQuery", void 0), b(this, "_nextQuery", void 0), b(this, "_subscribed", void 0), b(this, "handleMessages", e => {
+    b(this, "_worker", true), b(this, "_uuid", true), b(this, "_callback", true), b(this, "_limit", true), b(this, "_currentQuery", true), b(this, "_nextQuery", true), b(this, "_subscribed", true), b(this, "handleMessages", e => {
       let t = e.data;
-      null != t && "USER_RESULTS" === t.type && t.uuid === this._uuid && (!1 !== this._currentQuery && this._callback(t.payload), null != this._currentQuery && (this._currentQuery = null), this._setNextQuery())
-    }), this._worker = e, this._uuid = (0, o.Z)(), this._callback = t, this._limit = n, this._currentQuery = null, this._nextQuery = null, this._subscribed = !1, this.subscribe()
+      null != t && "USER_RESULTS" === t.type && t.uuid === this._uuid && (false !== this._currentQuery && this._callback(t.payload), null != this._currentQuery && (this._currentQuery = null), this._setNextQuery())
+    }), this._worker = e, this._uuid = (0, o.Z)(), this._callback = t, this._limit = n, this._currentQuery = null, this._nextQuery = null, this._subscribed = false, this.subscribe()
   }
 }
-class A extends a.Z {
+class A extends Chunk147913.Z {
   _initialize() {
     this.rebootWebworker()
   }
@@ -122,26 +123,26 @@ class A extends a.Z {
     null != this._worker && (this._worker.terminate(), this._worker = null)
   }
   rebootWebworker() {
-    null != this._worker && (this._worker.terminate(), this._worker = null), this._worker = new Worker(new URL("/assets/" + n.u("69731"), n.b))
+    null != this._worker && (this._worker.terminate(), this._worker = null), this._worker = new Worker(new URL("/assets/" + require.u("69731"), require.b))
   }
   updateUsers(e, t) {
     let {
       _worker: n
     } = this;
     if (null != n) {
-      for (let n of e = e.filter(p.lm))(null == n ? void 0 : n.id) == null && h.Z.addBreadcrumb({
+      for (let n of e = e.filter(p.lm))(null == n ? true : n.id) == null && h.Z.addBreadcrumb({
         category: "debug",
         message: "User missing id",
         data: {
           action: t,
           userFields: {
             userIsNull: null == n,
-            idIsNull: (null == n ? void 0 : n.id) == null,
-            usernameIsNull: (null == n ? void 0 : n.username) == null,
-            isBot: null == n ? void 0 : n.isBot,
-            isFriend: null == n ? void 0 : n.isFriend,
-            isProvisional: null == n ? void 0 : n.isProvisional,
-            globalNameIsNull: (null == n ? void 0 : n.globalName) == null,
+            idIsNull: (null == n ? true : n.id) == null,
+            usernameIsNull: (null == n ? true : n.username) == null,
+            isBot: null == n ? true : n.isBot,
+            isFriend: null == n ? true : n.isFriend,
+            isProvisional: null == n ? true : n.isProvisional,
+            globalNameIsNull: (null == n ? true : n.globalName) == null,
             usersArrayLength: e.length
           }
         }
@@ -153,7 +154,7 @@ class A extends a.Z {
     }
   }
   getUserSearchContext(e) {
-    let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : y;
+    let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : y;
     this.initialize();
     let {
       _worker: n
@@ -162,7 +163,7 @@ class A extends a.Z {
     return new S(n, e, t)
   }
   constructor(...e) {
-    super(...e), b(this, "_worker", void 0), b(this, "actions", {
+    super(...e), b(this, "_worker", true), b(this, "actions", {
       LOGOUT: () => this._handleLogout(),
       POST_CONNECTION_OPEN: () => this._handleConnectionOpen(),
       CONNECTION_OPEN_SUPPLEMENTAL: e => this._handleConnectionOpenSupplemental(e),
@@ -197,7 +198,7 @@ class A extends a.Z {
           for (let t in r[e]) {
             var i, o;
             let a = n[t],
-              s = null != (o = null == (i = r[e][t]) ? void 0 : i.nick) ? o : g.ZP.getGlobalName(a);
+              s = null != (o = null == (i = r[e][t]) ? true : i.nick) ? o : g.ZP.getGlobalName(a);
             null != a && v(a, e, s)
           }
         this.updateUsers(Object.values(n), "connection_open")

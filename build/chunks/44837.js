@@ -1,4 +1,5 @@
 /** Chunk was on web.js **/
+/** chunk id: 44837, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 
 function r() {
@@ -10,6 +11,6 @@ function r() {
     return e
   }).apply(null, arguments)
 }
-n.d(t, {
+require.d(exports, {
   Z: () => r
 })

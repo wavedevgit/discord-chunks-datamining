@@ -1,29 +1,30 @@
 /** Chunk was on web.js **/
+/** chunk id: 540032, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-var r = n(209800)("%Reflect.construct%", !0),
-  i = n(265518);
+var r = require("./209800.js")("%Reflect.construct%", true),
+  Chunk265518 = require("./265518.js");
 try {
-  i({}, "", {
+  Chunk265518({}, "", {
     "[[Get]]": function() {}
   })
 } catch (e) {
   i = null
 }
-if (i && r) {
+if (Chunk265518 && r) {
   var o = {},
     a = {};
-  i(a, "length", {
+  Chunk265518(a, "length", {
     "[[Get]]": function() {
       throw o
     },
-    "[[Enumerable]]": !0
-  }), e.exports = function(e) {
+    "[[Enumerable]]": true
+  }), module.exports = function(e) {
     try {
       r(e, a)
     } catch (e) {
       return e === o
     }
   }
-} else e.exports = function(e) {
+} else module.exports = function(e) {
   return "function" == typeof e && !!e.prototype
 }

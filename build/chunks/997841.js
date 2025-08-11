@@ -1,26 +1,27 @@
 /** Chunk was on web.js **/
+/** chunk id: 997841, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-var r = n(127849),
-  i = n(507604),
-  o = n(573078),
-  a = n(503463),
-  s = n(621523),
-  l = r.RegExp,
+var Chunk127849 = require("./127849.js"),
+  Chunk507604 = require("./507604.js"),
+  Chunk573078 = require("./573078.js"),
+  Chunk503463 = require("./503463.js"),
+  Chunk621523 = require("./621523.js"),
+  l = Chunk127849.RegExp,
   c = l.prototype;
-i && s(function() {
-  var e = !0;
+Chunk507604 && Chunk621523(function() {
+  var e = true;
   try {
     l(".", "d")
   } catch (t) {
-    e = !1
+    e = false
   }
   var t = {},
     n = "",
-    r = e ? "dgimsy" : "gimsy",
+    r = module ? "dgimsy" : "gimsy",
     i = function(e, r) {
       Object.defineProperty(t, e, {
         get: function() {
-          return n += r, !0
+          return n += r, true
         }
       })
     },
@@ -31,9 +32,9 @@ i && s(function() {
       multiline: "m",
       sticky: "y"
     };
-  for (var a in e && (o.hasIndices = "d"), o) i(a, o[a]);
-  return Object.getOwnPropertyDescriptor(c, "flags").get.call(t) !== r || n !== r
-}) && o(c, "flags", {
-  configurable: !0,
-  get: a
+  for (var a in module && (Chunk573078.hasIndices = "d"), Chunk573078) Chunk507604(Chunk503463, Chunk573078[Chunk503463]);
+  return Object.getOwnPropertyDescriptor(c, "flags").get.call(exports) !== Chunk127849 || require !== Chunk127849
+}) && Chunk573078(c, "flags", {
+  configurable: true,
+  get: Chunk503463
 })

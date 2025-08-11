@@ -1,11 +1,12 @@
 /** Chunk was on web.js **/
-var r = n(444675);
+/** chunk id: 2831, original params: e,t,n (module,exports,re quire) **/
+var Chunk444675 = require("./444675.js");
 ! function(e, t) {
   "use strict";
   if (!e.setImmediate) {
     var n, i = 1,
       o = {},
-      a = !1,
+      a = false,
       s = e.document,
       l = Object.getPrototypeOf && Object.getPrototypeOf(e);
     l = l && l.setTimeout ? l : e, "[object process]" === ({}).toString.call(e.process) ? _() : p() ? h() : e.MessageChannel ? m() : s && "onreadystatechange" in s.createElement("script") ? g() : E(), l.setImmediate = c, l.clearImmediate = u
@@ -51,11 +52,11 @@ var r = n(444675);
     else {
       var t = o[e];
       if (t) {
-        a = !0;
+        a = true;
         try {
           d(t)
         } finally {
-          u(e), a = !1
+          u(e), a = false
         }
       }
     }
@@ -71,10 +72,10 @@ var r = n(444675);
 
   function p() {
     if (e.postMessage && !e.importScripts) {
-      var t = !0,
+      var t = true,
         n = e.onmessage;
       return e.onmessage = function() {
-        t = !1
+        t = false
       }, e.postMessage("", "*"), e.onmessage = n, t
     }
   }
@@ -84,7 +85,7 @@ var r = n(444675);
       r = function(n) {
         n.source === e && "string" == typeof n.data && 0 === n.data.indexOf(t) && f(+n.data.slice(t.length))
       };
-    e.addEventListener ? e.addEventListener("message", r, !1) : e.attachEvent("onmessage", r), n = function(n) {
+    e.addEventListener ? e.addEventListener("message", r, false) : e.attachEvent("onmessage", r), n = function(n) {
       e.postMessage(t + n, "*")
     }
   }
@@ -113,4 +114,4 @@ var r = n(444675);
       setTimeout(f, 0, e)
     }
   }
-}("undefined" == typeof self ? void 0 === n.g ? this : n.g : self)
+}("undefined" == typeof self ? true === require.g ? this : require.g : self)

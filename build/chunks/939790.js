@@ -1,6 +1,7 @@
 /** Chunk was on 86915 **/
+/** chunk id: 939790, original params: e,t,n (module,exports,require) **/
 "use strict";
-e.exports = {
+module.exports = {
   container: "container_db5301",
   body: "body_db5301",
   footer: "footer_db5301",

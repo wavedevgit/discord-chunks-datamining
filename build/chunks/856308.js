@@ -1,9 +1,10 @@
 /** Chunk was on 67244 **/
+/** chunk id: 856308, original params: e,t,r (module,exports,require) **/
 "use strict";
-r.d(t, {
+require.d(exports, {
   Z: () => a
 });
-let a = new(r(665352)).Z({
+let a = new(require("./665352.js")).Z({
   id: "xyz-d65",
   name: "XYZ D65",
   coords: {

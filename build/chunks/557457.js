@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 557457, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   W3: () => I,
   Wc: () => v,
   Ye: () => T,
@@ -9,19 +10,19 @@ n.d(t, {
   nG: () => g,
   tR: () => m
 });
-var r = n(73800),
-  i = n(442837),
-  o = n(361291),
-  a = n(314897),
-  s = n(430824),
-  l = n(19780),
-  c = n(594174),
-  u = n(626135),
-  d = n(981631),
-  f = n(37113),
-  _ = n(474936),
-  p = n(65154),
-  h = n(388032);
+var Chunk73800 = require("./73800.js"),
+  Chunk442837 = require("./442837.js"),
+  Chunk361291 = require("./361291.js"),
+  Chunk314897 = require("./314897.js"),
+  Chunk430824 = require("./430824.js"),
+  Chunk19780 = require("./19780.js"),
+  Chunk594174 = require("./594174.js"),
+  Chunk626135 = require("./626135.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk37113 = require("./37113.js"),
+  Chunk474936 = require("./474936.js"),
+  Chunk65154 = require("./65154.js"),
+  Chunk388032 = require("./388032.jsx");
 
 function m(e) {
   if (null == e) return;
@@ -82,10 +83,10 @@ function T(e, t, n) {
     o = l.Z.getGuildId(),
     a = null != o ? s.Z.getGuild(o) : null;
   u.default.track(d.rMx.STREAM_SETTINGS_UPDATE, {
-    user_premium_tier: null == i ? void 0 : i.premiumType,
-    guild_premium_tier: null == a ? void 0 : a.premiumTier,
-    stream_quality_user_premium_tier: (null == r ? void 0 : r.quality) != null ? _.bg[r.quality] : null,
-    stream_quality_guild_premium_tier: null == r ? void 0 : r.guildPremiumTier,
+    user_premium_tier: null == i ? true : i.premiumType,
+    guild_premium_tier: null == a ? true : a.premiumTier,
+    stream_quality_user_premium_tier: (null == r ? true : r.quality) != null ? _.bg[r.quality] : null,
+    stream_quality_guild_premium_tier: null == r ? true : r.guildPremiumTier,
     stream_quality_preset: e,
     stream_quality_resolution: t,
     stream_quality_frame_rate: n

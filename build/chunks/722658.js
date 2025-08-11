@@ -1,5 +1,6 @@
 /** Chunk was on web.js **/
-e.exports = function(e) {
+/** chunk id: 722658, original params: e (module,exports,re quire) **/
+module.exports = function(e) {
   let t = {
     keyword: ["break", "case", "chan", "const", "continue", "default", "defer", "else", "fallthrough", "for", "func", "go", "goto", "if", "import", "interface", "map", "package", "range", "return", "select", "struct", "switch", "type", "var"],
     type: ["bool", "byte", "complex64", "complex128", "error", "float32", "float64", "int8", "int16", "int32", "int64", "string", "uint8", "uint16", "uint32", "uint64", "int", "uint", "uintptr", "rune"],
@@ -41,12 +42,12 @@ e.exports = function(e) {
       className: "function",
       beginKeywords: "func",
       end: "\\s*(\\{|$)",
-      excludeEnd: !0,
+      excludeEnd: true,
       contains: [e.TITLE_MODE, {
         className: "params",
         begin: /\(/,
         end: /\)/,
-        endsParent: !0,
+        endsParent: true,
         keywords: t,
         illegal: /["']/
       }]

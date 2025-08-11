@@ -1,4 +1,5 @@
 /** Chunk was on web.js **/
+/** chunk id: 267843, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 
 function r(e) {
@@ -9,7 +10,7 @@ function r(e) {
     height: t
   }
 }
-n.d(t, {
+require.d(exports, {
   Z: () => i,
   m: () => r
 });
@@ -19,6 +20,6 @@ let i = {
   sm: 18,
   md: 24,
   lg: 32,
-  custom: void 0,
+  custom: true,
   refresh_sm: 20
 }

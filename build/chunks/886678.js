@@ -1,5 +1,6 @@
 /** Chunk was on 22988 **/
-e.exports = {
+/** chunk id: 886678, original params: e,t,n (module,exports,require) **/
+module.exports = {
   keywordsTextArea: "keywordsTextArea__6a631",
   paddingTop: "paddingTop__6a631",
   errorText: "errorText__6a631",

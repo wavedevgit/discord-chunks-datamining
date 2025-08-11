@@ -1,22 +1,23 @@
 /** Chunk was on 1272 **/
-n.d(t, {
+/** chunk id: 845767, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => o
 });
-var r = n(570140),
-  i = n(317770),
-  l = n(594174);
-class a extends i.Z {
+var Chunk570140 = require("./570140.js"),
+  Chunk317770 = require("./317770.js"),
+  Chunk594174 = require("./594174.js");
+class a extends Chunk317770.Z {
   _initialize() {
-    r.Z.subscribe("POST_CONNECTION_OPEN", this._maybeStartDevSession), r.Z.subscribe("LOGOUT", this._maybeStopDevSession)
+    Chunk570140.Z.subscribe("POST_CONNECTION_OPEN", this._maybeStartDevSession), Chunk570140.Z.subscribe("LOGOUT", this._maybeStopDevSession)
   }
   _terminate() {
-    r.Z.unsubscribe("POST_CONNECTION_OPEN", this._maybeStartDevSession), r.Z.unsubscribe("LOGOUT", this._maybeStopDevSession)
+    Chunk570140.Z.unsubscribe("POST_CONNECTION_OPEN", this._maybeStartDevSession), Chunk570140.Z.unsubscribe("LOGOUT", this._maybeStopDevSession)
   }
   _maybeStartDevSession() {
-    if (null == window.DiscordDevSession || !0 !== window.__METICULOUS_ENABLED) return;
+    if (null == window.DiscordDevSession || true !== window.__METICULOUS_ENABLED) return;
     let e = "production" === window.GLOBAL_ENV.PROJECT_ENV,
-      t = l.default.getCurrentUser();
-    if (!((null == t ? void 0 : t.email) == null || e && t.isStaff())) t.username.startsWith("mtcls") || !e ? window.DiscordDevSession.start() : window.DiscordDevSession.stop()
+      t = Chunk594174.default.getCurrentUser();
+    if (!((null == exports ? true : exports.email) == null || module && exports.isStaff())) exports.username.startsWith("mtcls") || !module ? window.DiscordDevSession.start() : window.DiscordDevSession.stop()
   }
   _maybeStopDevSession() {
     null != window.DiscordDevSession && window.DiscordDevSession.started && window.DiscordDevSession.stop()

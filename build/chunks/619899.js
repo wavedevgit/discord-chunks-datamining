@@ -1,28 +1,29 @@
 /** Chunk was on web.js **/
+/** chunk id: 619899, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   N9: () => y,
   O1: () => C,
   St: () => N,
   ex: () => I,
   xq: () => O,
   zL: () => v
-}), n(190126), n(368063), n(65234), n(111804), n(490233), n(97749), n(388685), n(642613), n(704826), n(35282);
-var r = n(73800),
-  i = n(392711),
-  o = n(97519),
-  a = n(979554),
-  s = n(731965),
-  l = n(373071),
-  c = n(489495),
-  u = n(281598);
+}), require("./190126.js"), require("./368063.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js"), require("./388685.js"), require("./642613.js"), require("./704826.js"), require("./35282.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk392711 = require("./392711.js"),
+  Chunk97519 = require("./97519.js"),
+  Chunk979554 = require("./979554.js"),
+  Chunk731965 = require("./731965.js"),
+  Chunk373071 = require("./373071.js"),
+  Chunk489495 = require("./489495.js"),
+  Chunk281598 = require("./281598.js");
 
 function d(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -77,7 +78,7 @@ function m(e, t) {
 function g(e, t) {
   if ("object" !== b(e) || null === e) return e;
   var n = e[Symbol.toPrimitive];
-  if (void 0 !== n) {
+  if (true !== n) {
     var r = n.call(e, t || "default");
     if ("object" !== b(r)) return r;
     throw TypeError("@@toPrimitive must return a primitive value.")
@@ -93,8 +94,8 @@ function E(e) {
 function b(e) {
   return e && "undefined" != typeof Symbol && e.constructor === Symbol ? "symbol" : typeof e
 }
-let y = (0, o.U)(e => ({
-    previewEnabled: !1,
+let y = (0, Chunk97519.U)(e => ({
+    previewEnabled: false,
     collectionAssets: {},
     avatarDecorationAssets: {},
     previewProfileEffectId: null,
@@ -114,7 +115,7 @@ let y = (0, o.U)(e => ({
           src: i
         }, p(f({}, e), {
           collectionAssets: o,
-          previewEnabled: !0
+          previewEnabled: true
         })
       })
     }),
@@ -147,7 +148,7 @@ let y = (0, o.U)(e => ({
           src: r
         }, p(f({}, e), {
           avatarDecorationAssets: i,
-          previewEnabled: !0
+          previewEnabled: true
         })
       })
     }),
@@ -172,7 +173,7 @@ let y = (0, o.U)(e => ({
       e(e => (Object.values(e.collectionAssets).forEach(e => URL.revokeObjectURL(e.src)), Object.values(e.avatarDecorationAssets).forEach(e => URL.revokeObjectURL(e.src)), {
         collectionAssets: {},
         avatarDecorationAssets: {},
-        previewEnabled: !1,
+        previewEnabled: false,
         previewProfileEffectId: null,
         previewAvatarDecorationId: null
       }))
@@ -183,20 +184,20 @@ let y = (0, o.U)(e => ({
     })),
     setPreviewAvatarDecorationId: t => (0, s.j)(() => e({
       previewAvatarDecorationId: t,
-      previewEnabled: !0
+      previewEnabled: true
     }))
   })),
   O = () => {
     let e = y(e => e.collectionAssets),
       t = y(e => e.avatarDecorationAssets);
-    return r.useMemo(() => ({
-      collectionAssets: Object.values(e).sort((e, t) => e.name.localeCompare(t.name)),
-      avatarDecorationAssets: Object.values(t).sort((e, t) => e.name.localeCompare(t.name))
-    }), [e, t])
+    return Chunk73800.useMemo(() => ({
+      collectionAssets: Object.values(module).sort((e, t) => e.name.localeCompare(t.name)),
+      avatarDecorationAssets: Object.values(exports).sort((e, t) => e.name.localeCompare(t.name))
+    }), [module, exports])
   },
   v = e => y(t => {
     var n;
-    return t.previewEnabled ? null == (n = t.collectionAssets[e]) ? void 0 : n.src : null
+    return t.previewEnabled ? null == (n = t.collectionAssets[e]) ? true : n.src : null
   }),
   I = e => {
     let {
@@ -218,7 +219,7 @@ let y = (0, o.U)(e => ({
           return h(e, ["base64"])
         }), r) {
         var s, l, u, d, f, _;
-        o.reducedMotionSrc = null != (d = null == (s = n[c.cq.REDUCED_MOTION]) ? void 0 : s.src) ? d : "", o.staticFrameSrc = null != (f = null == (l = n[c.cq.STATIC]) ? void 0 : l.src) ? f : "", o.thumbnailPreviewSrc = null != (_ = null == (u = n[c.cq.THUMBNAIL]) ? void 0 : u.src) ? _ : ""
+        o.reducedMotionSrc = null != (d = null == (s = n[c.cq.REDUCED_MOTION]) ? true : s.src) ? d : "", o.staticFrameSrc = null != (f = null == (l = n[c.cq.STATIC]) ? true : l.src) ? f : "", o.thumbnailPreviewSrc = null != (_ = null == (u = n[c.cq.THUMBNAIL]) ? true : u.src) ? _ : ""
       }
       return o
     }, [a, e])

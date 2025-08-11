@@ -1,9 +1,10 @@
 /** Chunk was on web.js **/
+/** chunk id: 282253, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => i
 });
-var r = n(815995);
+var Chunk815995 = require("./815995.js");
 
 function i(e, t) {
   e.prototype = Object.create(t.prototype), e.prototype.constructor = e, (0, r.Z)(e, t)

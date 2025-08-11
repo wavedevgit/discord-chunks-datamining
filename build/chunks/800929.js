@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 800929, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   tier2Animation: "tier2Animation__387d4",
   panningAnimation: "panningAnimation__387d4",
   panningAnimationInner: "panningAnimationInner__387d4",

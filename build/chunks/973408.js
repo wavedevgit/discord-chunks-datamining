@@ -1,13 +1,14 @@
 /** Chunk was on web.js **/
+/** chunk id: 973408, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   X: () => s
 });
-var r = n(69122),
-  i = n(825842),
-  o = n(17146);
+var Chunk69122 = require("./69122.js"),
+  Chunk825842 = require("./825842.js"),
+  Chunk17146 = require("./17146.js");
 let a = {
-  writeUnknownFields: !0,
+  writeUnknownFields: true,
   writerFactory: () => new l
 };
 
@@ -21,11 +22,11 @@ class l {
   finish() {
     this.chunks.push(new Uint8Array(this.buf));
     let e = 0;
-    for (let t = 0; t < this.chunks.length; t++) e += this.chunks[t].length;
-    let t = new Uint8Array(e),
+    for (let t = 0; exports < this.chunks.length; exports++) e += this.chunks[exports].length;
+    let t = new Uint8Array(module),
       n = 0;
-    for (let e = 0; e < this.chunks.length; e++) t.set(this.chunks[e], n), n += this.chunks[e].length;
-    return this.chunks = [], t
+    for (let e = 0; module < this.chunks.length; module++) exports.set(this.chunks[module], require), n += this.chunks[module].length;
+    return this.chunks = [], exports
   }
   fork() {
     return this.stack.push({
@@ -36,8 +37,8 @@ class l {
   join() {
     let e = this.finish(),
       t = this.stack.pop();
-    if (!t) throw Error("invalid state, fork stack empty");
-    return this.chunks = t.chunks, this.buf = t.buf, this.uint32(e.byteLength), this.raw(e)
+    if (!exports) throw Error("invalid state, fork stack empty");
+    return this.chunks = exports.chunks, this.buf = exports.buf, this.uint32(module.byteLength), this.raw(module)
   }
   tag(e, t) {
     return this.uint32((e << 3 | t) >>> 0)
@@ -65,21 +66,21 @@ class l {
   float(e) {
     (0, o.E_)(e);
     let t = new Uint8Array(4);
-    return new DataView(t.buffer).setFloat32(0, e, !0), this.raw(t)
+    return new DataView(t.buffer).setFloat32(0, e, true), this.raw(t)
   }
   double(e) {
     let t = new Uint8Array(8);
-    return new DataView(t.buffer).setFloat64(0, e, !0), this.raw(t)
+    return new DataView(t.buffer).setFloat64(0, e, true), this.raw(t)
   }
   fixed32(e) {
     (0, o.fp)(e);
     let t = new Uint8Array(4);
-    return new DataView(t.buffer).setUint32(0, e, !0), this.raw(t)
+    return new DataView(t.buffer).setUint32(0, e, true), this.raw(t)
   }
   sfixed32(e) {
     (0, o.ug)(e);
     let t = new Uint8Array(4);
-    return new DataView(t.buffer).setInt32(0, e, !0), this.raw(t)
+    return new DataView(t.buffer).setInt32(0, e, true), this.raw(t)
   }
   sint32(e) {
     return (0, o.ug)(e), e = (e << 1 ^ e >> 31) >>> 0, (0, i.fC)(e, this.buf), this
@@ -88,13 +89,13 @@ class l {
     let t = new Uint8Array(8),
       n = new DataView(t.buffer),
       i = r.M.from(e);
-    return n.setInt32(0, i.lo, !0), n.setInt32(4, i.hi, !0), this.raw(t)
+    return n.setInt32(0, i.lo, true), n.setInt32(4, i.hi, true), this.raw(t)
   }
   fixed64(e) {
     let t = new Uint8Array(8),
       n = new DataView(t.buffer),
       i = r.p.from(e);
-    return n.setInt32(0, i.lo, !0), n.setInt32(4, i.hi, !0), this.raw(t)
+    return n.setInt32(0, i.lo, true), n.setInt32(4, i.hi, true), this.raw(t)
   }
   int64(e) {
     let t = r.M.from(e);

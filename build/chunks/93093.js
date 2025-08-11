@@ -1,20 +1,21 @@
 /** Chunk was on web.js **/
+/** chunk id: 93093, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => s
-}), n(388685);
-var r = n(442837),
-  i = n(570140);
+}), require("./388685.js");
+var Chunk442837 = require("./442837.js"),
+  Chunk570140 = require("./570140.js");
 
 function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
-class a extends r.ZP.Store {
+class a extends Chunk442837.ZP.Store {
   allGuildIds() {
     return this.guildIds
   }
@@ -34,16 +35,16 @@ class a extends r.ZP.Store {
     this.guildIds.add(e.guild.id)
   }
   handleGuildDelete(e) {
-    !0 !== e.guild.unavailable && this.guildIds.delete(e.guild.id)
+    true !== e.guild.unavailable && this.guildIds.delete(e.guild.id)
   }
   constructor() {
-    super(i.Z, {
+    super(Chunk570140.Z, {
       CACHE_LOADED: e => this.handleCacheLoaded(e),
       CACHE_LOADED_LAZY: e => this.handleCacheLoadedLazy(e),
       CONNECTION_OPEN: e => this.handleConnectionOpen(e),
       GUILD_CREATE: e => this.handleGuildCreate(e),
       GUILD_DELETE: e => this.handleGuildDelete(e)
-    }, i.c.Early), o(this, "guildIds", new Set)
+    }, Chunk570140.c.Early), o(this, "guildIds", new Set)
   }
 }
 let s = new a

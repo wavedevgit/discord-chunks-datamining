@@ -1,11 +1,12 @@
 /** Chunk was on web.js **/
+/** chunk id: 96052, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   U: () => a
 });
-var r = n(570140),
-  i = n(709054),
-  o = n(981631);
+var Chunk570140 = require("./570140.js"),
+  Chunk709054 = require("./709054.js"),
+  Chunk981631 = require("./981631.js");
 
 function a(e, t, n) {
   r.Z.dispatch({
@@ -16,9 +17,9 @@ function a(e, t, n) {
       requesterUser: t,
       requestToSpeakTimestamp: n
     }),
-    optimistic: !1,
+    optimistic: false,
     sendMessageOptions: {},
-    isPushNotification: !1
+    isPushNotification: false
   })
 }
 
@@ -37,13 +38,13 @@ function s(e) {
     author: n,
     attachments: [],
     embeds: [],
-    pinned: !1,
+    pinned: false,
     mentions: [],
     mention_channels: [],
     mention_roles: [],
-    mention_everyone: !1,
+    mention_everyone: false,
     timestamp: r,
     state: o.yb.SENT,
-    tts: !1
+    tts: false
   }
 }

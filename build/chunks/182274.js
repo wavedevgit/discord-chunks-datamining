@@ -1,10 +1,11 @@
 /** Chunk was on web.js **/
+/** chunk id: 182274, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   U: () => i
 });
-var r = n(594174);
+var Chunk594174 = require("./594174.js");
 let i = () => {
   var e;
-  return (null == (e = r.default.getCurrentUser()) ? void 0 : e.nsfwAllowed) === !1
+  return (null == (e = Chunk594174.default.getCurrentUser()) ? true : module.nsfwAllowed) === false
 }

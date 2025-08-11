@@ -1,32 +1,33 @@
 /** Chunk was on 8102 **/
-i.d(t, {
+/** chunk id: 313741, original params: e,t,i (module,exports,require) **/
+require.d(exports, {
   K: () => p
-}), i(388685), i(953529);
-var n = i(73800),
-  l = i(442837),
-  r = i(172337),
-  a = i(101492),
-  s = i(710091),
-  u = i(496675),
-  d = i(388032);
+}), require("./388685.js"), require("./953529.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk442837 = require("./442837.js"),
+  Chunk172337 = require("./172337.js"),
+  Chunk101492 = require("./101492.js"),
+  Chunk710091 = require("./710091.js"),
+  Chunk496675 = require("./496675.js"),
+  Chunk388032 = require("./388032.js");
 let o = {
-    "server-subscriptions-onboarding": s.Z,
-    "server-subscriptions-finish-setting-up": a.Z,
-    "server-subscriptions-create-tier-from-template": r.Z
+    "server-subscriptions-onboarding": Chunk710091.Z,
+    "server-subscriptions-finish-setting-up": Chunk101492.Z,
+    "server-subscriptions-create-tier-from-template": Chunk172337.Z
   },
   c = {
-    title: () => d.intl.string(d.t.V42OaG),
-    description: () => d.intl.string(d.t["7dJ16e"]),
-    selectGuildCta: () => d.intl.string(d.t.LhlgY2),
-    createGuildDescription: () => d.intl.string(d.t.anOis7),
-    createGuildCta: () => d.intl.string(d.t.B44MTk),
-    canCreateGuild: !0,
-    useIsGuildSupported: () => (0, l.e7)([u.Z], () => e => u.Z.canAccessGuildSettings(e), [], l.pF)
+    title: () => Chunk388032.intl.string(Chunk388032.t.V42OaG),
+    description: () => Chunk388032.intl.string(Chunk388032.t["7dJ16e"]),
+    selectGuildCta: () => Chunk388032.intl.string(Chunk388032.t.LhlgY2),
+    createGuildDescription: () => Chunk388032.intl.string(Chunk388032.t.anOis7),
+    createGuildCta: () => Chunk388032.intl.string(Chunk388032.t.B44MTk),
+    canCreateGuild: true,
+    useIsGuildSupported: () => (0, Chunk442837.e7)([Chunk496675.Z], () => e => u.Z.canAccessGuildSettings(e), [], Chunk442837.pF)
   };
 
 function p(e) {
   var t;
-  let [i] = n.useState(null == e ? void 0 : o[e]), l = c.useIsGuildSupported(), r = null == i || null == (t = i.useIsGuildSupported) ? void 0 : t.call(i), a = function(e) {
+  let [i] = n.useState(null == e ? true : o[e]), l = c.useIsGuildSupported(), r = null == i || null == (t = i.useIsGuildSupported) ? true : t.call(i), a = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var i = null != arguments[t] ? arguments[t] : {},
         n = Object.keys(i);
@@ -36,9 +37,9 @@ function p(e) {
         var n;
         n = i[t], t in e ? Object.defineProperty(e, t, {
           value: n,
-          enumerable: !0,
-          configurable: !0,
-          writable: !0
+          enumerable: true,
+          configurable: true,
+          writable: true
         }) : e[t] = n
       })
     }
@@ -51,6 +52,6 @@ function p(e) {
     createGuildDescription: a.createGuildDescription(),
     createGuildCta: a.createGuildCta(),
     canCreateGuild: a.canCreateGuild,
-    isGuildSupported: (e, t) => l(e, t) && (null == r ? void 0 : r(e, t)) !== !1
+    isGuildSupported: (e, t) => l(e, t) && (null == r ? true : r(e, t)) !== false
   }
 }

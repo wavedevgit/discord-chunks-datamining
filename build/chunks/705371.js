@@ -1,23 +1,24 @@
 /** Chunk was on 75708 **/
-n.d(t, {
+/** chunk id: 705371, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   l: () => u
 });
-var i = n(904245),
-  r = n(181945),
-  s = n(888369),
-  a = n(375954),
-  l = n(944486),
-  o = n(914010),
-  c = n(585483),
-  d = n(981631);
+var Chunk904245 = require("./904245.js"),
+  Chunk181945 = require("./181945.js"),
+  Chunk888369 = require("./888369.js"),
+  Chunk375954 = require("./375954.js"),
+  Chunk944486 = require("./944486.js"),
+  Chunk914010 = require("./914010.js"),
+  Chunk585483 = require("./585483.js"),
+  Chunk981631 = require("./981631.js");
 let u = {
   binds: ["shift+esc"],
-  comboKeysBindGlobal: !0,
+  comboKeysBindGlobal: true,
   action() {
-    let e = o.Z.getGuildId();
-    if (null == e || !s.default.getGuildHasUnreadIgnoreMuted(e)) return;
-    (0, r.Z)([e]);
-    let t = l.Z.getChannelId(e);
-    null != t && (a.Z.getMessages(t).hasMoreAfter ? i.Z.jumpToPresent(t, d.AQB) : c.S.dispatch(d.CkL.SCROLLTO_PRESENT))
+    let e = Chunk914010.Z.getGuildId();
+    if (null == module || !Chunk888369.default.getGuildHasUnreadIgnoreMuted(module)) return;
+    (0, Chunk181945.Z)([module]);
+    let t = Chunk944486.Z.getChannelId(module);
+    null != exports && (Chunk375954.Z.getMessages(exports).hasMoreAfter ? Chunk904245.Z.jumpToPresent(exports, Chunk981631.AQB) : Chunk585483.S.dispatch(Chunk981631.CkL.SCROLLTO_PRESENT))
   }
 }

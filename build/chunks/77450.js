@@ -1,15 +1,16 @@
 /** Chunk was on web.js **/
+/** chunk id: 77450, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 
 function r(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
-n.d(t, {
+require.d(exports, {
   h: () => i
 });
 class i {
@@ -17,6 +18,6 @@ class i {
     return this.cpuCoreCount
   }
   constructor() {
-    r(this, "cpuCoreCount", void 0)
+    r(this, "cpuCoreCount", true)
   }
 }

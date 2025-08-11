@@ -1,20 +1,21 @@
 /** Chunk was on web.js **/
+/** chunk id: 475179, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => u
 });
-var r = n(570140),
-  i = n(367907),
-  o = n(626135),
-  a = n(585483),
-  s = n(981631);
+var Chunk570140 = require("./570140.js"),
+  Chunk367907 = require("./367907.js"),
+  Chunk626135 = require("./626135.js"),
+  Chunk585483 = require("./585483.js"),
+  Chunk981631 = require("./981631.js");
 
 function l(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -32,7 +33,7 @@ function c(e) {
 }
 let u = {
   rebuildRTCActiveChannels() {
-    r.Z.dispatch({
+    Chunk570140.Z.dispatch({
       type: "CHANNEL_RTC_ACTIVE_CHANNELS"
     })
   },
@@ -44,7 +45,7 @@ let u = {
     })
   },
   updateLayout(e, t) {
-    let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : s.IlC.APP;
+    let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : s.IlC.APP;
     o.default.track(s.rMx.VIDEO_LAYOUT_TOGGLED, c({
       video_layout: t
     }, (0, i.AB)(e))), r.Z.dispatch({

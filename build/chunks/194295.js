@@ -1,16 +1,17 @@
 /** Chunk was on 63141 **/
-n.d(t, {
+/** chunk id: 194295, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => h
 });
-var i = n(278323),
-  r = n(13245),
-  o = n(45114),
-  l = n(593481),
-  s = n(237997),
-  a = n(312839),
-  c = n(981631),
-  d = n(987650),
-  u = n(388032);
+var Chunk278323 = require("./278323.js"),
+  Chunk13245 = require("./13245.js"),
+  Chunk45114 = require("./45114.js"),
+  Chunk593481 = require("./593481.js"),
+  Chunk237997 = require("./237997.js"),
+  Chunk312839 = require("./312839.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk987650 = require("./987650.js"),
+  Chunk388032 = require("./388032.js");
 
 function h(e, t, n, h) {
   let p = t.username,
@@ -51,7 +52,7 @@ function h(e, t, n, h) {
         section: c.jXE.OVERLAY,
         object: c.qAy.ACK_DECLINE_REQUEST_TO_JOIN,
         objectType: c.Qqv.ACK_SEMI_AUTOMATIC
-      }, !0, !0), r.Z.updateNotificationStatus(n), y("decline")
+      }, true, true), r.Z.updateNotificationStatus(n), y("decline")
     },
     onDismissClick: () => {
       y("dismiss")

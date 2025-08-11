@@ -1,44 +1,45 @@
 /** Chunk was on 34779 **/
-n.d(t, {
+/** chunk id: 865112, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   RB: () => j,
   VH: () => y,
   Vi: () => E,
   Vu: () => S,
   q7: () => v
 });
-var r = n(692547),
-  i = n(497089),
-  l = n(650473),
-  o = n(389765),
-  s = n(137492),
-  a = n(387661),
-  c = n(659953),
-  u = n(319707),
-  d = n(584914),
-  h = n(962575),
-  p = n(334702),
-  f = n(333722),
-  g = n(549931),
-  m = n(178561),
-  b = n(39863),
-  O = n(130312);
+var Chunk692547 = require("./692547.js"),
+  Chunk497089 = require("./497089.js"),
+  Chunk650473 = require("./650473.js"),
+  Chunk389765 = require("./389765.js"),
+  Chunk137492 = require("./137492.js"),
+  Chunk387661 = require("./387661.js"),
+  Chunk659953 = require("./659953.js"),
+  Chunk319707 = require("./319707.js"),
+  Chunk584914 = require("./584914.js"),
+  Chunk962575 = require("./962575.js"),
+  Chunk334702 = require("./334702.js"),
+  Chunk333722 = require("./333722.js"),
+  Chunk549931 = require("./549931.js"),
+  Chunk178561 = require("./178561.js"),
+  Chunk39863 = require("./39863.js"),
+  Chunk130312 = require("./130312.js");
 let _ = {
-    CHECKED: a,
-    FRIENDS: u,
-    SHARE_SCREEN: b,
-    NEW_MESSAGE: g,
-    GAME_RELATIONSHIP: h
+    CHECKED: Chunk387661,
+    FRIENDS: Chunk319707,
+    SHARE_SCREEN: Chunk39863,
+    NEW_MESSAGE: Chunk549931,
+    GAME_RELATIONSHIP: Chunk962575
   },
   y = {
-    MISSED_MESSAGES: f,
-    FRIEND_REQUEST_REMINDER: d,
-    SCHEDULED_GUILD_EVENT: c,
-    TOP_MESSAGES: p,
-    NOTIFICATION_CENTER: s,
-    UPDATE_PROFILE: O,
-    FIND_FRIENDS: o,
-    ADD_FRIEND: o,
-    FIRST_MESSAGE: m
+    MISSED_MESSAGES: Chunk333722,
+    FRIEND_REQUEST_REMINDER: Chunk584914,
+    SCHEDULED_GUILD_EVENT: Chunk659953,
+    TOP_MESSAGES: Chunk334702,
+    NOTIFICATION_CENTER: Chunk137492,
+    UPDATE_PROFILE: Chunk130312,
+    FIND_FRIENDS: Chunk389765,
+    ADD_FRIEND: Chunk389765,
+    FIRST_MESSAGE: Chunk178561
   },
   C = e => {
     switch (e.item_enum) {

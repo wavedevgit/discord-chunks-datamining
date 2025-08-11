@@ -1,6 +1,7 @@
 /** Chunk was on 45620 **/
+/** chunk id: 556559, original params: e,t,n (module,exports,require) **/
 "use strict";
-e.exports = {
+module.exports = {
   placeholderPulse: "placeholderPulse__72fa0",
   skeleton: "skeleton__72fa0",
   bannerBody: "bannerBody__72fa0",

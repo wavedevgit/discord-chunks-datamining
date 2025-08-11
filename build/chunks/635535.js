@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 635535, original params: e,t (module,exports,re quire) **/
 "use strict";
-t.createDateTimeFormat = c, t.createDateTimeFormats = u;
+exports.createDateTimeFormat = c, exports.createDateTimeFormats = u;
 var n = /(?:[Eec]{1,6}|G{1,5}|(?:[yYu]+|U{1,5})|[ML]{1,5}|d{1,2}|a|[hkHK]{1,2}|m{1,2}|s{1,2}|z{1,4})(?=([^']*'[^']*')*[^']*$)/g,
   r = /[QxXVOvZASjgFDwWIQqH]/,
   i = {
@@ -13,14 +14,14 @@ var n = /(?:[Eec]{1,6}|G{1,5}|(?:[yYu]+|U{1,5})|[ML]{1,5}|d{1,2}|a|[hkHK]{1,2}|m
 
 function s(e) {
   for (var t = 0; t < a.length; t += 1)
-    if (e.hasOwnProperty(a[t])) return !1;
-  return !0
+    if (e.hasOwnProperty(a[t])) returnfalse;
+  returntrue
 }
 
 function l(e) {
   for (var t = 0; t < o.length; t += 1)
-    if (e.hasOwnProperty(o[t])) return !1;
-  return !0
+    if (e.hasOwnProperty(o[t])) returnfalse;
+  returntrue
 }
 
 function c(e) {
@@ -60,7 +61,7 @@ function c(e) {
       }
     }), t.pattern = t.pattern.replace(/'([^']*)'/g, function(e, t) {
       return t || "'"
-    }), t.pattern.indexOf("{ampm}") > -1 && (t.hour12 = !0, t.pattern12 = t.pattern, t.pattern = t.pattern.replace("{ampm}", "").replace(/^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g, "")), t
+    }), t.pattern.indexOf("{ampm}") > false && (t.hour12 = true, t.pattern12 = t.pattern, t.pattern = t.pattern.replace("{ampm}", "").replace(/^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g, "")), t
   }
 }
 

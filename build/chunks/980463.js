@@ -1,24 +1,25 @@
 /** Chunk was on web.js **/
+/** chunk id: 980463, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Gq: () => _,
   SN: () => g,
   gA: () => p,
   qc: () => h,
   zI: () => m
-}), n(415506);
-var r = n(544891),
-  i = n(343817),
-  o = n(570140),
-  a = n(959546),
-  s = n(992970),
-  l = n(317951),
-  c = n(287941),
-  u = n(235894),
-  d = n(981631);
+}), require("./415506.js");
+var Chunk544891 = require("./544891.js"),
+  Chunk343817 = require("./343817.js"),
+  Chunk570140 = require("./570140.js"),
+  Chunk959546 = require("./959546.js"),
+  Chunk992970 = require("./992970.js"),
+  Chunk317951 = require("./317951.js"),
+  Chunk287941 = require("./287941.js"),
+  Chunk235894 = require("./235894.js"),
+  Chunk981631 = require("./981631.js");
 let f = {
-    [l.D1]: d.ANM.FETCH_MESSAGE_CONFETTI_ENTITLEMENT,
-    [l.FX]: d.ANM.FETCH_HD_STREAMING_ENTITLEMENT
+    [Chunk317951.D1]: Chunk981631.ANM.FETCH_MESSAGE_CONFETTI_ENTITLEMENT,
+    [Chunk317951.FX]: Chunk981631.ANM.FETCH_HD_STREAMING_ENTITLEMENT
   },
   _ = async e => {
     o.Z.dispatch({
@@ -28,7 +29,7 @@ let f = {
     try {
       let t = await r.tn.get({
         url: d.ANM.CONSUMABLE_FETCH_PRICE(e),
-        rejectWithError: !1
+        rejectWithError: false
       });
       if (null == t.body.price) throw o.Z.dispatch({
         type: "CONSUMABLES_PRICE_FETCH_FAILED",
@@ -61,7 +62,7 @@ let f = {
     try {
       let t = await r.tn.get({
           url: f[e],
-          rejectWithError: !1
+          rejectWithError: false
         }),
         n = null != t.body.entitlement ? a.Z.createFromServer(t.body.entitlement) : null,
         i = t.body.num_potions;
@@ -86,7 +87,7 @@ let f = {
           message_id: t,
           emoji_name: m(n)
         },
-        rejectWithError: !1
+        rejectWithError: false
       }), o.Z.dispatch({
         type: "CLEAR_CONSUMED_ENTITLEMENT",
         skuId: l.D1
@@ -95,7 +96,7 @@ let f = {
       throw new i.Hx(e)
     }
     let a = (0, u.NV)(n);
-    (0, c.I)(a, void 0, !0, s.LL.MessageSent)
+    (0, c.I)(a, true, true, s.LL.MessageSent)
   }, m = e => null != e.id ? "".concat(e.name, ":").concat(e.id) : e.optionallyDiverseSequence, g = e => {
     o.Z.dispatch({
       type: "CONSUMABLES_CLEAR_ERROR",

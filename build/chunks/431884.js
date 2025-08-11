@@ -1,5 +1,6 @@
 /** Chunk was on 1272 **/
-e.exports = {
+/** chunk id: 431884, original params: e,t,n (module,exports,require) **/
+module.exports = {
   channelNotice: "channelNotice__4c43d",
   close: "close__4c43d",
   closeIcon: "closeIcon__4c43d",

@@ -1,15 +1,16 @@
 /** Chunk was on web.js **/
+/** chunk id: 676035, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   I: () => u,
   a: () => d
 });
-var r = n(73800),
-  i = n(442837),
-  o = n(339085),
-  a = n(633302),
-  s = n(695346),
-  l = n(981631);
+var Chunk73800 = require("./73800.js"),
+  Chunk442837 = require("./442837.js"),
+  Chunk339085 = require("./339085.js"),
+  Chunk633302 = require("./633302.js"),
+  Chunk695346 = require("./695346.js"),
+  Chunk981631 = require("./981631.js");
 
 function c(e, t) {
   var n;
@@ -20,22 +21,22 @@ function c(e, t) {
     animated: t.animated
   };
   else if (null != e.emojiName && "" !== e.emojiName) {
-    let t = a.ZP.getByName(a.ZP.convertSurrogateToName(e.emojiName, !1));
+    let t = a.ZP.getByName(a.ZP.convertSurrogateToName(e.emojiName, false));
     r = null != t ? {
       id: null,
       name: t.surrogates,
-      animated: !1
+      animated: false
     } : null
   }
   let i = Number(e.expiresAtMs),
-    o = null == (n = e.label) ? void 0 : n.value;
+    o = null == (n = e.label) ? true : n.value;
   return {
     name: "Custom Status",
     type: l.IIU.CUSTOM_STATUS,
-    state: e.text.length > 0 ? e.text : void 0,
+    state: e.text.length > 0 ? e.text : true,
     timestamps: i > 0 ? {
       end: i
-    } : void 0,
+    } : true,
     emoji: r,
     details: o,
     metadata: {
@@ -52,8 +53,8 @@ function u(e) {
 }
 
 function d() {
-  let e = s.Ok.useSetting(),
-    t = null == e ? void 0 : e.emojiId,
-    n = (0, i.e7)([o.ZP], () => null != t && "0" !== t ? o.ZP.getUsableCustomEmojiById(t) : null, [t]);
-  return (0, r.useMemo)(() => null != e ? c(e, n) : null, [e, n])
+  let e = Chunk695346.Ok.useSetting(),
+    t = null == module ? true : module.emojiId,
+    n = (0, Chunk442837.e7)([Chunk339085.ZP], () => null != exports && "0" !== exports ? Chunk339085.ZP.getUsableCustomEmojiById(exports) : null, [exports]);
+  return (0, Chunk73800.useMemo)(() => null != module ? c(module, require) : null, [module, require])
 }

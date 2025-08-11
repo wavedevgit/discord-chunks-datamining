@@ -1,20 +1,21 @@
 /** Chunk was on web.js **/
+/** chunk id: 521090, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => g
-}), n(290780), n(388685);
-var r = n(106351),
-  i = n(212819),
-  o = n(588468),
-  a = n(933557),
-  s = n(592125),
-  l = n(984933),
-  c = n(483360),
-  u = n(877565),
-  d = n(590921),
-  f = n(761652),
-  _ = n(176505),
-  p = n(388032);
+}), require("./290780.js"), require("./388685.js");
+var Chunk106351 = require("./106351.js"),
+  Chunk212819 = require("./212819.js"),
+  Chunk588468 = require("./588468.js"),
+  Chunk933557 = require("./933557.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk984933 = require("./984933.js"),
+  Chunk483360 = require("./483360.js"),
+  Chunk877565 = require("./877565.js"),
+  Chunk590921 = require("./590921.js"),
+  Chunk761652 = require("./761652.js"),
+  Chunk176505 = require("./176505.js"),
+  Chunk388032 = require("./388032.jsx");
 
 function h(e) {
   switch (e.type) {
@@ -35,7 +36,7 @@ function m(e) {
   return _.EC.has(e.id) ? "<id:".concat(e.id, ">") : "<#".concat(e.id, ">")
 }
 let g = {
-  sentinel: f.zy,
+  sentinel: Chunk761652.zy,
   matches: (e, t, n, r, i) => i.mentions.channel !== d.nS.DENY && !e.isPrivate(),
   queryResults(e, t, n, r, o) {
     let a, s, u = l.sH;

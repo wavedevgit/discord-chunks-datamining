@@ -1,23 +1,24 @@
 /** Chunk was on web.js **/
+/** chunk id: 55406, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 let r;
-n.r(t), n.d(t, {
+require.r(exports), require.d(exports, {
   default: () => C,
   renderChangelogMessageMarkup: () => R
-}), n(35282), n(704826);
-var i = n(159635),
-  o = n.n(i),
-  a = n(800927),
-  s = n(945884),
-  l = n(594199),
-  c = n(454585);
+}), require("./35282.js"), require("./704826.js");
+var Chunk159635 = require("./159635.js"),
+  o = require.n(Chunk159635),
+  Chunk800927 = require("./800927.js"),
+  Chunk945884 = require("./945884.js"),
+  Chunk594199 = require("./594199.js"),
+  Chunk454585 = require("./454585.js");
 
 function u(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -59,10 +60,10 @@ let p = o().defaultRules.lheading,
   y = o().defaultRules.paragraph,
   O = /\{(.+?)}/,
   v = /^\$(\w+?)\$/;
-r = n(235375);
+r = require("./235375.js");
 let I = e => {
     let {
-      transformUpperCase: t = !1
+      transformUpperCase: t = false
     } = e;
     return (e, n, r) => {
       let i = O.exec(e[1]),
@@ -95,7 +96,7 @@ let I = e => {
     },
     lheading: d(_(d({}, p), {
       parse: I({
-        transformUpperCase: !0
+        transformUpperCase: true
       })
     }), "function" == typeof r.customRules.lheading ? r.customRules.lheading(e) : r.customRules.lheading),
     heading: d({}, h, "function" == typeof r.customRules.heading ? r.customRules.heading(e) : r.customRules.heading),
@@ -105,7 +106,7 @@ let I = e => {
   S = e => ({
     lheading: d(_(d({}, p), {
       parse: I({
-        transformUpperCase: !1
+        transformUpperCase: false
       })
     }), "function" == typeof r.customRules.lheading ? r.customRules.lheading(e) : r.customRules.lheading)
   }),
@@ -127,8 +128,8 @@ let C = {
 
 function R(e, t, n) {
   return {
-    hasSpoilerEmbeds: !1,
-    content: c.Z.reactParserFor(N(t))(e.content, !1, null != n ? {
+    hasSpoilerEmbeds: false,
+    content: c.Z.reactParserFor(N(t))(e.content, false, null != n ? {
       changeLog: n
     } : {})
   }

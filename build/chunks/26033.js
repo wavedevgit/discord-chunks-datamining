@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 26033, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Cb: () => o,
   KF: () => u,
   Mq: () => m,
@@ -13,15 +14,15 @@ n.d(t, {
   m9: () => l,
   y0: () => f
 });
-var r = n(876215),
-  i = n(758713);
+var Chunk876215 = require("./876215.js"),
+  Chunk758713 = require("./758713.js");
 
 function o(e) {
-  return (null == e ? void 0 : e.content_type) === r.s.PLAYED_GAME
+  return (null == e ? true : e.content_type) === r.s.PLAYED_GAME
 }
 
 function a(e) {
-  return (null == e ? void 0 : e.content_type) === r.s.TOP_GAME
+  return (null == e ? true : e.content_type) === r.s.TOP_GAME
 }
 
 function s(e) {
@@ -29,15 +30,15 @@ function s(e) {
 }
 
 function l(e) {
-  return (null == e ? void 0 : e.extra) != null && "application_id" in (null == e ? void 0 : e.extra)
+  return (null == e ? true : e.extra) != null && "application_id" in (null == e ? true : e.extra)
 }
 
 function c(e) {
-  return (null == e ? void 0 : e.content_type) === r.s.LISTENED_SESSION
+  return (null == e ? true : e.content_type) === r.s.LISTENED_SESSION
 }
 
 function u(e) {
-  return (null == e ? void 0 : e.content_type) === r.s.TOP_ARTIST
+  return (null == e ? true : e.content_type) === r.s.TOP_ARTIST
 }
 
 function d(e) {
@@ -45,7 +46,7 @@ function d(e) {
 }
 
 function f(e) {
-  return (null == e ? void 0 : e.content_type) === r.s.WATCHED_MEDIA
+  return (null == e ? true : e.content_type) === r.s.WATCHED_MEDIA
 }
 
 function _(e) {
@@ -61,7 +62,7 @@ function h(e) {
 }
 
 function m(e) {
-  return (null == e ? void 0 : e.content_type) === r.s.LAUNCHED_ACTIVITY
+  return (null == e ? true : e.content_type) === r.s.LAUNCHED_ACTIVITY
 }
 
 function g(e) {

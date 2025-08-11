@@ -1,17 +1,18 @@
 /** Chunk was on web.js **/
+/** chunk id: 732659, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => u
-}), n(415506);
-var r = n(73800),
-  i = n(650557),
-  o = n(393903),
-  a = n(960048),
-  s = n(887490);
+}), require("./415506.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk650557 = require("./650557.js"),
+  Chunk393903 = require("./393903.js"),
+  Chunk960048 = require("./960048.js"),
+  Chunk887490 = require("./887490.js");
 let l = {
-  enabled: !0,
-  fireOnMount: !0,
-  fireOnDepsChange: !0
+  enabled: true,
+  fireOnMount: true,
+  fireOnDepsChange: true
 };
 
 function c(e) {
@@ -45,7 +46,7 @@ function u(e, t, n) {
   }, [t, n]);
   (0, o.s)(s, d, [d, e, n], l), r.useLayoutEffect(() => {
     let t = i.F3.findDocumentOrShadowRoot(e).defaultView;
-    if ((null == t ? void 0 : t.ResizeObserver) == null) return;
+    if ((null == t ? true : t.ResizeObserver) == null) return;
     let r = c(e);
     null != r && (a.current = r.offsetHeight, null == n || n(a.current))
   }, [t, e, n])

@@ -1,8 +1,9 @@
 /** Chunk was on 32249 **/
-n.d(t, {
+/** chunk id: 117242, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => i
-}), n(388685);
-var r = n(73800);
+}), require("./388685.js");
+var Chunk73800 = require("./73800.js");
 
 function l(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -14,9 +15,9 @@ function l(e) {
       var r;
       r = n[t], t in e ? Object.defineProperty(e, t, {
         value: r,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
+        enumerable: true,
+        configurable: true,
+        writable: true
       }) : e[t] = r
     })
   }
@@ -45,7 +46,7 @@ function i(e) {
     onAnalytics: s,
     emitIntervalMs: c,
     minSegmentDurationMs: u
-  } = e, [d, m] = r.useState(null), p = (0, r.useRef)(null), f = (0, r.useRef)(Date.now()), v = (0, r.useRef)(!1), E = (0, r.useCallback)(e => {
+  } = e, [d, m] = r.useState(null), p = (0, r.useRef)(null), f = (0, r.useRef)(Date.now()), v = (0, r.useRef)(false), E = (0, r.useCallback)(e => {
     e.segmentEndSec < e.segmentStartSec || s({
       start_time: e.startTime,
       end_time: e.endTime,
@@ -63,7 +64,7 @@ function i(e) {
         endTime: t,
         segmentStartSec: e,
         segmentEndSec: e
-      }), v.current = !0
+      }), v.current = true
     }
   }, [t, i, a]), O = (0, r.useCallback)(() => {
     let e = t();
@@ -80,7 +81,7 @@ function i(e) {
     }), f.current = n))
   }, [d, E, c, u, t]);
   return (0, r.useEffect)(() => {
-    i && a || (m(null), v.current = !1)
+    i && a || (m(null), v.current = false)
   }, [i, a]), (0, r.useEffect)(() => {
     if (n && i && a) v.current || g(), p.current = window.setInterval(() => {
       O()
@@ -94,7 +95,7 @@ function i(e) {
           segmentEndSec: e
         }))
       }
-      m(null), v.current = !1, null != p.current && (clearInterval(p.current), p.current = null)
+      m(null), v.current = false, null != p.current && (clearInterval(p.current), p.current = null)
     }
     return () => {
       null != p.current && (clearInterval(p.current), p.current = null)
@@ -107,7 +108,7 @@ function i(e) {
         e - d.segmentStartSec > .2 && E(o(l({}, d), {
           endTime: t,
           segmentEndSec: e
-        })), m(null), v.current = !1
+        })), m(null), v.current = false
       }
     }, [d, E, t]),
     isInitialized: v.current

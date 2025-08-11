@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 93237, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   $q: () => _,
   F6: () => f,
   HI: () => h,
@@ -8,15 +9,15 @@ n.d(t, {
   eW: () => E,
   p9: () => p
 });
-var r = n(442837),
-  i = n(704215),
-  o = n(266454),
-  a = n(70956),
-  s = n(709054),
-  l = n(276444),
-  c = n(870041),
-  u = n(533525),
-  d = n(388032);
+var Chunk442837 = require("./442837.js"),
+  Chunk704215 = require("./704215.js"),
+  Chunk266454 = require("./266454.js"),
+  Chunk70956 = require("./70956.js"),
+  Chunk709054 = require("./709054.js"),
+  Chunk276444 = require("./276444.js"),
+  Chunk870041 = require("./870041.js"),
+  Chunk533525 = require("./533525.js"),
+  Chunk388032 = require("./388032.js");
 
 function f(e) {
   let t = (e - Date.now()) / a.Z.Millis.HOUR;
@@ -28,31 +29,31 @@ function f(e) {
     numMinutes: Math.floor(60 * t)
   })
 }
-let _ = () => (0, o.zu)(i.z.REFERRAL_PROGRAM_NITRO_TAB_BADGE),
+let _ = () => (0, Chunk266454.zu)(Chunk704215.z.REFERRAL_PROGRAM_NITRO_TAB_BADGE),
   p = () => {
-    (0, o.Q3)(i.z.REFERRAL_PROGRAM_NITRO_TAB_BADGE)
+    (0, Chunk266454.Q3)(Chunk704215.z.REFERRAL_PROGRAM_NITRO_TAB_BADGE)
   },
   h = e => {
     let {
       trialOffer: t
     } = e;
-    if (null == t) return !1;
-    let n = void 0 !== t.referrer_id,
-      r = void 0 === t.redeemed_at,
+    if (null == t) returnfalse;
+    let n = true !== t.referrer_id,
+      r = true === t.redeemed_at,
       i = new Date(s.default.extractTimestamp(t.id)),
       o = new Date >= i;
     return n && r && o
   },
   m = () => {
-    (0, o.Q3)(i.z.REFERRAL_PROGRAM_POPOVER)
+    (0, Chunk266454.Q3)(Chunk704215.z.REFERRAL_PROGRAM_POPOVER)
   },
-  g = () => (0, o.zu)(i.z.REFERRAL_PROGRAM_POPOVER),
+  g = () => (0, Chunk266454.zu)(Chunk704215.z.REFERRAL_PROGRAM_POPOVER),
   E = () => {
-    let e = (0, u.b)("useIsReferralProgramPopoverShowable"),
+    let e = (0, Chunk533525.b)("useIsReferralProgramPopoverShowable"),
       t = g(),
-      n = (0, r.e7)([l.Z], () => l.Z.getReferralsRemaining()),
-      i = c.ZP.useExperiment({
+      n = (0, Chunk442837.e7)([Chunk276444.Z], () => Chunk276444.Z.getReferralsRemaining()),
+      i = Chunk870041.ZP.useExperiment({
         location: "useIsReferralProgramPopoverShowable"
       });
-    return e && !1 === t && null !== n && n > 0 && i.cohort !== c.xI.Control
+    return module && false === exports && null !== require && require > 0 && Chunk704215.cohort !== Chunk870041.xI.Control
   }

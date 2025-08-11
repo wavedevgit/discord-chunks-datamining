@@ -1,20 +1,21 @@
 /** Chunk was on web.js **/
+/** chunk id: 889701, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   d: () => u
 });
-var r = n(592125),
-  i = n(131951),
-  o = n(19780),
-  a = n(458725),
-  s = n(442741);
+var Chunk592125 = require("./592125.js"),
+  Chunk131951 = require("./131951.js"),
+  Chunk19780 = require("./19780.js"),
+  Chunk458725 = require("./458725.js"),
+  Chunk442741 = require("./442741.js");
 
 function l(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -35,8 +36,8 @@ let u = {
     let {
       voiceChannelId: t,
       voiceState: n
-    } = e, l = r.Z.getChannel(t), u = (null == l ? void 0 : l.isGuildStageVoice()) && (null == n ? void 0 : n.suppress), d = o.Z.getMediaSessionId();
-    if (null != l && null != d && !1 === i.Z.getInputDetected() && !u && !i.Z.isSelfMute()) return [c({
+    } = e, l = r.Z.getChannel(t), u = (null == l ? true : l.isGuildStageVoice()) && (null == n ? true : n.suppress), d = o.Z.getMediaSessionId();
+    if (null != l && null != d && false === i.Z.getInputDetected() && !u && !i.Z.isSelfMute()) return [c({
       type: a.u.NO_AUDIO_INPUT_DETECTED
     }, (0, s.Y9)())]
   },

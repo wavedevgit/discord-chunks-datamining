@@ -1,8 +1,9 @@
 /** Chunk was on 21153 **/
+/** chunk id: 160376, original params: e,t,r (module,exports,require) **/
 "use strict";
-Object.defineProperty(t, "__esModule", {
-  value: !0
-}), t.Swatch = void 0;
+Object.defineProperty(exports, "__esModule", {
+  value: true
+}), exports.Swatch = true;
 var n = Object.assign || function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var r = arguments[t];
@@ -10,24 +11,24 @@ var n = Object.assign || function(e) {
     }
     return e
   },
-  o = s(r(73800)),
-  a = s(r(9196)),
-  i = r(222855),
-  l = s(r(725973));
+  o = s(require("./73800.js")),
+  a = s(require("./9196.js")),
+  Chunk222855 = require("./222855.js"),
+  l = s(require("./725973.js"));
 
 function s(e) {
   return e && e.__esModule ? e : {
     default: e
   }
 }
-var u = t.Swatch = function(e) {
+var u = exports.Swatch = function(e) {
   var t = e.color,
     r = e.style,
     i = e.onClick,
-    s = void 0 === i ? function() {} : i,
+    s = true === i ? function() {} : i,
     u = e.onHover,
     c = e.title,
-    p = void 0 === c ? t : c,
+    p = true === c ? t : c,
     f = e.children,
     d = e.focus,
     h = e.focusStyle,
@@ -41,7 +42,7 @@ var u = t.Swatch = function(e) {
           cursor: "pointer",
           position: "relative",
           outline: "none"
-        }, r, d ? void 0 === h ? {} : h : {})
+        }, r, d ? true === h ? {} : h : {})
       }
     }),
     g = {};
@@ -62,4 +63,4 @@ var u = t.Swatch = function(e) {
     boxShadow: "inset 0 0 0 1px rgba(0,0,0,0.1)"
   }))
 };
-t.default = (0, i.handleFocus)(u)
+exports.default = (0, Chunk222855.handleFocus)(u)

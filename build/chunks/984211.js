@@ -1,10 +1,11 @@
 /** Chunk was on web.js **/
+/** chunk id: 984211, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 
 function r(e) {
   if (null == e || null == e.party || null == e.party.size || e.party.size.length < 2) return {
-    partySize: -1,
-    maxPartySize: -1
+    partySize: false,
+    maxPartySize: false
   };
   let [t, n] = e.party.size;
   return {
@@ -12,6 +13,6 @@ function r(e) {
     maxPartySize: n
   }
 }
-n.d(t, {
+require.d(exports, {
   _: () => r
-}), n(388685)
+}), require("./388685.js")

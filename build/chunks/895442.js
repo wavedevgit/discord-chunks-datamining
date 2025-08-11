@@ -1,11 +1,12 @@
 /** Chunk was on 33648 **/
-n.d(t, {
+/** chunk id: 895442, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => o
 });
-var l = n(592125),
-  r = n(430824),
-  a = n(594174),
-  i = n(981631);
+var Chunk592125 = require("./592125.js"),
+  Chunk430824 = require("./430824.js"),
+  Chunk594174 = require("./594174.js"),
+  Chunk981631 = require("./981631.js");
 
 function s(e) {
   if (!e.isPrivate()) {
@@ -20,7 +21,7 @@ function s(e) {
 
 function o(e, t) {
   var n;
-  if (!(null == (n = a.default.getCurrentUser()) ? void 0 : n.isStaff())) return !1;
+  if (!(null == (n = a.default.getCurrentUser()) ? true : n.isStaff())) returnfalse;
   let r = l.Z.getChannel(e.channel_id);
   return null != r && !!s(r) && t.some(e => {
     let t = l.Z.getChannel(e);

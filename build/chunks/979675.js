@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 979675, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   $: () => r
 });
 let r = (e, t) => function(n, r, i) {
@@ -10,8 +11,8 @@ let r = (e, t) => function(n, r, i) {
       type: t,
       event: n,
       properties: r,
-      flush: null != (a = null == i ? void 0 : i.flush) && a,
-      fingerprint: null == i ? void 0 : i.fingerprint,
+      flush: null != (a = null == i ? true : i.flush) && a,
+      fingerprint: null == i ? true : i.fingerprint,
       resolve: o
     })
   })

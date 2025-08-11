@@ -1,5 +1,6 @@
 /** Chunk was on web.js **/
-e.exports = function(e) {
+/** chunk id: 748863, original params: e (module,exports,re quire) **/
+module.exports = function(e) {
   let t = ["bool", "byte", "char", "decimal", "delegate", "double", "dynamic", "enum", "float", "int", "long", "nint", "nuint", "object", "sbyte", "short", "string", "ulong", "uint", "ushort"],
     n = ["public", "private", "protected", "static", "internal", "protected", "abstract", "async", "extern", "override", "unsafe", "virtual", "new", "sealed", "partial"],
     r = ["default", "false", "null", "true"],
@@ -104,7 +105,7 @@ e.exports = function(e) {
     keywords: i,
     illegal: /::/,
     contains: [e.COMMENT("///", "$", {
-      returnBegin: !0,
+      returnBegin: true,
       contains: [{
         className: "doctag",
         variants: [{
@@ -147,9 +148,9 @@ e.exports = function(e) {
     }, {
       className: "meta",
       begin: "^\\s*\\[(?=[\\w])",
-      excludeBegin: !0,
+      excludeBegin: true,
       end: "\\]",
-      excludeEnd: !0,
+      excludeEnd: true,
       contains: [{
         className: "string",
         begin: /"/,
@@ -161,16 +162,16 @@ e.exports = function(e) {
     }, {
       className: "function",
       begin: "(" + g + "\\s+)+" + e.IDENT_RE + "\\s*(<[^=]+>\\s*)?\\(",
-      returnBegin: !0,
+      returnBegin: true,
       end: /\s*[{;=]/,
-      excludeEnd: !0,
+      excludeEnd: true,
       keywords: i,
       contains: [{
         beginKeywords: n.join(" "),
         relevance: 0
       }, {
         begin: e.IDENT_RE + "\\s*(<[^=]+>\\s*)?\\(",
-        returnBegin: !0,
+        returnBegin: true,
         contains: [e.TITLE_MODE, m],
         relevance: 0
       }, {
@@ -179,8 +180,8 @@ e.exports = function(e) {
         className: "params",
         begin: /\(/,
         end: /\)/,
-        excludeBegin: !0,
-        excludeEnd: !0,
+        excludeBegin: true,
+        excludeEnd: true,
         keywords: i,
         relevance: 0,
         contains: [h, a, e.C_BLOCK_COMMENT_MODE]

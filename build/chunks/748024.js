@@ -1,5 +1,6 @@
 /** Chunk was on web.js **/
-e.exports = function(e) {
+/** chunk id: 748024, original params: e (module,exports,re quire) **/
+module.exports = function(e) {
   let t = [e.C_NUMBER_MODE, {
     className: "string",
     begin: "'|\"",

@@ -1,5 +1,6 @@
 /** Chunk was on 1272 **/
-e.exports = {
+/** chunk id: 647128, original params: e,t,n (module,exports,require) **/
+module.exports = {
   textBlock: "textBlock_e2d7b8",
   joinButton: "joinButton_e2d7b8",
   eventName: "eventName_e2d7b8",

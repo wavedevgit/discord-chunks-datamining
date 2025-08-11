@@ -1,17 +1,18 @@
 /** Chunk was on web.js **/
+/** chunk id: 945689, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => s
-}), n(388685);
-var r = n(31775),
-  i = n.n(r);
+}), require("./388685.js");
+var Chunk31775 = require("./31775.js"),
+  i = require.n(Chunk31775);
 
 function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 let a = 3;
@@ -25,14 +26,14 @@ class s {
   getSubscribedThreadIds() {
     let e = new Set;
     for (let t in this._subscriptions)
-      for (let n of this._subscriptions[t].keys()) e.add(n);
-    return e
+      for (let n of this._subscriptions[exports].keys()) module.add(require);
+    return module
   }
   _get(e) {
     var t;
     return null != (t = this._subscriptions[e]) ? t : new(i())({
       max: a,
-      updateAgeOnGet: !0
+      updateAgeOnGet: true
     })
   }
   clear(e) {
@@ -40,14 +41,14 @@ class s {
   }
   subscribe(e, t, n) {
     let r = this._get(e);
-    return r.has(t) ? (r.set(t, Date.now()), !1) : (null != n && r.has(n) && r.set(n, Date.now()), r.set(t, Date.now()), this._subscriptions[e] = r, this._onChange(e, r.keys()), !0)
+    return r.has(t) ? (r.set(t, Date.now()), false) : (null != n && r.has(n) && r.set(n, Date.now()), r.set(t, Date.now()), this._subscriptions[e] = r, this._onChange(e, r.keys()), true)
   }
   unsubscribe(e, t) {
-    if (!(e in this._subscriptions)) return !1;
+    if (!(e in this._subscriptions)) returnfalse;
     let n = this._subscriptions[e];
-    return !!n.has(t) && (n.del(t), this._onChange(e, n.keys()), !0)
+    return !!n.has(t) && (n.del(t), this._onChange(e, n.keys()), true)
   }
   constructor(e) {
-    o(this, "_subscriptions", {}), o(this, "_onChange", void 0), this._onChange = e
+    o(this, "_subscriptions", {}), o(this, "_onChange", true), this._onChange = e
   }
 }

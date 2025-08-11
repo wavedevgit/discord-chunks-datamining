@@ -1,18 +1,19 @@
 /** Chunk was on web.js **/
+/** chunk id: 38267, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => c
-}), n(388685);
-var r = n(73800),
-  i = n(585483),
-  o = n(981631);
+}), require("./388685.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk585483 = require("./585483.js"),
+  Chunk981631 = require("./981631.js");
 
 function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -38,7 +39,7 @@ function c(e, t) {
     a(t => {
       let n = s({}, t, e),
         r = l(n);
-      return r !== d.current && (d.current = r, null != f.current && (cancelAnimationFrame(f.current), f.current = null), r ? u(!0) : f.current = requestAnimationFrame(() => u(!1))), n
+      return r !== d.current && (d.current = r, null != f.current && (cancelAnimationFrame(f.current), f.current = null), r ? u(true) : f.current = requestAnimationFrame(() => u(false))), n
     })
   }, []);
   return r.useEffect(() => {

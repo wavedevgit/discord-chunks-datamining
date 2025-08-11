@@ -1,35 +1,36 @@
 /** Chunk was on web.js **/
+/** chunk id: 962086, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Zm: () => I,
   aq: () => R,
   iD: () => v,
   mL: () => T,
   og: () => C,
   zS: () => N
-}), n(388685);
-var r = n(570140),
-  i = n(367907),
-  o = n(703656),
-  a = n(592125),
-  s = n(984933),
-  l = n(271383),
-  c = n(485386),
-  u = n(496675),
-  d = n(944486),
-  f = n(9156),
-  _ = n(626135),
-  p = n(160404),
-  h = n(225675),
-  m = n(981631),
-  g = n(176505);
+}), require("./388685.js");
+var Chunk570140 = require("./570140.js"),
+  Chunk367907 = require("./367907.js"),
+  Chunk703656 = require("./703656.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk984933 = require("./984933.js"),
+  Chunk271383 = require("./271383.js"),
+  Chunk485386 = require("./485386.js"),
+  Chunk496675 = require("./496675.js"),
+  Chunk944486 = require("./944486.js"),
+  Chunk9156 = require("./9156.js"),
+  Chunk626135 = require("./626135.js"),
+  Chunk160404 = require("./160404.js"),
+  Chunk225675 = require("./225675.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk176505 = require("./176505.js");
 
 function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -109,10 +110,10 @@ function A(e, t) {
     r = Array.from(t);
   s.ZP.addConditionalChangeListener(() => {
     let t = l.ZP.getSelfMember(e);
-    if (null == t) return !1;
-    if (r.some(e => !t.roles.includes(e))) return !0;
+    if (null == t) returnfalse;
+    if (r.some(e => !t.roles.includes(e))) returntrue;
     let i = [...s.ZP.getSelectableChannelIds(e), ...s.ZP.getVocalChannelIds(e)].filter(e => !n.includes(e));
-    return i.length > 0 && N(e, i, []), !1
+    return i.length > 0 && N(e, i, []), false
   })
 }
 

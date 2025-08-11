@@ -1,18 +1,19 @@
 /** Chunk was on web.js **/
+/** chunk id: 803998, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => o
-}), n(388685);
-var r = n(73800),
-  i = n(920103);
+}), require("./388685.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk920103 = require("./920103.js");
 
 function o(e) {
-  let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : "vertical",
+  let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : "vertical",
     [n] = (0, r.useState)(() => new i.Z({
       tension: 200,
       friction: 35,
       mass: 2,
-      clamp: !0,
+      clamp: true,
       callback: (n, r) => {
         let {
           current: i
@@ -22,7 +23,7 @@ function o(e) {
       },
       getNodeWindow: () => {
         var t, n, r;
-        return null != (r = null == (n = e.current) || null == (t = n.ownerDocument) ? void 0 : t.defaultView) ? r : null
+        return null != (r = null == (n = e.current) || null == (t = n.ownerDocument) ? true : t.defaultView) ? r : null
       }
     }));
   return n

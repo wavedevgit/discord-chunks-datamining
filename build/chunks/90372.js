@@ -1,12 +1,13 @@
 /** Chunk was on 71879 **/
+/** chunk id: 90372, original params: e,t,n (module,exports,require) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => s
 });
-var r = n(73800),
-  i = n(451478),
-  a = n(830917),
-  l = n(985518);
+var Chunk73800 = require("./73800.js"),
+  Chunk451478 = require("./451478.js"),
+  Chunk830917 = require("./830917.js"),
+  Chunk985518 = require("./985518.js");
 let s = {
   useForumChannelSeenManager: function(e) {
     let {

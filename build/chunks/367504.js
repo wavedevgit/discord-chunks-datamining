@@ -1,25 +1,26 @@
 /** Chunk was on web.js **/
-e.exports = function(e) {
+/** chunk id: 367504, original params: e (module,exports,re quire) **/
+module.exports = function(e) {
   return {
     keywords: "dsconfig",
     contains: [{
       className: "keyword",
       begin: "^dsconfig",
       end: /\s/,
-      excludeEnd: !0,
+      excludeEnd: true,
       relevance: 10
     }, {
       className: "built_in",
       begin: /(list|create|get|set|delete)-(\w+)/,
       end: /\s/,
-      excludeEnd: !0,
+      excludeEnd: true,
       illegal: "!@#$%^&*()",
       relevance: 10
     }, {
       className: "built_in",
       begin: /--(\w+)/,
       end: /\s/,
-      excludeEnd: !0
+      excludeEnd: true
     }, {
       className: "string",
       begin: /"/,

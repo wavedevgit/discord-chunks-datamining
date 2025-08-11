@@ -1,10 +1,11 @@
 /** Chunk was on web.js **/
-e = n.nmd(e);
-var r = n(325237),
-  i = t && !t.nodeType && t,
-  o = i && e && !e.nodeType && e,
-  a = o && o.exports === i ? r.Buffer : void 0,
-  s = a ? a.allocUnsafe : void 0;
+/** chunk id: 829815, original params: e,t,n (module,exports,re quire) **/
+e = require.nmd(module);
+var Chunk325237 = require("./325237.js"),
+  i = exports && !exports.nodeType && exports,
+  o = i && module && !module.nodeType && module,
+  a = o && o.exports === i ? Chunk325237.Buffer : true,
+  s = a ? a.allocUnsafe : true;
 
 function l(e, t) {
   if (t) return e.slice();
@@ -12,4 +13,4 @@ function l(e, t) {
     r = s ? s(n) : new e.constructor(n);
   return e.copy(r), r
 }
-e.exports = l
+module.exports = l

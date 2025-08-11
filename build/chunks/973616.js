@@ -1,23 +1,24 @@
 /** Chunk was on web.js **/
+/** chunk id: 973616, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   BA: () => p,
   ZN: () => h,
   ZP: () => m
-}), n(953529), n(997841), n(467055), n(388685);
-var r = n(480189),
-  i = n(81825),
-  o = n(768581),
-  a = n(584597),
-  s = n(598077),
-  l = n(701488);
+}), require("./953529.js"), require("./997841.js"), require("./467055.js"), require("./388685.js");
+var Chunk480189 = require("./480189.js"),
+  Chunk81825 = require("./81825.js"),
+  Chunk768581 = require("./768581.js"),
+  Chunk584597 = require("./584597.js"),
+  Chunk598077 = require("./598077.js"),
+  Chunk701488 = require("./701488.js");
 
 function c(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -51,8 +52,8 @@ function f(e, t) {
   }), e
 }
 let _ = {
-  [l.Zc]: 7,
-  [l.qm]: 12
+  [Chunk701488.Zc]: 7,
+  [Chunk701488.qm]: 12
 };
 
 function p(e) {
@@ -62,7 +63,7 @@ function p(e) {
   };
   return null != e.arguments && (t.arguments = e.arguments), null != e.is_launcher && (t.isLauncher = e.is_launcher), t
 }
-class h extends i.Z {
+class h extends Chunk81825.Z {
   static createFromServer(e) {
     return new h(f(u({}, e), {
       coverImage: e.cover_image,
@@ -95,7 +96,7 @@ class h extends i.Z {
       id: this.id,
       hash: this.splash,
       size: e,
-      keepAspectRatio: !0,
+      keepAspectRatio: true,
       format: t
     }) : null
   }
@@ -108,7 +109,7 @@ class h extends i.Z {
   }
   constructor(e) {
     var t, n, r, i, o, a;
-    super(), c(this, "id", void 0), c(this, "name", void 0), c(this, "icon", void 0), c(this, "description", void 0), c(this, "type", void 0), c(this, "coverImage", void 0), c(this, "primarySkuId", void 0), c(this, "bot", void 0), c(this, "splash", void 0), c(this, "thirdPartySkus", void 0), c(this, "isMonetized", void 0), c(this, "isVerified", void 0), c(this, "roleConnectionsVerificationUrl", void 0), c(this, "parentId", void 0), c(this, "connectionEntrypointUrl", void 0), this.id = e.id, this.name = e.name, this.icon = e.icon, this.splash = e.splash, this.primarySkuId = e.primarySkuId, this.thirdPartySkus = null != (t = e.thirdPartySkus) ? t : [], this.description = e.description, this.bot = e.bot, this.coverImage = e.coverImage, this.type = e.type, this.isMonetized = null != (n = e.is_monetized) ? n : e.isMonetized, this.isVerified = null != (r = e.is_verified) ? r : e.isVerified, this.roleConnectionsVerificationUrl = null != (i = e.role_connections_verification_url) ? i : e.roleConnectionsVerificationUrl, this.parentId = null != (o = e.parent_id) ? o : e.parentId, this.connectionEntrypointUrl = null != (a = e.connection_entrypoint_url) ? a : e.connectionEntrypointUrl
+    super(), c(this, "id", true), c(this, "name", true), c(this, "icon", true), c(this, "description", true), c(this, "type", true), c(this, "coverImage", true), c(this, "primarySkuId", true), c(this, "bot", true), c(this, "splash", true), c(this, "thirdPartySkus", true), c(this, "isMonetized", true), c(this, "isVerified", true), c(this, "roleConnectionsVerificationUrl", true), c(this, "parentId", true), c(this, "connectionEntrypointUrl", true), this.id = e.id, this.name = e.name, this.icon = e.icon, this.splash = e.splash, this.primarySkuId = e.primarySkuId, this.thirdPartySkus = null != (t = e.thirdPartySkus) ? t : [], this.description = e.description, this.bot = e.bot, this.coverImage = e.coverImage, this.type = e.type, this.isMonetized = null != (n = e.is_monetized) ? n : e.isMonetized, this.isVerified = null != (r = e.is_verified) ? r : e.isVerified, this.roleConnectionsVerificationUrl = null != (i = e.role_connections_verification_url) ? i : e.roleConnectionsVerificationUrl, this.parentId = null != (o = e.parent_id) ? o : e.parentId, this.connectionEntrypointUrl = null != (a = e.connection_entrypoint_url) ? a : e.connectionEntrypointUrl
   }
 }
 class m extends h {
@@ -140,7 +141,7 @@ class m extends h {
         return [t, {
           oauth2InstallParams: (null != n ? n : {}).oauth2_install_params
         }]
-      })) : void 0,
+      })) : true,
       termsOfServiceUrl: e.terms_of_service_url,
       privacyPolicyUrl: e.privacy_policy_url,
       isDiscoverable: e.is_discoverable,
@@ -179,7 +180,7 @@ class m extends h {
       flags: null != (N = e.flags) ? N : this.flags,
       maxParticipants: null != (C = e.maxParticipants) ? C : this.maxParticipants,
       tags: null != (R = e.tags) ? R : this.tags,
-      embeddedActivityConfig: null != (P = e.embeddedActivityConfig) ? P : null != this.embeddedActivityConfig ? u({}, this.embeddedActivityConfig) : void 0,
+      embeddedActivityConfig: null != (P = e.embeddedActivityConfig) ? P : null != this.embeddedActivityConfig ? u({}, this.embeddedActivityConfig) : true,
       type: null != (w = e.type) ? w : this.type,
       team: null != (D = e.team) ? D : this.team,
       roleConnectionsVerificationUrl: null != (L = e.roleConnectionsVerificationUrl) ? L : this.roleConnectionsVerificationUrl,
@@ -199,12 +200,12 @@ class m extends h {
   }
   getMaxParticipants() {
     var e, t;
-    return null != (t = null != (e = this.maxParticipants) ? e : _[this.id]) ? t : 0
+    return null != (t = null != (e = this.maxParticipants) ? module : _[this.id]) ? exports : 0
   }
   supportsIntegrationTypes() {
-    for (var e = arguments.length, t = Array(e), n = 0; n < e; n++) t[n] = arguments[n];
+    for (var e = arguments.length, t = Array(module), n = 0; require < module; require++) exports[require] = arguments[require];
     let r = this.integrationTypesConfig;
-    return null != r && t.every(e => e in r)
+    return null != Chunk480189 && exports.every(e => e in r)
   }
   get destinationSkuId() {
     return null != this.storeListingSkuId ? this.storeListingSkuId : this.primarySkuId
@@ -218,6 +219,6 @@ class m extends h {
   }
   constructor(e) {
     var t, n, i, o, a, s, l, u, d, f, _, h, m, g, E, b, y, O;
-    super(e), c(this, "overlay", void 0), c(this, "overlayWarn", void 0), c(this, "overlayCompatibilityHook", void 0), c(this, "overlayMethods", void 0), c(this, "hook", void 0), c(this, "aliases", void 0), c(this, "publishers", void 0), c(this, "developers", void 0), c(this, "storeListingSkuId", void 0), c(this, "guildId", void 0), c(this, "guild", void 0), c(this, "executables", void 0), c(this, "hashes", void 0), c(this, "eulaId", void 0), c(this, "slug", void 0), c(this, "flags", void 0), c(this, "maxParticipants", void 0), c(this, "tags", void 0), c(this, "embeddedActivityConfig", void 0), c(this, "team", void 0), c(this, "integrationTypesConfig", void 0), c(this, "storefront_available", void 0), c(this, "termsOfServiceUrl", void 0), c(this, "privacyPolicyUrl", void 0), c(this, "isDiscoverable", void 0), c(this, "customInstallUrl", void 0), c(this, "installParams", void 0), c(this, "directoryEntry", void 0), c(this, "categories", void 0), c(this, "linkedGames", void 0), this.overlay = null != (t = e.overlay) && t, this.overlayWarn = null != (n = e.overlayWarn) && n, this.overlayCompatibilityHook = null != (i = e.overlayCompatibilityHook) && i, this.overlayMethods = null != (o = e.overlayMethods) ? o : r.e.DEFAULT, this.hook = null == (a = e.hook) || a, this.aliases = null != (s = e.aliases) ? s : [], this.publishers = null != (l = e.publishers) ? l : [], this.developers = null != (u = e.developers) ? u : [], this.storeListingSkuId = e.storeListingSkuId, this.guildId = e.guildId, this.guild = e.guild, this.executables = (null != (d = e.executables) ? d : []).map(p), this.hashes = null != (f = e.hashes) ? f : [], this.eulaId = e.eulaId, this.slug = e.slug, this.flags = null != (_ = e.flags) ? _ : 0, this.tags = null != (h = e.tags) ? h : [], this.maxParticipants = e.maxParticipants, this.embeddedActivityConfig = null != (m = e.embedded_activity_config) ? m : e.embeddedActivityConfig, this.team = e.team, this.integrationTypesConfig = e.integrationTypesConfig, this.storefront_available = e.storefront_available, this.termsOfServiceUrl = e.termsOfServiceUrl, this.privacyPolicyUrl = e.privacyPolicyUrl, this.isDiscoverable = null != (g = e.is_discoverable) ? g : e.isDiscoverable, this.customInstallUrl = null != (E = e.custom_install_url) ? E : e.customInstallUrl, this.installParams = null != (b = e.install_params) ? b : e.installParams, this.directoryEntry = null != (y = e.directory_entry) ? y : e.directoryEntry, this.categories = e.categories, this.linkedGames = null != (O = e.linked_games) ? O : e.linkedGames
+    super(e), c(this, "overlay", true), c(this, "overlayWarn", true), c(this, "overlayCompatibilityHook", true), c(this, "overlayMethods", true), c(this, "hook", true), c(this, "aliases", true), c(this, "publishers", true), c(this, "developers", true), c(this, "storeListingSkuId", true), c(this, "guildId", true), c(this, "guild", true), c(this, "executables", true), c(this, "hashes", true), c(this, "eulaId", true), c(this, "slug", true), c(this, "flags", true), c(this, "maxParticipants", true), c(this, "tags", true), c(this, "embeddedActivityConfig", true), c(this, "team", true), c(this, "integrationTypesConfig", true), c(this, "storefront_available", true), c(this, "termsOfServiceUrl", true), c(this, "privacyPolicyUrl", true), c(this, "isDiscoverable", true), c(this, "customInstallUrl", true), c(this, "installParams", true), c(this, "directoryEntry", true), c(this, "categories", true), c(this, "linkedGames", true), this.overlay = null != (t = e.overlay) && t, this.overlayWarn = null != (n = e.overlayWarn) && n, this.overlayCompatibilityHook = null != (i = e.overlayCompatibilityHook) && i, this.overlayMethods = null != (o = e.overlayMethods) ? o : r.e.DEFAULT, this.hook = null == (a = e.hook) || a, this.aliases = null != (s = e.aliases) ? s : [], this.publishers = null != (l = e.publishers) ? l : [], this.developers = null != (u = e.developers) ? u : [], this.storeListingSkuId = e.storeListingSkuId, this.guildId = e.guildId, this.guild = e.guild, this.executables = (null != (d = e.executables) ? d : []).map(p), this.hashes = null != (f = e.hashes) ? f : [], this.eulaId = e.eulaId, this.slug = e.slug, this.flags = null != (_ = e.flags) ? _ : 0, this.tags = null != (h = e.tags) ? h : [], this.maxParticipants = e.maxParticipants, this.embeddedActivityConfig = null != (m = e.embedded_activity_config) ? m : e.embeddedActivityConfig, this.team = e.team, this.integrationTypesConfig = e.integrationTypesConfig, this.storefront_available = e.storefront_available, this.termsOfServiceUrl = e.termsOfServiceUrl, this.privacyPolicyUrl = e.privacyPolicyUrl, this.isDiscoverable = null != (g = e.is_discoverable) ? g : e.isDiscoverable, this.customInstallUrl = null != (E = e.custom_install_url) ? E : e.customInstallUrl, this.installParams = null != (b = e.install_params) ? b : e.installParams, this.directoryEntry = null != (y = e.directory_entry) ? y : e.directoryEntry, this.categories = e.categories, this.linkedGames = null != (O = e.linked_games) ? O : e.linkedGames
   }
 }

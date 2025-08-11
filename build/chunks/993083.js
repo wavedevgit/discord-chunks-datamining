@@ -1,24 +1,25 @@
 /** Chunk was on web.js **/
+/** chunk id: 993083, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-var r = n(621796),
-  i = n(172367),
-  o = n(147521),
-  a = n(574369),
-  s = n(805797),
-  l = n(169774),
-  c = n(352582),
-  u = n(476363),
-  d = n(963782),
-  f = n(904112),
-  _ = n(727813),
-  p = n(599552),
-  h = n(544611),
-  m = n(803068),
-  g = n(561099),
-  E = n(655e3),
-  b = n(920267),
-  y = o.isOptionKeyCommand,
-  O = l.isBrowser("Chrome");
+var Chunk621796 = require("./621796.js"),
+  Chunk172367 = require("./172367.js"),
+  Chunk147521 = require("./147521.js"),
+  Chunk574369 = require("./574369.js"),
+  Chunk805797 = require("./805797.js"),
+  Chunk169774 = require("./169774.js"),
+  Chunk352582 = require("./352582.js"),
+  Chunk476363 = require("./476363.js"),
+  Chunk963782 = require("./963782.js"),
+  Chunk904112 = require("./904112.js"),
+  Chunk727813 = require("./727813.js"),
+  Chunk599552 = require("./599552.js"),
+  Chunk544611 = require("./544611.js"),
+  Chunk803068 = require("./803068.js"),
+  Chunk561099 = require("./561099.js"),
+  Chunk655000 = require("./655000.js"),
+  Chunk920267 = require("./920267.js"),
+  y = Chunk147521.isOptionKeyCommand,
+  O = Chunk169774.isBrowser("Chrome");
 
 function v(e, t, n) {
   switch (e) {
@@ -50,13 +51,13 @@ function v(e, t, n) {
       return t
   }
 }
-e.exports = function(e, t) {
+module.exports = function(e, t) {
   var n = t.which,
     o = e._latestEditorState;
 
   function s(n) {
     var r = e.props[n];
-    return !!r && (r(t), !0)
+    return !!r && (r(t), true)
   }
   switch (n) {
     case a.RETURN:

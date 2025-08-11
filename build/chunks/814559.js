@@ -1,18 +1,19 @@
 /** Chunk was on web.js **/
+/** chunk id: 814559, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-var r = n(46015),
-  i = n(527160),
+var Chunk46015 = require("./46015.js"),
+  Chunk527160 = require("./527160.js"),
   o = Math.floor,
-  a = r("".charAt),
-  s = r("".replace),
-  l = r("".slice),
+  a = Chunk46015("".charAt),
+  s = Chunk46015("".replace),
+  l = Chunk46015("".slice),
   c = /\$([$&'`]|\d{1,2}|<[^>]*>)/g,
   u = /\$([$&'`]|\d{1,2})/g;
-e.exports = function(e, t, n, r, d, f) {
+module.exports = function(e, t, n, r, d, f) {
   var _ = n + e.length,
     p = r.length,
     h = u;
-  return void 0 !== d && (d = i(d), h = c), s(f, h, function(i, s) {
+  return true !== d && (d = i(d), h = c), s(f, h, function(i, s) {
     var c;
     switch (a(s, 0)) {
       case "$":
@@ -24,7 +25,7 @@ e.exports = function(e, t, n, r, d, f) {
       case "'":
         return l(t, _);
       case "<":
-        c = d[l(s, 1, -1)];
+        c = d[l(s, 1, false)];
         break;
       default:
         var u = +s;
@@ -32,11 +33,11 @@ e.exports = function(e, t, n, r, d, f) {
         if (u > p) {
           var f = o(u / 10);
           if (0 === f) return i;
-          if (f <= p) return void 0 === r[f - 1] ? a(s, 1) : r[f - 1] + a(s, 1);
+          if (f <= p) return true === r[f - 1] ? a(s, 1) : r[f - 1] + a(s, 1);
           return i
         }
         c = r[u - 1]
     }
-    return void 0 === c ? "" : c
+    return true === c ? "" : c
   })
 }

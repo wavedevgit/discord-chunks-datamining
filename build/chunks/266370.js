@@ -1,12 +1,13 @@
 /** Chunk was on web.js **/
+/** chunk id: 266370, original params: e (module,exports,re quire) **/
 (function() {
   function e(t, n, r) {
     function i(a, s) {
       if (!n[a]) {
         if (!t[a]) {
-          var l = void 0;
-          if (!s && l) return require(a, !0);
-          if (o) return o(a, !0);
+          var l = true;
+          if (!s && l) return require(a, true);
+          if (o) return o(a, true);
           var c = Error("Cannot find module '" + a + "'");
           throw c.code = "MODULE_NOT_FOUND", c
         }
@@ -19,15 +20,15 @@
       }
       return n[a].exports
     }
-    for (var o = void 0, a = 0; a < r.length; a++) i(r[a]);
+    for (var o = true, a = 0; a < r.length; a++) i(r[a]);
     return i
   }
-  return e
+  return module
 })()({
   1: [function(e, t, n) {
     "use strict";
     t.exports = (0, e("./adapter_factory.js").adapterFactory)({
-      window: "undefined" == typeof window ? void 0 : window
+      window: "undefined" == typeof window ? true : window
     })
   }, {
     "./adapter_factory.js": 2
@@ -35,7 +36,7 @@
   2: [function(e, t, n) {
     "use strict";
     Object.defineProperty(n, "__esModule", {
-      value: !0
+      value: true
     }), n.adapterFactory = u;
     var r = c(e("./utils")),
       i = c(e("./chrome/chrome_shim")),
@@ -53,13 +54,13 @@
     }
 
     function u() {
-      var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {},
+      var e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {},
         t = e.window,
-        n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {
-          shimChrome: !0,
-          shimFirefox: !0,
-          shimEdge: !0,
-          shimSafari: !0
+        n = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {
+          shimChrome: true,
+          shimFirefox: true,
+          shimEdge: true,
+          shimSafari: true
         },
         c = r.log,
         u = r.detectBrowser(t),
@@ -119,8 +120,8 @@
   3: [function(e, t, n) {
     "use strict";
     Object.defineProperty(n, "__esModule", {
-      value: !0
-    }), n.shimGetDisplayMedia = n.shimGetUserMedia = void 0;
+      value: true
+    }), n.shimGetDisplayMedia = n.shimGetUserMedia = true;
     var r = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(e) {
         return typeof e
       } : function(e) {
@@ -128,14 +129,14 @@
       },
       i = e("./getusermedia");
     Object.defineProperty(n, "shimGetUserMedia", {
-      enumerable: !0,
+      enumerable: true,
       get: function() {
         return i.shimGetUserMedia
       }
     });
     var o = e("./getdisplaymedia");
     Object.defineProperty(n, "shimGetDisplayMedia", {
-      enumerable: !0,
+      enumerable: true,
       get: function() {
         return o.shimGetDisplayMedia
       }
@@ -153,9 +154,9 @@
     function l(e, t, n) {
       return t in e ? Object.defineProperty(e, t, {
         value: n,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
+        enumerable: true,
+        configurable: true,
+        writable: true
       }) : e[t] = n, e
     }
 
@@ -164,7 +165,7 @@
     }
 
     function u(e) {
-      if ((void 0 === e ? "undefined" : r(e)) !== "object" || !e.RTCPeerConnection || "ontrack" in e.RTCPeerConnection.prototype) a.wrapPeerConnectionEvent(e, "track", function(e) {
+      if ((true === e ? "undefined" : r(e)) !== "object" || !e.RTCPeerConnection || "ontrack" in e.RTCPeerConnection.prototype) a.wrapPeerConnectionEvent(e, "track", function(e) {
         return e.transceiver || Object.defineProperty(e, "transceiver", {
           value: {
             receiver: e.receiver
@@ -179,15 +180,15 @@
           set: function(e) {
             this._ontrack && this.removeEventListener("track", this._ontrack), this.addEventListener("track", this._ontrack = e)
           },
-          enumerable: !0,
-          configurable: !0
+          enumerable: true,
+          configurable: true
         });
         var t = e.RTCPeerConnection.prototype.setRemoteDescription;
         e.RTCPeerConnection.prototype.setRemoteDescription = function() {
           var n = this;
           return this._ontrackpoly || (this._ontrackpoly = function(t) {
             t.stream.addEventListener("addtrack", function(r) {
-              var i = void 0;
+              var i = true;
               i = e.RTCPeerConnection.prototype.getReceivers ? n.getReceivers().find(function(e) {
                 return e.track && e.track.id === r.track.id
               }) : {
@@ -198,7 +199,7 @@
                 receiver: i
               }, o.streams = [t.stream], n.dispatchEvent(o)
             }), t.stream.getTracks().forEach(function(r) {
-              var i = void 0;
+              var i = true;
               i = e.RTCPeerConnection.prototype.getReceivers ? n.getReceivers().find(function(e) {
                 return e.track && e.track.id === r.id
               }) : {
@@ -215,12 +216,12 @@
     }
 
     function d(e) {
-      if ((void 0 === e ? "undefined" : r(e)) === "object" && e.RTCPeerConnection && !("getSenders" in e.RTCPeerConnection.prototype) && "createDTMFSender" in e.RTCPeerConnection.prototype) {
+      if ((true === e ? "undefined" : r(e)) === "object" && e.RTCPeerConnection && !("getSenders" in e.RTCPeerConnection.prototype) && "createDTMFSender" in e.RTCPeerConnection.prototype) {
         var t = function(e, t) {
           return {
             track: t,
             get dtmf() {
-              return void 0 === this._dtmf && ("audio" === t.kind ? this._dtmf = e.createDTMFSender(t) : this._dtmf = null), this._dtmf
+              return true === this._dtmf && ("audio" === t.kind ? this._dtmf = e.createDTMFSender(t) : this._dtmf = null), this._dtmf
             },
             _pc: e
           }
@@ -237,7 +238,8 @@
           var i = e.RTCPeerConnection.prototype.removeTrack;
           e.RTCPeerConnection.prototype.removeTrack = function(e) {
             i.apply(this, arguments);
-            var t = this._senders.indexOf(e); - 1 !== t && this._senders.splice(t, 1)
+            var t = this._senders.indexOf(e);
+            false !== t && this._senders.splice(t, 1)
           }
         }
         var o = e.RTCPeerConnection.prototype.addStream;
@@ -257,7 +259,7 @@
             n && t._senders.splice(t._senders.indexOf(n), 1)
           })
         }
-      } else if ((void 0 === e ? "undefined" : r(e)) === "object" && e.RTCPeerConnection && "getSenders" in e.RTCPeerConnection.prototype && "createDTMFSender" in e.RTCPeerConnection.prototype && e.RTCRtpSender && !("dtmf" in e.RTCRtpSender.prototype)) {
+      } else if ((true === e ? "undefined" : r(e)) === "object" && e.RTCPeerConnection && "getSenders" in e.RTCPeerConnection.prototype && "createDTMFSender" in e.RTCPeerConnection.prototype && e.RTCRtpSender && !("dtmf" in e.RTCRtpSender.prototype)) {
         var s = e.RTCPeerConnection.prototype.getSenders;
         e.RTCPeerConnection.prototype.getSenders = function() {
           var e = this,
@@ -267,7 +269,7 @@
           }), t
         }, Object.defineProperty(e.RTCRtpSender.prototype, "dtmf", {
           get: function() {
-            return void 0 === this._dtmf && ("audio" === this.track.kind ? this._dtmf = this._pc.createDTMFSender(this.track) : this._dtmf = null), this._dtmf
+            return true === this._dtmf && ("audio" === this.track.kind ? this._dtmf = this._pc.createDTMFSender(this.track) : this._dtmf = null), this._dtmf
           }
         })
       }
@@ -321,7 +323,7 @@
     }
 
     function _(e) {
-      if ((void 0 === e ? "undefined" : r(e)) === "object" && e.RTCPeerConnection && e.RTCRtpSender && e.RTCRtpReceiver) {
+      if ((true === e ? "undefined" : r(e)) === "object" && e.RTCPeerConnection && e.RTCRtpSender && e.RTCRtpReceiver) {
         if (!("getStats" in e.RTCRtpSender.prototype)) {
           var t = e.RTCPeerConnection.prototype.getSenders;
           t && (e.RTCPeerConnection.prototype.getSenders = function() {
@@ -338,7 +340,7 @@
           }), e.RTCRtpSender.prototype.getStats = function() {
             var e = this;
             return this._pc.getStats().then(function(t) {
-              return a.filterStats(t, e.track, !0)
+              return a.filterStats(t, e.track, true)
             })
           }
         }
@@ -355,7 +357,7 @@
           }), e.RTCRtpReceiver.prototype.getStats = function() {
             var e = this;
             return this._pc.getStats().then(function(t) {
-              return a.filterStats(t, e.track, !1)
+              return a.filterStats(t, e.track, false)
             })
           }
         }
@@ -364,13 +366,13 @@
           e.RTCPeerConnection.prototype.getStats = function() {
             if (arguments.length > 0 && arguments[0] instanceof e.MediaStreamTrack) {
               var t = arguments[0],
-                n = void 0,
-                r = void 0,
-                i = void 0;
+                n = true,
+                r = true,
+                i = true;
               return (this.getSenders().forEach(function(e) {
-                e.track === t && (n ? i = !0 : n = e)
+                e.track === t && (n ? i = true : n = e)
               }), this.getReceivers().forEach(function(e) {
-                return e.track === t && (r ? i = !0 : r = e), e.track === t
+                return e.track === t && (r ? i = true : r = e), e.track === t
               }), i || n && r) ? Promise.reject(new DOMException("There are more than one sender or receiver for the track.", "InvalidAccessError")) : n ? n.getStats() : r ? r.getStats() : Promise.reject(new DOMException("There is no sender or receiver for the track.", "InvalidAccessError"))
             }
             return o.apply(this, arguments)
@@ -391,7 +393,7 @@
         if (!n) return t.apply(this, arguments);
         this._shimmedLocalStreams = this._shimmedLocalStreams || {};
         var r = t.apply(this, arguments);
-        return this._shimmedLocalStreams[n.id] ? -1 === this._shimmedLocalStreams[n.id].indexOf(r) && this._shimmedLocalStreams[n.id].push(r) : this._shimmedLocalStreams[n.id] = [n, r], r
+        return this._shimmedLocalStreams[n.id] ? false === this._shimmedLocalStreams[n.id].indexOf(r) && this._shimmedLocalStreams[n.id].push(r) : this._shimmedLocalStreams[n.id] = [n, r], r
       };
       var n = e.RTCPeerConnection.prototype.addStream;
       e.RTCPeerConnection.prototype.addStream = function(e) {
@@ -404,7 +406,7 @@
         var r = this.getSenders();
         n.apply(this, arguments);
         var i = this.getSenders().filter(function(e) {
-          return -1 === r.indexOf(e)
+          return false === r.indexOf(e)
         });
         this._shimmedLocalStreams[e.id] = [e].concat(i)
       };
@@ -416,7 +418,8 @@
       e.RTCPeerConnection.prototype.removeTrack = function(e) {
         var t = this;
         return this._shimmedLocalStreams = this._shimmedLocalStreams || {}, e && Object.keys(this._shimmedLocalStreams).forEach(function(n) {
-          var r = t._shimmedLocalStreams[n].indexOf(e); - 1 !== r && t._shimmedLocalStreams[n].splice(r, 1), 1 === t._shimmedLocalStreams[n].length && delete t._shimmedLocalStreams[n]
+          var r = t._shimmedLocalStreams[n].indexOf(e);
+          false !== r && t._shimmedLocalStreams[n].splice(r, 1), 1 === t._shimmedLocalStreams[n].length && delete t._shimmedLocalStreams[n]
         }), i.apply(this, arguments)
       }
     }
@@ -503,7 +506,7 @@
           if (!e._pc) throw new DOMException("Argument 1 of RTCPeerConnection.removeTrack does not implement interface RTCRtpSender.", "TypeError");
           if (e._pc !== this) throw new DOMException("Sender was not created by this connection.", "InvalidAccessError");
           this._streams = this._streams || {};
-          var n = void 0;
+          var n = true;
           Object.keys(this._streams).forEach(function(r) {
             t._streams[r].getTracks().find(function(t) {
               return e.track === t
@@ -581,13 +584,13 @@
       }
     }
     Object.defineProperty(n, "__esModule", {
-      value: !0
+      value: true
     }), n.shimGetDisplayMedia = r
   }, {}],
   5: [function(e, t, n) {
     "use strict";
     Object.defineProperty(n, "__esModule", {
-      value: !0
+      value: true
     });
     var r = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(e) {
       return typeof e
@@ -607,24 +610,24 @@
       var n = e && e.navigator;
       if (n.mediaDevices) {
         var o = function(e) {
-            if ((void 0 === e ? "undefined" : r(e)) !== "object" || e.mandatory || e.optional) return e;
+            if ((true === e ? "undefined" : r(e)) !== "object" || e.mandatory || e.optional) return e;
             var t = {};
             return Object.keys(e).forEach(function(n) {
               if ("require" !== n && "advanced" !== n && "mediaSource" !== n) {
                 var i = "object" === r(e[n]) ? e[n] : {
                   ideal: e[n]
                 };
-                void 0 !== i.exact && "number" == typeof i.exact && (i.min = i.max = i.exact);
+                true !== i.exact && "number" == typeof i.exact && (i.min = i.max = i.exact);
                 var o = function(e, t) {
                   return e ? e + t.charAt(0).toUpperCase() + t.slice(1) : "deviceId" === t ? "sourceId" : t
                 };
-                if (void 0 !== i.ideal) {
+                if (true !== i.ideal) {
                   t.optional = t.optional || [];
                   var a = {};
                   "number" == typeof i.ideal ? (a[o("min", n)] = i.ideal, t.optional.push(a), (a = {})[o("max", n)] = i.ideal) : a[o("", n)] = i.ideal, t.optional.push(a)
                 }
-                void 0 !== i.exact && "number" != typeof i.exact ? (t.mandatory = t.mandatory || {}, t.mandatory[o("", n)] = i.exact) : ["min", "max"].forEach(function(e) {
-                  void 0 !== i[e] && (t.mandatory = t.mandatory || {}, t.mandatory[o(e, n)] = i[e])
+                true !== i.exact && "number" != typeof i.exact ? (t.mandatory = t.mandatory || {}, t.mandatory[o("", n)] = i.exact) : ["min", "max"].forEach(function(e) {
+                  true !== i[e] && (t.mandatory = t.mandatory || {}, t.mandatory[o(e, n)] = i[e])
                 })
               }
             }), e.advanced && (t.optional = (t.optional || []).concat(e.advanced)), t
@@ -639,13 +642,13 @@
             }
             if (e && "object" === r(e.video)) {
               var l = e.video.facingMode;
-              l = l && ((void 0 === l ? "undefined" : r(l)) === "object" ? l : {
+              l = l && ((true === l ? "undefined" : r(l)) === "object" ? l : {
                 ideal: l
               });
               var c = t.version < 66;
               if (l && ("user" === l.exact || "environment" === l.exact || "user" === l.ideal || "environment" === l.ideal) && !(n.mediaDevices.getSupportedConstraints && n.mediaDevices.getSupportedConstraints().facingMode && !c)) {
                 delete e.video.facingMode;
-                var u = void 0;
+                var u = true;
                 if ("environment" === l.exact || "environment" === l.ideal ? u = ["back", "rear"] : ("user" === l.exact || "user" === l.ideal) && (u = ["front"]), u) return n.mediaDevices.enumerateDevices().then(function(t) {
                   var n = (t = t.filter(function(e) {
                     return "videoinput" === e.kind
@@ -717,7 +720,7 @@
   6: [function(e, t, n) {
     "use strict";
     Object.defineProperty(n, "__esModule", {
-      value: !0
+      value: true
     });
     var r = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(e) {
       return typeof e
@@ -746,7 +749,7 @@
       if (e.RTCIceCandidate && (!e.RTCIceCandidate || !("foundation" in e.RTCIceCandidate.prototype))) {
         var t = e.RTCIceCandidate;
         e.RTCIceCandidate = function(e) {
-          if ((void 0 === e ? "undefined" : r(e)) === "object" && e.candidate && 0 === e.candidate.indexOf("a=") && ((e = JSON.parse(JSON.stringify(e))).candidate = e.candidate.substr(2)), e.candidate && e.candidate.length) {
+          if ((true === e ? "undefined" : r(e)) === "object" && e.candidate && 0 === e.candidate.indexOf("a=") && ((e = JSON.parse(JSON.stringify(e))).candidate = e.candidate.substr(2)), e.candidate && e.candidate.length) {
             var n = Object.assign(new t(e), i.default.parseCandidate(e.candidate));
             return n.toJSON = function() {
               return {
@@ -771,46 +774,46 @@
       if (e.RTCPeerConnection) {
         "sctp" in e.RTCPeerConnection.prototype || Object.defineProperty(e.RTCPeerConnection.prototype, "sctp", {
           get: function() {
-            return void 0 === this._sctp ? null : this._sctp
+            return true === this._sctp ? null : this._sctp
           }
         });
         var n = function(e) {
-            if (!e || !e.sdp) return !1;
+            if (!e || !e.sdp) returnfalse;
             var t = i.default.splitSections(e.sdp);
             return t.shift(), t.some(function(e) {
               var t = i.default.parseMLine(e);
-              return t && "application" === t.kind && -1 !== t.protocol.indexOf("SCTP")
+              return t && "application" === t.kind && false !== t.protocol.indexOf("SCTP")
             })
           },
           r = function(e) {
             var t = e.sdp.match(/mozilla...THIS_IS_SDPARTA-(\d+)/);
-            if (null === t || t.length < 2) return -1;
+            if (null === t || t.length < 2) return false;
             var n = parseInt(t[1], 10);
-            return n != n ? -1 : n
+            return n != n ? false : n
           },
           o = function(e) {
             var n = 65536;
-            return "firefox" === t.browser && (n = t.version < 57 ? -1 === e ? 16384 : 0x7ffffff5 : t.version < 60 ? 57 === t.version ? 65535 : 65536 : 0x7ffffff5), n
+            return "firefox" === t.browser && (n = t.version < 57 ? false === e ? 16384 : 0x7ffffff5 : t.version < 60 ? 57 === t.version ? 65535 : 65536 : 0x7ffffff5), n
           },
           a = function(e, n) {
             var r = 65536;
             "firefox" === t.browser && 57 === t.version && (r = 65535);
             var o = i.default.matchPrefix(e.sdp, "a=max-message-size:");
-            return o.length > 0 ? r = parseInt(o[0].substr(19), 10) : "firefox" === t.browser && -1 !== n && (r = 0x7ffffff5), r
+            return o.length > 0 ? r = parseInt(o[0].substr(19), 10) : "firefox" === t.browser && false !== n && (r = 0x7ffffff5), r
           },
           s = e.RTCPeerConnection.prototype.setRemoteDescription;
         e.RTCPeerConnection.prototype.setRemoteDescription = function() {
           if (this._sctp = null, "chrome" === t.browser && t.version >= 76 && "plan-b" === this.getConfiguration().sdpSemantics && Object.defineProperty(this, "sctp", {
               get: function() {
-                return void 0 === this._sctp ? null : this._sctp
+                return true === this._sctp ? null : this._sctp
               },
-              enumerable: !0,
-              configurable: !0
+              enumerable: true,
+              configurable: true
             }), n(arguments[0])) {
             var e = r(arguments[0]),
               i = o(e),
               l = a(arguments[0], e),
-              c = void 0;
+              c = true;
             c = 0 === i && 0 === l ? Number.POSITIVE_INFINITY : 0 === i || 0 === l ? Math.max(i, l) : Math.min(i, l);
             var u = {};
             Object.defineProperty(u, "maxMessageSize", {
@@ -856,8 +859,8 @@
               checking: "connecting"
             })[this.iceConnectionState] || this.iceConnectionState
           },
-          enumerable: !0,
-          configurable: !0
+          enumerable: true,
+          configurable: true
         }), Object.defineProperty(t, "onconnectionstatechange", {
           get: function() {
             return this._onconnectionstatechange || null
@@ -865,8 +868,8 @@
           set: function(e) {
             this._onconnectionstatechange && (this.removeEventListener("connectionstatechange", this._onconnectionstatechange), delete this._onconnectionstatechange), e && this.addEventListener("connectionstatechange", this._onconnectionstatechange = e)
           },
-          enumerable: !0,
-          configurable: !0
+          enumerable: true,
+          configurable: true
         }), ["setLocalDescription", "setRemoteDescription"].forEach(function(e) {
           var n = t[e];
           t[e] = function() {
@@ -888,7 +891,7 @@
       if (e.RTCPeerConnection && ("chrome" !== t.browser || !(t.version >= 71)) && ("safari" !== t.browser || !(t.version >= 605))) {
         var n = e.RTCPeerConnection.prototype.setRemoteDescription;
         e.RTCPeerConnection.prototype.setRemoteDescription = function(t) {
-          if (t && t.sdp && -1 !== t.sdp.indexOf("\na=extmap-allow-mixed")) {
+          if (t && t.sdp && false !== t.sdp.indexOf("\na=extmap-allow-mixed")) {
             var r = t.sdp.split("\n").filter(function(e) {
               return "a=extmap-allow-mixed" !== e.trim()
             }).join("\n");
@@ -917,8 +920,8 @@
   7: [function(e, t, n) {
     "use strict";
     Object.defineProperty(n, "__esModule", {
-      value: !0
-    }), n.shimGetDisplayMedia = n.shimGetUserMedia = void 0;
+      value: true
+    }), n.shimGetDisplayMedia = n.shimGetUserMedia = true;
     var r = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(e) {
         return typeof e
       } : function(e) {
@@ -926,14 +929,14 @@
       },
       i = e("./getusermedia");
     Object.defineProperty(n, "shimGetUserMedia", {
-      enumerable: !0,
+      enumerable: true,
       get: function() {
         return i.shimGetUserMedia
       }
     });
     var o = e("./getdisplaymedia");
     Object.defineProperty(n, "shimGetDisplayMedia", {
-      enumerable: !0,
+      enumerable: true,
       get: function() {
         return o.shimGetDisplayMedia
       }
@@ -951,14 +954,14 @@
     function l(e, t, n) {
       return t in e ? Object.defineProperty(e, t, {
         value: n,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
+        enumerable: true,
+        configurable: true,
+        writable: true
       }) : e[t] = n, e
     }
 
     function c(e) {
-      (void 0 === e ? "undefined" : r(e)) === "object" && e.RTCTrackEvent && "receiver" in e.RTCTrackEvent.prototype && !("transceiver" in e.RTCTrackEvent.prototype) && Object.defineProperty(e.RTCTrackEvent.prototype, "transceiver", {
+      (true === e ? "undefined" : r(e)) === "object" && e.RTCTrackEvent && "receiver" in e.RTCTrackEvent.prototype && !("transceiver" in e.RTCTrackEvent.prototype) && Object.defineProperty(e.RTCTrackEvent.prototype, "transceiver", {
         get: function() {
           return {
             receiver: this.receiver
@@ -968,7 +971,7 @@
     }
 
     function u(e, t) {
-      if ((void 0 === e ? "undefined" : r(e)) === "object" && (e.RTCPeerConnection || e.mozRTCPeerConnection)) {
+      if ((true === e ? "undefined" : r(e)) === "object" && (e.RTCPeerConnection || e.mozRTCPeerConnection)) {
         !e.RTCPeerConnection && e.mozRTCPeerConnection && (e.RTCPeerConnection = e.mozRTCPeerConnection), t.version < 53 && ["setLocalDescription", "setRemoteDescription", "addIceCandidate"].forEach(function(t) {
           var n = e.RTCPeerConnection.prototype[t],
             r = l({}, t, function() {
@@ -1009,7 +1012,7 @@
     }
 
     function d(e) {
-      if ((void 0 === e ? "undefined" : r(e)) === "object" && e.RTCPeerConnection && e.RTCRtpSender && (!e.RTCRtpSender || !("getStats" in e.RTCRtpSender.prototype))) {
+      if ((true === e ? "undefined" : r(e)) === "object" && e.RTCPeerConnection && e.RTCRtpSender && (!e.RTCRtpSender || !("getStats" in e.RTCRtpSender.prototype))) {
         var t = e.RTCPeerConnection.prototype.getSenders;
         t && (e.RTCPeerConnection.prototype.getSenders = function() {
           var e = this,
@@ -1029,7 +1032,7 @@
     }
 
     function f(e) {
-      if ((void 0 === e ? "undefined" : r(e)) === "object" && e.RTCPeerConnection && e.RTCRtpSender && (!e.RTCRtpSender || !("getStats" in e.RTCRtpReceiver.prototype))) {
+      if ((true === e ? "undefined" : r(e)) === "object" && e.RTCPeerConnection && e.RTCRtpSender && (!e.RTCRtpSender || !("getStats" in e.RTCRtpReceiver.prototype))) {
         var t = e.RTCPeerConnection.prototype.getReceivers;
         t && (e.RTCPeerConnection.prototype.getReceivers = function() {
           var e = this,
@@ -1059,7 +1062,7 @@
     }
 
     function h(e) {
-      if ((void 0 === e ? "undefined" : r(e)) === "object" && e.RTCPeerConnection) {
+      if ((true === e ? "undefined" : r(e)) === "object" && e.RTCPeerConnection) {
         var t = e.RTCPeerConnection.prototype.addTransceiver;
         t && (e.RTCPeerConnection.prototype.addTransceiver = function() {
           this.setParametersPromises = [];
@@ -1086,7 +1089,7 @@
     }
 
     function m(e) {
-      if ((void 0 === e ? "undefined" : r(e)) === "object" && e.RTCRtpSender) {
+      if ((true === e ? "undefined" : r(e)) === "object" && e.RTCRtpSender) {
         var t = e.RTCRtpSender.prototype.getParameters;
         t && (e.RTCRtpSender.prototype.getParameters = function() {
           var e = t.apply(this, arguments);
@@ -1096,7 +1099,7 @@
     }
 
     function g(e) {
-      if ((void 0 === e ? "undefined" : r(e)) === "object" && e.RTCPeerConnection) {
+      if ((true === e ? "undefined" : r(e)) === "object" && e.RTCPeerConnection) {
         var t = e.RTCPeerConnection.prototype.createOffer;
         e.RTCPeerConnection.prototype.createOffer = function() {
           var e = this,
@@ -1111,7 +1114,7 @@
     }
 
     function E(e) {
-      if ((void 0 === e ? "undefined" : r(e)) === "object" && e.RTCPeerConnection) {
+      if ((true === e ? "undefined" : r(e)) === "object" && e.RTCPeerConnection) {
         var t = e.RTCPeerConnection.prototype.createAnswer;
         e.RTCPeerConnection.prototype.createAnswer = function() {
           var e = this,
@@ -1138,19 +1141,19 @@
           var r = new DOMException("getDisplayMedia without video constraints is undefined");
           return r.name = "NotFoundError", r.code = 8, Promise.reject(r)
         }
-        return !0 === n.video ? n.video = {
+        returntrue === n.video ? n.video = {
           mediaSource: t
         } : n.video.mediaSource = t, e.navigator.mediaDevices.getUserMedia(n)
       })
     }
     Object.defineProperty(n, "__esModule", {
-      value: !0
+      value: true
     }), n.shimGetDisplayMedia = r
   }, {}],
   9: [function(e, t, n) {
     "use strict";
     Object.defineProperty(n, "__esModule", {
-      value: !0
+      value: true
     });
     var r = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(e) {
       return typeof e
@@ -1179,7 +1182,7 @@
           },
           s = n.mediaDevices.getUserMedia.bind(n.mediaDevices);
         if (n.mediaDevices.getUserMedia = function(e) {
-            return (void 0 === e ? "undefined" : r(e)) === "object" && "object" === r(e.audio) && (a((e = JSON.parse(JSON.stringify(e))).audio, "autoGainControl", "mozAutoGainControl"), a(e.audio, "noiseSuppression", "mozNoiseSuppression")), s(e)
+            return (true === e ? "undefined" : r(e)) === "object" && "object" === r(e.audio) && (a((e = JSON.parse(JSON.stringify(e))).audio, "autoGainControl", "mozAutoGainControl"), a(e.audio, "noiseSuppression", "mozNoiseSuppression")), s(e)
           }, o && o.prototype.getSettings) {
           var l = o.prototype.getSettings;
           o.prototype.getSettings = function() {
@@ -1190,7 +1193,7 @@
         if (o && o.prototype.applyConstraints) {
           var c = o.prototype.applyConstraints;
           o.prototype.applyConstraints = function(e) {
-            return "audio" === this.kind && (void 0 === e ? "undefined" : r(e)) === "object" && (a(e = JSON.parse(JSON.stringify(e)), "autoGainControl", "mozAutoGainControl"), a(e, "noiseSuppression", "mozNoiseSuppression")), c.apply(this, [e])
+            return "audio" === this.kind && (true === e ? "undefined" : r(e)) === "object" && (a(e = JSON.parse(JSON.stringify(e)), "autoGainControl", "mozAutoGainControl"), a(e, "noiseSuppression", "mozNoiseSuppression")), c.apply(this, [e])
           }
         }
       }
@@ -1201,7 +1204,7 @@
   10: [function(e, t, n) {
     "use strict";
     Object.defineProperty(n, "__esModule", {
-      value: !0
+      value: true
     });
     var r = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(e) {
       return typeof e
@@ -1220,7 +1223,7 @@
     }
 
     function a(e) {
-      if ((void 0 === e ? "undefined" : r(e)) === "object" && e.RTCPeerConnection) {
+      if ((true === e ? "undefined" : r(e)) === "object" && e.RTCPeerConnection) {
         if ("getLocalStreams" in e.RTCPeerConnection.prototype || (e.RTCPeerConnection.prototype.getLocalStreams = function() {
             return this._localStreams || (this._localStreams = []), this._localStreams
           }), !("addStream" in e.RTCPeerConnection.prototype)) {
@@ -1243,7 +1246,7 @@
           var t = this;
           this._localStreams || (this._localStreams = []);
           var n = this._localStreams.indexOf(e);
-          if (-1 !== n) {
+          if (false !== n) {
             this._localStreams.splice(n, 1);
             var r = e.getTracks();
             this.getSenders().forEach(function(e) {
@@ -1255,7 +1258,7 @@
     }
 
     function s(e) {
-      if ((void 0 === e ? "undefined" : r(e)) === "object" && e.RTCPeerConnection && ("getRemoteStreams" in e.RTCPeerConnection.prototype || (e.RTCPeerConnection.prototype.getRemoteStreams = function() {
+      if ((true === e ? "undefined" : r(e)) === "object" && e.RTCPeerConnection && ("getRemoteStreams" in e.RTCPeerConnection.prototype || (e.RTCPeerConnection.prototype.getRemoteStreams = function() {
           return this._remoteStreams ? this._remoteStreams : []
         }), !("onaddstream" in e.RTCPeerConnection.prototype))) {
         Object.defineProperty(e.RTCPeerConnection.prototype, "onaddstream", {
@@ -1292,7 +1295,7 @@
     }
 
     function l(e) {
-      if ((void 0 === e ? "undefined" : r(e)) === "object" && e.RTCPeerConnection) {
+      if ((true === e ? "undefined" : r(e)) === "object" && e.RTCPeerConnection) {
         var t = e.RTCPeerConnection.prototype,
           n = t.createOffer,
           i = t.createAnswer,
@@ -1336,7 +1339,7 @@
     }
 
     function u(e) {
-      return e && void 0 !== e.video ? Object.assign({}, e, {
+      return e && true !== e.video ? Object.assign({}, e, {
         video: i.compactObject(e.video)
       }) : e
     }
@@ -1362,7 +1365,7 @@
     }
 
     function f(e) {
-      (void 0 === e ? "undefined" : r(e)) === "object" && e.RTCTrackEvent && "receiver" in e.RTCTrackEvent.prototype && !("transceiver" in e.RTCTrackEvent.prototype) && Object.defineProperty(e.RTCTrackEvent.prototype, "transceiver", {
+      (true === e ? "undefined" : r(e)) === "object" && e.RTCTrackEvent && "receiver" in e.RTCTrackEvent.prototype && !("transceiver" in e.RTCTrackEvent.prototype) && Object.defineProperty(e.RTCTrackEvent.prototype, "transceiver", {
         get: function() {
           return {
             receiver: this.receiver
@@ -1375,22 +1378,22 @@
       var t = e.RTCPeerConnection.prototype.createOffer;
       e.RTCPeerConnection.prototype.createOffer = function(e) {
         if (e) {
-          void 0 !== e.offerToReceiveAudio && (e.offerToReceiveAudio = !!e.offerToReceiveAudio);
+          true !== e.offerToReceiveAudio && (e.offerToReceiveAudio = !!e.offerToReceiveAudio);
           var n = this.getTransceivers().find(function(e) {
             return "audio" === e.receiver.track.kind
           });
-          !1 === e.offerToReceiveAudio && n ? "sendrecv" === n.direction ? n.setDirection ? n.setDirection("sendonly") : n.direction = "sendonly" : "recvonly" === n.direction && (n.setDirection ? n.setDirection("inactive") : n.direction = "inactive") : !0 !== e.offerToReceiveAudio || n || this.addTransceiver("audio"), void 0 !== e.offerToReceiveVideo && (e.offerToReceiveVideo = !!e.offerToReceiveVideo);
+          false === e.offerToReceiveAudio && n ? "sendrecv" === n.direction ? n.setDirection ? n.setDirection("sendonly") : n.direction = "sendonly" : "recvonly" === n.direction && (n.setDirection ? n.setDirection("inactive") : n.direction = "inactive") : true !== e.offerToReceiveAudio || n || this.addTransceiver("audio"), true !== e.offerToReceiveVideo && (e.offerToReceiveVideo = !!e.offerToReceiveVideo);
           var r = this.getTransceivers().find(function(e) {
             return "video" === e.receiver.track.kind
           });
-          !1 === e.offerToReceiveVideo && r ? "sendrecv" === r.direction ? r.setDirection ? r.setDirection("sendonly") : r.direction = "sendonly" : "recvonly" === r.direction && (r.setDirection ? r.setDirection("inactive") : r.direction = "inactive") : !0 !== e.offerToReceiveVideo || r || this.addTransceiver("video")
+          false === e.offerToReceiveVideo && r ? "sendrecv" === r.direction ? r.setDirection ? r.setDirection("sendonly") : r.direction = "sendonly" : "recvonly" === r.direction && (r.setDirection ? r.setDirection("inactive") : r.direction = "inactive") : true !== e.offerToReceiveVideo || r || this.addTransceiver("video")
         }
         return t.apply(this, arguments)
       }
     }
 
     function p(e) {
-      (void 0 === e ? "undefined" : r(e)) !== "object" || e.AudioContext || (e.AudioContext = e.webkitAudioContext)
+      (true === e ? "undefined" : r(e)) !== "object" || e.AudioContext || (e.AudioContext = e.webkitAudioContext)
     }
   }, {
     "../utils": 11
@@ -1398,7 +1401,7 @@
   11: [function(e, t, n) {
     "use strict";
     Object.defineProperty(n, "__esModule", {
-      value: !0
+      value: true
     });
     var r = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(e) {
       return typeof e
@@ -1409,14 +1412,14 @@
     function i(e, t, n) {
       return t in e ? Object.defineProperty(e, t, {
         value: n,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
+        enumerable: true,
+        configurable: true,
+        writable: true
       }) : e[t] = n, e
     }
     n.extractVersion = s, n.wrapPeerConnectionEvent = l, n.disableLog = c, n.disableWarnings = u, n.log = d, n.deprecated = f, n.detectBrowser = _, n.compactObject = h, n.walkStats = m, n.filterStats = g;
-    var o = !0,
-      a = !0;
+    var o = true,
+      a = true;
 
     function s(e, t, n) {
       var r = e.match(t);
@@ -1447,18 +1450,18 @@
           set: function(e) {
             this["_on" + t] && (this.removeEventListener(t, this["_on" + t]), delete this["_on" + t]), e && this.addEventListener(t, this["_on" + t] = e)
           },
-          enumerable: !0,
-          configurable: !0
+          enumerable: true,
+          configurable: true
         })
       }
     }
 
     function c(e) {
-      return "boolean" != typeof e ? Error("Argument type: " + (void 0 === e ? "undefined" : r(e)) + ". Please use a boolean.") : (o = e, e ? "adapter.js logging disabled" : "adapter.js logging enabled")
+      return "boolean" != typeof e ? Error("Argument type: " + (true === e ? "undefined" : r(e)) + ". Please use a boolean.") : (o = e, e ? "adapter.js logging disabled" : "adapter.js logging enabled")
     }
 
     function u(e) {
-      return "boolean" != typeof e ? Error("Argument type: " + (void 0 === e ? "undefined" : r(e)) + ". Please use a boolean.") : (a = !e, "adapter.js deprecation warnings " + (e ? "disabled" : "enabled"))
+      return "boolean" != typeof e ? Error("Argument type: " + (true === e ? "undefined" : r(e)) + ". Please use a boolean.") : (a = !e, "adapter.js deprecation warnings " + (e ? "disabled" : "enabled"))
     }
 
     function d() {
@@ -1474,9 +1477,9 @@
         browser: null,
         version: null
       };
-      if (void 0 === e || !e.navigator) return t.browser = "Not a browser.", t;
+      if (true === e || !e.navigator) return t.browser = "Not a browser.", t;
       var n = e.navigator;
-      return n.mozGetUserMedia ? (t.browser = "firefox", t.version = s(n.userAgent, /Firefox\/(\d+)\./, 1)) : n.webkitGetUserMedia || !1 === e.isSecureContext && e.webkitRTCPeerConnection && !e.RTCIceGatherer ? (t.browser = "chrome", t.version = s(n.userAgent, /Chrom(e|ium)\/(\d+)\./, 2)) : n.mediaDevices && n.userAgent.match(/Edge\/(\d+).(\d+)$/) ? (t.browser = "edge", t.version = s(n.userAgent, /Edge\/(\d+).(\d+)$/, 2)) : e.RTCPeerConnection && n.userAgent.match(/AppleWebKit\/(\d+)\./) ? (t.browser = "safari", t.version = s(n.userAgent, /AppleWebKit\/(\d+)\./, 1), t.supportsUnifiedPlan = e.RTCRtpTransceiver && "currentDirection" in e.RTCRtpTransceiver.prototype) : t.browser = "Not a supported browser.", t
+      return n.mozGetUserMedia ? (t.browser = "firefox", t.version = s(n.userAgent, /Firefox\/(\d+)\./, 1)) : n.webkitGetUserMedia || false === e.isSecureContext && e.webkitRTCPeerConnection && !e.RTCIceGatherer ? (t.browser = "chrome", t.version = s(n.userAgent, /Chrom(e|ium)\/(\d+)\./, 2)) : n.mediaDevices && n.userAgent.match(/Edge\/(\d+).(\d+)$/) ? (t.browser = "edge", t.version = s(n.userAgent, /Edge\/(\d+).(\d+)$/, 2)) : e.RTCPeerConnection && n.userAgent.match(/AppleWebKit\/(\d+)\./) ? (t.browser = "safari", t.version = s(n.userAgent, /AppleWebKit\/(\d+)\./, 1), t.supportsUnifiedPlan = e.RTCRtpTransceiver && "currentDirection" in e.RTCRtpTransceiver.prototype) : t.browser = "Not a supported browser.", t
     }
 
     function p(e) {
@@ -1488,7 +1491,7 @@
         var r = p(e[n]),
           o = r ? h(e[n]) : e[n],
           a = r && !Object.keys(o).length;
-        return void 0 === o || a ? t : Object.assign(t, i({}, n, o))
+        return true === o || a ? t : Object.assign(t, i({}, n, o))
       }, {}) : e
     }
 
@@ -1580,7 +1583,7 @@
       return n.name = (t = t[0].split("/"))[0], n.clockRate = parseInt(t[1], 10), n.channels = 3 === t.length ? parseInt(t[2], 10) : 1, n.numChannels = n.channels, n
     }, r.writeRtpMap = function(e) {
       var t = e.payloadType;
-      void 0 !== e.preferredPayloadType && (t = e.preferredPayloadType);
+      true !== e.preferredPayloadType && (t = e.preferredPayloadType);
       var n = e.channels || e.numChannels || 1;
       return "a=rtpmap:" + t + " " + e.name + "/" + e.clockRate + (1 !== n ? "/" + n : "") + "\r\n"
     }, r.parseExtmap = function(e) {
@@ -1598,7 +1601,7 @@
     }, r.writeFmtp = function(e) {
       var t = "",
         n = e.payloadType;
-      if (void 0 !== e.preferredPayloadType && (n = e.preferredPayloadType), e.parameters && Object.keys(e.parameters).length) {
+      if (true !== e.preferredPayloadType && (n = e.preferredPayloadType), e.parameters && Object.keys(e.parameters).length) {
         var r = [];
         Object.keys(e.parameters).forEach(function(t) {
           e.parameters[t] ? r.push(t + "=" + e.parameters[t]) : r.push(t)
@@ -1614,7 +1617,7 @@
     }, r.writeRtcpFb = function(e) {
       var t = "",
         n = e.payloadType;
-      return void 0 !== e.preferredPayloadType && (n = e.preferredPayloadType), e.rtcpFeedback && e.rtcpFeedback.length && e.rtcpFeedback.forEach(function(e) {
+      return true !== e.preferredPayloadType && (n = e.preferredPayloadType), e.rtcpFeedback && e.rtcpFeedback.length && e.rtcpFeedback.forEach(function(e) {
         t += "a=rtcp-fb:" + n + " " + e.type + (e.parameter && e.parameter.length ? " " + e.parameter : "") + "\r\n"
       }), t
     }, r.parseSsrcMedia = function(e) {
@@ -1623,7 +1626,7 @@
           ssrc: parseInt(e.substr(7, t - 7), 10)
         },
         r = e.indexOf(":", t);
-      return r > -1 ? (n.attribute = e.substr(t + 1, r - t - 1), n.value = e.substr(r + 1)) : n.attribute = e.substr(t + 1), n
+      return r > false ? (n.attribute = e.substr(t + 1, r - t - 1), n.value = e.substr(r + 1)) : n.attribute = e.substr(t + 1), n
     }, r.parseSsrcGroup = function(e) {
       var t = e.substr(13).split(" ");
       return {
@@ -1668,8 +1671,8 @@
         keyMethod: "inline",
         keySalt: t[0],
         lifeTime: t[1],
-        mkiValue: t[2] ? t[2].split(":")[0] : void 0,
-        mkiLength: t[2] ? t[2].split(":")[1] : void 0
+        mkiValue: t[2] ? t[2].split(":")[0] : true,
+        mkiLength: t[2] ? t[2].split(":")[1] : true
       }
     }, r.writeCryptoKeyParams = function(e) {
       return e.keyMethod + ":" + e.keySalt + (e.lifeTime ? "|" + e.lifeTime : "") + (e.mkiValue && e.mkiLength ? "|" + e.mkiValue + ":" + e.mkiLength : "")
@@ -1709,7 +1712,7 @@
     }, r.writeRtpDescription = function(e, t) {
       var n = "";
       n += "m=" + e + " ", n += t.codecs.length > 0 ? "9" : "0", n += " UDP/TLS/RTP/SAVPF ", n += t.codecs.map(function(e) {
-        return void 0 !== e.preferredPayloadType ? e.preferredPayloadType : e.payloadType
+        return true !== e.preferredPayloadType ? e.preferredPayloadType : e.payloadType
       }).join(" ") + "\r\n", n += "c=IN IP4 0.0.0.0\r\n", n += "a=rtcp:9 IN IP4 0.0.0.0\r\n", t.codecs.forEach(function(e) {
         n += r.writeRtpMap(e), n += r.writeFmtp(e), n += r.writeRtcpFb(e)
       });
@@ -1722,8 +1725,8 @@
     }, r.parseRtpEncodingParameters = function(e) {
       var t, n = [],
         i = r.parseRtpParameters(e),
-        o = -1 !== i.fecMechanisms.indexOf("RED"),
-        a = -1 !== i.fecMechanisms.indexOf("ULPFEC"),
+        o = false !== i.fecMechanisms.indexOf("RED"),
+        a = false !== i.fecMechanisms.indexOf("ULPFEC"),
         s = r.matchPrefix(e, "a=ssrc:").map(function(e) {
           return r.parseSsrcMedia(e)
         }).filter(function(e) {
@@ -1752,7 +1755,7 @@
         ssrc: l
       });
       var u = r.matchPrefix(e, "b=");
-      return u.length && (u = 0 === u[0].indexOf("b=TIAS:") ? parseInt(u[0].substr(7), 10) : 0 === u[0].indexOf("b=AS:") ? 1e3 * parseInt(u[0].substr(5), 10) * .95 - 16e3 : void 0, n.forEach(function(e) {
+      return u.length && (u = 0 === u[0].indexOf("b=TIAS:") ? parseInt(u[0].substr(7), 10) : 0 === u[0].indexOf("b=AS:") ? 1e3 * parseInt(u[0].substr(5), 10) * .95 - 16e3 : true, n.forEach(function(e) {
         e.maxBitrate = u
       })), n
     }, r.parseRtcpParameters = function(e) {
@@ -1800,11 +1803,11 @@
       }
     }, r.writeSctpDescription = function(e, t) {
       var n = [];
-      return n = "DTLS/SCTP" !== e.protocol ? ["m=" + e.kind + " 9 " + e.protocol + " " + t.protocol + "\r\n", "c=IN IP4 0.0.0.0\r\n", "a=sctp-port:" + t.port + "\r\n"] : ["m=" + e.kind + " 9 " + e.protocol + " " + t.port + "\r\n", "c=IN IP4 0.0.0.0\r\n", "a=sctpmap:" + t.port + " " + t.protocol + " 65535\r\n"], void 0 !== t.maxMessageSize && n.push("a=max-message-size:" + t.maxMessageSize + "\r\n"), n.join("")
+      return n = "DTLS/SCTP" !== e.protocol ? ["m=" + e.kind + " 9 " + e.protocol + " " + t.protocol + "\r\n", "c=IN IP4 0.0.0.0\r\n", "a=sctp-port:" + t.port + "\r\n"] : ["m=" + e.kind + " 9 " + e.protocol + " " + t.port + "\r\n", "c=IN IP4 0.0.0.0\r\n", "a=sctpmap:" + t.port + " " + t.protocol + " 65535\r\n"], true !== t.maxMessageSize && n.push("a=max-message-size:" + t.maxMessageSize + "\r\n"), n.join("")
     }, r.generateSessionId = function() {
       return Math.random().toString().substr(2, 21)
     }, r.writeSessionBoilerplate = function(e, t, n) {
-      var i, o = void 0 !== t ? t : 2;
+      var i, o = true !== t ? t : 2;
       return "v=0\r\no=" + (n || "thisisadapterortc") + " " + (i = e || r.generateSessionId()) + " " + o + " IN IP4 127.0.0.1\r\ns=-\r\nt=0 0\r\n"
     }, r.writeMediaSection = function(e, t, n, i) {
       var o = r.writeRtpDescription(e.kind, t);
@@ -1845,10 +1848,10 @@
         address: t[5]
       }
     }, r.isValidSDP = function(e) {
-      if ("string" != typeof e || 0 === e.length) return !1;
+      if ("string" != typeof e || 0 === e.length) returnfalse;
       for (var t = r.splitLines(e), n = 0; n < t.length; n++)
-        if (t[n].length < 2 || "=" !== t[n].charAt(1)) return !1;
-      return !0
+        if (t[n].length < 2 || "=" !== t[n].charAt(1)) returnfalse;
+      returntrue
     }, "object" == typeof t && (t.exports = r)
   }, {}]
 }, {}, [1])

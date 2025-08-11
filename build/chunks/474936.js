@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 474936, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   $7: () => k,
   $8: () => eD,
   $X: () => eg,
@@ -106,19 +107,19 @@ n.d(t, {
   y7: () => g,
   ys: () => eG,
   zp: () => U
-}), n(388685);
-var r = n(314794),
-  i = n(981631),
-  o = n(185923),
-  a = n(388032),
+}), require("./388685.js");
+var Chunk314794 = require("./314794.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk185923 = require("./185923.js"),
+  Chunk388032 = require("./388032.jsx"),
   s = function(e) {
     return e[e.PREMIUM_TRIAL = 0] = "PREMIUM_TRIAL", e[e.PREMIUM_DISCOUNT = 1] = "PREMIUM_DISCOUNT", e
   }({}),
   l = function(e) {
     return e[e.TIER_1 = 1] = "TIER_1", e[e.TIER_2 = 2] = "TIER_2", e[e.TIER_0 = 3] = "TIER_0", e
   }({});
-let c = void 0,
-  u = void 0,
+let c = true,
+  u = true,
   d = [{
     value: null,
     label: "Non-Nitro"
@@ -167,17 +168,17 @@ let b = new Set(["978380692553465866", "1024422698568122368", "51165187173620121
     "978380684370378762": "978380692553465866",
     "521846918637420545": "511651871736201216",
     "521847234246082599": "511651880837840896",
-    "628379670982688768": void 0,
-    "590663762298667008": void 0,
-    "521842865731534868": void 0
+    "628379670982688768": true,
+    "590663762298667008": true,
+    "521842865731534868": true
   }),
   S = Object.freeze({
     "978380684370378762": "1024422698568122368",
     "521846918637420545": "511651876987469824",
     "521847234246082599": "511651885459963904",
-    "628379670982688768": void 0,
-    "590663762298667008": void 0,
-    "521842865731534868": void 0
+    "628379670982688768": true,
+    "590663762298667008": true,
+    "521842865731534868": true
   });
 var A = function(e) {
     return e[e.MONTH = 1] = "MONTH", e[e.YEAR = 2] = "YEAR", e[e.DAY = 3] = "DAY", e
@@ -430,74 +431,74 @@ let eT = Object.freeze({
   eR = 0x6400000,
   eP = 5,
   ew = {
-    [i.Eu4.NONE]: eP,
-    [i.Eu4.TIER_1]: 10,
-    [i.Eu4.TIER_2]: 15,
-    [i.Eu4.TIER_3]: 30
+    [Chunk981631.Eu4.NONE]: eP,
+    [Chunk981631.Eu4.TIER_1]: 10,
+    [Chunk981631.Eu4.TIER_2]: 15,
+    [Chunk981631.Eu4.TIER_3]: 30
   },
   eD = {
-    [i.Eu4.NONE]: ew[i.Eu4.NONE],
-    [i.Eu4.TIER_1]: ew[i.Eu4.NONE] + ew[i.Eu4.TIER_1],
-    [i.Eu4.TIER_2]: ew[i.Eu4.NONE] + ew[i.Eu4.TIER_1] + ew[i.Eu4.TIER_2],
-    [i.Eu4.TIER_3]: ew[i.Eu4.NONE] + ew[i.Eu4.TIER_1] + ew[i.Eu4.TIER_2] + ew[i.Eu4.TIER_3]
+    [Chunk981631.Eu4.NONE]: ew[Chunk981631.Eu4.NONE],
+    [Chunk981631.Eu4.TIER_1]: ew[Chunk981631.Eu4.NONE] + ew[Chunk981631.Eu4.TIER_1],
+    [Chunk981631.Eu4.TIER_2]: ew[Chunk981631.Eu4.NONE] + ew[Chunk981631.Eu4.TIER_1] + ew[Chunk981631.Eu4.TIER_2],
+    [Chunk981631.Eu4.TIER_3]: ew[Chunk981631.Eu4.NONE] + ew[Chunk981631.Eu4.TIER_1] + ew[Chunk981631.Eu4.TIER_2] + ew[Chunk981631.Eu4.TIER_3]
   },
   eL = {
-    [i.Eu4.NONE]: eb,
-    [i.Eu4.TIER_1]: 24,
-    [i.Eu4.TIER_2]: 36,
-    [i.Eu4.TIER_3]: 48
+    [Chunk981631.Eu4.NONE]: eb,
+    [Chunk981631.Eu4.TIER_1]: 24,
+    [Chunk981631.Eu4.TIER_2]: 36,
+    [Chunk981631.Eu4.TIER_3]: 48
   },
   ex = Object.freeze({
-    [i.Eu4.NONE]: {
+    [Chunk981631.Eu4.NONE]: {
       features: [],
       limits: {
-        emoji: o.xD,
-        bitrate: i.eWB,
-        fileSize: i.mBz,
+        emoji: Chunk185923.xD,
+        bitrate: Chunk981631.eWB,
+        fileSize: Chunk981631.mBz,
         screenShareQualityFramerate: 30,
         screenShareQualityResolution: "720p",
-        soundboardSounds: eL[i.Eu4.NONE],
-        stickers: eD[i.Eu4.NONE],
-        stageVideoUsers: i.B9o
+        soundboardSounds: eL[Chunk981631.Eu4.NONE],
+        stickers: eD[Chunk981631.Eu4.NONE],
+        stageVideoUsers: Chunk981631.B9o
       }
     },
-    [i.Eu4.TIER_1]: {
-      features: [i.oNc.INVITE_SPLASH, i.oNc.ANIMATED_ICON],
+    [Chunk981631.Eu4.TIER_1]: {
+      features: [Chunk981631.oNc.INVITE_SPLASH, Chunk981631.oNc.ANIMATED_ICON],
       limits: {
         emoji: 100,
         bitrate: 128e3,
-        fileSize: i.mBz,
+        fileSize: Chunk981631.mBz,
         screenShareQualityFramerate: 60,
         screenShareQualityResolution: "720p",
-        soundboardSounds: eL[i.Eu4.TIER_1],
-        stickers: eD[i.Eu4.TIER_1],
-        stageVideoUsers: i.B9o
+        soundboardSounds: eL[Chunk981631.Eu4.TIER_1],
+        stickers: eD[Chunk981631.Eu4.TIER_1],
+        stageVideoUsers: Chunk981631.B9o
       }
     },
-    [i.Eu4.TIER_2]: {
-      features: [i.oNc.INVITE_SPLASH, i.oNc.ANIMATED_ICON, i.oNc.BANNER, i.oNc.ROLE_ICONS],
+    [Chunk981631.Eu4.TIER_2]: {
+      features: [Chunk981631.oNc.INVITE_SPLASH, Chunk981631.oNc.ANIMATED_ICON, Chunk981631.oNc.BANNER, Chunk981631.oNc.ROLE_ICONS],
       limits: {
         emoji: 150,
         bitrate: 256e3,
         fileSize: eC,
         screenShareQualityFramerate: 60,
         screenShareQualityResolution: "1080p",
-        soundboardSounds: eL[i.Eu4.TIER_2],
-        stickers: eD[i.Eu4.TIER_2],
-        stageVideoUsers: i.eez
+        soundboardSounds: eL[Chunk981631.Eu4.TIER_2],
+        stickers: eD[Chunk981631.Eu4.TIER_2],
+        stageVideoUsers: Chunk981631.eez
       }
     },
-    [i.Eu4.TIER_3]: {
-      features: [i.oNc.INVITE_SPLASH, i.oNc.ANIMATED_ICON, i.oNc.BANNER, i.oNc.ANIMATED_BANNER, i.oNc.VANITY_URL, i.oNc.ROLE_ICONS],
+    [Chunk981631.Eu4.TIER_3]: {
+      features: [Chunk981631.oNc.INVITE_SPLASH, Chunk981631.oNc.ANIMATED_ICON, Chunk981631.oNc.BANNER, Chunk981631.oNc.ANIMATED_BANNER, Chunk981631.oNc.VANITY_URL, Chunk981631.oNc.ROLE_ICONS],
       limits: {
         emoji: 250,
         bitrate: 384e3,
         fileSize: eR,
         screenShareQualityFramerate: 60,
         screenShareQualityResolution: "1080p",
-        soundboardSounds: eL[i.Eu4.TIER_3],
-        stickers: eD[i.Eu4.TIER_3],
-        stageVideoUsers: i.RcX
+        soundboardSounds: eL[Chunk981631.Eu4.TIER_3],
+        stickers: eD[Chunk981631.Eu4.TIER_3],
+        stageVideoUsers: Chunk981631.RcX
       }
     }
   }),
@@ -575,58 +576,58 @@ let e6 = ["premium_tenure_1_month_v2", "premium_tenure_3_month_v2", "premium_ten
   e8 = {
     premium_tenure_1_month_v2: {
       id: "premium_tenure_1_month_v2",
-      nameUnformatted: a.t.LR1C0d,
+      nameUnformatted: Chunk388032.t.LR1C0d,
       tenureReqNumMonths: 1,
-      hasWideArt: !1,
+      hasWideArt: false,
       glowColor: "#b54913"
     },
     premium_tenure_3_month_v2: {
       id: "premium_tenure_3_month_v2",
-      nameUnformatted: a.t["rI1/3N"],
+      nameUnformatted: Chunk388032.t["rI1/3N"],
       tenureReqNumMonths: 3,
-      hasWideArt: !1,
+      hasWideArt: false,
       glowColor: "#9e9e9e"
     },
     premium_tenure_6_month_v2: {
       id: "premium_tenure_6_month_v2",
-      nameUnformatted: a.t.VkhVKS,
+      nameUnformatted: Chunk388032.t.VkhVKS,
       tenureReqNumMonths: 6,
-      hasWideArt: !1,
+      hasWideArt: false,
       glowColor: "#ffa813"
     },
     premium_tenure_12_month_v2: {
       id: "premium_tenure_12_month_v2",
-      nameUnformatted: a.t.gzUfNT,
+      nameUnformatted: Chunk388032.t.gzUfNT,
       tenureReqNumMonths: 12,
-      hasWideArt: !1,
+      hasWideArt: false,
       glowColor: "#5eacc2"
     },
     premium_tenure_24_month_v2: {
       id: "premium_tenure_24_month_v2",
-      nameUnformatted: a.t.fuwTPj,
+      nameUnformatted: Chunk388032.t.fuwTPj,
       tenureReqNumMonths: 24,
-      hasWideArt: !1,
+      hasWideArt: false,
       glowColor: "#6d5cf2"
     },
     premium_tenure_36_month_v2: {
       id: "premium_tenure_36_month_v2",
-      nameUnformatted: a.t.qNhNk5,
+      nameUnformatted: Chunk388032.t.qNhNk5,
       tenureReqNumMonths: 36,
-      hasWideArt: !1,
+      hasWideArt: false,
       glowColor: "#32c102"
     },
     premium_tenure_60_month_v2: {
       id: "premium_tenure_60_month_v2",
-      nameUnformatted: a.t["wvX+eH"],
+      nameUnformatted: Chunk388032.t["wvX+eH"],
       tenureReqNumMonths: 60,
-      hasWideArt: !0,
+      hasWideArt: true,
       glowColor: "#f29cc3"
     },
     premium_tenure_72_month_v2: {
       id: "premium_tenure_72_month_v2",
-      nameUnformatted: a.t["/menIy"],
+      nameUnformatted: Chunk388032.t["/menIy"],
       tenureReqNumMonths: 72,
-      hasWideArt: !0,
+      hasWideArt: true,
       glowColor: "#078292"
     }
   };
@@ -637,7 +638,7 @@ var e7 = function(e) {
     return e[e.HOUR = 1] = "HOUR", e[e.DAY = 2] = "DAY", e
   }({});
 let te = {
-  [r.a.PREMIUM_TIER_2_1_HOUR]: [1, 1],
-  [r.a.PREMIUM_TIER_2_1_DAY]: [2, 1],
-  [r.a.PREMIUM_TIER_2_3_DAY]: [2, 3]
+  [Chunk314794.a.PREMIUM_TIER_2_1_HOUR]: [1, 1],
+  [Chunk314794.a.PREMIUM_TIER_2_1_DAY]: [2, 1],
+  [Chunk314794.a.PREMIUM_TIER_2_3_DAY]: [2, 3]
 }

@@ -1,19 +1,20 @@
 /** Chunk was on web.js **/
+/** chunk id: 621796, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-var r = n(359282),
-  i = n(716818),
-  o = n(836392),
-  a = n(108267),
-  s = n(148727),
-  l = n(65183),
-  c = n(650132),
-  u = n(661785),
-  d = n(581079),
-  f = n(170261),
-  _ = n(999296),
-  p = n(191395),
-  h = n(653216),
-  m = l.OrderedSet,
+var Chunk359282 = require("./359282.js"),
+  Chunk716818 = require("./716818.js"),
+  Chunk836392 = require("./836392.js"),
+  Chunk108267 = require("./108267.js"),
+  Chunk148727 = require("./148727.js"),
+  Chunk65183 = require("./65183.js"),
+  Chunk650132 = require("./650132.js"),
+  Chunk661785 = require("./661785.js"),
+  Chunk581079 = require("./581079.js"),
+  Chunk170261 = require("./170261.js"),
+  Chunk999296 = require("./999296.js"),
+  Chunk191395 = require("./191395.js"),
+  Chunk653216 = require("./653216.js"),
+  m = Chunk65183.OrderedSet,
   g = {
     replaceText: function(e, t, n, i, o) {
       var a = p(_(e, t), t),
@@ -24,7 +25,7 @@ var r = n(359282),
       return u(a, a.getSelectionAfter(), n, s)
     },
     insertText: function(e, t, n, r, i) {
-      return t.isCollapsed() || d(!1), g.replaceText(e, t, n, r, i)
+      return t.isCollapsed() || d(false), g.replaceText(e, t, n, r, i)
     },
     moveText: function(e, t, n) {
       var r = s(e, t),
@@ -32,7 +33,7 @@ var r = n(359282),
       return g.replaceWithFragment(i, n, r)
     },
     replaceWithFragment: function(e, t, n) {
-      var r = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : "REPLACE_WITH_NEW_DATA",
+      var r = arguments.length > 3 && true !== arguments[3] ? arguments[3] : "REPLACE_WITH_NEW_DATA",
         i = p(_(e, t), t);
       return c(i, i.getSelectionAfter(), n, r)
     },
@@ -42,7 +43,7 @@ var r = n(359282),
         anchorOffset: t.getFocusOffset(),
         focusKey: t.getAnchorKey(),
         focusOffset: t.getAnchorOffset(),
-        isBackward: !1
+        isBackward: false
       })), r = t.getAnchorKey(), i = t.getFocusKey(), o = e.getBlockForKey(r);
       var r, i, o, s = e.getBlockForKey(i),
         l = t.getStartOffset(),
@@ -91,4 +92,4 @@ var r = n(359282),
       return o(_(e, t), t, n)
     }
   };
-e.exports = g
+module.exports = g

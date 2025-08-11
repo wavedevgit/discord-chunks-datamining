@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 585871, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   table: "table_fda3e4",
   premiumRebrand: "premiumRebrand_fda3e4",
   hasError: "hasError_fda3e4",

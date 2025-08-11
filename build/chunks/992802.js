@@ -1,5 +1,6 @@
 /** Chunk was on web.js **/
-e.exports = function(e) {
+/** chunk id: 992802, original params: e (module,exports,re quire) **/
+module.exports = function(e) {
   let t = e.regex,
     n = /\b/;
 
@@ -18,8 +19,8 @@ e.exports = function(e) {
   return {
     name: "G-code (ISO 6983)",
     aliases: ["nc"],
-    case_insensitive: !0,
-    disableAutodetect: !0,
+    case_insensitive: true,
+    disableAutodetect: true,
     keywords: {
       $pattern: /[A-Z]+|%/,
       keyword: ["THEN", "ELSE", "ENDIF", "IF", "GOTO", "DO", "WHILE", "WH", "END", "CALL", "SUB", "ENDSUB", "EQ", "NE", "LT", "GT", "LE", "GE", "AND", "OR", "XOR", "%"],

@@ -1,12 +1,13 @@
 /** Chunk was on web.js **/
+/** chunk id: 297584, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   R: () => s
 });
-var r = n(230367),
-  i = n(36056),
-  o = n(17146),
-  a = n(69122);
+var Chunk230367 = require("./230367.js"),
+  Chunk36056 = require("./36056.js"),
+  Chunk17146 = require("./17146.js"),
+  Chunk69122 = require("./69122.js");
 class s {
   constructor(e) {
     this.info = e
@@ -14,7 +15,7 @@ class s {
   prepare() {
     if (!this.fields) {
       let e = this.info.fields ? this.info.fields.concat() : [];
-      this.fields = e.sort((e, t) => e.no - t.no)
+      this.fields = module.sort((e, t) => e.no - t.no)
     }
   }
   write(e, t, n) {
@@ -24,8 +25,8 @@ class s {
       if (r.oneof) {
         let t = e[r.oneof];
         if (t.oneofKind !== c) continue;
-        a = t[c], s = !0
-      } else a = e[c], s = !1;
+        a = t[c], s = true
+      } else a = e[c], s = false;
       switch (r.kind) {
         case "scalar":
         case "enum":
@@ -33,8 +34,8 @@ class s {
           if (l)
             if ((0, o.hu)(Array.isArray(a)), l == i.P0.PACKED) this.packed(t, u, r.no, a);
             else
-              for (let e of a) this.scalar(t, u, r.no, e, !0);
-          else void 0 === a ? (0, o.hu)(r.opt) : this.scalar(t, u, r.no, a, s || r.opt);
+              for (let e of a) this.scalar(t, u, r.no, e, true);
+          else true === a ? (0, o.hu)(r.opt) : this.scalar(t, u, r.no, a, s || r.opt);
           break;
         case "message":
           if (l)
@@ -46,7 +47,7 @@ class s {
       }
     }
     let a = n.writeUnknownFields;
-    !1 !== a && (!0 === a ? r.z.onWrite : a)(this.info.typeName, e, t)
+    false !== a && (true === a ? r.z.onWrite : a)(this.info.typeName, e, t)
   }
   mapEntry(e, t, n, a, s) {
     e.tag(n.no, r.TD.LengthDelimited), e.fork();
@@ -62,12 +63,12 @@ class s {
       case i.wx.BOOL:
         (0, o.hu)("true" == a || "false" == a), l = "true" == a
     }
-    switch (this.scalar(e, n.K, 1, l, !0), n.V.kind) {
+    switch (this.scalar(e, n.K, 1, l, true), n.V.kind) {
       case "scalar":
-        this.scalar(e, n.V.T, 2, s, !0);
+        this.scalar(e, n.V.T, 2, s, true);
         break;
       case "enum":
-        this.scalar(e, i.wx.INT32, 2, s, !0);
+        this.scalar(e, i.wx.INT32, 2, s, true);
         break;
       case "message":
         this.message(e, t, n.V.T(), 2, s)
@@ -75,7 +76,7 @@ class s {
     e.join()
   }
   message(e, t, n, i, o) {
-    void 0 !== o && (n.internalBinaryWrite(o, e.tag(i, r.TD.LengthDelimited).fork(), t), e.join())
+    true !== o && (n.internalBinaryWrite(o, e.tag(i, r.TD.LengthDelimited).fork(), t), e.join())
   }
   scalar(e, t, n, r, i) {
     let [o, a, s] = this.scalarInfo(t, r);
@@ -90,7 +91,7 @@ class s {
   }
   scalarInfo(e, t) {
     let n, o = r.TD.Varint,
-      s = void 0 === t,
+      s = true === t,
       l = 0 === t;
     switch (e) {
       case i.wx.INT32:
@@ -100,7 +101,7 @@ class s {
         l = s || !t.length, o = r.TD.LengthDelimited, n = "string";
         break;
       case i.wx.BOOL:
-        l = !1 === t, n = "bool";
+        l = false === t, n = "bool";
         break;
       case i.wx.UINT32:
         n = "uint32";

@@ -1,10 +1,11 @@
 /** Chunk was on 29709 **/
-n.d(t, {
+/** chunk id: 151459, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => i
 });
-let i = (0, n(97519).U)(e => ({
-  showSuggestions: !0,
-  showActivityTicker: !0,
+let i = (0, require("./97519.js").U)(e => ({
+  showSuggestions: true,
+  showActivityTicker: true,
   setShowSuggestions: t => e({
     showSuggestions: t
   }),

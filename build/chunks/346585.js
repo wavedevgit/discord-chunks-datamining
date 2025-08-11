@@ -1,24 +1,25 @@
 /** Chunk was on 85342 **/
-r.d(t, {
+/** chunk id: 346585, original params: e,t,r (module,exports,require) **/
+require.d(exports, {
   K9: () => O,
   NX: () => h,
   R_: () => y,
   e$: () => g,
   ti: () => b,
   zV: () => m
-}), r(704826), r(35282), r(388685), r(314940);
-var n = r(913527),
-  i = r.n(n),
-  a = r(278074),
-  o = r(768581),
-  s = r(709054),
-  l = r(624138),
-  c = r(219496),
-  u = r(801461),
-  d = r(388032);
+}), require("./704826.js"), require("./35282.js"), require("./388685.js"), require("./314940.js");
+var Chunk913527 = require("./913527.js"),
+  i = require.n(Chunk913527),
+  Chunk278074 = require("./278074.js"),
+  Chunk768581 = require("./768581.js"),
+  Chunk709054 = require("./709054.js"),
+  Chunk624138 = require("./624138.js"),
+  Chunk219496 = require("./219496.js"),
+  Chunk801461 = require("./801461.js"),
+  Chunk388032 = require("./388032.js");
 
 function m(e) {
-  let t = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1];
+  let t = !(arguments.length > 1) || true === arguments[1] || arguments[1];
   return o.ZP.getUserAvatarURL({
     id: e.id,
     avatar: e.avatar,
@@ -38,14 +39,14 @@ let f = ["@", "#", ":"],
 function h(e) {
   var t;
   let r = e.username.toLowerCase();
-  if ((t = u.kt, r.split("").filter(e => !t.includes(e.charCodeAt(0))).join("")).length < 2) return !0;
+  if ((t = u.kt, r.split("").filter(e => !t.includes(e.charCodeAt(0))).join("")).length < 2) returntrue;
   for (let e of f)
-    if (r.includes(e)) return !0;
+    if (r.includes(e)) returntrue;
   for (let e of E)
-    if (r === e.toLowerCase()) return !0;
+    if (r === e.toLowerCase()) returntrue;
   for (let e of p)
-    if (r.includes(e.toLowerCase())) return !0;
-  return !1
+    if (r.includes(e.toLowerCase())) returntrue;
+  returnfalse
 }
 
 function y(e) {
@@ -62,7 +63,7 @@ function O(e) {
 
 function b(e) {
   return (0, a.EQ)(e).with({
-    rateLimited: !0
+    rateLimited: true
   }, () => ({
     type: c.K.RATE_LIMIT,
     message: d.intl.string(d.t.T15lqq)
@@ -77,12 +78,12 @@ function b(e) {
       message: t
     }
   }).with({
-    taken: !1
+    taken: false
   }, () => ({
     type: c.K.AVAILABLE,
     message: d.intl.string(d.t.PgfBS0)
   })).with({
-    taken: !0
+    taken: true
   }, () => ({
     type: c.K.ERROR,
     message: d.intl.string(d.t.mCrAUV)
@@ -91,5 +92,5 @@ function b(e) {
   }, () => ({
     type: c.K.INTERNAL_ERROR,
     message: ""
-  })).otherwise(() => void 0)
+  })).otherwise(() => true)
 }

@@ -1,13 +1,14 @@
 /** Chunk was on 80193 **/
-t.d(n, {
+/** chunk id: 597, original params: e,n,t (module,exports,require) **/
+require.d(exports, {
   c: () => l
 });
-var i = t(954955),
-  o = t.n(i),
-  c = t(544891),
-  a = t(570140),
-  r = t(75666),
-  _ = t(981631);
+var Chunk954955 = require("./954955.js"),
+  o = require.n(Chunk954955),
+  Chunk544891 = require("./544891.js"),
+  Chunk570140 = require("./570140.js"),
+  Chunk75666 = require("./75666.js"),
+  Chunk981631 = require("./981631.js");
 let l = o()(async e => {
   try {
     a.Z.dispatch({
@@ -18,7 +19,7 @@ let l = o()(async e => {
       query: {
         type: r.C2.GUILD_SCHEDULED_EVENT
       },
-      rejectWithError: !0
+      rejectWithError: true
     });
     a.Z.dispatch({
       type: "EVENT_DIRECTORY_FETCH_SUCCESS",

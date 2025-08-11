@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 674563, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Hb: () => i,
   He: () => a,
   Vt: () => l,
@@ -8,7 +9,7 @@ n.d(t, {
   fd: () => s,
   wW: () => r,
   yP: () => o
-}), n(388685);
+}), require("./388685.js");
 var r = function(e) {
     return e[e.DEPRECATED_GAME = 1] = "DEPRECATED_GAME", e[e.TICKETED_EVENTS = 3] = "TICKETED_EVENTS", e[e.GUILD_ROLE_SUBSCRIPTIONS = 4] = "GUILD_ROLE_SUBSCRIPTIONS", e[e.GAME = 5] = "GAME", e
   }({}),

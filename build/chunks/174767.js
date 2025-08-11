@@ -1,23 +1,24 @@
 /** Chunk was on 34779 **/
-n.d(t, {
+/** chunk id: 174767, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Br: () => a,
   MH: () => c,
   Ol: () => u,
   TG: () => p,
   UF: () => h,
   sJ: () => d
-}), n(415506);
-var r = n(544891),
-  i = n(570140),
-  l = n(439849),
-  o = n(358085),
-  s = n(981631);
+}), require("./415506.js");
+var Chunk544891 = require("./544891.js"),
+  Chunk570140 = require("./570140.js"),
+  Chunk439849 = require("./439849.js"),
+  Chunk358085 = require("./358085.js"),
+  Chunk981631 = require("./981631.js");
 async function a(e) {
   if (e.platform_type === s.ABu.XBOX) {
     let t = e.parsed_launch_parameters.titleId,
       n = e.parsed_launch_parameters.inviteToken;
     if (!(0, o.isWindows)() || null == t || null == n) return;
-    let r = await f(t, !1),
+    let r = await f(t, false),
       l = await m(n);
     i.Z.dispatch({
       type: "GAME_INVITE_UPDATE_STATUS",
@@ -43,57 +44,57 @@ async function u(e) {
 }
 
 function d() {
-  i.Z.dispatch({
+  Chunk570140.Z.dispatch({
     type: "GAME_INVITE_CLEAR_UNSEEN"
   })
 }
 async function h(e) {
   await r.tn.del({
     url: s.ANM.GAME_INVITE(e.invite_id),
-    rejectWithError: !1
+    rejectWithError: false
   })
 }
 async function p() {
-  await r.tn.del({
-    url: s.ANM.GAME_INVITES,
-    rejectWithError: !1
+  await Chunk544891.tn.del({
+    url: Chunk981631.ANM.GAME_INVITES,
+    rejectWithError: false
   })
 }
 async function f(e, t) {
-  if (!(0, o.isWindows)()) return !1;
+  if (!(0, o.isWindows)()) returnfalse;
   let n = await (0, l.Z)();
   return new Promise((r, i) => {
-    if ((null == n ? void 0 : n.xboxIsApplicationInstalled) == null) return void i(Error("Game utils module not loaded"));
+    if ((null == n ? true : n.xboxIsApplicationInstalled) == null) return void i(Error("Game utils module not loaded"));
     n.xboxIsApplicationInstalled(e, t, e => {
       r(e)
     })
   })
 }
 async function g(e) {
-  if (!(0, o.isWindows)()) return !1;
+  if (!(0, o.isWindows)()) returnfalse;
   let t = await (0, l.Z)();
   return new Promise((n, r) => {
-    if ((null == t ? void 0 : t.xboxLaunchGame) == null) return void r(Error("Game utils module not loaded"));
+    if ((null == t ? true : t.xboxLaunchGame) == null) return void r(Error("Game utils module not loaded"));
     t.xboxLaunchGame(e, e => {
       n(e)
     })
   })
 }
 async function m(e) {
-  if (!(0, o.isWindows)()) return !1;
+  if (!(0, o.isWindows)()) returnfalse;
   let t = await (0, l.Z)();
   return new Promise((n, r) => {
-    if ((null == t ? void 0 : t.xboxIsInviteTokenValid) == null) return void r(Error("Game utils module not loaded"));
+    if ((null == t ? true : t.xboxIsInviteTokenValid) == null) return void r(Error("Game utils module not loaded"));
     t.xboxIsInviteTokenValid(e, e => {
       n(e)
     })
   })
 }
 async function b(e) {
-  if (!(0, o.isWindows)()) return !1;
+  if (!(0, o.isWindows)()) returnfalse;
   let t = await (0, l.Z)();
   return new Promise((n, r) => {
-    if ((null == t ? void 0 : t.xboxAcceptGameInvite) == null) return void r(Error("Game utils module not loaded"));
+    if ((null == t ? true : t.xboxAcceptGameInvite) == null) return void r(Error("Game utils module not loaded"));
     t.xboxAcceptGameInvite(e, e => {
       n(e)
     })

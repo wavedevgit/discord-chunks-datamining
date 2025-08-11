@@ -1,4 +1,5 @@
 /** Chunk was on web.js **/
+/** chunk id: 93735, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 
 function r(e) {
@@ -6,10 +7,10 @@ function r(e) {
 }
 
 function i(e) {
-  if (null == e) return !1;
+  if (null == e) returnfalse;
   let t = "messageSnapshots" in e ? e.messageSnapshots : e.message_snapshots;
-  return r(e) || null != t && (null == t ? void 0 : t.some(e => r(e.message)))
+  return r(e) || null != t && (null == t ? true : t.some(e => r(e.message)))
 }
-n.d(t, {
+require.d(exports, {
   t: () => i
 })

@@ -1,12 +1,13 @@
 /** Chunk was on 75708 **/
-n.d(t, {
+/** chunk id: 775774, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   p: () => r
 });
-var i = n(358085);
+var Chunk358085 = require("./358085.js");
 let r = {
   binds: ["mod+alt+i"],
-  comboKeysBindGlobal: !0,
+  comboKeysBindGlobal: true,
   action(e) {
-    if ((0, i.isWeb)() && "discord.com" === location.host) return e.preventDefault(), e.stopPropagation(), !1
+    if ((0, i.isWeb)() && "discord.com" === location.host) return e.preventDefault(), e.stopPropagation(), false
   }
 }

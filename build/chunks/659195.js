@@ -1,5 +1,6 @@
 /** Chunk was on 1272 **/
-e.exports = {
+/** chunk id: 659195, original params: e,t,n (module,exports,require) **/
+module.exports = {
   contentRating: "contentRating_f4dfaa",
   esrb: "esrb_f4dfaa",
   pegi: "pegi_f4dfaa",

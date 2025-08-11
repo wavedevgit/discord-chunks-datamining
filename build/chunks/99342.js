@@ -1,10 +1,11 @@
 /** Chunk was on web.js **/
+/** chunk id: 99342, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   D: () => o,
   Y: () => a
 });
-var r = n(370336);
+var Chunk370336 = require("./370336.js");
 let i = "_sentrySpan";
 
 function o(e, t) {

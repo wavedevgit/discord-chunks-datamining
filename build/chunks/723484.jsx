@@ -1,0 +1,17 @@
+/** Chunk was on web.js **/
+/** chunk id: 723484, original params: e,t,n (module,exports,re quire) **/
+"use strict";
+require.d(exports, {
+  F: () => a
+});
+var Chunk255367 = require("./255367.js");
+require("./73800.js"), require("./512722.js");
+var Chunk481060 = require("./481060.js");
+require("./563132.jsx"), require("./185139.jsx");
+var Chunk388032 = require("./388032.jsx");
+let a = e => {
+  let {
+    className: t
+  } = e;
+  return <i.hjN className={t}><i.vwX>{o.intl.string(o.t.eALkIS)}</i.vwX></i.hjN>
+}

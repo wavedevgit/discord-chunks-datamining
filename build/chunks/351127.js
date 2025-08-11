@@ -1,29 +1,30 @@
 /** Chunk was on 12097 **/
-n.d(t, {
+/** chunk id: 351127, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   B2: () => g,
   Ov: () => I,
   Qn: () => T,
   _o: () => m,
   pd: () => A
-}), n(388685), n(415506), n(539854);
-var r = n(149765),
-  l = n(399606),
-  s = n(601964),
-  i = n(345162),
-  a = n(271383),
-  o = n(485386),
-  u = n(430824),
-  c = n(594174),
-  E = n(700785),
-  d = n(981631),
-  _ = n(135899);
-let A = Object.keys(d.Plq),
-  T = Array.from(new Set([..._.$X, ...d.yYS, d.Plq.ADMINISTRATOR, d.Plq.KICK_MEMBERS, d.Plq.BAN_MEMBERS, d.Plq.MANAGE_GUILD, d.Plq.MANAGE_CHANNELS, d.Plq.MANAGE_ROLES, d.Plq.MANAGE_MESSAGES, d.Plq.MANAGE_THREADS, d.Plq.MANAGE_GUILD_EXPRESSIONS, d.Plq.CREATE_GUILD_EXPRESSIONS, d.Plq.MANAGE_EVENTS, d.Plq.CREATE_EVENTS, d.Plq.MODERATE_MEMBERS, d.Plq.MENTION_EVERYONE, d.Plq.MANAGE_WEBHOOKS])).map(e => {
+}), require("./388685.js"), require("./415506.js"), require("./539854.js");
+var Chunk149765 = require("./149765.js"),
+  Chunk399606 = require("./399606.js"),
+  Chunk601964 = require("./601964.js"),
+  Chunk345162 = require("./345162.js"),
+  Chunk271383 = require("./271383.js"),
+  Chunk485386 = require("./485386.js"),
+  Chunk430824 = require("./430824.js"),
+  Chunk594174 = require("./594174.js"),
+  Chunk700785 = require("./700785.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk135899 = require("./135899.js");
+let A = Object.keys(Chunk981631.Plq),
+  T = Array.from(new Set([...Chunk135899.$X, ...Chunk981631.yYS, Chunk981631.Plq.ADMINISTRATOR, Chunk981631.Plq.KICK_MEMBERS, Chunk981631.Plq.BAN_MEMBERS, Chunk981631.Plq.MANAGE_GUILD, Chunk981631.Plq.MANAGE_CHANNELS, Chunk981631.Plq.MANAGE_ROLES, Chunk981631.Plq.MANAGE_MESSAGES, Chunk981631.Plq.MANAGE_THREADS, Chunk981631.Plq.MANAGE_GUILD_EXPRESSIONS, Chunk981631.Plq.CREATE_GUILD_EXPRESSIONS, Chunk981631.Plq.MANAGE_EVENTS, Chunk981631.Plq.CREATE_EVENTS, Chunk981631.Plq.MODERATE_MEMBERS, Chunk981631.Plq.MENTION_EVERYONE, Chunk981631.Plq.MANAGE_WEBHOOKS])).map(e => {
     let t = A.find(t => d.Plq[t] === e);
     if (null == t) throw Error("Permission ".concat(e, " not found in Permissions"));
     return t
   }),
-  m = new Set(d.yYS);
+  m = new Set(Chunk981631.yYS);
 
 function I(e, t) {
   return e === t

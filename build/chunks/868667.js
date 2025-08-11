@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
-let r = n(40231);
-e.exports = (e, t, n = !1) => {
+/** chunk id: 868667, original params: e,t,n (module,exports,re quire) **/
+let Chunk40231 = require("./40231.js");
+module.exports = (e, t, n = false) => {
   if (e instanceof r) return e;
   try {
     return new r(e, t)

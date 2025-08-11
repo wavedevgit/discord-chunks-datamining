@@ -1,15 +1,16 @@
 /** Chunk was on 45620 **/
+/** chunk id: 410127, original params: e,t,n (module,exports,require) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => i
-}), n(35282);
-var r = n(593473),
-  l = n(114858),
-  a = n(215023);
+}), require("./35282.js");
+var Chunk593473 = require("./593473.js"),
+  Chunk114858 = require("./114858.js"),
+  Chunk215023 = require("./215023.js");
 let i = () => {
-  let e = (0, l.TH)(),
+  let e = (0, Chunk114858.TH)(),
     {
       tab: t
-    } = (0, r.parse)(e.search);
-  if (Object.values(a.AW).includes(t)) return t
+    } = (0, Chunk593473.parse)(module.search);
+  if (Object.values(Chunk215023.AW).includes(exports)) return exports
 }

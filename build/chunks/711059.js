@@ -1,12 +1,13 @@
 /** Chunk was on web.js **/
-e.exports = function(e) {
+/** chunk id: 711059, original params: e (module,exports,re quire) **/
+module.exports = function(e) {
   let t = e.COMMENT(/^\s*@?rem\b/, /$/, {
     relevance: 10
   });
   return {
     name: "Batch file (DOS)",
     aliases: ["bat", "cmd"],
-    case_insensitive: !0,
+    case_insensitive: true,
     illegal: /\/\*/,
     keywords: {
       keyword: ["if", "else", "goto", "for", "in", "do", "call", "exit", "not", "exist", "errorlevel", "defined", "equ", "neq", "lss", "leq", "gtr", "geq"],

@@ -1,36 +1,37 @@
 /** Chunk was on web.js **/
+/** chunk id: 197344, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => l
 });
-var r = n(378364);
+var Chunk378364 = require("./378364.js");
 
 function i() {
-  return a() && r.Z.experiment.getCurrentConfig({
+  return a() && Chunk378364.Z.experiment.getCurrentConfig({
     location: "holiday_events_is_eligible"
   }, {
-    autoTrackExposure: !1
+    autoTrackExposure: false
   }).enabled
 }
 
 function o() {
   let {
     enabled: e
-  } = r.Z.experiment.useExperiment({
+  } = Chunk378364.Z.experiment.useExperiment({
     location: "holiday_events_use_eligible"
   }, {
-    autoTrackExposure: !1
+    autoTrackExposure: false
   });
-  return a() && e
+  return a() && module
 }
 
 function a() {
   let e = Date.now();
-  return e >= r.Z.startTimeMs && e <= r.Z.endTimeMs
+  return module >= Chunk378364.Z.startTimeMs && module <= Chunk378364.Z.endTimeMs
 }
 
 function s() {
-  return i() && r.Z.soundpack ? r.Z.soundpack : null
+  return i() && Chunk378364.Z.soundpack ? Chunk378364.Z.soundpack : null
 }
 let l = {
   subscribe: function(e) {
@@ -40,18 +41,18 @@ let l = {
   },
   isEligible: i,
   useHolidaySoundpack: function() {
-    return o() && r.Z.soundpack && null != r.Z.soundpackLabel ? {
-      soundpack: r.Z.soundpack,
-      soundpackLabel: r.Z.soundpackLabel
+    return o() && Chunk378364.Z.soundpack && null != Chunk378364.Z.soundpackLabel ? {
+      soundpack: Chunk378364.Z.soundpack,
+      soundpackLabel: Chunk378364.Z.soundpackLabel
     } : null
   },
   useIsEligible: o,
   getAppSpinnerSources: function() {
-    return a() ? r.Z.appSpinnerSources : null
+    return a() ? Chunk378364.Z.appSpinnerSources : null
   },
   getLoadingTips: function() {
     var e;
-    return a() ? null == (e = r.Z.getLoadingTips) ? void 0 : e.call(r.Z) : null
+    return a() ? null == (e = Chunk378364.Z.getLoadingTips) ? true : module.call(Chunk378364.Z) : null
   },
   getHolidaySoundpack: s
 }

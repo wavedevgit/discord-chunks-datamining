@@ -1,4 +1,5 @@
 /** Chunk was on web.js **/
+/** chunk id: 823416, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 
 function r(e) {
@@ -17,26 +18,26 @@ function r(e) {
 function i(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
-var o = n(512972),
-  a = n(359282),
-  s = n(879154),
-  l = n(214788),
-  c = n(621796),
-  u = n(172367),
-  d = n(551558),
-  f = n(223138),
-  _ = n(65183),
-  p = n(586026),
-  h = f("draft_tree_data_support"),
-  m = h ? l : s,
-  g = _.List,
-  E = _.Repeat;
-e.exports = {
+var Chunk512972 = require("./512972.js"),
+  Chunk359282 = require("./359282.js"),
+  Chunk879154 = require("./879154.js"),
+  Chunk214788 = require("./214788.js"),
+  Chunk621796 = require("./621796.js"),
+  Chunk172367 = require("./172367.js"),
+  Chunk551558 = require("./551558.js"),
+  Chunk223138 = require("./223138.js"),
+  Chunk65183 = require("./65183.js"),
+  Chunk586026 = require("./586026.js"),
+  h = Chunk223138("draft_tree_data_support"),
+  m = h ? Chunk214788 : Chunk879154,
+  g = Chunk65183.List,
+  E = Chunk65183.Repeat;
+module.exports = {
   insertAtomicBlock: function(e, t, n) {
     var i = e.getCurrentContent(),
       s = e.getSelection(),
@@ -68,7 +69,7 @@ e.exports = {
       S = c.replaceWithFragment(b, p, T),
       A = S.merge({
         selectionBefore: s,
-        selectionAfter: S.getSelectionAfter().set("hasFocus", !0)
+        selectionAfter: S.getSelectionAfter().set("hasFocus", true)
       });
     return u.push(e, A, "insert-fragment")
   },
@@ -93,7 +94,7 @@ e.exports = {
     }
     var g = i.merge({
       selectionBefore: a,
-      selectionAfter: i.getSelectionAfter().set("hasFocus", !0)
+      selectionAfter: i.getSelectionAfter().set("hasFocus", true)
     });
     return u.push(e, g, "move-block")
   }

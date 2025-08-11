@@ -1,19 +1,20 @@
 /** Chunk was on web.js **/
+/** chunk id: 897285, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => p
-}), n(388685);
-var r = n(147913),
-  i = n(914010),
-  o = n(924301),
-  a = n(482241);
+}), require("./388685.js");
+var Chunk147913 = require("./147913.js"),
+  Chunk914010 = require("./914010.js"),
+  Chunk924301 = require("./924301.js"),
+  Chunk482241 = require("./482241.js");
 
 function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 let l = {},
@@ -27,7 +28,7 @@ let l = {},
       c.delete(e)
     }
   };
-class _ extends r.Z {
+class _ extends Chunk147913.Z {
   async getGuildEventUserCounts(e, t, n) {
     let r = n.filter(n => null == l["".concat(e, "-").concat(t, "-").concat(n)] || Date.now() - l["".concat(e, "-").concat(t, "-").concat(n)] > d);
     if (!(Date.now() - l["".concat(e, "-").concat(t)] < d) || 0 !== r.length) {
@@ -44,7 +45,7 @@ class _ extends r.Z {
     return f(e)
   }
   async handleConnectionOpen() {
-    c.clear(), u.clear(), l = {}, i.Z.getLastSelectedGuildId()
+    c.clear(), u.clear(), l = {}, Chunk914010.Z.getLastSelectedGuildId()
   }
   handleGuildUnavailable(e) {
     let {
@@ -62,7 +63,7 @@ class _ extends r.Z {
     var t;
     let {
       invite: n
-    } = e, r = n.guild_scheduled_event, i = null == (t = n.guild) ? void 0 : t.id;
+    } = e, r = n.guild_scheduled_event, i = null == (t = n.guild) ? true : t.id;
     null != r && null != i && f(i)
   }
   async handleChannelSelect(e) {

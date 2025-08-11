@@ -1,8 +1,9 @@
 /** Chunk was on web.js **/
+/** chunk id: 395141, original params: e (module,exports,re quire) **/
 let t = ["as", "in", "of", "if", "for", "while", "finally", "var", "new", "function", "do", "return", "void", "else", "break", "catch", "instanceof", "with", "throw", "case", "default", "try", "switch", "continue", "typeof", "delete", "let", "yield", "const", "class", "debugger", "async", "await", "static", "import", "from", "export", "extends", "using"],
   n = ["true", "false", "null", "undefined", "NaN", "Infinity"],
   r = [].concat(["setInterval", "setTimeout", "clearInterval", "clearTimeout", "require", "exports", "eval", "isFinite", "isNaN", "parseFloat", "parseInt", "decodeURI", "decodeURIComponent", "encodeURI", "encodeURIComponent", "escape", "unescape"], ["Object", "Function", "Boolean", "Symbol", "Math", "Date", "Number", "BigInt", "String", "RegExp", "Array", "Float32Array", "Float64Array", "Int8Array", "Uint8Array", "Uint8ClampedArray", "Int16Array", "Int32Array", "Uint16Array", "Uint32Array", "BigInt64Array", "BigUint64Array", "Set", "Map", "WeakSet", "WeakMap", "ArrayBuffer", "SharedArrayBuffer", "Atomics", "DataView", "JSON", "Promise", "Generator", "GeneratorFunction", "AsyncFunction", "Reflect", "Proxy", "Intl", "WebAssembly"], ["Error", "EvalError", "InternalError", "RangeError", "ReferenceError", "SyntaxError", "TypeError", "URIError"]);
-e.exports = function(e) {
+module.exports = function(e) {
   let i = ["npm", "print"],
     o = ["yes", "no", "on", "off", "it", "that", "void"],
     a = ["then", "unless", "until", "loop", "of", "by", "when", "and", "or", "is", "isnt", "not", "it", "that", "otherwise", "from", "to", "til", "fallthrough", "case", "enum", "native", "list", "map", "__hasProp", "__extends", "__slice", "__bind", "__indexOf"],
@@ -56,7 +57,7 @@ e.exports = function(e) {
       }, {
         begin: /\\/,
         end: /(\s|$)/,
-        excludeEnd: !0
+        excludeEnd: true
       }]
     }, {
       className: "regexp",
@@ -72,15 +73,15 @@ e.exports = function(e) {
     }, {
       begin: "``",
       end: "``",
-      excludeBegin: !0,
-      excludeEnd: !0,
+      excludeBegin: true,
+      excludeEnd: true,
       subLanguage: "javascript"
     }];
   u.contains = f;
   let _ = {
       className: "params",
       begin: "\\(",
-      returnBegin: !0,
+      returnBegin: true,
       contains: [{
         begin: /\(/,
         end: /\)/,
@@ -111,7 +112,7 @@ e.exports = function(e) {
     contains: f.concat([e.COMMENT("\\/\\*", "\\*\\/"), e.HASH_COMMENT_MODE, p, {
       className: "function",
       contains: [c, _],
-      returnBegin: !0,
+      returnBegin: true,
       variants: [{
         begin: "(" + l + "\\s*(?:=|:=)\\s*)?(\\(.*\\)\\s*)?\\B->\\*?",
         end: "->\\*?"
@@ -125,8 +126,8 @@ e.exports = function(e) {
     }, h, {
       begin: l + ":",
       end: ":",
-      returnBegin: !0,
-      returnEnd: !0,
+      returnBegin: true,
+      returnEnd: true,
       relevance: 0
     }])
   }

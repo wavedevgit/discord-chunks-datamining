@@ -1,9 +1,10 @@
 /** Chunk was on web.js **/
+/** chunk id: 179122, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-var r = n(434431),
+var Chunk434431 = require("./434431.js"),
   i = String,
   o = TypeError;
-e.exports = function(e) {
+module.exports = function(e) {
   if (r(e)) return e;
   throw new o(i(e) + " is not an object")
 }

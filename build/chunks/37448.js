@@ -1,6 +1,7 @@
 /** Chunk was on 54325 **/
-e.exports = {
-  modal: "modal_ac72c6 " + c(283574).scrollbarGhostHairline,
+/** chunk id: 37448, original params: e,a,c (module,exports,require) **/
+module.exports = {
+  modal: "modal_ac72c6 " + require("./283574.js").scrollbarGhostHairline,
   modalContent: "modalContent_ac72c6",
   modalFooter: "modalFooter_ac72c6",
   name: "name_ac72c6",

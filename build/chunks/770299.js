@@ -1,4 +1,5 @@
 /** Chunk was on web.js **/
+/** chunk id: 770299, original params: e (module,exports,re quire) **/
 function t(e) {
   return e ? "string" == typeof e ? e : e.source : null
 }
@@ -37,7 +38,7 @@ let a = e => r(/\b/, e, /\w$/.test(e) ? /\b/ : /\B/),
   O = r(/[A-Z]/, b, "*"),
   v = ["attached", "autoclosure", r(/convention\(/, o("swift", "block", "c"), /\)/), "discardableResult", "dynamicCallable", "dynamicMemberLookup", "escaping", "freestanding", "frozen", "GKInspectable", "IBAction", "IBDesignable", "IBInspectable", "IBOutlet", "IBSegueAction", "inlinable", "main", "nonobjc", "NSApplicationMain", "NSCopying", "NSManaged", r(/objc\(/, y, /\)/), "objc", "objcMembers", "propertyWrapper", "requires_stored_property_inits", "resultBuilder", "Sendable", "testable", "UIApplicationMain", "unchecked", "unknown", "usableFromInline", "warn_unqualified_access"],
   I = ["iOS", "iOSApplicationExtension", "macOS", "macOSApplicationExtension", "macCatalyst", "macCatalystApplicationExtension", "watchOS", "watchOSApplicationExtension", "tvOS", "tvOSApplicationExtension", "swift"];
-e.exports = function(e) {
+module.exports = function(e) {
   let t = {
       match: /\s+/,
       relevance: 0
@@ -253,7 +254,7 @@ e.exports = function(e) {
           match: y
         }]
       }, ...h, ...C, ...w, x, B, ...K, z, X],
-      endsParent: !0,
+      endsParent: true,
       illegal: /["']/
     },
     $ = {

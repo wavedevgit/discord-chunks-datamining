@@ -1,16 +1,17 @@
 /** Chunk was on web.js **/
+/** chunk id: 885524, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => d
 });
-var r = n(73800),
-  i = n(46973),
-  o = n(846519),
-  a = n(763520),
-  s = n(798681),
-  l = n(70956),
-  c = n(878001);
-let u = 20 * l.Z.Millis.SECOND;
+var Chunk73800 = require("./73800.js"),
+  Chunk46973 = require("./46973.js"),
+  Chunk846519 = require("./846519.js"),
+  Chunk763520 = require("./763520.js"),
+  Chunk798681 = require("./798681.js"),
+  Chunk70956 = require("./70956.js"),
+  Chunk878001 = require("./878001.js");
+let u = 20 * Chunk70956.Z.Millis.SECOND;
 
 function d(e) {
   let {
@@ -19,7 +20,7 @@ function d(e) {
     videoSpinnerContext: l,
     streamKey: d,
     loading: f,
-    paused: _ = !1
+    paused: _ = false
   } = e, p = r.useRef(new o.V7), h = l === a.m.SELF_STREAM || l === a.m.REMOTE_STREAM ? i.Yn.STREAM : i.Yn.DEFAULT;
   return r.useEffect(() => {
     if (!f || _ || !s.w.isIncomingVideoEnabled()) return;

@@ -1,5 +1,6 @@
 /** Chunk was on 34779 **/
-e.exports = {
+/** chunk id: 142857, original params: e,t,n (module,exports,require) **/
+module.exports = {
   messageContainer: "messageContainer_f6bd5f",
   messageSpinner: "messageSpinner_f6bd5f",
   channelMessageAndCancelButton: "channelMessageAndCancelButton_f6bd5f",
@@ -8,8 +9,8 @@ e.exports = {
   messageState: "messageState_f6bd5f",
   cancelMessageButton: "cancelMessageButton_f6bd5f",
   message: "message_f6bd5f",
-  container: "container_f6bd5f " + n(384323).recentMentionsPopout,
-  widerInbox: "widerInbox_f6bd5f " + n(384323).widerInbox,
+  container: "container_f6bd5f " + require("./384323.js").recentMentionsPopout,
+  widerInbox: "widerInbox_f6bd5f " + require("./384323.js").widerInbox,
   channelRow: "channelRow_f6bd5f",
   loadingPlaceholder: "loadingPlaceholder_f6bd5f"
 }

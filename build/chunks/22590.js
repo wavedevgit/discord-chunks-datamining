@@ -1,3 +1,4 @@
 /** Chunk was on 50448 **/
+/** chunk id: 22590, original params: t (module,exports,require) **/
 "use strict";
-t.exports = ["constructor", "hasOwnProperty", "isPrototypeOf", "propertyIsEnumerable", "toLocaleString", "toString", "valueOf"]
+module.exports = ["constructor", "hasOwnProperty", "isPrototypeOf", "propertyIsEnumerable", "toLocaleString", "toString", "valueOf"]

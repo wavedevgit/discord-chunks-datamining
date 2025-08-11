@@ -1,18 +1,19 @@
 /** Chunk was on web.js **/
+/** chunk id: 145022, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => c
-}), n(388685), n(35282);
-var r = n(392711),
-  i = n.n(r),
-  o = n(314897),
-  a = n(908442),
-  s = n(981631),
-  l = n(388032);
+}), require("./388685.js"), require("./35282.js");
+var Chunk392711 = require("./392711.js"),
+  i = require.n(Chunk392711),
+  Chunk314897 = require("./314897.js"),
+  Chunk908442 = require("./908442.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk388032 = require("./388032.js");
 
 function c(e, t, n) {
   if (null == e || null == t) return {
-    valid: !1,
+    valid: false,
     reason: l.intl.string(l.t.d34xi4)
   };
   let {
@@ -23,7 +24,7 @@ function c(e, t, n) {
     targetBuildOverride: f
   } = e, _ = Object.keys(f);
   if (0 === i().intersection(_, t).length) return {
-    valid: !1,
+    valid: false,
     reason: l.intl.formatToPlainString(l.t.wySUzs, {
       requestedTargets: _.map(e => {
         var t;
@@ -34,28 +35,28 @@ function c(e, t, n) {
   if (null != r && r !== window.GLOBAL_ENV.RELEASE_CHANNEL) {
     let e = r === s.R5N.PTB ? r.toUpperCase() : "".concat(r.charAt(0).toUpperCase()).concat(r.slice(1));
     return {
-      valid: !1,
+      valid: false,
       reason: l.intl.formatToPlainString(l.t.GOEF0N, {
         releaseChannel: e
       })
     }
   }
   if (null != d) {
-    let e = !1;
-    if (null == n) e = !1;
-    else if (d.includes(n)) e = !0;
+    let e = false;
+    if (null == n) e = false;
+    else if (d.includes(n)) e = true;
     else {
       let [t] = n.split(".");
       for (let n of d) {
         let [r, i] = n.split(".");
         if ("*" === i && t === r) {
-          e = !0;
+          e = true;
           break
         }
       }
     }
     if (!e) return {
-      valid: !1,
+      valid: false,
       reason: l.intl.formatToPlainString(l.t.GOEF0N, {
         releaseChannel: d.join(", ")
       })
@@ -63,12 +64,12 @@ function c(e, t, n) {
   }
   let p = null != c ? new Date(c).getTime() : null;
   return null != p && p < Date.now() ? {
-    valid: !1,
+    valid: false,
     reason: l.intl.string(l.t["8eRE6e"])
   } : u.length > 0 && !u.includes(o.default.getId()) ? {
-    valid: !1,
+    valid: false,
     reason: l.intl.string(l.t.qZgV0d)
   } : {
-    valid: !0
+    valid: true
   }
 }

@@ -1,5 +1,6 @@
 /** Chunk was on 99133 **/
-A.exports = {
+/** chunk id: 734344, original params: A,t,e (module,exports,require) **/
+module.exports = {
   statusWarningBlock: "statusWarningBlock__1066d",
   statusWarningBlockWithCta: "statusWarningBlockWithCta__1066d",
   horizontalStatusWarningBlock: "horizontalStatusWarningBlock__1066d",

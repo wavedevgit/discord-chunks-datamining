@@ -1,16 +1,17 @@
 /** Chunk was on web.js **/
+/** chunk id: 104919, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   L: () => d
 });
-var r = n(373793),
-  i = n(367907),
-  o = n(69580),
-  a = n(973616),
-  s = n(728345),
-  l = n(812206),
-  c = n(433534),
-  u = n(981631);
+var Chunk373793 = require("./373793.js"),
+  Chunk367907 = require("./367907.js"),
+  Chunk69580 = require("./69580.jsx"),
+  Chunk973616 = require("./973616.js"),
+  Chunk728345 = require("./728345.js"),
+  Chunk812206 = require("./812206.js"),
+  Chunk433534 = require("./433534.js"),
+  Chunk981631 = require("./981631.js");
 async function d(e) {
   var t, n, d;
   let {
@@ -24,7 +25,7 @@ async function d(e) {
       channel: _,
       commandIntegrationTypes: p
     })) return Promise.resolve({
-    isAuthorized: !0
+    isAuthorized: true
   });
   let m = l.Z.getApplication(f);
   if (null == m) {
@@ -32,7 +33,7 @@ async function d(e) {
     m = a.ZP.createFromServer(e)
   }
   let g = r.Y.USER_INSTALL,
-    E = null == m || null == (d = m.integrationTypesConfig) || null == (n = d[g]) || null == (t = n.oauth2InstallParams) ? void 0 : t.scopes;
+    E = null == m || null == (d = m.integrationTypesConfig) || null == (n = d[g]) || null == (t = n.oauth2InstallParams) ? true : t.scopes;
   return null != h && (0, i.yw)(u.rMx.APP_LAUNCHER_OAUTH2_AUTHORIZE_OPENED, {
     application_id: f,
     location: h.location,
@@ -53,14 +54,14 @@ async function d(e) {
           section_name: h.sectionName,
           source: h.entrypoint
         }), e({
-          isAuthorized: !0
+          isAuthorized: true
         })) : e({
-          isAuthorized: !1
+          isAuthorized: false
         })
       }
     }, () => {
       e({
-        isAuthorized: !1
+        isAuthorized: false
       })
     })
   })

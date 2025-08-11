@@ -1,5 +1,6 @@
 /** Chunk was on 75708 **/
-e.exports = {
+/** chunk id: 589848, original params: e,t,n (module,exports,require) **/
+module.exports = {
   notificationSound: "notificationSound__6d8e5",
   soundName: "soundName__6d8e5",
   soundIcon: "soundIcon__6d8e5",

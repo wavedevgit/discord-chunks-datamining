@@ -1,22 +1,23 @@
 /** Chunk was on 1272 **/
-n.d(t, {
+/** chunk id: 915357, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => c
 });
-var r = n(996106),
-  i = n(631467),
-  l = n(76238),
-  a = n(186901),
-  o = n(981631);
+var Chunk996106 = require("./996106.js"),
+  Chunk631467 = require("./631467.js"),
+  Chunk76238 = require("./76238.js"),
+  Chunk186901 = require("./186901.js"),
+  Chunk981631 = require("./981631.js");
 
 function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
-class c extends l.Z {
+class c extends Chunk76238.Z {
   send(e) {
     var t;
     null == (t = this.onSendingToRPCClient) || t.call(this, e, this.id), this.postMessageToRPCClient([i.Z.FRAME, e], this.origin)
@@ -25,7 +26,7 @@ class c extends l.Z {
     this.closed || this.postClose(this.origin, {
       code: e,
       message: t
-    }, this.postMessageToRPCClient), this.closed = !0
+    }, this.postMessageToRPCClient), this.closed = true
   }
   constructor({
     origin: e,
@@ -37,12 +38,12 @@ class c extends l.Z {
     postClose: u,
     onSendingToRPCClient: d
   }) {
-    if (super(a.He.POST_MESSAGE, i, l), s(this, "origin", void 0), s(this, "frameId", void 0), s(this, "postMessageToRPCClient", void 0), s(this, "logger", void 0), s(this, "postClose", void 0), s(this, "onSendingToRPCClient", void 0), s(this, "closed", void 0), -1 === ["etf", "json"].indexOf(l)) throw new r.Z({
+    if (super(a.He.POST_MESSAGE, i, l), s(this, "origin", true), s(this, "frameId", true), s(this, "postMessageToRPCClient", true), s(this, "logger", true), s(this, "postClose", true), s(this, "onSendingToRPCClient", true), s(this, "closed", true), false === ["etf", "json"].indexOf(l)) throw new r.Z({
       closeCode: o.$VG.INVALID_ENCODING
     }, "Invalid Encoding: ".concat(l));
     if ("etf" === l) throw new r.Z({
       closeCode: o.$VG.INVALID_ENCODING
     }, "Erlpack cannot be used on this client");
-    this.origin = e, this.postMessageToRPCClient = t, this.frameId = n, this.logger = c, this.postClose = u, this.onSendingToRPCClient = d, this.closed = !1
+    this.origin = e, this.postMessageToRPCClient = t, this.frameId = n, this.logger = c, this.postClose = u, this.onSendingToRPCClient = d, this.closed = false
   }
 }

@@ -1,5 +1,0 @@
-/** Chunk was on 22274 **/
-d.d(t, {
-  Z: () => a
-});
-let a = "https://cdn.discordapp.com/assets/content/fcf436cac25c3660ce473b996e2a639823adc3b065a2713428260cfc528b7f37.mp4"

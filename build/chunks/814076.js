@@ -1,20 +1,21 @@
 /** Chunk was on web.js **/
+/** chunk id: 814076, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => s
-}), n(388685);
-var r = n(73800),
-  i = n(742280),
-  o = n(442837),
-  a = n(351402);
+}), require("./388685.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk742280 = require("./742280.js"),
+  Chunk442837 = require("./442837.js"),
+  Chunk351402 = require("./351402.js");
 
 function s() {
-  let [e, t] = r.useState(!1), [n, s] = r.useState(!1), l = (0, o.e7)([a.Z], () => i.M.EEA_COUNTRIES.has(a.Z.ipCountryCodeWithFallback));
+  let [e, t] = Chunk73800.useState(false), [n, s] = Chunk73800.useState(false), l = (0, Chunk442837.e7)([Chunk351402.Z], () => Chunk742280.M.EEA_COUNTRIES.has(Chunk351402.Z.ipCountryCodeWithFallback));
   return {
-    hasViewedPurchaseTerms: e,
-    setHasViewedPurchaseTerms: t,
+    hasViewedPurchaseTerms: module,
+    setHasViewedPurchaseTerms: exports,
     showWithdrawalWaiver: l,
-    hasAcceptedWithdrawalWaiver: !l || n,
+    hasAcceptedWithdrawalWaiver: !l || require,
     setHasAcceptedWithdrawalWaiver: s
   }
 }

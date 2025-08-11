@@ -1,19 +1,20 @@
 /** Chunk was on web.js **/
+/** chunk id: 189786, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => o
 });
-var r = n(81825);
+var Chunk81825 = require("./81825.js");
 
 function i(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
-class o extends r.Z {
+class o extends Chunk81825.Z {
   isVoiceMuted() {
     return this.selfMute || this.mute || this.suppress || null != this.requestToSpeakTimestamp
   }
@@ -22,6 +23,6 @@ class o extends r.Z {
   }
   constructor(e) {
     var t;
-    super(), i(this, "userId", void 0), i(this, "channelId", void 0), i(this, "sessionId", void 0), i(this, "mute", void 0), i(this, "deaf", void 0), i(this, "selfMute", void 0), i(this, "selfDeaf", void 0), i(this, "selfVideo", void 0), i(this, "selfStream", void 0), i(this, "suppress", void 0), i(this, "requestToSpeakTimestamp", void 0), i(this, "discoverable", void 0), this.userId = e.userId || "", this.channelId = e.channelId || null, this.sessionId = e.sessionId || null, this.mute = e.mute || !1, this.deaf = e.deaf || !1, this.selfMute = e.selfMute || !1, this.selfDeaf = e.selfDeaf || !1, this.selfVideo = e.selfVideo || !1, this.selfStream = e.selfStream || !1, this.suppress = e.suppress || !1, this.requestToSpeakTimestamp = e.requestToSpeakTimestamp, this.discoverable = null == (t = e.discoverable) || t
+    super(), i(this, "userId", true), i(this, "channelId", true), i(this, "sessionId", true), i(this, "mute", true), i(this, "deaf", true), i(this, "selfMute", true), i(this, "selfDeaf", true), i(this, "selfVideo", true), i(this, "selfStream", true), i(this, "suppress", true), i(this, "requestToSpeakTimestamp", true), i(this, "discoverable", true), this.userId = e.userId || "", this.channelId = e.channelId || null, this.sessionId = e.sessionId || null, this.mute = e.mute || false, this.deaf = e.deaf || false, this.selfMute = e.selfMute || false, this.selfDeaf = e.selfDeaf || false, this.selfVideo = e.selfVideo || false, this.selfStream = e.selfStream || false, this.suppress = e.suppress || false, this.requestToSpeakTimestamp = e.requestToSpeakTimestamp, this.discoverable = null == (t = e.discoverable) || t
   }
 }

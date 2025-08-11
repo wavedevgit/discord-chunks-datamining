@@ -1,9 +1,10 @@
 /** Chunk was on 34779 **/
-n.d(t, {
+/** chunk id: 605951, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => l
 });
-var r = n(73800),
-  i = n(914010);
+var Chunk73800 = require("./73800.js"),
+  Chunk914010 = require("./914010.js");
 
 function l(e) {
   r.useEffect(() => {
@@ -11,7 +12,7 @@ function l(e) {
 
     function n() {
       let n = i.Z.getGuildId();
-      n !== t && (t = null != n ? n : null, e(null != n ? n : null, !1))
+      n !== t && (t = null != n ? n : null, e(null != n ? n : null, false))
     }
     return i.Z.addChangeListener(n), () => {
       i.Z.removeChangeListener(n)

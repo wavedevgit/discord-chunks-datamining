@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 6496, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   RR: () => A,
   WW: () => T,
   bE: () => C,
@@ -8,31 +9,31 @@ n.d(t, {
   q8: () => N,
   t$: () => S,
   xl: () => x
-}), n(415506), n(388685), n(781311);
-var r = n(683860),
-  i = n(344185),
-  o = n(569471),
-  a = n(260483),
-  s = n(144140),
-  l = n(592125),
-  c = n(703558),
-  u = n(496675),
-  d = n(117530),
-  f = n(709054),
-  _ = n(660189),
-  p = n(559241),
-  h = n(474387),
-  m = n(702225),
-  g = n(981631),
-  E = n(176505),
-  b = n(124368);
+}), require("./415506.js"), require("./388685.js"), require("./781311.js");
+var Chunk683860 = require("./683860.js"),
+  Chunk344185 = require("./344185.js"),
+  Chunk569471 = require("./569471.js"),
+  Chunk260483 = require("./260483.js"),
+  Chunk144140 = require("./144140.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk703558 = require("./703558.js"),
+  Chunk496675 = require("./496675.js"),
+  Chunk117530 = require("./117530.js"),
+  Chunk709054 = require("./709054.js"),
+  Chunk660189 = require("./660189.js"),
+  Chunk559241 = require("./559241.js"),
+  Chunk474387 = require("./474387.js"),
+  Chunk702225 = require("./702225.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk176505 = require("./176505.js"),
+  Chunk124368 = require("./124368.js");
 
 function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -90,9 +91,9 @@ function N(e) {
   let r = l.Z.getChannel(e);
   if (null == r) return [];
   let i = l.Z.getChannel(r.parent_id),
-    o = null == i ? void 0 : i.availableTags;
+    o = null == i ? true : i.availableTags;
   if (null == i || null == o) return [];
-  let a = null != (n = null == (t = c.Z.getThreadSettings(e)) ? void 0 : t.appliedTags) ? n : new Set,
+  let a = null != (n = null == (t = c.Z.getThreadSettings(e)) ? true : t.appliedTags) ? n : new Set,
     s = new Set(o.map(e => e.id));
   return Array.from(a).filter(e => s.has(e))
 }
@@ -124,10 +125,10 @@ function D(e) {
   let r = l.Z.getChannel(e);
   if (null == r) return [];
   let i = l.Z.getChannel(r.parent_id),
-    o = null == i ? void 0 : i.availableTags;
+    o = null == i ? true : i.availableTags;
   if (null == i || null == o) return [];
   let a = new Set(o.map(e => e.id));
-  return null != (n = null == (t = r.appliedTags) ? void 0 : t.filter(e => a.has(e))) ? n : []
+  return null != (n = null == (t = r.appliedTags) ? true : t.filter(e => a.has(e))) ? n : []
 }
 
 function L(e) {
@@ -146,9 +147,9 @@ function x(e) {
   } = e, s = l.Z.getChannel(o);
   return null != s && s.isForumLikeChannel() ? {
     forum_channel_has_guidelines: null != s.topic && s.topic.trim().length > 0,
-    forum_channel_default_emoji_reaction_id: null == (t = s.defaultReactionEmoji) ? void 0 : t.emojiId,
-    forum_channel_default_emoji_reaction_name: null == (n = s.defaultReactionEmoji) ? void 0 : n.emojiName,
-    forum_channel_available_tag_ids: null != (i = null == (r = s.availableTags) ? void 0 : r.map(e => e.id)) ? i : [],
+    forum_channel_default_emoji_reaction_id: null == (t = s.defaultReactionEmoji) ? true : t.emojiId,
+    forum_channel_default_emoji_reaction_name: null == (n = s.defaultReactionEmoji) ? true : n.emojiName,
+    forum_channel_available_tag_ids: null != (i = null == (r = s.availableTags) ? true : r.map(e => e.id)) ? i : [],
     forum_channel_tag_required: s.hasFlag(E.zZ.REQUIRE_TAG),
     forum_channel_can_create_post: u.Z.can(g.Plq.SEND_MESSAGES, s),
     forum_channel_filter_tag_ids: p.Z.getFilterTagIdsAnalytics(),
@@ -176,9 +177,9 @@ function M(e) {
   })), {
     thread_approximate_member_count: a.Z.getMemberCount(_),
     thread_approximate_message_count: s.Z.getCount(_),
-    thread_archived: (null == (t = m.threadMetadata) ? void 0 : t.archived) === !0,
-    thread_locked: null != (u = null == (n = m.threadMetadata) ? void 0 : n.locked) && u,
-    thread_auto_archive_duration_minutes: null != (d = null == (r = m.threadMetadata) ? void 0 : r.autoArchiveDuration) ? d : 0,
+    thread_archived: (null == (t = m.threadMetadata) ? true : t.archived) === true,
+    thread_locked: null != (u = null == (n = m.threadMetadata) ? true : n.locked) && u,
+    thread_auto_archive_duration_minutes: null != (d = null == (r = m.threadMetadata) ? true : r.autoArchiveDuration) ? d : 0,
     thread_approximate_creation_date: f.default.extractTimestamp(_),
     forum_post_id: m.id,
     forum_post_first_message_id: f.default.castChannelIdAsMessageId(m.id),
@@ -186,8 +187,8 @@ function M(e) {
     forum_post_num_unique_reactions: P(m.id),
     forum_post_applied_tag_ids: D(m.id),
     forum_post_is_pinned: m.hasFlag(E.zZ.PINNED),
-    forum_post_is_new: null == (i = h.Z.getReadStateSnapshotAnalytics(m.id)) ? void 0 : i.isNew,
-    forum_post_is_unread: null == (c = h.Z.getReadStateSnapshotAnalytics(m.id)) ? void 0 : c.hasUnreads,
+    forum_post_is_new: null == (i = h.Z.getReadStateSnapshotAnalytics(m.id)) ? true : i.isNew,
+    forum_post_is_unread: null == (c = h.Z.getReadStateSnapshotAnalytics(m.id)) ? true : c.hasUnreads,
     forum_post_is_following: o.Z.hasJoined(m.id),
     forum_post_attachment_mimetypes: L(m.id)
   }) : null

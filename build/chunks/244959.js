@@ -1,18 +1,19 @@
 /** Chunk was on 33156 **/
-n.d(t, {
+/** chunk id: 244959, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => i
 });
-var a = n(925300),
-  r = n(475637);
+var Chunk925300 = require("./925300.js"),
+  Chunk475637 = require("./475637.js");
 let i = {
-  ordinalNumber: (0, a.Z)({
+  ordinalNumber: (0, Chunk925300.Z)({
     matchPattern: /^第?\d+(年|四半期|月|週|日|時|分|秒)?/i,
     parsePattern: /\d+/i,
     valueCallback: function(e) {
       return parseInt(e, 10)
     }
   }),
-  era: (0, r.Z)({
+  era: (0, Chunk475637.Z)({
     matchPatterns: {
       narrow: /^(B\.?C\.?|A\.?D\.?)/i,
       abbreviated: /^(紀元[前後]|西暦)/i,
@@ -25,7 +26,7 @@ let i = {
     },
     defaultParseWidth: "any"
   }),
-  quarter: (0, r.Z)({
+  quarter: (0, Chunk475637.Z)({
     matchPatterns: {
       narrow: /^[1234]/i,
       abbreviated: /^Q[1234]/i,
@@ -40,7 +41,7 @@ let i = {
       return e + 1
     }
   }),
-  month: (0, r.Z)({
+  month: (0, Chunk475637.Z)({
     matchPatterns: {
       narrow: /^([123456789]|1[012])/,
       abbreviated: /^([123456789]|1[012])月/i,
@@ -52,7 +53,7 @@ let i = {
     },
     defaultParseWidth: "any"
   }),
-  day: (0, r.Z)({
+  day: (0, Chunk475637.Z)({
     matchPatterns: {
       narrow: /^[日月火水木金土]/,
       short: /^[日月火水木金土]/,
@@ -65,7 +66,7 @@ let i = {
     },
     defaultParseWidth: "any"
   }),
-  dayPeriod: (0, r.Z)({
+  dayPeriod: (0, Chunk475637.Z)({
     matchPatterns: {
       any: /^(AM|PM|午前|午後|正午|深夜|真夜中|夜|朝)/i
     },

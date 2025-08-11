@@ -1,25 +1,26 @@
 /** Chunk was on 13616 **/
-n.d(t, {
+/** chunk id: 995390, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => y
-}), n(539854), n(388685), n(467055);
-var i = n(73800),
-  r = n(512722),
-  l = n.n(r),
-  o = n(392711),
-  a = n.n(o),
-  s = n(442837),
-  c = n(139387),
-  d = n(895924),
-  u = n(581364),
-  p = n(592125),
-  m = n(485386),
-  b = n(430824),
-  g = n(496675),
-  f = n(594174),
-  h = n(823379),
-  x = n(905753),
-  j = n(399860),
-  v = n(981631);
+}), require("./539854.js"), require("./388685.js"), require("./467055.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk512722 = require("./512722.js"),
+  l = require.n(Chunk512722),
+  Chunk392711 = require("./392711.js"),
+  a = require.n(Chunk392711),
+  Chunk442837 = require("./442837.js"),
+  Chunk139387 = require("./139387.js"),
+  Chunk895924 = require("./895924.js"),
+  Chunk581364 = require("./581364.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk485386 = require("./485386.js"),
+  Chunk430824 = require("./430824.js"),
+  Chunk496675 = require("./496675.js"),
+  Chunk594174 = require("./594174.js"),
+  Chunk823379 = require("./823379.js"),
+  Chunk905753 = require("./905753.js"),
+  Chunk399860 = require("./399860.js"),
+  Chunk981631 = require("./981631.js");
 
 function O(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -31,9 +32,9 @@ function O(e) {
       var i;
       i = n[t], t in e ? Object.defineProperty(e, t, {
         value: i,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
+        enumerable: true,
+        configurable: true,
+        writable: true
       }) : e[t] = i
     })
   }
@@ -49,11 +50,11 @@ function y(e, t, n) {
         l = (0, j.rE)(e, d.Kw.ROLE);
       return l in n || (n[l] = {
         id: e,
-        permission: !0,
+        permission: true,
         type: d.Kw.ROLE
       }), r in n || (n[r] = {
         id: i,
-        permission: !0,
+        permission: true,
         type: d.Kw.CHANNEL
       }), n
     })(e, null != r ? r : {}), [r, e]),
@@ -61,11 +62,11 @@ function y(e, t, n) {
       var e;
       if (null == n) return;
       let t = x.Z.getCommand(n);
-      return null != (e = null == t ? void 0 : t.permissions) ? e : {}
+      return null != (e = null == t ? true : t.permissions) ? e : {}
     }, [n]),
     _ = (0, s.e7)([x.Z], () => {
       var e;
-      return null == n ? x.Z.getEditedApplication() : null == (e = x.Z.getEditedCommand()) ? void 0 : e.permissions
+      return null == n ? x.Z.getEditedApplication() : null == (e = x.Z.getEditedCommand()) ? true : e.permissions
     }, [n]),
     C = null != n ? n : t,
     N = null != n ? y : o,
@@ -83,7 +84,7 @@ function y(e, t, n) {
       let r = (0, s.e7)([g.Z], () => g.Z.getHighestRole(n), [n]),
         o = (0, s.e7)([f.default], () => {
           var e;
-          return null == (e = f.default.getCurrentUser()) ? void 0 : e.id
+          return null == (e = f.default.getCurrentUser()) ? true : e.id
         });
       l()(null != o, "useComputePermissions: currentUserId must not be null");
       let a = o === n.ownerId,
@@ -110,12 +111,12 @@ function y(e, t, n) {
           i = (0, u.bD)(n.id),
           l = {};
         for (let [o, s] of Object.entries(t)) {
-          let t = !1,
-            c = !1;
+          let t = false,
+            c = false;
           if (s.type === d.Kw.CHANNEL) {
             let e = s.id === i,
               n = y[s.id];
-            t = e || g.Z.can(v.Plq.VIEW_CHANNEL, n), c = !0
+            t = e || g.Z.can(v.Plq.VIEW_CHANNEL, n), c = true
           } else if (s.type === d.Kw.ROLE) {
             let i = s.id === e,
               l = _[s.id];

@@ -1,5 +1,6 @@
 /** Chunk was on 18639 **/
-b.a(_, async function(_, a) {
+/** chunk id: 718493, original params: _,e,b (module,exports,require) **/
+require.a(module, async function(_, a) {
   try {
     b.r(e), b.d(e, {
       BlockedDomainsStore: () => c.dJ,

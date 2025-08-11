@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 127253, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   keybindHint: "keybindHint__46002",
   keybindHintText: "keybindHintText__46002",
   warningIcon: "warningIcon__46002",

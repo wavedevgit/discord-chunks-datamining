@@ -1,5 +1,6 @@
 /** Chunk was on 72920 **/
-n.d(e, {
+/** chunk id: 910693, original params: t,e,n (module,exports,require) **/
+require.d(exports, {
   BG: () => E,
   aY: () => T,
   dW: () => g,
@@ -8,12 +9,12 @@ n.d(e, {
   jQ: () => A,
   sE: () => O
 });
-var l, a, i = n(73800),
-  r = n(100527),
-  o = n(367907),
-  u = n(314897),
-  s = n(626135),
-  c = n(981631);
+var l, a, Chunk73800 = require("./73800.js"),
+  Chunk100527 = require("./100527.js"),
+  Chunk367907 = require("./367907.js"),
+  Chunk314897 = require("./314897.js"),
+  Chunk626135 = require("./626135.js"),
+  Chunk981631 = require("./981631.js");
 
 function _(t, e, n) {
   var l;
@@ -27,9 +28,9 @@ function _(t, e, n) {
         var l;
         l = n[e], e in t ? Object.defineProperty(t, e, {
           value: l,
-          enumerable: !0,
-          configurable: !0,
-          writable: !0
+          enumerable: true,
+          configurable: true,
+          writable: true
         }) : t[e] = l
       })
     }
@@ -86,8 +87,8 @@ function O(t, e) {
       guild_id: t,
       location: n,
       locations: r,
-      target_user_id: null != l ? l : void 0,
-      targets: null != a ? a : void 0
+      target_user_id: null != l ? l : true,
+      targets: null != a ? a : true
     };
     _(c.rMx.MODERATION_ACTION, i)
   }, [t, n, l, a, r])

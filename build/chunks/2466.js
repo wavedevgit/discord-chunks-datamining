@@ -1,26 +1,27 @@
 /** Chunk was on 68784 **/
-n.d(t, {
+/** chunk id: 2466, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => l
 });
-var r = n(489887),
-  a = n(388032);
+var Chunk489887 = require("./489887.js"),
+  Chunk388032 = require("./388032.js");
 
 function l() {
   return Object.freeze({
-    [r.lc.ONE_HOUR]: a.intl.formatToPlainString(a.t["b/mgt7"], {
+    [Chunk489887.lc.ONE_HOUR]: Chunk388032.intl.formatToPlainString(Chunk388032.t["b/mgt7"], {
       num: 1
     }),
-    [r.lc.FOUR_HOURS]: a.intl.formatToPlainString(a.t["b/mgt7"], {
+    [Chunk489887.lc.FOUR_HOURS]: Chunk388032.intl.formatToPlainString(Chunk388032.t["b/mgt7"], {
       num: 4
     }),
-    [r.lc.EIGHT_HOURS]: a.intl.formatToPlainString(a.t["b/mgt7"], {
+    [Chunk489887.lc.EIGHT_HOURS]: Chunk388032.intl.formatToPlainString(Chunk388032.t["b/mgt7"], {
       num: 8
     }),
-    [r.lc.ONE_DAY]: a.intl.formatToPlainString(a.t["b/mgt7"], {
+    [Chunk489887.lc.ONE_DAY]: Chunk388032.intl.formatToPlainString(Chunk388032.t["b/mgt7"], {
       num: 24
     }),
-    [r.lc.THREE_DAYS]: a.intl.string(a.t.Xn5rX1),
-    [r.lc.SEVEN_DAYS]: a.intl.string(a.t["Lmq+rq"]),
-    [r.lc.FOURTEEN_DAYS]: a.intl.string(a.t["mb8A/P"])
+    [Chunk489887.lc.THREE_DAYS]: Chunk388032.intl.string(Chunk388032.t.Xn5rX1),
+    [Chunk489887.lc.SEVEN_DAYS]: Chunk388032.intl.string(Chunk388032.t["Lmq+rq"]),
+    [Chunk489887.lc.FOURTEEN_DAYS]: Chunk388032.intl.string(Chunk388032.t["mb8A/P"])
   })
 }

@@ -1,5 +1,6 @@
 /** Chunk was on 49910 **/
-e.exports = {
+/** chunk id: 294649, original params: e,t,n (module,exports,require) **/
+module.exports = {
   root: "root__81345",
   gradient: "gradient__81345",
   header: "header__81345",

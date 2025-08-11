@@ -1,5 +1,6 @@
 /** Chunk was on web.js **/
-e.exports = function(e) {
+/** chunk id: 69701, original params: e (module,exports,re quire) **/
+module.exports = function(e) {
   let t = ["package", "import", "option", "optional", "required", "repeated", "group", "oneof"],
     n = ["double", "float", "int32", "int64", "uint32", "uint64", "sint32", "sint64", "fixed32", "fixed64", "sfixed32", "sfixed64", "bool", "string", "bytes"],
     r = {
@@ -21,7 +22,7 @@ e.exports = function(e) {
       className: "function",
       beginKeywords: "rpc",
       end: /[{;]/,
-      excludeEnd: !0,
+      excludeEnd: true,
       keywords: "rpc returns"
     }, {
       begin: /^\s*[A-Z_]+(?=\s*=[^\n]+;$)/

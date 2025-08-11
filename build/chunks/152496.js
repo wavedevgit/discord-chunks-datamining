@@ -1,5 +1,6 @@
 /** Chunk was on web.js **/
-e.exports = function(e) {
+/** chunk id: 152496, original params: e (module,exports,re quire) **/
+module.exports = function(e) {
   let t = {
       keyword: "if then not for in while do return else elseif break continue switch and or unless when class extends super local import export from using",
       literal: "true false nil",
@@ -44,7 +45,7 @@ e.exports = function(e) {
     s = {
       className: "params",
       begin: "\\([^\\(]",
-      returnBegin: !0,
+      returnBegin: true,
       contains: [{
         begin: /\(/,
         end: /\)/,
@@ -61,7 +62,7 @@ e.exports = function(e) {
       className: "function",
       begin: "^\\s*" + n + "\\s*=\\s*" + a,
       end: "[-=]>",
-      returnBegin: !0,
+      returnBegin: true,
       contains: [o, s]
     }, {
       begin: /[\(,:=]\s*/,
@@ -70,7 +71,7 @@ e.exports = function(e) {
         className: "function",
         begin: a,
         end: "[-=]>",
-        returnBegin: !0,
+        returnBegin: true,
         contains: [s]
       }]
     }, {
@@ -80,7 +81,7 @@ e.exports = function(e) {
       illegal: /[:="\[\]]/,
       contains: [{
         beginKeywords: "extends",
-        endsWithParent: !0,
+        endsWithParent: true,
         illegal: /[:="\[\]]/,
         contains: [o]
       }, o]
@@ -88,8 +89,8 @@ e.exports = function(e) {
       className: "name",
       begin: n + ":",
       end: ":",
-      returnBegin: !0,
-      returnEnd: !0,
+      returnBegin: true,
+      returnEnd: true,
       relevance: 0
     }])
   }

@@ -1,4 +1,5 @@
 /** Chunk was on 21617 **/
+/** chunk id: 170830, original params: i,t,e (module,exports,require) **/
 function s(i) {
   let t = 0,
     e = [];
@@ -14,6 +15,6 @@ function s(i) {
     }
   }
 }
-e.d(t, {
+require.d(exports, {
   G: () => s
-}), e(539854)
+}), require("./539854.js")

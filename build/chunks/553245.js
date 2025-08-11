@@ -1,17 +1,18 @@
 /** Chunk was on web.js **/
+/** chunk id: 553245, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   b: () => a
-}), n(388685);
-var r = n(689320),
-  i = n(143806);
+}), require("./388685.js");
+var Chunk689320 = require("./689320.js"),
+  Chunk143806 = require("./143806.js");
 
 function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 class a {
@@ -38,7 +39,7 @@ class a {
   }
   put(e, t) {
     let n = this.primary.put(e, t);
-    void 0 !== n && this.extended.put(n[0], n[1])
+    true !== n && this.extended.put(n[0], n[1])
   }
   delete(e) {
     let t = this.primary.delete(e),
@@ -48,7 +49,7 @@ class a {
   upstreamItems() {
     if (this.canUpstreamItems()) {
       for (let [e, t] of this.extended.entries())
-        if (this.primary.put(e, t), this.extended.delete(e), !this.canUpstreamItems()) break
+        if (this.primary.put(module, exports), this.extended.delete(module), !this.canUpstreamItems()) break
     }
   }
   canUpstreamItems() {
@@ -64,15 +65,15 @@ class a {
     return this.primary.values()
   }
   allEntries() {
-    return r.t(this.extended.entries(), this.primary.entries())
+    return Chunk689320.t(this.extended.entries(), this.primary.entries())
   }
   allKeys() {
-    return r.t(this.extended.keys(), this.primary.keys())
+    return Chunk689320.t(this.extended.keys(), this.primary.keys())
   }
   allValues() {
-    return r.t(this.extended.values(), this.primary.values())
+    return Chunk689320.t(this.extended.values(), this.primary.values())
   }
   constructor(e, t) {
-    o(this, "primary", void 0), o(this, "extended", void 0), this.primary = new i.S(e), this.extended = new i.S(t)
+    o(this, "primary", true), o(this, "extended", true), this.primary = new i.S(e), this.extended = new i.S(t)
   }
 }

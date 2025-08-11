@@ -1,11 +1,12 @@
 /** Chunk was on web.js **/
+/** chunk id: 245335, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Iq: () => o,
   RV: () => a,
   wx: () => r,
   xf: () => i
-}), n(388685);
+}), require("./388685.js");
 var r = function(e) {
   return e[e.GUILD = 0] = "GUILD", e[e.GROUP_DM = 1] = "GROUP_DM", e[e.FRIEND = 2] = "FRIEND", e
 }({});

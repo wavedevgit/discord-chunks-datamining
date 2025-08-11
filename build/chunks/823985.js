@@ -1,9 +1,10 @@
 /** Chunk was on 54934 **/
-n.d(e, {
+/** chunk id: 823985, original params: t,e,n (module,exports,require) **/
+require.d(exports, {
   j: () => a,
   r: () => r
-}), n(35282);
-var i = n(981631);
+}), require("./35282.js");
+var Chunk981631 = require("./981631.js");
 
 function a(t, e) {
   return e === i.ABu.MASTODON && /^@?[a-z0-9_]+([.-]+[a-z0-9_]+)*@[^@]+\.[^.@]{2,}$/i.test(t), /^.+\.[^.@]{2,}$/.test(t)

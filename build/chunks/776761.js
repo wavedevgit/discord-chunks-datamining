@@ -1,5 +1,6 @@
 /** Chunk was on 1272 **/
-e.exports = {
+/** chunk id: 776761, original params: e,t,n (module,exports,require) **/
+module.exports = {
   recommendationReason: "recommendationReason__6efad",
   circle: "circle__6efad",
   icon: "icon__6efad",

@@ -1,18 +1,19 @@
 /** Chunk was on web.js **/
+/** chunk id: 905423, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => c
 });
-var r = n(114858),
-  i = n(362383),
-  o = n(731965),
-  a = n(893607),
-  s = n(981631);
+var Chunk114858 = require("./114858.js"),
+  Chunk362383 = require("./362383.js"),
+  Chunk731965 = require("./731965.js"),
+  Chunk893607 = require("./893607.js"),
+  Chunk981631 = require("./981631.js");
 
 function l(e) {
   let t = (0, r.LX)(null != e ? e : "", {
     path: s.Z5c.CHANNEL(a.Hw.guildId(), a.Hw.channelId({
-      optional: !0
+      optional: true
     }), ":messageId?")
   });
   if (null != t) {
@@ -36,7 +37,7 @@ function l(e) {
     channelId: null
   }
 }
-let c = (0, i.F)(e => ({
+let c = (0, Chunk362383.F)(e => ({
   path: null,
   basePath: "/",
   guildId: null,

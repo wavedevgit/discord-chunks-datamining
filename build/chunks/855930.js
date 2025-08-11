@@ -1,11 +1,12 @@
 /** Chunk was on 67244 **/
+/** chunk id: 855930, original params: e,t,r (module,exports,require) **/
 "use strict";
-r.d(t, {
+require.d(exports, {
   Z: () => s
 });
-var a = r(665352),
-  n = r(216397);
-let s = new a.Z({
+var Chunk665352 = require("./665352.js"),
+  Chunk216397 = require("./216397.js");
+let s = new Chunk665352.Z({
   id: "hsl",
   name: "HSL",
   coords: {
@@ -23,7 +24,7 @@ let s = new a.Z({
       name: "Lightness"
     }
   },
-  base: n.Z,
+  base: Chunk216397.Z,
   fromBase: e => {
     let t = Math.max(...e),
       r = Math.min(...e),
@@ -51,7 +52,7 @@ let s = new a.Z({
     function n(e) {
       let n = (e + t / 30) % 12,
         s = r * Math.min(a, 1 - a);
-      return a - s * Math.max(-1, Math.min(n - 3, 9 - n, 1))
+      return a - s * Math.max(false, Math.min(n - 3, 9 - n, 1))
     }
     return (t %= 360) < 0 && (t += 360), r /= 100, a /= 100, [n(0), n(8), n(4)]
   },
@@ -61,8 +62,8 @@ let s = new a.Z({
     },
     hsla: {
       coords: ["<number> | <angle>", "<percentage>", "<percentage>"],
-      commas: !0,
-      lastAlpha: !0
+      commas: true,
+      lastAlpha: true
     }
   }
 })

@@ -1,0 +1,31 @@
+/** Chunk was on web.js **/
+/** chunk id: 710867, original params: e,t,n (module,exports,re quire) **/
+"use strict";
+require.d(exports, {
+  Z: () => a
+});
+var Chunk255367 = require("./255367.js");
+require("./73800.js");
+var Chunk293335 = require("./293335.js"),
+  Chunk422786 = require("./422786.js");
+let a = e => {
+  let {
+    profileEffectConfig: t,
+    onReady: n
+  } = e, {
+    pendingRef: a,
+    setPending: s
+  } = (0, i.Z)(t.effects, n);
+  return <div className={o.profileEffects}><div className={o.inner}>{t.effects.map(e => (0, r.jsx)("img", {
+        src: e.src,
+        alt: "Preload Profile Effect Asset",
+        "aria-hidden": true,
+        style: {
+          opacity: 0,
+          position: "absolute"
+        },
+        onLoad: () => {
+          s(a.current - 1), a.current = a.current - 1
+        }
+      }, e.src))}</div></div>
+}

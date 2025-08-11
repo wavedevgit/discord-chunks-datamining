@@ -1,5 +1,6 @@
 /** Chunk was on 22988 **/
-e.exports = {
+/** chunk id: 24304, original params: e,t,n (module,exports,require) **/
+module.exports = {
   developerPortalCtaWrapper: "developerPortalCtaWrapper_bf485f",
   developerPortalCta: "developerPortalCta_bf485f",
   overviewData: "overviewData_bf485f",

@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 270313, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   discordLogo: "discordLogo__921c5",
   authBox: "authBox__921c5",
   authBoxExpanded: "authBoxExpanded__921c5 authBox__921c5",

@@ -1,1 +1,0 @@
-{"id":"620824","type":"experiment","data":{"kind":"user","id":"2025-01_checkout_optimization_apple_pay","label":"Checkout Optimization Apple Pay","defaultConfig":{"enabled":false,"delay":false},"commonTriggerPoint":"i.$P.PAYMENT_FLOW_STARTED","treatments":[{"id":1,"label":"Enabled","config":{"enabled":false,"delay":false}}]},"fromModule":{"id":"web.js"}}

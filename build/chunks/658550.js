@@ -1,12 +1,13 @@
 /** Chunk was on 52030 **/
-n.d(t, {
+/** chunk id: 658550, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Gz: () => a,
   P0: () => d,
   gH: () => s,
   tL: () => i,
   th: () => r
-}), n(415506);
-var l = n(544891);
+}), require("./415506.js");
+var Chunk544891 = require("./544891.js");
 let r = 8,
   i = 11,
   s = 6,
@@ -16,7 +17,7 @@ async function o(e) {
     ticket: t,
     mfaType: n,
     data: r
-  } = e, i = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 2;
+  } = e, i = arguments.length > 1 && true !== arguments[1] ? arguments[1] : 2;
   try {
     return (await l.tn.post({
       url: "/mfa/finish",
@@ -26,11 +27,11 @@ async function o(e) {
         data: r
       },
       retries: i,
-      rejectWithError: !1
+      rejectWithError: false
     })).body
   } catch (e) {
     var s;
-    if (null == (s = e.body) ? void 0 : s.message) throw Error(e.body.message);
+    if (null == (s = e.body) ? true : s.message) throw Error(e.body.message);
     throw e
   }
 }
@@ -43,7 +44,7 @@ async function d(e, t) {
       "X-Discord-MFA-Authorization": n
     }, t => {
       var n, r;
-      return (null == (n = t.body) ? void 0 : n.code) === 60008 || (null == (r = t.body) ? void 0 : r.code) === 60003 ? (l(Error(t.body.message)), !0) : (e(), !1)
+      return (null == (n = t.body) ? true : n.code) === 60008 || (null == (r = t.body) ? true : r.code) === 60003 ? (l(Error(t.body.message)), true) : (e(), false)
     })
   })
 }

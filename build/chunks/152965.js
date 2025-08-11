@@ -1,5 +1,6 @@
 /** Chunk was on 46746 **/
-e.exports = {
+/** chunk id: 152965, original params: e,t,n (module,exports,require) **/
+module.exports = {
   root: "root__32fe1",
   channelResult: "channelResult__32fe1",
   channelResultInfo: "channelResultInfo__32fe1",

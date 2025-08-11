@@ -1,35 +1,36 @@
 /** Chunk was on 1272 **/
-n.d(t, {
+/** chunk id: 265067, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => m
-}), n(539854), n(388685);
-var r = n(243814),
-  i = n(100527),
-  l = n(208049),
-  a = n(763296),
-  o = n(697426),
-  s = n(242291),
-  c = n(641015),
-  u = n(594174),
-  d = n(996106),
-  p = n(452426),
-  f = n(736045),
-  h = n(186901),
-  g = n(231338);
+}), require("./539854.js"), require("./388685.js");
+var Chunk243814 = require("./243814.js"),
+  Chunk100527 = require("./100527.js"),
+  Chunk208049 = require("./208049.js"),
+  Chunk763296 = require("./763296.js"),
+  Chunk697426 = require("./697426.js"),
+  Chunk242291 = require("./242291.js"),
+  Chunk641015 = require("./641015.js"),
+  Chunk594174 = require("./594174.js"),
+  Chunk996106 = require("./996106.js"),
+  Chunk452426 = require("./452426.js"),
+  Chunk736045 = require("./736045.js"),
+  Chunk186901 = require("./186901.js"),
+  Chunk231338 = require("./231338.js");
 let m = {
-  [g.Et.GET_SOUNDBOARD_SOUNDS]: {
+  [Chunk231338.Et.GET_SOUNDBOARD_SOUNDS]: {
     scope: {
-      [h.Gp.ANY]: [r.x.RPC, h.lH]
+      [Chunk186901.Gp.ANY]: [Chunk243814.x.RPC, Chunk186901.lH]
     },
     async handler() {
-      await (0, l.w)();
-      let e = a.Z.getSounds(),
+      await (0, Chunk208049.w)();
+      let e = Chunk763296.Z.getSounds(),
         t = [];
-      return e.forEach(e => e.forEach(e => t.push((0, o.QL)(e)))), t
+      return module.forEach(e => e.forEach(e => t.push((0, o.QL)(e)))), exports
     }
   },
-  [g.Et.PLAY_SOUNDBOARD_SOUND]: {
+  [Chunk231338.Et.PLAY_SOUNDBOARD_SOUND]: {
     scope: {
-      [h.Gp.ALL]: [r.x.RPC, r.x.RPC_VOICE_WRITE]
+      [Chunk186901.Gp.ALL]: [Chunk243814.x.RPC, Chunk243814.x.RPC_VOICE_WRITE]
     },
     validation: e => (0, p.Z)(e).required().keys({
       guild_id: e.string(),

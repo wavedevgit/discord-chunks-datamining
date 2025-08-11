@@ -1,10 +1,11 @@
 /** Chunk was on 88934 **/
-n.d(t, {
+/** chunk id: 31569, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => i
 });
-var r = n(972959);
+var Chunk972959 = require("./972959.js");
 let a = Object.freeze({
     query: "",
-    searchBarState: n(49898).GlobalDiscoverySearchBarState.DEFAULT
+    searchBarState: require("./49898.js").GlobalDiscoverySearchBarState.DEFAULT
   }),
-  i = (0, r.H)(() => a)
+  i = (0, Chunk972959.H)(() => a)

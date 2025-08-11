@@ -1,4 +1,6 @@
-/** Chunk was on web.js **/ ! function(e, t) {
+/** Chunk was on web.js **/
+/** chunk id: 661195, original params: e,t,n (module,exports,re quire) **/
+! function(e, t) {
   t(n(913527))
 }(0, function(e) {
   return e.defineLocale("ca", {
@@ -8,11 +10,11 @@
       isFormat: /D[oD]?(\s)+MMMM/
     },
     monthsShort: "gen._febr._mar\xe7_abr._maig_juny_jul._ag._set._oct._nov._des.".split("_"),
-    monthsParseExact: !0,
+    monthsParseExact: true,
     weekdays: "diumenge_dilluns_dimarts_dimecres_dijous_divendres_dissabte".split("_"),
     weekdaysShort: "dg._dl._dt._dc._dj._dv._ds.".split("_"),
     weekdaysMin: "dg_dl_dt_dc_dj_dv_ds".split("_"),
-    weekdaysParseExact: !0,
+    weekdaysParseExact: true,
     longDateFormat: {
       LT: "H:mm",
       LTS: "H:mm:ss",

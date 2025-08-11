@@ -1,6 +1,7 @@
 /** Chunk was on 35305 **/
+/** chunk id: 664460, original params: e,t,n (module,exports,require) **/
 "use strict";
-e.exports = {
+module.exports = {
   modal: "modal__7e85a",
   modalInner: "modalInner__7e85a",
   header: "header__7e85a",

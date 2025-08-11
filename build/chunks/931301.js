@@ -1,33 +1,27 @@
 /** Chunk was on web.js **/
+/** chunk id: 931301, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => o
 });
-var r = n(981631);
-let i = !1;
+var Chunk981631 = require("./981631.js");
+let i = false;
 
 function o() {
-  let {
-    default: e
-  } = n(808506), {
-    default: t
-  } = n(237997), {
-    DEV_PID: o,
-    getPID: a
-  } = n(145597), s = i ? a() === o : e.isFocusedPidOutOfProcess(), l = t.isPinned(r.Odu.TEXT);
-  switch (!0) {
-    case __OVERLAY__ && t.isInstanceLocked():
-      return r.ADE.OVERLAY_LOCKED_ACTIVATED;
+  letChunk808506 = require("./808506.js"), Chunk237997 = require("./237997.js"), Chunk145597 = require("./145597.js"), s = i ? a() === o : module.isFocusedPidOutOfProcess(), l = exports.isPinned(Chunk981631.Odu.TEXT);
+  switch (true) {
+    case __OVERLAY__ && exports.isInstanceLocked():
+      return Chunk981631.ADE.OVERLAY_LOCKED_ACTIVATED;
     case __OVERLAY__ && l:
-      return r.ADE.OVERLAY_UNLOCKED_PINNED;
-    case __OVERLAY__ && !t.isInstanceLocked():
-      return r.ADE.OVERLAY_UNLOCKED;
-    case s && e.isFocusedPidInputLocked():
-      return r.ADE.OVERLAY_LOCKED_ACTIVATED;
+      return Chunk981631.ADE.OVERLAY_UNLOCKED_PINNED;
+    case __OVERLAY__ && !exports.isInstanceLocked():
+      return Chunk981631.ADE.OVERLAY_UNLOCKED;
+    case s && module.isFocusedPidInputLocked():
+      return Chunk981631.ADE.OVERLAY_LOCKED_ACTIVATED;
     case s && l:
-      return r.ADE.OVERLAY_UNLOCKED_PINNED;
-    case s && !e.isFocusedPidInputLocked():
-      return r.ADE.OVERLAY_UNLOCKED;
+      return Chunk981631.ADE.OVERLAY_UNLOCKED_PINNED;
+    case s && !module.isFocusedPidInputLocked():
+      return Chunk981631.ADE.OVERLAY_UNLOCKED;
     default:
       return null
   }

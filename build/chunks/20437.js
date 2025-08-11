@@ -1,16 +1,17 @@
 /** Chunk was on 61526 **/
-n.d(t, {
+/** chunk id: 20437, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Q: () => r,
   S: () => l
 });
-var a = n(73800);
-let r = a.createContext({
+var Chunk73800 = require("./73800.js");
+let r = Chunk73800.createContext({
   videoPlayerRef: {
     current: null
   },
-  applicationAudioEnabled: !0,
+  applicationAudioEnabled: true,
   setApplicationAudioEnabled: () => {},
-  voiceAudioEnabled: !0,
+  voiceAudioEnabled: true,
   setVoiceAudioEnabled: () => {},
   cropData: {
     start: 0,
@@ -20,5 +21,5 @@ let r = a.createContext({
 });
 
 function l() {
-  return a.useContext(r)
+  return Chunk73800.useContext(r)
 }

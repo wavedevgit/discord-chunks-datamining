@@ -1,24 +1,25 @@
 /** Chunk was on web.js **/
+/** chunk id: 174470, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   D: () => c,
   j: () => l
 });
-var r = n(73800),
-  i = n(399606),
-  o = n(430824),
-  a = n(763296);
+var Chunk73800 = require("./73800.js"),
+  Chunk399606 = require("./399606.js"),
+  Chunk430824 = require("./430824.js"),
+  Chunk763296 = require("./763296.js");
 
 function s(e, t) {
   return e.filter(e => null == t.get(e))
 }
 
 function l() {
-  let e = (0, i.Wu)([o.Z], () => o.Z.getGuildIds()),
-    t = (0, i.e7)([a.Z], () => a.Z.getSounds());
-  return (0, r.useMemo)(() => s(e, t), [e, t])
+  let e = (0, Chunk399606.Wu)([Chunk430824.Z], () => Chunk430824.Z.getGuildIds()),
+    t = (0, Chunk399606.e7)([Chunk763296.Z], () => Chunk763296.Z.getSounds());
+  return (0, Chunk73800.useMemo)(() => s(module, exports), [module, exports])
 }
 
 function c() {
-  return s(o.Z.getGuildIds(), a.Z.getSounds())
+  return s(Chunk430824.Z.getGuildIds(), Chunk763296.Z.getSounds())
 }

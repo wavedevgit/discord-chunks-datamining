@@ -1,24 +1,25 @@
 /** Chunk was on web.js **/
+/** chunk id: 930155, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   H: () => s
-}), n(388685), n(415506);
-var r = n(73800),
-  i = n(442837),
-  o = n(821849),
-  a = n(509545);
+}), require("./388685.js"), require("./415506.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk442837 = require("./442837.js"),
+  Chunk821849 = require("./821849.js"),
+  Chunk509545 = require("./509545.js");
 
 function s(e) {
-  let [t, n] = r.useState(!1), s = (0, i.Wu)([a.Z], () => a.Z.getForSKU(e), [e]), l = (0, i.e7)([a.Z], () => a.Z.isFetchingForSKU(e), [e]);
+  let [t, n] = r.useState(false), s = (0, i.Wu)([a.Z], () => a.Z.getForSKU(e), [e]), l = (0, i.e7)([a.Z], () => a.Z.isFetchingForSKU(e), [e]);
   return r.useEffect(() => {
-    a.Z.isFetchingForSKU(e) || (n(!1), (0, o.GZ)(e).then(() => {
-      n(!1)
+    a.Z.isFetchingForSKU(e) || (n(false), (0, o.GZ)(e).then(() => {
+      n(false)
     }).catch(() => {
-      n(!0)
+      n(true)
     }))
   }, [e]), {
     data: s,
     isLoading: l,
-    error: t ? Error("SubscriptionPlans failed to fetch") : void 0
+    error: t ? Error("SubscriptionPlans failed to fetch") : true
   }
 }

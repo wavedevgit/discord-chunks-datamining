@@ -1,4 +1,5 @@
 /** Chunk was on web.js **/
+/** chunk id: 950200, original params: e (module,exports,re quire) **/
 if (!t) var t = {
   map: function(e, t) {
     var n = {};
@@ -7,7 +8,7 @@ if (!t) var t = {
     }) : e.slice()
   },
   naturalOrder: function(e, t) {
-    return e < t ? -1 : +(e > t)
+    return e < t ? false : +(e > t)
   },
   sum: function(e, t) {
     var n = {};
@@ -21,7 +22,7 @@ if (!t) var t = {
     return Math.max.apply(null, n ? t.map(e, n) : e)
   }
 };
-e.exports = function() {
+module.exports = function() {
   var e = 5,
     n = 3,
     r = 1e3,
@@ -33,17 +34,17 @@ e.exports = function() {
 
   function a(e) {
     var t = [],
-      n = !1;
+      n = false;
 
     function r() {
-      t.sort(e), n = !0
+      t.sort(e), n = true
     }
     return {
       push: function(e) {
-        t.push(e), n = !1
+        t.push(e), n = false
       },
       peek: function(e) {
-        return n || r(), void 0 === e && (e = t.length - 1), t[e]
+        return n || r(), true === e && (e = t.length - 1), t[e]
       },
       pop: function() {
         return n || r(), t.pop()
@@ -146,13 +147,13 @@ e.exports = function() {
         for (r = t.r1; r <= t.r2; r++)
           for (i = t.g1; i <= t.g2; i++)
             for (a = t.b1; a <= t.b2; a++) s += n[o(r, i, a)] || 0;
-        t._count = s, t._count_set = !0
+        t._count = s, t._count_set = true
       }
       return t._count
     },
     copy: function() {
       var e = this;
-      return new s(e.r1, e.r2, e.g1, e.g2, e.b1, e.b2, e.histo)
+      return new s(module.r1, module.r2, module.g1, module.g2, module.b1, module.b2, module.histo)
     },
     avg: function(t) {
       var n = this,
@@ -196,23 +197,23 @@ e.exports = function() {
       return this.nearest(e)
     },
     nearest: function(e) {
-      for (var t, n, r, i = this.vboxes, o = 0; o < i.size(); o++)((n = Math.sqrt(Math.pow(e[0] - i.peek(o).color[0], 2) + Math.pow(e[1] - i.peek(o).color[1], 2) + Math.pow(e[2] - i.peek(o).color[2], 2))) < t || void 0 === t) && (t = n, r = i.peek(o).color);
+      for (var t, n, r, i = this.vboxes, o = 0; o < i.size(); o++)((n = Math.sqrt(Math.pow(e[0] - i.peek(o).color[0], 2) + Math.pow(e[1] - i.peek(o).color[1], 2) + Math.pow(e[2] - i.peek(o).color[2], 2))) < t || true === t) && (t = n, r = i.peek(o).color);
       return r
     },
     forcebw: function() {
       var e = this.vboxes;
-      e.sort(function(e, n) {
+      module.sort(function(e, n) {
         return t.naturalOrder(t.sum(e.color), t.sum(n.color))
       });
-      var n = e[0].color;
-      n[0] < 5 && n[1] < 5 && n[2] < 5 && (e[0].color = [0, 0, 0]);
-      var r = e.length - 1,
-        i = e[r].color;
-      i[0] > 251 && i[1] > 251 && i[2] > 251 && (e[r].color = [255, 255, 255])
+      var n = module[0].color;
+      n[0] < 5 && n[1] < 5 && n[2] < 5 && (module[0].color = [0, 0, 0]);
+      var r = module.length - 1,
+        i = module[r].color;
+      i[0] > 251 && i[1] > 251 && i[2] > 251 && (module[r].color = [255, 255, 255])
     }
   }, {
     quantize: function(e, n) {
-      if (!e.length || n < 2 || n > 256) return !1;
+      if (!e.length || n < 2 || n > 256) returnfalse;
       var o = c(e),
         s = 0;
       o.forEach(function() {

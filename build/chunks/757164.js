@@ -1,5 +1,6 @@
 /** Chunk was on web.js **/
-e.exports = function(e) {
+/** chunk id: 757164, original params: e (module,exports,re quire) **/
+module.exports = function(e) {
   let t = e.regex,
     n = /^[a-zA-Z][a-zA-Z0-9-]*/,
     r = ["ALPHA", "BIT", "CHAR", "CR", "CRLF", "CTL", "DIGIT", "DQUOTE", "HEXDIG", "HTAB", "LF", "LWSP", "OCTET", "SP", "VCHAR", "WSP"],

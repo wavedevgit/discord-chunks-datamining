@@ -1,47 +1,48 @@
 /** Chunk was on 1272 **/
-n.d(t, {
+/** chunk id: 606271, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => T
-}), n(388685);
-var r = n(442837),
-  i = n(570140),
-  l = n(107105),
-  a = n(592125),
-  o = n(271383),
-  s = n(430824),
-  c = n(131951),
-  u = n(158776),
-  d = n(19780),
-  p = n(699516),
-  f = n(944486),
-  h = n(594174),
-  g = n(979651),
-  m = n(626135),
-  b = n(823379),
-  _ = n(358085),
-  O = n(914946),
-  E = n(238679),
-  y = n(863141),
-  v = n(981631),
-  I = n(701488),
-  C = n(408491),
-  S = n(65154);
+}), require("./388685.js");
+var Chunk442837 = require("./442837.js"),
+  Chunk570140 = require("./570140.js"),
+  Chunk107105 = require("./107105.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk271383 = require("./271383.js"),
+  Chunk430824 = require("./430824.js"),
+  Chunk131951 = require("./131951.js"),
+  Chunk158776 = require("./158776.js"),
+  Chunk19780 = require("./19780.js"),
+  Chunk699516 = require("./699516.js"),
+  Chunk944486 = require("./944486.js"),
+  Chunk594174 = require("./594174.js"),
+  Chunk979651 = require("./979651.js"),
+  Chunk626135 = require("./626135.js"),
+  Chunk823379 = require("./823379.js"),
+  Chunk358085 = require("./358085.js"),
+  Chunk914946 = require("./914946.js"),
+  Chunk238679 = require("./238679.js"),
+  Chunk863141 = require("./863141.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk701488 = require("./701488.js"),
+  Chunk408491 = require("./408491.js"),
+  Chunk65154 = require("./65154.js");
 
 function N(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 class T {
   loadServer() {
-    for (let e of (_.isPlatformEmbedded && this.registerTransportsForEmbeddedPlatform(), this.transports)) this.rpcServer.registerTransport(e);
-    for (let [e, t] of Object.entries(this.rpcCommandHandlers)) this.rpcServer.setCommandHandler(e, t);
-    for (let [e, t] of Object.entries(this.rpcEventHandlers)) this.rpcServer.setEventHandler(e, t)
+    for (let e of (Chunk358085.isPlatformEmbedded && this.registerTransportsForEmbeddedPlatform(), this.transports)) this.rpcServer.registerTransport(module);
+    for (let [e, t] of Object.entries(this.rpcCommandHandlers)) this.rpcServer.setCommandHandler(module, exports);
+    for (let [e, t] of Object.entries(this.rpcEventHandlers)) this.rpcServer.setEventHandler(module, exports)
   }
   init() {
-    this.rpcServer.getCurrentUser = () => h.default.getCurrentUser(), this.rpcServer.onConnect = e => {
+    this.rpcServer.getCurrentUser = () => Chunk594174.default.getCurrentUser(), this.rpcServer.onConnect = e => {
       i.Z.dispatch({
         type: "RPC_APP_CONNECTED",
         socketId: e.id,
@@ -58,14 +59,14 @@ class T {
         reason: t
       })
     };
-    let e = [a.Z, o.ZP, u.Z, g.Z, c.Z, d.Z];
-    new r.Fh(e.concat(this.stores), () => this.rpcServer.updateSubscriptions()).attach("RPCServerManager"), i.Z.subscribe("MESSAGE_CREATE", this.handleMessage), i.Z.subscribe("MESSAGE_UPDATE", this.handleMessage), i.Z.subscribe("MESSAGE_DELETE", this.handleMessage), i.Z.subscribe("SPEAKING", this.handleSpeaking), i.Z.subscribe("OAUTH2_TOKEN_REVOKE", this.handleOAuth2TokenRevoke), i.Z.subscribe("GUILD_CREATE", this.handleGuildCreate), i.Z.subscribe("CHANNEL_CREATE", this.handleChannelCreate), i.Z.subscribe("LOGOUT", this.handleLogout), i.Z.subscribe("VOICE_CHANNEL_SELECT", this.handleVoiceChannelSelect), i.Z.subscribe("RPC_NOTIFICATION_CREATE", this.handleNotificationCreate), i.Z.subscribe("ACTIVITY_JOIN", this.handleActivityJoin), i.Z.subscribe("ACTIVITY_LAYOUT_MODE_UPDATE", this.handleActivityLayoutModeUpdate), i.Z.subscribe("FRAME_UPDATE_LAYOUT_MODE", this.handleFrameUpdateLayoutMode), i.Z.subscribe("THERMAL_STATE_CHANGE", this.handleThermalStateChange), i.Z.subscribe("ACTIVITY_SCREEN_ORIENTATION_UPDATE", this.handleScreenOrientationUpdate), i.Z.subscribe("EMBEDDED_ACTIVITY_UPDATE", this.handleEmbeddedActivityUpdate), i.Z.subscribe("RELATIONSHIP_ADD", this.handleRelationshipAdd), i.Z.subscribe("RELATIONSHIP_UPDATE", this.handleRelationshipUpdate), i.Z.subscribe("RELATIONSHIP_REMOVE", this.handleRelationshipRemove), i.Z.subscribe("PRESENCE_UPDATES", this.handlePresenceUpdates), i.Z.subscribe("PRESENCES_REPLACE", this.handlePresencesReplace), i.Z.subscribe("USER_UPDATE", this.handleUserUpdate), i.Z.subscribe("ENTITLEMENT_CREATE", this.handleEntitlementCreate), i.Z.subscribe("ENTITLEMENT_DELETE", this.handleEntitlementDelete)
+    let e = [Chunk592125.Z, Chunk271383.ZP, Chunk158776.Z, Chunk979651.Z, Chunk131951.Z, Chunk19780.Z];
+    new Chunk442837.Fh(module.concat(this.stores), () => this.rpcServer.updateSubscriptions()).attach("RPCServerManager"), Chunk570140.Z.subscribe("MESSAGE_CREATE", this.handleMessage), Chunk570140.Z.subscribe("MESSAGE_UPDATE", this.handleMessage), Chunk570140.Z.subscribe("MESSAGE_DELETE", this.handleMessage), Chunk570140.Z.subscribe("SPEAKING", this.handleSpeaking), Chunk570140.Z.subscribe("OAUTH2_TOKEN_REVOKE", this.handleOAuth2TokenRevoke), Chunk570140.Z.subscribe("GUILD_CREATE", this.handleGuildCreate), Chunk570140.Z.subscribe("CHANNEL_CREATE", this.handleChannelCreate), Chunk570140.Z.subscribe("LOGOUT", this.handleLogout), Chunk570140.Z.subscribe("VOICE_CHANNEL_SELECT", this.handleVoiceChannelSelect), Chunk570140.Z.subscribe("RPC_NOTIFICATION_CREATE", this.handleNotificationCreate), Chunk570140.Z.subscribe("ACTIVITY_JOIN", this.handleActivityJoin), Chunk570140.Z.subscribe("ACTIVITY_LAYOUT_MODE_UPDATE", this.handleActivityLayoutModeUpdate), Chunk570140.Z.subscribe("FRAME_UPDATE_LAYOUT_MODE", this.handleFrameUpdateLayoutMode), Chunk570140.Z.subscribe("THERMAL_STATE_CHANGE", this.handleThermalStateChange), Chunk570140.Z.subscribe("ACTIVITY_SCREEN_ORIENTATION_UPDATE", this.handleScreenOrientationUpdate), Chunk570140.Z.subscribe("EMBEDDED_ACTIVITY_UPDATE", this.handleEmbeddedActivityUpdate), Chunk570140.Z.subscribe("RELATIONSHIP_ADD", this.handleRelationshipAdd), Chunk570140.Z.subscribe("RELATIONSHIP_UPDATE", this.handleRelationshipUpdate), Chunk570140.Z.subscribe("RELATIONSHIP_REMOVE", this.handleRelationshipRemove), Chunk570140.Z.subscribe("PRESENCE_UPDATES", this.handlePresenceUpdates), Chunk570140.Z.subscribe("PRESENCES_REPLACE", this.handlePresencesReplace), Chunk570140.Z.subscribe("USER_UPDATE", this.handleUserUpdate), Chunk570140.Z.subscribe("ENTITLEMENT_CREATE", this.handleEntitlementCreate), Chunk570140.Z.subscribe("ENTITLEMENT_DELETE", this.handleEntitlementDelete)
   }
   terminate() {
-    i.Z.unsubscribe("MESSAGE_CREATE", this.handleMessage), i.Z.unsubscribe("MESSAGE_UPDATE", this.handleMessage), i.Z.unsubscribe("MESSAGE_DELETE", this.handleMessage), i.Z.unsubscribe("SPEAKING", this.handleSpeaking), i.Z.unsubscribe("OAUTH2_TOKEN_REVOKE", this.handleOAuth2TokenRevoke), i.Z.unsubscribe("GUILD_CREATE", this.handleGuildCreate), i.Z.unsubscribe("CHANNEL_CREATE", this.handleChannelCreate), i.Z.unsubscribe("LOGOUT", this.handleLogout), i.Z.unsubscribe("VOICE_CHANNEL_SELECT", this.handleVoiceChannelSelect), i.Z.unsubscribe("RPC_NOTIFICATION_CREATE", this.handleNotificationCreate), i.Z.unsubscribe("ACTIVITY_JOIN", this.handleActivityJoin), i.Z.unsubscribe("ACTIVITY_LAYOUT_MODE_UPDATE", this.handleActivityLayoutModeUpdate), i.Z.unsubscribe("FRAME_UPDATE_LAYOUT_MODE", this.handleFrameUpdateLayoutMode), i.Z.unsubscribe("THERMAL_STATE_CHANGE", this.handleThermalStateChange), i.Z.unsubscribe("ACTIVITY_SCREEN_ORIENTATION_UPDATE", this.handleScreenOrientationUpdate), i.Z.unsubscribe("EMBEDDED_ACTIVITY_UPDATE", this.handleEmbeddedActivityUpdate), i.Z.unsubscribe("RELATIONSHIP_ADD", this.handleRelationshipAdd), i.Z.unsubscribe("RELATIONSHIP_UPDATE", this.handleRelationshipUpdate), i.Z.unsubscribe("RELATIONSHIP_REMOVE", this.handleRelationshipRemove), i.Z.unsubscribe("PRESENCE_UPDATES", this.handlePresenceUpdates), i.Z.unsubscribe("PRESENCES_REPLACE", this.handlePresencesReplace), i.Z.unsubscribe("USER_UPDATE", this.handleUserUpdate), i.Z.unsubscribe("ENTITLEMENT_CREATE", this.handleEntitlementCreate), i.Z.unsubscribe("ENTITLEMENT_DELETE", this.handleEntitlementDelete)
+    Chunk570140.Z.unsubscribe("MESSAGE_CREATE", this.handleMessage), Chunk570140.Z.unsubscribe("MESSAGE_UPDATE", this.handleMessage), Chunk570140.Z.unsubscribe("MESSAGE_DELETE", this.handleMessage), Chunk570140.Z.unsubscribe("SPEAKING", this.handleSpeaking), Chunk570140.Z.unsubscribe("OAUTH2_TOKEN_REVOKE", this.handleOAuth2TokenRevoke), Chunk570140.Z.unsubscribe("GUILD_CREATE", this.handleGuildCreate), Chunk570140.Z.unsubscribe("CHANNEL_CREATE", this.handleChannelCreate), Chunk570140.Z.unsubscribe("LOGOUT", this.handleLogout), Chunk570140.Z.unsubscribe("VOICE_CHANNEL_SELECT", this.handleVoiceChannelSelect), Chunk570140.Z.unsubscribe("RPC_NOTIFICATION_CREATE", this.handleNotificationCreate), Chunk570140.Z.unsubscribe("ACTIVITY_JOIN", this.handleActivityJoin), Chunk570140.Z.unsubscribe("ACTIVITY_LAYOUT_MODE_UPDATE", this.handleActivityLayoutModeUpdate), Chunk570140.Z.unsubscribe("FRAME_UPDATE_LAYOUT_MODE", this.handleFrameUpdateLayoutMode), Chunk570140.Z.unsubscribe("THERMAL_STATE_CHANGE", this.handleThermalStateChange), Chunk570140.Z.unsubscribe("ACTIVITY_SCREEN_ORIENTATION_UPDATE", this.handleScreenOrientationUpdate), Chunk570140.Z.unsubscribe("EMBEDDED_ACTIVITY_UPDATE", this.handleEmbeddedActivityUpdate), Chunk570140.Z.unsubscribe("RELATIONSHIP_ADD", this.handleRelationshipAdd), Chunk570140.Z.unsubscribe("RELATIONSHIP_UPDATE", this.handleRelationshipUpdate), Chunk570140.Z.unsubscribe("RELATIONSHIP_REMOVE", this.handleRelationshipRemove), Chunk570140.Z.unsubscribe("PRESENCE_UPDATES", this.handlePresenceUpdates), Chunk570140.Z.unsubscribe("PRESENCES_REPLACE", this.handlePresencesReplace), Chunk570140.Z.unsubscribe("USER_UPDATE", this.handleUserUpdate), Chunk570140.Z.unsubscribe("ENTITLEMENT_CREATE", this.handleEntitlementCreate), Chunk570140.Z.unsubscribe("ENTITLEMENT_DELETE", this.handleEntitlementDelete)
   }
   constructor(e) {
-    N(this, "rpcServer", void 0), N(this, "transports", void 0), N(this, "rpcCommandHandlers", void 0), N(this, "rpcEventHandlers", void 0), N(this, "stores", void 0), N(this, "registerTransportsForEmbeddedPlatform", void 0), N(this, "handleMessage", e => {
+    N(this, "rpcServer", true), N(this, "transports", true), N(this, "rpcCommandHandlers", true), N(this, "rpcEventHandlers", true), N(this, "stores", true), N(this, "registerTransportsForEmbeddedPlatform", true), N(this, "handleMessage", e => {
       let t, n, r;
       if (0 === this.rpcServer.subscriptions.length) return;
       "MESSAGE_CREATE" === e.type && this.handleActivityMessage(e);
@@ -203,7 +204,7 @@ class T {
         activity: l
       } = r;
       if (null == i || null == l || null == l.party_id) return;
-      let a = h.default.getUser(null == (t = r.author) ? void 0 : t.id);
+      let a = h.default.getUser(null == (t = r.author) ? true : t.id);
       if (null == a) return;
       let o = h.default.getCurrentUser();
       if (null == o || a.id === o.id) return;

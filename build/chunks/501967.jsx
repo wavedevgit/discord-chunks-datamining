@@ -1,0 +1,135 @@
+/** Chunk was on web.js **/
+/** chunk id: 501967, original params: e,t,n (module,exports,re quire) **/
+"use strict";
+require.d(exports, {
+  B: () => g
+});
+var r, Chunk255367 = require("./255367.js"),
+  Chunk73800 = require("./73800.js"),
+  Chunk120356 = require("./120356.js"),
+  s = require.n(Chunk120356),
+  Chunk748780 = require("./748780.js"),
+  Chunk846519 = require("./846519.js"),
+  Chunk215569 = require("./215569.js"),
+  Chunk600164 = require("./600164.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk68379 = require("./68379.js");
+
+function p(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+let h = 3e3,
+  m = {
+    [Chunk981631.AEg.NORMAL]: Chunk68379.normal,
+    [Chunk981631.AEg.MINIMUM]: Chunk68379.minimum,
+    [Chunk981631.AEg.NO_CHAT]: Chunk68379.noChat,
+    [Chunk981631.AEg.FULL_SCREEN]: Chunk68379.fullScreen
+  };
+class g extends Chunk73800.PureComponent {
+  componentDidAppear() {
+    this.state.animation.setValue(1)
+  }
+  componentWillEnter(e) {
+    let {
+      animation: t
+    } = this.state;
+    t.setValue(0), l.Z.spring(t, {
+      toValue: 1,
+      overshootClamping: true
+    }).start(e)
+  }
+  componentWillLeave(e) {
+    l.Z.spring(this.state.animation, {
+      toValue: 0,
+      overshootClamping: true
+    }).start(e)
+  }
+  render() {
+    return <Chunk748780.Z.div className={s()(Chunk68379.videoBackgroundTransition, this.props.className)} style={{
+        opacity: this.state.animation
+      }}>{this.props.children}</Chunk748780.Z.div>
+  }
+  constructor(e) {
+    super(e), this.state = {
+      animation: new l.Z.Value(0)
+    }
+  }
+}
+class E extends(r = Chunk73800.PureComponent) {
+  componentDidMount() {
+    document.addEventListener("mousedown", this.handleMouseEvent, true), document.addEventListener("mousemove", this.handleMouseEvent, true)
+  }
+  componentWillUnmount() {
+    document.removeEventListener("mousedown", this.handleMouseEvent, true), document.removeEventListener("mousemove", this.handleMouseEvent, true), this._timeout.stop()
+  }
+  static getDerivedStateFromProps(e, t) {
+    return e.layout !== t.layoutProp ? t.idle ? {
+      idle: false,
+      layoutProp: e.layout
+    } : {
+      layoutProp: e.layout
+    } : null
+  }
+  componentDidUpdate(e) {
+    this.props.layout !== e.layout && this._timeout.stop()
+  }
+  renderBackground() {
+    let {
+      background: e,
+      backgroundKey: t,
+      layout: n
+    } = this.props, r = "".concat(require, "-").concat(null != exports ? exports : "");
+    return <Chunk215569.W className={Chunk68379.videoBackground} component={"div"}><g>{module}</g></Chunk215569.W>
+  }
+  renderContents() {
+    let {
+      top: e,
+      center: t,
+      bottom: n,
+      layout: r,
+      focused: o
+    } = this.props, {
+      idle: a
+    } = this.state;
+    return <Chunk600164.Z className={s()(Chunk68379.video, m[r], {
+        [Chunk68379.idle]: Chunk120356
+      })} direction={Chunk600164.Z.Direction.VERTICAL} justify={Chunk600164.Z.Justify.CENTER}><Chunk600164.Z className={Chunk68379.videoWrapper} direction={Chunk600164.Z.Direction.VERTICAL}>{this.renderBackground()}{<Chunk600164.Z className={s()(Chunk68379.videoInner, {
+            [Chunk68379.focused]: Chunk73800
+          })} direction={Chunk600164.Z.Direction.VERTICAL} justify={Chunk600164.Z.Justify.BETWEEN}>{<Chunk600164.Z className={Chunk68379.videoTop} grow={0}>{module}</Chunk600164.Z>}{<Chunk600164.Z className={Chunk68379.videoCenter}>{exports}</Chunk600164.Z>}{<Chunk600164.Z className={Chunk68379.videoBottom} grow={0}>{require}</Chunk600164.Z>}</Chunk600164.Z>}</Chunk600164.Z></Chunk600164.Z>
+  }
+  render() {
+    let {
+      layout: e,
+      className: t,
+      animated: n
+    } = this.props;
+    return <div className={s()(Chunk68379.videoHeight, m[module], exports, {
+        [Chunk68379.animated]: require
+      })}>{this.renderContents()}</div>
+  }
+  constructor(e) {
+    super(e), p(this, "_timeout", new c.V7), p(this, "handleMouseEvent", () => {
+      let {
+        layout: e
+      } = this.props;
+      (e === f.AEg.FULL_SCREEN || e === f.AEg.NO_CHAT) && (this._timeout.start(h, () => this.setState({
+        idle: true
+      })), this.state.idle && this.setState({
+        idle: false
+      }))
+    }), this.state = {
+      idle: false,
+      backgroundAnimation: new l.Z.Value(0),
+      layoutProp: e.layout
+    }
+  }
+}
+p(E, "defaultProps", {
+  layout: Chunk981631.AEg.MINIMUM,
+  animated: true
+})

@@ -1,18 +1,19 @@
 /** Chunk was on web.js **/
+/** chunk id: 631937, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => _
 });
-var r = n(73800),
-  i = n(442837),
-  o = n(661111),
-  a = n(706454),
-  s = n(306680),
-  l = n(626135),
-  c = n(802098),
-  u = n(193701),
-  d = n(702321),
-  f = n(981631);
+var Chunk73800 = require("./73800.js"),
+  Chunk442837 = require("./442837.js"),
+  Chunk661111 = require("./661111.js"),
+  Chunk706454 = require("./706454.js"),
+  Chunk306680 = require("./306680.js"),
+  Chunk626135 = require("./626135.js"),
+  Chunk802098 = require("./802098.js"),
+  Chunk193701 = require("./193701.js"),
+  Chunk702321 = require("./702321.js"),
+  Chunk981631 = require("./981631.js");
 
 function _(e) {
   let t = (0, u.Z)(e),
@@ -27,7 +28,7 @@ function _(e) {
   }), r.useEffect(() => {
     h.current = Date.now()
   }, [p]), r.useEffect(() => {
-    p && null != t && o.Z.fetchChangelog(t, n, !0)
+    p && null != t && o.Z.fetchChangelog(t, n, true)
   }, [t, n, p]), r.useEffect(() => {
     p && null != _ && l.default.track(f.rMx.CHANGE_LOG_OPENED, {
       change_log_id: "".concat(_.date, ":").concat(_.revision),

@@ -1,5 +1,6 @@
 /** Chunk was on 79457 **/
-a.d(e, {
+/** chunk id: 641794, original params: i,e,a (module,exports,require) **/
+require.d(exports, {
   Z: () => p
 });
 var t = {
@@ -105,9 +106,9 @@ var u = {
 let p = function(i, e, a) {
   var r, n = i.match(/about|over|almost|lessthan/i),
     s = n ? i.replace(n[0], "") : i,
-    o = (null == a ? void 0 : a.comparison) !== void 0 && a.comparison > 0,
+    o = (null == a ? true : a.comparison) !== true && a.comparison > 0,
     d = u[i];
-  if (r = "string" == typeof d ? d : 1 === e ? d.one(e, (null == a ? void 0 : a.addSuffix) === !0, s.toLowerCase() + "_one", o) : d.other(e, (null == a ? void 0 : a.addSuffix) === !0, s.toLowerCase() + "_other", o), n && (r = t[n[0].toLowerCase()] + " " + r), null != a && a.addSuffix)
+  if (r = "string" == typeof d ? d : 1 === e ? d.one(e, (null == a ? true : a.addSuffix) === true, s.toLowerCase() + "_one", o) : d.other(e, (null == a ? true : a.addSuffix) === true, s.toLowerCase() + "_other", o), n && (r = t[n[0].toLowerCase()] + " " + r), null != a && a.addSuffix)
     if (a.comparison && a.comparison > 0) return "po " + r;
     else return "prieš " + r;
   return r

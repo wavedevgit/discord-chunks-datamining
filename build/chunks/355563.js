@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 355563, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   container: "container__927fc",
   developerShelfControlsContainer: "developerShelfControlsContainer__927fc",
   developerShelfControlsLabel: "developerShelfControlsLabel__927fc",

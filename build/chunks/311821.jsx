@@ -1,0 +1,29 @@
+/** Chunk was on web.js **/
+/** chunk id: 311821, original params: e,t,n (module,exports,re quire) **/
+"use strict";
+require.d(exports, {
+  Z: () => u,
+  y: () => c
+});
+var Chunk255367 = require("./255367.js");
+require("./73800.js");
+var Chunk120356 = require("./120356.js"),
+  o = require.n(Chunk120356),
+  Chunk481060 = require("./481060.js"),
+  Chunk388032 = require("./388032.js"),
+  Chunk315116 = require("./315116.js");
+let c = e => {
+    let {
+      className: t,
+      onClick: n,
+      children: i
+    } = e;
+    return <a.eee onClick={n} className={o()(l.link, t)}>{i}</a.eee>
+  },
+  u = e => {
+    let {
+      className: t,
+      onClick: n
+    } = e;
+    return <c className={t} onClick={n}>{s.intl.string(s.t["13/7kZ"])}</c>
+  }

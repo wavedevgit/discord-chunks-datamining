@@ -1,16 +1,17 @@
 /** Chunk was on 27978 **/
-n.d(t, {
+/** chunk id: 126399, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => f
-}), n(388685);
-var r = n(544891),
-  i = n(570140),
-  l = n(893776),
-  o = n(899742),
-  s = n(743142),
-  a = n(117240),
-  c = n(626135),
-  u = n(317770),
-  d = n(981631);
+}), require("./388685.js");
+var Chunk544891 = require("./544891.js"),
+  Chunk570140 = require("./570140.js"),
+  Chunk893776 = require("./893776.js"),
+  Chunk899742 = require("./899742.js"),
+  Chunk743142 = require("./743142.js"),
+  Chunk117240 = require("./117240.js"),
+  Chunk626135 = require("./626135.js"),
+  Chunk317770 = require("./317770.js"),
+  Chunk981631 = require("./981631.js");
 
 function h(e, t) {
   c.default.track(d.rMx.BROWSER_HANDOFF_SUCCEEDED, {
@@ -18,12 +19,12 @@ function h(e, t) {
     handoff_source: t
   })
 }
-class p extends u.Z {
+class p extends Chunk317770.Z {
   _initialize() {
-    i.Z.subscribe("BROWSER_HANDOFF_END", this.handleEnd), i.Z.subscribe("BROWSER_HANDOFF_FROM_APP", this.handleHandoff)
+    Chunk570140.Z.subscribe("BROWSER_HANDOFF_END", this.handleEnd), Chunk570140.Z.subscribe("BROWSER_HANDOFF_FROM_APP", this.handleHandoff)
   }
   _terminate() {
-    i.Z.unsubscribe("BROWSER_HANDOFF_END", this.handleEnd), i.Z.unsubscribe("BROWSER_HANDOFF_FROM_APP", this.handleHandoff)
+    Chunk570140.Z.unsubscribe("BROWSER_HANDOFF_END", this.handleEnd), Chunk570140.Z.unsubscribe("BROWSER_HANDOFF_FROM_APP", this.handleHandoff)
   }
   handleHandoff(e) {
     let {
@@ -38,21 +39,21 @@ class p extends u.Z {
         key: t,
         handoff_token: n
       },
-      rejectWithError: !1
+      rejectWithError: false
     }).then(e => {
       let {
         body: t
       } = e;
-      (0, o.Vb)(t.user), l.Z.loginToken(t.token, !1), h(!0, a)
+      (0, o.Vb)(t.user), l.Z.loginToken(t.token, false), h(true, a)
     }, e => {
-      if (null != i && h(!1, a), l.Z.setFingerprint(i), (0, o.lx)(), a === s.F.ROLE_SUBSCRIPTION) {
+      if (null != i && h(false, a), l.Z.setFingerprint(i), (0, o.lx)(), a === s.F.ROLE_SUBSCRIPTION) {
         var t;
         c.default.track(d.rMx.MOBILE_WEB_HANDOFF_FAILURE, {
           reason: null != (t = e.message) ? t : e.text,
           handoff_source: a
         })
       }
-    }) : null != i ? (l.Z.setFingerprint(i), h(!1, a), (0, o.lx)()) : (l.Z.setFingerprint(i), (0, o.by)())
+    }) : null != i ? (l.Z.setFingerprint(i), h(false, a), (0, o.lx)()) : (l.Z.setFingerprint(i), (0, o.by)())
   }
   constructor(...e) {
     var t, n;
@@ -65,13 +66,13 @@ class p extends u.Z {
         handoffKey: r,
         handoffToken: t,
         fingerprint: n,
-        handoffSource: void 0
+        handoffSource: true
       }) : (l.Z.setFingerprint(null), (0, o.by)())
     }, t in this ? Object.defineProperty(this, t, {
       value: n,
-      enumerable: !0,
-      configurable: !0,
-      writable: !0
+      enumerable: true,
+      configurable: true,
+      writable: true
     }) : this[t] = n
   }
 }

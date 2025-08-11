@@ -1,30 +1,31 @@
 /** Chunk was on web.js **/
+/** chunk id: 170140, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   J: () => v
 });
-var r = n(73800),
-  i = n(399606),
-  o = n(430198),
-  a = n(754688),
-  s = n(314897),
-  l = n(592125),
-  c = n(271383),
-  u = n(430824),
-  d = n(914010),
-  f = n(594174),
-  _ = n(158222),
-  p = n(312146),
-  h = n(487554),
-  m = n(874748),
-  g = n(981631);
+var Chunk73800 = require("./73800.js"),
+  Chunk399606 = require("./399606.js"),
+  Chunk430198 = require("./430198.js"),
+  Chunk754688 = require("./754688.js"),
+  Chunk314897 = require("./314897.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk271383 = require("./271383.js"),
+  Chunk430824 = require("./430824.js"),
+  Chunk914010 = require("./914010.js"),
+  Chunk594174 = require("./594174.js"),
+  Chunk158222 = require("./158222.js"),
+  Chunk312146 = require("./312146.js"),
+  Chunk487554 = require("./487554.js"),
+  Chunk874748 = require("./874748.js"),
+  Chunk981631 = require("./981631.js");
 
 function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -63,9 +64,9 @@ function v(e, t) {
     E = (0, m.LR)(e),
     y = (0, i.e7)([c.ZP, s.default], () => {
       let e = s.default.getId();
-      return c.ZP.isMember(null == E ? void 0 : E.guildId, e)
+      return c.ZP.isMember(null == E ? true : E.guildId, e)
     }, [E]),
-    v = (0, i.e7)([o.Z], () => null != E && (null == E ? void 0 : E.channelId) != null && o.Z.isChannelGated(E.guildId, E.channelId), [E]),
+    v = (0, i.e7)([o.Z], () => null != E && (null == E ? true : E.channelId) != null && o.Z.isChannelGated(E.guildId, E.channelId), [E]),
     I = t.hasFlag(g.iLy.IS_CROSSPOST),
     {
       rawMediaPostEmbedData: T,
@@ -76,10 +77,10 @@ function v(e, t) {
       canAccess: R
     } = (0, i.cj)([h.Z, u.Z, l.Z, f.default, d.Z], () => {
       var e;
-      let t = null == (e = h.Z.getMediaPostEmbed(null == E ? void 0 : E.threadId)) ? void 0 : e.media,
-        n = u.Z.getGuild(null == E ? void 0 : E.guildId),
-        r = l.Z.getChannel(null == E ? void 0 : E.channelId),
-        i = f.default.getUser(null == t ? void 0 : t.author_id),
+      let t = null == (e = h.Z.getMediaPostEmbed(null == E ? true : E.threadId)) ? true : e.media,
+        n = u.Z.getGuild(null == E ? true : E.guildId),
+        r = l.Z.getChannel(null == E ? true : E.channelId),
+        i = f.default.getUser(null == t ? true : t.author_id),
         o = d.Z.getGuildId(),
         s = null != r && (0, a.YO)(r);
       return {
@@ -105,9 +106,9 @@ function v(e, t) {
       })
     }, [T, S, A, N, C, R]);
   return r.useEffect(() => {
-    if ((null == E ? void 0 : E.threadId) != null) {
+    if ((null == E ? true : E.threadId) != null) {
       let e = h.Z.getEmbedFetchState(E.threadId);
-      !0 !== n || e !== h.M.NOT_FETCHED || y && !1 === v || !y && I || (0, _.xP)(null == E ? void 0 : E.threadId)
+      true !== n || e !== h.M.NOT_FETCHED || y && false === v || !y && I || (0, _.xP)(null == E ? true : E.threadId)
     }
   }, [E, n, y, v, I]), P
 }

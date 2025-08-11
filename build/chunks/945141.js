@@ -1,27 +1,28 @@
 /** Chunk was on web.js **/
+/** chunk id: 945141, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => l
-}), n(388685);
-var r = n(433517),
-  i = n(147913);
+}), require("./388685.js");
+var Chunk433517 = require("./433517.js"),
+  Chunk147913 = require("./147913.js");
 
 function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 let a = "formGuidelinesStorageKey";
-class s extends i.Z {
+class s extends Chunk147913.Z {
   _initialize() {
-    let e = r.K.get(a);
-    null != e && (this.seenForumGuidelines = new Set(e))
+    let e = Chunk433517.K.get(a);
+    null != module && (this.seenForumGuidelines = new Set(module))
   }
   _terminate() {
-    r.K.set(a, this.seenForumGuidelines)
+    Chunk433517.K.set(a, this.seenForumGuidelines)
   }
   markAsSeen(e) {
     this.seenForumGuidelines.add(e), r.K.set(a, this.seenForumGuidelines)

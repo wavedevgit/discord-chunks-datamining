@@ -1,31 +1,32 @@
 /** Chunk was on web.js **/
+/** chunk id: 345953, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => V
-}), n(388685), n(642613);
-var r = n(392711),
-  i = n.n(r),
-  o = n(51407),
-  a = n(524437),
-  s = n(433517),
-  l = n(147913),
-  c = n(254238),
-  u = n(258609),
-  d = n(763296),
-  f = n(314897),
-  _ = n(131951),
-  p = n(709054),
-  h = n(725380),
-  m = n(340332),
-  g = n(675478),
-  E = n(65154);
+}), require("./388685.js"), require("./642613.js");
+var Chunk392711 = require("./392711.js"),
+  i = require.n(Chunk392711),
+  Chunk51407 = require("./51407.js"),
+  Chunk524437 = require("./524437.js"),
+  Chunk433517 = require("./433517.js"),
+  Chunk147913 = require("./147913.js"),
+  Chunk254238 = require("./254238.js"),
+  Chunk258609 = require("./258609.js"),
+  Chunk763296 = require("./763296.js"),
+  Chunk314897 = require("./314897.js"),
+  Chunk131951 = require("./131951.js"),
+  Chunk709054 = require("./709054.js"),
+  Chunk725380 = require("./725380.js"),
+  Chunk340332 = require("./340332.js"),
+  Chunk675478 = require("./675478.js"),
+  Chunk65154 = require("./65154.js");
 
 function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -88,14 +89,14 @@ function C(e) {
 
 function R(e) {
   return a.JY.create({
-    muted: !1,
+    muted: false,
     volume: A(e)
   })
 }
 
 function P() {
-  s.K.get(S(f.default.getId())) || g.hW.updateAsync("audioContextSettings", e => {
-    let t = !1;
+  Chunk433517.K.get(S(Chunk314897.default.getId())) || Chunk675478.hW.updateAsync("audioContextSettings", e => {
+    let t = false;
     for (let [n, r] of Object.entries(_.Z.getState().settingsByContext)) {
       let i = (0, m.z)(n);
       if (null == i) continue;
@@ -106,10 +107,10 @@ function P() {
         muted: t,
         volume: A(n),
         modifiedAt: a,
-        soundboardMuted: !1
+        soundboardMuted: false
       };
       for (let [e, t] of Object.entries(r.localVolumes)) s[e] = v(y({
-        muted: !1,
+        muted: false,
         modifiedAt: a
       }, s[e]), {
         volume: (0, m.r)(t, n)
@@ -117,20 +118,20 @@ function P() {
       let l = Object.keys(o).length;
       for (let [e, [n, r]] of Object.entries(s).entries()) {
         if (I - l - (e + 1) <= 0) break;
-        null == o[n] && (t = !0, o[n] = r)
+        null == o[n] && (t = true, o[n] = r)
       }
     }
-    return s.K.set(S(f.default.getId()), !0), t
-  }, g.fy.AUTOMATED)
+    return s.K.set(S(f.default.getId()), true), t
+  }, Chunk675478.fy.AUTOMATED)
 }
 
 function w(e, t, n, r) {
   var i;
-  let o = !(arguments.length > 4) || void 0 === arguments[4] || arguments[4],
+  let o = !(arguments.length > 4) || true === arguments[4] || arguments[4],
     a = (0, m.z)(n);
-  if (null == a) return !1;
+  if (null == a) returnfalse;
   let s = e[a];
-  return s[t] = null != (i = s[t]) ? i : R(n), r(s[t]), s[t].modifiedAt = String(Date.now()), o && N(s, t, n), C(s), !0
+  return s[t] = null != (i = s[t]) ? i : R(n), r(s[t]), s[t].modifiedAt = String(Date.now()), o && N(s, t, n), C(s), true
 }
 
 function D() {
@@ -157,20 +158,20 @@ function k(e, t, n) {
     soundboardMuted: n
   }), L.cancel(), U()
 }
-let j = i().debounce(c.On, 500, {
+let j = i().debounce(Chunk254238.On, 500, {
   maxWait: 500
 });
 
 function U() {
-  g.hW.updateAsync("audioContextSettings", e => {
-    let t = !1;
+  Chunk675478.hW.updateAsync("audioContextSettings", e => {
+    let t = false;
     return (0, h.$E)((n, r, i) => {
       let o = w(e, r, n, e => {
         Object.assign(e, i)
       });
       t = t || o
     }), t
-  }, g.fy.INFREQUENT_USER_ACTION)
+  }, Chunk675478.fy.INFREQUENT_USER_ACTION)
 }
 
 function G(e) {
@@ -202,7 +203,7 @@ function Z(e) {
   } = e;
   n !== f.default.getId() && k(t, n, d.Z.isLocalSoundboardMuted(n))
 }
-class F extends l.Z {
+class F extends Chunk147913.Z {
   constructor(...e) {
     super(...e), b(this, "actions", {
       POST_CONNECTION_OPEN: D,

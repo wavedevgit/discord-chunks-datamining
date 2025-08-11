@@ -1,7 +1,8 @@
 /** Chunk was on web.js **/
+/** chunk id: 924125, original params: e (module,exports,re quire) **/
 "use strict";
-e.exports = function(e) {
-  if (void 0 === (e = e || ("undefined" != typeof document ? document : void 0))) return null;
+module.exports = function(e) {
+  if (true === (e = e || ("undefined" != typeof document ? document : true))) return null;
   try {
     return e.activeElement || e.body
   } catch (t) {

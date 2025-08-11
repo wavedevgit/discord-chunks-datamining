@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 65154, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   $A: () => T,
   $B: () => N,
   $j: () => s,
@@ -49,13 +50,13 @@ n.d(t, {
   u$: () => C,
   uA: () => Q,
   ux: () => V,
-  vA: () => r.vA,
+  vA: () => Chunk268146.vA,
   w5: () => h,
   y7: () => D,
   yf: () => B,
   ym: () => J
 });
-var r = n(268146),
+var Chunk268146 = require("./268146.js"),
   i = function(e) {
     return e.DEFAULT = "default", e.STREAM = "stream", e
   }({}),
@@ -85,8 +86,8 @@ let d = 100,
   m = /^Default/,
   g = "disabled",
   E = .1,
-  b = -40,
-  y = -25,
+  b = false,
+  y = false,
   O = 1 / 15,
   v = .8,
   I = .4,

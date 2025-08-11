@@ -1,16 +1,17 @@
 /** Chunk was on web.js **/
+/** chunk id: 608413, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   j: () => o
 });
-var r = n(685816);
+var Chunk685816 = require("./685816.js");
 
 function i(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 class o {
@@ -18,6 +19,6 @@ class o {
     return new o(e)
   }
   constructor(e) {
-    i(this, "bannerUrl", void 0), i(this, "title", void 0), i(this, "body", void 0), i(this, "categoryStoreListingId", void 0), i(this, "bannerTextColor", void 0), i(this, "disableCta", void 0), this.type = r.z.WIDE_BANNER, this.bannerUrl = e.banner_url, this.title = e.title, this.body = e.body, this.categoryStoreListingId = e.category_store_listing_id, this.bannerTextColor = e.banner_text_color, this.disableCta = e.disable_cta
+    i(this, "bannerUrl", true), i(this, "title", true), i(this, "body", true), i(this, "categoryStoreListingId", true), i(this, "bannerTextColor", true), i(this, "disableCta", true), this.type = r.z.WIDE_BANNER, this.bannerUrl = e.banner_url, this.title = e.title, this.body = e.body, this.categoryStoreListingId = e.category_store_listing_id, this.bannerTextColor = e.banner_text_color, this.disableCta = e.disable_cta
   }
 }

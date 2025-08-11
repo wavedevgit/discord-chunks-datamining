@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 75923, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   popout: "popout__4f0a5",
   content: "content__4f0a5",
   leaderboardName: "leaderboardName__4f0a5",

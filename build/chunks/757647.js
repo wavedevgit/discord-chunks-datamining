@@ -1,2 +1,3 @@
 /** Chunk was on web.js **/
-e.exports = n(748790)("toUpperCase")
+/** chunk id: 757647, original params: e,t,n (module,exports,re quire) **/
+module.exports = require("./748790.js")("toUpperCase")

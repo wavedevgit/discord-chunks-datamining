@@ -1,0 +1,97 @@
+/** Chunk was on web.js **/
+/** chunk id: 676108, original params: e,t,n (module,exports,re quire) **/
+"use strict";
+require.d(exports, {
+  Z: () => m
+});
+var Chunk255367 = require("./255367.js"),
+  Chunk73800 = require("./73800.js"),
+  Chunk481060 = require("./481060.js"),
+  Chunk318766 = require("./318766.jsx"),
+  Chunk907040 = require("./907040.js"),
+  Chunk28546 = require("./28546.js"),
+  Chunk872635 = require("./872635.js"),
+  Chunk185923 = require("./185923.js"),
+  Chunk763169 = require("./763169.js");
+
+function f(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+
+function _(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      f(e, t, n[t])
+    })
+  }
+  return e
+}
+
+function p(e, t) {
+  var n = Object.keys(e);
+  if (Object.getOwnPropertySymbols) {
+    var r = Object.getOwnPropertySymbols(e);
+    t && (r = r.filter(function(t) {
+      return Object.getOwnPropertyDescriptor(e, t).enumerable
+    })), n.push.apply(n, r)
+  }
+  return n
+}
+
+function h(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : p(Object(t)).forEach(function(n) {
+    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+  }), e
+}
+
+function m(e) {
+  var t;
+  let {
+    editorRef: n,
+    options: f,
+    channel: p
+  } = e, m = null == (t = n.current) ? true : t.getSlateEditor(), g = i.useRef(null), E = i.useCallback(e => {
+    let {
+      emoji: t,
+      willClose: r
+    } = e, i = n.current;
+    null != t && null != i && i.insertEmoji({
+      emoji: t,
+      willClose: r
+    }), r && (0, l._Q)()
+  }, [n]), b = e => {
+    let {
+      closePopout: t
+    } = e;
+    return <s.Z persistSearch={true} channel={p} closePopout={t} onSelectEmoji={e => {
+        let {
+          emoji: n,
+          willClose: r
+        } = e;
+        E({
+          emoji: n,
+          willClose: r
+        }), r && t()
+      }} pickerIntention={u.Hz.COMMUNITY_CONTENT} />
+  };
+  return null == m ? null : <div id={"slate-toolbar"} className={d.staticToolbar}>{<div className={d.staticButtons}><c.I editorRef={n} options={f} iconClassName={d.staticIcon} dividerClassName={d.staticDivider} /></div>}{<o.yRy targetElementRef={g} renderPopout={b} position={"bottom"} animation={o.yRy.Animation.NONE} align={"left"}>{(e, t) => {
+        let {
+          isShown: n
+        } = t;
+        return (0, r.jsx)(a.Z, h(_({}, e), {
+          ref: g,
+          active: n,
+          className: d.emojiButton,
+          tabIndex: 0
+        }))
+      }}</o.yRy>}</div>
+}

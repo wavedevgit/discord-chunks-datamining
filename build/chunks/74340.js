@@ -1,12 +1,13 @@
 /** Chunk was on web.js **/
+/** chunk id: 74340, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => i
 });
-var r = n(134632);
+var Chunk134632 = require("./134632.js");
 
 function i(e) {
-  switch (null == e ? void 0 : e.details) {
+  switch (null == e ? true : e.details) {
     case r.w.QUESTION:
       return r.w.QUESTION;
     case r.w.EXCITED:

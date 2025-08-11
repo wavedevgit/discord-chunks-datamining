@@ -1,17 +1,18 @@
 /** Chunk was on web.js **/
+/** chunk id: 975608, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => c
-}), n(415506);
-var r = n(73800),
-  i = n(960048);
+}), require("./415506.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk960048 = require("./960048.js");
 
 function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -45,7 +46,7 @@ function l(e, t) {
   }), e
 }
 let c = (e, t, n, o, s) => {
-  let c = (0, r.useRef)(!1),
+  let c = (0, r.useRef)(false),
     u = {
       componentName: e,
       sentryErrorOptions: s,
@@ -61,14 +62,14 @@ let c = (e, t, n, o, s) => {
       stateToCapture: o
     } = d.current;
     if (t && !c.current) {
-      c.current = !0;
+      c.current = true;
       let t = setTimeout(() => {
         let t = Error("".concat(e, " is taking too long to load."));
         i.Z.setExtra({
           loadingState: o,
           loadingTimeSeconds: n
         }), i.Z.captureException(t, l(a({}, r), {
-          tags: a({}, null == r ? void 0 : r.tags)
+          tags: a({}, null == r ? true : r.tags)
         }))
       }, 1e3 * n);
       return () => {

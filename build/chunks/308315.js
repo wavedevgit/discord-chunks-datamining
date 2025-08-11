@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 308315, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   inline: "inline__6c706",
   hiddenMosaicItem: "hiddenMosaicItem__6c706",
   obscured: "obscured__6c706",

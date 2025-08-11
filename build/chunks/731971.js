@@ -1,5 +1,6 @@
 /** Chunk was on 34779 **/
-n.d(t, {
+/** chunk id: 731971, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   NQ: () => b,
   U1: () => y,
   XW: () => d,
@@ -12,11 +13,11 @@ n.d(t, {
   y: () => _,
   yS: () => C,
   yr: () => v
-}), n(781311);
-var r = n(97519),
-  i = n(524437),
-  l = n(695346),
-  o = n(594174);
+}), require("./781311.js");
+var Chunk97519 = require("./97519.js"),
+  Chunk524437 = require("./524437.js"),
+  Chunk695346 = require("./695346.js"),
+  Chunk594174 = require("./594174.js");
 
 function s(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -28,9 +29,9 @@ function s(e) {
       var r;
       r = n[t], t in e ? Object.defineProperty(e, t, {
         value: r,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
+        enumerable: true,
+        configurable: true,
+        writable: true
       }) : e[t] = r
     })
   }
@@ -50,46 +51,46 @@ function a(e, t) {
   }), e
 }
 let c = {
-  nickname: void 0,
-  dmsAllowed: !l.iG.getSetting(),
-  mutedServer: !1
+  nickname: true,
+  dmsAllowed: !Chunk695346.iG.getSetting(),
+  mutedServer: false
 };
 
 function u(e) {
   let t = l.no.getSetting();
   return t !== i.GI.ACTIVITY_STATUS_ON && (t !== i.GI.ACTIVITY_STATUS_ON_FOR_LARGE_GUILDS || null == e || !(e > 200))
 }
-let d = (0, r.U)(e => ({
+let d = (0, Chunk97519.U)(e => ({
     nickname: c.nickname,
     dmsAllowed: c.dmsAllowed,
-    showActivity: !0,
+    showActivity: true,
     mutedServer: c.mutedServer,
-    inviteCode: void 0,
-    guildId: void 0,
-    touched: !1,
+    inviteCode: true,
+    guildId: true,
+    touched: false,
     setNickname: t => e(e => a(s({}, e), {
       nickname: t,
-      touched: !0
+      touched: true
     })),
     setDmsAllowed: t => e(e => a(s({}, e), {
       dmsAllowed: t,
-      touched: !0
+      touched: true
     })),
     setShowActivity: t => e(e => a(s({}, e), {
       showActivity: t,
-      touched: !0
+      touched: true
     })),
     setMutedServer: t => e(e => a(s({}, e), {
       mutedServer: t,
-      touched: !0
+      touched: true
     })),
     setInviteCode: t => e(e => a(s({}, e), {
       inviteCode: t,
-      touched: !0
+      touched: true
     })),
     setGuildId: t => e(e => a(s({}, e), {
       guildId: t,
-      touched: !0
+      touched: true
     })),
     initialize: (t, n, r) => e(e => a(s({}, e), {
       guildSize: t,
@@ -97,17 +98,17 @@ let d = (0, r.U)(e => ({
       guildId: r,
       showActivity: u(t),
       dmsAllowed: !l.iG.getSetting(),
-      touched: !1
+      touched: false
     })),
     reset: () => e(e => ({
       nickname: c.nickname,
       dmsAllowed: c.dmsAllowed,
       showActivity: u(e.guildSize),
       mutedServer: c.mutedServer,
-      inviteCode: void 0,
-      guildId: void 0,
+      inviteCode: true,
+      guildId: true,
       guildSize: e.guildSize,
-      touched: !1
+      touched: false
     }))
   })),
   h = (e, t, n) => {
@@ -118,7 +119,7 @@ let d = (0, r.U)(e => ({
   },
   f = () => {
     let e = d.getState();
-    return e.nickname !== c.nickname || e.dmsAllowed !== c.dmsAllowed || e.showActivity !== u(e.guildSize) || e.mutedServer !== c.mutedServer
+    return module.nickname !== c.nickname || module.dmsAllowed !== c.dmsAllowed || module.showActivity !== u(module.guildSize) || module.mutedServer !== c.mutedServer
   },
   g = () => d.getState().inviteCode,
   m = () => d.getState().guildId,
@@ -132,7 +133,7 @@ let d = (0, r.U)(e => ({
     let {
       nickname: n
     } = d();
-    if (null != n && "" !== n.trim()) return n;
-    let r = o.default.getCurrentUser();
-    return null != (t = null != (e = null == r ? void 0 : r.globalName) ? e : null == r ? void 0 : r.username) ? t : ""
+    if (null != require && "" !== require.trim()) return require;
+    let r = Chunk594174.default.getCurrentUser();
+    return null != (t = null != (e = null == Chunk97519 ? true : Chunk97519.globalName) ? module : null == Chunk97519 ? true : Chunk97519.username) ? exports : ""
   }

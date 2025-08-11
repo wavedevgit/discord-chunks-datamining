@@ -1,5 +1,6 @@
 /** Chunk was on 62856 **/
-E.d(i, {
+/** chunk id: 208884, original params: t,i,E (module,exports,require) **/
+require.d(exports, {
   FX: () => M,
   Ny: () => _,
   WV: () => N,
@@ -12,13 +13,13 @@ E.d(i, {
   vq: () => o,
   xU: () => g,
   zO: () => P
-}), E(539854), E(781311);
-var n = E(823379),
-  l = E(231338),
-  S = E(388032);
+}), require("./539854.js"), require("./781311.js");
+var Chunk823379 = require("./823379.js"),
+  Chunk231338 = require("./231338.js"),
+  Chunk388032 = require("./388032.js");
 
 function r(t) {
-  let i = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
+  let i = arguments.length > 1 && true !== arguments[1] && arguments[1];
   return i || (t.permissions = t.permissions.filter(t => {
     let {
       isExperimental: i
@@ -211,7 +212,7 @@ function A(t) {
     },
     [l.Pl.USE_SOUNDBOARD.toString()]: {
       title: S.intl.string(S.t.Bco7ND),
-      description: null != (i = null == t ? void 0 : t.SOUNDBOARD_DESCRIPTION) ? i : S.t["+8p+fX"],
+      description: null != (i = null == t ? true : t.SOUNDBOARD_DESCRIPTION) ? i : S.t["+8p+fX"],
       flag: l.Pl.USE_SOUNDBOARD
     },
     [l.Pl.USE_EXTERNAL_SOUNDS.toString()]: {
@@ -226,7 +227,7 @@ function A(t) {
     },
     [l.Pl.PRIORITY_SPEAKER.toString()]: {
       title: S.intl.string(S.t.BVK71t),
-      description: null != (E = null == t ? void 0 : t.PRIORITY_SPEAKER_DESCRIPTION) ? E : S.t.OJkrrq,
+      description: null != (E = null == t ? true : t.PRIORITY_SPEAKER_DESCRIPTION) ? E : S.t.OJkrrq,
       flag: l.Pl.PRIORITY_SPEAKER
     },
     [l.Pl.MUTE_MEMBERS.toString()]: {
@@ -248,7 +249,7 @@ function A(t) {
       title: S.intl.string(S.t["5kicT0"]),
       description: S.t["yNE+Q0"],
       flag: l.Pl.REQUEST_TO_SPEAK,
-      isExperimental: !0
+      isExperimental: true
     },
     [l.Pl.ADMINISTRATOR.toString()]: {
       title: S.intl.string(S.t.PGvZqa),
@@ -336,12 +337,12 @@ function s(t) {
 }
 
 function P(t, i) {
-  let E = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {
-    showManageWebhooks: !0
+  let E = arguments.length > 2 && true !== arguments[2] ? arguments[2] : {
+    showManageWebhooks: true
   };
   return {
     title: i,
-    permissions: e((null == E ? void 0 : E.showManageWebhooks) ? [l.Pl.VIEW_CHANNEL, l.Pl.MANAGE_CHANNELS, l.Pl.MANAGE_ROLES, l.Pl.MANAGE_WEBHOOKS] : [l.Pl.VIEW_CHANNEL, l.Pl.MANAGE_CHANNELS, l.Pl.MANAGE_ROLES], t)
+    permissions: e((null == E ? true : E.showManageWebhooks) ? [l.Pl.VIEW_CHANNEL, l.Pl.MANAGE_CHANNELS, l.Pl.MANAGE_ROLES, l.Pl.MANAGE_WEBHOOKS] : [l.Pl.VIEW_CHANNEL, l.Pl.MANAGE_CHANNELS, l.Pl.MANAGE_ROLES], t)
   }
 }
 
@@ -378,8 +379,8 @@ function T(t, i, E) {
 }
 
 function g(t, i) {
-  let E = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {
-    showActivities: !0
+  let E = arguments.length > 2 && true !== arguments[2] ? arguments[2] : {
+    showActivities: true
   };
   return {
     title: i,

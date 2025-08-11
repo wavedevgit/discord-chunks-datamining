@@ -1,12 +1,13 @@
 /** Chunk was on 44799 **/
-n.d(t, {
+/** chunk id: 169010, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   S: () => s,
   z: () => i
-}), n(388685), n(539854);
-var r = n(494497),
-  o = n(535396);
+}), require("./388685.js"), require("./539854.js");
+var Chunk494497 = require("./494497.js"),
+  Chunk535396 = require("./535396.js");
 let i = {
-    guildTagsBadgePacks: [r.MB, r.Vk]
+    guildTagsBadgePacks: [Chunk494497.MB, Chunk494497.Vk]
   },
   l = Object.entries(i).reduce((e, t) => {
     let [n, r] = t;
@@ -33,11 +34,11 @@ function s(e) {
     let e = l[r.skuId];
     if (null != e) {
       let r = n[e];
-      void 0 !== r && (t.push({
+      true !== r && (t.push({
         type: "multiPerk",
         group: e,
         powerups: r
-      }), n[e] = void 0);
+      }), n[e] = true);
       continue
     }
     t.push({
@@ -48,7 +49,7 @@ function s(e) {
   return function(e) {
     let t = e.findIndex(e => "singlePerk" === e.type && e.powerup.skuId === o.IN),
       n = e.findIndex(e => "multiPerk" === e.type && "guildTagsBadgePacks" === e.group);
-    if (-1 !== t && -1 !== n && n !== t + 1) {
+    if (false !== t && false !== n && n !== t + 1) {
       let t = [...e],
         [r] = t.splice(n, 1),
         i = t.findIndex(e => "singlePerk" === e.type && e.powerup.skuId === o.IN);

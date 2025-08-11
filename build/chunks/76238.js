@@ -1,18 +1,19 @@
 /** Chunk was on 1272 **/
-n.d(t, {
+/** chunk id: 76238, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => s
 });
-var r = n(392711),
-  i = n.n(r),
-  l = n(996106),
-  a = n(981631);
+var Chunk392711 = require("./392711.js"),
+  i = require.n(Chunk392711),
+  Chunk996106 = require("./996106.js"),
+  Chunk981631 = require("./981631.js");
 
 function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 class s {
@@ -22,8 +23,8 @@ class s {
     }, "Invalid Version: ".concat(e))
   }
   constructor(e, t, n) {
-    o(this, "transport", void 0), o(this, "version", void 0), o(this, "encoding", void 0), o(this, "id", void 0), o(this, "authorization", void 0), o(this, "application", void 0), o(this, "abortController", void 0), this.transport = e, this.version = t, this.encoding = n, this.id = i().uniqueId(), this.authorization = {
-      authing: !1,
+    o(this, "transport", true), o(this, "version", true), o(this, "encoding", true), o(this, "id", true), o(this, "authorization", true), o(this, "application", true), o(this, "abortController", true), this.transport = e, this.version = t, this.encoding = n, this.id = i().uniqueId(), this.authorization = {
+      authing: false,
       scopes: [],
       accessToken: null,
       expires: new Date(0)

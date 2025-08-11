@@ -1,26 +1,27 @@
 /** Chunk was on web.js **/
+/** chunk id: 981668, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => b
-}), n(388685);
-var r = n(147913),
-  i = n(367907),
-  o = n(728345),
-  a = n(812206),
-  s = n(574176),
-  l = n(314897),
-  c = n(592125),
-  u = n(944486),
-  d = n(885110),
-  f = n(649739),
-  _ = n(981631);
+}), require("./388685.js");
+var Chunk147913 = require("./147913.js"),
+  Chunk367907 = require("./367907.js"),
+  Chunk728345 = require("./728345.js"),
+  Chunk812206 = require("./812206.js"),
+  Chunk574176 = require("./574176.js"),
+  Chunk314897 = require("./314897.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk944486 = require("./944486.js"),
+  Chunk885110 = require("./885110.js"),
+  Chunk649739 = require("./649739.js"),
+  Chunk981631 = require("./981631.js");
 
 function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -28,7 +29,7 @@ function h(e) {
   return e.filter(e => e.type === _.IIU.PLAYING && e.application_id).map(e => e.application_id)
 }
 async function m(e) {
-  await o.ZP.fetchApplications(e, !1)
+  await o.ZP.fetchApplications(e, false)
 }
 async function g(e) {
   if (null == e) return;
@@ -38,9 +39,9 @@ async function g(e) {
     } = s.n.getCurrentConfig({
       location: "GameActivityManager"
     }, {
-      autoTrackExposure: !1
+      autoTrackExposure: false
     });
-  if (null == t || !((0, f.Ku)("running_games_change", !1) || n)) return;
+  if (null == t || !((0, f.Ku)("running_games_change", false) || n)) return;
   let r = d.Z.getActivities();
   if (0 === r.length) return;
   let o = h([...r]);
@@ -53,9 +54,9 @@ async function g(e) {
     user_id: l.default.getId()
   })
 }
-class E extends r.Z {
+class E extends Chunk147913.Z {
   handleRunningGamesChange() {
-    g(u.Z.getVoiceChannelId())
+    g(Chunk944486.Z.getVoiceChannelId())
   }
   handleVoiceChannelSelect(e) {
     let {

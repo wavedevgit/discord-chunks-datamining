@@ -1,21 +1,22 @@
 /** Chunk was on web.js **/
+/** chunk id: 156570, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => s
-}), n(997841), n(953529);
-var r = n(81825),
-  i = n(218946),
-  o = n(598077);
+}), require("./997841.js"), require("./953529.js");
+var Chunk81825 = require("./81825.js"),
+  Chunk218946 = require("./218946.js"),
+  Chunk598077 = require("./598077.js");
 
 function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
-class s extends r.Z {
+class s extends Chunk81825.Z {
   static createFromServer(e) {
     let t = e.staff_notes;
     return new s({
@@ -63,6 +64,6 @@ class s extends r.Z {
   }
   constructor(e) {
     var t, n, r, i, o, s, l, c, u, d, f, _, p;
-    super(), a(this, "id", void 0), a(this, "applicationId", void 0), a(this, "skuId", void 0), a(this, "skuFlags", void 0), a(this, "summary", void 0), a(this, "tagline", void 0), a(this, "flavorText", void 0), a(this, "description", void 0), a(this, "carouselItems", void 0), a(this, "childSkuIds", void 0), a(this, "alternativeSkuIds", void 0), a(this, "assets", void 0), a(this, "staffNotes", void 0), a(this, "guild", void 0), a(this, "thumbnail", void 0), a(this, "boxArt", void 0), a(this, "previewVideo", void 0), a(this, "headerBackground", void 0), a(this, "headerLogoDarkTheme", void 0), a(this, "headerLogoLightTheme", void 0), a(this, "heroBackground", void 0), a(this, "heroVideo", void 0), a(this, "entitlementBranchId", void 0), a(this, "benefits", void 0), a(this, "published", void 0), this.id = e.id, this.applicationId = e.applicationId, this.skuId = e.skuId, this.skuFlags = e.skuFlags, this.summary = e.summary, this.tagline = e.tagline, this.flavorText = e.flavorText, this.description = e.description, this.carouselItems = null != (t = e.carouselItems) ? t : [], this.childSkuIds = null != (n = e.childSkuIds) ? n : [], this.alternativeSkuIds = null != (r = e.alternativeSkuIds) ? r : [], this.assets = null != (i = e.assets) ? i : [], this.staffNotes = e.staffNotes, this.guild = e.guild, this.thumbnail = null != (o = e.thumbnail) ? o : null, this.boxArt = null != (s = e.boxArt) ? s : null, this.previewVideo = null != (l = e.previewVideo) ? l : null, this.headerBackground = null != (c = e.headerBackground) ? c : null, this.headerLogoDarkTheme = null != (u = e.headerLogoDarkTheme) ? u : null, this.headerLogoLightTheme = null != (d = e.headerLogoLightTheme) ? d : null, this.heroBackground = null != (f = e.heroBackground) ? f : null, this.heroVideo = null != (_ = e.heroVideo) ? _ : null, this.entitlementBranchId = null != (p = e.entitlementBranchId) ? p : null, this.benefits = e.benefits, this.published = !!e.published
+    super(), a(this, "id", true), a(this, "applicationId", true), a(this, "skuId", true), a(this, "skuFlags", true), a(this, "summary", true), a(this, "tagline", true), a(this, "flavorText", true), a(this, "description", true), a(this, "carouselItems", true), a(this, "childSkuIds", true), a(this, "alternativeSkuIds", true), a(this, "assets", true), a(this, "staffNotes", true), a(this, "guild", true), a(this, "thumbnail", true), a(this, "boxArt", true), a(this, "previewVideo", true), a(this, "headerBackground", true), a(this, "headerLogoDarkTheme", true), a(this, "headerLogoLightTheme", true), a(this, "heroBackground", true), a(this, "heroVideo", true), a(this, "entitlementBranchId", true), a(this, "benefits", true), a(this, "published", true), this.id = e.id, this.applicationId = e.applicationId, this.skuId = e.skuId, this.skuFlags = e.skuFlags, this.summary = e.summary, this.tagline = e.tagline, this.flavorText = e.flavorText, this.description = e.description, this.carouselItems = null != (t = e.carouselItems) ? t : [], this.childSkuIds = null != (n = e.childSkuIds) ? n : [], this.alternativeSkuIds = null != (r = e.alternativeSkuIds) ? r : [], this.assets = null != (i = e.assets) ? i : [], this.staffNotes = e.staffNotes, this.guild = e.guild, this.thumbnail = null != (o = e.thumbnail) ? o : null, this.boxArt = null != (s = e.boxArt) ? s : null, this.previewVideo = null != (l = e.previewVideo) ? l : null, this.headerBackground = null != (c = e.headerBackground) ? c : null, this.headerLogoDarkTheme = null != (u = e.headerLogoDarkTheme) ? u : null, this.headerLogoLightTheme = null != (d = e.headerLogoLightTheme) ? d : null, this.heroBackground = null != (f = e.heroBackground) ? f : null, this.heroVideo = null != (_ = e.heroVideo) ? _ : null, this.entitlementBranchId = null != (p = e.entitlementBranchId) ? p : null, this.benefits = e.benefits, this.published = !!e.published
   }
 }

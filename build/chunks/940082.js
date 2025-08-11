@@ -1,5 +1,6 @@
 /** Chunk was on 91850 **/
-e.exports = {
+/** chunk id: 940082, original params: e,t,n (module,exports,require) **/
+module.exports = {
   "outgoing-call-pulse": "outgoing-call-pulse__3751b",
   menuItem: "menuItem__3751b",
   channelName: "channelName__3751b",

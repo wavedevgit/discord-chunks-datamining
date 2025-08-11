@@ -1,22 +1,23 @@
 /** Chunk was on 52030 **/
-n.d(t, {
+/** chunk id: 48550, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   P: () => r
 });
-var l = n(388032);
+var Chunk388032 = require("./388032.js");
 let r = {
   get webauthn() {
-    return l.intl.string(l.t.gTH4Dg)
+    return Chunk388032.intl.string(Chunk388032.t.gTH4Dg)
   },
   get totp() {
-    return l.intl.string(l.t.nXKmyc)
+    return Chunk388032.intl.string(Chunk388032.t.nXKmyc)
   },
   get sms() {
-    return l.intl.string(l.t.ZbVwZW)
+    return Chunk388032.intl.string(Chunk388032.t.ZbVwZW)
   },
   get password() {
-    return l.intl.string(l.t["8F6hKS"])
+    return Chunk388032.intl.string(Chunk388032.t["8F6hKS"])
   },
   get backup() {
-    return l.intl.string(l.t.vhSRKS)
+    return Chunk388032.intl.string(Chunk388032.t.vhSRKS)
   }
 }

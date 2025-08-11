@@ -1,5 +1,6 @@
 /** Chunk was on web.js **/
-e.exports = function(e) {
+/** chunk id: 413950, original params: e (module,exports,re quire) **/
+module.exports = function(e) {
   let t = e.regex,
     n = {
       begin: /<\/?[A-Za-z_]/,
@@ -38,22 +39,22 @@ e.exports = function(e) {
       className: "bullet",
       begin: "^[ 	]*([*+-]|(\\d+\\.))(?=\\s+)",
       end: "\\s+",
-      excludeEnd: !0
+      excludeEnd: true
     },
     a = {
       begin: /^\[[^\n]+\]:/,
-      returnBegin: !0,
+      returnBegin: true,
       contains: [{
         className: "symbol",
         begin: /\[/,
         end: /\]/,
-        excludeBegin: !0,
-        excludeEnd: !0
+        excludeBegin: true,
+        excludeEnd: true
       }, {
         className: "link",
         begin: /:\s*/,
         end: /$/,
-        excludeBegin: !0
+        excludeBegin: true
       }]
     },
     s = /[A-Za-z][A-Za-z0-9+.-]*/,
@@ -74,7 +75,7 @@ e.exports = function(e) {
         begin: /\[.*?\]\(.*?\)/,
         relevance: 0
       }],
-      returnBegin: !0,
+      returnBegin: true,
       contains: [{
         match: /\[(?=\])/
       }, {
@@ -82,22 +83,22 @@ e.exports = function(e) {
         relevance: 0,
         begin: "\\[",
         end: "\\]",
-        excludeBegin: !0,
-        returnEnd: !0
+        excludeBegin: true,
+        returnEnd: true
       }, {
         className: "link",
         relevance: 0,
         begin: "\\]\\(",
         end: "\\)",
-        excludeBegin: !0,
-        excludeEnd: !0
+        excludeBegin: true,
+        excludeEnd: true
       }, {
         className: "symbol",
         relevance: 0,
         begin: "\\]\\[",
         end: "\\]",
-        excludeBegin: !0,
-        excludeEnd: !0
+        excludeBegin: true,
+        excludeEnd: true
       }]
     },
     c = {

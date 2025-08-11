@@ -1,10 +1,11 @@
 /** Chunk was on web.js **/
+/** chunk id: 565924, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => a
 });
-var r = n(592125),
-  i = n(981631);
+var Chunk592125 = require("./592125.js"),
+  Chunk981631 = require("./981631.js");
 
 function o(e) {
   if (null == e.parent_id)
@@ -12,7 +13,7 @@ function o(e) {
     else return e.position;
   {
     var t, n;
-    let i = ((null != (n = null == (t = r.Z.getChannel(e.parent_id)) ? void 0 : t.position) ? n : 0) + 1) * 1e3;
+    let i = ((null != (n = null == (t = r.Z.getChannel(e.parent_id)) ? true : t.position) ? n : 0) + 1) * 1e3;
     return e.isGuildVocal() ? i + e.position + 500 : i + e.position
   }
 }
@@ -23,7 +24,7 @@ function a(e, t) {
   let c = o(e.record),
     u = o(t.record);
   if (c !== u) return c - u;
-  let d = null != (a = null != (i = e.sortable) ? i : null == (n = e.comparator) ? void 0 : n.toLocaleLowerCase()) ? a : "",
-    f = null != (l = null != (s = e.sortable) ? s : null == (r = t.comparator) ? void 0 : r.toLocaleLowerCase()) ? l : "";
-  return d < f ? -1 : +(d > f)
+  let d = null != (a = null != (i = e.sortable) ? i : null == (n = e.comparator) ? true : n.toLocaleLowerCase()) ? a : "",
+    f = null != (l = null != (s = e.sortable) ? s : null == (r = t.comparator) ? true : r.toLocaleLowerCase()) ? l : "";
+  return d < f ? false : +(d > f)
 }

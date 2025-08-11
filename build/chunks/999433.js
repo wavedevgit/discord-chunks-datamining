@@ -1,6 +1,7 @@
 /** Chunk was on 67244 **/
+/** chunk id: 999433, original params: e,t (module,exports,require) **/
 "use strict";
-t.__esModule = !0, t.default = {
+exports.__esModule = true, exports.default = {
   scheme: "monokai",
   author: "wimer hazenberg (http://www.monokai.nl)",
   base00: "#272822",
@@ -19,4 +20,4 @@ t.__esModule = !0, t.default = {
   base0D: "#66d9ef",
   base0E: "#ae81ff",
   base0F: "#cc6633"
-}, e.exports = t.default
+}, module.exports = exports.default

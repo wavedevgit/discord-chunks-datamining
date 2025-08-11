@@ -1,0 +1,124 @@
+/** Chunk was on web.js **/
+/** chunk id: 122943, original params: e,t,n (module,exports,re quire) **/
+"use strict";
+require.d(exports, {
+  Z: () => A
+});
+var Chunk255367 = require("./255367.js"),
+  Chunk73800 = require("./73800.js"),
+  Chunk120356 = require("./120356.js"),
+  a = require.n(Chunk120356),
+  Chunk481060 = require("./481060.js"),
+  Chunk906732 = require("./906732.js"),
+  Chunk201895 = require("./201895.js"),
+  Chunk933557 = require("./933557.js"),
+  Chunk482798 = require("./482798.js"),
+  Chunk209698 = require("./209698.js"),
+  Chunk788858 = require("./788858.js"),
+  Chunk814454 = require("./814454.js"),
+  Chunk170187 = require("./170187.js"),
+  Chunk532657 = require("./532657.js"),
+  Chunk556638 = require("./556638.js"),
+  Chunk388032 = require("./388032.js"),
+  Chunk843280 = require("./843280.js");
+
+function y(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+
+function O(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      y(e, t, n[t])
+    })
+  }
+  return e
+}
+
+function v(e, t) {
+  var n = Object.keys(e);
+  if (Object.getOwnPropertySymbols) {
+    var r = Object.getOwnPropertySymbols(e);
+    t && (r = r.filter(function(t) {
+      return Object.getOwnPropertyDescriptor(e, t).enumerable
+    })), n.push.apply(n, r)
+  }
+  return n
+}
+
+function I(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
+    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+  }), e
+}
+
+function T(e) {
+  let {
+    channel: t,
+    textVariant: n,
+    textClassName: o,
+    iconClassName: f,
+    hideText: m = false,
+    hideTooltip: y = false,
+    canTruncate: v = true,
+    showChannelName: T = false
+  } = e, S = (0, s.vjg)(s.Skl.ONLINE), A = (0, u.ZP)(t), N = t.isDM() || t.isGroupDM(), {
+    enableTopNavButton: C
+  } = (0, d.Cq)({
+    location: "VoiceActivityStatus"
+  }), R = !C && T, {
+    analyticsLocations: P
+  } = (0, l.ZP)(), w = i.useCallback(() => {
+    (0, p.A)({
+      analyticsLocations: P,
+      activityType: "VOICE",
+      voiceChannelId: t.id
+    })
+  }, [P, t.id]), D = () => y || N ? <_.Z size={"custom"} color={S} channel={t} className={a()(b.icon, f)} /> : <s.ua7 text={A} aria-label={(0, c.ZP)({
+      channel: t
+    })} delay={g.X} onTooltipShow={w}>{e => (0, r.jsx)(_.Z, I(O({}, e), {
+      size: "custom",
+      color: S,
+      channel: t,
+      className: a()(b.icon, f)
+    }))}</s.ua7>, L = () => C ? A : N ? E.intl.string(E.t["9FaEzs"]) : t.isGuildStageVoice() ? E.intl.string(E.t.QygGCA) : E.intl.string(E.t.msxteH);
+  return <r.Fragment>{D()}{!m && <h.Z variant={n} className={o} canTruncate={v} hideTooltip={y}>{L()}{R && null != A && " (".concat(A, ")")}</h.Z>}</r.Fragment>
+}
+
+function S(e) {
+  let {
+    channel: t,
+    textVariant: n,
+    textClassName: i,
+    iconClassName: o,
+    hideText: l = false,
+    hideTooltip: c = false,
+    canTruncate: f = true,
+    showChannelName: p = false
+  } = e, h = (0, s.vjg)(s.Skl.ONLINE), g = (0, u.ZP)(t), y = t.isDM() || t.isGroupDM(), {
+    enableTopNavButton: O
+  } = (0, d.Cq)({
+    location: "VoiceActivityStatusWithCombinedTooltip"
+  }), v = O && null != g ? g : y ? E.intl.string(E.t["9FaEzs"]) : t.isGuildStageVoice() ? E.intl.string(E.t.QygGCA) : E.intl.string(E.t.msxteH), I = null == g || O ? v : "".concat(v, " (").concat(g, ")"), T = p ? I : v;
+  return <m.Z icon={(0, r.jsx)(_.Z, {
+      size: "custom",
+      color: h,
+      channel: t,
+      className: a()(b.icon, o)
+    })} text={T} tooltipText={c ? true : I} textVariant={n} textClassName={i} hideTooltip={c} canTruncate={f} aria-label={I} hideText={l} />
+}
+
+function A(e) {
+  return (0, f.b)({
+    location: "VoiceActivityStatusExperimentWrapper"
+  }) ? <S{...O({}, e)} /> : <T{...O({}, e)} />
+}

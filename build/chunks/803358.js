@@ -1,19 +1,20 @@
 /** Chunk was on web.js **/
+/** chunk id: 803358, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => p
-}), n(781311);
-var r = n(979590),
-  i = n.n(r),
-  o = n(866442),
-  a = n(81825);
+}), require("./781311.js");
+var Chunk979590 = require("./979590.js"),
+  i = require.n(Chunk979590),
+  Chunk866442 = require("./866442.js"),
+  Chunk81825 = require("./81825.js");
 
 function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -69,7 +70,7 @@ let _ = e => null == e ? e : {
   buttonColors: e.button_colors.map(e => i()((0, o.Rf)(e))),
   confettiColors: e.confetti_colors.map(e => i()((0, o.Rf)(e)))
 };
-class p extends a.Z {
+class p extends Chunk81825.Z {
   static fromServer(e) {
     var {
       store_listing_id: t,
@@ -86,6 +87,6 @@ class p extends a.Z {
     }))
   }
   constructor(e) {
-    super(), s(this, "storeListingId", void 0), s(this, "skuId", void 0), s(this, "name", void 0), s(this, "summary", void 0), s(this, "unpublishedAt", void 0), s(this, "styles", void 0), this.storeListingId = e.storeListingId, this.skuId = e.skuId, this.name = e.name, this.summary = e.summary.trim(), this.unpublishedAt = e.unpublishedAt, this.styles = e.styles
+    super(), s(this, "storeListingId", true), s(this, "skuId", true), s(this, "name", true), s(this, "summary", true), s(this, "unpublishedAt", true), s(this, "styles", true), this.storeListingId = e.storeListingId, this.skuId = e.skuId, this.name = e.name, this.summary = e.summary.trim(), this.unpublishedAt = e.unpublishedAt, this.styles = e.styles
   }
 }

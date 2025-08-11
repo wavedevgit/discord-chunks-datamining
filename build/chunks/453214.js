@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 453214, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   authorize: "authorize__3d3b0",
   fakeHeader: "fakeHeader__3d3b0",
   moveUp: "moveUp__3d3b0",

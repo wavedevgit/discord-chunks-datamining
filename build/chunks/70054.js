@@ -1,12 +1,13 @@
 /** Chunk was on 50448 **/
+/** chunk id: 70054, original params: t,r,n (module,exports,require) **/
 "use strict";
-var e = n(220159),
-  o = n(354e3);
-e({
+var Chunk220159 = require("./220159.js"),
+  Chunk354000 = require("./354000.js");
+Chunk220159({
   target: "Object",
-  stat: !0,
+  stat: true,
   arity: 2,
-  forced: Object.assign !== o
+  forced: Object.assign !== Chunk354000
 }, {
-  assign: o
+  assign: Chunk354000
 })

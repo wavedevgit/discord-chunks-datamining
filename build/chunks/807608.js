@@ -1,16 +1,17 @@
 /** Chunk was on 30634 **/
-n.d(t, {
+/** chunk id: 807608, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => u
-}), n(388685), n(539854);
-var r = n(485589),
-  a = n(424706),
-  l = n(14160),
-  i = n(247123);
+}), require("./388685.js"), require("./539854.js");
+var Chunk485589 = require("./485589.js"),
+  Chunk424706 = require("./424706.js"),
+  Chunk14160 = require("./14160.js"),
+  Chunk247123 = require("./247123.js");
 let u = {
   id: "nested-interactive",
-  selector: "button, a, ".concat(Array.from(r.roles.entries()).reduce((e, t) => {
+  selector: "button, a, ".concat(Array.from(Chunk485589.roles.entries()).reduce((e, t) => {
     let [n, r] = t;
-    return !0 === r.childrenPresentational && e.push('[role="'.concat(n, '"]')), e
+    returntrue === r.childrenPresentational && e.push('[role="'.concat(n, '"]')), e
   }, []).join(", ")),
   tags: [],
   metadata: {
@@ -28,7 +29,7 @@ let u = {
               case "EMBED":
               case "DETAILS":
               case "LABEL":
-                return !0;
+                returntrue;
               case "INPUT":
                 return "hidden" !== e.getAttribute("type")
             }
@@ -40,14 +41,14 @@ let u = {
               case "img":
                 return e.hasAttribute("usemap");
               case "button":
-                return !0;
+                returntrue;
               default:
-                return !1
+                returnfalse
             }
-          }(n)) return !1;
+          }(n)) returnfalse;
         n = t.nextNode()
       }
-      return !0
+      returntrue
     }(e) && (0, l.p)(e) ? "Nested interactive element" : i.w
   }
 }

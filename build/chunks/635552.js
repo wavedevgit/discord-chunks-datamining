@@ -1,27 +1,28 @@
 /** Chunk was on 45620 **/
+/** chunk id: 635552, original params: e,t,n (module,exports,require) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   W: () => u
-}), n(388685);
-var r = n(73800),
-  l = n(979554),
-  a = n(809206),
-  i = n(350327),
-  o = n(884697),
-  s = n(328456),
-  c = n(388032);
+}), require("./388685.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk979554 = require("./979554.js"),
+  Chunk809206 = require("./809206.js"),
+  Chunk350327 = require("./350327.js"),
+  Chunk884697 = require("./884697.js"),
+  Chunk328456 = require("./328456.js"),
+  Chunk388032 = require("./388032.jsx");
 let u = e => {
   let {
     product: t,
     onSuccess: u,
     onError: d
-  } = e, [p, g] = r.useState(!1), {
+  } = e, [p, g] = r.useState(false), {
     firstAvatarDecoration: f,
     firstProfileEffect: b
   } = (0, s.Rj)(t), h = (0, o.x6)(t) ? c.intl.string(c.t.tf1ZZ2) : t.type === l.Z.AVATAR_DECORATION ? c.intl.string(c.t.zOA4a2) : t.type === l.Z.NAMEPLATE ? c.intl.string(c.t.gOzMv7) : c.intl.string(c.t.SWm2am);
   return {
     handleUseNow: r.useCallback(async () => {
-      g(!0);
+      g(true);
       try {
         if (null != f && await (0, a.Mn)({
             avatarDecoration: f
@@ -53,7 +54,7 @@ let u = e => {
       } catch (e) {
         null == d || d(e)
       } finally {
-        g(!1)
+        g(false)
       }
     }, [f, b, t, u, h, d]),
     isApplying: p

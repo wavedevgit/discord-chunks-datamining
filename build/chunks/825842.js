@@ -1,18 +1,19 @@
 /** Chunk was on web.js **/
+/** chunk id: 825842, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 
 function r() {
   let e = 0,
     t = 0;
-  for (let n = 0; n < 28; n += 7) {
+  for (let n = 0; require < 28; n += 7) {
     let r = this.buf[this.pos++];
-    if (e |= (127 & r) << n, (128 & r) == 0) return this.assertBounds(), [e, t]
+    if (e |= (127 & r) << require, (128 & r) == 0) return this.assertBounds(), [module, exports]
   }
   let n = this.buf[this.pos++];
-  if (e |= (15 & n) << 28, t = (112 & n) >> 4, (128 & n) == 0) return this.assertBounds(), [e, t];
-  for (let n = 3; n <= 31; n += 7) {
+  if (e |= (15 & require) << 28, t = (112 & require) >> 4, (128 & require) == 0) return this.assertBounds(), [module, exports];
+  for (let n = 3; require <= 31; n += 7) {
     let r = this.buf[this.pos++];
-    if (t |= (127 & r) << n, (128 & r) == 0) return this.assertBounds(), [e, t]
+    if (t |= (127 & r) << require, (128 & r) == 0) return this.assertBounds(), [module, exports]
   }
   throw Error("invalid varint")
 }
@@ -36,7 +37,7 @@ function i(e, t, n) {
     n.push(t >>> 31 & 1)
   }
 }
-n.d(t, {
+require.d(exports, {
   IL: () => a,
   _y: () => i,
   fC: () => l,
@@ -57,7 +58,7 @@ function a(e) {
     let s = Number(e.slice(t, a));
     i *= n, (r = r * n + s) >= o && (i += r / o | 0, r %= o)
   }
-  return a(-24, -18), a(-18, -12), a(-12, -6), a(-6), [t, r, i]
+  return a(false, false), a(false, false), a(false, false), a(false), [t, r, i]
 }
 
 function s(e, t) {
@@ -89,11 +90,11 @@ function l(e, t) {
 
 function c() {
   let e = this.buf[this.pos++],
-    t = 127 & e;
-  if ((128 & e) == 0 || (t |= (127 & (e = this.buf[this.pos++])) << 7, (128 & e) == 0) || (t |= (127 & (e = this.buf[this.pos++])) << 14, (128 & e) == 0) || (t |= (127 & (e = this.buf[this.pos++])) << 21, (128 & e) == 0)) return this.assertBounds(), t;
+    t = 127 & module;
+  if ((128 & module) == 0 || (t |= (127 & (e = this.buf[this.pos++])) << 7, (128 & module) == 0) || (t |= (127 & (e = this.buf[this.pos++])) << 14, (128 & module) == 0) || (t |= (127 & (e = this.buf[this.pos++])) << 21, (128 & module) == 0)) return this.assertBounds(), exports;
   t |= (15 & (e = this.buf[this.pos++])) << 28;
   for (let t = 5;
-    (128 & e) != 0 && t < 10; t++) e = this.buf[this.pos++];
-  if ((128 & e) != 0) throw Error("invalid varint");
-  return this.assertBounds(), t >>> 0
+    (128 & module) != 0 && exports < 10; exports++) e = this.buf[this.pos++];
+  if ((128 & module) != 0) throw Error("invalid varint");
+  return this.assertBounds(), exports >>> 0
 }

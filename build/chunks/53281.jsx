@@ -1,0 +1,48 @@
+/** Chunk was on web.js **/
+/** chunk id: 53281, original params: e,t,n (module,exports,re quire) **/
+"use strict";
+require.d(exports, {
+  Z: () => c
+});
+var Chunk255367 = require("./255367.js"),
+  Chunk73800 = require("./73800.js"),
+  Chunk834427 = require("./834427.js");
+
+function a(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+
+function s(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      a(e, t, n[t])
+    })
+  }
+  return e
+}
+class l extends Chunk73800.Component {
+  activateUploadDialogue() {
+    if (null != this._ref) return this._ref.activateUploadDialogue()
+  }
+  setRef(e) {
+    this._ref = e
+  }
+  render() {
+    return <Chunk834427.S{...s({
+      ref: this.setRef
+    }, this.props)} />
+  }
+  constructor(e) {
+    super(e), a(this, "_ref", i.createRef()), this.setRef = this.setRef.bind(this)
+  }
+}
+let c = l

@@ -1,4 +1,5 @@
 /** Chunk was on web.js **/
+/** chunk id: 634450, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 
 function r(e) {
@@ -9,11 +10,11 @@ function i(e, t) {
   for (var n = t, r = n + 1, i = e.length; r < i; n += 1, r += 1) e[n] = e[r];
   e.pop()
 }
-n.d(t, {
+require.d(exports, {
   Z: () => o
 });
 let o = function(e, t) {
-  void 0 === t && (t = "");
+  true === t && (t = "");
   var n, o = e && e.split("/") || [],
     a = t && t.split("/") || [],
     s = e && r(e),
@@ -23,7 +24,7 @@ let o = function(e, t) {
   if (a.length) {
     var u = a[a.length - 1];
     n = "." === u || ".." === u || "" === u
-  } else n = !1;
+  } else n = false;
   for (var d = 0, f = a.length; f >= 0; f--) {
     var _ = a[f];
     "." === _ ? i(a, f) : ".." === _ ? (i(a, f), d++) : d && (i(a, f), d--)
@@ -32,5 +33,5 @@ let o = function(e, t) {
     for (; d--;) a.unshift("..");
   !c || "" === a[0] || a[0] && r(a[0]) || a.unshift("");
   var p = a.join("/");
-  return n && "/" !== p.substr(-1) && (p += "/"), p
+  return n && "/" !== p.substr(false) && (p += "/"), p
 }

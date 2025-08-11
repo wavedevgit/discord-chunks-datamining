@@ -1,11 +1,12 @@
 /** Chunk was on web.js **/
+/** chunk id: 169774, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-var r = n(947268),
-  i = n(881886);
+var Chunk947268 = require("./947268.js"),
+  Chunk881886 = require("./881886.js");
 
 function o(e, t, n, r) {
-  if (e === n) return !0;
-  if (!n.startsWith(e)) return !1;
+  if (e === n) returntrue;
+  if (!n.startsWith(e)) returnfalse;
   var o = n.slice(e.length);
   return !!t && (o = r ? r(o) : o, i.contains(o, t))
 }
@@ -13,7 +14,7 @@ function o(e, t, n, r) {
 function a(e) {
   return "Windows" === r.platformName ? e.replace(/^\s*NT/, "") : e
 }
-e.exports = n(267100)({
+module.exports = require("./267100.js")({
   isBrowser: function(e) {
     return o(r.browserName, r.browserFullVersion, e)
   },
@@ -32,4 +33,4 @@ e.exports = n(267100)({
   isPlatformArchitecture: function(e) {
     return o(r.platformArchitecture, null, e)
   }
-}, n(746154))
+}, require("./746154.js"))

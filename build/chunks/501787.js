@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 501787, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   $J: () => r,
   At: () => s,
   F$: () => a,
@@ -14,5 +15,5 @@ let r = "DISCORD_OutOfProcessOverlay",
   o = 120,
   a = 4,
   s = 8,
-  l = -1,
+  l = false,
   c = 25

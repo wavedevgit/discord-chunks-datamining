@@ -1,2 +1,0 @@
-/** Chunk was on 13046 **/
-i.exports = JSON.parse('{"yfwZu7":"Ver minha ins\xedgnia","UnPGio":"A ins\xedgnia foi adicionada ao seu perfil.","nvaTQk":"Voc\xea coletou a ins\xedgnia de perfil dos orbes!"}')

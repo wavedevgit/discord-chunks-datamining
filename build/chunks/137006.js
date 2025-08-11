@@ -1,23 +1,24 @@
 /** Chunk was on 1272 **/
-n.d(t, {
+/** chunk id: 137006, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   m: () => l
-}), n(388685), n(953529);
-var r = n(243814),
-  i = n(103964);
+}), require("./388685.js"), require("./953529.js");
+var Chunk243814 = require("./243814.js"),
+  Chunk103964 = require("./103964.js");
 let l = {
-    [i.Q5.INITIATE_IMAGE_UPLOAD]: {
-      request: void 0,
+    [Chunk103964.Q5.INITIATE_IMAGE_UPLOAD]: {
+      request: true,
       response: e => ({
         image_url: e.string().required()
       })
     },
-    [i.Q5.OPEN_SHARE_MOMENT_DIALOG]: {
-      response: void 0,
+    [Chunk103964.Q5.OPEN_SHARE_MOMENT_DIALOG]: {
+      response: true,
       request: e => ({
         mediaUrl: e.string().required().max(1024)
       })
     },
-    [i.Q5.AUTHENTICATE]: {
+    [Chunk103964.Q5.AUTHENTICATE]: {
       request: e => ({
         access_token: e.string().allow(null).optional()
       }),
@@ -42,15 +43,15 @@ let l = {
         }).required()
       })
     },
-    [i.Q5.GET_ACTIVITY_INSTANCE_CONNECTED_PARTICIPANTS]: {
-      request: void 0,
+    [Chunk103964.Q5.GET_ACTIVITY_INSTANCE_CONNECTED_PARTICIPANTS]: {
+      request: true,
       response: e => ({
         participants: e.array().items(o(e).keys({
           nickname: e.string().description("Server nickname. Not unique.")
         }).required()).required()
       })
     },
-    [i.Q5.SHARE_INTERACTION]: {
+    [Chunk103964.Q5.SHARE_INTERACTION]: {
       request: e => ({
         command: e.string().required(),
         options: e.array().items(e.object({
@@ -71,7 +72,7 @@ let l = {
         success: e.boolean().required()
       })
     },
-    [i.Q5.SHARE_LINK]: {
+    [Chunk103964.Q5.SHARE_LINK]: {
       request: e => ({
         custom_id: e.string().max(64),
         message: e.string().max(1e3).required(),
@@ -83,8 +84,8 @@ let l = {
         didSendMessage: e.boolean().required()
       })
     },
-    [i.Q5.GET_RELATIONSHIPS]: {
-      request: void 0,
+    [Chunk103964.Q5.GET_RELATIONSHIPS]: {
+      request: true,
       response: e => ({
         relationships: e.array().required().items(e.object({
           type: e.number().required(),
@@ -96,14 +97,14 @@ let l = {
         }))
       })
     },
-    [i.Q5.INVITE_USER_EMBEDDED]: {
+    [Chunk103964.Q5.INVITE_USER_EMBEDDED]: {
       request: e => ({
         user_id: e.string().required(),
         content: e.string().min(0).max(1024)
       }),
-      response: void 0
+      response: true
     },
-    [i.Q5.GET_USER]: {
+    [Chunk103964.Q5.GET_USER]: {
       request: e => ({
         id: e.string().max(64).required()
       }),

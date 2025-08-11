@@ -1,17 +1,18 @@
 /** Chunk was on web.js **/
+/** chunk id: 280845, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   U: () => _,
   o: () => p
-}), n(388685);
-var r = n(275726),
-  i = n(442837),
-  o = n(71619),
-  a = n(665906),
-  s = n(496675),
-  l = n(594174),
-  c = n(981631),
-  u = n(231338);
+}), require("./388685.js");
+var Chunk275726 = require("./275726.js"),
+  Chunk442837 = require("./442837.js"),
+  Chunk71619 = require("./71619.js"),
+  Chunk665906 = require("./665906.js"),
+  Chunk496675 = require("./496675.js"),
+  Chunk594174 = require("./594174.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk231338 = require("./231338.js");
 
 function d(e, t, n) {
   let i;
@@ -28,7 +29,7 @@ function f(e, t, n, r, i) {
 function _(e, t) {
   var n;
   let r = (0, a.tc)(e),
-    [, l] = (0, o.AB)(null != (n = null == e ? void 0 : e.getGuildId()) ? n : void 0),
+    [, l] = (0, o.AB)(null != (n = null == e ? true : e.getGuildId()) ? n : true),
     c = (0, i.e7)([s.Z], () => null != e && null != t && d(e, t, s.Z));
   return null != e && null != t && f(e, t, c, l, r)
 }
@@ -38,6 +39,6 @@ function p(e, t) {
   let r = (0, a.kn)(e),
     i = d(e, t, s.Z),
     c = l.default.getCurrentUser(),
-    [, u] = (0, o.s5)(null == c ? void 0 : c.id, null != (n = e.getGuildId()) ? n : void 0);
+    [, u] = (0, o.s5)(null == c ? true : c.id, null != (n = e.getGuildId()) ? n : true);
   return f(e, t, i, u, r)
 }

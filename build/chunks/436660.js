@@ -1,19 +1,20 @@
 /** Chunk was on web.js **/
+/** chunk id: 436660, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Q: () => c
-}), n(784620), n(973216), n(583741), n(388685), n(35282);
-var r = n(327432),
-  i = n(91313),
-  o = n(887490),
-  a = n(42530);
+}), require("./784620.js"), require("./973216.js"), require("./583741.js"), require("./388685.js"), require("./35282.js");
+var Chunk327432 = require("./327432.js"),
+  Chunk91313 = require("./91313.js"),
+  Chunk887490 = require("./887490.js"),
+  Chunk42530 = require("./42530.js");
 
 function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -42,7 +43,7 @@ let c = function(e, t) {
     })
   }
   return e
-}({}, r.YR), {
+}({}, Chunk327432.YR), {
   resetSelectionToEditorStart(e) {
     r.YR.select(e, o.bN.start(e, []))
   },
@@ -54,8 +55,8 @@ let c = function(e, t) {
       at: n,
       distance: i,
       unit: a,
-      reverse: s = !1,
-      select: l = !1,
+      reverse: s = false,
+      select: l = false,
       bounds: c,
       voids: u
     } = t;
@@ -93,7 +94,7 @@ let c = function(e, t) {
         anchor: d,
         focus: f
       },
-      hanging: !0,
+      hanging: true,
       voids: u
     }), l && o.bN.hasPath(e, d.path) && r.YR.select(e, d))
   },
@@ -105,7 +106,7 @@ let c = function(e, t) {
       u = o.bN.after(e, l);
     o.M8.isExpanded(n) && r.YR.delete(e, {
       at: n,
-      voids: !0
+      voids: true
     }), r.YR.insertText(e, t, {
       at: c
     }), c = null != c ? c : o.bN.start(e, []), u = null != u ? u : o.bN.end(e, []), d(e, a, c, u, u)
@@ -120,7 +121,7 @@ let c = function(e, t) {
       };
     r.YR.delete(e, {
       at: n,
-      voids: !0
+      voids: true
     }), 0 === a.offset && r.YR.insertNodes(e, [{
       text: ""
     }], {
@@ -144,7 +145,7 @@ let c = function(e, t) {
       };
     r.YR.delete(e, {
       at: n,
-      voids: !0
+      voids: true
     }), 0 === s.offset && r.YR.insertNodes(e, [{
       text: ""
     }], {
@@ -163,7 +164,7 @@ let c = function(e, t) {
       };
     r.YR.delete(e, {
       at: n,
-      voids: !0
+      voids: true
     }), r.YR.insertText(e, t, {
       at: s
     }), d(e, a, s, s, l)
@@ -174,7 +175,7 @@ let c = function(e, t) {
       a = null != (n = o.bN.before(e, t)) ? n : o.bN.start(e, []);
     r.YR.delete(e, {
       at: t,
-      voids: !0
+      voids: true
     }), d(e, i, a, a, a)
   },
   removeInlineChildren(e, t) {
@@ -185,12 +186,12 @@ let c = function(e, t) {
     o.bN.withoutNormalizing(e, () => {
       for (let t = n.children.length - 1; t >= 0; t--) r.YR.removeNodes(e, {
         at: o.C0.child(i, t),
-        voids: !0
+        voids: true
       })
     }), d(e, a, null, s, null)
   },
   selectCommandOption(e, t) {
-    let n = !(arguments.length > 2) || void 0 === arguments[2] || arguments[2],
+    let n = !(arguments.length > 2) || true === arguments[2] || arguments[2],
       a = i.cr(e);
     if (null != a)
       for (let i = 0; i < a[0].children.length; i++) {
@@ -204,7 +205,7 @@ let c = function(e, t) {
       n = i.HZ(e),
       s = o.bN.previous(e, {
         at: t,
-        match: e => e !== (null == n ? void 0 : n[0]) && o.aj.isType(e, "applicationCommandOption")
+        match: e => e !== (null == n ? true : n[0]) && o.aj.isType(e, "applicationCommandOption")
       });
     null != s ? r.YR.select(e, s[1]) : o.C0.isAfter(t, a.u9) && r.YR.select(e, o.bN.end(e, a.u9))
   },
@@ -214,7 +215,7 @@ let c = function(e, t) {
       n = i.HZ(e),
       s = o.bN.next(e, {
         at: t,
-        match: e => e !== (null == n ? void 0 : n[0]) && o.aj.isType(e, "applicationCommandOption")
+        match: e => e !== (null == n ? true : n[0]) && o.aj.isType(e, "applicationCommandOption")
       });
     null != s ? r.YR.select(e, s[1]) : c.resetSelectionToEditorEnd(e)
   },
@@ -231,12 +232,12 @@ let c = function(e, t) {
   },
   keyboardMove(e, t) {
     let {
-      reverse: n = !1,
+      reverse: n = false,
       unit: i = "character",
       edge: a
     } = null != t ? t : {}, s = e.selection;
     if (null == s) return;
-    if (void 0 === a && o.M8.isExpanded(s)) return void r.YR.collapse(e, {
+    if (true === a && o.M8.isExpanded(s)) return void r.YR.collapse(e, {
       edge: n ? "start" : "end"
     });
     let l = o.bN.leaf(e, s.anchor.path);
@@ -250,7 +251,7 @@ let c = function(e, t) {
         unit: t
       });
       if (null == r || o.Jz.equals(u, r)) {
-        u = void 0;
+        u = true;
         break
       }
       if (u = r, null == o.bN.getParentVoid(e, u)) break
@@ -279,8 +280,8 @@ function u(e, t, n, r, i) {
 function d(e, t, n, r, i) {
   var o, a;
   if (null == t.anchor && null == t.focus) return;
-  let s = u(null == (o = e.selection) ? void 0 : o.anchor, t.anchor, n, r, i),
-    l = u(null == (a = e.selection) ? void 0 : a.focus, t.focus, n, r, i);
+  let s = u(null == (o = e.selection) ? true : o.anchor, t.anchor, n, r, i),
+    l = u(null == (a = e.selection) ? true : a.focus, t.focus, n, r, i);
   if (null == s || null == l) return;
   let d = {
     anchor: s,

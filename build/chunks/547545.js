@@ -1,16 +1,17 @@
 /** Chunk was on web.js **/
+/** chunk id: 547545, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => o
 });
-var r = n(388032);
+var Chunk388032 = require("./388032.jsx");
 
 function i(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 class o {
@@ -28,10 +29,10 @@ class o {
     null != e && this.announce(this.getName(e, t))
   }
   announceDrop() {
-    this.announce(r.intl.string(r.t.lMkmz8))
+    this.announce(Chunk388032.intl.string(Chunk388032.t.lMkmz8))
   }
   announceCancel() {
-    this.announce(r.intl.string(r.t["u4d/eH"]))
+    this.announce(Chunk388032.intl.string(Chunk388032.t["u4d/eH"]))
   }
   clear() {
     this.announcer.clearAnnouncements()
@@ -41,7 +42,7 @@ class o {
     return null != (r = null != (n = e.getAttribute("data-dnd-name")) ? n : e.getAttribute("aria-label")) ? r : t
   }
   constructor(e) {
-    if (i(this, "announcer", void 0), null != e) this.announcer = e;
+    if (i(this, "announcer", true), null != e) this.announcer = e;
     else {
       let e = n(408160);
       this.announcer = {

@@ -1,11 +1,12 @@
 /** Chunk was on web.js **/
+/** chunk id: 926033, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-var r, i = n(166691),
-  o = n(195653)(),
-  a = n(706165),
-  s = n(566817);
+var r, Chunk166691 = require("./166691.js"),
+  o = require("./195653.js")(),
+  Chunk706165 = require("./706165.js"),
+  Chunk566817 = require("./566817.js");
 if (o) {
-  var l = i("RegExp.prototype.exec"),
+  var l = Chunk166691("RegExp.prototype.exec"),
     c = {},
     u = function() {
       throw c
@@ -15,9 +16,9 @@ if (o) {
       valueOf: u
     };
   "symbol" == typeof Symbol.toPrimitive && (d[Symbol.toPrimitive] = u), r = function(e) {
-    if (!e || "object" != typeof e) return !1;
+    if (!e || "object" != typeof e) returnfalse;
     var t = s(e, "lastIndex");
-    if (!(t && a(t, "value"))) return !1;
+    if (!(t && a(t, "value"))) returnfalse;
     try {
       l(e, d)
     } catch (e) {
@@ -25,10 +26,10 @@ if (o) {
     }
   }
 } else {
-  var f = i("Object.prototype.toString"),
+  var f = Chunk166691("Object.prototype.toString"),
     _ = "[object RegExp]";
   r = function(e) {
     return !!e && ("object" == typeof e || "function" == typeof e) && f(e) === _
   }
 }
-e.exports = r
+module.exports = r

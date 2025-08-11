@@ -1,19 +1,20 @@
 /** Chunk was on web.js **/
+/** chunk id: 903387, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => o
 });
-var r = n(58406);
-class i extends r.g {
+var Chunk58406 = require("./58406.js");
+class i extends Chunk58406.g {
   requestPermissionCore(e, t) {
-    return Promise.resolve(!0)
+    return Promise.resolve(true)
   }
   hasPermissionCore(e, t) {
-    return Promise.resolve(!0)
+    return Promise.resolve(true)
   }
   openSettings(e) {}
   didHavePermission(e) {
-    return !0
+    returntrue
   }
   openAlertModal(e) {}
 }

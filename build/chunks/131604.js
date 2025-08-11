@@ -1,23 +1,24 @@
 /** Chunk was on web.js **/
+/** chunk id: 131604, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-var r, i = n(166691),
-  o = n(190337)(/^\s*(?:function)?\*/),
-  a = n(195653)(),
-  s = n(143988),
-  l = i("Object.prototype.toString"),
-  c = i("Function.prototype.toString"),
+var r, Chunk166691 = require("./166691.js"),
+  o = require("./190337.js")(/^\s*(?:function)?\*/),
+  a = require("./195653.js")(),
+  Chunk143988 = require("./143988.js"),
+  l = Chunk166691("Object.prototype.toString"),
+  c = Chunk166691("Function.prototype.toString"),
   u = function() {
-    if (!a) return !1;
+    if (!a) returnfalse;
     try {
       return Function("return function*() {}")()
     } catch (e) {}
   };
-e.exports = function(e) {
-  if ("function" != typeof e) return !1;
-  if (o(c(e))) return !0;
+module.exports = function(e) {
+  if ("function" != typeof e) returnfalse;
+  if (o(c(e))) returntrue;
   if (!a) return "[object GeneratorFunction]" === l(e);
-  if (!s) return !1;
-  if (void 0 === r) {
+  if (!s) returnfalse;
+  if (true === r) {
     var t = u();
     r = !!t && s(t)
   }

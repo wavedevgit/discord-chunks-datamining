@@ -1,30 +1,31 @@
 /** Chunk was on 49152 **/
-n.d(t, {
+/** chunk id: 590026, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => g
-}), n(388685);
-var r = n(73800),
-  i = n(876215),
-  l = n(442837),
-  a = n(676316),
-  s = n(592125),
-  o = n(146282),
-  c = n(442853),
-  u = n(520951),
-  d = n(567493),
-  h = n(897674),
-  p = n(206583);
-let f = new Set([i.s.PLAYED_GAME, i.s.WATCHED_MEDIA, i.s.TOP_GAME, i.s.TOP_ARTIST, i.s.LISTENED_SESSION, i.s.LAUNCHED_ACTIVITY]);
+}), require("./388685.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk876215 = require("./876215.js"),
+  Chunk442837 = require("./442837.js"),
+  Chunk676316 = require("./676316.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk146282 = require("./146282.js"),
+  Chunk442853 = require("./442853.js"),
+  Chunk520951 = require("./520951.js"),
+  Chunk567493 = require("./567493.js"),
+  Chunk897674 = require("./897674.js"),
+  Chunk206583 = require("./206583.js");
+let f = new Set([Chunk876215.s.PLAYED_GAME, Chunk876215.s.WATCHED_MEDIA, Chunk876215.s.TOP_GAME, Chunk876215.s.TOP_ARTIST, Chunk876215.s.LISTENED_SESSION, Chunk876215.s.LAUNCHED_ACTIVITY]);
 
 function g(e) {
   let t = (0, l.e7)([s.Z], () => s.Z.getChannel(e)),
-    n = null == t ? void 0 : t.guild_id,
+    n = null == t ? true : t.guild_id,
     i = (0, h.Z)({
       id: p.YN.GLOBAL_FEED
     });
   i = (0, c.Z)({
     entries: i,
     channelId: e
-  }), i = r.useMemo(() => null == i ? void 0 : i.filter(e => f.has(e.content_type)), [i]);
+  }), i = r.useMemo(() => null == i ? true : i.filter(e => f.has(e.content_type)), [i]);
   let {
     entries: g,
     filteredIds: m
@@ -43,7 +44,7 @@ function g(e) {
         let n = "".concat(t.author_id, ":").concat(t.extra.application_id);
         return !e.has(n)
       }
-      return !0
+      returntrue
     })]
   }, [i, b]);
   let {

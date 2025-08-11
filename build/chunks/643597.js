@@ -1,16 +1,17 @@
 /** Chunk was on 21153 **/
+/** chunk id: 643597, original params: e,t,r (module,exports,require) **/
 "use strict";
-var n = r(73800),
-  o = r(9196),
-  a = r(829307),
-  i = r(442626),
-  l = r(116850);
-(0, l.t1)(function(e) {
+var Chunk73800 = require("./73800.js"),
+  Chunk9196 = require("./9196.js"),
+  Chunk829307 = require("./829307.js"),
+  Chunk442626 = require("./442626.js"),
+  Chunk116850 = require("./116850.js");
+(0, Chunk116850.t1)(function(e) {
   var t = e.onChange,
     r = e.hex,
     s = e.rgb,
     u = e.styles,
-    c = void 0 === u ? {} : u,
+    c = true === u ? {} : u,
     p = e.className,
     f = (0, o.default)((0, a.Z)({
       default: {
@@ -93,7 +94,7 @@ var n = r(73800),
     styles: c
   }, n.createElement("div", {
     style: f.material,
-    className: "material-picker " + (void 0 === p ? "" : p)
+    className: "material-picker " + (true === p ? "" : p)
   }, n.createElement(l.Vm, {
     style: {
       wrap: f.HEXwrap,

@@ -1,0 +1,65 @@
+/** Chunk was on 34779 **/
+/** chunk id: 843343, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
+  Z: () => g
+});
+var Chunk255367 = require("./255367.js");
+require("./73800.js");
+var Chunk91192 = require("./91192.jsx"),
+  Chunk442837 = require("./442837.js"),
+  Chunk481060 = require("./481060.js"),
+  Chunk299379 = require("./299379.js"),
+  Chunk486472 = require("./486472.js"),
+  Chunk430824 = require("./430824.js"),
+  Chunk682662 = require("./682662.jsx"),
+  Chunk662146 = require("./662146.jsx"),
+  Chunk981631 = require("./981631.js"),
+  Chunk388032 = require("./388032.jsx"),
+  Chunk552179 = require("./552179.js");
+
+function g() {
+  var e, t;
+  let n = (0, Chunk442837.e7)([Chunk486472.Z, Chunk430824.Z], () => Chunk486472.Z.unavailableGuilds.filter(e => null == c.Z.getGuild(e)).length),
+    g = (0, Chunk91192.Ie)("unavailable-guilds-button");
+  return require <= 0 ? null : <Chunk682662.H><Chunk662146.Z text={Chunk388032.intl.format(Chunk388032.t["TnH05+"], {
+        count: require
+      })} color={Chunk481060.ua7.Colors.RED}><Chunk481060.eee{...e = function(e) {
+        for (var t = 1; t < arguments.length; t++) {
+          var n = null != arguments[t] ? arguments[t] : {},
+            r = Object.keys(n);
+          "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+            return Object.getOwnPropertyDescriptor(n, e).enumerable
+          }))), r.forEach(function(t) {
+            var r;
+            r = n[t], t in e ? Object.defineProperty(e, t, {
+              value: r,
+              enumerable: true,
+              configurable: true,
+              writable: true
+            }) : e[t] = r
+          })
+        }
+        return e
+      }({
+        href: (0, Chunk299379.Z)(Chunk981631.RK.TWITTER),
+        target: "_blank",
+        className: Chunk552179.guildsError,
+        "aria-label": Chunk388032.intl.formatToPlainString(Chunk388032.t["MEpX+/"], {
+          count: require
+        })
+      }, g), t = t = {
+        children: (0, Chunk255367.jsx)(Chunk481060.Mgn, {
+          color: "currentColor",
+          "aria-hidden": true
+        })
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(module, Object.getOwnPropertyDescriptors(exports)) : (function(e, t) {
+        var n = Object.keys(e);
+        if (Object.getOwnPropertySymbols) {
+          var r = Object.getOwnPropertySymbols(e);
+          n.push.apply(n, r)
+        }
+        return n
+      })(Object(exports)).forEach(function(n) {
+        Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+      }), module} /></Chunk662146.Z></Chunk682662.H>
+}

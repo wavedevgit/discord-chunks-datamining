@@ -1,21 +1,22 @@
 /** Chunk was on web.js **/
+/** chunk id: 168524, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => _
 });
-var r = n(73800),
-  i = n(835473),
-  o = n(817788),
-  a = n(492423),
-  s = n(774073),
-  l = n(981631);
+var Chunk73800 = require("./73800.js"),
+  Chunk835473 = require("./835473.js"),
+  Chunk817788 = require("./817788.js"),
+  Chunk492423 = require("./492423.js"),
+  Chunk774073 = require("./774073.js"),
+  Chunk981631 = require("./981631.js");
 
 function c(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -52,7 +53,7 @@ function f(e, t) {
 function _(e) {
   let {
     onOpened: t
-  } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}, {
+  } = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {}, {
     applicationId: n
   } = e, c = (0, i.q)(n), d = r.useMemo(() => null == c ? n : null != c.thirdPartySkus.find(e => e.distributor === l.GQo.ROBLOX) ? o.eB : n, [c, n]), _ = (0, s.ZP)(f(u({}, e), {
     applicationId: d
@@ -62,5 +63,5 @@ function _(e) {
       applicationId: d,
       gameProfileModalChecks: _
     })), null == t || t()
-  } : void 0
+  } : true
 }

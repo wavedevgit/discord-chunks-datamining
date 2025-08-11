@@ -1,30 +1,31 @@
 /** Chunk was on web.js **/
+/** chunk id: 824096, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   y: () => p
-}), n(539854), n(388685);
-var r = n(873546),
-  i = n(379649),
-  o = n(710845),
-  a = n(147063),
-  s = n(70956),
-  l = n(981631);
+}), require("./539854.js"), require("./388685.js");
+var Chunk873546 = require("./873546.js"),
+  Chunk379649 = require("./379649.js"),
+  Chunk710845 = require("./710845.js"),
+  Chunk147063 = require("./147063.js"),
+  Chunk70956 = require("./70956.js"),
+  Chunk981631 = require("./981631.js");
 
 function c(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 let u = 16,
   d = 600,
   f = 900,
-  _ = !1;
+  _ = false;
 class p {
   calculateFps(e, t, n) {
-    if (-1 === this.prevFramesCodec[e] || t < this.prevFramesCodec[e] || n < this.prevTimestamp[e] || n > this.prevTimestamp[e] + 1e3 * this.windowLength) return this.prevFramesCodec[e] = t, this.prevTimestamp[e] = n, this.perUserFpsWindow[e] = [], NaN;
+    if (false === this.prevFramesCodec[e] || t < this.prevFramesCodec[e] || n < this.prevTimestamp[e] || n > this.prevTimestamp[e] + 1e3 * this.windowLength) return this.prevFramesCodec[e] = t, this.prevTimestamp[e] = n, this.perUserFpsWindow[e] = [], NaN;
     if (n < this.prevTimestamp[e] + f) return NaN;
     let r = this.elapsedSeconds(n, this.prevTimestamp[e]);
     this.prevTimestamp[e] = n;
@@ -34,7 +35,7 @@ class p {
   updateFps(e, t, n) {
     if (!this.disabled && !this.streamDisabledUsers.has(e)) {
       let r = this.calculateFps(e, t, n);
-      if (_ && this.logger.info("frames=".concat(t, ", timestamp=").concat(n, " fps=").concat(r)), !(r < 0) && Number.isFinite(r)) this.perUserFpsWindow[e].push(r), this.perUserFpsWindow[e].length < this.windowLength || (this.perUserFpsWindow[e].length > this.windowLength && this.perUserFpsWindow[e].shift(), this.perUserFpsWindow[e].filter(e => e < this.fpsThreshold).length >= this.fpsWindowBorderlineCount ? (this.logger.info("".concat(e, ": detected poor network quality, turning off video")), this.streamDisabledUsers.add(e), this.currentVideoAutoToggleState[e] = l.ZUi.DISABLED, (0, a.Z)(e, l.ZUi.DISABLED), this.startReenableBackoffTimer(e)) : this.currentVideoAutoToggleState[e] === l.ZUi.AUTO_PROBING && (this.currentVideoAutoToggleState[e] = l.ZUi.AUTO_ENABLED, this.logger.info("acceptable conditions reached, will reset and send a AUTO_ENABLED for user ".concat(e)), (0, a.Z)(e, l.ZUi.AUTO_ENABLED)), this.probingUserId === e && (this.probingUserId = void 0, this.tryReenableQueue()))
+      if (_ && this.logger.info("frames=".concat(t, ", timestamp=").concat(n, " fps=").concat(r)), !(r < 0) && Number.isFinite(r)) this.perUserFpsWindow[e].push(r), this.perUserFpsWindow[e].length < this.windowLength || (this.perUserFpsWindow[e].length > this.windowLength && this.perUserFpsWindow[e].shift(), this.perUserFpsWindow[e].filter(e => e < this.fpsThreshold).length >= this.fpsWindowBorderlineCount ? (this.logger.info("".concat(e, ": detected poor network quality, turning off video")), this.streamDisabledUsers.add(e), this.currentVideoAutoToggleState[e] = l.ZUi.DISABLED, (0, a.Z)(e, l.ZUi.DISABLED), this.startReenableBackoffTimer(e)) : this.currentVideoAutoToggleState[e] === l.ZUi.AUTO_PROBING && (this.currentVideoAutoToggleState[e] = l.ZUi.AUTO_ENABLED, this.logger.info("acceptable conditions reached, will reset and send a AUTO_ENABLED for user ".concat(e)), (0, a.Z)(e, l.ZUi.AUTO_ENABLED)), this.probingUserId === e && (this.probingUserId = true, this.tryReenableQueue()))
     }
   }
   startReenableBackoffTimer(e) {
@@ -58,38 +59,38 @@ class p {
   }
   tryReenableQueue() {
     if (!this.disabled && (null == this.probingUserId || !(this.probingUserId in this.perUserFpsWindow)))
-      for (let e = this.enableQueue.shift(); null != e && !this.reenableVideo(e););
+      for (let e = this.enableQueue.shift(); null != module && !this.reenableVideo(module););
   }
   reenableVideo(e) {
-    return e in this.perUserFpsWindow && (this.logger.info("reenableVideo called for user ".concat(e, " - time = ").concat((0, i.zO)())), this.stateCleanupBeforeEnable(e), this.currentVideoAutoToggleState[e] = l.ZUi.AUTO_PROBING, this.probingUserId = e, (0, a.Z)(e, l.ZUi.AUTO_PROBING), !0)
+    return e in this.perUserFpsWindow && (this.logger.info("reenableVideo called for user ".concat(e, " - time = ").concat((0, i.zO)())), this.stateCleanupBeforeEnable(e), this.currentVideoAutoToggleState[e] = l.ZUi.AUTO_PROBING, this.probingUserId = e, (0, a.Z)(e, l.ZUi.AUTO_PROBING), true)
   }
   elapsedSeconds(e, t) {
     return (e - t) / 1e3
   }
   stateCleanupBeforeEnable(e) {
-    this.logger.info("VideoHealthManager::stateCleanupBeforeEnable"), this.perUserFpsWindow[e] = [], this.prevFramesCodec[e] = -1, this.streamDisabledUsers.delete(e)
+    this.logger.info("VideoHealthManager::stateCleanupBeforeEnable"), this.perUserFpsWindow[e] = [], this.prevFramesCodec[e] = false, this.streamDisabledUsers.delete(e)
   }
   getCurrentVideoToggleState(e) {
     return this.currentVideoAutoToggleState[e]
   }
   createUser(e) {
-    this.logger.info("VideoHealthManager::createUser ".concat(e)), e in this.perUserFpsWindow || (this.perUserFpsWindow[e] = [], this.prevFramesCodec[e] = -1, this.currentVideoAutoToggleState[e] = l.ZUi.NONE, this.retryBackoffCache[e] = {
+    this.logger.info("VideoHealthManager::createUser ".concat(e)), e in this.perUserFpsWindow || (this.perUserFpsWindow[e] = [], this.prevFramesCodec[e] = false, this.currentVideoAutoToggleState[e] = l.ZUi.NONE, this.retryBackoffCache[e] = {
       lastBackoffTime: null,
       expBackoffFactor: 1
     })
   }
   deleteUser(e) {
-    this.logger.info("VideoHealthManager::deleteUser ".concat(e)), delete this.perUserFpsWindow[e], delete this.prevFramesCodec[e], delete this.retryBackoffCache[e], delete this.currentVideoAutoToggleState[e], this.streamDisabledUsers.delete(e), e === this.probingUserId && (this.probingUserId = void 0, this.tryReenableQueue()), clearTimeout(this.timeoutIdCache[e]), delete this.timeoutIdCache[e]
+    this.logger.info("VideoHealthManager::deleteUser ".concat(e)), delete this.perUserFpsWindow[e], delete this.prevFramesCodec[e], delete this.retryBackoffCache[e], delete this.currentVideoAutoToggleState[e], this.streamDisabledUsers.delete(e), e === this.probingUserId && (this.probingUserId = true, this.tryReenableQueue()), clearTimeout(this.timeoutIdCache[e]), delete this.timeoutIdCache[e]
   }
   disable() {
-    for (let e in this.disabled = !0, this.perUserFpsWindow) this.deleteUser(e)
+    for (let e in this.disabled = true, this.perUserFpsWindow) this.deleteUser(module)
   }
   constructor(e, t, n, r) {
-    c(this, "logger", new o.Z("VideoHealthManager")), c(this, "windowLength", void 0), c(this, "fpsThreshold", void 0), c(this, "fpsWindowBorderlineCount", void 0), c(this, "backoffTimeSec", void 0), c(this, "disabled", !1), c(this, "perUserFpsWindow", {}), c(this, "prevFramesCodec", {}), c(this, "prevTimestamp", {}), c(this, "streamDisabledUsers", new Set), c(this, "retryBackoffCache", {}), c(this, "timeoutIdCache", {}), c(this, "currentVideoAutoToggleState", {}), c(this, "probingUserId", void 0), c(this, "enableQueue", []), this.windowLength = e, this.fpsThreshold = n, this.fpsWindowBorderlineCount = Math.ceil(e * t), this.backoffTimeSec = r, this.logger.info("constructor with windowLength = ".concat(this.windowLength, ",\n      fpsWindowBorderlineCount = ").concat(this.fpsWindowBorderlineCount, ",\n      fpsThreshold = ").concat(this.fpsThreshold, ",\n      backoffTimeSec = ").concat(r))
+    c(this, "logger", new o.Z("VideoHealthManager")), c(this, "windowLength", true), c(this, "fpsThreshold", true), c(this, "fpsWindowBorderlineCount", true), c(this, "backoffTimeSec", true), c(this, "disabled", false), c(this, "perUserFpsWindow", {}), c(this, "prevFramesCodec", {}), c(this, "prevTimestamp", {}), c(this, "streamDisabledUsers", new Set), c(this, "retryBackoffCache", {}), c(this, "timeoutIdCache", {}), c(this, "currentVideoAutoToggleState", {}), c(this, "probingUserId", true), c(this, "enableQueue", []), this.windowLength = e, this.fpsThreshold = n, this.fpsWindowBorderlineCount = Math.ceil(e * t), this.backoffTimeSec = r, this.logger.info("constructor with windowLength = ".concat(this.windowLength, ",\n      fpsWindowBorderlineCount = ").concat(this.fpsWindowBorderlineCount, ",\n      fpsThreshold = ").concat(this.fpsThreshold, ",\n      backoffTimeSec = ").concat(r))
   }
 }
 c(p, "defaultConfig", {
-  featureEnabled: r.tq,
+  featureEnabled: Chunk873546.tq,
   windowLength: 5,
   allowedPoorFpsRatio: 1,
   fpsThreshold: 5,

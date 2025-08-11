@@ -1,5 +1,6 @@
 /** Chunk was on 63141 **/
-e.exports = {
+/** chunk id: 302615, original params: e,t,n (module,exports,require) **/
+module.exports = {
   privateChannels: "privateChannels_ee924e",
   searchBar: "searchBar_ee924e",
   searchBarComponent: "searchBarComponent_ee924e",

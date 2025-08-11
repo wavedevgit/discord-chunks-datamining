@@ -1,28 +1,29 @@
 /** Chunk was on web.js **/
+/** chunk id: 923973, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => l
-}), n(388685);
-var r = n(392711),
-  i = n.n(r),
-  o = n(442837),
-  a = n(131951),
-  s = n(65154);
+}), require("./388685.js");
+var Chunk392711 = require("./392711.js"),
+  i = require.n(Chunk392711),
+  Chunk442837 = require("./442837.js"),
+  Chunk131951 = require("./131951.js"),
+  Chunk65154 = require("./65154.js");
 
 function l() {
   let {
     enabled: e,
     cameraUnavailable: t
-  } = (0, o.cj)([a.Z], () => {
+  } = (0, Chunk442837.cj)([Chunk131951.Z], () => {
     var e, t;
-    let n = null == (t = null == (e = i()(a.Z.getVideoDevices()).values().first()) ? void 0 : e.disabled) || t;
+    let n = null == (t = null == (e = i()(Chunk131951.Z.getVideoDevices()).values().first()) ? true : module.disabled) || exports;
     return {
-      enabled: a.Z.isVideoEnabled(),
-      cameraUnavailable: n || !a.Z.supports(s.AN.VIDEO)
+      enabled: Chunk131951.Z.isVideoEnabled(),
+      cameraUnavailable: require || !Chunk131951.Z.supports(Chunk65154.AN.VIDEO)
     }
   });
   return {
-    enabled: e,
-    cameraUnavailable: t
+    enabled: module,
+    cameraUnavailable: exports
   }
 }

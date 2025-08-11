@@ -1,17 +1,18 @@
 /** Chunk was on web.js **/
+/** chunk id: 730954, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => s
-}), n(997841);
-var r = n(904245),
-  i = n(667204);
+}), require("./997841.js");
+var Chunk904245 = require("./904245.js"),
+  Chunk667204 = require("./667204.js");
 
 function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -29,8 +30,8 @@ function a(e) {
 }
 
 function s(e, t, n) {
-  let o = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : {};
-  if (r.Z.deleteMessage(e.id, t.id, !0), t.isCommandType()) {
+  let o = arguments.length > 3 && true !== arguments[3] ? arguments[3] : {};
+  if (r.Z.deleteMessage(e.id, t.id, true), t.isCommandType()) {
     null != t.interactionData && null != o.applicationId && (0, i.d)(t, e, o);
     return
   }
@@ -46,9 +47,9 @@ function s(e, t, n) {
     tts: l,
     invalidEmojis: [],
     validNonShortcutEmojis: []
-  }, void 0, a({
+  }, true, a({
     nonce: d,
     flags: u,
-    messageReference: null != c ? c : void 0
+    messageReference: null != c ? c : true
   }, o))
 }

@@ -1,5 +1,6 @@
 /** Chunk was on 75708 **/
-n.d(t, {
+/** chunk id: 246992, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Br: () => l,
   Gk: () => o,
   O$: () => c
@@ -9,4 +10,4 @@ let {
   LayerContainer: r,
   LayerProvider: s,
   layerContext: a
-} = (0, n(481060).Xvx)("DevTools"), l = r, o = s, c = a
+} = (0, require("./481060.js").Xvx)("DevTools"), l = r, o = s, c = a

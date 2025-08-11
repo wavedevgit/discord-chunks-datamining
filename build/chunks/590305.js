@@ -1,6 +1,7 @@
 /** Chunk was on 45620 **/
+/** chunk id: 590305, original params: e,t,n (module,exports,require) **/
 "use strict";
-e.exports = {
+module.exports = {
   filterBar: "filterBar__11877",
   filterSection: "filterSection__11877",
   itemType: "itemType__11877",

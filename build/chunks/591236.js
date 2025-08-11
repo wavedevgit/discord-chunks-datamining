@@ -1,26 +1,27 @@
 /** Chunk was on web.js **/
+/** chunk id: 591236, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => _
 });
-var r = n(588468),
-  i = n(496675),
-  o = n(483360),
-  a = n(877565),
-  s = n(590921),
-  l = n(761652),
-  c = n(981631),
-  u = n(185923),
-  d = n(388032);
+var Chunk588468 = require("./588468.jsx"),
+  Chunk496675 = require("./496675.js"),
+  Chunk483360 = require("./483360.js"),
+  Chunk877565 = require("./877565.js"),
+  Chunk590921 = require("./590921.js"),
+  Chunk761652 = require("./761652.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk185923 = require("./185923.js"),
+  Chunk388032 = require("./388032.jsx");
 
 function f(e) {
   return "".concat(l.a4).concat(e.name).concat(l.jp)
 }
 let _ = {
-  sentinel: l.a4,
+  sentinel: Chunk761652.a4,
   matches(e, t, n, r, o) {
     var a, s;
-    return r && null != (s = null == (a = o.chatInputType.autocomplete) ? void 0 : a.addReactionShortcut) && s && (i.Z.can(c.Plq.ADD_REACTIONS, e) || e.isPrivate())
+    return r && null != (s = null == (a = o.chatInputType.autocomplete) ? true : a.addReactionShortcut) && s && (i.Z.can(c.Plq.ADD_REACTIONS, e) || e.isPrivate())
   },
   queryResults(e, t, n, r, i) {
     let {

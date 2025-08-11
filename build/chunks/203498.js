@@ -1,18 +1,19 @@
 /** Chunk was on 22988 **/
-n.d(t, {
+/** chunk id: 203498, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => i
 });
-var r = n(2070);
+var Chunk2070 = require("./2070.js");
 
 function i() {
   let {
     createGuildApplication: e,
     submitting: t,
     error: n
-  } = (0, r.Z)();
+  } = (0, Chunk2070.Z)();
   return {
     enableGuildMonetizationForTeam: (t, n, r) => e(t, n, r, "guildcr".concat(t.id)),
-    submitting: t,
-    error: n
+    submitting: exports,
+    error: require
   }
 }

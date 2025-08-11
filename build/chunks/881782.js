@@ -1,4 +1,5 @@
 /** Chunk was on 87200 **/
-t.exports = {
+/** chunk id: 881782, original params: t,e,n (module,exports,require) **/
+module.exports = {
   videoBackgroundArt: "videoBackgroundArt__2b87f"
 }

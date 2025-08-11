@@ -1,30 +1,31 @@
 /** Chunk was on 75708 **/
-n.d(t, {
+/** chunk id: 261375, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => _
-}), n(388685), n(539854);
-var i = n(149765),
-  r = n(768433),
-  s = n(710845),
-  a = n(38618),
-  l = n(131704),
-  o = n(314897),
-  c = n(592125),
-  d = n(485386),
-  u = n(430824),
-  m = n(496675),
-  p = n(386438),
-  g = n(287328),
-  h = n(458772);
+}), require("./388685.js"), require("./539854.js");
+var Chunk149765 = require("./149765.js"),
+  Chunk768433 = require("./768433.js"),
+  Chunk710845 = require("./710845.js"),
+  Chunk38618 = require("./38618.js"),
+  Chunk131704 = require("./131704.js"),
+  Chunk314897 = require("./314897.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk485386 = require("./485386.js"),
+  Chunk430824 = require("./430824.js"),
+  Chunk496675 = require("./496675.js"),
+  Chunk386438 = require("./386438.js"),
+  Chunk287328 = require("./287328.js"),
+  Chunk458772 = require("./458772.js");
 
 function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
-let b = new s.Z("GuildBasicChannels");
+let b = new Chunk710845.Z("GuildBasicChannels");
 
 function x(e, t) {
   return null == e || e.type !== t.type || e.parent_id !== t.parent_id || m.Z.computeBasicPermissions(e) !== m.Z.computeBasicPermissions(t)
@@ -66,7 +67,7 @@ let _ = new class {
       case "partial":
         var n, i, r;
         let e = e => (0, l.q_)(e, s.id);
-        this.onGuildUpdate(s.id, null != (i = null == (n = s.partial_updates.channels) ? void 0 : n.map(e)) ? i : [], null != (r = s.partial_updates.deleted_channel_ids) ? r : [], t);
+        this.onGuildUpdate(s.id, null != (i = null == (n = s.partial_updates.channels) ? true : n.map(e)) ? i : [], null != (r = s.partial_updates.deleted_channel_ids) ? r : [], t);
         break;
       default:
         this.onGuildSync(s.id, t)
@@ -76,19 +77,19 @@ let _ = new class {
     for (let n of e.guilds) this.handleOneGuildCreate(n, t)
   }
   async handlePostConnectionOpen() {
-    let e = a.Z.lastTimeConnectedChanged(),
-      t = g.Z.database();
-    if (null == this.synced || null == t || !(0, r.O)()) return;
-    let n = u.Z.getGuildIds(),
-      i = n.filter(e => !this.synced.has(e));
-    for (let r of (b.verbose("scheduling basic_channel optimstic writes (guilds: ".concat(i.length, ")")), n)) {
-      if (null == this.synced || t !== g.Z.database() || e !== a.Z.lastTimeConnectedChanged()) break;
-      if (!this.synced.has(r)) {
-        b.verbose("optimstically writing basic_channels (guild: ".concat(r, ")"));
+    let e = Chunk38618.Z.lastTimeConnectedChanged(),
+      t = Chunk287328.Z.database();
+    if (null == this.synced || null == exports || !(0, Chunk768433.O)()) return;
+    let n = Chunk430824.Z.getGuildIds(),
+      i = require.filter(e => !this.synced.has(e));
+    for (let r of (b.verbose("scheduling basic_channel optimstic writes (guilds: ".concat(Chunk149765.length, ")")), require)) {
+      if (null == this.synced || exports !== Chunk287328.Z.database() || module !== Chunk38618.Z.lastTimeConnectedChanged()) break;
+      if (!this.synced.has(Chunk768433)) {
+        b.verbose("optimstically writing basic_channels (guild: ".concat(Chunk768433, ")"));
         try {
-          await c.o.loadGuildIds([r]), await t.transaction(e => this.syncOne(r, e), "handlePostConnectionOpen")
+          await Chunk592125.o.loadGuildIds([Chunk768433]), await exports.transaction(e => this.syncOne(r, e), "handlePostConnectionOpen")
         } catch (e) {
-          b.warn("couldn't optimstically write basic_channel:", e);
+          b.warn("couldn't optimstically write basic_channel:", module);
           return
         }
         await new Promise(e => setTimeout(e, 1e3))
@@ -115,7 +116,7 @@ let _ = new class {
     this.unsync(e.guild.id, t)
   }
   handleGuildDelete(e, t) {
-    !0 !== e.guild.unavailable && this.delete(e.guild.id, t)
+    true !== e.guild.unavailable && this.delete(e.guild.id, t)
   }
   handleGuildRoleUpdate(e, t) {
     let n = e.role,
@@ -142,7 +143,7 @@ let _ = new class {
   }
   unsync(e, t) {
     var n;
-    null == (n = this.synced) || n.delete(e), g.Z.basicChannelsTransaction(t).delete(e), g.Z.syncedBasicChannelsTransaction(t).put(e, !1), h.Z.invalidate(e)
+    null == (n = this.synced) || n.delete(e), g.Z.basicChannelsTransaction(t).delete(e), g.Z.syncedBasicChannelsTransaction(t).put(e, false), h.Z.invalidate(e)
   }
   sync(e) {
     b.verbose("Starting to write all basic channels");
@@ -157,13 +158,13 @@ let _ = new class {
   }
   syncOne(e, t) {
     var n, i, r;
-    return !(null == u.Z.getGuild(e) || (null == (n = this.synced) ? void 0 : n.has(e))) && (null == (i = this.synced) || i.add(e), g.Z.basicChannelsTransaction(t).put(e, (r = e, Object.values(c.Z.getMutableGuildChannelsForGuild(r)).map(e => ({
+    return !(null == u.Z.getGuild(e) || (null == (n = this.synced) ? true : n.has(e))) && (null == (i = this.synced) || i.add(e), g.Z.basicChannelsTransaction(t).put(e, (r = e, Object.values(c.Z.getMutableGuildChannelsForGuild(r)).map(e => ({
       id: e.id,
       type: e.type,
       guild_id: e.guild_id,
       parent_id: e.parent_id,
       basicPermissions: p.Z.asBasicFlag(m.Z.computePermissions(e))
-    })))), g.Z.syncedBasicChannelsTransaction(t).put(e, !0), !0)
+    })))), g.Z.syncedBasicChannelsTransaction(t).put(e, true), true)
   }
   constructor() {
     f(this, "synced", null), f(this, "actions", {

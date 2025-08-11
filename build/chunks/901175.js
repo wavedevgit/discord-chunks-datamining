@@ -1,5 +1,6 @@
 /** Chunk was on web.js **/
+/** chunk id: 901175, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-var r = n(809290)("span").classList,
+var r = require("./809290.js")("span").classList,
   i = r && r.constructor && r.constructor.prototype;
-e.exports = i === Object.prototype ? void 0 : i
+module.exports = i === Object.prototype ? true : i

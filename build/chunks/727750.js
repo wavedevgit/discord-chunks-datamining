@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 727750, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   subscriptionCostRow: "subscriptionCostRow__3d62f",
   invoiceItemLabelWithIcon: "invoiceItemLabelWithIcon__3d62f",
   invoiceItemLabelIcon: "invoiceItemLabelIcon__3d62f",

@@ -1,16 +1,17 @@
 /** Chunk was on web.js **/
+/** chunk id: 778087, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => o
-}), n(49124), n(781311);
-var r = n(73800),
-  i = n(10718);
+}), require("./49124.js"), require("./781311.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk10718 = require("./10718.js");
 
 function o(e, t) {
   let n = r.useRef(null),
     o = r.useCallback((e, t) => {
       var r, i, o;
-      e.preventDefault(), e.clipboardData.setData("application/x-discord-interaction-data", JSON.stringify(t)), e.clipboardData.setData("text/plain", null != (o = null == (i = n.current) || null == (r = i.textContent) ? void 0 : r.trim()) ? o : "")
+      e.preventDefault(), e.clipboardData.setData("application/x-discord-interaction-data", JSON.stringify(t)), e.clipboardData.setData("text/plain", null != (o = null == (i = n.current) || null == (r = i.textContent) ? true : r.trim()) ? o : "")
     }, []);
   return i.YZ({
     channel: e,

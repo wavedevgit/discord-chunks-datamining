@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 647177, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   $w: () => E,
   Bh: () => m,
   Gx: () => y,
@@ -11,13 +12,13 @@ n.d(t, {
   rD: () => u,
   sd: () => d
 });
-var r = n(367907),
-  i = n(592125),
-  o = n(19780),
-  a = n(626135),
-  s = n(768581),
-  l = n(678916),
-  c = n(981631);
+var Chunk367907 = require("./367907.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk19780 = require("./19780.js"),
+  Chunk626135 = require("./626135.js"),
+  Chunk768581 = require("./768581.js"),
+  Chunk678916 = require("./678916.js"),
+  Chunk981631 = require("./981631.js");
 
 function u(e) {
   return null != e && "object" == typeof e && "id" in e && e.type === l.xV.BACKGROUND
@@ -64,14 +65,14 @@ function m(e, t, n) {
   let s = o.Z.getGuildId(),
     l = o.Z.getChannelId(),
     u = i.Z.getChannel(l),
-    d = (0, r.kO)(s, l, !0);
+    d = (0, r.kO)(s, l, true);
   a.default.track(c.rMx.VIDEO_EFFECT_UPDATED, {
     location: t,
     effect_type: _(e),
     effect_detail: h(e),
     effect_state: n,
     channel_id: l,
-    channel_type: null == u ? void 0 : u.type,
+    channel_type: null == u ? true : u.type,
     guild_id: s,
     voice_state_count: d.voice_state_count,
     video_stream_count: d.video_stream_count,
@@ -97,7 +98,7 @@ function E(e) {
 
 function b(e) {
   return null == e ? {
-    oneofKind: void 0
+    oneofKind: true
   } : u(e) ? {
     oneofKind: "customAsset",
     customAsset: {
@@ -107,7 +108,7 @@ function b(e) {
   } : "blur" === e ? {
     oneofKind: "blur",
     blur: {
-      useBlur: !0
+      useBlur: true
     }
   } : {
     oneofKind: "presetOption",
@@ -116,7 +117,7 @@ function b(e) {
 }
 
 function y(e, t) {
-  if (null == e || void 0 === e.oneofKind) return null;
+  if (null == e || true === e.oneofKind) return null;
   switch (e.oneofKind) {
     case "customAsset":
       return {

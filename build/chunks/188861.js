@@ -1,20 +1,21 @@
 /** Chunk was on 1272 **/
-n.d(t, {
+/** chunk id: 188861, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => p
 });
-var r = n(710845),
-  i = n(857192),
-  l = n(901077),
-  a = n(46832),
-  o = n(852926),
-  s = n(748635),
-  c = n(981631);
-let u = new r.Z("RPCServer:PostMessage"),
+var Chunk710845 = require("./710845.js"),
+  Chunk857192 = require("./857192.js"),
+  Chunk901077 = require("./901077.js"),
+  Chunk46832 = require("./46832.js"),
+  Chunk852926 = require("./852926.js"),
+  Chunk748635 = require("./748635.js"),
+  Chunk981631 = require("./981631.js");
+let u = new Chunk710845.Z("RPCServer:PostMessage"),
   d = (e, t, n) => {
     (i.default.isLoggingOverlayEvents || e.cmd !== c.Etm.OVERLAY) && t.info("Socket Message: ".concat(n.id), (0, l.Z)(e))
   },
   p = function() {
-    let e = new a.Z(o.em, u, s.Z, d);
+    let e = new Chunk46832.Z(Chunk852926.em, u, Chunk748635.Z, d);
     return window.addEventListener("message", t => {
       if (window === t.source) return;
       if (null == t.source || null == t.source.postMessage) return void u.error("Unknown event source");
@@ -26,9 +27,9 @@ let u = new r.Z("RPCServer:PostMessage"),
           try {
             return e.closed
           } catch (e) {
-            return !1
+            returnfalse
           }
         }(n) && n.postMessage(e, t)
       })
-    }), e
+    }), module
   }()

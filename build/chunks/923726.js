@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 923726, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   $F: () => _,
   Bt: () => o,
   Gp: () => p,
@@ -10,9 +11,9 @@ n.d(t, {
   ss: () => d,
   sy: () => c,
   yi: () => f
-}), n(223892);
-var r = n(644542),
-  i = n(981631);
+}), require("./223892.js");
+var Chunk644542 = require("./644542.js"),
+  Chunk981631 = require("./981631.js");
 
 function o(e) {
   let {
@@ -21,13 +22,13 @@ function o(e) {
     guildId: null != e ? e : i.lds,
     location: "504714_1"
   }, {
-    autoTrackExposure: !0
+    autoTrackExposure: true
   }), {
     enableRoleSubscriptionsForUser: n
   } = r.Zo.useExperiment({
     location: "504714_2"
   }, {
-    autoTrackExposure: !1
+    autoTrackExposure: false
   });
   return null != e && t && n
 }
@@ -43,7 +44,7 @@ function a(e) {
   } = r.Zo.getCurrentConfig({
     location: "504714_4"
   }, {
-    autoTrackExposure: !1
+    autoTrackExposure: false
   });
   return null != e && t && n
 }
@@ -54,7 +55,7 @@ function s(e) {
     location: "504714_7"
   })
 }
-let l = [i.oNc.ROLE_SUBSCRIPTIONS_ENABLED, i.oNc.CREATOR_MONETIZABLE, i.oNc.CREATOR_MONETIZABLE_PROVISIONAL],
+let l = [Chunk981631.oNc.ROLE_SUBSCRIPTIONS_ENABLED, Chunk981631.oNc.CREATOR_MONETIZABLE, Chunk981631.oNc.CREATOR_MONETIZABLE_PROVISIONAL],
   c = e => null != e && l.some(t => e.features.has(t));
 
 function u(e) {
@@ -64,7 +65,7 @@ function u(e) {
     guildId: null != e ? e : i.lds,
     location: "504714_9"
   }, {
-    autoTrackExposure: !1
+    autoTrackExposure: false
   });
   return t
 }
@@ -76,7 +77,7 @@ function d(e) {
     guildId: null != e ? e : i.lds,
     location: "504714_10"
   }, {
-    autoTrackExposure: !1
+    autoTrackExposure: false
   });
   return t
 }
@@ -88,7 +89,7 @@ function f(e) {
     guildId: null != e ? e : i.lds,
     location: "504714_11"
   }, {
-    autoTrackExposure: !1
+    autoTrackExposure: false
   });
   return t
 }
@@ -96,21 +97,21 @@ function f(e) {
 function _() {
   let {
     enabled: e
-  } = r.$i.getCurrentConfig({
+  } = Chunk644542.$i.getCurrentConfig({
     location: "504714_12"
   }, {
-    autoTrackExposure: !1
+    autoTrackExposure: false
   });
-  return e
+  return module
 }
 
 function p() {
   let {
     enabled: e
-  } = r.$i.useExperiment({
+  } = Chunk644542.$i.useExperiment({
     location: "504714_13"
   }, {
-    autoTrackExposure: !1
+    autoTrackExposure: false
   });
-  return e
+  return module
 }

@@ -1,20 +1,21 @@
 /** Chunk was on web.js **/
+/** chunk id: 736052, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => u
-}), n(997841);
-var r = n(399606),
-  i = n(592125),
-  o = n(630388),
-  a = n(637271),
-  s = n(931261),
-  l = n(981631),
-  c = n(176505);
+}), require("./997841.js");
+var Chunk399606 = require("./399606.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk630388 = require("./630388.js"),
+  Chunk637271 = require("./637271.js"),
+  Chunk931261 = require("./931261.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk176505 = require("./176505.js");
 
 function u(e) {
   let t = (0, r.e7)([i.Z, a.Z], () => {
       let t = i.Z.getChannel(e);
-      if (null != t && (0, o.yE)(t.flags, c.zZ.IS_GUILD_RESOURCE_CHANNEL) && a.Z.getSelectedResourceChannelId(null == t ? void 0 : t.guild_id) === t.id) return t.guild_id
+      if (null != t && (0, o.yE)(t.flags, c.zZ.IS_GUILD_RESOURCE_CHANNEL) && a.Z.getSelectedResourceChannelId(null == t ? true : t.guild_id) === t.id) return t.guild_id
     }),
     n = (0, s.g)(null != t ? t : l.lds);
   return null != t && n

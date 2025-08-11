@@ -1,21 +1,22 @@
 /** Chunk was on 93886 **/
-a.d(t, {
+/** chunk id: 780106, original params: e,t,a (module,exports,require) **/
+require.d(exports, {
   O: () => i,
   h: () => s
 });
-var n = a(593472),
-  r = a(70956),
-  l = a(981631);
+var Chunk593472 = require("./593472.js"),
+  Chunk70956 = require("./70956.js"),
+  Chunk981631 = require("./981631.js");
 let i = {
-    None: void 0,
+    None: true,
     Terraria: {
       id: "356943499456937984",
       nativeProcessObserverId: 34,
       name: "Terraria",
       processName: "Terraria",
-      hidden: !1,
-      elevated: !1,
-      sandboxed: !1,
+      hidden: false,
+      elevated: false,
+      sandboxed: false,
       lastFocused: 0,
       exePath: "file:///users/wumpus/library/application support/steam/steamapps/common/terraria/terraria.app",
       exeName: "Terraria.app",
@@ -23,10 +24,10 @@ let i = {
       pid: 1234,
       pidPath: [],
       windowHandle: "13229",
-      fullscreenType: n.Jx.BORDERLESS_FULLSCREEN,
-      isLauncher: !1,
-      start: Date.now() - r.Z.Millis.HOUR,
-      distributor: l.GQo.STEAM
+      fullscreenType: Chunk593472.Jx.BORDERLESS_FULLSCREEN,
+      isLauncher: false,
+      start: Date.now() - Chunk70956.Z.Millis.HOUR,
+      distributor: Chunk981631.GQo.STEAM
     }
   },
   s = Object.keys(i)

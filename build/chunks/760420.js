@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 760420, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   positionContainer: "positionContainer__31a96",
   positionLayer: "positionLayer__31a96"
 }

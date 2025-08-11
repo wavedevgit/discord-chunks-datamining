@@ -1,11 +1,12 @@
 /** Chunk was on 67244 **/
+/** chunk id: 257381, original params: e,t,r (module,exports,require) **/
 "use strict";
-r.d(t, {
+require.d(exports, {
   Z: () => s
 });
-var a = r(665352),
-  n = r(856308);
-let s = new a.Z({
+var Chunk665352 = require("./665352.js"),
+  Chunk856308 = require("./856308.js");
+let s = new Chunk665352.Z({
   id: "xyz-abs-d65",
   cssId: "--xyz-abs-d65",
   name: "Absolute XYZ D65",
@@ -23,7 +24,7 @@ let s = new a.Z({
       name: "Za"
     }
   },
-  base: n.Z,
+  base: Chunk856308.Z,
   fromBase: e => e.map(e => Math.max(203 * e, 0)),
   toBase: e => e.map(e => Math.max(e / 203, 0))
 })

@@ -1,4 +1,5 @@
 /** Chunk was on web.js **/
+/** chunk id: 890797, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 var r = {
   combo: "combo_fcddc1",
@@ -12,4 +13,4 @@ var r = {
   keybindShortcutSearchPopout: "keybindShortcutSearchPopout_fcddc1",
   keyboardShortcuts: "keyboardShortcuts_fcddc1"
 };
-n.r(e.exports = r)
+require.r(module.exports = r)

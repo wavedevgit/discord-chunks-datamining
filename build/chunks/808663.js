@@ -1,17 +1,18 @@
 /** Chunk was on web.js **/
+/** chunk id: 808663, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 
 function r(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
-n.d(t, {
+require.d(exports, {
   Z: () => o
-}), n(539854);
+}), require("./539854.js");
 class i {
   enqueue(e) {
     this.queue.push(e)
@@ -19,7 +20,7 @@ class i {
   flush() {
     for (; this.queue.length > 0;) {
       var e;
-      null == (e = this.queue.shift()) || e()
+      null == (e = this.queue.shift()) || module()
     }
   }
   constructor() {

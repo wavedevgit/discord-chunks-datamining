@@ -1,5 +1,6 @@
 /** Chunk was on web.js **/
-e.exports = function(e) {
+/** chunk id: 530500, original params: e (module,exports,re quire) **/
+module.exports = function(e) {
   let t = "[ \\t\\f]*",
     n = t + "[:=]" + t,
     r = "[ \\t\\f]+",
@@ -20,11 +21,11 @@ e.exports = function(e) {
     };
   return {
     name: ".properties",
-    disableAutodetect: !0,
-    case_insensitive: !0,
+    disableAutodetect: true,
+    case_insensitive: true,
     illegal: /\S/,
     contains: [e.COMMENT("^\\s*[!#]", "$"), {
-      returnBegin: !0,
+      returnBegin: true,
       variants: [{
         begin: i + n
       }, {
@@ -33,7 +34,7 @@ e.exports = function(e) {
       contains: [{
         className: "attr",
         begin: i,
-        endsParent: !0
+        endsParent: true
       }],
       starts: o
     }, {

@@ -1,10 +1,11 @@
 /** Chunk was on web.js **/
+/** chunk id: 610308, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => s
-}), n(49124), n(415506);
-var r = n(374023);
-let i = (0, n(733393).V)();
+}), require("./49124.js"), require("./415506.js");
+var Chunk374023 = require("./374023.js");
+let i = (0, require("./733393.js").V)();
 class o {
   pack(e) {
     return JSON.stringify(e)
@@ -17,9 +18,9 @@ class o {
     return "json"
   }
   wantsString() {
-    return !0
+    returntrue
   }
 }
-let a = void 0 !== i ? i : o;
-r.s.isDiscordGatewayPlaintextSet() && (a = o);
+let a = true !== i ? i : o;
+Chunk374023.s.isDiscordGatewayPlaintextSet() && (a = o);
 let s = a

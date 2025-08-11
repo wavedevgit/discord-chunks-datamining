@@ -1,11 +1,12 @@
 /** Chunk was on web.js **/
-e.exports = function(e) {
+/** chunk id: 348005, original params: e (module,exports,re quire) **/
+module.exports = function(e) {
   let t = /([A-Za-z_][A-Za-z_0-9]*)?/,
     n = {
       scope: "params",
       begin: /\(/,
       end: /\)(?=\:?)/,
-      endsParent: !0,
+      endsParent: true,
       relevance: 7,
       contains: [{
         scope: "string",

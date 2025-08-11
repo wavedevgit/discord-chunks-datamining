@@ -1,24 +1,25 @@
 /** Chunk was on web.js **/
+/** chunk id: 221259, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   IG: () => E,
   JK: () => g,
   ZA: () => p,
   _m: () => m,
   ft: () => b,
   yN: () => h
-}), n(388685);
-var r = n(399606),
-  i = n(87051),
-  o = n(592125),
-  a = n(9156),
-  s = n(621600),
-  l = n(423589),
-  c = n(113449),
-  u = n(686660),
-  d = n(981631),
-  f = n(490897),
-  _ = n(526761);
+}), require("./388685.js");
+var Chunk399606 = require("./399606.js"),
+  Chunk87051 = require("./87051.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk9156 = require("./9156.js"),
+  Chunk621600 = require("./621600.js"),
+  Chunk423589 = require("./423589.js"),
+  Chunk113449 = require("./113449.js"),
+  Chunk686660 = require("./686660.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk490897 = require("./490897.js"),
+  Chunk526761 = require("./526761.js");
 
 function p(e) {
   let t = (0, r.e7)([a.ZP], () => a.ZP.resolveUnreadSetting(e)),
@@ -32,9 +33,9 @@ function p(e) {
 
 function h(e) {
   let t = (0, r.Wu)([a.ZP], () => (0, l.OD)(a.ZP.getChannelOverrides(e.guild_id), {
-      ignoreMute: !0,
-      ignoreUnreadSetting: !1,
-      ignoreNotificationSetting: !1
+      ignoreMute: true,
+      ignoreUnreadSetting: false,
+      ignoreNotificationSetting: false
     })),
     [n, i] = (0, r.Wu)([a.ZP, o.Z], () => {
       let n = o.Z.getChannel(e.parent_id);

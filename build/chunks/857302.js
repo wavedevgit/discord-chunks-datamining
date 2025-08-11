@@ -1,9 +1,10 @@
 /** Chunk was on 16459 **/
-r.d(t, {
+/** chunk id: 857302, original params: e,t,r (module,exports,require) **/
+require.d(exports, {
   Z: () => a
 });
-var n = r(232567),
-  i = r(621853);
+var Chunk232567 = require("./232567.js"),
+  Chunk621853 = require("./621853.js");
 
 function a(e, t) {
   if (i.Z.isFetchingFriends(e)) return;

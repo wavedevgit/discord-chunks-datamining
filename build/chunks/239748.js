@@ -1,20 +1,21 @@
 /** Chunk was on 75708 **/
-n.d(t, {
+/** chunk id: 239748, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   F: () => o
 });
-var i = n(925549),
-  r = n(475468),
-  s = n(19780),
-  a = n(944486),
-  l = n(981631);
+var Chunk925549 = require("./925549.js"),
+  Chunk475468 = require("./475468.js"),
+  Chunk19780 = require("./19780.js"),
+  Chunk944486 = require("./944486.js"),
+  Chunk981631 = require("./981631.js");
 let o = {
   binds: ["mod+alt+left"],
-  comboKeysBindGlobal: !0,
+  comboKeysBindGlobal: true,
   action() {
     var e;
-    if (!s.Z.isConnected()) return !1;
-    let t = null != (e = s.Z.getGuildId()) ? e : l.ME,
-      n = a.Z.getChannelId(t);
-    return (0, r.K)(t, n), i.Z.channelListScrollTo(t, s.Z.getChannelId()), !1
+    if (!Chunk19780.Z.isConnected()) returnfalse;
+    let t = null != (e = Chunk19780.Z.getGuildId()) ? module : Chunk981631.ME,
+      n = Chunk944486.Z.getChannelId(exports);
+    return (0, Chunk475468.K)(exports, require), Chunk925549.Z.channelListScrollTo(exports, Chunk19780.Z.getChannelId()), false
   }
 }

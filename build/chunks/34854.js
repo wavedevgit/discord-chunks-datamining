@@ -1,9 +1,10 @@
 /** Chunk was on 11776 **/
-n.d(t, {
+/** chunk id: 34854, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => i
 });
-var r = n(544891),
-  l = n(981631);
+var Chunk544891 = require("./544891.js"),
+  Chunk981631 = require("./981631.js");
 let i = {
   updateNote(e, t) {
     r.tn.put({
@@ -11,8 +12,8 @@ let i = {
       body: {
         note: t
       },
-      oldFormErrors: !0,
-      rejectWithError: !0
+      oldFormErrors: true,
+      rejectWithError: true
     })
   }
 }

@@ -1,5 +1,6 @@
 /** Chunk was on 49152 **/
-e.exports = {
+/** chunk id: 542503, original params: e,t,n (module,exports,require) **/
+module.exports = {
   horizontalBounce: "horizontalBounce__3e795",
   container: "container__3e795",
   containerHide: "containerHide__3e795",

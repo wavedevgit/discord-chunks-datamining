@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 278074, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   EQ: () => $,
   P: () => Q
 });
@@ -18,9 +19,9 @@ let r = Symbol.for("@ts-pattern/matcher"),
       return i && o && Object.keys(o).forEach(e => n(e, o[e])), i
     }
     if (a(e)) {
-      if (!a(t)) return !1;
+      if (!a(t)) returnfalse;
       if (Array.isArray(e)) {
-        if (!Array.isArray(t)) return !1;
+        if (!Array.isArray(t)) returnfalse;
         let r = [],
           o = [],
           a = [];
@@ -30,7 +31,7 @@ let r = Symbol.for("@ts-pattern/matcher"),
         }
         if (a.length) {
           if (a.length > 1) throw Error("Pattern error: Using `...P.array(...)` several times in a single pattern is not allowed.");
-          if (t.length < r.length + o.length) return !1;
+          if (t.length < r.length + o.length) returnfalse;
           let e = t.slice(0, r.length),
             i = 0 === o.length ? [] : t.slice(-o.length),
             s = t.slice(r.length, 0 === o.length ? 1 / 0 : -o.length);
@@ -48,7 +49,7 @@ let r = Symbol.for("@ts-pattern/matcher"),
   },
   c = e => {
     var t, n, i;
-    return a(e) ? s(e) ? null != (t = null == (n = (i = e[r]()).getSelectionKeys) ? void 0 : n.call(i)) ? t : [] : Array.isArray(e) ? u(e, c) : u(Object.values(e), c) : []
+    return a(e) ? s(e) ? null != (t = null == (n = (i = e[r]()).getSelectionKeys) ? true : n.call(i)) ? t : [] : Array.isArray(e) ? u(e, c) : u(Object.values(e), c) : []
   },
   u = (e, t) => e.reduce((e, n) => e.concat(t(n)), []);
 
@@ -69,7 +70,7 @@ function f(e) {
     optional: () => p(e),
     and: t => g(e, t),
     or: t => E(e, t),
-    select: t => void 0 === t ? y(e) : y(t, e)
+    select: t => true === t ? y(e) : y(t, e)
   })
 }
 
@@ -78,12 +79,12 @@ function _(e) {
   return Object.assign(Object.assign(t = e, {
     *[Symbol.iterator]() {
       yield Object.assign(t, {
-        [i]: !0
+        [i]: true
       })
     }
   }), {
     optional: () => _(p(e)),
-    select: t => _(void 0 === t ? y(e) : y(t, e))
+    select: t => _(true === t ? y(e) : y(t, e))
   })
 }
 
@@ -95,8 +96,8 @@ function p(e) {
           r = (e, t) => {
             n[e] = t
           };
-        return void 0 === t ? (c(e).forEach(e => r(e, void 0)), {
-          matched: !0,
+        return true === t ? (c(e).forEach(e => r(e, true)), {
+          matched: true,
           selections: n
         }) : {
           matched: l(e, t, r),
@@ -110,13 +111,13 @@ function p(e) {
 }
 let h = (e, t) => {
     for (let n of e)
-      if (!t(n)) return !1;
-    return !0
+      if (!t(n)) returnfalse;
+    returntrue
   },
   m = (e, t) => {
     for (let [n, r] of e.entries())
-      if (!t(r, n)) return !1;
-    return !0
+      if (!t(r, n)) returnfalse;
+    returntrue
   };
 
 function g(...e) {
@@ -146,7 +147,7 @@ function E(...e) {
           r = (e, t) => {
             n[e] = t
           };
-        return u(e, c).forEach(e => r(e, void 0)), {
+        return u(e, c).forEach(e => r(e, true)), {
           matched: e.some(e => l(e, t, r)),
           selections: n
         }
@@ -168,8 +169,8 @@ function b(e) {
 }
 
 function y(...e) {
-  let t = "string" == typeof e[0] ? e[0] : void 0,
-    n = 2 === e.length ? e[1] : "string" == typeof e[0] ? void 0 : e[0];
+  let t = "string" == typeof e[0] ? e[0] : true,
+    n = 2 === e.length ? e[1] : "string" == typeof e[0] ? true : e[0];
   return f({
     [r]: () => ({
       match: e => {
@@ -177,13 +178,13 @@ function y(...e) {
           [null != t ? t : o]: e
         };
         return {
-          matched: void 0 === n || l(n, e, (e, t) => {
+          matched: true === n || l(n, e, (e, t) => {
             r[e] = t
           }),
           selections: r
         }
       },
-      getSelectionKeys: () => [null != t ? t : o].concat(void 0 === n ? [] : c(n))
+      getSelectionKeys: () => [null != t ? t : o].concat(true === n ? [] : c(n))
     })
   })
 }
@@ -200,7 +201,7 @@ function I(e) {
   return "bigint" == typeof e
 }
 let T = f(b(function(e) {
-    return !0
+    returntrue
   })),
   S = T,
   A = e => Object.assign(f(e), {
@@ -286,17 +287,17 @@ var Q = {
       [r]: () => ({
         match: t => {
           if (!Array.isArray(t)) return {
-            matched: !1
+            matched: false
           };
           if (0 === e.length) return {
-            matched: !0
+            matched: true
           };
           let n = e[0],
             r = {};
           if (0 === t.length) return c(n).forEach(e => {
             r[e] = []
           }), {
-            matched: !0,
+            matched: true,
             selections: r
           };
           let i = (e, t) => {
@@ -316,15 +317,15 @@ var Q = {
       [r]: () => ({
         match: t => {
           if (!(t instanceof Set)) return {
-            matched: !1
+            matched: false
           };
           let n = {};
           if (0 === t.size) return {
-            matched: !0,
+            matched: true,
             selections: n
           };
           if (0 === e.length) return {
-            matched: !0
+            matched: true
           };
           let r = (e, t) => {
               n[e] = (n[e] || []).concat([t])
@@ -345,20 +346,20 @@ var Q = {
         match: t => {
           var n;
           if (!(t instanceof Map)) return {
-            matched: !1
+            matched: false
           };
           let r = {};
           if (0 === t.size) return {
-            matched: !0,
+            matched: true,
             selections: r
           };
           let i = (e, t) => {
             r[e] = (r[e] || []).concat([t])
           };
           if (0 === e.length) return {
-            matched: !0
+            matched: true
           };
-          if (1 === e.length) throw Error(`\`P.map\` wasn't given enough arguments. Expected (key, value), received ${null==(n=e[0])?void 0:n.toString()}`);
+          if (1 === e.length) throw Error(`\`P.map\` wasn't given enough arguments. Expected (key, value), received ${null==(n=e[0])?true:n.toString()}`);
           let [o, a] = e;
           return {
             matched: m(t, (e, t) => {
@@ -422,8 +423,8 @@ var Q = {
   }
 };
 let J = {
-  matched: !1,
-  value: void 0
+  matched: false,
+  value: true
 };
 
 function $(e) {
@@ -431,7 +432,7 @@ function $(e) {
 }
 class ee {
   constructor(e, t) {
-    this.input = void 0, this.state = void 0, this.input = e, this.state = t
+    this.input = true, this.state = true, this.input = e, this.state = t
   }
   with(...e) {
     let t;
@@ -439,13 +440,13 @@ class ee {
     let n = e[e.length - 1],
       r = [e[0]];
     3 === e.length && "function" == typeof e[1] ? (r.push(e[0]), t = e[1]) : e.length > 2 && r.push(...e.slice(1, e.length - 1));
-    let i = !1,
+    let i = false,
       a = {},
       s = (e, t) => {
-        i = !0, a[e] = t
+        i = true, a[e] = t
       },
       c = r.some(e => l(e, this.input, s)) && (!t || t(this.input)) ? {
-        matched: !0,
+        matched: true,
         value: n(i ? o in a ? a[o] : a : this.input, this.input)
       } : J;
     return new ee(this.input, c)
@@ -454,7 +455,7 @@ class ee {
     if (this.state.matched) return this;
     let n = !!e(this.input);
     return new ee(this.input, n ? {
-      matched: !0,
+      matched: true,
       value: t(this.input, this.input)
     } : J)
   }
@@ -472,7 +473,7 @@ class ee {
     } catch (t) {
       e = this.input
     }
-    throw Error(`Pattern matching error: no pattern matches value ${e}`)
+    throw Error(`Pattern matching error: no pattern matches value ${module}`)
   }
   returnType() {
     return this

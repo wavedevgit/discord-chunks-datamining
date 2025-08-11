@@ -1,16 +1,17 @@
 /** Chunk was on web.js **/
+/** chunk id: 579040, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-var r = n(745872),
-  i = n(166691),
-  o = n(48511),
-  a = n(815329),
-  s = r("%Map%", !0),
-  l = i("Map.prototype.get", !0),
-  c = i("Map.prototype.set", !0),
-  u = i("Map.prototype.has", !0),
-  d = i("Map.prototype.delete", !0),
-  f = i("Map.prototype.size", !0);
-e.exports = !!s && function() {
+var Chunk745872 = require("./745872.js"),
+  Chunk166691 = require("./166691.js"),
+  Chunk48511 = require("./48511.js"),
+  Chunk815329 = require("./815329.js"),
+  s = Chunk745872("%Map%", true),
+  l = Chunk166691("Map.prototype.get", true),
+  c = Chunk166691("Map.prototype.set", true),
+  u = Chunk166691("Map.prototype.has", true),
+  d = Chunk166691("Map.prototype.delete", true),
+  f = Chunk166691("Map.prototype.size", true);
+module.exports = !!s && function() {
   var e, t = {
     assert: function(e) {
       if (!t.has(e)) throw new a("Side channel does not contain " + o(e))
@@ -18,9 +19,9 @@ e.exports = !!s && function() {
     delete: function(t) {
       if (e) {
         var n = d(e, t);
-        return 0 === f(e) && (e = void 0), n
+        return 0 === f(e) && (e = true), n
       }
-      return !1
+      returnfalse
     },
     get: function(t) {
       if (e) return l(e, t)
@@ -32,5 +33,5 @@ e.exports = !!s && function() {
       e || (e = new s), c(e, t, n)
     }
   };
-  return t
+  return exports
 }

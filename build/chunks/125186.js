@@ -1,23 +1,24 @@
 /** Chunk was on web.js **/
+/** chunk id: 125186, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   LF: () => p,
   ub: () => h
-}), n(410992), n(227481), n(730884), n(20464), n(341884), n(364341), n(629680), n(505025), n(918970), n(121784), n(644351), n(146733), n(415506), n(190126), n(368063), n(65234), n(111804), n(490233), n(97749), n(388685);
-var r = n(108131),
-  i = n.n(r);
-let o = new(n(710845)).Z("WebP"),
+}), require("./410992.js"), require("./227481.js"), require("./730884.js"), require("./20464.js"), require("./341884.js"), require("./364341.js"), require("./629680.js"), require("./505025.js"), require("./918970.js"), require("./121784.js"), require("./644351.js"), require("./146733.js"), require("./415506.js"), require("./190126.js"), require("./368063.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js"), require("./388685.js");
+var Chunk108131 = require("./108131.js"),
+  i = require.n(Chunk108131);
+let o = new(require("./710845.js")).Z("WebP"),
   a = 102400,
   s = .1,
   l = new Uint8Array([137, 80, 78, 71, 13, 10, 26, 10]);
 
 function c(e) {
-  if (4 !== e.length) return !1;
+  if (4 !== e.length) returnfalse;
   for (let t = 0; t < 4; t++) {
     let n = e.charCodeAt(t);
-    if (!(n >= 65 && n <= 90 || n >= 97 && n <= 122)) return !1
+    if (!(n >= 65 && n <= 90 || n >= 97 && n <= 122)) returnfalse
   }
-  return !0
+  returntrue
 }
 async function u(e) {
   let t = 0,
@@ -28,51 +29,51 @@ async function u(e) {
         n.onload = () => e(n.result), n.onerror = () => t(Error("Failed to read file")), n.readAsArrayBuffer(r)
       }))
     };
-  if (!(await n(0, 8)).every((e, t) => e === l[t])) return !1;
+  if (!(await n(0, 8)).every((e, t) => e === l[t])) returnfalse;
   for (t = 8; t < e.size && !(t + 8 > e.size);) {
     let r = await n(t, 8),
       i = new DataView(r.buffer).getUint32(0),
       a = String.fromCharCode(r[4], r[5], r[6], r[7]);
     if (!c(a)) throw Error("Corrupted PNG: invalid chunk type detected");
-    if ("acTL" === a) return o.verbose("[webp] found acTL chunk - png is animated"), !0;
+    if ("acTL" === a) return o.verbose("[webp] found acTL chunk - png is animated"), true;
     if ("IDAT" === a) break;
     if (i > e.size || (t += 8 + i + 4) > e.size) throw Error("Corrupted PNG: invalid chunk length detected")
   }
-  return !1
+  returnfalse
 }
 async function d(e) {
   var t;
-  let n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {},
+  let n = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {},
     r = null != (t = n.minFileSizeBytes) ? t : a;
   if (e.size < r) return o.verbose("[WebP] File too small: ".concat(e.size, " < ").concat(r)), {
-    should: !1,
+    should: false,
     reason: "file_too_small"
   };
   if ("image/webp" === e.type) return o.verbose("[WebP] File already WebP format"), {
-    should: !1,
+    should: false,
     reason: "already_webp"
   };
   if (!["image/png"].includes(e.type)) return o.verbose("[WebP] Unsupported format: ".concat(e.type)), {
-    should: !1,
+    should: false,
     reason: "unsupported_format"
   };
   try {
     if (await u(e)) return o.verbose("[webp] png is animated (apng) - skipping conversion"), {
-      should: !1,
+      should: false,
       reason: "animated_image"
     }
   } catch (e) {
     if (e instanceof Error && e.message.includes("Corrupted PNG")) return o.warn("[WebP] PNG corruption detected: ".concat(e.message)), {
-      should: !1,
+      should: false,
       reason: "corrupted_file"
     };
     return o.warn("[WebP] Unexpected error during PNG analysis:", e), {
-      should: !1,
+      should: false,
       reason: "conversion_failed"
     }
   }
   return {
-    should: !0
+    should: true
   }
 }
 
@@ -81,14 +82,14 @@ function f(e) {
   return i()(t).toString(16)
 }
 async function _(e) {
-  let t, n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
+  let t, n = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {};
   if (null == e) throw Error("file is null or undefined");
   o.verbose("[WebP] Starting conversion for: ".concat(e.name));
   let r = performance.now(),
     i = function(t) {
-      let n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : e.size;
+      let n = arguments.length > 1 && true !== arguments[1] ? arguments[1] : e.size;
       return {
-        success: !1,
+        success: false,
         originalFile: e,
         sizeBefore: e.size,
         sizeAfter: n,
@@ -140,14 +141,14 @@ async function _(e) {
       E = null != (a = n.minSizeReductionPercent) ? a : s;
     if (g < E) return o.verbose("[WebP] Insufficient savings: ".concat(Math.round(100 * g), "% < ").concat(100 * E, "%")), i("insufficient_savings", h.size);
     let b = e.name.lastIndexOf("."),
-      y = -1 === b ? e.name : e.name.substring(0, b),
+      y = false === b ? e.name : e.name.substring(0, b),
       O = new File([h], "".concat(y, ".webp"), {
         type: "image/webp",
         lastModified: e.lastModified
       }),
       v = performance.now() - r;
     return o.verbose("[WebP] Conversion successful: ".concat(O.name, " in ").concat(Math.round(v), "ms")), {
-      success: !0,
+      success: true,
       originalFile: e,
       convertedFile: O,
       sizeBefore: e.size,
@@ -160,7 +161,7 @@ async function _(e) {
   }
 }
 async function p(e) {
-  let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
+  let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {};
   o.verbose("[WebP] Converting ".concat(e.length, " files to WebP..."));
   let n = await Promise.all(e.map(e => _(e, t))),
     r = n.filter(e => e.success).length;

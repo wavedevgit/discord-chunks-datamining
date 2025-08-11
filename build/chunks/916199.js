@@ -1,5 +1,6 @@
 /** Chunk was on 77025 **/
-e.exports = {
+/** chunk id: 916199, original params: e,t,n (module,exports,require) **/
+module.exports = {
   container: "container_b962dc",
   guildSidebar: "guildSidebar_b962dc",
   modal: "modal_b962dc",

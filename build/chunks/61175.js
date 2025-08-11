@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 61175, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n(42547), e.exports = {
+require("./42547.js"), module.exports = {
   isValidBlock: function(e, t) {
     var n = e.getKey(),
       r = e.getParentKey();
@@ -8,9 +9,9 @@ n(42547), e.exports = {
         return t.get(e)
       }).every(function(e) {
         return e.getParentKey() === n
-      })) return !1;
+      })) returnfalse;
     var i = e.getPrevSiblingKey();
-    if (null != i && t.get(i).getNextSiblingKey() !== n) return !1;
+    if (null != i && t.get(i).getNextSiblingKey() !== n) returnfalse;
     var o = e.getNextSiblingKey();
     return (null == o || t.get(o).getPrevSiblingKey() === n) && (null === o || null === i || i !== o) && ("" == e.text || !(e.getChildKeys().size > 0))
   },
@@ -18,7 +19,7 @@ n(42547), e.exports = {
     var t = e.toArray().filter(function(e) {
       return null == e.getParentKey() && null == e.getPrevSiblingKey()
     });
-    if (1 !== t.length) return !1;
+    if (1 !== t.length) returnfalse;
     for (var n = t.shift(), r = 0, i = n.getKey(), o = []; null != i;) {
       var a = e.get(i),
         s = a.getChildKeys(),
@@ -30,7 +31,7 @@ n(42547), e.exports = {
         }).find(function(e) {
           return null == e.getPrevSiblingKey()
         });
-        if (null == c) return !1;
+        if (null == c) returnfalse;
         i = c.getKey()
       } else i = null != a.getNextSiblingKey() ? a.getNextSiblingKey() : o.shift();
       r++

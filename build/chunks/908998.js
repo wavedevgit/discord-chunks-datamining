@@ -1,6 +1,7 @@
 /** Chunk was on 11912 **/
+/** chunk id: 908998, original params: e,t,r (module,exports,require) **/
 "use strict";
-e.exports = {
+module.exports = {
   inventory: "inventory__6980e",
   inventoryControls: "inventoryControls__6980e",
   inventoryControlsButton: "inventoryControlsButton__6980e",

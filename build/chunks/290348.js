@@ -1,5 +1,6 @@
 /** Chunk was on 2686 **/
-n.d(t, {
+/** chunk id: 290348, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   B7: () => er,
   Ek: () => G,
   F2: () => W,
@@ -19,33 +20,33 @@ n.d(t, {
   p9: () => x,
   qs: () => H,
   rU: () => X
-}), n(953529), n(388685);
-var r = n(73800),
-  i = n(512722),
-  l = n.n(i),
-  o = n(392711),
-  u = n(772848),
-  a = n(866442),
-  c = n(731965),
-  s = n(442837),
-  d = n(80932),
-  f = n(749210),
-  m = n(211266),
-  p = n(339085),
-  v = n(73346),
-  g = n(817460),
-  b = n(423117),
-  y = n(584825),
-  j = n(289393),
-  O = n(790285),
-  S = n(303737),
-  _ = n(971792),
-  E = n(22902),
-  P = n(403474),
-  h = n(944537),
-  w = n(293810),
-  Z = n(981631),
-  C = n(474936);
+}), require("./953529.js"), require("./388685.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk512722 = require("./512722.js"),
+  l = require.n(Chunk512722),
+  Chunk392711 = require("./392711.js"),
+  Chunk772848 = require("./772848.js"),
+  Chunk866442 = require("./866442.js"),
+  Chunk731965 = require("./731965.js"),
+  Chunk442837 = require("./442837.js"),
+  Chunk80932 = require("./80932.js"),
+  Chunk749210 = require("./749210.js"),
+  Chunk211266 = require("./211266.js"),
+  Chunk339085 = require("./339085.js"),
+  Chunk73346 = require("./73346.js"),
+  Chunk817460 = require("./817460.js"),
+  Chunk423117 = require("./423117.js"),
+  Chunk584825 = require("./584825.js"),
+  Chunk289393 = require("./289393.js"),
+  Chunk790285 = require("./790285.js"),
+  Chunk303737 = require("./303737.js"),
+  Chunk971792 = require("./971792.js"),
+  Chunk22902 = require("./22902.js"),
+  Chunk403474 = require("./403474.js"),
+  Chunk944537 = require("./944537.js"),
+  Chunk293810 = require("./293810.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk474936 = require("./474936.js");
 
 function I(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -57,9 +58,9 @@ function I(e) {
       var r;
       r = n[t], t in e ? Object.defineProperty(e, t, {
         value: r,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
+        enumerable: true,
+        configurable: true,
+        writable: true
       }) : e[t] = r
     })
   }
@@ -84,7 +85,7 @@ function L(e, t, n) {
     l = r.useCallback(r => {
       i(e, e => {
         var i;
-        let l = null != (i = null == e ? void 0 : e[t]) ? i : n;
+        let l = null != (i = null == e ? true : e[t]) ? i : n;
         return Object.assign({}, e, {
           [t]: "function" == typeof r ? r(l) : r
         })
@@ -92,9 +93,9 @@ function L(e, t, n) {
     }, [i, e, t, n]),
     o = (0, h.n)(n => {
       var r;
-      return null == (r = n.listings[e]) ? void 0 : r[t]
+      return null == (r = n.listings[e]) ? true : r[t]
     });
-  return [void 0 !== o ? o : n, l]
+  return [true !== o ? o : n, l]
 }
 
 function A(e, t) {
@@ -106,7 +107,7 @@ function A(e, t) {
 function T(e) {
   let t = A(e, e => {
     var t;
-    return null != (t = null == e ? void 0 : e.name) ? t : ""
+    return null != (t = null == e ? true : e.name) ? t : ""
   });
   return L(e, "name", t)
 }
@@ -114,7 +115,7 @@ function T(e) {
 function k(e) {
   let t = A(e, e => {
     var t;
-    return null == e || null == (t = e.subscription_plans[0]) ? void 0 : t.price
+    return null == e || null == (t = e.subscription_plans[0]) ? true : t.price
   });
   return L(e, "priceTier", t)
 }
@@ -122,14 +123,14 @@ function k(e) {
 function M(e) {
   let t = A(e, e => {
     var t;
-    return null != (t = null == e ? void 0 : e.description) ? t : ""
+    return null != (t = null == e ? true : e.description) ? t : ""
   });
   return L(e, "description", t)
 }
 
 function D(e, t) {
   let n = A(e, e => {
-    if ((null == e ? void 0 : e.image_asset) != null) return (0, v._W)(e.application_id, e.image_asset, t)
+    if ((null == e ? true : e.image_asset) != null) return (0, v._W)(e.application_id, e.image_asset, t)
   });
   return L(e, "image", n)
 }
@@ -139,8 +140,8 @@ function x(e, t) {
   return L(e, "roleIcon", r.useMemo(() => {
     var e, t;
     return {
-      icon: null != (e = null == n ? void 0 : n.icon) ? e : void 0,
-      unicodeEmoji: null != (t = null == n ? void 0 : n.unicodeEmoji) ? t : void 0
+      icon: null != (e = null == n ? true : n.icon) ? e : true,
+      unicodeEmoji: null != (t = null == n ? true : n.unicodeEmoji) ? t : true
     }
   }, [n]))
 }
@@ -149,19 +150,19 @@ function H(e, t) {
   let n = (0, _.Z)(t, e),
     i = (0, h.n)(t => {
       var n;
-      return null == (n = t.listings[e]) ? void 0 : n.roleColor
+      return null == (n = t.listings[e]) ? true : n.roleColor
     }),
     l = (0, h.n)(t => {
       var n;
-      return null == (n = t.listings[e]) ? void 0 : n.roleIcon
+      return null == (n = t.listings[e]) ? true : n.roleIcon
     });
   return r.useMemo(() => {
     let e = I({}, null != n ? n : P.k);
-    if (void 0 !== l) {
+    if (true !== l) {
       var t, r;
       e.icon = null != (t = l.icon) ? t : "", e.unicodeEmoji = null != (r = l.unicodeEmoji) ? r : ""
     }
-    return void 0 !== i && (e.color = i, e.colorString = (0, a.Rf)(i)), e
+    return true !== i && (e.color = i, e.colorString = (0, a.Rf)(i)), e
   }, [n, l, i])
 }
 
@@ -169,7 +170,7 @@ function G(e, t) {
   let n = (0, _.Z)(t, e);
   return L(e, "roleColor", r.useMemo(() => {
     var e;
-    return null != (e = null == n ? void 0 : n.color) ? e : Z.p6O
+    return null != (e = null == n ? true : n.color) ? e : Z.p6O
   }, [n]))
 }
 
@@ -211,39 +212,39 @@ function K(e) {
   let n = (0, y.oC)(e),
     {
       selectedOption: r
-    } = (0, E.Z)(null != (t = null == n ? void 0 : n.active_trial) ? t : null);
+    } = (0, E.Z)(null != (t = null == n ? true : n.active_trial) ? t : null);
   return L(e, "trialInterval", null != r ? r : null)
 }
 
 function W(e) {
   var t;
   let n = (0, y.oC)(e);
-  return L(e, "trialLimit", null != (t = null == n ? void 0 : n.max_num_active_trial_users) ? t : null)
+  return L(e, "trialLimit", null != (t = null == n ? true : n.max_num_active_trial_users) ? t : null)
 }
 
 function X(e) {
-  return (0, h.n)(t => void 0 !== t.listings[e])
+  return (0, h.n)(t => true !== t.listings[e])
 }
 
 function q(e) {
   return (0, h.n)(t => {
     for (let n of e)
-      if (void 0 !== t.listings[n]) return !0;
-    return !1
+      if (true !== t.listings[n]) returntrue;
+    returnfalse
   })
 }
 
 function J(e) {
-  let t = A(e, e => null == e ? void 0 : e.subscription_plans[0]),
-    [n] = L(e, "priceTier", void 0);
+  let t = A(e, e => null == e ? true : e.subscription_plans[0]),
+    [n] = L(e, "priceTier", true);
   return [r.useMemo(() => {
     var e, r, i, l, o;
     return {
-      price: null != (e = null != n ? n : null == t ? void 0 : t.price) ? e : 0,
-      currency: null != (r = null == t ? void 0 : t.currency) ? r : Z.pKx.USD,
-      interval: null != (i = null == t ? void 0 : t.interval) ? i : C.rV.MONTH,
-      interval_count: null != (l = null == t ? void 0 : t.interval_count) ? l : 1,
-      id: null != (o = null == t ? void 0 : t.id) ? o : ""
+      price: null != (e = null != n ? n : null == t ? true : t.price) ? e : 0,
+      currency: null != (r = null == t ? true : t.currency) ? r : Z.pKx.USD,
+      interval: null != (i = null == t ? true : t.interval) ? i : C.rV.MONTH,
+      interval_count: null != (l = null == t ? true : t.interval_count) ? l : 1,
+      id: null != (o = null == t ? true : t.id) ? o : ""
     }
   }, [t, n])]
 }
@@ -274,16 +275,16 @@ async function ee(e) {
     trialInterval: v,
     tierEmojiIds: g
   } = a;
-  (void 0 !== c || void 0 !== s) && await f.Z.updateRole(t, i, {
+  (true !== c || true !== s) && await f.Z.updateRole(t, i, {
     color: c,
-    icon: null == s ? void 0 : s.icon,
-    unicodeEmoji: null == s ? void 0 : s.unicodeEmoji
+    icon: null == s ? true : s.icon,
+    unicodeEmoji: null == s ? true : s.unicodeEmoji
   });
   let y = j.Z.getSubscriptionTrial(u);
   if ((null != m || null != v || null != y && null == v) && await b.I1(t, u, {
       trial: v,
       max_num_active_trial_users: m
-    }), void 0 !== g) {
+    }), true !== g) {
     let e = Q(p.ZP.getGuildEmoji(t), i),
       n = (0, o.difference)([...g], [...e]),
       r = (0, o.difference)([...e], [...g]),
@@ -346,11 +347,11 @@ async function et(e) {
 }
 
 function en() {
-  let [e, t] = r.useState(!1), [n, i] = r.useState();
+  let [e, t] = Chunk73800.useState(false), [n, i] = Chunk73800.useState();
   return {
-    loading: e,
-    error: n,
-    handleCreateOrUpdateFromEditState: r.useCallback(async e => {
+    loading: module,
+    error: require,
+    handleCreateOrUpdateFromEditState: Chunk73800.useCallback(async e => {
       let {
         guildId: n,
         editStateId: r,
@@ -359,7 +360,7 @@ function en() {
         onAfterDispatchNewListing: s
       } = e, d = r, f = j.Z.getSubscriptionListing(d);
       try {
-        if (t(!0), i(void 0), null != f) l()(null != u, "groupListingId is null"), await
+        if (t(true), i(true), null != f) l()(null != u, "groupListingId is null"), await
         function(e) {
           var t;
           let {
@@ -379,7 +380,7 @@ function en() {
             image: p,
             channelAccessFormat: v
           } = a, y = {};
-          if (c !== u.name && (y.name = c), s !== u.description && (y.description = s), m !== (null == (t = u.subscription_plans[0]) ? void 0 : t.price) && (y.priceTier = m), null != p && (y.image = p), null != v && (y.can_access_all_channels = v === h.I.ALL_CHANNELS_ACCESS), null != d || null != f) {
+          if (c !== u.name && (y.name = c), s !== u.description && (y.description = s), m !== (null == (t = u.subscription_plans[0]) ? true : t.price) && (y.priceTier = m), null != p && (y.image = p), null != v && (y.can_access_all_channels = v === h.I.ALL_CHANNELS_ACCESS), null != d || null != f) {
             let e = u.role_benefits.benefits.filter(g.rC),
               t = u.role_benefits.benefits.filter(g.lL);
             y.benefits = [...null != d ? d : e, ...null != f ? f : t]
@@ -407,7 +408,7 @@ function en() {
             h.n.setState(e => ({
               listings: N(I({}, e.listings), {
                 [m]: e.listings[r],
-                [r]: void 0
+                [r]: true
               })
             }))
           }), null == s || s(e)
@@ -415,20 +416,20 @@ function en() {
         return await ee({
           guildId: n,
           editStateId: d
-        }), $(d), !0
+        }), $(d), true
       } catch (e) {
         if (!("getAnyErrorMessage" in e)) throw e;
         i(e)
       } finally {
-        t(!1)
+        t(false)
       }
     }, [])
   }
 }
 
 function er(e, t) {
-  let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {
-      includeSoftDeleted: !1
+  let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : {
+      includeSoftDeleted: false
     },
     i = (0, y._k)(e, n),
     l = (0, h.n)(e => e.editStateIdsForGroup[t]),
@@ -464,7 +465,7 @@ function er(e, t) {
             emoji_name: e.emoji_name
           })),
           roleIcon: {
-            unicodeEmoji: void 0,
+            unicodeEmoji: true,
             icon: t.image
           },
           roleColor: t.role_color,

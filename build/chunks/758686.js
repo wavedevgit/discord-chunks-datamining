@@ -1,5 +1,6 @@
 /** Chunk was on web.js **/
+/** chunk id: 758686, original params: e (module,exports,re quire) **/
 "use strict";
-e.exports = function(e, t) {
+module.exports = function(e, t) {
   return e.sort().join(",") === t.sort().join(",")
 }

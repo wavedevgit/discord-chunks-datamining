@@ -1,25 +1,26 @@
 /** Chunk was on web.js **/
+/** chunk id: 643879, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   SD: () => g,
   Z1: () => _,
   cN: () => m,
   fD: () => d,
   mh: () => h
-}), n(35282), n(953529);
-var r = n(664751),
-  i = n(134432),
-  o = n(768581),
-  a = n(823379),
-  s = n(72703),
-  l = n(981631),
-  c = n(388032);
+}), require("./35282.js"), require("./953529.js");
+var Chunk664751 = require("./664751.js"),
+  Chunk134432 = require("./134432.js"),
+  Chunk768581 = require("./768581.js"),
+  Chunk823379 = require("./823379.js"),
+  Chunk72703 = require("./72703.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk388032 = require("./388032.jsx");
 
 function u(e) {
   let {
     storageHash: t,
-    canAnimate: n = !1,
-    allowWebp: r = !0
+    canAnimate: n = false,
+    allowWebp: r = true
   } = e;
   if (n && (0, o.xR)(t)) return "gif";
   let {
@@ -33,8 +34,8 @@ function d(e) {
     userId: t,
     avatarId: n,
     storageHash: o,
-    canAnimate: a = !1,
-    allowWebp: s = !0,
+    canAnimate: a = false,
+    allowWebp: s = true,
     size: c
   } = e, {
     CDN_HOST: d
@@ -88,8 +89,8 @@ function p(e) {
 function h(e, t) {
   let n = u({
       storageHash: e,
-      canAnimate: !0,
-      allowWebp: !1
+      canAnimate: true,
+      allowWebp: false
     }),
     r = f(t);
   return {
@@ -128,7 +129,7 @@ function g(e) {
     userId: t,
     image: n,
     size: r = 80,
-    canAnimate: i = !0
+    canAnimate: i = true
   } = e;
   return null != n && "string" != typeof n ? n.assetOrigin === s.q.ARCHIVED_ASSET ? d({
     userId: t,
@@ -136,6 +137,6 @@ function g(e) {
     storageHash: n.originalAsset.storageHash,
     size: r,
     canAnimate: i,
-    allowWebp: !1
+    allowWebp: false
   }) : n.imageUri : n
 }

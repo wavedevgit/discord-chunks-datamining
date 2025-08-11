@@ -1,15 +1,16 @@
 /** Chunk was on 22988 **/
-n.d(t, {
+/** chunk id: 158992, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => s
-}), n(388685);
-var r = n(73800),
-  i = n(479531),
-  l = n(53365),
-  a = n(581050);
+}), require("./388685.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk479531 = require("./479531.js"),
+  Chunk53365 = require("./53365.js"),
+  Chunk581050 = require("./581050.js");
 
 function s(e) {
   let [t, n] = r.useState(null != e), [s, o] = r.useState(), [c, d] = r.useState(), u = r.useCallback(async e => {
-    n(!0), o(void 0);
+    n(true), o(true);
     try {
       var t, r, s, c, u;
       let n = await l.yk(e);
@@ -24,21 +25,21 @@ function s(e) {
         hasMemberRetention: n.retention_healthy,
         notNSFW: 0 === Object.keys(n.nsfw_properties).length,
         canApply: n.can_apply,
-        isApplicationPending: (null == (t = n.latest_request) ? void 0 : t.state) === a.X.OPEN,
-        actionRequired: (null == (r = n.latest_request) ? void 0 : r.state) === a.X.ACTION_REQUIRED,
+        isApplicationPending: (null == (t = n.latest_request) ? true : t.state) === a.X.OPEN,
+        actionRequired: (null == (r = n.latest_request) ? true : r.state) === a.X.ACTION_REQUIRED,
         minimumAgeInDays: n.minimum_age_in_days,
         minimumOwnerAgeInYears: n.minimum_owner_age_in_years,
         minimumSize: n.minimum_size,
         latestRequest: n.latest_request,
         rejection: n.rejection,
-        guildMemberCount: null == (s = n.health_score) ? void 0 : s.guild_size,
-        communicatorCount: null == (c = n.health_score) ? void 0 : c.communicators,
-        retentionScore: null == (u = n.health_score) ? void 0 : u.perc_ret_w1
+        guildMemberCount: null == (s = n.health_score) ? true : s.guild_size,
+        communicatorCount: null == (c = n.health_score) ? true : c.communicators,
+        retentionScore: null == (u = n.health_score) ? true : u.perc_ret_w1
       })
     } catch (e) {
       o(new i.Z(e))
     } finally {
-      n(!1)
+      n(false)
     }
   }, []);
   return {

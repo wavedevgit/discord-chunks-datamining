@@ -1,21 +1,22 @@
 /** Chunk was on web.js **/
+/** chunk id: 341298, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   g: () => c,
   mM: () => d,
   tr: () => u
-}), n(442837);
-var r = n(430824),
-  i = n(914010),
-  o = n(369274),
-  a = n(558921);
+}), require("./442837.js");
+var Chunk430824 = require("./430824.js"),
+  Chunk914010 = require("./914010.js"),
+  Chunk369274 = require("./369274.js"),
+  Chunk558921 = require("./558921.js");
 let s = 3e3,
   l = 36e5;
 
 function c(e) {
   let {
     guildStore: t
-  } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}, n = null != t ? t : r.Z, i = n.getGuild(a.y), s = (null == i ? void 0 : i.joinedAt) instanceof Date && Date.now() - i.joinedAt.getTime() <= l;
+  } = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {}, n = null != t ? t : r.Z, i = n.getGuild(a.y), s = (null == i ? true : i.joinedAt) instanceof Date && Date.now() - i.joinedAt.getTime() <= l;
   return 1 === n.getGuildCount() && s && (0, o.Z)(e)
 }
 

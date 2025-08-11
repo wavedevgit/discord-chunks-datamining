@@ -1,1 +1,0 @@
-{"id":"686777","type":"experiment","data":{"id":"2024-04_concurrent_quests","kind":"user","label":"Concurrent Quests","defaultConfig":{"enabled":false},"treatments":[{"id":0,"label":"Control","config":{"enabled":false}},{"id":1,"label":"Concurrent Quests Enabled","config":{"enabled":false}}]},"fromModule":{"id":"37447"}}

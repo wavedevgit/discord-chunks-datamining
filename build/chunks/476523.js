@@ -1,5 +1,6 @@
 /** Chunk was on 36878 **/
-e.exports = {
+/** chunk id: 476523, original params: e,t,n (module,exports,require) **/
+module.exports = {
   sidebar: "sidebar__409aa",
   mobile: "mobile__409aa",
   mobileNavigationOpen: "mobileNavigationOpen__409aa",

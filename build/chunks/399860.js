@@ -1,11 +1,12 @@
 /** Chunk was on web.js **/
+/** chunk id: 399860, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   gw: () => i,
   rE: () => o,
   tk: () => a
-}), n(467055), n(388685);
-var r = n(911969);
+}), require("./467055.js"), require("./388685.js");
+var Chunk911969 = require("./911969.js");
 
 function i(e, t) {
   return e === r.yU.CHAT ? "/" + t : t
@@ -18,4 +19,4 @@ function o(e, t) {
 function a(e) {
   return Object.fromEntries(e.map(e => [o(e.id, e.type), e]))
 }
-n(895924)
+require("./895924.js")

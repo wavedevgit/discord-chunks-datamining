@@ -1,14 +1,15 @@
 /** Chunk was on 75708 **/
-n.d(t, {
+/** chunk id: 980864, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   h: () => a
 });
-var i = n(416867),
-  r = n(549631),
-  s = n(388032);
+var Chunk416867 = require("./416867.jsx"),
+  Chunk549631 = require("./549631.jsx"),
+  Chunk388032 = require("./388032.jsx");
 let a = () => {
-  (0, i.B)({
-    title: s.intl.string(s.t.oPV2c3),
-    body: s.intl.string(s.t.DdRizc),
-    Icon: r.Z
+  (0, Chunk416867.B)({
+    title: Chunk388032.intl.string(Chunk388032.t.oPV2c3),
+    body: Chunk388032.intl.string(Chunk388032.t.DdRizc),
+    Icon: Chunk549631.Z
   })
 }

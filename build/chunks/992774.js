@@ -1,4 +1,5 @@
 /** Chunk was on web.js **/
+/** chunk id: 992774, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 let r, i;
 
@@ -25,10 +26,10 @@ function c(e) {
 function u() {
   return o(), null != i ? i : i = r.getVoiceEngine()
 }
-n.d(t, {
+require.d(exports, {
   Zh: () => s,
   eJ: () => l,
   f3: () => a,
   p8: () => c,
   zS: () => u
-}), n(415506)
+}), require("./415506.js")

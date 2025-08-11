@@ -1,5 +1,6 @@
 /** Chunk was on 6850 **/
-e.exports = {
+/** chunk id: 673285, original params: e,t,n (module,exports,require) **/
+module.exports = {
   paginationContainer: "paginationContainer_e8f197",
   pagination: "pagination_e8f197",
   paginationInput: "paginationInput_e8f197",

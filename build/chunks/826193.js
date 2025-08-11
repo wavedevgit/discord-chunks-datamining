@@ -1,4 +1,5 @@
 /** Chunk was on 31077 **/
-e.exports = function(e) {
+/** chunk id: 826193, original params: e (module,exports,require) **/
+module.exports = function(e) {
   return e.split("")
 }

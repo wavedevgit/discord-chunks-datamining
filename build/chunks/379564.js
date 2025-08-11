@@ -1,8 +1,9 @@
 /** Chunk was on web.js **/
+/** chunk id: 379564, original params: e (module,exports,re quire) **/
 let t = ["as", "in", "of", "if", "for", "while", "finally", "var", "new", "function", "do", "return", "void", "else", "break", "catch", "instanceof", "with", "throw", "case", "default", "try", "switch", "continue", "typeof", "delete", "let", "yield", "const", "class", "debugger", "async", "await", "static", "import", "from", "export", "extends", "using"],
   n = ["true", "false", "null", "undefined", "NaN", "Infinity"],
   r = [].concat(["setInterval", "setTimeout", "clearInterval", "clearTimeout", "require", "exports", "eval", "isFinite", "isNaN", "parseFloat", "parseInt", "decodeURI", "decodeURIComponent", "encodeURI", "encodeURIComponent", "escape", "unescape"], ["Object", "Function", "Boolean", "Symbol", "Math", "Date", "Number", "BigInt", "String", "RegExp", "Array", "Float32Array", "Float64Array", "Int8Array", "Uint8Array", "Uint8ClampedArray", "Int16Array", "Int32Array", "Uint16Array", "Uint32Array", "BigInt64Array", "BigUint64Array", "Set", "Map", "WeakSet", "WeakMap", "ArrayBuffer", "SharedArrayBuffer", "Atomics", "DataView", "JSON", "Promise", "Generator", "GeneratorFunction", "AsyncFunction", "Reflect", "Proxy", "Intl", "WebAssembly"], ["Error", "EvalError", "InternalError", "RangeError", "ReferenceError", "SyntaxError", "TypeError", "URIError"]);
-e.exports = function(e) {
+module.exports = function(e) {
   let i = ["npm", "print"],
     o = ["yes", "no", "on", "off"],
     a = ["then", "unless", "until", "loop", "by", "when", "and", "or", "is", "isnt", "not"],
@@ -60,8 +61,8 @@ e.exports = function(e) {
       begin: "@" + u
     }, {
       subLanguage: "javascript",
-      excludeBegin: !0,
-      excludeEnd: !0,
+      excludeBegin: true,
+      excludeEnd: true,
       variants: [{
         begin: "```",
         end: "```"
@@ -78,7 +79,7 @@ e.exports = function(e) {
     h = {
       className: "params",
       begin: "\\([^\\(]",
-      returnBegin: !0,
+      returnBegin: true,
       contains: [{
         begin: /\(/,
         end: /\)/,
@@ -107,7 +108,7 @@ e.exports = function(e) {
       className: "function",
       begin: "^\\s*" + u + "\\s*=\\s*" + p,
       end: "[-=]>",
-      returnBegin: !0,
+      returnBegin: true,
       contains: [_, h]
     }, {
       begin: /[:\(,=]\s*/,
@@ -116,14 +117,14 @@ e.exports = function(e) {
         className: "function",
         begin: p,
         end: "[-=]>",
-        returnBegin: !0,
+        returnBegin: true,
         contains: [h]
       }]
     }, m, {
       begin: u + ":",
       end: ":",
-      returnBegin: !0,
-      returnEnd: !0,
+      returnBegin: true,
+      returnEnd: true,
       relevance: 0
     }]
   }

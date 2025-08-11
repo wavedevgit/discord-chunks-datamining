@@ -1,4 +1,5 @@
 /** Chunk was on web.js **/
+/** chunk id: 227473, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 var r = {
   syntaxAfter: "syntaxAfter_ada32f",
@@ -28,4 +29,4 @@ var r = {
   before_subtext: "before_subtext_ada32f",
   subtext: "subtext_ada32f"
 };
-n.r(e.exports = r)
+require.r(module.exports = r)

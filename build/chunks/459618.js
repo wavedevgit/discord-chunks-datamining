@@ -1,25 +1,26 @@
 /** Chunk was on web.js **/
+/** chunk id: 459618, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => I
-}), n(388685);
-var r = n(442837),
-  i = n(570140),
-  o = n(710845),
-  a = n(186102),
-  s = n(873741),
-  l = n(592125),
-  c = n(650774),
-  u = n(866960),
-  d = n(626135),
-  f = n(981631);
+}), require("./388685.js");
+var Chunk442837 = require("./442837.js"),
+  Chunk570140 = require("./570140.js"),
+  Chunk710845 = require("./710845.js"),
+  Chunk186102 = require("./186102.js"),
+  Chunk873741 = require("./873741.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk650774 = require("./650774.js"),
+  Chunk866960 = require("./866960.js"),
+  Chunk626135 = require("./626135.js"),
+  Chunk981631 = require("./981631.js");
 
 function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -52,7 +53,7 @@ function m(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let g = new o.Z("MessageRoundtripTrackerStore");
+let g = new Chunk710845.Z("MessageRoundtripTrackerStore");
 
 function E(e) {
   return null != e.apiResponseTimestamp && null != e.gatewaySeenTimestamp
@@ -86,11 +87,11 @@ function y(e) {
   } = e, r = n.nonce;
   t || null == r || v.recordGatewayResponse(r)
 }
-class O extends r.ZP.Store {
+class O extends Chunk442837.ZP.Store {
   recordMessageSendAttempt(e, t) {
     var n, r, i, o;
-    let a = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {},
-      s = (null != (i = null == (n = a.attachments) ? void 0 : n.length) ? i : 0) + (null != (o = null == (r = a.attachmentsToUpload) ? void 0 : r.length) ? o : 0),
+    let a = arguments.length > 2 && true !== arguments[2] ? arguments[2] : {},
+      s = (null != (i = null == (n = a.attachments) ? true : n.length) ? i : 0) + (null != (o = null == (r = a.attachmentsToUpload) ? true : r.length) ? o : 0),
       l = {
         initialSendTimestamp: Date.now(),
         apiResponseTimestamp: null,
@@ -125,7 +126,7 @@ class O extends r.ZP.Store {
     super(...e), _(this, "pendingMessages", new Map)
   }
 }
-let v = new O(i.Z, {
+let v = new O(Chunk570140.Z, {
     MESSAGE_CREATE: y
   }),
   I = v

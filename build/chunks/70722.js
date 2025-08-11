@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 70722, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   C7: () => a,
   Ec: () => o,
   T6: () => c,
@@ -15,7 +16,7 @@ n.d(t, {
   yG: () => s,
   zj: () => f
 });
-var r = n(214627),
+var Chunk214627 = require("./214627.js"),
   i = function(e) {
     return e.BLACK_SCREEN = "BLACK_SCREEN", e.BLURRY = "BLURRY", e.LAGGING = "LAGGING", e.OUT_OF_SYNC = "OUT_OF_SYNC", e.AUDIO_MISSING = "AUDIO_MISSING", e.AUDIO_POOR = "AUDIO_POOR", e.GAME_ISSUE = "GAME_ISSUE", e.STREAM_STOPPED = "STREAM_STOPPED", e.NO_ISSUE = "NO_ISSUE", e.OTHER = "OTHER", e.VIBES_OFF = "VIBES_OFF", e
   }({});
@@ -32,4 +33,4 @@ let o = ">=19.0.0",
 var h = function(e) {
   return e.GUILD = "guild", e.CALL = "call", e
 }({});
-let m = r.T.StreamNotificationsGuildMaxSize
+let m = Chunk214627.T.StreamNotificationsGuildMaxSize

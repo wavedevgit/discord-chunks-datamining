@@ -1,23 +1,24 @@
 /** Chunk was on web.js **/
+/** chunk id: 606992, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => a
-}), n(388685);
-var r = n(73800),
-  i = n(40851),
-  o = n(590921);
+}), require("./388685.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk40851 = require("./40851.jsx"),
+  Chunk590921 = require("./590921.js");
 
 function a(e) {
   let {
     editorHeight: t,
     type: n,
     state: a
-  } = e, [s, l] = r.useState(void 0), c = null == a ? void 0 : a.query, u = null == a ? void 0 : a.isVisible, {
+  } = e, [s, l] = r.useState(true), c = null == a ? true : a.query, u = null == a ? true : a.isVisible, {
     renderWindow: d
   } = r.useContext(i.ZP), f = r.useCallback(() => {
     var e, t, r, i;
-    if (null != a && (null == c || !u)) return void l(void 0);
-    if ((null == c ? void 0 : c.type) === o.eq.GIFS || null != n && !(null == (e = n.autocomplete) ? void 0 : e.alwaysUseLayer)) return void l(null);
+    if (null != a && (null == c || !u)) return void l(true);
+    if ((null == c ? true : c.type) === o.eq.GIFS || null != n && !(null == (e = n.autocomplete) ? true : e.alwaysUseLayer)) return void l(null);
     let s = d.document.getSelection(),
       f = null != s && s.rangeCount > 0 ? s.getRangeAt(0) : null;
     if (null == f) return;
@@ -25,8 +26,8 @@ function a(e) {
       p = f.startOffset;
     for (; null != _;) {
       if (_.nodeType !== Node.TEXT_NODE || null == _.nodeValue) return void l(null);
-      if ((null == (t = _.nodeValue) ? void 0 : t.length) === 0) {
-        p = null != (i = null == (_ = _.previousSibling) || null == (r = _.nodeValue) ? void 0 : r.length) ? i : 0;
+      if ((null == (t = _.nodeValue) ? true : t.length) === 0) {
+        p = null != (i = null == (_ = _.previousSibling) || null == (r = _.nodeValue) ? true : r.length) ? i : 0;
         continue
       }
       null != c && (p >= c.queryText.length ? p -= c.queryText.length : p = 0);
@@ -36,7 +37,7 @@ function a(e) {
     let h = d.document.createRange();
     h.setStart(_, p), h.setEnd(_, p);
     let m = h.getBoundingClientRect();
-    (null == m ? void 0 : m.height) !== 0 && l(null != m ? m : null)
+    (null == m ? true : m.height) !== 0 && l(null != m ? m : null)
   }, [d.document, a, u, c, n]);
   return r.useEffect(() => (d.document.addEventListener("selectionchange", f), () => d.document.removeEventListener("selectionchange", f)), [d.document, f]), r.useEffect(() => {
     f()

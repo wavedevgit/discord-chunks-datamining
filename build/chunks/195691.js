@@ -1,7 +1,8 @@
 /** Chunk was on web.js **/
+/** chunk id: 195691, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-var r = n(169774),
-  i = n(581079);
+var Chunk169774 = require("./169774.js"),
+  Chunk581079 = require("./581079.js");
 
 function o(e) {
   for (var t = e.cloneRange(), n = [], r = e.endContainer; null != r; r = r.parentNode) {
@@ -11,8 +12,8 @@ function o(e) {
     if (n.push(s), a) return n.reverse(), (o = []).concat.apply(o, n);
     t.setEndBefore(r)
   }
-  i(!1)
+  i(false)
 }
-e.exports = r.isBrowser("Chrome") ? o : function(e) {
+module.exports = Chunk169774.isBrowser("Chrome") ? o : function(e) {
   return Array.from(e.getClientRects())
 }

@@ -1,2 +1,3 @@
 /** Chunk was on 46037 **/
-e.exports = JSON.parse('{"klSpfn":"Editează setările","NzUuLC":["+",[1,"count"]," ",[6,"count",{"one":["mesaj"],"other":["mesaje"]},0,"cardinal"]],"O+racX":"Nu există notificări.","dcpdhI":"Selectează un mesaj pentru a sări la el.","VAK+h4":"Bun venit \xeen Centrul de notificări!"}')
+/** chunk id: 999210, original params: e (module,exports,require) **/
+module.exports = JSON.parse('{"klSpfn":"Editează setările","NzUuLC":["+",[1,"count"]," ",[6,"count",{"one":["mesaj"],"other":["mesaje"]},0,"cardinal"]],"O+racX":"Nu există notificări.","dcpdhI":"Selectează un mesaj pentru a sări la el.","VAK+h4":"Bun venit \xeen Centrul de notificări!"}')

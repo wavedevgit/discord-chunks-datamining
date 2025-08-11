@@ -1,0 +1,297 @@
+/** Chunk was on 6850 **/
+/** chunk id: 512508, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
+  PM: () => M,
+  WG: () => P,
+  ZP: () => k
+}), require("./388685.js"), require("./781311.js");
+var Chunk255367 = require("./255367.js"),
+  Chunk73800 = require("./73800.js"),
+  Chunk120356 = require("./120356.js"),
+  i = require.n(Chunk120356),
+  Chunk658722 = require("./658722.js"),
+  s = require.n(Chunk658722),
+  Chunk442837 = require("./442837.js"),
+  Chunk481060 = require("./481060.js"),
+  Chunk794433 = require("./794433.js"),
+  Chunk933557 = require("./933557.js"),
+  Chunk471445 = require("./471445.js"),
+  Chunk91218 = require("./91218.jsx"),
+  Chunk313201 = require("./313201.js"),
+  Chunk518738 = require("./518738.js"),
+  Chunk884902 = require("./884902.js"),
+  Chunk439170 = require("./439170.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk485386 = require("./485386.js"),
+  Chunk699516 = require("./699516.js"),
+  Chunk594174 = require("./594174.js"),
+  Chunk388032 = require("./388032.jsx"),
+  Chunk962923 = require("./962923.js");
+
+function _(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      var r;
+      r = n[t], t in e ? Object.defineProperty(e, t, {
+        value: r,
+        enumerable: true,
+        configurable: true,
+        writable: true
+      }) : e[t] = r
+    })
+  }
+  return e
+}
+
+function w(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
+    var n = Object.keys(e);
+    if (Object.getOwnPropertySymbols) {
+      var r = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, r)
+    }
+    return n
+  })(Object(t)).forEach(function(n) {
+    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+  }), e
+}
+
+function N(e) {
+  var t = function(e, t) {
+    if ("object" !== S(e) || null === e) return e;
+    var n = e[Symbol.toPrimitive];
+    if (true !== n) {
+      var r = n.call(e, t || "default");
+      if ("object" !== S(r)) return r;
+      throw TypeError("@@toPrimitive must return a primitive value.")
+    }
+    return ("string" === t ? String : Number)(e)
+  }(e, "string");
+  return "symbol" === S(t) ? t : String(t)
+}
+
+function S(e) {
+  return e && "undefined" != typeof Symbol && e.constructor === Symbol ? "symbol" : typeof e
+}
+let Z = (0, Chunk313201.hQ)(),
+  D = (0, Chunk313201.hQ)(),
+  L = "text-sm/medium";
+
+function R(e) {
+  return 1 === e.type
+}
+
+function I(e) {
+  return 0 === e.type
+}
+
+function P(e) {
+  let t = "".concat(!e.name.includes(j.CR) ? "@" : "").concat(e.name);
+  return {
+    tag: {
+      type: d.F.ROLE,
+      label: t
+    },
+    row: {
+      id: e.id,
+      display: t,
+      type: 1,
+      record: e
+    }
+  }
+}
+
+function M(e) {
+  let t = (0, C.F6)(e, y.default, v.Z);
+  return {
+    tag: {
+      type: d.F.CHANNEL,
+      label: t
+    },
+    row: {
+      id: e.id,
+      display: t,
+      type: 0,
+      record: e
+    }
+  }
+}
+let V = Chunk73800.memo(function(e) {
+  var t;
+  let {
+    row: n,
+    guildId: l,
+    className: o
+  } = e, {
+    id: a,
+    name: s
+  } = n.record, d = (0, f.p9)({
+    guildId: l,
+    roleId: a,
+    size: 16
+  }), C = (0, c.e7)([x.Z], () => x.Z.getRole(l, a)), m = s.includes(j.CR) ? "" : "@", p = (0, u.dQu)(u.TVs.unsafe_rawColors.PRIMARY_300).hsl(), g = null != (t = null == C ? true : C.colorString) ? t : p, v = (0, h._f)(l, C, null == C ? true : C.colorStrings);
+  return <div className={i()(H.rowLabel, H.roleTagContainer, o)}>{<u.FhE className={H.__invalid_roleDot} color={g} colors={v} background={false} tooltip={false} />}{null != d ? <b.Z{...w(_({
+      className: H.roleTagIcon
+    }, d), {
+      enableTooltip: false
+    })} /> : m}{<u.Text variant={L} className={H.roleTagLabel}>{s}</u.Text>}</div>
+});
+
+function E(e) {
+  let {
+    channel: t,
+    row: n,
+    className: l
+  } = e, o = null != t.parent_id, a = (0, m.KS)(t);
+  return <div className={i()(H.rowLabel, H.channelLabel, {
+      [H.hasParent]: o
+    }, l)}>{null != a && <a size={"xs"} color={"currentColor"} className={H.channelIcon} />}{<u.Text variant={t.isCategory() ? "eyebrow" : L}>{n.display}</u.Text>}</div>
+}
+
+function T(e, t, n) {
+  return R(e) ? <V row={e} guildId={t} className={n} /> : I(e) ? <E row={e} channel={e.record} className={n} /> : null
+}
+
+function k(e) {
+  let {
+    guildId: t,
+    roleRows: n = [],
+    channelRows: o = [],
+    selectedChannelIds: a = new Set,
+    selectedRoleIds: C = new Set,
+    onChange: m,
+    placeholder: b,
+    helperText: p,
+    className: f
+  } = e, h = (0, c.e7)([x.Z], () => x.Z.getRolesSnapshot(t)), j = l.useMemo(() => (function(e, t, n) {
+    if (null == e) return {};
+    let r = {};
+    return e.forEach(e => {
+      let t = g.Z.getChannel(e);
+      null != t && (r[e] = M(t))
+    }), t.forEach(e => {
+      e in n && (r[e] = P(n[e]))
+    }), r
+  })(a, C, h), [a, C, h]), v = l.useMemo(() => Object.keys(j), [j]), [y, S] = l.useState(""), [L, V] = l.useState(false), [E, k] = l.useState(false), [A, B] = l.useState(false), U = l.useRef(null), {
+    sections: F,
+    sectionCounts: q
+  } = l.useMemo(() => {
+    let e = "" !== y ? o.filter(e => s()(y, e.display.toLocaleLowerCase())) : o,
+      t = "" !== y ? n.filter(e => s()(y, e.display.toLocaleLowerCase())) : n,
+      r = [],
+      l = [];
+    return r[0] = e, l[0] = e.length, r[1] = t, l[1] = t.length, {
+      sections: r,
+      sectionCounts: l
+    }
+  }, [y, o, n]), z = l.useCallback(e => {
+    let t = Object.values(e),
+      n = t.filter(e => {
+        let {
+          row: t
+        } = e;
+        return I(t)
+      }).map(e => e.row.record.id),
+      r = t.filter(e => {
+        let {
+          row: t
+        } = e;
+        return R(t)
+      }).map(e => e.row.record.id);
+    m(new Set(n), new Set(r))
+  }, [m]), G = () => {
+    V(false), k(false)
+  };
+  l.useEffect(() => {
+    let e = setTimeout(() => {
+      B(L || E)
+    }, 32);
+    return () => {
+      clearTimeout(e)
+    }
+  }, [L, E]);
+  let Y = (e, t, n) => {
+      n.stopPropagation(), n.preventDefault(), 2 === t ? V(e) : (1 === t || V(e), k(e))
+    },
+    W = l.useCallback(e => {
+      let t = _({}, j);
+      I(e) ? t[e.id] = M(e.record) : R(e) && (t[e.id] = P(e.record)), z(t), S(""), G(), setTimeout(() => {
+        var e;
+        let t = null == (e = U.current) ? true : e.containerRef.current,
+          n = null == t ? true : t.firstChild;
+        null != n && n.scrollTo({
+          top: n.scrollHeight,
+          behavior: "smooth"
+        })
+      }, 16)
+    }, [z, j]),
+    X = l.useCallback(e => {
+      let {
+        section: n,
+        row: l
+      } = e, o = F[n][l];
+      return <u.P3F className={i()(H.selectableSearchRow, H.rowHeight)} onClick={e => {
+          e.stopPropagation(), W(o)
+        }}><div className={H.rowContainer}>{T(o, t, H.searchRowLabel)}</div></u.P3F>
+    }, [t, W, F]),
+    J = l.useMemo(() => v.map(e => {
+      var n;
+      return n = j[e], w(_({}, n.tag), {
+        label: T(n.row, t, H.noIndent)
+      })
+    }), [j, v, t]);
+  return <div className={i()(H.searchContainer, f)}>{<div className={H.searchBox}>{<d.Z tags={J} maxHeight={98} size={d.Z.Sizes.MEDIUM} query={y} ref={U} onRemoveTag={e => {
+          let t = v[e],
+            {
+              [t]: n
+            } = j;
+          z(function(e, t) {
+            if (null == e) return {};
+            var n, r, l = function(e, t) {
+              if (null == e) return {};
+              var n, r, l = {},
+                o = Object.keys(e);
+              for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (l[n] = e[n]);
+              return l
+            }(e, t);
+            if (Object.getOwnPropertySymbols) {
+              var o = Object.getOwnPropertySymbols(e);
+              for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n])
+            }
+            return l
+          }(j, [t].map(N))), S(""), G()
+        }} onQueryChange={e => {
+          S(e.trim().toLocaleLowerCase())
+        }} placeholder={null != b ? b : O.intl.string(O.t.uqHLzc)} sections={[v.length]} inputProps={{
+          "aria-labelledby": Z,
+          "aria-controls": D,
+          "aria-expanded": A,
+          onFocus: e => Y(true, 2, e),
+          onBlur: e => Y(false, 2, e)
+        }} />}{A && <div className={H.resultsListParent} onFocus={e => Y(true, 1, e)} onBlur={e => Y(false, 1, e)} tabIndex={false}><u._2F className={H.resultsListContainer} innerClassName={H.resultsList} sections={q} renderRow={X} rowHeight={34} renderSection={e => {
+            let {
+              section: t
+            } = e;
+            return 0 === t ? (0, r.jsx)(u.vwX, {
+              tag: "h5",
+              className: i()(H.sectionTitle, H.sectionHeight),
+              children: O.intl.string(O.t.OGiMXF)
+            }, O.intl.string(O.t.OGiMXF)) : 1 === t ? (0, r.jsx)(u.vwX, {
+              tag: "h5",
+              className: i()(H.sectionTitle, H.sectionHeight),
+              children: O.intl.string(O.t.LPJmLy)
+            }, O.intl.string(O.t.LPJmLy)) : null
+          }} renderFooter={e => {
+            let {
+              section: t
+            } = e;
+            return 0 === t ? 0 === q[1] && q[0] > 0 ? null : (0, r.jsx)("div", {
+              className: H.sectionFooter,
+              children: (0, r.jsx)(u.$i$, {})
+            }) : null
+          }} sectionHeight={24} footerHeight={e => 0 === e ? 0 === q[1] && q[0] > 0 ? 0 : 32 : 0} role={true} innerRole={"listbox"} innerId={D} innerAriaOrientation={"vertical"} /></div>}</div>}{null != p && <u.Text variant={"text-xs/normal"} color={"text-muted"} className={H.helperText}>{p}</u.Text>}</div>
+}

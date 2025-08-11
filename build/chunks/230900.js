@@ -1,13 +1,14 @@
 /** Chunk was on web.js **/
+/** chunk id: 230900, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   cS: () => s,
   nE: () => o,
   xC: () => c,
   xV: () => l
 });
-var r = n(592125),
-  i = n(765305);
+var Chunk592125 = require("./592125.js"),
+  Chunk765305 = require("./765305.js");
 
 function o(e) {
   let t, {
@@ -16,7 +17,7 @@ function o(e) {
   } = e;
   if (n in i.nz && null != o) {
     var a;
-    t = null != (a = r.Z.getChannel(e.channel_id)) ? a : void 0
+    t = null != (a = r.Z.getChannel(e.channel_id)) ? a : true
   }
   return t
 }
@@ -43,5 +44,5 @@ function l(e) {
 }
 
 function c(e) {
-  return e === i.WX.VOICE || e === i.WX.STAGE_INSTANCE ? i.nz[e] : void 0
+  return e === i.WX.VOICE || e === i.WX.STAGE_INSTANCE ? i.nz[e] : true
 }

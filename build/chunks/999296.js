@@ -1,8 +1,9 @@
 /** Chunk was on web.js **/
+/** chunk id: 999296, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-var r = n(359282),
-  i = n(720379),
-  o = n(581079);
+var Chunk359282 = require("./359282.js"),
+  Chunk720379 = require("./720379.js"),
+  Chunk581079 = require("./581079.js");
 
 function a(e, t, n) {
   var r;
@@ -15,22 +16,22 @@ function a(e, t, n) {
       start: e,
       end: t
     })
-  }), "object" != typeof r && o(!1), r
+  }), "object" != typeof r && o(false), r
 }
 
 function s(e, t, n) {
   var i = t.getCharacterList(),
-    o = n > 0 ? i.get(n - 1) : void 0,
-    s = n < i.count() ? i.get(n) : void 0,
-    l = o ? o.getEntity() : void 0,
-    c = s ? s.getEntity() : void 0;
+    o = n > 0 ? i.get(n - 1) : true,
+    s = n < i.count() ? i.get(n) : true,
+    l = o ? o.getEntity() : true,
+    c = s ? s.getEntity() : true;
   if (c && c === l && "MUTABLE" !== e.__get(c).getMutability()) {
     for (var u, d = a(i, c, n), f = d.start, _ = d.end; f < _;) u = i.get(f), i = i.set(f, r.applyEntity(u, null)), f++;
     return t.set("characterList", i)
   }
   return t
 }
-e.exports = function(e, t) {
+module.exports = function(e, t) {
   var n = e.getBlockMap(),
     r = e.getEntityMap(),
     i = {},

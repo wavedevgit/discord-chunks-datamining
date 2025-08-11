@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 865006, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   categoryList: "categoryList_a1e0e0",
   expressionPickerCategoryList: "expressionPickerCategoryList_a1e0e0",
   category: "category_a1e0e0",

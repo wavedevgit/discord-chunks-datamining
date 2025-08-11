@@ -1,9 +1,10 @@
 /** Chunk was on 94136 **/
-i.d(t, {
+/** chunk id: 821982, original params: e,t,i (module,exports,require) **/
+require.d(exports, {
   Z: () => l
 });
-var n = i(768581),
-  r = i(1585);
+var Chunk768581 = require("./768581.js"),
+  Chunk1585 = require("./1585.jsx");
 let l = (e, t, i) => (0, n.NZ)({
   avatarDecoration: {
     asset: e

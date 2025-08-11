@@ -1,41 +1,42 @@
 /** Chunk was on web.js **/
+/** chunk id: 786761, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Pv: () => G,
   e5: () => P,
   gx: () => w,
   lp: () => U,
   wi: () => D
-}), n(997841), n(388685);
-var r = n(913527),
-  i = n.n(r),
-  o = n(920412),
-  a = n(830121);
-n(712057);
-var s = n(292419),
-  l = n(330044),
-  c = n(378233),
-  u = n(360742),
-  d = n(23750),
-  f = n(598077),
-  _ = n(314897),
-  p = n(699516),
-  h = n(594174),
-  m = n(408433),
-  g = n(669079);
-n(358085);
-var E = n(709054),
-  b = n(572804);
-n(739566);
-var y = n(959517),
-  O = n(981631);
+}), require("./997841.js"), require("./388685.js");
+var Chunk913527 = require("./913527.js"),
+  i = require.n(Chunk913527),
+  Chunk920412 = require("./920412.js"),
+  Chunk830121 = require("./830121.js");
+require("./712057.js");
+var Chunk292419 = require("./292419.js"),
+  Chunk330044 = require("./330044.js"),
+  Chunk378233 = require("./378233.js"),
+  Chunk360742 = require("./360742.js"),
+  Chunk23750 = require("./23750.js"),
+  Chunk598077 = require("./598077.js"),
+  Chunk314897 = require("./314897.js"),
+  Chunk699516 = require("./699516.js"),
+  Chunk594174 = require("./594174.js"),
+  Chunk408433 = require("./408433.js"),
+  Chunk669079 = require("./669079.js");
+require("./358085.js");
+var Chunk709054 = require("./709054.js"),
+  Chunk572804 = require("./572804.js");
+require("./739566.js");
+var Chunk959517 = require("./959517.js"),
+  Chunk981631 = require("./981631.js");
 
 function v(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -68,7 +69,7 @@ function S(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let A = new f.Z({
+let A = new Chunk598077.Z({
   id: "???",
   username: "???"
 });
@@ -79,7 +80,7 @@ function N(e) {
 }
 
 function C(e) {
-  return !1
+  returnfalse
 }
 
 function R(e) {
@@ -90,7 +91,7 @@ function R(e) {
     attachments: L(e),
     embeds: M(e),
     components: (0, s.uZ)(null != (t = e.components) ? t : [], {
-      includeEmojiSrc: !1
+      includeEmojiSrc: false
     }),
     codedLinks: e.type === O.uaV.THREAD_CREATED ? [] : (0, a.ZP)(e.content)
   }))
@@ -101,27 +102,27 @@ function P(e) {
   let h, m, {
       reactions: y,
       interactionData: v
-    } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {},
+    } = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {},
     T = R(e),
-    A = null != (i = null == (t = e.mentions) ? void 0 : t.map(e => e.id)) ? i : [],
+    A = null != (i = null == (t = e.mentions) ? true : t.map(e => e.id)) ? i : [],
     P = null != (a = e.mention_roles) ? a : [],
     w = null != (s = e.mention_channels) ? s : [],
     D = null != (c = e.mention_games) ? c : [],
     L = e.message_reference,
     M = N(e),
     U = null,
-    G = null == e ? void 0 : e.gift_info,
+    G = null == e ? true : e.gift_info,
     B = e.gifting_prompt,
     Z = null != e.interaction ? u.Z.createFromServer(e.interaction) : null,
-    F = e.type === O.uaV.THREAD_STARTER_MESSAGE ? null == (r = e.referenced_message) || null == (n = r.author) ? void 0 : n.id : void 0,
+    F = e.type === O.uaV.THREAD_STARTER_MESSAGE ? null == (r = e.referenced_message) || null == (n = r.author) ? true : n.id : true,
     V = e.content;
-  return new d.ZP((e.type === O.uaV.PREMIUM_REFERRAL ? (h = E.default.isProbablyAValidSnowflake(e.content) ? e.content : void 0, V = "") : e.type === O.uaV.CHAT_WALLPAPER_SET && (m = (0, o.Z)(e.content), V = ""), C(e)) ? S(I({}, U), {
+  return new d.ZP((e.type === O.uaV.PREMIUM_REFERRAL ? (h = E.default.isProbablyAValidSnowflake(e.content) ? e.content : true, V = "") : e.type === O.uaV.CHAT_WALLPAPER_SET && (m = (0, o.Z)(e.content), V = ""), C(e)) ? S(I({}, U), {
     id: e.id,
     channel_id: e.channel_id,
     type: O.uaV.DEFAULT,
     author: M,
     timestamp: T.timestamp,
-    isUnsupported: !0
+    isUnsupported: true
   }) : S(I({}, e, U, T.toJS()), {
     author: M,
     webhookId: e.webhook_id,
@@ -141,7 +142,7 @@ function P(e) {
       mentionRoles: P,
       mentionGames: D.map(e => e.id)
     }),
-    giftCodes: (0, g.Fp)(e) ? (0, g.Q_)(null == e ? void 0 : e.embeds[0].url) : (0, g.Q_)(e.content),
+    giftCodes: (0, g.Fp)(e) ? (0, g.Q_)(null == e ? true : e.embeds[0].url) : (0, g.Q_)(e.content),
     content: V,
     referralTrialOfferId: h,
     call: x(e.call, T.timestamp),
@@ -152,9 +153,9 @@ function P(e) {
     interactionMetadata: e.interaction_metadata,
     roleSubscriptionData: e.role_subscription_data,
     purchaseNotification: e.purchase_notification,
-    poll: null == e.poll ? void 0 : (0, l.Z)(e.poll),
+    poll: null == e.poll ? true : (0, l.Z)(e.poll),
     potions: e.potions,
-    giftInfo: null == G ? void 0 : G,
+    giftInfo: null == G ? true : G,
     giftingPrompt: B,
     chatWallpaperInfo: m
   }))
@@ -173,14 +174,14 @@ function D(e, t) {
     interactionData: e.interactionData
   });
   let n = e,
-    r = !1;
+    r = false;
   if (null != t.call && (n = n.set("call", x(t.call, e.timestamp))), null != t.attachments && (n = n.set("attachments", L(t))), null != t.content && "" !== t.content && (n = n.set("content", t.content)), null != t.embeds && (n = n.set("embeds", M(t))), null != t.message_snapshots && (n = n.set("messageSnapshots", j(t))), t.pinned !== n.pinned && (n = n.set("pinned", t.pinned)), null != n.webhookId && null != t.author && (n = n.set("author", new f.Z(t.author))), null != t.flags && t.flags !== n.flags && (n = n.set("flags", t.flags)), null != t.components && (n = n.set("components", (0, s.uZ)(t.components, {
-      includeEmojiSrc: !1
+      includeEmojiSrc: false
     }))), null != t.role_subscription_data && (n = n.set("roleSubscriptionData", t.role_subscription_data)), null != t.reactions) {
     var i;
     n = n.set("reactions", k(null != (i = e.reactions) ? i : t.reactions))
   }
-  return null != t.poll && (n = n.set("poll", (0, l.Z)(t.poll))), null != t.mentions && (n = n.set("mentions", t.mentions.map(e => e.id)), r = !0), null != t.mention_games && (n = n.set("mentionGames", t.mention_games), r = !0), null != t.mention_everyone && (n = n.set("mentionEveryone", t.mention_everyone), r = !0), null != t.mention_roles && (n = n.set("mentionRoles", t.mention_roles), r = !0), null != t.potions && (n = n.set("potions", t.potions)), r && (n = n.set("mentioned", (0, b.ZP)({
+  return null != t.poll && (n = n.set("poll", (0, l.Z)(t.poll))), null != t.mentions && (n = n.set("mentions", t.mentions.map(e => e.id)), r = true), null != t.mention_games && (n = n.set("mentionGames", t.mention_games), r = true), null != t.mention_everyone && (n = n.set("mentionEveryone", t.mention_everyone), r = true), null != t.mention_roles && (n = n.set("mentionRoles", t.mention_roles), r = true), null != t.potions && (n = n.set("potions", t.potions)), r && (n = n.set("mentioned", (0, b.ZP)({
     message: n,
     userId: _.default.getId()
   }))), n
@@ -213,8 +214,8 @@ function M(e) {
 
 function k(e, t) {
   var n;
-  if (null == e && (null == t ? void 0 : t.results) == null) return [];
-  let r = null == t || null == (n = t.results) ? void 0 : n.answer_counts.map(e => ({
+  if (null == e && (null == t ? true : t.results) == null) return [];
+  let r = null == t || null == (n = t.results) ? true : n.answer_counts.map(e => ({
     count_details: {
       vote: e.count
     },
@@ -222,16 +223,16 @@ function k(e, t) {
     emoji: {
       id: e.id.toString(),
       name: "",
-      animated: !1
+      animated: false
     },
-    me: !1,
-    me_burst: !1,
+    me: false,
+    me_burst: false,
     count: e.count,
     burst_count: 0
   }));
   return [...null != e ? e : [], ...null != r ? r : []].map(e => {
     let t = I({}, e);
-    if ((null == t ? void 0 : t.count_details) != null) {
+    if ((null == t ? true : t.count_details) != null) {
       var n, r;
       t.burst_count = null != (n = t.count_details.burst) ? n : 0, t.count = null != (r = t.count_details.normal) ? r : 0
     }

@@ -1,11 +1,12 @@
 /** Chunk was on web.js **/
+/** chunk id: 781311, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-var r = n(98405),
-  i = n(710985).trim;
-r({
+var Chunk98405 = require("./98405.js"),
+  i = require("./710985.js").trim;
+Chunk98405({
   target: "String",
-  proto: !0,
-  forced: n(530807)("trim")
+  proto: true,
+  forced: require("./530807.js")("trim")
 }, {
   trim: function() {
     return i(this)

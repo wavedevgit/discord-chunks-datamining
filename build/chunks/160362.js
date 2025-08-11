@@ -1,5 +1,6 @@
 /** Chunk was on web.js **/
+/** chunk id: 160362, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   link: "link_d9ba3e"
 }

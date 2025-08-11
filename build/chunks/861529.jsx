@@ -1,0 +1,38 @@
+/** Chunk was on web.js **/
+/** chunk id: 861529, original params: e,t,n (module,exports,re quire) **/
+"use strict";
+require.d(exports, {
+  Z: () => h
+});
+var Chunk255367 = require("./255367.js"),
+  Chunk73800 = require("./73800.js"),
+  Chunk120356 = require("./120356.js"),
+  a = require.n(Chunk120356),
+  Chunk454585 = require("./454585.js"),
+  Chunk937889 = require("./937889.js"),
+  Chunk970184 = require("./970184.js"),
+  Chunk985184 = require("./985184.js"),
+  Chunk870456 = require("./870456.js"),
+  Chunk317997 = require("./317997.js"),
+  Chunk73433 = require("./73433.js");
+
+function p(e) {
+  let t = (0, c.CJ)();
+  return (0, i.useMemo)(() => {
+    let n;
+    return null === t ? null : (n = null != t.message ? (0, l.rs)(t.message, d.u) : (0, l.p6)({
+      channelId: t.channelId,
+      renderOptions: d.u
+    }), s.Z.parse(e, true, n))
+  }, [e, t])
+}
+
+function h(e) {
+  let {
+    content: t,
+    className: n
+  } = e, i = p(t), o = (0, u.Gt)();
+  return <div className={a()(n, _.markup, f.markdownContainer, {
+      [f.containerSizedText]: o
+    })}>{i}</div>
+}

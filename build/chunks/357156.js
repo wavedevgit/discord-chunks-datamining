@@ -1,36 +1,37 @@
 /** Chunk was on web.js **/
+/** chunk id: 357156, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Gw: () => h,
   Ob: () => _,
   XJ: () => p
-}), n(388685);
-var r = n(73800),
-  i = n(149765),
-  o = n(442837),
-  a = n(496675),
-  s = n(594174),
-  l = n(411198),
-  c = n(85243),
-  u = n(231338);
+}), require("./388685.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk149765 = require("./149765.js"),
+  Chunk442837 = require("./442837.js"),
+  Chunk496675 = require("./496675.js"),
+  Chunk594174 = require("./594174.js"),
+  Chunk411198 = require("./411198.js"),
+  Chunk85243 = require("./85243.js"),
+  Chunk231338 = require("./231338.js");
 let d = {
-    canCreateExpressions: !1,
-    canCreateGuildEvent: !1,
-    canManageAllExpressions: !1,
-    canManageAllEvents: !1,
-    canManageGuildExpression: () => !1,
-    canManageGuildEvent: () => !1
+    canCreateExpressions: false,
+    canCreateGuildEvent: false,
+    canManageAllExpressions: false,
+    canManageAllEvents: false,
+    canManageGuildExpression: () => false,
+    canManageGuildEvent: () => false
   },
   f = (e, t, n, r) => {
-    if (null == e) return !1;
-    if (n) return !0;
+    if (null == e) returnfalse;
+    if (n) returntrue;
     if ("creator_id" in e) return r && null != t && e.creator_id === t.id;
     if ("userId" in e) return r && null != t && e.userId === t.id;
     if ("user" in e) {
       var i;
-      return r && null != t && (null == (i = e.user) ? void 0 : i.id) === t.id
+      return r && null != t && (null == (i = e.user) ? true : i.id) === t.id
     }
-    return !1
+    returnfalse
   },
   _ = e => {
     if (null == e) return [u.Pl.CREATE_EVENTS, u.Pl.MANAGE_EVENTS];
@@ -49,8 +50,8 @@ let d = {
     }
   },
   h = function(e) {
-    let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : a.Z,
-      n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : s.default,
+    let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : a.Z,
+      n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : s.default,
       [r, i] = (0, l.lM)(e) ? [u.Pl.CREATE_EVENTS, u.Pl.MANAGE_EVENTS] : _(e),
       o = t.can(u.Pl.CREATE_GUILD_EXPRESSIONS, e),
       c = t.can(u.Pl.MANAGE_GUILD_EXPRESSIONS, e),

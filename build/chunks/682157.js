@@ -1,5 +1,6 @@
 /** Chunk was on web.js **/
-e.exports = function(e) {
+/** chunk id: 682157, original params: e (module,exports,re quire) **/
+module.exports = function(e) {
   let t = "[A-Za-zА-Яа-яёЁ_!][A-Za-zА-Яа-яёЁ_0-9]*",
     n = "[A-Za-zА-Яа-яёЁ_][A-Za-zА-Яа-яёЁ_0-9]*",
     r = "and и else иначе endexcept endfinally endforeach конецвсе endif конецесли endwhile конецпока except exitfor finally foreach все if если in в not не or или try while пока ",
@@ -59,7 +60,7 @@ e.exports = function(e) {
       className: "type",
       begin: ":[ \\t]*(" + o.trim().replace(/\s/g, "|") + ")",
       end: "[ \\t]*=",
-      excludeEnd: !0
+      excludeEnd: true
     },
     m = {
       className: "variable",
@@ -77,21 +78,21 @@ e.exports = function(e) {
       },
       begin: g,
       end: "\\(",
-      returnBegin: !0,
-      excludeEnd: !0
+      returnBegin: true,
+      excludeEnd: true
     },
     b = {
       className: "function",
       begin: g,
       end: "\\)$",
-      returnBegin: !0,
+      returnBegin: true,
       keywords: _,
       illegal: "[\\[\\]\\|\\$\\?%,~#@]",
       contains: [E, p, m, u, c, f]
     };
   return {
     name: "ISBL",
-    case_insensitive: !0,
+    case_insensitive: true,
     keywords: _,
     illegal: "\\$|\\?|%|,|;$|~|#|@|</",
     contains: [b, h, p, m, u, c, f]

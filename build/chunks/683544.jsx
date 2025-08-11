@@ -1,0 +1,110 @@
+/** Chunk was on 88934 **/
+/** chunk id: 683544, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
+  Z: () => C
+}), require("./388685.js"), require("./35282.js");
+var Chunk255367 = require("./255367.js"),
+  Chunk73800 = require("./73800.js"),
+  Chunk209173 = require("./209173.js"),
+  Chunk399606 = require("./399606.js"),
+  Chunk481060 = require("./481060.js"),
+  Chunk699682 = require("./699682.js"),
+  Chunk471518 = require("./471518.js"),
+  Chunk425986 = require("./425986.js"),
+  Chunk177653 = require("./177653.js"),
+  Chunk881294 = require("./881294.js"),
+  Chunk523311 = require("./523311.jsx"),
+  Chunk797908 = require("./797908.js"),
+  Chunk292191 = require("./292191.jsx"),
+  Chunk258971 = require("./258971.js"),
+  Chunk979007 = require("./979007.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk175457 = require("./175457.js");
+let v = {
+    results: [],
+    totalPages: 0,
+    loadId: ""
+  },
+  C = function(e) {
+    var t;
+    let {
+      categoryId: n,
+      onSelectApplication: C,
+      resetScroll: j
+    } = e, [y, I] = a.useState(1), O = a.useCallback(e => {
+      I(e)
+    }, []);
+    a.useEffect(() => {
+      I(1)
+    }, [n]);
+    let S = a.useMemo(() => ({
+        query: _.EMPTY_QUERY,
+        page: y,
+        pageSize: _.PAGE_SIZE,
+        categoryId: n
+      }), [y, n]),
+      P = (0, l.e7)([u.Z], () => u.Z.getFetchState({
+        query: _.EMPTY_QUERY,
+        page: y,
+        pageSize: _.PAGE_SIZE,
+        categoryId: n
+      })),
+      E = (0, l.cj)([u.Z], () => {
+        var e;
+        return null != (e = u.Z.getSearchResults(S)) ? e : v
+      }),
+      N = null != (t = (0, o.Z)(E)) ? t : v,
+      {
+        results: T,
+        totalPages: A,
+        loadId: L
+      } = a.useMemo(() => P === d.M.FETCHING ? N : E, [P, N, E]),
+      R = a.useMemo(() => null == T ? true : T.filter(e => e.type === i.s.APPLICATION), [T]),
+      Z = a.useCallback(e => {
+        let {
+          page: t,
+          activeCategoryId: n,
+          onSuccessCallback: r,
+          guildId: a,
+          fetchCounts: i
+        } = e;
+        i && c.yC({
+          query: _.EMPTY_QUERY,
+          guildId: a
+        }), c.yC({
+          query: _.EMPTY_QUERY,
+          guildId: a,
+          options: {
+            page: t,
+            pageSize: _.PAGE_SIZE,
+            categoryId: n
+          },
+          onSuccessCallback: r
+        })
+      }, []);
+    a.useEffect(() => {
+      j(), Z({
+        page: y,
+        activeCategoryId: n,
+        onSuccessCallback: () => {}
+      })
+    }, [n, j, Z, y]);
+    let w = a.useCallback((e, t) => {
+      (0, p.zZ)(b.rMx.APP_DIRECTORY_SEARCH_RESULT_CLICKED, {
+        current_page: f.m_.SEARCH,
+        application_id: e,
+        load_id: L,
+        position: t
+      }), C(e)
+    }, [L, C]);
+    return P === d.M.ERROR ? <div className={x.errorContainer}><g.Z className={x.error} /></div> : <m.Z loading={P === d.M.FETCHING}>{<div className={x.content}>{null == R ? true : R.map((e, t) => {
+          if (e.type === i.s.APPLICATION) {
+            let n = e.data;
+            return (0, r.jsx)(h.Z, {
+              application: n,
+              onSelectApplication: e => w(e, t)
+            }, n.id)
+          }
+          return null
+        })}</div>}{<s.DsT className={x.paginationInput} totalCount={Math.min(A * _.PAGE_SIZE, _.MAX_PAGES * _.PAGE_SIZE)} pageSize={_.PAGE_SIZE} disablePaginationGap={true} hideMaxPage={true} currentPage={y} onPageChange={O} />}</m.Z>
+  }

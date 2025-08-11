@@ -1,26 +1,27 @@
 /** Chunk was on web.js **/
+/** chunk id: 266101, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-var r = n(507604),
-  i = n(621523),
-  o = n(179122),
-  a = n(759319),
+var Chunk507604 = require("./507604.js"),
+  Chunk621523 = require("./621523.js"),
+  Chunk179122 = require("./179122.js"),
+  Chunk759319 = require("./759319.js"),
   s = Error.prototype.toString;
-e.exports = i(function() {
-  if (r) {
+module.exports = Chunk621523(function() {
+  if (Chunk507604) {
     var e = Object.create(Object.defineProperty({}, "name", {
       get: function() {
-        return this === e
+        return this === module
       }
     }));
-    if ("true" !== s.call(e)) return !0
+    if ("true" !== s.call(module)) returntrue
   }
   return "2: 1" !== s.call({
     message: 1,
     name: 2
   }) || "Error" !== s.call({})
 }) ? function() {
-  var e = o(this),
-    t = a(e.name, "Error"),
-    n = a(e.message);
-  return t ? n ? t + ": " + n : t : n
+  var e = Chunk179122(this),
+    t = Chunk759319(module.name, "Error"),
+    n = Chunk759319(module.message);
+  return exports ? require ? exports + ": " + require : exports : require
 } : s

@@ -1,32 +1,33 @@
 /** Chunk was on 75708 **/
-n.d(t, {
+/** chunk id: 930441, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   $Z: () => a,
   M0: () => l,
   Od: () => o,
   vG: () => s
 });
-var i, r = n(388032);
+var i, Chunk388032 = require("./388032.jsx");
 let s = "emails";
 var a = ((i = {}).COMMUNICATION = "communication", i.SOCIAL = "social", i.TIPS = "tips", i.RECOMMENDATIONS_AND_EVENTS = "recommendations_and_events", i.UPDATES_AND_ANNOUNCEMENTS = "updates_and_announcements", i.FAMILY_CENTER_DIGEST = "family_center_digest", i);
 let l = ["tips", "recommendations_and_events", "updates_and_announcements"],
   o = [{
     category: "communication",
-    label: () => r.intl.string(r.t["B75+xc"]),
-    subLabel: () => r.intl.string(r.t.ZHg9TU)
+    label: () => Chunk388032.intl.string(Chunk388032.t["B75+xc"]),
+    subLabel: () => Chunk388032.intl.string(Chunk388032.t.ZHg9TU)
   }, {
     category: "social",
-    label: () => r.intl.string(r.t.sxn7lZ),
-    subLabel: () => r.intl.string(r.t.l7sdzM)
+    label: () => Chunk388032.intl.string(Chunk388032.t.sxn7lZ),
+    subLabel: () => Chunk388032.intl.string(Chunk388032.t.l7sdzM)
   }, {
     category: "updates_and_announcements",
-    label: () => r.intl.string(r.t.EkxXhY),
-    subLabel: () => r.intl.string(r.t["8ba9Q0"])
+    label: () => Chunk388032.intl.string(Chunk388032.t.EkxXhY),
+    subLabel: () => Chunk388032.intl.string(Chunk388032.t["8ba9Q0"])
   }, {
     category: "tips",
-    label: () => r.intl.string(r.t.jNrkrK),
-    subLabel: () => r.intl.string(r.t["FF6/+P"])
+    label: () => Chunk388032.intl.string(Chunk388032.t.jNrkrK),
+    subLabel: () => Chunk388032.intl.string(Chunk388032.t["FF6/+P"])
   }, {
     category: "recommendations_and_events",
-    label: () => r.intl.string(r.t.E8g1l5),
-    subLabel: () => r.intl.string(r.t.X4JMt7)
+    label: () => Chunk388032.intl.string(Chunk388032.t.E8g1l5),
+    subLabel: () => Chunk388032.intl.string(Chunk388032.t.X4JMt7)
   }]

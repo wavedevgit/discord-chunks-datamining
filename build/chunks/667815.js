@@ -1,9 +1,10 @@
 /** Chunk was on 93886 **/
-a.d(t, {
+/** chunk id: 667815, original params: e,t,a (module,exports,require) **/
+require.d(exports, {
   q: () => l,
   v: () => r
 });
-var n = a(570140);
+var Chunk570140 = require("./570140.js");
 let r = (e, t) => {
   n.Z.wait(() => {
     n.Z.dispatch({
@@ -15,7 +16,7 @@ let r = (e, t) => {
 };
 
 function l() {
-  n.Z.dispatch({
+  Chunk570140.Z.dispatch({
     type: "APPLIED_GUILD_BOOST_COUNT_RESET"
   })
 }

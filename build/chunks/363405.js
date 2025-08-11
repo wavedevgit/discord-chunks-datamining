@@ -1,5 +1,6 @@
 /** Chunk was on 75708 **/
-e.exports = {
+/** chunk id: 363405, original params: e,t,n (module,exports,require) **/
+module.exports = {
   body: "body__968a4",
   invoiceTable: "invoiceTable__968a4",
   cancelImage: "cancelImage__968a4",

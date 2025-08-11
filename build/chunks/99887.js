@@ -1,10 +1,11 @@
 /** Chunk was on 3277 **/
-n.d(t, {
+/** chunk id: 99887, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   N4: () => d,
   ZP: () => u,
   n: () => o
 });
-var i = n(799761),
+var Chunk799761 = require("./799761.js"),
   a = {
     1: "१",
     2: "२",
@@ -45,7 +46,7 @@ let u = {
   ordinalNumber: function(e, t) {
     return d(Number(e))
   },
-  era: (0, i.Z)({
+  era: (0, Chunk799761.Z)({
     values: {
       narrow: ["ईसा-पूर्व", "ईस्वी"],
       abbreviated: ["ईसा-पूर्व", "ईस्वी"],
@@ -53,7 +54,7 @@ let u = {
     },
     defaultWidth: "wide"
   }),
-  quarter: (0, i.Z)({
+  quarter: (0, Chunk799761.Z)({
     values: {
       narrow: ["1", "2", "3", "4"],
       abbreviated: ["ति1", "ति2", "ति3", "ति4"],
@@ -64,7 +65,7 @@ let u = {
       return e - 1
     }
   }),
-  month: (0, i.Z)({
+  month: (0, Chunk799761.Z)({
     values: {
       narrow: ["ज", "फ़", "मा", "अ", "मई", "जू", "जु", "अग", "सि", "अक्टू", "न", "दि"],
       abbreviated: ["जन", "फ़र", "मार्च", "अप्रैल", "मई", "जून", "जुल", "अग", "सित", "अक्टू", "नव", "दिस"],
@@ -72,7 +73,7 @@ let u = {
     },
     defaultWidth: "wide"
   }),
-  day: (0, i.Z)({
+  day: (0, Chunk799761.Z)({
     values: {
       narrow: ["र", "सो", "मं", "बु", "गु", "शु", "श"],
       short: ["र", "सो", "मं", "बु", "गु", "शु", "श"],
@@ -81,7 +82,7 @@ let u = {
     },
     defaultWidth: "wide"
   }),
-  dayPeriod: (0, i.Z)({
+  dayPeriod: (0, Chunk799761.Z)({
     values: {
       narrow: {
         am: "पूर्वाह्न",

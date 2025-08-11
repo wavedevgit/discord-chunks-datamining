@@ -1,8 +1,9 @@
 /** Chunk was on 34261 **/
-var i = a(413135).Buffer;
+/** chunk id: 141716, original params: t,e,a (module,exports,require) **/
+var i = require("./413135.js").Buffer;
 
 function r(t, e, a, i) {
-  if ((null == t ? void 0 : t.startsWith("/")) && (t = t.substr(1)), "string" == typeof e || e instanceof Date) {
+  if ((null == t ? true : t.startsWith("/")) && (t = t.substr(1)), "string" == typeof e || e instanceof Date) {
     let r = new Date(e),
       n = r.getUTCFullYear() + String(r.getUTCMonth() + 1).padStart(2, "0") + r.getUTCDate().toString().padStart(2, "0");
     return (t && (n = r.getFullYear() + String(r.getMonth() + 1).padStart(2, "0") + r.getDate().toString().padStart(2, "0")), a) ? n : t ? n += "T" + r.getHours().toString().padStart(2, "0") + r.getMinutes().toString().padStart(2, "0") + r.getSeconds().toString().padStart(2, "0") : n += "T" + r.getUTCHours().toString().padStart(2, "0") + r.getUTCMinutes().toString().padStart(2, "0") + r.getUTCSeconds().toString().padStart(2, "0") + (i ? "" : "Z")
@@ -45,13 +46,13 @@ function d(t) {
 function l(t) {
   return "object" == typeof t && null !== t && "function" == typeof t.toJSDate
 }
-Object.defineProperty(e, "__esModule", {
-  value: !0
-}), e.toDurationString = e.toJSON = e.isRRule = e.isMomentDuration = e.isLuxonDate = e.isDayjs = e.isMomentTZ = e.isMoment = e.toDate = e.checkDate = e.checkEnum = e.checkNameAndMail = e.generateCustomAttributes = e.addOrGetCustomAttributes = e.foldLines = e.escape = e.formatDateTZ = e.formatDate = void 0, e.formatDate = r, e.formatDateTZ = function(t, e, a, i) {
+Object.defineProperty(exports, "__esModule", {
+  value: true
+}), exports.toDurationString = exports.toJSON = exports.isRRule = exports.isMomentDuration = exports.isLuxonDate = exports.isDayjs = exports.isMomentTZ = exports.isMoment = exports.toDate = exports.checkDate = exports.checkEnum = exports.checkNameAndMail = exports.generateCustomAttributes = exports.addOrGetCustomAttributes = exports.foldLines = exports.escape = exports.formatDateTZ = exports.formatDate = true, exports.formatDate = r, exports.formatDateTZ = function(t, e, a, i) {
   let n = "",
-    s = (null == i ? void 0 : i.floating) || !1;
-  return (null == i ? void 0 : i.timezone) && (n = ";TZID=" + i.timezone, s = !0), e + n + ":" + r(t, a, !1, s)
-}, e.escape = n, e.foldLines = function(t) {
+    s = (null == i ? true : i.floating) || false;
+  return (null == i ? true : i.timezone) && (n = ";TZID=" + i.timezone, s = true), e + n + ":" + r(t, a, false, s)
+}, exports.escape = n, exports.foldLines = function(t) {
   return t.split("\r\n").map(function(t) {
     let e = "",
       a = 0;
@@ -63,7 +64,7 @@ Object.defineProperty(e, "__esModule", {
     }
     return e
   }).join("\r\n")
-}, e.addOrGetCustomAttributes = function(t, e, a) {
+}, exports.addOrGetCustomAttributes = function(t, e, a) {
   if (Array.isArray(e)) t.x = e.map(t => {
     if (Array.isArray(t)) return t;
     if ("string" != typeof t.key || "string" != typeof t.value) throw Error("Either key or value is not a string!");
@@ -83,10 +84,10 @@ Object.defineProperty(e, "__esModule", {
     if ("X-" !== e.substr(0, 2)) throw Error("Key has to start with `X-`!");
     t.x.push([e, a])
   }
-}, e.generateCustomAttributes = function(t) {
+}, exports.generateCustomAttributes = function(t) {
   let e = t.x.map(([t, e]) => t.toUpperCase() + ":" + n(e)).join("\r\n");
   return e.length ? e + "\r\n" : ""
-}, e.checkNameAndMail = function(t, e) {
+}, exports.checkNameAndMail = function(t, e) {
   let a = null;
   if ("string" == typeof e) {
     let t = e.match(/^(.+) ?<([^>]+)>$/);
@@ -107,24 +108,24 @@ Object.defineProperty(e, "__esModule", {
   } else throw Error("`" + t + "` isn't formated correctly. See https://sebbo2002.github.io/ical-generator/develop/reference/interfaces/icalorganizer.html");
   if (!a.name) throw Error("`" + t + ".name` is empty!");
   return a
-}, e.checkEnum = function(t, e) {
+}, exports.checkEnum = function(t, e) {
   let a = Object.values(t),
     i = String(e).toUpperCase();
   if (!i || !a.includes(i)) throw Error(`Input must be one of the following: ${a.join(", ")}`);
   return i
-}, e.checkDate = function(t, e) {
+}, exports.checkDate = function(t, e) {
   if (t instanceof Date && isNaN(t.getTime()) || "string" == typeof t && isNaN(new Date(t).getTime())) throw Error(`\`${e}\` has to be a valid date!`);
-  if (t instanceof Date || "string" == typeof t || l(t) && !0 === t.isValid || (s(t) || d(t)) && t.isValid()) return t;
+  if (t instanceof Date || "string" == typeof t || l(t) && true === t.isValid || (s(t) || d(t)) && t.isValid()) return t;
   throw Error(`\`${e}\` has to be a valid date!`)
-}, e.toDate = function(t) {
+}, exports.toDate = function(t) {
   return "string" == typeof t || t instanceof Date ? new Date(t) : l(t) ? t.toJSDate() : t.toDate()
-}, e.isMoment = s, e.isMomentTZ = o, e.isDayjs = d, e.isLuxonDate = l, e.isMomentDuration = function(t) {
+}, exports.isMoment = s, exports.isMomentTZ = o, exports.isDayjs = d, exports.isLuxonDate = l, exports.isMomentDuration = function(t) {
   return null !== t && "object" == typeof t && "function" == typeof t.asSeconds
-}, e.isRRule = function(t) {
+}, exports.isRRule = function(t) {
   return null !== t && "object" == typeof t && "function" == typeof t.between && "function" == typeof t.toString
-}, e.toJSON = function(t) {
+}, exports.toJSON = function(t) {
   return t && "string" != typeof t ? t.toJSON() : t
-}, e.toDurationString = function(t) {
+}, exports.toDurationString = function(t) {
   let e = "";
-  return t < 0 && (e = "-", t *= -1), e += "P", t >= 86400 && (e += Math.floor(t / 86400) + "D", t %= 86400), !t && e.length > 1 || (e += "T", t >= 3600 && (e += Math.floor(t / 3600) + "H", t %= 3600), t >= 60 && (e += Math.floor(t / 60) + "M", t %= 60), t > 0 ? e += t + "S" : e.length <= 2 && (e += "0S")), e
+  return t < 0 && (e = "-", t *= false), e += "P", t >= 86400 && (e += Math.floor(t / 86400) + "D", t %= 86400), !t && e.length > 1 || (e += "T", t >= 3600 && (e += Math.floor(t / 3600) + "H", t %= 3600), t >= 60 && (e += Math.floor(t / 60) + "M", t %= 60), t > 0 ? e += t + "S" : e.length <= 2 && (e += "0S")), e
 }

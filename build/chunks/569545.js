@@ -1,11 +1,12 @@
 /** Chunk was on web.js **/
+/** chunk id: 569545, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   DB: () => i,
   V9: () => a,
   my: () => o
-}), n(35282), n(388685), n(415506);
-var r = n(70722);
+}), require("./35282.js"), require("./388685.js"), require("./415506.js");
+var Chunk70722 = require("./70722.js");
 
 function i(e) {
   return null != e && (e.startsWith(r.lo.GUILD) || e.startsWith(r.lo.CALL))

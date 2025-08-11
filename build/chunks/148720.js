@@ -1,22 +1,23 @@
 /** Chunk was on web.js **/
+/** chunk id: 148720, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   k: () => E
 });
-var r = n(668781),
-  i = n(728345),
-  o = n(835873),
-  a = n(973616),
-  s = n(592125),
-  l = n(430824),
-  c = n(496675),
-  u = n(594174),
-  d = n(979651),
-  f = n(317381),
-  _ = n(638880),
-  p = n(790920),
-  h = n(527805),
-  m = n(388032);
+var Chunk668781 = require("./668781.js"),
+  Chunk728345 = require("./728345.js"),
+  Chunk835873 = require("./835873.js"),
+  Chunk973616 = require("./973616.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk430824 = require("./430824.js"),
+  Chunk496675 = require("./496675.js"),
+  Chunk594174 = require("./594174.js"),
+  Chunk979651 = require("./979651.js"),
+  Chunk317381 = require("./317381.js"),
+  Chunk638880 = require("./638880.js"),
+  Chunk790920 = require("./790920.js"),
+  Chunk527805 = require("./527805.js"),
+  Chunk388032 = require("./388032.js");
 
 function g(e) {
   let {
@@ -34,21 +35,21 @@ function g(e) {
       r.Z.show({
         title: m.intl.string(m.t.PtobXV),
         body: m.intl.string(m.t.UXoQTk),
-        hideActionSheet: !1
+        hideActionSheet: false
       });
       break;
     case h.Fw.ACTIVITY_NOT_SUPPORTED_ON_OS:
       r.Z.show({
         title: m.intl.string(m.t.PtobXV),
         body: m.intl.string(m.t.uGDCc3),
-        hideActionSheet: !1
+        hideActionSheet: false
       });
       break;
     case h.Fw.ACTIVITY_AGE_GATED:
       r.Z.show({
         title: m.intl.string(m.t.PtobXV),
         body: m.intl.string(m.t["4WuFRE"]),
-        hideActionSheet: !1
+        hideActionSheet: false
       });
       break;
     case h.Fw.NO_CHANNEL_CONNECT_PERMISSION:
@@ -58,7 +59,7 @@ function g(e) {
       r.Z.show({
         title: m.intl.string(m.t.PtobXV),
         body: m.intl.string(m.t.FUCQcn),
-        hideActionSheet: !1
+        hideActionSheet: false
       })
   }
 }
@@ -92,7 +93,7 @@ async function E(e) {
   }
   g({
     embeddedActivityJoinability: (0, h.ZP)({
-      userId: null == I ? void 0 : I.id,
+      userId: null == I ? true : I.id,
       application: v,
       channelId: t,
       currentUser: I,

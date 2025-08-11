@@ -1,20 +1,21 @@
 /** Chunk was on web.js **/
+/** chunk id: 87051, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => h
-}), n(388685), n(997841);
-var r = n(544891),
-  i = n(780384),
-  o = n(570140),
-  a = n(149071),
-  s = n(9156),
-  l = n(630388),
-  c = n(621600),
-  u = n(709054),
-  d = n(981631),
-  f = n(468788),
-  _ = n(526761),
-  p = n(388032);
+}), require("./388685.js"), require("./997841.js");
+var Chunk544891 = require("./544891.js"),
+  Chunk780384 = require("./780384.js"),
+  Chunk570140 = require("./570140.js"),
+  Chunk149071 = require("./149071.js"),
+  Chunk9156 = require("./9156.js"),
+  Chunk630388 = require("./630388.js"),
+  Chunk621600 = require("./621600.js"),
+  Chunk709054 = require("./709054.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk468788 = require("./468788.js"),
+  Chunk526761 = require("./526761.js"),
+  Chunk388032 = require("./388032.js");
 let h = {
   open(e) {
     o.Z.dispatch({
@@ -23,7 +24,7 @@ let h = {
     })
   },
   close() {
-    o.Z.dispatch({
+    Chunk570140.Z.dispatch({
       type: "NOTIFICATION_SETTINGS_MODAL_CLOSE"
     })
   },
@@ -145,7 +146,7 @@ let h = {
       body: {
         flags: i
       },
-      rejectWithError: !1
+      rejectWithError: false
     }), await o.Z.dispatch({
       type: "NOTIFICATION_SETTINGS_UPDATE",
       settings: {

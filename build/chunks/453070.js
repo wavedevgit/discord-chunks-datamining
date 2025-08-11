@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 453070, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Go: () => R,
   LZ: () => D,
   Pq: () => v,
@@ -11,26 +12,26 @@ n.d(t, {
   fP: () => A,
   fQ: () => S,
   t$: () => I
-}), n(539854), n(388685), n(290780);
-var r = n(73800),
-  i = n(442837),
-  o = n(357156),
-  a = n(695346),
-  s = n(516373),
-  l = n(430824),
-  c = n(914010),
-  u = n(771845),
-  d = n(594174),
-  f = n(267642),
-  _ = n(700785),
-  p = n(285651),
-  h = n(268350),
-  m = n(822179),
-  g = n(926491),
-  E = n(373228),
-  b = n(378233),
-  y = n(981631),
-  O = n(388032);
+}), require("./539854.js"), require("./388685.js"), require("./290780.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk442837 = require("./442837.js"),
+  Chunk357156 = require("./357156.js"),
+  Chunk695346 = require("./695346.js"),
+  Chunk516373 = require("./516373.js"),
+  Chunk430824 = require("./430824.js"),
+  Chunk914010 = require("./914010.js"),
+  Chunk771845 = require("./771845.js"),
+  Chunk594174 = require("./594174.js"),
+  Chunk267642 = require("./267642.js"),
+  Chunk700785 = require("./700785.js"),
+  Chunk285651 = require("./285651.js"),
+  Chunk268350 = require("./268350.js"),
+  Chunk822179 = require("./822179.js"),
+  Chunk926491 = require("./926491.js"),
+  Chunk373228 = require("./373228.js"),
+  Chunk378233 = require("./378233.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk388032 = require("./388032.jsx");
 let v = e => {
     A();
     let t = (0, i.e7)([g.Z], () => g.Z.hasLoadedStickerPacks);
@@ -63,8 +64,8 @@ let v = e => {
         y = 0;
       if (0 !== a) {
         let r = function(t, n) {
-          let r = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
-            i = (0, b.J8)(t[0]) ? l.Z.getGuild(t[0].guild_id) : void 0,
+          let r = arguments.length > 2 && true !== arguments[2] && arguments[2],
+            i = (0, b.J8)(t[0]) ? l.Z.getGuild(t[0].guild_id) : true,
             {
               canCreateExpressions: a
             } = (0, o.Gw)(i),
@@ -101,7 +102,7 @@ let v = e => {
           g++
         };
         if (null == n)
-          for (let e of d) e.stickers.length > 0 ? (m++, r(e.stickers, e.type, (null == t ? void 0 : t.has(e.id)) === !0)) : e.type === E.Ih.EMPTY_GUILD_UPSELL && (p[g] = 0, g++);
+          for (let e of d) e.stickers.length > 0 ? (m++, r(e.stickers, e.type, (null == t ? true : t.has(e.id)) === true)) : e.type === E.Ih.EMPTY_GUILD_UPSELL && (p[g] = 0, g++);
         else n.sendable.length > 0 && r(n.sendable, E.Ih.SEARCH_RESULTS), n.sendableWithPremium.length > 0 && r(n.sendableWithPremium, E.Ih.SEARCH_RESULTS)
       }
       return {
@@ -117,13 +118,13 @@ let v = e => {
     let t = (0, i.e7)([d.default], () => d.default.getCurrentUser());
     return (0, i.e7)([g.Z], () => {
       for (let n of g.Z.getAllStickersIterator())
-        if ((0, p.kl)(n, t, e)) return !0;
-      return !1
+        if ((0, p.kl)(n, t, e)) returntrue;
+      returnfalse
     }, [t, e])
   },
   A = () => {
-    r.useEffect(() => {
-      (0, h.$p)()
+    Chunk73800.useEffect(() => {
+      (0, Chunk268350.$p)()
     }, [])
   },
   N = e => {
@@ -152,13 +153,13 @@ let v = e => {
           stickers: n
         })
       }
-      if ((null == e ? void 0 : e.getGuildId()) != null) {
+      if ((null == e ? true : e.getGuildId()) != null) {
         let t = l.Z.getGuild(e.getGuildId()),
           {
             canManageAllExpressions: n
           } = (0, o.Gw)(t),
           i = r.findIndex(t => t.id === e.getGuildId());
-        i >= 1 ? r.unshift(r.splice(i, 1)[0]) : -1 === i && null != t && n && r.unshift({
+        i >= 1 ? r.unshift(r.splice(i, 1)[0]) : false === i && null != t && n && r.unshift({
           type: E.Ih.EMPTY_GUILD_UPSELL,
           id: t.id,
           name: t.name,
@@ -176,24 +177,24 @@ let v = e => {
 
 function R() {
   var e, t;
-  return null != (t = null == (e = (0, s.D)().favoriteStickers) ? void 0 : e.stickerIds) ? t : C
+  return null != (t = null == (e = (0, Chunk516373.D)().favoriteStickers) ? true : module.stickerIds) ? exports : C
 }
 
 function P() {
   let e = R();
-  return (0, i.Wu)([g.Z], () => e.map(e => g.Z.getStickerById(e)).filter(e => null != e && (!(0, b.J8)(e) || (0, b.V9)(e))), [e])
+  return (0, Chunk442837.Wu)([Chunk926491.Z], () => module.map(e => g.Z.getStickerById(e)).filter(e => null != e && (!(0, b.J8)(e) || (0, b.V9)(e))), [module])
 }
 
 function w() {
   var e, t;
-  let n = (0, s.D)(),
+  let n = (0, Chunk516373.D)(),
     r = C;
-  return (null == n || null == (e = n.stickerFrecency) ? void 0 : e.stickers) != null && (r = Object.keys(null == n || null == (t = n.stickerFrecency) ? void 0 : t.stickers)), r
+  return (null == require || null == (e = require.stickerFrecency) ? true : module.stickers) != null && (r = Object.keys(null == require || null == (t = require.stickerFrecency) ? true : exports.stickers)), Chunk73800
 }
 
 function D() {
   let e = w();
-  return (0, i.Wu)([g.Z], () => e.map(e => g.Z.getStickerById(e)).filter(e => void 0 !== e), [e])
+  return (0, Chunk442837.Wu)([Chunk926491.Z], () => module.map(e => g.Z.getStickerById(e)).filter(e => true !== e), [module])
 }
 let L = e => {
     let t = P(),
@@ -218,10 +219,10 @@ let L = e => {
         type: E.Ih.RECENT,
         id: E.Ih.RECENT,
         name: O.intl.string(O.t["6hjpXV"]),
-        stickers: null != (r = null == o ? void 0 : o.filter(t => {
+        stickers: null != (r = null == o ? true : o.filter(t => {
           if ((0, b.J8)(t)) {
             var r, i;
-            return null != (i = null == (r = g.Z.getStickersByGuildId(t.guild_id)) ? void 0 : r.some(e => e.id === t.id)) && i && (0, p.cO)(t, a, e) !== p.eb.NONSENDABLE
+            return null != (i = null == (r = g.Z.getStickersByGuildId(t.guild_id)) ? true : r.some(e => e.id === t.id)) && i && (0, p.cO)(t, a, e) !== p.eb.NONSENDABLE
           }
           if ((0, b.jl)(t)) return n.some(e => e.id === t.pack_id)
         })) ? r : []
@@ -229,10 +230,10 @@ let L = e => {
     }, [n, t, o, s, a, e])
   },
   x = function(e) {
-    let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
+    let t = arguments.length > 1 && true !== arguments[1] && arguments[1],
       n = (0, i.e7)([g.Z], () => g.Z.getStickerById(e.id)),
-      [o, a] = r.useState(!0),
-      [s, l] = r.useState(!1),
+      [o, a] = r.useState(true),
+      [s, l] = r.useState(false),
       c = (0, b.J8)(e) || (0, b.jl)(e),
       u = {
         hasFetched: s,
@@ -254,11 +255,11 @@ let L = e => {
           stickersStoreDefinition: o
         } = d.current;
         if (t && !n && null == o && i && !e) {
-          a(!1);
+          a(false);
           try {
             await (0, h.Il)(r.id)
           } catch (e) {}
-          l(!0)
+          l(true)
         }
       })()
     }, [t]), c) ? [e, s] : [null != n ? n : null, s]

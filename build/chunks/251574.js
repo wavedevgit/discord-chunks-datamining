@@ -1,4 +1,5 @@
 /** Chunk was on web.js **/
+/** chunk id: 251574, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 var r = {
   slider: "slider_a562c8",
@@ -17,4 +18,4 @@ var r = {
   defaultValue: "defaultValue_a562c8",
   hasMarks: "hasMarks_a562c8"
 };
-n.r(e.exports = r)
+require.r(module.exports = r)

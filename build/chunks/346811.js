@@ -1,19 +1,20 @@
 /** Chunk was on 25548 **/
-n.d(t, {
+/** chunk id: 346811, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => i
 });
-let i = (0, n(427164).le)({
+let i = (0, require("./427164.js").le)({
   name: "2025-07-nameplate-per-server",
   kind: "user",
   defaultConfig: {
-    enabled: !1
+    enabled: false
   },
   variations: {
     0: {
-      enabled: !1
+      enabled: false
     },
     1: {
-      enabled: !0
+      enabled: true
     }
   }
 })

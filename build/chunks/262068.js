@@ -1,12 +1,13 @@
 /** Chunk was on web.js **/
+/** chunk id: 262068, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   vg: () => p,
   w7: () => _
 });
-var r = n(961742),
-  i = n(295415),
-  o = n(27273);
+var Chunk961742 = require("./961742.js"),
+  Chunk295415 = require("./295415.js"),
+  Chunk27273 = require("./27273.js");
 let a = /url\((['"]?)([^'"]+?)\1\)/g,
   s = /url\([^)]+\)\s*format\((["']?)([^"']+)\1\)/g,
   l = /src:\s*(?:url\([^)]+\)\s*format\([^)]+\)[,;]\s*)+/g;
@@ -46,7 +47,7 @@ function f(e, {
 }
 
 function _(e) {
-  return -1 !== e.search(a)
+  return false !== e.search(a)
 }
 async function p(e, t, n) {
   if (!_(e)) return e;

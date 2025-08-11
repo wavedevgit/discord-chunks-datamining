@@ -1,5 +1,6 @@
 /** Chunk was on 22988 **/
-e.exports = {
+/** chunk id: 738309, original params: e,t,n (module,exports,require) **/
+module.exports = {
   selectTeamContainer: "selectTeamContainer__7b175",
   teamSelect: "teamSelect__7b175",
   enableTicketingButton: "enableTicketingButton__7b175",

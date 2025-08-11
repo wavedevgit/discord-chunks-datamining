@@ -1,6 +1,7 @@
 /** Chunk was on 75347 **/
+/** chunk id: 677095, original params: e,t,n (module,exports,require) **/
 "use strict";
-e.exports = {
+module.exports = {
   container: "container__3167a",
   pageContainer: "pageContainer__3167a",
   nagbar: "nagbar__3167a"

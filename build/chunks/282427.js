@@ -1,5 +1,6 @@
 /** Chunk was on 22988 **/
-e.exports = {
+/** chunk id: 282427, original params: e,t,n (module,exports,require) **/
+module.exports = {
   periodColumn: "periodColumn__5d2ba",
   amountColumn: "amountColumn__5d2ba",
   statusColumn: "statusColumn__5d2ba",

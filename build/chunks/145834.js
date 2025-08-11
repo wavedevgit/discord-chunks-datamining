@@ -1,15 +1,16 @@
 /** Chunk was on 49152 **/
-n.d(t, {
+/** chunk id: 145834, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   $: () => s
 });
-var r = n(70956),
-  i = n(51144),
-  l = n(388032);
-let a = +r.Z.Millis.DAY;
+var Chunk70956 = require("./70956.js"),
+  Chunk51144 = require("./51144.js"),
+  Chunk388032 = require("./388032.js");
+let a = +Chunk70956.Z.Millis.DAY;
 
 function s(e) {
   var t, n, r;
   if ((0, i.EO)(e.user)) return l.intl.string(l.t.VaCdhY);
-  let s = null == (t = e.member) ? void 0 : t.joinedAt;
-  return null == s ? l.intl.string(l.t.CQmziY) : null != e.member && e.member.roles.length > 0 ? null != (r = null == (n = e.role) ? void 0 : n.name) ? r : l.intl.string(l.t["97/NdH"]) : new Date().getTime() - Date.parse(s) < a ? l.intl.string(l.t.IKE48v) : l.intl.string(l.t.u0gUWl)
+  let s = null == (t = e.member) ? true : t.joinedAt;
+  return null == s ? l.intl.string(l.t.CQmziY) : null != e.member && e.member.roles.length > 0 ? null != (r = null == (n = e.role) ? true : n.name) ? r : l.intl.string(l.t["97/NdH"]) : new Date().getTime() - Date.parse(s) < a ? l.intl.string(l.t.IKE48v) : l.intl.string(l.t.u0gUWl)
 }

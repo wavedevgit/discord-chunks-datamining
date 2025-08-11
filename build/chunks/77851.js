@@ -1,5 +1,6 @@
 /** Chunk was on 95626 **/
-e.exports = {
+/** chunk id: 77851, original params: e,n,t (module,exports,require) **/
+module.exports = {
   segmentedControlsContainer: "segmentedControlsContainer__9c019",
   presetSeparator: "presetSeparator__9c019",
   segmentedControl: "segmentedControl__9c019",

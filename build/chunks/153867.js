@@ -1,22 +1,23 @@
 /** Chunk was on web.js **/
+/** chunk id: 153867, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   V1: () => h,
   ZI: () => E,
   ZP: () => b
 });
-var r = n(524437),
-  i = n(381499),
-  o = n(780384),
-  a = n(570140),
-  s = n(514361),
-  l = n(238514),
-  c = n(781391),
-  u = n(210887),
-  d = n(695346),
-  f = n(675478),
-  _ = n(981631),
-  p = n(874893);
+var Chunk524437 = require("./524437.js"),
+  Chunk381499 = require("./381499.js"),
+  Chunk780384 = require("./780384.js"),
+  Chunk570140 = require("./570140.js"),
+  Chunk514361 = require("./514361.js"),
+  Chunk238514 = require("./238514.js"),
+  Chunk781391 = require("./781391.js"),
+  Chunk210887 = require("./210887.js"),
+  Chunk695346 = require("./695346.js"),
+  Chunk675478 = require("./675478.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk874893 = require("./874893.js");
 
 function h(e) {
   return f.hW.updateAsync("guildFolders", t => {
@@ -54,13 +55,13 @@ function g(e) {
   return {
     backgroundGradientPresetId: null != e.backgroundGradientPresetId ? i.yC.create({
       value: e.backgroundGradientPresetId
-    }) : void 0,
+    }) : true,
     customUserThemeSettings: null != e.customUserThemeSettings ? {
       colors: e.customUserThemeSettings.colors,
       gradientColorStops: e.customUserThemeSettings.gradientColorStops,
       gradientAngle: e.customUserThemeSettings.gradientAngle,
       baseMix: e.customUserThemeSettings.baseMix
-    } : void 0
+    } : true
   }
 }
 
@@ -70,7 +71,7 @@ function E(e) {
     customUserThemeSettings: n,
     theme: r,
     useSystemTheme: i
-  } = e, s = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : f.fy.INFREQUENT_USER_ACTION, u = "system" === r ? p.KW.ON : p.KW.OFF, d = null != i ? i : u;
+  } = e, s = arguments.length > 1 && true !== arguments[1] ? arguments[1] : f.fy.INFREQUENT_USER_ACTION, u = "system" === r ? p.KW.ON : p.KW.OFF, d = null != i ? i : u;
   if (a.Z.dispatch({
       type: "UNSYNCED_USER_SETTINGS_UPDATE",
       settings: {
@@ -87,7 +88,7 @@ function E(e) {
               backgroundGradientPresetId: t,
               customUserThemeSettings: n
             },
-            theme: "system" === r ? void 0 : r
+            theme: "system" === r ? true : r
           }
         }
       }
@@ -140,7 +141,7 @@ let b = {
           settings: e ? {} : {
             theme: u.Z.theme,
             clientThemeSettings: {
-              backgroundGradientPresetId: null == (t = s.Z.gradientPreset) ? void 0 : t.id
+              backgroundGradientPresetId: null == (t = s.Z.gradientPreset) ? true : t.id
             },
             developerMode: d.Sb.getSetting()
           }
@@ -155,10 +156,10 @@ let b = {
     })
   },
   clearSettingsOverride() {
-    for (var e = arguments.length, t = Array(e), n = 0; n < e; n++) t[n] = arguments[n];
-    a.Z.dispatch({
+    for (var e = arguments.length, t = Array(module), n = 0; require < module; require++) exports[require] = arguments[require];
+    Chunk570140.Z.dispatch({
       type: "USER_SETTINGS_OVERRIDE_CLEAR",
-      settings: t
+      settings: exports
     })
   },
   updateLocale: e => f.hW.updateAsync("localization", t => {

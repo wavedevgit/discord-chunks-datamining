@@ -1,5 +1,6 @@
 /** Chunk was on 75708 **/
-e.exports = {
+/** chunk id: 874773, original params: e,t,n (module,exports,require) **/
+module.exports = {
   jumpingWumpusContainer: "jumpingWumpusContainer_dc510c",
   jumpingWumpus: "jumpingWumpus_dc510c",
   bolt: "bolt_dc510c",

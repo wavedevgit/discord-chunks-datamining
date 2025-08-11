@@ -1,12 +1,13 @@
 /** Chunk was on web.js **/
-e.exports = function(e) {
+/** chunk id: 661440, original params: e (module,exports,re quire) **/
+module.exports = function(e) {
   let t = "primitive rsc_template",
     n = "group clone ms master location colocation order fencing_topology rsc_ticket acl_target acl_group user role tag xml",
     r = "property rsc_defaults op_defaults";
   return {
     name: "crmsh",
     aliases: ["crm", "pcmk"],
-    case_insensitive: !0,
+    case_insensitive: true,
     keywords: {
       keyword: "params meta operations op rule attributes utilization read write deny defined not_defined in_range date spec in ref reference attribute type xpath version and or lt gt tag lte gte eq ne \\ number string",
       literal: "Master Started Slave Stopped start promote demote stop monitor true false"

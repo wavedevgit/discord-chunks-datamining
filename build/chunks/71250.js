@@ -1,5 +1,6 @@
 /** Chunk was on 28382 **/
-e.exports = {
+/** chunk id: 71250, original params: e,t,n (module,exports,require) **/
+module.exports = {
   center: "center__47458",
   textCenter: "textCenter__47458",
   button: "button__47458",

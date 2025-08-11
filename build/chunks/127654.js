@@ -1,35 +1,36 @@
 /** Chunk was on web.js **/
+/** chunk id: 127654, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   G: () => T,
   d: () => S
-}), n(539854), n(388685), n(415506);
-var r = n(475179),
-  i = n(904245),
-  o = n(166459),
-  a = n(531643),
-  s = n(141795),
-  l = n(476326),
-  c = n(367907),
-  u = n(358221),
-  d = n(58873),
-  f = n(117530),
-  _ = n(594174),
-  p = n(626135),
-  h = n(403182),
-  m = n(74538),
-  g = n(979956),
-  E = n(981631),
-  b = n(959517),
-  y = n(474936),
-  O = n(388032);
+}), require("./539854.js"), require("./388685.js"), require("./415506.js");
+var Chunk475179 = require("./475179.js"),
+  Chunk904245 = require("./904245.js"),
+  Chunk166459 = require("./166459.js"),
+  Chunk531643 = require("./531643.js"),
+  Chunk141795 = require("./141795.js"),
+  Chunk476326 = require("./476326.js"),
+  Chunk367907 = require("./367907.js"),
+  Chunk358221 = require("./358221.js"),
+  Chunk58873 = require("./58873.js"),
+  Chunk117530 = require("./117530.js"),
+  Chunk594174 = require("./594174.js"),
+  Chunk626135 = require("./626135.js"),
+  Chunk403182 = require("./403182.js"),
+  Chunk74538 = require("./74538.js"),
+  Chunk979956 = require("./979956.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk959517 = require("./959517.js"),
+  Chunk474936 = require("./474936.js"),
+  Chunk388032 = require("./388032.js");
 
 function v(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -84,11 +85,11 @@ function T(e, t) {
 function S(e, t, n) {
   let {
     filesMetadata: c,
-    requireConfirm: _ = !0,
-    showLargeMessageDialog: h = !1,
-    isThumbnail: m = !1,
+    requireConfirm: _ = true,
+    showLargeMessageDialog: h = false,
+    isThumbnail: m = false,
     origin: b
-  } = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : {};
+  } = arguments.length > 3 && true !== arguments[3] ? arguments[3] : {};
   if (e.length < 1) return;
   if (null != c && c.length !== e.length) throw Error("Unexpected mismatch between files and file metadata");
   let y = t.getGuildId();
@@ -105,13 +106,13 @@ function S(e, t, n) {
     });
     return
   }
-  if (t.type !== E.d4z.GUILD_VOICE && t.type !== E.d4z.GUILD_STAGE_VOICE || u.Z.getChatOpen(t.id) || r.Z.updateChatOpen(t.id, !0), _) {
+  if (t.type !== E.d4z.GUILD_VOICE && t.type !== E.d4z.GUILD_STAGE_VOICE || u.Z.getChatOpen(t.id) || r.Z.updateChatOpen(t.id, true), _) {
     let r = Array.from(e).map((e, t) => I({
       file: e,
       platform: l.ow.WEB,
       isThumbnail: m,
       origin: b
-    }, null == c ? void 0 : c[t]));
+    }, null == c ? true : c[t]));
     o.Z.addFiles({
       files: r,
       channelId: t.id,
@@ -130,11 +131,11 @@ function S(e, t, n) {
     });
     i.Z.sendMessage(t.id, {
       content: "",
-      tts: !1,
+      tts: false,
       invalidEmojis: [],
       validNonShortcutEmojis: []
-    }, void 0, {
-      eagerDispatch: !1,
+    }, true, {
+      eagerDispatch: false,
       attachmentsToUpload: n,
       onAttachmentUploadError: (e, n, r) => {
         (0, d.A)({

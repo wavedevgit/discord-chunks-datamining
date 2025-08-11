@@ -1,34 +1,35 @@
 /** Chunk was on web.js **/
+/** chunk id: 49012, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   q: () => R,
   r: () => C
 });
-var r = n(159635),
-  i = n.n(r),
-  o = n(668781),
-  a = n(45986),
-  s = n(782568),
-  l = n(704133),
-  c = n(139674),
-  u = n(702321),
-  d = n(900460),
-  f = n(627714),
-  _ = n(364640),
-  p = n(772096),
-  h = n(982806),
-  m = n(540709),
-  g = n(881706),
-  E = n(592125),
-  b = n(430824),
-  y = n(20303),
-  O = n(902676),
-  v = n(375954),
-  I = n(699516),
-  T = n(944486),
-  S = n(626135),
-  A = n(981631),
-  N = n(388032);
+var Chunk159635 = require("./159635.js"),
+  i = require.n(Chunk159635),
+  Chunk668781 = require("./668781.js"),
+  Chunk45986 = require("./45986.js"),
+  Chunk782568 = require("./782568.js"),
+  Chunk704133 = require("./704133.js"),
+  Chunk139674 = require("./139674.js"),
+  Chunk702321 = require("./702321.js"),
+  Chunk900460 = require("./900460.js"),
+  Chunk627714 = require("./627714.js"),
+  Chunk364640 = require("./364640.js"),
+  Chunk772096 = require("./772096.js"),
+  Chunk982806 = require("./982806.js"),
+  Chunk540709 = require("./540709.js"),
+  Chunk881706 = require("./881706.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk430824 = require("./430824.js"),
+  Chunk20303 = require("./20303.js"),
+  Chunk902676 = require("./902676.js"),
+  Chunk375954 = require("./375954.js"),
+  Chunk699516 = require("./699516.js"),
+  Chunk944486 = require("./944486.js"),
+  Chunk626135 = require("./626135.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk388032 = require("./388032.js");
 
 function C(e, t) {
   var n;
@@ -37,8 +38,8 @@ function C(e, t) {
 }
 
 function R(e, t) {
-  let r = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : [],
-    I = arguments.length > 3 ? arguments[3] : void 0,
+  let r = arguments.length > 2 && true !== arguments[2] ? arguments[2] : [],
+    I = arguments.length > 3 ? arguments[3] : true,
     {
       trusted: T,
       onClick: C,
@@ -55,7 +56,7 @@ function R(e, t) {
       body: N.intl.format(N.t["9rqRws"], {
         url: e.href
       }),
-      isDismissable: !0,
+      isDismissable: true,
       contextKey: I
     });
     return
@@ -67,7 +68,7 @@ function R(e, t) {
     M = encodeURI(x)
   }
   let k = null,
-    j = !1,
+    j = false,
     U = D,
     G = L,
     B = null;
@@ -75,17 +76,17 @@ function R(e, t) {
     var Z, F, V;
     let e = v.Z.getMessage(L, D),
       t = E.Z.getBasicChannel(L);
-    k = null != (V = null == t ? void 0 : t.guild_id) ? V : null;
+    k = null != (V = null == t ? true : t.guild_id) ? V : null;
     let n = b.Z.getGuild(k),
-      r = (null == e || null == (Z = e.messageReference) ? void 0 : Z.guild_id) != null && (null == e ? void 0 : e.webhookId) != null && (null == e ? void 0 : e.hasFlag(A.iLy.IS_CROSSPOST)) && null != k;
-    r && (null == e || null == (F = e.messageReference) ? void 0 : F.guild_id) != null ? (U = e.messageReference.message_id, G = e.messageReference.channel_id, B = e.messageReference.guild_id) : B = k;
-    let i = (null == t ? void 0 : t.type) === A.d4z.GUILD_ANNOUNCEMENT && (null == n ? void 0 : n.features.has(A.oNc.COMMUNITY)) === !0,
-      o = (null == e ? void 0 : e.hasFlag(A.iLy.EPHEMERAL)) === !0;
+      r = (null == e || null == (Z = e.messageReference) ? true : Z.guild_id) != null && (null == e ? true : e.webhookId) != null && (null == e ? true : e.hasFlag(A.iLy.IS_CROSSPOST)) && null != k;
+    r && (null == e || null == (F = e.messageReference) ? true : F.guild_id) != null ? (U = e.messageReference.message_id, G = e.messageReference.channel_id, B = e.messageReference.guild_id) : B = k;
+    let i = (null == t ? true : t.type) === A.d4z.GUILD_ANNOUNCEMENT && (null == n ? true : n.features.has(A.oNc.COMMUNITY)) === true,
+      o = (null == e ? true : e.hasFlag(A.iLy.EPHEMERAL)) === true;
     j = null != e && !o && (r || i)
   }
   if (null != L) {
     let e = E.Z.getChannel(L),
-      t = b.Z.getGuild(null == e ? void 0 : e.getGuildId());
+      t = b.Z.getGuild(null == e ? true : e.getGuildId());
     null != e && null != t && t.features.has(A.oNc.DISCOVERABLE) && S.default.track(A.rMx.URL_CLICKED, {
       url_domain: (0, O.F)(M),
       guild_id: t.id,
@@ -101,7 +102,7 @@ function R(e, t) {
     let {
       default: e
     } = n(315263), i = e(M, {
-      skipExtensionCheck: void 0,
+      skipExtensionCheck: true,
       analyticsLocations: r
     });
     if (null != i && i(t)) return
@@ -144,7 +145,7 @@ function R(e, t) {
     trustUrl: a.u,
     onConfirm: H,
     onCancel: Y,
-    isProtocol: !0,
+    isProtocol: true,
     contextKey: I
   });
   else {
@@ -155,7 +156,7 @@ function R(e, t) {
       trustUrl: a.o,
       onConfirm: H,
       onCancel: Y,
-      isProtocol: !1,
+      isProtocol: false,
       contextKey: I
     })
   }

@@ -1,13 +1,14 @@
 /** Chunk was on web.js **/
+/** chunk id: 859921, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => o
 });
-var r = n(972959);
+var Chunk972959 = require("./972959.js");
 let i = Object.freeze({
     selectedTab: null,
-    isSearchVisible: !1,
+    isSearchVisible: false,
     entrypoint: null,
-    searchBarState: n(49898).GlobalDiscoverySearchBarState.DEFAULT
+    searchBarState: require("./49898.js").GlobalDiscoverySearchBarState.DEFAULT
   }),
-  o = (0, r.H)(() => i)
+  o = (0, Chunk972959.H)(() => i)

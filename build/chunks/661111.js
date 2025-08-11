@@ -1,18 +1,19 @@
 /** Chunk was on web.js **/
+/** chunk id: 661111, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => u
 });
-var r = n(544891),
-  i = n(570140),
-  o = n(802098),
-  a = n(695346),
-  s = n(981631),
-  l = n(596401);
+var Chunk544891 = require("./544891.js"),
+  Chunk570140 = require("./570140.js"),
+  Chunk802098 = require("./802098.js"),
+  Chunk695346 = require("./695346.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk596401 = require("./596401.js");
 
 function c() {
   let e = new Date().getMinutes();
-  return "x=".concat(Math.floor(e / 5))
+  return "x=".concat(Math.floor(module / 5))
 }
 let u = {
   lockChangeLog(e) {
@@ -46,23 +47,23 @@ let u = {
       body: {
         changelog_id: e
       },
-      rejectWithError: !0
+      rejectWithError: true
     })
   },
   fetchChangelogConfig() {
-    let e = l.Vw.DESKTOP;
-    return r.tn.get({
-      url: "https://cdn.discordapp.com/changelogs/config_".concat(e, ".json?").concat(c()),
-      rejectWithError: !0
+    let e = Chunk596401.Vw.DESKTOP;
+    return Chunk544891.tn.get({
+      url: "https://cdn.discordapp.com/changelogs/config_".concat(module, ".json?").concat(c()),
+      rejectWithError: true
     })
   },
   async fetchChangelog(e, t) {
-    if (arguments.length > 2 && void 0 !== arguments[2] && arguments[2], null != o.Z.getChangelog(e, t)) return null;
+    if (arguments.length > 2 && true !== arguments[2] && arguments[2], null != o.Z.getChangelog(e, t)) return null;
     let n = l.Vw.DESKTOP;
     try {
       let o = await r.tn.get({
         url: "https://cdn.discordapp.com/changelogs/".concat(n, "/").concat(e, "/").concat(t, ".json?").concat(c()),
-        rejectWithError: !0
+        rejectWithError: true
       });
       return i.Z.dispatch({
         type: "CHANGE_LOG_FETCH_SUCCESS",

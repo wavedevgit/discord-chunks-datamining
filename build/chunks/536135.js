@@ -1,5 +1,6 @@
 /** Chunk was on 75708 **/
-e.exports = {
+/** chunk id: 536135, original params: e,t,n (module,exports,require) **/
+module.exports = {
   container: "container__94da4",
   settingsHeroNoBackground: "settingsHeroNoBackground__94da4",
   noTopPaddingOverride: "noTopPaddingOverride__94da4",

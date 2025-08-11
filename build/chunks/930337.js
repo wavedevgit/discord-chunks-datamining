@@ -1,2 +1,3 @@
 /** Chunk was on 18008 **/
-c.exports = JSON.parse('{"klSpfn":"설정 편집하기","NzUuLC":["메시지 +",[1,"count"]," ",[6,"count",{"one":["개"],"other":["개"]},0,"cardinal"]],"O+racX":"알림이 없어요.","dcpdhI":"메시지를 선택하여 이동하세요.","VAK+h4":"알림 센터에 잘 오셨어요!"}')
+/** chunk id: 930337, original params: c (module,exports,require) **/
+module.exports = JSON.parse('{"klSpfn":"설정 편집하기","NzUuLC":["메시지 +",[1,"count"]," ",[6,"count",{"one":["개"],"other":["개"]},0,"cardinal"]],"O+racX":"알림이 없어요.","dcpdhI":"메시지를 선택하여 이동하세요.","VAK+h4":"알림 센터에 잘 오셨어요!"}')

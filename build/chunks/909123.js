@@ -1,41 +1,42 @@
 /** Chunk was on web.js **/
+/** chunk id: 909123, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => g
-}), n(388685);
-var r = n(179360),
-  i = n(147913),
-  o = n(430824),
-  a = n(496675),
-  s = n(914010),
-  l = n(713081),
-  c = n(905128),
-  u = n(901005),
-  d = n(158638),
-  f = n(639777),
-  _ = n(981631),
-  p = n(647086);
+}), require("./388685.js");
+var Chunk179360 = require("./179360.js"),
+  Chunk147913 = require("./147913.js"),
+  Chunk430824 = require("./430824.js"),
+  Chunk496675 = require("./496675.js"),
+  Chunk914010 = require("./914010.js"),
+  Chunk713081 = require("./713081.js"),
+  Chunk905128 = require("./905128.js"),
+  Chunk901005 = require("./901005.js"),
+  Chunk158638 = require("./158638.js"),
+  Chunk639777 = require("./639777.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk647086 = require("./647086.js");
 
 function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
-class m extends i.Z {
+class m extends Chunk147913.Z {
   handleSelectedGuildChange() {
-    let e = s.Z.getGuildId();
-    if (null == e || e === p._ || e === _.I_8) return;
-    let t = o.Z.getGuild(e);
-    null != t && (d.sT.trackExposure({
-      guildId: t.id,
+    let e = Chunk914010.Z.getGuildId();
+    if (null == module || module === Chunk647086._ || module === Chunk981631.I_8) return;
+    let t = Chunk430824.Z.getGuild(module);
+    null != exports && (Chunk158638.sT.trackExposure({
+      guildId: exports.id,
       location: "GuildPowerupsManager"
-    }), u.G.trackExposure({
-      guildId: t.id,
+    }), Chunk901005.G.trackExposure({
+      guildId: exports.id,
       location: "GuildPowerupsManager"
-    }), (0, f.D)(a.Z, t) && (c.Z.shouldFetchCatalogForGuild(e) && (0, l.Sn)(e), c.Z.shouldFetchPowerupsForGuild(e) && (0, l.Fm)(e)))
+    }), (0, Chunk639777.D)(Chunk496675.Z, exports) && (Chunk905128.Z.shouldFetchCatalogForGuild(module) && (0, Chunk713081.Sn)(module), Chunk905128.Z.shouldFetchPowerupsForGuild(module) && (0, Chunk713081.Fm)(module)))
   }
   handleEntitlementUpdate(e) {
     let {
@@ -50,7 +51,7 @@ class m extends i.Z {
     this.refreshGuildPowerups(t)
   }
   refreshGuildPowerups(e) {
-    !0 === (0, f.D)(a.Z, o.Z.getGuild(e)) && ((0, l.Fm)(e), (0, r.C0)(e))
+    true === (0, f.D)(a.Z, o.Z.getGuild(e)) && ((0, l.Fm)(e), (0, r.C0)(e))
   }
   constructor(...e) {
     super(...e), h(this, "stores", new Map().set(s.Z, this.handleSelectedGuildChange)), h(this, "actions", {

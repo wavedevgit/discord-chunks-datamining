@@ -1,5 +1,6 @@
 /** Chunk was on web.js **/
-e.exports = function(e) {
+/** chunk id: 311449, original params: e (module,exports,re quire) **/
+module.exports = function(e) {
   let t = {
       className: "variable",
       begin: /\$[\w\d#@][\w\d_]*/,

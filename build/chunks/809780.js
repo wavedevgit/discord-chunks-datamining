@@ -1,53 +1,54 @@
 /** Chunk was on 34779 **/
-n.d(t, {
+/** chunk id: 809780, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   As: () => H,
   ZP: () => $,
   hC: () => W,
   jd: () => z
-}), n(539854), n(388685);
-var r, i, l = n(73800),
-  o = n(836560),
-  s = n(512722),
-  a = n.n(s),
-  c = n(392711),
-  u = n.n(c),
-  d = n(570140),
-  h = n(904245),
-  p = n(45114),
-  f = n(607070),
-  g = n(81643),
-  m = n(622822),
-  b = n(853856),
-  O = n(181945),
-  _ = n(220444),
-  y = n(601070),
-  C = n(344185),
-  v = n(569471),
-  j = n(723170),
-  E = n(675478),
-  S = n(581883),
-  x = n(131704),
-  I = n(592125),
-  P = n(984933),
-  N = n(731290),
-  w = n(430824),
-  Z = n(375954),
-  T = n(496675),
-  A = n(306680),
-  R = n(771845),
-  D = n(9156),
-  L = n(70956),
-  M = n(823379),
-  k = n(709054),
-  U = n(981631),
-  G = n(124368);
+}), require("./539854.js"), require("./388685.js");
+var r, i, Chunk73800 = require("./73800.js"),
+  Chunk836560 = require("./836560.js"),
+  Chunk512722 = require("./512722.js"),
+  a = require.n(Chunk512722),
+  Chunk392711 = require("./392711.js"),
+  u = require.n(Chunk392711),
+  Chunk570140 = require("./570140.js"),
+  Chunk904245 = require("./904245.js"),
+  Chunk45114 = require("./45114.js"),
+  Chunk607070 = require("./607070.js"),
+  Chunk81643 = require("./81643.js"),
+  Chunk622822 = require("./622822.js"),
+  Chunk853856 = require("./853856.js"),
+  Chunk181945 = require("./181945.js"),
+  Chunk220444 = require("./220444.js"),
+  Chunk601070 = require("./601070.js"),
+  Chunk344185 = require("./344185.js"),
+  Chunk569471 = require("./569471.js"),
+  Chunk723170 = require("./723170.js"),
+  Chunk675478 = require("./675478.js"),
+  Chunk581883 = require("./581883.js"),
+  Chunk131704 = require("./131704.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk984933 = require("./984933.js"),
+  Chunk731290 = require("./731290.js"),
+  Chunk430824 = require("./430824.js"),
+  Chunk375954 = require("./375954.js"),
+  Chunk496675 = require("./496675.js"),
+  Chunk306680 = require("./306680.js"),
+  Chunk771845 = require("./771845.js"),
+  Chunk9156 = require("./9156.js"),
+  Chunk70956 = require("./70956.js"),
+  Chunk823379 = require("./823379.js"),
+  Chunk709054 = require("./709054.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk124368 = require("./124368.js");
 
 function B(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -79,39 +80,39 @@ function F(e, t) {
 var H = ((r = {})[r.Favorite = 0] = "Favorite", r[r.PrivateChannel = 1] = "PrivateChannel", r[r.HighImportanceMentioned = 2] = "HighImportanceMentioned", r[r.LowImportanceMentioned = 3] = "LowImportanceMentioned", r[r.AllMessagesNotifications = 4] = "AllMessagesNotifications", r[r.GuildChannel = 5] = "GuildChannel", r[r.OldChannel = 6] = "OldChannel", r[r.NoNotifications = 7] = "NoNotifications", r[r.ReallyOldChannel = 8] = "ReallyOldChannel", r),
   z = ((i = {}).Loading = "loading", i.Loaded = "loaded", i.Done = "done", i);
 let W = 25;
-class K extends o.EventEmitter {
+class K extends Chunk836560.EventEmitter {
   loadMore() {
     let {
       loadState: e,
       channels: t
     } = this.state;
-    if ("loaded" !== e) return;
-    let n = !1,
-      r = t.map(e => {
+    if ("loaded" !== module) return;
+    let n = false,
+      r = exports.map(e => {
         if (e.isFullyLoaded || e.deleted || n) return e;
         if (e.collapsed)
           if (!e.hasLoadedAnything) return F(V({}, e), {
-            hasLoadedAnything: !0
+            hasLoadedAnything: true
           });
           else return e;
-        return (e = this.populateInitialStateFromStore(e)).isFullyLoaded || (a()("nsfw" !== e.type, "this channel should already be loaded"), "messages" === e.type && this.loadChannelMessages(e) && (n = !0)), e
+        return (e = this.populateInitialStateFromStore(e)).isFullyLoaded || (a()("nsfw" !== e.type, "this channel should already be loaded"), "messages" === e.type && this.loadChannelMessages(e) && (n = true)), e
       });
-    (!n || r.some((e, n) => e !== t[n])) && this.setState({
+    (!require || r.some((e, n) => e !== t[n])) && this.setState({
       channels: r,
-      loadState: n ? this.state.loadState : "done"
+      loadState: require ? this.state.loadState : "done"
     })
   }
   populateInitialStateFromStore(e) {
-    if ("messages" === e.type) return Y(e, !1);
+    if ("messages" === e.type) return Y(e, false);
     if ("nsfw" === e.type) return F(V({}, e), {
-      isFullyLoaded: !0,
-      hasLoadedAnything: !0
+      isFullyLoaded: true,
+      hasLoadedAnything: true
     });
     if ("forum" === e.type) {
       let t = C.Z.hasLoaded(e.guildId);
       return F(V({}, e), {
         isFullyLoaded: t,
-        hasLoadedAnything: !0
+        hasLoadedAnything: true
       })
     }(0, M.vE)(e)
   }
@@ -127,20 +128,20 @@ class K extends o.EventEmitter {
       limit: U.AQB,
       jump: {
         messageId: e.oldestReadMessageId,
-        flash: !0
+        flash: true
       }
     });
-    return null != t && !1 !== t && (this.setState({
+    return null != t && false !== t && (this.setState({
       loadState: "loading"
     }), t.then(t => {
       this.setState({
         loadState: "loaded",
         channels: this.updateChannel(e.channelId, e => {
           a()("messages" === e.type, "channel cannot change type");
-          let n = Y(e, !0);
+          let n = Y(e, true);
           return (0 === n.messages.length || n.messages.length === e.messages.length) && (n = F(V({}, n), {
-            hasLoadedAnything: !0,
-            isFullyLoaded: !0,
+            hasLoadedAnything: true,
+            isFullyLoaded: true,
             hasError: !t
           })), n
         })
@@ -150,15 +151,15 @@ class K extends o.EventEmitter {
         loadState: "loaded",
         channels: this.updateChannel(e.channelId, e => {
           var t;
-          return a()("messages" === e.type, "channel cannot change type"), F(V({}, Y(e, !0)), {
-            isFullyLoaded: !0,
-            hasError: !0,
-            hasLoadedAnything: !0,
-            newestUnreadMessageId: null == (t = e.messages[e.messages.length - 1]) ? void 0 : t.id
+          return a()("messages" === e.type, "channel cannot change type"), F(V({}, Y(e, true)), {
+            isFullyLoaded: true,
+            hasError: true,
+            hasLoadedAnything: true,
+            newestUnreadMessageId: null == (t = e.messages[e.messages.length - 1]) ? true : t.id
           })
         })
       })
-    }), !0)
+    }), true)
   }
   updateChannel(e, t) {
     return this.state.channels.map(n => n.channelId === e ? t(n) : n)
@@ -171,13 +172,13 @@ class K extends o.EventEmitter {
       }
   }
   constructor(e, t) {
-    super(), B(this, "state", void 0), B(this, "scrollerRef", void 0), B(this, "undoStack", void 0), B(this, "maybeLoadMore", void 0), B(this, "reloadMessages", void 0), B(this, "getNumUnreadChannels", void 0), B(this, "markChannelRead", void 0), B(this, "undoMarkChannelRead", void 0), B(this, "markGuildRead", void 0), B(this, "deleteChannel", void 0), B(this, "markAllRead", void 0), B(this, "toggle", void 0), B(this, "handleUserGuildSettingsStoreChange", void 0), B(this, "handleJoinedThreadsStoreChange", void 0), B(this, "handleActiveThreadsStoreChange", void 0), this.state = e, this.scrollerRef = t, this.undoStack = [], this.maybeLoadMore = () => {
+    super(), B(this, "state", true), B(this, "scrollerRef", true), B(this, "undoStack", true), B(this, "maybeLoadMore", true), B(this, "reloadMessages", true), B(this, "getNumUnreadChannels", true), B(this, "markChannelRead", true), B(this, "undoMarkChannelRead", true), B(this, "markGuildRead", true), B(this, "deleteChannel", true), B(this, "markAllRead", true), B(this, "toggle", true), B(this, "handleUserGuildSettingsStoreChange", true), B(this, "handleJoinedThreadsStoreChange", true), B(this, "handleActiveThreadsStoreChange", true), this.state = e, this.scrollerRef = t, this.undoStack = [], this.maybeLoadMore = () => {
       var e;
-      let t = null == (e = this.scrollerRef.current) ? void 0 : e.getScrollerState();
+      let t = null == (e = this.scrollerRef.current) ? true : e.getScrollerState();
       null != t && t.scrollHeight - t.scrollTop - t.offsetHeight < 2e3 && this.loadMore()
     }, this.reloadMessages = () => {
       this.setState({
-        channels: this.state.channels.map(e => "messages" === e.type && e.hasLoadedAnything ? Y(e, !1, !0) : e)
+        channels: this.state.channels.map(e => "messages" === e.type && e.hasLoadedAnything ? Y(e, false, true) : e)
       })
     }, this.getNumUnreadChannels = () => this.state.channels.length, this.markChannelRead = e => {
       let {
@@ -188,12 +189,12 @@ class K extends o.EventEmitter {
         section: U.jXE.INBOX,
         object: U.qAy.ACK_INBOX_NEWEST_UNREAD_MESSAGE,
         objectType: U.Qqv.ACK_AUTOMATIC
-      }, !0, void 0, n));
+      }, true, true, n));
       let r = this.state.channels.find(e => e.channelId === t);
       if (null != r && this.undoStack.push(r), 1 === this.state.channels.length) return void this.deleteChannel(t);
       this.setState({
         channels: this.updateChannel(t, e => F(V({}, e), {
-          deleted: !0
+          deleted: true
         }))
       }), f.Z.useReducedMotion && this.deleteChannel(t), this.maybeLoadMore()
     }, this.undoMarkChannelRead = () => {
@@ -204,7 +205,7 @@ class K extends o.EventEmitter {
         section: U.jXE.INBOX,
         object: U.qAy.UNDO_MARK_AS_READ,
         objectType: U.Qqv.ACK_MANUAL
-      }, !0, void 0, e.oldestReadMessageId);
+      }, true, true, e.oldestReadMessageId);
       let t = this.state.channels.findIndex(t => t.order > e.order),
         n = [...this.state.channels];
       t < 0 ? n.push(e) : n.splice(t, 0, e), this.setState({
@@ -264,7 +265,7 @@ class K extends o.EventEmitter {
           let t = C.Z.hasLoaded(e.guildId);
           return F(V({}, e), {
             isFullyLoaded: t,
-            hasLoadedAnything: !0
+            hasLoadedAnything: true
           })
         }
       });
@@ -278,13 +279,13 @@ class K extends o.EventEmitter {
 
 function Y(e, t) {
   var n;
-  let r = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
+  let r = arguments.length > 2 && true !== arguments[2] && arguments[2],
     i = Z.Z.getMessages(e.channelId),
     l = i.toArray().filter(t => k.default.compare(t.id, e.oldestReadMessageId) > 0 && 0 >= k.default.compare(t.id, e.newestUnreadMessageId));
   if (l.length === e.messages.length && l.every((t, n) => e.messages[n] === t) && r) return e;
-  let o = null != i.getAfter(e.oldestReadMessageId) || (null == (n = l[0]) ? void 0 : n.id) === e.oldestUnreadMessageId,
+  let o = null != i.getAfter(e.oldestReadMessageId) || (null == (n = l[0]) ? true : n.id) === e.oldestUnreadMessageId,
     s = l[l.length - 1],
-    a = k.default.compare(null == s ? void 0 : s.id, e.newestUnreadMessageId) >= 0 || l.length >= W;
+    a = k.default.compare(null == s ? true : s.id, e.newestUnreadMessageId) >= 0 || l.length >= W;
   return F(V({}, e), {
     messages: l,
     hasLoadedAnything: e.hasLoadedAnything || o || t,
@@ -297,13 +298,13 @@ function q() {
   let e = function() {
       var e, t;
       let n = {},
-        r = null != (t = null == (e = S.Z.settings.guilds) ? void 0 : e.guilds) ? t : {};
+        r = null != (t = null == (e = Chunk581883.Z.settings.guilds) ? true : module.guilds) ? exports : {};
       for (let e in r)
-        for (let t in r[e].channels) {
-          let i = I.Z.getChannel(t);
-          t in n && (null == i ? void 0 : i.guild_id) !== e || (n[t] = r[e].channels[t].collapsedInInbox)
+        for (let t in r[module].channels) {
+          let i = Chunk592125.Z.getChannel(exports);
+          exports in require && (null == i ? true : i.guild_id) !== module || (require[exports] = r[module].channels[exports].collapsedInInbox)
         }
-      return n
+      return require
     }(),
     t = function(e) {
       let t = [];
@@ -318,15 +319,15 @@ function q() {
           for (let r in o) X(e, t, n, r)
         })
       }), u().sortBy(t, e => e.sortOrder)
-    }(e),
-    n = u().uniq(t.map(e => e.guildId)).filter(M.lm);
-  return d.Z.dispatch({
+    }(module),
+    n = u().uniq(exports.map(e => e.guildId)).filter(Chunk823379.lm);
+  return Chunk570140.Z.dispatch({
     type: "INBOX_OPEN",
-    guildIds: n
+    guildIds: require
   }), {
-    collapsedChannels: e,
+    collapsedChannels: module,
     loadState: "loaded",
-    channels: t,
+    channels: exports,
     scrollToChannelIndex: null
   }
 }
@@ -356,11 +357,11 @@ function X(e, t, n, r) {
     oldestReadMessageId: l,
     oldestUnreadMessageId: o,
     newestUnreadMessageId: s,
-    collapsed: !0 === e[r],
-    hasLoadedAnything: !1,
-    hasLoadedFirst: !1,
-    isFullyLoaded: !1,
-    hasError: !1,
+    collapsed: true === e[r],
+    hasLoadedAnything: false,
+    hasLoadedFirst: false,
+    isFullyLoaded: false,
+    hasError: false,
     hasMentionsOrUnreads: c,
     mentionCount: a,
     sortOrder: function(e, t, n) {
@@ -393,11 +394,11 @@ function X(e, t, n, r) {
     messages: []
   }))
 }
-let Q = 2 * L.Z.Millis.DAY,
-  J = 10 * L.Z.Millis.DAY;
+let Q = 2 * Chunk70956.Z.Millis.DAY,
+  J = 10 * Chunk70956.Z.Millis.DAY;
 
 function $(e) {
-  let [t, n] = l.useState(() => new K(q(), e)), [r, i] = l.useState(!1), o = l.useRef(Date.now()), [s, a] = l.useState(() => q());
+  let [t, n] = l.useState(() => new K(q(), e)), [r, i] = l.useState(false), o = l.useRef(Date.now()), [s, a] = l.useState(() => q());
   l.useEffect(() => {
     let e = e => a(e);
     return t.on("change", e), a(t.state), () => {
@@ -407,12 +408,12 @@ function $(e) {
     if (null == s || s.channels.length > 0 || r) return;
     let t = Date.now(),
       l = q();
-    0 === l.channels.length || t - o.current < 10 * L.Z.Millis.SECOND ? i(!0) : (o.current = Date.now(), n(new K(l, e)))
+    0 === l.channels.length || t - o.current < 10 * L.Z.Millis.SECOND ? i(true) : (o.current = Date.now(), n(new K(l, e)))
   }, [s, r, e]);
   let c = l.useRef(t);
   return l.useLayoutEffect(() => {
     c.current = t
   }), l.useLayoutEffect(() => {
     null == s || s.channels, null == s || s.loadState, c.current.maybeLoadMore()
-  }, [null == s ? void 0 : s.channels, null == s ? void 0 : s.loadState]), l.useEffect(() => (Z.Z.addChangeListener(t.reloadMessages), () => Z.Z.removeChangeListener(t.reloadMessages)), [t.reloadMessages]), l.useEffect(() => (D.ZP.addChangeListener(t.handleUserGuildSettingsStoreChange), () => D.ZP.removeChangeListener(t.handleUserGuildSettingsStoreChange)), [t]), l.useEffect(() => (v.Z.addChangeListener(t.handleJoinedThreadsStoreChange), () => v.Z.removeChangeListener(t.handleJoinedThreadsStoreChange)), [t]), l.useEffect(() => (C.Z.addChangeListener(t.handleActiveThreadsStoreChange), () => C.Z.removeChangeListener(t.handleActiveThreadsStoreChange)), [t]), [s, t]
+  }, [null == s ? true : s.channels, null == s ? true : s.loadState]), l.useEffect(() => (Z.Z.addChangeListener(t.reloadMessages), () => Z.Z.removeChangeListener(t.reloadMessages)), [t.reloadMessages]), l.useEffect(() => (D.ZP.addChangeListener(t.handleUserGuildSettingsStoreChange), () => D.ZP.removeChangeListener(t.handleUserGuildSettingsStoreChange)), [t]), l.useEffect(() => (v.Z.addChangeListener(t.handleJoinedThreadsStoreChange), () => v.Z.removeChangeListener(t.handleJoinedThreadsStoreChange)), [t]), l.useEffect(() => (C.Z.addChangeListener(t.handleActiveThreadsStoreChange), () => C.Z.removeChangeListener(t.handleActiveThreadsStoreChange)), [t]), [s, t]
 }

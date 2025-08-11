@@ -1,14 +1,15 @@
 /** Chunk was on web.js **/
+/** chunk id: 358076, original params: e (module,exports,re quire) **/
 "use strict";
-e.exports = function(e) {
+module.exports = function(e) {
   var t = e.getSelection(),
     n = t.getAnchorKey(),
     r = e.getBlockTree(n),
     i = t.getStartOffset(),
-    o = !1;
+    o = false;
   return r.some(function(e) {
-    return i === e.get("start") ? (o = !0, !0) : i < e.get("end") && e.get("leaves").some(function(e) {
-      return i === e.get("start") && (o = !0, !0)
+    return i === e.get("start") ? (o = true, true) : i < e.get("end") && e.get("leaves").some(function(e) {
+      return i === e.get("start") && (o = true, true)
     })
   }), o
 }

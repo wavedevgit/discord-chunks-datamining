@@ -1,0 +1,58 @@
+/** Chunk was on 70675 **/
+/** chunk id: 712301, original params: e,n,t (module,exports,require) **/
+require.d(exports, {
+  Z: () => v
+});
+var Chunk255367 = require("./255367.js");
+require("./73800.js");
+var Chunk442837 = require("./442837.js"),
+  Chunk481060 = require("./481060.js"),
+  Chunk749210 = require("./749210.js"),
+  Chunk287734 = require("./287734.js"),
+  Chunk933557 = require("./933557.js"),
+  Chunk314897 = require("./314897.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk984933 = require("./984933.js"),
+  Chunk271383 = require("./271383.js"),
+  Chunk430824 = require("./430824.js"),
+  Chunk496675 = require("./496675.js"),
+  Chunk699516 = require("./699516.js"),
+  Chunk594174 = require("./594174.js"),
+  Chunk979651 = require("./979651.js"),
+  Chunk934415 = require("./934415.js"),
+  Chunk700785 = require("./700785.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk388032 = require("./388032.jsx");
+
+function v(e, n) {
+  let t = (0, i.e7)([c.ZP], () => c.ZP.getChannels(n)[c.Zb], [n]),
+    v = (0, i.e7)([p.Z, d.Z], () => {
+      let t = p.Z.getUserVoiceChannelId(n, e.id);
+      return d.Z.getChannel(t)
+    }, [n, e.id]);
+  if ((0, i.e7)([g.ZP], () => g.ZP.isGuestOrLurker(n, e.id), [n, e.id]) || null == v) return null;
+  let x = e.id === s.default.getId();
+  if (!x && !f.Z.can(j.Plq.MOVE_MEMBERS, v)) return null;
+  let y = t.filter(n => {
+    let {
+      channel: t
+    } = n;
+    return t.id !== v.id && (x ? f.Z.can(j.Plq.CONNECT, t) && !(0, m.rY)(t, p.Z, Z.Z) : f.Z.can(j.Plq.MOVE_MEMBERS, t) && (f.Z.can(j.Plq.CONNECT, t) || h.BT({
+      permission: j.Plq.CONNECT,
+      user: e,
+      context: t
+    })) && !(0, m.rY)(t, p.Z, Z.Z))
+  });
+  return 0 === y.length ? null : <r.sNh id={"voice-move"} label={P.intl.string(P.t.FAplmp)}>{y.map(t => {
+      let {
+        channel: i
+      } = t;
+      return (0, l.jsx)(r.sNh, {
+        id: i.id,
+        action: () => {
+          e.id === s.default.getId() ? u.default.selectVoiceChannel(i.id) : a.Z.setChannel(n, e.id, i.id)
+        },
+        label: (0, o.F6)(i, O.default, b.Z)
+      }, i.id)
+    })}</r.sNh>
+}

@@ -1,17 +1,18 @@
 /** Chunk was on web.js **/
+/** chunk id: 673011, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 
 function r(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
-n.d(t, {
+require.d(exports, {
   Z: () => i
-}), n(388685);
+}), require("./388685.js");
 class i {
   has(e) {
     return this.listeners.has(e)
@@ -29,10 +30,10 @@ class i {
     }), r(this, "remove", e => {
       this.listeners.delete(e)
     }), r(this, "addConditional", function(t) {
-      let n = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1];
-      if (n && !1 === t()) return;
+      let n = !(arguments.length > 1) || true === arguments[1] || arguments[1];
+      if (n && false === t()) return;
       let r = () => {
-        !1 === t() && e.remove(r)
+        false === t() && e.remove(r)
       };
       e.add(r)
     })

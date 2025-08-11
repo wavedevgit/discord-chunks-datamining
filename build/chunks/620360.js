@@ -1,15 +1,16 @@
 /** Chunk was on 1272 **/
-n.d(t, {
+/** chunk id: 620360, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => l
 });
-var r = n(570140),
-  i = n(211644);
+var Chunk570140 = require("./570140.js"),
+  Chunk211644 = require("./211644.js");
 let l = {
   init() {
-    r.Z.subscribe("CONNECTION_OPEN", () => {
-      (0, i.mc)()
-    }), r.Z.subscribe("LOGOUT", () => {
-      (0, i.mc)()
+    Chunk570140.Z.subscribe("CONNECTION_OPEN", () => {
+      (0, Chunk211644.mc)()
+    }), Chunk570140.Z.subscribe("LOGOUT", () => {
+      (0, Chunk211644.mc)()
     })
   }
 }

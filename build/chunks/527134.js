@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 527134, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   botPermissions: "botPermissions__41924",
   permissionsList: "permissionsList__41924",
   permission: "permission__41924",

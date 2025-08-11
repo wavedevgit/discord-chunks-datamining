@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 411198, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   $5: () => y,
   B3: () => O,
   Ee: () => p,
@@ -18,20 +19,20 @@ n.d(t, {
   wD: () => h,
   yS: () => S,
   z$: () => R
-}), n(953529);
-var r = n(512722),
-  i = n.n(r),
-  o = n(843991),
-  a = n(311929),
-  s = n(601964),
-  l = n(981631);
+}), require("./953529.js");
+var Chunk512722 = require("./512722.js"),
+  i = require.n(Chunk512722),
+  Chunk843991 = require("./843991.js"),
+  Chunk311929 = require("./311929.js"),
+  Chunk601964 = require("./601964.js"),
+  Chunk981631 = require("./981631.js");
 
 function c(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -115,7 +116,7 @@ function p(e, t, n) {
 
 function h(e, t) {
   var n, r;
-  let o = null != e.joined_at ? new Date(e.joined_at) : null != (n = null == t ? void 0 : t.joinedAt) ? n : null,
+  let o = null != e.joined_at ? new Date(e.joined_at) : null != (n = null == t ? true : t.joinedAt) ? n : null,
     s = null != (r = e.premium_subscription_count) ? r : 0;
   return null == e.properties ? (i()(null != t, "If guild.properties is null, existingGuild must be passed in"), (0, a.TS)(t, {
     joinedAt: o,
@@ -148,7 +149,7 @@ function g(e, t) {
 function E(e, t) {
   var n;
   return p(e, {
-    joinedAt: null != e.joined_at ? new Date(e.joined_at) : null != (n = null == t ? void 0 : t.joinedAt) ? n : null,
+    joinedAt: null != e.joined_at ? new Date(e.joined_at) : null != (n = null == t ? true : t.joinedAt) ? n : null,
     premiumSubscriberCount: e.premium_subscription_count
   }, t)
 }

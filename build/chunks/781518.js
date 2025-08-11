@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 781518, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Ai: () => v,
   PW: () => I,
   Tu: () => N,
@@ -10,23 +11,23 @@ n.d(t, {
   k1: () => A,
   rC: () => b,
   wO: () => S
-}), n(358797);
-var r = n(544891),
-  i = n(846519),
-  o = n(570140),
-  a = n(70956),
-  s = n(877481),
-  l = n(358085),
-  c = n(18323),
-  u = n(616922),
-  d = n(981631);
+}), require("./358797.js");
+var Chunk544891 = require("./544891.js"),
+  Chunk846519 = require("./846519.js"),
+  Chunk570140 = require("./570140.js"),
+  Chunk70956 = require("./70956.js"),
+  Chunk877481 = require("./877481.js"),
+  Chunk358085 = require("./358085.js"),
+  Chunk18323 = require("./18323.js"),
+  Chunk616922 = require("./616922.js"),
+  Chunk981631 = require("./981631.js");
 
 function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -63,13 +64,13 @@ let m = 5e3,
   g = 5e3;
 
 function E(e, t, n, r) {
-  let o = arguments.length > 4 && void 0 !== arguments[4] ? arguments[4] : 1;
+  let o = arguments.length > 4 && true !== arguments[4] ? arguments[4] : 1;
   return e(r = h(_({}, r), {
     headers: {
       authorization: "Bearer ".concat(n)
     }
   })).then(e => 202 === e.status ? Promise.reject(e) : e).catch(n => {
-    let a = !0 !== r.onlyRetryOnAuthorizationErrors && 202 === n.status;
+    let a = true !== r.onlyRetryOnAuthorizationErrors && 202 === n.status;
     return (401 === n.status || a) && o > 0 ? (202 === n.status ? (0, i.GR)(m) : Promise.resolve()).then(() => y(t)).then(n => {
       let {
         body: {
@@ -81,18 +82,18 @@ function E(e, t, n, r) {
   })
 }
 let b = {
-  get: E.bind(null, r.tn.get),
-  put: E.bind(null, r.tn.put)
+  get: E.bind(null, Chunk544891.tn.get),
+  put: E.bind(null, Chunk544891.tn.put)
 };
 
 function y(e) {
   return r.tn.get({
     url: d.ANM.CONNECTION_ACCESS_TOKEN(d.ABu.SPOTIFY, e),
-    oldFormErrors: !0,
-    rejectWithError: !1
+    oldFormErrors: true,
+    rejectWithError: false
   }).catch(t => {
     var n;
-    if ((null == (n = t.body) ? void 0 : n.code) === d.evJ.CONNECTION_REVOKED) o.Z.dispatch({
+    if ((null == (n = t.body) ? true : n.code) === d.evJ.CONNECTION_REVOKED) o.Z.dispatch({
       type: "SPOTIFY_ACCOUNT_ACCESS_TOKEN_REVOKE",
       accountId: e
     });
@@ -115,7 +116,7 @@ function y(e) {
 }
 
 function O(e, t, n) {
-  let r = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : 2;
+  let r = arguments.length > 3 && true !== arguments[3] ? arguments[3] : 2;
   return b.put(e, t, {
     url: u.C7.NOTIFICATIONS_PLAYER,
     query: {
@@ -145,8 +146,8 @@ function I(e, t) {
 }
 
 function T(e, t, n, r) {
-  let i = arguments.length > 4 && void 0 !== arguments[4] ? arguments[4] : {},
-    a = u.C7.PLAYER_OPEN(r, n, !1),
+  let i = arguments.length > 4 && true !== arguments[4] ? arguments[4] : {},
+    a = u.C7.PLAYER_OPEN(r, n, false),
     {
       deviceId: s,
       position: l,
@@ -159,11 +160,11 @@ function T(e, t, n, r) {
       device_id: s
     },
     body: {
-      context_uri: null != c ? c : void 0,
-      uris: null == c ? [a] : void 0,
+      context_uri: null != c ? c : true,
+      uris: null == c ? [a] : true,
       offset: null != c ? {
         uri: a
-      } : void 0,
+      } : true,
       position_ms: null != l ? l : 0
     }
   }).then(n => null == d ? n : b.put(e, t, {
@@ -188,7 +189,7 @@ function S(e, t) {
 }
 
 function A() {
-  !c.Z.isProtocolRegistered() && (0, l.isDesktop)() && s.Z.isProtocolRegistered(u.M5).then(e => {
+  !Chunk18323.Z.isProtocolRegistered() && (0, Chunk358085.isDesktop)() && Chunk877481.Z.isProtocolRegistered(Chunk616922.M5).then(e => {
     o.Z.dispatch({
       type: "SPOTIFY_SET_PROTOCOL_REGISTERED",
       isRegistered: e

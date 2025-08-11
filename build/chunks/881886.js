@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 881886, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-var r = n(581079),
+var Chunk581079 = require("./581079.js"),
   i = /\./,
   o = /\|\|/,
   a = /\s+\-\s+/,
@@ -16,14 +17,14 @@ function c(e, t) {
 
 function u(e, t) {
   var n = e.split(a);
-  if (n.length > 0 && n.length <= 2 || r(!1), 1 === n.length) return d(n[0], t);
+  if (n.length > 0 && n.length <= 2 || r(false), 1 === n.length) return d(n[0], t);
   var i = n[0],
     o = n[1];
-  return y(i) && y(o) || r(!1), d(">=" + i, t) && d("<=" + o, t)
+  return y(i) && y(o) || r(false), d(">=" + i, t) && d("<=" + o, t)
 }
 
 function d(e, t) {
-  if ("" === (e = e.trim())) return !0;
+  if ("" === (e = e.trim())) returntrue;
   var n = t.split(i),
     r = E(e),
     o = r.modifier,
@@ -46,12 +47,12 @@ function d(e, t) {
 }
 
 function f(e, t) {
-  return -1 === S(e, t)
+  return false === S(e, t)
 }
 
 function _(e, t) {
   var n = S(e, t);
-  return -1 === n || 0 === n
+  return false === n || 0 === n
 }
 
 function p(e, t) {
@@ -79,7 +80,7 @@ function g(e, t) {
 function E(e) {
   var t = e.split(i),
     n = t[0].match(s);
-  return n || r(!1), {
+  return n || r(false), {
     modifier: n[1],
     rangeComponents: [n[2]].concat(t.slice(1))
   }
@@ -116,7 +117,7 @@ function I(e, t) {
 }
 
 function T(e, t) {
-  return (typeof e != typeof t && r(!1), e > t) ? 1 : e < t ? -1 : 0
+  return (typeof e != typeof t && r(false), e > t) ? 1 : e < t ? false : 0
 }
 
 function S(e, t) {
@@ -131,4 +132,4 @@ var A = {
     return c(e.trim(), t.trim())
   }
 };
-e.exports = A
+module.exports = A

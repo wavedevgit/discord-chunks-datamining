@@ -1,13 +1,14 @@
 /** Chunk was on 23357 **/
+/** chunk id: 999439, original params: e,t,n (module,exports,require) **/
 "use strict";
-var r = n(220159),
-  o = n(181794),
-  a = n(410339).f;
-r({
+var Chunk220159 = require("./220159.js"),
+  Chunk181794 = require("./181794.js"),
+  a = require("./410339.js").f;
+Chunk220159({
   target: "Object",
-  stat: !0,
+  stat: true,
   forced: Object.defineProperties !== a,
-  sham: !o
+  sham: !Chunk181794
 }, {
   defineProperties: a
 })

@@ -1,2 +1,0 @@
-/** Chunk was on 10266 **/
-i.exports = JSON.parse('{"MkgMBw":"Siirry online-tilaan, jos haluat jakaa toimintasi tilatietonasi","Poezn5":"Siirry online","qKDqen":"Siirry online-tilaan, jos haluat jakaa toimintasi tilatietonasi","jfDsyM":"Rajoitettu jako","TvK8dH":["N\xe4yt\xe4 ",[1,"numTruncated"]," lis\xe4\xe4"],"a3AofX":"Asettaa tilaksesi online"}')

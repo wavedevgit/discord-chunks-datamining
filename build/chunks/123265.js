@@ -1,6 +1,7 @@
 /** Chunk was on 67244 **/
+/** chunk id: 123265, original params: e,t (module,exports,require) **/
 "use strict";
-t.__esModule = !0, t.default = {
+exports.__esModule = true, exports.default = {
   scheme: "solarized",
   author: "ethan schoonover (http://ethanschoonover.com/solarized)",
   base00: "#002b36",
@@ -19,4 +20,4 @@ t.__esModule = !0, t.default = {
   base0D: "#268bd2",
   base0E: "#6c71c4",
   base0F: "#d33682"
-}, e.exports = t.default
+}, module.exports = exports.default

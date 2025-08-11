@@ -1,18 +1,19 @@
 /** Chunk was on 72762 **/
-n.d(t, {
+/** chunk id: 586739, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => l
 });
-var r = n(544891),
-  i = n(981631);
+var Chunk544891 = require("./544891.js"),
+  Chunk981631 = require("./981631.js");
 let l = {
   fetchTeams() {
-    let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
-    return r.tn.get({
-      url: i.ANM.TEAMS,
+    let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
+    return Chunk544891.tn.get({
+      url: Chunk981631.ANM.TEAMS,
       query: {
-        include_payout_account_status: e
+        include_payout_account_status: module
       },
-      rejectWithError: !1
+      rejectWithError: false
     })
   }
 }

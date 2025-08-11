@@ -1,19 +1,20 @@
 /** Chunk was on web.js **/
+/** chunk id: 912978, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => d
-}), n(539854), n(415506), n(388685);
-var r = n(836560),
-  i = n(264344),
-  o = n.n(i),
-  a = n(649318);
+}), require("./539854.js"), require("./415506.js"), require("./388685.js");
+var Chunk836560 = require("./836560.js"),
+  Chunk264344 = require("./264344.js"),
+  o = require.n(Chunk264344),
+  Chunk649318 = require("./649318.js");
 
 function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -46,26 +47,26 @@ function u(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-class d extends r.EventEmitter {
+class d extends Chunk836560.EventEmitter {
   addStream(e, t, n) {
-    let r = !1;
+    let r = false;
     this.streams.some(e => e.ssrc === t) || this.streams.push({
       ssrc: t,
       cname: e,
       type: "audio"
     }), this.activeAudioSSRCs[e] !== t && (this.activeAudioSSRCs = u(l({}, this.activeAudioSSRCs), {
       [e]: t
-    }), r = !0), null != n && (n > 0 ? (this.streams.some(e => e.ssrc === n) || this.streams.push({
+    }), r = true), null != n && (n > 0 ? (this.streams.some(e => e.ssrc === n) || this.streams.push({
       ssrc: n,
       cname: e,
       type: "video"
     }), this.activeVideoSSRCs[e] !== n && (this.activeVideoSSRCs = u(l({}, this.activeVideoSSRCs), {
       [e]: n
-    }), r = !0)) : null != this.activeVideoSSRCs[e] && (r = !0, this.activeVideoSSRCs = l({}, this.activeVideoSSRCs), delete this.activeVideoSSRCs[e])), r && this.negotiationNeeded()
+    }), r = true)) : null != this.activeVideoSSRCs[e] && (r = true, this.activeVideoSSRCs = l({}, this.activeVideoSSRCs), delete this.activeVideoSSRCs[e])), r && this.negotiationNeeded()
   }
   removeStream(e) {
-    let t = !1;
-    null != this.activeAudioSSRCs[e] && (t = !0, this.activeAudioSSRCs = l({}, this.activeAudioSSRCs), delete this.activeAudioSSRCs[e]), null != this.activeVideoSSRCs[e] && (t = !0, this.activeVideoSSRCs = l({}, this.activeVideoSSRCs), delete this.activeVideoSSRCs[e]), t && this.negotiationNeeded()
+    let t = false;
+    null != this.activeAudioSSRCs[e] && (t = true, this.activeAudioSSRCs = l({}, this.activeAudioSSRCs), delete this.activeAudioSSRCs[e]), null != this.activeVideoSSRCs[e] && (t = true, this.activeVideoSSRCs = l({}, this.activeVideoSSRCs), delete this.activeVideoSSRCs[e]), t && this.negotiationNeeded()
   }
   get sdp() {
     if (null == this._sdp) throw Error("sdp is not set");
@@ -73,17 +74,17 @@ class d extends r.EventEmitter {
   }
   set sdp(e) {
     if (!(0, a.$6)(e)) throw Error("Incorrect SDP received from rtc-worker: ".concat(e));
-    this._sdp = e, this.createAnswer(), this.connected = !0, this._negotiationNeeded && this.negotiationNeeded()
+    this._sdp = e, this.createAnswer(), this.connected = true, this._negotiationNeeded && this.negotiationNeeded()
   }
   negotiationNeeded() {
     if (this.negotiating) {
-      this._negotiationNeeded = !0;
+      this._negotiationNeeded = true;
       return
     }
-    null != this._sdp ? (this.negotiating = !0, this._negotiationNeeded = !1, this.generateSessionDescription("offer")) : this._negotiationNeeded = !0
+    null != this._sdp ? (this.negotiating = true, this._negotiationNeeded = false, this.generateSessionDescription("offer")) : this._negotiationNeeded = true
   }
   setRemoteDescription(e) {
-    return this.negotiating = !1, this._negotiationNeeded && this.negotiationNeeded(), Promise.resolve()
+    return this.negotiating = false, this._negotiationNeeded && this.negotiationNeeded(), Promise.resolve()
   }
   createAnswer() {
     return this.generateSessionDescription("answer")
@@ -133,6 +134,6 @@ class d extends r.EventEmitter {
     return this.emit(e, l), Promise.resolve(l)
   }
   constructor(...e) {
-    super(...e), s(this, "audioCodec", null), s(this, "audioPayloadType", null), s(this, "videoCodec", null), s(this, "videoPayloadType", null), s(this, "rtxPayloadType", null), s(this, "direction", null), s(this, "outboundStreams", []), s(this, "extensions", []), s(this, "streams", []), s(this, "activeAudioSSRCs", {}), s(this, "activeVideoSSRCs", {}), s(this, "_sdp", null), s(this, "connected", !1), s(this, "negotiating", !1), s(this, "_negotiationNeeded", !1)
+    super(...e), s(this, "audioCodec", null), s(this, "audioPayloadType", null), s(this, "videoCodec", null), s(this, "videoPayloadType", null), s(this, "rtxPayloadType", null), s(this, "direction", null), s(this, "outboundStreams", []), s(this, "extensions", []), s(this, "streams", []), s(this, "activeAudioSSRCs", {}), s(this, "activeVideoSSRCs", {}), s(this, "_sdp", null), s(this, "connected", false), s(this, "negotiating", false), s(this, "_negotiationNeeded", false)
   }
 }

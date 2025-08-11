@@ -1,5 +1,6 @@
 /** Chunk was on 50448 **/
+/** chunk id: 642280, original params: t,r,n (module,exports,require) **/
 "use strict";
-t.exports = !n(779688)(function() {
+module.exports = !require("./779688.js")(function() {
   return Object.isExtensible(Object.preventExtensions({}))
 })

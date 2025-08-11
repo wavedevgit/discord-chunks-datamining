@@ -1,12 +1,13 @@
 /** Chunk was on web.js **/
+/** chunk id: 858255, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-var r = n(322273),
-  i = n(550782);
+var Chunk322273 = require("./322273.js"),
+  Chunk550782 = require("./550782.js");
 
 function o(e) {
   return null == e ? e : String(e)
 }
-e.exports = function(e, t) {
+module.exports = function(e, t) {
   var n;
   if (window.getComputedStyle && (n = window.getComputedStyle(e, null))) return o(n.getPropertyValue(i(t)));
   if (document.defaultView && document.defaultView.getComputedStyle) {

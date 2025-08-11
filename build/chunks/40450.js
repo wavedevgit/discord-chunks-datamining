@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 40450, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   stageSystemMessage: "stageSystemMessage_e9ab2f",
   iconContainer: "iconContainer_e9ab2f"
 }

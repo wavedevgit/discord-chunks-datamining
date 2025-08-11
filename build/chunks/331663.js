@@ -1,7 +1,8 @@
 /** Chunk was on 34779 **/
-n.d(t, {
+/** chunk id: 331663, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   b: () => r
 });
 let r = {
-  useSelectedDismissibleContent: [n(921944).R.VIRTUAL_CURRENCY_ONBOARDING, !0]
+  useSelectedDismissibleContent: [require("./921944.js").R.VIRTUAL_CURRENCY_ONBOARDING, true]
 }

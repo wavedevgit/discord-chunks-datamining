@@ -1,15 +1,16 @@
 /** Chunk was on web.js **/
+/** chunk id: 135431, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   E: () => u,
   L: () => c
-}), n(190126), n(368063), n(65234), n(111804), n(490233), n(97749), n(388685);
-var r = n(873546),
-  i = n(149765),
-  o = n(69580),
-  a = n(626135),
-  s = n(49012),
-  l = n(981631);
+}), require("./190126.js"), require("./368063.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js"), require("./388685.js");
+var Chunk873546 = require("./873546.js"),
+  Chunk149765 = require("./149765.js"),
+  Chunk69580 = require("./69580.jsx"),
+  Chunk626135 = require("./626135.js"),
+  Chunk49012 = require("./49012.js"),
+  Chunk981631 = require("./981631.js");
 
 function c(e) {
   let {
@@ -35,7 +36,7 @@ function c(e) {
     });
     return
   }
-  if (null != u && Object.values(u).some(e => (null == e ? void 0 : e.oauth2_install_params) != null || (null == e ? void 0 : e.oauth2InstallParams) != null)) {
+  if (null != u && Object.values(u).some(e => (null == e ? true : e.oauth2_install_params) != null || (null == e ? true : e.oauth2InstallParams) != null)) {
     a.default.track(l.rMx.APPLICATION_ADD_TO_SERVER_CLICKED, {
       application_id: t,
       guild_id: d,
@@ -63,7 +64,7 @@ function c(e) {
     channelId: f,
     disableGuildSelect: _,
     scopes: c.scopes,
-    permissions: null != c.permissions ? i.vB(c.permissions) : void 0,
+    permissions: null != c.permissions ? i.vB(c.permissions) : true,
     callback: h
   }))
 }
@@ -76,7 +77,7 @@ function u(e) {
     integrationTypesConfig: i
   } = e;
   if (null != n) return null;
-  if (null != i && Object.values(i).some(e => (null == e ? void 0 : e.oauth2_install_params) != null || (null == e ? void 0 : e.oauth2InstallParams) != null)) {
+  if (null != i && Object.values(i).some(e => (null == e ? true : e.oauth2_install_params) != null || (null == e ? true : e.oauth2InstallParams) != null)) {
     let e = new URL(l.Z5c.OAUTH2_AUTHORIZE, window.location.origin);
     return e.searchParams.set("client_id", t), e.toString()
   }

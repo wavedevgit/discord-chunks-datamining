@@ -1,12 +1,13 @@
 /** Chunk was on web.js **/
+/** chunk id: 763792, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   G: () => i,
   W: () => o
 });
-var r = n(535396);
+var Chunk535396 = require("./535396.js");
 let i = [{
-    type: r.Us.LEVEL,
+    type: Chunk535396.Us.LEVEL,
     skuId: "1",
     title: "Lorem ipsum",
     cost: 1,
@@ -21,7 +22,7 @@ let i = [{
       features: []
     }
   }, {
-    type: r.Us.LEVEL,
+    type: Chunk535396.Us.LEVEL,
     skuId: "2",
     title: "Lorem ipsum",
     cost: 1,
@@ -36,7 +37,7 @@ let i = [{
       features: []
     }
   }, {
-    type: r.Us.LEVEL,
+    type: Chunk535396.Us.LEVEL,
     skuId: "3",
     title: "Lorem ipsum",
     cost: 1,
@@ -52,28 +53,28 @@ let i = [{
     }
   }],
   o = [{
-    type: r.Us.PERK,
+    type: Chunk535396.Us.PERK,
     skuId: "4",
     title: "Lorem ipsum",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec placerat posuere lao",
     cost: 1,
     dependencies: []
   }, {
-    type: r.Us.PERK,
+    type: Chunk535396.Us.PERK,
     skuId: "5",
     title: "Lorem ipsum",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec placerat posuere lao",
     cost: 1,
     dependencies: []
   }, {
-    type: r.Us.PERK,
+    type: Chunk535396.Us.PERK,
     skuId: "6",
     title: "Lorem ipsum",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec placerat posuere lao",
     cost: 1,
     dependencies: []
   }, {
-    type: r.Us.PERK,
+    type: Chunk535396.Us.PERK,
     skuId: "7",
     title: "Lorem ipsum",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec placerat posuere lao",

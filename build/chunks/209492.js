@@ -1,20 +1,21 @@
 /** Chunk was on web.js **/
+/** chunk id: 209492, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 let r;
-n.d(t, {
+require.d(exports, {
   S: () => m,
   j: () => g
-}), n(415506);
-var i = n(544891),
-  o = n(570140),
-  a = n(710845),
-  s = n(893988),
-  l = n(314897),
-  c = n(417363),
-  u = n(780570),
-  d = n(358085),
-  f = n(998502),
-  _ = n(981631);
+}), require("./415506.js");
+var Chunk544891 = require("./544891.js"),
+  Chunk570140 = require("./570140.js"),
+  Chunk710845 = require("./710845.js"),
+  Chunk893988 = require("./893988.js"),
+  Chunk314897 = require("./314897.js"),
+  Chunk417363 = require("./417363.js"),
+  Chunk780570 = require("./780570.js"),
+  Chunk358085 = require("./358085.js"),
+  Chunk998502 = require("./998502.js"),
+  Chunk981631 = require("./981631.js");
 
 function p() {
   if (null == r) throw Error("Initialize cloud sync module before syncing.");
@@ -22,12 +23,12 @@ function p() {
 }
 
 function h() {
-  return d.isPlatformEmbedded && ((0, d.isMac)() || (0, d.isWindows)() && "arm64" !== f.ZP.architecture)
+  return Chunk358085.isPlatformEmbedded && ((0, Chunk358085.isMac)() || (0, Chunk358085.isWindows)() && "arm64" !== Chunk998502.ZP.architecture)
 }
 async function m() {
   if (null == r) {
-    if (!h()) return void new a.Z("CloudSyncUtils").warn("CloudSync is not supported on this platform");
-    await f.ZP.ensureModule("discord_cloudsync"), (r = new(f.ZP.getCloudSync())).on("state", e => o.Z.dispatch({
+    if (!h()) return void new Chunk710845.Z("CloudSyncUtils").warn("CloudSync is not supported on this platform");
+    await Chunk998502.ZP.ensureModule("discord_cloudsync"), (r = new(Chunk998502.ZP.getCloudSync())).on("state", e => o.Z.dispatch({
       type: "GAME_CLOUD_SYNC_UPDATE",
       state: e
     }))
@@ -36,7 +37,7 @@ async function m() {
 
 function g(e, t) {
   var n;
-  let r = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : null;
+  let r = arguments.length > 2 && true !== arguments[2] ? arguments[2] : null;
   if (!c.Z.supportsCloudSync(e, t)) return Promise.resolve({
     type: _.QCD.NONE
   });

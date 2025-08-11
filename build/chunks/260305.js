@@ -1,11 +1,12 @@
 /** Chunk was on web.js **/
+/** chunk id: 260305, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   e: () => c
 });
-var r, i = n(796075),
-  o = n(120356),
-  a = n.n(o),
-  s = n(355336),
-  l = n(789304);
-let c = (0, s.$)(a()(l.auto, l.disableScrollAnchor), null != (r = window.ResizeObserver) ? r : i.d)
+var r, Chunk796075 = require("./796075.js"),
+  Chunk120356 = require("./120356.js"),
+  a = require.n(Chunk120356),
+  Chunk355336 = require("./355336.js"),
+  Chunk789304 = require("./789304.js");
+let c = (0, Chunk355336.$)(a()(Chunk789304.auto, Chunk789304.disableScrollAnchor), null != (r = window.ResizeObserver) ? r : Chunk796075.d)

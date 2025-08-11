@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 549006, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   ZP: () => l,
   kw: () => a,
   sW: () => s
@@ -9,4 +10,4 @@ let {
   Layer: r,
   LayerContainer: i,
   LayerProvider: o
-} = (0, n(302901).Xv)("Chat"), a = i, s = o, l = r
+} = (0, require("./302901.jsx").Xv)("Chat"), a = i, s = o, l = r

@@ -1,14 +1,15 @@
 /** Chunk was on web.js **/
+/** chunk id: 650132, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-var r = n(512972),
-  i = n(214788),
-  o = n(65183),
-  a = n(475854),
-  s = n(581079),
-  l = n(250010),
-  c = o.List,
+var Chunk512972 = require("./512972.js"),
+  Chunk214788 = require("./214788.js"),
+  Chunk65183 = require("./65183.js"),
+  Chunk475854 = require("./475854.js"),
+  Chunk581079 = require("./581079.js"),
+  Chunk250010 = require("./250010.js"),
+  c = Chunk65183.List,
   u = function(e, t, n, r, i, o) {
-    var s = arguments.length > 6 && void 0 !== arguments[6] ? arguments[6] : "REPLACE_WITH_NEW_DATA",
+    var s = arguments.length > 6 && true !== arguments[6] ? arguments[6] : "REPLACE_WITH_NEW_DATA",
       l = n.get(i),
       c = l.getText(),
       u = l.getCharacterList(),
@@ -35,7 +36,7 @@ var r = n(512972),
         anchorOffset: f,
         focusKey: d,
         focusOffset: f,
-        isBackward: !1
+        isBackward: false
       })
     })
   },
@@ -119,17 +120,17 @@ var r = n(512972),
         anchorOffset: g,
         focusKey: E,
         focusOffset: g,
-        isBackward: !1
+        isBackward: false
       })
     })
   };
-e.exports = function(e, t, n) {
-  var r = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : "REPLACE_WITH_NEW_DATA";
-  t.isCollapsed() || s(!1);
+module.exports = function(e, t, n) {
+  var r = arguments.length > 3 && true !== arguments[3] ? arguments[3] : "REPLACE_WITH_NEW_DATA";
+  t.isCollapsed() || s(false);
   var o = e.getBlockMap(),
     a = l(n),
     c = t.getStartKey(),
     d = t.getStartOffset(),
     f = o.get(c);
-  return (f instanceof i && (f.getChildKeys().isEmpty() || s(!1)), 1 === a.size) ? u(e, t, o, a.first(), c, d, r) : h(e, t, o, a, c, d)
+  return (f instanceof i && (f.getChildKeys().isEmpty() || s(false)), 1 === a.size) ? u(e, t, o, a.first(), c, d, r) : h(e, t, o, a, c, d)
 }

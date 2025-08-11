@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 24665, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   guildShopEmbed: "guildShopEmbed__86fa6",
   spinnerContainer: "spinnerContainer__86fa6",
   serverShopLabel: "serverShopLabel__86fa6",

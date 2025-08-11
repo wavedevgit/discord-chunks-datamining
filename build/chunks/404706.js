@@ -1,5 +1,6 @@
 /** Chunk was on 86346 **/
-e.exports = {
+/** chunk id: 404706, original params: e,t,a (module,exports,require) **/
+module.exports = {
   trialRecipientContainer: "trialRecipientContainer__2441a",
   trialRecipientRow: "trialRecipientRow__2441a",
   trialRecipientRowDisplayName: "trialRecipientRowDisplayName__2441a",

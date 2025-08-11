@@ -1,5 +1,6 @@
 /** Chunk was on 49152 **/
-e.exports = {
+/** chunk id: 302137, original params: e,t,n (module,exports,require) **/
+module.exports = {
   carouselMaxWidth: "carouselMaxWidth_b8429c",
   scroller: "scroller_b8429c",
   tierPreviewsContainer: "tierPreviewsContainer_b8429c",

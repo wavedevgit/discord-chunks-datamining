@@ -1,18 +1,19 @@
 /** Chunk was on 75708 **/
-n.d(t, {
+/** chunk id: 321697, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   r: () => a
 });
-var i = n(481060),
-  r = n(560067),
-  s = n(675999);
+var Chunk481060 = require("./481060.js"),
+  Chunk560067 = require("./560067.js"),
+  Chunk675999 = require("./675999.js");
 let a = {
   binds: ["mod+shift+n"],
-  comboKeysBindGlobal: !0,
+  comboKeysBindGlobal: true,
   action() {
-    (0, i.nfh)(s.PU) ? r.Z.updateCreateGuildModal({
-      slide: s._m.JOIN_GUILD,
+    (0, Chunk481060.nfh)(Chunk675999.PU) ? Chunk560067.Z.updateCreateGuildModal({
+      slide: Chunk675999._m.JOIN_GUILD,
       location: "Keyboard Shortcut"
-    }): r.Z.openCreateGuildModal({
+    }): Chunk560067.Z.openCreateGuildModal({
       location: "Keyboard Shortcut"
     })
   }

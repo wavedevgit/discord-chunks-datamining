@@ -1,31 +1,32 @@
 /** Chunk was on web.js **/
+/** chunk id: 318891, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 let r;
-n.d(t, {
+require.d(exports, {
   RI: () => I,
   ZP: () => C,
   jy: () => T
 });
-var i = n(570140),
-  o = n(519938),
-  a = n(317770),
-  s = n(928518),
-  l = n(592125),
-  c = n(819640),
-  u = n(366050),
-  d = n(19780),
-  f = n(944486),
-  _ = n(914010),
-  p = n(979651),
-  h = n(636449),
-  m = n(317381),
-  g = n(16609),
-  E = n(719296),
-  b = n(958185),
-  y = n(981631);
+var Chunk570140 = require("./570140.js"),
+  Chunk519938 = require("./519938.js"),
+  Chunk317770 = require("./317770.js"),
+  Chunk928518 = require("./928518.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk819640 = require("./819640.js"),
+  Chunk366050 = require("./366050.js"),
+  Chunk19780 = require("./19780.js"),
+  Chunk944486 = require("./944486.js"),
+  Chunk914010 = require("./914010.js"),
+  Chunk979651 = require("./979651.js"),
+  Chunk636449 = require("./636449.js"),
+  Chunk317381 = require("./317381.js"),
+  Chunk16609 = require("./16609.js"),
+  Chunk719296 = require("./719296.js"),
+  Chunk958185 = require("./958185.js"),
+  Chunk981631 = require("./981631.js");
 
 function O(e, t) {
-  if ((0, h.R)() || u.Z.isOpen(t)) return !1;
+  if ((0, h.R)() || u.Z.isOpen(t)) returnfalse;
   if (null != r) {
     let e = r;
     i.Z.wait(() => o.xv(e))
@@ -37,7 +38,7 @@ function O(e, t) {
 
 function v() {
   let e = r;
-  null != e && u.Z.isOpen(e) && (i.Z.wait(() => o.xv(e)), r = null)
+  null != module && Chunk366050.Z.isOpen(module) && (Chunk570140.Z.wait(() => Chunk519938.xv(module)), r = null)
 }
 
 function I(e) {
@@ -51,25 +52,25 @@ function T(e) {
 }
 
 function S() {
-  let e = m.ZP.getConnectedActivityLocation(),
-    t = null != e ? m.ZP.getSelfEmbeddedActivityForLocation(e) : null,
-    n = (0, g.p)(e),
-    r = l.Z.getChannel(n);
-  return null == t || null == r ? v() : O(r, (0, E.Z)(t.location.id, t.applicationId))
+  let e = Chunk317381.ZP.getConnectedActivityLocation(),
+    t = null != module ? Chunk317381.ZP.getSelfEmbeddedActivityForLocation(module) : null,
+    n = (0, Chunk16609.p)(module),
+    r = Chunk592125.Z.getChannel(require);
+  return null == exports || null == r ? v() : O(r, (0, Chunk719296.Z)(exports.location.id, exports.applicationId))
 }
 
 function A() {
-  return (0, b.Z)({
-    LayerStore: c.Z,
-    PopoutWindowStore: s.Z
+  return (0, Chunk958185.Z)({
+    LayerStore: Chunk819640.Z,
+    PopoutWindowStore: Chunk928518.Z
   }) ? I() : T()
 }
-class N extends a.Z {
+class N extends Chunk317770.Z {
   _initialize() {
-    f.Z.addChangeListener(S), _.Z.addChangeListener(S), d.Z.addChangeListener(S), p.Z.addChangeListener(S), s.Z.addChangeListener(S), m.ZP.addChangeListener(S), c.Z.addChangeListener(A)
+    Chunk944486.Z.addChangeListener(S), Chunk914010.Z.addChangeListener(S), Chunk19780.Z.addChangeListener(S), Chunk979651.Z.addChangeListener(S), Chunk928518.Z.addChangeListener(S), Chunk317381.ZP.addChangeListener(S), Chunk819640.Z.addChangeListener(A)
   }
   _terminate() {
-    f.Z.removeChangeListener(S), _.Z.removeChangeListener(S), d.Z.removeChangeListener(S), p.Z.removeChangeListener(S), s.Z.removeChangeListener(S), m.ZP.removeChangeListener(S), c.Z.removeChangeListener(A)
+    Chunk944486.Z.removeChangeListener(S), Chunk914010.Z.removeChangeListener(S), Chunk19780.Z.removeChangeListener(S), Chunk979651.Z.removeChangeListener(S), Chunk928518.Z.removeChangeListener(S), Chunk317381.ZP.removeChangeListener(S), Chunk819640.Z.removeChangeListener(A)
   }
 }
 let C = new N

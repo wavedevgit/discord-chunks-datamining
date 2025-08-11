@@ -1,5 +1,6 @@
 /** Chunk was on 83051 **/
-n.d(t, {
+/** chunk id: 225452, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   D: () => i
 });
 
@@ -9,7 +10,7 @@ function i(e) {
     return {
       file: e.file,
       name: null != (i = e.id) ? i : "attachment_".concat(t),
-      filename: null == (n = e.file) ? void 0 : n.name
+      filename: null == (n = e.file) ? true : n.name
     }
   })
 }

@@ -1,11 +1,12 @@
 /** Chunk was on 72762 **/
-n.d(t, {
+/** chunk id: 321114, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   c: () => o
 });
-var r = n(544891),
-  i = n(570140),
-  l = n(594174),
-  s = n(981631);
+var Chunk544891 = require("./544891.js"),
+  Chunk570140 = require("./570140.js"),
+  Chunk594174 = require("./594174.js"),
+  Chunk981631 = require("./981631.js");
 async function o(e, t) {
   try {
     let n = await r.tn.put({
@@ -14,7 +15,7 @@ async function o(e, t) {
         identity_guild_id: e,
         identity_enabled: t
       },
-      rejectWithError: !1
+      rejectWithError: false
     });
     return n.ok && i.Z.dispatch({
       type: "CURRENT_USER_UPDATE",
@@ -28,9 +29,9 @@ async function o(e, t) {
             var r;
             r = n[t], t in e ? Object.defineProperty(e, t, {
               value: r,
-              enumerable: !0,
-              configurable: !0,
-              writable: !0
+              enumerable: true,
+              configurable: true,
+              writable: true
             }) : e[t] = r
           })
         }

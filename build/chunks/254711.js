@@ -1,42 +1,43 @@
 /** Chunk was on web.js **/
+/** chunk id: 254711, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Kh: () => G,
   Tm: () => M
-}), n(388685), n(781311), n(415506);
-var r = n(512722),
-  i = n.n(r),
-  o = n(913527),
-  a = n.n(o),
-  s = n(106351),
-  l = n(969812),
-  c = n(493683),
-  u = n(749210),
-  d = n(904245),
-  f = n(911969),
-  _ = n(386696),
-  p = n(957730),
-  h = n(968437),
-  m = n(928477),
-  g = n(665906),
-  E = n(695346),
-  b = n(592125),
-  y = n(496675),
-  O = n(594174),
-  v = n(70956),
-  I = n(51144),
-  T = n(895924),
-  S = n(689079),
-  A = n(981631),
-  N = n(590433),
-  C = n(388032);
+}), require("./388685.js"), require("./781311.js"), require("./415506.js");
+var Chunk512722 = require("./512722.js"),
+  i = require.n(Chunk512722),
+  Chunk913527 = require("./913527.js"),
+  a = require.n(Chunk913527),
+  Chunk106351 = require("./106351.js"),
+  Chunk969812 = require("./969812.js"),
+  Chunk493683 = require("./493683.js"),
+  Chunk749210 = require("./749210.js"),
+  Chunk904245 = require("./904245.js"),
+  Chunk911969 = require("./911969.js"),
+  Chunk386696 = require("./386696.js"),
+  Chunk957730 = require("./957730.js"),
+  Chunk968437 = require("./968437.js"),
+  Chunk928477 = require("./928477.js"),
+  Chunk665906 = require("./665906.js"),
+  Chunk695346 = require("./695346.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk496675 = require("./496675.js"),
+  Chunk594174 = require("./594174.js"),
+  Chunk70956 = require("./70956.js"),
+  Chunk51144 = require("./51144.js"),
+  Chunk895924 = require("./895924.js"),
+  Chunk689079 = require("./689079.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk590433 = require("./590433.js"),
+  Chunk388032 = require("./388032.js");
 
 function R(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -69,24 +70,24 @@ function D(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let L = n(227419).Z,
+let L = require("./227419.jsx").Z,
   x = (e, t) => {
     var n;
-    return null == (n = e.find(e => e.name === t)) ? void 0 : n.value
+    return null == (n = e.find(e => e.name === t)) ? true : n.value
   },
   M = {
-    [S.bi.BUILT_IN]: {
-      id: S.bi.BUILT_IN,
-      type: T.Qi.BUILT_IN,
+    [Chunk689079.bi.BUILT_IN]: {
+      id: Chunk689079.bi.BUILT_IN,
+      type: Chunk895924.Qi.BUILT_IN,
       get name() {
-        return C.intl.string(C.t.fI5MTU)
+        return Chunk388032.intl.string(Chunk388032.t.fI5MTU)
       }
     },
-    [S.bi.FRECENCY]: {
-      id: S.bi.FRECENCY,
-      type: T.Qi.BUILT_IN,
+    [Chunk689079.bi.FRECENCY]: {
+      id: Chunk689079.bi.FRECENCY,
+      type: Chunk895924.Qi.BUILT_IN,
       get name() {
-        return C.intl.string(C.t["+cGVV1"])
+        return Chunk388032.intl.string(Chunk388032.t["+cGVV1"])
       }
     }
   },
@@ -94,24 +95,24 @@ let L = n(227419).Z,
     id: "-1",
     untranslatedName: "shrug",
     displayName: "shrug",
-    type: f.yU.CHAT,
-    inputType: T.iw.BUILT_IN_TEXT,
-    applicationId: S.bi.BUILT_IN,
+    type: Chunk911969.yU.CHAT,
+    inputType: Chunk895924.iw.BUILT_IN_TEXT,
+    applicationId: Chunk689079.bi.BUILT_IN,
     get untranslatedDescription() {
-      return C.intl.string(C.t.j5xUSU)
+      return Chunk388032.intl.string(Chunk388032.t.j5xUSU)
     },
     get displayDescription() {
-      return C.intl.string(C.t.j5xUSU)
+      return Chunk388032.intl.string(Chunk388032.t.j5xUSU)
     },
     options: [{
       name: "message",
       displayName: "message",
-      type: f.jw.STRING,
+      type: Chunk911969.jw.STRING,
       get description() {
-        return C.intl.string(C.t.JewOra)
+        return Chunk388032.intl.string(Chunk388032.t.JewOra)
       },
       get displayDescription() {
-        return C.intl.string(C.t.JewOra)
+        return Chunk388032.intl.string(Chunk388032.t.JewOra)
       }
     }],
     execute: e => {
@@ -125,24 +126,24 @@ let L = n(227419).Z,
     id: "-2",
     untranslatedName: "tableflip",
     displayName: "tableflip",
-    type: f.yU.CHAT,
-    inputType: T.iw.BUILT_IN_TEXT,
-    applicationId: S.bi.BUILT_IN,
+    type: Chunk911969.yU.CHAT,
+    inputType: Chunk895924.iw.BUILT_IN_TEXT,
+    applicationId: Chunk689079.bi.BUILT_IN,
     get untranslatedDescription() {
-      return C.intl.string(C.t.nrQRcX)
+      return Chunk388032.intl.string(Chunk388032.t.nrQRcX)
     },
     get displayDescription() {
-      return C.intl.string(C.t.nrQRcX)
+      return Chunk388032.intl.string(Chunk388032.t.nrQRcX)
     },
     options: [{
       name: "message",
       displayName: "message",
-      type: f.jw.STRING,
+      type: Chunk911969.jw.STRING,
       get description() {
-        return C.intl.string(C.t.EI80t7)
+        return Chunk388032.intl.string(Chunk388032.t.EI80t7)
       },
       get displayDescription() {
-        return C.intl.string(C.t.EI80t7)
+        return Chunk388032.intl.string(Chunk388032.t.EI80t7)
       }
     }],
     execute: e => {
@@ -156,24 +157,24 @@ let L = n(227419).Z,
     id: "-3",
     untranslatedName: "unflip",
     displayName: "unflip",
-    type: f.yU.CHAT,
-    inputType: T.iw.BUILT_IN_TEXT,
-    applicationId: S.bi.BUILT_IN,
+    type: Chunk911969.yU.CHAT,
+    inputType: Chunk895924.iw.BUILT_IN_TEXT,
+    applicationId: Chunk689079.bi.BUILT_IN,
     get untranslatedDescription() {
-      return C.intl.string(C.t.pnnn8f)
+      return Chunk388032.intl.string(Chunk388032.t.pnnn8f)
     },
     get displayDescription() {
-      return C.intl.string(C.t.pnnn8f)
+      return Chunk388032.intl.string(Chunk388032.t.pnnn8f)
     },
     options: [{
       name: "message",
       displayName: "message",
-      type: f.jw.STRING,
+      type: Chunk911969.jw.STRING,
       get description() {
-        return C.intl.string(C.t.ETs6go)
+        return Chunk388032.intl.string(Chunk388032.t.ETs6go)
       },
       get displayDescription() {
-        return C.intl.string(C.t.ETs6go)
+        return Chunk388032.intl.string(Chunk388032.t.ETs6go)
       }
     }],
     execute: e => {
@@ -187,26 +188,26 @@ let L = n(227419).Z,
     id: "-4",
     untranslatedName: "tts",
     displayName: "tts",
-    type: f.yU.CHAT,
-    inputType: T.iw.BUILT_IN_TEXT,
-    applicationId: S.bi.BUILT_IN,
+    type: Chunk911969.yU.CHAT,
+    inputType: Chunk895924.iw.BUILT_IN_TEXT,
+    applicationId: Chunk689079.bi.BUILT_IN,
     get untranslatedDescription() {
-      return C.intl.string(C.t.jZcIiY)
+      return Chunk388032.intl.string(Chunk388032.t.jZcIiY)
     },
     get displayDescription() {
-      return C.intl.string(C.t.jZcIiY)
+      return Chunk388032.intl.string(Chunk388032.t.jZcIiY)
     },
     options: [{
       name: "message",
       displayName: "message",
-      type: f.jw.STRING,
+      type: Chunk911969.jw.STRING,
       get description() {
-        return C.intl.string(C.t["k+sw9v"])
+        return Chunk388032.intl.string(Chunk388032.t["k+sw9v"])
       },
       get displayDescription() {
-        return C.intl.string(C.t["k+sw9v"])
+        return Chunk388032.intl.string(Chunk388032.t["k+sw9v"])
       },
-      required: !0
+      required: true
     }],
     predicate: e => {
       let {
@@ -218,33 +219,33 @@ let L = n(227419).Z,
       var t;
       return {
         content: null != (t = x(e, "message")) ? t : "",
-        tts: !0
+        tts: true
       }
     }
   }, {
     id: "-5",
     untranslatedName: "me",
     displayName: "me",
-    type: f.yU.CHAT,
-    inputType: T.iw.BUILT_IN_TEXT,
-    applicationId: S.bi.BUILT_IN,
+    type: Chunk911969.yU.CHAT,
+    inputType: Chunk895924.iw.BUILT_IN_TEXT,
+    applicationId: Chunk689079.bi.BUILT_IN,
     get untranslatedDescription() {
-      return C.intl.string(C.t.UGO8fX)
+      return Chunk388032.intl.string(Chunk388032.t.UGO8fX)
     },
     get displayDescription() {
-      return C.intl.string(C.t.UGO8fX)
+      return Chunk388032.intl.string(Chunk388032.t.UGO8fX)
     },
     options: [{
       name: "message",
       displayName: "message",
-      type: f.jw.STRING,
+      type: Chunk911969.jw.STRING,
       get description() {
-        return C.intl.string(C.t.RWTgNT)
+        return Chunk388032.intl.string(Chunk388032.t.RWTgNT)
       },
       get displayDescription() {
-        return C.intl.string(C.t.RWTgNT)
+        return Chunk388032.intl.string(Chunk388032.t.RWTgNT)
       },
-      required: !0
+      required: true
     }],
     execute: e => {
       var t;
@@ -257,26 +258,26 @@ let L = n(227419).Z,
     id: "-6",
     untranslatedName: "spoiler",
     displayName: "spoiler",
-    type: f.yU.CHAT,
-    inputType: T.iw.BUILT_IN_TEXT,
-    applicationId: S.bi.BUILT_IN,
+    type: Chunk911969.yU.CHAT,
+    inputType: Chunk895924.iw.BUILT_IN_TEXT,
+    applicationId: Chunk689079.bi.BUILT_IN,
     get untranslatedDescription() {
-      return C.intl.string(C.t.v0eDdX)
+      return Chunk388032.intl.string(Chunk388032.t.v0eDdX)
     },
     get displayDescription() {
-      return C.intl.string(C.t.v0eDdX)
+      return Chunk388032.intl.string(Chunk388032.t.v0eDdX)
     },
     options: [{
       name: "message",
       displayName: "message",
-      type: f.jw.STRING,
+      type: Chunk911969.jw.STRING,
       get description() {
-        return C.intl.string(C.t.D13pbW)
+        return Chunk388032.intl.string(Chunk388032.t.D13pbW)
       },
       get displayDescription() {
-        return C.intl.string(C.t.D13pbW)
+        return Chunk388032.intl.string(Chunk388032.t.D13pbW)
       },
-      required: !0
+      required: true
     }],
     execute: e => {
       var t;
@@ -289,24 +290,24 @@ let L = n(227419).Z,
     id: "-7",
     untranslatedName: "nick",
     displayName: "nick",
-    type: f.yU.CHAT,
-    inputType: T.iw.BUILT_IN,
-    applicationId: S.bi.BUILT_IN,
+    type: Chunk911969.yU.CHAT,
+    inputType: Chunk895924.iw.BUILT_IN,
+    applicationId: Chunk689079.bi.BUILT_IN,
     get untranslatedDescription() {
-      return C.intl.string(C.t.jiHfS0)
+      return Chunk388032.intl.string(Chunk388032.t.jiHfS0)
     },
     get displayDescription() {
-      return C.intl.string(C.t.jiHfS0)
+      return Chunk388032.intl.string(Chunk388032.t.jiHfS0)
     },
     options: [{
       name: "new_nick",
       displayName: "new_nick",
-      type: f.jw.STRING,
+      type: Chunk911969.jw.STRING,
       get description() {
-        return C.intl.string(C.t.WTSzVl)
+        return Chunk388032.intl.string(Chunk388032.t.WTSzVl)
       },
       get displayDescription() {
-        return C.intl.string(C.t.WTSzVl)
+        return Chunk388032.intl.string(Chunk388032.t.WTSzVl)
       }
     }],
     predicate: e => {
@@ -329,37 +330,37 @@ let L = n(227419).Z,
     id: "-10",
     untranslatedName: "thread",
     displayName: "thread",
-    type: f.yU.CHAT,
-    inputType: T.iw.BUILT_IN,
-    applicationId: S.bi.BUILT_IN,
+    type: Chunk911969.yU.CHAT,
+    inputType: Chunk895924.iw.BUILT_IN,
+    applicationId: Chunk689079.bi.BUILT_IN,
     get untranslatedDescription() {
-      return C.intl.string(C.t.t6ZAS0)
+      return Chunk388032.intl.string(Chunk388032.t.t6ZAS0)
     },
     get displayDescription() {
-      return C.intl.string(C.t.t6ZAS0)
+      return Chunk388032.intl.string(Chunk388032.t.t6ZAS0)
     },
     options: [{
       name: "name",
       displayName: "name",
-      type: f.jw.STRING,
+      type: Chunk911969.jw.STRING,
       get description() {
-        return C.intl.string(C.t.TffOfX)
+        return Chunk388032.intl.string(Chunk388032.t.TffOfX)
       },
       get displayDescription() {
-        return C.intl.string(C.t.TffOfX)
+        return Chunk388032.intl.string(Chunk388032.t.TffOfX)
       },
-      required: !0
+      required: true
     }, {
       name: "message",
       displayName: "message",
-      type: f.jw.STRING,
+      type: Chunk911969.jw.STRING,
       get description() {
-        return C.intl.string(C.t.QXfSfX)
+        return Chunk388032.intl.string(Chunk388032.t.QXfSfX)
       },
       get displayDescription() {
-        return C.intl.string(C.t.QXfSfX)
+        return Chunk388032.intl.string(Chunk388032.t.QXfSfX)
       },
-      required: !0
+      required: true
     }],
     predicate: e => {
       let {
@@ -378,37 +379,37 @@ let L = n(227419).Z,
     id: "-11",
     untranslatedName: "kick",
     displayName: "kick",
-    type: f.yU.CHAT,
-    inputType: T.iw.BUILT_IN,
-    applicationId: S.bi.BUILT_IN,
+    type: Chunk911969.yU.CHAT,
+    inputType: Chunk895924.iw.BUILT_IN,
+    applicationId: Chunk689079.bi.BUILT_IN,
     get untranslatedDescription() {
-      return C.intl.string(C.t["03N0UF"])
+      return Chunk388032.intl.string(Chunk388032.t["03N0UF"])
     },
     get displayDescription() {
-      return C.intl.string(C.t["03N0UF"])
+      return Chunk388032.intl.string(Chunk388032.t["03N0UF"])
     },
     options: [{
       name: "user",
       displayName: "user",
-      type: f.jw.USER,
+      type: Chunk911969.jw.USER,
       get description() {
-        return C.intl.string(C.t.gF8IpK)
+        return Chunk388032.intl.string(Chunk388032.t.gF8IpK)
       },
       get displayDescription() {
-        return C.intl.string(C.t.gF8IpK)
+        return Chunk388032.intl.string(Chunk388032.t.gF8IpK)
       },
-      required: !0
+      required: true
     }, {
       name: "reason",
       displayName: "reason",
-      type: f.jw.STRING,
+      type: Chunk911969.jw.STRING,
       get description() {
-        return C.intl.string(C.t.QWldgo)
+        return Chunk388032.intl.string(Chunk388032.t.QWldgo)
       },
       get displayDescription() {
-        return C.intl.string(C.t.QWldgo)
+        return Chunk388032.intl.string(Chunk388032.t.QWldgo)
       },
-      required: !1
+      required: false
     }],
     predicate: e => {
       let {
@@ -440,79 +441,79 @@ let L = n(227419).Z,
     id: "-12",
     untranslatedName: "ban",
     displayName: "ban",
-    type: f.yU.CHAT,
-    inputType: T.iw.BUILT_IN,
-    applicationId: S.bi.BUILT_IN,
+    type: Chunk911969.yU.CHAT,
+    inputType: Chunk895924.iw.BUILT_IN,
+    applicationId: Chunk689079.bi.BUILT_IN,
     get untranslatedDescription() {
-      return C.intl.string(C.t.HWuskp)
+      return Chunk388032.intl.string(Chunk388032.t.HWuskp)
     },
     get displayDescription() {
-      return C.intl.string(C.t.HWuskp)
+      return Chunk388032.intl.string(Chunk388032.t.HWuskp)
     },
     options: [{
       name: "user",
       displayName: "user",
-      type: f.jw.USER,
+      type: Chunk911969.jw.USER,
       get description() {
-        return C.intl.string(C.t.z3XPjo)
+        return Chunk388032.intl.string(Chunk388032.t.z3XPjo)
       },
       get displayDescription() {
-        return C.intl.string(C.t.z3XPjo)
+        return Chunk388032.intl.string(Chunk388032.t.z3XPjo)
       },
-      required: !0
+      required: true
     }, {
       name: "delete_messages",
       displayName: "delete_messages",
-      type: f.jw.INTEGER,
+      type: Chunk911969.jw.INTEGER,
       get description() {
-        return C.intl.string(C.t.smrvAw)
+        return Chunk388032.intl.string(Chunk388032.t.smrvAw)
       },
       get displayDescription() {
-        return C.intl.string(C.t.smrvAw)
+        return Chunk388032.intl.string(Chunk388032.t.smrvAw)
       },
-      required: !0,
+      required: true,
       get choices() {
         return [{
-          name: C.intl.string(C.t["4obaMT"]),
-          displayName: C.intl.string(C.t["4obaMT"]),
+          name: Chunk388032.intl.string(Chunk388032.t["4obaMT"]),
+          displayName: Chunk388032.intl.string(Chunk388032.t["4obaMT"]),
           value: 0
         }, {
-          name: C.intl.string(C.t.RKpitb),
-          displayName: C.intl.string(C.t.RKpitb),
-          value: v.Z.Seconds.HOUR
+          name: Chunk388032.intl.string(Chunk388032.t.RKpitb),
+          displayName: Chunk388032.intl.string(Chunk388032.t.RKpitb),
+          value: Chunk70956.Z.Seconds.HOUR
         }, {
-          name: C.intl.string(C.t["8WfJZ2"]),
-          displayName: C.intl.string(C.t["8WfJZ2"]),
-          value: 6 * v.Z.Seconds.HOUR
+          name: Chunk388032.intl.string(Chunk388032.t["8WfJZ2"]),
+          displayName: Chunk388032.intl.string(Chunk388032.t["8WfJZ2"]),
+          value: 6 * Chunk70956.Z.Seconds.HOUR
         }, {
-          name: C.intl.string(C.t.p1up7u),
-          displayName: C.intl.string(C.t.p1up7u),
-          value: 12 * v.Z.Seconds.HOUR
+          name: Chunk388032.intl.string(Chunk388032.t.p1up7u),
+          displayName: Chunk388032.intl.string(Chunk388032.t.p1up7u),
+          value: 12 * Chunk70956.Z.Seconds.HOUR
         }, {
-          name: C.intl.string(C.t.XuVkkJ),
-          displayName: C.intl.string(C.t.XuVkkJ),
-          value: v.Z.Seconds.DAY
+          name: Chunk388032.intl.string(Chunk388032.t.XuVkkJ),
+          displayName: Chunk388032.intl.string(Chunk388032.t.XuVkkJ),
+          value: Chunk70956.Z.Seconds.DAY
         }, {
-          name: C.intl.string(C.t.gMcDS0),
-          displayName: C.intl.string(C.t.gMcDS0),
-          value: 3 * v.Z.Seconds.DAY
+          name: Chunk388032.intl.string(Chunk388032.t.gMcDS0),
+          displayName: Chunk388032.intl.string(Chunk388032.t.gMcDS0),
+          value: 3 * Chunk70956.Z.Seconds.DAY
         }, {
-          name: C.intl.string(C.t.FA7IUl),
-          displayName: C.intl.string(C.t.FA7IUl),
-          value: 7 * v.Z.Seconds.DAY
+          name: Chunk388032.intl.string(Chunk388032.t.FA7IUl),
+          displayName: Chunk388032.intl.string(Chunk388032.t.FA7IUl),
+          value: 7 * Chunk70956.Z.Seconds.DAY
         }]
       }
     }, {
       name: "reason",
       displayName: "reason",
-      type: f.jw.STRING,
+      type: Chunk911969.jw.STRING,
       get description() {
-        return C.intl.string(C.t.dG4noa)
+        return Chunk388032.intl.string(Chunk388032.t.dG4noa)
       },
       get displayDescription() {
-        return C.intl.string(C.t.dG4noa)
+        return Chunk388032.intl.string(Chunk388032.t.dG4noa)
       },
-      required: !1
+      required: false
     }],
     predicate: e => {
       let {
@@ -546,39 +547,39 @@ let L = n(227419).Z,
     id: "-13",
     untranslatedName: "timeout",
     displayName: "timeout",
-    type: f.yU.CHAT,
-    inputType: T.iw.BUILT_IN,
-    applicationId: S.bi.BUILT_IN,
+    type: Chunk911969.yU.CHAT,
+    inputType: Chunk895924.iw.BUILT_IN,
+    applicationId: Chunk689079.bi.BUILT_IN,
     get untranslatedDescription() {
-      return C.intl.string(C.t.KkPcen)
+      return Chunk388032.intl.string(Chunk388032.t.KkPcen)
     },
     get displayDescription() {
-      return C.intl.string(C.t.KkPcen)
+      return Chunk388032.intl.string(Chunk388032.t.KkPcen)
     },
     options: [{
       name: "user",
       displayName: "user",
-      type: f.jw.USER,
+      type: Chunk911969.jw.USER,
       get description() {
-        return C.intl.string(C.t.UU3VRk)
+        return Chunk388032.intl.string(Chunk388032.t.UU3VRk)
       },
       get displayDescription() {
-        return C.intl.string(C.t.UU3VRk)
+        return Chunk388032.intl.string(Chunk388032.t.UU3VRk)
       },
-      required: !0
+      required: true
     }, {
       name: "duration",
       displayName: "duration",
-      type: f.jw.INTEGER,
+      type: Chunk911969.jw.INTEGER,
       get description() {
-        return C.intl.string(C.t.SNqN1d)
+        return Chunk388032.intl.string(Chunk388032.t.SNqN1d)
       },
       get displayDescription() {
-        return C.intl.string(C.t.SNqN1d)
+        return Chunk388032.intl.string(Chunk388032.t.SNqN1d)
       },
-      required: !0,
+      required: true,
       get choices() {
-        return (0, N.tr)().map(e => D(P({}, e), {
+        return (0, Chunk590433.tr)().map(e => D(P({}, e), {
           name: e.label,
           displayName: e.label
         }))
@@ -586,14 +587,14 @@ let L = n(227419).Z,
     }, {
       name: "reason",
       displayName: "reason",
-      type: f.jw.STRING,
+      type: Chunk911969.jw.STRING,
       get description() {
-        return C.intl.string(C.t.akHScH)
+        return Chunk388032.intl.string(Chunk388032.t.akHScH)
       },
       get displayDescription() {
-        return C.intl.string(C.t.akHScH)
+        return Chunk388032.intl.string(Chunk388032.t.akHScH)
       },
-      required: !1
+      required: false
     }],
     predicate: e => {
       let {
@@ -633,40 +634,40 @@ let L = n(227419).Z,
     id: "-14",
     untranslatedName: "msg",
     displayName: "msg",
-    type: f.yU.CHAT,
-    inputType: T.iw.BUILT_IN,
-    applicationId: S.bi.BUILT_IN,
+    type: Chunk911969.yU.CHAT,
+    inputType: Chunk895924.iw.BUILT_IN,
+    applicationId: Chunk689079.bi.BUILT_IN,
     get untranslatedDescription() {
-      return C.intl.string(C.t.Dg8XZ2)
+      return Chunk388032.intl.string(Chunk388032.t.Dg8XZ2)
     },
     get displayDescription() {
-      return C.intl.string(C.t.Dg8XZ2)
+      return Chunk388032.intl.string(Chunk388032.t.Dg8XZ2)
     },
     options: [{
       name: "user",
       displayName: "user",
-      type: f.jw.USER,
+      type: Chunk911969.jw.USER,
       get description() {
-        return C.intl.string(C.t["KmVq/P"])
+        return Chunk388032.intl.string(Chunk388032.t["KmVq/P"])
       },
       get displayDescription() {
-        return C.intl.string(C.t["KmVq/P"])
+        return Chunk388032.intl.string(Chunk388032.t["KmVq/P"])
       },
-      required: !0
+      required: true
     }, {
       name: "message",
       displayName: "message",
-      type: f.jw.STRING,
+      type: Chunk911969.jw.STRING,
       get description() {
-        return C.intl.string(C.t.oGUuOD)
+        return Chunk388032.intl.string(Chunk388032.t.oGUuOD)
       },
       get displayDescription() {
-        return C.intl.string(C.t.oGUuOD)
+        return Chunk388032.intl.string(Chunk388032.t.oGUuOD)
       },
-      required: !0,
+      required: true,
       get maxLength() {
         var j;
-        return (null == (j = O.default.getCurrentUser()) ? void 0 : j.premiumType) ? A.en1 : A.J6R
+        return (null == (j = Chunk594174.default.getCurrentUser()) ? true : j.premiumType) ? Chunk981631.en1 : Chunk981631.J6R
       }
     }],
     execute: (e, t) => {

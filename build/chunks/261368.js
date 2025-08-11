@@ -1,4 +1,5 @@
 /** Chunk was on web.js **/
+/** chunk id: 261368, original params: e (module,exports,re quire) **/
 var t = "[0-9](_*[0-9])*",
   n = `\\.(${t})`,
   r = "[0-9a-fA-F](_*[0-9a-fA-F])*",
@@ -25,7 +26,7 @@ var t = "[0-9](_*[0-9])*",
     }],
     relevance: 0
   };
-e.exports = function(e) {
+module.exports = function(e) {
   let t = {
       keyword: "abstract as val var vararg get set class object open private protected public noinline crossinline dynamic final enum if else do while for when throw try catch finally import package is in fun override companion reified inline lateinit init interface annotation data sealed internal infix operator out by constructor super tailrec where const inner suspend typealias external expect actual",
       built_in: "Byte Short Char Int Long Boolean Float Double Void Unit Nothing",
@@ -118,13 +119,13 @@ e.exports = function(e) {
       className: "function",
       beginKeywords: "fun",
       end: "[(]|$",
-      returnBegin: !0,
-      excludeEnd: !0,
+      returnBegin: true,
+      excludeEnd: true,
       keywords: t,
       relevance: 5,
       contains: [{
         begin: e.UNDERSCORE_IDENT_RE + "\\s*\\(",
-        returnBegin: !0,
+        returnBegin: true,
         relevance: 0,
         contains: [e.UNDERSCORE_TITLE_MODE]
       }, {
@@ -137,13 +138,13 @@ e.exports = function(e) {
         className: "params",
         begin: /\(/,
         end: /\)/,
-        endsParent: !0,
+        endsParent: true,
         keywords: t,
         relevance: 0,
         contains: [{
           begin: /:/,
           end: /[=,\/]/,
-          endsWithParent: !0,
+          endsWithParent: true,
           contains: [f, e.C_LINE_COMMENT_MODE, d],
           relevance: 0
         }, e.C_LINE_COMMENT_MODE, d, l, c, s, e.C_NUMBER_MODE]
@@ -155,7 +156,7 @@ e.exports = function(e) {
       },
       keywords: "class interface trait",
       end: /[:\{(]|$/,
-      excludeEnd: !0,
+      excludeEnd: true,
       illegal: "extends implements",
       contains: [{
         beginKeywords: "public protected internal private constructor"
@@ -163,15 +164,15 @@ e.exports = function(e) {
         className: "type",
         begin: /</,
         end: />/,
-        excludeBegin: !0,
-        excludeEnd: !0,
+        excludeBegin: true,
+        excludeEnd: true,
         relevance: 0
       }, {
         className: "type",
         begin: /[,:]\s*/,
         end: /[<\(,){\s]|$/,
-        excludeBegin: !0,
-        returnEnd: !0
+        excludeBegin: true,
+        returnEnd: true
       }, l, c]
     }, s, {
       className: "meta",

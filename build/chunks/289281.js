@@ -1,8 +1,9 @@
 /** Chunk was on web.js **/
+/** chunk id: 289281, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-var r = n(172367);
-e.exports = function(e, t) {
+var Chunk172367 = require("./172367.js");
+module.exports = function(e, t) {
   e.setMode("composite"), e.update(r.set(e._latestEditorState, {
-    inCompositionMode: !0
+    inCompositionMode: true
   })), e._onCompositionStart(t)
 }

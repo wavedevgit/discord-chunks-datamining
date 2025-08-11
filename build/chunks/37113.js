@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 37113, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   L9: () => u,
   LY: () => a,
   ND: () => f,
@@ -14,10 +15,10 @@ n.d(t, {
   tI: () => c,
   ws: () => l,
   z8: () => h
-}), n(415506);
-var r = n(981631),
-  i = n(474936),
-  o = n(388032),
+}), require("./415506.js");
+var Chunk981631 = require("./981631.js"),
+  Chunk474936 = require("./474936.js"),
+  Chunk388032 = require("./388032.js"),
   a = function(e) {
     return e[e.RESOLUTION_480 = 480] = "RESOLUTION_480", e[e.RESOLUTION_720 = 720] = "RESOLUTION_720", e[e.RESOLUTION_1080 = 1080] = "RESOLUTION_1080", e[e.RESOLUTION_1440 = 1440] = "RESOLUTION_1440", e[e.RESOLUTION_SOURCE = 0] = "RESOLUTION_SOURCE", e
   }({});
@@ -85,15 +86,15 @@ let d = {
   f = [{
     resolution: 0,
     fps: 60,
-    quality: i.ys.HIGH_STREAMING_QUALITY
+    quality: Chunk474936.ys.HIGH_STREAMING_QUALITY
   }, {
     resolution: 0,
     fps: 30,
-    quality: i.ys.HIGH_STREAMING_QUALITY
+    quality: Chunk474936.ys.HIGH_STREAMING_QUALITY
   }, {
     resolution: 0,
     fps: 15,
-    quality: i.ys.HIGH_STREAMING_QUALITY
+    quality: Chunk474936.ys.HIGH_STREAMING_QUALITY
   }, {
     resolution: 0,
     fps: 5,
@@ -101,38 +102,38 @@ let d = {
   }, {
     resolution: 1440,
     fps: 60,
-    guildPremiumTier: r.Eu4.TIER_2,
-    quality: i.ys.MID_STREAMING_QUALITY
+    guildPremiumTier: Chunk981631.Eu4.TIER_2,
+    quality: Chunk474936.ys.MID_STREAMING_QUALITY
   }, {
     resolution: 1440,
     fps: 30,
-    guildPremiumTier: r.Eu4.TIER_2,
-    quality: i.ys.MID_STREAMING_QUALITY
+    guildPremiumTier: Chunk981631.Eu4.TIER_2,
+    quality: Chunk474936.ys.MID_STREAMING_QUALITY
   }, {
     resolution: 1440,
     fps: 15,
-    guildPremiumTier: r.Eu4.TIER_2,
-    quality: i.ys.MID_STREAMING_QUALITY
+    guildPremiumTier: Chunk981631.Eu4.TIER_2,
+    quality: Chunk474936.ys.MID_STREAMING_QUALITY
   }, {
     resolution: 1080,
     fps: 60,
-    guildPremiumTier: r.Eu4.TIER_2,
-    quality: i.ys.MID_STREAMING_QUALITY
+    guildPremiumTier: Chunk981631.Eu4.TIER_2,
+    quality: Chunk474936.ys.MID_STREAMING_QUALITY
   }, {
     resolution: 1080,
     fps: 30,
-    guildPremiumTier: r.Eu4.TIER_2,
-    quality: i.ys.MID_STREAMING_QUALITY
+    guildPremiumTier: Chunk981631.Eu4.TIER_2,
+    quality: Chunk474936.ys.MID_STREAMING_QUALITY
   }, {
     resolution: 1080,
     fps: 15,
-    guildPremiumTier: r.Eu4.TIER_2,
-    quality: i.ys.MID_STREAMING_QUALITY
+    guildPremiumTier: Chunk981631.Eu4.TIER_2,
+    quality: Chunk474936.ys.MID_STREAMING_QUALITY
   }, {
     resolution: 720,
     fps: 60,
-    guildPremiumTier: r.Eu4.TIER_1,
-    quality: i.ys.MID_STREAMING_QUALITY
+    guildPremiumTier: Chunk981631.Eu4.TIER_1,
+    quality: Chunk474936.ys.MID_STREAMING_QUALITY
   }, {
     resolution: 720,
     fps: 30
@@ -145,8 +146,8 @@ let d = {
   }, {
     resolution: 480,
     fps: 60,
-    guildPremiumTier: r.Eu4.TIER_1,
-    quality: i.ys.MID_STREAMING_QUALITY
+    guildPremiumTier: Chunk981631.Eu4.TIER_1,
+    quality: Chunk474936.ys.MID_STREAMING_QUALITY
   }, {
     resolution: 480,
     fps: 30
@@ -166,17 +167,17 @@ function _(e, t) {
     }
   }
 }
-let p = [_(720), _(1080), _(1440), _(0, () => o.intl.string(o.t.XjXqzs))],
+let p = [_(720), _(1080), _(1440), _(0, () => Chunk388032.intl.string(Chunk388032.t.XjXqzs))],
   h = [_(720), _(1080), _(1440)],
   m = e => 0 === e ? o.intl.string(o.t.XjXqzs) : o.intl.formatToPlainString(o.t.TEOC0N, {
     resolution: e
   }),
   g = [_(480, () => m(480)), _(720, () => m(720)), _(1080, () => m(1080)), _(1440, () => m(1440)), _(0, () => m(0))],
   E = [_(15), _(30), _(60)],
-  b = [_(15, () => o.intl.formatToPlainString(o.t["bW+JCQ"], {
+  b = [_(15, () => Chunk388032.intl.formatToPlainString(Chunk388032.t["bW+JCQ"], {
     value: 15
-  })), _(30, () => o.intl.formatToPlainString(o.t["bW+JCQ"], {
+  })), _(30, () => Chunk388032.intl.formatToPlainString(Chunk388032.t["bW+JCQ"], {
     value: 30
-  })), _(60, () => o.intl.formatToPlainString(o.t["bW+JCQ"], {
+  })), _(60, () => Chunk388032.intl.formatToPlainString(Chunk388032.t["bW+JCQ"], {
     value: 60
   }))]

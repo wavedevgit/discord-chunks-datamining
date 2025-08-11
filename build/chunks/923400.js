@@ -1,15 +1,16 @@
 /** Chunk was on 73628 **/
-A.d(t, {
+/** chunk id: 923400, original params: e,t,A (module,exports,require) **/
+require.d(exports, {
   M: () => l
 });
-var n = A(83439),
-  r = A(100781);
+var Chunk83439 = require("./83439.js"),
+  Chunk100781 = require("./100781.js");
 let l = [{
   name: "cool-frog",
   alt: "A cool frog",
-  data: n.Z
+  data: Chunk83439.Z
 }, {
   name: "cute-bunny",
   alt: "A cute bunny",
-  data: r.Z
+  data: Chunk100781.Z
 }]

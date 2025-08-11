@@ -1,18 +1,19 @@
 /** Chunk was on 1272 **/
-n.d(t, {
+/** chunk id: 107105, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   bG: () => a,
   bY: () => o
 });
-var r, i = n(358085),
-  l = n(75060),
-  a = ((r = {})[r.UNHANDLED = -1] = "UNHANDLED", r[r.NOMINAL = 0] = "NOMINAL", r[r.FAIR = 1] = "FAIR", r[r.SERIOUS = 2] = "SERIOUS", r[r.CRITICAL = 3] = "CRITICAL", r);
+var r, Chunk358085 = require("./358085.js"),
+  Chunk75060 = require("./75060.js"),
+  a = ((r = {})[r.UNHANDLED = false] = "UNHANDLED", r[r.NOMINAL = 0] = "NOMINAL", r[r.FAIR = 1] = "FAIR", r[r.SERIOUS = 2] = "SERIOUS", r[r.CRITICAL = 3] = "CRITICAL", r);
 
 function o() {
-  var e = l.Z.getRawThermalState();
-  if (null == e) return -1;
-  if ((0, i.isIOS)()) return e;
-  if (!(0, i.isAndroid)()) return -1;
-  switch (e) {
+  var e = Chunk75060.Z.getRawThermalState();
+  if (null == module) return false;
+  if ((0, Chunk358085.isIOS)()) return module;
+  if (!(0, Chunk358085.isAndroid)()) return false;
+  switch (module) {
     case 0:
       return 0;
     case 1:
@@ -25,6 +26,6 @@ function o() {
     case 6:
       return 3;
     default:
-      return -1
+      return false
   }
 }

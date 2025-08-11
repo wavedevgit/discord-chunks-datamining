@@ -1,4 +1,5 @@
 /** Chunk was on 89298 **/
+/** chunk id: 461393, original params: e,t,n (module,exports,require) **/
 function i(e, t, n, i) {
   let {
     maxWidth: r,
@@ -25,7 +26,7 @@ function r(e, t) {
     height: Math.max(0, Math.min(e.height, i))
   }
 }
-n.d(t, {
+require.d(exports, {
   S: () => i,
   h: () => r
 })

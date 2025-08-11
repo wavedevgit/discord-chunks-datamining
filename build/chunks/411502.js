@@ -1,10 +1,11 @@
 /** Chunk was on 50448 **/
+/** chunk id: 411502, original params: t,r,n (module,exports,require) **/
 "use strict";
-n(220159)({
+require("./220159.js")({
   target: "Symbol",
-  stat: !0,
+  stat: true,
   name: "isWellKnownSymbol",
-  forced: !0
+  forced: true
 }, {
-  isWellKnown: n(505414)
+  isWellKnown: require("./505414.js")
 })

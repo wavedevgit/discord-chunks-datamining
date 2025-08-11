@@ -1,15 +1,16 @@
 /** Chunk was on 31649 **/
-n.d(e, {
+/** chunk id: 720449, original params: t,e,n (module,exports,require) **/
+require.d(exports, {
   Z: () => d
-}), n(781311);
-var l = n(913527),
-  a = n.n(l),
-  r = n(381499),
-  i = n(695346),
-  o = n(626135),
-  s = n(337953),
-  u = n(875425),
-  c = n(981631);
+}), require("./781311.js");
+var Chunk913527 = require("./913527.js"),
+  a = require.n(Chunk913527),
+  Chunk381499 = require("./381499.js"),
+  Chunk695346 = require("./695346.js"),
+  Chunk626135 = require("./626135.js"),
+  Chunk337953 = require("./337953.js"),
+  Chunk875425 = require("./875425.js"),
+  Chunk981631 = require("./981631.js");
 
 function d(t) {
   let {
@@ -22,7 +23,7 @@ function d(t) {
     customStatusLabel: p,
     analyticsLocations: h
   } = t, b = e.trim();
-  if (!(b.length > 0) && null == n) return i.Ok.updateSetting(void 0);
+  if (!(b.length > 0) && null == n) return i.Ok.updateSetting(true);
   {
     let t = i.Ok.updateSetting({
       text: b.length > 0 ? b : "",
@@ -32,14 +33,14 @@ function d(t) {
       createdAtMs: String(null != m ? m : a()().toDate().getTime()),
       label: null != p ? r.Gm.create({
         value: p
-      }) : void 0
+      }) : true
     });
     return o.default.track(c.rMx.CUSTOM_STATUS_UPDATED, {
       location: null != d ? d.location : null,
       emoji_type: null == n ? null : null != n.id ? "custom" : "unicode",
       text_len: b.length,
       clear_after: null != l ? "".concat(l) : null,
-      prompt_type: null == f ? void 0 : f.value,
+      prompt_type: null == f ? true : f.value,
       label: null != p ? p : null,
       location_stack: h
     }), t

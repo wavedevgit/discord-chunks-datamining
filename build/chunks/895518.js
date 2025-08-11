@@ -1,5 +1,6 @@
 /** Chunk was on 60333 **/
-e.exports = {
+/** chunk id: 895518, original params: e,n,t (module,exports,require) **/
+module.exports = {
   ctaButtons: "ctaButtons_a77fde",
   cta: "cta_a77fde",
   shine: "shine_a77fde",

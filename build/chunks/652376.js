@@ -1,24 +1,25 @@
 /** Chunk was on 34779 **/
-n.d(t, {
+/** chunk id: 652376, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => c
 });
-var r = n(73800),
-  i = n(442837),
-  l = n(623633),
-  o = n(199902),
-  s = n(19780),
-  a = n(979651);
+var Chunk73800 = require("./73800.js"),
+  Chunk442837 = require("./442837.js"),
+  Chunk623633 = require("./623633.js"),
+  Chunk199902 = require("./199902.js"),
+  Chunk19780 = require("./19780.js"),
+  Chunk979651 = require("./979651.js");
 
 function c(e) {
   var t;
   let n = (0, i.e7)([s.Z], () => s.Z.getGuildId()),
     c = e.children.map(e => e.id),
     u = null != n && c.includes(n),
-    d = !1,
-    h = !1,
-    p = !1,
+    d = false,
+    h = false,
+    p = false,
     f = (0, i.e7)([s.Z], () => s.Z.getChannelId()),
-    g = null == (t = (0, l.Z)()) ? void 0 : t.guild_id,
+    g = null == (t = (0, l.Z)()) ? true : t.guild_id,
     m = null != g && c.includes(g),
     b = (0, i.e7)([a.Z], () => null != f && a.Z.hasVideo(f), [f]),
     O = (0, i.e7)([o.Z], () => o.Z.getCurrentUserActiveStream());

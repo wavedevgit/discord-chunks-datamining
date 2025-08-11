@@ -1,0 +1,111 @@
+/** Chunk was on 62635 **/
+/** chunk id: 564232, original params: e,t,r (module,exports,require) **/
+require.d(exports, {
+  default: () => y
+});
+var Chunk255367 = require("./255367.js"),
+  Chunk73800 = require("./73800.js"),
+  Chunk392711 = require("./392711.js"),
+  s = require.n(Chunk392711),
+  Chunk442837 = require("./442837.js"),
+  Chunk82659 = require("./82659.jsx"),
+  Chunk481060 = require("./481060.js"),
+  Chunk239091 = require("./239091.js"),
+  Chunk276264 = require("./276264.jsx"),
+  Chunk670188 = require("./670188.js"),
+  Chunk271383 = require("./271383.js"),
+  Chunk699516 = require("./699516.js"),
+  Chunk594174 = require("./594174.js"),
+  Chunk432496 = require("./432496.js"),
+  Chunk388032 = require("./388032.jsx"),
+  Chunk763147 = require("./763147.js");
+
+function I(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var r = null != arguments[t] ? arguments[t] : {},
+      n = Object.keys(r);
+    "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(r, e).enumerable
+    }))), n.forEach(function(t) {
+      var n;
+      n = r[t], t in e ? Object.defineProperty(e, t, {
+        value: n,
+        enumerable: true,
+        configurable: true,
+        writable: true
+      }) : e[t] = n
+    })
+  }
+  return e
+}
+
+function j(e) {
+  let {
+    guildId: t,
+    guildOwnerId: u,
+    member: s
+  } = e, o = g.default.getUser(s.userId), l = i.useRef(null);
+  return <f.Z targetElementRef={l} userId={s.userId} guildId={t} spacing={14} clickTrap={true}>{(e, i) => {
+      let {
+        isShown: c
+      } = i;
+      return (0, n.jsx)(a.Z, I({
+        ref: l,
+        className: h.member,
+        selected: c,
+        colorString: s.colorString,
+        colorStrings: s.colorStrings,
+        user: o,
+        isOwner: s.userId === u,
+        nick: s.nick,
+        premiumSince: null == s.premiumSince ? null : new Date(s.premiumSince),
+        guildId: t,
+        onContextMenu: e => {
+          (0, d.jW)(e, async () => {
+            let {
+              default: e
+            } = await Promise.all([r.e("79695"), r.e("26976"), r.e("88606")]).then(r.bind(r, 415118));
+            return r => {
+              var i, u;
+              return (0, n.jsx)(e, (i = I({}, r), u = u = {
+                user: o,
+                guildId: t,
+                showMediaItems: true
+              }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(u)) : (function(e, t) {
+                var r = Object.keys(e);
+                if (Object.getOwnPropertySymbols) {
+                  var n = Object.getOwnPropertySymbols(e);
+                  r.push.apply(r, n)
+                }
+                return r
+              })(Object(u)).forEach(function(e) {
+                Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(u, e))
+              }), i))
+            }
+          })
+        }
+      }, e), s.userId)
+    }}</f.Z>
+}
+
+function y(e) {
+  let {
+    guild: t,
+    transitionState: r,
+    onClose: u
+  } = e, d = i.useMemo(() => b.Z.getFriendIDs(), []);
+  i.useEffect(() => {
+    p.Z.fetchFriendMembersIfNotFetched(t.id, d)
+  }, [t.id, d]);
+  let a = (0, o.e7)([m.ZP], () => m.ZP.getMembers(t.id)),
+    f = i.useMemo(() => s()(a).filter(e => !!d.includes(e.userId) && null != g.default.getUser(e.userId)).sortBy(e => {
+      var t;
+      let r = g.default.getUser(e.userId);
+      return (null != r ? null != (t = e.nick) ? t : r.username : "").toLocaleLowerCase()
+    }).map(e => <j guildId={t.id} guildOwnerId={t.ownerId} member={e} />).value(), [d, t.id, t.ownerId, a]),
+    h = p.Z.isFetchingFriendsForGuild(t.id);
+  return <l.Modal title={O.intl.string(O.t.kYxEcH)} subtitle={O.intl.format(h ? O.t.EtQnZm : O.t.OgMdNT, {
+      guildName: t.name,
+      numFriends: f.length
+    })} actions={true} transitionState={r} onClose={u}>{h && <c.$jN />}{f}</l.Modal>
+}

@@ -1,13 +1,14 @@
 /** Chunk was on web.js **/
+/** chunk id: 300284, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => l
 });
-var r = n(73800),
-  i = n(230711),
-  o = n(18438),
-  a = n(981631),
-  s = n(526761);
+var Chunk73800 = require("./73800.js"),
+  Chunk230711 = require("./230711.js"),
+  Chunk18438 = require("./18438.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk526761 = require("./526761.js");
 
 function l() {
   let {
@@ -16,14 +17,14 @@ function l() {
     analyticsLocation: n,
     analyticsLocations: l,
     openWithoutBackstack: c
-  } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
-  return (0, r.useCallback)(() => {
-    null != e && (0, o.Fq)(e), i.Z.open(a.oAB.PROFILE_CUSTOMIZATION, null != e ? s.NB.GUILD : s.NB.USER_PROFILE, {
-      analyticsLocation: n,
+  } = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {};
+  return (0, Chunk73800.useCallback)(() => {
+    null != module && (0, Chunk18438.Fq)(module), Chunk230711.Z.open(Chunk981631.oAB.PROFILE_CUSTOMIZATION, null != module ? Chunk526761.NB.GUILD : Chunk526761.NB.USER_PROFILE, {
+      analyticsLocation: require,
       analyticsLocations: l,
       openWithoutBackstack: c,
-      scrollPosition: t
+      scrollPosition: exports
     })
-  }, [e, t, n, l, c])
+  }, [module, exports, require, l, c])
 }
-n(778825), n(663389)
+require("./778825.js"), require("./663389.js")

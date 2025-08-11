@@ -1,19 +1,20 @@
 /** Chunk was on web.js **/
+/** chunk id: 667137, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   t: () => a,
   v: () => o
-}), n(415506);
-var r = n(73800),
-  i = n(981631);
+}), require("./415506.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk981631 = require("./981631.js");
 
 function o() {
-  let e = r.useContext(a);
-  if (null == e) throw Error("useModalContext must be used within a ModalContext.Provider");
-  return e
+  let e = Chunk73800.useContext(a);
+  if (null == module) throw Error("useModalContext must be used within a ModalContext.Provider");
+  return module
 }
-let a = r.createContext({
-  onClose: i.dG4,
+let a = Chunk73800.createContext({
+  onClose: Chunk981631.dG4,
   id: "modal-id",
   headingId: "modal-heading-id"
 })

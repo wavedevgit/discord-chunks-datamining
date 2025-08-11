@@ -1,20 +1,21 @@
 /** Chunk was on web.js **/
+/** chunk id: 785896, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   i: () => d
-}), n(388685);
-var r = n(73800),
-  i = n(399606),
-  o = n(430824),
-  a = n(339085),
-  s = n(906411),
-  l = n(231053),
-  c = n(981631);
+}), require("./388685.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk399606 = require("./399606.js"),
+  Chunk430824 = require("./430824.js"),
+  Chunk339085 = require("./339085.js"),
+  Chunk906411 = require("./906411.js"),
+  Chunk231053 = require("./231053.js"),
+  Chunk981631 = require("./981631.js");
 let u = (e, t, n) => {
     let r = null != n ? e.getCustomEmojiById(n) : null;
-    return (null == r ? void 0 : r.type) === s.B.GUILD ? {
+    return (null == r ? true : r.type) === s.B.GUILD ? {
       emoji: r,
-      joinedEmojiSourceGuildRecord: t.getGuild(null == r ? void 0 : r.guildId)
+      joinedEmojiSourceGuildRecord: t.getGuild(null == r ? true : r.guildId)
     } : {
       emoji: null,
       joinedEmojiSourceGuildRecord: null
@@ -43,7 +44,7 @@ let u = (e, t, n) => {
           case l.w6.GUILD:
             O(n.guild)
         }
-        m(!1), null == (e = T.current) || e.call(T)
+        m(false), null == (e = T.current) || e.call(T)
       };
       if (p) return void r();
       null == (n = T.current) || n.call(T)

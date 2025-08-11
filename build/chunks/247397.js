@@ -1,22 +1,23 @@
 /** Chunk was on web.js **/
+/** chunk id: 247397, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   NP: () => s,
   Xe: () => o,
   rR: () => a
 });
-var r = n(296009),
-  i = n(388032);
+var Chunk296009 = require("./296009.js"),
+  Chunk388032 = require("./388032.js");
 let o = {
-    [r.l.FAVORITE_GAMES]: 1,
-    [r.l.CURRENT_GAMES]: 3,
-    [r.l.WANT_TO_PLAY_GAMES]: 8,
-    [r.l.PLAYED_GAMES]: 8
+    [Chunk296009.l.FAVORITE_GAMES]: 1,
+    [Chunk296009.l.CURRENT_GAMES]: 3,
+    [Chunk296009.l.WANT_TO_PLAY_GAMES]: 8,
+    [Chunk296009.l.PLAYED_GAMES]: 8
   },
-  a = [r.l.FAVORITE_GAMES, r.l.CURRENT_GAMES, r.l.WANT_TO_PLAY_GAMES, r.l.PLAYED_GAMES],
+  a = [Chunk296009.l.FAVORITE_GAMES, Chunk296009.l.CURRENT_GAMES, Chunk296009.l.WANT_TO_PLAY_GAMES, Chunk296009.l.PLAYED_GAMES],
   s = {
-    [r.l.FAVORITE_GAMES]: i.t.sUQar6,
-    [r.l.CURRENT_GAMES]: i.t.SqNnur,
-    [r.l.WANT_TO_PLAY_GAMES]: i.t.bWSQwc,
-    [r.l.PLAYED_GAMES]: i.t.scOKER
+    [Chunk296009.l.FAVORITE_GAMES]: Chunk388032.t.sUQar6,
+    [Chunk296009.l.CURRENT_GAMES]: Chunk388032.t.SqNnur,
+    [Chunk296009.l.WANT_TO_PLAY_GAMES]: Chunk388032.t.bWSQwc,
+    [Chunk296009.l.PLAYED_GAMES]: Chunk388032.t.scOKER
   }

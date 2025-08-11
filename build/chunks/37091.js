@@ -1,17 +1,18 @@
 /** Chunk was on web.js **/
+/** chunk id: 37091, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => y
 });
-var r, i = n(442837),
-  o = n(570140);
+var r, Chunk442837 = require("./442837.js"),
+  Chunk570140 = require("./570140.js");
 
 function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -45,11 +46,11 @@ function c(e, t) {
   }), e
 }
 let u = {
-    enabled: !1
+    enabled: false
   },
   d = {},
   f = {},
-  _ = !1;
+  _ = false;
 
 function p(e) {
   let {
@@ -67,7 +68,7 @@ function h(e) {
     userId: t,
     channelId: n
   } = e, r = d[n];
-  if (null == r) return !1;
+  if (null == r) returnfalse;
   delete r[t]
 }
 
@@ -86,7 +87,7 @@ function g(e) {
     waitingUserId: i,
     channelId: o
   } = e, a = null != (t = d[o]) ? t : {}, l = a[i];
-  if (delete a[i], null == l) return !1;
+  if (delete a[i], null == l) returnfalse;
   f[o] = c(s({}, f[o]), {
     [i]: [l, n],
     [r]: [n, l]
@@ -102,18 +103,18 @@ function E(e) {
   } = e, o = null != (t = f[i]) ? t : {};
   delete o[n], delete o[r]
 }
-class b extends(r = i.ZP.DeviceSettingsStore) {
+class b extends(r = Chunk442837.ZP.DeviceSettingsStore) {
   initialize() {
-    let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : u;
-    _ = e.enabled
+    let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : u;
+    _ = module.enabled
   }
   getWaitingHighFive(e, t) {
     var n;
-    return null == (n = d[e]) ? void 0 : n[t]
+    return null == (n = d[e]) ? true : n[t]
   }
   getCompletedHighFive(e, t) {
     var n;
-    return null == (n = f[e]) ? void 0 : n[t]
+    return null == (n = f[e]) ? true : n[t]
   }
   getEnabled() {
     return _
@@ -125,7 +126,7 @@ class b extends(r = i.ZP.DeviceSettingsStore) {
   }
 }
 a(b, "persistKey", "HighFiveStore");
-let y = new b(o.Z, {
+let y = new b(Chunk570140.Z, {
   HIGH_FIVE_QUEUE: p,
   HIGH_FIVE_REMOVE: h,
   HIGH_FIVE_SET_ENABLED: m,

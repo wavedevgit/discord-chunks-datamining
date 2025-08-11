@@ -1,22 +1,23 @@
 /** Chunk was on 1272 **/
+/** chunk id: 63023, original params: e,t,n (module,exports,require) **/
 function r(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
-n.d(t, {
+require.d(exports, {
   Z: () => i
-}), n(539854);
+}), require("./539854.js");
 class i {
   _processQueue() {
     setTimeout(() => {
       if (this._queue.length > 0 && this._tokenCount > 0) {
         this._tokenCount--, null == this._intervalID && (this._intervalID = setInterval(() => this._iterate(), this._intervalPeriod));
         let e = this._queue.shift();
-        null == e || e(), this._processQueue()
+        null == module || module(), this._processQueue()
       }
     }, 0)
   }
@@ -29,6 +30,6 @@ class i {
     })
   }
   constructor(e, t) {
-    r(this, "_capacity", void 0), r(this, "_tokenCount", void 0), r(this, "_queue", void 0), r(this, "_intervalPeriod", void 0), r(this, "_intervalID", void 0), this._capacity = e, this._tokenCount = e, this._queue = [], this._intervalPeriod = t / e, this._intervalID = null
+    r(this, "_capacity", true), r(this, "_tokenCount", true), r(this, "_queue", true), r(this, "_intervalPeriod", true), r(this, "_intervalID", true), this._capacity = e, this._tokenCount = e, this._queue = [], this._intervalPeriod = t / e, this._intervalID = null
   }
 }

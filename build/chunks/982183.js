@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 982183, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   $J: () => l,
   AQ: () => u,
   H_: () => f,
@@ -17,22 +18,22 @@ n.d(t, {
   ln: () => y,
   r0: () => O
 });
-var r = n(70956),
-  i = n(411198),
-  o = n(981631),
-  a = n(388032);
+var Chunk70956 = require("./70956.js"),
+  Chunk411198 = require("./411198.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk388032 = require("./388032.jsx");
 let s = "Notifications Inbox",
   l = 88,
-  c = r.Z.Millis.WEEK,
+  c = Chunk70956.Z.Millis.WEEK,
   u = 50,
   d = "notifications-inbox";
 
 function f() {
-  return (0, i.yS)({
-    id: o.STv,
-    name: a.intl.string(a.t.HcoRu7),
+  return (0, Chunk411198.yS)({
+    id: Chunk981631.STv,
+    name: Chunk388032.intl.string(Chunk388032.t.HcoRu7),
     description: "",
-    icon: void 0,
+    icon: true,
     features: []
   })
 }
@@ -46,18 +47,18 @@ var _ = function(e) {
     return e.ALL_MESSAGES_CHANNEL = "ALL_MESSAGES_CHANNEL", e.MENTION = "MENTION", e.BOOKMARK = "BOOKMARK", e
   }({});
 let m = {
-  UNREAD: a.t.sRUdBw,
-  TODAY: a.t.F4jZQk,
-  YESTERDAY: a.t.gnv4pK,
-  OLDER: a.t.exrPZm
+  UNREAD: Chunk388032.t.sRUdBw,
+  TODAY: Chunk388032.t.F4jZQk,
+  YESTERDAY: Chunk388032.t.gnv4pK,
+  OLDER: Chunk388032.t.exrPZm
 };
 
 function g() {
   return {
-    all: a.intl.string(a.t.iWyjNj),
-    bookmarks: a.intl.string(a.t["+rlGYW"]),
-    announcements: a.intl.string(a.t.jR39HB),
-    mentions: a.intl.string(a.t["GRZF9/"])
+    all: Chunk388032.intl.string(Chunk388032.t.iWyjNj),
+    bookmarks: Chunk388032.intl.string(Chunk388032.t["+rlGYW"]),
+    announcements: Chunk388032.intl.string(Chunk388032.t.jR39HB),
+    mentions: Chunk388032.intl.string(Chunk388032.t["GRZF9/"])
   }
 }
 var E = function(e) {

@@ -1,25 +1,26 @@
 /** Chunk was on web.js **/
+/** chunk id: 774073, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   ZP: () => y,
   z6: () => b
-}), n(997841), n(539854);
-var r = n(73800),
-  i = n(512722),
-  o = n.n(i),
-  a = n(683076),
-  s = n(442837),
-  l = n(812206),
-  c = n(835473),
-  u = n(669764),
-  d = n(210753),
-  f = n(626135),
-  _ = n(630388),
-  p = n(539746),
-  h = n(981631);
+}), require("./997841.js"), require("./539854.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk512722 = require("./512722.js"),
+  o = require.n(Chunk512722),
+  Chunk683076 = require("./683076.js"),
+  Chunk442837 = require("./442837.js"),
+  Chunk812206 = require("./812206.js"),
+  Chunk835473 = require("./835473.js"),
+  Chunk669764 = require("./669764.js"),
+  Chunk210753 = require("./210753.js"),
+  Chunk626135 = require("./626135.js"),
+  Chunk630388 = require("./630388.js"),
+  Chunk539746 = require("./539746.js"),
+  Chunk981631 = require("./981631.js");
 let m = function(e, t) {
-    let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : [],
-      r = arguments.length > 3 ? arguments[3] : void 0;
+    let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : [],
+      r = arguments.length > 3 ? arguments[3] : true;
     f.default.track(h.rMx.GAME_PROFILE_ENTRY_POINT_AVAILABLE, {
       game_profile_available: e,
       application_id: t,
@@ -37,18 +38,18 @@ let m = function(e, t) {
     let {
       location: t,
       applicationId: n = "",
-      autoTrackExposure: i = !0,
+      autoTrackExposure: i = true,
       source: a,
-      trackEntryPointImpression: l = !0
-    } = e, f = r.useRef(!1), _ = (0, p.xG)(t, i);
+      trackEntryPointImpression: l = true
+    } = e, f = r.useRef(false), _ = (0, p.xG)(t, i);
     (0, d.M)(_ && "" !== n ? n : null);
     let h = (0, s.e7)([u.Z], () => u.Z.getGame(n)),
       b = (0, c.q)(n),
       y = r.useMemo(() => null != h && null != b ? E(h, b) : null, [b, h]);
     return r.useEffect(() => {
-      !f.current && _ && l && !1 === u.Z.isFetching(n) && null != h && null != y && (o()(null != a, "Cannot track a Game Profile Entry Point Impressions without a source."), m(y, n, g(h), a), f.current = !0)
+      !f.current && _ && l && false === u.Z.isFetching(n) && null != h && null != y && (o()(null != a, "Cannot track a Game Profile Entry Point Impressions without a source."), m(y, n, g(h), a), f.current = true)
     }, [y, n, _, h, a, l]), {
-      shouldOpenGameProfile: _ && !0 === y,
+      shouldOpenGameProfile: _ && true === y,
       applicationId: n
     }
   }

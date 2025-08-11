@@ -1,24 +1,25 @@
 /** Chunk was on web.js **/
+/** chunk id: 844070, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   T: () => d,
   z: () => f
 });
-var r = n(493683),
-  i = n(529103),
-  o = n(292556),
-  a = n(100527),
-  s = n(768581),
-  l = n(981631),
-  c = n(388032);
+var Chunk493683 = require("./493683.js"),
+  Chunk529103 = require("./529103.js"),
+  Chunk292556 = require("./292556.js"),
+  Chunk100527 = require("./100527.js"),
+  Chunk768581 = require("./768581.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk388032 = require("./388032.jsx");
 
 function u(e, t, n) {
   o.default.showNotification(s.ZP.getUserAvatarURL(e), e.username, t, {}, {
-    omitViewTracking: !0,
-    omitClickTracking: !0,
+    omitViewTracking: true,
+    omitClickTracking: true,
     tag: e.id,
     onClick: n,
-    isUserAvatar: !0
+    isUserAvatar: true
   })
 }
 
@@ -34,7 +35,7 @@ function d(e) {
       })
     }
     i.Z.transitionToSection(l.pJs.PENDING, {
-      explicit: !0
+      explicit: true
     })
   })
 }

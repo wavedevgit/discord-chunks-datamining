@@ -1,4 +1,5 @@
 /** Chunk was on web.js **/
+/** chunk id: 896933, original params: e,t (module,exports,re quire) **/
 "use strict";
 
 function n(e, t, n) {
@@ -20,7 +21,7 @@ function o(e, t, n, r) {
 function a(e, t) {
   this.id = e, this.options = t
 }
-t.default = n, n.prototype.compile = function(e) {
+exports.default = n, n.prototype.compile = function(e) {
   return this.pluralStack = [], this.currentPlural = null, this.pluralNumberFormat = null, this.compileMessage(e)
 }, n.prototype.compileMessage = function(e) {
   if (!(e && "messageFormatPattern" === e.type)) throw Error('Message AST is not of type: "messageFormatPattern"');

@@ -1,23 +1,24 @@
 /** Chunk was on 36878 **/
-n.d(t, {
+/** chunk id: 611811, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => c
 });
-var i = n(442837),
-  o = n(509613),
-  l = n(960412),
-  r = n(151662),
-  a = n(930441),
-  s = n(388032);
-let c = (0, o.ax)("UnsubscribeFromAllMarketingEmails", {
-  useTitle: () => s.intl.string(s.t.Ra9Pws),
-  useSubtitle: () => s.intl.string(s.t.iYjQ8f),
-  useLabel: () => s.intl.string(s.t.KT1pBA),
+var Chunk442837 = require("./442837.js"),
+  Chunk509613 = require("./509613.js"),
+  Chunk960412 = require("./960412.js"),
+  Chunk151662 = require("./151662.js"),
+  Chunk930441 = require("./930441.js"),
+  Chunk388032 = require("./388032.jsx");
+let c = (0, Chunk509613.ax)("UnsubscribeFromAllMarketingEmails", {
+  useTitle: () => Chunk388032.intl.string(Chunk388032.t.Ra9Pws),
+  useSubtitle: () => Chunk388032.intl.string(Chunk388032.t.iYjQ8f),
+  useLabel: () => Chunk388032.intl.string(Chunk388032.t.KT1pBA),
   useVariant: () => "critical-secondary",
   useDisabled: () => {
     let {
       categories: e
-    } = (0, i.cj)([r.Z], () => r.Z.getEmailSettings());
-    return a.M0.every(t => !e[t])
+    } = (0, Chunk442837.cj)([Chunk151662.Z], () => Chunk151662.Z.getEmailSettings());
+    return Chunk930441.M0.every(t => !e[t])
   },
-  onClick: () => (0, l.oc)()
+  onClick: () => (0, Chunk960412.oc)()
 })

@@ -1,18 +1,19 @@
 /** Chunk was on web.js **/
+/** chunk id: 190313, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   E: () => c,
   i: () => l
-}), n(415506);
-var r = n(503461),
-  i = n(218521);
+}), require("./415506.js");
+var Chunk503461 = require("./503461.js"),
+  Chunk218521 = require("./218521.js");
 
 function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -38,14 +39,14 @@ class l {
     }))[0]) ? t : null
   }
   getMany() {
-    let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : [],
-      t = arguments.length > 1 ? arguments[1] : void 0;
+    let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : [],
+      t = arguments.length > 1 ? arguments[1] : true;
     return this.database.execute({
       type: "kv.get_many",
       table: this.tableId,
-      key: (0, i.d)(this.prefix, e),
-      ordering: null == t ? void 0 : t.ordering,
-      limit: null == t ? void 0 : t.limit
+      key: (0, Chunk218521.d)(this.prefix, module),
+      ordering: null == exports ? true : exports.ordering,
+      limit: null == exports ? true : exports.limit
     }, this.defaultDebugTag)
   }
   getRange(e, t, n) {
@@ -55,44 +56,44 @@ class l {
       type: "kv.get_range",
       table: this.tableId,
       range: [r, o],
-      ordering: null == n ? void 0 : n.ordering,
-      limit: null == n ? void 0 : n.limit
+      ordering: null == n ? true : n.ordering,
+      limit: null == n ? true : n.limit
     }, this.defaultDebugTag)
   }
   getKvEntries() {
-    let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : [];
+    let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : [];
     return this.database.execute({
       type: "kv.get_kv_entries",
       table: this.tableId,
-      key: (0, i.d)(this.prefix, e)
+      key: (0, Chunk218521.d)(this.prefix, module)
     }, this.defaultDebugTag)
   }
   getMapEntries() {
-    let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : [];
+    let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : [];
     return this.database.execute({
       type: "kv.get_map_entries",
       table: this.tableId,
-      key: (0, i.d)(this.prefix, e)
+      key: (0, Chunk218521.d)(this.prefix, module)
     }, this.defaultDebugTag)
   }
   getChildIds() {
-    let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : [];
+    let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : [];
     return this.database.execute({
       type: "kv.get_child_ids",
       table: this.tableId,
-      key: (0, i.d)(this.prefix, e)
+      key: (0, Chunk218521.d)(this.prefix, module)
     }, this.defaultDebugTag)
   }
   getParentId() {
-    let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : [];
+    let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : [];
     return this.database.execute({
       type: "kv.get_parent_id",
       table: this.tableId,
-      key: (0, i.m)(this.prefix, e)
+      key: (0, Chunk218521.m)(this.prefix, module)
     }, this.defaultDebugTag)
   }
   put(e) {
-    let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : r.Sn.Replace;
+    let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : r.Sn.Replace;
     return this.database.execute({
       type: "kv.put_one",
       table: this.tableId,
@@ -101,7 +102,7 @@ class l {
     }, this.defaultDebugTag)
   }
   putAll(e) {
-    let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : r.Sn.Replace;
+    let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : r.Sn.Replace;
     return this.database.execute({
       type: "kv.put_many",
       table: this.tableId,
@@ -115,11 +116,11 @@ class l {
     }, this.defaultDebugTag)
   }
   delete() {
-    let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : [];
+    let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : [];
     return this.database.execute({
       type: "kv.delete_many",
       table: this.tableId,
-      key: (0, i.d)(this.prefix, e)
+      key: (0, Chunk218521.d)(this.prefix, module)
     }, this.defaultDebugTag)
   }
   deleteRange(e, t) {
@@ -132,15 +133,15 @@ class l {
     }, this.defaultDebugTag)
   }
   deleteGeneration() {
-    let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : [],
-      t = arguments.length > 1 ? arguments[1] : void 0,
-      n = arguments.length > 2 ? arguments[2] : void 0;
+    let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : [],
+      t = arguments.length > 1 ? arguments[1] : true,
+      n = arguments.length > 2 ? arguments[2] : true;
     return this.database.execute({
       type: "kv.delete_generation",
       table: this.tableId,
-      key: (0, i.d)(this.prefix, e),
-      generation: n,
-      comparer: t
+      key: (0, Chunk218521.d)(this.prefix, module),
+      generation: require,
+      comparer: exports
     }, this.defaultDebugTag)
   }
   transaction(e, t) {
@@ -150,32 +151,32 @@ class l {
     return new c(this.prefix, this.tableId, e)
   }
   getManySyncUnsafe() {
-    let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : [],
-      t = arguments.length > 1 ? arguments[1] : void 0;
+    let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : [],
+      t = arguments.length > 1 ? arguments[1] : true;
     return this.database.executeSync({
       type: "kv.get_many",
       table: this.tableId,
-      key: (0, i.d)(this.prefix, e),
-      ordering: null == t ? void 0 : t.ordering,
-      limit: null == t ? void 0 : t.limit
+      key: (0, Chunk218521.d)(this.prefix, module),
+      ordering: null == exports ? true : exports.ordering,
+      limit: null == exports ? true : exports.limit
     })
   }
   getMapEntriesSyncUnsafe() {
-    let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : [];
+    let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : [];
     return this.database.executeSync({
       type: "kv.get_map_entries",
       table: this.tableId,
-      key: (0, i.d)(this.prefix, e)
+      key: (0, Chunk218521.d)(this.prefix, module)
     })
   }
   constructor(e, t, n, r) {
-    o(this, "prefix", void 0), o(this, "tableId", void 0), o(this, "database", void 0), o(this, "defaultDebugTag", void 0), o(this, "messages", {
+    o(this, "prefix", true), o(this, "tableId", true), o(this, "database", true), o(this, "defaultDebugTag", true), o(this, "messages", {
       getLatest: e => this.database.execute({
         type: "messages.get_latest",
         table: this.tableId,
         guildId: e
       }, this.defaultDebugTag)
-    }), this.prefix = e, this.tableId = t, this.database = n, this.defaultDebugTag = r ? void 0 : null
+    }), this.prefix = e, this.tableId = t, this.database = n, this.defaultDebugTag = r ? true : null
   }
 }
 class c {
@@ -183,7 +184,7 @@ class c {
     return new c(e, t, n)
   }
   put(e) {
-    let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : r.Sn.Replace;
+    let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : r.Sn.Replace;
     this.transaction.add({
       type: "kv.put_one",
       table: this.tableId,
@@ -192,7 +193,7 @@ class c {
     })
   }
   putAll(e) {
-    let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : r.Sn.Replace;
+    let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : r.Sn.Replace;
     this.transaction.add({
       type: "kv.put_many",
       table: this.tableId,
@@ -204,11 +205,11 @@ class c {
     this.delete(), this.putAll(e)
   }
   delete() {
-    let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : [];
+    let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : [];
     this.transaction.add({
       type: "kv.delete_many",
       table: this.tableId,
-      key: (0, i.d)(this.prefix, e)
+      key: (0, Chunk218521.d)(this.prefix, module)
     })
   }
   deleteRange(e, t) {
@@ -221,19 +222,19 @@ class c {
     })
   }
   deleteGeneration() {
-    let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : [],
-      t = arguments.length > 1 ? arguments[1] : void 0,
-      n = arguments.length > 2 ? arguments[2] : void 0;
+    let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : [],
+      t = arguments.length > 1 ? arguments[1] : true,
+      n = arguments.length > 2 ? arguments[2] : true;
     this.transaction.add({
       type: "kv.delete_generation",
       table: this.tableId,
-      key: (0, i.d)(this.prefix, e),
-      generation: n,
-      comparer: t
+      key: (0, Chunk218521.d)(this.prefix, module),
+      generation: require,
+      comparer: exports
     })
   }
   constructor(e, t, n) {
-    o(this, "prefix", void 0), o(this, "tableId", void 0), o(this, "transaction", void 0), o(this, "messages", {
+    o(this, "prefix", true), o(this, "tableId", true), o(this, "transaction", true), o(this, "messages", {
       trimOrphans: e => {
         if (1 !== this.prefix.length || 1 !== e.length) throw Error("trimOrphans: only one prefix component is supported at this time");
         this.transaction.add({

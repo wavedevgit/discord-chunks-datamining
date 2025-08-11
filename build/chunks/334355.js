@@ -1,4 +1,5 @@
 /** Chunk was on web.js **/
+/** chunk id: 334355, original params: e (module,exports,re quire) **/
 let t = "[A-Za-z$_][0-9A-Za-z$_]*",
   n = ["as", "in", "of", "if", "for", "while", "finally", "var", "new", "function", "do", "return", "void", "else", "break", "catch", "instanceof", "with", "throw", "case", "default", "try", "switch", "continue", "typeof", "delete", "let", "yield", "const", "class", "debugger", "async", "await", "static", "import", "from", "export", "extends", "using"],
   r = ["true", "false", "null", "undefined", "NaN", "Infinity"],
@@ -7,13 +8,13 @@ let t = "[A-Za-z$_][0-9A-Za-z$_]*",
   a = ["setInterval", "setTimeout", "clearInterval", "clearTimeout", "require", "exports", "eval", "isFinite", "isNaN", "parseFloat", "parseInt", "decodeURI", "decodeURIComponent", "encodeURI", "encodeURIComponent", "escape", "unescape"],
   s = ["arguments", "this", "super", "console", "window", "document", "localStorage", "sessionStorage", "module", "global"],
   l = [].concat(a, i, o);
-e.exports = function(e) {
+module.exports = function(e) {
   let c = e.regex,
     u = (e, {
       after: t
     }) => {
       let n = "</" + e[0].slice(1);
-      return -1 !== e.input.indexOf(n, t)
+      return false !== e.input.indexOf(n, t)
     },
     d = t,
     f = "<>",
@@ -72,7 +73,7 @@ e.exports = function(e) {
       end: "",
       starts: {
         end: "`",
-        returnEnd: !1,
+        returnEnd: false,
         contains: [e.BACKSLASH_ESCAPE, I],
         subLanguage: "xml"
       }
@@ -82,7 +83,7 @@ e.exports = function(e) {
       end: "",
       starts: {
         end: "`",
-        returnEnd: !1,
+        returnEnd: false,
         contains: [e.BACKSLASH_ESCAPE, I],
         subLanguage: "css"
       }
@@ -92,7 +93,7 @@ e.exports = function(e) {
       end: "",
       starts: {
         end: "`",
-        returnEnd: !1,
+        returnEnd: false,
         contains: [e.BACKSLASH_ESCAPE, I],
         subLanguage: "graphql"
       }
@@ -117,13 +118,13 @@ e.exports = function(e) {
             className: "type",
             begin: "\\{",
             end: "\\}",
-            excludeEnd: !0,
-            excludeBegin: !0,
+            excludeEnd: true,
+            excludeBegin: true,
             relevance: 0
           }, {
             className: "variable",
             begin: d + "(?=\\s*(-)|$)",
-            endsParent: !0,
+            endsParent: true,
             relevance: 0
           }, {
             begin: /(?=[^\n])\s/,
@@ -152,8 +153,8 @@ e.exports = function(e) {
       className: "params",
       begin: /(\s*)\(/,
       end: /\)/,
-      excludeBegin: !0,
-      excludeEnd: !0,
+      excludeBegin: true,
+      excludeEnd: true,
       keywords: E,
       contains: w
     },
@@ -219,7 +220,7 @@ e.exports = function(e) {
     B = {
       begin: c.concat(/\./, c.lookahead(c.concat(d, /(?![0-9A-Za-z$_(])/))),
       end: d,
-      excludeBegin: !0,
+      excludeBegin: true,
       keywords: "prototype",
       className: "property",
       relevance: 0
@@ -270,7 +271,7 @@ e.exports = function(e) {
       contains: [C, e.REGEXP_MODE, {
         className: "function",
         begin: F,
-        returnBegin: !0,
+        returnBegin: true,
         end: "\\s*=>",
         contains: [{
           className: "params",
@@ -280,12 +281,12 @@ e.exports = function(e) {
           }, {
             className: null,
             begin: /\(\s*\)/,
-            skip: !0
+            skip: true
           }, {
             begin: /(\s*)\(/,
             end: /\)/,
-            excludeBegin: !0,
-            excludeEnd: !0,
+            excludeBegin: true,
+            excludeEnd: true,
             keywords: E,
             contains: w
           }]
@@ -311,7 +312,7 @@ e.exports = function(e) {
         contains: [{
           begin: h,
           end: m,
-          skip: !0,
+          skip: true,
           contains: ["self"]
         }]
       }]
@@ -319,7 +320,7 @@ e.exports = function(e) {
       beginKeywords: "while if switch catch for"
     }, {
       begin: "\\b(?!function)" + e.UNDERSCORE_IDENT_RE + "\\([^()]*(\\([^()]*(\\([^()]*\\)[^()]*)*\\)[^()]*)*\\)\\s*\\{",
-      returnBegin: !0,
+      returnBegin: true,
       label: "func.def",
       contains: [D, e.inherit(e.TITLE_MODE, {
         begin: d,

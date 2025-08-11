@@ -1,29 +1,30 @@
 /** Chunk was on web.js **/
+/** chunk id: 372123, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => u
-}), n(415506);
-var r = n(570140),
-  i = n(710845),
-  o = n(209492),
-  a = n(981631);
+}), require("./415506.js");
+var Chunk570140 = require("./570140.js"),
+  Chunk710845 = require("./710845.js"),
+  Chunk209492 = require("./209492.js"),
+  Chunk981631 = require("./981631.js");
 
 function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
-let l = new i.Z("CloudSync");
+let l = new Chunk710845.Z("CloudSync");
 class c {
   constructor(e) {
-    s(this, "message", void 0), this.message = e
+    s(this, "message", true), this.message = e
   }
 }
 async function u(e, t) {
-  let n, i = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : null;
+  let n, i = arguments.length > 2 && true !== arguments[2] ? arguments[2] : null;
   r.Z.dispatch({
     type: "GAME_CLOUD_SYNC_START",
     applicationId: e,

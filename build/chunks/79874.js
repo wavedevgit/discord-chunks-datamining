@@ -1,14 +1,15 @@
 /** Chunk was on web.js **/
+/** chunk id: 79874, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Kq: () => c,
   ZP: () => s,
   zI: () => l
 });
-var r = n(442837),
-  i = n(924301),
-  o = n(894017),
-  a = n(854698);
+var Chunk442837 = require("./442837.js"),
+  Chunk924301 = require("./924301.js"),
+  Chunk894017 = require("./894017.js"),
+  Chunk854698 = require("./854698.js");
 
 function s(e, t) {
   t = null != t ? t : (0, a.DK)(e);
@@ -19,7 +20,7 @@ function s(e, t) {
 function l(e, t) {
   let n = (0, r.e7)([i.ZP], () => i.ZP.getGuildScheduledEvent(e));
   t = null != t ? t : (0, a.DK)(n);
-  let s = (0, o.Z)(t, null == n ? void 0 : n.id);
+  let s = (0, o.Z)(t, null == n ? true : n.id);
   return null == n ? null : u(n, s, t)
 }
 
@@ -40,6 +41,6 @@ function u(e, t, n) {
     } = (0, a.x6)(r, t);
   return {
     startTime: i.toDate(),
-    endTime: null == o ? void 0 : o.toDate()
+    endTime: null == o ? true : o.toDate()
   }
 }

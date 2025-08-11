@@ -1,25 +1,26 @@
 /** Chunk was on web.js **/
+/** chunk id: 829883, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   _b: () => h,
   o: () => f,
   zt: () => p,
   zy: () => d
-}), n(704826), n(35282);
-var r = n(633302),
-  i = n(134432),
-  o = n(768581),
-  a = n(358085),
-  s = n(981631);
+}), require("./704826.js"), require("./35282.js");
+var Chunk633302 = require("./633302.js"),
+  Chunk134432 = require("./134432.js"),
+  Chunk768581 = require("./768581.js"),
+  Chunk358085 = require("./358085.js"),
+  Chunk981631 = require("./981631.js");
 let l = "".concat(location.protocol, "//").concat(window.GLOBAL_ENV.CDN_HOST, "/role-icons"),
   c = "".concat(location.protocol).concat(window.GLOBAL_ENV.API_ENDPOINT),
-  u = (0, a.isAndroid)(),
+  u = (0, Chunk358085.isAndroid)(),
   d = (e, t) => {
     if (null == e) return null;
-    let n = null != e.unicodeEmoji ? r.ZP.getByName(r.ZP.convertSurrogateToName(e.unicodeEmoji, !1)) : void 0;
+    let n = null != e.unicodeEmoji ? r.ZP.getByName(r.ZP.convertSurrogateToName(e.unicodeEmoji, false)) : true;
     return {
       customIconSrc: _(e, t),
-      unicodeEmoji: null != n ? n : void 0
+      unicodeEmoji: null != n ? n : true
     }
   },
   f = (e, t) => e.replace(/size=[0-9]+/g, "size=".concat((0, i.oO)(t * (0, i.x_)()))),
@@ -38,5 +39,5 @@ let l = "".concat(location.protocol, "//").concat(window.GLOBAL_ENV.CDN_HOST, "/
   p = e => e.startsWith(l) || e.startsWith("".concat(c, "/roles")) && e.includes("/icons/"),
   h = (e, t) => {
     var n;
-    return (null == t || null == (n = t.tags) ? void 0 : n.subscription_listing_id) != null || e.features.has(s.oNc.ROLE_ICONS)
+    return (null == t || null == (n = t.tags) ? true : n.subscription_listing_id) != null || e.features.has(s.oNc.ROLE_ICONS)
   }

@@ -1,3 +1,4 @@
 /** Chunk was on web.js **/
+/** chunk id: 461147, original params: e (module,exports,re quire) **/
 "use strict";
-e.exports = "/assets/ea84771ce00bb471.svg"
+module.exports = "/assets/ea84771ce00bb471.svg"

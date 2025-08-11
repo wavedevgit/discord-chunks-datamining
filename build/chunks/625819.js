@@ -1,5 +1,6 @@
 /** Chunk was on web.js **/
-e.exports = function(e) {
+/** chunk id: 625819, original params: e (module,exports,re quire) **/
+module.exports = function(e) {
   let t = "\\d(_|\\d)*",
     n = "[eE][-+]?" + t,
     r = t + "(\\." + t + ")?(" + n + ")?",
@@ -14,20 +15,20 @@ e.exports = function(e) {
       illegal: s,
       contains: [{
         beginKeywords: "loop for declare others",
-        endsParent: !0
+        endsParent: true
       }, {
         className: "keyword",
         beginKeywords: "not null constant access function procedure in out aliased exception"
       }, {
         className: "type",
         begin: a,
-        endsParent: !0,
+        endsParent: true,
         relevance: 0
       }]
     };
   return {
     name: "Ada",
-    case_insensitive: !0,
+    case_insensitive: true,
     keywords: {
       keyword: ["abort", "else", "new", "return", "abs", "elsif", "not", "reverse", "abstract", "end", "accept", "entry", "select", "access", "exception", "of", "separate", "aliased", "exit", "or", "some", "all", "others", "subtype", "and", "for", "out", "synchronized", "array", "function", "overriding", "at", "tagged", "generic", "package", "task", "begin", "goto", "pragma", "terminate", "body", "private", "then", "if", "procedure", "type", "case", "in", "protected", "constant", "interface", "is", "raise", "use", "declare", "range", "delay", "limited", "record", "when", "delta", "loop", "rem", "while", "digits", "renames", "with", "do", "mod", "requeue", "xor"],
       literal: ["True", "False"]
@@ -55,29 +56,29 @@ e.exports = function(e) {
       begin: "(\\bwith\\s+)?(\\bprivate\\s+)?\\bpackage\\s+(\\bbody\\s+)?",
       end: "(is|$)",
       keywords: "package body",
-      excludeBegin: !0,
-      excludeEnd: !0,
+      excludeBegin: true,
+      excludeEnd: true,
       illegal: s
     }, {
       begin: "(\\b(with|overriding)\\s+)?\\b(function|procedure)\\s+",
       end: "(\\bis|\\bwith|\\brenames|\\)\\s*;)",
       keywords: "overriding function procedure with is renames return",
-      returnBegin: !0,
+      returnBegin: true,
       contains: [l, {
         className: "title",
         begin: "(\\bwith\\s+)?\\b(function|procedure)\\s+",
         end: "(\\(|\\s+|$)",
-        excludeBegin: !0,
-        excludeEnd: !0,
+        excludeBegin: true,
+        excludeEnd: true,
         illegal: s
       }, c, {
         className: "type",
         begin: "\\breturn\\s+",
         end: "(\\s+|;|$)",
         keywords: "return",
-        excludeBegin: !0,
-        excludeEnd: !0,
-        endsParent: !0,
+        excludeBegin: true,
+        excludeEnd: true,
+        endsParent: true,
         illegal: s
       }]
     }, {
@@ -85,7 +86,7 @@ e.exports = function(e) {
       begin: "\\b(sub)?type\\s+",
       end: "\\s+",
       keywords: "type",
-      excludeBegin: !0,
+      excludeBegin: true,
       illegal: s
     }, c]
   }

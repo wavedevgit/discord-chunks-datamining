@@ -1,12 +1,13 @@
 /** Chunk was on web.js **/
+/** chunk id: 126663, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-Object.defineProperty(t, "__esModule", {
-  value: !0
+Object.defineProperty(exports, "__esModule", {
+  value: true
 });
-var r = n(722433);
-Object.keys(r).forEach(function(e) {
+var Chunk722433 = require("./722433.js");
+Object.keys(Chunk722433).forEach(function(e) {
   "default" !== e && Object.defineProperty(t, e, {
-    enumerable: !0,
+    enumerable: true,
     get: function() {
       return r[e]
     }

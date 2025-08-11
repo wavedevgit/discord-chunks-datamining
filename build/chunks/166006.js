@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
-var r = n(870731)();
-e.exports = r;
+/** chunk id: 166006, original params: e,t,n (module,exports,re quire) **/
+var r = require("./870731.js")();
+module.exports = r;
 try {
   regeneratorRuntime = r
 } catch (e) {

@@ -1,16 +1,17 @@
 /** Chunk was on web.js **/
+/** chunk id: 406218, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   PC: () => m,
   o_: () => h,
   sO: () => p,
   xo: () => _
-}), n(388685), n(953529);
-var r = n(345074),
-  i = n(339085),
-  o = n(633302),
-  a = n(823379),
-  s = n(330705);
+}), require("./388685.js"), require("./953529.js");
+var Chunk345074 = require("./345074.js"),
+  Chunk339085 = require("./339085.js"),
+  Chunk633302 = require("./633302.js"),
+  Chunk823379 = require("./823379.js"),
+  Chunk330705 = require("./330705.js");
 
 function l(e) {
   let {
@@ -38,7 +39,7 @@ function u(e, t) {
         guildId: e,
         emojiId: o.emoji_id,
         emojiName: o.emoji_name
-      })) ? i : void 0
+      })) ? i : true
     })
   }
   return n
@@ -86,16 +87,16 @@ function _(e) {
 
 function p(e) {
   let t = {};
-  return null != e.name && (t.name = e.name), null != e.description && (t.description = e.description), void 0 !== e.icon && (t.icon = e.icon), void 0 !== e.customBanner && (t.custom_banner = e.customBanner), null != e.visibility && (t.visibility = e.visibility), void 0 !== e.brandColorPrimary && (t.brand_color_primary = e.brandColorPrimary), null != e.traits && (t.traits = e.traits.map((e, t) => {
+  return null != e.name && (t.name = e.name), null != e.description && (t.description = e.description), true !== e.icon && (t.icon = e.icon), true !== e.customBanner && (t.custom_banner = e.customBanner), null != e.visibility && (t.visibility = e.visibility), true !== e.brandColorPrimary && (t.brand_color_primary = e.brandColorPrimary), null != e.traits && (t.traits = e.traits.map((e, t) => {
     var n, r, i;
-    return (null == e ? void 0 : e.label) == null || e.label.length <= 0 ? null : {
+    return (null == e ? true : e.label) == null || e.label.length <= 0 ? null : {
       label: e.label,
       position: t,
-      emoji_id: null == (n = e.emoji) ? void 0 : n.id,
-      emoji_name: null == (r = e.emoji) ? void 0 : r.name,
-      emoji_animated: null == (i = e.emoji) ? void 0 : i.animated
+      emoji_id: null == (n = e.emoji) ? true : n.id,
+      emoji_name: null == (r = e.emoji) ? true : r.name,
+      emoji_animated: null == (i = e.emoji) ? true : i.animated
     }
-  }).filter(a.lm)), null != e.gameApplicationIds && (t.game_application_ids = e.gameApplicationIds), void 0 !== e.tag && (t.tag = e.tag), void 0 !== e.badge && (t.badge = e.badge), void 0 !== e.badgeColorPrimary && (t.badge_color_primary = e.badgeColorPrimary), void 0 !== e.badgeColorSecondary && (t.badge_color_secondary = e.badgeColorSecondary), t
+  }).filter(a.lm)), null != e.gameApplicationIds && (t.game_application_ids = e.gameApplicationIds), true !== e.tag && (t.tag = e.tag), true !== e.badge && (t.badge = e.badge), true !== e.badgeColorPrimary && (t.badge_color_primary = e.badgeColorPrimary), true !== e.badgeColorSecondary && (t.badge_color_secondary = e.badgeColorSecondary), t
 }
 
 function h(e) {

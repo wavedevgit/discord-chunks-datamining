@@ -1,19 +1,20 @@
 /** Chunk was on web.js **/
+/** chunk id: 701597, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   DM: () => c,
   SF: () => d,
   iY: () => f
-}), n(415506);
-var r = n(966146),
-  i = n(65154);
+}), require("./415506.js");
+var Chunk966146 = require("./966146.js"),
+  Chunk65154 = require("./65154.js");
 
 function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -47,8 +48,8 @@ function l(e, t) {
   }), e
 }
 let c = Object.freeze({
-  [i.Uc.AUTO]: {},
-  [i.Uc.FULL]: {
+  [Chunk65154.Uc.AUTO]: {},
+  [Chunk65154.Uc.FULL]: {
     encode: {
       width: 1280,
       height: 720
@@ -57,8 +58,8 @@ let c = Object.freeze({
 });
 class u {
   constructor(e) {
-    if (o(this, "capture", void 0), o(this, "encode", void 0), o(this, "bitrateMin", void 0), o(this, "bitrateMax", void 0), o(this, "bitrateTarget", void 0), o(this, "localWant", void 0), null == e.capture && null == e.encode) throw Error("Invalid arguments.");
-    this.capture = null == e.capture ? void 0 : new d(e.capture), this.encode = null == e.encode ? void 0 : new d(e.encode), this.bitrateMin = e.bitrateMin, this.bitrateMax = e.bitrateMax, this.bitrateTarget = e.bitrateTarget, this.localWant = e.localWant
+    if (o(this, "capture", true), o(this, "encode", true), o(this, "bitrateMin", true), o(this, "bitrateMax", true), o(this, "bitrateTarget", true), o(this, "localWant", true), null == e.capture && null == e.encode) throw Error("Invalid arguments.");
+    this.capture = null == e.capture ? true : new d(e.capture), this.encode = null == e.encode ? true : new d(e.encode), this.bitrateMin = e.bitrateMin, this.bitrateMax = e.bitrateMax, this.bitrateTarget = e.bitrateTarget, this.localWant = e.localWant
   }
 }
 class d {
@@ -69,17 +70,17 @@ class d {
     var n, r, i, o, a;
     if (null == e) return t;
     if (null == t) return e;
-    let s = null != (r = null != (n = null == t ? void 0 : t.width) ? n : null == e ? void 0 : e.width) ? r : 0,
-      l = null != (o = null != (i = null == t ? void 0 : t.height) ? i : null == e ? void 0 : e.height) ? o : 0;
+    let s = null != (r = null != (n = null == t ? true : t.width) ? n : null == e ? true : e.width) ? r : 0,
+      l = null != (o = null != (i = null == t ? true : t.height) ? i : null == e ? true : e.height) ? o : 0;
     return {
       width: s,
       height: l,
-      framerate: null != (a = null == t ? void 0 : t.framerate) ? a : null == e ? void 0 : e.framerate,
+      framerate: null != (a = null == t ? true : t.framerate) ? a : null == e ? true : e.framerate,
       pixelCount: s * l
     }
   }
   constructor(e) {
-    o(this, "width", void 0), o(this, "height", void 0), o(this, "framerate", void 0), o(this, "pixelCount", void 0), this.width = e.width, this.height = e.height, this.framerate = e.framerate, this.pixelCount = e.width * e.height
+    o(this, "width", true), o(this, "height", true), o(this, "framerate", true), o(this, "pixelCount", true), this.width = e.width, this.height = e.height, this.framerate = e.framerate, this.pixelCount = e.width * e.height
   }
 }
 class f {
@@ -162,12 +163,12 @@ class f {
   }
   getGoliveQuality(e, t) {
     if (this.goliveSimulcastEnabled && e < 100) return this.getGoliveLQQuality();
-    let n = t / (null != (s = null == (a = this.goliveMaxQuality.encode) ? void 0 : a.pixelCount) ? s : 1);
+    let n = t / (null != (s = null == (a = this.goliveMaxQuality.encode) ? true : a.pixelCount) ? s : 1);
     if (n >= 1 || n <= 0 || !this.goliveUsePixelCounts) return this.goliveMaxQuality;
     let r = Math.ceil(this.goliveMaxQuality.bitrateMin * n),
       i = Math.ceil(this.goliveMaxQuality.bitrateMax * n),
-      o = null != this.goliveMaxQuality.bitrateTarget ? Math.ceil(this.goliveMaxQuality.bitrateTarget * n) : void 0;
-    var a, s, l = void 0;
+      o = null != this.goliveMaxQuality.bitrateTarget ? Math.ceil(this.goliveMaxQuality.bitrateTarget * n) : true;
+    var a, s, l = true;
     if (null != this.goliveMaxQuality.encode && this.goliveAdjustResolution) {
       let e = Math.ceil(this.goliveMaxQuality.encode.width * Math.sqrt(n)),
         t = Math.ceil(this.goliveMaxQuality.encode.height * Math.sqrt(n));
@@ -183,7 +184,7 @@ class f {
       capture: this.goliveMaxQuality.capture,
       bitrateMin: Math.max(r, this.options.videoBitrateFloor),
       bitrateMax: Math.max(i, this.options.videoBitrateFloor),
-      bitrateTarget: null != o ? Math.max(o, this.options.videoBitrateFloor) : void 0,
+      bitrateTarget: null != o ? Math.max(o, this.options.videoBitrateFloor) : true,
       localWant: e
     })
   }
@@ -192,12 +193,12 @@ class f {
       capture: {
         width: 1280,
         height: 720,
-        framerate: i.Gs
+        framerate: Chunk65154.Gs
       },
       encode: {
         width: 1280,
         height: 720,
-        framerate: i.Gs,
+        framerate: Chunk65154.Gs,
         pixelCount: 921600
       },
       bitrateMin: this.options.desktopBitrate.min,
@@ -207,15 +208,15 @@ class f {
   }
   getGoliveLQQuality() {
     var e, t, n, r, o, a, s, l, c, d, f, _;
-    let p = Math.min(i.ef, null != (s = null == (e = this.goliveMaxQuality.encode) ? void 0 : e.width) ? s : i.ef),
-      h = Math.min(i.ru, null != (l = null == (t = this.goliveMaxQuality.encode) ? void 0 : t.height) ? l : i.ru),
-      m = Math.min(i.R$, null != (c = null == (n = this.goliveMaxQuality.encode) ? void 0 : n.framerate) ? c : i.R$),
-      g = Math.min(i.ef, null != (d = null == (r = this.goliveMaxQuality.capture) ? void 0 : r.width) ? d : i.ef);
+    let p = Math.min(Chunk65154.ef, null != (s = null == (e = this.goliveMaxQuality.encode) ? true : module.width) ? s : Chunk65154.ef),
+      h = Math.min(Chunk65154.ru, null != (l = null == (t = this.goliveMaxQuality.encode) ? true : exports.height) ? l : Chunk65154.ru),
+      m = Math.min(Chunk65154.R$, null != (c = null == (n = this.goliveMaxQuality.encode) ? true : require.framerate) ? c : Chunk65154.R$),
+      g = Math.min(Chunk65154.ef, null != (d = null == (r = this.goliveMaxQuality.capture) ? true : Chunk966146.width) ? d : Chunk65154.ef);
     return new u({
       capture: {
         width: g,
-        height: Math.min(i.ru, null != (f = null == (o = this.goliveMaxQuality.capture) ? void 0 : o.height) ? f : i.ru),
-        framerate: Math.min(i.R$, null != (_ = null == (a = this.goliveMaxQuality.capture) ? void 0 : a.framerate) ? _ : i.R$)
+        height: Math.min(Chunk65154.ru, null != (f = null == (o = this.goliveMaxQuality.capture) ? true : o.height) ? f : Chunk65154.ru),
+        framerate: Math.min(Chunk65154.R$, null != (_ = null == (a = this.goliveMaxQuality.capture) ? true : a.framerate) ? _ : Chunk65154.R$)
       },
       encode: {
         width: p,
@@ -223,12 +224,12 @@ class f {
         framerate: m,
         pixelCount: p * h
       },
-      bitrateMin: i.UC,
+      bitrateMin: Chunk65154.UC,
       bitrateMax: this.goliveSimulcastLQBitrateMax,
       bitrateTarget: this.goliveSimulcastLQBitrateTarget
     })
   }
   constructor(e, t, n = i.kS) {
-    o(this, "contextType", void 0), o(this, "connection", void 0), o(this, "options", void 0), o(this, "isMuted", void 0), o(this, "qualityOverwrite", void 0), o(this, "goliveMaxQuality", void 0), o(this, "goliveSimulcastEnabled", void 0), o(this, "goliveSimulcastLQBitrateMax", void 0), o(this, "goliveSimulcastLQBitrateTarget", void 0), o(this, "goliveUsePixelCounts", void 0), o(this, "goliveAdjustResolution", void 0), o(this, "isStreamContext", void 0), o(this, "ladder", void 0), o(this, "lastGoLivePixelCount", void 0), this.contextType = e, this.connection = t, this.options = n, this.isMuted = !1, this.isStreamContext = this.contextType === i.Yn.STREAM, this.ladder = new r.x(n), this.goliveMaxQuality = this.getDefaultGoliveQuality(), this.goliveSimulcastEnabled = !1, this.goliveUsePixelCounts = !1, this.goliveAdjustResolution = !1, this.goliveSimulcastLQBitrateMax = i.pk, this.goliveSimulcastLQBitrateTarget = i.pk, this.lastGoLivePixelCount = {}
+    o(this, "contextType", true), o(this, "connection", true), o(this, "options", true), o(this, "isMuted", true), o(this, "qualityOverwrite", true), o(this, "goliveMaxQuality", true), o(this, "goliveSimulcastEnabled", true), o(this, "goliveSimulcastLQBitrateMax", true), o(this, "goliveSimulcastLQBitrateTarget", true), o(this, "goliveUsePixelCounts", true), o(this, "goliveAdjustResolution", true), o(this, "isStreamContext", true), o(this, "ladder", true), o(this, "lastGoLivePixelCount", true), this.contextType = e, this.connection = t, this.options = n, this.isMuted = false, this.isStreamContext = this.contextType === i.Yn.STREAM, this.ladder = new r.x(n), this.goliveMaxQuality = this.getDefaultGoliveQuality(), this.goliveSimulcastEnabled = false, this.goliveUsePixelCounts = false, this.goliveAdjustResolution = false, this.goliveSimulcastLQBitrateMax = i.pk, this.goliveSimulcastLQBitrateTarget = i.pk, this.lastGoLivePixelCount = {}
   }
 }

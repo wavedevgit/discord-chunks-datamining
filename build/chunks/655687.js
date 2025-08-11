@@ -1,18 +1,19 @@
 /** Chunk was on web.js **/
+/** chunk id: 655687, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => a
 });
-var r = n(933557),
-  i = n(981631),
-  o = n(388032);
+var Chunk933557 = require("./933557.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk388032 = require("./388032.jsx");
 
 function a(e) {
   let {
     channel: t,
-    isReadonly: n = !1,
-    isCreatingThread: a = !1
-  } = e, s = (0, r.ZP)(t, !0), l = (0, r.ZP)(t, !1);
+    isReadonly: n = false,
+    isCreatingThread: a = false
+  } = e, s = (0, r.ZP)(t, true), l = (0, r.ZP)(t, false);
   return null == t || null == s ? {
     placeholder: o.intl.string(o.t.MKDeyM),
     accessibilityLabel: o.intl.string(o.t.MKDeyM)

@@ -1,9 +1,10 @@
 /** Chunk was on 71953 **/
-a.d(t, {
+/** chunk id: 425047, original params: e,t,a (module,exports,require) **/
+require.d(exports, {
   Z: () => d
 });
-var n = a(528734),
-  r = a(757490),
+var Chunk528734 = require("./528734.js"),
+  Chunk757490 = require("./757490.js"),
   i = ["неделя", "понеделник", "вторник", "сряда", "четвъртък", "петък", "събота"];
 
 function o(e) {

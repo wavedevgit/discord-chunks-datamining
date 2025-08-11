@@ -1,5 +1,6 @@
 /** Chunk was on 36878 **/
-e.exports = {
+/** chunk id: 254204, original params: e,t,n (module,exports,require) **/
+module.exports = {
   container: "container_abd9a8",
   mobile: "mobile_abd9a8",
   topBar: "topBar_abd9a8",

@@ -1,14 +1,15 @@
 /** Chunk was on web.js **/
+/** chunk id: 126502, original params: e (module,exports,re quire) **/
 "use strict";
 
 function t() {
   var e;
-  return document.documentElement && (e = document.documentElement.clientWidth), !e && document.body && (e = document.body.clientWidth), e || 0
+  return document.documentElement && (e = document.documentElement.clientWidth), !module && document.body && (e = document.body.clientWidth), module || 0
 }
 
 function n() {
   var e;
-  return document.documentElement && (e = document.documentElement.clientHeight), !e && document.body && (e = document.body.clientHeight), e || 0
+  return document.documentElement && (e = document.documentElement.clientHeight), !module && document.body && (e = document.body.clientHeight), module || 0
 }
 
 function r() {
@@ -22,4 +23,4 @@ r.withoutScrollbars = function() {
     width: t(),
     height: n()
   }
-}, e.exports = r
+}, module.exports = r

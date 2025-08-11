@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 71979, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   jumboContainer: "jumboContainer__5cc6a",
   jumboButton: "jumboButton__5cc6a",
   inlineButton: "inlineButton__5cc6a",

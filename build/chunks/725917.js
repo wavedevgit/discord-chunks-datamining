@@ -1,10 +1,11 @@
 /** Chunk was on web.js **/
+/** chunk id: 725917, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   R: () => d
 });
-var r = n(73800),
-  i = n(136954);
+var Chunk73800 = require("./73800.js"),
+  Chunk136954 = require("./136954.js");
 
 function o(e, t) {
   return u(e) || c(e, t) || s(e, t) || a()
@@ -17,7 +18,7 @@ function a() {
 function s(e, t) {
   if (e) {
     if ("string" == typeof e) return l(e, t);
-    var n = Object.prototype.toString.call(e).slice(8, -1);
+    var n = Object.prototype.toString.call(e).slice(8, false);
     if ("Object" === n && e.constructor && (n = e.constructor.name), "Map" === n || "Set" === n) return Array.from(e);
     if ("Arguments" === n || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return l(e, t)
   }
@@ -32,13 +33,13 @@ function l(e, t) {
 function c(e, t) {
   if ("undefined" != typeof Symbol && Symbol.iterator in Object(e)) {
     var n = [],
-      r = !0,
-      i = !1,
-      o = void 0;
+      r = true,
+      i = false,
+      o = true;
     try {
-      for (var a, s = e[Symbol.iterator](); !(r = (a = s.next()).done) && (n.push(a.value), !t || n.length !== t); r = !0);
+      for (var a, s = e[Symbol.iterator](); !(r = (a = s.next()).done) && (n.push(a.value), !t || n.length !== t); r = true);
     } catch (e) {
-      i = !0, o = e
+      i = true, o = e
     } finally {
       try {
         r || null == s.return || s.return()
@@ -54,20 +55,20 @@ function u(e) {
   if (Array.isArray(e)) return e
 }
 var d = function() {
-  var e = o((0, r.useState)(!1), 2),
-    t = e[0],
-    n = e[1],
-    a = (0, r.useContext)(i.L);
-  return (0, r.useEffect)(function() {
-    var e, t = null == a || null == (e = a.dragDropManager) ? void 0 : e.getBackend(),
+  var e = o((0, Chunk73800.useState)(false), 2),
+    t = module[0],
+    n = module[1],
+    a = (0, Chunk73800.useContext)(Chunk136954.L);
+  return (0, Chunk73800.useEffect)(function() {
+    var e, t = null == a || null == (e = a.dragDropManager) ? true : module.getBackend(),
       r = {
         backendChanged: function(e) {
           n(e.previewEnabled())
         }
       };
-    return n(t.previewEnabled()), t.previewsList().register(r),
+    return require(exports.previewEnabled()), exports.previewsList().register(Chunk73800),
       function() {
-        t.previewsList().unregister(r)
+        exports.previewsList().unregister(Chunk73800)
       }
-  }, [a, a.dragDropManager]), t
+  }, [a, a.dragDropManager]), exports
 }

@@ -1,20 +1,21 @@
 /** Chunk was on web.js **/
+/** chunk id: 847302, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Gg: () => v,
   KH: () => b,
   ZP: () => E
-}), n(388685), n(583741), n(35282), n(539854);
-var r = n(512722),
-  i = n.n(r),
-  o = n(911969),
-  a = n(998698),
-  s = n(465343),
-  l = n(53529),
-  c = n(341702),
-  u = n(925994),
-  d = n(436660),
-  f = n(887490);
+}), require("./388685.js"), require("./583741.js"), require("./35282.js"), require("./539854.js");
+var Chunk512722 = require("./512722.js"),
+  i = require.n(Chunk512722),
+  Chunk911969 = require("./911969.js"),
+  Chunk998698 = require("./998698.js"),
+  Chunk465343 = require("./465343.js"),
+  Chunk53529 = require("./53529.js"),
+  Chunk341702 = require("./341702.js"),
+  Chunk925994 = require("./925994.js"),
+  Chunk436660 = require("./436660.js"),
+  Chunk887490 = require("./887490.js");
 let _ = /(@[^@#]+(?:#0|#\d{4}))|(@[^\s\t@#:]+)(?=[\s\t@:])|(:[a-zA-Z0-9_~]+:)|(#"(?:\ |\\\\|\\"|(?!")\w)+")|(#[^\s\t@#:]+(?=[\s\t@#:]))/g,
   p = new Set(["emoji", "customEmoji", "textMention", "userMention", "roleMention", "channelMention", "staticRouteLink", "soundboard", "timestamp", "gameMention"]),
   h = new Set(["gameMentionInput"]),
@@ -29,7 +30,7 @@ function E(e, t, n) {
   } = e;
   e.isVoid = e => !!p.has(e.type) || i(e), e.isInline = e => !!(p.has(e.type) || h.has(e.type)) || r(e);
   let a = null,
-    s = !0;
+    s = true;
   return e.onChange = () => {
     let r = f.bN.richValue(e);
     (r !== a || e.previewMarkdown !== s) && (l.T.withMergedEntry(e, () => {
@@ -41,14 +42,14 @@ function E(e, t, n) {
 function b(e, t, n) {
   let r = f.bN.areStylesDisabled(e);
   for (let i of f.bN.blocks(e))
-    if (m.has(i[0].type)) r ? O(e, i, !0, null) : y(e, i, t, n);
+    if (m.has(i[0].type)) r ? O(e, i, true, null) : y(e, i, t, n);
     else {
       let [o, a] = i;
       for (let i = o.children.length - 1; i >= 0; i--) {
         let s = o.children[i];
         if (g.has(s.type)) {
           let o = [s, f.C0.child(a, i)];
-          r ? O(e, o, !0, null) : y(e, o, t, n)
+          r ? O(e, o, true, null) : y(e, o, t, n)
         }
       }
     }
@@ -56,25 +57,25 @@ function b(e, t, n) {
 
 function y(e, t, n, r) {
   var i;
-  let o = "line" === t[0].type && (null == (i = t[0].codeBlockState) ? void 0 : i.isInCodeBlock) === !0,
+  let o = "line" === t[0].type && (null == (i = t[0].codeBlockState) ? true : i.isInCodeBlock) === true,
     a = f.q.markdown(t[0], n);
   O(e, t, o, a) && (t = f.q.updateElement(e, t), a = f.q.markdown(t[0], n)), o || (v(e, t, r, a) && (t = f.q.updateElement(e, t), a = f.q.markdown(t[0], n)), I(e, t, n, r, a))
 }
 
 function O(e, t, n, r) {
-  let [i, o] = t, a = !1;
+  let [i, o] = t, a = false;
   for (let t = i.children.length - 1; t >= 0; t--) {
     let s = i.children[t],
       l = t < i.children.length - 1 ? i.children[t + 1] : null;
     if (f.LC.isText(s) && !n) {
       if (null == l || !e.isVoid(l)) continue;
-      let n = !1,
+      let n = false,
         r = 0;
       for (;;) {
         let e = s.text.indexOf("\\", r);
-        if (-1 === e) break;
+        if (false === e) break;
         if (e === s.text.length - 1) {
-          n = !0;
+          n = true;
           break
         }
         r = e + 2
@@ -83,8 +84,8 @@ function O(e, t, n, r) {
         let n = f.C0.child(o, t + 1);
         d.Q.voidToText(e, (0, u.sg)(l, {
           mode: "plain",
-          preventEmojiSurrogates: !0
-        }), n), a = !0
+          preventEmojiSurrogates: true
+        }), n), a = true
       }
     } else if (e.isVoid(s)) {
       let i = f.C0.child(o, t),
@@ -94,8 +95,8 @@ function O(e, t, n, r) {
         };
       (n || null != r && S(e, o, l, r)) && (d.Q.voidToText(e, (0, u.sg)(s, {
         mode: "plain",
-        preventEmojiSurrogates: !0
-      }), i), a = !0)
+        preventEmojiSurrogates: true
+      }), i), a = true)
     }
   }
   return a
@@ -103,7 +104,7 @@ function O(e, t, n, r) {
 
 function v(e, t, n, r) {
   let i = t[1],
-    o = !1,
+    o = false,
     a = [...r.entries].reverse();
   for (let s = 0; s < a.length; s++) {
     let l, u = a[s],
@@ -117,7 +118,7 @@ function v(e, t, n, r) {
             name: u.data.name,
             src: u.data.src,
             surrogate: u.data.surrogate,
-            jumboable: !0 === u.data.jumboable
+            jumboable: true === u.data.jumboable
           },
           children: [{
             text: ""
@@ -131,7 +132,7 @@ function v(e, t, n, r) {
             emojiId: u.data.emojiId,
             name: u.data.name,
             animated: u.data.animated,
-            jumboable: !0 === u.data.jumboable
+            jumboable: true === u.data.jumboable
           },
           children: [{
             text: ""
@@ -221,13 +222,13 @@ function v(e, t, n, r) {
     d.Q.textToVoid(e, l, {
       anchor: _,
       focus: p
-    }), o = !0
+    }), o = true
   }
   return o
 }
 
 function I(e, t, n, r, i) {
-  let [o, a] = t, l = !1;
+  let [o, a] = t, l = false;
   for (let c = o.children.length - 1; c >= 0; c--) {
     let u, d = o.children[c];
     if (!f.LC.isText(d)) continue;
@@ -249,7 +250,7 @@ function I(e, t, n, r, i) {
         node: o
       }) : _.lastIndex = u.index + 1
     }
-    for (let t of h.reverse()) T(e, [d, f.C0.child(a, c)], t.index, t.length, t.node), l = !0
+    for (let t of h.reverse()) T(e, [d, f.C0.child(a, c)], t.index, t.length, t.node), l = true
   }
   return l
 }
@@ -281,13 +282,13 @@ function S(e, t, n, r) {
     if (!e.attributes.includes("codeBlockText") && !e.attributes.includes("inlineCode")) continue;
     let t = e.start,
       n = e.start + e.text.length;
-    if (t <= i && n >= i) return !0
+    if (t <= i && n >= i) returntrue
   }
-  return !1
+  returnfalse
 }
 
 function A(e, t, n) {
-  if ("applicationCommandOption" !== t.type) return !0;
+  if ("applicationCommandOption" !== t.type) returntrue;
   switch (t.optionType) {
     case o.jw.CHANNEL:
       return "channelMention" === n.type;
@@ -299,9 +300,9 @@ function A(e, t, n) {
       return "roleMention" === n.type || "userMention" === n.type || "textMention" === n.type && "@everyone" === n.name;
     case o.jw.STRING: {
       let n = null != e ? a.Z.getOption(e, t.optionName) : null;
-      return (null == n ? void 0 : n.choices) == null && (null == n ? void 0 : n.autocomplete) !== !0
+      return (null == n ? true : n.choices) == null && (null == n ? true : n.autocomplete) !== true
     }
     default:
-      return !1
+      returnfalse
   }
 }

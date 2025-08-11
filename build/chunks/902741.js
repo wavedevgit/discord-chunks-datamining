@@ -1,21 +1,22 @@
 /** Chunk was on 21153 **/
+/** chunk id: 902741, original params: e,t,r (module,exports,require) **/
 "use strict";
-var n = r(73800),
-  o = r(476400),
-  a = r.n(o),
-  i = r(9196),
-  l = r(829307),
-  s = r(116850),
-  u = r(357616),
-  c = r(548142),
-  p = r(59788),
-  f = r(26443),
-  d = r(813943),
+var Chunk73800 = require("./73800.js"),
+  Chunk476400 = require("./476400.js"),
+  a = require.n(Chunk476400),
+  Chunk9196 = require("./9196.js"),
+  Chunk829307 = require("./829307.js"),
+  Chunk116850 = require("./116850.js"),
+  Chunk357616 = require("./357616.js"),
+  Chunk548142 = require("./548142.js"),
+  Chunk59788 = require("./59788.js"),
+  Chunk26443 = require("./26443.js"),
+  Chunk813943 = require("./813943.js"),
   h = function() {
     function e(e, t) {
       for (var r = 0; r < t.length; r++) {
         var n = t[r];
-        n.enumerable = n.enumerable || !1, n.configurable = !0, "value" in n && (n.writable = !0), Object.defineProperty(e, n.key, n)
+        n.enumerable = n.enumerable || false, n.configurable = true, "value" in n && (n.writable = true), Object.defineProperty(e, n.key, n)
       }
     }
     return function(t, r, n) {
@@ -38,9 +39,9 @@ var n = r(73800),
     return t.prototype = Object.create(e && e.prototype, {
       constructor: {
         value: t,
-        enumerable: !1,
-        writable: !0,
-        configurable: !0
+        enumerable: false,
+        writable: true,
+        configurable: true
       }
     }), e && (Object.setPrototypeOf ? Object.setPrototypeOf(t, e) : t.__proto__ = e), h(t, [{
       key: "render",
@@ -103,10 +104,10 @@ var n = r(73800),
                 marginLeft: "20px"
               }
             }
-          }, void 0 === t ? {} : t));
+          }, true === t ? {} : t));
         return n.createElement("div", {
           style: o.picker,
-          className: "photoshop-picker " + (void 0 === r ? "" : r)
+          className: "photoshop-picker " + (true === r ? "" : r)
         }, n.createElement("div", {
           style: o.head
         }, this.props.header), n.createElement("div", {
@@ -141,7 +142,7 @@ var n = r(73800),
         }, n.createElement(f.C, {
           label: "OK",
           onClick: this.props.onAccept,
-          active: !0
+          active: true
         }), n.createElement(f.C, {
           label: "Cancel",
           onClick: this.props.onCancel
@@ -153,11 +154,11 @@ var n = r(73800),
         }))))))
       }
     }]), t
-  }(n.Component);
+  }(Chunk73800.Component);
 b.propTypes = {
   header: a().string,
   styles: a().object
 }, b.defaultProps = {
   header: "Color Picker",
   styles: {}
-}, (0, s.t1)(b)
+}, (0, Chunk116850.t1)(b)

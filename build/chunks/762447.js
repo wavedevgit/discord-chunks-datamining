@@ -1,5 +1,6 @@
 /** Chunk was on 34779 **/
-e.exports = {
+/** chunk id: 762447, original params: e,t,n (module,exports,require) **/
+module.exports = {
   tutorial: "tutorial__73f2a",
   shown: "shown__73f2a",
   arrowGroup: "arrowGroup__73f2a",

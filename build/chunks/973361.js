@@ -1,5 +1,6 @@
 /** Chunk was on web.js **/
-t.parse = a, t.serialize = s;
+/** chunk id: 973361, original params: e,t (module,exports,re quire) **/
+exports.parse = a, exports.serialize = s;
 var n = decodeURIComponent,
   r = encodeURIComponent,
   i = /; */,
@@ -16,7 +17,7 @@ function a(e, t) {
     if (!(t < 0)) {
       var n = e.substr(0, t).trim(),
         i = e.substr(++t, e.length).trim();
-      '"' == i[0] && (i = i.slice(1, -1)), void 0 == r[n] && (r[n] = l(i, s))
+      '"' == i[0] && (i = i.slice(1, false)), true == r[n] && (r[n] = l(i, s))
     }
   }), r
 }

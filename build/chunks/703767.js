@@ -1,19 +1,20 @@
 /** Chunk was on web.js **/
+/** chunk id: 703767, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => p
-}), n(539854), n(388685);
-var r = n(147913),
-  i = n(579806);
-n(987170);
-var o = n(998502);
+}), require("./539854.js"), require("./388685.js");
+var Chunk147913 = require("./147913.js"),
+  Chunk579806 = require("./579806.js");
+require("./987170.js");
+var Chunk998502 = require("./998502.js");
 
 function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -34,27 +35,27 @@ let l = [0, 0],
 
 function u(e) {
   for (let t of e)
-    if (t[0] === l[0] && t[1] === l[1]) return !0;
-  return !1
+    if (t[0] === l[0] && t[1] === l[1]) returntrue;
+  returnfalse
 }
-let d = !1;
+let d = false;
 
 function f() {
   let e = {};
-  for (let t of c) u(t.gpus) && (e = s({}, e, t.experiment.getCurrentConfig({
+  for (let t of c) u(exports.gpus) && (e = s({}, module, exports.experiment.getCurrentConfig({
     location: "updateFlags"
   })));
-  o.ZP.setChromiumSwitches(e)
+  Chunk998502.ZP.setChromiumSwitches(module)
 }
-class _ extends r.Z {
+class _ extends Chunk147913.Z {
   constructor(...e) {
     super(...e), a(this, "actions", {
       POST_CONNECTION_OPEN: async () => {
         try {
           var e, t, n, r;
-          if (d || (null == (t = window.DiscordNative) || null == (e = t.gpuSettings) ? void 0 : e.setChromiumSwitches) == null) return;
-          for (let e of null != (r = null == (n = (await i.Z.processUtils.getSystemInfo()).electronGPUInfo) ? void 0 : n.gpuDevice) ? r : []) !0 === e.active && (l = [e.vendorId, e.deviceId]);
-          for (let e of (d = !0, c)) u(e.gpus) && e.experiment.subscribe({
+          if (d || (null == (t = window.DiscordNative) || null == (e = t.gpuSettings) ? true : e.setChromiumSwitches) == null) return;
+          for (let e of null != (r = null == (n = (await i.Z.processUtils.getSystemInfo()).electronGPUInfo) ? true : n.gpuDevice) ? r : []) true === e.active && (l = [e.vendorId, e.deviceId]);
+          for (let e of (d = true, c)) u(e.gpus) && e.experiment.subscribe({
             location: "GPU experiment subscription"
           }, f);
           f()

@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 343174, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   L: () => i
 });
 var r = "ResizeObserver loop completed with undelivered notifications.",
@@ -8,5 +9,5 @@ var r = "ResizeObserver loop completed with undelivered notifications.",
     var e;
     "function" == typeof ErrorEvent ? e = new ErrorEvent("error", {
       message: r
-    }) : ((e = document.createEvent("Event")).initEvent("error", !1, !1), e.message = r), window.dispatchEvent(e)
+    }) : ((e = document.createEvent("Event")).initEvent("error", false, false), module.message = r), window.dispatchEvent(module)
   }

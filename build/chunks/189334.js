@@ -1,21 +1,22 @@
 /** Chunk was on web.js **/
+/** chunk id: 189334, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => m
-}), n(388685);
-var r = n(147913),
-  i = n(282397),
-  o = n(626135),
-  a = n(131595),
-  s = n(475774),
-  l = n(981631);
+}), require("./388685.js");
+var Chunk147913 = require("./147913.js"),
+  Chunk282397 = require("./282397.js"),
+  Chunk626135 = require("./626135.js"),
+  Chunk131595 = require("./131595.js"),
+  Chunk475774 = require("./475774.js"),
+  Chunk981631 = require("./981631.js");
 
 function c(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 let u = "interaction_iframe_modal";
@@ -44,16 +45,16 @@ function _(e) {
 }
 
 function p(e, t) {
-  let n = null != t ? Date.now() - t : void 0;
+  let n = null != t ? Date.now() - t : true;
   o.default.track(l.rMx.MODAL_DISMISSED, {
     type: u,
     application_id: e.applicationId,
     duration_open_ms: n
   })
 }
-class h extends r.Z {
+class h extends Chunk147913.Z {
   constructor(...e) {
-    super(...e), c(this, "iframeModalOpenTimeMs", void 0), c(this, "actions", {
+    super(...e), c(this, "iframeModalOpenTimeMs", true), c(this, "actions", {
       INTERACTION_MODAL_CREATE: e => {
         d(e)
       },
@@ -61,7 +62,7 @@ class h extends r.Z {
         this.iframeModalOpenTimeMs = Date.now(), f(e)
       },
       INTERACTION_IFRAME_MODAL_CLOSE: e => {
-        p(e, this.iframeModalOpenTimeMs), this.iframeModalOpenTimeMs = void 0
+        p(e, this.iframeModalOpenTimeMs), this.iframeModalOpenTimeMs = true
       },
       RPC_APP_DISCONNECTED: e => {
         _(e)

@@ -1,17 +1,18 @@
 /** Chunk was on 27381 **/
-t.d(e, {
+/** chunk id: 602099, original params: a,e,t (module,exports,require) **/
+require.d(exports, {
   Z: () => n
 });
-var i = t(475637);
+var Chunk475637 = require("./475637.js");
 let n = {
-  ordinalNumber: (0, t(925300).Z)({
+  ordinalNumber: (0, require("./925300.js").Z)({
     matchPattern: /^(\d+)(\.)/i,
     parsePattern: /\d+/i,
     valueCallback: function(a) {
       return parseInt(a, 10)
     }
   }),
-  era: (0, i.Z)({
+  era: (0, Chunk475637.Z)({
     matchPatterns: {
       narrow: /^(e|j)/i,
       abbreviated: /^(eaa.|jaa.)/i,
@@ -23,7 +24,7 @@ let n = {
     },
     defaultParseWidth: "any"
   }),
-  quarter: (0, i.Z)({
+  quarter: (0, Chunk475637.Z)({
     matchPatterns: {
       narrow: /^[1234]/i,
       abbreviated: /^q[1234]/i,
@@ -38,7 +39,7 @@ let n = {
       return a + 1
     }
   }),
-  month: (0, i.Z)({
+  month: (0, Chunk475637.Z)({
     matchPatterns: {
       narrow: /^[thmkeslj]/i,
       abbreviated: /^(tammi|helmi|maalis|huhti|touko|kesä|heinä|elo|syys|loka|marras|joulu)/i,
@@ -51,7 +52,7 @@ let n = {
     },
     defaultParseWidth: "any"
   }),
-  day: (0, i.Z)({
+  day: (0, Chunk475637.Z)({
     matchPatterns: {
       narrow: /^[smtkpl]/i,
       short: /^(su|ma|ti|ke|to|pe|la)/i,
@@ -65,7 +66,7 @@ let n = {
     },
     defaultParseWidth: "any"
   }),
-  dayPeriod: (0, i.Z)({
+  dayPeriod: (0, Chunk475637.Z)({
     matchPatterns: {
       narrow: /^(ap|ip|keskiyö|keskipäivä|aamupäivällä|iltapäivällä|illalla|yöllä)/i,
       any: /^(ap|ip|keskiyöllä|keskipäivällä|aamupäivällä|iltapäivällä|illalla|yöllä)/i

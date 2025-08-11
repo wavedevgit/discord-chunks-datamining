@@ -1,22 +1,23 @@
 /** Chunk was on web.js **/
+/** chunk id: 402235, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   ZP: () => l,
   yH: () => c,
   zI: () => u
 });
-var r = n(442837),
-  i = n(430824),
-  o = n(232062),
-  a = n(944888),
-  s = n(981631);
+var Chunk442837 = require("./442837.js"),
+  Chunk430824 = require("./430824.js"),
+  Chunk232062 = require("./232062.js"),
+  Chunk944888 = require("./944888.js"),
+  Chunk981631 = require("./981631.js");
 
 function l(e, t) {
   let n = (0, r.e7)([i.Z], () => {
       let t = i.Z.getGuild(e);
       return null != t && t.features.has(s.oNc.ENHANCED_ROLE_COLORS)
     }),
-    o = (0, a.ZP)(null != e ? e : void 0, null != t ? t : void 0);
+    o = (0, a.ZP)(null != e ? e : true, null != t ? t : true);
   return n || o
 }
 

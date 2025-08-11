@@ -1,39 +1,40 @@
 /** Chunk was on web.js **/
+/** chunk id: 992713, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => w
-}), n(388685), n(642613);
-var r = n(108131),
-  i = n.n(r),
-  o = n(442837),
-  a = n(570140),
-  s = n(147913),
-  l = n(662896),
-  c = n(710845),
-  u = n(339085),
-  d = n(926491),
-  f = n(592125),
-  _ = n(485386),
-  p = n(430824),
-  h = n(709054),
-  m = n(38618);
+}), require("./388685.js"), require("./642613.js");
+var Chunk108131 = require("./108131.js"),
+  i = require.n(Chunk108131),
+  Chunk442837 = require("./442837.js"),
+  Chunk570140 = require("./570140.js"),
+  Chunk147913 = require("./147913.js"),
+  Chunk662896 = require("./662896.js"),
+  Chunk710845 = require("./710845.js"),
+  Chunk339085 = require("./339085.js"),
+  Chunk926491 = require("./926491.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk485386 = require("./485386.js"),
+  Chunk430824 = require("./430824.js"),
+  Chunk709054 = require("./709054.js"),
+  Chunk38618 = require("./38618.js");
 
 function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 let E = 2e3,
-  b = new c.Z("EntityVersionsManager");
-class y extends s.Z {
+  b = new Chunk710845.Z("EntityVersionsManager");
+class y extends Chunk147913.Z {
   _initialize() {
-    a.Z.subscribe("CONNECTION_OPEN", v)
+    Chunk570140.Z.subscribe("CONNECTION_OPEN", v)
   }
   _terminate() {
-    a.Z.unsubscribe("CONNECTION_OPEN", v)
+    Chunk570140.Z.unsubscribe("CONNECTION_OPEN", v)
   }
   constructor(...e) {
     super(...e), g(this, "actions", {
@@ -45,14 +46,14 @@ class y extends s.Z {
 
 function O(e) {
   var t;
-  let n = null == (t = p.Z.getGuild(e.guild_id)) ? void 0 : t.name;
+  let n = null == (t = p.Z.getGuild(e.guild_id)) ? true : t.name;
   b.fileOnly("received deleted guild entities (id: ".concat(e.guild_id, ", name: ").concat(n, ")")), o.ZP.Emitter.batched(() => {
     null != e.channels && N(e.guild_id, new Set(e.channels)), null != e.roles && C(e.guild_id, new Set(e.roles)), null != e.emojis && R(e.guild_id, new Set(e.emojis)), null != e.stickers && P(e.guild_id, new Set(e.stickers))
   })
 }
 
 function v() {
-  l.Z.getAll().then(e => {
+  Chunk662896.Z.getAll().then(e => {
     e.forEach(e => T(e))
   })
 }
@@ -70,12 +71,12 @@ function T(e) {
 
 function S(e) {
   var t, n, r;
-  let i = null == (t = p.Z.getGuild(e)) ? void 0 : t.name;
+  let i = null == (t = p.Z.getGuild(e)) ? true : t.name;
   b.fileOnly("requesting deleted guild entities (id: ".concat(e, ", name: ").concat(i, ")"));
   let o = A(Object.keys(f.Z.getMutableBasicGuildChannelsForGuild(e))),
     a = A(_.Z.getSortedRoles(e).map(e => e.id)),
     s = A(u.ZP.getGuildEmoji(e).map(e => e.id)),
-    l = A(null != (r = null == (n = d.Z.getStickersByGuildId(e)) ? void 0 : n.map(e => e.id)) ? r : []);
+    l = A(null != (r = null == (n = d.Z.getStickersByGuildId(e)) ? true : n.map(e => e.id)) ? r : []);
   m.Z.getSocket().getDeletedEntityIdsNotMatchingHash(e, o, a, s, l)
 }
 
@@ -94,7 +95,7 @@ function N(e, t) {
       channel: {
         guild_id: e,
         id: n,
-        parent_id: void 0
+        parent_id: true
       }
     })
   })

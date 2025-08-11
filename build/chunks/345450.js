@@ -1,5 +1,6 @@
 /** Chunk was on 95626 **/
-e.exports = {
+/** chunk id: 345450, original params: e,n,t (module,exports,require) **/
+module.exports = {
   header: "header__654c5",
   nitroWheelContainer: "nitroWheelContainer__654c5",
   nitroWheel: "nitroWheel__654c5",

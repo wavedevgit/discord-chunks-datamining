@@ -1,14 +1,15 @@
 /** Chunk was on 21153 **/
+/** chunk id: 992635, original params: e,t,r (module,exports,require) **/
 "use strict";
-var n = r(73800),
-  o = r(476400),
-  a = r.n(o),
-  i = r(9196),
-  l = r(829307),
-  s = r(116850),
-  u = r(176362),
-  c = r(907338),
-  p = r(492546),
+var Chunk73800 = require("./73800.js"),
+  Chunk476400 = require("./476400.js"),
+  a = require.n(Chunk476400),
+  Chunk9196 = require("./9196.js"),
+  Chunk829307 = require("./829307.js"),
+  Chunk116850 = require("./116850.js"),
+  Chunk176362 = require("./176362.js"),
+  Chunk907338 = require("./907338.js"),
+  Chunk492546 = require("./492546.js"),
   f = function(e) {
     var t = e.width,
       r = e.onChange,
@@ -77,10 +78,10 @@ var n = r(73800),
             radius: "2px"
           }
         }
-      }, void 0 === b ? {} : b));
+      }, true === b ? {} : b));
     return n.createElement("div", {
       style: g.picker,
-      className: "google-picker " + (void 0 === v ? "" : v)
+      className: "google-picker " + (true === v ? "" : v)
     }, n.createElement("div", {
       style: g.head
     }, h), n.createElement("div", {
@@ -121,4 +122,4 @@ f.propTypes = {
   width: 652,
   styles: {},
   header: "Color picker"
-}, (0, s.t1)(f)
+}, (0, Chunk116850.t1)(f)

@@ -1,5 +1,6 @@
 /** Chunk was on 34779 **/
-e.exports = {
+/** chunk id: 940751, original params: e,t,n (module,exports,require) **/
+module.exports = {
   pill: "pill_c9fddf",
   favoriteIcon: "favoriteIcon_c9fddf",
   ring: "ring_c9fddf",

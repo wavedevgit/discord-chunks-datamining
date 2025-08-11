@@ -1,21 +1,22 @@
 /** Chunk was on web.js **/
+/** chunk id: 150457, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   LN: () => s,
   dj: () => _,
   hj: () => l
 });
-var r = n(798681),
-  i = n(450109);
-let o = 10 * n(70956).Z.Millis.SECOND,
+var Chunk798681 = require("./798681.js"),
+  Chunk450109 = require("./450109.js");
+let o = 10 * require("./70956.js").Z.Millis.SECOND,
   a = 15;
 
 function s() {
-  return r.w.isIncomingVideoEnabled() && performance.now() - r.w.lastIncomingVideoEnabledChangeTime() > o
+  return Chunk798681.w.isIncomingVideoEnabled() && performance.now() - Chunk798681.w.lastIncomingVideoEnabledChangeTime() > o
 }
 
 function l(e, t) {
-  let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : a,
+  let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : a,
     r = i.Z.getAccumulatedPerformanceStats(e, t, "short"),
     o = i.Z.getAccumulatedPerformanceStats(e, t, "long");
   return null == r || null == o || r.numDatapoints < n || o.numDatapoints < n ? null : {
@@ -29,6 +30,6 @@ let c = 30,
   f = 3;
 
 function _() {
-  let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : 30;
-  return e <= 5 ? f : e <= 15 ? d : e <= 30 ? u : c
+  let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : 30;
+  return module <= 5 ? f : module <= 15 ? d : module <= 30 ? u : c
 }

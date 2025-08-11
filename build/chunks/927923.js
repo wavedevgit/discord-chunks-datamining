@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 927923, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   KL: () => l,
   Lc: () => c,
   Lw: () => p,
@@ -11,13 +12,13 @@ n.d(t, {
   bJ: () => o,
   e8: () => _,
   tA: () => s
-}), n(65234), n(111804), n(490233), n(97749), n(388685);
-var r = n(243814),
-  i = n(981631);
+}), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js"), require("./388685.js");
+var Chunk243814 = require("./243814.js"),
+  Chunk981631 = require("./981631.js");
 let o = "xbox://communitylinking/donut/audio",
   a = "https://www.xbox.com/en-US/apps/xbox-app-for-mobile",
-  s = [r.x.VOICE, r.x.DM_CHANNELS_READ, r.x.GUILDS, r.x.GUILDS_MEMBERS_READ, r.x.IDENTIFY, r.x.CONNECTIONS, r.x.ACTIVITIES_READ],
-  l = [r.x.VOICE, r.x.DM_CHANNELS_READ, r.x.GUILDS, r.x.GUILDS_MEMBERS_READ, r.x.IDENTIFY, r.x.CONNECTIONS],
+  s = [Chunk243814.x.VOICE, Chunk243814.x.DM_CHANNELS_READ, Chunk243814.x.GUILDS, Chunk243814.x.GUILDS_MEMBERS_READ, Chunk243814.x.IDENTIFY, Chunk243814.x.CONNECTIONS, Chunk243814.x.ACTIVITIES_READ],
+  l = [Chunk243814.x.VOICE, Chunk243814.x.DM_CHANNELS_READ, Chunk243814.x.GUILDS, Chunk243814.x.GUILDS_MEMBERS_READ, Chunk243814.x.IDENTIFY, Chunk243814.x.CONNECTIONS],
   c = e => {
     let {
       guildId: t,
@@ -41,7 +42,7 @@ var u = function(e) {
   return e.PLAYSTATION = "playstation", e.XBOX = "xbox", e
 }({});
 let d = new Set(["xbox", "playstation"]);
-i.M7m.XBOX, i.M7m.PS5;
+Chunk981631.M7m.XBOX, Chunk981631.M7m.PS5;
 var f = function(e) {
   return e[e.CONSOLE_DEVICE_PASSCODE_UNLOCK_REQUIRED = 27e4] = "CONSOLE_DEVICE_PASSCODE_UNLOCK_REQUIRED", e[e.CONSOLE_DEVICE_UNAVAILABLE = 270001] = "CONSOLE_DEVICE_UNAVAILABLE", e[e.CONSOLE_DEVICE_UNVAILABLE_FROM_OTHER_USERS = 270002] = "CONSOLE_DEVICE_UNVAILABLE_FROM_OTHER_USERS", e[e.CONSOLE_DEVICE_COMMUNICATION_RESTRICTED = 270003] = "CONSOLE_DEVICE_COMMUNICATION_RESTRICTED", e[e.CONSOLE_DEVICE_INVALID_POWER_MODE = 270004] = "CONSOLE_DEVICE_INVALID_POWER_MODE", e[e.CONSOLE_DEVICE_ACCOUNT_LINK_ERROR = 270005] = "CONSOLE_DEVICE_ACCOUNT_LINK_ERROR", e[e.CONSOLE_DEVICE_MAX_MEMBERS_REACHED = 270006] = "CONSOLE_DEVICE_MAX_MEMBERS_REACHED", e[e.CONSOLE_DEVICE_BAD_COMMAND = 270007] = "CONSOLE_DEVICE_BAD_COMMAND", e
 }({});

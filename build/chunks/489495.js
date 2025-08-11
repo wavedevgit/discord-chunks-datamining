@@ -1,15 +1,16 @@
 /** Chunk was on web.js **/
+/** chunk id: 489495, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   $j: () => _,
   Xv: () => s,
   cq: () => l,
   i0: () => u,
   yR: () => d,
   z: () => c
-}), n(190126), n(368063), n(65234), n(111804), n(490233), n(97749), n(388685), n(35282), n(853839), n(570086), n(479048), n(410992), n(227481), n(730884), n(20464), n(341884), n(364341), n(629680), n(505025), n(918970), n(121784), n(644351), n(146733);
-var r = n(605387),
-  i = n.n(r);
+}), require("./190126.js"), require("./368063.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js"), require("./388685.js"), require("./35282.js"), require("./853839.js"), require("./570086.js"), require("./479048.js"), require("./410992.js"), require("./227481.js"), require("./730884.js"), require("./20464.js"), require("./341884.js"), require("./364341.js"), require("./629680.js"), require("./505025.js"), require("./918970.js"), require("./121784.js"), require("./644351.js"), require("./146733.js");
+var Chunk605387 = require("./605387.js"),
+  i = require.n(Chunk605387);
 let o = e => i().decode(e),
   a = e => Math.round(e.frames.reduce((e, t) => e + t.delay, 0)),
   s = async (e, t, n) => {
@@ -17,7 +18,7 @@ let o = e => i().decode(e),
     return {
       src: URL.createObjectURL(t),
       base64: e,
-      loop: !1,
+      loop: false,
       loopDelay: 0,
       duration: a(r),
       start: 0,
@@ -47,7 +48,7 @@ let c = (e, t) => ({
     }, n.readAsDataURL(e)
   },
   d = function(e) {
-    let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : "python",
+    let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : "python",
       n = "\n[";
     return "python" === t ? e.forEach(e => {
       n += "\n              ProfileEffectKeyFrame(\n                  src='".concat(e.name, "',\n                  loop=").concat(e.loop ? "True" : "False", ",\n                  width=").concat(e.width, ",\n                  height=").concat(e.height, ",\n                  start=").concat(e.start, ",\n                  duration=").concat(e.duration, ",\n                  loop_delay=").concat(e.loopDelay, ",\n                  position=Point(x=0, y=0),\n                  z_index=").concat(e.zIndex, ",\n              ),\n          ")

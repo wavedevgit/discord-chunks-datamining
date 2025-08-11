@@ -1,11 +1,12 @@
 /** Chunk was on 2668 **/
-n.d(t, {
+/** chunk id: 680056, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => o
 });
-var r = n(73800),
-  l = n(906732),
-  a = n(407316),
-  i = n(937784);
+var Chunk73800 = require("./73800.js"),
+  Chunk906732 = require("./906732.js"),
+  Chunk407316 = require("./407316.js"),
+  Chunk937784 = require("./937784.js");
 let o = e => {
   let {
     channelId: t,
@@ -27,13 +28,13 @@ let o = e => {
         var d, p, m, f, b, g, j, h, y, x;
         let e = (0, a.W)(t);
         await (0, i.e)(r, {
-          channelId: e ? t : void 0,
+          channelId: e ? t : true,
           analyticsLocations: o,
           editMetadata: {
-            start: null != (g = null != (b = null == l ? void 0 : l.start) ? b : null == (d = r.editMetadata) ? void 0 : d.start) ? g : 0,
-            end: null != (h = null != (j = null == l ? void 0 : l.end) ? j : null == (p = r.editMetadata) ? void 0 : p.end) ? h : r.length / 1e3,
-            applicationAudio: null == (y = null != s ? s : null == (m = r.editMetadata) ? void 0 : m.applicationAudio) || y,
-            voiceAudio: null == (x = null != c ? c : null == (f = r.editMetadata) ? void 0 : f.voiceAudio) || x
+            start: null != (g = null != (b = null == l ? true : l.start) ? b : null == (d = r.editMetadata) ? true : d.start) ? g : 0,
+            end: null != (h = null != (j = null == l ? true : l.end) ? j : null == (p = r.editMetadata) ? true : p.end) ? h : r.length / 1e3,
+            applicationAudio: null == (y = null != s ? s : null == (m = r.editMetadata) ? true : m.applicationAudio) || y,
+            voiceAudio: null == (x = null != c ? c : null == (f = r.editMetadata) ? true : f.voiceAudio) || x
           }
         })
       } catch (e) {} finally {

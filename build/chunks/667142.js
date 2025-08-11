@@ -1,5 +1,6 @@
 /** Chunk was on 89298 **/
-n.d(t, {
+/** chunk id: 667142, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Df: () => d,
   S_: () => u,
   V5: () => a,
@@ -8,12 +9,12 @@ n.d(t, {
   ih: () => s,
   xc: () => c
 });
-var i = n(972959);
+var Chunk972959 = require("./972959.js");
 let r = {
     timeToLiveMs: 5e3,
     reappearTimeMs: 1e4
   },
-  o = (0, i.H)(() => r),
+  o = (0, Chunk972959.H)(() => r),
   l = 1e4,
   a = 2e4,
   s = 500,

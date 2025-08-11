@@ -1,21 +1,22 @@
 /** Chunk was on web.js **/
+/** chunk id: 139793, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => s
-}), n(388685);
-var r = n(73800),
-  i = n(442837),
-  o = n(434650),
-  a = n(353647);
+}), require("./388685.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk442837 = require("./442837.js"),
+  Chunk434650 = require("./434650.js"),
+  Chunk353647 = require("./353647.js");
 
 function s(e) {
   let {
     userId: t,
     onAction: n
-  } = e, [s, l] = (0, r.useState)(!1), c = (0, i.e7)([a.Z], () => a.Z.isFetchingUserOutbox(t)), u = (0, r.useCallback)(e => {
+  } = e, [s, l] = (0, r.useState)(false), c = (0, i.e7)([a.Z], () => a.Z.isFetchingUserOutbox(t)), u = (0, r.useCallback)(e => {
     e && (n({
       action: "VIEW_ACTIVITY_CARD"
-    }), l(!0))
+    }), l(true))
   }, [n]);
-  return (0, o.O)(u, void 0, !c && !s)
+  return (0, o.O)(u, true, !c && !s)
 }

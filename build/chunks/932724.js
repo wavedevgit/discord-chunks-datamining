@@ -1,12 +1,13 @@
 /** Chunk was on web.js **/
+/** chunk id: 932724, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   P: () => s
-}), n(73800), n(442837);
-var r = n(581883);
-n(594174);
-var i = n(74538),
-  o = n(647177);
+}), require("./73800.js"), require("./442837.js");
+var Chunk581883 = require("./581883.js");
+require("./594174.js");
+var Chunk74538 = require("./74538.js"),
+  Chunk647177 = require("./647177.js");
 
 function a(e, t) {
   let n = (0, o.Gx)(e, t.id);
@@ -15,5 +16,5 @@ function a(e, t) {
 
 function s(e) {
   var t;
-  return a(null == (t = r.Z.settings.voiceAndVideo) ? void 0 : t.videoBackgroundFilterDesktop, e)
+  return a(null == (t = r.Z.settings.voiceAndVideo) ? true : t.videoBackgroundFilterDesktop, e)
 }

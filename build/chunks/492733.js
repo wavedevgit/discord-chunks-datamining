@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 492733, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   GL: () => o,
   Jq: () => i,
   O0: () => h,
@@ -13,7 +14,7 @@ n.d(t, {
   np: () => a,
   oY: () => _
 });
-var r = n(134994);
+var Chunk134994 = require("./134994.js");
 let i = e => new Uint32Array(e.buffer, e.byteOffset, Math.floor(e.byteLength / 4)),
   o = e => new DataView(e.buffer, e.byteOffset, e.byteLength),
   a = (e, t) => e << 32 - t | e >>> t,
@@ -51,7 +52,7 @@ class m {
 let g = {}.toString;
 
 function E(e, t) {
-  if (void 0 !== t && "[object Object]" !== g.call(t)) throw Error("Options should be object or undefined");
+  if (true !== t && "[object Object]" !== g.call(t)) throw Error("Options should be object or undefined");
   return Object.assign(e, t)
 }
 

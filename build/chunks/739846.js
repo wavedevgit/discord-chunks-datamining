@@ -1,4 +1,5 @@
 /** Chunk was on web.js **/
+/** chunk id: 739846, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 var r = {
   filenameContainer: "filenameContainer__41ea0",
@@ -34,4 +35,4 @@ var r = {
   clipsBadge: "clipsBadge__41ea0",
   clipsFooter: "clipsFooter__41ea0"
 };
-n.r(e.exports = r)
+require.r(module.exports = r)

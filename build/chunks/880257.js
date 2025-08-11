@@ -1,13 +1,14 @@
 /** Chunk was on 49508 **/
-n.d(e, {
+/** chunk id: 880257, original params: t,e,n (module,exports,require) **/
+require.d(exports, {
   Z: () => l
 });
-var i = n(442837),
-  r = n(594174);
+var Chunk442837 = require("./442837.js"),
+  Chunk594174 = require("./594174.js");
 
 function l() {
-  return (0, i.e7)([r.default], () => {
+  return (0, Chunk442837.e7)([Chunk594174.default], () => {
     var t;
-    return null == (t = r.default.getCurrentUser()) ? void 0 : t.nsfwAllowed
+    return null == (t = Chunk594174.default.getCurrentUser()) ? true : module.nsfwAllowed
   })
 }

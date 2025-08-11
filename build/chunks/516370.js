@@ -1,5 +1,6 @@
 /** Chunk was on 75708 **/
-e.exports = {
+/** chunk id: 516370, original params: e,t,n (module,exports,require) **/
+module.exports = {
   group: "group_bc4a3e",
   title: "title_bc4a3e",
   experimentDate: "experimentDate_bc4a3e",

@@ -1,26 +1,27 @@
 /** Chunk was on 1272 **/
-n.d(t, {
+/** chunk id: 507468, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => p
 });
-var r = n(392711),
-  i = n.n(r),
-  l = n(570140),
-  a = n(78687),
-  o = n(315341),
-  s = n(262847),
-  c = n(675478),
-  u = n(581883),
-  d = n(526761);
+var Chunk392711 = require("./392711.js"),
+  i = require.n(Chunk392711),
+  Chunk570140 = require("./570140.js"),
+  Chunk78687 = require("./78687.js"),
+  Chunk315341 = require("./315341.js"),
+  Chunk262847 = require("./262847.js"),
+  Chunk675478 = require("./675478.js"),
+  Chunk581883 = require("./581883.js"),
+  Chunk526761 = require("./526761.js");
 let p = {
   init() {
-    s.Z[d.yP.PRELOADED_USER_SETTINGS] = o.Z, s.Z[d.yP.FRECENCY_AND_FAVORITES_SETTINGS] = a.Z, l.Z.subscribe("CONNECTION_OPEN", f), l.Z.subscribe("USER_SETTINGS_PROTO_ENQUEUE_UPDATE", h), l.Z.subscribe("USER_SETTINGS_PROTO_LOAD_IF_NECESSARY", g), l.Z.subscribe("APP_STATE_UPDATE", m)
+    Chunk262847.Z[Chunk526761.yP.PRELOADED_USER_SETTINGS] = Chunk315341.Z, Chunk262847.Z[Chunk526761.yP.FRECENCY_AND_FAVORITES_SETTINGS] = Chunk78687.Z, Chunk570140.Z.subscribe("CONNECTION_OPEN", f), Chunk570140.Z.subscribe("USER_SETTINGS_PROTO_ENQUEUE_UPDATE", h), Chunk570140.Z.subscribe("USER_SETTINGS_PROTO_LOAD_IF_NECESSARY", g), Chunk570140.Z.subscribe("APP_STATE_UPDATE", m)
   }
 };
 
 function f() {
-  let e = u.Z.getFullState(),
-    t = e[d.yP.PRELOADED_USER_SETTINGS];
-  t.editInfo.triggeredMigrations && c.hW.markDirtyFromMigration(t.proto, t.editInfo.cleanupFuncs), i().forEach(c.aj, (t, n) => {
+  let e = Chunk581883.Z.getFullState(),
+    t = module[Chunk526761.yP.PRELOADED_USER_SETTINGS];
+  exports.editInfo.triggeredMigrations && Chunk675478.hW.markDirtyFromMigration(exports.proto, exports.editInfo.cleanupFuncs), i().forEach(Chunk675478.aj, (t, n) => {
     let r = e[Number(n)];
     null != r.editInfo.offlineEditDataVersion && null != r.editInfo.protoToSave && t.scheduleSaveFromOfflineEdit()
   })

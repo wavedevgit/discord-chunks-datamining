@@ -1,43 +1,44 @@
 /** Chunk was on 1272 **/
-n.d(t, {
+/** chunk id: 64514, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => h
-}), n(388685);
-var r = n(846519),
-  i = n(570140),
-  l = n(317770),
-  a = n(626135),
-  o = n(70956),
-  s = n(960048),
-  c = n(930446),
-  u = n(127438),
-  d = n(981631);
+}), require("./388685.js");
+var Chunk846519 = require("./846519.js"),
+  Chunk570140 = require("./570140.js"),
+  Chunk317770 = require("./317770.js"),
+  Chunk626135 = require("./626135.js"),
+  Chunk70956 = require("./70956.js"),
+  Chunk960048 = require("./960048.js"),
+  Chunk930446 = require("./930446.js"),
+  Chunk127438 = require("./127438.js"),
+  Chunk981631 = require("./981631.js");
 
 function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
-class f extends l.Z {
+class f extends Chunk317770.Z {
   _initialize() {
-    this.focusedOrForegrounded = (0, u.H)(), i.Z.subscribe("WINDOW_FOCUS", this.handleWindowFocus), i.Z.subscribe("APP_STATE_UPDATE", this.handleAppStateUpdate), i.Z.subscribe("QUESTS_ENROLL_SUCCESS", this.handleEnrollmentSuccess), i.Z.subscribe("LOGIN_SUCCESS", this.handleLogin), i.Z.subscribe("LOGOUT", this.handleLogout), this.scheduleHeartbeatTracking()
+    this.focusedOrForegrounded = (0, Chunk127438.H)(), Chunk570140.Z.subscribe("WINDOW_FOCUS", this.handleWindowFocus), Chunk570140.Z.subscribe("APP_STATE_UPDATE", this.handleAppStateUpdate), Chunk570140.Z.subscribe("QUESTS_ENROLL_SUCCESS", this.handleEnrollmentSuccess), Chunk570140.Z.subscribe("LOGIN_SUCCESS", this.handleLogin), Chunk570140.Z.subscribe("LOGOUT", this.handleLogout), this.scheduleHeartbeatTracking()
   }
   _terminate() {
-    this.stopAnalyticHeartbeat(), i.Z.unsubscribe("WINDOW_FOCUS", this.handleWindowFocus), i.Z.unsubscribe("APP_STATE_UPDATE", this.handleAppStateUpdate), i.Z.unsubscribe("QUESTS_ENROLL_SUCCESS", this.handleEnrollmentSuccess), i.Z.unsubscribe("LOGIN_SUCCESS", this.handleLogin), i.Z.unsubscribe("LOGOUT", this.handleLogout)
+    this.stopAnalyticHeartbeat(), Chunk570140.Z.unsubscribe("WINDOW_FOCUS", this.handleWindowFocus), Chunk570140.Z.unsubscribe("APP_STATE_UPDATE", this.handleAppStateUpdate), Chunk570140.Z.unsubscribe("QUESTS_ENROLL_SUCCESS", this.handleEnrollmentSuccess), Chunk570140.Z.unsubscribe("LOGIN_SUCCESS", this.handleLogin), Chunk570140.Z.unsubscribe("LOGOUT", this.handleLogout)
   }
   constructor(...e) {
     var t;
-    super(...e), t = this, p(this, "focusedOrForegrounded", (0, u.H)()), p(this, "heartbeatInterval", new r.Xp), p(this, "schedulerStarted", !1), p(this, "lastHeartbeatTimestamp", 0), p(this, "maybeStartHeartbeat", () => {
+    super(...e), t = this, p(this, "focusedOrForegrounded", (0, u.H)()), p(this, "heartbeatInterval", new r.Xp), p(this, "schedulerStarted", false), p(this, "lastHeartbeatTimestamp", 0), p(this, "maybeStartHeartbeat", () => {
       this.heartbeatInterval.isStarted() || (this.trackHeartbeat(), this.heartbeatInterval.start(5 * o.Z.Millis.MINUTE, this.trackHeartbeat))
     }), p(this, "startAnalyticHeartbeat", () => {
-      this.schedulerStarted || (this.schedulerStarted = !0, s.Z.addBreadcrumb({
+      this.schedulerStarted || (this.schedulerStarted = true, s.Z.addBreadcrumb({
         category: "ad",
         message: "Starting ad session heartbeat"
       }), this.maybeStartHeartbeat())
     }), p(this, "trackHeartbeat", function() {
-      let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
+      let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
       if (!t.schedulerStarted && !e) {
         s.Z.addBreadcrumb({
           category: "ad",
@@ -56,24 +57,24 @@ class f extends l.Z {
         client_heartbeat_version: 2
       }), t.lastHeartbeatTimestamp = n
     }), p(this, "stopAnalyticHeartbeat", function() {
-      let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "DEFAULT";
-      t.schedulerStarted && (t.schedulerStarted = !1, t.lastHeartbeatTimestamp = 0, s.Z.addBreadcrumb({
+      let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : "DEFAULT";
+      t.schedulerStarted && (t.schedulerStarted = false, t.lastHeartbeatTimestamp = 0, s.Z.addBreadcrumb({
         category: "ad",
         message: "Stopping ad session heartbeat: ".concat(e)
       }), t.heartbeatInterval.stop())
     }), p(this, "scheduleHeartbeatTracking", function() {
-      let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "DEFAULT";
+      let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : "DEFAULT";
       if (t.focusedOrForegrounded) try {
         t.startAnalyticHeartbeat()
       } catch (e) {
         s.Z.captureException(e)
       } else t.stopAnalyticHeartbeat(e)
     }), p(this, "handleLogin", () => {
-      this.scheduleHeartbeatTracking(), this.trackHeartbeat(!0)
+      this.scheduleHeartbeatTracking(), this.trackHeartbeat(true)
     }), p(this, "handleLogout", () => {
       this.stopAnalyticHeartbeat("USER_LOGOUT"), (0, c.GG)()
     }), p(this, "handleEnrollmentSuccess", () => {
-      (0, c.Gy)(!0)
+      (0, c.Gy)(true)
     }), p(this, "handleWindowFocus", e => {
       let {
         focused: t

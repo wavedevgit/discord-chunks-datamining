@@ -1,19 +1,20 @@
 /** Chunk was on 23357 **/
+/** chunk id: 446815, original params: e,t,n (module,exports,require) **/
 "use strict";
-var r = n(764908),
+var Chunk764908 = require("./764908.js"),
   o = /[^\0-\u007E]/,
   a = /[.\u3002\uFF0E\uFF61]/g,
   i = "Overflow: input needs wider integers to process",
   s = RangeError,
-  c = r(a.exec),
+  c = Chunk764908(a.exec),
   l = Math.floor,
   u = String.fromCharCode,
-  d = r("".charCodeAt),
-  p = r([].join),
-  h = r([].push),
-  f = r("".replace),
-  m = r("".split),
-  y = r("".toLowerCase),
+  d = Chunk764908("".charCodeAt),
+  p = Chunk764908([].join),
+  h = Chunk764908([].push),
+  f = Chunk764908("".replace),
+  m = Chunk764908("".split),
+  y = Chunk764908("".toLowerCase),
   v = function(e) {
     for (var t = [], n = 0, r = e.length; n < r;) {
       var o = d(e, n++);
@@ -63,7 +64,7 @@ var r = n(764908),
     }
     return p(r, "")
   };
-e.exports = function(e) {
+module.exports = function(e) {
   var t, n, r = [],
     i = m(f(y(e), a, "."), ".");
   for (t = 0; t < i.length; t++) h(r, c(o, n = i[t]) ? "xn--" + _(n) : n);

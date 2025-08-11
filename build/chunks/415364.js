@@ -1,7 +1,8 @@
 /** Chunk was on web.js **/
-var r = n(562255).off;
-e.exports = function() {
+/** chunk id: 415364, original params: e,t,n (module,exports,re quire) **/
+var r = require("./562255.js").off;
+module.exports = function() {
   var e = this,
-    t = e.element;
-  r(t, "keypress", e.eventHandler), r(t, "keydown", e.eventHandler), r(t, "keyup", e.eventHandler)
+    t = module.element;
+  r(exports, "keypress", module.eventHandler), r(exports, "keydown", module.eventHandler), r(exports, "keyup", module.eventHandler)
 }

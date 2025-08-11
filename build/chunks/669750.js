@@ -1,30 +1,31 @@
 /** Chunk was on web.js **/
+/** chunk id: 669750, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => h
-}), n(388685);
-var r = n(147913),
-  i = n(362721),
-  o = n(314897),
-  a = n(592125),
-  s = n(979651),
-  l = n(906605),
-  c = n(574176),
-  u = n(106301),
-  d = n(866071),
-  f = n(981631);
+}), require("./388685.js");
+var Chunk147913 = require("./147913.js"),
+  Chunk362721 = require("./362721.js"),
+  Chunk314897 = require("./314897.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk979651 = require("./979651.js"),
+  Chunk906605 = require("./906605.js"),
+  Chunk574176 = require("./574176.js"),
+  Chunk106301 = require("./106301.js"),
+  Chunk866071 = require("./866071.js"),
+  Chunk981631 = require("./981631.js");
 
 function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
-class p extends r.Z {
+class p extends Chunk147913.Z {
   constructor(...e) {
-    super(...e), _(this, "previousVoiceChannelId", void 0), _(this, "actions", {
+    super(...e), _(this, "previousVoiceChannelId", true), _(this, "actions", {
       POST_CONNECTION_OPEN: () => this.handlePostConnectionOpen(),
       VOICE_CHANNEL_SELECT: e => this.handleVoiceChannelSelect(e),
       GUILD_MEMBER_UPDATE: e => this.handleGuildMemberUpdate(e),
@@ -42,7 +43,7 @@ class p extends r.Z {
         guildId: null != n ? n : f.lds,
         location: "HangStatusManager"
       }, {
-        autoTrackExposure: !0
+        autoTrackExposure: true
       });
       if (null == n && null == t) {
         this.handleDisconnectFromVoiceChannel(), this.previousVoiceChannelId = t;
@@ -50,9 +51,9 @@ class p extends r.Z {
       }
       if (!r || t === this.previousVoiceChannelId || (this.previousVoiceChannelId = t, null == n || null == t)) return;
       let s = a.Z.getChannel(t);
-      if (null == s || s.type !== f.d4z.GUILD_VOICE || !(0, i.wQ)(s, !0) || null != u.Z.getCurrentHangStatus()) return;
+      if (null == s || s.type !== f.d4z.GUILD_VOICE || !(0, i.wQ)(s, true) || null != u.Z.getCurrentHangStatus()) return;
       let _ = u.Z.getCurrentDefaultStatus();
-      if ((null == _ ? void 0 : _.expiresAt) != null && (null == _ ? void 0 : _.expiresAt) >= Date.now()) {
+      if ((null == _ ? true : _.expiresAt) != null && (null == _ ? true : _.expiresAt) >= Date.now()) {
         if (_.status === f.tNA.CUSTOM && null != _.customHangStatus) {
           let {
             status: e,
@@ -73,7 +74,7 @@ class p extends r.Z {
       let r = s.Z.getCurrentClientVoiceChannelId(n);
       if (null == r || null == u.Z.getCurrentHangStatus()) return;
       let c = a.Z.getChannel(r);
-      (0, i.wQ)(c, !0) || (0, l.Sc)()
+      (0, i.wQ)(c, true) || (0, l.Sc)()
     }), _(this, "handleDisconnectFromVoiceChannel", () => {
       (0, l.Sc)()
     }), _(this, "handleLogout", () => {

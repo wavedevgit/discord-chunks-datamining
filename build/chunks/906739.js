@@ -1,3 +1,4 @@
 /** Chunk was on 71879 **/
+/** chunk id: 906739, original params: e (module,exports,require) **/
 "use strict";
-e.exports = "/assets/d0f129a0c1627f7a.png"
+module.exports = "/assets/d0f129a0c1627f7a.png"

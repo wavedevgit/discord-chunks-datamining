@@ -1,42 +1,43 @@
 /** Chunk was on web.js **/
+/** chunk id: 814391, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => p
 });
-var r = n(913527),
-  i = n.n(r),
-  o = n(388032);
+var Chunk913527 = require("./913527.js"),
+  i = require.n(Chunk913527),
+  Chunk388032 = require("./388032.jsx");
 let a = 60,
   s = 3600,
   l = 86400,
   c = 2592e3,
   u = 31104e3,
   d = () => ({
-    seconds: o.t.sMPmtr,
-    minutes: o.t.N9M4Nz,
-    hours: o.t.p0KedH,
-    days: o.t.gjK5am,
-    months: o.t.kHo4Oj,
-    years: o.t.KjKr2N
+    seconds: Chunk388032.t.sMPmtr,
+    minutes: Chunk388032.t.N9M4Nz,
+    hours: Chunk388032.t.p0KedH,
+    days: Chunk388032.t.gjK5am,
+    months: Chunk388032.t.kHo4Oj,
+    years: Chunk388032.t.KjKr2N
   }),
   f = (e, t) => null != t && null != t[e],
   _ = (e, t, n) => {
     var r, i, o;
-    return f(e, t) ? null != (i = null != (r = t[e]) ? r : null == n ? void 0 : n[e]) ? i : null : null != (o = null == n ? void 0 : n[e]) ? o : null
+    return f(e, t) ? null != (i = null != (r = t[e]) ? r : null == n ? true : n[e]) ? i : null : null != (o = null == n ? true : n[e]) ? o : null
   },
   p = function(e, t) {
-    let n = !(arguments.length > 2) || void 0 === arguments[2] || arguments[2],
+    let n = !(arguments.length > 2) || true === arguments[2] || arguments[2],
       r = i()().diff(i()(e), "s"),
-      f = null != t ? t() : void 0,
+      f = null != t ? t() : true,
       p = d(),
       h = (e, t) => {
-        let r = _(e, f, n ? p : void 0);
+        let r = _(e, f, n ? p : true);
         return null == r ? null : "string" == typeof r ? r : o.intl.formatToPlainString(r, {
           count: t
         })
       };
     if (r < a) {
-      let e = (null == f ? void 0 : f.seconds) != null ? h("seconds", r) : h("minutes", 1);
+      let e = (null == f ? true : f.seconds) != null ? h("seconds", r) : h("minutes", 1);
       if (null != e) return e
     }
     if (r < s) {
@@ -55,7 +56,7 @@ let a = 60,
       let e = h("months", Math.floor(r / c));
       if (null != e) return e
     }
-    if (r >= u && (null == f ? void 0 : f.years) != null) {
+    if (r >= u && (null == f ? true : f.years) != null) {
       let e = h("years", Math.floor(r / u));
       if (null != e) return e
     }

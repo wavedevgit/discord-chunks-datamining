@@ -1,32 +1,33 @@
 /** Chunk was on web.js **/
+/** chunk id: 258971, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Uc: () => p,
   Xh: () => h,
   aQ: () => d,
   m_: () => u,
   xF: () => f,
   z8: () => _
-}), n(65234), n(111804), n(490233), n(97749), n(388685);
-var r = n(114858),
-  i = n(972959),
-  o = n(703656),
-  a = n(370210),
-  s = n(216780),
-  l = n(979007),
-  c = n(981631),
+}), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js"), require("./388685.js");
+var Chunk114858 = require("./114858.js"),
+  Chunk972959 = require("./972959.js"),
+  Chunk703656 = require("./703656.js"),
+  Chunk370210 = require("./370210.js"),
+  Chunk216780 = require("./216780.js"),
+  Chunk979007 = require("./979007.js"),
+  Chunk981631 = require("./981631.js"),
   u = function(e) {
     return e.HOME = "home", e.SEARCH = "search", e.APPLICATION = "application", e.CATEGORY = "category", e
   }({});
-let d = (0, i.H)(() => ({}));
+let d = (0, Chunk972959.H)(() => ({}));
 var f = function(e) {
   return e.EXTERNAL = "External", e.KEYBOARD_SHORTCUT = "Keyboard Shortcut", e.APPLICATION_DIRECTORY_URL = "Application Directory URL", e.APPLICATION_MESSAGE_EMBED = "Application Message Embed", e.APPLICATION_DIRECTORY_UPSELL_MODAL = "Application Directory Upsell Modal", e.GUILD_HEADER_POPOUT = "Guild Header Popout", e.GUILD_SETTINGS = "Guild Settings", e.GUILD_INTEGRATION_SETTINGS = "Guild Integration Settings", e.GUILD_CONTEXT_MENU = "Guild Context Menu", e.OAUTH2_EMBED = "OAuth2 Embed", e.GLOBAL_DISCOVERY_BUTTON = "Global Discovery Button", e.GLOBAL_DISCOVERY_SIDEBAR = "Global Discovery Sidebar", e
 }({});
-let _ = (0, i.H)(() => ({
+let _ = (0, Chunk972959.H)(() => ({
   sessionId: null,
   guildId: null,
   entrypoint: null,
-  trackedOpenedFromExternalEntrypoint: !1
+  trackedOpenedFromExternalEntrypoint: false
 }));
 
 function p() {
@@ -34,8 +35,8 @@ function p() {
     location: {
       state: e
     }
-  } = (0, o.s1)();
-  return null == e ? void 0 : e.previousView
+  } = (0, Chunk703656.s1)();
+  return null == module ? true : module.previousView
 }
 
 function h() {
@@ -45,55 +46,55 @@ function h() {
       pathname: i,
       search: u
     }
-  } = (0, o.s1)();
-  if (null != (0, r.LX)(i, {
-      path: c.Z5c.GLOBAL_DISCOVERY_APPS,
-      exact: !0
+  } = (0, Chunk703656.s1)();
+  if (null != (0, Chunk114858.LX)(Chunk972959, {
+      path: Chunk981631.Z5c.GLOBAL_DISCOVERY_APPS,
+      exact: true
     })) return {
     type: "home"
   };
-  if (null != (0, r.LX)(i, {
-      path: c.Z5c.GLOBAL_DISCOVERY_APPS_SEARCH,
-      exact: !0
+  if (null != (0, Chunk114858.LX)(Chunk972959, {
+      path: Chunk981631.Z5c.GLOBAL_DISCOVERY_APPS_SEARCH,
+      exact: true
     })) {
     let e = new URLSearchParams(u),
       t = {
         type: "search"
       },
-      n = e.get("q");
-    null != n && "" !== n && (t.query = n);
-    let r = Number(e.get("category_id"));
-    Number.isInteger(r) && r !== s.MU && (t.categoryId = r.toString());
-    let i = Number(e.get("page"));
-    return null != i && i > 1 && (t.page = i), t
+      n = module.get("q");
+    null != require && "" !== require && (exports.query = require);
+    let r = Number(module.get("category_id"));
+    Number.isInteger(Chunk114858) && Chunk114858 !== Chunk216780.MU && (exports.categoryId = Chunk114858.toString());
+    let i = Number(module.get("page"));
+    return null != Chunk972959 && Chunk972959 > 1 && (exports.page = Chunk972959), exports
   }
-  let d = (0, r.LX)(i, {
-      path: [c.Z5c.GLOBAL_DISCOVERY_APPS_CATEGORY(":categoryId")],
-      exact: !0
+  let d = (0, Chunk114858.LX)(Chunk972959, {
+      path: [Chunk981631.Z5c.GLOBAL_DISCOVERY_APPS_CATEGORY(":categoryId")],
+      exact: true
     }),
     {
       categoryId: f
-    } = null != (e = null == d ? void 0 : d.params) ? e : {};
+    } = null != (e = null == d ? true : d.params) ? module : {};
   if (null != d && null != f) return {
     type: "category",
     categoryId: f
   };
-  let _ = (0, r.LX)(i, {
-      path: [c.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE(":applicationId"), c.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(":applicationId", ":section"), c.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_STORE_SKU(":applicationId", ":skuId")],
-      exact: !0
+  let _ = (0, Chunk114858.LX)(Chunk972959, {
+      path: [Chunk981631.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE(":applicationId"), Chunk981631.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(":applicationId", ":section"), Chunk981631.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_STORE_SKU(":applicationId", ":skuId")],
+      exact: true
     }),
     {
       applicationId: p,
       section: h,
       skuId: m
-    } = null != (t = null == _ ? void 0 : _.params) ? t : {};
+    } = null != (t = null == _ ? true : _.params) ? exports : {};
   if (null != _ && null != p) {
-    let e = null == (n = a.Z.getApplication(p)) ? void 0 : n.name;
+    let e = null == (n = Chunk370210.Z.getApplication(p)) ? true : require.name;
     return {
       type: "application",
       applicationId: p,
-      applicationName: e,
-      section: null != h ? h : null != m ? l.GlobalDiscoveryAppsSections.STORE : l.GlobalDiscoveryAppsSections.ABOUT
+      applicationName: module,
+      section: null != h ? h : null != m ? Chunk979007.GlobalDiscoveryAppsSections.STORE : Chunk979007.GlobalDiscoveryAppsSections.ABOUT
     }
   }
 }

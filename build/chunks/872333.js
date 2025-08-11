@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 872333, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   effect: "effect_a9ddb3",
   effectsWrapper: "effectsWrapper_a9ddb3"
 }

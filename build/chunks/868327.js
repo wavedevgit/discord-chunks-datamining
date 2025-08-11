@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 868327, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   notFoundPlaceholder: "notFoundPlaceholder_a3c1e1",
   fadeIn: "fadeIn_a3c1e1",
   brokenImageIcon: "brokenImageIcon_a3c1e1",

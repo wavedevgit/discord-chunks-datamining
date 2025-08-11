@@ -1,18 +1,19 @@
 /** Chunk was on 56534 **/
-r.d(t, {
+/** chunk id: 929507, original params: e,t,r (module,exports,require) **/
+require.d(exports, {
   Z: () => T
-}), r(388685);
-var n = r(73800),
-  i = r(399606),
-  a = r(544891),
-  o = r(570140),
-  l = r(367907),
-  s = r(430824),
-  c = r(496675),
-  d = r(626135),
-  u = r(70956),
-  _ = r(997787),
-  p = r(981631);
+}), require("./388685.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk399606 = require("./399606.js"),
+  Chunk544891 = require("./544891.js"),
+  Chunk570140 = require("./570140.js"),
+  Chunk367907 = require("./367907.js"),
+  Chunk430824 = require("./430824.js"),
+  Chunk496675 = require("./496675.js"),
+  Chunk626135 = require("./626135.js"),
+  Chunk70956 = require("./70956.js"),
+  Chunk997787 = require("./997787.js"),
+  Chunk981631 = require("./981631.js");
 
 function E(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -24,9 +25,9 @@ function E(e) {
       var n;
       n = r[t], t in e ? Object.defineProperty(e, t, {
         value: n,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
+        enumerable: true,
+        configurable: true,
+        writable: true
       }) : e[t] = n
     })
   }
@@ -45,7 +46,7 @@ function O(e, t) {
     Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r))
   }), e
 }
-let I = +u.Z.Millis.DAY,
+let I = +Chunk70956.Z.Millis.DAY,
   A = new Map,
   T = {
     useShouldShowChannelNotice(e) {
@@ -60,13 +61,13 @@ let I = +u.Z.Millis.DAY,
             n = null != (t = A.get(e)) ? t : 0;
           r < n + I || (A.set(e, r), a.tn.post({
             url: p.ANM.GUILD_MIGRATE_COMMAND_SCOPE(e),
-            rejectWithError: !0
+            rejectWithError: true
           }).then(t => {
             var r, n;
             o.Z.dispatch({
               type: "COMMANDS_MIGRATION_UPDATE_SUCCESS",
               guildId: e,
-              integrationIdsWithAppCommands: null != (n = null == (r = t.body) ? void 0 : r.integration_ids_with_app_commands) ? n : []
+              integrationIdsWithAppCommands: null != (n = null == (r = t.body) ? true : r.integration_ids_with_app_commands) ? n : []
             })
           }, () => {
             A.set(e, n)
@@ -89,17 +90,17 @@ let I = +u.Z.Millis.DAY,
         guildId: e,
         integrationId: t.id
       }), d.default.track(p.rMx.COMMANDS_MIGRATION_TOOLTIP_DISMISSED, O(E({}, (0, l.hH)(e)), {
-        application_id: null == (r = t.application) ? void 0 : r.id,
+        application_id: null == (r = t.application) ? true : r.id,
         location: "overview"
       }))
     },
     dismissToggleTooltip(e, t) {
       var r;
-      void 0 !== t && (o.Z.dispatch({
+      true !== t && (o.Z.dispatch({
         type: "COMMANDS_MIGRATION_TOGGLE_TOOLTIP_DISMISSED",
         integrationId: t.id
       }), d.default.track(p.rMx.COMMANDS_MIGRATION_TOOLTIP_DISMISSED, O(E({}, (0, l.hH)(e)), {
-        application_id: null == (r = t.application) ? void 0 : r.id,
+        application_id: null == (r = t.application) ? true : r.id,
         location: "toggle"
       })))
     }

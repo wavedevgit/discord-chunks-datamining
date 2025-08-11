@@ -1,15 +1,16 @@
 /** Chunk was on 34779 **/
-n.d(t, {
+/** chunk id: 438144, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   M: () => l,
   s: () => i
 });
-var r = n(570140);
+var Chunk570140 = require("./570140.js");
 
 function i(e) {
   r.Z.dispatch({
     type: "VOICE_CATEGORY_EXPAND",
     guildId: e,
-    expand: !0
+    expand: true
   })
 }
 
@@ -17,6 +18,6 @@ function l(e) {
   r.Z.dispatch({
     type: "VOICE_CATEGORY_COLLAPSE",
     guildId: e,
-    expand: !1
+    expand: false
   })
 }

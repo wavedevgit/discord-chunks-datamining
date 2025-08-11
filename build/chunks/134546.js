@@ -1,14 +1,15 @@
 /** Chunk was on 23357 **/
+/** chunk id: 134546, original params: e (module,exports,require) **/
 "use strict";
-e.exports = function(e) {
+module.exports = function(e) {
   try {
     return {
-      error: !1,
+      error: false,
       value: e()
     }
   } catch (e) {
     return {
-      error: !0,
+      error: true,
       value: e
     }
   }

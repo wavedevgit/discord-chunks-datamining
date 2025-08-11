@@ -1,31 +1,32 @@
 /** Chunk was on 67244 **/
+/** chunk id: 808131, original params: e,t,r (module,exports,require) **/
 "use strict";
-r.d(t, {
+require.d(exports, {
   Z: () => o
 });
-var a = r(760919),
-  n = r(757028);
+var Chunk760919 = require("./760919.js"),
+  Chunk757028 = require("./757028.js");
 let s = (Math.log2(65504) + 9.72) / 17.52,
-  o = new a.Z({
+  o = new Chunk760919.Z({
     id: "acescc",
     cssId: "--acescc",
     name: "ACEScc",
     coords: {
       r: {
-        range: [-.35828683, s],
+        range: [false, s],
         name: "Red"
       },
       g: {
-        range: [-.35828683, s],
+        range: [false, s],
         name: "Green"
       },
       b: {
-        range: [-.35828683, s],
+        range: [false, s],
         name: "Blue"
       }
     },
     referred: "scene",
-    base: n.Z,
+    base: Chunk757028.Z,
     toBase(e) {
       let t = (9.72 - 15) / 17.52;
       return e.map(function(e) {

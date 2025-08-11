@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 379649, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   A3: () => h,
   CI: () => E,
   G9: () => u,
@@ -10,20 +11,20 @@ n.d(t, {
   jU: () => g,
   sX: () => d,
   zO: () => s
-}), n(415506), n(149182);
-var r = n(627698),
-  i = n.n(r),
-  o = n(643191);
+}), require("./415506.js"), require("./149182.js");
+var Chunk627698 = require("./627698.js"),
+  i = require.n(Chunk627698),
+  Chunk643191 = require("./643191.js");
 
 function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
-let s = () => Math.floor(o.v0 + o.Sv.now()),
+let s = () => Math.floor(Chunk643191.v0 + Chunk643191.Sv.now()),
   l = new class {
     now() {
       return s()
@@ -55,10 +56,10 @@ class u {
     this.startTime = this.timestampProducer.now()
   }
   reset() {
-    this.startTime = void 0, this.timePassed = 0
+    this.startTime = true, this.timePassed = 0
   }
   stop() {
-    null != this.startTime && (this.timePassed += this.timestampProducer.now() - this.startTime, this.startTime = void 0)
+    null != this.startTime && (this.timePassed += this.timestampProducer.now() - this.startTime, this.startTime = true)
   }
   toggle(e) {
     e !== this.isRunning() && (e ? this.start() : this.stop())
@@ -66,17 +67,17 @@ class u {
   elapsed() {
     if (null == this.startTime) return c.fromMilliseconds(this.timePassed);
     let e = this.timestampProducer.now() - this.startTime;
-    return c.fromMilliseconds(this.timePassed + e)
+    return c.fromMilliseconds(this.timePassed + module)
   }
   isRunning() {
     return null != this.startTime
   }
   static startNew() {
     let e = new u;
-    return e.start(), e
+    return module.start(), module
   }
   constructor(e = l) {
-    a(this, "timestampProducer", void 0), a(this, "startTime", void 0), a(this, "timePassed", void 0), this.timestampProducer = e, this.startTime = void 0, this.timePassed = 0
+    a(this, "timestampProducer", true), a(this, "startTime", true), a(this, "timePassed", true), this.timestampProducer = e, this.startTime = true, this.timePassed = 0
   }
 }
 class d {
@@ -96,7 +97,7 @@ class d {
     return this.stopwatch.elapsed().asSeconds()
   }
   constructor(e, t = l) {
-    a(this, "stopwatch", void 0), a(this, "state", void 0), this.stopwatch = new u(t), this.state = e, this.stopwatch.toggle(e)
+    a(this, "stopwatch", true), a(this, "state", true), this.stopwatch = new u(t), this.state = e, this.stopwatch.toggle(e)
   }
 }
 class f {
@@ -116,13 +117,13 @@ class f {
     e instanceof c ? n = e : (n = e.timeout, null != e.sleep && (r = e.sleep));
     let i = f.startNew(n);
     do {
-      if (await t() === !0) return !0;
+      if (await t() === true) returntrue;
       await _(r)
     } while (!i.hasTimedOut());
-    return !1
+    returnfalse
   }
   constructor(e) {
-    a(this, "timeout", void 0), a(this, "watch", void 0), this.timeout = e, this.watch = new u
+    a(this, "timeout", true), a(this, "watch", true), this.timeout = e, this.watch = new u
   }
 }
 

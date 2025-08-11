@@ -1,25 +1,26 @@
 /** Chunk was on web.js **/
+/** chunk id: 653175, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => b
-}), n(388685);
-var r = n(570140),
-  i = n(367907),
-  o = n(932724),
-  a = n(634041),
-  s = n(647177),
-  l = n(592125),
-  c = n(131951),
-  u = n(19780),
-  d = n(944486),
-  f = n(594174);
+}), require("./388685.js");
+var Chunk570140 = require("./570140.js"),
+  Chunk367907 = require("./367907.js"),
+  Chunk932724 = require("./932724.js"),
+  Chunk634041 = require("./634041.js"),
+  Chunk647177 = require("./647177.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk131951 = require("./131951.js"),
+  Chunk19780 = require("./19780.js"),
+  Chunk944486 = require("./944486.js"),
+  Chunk594174 = require("./594174.js");
 
 function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -68,12 +69,12 @@ let g = (e, t) => {
   },
   E = () => {
     var e;
-    let t = (0, o.P)(f.default.getCurrentUser());
+    let t = (0, Chunk932724.P)(Chunk594174.default.getCurrentUser());
     return {
-      video_device_name: null == (e = c.Z.getVideoDevices()[c.Z.getVideoDeviceId()]) ? void 0 : e.name,
-      video_hardware_scaling_enabled: c.Z.getHardwareEncoding(),
-      video_effect_type: (0, s.TA)(t),
-      video_effect_detail: (0, s.V$)(t)
+      video_device_name: null == (e = Chunk131951.Z.getVideoDevices()[Chunk131951.Z.getVideoDeviceId()]) ? true : module.name,
+      video_hardware_scaling_enabled: Chunk131951.Z.getHardwareEncoding(),
+      video_effect_type: (0, Chunk647177.TA)(exports),
+      video_effect_detail: (0, Chunk647177.V$)(exports)
     }
   };
 

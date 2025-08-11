@@ -1,14 +1,15 @@
 /** Chunk was on web.js **/
+/** chunk id: 334431, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   $7: () => i,
   Fs: () => s,
   O4: () => a,
   Rj: () => c,
   fM: () => l,
   ih: () => o
-}), n(388685);
-var r = n(376345),
+}), require("./388685.js");
+var Chunk376345 = require("./376345.js"),
   i = function(e) {
     return e.INACTIVE = "inactive", e.BACKGROUND = "background", e.ACTIVE = "active", e
   }({});
@@ -38,10 +39,10 @@ Object.freeze({
   }
 });
 let c = {
-  PREMIUM_TIER_0: [r.ZP.unsafe_rawColors.PREMIUM_TIER_0_PURPLE_FOR_GRADIENTS, r.ZP.unsafe_rawColors.PREMIUM_TIER_0_BLUE_FOR_GRADIENTS],
-  PREMIUM_TIER_1: [r.ZP.unsafe_rawColors.PREMIUM_TIER_1_DARK_BLUE_FOR_GRADIENTS, r.ZP.unsafe_rawColors.PREMIUM_TIER_1_BLUE_FOR_GRADIENTS],
-  PREMIUM_TIER_2: [r.ZP.unsafe_rawColors.PREMIUM_TIER_2_PURPLE_FOR_GRADIENTS, r.ZP.unsafe_rawColors.PREMIUM_TIER_2_PINK_FOR_GRADIENTS],
-  PREMIUM_TIER_2_TRI_COLOR: [r.ZP.unsafe_rawColors.PREMIUM_TIER_2_PURPLE_FOR_GRADIENTS, r.ZP.unsafe_rawColors.PREMIUM_TIER_2_PURPLE_FOR_GRADIENTS_2, r.ZP.unsafe_rawColors.PREMIUM_TIER_2_PINK_FOR_GRADIENTS],
-  PREMIUM_GUILD: [r.ZP.unsafe_rawColors.GUILD_BOOSTING_BLUE_FOR_GRADIENTS, r.ZP.unsafe_rawColors.GUILD_BOOSTING_PURPLE_FOR_GRADIENTS],
+  PREMIUM_TIER_0: [Chunk376345.ZP.unsafe_rawColors.PREMIUM_TIER_0_PURPLE_FOR_GRADIENTS, Chunk376345.ZP.unsafe_rawColors.PREMIUM_TIER_0_BLUE_FOR_GRADIENTS],
+  PREMIUM_TIER_1: [Chunk376345.ZP.unsafe_rawColors.PREMIUM_TIER_1_DARK_BLUE_FOR_GRADIENTS, Chunk376345.ZP.unsafe_rawColors.PREMIUM_TIER_1_BLUE_FOR_GRADIENTS],
+  PREMIUM_TIER_2: [Chunk376345.ZP.unsafe_rawColors.PREMIUM_TIER_2_PURPLE_FOR_GRADIENTS, Chunk376345.ZP.unsafe_rawColors.PREMIUM_TIER_2_PINK_FOR_GRADIENTS],
+  PREMIUM_TIER_2_TRI_COLOR: [Chunk376345.ZP.unsafe_rawColors.PREMIUM_TIER_2_PURPLE_FOR_GRADIENTS, Chunk376345.ZP.unsafe_rawColors.PREMIUM_TIER_2_PURPLE_FOR_GRADIENTS_2, Chunk376345.ZP.unsafe_rawColors.PREMIUM_TIER_2_PINK_FOR_GRADIENTS],
+  PREMIUM_GUILD: [Chunk376345.ZP.unsafe_rawColors.GUILD_BOOSTING_BLUE_FOR_GRADIENTS, Chunk376345.ZP.unsafe_rawColors.GUILD_BOOSTING_PURPLE_FOR_GRADIENTS],
   PREMIUM_TIER_0_PERK_CARD: ["#3736BB", "#4670E8", "#8377EB", "#E782F1", "#DF90AF"]
 }

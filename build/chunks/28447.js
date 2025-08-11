@@ -1,5 +1,6 @@
 /** Chunk was on 33648 **/
-e.exports = {
+/** chunk id: 28447, original params: e,t,n (module,exports,require) **/
+module.exports = {
   forwardPreview: "forwardPreview__68334",
   quote: "quote__68334",
   contentWrapper: "contentWrapper__68334",

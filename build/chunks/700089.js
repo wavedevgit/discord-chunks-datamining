@@ -1,13 +1,14 @@
 /** Chunk was on web.js **/
+/** chunk id: 700089, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   R: () => l
 });
-var r = n(73800),
-  i = n(442837),
-  o = n(675478),
-  a = n(654455),
-  s = n(526761);
+var Chunk73800 = require("./73800.js"),
+  Chunk442837 = require("./442837.js"),
+  Chunk675478 = require("./675478.js"),
+  Chunk654455 = require("./654455.js"),
+  Chunk526761 = require("./526761.js");
 
 function l(e) {
   r.useEffect(() => {

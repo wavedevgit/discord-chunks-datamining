@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 183375, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   twoColorGradient: "twoColorGradient_e5de78",
   threeColorGradient: "threeColorGradient_e5de78",
   usernameGradient: "usernameGradient_e5de78",

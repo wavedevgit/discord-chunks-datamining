@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 302195, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   channelTextArea: "channelTextArea__74017",
   highlighted: "highlighted__74017",
   error: "error__74017",

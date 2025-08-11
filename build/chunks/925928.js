@@ -1,31 +1,32 @@
 /** Chunk was on web.js **/
+/** chunk id: 925928, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   ZP: () => p,
   Zk: () => f,
   d0: () => d
 });
-var r = n(913527),
-  i = n.n(r),
-  o = n(388032);
+var Chunk913527 = require("./913527.js"),
+  i = require.n(Chunk913527),
+  Chunk388032 = require("./388032.jsx");
 let a = 60,
   s = 3600,
   l = 86400,
   c = 2592e3,
   u = 31104e3,
   d = () => ({
-    minutes: o.t["XIGt+f"],
-    hours: o.t.rhY1Rk,
-    days: o.t.GBLpQ0,
-    months: o.t.XzBNbW,
-    years: o.t.I1E8p6
+    minutes: Chunk388032.t["XIGt+f"],
+    hours: Chunk388032.t.rhY1Rk,
+    days: Chunk388032.t.GBLpQ0,
+    months: Chunk388032.t.XzBNbW,
+    years: Chunk388032.t.I1E8p6
   }),
   f = () => ({
-    minutes: o.t["GqQ/Y2"],
-    hours: o.t.c5zfWV,
-    days: o.t.amjnaG,
-    months: o.t.SoON3d,
-    years: o.t["12B3RU"]
+    minutes: Chunk388032.t["GqQ/Y2"],
+    hours: Chunk388032.t.c5zfWV,
+    days: Chunk388032.t.amjnaG,
+    months: Chunk388032.t.SoON3d,
+    years: Chunk388032.t["12B3RU"]
   });
 
 function _(e) {

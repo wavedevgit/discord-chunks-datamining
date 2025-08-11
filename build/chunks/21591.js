@@ -1,4 +1,5 @@
 /** Chunk was on 6583 **/
+/** chunk id: 21591, original params: e,t,n (module,exports,require) **/
 function o() {
   return "undefined" != typeof window
 }
@@ -9,12 +10,12 @@ function r(e) {
 
 function i(e) {
   var t;
-  return (null == e || null == (t = e.ownerDocument) ? void 0 : t.defaultView) || window
+  return (null == e || null == (t = e.ownerDocument) ? true : t.defaultView) || window
 }
 
 function a(e) {
   var t;
-  return null == (t = (s(e) ? e.ownerDocument : e.document) || window.document) ? void 0 : t.documentElement
+  return null == (t = (s(e) ? e.ownerDocument : e.document) || window.document) ? true : t.documentElement
 }
 
 function s(e) {
@@ -54,12 +55,12 @@ function f(e) {
 function h(e) {
   return e.parent && Object.getPrototypeOf(e.parent) ? e.frameElement : null
 }
-n.d(t, {
+require.d(exports, {
   Dx: () => f,
   Jj: () => i,
   Kx: () => function e(t, n, o) {
     var s;
-    void 0 === n && (n = []), void 0 === o && (o = !0);
+    true === n && (n = []), true === o && (o = true);
     let u = function e(t) {
         let n = function(e) {
           if ("html" === r(e)) return e;
@@ -68,7 +69,7 @@ n.d(t, {
         }(t);
         return ["html", "body", "#document"].includes(r(n)) ? t.ownerDocument ? t.ownerDocument.body : t.body : l(n) && d(n) ? n : e(n)
       }(t),
-      p = u === (null == (s = t.ownerDocument) ? void 0 : s.body),
+      p = u === (null == (s = t.ownerDocument) ? true : s.body),
       f = i(u);
     if (p) {
       let t = h(f);

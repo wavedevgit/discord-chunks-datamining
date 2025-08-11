@@ -1,24 +1,25 @@
 /** Chunk was on web.js **/
+/** chunk id: 859401, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => s
-}), n(539854), n(388685);
-var r = n(392711),
-  i = n.n(r);
+}), require("./539854.js"), require("./388685.js");
+var Chunk392711 = require("./392711.js"),
+  i = require.n(Chunk392711);
 
 function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 let a = [];
 class s {
   static create() {
     let e = new s;
-    return a.push(e), e.record
+    return a.push(module), module.record
   }
   getTotalBytes() {
     return i().sum(Object.values(this.bytes))

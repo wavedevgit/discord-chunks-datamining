@@ -1,15 +1,16 @@
 /** Chunk was on web.js **/
+/** chunk id: 814249, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   DZ: () => s,
   Dc: () => a,
   R7: () => l,
   cS: () => o,
   iq: () => c
 });
-var r = n(70956),
-  i = n(388032);
-let o = 5 * r.Z.Millis.SECOND;
+var Chunk70956 = require("./70956.js"),
+  Chunk388032 = require("./388032.jsx");
+let o = 5 * Chunk70956.Z.Millis.SECOND;
 var a = function(e) {
     return e.TOOLBAR_BUTTON = "toolbar button", e.PILL = "pill", e
   }({}),
@@ -23,21 +24,21 @@ var a = function(e) {
 function c() {
   return [{
     value: "DUPLICATED",
-    label: i.intl.string(i.t.wwXl5u)
+    label: Chunk388032.intl.string(Chunk388032.t.wwXl5u)
   }, {
     value: "TOO_GENERIC",
-    label: i.intl.string(i.t["t+6knp"])
+    label: Chunk388032.intl.string(Chunk388032.t["t+6knp"])
   }, {
     value: "TOO_MANY",
-    label: i.intl.string(i.t.xnKDnp)
+    label: Chunk388032.intl.string(Chunk388032.t.xnKDnp)
   }, {
     value: "INACCURATE",
-    label: i.intl.string(i.t.JW5VFh)
+    label: Chunk388032.intl.string(Chunk388032.t.JW5VFh)
   }, {
     value: "NOT_USEFUL",
-    label: i.intl.string(i.t.ZtCNiY)
+    label: Chunk388032.intl.string(Chunk388032.t.ZtCNiY)
   }, {
     value: "OTHER",
-    label: i.intl.string(i.t.BufsKi)
+    label: Chunk388032.intl.string(Chunk388032.t.BufsKi)
   }]
 }

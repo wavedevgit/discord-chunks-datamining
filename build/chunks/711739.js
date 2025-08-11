@@ -1,4 +1,5 @@
 /** Chunk was on web.js **/
+/** chunk id: 711739, original params: e (module,exports,re quire) **/
 "use strict";
 let t = 0x7fffffff,
   n = 36,
@@ -125,7 +126,7 @@ let O = function(e) {
       return d.test(e) ? "xn--" + S(e) : e
     })
   };
-e.exports = {
+module.exports = {
   version: "2.1.0",
   ucs2: {
     decode: y,

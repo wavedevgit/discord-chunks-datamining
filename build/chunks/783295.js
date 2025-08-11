@@ -1,29 +1,30 @@
 /** Chunk was on web.js **/
+/** chunk id: 783295, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => u
-}), n(388685);
-var r = n(147913),
-  i = n(314897),
-  o = n(592125),
-  a = n(242291),
-  s = n(981631);
+}), require("./388685.js");
+var Chunk147913 = require("./147913.js"),
+  Chunk314897 = require("./314897.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk242291 = require("./242291.js"),
+  Chunk981631 = require("./981631.js");
 
 function l(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
-class c extends r.Z {
+class c extends Chunk147913.Z {
   constructor(...e) {
-    super(...e), l(this, "prevConnected", !1), l(this, "tempMutedChannel", null), l(this, "handleRTCConnectionState", e => {
+    super(...e), l(this, "prevConnected", false), l(this, "tempMutedChannel", null), l(this, "handleRTCConnectionState", e => {
       let {
         state: t,
         channelId: n
-      } = e, r = t === s.hes.RTC_CONNECTED, i = r && !this.prevConnected, l = o.Z.getChannel(n), c = null == l ? void 0 : l.getGuildId(), u = this.tempMutedChannel === n;
+      } = e, r = t === s.hes.RTC_CONNECTED, i = r && !this.prevConnected, l = o.Z.getChannel(n), c = null == l ? true : l.getGuildId(), u = this.tempMutedChannel === n;
       i && null != c && (u ? this.tempMutedChannel = null : (0, a.M2)(c)), this.prevConnected = r
     }), l(this, "handleMute", e => {
       let {

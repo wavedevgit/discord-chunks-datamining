@@ -1,36 +1,37 @@
 /** Chunk was on 3940 **/
-n.d(e, {
+/** chunk id: 103879, original params: t,e,n (module,exports,require) **/
+require.d(exports, {
   FN: () => c,
   NA: () => S,
   _w: () => U,
   uR: () => T,
   yq: () => o
 });
-var i = n(544891),
-  E = n(570140),
-  _ = n(406432),
-  l = n(314897),
-  A = n(236289),
-  a = n(788080),
-  r = n(800530),
-  u = n(981631);
+var Chunk544891 = require("./544891.js"),
+  Chunk570140 = require("./570140.js"),
+  Chunk406432 = require("./406432.js"),
+  Chunk314897 = require("./314897.js"),
+  Chunk236289 = require("./236289.js"),
+  Chunk788080 = require("./788080.js"),
+  Chunk800530 = require("./800530.js"),
+  Chunk981631 = require("./981631.js");
 async function o() {
-  E.Z.dispatch({
+  Chunk570140.Z.dispatch({
     type: "SAFETY_HUB_FETCH_START"
   });
-  let t = l.default.getSuspendedUserToken(),
-    e = null != t ? u.ANM.SAFETY_HUB_SUSPENDED : u.ANM.SAFETY_HUB,
-    n = null != t ? i.tn.post({
-      url: e,
+  let t = Chunk314897.default.getSuspendedUserToken(),
+    e = null != module ? Chunk981631.ANM.SAFETY_HUB_SUSPENDED : Chunk981631.ANM.SAFETY_HUB,
+    n = null != module ? Chunk544891.tn.post({
+      url: exports,
       body: {
-        token: t
+        token: module
       },
-      rejectWithError: !1
-    }) : i.tn.get({
-      url: e,
-      rejectWithError: !1
+      rejectWithError: false
+    }) : Chunk544891.tn.get({
+      url: exports,
+      rejectWithError: false
     });
-  await n.then(t => {
+  await require.then(t => {
     let {
       body: e
     } = t, {
@@ -55,7 +56,7 @@ async function o() {
     var e, n;
     E.Z.dispatch({
       type: "SAFETY_HUB_FETCH_FAILURE",
-      error: null != (n = null == t || null == (e = t.body) ? void 0 : e.message) ? n : "Unknown error"
+      error: null != (n = null == t || null == (e = t.body) ? true : e.message) ? n : "Unknown error"
     })
   })
 }
@@ -71,10 +72,10 @@ async function S(t) {
       body: {
         token: e
       },
-      rejectWithError: !1
+      rejectWithError: false
     }) : i.tn.get({
       url: n,
-      rejectWithError: !1
+      rejectWithError: false
     });
   await _.then(e => {
     let {
@@ -102,7 +103,7 @@ async function S(t) {
     var n, i;
     E.Z.dispatch({
       type: "SAFETY_HUB_FETCH_CLASSIFICATION_FAILURE",
-      error: null != (i = null == e || null == (n = e.body) ? void 0 : n.message) ? i : "Unknown error",
+      error: null != (i = null == e || null == (n = e.body) ? true : n.message) ? i : "Unknown error",
       classificationId: t
     })
   })
@@ -129,14 +130,14 @@ async function T(t, e, n) {
         user_input: n,
         token: _
       },
-      rejectWithError: !1
+      rejectWithError: false
     }) : i.tn.put({
       url: A,
       body: {
         signal: e,
         user_input: n
       },
-      rejectWithError: !1
+      rejectWithError: false
     });
   E.Z.dispatch({
     type: "SAFETY_HUB_REQUEST_REVIEW_START"
@@ -149,7 +150,7 @@ async function T(t, e, n) {
     var e, n;
     throw E.Z.dispatch({
       type: "SAFETY_HUB_REQUEST_REVIEW_FAILURE",
-      error: null != (n = null == t || null == (e = t.body) ? void 0 : e.message) ? n : "Unknown error"
+      error: null != (n = null == t || null == (e = t.body) ? true : e.message) ? n : "Unknown error"
     }), t
   })
 }
@@ -165,7 +166,7 @@ async function c(t) {
         token: e,
         from_classification_id: t
       },
-      rejectWithError: !1
+      rejectWithError: false
     });
   await _.then(t => {
     let {
@@ -183,25 +184,25 @@ async function c(t) {
     var e, n;
     E.Z.dispatch({
       type: "SAFETY_HUB_REQUEST_AUTOMATED_UNDERAGE_APPEAL_FAILURE",
-      error: null != (n = null == t || null == (e = t.body) ? void 0 : e.message) ? n : "Unknown error"
+      error: null != (n = null == t || null == (e = t.body) ? true : e.message) ? n : "Unknown error"
     })
   })
 }
 async function U() {
-  E.Z.dispatch({
+  Chunk570140.Z.dispatch({
     type: "SAFETY_HUB_CHECK_AUTOMATED_UNDERAGE_APPEAL_START"
   });
-  let t = l.default.getSuspendedUserToken(),
-    e = A.Z.getAgeCheckAttempts(),
-    n = u.ANM.SAFETY_HUB_CHECK_SUSPENDED_AGE_VERIFICATION,
-    _ = i.tn.post({
-      url: n,
+  let t = Chunk314897.default.getSuspendedUserToken(),
+    e = Chunk236289.Z.getAgeCheckAttempts(),
+    n = Chunk981631.ANM.SAFETY_HUB_CHECK_SUSPENDED_AGE_VERIFICATION,
+    _ = Chunk544891.tn.post({
+      url: require,
       body: {
-        token: t
+        token: module
       },
-      rejectWithError: !1
+      rejectWithError: false
     });
-  await _.then(t => {
+  await Chunk406432.then(t => {
     let {
       body: n
     } = t, {
@@ -215,7 +216,7 @@ async function U() {
     var e, n;
     E.Z.dispatch({
       type: "SAFETY_HUB_CHECK_AUTOMATED_UNDERAGE_APPEAL_FAILURE",
-      error: null != (n = null == t || null == (e = t.body) ? void 0 : e.message) ? n : "Unknown error"
+      error: null != (n = null == t || null == (e = t.body) ? true : e.message) ? n : "Unknown error"
     })
   })
 }

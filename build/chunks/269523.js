@@ -1,5 +1,6 @@
 /** Chunk was on web.js **/
+/** chunk id: 269523, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   customConfetti: "customConfetti__69c6c"
 }

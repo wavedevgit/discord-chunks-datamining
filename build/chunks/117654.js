@@ -1,12 +1,13 @@
 /** Chunk was on web.js **/
+/** chunk id: 117654, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   O: () => f
 });
-var r = n(573736),
-  i = n(592014),
-  o = n(307854),
-  a = n(356442);
+var Chunk573736 = require("./573736.js"),
+  Chunk592014 = require("./592014.js"),
+  Chunk307854 = require("./307854.js"),
+  Chunk356442 = require("./356442.js");
 class s {
   constructor(e, t) {
     let n, r;
@@ -41,8 +42,8 @@ class s {
     let e = this.getScope().clone();
     return this._stack.push({
       client: this.getClient(),
-      scope: e
-    }), e
+      scope: module
+    }), module
   }
   _popScope() {
     return !(this._stack.length <= 1) && !!this._stack.pop()
@@ -50,9 +51,9 @@ class s {
 }
 
 function l() {
-  let e = (0, a.c)(),
-    t = (0, a.q)(e);
-  return t.stack = t.stack || new s((0, i.X)(), (0, i.T)())
+  let e = (0, Chunk356442.c)(),
+    t = (0, Chunk356442.q)(module);
+  return exports.stack = exports.stack || new s((0, Chunk592014.X)(), (0, Chunk592014.T)())
 }
 
 function c(e) {

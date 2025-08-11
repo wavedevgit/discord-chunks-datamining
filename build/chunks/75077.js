@@ -1,18 +1,19 @@
 /** Chunk was on 75708 **/
-n.d(t, {
+/** chunk id: 75077, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   ZM: () => p,
   gx: () => u,
   mN: () => h,
   re: () => g
-}), n(539854);
-var i = n(442837),
-  r = n(780384),
-  s = n(594174),
-  a = n(78839),
-  l = n(74538),
-  o = n(391110),
-  c = n(474936),
-  d = n(388032);
+}), require("./539854.js");
+var Chunk442837 = require("./442837.js"),
+  Chunk780384 = require("./780384.js"),
+  Chunk594174 = require("./594174.js"),
+  Chunk78839 = require("./78839.js"),
+  Chunk74538 = require("./74538.js"),
+  Chunk391110 = require("./391110.js"),
+  Chunk474936 = require("./474936.js"),
+  Chunk388032 = require("./388032.js");
 let u = (e, t, n) => (0, r.wj)(e) ? t : n,
   m = e => {
     let {
@@ -59,7 +60,7 @@ let u = (e, t, n) => (0, r.wj)(e) ? t : n,
     } = e, d = [];
     switch (n) {
       case o.gM.PERKS_DISCOVERABILITY:
-        d = !1 === r ? [t.profiles, t.moreEmojiPower, t.largeUploads, t.hdVideo, t.clientThemes, t.customAppIcons] : s === c.a$.FP_ONLY ? [t.profiles, t.clientThemes, t.hdVideo] : [t.profiles, t.clientThemes, t.serverBoosts];
+        d = false === r ? [t.profiles, t.moreEmojiPower, t.largeUploads, t.hdVideo, t.clientThemes, t.customAppIcons] : s === c.a$.FP_ONLY ? [t.profiles, t.clientThemes, t.hdVideo] : [t.profiles, t.clientThemes, t.serverBoosts];
         break;
       case o.gM.WHATS_NEW:
         d = m({
@@ -69,10 +70,10 @@ let u = (e, t, n) => (0, r.wj)(e) ? t : n,
         });
         break;
       case o.gM.CARD_CAROUSEL_FIRST_ROW:
-        d = !1 === r ? [t.serverBoosts, t.superReactions, t.earlyAccessSeeAllVariant, t.specialShopPerks] : [t.customAppIcons, t.moreEmojiPower, t.customSoundsEverywhere, t.specialStickerAccess];
+        d = false === r ? [t.serverBoosts, t.superReactions, t.earlyAccessSeeAllVariant, t.specialShopPerks] : [t.customAppIcons, t.moreEmojiPower, t.customSoundsEverywhere, t.specialStickerAccess];
         break;
       case o.gM.CARD_CAROUSEL_SECOND_ROW:
-        d = !1 === r ? [t.customSoundsEverywhere, t.specialStickerAccess] : s === c.a$.FP_ONLY ? a ? [t.earlyAccessSeeAllVariant, t.specialMemberPricingSeeAllVariant, t.largeUploads, t.hdVideo, t.superReactions] : [t.greyServerBoosts, t.earlyAccessSeeAllVariant, t.specialMemberPricingSeeAllVariant, t.largeUploads, t.hdVideo, t.superReactions] : [t.earlyAccessSeeAllVariant, t.specialMemberPricingSeeAllVariant, t.largeUploads, t.hdVideo, t.superReactions];
+        d = false === r ? [t.customSoundsEverywhere, t.specialStickerAccess] : s === c.a$.FP_ONLY ? a ? [t.earlyAccessSeeAllVariant, t.specialMemberPricingSeeAllVariant, t.largeUploads, t.hdVideo, t.superReactions] : [t.greyServerBoosts, t.earlyAccessSeeAllVariant, t.specialMemberPricingSeeAllVariant, t.largeUploads, t.hdVideo, t.superReactions] : [t.earlyAccessSeeAllVariant, t.specialMemberPricingSeeAllVariant, t.largeUploads, t.hdVideo, t.superReactions];
         break;
       case o.gM.CARD_CAROUSEL_THIRD_ROW:
         d = s === c.a$.FP_ONLY ? a ? [t.entranceSoundsSeeAllVariation] : [t.entranceSoundsSeeAllVariation, t.greyBadge] : [t.entranceSoundsSeeAllVariation, t.badge]
@@ -95,10 +96,10 @@ let u = (e, t, n) => (0, r.wj)(e) ? t : n,
     }
   },
   h = () => {
-    let e = (0, i.e7)([s.default], () => s.default.getCurrentUser());
-    return (0, l.I5)(e)
+    let e = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser());
+    return (0, Chunk74538.I5)(module)
   },
   f = () => {
-    let e = s.default.getCurrentUser();
-    return (0, l.M5)(e, c.p9.TIER_2)
+    let e = Chunk594174.default.getCurrentUser();
+    return (0, Chunk74538.M5)(module, Chunk474936.p9.TIER_2)
   }

@@ -1,6 +1,7 @@
 /** Chunk was on 67244 **/
+/** chunk id: 522255, original params: e,t (module,exports,require) **/
 "use strict";
-t.__esModule = !0, t.default = {
+exports.__esModule = true, exports.default = {
   scheme: "google",
   author: "seth wright (http://sethawright.com)",
   base00: "#1d1f21",
@@ -19,4 +20,4 @@ t.__esModule = !0, t.default = {
   base0D: "#3971ED",
   base0E: "#A36AC7",
   base0F: "#3971ED"
-}, e.exports = t.default
+}, module.exports = exports.default

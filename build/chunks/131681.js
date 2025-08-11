@@ -1,15 +1,16 @@
 /** Chunk was on web.js **/
+/** chunk id: 131681, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   U: () => i
 });
-var r = n(695346);
+var Chunk695346 = require("./695346.js");
 let i = () => {
   var e;
   let {
-    profanity: t = !1,
-    slurs: n = !1,
-    sexualContent: i = !1
-  } = r.gw.getSetting();
-  return null != (e = t || n || i) && e
+    profanity: t = false,
+    slurs: n = false,
+    sexualContent: i = false
+  } = Chunk695346.gw.getSetting();
+  return null != (e = exports || require || i) && module
 }

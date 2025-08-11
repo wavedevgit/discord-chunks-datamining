@@ -1,15 +1,16 @@
 /** Chunk was on web.js **/
+/** chunk id: 763472, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z_: () => l,
   hY: () => c,
   sd: () => u
-}), n(415506);
-var r = n(544891),
-  i = n(570140),
-  o = n(647162),
-  a = n(158776),
-  s = n(981631);
+}), require("./415506.js");
+var Chunk544891 = require("./544891.js"),
+  Chunk570140 = require("./570140.js"),
+  Chunk647162 = require("./647162.js"),
+  Chunk158776 = require("./158776.js"),
+  Chunk981631 = require("./981631.js");
 
 function l(e, t) {
   i.Z.dispatch({
@@ -41,8 +42,8 @@ async function u(e, t) {
     body: l
   } = await r.tn.get({
     url: s.ANM.USER_ACTIVITY_METADATA(t, e.session_id, e.application_id),
-    oldFormErrors: !0,
-    rejectWithError: !1
+    oldFormErrors: true,
+    rejectWithError: false
   });
   return i.Z.dispatch({
     type: "ACTIVITY_METADATA_UPDATE",

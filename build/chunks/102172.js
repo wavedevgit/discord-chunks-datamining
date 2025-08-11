@@ -1,32 +1,33 @@
 /** Chunk was on web.js **/
+/** chunk id: 102172, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   JL: () => h,
   P9: () => m,
   gR: () => g,
   h_: () => y,
   p9: () => E,
   wq: () => b
-}), n(539854), n(388685);
-var r = n(442837),
-  i = n(622822),
-  o = n(387343),
-  a = n(258609),
-  s = n(131704),
-  l = n(984933),
-  c = n(430824),
-  u = n(496675),
-  d = n(979651),
-  f = n(934415),
-  _ = n(981631),
-  p = n(388032);
+}), require("./539854.js"), require("./388685.js");
+var Chunk442837 = require("./442837.js"),
+  Chunk622822 = require("./622822.js"),
+  Chunk387343 = require("./387343.js"),
+  Chunk258609 = require("./258609.js"),
+  Chunk131704 = require("./131704.js"),
+  Chunk984933 = require("./984933.js"),
+  Chunk430824 = require("./430824.js"),
+  Chunk496675 = require("./496675.js"),
+  Chunk979651 = require("./979651.js"),
+  Chunk934415 = require("./934415.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk388032 = require("./388032.js");
 
 function h(e, t, n) {
   var r;
-  let i = !(arguments.length > 3) || void 0 === arguments[3] || arguments[3];
-  if (e.isPrivate()) return !0;
+  let i = !(arguments.length > 3) || true === arguments[3] || arguments[3];
+  if (e.isPrivate()) returntrue;
   let a = t.getGuild(e.getGuildId()),
-    s = null != (r = null == a ? void 0 : a.maxStageVideoChannelUsers) ? r : 0;
+    s = null != (r = null == a ? true : a.maxStageVideoChannelUsers) ? r : 0;
   return (!e.isGuildStageVoice() || !(s <= 0)) && (!i || !!(0, o.Z)(e, n)) && !!n.can(_.Plq.STREAM, e) && null != a && a.afkChannelId !== e.id
 }
 
@@ -62,7 +63,7 @@ function g(e) {
 
 function E(e, t, n, r, a) {
   let l;
-  if (null == e) return [!1, 2];
+  if (null == e) return [false, 2];
   let c = t.isInChannel(e.id),
     u = e instanceof s.Sf && (0, f.rY)(e, t, n),
     d = (0, o.Z)(e, r),

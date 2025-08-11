@@ -1,22 +1,23 @@
 /** Chunk was on 1272 **/
-n.d(t, {
+/** chunk id: 624714, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => m
-}), n(388685), n(997841);
-var r = n(544891),
-  i = n(115130),
-  l = n(287545),
-  a = n(812206),
-  o = n(695103),
-  s = n(626135),
-  c = n(630388),
-  u = n(996106),
-  d = n(914946),
-  p = n(452426),
-  f = n(561205),
-  h = n(186901),
-  g = n(981631);
+}), require("./388685.js"), require("./997841.js");
+var Chunk544891 = require("./544891.js"),
+  Chunk115130 = require("./115130.js"),
+  Chunk287545 = require("./287545.js"),
+  Chunk812206 = require("./812206.js"),
+  Chunk695103 = require("./695103.js"),
+  Chunk626135 = require("./626135.js"),
+  Chunk630388 = require("./630388.js"),
+  Chunk996106 = require("./996106.js"),
+  Chunk914946 = require("./914946.js"),
+  Chunk452426 = require("./452426.js"),
+  Chunk561205 = require("./561205.js"),
+  Chunk186901 = require("./186901.js"),
+  Chunk981631 = require("./981631.js");
 let m = {
-  [g.Etm.SEND_ANALYTICS_EVENT]: {
+  [Chunk981631.Etm.SEND_ANALYTICS_EVENT]: {
     validation: e => (0, p.Z)(e).required().keys({
       event_name: e.string().required(),
       event_properties: (0, p.Z)(e).required()
@@ -33,17 +34,17 @@ let m = {
       (0, d.bu)(n.transport), (0, d._f)(n.application);
       let o = n.application.id,
         p = (0, f.Z)(),
-        h = null == p ? void 0 : p.getGuildId(),
+        h = null == p ? true : p.getGuildId(),
         m = a.Z.getApplication(o);
-      if (!(0, c.yE)(null != (t = null == m ? void 0 : m.flags) ? t : 0, g.udG.EMBEDDED_FIRST_PARTY)) throw new u.Z({
+      if (!(0, c.yE)(null != (t = null == m ? true : m.flags) ? t : 0, g.udG.EMBEDDED_FIRST_PARTY)) throw new u.Z({
         errorCode: g.lTL.INVALID_COMMAND
       }, "This application cannot access this API");
       let b = (0, l.U)(o),
         _ = {
           activity_application_id: o,
-          activity_channel_type: null == p ? void 0 : p.type,
+          activity_channel_type: null == p ? true : p.type,
           activity_guild_id: h,
-          activity_user_session_id: null == b ? void 0 : b.activityUserSessionId
+          activity_user_session_id: null == b ? true : b.activityUserSessionId
         };
       s.default.track(r, function(e) {
         for (var t = 1; t < arguments.length; t++) {
@@ -55,9 +56,9 @@ let m = {
             var r;
             r = n[t], t in e ? Object.defineProperty(e, t, {
               value: r,
-              enumerable: !0,
-              configurable: !0,
-              writable: !0
+              enumerable: true,
+              configurable: true,
+              writable: true
             }) : e[t] = r
           })
         }
@@ -65,8 +66,8 @@ let m = {
       }({}, _, i))
     }
   },
-  [g.Etm.GET_APPLICATION_TICKET]: {
-    scope: h.lH,
+  [Chunk981631.Etm.GET_APPLICATION_TICKET]: {
+    scope: Chunk186901.lH,
     handler(e) {
       let {
         socket: t
@@ -80,8 +81,8 @@ let m = {
           test_mode: o.Z.inTestModeForApplication(n) || i.Z.inDevModeForApplication(n)
         },
         retries: 3,
-        oldFormErrors: !0,
-        rejectWithError: !1
+        oldFormErrors: true,
+        rejectWithError: false
       }).then(e => {
         let {
           body: t

@@ -1,20 +1,21 @@
 /** Chunk was on web.js **/
+/** chunk id: 457542, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-var r = n(98405),
-  i = n(511696),
-  o = n(630489),
-  a = n(621523),
-  s = n(154028),
-  l = n(880181),
-  c = n(733375),
-  u = n(423582),
-  d = n(556585),
-  f = o && o.prototype;
-if (r({
+var Chunk98405 = require("./98405.js"),
+  Chunk511696 = require("./511696.js"),
+  Chunk630489 = require("./630489.js"),
+  Chunk621523 = require("./621523.js"),
+  Chunk154028 = require("./154028.js"),
+  Chunk880181 = require("./880181.js"),
+  Chunk733375 = require("./733375.js"),
+  Chunk423582 = require("./423582.js"),
+  Chunk556585 = require("./556585.js"),
+  f = Chunk630489 && Chunk630489.prototype;
+if (Chunk98405({
     target: "Promise",
-    proto: !0,
-    real: !0,
-    forced: !!o && a(function() {
+    proto: true,
+    real: true,
+    forced: !!Chunk630489 && Chunk621523(function() {
       f.finally.call({
         then: function() {}
       }, function() {})
@@ -33,9 +34,9 @@ if (r({
         })
       } : e)
     }
-  }), !i && l(o)) {
-  var _ = s("Promise").prototype.finally;
-  f.finally !== _ && d(f, "finally", _, {
-    unsafe: !0
+  }), !Chunk511696 && Chunk880181(Chunk630489)) {
+  var _ = Chunk154028("Promise").prototype.finally;
+  f.finally !== _ && Chunk556585(f, "finally", _, {
+    unsafe: true
   })
 }

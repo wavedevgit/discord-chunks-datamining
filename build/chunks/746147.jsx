@@ -1,0 +1,61 @@
+/** Chunk was on 46355 **/
+/** chunk id: 746147, original params: e,t,o (module,exports,require) **/
+require.d(exports, {
+  default: () => m
+});
+var Chunk255367 = require("./255367.js"),
+  Chunk73800 = require("./73800.js"),
+  Chunk481060 = require("./481060.js"),
+  Chunk211266 = require("./211266.js"),
+  Chunk332664 = require("./332664.jsx"),
+  Chunk626135 = require("./626135.js"),
+  Chunk867003 = require("./867003.js"),
+  Chunk987562 = require("./987562.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk388032 = require("./388032.jsx");
+
+function m(e) {
+  let {
+    onClose: t,
+    transitionState: m
+  } = e, d = (0, a.Z)(s.Me), p = r.useMemo(() => d.map(e => e.value), [d]);
+  r.useEffect(() => {
+    _.default.track(b.rMx.OPEN_MODAL, {
+      type: "Ignore User Feedback"
+    })
+  }, []);
+  let f = r.useCallback(e => {
+    var t;
+    let {
+      rating: r,
+      problem: a,
+      feedback: i
+    } = e, _ = null == r;
+    (0, l.wT)(r, i, null != (t = null == a ? true : a.value) ? t : null, _), _ || (0, c.ZDy)(async () => {
+      let {
+        default: e
+      } = await o.e("14466").then(o.bind(o, 729328));
+      return t => <e{...function(e) {
+        for (var t = 1; t < arguments.length; t++) {
+          var o = null != arguments[t] ? arguments[t] : {},
+            n = Object.keys(o);
+          "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(o).filter(function(e) {
+            return Object.getOwnPropertyDescriptor(o, e).enumerable
+          }))), n.forEach(function(t) {
+            var n;
+            n = o[t], t in e ? Object.defineProperty(e, t, {
+              value: n,
+              enumerable: true,
+              configurable: true,
+              writable: true
+            }) : e[t] = n
+          })
+        }
+        return e
+      }({
+        body: u.intl.string(u.t["d9+vQ0"])
+      }, t)} />
+    })
+  }, []);
+  return <i.Z modalType={"ignore_user"} header={u.intl.string(u.t.Ib6biY)} body={u.intl.string(u.t["uW0/nZ"])} problemTitle={u.intl.string(u.t.avs5Vl)} problems={d} freeformNeededProblems={p} onSubmit={f} onClose={t} transitionState={m} otherKey={s.XL.SOMETHING_ELSE} hideHelpDeskLink={true} hideDontShowAgainCheckbox={true} freeformDescription={e => null == e ? null : e.value === s.XL.SOMETHING_ELSE ? u.intl.string(u.t.h95hcn) : u.intl.string(u.t.wRGel5)} />
+}

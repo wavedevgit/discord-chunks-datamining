@@ -1,0 +1,33 @@
+/** Chunk was on 45620 **/
+/** chunk id: 664018, original params: e,t,n (module,exports,require) **/
+"use strict";
+require.d(exports, {
+  D: () => a,
+  E: () => o
+});
+var r, Chunk818083 = require("./818083.js"),
+  a = ((r = {})[r.CONTROL = 0] = "CONTROL", r[r.TRANSFORMATION = 1] = "TRANSFORMATION", r[r.NO_MOVEMENT = 2] = "NO_MOVEMENT", r);
+let i = (0, Chunk818083.B)({
+    kind: "user",
+    id: "2024-03_shop_card_hover_animation",
+    label: "Shop card hover animation experiment",
+    defaultConfig: {
+      hoverVariant: 0
+    },
+    treatments: [{
+      id: 1,
+      label: "Use CSS Transformation",
+      config: {
+        hoverVariant: 1
+      }
+    }, {
+      id: 2,
+      label: "No hover movement",
+      config: {
+        hoverVariant: 2
+      }
+    }]
+  }),
+  o = e => i.useExperiment({
+    location: e
+  })

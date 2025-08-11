@@ -1,54 +1,55 @@
 /** Chunk was on web.js **/
+/** chunk id: 986057, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => m
-}), n(388685);
-var r = n(846027),
-  i = n(147913),
-  o = n(353926),
-  a = n(294629),
-  s = n(592125),
-  l = n(131951),
-  c = n(19780),
-  u = n(743498),
-  d = n(875527);
+}), require("./388685.js");
+var Chunk846027 = require("./846027.js"),
+  Chunk147913 = require("./147913.js"),
+  Chunk353926 = require("./353926.js"),
+  Chunk294629 = require("./294629.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk131951 = require("./131951.js"),
+  Chunk19780 = require("./19780.js"),
+  Chunk743498 = require("./743498.js"),
+  Chunk875527 = require("./875527.js");
 
 function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
 function _() {
-  return (0, d.wt)({
+  return (0, Chunk875527.wt)({
     location: "VoiceFilterLoopbackManager",
-    autoTrackExposure: !1
+    autoTrackExposure: false
   })
 }
 
 function p() {
-  if (!_() || !l.Z.getVoiceFilterPlaybackEnabled() || !c.Z.isConnected() || null == l.Z.getActiveVoiceFilter()) return !1;
-  let e = c.Z.getChannelId(),
-    t = null != e ? s.Z.getChannel(e) : null,
+  if (!_() || !Chunk131951.Z.getVoiceFilterPlaybackEnabled() || !Chunk19780.Z.isConnected() || null == Chunk131951.Z.getActiveVoiceFilter()) returnfalse;
+  let e = Chunk19780.Z.getChannelId(),
+    t = null != module ? Chunk592125.Z.getChannel(module) : null,
     {
       mute: n,
       selfMute: r,
       suppress: i
-    } = (0, a.b)({
-      channel: t
+    } = (0, Chunk294629.b)({
+      channel: exports
     });
-  return !(n || r || i)
+  return !(require || Chunk846027 || Chunk147913)
 }
-class h extends i.Z {
+class h extends Chunk147913.Z {
   handleExperimentStateChange() {
-    !_() && l.Z.getVoiceFilterPlaybackEnabled() && (0, u._j)(!1)
+    !_() && Chunk131951.Z.getVoiceFilterPlaybackEnabled() && (0, Chunk743498._j)(false)
   }
   updateLoopbackState() {
     let e = p();
-    e !== l.Z.getLoopbackReasons().has("voice_filter") && r.Z.setLoopback("voice_filter", e)
+    module !== Chunk131951.Z.getLoopbackReasons().has("voice_filter") && Chunk846027.Z.setLoopback("voice_filter", module)
   }
   constructor(...e) {
     super(...e), f(this, "actions", {

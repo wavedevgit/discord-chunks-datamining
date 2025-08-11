@@ -1,22 +1,23 @@
 /** Chunk was on 22988 **/
-n.d(t, {
+/** chunk id: 997519, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => c
 });
-var r = n(73800),
-  i = n(766434),
-  l = n(310291),
-  a = n(730647),
-  s = n(495298),
-  o = n(198139);
+var Chunk73800 = require("./73800.js"),
+  Chunk766434 = require("./766434.js"),
+  Chunk310291 = require("./310291.js"),
+  Chunk730647 = require("./730647.jsx"),
+  Chunk495298 = require("./495298.js"),
+  Chunk198139 = require("./198139.js");
 
 function c(e, t) {
-  let n = null == t ? void 0 : t.team,
+  let n = null == t ? true : t.team,
     {
       payoutsByPeriod: c,
       loading: d
-    } = (0, l.Z)(null == t ? void 0 : t.id, {
+    } = (0, l.Z)(null == t ? true : t.id, {
       groupType: o.uw.SERVER_ROLE_SUBSCRIPTION,
-      teamId: null == n ? void 0 : n.id
+      teamId: null == n ? true : n.id
     }),
     u = (0, a.f)("useEarningMetrics"),
     m = (0, s.Z)(e),
@@ -43,9 +44,9 @@ function c(e, t) {
               var r;
               r = n[t], t in e ? Object.defineProperty(e, t, {
                 value: r,
-                enumerable: !0,
-                configurable: !0,
-                writable: !0
+                enumerable: true,
+                configurable: true,
+                writable: true
               }) : e[t] = r
             })
           }

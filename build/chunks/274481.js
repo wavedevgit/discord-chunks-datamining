@@ -1,5 +1,6 @@
 /** Chunk was on web.js **/
-e.exports = function(e) {
+/** chunk id: 274481, original params: e (module,exports,re quire) **/
+module.exports = function(e) {
   let t = e.regex,
     n = t.concat(/[\p{L}_]/u, t.optional(/[\p{L}0-9_.-]*:/u), /[\p{L}0-9_.-]*/u),
     r = /[\p{L}0-9._:-]+/u,
@@ -26,7 +27,7 @@ e.exports = function(e) {
       className: "string"
     }),
     c = {
-      endsWithParent: !0,
+      endsWithParent: true,
       illegal: /</,
       relevance: 0,
       contains: [{
@@ -38,7 +39,7 @@ e.exports = function(e) {
         relevance: 0,
         contains: [{
           className: "string",
-          endsParent: !0,
+          endsParent: true,
           variants: [{
             begin: /"/,
             end: /"/,
@@ -56,8 +57,8 @@ e.exports = function(e) {
   return {
     name: "HTML, XML",
     aliases: ["html", "xhtml", "rss", "atom", "xjb", "xsd", "xsl", "plist", "wsf", "svg"],
-    case_insensitive: !0,
-    unicodeRegex: !0,
+    case_insensitive: true,
+    unicodeRegex: true,
     contains: [{
       className: "meta",
       begin: /<![a-z]/,
@@ -99,7 +100,7 @@ e.exports = function(e) {
       contains: [c],
       starts: {
         end: /<\/style>/,
-        returnEnd: !0,
+        returnEnd: true,
         subLanguage: ["css", "xml"]
       }
     }, {
@@ -112,7 +113,7 @@ e.exports = function(e) {
       contains: [c],
       starts: {
         end: /<\/script>/,
-        returnEnd: !0,
+        returnEnd: true,
         subLanguage: ["javascript", "handlebars"]
       }
     }, {
@@ -138,7 +139,7 @@ e.exports = function(e) {
       }, {
         begin: />/,
         relevance: 0,
-        endsParent: !0
+        endsParent: true
       }]
     }]
   }

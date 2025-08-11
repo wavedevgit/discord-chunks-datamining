@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
-let r = n(40231);
-e.exports = (e, t, n) => {
+/** chunk id: 176191, original params: e,t,n (module,exports,re quire) **/
+let Chunk40231 = require("./40231.js");
+module.exports = (e, t, n) => {
   let i = new r(e, n),
     o = new r(t, n);
   return i.compare(o) || i.compareBuild(o)

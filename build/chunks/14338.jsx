@@ -1,0 +1,116 @@
+/** Chunk was on 49152 **/
+/** chunk id: 14338, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
+  Z: () => _
+});
+var Chunk255367 = require("./255367.js"),
+  Chunk73800 = require("./73800.js"),
+  Chunk120356 = require("./120356.js"),
+  a = require.n(Chunk120356),
+  Chunk481060 = require("./481060.js"),
+  Chunk239091 = require("./239091.js"),
+  Chunk586902 = require("./586902.js"),
+  Chunk40851 = require("./40851.js"),
+  Chunk906732 = require("./906732.js"),
+  Chunk795318 = require("./795318.js"),
+  Chunk670188 = require("./670188.js"),
+  Chunk237583 = require("./237583.js"),
+  Chunk768581 = require("./768581.js"),
+  Chunk529853 = require("./529853.js");
+
+function b(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      var r;
+      r = n[t], t in e ? Object.defineProperty(e, t, {
+        value: r,
+        enumerable: true,
+        configurable: true,
+        writable: true
+      }) : e[t] = r
+    })
+  }
+  return e
+}
+
+function y(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
+    var n = Object.keys(e);
+    if (Object.getOwnPropertySymbols) {
+      var r = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, r)
+    }
+    return n
+  })(Object(t)).forEach(function(n) {
+    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+  }), e
+}
+
+function x(e) {
+  let {
+    channel: t,
+    speaker: l,
+    className: f
+  } = e, x = i.useRef(null), {
+    newestAnalyticsLocation: _
+  } = (0, d.ZP)(), j = (0, u.bp)(), {
+    reducedMotion: O
+  } = i.useContext(s.Sfi), v = (0, c.Z)({
+    userId: l.id
+  }), C = null != l.member ? (0, g.CA)(l.member) : null, E = e => {
+    (0, o.jW)(e, async () => {
+      let {
+        default: e
+      } = await Promise.all([n.e("79695"), n.e("98783"), n.e("8982"), n.e("7717"), n.e("74800")]).then(n.bind(n, 757387));
+      return n => <e{...y(b({}, n), {
+        user: l.user,
+        guildId: t.guild_id,
+        channel: t,
+        showMediaItems: true,
+        showStageChannelItems: true,
+        showChatItems: false,
+        onInteraction: (0, h.u)("GuildChannelUserContextMenu", _)
+      })} />
+    }, {
+      context: j
+    })
+  };
+  return <p.Z targetElementRef={x} user={l.user} guildId={t.guild_id} channelId={t.id} clickTrap={true}>{e => (0, r.jsx)(s.ua7, {
+      targetElementRef: x,
+      text: l.userNick,
+      position: "bottom",
+      children: n => (0, r.jsx)(s.P3F, y(b({}, n, e), {
+        innerRef: x,
+        onClick: t => {
+          t.stopPropagation(), e.onClick(t)
+        },
+        onContextMenu: E,
+        children: (0, r.jsx)(s.qEK, {
+          src: null != C ? C : l.user.getAvatarURL(t.guild_id, 24),
+          size: s.EFr.SIZE_24,
+          className: a()(m.avatar, f),
+          "aria-label": l.userNick,
+          isSpeaking: v && !O.enabled
+        })
+      }))
+    })}</p.Z>
+}
+
+function _(e) {
+  let {
+    speakers: t,
+    channel: n
+  } = e;
+  return <f.Z className={m.summary} guildId={n.guild_id} users={t} max={10} renderUser={(e, t, i) => (0, r.jsx)(x, {
+      channel: n,
+      speaker: e,
+      className: t
+    }, i)} renderMoreUsers={(e, t, n) => (0, r.jsx)("div", {
+      className: a()(m.speakers, t),
+      children: e
+    }, n)} />
+}

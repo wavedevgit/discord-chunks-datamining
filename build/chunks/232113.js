@@ -1,5 +1,6 @@
 /** Chunk was on web.js **/
-e.exports = function(e) {
+/** chunk id: 232113, original params: e (module,exports,re quire) **/
+module.exports = function(e) {
   let t = {
       className: "attr",
       begin: /"(\\.|[^\\"\r\n])*"(?=\s*:)/,

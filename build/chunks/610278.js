@@ -1,17 +1,18 @@
 /** Chunk was on 1272 **/
-n.d(t, {
+/** chunk id: 610278, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   ZP: () => b,
   ro: () => f
 });
-var r = n(570140),
-  i = n(519938),
-  l = n(317770),
-  a = n(958185),
-  o = n(928518),
-  s = n(819640),
-  c = n(366050),
-  u = n(591472),
-  d = n(981631);
+var Chunk570140 = require("./570140.js"),
+  Chunk519938 = require("./519938.js"),
+  Chunk317770 = require("./317770.js"),
+  Chunk958185 = require("./958185.js"),
+  Chunk928518 = require("./928518.js"),
+  Chunk819640 = require("./819640.js"),
+  Chunk366050 = require("./366050.js"),
+  Chunk591472 = require("./591472.js"),
+  Chunk981631 = require("./981631.js");
 let p = null;
 
 function f(e) {
@@ -19,39 +20,39 @@ function f(e) {
 }
 
 function h() {
-  let e = u.Z.getConnectedFrame();
-  if (null == e) {
+  let e = Chunk591472.Z.getConnectedFrame();
+  if (null == module) {
     let e = p;
-    null != e && c.Z.isOpen(e) && (r.Z.wait(() => i.xv(e)), p = null);
+    null != module && Chunk366050.Z.isOpen(module) && (Chunk570140.Z.wait(() => Chunk519938.xv(module)), p = null);
     return
   }
-  var t = f(e);
-  if (c.Z.isOpen(t)) return !1;
+  var t = f(module);
+  if (Chunk366050.Z.isOpen(exports)) returnfalse;
   if (null != p) {
     let e = p;
-    r.Z.wait(() => i.xv(e))
+    Chunk570140.Z.wait(() => Chunk519938.xv(module))
   }
-  return r.Z.wait(() => i.bA(t, d.NYg.FRAME, {})), void(p = t)
+  return Chunk570140.Z.wait(() => Chunk519938.bA(exports, Chunk981631.NYg.FRAME, {})), void(p = exports)
 }
 
 function g() {
-  if ((0, a.Z)({
-      LayerStore: s.Z,
-      PopoutWindowStore: o.Z
+  if ((0, Chunk958185.Z)({
+      LayerStore: Chunk819640.Z,
+      PopoutWindowStore: Chunk928518.Z
     })) {
     let e = p;
-    null != e && c.Z.isOpen(e) && r.Z.wait(() => i.Cp(e));
+    null != module && Chunk366050.Z.isOpen(module) && Chunk570140.Z.wait(() => Chunk519938.Cp(module));
     return
   }
   let e = p;
-  null != e && c.Z.isOpen(e) && r.Z.wait(() => i.$Z(e))
+  null != module && Chunk366050.Z.isOpen(module) && Chunk570140.Z.wait(() => Chunk519938.$Z(module))
 }
-class m extends l.Z {
+class m extends Chunk317770.Z {
   _initialize() {
-    u.Z.addChangeListener(h), s.Z.addChangeListener(g)
+    Chunk591472.Z.addChangeListener(h), Chunk819640.Z.addChangeListener(g)
   }
   _terminate() {
-    u.Z.removeChangeListener(h), s.Z.removeChangeListener(g)
+    Chunk591472.Z.removeChangeListener(h), Chunk819640.Z.removeChangeListener(g)
   }
 }
 let b = new m

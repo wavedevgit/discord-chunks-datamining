@@ -1,63 +1,64 @@
 /** Chunk was on web.js **/
+/** chunk id: 140465, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   B4: () => O,
   Nx: () => h,
   UV: () => y,
   WR: () => b,
   lr: () => g,
   t7: () => m
-}), n(388685);
-var r = n(73800),
-  i = n(913527),
-  o = n.n(i),
-  a = n(442837),
-  s = n(544891),
-  l = n(78839),
-  c = n(775412),
-  u = n(695349),
-  d = n(104494),
-  f = n(639119),
-  _ = n(474936),
-  p = n(981631);
+}), require("./388685.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk913527 = require("./913527.js"),
+  o = require.n(Chunk913527),
+  Chunk442837 = require("./442837.js"),
+  Chunk544891 = require("./544891.js"),
+  Chunk78839 = require("./78839.js"),
+  Chunk775412 = require("./775412.js"),
+  Chunk695349 = require("./695349.js"),
+  Chunk104494 = require("./104494.js"),
+  Chunk639119 = require("./639119.js"),
+  Chunk474936 = require("./474936.js"),
+  Chunk981631 = require("./981631.js");
 
 function h() {
-  let e = (0, f.N)(),
-    t = (0, c._O)(),
-    n = (0, d.Ng)(),
+  let e = (0, Chunk639119.N)(),
+    t = (0, Chunk775412._O)(),
+    n = (0, Chunk104494.Ng)(),
     r = m();
-  return null != e || t || null != n || r
+  return null != module || exports || null != require || Chunk73800
 }
 let m = () => {
     var e;
-    let t = (0, a.e7)([l.Z], () => l.Z.getPremiumTypeSubscription()),
-      n = null == t || null == (e = t.metadata) ? void 0 : e.active_discount_expires_at;
-    return null != n && o()(Date.now()) <= o()(n)
+    let t = (0, Chunk442837.e7)([Chunk78839.Z], () => Chunk78839.Z.getPremiumTypeSubscription()),
+      n = null == exports || null == (e = exports.metadata) ? true : module.active_discount_expires_at;
+    return null != require && o()(Date.now()) <= o()(require)
   },
   g = () => {
     var e;
-    let t = (0, a.e7)([l.Z], () => l.Z.getPremiumTypeSubscription());
-    switch (null == t || null == (e = t.metadata) ? void 0 : e.active_discount_id) {
-      case _.dT:
-      case _.rB:
+    let t = (0, Chunk442837.e7)([Chunk78839.Z], () => Chunk78839.Z.getPremiumTypeSubscription());
+    switch (null == exports || null == (e = exports.metadata) ? true : module.active_discount_id) {
+      case Chunk474936.dT:
+      case Chunk474936.rB:
         return {
           duration: 1, percentage: 30
         };
-      case _.dB:
-      case _.hs:
-      case _.RU:
+      case Chunk474936.dB:
+      case Chunk474936.hs:
+      case Chunk474936.RU:
         return {
           duration: 3, percentage: 30
         };
-      case _.ih:
+      case Chunk474936.ih:
         return {
           duration: 1, percentage: 40
         };
-      case _.gW:
+      case Chunk474936.gW:
         return {
           duration: 1, percentage: 20
         };
-      case _.Nl:
+      case Chunk474936.Nl:
         return {
           duration: 1, percentage: 25
         };
@@ -69,22 +70,22 @@ let m = () => {
     let e = null;
     try {
       var t;
-      e = null != (t = (await s.tn.post({
-        url: p.ANM.CHURN_USER_OFFER,
-        rejectWithError: !0
-      })).body.offer) ? t : null
+      e = null != (t = (await Chunk544891.tn.post({
+        url: Chunk981631.ANM.CHURN_USER_OFFER,
+        rejectWithError: true
+      })).body.offer) ? exports : null
     } catch (e) {}
-    return e
+    return module
   }, b = e => {
-    let [t, n] = r.useState(!1), [i, o] = r.useState(!1), [a, s] = r.useState(null);
+    let [t, n] = r.useState(false), [i, o] = r.useState(false), [a, s] = r.useState(null);
     if (e) return {
       churnUserDiscountOffer: a,
       isFetchingChurnDiscountOffer: i
     };
     let l = () => {
-      n(!0), o(!1)
+      n(true), o(false)
     };
-    return i || t || (o(!0), E().then(e => {
+    return i || t || (o(true), E().then(e => {
       s(e), l()
     }).catch(e => {
       l()
@@ -93,9 +94,9 @@ let m = () => {
       isFetchingChurnDiscountOffer: i
     }
   }, y = () => {
-    let e = (0, a.e7)([l.Z], () => l.Z.getPremiumTypeSubscription()),
+    let e = (0, Chunk442837.e7)([Chunk78839.Z], () => Chunk78839.Z.getPremiumTypeSubscription()),
       t = m(),
-      n = null !== e && e.hasPremiumNitroMonthly,
-      r = !!(null == e ? void 0 : e.hasActiveTrial);
-    return n && !r && !t
-  }, O = () => (0, u.W)()
+      n = null !== module && module.hasPremiumNitroMonthly,
+      r = !!(null == module ? true : module.hasActiveTrial);
+    return require && !Chunk73800 && !exports
+  }, O = () => (0, Chunk695349.W)()

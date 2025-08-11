@@ -1,18 +1,19 @@
 /** Chunk was on web.js **/
+/** chunk id: 922347, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   M: () => s,
   Z: () => l
 });
-var r = n(979554),
-  i = n(656698);
+var Chunk979554 = require("./979554.js"),
+  Chunk656698 = require("./656698.js");
 
 function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -29,11 +30,11 @@ function a(e) {
   return e
 }
 let s = e => e instanceof l;
-class l extends i.Z {
+class l extends Chunk656698.Z {
   static fromServer(e) {
     return new l(a({}, super.fromServer(e), e))
   }
   constructor(e) {
-    super(e), o(this, "asset", void 0), o(this, "label", void 0), this.type = r.Z.AVATAR_DECORATION, this.asset = e.asset, this.label = e.label
+    super(e), o(this, "asset", true), o(this, "label", true), this.type = r.Z.AVATAR_DECORATION, this.asset = e.asset, this.label = e.label
   }
 }

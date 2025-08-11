@@ -1,4 +1,5 @@
 /** Chunk was on web.js **/
+/** chunk id: 224052, original params: e,t (module,exports,re quire) **/
 "use strict";
 
 function n(e) {
@@ -24,16 +25,16 @@ function i(e) {
     });
   return Object.defineProperty(r, "$$baseObject", {
     value: n,
-    enumerable: !1,
-    configurable: !1,
-    writable: !1
+    enumerable: false,
+    configurable: false,
+    writable: false
   }), Object.defineProperty(r, "$$loader", {
     value: e,
-    enumerable: !1,
-    configurable: !1,
-    writable: !1
+    enumerable: false,
+    configurable: false,
+    writable: false
   }), r
 }
-Object.defineProperty(t, "__esModule", {
-  value: !0
-}), t.chainMessagesObjects = r, t.makeMessagesProxy = i
+Object.defineProperty(exports, "__esModule", {
+  value: true
+}), exports.chainMessagesObjects = r, exports.makeMessagesProxy = i

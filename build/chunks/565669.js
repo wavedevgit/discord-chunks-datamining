@@ -1,16 +1,17 @@
 /** Chunk was on web.js **/
+/** chunk id: 565669, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   H: () => o
 });
-var r = n(87290);
+var Chunk87290 = require("./87290.js");
 
 function i(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 class o {
@@ -18,6 +19,6 @@ class o {
     return new o(e)
   }
   constructor(e) {
-    i(this, "categoryStoreListingId", void 0), i(this, "name", void 0), i(this, "bannerUrl", void 0), i(this, "unpublishedAt", void 0), i(this, "bodyText", void 0), i(this, "bannerTextColor", void 0), this.type = r.O.CATEGORY, this.categoryStoreListingId = e.category_store_listing_id, this.name = e.name, this.bannerUrl = e.banner_url, this.unpublishedAt = null != e.unpublished_at ? new Date(e.unpublished_at) : null, this.bodyText = e.body_text, this.bannerTextColor = e.banner_text_color
+    i(this, "categoryStoreListingId", true), i(this, "name", true), i(this, "bannerUrl", true), i(this, "unpublishedAt", true), i(this, "bodyText", true), i(this, "bannerTextColor", true), this.type = r.O.CATEGORY, this.categoryStoreListingId = e.category_store_listing_id, this.name = e.name, this.bannerUrl = e.banner_url, this.unpublishedAt = null != e.unpublished_at ? new Date(e.unpublished_at) : null, this.bodyText = e.body_text, this.bannerTextColor = e.banner_text_color
   }
 }

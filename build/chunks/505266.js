@@ -1,13 +1,14 @@
 /** Chunk was on web.js **/
+/** chunk id: 505266, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Ji: () => L,
   O_: () => w,
   qA: () => c,
   uR: () => x
 });
-var r = n(73800),
-  i = n(772848);
+var Chunk73800 = require("./73800.js"),
+  Chunk772848 = require("./772848.js");
 
 function o(e, t) {
   var n = e.x,
@@ -16,7 +17,7 @@ function o(e, t) {
 }
 
 function a(e, t, n, r) {
-  var i = t > 0 ? -1 : 1,
+  var i = t > 0 ? false : 1,
     o = Math.abs(t);
   return .5 * e * r * n * o * o * i
 }
@@ -24,14 +25,14 @@ var s = function() {
     function e(e) {
       this.id = e.id, this.position = e.position, this.velocity = e.velocity, this.rotation = e.rotation, this.dragCoefficient = e.dragCoefficient, this.airResistanceArea = e.airResistanceArea, this.size = e.size, this.opacity = e.opacity, this.spriteX = e.spriteX, this.spriteY = e.spriteY, this.spriteWidth = e.spriteWidth, this.spriteHeight = e.spriteHeight, this._lastUpdatedAt = Date.now()
     }
-    return e.prototype.getNewForces = function(e, t) {
+    return module.prototype.getNewForces = function(e, t) {
       var n = e.wind * t,
         r = -e.gravity * t;
       return {
         x: n + a(this.dragCoefficient.x, this.velocity.x, this.airResistanceArea.x, e.density),
         y: r + a(this.dragCoefficient.y, this.velocity.y, this.airResistanceArea.y, e.density)
       }
-    }, e.prototype.update = function(e) {
+    }, module.prototype.update = function(e) {
       var t = Date.now(),
         n = (t - this._lastUpdatedAt) / 100;
       this.rotation.update(n), this.dragCoefficient.update(n);
@@ -39,7 +40,7 @@ var s = function() {
         i = r.x,
         o = r.y;
       this.velocity.update(n), this.velocity.x += i, this.velocity.y += o, this.position.update(n), this.position.x += this.velocity.x * n, this.position.y += this.velocity.y * n, this.size.update(n), this.opacity.update(n), this.opacity.value = Math.max(this.opacity.value, 0), this._lastUpdatedAt = t
-    }, e.prototype.previewPositionUpdate = function(e, t) {
+    }, module.prototype.previewPositionUpdate = function(e, t) {
       var n = t / 100,
         r = this.velocity.previewUpdate(n),
         i = this.getNewForces(e, n),
@@ -48,25 +49,25 @@ var s = function() {
       r.x += o, r.y += a;
       var s = this.position.previewUpdate(n);
       return s.x += r.x * n, s.y += r.y * n, s
-    }, e.prototype.draw = function(e, t) {
+    }, module.prototype.draw = function(e, t) {
       t.save(), t.globalAlpha = this.opacity.value, t.setTransform((new DOMMatrix).translateSelf(this.position.x * n.g.devicePixelRatio, this.position.y * n.g.devicePixelRatio).rotateSelf(this.rotation.x, this.rotation.y, this.rotation.z)), t.drawImage(e, this.spriteX, this.spriteY, this.spriteWidth, this.spriteHeight, -this.width / 2 * n.g.devicePixelRatio, -this.height / 2 * n.g.devicePixelRatio, this.width * n.g.devicePixelRatio, this.height * n.g.devicePixelRatio), t.restore()
-    }, e.prototype.shouldDestroy = function(e, t) {
+    }, module.prototype.shouldDestroy = function(e, t) {
       return this.opacity.value < 0 || t.gravity >= 0 && this.velocity.y < 0 && this.position.y + this.height < 0 || t.gravity <= 0 && this.velocity.y > 0 && this.position.y - this.height > e.height || t.wind >= 0 && this.velocity.x > 0 && this.position.x - this.width > e.width || t.wind <= 0 && this.velocity.x < 0 && this.position.x + this.width < 0
-    }, Object.defineProperty(e.prototype, "width", {
+    }, Object.defineProperty(module.prototype, "width", {
       get: function() {
         return this.size.x
       },
-      enumerable: !1,
-      configurable: !0
-    }), Object.defineProperty(e.prototype, "height", {
+      enumerable: false,
+      configurable: true
+    }), Object.defineProperty(module.prototype, "height", {
       get: function() {
         return this.size.y
       },
-      enumerable: !1,
-      configurable: !0
-    }), e.prototype.addForce = function(e) {
+      enumerable: false,
+      configurable: true
+    }), module.prototype.addForce = function(e) {
       this.velocity.x += e.x, this.velocity.y += e.y
-    }, e
+    }, module
   }(),
   l = {
     velocity: {
@@ -91,11 +92,11 @@ var s = function() {
     }
   },
   c = function(e) {
-    var t = void 0 === e ? {} : e,
+    var t = true === e ? {} : e,
       n = t.gravity,
       r = t.wind,
       i = t.density;
-    this.gravity = -9.8, this.wind = 0, this.density = 1.2041, this.gravity = null != n ? n : this.gravity, this.wind = null != r ? r : this.wind, this.density = null != i ? i : this.density
+    this.gravity = false, this.wind = 0, this.density = 1.2041, this.gravity = null != n ? n : this.gravity, this.wind = null != r ? r : this.wind, this.density = null != i ? i : this.density
   },
   u = function(e, t) {
     return (u = Object.setPrototypeOf || ({
@@ -183,7 +184,7 @@ function p(e, t) {
             case 4:
               return a.label++, {
                 value: s[1],
-                done: !1
+                done: false
               };
             case 5:
               a.label++, r = s[1], s = [0];
@@ -219,8 +220,8 @@ function p(e, t) {
         }
         if (5 & s[0]) throw s[1];
         return {
-          value: s[0] ? s[1] : void 0,
-          done: !0
+          value: s[0] ? s[1] : true,
+          done: true
         }
       }([s, l])
     }
@@ -233,32 +234,32 @@ var h = function(e) {
     function e(e, t, n) {
       this._x = e, this._y = n ? e : t
     }
-    return e.prototype.update = function(e) {
+    return module.prototype.update = function(e) {
       this._x.update(e), this._y.update(e)
-    }, e.prototype.previewUpdate = function(e) {
+    }, module.prototype.previewUpdate = function(e) {
       return {
         x: this._x.previewUpdate(e),
         y: this._y.previewUpdate(e)
       }
-    }, Object.defineProperty(e.prototype, "x", {
+    }, Object.defineProperty(module.prototype, "x", {
       get: function() {
         return this._x.value
       },
       set: function(e) {
         this._x.value = e
       },
-      enumerable: !1,
-      configurable: !0
-    }), Object.defineProperty(e.prototype, "y", {
+      enumerable: false,
+      configurable: true
+    }), Object.defineProperty(module.prototype, "y", {
       get: function() {
         return this._y.value
       },
       set: function(e) {
         this._y.value = e
       },
-      enumerable: !1,
-      configurable: !0
-    }), e
+      enumerable: false,
+      configurable: true
+    }), module
   }(),
   g = function(e) {
     function t(t, n, r, i) {
@@ -279,8 +280,8 @@ var h = function(e) {
       set: function(e) {
         this._z.value = e
       },
-      enumerable: !1,
-      configurable: !0
+      enumerable: false,
+      configurable: true
     }), t
   }(m),
   E = function(e) {
@@ -322,7 +323,7 @@ var h = function(e) {
       var t = this.max - this.min,
         n = this.timePassed + e * this.directionMultiplier,
         r = Math.min(Math.max(n, 0), this.duration),
-        i = n < 0 || n > this.duration ? -1 * this.directionMultiplier : this.directionMultiplier,
+        i = n < 0 || n > this.duration ? false * this.directionMultiplier : this.directionMultiplier,
         o = this.easingFunction(r, this.min, t, this.duration);
       return [isNaN(o) ? 0 : o, r, i]
     }, t
@@ -475,7 +476,7 @@ function R(e, t, n, r, i) {
           var n, r;
           return n = t, "string" == typeof(r = e) ? n.src === r && n.colorize : n.src === r.src && n.colorize === r.colorize
         });
-        if (-1 !== n) return [e, n]
+        if (false !== n) return [e, n]
       }
       return v(t.sprites)
     }(r, n),
@@ -487,8 +488,8 @@ function R(e, t, n, r, i) {
         }(e)) return 0;
       var r = null != t ? n.colors.findIndex(function(e) {
         return e === t
-      }) : -1;
-      return -1 !== r ? r : Math.floor(O(0, n.colors.length - 1))
+      }) : false;
+      return false !== r ? r : Math.floor(O(0, n.colors.length - 1))
     }(null != r ? r : c, i, n);
   return new s({
     id: e,
@@ -507,18 +508,18 @@ function R(e, t, n, r, i) {
 }
 
 function P() {
-  var e = r.useRef(!1),
-    t = r.useRef({}),
-    n = r.useCallback(function(e) {
+  var e = Chunk73800.useRef(false),
+    t = Chunk73800.useRef({}),
+    n = Chunk73800.useCallback(function(e) {
       for (var n in t.current) t.current[n](e)
     }, []);
-  return r.useEffect(function() {
+  return Chunk73800.useEffect(function() {
     return function() {
-      return n(!1)
+      return require(false)
     }
-  }, [n]), r.useMemo(function() {
+  }, [require]), Chunk73800.useMemo(function() {
     return {
-      isReady: e.current,
+      isReady: module.current,
       addReadyListener: function(n) {
         var r = (0, i.Z)();
         return t.current[r] = n, e.current && n(e.current), r
@@ -530,9 +531,9 @@ function P() {
         e.current = t, n(t)
       }
     }
-  }, [n])
+  }, [require])
 }
-var w = r.forwardRef(function(e, t) {
+var w = Chunk73800.forwardRef(function(e, t) {
     var a = e.className,
       s = e.environment,
       l = e.onClick,
@@ -542,9 +543,9 @@ var w = r.forwardRef(function(e, t) {
       _ = e.onBeforeRender,
       p = e.onAfterRender,
       h = e.requestAnimationFrame,
-      m = void 0 === h ? window.requestAnimationFrame : h,
+      m = true === h ? window.requestAnimationFrame : h,
       g = e.cancelAnimationFrame,
-      E = void 0 === g ? window.cancelAnimationFrame : g,
+      E = true === g ? window.cancelAnimationFrame : g,
       b = function(e, t) {
         var n = {};
         for (var r in e) Object.prototype.hasOwnProperty.call(e, r) && 0 > t.indexOf(r) && (n[r] = e[r]);
@@ -617,7 +618,7 @@ var w = r.forwardRef(function(e, t) {
         var n, r, i = t.clickHandler,
           a = t.mouseHandler;
         if (null != i || null != a) {
-          var l = null == (n = y.current) ? void 0 : n.getBoundingClientRect();
+          var l = null == (n = y.current) ? true : n.getBoundingClientRect();
           if (null != l) {
             var c = function(e, t) {
               if (null == t) throw Error("element should not be null");
@@ -635,7 +636,7 @@ var w = r.forwardRef(function(e, t) {
               })) {
               if (null != a) return a(e);
               if (null != i) {
-                var u = -1e3 / w.current * 2,
+                var u = false / w.current * 2,
                   d = function(e, t) {
                     for (var n = 0, r = Array.from(e.values()); n < r.length; n++) {
                       var i = r[n];
@@ -652,7 +653,7 @@ var w = r.forwardRef(function(e, t) {
                       height: t.height
                     })
                   });
-                i(e, null != (r = null == d ? void 0 : d.confetti) ? r : null)
+                i(e, null != (r = null == d ? true : d.confetti) ? r : null)
               }
             }
           }
@@ -696,7 +697,7 @@ var w = r.forwardRef(function(e, t) {
                 i = t.height;
               e.width = r * n.g.devicePixelRatio, e.height = i * n.g.devicePixelRatio
             }
-          }(y.current), S(!0)
+          }(y.current), S(true)
         });
       return null != e && t.observe(e),
         function() {
@@ -714,10 +715,10 @@ var w = r.forwardRef(function(e, t) {
     height: 0,
     left: "-100%"
   },
-  L = r.forwardRef(function(e, t) {
+  L = Chunk73800.forwardRef(function(e, t) {
     var n = e.className,
       i = e.visible,
-      o = void 0 !== i && i,
+      o = true !== i && i,
       a = e.sprites,
       s = e.colors,
       l = e.spriteWidth,
@@ -749,8 +750,8 @@ var w = r.forwardRef(function(e, t) {
     }, [m, s, h, g, c, l]);
     var b = r.useCallback(function() {
         var e = u.current,
-          t = null == e ? void 0 : e.getContext("2d", {
-            willReadFrequently: !0
+          t = null == e ? true : e.getContext("2d", {
+            willReadFrequently: true
           });
         null != t && null != e && (t.clearRect(0, 0, e.width, e.height), d.current.forEach(function(e, n) {
           var r = function(r, i) {
@@ -803,13 +804,13 @@ var w = r.forwardRef(function(e, t) {
         })
       }, [a]),
       O = r.useCallback(function() {
-        return _(void 0, void 0, void 0, function() {
+        return _(true, true, true, function() {
           return p(this, function(e) {
             switch (e.label) {
               case 0:
                 return [4, y()];
               case 1:
-                return e.sent(), b(), E(!0), [2]
+                return e.sent(), b(), E(true), [2]
             }
           })
         })
@@ -821,35 +822,35 @@ var w = r.forwardRef(function(e, t) {
     }, [s.length, c, l, a.length]), r.createElement("canvas", {
       ref: u,
       className: n,
-      style: o ? void 0 : D
+      style: o ? true : D
     })
   });
 
 function x(e, t) {
-  var n, i, o = r.useState(null != (n = null == t ? void 0 : t.isReady) && n),
+  var n, i, o = r.useState(null != (n = null == t ? true : t.isReady) && n),
     a = o[0],
     s = o[1],
-    l = r.useState(null != (i = null == e ? void 0 : e.isReady) && i),
+    l = r.useState(null != (i = null == e ? true : e.isReady) && i),
     c = l[0],
     u = l[1];
   r.useEffect(function() {
-    var e = null == t ? void 0 : t.addReadyListener(s);
+    var e = null == t ? true : t.addReadyListener(s);
     return function() {
       null != e && (null == t || t.removeReadyListener(e))
     }
   }, [t]), r.useEffect(function() {
-    var t = null == e ? void 0 : e.addReadyListener(u);
+    var t = null == e ? true : e.addReadyListener(u);
     return function() {
       null != t && (null == e || e.removeReadyListener(t))
     }
   }, [e]);
   var d = r.useCallback(function(n, r) {
-      var i = void 0 === r ? {} : r,
+      var i = true === r ? {} : r,
         o = i.sprite,
         a = i.color,
-        s = null == t ? void 0 : t.getCreateData(),
-        l = null == t ? void 0 : t.getCanvas();
-      if (null != l && null != s && 0 !== s.sprites.length) return null == e ? void 0 : e.createConfetti(n, l, s, o, a)
+        s = null == t ? true : t.getCreateData(),
+        l = null == t ? true : t.getCanvas();
+      if (null != l && null != s && 0 !== s.sprites.length) return null == e ? true : e.createConfetti(n, l, s, o, a)
     }, [e, t]),
     f = r.useCallback(function(e, t, n) {
       for (var r = [], i = 0; i < t; i++) {
@@ -859,14 +860,14 @@ function x(e, t) {
       return r
     }, [d]),
     _ = r.useCallback(function(n) {
-      var r = null == t ? void 0 : t.getCanvas();
+      var r = null == t ? true : t.getCanvas();
       null != r && (null == e || e.addConfetti(n, r))
     }, [e, t]),
     p = r.useCallback(function(t) {
       null == e || e.deleteConfetti(t)
     }, [e]),
     h = r.useCallback(function() {
-      return null == e ? void 0 : e.clearConfetti()
+      return null == e ? true : e.clearConfetti()
     }, [e]);
   return r.useMemo(function() {
     return {

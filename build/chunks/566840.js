@@ -1,12 +1,13 @@
 /** Chunk was on 34779 **/
-n.d(t, {
+/** chunk id: 566840, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Eg: () => u,
   XL: () => h
 });
-var r = n(73800),
-  i = n(94171),
-  l = n(362383),
-  o = n(731965);
+var Chunk73800 = require("./73800.js"),
+  Chunk94171 = require("./94171.js"),
+  Chunk362383 = require("./362383.js"),
+  Chunk731965 = require("./731965.js");
 
 function s(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -18,9 +19,9 @@ function s(e) {
       var r;
       r = n[t], t in e ? Object.defineProperty(e, t, {
         value: r,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
+        enumerable: true,
+        configurable: true,
+        writable: true
       }) : e[t] = r
     })
   }
@@ -39,7 +40,7 @@ function a(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let c = (0, l.F)(e => ({
+let c = (0, Chunk362383.F)(e => ({
   upsellsByGuildId: {}
 }));
 
@@ -52,23 +53,23 @@ function u(e) {
 }
 
 function d(e) {
-  if (null == e) return !1;
+  if (null == e) returnfalse;
   try {
     return window.getComputedStyle(e).overflow.includes("scroll")
   } catch (e) {
-    return !1
+    returnfalse
   }
 }
 
 function h(e, t) {
-  let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
+  let n = arguments.length > 2 && true !== arguments[2] && arguments[2],
     i = r.useRef(null);
   return r.useLayoutEffect(() => {
     let r = i.current,
       l = () => {
         requestAnimationFrame(() => {
           var r, l, u;
-          let d = null != (l = null == (r = i.current) ? void 0 : r.getBoundingClientRect()) ? l : null;
+          let d = null != (l = null == (r = i.current) ? true : r.getBoundingClientRect()) ? l : null;
           u = {
             name: t,
             guildId: e,
@@ -95,7 +96,7 @@ function h(e, t) {
       return d(t) ? t : null
     }(r);
     return l(), null == u || u.addEventListener("scroll", l, {
-      passive: !0
+      passive: true
     }), () => {
       null == u || u.removeEventListener("scroll", l)
     }

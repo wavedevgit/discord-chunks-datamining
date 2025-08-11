@@ -1,0 +1,202 @@
+/** Chunk was on web.js **/
+/** chunk id: 656733, original params: e,t,n (module,exports,re quire) **/
+"use strict";
+require.d(exports, {
+  Z: () => x
+}), require("./704826.js"), require("./35282.js"), require("./388685.js");
+var r, Chunk442837 = require("./442837.js"),
+  Chunk377108 = require("./377108.js"),
+  Chunk570140 = require("./570140.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk388032 = require("./388032.jsx");
+
+function c(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+
+function u(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      c(e, t, n[t])
+    })
+  }
+  return e
+}
+
+function d(e, t) {
+  var n = Object.keys(e);
+  if (Object.getOwnPropertySymbols) {
+    var r = Object.getOwnPropertySymbols(e);
+    t && (r = r.filter(function(t) {
+      return Object.getOwnPropertyDescriptor(e, t).enumerable
+    })), n.push.apply(n, r)
+  }
+  return n
+}
+
+function f(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : d(Object(t)).forEach(function(n) {
+    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+  }), e
+}
+let _ = {
+    MP4: "mp4",
+    TINYMP4: "tinymp4",
+    NANOMP4: "nanomp4",
+    WEBM: "webm",
+    TINYWEBM: "tinywebm",
+    NANOWEBM: "nanowebm"
+  },
+  p = {
+    FIXED_HEIGHT_MP4: "fixed_height.mp4",
+    FIXED_HEIGHT_SMALL_MP4: "fixed_height_small.mp4",
+    FIXED_WIDTH_MP4: "fixed_width.mp4",
+    FIXED_WIDTH_SMALL_MP4: "fixed_width_small.mp4",
+    DOWNSIZED_SMALL_MP4: "downsized_small.mp4",
+    ORIGINAL_MP4: "original.mp4"
+  },
+  h = _.WEBM,
+  m = A(h) ? Chunk377108.EO.VIDEO : Chunk377108.EO.IMAGE,
+  g = null,
+  E = "",
+  b = "",
+  y = [],
+  O = [],
+  v = [],
+  I = [];
+
+function T(e) {
+  g = e.analyticsID
+}
+
+function S(e) {
+  "" === (E = e.query) && (b = "", y = [], v = [])
+}
+
+function A(e) {
+  switch (e) {
+    case p.FIXED_HEIGHT_MP4:
+    case p.FIXED_HEIGHT_SMALL_MP4:
+    case p.FIXED_WIDTH_MP4:
+    case p.FIXED_WIDTH_SMALL_MP4:
+    case p.DOWNSIZED_SMALL_MP4:
+    case p.ORIGINAL_MP4:
+    case _.MP4:
+    case _.TINYMP4:
+    case _.NANOMP4:
+    case _.WEBM:
+    case _.TINYWEBM:
+    case _.NANOWEBM:
+      returntrue;
+    default:
+      returnfalse
+  }
+}
+
+function N(e) {
+  return e.replace(/^https?:/, "")
+}
+
+function C(e) {
+  if (null != e.query && E === b) returnfalse;
+  null != e.query && (b = e.query), y = e.items.map(e => {
+    let {
+      width: t,
+      height: n,
+      src: r,
+      gif_src: i,
+      url: o,
+      id: a
+    } = e;
+    return {
+      width: t,
+      height: n,
+      src: N(r),
+      gifSrc: N(i),
+      url: o,
+      id: a,
+      format: m
+    }
+  })
+}
+
+function R(e) {
+  let {
+    query: t
+  } = e;
+  if (null == t) returnfalse;
+  b = t, y = []
+}
+
+function P(e) {
+  let t = e.trendingCategories;
+  O = [...null != e.trendingGIFPreview ? [{
+    type: s.wI2.TRENDING_GIFS,
+    name: l.intl.string(l.t.H6zNFx),
+    src: N(e.trendingGIFPreview.src),
+    format: m
+  }] : [], ...t.map(e => f(u({}, e), {
+    src: N(e.src),
+    type: s.wI2.TRENDING_CATEGORY,
+    format: m
+  }))]
+}
+
+function w(e) {
+  let {
+    items: t
+  } = e;
+  v = t
+}
+
+function D(e) {
+  let {
+    items: t
+  } = e;
+  I = t
+}
+class L extends(r = Chunk442837.ZP.Store) {
+  getAnalyticsID() {
+    return g
+  }
+  getQuery() {
+    return E
+  }
+  getResultQuery() {
+    return b
+  }
+  getResultItems() {
+    return y
+  }
+  getTrendingCategories() {
+    return O
+  }
+  getSelectedFormat() {
+    return h
+  }
+  getSuggestions() {
+    return v
+  }
+  getTrendingSearchTerms() {
+    return I
+  }
+}
+c(L, "displayName", "GIFPickerViewStore");
+let x = new L(Chunk570140.Z, {
+  GIF_PICKER_INITIALIZE: T,
+  GIF_PICKER_QUERY: S,
+  GIF_PICKER_QUERY_SUCCESS: C,
+  GIF_PICKER_QUERY_FAILURE: R,
+  GIF_PICKER_TRENDING_FETCH_SUCCESS: P,
+  GIF_PICKER_SUGGESTIONS_SUCCESS: w,
+  GIF_PICKER_TRENDING_SEARCH_TERMS_SUCCESS: D
+})

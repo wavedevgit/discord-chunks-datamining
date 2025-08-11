@@ -1,4 +1,5 @@
 /** Chunk was on web.js **/
+/** chunk id: 905490, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 var r = {
   profile: "profile_ed0705",
@@ -40,4 +41,4 @@ var r = {
   cave: "cave_ed0705",
   deepfried: "deepfried_ed0705"
 };
-n.r(e.exports = r)
+require.r(module.exports = r)

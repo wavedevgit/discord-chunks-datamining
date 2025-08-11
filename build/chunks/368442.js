@@ -1,15 +1,16 @@
 /** Chunk was on web.js **/
+/** chunk id: 368442, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   PK: () => l,
   tu: () => f,
   xJ: () => u
 });
-var r = n(442837),
-  i = n(430824),
-  o = n(979651),
-  a = n(565799),
-  s = n(501655);
+var Chunk442837 = require("./442837.js"),
+  Chunk430824 = require("./430824.js"),
+  Chunk979651 = require("./979651.js"),
+  Chunk565799 = require("./565799.js"),
+  Chunk501655 = require("./501655.js");
 
 function l(e) {
   let t = c(e);
@@ -31,5 +32,5 @@ function d(e) {
 function f(e) {
   var t;
   let n = i.Z.getGuild(e);
-  return null != n && (null != (t = null == n ? void 0 : n.maxStageVideoChannelUsers) ? t : 0) > 0
+  return null != n && (null != (t = null == n ? true : n.maxStageVideoChannelUsers) ? t : 0) > 0
 }

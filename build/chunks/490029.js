@@ -1,26 +1,27 @@
 /** Chunk was on web.js **/
+/** chunk id: 490029, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   $j: () => u,
   Ty: () => f,
   lW: () => p,
   sr: () => _,
   zP: () => d
-}), n(415506);
-var r = n(536285),
-  i = n(996106),
-  o = n(812967),
-  a = n(960048),
-  s = n(511405),
-  l = n(981631),
-  c = n(186901);
+}), require("./415506.js");
+var Chunk536285 = require("./536285.js"),
+  Chunk996106 = require("./996106.js"),
+  Chunk812967 = require("./812967.js"),
+  Chunk960048 = require("./960048.js"),
+  Chunk511405 = require("./511405.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk186901 = require("./186901.js");
 
 function u() {
-  r.default.connect()
+  Chunk536285.default.connect()
 }
 
 function d() {
-  r.default.disconnect()
+  Chunk536285.default.disconnect()
 }
 
 function f(e, t) {

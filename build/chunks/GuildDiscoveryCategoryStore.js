@@ -1,0 +1,91 @@
+/** Chunk was on 56534 **/
+/** chunk id: 526429, original params: e,t,r (module,exports,require) **/
+require.d(exports, {
+  Z: () => I
+}), require("./642613.js"), require("./539854.js"), require("./388685.js"), require("./392711.js");
+var n, i, a, Chunk442837 = require("./442837.js"),
+  Chunk570140 = require("./570140.js"),
+  Chunk823379 = require("./823379.js"),
+  Chunk128449 = require("./128449.js"),
+  Chunk388032 = require("./388032.jsx");
+let u = null,
+  _ = [],
+  p = [],
+  E = {};
+class O extends(n = Chunk442837.ZP.Store) {
+  getPrimaryCategories() {
+    return _
+  }
+  getDiscoveryCategories() {
+    let e = Chunk128449.L3.map(e => p.find(t => t.categoryId === e)).filter(Chunk823379.lm);
+    return [{
+      categoryId: Chunk128449.Hk,
+      name: Chunk388032.intl.string(Chunk388032.t.Ym2Ri4)
+    }, ...module]
+  }
+  getClanDiscoveryCategories() {
+    let e = Chunk128449.L3.map(e => p.find(t => t.categoryId === e)).filter(Chunk823379.lm);
+    return [{
+      categoryId: Chunk128449.Hk,
+      name: Chunk388032.intl.string(Chunk388032.t.QToH29)
+    }, ...module]
+  }
+  getAllCategories() {
+    return p
+  }
+  getFetchedLocale() {
+    return u
+  }
+  getCategoryName(e) {
+    return e === c.Hk ? d.intl.string(d.t.Ym2Ri4) : E[e]
+  }
+}
+a = "GuildDiscoveryCategoryStore", (i = "displayName") in O ? Object.defineProperty(O, i, {
+  value: a,
+  enumerable: true,
+  configurable: true,
+  writable: true
+}) : O[i] = a;
+let I = new O(Chunk570140.Z, {
+  GUILD_DISCOVERY_CATEGORY_FETCH_SUCCESS: function(e) {
+    let t, {
+        categories: r,
+        locale: n
+      } = e,
+      i = [],
+      a = [];
+    if (r.sort((e, t) => e.name < t.name ? false : 1).forEach(e => {
+        let {
+          id: r,
+          name: n,
+          is_primary: o
+        } = e;
+        if (r !== c.o3) {
+          if (r === c.dc) {
+            t = {
+              categoryId: r,
+              name: n
+            };
+            return
+          }
+          true === o && i.push({
+            categoryId: r,
+            name: n
+          }), a.push({
+            categoryId: r,
+            name: n
+          }), E[r] = n
+        }
+      }), null != t) {
+      let {
+        categoryId: e,
+        name: r
+      } = t;
+      i.push({
+        categoryId: e,
+        name: r
+      }), E[e] = r
+    }
+    u = n, _ = i, p = a
+  }
+})

@@ -1,6 +1,7 @@
 /** Chunk was on 67244 **/
+/** chunk id: 74141, original params: e,t (module,exports,require) **/
 "use strict";
-t.__esModule = !0, t.default = {
+exports.__esModule = true, exports.default = {
   scheme: "atelier heath",
   author: "bram de haan (http://atelierbram.github.io/syntax-highlighting/atelier-schemes/heath)",
   base00: "#1b181b",
@@ -19,4 +20,4 @@ t.__esModule = !0, t.default = {
   base0D: "#516aec",
   base0E: "#7b59c0",
   base0F: "#cc33cc"
-}, e.exports = t.default
+}, module.exports = exports.default

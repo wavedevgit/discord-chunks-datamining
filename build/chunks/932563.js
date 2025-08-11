@@ -1,14 +1,15 @@
 /** Chunk was on 34779 **/
-n.d(t, {
+/** chunk id: 932563, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   V_: () => o,
   cR: () => l,
   zl: () => s
 });
-var r = n(442837),
-  i = n(479766);
+var Chunk442837 = require("./442837.js"),
+  Chunk479766 = require("./479766.js");
 
 function l() {
-  return (0, r.e7)([i.Z], () => i.Z.balance)
+  return (0, Chunk442837.e7)([Chunk479766.Z], () => Chunk479766.Z.balance)
 }
 
 function o(e) {
@@ -19,5 +20,5 @@ function o(e) {
 }
 
 function s() {
-  return i.Z.getCurrentBalance()
+  return Chunk479766.Z.getCurrentBalance()
 }

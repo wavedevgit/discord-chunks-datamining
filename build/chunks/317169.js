@@ -1,18 +1,19 @@
 /** Chunk was on web.js **/
+/** chunk id: 317169, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   I: () => s,
   Z: () => l
 });
-var r = n(73800),
-  i = n(442837),
-  o = n(430824),
-  a = n(905128);
+var Chunk73800 = require("./73800.js"),
+  Chunk442837 = require("./442837.js"),
+  Chunk430824 = require("./430824.js"),
+  Chunk905128 = require("./905128.js");
 
 function s(e) {
   var t, n, r;
-  let i = null != (r = null == (t = o.Z.getGuild(e)) ? void 0 : t.premiumSubscriberCount) ? r : 0,
-    s = null == (n = a.Z.getStateForGuild(e)) ? void 0 : n.appliedBoosts;
+  let i = null != (r = null == (t = o.Z.getGuild(e)) ? true : t.premiumSubscriberCount) ? r : 0,
+    s = null == (n = a.Z.getStateForGuild(e)) ? true : n.appliedBoosts;
   return null == s ? {
     available: 0,
     spend: 0,
@@ -28,11 +29,11 @@ function l(e) {
   var t;
   let n = null != (t = (0, i.e7)([o.Z], () => {
       var t;
-      return null == (t = o.Z.getGuild(e)) ? void 0 : t.premiumSubscriberCount
+      return null == (t = o.Z.getGuild(e)) ? true : t.premiumSubscriberCount
     })) ? t : 0,
     s = (0, i.e7)([a.Z], () => {
       var t;
-      return null == (t = a.Z.getStateForGuild(e)) ? void 0 : t.appliedBoosts
+      return null == (t = a.Z.getStateForGuild(e)) ? true : t.appliedBoosts
     });
   return r.useMemo(() => null == s ? {
     available: 0,

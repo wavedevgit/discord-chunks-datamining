@@ -1,16 +1,17 @@
 /** Chunk was on web.js **/
-let r = n(40231),
-  i = n(721919),
+/** chunk id: 113295, original params: e,t,n (module,exports,re quire) **/
+let Chunk40231 = require("./40231.js"),
+  Chunk721919 = require("./721919.js"),
   {
     ANY: o
-  } = i,
-  a = n(889658),
-  s = n(839525),
-  l = n(393808),
-  c = n(690217),
-  u = n(689478),
-  d = n(725616);
-e.exports = (e, t, n, f) => {
+  } = Chunk721919,
+  Chunk889658 = require("./889658.js"),
+  Chunk839525 = require("./839525.js"),
+  Chunk393808 = require("./393808.js"),
+  Chunk690217 = require("./690217.js"),
+  Chunk689478 = require("./689478.js"),
+  Chunk725616 = require("./725616.js");
+module.exports = (e, t, n, f) => {
   let _, p, h, m, g;
   switch (e = new r(e, f), t = new a(t, f), n) {
     case ">":
@@ -22,14 +23,14 @@ e.exports = (e, t, n, f) => {
     default:
       throw TypeError('Must provide a hilo val of "<" or ">"')
   }
-  if (s(e, t, f)) return !1;
+  if (s(e, t, f)) returnfalse;
   for (let n = 0; n < t.set.length; ++n) {
     let r = t.set[n],
       a = null,
       s = null;
     if (r.forEach(e => {
         e.semver === o && (e = new i(">=0.0.0")), a = a || e, s = s || e, _(e.semver, a.semver, f) ? a = e : h(e.semver, s.semver, f) && (s = e)
-      }), a.operator === m || a.operator === g || (!s.operator || s.operator === m) && p(e, s.semver) || s.operator === g && h(e, s.semver)) return !1
+      }), a.operator === m || a.operator === g || (!s.operator || s.operator === m) && p(e, s.semver) || s.operator === g && h(e, s.semver)) returnfalse
   }
-  return !0
+  returntrue
 }

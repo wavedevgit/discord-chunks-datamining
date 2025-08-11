@@ -1,4 +1,6 @@
-/** Chunk was on web.js **/ ! function(e, t) {
+/** Chunk was on web.js **/
+/** chunk id: 197163, original params: e,t,n (module,exports,re quire) **/
+! function(e, t) {
   t(n(913527))
 }(0, function(e) {
   "use strict";
@@ -50,7 +52,7 @@
     },
     weekdaysShort: "Sek_Pir_Ant_Tre_Ket_Pen_Šeš".split("_"),
     weekdaysMin: "S_P_A_T_K_Pn_Š".split("_"),
-    weekdaysParseExact: !0,
+    weekdaysParseExact: true,
     longDateFormat: {
       LT: "HH:mm",
       LTS: "HH:mm:ss",

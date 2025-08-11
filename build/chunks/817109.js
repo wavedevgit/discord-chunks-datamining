@@ -1,12 +1,13 @@
 /** Chunk was on web.js **/
+/** chunk id: 817109, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 
 function r(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -26,7 +27,7 @@ function i(e, t) {
       let t = e.body,
         n = null != t ? Object.values(t)[0] : null;
       return {
-        message: null != n ? n[0] : void 0,
+        message: null != n ? n[0] : true,
         fields: t,
         status: e.status
       }
@@ -34,15 +35,15 @@ function i(e, t) {
     status: e.status
   }
 }
-n.d(t, {
+require.d(exports, {
   H: () => o
-}), n(415506);
+}), require("./415506.js");
 class o {
   getFieldMessage(e) {
     return null != this.fields[e] ? this.fields[e][0] : null
   }
   constructor(e, t, n = "An unexpected error occurred.") {
-    r(this, "message", void 0), r(this, "code", void 0), r(this, "retryAfter", void 0), r(this, "fields", void 0), r(this, "error", void 0), r(this, "status", void 0);
+    r(this, "message", true), r(this, "code", true), r(this, "retryAfter", true), r(this, "fields", true), r(this, "error", true), r(this, "status", true);
     let {
       message: o,
       code: a,
@@ -50,6 +51,6 @@ class o {
       fields: l,
       status: c
     } = i(e, t);
-    this.message = o || n, this.retryAfter = s, this.code = a || -1, this.fields = l || {}, this.status = c, this.error = Error(o)
+    this.message = o || n, this.retryAfter = s, this.code = a || false, this.fields = l || {}, this.status = c, this.error = Error(o)
   }
 }

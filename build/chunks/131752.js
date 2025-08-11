@@ -1,13 +1,14 @@
 /** Chunk was on web.js **/
+/** chunk id: 131752, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-Object.defineProperty(t, "__esModule", {
-  value: !0
-}), t.runtimeHashMessageKey = s;
-let r = n(820401),
+Object.defineProperty(exports, "__esModule", {
+  value: true
+}), exports.runtimeHashMessageKey = s;
+let Chunk820401 = require("./820401.js"),
   i = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/".split(""),
   o = (() => {
     let e = new Uint8Array(4);
-    return !((new Uint32Array(e.buffer)[0] = 1) & e[0])
+    return !((new Uint32Array(module.buffer)[0] = 1) & module[0])
   })();
 
 function a(e) {

@@ -1,9 +1,10 @@
 /** Chunk was on web.js **/
+/** chunk id: 995687, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   D: () => i
 });
-var r = n(839826),
+var Chunk839826 = require("./839826.js"),
   i = function(e) {
     if ((0, r.xj)(e)) return 1 / 0;
     for (var t = 0, n = e.parentNode; n;) t += 1, n = n.parentNode;

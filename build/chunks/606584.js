@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 606584, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   nav: "nav_b2eddf",
   navPrev: "navPrev_b2eddf nav_b2eddf",
   navNext: "navNext_b2eddf nav_b2eddf",

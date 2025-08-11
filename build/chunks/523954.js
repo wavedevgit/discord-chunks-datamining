@@ -1,4 +1,5 @@
 /** Chunk was on 63488 **/
-p.exports = {
+/** chunk id: 523954, original params: p (module,exports,require) **/
+module.exports = {
   "5+172d": "Stream"
 }

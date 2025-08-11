@@ -1,9 +1,10 @@
 /** Chunk was on 67244 **/
+/** chunk id: 778111, original params: e,t,r (module,exports,require) **/
 "use strict";
-r.d(t, {
+require.d(exports, {
   Z: () => n
 });
-var a = r(665352);
+var Chunk665352 = require("./665352.js");
 
 function n(e, t, r = "lab") {
   let s = (r = a.Z.get(r)).from(e),

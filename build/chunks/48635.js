@@ -1,5 +1,6 @@
 /** Chunk was on 73628 **/
-e.exports = {
+/** chunk id: 48635, original params: e,t,A (module,exports,require) **/
+module.exports = {
   container: "container_f8a8fa",
   uploadArea: "uploadArea_f8a8fa",
   addFileButtonLook: "addFileButtonLook_f8a8fa",

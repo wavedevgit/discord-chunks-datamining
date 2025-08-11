@@ -1,31 +1,32 @@
 /** Chunk was on web.js **/
+/** chunk id: 107511, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => _
-}), n(388685);
-var r = n(433517),
-  i = n(570140),
-  o = n(317770),
-  a = n(314897),
-  s = n(944486),
-  l = n(105372),
-  c = n(88751),
-  u = n(157925);
+}), require("./388685.js");
+var Chunk433517 = require("./433517.js"),
+  Chunk570140 = require("./570140.js"),
+  Chunk317770 = require("./317770.js"),
+  Chunk314897 = require("./314897.js"),
+  Chunk944486 = require("./944486.js"),
+  Chunk105372 = require("./105372.js"),
+  Chunk88751 = require("./88751.js"),
+  Chunk157925 = require("./157925.js");
 
 function d(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
-class f extends o.Z {
+class f extends Chunk317770.Z {
   _initialize() {
-    i.Z.subscribe("VOICE_STATE_UPDATES", this.handleVoiceStateUpdates)
+    Chunk570140.Z.subscribe("VOICE_STATE_UPDATES", this.handleVoiceStateUpdates)
   }
   _terminate() {
-    i.Z.unsubscribe("VOICE_STATE_UPDATES", this.handleVoiceStateUpdates)
+    Chunk570140.Z.unsubscribe("VOICE_STATE_UPDATES", this.handleVoiceStateUpdates)
   }
   constructor(...e) {
     super(...e), d(this, "handleVoiceStateUpdates", e => {
@@ -33,9 +34,9 @@ class f extends o.Z {
         voiceStates: t
       } = e;
       t.forEach(e => {
-        if (null == e.channelId || e.userId !== a.default.getId() || (this.terminate(), r.K.get(u.$z, !1))) return;
+        if (null == e.channelId || e.userId !== a.default.getId() || (this.terminate(), r.K.get(u.$z, false))) return;
         let t = s.Z.getVoiceChannelId();
-        null != t && e.channelId === t && c.ZP.isAudienceMember(e.userId, t) && (r.K.set(u.$z, !0), l.$(t))
+        null != t && e.channelId === t && c.ZP.isAudienceMember(e.userId, t) && (r.K.set(u.$z, true), l.$(t))
       })
     })
   }

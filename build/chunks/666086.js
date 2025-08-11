@@ -1,47 +1,48 @@
 /** Chunk was on web.js **/
+/** chunk id: 666086, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => I
-}), n(388685);
-var r = n(392711),
-  i = n(106351),
-  o = n(904245),
-  a = n(147913),
-  s = n(622822),
-  l = n(447003),
-  c = n(592125),
-  u = n(650774),
-  d = n(271383),
-  f = n(430824),
-  _ = n(375954),
-  p = n(944486),
-  h = n(522558),
-  m = n(795448),
-  g = n(441623),
-  E = n(474936);
+}), require("./388685.js");
+var Chunk392711 = require("./392711.js"),
+  Chunk106351 = require("./106351.js"),
+  Chunk904245 = require("./904245.js"),
+  Chunk147913 = require("./147913.js"),
+  Chunk622822 = require("./622822.js"),
+  Chunk447003 = require("./447003.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk650774 = require("./650774.js"),
+  Chunk271383 = require("./271383.js"),
+  Chunk430824 = require("./430824.js"),
+  Chunk375954 = require("./375954.js"),
+  Chunk944486 = require("./944486.js"),
+  Chunk522558 = require("./522558.js"),
+  Chunk795448 = require("./795448.js"),
+  Chunk441623 = require("./441623.js"),
+  Chunk474936 = require("./474936.js");
 
 function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 let y = 50,
   O = 1e3;
-class v extends a.Z {
+class v extends Chunk147913.Z {
   isChannelEligible(e, t) {
     switch (e.type) {
       case i.d.DM:
       case i.d.GROUP_DM:
-        return !0;
+        returntrue;
       case i.d.GUILD_TEXT:
         let n = f.Z.getGuild(t),
           r = u.Z.getMemberCount(t);
-        return null != r && r <= y && (null == n ? void 0 : n.rulesChannelId) !== e.id && !(0, s.aC)(e) && !(0, l.Z)(e) && null == e.linkedLobby;
+        return null != r && r <= y && (null == n ? true : n.rulesChannelId) !== e.id && !(0, s.aC)(e) && !(0, l.Z)(e) && null == e.linkedLobby;
       default:
-        return !1
+        returnfalse
     }
   }
   maybeSendGiftingPromptSystemMessageDebounced(e, t, n, i) {
@@ -60,7 +61,7 @@ class v extends a.Z {
     } = h.w.getCurrentConfig({
       location: "PremiumGiftingIntentManager handleChannelSelect"
     }, {
-      autoTrackExposure: !1
+      autoTrackExposure: false
     }), r = c.Z.getChannel(t);
     if (n && null != r && this.isChannelEligible(r, e)) {
       let t = new Set(null != e ? d.ZP.getMemberIds(e) : r.recipients),
@@ -79,10 +80,10 @@ class v extends a.Z {
     this.handleChannelSelect(t, n)
   }
   onPostConnectionOpen() {
-    let e = p.Z.getChannelId();
-    if (null != e) {
-      let t = c.Z.getChannel(e);
-      this.handleChannelSelect(null == t ? void 0 : t.guild_id, null == t ? void 0 : t.id)
+    let e = Chunk944486.Z.getChannelId();
+    if (null != module) {
+      let t = Chunk592125.Z.getChannel(module);
+      this.handleChannelSelect(null == exports ? true : exports.guild_id, null == exports ? true : exports.id)
     }
   }
   constructor(...e) {

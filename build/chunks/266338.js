@@ -1,17 +1,18 @@
 /** Chunk was on web.js **/
+/** chunk id: 266338, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   UC: () => l,
   YP: () => s,
   c: () => a
-}), n(388685);
+}), require("./388685.js");
 let r = new WeakMap,
   i = new WeakMap;
 
 function o(e, t) {
   e.forEach(e => {
     var n;
-    let r = null == (n = i.get(t)) ? void 0 : n.get(e.target);
+    let r = null == (n = i.get(t)) ? true : n.get(e.target);
     null != r && r.call(null, e)
   })
 }

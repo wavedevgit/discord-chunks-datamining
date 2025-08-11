@@ -1,8 +1,9 @@
 /** Chunk was on 34779 **/
-n.d(t, {
+/** chunk id: 7093, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => r
 });
-let r = (0, n(97519).U)(() => ({
+let r = (0, require("./97519.js").U)(() => ({
   isOpen: null,
-  shouldRenderTenureLevelUp: !1
+  shouldRenderTenureLevelUp: false
 }))

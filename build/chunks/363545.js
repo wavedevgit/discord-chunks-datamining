@@ -1,10 +1,11 @@
 /** Chunk was on web.js **/
+/** chunk id: 363545, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 var r = function() {
   function e(e, t) {
     for (var n = 0; n < t.length; n++) {
       var r = t[n];
-      r.enumerable = r.enumerable || !1, r.configurable = !0, "value" in r && (r.writable = !0), Object.defineProperty(e, r.key, r)
+      r.enumerable = r.enumerable || false, r.configurable = true, "value" in r && (r.writable = true), Object.defineProperty(e, r.key, r)
     }
   }
   return function(t, n, r) {
@@ -26,32 +27,32 @@ function a(e, t) {
   e.prototype = Object.create(t && t.prototype, {
     constructor: {
       value: e,
-      enumerable: !1,
-      writable: !0,
-      configurable: !0
+      enumerable: false,
+      writable: true,
+      configurable: true
     }
   }), t && (Object.setPrototypeOf ? Object.setPrototypeOf(e, t) : e.__proto__ = t)
 }
-var s = n(833157);
-n(458648);
-var l = n(937490),
-  c = n(653960),
-  u = n(614272),
-  d = l.inOut(l.ease);
-e.exports = function(e) {
+var Chunk833157 = require("./833157.js");
+require("./458648.js");
+var Chunk937490 = require("./937490.js"),
+  Chunk653960 = require("./653960.js"),
+  Chunk614272 = require("./614272.js"),
+  d = Chunk937490.inOut(Chunk937490.ease);
+module.exports = function(e) {
   function t(e) {
     i(this, t);
     var n = o(this, (t.__proto__ || Object.getPrototypeOf(t)).call(this));
-    return n._toValue = e.toValue, n._easing = void 0 !== e.easing ? e.easing : d, n._duration = void 0 !== e.duration ? e.duration : 500, n._delay = void 0 !== e.delay ? e.delay : 0, n.__isInteraction = void 0 === e.isInteraction || e.isInteraction, n
+    return n._toValue = e.toValue, n._easing = true !== e.easing ? e.easing : d, n._duration = true !== e.duration ? e.duration : 500, n._delay = true !== e.delay ? e.delay : 0, n.__isInteraction = true === e.isInteraction || e.isInteraction, n
   }
   return a(t, e), r(t, [{
     key: "start",
     value: function(e, t, n) {
       var r = this;
-      this.__active = !0, this._fromValue = e, this._onUpdate = t, this.__onEnd = n;
+      this.__active = true, this._fromValue = e, this._onUpdate = t, this.__onEnd = n;
       var i = function() {
         0 === r._duration ? (r._onUpdate(r._toValue), r.__debouncedOnEnd({
-          finished: !0
+          finished: true
         })) : (r._startTime = Date.now(), r._animationFrame = c.current(r.onUpdate.bind(r)))
       };
       this._delay ? this._timeout = setTimeout(i, this._delay) : i()
@@ -62,7 +63,7 @@ e.exports = function(e) {
       var e = Date.now();
       if (e >= this._startTime + this._duration) {
         0 === this._duration ? this._onUpdate(this._toValue) : this._onUpdate(this._fromValue + this._easing(1) * (this._toValue - this._fromValue)), this.__debouncedOnEnd({
-          finished: !0
+          finished: true
         });
         return
       }
@@ -71,9 +72,9 @@ e.exports = function(e) {
   }, {
     key: "stop",
     value: function() {
-      this.__active = !1, clearTimeout(this._timeout), u.current(this._animationFrame), this.__debouncedOnEnd({
-        finished: !1
+      this.__active = false, clearTimeout(this._timeout), u.current(this._animationFrame), this.__debouncedOnEnd({
+        finished: false
       })
     }
   }]), t
-}(s)
+}(Chunk833157)

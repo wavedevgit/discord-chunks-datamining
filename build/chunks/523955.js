@@ -1,5 +1,6 @@
 /** Chunk was on 88934 **/
-e.exports = {
+/** chunk id: 523955, original params: e,t,n (module,exports,require) **/
+module.exports = {
   root: "root__00dfb",
   carouselContainer: "carouselContainer__00dfb",
   carousel: "carousel__00dfb",

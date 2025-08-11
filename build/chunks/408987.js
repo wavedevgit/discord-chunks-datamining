@@ -1,12 +1,13 @@
 /** Chunk was on web.js **/
+/** chunk id: 408987, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => s
 });
-var r = n(570140),
-  i = n(496675),
-  o = n(751189),
-  a = n(981631);
+var Chunk570140 = require("./570140.js"),
+  Chunk496675 = require("./496675.js"),
+  Chunk751189 = require("./751189.js"),
+  Chunk981631 = require("./981631.js");
 let s = {
   async checkGuildTemplateDirty(e) {
     if (!i.Z.canWithPartialContext(a.Plq.MANAGE_GUILD, {
@@ -25,7 +26,7 @@ let s = {
     })
   },
   hideGuildTemplatePromotionTooltip() {
-    r.Z.dispatch({
+    Chunk570140.Z.dispatch({
       type: "GUILD_TEMPLATE_PROMOTION_TOOLTIP_HIDE"
     })
   }

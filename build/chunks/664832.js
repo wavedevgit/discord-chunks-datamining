@@ -1,5 +1,6 @@
 /** Chunk was on 34779 **/
-e.exports = {
+/** chunk id: 664832, original params: e,t,n (module,exports,require) **/
+module.exports = {
   previewChannelRow: "previewChannelRow_d59199",
   selected: "selected_d59199",
   closeButton: "closeButton_d59199",

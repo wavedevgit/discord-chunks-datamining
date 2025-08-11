@@ -1,5 +1,6 @@
 /** Chunk was on 37709 **/
-e.exports = {
+/** chunk id: 903864, original params: e,t,n (module,exports,require) **/
+module.exports = {
   prompt: "prompt_fe70ca",
   promptContent: "promptContent_fe70ca",
   scrollerContent: "scrollerContent_fe70ca",

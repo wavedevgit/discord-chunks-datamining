@@ -1,7 +1,8 @@
 /** Chunk was on 23746 **/
-var n = r(413135).Buffer,
+/** chunk id: 383083, original params: e,t,r (module,exports,require) **/
+var n = require("./413135.js").Buffer,
   i = [255, 255, 26, 27, 28, 29, 30, 31, 255, 255, 255, 255, 255, 255, 255, 255, 255, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 255, 255, 255, 255, 255, 255, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 255, 255, 255, 255, 255];
-t.encode = function(e) {
+exports.encode = function(e) {
   n.isBuffer(e) || (e = new n(e));
   for (var t, r, i = 0, s = 0, o = 0, a = 0, c = new n(8 * (r = Math.floor((t = e).length / 5), t.length % 5 == 0 ? r : r + 1)); i < e.length;) {
     var l = e[i];
@@ -9,7 +10,7 @@ t.encode = function(e) {
   }
   for (i = s; i < c.length; i++) c[i] = 61;
   return c
-}, t.decode = function(e) {
+}, exports.decode = function(e) {
   var t, r = 0,
     s = 0,
     o = 0;

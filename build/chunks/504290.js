@@ -1,9 +1,10 @@
 /** Chunk was on web.js **/
+/** chunk id: 504290, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-var r = n(287353),
-  i = n(621523),
-  o = n(127849).String;
-e.exports = !!Object.getOwnPropertySymbols && !i(function() {
+var Chunk287353 = require("./287353.js"),
+  Chunk621523 = require("./621523.js"),
+  o = require("./127849.js").String;
+module.exports = !!Object.getOwnPropertySymbols && !Chunk621523(function() {
   var e = Symbol("symbol detection");
-  return !o(e) || !(Object(e) instanceof Symbol) || !Symbol.sham && r && r < 41
+  return !o(module) || !(Object(module) instanceof Symbol) || !Symbol.sham && Chunk287353 && Chunk287353 < 41
 })

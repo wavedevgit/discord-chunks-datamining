@@ -1,23 +1,24 @@
 /** Chunk was on web.js **/
+/** chunk id: 350167, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   r: () => u
-}), n(539854), n(388685), n(415506);
-var r = n(579092),
-  i = n(198584),
-  o = n(444675);
+}), require("./539854.js"), require("./388685.js"), require("./415506.js");
+var Chunk579092 = require("./579092.js"),
+  Chunk198584 = require("./198584.js"),
+  Chunk444675 = require("./444675.js");
 
 function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 let s = 1e6,
-  l = "1" === o.env.KV_STORAGE_LOGGING,
-  c = new r.Yd("Runtime");
+  l = "1" === Chunk444675.env.KV_STORAGE_LOGGING,
+  c = new Chunk579092.Yd("Runtime");
 class u {
   static nextId() {
     return ++this.counter
@@ -76,14 +77,14 @@ class u {
     }
   }
   static initialize() {
-    this.initialized || (i.d.setCallbacks({
+    this.initialized || (Chunk198584.d.setCallbacks({
       status: e => this.onStatus(e),
       response: (e, t) => this.onResponse(e, t)
     }), l && (this.addCompletionCallback(e => {
       let t = e.ok ? "completed" : "failed",
         n = ["".concat(e.timings.execution.toFixed(3), "ms execution"), "".concat(e.timings.materialization.toFixed(3), "ms js materialization"), "".concat(e.timings.ccTotal.toFixed(3), "ms cc completion"), "".concat(e.timings.jsTotal.toFixed(3), "ms js reception")].join(", ");
       c.info("".concat(e.tag, " (#").concat(e.id, ") ").concat(t, " in ").concat(e.timings.ccTotal.toFixed(3), "ms (").concat(n, ")."))
-    }), this.addDatabaseStateCallback((e, t) => c.info("".concat(e, " (state: ").concat(t, ")")))), this.initialized = !0)
+    }), this.addDatabaseStateCallback((e, t) => c.info("".concat(e, " (state: ").concat(t, ")")))), this.initialized = true)
   }
 }
-a(u, "counter", 0), a(u, "pending", new Map), a(u, "initialized", !1), a(u, "dbStateCallbacks", []), a(u, "completionCallbacks", [])
+a(u, "counter", 0), a(u, "pending", new Map), a(u, "initialized", false), a(u, "dbStateCallbacks", []), a(u, "completionCallbacks", [])

@@ -1,9 +1,10 @@
 /** Chunk was on web.js **/
+/** chunk id: 140701, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   W: () => i
 });
-var r = n(592125);
+var Chunk592125 = require("./592125.js");
 
 function i(e, t) {
   let n = r.Z.getChannel(t);

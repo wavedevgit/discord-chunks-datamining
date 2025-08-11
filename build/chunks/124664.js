@@ -1,11 +1,9 @@
 /** Chunk was on web.js **/
-let r = n(40231),
-  i = n(868667),
-  {
-    safeRe: o,
-    t: a
-  } = n(646664);
-e.exports = (e, t) => {
+/** chunk id: 124664, original params: e,t,n (module,exports,re quire) **/
+let Chunk40231 = require("./40231.js"),
+  Chunk868667 = require("./868667.js"),
+  Chunk646664 = require("./646664.js");
+module.exports = (e, t) => {
   if (e instanceof r) return e;
   if ("number" == typeof e && (e = String(e)), "string" != typeof e) return null;
   let n = null;
@@ -13,7 +11,7 @@ e.exports = (e, t) => {
     let r, i = t.includePrerelease ? o[a.COERCERTLFULL] : o[a.COERCERTL];
     for (;
       (r = i.exec(e)) && (!n || n.index + n[0].length !== e.length);) n && r.index + r[0].length === n.index + n[0].length || (n = r), i.lastIndex = r.index + r[1].length + r[2].length;
-    i.lastIndex = -1
+    i.lastIndex = false
   } else n = e.match(t.includePrerelease ? o[a.COERCEFULL] : o[a.COERCE]);
   if (null === n) return null;
   let s = n[2],

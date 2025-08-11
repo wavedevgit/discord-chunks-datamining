@@ -1,26 +1,27 @@
 /** Chunk was on web.js **/
+/** chunk id: 726542, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => d
-}), n(804061), n(704826), n(35282), n(642613);
-var r = n(392711),
-  i = n.n(r),
-  o = n(900089),
-  a = n(591759),
-  s = n(981631);
+}), require("./804061.js"), require("./704826.js"), require("./35282.js"), require("./642613.js");
+var Chunk392711 = require("./392711.js"),
+  i = require.n(Chunk392711),
+  Chunk900089 = require("./900089.js"),
+  Chunk591759 = require("./591759.js"),
+  Chunk981631 = require("./981631.js");
 let l = [{
-    type: s.ABu.TWITCH,
+    type: Chunk981631.ABu.TWITCH,
     name: "Twitch",
-    color: (0, o.Fw)("TWITCH"),
+    color: (0, Chunk900089.Fw)("TWITCH"),
     icon: {
-      lightPNG: n(635643),
-      darkPNG: n(635643),
-      whitePNG: n(800346),
-      lightSVG: n(160050),
-      darkSVG: n(160050),
-      whiteSVG: n(235779)
+      lightPNG: require("./635643.js"),
+      darkPNG: require("./635643.js"),
+      whitePNG: require("./800346.js"),
+      lightSVG: require("./160050.js"),
+      darkSVG: require("./160050.js"),
+      whiteSVG: require("./235779.js")
     },
-    enabled: !0,
+    enabled: true,
     getPlatformUserUrl: e => {
       let {
         name: t
@@ -29,18 +30,18 @@ let l = [{
     },
     domains: ["twitch.tv", "twitch.com"]
   }, {
-    type: s.ABu.YOUTUBE,
+    type: Chunk981631.ABu.YOUTUBE,
     name: "YouTube",
-    color: (0, o.Fw)("YOUTUBE"),
+    color: (0, Chunk900089.Fw)("YOUTUBE"),
     icon: {
-      lightPNG: n(459862),
-      darkPNG: n(459862),
-      whitePNG: n(934689),
-      lightSVG: n(529923),
-      darkSVG: n(529923),
-      whiteSVG: n(141989)
+      lightPNG: require("./459862.js"),
+      darkPNG: require("./459862.js"),
+      whitePNG: require("./934689.js"),
+      lightSVG: require("./529923.js"),
+      darkSVG: require("./529923.js"),
+      whiteSVG: require("./141989.js")
     },
-    enabled: !0,
+    enabled: true,
     getPlatformUserUrl: e => {
       let {
         id: t
@@ -49,64 +50,64 @@ let l = [{
     },
     domains: ["youtube.com", "youtu.be"]
   }, {
-    type: s.ABu.BATTLENET,
+    type: Chunk981631.ABu.BATTLENET,
     name: "Battle.net",
-    color: (0, o.Fw)("BATTLENET"),
+    color: (0, Chunk900089.Fw)("BATTLENET"),
     icon: {
-      lightPNG: n(414680),
-      darkPNG: n(414680),
-      whitePNG: n(573103),
-      lightSVG: n(424160),
-      darkSVG: n(424160),
-      whiteSVG: n(929858)
+      lightPNG: require("./414680.js"),
+      darkPNG: require("./414680.js"),
+      whitePNG: require("./573103.js"),
+      lightSVG: require("./424160.js"),
+      darkSVG: require("./424160.js"),
+      whiteSVG: require("./929858.js")
     },
-    enabled: !0
+    enabled: true
   }, {
-    type: s.ABu.BLUESKY,
+    type: Chunk981631.ABu.BLUESKY,
     name: "Bluesky",
     icon: {
-      lightPNG: n(618780),
-      darkPNG: n(618780),
-      whitePNG: n(566961),
-      lightSVG: n(387793),
-      darkSVG: n(387793),
-      whiteSVG: n(148052)
+      lightPNG: require("./618780.js"),
+      darkPNG: require("./618780.js"),
+      whitePNG: require("./566961.js"),
+      lightSVG: require("./387793.js"),
+      darkSVG: require("./387793.js"),
+      whiteSVG: require("./148052.js")
     },
-    enabled: !0,
+    enabled: true,
     getPlatformUserUrl: e => {
       let {
         id: t
       } = e;
       return "https://bsky.app/profile/".concat(encodeURIComponent(t).replaceAll("%3A", ":"))
     },
-    isFederated: !0,
-    hasMetadata: !0
+    isFederated: true,
+    hasMetadata: true
   }, {
-    type: s.ABu.BUNGIE,
+    type: Chunk981631.ABu.BUNGIE,
     name: "Bungie.net",
-    color: (0, o.Fw)("BUNGIE"),
+    color: (0, Chunk900089.Fw)("BUNGIE"),
     icon: {
-      lightPNG: n(953522),
-      darkPNG: n(706264),
-      whitePNG: n(610891),
-      lightSVG: n(459293),
-      darkSVG: n(970714),
-      whiteSVG: n(891049)
+      lightPNG: require("./953522.js"),
+      darkPNG: require("./706264.js"),
+      whitePNG: require("./610891.js"),
+      lightSVG: require("./459293.js"),
+      darkSVG: require("./970714.js"),
+      whiteSVG: require("./891049.js")
     },
-    enabled: !0
+    enabled: true
   }, {
-    type: s.ABu.SKYPE,
+    type: Chunk981631.ABu.SKYPE,
     name: "Skype",
-    color: (0, o.Fw)("SKYPE"),
+    color: (0, Chunk900089.Fw)("SKYPE"),
     icon: {
-      lightPNG: n(575439),
-      darkPNG: n(575439),
-      whitePNG: n(27163),
-      lightSVG: n(721782),
-      darkSVG: n(721782),
-      whiteSVG: n(144578)
+      lightPNG: require("./575439.js"),
+      darkPNG: require("./575439.js"),
+      whitePNG: require("./27163.js"),
+      lightSVG: require("./721782.js"),
+      darkSVG: require("./721782.js"),
+      whiteSVG: require("./144578.js")
     },
-    enabled: !1,
+    enabled: false,
     getPlatformUserUrl: e => {
       let {
         id: t
@@ -114,51 +115,51 @@ let l = [{
       return "skype:".concat(encodeURIComponent(t), "?userinfo")
     }
   }, {
-    type: s.ABu.LEAGUE_OF_LEGENDS,
+    type: Chunk981631.ABu.LEAGUE_OF_LEGENDS,
     name: "League of Legends",
-    color: (0, o.Fw)("LOL"),
+    color: (0, Chunk900089.Fw)("LOL"),
     icon: {
-      lightPNG: n(275556),
-      darkPNG: n(275556),
-      whitePNG: n(26963),
-      lightSVG: n(153711),
-      darkSVG: n(153711),
-      whiteSVG: n(327574)
+      lightPNG: require("./275556.js"),
+      darkPNG: require("./275556.js"),
+      whitePNG: require("./26963.js"),
+      lightSVG: require("./153711.js"),
+      darkSVG: require("./153711.js"),
+      whiteSVG: require("./327574.js")
     },
-    enabled: !0
+    enabled: true
   }, {
-    type: s.ABu.STEAM,
+    type: Chunk981631.ABu.STEAM,
     name: "Steam",
-    color: (0, o.Fw)("STEAM"),
+    color: (0, Chunk900089.Fw)("STEAM"),
     icon: {
-      lightPNG: n(929234),
-      darkPNG: n(170131),
-      whitePNG: n(170131),
-      lightSVG: n(227304),
-      darkSVG: n(763613),
-      whiteSVG: n(763613)
+      lightPNG: require("./929234.js"),
+      darkPNG: require("./170131.js"),
+      whitePNG: require("./170131.js"),
+      lightSVG: require("./227304.js"),
+      darkSVG: require("./763613.js"),
+      whiteSVG: require("./763613.js")
     },
-    enabled: !0,
+    enabled: true,
     getPlatformUserUrl: e => {
       let {
         id: t
       } = e;
       return "https://steamcommunity.com/profiles/".concat(encodeURIComponent(t))
     },
-    hasMetadata: !0
+    hasMetadata: true
   }, {
-    type: s.ABu.REDDIT,
+    type: Chunk981631.ABu.REDDIT,
     name: "Reddit",
-    color: (0, o.Fw)("REDDIT"),
+    color: (0, Chunk900089.Fw)("REDDIT"),
     icon: {
-      lightPNG: n(211434),
-      darkPNG: n(211434),
-      whitePNG: n(682170),
-      lightSVG: n(592358),
-      darkSVG: n(592358),
-      whiteSVG: n(972428)
+      lightPNG: require("./211434.js"),
+      darkPNG: require("./211434.js"),
+      whitePNG: require("./682170.js"),
+      lightSVG: require("./592358.js"),
+      darkSVG: require("./592358.js"),
+      whiteSVG: require("./972428.js")
     },
-    enabled: !0,
+    enabled: true,
     domains: ["reddit.com"],
     getPlatformUserUrl: e => {
       let {
@@ -166,34 +167,34 @@ let l = [{
       } = e;
       return "https://www.reddit.com/u/".concat(encodeURIComponent(t))
     },
-    hasMetadata: !0
+    hasMetadata: true
   }, {
-    type: s.ABu.FACEBOOK,
+    type: Chunk981631.ABu.FACEBOOK,
     name: "Facebook",
-    color: (0, o.Fw)("FACEBOOK"),
+    color: (0, Chunk900089.Fw)("FACEBOOK"),
     icon: {
-      lightPNG: n(762019),
-      darkPNG: n(762019),
-      whitePNG: n(620530),
-      lightSVG: n(589232),
-      darkSVG: n(589232),
-      whiteSVG: n(318049)
+      lightPNG: require("./762019.js"),
+      darkPNG: require("./762019.js"),
+      whitePNG: require("./620530.js"),
+      lightSVG: require("./589232.js"),
+      darkSVG: require("./589232.js"),
+      whiteSVG: require("./318049.js")
     },
     domains: ["facebook.com"],
-    enabled: !0
+    enabled: true
   }, {
-    type: s.ABu.TWITTER_LEGACY,
+    type: Chunk981631.ABu.TWITTER_LEGACY,
     name: "Twitter",
-    color: (0, o.Fw)("TWITTER"),
+    color: (0, Chunk900089.Fw)("TWITTER"),
     icon: {
-      lightPNG: n(954549),
-      darkPNG: n(954549),
-      whitePNG: n(550886),
-      lightSVG: n(90961),
-      darkSVG: n(90961),
-      whiteSVG: n(819273)
+      lightPNG: require("./954549.js"),
+      darkPNG: require("./954549.js"),
+      whitePNG: require("./550886.js"),
+      lightSVG: require("./90961.js"),
+      darkSVG: require("./90961.js"),
+      whiteSVG: require("./819273.js")
     },
-    enabled: !1,
+    enabled: false,
     getPlatformUserUrl: e => {
       let {
         name: t
@@ -201,20 +202,20 @@ let l = [{
       return "https://twitter.com/".concat(encodeURIComponent(t))
     },
     domains: ["twitter.com"],
-    hasMetadata: !0
+    hasMetadata: true
   }, {
-    type: s.ABu.TWITTER,
+    type: Chunk981631.ABu.TWITTER,
     name: "X",
-    color: (0, o.Fw)("TWITTER"),
+    color: (0, Chunk900089.Fw)("TWITTER"),
     icon: {
-      lightPNG: n(327555),
-      darkPNG: n(126776),
-      whitePNG: n(778385),
-      lightSVG: n(257325),
-      darkSVG: n(451168),
-      whiteSVG: n(580927)
+      lightPNG: require("./327555.js"),
+      darkPNG: require("./126776.js"),
+      whitePNG: require("./778385.js"),
+      lightSVG: require("./257325.js"),
+      darkSVG: require("./451168.js"),
+      whiteSVG: require("./580927.js")
     },
-    enabled: !0,
+    enabled: true,
     getPlatformUserUrl: e => {
       let {
         name: t
@@ -222,20 +223,20 @@ let l = [{
       return "https://x.com/".concat(encodeURIComponent(t))
     },
     domains: ["x.com"],
-    hasMetadata: !0
+    hasMetadata: true
   }, {
-    type: s.ABu.SPOTIFY,
+    type: Chunk981631.ABu.SPOTIFY,
     name: "Spotify",
-    color: (0, o.Fw)("SPOTIFY"),
+    color: (0, Chunk900089.Fw)("SPOTIFY"),
     icon: {
-      lightPNG: n(182553),
-      darkPNG: n(182553),
-      whitePNG: n(955852),
-      lightSVG: n(545734),
-      darkSVG: n(545734),
-      whiteSVG: n(136142)
+      lightPNG: require("./182553.js"),
+      darkPNG: require("./182553.js"),
+      whitePNG: require("./955852.js"),
+      lightSVG: require("./545734.js"),
+      darkSVG: require("./545734.js"),
+      whiteSVG: require("./136142.js")
     },
-    enabled: !0,
+    enabled: true,
     getPlatformUserUrl: e => {
       let {
         id: t
@@ -243,45 +244,45 @@ let l = [{
       return "https://open.spotify.com/user/".concat(encodeURIComponent(t))
     }
   }, {
-    type: s.ABu.XBOX,
+    type: Chunk981631.ABu.XBOX,
     name: "Xbox",
-    color: (0, o.Fw)("XBOX"),
+    color: (0, Chunk900089.Fw)("XBOX"),
     icon: {
-      lightPNG: n(979660),
-      darkPNG: n(157981),
-      whitePNG: n(157981),
-      lightSVG: n(66992),
-      darkSVG: n(158173),
-      whiteSVG: n(158173),
-      customPNG: n(436740)
+      lightPNG: require("./979660.js"),
+      darkPNG: require("./157981.js"),
+      whitePNG: require("./157981.js"),
+      lightSVG: require("./66992.js"),
+      darkSVG: require("./158173.js"),
+      whiteSVG: require("./158173.js"),
+      customPNG: require("./436740.js")
     },
-    enabled: !0
+    enabled: true
   }, {
-    type: s.ABu.SAMSUNG,
+    type: Chunk981631.ABu.SAMSUNG,
     name: "Samsung Galaxy",
-    color: (0, o.Fw)("SAMSUNG"),
+    color: (0, Chunk900089.Fw)("SAMSUNG"),
     icon: {
-      lightPNG: n(664982),
-      darkPNG: n(664982),
-      whitePNG: n(442123),
-      lightSVG: n(601568),
-      darkSVG: n(601568),
-      whiteSVG: n(7007)
+      lightPNG: require("./664982.js"),
+      darkPNG: require("./664982.js"),
+      whitePNG: require("./442123.js"),
+      lightSVG: require("./601568.js"),
+      darkSVG: require("./601568.js"),
+      whiteSVG: require("./7007.js")
     },
-    enabled: !1
+    enabled: false
   }, {
-    type: s.ABu.GITHUB,
+    type: Chunk981631.ABu.GITHUB,
     name: "GitHub",
-    color: (0, o.Fw)("GITHUB"),
+    color: (0, Chunk900089.Fw)("GITHUB"),
     icon: {
-      lightPNG: n(843605),
-      darkPNG: n(789822),
-      whitePNG: n(789822),
-      lightSVG: n(247519),
-      darkSVG: n(184887),
-      whiteSVG: n(184887)
+      lightPNG: require("./843605.js"),
+      darkPNG: require("./789822.js"),
+      whitePNG: require("./789822.js"),
+      lightSVG: require("./247519.js"),
+      darkSVG: require("./184887.js"),
+      whiteSVG: require("./184887.js")
     },
-    enabled: !0,
+    enabled: true,
     getPlatformUserUrl: e => {
       let {
         name: t
@@ -290,67 +291,67 @@ let l = [{
     },
     domains: ["github.com"]
   }, {
-    type: s.ABu.PLAYSTATION,
+    type: Chunk981631.ABu.PLAYSTATION,
     name: "PlayStation Network",
-    color: (0, o.Fw)("PLAYSTATION"),
+    color: (0, Chunk900089.Fw)("PLAYSTATION"),
     icon: {
-      lightPNG: n(385751),
-      darkPNG: n(399592),
-      whitePNG: n(399592),
-      lightSVG: n(223434),
-      darkSVG: n(350379),
-      whiteSVG: n(350379)
+      lightPNG: require("./385751.js"),
+      darkPNG: require("./399592.js"),
+      whitePNG: require("./399592.js"),
+      lightSVG: require("./223434.js"),
+      darkSVG: require("./350379.js"),
+      whiteSVG: require("./350379.js")
     },
-    enabled: !0
+    enabled: true
   }, {
-    type: s.ABu.PLAYSTATION_STAGING,
+    type: Chunk981631.ABu.PLAYSTATION_STAGING,
     name: "PlayStation Network (Staging)",
-    color: (0, o.Fw)("PLAYSTATION"),
+    color: (0, Chunk900089.Fw)("PLAYSTATION"),
     icon: {
-      lightPNG: n(399592),
-      darkPNG: n(385751),
-      whitePNG: n(385751),
-      lightSVG: n(350379),
-      darkSVG: n(223434),
-      whiteSVG: n(223434)
+      lightPNG: require("./399592.js"),
+      darkPNG: require("./385751.js"),
+      whitePNG: require("./385751.js"),
+      lightSVG: require("./350379.js"),
+      darkSVG: require("./223434.js"),
+      whiteSVG: require("./223434.js")
     },
-    enabled: !1
+    enabled: false
   }, {
-    type: s.ABu.EPIC_GAMES,
+    type: Chunk981631.ABu.EPIC_GAMES,
     name: "Epic Games",
     icon: {
-      lightPNG: n(707873),
-      darkPNG: n(549727),
-      whitePNG: n(549727),
-      lightSVG: n(769582),
-      darkSVG: n(532293),
-      whiteSVG: n(532293)
+      lightPNG: require("./707873.js"),
+      darkPNG: require("./549727.js"),
+      whitePNG: require("./549727.js"),
+      lightSVG: require("./769582.js"),
+      darkSVG: require("./532293.js"),
+      whiteSVG: require("./532293.js")
     },
-    enabled: !0
+    enabled: true
   }, {
-    type: s.ABu.RIOT_GAMES,
+    type: Chunk981631.ABu.RIOT_GAMES,
     name: "Riot Games",
     icon: {
-      lightPNG: n(406818),
-      darkPNG: n(406818),
-      whitePNG: n(451192),
-      lightSVG: n(596001),
-      darkSVG: n(596001),
-      whiteSVG: n(641169)
+      lightPNG: require("./406818.js"),
+      darkPNG: require("./406818.js"),
+      whitePNG: require("./451192.js"),
+      lightSVG: require("./596001.js"),
+      darkSVG: require("./596001.js"),
+      whiteSVG: require("./641169.js")
     },
-    enabled: !0
+    enabled: true
   }, {
-    type: s.ABu.ROBLOX,
+    type: Chunk981631.ABu.ROBLOX,
     name: "Roblox",
     icon: {
-      lightPNG: n(670423),
-      darkPNG: n(414773),
-      whitePNG: n(731596),
-      lightSVG: n(553715),
-      darkSVG: n(678922),
-      whiteSVG: n(752561)
+      lightPNG: require("./670423.js"),
+      darkPNG: require("./414773.js"),
+      whitePNG: require("./731596.js"),
+      lightSVG: require("./553715.js"),
+      darkSVG: require("./678922.js"),
+      whiteSVG: require("./752561.js")
     },
-    enabled: !0,
+    enabled: true,
     getPlatformUserUrl: e => {
       let {
         id: t
@@ -358,31 +359,31 @@ let l = [{
       return "https://roblox.com/users/".concat(encodeURIComponent(t), "/profile")
     }
   }, {
-    type: s.ABu.PAYPAL,
+    type: Chunk981631.ABu.PAYPAL,
     name: "PayPal",
     icon: {
-      lightPNG: n(501001),
-      darkPNG: n(501001),
-      whitePNG: n(219389),
-      lightSVG: n(698946),
-      darkSVG: n(698946),
-      whiteSVG: n(737531)
+      lightPNG: require("./501001.js"),
+      darkPNG: require("./501001.js"),
+      whitePNG: require("./219389.js"),
+      lightSVG: require("./698946.js"),
+      darkSVG: require("./698946.js"),
+      whiteSVG: require("./737531.js")
     },
-    enabled: !0,
-    hasMetadata: !0
+    enabled: true,
+    hasMetadata: true
   }, {
-    type: s.ABu.EBAY,
+    type: Chunk981631.ABu.EBAY,
     name: "eBay",
     icon: {
-      lightPNG: n(215741),
-      darkPNG: n(215741),
-      whitePNG: n(463728),
-      lightSVG: n(519515),
-      darkSVG: n(519515),
-      whiteSVG: n(98668)
+      lightPNG: require("./215741.js"),
+      darkPNG: require("./215741.js"),
+      whitePNG: require("./463728.js"),
+      lightSVG: require("./519515.js"),
+      darkSVG: require("./519515.js"),
+      whiteSVG: require("./98668.js")
     },
-    enabled: !0,
-    hasMetadata: !0,
+    enabled: true,
+    hasMetadata: true,
     getPlatformUserUrl: e => {
       let {
         name: t
@@ -390,18 +391,18 @@ let l = [{
       return "https://www.ebay.com/usr/".concat(encodeURIComponent(t))
     }
   }, {
-    type: s.ABu.TIKTOK,
+    type: Chunk981631.ABu.TIKTOK,
     name: "TikTok",
     icon: {
-      lightPNG: n(699308),
-      darkPNG: n(137181),
-      whitePNG: n(137181),
-      lightSVG: n(890849),
-      darkSVG: n(155885),
-      whiteSVG: n(155885)
+      lightPNG: require("./699308.js"),
+      darkPNG: require("./137181.js"),
+      whitePNG: require("./137181.js"),
+      lightSVG: require("./890849.js"),
+      darkSVG: require("./155885.js"),
+      whiteSVG: require("./155885.js")
     },
-    enabled: !0,
-    hasMetadata: !0,
+    enabled: true,
+    hasMetadata: true,
     domains: ["tiktok.com"],
     getPlatformUserUrl: e => {
       let {
@@ -410,17 +411,17 @@ let l = [{
       return "https://www.tiktok.com/@".concat(encodeURIComponent(t))
     }
   }, {
-    type: s.ABu.INSTAGRAM,
+    type: Chunk981631.ABu.INSTAGRAM,
     name: "Instagram",
     icon: {
-      lightPNG: n(232720),
-      darkPNG: n(232720),
-      whitePNG: n(71996),
-      lightSVG: n(526659),
-      darkSVG: n(526659),
-      whiteSVG: n(326720)
+      lightPNG: require("./232720.js"),
+      darkPNG: require("./232720.js"),
+      whitePNG: require("./71996.js"),
+      lightSVG: require("./526659.js"),
+      darkSVG: require("./526659.js"),
+      whiteSVG: require("./326720.js")
     },
-    enabled: !1,
+    enabled: false,
     domains: ["instagram.com"],
     getPlatformUserUrl: e => {
       let {
@@ -429,48 +430,48 @@ let l = [{
       return "https://www.instagram.com/".concat(encodeURIComponent(t))
     }
   }, {
-    type: s.ABu.MASTODON,
+    type: Chunk981631.ABu.MASTODON,
     name: "Mastodon",
     icon: {
-      lightPNG: n(913883),
-      darkPNG: n(913883),
-      whitePNG: n(744387),
-      lightSVG: n(692552),
-      darkSVG: n(692552),
-      whiteSVG: n(49722)
+      lightPNG: require("./913883.js"),
+      darkPNG: require("./913883.js"),
+      whitePNG: require("./744387.js"),
+      lightSVG: require("./692552.js"),
+      darkSVG: require("./692552.js"),
+      whiteSVG: require("./49722.js")
     },
-    enabled: !1,
+    enabled: false,
     getPlatformUserUrl: e => {
       let {
         id: t
       } = e;
       return t
     },
-    isFederated: !0,
-    hasMetadata: !0
+    isFederated: true,
+    hasMetadata: true
   }, {
-    type: s.ABu.CRUNCHYROLL,
+    type: Chunk981631.ABu.CRUNCHYROLL,
     name: "Crunchyroll",
-    color: (0, o.Fw)("CRUNCHYROLL"),
+    color: (0, Chunk900089.Fw)("CRUNCHYROLL"),
     icon: {
-      lightPNG: n(469024),
-      darkPNG: n(469024),
-      whitePNG: n(469024),
-      lightSVG: n(654009),
-      darkSVG: n(654009),
-      whiteSVG: n(670618)
+      lightPNG: require("./469024.js"),
+      darkPNG: require("./469024.js"),
+      whitePNG: require("./469024.js"),
+      lightSVG: require("./654009.js"),
+      darkSVG: require("./654009.js"),
+      whiteSVG: require("./670618.js")
     },
-    enabled: !0
+    enabled: true
   }, {
-    type: s.ABu.DOMAIN,
+    type: Chunk981631.ABu.DOMAIN,
     name: "Domain",
     icon: {
-      lightPNG: n(476735),
-      darkPNG: n(561036),
-      whitePNG: n(561036),
-      lightSVG: n(329074),
-      darkSVG: n(664935),
-      whiteSVG: n(664935)
+      lightPNG: require("./476735.js"),
+      darkPNG: require("./561036.js"),
+      whitePNG: require("./561036.js"),
+      lightSVG: require("./329074.js"),
+      darkSVG: require("./664935.js"),
+      whiteSVG: require("./664935.js")
     },
     getPlatformUserUrl: e => {
       let {
@@ -478,19 +479,19 @@ let l = [{
       } = e;
       return "https://".concat(t, "/")
     },
-    enabled: !0
+    enabled: true
   }, {
-    type: s.ABu.AMAZON_MUSIC,
+    type: Chunk981631.ABu.AMAZON_MUSIC,
     name: "Amazon Music",
     icon: {
-      lightPNG: n(495036),
-      darkPNG: n(495036),
-      whitePNG: n(495036),
-      lightSVG: n(605098),
-      darkSVG: n(605098),
-      whiteSVG: n(605098)
+      lightPNG: require("./495036.js"),
+      darkPNG: require("./495036.js"),
+      whitePNG: require("./495036.js"),
+      lightSVG: require("./605098.js"),
+      darkSVG: require("./605098.js"),
+      whiteSVG: require("./605098.js")
     },
-    enabled: !0
+    enabled: true
   }],
   c = i().keyBy(l, "type"),
   u = {};

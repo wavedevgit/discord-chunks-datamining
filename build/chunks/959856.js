@@ -1,53 +1,54 @@
 /** Chunk was on web.js **/
+/** chunk id: 959856, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => C
-}), n(457542), n(415506), n(388685), n(600040);
-var r = n(512722),
-  i = n.n(r),
-  o = n(264344),
-  a = n.n(o),
-  s = n(47770),
-  l = n(174498),
-  c = n.n(l),
-  u = n(579092),
-  d = n(839548),
-  f = n(46973),
-  _ = n(734298),
-  p = n(970838),
-  h = n(68721),
-  m = n(997653),
-  g = n(384136),
-  E = n(740197),
-  b = n(548820),
-  y = n(586021),
-  O = n(579237),
-  v = n(582168),
-  I = n(825040),
-  T = n(65154),
-  S = n(436620);
+}), require("./457542.js"), require("./415506.js"), require("./388685.js"), require("./600040.js");
+var Chunk512722 = require("./512722.js"),
+  i = require.n(Chunk512722),
+  Chunk264344 = require("./264344.js"),
+  a = require.n(Chunk264344),
+  Chunk47770 = require("./47770.js"),
+  Chunk174498 = require("./174498.js"),
+  c = require.n(Chunk174498),
+  Chunk579092 = require("./579092.js"),
+  Chunk839548 = require("./839548.js"),
+  Chunk46973 = require("./46973.js"),
+  Chunk734298 = require("./734298.js"),
+  Chunk970838 = require("./970838.js"),
+  Chunk68721 = require("./68721.js"),
+  Chunk997653 = require("./997653.js"),
+  Chunk384136 = require("./384136.js"),
+  Chunk740197 = require("./740197.js"),
+  Chunk548820 = require("./548820.js"),
+  Chunk586021 = require("./586021.js"),
+  Chunk579237 = require("./579237.js"),
+  Chunk582168 = require("./582168.jsx"),
+  Chunk825040 = require("./825040.jsx"),
+  Chunk65154 = require("./65154.js"),
+  Chunk436620 = require("./436620.js");
 
 function A(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
-let N = new u.Yd("MediaEngineWebRTC");
-class C extends s.Z {
+let N = new Chunk579092.Yd("MediaEngineWebRTC");
+class C extends Chunk47770.Z {
   destroy() {
-    null != this.voiceActivityInput && (this.voiceActivityInput.destroy(), this.voiceActivityInput = null), this.eachConnection(e => e.destroy()), this.emit(f.aB.Destroy), this.removeAllListeners()
+    null != this.voiceActivityInput && (this.voiceActivityInput.destroy(), this.voiceActivityInput = null), this.eachConnection(e => e.destroy()), this.emit(Chunk46973.aB.Destroy), this.removeAllListeners()
   }
   interact() {
-    this.interacted || (document.createElement("audio").play(), this.interacted = !0), this.eachConnection(e => e.interact())
+    this.interacted || (document.createElement("audio").play(), this.interacted = true), this.eachConnection(e => e.interact())
   }
   static supported() {
-    return !__OVERLAY__ && (S.fi && null != window.AudioContext && null != window.RTCPeerConnection ? (n(266370), !0) : (N.info("WebRTC is not supported on", a().name, a().version), !1))
+    return !__OVERLAY__ && (Chunk436620.fi && null != window.AudioContext && null != window.RTCPeerConnection ? (require("./266370.js"), true) : (N.info("WebRTC is not supported on", a().name, a().version), false))
   }
   supported() {
-    return !0
+    returntrue
   }
   supports(e) {
     switch (e) {
@@ -59,7 +60,7 @@ class C extends s.Z {
         return S.U8;
       case T.AN.DESKTOP_CAPTURE:
         var t;
-        return (null == (t = navigator.mediaDevices) ? void 0 : t.getDisplayMedia) != null;
+        return (null == (t = navigator.mediaDevices) ? true : t.getDisplayMedia) != null;
       case T.AN.VOICE_PROCESSING:
         return "Chrome" === a().name;
       case T.AN.NATIVE_PING:
@@ -91,7 +92,7 @@ class C extends s.Z {
       case T.AN.SIMULCAST:
       case T.AN.SCREEN_CAPTURE_KIT:
       default:
-        return !1
+        returnfalse
     }
   }
   getAudioContext() {
@@ -130,14 +131,14 @@ class C extends s.Z {
   }
   async _enable() {
     if (this.enabled) return;
-    await this.getAudioContext().audioWorklet.addModule(b);
-    let e = new h.Z(this.getAudioContext());
-    e.on("permission", this.handleAudioPermission);
+    await this.getAudioContext().audioWorklet.addModule(Chunk548820);
+    let e = new Chunk68721.Z(this.getAudioContext());
+    module.on("permission", this.handleAudioPermission);
     try {
       var t;
-      await e.enable(), "Firefox" === a().name && await this.handleDeviceChange(), this.enabled = !0, this.eachConnection(e => e.input.enableAudioInput(), T.Yn.DEFAULT), null == (t = this.voiceActivityInput) || t.enable()
+      await module.enable(), "Firefox" === a().name && await this.handleDeviceChange(), this.enabled = true, this.eachConnection(e => e.input.enableAudioInput(), Chunk65154.Yn.DEFAULT), null == (t = this.voiceActivityInput) || exports.enable()
     } finally {
-      e.destroy()
+      module.destroy()
     }
   }
   setInputVolume(e) {}
@@ -149,21 +150,21 @@ class C extends s.Z {
   }
   setNoiseCancellationEnableStats(e) {}
   getAudioInputDevices() {
-    return (0, E.Hg)()
+    return (0, Chunk740197.Hg)()
   }
   setAudioInputDevice(e) {
     var t, n;
     this.sourceId = e, this.eachConnection(t => t.setAudioSource(e), T.Yn.DEFAULT), null == (t = this.voiceActivityInput) || t.setSource(e), null == (n = this.loopback) || n.setAudioSource(e)
   }
   getAudioOutputDevices() {
-    return (0, E.HS)()
+    return (0, Chunk740197.HS)()
   }
   setAudioOutputDevice(e) {
     var t;
     this.sinkId = e, this.connections.forEach(t => t.setSinkId(e)), null == (t = this.loopback) || t.setAudioSink(e)
   }
   getVideoInputDevices() {
-    return (0, E.l0)()
+    return (0, Chunk740197.l0)()
   }
   setVideoInputDevice(e) {
     this.eachConnection(t => t.setVideoSource(e), T.Yn.DEFAULT)
@@ -175,7 +176,7 @@ class C extends s.Z {
     e("")
   }
   async getDesktopSource(e) {
-    let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
+    let t = arguments.length > 1 && true !== arguments[1] && arguments[1],
       n = await g.Z.get(e, t);
     return this.pendingDesktopInputs[n.id] = n, n.id
   }
@@ -202,29 +203,29 @@ class C extends s.Z {
     if (null == e) this.eachConnection(e => e.setDesktopInput(null), t);
     else if (null != e.desktopDescription && null != this.findConnection(t)) {
       i()(t === T.Yn.STREAM, "Go live context is not STREAM");
-      let n = !1,
+      let n = false,
         r = this.pendingDesktopInputs[e.desktopDescription.id];
       null != r && this.eachConnection(e => {
-        e.streamUserId === e.userId && (n = !0, e.setDesktopInput(r))
+        e.streamUserId === e.userId && (n = true, e.setDesktopInput(r))
       }, t), n && delete this.pendingDesktopInputs[e.desktopDescription.id]
     }
   }
   setClipsSource(e) {}
   setClipsQualitySettings(e, t, n) {
-    return !1
+    returnfalse
   }
   setSoundshareSource(e, t, n) {}
   setAudioSubsystem(e) {}
   queueAudioSubsystem(e) {}
   setOffloadAdmControls(e) {}
   getAudioSubsystem() {
-    return T.iA.STANDARD
+    return Chunk65154.iA.STANDARD
   }
   getAudioLayer() {
     return ""
   }
   getDebugLogging() {
-    return !1
+    returnfalse
   }
   setDebugLogging(e) {}
   writeAudioDebugState() {
@@ -294,7 +295,7 @@ class C extends s.Z {
     }) : (this.maxSupportedProtocolVersion = 0, Promise.reject(Error("WebAssembly is not supported on this platform."))) : (this.maxSupportedProtocolVersion = 0, Promise.reject(Error("Encoded transforms are not supported on this platform."))) : (this.maxSupportedProtocolVersion = 0, Promise.resolve())
   }
   constructor() {
-    super(), A(this, "Video", I.Z), A(this, "Camera", v.Z), A(this, "_audioContext", null), A(this, "outputVolume", T.Qx), A(this, "sourceId", T.w5), A(this, "sinkId", T.w5), A(this, "enabled", !1), A(this, "connections", new Set), A(this, "interacted", !1), A(this, "loopback", null), A(this, "voiceActivityInput", null), A(this, "pendingDesktopInputs", {}), A(this, "enablePromise", null), A(this, "dave", null), A(this, "transientKeys", null), A(this, "maxSupportedProtocolVersion", null), A(this, "handleActiveSinksChange", (e, t) => {
+    super(), A(this, "Video", Chunk825040.Z), A(this, "Camera", Chunk582168.Z), A(this, "_audioContext", null), A(this, "outputVolume", Chunk65154.Qx), A(this, "sourceId", Chunk65154.w5), A(this, "sinkId", Chunk65154.w5), A(this, "enabled", false), A(this, "connections", new Set), A(this, "interacted", false), A(this, "loopback", null), A(this, "voiceActivityInput", null), A(this, "pendingDesktopInputs", {}), A(this, "enablePromise", null), A(this, "dave", null), A(this, "transientKeys", null), A(this, "maxSupportedProtocolVersion", null), A(this, "handleActiveSinksChange", (e, t) => {
       this.connections.forEach(n => n.setHasActiveVideoOutputSink(e, t, "MediaEngineWebRTC.handleActiveSinksChange"))
     }), A(this, "handleNewListener", e => {
       switch (e) {
@@ -310,22 +311,22 @@ class C extends s.Z {
       switch (e) {
         case f.aB.DeviceChange:
           var t;
-          (null == (t = navigator.mediaDevices) ? void 0 : t.ondevicechange) != null && 0 === this.listenerCount(f.aB.DeviceChange) && (navigator.mediaDevices.ondevicechange = null);
+          (null == (t = navigator.mediaDevices) ? true : t.ondevicechange) != null && 0 === this.listenerCount(f.aB.DeviceChange) && (navigator.mediaDevices.ondevicechange = null);
           break;
         case f.aB.VoiceActivity:
           null != this.voiceActivityInput && 0 === this.listenerCount(f.aB.VoiceActivity) && (this.voiceActivityInput.destroy(), this.voiceActivityInput = null)
       }
-    }), A(this, "handleDeviceChange", () => (0, E.PW)().then(e => {
+    }), A(this, "handleDeviceChange", () => (0, Chunk740197.PW)().then(e => {
       let [t, n, r] = e;
       return this.emit(f.aB.DeviceChange, t, n, r)
     })), A(this, "handleVoiceActivity", e => {
       this.emit(f.aB.VoiceActivity, e, 0)
     }), A(this, "handleDesktopSourceEnd", () => {
-      this.emit(f.aB.DesktopSourceEnd)
+      this.emit(Chunk46973.aB.DesktopSourceEnd)
     }), A(this, "handleAudioPermission", e => {
       this.emit(f.aB.AudioPermission, e)
     }), A(this, "handleVideoPermission", e => {
       this.emit(f.aB.VideoPermission, e)
-    }), this.on("newListener", this.handleNewListener), this.on("removeListener", this.handleRemoveListener), (0, p.px)(this.handleActiveSinksChange), (0, _.Z)(this)
+    }), this.on("newListener", this.handleNewListener), this.on("removeListener", this.handleRemoveListener), (0, Chunk970838.px)(this.handleActiveSinksChange), (0, Chunk734298.Z)(this)
   }
 }

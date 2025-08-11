@@ -1,0 +1,135 @@
+/** Chunk was on web.js **/
+/** chunk id: 116364, original params: e,t,n (module,exports,re quire) **/
+"use strict";
+require.d(exports, {
+  Z: () => S
+});
+var Chunk255367 = require("./255367.js");
+require("./73800.js");
+var Chunk392711 = require("./392711.js"),
+  o = require.n(Chunk392711),
+  Chunk788911 = require("./788911.js"),
+  Chunk911969 = require("./911969.js"),
+  Chunk174212 = require("./174212.js"),
+  Chunk998698 = require("./998698.js"),
+  Chunk667204 = require("./667204.js"),
+  Chunk588468 = require("./588468.js"),
+  Chunk483360 = require("./483360.js"),
+  Chunk877565 = require("./877565.js"),
+  Chunk590921 = require("./590921.js"),
+  Chunk689079 = require("./689079.js"),
+  Chunk388032 = require("./388032.js"),
+  Chunk928874 = require("./928874.js"),
+  Chunk239840 = require("./239840.js");
+let b = {
+    results: {
+      choices: []
+    }
+  },
+  y = {
+    results: {
+      choices: [],
+      isLoading: true
+    }
+  },
+  O = Array.from({
+    length: 5
+  }, () => ({
+    name: "",
+    displayName: "",
+    value: ""
+  })),
+  v = {
+    results: {
+      choices: [],
+      isError: true
+    }
+  },
+  I = o().debounce(Chunk667204.Z, Chunk689079.Fu, {
+    leading: true,
+    trailing: true
+  });
+
+function T(e) {
+  return e.displayName
+}
+let S = {
+  stores: [Chunk998698.Z, Chunk174212.Z],
+  showEmpty: true,
+  matches(e, t, n, r, i) {
+    let o = c.Z.getActiveOption(e.id);
+    return i.commands !== p.L8.DISABLED && null != o && (o.type === s.jw.BOOLEAN || !!(null == o ? true : o.autocomplete) || (null == o ? true : o.choices) != null && o.choices.length > 0)
+  },
+  queryResults(e, t, n, r, i) {
+    var o;
+    let a = c.Z.getActiveOption(e.id);
+    if (null == a) return b;
+    if (a.autocomplete) {
+      if (i && I({
+          command: c.Z.getActiveCommand(e.id),
+          optionValues: r.getCommandOptionValues(),
+          context: {
+            channel: e,
+            guild: t,
+            autocomplete: {
+              name: a.name,
+              query: n
+            }
+          }
+        }), l.Z.getLastErrored(e.id)) return v;
+      let o = l.Z.getAutocompleteChoices(e.id, a.name, n);
+      return null == o ? y : {
+        results: {
+          choices: o
+        }
+      }
+    }
+    return {
+      results: f.ZP.queryChoiceResults({
+        query: n,
+        choices: a.type === s.jw.BOOLEAN ? h.ak : null != (o = a.choices) ? o : []
+      })
+    }
+  },
+  renderResults(e) {
+    let {
+      results: {
+        choices: t,
+        isLoading: n,
+        isError: i
+      },
+      selectedIndex: o,
+      query: s,
+      onHover: l,
+      onClick: c
+    } = e;
+    return i ? <a.Z message={m.intl.string(m.t.rTAbPj)} noResultsImageURL={E} className={g.noAutocompleteResults} /> : 0 !== t.length || n ? (0, _.HI)({
+      query: s,
+      selectedIndex: o,
+      autocompletes: n ? O : t,
+      onHover: l,
+      onClick: c,
+      titleWithQuery: m.t.pg0anJ,
+      titleWithoutQuery: m.intl.string(m.t["+1H47u"]),
+      Component: n ? d.ZP.Loading : d.ZP.Generic,
+      getProps: (e, t) => ({
+        key: t.toString(),
+        text: e.displayName
+      }),
+      getQuery: e => e,
+      key: "choice"
+    }) : <a.Z message={m.intl.string(m.t["41014u"])} noResultsImageURL={E} className={g.noAutocompleteResults} />
+  },
+  onSelect(e) {
+    let {
+      results: {
+        choices: t
+      },
+      index: n,
+      options: r
+    } = e, i = t[n];
+    return r.insertText(T(i)), {
+      type: p.z2.CHOICE
+    }
+  }
+}

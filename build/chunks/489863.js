@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 489863, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Iq: () => _,
   UR: () => h,
   Ww: () => p,
@@ -9,24 +10,24 @@ n.d(t, {
   i2: () => b,
   tR: () => E,
   tV: () => g
-}), n(35282);
-var r = n(860911),
-  i = n(544891),
-  o = n(893776),
-  a = n(592125),
-  s = n(944486),
-  l = n(981631);
+}), require("./35282.js");
+var Chunk860911 = require("./860911.js"),
+  Chunk544891 = require("./544891.js"),
+  Chunk893776 = require("./893776.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk944486 = require("./944486.js"),
+  Chunk981631 = require("./981631.js");
 let c = "10000",
   u = "10000";
 
 function d() {
   var e, t, n;
-  let r = s.Z.getChannelId(),
-    i = a.Z.getBasicChannel(r);
+  let r = Chunk944486.Z.getChannelId(),
+    i = Chunk592125.Z.getBasicChannel(Chunk860911);
   return {
-    guild_id: null != (e = null == i ? void 0 : i.guild_id) ? e : c,
-    channel_id: null != (t = null == i ? void 0 : i.id) ? t : u,
-    channel_type: null != (n = null == i ? void 0 : i.type) ? n : l.d4z.UNKNOWN
+    guild_id: null != (e = null == Chunk544891 ? true : Chunk544891.guild_id) ? module : c,
+    channel_id: null != (t = null == Chunk544891 ? true : Chunk544891.id) ? exports : u,
+    channel_type: null != (n = null == Chunk544891 ? true : Chunk544891.type) ? require : Chunk981631.d4z.UNKNOWN
   }
 }
 
@@ -36,8 +37,8 @@ function f(e) {
     query: {
       token: e
     },
-    oldFormErrors: !0,
-    rejectWithError: !1
+    oldFormErrors: true,
+    rejectWithError: false
   })
 }
 async function _(e) {
@@ -71,18 +72,18 @@ async function _(e) {
     },
     body: {
       guild_id: _,
-      webhook_channel_id: null != _ && null != p ? p : void 0,
-      channel_id: null == _ && null != p ? p : void 0,
+      webhook_channel_id: null != _ && null != p ? p : true,
+      channel_id: null == _ && null != p ? p : true,
       permissions: f,
       authorize: t,
       integration_type: h,
       location_context: d(),
       dm_settings: {
-        allow_mobile_push: null == g ? void 0 : g.allowMobilePush
+        allow_mobile_push: null == g ? true : g.allowMobilePush
       }
     },
-    oldFormErrors: !0,
-    rejectWithError: !1
+    oldFormErrors: true,
+    rejectWithError: false
   })).body
 }
 async function p(e) {
@@ -113,8 +114,8 @@ async function p(e) {
     },
     signal: f,
     retries: 3,
-    oldFormErrors: !0,
-    rejectWithError: !1
+    oldFormErrors: true,
+    rejectWithError: false
   })).body
 }
 async function h(e) {
@@ -125,14 +126,14 @@ async function h(e) {
     query: {
       guild_id: e
     },
-    oldFormErrors: !0,
-    rejectWithError: !1
+    oldFormErrors: true,
+    rejectWithError: false
   });
   return t
 }
 
 function m(e, t) {
-  o.Z.logout(t, (0, r.Ui)(e.pathname + e.search, !1))
+  o.Z.logout(t, (0, r.Ui)(e.pathname + e.search, false))
 }
 async function g(e) {
   return await i.tn.post({
@@ -140,7 +141,7 @@ async function g(e) {
     body: {
       user_code: e
     },
-    rejectWithError: !1
+    rejectWithError: false
   })
 }
 async function E(e, t) {
@@ -150,7 +151,7 @@ async function E(e, t) {
       user_code: e,
       result: t
     },
-    rejectWithError: !1
+    rejectWithError: false
   })
 }
 async function b(e, t, n) {
@@ -162,6 +163,6 @@ async function b(e, t, n) {
       error_code: t,
       error_source: n
     },
-    rejectWithError: !1
+    rejectWithError: false
   })
 }

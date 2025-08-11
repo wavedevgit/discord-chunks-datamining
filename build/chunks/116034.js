@@ -1,8 +1,9 @@
 /** Chunk was on web.js **/
-e.exports = function(e) {
+/** chunk id: 116034, original params: e (module,exports,re quire) **/
+module.exports = function(e) {
   return {
     name: "AVR Assembly",
-    case_insensitive: !0,
+    case_insensitive: true,
     keywords: {
       $pattern: "\\.?" + e.IDENT_RE,
       keyword: "adc add adiw and andi asr bclr bld brbc brbs brcc brcs break breq brge brhc brhs brid brie brlo brlt brmi brne brpl brsh brtc brts brvc brvs bset bst call cbi cbr clc clh cli cln clr cls clt clv clz com cp cpc cpi cpse dec eicall eijmp elpm eor fmul fmuls fmulsu icall ijmp in inc jmp ld ldd ldi lds lpm lsl lsr mov movw mul muls mulsu neg nop or ori out pop push rcall ret reti rjmp rol ror sbc sbr sbrc sbrs sec seh sbi sbci sbic sbis sbiw sei sen ser ses set sev sez sleep spm st std sts sub subi swap tst wdr",

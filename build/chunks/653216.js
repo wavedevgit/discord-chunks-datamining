@@ -1,12 +1,13 @@
 /** Chunk was on web.js **/
+/** chunk id: 653216, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-var r = n(214788),
-  i = n(551558),
-  o = n(65183),
-  a = n(581079),
-  s = n(170261),
-  l = o.List,
-  c = o.Map,
+var Chunk214788 = require("./214788.js"),
+  Chunk551558 = require("./551558.js"),
+  Chunk65183 = require("./65183.js"),
+  Chunk581079 = require("./581079.js"),
+  Chunk170261 = require("./170261.js"),
+  l = Chunk65183.List,
+  c = Chunk65183.Map,
   u = function(e, t, n) {
     if (e) {
       var r = t.get(e);
@@ -39,8 +40,8 @@ var r = n(214788),
       })
     })
   };
-e.exports = function(e, t) {
-  t.isCollapsed() || a(!1);
+module.exports = function(e, t) {
+  t.isCollapsed() || a(false);
   var n = t.getAnchorKey(),
     o = e.getBlockMap(),
     l = o.get(n),
@@ -78,7 +79,7 @@ e.exports = function(e, t) {
       [n, g],
       [h, E]
     ], y).toOrderedMap();
-  return m && (l.getChildKeys().isEmpty() || a(!1), O = d(O, g, E)), e.merge({
+  return m && (l.getChildKeys().isEmpty() || a(false), O = d(O, g, E)), e.merge({
     blockMap: O,
     selectionBefore: t,
     selectionAfter: t.merge({
@@ -86,7 +87,7 @@ e.exports = function(e, t) {
       anchorOffset: 0,
       focusKey: h,
       focusOffset: 0,
-      isBackward: !1
+      isBackward: false
     })
   })
 }

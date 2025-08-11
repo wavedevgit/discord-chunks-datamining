@@ -1,5 +1,6 @@
 /** Chunk was on web.js **/
-e.exports = function(e) {
+/** chunk id: 167939, original params: e (module,exports,re quire) **/
+module.exports = function(e) {
   let t = {
       $pattern: /[a-zA-Z][a-zA-Z0-9_?]*/,
       keyword: ["if", "then", "else", "do", "while", "until", "for", "loop", "import", "with", "is", "as", "where", "when", "by", "data", "constant", "integer", "real", "text", "name", "boolean", "symbol", "infix", "prefix", "postfix", "block", "tree"],
@@ -36,11 +37,11 @@ e.exports = function(e) {
     s = {
       className: "function",
       begin: /[a-z][^\n]*->/,
-      returnBegin: !0,
+      returnBegin: true,
       end: /->/,
       contains: [e.inherit(e.TITLE_MODE, {
         starts: {
-          endsWithParent: !0,
+          endsWithParent: true,
           keywords: t
         }
       })]

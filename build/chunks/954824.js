@@ -1,36 +1,37 @@
 /** Chunk was on web.js **/
+/** chunk id: 954824, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => u
 });
-var r = n(525654),
-  i = n.n(r),
-  o = n(444675);
+var Chunk525654 = require("./525654.js"),
+  i = require.n(Chunk525654),
+  Chunk444675 = require("./444675.js");
 
 function a(e, t) {
-  if (!e.startsWith("discord:")) return location.href = e, o.nextTick(() => t(!0));
+  if (!e.startsWith("discord:")) return location.href = e, o.nextTick(() => t(true));
   let {
     body: n
   } = document;
-  if (null == n) return o.nextTick(() => t(!1));
+  if (null == n) return o.nextTick(() => t(false));
   let r = document.createElement("iframe");
   n.appendChild(r);
   try {
-    null != r.contentWindow && (r.contentWindow.location.href = e), o.nextTick(() => t(!0))
+    null != r.contentWindow && (r.contentWindow.location.href = e), o.nextTick(() => t(true))
   } catch (e) {
-    "NS_ERROR_UNKNOWN_PROTOCOL" === e.name && o.nextTick(() => t(!1))
+    "NS_ERROR_UNKNOWN_PROTOCOL" === e.name && o.nextTick(() => t(false))
   }
   window.setTimeout(() => {
     var e;
-    (null != (e = null == r ? void 0 : r.parentElement) ? e : null) !== null && n.removeChild(r)
+    (null != (e = null == r ? true : r.parentElement) ? e : null) !== null && n.removeChild(r)
   }, 1e3)
 }
 
 function s(e, t) {
-  let n = !1;
+  let n = false;
 
   function r() {
-    n = !0
+    n = true
   }
   window.addEventListener("blur", r), location.href = e, setTimeout(() => {
     window.removeEventListener("blur", r), t(n)
@@ -38,15 +39,15 @@ function s(e, t) {
 }
 
 function l(e, t) {
-  t(!1)
+  t(false)
 }
 
 function c(e, t) {
-  location.href = e, o.nextTick(() => t(!0))
+  location.href = e, o.nextTick(() => t(true))
 }
 let u = {
   launch: function() {
     var e, t;
-    return (null == (e = i().os) ? void 0 : e.family) === "Android" || (null == (t = i().os) ? void 0 : t.family) === "iOS" ? c : "Gecko" === i().layout ? a : null != i().ua && -1 !== i().ua.indexOf("Valve Steam GameOverlay") ? l : s
+    return (null == (e = i().os) ? true : module.family) === "Android" || (null == (t = i().os) ? true : exports.family) === "iOS" ? c : "Gecko" === i().layout ? a : null != i().ua && false !== i().ua.indexOf("Valve Steam GameOverlay") ? l : s
   }()
 }

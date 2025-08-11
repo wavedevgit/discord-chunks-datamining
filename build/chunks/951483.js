@@ -1,128 +1,129 @@
 /** Chunk was on 34779 **/
-n.d(t, {
+/** chunk id: 951483, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Sr: () => j,
   Xq: () => E,
   Zg: () => S
-}), n(415506);
-var r = n(186070),
-  i = n(185514),
-  l = n(360038),
-  o = n(175724),
-  s = n(705371),
-  a = n(138976),
-  c = n(167042),
-  u = n(239748),
-  d = n(337482),
-  h = n(679080),
-  p = n(908552),
-  f = n(189509),
-  g = n(673553),
-  m = n(280492),
-  b = n(746887),
-  O = n(721383),
-  _ = n(743810),
-  y = n(981631),
-  C = n(388032);
+}), require("./415506.js");
+var Chunk186070 = require("./186070.js"),
+  Chunk185514 = require("./185514.js"),
+  Chunk360038 = require("./360038.js"),
+  Chunk175724 = require("./175724.js"),
+  Chunk705371 = require("./705371.js"),
+  Chunk138976 = require("./138976.js"),
+  Chunk167042 = require("./167042.js"),
+  Chunk239748 = require("./239748.js"),
+  Chunk337482 = require("./337482.js"),
+  Chunk679080 = require("./679080.js"),
+  Chunk908552 = require("./908552.js"),
+  Chunk189509 = require("./189509.js"),
+  Chunk673553 = require("./673553.js"),
+  Chunk280492 = require("./280492.js"),
+  Chunk746887 = require("./746887.js"),
+  Chunk721383 = require("./721383.js"),
+  Chunk743810 = require("./743810.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk388032 = require("./388032.jsx");
 
 function v() {
-  for (var e = arguments.length, t = Array(e), n = 0; n < e; n++) t[n] = arguments[n];
-  return t.map(e => {
+  for (var e = arguments.length, t = Array(module), n = 0; require < module; require++) exports[require] = arguments[require];
+  return exports.map(e => {
     let t = j[e];
     if (null == t) throw Error("getBindsFor(...): No bind for ".concat(t));
     return t.binds[0]
   })
 }
 let j = {
-    [y.EkH.SERVER_NEXT]: p.nq,
-    [y.EkH.SERVER_PREV]: p.X3,
-    [y.EkH.CHANNEL_NEXT]: i.tQ,
-    [y.EkH.CHANNEL_PREV]: i.x5,
-    [y.EkH.NAVIGATE_BACK]: i.Nx,
-    [y.EkH.NAVIGATE_FORWARD]: i.On,
-    [y.EkH.UNREAD_NEXT]: _.pd,
-    [y.EkH.UNREAD_PREV]: _.wk,
-    [y.EkH.MENTION_CHANNEL_NEXT]: _.Nv,
-    [y.EkH.MENTION_CHANNEL_PREV]: _.uX,
-    [y.EkH.TOGGLE_PREVIOUS_GUILD]: i.$c,
-    [y.EkH.JUMP_TO_GUILD]: l.u,
-    [y.EkH.SUBMIT]: f.z,
-    [y.EkH.TEXTAREA_FOCUS]: g.U,
-    [y.EkH.MARK_CHANNEL_READ]: o.f,
-    [y.EkH.MARK_SERVER_READ]: s.l,
-    [y.EkH.TOGGLE_MUTE]: m.iN,
-    [y.EkH.TOGGLE_DEAFEN]: m.oV,
-    [y.EkH.TOGGLE_CATEGORY_COLLAPSED]: b.u,
-    [y.EkH.SCROLL_UP]: d.B2,
-    [y.EkH.SCROLL_DOWN]: d.gN,
-    [y.EkH.SEARCH_EMOJIS]: h.S,
-    [y.EkH.TOGGLE_HOTKEYS]: O._,
-    [y.EkH.JUMP_TO_FIRST_UNREAD]: a.O,
-    [y.EkH.RETURN_TO_AUDIO_CHANNEL]: u.F,
-    [y.EkH.CALL_ACCEPT]: r.IL,
-    [y.EkH.CALL_START]: r.FI,
-    [y.EkH.QUICKSWITCHER_SHOW]: c.$
+    [Chunk981631.EkH.SERVER_NEXT]: Chunk908552.nq,
+    [Chunk981631.EkH.SERVER_PREV]: Chunk908552.X3,
+    [Chunk981631.EkH.CHANNEL_NEXT]: Chunk185514.tQ,
+    [Chunk981631.EkH.CHANNEL_PREV]: Chunk185514.x5,
+    [Chunk981631.EkH.NAVIGATE_BACK]: Chunk185514.Nx,
+    [Chunk981631.EkH.NAVIGATE_FORWARD]: Chunk185514.On,
+    [Chunk981631.EkH.UNREAD_NEXT]: Chunk743810.pd,
+    [Chunk981631.EkH.UNREAD_PREV]: Chunk743810.wk,
+    [Chunk981631.EkH.MENTION_CHANNEL_NEXT]: Chunk743810.Nv,
+    [Chunk981631.EkH.MENTION_CHANNEL_PREV]: Chunk743810.uX,
+    [Chunk981631.EkH.TOGGLE_PREVIOUS_GUILD]: Chunk185514.$c,
+    [Chunk981631.EkH.JUMP_TO_GUILD]: Chunk360038.u,
+    [Chunk981631.EkH.SUBMIT]: Chunk189509.z,
+    [Chunk981631.EkH.TEXTAREA_FOCUS]: Chunk673553.U,
+    [Chunk981631.EkH.MARK_CHANNEL_READ]: Chunk175724.f,
+    [Chunk981631.EkH.MARK_SERVER_READ]: Chunk705371.l,
+    [Chunk981631.EkH.TOGGLE_MUTE]: Chunk280492.iN,
+    [Chunk981631.EkH.TOGGLE_DEAFEN]: Chunk280492.oV,
+    [Chunk981631.EkH.TOGGLE_CATEGORY_COLLAPSED]: Chunk746887.u,
+    [Chunk981631.EkH.SCROLL_UP]: Chunk337482.B2,
+    [Chunk981631.EkH.SCROLL_DOWN]: Chunk337482.gN,
+    [Chunk981631.EkH.SEARCH_EMOJIS]: Chunk679080.S,
+    [Chunk981631.EkH.TOGGLE_HOTKEYS]: Chunk721383._,
+    [Chunk981631.EkH.JUMP_TO_FIRST_UNREAD]: Chunk138976.O,
+    [Chunk981631.EkH.RETURN_TO_AUDIO_CHANNEL]: Chunk239748.F,
+    [Chunk981631.EkH.CALL_ACCEPT]: Chunk186070.IL,
+    [Chunk981631.EkH.CALL_START]: Chunk186070.FI,
+    [Chunk981631.EkH.QUICKSWITCHER_SHOW]: Chunk167042.$
   },
   E = {
-    [y.EkH.QUICKSWITCHER_SHOW]: c.$
+    [Chunk981631.EkH.QUICKSWITCHER_SHOW]: Chunk167042.$
   };
 
 function S() {
   return [{
-    description: C.intl.string(C.t.bx4Uy8),
-    binds: v(y.EkH.SERVER_PREV, y.EkH.SERVER_NEXT)
+    description: Chunk388032.intl.string(Chunk388032.t.bx4Uy8),
+    binds: v(Chunk981631.EkH.SERVER_PREV, Chunk981631.EkH.SERVER_NEXT)
   }, {
-    description: C.intl.string(C.t["+Wem6u"]),
-    binds: v(y.EkH.CHANNEL_PREV, y.EkH.CHANNEL_NEXT)
+    description: Chunk388032.intl.string(Chunk388032.t["+Wem6u"]),
+    binds: v(Chunk981631.EkH.CHANNEL_PREV, Chunk981631.EkH.CHANNEL_NEXT)
   }, {
-    description: C.intl.string(C.t["+2fcd3"]),
-    binds: v(y.EkH.NAVIGATE_BACK, y.EkH.NAVIGATE_FORWARD)
+    description: Chunk388032.intl.string(Chunk388032.t["+2fcd3"]),
+    binds: v(Chunk981631.EkH.NAVIGATE_BACK, Chunk981631.EkH.NAVIGATE_FORWARD)
   }, {
-    description: C.intl.string(C.t.eVmj1N),
-    binds: v(y.EkH.UNREAD_PREV, y.EkH.UNREAD_NEXT)
+    description: Chunk388032.intl.string(Chunk388032.t.eVmj1N),
+    binds: v(Chunk981631.EkH.UNREAD_PREV, Chunk981631.EkH.UNREAD_NEXT)
   }, {
-    description: C.intl.string(C.t.EcqS7e),
-    binds: v(y.EkH.MENTION_CHANNEL_PREV, y.EkH.MENTION_CHANNEL_NEXT),
-    groupEnd: !0
+    description: Chunk388032.intl.string(Chunk388032.t.EcqS7e),
+    binds: v(Chunk981631.EkH.MENTION_CHANNEL_PREV, Chunk981631.EkH.MENTION_CHANNEL_NEXT),
+    groupEnd: true
   }, {
-    description: C.intl.string(C.t["Bqss7+"]),
-    binds: v(y.EkH.TOGGLE_PREVIOUS_GUILD)
+    description: Chunk388032.intl.string(Chunk388032.t["Bqss7+"]),
+    binds: v(Chunk981631.EkH.TOGGLE_PREVIOUS_GUILD)
   }, {
-    description: C.intl.string(C.t.UaXAPz),
-    binds: v(y.EkH.MARK_SERVER_READ)
+    description: Chunk388032.intl.string(Chunk388032.t.UaXAPz),
+    binds: v(Chunk981631.EkH.MARK_SERVER_READ)
   }, {
-    description: C.intl.string(C.t["5X9vFh"]),
-    binds: v(y.EkH.MARK_CHANNEL_READ)
+    description: Chunk388032.intl.string(Chunk388032.t["5X9vFh"]),
+    binds: v(Chunk981631.EkH.MARK_CHANNEL_READ)
   }, {
-    description: C.intl.string(C.t.JoxNnp),
-    binds: v(y.EkH.SEARCH_EMOJIS),
-    groupEnd: !0
+    description: Chunk388032.intl.string(Chunk388032.t.JoxNnp),
+    binds: v(Chunk981631.EkH.SEARCH_EMOJIS),
+    groupEnd: true
   }, {
-    description: C.intl.string(C.t.tL6eVV),
-    binds: v(y.EkH.TOGGLE_MUTE)
+    description: Chunk388032.intl.string(Chunk388032.t.tL6eVV),
+    binds: v(Chunk981631.EkH.TOGGLE_MUTE)
   }, {
-    description: C.intl.string(C.t["QXe/7e"]),
-    binds: v(y.EkH.TOGGLE_DEAFEN)
+    description: Chunk388032.intl.string(Chunk388032.t["QXe/7e"]),
+    binds: v(Chunk981631.EkH.TOGGLE_DEAFEN)
   }, {
-    description: C.intl.string(C.t.d6UIio),
-    binds: v(y.EkH.CALL_ACCEPT)
+    description: Chunk388032.intl.string(Chunk388032.t.d6UIio),
+    binds: v(Chunk981631.EkH.CALL_ACCEPT)
   }, {
-    description: C.intl.string(C.t.IcEW09),
-    binds: v(y.EkH.MARK_CHANNEL_READ)
+    description: Chunk388032.intl.string(Chunk388032.t.IcEW09),
+    binds: v(Chunk981631.EkH.MARK_CHANNEL_READ)
   }, {
-    description: C.intl.string(C.t.WN2dsb),
-    binds: v(y.EkH.CALL_START),
-    groupEnd: !0
+    description: Chunk388032.intl.string(Chunk388032.t.WN2dsb),
+    binds: v(Chunk981631.EkH.CALL_START),
+    groupEnd: true
   }, {
-    description: C.intl.string(C.t.L3RYYG),
-    binds: v(y.EkH.SCROLL_UP, y.EkH.SCROLL_DOWN)
+    description: Chunk388032.intl.string(Chunk388032.t.L3RYYG),
+    binds: v(Chunk981631.EkH.SCROLL_UP, Chunk981631.EkH.SCROLL_DOWN)
   }, {
-    description: C.intl.string(C.t["3HAurK"]),
-    binds: v(y.EkH.JUMP_TO_FIRST_UNREAD)
+    description: Chunk388032.intl.string(Chunk388032.t["3HAurK"]),
+    binds: v(Chunk981631.EkH.JUMP_TO_FIRST_UNREAD)
   }, {
-    description: C.intl.string(C.t.rrYBEh),
-    binds: v(y.EkH.TEXTAREA_FOCUS)
+    description: Chunk388032.intl.string(Chunk388032.t.rrYBEh),
+    binds: v(Chunk981631.EkH.TEXTAREA_FOCUS)
   }, {
-    description: C.intl.string(C.t.yYsRlJ),
-    binds: v(y.EkH.QUICKSWITCHER_SHOW)
+    description: Chunk388032.intl.string(Chunk388032.t.yYsRlJ),
+    binds: v(Chunk981631.EkH.QUICKSWITCHER_SHOW)
   }]
 }

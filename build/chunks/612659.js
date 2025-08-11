@@ -1,17 +1,18 @@
 /** Chunk was on web.js **/
+/** chunk id: 612659, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   m: () => s
 });
-var r = n(442837),
-  i = n(594174),
-  o = n(111361),
-  a = n(474936);
+var Chunk442837 = require("./442837.js"),
+  Chunk594174 = require("./594174.js"),
+  Chunk111361 = require("./111361.js"),
+  Chunk474936 = require("./474936.js");
 
 function s() {
-  let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : a.p9.TIER_2;
-  return (0, r.e7)([i.default], () => {
-    let t = i.default.getCurrentUser();
-    return (0, o.M5)(t, e)
+  let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : Chunk474936.p9.TIER_2;
+  return (0, Chunk442837.e7)([Chunk594174.default], () => {
+    let t = Chunk594174.default.getCurrentUser();
+    return (0, Chunk111361.M5)(exports, module)
   })
 }

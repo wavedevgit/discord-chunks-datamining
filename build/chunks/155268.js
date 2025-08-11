@@ -1,11 +1,12 @@
 /** Chunk was on web.js **/
+/** chunk id: 155268, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   ZP: () => o,
   n9: () => s
 });
-var r = n(695103),
-  i = n(115130);
+var Chunk695103 = require("./695103.js"),
+  Chunk115130 = require("./115130.js");
 
 function o(e) {
   return s() ? i.Z.getState().activityUrlOverride : r.Z.inTestModeForEmbeddedApplication(e) ? r.Z.testModeOriginURL : a(e)
@@ -17,6 +18,6 @@ function a(e) {
 }
 
 function s() {
-  let e = i.Z.getState();
-  return e.useActivityUrlOverride && null != e.activityUrlOverride && "" !== e.activityUrlOverride
+  let e = Chunk115130.Z.getState();
+  return module.useActivityUrlOverride && null != module.activityUrlOverride && "" !== module.activityUrlOverride
 }

@@ -1,11 +1,12 @@
 /** Chunk was on web.js **/
-e.exports = function(e) {
+/** chunk id: 423649, original params: e (module,exports,re quire) **/
+module.exports = function(e) {
   return {
     name: "Python profiler",
     contains: [e.C_NUMBER_MODE, {
       begin: "[a-zA-Z_][\\da-zA-Z_]+\\.[\\da-zA-Z_]{1,3}",
       end: ":",
-      excludeEnd: !0
+      excludeEnd: true
     }, {
       begin: "(ncalls|tottime|cumtime)",
       end: "$",
@@ -20,8 +21,8 @@ e.exports = function(e) {
       className: "string",
       begin: "\\(",
       end: "\\)$",
-      excludeBegin: !0,
-      excludeEnd: !0,
+      excludeBegin: true,
+      excludeEnd: true,
       relevance: 0
     }]
   }

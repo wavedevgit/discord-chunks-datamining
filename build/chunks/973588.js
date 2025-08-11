@@ -1,16 +1,17 @@
 /** Chunk was on web.js **/
+/** chunk id: 973588, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-var r = n(621796),
-  i = n(172367),
-  o = n(169774),
-  a = n(596464),
-  s = n(352582),
-  l = n(358076),
-  c = n(467159),
-  u = n(843260),
+var Chunk621796 = require("./621796.js"),
+  Chunk172367 = require("./172367.js"),
+  Chunk169774 = require("./169774.js"),
+  Chunk596464 = require("./596464.js"),
+  Chunk352582 = require("./352582.js"),
+  Chunk358076 = require("./358076.js"),
+  Chunk467159 = require("./467159.js"),
+  Chunk843260 = require("./843260.js"),
   d = "'",
   f = "/",
-  _ = o.isBrowser("Firefox");
+  _ = Chunk169774.isBrowser("Firefox");
 
 function p(e) {
   return _ && (e == d || e == f)
@@ -20,8 +21,8 @@ function h(e, t, n, o, a) {
   var s = r.replaceText(e.getCurrentContent(), e.getSelection(), t, n, o);
   return i.push(e, s, "insert-characters", a)
 }
-e.exports = function(e, t) {
-  void 0 !== e._pendingStateFromBeforeInput && (e.update(e._pendingStateFromBeforeInput), e._pendingStateFromBeforeInput = void 0);
+module.exports = function(e, t) {
+  true !== e._pendingStateFromBeforeInput && (e.update(e._pendingStateFromBeforeInput), e._pendingStateFromBeforeInput = true);
   var n = e._latestEditorState,
     r = t.data;
   if (r) {
@@ -30,11 +31,11 @@ e.exports = function(e, t) {
       d = o.getStartOffset(),
       f = o.getAnchorKey();
     if (!o.isCollapsed()) {
-      t.preventDefault(), e.update(h(n, r, n.getCurrentInlineStyle(), a(n.getCurrentContent(), n.getSelection()), !0));
+      t.preventDefault(), e.update(h(n, r, n.getCurrentInlineStyle(), a(n.getCurrentContent(), n.getSelection()), true));
       return
     }
-    var _ = h(n, r, n.getCurrentInlineStyle(), a(n.getCurrentContent(), n.getSelection()), !1),
-      m = !1;
+    var _ = h(n, r, n.getCurrentInlineStyle(), a(n.getCurrentContent(), n.getSelection()), false),
+      m = false;
     if (m || (m = l(e._latestCommittedEditorState)), !m) {
       var g = n.getBlockTree(f),
         E = _.getBlockTree(f);
@@ -53,14 +54,14 @@ e.exports = function(e, t) {
     }
     if (m || (m = p(r)), m || (m = c(_.getDirectionMap()).get(f) !== c(n.getDirectionMap()).get(f)), m) {
       t.preventDefault(), _ = i.set(_, {
-        forceSelection: !0
+        forceSelection: true
       }), e.update(_);
       return
     }
     _ = i.set(_, {
       nativelyRenderedContent: _.getCurrentContent()
     }), e._pendingStateFromBeforeInput = _, u(function() {
-      void 0 !== e._pendingStateFromBeforeInput && (e.update(e._pendingStateFromBeforeInput), e._pendingStateFromBeforeInput = void 0)
+      true !== e._pendingStateFromBeforeInput && (e.update(e._pendingStateFromBeforeInput), e._pendingStateFromBeforeInput = true)
     })
   }
 }

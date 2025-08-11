@@ -1,5 +1,6 @@
 /** Chunk was on 22988 **/
-e.exports = {
+/** chunk id: 260797, original params: e,t,n (module,exports,require) **/
+module.exports = {
   searchBar: "searchBar_cdb2b0",
   settingsHeader: "settingsHeader_cdb2b0",
   bannedUser: "bannedUser_cdb2b0",

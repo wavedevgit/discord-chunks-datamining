@@ -1,21 +1,22 @@
 /** Chunk was on web.js **/
+/** chunk id: 479801, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   e: () => h
-}), n(388685);
-var r = n(73800),
-  i = n(442837),
-  o = n(353926),
-  a = n(335131),
-  s = n(597688),
-  l = n(228624);
+}), require("./388685.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk442837 = require("./442837.js"),
+  Chunk353926 = require("./353926.js"),
+  Chunk335131 = require("./335131.js"),
+  Chunk597688 = require("./597688.js"),
+  Chunk228624 = require("./228624.js");
 
 function c(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -53,7 +54,7 @@ let _ = 6e5,
 
 function h(e, t, n) {
   let c = (0, i.e7)([o.Z], () => o.Z.hasLoadedExperiments),
-    d = null == e ? void 0 : e.includeBundles,
+    d = null == e ? true : e.includeBundles,
     h = (0, l.hv)("useMaybeFetchCollectiblesCategoriesShared"),
     [m, g, E, b, y, O, v] = (0, i.Wu)([s.Z], () => {
       var e, t;
@@ -80,7 +81,7 @@ function h(e, t, n) {
         includeBundles: d,
         skipNumCategories: v
       });
-      (0, a.F$)(t, void 0, n)
+      (0, a.F$)(t, true, n)
     }, [e, d, n, v])
   }
 }

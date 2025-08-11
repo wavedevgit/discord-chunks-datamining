@@ -1,16 +1,17 @@
 /** Chunk was on web.js **/
+/** chunk id: 897829, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => s
 });
-var r = n(73800),
-  i = n(442837),
-  o = n(355467),
-  a = n(78839);
+var Chunk73800 = require("./73800.js"),
+  Chunk442837 = require("./442837.js"),
+  Chunk355467 = require("./355467.js"),
+  Chunk78839 = require("./78839.js");
 
 function s() {
-  let e = (0, i.e7)([a.Z], () => a.Z.hasFetchedSubscriptions());
-  return r.useEffect(() => {
-    e || (0, o.jg)()
-  }, [e]), e
+  let e = (0, Chunk442837.e7)([Chunk78839.Z], () => Chunk78839.Z.hasFetchedSubscriptions());
+  return Chunk73800.useEffect(() => {
+    module || (0, Chunk355467.jg)()
+  }, [module]), module
 }

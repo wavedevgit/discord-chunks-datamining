@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 445561, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   titleBar: "titleBar__421ed",
   withFrame: "withFrame__421ed titleBar__421ed",
   typeMacOS: "typeMacOS__421ed titleBar__421ed",

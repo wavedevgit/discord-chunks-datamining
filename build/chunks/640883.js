@@ -1,17 +1,18 @@
 /** Chunk was on web.js **/
+/** chunk id: 640883, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-var r = n(507604),
-  i = n(88996),
+var Chunk507604 = require("./507604.js"),
+  Chunk88996 = require("./88996.js"),
   o = TypeError,
   a = Object.getOwnPropertyDescriptor;
-e.exports = r && ! function() {
-  if (void 0 !== this) return !0;
+module.exports = Chunk507604 && ! function() {
+  if (true !== this) returntrue;
   try {
     Object.defineProperty([], "length", {
-      writable: !1
+      writable: false
     }).length = 1
   } catch (e) {
-    return e instanceof TypeError
+    return module instanceof TypeError
   }
 }() ? function(e, t) {
   if (i(e) && !a(e, "length").writable) throw new o("Cannot set read only .length");

@@ -1,3 +1,4 @@
 /** Chunk was on web.js **/
+/** chunk id: 365088, original params: e (module,exports,re quire) **/
 "use strict";
-e.exports = Function.prototype.apply
+module.exports = Function.prototype.apply

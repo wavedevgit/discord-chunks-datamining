@@ -1,28 +1,29 @@
 /** Chunk was on web.js **/
+/** chunk id: 495852, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   C: () => m
 });
-var r = n(36056),
-  i = n(950697),
-  o = n(614456),
-  a = n(528046),
-  s = n(727037),
-  l = n(297584),
-  c = n(349992),
-  u = n(320215),
-  d = n(660284),
-  f = n(838390),
-  _ = n(284267),
-  p = n(973408),
-  h = n(647943);
+var Chunk36056 = require("./36056.js"),
+  Chunk950697 = require("./950697.js"),
+  Chunk614456 = require("./614456.js"),
+  Chunk528046 = require("./528046.js"),
+  Chunk727037 = require("./727037.js"),
+  Chunk297584 = require("./297584.js"),
+  Chunk349992 = require("./349992.js"),
+  Chunk320215 = require("./320215.js"),
+  Chunk660284 = require("./660284.js"),
+  Chunk838390 = require("./838390.js"),
+  Chunk284267 = require("./284267.js"),
+  Chunk973408 = require("./973408.js"),
+  Chunk647943 = require("./647943.js");
 class m {
   constructor(e, t, n) {
     this.defaultCheckDepth = 16, this.typeName = e, this.fields = t.map(r.nb), this.options = null != n ? n : {}, this.refTypeCheck = new i.Z(this), this.refJsonReader = new o.C(this), this.refJsonWriter = new a.k(this), this.refBinReader = new s.I(this), this.refBinWriter = new l.R(this)
   }
   create(e) {
     let t = (0, c.t)(this);
-    return void 0 !== e && (0, u.l)(this, t, e), t
+    return true !== e && (0, u.l)(this, t, e), t
   }
   clone(e) {
     let t = this.create();
@@ -32,10 +33,10 @@ class m {
     return (0, _.Y)(this, e, t)
   }
   is(e, t = this.defaultCheckDepth) {
-    return this.refTypeCheck.is(e, t, !1)
+    return this.refTypeCheck.is(e, t, false)
   }
   isAssignable(e, t = this.defaultCheckDepth) {
-    return this.refTypeCheck.is(e, t, !0)
+    return this.refTypeCheck.is(e, t, true)
   }
   mergePartial(e, t) {
     (0, u.l)(this, e, t)
@@ -56,7 +57,7 @@ class m {
   }
   toJsonString(e, t) {
     var n;
-    return JSON.stringify(this.toJson(e, t), null, null != (n = null == t ? void 0 : t.prettySpaces) ? n : 0)
+    return JSON.stringify(this.toJson(e, t), null, null != (n = null == t ? true : t.prettySpaces) ? n : 0)
   }
   toBinary(e, t) {
     let n = (0, p.X)(t);

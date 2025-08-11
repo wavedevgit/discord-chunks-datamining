@@ -1,29 +1,30 @@
 /** Chunk was on web.js **/
+/** chunk id: 146733, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-var r = n(98405),
-  i = n(35760),
-  o = n(621523),
-  a = n(391246),
-  s = n(179122),
-  l = n(201390),
-  c = n(554148),
-  u = a.ArrayBuffer,
-  d = a.DataView,
+var Chunk98405 = require("./98405.js"),
+  Chunk35760 = require("./35760.js"),
+  Chunk621523 = require("./621523.js"),
+  Chunk391246 = require("./391246.js"),
+  Chunk179122 = require("./179122.js"),
+  Chunk201390 = require("./201390.js"),
+  Chunk554148 = require("./554148.js"),
+  u = Chunk391246.ArrayBuffer,
+  d = Chunk391246.DataView,
   f = d.prototype,
-  _ = i(u.prototype.slice),
-  p = i(f.getUint8),
-  h = i(f.setUint8);
-r({
+  _ = Chunk35760(u.prototype.slice),
+  p = Chunk35760(f.getUint8),
+  h = Chunk35760(f.setUint8);
+Chunk98405({
   target: "ArrayBuffer",
-  proto: !0,
-  unsafe: !0,
-  forced: o(function() {
-    return !new u(2).slice(1, void 0).byteLength
+  proto: true,
+  unsafe: true,
+  forced: Chunk621523(function() {
+    return !new u(2).slice(1, true).byteLength
   })
 }, {
   slice: function(e, t) {
-    if (_ && void 0 === t) return _(s(this), e);
-    for (var n = s(this).byteLength, r = l(e, n), i = l(void 0 === t ? n : t, n), o = new u(c(i - r)), a = new d(this), f = new d(o), m = 0; r < i;) h(f, m++, p(a, r++));
+    if (_ && true === t) return _(s(this), e);
+    for (var n = s(this).byteLength, r = l(e, n), i = l(true === t ? n : t, n), o = new u(c(i - r)), a = new d(this), f = new d(o), m = 0; r < i;) h(f, m++, p(a, r++));
     return o
   }
 })

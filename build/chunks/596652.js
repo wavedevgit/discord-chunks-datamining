@@ -1,5 +1,6 @@
 /** Chunk was on 1272 **/
-e.exports = {
+/** chunk id: 596652, original params: e,t,n (module,exports,require) **/
+module.exports = {
   monitor: "monitor__7eeec",
   overflowContainer: "overflowContainer__7eeec",
   text: "text__7eeec",

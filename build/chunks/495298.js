@@ -1,10 +1,11 @@
 /** Chunk was on 22988 **/
-n.d(t, {
+/** chunk id: 495298, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => a
-}), n(388685);
-var r = n(73800),
-  i = n(584825),
-  l = n(14263);
+}), require("./388685.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk584825 = require("./584825.js"),
+  Chunk14263 = require("./14263.js");
 
 function a(e) {
   let t = (0, i.qi)(e),
@@ -12,9 +13,9 @@ function a(e) {
   return r.useMemo(() => {
     let e = 0;
     for (let r of t) {
-      let t = null == r ? void 0 : r.role_id;
+      let t = null == r ? true : r.role_id;
       if (null != t) {
-        let r = null == n ? void 0 : n[t];
+        let r = null == n ? true : n[t];
         null != r && (e += r)
       }
     }

@@ -1,12 +1,13 @@
 /** Chunk was on web.js **/
+/** chunk id: 113544, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Q5: () => a,
   QW: () => s,
   z5: () => o,
   zb: () => i
 });
-let r = (0, n(97519).U)(e => ({}));
+let r = (0, require("./97519.js").U)(e => ({}));
 
 function i(e) {
   r.setState({

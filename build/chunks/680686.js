@@ -1,20 +1,21 @@
 /** Chunk was on web.js **/
+/** chunk id: 680686, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => l
 });
-var r = n(626135),
-  i = n(647162),
-  o = n(616922),
-  a = n(981631);
-let s = [o.kG.USER_ACTIVITY_SYNC, o.kG.EMBED_SYNC];
+var Chunk626135 = require("./626135.js"),
+  Chunk647162 = require("./647162.js"),
+  Chunk616922 = require("./616922.js"),
+  Chunk981631 = require("./981631.js");
+let s = [Chunk616922.kG.USER_ACTIVITY_SYNC, Chunk616922.kG.EMBED_SYNC];
 
 function l(e, t, n, o) {
   r.default.track(a.rMx.SPOTIFY_BUTTON_CLICKED, {
     type: e,
     source: o,
     is_premium: (0, i.Wo)(),
-    party_id: s.includes(e) && (null == n ? void 0 : n.party) != null ? n.party.id : null,
+    party_id: s.includes(e) && (null == n ? true : n.party) != null ? n.party.id : null,
     other_user_id: t.id
   })
 }

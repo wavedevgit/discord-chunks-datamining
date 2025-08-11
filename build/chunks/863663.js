@@ -1,16 +1,17 @@
 /** Chunk was on web.js **/
+/** chunk id: 863663, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   NB: () => a,
   ar: () => d,
   fG: () => u,
   kg: () => s,
   pM: () => c
-}), n(781311), n(953529);
-var r = n(881052);
-n(496675);
-var i = n(981631),
-  o = n(388032);
+}), require("./781311.js"), require("./953529.js");
+var Chunk881052 = require("./881052.js");
+require("./496675.js");
+var Chunk981631 = require("./981631.js"),
+  Chunk388032 = require("./388032.jsx");
 let a = "_role";
 
 function s(e) {
@@ -66,7 +67,7 @@ function u(e) {
     newRoleParams: c,
     hasUnsavedAttachmentChanges: u
   } = e, d = {};
-  (null == n ? void 0 : n.name) !== r && "" !== r.trim() && (d.name = r), (null != (t = null == n ? void 0 : n.description) ? t : "") !== o && (d.description = o), (null == n ? void 0 : n.price_tier) !== i && null != i && (d.priceTier = i), null != c && "" !== c.name.trim() ? d.createNewRole = !0 : null === c && (d.unlinkRole = !0), a.startsWith("data:") && (l || null == n && (Object.keys(d).length > 0 || u)) && (d.image = a, d.imageName = s);
+  (null == n ? true : n.name) !== r && "" !== r.trim() && (d.name = r), (null != (t = null == n ? true : n.description) ? t : "") !== o && (d.description = o), (null == n ? true : n.price_tier) !== i && null != i && (d.priceTier = i), null != c && "" !== c.name.trim() ? d.createNewRole = true : null === c && (d.unlinkRole = true), a.startsWith("data:") && (l || null == n && (Object.keys(d).length > 0 || u)) && (d.image = a, d.imageName = s);
   let f = Object.keys(d).length > 0 || u;
   return {
     changes: d,

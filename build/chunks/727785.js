@@ -1,15 +1,16 @@
 /** Chunk was on web.js **/
+/** chunk id: 727785, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 
 function r(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
-n.d(t, {
+require.d(exports, {
   X5: () => i,
   a8: () => o,
   h8: () => a,
@@ -17,7 +18,7 @@ n.d(t, {
 });
 class i {
   constructor(e) {
-    r(this, "id", void 0), r(this, "text", void 0), this.id = e, this.text = e
+    r(this, "id", true), r(this, "text", true), this.id = e, this.text = e
   }
 }
 var o = function(e) {

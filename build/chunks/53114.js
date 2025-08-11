@@ -1,27 +1,28 @@
 /** Chunk was on web.js **/
+/** chunk id: 53114, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   S: () => y,
   d: () => b
-}), n(388685), n(642613), n(539854);
-var r = n(392711),
-  i = n.n(r),
-  o = n(843991),
-  a = n(47770),
-  s = n(46973),
-  l = n(379649),
-  c = n(358085),
-  u = n(709054),
-  d = n(909766),
-  f = n(140828),
-  _ = n(674466);
+}), require("./388685.js"), require("./642613.js"), require("./539854.js");
+var Chunk392711 = require("./392711.js"),
+  i = require.n(Chunk392711),
+  Chunk843991 = require("./843991.js"),
+  Chunk47770 = require("./47770.js"),
+  Chunk46973 = require("./46973.js"),
+  Chunk379649 = require("./379649.js"),
+  Chunk358085 = require("./358085.js"),
+  Chunk709054 = require("./709054.js"),
+  Chunk909766 = require("./909766.js"),
+  Chunk140828 = require("./140828.js"),
+  Chunk674466 = require("./674466.js");
 
 function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -56,13 +57,13 @@ function g(e, t) {
 }
 
 function E(e) {
-  let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 0;
+  let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : 0;
   return null != e ? Math.round(e) : t
 }
 var b = function(e) {
   return e.FpsUpdate = "fps-update", e
 }({});
-class y extends a.Z {
+class y extends Chunk47770.Z {
   addUserToStatsCollectionPausedSet(e) {
     this.statCollectionPausedUsers.add(e)
   }
@@ -70,7 +71,7 @@ class y extends a.Z {
     this.statCollectionPausedUsers.delete(e)
   }
   start() {
-    this.streamStart = this.timestampProducer.now(), this.connection.on(s.Sh.Stats, this.sampleStats)
+    this.streamStart = this.timestampProducer.now(), this.connection.on(Chunk46973.Sh.Stats, this.sampleStats)
   }
   setOutboundSsrc(e) {
     null == this.outboundStats[e] && (this.outboundStats[e] = new _.nt(this.timestampProducer))
@@ -100,16 +101,16 @@ class y extends a.Z {
     }), i().forEach(this.inboundStats, e => {
       e.statsWindow = []
     }), this.updateSendState({
-      paused: !0
+      paused: true
     })
   }
   resume() {
     this.updateSendState({
-      paused: !1
+      paused: false
     })
   }
   stop() {
-    this.connection.off(s.Sh.Stats, this.sampleStats), this.streamEnd = this.timestampProducer.now(), this.removeAllListeners()
+    this.connection.off(Chunk46973.Sh.Stats, this.sampleStats), this.streamEnd = this.timestampProducer.now(), this.removeAllListeners()
   }
   setViewedSimulcastQuality(e) {
     e !== this.hqSimulcastStreamWatched.value && (this.hqSimulcastStreamWatched.totalDuration() > 0 || this.lqSimulcastStreamWatched.totalDuration() > 0) && this.simulcastQualityChanges++, this.hqSimulcastStreamWatched.value = e, this.lqSimulcastStreamWatched.value = !e
@@ -124,23 +125,23 @@ class y extends a.Z {
     let e = new Map;
     for (let t in this.outboundStats) {
       let n = new Map;
-      for (let r of this.outboundStats[t].getCodecsUsed()) {
-        let i = r.toUpperCase();
-        n.set(i, E(this.outboundStats[t].codecBuckets[i])), e.set(parseInt(t), n)
+      for (let r of this.outboundStats[exports].getCodecsUsed()) {
+        let i = Chunk392711.toUpperCase();
+        require.set(i, E(this.outboundStats[exports].codecBuckets[i])), module.set(parseInt(exports), require)
       }
     }
-    return e
+    return module
   }
   getDecoderUsageStats() {
     let e = new Map;
     for (let t in this.inboundStats) {
       let n = new Map;
-      for (let r of this.inboundStats[t].getCodecsUsed()) {
-        let i = r.toUpperCase();
-        n.set(i, E(this.inboundStats[t].codecBuckets[i])), e.set(t, n)
+      for (let r of this.inboundStats[exports].getCodecsUsed()) {
+        let i = Chunk392711.toUpperCase();
+        require.set(i, E(this.inboundStats[exports].codecBuckets[i])), module.set(exports, require)
       }
     }
-    return e
+    return module
   }
   getCodecUsageStats(e, t) {
     var n, r, i, o, a, s, l, c, u, d, f, p;
@@ -186,7 +187,7 @@ class y extends a.Z {
     let e = [];
     return i().forEach(this.outboundStats, (t, n) => {
       var r, i, o, a, s;
-      let l, c = null == (r = this.connection) ? void 0 : r.getStreamParameters();
+      let l, c = null == (r = this.connection) ? true : r.getStreamParameters();
       c.length > 1 && c.forEach(e => {
         if (parseInt(n) === e.ssrc) {
           var t;
@@ -265,7 +266,7 @@ class y extends a.Z {
         video_entropy_percentile99: y.count > 0 ? y.percentiles[99] : null,
         duration_encoder_exynos: E(t.encoderBuckets[_.Su.EXYNOS])
       }))
-    }), e
+    }), module
   }
   getInboundStats(e) {
     return this.getStats(this.inboundStats[e])
@@ -274,7 +275,7 @@ class y extends a.Z {
     delete this.inboundStats[e]
   }
   getInboundParticipants() {
-    return u.default.keys(this.inboundStats)
+    return Chunk709054.default.keys(this.inboundStats)
   }
   updateSendState(e) {
     null != e.paused && (this.paused.value = e.paused), null != e.receivers && (this.zeroReceivers.value = 0 === e.receivers);
@@ -454,7 +455,7 @@ class y extends a.Z {
   receivedStats(e, t, n) {
     var r, a;
     let l = t.transport,
-      u = (0, c.isWeb)() ? 1 : null != (a = null == (r = l.receiverReports) ? void 0 : r.length) ? a : 0,
+      u = (0, c.isWeb)() ? 1 : null != (a = null == (r = l.receiverReports) ? true : r.length) ? a : 0,
       d = new Set,
       f = new Set;
     this.updateSendState({
@@ -463,8 +464,8 @@ class y extends a.Z {
     let p = this.cameraDuration.value;
     this.cameraDuration.value = this.connection.context === s.Yn.DEFAULT && null != t.camera, this.cameraOpportunityDuration.value = this.connection.context === s.Yn.DEFAULT && null != t.camera && this.callUserIdsCount > 1, this.cameraSendDuration.value = this.connection.context === s.Yn.DEFAULT && null != t.camera && u > 0, this.cameraDuration.value && !p && this.cameraToggles++;
     let h = i().max(n.map(e => e.quality)),
-      m = t.rtp.outbound.filter(e => "video" === e.type && (null == e ? void 0 : e.videoEntropy) != null)[0],
-      g = null == m ? void 0 : m.videoEntropy;
+      m = t.rtp.outbound.filter(e => "video" === e.type && (null == e ? true : e.videoEntropy) != null)[0],
+      g = null == m ? true : m.videoEntropy;
     t.rtp.outbound.filter(e => "video" === e.type).forEach(t => {
       let r = t;
       if (null != r) {
@@ -472,16 +473,16 @@ class y extends a.Z {
           T = this.outboundStats[t];
         null == T && (console.warn("Unknown outbound video stream with SSRC: ".concat(t)), T = new _.nt(this.timestampProducer), this.outboundStats[t] = T), null == T.timeToFirstFrame && (r.framesEncoded > 0 || (null != (i = r.frameRateInput) ? i : 0) > 0) && (T.timeToFirstFrame = Math.max(0, e - T.startTime)), null != g && g >= 0 && this.videoEntropy.addSample(g);
         let S = n.find(e => e.ssrc === t);
-        var i, o, a, c, u, f, p, m, E, b, y, O, v = !0;
+        var i, o, a, c, u, f, p, m, E, b, y, O, v = true;
         if (this.connection.context === s.Yn.STREAM) {
           var I = this.connection.getRemoteVideoSinkWants(t);
-          (null == I || 0 === I) && (null == S ? void 0 : S.quality) === h && (I = this.connection.getRemoteVideoSinkWants("any")), v = (null != I ? I : 0) > 0
+          (null == I || 0 === I) && (null == S ? true : S.quality) === h && (I = this.connection.getRemoteVideoSinkWants("any")), v = (null != I ? I : 0) > 0
         }
         let A = this.videoStopped.value || !v;
         if (A !== T.isVideoStopped && T.setVideoStopped(A, _.Mq.SenderStopped), !A) {
           T.appendAndIncrementStats(_.z4.parseOutboundStats(r, e)), T.encoderCodec !== _.u7.UNKNOWN && d.add(T.encoderCodec);
-          let t = null == S ? void 0 : S.maxBitrate;
-          T.appendTargetRates(null == S ? void 0 : S.maxFrameRate, null != (a = r.bitrateTarget) ? a : Math.min(null != (o = l.availableOutgoingBitrate) ? o : 0, null != t ? t : 0), t, l.availableOutgoingBitrate), T.averageEncodeTime = null != (c = r.averageEncodeTime) ? c : 0, T.framesDroppedRateLimiter = null != (u = r.framesDroppedRateLimiter) ? u : null, T.framesDroppedEncoderQueue = null != (f = r.framesDroppedEncoderQueue) ? f : null, T.framesDroppedCongestionWindow = null != (p = r.framesDroppedCongestionWindow) ? p : null, T.framesDroppedEncoder = null != (m = r.framesDroppedEncoder) ? m : null, this.hqSimulcastStreamEncoded.value = null != (E = r.hqSimulcastStreamEncoded) && E, this.lqSimulcastStreamEncoded.value = null != (b = r.lqSimulcastStreamEncoded) && b, this.bothSimulcastStreamsEncoded.value = this.hqSimulcastStreamEncoded.value && this.lqSimulcastStreamEncoded.value, this.bandwidthLimitedResolution.value = null != (y = r.bandwidthLimitedResolution) && y, this.bandwidthLimitedFramerate.value = null != (O = r.bandwidthLimitedFrameRate) && O
+          let t = null == S ? true : S.maxBitrate;
+          T.appendTargetRates(null == S ? true : S.maxFrameRate, null != (a = r.bitrateTarget) ? a : Math.min(null != (o = l.availableOutgoingBitrate) ? o : 0, null != t ? t : 0), t, l.availableOutgoingBitrate), T.averageEncodeTime = null != (c = r.averageEncodeTime) ? c : 0, T.framesDroppedRateLimiter = null != (u = r.framesDroppedRateLimiter) ? u : null, T.framesDroppedEncoderQueue = null != (f = r.framesDroppedEncoderQueue) ? f : null, T.framesDroppedCongestionWindow = null != (p = r.framesDroppedCongestionWindow) ? p : null, T.framesDroppedEncoder = null != (m = r.framesDroppedEncoder) ? m : null, this.hqSimulcastStreamEncoded.value = null != (E = r.hqSimulcastStreamEncoded) && E, this.lqSimulcastStreamEncoded.value = null != (b = r.lqSimulcastStreamEncoded) && b, this.bothSimulcastStreamsEncoded.value = this.hqSimulcastStreamEncoded.value && this.lqSimulcastStreamEncoded.value, this.bandwidthLimitedResolution.value = null != (y = r.bandwidthLimitedResolution) && y, this.bandwidthLimitedFramerate.value = null != (O = r.bandwidthLimitedFrameRate) && O
         }
       }
     }), this.paused.value || i().forEach(t.rtp.inbound, (t, n) => {
@@ -495,20 +496,20 @@ class y extends a.Z {
     }), 0 !== d.size && 0 !== f.size && ((0, o.O)(d, f) ? this.symmetricCodecUpdates++ : this.asymmetricCodecUpdates++)
   }
   updateSystemResourceStats() {
-    for (let e in this.outboundStats) this.outboundStats[e].addSystemResources();
-    for (let e in this.inboundStats) this.inboundStats[e].addSystemResources()
+    for (let e in this.outboundStats) this.outboundStats[module].addSystemResources();
+    for (let e in this.inboundStats) this.inboundStats[module].addSystemResources()
   }
   updateVideoEffectStats(e) {
-    let t = null == e ? void 0 : e.rtp.outbound.find(e => "video" === e.type);
-    this.videoEffectDuration.value = (null == t ? void 0 : t.type) === "video" && null != t.filter
+    let t = null == e ? true : e.rtp.outbound.find(e => "video" === e.type);
+    this.videoEffectDuration.value = (null == t ? true : t.type) === "video" && null != t.filter
   }
   constructor(e, t = l.Z_) {
-    super(), p(this, "connection", void 0), p(this, "timestampProducer", void 0), p(this, "networkQuality", void 0), p(this, "paused", void 0), p(this, "pausedCount", void 0), p(this, "zeroReceivers", void 0), p(this, "videoStopped", void 0), p(this, "videoEffectDuration", void 0), p(this, "hqSimulcastStreamEncoded", void 0), p(this, "lqSimulcastStreamEncoded", void 0), p(this, "bothSimulcastStreamsEncoded", void 0), p(this, "hqSimulcastStreamWatched", void 0), p(this, "lqSimulcastStreamWatched", void 0), p(this, "hqSimulcastStreamEligible", void 0), p(this, "lqSimulcastStreamEligible", void 0), p(this, "simulcastQualityChanges", void 0), p(this, "cameraToggles", void 0), p(this, "callUserIdsCount", void 0), p(this, "cameraDuration", void 0), p(this, "cameraOpportunityDuration", void 0), p(this, "cameraSendDuration", void 0), p(this, "windowOccluded", void 0), p(this, "videoStoppedForOcclusion", void 0), p(this, "numWindowOcclusionChanges", void 0), p(this, "outboundStats", void 0), p(this, "inboundStats", void 0), p(this, "streamStart", void 0), p(this, "streamEnd", void 0), p(this, "symmetricCodecUpdates", void 0), p(this, "asymmetricCodecUpdates", void 0), p(this, "bandwidthLimitedFramerate", void 0), p(this, "bandwidthLimitedResolution", void 0), p(this, "videoEntropy", void 0), p(this, "statCollectionPausedUsers", void 0), p(this, "sampleStats", void 0), this.connection = e, this.timestampProducer = t, this.networkQuality = new f.Z, this.pausedCount = 0, this.simulcastQualityChanges = 0, this.cameraToggles = 0, this.callUserIdsCount = 0, this.numWindowOcclusionChanges = 0, this.outboundStats = {}, this.inboundStats = {}, this.symmetricCodecUpdates = 0, this.asymmetricCodecUpdates = 0, this.statCollectionPausedUsers = new Set, this.sampleStats = e => {
+    super(), p(this, "connection", true), p(this, "timestampProducer", true), p(this, "networkQuality", true), p(this, "paused", true), p(this, "pausedCount", true), p(this, "zeroReceivers", true), p(this, "videoStopped", true), p(this, "videoEffectDuration", true), p(this, "hqSimulcastStreamEncoded", true), p(this, "lqSimulcastStreamEncoded", true), p(this, "bothSimulcastStreamsEncoded", true), p(this, "hqSimulcastStreamWatched", true), p(this, "lqSimulcastStreamWatched", true), p(this, "hqSimulcastStreamEligible", true), p(this, "lqSimulcastStreamEligible", true), p(this, "simulcastQualityChanges", true), p(this, "cameraToggles", true), p(this, "callUserIdsCount", true), p(this, "cameraDuration", true), p(this, "cameraOpportunityDuration", true), p(this, "cameraSendDuration", true), p(this, "windowOccluded", true), p(this, "videoStoppedForOcclusion", true), p(this, "numWindowOcclusionChanges", true), p(this, "outboundStats", true), p(this, "inboundStats", true), p(this, "streamStart", true), p(this, "streamEnd", true), p(this, "symmetricCodecUpdates", true), p(this, "asymmetricCodecUpdates", true), p(this, "bandwidthLimitedFramerate", true), p(this, "bandwidthLimitedResolution", true), p(this, "videoEntropy", true), p(this, "statCollectionPausedUsers", true), p(this, "sampleStats", true), this.connection = e, this.timestampProducer = t, this.networkQuality = new f.Z, this.pausedCount = 0, this.simulcastQualityChanges = 0, this.cameraToggles = 0, this.callUserIdsCount = 0, this.numWindowOcclusionChanges = 0, this.outboundStats = {}, this.inboundStats = {}, this.symmetricCodecUpdates = 0, this.asymmetricCodecUpdates = 0, this.statCollectionPausedUsers = new Set, this.sampleStats = e => {
       if (null == e) return;
       let t = this.timestampProducer.now();
       if (this.networkQuality.incrementNetworkStats(t), this.updateSystemResourceStats(), this.updateVideoEffectStats(e), null == e) return;
       let n = this.connection.getStreamParameters();
       this.receivedStats(t, e, n)
-    }, this.paused = new l.sX(!1, t), this.zeroReceivers = new l.sX(!1, t), this.videoStopped = new l.sX(!1, t), this.videoEffectDuration = new l.sX(!1, t), this.hqSimulcastStreamEncoded = new l.sX(!1, t), this.lqSimulcastStreamEncoded = new l.sX(!1, t), this.bothSimulcastStreamsEncoded = new l.sX(!1, t), this.hqSimulcastStreamWatched = new l.sX(!1, t), this.lqSimulcastStreamWatched = new l.sX(!1, t), this.hqSimulcastStreamEligible = new l.sX(!1, t), this.lqSimulcastStreamEligible = new l.sX(!1, t), this.windowOccluded = new l.sX(!1, t), this.videoStoppedForOcclusion = new l.sX(!1, t), this.bandwidthLimitedFramerate = new l.sX(!1, t), this.bandwidthLimitedResolution = new l.sX(!1, t), this.cameraDuration = new l.sX(!1, t), this.cameraOpportunityDuration = new l.sX(!1, t), this.cameraSendDuration = new l.sX(!1, t), this.videoEntropy = new d.b
+    }, this.paused = new l.sX(false, t), this.zeroReceivers = new l.sX(false, t), this.videoStopped = new l.sX(false, t), this.videoEffectDuration = new l.sX(false, t), this.hqSimulcastStreamEncoded = new l.sX(false, t), this.lqSimulcastStreamEncoded = new l.sX(false, t), this.bothSimulcastStreamsEncoded = new l.sX(false, t), this.hqSimulcastStreamWatched = new l.sX(false, t), this.lqSimulcastStreamWatched = new l.sX(false, t), this.hqSimulcastStreamEligible = new l.sX(false, t), this.lqSimulcastStreamEligible = new l.sX(false, t), this.windowOccluded = new l.sX(false, t), this.videoStoppedForOcclusion = new l.sX(false, t), this.bandwidthLimitedFramerate = new l.sX(false, t), this.bandwidthLimitedResolution = new l.sX(false, t), this.cameraDuration = new l.sX(false, t), this.cameraOpportunityDuration = new l.sX(false, t), this.cameraSendDuration = new l.sX(false, t), this.videoEntropy = new d.b
   }
 }

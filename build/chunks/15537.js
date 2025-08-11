@@ -1,5 +1,6 @@
 /** Chunk was on 99014 **/
-e.exports = {
+/** chunk id: 15537, original params: e,t,n (module,exports,require) **/
+module.exports = {
   levelContainer: "levelContainer__3dcc3",
   perkContainer: "perkContainer__3dcc3",
   perkIcon: "perkIcon__3dcc3",

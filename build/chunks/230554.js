@@ -1,21 +1,22 @@
 /** Chunk was on web.js **/
+/** chunk id: 230554, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => b
-}), n(388685), n(35282), n(704826);
-var r = n(73800),
-  i = n(512722),
-  o = n.n(i),
-  a = n(650557),
-  s = n(911969),
-  l = n(998698),
-  c = n(91313),
-  u = n(53529),
-  d = n(436660),
-  f = n(887490),
-  _ = n(515270),
-  p = n(847302),
-  h = n(42530);
+}), require("./388685.js"), require("./35282.js"), require("./704826.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk512722 = require("./512722.js"),
+  o = require.n(Chunk512722),
+  Chunk650557 = require("./650557.js"),
+  Chunk911969 = require("./911969.js"),
+  Chunk998698 = require("./998698.js"),
+  Chunk91313 = require("./91313.js"),
+  Chunk53529 = require("./53529.js"),
+  Chunk436660 = require("./436660.js"),
+  Chunk887490 = require("./887490.js"),
+  Chunk515270 = require("./515270.js"),
+  Chunk847302 = require("./847302.js"),
+  Chunk42530 = require("./42530.js");
 let m = (e, t, n) => ({
   getSlateEditor: () => e,
   submit(e) {
@@ -31,22 +32,22 @@ let m = (e, t, n) => ({
     let t = e.selection;
     if (null == t || !f.Ew.isValid(e, t) || f.M8.isExpanded(t) || (0, _.L6)(e)) return {
       word: null,
-      isAtStart: !1
+      isAtStart: false
     };
     let [n, r] = f.bN.node(e, f.C0.parent(t.anchor.path)), [i, o] = f.bN.node(e, t.anchor.path), a = t.anchor.offset;
     if (!f.C0.hasPrevious(o) && f.LC.isText(i)) {
       let e = i.text.substring(0, a);
       if (f.aj.isType(n, "applicationCommand") && a < n.command.displayName.length + 2) return {
         word: e,
-        isAtStart: !0
+        isAtStart: true
       }
     }
     let s = "",
-      l = !1;
+      l = false;
     for (;;) {
       if (--a < 0) {
         if (!f.C0.hasPrevious(o)) {
-          l = !0;
+          l = true;
           break
         } [i, o] = f.bN.node(e, f.C0.previous(o))
       }
@@ -62,7 +63,7 @@ let m = (e, t, n) => ({
   },
   getFirstText() {
     var t, n;
-    return null != (n = null == (t = f.bN.getFirstText(e)) ? void 0 : t.text) ? n : ""
+    return null != (n = null == (t = f.bN.getFirstText(e)) ? true : t.text) ? n : ""
   },
   getCurrentCommandOption() {
     let t = c.HZ(e);
@@ -73,7 +74,7 @@ let m = (e, t, n) => ({
     let r = c.HZ(e);
     if (null == r) return [];
     let i = l.Z.getActiveCommand(t.id),
-      o = null == i || null == (n = i.options) ? void 0 : n.find(e => e.name === r[0].optionName);
+      o = null == i || null == (n = i.options) ? true : n.find(e => e.name === r[0].optionName);
     return null == o ? [] : c.IB(e, o, r[0], t.id)
   },
   getCommandOptionValues() {
@@ -81,28 +82,28 @@ let m = (e, t, n) => ({
     return null == n ? {} : c.tM(e, n, t.id)
   },
   insertText(n) {
-    let r = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : null,
-      i = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
+    let r = arguments.length > 1 && true !== arguments[1] ? arguments[1] : null,
+      i = arguments.length > 2 && true !== arguments[2] && arguments[2];
     u.T.withSingleEntry(e, () => {
       let o = c.HZ(e),
         a = null != o && g(t, o[0]);
-      if (null != r && a && (d.Q.removeInlineChildren(e, o), i = !1), E(e, n, r, i), null != r && a) {
+      if (null != r && a && (d.Q.removeInlineChildren(e, o), i = false), E(e, n, r, i), null != r && a) {
         let n = c.cr(e);
         if (o = f.q.updateElement(e, o), null != n) {
           let r = f.q.markdown(n[0], t.guild_id);
           (0, p.Gg)(e, o, t.id, r) && (o = f.q.updateElement(e, o))
         }
-        c.xi(e, t.guild_id, t.id, f.q.updateElement(e, o), !1), d.Q.selectNextCommandOption(e)
+        c.xi(e, t.guild_id, t.id, f.q.updateElement(e, o), false), d.Q.selectNextCommandOption(e)
       }
     })
   },
   insertAutocomplete(n) {
-    let r = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : null,
-      i = !(arguments.length > 2) || void 0 === arguments[2] || arguments[2];
+    let r = arguments.length > 1 && true !== arguments[1] ? arguments[1] : null,
+      i = !(arguments.length > 2) || true === arguments[2] || arguments[2];
     u.T.withSingleEntry(e, () => {
       let o = c.HZ(e),
         a = null != o && g(t, o[0]);
-      if (a) d.Q.removeInlineChildren(e, o), i = !1;
+      if (a) d.Q.removeInlineChildren(e, o), i = false;
       else {
         let {
           word: t
@@ -110,7 +111,7 @@ let m = (e, t, n) => ({
         null != t && t.length > 0 && d.Q.delete(e, {
           distance: t.length,
           unit: "character",
-          reverse: !0
+          reverse: true
         })
       }
       E(e, n, r, i), a && d.Q.selectNextCommandOption(e)
@@ -124,7 +125,7 @@ let m = (e, t, n) => ({
       null != n && n.length > 0 && d.Q.delete(e, {
         distance: n.length,
         unit: "character",
-        reverse: !0
+        reverse: true
       }), d.Q.insertNodes(e, [{
         type: t,
         children: [{
@@ -138,13 +139,13 @@ let m = (e, t, n) => ({
       let i = f.bN.getSelectedParentOfType(e, [t]);
       o()(null != i, "Cannot replace inline input of type ".concat(t, " when none is selected")), d.Q.removeNodes(e, {
         at: i[1]
-      }), E(e, n, r, !0)
+      }), E(e, n, r, true)
     })
   },
   insertEmoji(t) {
     let {
       emoji: n,
-      addSpace: r = !1
+      addSpace: r = false
     } = t;
     u.T.withSingleEntry(e, () => {
       var t, i;
@@ -158,8 +159,8 @@ let m = (e, t, n) => ({
 function g(e, t) {
   var n;
   let r = l.Z.getActiveCommand(e.id),
-    i = null == r || null == (n = r.options) ? void 0 : n.find(e => e.name === t.optionName);
-  return null != i && (i.type !== s.jw.STRING || (null == i ? void 0 : i.choices) != null || (null == i ? void 0 : i.autocomplete))
+    i = null == r || null == (n = r.options) ? true : n.find(e => e.name === t.optionName);
+  return null != i && (i.type !== s.jw.STRING || (null == i ? true : i.choices) != null || (null == i ? true : i.autocomplete))
 }
 
 function E(e, t, n, r) {

@@ -1,8 +1,9 @@
 /** Chunk was on web.js **/
+/** chunk id: 593473, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-var r = n(492476),
-  i = n(381538),
-  o = n(26018);
+var Chunk492476 = require("./492476.js"),
+  Chunk381538 = require("./381538.js"),
+  Chunk26018 = require("./26018.js");
 
 function a(e) {
   switch (e.arrayFormat) {
@@ -30,12 +31,12 @@ function s(e) {
           r[e] = n;
           return
         }
-        void 0 === r[e] && (r[e] = {}), r[e][t[1]] = n
+        true === r[e] && (r[e] = {}), r[e][t[1]] = n
       };
     case "bracket":
       return function(e, n, r) {
         if (t = /(\[\])$/.exec(e), e = e.replace(/\[\]$/, ""), t) {
-          if (void 0 === r[e]) {
+          if (true === r[e]) {
             r[e] = [n];
             return
           }
@@ -47,7 +48,7 @@ function s(e) {
       };
     default:
       return function(e, t, n) {
-        if (void 0 === n[e]) {
+        if (true === n[e]) {
           n[e] = t;
           return
         }
@@ -67,9 +68,9 @@ function c(e) {
     return e[t]
   }) : e
 }
-t.extract = function(e) {
+exports.extract = function(e) {
   return e.split("?")[1] || ""
-}, t.parse = function(e, t) {
+}, exports.parse = function(e, t) {
   var n = s(t = i({
       arrayFormat: "none"
     }, t)),
@@ -77,26 +78,26 @@ t.extract = function(e) {
   return "string" == typeof e && (e = e.trim().replace(/^(\?|#|&)/, "")) ? (e.split("&").forEach(function(e) {
     var t = e.replace(/\+/g, " ").split("="),
       i = t.shift(),
-      a = t.length > 0 ? t.join("=") : void 0;
-    a = void 0 === a ? null : o(a), n(o(i), a, r)
+      a = t.length > 0 ? t.join("=") : true;
+    a = true === a ? null : o(a), n(o(i), a, r)
   }), Object.keys(r).sort().reduce(function(e, t) {
     var n = r[t];
     return n && "object" == typeof n && !Array.isArray(n) ? e[t] = c(n) : e[t] = n, e
   }, Object.create(null))) : r
-}, t.stringify = function(e, t) {
+}, exports.stringify = function(e, t) {
   var n = a(t = i({
-    encode: !0,
-    strict: !0,
+    encode: true,
+    strict: true,
     arrayFormat: "none"
   }, t));
   return e ? Object.keys(e).sort().map(function(r) {
     var i = e[r];
-    if (void 0 === i) return "";
+    if (true === i) return "";
     if (null === i) return l(r, t);
     if (Array.isArray(i)) {
       var o = [];
       return i.slice().forEach(function(e) {
-        void 0 !== e && o.push(n(r, e, o.length))
+        true !== e && o.push(n(r, e, o.length))
       }), o.join("&")
     }
     return l(r, t) + "=" + l(i, t)

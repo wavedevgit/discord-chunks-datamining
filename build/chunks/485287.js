@@ -1,60 +1,61 @@
 /** Chunk was on web.js **/
+/** chunk id: 485287, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   U5: () => O,
   ZP: () => I,
   pp: () => y
-}), n(388685);
-var r = n(442837),
-  i = n(147913),
-  o = n(460181),
-  a = n(592125),
-  s = n(131951),
-  l = n(944486),
-  c = n(979651),
-  u = n(565799),
-  d = n(431328),
-  f = n(501655),
-  _ = n(427679),
-  p = n(754277);
+}), require("./388685.js");
+var Chunk442837 = require("./442837.js"),
+  Chunk147913 = require("./147913.js"),
+  Chunk460181 = require("./460181.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk131951 = require("./131951.js"),
+  Chunk944486 = require("./944486.js"),
+  Chunk979651 = require("./979651.js"),
+  Chunk565799 = require("./565799.js"),
+  Chunk431328 = require("./431328.js"),
+  Chunk501655 = require("./501655.js"),
+  Chunk427679 = require("./427679.js"),
+  Chunk754277 = require("./754277.js");
 
 function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 let m = e => e / 400,
-  g = !1,
-  E = (0, o.tu)("stage_waiting", "stage_waiting", m(s.Z.getOutputVolume()));
+  g = false,
+  E = (0, Chunk460181.tu)("stage_waiting", "stage_waiting", m(Chunk131951.Z.getOutputVolume()));
 
 function b() {
-  let e = l.Z.getVoiceChannelId();
-  if (null == e) {
-    E.stop(), g = !1;
+  let e = Chunk944486.Z.getVoiceChannelId();
+  if (null == module) {
+    E.stop(), g = false;
     return
   }
-  let t = a.Z.getChannel(e);
-  if (!(null == t ? void 0 : t.isGuildStageVoice()) || s.Z.isSelfDeaf()) {
-    E.stop(), g = !1;
+  let t = Chunk592125.Z.getChannel(module);
+  if (!(null == exports ? true : exports.isGuildStageVoice()) || Chunk131951.Z.isSelfDeaf()) {
+    E.stop(), g = false;
     return
   }
-  if (p.Z.shouldPlay()) {
-    E.volume = m(s.Z.getOutputVolume()), E.loop(), g = !0;
+  if (Chunk754277.Z.shouldPlay()) {
+    E.volume = m(Chunk131951.Z.getOutputVolume()), E.loop(), g = true;
     return
   }
-  if (_.Z.isLive(e)) {
-    E.stop(), g = !1;
+  if (Chunk427679.Z.isLive(module)) {
+    E.stop(), g = false;
     return
   }
-  if (p.Z.isMuted()) {
-    E.pause(), g = !1;
+  if (Chunk754277.Z.isMuted()) {
+    E.pause(), g = false;
     return
   }
-  let n = null != Object.values(c.Z.getVoiceStatesForChannel(e)).find(e => !e.suppress && !e.isVoiceMuted());
-  n || g ? n && (E.pause(), g = !1) : (E.volume = m(s.Z.getOutputVolume()), E.loop(), g = !0)
+  let n = null != Object.values(Chunk979651.Z.getVoiceStatesForChannel(module)).find(e => !e.suppress && !e.isVoiceMuted());
+  require || g ? require && (E.pause(), g = false) : (E.volume = m(Chunk131951.Z.getOutputVolume()), E.loop(), g = true)
 }
 
 function y(e) {
@@ -70,30 +71,30 @@ function O(e) {
     r = _.Z.getStageInstanceByChannel(e);
   return t && null == r && !n
 }
-class v extends i.Z {
+class v extends Chunk147913.Z {
   handleVoiceChannelSelect(e) {
     let {
       channelId: t
     } = e;
     if (null != t) {
       let e = a.Z.getChannel(t);
-      (null == e ? void 0 : e.isGuildStageVoice()) ? b(): (E.stop(), g = !1)
-    } else E.stop(), g = !1
+      (null == e ? true : e.isGuildStageVoice()) ? b(): (E.stop(), g = false)
+    } else E.stop(), g = false
   }
   handleLogout() {
-    E.stop(), g = !1
+    E.stop(), g = false
   }
   handlePlay(e) {
     let {
       play: t
     } = e;
-    t ? b() : (E.pause(), g = !1)
+    t ? b() : (E.pause(), g = false)
   }
   handleMute(e) {
     let {
       muted: t
     } = e;
-    t ? (E.pause(), g = !1) : b()
+    t ? (E.pause(), g = false) : b()
   }
   handleVoiceStateUpdates() {
     b()

@@ -1,25 +1,26 @@
 /** Chunk was on 23357 **/
+/** chunk id: 268163, original params: e,t,n (module,exports,require) **/
 "use strict";
-var r = n(220159),
-  o = n(253462),
-  a = n(296004).CONSTRUCTOR,
-  i = n(57100),
-  s = n(178476),
-  c = n(971428),
-  l = n(342930),
-  u = i && i.prototype;
-if (r({
+var Chunk220159 = require("./220159.js"),
+  Chunk253462 = require("./253462.js"),
+  a = require("./296004.js").CONSTRUCTOR,
+  Chunk57100 = require("./57100.js"),
+  Chunk178476 = require("./178476.js"),
+  Chunk971428 = require("./971428.js"),
+  Chunk342930 = require("./342930.js"),
+  u = Chunk57100 && Chunk57100.prototype;
+if (Chunk220159({
     target: "Promise",
-    proto: !0,
+    proto: true,
     forced: a,
-    real: !0
+    real: true
   }, {
     catch: function(e) {
-      return this.then(void 0, e)
+      return this.then(true, e)
     }
-  }), !o && c(i)) {
-  var d = s("Promise").prototype.catch;
-  u.catch !== d && l(u, "catch", d, {
-    unsafe: !0
+  }), !Chunk253462 && Chunk971428(Chunk57100)) {
+  var d = Chunk178476("Promise").prototype.catch;
+  u.catch !== d && Chunk342930(u, "catch", d, {
+    unsafe: true
   })
 }

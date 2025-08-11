@@ -1,15 +1,16 @@
 /** Chunk was on web.js **/
+/** chunk id: 50659, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   U4: () => u,
   hm: () => m,
   py: () => h
-}), n(388685);
-var r = n(512722),
-  i = n.n(r),
-  o = n(53529),
-  a = n(436660),
-  s = n(887490);
+}), require("./388685.js");
+var Chunk512722 = require("./512722.js"),
+  i = require.n(Chunk512722),
+  Chunk53529 = require("./53529.js"),
+  Chunk436660 = require("./436660.js"),
+  Chunk887490 = require("./887490.js");
 let l = new Set(["*", "_", "~", "`", "|"]),
   c = {
     bold: "**",
@@ -96,7 +97,7 @@ function p(e, t) {
   let n = e.indexOf(t);
   if (n >= 0) {
     let r = t.charAt(0);
-    if (n > 0 && e.charAt(n - 1) === r || n < e.length - 1 && e.charAt(n + t.length) === r) return -1
+    if (n > 0 && e.charAt(n - 1) === r || n < e.length - 1 && e.charAt(n + t.length) === r) return false
   }
   return n
 }
@@ -163,7 +164,7 @@ function h(e, t) {
 function m(e, t) {
   let n = e.selection;
   if (null == n) return;
-  let r = !0;
+  let r = true;
   for (let [i, o] of s.bN.blocks(e))("line" === i.type || i.type === t) && s.M8.includes(n, o) && (r = r && i.type === t);
   s.bN.withoutNormalizing(e, () => {
     for (let [i, o] of s.bN.blocks(e)) s.M8.includes(n, o) && (r || "line" !== i.type ? r && i.type === t && a.Q.setNodes(e, {

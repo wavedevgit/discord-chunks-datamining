@@ -1,21 +1,22 @@
 /** Chunk was on 27978 **/
-n.d(t, {
+/** chunk id: 481230, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   R$: () => _,
   ZP: () => g
 });
-var r = n(913527),
-  i = n.n(r),
-  l = n(990547),
-  o = n(570140),
-  s = n(479531),
-  a = n(771308),
-  c = n(353250),
-  u = n(314897),
-  d = n(626135),
-  h = n(573261),
-  p = n(959776),
-  f = n(981631),
-  m = n(723359);
+var Chunk913527 = require("./913527.js"),
+  i = require.n(Chunk913527),
+  Chunk990547 = require("./990547.js"),
+  Chunk570140 = require("./570140.js"),
+  Chunk479531 = require("./479531.js"),
+  Chunk771308 = require("./771308.js"),
+  Chunk353250 = require("./353250.js"),
+  Chunk314897 = require("./314897.js"),
+  Chunk626135 = require("./626135.js"),
+  Chunk573261 = require("./573261.js"),
+  Chunk959776 = require("./959776.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk723359 = require("./723359.js");
 
 function g(e) {
   var t, n, {
@@ -32,9 +33,9 @@ function g(e) {
         var r;
         r = n[t], t in e ? Object.defineProperty(e, t, {
           value: r,
-          enumerable: !0,
-          configurable: !0,
-          writable: !0
+          enumerable: true,
+          configurable: true,
+          writable: true
         }) : e[t] = r
       })
     }
@@ -106,22 +107,22 @@ function _(e) {
       invite: v,
       consent: _,
       phone_token: n,
-      date_of_birth: null == E ? void 0 : E.format("YYYY-MM-DD"),
+      date_of_birth: null == E ? true : E.format("YYYY-MM-DD"),
       gift_code_sku_id: j,
       guild_template_code: b,
-      promotional_email_opt_in: null == I ? void 0 : I.checked
+      promotional_email_opt_in: null == I ? true : I.checked
     },
     trackedActionData: {
       event: l.NetworkActionNames.USER_REGISTER,
       properties: {
         invite_code: v,
         used_username_suggestion: O,
-        promotional_email_opt_in: null == I ? void 0 : I.checked,
-        promotional_email_pre_checked: null == I ? void 0 : I.preChecked,
-        was_unique_username: !0
+        promotional_email_opt_in: null == I ? true : I.checked,
+        promotional_email_pre_checked: null == I ? true : I.preChecked,
+        was_unique_username: true
       }
     },
-    rejectWithError: !1
+    rejectWithError: false
   }).then(e => {
     o.Z.dispatch({
       type: "REGISTER_SUCCESS",
@@ -134,7 +135,7 @@ function _(e) {
     if (e instanceof c.CaptchaCancelError) throw e;
     let t = new s.Z(e);
     throw null != t.getFieldErrors("date_of_birth") && a.wE(m.L0.REGISTER), d.default.track(f.rMx.REGISTER_SUBMIT_ERRORED, {
-      is_unique_username_registration: !0,
+      is_unique_username_registration: true,
       email_error_reason: t.getFirstFieldErrorMessage("email"),
       phone_error_reason: t.getFirstFieldErrorMessage("phone_token"),
       password_error_reason: t.getFirstFieldErrorMessage("password"),

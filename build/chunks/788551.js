@@ -1,5 +1,6 @@
 /** Chunk was on 36878 **/
-e.exports = {
+/** chunk id: 788551, original params: e,t,n (module,exports,require) **/
+module.exports = {
   baseControlItem: "baseControlItem_dbfbe0",
   compact: "compact_dbfbe0",
   baseControlItemLeadingElement: "baseControlItemLeadingElement_dbfbe0",

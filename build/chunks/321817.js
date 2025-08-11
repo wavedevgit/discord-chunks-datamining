@@ -1,5 +1,6 @@
 /** Chunk was on web.js **/
-e.exports = function(e) {
+/** chunk id: 321817, original params: e (module,exports,re quire) **/
+module.exports = function(e) {
   let t = e.regex,
     n = /[a-zA-Z_][a-zA-Z0-9_]*/,
     r = {
@@ -13,13 +14,13 @@ e.exports = function(e) {
     contains: [e.COMMENT(";[ \\t]*#", "$"), e.COMMENT("^[ \\t]*#", "$"), {
       beginKeywords: "proc",
       end: "[\\{]",
-      excludeEnd: !0,
+      excludeEnd: true,
       contains: [{
         className: "title",
         begin: "[ \\t\\n\\r]+(::)?[a-zA-Z_]((::)?[a-zA-Z0-9_])*",
         end: "[ \\t\\n\\r]",
-        endsWithParent: !0,
-        excludeEnd: !0
+        endsWithParent: true,
+        excludeEnd: true
       }]
     }, {
       className: "variable",

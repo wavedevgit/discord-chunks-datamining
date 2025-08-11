@@ -1,14 +1,15 @@
 /** Chunk was on web.js **/
+/** chunk id: 586021, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   D5: () => f,
   Ft: () => d,
   IT: () => u,
   Yk: () => _
-}), n(415506);
-var r = n(579092),
-  i = n(436620);
-let o = new r.Yd("LibDaveManager"),
+}), require("./415506.js");
+var Chunk579092 = require("./579092.js"),
+  Chunk436620 = require("./436620.js");
+let o = new Chunk579092.Yd("LibDaveManager"),
   a = null,
   s = null,
   l = null,
@@ -19,7 +20,7 @@ let o = new r.Yd("LibDaveManager"),
   };
 
 function u() {
-  return "Firefox" !== platform.name && i.WS && "function" == typeof RTCRtpSender && ("transform" in RTCRtpSender.prototype || "createEncodedStreams" in RTCRtpSender.prototype)
+  return "Firefox" !== platform.name && Chunk436620.WS && "function" == typeof RTCRtpSender && ("transform" in RTCRtpSender.prototype || "createEncodedStreams" in RTCRtpSender.prototype)
 }
 
 function d() {

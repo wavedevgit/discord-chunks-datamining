@@ -1,20 +1,21 @@
 /** Chunk was on web.js **/
+/** chunk id: 503013, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => a
 });
-var r = n(81825),
-  i = n(388032);
+var Chunk81825 = require("./81825.js"),
+  Chunk388032 = require("./388032.jsx");
 
 function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
-class a extends r.Z {
+class a extends Chunk81825.Z {
   static createFromServer(e) {
     return new a({
       id: e.id,
@@ -26,6 +27,6 @@ class a extends r.Z {
     return null != this.name ? this.name : this.id === e ? i.intl.string(i.t.AHqj6e) : i.intl.string(i.t["62f4nJ"])
   }
   constructor(e) {
-    super(), o(this, "id", void 0), o(this, "liveBuildId", void 0), o(this, "name", void 0), this.id = e.id, this.liveBuildId = e.liveBuildId, this.name = e.name
+    super(), o(this, "id", true), o(this, "liveBuildId", true), o(this, "name", true), this.id = e.id, this.liveBuildId = e.liveBuildId, this.name = e.name
   }
 }

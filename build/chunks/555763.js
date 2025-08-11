@@ -1,5 +1,6 @@
 /** Chunk was on 27978 **/
-e.exports = {
+/** chunk id: 555763, original params: e,t,n (module,exports,require) **/
+module.exports = {
   header: "header__1d5fc",
   horizontalAuthBox: "horizontalAuthBox__1d5fc",
   needAccount: "needAccount__1d5fc",

@@ -1,5 +1,6 @@
 /** Chunk was on 72920 **/
-t.exports = {
+/** chunk id: 454489, original params: t,e,n (module,exports,require) **/
+module.exports = {
   selectorText: "selectorText__0907c",
   selectorTextSelected: "selectorTextSelected__0907c",
   selectorButton: "selectorButton__0907c",

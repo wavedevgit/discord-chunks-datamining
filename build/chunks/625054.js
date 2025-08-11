@@ -1,10 +1,11 @@
 /** Chunk was on 27978 **/
-n.d(t, {
+/** chunk id: 625054, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => o
 });
-var r = n(525654),
-  i = n.n(r),
-  l = n(643191);
+var Chunk525654 = require("./525654.js"),
+  i = require.n(Chunk525654),
+  Chunk643191 = require("./643191.js");
 let o = {
   dump(e) {
     let t;
@@ -24,5 +25,5 @@ let o = {
       memory: t
     })
   },
-  getTimeSinceNavigationStart: () => Date.now() - l.mb
+  getTimeSinceNavigationStart: () => Date.now() - Chunk643191.mb
 }

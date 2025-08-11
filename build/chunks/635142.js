@@ -1,8 +1,9 @@
 /** Chunk was on 22988 **/
-n.d(t, {
+/** chunk id: 635142, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => i
 });
-var r = n(388032);
+var Chunk388032 = require("./388032.jsx");
 
 function i(e) {
   return e > 0 && e % 7 == 0 ? r.intl.formatToPlainString(r.t.EmoBDw, {

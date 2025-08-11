@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 630759, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   J6: () => G,
   LO: () => D,
   TQ: () => w,
@@ -16,43 +17,43 @@ n.d(t, {
   pL: () => P,
   uV: () => C,
   uX: () => V
-}), n(410992), n(227481), n(730884), n(20464), n(341884), n(364341), n(629680), n(505025), n(918970), n(121784), n(644351), n(146733), n(388685);
-var r = n(250683),
-  i = n(512722),
-  o = n.n(i),
-  a = n(913527),
-  s = n.n(a),
-  l = n(544891),
-  c = n(974167),
-  u = n(668781),
-  d = n(314897),
-  f = n(131951),
-  _ = n(19780),
-  p = n(959457),
-  h = n(594174),
-  m = n(70956),
-  g = n(63063),
-  E = n(5192),
-  b = n(960048),
-  y = n(51144),
-  O = n(90641),
-  v = n(615830),
-  I = n(352954),
-  T = n(571826),
-  S = n(760373),
-  A = n(981631),
-  N = n(388032);
+}), require("./410992.js"), require("./227481.js"), require("./730884.js"), require("./20464.js"), require("./341884.js"), require("./364341.js"), require("./629680.js"), require("./505025.js"), require("./918970.js"), require("./121784.js"), require("./644351.js"), require("./146733.js"), require("./388685.js");
+var Chunk250683 = require("./250683.js"),
+  Chunk512722 = require("./512722.js"),
+  o = require.n(Chunk512722),
+  Chunk913527 = require("./913527.js"),
+  s = require.n(Chunk913527),
+  Chunk544891 = require("./544891.js"),
+  Chunk974167 = require("./974167.js"),
+  Chunk668781 = require("./668781.js"),
+  Chunk314897 = require("./314897.js"),
+  Chunk131951 = require("./131951.js"),
+  Chunk19780 = require("./19780.js"),
+  Chunk959457 = require("./959457.js"),
+  Chunk594174 = require("./594174.js"),
+  Chunk70956 = require("./70956.js"),
+  Chunk63063 = require("./63063.js"),
+  Chunk5192 = require("./5192.js"),
+  Chunk960048 = require("./960048.js"),
+  Chunk51144 = require("./51144.js"),
+  Chunk90641 = require("./90641.js"),
+  Chunk615830 = require("./615830.js"),
+  Chunk352954 = require("./352954.jsx"),
+  Chunk571826 = require("./571826.js"),
+  Chunk760373 = require("./760373.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk388032 = require("./388032.jsx");
 
 function C() {
-  return g.Z.getArticleURL(A.BhN.END_TO_END_ENCRYPTION)
+  return Chunk63063.Z.getArticleURL(Chunk981631.BhN.END_TO_END_ENCRYPTION)
 }
 
 function R() {
-  return g.Z.getArticleURL(A.BhN.END_TO_END_ENCRYPTION)
+  return Chunk63063.Z.getArticleURL(Chunk981631.BhN.END_TO_END_ENCRYPTION)
 }
 
 function P() {
-  return g.Z.getArticleURL(A.BhN.END_TO_END_ENCRYPTION)
+  return Chunk63063.Z.getArticleURL(Chunk981631.BhN.END_TO_END_ENCRYPTION)
 }
 
 function w(e, t, n, r, i) {
@@ -171,7 +172,7 @@ async function G(e, t, n) {
         public_key: U(t),
         key_version: n
       },
-      rejectWithError: !1
+      rejectWithError: false
     })).body.is_match
   } catch (e) {
     throw b.Z.captureException(e), e
@@ -190,7 +191,7 @@ async function B(e) {
         signature: U(n),
         key_version: e
       },
-      rejectWithError: !1
+      rejectWithError: false
     }), O.Z.addUploadedKeyVersion(e)
   } catch (e) {
     throw b.Z.captureException(e), e
@@ -204,7 +205,7 @@ async function F(e) {
   Z(e) || await B(e)
 }
 async function V(e) {
-  if (!Z(e)) return await B(e), !0;
+  if (!Z(e)) return await B(e), true;
   let t = d.default.getId(),
     {
       key: n
@@ -215,19 +216,19 @@ async function V(e) {
 
 function H(e, t) {
   let [n, r] = t;
-  if (!n.isUserConnected(e)) return !1;
+  if (!n.isUserConnected(e)) returnfalse;
   let i = n.getSecureFramesRosterMapEntry(e);
-  if (null == i) return !1;
+  if (null == i) returnfalse;
   let o = new Uint8Array(i);
   for (let t of r.getAllActiveStreamKeys()) {
     if (!r.isUserConnected(t, e)) continue;
     let n = p.Z.getSecureFramesRosterMapEntry(t, e);
-    if (null == n) return !0;
+    if (null == n) returntrue;
     let i = new Uint8Array(n);
     for (let e = 0; e < o.length; e++)
-      if (o[e] !== i[e]) return !0
+      if (o[e] !== i[e]) returntrue
   }
-  return !1
+  returnfalse
 }
 
 function Y(e) {
@@ -255,7 +256,7 @@ function W(e) {
     guildId: n,
     channelId: r
   } = e;
-  if (!H(t, [_.Z, p.Z])) return !0;
+  if (!H(t, [_.Z, p.Z])) returntrue;
   {
     let e = h.default.getUser(t),
       i = E.ZP.getName(n, r, e);
@@ -263,6 +264,6 @@ function W(e) {
       userId: t,
       channelId: r,
       nickname: i
-    }), !1
+    }), false
   }
 }

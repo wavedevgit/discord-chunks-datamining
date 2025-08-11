@@ -1,4 +1,5 @@
 /** Chunk was on web.js **/
+/** chunk id: 247765, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 
 function r(e) {
@@ -8,6 +9,6 @@ function r(e) {
   } = e;
   return e.isInline = e => "testInline" === e.type || "testInlineVoid" === e.type || t(e), e.isVoid = e => "testInlineVoid" === e.type || n(e), e
 }
-n.d(t, {
+require.d(exports, {
   Z: () => r
 })

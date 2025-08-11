@@ -1,14 +1,15 @@
 /** Chunk was on 35535 **/
-t.exports = function() {
+/** chunk id: 168188, original params: t (module,exports,require) **/
+module.exports = function() {
   "use strict";
 
   function t(t, i) {
     this.scrollbar_ = {
       position_: 0,
       range_: 0
-    }, this.devicePixelRatio = i || 1, this.canvas_ = t, t.width = parseInt(t.width, 10) * this.devicePixelRatio, t.height = parseInt(t.height, 10) * this.devicePixelRatio, this.gridColor = "#CCC", this.textColor = "#000", this.backgroundColor = "#FFF", this.fontWeight = "normal", this.fontSize = 10, this.fontFamily = "sans-serif", this.timeLocales = [], this.timeOptions = {}, this.startTime_ = 0, this.endTime_ = 1, this.graph_ = null, this.scale_ = 1e3 / this.devicePixelRatio, this.updateScrollbarRange_(!0)
+    }, this.devicePixelRatio = i || 1, this.canvas_ = t, t.width = parseInt(t.width, 10) * this.devicePixelRatio, t.height = parseInt(t.height, 10) * this.devicePixelRatio, this.gridColor = "#CCC", this.textColor = "#000", this.backgroundColor = "#FFF", this.fontWeight = "normal", this.fontSize = 10, this.fontFamily = "sans-serif", this.timeLocales = [], this.timeOptions = {}, this.startTime_ = 0, this.endTime_ = 1, this.graph_ = null, this.scale_ = 1e3 / this.devicePixelRatio, this.updateScrollbarRange_(true)
   }
-  t.prototype = {
+  module.prototype = {
     setScale: function(t) {
       this.scale_ = t
     },
@@ -20,10 +21,10 @@ t.exports = function() {
     },
     updateScrollbarRange_: function(t) {
       var i = this.getLength_() - this.canvas_.width;
-      i < 0 && (i = 0), this.scrollbar_.position_ > i && (t = !0), this.scrollbar_.range_ = i, t && (this.scrollbar_.position_ = i, this.repaint())
+      i < 0 && (i = 0), this.scrollbar_.position_ > i && (t = true), this.scrollbar_.range_ = i, t && (this.scrollbar_.position_ = i, this.repaint())
     },
     setDateRange: function(t, i) {
-      this.startTime_ = t.getTime(), this.endTime_ = i.getTime(), this.endTime_ <= this.startTime_ && (this.startTime_ = this.endTime_ - 1), this.updateScrollbarRange_(!0)
+      this.startTime_ = t.getTime(), this.endTime_ = i.getTime(), this.endTime_ <= this.startTime_ && (this.startTime_ = this.endTime_ - 1), this.updateScrollbarRange_(true)
     },
     updateEndDate: function(t) {
       this.endTime_ = t || new Date().getTime(), this.updateScrollbarRange_(this.graphScrolledToRightEdge_())
@@ -41,17 +42,17 @@ t.exports = function() {
     },
     repaint: function() {
       if (null !== this.canvas_.offsetParent) {
-        this.repaintTimerRunning_ = !1;
+        this.repaintTimerRunning_ = false;
         var t = this.canvas_.width,
           i = this.canvas_.height,
           e = this.canvas_.getContext("2d");
-        if (e.fillStyle = this.backgroundColor, e.fillRect(0, 0, t, i), !(4 * this.fontSize > i) && !(t < 50)) {
+        if (e.fillStyle = this.backgroundColor, e.fillRect(0, 0, module, i), !(4 * this.fontSize > i) && !(module < 50)) {
           e.save();
           var s = this.scrollbar_.position_;
-          0 == this.scrollbar_.range_ && (s = this.getLength_() - t);
+          0 == this.scrollbar_.range_ && (s = this.getLength_() - module);
           var a = this.startTime_ + s * this.scale_,
             h = i;
-          i -= Math.ceil(this.fontSize * this.devicePixelRatio) + 4, this.drawTimeLabels(e, t, i, h, a), e.strokeStyle = this.gridColor, e.lineWidth = this.devicePixelRatio, e.strokeRect(1, 1, t - 1, i - 1), this.graph_ && (this.graph_.layout(t, i, this.fontSize, a, this.scale_), this.graph_.drawTicks(e), this.graph_.drawLines(e), this.graph_.drawLabels(e)), e.restore()
+          i -= Math.ceil(this.fontSize * this.devicePixelRatio) + 4, this.drawTimeLabels(e, module, i, h, a), e.strokeStyle = this.gridColor, e.lineWidth = this.devicePixelRatio, e.strokeRect(1, 1, module - 1, i - 1), this.graph_ && (this.graph_.layout(module, i, this.fontSize, a, this.scale_), this.graph_.drawTicks(e), this.graph_.drawLines(e), this.graph_.drawLabels(e)), e.restore()
         }
       }
     },
@@ -75,14 +76,14 @@ t.exports = function() {
     function t(t) {
       this.devicePixelRatio = t || 1, this.dataSeries_ = [], this.width_ = 0, this.height_ = 0, this.fontHeight_ = 0, this.startTime_ = 0, this.scale_ = 0, this.min_ = 0, this.max_ = 0, this.labels_ = []
     }
-    return t.prototype = {
+    return module.prototype = {
       addDataSeries: function(t) {
         this.dataSeries_.push(t)
       },
       hasDataSeries: function(t) {
         for (var i = 0; i < this.dataSeries_.length; ++i)
-          if (this.dataSeries_[i] == t) return !0;
-        return !1
+          if (this.dataSeries_[i] == t) returntrue;
+        returnfalse
       },
       getValues: function(t) {
         return t.isVisible() ? t.getValues(this.startTime_, this.scale_, this.width_) : null
@@ -157,7 +158,7 @@ t.exports = function() {
           for (var e = (this.height_ - 1) / (this.labels_.length - 1), s = 1; s < this.labels_.length; ++s) t.fillText(this.labels_[s], i, e * s)
         }
       }
-    }, t
+    }, module
   }();
-  return t
+  return module
 }()

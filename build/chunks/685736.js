@@ -1,24 +1,25 @@
 /** Chunk was on web.js **/
+/** chunk id: 685736, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   ZP: () => E
-}), n(388685), n(804061), n(704826), n(35282);
-var r = n(348326),
-  i = n(710845),
-  o = n(38618),
-  a = n(592125),
-  s = n(287328),
-  l = n(59480),
-  c = n(40455),
-  u = n(989263),
-  d = n(513418);
+}), require("./388685.js"), require("./804061.js"), require("./704826.js"), require("./35282.js");
+var Chunk348326 = require("./348326.js"),
+  Chunk710845 = require("./710845.js"),
+  Chunk38618 = require("./38618.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk287328 = require("./287328.js"),
+  Chunk59480 = require("./59480.js"),
+  Chunk40455 = require("./40455.js"),
+  Chunk989263 = require("./989263.js"),
+  Chunk513418 = require("./513418.js");
 
 function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -34,7 +35,7 @@ function _(e) {
   }
   return e
 }
-let p = new i.Z("Messages");
+let p = new Chunk710845.Z("Messages");
 class h {
   static computeUsersAndMembers(e) {
     (0, d.Z)(e);
@@ -53,7 +54,7 @@ class h {
   constructor(e) {
     if (f(this, "connectionId", null), f(this, "users", []), f(this, "members", []), f(this, "messages", []), e.length > 0) {
       var t;
-      let n = null == (t = e[0]) ? void 0 : t.connectionId,
+      let n = null == (t = e[0]) ? true : t.connectionId,
         [r, i] = h.computeUsersAndMembers(e);
       e.length > 0 && e.every(e => e.connectionId === n) && (this.connectionId = n), this.users = r, this.members = i, this.messages = e.map(e => e.message)
     }

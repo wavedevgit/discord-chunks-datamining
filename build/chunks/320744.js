@@ -1,5 +1,6 @@
 /** Chunk was on 22988 **/
-e.exports = {
+/** chunk id: 320744, original params: e,t,n (module,exports,require) **/
+module.exports = {
   formSplit: "formSplit__4ecd1",
   formSplitHalf: "formSplitHalf__4ecd1",
   iconSection: "iconSection__4ecd1",

@@ -1,20 +1,21 @@
 /** Chunk was on 22988 **/
-n.d(t, {
+/** chunk id: 766434, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Br: () => l,
   Uj: () => a,
   j0: () => i
-}), n(388685);
-var r = n(198139);
+}), require("./388685.js");
+var Chunk198139 = require("./198139.js");
 let i = e => {
   var t, n;
-  let r = Object.values(null != (n = null == e ? void 0 : e.ppgs) ? n : {})[0],
-    i = null == r ? void 0 : r.status,
-    l = null == r || null == (t = r.payout) ? void 0 : t.status;
+  let r = Object.values(null != (n = null == e ? true : e.ppgs) ? n : {})[0],
+    i = null == r ? true : r.status,
+    l = null == r || null == (t = r.payout) ? true : t.status;
   return {
     ppgStatus: i,
     payoutStatus: l,
-    ppgDeferralReasons: null == r ? void 0 : r.deferral_reasons,
-    periodEndDate: null == r ? void 0 : r.period_ending_at
+    ppgDeferralReasons: null == r ? true : r.deferral_reasons,
+    periodEndDate: null == r ? true : r.period_ending_at
   }
 };
 

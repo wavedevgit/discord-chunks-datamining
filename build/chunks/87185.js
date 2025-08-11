@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 87185, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = !n(621523)(function() {
+module.exports = !require("./621523.js")(function() {
   function e() {}
-  return e.prototype.constructor = null, Object.getPrototypeOf(new e) !== e.prototype
+  return module.prototype.constructor = null, Object.getPrototypeOf(new module) !== module.prototype
 })

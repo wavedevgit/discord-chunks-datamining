@@ -1,43 +1,44 @@
 /** Chunk was on 75708 **/
-n.d(t, {
+/** chunk id: 881100, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   N: () => U
 });
-var i = n(399606),
-  r = n(780384),
-  s = n(230711),
-  a = n(410030),
-  l = n(594174),
-  o = n(424218),
-  c = n(74538),
-  d = n(474936),
-  u = n(981631),
-  m = n(526761),
-  p = n(388032),
-  g = n(323780),
-  h = n(101732),
-  f = n(450598),
-  b = n(633030),
-  x = n(97942),
-  _ = n(269987),
-  j = n(548629),
-  E = n(507084),
-  C = n(680313),
-  O = n(926433),
-  v = n(302036),
-  S = n(994554),
-  T = n(1549),
-  I = n(13327),
-  N = n(59137),
-  y = n(405991),
-  A = n(24615),
-  P = n(193943),
-  R = n(334347),
-  D = n(943734),
-  Z = n(603076),
-  w = n(472656),
-  k = n(912429),
-  L = n(772969),
-  M = n(926262);
+var Chunk399606 = require("./399606.js"),
+  Chunk780384 = require("./780384.js"),
+  Chunk230711 = require("./230711.js"),
+  Chunk410030 = require("./410030.js"),
+  Chunk594174 = require("./594174.js"),
+  Chunk424218 = require("./424218.js"),
+  Chunk74538 = require("./74538.js"),
+  Chunk474936 = require("./474936.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk526761 = require("./526761.js"),
+  Chunk388032 = require("./388032.jsx"),
+  Chunk323780 = require("./323780.js"),
+  Chunk101732 = require("./101732.js"),
+  Chunk450598 = require("./450598.js"),
+  Chunk633030 = require("./633030.js"),
+  Chunk97942 = require("./97942.js"),
+  Chunk269987 = require("./269987.js"),
+  Chunk548629 = require("./548629.js"),
+  Chunk507084 = require("./507084.js"),
+  Chunk680313 = require("./680313.js"),
+  Chunk926433 = require("./926433.js"),
+  Chunk302036 = require("./302036.js"),
+  Chunk994554 = require("./994554.js"),
+  Chunk1549 = require("./1549.js"),
+  Chunk13327 = require("./13327.js"),
+  Chunk59137 = require("./59137.js"),
+  Chunk405991 = require("./405991.js"),
+  Chunk24615 = require("./24615.js"),
+  Chunk193943 = require("./193943.js"),
+  Chunk334347 = require("./334347.js"),
+  Chunk943734 = require("./943734.js"),
+  Chunk603076 = require("./603076.js"),
+  Chunk472656 = require("./472656.js"),
+  Chunk912429 = require("./912429.js"),
+  Chunk772969 = require("./772969.js"),
+  Chunk926262 = require("./926262.js");
 let B = (e, t, n) => (0, r.wj)(e) ? t : n,
   U = e => {
     let {
@@ -46,7 +47,7 @@ let B = (e, t, n) => (0, r.wj)(e) ? t : n,
       let e = l.default.getCurrentUser();
       return c.ZP.canUsePremiumProfileCustomization(e)
     }), U = (0, o.BU)(d.Uq / 1024, {
-      useKibibytes: !0
+      useKibibytes: true
     });
     return {
       badge: {
@@ -121,7 +122,7 @@ let B = (e, t, n) => (0, r.wj)(e) ? t : n,
         description: p.intl.string(p.t["8GwCPT"]),
         imageSource: B(n, _, j),
         imageClassName: t.remixingImage,
-        isEarlyAccess: !0
+        isEarlyAccess: true
       },
       soundboard: {
         title: p.intl.string(p.t["lGcW+f"]),

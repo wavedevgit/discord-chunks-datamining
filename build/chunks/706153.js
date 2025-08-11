@@ -1,6 +1,7 @@
 /** Chunk was on 45620 **/
+/** chunk id: 706153, original params: e,t,n (module,exports,require) **/
 "use strict";
-e.exports = {
+module.exports = {
   immersiveBannerBlock: "immersiveBannerBlock__43ce9",
   immersiveBannerContent: "immersiveBannerContent__43ce9",
   immersiveBannerTextContainer: "immersiveBannerTextContainer__43ce9",

@@ -1,18 +1,19 @@
 /** Chunk was on web.js **/
+/** chunk id: 725436, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   m: () => f
 });
-var r = n(454585),
-  i = n(551452),
-  o = n(532901);
+var Chunk454585 = require("./454585.js"),
+  Chunk551452 = require("./551452.jsx"),
+  Chunk532901 = require("./532901.jsx");
 
 function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -45,20 +46,20 @@ function c(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let u = c(s({}, r.Z.guildEventRules.link), {
-    react: (0, o.Z)({
-      enableBuildOverrides: !1,
-      mustConfirmExternalLink: !0
+let u = c(s({}, Chunk454585.Z.guildEventRules.link), {
+    react: (0, Chunk532901.Z)({
+      enableBuildOverrides: false,
+      mustConfirmExternalLink: true
     }).react
   }),
-  d = c(s({}, r.Z.guildEventRules.channelMention), {
-    react: (0, i.Z)({
-      enableBuildOverrides: !1,
-      shouldCloseDefaultModals: !0,
-      shouldStopPropagation: !0
+  d = c(s({}, Chunk454585.Z.guildEventRules.channelMention), {
+    react: (0, Chunk551452.Z)({
+      enableBuildOverrides: false,
+      shouldCloseDefaultModals: true,
+      shouldStopPropagation: true
     }).react
   }),
-  f = r.Z.reactParserFor(c(s({}, r.Z.guildEventRules), {
+  f = Chunk454585.Z.reactParserFor(c(s({}, Chunk454585.Z.guildEventRules), {
     link: u,
     channelMention: d
   }))

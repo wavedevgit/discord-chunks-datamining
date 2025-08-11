@@ -1,25 +1,26 @@
 /** Chunk was on web.js **/
+/** chunk id: 659181, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => d
-}), n(388685), n(997841);
-var r = n(913527),
-  i = n.n(r),
-  o = n(81825),
-  a = n(630388),
-  s = n(973616),
-  l = n(981631);
+}), require("./388685.js"), require("./997841.js");
+var Chunk913527 = require("./913527.js"),
+  i = require.n(Chunk913527),
+  Chunk81825 = require("./81825.js"),
+  Chunk630388 = require("./630388.js"),
+  Chunk973616 = require("./973616.js"),
+  Chunk981631 = require("./981631.js");
 
 function c(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 let u = ["500428425362931713", "451550535720501248", "471376328319303681", "466696214818193408"];
-class d extends o.Z {
+class d extends Chunk81825.Z {
   static createFromServer(e) {
     var t, n, r, o, a, l, c;
     let {
@@ -55,10 +56,10 @@ class d extends o.Z {
         premium: u.premium
       } : null,
       premium: null != (r = e.premium) && r,
-      showAgeGate: e.show_age_gate || !1,
-      restricted: e.restricted || !1,
+      showAgeGate: e.show_age_gate || false,
+      restricted: e.restricted || false,
       slug: null != (o = e.slug) ? o : "",
-      exclusive: e.exclusive || !1,
+      exclusive: e.exclusive || false,
       locales: null != (a = e.locales) ? a : ["en-US"],
       flags: e.flags,
       externalPurchaseUrl: e.external_purchase_url,
@@ -68,36 +69,36 @@ class d extends o.Z {
   }
   get supportedOperatingSystems() {
     let e = null != this.systemRequirements ? Object.keys(this.systemRequirements) : [];
-    return e.length > 0 ? e : [l.TaA.WINDOWS]
+    return module.length > 0 ? module : [Chunk981631.TaA.WINDOWS]
   }
   get isOnSale() {
     return null != this.price && null != this.price.saleAmount
   }
   isGiftable() {
-    let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : this.price;
-    return this.type === l.epS.DURABLE_PRIMARY && this.available && this.requiresPayment && null != e && l.w2V.has(e.currency) && null == this.externalPurchaseUrl
+    let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : this.price;
+    return this.type === Chunk981631.epS.DURABLE_PRIMARY && this.available && this.requiresPayment && null != module && Chunk981631.w2V.has(module.currency) && null == this.externalPurchaseUrl
   }
   getPrice() {
-    let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
-      t = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1],
+    let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : null,
+      t = !(arguments.length > 1) || true === arguments[1] || arguments[1],
       {
         price: n
       } = this;
-    if (null == n) return null;
-    if (null != e) {
+    if (null == require) return null;
+    if (null != module) {
       var r;
-      let t = null == (r = n.premium) ? void 0 : r[e];
-      if (null != t) return {
-        amount: t.amount,
-        currency: n.currency
+      let t = null == (r = require.premium) ? true : Chunk913527[module];
+      if (null != exports) return {
+        amount: exports.amount,
+        currency: require.currency
       }
     }
-    return t && null != n.saleAmount ? {
-      amount: n.saleAmount,
-      currency: n.currency
+    return exports && null != require.saleAmount ? {
+      amount: require.saleAmount,
+      currency: require.currency
     } : {
-      amount: n.amount,
-      currency: n.currency
+      amount: require.amount,
+      currency: require.currency
     }
   }
   getDisplaySalePercentage() {
@@ -105,22 +106,22 @@ class d extends o.Z {
   }
   get requiresPayment() {
     let e = this.getPrice();
-    return !this.premium && null != e && e.amount > 0
+    return !this.premium && null != module && module.amount > 0
   }
   get isTheGameAwardsWinner() {
     return u.includes(this.id)
   }
   get available() {
-    return (0, a.yE)(this.flags, l.l4R.AVAILABLE) || null != this.externalPurchaseUrl
+    return (0, Chunk630388.yE)(this.flags, Chunk981631.l4R.AVAILABLE) || null != this.externalPurchaseUrl
   }
   isAvailableForDistribution() {
-    return this.available && null != this.getPrice() && null == this.externalPurchaseUrl && (!this.premium || (0, a.yE)(this.flags, l.l4R.PREMIUM_AND_DISTRIBUTION))
+    return this.available && null != this.getPrice() && null == this.externalPurchaseUrl && (!this.premium || (0, Chunk630388.yE)(this.flags, Chunk981631.l4R.PREMIUM_AND_DISTRIBUTION))
   }
   isAvailable() {
-    return (0, a.yE)(this.flags, l.l4R.AVAILABLE)
+    return (0, Chunk630388.yE)(this.flags, Chunk981631.l4R.AVAILABLE)
   }
   isPremiumPerk() {
-    return this.premium && ((0, a.yE)(this.flags, l.l4R.PREMIUM_PURCHASE) || (0, a.yE)(this.flags, l.l4R.PREMIUM_AND_DISTRIBUTION))
+    return this.premium && ((0, Chunk630388.yE)(this.flags, Chunk981631.l4R.PREMIUM_PURCHASE) || (0, Chunk630388.yE)(this.flags, Chunk981631.l4R.PREMIUM_AND_DISTRIBUTION))
   }
   hasFeature(e) {
     return this.features.has(e)
@@ -129,6 +130,6 @@ class d extends o.Z {
     return null != this.preorderReleaseAt || null != this.preorderApproximateReleaseDate
   }
   constructor(e) {
-    super(), c(this, "id", void 0), c(this, "type", void 0), c(this, "applicationId", void 0), c(this, "application", void 0), c(this, "eligiblePaymentGateways", void 0), c(this, "productLine", void 0), c(this, "name", void 0), c(this, "releaseDate", void 0), c(this, "preorderReleaseAt", void 0), c(this, "preorderApproximateReleaseDate", void 0), c(this, "summary", void 0), c(this, "features", void 0), c(this, "genres", void 0), c(this, "dependentSkuId", void 0), c(this, "manifests", void 0), c(this, "availableRegions", void 0), c(this, "accessType", void 0), c(this, "systemRequirements", void 0), c(this, "contentRating", void 0), c(this, "contentRatingAgency", void 0), c(this, "legalNotice", void 0), c(this, "price", void 0), c(this, "premium", void 0), c(this, "showAgeGate", void 0), c(this, "restricted", void 0), c(this, "slug", void 0), c(this, "exclusive", void 0), c(this, "locales", void 0), c(this, "flags", void 0), c(this, "externalPurchaseUrl", void 0), c(this, "deleted", void 0), c(this, "bundledSkuIds", void 0), this.id = e.id, this.type = e.type, this.applicationId = e.applicationId, this.application = e.application, this.eligiblePaymentGateways = e.eligiblePaymentGateways, this.productLine = e.productLine, this.name = e.name, this.preorderReleaseAt = e.preorderReleaseAt, this.preorderApproximateReleaseDate = e.preorderApproximateReleaseDate, this.releaseDate = e.releaseDate, this.summary = e.summary, this.features = e.features, this.genres = e.genres, this.dependentSkuId = e.dependentSkuId, this.manifests = e.manifests, this.availableRegions = e.availableRegions, this.accessType = e.accessType, this.systemRequirements = e.systemRequirements, this.contentRating = e.contentRating, this.contentRatingAgency = e.contentRatingAgency, this.legalNotice = e.legalNotice, this.price = e.price, this.premium = e.premium, this.showAgeGate = e.showAgeGate, this.restricted = e.restricted, this.slug = e.slug, this.exclusive = e.exclusive, this.locales = e.locales, this.flags = e.flags, this.externalPurchaseUrl = e.externalPurchaseUrl || null, this.deleted = e.deleted, this.bundledSkuIds = e.bundledSkuIds
+    super(), c(this, "id", true), c(this, "type", true), c(this, "applicationId", true), c(this, "application", true), c(this, "eligiblePaymentGateways", true), c(this, "productLine", true), c(this, "name", true), c(this, "releaseDate", true), c(this, "preorderReleaseAt", true), c(this, "preorderApproximateReleaseDate", true), c(this, "summary", true), c(this, "features", true), c(this, "genres", true), c(this, "dependentSkuId", true), c(this, "manifests", true), c(this, "availableRegions", true), c(this, "accessType", true), c(this, "systemRequirements", true), c(this, "contentRating", true), c(this, "contentRatingAgency", true), c(this, "legalNotice", true), c(this, "price", true), c(this, "premium", true), c(this, "showAgeGate", true), c(this, "restricted", true), c(this, "slug", true), c(this, "exclusive", true), c(this, "locales", true), c(this, "flags", true), c(this, "externalPurchaseUrl", true), c(this, "deleted", true), c(this, "bundledSkuIds", true), this.id = e.id, this.type = e.type, this.applicationId = e.applicationId, this.application = e.application, this.eligiblePaymentGateways = e.eligiblePaymentGateways, this.productLine = e.productLine, this.name = e.name, this.preorderReleaseAt = e.preorderReleaseAt, this.preorderApproximateReleaseDate = e.preorderApproximateReleaseDate, this.releaseDate = e.releaseDate, this.summary = e.summary, this.features = e.features, this.genres = e.genres, this.dependentSkuId = e.dependentSkuId, this.manifests = e.manifests, this.availableRegions = e.availableRegions, this.accessType = e.accessType, this.systemRequirements = e.systemRequirements, this.contentRating = e.contentRating, this.contentRatingAgency = e.contentRatingAgency, this.legalNotice = e.legalNotice, this.price = e.price, this.premium = e.premium, this.showAgeGate = e.showAgeGate, this.restricted = e.restricted, this.slug = e.slug, this.exclusive = e.exclusive, this.locales = e.locales, this.flags = e.flags, this.externalPurchaseUrl = e.externalPurchaseUrl || null, this.deleted = e.deleted, this.bundledSkuIds = e.bundledSkuIds
   }
 }

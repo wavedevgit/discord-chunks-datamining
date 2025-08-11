@@ -1,8 +1,9 @@
 /** Chunk was on 67244 **/
-var a = r(553616),
-  n = r(64774),
+/** chunk id: 114170, original params: e,t,r (module,exports,require) **/
+var Chunk553616 = require("./553616.js"),
+  Chunk64774 = require("./64774.js"),
   s = {};
-Object.keys(a).forEach(function(e) {
+Object.keys(Chunk553616).forEach(function(e) {
   s[e] = {}, Object.defineProperty(s[e], "channels", {
     value: a[e].channels
   }), Object.defineProperty(s[e], "labels", {
@@ -22,4 +23,4 @@ Object.keys(a).forEach(function(e) {
       return null == e ? e : (arguments.length > 1 && (e = Array.prototype.slice.call(arguments)), o(e))
     }, "conversion" in o && (n.conversion = o.conversion), n)
   })
-}), e.exports = s
+}), module.exports = s

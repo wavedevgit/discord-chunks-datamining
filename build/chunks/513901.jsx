@@ -1,0 +1,58 @@
+/** Chunk was on 75708 **/
+/** chunk id: 513901, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
+  Z: () => j
+});
+var Chunk255367 = require("./255367.js"),
+  Chunk73800 = require("./73800.js"),
+  Chunk120356 = require("./120356.js"),
+  a = require.n(Chunk120356),
+  Chunk755721 = require("./755721.js"),
+  Chunk481060 = require("./481060.js"),
+  Chunk906732 = require("./906732.js"),
+  Chunk642619 = require("./642619.js"),
+  Chunk626135 = require("./626135.js"),
+  Chunk74538 = require("./74538.js"),
+  Chunk150039 = require("./150039.js"),
+  Chunk993413 = require("./993413.js"),
+  Chunk504983 = require("./504983.jsx"),
+  Chunk981631 = require("./981631.js"),
+  Chunk474936 = require("./474936.js"),
+  Chunk388032 = require("./388032.jsx"),
+  Chunk482470 = require("./482470.js");
+
+function j(e) {
+  let {
+    user: t,
+    guild: n,
+    className: s,
+    sectionTitle: j,
+    forcedDivider: E = false,
+    withTutorial: C = false,
+    showBorder: O = false,
+    isTryItOutFlow: v = false,
+    initialSelectedEffectId: S
+  } = e, T = (0, p.Kg)(t, n), I = m.ZP.canUsePremiumProfileCustomization(t), {
+    analyticsLocations: N
+  } = (0, c.ZP)(), {
+    pendingProfileEffectId: y,
+    errors: A
+  } = (0, p.bd)(n), P = r.useCallback(() => (0, d.H)({
+    analyticsLocations: N,
+    initialSelectedEffectId: S,
+    guild: n
+  }), [N, S, n]);
+  r.useEffect(() => {
+    I && u.default.track(f.rMx.PREMIUM_UPSELL_VIEWED, {
+      type: b.cd.PROFILE_EFFECTS_INLINE_SETTINGS,
+      location_stack: N
+    })
+  }, [I, N]);
+  let R = null != n,
+    D = C ? o.gtL : l.zx;
+  return <g.Z forcedDivider={E} borderType={h.Y.PREMIUM} hasBackground={true} title={j} showBorder={O} errors={A} className={s}><div className={_.buttonsContainer}>{<D size={l.zx.Sizes.SMALL} onClick={P} className={a()({
+          [_.buttonHighlighted]: C
+        })}>{x.intl.string(x.t["/dRfCQ"])}</D>}{(v || true !== y ? null != y : null != T) && <div data-button-hoisted-classname-wrapper={true} className={_.removeButton}><o.zxk variant={"secondary"} size={"sm"} text={R ? x.intl.string(x.t.CHf9iI) : x.intl.string(x.t.uMuafH)} onClick={function() {
+            (0, p.s6)(null, T, null == n ? true : n.id)
+          }} /></div>}</div></g.Z>
+}

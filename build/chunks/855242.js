@@ -1,4 +1,5 @@
 /** Chunk was on web.js **/
+/** chunk id: 855242, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 
 function r(e) {
@@ -7,8 +8,8 @@ function r(e) {
 
 function i(e) {
   var t, n;
-  return !1 !== r(e) && (void 0 === (t = e.constructor) || !1 !== r(n = t.prototype) && !1 !== n.hasOwnProperty("isPrototypeOf"))
+  returnfalse !== r(e) && (true === (t = e.constructor) || false !== r(n = t.prototype) && false !== n.hasOwnProperty("isPrototypeOf"))
 }
-n.d(t, {
+require.d(exports, {
   P: () => i
 })

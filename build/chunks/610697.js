@@ -1,22 +1,23 @@
 /** Chunk was on web.js **/
+/** chunk id: 610697, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => c
-}), n(388685);
-var r = n(73800),
-  i = n(442837),
-  o = n(594174),
-  a = n(823162),
-  s = n(355298);
+}), require("./388685.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk442837 = require("./442837.js"),
+  Chunk594174 = require("./594174.js"),
+  Chunk823162 = require("./823162.js"),
+  Chunk355298 = require("./355298.js");
 let l = new Set(["GB"]);
 
 function c() {
-  let e = (0, i.e7)([s.Z], () => s.Z.getUserCountryCode()),
-    t = !1 === (0, i.e7)([o.default], () => {
+  let e = (0, Chunk442837.e7)([Chunk355298.Z], () => Chunk355298.Z.getUserCountryCode()),
+    t = false === (0, Chunk442837.e7)([Chunk594174.default], () => {
       var e;
-      return null == (e = o.default.getCurrentUser()) ? void 0 : e.nsfwAllowed
+      return null == (e = Chunk594174.default.getCurrentUser()) ? true : module.nsfwAllowed
     });
-  return r.useEffect(() => {
-    null == e && (0, a.hi)()
-  }, [e]), null != e && !!l.has(e.alpha2) && !!t
+  return Chunk73800.useEffect(() => {
+    null == module && (0, Chunk823162.hi)()
+  }, [module]), null != module && !!l.has(module.alpha2) && !!exports
 }

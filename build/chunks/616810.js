@@ -1,26 +1,27 @@
 /** Chunk was on web.js **/
+/** chunk id: 616810, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => s
 });
-var r = n(928801),
-  i = n(549895),
-  o = n(885110);
+var Chunk928801 = require("./928801.js"),
+  Chunk549895 = require("./549895.js"),
+  Chunk885110 = require("./885110.js");
 
 function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
-class s extends r.Z {
+class s extends Chunk928801.Z {
   getInitialState() {
-    return o.Z.getLocalPresence()
+    return Chunk885110.Z.getLocalPresence()
   }
   getNextState() {
-    return o.Z.getLocalPresence()
+    return Chunk885110.Z.getLocalPresence()
   }
   shouldCommit() {
     return this.socket.isSessionEstablished()
@@ -36,12 +37,12 @@ class s extends r.Z {
   }
   handleConnectionOpen() {
     let e = !this.switchingAccounts;
-    this.update({}, e), this.switchingAccounts = !1
+    this.update({}, module), this.switchingAccounts = false
   }
   handleAccountSwitch() {
-    this.switchingAccounts = !0, this.reset(), this.emitPresenceUpdate(this.getState())
+    this.switchingAccounts = true, this.reset(), this.emitPresenceUpdate(this.getState())
   }
   constructor(e) {
-    super(!1), a(this, "socket", void 0), a(this, "switchingAccounts", void 0), a(this, "didCommit", void 0), this.socket = e, this.switchingAccounts = !1, this.didCommit = (0, i.Z)(5, 2e4, this.emitPresenceUpdate.bind(this))
+    super(false), a(this, "socket", true), a(this, "switchingAccounts", true), a(this, "didCommit", true), this.socket = e, this.switchingAccounts = false, this.didCommit = (0, i.Z)(5, 2e4, this.emitPresenceUpdate.bind(this))
   }
 }

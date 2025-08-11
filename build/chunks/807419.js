@@ -1,12 +1,13 @@
 /** Chunk was on web.js **/
-var r = n(657398),
-  i = n(706627),
+/** chunk id: 807419, original params: e,t,n (module,exports,re quire) **/
+var Chunk657398 = require("./657398.js"),
+  Chunk706627 = require("./706627.js"),
   o = "[object AsyncFunction]",
   a = "[object Function]",
   s = "[object GeneratorFunction]",
   l = "[object Proxy]";
-e.exports = function(e) {
-  if (!i(e)) return !1;
+module.exports = function(e) {
+  if (!i(e)) returnfalse;
   var t = r(e);
   return t == a || t == s || t == o || t == l
 }

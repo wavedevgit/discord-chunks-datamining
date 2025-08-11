@@ -1,14 +1,15 @@
 /** Chunk was on 1272 **/
-n.d(t, {
+/** chunk id: 273487, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => l
 });
-var r = n(243814),
-  i = n(706454);
+var Chunk243814 = require("./243814.js"),
+  Chunk706454 = require("./706454.js");
 let l = {
-  [n(981631).Etm.USER_SETTINGS_GET_LOCALE]: {
-    scope: r.x.IDENTIFY,
+  [require("./981631.js").Etm.USER_SETTINGS_GET_LOCALE]: {
+    scope: Chunk243814.x.IDENTIFY,
     handler: () => ({
-      locale: i.default.locale
+      locale: Chunk706454.default.locale
     })
   }
 }

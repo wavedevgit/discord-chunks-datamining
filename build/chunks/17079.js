@@ -1,10 +1,11 @@
 /** Chunk was on web.js **/
+/** chunk id: 17079, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   T: () => o
 });
-var r = n(570140),
-  i = n(155414);
+var Chunk570140 = require("./570140.js"),
+  Chunk155414 = require("./155414.js");
 async function o(e, t) {
   r.Z.dispatch({
     type: "CREATOR_MONETIZATION_PRICE_TIERS_FETCH",

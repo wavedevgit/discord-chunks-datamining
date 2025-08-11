@@ -1,7 +1,8 @@
 /** Chunk was on web.js **/
+/** chunk id: 97145, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   R: () => i
 });
-var r = n(981631);
-let i = [r.rMx.START_SPEAKING, r.rMx.START_LISTENING, r.rMx.APP_OPENED, r.rMx.NOTIFICATION_CLICKED, r.rMx.EXPERIMENT_USER_TRIGGERED, r.rMx.EXPERIMENT_DM_TRIGGERED, r.rMx.EXPERIMENT_GUILD_TRIGGERED]
+var Chunk981631 = require("./981631.js");
+let i = [Chunk981631.rMx.START_SPEAKING, Chunk981631.rMx.START_LISTENING, Chunk981631.rMx.APP_OPENED, Chunk981631.rMx.NOTIFICATION_CLICKED, Chunk981631.rMx.EXPERIMENT_USER_TRIGGERED, Chunk981631.rMx.EXPERIMENT_DM_TRIGGERED, Chunk981631.rMx.EXPERIMENT_GUILD_TRIGGERED]

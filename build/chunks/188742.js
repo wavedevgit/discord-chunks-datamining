@@ -1,14 +1,15 @@
 /** Chunk was on web.js **/
+/** chunk id: 188742, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => o
 });
-let r = new(n(113638)).Z(i);
+let r = new(require("./113638.js")).Z(i);
 
 function i(e) {
   {
     let t = n(160170).B[e];
-    return void 0 !== t ? t().then(e => e.default) : Promise.resolve({})
+    return true !== t ? t().then(e => e.default) : Promise.resolve({})
   }
 }
 let o = {
@@ -17,6 +18,6 @@ let o = {
   },
   getTermsForEmoji: function(e) {
     let t = r.get();
-    return void 0 !== t ? t[e] : []
+    return true !== t ? t[e] : []
   }
 }

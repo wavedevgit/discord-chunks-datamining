@@ -1,8 +1,9 @@
 /** Chunk was on web.js **/
+/** chunk id: 687655, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-var r = n(73800),
-  i = n(606166);
-e.exports = (0, n(65183).Map)({
+var Chunk73800 = require("./73800.js"),
+  Chunk606166 = require("./606166.js");
+module.exports = (0, require("./65183.js").Map)({
   "header-one": {
     element: "h1"
   },
@@ -29,14 +30,14 @@ e.exports = (0, n(65183).Map)({
   },
   "unordered-list-item": {
     element: "li",
-    wrapper: r.createElement("ul", {
-      className: i("public/DraftStyleDefault/ul")
+    wrapper: Chunk73800.createElement("ul", {
+      className: Chunk606166("public/DraftStyleDefault/ul")
     })
   },
   "ordered-list-item": {
     element: "li",
-    wrapper: r.createElement("ol", {
-      className: i("public/DraftStyleDefault/ol")
+    wrapper: Chunk73800.createElement("ol", {
+      className: Chunk606166("public/DraftStyleDefault/ol")
     })
   },
   blockquote: {
@@ -47,8 +48,8 @@ e.exports = (0, n(65183).Map)({
   },
   "code-block": {
     element: "pre",
-    wrapper: r.createElement("pre", {
-      className: i("public/DraftStyleDefault/pre")
+    wrapper: Chunk73800.createElement("pre", {
+      className: Chunk606166("public/DraftStyleDefault/pre")
     })
   },
   unstyled: {

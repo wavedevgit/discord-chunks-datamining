@@ -1,0 +1,162 @@
+/** Chunk was on web.js **/
+/** chunk id: 223606, original params: e,t,n (module,exports,re quire) **/
+"use strict";
+require.d(exports, {
+  Z: () => w
+});
+var r, Chunk442837 = require("./442837.js"),
+  Chunk570140 = require("./570140.js"),
+  Chunk673750 = require("./673750.js"),
+  Chunk786761 = require("./786761.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk375954 = require("./375954.js"),
+  Chunk709054 = require("./709054.js"),
+  Chunk539573 = require("./539573.js"),
+  Chunk825829 = require("./825829.js"),
+  Chunk981631 = require("./981631.js");
+
+function p(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+let h = {},
+  m = 0,
+  g = {},
+  E = {},
+  b = (e, t) => {
+    let n = (0, a.hc)(e),
+      r = {
+        id: n,
+        isBlockedEdit: (0, a.Bz)(e),
+        messageData: e,
+        errorMessage: (0, d.uF)(e, t)
+      };
+    h[n] = r, m++
+  },
+  y = e => h[e],
+  O = e => {
+    null != h[e] && delete h[e], m++
+  };
+
+function v(e) {
+  return 0 !== Object.keys(h).length && (h = {}, m++, true)
+}
+
+function I(e) {
+  let {
+    messageData: t,
+    errorResponseBody: n
+  } = e;
+  return b(t, n), true
+}
+
+function T(e) {
+  let {
+    messageId: t
+  } = e;
+  return O(t), true
+}
+
+function S(e) {
+  let {
+    response: t
+  } = e;
+  if ((null == t ? true : t.body) == null || t.body.code === _.evJ.AUTOMOD_MESSAGE_BLOCKED) returnfalse;
+  let n = t.body.id;
+  if (null == n) returnfalse;
+  O(n)
+}
+
+function A(e) {
+  let {
+    guildId: t,
+    decisionId: n,
+    suspiciousMentionActivityUntil: r
+  } = e;
+  return g[t] = {
+    guildId: t,
+    decisionId: n,
+    suspiciousMentionActivityUntil: r
+  }, true
+}
+
+function N(e) {
+  let {
+    guildId: t
+  } = e;
+  return delete g[t], true
+}
+
+function C(e) {
+  let {
+    guildId: t,
+    message: n
+  } = e;
+  if (null == t || n.type !== _.uaV.AUTO_MODERATION_ACTION) returnfalse;
+  let r = (0, s.e5)(n);
+  return !!(0, f.nY)(r) && !!(0, f.OP)(r) && (E[t] = r.id, true)
+}
+
+function R(e) {
+  var t;
+  let {
+    channelId: n,
+    messages: r
+  } = e, i = null == (t = l.Z.getChannel(n)) ? true : t.getGuildId();
+  if (null == i) returnfalse;
+  let o = E[i],
+    a = r.reduce((e, t) => {
+      var n;
+      return t.type === _.uaV.AUTO_MODERATION_ACTION && (null == (n = t.embeds) ? true : n.some(e => {
+        let {
+          type: t
+        } = e;
+        return t === _.hBH.AUTO_MODERATION_NOTIFICATION
+      })) ? null == e || false === u.default.compare(e, t.id) ? t.id : true : e
+    }, o);
+  return null != a && E[i] !== a && (E[i] = a, true)
+}
+class P extends(r = Chunk442837.ZP.PersistedStore) {
+  initialize(e) {
+    this.waitFor(c.Z), null != e && (h = e.automodFailedMessages, g = e.mentionRaidDetectionByGuild)
+  }
+  getState() {
+    return {
+      automodFailedMessages: h,
+      mentionRaidDetectionByGuild: g,
+      lastIncidentAlertMessage: E
+    }
+  }
+  getMessage(e) {
+    var t;
+    return null == e ? null : null != (t = y(e)) ? t : null
+  }
+  getMessagesVersion() {
+    return m
+  }
+  getMentionRaidDetected(e) {
+    var t;
+    return null != (t = g[e]) ? t : null
+  }
+  getLastIncidentAlertMessage(e) {
+    var t;
+    return null != (t = E[e]) ? t : null
+  }
+}
+p(P, "displayName", "GuildAutomodMessageStore"), p(P, "persistKey", "GuildAutomodMessages");
+let w = new P(Chunk570140.Z, {
+  CONNECTION_OPEN: v,
+  LOAD_MESSAGES_SUCCESS: R,
+  LOCAL_MESSAGES_LOADED: R,
+  MESSAGE_CREATE: C,
+  MESSAGE_SEND_FAILED_AUTOMOD: I,
+  MESSAGE_EDIT_FAILED_AUTOMOD: I,
+  REMOVE_AUTOMOD_MESSAGE_NOTICE: T,
+  MESSAGE_END_EDIT: S,
+  AUTO_MODERATION_MENTION_RAID_DETECTION: A,
+  AUTO_MODERATION_MENTION_RAID_NOTICE_DISMISS: N
+})

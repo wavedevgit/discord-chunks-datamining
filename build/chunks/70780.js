@@ -1,16 +1,17 @@
 /** Chunk was on web.js **/
+/** chunk id: 70780, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   J: () => o,
   o: () => a
 });
-var r = n(544891),
-  i = n(570140);
+var Chunk544891 = require("./544891.js"),
+  Chunk570140 = require("./570140.js");
 
 function o() {
-  return r.tn.get({
+  return Chunk544891.tn.get({
     url: "".concat("https:").concat(window.GLOBAL_ENV.RTC_LATENCY_ENDPOINT),
-    rejectWithError: !1
+    rejectWithError: false
   })
 }
 

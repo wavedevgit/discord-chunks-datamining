@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 602192, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   background: "background__09691",
   hubContainer: "hubContainer__09691 background__09691",
   verified: "verified__09691 background__09691",

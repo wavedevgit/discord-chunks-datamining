@@ -1,4 +1,6 @@
-/** Chunk was on web.js **/ ! function(e, t) {
+/** Chunk was on web.js **/
+/** chunk id: 111396, original params: e,t,n (module,exports,re quire) **/
+! function(e, t) {
   t(n(913527))
 }(0, function(e) {
   return e.defineLocale("id", {
@@ -17,7 +19,7 @@
     },
     meridiemParse: /pagi|siang|sore|malam/,
     meridiemHour: function(e, t) {
-      return (12 === e && (e = 0), "pagi" === t) ? e : "siang" === t ? e >= 11 ? e : e + 12 : "sore" === t || "malam" === t ? e + 12 : void 0
+      return (12 === e && (e = 0), "pagi" === t) ? e : "siang" === t ? e >= 11 ? e : e + 12 : "sore" === t || "malam" === t ? e + 12 : true
     },
     meridiem: function(e, t, n) {
       return e < 11 ? "pagi" : e < 15 ? "siang" : e < 19 ? "sore" : "malam"

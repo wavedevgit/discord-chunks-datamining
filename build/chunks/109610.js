@@ -1,32 +1,33 @@
 /** Chunk was on web.js **/
+/** chunk id: 109610, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => g
-}), n(997841), n(388685);
-var r = n(87051),
-  i = n(147913),
-  o = n(592125),
-  a = n(430824),
-  s = n(9156),
-  l = n(70956),
-  c = n(630388),
-  u = n(621600),
-  d = n(113449),
-  f = n(981631),
-  _ = n(526761);
+}), require("./997841.js"), require("./388685.js");
+var Chunk87051 = require("./87051.js"),
+  Chunk147913 = require("./147913.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk430824 = require("./430824.js"),
+  Chunk9156 = require("./9156.js"),
+  Chunk70956 = require("./70956.js"),
+  Chunk630388 = require("./630388.js"),
+  Chunk621600 = require("./621600.js"),
+  Chunk113449 = require("./113449.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk526761 = require("./526761.js");
 
 function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
-let h = +l.Z.Millis.DAY;
-class m extends i.Z {
+let h = +Chunk70956.Z.Millis.DAY;
+class m extends Chunk147913.Z {
   checkGuilds() {
-    s.ZP.useNewNotifications && a.Z.getGuildsArray().forEach(e => {
+    Chunk9156.ZP.useNewNotifications && Chunk430824.Z.getGuildsArray().forEach(e => {
       if (null == e.joinedAt || Date.now() - e.joinedAt.getTime() > h || s.ZP.getMessageNotifications(e.id) === f.bL.ALL_MESSAGES) return;
       for (let t of Object.values(s.ZP.getChannelOverrides(e.id)))
         if (null != t.message_notifications && t.message_notifications !== f.bL.NULL || null != t.flags && (0, c.EB)(t.flags, _.ic.UNREADS_ALL_MESSAGES | _.ic.UNREADS_ONLY_MENTIONS)) return;

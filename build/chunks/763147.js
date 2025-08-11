@@ -1,4 +1,5 @@
 /** Chunk was on 62635 **/
-e.exports = {
+/** chunk id: 763147, original params: e,t,r (module,exports,require) **/
+module.exports = {
   member: "member__122b7"
 }

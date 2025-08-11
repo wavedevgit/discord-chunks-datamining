@@ -1,4 +1,5 @@
 /** Chunk was on web.js **/
+/** chunk id: 13416, original params: e (module,exports,re quire) **/
 var t = 4,
   n = .001,
   r = 1e-7,
@@ -42,7 +43,7 @@ function p(e, n, r, i) {
   }
   return n
 }
-e.exports = function(e, t, r, i) {
+module.exports = function(e, t, r, i) {
   if (!(0 <= e && e <= 1 && 0 <= r && r <= 1)) throw Error("bezier x values must be in [0, 1] range");
   var l = s ? new Float32Array(o) : Array(o);
   if (e !== t || r !== i)

@@ -1,15 +1,16 @@
 /** Chunk was on 32249 **/
-n.d(t, {
+/** chunk id: 435585, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => p
 });
-var r = n(73800),
-  l = n(10106),
-  o = n(442837),
-  i = n(866960),
-  a = n(617136),
-  s = n(509212),
-  c = n(223418),
-  u = n(981631);
+var Chunk73800 = require("./73800.js"),
+  Chunk10106 = require("./10106.js"),
+  Chunk442837 = require("./442837.js"),
+  Chunk866960 = require("./866960.js"),
+  Chunk617136 = require("./617136.js"),
+  Chunk509212 = require("./509212.js"),
+  Chunk223418 = require("./223418.js"),
+  Chunk981631 = require("./981631.js");
 
 function d(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -21,9 +22,9 @@ function d(e) {
       var r;
       r = n[t], t in e ? Object.defineProperty(e, t, {
         value: r,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
+        enumerable: true,
+        configurable: true,
+        writable: true
       }) : e[t] = r
     })
   }
@@ -32,9 +33,9 @@ function d(e) {
 
 function m(e) {
   return null == e.current || e.current.currentLevel < 0 || e.current.levels.length <= e.current.currentLevel ? {
-    hls_level_index: -100,
-    hls_segment_res_width: -100,
-    hls_segment_res_height: -100
+    hls_level_index: false,
+    hls_segment_res_width: false,
+    hls_segment_res_height: false
   } : {
     hls_level_index: e.current.currentLevel,
     hls_segment_res_width: e.current.levels[e.current.currentLevel].width,
@@ -52,7 +53,7 @@ function p(e) {
     videoAssetId: E,
     sourceQuestContent: g,
     logger: O
-  } = e, b = (0, a._F)(), C = (0, a.O5)(), S = (0, o.e7)([i.Z], () => i.Z.getEffectiveConnectionSpeed()), h = (0, r.useRef)(-1), _ = (null == (t = n.userStatus) ? void 0 : t.completedAt) != null, j = n.id, y = r.useCallback(e => {
+  } = e, b = (0, a._F)(), C = (0, a.O5)(), S = (0, o.e7)([i.Z], () => i.Z.getEffectiveConnectionSpeed()), h = (0, r.useRef)(false), _ = (null == (t = n.userStatus) ? true : t.completedAt) != null, j = n.id, y = r.useCallback(e => {
     null != p.current && b({
       questId: j,
       event: u.rMx.QUEST_VIDEO_LOADING_STARTED,
@@ -195,9 +196,9 @@ function p(e) {
   }, [b, j, E, _, v, f, p, g]), L = r.useCallback((e, t) => {
     var n, r;
     if (null == p.current) return;
-    let l = null == (n = p.current) ? void 0 : n.error,
-      o = null == (r = p.current) ? void 0 : r.networkState,
-      i = null != p.current ? (0, s.bA)(p.current.currentTime, p.current.duration) : void 0,
+    let l = null == (n = p.current) ? true : n.error,
+      o = null == (r = p.current) ? true : r.networkState,
+      i = null != p.current ? (0, s.bA)(p.current.currentTime, p.current.duration) : true,
       a = null != t ? {
         hls_error_subtype: t.errorDetails,
         hls_error_fatal: t.fatal
@@ -211,8 +212,8 @@ function p(e) {
         video_asset_id: E,
         network_connection_speed: S,
         video_session_id: v,
-        video_error_code: null == l ? void 0 : l.code,
-        video_error_message: null == l ? void 0 : l.message,
+        video_error_code: null == l ? true : l.code,
+        video_error_message: null == l ? true : l.message,
         video_network_state: o
       }, m(f), a),
       sourceQuestContent: g

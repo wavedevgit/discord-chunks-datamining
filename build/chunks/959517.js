@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 959517, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   D4: () => u,
   Eo: () => d,
   R4: () => f,
@@ -16,24 +17,24 @@ n.d(t, {
   pq: () => a,
   xi: () => h
 });
-var r = n(261470),
-  i = n(70956);
-n(981631);
+var Chunk261470 = require("./261470.js"),
+  Chunk70956 = require("./70956.js");
+require("./981631.js");
 let o = [0, 4, 8, 16, 24],
   a = 16,
   s = 0,
   l = Object.freeze({
-    referencedAvatarProfile: !1,
-    referencedUsernameProfile: !1,
-    interactionAvatarProfile: !1,
-    interactionUsernameProfile: !1,
-    interactionData: !1,
-    avatarProfile: !1,
-    usernameProfile: !1,
-    emojiPicker: !1,
-    emojiBurstPicker: !1,
-    moreUtilities: !1,
-    contextMenu: !1
+    referencedAvatarProfile: false,
+    referencedUsernameProfile: false,
+    interactionAvatarProfile: false,
+    interactionUsernameProfile: false,
+    interactionData: false,
+    avatarProfile: false,
+    usernameProfile: false,
+    emojiPicker: false,
+    emojiBurstPicker: false,
+    moreUtilities: false,
+    contextMenu: false
   }),
   c = 16,
   u = 16,
@@ -46,9 +47,9 @@ var h = function(e) {
 }({});
 let m = 0xc800000,
   g = {
-    timeout: 60 * i.Z.Millis.SECOND,
+    timeout: 60 * Chunk70956.Z.Millis.SECOND,
     retries: 3,
-    backoff: new r.Z
+    backoff: new Chunk261470.Z
   };
 var E = function(e) {
   return e.PUSH_NOTIFICATION = "push_notification", e.CHAT_INPUT = "chat_input", e.SHARE_MODAL = "share_modal", e

@@ -1,5 +1,6 @@
 /** Chunk was on web.js **/
-e = n.nmd(e),
+/** chunk id: 890308, original params: e,t,n (module,exports,re quire) **/
+e = require.nmd(module),
   function(r) {
     var i = t && !t.nodeType && t,
       o = e && !e.nodeType && e,

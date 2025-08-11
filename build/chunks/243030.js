@@ -1,4 +1,6 @@
-/** Chunk was on web.js **/ ! function(e, t) {
+/** Chunk was on web.js **/
+/** chunk id: 243030, original params: e,t,n (module,exports,re quire) **/
+! function(e, t) {
   t(n(913527))
 }(0, function(e) {
   return e.defineLocale("jv", {
@@ -17,7 +19,7 @@
     },
     meridiemParse: /enjing|siyang|sonten|ndalu/,
     meridiemHour: function(e, t) {
-      return (12 === e && (e = 0), "enjing" === t) ? e : "siyang" === t ? e >= 11 ? e : e + 12 : "sonten" === t || "ndalu" === t ? e + 12 : void 0
+      return (12 === e && (e = 0), "enjing" === t) ? e : "siyang" === t ? e >= 11 ? e : e + 12 : "sonten" === t || "ndalu" === t ? e + 12 : true
     },
     meridiem: function(e, t, n) {
       return e < 11 ? "enjing" : e < 15 ? "siyang" : e < 19 ? "sonten" : "ndalu"

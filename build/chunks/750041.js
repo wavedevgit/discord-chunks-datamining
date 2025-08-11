@@ -1,20 +1,21 @@
 /** Chunk was on web.js **/
+/** chunk id: 750041, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => _
-}), n(539854);
-var r, i = n(512722),
-  o = n.n(i),
-  a = n(442837),
-  s = n(433517),
-  l = n(570140);
+}), require("./539854.js");
+var r, Chunk512722 = require("./512722.js"),
+  o = require.n(Chunk512722),
+  Chunk442837 = require("./442837.js"),
+  Chunk433517 = require("./433517.js"),
+  Chunk570140 = require("./570140.js");
 
 function c(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -47,7 +48,7 @@ function f(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-class _ extends(r = a.ZP.Store) {
+class _ extends(r = Chunk442837.ZP.Store) {
   static clearAll() {
     _.allStores.forEach(e => e.clear())
   }
@@ -55,10 +56,10 @@ class _ extends(r = a.ZP.Store) {
     return "".concat(this.getClass().displayName, "-snapshot")
   }
   clear() {
-    s.K.remove(this.persistKey)
+    Chunk433517.K.remove(this.persistKey)
   }
   save() {
-    s.K.set(this.persistKey, this.takeSnapshot())
+    Chunk433517.K.set(this.persistKey, this.takeSnapshot())
   }
   readSnapshot(e) {
     let t = s.K.get(this.persistKey);
@@ -69,8 +70,8 @@ class _ extends(r = a.ZP.Store) {
   }
   constructor(e, t) {
     super(l.Z, f(u({}, e), {
-      CLEAR_CACHES: () => (this.clear(), !1),
-      WRITE_CACHES: () => (this.save(), !1)
+      CLEAR_CACHES: () => (this.clear(), false),
+      WRITE_CACHES: () => (this.save(), false)
     }), t), o()(null != this.getClass().displayName, "Snapshot stores need a display name"), o()(!("CLEAR_CACHES" in e), "MobileCacheSnapshotStores cannot use the 'CLEAR_CACHES' action"), o()(!("WRITE_CACHES" in e), "MobileCacheSnapshotStores cannot use the 'WRITE_CACHES' action"), _.allStores.push(this)
   }
 }

@@ -1,44 +1,45 @@
 /** Chunk was on web.js **/
+/** chunk id: 948561, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   ZP: () => es,
   b2: () => D
-}), n(388685);
-var r = n(952639),
-  i = n.n(r),
-  o = n(605906),
-  a = n.n(o),
-  s = n(286379),
-  l = n(570140),
-  c = n(147913),
-  u = n(786761),
-  d = n(797614),
-  f = n(869765),
-  _ = n(314897),
-  p = n(433355),
-  h = n(592125),
-  m = n(375954),
-  g = n(944486),
-  E = n(914010),
-  b = n(709054),
-  y = n(93735),
-  O = n(522664),
-  v = n(991621),
-  I = n(247206),
-  T = n(735020),
-  S = n(294509),
-  A = n(629710),
-  N = n(590773),
-  C = n(799525),
-  R = n(981631),
-  P = n(526761);
+}), require("./388685.js");
+var Chunk952639 = require("./952639.js"),
+  i = require.n(Chunk952639),
+  Chunk605906 = require("./605906.js"),
+  a = require.n(Chunk605906),
+  Chunk286379 = require("./286379.js"),
+  Chunk570140 = require("./570140.js"),
+  Chunk147913 = require("./147913.js"),
+  Chunk786761 = require("./786761.js"),
+  Chunk797614 = require("./797614.js"),
+  Chunk869765 = require("./869765.js"),
+  Chunk314897 = require("./314897.js"),
+  Chunk433355 = require("./433355.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk375954 = require("./375954.js"),
+  Chunk944486 = require("./944486.js"),
+  Chunk914010 = require("./914010.js"),
+  Chunk709054 = require("./709054.js"),
+  Chunk93735 = require("./93735.js"),
+  Chunk522664 = require("./522664.js"),
+  Chunk991621 = require("./991621.js"),
+  Chunk247206 = require("./247206.js"),
+  Chunk735020 = require("./735020.js"),
+  Chunk294509 = require("./294509.js"),
+  Chunk629710 = require("./629710.js"),
+  Chunk590773 = require("./590773.js"),
+  Chunk799525 = require("./799525.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk526761 = require("./526761.js");
 
 function w(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 let D = 3e3,
@@ -59,16 +60,16 @@ function k() {
 }
 
 function j(e, t) {
-  if (null == e.id || null == e.channel_id) return !1;
+  if (null == e.id || null == e.channel_id) returnfalse;
   let n = M(e);
   if (null != x[n]) {
     let {
       timeout: r,
       setAt: i
     } = x[n];
-    return U(e, t, i), clearTimeout(r), delete x[n], !0
+    return U(e, t, i), clearTimeout(r), delete x[n], true
   }
-  return !1
+  returnfalse
 }
 
 function U(e, t, n) {
@@ -130,9 +131,9 @@ function Z(e) {
 
 function F(e, t) {
   let {
-    forceBatchScan: n = !1,
-    jitter: r = !1
-  } = null != t ? t : {}, i = (null == t ? void 0 : t.isMessageUpdate) ? e.filter(e => (0, A.MD)(e)).filter(Z) : e.filter(Z);
+    forceBatchScan: n = false,
+    jitter: r = false
+  } = null != t ? t : {}, i = (null == t ? true : t.isMessageUpdate) ? e.filter(e => (0, A.MD)(e)).filter(Z) : e.filter(Z);
   i.forEach(e => {
     let t = M(e);
     null == x[t] && (d.Z.increment({
@@ -169,8 +170,8 @@ function V(e) {
       numOfGoreEmbeds: 0,
       numOfExplicitEmbeds: 0
     });
-    let h = null != (c = null == (r = e.attachments) ? void 0 : r.length) ? c : 0,
-      m = null != (u = null == (i = e.embeds) ? void 0 : i.length) ? u : 0,
+    let h = null != (c = null == (r = e.attachments) ? true : r.length) ? c : 0,
+      m = null != (u = null == (i = e.embeds) ? true : i.length) ? u : 0,
       {
         attachmentIds: g,
         embedIds: E
@@ -178,16 +179,16 @@ function V(e) {
       b = t[e.channel_id];
     b.numOfAttachments += h, b.numOfEmbeds += m, b.numOfAttachmentsPendingScan += g.length, b.numOfEmbedsPendingScan += E.length;
     let y = n[e.id];
-    y.numOfAttachments += h, y.numOfEmbeds += m, y.numOfExplicitAttachments = null != (d = null == (o = e.attachments) ? void 0 : o.filter(e => (0, A.SI)(S._.EXPLICIT, {
+    y.numOfAttachments += h, y.numOfEmbeds += m, y.numOfExplicitAttachments = null != (d = null == (o = e.attachments) ? true : o.filter(e => (0, A.SI)(S._.EXPLICIT, {
       type: v.l.Attachment,
       media: e
-    })).length) ? d : 0, y.numOfExplicitEmbeds = null != (f = null == (a = e.embeds) ? void 0 : a.filter(e => (0, A.SI)(S._.EXPLICIT, {
+    })).length) ? d : 0, y.numOfExplicitEmbeds = null != (f = null == (a = e.embeds) ? true : a.filter(e => (0, A.SI)(S._.EXPLICIT, {
       type: v.l.Embed,
       media: e
-    })).length) ? f : 0, y.numOfGoreAttachments = null != (_ = null == (s = e.attachments) ? void 0 : s.filter(e => (0, A.SI)(S._.GORE, {
+    })).length) ? f : 0, y.numOfGoreAttachments = null != (_ = null == (s = e.attachments) ? true : s.filter(e => (0, A.SI)(S._.GORE, {
       type: v.l.Attachment,
       media: e
-    })).length) ? _ : 0, y.numOfGoreEmbeds = null != (p = null == (l = e.embeds) ? void 0 : l.filter(e => (0, A.SI)(S._.GORE, {
+    })).length) ? _ : 0, y.numOfGoreEmbeds = null != (p = null == (l = e.embeds) ? true : l.filter(e => (0, A.SI)(S._.GORE, {
       type: v.l.Embed,
       media: e
     })).length) ? p : 0
@@ -269,7 +270,7 @@ function W(e, t) {
       numOfGoreEmbeds: n.numOfGoreEmbeds,
       numOfExplicitEmbeds: n.numOfExplicitEmbeds
     })
-  }), n.length > 0 && (F(n, t), !0)
+  }), n.length > 0 && (F(n, t), true)
 }
 
 function K(e) {
@@ -299,7 +300,7 @@ function K(e) {
       numOfGoreEmbeds: n.numOfGoreEmbeds,
       numOfExplicitEmbeds: n.numOfExplicitEmbeds
     })
-  }), t.length > 0 && (F(t), !0)
+  }), t.length > 0 && (F(t), true)
 }
 
 function z(e) {
@@ -307,17 +308,17 @@ function z(e) {
   let {
     message: s
   } = e;
-  if (null == s.channel_id || null == s.id || (null == (t = s.author) ? void 0 : t.id) === _.default.getId() || null == s.embeds && null == s.attachments || (null == (n = s.embeds) ? void 0 : n.length) === 0 && (null == (r = s.attachments) ? void 0 : r.length) === 0) return !1;
+  if (null == s.channel_id || null == s.id || (null == (t = s.author) ? true : t.id) === _.default.getId() || null == s.embeds && null == s.attachments || (null == (n = s.embeds) ? true : n.length) === 0 && (null == (r = s.attachments) ? true : r.length) === 0) returnfalse;
   if (!(0, A.MD)(s)) {
-    let e = null != (a = null != (o = m.Z.getMessage(s.channel_id, s.id)) ? o : T.Z.getMessage(s.id, s.channel_id)) ? a : null == (i = f.Z.getMessage(s.channel_id, s.id)) ? void 0 : i.message;
+    let e = null != (a = null != (o = m.Z.getMessage(s.channel_id, s.id)) ? o : T.Z.getMessage(s.id, s.channel_id)) ? a : null == (i = f.Z.getMessage(s.channel_id, s.id)) ? true : i.message;
     null == e || (0, A.MD)((0, u.wi)(e, s)) || j(e, I.Pq.UPDATE)
   }
   let l = g.Z.getChannelId(),
     c = p.ZP.getCurrentSidebarChannelId(l);
-  if (s.channel_id !== l && s.channel_id !== c) return !1;
+  if (s.channel_id !== l && s.channel_id !== c) returnfalse;
   let d = m.Z.getMessage(s.channel_id, s.id);
   return null != d && W([d], {
-    isMessageUpdate: !0
+    isMessageUpdate: true
   })
 }
 
@@ -329,14 +330,14 @@ function q(e) {
     optimistic: o,
     isPushNotification: a
   } = e;
-  if (o || a || null == r || (null == (t = i.author) ? void 0 : t.id) === _.default.getId()) return !1;
+  if (o || a || null == r || (null == (t = i.author) ? true : t.id) === _.default.getId()) returnfalse;
   let s = g.Z.getChannelId(),
     l = p.ZP.getCurrentSidebarChannelId(s),
     c = r === s || r === l,
     u = h.Z.getChannel(r);
-  if (!c) return !1;
-  let d = null == (n = null == u ? void 0 : u.isPrivate()) || n,
-    f = (null == u ? void 0 : u.memberCount) == null || (null == u ? void 0 : u.memberCount) > 100;
+  if (!c) returnfalse;
+  let d = null == (n = null == u ? true : u.isPrivate()) || n,
+    f = (null == u ? true : u.memberCount) == null || (null == u ? true : u.memberCount) > 100;
   return W([i], {
     jitter: d && f
   })
@@ -347,7 +348,7 @@ function X(e) {
     channelId: t,
     messages: n
   } = e;
-  if (null == t || null == n) return !1;
+  if (null == t || null == n) returnfalse;
   let r = g.Z.getChannelId(),
     i = p.ZP.getCurrentSidebarChannelId(r);
   return (t === r || t === i) && W(n)
@@ -356,7 +357,7 @@ function X(e) {
 function Q(e) {
   let {
     data: t
-  } = e, n = !1;
+  } = e, n = false;
   return t.forEach(e => {
     let {
       messages: t
@@ -391,7 +392,7 @@ function ee(e) {
     firstMessages: n
   } = e;
   return null != n && E.Z.getGuildId() === t && W(n, {
-    forceBatchScan: !0
+    forceBatchScan: true
   })
 }
 
@@ -414,7 +415,7 @@ function er(e) {
     settings: t,
     local: n
   } = e;
-  if (!n || t.type !== P.yP.PRELOADED_USER_SETTINGS) return !1;
+  if (!n || t.type !== P.yP.PRELOADED_USER_SETTINGS) returnfalse;
   let r = g.Z.getChannelId();
   return null != r && eo(r)
 }
@@ -431,7 +432,7 @@ function eo(e) {
   let t = m.Z.getMessages(e);
   return 0 !== t.length && K(t)
 }
-class ea extends c.Z {
+class ea extends Chunk147913.Z {
   constructor(...e) {
     super(...e), w(this, "actions", {
       LOAD_MESSAGES_SUCCESS: X,

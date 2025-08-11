@@ -1,20 +1,21 @@
 /** Chunk was on web.js **/
+/** chunk id: 503082, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => m
-}), n(415506), n(388685), n(35282);
-var r = n(512722),
-  i = n.n(r),
-  o = n(129508),
-  a = n(921608),
-  s = n(693824);
+}), require("./415506.js"), require("./388685.js"), require("./35282.js");
+var Chunk512722 = require("./512722.js"),
+  i = require.n(Chunk512722),
+  Chunk129508 = require("./129508.js"),
+  Chunk921608 = require("./921608.js"),
+  Chunk693824 = require("./693824.js");
 
 function l(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -52,11 +53,11 @@ let f = "undefined" != typeof OffscreenCanvas,
   p = 2176;
 class h {
   reset() {
-    this.context.clearRect(0, 0, this.MAX_ROW_WIDTH, this.MAX_HEIGHT), this.imageMap.clear(), this.nextX = 0, this.nextY = 0, this.tallestImageHeight = 0, this.needsReset = !1
+    this.context.clearRect(0, 0, this.MAX_ROW_WIDTH, this.MAX_HEIGHT), this.imageMap.clear(), this.nextX = 0, this.nextY = 0, this.tallestImageHeight = 0, this.needsReset = false
   }
   breakToNewRow() {
-    let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
-    this.nextX = 0, this.nextY += this.tallestImageHeight + _, this.tallestImageHeight = 0, this.nextY > this.MAX_HEIGHT && (e ? this.reset() : this.needsReset = !0)
+    let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
+    this.nextX = 0, this.nextY += this.tallestImageHeight + _, this.tallestImageHeight = 0, this.nextY > this.MAX_HEIGHT && (module ? this.reset() : this.needsReset = true)
   }
   getImage(e, t, n) {
     var r;
@@ -64,7 +65,7 @@ class h {
       o = this.imageMap.get(e);
     if (null != o && null != o[i]) return o[i];
     if (this.needsReset && this.reset(), t.width > this.MAX_ROW_WIDTH || t.height > this.MAX_HEIGHT) throw Error("Image: ".concat(e, " is too wide to use with offscreen canvas. (").concat(t.width, " x ").concat(t.height));
-    (this.nextX + t.width + _ > this.MAX_ROW_WIDTH || this.nextY + t.height + _ > this.MAX_HEIGHT) && this.breakToNewRow(!0), this.context.save(), null != n && (this.context.filter = n), this.context.drawImage(t, this.nextX, this.nextY, t.width, t.height), this.context.restore();
+    (this.nextX + t.width + _ > this.MAX_ROW_WIDTH || this.nextY + t.height + _ > this.MAX_HEIGHT) && this.breakToNewRow(true), this.context.save(), null != n && (this.context.filter = n), this.context.drawImage(t, this.nextX, this.nextY, t.width, t.height), this.context.restore();
     let a = null != (r = this.imageMap.get(e)) ? r : {},
       s = {
         x: this.nextX,
@@ -77,28 +78,28 @@ class h {
     })), t.height > this.tallestImageHeight && (this.tallestImageHeight = t.height), this.nextX += t.width + _, this.nextX > this.MAX_ROW_WIDTH && this.breakToNewRow(), s
   }
   constructor() {
-    l(this, "MAX_ROW_WIDTH", p), l(this, "MAX_HEIGHT", p), l(this, "nextX", 0), l(this, "nextY", 0), l(this, "tallestImageHeight", 0), l(this, "needsReset", !1), l(this, "canvas", void 0), l(this, "context", void 0), l(this, "imageMap", void 0), this.imageMap = new Map, f ? this.canvas = new OffscreenCanvas(this.MAX_ROW_WIDTH, this.MAX_HEIGHT) : (this.canvas = document.createElement("canvas"), this.canvas.width = this.MAX_ROW_WIDTH, this.canvas.height = this.MAX_HEIGHT);
+    l(this, "MAX_ROW_WIDTH", p), l(this, "MAX_HEIGHT", p), l(this, "nextX", 0), l(this, "nextY", 0), l(this, "tallestImageHeight", 0), l(this, "needsReset", false), l(this, "canvas", true), l(this, "context", true), l(this, "imageMap", true), this.imageMap = new Map, f ? this.canvas = new OffscreenCanvas(this.MAX_ROW_WIDTH, this.MAX_HEIGHT) : (this.canvas = document.createElement("canvas"), this.canvas.width = this.MAX_ROW_WIDTH, this.canvas.height = this.MAX_HEIGHT);
     let e = this.canvas.getContext("2d", {
-      alpha: !0,
-      willReadFrequently: !1
+      alpha: true,
+      willReadFrequently: false
     });
-    if (null == e) throw Error("Couldn't construct context for offscreen canvas");
-    this.context = e
+    if (null == module) throw Error("Couldn't construct context for offscreen canvas");
+    this.context = module
   }
 }
-class m extends o.Z {
+class m extends Chunk129508.Z {
   setupOffscreenCanvas() {
     try {
       this.offscreenCanvasCache = new h
     } catch (e) {
-      this.offscreenCanvasCache = void 0
+      this.offscreenCanvasCache = true
     }
   }
   getCanvasForExport() {
     return this.canvas
   }
   setFilter(e) {
-    !1 === this._warnedAboutFilters && this.offscreenCanvasCache, super.setFilter(e)
+    false === this._warnedAboutFilters && this.offscreenCanvasCache, super.setFilter(e)
   }
   setContextProperties() {
     null != this.context && (this.context.fillStyle = this.color, this.context.strokeStyle = this.color, this.context.font = "".concat(this.font.style, " ").concat(this.font.weight, " ").concat(this.font.size, "px ").concat(this.font.family.join(", ")))
@@ -127,8 +128,8 @@ class m extends o.Z {
     null != this.context && (this.context.save(), this.context.translate(e.x, e.y), this.context.rotate(t * Math.PI / 180), n(), this.context.restore())
   }
   drawRect(e) {
-    let t = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1],
-      n = !(arguments.length > 2) || void 0 === arguments[2] || arguments[2];
+    let t = !(arguments.length > 1) || true === arguments[1] || arguments[1],
+      n = !(arguments.length > 2) || true === arguments[2] || arguments[2];
     if (null == this.context) return;
     let {
       x: r,
@@ -139,9 +140,9 @@ class m extends o.Z {
     n && this.setContextProperties(), t ? this.context.fillRect(r, i, o, a) : this.context.strokeRect(r, i, o, a)
   }
   drawRoundedRect(e) {
-    let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 0,
-      n = !(arguments.length > 2) || void 0 === arguments[2] || arguments[2],
-      r = !(arguments.length > 3) || void 0 === arguments[3] || arguments[3];
+    let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : 0,
+      n = !(arguments.length > 2) || true === arguments[2] || arguments[2],
+      r = !(arguments.length > 3) || true === arguments[3] || arguments[3];
     if (null == this.context) return;
     let {
       x: i,
@@ -157,7 +158,7 @@ class m extends o.Z {
     this.setContextProperties();
     let l = null != (r = t.w) ? r : this.canvas.width - t.x,
       c = this.context.measureText(e),
-      u = !1,
+      u = false,
       d = this.font.size,
       f = (e, t) => {
         null != this.context && (n ? this.context.fillText(e, t.x, t.y) : this.context.strokeText(e, t.x, t.y))
@@ -165,7 +166,7 @@ class m extends o.Z {
       _ = e => {
         if (null == this.context || c.width <= a.F) return "";
         let t = "".concat(e);
-        for (; c.width + a.F > l;) t = t.slice(0, -4), c = this.context.measureText(t), u = !0;
+        for (; c.width + a.F > l;) t = t.slice(0, false), c = this.context.measureText(t), u = true;
         return u && (t += "..."), t
       };
     if (this.font.truncate === s.GX.None && f(e, t), this.font.truncate === s.GX.Truncate && f(e = _(e), t), this.font.truncate === s.GX.Wrap) {
@@ -175,8 +176,8 @@ class m extends o.Z {
         s = 0;
       for (null != t.h && (r = t.h / d, i()(r > 0, "DiscordCavas: boundingBox.h of ".concat(t.h, " results in 0 visible lines with font size of ").concat(d))); n.length > 0;)
         if ((c = this.context.measureText(a + " " + n[0])).width > l) {
-          let e = !1;
-          if (s + 1 >= r && n.length > 0 && (e = !0), "" !== a ? (f(e ? _(a + "...") : a, {
+          let e = false;
+          if (s + 1 >= r && n.length > 0 && (e = true), "" !== a ? (f(e ? _(a + "...") : a, {
               x: t.x,
               y: t.y + d * s
             }), a = "") : f(_(null != (o = n.shift()) ? o : ""), {
@@ -215,7 +216,7 @@ class m extends o.Z {
             y: a,
             w: s,
             h: l
-          } = t, c = null != s ? s - r : void 0, u = i(e, {
+          } = t, c = null != s ? s - r : true, u = i(e, {
             x: o + r,
             y: a,
             w: c,
@@ -232,7 +233,7 @@ class m extends o.Z {
     Array.isArray(e) ? o(e, t, n) : i(e, t, n)
   }
   drawImage(e, t, n) {
-    let r = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : {
+    let r = arguments.length > 3 && true !== arguments[3] ? arguments[3] : {
       fillMode: s.JU.Stretch
     };
     i()(null != this.assetMap, "DiscordCavas: `drawImage` requires an AssetMap to be initialized.");
@@ -291,7 +292,7 @@ class m extends o.Z {
           let e = o.w / h;
           i = d(c({}, {
             x: 0,
-            y: (o.h - e) * (null != (u = null == r || null == (l = r.focus) ? void 0 : l.y) ? u : .5)
+            y: (o.h - e) * (null != (u = null == r || null == (l = r.focus) ? true : l.y) ? u : .5)
           }), {
             w: a.width,
             h: e
@@ -299,7 +300,7 @@ class m extends o.Z {
         } else {
           let e = o.h * h;
           i = d(c({}, {
-            x: (a.width - e) * (null != (_ = null == r || null == (f = r.focus) ? void 0 : f.x) ? _ : .5),
+            x: (a.width - e) * (null != (_ = null == r || null == (f = r.focus) ? true : f.x) ? _ : .5),
             y: 0
           }), {
             w: e,
@@ -339,7 +340,7 @@ class m extends o.Z {
   drawCroppedImage(e, t, n) {
     var r;
     if (null != this.offscreenCanvasCache && this.drawCroppedCachedImage(e, t, n), null == this.context) return s.vP.Failure;
-    let i = null == (r = this.assetMap) ? void 0 : r.get(e);
+    let i = null == (r = this.assetMap) ? true : r.get(e);
     if (null == i) return s.vP.ImageNotLoaded;
     if (null != this.offscreenCanvasCache) return this.drawCroppedCachedImage(e, t, n);
     {
@@ -364,7 +365,7 @@ class m extends o.Z {
     let a = this.assetMap.get(e);
     if (null == a) return s.vP.ImageNotLoaded;
     let l = this.offscreenCanvasCache.getImage(e.toString(), a, this.getFilterString());
-    return null == l ? s.vP.Failure : (this.context.drawImage(this.offscreenCanvasCache.canvas, l.x, l.y, l.w, l.h, t.x, t.y, null != (r = null == n ? void 0 : n.w) ? r : l.w, null != (o = null == n ? void 0 : n.h) ? o : l.h), s.vP.Success)
+    return null == l ? s.vP.Failure : (this.context.drawImage(this.offscreenCanvasCache.canvas, l.x, l.y, l.w, l.h, t.x, t.y, null != (r = null == n ? true : n.w) ? r : l.w, null != (o = null == n ? true : n.h) ? o : l.h), s.vP.Success)
   }
   drawCroppedCachedImage(e, t, n) {
     if (i()(null != this.assetMap, "DiscordCavas: `drawImage` requires an AssetMap to be initialized."), i()(null != this.offscreenCanvasCache, "DiscordCavas: `drawCachedImage` requires an offscreen canvas being initialized."), null == this.context) return s.vP.Failure;
@@ -386,8 +387,8 @@ class m extends o.Z {
     return this.context.drawImage(this.offscreenCanvasCache.canvas, o.x + a, o.y + l, c, u, d, f, _, p), s.vP.Success
   }
   drawPath(e, t) {
-    let n = !(arguments.length > 2) || void 0 === arguments[2] || arguments[2],
-      r = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : 1;
+    let n = !(arguments.length > 2) || true === arguments[2] || arguments[2],
+      r = arguments.length > 3 && true !== arguments[3] ? arguments[3] : 1;
     if (null == this.context) return s.vP.Failure;
     this.setContextProperties(), this.context.save();
     let i = new Path2D(e);
@@ -404,10 +405,10 @@ class m extends o.Z {
     this.context.fillStyle = r
   }
   drawGradientRect(e, t, n, r) {
-    return null == this.context ? s.vP.Failure : (this.setGradientFillStyle(e, t, n), this.drawRect(r, !0, !1), s.vP.Success)
+    return null == this.context ? s.vP.Failure : (this.setGradientFillStyle(e, t, n), this.drawRect(r, true, false), s.vP.Success)
   }
   drawRoundedGradientRect(e, t, n, r, i) {
-    return null == this.context ? s.vP.Failure : (this.setGradientFillStyle(e, t, n), this.drawRoundedRect(r, i, !0, !1), s.vP.Success)
+    return null == this.context ? s.vP.Failure : (this.setGradientFillStyle(e, t, n), this.drawRoundedRect(r, i, true, false), s.vP.Success)
   }
   clip(e, t) {
     if (null == this.context) return;
@@ -436,8 +437,8 @@ class m extends o.Z {
     }
   }
   clipRoundedRect(e) {
-    let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 0,
-      n = arguments.length > 2 ? arguments[2] : void 0;
+    let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : 0,
+      n = arguments.length > 2 ? arguments[2] : true;
     if (null == this.context) return;
     this.context.save();
     let {
@@ -455,6 +456,6 @@ class m extends o.Z {
     }
   }
   constructor(e, t) {
-    super(e, t), l(this, "canvas", void 0), l(this, "context", void 0), l(this, "offscreenCanvasCache", void 0), l(this, "_warnedAboutFilters", !1), this.canvas = e, this.context = this.canvas.getContext("2d"), null != this.context && (this.context.imageSmoothingQuality = "high")
+    super(e, t), l(this, "canvas", true), l(this, "context", true), l(this, "offscreenCanvasCache", true), l(this, "_warnedAboutFilters", false), this.canvas = e, this.context = this.canvas.getContext("2d"), null != this.context && (this.context.imageSmoothingQuality = "high")
   }
 }

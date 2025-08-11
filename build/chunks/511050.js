@@ -1,19 +1,20 @@
 /** Chunk was on 66317 **/
-r.d(t, {
+/** chunk id: 511050, original params: e,t,r (module,exports,require) **/
+require.d(exports, {
   Z: () => O,
   l: () => h
 });
-var n = r(73800),
-  a = r(442837),
-  l = r(710845),
-  i = r(509212),
-  o = r(569984),
-  u = r(751648),
-  c = r(23547),
-  s = r(822857),
-  d = r(981631),
-  b = r(46140);
-let f = new l.Z("VirtualCurrency"),
+var Chunk73800 = require("./73800.js"),
+  Chunk442837 = require("./442837.js"),
+  Chunk710845 = require("./710845.js"),
+  Chunk509212 = require("./509212.js"),
+  Chunk569984 = require("./569984.js"),
+  Chunk751648 = require("./751648.js"),
+  Chunk23547 = require("./23547.jsx"),
+  Chunk822857 = require("./822857.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk46140 = require("./46140.js");
+let f = new Chunk710845.Z("VirtualCurrency"),
   h = e => {
     let {
       location: t
@@ -34,9 +35,9 @@ let f = new l.Z("VirtualCurrency"),
       if (!(0, c.wH)()) {
         let e = () => (0, u.hF)({
           earnedOrbsQuantity: null != l ? l : 200,
-          dedupeKey: t ? void 0 : b.V6
+          dedupeKey: t ? true : b.V6
         });
-        if (void 0 === r || 0 === r) return void e();
+        if (true === r || 0 === r) return void e();
         setTimeout(() => {
           e()
         }, r)
@@ -49,7 +50,7 @@ let f = new l.Z("VirtualCurrency"),
       openIntroToOrbsClaimedCoachmark: h,
       closeIntroToOrbsClaimedCoachmark: O
     } : {
-      rewardOrbQuantity: void 0,
+      rewardOrbQuantity: true,
       openIntroToOrbsClaimedCoachmark: d.dG4,
       closeIntroToOrbsClaimedCoachmark: d.dG4
     }

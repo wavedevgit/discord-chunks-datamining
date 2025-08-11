@@ -1,4 +1,5 @@
 /** Chunk was on web.js **/
+/** chunk id: 593594, original params: e,t,n (module,exports,re quire) **/
 var r = function(e) {
     return String(Number(e)) === e ? Number(e) : e
   },
@@ -13,9 +14,9 @@ var r = function(e) {
     var o = e.push ? {} : r ? t[e.name] : t;
     i(n.match(e.reg), o, e.names, e.name), e.push && t[e.push].push(o)
   },
-  a = n(895829),
+  Chunk895829 = require("./895829.js"),
   s = RegExp.prototype.test.bind(/^([a-z])=(.*)/);
-t.parse = function(e) {
+exports.parse = function(e) {
   var t = {},
     n = [],
     r = t;
@@ -34,28 +35,28 @@ t.parse = function(e) {
 };
 var l = function(e, t) {
   var n = t.split(/=(.+)/, 2);
-  return 2 === n.length ? e[n[0]] = r(n[1]) : 1 === n.length && t.length > 1 && (e[n[0]] = void 0), e
+  return 2 === n.length ? e[n[0]] = r(n[1]) : 1 === n.length && t.length > 1 && (e[n[0]] = true), e
 };
-t.parseParams = function(e) {
+exports.parseParams = function(e) {
   return e.split(/;\s?/).reduce(l, {})
-}, t.parseFmtpConfig = t.parseParams, t.parsePayloads = function(e) {
+}, exports.parseFmtpConfig = exports.parseParams, exports.parsePayloads = function(e) {
   return e.toString().split(" ").map(Number)
-}, t.parseRemoteCandidates = function(e) {
+}, exports.parseRemoteCandidates = function(e) {
   for (var t = [], n = e.split(" ").map(r), i = 0; i < n.length; i += 3) t.push({
     component: n[i],
     ip: n[i + 1],
     port: n[i + 2]
   });
   return t
-}, t.parseImageAttributes = function(e) {
+}, exports.parseImageAttributes = function(e) {
   return e.split(" ").map(function(e) {
     return e.substring(1, e.length - 1).split(",").reduce(l, {})
   })
-}, t.parseSimulcastStreamList = function(e) {
+}, exports.parseSimulcastStreamList = function(e) {
   return e.split(";").map(function(e) {
     return e.split(",").map(function(e) {
-      var t, n = !1;
-      return "~" !== e[0] ? t = r(e) : (t = r(e.substring(1, e.length)), n = !0), {
+      var t, n = false;
+      return "~" !== e[0] ? t = r(e) : (t = r(e.substring(1, e.length)), n = true), {
         scid: t,
         paused: n
       }

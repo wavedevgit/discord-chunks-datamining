@@ -1,16 +1,17 @@
 /** Chunk was on 522 **/
-r.d(t, {
+/** chunk id: 259408, original params: e,t,r (module,exports,require) **/
+require.d(exports, {
   Z: () => f
 });
-var n = r(544891),
-  s = r(933557),
-  i = r(430824),
-  a = r(131951),
-  c = r(699516),
-  o = r(594174),
-  l = r(927923),
-  d = r(981631),
-  u = r(388032);
+var Chunk544891 = require("./544891.js"),
+  Chunk933557 = require("./933557.js"),
+  Chunk430824 = require("./430824.js"),
+  Chunk131951 = require("./131951.js"),
+  Chunk699516 = require("./699516.js"),
+  Chunk594174 = require("./594174.js"),
+  Chunk927923 = require("./927923.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk388032 = require("./388032.js");
 
 function f(e, t) {
   var r;
@@ -21,7 +22,7 @@ function f(e, t) {
     guildId: null != p ? p : d.aIL,
     channelId: e.id,
     channelName: (0, s.F6)(e, o.default, c.Z),
-    guildName: null != (r = null == x ? void 0 : x.name) ? r : u.intl.string(u.t.LJpTRE),
+    guildName: null != (r = null == x ? true : x.name) ? r : u.intl.string(u.t.LJpTRE),
     muted: a.Z.isSelfMute(),
     deafened: a.Z.isSelfDeaf(),
     nonce: f

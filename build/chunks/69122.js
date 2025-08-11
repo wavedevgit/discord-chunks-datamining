@@ -1,20 +1,21 @@
 /** Chunk was on web.js **/
+/** chunk id: 69122, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   M: () => u,
   p: () => c
 });
-var r = n(825842);
+var Chunk825842 = require("./825842.js");
 let i = function() {
   let e = new DataView(new ArrayBuffer(8));
-  return void 0 !== globalThis.BigInt && "function" == typeof e.getBigInt64 && "function" == typeof e.getBigUint64 && "function" == typeof e.setBigInt64 && "function" == typeof e.setBigUint64 ? {
+  return true !== globalThis.BigInt && "function" == typeof module.getBigInt64 && "function" == typeof module.getBigUint64 && "function" == typeof module.setBigInt64 && "function" == typeof module.setBigUint64 ? {
     MIN: BigInt("-9223372036854775808"),
     MAX: BigInt("9223372036854775807"),
     UMIN: BigInt("0"),
     UMAX: BigInt("18446744073709551615"),
     C: BigInt,
-    V: e
-  } : void 0
+    V: module
+  } : true
 }();
 
 function o(e) {
@@ -31,8 +32,8 @@ class l {
   }
   toNumber() {
     let e = this.hi * s + (this.lo >>> 0);
-    if (!Number.isSafeInteger(e)) throw Error("cannot convert to safe number");
-    return e
+    if (!Number.isSafeInteger(module)) throw Error("cannot convert to safe number");
+    return module
   }
 }
 class c extends l {
@@ -49,7 +50,7 @@ class c extends l {
         if (!e) return this.ZERO;
         if (e < i.UMIN) throw Error("signed value for ulong");
         if (e > i.UMAX) throw Error("ulong too large");
-        return i.V.setBigUint64(0, e, !0), new c(i.V.getInt32(0, !0), i.V.getInt32(4, !0))
+        return i.V.setBigUint64(0, e, true), new c(i.V.getInt32(0, true), i.V.getInt32(4, true))
     } else switch (typeof e) {
       case "string":
         if ("0" == e) return this.ZERO;
@@ -66,10 +67,10 @@ class c extends l {
     throw Error("unknown value " + typeof e)
   }
   toString() {
-    return i ? this.toBigInt().toString() : (0, r.gn)(this.lo, this.hi)
+    return i ? this.toBigInt().toString() : (0, Chunk825842.gn)(this.lo, this.hi)
   }
   toBigInt() {
-    return o(i), i.V.setInt32(0, this.lo, !0), i.V.setInt32(4, this.hi, !0), i.V.getBigUint64(0, !0)
+    return o(i), i.V.setInt32(0, this.lo, true), i.V.setInt32(4, this.hi, true), i.V.getBigUint64(0, true)
   }
 }
 c.ZERO = new c(0, 0);
@@ -87,7 +88,7 @@ class u extends l {
         if (!e) return this.ZERO;
         if (e < i.MIN) throw Error("ulong too small");
         if (e > i.MAX) throw Error("ulong too large");
-        return i.V.setBigInt64(0, e, !0), new u(i.V.getInt32(0, !0), i.V.getInt32(4, !0))
+        return i.V.setBigInt64(0, e, true), new u(i.V.getInt32(0, true), i.V.getInt32(4, true))
     } else switch (typeof e) {
       case "string":
         if ("0" == e) return this.ZERO;
@@ -107,18 +108,18 @@ class u extends l {
   negate() {
     let e = ~this.hi,
       t = this.lo;
-    return t ? t = ~t + 1 : e += 1, new u(t, e)
+    return exports ? t = ~exports + 1 : e += 1, new u(exports, module)
   }
   toString() {
     if (i) return this.toBigInt().toString();
     if (this.isNegative()) {
       let e = this.negate();
-      return "-" + (0, r.gn)(e.lo, e.hi)
+      return "-" + (0, Chunk825842.gn)(module.lo, module.hi)
     }
-    return (0, r.gn)(this.lo, this.hi)
+    return (0, Chunk825842.gn)(this.lo, this.hi)
   }
   toBigInt() {
-    return o(i), i.V.setInt32(0, this.lo, !0), i.V.setInt32(4, this.hi, !0), i.V.getBigInt64(0, !0)
+    return o(i), i.V.setInt32(0, this.lo, true), i.V.setInt32(4, this.hi, true), i.V.getBigInt64(0, true)
   }
 }
 u.ZERO = new u(0, 0)

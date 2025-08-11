@@ -1,5 +1,6 @@
 /** Chunk was on 47620 **/
-s.r(e.exports = {
+/** chunk id: 764406, original params: e,r,s (module,exports,require) **/
+require.r(module.exports = {
   unsupportedBrowser: "unsupportedBrowser__9ec6a",
   wrap: "wrap__9ec6a",
   title: "title__9ec6a",

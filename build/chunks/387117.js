@@ -1,8 +1,9 @@
 /** Chunk was on web.js **/
+/** chunk id: 387117, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   V: () => r
-}), n(388685);
+}), require("./388685.js");
 let r = {
   Modules: {
     channels: {

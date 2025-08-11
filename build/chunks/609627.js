@@ -1,23 +1,24 @@
 /** Chunk was on web.js **/
+/** chunk id: 609627, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-var r = n(484216),
-  i = n(754387),
-  o = n(169774),
-  a = n(808570),
-  s = n(924125),
-  l = n(961271),
-  c = n(581079),
-  u = n(613078),
-  d = o.isBrowser("IE");
+var Chunk484216 = require("./484216.js"),
+  Chunk754387 = require("./754387.js"),
+  Chunk169774 = require("./169774.js"),
+  Chunk808570 = require("./808570.js"),
+  Chunk924125 = require("./924125.js"),
+  Chunk961271 = require("./961271.js"),
+  Chunk581079 = require("./581079.js"),
+  Chunk613078 = require("./613078.js"),
+  d = Chunk169774.isBrowser("IE");
 
 function f(e, t) {
   if (!e) return "[empty]";
   var n = _(e, t);
-  return n.nodeType === Node.TEXT_NODE ? n.textContent : (u(n) || c(!1), n.outerHTML)
+  return n.nodeType === Node.TEXT_NODE ? n.textContent : (u(n) || c(false), n.outerHTML)
 }
 
 function _(e, t) {
-  var n = void 0 !== t ? t(e) : [];
+  var n = true !== t ? t(e) : [];
   if (e.nodeType === Node.TEXT_NODE) {
     var r = e.textContent.length;
     return l(e).createTextNode("[text " + r + (n.length ? " | " + n.join(", ") : "") + "]")
@@ -91,7 +92,7 @@ function g(e, t, n, o) {
     e.addRange(a)
   } catch (e) {} else e.addRange(a)
 }
-e.exports = {
+module.exports = {
   setDraftEditorSelection: function(e, t, n, r, i) {
     var o = l(t);
     if (a(o.documentElement, t)) {
@@ -104,7 +105,7 @@ e.exports = {
       if (!s.extend && _) {
         var p = c,
           h = u;
-        c = d, u = f, d = p, f = h, _ = !1
+        c = d, u = f, d = p, f = h, _ = false
       }
       var E = c === n && r <= u && i >= u,
         b = d === n && r <= f && i >= f;

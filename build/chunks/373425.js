@@ -1,11 +1,12 @@
 /** Chunk was on web.js **/
+/** chunk id: 373425, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Y: () => u
 });
-var r = n(521548),
-  i = n(793981),
-  o = n(413815);
+var Chunk521548 = require("./521548.js"),
+  Chunk793981 = require("./793981.js"),
+  Chunk413815 = require("./413815.js");
 
 function a(e, t) {
   if (!(e instanceof t)) throw TypeError("Cannot call a class as a function")
@@ -14,7 +15,7 @@ function a(e, t) {
 function s(e, t) {
   for (var n = 0; n < t.length; n++) {
     var r = t[n];
-    r.enumerable = r.enumerable || !1, r.configurable = !0, "value" in r && (r.writable = !0), Object.defineProperty(e, r.key, r)
+    r.enumerable = r.enumerable || false, r.configurable = true, "value" in r && (r.writable = true), Object.defineProperty(e, r.key, r)
   }
 }
 
@@ -25,9 +26,9 @@ function l(e, t, n) {
 function c(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 var u = function() {
@@ -37,9 +38,9 @@ var u = function() {
       dropTarget: function(e, t) {
         n.clearDropTarget(), n.dropTargetOptions = t, (0, o.d)(e) ? n.dropTargetRef = e : n.dropTargetNode = e, n.reconnect()
       }
-    })), c(this, "handlerId", null), c(this, "dropTargetRef", null), c(this, "dropTargetNode", void 0), c(this, "dropTargetOptionsInternal", null), c(this, "unsubscribeDropTarget", void 0), c(this, "lastConnectedHandlerId", null), c(this, "lastConnectedDropTarget", null), c(this, "lastConnectedDropTargetOptions", null), c(this, "backend", void 0), this.backend = t
+    })), c(this, "handlerId", null), c(this, "dropTargetRef", null), c(this, "dropTargetNode", true), c(this, "dropTargetOptionsInternal", null), c(this, "unsubscribeDropTarget", true), c(this, "lastConnectedHandlerId", null), c(this, "lastConnectedDropTarget", null), c(this, "lastConnectedDropTargetOptions", null), c(this, "backend", true), this.backend = t
   }
-  return l(e, [{
+  return l(module, [{
     key: "connectTarget",
     get: function() {
       return this.dropTarget
@@ -48,14 +49,14 @@ var u = function() {
     key: "reconnect",
     value: function() {
       var e = this.didHandlerIdChange() || this.didDropTargetChange() || this.didOptionsChange();
-      e && this.disconnectDropTarget();
+      module && this.disconnectDropTarget();
       var t = this.dropTarget;
       if (this.handlerId) {
-        if (!t) {
-          this.lastConnectedDropTarget = t;
+        if (!exports) {
+          this.lastConnectedDropTarget = exports;
           return
         }
-        e && (this.lastConnectedHandlerId = this.handlerId, this.lastConnectedDropTarget = t, this.lastConnectedDropTargetOptions = this.dropTargetOptions, this.unsubscribeDropTarget = this.backend.connectDropTarget(this.handlerId, t, this.dropTargetOptions))
+        module && (this.lastConnectedHandlerId = this.handlerId, this.lastConnectedDropTarget = exports, this.lastConnectedDropTargetOptions = this.dropTargetOptions, this.unsubscribeDropTarget = this.backend.connectDropTarget(this.handlerId, exports, this.dropTargetOptions))
       }
     }
   }, {
@@ -84,12 +85,12 @@ var u = function() {
   }, {
     key: "didOptionsChange",
     value: function() {
-      return !(0, r.w)(this.lastConnectedDropTargetOptions, this.dropTargetOptions)
+      return !(0, Chunk521548.w)(this.lastConnectedDropTargetOptions, this.dropTargetOptions)
     }
   }, {
     key: "disconnectDropTarget",
     value: function() {
-      this.unsubscribeDropTarget && (this.unsubscribeDropTarget(), this.unsubscribeDropTarget = void 0)
+      this.unsubscribeDropTarget && (this.unsubscribeDropTarget(), this.unsubscribeDropTarget = true)
     }
   }, {
     key: "dropTarget",
@@ -101,5 +102,5 @@ var u = function() {
     value: function() {
       this.dropTargetRef = null, this.dropTargetNode = null
     }
-  }]), e
+  }]), module
 }()

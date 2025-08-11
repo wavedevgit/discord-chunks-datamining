@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 982168, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Gi: () => y,
   P0: () => E,
   UD: () => h,
@@ -9,26 +10,26 @@ n.d(t, {
   iZ: () => m,
   iq: () => O,
   sP: () => _
-}), n(642613), n(149765);
-var r = n(294509),
-  i = n(629710),
-  o = n(860164),
-  a = n(660189);
-n(241559);
-var s = n(182274),
-  l = n(592125),
-  c = n(430824);
-n(594174), n(700785);
-var u = n(970257),
-  d = n(893908),
-  f = n(953252);
+}), require("./642613.js"), require("./149765.js");
+var Chunk294509 = require("./294509.js"),
+  Chunk629710 = require("./629710.js"),
+  Chunk860164 = require("./860164.js"),
+  Chunk660189 = require("./660189.js");
+require("./241559.js");
+var Chunk182274 = require("./182274.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk430824 = require("./430824.js");
+require("./594174.js"), require("./700785.js");
+var Chunk970257 = require("./970257.js"),
+  Chunk893908 = require("./893908.js"),
+  Chunk953252 = require("./953252.js");
 
 function _(e) {
-  if (!(0, u.Fi)(e.author)) return !1;
+  if (!(0, u.Fi)(e.author)) returnfalse;
   let t = l.Z.getChannel(e.channel_id);
-  if (null == t) return !1;
+  if (null == t) returnfalse;
   let n = c.Z.getGuild(t.guild_id);
-  if (null == n) return !1;
+  if (null == n) returnfalse;
   let r = (0, f.Z)(n),
     i = (0, d.Z)(n);
   return r && null != i
@@ -55,7 +56,7 @@ function E(e) {
 }
 
 function b(e) {
-  if (null == e || !(0, s.U)() || !p(e)) return !0;
+  if (null == e || !(0, s.U)() || !p(e)) returntrue;
   let {
     loaded: t,
     firstMessage: n
@@ -68,6 +69,6 @@ function y(e, t) {
 }
 
 function O(e) {
-  return e.sort((e, t) => e.id == o.a.MULTIPLE_REPORTS ? -1 : +(t.id == o.a.MULTIPLE_REPORTS))
+  return e.sort((e, t) => e.id == o.a.MULTIPLE_REPORTS ? false : +(t.id == o.a.MULTIPLE_REPORTS))
 }
-n(806246)
+require("./806246.js")

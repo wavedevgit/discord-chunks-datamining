@@ -1,18 +1,19 @@
 /** Chunk was on 18417 **/
-n.d(e, {
+/** chunk id: 458044, original params: t,e,n (module,exports,require) **/
+require.d(exports, {
   Z: () => p
 });
-var a = n(388032),
-  r = n(918298),
-  i = n(301745),
-  s = n(588415),
-  o = n(162822),
-  l = n(937855),
-  c = n(5396),
-  g = n(729250),
-  d = n(420241),
-  m = n(140574),
-  u = n(765434);
+var Chunk388032 = require("./388032.jsx"),
+  Chunk918298 = require("./918298.js"),
+  Chunk301745 = require("./301745.js"),
+  Chunk588415 = require("./588415.js"),
+  Chunk162822 = require("./162822.js"),
+  Chunk937855 = require("./937855.js"),
+  Chunk5396 = require("./5396.js"),
+  Chunk729250 = require("./729250.js"),
+  Chunk420241 = require("./420241.js"),
+  Chunk140574 = require("./140574.js"),
+  Chunk765434 = require("./765434.js");
 
 function p(t) {
   return [{
@@ -74,21 +75,21 @@ function p(t) {
         author: {
           name: "skaterdood12",
           avatarSrc: g,
-          isOP: !0
+          isOP: true
         },
         content: a.intl.string(a.t.zEDYfn)
       }, {
         author: {
           name: "pocketman",
           avatarSrc: d,
-          isOP: !1
+          isOP: false
         },
         content: a.intl.string(a.t["+XGMDg"])
       }, {
         author: {
           name: "ladydaisy",
           avatarSrc: m,
-          isOP: !1
+          isOP: false
         },
         content: a.intl.string(a.t.z0qmHB)
       }]
@@ -153,21 +154,21 @@ function p(t) {
         author: {
           name: "skaterdood12",
           avatarSrc: g,
-          isOP: !0
+          isOP: true
         },
         content: a.intl.string(a.t.VeQaUl)
       }, {
         author: {
           name: "pocketman",
           avatarSrc: d,
-          isOP: !1
+          isOP: false
         },
         content: a.intl.string(a.t.lwjElJ)
       }, {
         author: {
           name: "ladydaisy",
           avatarSrc: m,
-          isOP: !1
+          isOP: false
         },
         content: a.intl.string(a.t.RNqQmJ)
       }]
@@ -232,21 +233,21 @@ function p(t) {
         author: {
           name: "skaterdood12",
           avatarSrc: g,
-          isOP: !0
+          isOP: true
         },
         content: a.intl.string(a.t["6DyhGh"])
       }, {
         author: {
           name: "pocketman",
           avatarSrc: d,
-          isOP: !1
+          isOP: false
         },
         content: a.intl.string(a.t.BLiuYG)
       }, {
         author: {
           name: "ladydaisy",
           avatarSrc: m,
-          isOP: !1
+          isOP: false
         },
         content: a.intl.string(a.t.PYLKhI)
       }]

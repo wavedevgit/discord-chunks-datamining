@@ -1,8 +1,9 @@
 /** Chunk was on web.js **/
-e.exports = function(e) {
+/** chunk id: 46157, original params: e (module,exports,re quire) **/
+module.exports = function(e) {
   return {
     name: "HAML",
-    case_insensitive: !0,
+    case_insensitive: true,
     contains: [{
       className: "meta",
       begin: "^!!!( (5|1\\.1|Strict|Frameset|Basic|Mobile|RDFa|XML\\b.*))?$",
@@ -13,8 +14,8 @@ e.exports = function(e) {
       begin: "^\\s*(-|=|!=)(?!#)",
       end: /$/,
       subLanguage: "ruby",
-      excludeBegin: !0,
-      excludeEnd: !0
+      excludeBegin: true,
+      excludeEnd: true
     }, {
       className: "tag",
       begin: "^\\s*%",
@@ -33,8 +34,8 @@ e.exports = function(e) {
         contains: [{
           begin: ":\\w+\\s*=>",
           end: ",\\s+",
-          returnBegin: !0,
-          endsWithParent: !0,
+          returnBegin: true,
+          endsWithParent: true,
           contains: [{
             className: "attr",
             begin: ":\\w+"
@@ -46,12 +47,12 @@ e.exports = function(e) {
       }, {
         begin: "\\(\\s*",
         end: "\\s*\\)",
-        excludeEnd: !0,
+        excludeEnd: true,
         contains: [{
           begin: "\\w+\\s*=",
           end: "\\s+",
-          returnBegin: !0,
-          endsWithParent: !0,
+          returnBegin: true,
+          endsWithParent: true,
           contains: [{
             className: "attr",
             begin: "\\w+",
@@ -68,8 +69,8 @@ e.exports = function(e) {
       begin: /#\{/,
       end: /\}/,
       subLanguage: "ruby",
-      excludeBegin: !0,
-      excludeEnd: !0
+      excludeBegin: true,
+      excludeEnd: true
     }]
   }
 }

@@ -1,12 +1,13 @@
 /** Chunk was on 96075 **/
-s.d(n, {
+/** chunk id: 338690, original params: t,n,s (module,exports,require) **/
+require.d(exports, {
   Z: () => i
 });
-var e = s(287734),
-  r = s(592125),
-  a = s(894257);
+var Chunk287734 = require("./287734.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk894257 = require("./894257.js");
 
 function i() {
-  let t = r.Z.getDMFromUserId(a.I);
-  null != t && e.default.selectPrivateChannel(t)
+  let t = Chunk592125.Z.getDMFromUserId(Chunk894257.I);
+  null != module && Chunk287734.default.selectPrivateChannel(module)
 }

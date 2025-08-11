@@ -1,11 +1,12 @@
 /** Chunk was on web.js **/
+/** chunk id: 452634, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => a
 });
-var r = n(131704),
-  i = n(592125),
-  o = n(979651);
+var Chunk131704 = require("./131704.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk979651 = require("./979651.js");
 
 function a(e) {
   var t;
@@ -13,6 +14,6 @@ function a(e) {
     channelId: n,
     userId: a,
     activity: s
-  } = e, l = i.Z.getChannel(n), c = (null == s ? void 0 : s.session_id) == null || null != l && (0, r.Qm)(l.type) ? n : null == (t = o.Z.getVoiceStateForSession(a, null == s ? void 0 : s.session_id)) ? void 0 : t.channelId;
-  return null != c ? c : void 0
+  } = e, l = i.Z.getChannel(n), c = (null == s ? true : s.session_id) == null || null != l && (0, r.Qm)(l.type) ? n : null == (t = o.Z.getVoiceStateForSession(a, null == s ? true : s.session_id)) ? true : t.channelId;
+  return null != c ? c : true
 }

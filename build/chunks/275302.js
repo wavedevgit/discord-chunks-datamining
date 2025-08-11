@@ -1,5 +1,6 @@
 /** Chunk was on 22988 **/
-e.exports = {
+/** chunk id: 275302, original params: e,t,n (module,exports,require) **/
+module.exports = {
   scroller: "scroller__981c8",
   colorPicker: "colorPicker__981c8",
   colorDescription: "colorDescription__981c8",

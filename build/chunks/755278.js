@@ -1,31 +1,32 @@
 /** Chunk was on web.js **/
+/** chunk id: 755278, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => g
-}), n(997841);
-var r = n(928801),
-  i = n(924557),
-  o = n(435064),
-  a = n(779618),
-  s = n(594190),
-  l = n(441167),
-  c = n(695346),
-  u = n(199902),
-  d = n(592125),
-  f = n(131951),
-  _ = n(936349),
-  p = n(630388),
-  h = n(981631);
+}), require("./997841.js");
+var Chunk928801 = require("./928801.js"),
+  Chunk924557 = require("./924557.js"),
+  Chunk435064 = require("./435064.js"),
+  Chunk779618 = require("./779618.js"),
+  Chunk594190 = require("./594190.js"),
+  Chunk441167 = require("./441167.js"),
+  Chunk695346 = require("./695346.js"),
+  Chunk199902 = require("./199902.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk131951 = require("./131951.js"),
+  Chunk936349 = require("./936349.js"),
+  Chunk630388 = require("./630388.js"),
+  Chunk981631 = require("./981631.js");
 
 function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
-class g extends r.Z {
+class g extends Chunk928801.Z {
   get guildId() {
     return this.getState().guildId
   }
@@ -35,29 +36,29 @@ class g extends r.Z {
   computeVoiceFlags() {
     var e, t, n;
     let r = 0,
-      d = c.tU.getSetting();
-    r = (0, p.mB)(r, h.BVn.ALLOW_VOICE_RECORDING, d);
-    let _ = (0, a.Z)(f.Z),
-      m = (0, i.ln)() && o.Z.getSettings().clipsEnabled && ((null == (e = u.Z.getCurrentUserActiveStream()) ? void 0 : e.state) === h.jm8.ACTIVE || (null == (t = u.Z.getCurrentUserActiveStream()) ? void 0 : t.state) === h.jm8.PAUSED),
-      g = o.Z.isDecoupledGameClippingEnabled(),
-      E = _ && o.Z.getSettings().decoupledClipsEnabled && (null == (n = s.ZP.getVisibleGame()) ? void 0 : n.windowHandle) != null && g;
-    r = (0, p.mB)(r, h.BVn.CLIPS_ENABLED, m || E);
+      d = Chunk695346.tU.getSetting();
+    r = (0, Chunk630388.mB)(Chunk928801, Chunk981631.BVn.ALLOW_VOICE_RECORDING, Chunk592125);
+    let _ = (0, Chunk779618.Z)(Chunk131951.Z),
+      m = (0, Chunk924557.ln)() && Chunk435064.Z.getSettings().clipsEnabled && ((null == (e = Chunk199902.Z.getCurrentUserActiveStream()) ? true : module.state) === Chunk981631.jm8.ACTIVE || (null == (t = Chunk199902.Z.getCurrentUserActiveStream()) ? true : exports.state) === Chunk981631.jm8.PAUSED),
+      g = Chunk435064.Z.isDecoupledGameClippingEnabled(),
+      E = Chunk936349 && Chunk435064.Z.getSettings().decoupledClipsEnabled && (null == (n = Chunk594190.ZP.getVisibleGame()) ? true : require.windowHandle) != null && g;
+    r = (0, Chunk630388.mB)(Chunk928801, Chunk981631.BVn.CLIPS_ENABLED, m || E);
     let {
       enableViewerClipping: b
-    } = l.Z.getCurrentConfig({
+    } = Chunk441167.Z.getCurrentConfig({
       location: "computeVoiceFlags"
     }, {
-      autoTrackExposure: !1
-    }), y = b && _ && o.Z.getSettings().viewerClipsEnabled;
-    return (0, p.mB)(r, h.BVn.ALLOW_ANY_VIEWER_CLIPS, y)
+      autoTrackExposure: false
+    }), y = b && Chunk936349 && Chunk435064.Z.getSettings().viewerClipsEnabled;
+    return (0, Chunk630388.mB)(Chunk928801, Chunk981631.BVn.ALLOW_ANY_VIEWER_CLIPS, y)
   }
   getInitialState() {
     return {
       guildId: null,
       channelId: null,
-      selfMute: f.Z.isSelfMute(),
-      selfDeaf: f.Z.isSelfDeaf(),
-      selfVideo: f.Z.isVideoEnabled(),
+      selfMute: Chunk131951.Z.isSelfMute(),
+      selfDeaf: Chunk131951.Z.isSelfDeaf(),
+      selfVideo: Chunk131951.Z.isVideoEnabled(),
       preferredRegion: null,
       preferredRegions: null,
       videoStreamParameters: null,
@@ -97,7 +98,7 @@ class g extends r.Z {
       videoStreamParameters: c,
       flags: u = 0
     } = e;
-    a && (null == (t = d.Z.getChannel(r)) ? void 0 : t.type) === h.d4z.GUILD_STAGE_VOICE ? this.socket.voiceStateUpdate({
+    a && (null == (t = d.Z.getChannel(r)) ? true : t.type) === h.d4z.GUILD_STAGE_VOICE ? this.socket.voiceStateUpdate({
       guildId: n,
       channelId: r,
       selfMute: i,
@@ -119,6 +120,6 @@ class g extends r.Z {
     })
   }
   constructor(e) {
-    super(), m(this, "socket", void 0), this.socket = e
+    super(), m(this, "socket", true), this.socket = e
   }
 }

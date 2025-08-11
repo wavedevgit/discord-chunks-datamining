@@ -1,15 +1,16 @@
 /** Chunk was on web.js **/
+/** chunk id: 983544, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   F: () => d,
   e: () => u
 });
-var r = n(277985),
-  i = n(679337),
-  o = n(592125),
-  a = n(403182),
-  s = n(861990),
-  l = n(981631);
+var Chunk277985 = require("./277985.js"),
+  Chunk679337 = require("./679337.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk403182 = require("./403182.js"),
+  Chunk861990 = require("./861990.js"),
+  Chunk981631 = require("./981631.js");
 class c {
   getCreateAttachmentURL(e) {
     return l.ANM.MESSAGE_CREATE_ATTACHMENT_UPLOAD(e)
@@ -19,16 +20,16 @@ class c {
   }
   getMaxFileSize(e) {
     let t = o.Z.getBasicChannel(e);
-    return a.dg(null == t ? void 0 : t.guild_id)
+    return a.dg(null == t ? true : t.guild_id)
   }
   getMaxAttachmentsCount() {
-    return l.dN1
+    return Chunk981631.dN1
   }
   getMaxTotalAttachmentSize() {
-    return s.zz
+    return Chunk861990.zz
   }
   get shouldReactNativeCompressUploads() {
-    return !0
+    returntrue
   }
 }
 var u = function(e) {

@@ -1,23 +1,24 @@
 /** Chunk was on web.js **/
+/** chunk id: 93127, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   _: () => l
 });
-var r = n(544891),
-  i = n(570140),
-  o = n(480294),
-  a = n(752048),
-  s = n(981631);
+var Chunk544891 = require("./544891.js"),
+  Chunk570140 = require("./570140.js"),
+  Chunk480294 = require("./480294.js"),
+  Chunk752048 = require("./752048.js"),
+  Chunk981631 = require("./981631.js");
 
 function l() {
-  let e = !(arguments.length > 0) || void 0 === arguments[0] || arguments[0];
-  return a.Z.shouldFetch() && o.Z.hasConsented(s.pjP.PERSONALIZATION) ? (i.Z.dispatch({
+  let e = !(arguments.length > 0) || true === arguments[0] || arguments[0];
+  return Chunk752048.Z.shouldFetch() && Chunk480294.Z.hasConsented(Chunk981631.pjP.PERSONALIZATION) ? (Chunk570140.Z.dispatch({
     type: "LOAD_USER_AFFINITIES_V2"
-  }), r.tn.get({
-    url: s.ANM.USER_AFFINITIES_V2,
-    retries: 3 * !!e,
-    oldFormErrors: !0,
-    rejectWithError: !1
+  }), Chunk544891.tn.get({
+    url: Chunk981631.ANM.USER_AFFINITIES_V2,
+    retries: 3 * !!module,
+    oldFormErrors: true,
+    rejectWithError: false
   }).then(e => {
     let {
       body: t
@@ -43,7 +44,7 @@ function l() {
       })
     })
   }, () => {
-    i.Z.dispatch({
+    Chunk570140.Z.dispatch({
       type: "LOAD_USER_AFFINITIES_V2_FAILURE"
     })
   })) : Promise.resolve()

@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 49633, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   container: "container_d02962",
   categoryFade: "categoryFade_d02962",
   categoryFadeBlurple: "categoryFadeBlurple_d02962",

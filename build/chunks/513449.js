@@ -1,20 +1,21 @@
 /** Chunk was on web.js **/
+/** chunk id: 513449, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Ku: () => _,
   MV: () => p,
   ZP: () => f
 });
-var r = n(73800),
-  i = n(97519),
-  o = n(731965),
-  a = n(442837),
-  s = n(496675),
-  l = n(944486),
-  c = n(146085),
-  u = n(643632);
-let d = (0, i.U)(e => ({
-    isOnStartStageScreen: !0
+var Chunk73800 = require("./73800.js"),
+  Chunk97519 = require("./97519.js"),
+  Chunk731965 = require("./731965.js"),
+  Chunk442837 = require("./442837.js"),
+  Chunk496675 = require("./496675.js"),
+  Chunk944486 = require("./944486.js"),
+  Chunk146085 = require("./146085.js"),
+  Chunk643632 = require("./643632.js");
+let d = (0, Chunk97519.U)(e => ({
+    isOnStartStageScreen: true
   })),
   f = d;
 
@@ -30,6 +31,6 @@ function p(e) {
     i = (0, u.Z)(e.id),
     o = n && !i;
   r.useEffect(() => {
-    t ? o || _(!1) : _(o)
+    t ? o || _(false) : _(o)
   }, [t, o])
 }

@@ -1,18 +1,19 @@
 /** Chunk was on web.js **/
+/** chunk id: 179631, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.r(t), n.d(t, {
+require.r(exports), require.d(exports, {
   getDeviceState: () => a,
   logger: () => o
 });
-var r = n(710845),
-  i = n(342825);
-let o = new r.Z("native/DeviceState.tsx");
+var Chunk710845 = require("./710845.js"),
+  Chunk342825 = require("./342825.js");
+let o = new Chunk710845.Z("native/DeviceState.tsx");
 
 function a() {
   let {
     fallback: e
-  } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {
-    fallback: !0
+  } = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {
+    fallback: true
   };
-  return e ? Promise.resolve(i.f) : Promise.reject("Cannot get device state on web")
+  return module ? Promise.resolve(Chunk342825.f) : Promise.reject("Cannot get device state on web")
 }

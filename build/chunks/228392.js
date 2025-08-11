@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 228392, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   B: () => D,
   B5: () => R,
   Do: () => w,
@@ -26,25 +27,25 @@ n.d(t, {
   ws: () => x,
   xI: () => M,
   zI: () => y
-}), n(781311);
-var r = n(367907),
-  i = n(731429),
-  o = n(188471),
-  a = n(592125),
-  s = n(703558),
-  l = n(626135),
-  c = n(358085),
-  u = n(660189),
-  d = n(208970),
-  f = n(6496),
-  _ = n(981631);
+}), require("./781311.js");
+var Chunk367907 = require("./367907.js"),
+  Chunk731429 = require("./731429.js"),
+  Chunk188471 = require("./188471.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk703558 = require("./703558.js"),
+  Chunk626135 = require("./626135.js"),
+  Chunk358085 = require("./358085.js"),
+  Chunk660189 = require("./660189.js"),
+  Chunk208970 = require("./208970.js"),
+  Chunk6496 = require("./6496.js"),
+  Chunk981631 = require("./981631.js");
 
 function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -180,11 +181,11 @@ function T(e) {
   } = e, u = a.Z.getChannel(c);
   if (null == u) return;
   let d = s.Z.getThreadSettings(c),
-    p = null == (t = u.template) ? void 0 : t.trim(),
+    p = null == (t = u.template) ? true : t.trim(),
     m = s.Z.getDraft(c, s.d.FirstThreadMessage),
-    E = null == m || 0 === m.length || (null == m ? void 0 : m.trim()) === p,
-    b = (null == d ? void 0 : d.appliedTags) == null || (null == d || null == (n = d.appliedTags) ? void 0 : n.size) === 0,
-    y = (null == d ? void 0 : d.name) == null || (null == d || null == (o = d.name) || null == (i = o.trim()) ? void 0 : i.length) === 0;
+    E = null == m || 0 === m.length || (null == m ? true : m.trim()) === p,
+    b = (null == d ? true : d.appliedTags) == null || (null == d || null == (n = d.appliedTags) ? true : n.size) === 0,
+    y = (null == d ? true : d.name) == null || (null == d || null == (o = d.name) || null == (i = o.trim()) ? true : i.length) === 0;
   E && b && y || r.ZP.trackWithMetadata(_.rMx.FORUM_CHANNEL_NEW_POST_DRAFT_CREATED, g(h({}, (0, f.xl)({
     channelId: c
   })), {
@@ -223,7 +224,7 @@ function A(e) {
       channel_id: n
     }))
   }
-  u.Z.isLoading(i) ? u.Z.addConditionalChangeListener(() => !!u.Z.isLoading(i) || (o(), !1)) : o()
+  u.Z.isLoading(i) ? u.Z.addConditionalChangeListener(() => !!u.Z.isLoading(i) || (o(), false)) : o()
 }
 
 function N(e) {
@@ -367,15 +368,15 @@ function j(e) {
 }
 
 function U() {
-  r.ZP.trackWithMetadata(_.rMx.FORUM_CHANNEL_ENABLE_AUTOMOD_CLICKED)
+  Chunk367907.ZP.trackWithMetadata(Chunk981631.rMx.FORUM_CHANNEL_ENABLE_AUTOMOD_CLICKED)
 }
 
 function G() {
-  r.ZP.trackWithMetadata(_.rMx.FORUM_CHANNEL_ENABLE_PREVIEW_CLICKED)
+  Chunk367907.ZP.trackWithMetadata(Chunk981631.rMx.FORUM_CHANNEL_ENABLE_PREVIEW_CLICKED)
 }
 
 function B(e) {
-  r.ZP.trackWithMetadata(_.rMx.CHANNEL_OPENED, g(h({}, (0, r.hH)(e.guild_id), (0, r.v_)(e), (0, i.K)(e, !0), (0, r.$H)(e.id)), {
+  r.ZP.trackWithMetadata(_.rMx.CHANNEL_OPENED, g(h({}, (0, r.hH)(e.guild_id), (0, r.v_)(e), (0, i.K)(e, true), (0, r.$H)(e.id)), {
     channel_view: "Split View",
     platform: (0, c.getPlatform)()
   })), (0, o.a)(_.rMx.CHANNEL_OPENED_CLICKSTREAM, {
@@ -384,10 +385,10 @@ function B(e) {
 }
 
 function Z() {
-  r.ZP.trackWithMetadata(_.rMx.OPEN_MODAL, {
+  Chunk367907.ZP.trackWithMetadata(Chunk981631.rMx.OPEN_MODAL, {
     type: "Forum Channel Upsell Modal",
     location: {
-      section: _.jXE.CHANNEL_WELCOME_CTA
+      section: Chunk981631.jXE.CHANNEL_WELCOME_CTA
     }
   })
 }

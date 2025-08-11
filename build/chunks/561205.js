@@ -1,11 +1,12 @@
 /** Chunk was on 1272 **/
-n.d(t, {
+/** chunk id: 561205, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => l
 });
-var r = n(317381),
-  i = n(592125);
+var Chunk317381 = require("./317381.js"),
+  Chunk592125 = require("./592125.js");
 
 function l() {
-  let e = r.ZP.getConnectedActivityChannelId();
-  return i.Z.getChannel(e)
+  let e = Chunk317381.ZP.getConnectedActivityChannelId();
+  return Chunk592125.Z.getChannel(module)
 }

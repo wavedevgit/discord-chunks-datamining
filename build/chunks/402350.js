@@ -1,4 +1,5 @@
 /** Chunk was on web.js **/
+/** chunk id: 402350, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 
 function r(e) {
@@ -17,23 +18,23 @@ function r(e) {
 function i(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
-var o = n(551558),
-  a = n(581079),
+var Chunk551558 = require("./551558.js"),
+  Chunk581079 = require("./581079.js"),
   s = function(e, t) {
     for (var n = [].concat(e).reverse(); n.length;) {
       var r = n.pop();
       t(r);
       var i = r.children;
-      Array.isArray(i) || a(!1), n = n.concat([].concat(i.reverse()))
+      Array.isArray(i) || a(false), n = n.concat([].concat(i.reverse()))
     }
   },
   l = function(e) {
-    if (!(e && e.type)) return !1;
+    if (!(e && e.type)) returnfalse;
     var t = e.type;
     return "unordered-list-item" === t || "ordered-list-item" === t
   },
@@ -44,11 +45,11 @@ var o = n(551558),
       }) : t
     }))
   };
-e.exports = {
+module.exports = {
   fromRawTreeStateToRawState: function(e) {
     var t = e.blocks,
       n = [];
-    return (Array.isArray(t) || a(!1), Array.isArray(t) && t.length) ? (s(t, function(e) {
+    return (Array.isArray(t) || a(false), Array.isArray(t) && t.length) ? (s(t, function(e) {
       var t = r({}, e);
       l(e) && (t.depth = t.depth || 0, c(e), null != e.children && e.children.length > 0) || (delete t.children, n.push(t))
     }), e.blocks = n, r({}, e, {

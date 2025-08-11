@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 735167, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   divider: "divider__908e2",
   isUnread: "isUnread__908e2",
   hasContent: "hasContent__908e2",

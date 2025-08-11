@@ -1,5 +1,6 @@
 /** Chunk was on 22988 **/
-e.exports = {
+/** chunk id: 212787, original params: e,t,n (module,exports,require) **/
+module.exports = {
   editCard: "editCard_a25a68",
   toggled: "toggled_a25a68",
   noBackground: "noBackground_a25a68",

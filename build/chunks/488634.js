@@ -1,17 +1,18 @@
 /** Chunk was on web.js **/
+/** chunk id: 488634, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   _: () => a
 });
-var r = n(442837),
-  i = n(897473),
-  o = n(433355);
+var Chunk442837 = require("./442837.js"),
+  Chunk897473 = require("./897473.js"),
+  Chunk433355 = require("./433355.js");
 
 function a() {
-  let e = (0, r.e7)([o.ZP], () => o.ZP.getSidebarState(o.uZ)),
-    t = (null == e ? void 0 : e.type) === i.tI.VIEW_MESSAGE_REQUEST ? e : null;
+  let e = (0, Chunk442837.e7)([Chunk433355.ZP], () => Chunk433355.ZP.getSidebarState(Chunk433355.uZ)),
+    t = (null == module ? true : module.type) === Chunk897473.tI.VIEW_MESSAGE_REQUEST ? module : null;
   return {
-    channelId: null == t ? void 0 : t.channelId,
-    hasSingleMessageRequest: (null == t ? void 0 : t.details) != null && t.details.type === i.Ff.MESSAGE_REQUEST && t.details.hasSingleMessageRequest
+    channelId: null == exports ? true : exports.channelId,
+    hasSingleMessageRequest: (null == exports ? true : exports.details) != null && exports.details.type === Chunk897473.Ff.MESSAGE_REQUEST && exports.details.hasSingleMessageRequest
   }
 }

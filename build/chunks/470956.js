@@ -1,24 +1,25 @@
 /** Chunk was on web.js **/
+/** chunk id: 470956, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Es: () => E,
   Eu: () => v,
   bt: () => O
-}), n(388685), n(539854);
-var r = n(73800),
-  i = n(392711),
-  o = n(442837),
-  a = n(413523),
-  s = n(358221),
-  l = n(189786),
-  c = n(314897),
-  u = n(592125),
-  d = n(271383),
-  f = n(878884),
-  _ = n(19780),
-  p = n(594174),
-  h = n(979651),
-  m = n(823379);
+}), require("./388685.js"), require("./539854.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk392711 = require("./392711.js"),
+  Chunk442837 = require("./442837.js"),
+  Chunk413523 = require("./413523.js"),
+  Chunk358221 = require("./358221.js"),
+  Chunk189786 = require("./189786.js"),
+  Chunk314897 = require("./314897.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk271383 = require("./271383.js"),
+  Chunk878884 = require("./878884.js"),
+  Chunk19780 = require("./19780.js"),
+  Chunk594174 = require("./594174.js"),
+  Chunk979651 = require("./979651.js"),
+  Chunk823379 = require("./823379.js");
 
 function g(e, t, n) {
   if ((null == e || 0 === e.length) && 0 === n.length) return t;
@@ -50,11 +51,11 @@ function E(e, t) {
     h = r.useMemo(() => a.map(e => ({
       voiceState: new l.Z(e.id),
       user: e,
-      member: (null == c ? void 0 : c.guild_id) != null ? d.ZP.getMember(null == c ? void 0 : c.guild_id, e.id) : null,
+      member: (null == c ? true : c.guild_id) != null ? d.ZP.getMember(null == c ? true : c.guild_id, e.id) : null,
       nick: e.globalName,
       comparator: e.globalName,
-      _isPlaceholder: !1
-    })), [a, null == c ? void 0 : c.guild_id]);
+      _isPlaceholder: false
+    })), [a, null == c ? true : c.guild_id]);
   return r.useMemo(() => g(n, t, h), [n, t, h])
 }
 
@@ -79,17 +80,17 @@ function v(e, t) {
   let n = (0, o.e7)([c.default], () => c.default.getId() === t),
     i = (0, o.e7)([_.Z], () => _.Z.getChannelId()),
     a = r.useRef(null),
-    [s, l] = r.useState(!1),
-    [u, d] = r.useState(!1),
+    [s, l] = r.useState(false),
+    [u, d] = r.useState(false),
     f = (0, o.e7)([_.Z, h.Z], () => null != t && null != e && _.Z.getChannelId() === e && null != h.Z.isInChannel(e, t) && _.Z.isUserConnected(t)),
     p = (0, o.e7)([_.Z, h.Z], () => null != t && null != e && _.Z.getChannelId() === e && null != h.Z.isInChannel(e, t) && !_.Z.isUserConnected(t));
   return r.useEffect(() => {
-    f && d(!0)
+    f && d(true)
   }, [f]), r.useEffect(() => {
-    i !== e && d(!1)
+    i !== e && d(false)
   }, [e, i]), r.useEffect(() => (p && null == a.current ? a.current = setTimeout(() => {
-    a.current = null, l(!0)
-  }, 250) : (clearTimeout(a.current), a.current = null, l(!1)), () => {
+    a.current = null, l(true)
+  }, 250) : (clearTimeout(a.current), a.current = null, l(false)), () => {
     clearTimeout(a.current), a.current = null
   }), [p]), !n && u && s
 }

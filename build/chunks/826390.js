@@ -1,4 +1,5 @@
 /** Chunk was on 41984 **/
-t.exports = {
+/** chunk id: 826390, original params: t,e,n (module,exports,require) **/
+module.exports = {
   flagIcon: "flagIcon_c98db5"
 }

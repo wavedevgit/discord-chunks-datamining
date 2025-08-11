@@ -1,0 +1,40 @@
+/** Chunk was on web.js **/
+/** chunk id: 571474, original params: e,t,n (module,exports,re quire) **/
+"use strict";
+require.d(exports, {
+  Z: () => m
+});
+var r, Chunk442837 = require("./442837.js"),
+  Chunk570140 = require("./570140.js"),
+  Chunk70956 = require("./70956.js"),
+  Chunk709054 = require("./709054.js"),
+  Chunk314897 = require("./314897.js"),
+  Chunk699516 = require("./699516.js");
+
+function u(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+let d = 10,
+  f = 180 * Chunk70956.Z.Millis.DAY,
+  _ = false;
+
+function p() {
+  return _ !== (_ = Chunk699516.Z.getFriendIDs().length >= d && Chunk709054.default.extractTimestamp(Chunk314897.default.getId()) < Date.now() - f)
+}
+class h extends(r = Chunk442837.ZP.Store) {
+  initialize() {
+    this.waitFor(Chunk699516.Z, Chunk314897.default)
+  }
+  isEligible() {
+    return _
+  }
+}
+u(h, "displayName", "PremiumPromoStore");
+let m = new h(Chunk570140.Z, {
+  CONNECTION_OPEN: p
+})

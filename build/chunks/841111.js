@@ -1,5 +1,6 @@
 /** Chunk was on 75708 **/
-e.exports = {
+/** chunk id: 841111, original params: e,t,n (module,exports,require) **/
+module.exports = {
   feature: "feature__4626b",
   featureBorder: "featureBorder__4626b",
   title: "title__4626b",

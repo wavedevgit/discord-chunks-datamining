@@ -1,15 +1,16 @@
 /** Chunk was on 75708 **/
-n.d(t, {
+/** chunk id: 401190, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => o
 });
-var i = n(544891),
-  r = n(570140),
-  s = n(881052),
-  a = n(981631);
+var Chunk544891 = require("./544891.js"),
+  Chunk570140 = require("./570140.js"),
+  Chunk881052 = require("./881052.js"),
+  Chunk981631 = require("./981631.js");
 let l = {
-    [a.gkr.HOUSE_1]: 1,
-    [a.gkr.HOUSE_2]: 2,
-    [a.gkr.HOUSE_3]: 3
+    [Chunk981631.gkr.HOUSE_1]: 1,
+    [Chunk981631.gkr.HOUSE_2]: 2,
+    [Chunk981631.gkr.HOUSE_3]: 3
   },
   o = {
     joinHypeSquadOnline: e => i.tn.post({
@@ -17,19 +18,19 @@ let l = {
       body: {
         house_id: l[e.houseID]
       },
-      oldFormErrors: !0,
-      rejectWithError: !1
+      oldFormErrors: true,
+      rejectWithError: false
     }).then(() => r.Z.dispatch({
       type: "HYPESQUAD_ONLINE_MEMBERSHIP_JOIN_SUCCESS",
       houseID: e.houseID
     })).catch(e => {
       throw new s.yZ(e)
     }),
-    leaveHypeSquadOnline: () => i.tn.del({
-      url: a.ANM.HYPESQUAD_ONLINE,
-      oldFormErrors: !0,
-      rejectWithError: !1
-    }).then(() => r.Z.dispatch({
+    leaveHypeSquadOnline: () => Chunk544891.tn.del({
+      url: Chunk981631.ANM.HYPESQUAD_ONLINE,
+      oldFormErrors: true,
+      rejectWithError: false
+    }).then(() => Chunk570140.Z.dispatch({
       type: "HYPESQUAD_ONLINE_MEMBERSHIP_LEAVE_SUCCESS"
     })).catch(e => {
       throw new s.yZ(e)

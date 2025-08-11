@@ -1,16 +1,17 @@
 /** Chunk was on web.js **/
+/** chunk id: 702225, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => s
 });
-var r = n(772848);
+var Chunk772848 = require("./772848.js");
 
 function i(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -25,7 +26,7 @@ class a {
     return null == this.session && (this.session = o(e)), this.session.channelId !== e && (this.session = o(e)), this.session.sessionId
   }
   constructor() {
-    i(this, "session", void 0)
+    i(this, "session", true)
   }
 }
 let s = new a

@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 535396, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   A3: () => N,
   Cp: () => m,
   Du: () => C,
@@ -21,13 +22,13 @@ n.d(t, {
   d5: () => T,
   os: () => P,
   uc: () => I
-}), n(388685);
-var r = n(494497),
-  i = n(704215),
-  o = n(267642),
-  a = n(474936),
-  s = n(981631),
-  l = n(388032),
+}), require("./388685.js");
+var Chunk494497 = require("./494497.js"),
+  Chunk704215 = require("./704215.js"),
+  Chunk267642 = require("./267642.js"),
+  Chunk474936 = require("./474936.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk388032 = require("./388032.jsx"),
   c = function(e) {
     return e.PERK = "perk", e.LEVEL = "level", e
   }({});
@@ -38,21 +39,21 @@ let u = "1340102344645283891",
   p = new Set([d, f, _]),
   h = "525479941211684874",
   m = {
-    [s.Eu4.TIER_1]: d,
-    [s.Eu4.TIER_2]: f,
-    [s.Eu4.TIER_3]: _,
-    [s.Eu4.NONE]: void 0
+    [Chunk981631.Eu4.TIER_1]: d,
+    [Chunk981631.Eu4.TIER_2]: f,
+    [Chunk981631.Eu4.TIER_3]: _,
+    [Chunk981631.Eu4.NONE]: true
   },
   g = {
-    [d]: s.Eu4.TIER_1,
-    [f]: s.Eu4.TIER_2,
-    [_]: s.Eu4.TIER_3
+    [d]: Chunk981631.Eu4.TIER_1,
+    [f]: Chunk981631.Eu4.TIER_2,
+    [_]: Chunk981631.Eu4.TIER_3
   },
   E = {
-    [s.Eu4.TIER_1]: i.C.GUILD_POWERUP_LEVEL_1_COACHMARK,
-    [s.Eu4.TIER_2]: i.C.GUILD_POWERUP_LEVEL_2_COACHMARK,
-    [s.Eu4.TIER_3]: i.C.GUILD_POWERUP_LEVEL_3_COACHMARK,
-    [s.Eu4.NONE]: void 0
+    [Chunk981631.Eu4.TIER_1]: Chunk704215.C.GUILD_POWERUP_LEVEL_1_COACHMARK,
+    [Chunk981631.Eu4.TIER_2]: Chunk704215.C.GUILD_POWERUP_LEVEL_2_COACHMARK,
+    [Chunk981631.Eu4.TIER_3]: Chunk704215.C.GUILD_POWERUP_LEVEL_3_COACHMARK,
+    [Chunk981631.Eu4.NONE]: true
   },
   b = "1351706802684952639",
   y = "1354906318279807056",
@@ -60,94 +61,94 @@ let u = "1340102344645283891",
   v = [
     [b],
     [y],
-    [r.A$],
-    [r.MB, r.Vk]
+    [Chunk494497.A$],
+    [Chunk494497.MB, Chunk494497.Vk]
   ],
-  I = new Set([b, y, r.A$]),
+  I = new Set([b, y, Chunk494497.A$]),
   T = () => ({
-    [s.oNc.VIDEO_BITRATE_ENHANCED]: {
-      perkIcon: o.Ro.STREAM,
-      description: l.intl.string(l.t.y4ft4O)
+    [Chunk981631.oNc.VIDEO_BITRATE_ENHANCED]: {
+      perkIcon: Chunk267642.Ro.STREAM,
+      description: Chunk388032.intl.string(Chunk388032.t.y4ft4O)
     },
-    [s.oNc.AUDIO_BITRATE_128_KBPS]: {
-      perkIcon: o.Ro.AUDIO,
-      description: l.intl.formatToPlainString(l.t.zoT1ZG, {
-        bitrate: a.HO[s.Eu4.TIER_1].limits.bitrate / 1e3
+    [Chunk981631.oNc.AUDIO_BITRATE_128_KBPS]: {
+      perkIcon: Chunk267642.Ro.AUDIO,
+      description: Chunk388032.intl.formatToPlainString(Chunk388032.t.zoT1ZG, {
+        bitrate: Chunk474936.HO[Chunk981631.Eu4.TIER_1].limits.bitrate / 1e3
       })
     },
-    [s.oNc.INVITE_SPLASH]: {
-      perkIcon: o.Ro.CUSTOMIZATION,
-      description: l.intl.string(l.t.Qwlpoq)
+    [Chunk981631.oNc.INVITE_SPLASH]: {
+      perkIcon: Chunk267642.Ro.CUSTOMIZATION,
+      description: Chunk388032.intl.string(Chunk388032.t.Qwlpoq)
     },
-    [s.oNc.ANIMATED_ICON]: {
-      perkIcon: o.Ro.ANIMATED,
-      description: l.intl.string(l.t.PbAyub)
+    [Chunk981631.oNc.ANIMATED_ICON]: {
+      perkIcon: Chunk267642.Ro.ANIMATED,
+      description: Chunk388032.intl.string(Chunk388032.t.PbAyub)
     },
-    [s.oNc.AUDIO_BITRATE_256_KBPS]: {
-      perkIcon: o.Ro.AUDIO,
-      description: l.intl.formatToPlainString(l.t.zoT1ZG, {
-        bitrate: a.HO[s.Eu4.TIER_2].limits.bitrate / 1e3
+    [Chunk981631.oNc.AUDIO_BITRATE_256_KBPS]: {
+      perkIcon: Chunk267642.Ro.AUDIO,
+      description: Chunk388032.intl.formatToPlainString(Chunk388032.t.zoT1ZG, {
+        bitrate: Chunk474936.HO[Chunk981631.Eu4.TIER_2].limits.bitrate / 1e3
       })
     },
-    [s.oNc.ROLE_ICONS]: {
-      perkIcon: o.Ro.CUSTOM_ROLE_ICON,
-      description: l.intl.string(l.t["6PV6QU"])
+    [Chunk981631.oNc.ROLE_ICONS]: {
+      perkIcon: Chunk267642.Ro.CUSTOM_ROLE_ICON,
+      description: Chunk388032.intl.string(Chunk388032.t["6PV6QU"])
     },
-    [s.oNc.MAX_FILE_SIZE_50_MB]: {
-      perkIcon: o.Ro.UPLOAD,
-      description: l.intl.formatToPlainString(l.t["aFRl5+"], {
-        uploadSizeLimit: l.intl.string(l.t.M6qV8v)
+    [Chunk981631.oNc.MAX_FILE_SIZE_50_MB]: {
+      perkIcon: Chunk267642.Ro.UPLOAD,
+      description: Chunk388032.intl.formatToPlainString(Chunk388032.t["aFRl5+"], {
+        uploadSizeLimit: Chunk388032.intl.string(Chunk388032.t.M6qV8v)
       })
     },
-    [s.oNc.BANNER]: {
-      perkIcon: o.Ro.CUSTOMIZATION,
-      description: l.intl.string(l.t["1a5rjo"])
+    [Chunk981631.oNc.BANNER]: {
+      perkIcon: Chunk267642.Ro.CUSTOMIZATION,
+      description: Chunk388032.intl.string(Chunk388032.t["1a5rjo"])
     },
-    [s.oNc.ANIMATED_BANNER]: {
-      perkIcon: o.Ro.ANIMATED,
-      description: l.intl.string(l.t["1+Vmh4"])
+    [Chunk981631.oNc.ANIMATED_BANNER]: {
+      perkIcon: Chunk267642.Ro.ANIMATED,
+      description: Chunk388032.intl.string(Chunk388032.t["1+Vmh4"])
     },
-    [s.oNc.AUDIO_BITRATE_384_KBPS]: {
-      perkIcon: o.Ro.AUDIO,
-      description: l.intl.formatToPlainString(l.t.zoT1ZG, {
-        bitrate: a.HO[s.Eu4.TIER_3].limits.bitrate / 1e3
+    [Chunk981631.oNc.AUDIO_BITRATE_384_KBPS]: {
+      perkIcon: Chunk267642.Ro.AUDIO,
+      description: Chunk388032.intl.formatToPlainString(Chunk388032.t.zoT1ZG, {
+        bitrate: Chunk474936.HO[Chunk981631.Eu4.TIER_3].limits.bitrate / 1e3
       })
     },
-    [s.oNc.VANITY_URL]: {
-      perkIcon: o.Ro.VANITY,
-      description: l.intl.string(l.t["5XZKy8"])
+    [Chunk981631.oNc.VANITY_URL]: {
+      perkIcon: Chunk267642.Ro.VANITY,
+      description: Chunk388032.intl.string(Chunk388032.t["5XZKy8"])
     },
-    [s.oNc.MAX_FILE_SIZE_100_MB]: {
-      perkIcon: o.Ro.UPLOAD,
-      description: l.intl.formatToPlainString(l.t["aFRl5+"], {
-        uploadSizeLimit: l.intl.string(l.t.yMOW8P)
+    [Chunk981631.oNc.MAX_FILE_SIZE_100_MB]: {
+      perkIcon: Chunk267642.Ro.UPLOAD,
+      description: Chunk388032.intl.formatToPlainString(Chunk388032.t["aFRl5+"], {
+        uploadSizeLimit: Chunk388032.intl.string(Chunk388032.t.yMOW8P)
       })
     }
   }),
   S = {
-    [s.oNc.VANITY_URL]: {
+    [Chunk981631.oNc.VANITY_URL]: {
       boostPrice: 5,
-      includedInLevel: s.Eu4.TIER_3
+      includedInLevel: Chunk981631.Eu4.TIER_3
     },
-    [s.oNc.GUILD_TAGS]: {
+    [Chunk981631.oNc.GUILD_TAGS]: {
       boostPrice: 3,
-      includedInLevel: void 0
+      includedInLevel: true
     },
-    [s.oNc.ENHANCED_ROLE_COLORS]: {
+    [Chunk981631.oNc.ENHANCED_ROLE_COLORS]: {
       boostPrice: 3,
-      includedInLevel: void 0
+      includedInLevel: true
     },
-    [s.oNc.GUILD_TAGS_BADGE_PACK_PETS]: {
+    [Chunk981631.oNc.GUILD_TAGS_BADGE_PACK_PETS]: {
       boostPrice: 3,
-      includedInLevel: void 0
+      includedInLevel: true
     },
-    [s.oNc.GUILD_TAGS_BADGE_PACK_FLEX]: {
+    [Chunk981631.oNc.GUILD_TAGS_BADGE_PACK_FLEX]: {
       boostPrice: 5,
-      includedInLevel: void 0
+      includedInLevel: true
     }
   },
   A = {
-    [r.A$]: s.Eu4.TIER_3
+    [Chunk494497.A$]: Chunk981631.Eu4.TIER_3
   };
 var N = function(e) {
     return e.INACTIVE = "inactive", e.POWERUP_ACTIVATED = "powerup_activated", e.LEVEL_ACTIVATED = "level_activated", e.TIER_OVERRIDE_ACTIVATED = "tier_override_activated", e
@@ -155,8 +156,8 @@ var N = function(e) {
   C = function(e) {
     return e[e.VANITY_URL = 1] = "VANITY_URL", e[e.GUILD_TAG_BADGE_PACKS_WAVE_ONE = 2] = "GUILD_TAG_BADGE_PACKS_WAVE_ONE", e
   }({});
-let R = new Set([r.MB, r.Vk]),
+let R = new Set([Chunk494497.MB, Chunk494497.Vk]),
   P = {
-    1: new Set([r.A$]),
+    1: new Set([Chunk494497.A$]),
     2: R
   }

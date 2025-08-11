@@ -1,11 +1,12 @@
 /** Chunk was on web.js **/
+/** chunk id: 992456, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-var r = n(581079),
+var Chunk581079 = require("./581079.js"),
   i = /\.textClipping$/,
   o = {
-    "text/plain": !0,
-    "text/html": !0,
-    "text/rtf": !0
+    "text/plain": true,
+    "text/html": true,
+    "text/rtf": true
   },
   a = 5e3;
 
@@ -19,12 +20,12 @@ function s(e, t) {
   var s = new FileReader;
   s.onload = function() {
     var e = s.result;
-    "string" != typeof e && r(!1), t(e)
+    "string" != typeof e && r(false), t(e)
   }, s.onerror = function() {
     t("")
   }, s.readAsText(e)
 }
-e.exports = function(e, t) {
+module.exports = function(e, t) {
   var n = 0,
     r = [];
   e.forEach(function(i) {

@@ -1,32 +1,33 @@
 /** Chunk was on web.js **/
+/** chunk id: 725140, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => u
-}), n(388685);
-var r = n(147913),
-  i = n(579806),
-  o = n(246946);
+}), require("./388685.js");
+var Chunk147913 = require("./147913.js"),
+  Chunk579806 = require("./579806.js"),
+  Chunk246946 = require("./246946.js");
 
 function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
-let s = !1;
+let s = false;
 
 function l() {
   var e;
-  let t = null === i.Z || void 0 === i.Z || null == (e = i.Z.window) ? void 0 : e.setContentProtection;
-  if (null == t) return;
-  let n = o.Z.enableContentProtection;
-  n !== s && (t(n), s = n)
+  let t = null === Chunk579806.Z || true === Chunk579806.Z || null == (e = Chunk579806.Z.window) ? true : module.setContentProtection;
+  if (null == exports) return;
+  let n = Chunk246946.Z.enableContentProtection;
+  require !== s && (exports(require), s = require)
 }
-class c extends r.Z {
+class c extends Chunk147913.Z {
   constructor() {
-    l(), super(), a(this, "stores", new Map().set(o.Z, l))
+    l(), super(), a(this, "stores", new Map().set(Chunk246946.Z, l))
   }
 }
 let u = new c

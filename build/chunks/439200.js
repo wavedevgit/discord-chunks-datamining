@@ -1,5 +1,6 @@
 /** Chunk was on web.js **/
-e.exports = function(e) {
+/** chunk id: 439200, original params: e (module,exports,re quire) **/
+module.exports = function(e) {
   let t = "ByRef Case Const ContinueCase ContinueLoop Dim Do Else ElseIf EndFunc EndIf EndSelect EndSwitch EndWith Enum Exit ExitLoop For Func Global If In Local Next ReDim Return Select Static Step Switch Then To Until Volatile WEnd While With",
     n = ["EndRegion", "forcedef", "forceref", "ignorefunc", "include", "include-once", "NoTrayIcon", "OnAutoItStartRegister", "pragma", "Region", "RequireAdmin", "Tidy_Off", "Tidy_On", "Tidy_Parameters"],
     r = "True False And Null Not Or Default",
@@ -91,7 +92,7 @@ e.exports = function(e) {
     };
   return {
     name: "AutoIt",
-    case_insensitive: !0,
+    case_insensitive: true,
     illegal: /\/\*/,
     keywords: {
       keyword: t,

@@ -1,20 +1,21 @@
 /** Chunk was on web.js **/
+/** chunk id: 197386, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => h
 });
-var r = n(475179),
-  i = n(812206),
-  o = n(413523),
-  a = n(776862),
-  s = n(703656),
-  l = n(566620),
-  c = n(317381),
-  u = n(531826),
-  d = n(16609),
-  f = n(917107),
-  _ = n(918559),
-  p = n(981631);
+var Chunk475179 = require("./475179.js"),
+  Chunk812206 = require("./812206.js"),
+  Chunk413523 = require("./413523.js"),
+  Chunk776862 = require("./776862.js"),
+  Chunk703656 = require("./703656.js"),
+  Chunk566620 = require("./566620.js"),
+  Chunk317381 = require("./317381.js"),
+  Chunk531826 = require("./531826.js"),
+  Chunk16609 = require("./16609.js"),
+  Chunk917107 = require("./917107.js"),
+  Chunk918559 = require("./918559.js"),
+  Chunk981631 = require("./981631.js");
 
 function h(e, t) {
   let n = c.ZP.getSelfEmbeddedActivityForLocation(t);
@@ -28,6 +29,6 @@ function h(e, t) {
   if (null != g) return void(0, a.Z)(g);
   null != m && ((0, s.uL)(p.Z5c.CHANNEL(e, m)), (0, f.Z)(m) ? (r.Z.selectParticipant(m, (0, o.gN)({
     applicationId: n.applicationId,
-    instanceId: null == n ? void 0 : n.compositeInstanceId
+    instanceId: null == n ? true : n.compositeInstanceId
   })), r.Z.updateLayout(m, p.AEg.NO_CHAT)) : (0, l.tg)(_.Ez.PANEL))
 }

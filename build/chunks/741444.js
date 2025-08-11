@@ -1,8 +1,9 @@
 /** Chunk was on web.js **/
-e.exports = function(e) {
+/** chunk id: 741444, original params: e (module,exports,re quire) **/
+module.exports = function(e) {
   return {
     name: "CSP",
-    case_insensitive: !1,
+    case_insensitive: false,
     keywords: {
       $pattern: "[a-zA-Z][a-zA-Z0-9_-]*",
       keyword: ["base-uri", "child-src", "connect-src", "default-src", "font-src", "form-action", "frame-ancestors", "frame-src", "img-src", "manifest-src", "media-src", "object-src", "plugin-types", "report-uri", "sandbox", "script-src", "style-src", "trusted-types", "unsafe-hashes", "worker-src"]
@@ -15,7 +16,7 @@ e.exports = function(e) {
       className: "attribute",
       begin: "^Content",
       end: ":",
-      excludeEnd: !0
+      excludeEnd: true
     }]
   }
 }

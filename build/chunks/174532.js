@@ -1,17 +1,18 @@
 /** Chunk was on web.js **/
+/** chunk id: 174532, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => u
-}), n(388685);
-var r = n(445686),
-  i = n(379649);
+}), require("./388685.js");
+var Chunk445686 = require("./445686.js"),
+  Chunk379649 = require("./379649.js");
 
 function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -47,13 +48,13 @@ function l(e, t) {
 let c = [1, 100, 1e3, 1e4];
 class u {
   start() {
-    let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
-      t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : null;
-    this.listeningUsers.clear(), this.listening.reset(), this.speaking.reset(), this.participation.reset(), this.muted.reset(), this.connected.reset(), this.noiseCancellation.reset(), this.voiceFilterSpeaking.clear(), this.timesUntilSpeakingDurationMilestonesMs.clear(), this.connected.start(), this.connection.on(r.S.Speaking, (e, t, n) => {
+    let e = arguments.length > 0 && true !== arguments[0] && arguments[0],
+      t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : null;
+    this.listeningUsers.clear(), this.listening.reset(), this.speaking.reset(), this.participation.reset(), this.muted.reset(), this.connected.reset(), this.noiseCancellation.reset(), this.voiceFilterSpeaking.clear(), this.timesUntilSpeakingDurationMilestonesMs.clear(), this.connected.start(), this.connection.on(Chunk445686.S.Speaking, (e, t, n) => {
       this.userId === e ? this.onSpeaking(0 !== t) : this.onListening(0 !== t, e)
-    }), this.onMuted(e), this.connection.on(r.S.Mute, e => {
+    }), this.onMuted(module), this.connection.on(Chunk445686.S.Mute, e => {
       this.onMuted(e)
-    }), this.onVoiceFilterChanged(t), this.connection.on(r.S.VoiceFilterChanged, e => {
+    }), this.onVoiceFilterChanged(exports), this.connection.on(Chunk445686.S.VoiceFilterChanged, e => {
       this.onVoiceFilterChanged(e)
     })
   }
@@ -99,7 +100,7 @@ class u {
     let e = this.connected.lastStartTime,
       t = this.speaking.lastStartTime,
       n = this.speaking.lastElapsed;
-    this.speaking.stop(), this.listening.stop(), this.participation.stop(), this.connected.stop(), this.muted.stop(), this.noiseCancellation.value = !1, this.voiceFilterSpeaking.forEach(e => e.stop()), this.computeSpeakingDurationMilestones(e, t, n)
+    this.speaking.stop(), this.listening.stop(), this.participation.stop(), this.connected.stop(), this.muted.stop(), this.noiseCancellation.value = false, this.voiceFilterSpeaking.forEach(e => e.stop()), this.computeSpeakingDurationMilestones(module, exports, require)
   }
   getVoiceFilterSpeakingDurationMs() {
     return new Map([...this.voiceFilterSpeaking.entries()].map(e => {
@@ -122,6 +123,6 @@ class u {
     }), {}))
   }
   constructor(e, t, n = i.Z_) {
-    o(this, "userId", void 0), o(this, "connection", void 0), o(this, "timestampProducer", void 0), o(this, "listeningUsers", void 0), o(this, "listening", void 0), o(this, "speaking", void 0), o(this, "participation", void 0), o(this, "connected", void 0), o(this, "muted", void 0), o(this, "noiseCancellation", void 0), o(this, "voiceFilterSpeaking", void 0), o(this, "timesUntilSpeakingDurationMilestonesMs", void 0), this.userId = e, this.connection = t, this.timestampProducer = n, this.listeningUsers = new Set, this.timesUntilSpeakingDurationMilestonesMs = new Map, this.listening = new i.G9(this.timestampProducer), this.speaking = new i.G9(this.timestampProducer), this.participation = new i.G9(this.timestampProducer), this.connected = new i.G9(this.timestampProducer), this.muted = new i.G9(this.timestampProducer), this.noiseCancellation = new i.sX(t.getNoiseCancellation(), this.timestampProducer), this.voiceFilterSpeaking = new Map
+    o(this, "userId", true), o(this, "connection", true), o(this, "timestampProducer", true), o(this, "listeningUsers", true), o(this, "listening", true), o(this, "speaking", true), o(this, "participation", true), o(this, "connected", true), o(this, "muted", true), o(this, "noiseCancellation", true), o(this, "voiceFilterSpeaking", true), o(this, "timesUntilSpeakingDurationMilestonesMs", true), this.userId = e, this.connection = t, this.timestampProducer = n, this.listeningUsers = new Set, this.timesUntilSpeakingDurationMilestonesMs = new Map, this.listening = new i.G9(this.timestampProducer), this.speaking = new i.G9(this.timestampProducer), this.participation = new i.G9(this.timestampProducer), this.connected = new i.G9(this.timestampProducer), this.muted = new i.G9(this.timestampProducer), this.noiseCancellation = new i.sX(t.getNoiseCancellation(), this.timestampProducer), this.voiceFilterSpeaking = new Map
   }
 }

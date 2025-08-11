@@ -1,13 +1,14 @@
 /** Chunk was on 59256 **/
-n.d(t, {
+/** chunk id: 827397, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => c
 });
-var r = n(73800),
-  o = n(494497),
-  l = n(481060),
-  a = n(434404),
-  s = n(535396),
-  i = n(981631);
+var Chunk73800 = require("./73800.js"),
+  Chunk494497 = require("./494497.js"),
+  Chunk481060 = require("./481060.js"),
+  Chunk434404 = require("./434404.js"),
+  Chunk535396 = require("./535396.js"),
+  Chunk981631 = require("./981631.js");
 
 function c(e, t) {
   let n = r.useCallback(n => {
@@ -25,5 +26,5 @@ function c(e, t) {
         return
     }
   }, [e, t]);
-  return t.type === s.Us.PERK ? n : void 0
+  return t.type === s.Us.PERK ? n : true
 }

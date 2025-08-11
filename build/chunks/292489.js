@@ -1,4 +1,5 @@
 /** Chunk was on web.js **/
+/** chunk id: 292489, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 
 function r(e, t) {
@@ -6,7 +7,7 @@ function r(e, t) {
   return "auto" === n || "scroll" === n
 }
 var i = {
-  get: n(858255),
+  get: require("./858255.js"),
   getScrollParent: function(e) {
     if (!e) return null;
     for (var t = e.ownerDocument; e && e !== t.body;) {
@@ -16,4 +17,4 @@ var i = {
     return t.defaultView || t.parentWindow
   }
 };
-e.exports = i
+module.exports = i

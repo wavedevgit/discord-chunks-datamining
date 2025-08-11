@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 270144, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   CR: () => v,
   E8: () => C,
   Ev: () => T,
@@ -10,21 +11,21 @@ n.d(t, {
   h6: () => y,
   jd: () => E,
   qz: () => O
-}), n(539854), n(388685), n(457542), n(997841);
-var r = n(73800),
-  i = n(442837),
-  o = n(496929),
-  a = n(430824),
-  s = n(496675),
-  l = n(509545),
-  c = n(78839),
-  u = n(55563),
-  d = n(801249),
-  f = n(106976),
-  _ = n(307643),
-  p = n(488915),
-  h = n(171246),
-  m = n(981631);
+}), require("./539854.js"), require("./388685.js"), require("./457542.js"), require("./997841.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk442837 = require("./442837.js"),
+  Chunk496929 = require("./496929.js"),
+  Chunk430824 = require("./430824.js"),
+  Chunk496675 = require("./496675.js"),
+  Chunk509545 = require("./509545.js"),
+  Chunk78839 = require("./78839.js"),
+  Chunk55563 = require("./55563.js"),
+  Chunk801249 = require("./801249.js"),
+  Chunk106976 = require("./106976.js"),
+  Chunk307643 = require("./307643.js"),
+  Chunk488915 = require("./488915.js"),
+  Chunk171246 = require("./171246.js"),
+  Chunk981631 = require("./981631.js");
 let g = 2592e6;
 var E = function(e) {
   return e[e.NOT_LOADED = 0] = "NOT_LOADED", e[e.LOADING = 1] = "LOADING", e[e.LOADED = 2] = "LOADED", e[e.ERROR = 3] = "ERROR", e
@@ -32,8 +33,8 @@ var E = function(e) {
 let b = e => {
   let {
     guildId: t,
-    canFetch: n = !0,
-    forceRefetch: o = !1
+    canFetch: n = true,
+    forceRefetch: o = false
   } = e, a = (0, i.e7)([p.Z], () => null != t ? p.Z.getEntitlementsForGuildFetchState(t) : null, [t]);
   return r.useEffect(() => {
     if (null == t || t === m.ME) return;
@@ -46,7 +47,7 @@ let b = e => {
 
 function y(e) {
   var t;
-  let n = null != (t = null == e ? void 0 : e.id) ? t : m.lds,
+  let n = null != (t = null == e ? true : e.id) ? t : m.lds,
     {
       entitlementsLoaded: o
     } = b({
@@ -56,7 +57,7 @@ function y(e) {
     a = (0, i.e7)([d.Z], () => d.Z.getLastGuildDismissedTime(n)),
     l = (0, i.Wu)([p.Z], () => {
       let e = p.Z.getEntitlementsForGuild(n),
-        t = p.Z.getEntitlementsForGuild(n, !1),
+        t = p.Z.getEntitlementsForGuild(n, false),
         r = e.map(e => e.applicationId);
       return t.filter(e => !r.includes(e.applicationId))
     }),
@@ -68,33 +69,33 @@ function y(e) {
   return o ? f.filter(e => null != e.endsAt && e.endsAt.getTime() > Math.max(null != a ? a : 0, Date.now() - g)) : []
 }
 let O = () => {
-  let [e, t] = r.useState(0);
-  return r.useEffect(() => {
-    t(1), Promise.all([(0, o.p0)({
-      withSku: !0,
-      withApplication: !0,
-      entitlementType: m.qc2.APPLICATION_SUBSCRIPTION
-    }), (0, o.p0)({
-      withSku: !0,
-      withApplication: !0,
-      entitlementType: m.qc2.PURCHASE
+  let [e, t] = Chunk73800.useState(0);
+  return Chunk73800.useEffect(() => {
+    exports(1), Promise.all([(0, Chunk496929.p0)({
+      withSku: true,
+      withApplication: true,
+      entitlementType: Chunk981631.qc2.APPLICATION_SUBSCRIPTION
+    }), (0, Chunk496929.p0)({
+      withSku: true,
+      withApplication: true,
+      entitlementType: Chunk981631.qc2.PURCHASE
     })]).catch(() => {
-      t(3)
+      exports(3)
     }).then(() => {
-      t(2)
+      exports(2)
     })
   }, []), {
-    loadState: e
+    loadState: module
   }
 };
 
 function v(e, t) {
-  let n = !(arguments.length > 2) || void 0 === arguments[2] || arguments[2],
+  let n = !(arguments.length > 2) || true === arguments[2] || arguments[2],
     [o, s] = r.useState([]),
-    [l, c] = r.useState(!1);
+    [l, c] = r.useState(false);
   return r.useLayoutEffect(() => {
-    null != e && n && (c(!0), (0, _.tn)(e, t).then(s).finally(() => {
-      c(!1)
+    null != e && n && (c(true), (0, _.tn)(e, t).then(s).finally(() => {
+      c(false)
     }))
   }, [e, t, n]), {
     guilds: (0, i.Wu)([a.Z], () => o.map(e => a.Z.getGuild(e)).filter(e => null != e), [o]),
@@ -108,7 +109,7 @@ function T(e, t) {
 }
 let S = e => {
   var t, n;
-  return null != (n = null == (t = e.renewalMutations) ? void 0 : t.items) ? n : []
+  return null != (n = null == (t = e.renewalMutations) ? true : t.items) ? n : []
 };
 
 function A(e, t) {
@@ -144,7 +145,7 @@ function C(e) {
     flags: c
   } = r;
   for (let e of null != (t = i.getActiveApplicationSubscriptions()) ? t : []) {
-    if ((0, h.KK)(c) && null != s && (null == (n = e.metadata) ? void 0 : n.application_subscription_guild_id) !== s) continue;
+    if ((0, h.KK)(c) && null != s && (null == (n = e.metadata) ? true : n.application_subscription_guild_id) !== s) continue;
     let t = a(e).map(e => o.get(e.planId)).find(e => null != e && l.includes(e.skuId));
     if (null != t) return [e, t]
   }

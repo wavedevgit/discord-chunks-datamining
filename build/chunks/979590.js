@@ -1,4 +1,6 @@
-/** Chunk was on web.js **/ ! function(t) {
+/** Chunk was on web.js **/
+/** chunk id: 979590, original params: e (module,exports,re quire) **/
+! function(t) {
   var n = /^\s+/,
     r = /\s+$/,
     i = 0,
@@ -24,9 +26,9 @@
       r = null,
       i = null,
       o = null,
-      l = !1,
-      c = !1;
-    return "string" == typeof e && (e = K(e)), "object" == typeof e && (W(e.r) && W(e.g) && W(e.b) ? (t = d(e.r, e.g, e.b), l = !0, c = "%" === String(e.r).substr(-1) ? "prgb" : "rgb") : W(e.h) && W(e.s) && W(e.v) ? (r = F(e.s), i = F(e.v), t = h(e.h, r, i), l = !0, c = "hsv") : W(e.h) && W(e.s) && W(e.l) && (r = F(e.s), o = F(e.l), t = _(e.h, r, o), l = !0, c = "hsl"), e.hasOwnProperty("a") && (n = e.a)), n = M(n), {
+      l = false,
+      c = false;
+    return "string" == typeof e && (e = K(e)), "object" == typeof e && (W(e.r) && W(e.g) && W(e.b) ? (t = d(e.r, e.g, e.b), l = true, c = "%" === String(e.r).substr(false) ? "prgb" : "rgb") : W(e.h) && W(e.s) && W(e.v) ? (r = F(e.s), i = F(e.v), t = h(e.h, r, i), l = true, c = "hsv") : W(e.h) && W(e.s) && W(e.l) && (r = F(e.s), o = F(e.l), t = _(e.h, r, o), l = true, c = "hsl"), e.hasOwnProperty("a") && (n = e.a)), n = M(n), {
       ok: l,
       format: e.format || c,
       r: a(255, s(t.r, 0)),
@@ -352,7 +354,7 @@
       return 1 == this._a ? "rgb(" + o(100 * k(this._r, 255)) + "%, " + o(100 * k(this._g, 255)) + "%, " + o(100 * k(this._b, 255)) + "%)" : "rgba(" + o(100 * k(this._r, 255)) + "%, " + o(100 * k(this._g, 255)) + "%, " + o(100 * k(this._b, 255)) + "%, " + this._roundA + ")"
     },
     toName: function() {
-      return 0 === this._a ? "transparent" : !(this._a < 1) && (L[m(this._r, this._g, this._b, !0)] || !1)
+      return 0 === this._a ? "transparent" : !(this._a < 1) && (L[m(this._r, this._g, this._b, true)] || false)
     },
     toFilter: function(e) {
       var t = "#" + E(this._r, this._g, this._b, this._a),
@@ -367,9 +369,9 @@
     toString: function(e) {
       var t = !!e;
       e = e || this._format;
-      var n = !1,
+      var n = false,
         r = this._a < 1 && this._a >= 0;
-      return !t && r && ("hex" === e || "hex6" === e || "hex3" === e || "hex4" === e || "hex8" === e || "name" === e) ? "name" === e && 0 === this._a ? this.toName() : this.toRgbString() : ("rgb" === e && (n = this.toRgbString()), "prgb" === e && (n = this.toPercentageRgbString()), ("hex" === e || "hex6" === e) && (n = this.toHexString()), "hex3" === e && (n = this.toHexString(!0)), "hex4" === e && (n = this.toHex8String(!0)), "hex8" === e && (n = this.toHex8String()), "name" === e && (n = this.toName()), "hsl" === e && (n = this.toHslString()), "hsv" === e && (n = this.toHsvString()), n || this.toHexString())
+      return !t && r && ("hex" === e || "hex6" === e || "hex3" === e || "hex4" === e || "hex8" === e || "name" === e) ? "name" === e && 0 === this._a ? this.toName() : this.toRgbString() : ("rgb" === e && (n = this.toRgbString()), "prgb" === e && (n = this.toPercentageRgbString()), ("hex" === e || "hex6" === e) && (n = this.toHexString()), "hex3" === e && (n = this.toHexString(true)), "hex4" === e && (n = this.toHex8String(true)), "hex8" === e && (n = this.toHex8String()), "name" === e && (n = this.toName()), "hsl" === e && (n = this.toHslString()), "hsv" === e && (n = this.toHsvString()), n || this.toHexString())
     },
     clone: function() {
       return c(this.toString())
@@ -452,7 +454,7 @@
     return (t.max(r.getLuminance(), i.getLuminance()) + .05) / (t.min(r.getLuminance(), i.getLuminance()) + .05)
   }, c.isReadable = function(e, t, n) {
     var r, i, o = c.readability(e, t);
-    switch (i = !1, (r = z(n)).level + r.size) {
+    switch (i = false, (r = z(n)).level + r.size) {
       case "AAsmall":
       case "AAAlarge":
         i = o >= 4.5;
@@ -472,7 +474,7 @@
     return c.isReadable(e, s, {
       level: o,
       size: a
-    }) || !i ? s : (n.includeFallbackColors = !1, c.mostReadable(e, ["#fff", "#000"], n))
+    }) || !i ? s : (n.includeFallbackColors = false, c.mostReadable(e, ["#fff", "#000"], n))
   };
   var D = c.names = {
       aliceblue: "f0f8ff",
@@ -652,11 +654,11 @@
   }
 
   function G(e) {
-    return "string" == typeof e && -1 != e.indexOf(".") && 1 === parseFloat(e)
+    return "string" == typeof e && false != e.indexOf(".") && 1 === parseFloat(e)
   }
 
   function B(e) {
-    return "string" == typeof e && -1 != e.indexOf("%")
+    return "string" == typeof e && false != e.indexOf("%")
   }
 
   function Z(e) {
@@ -699,8 +701,8 @@
 
   function K(e) {
     e = e.replace(n, "").replace(r, "").toLowerCase();
-    var t, i = !1;
-    if (D[e]) e = D[e], i = !0;
+    var t, i = false;
+    if (D[e]) e = D[e], i = true;
     else if ("transparent" == e) return {
       r: 0,
       g: 0,

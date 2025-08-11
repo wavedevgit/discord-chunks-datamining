@@ -1,14 +1,15 @@
 /** Chunk was on web.js **/
+/** chunk id: 280098, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => a
 });
-var r = n(267642),
-  i = n(74538),
-  o = n(474936);
+var Chunk267642 = require("./267642.js"),
+  Chunk74538 = require("./74538.js"),
+  Chunk474936 = require("./474936.js");
 
 function a(e, t, n, a) {
-  if (null == e || null == e.quality && null == e.guildPremiumTier) return !0;
-  let s = !1;
+  if (null == e || null == e.quality && null == e.guildPremiumTier) returntrue;
+  let s = false;
   return null != e.quality && (e.quality === o.ys.HIGH_STREAMING_QUALITY ? s = s || i.ZP.canStreamQuality(i.ZP.StreamQuality.HIGH, t) : e.quality === o.ys.MID_STREAMING_QUALITY && (s = s || i.ZP.canStreamQuality(i.ZP.StreamQuality.MID, t))), null != e.guildPremiumTier && (s = s || (0, r.tb)(n, e.guildPremiumTier)), s
 }

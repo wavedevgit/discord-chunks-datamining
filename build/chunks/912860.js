@@ -1,16 +1,17 @@
 /** Chunk was on web.js **/
+/** chunk id: 912860, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   b: () => u
 });
-var r = n(836560);
+var Chunk836560 = require("./836560.js");
 let i = 160,
   o = 500;
 var a = function(e) {
   return e.VERTICAL = "vertical", e.HORIZONTAL = "horizontal", e
 }(a || {});
 let s = {
-  open: !1,
+  open: false,
   orientation: null
 };
 
@@ -29,7 +30,7 @@ function c() {
     return 0
   }
 }
-class u extends r.EventEmitter {
+class u extends Chunk836560.EventEmitter {
   get orientations() {
     return Object.values(a)
   }
@@ -39,14 +40,14 @@ class u extends r.EventEmitter {
   check() {
     let e = l() > i,
       t = c() > i,
-      n = e ? "vertical" : "horizontal";
-    if (!(t && e) && (e || t)) {
+      n = module ? "vertical" : "horizontal";
+    if (!(exports && module) && (module || exports)) {
       let e = s.open;
       s = {
-        open: !0,
-        orientation: n
-      }, e && s.orientation === n || this.emit("changed", s)
-    } else s.open && (s.open = !1, this.emit("changed", s))
+        open: true,
+        orientation: require
+      }, module && s.orientation === require || this.emit("changed", s)
+    } else s.open && (s.open = false, this.emit("changed", s))
   }
   constructor() {
     super(), setInterval(() => this.check(), o)

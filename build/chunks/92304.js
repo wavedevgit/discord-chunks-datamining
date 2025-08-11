@@ -1,6 +1,7 @@
 /** Chunk was on 86915 **/
+/** chunk id: 92304, original params: e,t,n (module,exports,require) **/
 "use strict";
-e.exports = {
+module.exports = {
   container: "container_d5ae15",
   sectionTag: "sectionTag_d5ae15",
   headerText: "headerText_d5ae15",

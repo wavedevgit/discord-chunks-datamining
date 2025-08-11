@@ -1,20 +1,21 @@
 /** Chunk was on web.js **/
+/** chunk id: 788983, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   YS: () => d,
   bA: () => s,
   hP: () => l,
   hY: () => u,
   xv: () => c
 });
-var r = n(570140);
+var Chunk570140 = require("./570140.js");
 
 function i(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -31,10 +32,10 @@ function o(e) {
   return e
 }
 let a = {
-  menubar: !1,
-  toolbar: !1,
-  location: !1,
-  directories: !1
+  menubar: false,
+  toolbar: false,
+  location: false,
+  directories: false
 };
 
 function s(e, t, n) {

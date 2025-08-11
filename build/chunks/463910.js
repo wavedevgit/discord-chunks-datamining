@@ -1,5 +1,6 @@
 /** Chunk was on web.js **/
+/** chunk id: 463910, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   questsCard: "questsCard__72a00"
 }

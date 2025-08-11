@@ -1,45 +1,46 @@
 /** Chunk was on web.js **/
+/** chunk id: 444852, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   A: () => B,
   Z: () => Z
-}), n(539854), n(388685);
-var r = n(392711),
-  i = n.n(r),
-  o = n(46973),
-  a = n(846519),
-  s = n(570140),
-  l = n(861687),
-  c = n(437263),
-  u = n(924557),
-  d = n(435064),
-  f = n(631053),
-  _ = n(581567),
-  p = n(594190),
-  h = n(314897),
-  m = n(592125),
-  g = n(858340),
-  E = n(131951),
-  b = n(866960),
-  y = n(19780),
-  O = n(936349),
-  v = n(704806),
-  I = n(626135),
-  T = n(12647),
-  S = n(70956),
-  A = n(756315),
-  N = n(569545),
-  C = n(502286),
-  R = n(297733),
-  P = n(981631),
-  w = n(65154);
+}), require("./539854.js"), require("./388685.js");
+var Chunk392711 = require("./392711.js"),
+  i = require.n(Chunk392711),
+  Chunk46973 = require("./46973.js"),
+  Chunk846519 = require("./846519.js"),
+  Chunk570140 = require("./570140.js"),
+  Chunk861687 = require("./861687.js"),
+  Chunk437263 = require("./437263.js"),
+  Chunk924557 = require("./924557.js"),
+  Chunk435064 = require("./435064.js"),
+  Chunk631053 = require("./631053.js"),
+  Chunk581567 = require("./581567.js"),
+  Chunk594190 = require("./594190.js"),
+  Chunk314897 = require("./314897.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk858340 = require("./858340.js"),
+  Chunk131951 = require("./131951.js"),
+  Chunk866960 = require("./866960.js"),
+  Chunk19780 = require("./19780.js"),
+  Chunk936349 = require("./936349.js"),
+  Chunk704806 = require("./704806.js"),
+  Chunk626135 = require("./626135.js"),
+  Chunk12647 = require("./12647.js"),
+  Chunk70956 = require("./70956.js"),
+  Chunk756315 = require("./756315.js"),
+  Chunk569545 = require("./569545.js"),
+  Chunk502286 = require("./502286.js"),
+  Chunk297733 = require("./297733.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk65154 = require("./65154.js");
 
 function D(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -75,7 +76,7 @@ function M(e, t) {
 let k = 10,
   j = 15e5,
   U = 15e5,
-  G = 5 * S.Z.Millis.SECOND;
+  G = 5 * Chunk70956.Z.Millis.SECOND;
 class B {
   setActionContext(e) {
     this.actionContext = e
@@ -96,7 +97,7 @@ class B {
     var e;
     if (null == this.startTime) return null;
     let t = performance.now();
-    return (null != (e = this.endTime) ? e : t) - this.startTime
+    return (null != (e = this.endTime) ? module : exports) - this.startTime
   }
   constructor({
     streamRegion: e,
@@ -106,15 +107,15 @@ class B {
     numViewers: i,
     goLiveModalDurationMs: o
   }) {
-    D(this, "streamRegion", void 0), D(this, "streamApplication", void 0), D(this, "streamSourceType", void 0), D(this, "actionContext", void 0), D(this, "maxViewers", void 0), D(this, "nativePickerStyleUsed", void 0), D(this, "startTime", void 0), D(this, "endTime", void 0), D(this, "goLiveModalDurationMs", void 0), D(this, "numViewers", void 0), this.streamRegion = e, this.streamApplication = t, this.streamSourceType = n, this.actionContext = r, this.maxViewers = i, this.goLiveModalDurationMs = o, this.numViewers = i
+    D(this, "streamRegion", true), D(this, "streamApplication", true), D(this, "streamSourceType", true), D(this, "actionContext", true), D(this, "maxViewers", true), D(this, "nativePickerStyleUsed", true), D(this, "startTime", true), D(this, "endTime", true), D(this, "goLiveModalDurationMs", true), D(this, "numViewers", true), this.streamRegion = e, this.streamApplication = t, this.streamSourceType = n, this.actionContext = r, this.maxViewers = i, this.goLiveModalDurationMs = o, this.numViewers = i
   }
 }
-class Z extends l.Z {
+class Z extends Chunk861687.Z {
   get isOwner() {
     let {
       ownerId: e
     } = this.streamContext;
-    return h.default.getId() === e
+    return Chunk314897.default.getId() === module
   }
   destroy(e) {
     this.videoStreamStats.stop(), this.trackVideoEndStats(e), this.updateVideoStreamId.cancel(), this.updateVideoStreamId(null, null), this.updateVideoStreamId.flush(), this.errorTimer.stop(), super.destroy()
@@ -130,7 +131,7 @@ class Z extends l.Z {
     let {
       ownerId: e
     } = this.streamContext, t = this._videoQuality;
-    if (null != t) {
+    if (null != exports) {
       var n, r;
       let {
         duration: i,
@@ -138,13 +139,13 @@ class Z extends l.Z {
         avg_fps: a,
         avg_resolution: s,
         inbound_bitrate_estimate_percentile99: l
-      } = this.isOwner ? null != (n = t.getOutboundStats()[0]) ? n : {} : null != (r = t.getInboundStats(e)) ? r : {};
+      } = this.isOwner ? null != (n = exports.getOutboundStats()[0]) ? require : {} : null != (r = exports.getInboundStats(module)) ? Chunk392711 : {};
       return {
         duration: i,
-        avg_bitrate: o,
-        avg_fps: a,
-        avg_resolution: s,
-        inbound_bitrate_estimate_percentile99: l
+        avg_bitrate: Chunk46973,
+        avg_fps: Chunk846519,
+        avg_resolution: Chunk570140,
+        inbound_bitrate_estimate_percentile99: Chunk861687
       }
     }
     return null
@@ -160,29 +161,29 @@ class Z extends l.Z {
   }
   updateStats(e) {
     var t, n, r, o, a, s, l, c, u, d, f, _;
-    let p, h = !this.isOwner && (null == (t = this._goLiveQualityManager) ? void 0 : t.getUserID()) != null,
-      m = void 0 !== this.goliveCurrentMaxResolution && (this.goliveCurrentMaxResolution.height > 720 || 0 === this.goliveCurrentMaxResolution.height),
+    let p, h = !this.isOwner && (null == (t = this._goLiveQualityManager) ? true : t.getUserID()) != null,
+      m = true !== this.goliveCurrentMaxResolution && (this.goliveCurrentMaxResolution.height > 720 || 0 === this.goliveCurrentMaxResolution.height),
       g = "unknown",
       E = null == (n = e.find(e => {
         var t;
-        return e.mediaEngineConnectionId === (null == (t = this._connection) ? void 0 : t.mediaEngineConnectionId)
-      })) ? void 0 : n.stats;
+        return e.mediaEngineConnectionId === (null == (t = this._connection) ? true : t.mediaEngineConnectionId)
+      })) ? true : n.stats;
     if (null != E && h) {
       let e = E.transport.inboundBitrateEstimate;
       null != e && e < 1e8 && (this.bandwidthSamples.push(e), this.bandwidthSamples.length > k && this.bandwidthSamples.shift(), this.bandwidthSamples.length === k && ((p = i().mean(this.bandwidthSamples)) > U ? g = "HQ" : p < j && (g = "LQ")))
     }
-    let b = null != (o = null == (r = this._goLiveQualityManager) ? void 0 : r.isDowngraded()) && o;
-    if ("HQ" === g && b ? (this.logger.info("Attempting to upgrade to HQ simulcast stream, bandwidth estimate: ".concat(p)), null == (a = this._goLiveQualityManager) || a.setGoLiveStreamDowngraded(!1)) : "LQ" === g && !b && m && (this.logger.info("Attempting to downgrade to LQ simulcast stream, bandwidth estimate: ".concat(p)), null == (s = this._goLiveQualityManager) || s.setGoLiveStreamDowngraded(!0)), h) {
-      let e = !(null == (l = this._goLiveQualityManager) ? void 0 : l.senderSupportsSimulcast()) || (null == (c = this._goLiveQualityManager) ? void 0 : c.isDowngraded()) === !1;
+    let b = null != (o = null == (r = this._goLiveQualityManager) ? true : r.isDowngraded()) && o;
+    if ("HQ" === g && b ? (this.logger.info("Attempting to upgrade to HQ simulcast stream, bandwidth estimate: ".concat(p)), null == (a = this._goLiveQualityManager) || a.setGoLiveStreamDowngraded(false)) : "LQ" === g && !b && m && (this.logger.info("Attempting to downgrade to LQ simulcast stream, bandwidth estimate: ".concat(p)), null == (s = this._goLiveQualityManager) || s.setGoLiveStreamDowngraded(true)), h) {
+      let e = !(null == (l = this._goLiveQualityManager) ? true : l.senderSupportsSimulcast()) || (null == (c = this._goLiveQualityManager) ? true : c.isDowngraded()) === false;
       null == (u = this._videoQuality) || u.setViewedSimulcastQuality(e);
-      let t = null != (_ = null == (d = this._goLiveQualityManager) ? void 0 : d.isOneToOneCall()) && _,
+      let t = null != (_ = null == (d = this._goLiveQualityManager) ? true : d.isOneToOneCall()) && _,
         n = m && "LQ" === g && !t;
       null == (f = this._videoQuality) || f.setEligibleSimulcastQuality(!n)
     }
   }
   initializeEvents() {
-    let e = !1;
-    this.on(c.z.State, (e, t, n) => {
+    let e = false;
+    this.on(Chunk437263.z.State, (e, t, n) => {
       if (s.Z.dispatch(M(L({
           type: "RTC_CONNECTION_STATE",
           state: e
@@ -214,7 +215,7 @@ class Z extends l.Z {
               }
             }
             let N = (null != e ? e : 0) + (null != t ? t : 0) + (null != n ? n : 0) + (null != r ? r : 0) + (null != i ? i : 0) + (null != o ? o : 0) + (null != c ? c : 0) + (null != g ? g : 0) + (null != m ? m : 0),
-              C = (null == y || null == (v = y.desktopSource) ? void 0 : v.sourcePid) != null ? p.ZP.getGameForPID(y.desktopSource.sourcePid) : null,
+              C = (null == y || null == (v = y.desktopSource) ? true : v.sourcePid) != null ? p.ZP.getGameForPID(y.desktopSource.sourcePid) : null,
               {
                 gameName: R,
                 gameId: D,
@@ -242,7 +243,7 @@ class Z extends l.Z {
               screens: d,
               windows: f,
               activity: h,
-              soundshare_session: null != (S = null == y || null == (T = y.desktopSource) ? void 0 : T.soundshareSession) ? S : void 0,
+              soundshare_session: null != (S = null == y || null == (T = y.desktopSource) ? true : T.soundshareSession) ? S : true,
               share_game_name: R,
               share_game_id: D,
               share_game_exe: x,
@@ -253,17 +254,17 @@ class Z extends l.Z {
           })
         }), null == (i = this._connection) || i.on(o.Sh.SoundshareAttached, () => {
           let e = this.getGoLiveSource();
-          (null == e ? void 0 : e.desktopSource) != null && I.default.track(P.rMx.SOUNDSHARE_ATTACHED, L({}, (0, C.Z)(null == e ? void 0 : e.desktopSource), this.getSoundshareAnalyticsProperties()))
+          (null == e ? true : e.desktopSource) != null && I.default.track(P.rMx.SOUNDSHARE_ATTACHED, L({}, (0, C.Z)(null == e ? true : e.desktopSource), this.getSoundshareAnalyticsProperties()))
         }), null == (a = this._connection) || a.on(o.Sh.SoundshareFailed, e => {
           let {
             failureCode: t,
             failureReason: n,
             willRetry: r
           } = e, i = this.getGoLiveSource();
-          this.reportSoundshareFailure(null == i ? void 0 : i.desktopSource, t, n, r)
+          this.reportSoundshareFailure(null == i ? true : i.desktopSource, t, n, r)
         }), null == (l = this._connection) || l.on(o.Sh.SoundshareSpeaking, () => {
           let e = this.getGoLiveSource();
-          (null == e ? void 0 : e.desktopSource) != null && (I.default.track(P.rMx.SOUNDSHARE_TRANSMITTING, L({}, (0, C.Z)(null == e ? void 0 : e.desktopSource), this.getSoundshareAnalyticsProperties())), null != g.Z.getHookError(P.K3D.SOUND) && s.Z.dispatch({
+          (null == e ? true : e.desktopSource) != null && (I.default.track(P.rMx.SOUNDSHARE_TRANSMITTING, L({}, (0, C.Z)(null == e ? true : e.desktopSource), this.getSoundshareAnalyticsProperties())), null != g.Z.getHookError(P.K3D.SOUND) && s.Z.dispatch({
             type: "MEDIA_ENGINE_SOUNDSHARE_TRANSMITTING"
           }))
         }), null == (c = this._connection) || c.on(o.Sh.SoundshareTrace, e => {
@@ -281,7 +282,7 @@ class Z extends l.Z {
               let n = e.reason,
                 r = e.code,
                 i = e.retry;
-              (null == t ? void 0 : t.desktopSource) != null && (this.reportSoundshareFailure(null == t ? void 0 : t.desktopSource, r, n, i), i || (this.errorTimer.stop(), s.Z.dispatch({
+              (null == t ? true : t.desktopSource) != null && (this.reportSoundshareFailure(null == t ? true : t.desktopSource, r, n, i), i || (this.errorTimer.stop(), s.Z.dispatch({
                 type: "MEDIA_ENGINE_SOUNDSHARE_FAILED",
                 errorMessage: n,
                 errorCode: r
@@ -296,12 +297,12 @@ class Z extends l.Z {
           this.errorTimer.stop()
         })
       }
-    }), this.on(c.z.Video, (t, n, r, i, o) => {
+    }), this.on(Chunk437263.z.Video, (t, n, r, i, o) => {
       let a = (0, N.my)(this.streamKey);
-      a.guildId === t && a.channelId === n && a.ownerId === r && (null == this.getMediaSessionId() || e || (this.trackVideoStartStats(), e = !0), this.updateVideoStreamId(i, o))
-    }), this.on(c.z.VideoSourceQualityChanged, (e, t, n, r, i, o) => {
+      a.guildId === t && a.channelId === n && a.ownerId === r && (null == this.getMediaSessionId() || e || (this.trackVideoStartStats(), e = true), this.updateVideoStreamId(i, o))
+    }), this.on(Chunk437263.z.VideoSourceQualityChanged, (e, t, n, r, i, o) => {
       var a;
-      n === (null == (a = this._goLiveQualityManager) ? void 0 : a.getUserID()) && (this.goliveCurrentMaxResolution = r), s.Z.dispatch({
+      n === (null == (a = this._goLiveQualityManager) ? true : a.getUserID()) && (this.goliveCurrentMaxResolution = r), s.Z.dispatch({
         type: "MEDIA_ENGINE_VIDEO_SOURCE_QUALITY_CHANGED",
         guildId: e,
         channelId: t,
@@ -310,11 +311,11 @@ class Z extends l.Z {
         maxFrameRate: i,
         context: o
       })
-    }), this.on(c.z.SecureFramesUpdate, () => {
-      s.Z.dispatch({
+    }), this.on(Chunk437263.z.SecureFramesUpdate, () => {
+      Chunk570140.Z.dispatch({
         type: "RTC_CONNECTION_SECURE_FRAMES_UPDATE"
       })
-    }), this.on(c.z.RosterMapUpdate, e => {
+    }), this.on(Chunk437263.z.RosterMapUpdate, e => {
       s.Z.dispatch({
         type: "RTC_CONNECTION_ROSTER_MAP_UPDATE",
         userIds: e
@@ -323,7 +324,7 @@ class Z extends l.Z {
   }
   reportSoundshareFailure(e, t, n, r) {
     var i;
-    let o = null != (i = null == e ? void 0 : e.soundshareSession) ? i : "";
+    let o = null != (i = null == e ? true : e.soundshareSession) ? i : "";
     null == this.soundshareFailuresReported[o] && (this.soundshareFailuresReported[o] = new Set);
     let a = null != t && !this.soundshareFailuresReported[o].has(t);
     a && this.soundshareFailuresReported[o].add(t), (null == t || a) && I.default.track(P.rMx.SOUNDSHARE_FAILED, L({
@@ -341,34 +342,34 @@ class Z extends l.Z {
     } = this.analyticsContext, {
       ownerId: i,
       guildId: o
-    } = this.streamContext, a = O.Z.getRegion(y.Z.getHostname()), {
+    } = this.streamContext, a = Chunk936349.Z.getRegion(Chunk19780.Z.getHostname()), {
       gameName: s,
       gameId: l,
       exe: c,
       distributor: u,
       sku: d,
       gameMetadata: f
-    } = (0, _.G8)(t);
+    } = (0, Chunk581567.G8)(exports);
     return {
       channel_id: this.channelId,
       rtc_connection_id: this.getRTCConnectionId(),
       media_session_id: this.getMediaSessionId(),
       parent_media_session_id: this.parentMediaSessionId,
       sender_user_id: i,
-      context: w.Yn.STREAM,
-      guild_id: o,
-      stream_region: e,
-      stream_source_type: n,
-      guild_region: a,
+      context: Chunk65154.Yn.STREAM,
+      guild_id: Chunk46973,
+      stream_region: module,
+      stream_source_type: require,
+      guild_region: Chunk846519,
       participant_type: this.isOwner ? "streamer" : "receiver",
-      share_application_name: s,
-      share_application_id: l,
-      share_application_executable: c,
-      share_application_distributor: u,
-      share_application_distributor_game_id: d,
-      share_application_game_metadata: f,
+      share_application_name: Chunk570140,
+      share_application_id: Chunk861687,
+      share_application_executable: Chunk437263,
+      share_application_distributor: Chunk924557,
+      share_application_distributor_game_id: Chunk435064,
+      share_application_game_metadata: Chunk631053,
       video_layout: this.videoStreamStats.getLayout(),
-      client_event_source: r,
+      client_event_source: Chunk392711,
       voice_backend_version: this.voiceVersion,
       rtc_worker_backend_version: this.rtcWorkerVersion
     }
@@ -376,15 +377,15 @@ class Z extends l.Z {
   getSoundshareAnalyticsProperties() {
     return {
       rtc_connection_id: this.getRTCConnectionId(),
-      soundshare_experimental: E.Z.getExperimentalSoundshare()
+      soundshare_experimental: Chunk131951.Z.getExperimentalSoundshare()
     }
   }
   trackVideoStartStats() {
-    let e = this.isOwner ? (0, R.Z)() : null;
-    I.default.track(P.rMx.VIDEO_STREAM_STARTED, M(L({}, this.getStreamAnalyticsProperties(), e), {
-      connection_type: b.Z.getType(),
-      effective_connection_speed: b.Z.getEffectiveConnectionSpeed(),
-      service_provider: b.Z.getServiceProvider(),
+    let e = this.isOwner ? (0, Chunk297733.Z)() : null;
+    Chunk626135.default.track(Chunk981631.rMx.VIDEO_STREAM_STARTED, M(L({}, this.getStreamAnalyticsProperties(), module), {
+      connection_type: Chunk866960.Z.getType(),
+      effective_connection_speed: Chunk866960.Z.getEffectiveConnectionSpeed(),
+      service_provider: Chunk866960.Z.getServiceProvider(),
       duration_go_live_modal: this.analyticsContext.goLiveModalDurationMs
     }))
   }
@@ -424,7 +425,7 @@ class Z extends l.Z {
     }), a.getInboundParticipants().forEach(t => {
       var r;
       let l = a.getInboundStats(t);
-      (null != (r = null == l ? void 0 : l.num_frames) ? r : 0) > 0 && I.default.track(P.rMx.VIDEO_STREAM_ENDED, M(L({}, o, i, s, this.videoStreamStats.getStats(), l, this._soundshareStats.getStats(), this.getStreamAnalyticsProperties(), _, p), {
+      (null != (r = null == l ? true : l.num_frames) ? r : 0) > 0 && I.default.track(P.rMx.VIDEO_STREAM_ENDED, M(L({}, o, i, s, this.videoStreamStats.getStats(), l, this._soundshareStats.getStats(), this.getStreamAnalyticsProperties(), _, p), {
         app_hardware_acceleration_enabled: T.Z.getAppHardwareAccelerationEnabled(),
         channel_type: n,
         reason: e,
@@ -437,7 +438,7 @@ class Z extends l.Z {
   }
   getExtraConnectionOptions() {
     return {
-      streamUserId: (0, N.my)(this.streamKey).ownerId
+      streamUserId: (0, Chunk569545.my)(this.streamKey).ownerId
     }
   }
   constructor({
@@ -464,7 +465,7 @@ class Z extends l.Z {
       streamServerId: n,
       streamChannelId: u,
       parentMediaSessionId: c
-    }), D(this, "analyticsContext", void 0), D(this, "videoStreamStats", void 0), D(this, "streamContext", void 0), D(this, "streamKey", void 0), D(this, "isStreamer", void 0), D(this, "updateVideoStreamId", void 0), D(this, "bandwidthSamples", []), D(this, "goliveCurrentMaxResolution", void 0), D(this, "soundshareFailuresReported", {}), D(this, "errorTimer", new a.V7), this.streamContext = d, this.streamKey = t, this.isStreamer = l, this.videoStreamStats = new A.Z(r, this.isOwner), this.analyticsContext = o, this.updateVideoStreamId = i().debounce((e, t) => {
+    }), D(this, "analyticsContext", true), D(this, "videoStreamStats", true), D(this, "streamContext", true), D(this, "streamKey", true), D(this, "isStreamer", true), D(this, "updateVideoStreamId", true), D(this, "bandwidthSamples", []), D(this, "goliveCurrentMaxResolution", true), D(this, "soundshareFailuresReported", {}), D(this, "errorTimer", new a.V7), this.streamContext = d, this.streamKey = t, this.isStreamer = l, this.videoStreamStats = new A.Z(r, this.isOwner), this.analyticsContext = o, this.updateVideoStreamId = i().debounce((e, t) => {
       let {
         guildId: n,
         channelId: r,

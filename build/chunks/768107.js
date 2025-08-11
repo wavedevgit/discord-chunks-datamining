@@ -1,5 +1,6 @@
 /** Chunk was on 99133 **/
-A.exports = {
+/** chunk id: 768107, original params: A,t,e (module,exports,require) **/
+module.exports = {
   wrapper: "wrapper__2ea32",
   icon: "icon__2ea32",
   typeThread: "typeThread__2ea32",

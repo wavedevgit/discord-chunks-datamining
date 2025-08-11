@@ -1,0 +1,96 @@
+/** Chunk was on web.js **/
+/** chunk id: 532657, original params: e,t,n (module,exports,re quire) **/
+"use strict";
+require.d(exports, {
+  Z: () => p
+});
+var Chunk255367 = require("./255367.js"),
+  Chunk73800 = require("./73800.js"),
+  Chunk120356 = require("./120356.js"),
+  a = require.n(Chunk120356),
+  Chunk481060 = require("./481060.js"),
+  Chunk556638 = require("./556638.js"),
+  Chunk843280 = require("./843280.js");
+
+function u(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+
+function d(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      u(e, t, n[t])
+    })
+  }
+  return e
+}
+
+function f(e, t) {
+  var n = Object.keys(e);
+  if (Object.getOwnPropertySymbols) {
+    var r = Object.getOwnPropertySymbols(e);
+    t && (r = r.filter(function(t) {
+      return Object.getOwnPropertyDescriptor(e, t).enumerable
+    })), n.push.apply(n, r)
+  }
+  return n
+}
+
+function _(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
+    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+  }), e
+}
+
+function p(e) {
+  let {
+    text: t,
+    tooltipText: n,
+    textVariant: o = "text-xs/medium",
+    textClassName: u,
+    "aria-label": f,
+    icon: p,
+    canTruncate: h = true,
+    hideTooltip: m = false,
+    hideText: g = false
+  } = e, E = i.useRef(null), b = () => {
+    let e = null != n ? n : t;
+    return <r.Fragment>{p}{<s.Text variant={"text-sm/medium"} color={"none"} className={a()(c.tooltipText, u)}>{e}</s.Text>}</r.Fragment>
+  }, y = {
+    variant: o,
+    color: "none",
+    className: a()(h && c.truncated, u)
+  }, O = null != t && null == n && h, v = !m && (null != n || O || g);
+  return null == p && g ? null : v ? <s.ua7 text={b()} aria-label={f} tooltipContentClassName={a()(c.container, c.activitiesTooltip)} delay={l.X}>{e => {
+      let {
+        onMouseEnter: i,
+        onMouseLeave: o
+      } = e;
+      return (0, r.jsxs)("div", {
+        className: a()(c.container, c.textWithIconContainer),
+        onMouseEnter: () => {
+          let {
+            current: e
+          } = E, t = null != e && e.offsetWidth < e.scrollWidth;
+          (null != n || t || g) && (null == i || i())
+        },
+        onMouseLeave: o,
+        children: [p, !g && (0, r.jsx)(s.Text, _(d({
+          ref: E
+        }, y), {
+          children: t
+        }))]
+      })
+    }}</s.ua7> : <r.Fragment>{p}{!g && <s.Text{..._(d({}, y), {
+      children: t
+    })} />}</r.Fragment>
+}

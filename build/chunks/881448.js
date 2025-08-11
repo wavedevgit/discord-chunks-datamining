@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 881448, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   wrapper: "wrapper_fc8177",
   compact: "compact_fc8177",
   cozy: "cozy_fc8177",

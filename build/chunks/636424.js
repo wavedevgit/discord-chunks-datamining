@@ -1,4 +1,5 @@
 /** Chunk was on web.js **/
+/** chunk id: 636424, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 var r = {
   ellipsis: "ellipsis__2ef49",
@@ -72,4 +73,4 @@ var r = {
   activityDetails: "activityDetails__2ef49",
   activityStreamPreview: "activityStreamPreview__2ef49"
 };
-n.r(e.exports = r)
+require.r(module.exports = r)

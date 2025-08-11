@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 803905, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   $0: () => R,
   AN: () => k,
   Ct: () => A,
@@ -30,73 +31,73 @@ n.d(t, {
   wN: () => G,
   zZ: () => U,
   zm: () => x
-}), n(49124);
-var r = n(848246),
-  i = n(710845),
-  o = n(380684),
-  a = n(533293),
-  s = n(526998),
-  l = n(575691),
-  c = n(474936);
-let u = new i.Z("ProductCatalog.tsx"),
+}), require("./49124.js");
+var Chunk848246 = require("./848246.js"),
+  Chunk710845 = require("./710845.js"),
+  Chunk380684 = require("./380684.js"),
+  Chunk533293 = require("./533293.js"),
+  Chunk526998 = require("./526998.js"),
+  Chunk575691 = require("./575691.js"),
+  Chunk474936 = require("./474936.js");
+let u = new Chunk710845.Z("ProductCatalog.tsx"),
   d = Object.freeze({
-    [c.p9.TIER_0]: c.Si.TIER_0,
-    [c.p9.TIER_1]: c.Si.TIER_1,
-    [c.p9.TIER_2]: c.Si.TIER_2
+    [Chunk474936.p9.TIER_0]: Chunk474936.Si.TIER_0,
+    [Chunk474936.p9.TIER_1]: Chunk474936.Si.TIER_1,
+    [Chunk474936.p9.TIER_2]: Chunk474936.Si.TIER_2
   });
 
 function f(e, t) {
-  if (null == t || null == t.premiumType) return !1;
+  if (null == t || null == t.premiumType) returnfalse;
   try {
     let n = d[t.premiumType];
-    if (null == n) return u.warn("Cannot find the corresponding SKU to the user's premium type ".concat(t.premiumType)), !1;
+    if (null == n) return u.warn("Cannot find the corresponding SKU to the user's premium type ".concat(t.premiumType)), false;
     let r = F[n];
-    if (null == r) return u.warn("Cannot find the corresponding product catalog entry to the user's SKU ".concat(n, " and premium type ").concat(t.premiumType)), !1;
+    if (null == r) return u.warn("Cannot find the corresponding product catalog entry to the user's SKU ".concat(n, " and premium type ").concat(t.premiumType)), false;
     return r.skuFeatures.includes(e)
   } catch (e) {
     var n;
     u.error("Error while retrieving user's feature access: ".concat(null != (n = e.message) ? n : JSON.stringify(e)))
   }
-  return !1
+  returnfalse
 }
-class _ extends a.Z {
+class _ extends Chunk533293.Z {
   constructor(e, t) {
     super(e, e => f(this, e), t)
   }
 }
-let p = new _(r.q.ANIMATED_EMOJIS),
-  h = new _(r.q.EMOJIS_EVERYWHERE),
-  m = new _(r.q.STICKERS_EVERYWHERE),
-  g = new _(r.q.SOUNDBOARD_EVERYWHERE),
-  E = new _(r.q.CUSTOM_CALL_SOUNDS),
-  b = new _(r.q.PREMIUM_VOICE_FILTERS),
-  y = new _(r.q.ANIMATED_AVATAR),
-  O = new _(r.q.CUSTOM_DISCRIMINATOR),
-  v = new _(r.q.PREMIUM_GUILD_MEMBER_PROFILE),
+let p = new _(Chunk848246.q.ANIMATED_EMOJIS),
+  h = new _(Chunk848246.q.EMOJIS_EVERYWHERE),
+  m = new _(Chunk848246.q.STICKERS_EVERYWHERE),
+  g = new _(Chunk848246.q.SOUNDBOARD_EVERYWHERE),
+  E = new _(Chunk848246.q.CUSTOM_CALL_SOUNDS),
+  b = new _(Chunk848246.q.PREMIUM_VOICE_FILTERS),
+  y = new _(Chunk848246.q.ANIMATED_AVATAR),
+  O = new _(Chunk848246.q.CUSTOM_DISCRIMINATOR),
+  v = new _(Chunk848246.q.PREMIUM_GUILD_MEMBER_PROFILE),
   I = new _("profileBadges"),
-  T = new _(r.q.PROFILE_PREMIUM_FEATURES, "custom banner and avatar decoration"),
+  T = new _(Chunk848246.q.PROFILE_PREMIUM_FEATURES, "custom banner and avatar decoration"),
   S = new _("collectibles"),
   A = new _("appIcons"),
-  N = new _(r.q.CLIENT_THEMES),
+  N = new _(Chunk848246.q.CLIENT_THEMES),
   C = new _("boostDiscount"),
   R = new _("freeBoosts"),
-  P = new _(r.q.STREAM_MID_QUALITY),
-  w = new _(r.q.STREAM_HIGH_QUALITY),
-  D = new _(r.q.CUSTOM_NOTIFICATION_SOUNDS),
+  P = new _(Chunk848246.q.STREAM_MID_QUALITY),
+  w = new _(Chunk848246.q.STREAM_HIGH_QUALITY),
+  D = new _(Chunk848246.q.CUSTOM_NOTIFICATION_SOUNDS),
   L = new _("fancyVoiceChannelReactions"),
   x = new _("installPremiumApplications"),
   M = new _("redeemPremiumPerks"),
-  k = new _(r.q.VIDEO_FILTER_ASSETS);
-new a.Z(r.q.INCREASED_FILE_UPLOAD_SIZE, o.h);
-let j = new _(r.q.INCREASED_GUILD_LIMIT),
-  U = new _(r.q.INCREASED_MESSAGE_LENGTH),
+  k = new _(Chunk848246.q.VIDEO_FILTER_ASSETS);
+new Chunk533293.Z(Chunk848246.q.INCREASED_FILE_UPLOAD_SIZE, Chunk380684.h);
+let j = new _(Chunk848246.q.INCREASED_GUILD_LIMIT),
+  U = new _(Chunk848246.q.INCREASED_MESSAGE_LENGTH),
   G = new _("increasedVideoUploadQuality"),
   B = new _("uploadLargeFiles"),
-  Z = new _(r.q.CHAT_WALLPAPERS),
+  Z = new _(Chunk848246.q.CHAT_WALLPAPERS),
   F = Object.freeze({
-    [c.Si.TIER_0]: new l.Z(c.Si.TIER_0, [p, h, m, I, k, G, B, A]),
-    [c.Si.TIER_1]: new l.Z(c.Si.TIER_1, [p, h, y, O, I, C, P, L, G, B, A]),
-    [c.Si.TIER_2]: new l.Z(c.Si.TIER_2, [p, h, m, g, E, y, O, v, I, T, N, C, R, P, w, L, x, M, k, j, U, G, B, A, S, D, b, Z])
+    [Chunk474936.Si.TIER_0]: new Chunk575691.Z(Chunk474936.Si.TIER_0, [p, h, m, I, k, G, B, A]),
+    [Chunk474936.Si.TIER_1]: new Chunk575691.Z(Chunk474936.Si.TIER_1, [p, h, y, O, I, C, P, L, G, B, A]),
+    [Chunk474936.Si.TIER_2]: new Chunk575691.Z(Chunk474936.Si.TIER_2, [p, h, m, g, E, y, O, v, I, T, N, C, R, P, w, L, x, M, k, j, U, G, B, A, S, D, b, Z])
   }),
   V = [C, R];
 

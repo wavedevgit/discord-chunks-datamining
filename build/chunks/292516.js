@@ -1,4 +1,5 @@
 /** Chunk was on web.js **/
+/** chunk id: 292516, original params: e,t,n (module,exports,re quire) **/
 var r = {
   "./bg": "853343",
   "./bg.json": "853343",
@@ -79,4 +80,4 @@ function o(e) {
 }
 i.keys = function() {
   return Object.keys(r)
-}, i.resolve = o, e.exports = i, i.id = 292516
+}, i.resolve = o, module.exports = i, i.id = 292516

@@ -1,9 +1,10 @@
 /** Chunk was on web.js **/
+/** chunk id: 985547, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-var r = n(970661),
-  i = n(854160),
-  o = n(896933),
-  a = n(983584);
+var Chunk970661 = require("./970661.js"),
+  Chunk854160 = require("./854160.js"),
+  Chunk896933 = require("./896933.js"),
+  Chunk983584 = require("./983584.js");
 
 function s(e, t, n) {
   var r = "string" == typeof e ? s.__parse(e) : e;
@@ -18,8 +19,8 @@ function s(e, t, n) {
     return l._format(a, e)
   }
 }
-t.default = s, i.defineProperty(s, "formats", {
-  enumerable: !0,
+exports.default = s, Chunk854160.defineProperty(s, "formats", {
+  enumerable: true,
   value: {
     number: {
       currency: {
@@ -76,19 +77,19 @@ t.default = s, i.defineProperty(s, "formats", {
       }
     }
   }
-}), i.defineProperty(s, "__localeData__", {
-  value: i.objCreate(null)
-}), i.defineProperty(s, "__addLocaleData", {
+}), Chunk854160.defineProperty(s, "__localeData__", {
+  value: Chunk854160.objCreate(null)
+}), Chunk854160.defineProperty(s, "__addLocaleData", {
   value: function(e) {
     if (!(e && e.locale)) throw Error("Locale data provided to IntlMessageFormat is missing a `locale` property");
     s.__localeData__[e.locale.toLowerCase()] = e
   }
-}), i.defineProperty(s, "__parse", {
-  value: a.default.parse
-}), i.defineProperty(s, "defaultLocale", {
-  enumerable: !0,
-  writable: !0,
-  value: void 0
+}), Chunk854160.defineProperty(s, "__parse", {
+  value: Chunk983584.default.parse
+}), Chunk854160.defineProperty(s, "defaultLocale", {
+  enumerable: true,
+  writable: true,
+  value: true
 }), s.prototype.resolvedOptions = function() {
   return {
     locale: this._locale

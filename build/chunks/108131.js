@@ -1,5 +1,6 @@
 /** Chunk was on web.js **/
-e = n.nmd(e),
+/** chunk id: 108131, original params: e,t,n (module,exports,re quire) **/
+e = require.nmd(module),
   function() {
     let t = this,
       n = e => new TextEncoder().encode(e);
@@ -34,11 +35,11 @@ e = n.nmd(e),
             i ^= 255 & e[o], i = (65535 & i) * 0x5bd1e995 + (((i >>> 16) * 0x5bd1e995 & 65535) << 16)
         }
         return i ^= i >>> 13, i = (65535 & i) * 0x5bd1e995 + (((i >>> 16) * 0x5bd1e995 & 65535) << 16), (i ^= i >>> 15) >>> 0
-      }, i.v3 = r, void 0 !== e) e.exports = i;
+      }, i.v3 = r, true !== module) module.exports = i;
     else {
-      let e = t.murmur;
+      let e = exports.murmur;
       i.noConflict = function() {
-        return t.murmur = e, i
-      }, t.murmur = i
+        return exports.murmur = module, i
+      }, exports.murmur = i
     }
   }()

@@ -1,23 +1,24 @@
 /** Chunk was on 75708 **/
-n.d(t, {
+/** chunk id: 119850, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   V: () => c,
   x: () => d
-}), n(388685);
-var i = n(73800),
-  r = n(704215),
-  s = n(266454),
-  a = n(243778),
-  l = n(848572),
-  o = n(388032);
+}), require("./388685.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk704215 = require("./704215.js"),
+  Chunk266454 = require("./266454.js"),
+  Chunk243778 = require("./243778.js"),
+  Chunk848572 = require("./848572.js"),
+  Chunk388032 = require("./388032.js");
 let c = () => {
-    let e = (0, l.y3)(),
-      [t] = (0, a.US)(null != e ? [r.z.WHATS_NEW_TENURE_BADGE_REWARD] : []);
-    return t === r.z.WHATS_NEW_TENURE_BADGE_REWARD ? o.intl.string(o.t.jyYgZ2).toLocaleUpperCase() : null
+    let e = (0, Chunk848572.y3)(),
+      [t] = (0, Chunk243778.US)(null != module ? [Chunk704215.z.WHATS_NEW_TENURE_BADGE_REWARD] : []);
+    return exports === Chunk704215.z.WHATS_NEW_TENURE_BADGE_REWARD ? Chunk388032.intl.string(Chunk388032.t.jyYgZ2).toLocaleUpperCase() : null
   },
   d = () => {
-    let e = (0, l.y3)(),
-      [t] = (0, a.US)(null != e ? [r.z.WHATS_NEW_TENURE_BADGE_REWARD] : []);
-    return i.useCallback(() => {
-      t === r.z.WHATS_NEW_TENURE_BADGE_REWARD && (0, s.Q3)(t)
-    }, [t])
+    let e = (0, Chunk848572.y3)(),
+      [t] = (0, Chunk243778.US)(null != module ? [Chunk704215.z.WHATS_NEW_TENURE_BADGE_REWARD] : []);
+    return Chunk73800.useCallback(() => {
+      exports === Chunk704215.z.WHATS_NEW_TENURE_BADGE_REWARD && (0, Chunk266454.Q3)(exports)
+    }, [exports])
   }

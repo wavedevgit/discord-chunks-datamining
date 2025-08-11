@@ -1,9 +1,10 @@
 /** Chunk was on 93886 **/
-a.d(t, {
+/** chunk id: 206878, original params: e,t,a (module,exports,require) **/
+require.d(exports, {
   g: () => O
-}), a(388685), a(35282);
-var n = a(73800),
-  r = a(281598);
+}), require("./388685.js"), require("./35282.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk281598 = require("./281598.js");
 
 function l(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -15,9 +16,9 @@ function l(e) {
       var n;
       n = a[t], t in e ? Object.defineProperty(e, t, {
         value: n,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
+        enumerable: true,
+        configurable: true,
+        writable: true
       }) : e[t] = n
     })
   }
@@ -36,7 +37,7 @@ function i(e, t) {
     Object.defineProperty(e, a, Object.getOwnPropertyDescriptor(t, a))
   }), e
 }
-let s = new Set([r.jE.SHOP_ALL_BANNER_STATIC, r.jE.HERO_BANNER_STATIC, r.jE.HERO_LOGO, r.jE.PDP_BACKGROUND, r.jE.PDP_LOGO, r.jE.MOBILE_BANNER, r.jE.MOBILE_BACKGROUND]),
+let s = new Set([Chunk281598.jE.SHOP_ALL_BANNER_STATIC, Chunk281598.jE.HERO_BANNER_STATIC, Chunk281598.jE.HERO_LOGO, Chunk281598.jE.PDP_BACKGROUND, Chunk281598.jE.PDP_LOGO, Chunk281598.jE.MOBILE_BANNER, Chunk281598.jE.MOBILE_BACKGROUND]),
   o = ["intro", "idle", "reduced_motion", "static", "thumbnail"],
   c = {
     max: 5e6,
@@ -59,25 +60,25 @@ let s = new Set([r.jE.SHOP_ALL_BANNER_STATIC, r.jE.HERO_BANNER_STATIC, r.jE.HERO
     warn: 5e4
   },
   h = {
-    [r.aB.PROFILE_EFFECT]: c,
-    [r.aB.AVATAR_DECORATION]: d,
-    [r.jE.HERO_BANNER_ANIMATED]: c,
-    [r.jE.SHOP_ALL_BANNER_ANIMATED]: c,
-    [r.jE.SHOP_BUTTON_BG_HOVER]: d,
-    [r.jE.SHOP_BUTTON_BG_HOVER_DARK]: d,
-    [r.jE.SHOP_BUTTON_BG_HOVER_LIGHT]: d,
-    [r.jE.SHOP_BUTTON_BG_RESTING]: d,
-    [r.jE.SHOP_BUTTON_BG_RESTING_DARK]: d,
-    [r.jE.SHOP_BUTTON_BG_RESTING_LIGHT]: d,
-    [r.jE.HERO_BANNER_STATIC]: u,
-    [r.jE.SHOP_ALL_BANNER_STATIC]: u,
-    [r.jE.UPSELL_BANNER]: m,
-    [r.jE.UPSELL_BANNER_POPOUT]: x,
-    [r.jE.MOBILE_BANNER]: m,
-    [r.jE.MOBILE_BACKGROUND]: x,
-    [r.jE.PDP_BACKGROUND]: x,
-    [r.jE.PDP_LOGO]: x,
-    [r.jE.COACHTIP_AVATAR]: x
+    [Chunk281598.aB.PROFILE_EFFECT]: c,
+    [Chunk281598.aB.AVATAR_DECORATION]: d,
+    [Chunk281598.jE.HERO_BANNER_ANIMATED]: c,
+    [Chunk281598.jE.SHOP_ALL_BANNER_ANIMATED]: c,
+    [Chunk281598.jE.SHOP_BUTTON_BG_HOVER]: d,
+    [Chunk281598.jE.SHOP_BUTTON_BG_HOVER_DARK]: d,
+    [Chunk281598.jE.SHOP_BUTTON_BG_HOVER_LIGHT]: d,
+    [Chunk281598.jE.SHOP_BUTTON_BG_RESTING]: d,
+    [Chunk281598.jE.SHOP_BUTTON_BG_RESTING_DARK]: d,
+    [Chunk281598.jE.SHOP_BUTTON_BG_RESTING_LIGHT]: d,
+    [Chunk281598.jE.HERO_BANNER_STATIC]: u,
+    [Chunk281598.jE.SHOP_ALL_BANNER_STATIC]: u,
+    [Chunk281598.jE.UPSELL_BANNER]: m,
+    [Chunk281598.jE.UPSELL_BANNER_POPOUT]: x,
+    [Chunk281598.jE.MOBILE_BANNER]: m,
+    [Chunk281598.jE.MOBILE_BACKGROUND]: x,
+    [Chunk281598.jE.PDP_BACKGROUND]: x,
+    [Chunk281598.jE.PDP_LOGO]: x,
+    [Chunk281598.jE.COACHTIP_AVATAR]: x
   },
   p = async e => {
     let t = Object.values(r.CM),
@@ -182,8 +183,8 @@ let s = new Set([r.jE.SHOP_ALL_BANNER_STATIC, r.jE.HERO_BANNER_STATIC, r.jE.HERO
       addWarning: t
     })
   }, O = () => {
-    let [e, t] = n.useState(!1), [a, s] = n.useState({}), [o, c] = n.useState({}), d = n.useCallback(function(e) {
-      let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : [];
+    let [e, t] = Chunk73800.useState(false), [a, s] = Chunk73800.useState({}), [o, c] = Chunk73800.useState({}), d = Chunk73800.useCallback(function(e) {
+      let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : [];
       c(a => {
         var n;
         let r = null != (n = a[e]) ? n : [];
@@ -191,8 +192,8 @@ let s = new Set([r.jE.SHOP_ALL_BANNER_STATIC, r.jE.HERO_BANNER_STATIC, r.jE.HERO
           [e]: [...r, ...t]
         })
       })
-    }, []), u = n.useCallback(function(e) {
-      let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : [];
+    }, []), u = Chunk73800.useCallback(function(e) {
+      let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : [];
       s(a => {
         var n;
         let r = null != (n = a[e]) ? n : [];
@@ -200,14 +201,14 @@ let s = new Set([r.jE.SHOP_ALL_BANNER_STATIC, r.jE.HERO_BANNER_STATIC, r.jE.HERO
           [e]: [...r, ...t]
         })
       })
-    }, []), m = n.useCallback(() => {
-      t(!1), c({}), s({})
+    }, []), m = Chunk73800.useCallback(() => {
+      exports(false), c({}), s({})
     }, []);
     return {
-      validationComplete: e,
+      validationComplete: module,
       errors: o,
-      warnings: a,
-      validateShopAssetPackage: n.useCallback(async e => {
+      warnings: require,
+      validateShopAssetPackage: Chunk73800.useCallback(async e => {
         try {
           if (0 === e.length) return void d("No files found");
           if (e.length > 1) return void d("Uploaded multiple files. Expected 1 directory.");
@@ -218,7 +219,7 @@ let s = new Set([r.jE.SHOP_ALL_BANNER_STATIC, r.jE.HERO_BANNER_STATIC, r.jE.HERO
           let n = await (0, r.LY)([t]);
           N(n, u, d)
         } finally {
-          t(!0)
+          t(true)
         }
       }, [d, u]),
       reset: m

@@ -1,1 +1,0 @@
-{"id":"726525","type":"experiment","data":{"kind":"user","id":"2025-04_user_profile_modal_v2","label":"User Profile Modal V2 Experiment","defaultConfig":{"isEnabled":false},"treatments":[{"id":1,"label":"User Profile Modal V2 Enabled","config":{"isEnabled":false}}]},"fromModule":{"id":"web.js"}}

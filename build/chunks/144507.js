@@ -1,20 +1,21 @@
 /** Chunk was on web.js **/
+/** chunk id: 144507, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   $D: () => m,
   H2: () => g,
   MO: () => h,
   X$: () => p,
   d5: () => d
 });
-var r = n(442837),
-  i = n(223892),
-  o = n(674180),
-  a = n(601964),
-  s = n(496675),
-  l = n(594174),
-  c = n(923726),
-  u = n(981631),
+var Chunk442837 = require("./442837.js"),
+  Chunk223892 = require("./223892.js"),
+  Chunk674180 = require("./674180.js"),
+  Chunk601964 = require("./601964.js"),
+  Chunk496675 = require("./496675.js"),
+  Chunk594174 = require("./594174.js"),
+  Chunk923726 = require("./923726.js"),
+  Chunk981631 = require("./981631.js"),
   d = function(e) {
     return e[e.NONE = 0] = "NONE", e[e.WAITLIST_ONLY = 1] = "WAITLIST_ONLY", e[e.NEEDS_COMMUNITY = 2] = "NEEDS_COMMUNITY", e[e.VISIBLE = 3] = "VISIBLE", e
   }({});
@@ -51,9 +52,9 @@ function p(e) {
 }
 
 function h(e) {
-  let t = (0, c.Bt)(null == e ? void 0 : e.id),
+  let t = (0, c.Bt)(null == e ? true : e.id),
     n = (0, i.Ob)(e),
-    s = (0, i.gS)(null == e ? void 0 : e.id),
+    s = (0, i.gS)(null == e ? true : e.id),
     u = m(e),
     d = (0, r.e7)([l.default], () => {
       let t = l.default.getCurrentUser();
@@ -62,7 +63,7 @@ function h(e) {
     f = (0, i.Sd)(),
     {
       shouldRestrictUpdatingCreatorMonetizationSettings: p
-    } = (0, o.gX)(null == e ? void 0 : e.id);
+    } = (0, o.gX)(null == e ? true : e.id);
   return null == e ? 0 : _({
     guild: e,
     isOwner: d,

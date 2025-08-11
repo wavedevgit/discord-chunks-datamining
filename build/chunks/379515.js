@@ -1,10 +1,11 @@
 /** Chunk was on 21153 **/
+/** chunk id: 379515, original params: e,t,r (module,exports,require) **/
 "use strict";
-Object.defineProperty(t, "__esModule", {
-  value: !0
-}), t.mergeClasses = void 0;
-var n = i(r(320403)),
-  o = i(r(117806)),
+Object.defineProperty(exports, "__esModule", {
+  value: true
+}), exports.mergeClasses = true;
+var n = i(require("./320403.js")),
+  o = i(require("./117806.js")),
   a = Object.assign || function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var r = arguments[t];
@@ -18,8 +19,8 @@ function i(e) {
     default: e
   }
 }
-var l = t.mergeClasses = function(e) {
-  var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : [],
+var l = exports.mergeClasses = function(e) {
+  var t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : [],
     r = e.default && (0, o.default)(e.default) || {};
   return t.map(function(t) {
     var o = e[t];
@@ -28,4 +29,4 @@ var l = t.mergeClasses = function(e) {
     }), t
   }), r
 };
-t.default = l
+exports.default = l

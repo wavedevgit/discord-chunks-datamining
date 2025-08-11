@@ -1,9 +1,10 @@
 /** Chunk was on web.js **/
+/** chunk id: 582142, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 
 function r(e) {
   return null == e.guild_id
 }
-n.d(t, {
+require.d(exports, {
   p: () => r
 })

@@ -1,1 +1,0 @@
-{"id":"36927","type":"experiment","data":{"id":"2025-05_tenure_ambient_badges","kind":"user","label":"Tenure Ambient Badges","defaultConfig":{"enabled":false},"commonTriggerPoint":"i.$P.CONNECTION_OPEN","treatments":[{"id":1,"label":"Enables new ambient badges for the Nitro tenure badge tooltips.","config":{"enabled":false}}]},"fromModule":{"id":"web.js"}}

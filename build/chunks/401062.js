@@ -1,21 +1,22 @@
 /** Chunk was on web.js **/
+/** chunk id: 401062, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   kq: () => g,
   vy: () => m
 });
-var r = n(392711),
-  i = n(544891),
-  o = n(100527),
-  a = n(339085),
-  s = n(697426),
-  l = n(100986),
-  c = n(944486),
-  u = n(696900),
-  d = n(963838),
-  f = n(353368),
-  _ = n(981631),
-  p = n(710111);
+var Chunk392711 = require("./392711.js"),
+  Chunk544891 = require("./544891.js"),
+  Chunk100527 = require("./100527.js"),
+  Chunk339085 = require("./339085.js"),
+  Chunk697426 = require("./697426.js"),
+  Chunk100986 = require("./100986.js"),
+  Chunk944486 = require("./944486.js"),
+  Chunk696900 = require("./696900.js"),
+  Chunk963838 = require("./963838.js"),
+  Chunk353368 = require("./353368.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk710111 = require("./710111.js");
 
 function h(e) {
   let t = new AbortController,
@@ -42,7 +43,7 @@ function m(e, t, n) {
     body: m,
     signal: a.signal,
     onRequestProgress: c,
-    rejectWithError: !0
+    rejectWithError: true
   }).then(_.VqG, () => {
     if (a.signal.aborted) return
   }), (0, l.Z)([o.Z.CHANNEL_CALL], n, t, s.jy.ENTRY)
@@ -58,14 +59,14 @@ function g(e, t, n, r) {
     m = {
       sound_id: t.soundId,
       emoji_id: t.emojiId,
-      emoji_name: null != (c = t.emojiName) ? c : null == u ? void 0 : u.name
+      emoji_name: null != (c = t.emojiName) ? c : null == u ? true : u.name
     };
   t.guildId !== p.X8 && (m.source_guild_id = t.guildId), i.tn.post({
     url: _.ANM.SEND_SOUNDBOARD_SOUND(e),
     body: m,
     signal: d.signal,
     onRequestProgress: f,
-    rejectWithError: !0
+    rejectWithError: true
   }).then(_.VqG, () => {
     if (d.signal.aborted) return
   }), (0, l.Z)(null != r ? r : [], n, t, s.jy.DEFAULT)

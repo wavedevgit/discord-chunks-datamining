@@ -1,16 +1,17 @@
 /** Chunk was on web.js **/
+/** chunk id: 91641, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   E: () => s
-}), n(415506), n(388685);
-var r = n(633289);
+}), require("./415506.js"), require("./388685.js");
+var Chunk633289 = require("./633289.js");
 
 function i(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -32,19 +33,19 @@ function a(e, t, n) {
     e.trackExposure(n)
   })
 }
-n(987338);
+require("./987338.js");
 class s {
   registeredExperimentIds() {
     return this.experiments.map(e => e.definition.id)
   }
   trigger() {
-    let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
-    a(this.triggerPoint, this.experiments, o({}, this.params, e)), r.Z.trackCommonTriggerPointExposures(this.params.location)
+    let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {};
+    a(this.triggerPoint, this.experiments, o({}, this.params, module)), Chunk633289.Z.trackCommonTriggerPointExposures(this.params.location)
   }
   getExperiments() {
     return this.experiments
   }
   constructor(e, t, n) {
-    i(this, "experiments", void 0), i(this, "triggerPoint", void 0), i(this, "params", void 0), this.experiments = e, this.triggerPoint = t, this.params = n
+    i(this, "experiments", true), i(this, "triggerPoint", true), i(this, "params", true), this.experiments = e, this.triggerPoint = t, this.params = n
   }
 }

@@ -1,8 +1,9 @@
 /** Chunk was on 22988 **/
-n.d(t, {
+/** chunk id: 800223, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   c: () => i
 });
-var r = n(570140);
+var Chunk570140 = require("./570140.js");
 
 function i(e, t, n) {
   return r.Z.dispatch({
@@ -10,5 +11,5 @@ function i(e, t, n) {
     guildId: e,
     enabled: t,
     channelId: null != n ? n : null
-  }), Promise.resolve(!0)
+  }), Promise.resolve(true)
 }

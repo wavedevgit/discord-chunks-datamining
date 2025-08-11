@@ -1,13 +1,14 @@
 /** Chunk was on 81709 **/
-n.d(t, {
+/** chunk id: 501090, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   b: () => c,
   q: () => l
-}), n(388685);
-var i = n(73800),
-  r = n(626135),
-  a = n(74538),
-  s = n(45474),
-  o = n(981631);
+}), require("./388685.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk626135 = require("./626135.js"),
+  Chunk74538 = require("./74538.js"),
+  Chunk45474 = require("./45474.js"),
+  Chunk981631 = require("./981631.js");
 let l = (e, t, n) => {
   let [a, l] = i.useState(e), [u, d] = i.useState(Date.now()), [m] = i.useState(Date.now()), p = i.useCallback(e => {
     r.default.track(o.rMx.CANCELLATION_FLOW_STEP, function(e) {
@@ -20,9 +21,9 @@ let l = (e, t, n) => {
           var i;
           i = n[t], t in e ? Object.defineProperty(e, t, {
             value: i,
-            enumerable: !0,
-            configurable: !0,
-            writable: !0
+            enumerable: true,
+            configurable: true,
+            writable: true
           }) : e[t] = i
         })
       }
@@ -43,7 +44,7 @@ function c(e) {
   return {
     subscription_id: e.id,
     subscription_type: e.type,
-    subscription_plan_id: null == (t = (0, a.Af)(e)) ? void 0 : t.id,
+    subscription_plan_id: null == (t = (0, a.Af)(e)) ? true : t.id,
     subscription_plan_gateway_plan_id: e.paymentGatewayPlanId,
     subscription_status: e.status
   }

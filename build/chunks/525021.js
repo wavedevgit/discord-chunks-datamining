@@ -1,4 +1,5 @@
 /** Chunk was on web.js **/
+/** chunk id: 525021, original params: e (module,exports,re quire) **/
 function t(e, t, n, r, i, o, a) {
   try {
     var s = e[o](a),
@@ -8,7 +9,7 @@ function t(e, t, n, r, i, o, a) {
   }
   s.done ? t(l) : Promise.resolve(l).then(r, i)
 }
-e.exports = function(e) {
+module.exports = function(e) {
   return function() {
     var n = this,
       r = arguments;
@@ -22,7 +23,7 @@ e.exports = function(e) {
       function l(e) {
         t(a, i, o, s, l, "throw", e)
       }
-      s(void 0)
+      s(true)
     })
   }
-}, e.exports.__esModule = !0, e.exports.default = e.exports
+}, module.exports.__esModule = true, module.exports.default = module.exports

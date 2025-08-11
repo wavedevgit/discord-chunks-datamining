@@ -1,0 +1,56 @@
+/** Chunk was on 40283 **/
+/** chunk id: 398048, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
+  Z: () => u
+});
+var Chunk255367 = require("./255367.js");
+require("./73800.js");
+var Chunk442837 = require("./442837.js"),
+  Chunk481060 = require("./481060.js"),
+  Chunk496675 = require("./496675.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk388032 = require("./388032.jsx");
+
+function u(e, t) {
+  let u = (0, c.e7)([i.Z], () => i.Z.can(o.Plq.MANAGE_CHANNELS, e), [e]);
+  return __OVERLAY__ || !u ? null : <l.sNh id={"clone-channel"} label={a.intl.string(a.t.dEaPc3)} action={() => (0, l.ZDy)(async () => {
+      let {
+        default: c
+      } = await Promise.all([n.e("45094"), n.e("45822")]).then(n.bind(n, 218613));
+      return n => {
+        var l, i;
+        return (0, r.jsx)(c, (l = function(e) {
+          for (var t = 1; t < arguments.length; t++) {
+            var n = null != arguments[t] ? arguments[t] : {},
+              r = Object.keys(n);
+            "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+              return Object.getOwnPropertyDescriptor(n, e).enumerable
+            }))), r.forEach(function(t) {
+              var r;
+              r = n[t], t in e ? Object.defineProperty(e, t, {
+                value: r,
+                enumerable: true,
+                configurable: true,
+                writable: true
+              }) : e[t] = r
+            })
+          }
+          return e
+        }({}, n), i = i = {
+          channelType: e.type,
+          guildId: t.id,
+          categoryId: e.parent_id,
+          cloneChannelId: e.id
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
+          var n = Object.keys(e);
+          if (Object.getOwnPropertySymbols) {
+            var r = Object.getOwnPropertySymbols(e);
+            n.push.apply(n, r)
+          }
+          return n
+        })(Object(i)).forEach(function(e) {
+          Object.defineProperty(l, e, Object.getOwnPropertyDescriptor(i, e))
+        }), l))
+      }
+    })} />
+}

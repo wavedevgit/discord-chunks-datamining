@@ -1,19 +1,20 @@
 /** Chunk was on web.js **/
+/** chunk id: 800927, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => T
-}), n(413496), n(433524), n(35282), n(704826), n(804061);
-var r = n(512722),
-  i = n.n(r),
-  o = n(159635),
-  a = n.n(o);
+}), require("./413496.js"), require("./433524.js"), require("./35282.js"), require("./704826.js"), require("./804061.js");
+var Chunk512722 = require("./512722.js"),
+  i = require.n(Chunk512722),
+  Chunk159635 = require("./159635.js"),
+  a = require.n(Chunk159635);
 
 function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -70,7 +71,7 @@ let d = /\n{2,}$/,
     parse: (e, t, n) => {
       let r = e[2],
         o = r.length > 1,
-        a = o ? Math.min(v, Math.max(O, +r)) : void 0,
+        a = o ? Math.min(v, Math.max(O, +r)) : true,
         s = e[0].replace(d, "\n"),
         c = h.exec(s),
         f = null != c ? c[0].length : 0,
@@ -80,21 +81,21 @@ let d = /\n{2,}$/,
         b = RegExp("^ {1," + f + "}", "gm"),
         y = s.match(E);
       i()(null != y, "markup list items can not be parsed.");
-      let T = !1;
+      let T = false;
       return {
         ordered: o,
         start: a,
         items: y.map((e, r) => {
           let i, o = e.replace(h, "").replace(b, ""),
             a = r === y.length - 1,
-            s = -1 !== o.indexOf("\n\n") || a && T;
+            s = false !== o.indexOf("\n\n") || a && T;
           T = s;
           let c = n.inline,
             d = n._list,
             f = n._listLevel;
-          n._list = !0, n._listLevel = (null != f ? f : 0) + 1, s ? (n.inline = !1, i = o.replace(g, "\n\n")) : (n.inline = !0, i = o.replace(g, ""));
+          n._list = true, n._listLevel = (null != f ? f : 0) + 1, s ? (n.inline = false, i = o.replace(g, "\n\n")) : (n.inline = true, i = o.replace(g, ""));
           let _ = I(t(i, u(l({}, n), {
-            allowHeading: !1
+            allowHeading: false
           })));
           return n.inline = c, n._list = d, n._listLevel = f, _
         })

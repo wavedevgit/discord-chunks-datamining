@@ -1,15 +1,16 @@
 /** Chunk was on 27978 **/
-n.d(t, {
+/** chunk id: 962220, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => f
 });
-var r, i, l = n(39612),
-  o = n(271579),
-  s = n(756647),
-  a = n(625128),
-  c = n(626135),
-  u = n(954824),
-  d = n(751189),
-  h = n(981631);
+var r, i, Chunk39612 = require("./39612.js"),
+  Chunk271579 = require("./271579.js"),
+  Chunk756647 = require("./756647.js"),
+  Chunk625128 = require("./625128.js"),
+  Chunk626135 = require("./626135.js"),
+  Chunk954824 = require("./954824.js"),
+  Chunk751189 = require("./751189.js"),
+  Chunk981631 = require("./981631.js");
 let p = "template",
   f = (r = function(e) {
     for (var t = 1; t < arguments.length; t++) {
@@ -21,19 +22,19 @@ let p = "template",
         var r;
         r = n[t], t in e ? Object.defineProperty(e, t, {
           value: r,
-          enumerable: !0,
-          configurable: !0,
-          writable: !0
+          enumerable: true,
+          configurable: true,
+          writable: true
         }) : e[t] = r
       })
     }
     return e
-  }({}, d.Z), i = i = {
+  }({}, Chunk751189.Z), i = i = {
     openNativeAppModal(e) {
       a.Z.openNativeAppModal(e, h.Etm.GUILD_TEMPLATE_BROWSER)
     },
     openMobileApp(e, t) {
-      if (null != platform.ua && platform.ua.toLowerCase().indexOf("googlebot") > -1) return;
+      if (null != platform.ua && platform.ua.toLowerCase().indexOf("googlebot") > false) return;
       let n = null != e ? (0, l.Oh)(e) : (0, l.Gk)(),
         r = (0, o.WS)(),
         i = (0, o.ZP)(n, {

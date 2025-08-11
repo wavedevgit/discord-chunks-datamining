@@ -1,4 +1,5 @@
 /** Chunk was on web.js **/
+/** chunk id: 580315, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 var r = {
   progress: "progress__58525",
@@ -8,4 +9,4 @@ var r = {
   small: "small__58525",
   large: "large__58525"
 };
-n.r(e.exports = r)
+require.r(module.exports = r)

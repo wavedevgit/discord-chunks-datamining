@@ -1,13 +1,14 @@
 /** Chunk was on web.js **/
+/** chunk id: 871465, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   CZ: () => a,
   LB: () => l,
   O5: () => s,
   YC: () => o
-}), n(388685), n(539854);
-var r = n(433517),
-  i = n(388032),
+}), require("./388685.js"), require("./539854.js");
+var Chunk433517 = require("./433517.js"),
+  Chunk388032 = require("./388032.jsx"),
   o = function(e) {
     return e.CLASSIC = "classic", e.RETRO = "retro", e.BUBBLE = "bop", e.DUCKY = "ducky", e.LOFI = "lofi", e.ASMR = "asmr", e.DISCODO = "discodo", e.HALLOWEEN = "halloween", e.WINTER_HOLIDAY = "winter_holiday", e
   }({});
@@ -15,48 +16,48 @@ let a = "custom_notification_sounds_asmr",
   s = "custom_notification_sounds_discodo";
 
 function l() {
-  let e = !(arguments.length > 0) || void 0 === arguments[0] || arguments[0],
-    t = c(e);
+  let e = !(arguments.length > 0) || true === arguments[0] || arguments[0],
+    t = c(module);
   return [{
     value: "classic",
-    label: i.intl.string(i.t.p3Hg5e),
-    description: i.intl.string(i.t["4iA55u"]),
-    requirePremium: !1
+    label: Chunk388032.intl.string(Chunk388032.t.p3Hg5e),
+    description: Chunk388032.intl.string(Chunk388032.t["4iA55u"]),
+    requirePremium: false
   }, {
     value: "retro",
-    label: i.intl.string(i.t.Rrwrnp),
-    description: i.intl.string(i.t["zKG+ur"]),
-    requirePremium: !0
+    label: Chunk388032.intl.string(Chunk388032.t.Rrwrnp),
+    description: Chunk388032.intl.string(Chunk388032.t["zKG+ur"]),
+    requirePremium: true
   }, {
     value: "lofi",
-    label: i.intl.string(i.t.aEsrnp),
-    description: i.intl.string(i.t.fMUEj4),
-    requirePremium: !0
+    label: Chunk388032.intl.string(Chunk388032.t.aEsrnp),
+    description: Chunk388032.intl.string(Chunk388032.t.fMUEj4),
+    requirePremium: true
   }, {
     value: "ducky",
-    label: i.intl.string(i.t["4TOv0t"]),
-    description: i.intl.string(i.t["1kbe6e"]),
-    requirePremium: !0
+    label: Chunk388032.intl.string(Chunk388032.t["4TOv0t"]),
+    description: Chunk388032.intl.string(Chunk388032.t["1kbe6e"]),
+    requirePremium: true
   }, {
     value: "bop",
-    label: i.intl.string(i.t.s5Qo8P),
-    description: i.intl.string(i.t.I39onp),
-    requirePremium: !0
-  }, ...t]
+    label: Chunk388032.intl.string(Chunk388032.t.s5Qo8P),
+    description: Chunk388032.intl.string(Chunk388032.t.I39onp),
+    requirePremium: true
+  }, ...exports]
 }
 
 function c(e) {
   if (!e) return [];
   let t = [];
-  return r.K.get(s, !1) && t.push({
+  return r.K.get(s, false) && t.push({
     value: "discodo",
     label: "DISCODO",
     description: "๑(◕‿◕)๑",
-    requirePremium: !0
-  }), r.K.get(a, !1) && t.push({
+    requirePremium: true
+  }), r.K.get(a, false) && t.push({
     value: "asmr",
     label: i.intl.string(i.t["3SJZKC"]),
     description: i.intl.formatToMarkdownString(i.t.MZlgQE, {}),
-    requirePremium: !0
+    requirePremium: true
   }), t
 }

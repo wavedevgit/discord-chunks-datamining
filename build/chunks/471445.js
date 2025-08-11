@@ -1,24 +1,25 @@
 /** Chunk was on web.js **/
+/** chunk id: 471445, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   KS: () => p,
   Th: () => h,
   bT: () => _
 });
-var r = n(481060),
-  i = n(622822),
-  o = n(281956),
-  a = n(271383),
-  s = n(430824),
-  l = n(594174),
-  c = n(447003),
-  u = n(176505),
-  d = n(981631),
-  f = n(388032);
+var Chunk481060 = require("./481060.js"),
+  Chunk622822 = require("./622822.js"),
+  Chunk281956 = require("./281956.js"),
+  Chunk271383 = require("./271383.js"),
+  Chunk430824 = require("./430824.js"),
+  Chunk594174 = require("./594174.js"),
+  Chunk447003 = require("./447003.js"),
+  Chunk176505 = require("./176505.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk388032 = require("./388032.jsx");
 
 function _(e, t, n, r) {
   if (null == e) return null;
-  if (e.id === (null == t ? void 0 : t.rulesChannelId)) return f.intl.string(f.t["/7EhaW"]);
+  if (e.id === (null == t ? true : t.rulesChannelId)) return f.intl.string(f.t["/7EhaW"]);
   let o = (0, i.aC)(e);
   switch (e.type) {
     case d.d4z.GUILD_TEXT:
@@ -66,19 +67,19 @@ function _(e, t, n, r) {
 }
 
 function p(e, t) {
-  let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {},
+  let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : {},
     {
-      locked: f = !1,
-      video: _ = !1,
-      stream: p = !1,
-      hasActiveThreads: h = !1,
-      textFocused: m = !1
+      locked: f = false,
+      video: _ = false,
+      stream: p = false,
+      hasActiveThreads: h = false,
+      textFocused: m = false
     } = n;
   if (null == e) return null;
   null == t && (t = s.Z.getGuild(e.getGuildId()));
-  let g = (0, o.n)(null == t ? void 0 : t.id, [s.Z, l.default, a.ZP]);
+  let g = (0, o.n)(null == t ? true : t.id, [s.Z, l.default, a.ZP]);
   if (e.isModeratorReportChannel()) return r.U65;
-  if ((null == e ? void 0 : e.id) === (null == t ? void 0 : t.rulesChannelId)) return r.snC;
+  if ((null == e ? true : e.id) === (null == t ? true : t.rulesChannelId)) return r.snC;
   let E = (0, i.aC)(e);
   switch (e.type) {
     case d.d4z.GUILD_ANNOUNCEMENT:

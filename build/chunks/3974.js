@@ -1,4 +1,5 @@
 /** Chunk was on web.js **/
+/** chunk id: 3974, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 var r = {
   emojiButton: "emojiButton__04eed",
@@ -19,4 +20,4 @@ var r = {
   shrink: "shrink__04eed",
   premiumTooltipText: "premiumTooltipText__04eed"
 };
-n.r(e.exports = r)
+require.r(module.exports = r)

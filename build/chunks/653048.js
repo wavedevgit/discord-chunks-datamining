@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 653048, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   clipContainer: "clipContainer_ba21b4",
   container: "container_ba21b4",
   scheduledMessageBar: "scheduledMessageBar_ba21b4",

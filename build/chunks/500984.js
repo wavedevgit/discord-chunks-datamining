@@ -1,4 +1,5 @@
 /** Chunk was on 85664 **/
-t.exports = {
+/** chunk id: 500984, original params: t,e,i (module,exports,require) **/
+module.exports = {
   obscuredIcon: "obscuredIcon__43090"
 }

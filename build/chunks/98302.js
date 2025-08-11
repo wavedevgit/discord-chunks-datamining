@@ -1,28 +1,29 @@
 /** Chunk was on web.js **/
+/** chunk id: 98302, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => y
-}), n(388685);
-var r = n(846519),
-  i = n(147913),
-  o = n(603113),
-  a = n(594190),
-  s = n(509003),
-  l = n(131951),
-  c = n(19780),
-  u = n(885110),
-  d = n(606304),
-  f = n(938475),
-  _ = n(70956),
-  p = n(367907),
-  h = n(981631);
+}), require("./388685.js");
+var Chunk846519 = require("./846519.js"),
+  Chunk147913 = require("./147913.js"),
+  Chunk603113 = require("./603113.js"),
+  Chunk594190 = require("./594190.js"),
+  Chunk509003 = require("./509003.js"),
+  Chunk131951 = require("./131951.js"),
+  Chunk19780 = require("./19780.js"),
+  Chunk885110 = require("./885110.js"),
+  Chunk606304 = require("./606304.js"),
+  Chunk938475 = require("./938475.js"),
+  Chunk70956 = require("./70956.js"),
+  Chunk367907 = require("./367907.js"),
+  Chunk981631 = require("./981631.js");
 
 function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -38,65 +39,65 @@ function g(e) {
   }
   return e
 }
-let E = +_.Z.Millis.MINUTE;
-class b extends i.Z {
+let E = +Chunk70956.Z.Millis.MINUTE;
+class b extends Chunk147913.Z {
   _initialize() {
-    __OVERLAY__ ? this.stores = new Map : (this.stores = new Map().set(d.Z, () => this._handleSpeakingStoreChanged()).set(c.Z, () => this._handleRTCConnectionStoreChanged()), this._reset())
+    __OVERLAY__ ? this.stores = new Map : (this.stores = new Map().set(Chunk606304.Z, () => this._handleSpeakingStoreChanged()).set(Chunk19780.Z, () => this._handleRTCConnectionStoreChanged()), this._reset())
   }
   _reset() {
-    this._currentUserSpeaking = !1, this._anyoneElseSpeaking = !1, null != this._reportInterval && (this._reportInterval.stop(), this._reportInterval = null)
+    this._currentUserSpeaking = false, this._anyoneElseSpeaking = false, null != this._reportInterval && (this._reportInterval.stop(), this._reportInterval = null)
   }
   _trackStartSpeaking() {
     if (this._currentUserSpeaking) {
-      let e = c.Z.getChannelId(),
-        t = c.Z.getGuildId();
-      (0, p.yw)(h.rMx.START_SPEAKING, g({
-        mode: l.Z.getMode(),
-        priority: d.Z.isCurrentUserPrioritySpeaking(),
-        channel: e,
-        server: t,
-        channel_id: e,
-        guild_id: t,
-        rtc_connection_id: c.Z.getRTCConnectionId(),
-        media_session_id: c.Z.getMediaSessionId(),
-        voice_state_count: f.ZP.countVoiceStatesForChannel(this._voiceChannelId)
-      }, this.getGameMetadata(), c.Z.getPacketStats()))
+      let e = Chunk19780.Z.getChannelId(),
+        t = Chunk19780.Z.getGuildId();
+      (0, Chunk367907.yw)(Chunk981631.rMx.START_SPEAKING, g({
+        mode: Chunk131951.Z.getMode(),
+        priority: Chunk606304.Z.isCurrentUserPrioritySpeaking(),
+        channel: module,
+        server: exports,
+        channel_id: module,
+        guild_id: exports,
+        rtc_connection_id: Chunk19780.Z.getRTCConnectionId(),
+        media_session_id: Chunk19780.Z.getMediaSessionId(),
+        voice_state_count: Chunk938475.ZP.countVoiceStatesForChannel(this._voiceChannelId)
+      }, this.getGameMetadata(), Chunk19780.Z.getPacketStats()))
     }
   }
   _trackStartListening() {
-    if (l.Z.isDeaf() || !this._anyoneElseSpeaking) return;
-    let e = c.Z.getChannelId(),
-      t = c.Z.getGuildId();
-    (0, p.yw)(h.rMx.START_LISTENING, g({
-      mute: l.Z.isMute(),
-      anyone_priority: d.Z.isAnyonePrioritySpeaking(),
-      channel: e,
-      server: t,
-      channel_id: e,
-      guild_id: t,
-      rtc_connection_id: c.Z.getRTCConnectionId(),
-      media_session_id: c.Z.getMediaSessionId(),
-      voice_state_count: f.ZP.countVoiceStatesForChannel(this._voiceChannelId)
+    if (Chunk131951.Z.isDeaf() || !this._anyoneElseSpeaking) return;
+    let e = Chunk19780.Z.getChannelId(),
+      t = Chunk19780.Z.getGuildId();
+    (0, Chunk367907.yw)(Chunk981631.rMx.START_LISTENING, g({
+      mute: Chunk131951.Z.isMute(),
+      anyone_priority: Chunk606304.Z.isAnyonePrioritySpeaking(),
+      channel: module,
+      server: exports,
+      channel_id: module,
+      guild_id: exports,
+      rtc_connection_id: Chunk19780.Z.getRTCConnectionId(),
+      media_session_id: Chunk19780.Z.getMediaSessionId(),
+      voice_state_count: Chunk938475.ZP.countVoiceStatesForChannel(this._voiceChannelId)
     }, this.getGameMetadata()))
   }
   _terminate() {
-    this._reset(), d.Z.removeChangeListener(this._handleSpeakingStoreChanged), c.Z.removeChangeListener(this._handleRTCConnectionStoreChanged)
+    this._reset(), Chunk606304.Z.removeChangeListener(this._handleSpeakingStoreChanged), Chunk19780.Z.removeChangeListener(this._handleRTCConnectionStoreChanged)
   }
   getGameMetadata() {
-    let e = u.Z.findActivity(e => e.type === h.IIU.PLAYING),
-      t = a.ZP.getCurrentGameForAnalytics();
+    let e = Chunk885110.Z.findActivity(e => e.type === h.IIU.PLAYING),
+      t = Chunk594190.ZP.getCurrentGameForAnalytics();
     return {
-      game_platform: (0, o.Z)(e),
-      game_name: null != e ? e.name : null,
-      game_exe_name: null != t ? t.exeName : null,
-      game_id: null != e ? e.application_id : null,
-      game_distributor: null != t ? t.distributor : null,
-      game_distributor_game_id: null != t ? t.sku : null,
-      game_metadata: null != t ? (0, s.sD)(t) : null
+      game_platform: (0, Chunk603113.Z)(module),
+      game_name: null != module ? module.name : null,
+      game_exe_name: null != exports ? exports.exeName : null,
+      game_id: null != module ? module.application_id : null,
+      game_distributor: null != exports ? exports.distributor : null,
+      game_distributor_game_id: null != exports ? exports.sku : null,
+      game_metadata: null != exports ? (0, Chunk509003.sD)(exports) : null
     }
   }
   constructor(...e) {
-    super(...e), m(this, "_currentUserSpeaking", !1), m(this, "_anyoneElseSpeaking", !1), m(this, "_voiceChannelId", void 0), m(this, "_reportInterval", void 0), m(this, "_handleRTCConnectionStoreChanged", () => {
+    super(...e), m(this, "_currentUserSpeaking", false), m(this, "_anyoneElseSpeaking", false), m(this, "_voiceChannelId", true), m(this, "_reportInterval", true), m(this, "_handleRTCConnectionStoreChanged", () => {
       let e = c.Z.getChannelId();
       if (this._voiceChannelId !== e) {
         if (this._voiceChannelId = e, null == e) return void this._reset();

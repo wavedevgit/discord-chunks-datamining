@@ -1,4 +1,5 @@
 /** Chunk was on web.js **/
+/** chunk id: 228614, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 var r = {
   "spinner-wandering-cubes": "spinner-wandering-cubes__0b5bb",
@@ -23,4 +24,4 @@ var r = {
   path2: "path2__0b5bb",
   path3: "path3__0b5bb"
 };
-n.r(e.exports = r)
+require.r(module.exports = r)

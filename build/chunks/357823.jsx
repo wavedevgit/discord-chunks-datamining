@@ -1,0 +1,57 @@
+/** Chunk was on 61866 **/
+/** chunk id: 357823, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
+  default: () => C
+}), require("./388685.js");
+var Chunk255367 = require("./255367.js");
+require("./73800.js");
+var Chunk481060 = require("./481060.js"),
+  Chunk239091 = require("./239091.js"),
+  Chunk883385 = require("./883385.js"),
+  Chunk108843 = require("./108843.jsx"),
+  Chunk100527 = require("./100527.js"),
+  Chunk299206 = require("./299206.jsx"),
+  Chunk882188 = require("./882188.js"),
+  Chunk819403 = require("./819403.js"),
+  Chunk286694 = require("./286694.jsx"),
+  Chunk314897 = require("./314897.js"),
+  Chunk238296 = require("./238296.jsx"),
+  Chunk933409 = require("./933409.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk388032 = require("./388032.js");
+let C = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
+  let {
+    user: t,
+    channel: n,
+    guildId: u,
+    onSelect: a,
+    onInteraction: d,
+    context: g
+  } = e, C = n.id, M = t.isNonUserBot(), S = t.id === E.default.getId(), O = (0, _.Z)(t), b = (0, s.Z)(t, u, C), I = (0, A.Y)({
+    isOwnSettings: S,
+    userId: t.id,
+    channelId: C,
+    guildId: u,
+    context: g
+  }), [Z, T] = (0, A.E)(t, C, u), h = (0, f.Z)(t, u, C), N = (0, o.Z)({
+    id: t.id,
+    label: v.intl.string(v.t["/AXYnJ"])
+  }), k = (0, c.Z)(t.id, n);
+  return <l.v2r navId={"user-context"} onClose={r.Zy} aria-label={v.intl.string(v.t.liqwPD)} onSelect={a} onInteraction={d} variant={"fixed"}>{!M && (0, i.jsxs)(i.Fragment, {
+      children: [(0, i.jsxs)(l.kSQ, {
+        children: [O, b]
+      }), k, I, !S && (0, i.jsx)(l.kSQ, {
+        children: (0, i.jsxs)(l.sNh, {
+          id: "more-options",
+          label: v.intl.string(v.t.PdRCRk),
+          children: [Z, (0, i.jsx)(l.kSQ, {
+            children: h
+          }), T]
+        })
+      }), S && (0, i.jsx)(l.kSQ, {
+        children: N
+      })]
+    })}</l.v2r>
+}, {
+  object: Chunk981631.qAy.CONTEXT_MENU
+}), [Chunk100527.Z.VOICE_USER])

@@ -1,0 +1,123 @@
+/** Chunk was on web.js **/
+/** chunk id: 205822, original params: e,t,n (module,exports,re quire) **/
+"use strict";
+require.d(exports, {
+  Z: () => b
+}), require("./953529.js"), require("./388685.js");
+var Chunk255367 = require("./255367.js"),
+  Chunk73800 = require("./73800.js"),
+  Chunk120356 = require("./120356.js"),
+  a = require.n(Chunk120356),
+  Chunk481060 = require("./481060.js"),
+  Chunk710845 = require("./710845.js"),
+  Chunk310752 = require("./310752.js"),
+  Chunk531643 = require("./531643.js"),
+  Chunk388032 = require("./388032.js"),
+  Chunk948979 = require("./948979.js"),
+  Chunk565128 = require("./565128.js");
+
+function p(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+let h = new Chunk710845.Z("UploadArea"),
+  m = 1e3;
+
+function g() {
+  return <div>{<div className={a()(Chunk565128.sparkleWhite, Chunk948979.sparkleOne)} />}{<div className={a()(Chunk565128.sparkleWhite, Chunk948979.sparkleTwo)} />}{<div className={a()(Chunk565128.lightWhite, Chunk948979.lightOne)} />}{<div className={a()(Chunk565128.lightWhite, Chunk948979.lightTwo)} />}{<div className={a()(Chunk565128.crossWhite, Chunk948979.crossOne)} />}{<div className={a()(Chunk565128.crossWhite, Chunk948979.crossTwo)} />}{<div className={a()(Chunk565128.popWhite, Chunk948979.popOne)} />}</div>
+}
+class E extends Chunk73800.Component {
+  componentDidMount() {
+    let e = this.elementDOMRef.current;
+    null != module && (module.ownerDocument.body.addEventListener("dragover", this.handleDragOver, false), module.ownerDocument.body.addEventListener("drop", this.handleDragLeave, false), module.addEventListener("dragover", this.handleDragOverZone, false), module.addEventListener("dragleave", this.handleDragLeaveZone, false), module.addEventListener("drop", this.handleDrop, false))
+  }
+  componentWillUnmount() {
+    let e = this.elementDOMRef.current;
+    null != module && (module.ownerDocument.body.removeEventListener("dragover", this.handleDragOver, false), module.ownerDocument.body.removeEventListener("drop", this.handleDragLeave, false), module.removeEventListener("dragover", this.handleDragOverZone, false), module.removeEventListener("dragleave", this.handleDragLeaveZone, false), module.removeEventListener("drop", this.handleDrop, false)), clearTimeout(this.dragOverTimeout)
+  }
+  render() {
+    let {
+      title: e,
+      description: t,
+      icons: n,
+      style: i,
+      className: o
+    } = this.props;
+    return <div ref={this.elementDOMRef} className={a()(Chunk120356, Chunk948979.uploadArea, {
+        [Chunk948979.droppable]: this.state.isDragging,
+        [Chunk948979.uploadModalIn]: this.state.isOverZone
+      })} style={Chunk73800}><div className={Chunk948979.uploadDropModal}>{this.state.isDragging && <g />}{<div className={Chunk948979.bgScale} />}{<div className={Chunk948979.inner}>{<Chunk310752.Z icons={require} />}{<div className={Chunk948979.title}>{module}</div>}{<div className={Chunk948979.instructions}><pre>{exports}</pre></div>}</div>}</div></div>
+  }
+  constructor(...e) {
+    var t;
+    super(...e), t = this, p(this, "state", {
+      isDragging: false,
+      isOverZone: false
+    }), p(this, "dragOverTimeout", null), p(this, "elementDOMRef", i.createRef()), p(this, "isAllDropFiles", e => {
+      for (let n = 0; n < e.length; n++) try {
+        var t;
+        let r = null != (t = e[n].webkitGetAsEntry()) ? t : e[n].getAsEntry();
+        if (null == r) return h.warn("Dropped item is null or undefined"), false;
+        if (!r.isFile) returnfalse
+      } catch (e) {}
+      returntrue
+    }), p(this, "preventUnwantedDrop", function(e) {
+      let n = arguments.length > 1 && true !== arguments[1] && arguments[1],
+        r = e.dataTransfer;
+      if (null == r) returntrue;
+      let i = Array.isArray(r.types) && false !== r.types.indexOf("text/uri-list") && false === r.types.indexOf("application/json"),
+        o = null != r.items && !t.isAllDropFiles(r.items);
+      return !i && !o || (e.stopPropagation(), e.preventDefault(), r.effectAllowed = "none", r.dropEffect = "none", n && (t.setState({
+        isDragging: false
+      }), (0, u.openUploadError)({
+        title: d.intl.string(d.t.azO1PT),
+        help: d.intl.string(d.t.Koklr6),
+        icons: t.props.icons
+      })), false)
+    }), p(this, "handleDragOver", e => {
+      var t, n, r;
+      if (!this.preventUnwantedDrop(e)) returnfalse;
+      let i = e.dataTransfer;
+      if (null != i) {
+        if ("move" === i.effectAllowed ? i.dropEffect = "move" : i.dropEffect = "copy", (0, s.nfh)(u.A) && (0, s.Mr3)(u.A), e.stopPropagation(), e.preventDefault(), null == (t = (n = this.props).onDragOver) || t.call(n, e), !this.state.isDragging) {
+          let e = null == (r = this.elementDOMRef.current) ? true : r.ownerDocument.defaultView;
+          (null != e && i.types instanceof e.DOMStringList && i.types.contains("application/x-moz-file") || false !== i.types.indexOf("Files")) && this.setState(e => e.isDragging ? {} : {
+            isDragging: true
+          })
+        }
+        clearTimeout(this.dragOverTimeout), this.dragOverTimeout = setTimeout(() => {
+          var e, t;
+          this.setState({
+            isDragging: false
+          }), null == (e = (t = this.props).onDragClear) || e.call(t)
+        }, m)
+      }
+    }), p(this, "handleDragOverZone", () => {
+      this.setState({
+        isOverZone: true
+      })
+    }), p(this, "handleDragLeaveZone", () => {
+      this.setState({
+        isOverZone: false
+      })
+    }), p(this, "handleDragLeave", e => {
+      this.state.isDragging && (e.stopPropagation(), e.preventDefault(), this.clearDragging())
+    }), p(this, "clearDragging", () => {
+      var e, t;
+      this.setState({
+        isDragging: false,
+        isOverZone: false
+      }), null == (e = (t = this.props).onDragClear) || e.call(t)
+    }), p(this, "handleDrop", e => {
+      if (!this.preventUnwantedDrop(e, true)) returnfalse;
+      let t = e.dataTransfer;
+      if (null == t) returntrue;
+      this.state.isDragging && (e.preventDefault(), e.stopPropagation(), this.props.onDrop(t.files), this.clearDragging())
+    })
+  }
+}
+let b = E

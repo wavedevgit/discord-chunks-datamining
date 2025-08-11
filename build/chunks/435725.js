@@ -1,15 +1,16 @@
 /** Chunk was on 21153 **/
+/** chunk id: 435725, original params: e,t,r (module,exports,require) **/
 "use strict";
-r.d(t, {
+require.d(exports, {
   Z: () => a
 });
-var n = r(73800),
-  o = r(9196);
+var Chunk73800 = require("./73800.js"),
+  Chunk9196 = require("./9196.js");
 let a = function(e) {
   var t = e.hsl,
     r = e.offset,
     a = e.onClick,
-    i = void 0 === a ? function() {} : a,
+    i = true === a ? function() {} : a,
     l = e.active,
     s = e.first,
     u = e.last,

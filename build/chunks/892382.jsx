@@ -1,0 +1,160 @@
+/** Chunk was on 97573 **/
+/** chunk id: 892382, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
+  default: () => T
+}), require("./388685.js");
+var Chunk255367 = require("./255367.js"),
+  Chunk73800 = require("./73800.js"),
+  Chunk120356 = require("./120356.js"),
+  a = require.n(Chunk120356),
+  Chunk392711 = require("./392711.js"),
+  l = require.n(Chunk392711),
+  Chunk442837 = require("./442837.js"),
+  Chunk544891 = require("./544891.js"),
+  Chunk481060 = require("./481060.js"),
+  Chunk447543 = require("./447543.js"),
+  Chunk225433 = require("./225433.jsx"),
+  Chunk129861 = require("./129861.jsx"),
+  Chunk700582 = require("./700582.jsx"),
+  Chunk367907 = require("./367907.js"),
+  Chunk346486 = require("./346486.jsx"),
+  Chunk600164 = require("./600164.jsx"),
+  Chunk210887 = require("./210887.js"),
+  Chunk758449 = require("./758449.js"),
+  Chunk598077 = require("./598077.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk246946 = require("./246946.js"),
+  Chunk626135 = require("./626135.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk388032 = require("./388032.jsx"),
+  Chunk612657 = require("./612657.js"),
+  Chunk588866 = require("./588866.js"),
+  Chunk20493 = require("./20493.js");
+
+function _(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+
+function P(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      _(e, t, n[t])
+    })
+  }
+  return e
+}
+
+function D(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
+    var n = Object.keys(e);
+    if (Object.getOwnPropertySymbols) {
+      var r = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, r)
+    }
+    return n
+  })(Object(t)).forEach(function(n) {
+    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+  }), e
+}
+class R extends Chunk73800.PureComponent {
+  render() {
+    let {
+      invite: e,
+      hideDiscriminator: t,
+      hideInviteCode: n
+    } = this.props, s = new Chunk598077.Z(module.inviter);
+    return <Chunk600164.Z className={a()(Chunk612657.row, Chunk588866.card)}>{<Chunk600164.Z align={Chunk600164.Z.Align.CENTER} className={Chunk612657.userColumn}>{<Chunk700582.Z user={Chunk73800} size={Chunk481060.EFr.SIZE_24} className={Chunk612657.avatar} />}{<Chunk129861.Z user={Chunk73800} hideDiscriminator={exports} usernameClass={Chunk612657.username} discriminatorClass={Chunk612657.discrimClass} />}</Chunk600164.Z>}{<Chunk600164.Z align={Chunk600164.Z.Align.CENTER} grow={0} shrink={0} basis={100} className={Chunk612657.boostZIndex}><Chunk481060.Text className={Chunk612657.code} variant={"text-sm/normal"}>{require ? "..." : module.code}</Chunk481060.Text></Chunk600164.Z>}{<Chunk600164.Z basis={100} grow={0} shrink={0} align={Chunk600164.Z.Align.CENTER} justify={Chunk600164.Z.Justify.END} className={Chunk612657.boostZIndex}>{<Chunk481060.Text className={Chunk612657.countdown} variant={"text-sm/normal"}><Chunk346486.Z deadline={module.getExpiresAt()} showDays={false} /></Chunk481060.Text>}{<Chunk225433.Z className={Chunk612657.revokeInvite} onClick={this.handleRevokeInvite} />}</Chunk600164.Z>}</Chunk600164.Z>
+  }
+  constructor(...e) {
+    super(...e), _(this, "handleRevokeInvite", () => {
+      let {
+        onRevoke: e,
+        invite: t
+      } = this.props;
+      null != e && e(t)
+    })
+  }
+}
+class S extends Chunk73800.PureComponent {
+  componentDidMount() {
+    let {
+      channelId: e
+    } = this.props;
+    Chunk544891.tn.get({
+      url: Chunk981631.ANM.INSTANT_INVITES(module),
+      retries: 3,
+      oldFormErrors: true,
+      rejectWithError: true
+    }).then(e => {
+      let t = e.body.map(e => new f.Z(D(P({}, e), {
+        maxUses: e.max_uses,
+        maxAge: e.max_age,
+        createdAt: e.created_at
+      })));
+      this.setState({
+        loading: false,
+        invites: t
+      })
+    }), Chunk626135.default.track(Chunk981631.rMx.OPEN_MODAL, D(P({}, (0, Chunk367907.v_)(Chunk592125.Z.getChannel(module))), {
+      type: "Group DM Invites",
+      source: "Group DM Menu"
+    }))
+  }
+  renderContent() {
+    let {
+      loading: e,
+      invites: t
+    } = this.state;
+    return module || null == exports ? <Chunk481060.$jN className={Chunk20493.marginTop20} type={Chunk481060.$jN.Type.SPINNING_CIRCLE} /> : l().isEmpty(exports) ? this.renderEmpty() : <div className={Chunk612657.container}>{this.renderHeader()}{this.renderInvites()}</div>
+  }
+  renderEmpty() {
+    return <Chunk481060.ubH theme={this.props.theme}>{<Chunk481060.oxh darkSrc={require("./914814.js")} lightSrc={require("./370392.js")} width={256} height={130} style={{
+          marginBottom: 0
+        }} />}{<Chunk481060.OZU className={Chunk20493.marginTop20}>{Chunk388032.intl.string(Chunk388032.t["03/rlZ"])}</Chunk481060.OZU>}</Chunk481060.ubH>
+  }
+  renderHeader() {
+    return <Chunk600164.Z>{<Chunk600164.Z.Child wrap={true}><Chunk481060.vwX>{Chunk388032.intl.string(Chunk388032.t.EgHyKy)}</Chunk481060.vwX></Chunk600164.Z.Child>}{<Chunk600164.Z.Child wrap={true} grow={0} shrink={0} basis={100}><Chunk481060.vwX>{Chunk388032.intl.string(Chunk388032.t.LBlFEB)}</Chunk481060.vwX></Chunk600164.Z.Child>}{<Chunk600164.Z.Child wrap={true} grow={0} shrink={0} basis={100}><Chunk481060.vwX className={Chunk612657.alignRight}>{Chunk388032.intl.string(Chunk388032.t["1aM27e"])}</Chunk481060.vwX></Chunk600164.Z.Child>}</Chunk600164.Z>
+  }
+  renderInvites() {
+    let {
+      hideDiscriminators: e,
+      hideInviteCodes: t
+    } = this.props;
+    return l()(this.state.invites).sortBy(e => {
+      var t;
+      return (null != (t = e.inviter.username) ? t : "").toLocaleLowerCase()
+    }).map(n => <R invite={n} hideDiscriminator={e} hideInviteCode={t} onRevoke={this.handleRevoke} />).value()
+  }
+  render() {
+    return <Chunk481060.Y0X transitionState={this.props.transitionState} aria-label={Chunk388032.intl.string(Chunk388032.t["9F90iY"])} size={Chunk481060.CgR.MEDIUM} parentComponent={"InviteSettings"}>{<Chunk481060.xBx direction={Chunk600164.Z.Direction.VERTICAL} align={Chunk600164.Z.Align.START} separator={false}>{<Chunk481060.vwX tag={Chunk481060.RB0.H1}>{Chunk388032.intl.string(Chunk388032.t["9F90iY"])}</Chunk481060.vwX>}{<Chunk481060.R94 type={Chunk481060.geA.DESCRIPTION}>{Chunk388032.intl.string(Chunk388032.t.WDw38P)}</Chunk481060.R94>}</Chunk481060.xBx>}{<Chunk481060.hzk>{this.renderContent()}</Chunk481060.hzk>}{<Chunk481060.mzw><Chunk481060.zxk variant={"primary"} text={Chunk388032.intl.string(Chunk388032.t.i4jeWV)} onClick={this.handleClose} /></Chunk481060.mzw>}</Chunk481060.Y0X>
+  }
+  constructor(...e) {
+    super(...e), _(this, "state", {
+      loading: true,
+      invites: null
+    }), _(this, "handleRevoke", e => {
+      u.ZP.revokeInvite(e), this.setState({
+        invites: this.state.invites.filter(t => t !== e)
+      })
+    }), _(this, "handleClose", () => {
+      let {
+        onClose: e
+      } = this.props;
+      null == e || e()
+    })
+  }
+}
+let T = Chunk442837.ZP.connectStores([Chunk246946.Z, Chunk210887.Z], () => ({
+  hideDiscriminators: Chunk246946.Z.hidePersonalInformation,
+  hideInviteCodes: Chunk246946.Z.hideInstantInvites,
+  theme: Chunk210887.Z.theme
+}))(S)

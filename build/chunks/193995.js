@@ -1,8 +1,9 @@
 /** Chunk was on 85664 **/
-i.d(e, {
+/** chunk id: 193995, original params: t,e,i (module,exports,require) **/
+require.d(exports, {
   a: () => n
 });
-let s = i(724163).newStemmer("english");
+let s = require("./724163.js").newStemmer("english");
 
 function n(t) {
   return s.stem(t)

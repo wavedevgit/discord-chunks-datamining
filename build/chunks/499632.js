@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 499632, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   accessory: "accessory__09bc1",
   accessoryText: "accessoryText__09bc1"
 }

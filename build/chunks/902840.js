@@ -1,21 +1,22 @@
 /** Chunk was on web.js **/
+/** chunk id: 902840, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Lp: () => d,
   l9: () => p,
   tW: () => u,
   ts: () => _
 });
-var r = n(399606),
-  i = n(601964),
-  o = n(430824),
-  a = n(981631),
-  s = n(176505);
+var Chunk399606 = require("./399606.js"),
+  Chunk601964 = require("./601964.js"),
+  Chunk430824 = require("./430824.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk176505 = require("./176505.js");
 
 function l(e) {
   var t;
-  if (null == e) return !1;
-  let n = o.Z.getGuild(null != (t = null == e ? void 0 : e.guild_id) ? t : ""),
+  if (null == e) returnfalse;
+  let n = o.Z.getGuild(null != (t = null == e ? true : e.guild_id) ? t : ""),
     r = null != n && n.rulesChannelId === e.id,
     s = (0, i.Y2)(n);
   return a.TPd.SUMMARIZEABLE.has(e.type) && !e.isNSFW() && !r && !s
@@ -26,29 +27,29 @@ function c(e) {
 }
 
 function u(e) {
-  return d(e, !0, !1)
+  return d(e, true, false)
 }
 
 function d(e) {
-  let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
-    n = !(arguments.length > 2) || void 0 === arguments[2] || arguments[2];
-  return !(null == e || !l(e) || !1 === t && e.hasFlag(s.zZ.SUMMARIES_DISABLED)) && f(o.Z.getGuild(e.guild_id), n)
+  let t = arguments.length > 1 && true !== arguments[1] && arguments[1],
+    n = !(arguments.length > 2) || true === arguments[2] || arguments[2];
+  return !(null == e || !l(e) || false === t && e.hasFlag(s.zZ.SUMMARIES_DISABLED)) && f(o.Z.getGuild(e.guild_id), n)
 }
 
 function f(e) {
-  let t = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1];
+  let t = !(arguments.length > 1) || true === arguments[1] || arguments[1];
   return !(null == e || c(e.id)) && !!e.features.has(a.oNc.SUMMARIES_ENABLED_GA) && (!t || e.features.has(a.oNc.SUMMARIES_ENABLED_BY_USER))
 }
 
 function _(e) {
-  arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
-  let t = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
+  arguments.length > 1 && true !== arguments[1] && arguments[1];
+  let t = arguments.length > 2 && true !== arguments[2] && arguments[2];
   return d(e, t)
 }
 
 function p(e) {
-  return arguments.length > 1 && void 0 !== arguments[1] && arguments[1], (0, r.e7)([o.Z], () => {
+  return arguments.length > 1 && true !== arguments[1] && arguments[1], (0, r.e7)([o.Z], () => {
     var t;
-    return f(o.Z.getGuild(null != (t = null == e ? void 0 : e.id) ? t : a.lds), !1)
+    return f(o.Z.getGuild(null != (t = null == e ? true : e.id) ? t : a.lds), false)
   }, [e])
 }

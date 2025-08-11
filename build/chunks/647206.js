@@ -1,11 +1,12 @@
 /** Chunk was on web.js **/
-e.exports = function(e) {
+/** chunk id: 647206, original params: e (module,exports,re quire) **/
+module.exports = function(e) {
   let t = {
     begin: "`[\\s\\S]"
   };
   return {
     name: "AutoHotkey",
-    case_insensitive: !0,
+    case_insensitive: true,
     aliases: ["ahk"],
     keywords: {
       keyword: "Break Continue Critical Exit ExitApp Gosub Goto New OnExit Pause return SetBatchLines SetTimer Suspend Thread Throw Until ahk_id ahk_class ahk_pid ahk_exe ahk_group",

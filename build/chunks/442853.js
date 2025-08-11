@@ -1,16 +1,17 @@
 /** Chunk was on 49152 **/
-n.d(t, {
+/** chunk id: 442853, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => f
-}), n(388685), n(539854);
-var r = n(73800),
-  i = n(149765),
-  l = n(442837),
-  a = n(902704),
-  s = n(592125),
-  o = n(720202),
-  c = n(271383),
-  u = n(700785),
-  d = n(231338);
+}), require("./388685.js"), require("./539854.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk149765 = require("./149765.js"),
+  Chunk442837 = require("./442837.js"),
+  Chunk902704 = require("./902704.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk720202 = require("./720202.js"),
+  Chunk271383 = require("./271383.js"),
+  Chunk700785 = require("./700785.js"),
+  Chunk231338 = require("./231338.js");
 let h = [],
   p = new Set;
 
@@ -18,8 +19,8 @@ function f(e) {
   let {
     entries: t,
     channelId: n
-  } = e, f = (0, l.e7)([s.Z], () => s.Z.getChannel(n)), g = null == f ? void 0 : f.guild_id, m = r.useRef(new Set), b = r.useMemo(() => {
-    let e = new Set(null == t ? void 0 : t.map(e => e.author_id));
+  } = e, f = (0, l.e7)([s.Z], () => s.Z.getChannel(n)), g = null == f ? true : f.guild_id, m = r.useRef(new Set), b = r.useMemo(() => {
+    let e = new Set(null == t ? true : t.map(e => e.author_id));
     return (0, a.E)([...m.current], [...e]) || (m.current = e), m.current
   }, [t]);
   r.useEffect(() => {
@@ -45,5 +46,5 @@ function f(e) {
       }
       return e
     }, [y, f]);
-  return r.useMemo(() => null == t ? void 0 : t.filter(e => x.has(e.author_id)), [t, x])
+  return r.useMemo(() => null == t ? true : t.filter(e => x.has(e.author_id)), [t, x])
 }

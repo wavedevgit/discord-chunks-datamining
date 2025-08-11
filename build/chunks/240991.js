@@ -1,35 +1,36 @@
 /** Chunk was on web.js **/
+/** chunk id: 240991, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.r(t), n.d(t, {
+require.r(exports), require.d(exports, {
   getOrParseBioAST: () => g,
   parseBioReact: () => h,
   parseBioReactWithCachedAST: () => E,
   parseBioReactWithoutScrolling: () => y
-}), n(781311);
-var r = n(392711),
-  i = n.n(r),
-  o = n(31775),
-  a = n.n(o),
-  s = n(159635),
-  l = n.n(s),
-  c = n(25209),
-  u = n(691424),
-  d = n(428595);
-n(454585);
-var f = n(364458);
-let _ = (0, f.Z)([d.Z.PROFILE_BIO_RULES, (0, u.Z)({
-    enableBuildOverrides: !1,
-    mustConfirmExternalLink: !0
+}), require("./781311.js");
+var Chunk392711 = require("./392711.js"),
+  i = require.n(Chunk392711),
+  Chunk31775 = require("./31775.js"),
+  a = require.n(Chunk31775),
+  Chunk159635 = require("./159635.js"),
+  l = require.n(Chunk159635),
+  Chunk25209 = require("./25209.js"),
+  Chunk691424 = require("./691424.js"),
+  Chunk428595 = require("./428595.js");
+require("./454585.js");
+var Chunk364458 = require("./364458.js");
+let _ = (0, Chunk364458.Z)([Chunk428595.Z.PROFILE_BIO_RULES, (0, Chunk691424.Z)({
+    enableBuildOverrides: false,
+    mustConfirmExternalLink: true
   })]),
   p = new(a())({
     max: 2e3
   }),
-  h = c.w4(_),
-  m = void 0;
+  h = Chunk25209.w4(_),
+  m = true;
 
 function g(e) {
   let t = p.get(e);
-  return null != t || (t = m(e, !0), p.set(e, t)), t
+  return null != t || (t = m(e, true), p.set(e, t)), t
 }
 
 function E(e) {
@@ -38,7 +39,7 @@ function E(e) {
   return l().reactFor(l().ruleOutput(_, "react"))(t)
 }
 let b = ["link", "url", "autolink", "customEmoji", "emoji", "commandMention"],
-  y = c.w4((0, f.Z)([i().omit(_, b), {
+  y = Chunk25209.w4((0, Chunk364458.Z)([i().omit(_, b), {
     emoji: {
       react: () => null
     }

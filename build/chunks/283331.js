@@ -1,5 +1,6 @@
 /** Chunk was on 9558 **/
-e.exports = {
+/** chunk id: 283331, original params: e,t,n (module,exports,require) **/
+module.exports = {
   modalRoot: "modalRoot__6f8c0",
   closeButton: "closeButton__6f8c0",
   modalContent: "modalContent__6f8c0",

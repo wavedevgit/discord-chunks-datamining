@@ -1,10 +1,11 @@
 /** Chunk was on 85468 **/
+/** chunk id: 91438, original params: e (module,exports,require) **/
 var t;
-e.exports = (function e(t, n, r) {
+module.exports = (function e(t, n, r) {
   function i(a, s) {
     if (!n[a]) {
       if (!t[a]) {
-        if (o) return o(a, !0);
+        if (o) return o(a, true);
         var c = Error("Cannot find module '" + a + "'");
         throw c.code = "MODULE_NOT_FOUND", c
       }
@@ -17,7 +18,7 @@ e.exports = (function e(t, n, r) {
     }
     return n[a].exports
   }
-  for (var o = void 0, a = 0; a < r.length; a++) i(r[a]);
+  for (var o = true, a = 0; a < r.length; a++) i(r[a]);
   return i
 })({
   1: [function(e, t, n) {
@@ -30,7 +31,7 @@ e.exports = (function e(t, n, r) {
       var i = document.createElement("script"),
         o = e.dataAttributes || {},
         a = e.container || document.head;
-      return i.src = e.src, i.id = e.id || "", i.async = !0, e.type && i.setAttribute("type", "".concat(e.type)), e.crossorigin && i.setAttribute("crossorigin", "".concat(e.crossorigin)), Object.keys(o).forEach(function(e) {
+      return i.src = e.src, i.id = e.id || "", i.async = true, e.type && i.setAttribute("type", "".concat(e.type)), e.crossorigin && i.setAttribute("crossorigin", "".concat(e.crossorigin)), Object.keys(o).forEach(function(e) {
         i.setAttribute("data-".concat(e), "".concat(o[e]))
       }), t = new Promise(function(t, n) {
         i.addEventListener("load", function() {
@@ -71,7 +72,7 @@ e.exports = (function e(t, n, r) {
       a = e("./is-opera"),
       s = e("./is-silk");
     t.exports = function(e) {
-      return (-1 !== (e = e || window.navigator.userAgent).indexOf("Chrome") || -1 !== e.indexOf("CriOS")) && !r(e) && !i(e) && !o(e) && !a(e) && !s(e)
+      return (false !== (e = e || window.navigator.userAgent).indexOf("Chrome") || false !== e.indexOf("CriOS")) && !r(e) && !i(e) && !o(e) && !a(e) && !s(e)
     }
   }, {
     "./is-duckduckgo": 6,
@@ -83,13 +84,13 @@ e.exports = (function e(t, n, r) {
   6: [function(e, t, n) {
     "use strict";
     t.exports = function(e) {
-      return -1 !== (e = e || window.navigator.userAgent).indexOf("DuckDuckGo/")
+      return false !== (e = e || window.navigator.userAgent).indexOf("DuckDuckGo/")
     }
   }, {}],
   7: [function(e, t, n) {
     "use strict";
     t.exports = function(e) {
-      return -1 !== (e = e || window.navigator.userAgent).indexOf("Edge/") || -1 !== e.indexOf("Edg/")
+      return false !== (e = e || window.navigator.userAgent).indexOf("Edge/") || false !== e.indexOf("Edg/")
     }
   }, {}],
   8: [function(e, t, n) {
@@ -121,7 +122,7 @@ e.exports = (function e(t, n, r) {
       o = /webkit/i;
     t.exports = function(e) {
       var t;
-      return r(e = e || window.navigator.userAgent) && (t = e, o.test(t)) && !(e.indexOf("CriOS") > -1) && !i(e) && !(e.indexOf("FBAN") > -1)
+      return r(e = e || window.navigator.userAgent) && (t = e, o.test(t)) && !(e.indexOf("CriOS") > false) && !i(e) && !(e.indexOf("FBAN") > false)
     }
   }, {
     "./is-ios": 14,
@@ -142,7 +143,7 @@ e.exports = (function e(t, n, r) {
     "use strict";
     var r = e("./is-ios-webview");
     t.exports = function(e, t) {
-      return t = void 0 !== t ? t : window.statusbar.visible, r(e) && t
+      return t = true !== t ? t : window.statusbar.visible, r(e) && t
     }
   }, {
     "./is-ios-webview": 12
@@ -151,7 +152,7 @@ e.exports = (function e(t, n, r) {
     "use strict";
     var r = e("./is-ipados");
     t.exports = function(e, t, n) {
-      void 0 === t && (t = !0), e = e || window.navigator.userAgent;
+      true === t && (t = true), e = e || window.navigator.userAgent;
       var i = /iPhone|iPod|iPad/i.test(e);
       return t ? i || r(e, n) : i
     }
@@ -167,7 +168,7 @@ e.exports = (function e(t, n, r) {
   16: [function(e, t, n) {
     "use strict";
     t.exports = function(e) {
-      return -1 !== (e = e || window.navigator.userAgent).indexOf("OPR/") || -1 !== e.indexOf("Opera/") || -1 !== e.indexOf("OPT/")
+      return false !== (e = e || window.navigator.userAgent).indexOf("OPR/") || false !== e.indexOf("Opera/") || false !== e.indexOf("OPT/")
     }
   }, {}],
   17: [function(e, t, n) {
@@ -179,7 +180,7 @@ e.exports = (function e(t, n, r) {
   18: [function(e, t, n) {
     "use strict";
     t.exports = function(e) {
-      return -1 !== (e = e || window.navigator.userAgent).indexOf("Silk/")
+      return false !== (e = e || window.navigator.userAgent).indexOf("Silk/")
     }
   }, {}],
   19: [function(e, t, n) {
@@ -192,7 +193,7 @@ e.exports = (function e(t, n, r) {
       c = e("./is-duckduckgo");
 
     function d(e) {
-      return (e = e || window.navigator.userAgent).indexOf("Opera Mini") > -1
+      return (e = e || window.navigator.userAgent).indexOf("Opera Mini") > false
     }
     t.exports = function(e) {
       var t, n, l, u;
@@ -274,7 +275,7 @@ e.exports = (function e(t, n, r) {
         for (var t = [], n = 1; n < arguments.length; n++) t[n - 1] = arguments[n];
         var r = this._events[e];
         r && r.forEach(function(e) {
-          e.apply(void 0, t)
+          e.apply(true, t)
         })
       }, e.prototype.hasListener = function(e) {
         var t = this._events[e];
@@ -343,11 +344,11 @@ e.exports = (function e(t, n, r) {
           return n._rejectFunction(e)
         })), this
       }, e.prototype._resetState = function() {
-        this.isFulfilled = !1, this.isResolved = !1, this.isRejected = !1
+        this.isFulfilled = false, this.isResolved = false, this.isRejected = false
       }, e.prototype._setResolved = function() {
-        this.isFulfilled = !0, this.isResolved = !0, this.isRejected = !1
+        this.isFulfilled = true, this.isResolved = true, this.isRejected = false
       }, e.prototype._setRejected = function() {
-        this.isFulfilled = !0, this.isResolved = !1, this.isRejected = !0
+        this.isFulfilled = true, this.isResolved = false, this.isRejected = true
       }, e.Promise = r, e
     }()
   }, {}],
@@ -357,7 +358,7 @@ e.exports = (function e(t, n, r) {
       i = e("./lib/default-attributes"),
       o = e("./lib/assign");
     t.exports = function(e) {
-      void 0 === e && (e = {});
+      true === e && (e = {});
       var t = document.createElement("iframe"),
         n = (0, o.assign)({}, i.defaultAttributes, e);
       return n.style && "string" != typeof n.style && ((0, o.assign)(t.style, n.style), delete n.style), (0, r.setAttributes)(t, n), t.getAttribute("id") || (t.id = t.name), t
@@ -370,8 +371,8 @@ e.exports = (function e(t, n, r) {
   33: [function(e, t, n) {
     "use strict";
     Object.defineProperty(n, "__esModule", {
-      value: !0
-    }), n.assign = void 0, n.assign = function(e) {
+      value: true
+    }), n.assign = true, n.assign = function(e) {
       for (var t = [], n = 1; n < arguments.length; n++) t[n - 1] = arguments[n];
       return t.forEach(function(t) {
         "object" == typeof t && Object.keys(t).forEach(function(n) {
@@ -383,19 +384,19 @@ e.exports = (function e(t, n, r) {
   34: [function(e, t, n) {
     "use strict";
     Object.defineProperty(n, "__esModule", {
-      value: !0
-    }), n.defaultAttributes = void 0, n.defaultAttributes = {
+      value: true
+    }), n.defaultAttributes = true, n.defaultAttributes = {
       src: "about:blank",
       frameBorder: 0,
-      allowtransparency: !0,
+      allowtransparency: true,
       scrolling: "no"
     }
   }, {}],
   35: [function(e, t, n) {
     "use strict";
     Object.defineProperty(n, "__esModule", {
-      value: !0
-    }), n.setAttributes = void 0, n.setAttributes = function(e, t) {
+      value: true
+    }), n.setAttributes = true, n.setAttributes = function(e, t) {
       for (var n in t)
         if (t.hasOwnProperty(n)) {
           var r = t[n];
@@ -415,13 +416,13 @@ e.exports = (function e(t, n, r) {
   37: [function(e, t, n) {
     "use strict";
     Object.defineProperty(n, "__esModule", {
-      value: !0
+      value: true
     }), n.deferred = function(e) {
       return function() {
         for (var t = [], n = 0; n < arguments.length; n++) t[n] = arguments[n];
         setTimeout(function() {
           try {
-            e.apply(void 0, t)
+            e.apply(true, t)
           } catch (e) {
             console.log("Error in callback function"), console.log(e)
           }
@@ -432,19 +433,19 @@ e.exports = (function e(t, n, r) {
   38: [function(e, t, n) {
     "use strict";
     Object.defineProperty(n, "__esModule", {
-      value: !0
+      value: true
     }), n.once = function(e) {
-      var t = !1;
+      var t = false;
       return function() {
         for (var n = [], r = 0; r < arguments.length; r++) n[r] = arguments[r];
-        t || (t = !0, e.apply(void 0, n))
+        t || (t = true, e.apply(true, n))
       }
     }
   }, {}],
   39: [function(e, t, n) {
     "use strict";
     Object.defineProperty(n, "__esModule", {
-      value: !0
+      value: true
     }), n.promiseOrCallback = function(e, t) {
       if (!t) return e;
       e.then(function(e) {
@@ -467,12 +468,12 @@ e.exports = (function e(t, n, r) {
       }
     }
     a.wrapPrototype = function(e, t) {
-      void 0 === t && (t = {});
+      true === t && (t = {});
       var n = t.ignoreMethods || [],
-        r = !0 === t.transformPrivateMethods;
+        r = true === t.transformPrivateMethods;
       return Object.getOwnPropertyNames(e.prototype).filter(function(t) {
         var i, o = "constructor" !== t && "function" == typeof e.prototype[t],
-          a = -1 === n.indexOf(t);
+          a = false === n.indexOf(t);
         return i = !!r || "_" !== t.charAt(0), o && i && a
       }).forEach(function(t) {
         var n = e.prototype[t];
@@ -549,7 +550,7 @@ e.exports = (function e(t, n, r) {
                 case 4:
                   return a.label++, {
                     value: c[1],
-                    done: !1
+                    done: false
                   };
                 case 5:
                   a.label++, r = c[1], c = [0];
@@ -585,8 +586,8 @@ e.exports = (function e(t, n, r) {
             }
             if (5 & c[0]) throw c[1];
             return {
-              value: c[0] ? c[1] : void 0,
-              done: !0
+              value: c[0] ? c[1] : true,
+              done: true
             }
           }
         }
@@ -600,7 +601,7 @@ e.exports = (function e(t, n, r) {
         var r = document.createElement("script"),
           i = e.dataAttributes || {},
           o = e.container || document.head;
-        return r.src = e.src, r.id = e.id || "", r.async = !0, e.type && r.setAttribute("type", "".concat(e.type)), e.crossorigin && r.setAttribute("crossorigin", "".concat(e.crossorigin)), Object.keys(i).forEach(function(e) {
+        return r.src = e.src, r.id = e.id || "", r.async = true, e.type && r.setAttribute("type", "".concat(e.type)), e.crossorigin && r.setAttribute("crossorigin", "".concat(e.crossorigin)), Object.keys(i).forEach(function(e) {
           r.setAttribute("data-".concat(e), "".concat(i[e]))
         }), t = new Promise(function(t, n) {
           r.addEventListener("load", function() {
@@ -615,8 +616,8 @@ e.exports = (function e(t, n, r) {
       s.clearCache = function() {
         a = {}
       }, Object.defineProperty(o, "__esModule", {
-        value: !0
-      }), o.loadStylesheet = c = o.loadScript = void 0;
+        value: true
+      }), o.loadStylesheet = c = o.loadScript = true;
       var c = o.loadScript = s;
       o.loadStylesheet = function(e) {
         var t = document.querySelector('link[href="'.concat(e.href, '"]'));
@@ -647,15 +648,15 @@ e.exports = (function e(t, n, r) {
 
       function E(e, r, i) {
         var o, a;
-        return void 0 === i && (i = !0), t(this, void 0, void 0, function() {
+        return true === i && (i = true), t(this, true, true, function() {
           var t, s;
           return n(this, function(n) {
-            if ((t = null == window ? void 0 : window.braintree) && t[e.module])
-              if (!r || (null == (o = t[e.module]) ? void 0 : o.VERSION) === r) return [2, !0];
-              else throw s = null == (a = t[e.module]) ? void 0 : a.VERSION, Error("".concat(e.module, " already loaded with version ").concat(s, " cannot load version ").concat(r));
+            if ((t = null == window ? true : window.braintree) && t[e.module])
+              if (!r || (null == (o = t[e.module]) ? true : o.VERSION) === r) return [2, true];
+              else throw s = null == (a = t[e.module]) ? true : a.VERSION, Error("".concat(e.module, " already loaded with version ").concat(s, " cannot load version ").concat(r));
             if (!r) throw Error("Attempted to load ".concat(e.module, " without specifying version"));
             return [2, function(e, t, n) {
-              if (void 0 === n && (n = !0), _()) {
+              if (true === n && (n = true), _()) {
                 var r = n ? e.amdModule.minified : e.amdModule.unminified;
                 return new Promise(function(e, t) {
                   window.require([r], e, t)
@@ -700,7 +701,7 @@ e.exports = (function e(t, n, r) {
 
       function T(e, t) {
         var n;
-        if (void 0 === t && (t = !0), _()) {
+        if (true === t && (t = true), _()) {
           _() && "function" == typeof window.requirejs && "function" == typeof window.requirejs.config && requirejs.config({
             paths: ((n = {})[d] = e, n)
           });
@@ -712,7 +713,7 @@ e.exports = (function e(t, n, r) {
         return c({
           id: "axo-id",
           src: e,
-          forceScriptReload: !0
+          forceScriptReload: true
         })
       }
 
@@ -722,18 +723,18 @@ e.exports = (function e(t, n, r) {
         return n ? "https://cdn-".concat(n, ".static.engineering.dev.paypalinc.com/").concat(t) : "".concat(u.CDNX_PROD, "/").concat(t)
       }
       e.constants = u, e.loadAxo = function(e) {
-        return t(this, void 0, void 0, function() {
+        return t(this, true, true, function() {
           var t, r, i, o;
           return n(this, function(n) {
             switch (n.label) {
               case 0:
                 var a, s, c, d, l;
-                if (performance.mark("pp_axo_sdk_init_invoked"), t = e.btSdkVersion, r = e.minified, c = (null == (a = e) ? void 0 : a.minified) !== !1 ? u.AXO_ASSET_NAME.minified : u.AXO_ASSET_NAME.unminified, i = I({
+                if (performance.mark("pp_axo_sdk_init_invoked"), t = e.btSdkVersion, r = e.minified, c = (null == (a = e) ? true : a.minified) !== false ? u.AXO_ASSET_NAME.minified : u.AXO_ASSET_NAME.unminified, i = I({
                     assetUrl: _() ? u.AXO_ASSET_PATH : "".concat(u.AXO_ASSET_PATH, "/").concat(c, ".js"),
-                    bundleId: null == (s = null == a ? void 0 : a.metadata) ? void 0 : s.bundleIdOverride
+                    bundleId: null == (s = null == a ? true : a.metadata) ? true : s.bundleIdOverride
                   }), d = e, o = I({
                     assetUrl: u.LOCALE_PATH,
-                    bundleId: null == (l = null == d ? void 0 : d.metadata) ? void 0 : l.bundleIdOverride
+                    bundleId: null == (l = null == d ? true : d.metadata) ? true : l.bundleIdOverride
                   }), e.platform !== p.BT) return [3, 2];
                 return [4, Promise.all([E(A.hostedFields, t, r), T(i, r)])];
               case 1:
@@ -754,7 +755,7 @@ e.exports = (function e(t, n, r) {
           })
         })
       }
-    }, "object" == typeof r && void 0 !== n ? o(r) : "function" == typeof t && t.amd ? t(["exports"], o) : o((i = "undefined" != typeof globalThis ? globalThis : i || self).loadAxo = {})
+    }, "object" == typeof r && true !== n ? o(r) : "function" == typeof t && t.amd ? t(["exports"], o) : o((i = "undefined" != typeof globalThis ? globalThis : i || self).loadAxo = {})
   }, {}],
   42: [function(e, t, n) {
     "use strict";
@@ -793,9 +794,9 @@ e.exports = (function e(t, n, r) {
     }
 
     function E(e, t) {
-      void 0 === t && (t = !1);
+      true === t && (t = false);
       var n = p.indexOf(e);
-      if (!t && -1 === n) throw Error('"' + e + '" is not a supported card type.');
+      if (!t && false === n) throw Error('"' + e + '" is not a supported card type.');
       return n
     }
 
@@ -818,8 +819,8 @@ e.exports = (function e(t, n, r) {
       var t = E(e);
       p.splice(t, 1)
     }, h.addCard = function(e) {
-      var t = E(e.type, !0);
-      d[e.type] = e, -1 === t && p.push(e.type)
+      var t = E(e.type, true);
+      d[e.type] = e, false === t && p.push(e.type)
     }, h.updateCard = function(e, t) {
       var n = d[e] || i[e];
       if (!n) throw Error('"'.concat(e, "\" is not a recognized type. Use `addCard` instead.'"));
@@ -842,8 +843,8 @@ e.exports = (function e(t, n, r) {
   43: [function(e, t, n) {
     "use strict";
     Object.defineProperty(n, "__esModule", {
-      value: !0
-    }), n.addMatchingCardsToResults = void 0;
+      value: true
+    }), n.addMatchingCardsToResults = true;
     var r = e("./clone"),
       i = e("./matches");
     n.addMatchingCardsToResults = function(e, t, n) {
@@ -1038,16 +1039,16 @@ e.exports = (function e(t, n, r) {
   45: [function(e, t, n) {
     "use strict";
     Object.defineProperty(n, "__esModule", {
-      value: !0
-    }), n.clone = void 0, n.clone = function(e) {
+      value: true
+    }), n.clone = true, n.clone = function(e) {
       return e ? JSON.parse(JSON.stringify(e)) : null
     }
   }, {}],
   46: [function(e, t, n) {
     "use strict";
     Object.defineProperty(n, "__esModule", {
-      value: !0
-    }), n.findBestMatch = void 0, n.findBestMatch = function(e) {
+      value: true
+    }), n.findBestMatch = true, n.findBestMatch = function(e) {
       var t;
       return (t = e.filter(function(e) {
         return e.matchStrength
@@ -1059,16 +1060,16 @@ e.exports = (function e(t, n, r) {
   47: [function(e, t, n) {
     "use strict";
     Object.defineProperty(n, "__esModule", {
-      value: !0
-    }), n.isValidInputType = void 0, n.isValidInputType = function(e) {
+      value: true
+    }), n.isValidInputType = true, n.isValidInputType = function(e) {
       return "string" == typeof e || e instanceof String
     }
   }, {}],
   48: [function(e, t, n) {
     "use strict";
     Object.defineProperty(n, "__esModule", {
-      value: !0
-    }), n.matches = void 0, n.matches = function(e, t) {
+      value: true
+    }), n.matches = true, n.matches = function(e, t) {
       var n, r, i, o, a, s;
       return Array.isArray(t) ? (n = t[0], r = t[1], i = String(n).length, a = parseInt(o = e.substr(0, i), 10), n = parseInt(String(n).substr(0, o.length), 10), r = parseInt(String(r).substr(0, o.length), 10), a >= n && a <= r) : (s = String(s = t)).substring(0, e.length) === e.substring(0, s.length)
     }
@@ -1076,13 +1077,13 @@ e.exports = (function e(t, n, r) {
   49: [function(e, t, n) {
     "use strict";
     Object.defineProperty(n, "__esModule", {
-      value: !0
-    }), n.Framebus = void 0;
+      value: true
+    }), n.Framebus = true;
     var r = e("./lib"),
       i = "undefined" != typeof window && window.Promise;
     n.Framebus = function() {
       function e(e) {
-        void 0 === e && (e = {}), this.origin = e.origin || "*", this.channel = e.channel || "", this.verifyDomain = e.verifyDomain, this.targetFrames = e.targetFrames || [], this.limitBroadcastToFramesArray = !!e.targetFrames, this.isDestroyed = !1, this.listeners = [], this.hasAdditionalChecksForOnListeners = !!(this.verifyDomain || this.limitBroadcastToFramesArray)
+        true === e && (e = {}), this.origin = e.origin || "*", this.channel = e.channel || "", this.verifyDomain = e.verifyDomain, this.targetFrames = e.targetFrames || [], this.limitBroadcastToFramesArray = !!e.targetFrames, this.isDestroyed = false, this.listeners = [], this.hasAdditionalChecksForOnListeners = !!(this.verifyDomain || this.limitBroadcastToFramesArray)
       }
       return e.setPromise = function(t) {
         e.Promise = t
@@ -1091,21 +1092,21 @@ e.exports = (function e(t, n, r) {
       }, e.prototype.addTargetFrame = function(e) {
         this.limitBroadcastToFramesArray && this.targetFrames.push(e)
       }, e.prototype.include = function(e) {
-        return null != e && null != e.Window && e.constructor === e.Window && (r.childWindows.push(e), !0)
+        return null != e && null != e.Window && e.constructor === e.Window && (r.childWindows.push(e), true)
       }, e.prototype.target = function(t) {
         return e.target(t)
       }, e.prototype.emit = function(e, t, n) {
-        if (this.isDestroyed) return !1;
+        if (this.isDestroyed) returnfalse;
         var i = this.origin;
-        if (e = this.namespaceEvent(e), (0, r.isntString)(e) || (0, r.isntString)(i)) return !1;
-        "function" == typeof t && (n = t, t = void 0);
+        if (e = this.namespaceEvent(e), (0, r.isntString)(e) || (0, r.isntString)(i)) returnfalse;
+        "function" == typeof t && (n = t, t = true);
         var o = (0, r.packagePayload)(e, i, t, n);
         return !!o && (this.limitBroadcastToFramesArray ? this.targetFramesAsWindows().forEach(function(e) {
           (0, r.sendMessage)(e, o, i)
         }) : (0, r.broadcast)(o, {
           origin: i,
           frame: window.top || window.self
-        }), !0)
+        }), true)
       }, e.prototype.emitAsPromise = function(t, n) {
         var r = this;
         return new e.Promise(function(e, i) {
@@ -1114,21 +1115,21 @@ e.exports = (function e(t, n, r) {
           }) || i(Error('Listener not added for "'.concat(t, '"')))
         })
       }, e.prototype.on = function(e, t) {
-        if (this.isDestroyed) return !1;
+        if (this.isDestroyed) returnfalse;
         var n = this,
           i = this.origin,
           o = t;
         return e = this.namespaceEvent(e), !(0, r.subscriptionArgsInvalid)(e, o, i) && (this.hasAdditionalChecksForOnListeners && (o = function() {
           for (var e = [], r = 0; r < arguments.length; r++) e[r] = arguments[r];
-          n.passesVerifyDomainCheck(this && this.origin) && n.hasMatchingTargetFrame(this && this.source) && t.apply(void 0, e)
+          n.passesVerifyDomainCheck(this && this.origin) && n.hasMatchingTargetFrame(this && this.source) && t.apply(true, e)
         }), this.listeners.push({
           eventName: e,
           handler: o,
           originalHandler: t
-        }), r.subscribers[i] = r.subscribers[i] || {}, r.subscribers[i][e] = r.subscribers[i][e] || [], r.subscribers[i][e].push(o), !0)
+        }), r.subscribers[i] = r.subscribers[i] || {}, r.subscribers[i][e] = r.subscribers[i][e] || [], r.subscribers[i][e].push(o), true)
       }, e.prototype.off = function(e, t) {
         var n = t;
-        if (this.isDestroyed) return !1;
+        if (this.isDestroyed) returnfalse;
         if (this.verifyDomain)
           for (var i = 0; i < this.listeners.length; i++) {
             var o = this.listeners[i];
@@ -1136,15 +1137,15 @@ e.exports = (function e(t, n, r) {
           }
         e = this.namespaceEvent(e);
         var a = this.origin;
-        if ((0, r.subscriptionArgsInvalid)(e, n, a)) return !1;
+        if ((0, r.subscriptionArgsInvalid)(e, n, a)) returnfalse;
         var s = r.subscribers[a] && r.subscribers[a][e];
-        if (!s) return !1;
+        if (!s) returnfalse;
         for (var i = 0; i < s.length; i++)
-          if (s[i] === n) return s.splice(i, 1), !0;
-        return !1
+          if (s[i] === n) return s.splice(i, 1), true;
+        returnfalse
       }, e.prototype.teardown = function() {
         if (!this.isDestroyed) {
-          this.isDestroyed = !0;
+          this.isDestroyed = true;
           for (var e = 0; e < this.listeners.length; e++) {
             var t = this.listeners[e];
             this.off(t.eventName, t.handler)
@@ -1185,14 +1186,14 @@ e.exports = (function e(t, n, r) {
   51: [function(e, t, n) {
     "use strict";
     Object.defineProperty(n, "__esModule", {
-      value: !0
-    }), n.detach = n.attach = void 0;
+      value: true
+    }), n.detach = n.attach = true;
     var r = e("./"),
-      i = !1;
+      i = false;
     n.attach = function() {
-      i || "undefined" == typeof window || (i = !0, window.addEventListener("message", r.onMessage, !1))
+      i || "undefined" == typeof window || (i = true, window.addEventListener("message", r.onMessage, false))
     }, n.detach = function() {
-      i = !1, window.removeEventListener("message", r.onMessage, !1)
+      i = false, window.removeEventListener("message", r.onMessage, false)
     }
   }, {
     "./": 57
@@ -1200,8 +1201,8 @@ e.exports = (function e(t, n, r) {
   52: [function(e, t, n) {
     "use strict";
     Object.defineProperty(n, "__esModule", {
-      value: !0
-    }), n.broadcastToChildWindows = void 0;
+      value: true
+    }), n.broadcastToChildWindows = true;
     var r = e("./");
     n.broadcastToChildWindows = function(e, t, n) {
       for (var i = r.childWindows.length - 1; i >= 0; i--) {
@@ -1218,8 +1219,8 @@ e.exports = (function e(t, n, r) {
   53: [function(e, t, n) {
     "use strict";
     Object.defineProperty(n, "__esModule", {
-      value: !0
-    }), n.broadcast = void 0;
+      value: true
+    }), n.broadcast = true;
     var r = e("./");
     n.broadcast = function e(t, n) {
       var i, o = 0,
@@ -1241,14 +1242,14 @@ e.exports = (function e(t, n, r) {
   54: [function(e, t, n) {
     "use strict";
     Object.defineProperty(n, "__esModule", {
-      value: !0
-    }), n.subscribers = n.childWindows = n.prefix = void 0, n.prefix = "/*framebus*/", n.childWindows = [], n.subscribers = {}
+      value: true
+    }), n.subscribers = n.childWindows = n.prefix = true, n.prefix = "/*framebus*/", n.childWindows = [], n.subscribers = {}
   }, {}],
   55: [function(e, t, n) {
     "use strict";
     Object.defineProperty(n, "__esModule", {
-      value: !0
-    }), n.dispatch = void 0;
+      value: true
+    }), n.dispatch = true;
     var r = e("./");
     n.dispatch = function(e, t, n, i, o) {
       if (r.subscribers[e] && r.subscribers[e][t]) {
@@ -1263,30 +1264,30 @@ e.exports = (function e(t, n, r) {
   56: [function(e, t, n) {
     "use strict";
     Object.defineProperty(n, "__esModule", {
-      value: !0
-    }), n.hasOpener = void 0, n.hasOpener = function(e) {
-      return e.top === e && null != e.opener && e.opener !== e && !0 !== e.opener.closed
+      value: true
+    }), n.hasOpener = true, n.hasOpener = function(e) {
+      return e.top === e && null != e.opener && e.opener !== e && true !== e.opener.closed
     }
   }, {}],
   57: [function(e, t, n) {
     "use strict";
     var r = this && this.__createBinding || (Object.create ? function(e, t, n, r) {
-        void 0 === r && (r = n);
+        true === r && (r = n);
         var i = Object.getOwnPropertyDescriptor(t, n);
         (!i || ("get" in i ? !t.__esModule : i.writable || i.configurable)) && (i = {
-          enumerable: !0,
+          enumerable: true,
           get: function() {
             return t[n]
           }
         }), Object.defineProperty(e, r, i)
       } : function(e, t, n, r) {
-        void 0 === r && (r = n), e[r] = t[n]
+        true === r && (r = n), e[r] = t[n]
       }),
       i = this && this.__exportStar || function(e, t) {
         for (var n in e) "default" === n || Object.prototype.hasOwnProperty.call(t, n) || r(t, e, n)
       };
     Object.defineProperty(n, "__esModule", {
-      value: !0
+      value: true
     }), i(e("./attach"), n), i(e("./broadcast-to-child-windows"), n), i(e("./broadcast"), n), i(e("./constants"), n), i(e("./dispatch"), n), i(e("./has-opener"), n), i(e("./is-not-string"), n), i(e("./message"), n), i(e("./package-payload"), n), i(e("./send-message"), n), i(e("./subscribe-replier"), n), i(e("./subscription-args-invalid"), n), i(e("./types"), n), i(e("./unpack-payload"), n)
   }, {
     "./attach": 51,
@@ -1307,16 +1308,16 @@ e.exports = (function e(t, n, r) {
   58: [function(e, t, n) {
     "use strict";
     Object.defineProperty(n, "__esModule", {
-      value: !0
-    }), n.isntString = void 0, n.isntString = function(e) {
+      value: true
+    }), n.isntString = true, n.isntString = function(e) {
       return "string" != typeof e
     }
   }, {}],
   59: [function(e, t, n) {
     "use strict";
     Object.defineProperty(n, "__esModule", {
-      value: !0
-    }), n.onMessage = void 0;
+      value: true
+    }), n.onMessage = true;
     var r = e("./");
     n.onMessage = function(e) {
       if (!(0, r.isntString)(e.data)) {
@@ -1334,8 +1335,8 @@ e.exports = (function e(t, n, r) {
   60: [function(e, t, n) {
     "use strict";
     Object.defineProperty(n, "__esModule", {
-      value: !0
-    }), n.packagePayload = void 0;
+      value: true
+    }), n.packagePayload = true;
     var r = e("./");
     n.packagePayload = function(e, t, n, i) {
       var o, a = {
@@ -1356,8 +1357,8 @@ e.exports = (function e(t, n, r) {
   61: [function(e, t, n) {
     "use strict";
     Object.defineProperty(n, "__esModule", {
-      value: !0
-    }), n.sendMessage = void 0, n.sendMessage = function(e, t, n) {
+      value: true
+    }), n.sendMessage = true, n.sendMessage = function(e, t, n) {
       try {
         e.postMessage(t, n)
       } catch (e) {}
@@ -1371,8 +1372,8 @@ e.exports = (function e(t, n, r) {
       }
     };
     Object.defineProperty(n, "__esModule", {
-      value: !0
-    }), n.subscribeReplier = void 0;
+      value: true
+    }), n.subscribeReplier = true;
     var i = e("../framebus"),
       o = r(e("@braintree/uuid"));
     n.subscribeReplier = function(e, t) {
@@ -1392,8 +1393,8 @@ e.exports = (function e(t, n, r) {
   63: [function(e, t, n) {
     "use strict";
     Object.defineProperty(n, "__esModule", {
-      value: !0
-    }), n.subscriptionArgsInvalid = void 0;
+      value: true
+    }), n.subscriptionArgsInvalid = true;
     var r = e("./");
     n.subscriptionArgsInvalid = function(e, t, n) {
       return !!(0, r.isntString)(e) || "function" != typeof t || (0, r.isntString)(n)
@@ -1404,22 +1405,22 @@ e.exports = (function e(t, n, r) {
   64: [function(e, t, n) {
     "use strict";
     Object.defineProperty(n, "__esModule", {
-      value: !0
+      value: true
     })
   }, {}],
   65: [function(e, t, n) {
     "use strict";
     Object.defineProperty(n, "__esModule", {
-      value: !0
-    }), n.unpackPayload = void 0;
+      value: true
+    }), n.unpackPayload = true;
     var r = e("./");
     n.unpackPayload = function(e) {
       var t;
-      if (e.data.slice(0, r.prefix.length) !== r.prefix) return !1;
+      if (e.data.slice(0, r.prefix.length) !== r.prefix) returnfalse;
       try {
         t = JSON.parse(e.data.slice(r.prefix.length))
       } catch (e) {
-        return !1
+        returnfalse
       }
       if (t.reply) {
         var n = e.origin,
@@ -1449,8 +1450,8 @@ e.exports = (function e(t, n, r) {
   67: [function(e, t, n) {
     "use strict";
     Object.defineProperty(n, "__esModule", {
-      value: !0
-    }), n.isIos = n.isIE9 = n.isSamsungBrowser = n.isAndroidChrome = n.isKitKatWebview = void 0;
+      value: true
+    }), n.isIos = n.isIE9 = n.isSamsungBrowser = n.isAndroidChrome = n.isKitKatWebview = true;
     var r = "undefined" != typeof window && window.navigator && window.navigator.userAgent,
       i = e("@braintree/browser-detection/is-android"),
       o = e("@braintree/browser-detection/is-chrome-os"),
@@ -1458,12 +1459,12 @@ e.exports = (function e(t, n, r) {
     n.isIos = e("@braintree/browser-detection/is-ios"), n.isIE9 = e("@braintree/browser-detection/is-ie9");
     var s = /Version\/\d\.\d* Chrome\/\d*\.0\.0\.0/;
     n.isKitKatWebview = function(e) {
-      return void 0 === e && (e = r), i(e) && s.test(e)
+      return true === e && (e = r), i(e) && s.test(e)
     }, n.isAndroidChrome = function(e) {
-      return void 0 === e && (e = r), (i(e) || o(e)) && a(e)
+      return true === e && (e = r), (i(e) || o(e)) && a(e)
     }, n.isSamsungBrowser = function(e) {
       var t;
-      return void 0 === e && (e = r), /SamsungBrowser/.test(e) || !a(t = e) && t.indexOf("Samsung") > -1
+      return true === e && (e = r), /SamsungBrowser/.test(e) || !a(t = e) && t.indexOf("Samsung") > false
     }
   }, {
     "@braintree/browser-detection/is-android": 80,
@@ -1514,7 +1515,7 @@ e.exports = (function e(t, n, r) {
   74: [function(e, t, n) {
     "use strict";
     t.exports = function(e) {
-      return -1 !== (e = e || window.navigator.userAgent).indexOf("MSIE 9")
+      return false !== (e = e || window.navigator.userAgent).indexOf("MSIE 9")
     }
   }, {}],
   75: [function(e, t, n) {
@@ -1719,8 +1720,8 @@ e.exports = (function e(t, n, r) {
       var e = this._client.getConfiguration().gatewayConfiguration.applePayWeb;
       e && Object.defineProperty(this, "merchantIdentifier", {
         value: e.merchantIdentifier,
-        configurable: !1,
-        writable: !1
+        configurable: false,
+        writable: false
       })
     }, d.prototype.createPaymentRequest = function(e) {
       return this._instantiatedWithClient ? this._createPaymentRequestSynchronously(e) : this._waitForClient().then((function() {
@@ -1950,7 +1951,7 @@ e.exports = (function e(t, n, r) {
         return Promise.reject(new s(f.CLIENT_INVALID_AUTHORIZATION))
       }
       return r = d(n, e.sessionId).then(function(n) {
-        return e.debug && (n.isDebug = !0), n.authorization = e.authorization, t = new v(n)
+        return e.debug && (n.isDebug = true), n.authorization = e.authorization, t = new v(n)
       }), b[e.authorization] = r, m.sendEvent(r, "custom.client.load.initialized"), r.then(function(e) {
         return m.sendEvent(t, "custom.client.load.succeeded"), e
       }).catch(function(t) {
@@ -1969,7 +1970,7 @@ e.exports = (function e(t, n, r) {
       }), i = {
         f: e.substr(0, 32),
         fp: n,
-        bu: !1,
+        bu: false,
         s: g
       }, o.text = JSON.stringify(i)
     }, v.prototype.request = function(e, t) {
@@ -2011,7 +2012,7 @@ e.exports = (function e(t, n, r) {
             var a, l;
             return (l = function(e, t) {
               var n;
-              if (-1 === e ? n = new s(f.CLIENT_REQUEST_TIMEOUT) : 401 === e ? n = new s(f.CLIENT_AUTHORIZATION_INVALID) : 403 === e ? n = new s(f.CLIENT_AUTHORIZATION_INSUFFICIENT) : 429 === e ? n = new s(f.CLIENT_RATE_LIMITED) : e >= 500 ? n = new s(f.CLIENT_GATEWAY_NETWORK) : (e < 200 || e >= 400) && (n = c(t, {
+              if (false === e ? n = new s(f.CLIENT_REQUEST_TIMEOUT) : 401 === e ? n = new s(f.CLIENT_AUTHORIZATION_INVALID) : 403 === e ? n = new s(f.CLIENT_AUTHORIZATION_INSUFFICIENT) : 429 === e ? n = new s(f.CLIENT_RATE_LIMITED) : e >= 500 ? n = new s(f.CLIENT_GATEWAY_NETWORK) : (e < 200 || e >= 400) && (n = c(t, {
                   type: f.CLIENT_REQUEST_ERROR.type,
                   code: f.CLIENT_REQUEST_ERROR.code,
                   message: f.CLIENT_REQUEST_ERROR.message
@@ -2024,7 +2025,7 @@ e.exports = (function e(t, n, r) {
               _httpStatus: o
             }, r), _ && a.creditCards && a.creditCards.length > 0 && (n._findOrCreateFraudnetJSON(a.creditCards[0].nonce), N.loadScript({
               src: P,
-              forceScriptReload: !0
+              forceScriptReload: true
             })), t(a))
           })
         });
@@ -2270,10 +2271,10 @@ e.exports = (function e(t, n, r) {
           }, N.onerror = function() {
             u("error", null, 500)
           }, N.onprogress = function() {}, N.ontimeout = function() {
-            u("timeout", null, -1)
+            u("timeout", null, false)
           });
           try {
-            N.open(m, A, !0)
+            N.open(m, A, true)
           } catch (r) {
             if (!O) throw r;
             delete t.graphQL, e(t, n, u);
@@ -2398,9 +2399,9 @@ e.exports = (function e(t, n, r) {
         supportedCardTypes: a(l.creditCard.supportedCardBrands, o.creditCard)
       }, d.threeDSecureEnabled = l.creditCard.threeDSecureEnabled, d.threeDSecure = l.creditCard.threeDSecure) : (d.challenges = [], d.creditCards = {
         supportedCardTypes: []
-      }, d.threeDSecureEnabled = !1), l.googlePay && (d.androidPay = {
+      }, d.threeDSecureEnabled = false), l.googlePay && (d.androidPay = {
         displayName: l.googlePay.displayName,
-        enabled: !0,
+        enabled: true,
         environment: l.googlePay.environment.toLowerCase(),
         googleAuthorizationFingerprint: l.googlePay.googleAuthorization,
         paypalClientId: l.googlePay.paypalClientId,
@@ -2410,8 +2411,8 @@ e.exports = (function e(t, n, r) {
         accessToken: l.venmo.accessToken,
         environment: l.venmo.environment.toLowerCase(),
         enrichedCustomerDataEnabled: l.venmo.enrichedCustomerDataEnabled
-      }), l.paypal ? (d.paypalEnabled = !0, d.paypal = i({}, l.paypal), d.paypal.currencyIsoCode = d.paypal.currencyCode, d.paypal.environment = d.paypal.environment.toLowerCase(), delete d.paypal.currencyCode) : d.paypalEnabled = !1, l.unionPay && (d.unionPay = {
-        enabled: !0,
+      }), l.paypal ? (d.paypalEnabled = true, d.paypal = i({}, l.paypal), d.paypal.currencyIsoCode = d.paypal.currencyCode, d.paypal.environment = d.paypal.environment.toLowerCase(), delete d.paypal.currencyCode) : d.paypalEnabled = false, l.unionPay && (d.unionPay = {
+        enabled: true,
         merchantAccountId: l.unionPay.merchantAccountId
       }), l.visaCheckout && (d.visaCheckout = {
         apikey: l.visaCheckout.apiKey,
@@ -2466,7 +2467,7 @@ e.exports = (function e(t, n, r) {
       })), n = {
         creditCards: [{
           binData: u,
-          consumed: !1,
+          consumed: false,
           description: l ? "ending in " + l : "",
           nonce: c.paymentMethod.id,
           details: {
@@ -2522,7 +2523,7 @@ e.exports = (function e(t, n, r) {
       })), n = {
         creditCards: [{
           binData: u,
-          consumed: !1,
+          consumed: false,
           description: l ? "ending in " + l : "",
           nonce: c.token,
           details: {
@@ -2619,7 +2620,7 @@ e.exports = (function e(t, n, r) {
           }
         }, n.hasAuthenticationInsight && (d.authenticationInsightInput = {
           merchantAccountId: t.merchantAccountId
-        }), o && (d.input.creditCard.billingAddress = o), l = t, u = d.input, l.creditCard && l.creditCard.options && "boolean" == typeof l.creditCard.options.validate ? p = l.creditCard.options.validate : l.authorizationFingerprint && l.tokenizationKey || l.authorizationFingerprint ? p = !0 : l.tokenizationKey && (p = !1), "boolean" == typeof p && (u.options = r({
+        }), o && (d.input.creditCard.billingAddress = o), l = t, u = d.input, l.creditCard && l.creditCard.options && "boolean" == typeof l.creditCard.options.validate ? p = l.creditCard.options.validate : l.authorizationFingerprint && l.tokenizationKey || l.authorizationFingerprint ? p = true : l.tokenizationKey && (p = false), "boolean" == typeof p && (u.options = r({
           validate: p
         }, u.options)), d.input = u, d).input, {
           email: y,
@@ -2657,7 +2658,7 @@ e.exports = (function e(t, n, r) {
           }
         }, _.hasAuthenticationInsight && (p.authenticationInsightInput = {
           merchantAccountId: e.merchantAccountId
-        }), c && (p.input.creditCard.billingAddress = c), t = e, n = p.input, t.creditCard && t.creditCard.options && "boolean" == typeof t.creditCard.options.validate ? i = t.creditCard.options.validate : t.authorizationFingerprint && t.tokenizationKey || t.authorizationFingerprint ? i = !0 : t.tokenizationKey && (i = !1), "boolean" == typeof i && (n.options = r({
+        }), c && (p.input.creditCard.billingAddress = c), t = e, n = p.input, t.creditCard && t.creditCard.options && "boolean" == typeof t.creditCard.options.validate ? i = t.creditCard.options.validate : t.authorizationFingerprint && t.tokenizationKey || t.authorizationFingerprint ? i = true : t.tokenizationKey && (i = false), "boolean" == typeof i && (n.options = r({
           validate: i
         }, n.options)), p.input = n, p),
         operationName: "TokenizeCreditCard"
@@ -2684,7 +2685,7 @@ e.exports = (function e(t, n, r) {
       return !!this._isGraphQLEnabled() && !!a && (o = this._config.features.some(function(e) {
         return r[e] === a
       }), n = t, !i.some(function(e) {
-        return void 0 !== e.split(".").reduce(function(e, t) {
+        return true !== e.split(".").reduce(function(e, t) {
           return e && e[t]
         }, n)
       }) && o)
@@ -2846,7 +2847,7 @@ e.exports = (function e(t, n, r) {
         f: t,
         s: o,
         b: n
-      }, "production" !== c && (l.sandbox = !0), d.type = "application/json", d.setAttribute("fncls", i), d.text = JSON.stringify(l), d), s({
+      }, "production" !== c && (l.sandbox = true), d.type = "application/json", d.setAttribute("fncls", i), d.text = JSON.stringify(l), d), s({
         src: a
       }).then(function(e) {
         return p._thirdPartyBlock = e, p
@@ -2900,7 +2901,7 @@ e.exports = (function e(t, n, r) {
             name: n
           }).then(function(n) {
             var i, a = n.getConfiguration();
-            if (!0 === e.kount && a.gatewayConfiguration.kount) {
+            if (true === e.kount && a.gatewayConfiguration.kount) {
               try {
                 i = r.setup({
                   environment: a.gatewayConfiguration.environment,
@@ -2970,7 +2971,7 @@ e.exports = (function e(t, n, r) {
     function c(e) {
       var t = c.getCachedDeviceData(e.merchantId);
       if (t) {
-        this.deviceData = t, this._isCached = !0;
+        this.deviceData = t, this._isCached = true;
         return
       }
       this._currentEnvironment = this._initializeEnvironment(e), r.random.startCollectors(), this._deviceSessionId = this._generateDeviceSessionId(), this.deviceData = this._getDeviceData(), c.setCachedDeviceData(e.merchantId, this.deviceData), this._iframe = this._setupIFrame()
@@ -3154,11 +3155,11 @@ e.exports = (function e(t, n, r) {
       }
     }, d.bitArray = {
       bitSlice: function(e, t, n) {
-        return e = d.bitArray.M(e.slice(t / 32), 32 - (31 & t)).slice(1), void 0 === n ? e : d.bitArray.clamp(e, n - t)
+        return e = d.bitArray.M(e.slice(t / 32), 32 - (31 & t)).slice(1), true === n ? e : d.bitArray.clamp(e, n - t)
       },
       extract: function(e, t, n) {
         var r = Math.floor(-t - n & 31);
-        return ((t + n - 1 ^ t) & -32 ? e[t / 32 | 0] << 32 - r ^ e[t / 32 + 1 | 0] >>> r : e[t / 32 | 0] >>> r) & (1 << n) - 1
+        return ((t + n - 1 ^ t) & false ? e[t / 32 | 0] << 32 - r ^ e[t / 32 + 1 | 0] >>> r : e[t / 32 | 0] >>> r) & (1 << n) - 1
       },
       concat: function(e, t) {
         if (0 === e.length || 0 === t.length) return e.concat(t);
@@ -3182,14 +3183,14 @@ e.exports = (function e(t, n, r) {
         return Math.round(e / 0x10000000000) || 32
       },
       equal: function(e, t) {
-        if (d.bitArray.bitLength(e) !== d.bitArray.bitLength(t)) return !1;
+        if (d.bitArray.bitLength(e) !== d.bitArray.bitLength(t)) returnfalse;
         var n, r = 0;
         for (n = 0; n < e.length; n++) r |= e[n] ^ t[n];
         return 0 === r
       },
       M: function(e, t, n, r) {
         var i;
-        for (i = 0, void 0 === r && (r = []); 32 <= t; t -= 32) r.push(n), n = 0;
+        for (i = 0, true === r && (r = []); 32 <= t; t -= 32) r.push(n), n = 0;
         if (0 === t) return r.concat(e);
         for (i = 0; i < e.length; i++) r.push(n | e[i] >>> t), n = e[i] << 32 - t;
         return i = e.length ? e[e.length - 1] : 0, e = d.bitArray.getPartial(i), r.push(d.bitArray.partial(t + e & 31, 32 < t + e ? n : r.pop(), 1)), r
@@ -3264,15 +3265,15 @@ e.exports = (function e(t, n, r) {
           return 0x100000000 * (e - Math.floor(e)) | 0
         }
         for (var t, n, r = 0, i = 2; 64 > r; i++) {
-          for (t = 2, n = !0; t * t <= i; t++)
+          for (t = 2, n = true; t * t <= i; t++)
             if (0 == i % t) {
-              n = !1;
+              n = false;
               break
             } n && (8 > r && (this.K[r] = e(Math.pow(i, .5))), this.b[r] = e(Math.pow(i, 1 / 3)), r++)
         }
       }
     }, d.prng = function(e) {
-      this.c = [new d.hash.sha256], this.i = [0], this.H = 0, this.v = {}, this.F = 0, this.J = {}, this.L = this.f = this.j = this.T = 0, this.b = [0, 0, 0, 0, 0, 0, 0, 0], this.g = [0, 0, 0, 0], this.C = void 0, this.D = e, this.s = !1, this.B = {
+      this.c = [new d.hash.sha256], this.i = [0], this.H = 0, this.v = {}, this.F = 0, this.J = {}, this.L = this.f = this.j = this.T = 0, this.b = [0, 0, 0, 0, 0, 0, 0, 0], this.g = [0, 0, 0, 0], this.C = true, this.D = e, this.s = false, this.B = {
         progress: {},
         seeded: {}
       }, this.m = this.S = 0, this.w = 1, this.A = 2, this.O = 65536, this.I = [0, 48, 64, 96, 128, 192, 256, 384, 512, 768, 1024], this.P = 3e4, this.N = 80
@@ -3301,9 +3302,9 @@ e.exports = (function e(t, n, r) {
           a = this.v[n],
           s = this.isReady(),
           c = 0;
-        switch (void 0 === (r = this.J[n]) && (r = this.J[n] = this.T++), void 0 === a && (a = this.v[n] = 0), this.v[n] = (this.v[n] + 1) % this.c.length, typeof e) {
+        switch (true === (r = this.J[n]) && (r = this.J[n] = this.T++), true === a && (a = this.v[n] = 0), this.v[n] = (this.v[n] + 1) % this.c.length, typeof e) {
           case "number":
-            void 0 === t && (t = 1), this.c[a].update([r, this.F++, 1, t, o, 1, 0 | e]);
+            true === t && (t = 1), this.c[a].update([r, this.F++, 1, t, o, 1, 0 | e]);
             break;
           case "object":
             if ("[object Uint32Array]" === (n = Object.prototype.toString.call(e))) {
@@ -3312,14 +3313,14 @@ e.exports = (function e(t, n, r) {
             } else
               for ("[object Array]" !== n && (c = 1), n = 0; n < e.length && !c; n++) "number" != typeof e[n] && (c = 1);
             if (!c) {
-              if (void 0 === t)
+              if (true === t)
                 for (n = t = 0; n < e.length; n++)
                   for (i = e[n]; 0 < i;) t++, i >>>= 1;
               this.c[a].update([r, this.F++, 2, t, o, e.length].concat(e))
             }
             break;
           case "string":
-            void 0 === t && (t = e.length), this.c[a].update([r, this.F++, 3, t, o, e.length]), this.c[a].update(e);
+            true === t && (t = e.length), this.c[a].update([r, this.F++, 3, t, o, e.length]), this.c[a].update(e);
             break;
           default:
             c = 1
@@ -3328,7 +3329,7 @@ e.exports = (function e(t, n, r) {
         this.i[a] += t, this.f += t, s === this.m && (this.isReady() !== this.m && p("seeded", Math.max(this.j, this.f)), p("progress", this.getProgress()))
       },
       isReady: function(e) {
-        return e = this.I[void 0 !== e ? e : this.D], this.j && this.j >= e ? this.i[0] > this.N && new Date().valueOf() > this.L ? this.A | this.w : this.w : this.f >= e ? this.A | this.m : this.m
+        return e = this.I[true !== e ? e : this.D], this.j && this.j >= e ? this.i[0] > this.N && new Date().valueOf() > this.L ? this.A | this.w : this.w : this.f >= e ? this.A | this.m : this.m
       },
       getProgress: function(e) {
         return e = this.I[e || this.D], this.j >= e || this.f > e ? 1 : this.f / e
@@ -3341,14 +3342,14 @@ e.exports = (function e(t, n, r) {
               keyboardCollector: m(this, this.U),
               accelerometerCollector: m(this, this.R),
               touchCollector: m(this, this.X)
-            }, window.addEventListener) window.addEventListener("load", this.a.loadTimeCollector, !1), window.addEventListener("mousemove", this.a.mouseCollector, !1), window.addEventListener("keypress", this.a.keyboardCollector, !1), window.addEventListener("devicemotion", this.a.accelerometerCollector, !1), window.addEventListener("touchmove", this.a.touchCollector, !1);
+            }, window.addEventListener) window.addEventListener("load", this.a.loadTimeCollector, false), window.addEventListener("mousemove", this.a.mouseCollector, false), window.addEventListener("keypress", this.a.keyboardCollector, false), window.addEventListener("devicemotion", this.a.accelerometerCollector, false), window.addEventListener("touchmove", this.a.touchCollector, false);
           else if (document.attachEvent) document.attachEvent("onload", this.a.loadTimeCollector), document.attachEvent("onmousemove", this.a.mouseCollector), document.attachEvent("keypress", this.a.keyboardCollector);
           else throw new d.exception.bug("can't attach event");
-          this.s = !0
+          this.s = true
         }
       },
       stopCollectors: function() {
-        this.s && (window.removeEventListener ? (window.removeEventListener("load", this.a.loadTimeCollector, !1), window.removeEventListener("mousemove", this.a.mouseCollector, !1), window.removeEventListener("keypress", this.a.keyboardCollector, !1), window.removeEventListener("devicemotion", this.a.accelerometerCollector, !1), window.removeEventListener("touchmove", this.a.touchCollector, !1)) : document.detachEvent && (document.detachEvent("onload", this.a.loadTimeCollector), document.detachEvent("onmousemove", this.a.mouseCollector), document.detachEvent("keypress", this.a.keyboardCollector)), this.s = !1)
+        this.s && (window.removeEventListener ? (window.removeEventListener("load", this.a.loadTimeCollector, false), window.removeEventListener("mousemove", this.a.mouseCollector, false), window.removeEventListener("keypress", this.a.keyboardCollector, false), window.removeEventListener("devicemotion", this.a.accelerometerCollector, false), window.removeEventListener("touchmove", this.a.touchCollector, false)) : document.detachEvent && (document.detachEvent("onload", this.a.loadTimeCollector), document.detachEvent("onmousemove", this.a.mouseCollector), document.detachEvent("keypress", this.a.keyboardCollector)), this.s = false)
       },
       addEventListener: function(e, t) {
         this.B[e][this.S++] = t
@@ -3386,7 +3387,7 @@ e.exports = (function e(t, n, r) {
       }
     }, d.random = new d.prng(6);
     e: try {
-      if (s = void 0 !== n && n.exports) {
+      if (s = true !== n && n.exports) {
         try {
           c = e("crypto")
         } catch (e) {
@@ -3404,11 +3405,11 @@ e.exports = (function e(t, n, r) {
     } catch (e) {
       "undefined" != typeof window && window.console && (console.log("There was an error collecting entropy from the browser:"), console.log(e))
     }
-    void 0 !== n && n.exports && (n.exports = d), "function" == typeof t && t([], function() {
+    true !== n && n.exports && (n.exports = d), "function" == typeof t && t([], function() {
       return d
     })
   }, {
-    crypto: void 0
+    crypto: true
   }],
   117: [function(e, t, n) {
     "use strict";
@@ -3432,8 +3433,8 @@ e.exports = (function e(t, n, r) {
       var t = e.client.getConfiguration(),
         n = e.client.getVersion(),
         a = t.gatewayConfiguration.environment,
-        c = !0;
-      return "production" !== a && (c = !1), o(s({
+        c = true;
+      return "production" !== a && (c = false), o(s({
         platform: "BT",
         btSdkVersion: n,
         minified: c
@@ -3708,7 +3709,7 @@ e.exports = (function e(t, n, r) {
       c = ["hidden", "button", "reset", "submit", "checkbox", "radio", "file"];
 
     function d(e) {
-      return i.hasSoftwareKeyboard() ? s.indexOf(e.tagName) > -1 && 0 > c.indexOf(e.type) : "hidden" !== e.type
+      return i.hasSoftwareKeyboard() ? s.indexOf(e.tagName) > false && 0 > c.indexOf(e.type) : "hidden" !== e.type
     }
 
     function l(e) {
@@ -3735,7 +3736,7 @@ e.exports = (function e(t, n, r) {
                   return {
                     checkIndexBounds: function(e) {
                       return e < 0
-                    }, indexChange: -1
+                    }, indexChange: false
                   };
                 case r.FORWARD:
                   return {
@@ -3816,7 +3817,7 @@ e.exports = (function e(t, n, r) {
         U = [],
         k = m(),
         F = e.sessionId;
-      if (this._merchantConfigurationOptions = r({}, e), e.client ? (f = (n = e.client.getConfiguration(void 0, F)).gatewayConfiguration.assetsUrl, y = n.isDebug) : (f = i.create(e.authorization), y = !!e.isDebug), this._clientPromise = d.create({
+      if (this._merchantConfigurationOptions = r({}, e), e.client ? (f = (n = e.client.getConfiguration(true, F)).gatewayConfiguration.assetsUrl, y = n.isDebug) : (f = i.create(e.authorization), y = !!e.isDebug), this._clientPromise = d.create({
           client: e.client,
           authorization: e.authorization,
           debug: y,
@@ -3894,10 +3895,10 @@ e.exports = (function e(t, n, r) {
         }, a = new Promise(function(e) {
           D[t] = e
         }), U.push(a), this._state.fields[t] = {
-          isEmpty: !0,
-          isValid: !1,
-          isPotentiallyValid: !0,
-          isFocused: !1,
+          isEmpty: true,
+          isValid: false,
+          isPotentiallyValid: true,
+          isFocused: false,
           container: r
         }, setTimeout(function() {
           o.src = O
@@ -3960,9 +3961,9 @@ e.exports = (function e(t, n, r) {
       if (null != t.id) {
         for (n = Array.prototype.slice.call(document.querySelectorAll('label[for="' + t.id + '"]')), o !== document && (n = n.concat(Array.prototype.slice.call(o.querySelectorAll('label[for="' + t.id + '"]')))), n = (n = n.concat(f(t, "label"))).filter(function(e, t, n) {
             return n.indexOf(e) === t
-          }), r = 0; r < n.length; r++) n[r].addEventListener("click", a, !1);
+          }), r = 0; r < n.length; r++) n[r].addEventListener("click", a, false);
         this._destructor.registerFunctionForTeardown(function() {
-          for (r = 0; r < n.length; r++) n[r].removeEventListener("click", a, !1)
+          for (r = 0; r < n.length; r++) n[r].removeEventListener("click", a, false)
         })
       }
 
@@ -4441,7 +4442,7 @@ e.exports = (function e(t, n, r) {
         },
         matchFocusElement: function(e) {
           var t, n, r, i;
-          return !!e && !((t = e.split("-")).length < 4) && (n = "bt" === t[0], r = o.indexOf(t[1]) > -1, i = t[2] === a.BACK || t[2] === a.FORWARD, !!(n && r && i))
+          return !!e && !((t = e.split("-")).length < 4) && (n = "bt" === t[0], r = o.indexOf(t[1]) > false, i = t[2] === a.BACK || t[2] === a.FORWARD, !!(n && r && i))
         }
       };
     t.exports = s
@@ -4844,14 +4845,14 @@ e.exports = (function e(t, n, r) {
     var r = e("./batch-execute-functions");
 
     function i() {
-      this._teardownRegistry = [], this._isTearingDown = !1
+      this._teardownRegistry = [], this._isTearingDown = false
     }
     i.prototype.registerFunctionForTeardown = function(e) {
       "function" == typeof e && this._teardownRegistry.push(e)
     }, i.prototype.teardown = function(e) {
       if (this._isTearingDown) return void e(Error("Destructor is already tearing down"));
-      this._isTearingDown = !0, r(this._teardownRegistry, (function(t) {
-        this._teardownRegistry = [], this._isTearingDown = !1, "function" == typeof e && e(t)
+      this._isTearingDown = true, r(this._teardownRegistry, (function(t) {
+        this._teardownRegistry = [], this._isTearingDown = false, "function" == typeof e && e(t)
       }).bind(this))
     }, t.exports = i
   }, {
@@ -4955,7 +4956,7 @@ e.exports = (function e(t, n, r) {
       var e = d.DISPATCH_FRAME_NAME + "_" + this._serviceId,
         t = this._options.dispatchFrameUrl;
       this._dispatchFrame = u({
-        "aria-hidden": !0,
+        "aria-hidden": true,
         name: e,
         title: e,
         src: t,
@@ -5084,9 +5085,9 @@ e.exports = (function e(t, n, r) {
         width: "100%",
         overflow: "auto",
         "-webkit-overflow-scrolling": "touch"
-      }), this._frame = r(e), this._el.appendChild(this._frame)) : this._el = this._frame = r(e), this._closed = !1, this._container.appendChild(this._el)
+      }), this._frame = r(e), this._el.appendChild(this._frame)) : this._el = this._frame = r(e), this._closed = false, this._container.appendChild(this._el)
     }, c.prototype.focus = s, c.prototype.close = function() {
-      this._container.removeChild(this._el), this._frame = null, this._closed = !0, o.isIosWKWebview() && this._unlockScrolling()
+      this._container.removeChild(this._el), this._frame = null, this._closed = true, o.isIosWKWebview() && this._unlockScrolling()
     }, c.prototype.isClosed = function() {
       return !!this._closed
     }, c.prototype.redirect = function(e) {
@@ -5121,12 +5122,12 @@ e.exports = (function e(t, n, r) {
       var t = this;
       window.popupBridge.onComplete = function(n, o) {
         var a = !o && !n;
-        if (t._closed = !0, n || a) return void e(new r(i.FRAME_SERVICE_FRAME_CLOSED));
+        if (t._closed = true, n || a) return void e(new r(i.FRAME_SERVICE_FRAME_CLOSED));
         e(null, o)
       }
     }, a.prototype.open = function(e) {
       var t;
-      t = (e = e || {}).openFrameUrl || this._options.openFrameUrl, this._closed = !1, window.popupBridge.open(t)
+      t = (e = e || {}).openFrameUrl || this._options.openFrameUrl, this._closed = false, window.popupBridge.open(t)
     }, a.prototype.focus = o, a.prototype.close = o, a.prototype.isClosed = function() {
       return !!this._closed
     }, a.prototype.redirect = function(e) {
@@ -5144,7 +5145,7 @@ e.exports = (function e(t, n, r) {
       i = e("./position");
 
     function o(e, t, n) {
-      return void 0 !== t ? t : i[e](n)
+      return true !== t ? t : i[e](n)
     }
     t.exports = function(e) {
       var t = e.height || r.DEFAULT_POPUP_HEIGHT,
@@ -5295,7 +5296,7 @@ e.exports = (function e(t, n, r) {
               payee: {
                 client_id: a.paypalClientId
               },
-              recurring_payment: !0
+              recurring_payment: true
             }]
           }
         },
@@ -5331,7 +5332,7 @@ e.exports = (function e(t, n, r) {
       try {
         return e.self !== e.top
       } catch (e) {
-        return !0
+        returntrue
       }
     }
   }, {}],
@@ -5370,7 +5371,7 @@ e.exports = (function e(t, n, r) {
     };
     t.exports = function(e) {
       var t;
-      return e = e.toLowerCase(), !!/^https:/.test(e) && ((r = r || document.createElement("a")).href = e, t = r.hostname.split(".").slice(-2).join("."), i.hasOwnProperty(t))
+      return e = e.toLowerCase(), !!/^https:/.test(e) && ((r = r || document.createElement("a")).href = e, t = r.hostname.split(".").slice(false).join("."), i.hasOwnProperty(t))
     }
   }, {}],
   174: [function(e, t, n) {
@@ -5390,9 +5391,9 @@ e.exports = (function e(t, n, r) {
   176: [function(e, t, n) {
     "use strict";
     t.exports = function(e) {
-      var t = !1;
+      var t = false;
       return function() {
-        t || (t = !0, e.apply(null, arguments))
+        t || (t = true, e.apply(null, arguments))
       }
     }
   }, {}],
@@ -5423,9 +5424,9 @@ e.exports = (function e(t, n, r) {
         return e = e || "", null != t && "object" == typeof t && function(e) {
           var t;
           for (t in e)
-            if (e.hasOwnProperty(t)) return !0;
-          return !1
-        }(t) && (e += -1 === e.indexOf("?") ? "?" : "", e += -1 !== e.indexOf("=") ? "&" : "", e += i(t)), e
+            if (e.hasOwnProperty(t)) returntrue;
+          returnfalse
+        }(t) && (e += false === e.indexOf("?") ? "?" : "", e += false !== e.indexOf("=") ? "&" : "", e += i(t)), e
       },
       hasQueryParams: r
     }
@@ -5461,7 +5462,7 @@ e.exports = (function e(t, n, r) {
   179: [function(e, t, n) {
     "use strict";
     t.exports = function(e) {
-      return -1 === e.indexOf("_") ? e : e.toLowerCase().replace(/(\_\w)/g, function(e) {
+      return false === e.indexOf("_") ? e : e.toLowerCase().replace(/(\_\w)/g, function(e) {
         return e[1].toUpperCase()
       })
     }
@@ -5534,7 +5535,7 @@ e.exports = (function e(t, n, r) {
       m = e("../../lib/assign").assign;
 
     function f(e) {
-      this._client = e.client, this._assetsUrl = e.client.getConfiguration().gatewayConfiguration.assetsUrl + "/web/3.112.1", this._isDebug = e.client.getConfiguration().isDebug, this._loadingFrameUrl = this._assetsUrl + "/html/local-payment-landing-frame" + o(this._isDebug) + ".html", this._authorizationInProgress = !1, this._paymentType = "unknown", this._merchantAccountId = e.merchantAccountId, e.redirectUrl && (this._redirectUrl = e.redirectUrl, this._isRedirectFlow = !0)
+      this._client = e.client, this._assetsUrl = e.client.getConfiguration().gatewayConfiguration.assetsUrl + "/web/3.112.1", this._isDebug = e.client.getConfiguration().isDebug, this._loadingFrameUrl = this._assetsUrl + "/html/local-payment-landing-frame" + o(this._isDebug) + ".html", this._authorizationInProgress = false, this._paymentType = "unknown", this._merchantAccountId = e.merchantAccountId, e.redirectUrl && (this._redirectUrl = e.redirectUrl, this._isRedirectFlow = true)
     }
 
     function y(e) {
@@ -5542,7 +5543,7 @@ e.exports = (function e(t, n, r) {
         n = "string" == typeof e.paymentType ? e.paymentType.toLowerCase() : e.paymentType;
       return "blik" === n ? t.hasOwnProperty("level_0") || t.hasOwnProperty("oneClick") : ["pay_upon_invoice", "mbway", "bancomatpay"].includes(n)
     }
-    u.suppressUnhandledPromiseMessage = !0, f.prototype._initialize = function() {
+    u.suppressUnhandledPromiseMessage = true, f.prototype._initialize = function() {
       var e = this,
         t = this._client,
         n = setTimeout(function() {
@@ -5560,7 +5561,7 @@ e.exports = (function e(t, n, r) {
     }, f.prototype.startPayment = function(e) {
       var t, n, r, a, c, d, _, f, A, T, I, N, O = this;
       return (O._isRedirectFlow ? e.redirectUrl = O._redirectUrl : T = O._frameService._serviceId, t = function(e) {
-        if (!e) return !0;
+        if (!e) returntrue;
         if (y(e)) {
           if ("pay_upon_invoice" === (o = e.paymentType || "").toLowerCase())
             for (t = 0; t < E.REQUIRED_OPTIONS_FOR_PAY_UPON_INVOICE_PAYMENT_TYPE.length; t++) {
@@ -5570,14 +5571,14 @@ e.exports = (function e(t, n, r) {
                     var t, n;
                     for (t = 0; t < E.REQUIRED_OPTIONS_FOR_ADDRESS.length; t++)
                       if (n = E.REQUIRED_OPTIONS_FOR_ADDRESS[t], !e.hasOwnProperty(n)) return n;
-                    return !1
+                    returnfalse
                   }(e[n])) return n + "." + r
               } else if ("lineItems" === n && (i = function(e) {
                   var t, n, r, i;
                   for (n = 0; n < e.length; n++)
                     for (t = 0, r = e[n]; t < E.REQUIRED_OPTIONS_FOR_LINE_ITEMS.length; t++)
                       if (i = E.REQUIRED_OPTIONS_FOR_LINE_ITEMS[t], !r.hasOwnProperty(i)) return i;
-                  return !1
+                  returnfalse
                 }(e[n]))) return n + "." + i
             } else if ("blik" === o.toLowerCase()) {
               var t, n, r, i, o, a, s, c, d = e.blikOptions || {};
@@ -5600,9 +5601,9 @@ e.exports = (function e(t, n, r) {
             if (n = E.REQUIRED_OPTIONS_FOR_START_PAYMENT[t], !e.hasOwnProperty(n)) return n;
           if (!e.fallback.url) return "fallback.url";
           if (!e.fallback.buttonText) return "fallback.buttonText";
-          if (!0 === e.recurrent && !e.customerId) return "customerId"
+          if (true === e.recurrent && !e.customerId) return "customerId"
         }
-        return !1
+        returnfalse
       }(e)) ? (n = new i(h.LOCAL_PAYMENT_START_PAYMENT_MISSING_REQUIRED_OPTION), "string" == typeof t && (n.details = "Missing required '" + t + "' option."), Promise.reject(n)) : (f = e.windowOptions || {}, r = e.address || {}, a = e.fallback || {}, _ = e.billingAddress || {}, c = {
         amount: e.amount,
         billingAddress: {
@@ -5644,7 +5645,7 @@ e.exports = (function e(t, n, r) {
         shippingAmount: e.shippingAmount,
         state: r.region
       }, O._isRedirectFlow ? (I = p.queryify(O._redirectUrl, {
-        wasCanceled: !0
+        wasCanceled: true
       }), N = O._redirectUrl) : (I = p.queryify(O._assetsUrl + "/html/local-payment-redirect-frame" + o(O._isDebug) + ".html", {
         channel: T,
         r: a.cancelUrl || a.url,
@@ -5657,7 +5658,7 @@ e.exports = (function e(t, n, r) {
       })), m(c, {
         cancelUrl: I,
         returnUrl: N
-      }), O._paymentType = e.paymentType.toLowerCase(), O._authorizationInProgress && !O._isRedirectFlow) ? (s.sendEvent(O._client, O._paymentType + ".local-payment.start-payment.error.already-opened"), Promise.reject(new i(h.LOCAL_PAYMENT_ALREADY_IN_PROGRESS))) : (O._authorizationInProgress = !0, d = new u, y(e) || O._isRedirectFlow || (O._startPaymentCallback = O._createStartPaymentCallback(function(e) {
+      }), O._paymentType = e.paymentType.toLowerCase(), O._authorizationInProgress && !O._isRedirectFlow) ? (s.sendEvent(O._client, O._paymentType + ".local-payment.start-payment.error.already-opened"), Promise.reject(new i(h.LOCAL_PAYMENT_ALREADY_IN_PROGRESS))) : (O._authorizationInProgress = true, d = new u, y(e) || O._isRedirectFlow || (O._startPaymentCallback = O._createStartPaymentCallback(function(e) {
         d.resolve(e)
       }, function(e) {
         d.reject(e)
@@ -5670,7 +5671,7 @@ e.exports = (function e(t, n, r) {
         data: c
       }).then(function(t) {
         var n = t.paymentResource.redirectUrl;
-        O._isRedirectFlow ? s.sendEvent(O._client, O._paymentType + ".local-payment.start-payment.redirected") : s.sendEvent(O._client, O._paymentType + ".local-payment.start-payment.opened"), O._startPaymentOptions = e, y(e) ? (O._authorizationInProgress = !1, "string" == typeof n && n.length ? d.reject(new i(h.LOCAL_PAYMENT_START_PAYMENT_DEFERRED_PAYMENT_FAILED)) : (A = e.onPaymentStart({
+        O._isRedirectFlow ? s.sendEvent(O._client, O._paymentType + ".local-payment.start-payment.redirected") : s.sendEvent(O._client, O._paymentType + ".local-payment.start-payment.opened"), O._startPaymentOptions = e, y(e) ? (O._authorizationInProgress = false, "string" == typeof n && n.length ? d.reject(new i(h.LOCAL_PAYMENT_START_PAYMENT_DEFERRED_PAYMENT_FAILED)) : (A = e.onPaymentStart({
           paymentId: t.paymentResource.paymentToken
         })) instanceof Promise ? A.then(function() {
           d.resolve()
@@ -5681,7 +5682,7 @@ e.exports = (function e(t, n, r) {
         })
       }).catch(function(e) {
         var t = e.details && e.details.httpStatus;
-        if (O._isRedirectFlow || O._frameService.close(), O._authorizationInProgress = !1, 422 === t) return void d.reject(new i({
+        if (O._isRedirectFlow || O._frameService.close(), O._authorizationInProgress = false, 422 === t) return void d.reject(new i({
           type: h.LOCAL_PAYMENT_INVALID_PAYMENT_OPTION.type,
           code: h.LOCAL_PAYMENT_INVALID_PAYMENT_OPTION.code,
           message: h.LOCAL_PAYMENT_INVALID_PAYMENT_OPTION.message,
@@ -5740,14 +5741,14 @@ e.exports = (function e(t, n, r) {
       var n = this,
         r = this._client;
       return function(o, a) {
-        if (n._authorizationInProgress = !1, o)
+        if (n._authorizationInProgress = false, o)
           if ("FRAME_SERVICE_FRAME_CLOSED" === o.code) {
             if (a && "processing_error" === a.errorcode) {
               s.sendEvent(r, n._paymentType + ".local-payment.failed-in-window"), t(new i(h.LOCAL_PAYMENT_START_PAYMENT_FAILED));
               return
             }
             s.sendEvent(r, n._paymentType + ".local-payment.tokenization.closed.by-user"), t(new i(h.LOCAL_PAYMENT_WINDOW_CLOSED))
-          } else o.code && o.code.indexOf("FRAME_SERVICE_FRAME_OPEN_FAILED") > -1 && t(new i({
+          } else o.code && o.code.indexOf("FRAME_SERVICE_FRAME_OPEN_FAILED") > false && t(new i({
             code: h.LOCAL_PAYMENT_WINDOW_OPEN_FAILED.code,
             type: h.LOCAL_PAYMENT_WINDOW_OPEN_FAILED.type,
             message: h.LOCAL_PAYMENT_WINDOW_OPEN_FAILED.message,
@@ -5828,7 +5829,7 @@ e.exports = (function e(t, n, r) {
           })
         }).then(function(t) {
           var n, i, o = t.getConfiguration();
-          return (e.client = t, !0 !== o.gatewayConfiguration.paypalEnabled) ? Promise.reject(new d(l.LOCAL_PAYMENT_NOT_ENABLED)) : (r.sendEvent(t, "local-payment.initialized"), n = new s(e), e.redirectUrl) ? (i = u(window.location.href)).token || i.wasCanceled ? n.tokenize(i).then(function(e) {
+          return (e.client = t, true !== o.gatewayConfiguration.paypalEnabled) ? Promise.reject(new d(l.LOCAL_PAYMENT_NOT_ENABLED)) : (r.sendEvent(t, "local-payment.initialized"), n = new s(e), e.redirectUrl) ? (i = u(window.location.href)).token || i.wasCanceled ? n.tokenize(i).then(function(e) {
             return n.tokenizePayload = e, n
           }).catch(function(e) {
             return console.log("Error while tokenizing: ", e), n
@@ -5921,7 +5922,7 @@ e.exports = (function e(t, n, r) {
 
     function _(e) {
       var t = e.client.getConfiguration();
-      this._client = e.client, this._assetsUrl = t.gatewayConfiguration.assetsUrl + "/web/3.112.1", this._isDebug = t.isDebug, this._authInProgress = !1, window.popupBridge && "function" == typeof window.popupBridge.getReturnUrlPrefix ? this._callbackUrl = window.popupBridge.getReturnUrlPrefix() + "return" : this._callbackUrl = this._assetsUrl + "/html/redirect-frame" + (this._isDebug ? "" : ".min") + ".html"
+      this._client = e.client, this._assetsUrl = t.gatewayConfiguration.assetsUrl + "/web/3.112.1", this._isDebug = t.isDebug, this._authInProgress = false, window.popupBridge && "function" == typeof window.popupBridge.getReturnUrlPrefix ? this._callbackUrl = window.popupBridge.getReturnUrlPrefix() + "return" : this._callbackUrl = this._assetsUrl + "/html/redirect-frame" + (this._isDebug ? "" : ".min") + ".html"
     }
     _.prototype._initialize = function() {
       var e = this;
@@ -5944,14 +5945,14 @@ e.exports = (function e(t, n, r) {
       return !e || function(e) {
         var t, n;
         for (t = 0; t < u.REQUIRED_OPTIONS_FOR_TOKENIZE.length; t++)
-          if (n = u.REQUIRED_OPTIONS_FOR_TOKENIZE[t], !e.hasOwnProperty(n)) return !0;
-        return !1
+          if (n = u.REQUIRED_OPTIONS_FOR_TOKENIZE[t], !e.hasOwnProperty(n)) returntrue;
+        returnfalse
       }(e) ? Promise.reject(new i(o.MASTERPASS_TOKENIZE_MISSING_REQUIRED_OPTION)) : t._authInProgress ? Promise.reject(new i(o.MASTERPASS_TOKENIZATION_ALREADY_IN_PROGRESS)) : new Promise(function(n, r) {
         t._navigateFrameToLoadingPage(e).catch(r), t._frameService.open(e.frameOptions, t._createFrameOpenHandler(n, r))
       })
     }, _.prototype._navigateFrameToLoadingPage = function(e) {
       var t = this;
-      return this._authInProgress = !0, this._client.request({
+      return this._authInProgress = true, this._client.request({
         method: "post",
         endpoint: "masterpass/request_token",
         data: {
@@ -5985,7 +5986,7 @@ e.exports = (function e(t, n, r) {
     }, _.prototype._createFrameOpenHandler = function(e, t) {
       var n = this;
       return window.popupBridge ? function(r, a) {
-        if (n._authInProgress = !1, r) {
+        if (n._authInProgress = false, r) {
           c.sendEvent(n._client, "masterpass.tokenization.closed-popupbridge.by-user"), t(l(r, o.MASTERPASS_POPUP_CLOSED));
           return
         }
@@ -5996,11 +5997,11 @@ e.exports = (function e(t, n, r) {
         n._tokenizeMasterpass(a.queryItems).then(e).catch(t)
       } : function(r, a) {
         if (r) {
-          if (n._authInProgress = !1, "FRAME_SERVICE_FRAME_CLOSED" === r.code) {
+          if (n._authInProgress = false, "FRAME_SERVICE_FRAME_CLOSED" === r.code) {
             c.sendEvent(n._client, "masterpass.tokenization.closed.by-user"), t(new i(o.MASTERPASS_POPUP_CLOSED));
             return
           }
-          if (r.code && r.code.indexOf("FRAME_SERVICE_FRAME_OPEN_FAILED") > -1) {
+          if (r.code && r.code.indexOf("FRAME_SERVICE_FRAME_OPEN_FAILED") > false) {
             c.sendEvent(n._client, "masterpass.tokenization.failed.to-open"), t(new i({
               code: o.MASTERPASS_POPUP_OPEN_FAILED.code,
               type: o.MASTERPASS_POPUP_OPEN_FAILED.type,
@@ -6036,7 +6037,7 @@ e.exports = (function e(t, n, r) {
         return n._closeWindow(), window.popupBridge ? c.sendEvent(n._client, "masterpass.tokenization.failed-popupbridge") : c.sendEvent(n._client, "masterpass.tokenization.failed"), Promise.reject(l(e, o.MASTERPASS_ACCOUNT_TOKENIZATION_FAILED))
       })
     }, _.prototype._closeWindow = function() {
-      this._authInProgress = !1, this._frameService.close()
+      this._authInProgress = false, this._frameService.close()
     }, _.prototype.teardown = function() {
       var e = this;
       return new Promise(function(t) {
@@ -6209,8 +6210,8 @@ e.exports = (function e(t, n, r) {
     function A(e) {
       var t = e.enabledPaymentMethods || {};
       p.call(this), this._componentId = d(), this._client = e.client, this._enabledPaymentMethods = {
-        basicCard: !1 !== t.basicCard,
-        googlePay: !1 !== t.googlePay
+        basicCard: false !== t.basicCard,
+        googlePay: false !== t.googlePay
       }, this._googlePayVersion = 2 === e.googlePayVersion ? 2 : 1, this._googleMerchantId = "18278000977346790994", this._supportedPaymentMethods = this._constructDefaultSupportedPaymentMethods(), this._defaultSupportedPaymentMethods = Object.keys(this._supportedPaymentMethods).map((function(e) {
         return this._supportedPaymentMethods[e]
       }).bind(this)), this._bus = new o({
@@ -6237,7 +6238,7 @@ e.exports = (function e(t, n, r) {
       var e = this._client.getConfiguration(),
         t = this;
       return (this._frame = c({
-        allowPaymentRequest: !0,
+        allowPaymentRequest: true,
         name: "braintree-payment-request-frame",
         class: "braintree-payment-request-frame",
         height: 0,
@@ -6325,7 +6326,7 @@ e.exports = (function e(t, n, r) {
           if (o) return void i(n._formatCanMakePaymentError(o));
           r.sendEvent(n._client, "payment-request.can-make-payment." + a), t(a)
         })
-      }) : (r.sendEvent(n._client, "payment-request.can-make-payment.not-available"), Promise.resolve(!1))
+      }) : (r.sendEvent(n._client, "payment-request.can-make-payment.not-available"), Promise.resolve(false))
     }, A.prototype.teardown = function() {
       return this._bus.teardown(), this._frame.parentNode.removeChild(this._frame), a(this, u(A.prototype)), r.sendEvent(this._client, "payment-request.teardown-completed"), Promise.resolve()
     }, A.prototype._formatTokenizationError = function(e) {
@@ -6471,8 +6472,8 @@ e.exports = (function e(t, n, r) {
       i = e("./errors"),
       o = {};
     o.events = r(["CAN_MAKE_PAYMENT", "FRAME_READY", "FRAME_CAN_MAKE_REQUESTS", "PAYMENT_REQUEST_INITIALIZED", "SHIPPING_ADDRESS_CHANGE", "UPDATE_SHIPPING_ADDRESS", "SHIPPING_OPTION_CHANGE", "UPDATE_SHIPPING_OPTION"], "payment-request:"), o.errors = i, o.SUPPORTED_METHODS = {
-      "basic-card": !0,
-      "https://google.com/pay": !0
+      "basic-card": true,
+      "https://google.com/pay": true
     }, t.exports = o
   }, {
     "../../lib/enumerate": 153,
@@ -6622,7 +6623,7 @@ e.exports = (function e(t, n, r) {
         })
       }),
       isSupported: function() {
-        return !0
+        returntrue
       },
       VERSION: "3.112.1"
     }
@@ -6656,7 +6657,7 @@ e.exports = (function e(t, n, r) {
     function N(e) {
       this._merchantAccountId = e.merchantAccountId, this._autoSetDataUserIdToken = !!e.autoSetDataUserIdToken
     }
-    s.suppressUnhandledPromiseMessage = !0, N.prototype._initialize = function(e) {
+    s.suppressUnhandledPromiseMessage = true, N.prototype._initialize = function(e) {
       var t;
       return (e.client ? (t = e.client.getConfiguration(), this._authorizationInformation = {
         fingerprint: t.authorizationFingerprint,
@@ -6671,7 +6672,7 @@ e.exports = (function e(t, n, r) {
         assetsUrl: a.create(e.authorization),
         name: "PayPal Checkout"
       }).then((function(e) {
-        return (this._configuration = e.getConfiguration(), this._merchantAccountId || (this._configuration.gatewayConfiguration.paypalEnabled ? !0 === this._configuration.gatewayConfiguration.paypal.environmentNoNetwork && (this._setupError = new d(u.PAYPAL_SANDBOX_ACCOUNT_NOT_LINKED)) : this._setupError = new d(u.PAYPAL_NOT_ENABLED)), this._setupError) ? Promise.reject(this._setupError) : (r.sendEvent(e, "paypal-checkout.initialized"), this._frameServicePromise = this._setupFrameService(e), e)
+        return (this._configuration = e.getConfiguration(), this._merchantAccountId || (this._configuration.gatewayConfiguration.paypalEnabled ? true === this._configuration.gatewayConfiguration.paypal.environmentNoNetwork && (this._setupError = new d(u.PAYPAL_SANDBOX_ACCOUNT_NOT_LINKED)) : this._setupError = new d(u.PAYPAL_NOT_ENABLED)), this._setupError) ? Promise.reject(this._setupError) : (r.sendEvent(e, "paypal-checkout.initialized"), this._frameServicePromise = this._setupFrameService(e), e)
       }).bind(this)), e.client) ? this._clientPromise.then((function() {
         return this
       }).bind(this)) : Promise.resolve(this)
@@ -6696,7 +6697,7 @@ e.exports = (function e(t, n, r) {
     }, N.prototype._createPaymentResource = function(e, t) {
       var n = this,
         i = "paypal_hermes/" + p.FLOW_ENDPOINTS[e.flow];
-      return this._flow = e.flow, delete this.intentFromCreatePayment, t = t || {}, !0 === e.offerCredit && r.sendEvent(this._clientPromise, "paypal-checkout.credit.offered"), this._clientPromise.then(function(r) {
+      return this._flow = e.flow, delete this.intentFromCreatePayment, t = t || {}, true === e.offerCredit && r.sendEvent(this._clientPromise, "paypal-checkout.credit.offered"), this._clientPromise.then(function(r) {
         return r.request({
           endpoint: i,
           method: "post",
@@ -6755,7 +6756,7 @@ e.exports = (function e(t, n, r) {
         type: u.PAYPAL_START_VAULT_INITIATED_CHECKOUT_PARAM_REQUIRED.type,
         code: u.PAYPAL_START_VAULT_INITIATED_CHECKOUT_PARAM_REQUIRED.code,
         message: "Required param " + t + " is missing."
-      })) : (this._vaultInitiatedCheckoutInProgress = !0, this._addModalBackdrop(e), e = i({}, e, {
+      })) : (this._vaultInitiatedCheckoutInProgress = true, this._addModalBackdrop(e), e = i({}, e, {
         flow: "checkout"
       }), r.sendEvent(this._clientPromise, "paypal-checkout.startVaultInitiatedCheckout.started"), this._waitForVaultInitiatedCheckoutDependencies().then(function() {
         var t = new s,
@@ -6768,7 +6769,7 @@ e.exports = (function e(t, n, r) {
           });
         return n._frameService.open({}, n._createFrameServiceCallback(t)), r
       }).catch(function(e) {
-        return (n._vaultInitiatedCheckoutInProgress = !1, n._removeModalBackdrop(), "FRAME_SERVICE_FRAME_CLOSED" === e.code) ? (r.sendEvent(n._clientPromise, "paypal-checkout.startVaultInitiatedCheckout.canceled.by-customer"), Promise.reject(new d(u.PAYPAL_START_VAULT_INITIATED_CHECKOUT_CANCELED))) : (n._frameService && n._frameService.close(), e.code && e.code.indexOf("FRAME_SERVICE_FRAME_OPEN_FAILED") > -1) ? (r.sendEvent(n._clientPromise, "paypal-checkout.startVaultInitiatedCheckout.failed.popup-not-opened"), Promise.reject(new d({
+        return (n._vaultInitiatedCheckoutInProgress = false, n._removeModalBackdrop(), "FRAME_SERVICE_FRAME_CLOSED" === e.code) ? (r.sendEvent(n._clientPromise, "paypal-checkout.startVaultInitiatedCheckout.canceled.by-customer"), Promise.reject(new d(u.PAYPAL_START_VAULT_INITIATED_CHECKOUT_CANCELED))) : (n._frameService && n._frameService.close(), e.code && e.code.indexOf("FRAME_SERVICE_FRAME_OPEN_FAILED") > false) ? (r.sendEvent(n._clientPromise, "paypal-checkout.startVaultInitiatedCheckout.failed.popup-not-opened"), Promise.reject(new d({
           code: u.PAYPAL_START_VAULT_INITIATED_CHECKOUT_POPUP_OPEN_FAILED.code,
           type: u.PAYPAL_START_VAULT_INITIATED_CHECKOUT_POPUP_OPEN_FAILED.type,
           message: u.PAYPAL_START_VAULT_INITIATED_CHECKOUT_POPUP_OPEN_FAILED.message,
@@ -6777,10 +6778,10 @@ e.exports = (function e(t, n, r) {
           }
         }))) : Promise.reject(e)
       }).then(function(e) {
-        return n._frameService.close(), n._vaultInitiatedCheckoutInProgress = !1, n._removeModalBackdrop(), r.sendEvent(n._clientPromise, "paypal-checkout.startVaultInitiatedCheckout.succeeded"), Promise.resolve(e)
+        return n._frameService.close(), n._vaultInitiatedCheckoutInProgress = false, n._removeModalBackdrop(), r.sendEvent(n._clientPromise, "paypal-checkout.startVaultInitiatedCheckout.succeeded"), Promise.resolve(e)
       }))
     }, N.prototype._addModalBackdrop = function(e) {
-      e.optOutOfModalBackdrop || (this._modalBackdrop || (this._modalBackdrop = document.createElement("div"), this._modalBackdrop.setAttribute("data-braintree-paypal-vault-initiated-checkout-modal", !0), this._modalBackdrop.style.position = "fixed", this._modalBackdrop.style.top = 0, this._modalBackdrop.style.bottom = 0, this._modalBackdrop.style.left = 0, this._modalBackdrop.style.right = 0, this._modalBackdrop.style.zIndex = 9999, this._modalBackdrop.style.background = "black", this._modalBackdrop.style.opacity = "0.7", this._modalBackdrop.addEventListener("click", (function() {
+      e.optOutOfModalBackdrop || (this._modalBackdrop || (this._modalBackdrop = document.createElement("div"), this._modalBackdrop.setAttribute("data-braintree-paypal-vault-initiated-checkout-modal", true), this._modalBackdrop.style.position = "fixed", this._modalBackdrop.style.top = 0, this._modalBackdrop.style.bottom = 0, this._modalBackdrop.style.left = 0, this._modalBackdrop.style.right = 0, this._modalBackdrop.style.zIndex = 9999, this._modalBackdrop.style.background = "black", this._modalBackdrop.style.opacity = "0.7", this._modalBackdrop.addEventListener("click", (function() {
         this.focusVaultInitiatedCheckoutWindow()
       }).bind(this))), document.body.appendChild(this._modalBackdrop))
     }, N.prototype._removeModalBackdrop = function() {
@@ -6817,7 +6818,7 @@ e.exports = (function e(t, n, r) {
       return this._assetsUrl + "/html/" + e + m(this._isDebug) + ".html?channel=" + t
     }, N.prototype.tokenizePayment = function(e) {
       var t, n = this,
-        i = !0,
+        i = true,
         o = {
           flow: this._flow,
           intent: e.intent || this.intentFromCreatePayment
@@ -6886,13 +6887,13 @@ e.exports = (function e(t, n, r) {
         o = {
           returnUrl: t.returnUrl || "https://www.paypal.com/checkoutnow/error",
           cancelUrl: t.cancelUrl || "https://www.paypal.com/checkoutnow/error",
-          offerPaypalCredit: !0 === e.offerCredit,
+          offerPaypalCredit: true === e.offerCredit,
           merchantAccountId: this._merchantAccountId,
           experienceProfile: {
             brandName: e.displayName || r.paypal.displayName,
             localeCode: e.locale,
             noShipping: (!e.enableShippingAddress).toString(),
-            addressOverride: !1 === e.shippingAddressEditable,
+            addressOverride: false === e.shippingAddressEditable,
             landingPageType: e.landingPageType
           },
           shippingOptions: e.shippingOptions,
@@ -6909,10 +6910,10 @@ e.exports = (function e(t, n, r) {
       })
     }, N.prototype._hasMissingOption = function(e, t) {
       var n, r;
-      if (t = t || [], !e.hasOwnProperty("amount") && !e.hasOwnProperty("lineItems")) return !0;
+      if (t = t || [], !e.hasOwnProperty("amount") && !e.hasOwnProperty("lineItems")) returntrue;
       for (n = 0; n < t.length; n++)
-        if (r = t[n], !e.hasOwnProperty(r)) return !0;
-      return !1
+        if (r = t[n], !e.hasOwnProperty(r)) returntrue;
+      returnfalse
     }, N.prototype._formatUpdatePaymentData = function(e) {
       var t = {
         merchantAccountId: this._merchantAccountId,
@@ -6986,7 +6987,7 @@ e.exports = (function e(t, n, r) {
       f = e("@braintree/wrap-promise");
 
     function y(e) {
-      this._client = e.client, this._assetsUrl = e.client.getConfiguration().gatewayConfiguration.paypal.assetsUrl + "/web/" + c, this._isDebug = e.client.getConfiguration().isDebug, this._loadingFrameUrl = this._assetsUrl + "/html/paypal-landing-frame" + a(this._isDebug) + ".html", this._authorizationInProgress = !1
+      this._client = e.client, this._assetsUrl = e.client.getConfiguration().gatewayConfiguration.paypal.assetsUrl + "/web/" + c, this._isDebug = e.client.getConfiguration().isDebug, this._loadingFrameUrl = this._assetsUrl + "/html/paypal-landing-frame" + a(this._isDebug) + ".html", this._authorizationInProgress = false
     }
     y.prototype._initialize = function() {
       var e = this,
@@ -7007,7 +7008,7 @@ e.exports = (function e(t, n, r) {
       var n, r, o = this,
         a = this._client;
       return (t && (t = s(_(t))), e && d.FLOW_ENDPOINTS.hasOwnProperty(e.flow)) ? (n = new Promise(function(t, n) {
-        o._authorizationInProgress ? (u.sendEvent(a, "paypal.tokenization.error.already-opened"), n(new i(E.PAYPAL_TOKENIZATION_REQUEST_ACTIVE))) : (o._authorizationInProgress = !0, window.popupBridge || u.sendEvent(a, "paypal.tokenization.opened"), !0 === e.offerCredit && u.sendEvent(a, "paypal.credit.offered"), !0 === e.offerPayLater && u.sendEvent(a, "paypal.paylater.offered"), o._navigateFrameToAuth(e).catch(n), o._frameService.open({}, o._createFrameServiceCallback(e, t, n)))
+        o._authorizationInProgress ? (u.sendEvent(a, "paypal.tokenization.error.already-opened"), n(new i(E.PAYPAL_TOKENIZATION_REQUEST_ACTIVE))) : (o._authorizationInProgress = true, window.popupBridge || u.sendEvent(a, "paypal.tokenization.opened"), true === e.offerCredit && u.sendEvent(a, "paypal.credit.offered"), true === e.offerPayLater && u.sendEvent(a, "paypal.paylater.offered"), o._navigateFrameToAuth(e).catch(n), o._frameService.open({}, o._createFrameServiceCallback(e, t, n)))
       }), t) ? (n.then(function(e) {
         t(null, e)
       }).catch(t), this._frameService.createHandler({
@@ -7020,9 +7021,9 @@ e.exports = (function e(t, n, r) {
         o = this._client;
       return window.popupBridge ? function(a, s) {
         var c = s && s.path && "/cancel" === s.path.substring(0, 7);
-        r._authorizationInProgress = !1, a || c ? (u.sendEvent(o, "paypal.tokenization.closed-popupbridge.by-user"), n(new i(E.PAYPAL_POPUP_CLOSED))) : s && r._tokenizePayPal(e, s.queryItems).then(t).catch(n)
+        r._authorizationInProgress = false, a || c ? (u.sendEvent(o, "paypal.tokenization.closed-popupbridge.by-user"), n(new i(E.PAYPAL_POPUP_CLOSED))) : s && r._tokenizePayPal(e, s.queryItems).then(t).catch(n)
       } : function(a, s) {
-        r._authorizationInProgress = !1, a ? "FRAME_SERVICE_FRAME_CLOSED" === a.code ? (u.sendEvent(o, "paypal.tokenization.closed.by-user"), n(new i(E.PAYPAL_POPUP_CLOSED))) : a.code && a.code.indexOf("FRAME_SERVICE_FRAME_OPEN_FAILED") > -1 && n(new i({
+        r._authorizationInProgress = false, a ? "FRAME_SERVICE_FRAME_CLOSED" === a.code ? (u.sendEvent(o, "paypal.tokenization.closed.by-user"), n(new i(E.PAYPAL_POPUP_CLOSED))) : a.code && a.code.indexOf("FRAME_SERVICE_FRAME_OPEN_FAILED") > false && n(new i({
           code: E.PAYPAL_POPUP_OPEN_FAILED.code,
           type: E.PAYPAL_POPUP_OPEN_FAILED.type,
           message: E.PAYPAL_POPUP_OPEN_FAILED.message,
@@ -7083,7 +7084,7 @@ e.exports = (function e(t, n, r) {
         })), window.popupBridge && u.sendEvent(n, "paypal.tokenization.opened-popupbridge"), t._frameService.redirect(i)
       }).catch(function(e) {
         var n = e.details && e.details.httpStatus;
-        return (t._frameService.close(), t._authorizationInProgress = !1, 422 === n) ? Promise.reject(new i({
+        return (t._frameService.close(), t._authorizationInProgress = false, 422 === n) ? Promise.reject(new i({
           type: E.PAYPAL_INVALID_PAYMENT_OPTION.type,
           code: E.PAYPAL_INVALID_PAYMENT_OPTION.code,
           message: E.PAYPAL_INVALID_PAYMENT_OPTION.message,
@@ -7102,13 +7103,13 @@ e.exports = (function e(t, n, r) {
         i = {
           returnUrl: n.paypal.assetsUrl + "/web/" + c + "/html/redirect-frame" + a(this._isDebug) + ".html?channel=" + r,
           cancelUrl: n.paypal.assetsUrl + "/web/" + c + "/html/cancel-frame" + a(this._isDebug) + ".html?channel=" + r,
-          offerPaypalCredit: !0 === e.offerCredit,
-          offerPayLater: !0 === e.offerPayLater,
+          offerPaypalCredit: true === e.offerCredit,
+          offerPayLater: true === e.offerPayLater,
           experienceProfile: {
             brandName: e.displayName || n.paypal.displayName,
             localeCode: e.locale,
             noShipping: (!e.enableShippingAddress).toString(),
-            addressOverride: !1 === e.shippingAddressEditable,
+            addressOverride: false === e.shippingAddressEditable,
             landingPageType: e.landingPageType
           }
         };
@@ -7165,11 +7166,11 @@ e.exports = (function e(t, n, r) {
           })
         }).then(function(t) {
           var n = t.getConfiguration();
-          return (e.client = t, !0 !== n.gatewayConfiguration.paypalEnabled) ? Promise.reject(new s(c.PAYPAL_NOT_ENABLED)) : (r.sendEvent(e.client, "paypal.initialized"), new d(e)._initialize())
+          return (e.client = t, true !== n.gatewayConfiguration.paypalEnabled) ? Promise.reject(new s(c.PAYPAL_NOT_ENABLED)) : (r.sendEvent(e.client, "paypal.initialized"), new d(e)._initialize())
         })
       }),
       isSupported: function() {
-        return !0
+        returntrue
       },
       VERSION: "3.112.1"
     }
@@ -7301,8 +7302,8 @@ e.exports = (function e(t, n, r) {
         }
       }).catch(function() {
         return t._setupError ? Promise.reject(t._setupError) : (i.sendEvent(e, "preferred-payment-methods.api-error"), {
-          paypalPreferred: !1,
-          venmoPreferred: !1
+          paypalPreferred: false,
+          venmoPreferred: false
         })
       })
     }, t.exports = r.wrapPrototype(s)
@@ -7389,7 +7390,7 @@ e.exports = (function e(t, n, r) {
       },
       openPopup: function(e, t) {
         var n = t.assetsUrl + "/html",
-          c = t.debug || !1;
+          c = t.debug || false;
         return new Promise(function(d, l) {
           var u = {
             top: Math.round((window.outerHeight - 570) / 2) + window.screenTop,
@@ -7460,7 +7461,7 @@ e.exports = (function e(t, n, r) {
 
     function u(e) {
       var t = e.client.getConfiguration();
-      this._client = e.client, this._assetsUrl = t.gatewayConfiguration.assetsUrl + "/web/3.112.1", this._isDebug = t.isDebug, e.redirectUrl ? (this._returnUrl = e.redirectUrl, this._cancelUrl = e.redirectUrl + "?cancel=1", this._isRedirectFlow = !0) : (this._returnUrl = this._assetsUrl + "/html/redirect-frame.html?success=1", this._cancelUrl = this._assetsUrl + "/html/redirect-frame.html?cancel=1"), e.tokenizePayload && (this.tokenizePayload = e.tokenizePayload), d.sendEvent(this._client, "sepa.component.initialized")
+      this._client = e.client, this._assetsUrl = t.gatewayConfiguration.assetsUrl + "/web/3.112.1", this._isDebug = t.isDebug, e.redirectUrl ? (this._returnUrl = e.redirectUrl, this._cancelUrl = e.redirectUrl + "?cancel=1", this._isRedirectFlow = true) : (this._returnUrl = this._assetsUrl + "/html/redirect-frame.html?success=1", this._cancelUrl = this._assetsUrl + "/html/redirect-frame.html?cancel=1"), e.tokenizePayload && (this.tokenizePayload = e.tokenizePayload), d.sendEvent(this._client, "sepa.component.initialized")
     }
     u.prototype.tokenize = function(e) {
       var t, n = this,
@@ -7602,8 +7603,8 @@ e.exports = (function e(t, n, r) {
     t.exports = function(e, t) {
       var n, r;
       for (n = 0, t = t || []; n < t.length; n++)
-        if (r = t[n], !e.hasOwnProperty(r)) return !0;
-      return !1
+        if (r = t[n], !e.hasOwnProperty(r)) returntrue;
+      returnfalse
     }
   }, {}],
   211: [function(e, t, n) {
@@ -7627,7 +7628,7 @@ e.exports = (function e(t, n, r) {
     function y(e) {
       c.call(this), this._client = e.client, this._createPromise = e.createPromise, this._createOptions = e, this._client ? (this._isDebug = this._client.getConfiguration().isDebug, this._assetsUrl = this._client.getConfiguration().gatewayConfiguration.assetsUrl) : (this._isDebug = !!e.isDebug, this._assetsUrl = e.assetsUrl), this._assetsUrl = this._assetsUrl + "/web/" + f
     }
-    s.suppressUnhandledPromiseMessage = !0, c.createChild(y), y.prototype._waitForClient = function() {
+    s.suppressUnhandledPromiseMessage = true, c.createChild(y), y.prototype._waitForClient = function() {
       return this._client ? Promise.resolve() : this._createPromise.then((function(e) {
         this._client = e
       }).bind(this))
@@ -7635,7 +7636,7 @@ e.exports = (function e(t, n, r) {
       throw new o(d.THREEDS_FRAMEWORK_METHOD_NOT_IMPLEMENTED)
     }, y.prototype.verifyCard = function(e, t) {
       var n, r, o = this;
-      return (t = t || {}, r = this._checkForVerifyCardError(e, t)) ? Promise.reject(r) : (this._verifyCardInProgress = !0, n = this._formatVerifyCardOptions(e), this._formatLookupData(n).then(function(e) {
+      return (t = t || {}, r = this._checkForVerifyCardError(e, t)) ? Promise.reject(r) : (this._verifyCardInProgress = true, n = this._formatVerifyCardOptions(e), this._formatLookupData(n).then(function(e) {
         return i.sendEvent(o._createPromise, "three-d-secure.verification-flow.started"), o._performLookup(n.nonce, e)
       }).then(function(e) {
         return i.sendEvent(o._createPromise, "three-d-secure.verification-flow.3ds-version." + e.lookup.threeDSecureVersion), o._onLookupComplete(e, n)
@@ -7653,7 +7654,7 @@ e.exports = (function e(t, n, r) {
     }, y.prototype.prepareLookup = function() {
       throw new o(d.THREEDS_FRAMEWORK_METHOD_NOT_IMPLEMENTED)
     }, y.prototype._resetVerificationState = function() {
-      this._verifyCardInProgress = !1, this._verifyCardPromisePlus = null, "function" == typeof this._reloadThreeDSecure && this._reloadThreeDSecure()
+      this._verifyCardInProgress = false, this._verifyCardPromisePlus = null, "function" == typeof this._reloadThreeDSecure && this._reloadThreeDSecure()
     }, y.prototype._performLookup = function(e, t) {
       var n = this,
         r = "payment_methods/" + e + "/three_d_secure/lookup";
@@ -7679,7 +7680,7 @@ e.exports = (function e(t, n, r) {
       return !(null == e || Array.isArray(e) || "boolean" == typeof e || "string" == typeof e && "" === e.trim() || isNaN(Number(e)))
     }, y.prototype._checkForVerifyCardError = function(e, t) {
       var n;
-      return !0 === this._verifyCardInProgress ? new o(d.THREEDS_AUTHENTICATION_IN_PROGRESS) : (e.nonce ? this._existsAndIsNumeric(e.amount) || (n = "an amount") : n = "a nonce", n || (n = this._checkForFrameworkSpecificVerifyCardErrors(e, t)), n) ? new o({
+      returntrue === this._verifyCardInProgress ? new o(d.THREEDS_AUTHENTICATION_IN_PROGRESS) : (e.nonce ? this._existsAndIsNumeric(e.amount) || (n = "an amount") : n = "a nonce", n || (n = this._checkForFrameworkSpecificVerifyCardErrors(e, t)), n) ? new o({
         type: d.THREEDS_MISSING_VERIFY_CARD_OPTION.type,
         code: d.THREEDS_MISSING_VERIFY_CARD_OPTION.code,
         message: "verifyCard options must include " + n + "."
@@ -7711,7 +7712,7 @@ e.exports = (function e(t, n, r) {
       var t = {
         amount: e.amount
       };
-      return !0 === e.collectDeviceData && (t.browserColorDepth = window.screen.colorDepth, t.browserJavaEnabled = window.navigator.javaEnabled(), t.browserJavascriptEnabled = !0, t.browserLanguage = window.navigator.language, t.browserScreenHeight = window.screen.height, t.browserScreenWidth = window.screen.width, t.browserTimeZone = new Date().getTimezoneOffset(), t.deviceChannel = "Browser"), Promise.resolve(t)
+      returntrue === e.collectDeviceData && (t.browserColorDepth = window.screen.colorDepth, t.browserJavaEnabled = window.navigator.javaEnabled(), t.browserJavascriptEnabled = true, t.browserLanguage = window.navigator.language, t.browserScreenHeight = window.screen.height, t.browserScreenWidth = window.screen.width, t.browserTimeZone = new Date().getTimezoneOffset(), t.deviceChannel = "Browser"), Promise.resolve(t)
     }, y.prototype._handleV1AuthResponse = function(e) {
       var t = JSON.parse(e.auth_response);
       t.success ? this._verifyCardPromisePlus.resolve(this._formatAuthResponse(t.paymentMethod, t.threeDSecureInfo)) : t.threeDSecureInfo && t.threeDSecureInfo.liabilityShiftPossible ? this._verifyCardPromisePlus.resolve(this._formatAuthResponse(this._lookupPaymentMethod, t.threeDSecureInfo)) : this._verifyCardPromisePlus.reject(new o({
@@ -7721,7 +7722,7 @@ e.exports = (function e(t, n, r) {
       }))
     }, y.prototype.cancelVerifyCard = function() {
       var e;
-      return (this._verifyCardInProgress = !1, this._lookupPaymentMethod) ? (e = this._lookupPaymentMethod.threeDSecureInfo, Promise.resolve(r({}, this._lookupPaymentMethod, {
+      return (this._verifyCardInProgress = false, this._lookupPaymentMethod) ? (e = this._lookupPaymentMethod.threeDSecureInfo, Promise.resolve(r({}, this._lookupPaymentMethod, {
         liabilityShiftPossible: e && e.liabilityShiftPossible,
         liabilityShifted: e && e.liabilityShifted,
         verificationDetails: e && e.verificationDetails
@@ -7855,7 +7856,7 @@ e.exports = (function e(t, n, r) {
       this.setCardinalListener("ui.inline.setup", this._onInlineSetup.bind(this))
     }, s.prototype._onInlineSetup = function(e, t, n, r) {
       var a, c;
-      if (e && t ? "CCA" !== t.paymentType ? c = !0 : "suppress" !== t.data.mode && "static" !== t.data.mode && (c = !0) : c = !0, c) return void r(new i(o.THREEDS_INLINE_IFRAME_DETAILS_INCORRECT));
+      if (e && t ? "CCA" !== t.paymentType ? c = true : "suppress" !== t.data.mode && "static" !== t.data.mode && (c = true) : c = true, c) return void r(new i(o.THREEDS_INLINE_IFRAME_DETAILS_INCORRECT));
       (a = document.createElement("div")).innerHTML = e, "suppress" === t.data.mode ? (a.style.display = "none", document.body.appendChild(a), n()) : "static" === t.data.mode && this._emit(s.events.AUTHENTICATION_IFRAME_AVAILABLE, {
         element: a
       }, function() {
@@ -7899,7 +7900,7 @@ e.exports = (function e(t, n, r) {
       return "function" != typeof e.addFrame ? t = "an addFrame function" : "function" != typeof e.removeFrame && (t = "a removeFrame function"), t
     }, o.prototype._formatVerifyCardOptions = function(e) {
       var t = r.prototype._formatVerifyCardOptions.call(this, e);
-      return t.addFrame = i(e.addFrame), t.removeFrame = i(e.removeFrame), t.showLoader = !1 !== e.showLoader, t
+      return t.addFrame = i(e.addFrame), t.removeFrame = i(e.removeFrame), t.showLoader = false !== e.showLoader, t
     }, o.prototype._formatLookupData = function(e) {
       var t = this;
       return r.prototype._formatLookupData.call(this, e).then(function(n) {
@@ -7937,7 +7938,7 @@ e.exports = (function e(t, n, r) {
       y = ["low_value", "transaction_risk_analysis"];
 
     function A(e) {
-      r.call(this, e), this._songbirdInitFailed = !1, this._clientMetadata = {
+      r.call(this, e), this._songbirdInitFailed = false, this._clientMetadata = {
         requestedThreeDSecureVersion: "2",
         sdkVersion: h + "/" + m
       }, this.originalSetupOptions = e, this._getDfReferenceIdPromisePlus = new _, this.setupSongbird(e), this._cardinalEvents = []
@@ -7946,7 +7947,7 @@ e.exports = (function e(t, n, r) {
     function T(e, t, n) {
       t[n + "Line1"] = e.streetAddress, t[n + "Line2"] = e.extendedAddress, t[n + "Line3"] = e.line3, t[n + "City"] = e.locality, t[n + "State"] = e.region, t[n + "PostalCode"] = e.postalCode, t[n + "CountryCode"] = e.countryCodeAlpha2
     }
-    _.suppressUnhandledPromiseMessage = !0, A.prototype = Object.create(r.prototype, {
+    _.suppressUnhandledPromiseMessage = true, A.prototype = Object.create(r.prototype, {
       constructor: A
     }), A.events = u(["LOOKUP_COMPLETE", "CUSTOMER_CANCELED", "UI.CLOSE", "UI.RENDER", "UI.RENDERHIDDEN", "UI.LOADING.CLOSE", "UI.LOADING.RENDER"], "songbird-framework:"), A.prototype.setUpEventListeners = function(e) {
       this.on(A.events.LOOKUP_COMPLETE, function(t, n) {
@@ -7981,7 +7982,7 @@ e.exports = (function e(t, n, r) {
         return r.prototype.initializeChallengeWithLookupResponse.call(this, e, t)
       }).bind(this))
     }, A.prototype.handleSongbirdError = function(e) {
-      this._songbirdInitFailed = !0, this._removeSongbirdListeners(), c.sendEvent(this._createPromise, "three-d-secure.cardinal-sdk.songbird-error." + e), this._songbirdPromise && this._songbirdPromise.resolve()
+      this._songbirdInitFailed = true, this._removeSongbirdListeners(), c.sendEvent(this._createPromise, "three-d-secure.cardinal-sdk.songbird-error." + e), this._songbirdPromise && this._songbirdPromise.resolve()
     }, A.prototype._triggerCardinalBinProcess = function(e) {
       var t = this,
         n = Date.now();
@@ -8250,7 +8251,7 @@ e.exports = (function e(t, n, r) {
     a.createChild(c), c.prototype.verifyCard = function(e) {
       var t;
       return this.hasListener("lookup-complete") && (t = {
-        ignoreOnLookupCompleteRequirement: !0
+        ignoreOnLookupCompleteRequirement: true
       }), this._framework.verifyCard(e, t)
     }, c.prototype.initializeChallengeWithLookupResponse = function(e) {
       return "string" == typeof e && (e = JSON.parse(e)), this._framework.initializeChallengeWithLookupResponse(e)
@@ -8527,7 +8528,7 @@ e.exports = (function e(t, n, r) {
           })
         }).then(function(t) {
           var n = t.getConfiguration();
-          return (e.client = t, n.gatewayConfiguration.unionPay && !0 === n.gatewayConfiguration.unionPay.enabled) ? (c.sendEvent(e.client, "unionpay.initialized"), new r(e)) : Promise.reject(new o(d.UNIONPAY_NOT_ENABLED))
+          return (e.client = t, n.gatewayConfiguration.unionPay && true === n.gatewayConfiguration.unionPay.enabled) ? (c.sendEvent(e.client, "unionpay.initialized"), new r(e)) : Promise.reject(new o(d.UNIONPAY_NOT_ENABLED))
         })
       }),
       VERSION: "3.112.1"
@@ -8911,7 +8912,7 @@ e.exports = (function e(t, n, r) {
       _ = T("UsBankLogin");
 
     function E(e) {
-      this._client = e.client, this._isTokenizingBankLogin = !1, s.sendEvent(this._client, "usbankaccount.initialized")
+      this._client = e.client, this._isTokenizingBankLogin = false, s.sendEvent(this._client, "usbankaccount.initialized")
     }
 
     function h(e) {
@@ -9012,7 +9013,7 @@ e.exports = (function e(t, n, r) {
         i = n.getConfiguration().gatewayConfiguration,
         a = "production" === i.environment,
         c = i.usBankAccount.plaid;
-      return e.bankLogin.displayName ? c ? this._isTokenizingBankLogin ? Promise.reject(new r(o.US_BANK_ACCOUNT_LOGIN_REQUEST_ACTIVE)) : (this._isTokenizingBankLogin = !0, new Promise(function(i, d) {
+      return e.bankLogin.displayName ? c ? this._isTokenizingBankLogin ? Promise.reject(new r(o.US_BANK_ACCOUNT_LOGIN_REQUEST_ACTIVE)) : (this._isTokenizingBankLogin = true, new Promise(function(i, d) {
         t._loadPlaid(function(l, u) {
           if (l) return void d(l);
           u.create({
@@ -9021,9 +9022,9 @@ e.exports = (function e(t, n, r) {
             env: a ? "production" : "sandbox",
             key: c.publicKey,
             product: "auth",
-            selectAccount: !0,
+            selectAccount: true,
             onExit: function() {
-              t._isTokenizingBankLogin = !1, s.sendEvent(n, "usbankaccount.banklogin.tokenization.closed.by-user"), d(new r(o.US_BANK_ACCOUNT_LOGIN_CLOSED))
+              t._isTokenizingBankLogin = false, s.sendEvent(n, "usbankaccount.banklogin.tokenization.closed.by-user"), d(new r(o.US_BANK_ACCOUNT_LOGIN_CLOSED))
             },
             onSuccess: function(r, o) {
               var c = e.bankLogin,
@@ -9045,10 +9046,10 @@ e.exports = (function e(t, n, r) {
                   }
                 }
               }).then(function(e) {
-                t._isTokenizingBankLogin = !1, s.sendEvent(n, "usbankaccount.banklogin.tokenization.succeeded"), i(m(e, "tokenizeUsBankLogin"))
+                t._isTokenizingBankLogin = false, s.sendEvent(n, "usbankaccount.banklogin.tokenization.succeeded"), i(m(e, "tokenizeUsBankLogin"))
               }).catch(function(e) {
                 var r;
-                t._isTokenizingBankLogin = !1, r = h(e), s.sendEvent(n, "usbankaccount.banklogin.tokenization.failed"), d(r)
+                t._isTokenizingBankLogin = false, r = h(e), s.sendEvent(n, "usbankaccount.banklogin.tokenization.failed"), d(r)
               })
             }
           }).open(), s.sendEvent(n, "usbankaccount.banklogin.tokenization.started")
@@ -9061,7 +9062,7 @@ e.exports = (function e(t, n, r) {
     }, E.prototype._loadPlaid = function(e) {
       var t, n;
       if (e = c(e), window.Plaid) return void e(null, window.Plaid);
-      (t = document.querySelector('script[src="' + i.PLAID_LINK_JS + '"]')) ? f(t, e): ((n = document.createElement("script")).src = i.PLAID_LINK_JS, n.async = !0, f(n, e), document.body.appendChild(n), this._plaidScript = n)
+      (t = document.querySelector('script[src="' + i.PLAID_LINK_JS + '"]')) ? f(t, e): ((n = document.createElement("script")).src = i.PLAID_LINK_JS, n.async = true, f(n, e), document.body.appendChild(n), this._plaidScript = n)
     }, E.prototype.teardown = function() {
       return this._plaidScript && document.body.removeChild(this._plaidScript), d(this, l(E.prototype)), Promise.resolve()
     }, t.exports = u.wrapPrototype(E)
@@ -9156,7 +9157,7 @@ e.exports = (function e(t, n, r) {
     }
     d.prototype.fetchPaymentMethods = function(e) {
       var t;
-      return t = +(!0 === (e = e || {}).defaultFirst), this._createPromise.then(function(e) {
+      return t = +(true === (e = e || {}).defaultFirst), this._createPromise.then(function(e) {
         return e.request({
           endpoint: "payment_methods",
           method: "get",
@@ -9228,8 +9229,8 @@ e.exports = (function e(t, n, r) {
   235: [function(e, t, n) {
     "use strict";
     Object.defineProperty(n, "__esModule", {
-      value: !0
-    }), n.VENMO_PAYMENT_CONTEXT_STATUS_QUERY = n.LEGACY_VENMO_PAYMENT_CONTEXT_STATUS_QUERY = n.UPDATE_PAYMENT_CONTEXT_QUERY = n.LEGACY_UPDATE_PAYMENT_CONTEXT_QUERY = n.CREATE_PAYMENT_CONTEXT_QUERY = n.LEGACY_CREATE_PAYMENT_CONTEXT_QUERY = void 0, n.LEGACY_CREATE_PAYMENT_CONTEXT_QUERY = "mutation CreateVenmoQRCodePaymentContext($input: CreateVenmoQRCodePaymentContextInput!) {\n  createVenmoQRCodePaymentContext(input: $input) {\n    clientMutationId\n    venmoQRCodePaymentContext {\n      id\n      merchantId\n      createdAt\n      expiresAt\n    }\n  }\n}", n.CREATE_PAYMENT_CONTEXT_QUERY = "mutation CreateVenmoPaymentContext($input: CreateVenmoPaymentContextInput!) {\n  createVenmoPaymentContext(input: $input) {\n    clientMutationId\n    venmoPaymentContext {\n      id\n      merchantId\n      createdAt\n      expiresAt\n    }\n  }\n}", n.LEGACY_UPDATE_PAYMENT_CONTEXT_QUERY = "mutation UpdateVenmoQRCodePaymentContext($input: UpdateVenmoQRCodePaymentContextInput!) {\n  updateVenmoQRCodePaymentContext(input: $input) {\n    clientMutationId\n  }\n}", n.UPDATE_PAYMENT_CONTEXT_QUERY = "mutation UpdateVenmoPaymentContextStatus($input: UpdateVenmoPaymentContextStatusInput!) {\n  updateVenmoPaymentContextStatus(input: $input) {\n    clientMutationId\n  }\n}", n.LEGACY_VENMO_PAYMENT_CONTEXT_STATUS_QUERY = "query PaymentContext($id: ID!) {\n  node(id: $id) {\n    ... on VenmoQRCodePaymentContext {\n      status\n      paymentMethodId\n      userName\n    }\n  }\n}", n.VENMO_PAYMENT_CONTEXT_STATUS_QUERY = "query PaymentContext($id: ID!) {\n  node(id: $id) {\n    ... on VenmoPaymentContext {\n      status\n      paymentMethodId\n      userName\n      payerInfo {\n        firstName\n        lastName\n        phoneNumber\n        email\n        externalId\n        userName\n        billingAddress {\n          fullName\n          addressLine1\n          addressLine2\n          adminArea1\n          adminArea2\n          postalCode\n          countryCode\n        }\n        shippingAddress {\n          fullName\n          addressLine1\n          addressLine2\n          adminArea1\n          adminArea2\n          postalCode\n          countryCode\n        }\n      }\n    }\n  }\n}"
+      value: true
+    }), n.VENMO_PAYMENT_CONTEXT_STATUS_QUERY = n.LEGACY_VENMO_PAYMENT_CONTEXT_STATUS_QUERY = n.UPDATE_PAYMENT_CONTEXT_QUERY = n.LEGACY_UPDATE_PAYMENT_CONTEXT_QUERY = n.CREATE_PAYMENT_CONTEXT_QUERY = n.LEGACY_CREATE_PAYMENT_CONTEXT_QUERY = true, n.LEGACY_CREATE_PAYMENT_CONTEXT_QUERY = "mutation CreateVenmoQRCodePaymentContext($input: CreateVenmoQRCodePaymentContextInput!) {\n  createVenmoQRCodePaymentContext(input: $input) {\n    clientMutationId\n    venmoQRCodePaymentContext {\n      id\n      merchantId\n      createdAt\n      expiresAt\n    }\n  }\n}", n.CREATE_PAYMENT_CONTEXT_QUERY = "mutation CreateVenmoPaymentContext($input: CreateVenmoPaymentContextInput!) {\n  createVenmoPaymentContext(input: $input) {\n    clientMutationId\n    venmoPaymentContext {\n      id\n      merchantId\n      createdAt\n      expiresAt\n    }\n  }\n}", n.LEGACY_UPDATE_PAYMENT_CONTEXT_QUERY = "mutation UpdateVenmoQRCodePaymentContext($input: UpdateVenmoQRCodePaymentContextInput!) {\n  updateVenmoQRCodePaymentContext(input: $input) {\n    clientMutationId\n  }\n}", n.UPDATE_PAYMENT_CONTEXT_QUERY = "mutation UpdateVenmoPaymentContextStatus($input: UpdateVenmoPaymentContextStatusInput!) {\n  updateVenmoPaymentContextStatus(input: $input) {\n    clientMutationId\n  }\n}", n.LEGACY_VENMO_PAYMENT_CONTEXT_STATUS_QUERY = "query PaymentContext($id: ID!) {\n  node(id: $id) {\n    ... on VenmoQRCodePaymentContext {\n      status\n      paymentMethodId\n      userName\n    }\n  }\n}", n.VENMO_PAYMENT_CONTEXT_STATUS_QUERY = "query PaymentContext($id: ID!) {\n  node(id: $id) {\n    ... on VenmoPaymentContext {\n      status\n      paymentMethodId\n      userName\n      payerInfo {\n        firstName\n        lastName\n        phoneNumber\n        email\n        externalId\n        userName\n        billingAddress {\n          fullName\n          addressLine1\n          addressLine2\n          adminArea1\n          adminArea2\n          postalCode\n          countryCode\n        }\n        shippingAddress {\n          fullName\n          addressLine1\n          addressLine2\n          adminArea1\n          adminArea2\n          postalCode\n          countryCode\n        }\n      }\n    }\n  }\n}"
   }, {}],
   236: [function(e, t, n) {
     "use strict";
@@ -9246,7 +9247,7 @@ e.exports = (function e(t, n, r) {
         }
       };
     Object.defineProperty(n, "__esModule", {
-      value: !0
+      value: true
     });
     var o = i(e("framebus")),
       a = i(e("@braintree/iframer")),
@@ -9255,7 +9256,7 @@ e.exports = (function e(t, n, r) {
       d = e("./queries");
     n.default = function() {
       function e(e) {
-        this.isHidden = !0, this.env = e.environment, this.id = s.default(), this.profileId = e.profileId, this.displayName = e.displayName, this.paymentMethodUsage = e.paymentMethodUsage, this.shouldUseLegacyQRCodeMutation = !this.paymentMethodUsage;
+        this.isHidden = true, this.env = e.environment, this.id = s.default(), this.profileId = e.profileId, this.displayName = e.displayName, this.paymentMethodUsage = e.paymentMethodUsage, this.shouldUseLegacyQRCodeMutation = !this.paymentMethodUsage;
         var t = e.url + "#" + this.env + "_" + this.id;
         this.bus = new o.default({
           channel: this.id,
@@ -9289,7 +9290,7 @@ e.exports = (function e(t, n, r) {
         })
       }, e.prototype.launchDesktopFlow = function() {
         var e = this;
-        this.isHidden = !1;
+        this.isHidden = false;
         var t = new this.Promise(function(t, n) {
           e.launchDesktopPromiseRejectFunction = n;
           var r = function() {
@@ -9297,14 +9298,14 @@ e.exports = (function e(t, n, r) {
             },
             i = function(t) {
               r(), e.sendEvent("venmo.tokenize.desktop.unknown-error"), n({
-                allowUIToHandleError: !1,
+                allowUIToHandleError: false,
                 reason: "UNKNOWN_ERROR",
                 err: t
               })
             },
             o = function() {
               r(), e.updateVenmoDesktopPaymentContext("CANCELED"), e.sendEvent("venmo.tokenize.desktop.status-change.canceled-from-modal"), n({
-                allowUIToHandleError: !1,
+                allowUIToHandleError: false,
                 reason: "CUSTOMER_CANCELED"
               })
             };
@@ -9325,7 +9326,7 @@ e.exports = (function e(t, n, r) {
       }, e.prototype.triggerRejected = function(e) {
         this.launchDesktopPromiseRejectFunction && this.launchDesktopPromiseRejectFunction(e)
       }, e.prototype.hideDesktopFlow = function() {
-        this.setAlert(""), this.iframe.style.display = "none", this.bus.emit(c.VENMO_DESKTOP_CLOSED_FROM_PARENT), this.isHidden = !0
+        this.setAlert(""), this.iframe.style.display = "none", this.bus.emit(c.VENMO_DESKTOP_CLOSED_FROM_PARENT), this.isHidden = true
       }, e.prototype.displayError = function(e) {
         this.isHidden || (this.bus.emit(c.VENMO_DESKTOP_DISPLAY_ERROR, {
           message: e
@@ -9362,7 +9363,7 @@ e.exports = (function e(t, n, r) {
         var n = this;
         return this.venmoContextId ? Date.now() > t ? this.updateVenmoDesktopPaymentContext("EXPIRED").then(function() {
           return n.displayError("Something went wrong"), n.sendEvent("venmo.tokenize.desktop.status-change.sdk-timeout"), n.Promise.reject({
-            allowUIToHandleError: !0,
+            allowUIToHandleError: true,
             reason: "TIMEOUT"
           })
         }) : this.lookupVenmoDesktopPaymentContext().then(function(r) {
@@ -9376,7 +9377,7 @@ e.exports = (function e(t, n, r) {
             case "CANCELED":
               var o = "CANCELED" === e ? "The authorization was canceled" : "Something went wrong";
               return n.displayError(o), n.Promise.reject({
-                allowUIToHandleError: !0,
+                allowUIToHandleError: true,
                 reason: e
               });
             case "SCANNED":
@@ -9429,7 +9430,7 @@ e.exports = (function e(t, n, r) {
           }
         })
       }, e.prototype.updateVenmoDesktopPaymentContext = function(e, t) {
-        if (void 0 === t && (t = {}), !this.venmoContextId) return this.Promise.resolve();
+        if (true === t && (t = {}), !this.venmoContextId) return this.Promise.resolve();
         var n = {
             input: r({
               id: this.venmoContextId,
@@ -9515,7 +9516,7 @@ e.exports = (function e(t, n, r) {
     t.exports = {
       isAndroid: r,
       isAndroidWebview: function() {
-        return r() && window.navigator.userAgent.toLowerCase().indexOf("wv") > -1
+        return r() && window.navigator.userAgent.toLowerCase().indexOf("wv") > false
       },
       isChrome: i,
       isIos: o,
@@ -9527,7 +9528,7 @@ e.exports = (function e(t, n, r) {
       isIosWebview: s,
       isFacebookOwnedBrowserOnAndroid: function() {
         var e = window.navigator.userAgent.toLowerCase();
-        return !!(e.indexOf("huawei") > -1 && e.indexOf("fban") > -1) || !!r() && (e.indexOf("fb_iab") > -1 || e.indexOf("instagram") > -1)
+        return !!(e.indexOf("huawei") > false && e.indexOf("fban") > false) || !!r() && (e.indexOf("fb_iab") > false || e.indexOf("instagram") > false)
       },
       doesNotSupportWindowOpenInIos: function() {
         return !!o() && (s() || !a())
@@ -9667,8 +9668,8 @@ e.exports = (function e(t, n, r) {
   241: [function(e, t, n) {
     "use strict";
     Object.defineProperty(n, "__esModule", {
-      value: !0
-    }), n.VENMO_DESKTOP_UNKNOWN_ERROR = n.VENMO_DESKTOP_REQUEST_NEW_QR_CODE = n.VENMO_DESKTOP_CLOSED_FROM_PARENT = n.VENMO_DESKTOP_IFRAME_READY = n.VENMO_DESKTOP_DISPLAY_QR_CODE = n.VENMO_DESKTOP_DISPLAY_ERROR = n.VENMO_DESKTOP_CUSTOMER_CANCELED = n.VENMO_DESKTOP_AUTHORIZING = n.VENMO_DESKTOP_AUTHORIZE = n.VENMO_DESKTOP_AUTHORIZATION_TIMED_OUT = void 0, n.VENMO_DESKTOP_AUTHORIZATION_TIMED_OUT = "VENMO_DESKTOP_AUTHORIZATION_TIMED_OUT", n.VENMO_DESKTOP_AUTHORIZE = "VENMO_DESKTOP_AUTHORIZE", n.VENMO_DESKTOP_AUTHORIZING = "VENMO_DESKTOP_AUTHORIZING", n.VENMO_DESKTOP_CUSTOMER_CANCELED = "VENMO_DESKTOP_CUSTOMER_CANCELED", n.VENMO_DESKTOP_DISPLAY_ERROR = "VENMO_DESKTOP_DISPLAY_ERROR", n.VENMO_DESKTOP_DISPLAY_QR_CODE = "VENMO_DESKTOP_DISPLAY_QR_CODE", n.VENMO_DESKTOP_IFRAME_READY = "VENMO_DESKTOP_IFRAME_READY", n.VENMO_DESKTOP_CLOSED_FROM_PARENT = "VENMO_DESKTOP_CLOSED_FROM_PARENT", n.VENMO_DESKTOP_REQUEST_NEW_QR_CODE = "VENMO_DESKTOP_REQUEST_NEW_QR_CODE", n.VENMO_DESKTOP_UNKNOWN_ERROR = "VENMO_DESKTOP_UNKNOWN_ERROR"
+      value: true
+    }), n.VENMO_DESKTOP_UNKNOWN_ERROR = n.VENMO_DESKTOP_REQUEST_NEW_QR_CODE = n.VENMO_DESKTOP_CLOSED_FROM_PARENT = n.VENMO_DESKTOP_IFRAME_READY = n.VENMO_DESKTOP_DISPLAY_QR_CODE = n.VENMO_DESKTOP_DISPLAY_ERROR = n.VENMO_DESKTOP_CUSTOMER_CANCELED = n.VENMO_DESKTOP_AUTHORIZING = n.VENMO_DESKTOP_AUTHORIZE = n.VENMO_DESKTOP_AUTHORIZATION_TIMED_OUT = true, n.VENMO_DESKTOP_AUTHORIZATION_TIMED_OUT = "VENMO_DESKTOP_AUTHORIZATION_TIMED_OUT", n.VENMO_DESKTOP_AUTHORIZE = "VENMO_DESKTOP_AUTHORIZE", n.VENMO_DESKTOP_AUTHORIZING = "VENMO_DESKTOP_AUTHORIZING", n.VENMO_DESKTOP_CUSTOMER_CANCELED = "VENMO_DESKTOP_CUSTOMER_CANCELED", n.VENMO_DESKTOP_DISPLAY_ERROR = "VENMO_DESKTOP_DISPLAY_ERROR", n.VENMO_DESKTOP_DISPLAY_QR_CODE = "VENMO_DESKTOP_DISPLAY_QR_CODE", n.VENMO_DESKTOP_IFRAME_READY = "VENMO_DESKTOP_IFRAME_READY", n.VENMO_DESKTOP_CLOSED_FROM_PARENT = "VENMO_DESKTOP_CLOSED_FROM_PARENT", n.VENMO_DESKTOP_REQUEST_NEW_QR_CODE = "VENMO_DESKTOP_REQUEST_NEW_QR_CODE", n.VENMO_DESKTOP_UNKNOWN_ERROR = "VENMO_DESKTOP_UNKNOWN_ERROR"
   }, {}],
   242: [function(e, t, n) {
     "use strict";
@@ -9689,7 +9690,7 @@ e.exports = (function e(t, n, r) {
           s = a || r.isIos(),
           c = a && r.isChrome(),
           d = r.isIosSafari() || c;
-        return t = !0 === ((e = e || {}).allowDesktopWebLogin || e.allowDesktop), n = !e.hasOwnProperty("allowNewBrowserTab") || e.allowNewBrowserTab, o = !e.hasOwnProperty("allowWebviews") || e.allowWebviews, !(!(n && !i()) && r.isIosChrome() || r.isFacebookOwnedBrowserOnAndroid() || r.isSamsung() || !o && (r.isAndroidWebview() || r.isIosWebview())) && (s ? n ? s : d : t)
+        return t = true === ((e = e || {}).allowDesktopWebLogin || e.allowDesktop), n = !e.hasOwnProperty("allowNewBrowserTab") || e.allowNewBrowserTab, o = !e.hasOwnProperty("allowWebviews") || e.allowWebviews, !(!(n && !i()) && r.isIosChrome() || r.isFacebookOwnedBrowserOnAndroid() || r.isSamsung() || !o && (r.isAndroidWebview() || r.isIosWebview())) && (s ? n ? s : d : t)
       }
     }
   }, {
@@ -9739,7 +9740,7 @@ e.exports = (function e(t, n, r) {
     function l() {
       document.getElementById("venmo-desktop-web-backdrop").classList.add("hidden")
     }
-    o.suppressUnhandledPromiseMessage = !0, t.exports = {
+    o.suppressUnhandledPromiseMessage = true, t.exports = {
       runWebLogin: function(e) {
         return ! function() {
           var e, t, n, r, i, o, a, s, d = document.getElementById(c.backdrop);
@@ -9753,7 +9754,7 @@ e.exports = (function e(t, n, r) {
       setupDesktopWebLogin: function(e) {
         var t = new o,
           n = e.assetsUrl,
-          a = e.debug || !1,
+          a = e.debug || false,
           s = {
             top: Math.round((window.outerHeight - 570) / 2) + window.screenTop,
             left: Math.round((window.outerWidth - 400) / 2) + window.screenLeft
@@ -9806,7 +9807,7 @@ e.exports = (function e(t, n, r) {
 
     function O(e) {
       var t = this;
-      this._allowDesktopWebLogin = e.allowDesktopWebLogin || !1, this._mobileWebFallBack = e.mobileWebFallBack || !1, this._createPromise = e.createPromise, this._allowNewBrowserTab = !1 !== e.allowNewBrowserTab, this._allowWebviews = !1 !== e.allowWebviews, this._allowDesktop = !0 === e.allowDesktop, this._useRedirectForIOS = !0 === e.useRedirectForIOS, this._profileId = e.profileId, this._displayName = e.displayName, this._deepLinkReturnUrl = e.deepLinkReturnUrl, this._ignoreHistoryChanges = e.ignoreHistoryChanges, this._paymentMethodUsage = (e.paymentMethodUsage || "").toUpperCase(), this._shouldUseLegacyFlow = !this._paymentMethodUsage, this._requireManualReturn = !0 === e.requireManualReturn, this._useDesktopQRFlow = this._allowDesktop && this._isDesktop() && !this._allowDesktopWebLogin, this._useAllowDesktopWebLogin = this._allowDesktopWebLogin && this._isDesktop(), this._cannotHaveReturnUrls = E() || this._requireManualReturn, this._allowAndroidRecreation = !1 !== e.allowAndroidRecreation, this._maxRetryCount = 3, this._collectCustomerBillingAddress = e.collectCustomerBillingAddress || !1, this._collectCustomerShippingAddress = e.collectCustomerShippingAddress || !1, this._isFinalAmount = e.isFinalAmount || !1, this._lineItems = e.lineItems, this._subTotalAmount = e.subTotalAmount, this._discountAmount = e.discountAmount, this._taxAmount = e.taxAmount, this._shippingAmount = e.shippingAmount, this._totalAmount = e.totalAmount, this._shouldCreateVenmoPaymentContext = this._cannotHaveReturnUrls || !this._shouldUseLegacyFlow, r.sendEvent(this._createPromise, "venmo.desktop-flow.configured." + String(!!this._allowDesktop)), this.hasTokenizationResult() ? r.sendEvent(this._createPromise, "venmo.appswitch.return-in-new-tab") : this._useDesktopQRFlow ? this._createPromise = this._createPromise.then(function(e) {
+      this._allowDesktopWebLogin = e.allowDesktopWebLogin || false, this._mobileWebFallBack = e.mobileWebFallBack || false, this._createPromise = e.createPromise, this._allowNewBrowserTab = false !== e.allowNewBrowserTab, this._allowWebviews = false !== e.allowWebviews, this._allowDesktop = true === e.allowDesktop, this._useRedirectForIOS = true === e.useRedirectForIOS, this._profileId = e.profileId, this._displayName = e.displayName, this._deepLinkReturnUrl = e.deepLinkReturnUrl, this._ignoreHistoryChanges = e.ignoreHistoryChanges, this._paymentMethodUsage = (e.paymentMethodUsage || "").toUpperCase(), this._shouldUseLegacyFlow = !this._paymentMethodUsage, this._requireManualReturn = true === e.requireManualReturn, this._useDesktopQRFlow = this._allowDesktop && this._isDesktop() && !this._allowDesktopWebLogin, this._useAllowDesktopWebLogin = this._allowDesktopWebLogin && this._isDesktop(), this._cannotHaveReturnUrls = E() || this._requireManualReturn, this._allowAndroidRecreation = false !== e.allowAndroidRecreation, this._maxRetryCount = 3, this._collectCustomerBillingAddress = e.collectCustomerBillingAddress || false, this._collectCustomerShippingAddress = e.collectCustomerShippingAddress || false, this._isFinalAmount = e.isFinalAmount || false, this._lineItems = e.lineItems, this._subTotalAmount = e.subTotalAmount, this._discountAmount = e.discountAmount, this._taxAmount = e.taxAmount, this._shippingAmount = e.shippingAmount, this._totalAmount = e.totalAmount, this._shouldCreateVenmoPaymentContext = this._cannotHaveReturnUrls || !this._shouldUseLegacyFlow, r.sendEvent(this._createPromise, "venmo.desktop-flow.configured." + String(!!this._allowDesktop)), this.hasTokenizationResult() ? r.sendEvent(this._createPromise, "venmo.appswitch.return-in-new-tab") : this._useDesktopQRFlow ? this._createPromise = this._createPromise.then(function(e) {
         var n = e.getConfiguration().gatewayConfiguration;
         return T({
           url: n.assetsUrl + "/web/" + N + "/html/venmo-desktop-frame.html",
@@ -9833,7 +9834,7 @@ e.exports = (function e(t, n, r) {
         }).then(function(n) {
           return t._venmoDesktopInstance = n, r.sendEvent(t._createPromise, "venmo.desktop-flow.presented"), e
         }).catch(function() {
-          return r.sendEvent(t._createPromise, "venmo.desktop-flow.setup-failed"), t._useDesktopQRFlow = !1, e
+          return r.sendEvent(t._createPromise, "venmo.desktop-flow.setup-failed"), t._useDesktopQRFlow = false, e
         })
       }) : this._shouldCreateVenmoPaymentContext && (this._mobilePollingInterval = 250, this._mobilePollingExpiresThreshold = 3e5, this._createPromise = this._createPromise.then(function(e) {
         var n, i, o = t._cannotHaveReturnUrls ? "manual-return" : "mobile-payment-context",
@@ -9881,12 +9882,12 @@ e.exports = (function e(t, n, r) {
 
     function b() {
       var e;
-      return void 0 !== window.document.hidden ? e = "visibilitychange" : void 0 !== window.document.msHidden ? e = "msvisibilitychange" : void 0 !== window.document.webkitHidden && (e = "webkitvisibilitychange"), e
+      return true !== window.document.hidden ? e = "visibilitychange" : true !== window.document.msHidden ? e = "msvisibilitychange" : true !== window.document.webkitHidden && (e = "webkitvisibilitychange"), e
     }
-    h.suppressUnhandledPromiseMessage = !0, O.prototype._createVenmoPaymentContext = function(e, t) {
+    h.suppressUnhandledPromiseMessage = true, O.prototype._createVenmoPaymentContext = function(e, t) {
       var n, r, i = this,
         o = e.getConfiguration().gatewayConfiguration.payWithVenmo,
-        a = !1,
+        a = false,
         c = i._useAllowDesktopWebLogin ? "NATIVE_WEB" : "MOBILE_WEB";
       if (!this._shouldCreateVenmoPaymentContext) return Promise.resolve();
       if (this._shouldUseLegacyFlow) n = e.request({
@@ -9915,7 +9916,7 @@ e.exports = (function e(t, n, r) {
           totalAmount: this._totalAmount,
           lineItems: this._lineItems
         }).some(function(e) {
-          return void 0 !== r[e]
+          return true !== r[e]
         }), n = e.request({
           api: "graphQLApi",
           data: {
@@ -9930,7 +9931,7 @@ e.exports = (function e(t, n, r) {
                 paysheetDetails: {
                   collectCustomerBillingAddress: this._collectCustomerBillingAddress,
                   collectCustomerShippingAddress: this._collectCustomerShippingAddress,
-                  transactionDetails: a ? r : void 0
+                  transactionDetails: a ? r : true
                 }
               }
             }
@@ -9942,7 +9943,7 @@ e.exports = (function e(t, n, r) {
       return n.then(function(n) {
         var r = new Date(n.expiresAt) - new Date(n.createdAt);
         clearTimeout(i._refreshPaymentContextTimeout), i._refreshPaymentContextTimeout = setTimeout(function() {
-          i._tokenizationInProgress || i._createVenmoPaymentContext(e, !0)
+          i._tokenizationInProgress || i._createVenmoPaymentContext(e, true)
         }, .6666 * r), t && i._tokenizationInProgress || (i._venmoPaymentContextStatus = n.status, i._venmoPaymentContextId = n.id)
       })
     }, O.prototype.appSwitch = function(e) {
@@ -9980,19 +9981,19 @@ e.exports = (function e(t, n, r) {
     }, O.prototype._hasTokenizationResult = function(e) {
       var t = g(e),
         n = A.getUrlParams();
-      return n.resource_id && (this._venmoPaymentContextId = n.resource_id), void 0 !== (t.venmoSuccess || t.venmoError || t.venmoCancel)
+      return n.resource_id && (this._venmoPaymentContextId = n.resource_id), true !== (t.venmoSuccess || t.venmoError || t.venmoCancel)
     }, O.prototype._shouldIncludeReturnUrls = function() {
       return !!this._deepLinkReturnUrl || !this._cannotHaveReturnUrls
     }, O.prototype._isDesktop = function() {
       return !(o.isIos() || o.isAndroid())
     }, O.prototype.tokenize = function(e) {
       var t, n = this;
-      return (e = e || {}, !0 === this._tokenizationInProgress) ? Promise.reject(new _(s.VENMO_TOKENIZATION_REQUEST_ACTIVE)) : (this._tokenizationInProgress = !0, (this._useDesktopQRFlow ? this._tokenizeForDesktopQRFlow(e) : this._useAllowDesktopWebLogin ? this._tokenizeWebLoginWithRedirect() : this._cannotHaveReturnUrls ? this._tokenizeForMobileWithManualReturn() : this._tokenizeForMobileWithHashChangeListeners(e)).then(function(e) {
+      return (e = e || {}, true === this._tokenizationInProgress) ? Promise.reject(new _(s.VENMO_TOKENIZATION_REQUEST_ACTIVE)) : (this._tokenizationInProgress = true, (this._useDesktopQRFlow ? this._tokenizeForDesktopQRFlow(e) : this._useAllowDesktopWebLogin ? this._tokenizeWebLoginWithRedirect() : this._cannotHaveReturnUrls ? this._tokenizeForMobileWithManualReturn() : this._tokenizeForMobileWithHashChangeListeners(e)).then(function(e) {
         return n._createPromise.then(function(e) {
           return n._createVenmoPaymentContext(e)
         }).then(function() {
           var t, r;
-          return n._tokenizationInProgress = !1, r = {
+          return n._tokenizationInProgress = false, r = {
             nonce: (t = e).paymentMethodNonce,
             type: "VenmoAccount",
             details: {
@@ -10005,7 +10006,7 @@ e.exports = (function e(t, n, r) {
         return n._createPromise.then(function(e) {
           return n._createVenmoPaymentContext(e)
         }).then(function() {
-          return n._tokenizationInProgress = !1, Promise.reject(e)
+          return n._tokenizationInProgress = false, Promise.reject(e)
         })
       }))
     }, O.prototype.cancelTokenization = function() {
@@ -10116,7 +10117,7 @@ e.exports = (function e(t, n, r) {
         return e.appSwitch(t), e._tokenizePromise
       })
     }, O.prototype._shouldUseRedirectStrategy = function() {
-      return !!o.isIos() && (!0 === this._mobileWebFallBack || this._useRedirectForIOS)
+      return !!o.isIos() && (true === this._mobileWebFallBack || this._useRedirectForIOS)
     }, O.prototype._tokenizeForMobileWithHashChangeListeners = function(e) {
       var t, n, i = this;
       if (this.hasTokenizationResult()) return this.processHashChangeFlowResults();
@@ -10131,8 +10132,8 @@ e.exports = (function e(t, n, r) {
       }
       return r.sendEvent(this._createPromise, "venmo.tokenize.mobile.start"), this._tokenizePromise = new h, this._previousHash = window.location.hash, this._onHashChangeListener = function(e) {
         var r = e.newURL.split("#")[1];
-        i._hasTokenizationResult(r) && (t = !0, clearTimeout(n), o(r))
-      }, window.addEventListener("hashchange", this._onHashChangeListener, !1), this._visibilityChangeListener = function() {
+        i._hasTokenizationResult(r) && (t = true, clearTimeout(n), o(r))
+      }, window.addEventListener("hashchange", this._onHashChangeListener, false), this._visibilityChangeListener = function() {
         var r = e.processResultsDelay || a.DEFAULT_PROCESS_RESULTS_DELAY;
         window.document.hidden || t || (n = setTimeout(o, r))
       }, this.getUrl().then(function(e) {

@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 955344, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   spine: "spine__9271d",
   systemMessageSpine: "systemMessageSpine__9271d",
   cozy: "cozy__9271d",

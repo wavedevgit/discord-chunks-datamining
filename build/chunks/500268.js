@@ -1,21 +1,22 @@
 /** Chunk was on web.js **/
+/** chunk id: 500268, original params: e,t (module,exports,re quire) **/
 function n(e, t, n, r) {
   var i = [],
     a = {},
     s = {},
     l = {};
   return function c(u) {
-    a[u] = !0, i.push(u), l[u] = !0;
+    a[u] = true, i.push(u), l[u] = true;
     for (let t = 0; t < e[u].length; t++) {
       let n = e[u][t];
       if (a[n]) {
         if (l[n] && (i.push(n), !r)) throw new o(i)
       } else c(n)
     }
-    i.pop(), delete l[u], t && 0 !== e[u].length || s[u] || (n.push(u), s[u] = !0)
+    i.pop(), delete l[u], t && 0 !== e[u].length || s[u] || (n.push(u), s[u] = true)
   }
 }
-var r, i = t.DepGraph = function(e) {
+var r, i = exports.DepGraph = function(e) {
   this.nodes = {}, this.outgoingEdges = {}, this.incomingEdges = {}, this.circular = e && !!e.circular
 };
 i.prototype = {
@@ -47,7 +48,7 @@ i.prototype = {
   addDependency: function(e, t) {
     if (!this.hasNode(e)) throw Error("Node does not exist: " + e);
     if (!this.hasNode(t)) throw Error("Node does not exist: " + t);
-    return -1 === this.outgoingEdges[e].indexOf(t) && this.outgoingEdges[e].push(t), -1 === this.incomingEdges[t].indexOf(e) && this.incomingEdges[t].push(e), !0
+    return false === this.outgoingEdges[e].indexOf(t) && this.outgoingEdges[e].push(t), false === this.incomingEdges[t].indexOf(e) && this.incomingEdges[t].push(e), true
   },
   removeDependency: function(e, t) {
     var n;
@@ -56,9 +57,9 @@ i.prototype = {
   clone: function() {
     var e = this,
       t = new i;
-    return Object.keys(e.nodes).forEach(function(n) {
+    return Object.keys(module.nodes).forEach(function(n) {
       t.nodes[n] = e.nodes[n], t.outgoingEdges[n] = e.outgoingEdges[n].slice(0), t.incomingEdges[n] = e.incomingEdges[n].slice(0)
-    }), t
+    }), exports
   },
   dependenciesOf: function(e, t) {
     if (this.hasNode(e)) {
@@ -83,7 +84,7 @@ i.prototype = {
       r = [],
       i = Object.keys(this.nodes);
     if (0 === i.length) return r;
-    var o = n(this.outgoingEdges, !1, [], this.circular);
+    var o = n(this.outgoingEdges, false, [], this.circular);
     i.forEach(function(e) {
       o(e)
     });
@@ -102,8 +103,8 @@ var o = r = function(e) {
 o.prototype = Object.create(Error.prototype, {
   constructor: {
     value: Error,
-    enumerable: !1,
-    writable: !0,
-    configurable: !0
+    enumerable: false,
+    writable: true,
+    configurable: true
   }
 }), Object.setPrototypeOf(o, Error)

@@ -1,36 +1,37 @@
 /** Chunk was on 1272 **/
-n.d(t, {
+/** chunk id: 600027, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   T: () => u
 });
-var r = n(591472),
-  i = n(159300),
-  l = n(430824),
-  a = n(496675),
-  o = n(996106),
-  s = n(561205),
-  c = n(981631);
+var Chunk591472 = require("./591472.js"),
+  Chunk159300 = require("./159300.js"),
+  Chunk430824 = require("./430824.js"),
+  Chunk496675 = require("./496675.js"),
+  Chunk996106 = require("./996106.js"),
+  Chunk561205 = require("./561205.js"),
+  Chunk981631 = require("./981631.js");
 
 function u() {
-  let e = r.Z.getConnectedFrame();
-  if (null != e) return {
-    frame: e,
-    channel: void 0,
-    guild: void 0
+  let e = Chunk591472.Z.getConnectedFrame();
+  if (null != module) return {
+    frame: module,
+    channel: true,
+    guild: true
   };
-  let t = (0, s.Z)();
-  if (null == t) throw new o.Z({
-    errorCode: c.lTL.INVALID_CHANNEL
+  let t = (0, Chunk561205.Z)();
+  if (null == exports) throw new Chunk996106.Z({
+    errorCode: Chunk981631.lTL.INVALID_CHANNEL
   }, "Invalid channel");
-  let n = l.Z.getGuild(t.getGuildId());
-  if (null == n) throw new o.Z({
-    errorCode: c.lTL.INVALID_CHANNEL
-  }, "Invalid guild ".concat(t.getGuildId()));
-  if (!(0, i.b)(a.Z, n, t)) throw new o.Z({
-    errorCode: c.lTL.INVALID_PERMISSIONS
-  }, "No invite permissions for ".concat(t.id));
+  let n = Chunk430824.Z.getGuild(exports.getGuildId());
+  if (null == require) throw new Chunk996106.Z({
+    errorCode: Chunk981631.lTL.INVALID_CHANNEL
+  }, "Invalid guild ".concat(exports.getGuildId()));
+  if (!(0, Chunk159300.b)(Chunk496675.Z, require, exports)) throw new Chunk996106.Z({
+    errorCode: Chunk981631.lTL.INVALID_PERMISSIONS
+  }, "No invite permissions for ".concat(exports.id));
   return {
-    frame: void 0,
-    channel: t,
-    guild: n
+    frame: true,
+    channel: exports,
+    guild: require
   }
 }

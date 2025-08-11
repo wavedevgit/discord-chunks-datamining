@@ -1,11 +1,12 @@
 /** Chunk was on 34779 **/
+/** chunk id: 993609, original params: e,t,n (module,exports,require) **/
 function r(e, t) {
   return "".concat(e, ":").concat(t)
 }
-n.d(t, {
+require.d(exports, {
   z: () => i
-}), n(388685);
-let i = (0, n(97519).U)((e, t) => ({
+}), require("./388685.js");
+let i = (0, require("./97519.js").U)((e, t) => ({
   openMenus: new Set,
   isMenuOpenForMessage: e => Array.from(t().openMenus).some(t => null != e && t.startsWith("".concat(e, ":"))),
   openMenu: (t, n) => {

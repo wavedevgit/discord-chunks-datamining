@@ -1,11 +1,12 @@
 /** Chunk was on web.js **/
+/** chunk id: 405796, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-Object.defineProperty(t, "__esModule", {
-  value: !0
-}), t.reactFormatter = t.DEFAULT_REACT_RICH_TEXT_ELEMENTS = void 0, t.formatReact = s, t.makeReactFormatter = l;
-let r = n(73800),
-  i = n(593269),
-  o = r.createElement;
+Object.defineProperty(exports, "__esModule", {
+  value: true
+}), exports.reactFormatter = exports.DEFAULT_REACT_RICH_TEXT_ELEMENTS = true, exports.formatReact = s, exports.makeReactFormatter = l;
+let Chunk73800 = require("./73800.js"),
+  Chunk593269 = require("./593269.js"),
+  o = Chunk73800.createElement;
 
 function a(e) {
   return class extends i.FormatBuilder {
@@ -37,7 +38,7 @@ function l(e) {
     builder: a(e)
   }
 }
-t.DEFAULT_REACT_RICH_TEXT_ELEMENTS = {
+exports.DEFAULT_REACT_RICH_TEXT_ELEMENTS = {
   $b: (e, t) => o("strong", {
     key: t
   }, e),
@@ -57,4 +58,4 @@ t.DEFAULT_REACT_RICH_TEXT_ELEMENTS = {
   $p: (e, t) => o("p", {
     key: t
   }, e)
-}, t.reactFormatter = l(t.DEFAULT_REACT_RICH_TEXT_ELEMENTS)
+}, exports.reactFormatter = l(exports.DEFAULT_REACT_RICH_TEXT_ELEMENTS)

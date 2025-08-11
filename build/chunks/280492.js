@@ -1,23 +1,24 @@
 /** Chunk was on web.js **/
+/** chunk id: 280492, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   iN: () => i,
   oV: () => o
 });
-var r = n(846027);
+var Chunk846027 = require("./846027.js");
 let i = {
     binds: ["mod+shift+m"],
-    comboKeysBindGlobal: !0,
-    action: () => (r.Z.toggleSelfMute({
-      usedKeybind: !0,
+    comboKeysBindGlobal: true,
+    action: () => (Chunk846027.Z.toggleSelfMute({
+      usedKeybind: true,
       location: "Default Keybind"
-    }), !1)
+    }), false)
   },
   o = {
     binds: ["mod+shift+d"],
-    comboKeysBindGlobal: !0,
-    action: () => (r.Z.toggleSelfDeaf({
-      usedKeybind: !0,
+    comboKeysBindGlobal: true,
+    action: () => (Chunk846027.Z.toggleSelfDeaf({
+      usedKeybind: true,
       location: "Default Keybind"
-    }), !1)
+    }), false)
   }

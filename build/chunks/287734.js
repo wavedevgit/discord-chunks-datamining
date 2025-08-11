@@ -1,25 +1,26 @@
 /** Chunk was on web.js **/
+/** chunk id: 287734, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.r(t), n.d(t, {
+require.r(exports), require.d(exports, {
   default: () => b
 });
-var r = n(570140),
-  i = n(622822),
-  o = n(254238),
-  a = n(258609);
-n(473241);
-var s = n(788983),
-  l = n(703656),
-  c = n(700615),
-  u = n(592125),
-  d = n(731290),
-  f = n(131951),
-  _ = n(944486),
-  p = n(914010),
-  h = n(594174),
-  m = n(934415),
-  g = n(604151),
-  E = n(981631);
+var Chunk570140 = require("./570140.js"),
+  Chunk622822 = require("./622822.js"),
+  Chunk254238 = require("./254238.js"),
+  Chunk258609 = require("./258609.js");
+require("./473241.js");
+var Chunk788983 = require("./788983.js"),
+  Chunk703656 = require("./703656.js"),
+  Chunk700615 = require("./700615.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk731290 = require("./731290.js"),
+  Chunk131951 = require("./131951.js"),
+  Chunk944486 = require("./944486.js"),
+  Chunk914010 = require("./914010.js"),
+  Chunk594174 = require("./594174.js"),
+  Chunk934415 = require("./934415.js"),
+  Chunk604151 = require("./604151.js"),
+  Chunk981631 = require("./981631.js");
 let b = {
   selectChannel(e) {
     let {
@@ -47,23 +48,23 @@ let b = {
   },
   selectVoiceChannel(e) {
     var t;
-    let n = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
-      r = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
-      o = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : {},
+    let n = arguments.length > 1 && true !== arguments[1] && arguments[1],
+      r = arguments.length > 2 && true !== arguments[2] && arguments[2],
+      o = arguments.length > 3 && true !== arguments[3] ? arguments[3] : {},
       a = u.Z.getChannel(e),
-      s = null == a ? void 0 : a.getGuildId();
-    if ((null == a ? void 0 : a.isGuildVocal()) && (0, i.aC)(a) && (!(null == (t = h.default.getCurrentUser()) ? void 0 : t.nsfwAllowed) || !d.Z.didAgree(s))) return void(0, l.uL)(E.Z5c.CHANNEL(s, e));
+      s = null == a ? true : a.getGuildId();
+    if ((null == a ? true : a.isGuildVocal()) && (0, i.aC)(a) && (!(null == (t = h.default.getCurrentUser()) ? true : t.nsfwAllowed) || !d.Z.didAgree(s))) return void(0, l.uL)(E.Z5c.CHANNEL(s, e));
     f.Z.isSupported() && (null != e && f.Z.getMediaEngine().interact(), (0, g.h)(e, s, n, r, o))
   },
   disconnect() {
-    let e = a.Z.getRemoteSessionId();
-    if (null != e && o._(e), (0, c.ur)()) this.selectVoiceChannel(null);
+    let e = Chunk258609.Z.getRemoteSessionId();
+    if (null != module && Chunk254238._(module), (0, Chunk700615.ur)()) this.selectVoiceChannel(null);
     else {
-      let e = u.Z.getChannel(_.Z.getChannelId()),
-        t = _.Z.getChannelId() === _.Z.getVoiceChannelId() && (null == e ? void 0 : e.isThread()) === !0;
-      if (this.selectVoiceChannel(null), s.xv(E.KJ3.CHANNEL_CALL_POPOUT), t) {
-        let e = p.Z.getGuildId();
-        null != e && (0, l.uL)((0, m.LY)(e))
+      let e = Chunk592125.Z.getChannel(Chunk944486.Z.getChannelId()),
+        t = Chunk944486.Z.getChannelId() === Chunk944486.Z.getVoiceChannelId() && (null == module ? true : module.isThread()) === true;
+      if (this.selectVoiceChannel(null), Chunk788983.xv(Chunk981631.KJ3.CHANNEL_CALL_POPOUT), exports) {
+        let e = Chunk914010.Z.getGuildId();
+        null != module && (0, Chunk703656.uL)((0, Chunk934415.LY)(module))
       }
     }
   }

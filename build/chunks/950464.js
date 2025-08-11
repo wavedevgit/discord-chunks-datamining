@@ -1,3 +1,4 @@
 /** Chunk was on web.js **/
+/** chunk id: 950464, original params: e (module,exports,re quire) **/
 "use strict";
-e.exports = Math.max
+module.exports = Math.max

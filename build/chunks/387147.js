@@ -1,5 +1,6 @@
 /** Chunk was on 49152 **/
-e.exports = {
+/** chunk id: 387147, original params: e,t,n (module,exports,require) **/
+module.exports = {
   tileBaseContainer: "tileBaseContainer__71eb2",
   tileContainer: "tileContainer__71eb2 tileBaseContainer__71eb2",
   textContainer: "textContainer__71eb2",

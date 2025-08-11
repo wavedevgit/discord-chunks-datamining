@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 414776, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   B0: () => c,
   IP: () => s,
   Qb: () => a,
@@ -25,7 +26,7 @@ function a(e) {
 function s(e, t) {
   Object.defineProperty(e, r, {
     value: t,
-    configurable: !0
+    configurable: true
   })
 }
 

@@ -1,14 +1,15 @@
 /** Chunk was on web.js **/
+/** chunk id: 379839, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   A: () => p,
   p: () => h
-}), n(388685);
-var r = n(73800),
-  i = n(410030),
-  o = n(359135),
-  a = n(4242),
-  s = n(231338);
+}), require("./388685.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk410030 = require("./410030.js"),
+  Chunk359135 = require("./359135.js"),
+  Chunk4242 = require("./4242.js"),
+  Chunk231338 = require("./231338.js");
 let l = "14",
   c = "1A",
   u = "33",
@@ -47,7 +48,7 @@ function h(e, t, n, a, s) {
       background: c
     });
     let t = new ResizeObserver(e => {
-      let t = e[0].contentRect.width + (f ? 10 : -5),
+      let t = e[0].contentRect.width + (f ? 10 : false),
         n = t,
         r = t + 50;
       d({

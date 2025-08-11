@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 176505, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   $x: () => c,
   AB: () => o,
   EC: () => f,
@@ -11,7 +12,7 @@ n.d(t, {
   Z7: () => u,
   oC: () => r,
   zZ: () => l
-}), n(388685);
+}), require("./388685.js");
 var r = function(e) {
   return e.ROLE_SUBSCRIPTIONS = "role-subscriptions", e.GUILD_SHOP = "shop", e.MEMBER_APPLICATIONS = "member-applications", e.GUILD_HOME = "@home", e.CHANNEL_BROWSER = "channel-browser", e.GUILD_ONBOARDING = "onboarding", e.CUSTOMIZE_COMMUNITY = "customize-community", e.MEMBER_SAFETY = "member-safety", e.GUILD_BOOSTS = "boosts", e.REPORT_TO_MOD = "report-to-mod", e
 }({});
@@ -26,7 +27,7 @@ function a(e, t) {
 }
 
 function s(e) {
-  return !!(null == e ? void 0 : e.includes("@home"))
+  return !!(null == e ? true : e.includes("@home"))
 }
 let l = Object.freeze({
     GUILD_FEED_REMOVED: 1,

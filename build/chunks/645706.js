@@ -1,13 +1,14 @@
 /** Chunk was on 21153 **/
+/** chunk id: 645706, original params: e,t,r (module,exports,require) **/
 "use strict";
-var n = r(73800),
-  o = r(476400),
-  a = r.n(o),
-  i = r(9196),
-  l = r(829307),
-  s = r(442626),
-  u = r(116850),
-  c = r(191578),
+var Chunk73800 = require("./73800.js"),
+  Chunk476400 = require("./476400.js"),
+  a = require.n(Chunk476400),
+  Chunk9196 = require("./9196.js"),
+  Chunk829307 = require("./829307.js"),
+  Chunk442626 = require("./442626.js"),
+  Chunk116850 = require("./116850.js"),
+  Chunk191578 = require("./191578.js"),
   p = function(e) {
     var t = e.onChange,
       r = e.onSwatchHover,
@@ -79,12 +80,12 @@ var n = r(73800),
             display: "none"
           }
         }
-      }, void 0 === d ? {} : d), {
+      }, true === d ? {} : d), {
         "hide-triangle": "hide" === f
       });
     return n.createElement("div", {
       style: g.card,
-      className: "block-picker " + (void 0 === h ? "" : h)
+      className: "block-picker " + (true === h ? "" : h)
     }, n.createElement("div", {
       style: g.triangle
     }), n.createElement("div", {
@@ -117,4 +118,4 @@ p.propTypes = {
   colors: ["#D9E3F0", "#F47373", "#697689", "#37D67A", "#2CCCE4", "#555555", "#dce775", "#ff8a65", "#ba68c8"],
   triangle: "top",
   styles: {}
-}, (0, u.t1)(p)
+}, (0, Chunk116850.t1)(p)

@@ -1,20 +1,21 @@
 /** Chunk was on web.js **/
+/** chunk id: 749681, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.r(t), n.d(t, {
+require.r(exports), require.d(exports, {
   transitionToGlobalDiscovery: () => h
-}), n(65234), n(111804), n(490233), n(97749), n(388685), n(415506);
-var r = n(258971),
-  i = n(726115),
-  o = n(859921),
-  a = n(110560),
-  s = n(703656),
-  l = n(594174),
-  c = n(626135),
-  u = n(836768),
-  d = n(49898),
-  f = n(981631),
-  _ = n(979007),
-  p = n(128449);
+}), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js"), require("./388685.js"), require("./415506.js");
+var Chunk258971 = require("./258971.js"),
+  Chunk726115 = require("./726115.js"),
+  Chunk859921 = require("./859921.js"),
+  Chunk110560 = require("./110560.jsx"),
+  Chunk703656 = require("./703656.js"),
+  Chunk594174 = require("./594174.js"),
+  Chunk626135 = require("./626135.js"),
+  Chunk836768 = require("./836768.js"),
+  Chunk49898 = require("./49898.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk979007 = require("./979007.js"),
+  Chunk128449 = require("./128449.js");
 
 function h(e) {
   var t, n, g;
@@ -41,12 +42,12 @@ function h(e) {
             sessionId: t,
             guildId: null != n ? n : null,
             entrypoint: o,
-            trackedOpenedFromExternalEntrypoint: !1
+            trackedOpenedFromExternalEntrypoint: false
           }), c.default.track(f.rMx.APP_DIRECTORY_OPENED, {
-            source: null == o ? void 0 : o.name,
+            source: null == o ? true : o.name,
             session_id: t,
             guild_id: n,
-            user_id: null == (g = l.default.getCurrentUser()) ? void 0 : g.id
+            user_id: null == (g = l.default.getCurrentUser()) ? true : g.id
           }), e.newSessionState.restorePreviousView) return h(m())
       }
       if (null != e.applicationId) {
@@ -76,23 +77,23 @@ function h(e) {
 function m() {
   let {
     lastItem: e
-  } = r.aQ.getState();
-  if (null != e) switch (e.type) {
-    case r.m_.APPLICATION:
+  } = Chunk258971.aQ.getState();
+  if (null != module) switch (module.type) {
+    case Chunk258971.m_.APPLICATION:
       return {
-        tab: d.GlobalDiscoveryTab.APPS, applicationId: e.applicationId, section: e.section
+        tab: Chunk49898.GlobalDiscoveryTab.APPS, applicationId: module.applicationId, section: module.section
       };
-    case r.m_.CATEGORY:
+    case Chunk258971.m_.CATEGORY:
       return {
-        tab: d.GlobalDiscoveryTab.APPS, categoryId: Number(e.categoryId)
+        tab: Chunk49898.GlobalDiscoveryTab.APPS, categoryId: Number(module.categoryId)
       };
-    case r.m_.SEARCH:
+    case Chunk258971.m_.SEARCH:
       var t;
       return {
-        tab: d.GlobalDiscoveryTab.APPS, query: null != (t = e.query) ? t : "", page: e.page, categoryId: null != e.categoryId ? Number(e.categoryId) : void 0
+        tab: Chunk49898.GlobalDiscoveryTab.APPS, query: null != (t = module.query) ? exports : "", page: module.page, categoryId: null != module.categoryId ? Number(module.categoryId) : true
       }
   }
   return {
-    tab: d.GlobalDiscoveryTab.APPS
+    tab: Chunk49898.GlobalDiscoveryTab.APPS
   }
 }

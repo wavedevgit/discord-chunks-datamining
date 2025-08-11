@@ -1,21 +1,22 @@
 /** Chunk was on web.js **/
+/** chunk id: 397776, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => _
-}), n(388685);
-var r = n(147913),
-  i = n(592125),
-  o = n(944486),
-  a = n(116347),
-  s = n(237292),
-  l = n(118910);
+}), require("./388685.js");
+var Chunk147913 = require("./147913.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk944486 = require("./944486.js"),
+  Chunk116347 = require("./116347.js"),
+  Chunk237292 = require("./237292.js"),
+  Chunk118910 = require("./118910.jsx");
 
 function c(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -25,16 +26,16 @@ function u(e) {
   } = e;
   if (null == t || !(0, s.mG)({
       location: "channel_select"
-    }) || !(0, a.dg)()) return !1;
+    }) || !(0, a.dg)()) returnfalse;
   let n = i.Z.getChannel(t);
-  if (null == n || !n.isDM()) return !1;
+  if (null == n || !n.isDM()) returnfalse;
   let r = (0, a.uu)(t);
   return null != r && ((0, l.a)({
     warningId: r.id,
     warningType: r.type,
     senderId: n.getRecipientId(),
     channelId: t
-  }), !0)
+  }), true)
 }
 
 function d(e) {
@@ -43,20 +44,20 @@ function d(e) {
   } = e;
   if (!(0, s.mG)({
       location: "channel_updates"
-    }) || !(0, a.dg)()) return !1;
+    }) || !(0, a.dg)()) returnfalse;
   let n = o.Z.getCurrentlySelectedChannelId();
-  if (null == n) return !1;
+  if (null == n) returnfalse;
   let r = t.find(e => e.id === n);
-  if (null == r) return !1;
+  if (null == r) returnfalse;
   let i = (0, a.uu)(r.id);
   return !!(null != i && r.isDM()) && ((0, l.a)({
     warningId: i.id,
     warningType: i.type,
     senderId: r.getRecipientId(),
     channelId: r.id
-  }), !0)
+  }), true)
 }
-class f extends r.Z {
+class f extends Chunk147913.Z {
   constructor(...e) {
     super(...e), c(this, "actions", {
       CHANNEL_SELECT: u,

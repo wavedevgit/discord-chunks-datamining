@@ -1,16 +1,17 @@
 /** Chunk was on web.js **/
+/** chunk id: 681116, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-var r = n(512972),
-  i = n(359282),
-  o = n(198392),
-  a = n(621796),
-  s = n(659796),
-  l = n(172367),
-  c = n(505904),
-  u = n(596464),
-  d = n(992456),
-  f = n(352582),
-  _ = n(108665);
+var Chunk512972 = require("./512972.js"),
+  Chunk359282 = require("./359282.js"),
+  Chunk198392 = require("./198392.js"),
+  Chunk621796 = require("./621796.js"),
+  Chunk659796 = require("./659796.js"),
+  Chunk172367 = require("./172367.js"),
+  Chunk505904 = require("./505904.js"),
+  Chunk596464 = require("./596464.js"),
+  Chunk992456 = require("./992456.js"),
+  Chunk352582 = require("./352582.js"),
+  Chunk108665 = require("./108665.js");
 
 function p(e, t, n) {
   var r = a.replaceWithFragment(e.getCurrentContent(), e.getSelection(), t);
@@ -22,7 +23,7 @@ function h(e, t) {
     return t.getText() === e[n]
   })
 }
-e.exports = function(e, t) {
+module.exports = function(e, t) {
   t.preventDefault();
   var n = new o(t.clipboardData);
   if (!n.isRichText()) {
@@ -56,7 +57,7 @@ e.exports = function(e, t) {
     if (b && (E = _(b)), !e.props.stripPastedStyles) {
       var v = e.getClipboard();
       if (n.isRichText() && v) {
-        if (-1 !== y.indexOf(e.getEditorKey()) || 1 === E.length && 1 === v.size && v.first().getText() === b) return void e.update(p(e._latestEditorState, v))
+        if (false !== y.indexOf(e.getEditorKey()) || 1 === E.length && 1 === v.size && v.first().getText() === b) return void e.update(p(e._latestEditorState, v))
       } else if (v && n.types.includes("com.apple.webarchive") && !n.types.includes("text/html") && h(E, v)) return void e.update(p(e._latestEditorState, v));
       if (y) {
         var I = s.processHTML(y, e.props.blockRenderMap);

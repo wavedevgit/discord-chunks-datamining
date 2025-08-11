@@ -1,24 +1,25 @@
 /** Chunk was on 78223 **/
-r.d(n, {
+/** chunk id: 219778, original params: e,n,r (module,exports,require) **/
+require.d(exports, {
   n: () => u
 });
-var l = r(73800),
-  t = r(180650);
+var Chunk73800 = require("./73800.js"),
+  Chunk180650 = require("./180650.js");
 let o = {
-    [t.T.AESPA]: {
-      responsive: !0,
+    [Chunk180650.T.AESPA]: {
+      responsive: true,
       backgroundStyle: "linear-gradient(0deg,rgba(40, 8, 120, 1) 0%,rgba(13, 8, 111, 1) 15%,rgba(11, 2, 60, 1) 50%,rgba(6, 1, 21, 1) 100%)"
     },
-    [t.T.ORB]: {
-      responsive: !0,
+    [Chunk180650.T.ORB]: {
+      responsive: true,
       backgroundStyle: "linear-gradient(180deg, rgba(39, 30, 173, 0.3), transparent)",
-      hideSideShadow: !0
+      hideSideShadow: true
     }
   },
-  a = 12633 == r.j ? {
-    responsive: void 0,
-    backgroundStyle: void 0,
-    hideSideShadow: !1
+  a = 12633 == require.j ? {
+    responsive: true,
+    backgroundStyle: true,
+    hideSideShadow: false
   } : null,
   u = e => (0, l.useMemo)(() => {
     let n = null != e ? o[e] : null;
@@ -32,9 +33,9 @@ let o = {
           var l;
           l = r[n], n in e ? Object.defineProperty(e, n, {
             value: l,
-            enumerable: !0,
-            configurable: !0,
-            writable: !0
+            enumerable: true,
+            configurable: true,
+            writable: true
           }) : e[n] = l
         })
       }

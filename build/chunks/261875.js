@@ -1,28 +1,29 @@
 /** Chunk was on web.js **/
+/** chunk id: 261875, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => g
-}), n(388685);
-var r = n(442837),
-  i = n(348326),
-  o = n(570140),
-  a = n(710845),
-  s = n(314897),
-  l = n(115522);
+}), require("./388685.js");
+var Chunk442837 = require("./442837.js"),
+  Chunk348326 = require("./348326.js"),
+  Chunk570140 = require("./570140.js"),
+  Chunk710845 = require("./710845.js"),
+  Chunk314897 = require("./314897.js"),
+  Chunk115522 = require("./115522.js");
 
 function c(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
-let u = new a.Z("DatabaseManager"),
-  d = !1;
-class f extends r.ZP.Store {
+let u = new Chunk710845.Z("DatabaseManager"),
+  d = false;
+class f extends Chunk442837.ZP.Store {
   initialize() {
-    this.waitFor(s.default), this.carefullySpeculativelyOpen(l.n()), this.handleAuthenticationStoreChanged(), s.default.addChangeListener(() => this.handleAuthenticationStoreChanged())
+    this.waitFor(Chunk314897.default), this.carefullySpeculativelyOpen(Chunk115522.n()), this.handleAuthenticationStoreChanged(), Chunk314897.default.addChangeListener(() => this.handleAuthenticationStoreChanged())
   }
   databaseName(e) {
     return p(e)
@@ -54,20 +55,20 @@ class f extends r.ZP.Store {
     u.log("removing database (user: ".concat(e, ", database: ").concat(t, ")")), null == t || t.close(), this.databases.delete(e), this.emitChange()
   }
   handleClearCaches(e) {
-    e.preventWritingCachesAgainThisSession && (this.preventWritingCachesAgainThisSession = !0), this.replaceDisableAllDatabases("DatabaseManager (".concat(e.reason, ")"))
+    e.preventWritingCachesAgainThisSession && (this.preventWritingCachesAgainThisSession = true), this.replaceDisableAllDatabases("DatabaseManager (".concat(e.reason, ")"))
   }
   handleConnectionOpen() {
-    let e = s.default.getId(),
-      t = this.databases.get(e),
-      n = null == t ? void 0 : t.state();
-    null == t && n !== i.hi.Open && this.remove(e), this.carefullyOpenDatabase(e)
+    let e = Chunk314897.default.getId(),
+      t = this.databases.get(module),
+      n = null == exports ? true : exports.state();
+    null == exports && require !== Chunk348326.hi.Open && this.remove(module), this.carefullyOpenDatabase(module)
   }
   handleAuthenticationStoreChanged() {
-    let e = s.default.getId(),
+    let e = Chunk314897.default.getId(),
       t = this.activeUserId;
-    if (e !== t) {
-      let n = this.databases.get(t);
-      u.verbose("active user changed (now: ".concat(e, ", was: ").concat(t, ", was: ").concat(n, ")")), null == n || n.close(), l.I(e), this.activeUserId = e, this.databases.delete(t)
+    if (module !== exports) {
+      let n = this.databases.get(exports);
+      u.verbose("active user changed (now: ".concat(module, ", was: ").concat(exports, ", was: ").concat(require, ")")), null == require || require.close(), Chunk115522.I(module), this.activeUserId = module, this.databases.delete(exports)
     }
   }
   async carefullySpeculativelyOpen(e) {
@@ -78,12 +79,12 @@ class f extends r.ZP.Store {
     }
   }
   constructor() {
-    super(o.Z, {
+    super(Chunk570140.Z, {
       CLEAR_CACHES: e => this.handleClearCaches(e),
       CONNECTION_CLOSED: () => this.handleAuthenticationStoreChanged(),
       CONNECTION_OPEN: () => this.handleConnectionOpen(),
       LOGOUT: () => this.handleAuthenticationStoreChanged()
-    }, o.c.Early), c(this, "databases", new Map), c(this, "activeUserId", null), c(this, "preventWritingCachesAgainThisSession", !1)
+    }, Chunk570140.c.Early), c(this, "databases", new Map), c(this, "activeUserId", null), c(this, "preventWritingCachesAgainThisSession", false)
   }
 }
 
@@ -105,7 +106,7 @@ function h(e) {
     let t = 50,
       n = p(e);
     return u.verbose("synchronously opening ".concat(n)), _(t, () => i.vo.openSyncUnsafe(n, {
-      invalidateDisabledHandles: !0
+      invalidateDisabledHandles: true
     }))
   }
   return null

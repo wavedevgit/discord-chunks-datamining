@@ -1,17 +1,18 @@
 /** Chunk was on web.js **/
+/** chunk id: 767434, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => f,
   y: () => d
-}), n(314940);
-var r = n(73800),
-  i = n(278074),
-  o = n(442837),
-  a = n(594174),
-  s = n(74538),
-  l = n(125900),
-  c = n(710111),
-  u = n(388032),
+}), require("./314940.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk278074 = require("./278074.js"),
+  Chunk442837 = require("./442837.js"),
+  Chunk594174 = require("./594174.js"),
+  Chunk74538 = require("./74538.js"),
+  Chunk125900 = require("./125900.js"),
+  Chunk710111 = require("./710111.js"),
+  Chunk388032 = require("./388032.jsx"),
   d = function(e) {
     return e[e.JOIN_GUILD = 0] = "JOIN_GUILD", e[e.GET_NITRO = 1] = "GET_NITRO", e[e.NONE = 2] = "NONE", e
   }({});
@@ -22,7 +23,7 @@ function f(e, t, n, d) {
     p = (0, l.V2)({
       location: "useSoundmojiGuildInfoData"
     }),
-    h = e.guildId !== (null == t ? void 0 : t.guild_id);
+    h = e.guildId !== (null == t ? true : t.guild_id);
   return {
     buttonType: r.useMemo(() => f || !p ? 2 : p && !_ ? 1 : n || null == d ? 2 : 0, [f, _, p, n, d]),
     description: r.useMemo(() => {
@@ -35,37 +36,37 @@ function f(e, t, n, d) {
         canSendSoundmojis: p,
         isDefaultSound: f
       }).with({
-        canSendSoundmojis: !1
+        canSendSoundmojis: false
       }, () => u.intl.string(u.t.x2kyyM)).with({
-        isDefaultSound: !0
+        isDefaultSound: true
       }, () => u.intl.string(u.t.AabHen)).with({
-        isInGuild: !1,
-        isGuildDiscoverable: !1
+        isInGuild: false,
+        isGuildDiscoverable: false
       }, () => u.intl.string(u.t.MRYt09)).with({
-        hasSoundmojiPermissions: !0,
-        isInGuild: !0,
-        isSoundFromDifferentGuild: !1
+        hasSoundmojiPermissions: true,
+        isInGuild: true,
+        isSoundFromDifferentGuild: false
       }, () => u.intl.string(u.t.p17MQE)).with({
-        hasSoundmojiPermissions: !0,
-        isInGuild: !0,
-        isSoundFromDifferentGuild: !0
+        hasSoundmojiPermissions: true,
+        isInGuild: true,
+        isSoundFromDifferentGuild: true
       }, () => u.intl.string(u.t.Lkbm5u)).with({
-        hasSoundmojiPermissions: !0,
-        isInGuild: !1,
-        isGuildDiscoverable: !0
+        hasSoundmojiPermissions: true,
+        isInGuild: false,
+        isGuildDiscoverable: true
       }, () => u.intl.string(u.t.GTJmaW)).with({
-        hasSoundmojiPermissions: !1,
-        isInGuild: !0,
-        isSoundFromDifferentGuild: !1
+        hasSoundmojiPermissions: false,
+        isInGuild: true,
+        isSoundFromDifferentGuild: false
       }, () => u.intl.string(u.t["sj/imZ"])).with({
-        hasSoundmojiPermissions: !1,
-        isInGuild: !0,
-        isSoundFromDifferentGuild: !0,
-        canSendSoundmojis: !0
+        hasSoundmojiPermissions: false,
+        isInGuild: true,
+        isSoundFromDifferentGuild: true,
+        canSendSoundmojis: true
       }, () => u.intl.string(u.t["3Ru2//"])).with({
-        hasSoundmojiPermissions: !1,
-        isInGuild: !1,
-        isGuildDiscoverable: !0
+        hasSoundmojiPermissions: false,
+        isInGuild: false,
+        isGuildDiscoverable: true
       }, () => u.intl.string(u.t.qRkWhY)).exhaustive()
     }, [f, d, _, n, h, p])
   }

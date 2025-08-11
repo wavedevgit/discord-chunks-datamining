@@ -1,4 +1,5 @@
 /** Chunk was on web.js **/
+/** chunk id: 926028, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 
 function r(e, t) {
@@ -8,7 +9,7 @@ function r(e, t) {
 function i(e, t) {
   for (var n = 0; n < t.length; n++) {
     var r = t[n];
-    r.enumerable = r.enumerable || !1, r.configurable = !0, "value" in r && (r.writable = !0), Object.defineProperty(e, r.key, r)
+    r.enumerable = r.enumerable || false, r.configurable = true, "value" in r && (r.writable = true), Object.defineProperty(e, r.key, r)
   }
 }
 
@@ -19,26 +20,26 @@ function o(e, t, n) {
 function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
-n.d(t, {
+require.d(exports, {
   p: () => s
 });
 var s = function() {
   function e(t) {
-    r(this, e), a(this, "item", void 0), a(this, "config", void 0), this.config = t, this.item = {}, this.initializeExposedProperties()
+    r(this, e), a(this, "item", true), a(this, "config", true), this.config = t, this.item = {}, this.initializeExposedProperties()
   }
-  return o(e, [{
+  return o(module, [{
     key: "initializeExposedProperties",
     value: function() {
       var e = this;
       Object.keys(this.config.exposeProperties).forEach(function(t) {
         Object.defineProperty(e.item, t, {
-          configurable: !0,
-          enumerable: !0,
+          configurable: true,
+          enumerable: true,
           get: function() {
             return console.warn("Browser doesn't allow reading \"".concat(t, '" until the drop event.')), null
           }
@@ -54,8 +55,8 @@ var s = function() {
         Object.keys(this.config.exposeProperties).forEach(function(r) {
           n[r] = {
             value: t.config.exposeProperties[r](e, t.config.matchesTypes),
-            configurable: !0,
-            enumerable: !0
+            configurable: true,
+            enumerable: true
           }
         }), Object.defineProperties(this.item, n)
       }
@@ -63,7 +64,7 @@ var s = function() {
   }, {
     key: "canDrag",
     value: function() {
-      return !0
+      returntrue
     }
   }, {
     key: "beginDrag",
@@ -78,5 +79,5 @@ var s = function() {
   }, {
     key: "endDrag",
     value: function() {}
-  }]), e
+  }]), module
 }()

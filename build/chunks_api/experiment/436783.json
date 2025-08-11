@@ -1,1 +1,0 @@
-{"id":"436783","type":"experiment","data":{"kind":"user","id":"2024-07_bogo_countdown","label":"BOGO Countdown Experiment","defaultConfig":{"enabled":false},"treatments":[{"id":1,"label":"Disable BOGO countdown","config":{"enabled":false}}]},"fromModule":{"id":"web.js"}}

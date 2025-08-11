@@ -1,11 +1,12 @@
 /** Chunk was on web.js **/
+/** chunk id: 716600, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => o
 });
-var r = n(442837),
-  i = n(317381);
+var Chunk442837 = require("./442837.js"),
+  Chunk317381 = require("./317381.js");
 
 function o() {
-  return (0, r.e7)([i.ZP], () => i.ZP.getCurrentEmbeddedActivity())
+  return (0, Chunk442837.e7)([Chunk317381.ZP], () => Chunk317381.ZP.getCurrentEmbeddedActivity())
 }

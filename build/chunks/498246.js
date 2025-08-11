@@ -1,4 +1,5 @@
 /** Chunk was on web.js **/
+/** chunk id: 498246, original params: e (module,exports,re quire) **/
 "use strict";
 var t = "Function.prototype.bind called on incompatible ",
   n = Object.prototype.toString,
@@ -17,7 +18,7 @@ var t = "Function.prototype.bind called on incompatible ",
     for (var n = "", r = 0; r < e.length; r += 1) n += e[r], r + 1 < e.length && (n += t);
     return n
   };
-e.exports = function(e) {
+module.exports = function(e) {
   var l, c = this;
   if ("function" != typeof c || n.apply(c) !== i) throw TypeError(t + c);
   for (var u = a(arguments, 1), d = function() {

@@ -1,2 +1,0 @@
-/** Chunk was on 35347 **/
-e.exports = JSON.parse('{"MkgMBw":"Geh online, um Aktivit\xe4ten zu teilen","Poezn5":"Geh Online","qKDqen":"Geh online, um Aktivit\xe4ten zu teilen","jfDsyM":"Begrenztes Teilen","TvK8dH":[[1,"numTruncated"]," Mehr anzeigen"],"a3AofX":"Setzt Status auf „Online“"}')

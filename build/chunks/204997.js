@@ -1,5 +1,6 @@
 /** Chunk was on 1272 **/
-e.exports = {
+/** chunk id: 204997, original params: e,t,n (module,exports,require) **/
+module.exports = {
   container: "container__60f82",
   fadeIn: "fadeIn__60f82",
   glow: "glow__60f82",

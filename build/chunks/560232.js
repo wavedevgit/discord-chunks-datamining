@@ -1,5 +1,6 @@
 /** Chunk was on 1272 **/
-n.r(e.exports = {
+/** chunk id: 560232, original params: e,t,n (module,exports,require) **/
+require.r(module.exports = {
   "heading-sm/normal": "heading-sm/normal__4ed1a",
   fontScaling: "fontScaling__4ed1a",
   "heading-sm/medium": "heading-sm/medium__4ed1a",

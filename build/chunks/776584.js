@@ -1,5 +1,6 @@
 /** Chunk was on 49152 **/
-e.exports = {
+/** chunk id: 776584, original params: e,t,n (module,exports,require) **/
+module.exports = {
   container: "container_fb64c9",
   chat: "chat_fb64c9",
   messagesWrapper: "messagesWrapper_fb64c9",

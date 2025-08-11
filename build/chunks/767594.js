@@ -1,5 +1,6 @@
 /** Chunk was on 99133 **/
-e.r(A.exports = {
+/** chunk id: 767594, original params: A,t,e (module,exports,require) **/
+require.r(module.exports = {
   premiumCards: "premiumCards__6df1a",
   premiumCardHover: "premiumCardHover__6df1a",
   tier2ApplicationHomeSubheader: "tier2ApplicationHomeSubheader__6df1a",

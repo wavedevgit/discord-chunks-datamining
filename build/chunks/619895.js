@@ -1,24 +1,25 @@
 /** Chunk was on web.js **/
+/** chunk id: 619895, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Q: () => h,
   h: () => m
-}), n(35282);
-var r = n(73800),
-  i = n(892814),
-  o = n(442837),
-  a = n(895924),
-  s = n(581364),
-  l = n(823379),
-  c = n(399654),
-  u = n(844439);
+}), require("./35282.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk892814 = require("./892814.js"),
+  Chunk442837 = require("./442837.js"),
+  Chunk895924 = require("./895924.js"),
+  Chunk581364 = require("./581364.js"),
+  Chunk823379 = require("./823379.js"),
+  Chunk399654 = require("./399654.js"),
+  Chunk844439 = require("./844439.js");
 
 function d(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -82,8 +83,8 @@ function m(e) {
   return {
     fetchState: n,
     imageRecCommandContexts: r.useMemo(() => {
-      let e = i.length > 0 ? i[0].items : void 0;
-      if (void 0 === e) return [];
+      let e = i.length > 0 ? i[0].items : true;
+      if (true === e) return [];
       let t = {};
       return e.forEach(e => {
         var n;
@@ -95,7 +96,7 @@ function m(e) {
         var n, r, i, o, l, c, u, d, _, h, m, g;
         let E, b, y = e.find(e => {
           var n;
-          return null != (E = null == (n = e.commands) ? void 0 : n.find(e => e.id === t))
+          return null != (E = null == (n = e.commands) ? true : n.find(e => e.id === t))
         });
         if (null == y) return null;
         let {
@@ -107,9 +108,9 @@ function m(e) {
             command: E,
             applicationId: O.id
           }),
-          I = null == (i = y.command_metadata) || null == (r = i[t]) || null == (n = r.overrideSendCommandInfo) ? void 0 : n.commandId;
+          I = null == (i = y.command_metadata) || null == (r = i[t]) || null == (n = r.overrideSendCommandInfo) ? true : n.commandId;
         if (null != I) {
-          let e = null != I ? null == (m = y.commands) ? void 0 : m.find(e => e.id === I) : void 0;
+          let e = null != I ? null == (m = y.commands) ? true : m.find(e => e.id === I) : true;
           null != e && (b = (0, s.Z8)({
             rootCommand: e,
             command: e,
@@ -120,15 +121,15 @@ function m(e) {
           command: p(f({}, v), {
             displayName: v.displayName.split(/[_ ]/).map(e => e.charAt(0).toUpperCase() + e.slice(1)).join(" ")
           }),
-          imageOption: null == (l = y.command_metadata) || null == (o = l[t]) ? void 0 : o.imageOption,
+          imageOption: null == (l = y.command_metadata) || null == (o = l[t]) ? true : o.imageOption,
           overrideSendCommand: b,
-          overrideSendCommandInfo: null == (u = y.command_metadata) || null == (c = u[t]) ? void 0 : c.overrideSendCommandInfo,
-          onlyAllowEdit: null == (_ = y.command_metadata) || null == (d = _[t]) ? void 0 : d.onlyAllowEdit,
+          overrideSendCommandInfo: null == (u = y.command_metadata) || null == (c = u[t]) ? true : c.overrideSendCommandInfo,
+          onlyAllowEdit: null == (_ = y.command_metadata) || null == (d = _[t]) ? true : d.onlyAllowEdit,
           section: {
             type: a.Qi.APPLICATION,
             id: O.id,
             icon: O.icon,
-            name: null != (g = null == O || null == (h = O.bot) ? void 0 : h.username) ? g : O.name,
+            name: null != (g = null == O || null == (h = O.bot) ? true : h.username) ? g : O.name,
             application: O
           }
         }
@@ -143,7 +144,7 @@ function g(e) {
   } = e, n = i.I.CONTEXTUAL_IMAGE, a = r.useMemo(() => ({
     channelId: t,
     location: n,
-    withCommands: !0
+    withCommands: true
   }), [t, n]);
   r.useEffect(() => {
     (0, c.a)(a)

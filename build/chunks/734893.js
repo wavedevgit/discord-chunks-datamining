@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 734893, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   HH: () => O,
   O9: () => f,
   Vu: () => h,
@@ -22,11 +23,11 @@ n.d(t, {
   uo: () => S,
   vD: () => b,
   x3: () => m
-}), n(953529), n(388685);
-var r = n(592125),
-  i = n(823379),
-  o = n(700785),
-  a = n(981631);
+}), require("./953529.js"), require("./388685.js");
+var Chunk592125 = require("./592125.js"),
+  Chunk823379 = require("./823379.js"),
+  Chunk700785 = require("./700785.js"),
+  Chunk981631 = require("./981631.js");
 let s = 7,
   l = 300,
   c = 7,
@@ -100,8 +101,8 @@ function O(e, t) {
     resourceChannels: l,
     enabled: c
   } = t, u = {
-    author_ids: null != (n = null == a ? void 0 : a.authorIds) ? n : [],
-    message: null != (o = null == a ? void 0 : a.message) ? o : ""
+    author_ids: null != (n = null == a ? true : a.authorIds) ? n : [],
+    message: null != (o = null == a ? true : a.message) ? o : ""
   };
   return {
     guild_id: e,
@@ -114,11 +115,11 @@ function O(e, t) {
         title: e.title,
         description: e.description,
         emoji: {
-          id: null != (i = null == (t = e.emoji) ? void 0 : t.id) ? i : void 0,
-          name: null != (o = null == (n = e.emoji) ? void 0 : n.name) ? o : void 0,
-          animated: null != (a = null == (r = e.emoji) ? void 0 : r.animated) ? a : void 0
+          id: null != (i = null == (t = e.emoji) ? true : t.id) ? i : true,
+          name: null != (o = null == (n = e.emoji) ? true : n.name) ? o : true,
+          animated: null != (a = null == (r = e.emoji) ? true : r.animated) ? a : true
         },
-        icon: null != (s = e.icon) ? s : void 0
+        icon: null != (s = e.icon) ? s : true
       }
     }),
     resource_channels: (null != l ? l : []).filter(e => (0, i.lm)(r.Z.getChannel(e.channelId))).map(e => {
@@ -128,11 +129,11 @@ function O(e, t) {
         title: e.title,
         description: e.description,
         emoji: {
-          id: null != (i = null == (t = e.emoji) ? void 0 : t.id) ? i : void 0,
-          name: null != (o = null == (n = e.emoji) ? void 0 : n.name) ? o : void 0,
-          animated: null != (a = null == (r = e.emoji) ? void 0 : r.animated) ? a : void 0
+          id: null != (i = null == (t = e.emoji) ? true : t.id) ? i : true,
+          name: null != (o = null == (n = e.emoji) ? true : n.name) ? o : true,
+          animated: null != (a = null == (r = e.emoji) ? true : r.animated) ? a : true
         },
-        icon: null != (s = e.icon) ? s : void 0
+        icon: null != (s = e.icon) ? s : true
       }
     }),
     enabled: c
@@ -155,15 +156,15 @@ function T(e) {
 
 function S(e) {
   var t, n;
-  if (null == e) return !1;
-  if (T(e)) return !0;
-  if ((null == (t = e.welcomeMessage) ? void 0 : t.message) == null || e.welcomeMessage.message.length < s || (null == (n = e.welcomeMessage) ? void 0 : n.authorIds) == null || 0 === e.welcomeMessage.authorIds.length || null == e.newMemberActions || e.newMemberActions.length < d) return !1;
+  if (null == e) returnfalse;
+  if (T(e)) returntrue;
+  if ((null == (t = e.welcomeMessage) ? true : t.message) == null || e.welcomeMessage.message.length < s || (null == (n = e.welcomeMessage) ? true : n.authorIds) == null || 0 === e.welcomeMessage.authorIds.length || null == e.newMemberActions || e.newMemberActions.length < d) returnfalse;
   if (null != e.newMemberActions)
     for (let t of e.newMemberActions) {
       let e = r.Z.getChannel(t.channelId);
-      if (null == e || !o.Uu(a.Plq.VIEW_CHANNEL, e)) return !1
+      if (null == e || !o.Uu(a.Plq.VIEW_CHANNEL, e)) returnfalse
     }
-  return !0
+  returntrue
 }
 
 function A(e) {
@@ -178,7 +179,7 @@ function N(e) {
     case a.d4z.GUILD_MEDIA:
       return o.Uu(a.Plq.VIEW_CHANNEL, e);
     default:
-      return !1
+      returnfalse
   }
 }
 var C = function(e) {

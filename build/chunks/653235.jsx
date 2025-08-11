@@ -1,0 +1,169 @@
+/** Chunk was on web.js **/
+/** chunk id: 653235, original params: e,t,n (module,exports,re quire) **/
+"use strict";
+require.d(exports, {
+  Z: () => w
+}), require("./388685.js");
+var Chunk255367 = require("./255367.js"),
+  Chunk73800 = require("./73800.js"),
+  Chunk120356 = require("./120356.js"),
+  a = require.n(Chunk120356),
+  Chunk392711 = require("./392711.js"),
+  l = require.n(Chunk392711),
+  Chunk442837 = require("./442837.js"),
+  Chunk377108 = require("./377108.js"),
+  Chunk692547 = require("./692547.js"),
+  Chunk481060 = require("./481060.js"),
+  Chunk68405 = require("./68405.js"),
+  Chunk527429 = require("./527429.js"),
+  Chunk656733 = require("./656733.js"),
+  Chunk251625 = require("./251625.js"),
+  Chunk985375 = require("./985375.js"),
+  Chunk132748 = require("./132748.js"),
+  Chunk353903 = require("./353903.jsx"),
+  Chunk215016 = require("./215016.jsx"),
+  Chunk981631 = require("./981631.js"),
+  Chunk388032 = require("./388032.jsx"),
+  Chunk49633 = require("./49633.js");
+
+function T(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+
+function S(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      T(e, t, n[t])
+    })
+  }
+  return e
+}
+
+function A(e, t) {
+  var n = Object.keys(e);
+  if (Object.getOwnPropertySymbols) {
+    var r = Object.getOwnPropertySymbols(e);
+    t && (r = r.filter(function(t) {
+      return Object.getOwnPropertyDescriptor(e, t).enumerable
+    })), n.push.apply(n, r)
+  }
+  return n
+}
+
+function N(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : A(Object(t)).forEach(function(n) {
+    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+  }), e
+}
+let C = (e, t) => <b.G0 columns={e} />;
+
+function R(e) {
+  var t;
+  let n = l().sample(l().values(e));
+  return {
+    type: O.wI2.FAVORITES,
+    name: v.intl.string(v.t.y3LQCA),
+    icon: f.r7p,
+    src: null != n ? n.src : "https://media.giphy.com/media/1TOSaJsWtnhe0/giphy.gif",
+    format: null != (t = null == n ? true : n.format) ? t : u.EO.IMAGE
+  }
+}
+class P extends Chunk73800.PureComponent {
+  componentDidMount() {
+    0 === this.props.trendingCategories.length && (0, Chunk68405.Tg)()
+  }
+  getData() {
+    return this.memoizedData(this.state.favoritesTile, this.props.trendingCategories, this.props.hideFavoritesTile)
+  }
+  renderCategoryExtras(e) {
+    let {
+      name: t,
+      type: n
+    } = e;
+    return <i.Fragment>{<div className={n === O.wI2.FAVORITES ? I.categoryFadeBlurple : I.categoryFade} />}{<div className={I.categoryText}>{n === O.wI2.TRENDING_GIFS ? <f.IeX className={I.categoryIcon} color={"currentColor"} /> : null}{<span className={I.categoryName}>{t}</span>}</div>}</i.Fragment>
+  }
+  render() {
+    return <Chunk527429.Z getItemGrid={this.getItemGrid} getCoordsMap={this.getCoordsMap} onFocus={this.handleFocus} onSelect={this.handleSelect}><Chunk132748.Z desiredItemWidth={200} maxColumns={6}>{this.renderContent}</Chunk132748.Z></Chunk527429.Z>
+  }
+  constructor(...e) {
+    super(...e), T(this, "_masonryRef", i.createRef()), T(this, "state", {
+      favoritesTile: R(this.props.favorites),
+      selectedIndex: {
+        column: 0,
+        row: 0
+      },
+      focusedId: null
+    }), T(this, "handleFocus", e => {
+      let {
+        current: t
+      } = this._masonryRef;
+      if (null == t) return;
+      let n = t.getCoordsMap()[e];
+      null != n && (t.scrollIntoViewRect({
+        start: n.top - 10,
+        end: n.top + n.height + 10
+      }), this.setState({
+        focusedId: e
+      }))
+    }), T(this, "handleSelect", e => {
+      let {
+        onSelectItem: t
+      } = this.props, n = this.getData().find(t => t.name === e);
+      null != n && null != t && t(n.type, n.name)
+    }), T(this, "getItemKey", (e, t) => {
+      if (e > 0) return null;
+      let n = this.getData()[t];
+      return null != n ? n.name : null
+    }), T(this, "memoizedData", (0, m.oH)(function(e, t) {
+      let n = arguments.length > 2 && true !== arguments[2] && arguments[2];
+      return n ? [...t] : [e, ...t]
+    })), T(this, "renderItem", (e, t, n, i) => {
+      if (e > 0) return null;
+      let o = this.getData()[t];
+      if (null == o) return;
+      let {
+        onSelectItem: a,
+        imagePool: s,
+        videoPool: l
+      } = this.props, {
+        focusedId: c
+      } = this.state;
+      return <y.iR format={o.format} color={d.Z.unsafe_rawColors.PRIMARY_800.css} src={o.src} item={o} index={t} coords={n} onClick={() => a(o.type, o.name)} renderExtras={this.renderCategoryExtras} focused={o.name === c} imagePool={s} videoPool={l} />
+    }), T(this, "renderContent", (e, t, n) => {
+      let {
+        className: i,
+        trendingCategories: o
+      } = this.props;
+      return 0 === o.length ? <b.u$ columns={e} width={t} renderColumn={C} /> : <f.GMG ref={this._masonryRef} fade={true} className={a()(I.container, i)} itemGutter={12} getItemKey={this.getItemKey} columns={e} getItemHeight={() => 110} renderItem={this.renderItem} sections={[this.getData().length]} chunkSize={50} />
+    }), T(this, "getItemGrid", () => {
+      let {
+        current: e
+      } = this._masonryRef;
+      return null != e ? e.getItemGrid() : []
+    }), T(this, "getCoordsMap", () => {
+      let {
+        current: e
+      } = this._masonryRef;
+      return null != e ? e.getCoordsMap() : {}
+    })
+  }
+}
+
+function w(e) {
+  let t = (0, c.e7)([h.Z], () => h.Z.getTrendingCategories()),
+    n = (0, g.gG)(),
+    i = (0, y.PY)();
+  return <P{...N(S({}, e, i), {
+    trendingCategories: t,
+    favorites: n
+  })} />
+}

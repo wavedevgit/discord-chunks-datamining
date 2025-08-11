@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 698323, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   container: "container__83f66",
   themeResponsiveContainer: "themeResponsiveContainer__83f66",
   text: "text__83f66",

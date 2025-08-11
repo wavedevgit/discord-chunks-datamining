@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 852747, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   popover: "popover_f84418",
   popoverReactionHoverBar: "popoverReactionHoverBar_f84418",
   hoverBarButton: "hoverBarButton_f84418",

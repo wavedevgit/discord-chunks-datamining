@@ -1,4 +1,5 @@
 /** Chunk was on web.js **/
+/** chunk id: 471875, original params: e (module,exports,re quire) **/
 let t = "[A-Za-z$_][0-9A-Za-z$_]*",
   n = ["as", "in", "of", "if", "for", "while", "finally", "var", "new", "function", "do", "return", "void", "else", "break", "catch", "instanceof", "with", "throw", "case", "default", "try", "switch", "continue", "typeof", "delete", "let", "yield", "const", "class", "debugger", "async", "await", "static", "import", "from", "export", "extends", "using"],
   r = ["true", "false", "null", "undefined", "NaN", "Infinity"],
@@ -14,7 +15,7 @@ function c(e) {
       after: t
     }) => {
       let n = "</" + e[0].slice(1);
-      return -1 !== e.input.indexOf(n, t)
+      return false !== e.input.indexOf(n, t)
     },
     d = t,
     f = "<>",
@@ -73,7 +74,7 @@ function c(e) {
       end: "",
       starts: {
         end: "`",
-        returnEnd: !1,
+        returnEnd: false,
         contains: [e.BACKSLASH_ESCAPE, I],
         subLanguage: "xml"
       }
@@ -83,7 +84,7 @@ function c(e) {
       end: "",
       starts: {
         end: "`",
-        returnEnd: !1,
+        returnEnd: false,
         contains: [e.BACKSLASH_ESCAPE, I],
         subLanguage: "css"
       }
@@ -93,7 +94,7 @@ function c(e) {
       end: "",
       starts: {
         end: "`",
-        returnEnd: !1,
+        returnEnd: false,
         contains: [e.BACKSLASH_ESCAPE, I],
         subLanguage: "graphql"
       }
@@ -118,13 +119,13 @@ function c(e) {
             className: "type",
             begin: "\\{",
             end: "\\}",
-            excludeEnd: !0,
-            excludeBegin: !0,
+            excludeEnd: true,
+            excludeBegin: true,
             relevance: 0
           }, {
             className: "variable",
             begin: d + "(?=\\s*(-)|$)",
-            endsParent: !0,
+            endsParent: true,
             relevance: 0
           }, {
             begin: /(?=[^\n])\s/,
@@ -153,8 +154,8 @@ function c(e) {
       className: "params",
       begin: /(\s*)\(/,
       end: /\)/,
-      excludeBegin: !0,
-      excludeEnd: !0,
+      excludeBegin: true,
+      excludeEnd: true,
       keywords: E,
       contains: w
     },
@@ -220,7 +221,7 @@ function c(e) {
     B = {
       begin: c.concat(/\./, c.lookahead(c.concat(d, /(?![0-9A-Za-z$_(])/))),
       end: d,
-      excludeBegin: !0,
+      excludeBegin: true,
       keywords: "prototype",
       className: "property",
       relevance: 0
@@ -271,7 +272,7 @@ function c(e) {
       contains: [C, e.REGEXP_MODE, {
         className: "function",
         begin: F,
-        returnBegin: !0,
+        returnBegin: true,
         end: "\\s*=>",
         contains: [{
           className: "params",
@@ -281,12 +282,12 @@ function c(e) {
           }, {
             className: null,
             begin: /\(\s*\)/,
-            skip: !0
+            skip: true
           }, {
             begin: /(\s*)\(/,
             end: /\)/,
-            excludeBegin: !0,
-            excludeEnd: !0,
+            excludeBegin: true,
+            excludeEnd: true,
             keywords: E,
             contains: w
           }]
@@ -312,7 +313,7 @@ function c(e) {
         contains: [{
           begin: h,
           end: m,
-          skip: !0,
+          skip: true,
           contains: ["self"]
         }]
       }]
@@ -320,7 +321,7 @@ function c(e) {
       beginKeywords: "while if switch catch for"
     }, {
       begin: "\\b(?!function)" + e.UNDERSCORE_IDENT_RE + "\\([^()]*(\\([^()]*(\\([^()]*\\)[^()]*)*\\)[^()]*)*\\)\\s*\\{",
-      returnBegin: !0,
+      returnBegin: true,
       label: "func.def",
       contains: [D, e.inherit(e.TITLE_MODE, {
         begin: d,
@@ -343,7 +344,7 @@ function c(e) {
     }]
   }
 }
-e.exports = function(e) {
+module.exports = function(e) {
   let i = e.regex,
     o = c(e),
     a = t,
@@ -358,7 +359,7 @@ e.exports = function(e) {
     f = {
       beginKeywords: "interface",
       end: /\{/,
-      excludeEnd: !0,
+      excludeEnd: true,
       keywords: {
         keyword: "interface extends",
         built_in: u
@@ -384,7 +385,7 @@ e.exports = function(e) {
     },
     g = (e, t, n) => {
       let r = e.contains.findIndex(e => e.label === t);
-      if (-1 === r) throw Error("can not find mode to replace");
+      if (false === r) throw Error("can not find mode to replace");
       e.contains.splice(r, 1, n)
     };
   Object.assign(o.keywords, h), o.exports.PARAMS_CONTAINS.push(m);

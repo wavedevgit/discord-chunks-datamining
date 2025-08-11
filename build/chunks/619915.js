@@ -1,26 +1,27 @@
 /** Chunk was on web.js **/
+/** chunk id: 619915, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   QN: () => m,
   ZP: () => h,
   gb: () => g,
   uF: () => E
-}), n(388685), n(539854);
-var r = n(73800),
-  i = n(442837),
-  o = n(835473),
-  a = n(158776),
-  s = n(594174),
-  l = n(823379),
-  c = n(317381),
-  u = n(16609);
+}), require("./388685.js"), require("./539854.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk442837 = require("./442837.js"),
+  Chunk835473 = require("./835473.js"),
+  Chunk158776 = require("./158776.js"),
+  Chunk594174 = require("./594174.js"),
+  Chunk823379 = require("./823379.js"),
+  Chunk317381 = require("./317381.js"),
+  Chunk16609 = require("./16609.js");
 
 function d(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -112,11 +113,11 @@ function E(e) {
     let t = new Map;
     return e.forEach(e => {
       var n;
-      let r = a.Z.findActivity(null == e ? void 0 : e.embeddedActivity.userIds.values().next().value, t => {
+      let r = a.Z.findActivity(null == e ? true : e.embeddedActivity.userIds.values().next().value, t => {
         var n;
-        return t.application_id === (null == e || null == (n = e.application) ? void 0 : n.id)
+        return t.application_id === (null == e || null == (n = e.application) ? true : n.id)
       });
-      t.set(null == e || null == (n = e.application) ? void 0 : n.id, p(f({}, e), {
+      t.set(null == e || null == (n = e.application) ? true : n.id, p(f({}, e), {
         presenceActivity: r
       }))
     }), t

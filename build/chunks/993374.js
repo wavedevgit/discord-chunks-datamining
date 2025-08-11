@@ -1,22 +1,23 @@
 /** Chunk was on web.js **/
+/** chunk id: 993374, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   I: () => d,
   j: () => m
-}), n(388685), n(781311);
-var r = n(498607),
-  i = n.n(r),
-  o = n(715903),
-  a = n(69882),
-  s = n(709054),
-  l = n(733026);
+}), require("./388685.js"), require("./781311.js");
+var Chunk498607 = require("./498607.js"),
+  i = require.n(Chunk498607),
+  Chunk715903 = require("./715903.js"),
+  Chunk69882 = require("./69882.js"),
+  Chunk709054 = require("./709054.js"),
+  Chunk733026 = require("./733026.js");
 
 function c(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -36,10 +37,10 @@ function u(e) {
 function d() {
   return {
     query: "",
-    requireUnusualDmActivity: !1,
-    requireCommunicationDisabled: !1,
-    requireUnusualAccountActivity: !1,
-    requireUsernameQuarantined: !1,
+    requireUnusualDmActivity: false,
+    requireCommunicationDisabled: false,
+    requireUnusualAccountActivity: false,
+    requireUsernameQuarantined: false,
     selectedRoleIds: new Set,
     selectedJoinDateOption: {
       optionId: 0,
@@ -51,9 +52,9 @@ function d() {
       afterDate: null,
       beforeDate: null
     },
-    selectedJoinSourceType: void 0,
-    selectedSourceInviteCode: void 0,
-    selectedSort: void 0
+    selectedJoinSourceType: true,
+    selectedSourceInviteCode: true,
+    selectedSort: true
   }
 }
 let f = Object.freeze(d());
@@ -63,22 +64,22 @@ function _(e, t) {
 }
 
 function p(e, t) {
-  if ("" === t.trim()) return !1;
+  if ("" === t.trim()) returnfalse;
   let [n, r] = (0, l.C)(t);
   for (let t of r)
-    if (e.userId === t) return !0;
+    if (e.userId === t) returntrue;
   for (let t of n)
-    if (_(e.nick, t)) return !0;
-  if (null == e.user) return !1;
+    if (_(e.nick, t)) returntrue;
+  if (null == e.user) returnfalse;
   let {
     globalName: i,
     username: o
   } = e.user;
   for (let e of n)
-    if (_(o, e)) return !0;
+    if (_(o, e)) returntrue;
   for (let e of n)
-    if (_(i, e)) return !0;
-  return !1
+    if (_(i, e)) returntrue;
+  returnfalse
 }
 
 function h(e, t) {
@@ -89,13 +90,13 @@ class m {
     return this._searchState.query.trim().length > 0
   }
   reset() {
-    this._searchState = d(), this.hasDefaultQuery = !0
+    this._searchState = d(), this.hasDefaultQuery = true
   }
   updateSearchState(e) {
-    return this._searchState = u({}, this._searchState, e), this.hasDefaultQuery = i()(this._searchState, f), !0
+    return this._searchState = u({}, this._searchState, e), this.hasDefaultQuery = i()(this._searchState, f), true
   }
   resetSearchState() {
-    return !this.hasDefaultQuery && (this._searchState = d(), this.hasDefaultQuery = !0, !0)
+    return !this.hasDefaultQuery && (this._searchState = d(), this.hasDefaultQuery = true, true)
   }
   getSearchState() {
     return this._searchState
@@ -116,6 +117,6 @@ class m {
     return !(t.length > 0 && !p(e, t) || c.size > 0 && !h(e, c) || null != u.afterDate && e.joinedAtTimestamp < u.afterDate || null != u.beforeDate && e.joinedAtTimestamp > u.beforeDate || null != d.afterDate && s.default.extractTimestamp(e.userId) < d.afterDate || null != d.beforeDate && s.default.extractTimestamp(e.userId) > d.beforeDate) && (null == f || e.sourceInviteCode === f) && (null == _ || e.joinSourceType === _) && (!n && !r && !i && !l || !!(n && e.hasUnusualDmActivity || r && (0, a.b)(e) || i && e.hasUnusualAccountActivity || l && (0, o.EY)(e)))
   }
   constructor(e) {
-    c(this, "guildId", void 0), c(this, "_searchState", void 0), c(this, "hasDefaultQuery", void 0), this.guildId = e, this._searchState = d(), this.hasDefaultQuery = !0
+    c(this, "guildId", true), c(this, "_searchState", true), c(this, "hasDefaultQuery", true), this.guildId = e, this._searchState = d(), this.hasDefaultQuery = true
   }
 }

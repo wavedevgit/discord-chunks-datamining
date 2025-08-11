@@ -1,5 +1,6 @@
 /** Chunk was on 46746 **/
-e.exports = {
+/** chunk id: 304118, original params: e,t,n (module,exports,require) **/
+module.exports = {
   avatar: "avatar__248f3",
   userListOverflow: "userListOverflow__248f3",
   voiceUserList: "voiceUserList__248f3",

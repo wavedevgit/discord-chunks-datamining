@@ -1,5 +1,6 @@
 /** Chunk was on web.js **/
-e.exports = function(e) {
+/** chunk id: 193056, original params: e (module,exports,re quire) **/
+module.exports = function(e) {
   let t = e.regex,
     n = "HTTP/([32]|1\\.[01])",
     r = /[A-Za-z][A-Za-z0-9-]*/,
@@ -22,7 +23,7 @@ e.exports = function(e) {
       begin: "\\n\\n",
       starts: {
         subLanguage: [],
-        endsWithParent: !0
+        endsWithParent: true
       }
     }];
   return {
@@ -51,8 +52,8 @@ e.exports = function(e) {
         className: "string",
         begin: " ",
         end: " ",
-        excludeBegin: !0,
-        excludeEnd: !0
+        excludeBegin: true,
+        excludeEnd: true
       }, {
         className: "meta",
         begin: n

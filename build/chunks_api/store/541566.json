@@ -1,1 +1,0 @@
-{"id":"541566","type":"store","data":{"name":"PremiumGuildGracePeriodNoticeStore","functions":[{"name":"initialize","args":["e"]},{"name":"getLastDismissedGracePeriodForGuild","args":["e"]},{"name":"isVisible","args":["e"]},{"name":"getState","args":[]}],"events":["GUILD_APPLIED_BOOSTS_FETCH_SUCCESS","BOOSTED_GUILD_GRACE_PERIOD_NOTICE_DISMISS"]},"fromModule":{"id":"1272"}}

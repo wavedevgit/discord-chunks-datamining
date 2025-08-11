@@ -1,13 +1,14 @@
 /** Chunk was on web.js **/
+/** chunk id: 587218, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-var r = n(127849),
+var Chunk127849 = require("./127849.js"),
   i = Object.defineProperty;
-e.exports = function(e, t) {
+module.exports = function(e, t) {
   try {
     i(r, e, {
       value: t,
-      configurable: !0,
-      writable: !0
+      configurable: true,
+      writable: true
     })
   } catch (n) {
     r[e] = t

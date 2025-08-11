@@ -1,28 +1,29 @@
 /** Chunk was on 72762 **/
-n.d(t, {
+/** chunk id: 577275, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => l
-}), n(388685);
-var r = n(73800),
-  i = n(586739);
+}), require("./388685.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk586739 = require("./586739.js");
 let l = function() {
-  let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {},
+  let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {},
     {
       refreshOnDepChange: t
-    } = e,
-    [n, l] = r.useState([]),
-    [s, o] = r.useState(!0),
+    } = module,
+    [n, l] = Chunk73800.useState([]),
+    [s, o] = Chunk73800.useState(true),
     a = async () => {
-      o(!0);
+      o(true);
       try {
-        let e = await i.Z.fetchTeams(!0);
-        l(e.body)
+        let e = await Chunk586739.Z.fetchTeams(true);
+        l(module.body)
       } catch (e) {}
-      o(!1)
-    }, c = r.useRef(!0);
-  return r.useEffect(() => {
-    (c.current || t) && (c.current = !1, a())
-  }, [t]), {
-    teams: n,
+      o(false)
+    }, c = Chunk73800.useRef(true);
+  return Chunk73800.useEffect(() => {
+    (c.current || exports) && (c.current = false, a())
+  }, [exports]), {
+    teams: require,
     loading: s,
     refresh: a
   }

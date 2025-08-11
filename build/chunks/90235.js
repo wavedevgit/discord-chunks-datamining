@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 90235, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   tooltipBodyContainer: "tooltipBodyContainer__7d7fe",
   tooltipPremiumFooterContainer: "tooltipPremiumFooterContainer__7d7fe",
   tooltipRemovePadding: "tooltipRemovePadding__7d7fe",

@@ -1,6 +1,7 @@
 /** Chunk was on 67244 **/
+/** chunk id: 869431, original params: e,t (module,exports,require) **/
 "use strict";
-t.__esModule = !0, t.default = {
+exports.__esModule = true, exports.default = {
   scheme: "railscasts",
   author: "ryan bates (http://railscasts.com)",
   base00: "#2b2b2b",
@@ -19,4 +20,4 @@ t.__esModule = !0, t.default = {
   base0D: "#6d9cbe",
   base0E: "#b6b3eb",
   base0F: "#bc9458"
-}, e.exports = t.default
+}, module.exports = exports.default

@@ -1,26 +1,27 @@
 /** Chunk was on 49152 **/
-n.d(t, {
+/** chunk id: 868671, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   H: () => O,
   T: () => j
-}), n(388685);
-var r = n(73800),
-  i = n(442837),
-  l = n(570140),
-  a = n(439170),
-  s = n(592125),
-  o = n(430824),
-  c = n(451478),
-  u = n(626135),
-  d = n(162461),
-  h = n(71585),
-  p = n(34586),
-  f = n(69259),
-  g = n(590026),
-  m = n(178762),
-  b = n(206583),
-  y = n(809017),
-  x = n(981631),
-  _ = n(388032);
+}), require("./388685.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk442837 = require("./442837.js"),
+  Chunk570140 = require("./570140.js"),
+  Chunk439170 = require("./439170.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk430824 = require("./430824.js"),
+  Chunk451478 = require("./451478.js"),
+  Chunk626135 = require("./626135.js"),
+  Chunk162461 = require("./162461.js"),
+  Chunk71585 = require("./71585.js"),
+  Chunk34586 = require("./34586.js"),
+  Chunk69259 = require("./69259.js"),
+  Chunk590026 = require("./590026.js"),
+  Chunk178762 = require("./178762.jsx"),
+  Chunk206583 = require("./206583.js"),
+  Chunk809017 = require("./809017.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk388032 = require("./388032.jsx");
 let j = 0;
 
 function O(e) {
@@ -32,12 +33,12 @@ function O(e) {
     },
     channelId: O,
     guildId: v
-  } = e, [C, E] = r.useState(!1), {
+  } = e, [C, E] = r.useState(false), {
     requestId: S,
     entries: I,
     impressionCappedEntryIds: Z,
     hasLeaderboardEntry: P
-  } = (0, g.Z)(O), T = (0, i.e7)([h.Z], () => h.Z.hidden), N = (0, i.e7)([c.Z], () => c.Z.isFocused()), R = (0, i.e7)([s.Z], () => s.Z.getChannel(O)), w = (0, i.e7)([o.Z], () => o.Z.getGuild(v), [v]), A = (0, p.E)(w), D = null != A && A && (null == R ? void 0 : R.isForumChannel()) === !1, [k, L, M, U] = r.useMemo(() => {
+  } = (0, g.Z)(O), T = (0, i.e7)([h.Z], () => h.Z.hidden), N = (0, i.e7)([c.Z], () => c.Z.isFocused()), R = (0, i.e7)([s.Z], () => s.Z.getChannel(O)), w = (0, i.e7)([o.Z], () => o.Z.getGuild(v), [v]), A = (0, p.E)(w), D = null != A && A && (null == R ? true : R.isForumChannel()) === false, [k, L, M, U] = r.useMemo(() => {
     let e;
     if (null == I || 0 === I.length || null == S || !D) return [t, n, j];
     let r = C ? I.length : P ? 4 : 3,
@@ -74,12 +75,12 @@ function O(e) {
       [l, ...t],
       [...n, l, ...e], Math.random(), e
     ]
-  }, [O, I, C, t, v, S, n, j, T, D, P]), F = r.useRef(0), H = r.useRef(I), G = r.useRef(void 0), B = r.useRef({
+  }, [O, I, C, t, v, S, n, j, T, D, P]), F = r.useRef(0), H = r.useRef(I), G = r.useRef(true), B = r.useRef({
     impressionCappedEntryIds: Z
   }), W = r.useCallback(e => {
     var t;
     let n = Math.floor(e / m.YN),
-      r = Math.min(null != (t = null == U ? void 0 : U.length) ? t : 0, n);
+      r = Math.min(null != (t = null == U ? true : U.length) ? t : 0, n);
     F.current = Math.max(F.current, r)
   }, [U]);
   return r.useEffect(() => {
@@ -91,7 +92,7 @@ function O(e) {
   }, [Z]), r.useEffect(() => (F.current = 0, G.current = Date.now(), () => {
     var e, t;
     if (null == S || null == G.current || Date.now() - G.current < 3e3) return;
-    let n = null != (t = null == (e = H.current) ? void 0 : e.map(e => e.id)) ? t : [],
+    let n = null != (t = null == (e = H.current) ? true : e.map(e => e.id)) ? t : [],
       r = n.slice(0, F.current);
     !T && N && D && ((0, f.e)(x.rMx.RANKING_ITEMS_SEEN_MUST_BE_SAMPLED, {
       request_id: S,

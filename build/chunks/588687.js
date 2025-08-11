@@ -1,5 +1,6 @@
 /** Chunk was on 43404 **/
-e.exports = {
+/** chunk id: 588687, original params: e,t,n (module,exports,require) **/
+module.exports = {
   guildSelector: "guildSelector_f494f4",
   iconTextWrap: "iconTextWrap_f494f4",
   text: "text_f494f4",

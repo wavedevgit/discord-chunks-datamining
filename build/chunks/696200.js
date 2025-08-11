@@ -1,5 +1,6 @@
 /** Chunk was on 34057 **/
-e.exports = {
+/** chunk id: 696200, original params: e,n,a (module,exports,require) **/
+module.exports = {
   guildSelectOptionIcon: "guildSelectOptionIcon__41a02",
   speakerIcon: "speakerIcon__41a02",
   suffixNode: "suffixNode__41a02",

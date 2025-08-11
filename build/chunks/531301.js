@@ -1,21 +1,22 @@
 /** Chunk was on web.js **/
+/** chunk id: 531301, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => c
-}), n(415506);
-var r = n(73800),
-  i = n(442837),
-  o = n(544891),
-  a = n(570140),
-  s = n(432835),
-  l = n(981631);
+}), require("./415506.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk442837 = require("./442837.js"),
+  Chunk544891 = require("./544891.js"),
+  Chunk570140 = require("./570140.js"),
+  Chunk432835 = require("./432835.js"),
+  Chunk981631 = require("./981631.js");
 
 function c(e) {
   let t = (0, i.e7)([s.Z], () => s.Z.getNote(e));
   return r.useEffect(() => {
     null == t && u(e)
   }, [t, e]), null != t ? t : {
-    loading: !0,
+    loading: true,
     note: null
   }
 }
@@ -29,8 +30,8 @@ async function u(e) {
       body: t
     } = await o.tn.get({
       url: l.ANM.NOTE(e),
-      oldFormErrors: !0,
-      rejectWithError: !0
+      oldFormErrors: true,
+      rejectWithError: true
     });
     if (t.note_user_id !== e) throw Error("Invalid response from server");
     a.Z.dispatch({

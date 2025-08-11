@@ -1,0 +1,17 @@
+/** Chunk was on web.js **/
+/** chunk id: 382056, original params: e,t,n (module,exports,re quire) **/
+"use strict";
+require.d(exports, {
+  Z: () => o
+});
+var Chunk255367 = require("./255367.js"),
+  Chunk797874 = require("./797874.js");
+let o = {
+  react(e) {
+    let {
+      applicationId: t,
+      channelId: n
+    } = e;
+    return <i.Z gameId={t} channelId={n} />
+  }
+}

@@ -1,18 +1,19 @@
 /** Chunk was on web.js **/
+/** chunk id: 446108, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Mb: () => s,
   Z0: () => o,
   d1: () => c,
   fy: () => a,
   r5: () => l
 });
-var r = n(313201),
-  i = n(388032);
-let o = (0, r.hQ)(),
-  a = (0, r.hQ)(),
-  s = (0, r.hQ)(),
-  l = (0, r.hQ)();
+var Chunk313201 = require("./313201.js"),
+  Chunk388032 = require("./388032.jsx");
+let o = (0, Chunk313201.hQ)(),
+  a = (0, Chunk313201.hQ)(),
+  s = (0, Chunk313201.hQ)(),
+  l = (0, Chunk313201.hQ)();
 
 function c() {
   [{
@@ -23,10 +24,10 @@ function c() {
     text: ","
   }, {
     id: s,
-    text: i.intl.string(i.t.gHp0Cw)
+    text: Chunk388032.intl.string(Chunk388032.t.gHp0Cw)
   }, {
     id: l,
-    text: i.intl.string(i.t.SO93ur)
+    text: Chunk388032.intl.string(Chunk388032.t.SO93ur)
   }].forEach(e => {
     let {
       id: t,

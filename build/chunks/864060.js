@@ -1,87 +1,88 @@
 /** Chunk was on 70205 **/
-n.d(e, {
+/** chunk id: 864060, original params: t,e,n (module,exports,require) **/
+require.d(exports, {
   FI: () => G,
   LL: () => w,
   N_: () => M,
   Xi: () => H,
   eF: () => L
-}), n(997841), n(953529), n(415506);
-var i = n(317381),
-  l = n(933557),
-  a = n(710845),
-  r = n(978003),
-  o = n(41776),
-  u = n(355298),
-  s = n(957730),
-  d = n(850908),
-  c = n(572804),
-  f = n(901461),
-  g = n(569471),
-  _ = n(723170),
-  E = n(695346),
-  p = n(131704),
-  T = n(433355),
-  N = n(592125),
-  S = n(430824),
-  I = n(19780),
-  h = n(699516),
-  C = n(944486),
-  Z = n(914010),
-  A = n(885110),
-  v = n(9156),
-  m = n(594174),
-  y = n(630388),
-  P = n(5192),
-  O = n(352736),
-  D = n(51144);
-n(734934);
-var U = n(842619),
-  R = n(981631),
-  b = n(124368),
-  k = n(388032);
+}), require("./997841.js"), require("./953529.js"), require("./415506.js");
+var Chunk317381 = require("./317381.js"),
+  Chunk933557 = require("./933557.js"),
+  Chunk710845 = require("./710845.js"),
+  Chunk978003 = require("./978003.js"),
+  Chunk41776 = require("./41776.js"),
+  Chunk355298 = require("./355298.js"),
+  Chunk957730 = require("./957730.js"),
+  Chunk850908 = require("./850908.js"),
+  Chunk572804 = require("./572804.js"),
+  Chunk901461 = require("./901461.js"),
+  Chunk569471 = require("./569471.js"),
+  Chunk723170 = require("./723170.js"),
+  Chunk695346 = require("./695346.js"),
+  Chunk131704 = require("./131704.js"),
+  Chunk433355 = require("./433355.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk430824 = require("./430824.js"),
+  Chunk19780 = require("./19780.js"),
+  Chunk699516 = require("./699516.js"),
+  Chunk944486 = require("./944486.js"),
+  Chunk914010 = require("./914010.js"),
+  Chunk885110 = require("./885110.js"),
+  Chunk9156 = require("./9156.js"),
+  Chunk594174 = require("./594174.js"),
+  Chunk630388 = require("./630388.js"),
+  Chunk5192 = require("./5192.js"),
+  Chunk352736 = require("./352736.js"),
+  Chunk51144 = require("./51144.js");
+require("./734934.js");
+var Chunk842619 = require("./842619.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk124368 = require("./124368.js"),
+  Chunk388032 = require("./388032.jsx");
 
 function w(t, e, n) {
-  let i = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : {};
-  if (e.hasFlag(R.xW$.SPAMMER) || n.isManaged()) return !1;
+  let i = arguments.length > 3 && true !== arguments[3] ? arguments[3] : {};
+  if (e.hasFlag(R.xW$.SPAMMER) || n.isManaged()) returnfalse;
   let l = n.getGuildId();
   return !(null != l && o.Z.isLurking(l) || !i.ignoreSameUser && e.id === t.id || h.Z.isBlockedOrIgnored(e.id) || !i.ignoreStatus && A.Z.getStatus() === R.Skl.DND || E.QZ.getSetting() || !i.ignoreNoMessagesSetting && v.ZP.allowNoMessages(n))
 }
 
 function L(t, e) {
   var n, l;
-  let a = !(arguments.length > 2) || void 0 === arguments[2] || arguments[2],
-    r = arguments.length > 3 && void 0 !== arguments[3] && arguments[3];
-  if (null != t.flags && (0, y.yE)(t.flags, R.iLy.SUPPRESS_NOTIFICATIONS)) return !1;
+  let a = !(arguments.length > 2) || true === arguments[2] || arguments[2],
+    r = arguments.length > 3 && true !== arguments[3] && arguments[3];
+  if (null != t.flags && (0, y.yE)(t.flags, R.iLy.SUPPRESS_NOTIFICATIONS)) returnfalse;
   let o = N.Z.getChannel(e);
-  t.type === R.uaV.THREAD_STARTER_MESSAGE && (o = N.Z.getChannel(null == o ? void 0 : o.parent_id));
+  t.type === R.uaV.THREAD_STARTER_MESSAGE && (o = N.Z.getChannel(null == o ? true : o.parent_id));
   let s = m.default.getCurrentUser(),
-    d = m.default.getUser(null == (n = t.author) ? void 0 : n.id);
+    d = m.default.getUser(null == (n = t.author) ? true : n.id);
   if (null == o || null == s || null == d || o.type === R.d4z.GROUP_DM && t.type === R.uaV.RECIPIENT_REMOVE || U.Z.areSlayerNotificationsSuppressed() && ((l = o).type === R.d4z.DM || null != l.linkedLobby) || !w(s, d, o, {
       ignoreStatus: r,
       ignoreSameUser: R.V$x.SELF_MENTIONABLE_SYSTEM.has(t.type)
-    }) || u.Z.isMessageRequest(e)) return !1;
+    }) || u.Z.isMessageRequest(e)) returnfalse;
   if (!a) {
     let t = C.Z.getChannelId(Z.Z.getGuildId());
-    if (t === o.id || T.ZP.getCurrentSidebarChannelId(t) === o.id) return !1
+    if (t === o.id || T.ZP.getCurrentSidebarChannelId(t) === o.id) returnfalse
   }
-  if (h.Z.isBlockedOrIgnoredForMessage(t) || void 0 !== t.activity_instance && null != t.interaction && t.interaction.user.id === s.id) return !1;
+  if (h.Z.isBlockedOrIgnoredForMessage(t) || true !== t.activity_instance && null != t.interaction && t.interaction.user.id === s.id) returnfalse;
   if (null != t.application_id) {
     let n = i.ZP.getCurrentEmbeddedActivity();
-    if ((null == n ? void 0 : n.applicationId) === t.application_id && n.location.channel_id === e) return !1
+    if ((null == n ? true : n.applicationId) === t.application_id && n.location.channel_id === e) returnfalse
   }
-  if (t.type === R.uaV.CHAT_WALLPAPER_SET || t.type === R.uaV.CHAT_WALLPAPER_REMOVED) return !1;
+  if (t.type === R.uaV.CHAT_WALLPAPER_SET || t.type === R.uaV.CHAT_WALLPAPER_REMOVED) returnfalse;
   if (p.Ec.has(o.type)) {
-    if (g.Z.isMuted(o.id)) return !1;
+    if (g.Z.isMuted(o.id)) returnfalse;
     let e = (0, _.J)(o);
     return e !== b.iN.NO_MESSAGES && (e === b.iN.ALL_MESSAGES || (0, c.Hl)({
       rawMessage: t,
       userId: s.id,
-      suppressEveryone: !1,
-      suppressRoles: !1
+      suppressEveryone: false,
+      suppressRoles: false
     }))
   } {
     let e = !p.tx.has(o.type) || I.Z.getChannelId() === o.id;
-    if (v.ZP.allowAllMessages(o) && e) return !0;
+    if (v.ZP.allowAllMessages(o) && e) returntrue;
     let n = v.ZP.isSuppressEveryoneEnabled(o.getGuildId()),
       i = v.ZP.isSuppressRolesEnabled(o.getGuildId());
     return (0, c.Hl)({
@@ -95,25 +96,25 @@ function L(t, e) {
 
 function M(t, e) {
   var n;
-  if (C.Z.getChannelId(Z.Z.getGuildId()) !== e) return !1;
+  if (C.Z.getChannelId(Z.Z.getGuildId()) !== e) returnfalse;
   let i = N.Z.getChannel(e);
-  t.type === R.uaV.THREAD_STARTER_MESSAGE && (i = N.Z.getChannel(null == i ? void 0 : i.parent_id));
+  t.type === R.uaV.THREAD_STARTER_MESSAGE && (i = N.Z.getChannel(null == i ? true : i.parent_id));
   let l = m.default.getCurrentUser(),
-    a = m.default.getUser(null == (n = t.author) ? void 0 : n.id);
+    a = m.default.getUser(null == (n = t.author) ? true : n.id);
   return !(null == i || null == l || null == a || i.isManaged() || a.hasFlag(R.xW$.SPAMMER) || h.Z.isBlockedOrIgnoredForMessage(t) || a.id === l.id || A.Z.getStatus() === R.Skl.DND || E.QZ.getSetting() || v.ZP.allowNoMessages(i)) && t.type !== R.uaV.CHAT_WALLPAPER_SET && t.type !== R.uaV.CHAT_WALLPAPER_REMOVED
 }
 
 function G(t, e) {
-  let n = !(arguments.length > 2) || void 0 === arguments[2] || arguments[2],
-    i = arguments.length > 3 && void 0 !== arguments[3] && arguments[3],
+  let n = !(arguments.length > 2) || true === arguments[2] || arguments[2],
+    i = arguments.length > 3 && true !== arguments[3] && arguments[3],
     l = m.default.getCurrentUser(),
     a = m.default.getUser(t.ownerId);
   return !(null == e || null == l || null == a || !w(l, a, e, {
     ignoreStatus: i,
-    ignoreNoMessagesSetting: !0
+    ignoreNoMessagesSetting: true
   }) || v.ZP.isGuildOrCategoryOrChannelMuted(e.guild_id, e.id)) && (!!n || C.Z.getChannelId(Z.Z.getGuildId()) !== e.id) && v.ZP.getNewForumThreadsCreated(e)
 }
-let V = (t, e, n) => "".concat(t, " (").concat((0, l.F6)(e, m.default, h.Z, !0)).concat(null != n ? ", ".concat((0, l.F6)(n, m.default, h.Z)) : "", ")");
+let V = (t, e, n) => "".concat(t, " (").concat((0, l.F6)(e, m.default, h.Z, true)).concat(null != n ? ", ".concat((0, l.F6)(n, m.default, h.Z)) : "", ")");
 
 function F(t, e, n, i) {
   switch (t.type) {
@@ -142,7 +143,7 @@ function H(t, e, n) {
       e.type === R.uaV.THREAD_STARTER_MESSAGE && null != c ? u = V(u, c, N.Z.getChannel(c.parent_id)) : (0, f.Z)(e) ? null != S.Z.getGuild(t.getGuildId()) && (u = V(u, t, c)) : u = V(u, t, c);
       break;
     case R.d4z.GROUP_DM:
-      t.isManaged() && n.bot && u === (0, l.F6)(t, m.default, h.Z) || (u = "".concat(u, " (").concat((0, l.F6)(t, m.default, h.Z, !0), ")"))
+      t.isManaged() && n.bot && u === (0, l.F6)(t, m.default, h.Z) || (u = "".concat(u, " (").concat((0, l.F6)(t, m.default, h.Z, true), ")"))
   }
   let g = e.content;
   if ((0, f.Z)(e) && null == (g = O.Z.stringify(e, t))) throw new a.Z("NotificationTextUtils").warn("SystemMessageUtils.stringify(...) could not convert", {
@@ -173,15 +174,15 @@ function H(t, e, n) {
   });
   else if (e.type === R.uaV.POLL_RESULT) {
     var E, p, T;
-    let t = null == (T = e.embeds) || null == (p = T[0]) || null == (E = p.fields) ? void 0 : E.find(t => ("name" in t ? t.name : t.rawName) === "poll_question_text"),
+    let t = null == (T = e.embeds) || null == (p = T[0]) || null == (E = p.fields) ? true : E.find(t => ("name" in t ? t.name : t.rawName) === "poll_question_text"),
       n = null != t ? "value" in t ? t.value : t.rawValue : "";
     i = k.intl.formatToPlainString(k.t["9WrecH"], {
       question: n
     })
-  } else i = 0 !== g.length && t.type === R.d4z.DM && !n.bot && g.startsWith("> -# *") ? (i = s.ZP.unparse(g, t.id, !0)).substring(0, 1) + i.substring(4) : s.ZP.unparse(g, t.id, !0);
+  } else i = 0 !== g.length && t.type === R.d4z.DM && !n.bot && g.startsWith("> -# *") ? (i = s.ZP.unparse(g, t.id, true)).substring(0, 1) + i.substring(4) : s.ZP.unparse(g, t.id, true);
   return 0 === i.length && (i = function(t) {
     var e;
-    if (void 0 !== t.embeds && t.embeds.length > 0) {
+    if (true !== t.embeds && t.embeds.length > 0) {
       let e = t.embeds[0],
         n = "description" in e ? e.description : e.rawDescription,
         i = "title" in e ? e.title : e.rawTitle;
@@ -195,7 +196,7 @@ function H(t, e, n) {
       }
     }
     if ((0, y.yE)(null != (e = t.flags) ? e : 0, R.iLy.IS_VOICE_MESSAGE)) return k.intl.string(k.t.slFYgo);
-    if (void 0 !== t.attachments && t.attachments.length > 0) {
+    if (true !== t.attachments && t.attachments.length > 0) {
       let e = (0, d.Z)(t.attachments[0]);
       return k.intl.formatToPlainString(k.t["51OkwM"], {
         filename: e

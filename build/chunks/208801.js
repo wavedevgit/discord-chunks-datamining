@@ -1,11 +1,12 @@
 /** Chunk was on web.js **/
-e.exports = function(e) {
+/** chunk id: 208801, original params: e (module,exports,re quire) **/
+module.exports = function(e) {
   let t = "[a-zA-Z-_][^\\n{]+\\{",
     n = {
       className: "attribute",
       begin: /[a-zA-Z-_]+/,
       end: /\s*:/,
-      excludeEnd: !0,
+      excludeEnd: true,
       starts: {
         end: ";",
         relevance: 0,
@@ -21,7 +22,7 @@ e.exports = function(e) {
   return {
     name: "Roboconf",
     aliases: ["graph", "instances"],
-    case_insensitive: !0,
+    case_insensitive: true,
     keywords: "import",
     contains: [{
       begin: "^facet " + t,

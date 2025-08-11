@@ -1,2 +1,3 @@
 /** Chunk was on 96175 **/
-p.exports = JSON.parse('{"5+172d":"Streamen"}')
+/** chunk id: 745548, original params: p (module,exports,require) **/
+module.exports = JSON.parse('{"5+172d":"Streamen"}')

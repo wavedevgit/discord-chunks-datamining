@@ -1,40 +1,41 @@
 /** Chunk was on web.js **/
+/** chunk id: 647162, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   KV: () => p,
   PY: () => _,
   Wo: () => h,
   iy: () => E,
   yp: () => m
-}), n(415506), n(358797), n(388685);
-var r = n(763472),
-  i = n(726542),
-  o = n(594190),
-  a = n(70956),
-  s = n(781518),
-  l = n(18323),
-  c = n(768419),
-  u = n(616922),
-  d = n(981631);
-let f = 30 * a.Z.Millis.SECOND;
+}), require("./415506.js"), require("./358797.js"), require("./388685.js");
+var Chunk763472 = require("./763472.js"),
+  Chunk726542 = require("./726542.js"),
+  Chunk594190 = require("./594190.js"),
+  Chunk70956 = require("./70956.js"),
+  Chunk781518 = require("./781518.js"),
+  Chunk18323 = require("./18323.js"),
+  Chunk768419 = require("./768419.js"),
+  Chunk616922 = require("./616922.js"),
+  Chunk981631 = require("./981631.js");
+let f = 30 * Chunk70956.Z.Millis.SECOND;
 
 function _(e) {
   return null != e.getActiveSocketAndDevice() || l.Z.isProtocolRegistered()
 }
 
 function p() {
-  let e = c.Z.getActiveSocketAndDevice();
-  if (null != e) return Promise.resolve(e);
-  if (!l.Z.isProtocolRegistered()) return Promise.reject(Error("protocol is not registered"));
-  let t = c.Z.getPlayableComputerDevices();
-  if (o.ZP.isObservedAppRunning(i.Z.get(d.ABu.SPOTIFY).name) && t.length > 0) {
+  let e = Chunk768419.Z.getActiveSocketAndDevice();
+  if (null != module) return Promise.resolve(module);
+  if (!Chunk18323.Z.isProtocolRegistered()) return Promise.reject(Error("protocol is not registered"));
+  let t = Chunk768419.Z.getPlayableComputerDevices();
+  if (Chunk594190.ZP.isObservedAppRunning(Chunk726542.Z.get(Chunk981631.ABu.SPOTIFY).name) && exports.length > 0) {
     let {
       socket: e,
       device: n
-    } = t[0];
-    return (0, s.Tu)(e.accountId, n.id), Promise.resolve({
-      socket: e,
-      device: n
+    } = exports[0];
+    return (0, Chunk781518.Tu)(module.accountId, require.id), Promise.resolve({
+      socket: module,
+      device: require
     })
   }
   return new Promise((e, n) => {
@@ -58,22 +59,22 @@ function p() {
 }
 
 function h() {
-  let e = c.Z.getActiveSocketAndDevice();
-  if (null == e) return null;
+  let e = Chunk768419.Z.getActiveSocketAndDevice();
+  if (null == module) return null;
   let {
     socket: t
-  } = e;
-  return t.isPremium
+  } = module;
+  return exports.isPremium
 }
 
 function m() {
-  let e = c.Z.getActiveSocketAndDevice();
-  if (null == e) return Promise.reject(Error("no active profile"));
+  let e = Chunk768419.Z.getActiveSocketAndDevice();
+  if (null == module) return Promise.reject(Error("no active profile"));
   let {
     socket: t
-  } = e;
-  return t.isPremium ? Promise.resolve() : (0, s.Ai)(t.accountId, t.accessToken).then(() => {
-    if (!t.isPremium) return Promise.reject(Error("spotify account is not premium"))
+  } = module;
+  return exports.isPremium ? Promise.resolve() : (0, Chunk781518.Ai)(exports.accountId, exports.accessToken).then(() => {
+    if (!exports.isPremium) return Promise.reject(Error("spotify account is not premium"))
   })
 }
 
@@ -87,7 +88,7 @@ async function E(e, t) {
     o = (0, u.c8)(g(null != (n = i.type) ? n : u.Hw.TRACK));
   if (null === o) throw Error("invalid type ".concat(i.type));
   return {
-    context_uri: "string" == typeof i.context_uri ? i.context_uri : void 0,
+    context_uri: "string" == typeof i.context_uri ? i.context_uri : true,
     album_id: g(i.album_id),
     artist_ids: Array.isArray(i.artist_ids) ? i.artist_ids.map(g) : [],
     type: o,

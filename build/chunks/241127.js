@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 241127, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   answersContainer: "answersContainer__10758",
   answer: "answer__10758",
   currentlyVoting: "currentlyVoting__10758",

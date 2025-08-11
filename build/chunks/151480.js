@@ -1,38 +1,39 @@
 /** Chunk was on web.js **/
+/** chunk id: 151480, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   X: () => p,
   i: () => h,
   k9: () => _
 });
-var r = n(602715),
-  i = n(544891),
-  o = n(570140),
-  a = n(881052),
-  s = n(411700),
-  l = n(258732),
-  c = n(626135),
-  u = n(630388),
-  d = n(860987),
-  f = n(981631);
+var Chunk602715 = require("./602715.js"),
+  Chunk544891 = require("./544891.js"),
+  Chunk570140 = require("./570140.js"),
+  Chunk881052 = require("./881052.js"),
+  Chunk411700 = require("./411700.js"),
+  Chunk258732 = require("./258732.js"),
+  Chunk626135 = require("./626135.js"),
+  Chunk630388 = require("./630388.js"),
+  Chunk860987 = require("./860987.js"),
+  Chunk981631 = require("./981631.js");
 let _ = async () => {
-  o.Z.dispatch({
+  Chunk570140.Z.dispatch({
     type: "FETCH_CHAT_WALLPAPERS_START"
   });
   try {
-    let e = await i.tn.get({
-      url: f.ANM.CHAT_WALLPAPERS,
-      rejectWithError: !0
+    let e = await Chunk544891.tn.get({
+      url: Chunk981631.ANM.CHAT_WALLPAPERS,
+      rejectWithError: true
     });
-    o.Z.dispatch({
+    Chunk570140.Z.dispatch({
       type: "FETCH_CHAT_WALLPAPERS_SUCCESS",
-      wallpapers: e.body.chat_wallpapers.map(d.w)
+      wallpapers: module.body.chat_wallpapers.map(Chunk860987.w)
     })
   } catch (t) {
-    let e = new a.Hx(t);
-    (0, s.G)(e), o.Z.dispatch({
+    let e = new Chunk881052.Hx(exports);
+    (0, Chunk411700.G)(module), Chunk570140.Z.dispatch({
       type: "FETCH_CHAT_WALLPAPERS_FAILURE",
-      error: e
+      error: module
     })
   }
 };

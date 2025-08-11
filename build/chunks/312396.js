@@ -1,5 +1,0 @@
-/** Chunk was on web.js **/
-"use strict";
-e.exports = {
-  body: "body__96722"
-}

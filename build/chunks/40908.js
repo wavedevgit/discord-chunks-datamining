@@ -1,10 +1,11 @@
 /** Chunk was on 75708 **/
-n.d(t, {
+/** chunk id: 40908, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => l
-}), n(388685), n(781311), n(35282);
-var i = n(73800),
-  r = n(304445),
-  s = n(997383);
+}), require("./388685.js"), require("./781311.js"), require("./35282.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk304445 = require("./304445.js"),
+  Chunk997383 = require("./997383.js");
 let a = [];
 
 function l(e) {
@@ -19,7 +20,7 @@ function l(e) {
   i.useEffect(() => r.Z.addRouteChangeListener(() => {
     d("")
   }), []);
-  let [g] = i.useState(() => new s.Z(p, n, void 0, l));
+  let [g] = i.useState(() => new s.Z(p, n, true, l));
   return i.useEffect(() => {
     t ? (null == o || o(g), g.createSearchContext()) : (g.clean(), d(""))
   }, [t, g, o]), {

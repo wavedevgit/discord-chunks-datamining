@@ -1,1 +1,0 @@
-{"id":"30766","type":"store","data":{"name":"DiscoverGuildsStore","functions":[{"name":"initialize","args":[]},{"name":"isFetching","args":[]},{"name":"getGuild","args":["e"]},{"name":"getGuilds","args":["e"]}],"events":["DISCOVER_GUILDS_FETCH_START","DISCOVER_GUILDS_FETCH_SUCCESS","DISCOVER_GUILDS_FETCH_FAILURE"]},"fromModule":{"id":"56444"}}

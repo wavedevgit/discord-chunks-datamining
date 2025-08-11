@@ -1,8 +1,9 @@
 /** Chunk was on web.js **/
-var r = n(181515),
-  i = n(521834),
-  o = n(844781),
-  a = n(828091);
-e.exports = function(e) {
+/** chunk id: 691363, original params: e,t,n (module,exports,re quire) **/
+var Chunk181515 = require("./181515.js"),
+  Chunk521834 = require("./521834.js"),
+  Chunk844781 = require("./844781.js"),
+  Chunk828091 = require("./828091.js");
+module.exports = function(e) {
   return o(e) ? r(a(e)) : i(e)
 }

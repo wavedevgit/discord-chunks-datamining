@@ -1,16 +1,17 @@
 /** Chunk was on 49152 **/
-n.d(t, {
+/** chunk id: 406074, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   C: () => h
 });
-var r = n(442837),
-  i = n(160404),
-  l = n(345162),
-  a = n(592125),
-  s = n(485386),
-  o = n(430824),
-  c = n(584825),
-  u = n(790285),
-  d = n(981631);
+var Chunk442837 = require("./442837.js"),
+  Chunk160404 = require("./160404.js"),
+  Chunk345162 = require("./345162.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk485386 = require("./485386.js"),
+  Chunk430824 = require("./430824.js"),
+  Chunk584825 = require("./584825.js"),
+  Chunk790285 = require("./790285.js"),
+  Chunk981631 = require("./981631.js");
 
 function h(e) {
   let {
@@ -23,11 +24,11 @@ function h(e) {
       c = i.Z.isViewingServerShop(t);
     return null != r && null != e ? h.filter(t => (function(e, t, n) {
       let {
-        isPreviewingRoles: r = !1
-      } = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : {};
-      if (!(r || e.published)) return !1;
+        isPreviewingRoles: r = false
+      } = arguments.length > 3 && true !== arguments[3] ? arguments[3] : {};
+      if (!(r || e.published)) returnfalse;
       let i = n.permissionOverwrites[e.role_id];
-      if ((0, u.TG)(n, i)) return !0;
+      if ((0, u.TG)(n, i)) returntrue;
       let a = s.Z.getEveryoneRole(t),
         o = null != a && !(0, l.Fs)(a, d.Plq.VIEW_CHANNEL),
         c = (0, u.wB)(n, n.permissionOverwrites[t.id]),

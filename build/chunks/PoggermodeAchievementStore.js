@@ -1,0 +1,83 @@
+/** Chunk was on 75708 **/
+/** chunk id: 882029, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
+  Z: () => h
+});
+var i, Chunk442837 = require("./442837.js"),
+  Chunk570140 = require("./570140.js"),
+  Chunk314897 = require("./314897.js"),
+  Chunk57562 = require("./57562.jsx"),
+  Chunk351780 = require("./351780.js"),
+  Chunk843693 = require("./843693.js");
+
+function d(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+
+function u(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      i = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), i.forEach(function(t) {
+      d(e, t, n[t])
+    })
+  }
+  return e
+}
+let m = {
+    unlockedAchievements: {}
+  },
+  p = u({}, m);
+class g extends(i = Chunk442837.ZP.PersistedStore) {
+  initialize(e) {
+    this.waitFor(a.default, c.ZP);
+    let t = null != e ? e : u({}, m);
+    for (let e in t) p[e] = t[e]
+  }
+  getState() {
+    return p
+  }
+  getAllUnlockedAchievements() {
+    return p.unlockedAchievements
+  }
+  getUnlocked(e) {
+    var t;
+    return null != (t = p.unlockedAchievements[e]) ? t : null
+  }
+}
+d(g, "displayName", "PoggermodeAchievementStore"), d(g, "persistKey", "PoggermodeAchievementStore");
+let h = new g(Chunk570140.Z, {
+  POGGERMODE_ACHIEVEMENT_UNLOCK: function(e) {
+    let {
+      achievementId: t
+    } = e;
+    if (!o.Z.isEnabled()) returnfalse;
+    ! function(e) {
+      var t, n;
+      if (null == p.unlockedAchievements[e]) t = u({}, p.unlockedAchievements), n = n = {
+        [e]: {
+          achievementId: e,
+          dateUnlocked: Date.now()
+        }
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
+        var n = Object.keys(e);
+        if (Object.getOwnPropertySymbols) {
+          var i = Object.getOwnPropertySymbols(e);
+          n.push.apply(n, i)
+        }
+        return n
+      })(Object(n)).forEach(function(e) {
+        Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
+      }), p.unlockedAchievements = t, setTimeout(() => {
+        (0, l.D)(e, true)
+      }, 2e3)
+    }(t)
+  }
+})

@@ -1,11 +1,12 @@
 /** Chunk was on web.js **/
+/** chunk id: 303694, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   W: () => a,
   l: () => o
 });
-var r = n(485386),
-  i = n(388032);
+var Chunk485386 = require("./485386.js"),
+  Chunk388032 = require("./388032.js");
 let o = e => {
     switch (e) {
       case "home":
@@ -25,7 +26,7 @@ let o = e => {
       var i;
       if (null == n) return null;
       let e = r.Z.getRole(n, t);
-      return null == e || (null == (i = e.tags) ? void 0 : i.guild_connections) !== null ? null : e.name
+      return null == e || (null == (i = e.tags) ? true : i.guild_connections) !== null ? null : e.name
     }
     return null
   }

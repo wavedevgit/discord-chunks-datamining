@@ -1,21 +1,22 @@
 /** Chunk was on 95468 **/
-n.d(t, {
+/** chunk id: 495784, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => g
 });
-var r = n(913527),
-  l = n.n(r),
-  i = n(704215),
-  a = n(951716),
-  s = n(266454),
-  o = n(605236),
-  c = n(972830),
-  d = n(430824),
-  u = n(594174),
-  m = n(374023),
-  h = n(709054),
-  f = n(645792),
-  x = n(981631),
-  p = n(921944);
+var Chunk913527 = require("./913527.js"),
+  l = require.n(Chunk913527),
+  Chunk704215 = require("./704215.js"),
+  Chunk951716 = require("./951716.js"),
+  Chunk266454 = require("./266454.js"),
+  Chunk605236 = require("./605236.js"),
+  Chunk972830 = require("./972830.js"),
+  Chunk430824 = require("./430824.js"),
+  Chunk594174 = require("./594174.js"),
+  Chunk374023 = require("./374023.js"),
+  Chunk709054 = require("./709054.js"),
+  Chunk645792 = require("./645792.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk921944 = require("./921944.js");
 let g = {
   init(e) {
     let {
@@ -34,8 +35,8 @@ let g = {
     })
   },
   hideHubUpsell() {
-    (0, s.Q3)(i.z.HUB_BACK_TO_SCHOOL_UPSELL, {
-      dismissAction: p.L.AUTO
+    (0, Chunk266454.Q3)(Chunk704215.z.HUB_BACK_TO_SCHOOL_UPSELL, {
+      dismissAction: Chunk921944.L.AUTO
     })
   }
 }

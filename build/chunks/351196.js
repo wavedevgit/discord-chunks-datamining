@@ -1,9 +1,10 @@
 /** Chunk was on web.js **/
+/** chunk id: 351196, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-var r = n(914331),
-  i = n(77826),
+var Chunk914331 = require("./914331.js"),
+  Chunk77826 = require("./77826.js"),
   o = RangeError;
-e.exports = function(e, t, n, a) {
+module.exports = function(e, t, n, a) {
   var s = r(e),
     l = i(n),
     c = l < 0 ? s + l : l;

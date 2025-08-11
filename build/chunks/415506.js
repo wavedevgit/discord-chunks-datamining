@@ -1,19 +1,20 @@
 /** Chunk was on web.js **/
+/** chunk id: 415506, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-var r = n(98405),
-  i = n(127849),
-  o = n(636881),
-  a = n(163641),
+var Chunk98405 = require("./98405.js"),
+  Chunk127849 = require("./127849.js"),
+  Chunk636881 = require("./636881.js"),
+  Chunk163641 = require("./163641.js"),
   s = "WebAssembly",
-  l = i[s],
+  l = Chunk127849[s],
   c = 7 !== Error("e", {
     cause: 7
   }).cause,
   u = function(e, t) {
     var n = {};
     n[e] = a(e, t, c), r({
-      global: !0,
-      constructor: !0,
+      global: true,
+      constructor: true,
       arity: 1,
       forced: c
     }, n)
@@ -23,8 +24,8 @@ var r = n(98405),
       var n = {};
       n[e] = a(s + "." + e, t, c), r({
         target: s,
-        stat: !0,
-        constructor: !0,
+        stat: true,
+        constructor: true,
         arity: 1,
         forced: c
       }, n)

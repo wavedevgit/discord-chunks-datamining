@@ -1,43 +1,44 @@
 /** Chunk was on web.js **/
+/** chunk id: 348245, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 let r, i;
-n.d(t, {
+require.d(exports, {
   Z: () => Q
-}), n(388685);
-var o = n(114858),
-  a = n(433517),
-  s = n(570140),
-  l = n(668781),
-  c = n(904245),
-  u = n(593472),
-  d = n(147913),
-  f = n(89892),
-  _ = n(702321),
-  p = n(710845),
-  h = n(38618),
-  m = n(897473),
-  g = n(131704),
-  E = n(433355),
-  b = n(592125),
-  y = n(430824),
-  O = n(306680),
-  v = n(944486),
-  I = n(914010),
-  T = n(70956),
-  S = n(198620),
-  A = n(981631),
-  N = n(176505),
-  C = n(388032);
+}), require("./388685.js");
+var Chunk114858 = require("./114858.js"),
+  Chunk433517 = require("./433517.js"),
+  Chunk570140 = require("./570140.js"),
+  Chunk668781 = require("./668781.js"),
+  Chunk904245 = require("./904245.js"),
+  Chunk593472 = require("./593472.js"),
+  Chunk147913 = require("./147913.js"),
+  Chunk89892 = require("./89892.js"),
+  Chunk702321 = require("./702321.js"),
+  Chunk710845 = require("./710845.js"),
+  Chunk38618 = require("./38618.js"),
+  Chunk897473 = require("./897473.js"),
+  Chunk131704 = require("./131704.js"),
+  Chunk433355 = require("./433355.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk430824 = require("./430824.js"),
+  Chunk306680 = require("./306680.js"),
+  Chunk944486 = require("./944486.js"),
+  Chunk914010 = require("./914010.js"),
+  Chunk70956 = require("./70956.js"),
+  Chunk198620 = require("./198620.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk176505 = require("./176505.js"),
+  Chunk388032 = require("./388032.js");
 
 function R(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
-let P = new p.Z("MessageManager");
+let P = new Chunk710845.Z("MessageManager");
 
 function w(e) {
   let {
@@ -52,41 +53,41 @@ function w(e) {
   } = e;
   if (null == n || (0, N.AB)(n)) return;
   let d = b.Z.getChannel(n);
-  if ((null == d ? void 0 : d.type) === A.d4z.GUILD_STORE || (null == d ? void 0 : d.type) != null && A.TPd.GUILD_THREADS_ONLY.has(d.type)) return;
+  if ((null == d ? true : d.type) === A.d4z.GUILD_STORE || (null == d ? true : d.type) != null && A.TPd.GUILD_THREADS_ONLY.has(d.type)) return;
   let p = f.Z.getOrCreate(n);
   p.some(S.k5) && (P.log("Found expired attachment link, clearing messages"), f.Z.clear(n), p = f.Z.getOrCreate(n)), null != p.jumpTargetId && null == r && (p = p.mutate({
     jumpTargetId: null,
-    jumped: !1,
+    jumped: false,
     jumpType: u.SR.ANIMATED
   }), f.Z.commit(p)), null != p.focusTargetId && null == r && (p = p.mutate({
     focusTargetId: null
   }), f.Z.commit(p));
   let m = i;
-  if (!o || h.Z.isConnected() || p.loadingMore ? p.loadingMore || p.ready && !p.cached ? null != r && (m = !0) : (null == t || null != y.Z.getGuild(t)) && (m = !0) : m = !0, (0, _.Z)(n) && O.ZP.hasUnread(n) && (m = !0), m)
+  if (!o || h.Z.isConnected() || p.loadingMore ? p.loadingMore || p.ready && !p.cached ? null != r && (m = true) : (null == t || null != y.Z.getGuild(t)) && (m = true) : m = true, (0, _.Z)(n) && O.ZP.hasUnread(n) && (m = true), m)
     if (f.Z.commit(p.mutate({
-        loadingMore: !0
+        loadingMore: true
       })), null != r) c.Z.jumpToMessage({
       channelId: n,
       messageId: r,
-      flash: !0,
+      flash: true,
       isPreload: o,
       skipLocalFetch: s,
       jumpType: a,
       avoidInitialScroll: l
     });
     else {
-      if ((null == d ? void 0 : d.isThread()) && x(n)) return P.log("Jumping to start of thread ".concat(d.id)), c.Z.fetchMessages({
+      if ((null == d ? true : d.isThread()) && x(n)) return P.log("Jumping to start of thread ".concat(d.id)), c.Z.fetchMessages({
         channelId: n,
         limit: A.AQB,
         jump: {
           messageId: n,
-          flash: !1
+          flash: false
         },
         isPreload: o,
         skipLocalFetch: s,
         avoidInitialScroll: l
       });
-      if (!((null == d ? void 0 : d.isThread()) && O.ZP.hasTrackedUnread(d.id)) || p.ready) return c.Z.fetchMessages({
+      if (!((null == d ? true : d.isThread()) && O.ZP.hasTrackedUnread(d.id)) || p.ready) return c.Z.fetchMessages({
         channelId: n,
         limit: A.AQB,
         isPreload: o,
@@ -102,7 +103,7 @@ function w(e) {
         limit: A.AQB,
         jump: {
           messageId: e,
-          flash: !1,
+          flash: false,
           offset: 1
         },
         isPreload: o,
@@ -111,20 +112,20 @@ function w(e) {
       })
     }
 }
-let D = 90 * T.Z.Millis.DAY,
+let D = 90 * Chunk70956.Z.Millis.DAY,
   L = "viewedThreadIds";
 
 function x(e) {
-  if (O.ZP.hasOpenedThread(e)) return !1;
+  if (O.ZP.hasOpenedThread(e)) returnfalse;
   if (null == i) {
     var t;
     i = null != (t = a.K.get(L, {})) ? t : {}
   }
-  if (e in i) return !1;
+  if (e in i) returnfalse;
   i[e] = Date.now();
   let n = Date.now() - D;
   for (let e in i) i[e] < n && delete i[e];
-  return a.K.set(L, i), !0
+  return a.K.set(L, i), true
 }
 
 function M(e) {
@@ -132,41 +133,41 @@ function M(e) {
   if (null != r && r.channelId === e) return r;
   let n = (0, o.LX)(location.pathname, {
     path: A.Z5c.CHANNEL(":guild", ":channel", ":message"),
-    exact: !0
+    exact: true
   });
   return {
     channelId: e,
-    messageId: null == n || null == (t = n.params) ? void 0 : t.message
+    messageId: null == n || null == (t = n.params) ? true : t.message
   }
 }
 
 function k() {
-  let e = v.Z.getChannelId();
-  if (null == e) return;
-  let t = b.Z.getChannel(e);
-  if (null == t) return;
-  let n = M(t.id);
-  r = void 0, w({
-    guildId: t.getGuildId(),
-    channelId: t.id,
-    messageId: n.messageId,
-    jumpType: n.jumpType,
-    avoidInitialScroll: null != n.messageId
-  }), Z(t.getGuildId(), t.id)
+  let e = Chunk944486.Z.getChannelId();
+  if (null == module) return;
+  let t = Chunk592125.Z.getChannel(module);
+  if (null == exports) return;
+  let n = M(exports.id);
+  r = true, w({
+    guildId: exports.getGuildId(),
+    channelId: exports.id,
+    messageId: require.messageId,
+    jumpType: require.jumpType,
+    avoidInitialScroll: null != require.messageId
+  }), Z(exports.getGuildId(), exports.id)
 }
 
 function j() {
-  let e = v.Z.getChannelId();
-  if (null == e) return;
-  let t = b.Z.getChannel(e);
-  if (null == t) return;
-  if (!(0, g.Qm)(t.type)) return void Z(t.getGuildId(), t.id);
-  let n = f.Z.getOrCreate(e);
-  if (n.ready && n.hasFetched) return void Z(t.getGuildId(), t.id);
+  let e = Chunk944486.Z.getChannelId();
+  if (null == module) return;
+  let t = Chunk592125.Z.getChannel(module);
+  if (null == exports) return;
+  if (!(0, Chunk131704.Qm)(exports.type)) return void Z(exports.getGuildId(), exports.id);
+  let n = Chunk89892.Z.getOrCreate(module);
+  if (require.ready && require.hasFetched) return void Z(exports.getGuildId(), exports.id);
   w({
-    guildId: t.getGuildId(),
-    channelId: t.id
-  }), Z(t.getGuildId(), t.id)
+    guildId: exports.getGuildId(),
+    channelId: exports.id
+  }), Z(exports.getGuildId(), exports.id)
 }
 
 function U(e) {
@@ -179,9 +180,9 @@ function U(e) {
   } = e;
   if (a) return null != n && (r = {
     channelId: n,
-    messageId: null != i ? i : void 0,
+    messageId: null != i ? i : true,
     jumpType: o
-  }), !1;
+  }), false;
   w({
     guildId: t,
     channelId: n,
@@ -226,11 +227,11 @@ function Z(e, t) {
 }
 
 function F() {
-  let e = v.Z.getChannelId(),
-    t = I.Z.getGuildId();
-  if (null == t || null == e) return;
-  let n = E.ZP.getSidebarState(e);
-  (null == n ? void 0 : n.type) !== m.tI.VIEW_CHANNEL && Z(t, e)
+  let e = Chunk944486.Z.getChannelId(),
+    t = Chunk914010.Z.getGuildId();
+  if (null == exports || null == module) return;
+  let n = Chunk433355.ZP.getSidebarState(module);
+  (null == require ? true : require.type) !== Chunk897473.tI.VIEW_CHANNEL && Z(exports, module)
 }
 
 function V(e) {
@@ -280,7 +281,7 @@ function K(e) {
     channelId: n,
     jump: r,
     isStale: i,
-    isPreview: o = !1
+    isPreview: o = false
   } = e;
   if (o) return;
   let a = null != (t = W[n]) ? t : 0;
@@ -304,12 +305,12 @@ function z(e) {
     noSendFailed: i,
     shouldSendNotification: o
   } = e;
-  null != n && !0 !== i && s.Z.dispatch({
+  null != n && true !== i && s.Z.dispatch({
     type: "MESSAGE_SEND_FAILED",
     channelId: t,
     messageId: n,
     reason: null != r ? r : null,
-    shouldNotify: !1
+    shouldNotify: false
   })
 }
 
@@ -317,17 +318,17 @@ function q(e) {
   let {
     state: t
   } = e;
-  if ("active" !== t) return !1;
+  if ("active" !== t) returnfalse;
   let n = v.Z.getChannelId();
-  if (null == n) return !1;
+  if (null == n) returnfalse;
   c.Z.fetchNewLocalMessages(n, A.AQB)
 }
-class X extends d.Z {
+class X extends Chunk147913.Z {
   _initialize() {
-    s.Z.subscribe("CONNECTION_OPEN", k)
+    Chunk570140.Z.subscribe("CONNECTION_OPEN", k)
   }
   _terminate() {
-    s.Z.unsubscribe("CONNECTION_OPEN", k)
+    Chunk570140.Z.unsubscribe("CONNECTION_OPEN", k)
   }
   constructor(...e) {
     super(...e), R(this, "fetchMessages", w), R(this, "loadSelectedChannelIfNecessary", j), R(this, "stores", new Map().set(E.ZP, F)), R(this, "actions", {

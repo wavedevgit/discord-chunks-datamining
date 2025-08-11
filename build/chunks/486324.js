@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 486324, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Ff: () => v,
   Ij: () => h,
   L0: () => a,
@@ -23,7 +24,7 @@ n.d(t, {
   ut: () => m,
   xT: () => d
 });
-var r = n(678916),
+var Chunk678916 = require("./678916.js"),
   i = function(e) {
     return e.AVATAR = "AVATAR", e.BANNER = "BANNER", e.GUILD_BANNER = "GUILD_BANNER", e.VIDEO_BACKGROUND = "VIDEO_BACKGROUND", e.SCHEDULED_EVENT_IMAGE = "SCHEDULED_EVENT_IMAGE", e.HOME_HEADER = "HOME_HEADER", e.AVATAR_DECORATION = "AVATAR_DECORATION", e.GUILD_ICON = "GUILD_ICON", e
   }({});
@@ -44,7 +45,7 @@ let o = 552,
   b = 552 / (17 / 6),
   y = 552 / (16 / 9),
   O = 220.8,
-  v = r.HE.width / r.HE.height,
+  v = Chunk678916.HE.width / Chunk678916.HE.height,
   I = o / v;
 var T = function(e) {
   return e[e.CROP_GIF_START = 0] = "CROP_GIF_START", e[e.CROP_GIF_COMPLETE = 1] = "CROP_GIF_COMPLETE", e[e.CROP_GIF_ERROR = 2] = "CROP_GIF_ERROR", e

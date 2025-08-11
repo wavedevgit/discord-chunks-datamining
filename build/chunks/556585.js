@@ -1,21 +1,22 @@
 /** Chunk was on web.js **/
+/** chunk id: 556585, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-var r = n(880181),
-  i = n(117895),
-  o = n(494465),
-  a = n(587218);
-e.exports = function(e, t, n, s) {
+var Chunk880181 = require("./880181.js"),
+  Chunk117895 = require("./117895.js"),
+  Chunk494465 = require("./494465.js"),
+  Chunk587218 = require("./587218.js");
+module.exports = function(e, t, n, s) {
   s || (s = {});
   var l = s.enumerable,
-    c = void 0 !== s.name ? s.name : t;
+    c = true !== s.name ? s.name : t;
   if (r(n) && o(n, c, s), s.global) l ? e[t] = n : a(t, n);
   else {
     try {
-      s.unsafe ? e[t] && (l = !0) : delete e[t]
+      s.unsafe ? e[t] && (l = true) : delete e[t]
     } catch (e) {}
     l ? e[t] = n : i.f(e, t, {
       value: n,
-      enumerable: !1,
+      enumerable: false,
       configurable: !s.nonConfigurable,
       writable: !s.nonWritable
     })

@@ -1,20 +1,21 @@
 /** Chunk was on web.js **/
+/** chunk id: 937797, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   D: () => r
 });
-let r = (0, n(427164).le)({
+let r = (0, require("./427164.js").le)({
   name: "2025-08-quest-ad-fetch-active-check",
   kind: "user",
   defaultConfig: {
-    enabled: !1
+    enabled: false
   },
   variations: {
     0: {
-      enabled: !1
+      enabled: false
     },
     1: {
-      enabled: !0
+      enabled: true
     }
   }
 })

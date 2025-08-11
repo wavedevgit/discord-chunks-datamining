@@ -1,32 +1,33 @@
 /** Chunk was on web.js **/
+/** chunk id: 488131, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   NK: () => N,
   R6: () => S,
   ok: () => T,
   vN: () => A
 });
-var r = n(512722),
-  i = n.n(r),
-  o = n(392711),
-  a = n.n(o),
-  s = n(570140),
-  l = n(430742),
-  c = n(40851),
-  u = n(367907),
-  d = n(727429),
-  f = n(927723),
-  _ = n(982168),
-  p = n(703656),
-  h = n(359110),
-  m = n(695346),
-  g = n(703558),
-  E = n(944486),
-  b = n(979651),
-  y = n(585483),
-  O = n(124368),
-  v = n(981631),
-  I = n(176505);
+var Chunk512722 = require("./512722.js"),
+  i = require.n(Chunk512722),
+  Chunk392711 = require("./392711.js"),
+  a = require.n(Chunk392711),
+  Chunk570140 = require("./570140.js"),
+  Chunk430742 = require("./430742.js"),
+  Chunk40851 = require("./40851.jsx"),
+  Chunk367907 = require("./367907.js"),
+  Chunk727429 = require("./727429.js"),
+  Chunk927723 = require("./927723.js"),
+  Chunk982168 = require("./982168.js"),
+  Chunk703656 = require("./703656.js"),
+  Chunk359110 = require("./359110.js"),
+  Chunk695346 = require("./695346.js"),
+  Chunk703558 = require("./703558.js"),
+  Chunk944486 = require("./944486.js"),
+  Chunk979651 = require("./979651.js"),
+  Chunk585483 = require("./585483.js"),
+  Chunk124368 = require("./124368.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk176505 = require("./176505.js");
 
 function T(e, t, n) {
   if (!(0, _.WF)(e.id)) return void(0, f.V)();
@@ -45,7 +46,7 @@ function T(e, t, n) {
   let o = E.Z.getChannelId();
   e.parent_id === o || (0, I.ME)(o) || (0, h.Kh)(e.parent_id), (0, p.uL)(v.Z5c.CHANNEL_THREAD_VIEW((0, d.e)(e), (0, I.ME)(o) ? I.oC.GUILD_HOME : e.parent_id, e.id), e.isForumPost() ? {
     source: O.on.FORUM
-  } : void 0), setTimeout(() => {
+  } : true), setTimeout(() => {
     y.S.dispatch(v.CkL.FOCUS_CHANNEL_TEXT_AREA, {
       channelId: e.id
     })
@@ -65,7 +66,7 @@ function S(e, t, n) {
     s.Z.dispatch({
       type: "SIDEBAR_CREATE_THREAD",
       parentChannelId: e.id,
-      parentMessageId: null == t ? void 0 : t.id,
+      parentMessageId: null == t ? true : t.id,
       location: n
     })
   }, 0)

@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 701488, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   $y: () => x,
   Cr: () => y,
   Ev: () => s,
@@ -27,9 +28,9 @@ n.d(t, {
   wP: () => P,
   wT: () => R,
   xK: () => T
-}), n(388685);
-var r = n(911969),
-  i = n(981631);
+}), require("./388685.js");
+var Chunk911969 = require("./911969.js"),
+  Chunk981631 = require("./981631.js");
 let o = 160,
   a = /^https?:\/\/(?:www\.)?(twitch\.tv\/(.+)|youtube.com\/watch\?v=)/,
   s = "438122941302046720",
@@ -67,7 +68,7 @@ var N = function(e) {
   return e[e.FOCUSED = 0] = "FOCUSED", e[e.PIP = 1] = "PIP", e[e.GRID = 2] = "GRID", e
 }({});
 let C = {
-    label_type: r.ww.NONE,
+    label_type: Chunk911969.ww.NONE,
     release_phase: "",
     label_from: null,
     label_until: null,
@@ -75,21 +76,21 @@ let C = {
   },
   R = {
     application_id: "",
-    requires_age_gate: !1,
-    legacy_responsive_aspect_ratio: !1,
+    requires_age_gate: false,
+    legacy_responsive_aspect_ratio: false,
     default_orientation_lock_state: 1,
     tablet_default_orientation_lock_state: 1,
-    supported_platforms: [r.C3.WEB],
+    supported_platforms: [Chunk911969.C3.WEB],
     client_platform_config: {
-      [r.C3.WEB]: C,
-      [r.C3.IOS]: C,
-      [r.C3.ANDROID]: C
+      [Chunk911969.C3.WEB]: C,
+      [Chunk911969.C3.IOS]: C,
+      [Chunk911969.C3.ANDROID]: C
     },
-    has_csp_exception: !1,
-    displays_advertisements: !1
+    has_csp_exception: false,
+    displays_advertisements: false
   },
-  P = [i.d4z.GUILD_TEXT, i.d4z.DM, i.d4z.GROUP_DM],
-  w = [...P, i.d4z.GUILD_VOICE],
+  P = [Chunk981631.d4z.GUILD_TEXT, Chunk981631.d4z.DM, Chunk981631.d4z.GROUP_DM],
+  w = [...P, Chunk981631.d4z.GUILD_VOICE],
   D = "https://support-dev.discord.com/hc/en-us/articles/21692628851351-Private-Activity-Safety";
 var L = function(e) {
   return e.NORMAL = "normal", e.FULL_SCREEN = "full-screen", e

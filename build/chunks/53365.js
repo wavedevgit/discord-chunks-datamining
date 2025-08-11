@@ -1,5 +1,6 @@
 /** Chunk was on 56534 **/
-r.d(t, {
+/** chunk id: 53365, original params: e,t,r (module,exports,require) **/
+require.d(exports, {
   $J: () => I,
   He: () => s,
   av: () => p,
@@ -11,39 +12,39 @@ r.d(t, {
   yk: () => c,
   zo: () => u
 });
-var n = r(544891),
-  i = r(570140),
-  a = r(728345),
-  o = r(981631),
-  l = r(674563);
+var Chunk544891 = require("./544891.js"),
+  Chunk570140 = require("./570140.js"),
+  Chunk728345 = require("./728345.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk674563 = require("./674563.js");
 async function s(e) {
   await n.tn.post({
     url: o.ANM.CREATOR_MONETIZATION_ENABLE_REQUESTS(e),
-    rejectWithError: !1
+    rejectWithError: false
   })
 }
 async function c(e) {
   return (await n.tn.get({
     url: o.ANM.CREATOR_MONETIZATION_ELIGIBILITY(e),
-    rejectWithError: !1
+    rejectWithError: false
   })).body
 }
 async function d(e, t) {
   await n.tn.post({
     url: o.ANM.CREATOR_MONETIZATION_ACCEPT_TERMS(e, t),
-    rejectWithError: !1
+    rejectWithError: false
   })
 }
 async function u(e) {
   await n.tn.post({
     url: o.ANM.CREATOR_MONETIZATION_ACCEPT_TERMS_V2(e),
-    rejectWithError: !1
+    rejectWithError: false
   })
 }
 async function _(e) {
   return (await n.tn.get({
     url: o.ANM.CREATOR_MONETIZATION_MARKETING_ONBOARDING(e),
-    rejectWithError: !1
+    rejectWithError: false
   })).body
 }
 async function p(e) {
@@ -53,7 +54,7 @@ async function p(e) {
       query: {
         nag_guild_ids: e
       },
-      rejectWithError: !0
+      rejectWithError: true
     });
     i.Z.dispatch({
       type: "CREATOR_MONETIZATION_NAG_ACTIVATE_ELIGIBLITY_FETCH_SUCCESS",
@@ -67,7 +68,7 @@ async function E(e, t) {
     body: {
       team_id: t
     },
-    rejectWithError: !1
+    rejectWithError: false
   })).body;
   return null != r.application && i.Z.dispatch({
     type: "APPLICATION_FETCH_SUCCESS",
@@ -78,26 +79,26 @@ async function E(e, t) {
 function O(e) {
   return n.tn.post({
     url: o.ANM.CREATOR_MONETIZATION_ACCEPT_NEW_TERMS(e),
-    rejectWithError: !1
+    rejectWithError: false
   })
 }
 
 function I(e) {
   return n.tn.post({
     url: o.ANM.CREATOR_MONETIZATION_ACCEPT_NEW_TERMS_DEMONETIZED(e),
-    rejectWithError: !1
+    rejectWithError: false
   })
 }
 async function A(e) {
   await n.tn.post({
     url: o.ANM.CREATOR_MONETIZATION_REMOVE_MONETIZATION(e),
     body: {},
-    rejectWithError: !1
+    rejectWithError: false
   })
 }
 async function T(e) {
   return await A(e), await a.ZP.getApplicationsForGuild(e, {
     type: l.wW.GUILD_ROLE_SUBSCRIPTIONS,
-    includeTeam: !0
+    includeTeam: true
   })
 }

@@ -1,5 +1,6 @@
 /** Chunk was on 55944 **/
-e.exports = {
+/** chunk id: 576052, original params: e,t,s (module,exports,require) **/
+module.exports = {
   list: "list__920b8",
   accountCard: "accountCard__920b8",
   separator: "separator__920b8",

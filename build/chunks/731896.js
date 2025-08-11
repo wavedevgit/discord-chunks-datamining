@@ -1,16 +1,17 @@
 /** Chunk was on web.js **/
+/** chunk id: 731896, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   V: () => s
 });
-var r = n(73800),
-  i = n(442837),
-  o = n(365943),
-  a = n(25251);
+var Chunk73800 = require("./73800.js"),
+  Chunk442837 = require("./442837.js"),
+  Chunk365943 = require("./365943.js"),
+  Chunk25251 = require("./25251.js");
 let s = e => {
   let t = (0, i.e7)([a.Z], () => a.Z.getProfileEffectById(e)),
     n = null != e && null == t;
   return r.useEffect(() => {
-    n && (0, o.t)(!0)
+    n && (0, o.t)(true)
   }, [n]), t
 }

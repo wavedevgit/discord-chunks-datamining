@@ -1,19 +1,20 @@
 /** Chunk was on web.js **/
+/** chunk id: 566078, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   r: () => d
-}), n(415506), n(388685);
-var r = n(754700),
-  i = n(319245),
-  o = n(509212),
-  a = n(502288);
+}), require("./415506.js"), require("./388685.js");
+var Chunk754700 = require("./754700.js"),
+  Chunk319245 = require("./319245.js"),
+  Chunk509212 = require("./509212.js"),
+  Chunk502288 = require("./502288.js");
 
 function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -61,10 +62,10 @@ class d {
     return this._defaultRewardV2(this.quest)
   }
   get defaultRewardNameWithArticle() {
-    return (0, o.Bg)(this.quest) ? (0, a.o8)(this.quest) : this.defaultReward.messages.nameWithArticle
+    return (0, Chunk509212.Bg)(this.quest) ? (0, Chunk502288.o8)(this.quest) : this.defaultReward.messages.nameWithArticle
   }
   get defaultRewardName() {
-    return (0, o.Bg)(this.quest) ? (0, a.o8)(this.quest) : this.defaultReward.messages.name
+    return (0, Chunk509212.Bg)(this.quest) ? (0, Chunk502288.o8)(this.quest) : this.defaultReward.messages.name
   }
   get defaultRewardRedemptionInstructionsByPlatform() {
     return this._defaultRewardV2(this.quest).messages.redemptionInstructionsByPlatform
@@ -81,24 +82,24 @@ class d {
     return this.quest.rewardsConfig.platforms
   }
   get questType() {
-    return (0, o.q8)({
+    return (0, Chunk509212.q8)({
       config: this.quest
-    }) ? i.W.VIDEO : i.W.GAMEPLAY
+    }) ? Chunk319245.W.VIDEO : Chunk319245.W.GAMEPLAY
   }
   get defaultInGameTask() {
     var e;
     let t = this.quest.taskConfigV2.tasks,
-      n = t[r.X.ACHIEVEMENT_IN_ACTIVITY],
-      i = t[r.X.ACHIEVEMENT_IN_GAME];
-    return null != (e = null != n ? n : i) ? e : null
+      n = exports[Chunk754700.X.ACHIEVEMENT_IN_ACTIVITY],
+      i = exports[Chunk754700.X.ACHIEVEMENT_IN_GAME];
+    return null != (e = null != require ? require : Chunk319245) ? module : null
   }
   get defaultWatchVideoTask() {
     var e;
-    let t = this.quest.taskConfigV2.tasks[r.X.WATCH_VIDEO],
-      n = this.quest.taskConfigV2.tasks[r.X.WATCH_VIDEO_ON_MOBILE];
-    return null != t && null != n ? t : null != (e = null != n ? n : t) ? e : null
+    let t = this.quest.taskConfigV2.tasks[Chunk754700.X.WATCH_VIDEO],
+      n = this.quest.taskConfigV2.tasks[Chunk754700.X.WATCH_VIDEO_ON_MOBILE];
+    return null != exports && null != require ? exports : null != (e = null != require ? require : exports) ? module : null
   }
   constructor(e) {
-    s(this, "quest", void 0), this.quest = e
+    s(this, "quest", true), this.quest = e
   }
 }

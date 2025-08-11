@@ -1,16 +1,17 @@
 /** Chunk was on web.js **/
+/** chunk id: 20970, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   j: () => E
 });
-var r = n(159635);
+var Chunk159635 = require("./159635.js");
 
 function i(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -54,7 +55,7 @@ let {
   em: h,
   image: m,
   text: g
-} = r.defaultRules, E = {
+} = Chunk159635.defaultRules, E = {
   newline: l,
   paragraph: c,
   url: u,
@@ -71,7 +72,7 @@ let {
   image: m,
   hook: {
     order: g.order,
-    match: (0, r.inlineRegex)(/^\$\[(.*?)\]\((\w+)\)/),
+    match: (0, Chunk159635.inlineRegex)(/^\$\[(.*?)\]\((\w+)\)/),
     parse(e, t, n) {
       let {
         context: r
@@ -85,7 +86,7 @@ let {
   },
   noparse: {
     order: g.order,
-    match: (0, r.inlineRegex)(/^!!(\d+?)!!/),
+    match: (0, Chunk159635.inlineRegex)(/^!!(\d+?)!!/),
     parse(e, t, n) {
       let {
         unsafeContext: r

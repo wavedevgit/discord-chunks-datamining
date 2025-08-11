@@ -1,24 +1,25 @@
 /** Chunk was on web.js **/
+/** chunk id: 937889, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   ZP: () => y,
   k$: () => v,
   p6: () => g,
   rs: () => m
-}), n(388685), n(781311), n(704826), n(35282), n(865427);
-var r = n(830121),
-  i = n(202131),
-  o = n(454585),
-  a = n(408433),
-  s = n(960048),
-  l = n(981631);
+}), require("./388685.js"), require("./781311.js"), require("./704826.js"), require("./35282.js"), require("./865427.js");
+var Chunk830121 = require("./830121.js"),
+  Chunk202131 = require("./202131.js"),
+  Chunk454585 = require("./454585.js"),
+  Chunk408433 = require("./408433.js"),
+  Chunk960048 = require("./960048.js"),
+  Chunk981631 = require("./981631.js");
 
 function c(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -52,7 +53,7 @@ function f(e, t) {
   }), e
 }
 let _ = 30,
-  p = new Set([l.hBH.IMAGE, l.hBH.GIFV]),
+  p = new Set([Chunk981631.hBH.IMAGE, Chunk981631.hBH.GIFV]),
   h = new Set(["strong", "em", "u", "text", "inlineCode", "s", "spoiler"]);
 
 function m(e, t) {
@@ -90,12 +91,12 @@ function g(e) {
     previewLinkTarget: !!r.previewLinkTarget,
     disableAnimatedEmoji: !!r.disableAnimatedEmoji,
     isInteracting: !!r.isInteracting,
-    allowEmojiLinks: !1,
-    disableAutoBlockNewlines: !0,
+    allowEmojiLinks: false,
+    disableAutoBlockNewlines: true,
     mentionChannels: [],
     soundboardSounds: [],
-    muted: !1,
-    unknownUserMentionPlaceholder: !0,
+    muted: false,
+    unknownUserMentionPlaceholder: true,
     viewingChannelId: r.viewingChannelId,
     forceWhite: !!r.forceWhite
   }
@@ -104,18 +105,18 @@ function g(e) {
 function E(e, t, n) {
   var r;
   let {
-    toAST: o = !1,
-    hideSimpleEmbedContent: a = !0,
-    formatInline: s = !1,
+    toAST: o = false,
+    hideSimpleEmbedContent: a = true,
+    formatInline: s = false,
     postProcessor: l,
     shouldFilterKeywords: c,
     contentMessage: u
-  } = n, d = !1, f = (null != u ? u : t).content, _ = e(c ? (0, i.N)(f, {
-    escapeReplacement: !0,
+  } = n, d = false, f = (null != u ? u : t).content, _ = e(c ? (0, i.N)(f, {
+    escapeReplacement: true,
     messageId: t.id,
     channelId: t.channel_id,
-    authorId: null == (r = t.author) ? void 0 : r.id
-  }) : f, !0, m(t, n), (e, n) => (Array.isArray(e) || (e = [e]), a && (e = C(e, (null != u ? u : t).embeds)), s || (e = I(e, n)), e = b(e), t.embeds.length > 0 && (d = S(e, n)), s && (e = R(e)), null != l && (e = l(e, n)), e));
+    authorId: null == (r = t.author) ? true : r.id
+  }) : f, true, m(t, n), (e, n) => (Array.isArray(e) || (e = [e]), a && (e = C(e, (null != u ? u : t).embeds)), s || (e = I(e, n)), e = b(e), t.embeds.length > 0 && (d = S(e, n)), s && (e = R(e)), null != l && (e = l(e, n)), e));
   return {
     hasSpoilerEmbeds: d,
     content: _
@@ -132,28 +133,28 @@ function b(e) {
 }
 
 function y(e) {
-  let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
+  let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {};
   return E(t.formatInline ? o.Z.parseInlineReply : o.Z.parse, e, t)
 }
 
 function O(e, t, n, r) {
-  return e(t, !0, {
-    allowLinks: !1,
-    allowDevLinks: !1,
-    allowEmojiLinks: !1,
+  return e(t, true, {
+    allowLinks: false,
+    allowDevLinks: false,
+    allowEmojiLinks: false,
     mentionChannels: [],
     soundboardSounds: [],
-    isInteracting: !1,
-    formatInline: !1,
-    noStyleAndInteraction: !1,
-    allowHeading: !1,
-    allowList: !1,
-    allowGameMentions: !1,
-    disableAutoBlockNewlines: !0,
+    isInteracting: false,
+    formatInline: false,
+    noStyleAndInteraction: false,
+    allowHeading: false,
+    allowList: false,
+    allowGameMentions: false,
+    disableAutoBlockNewlines: true,
     highlightWord: n,
-    disableAnimatedEmoji: !1,
+    disableAnimatedEmoji: false,
     channelId: r,
-    muted: !1
+    muted: false
   }, e => (Array.isArray(e) || (e = [e]), e))
 }
 
@@ -169,9 +170,9 @@ function T(e) {
   if (e.some(e => "emoji" !== e.type && "customEmoji" !== e.type && "soundboard" !== e.type && ("string" != typeof e.content || "" !== e.content.trim()))) return e;
   let t = 0;
   return e.forEach(e => {
-    if (("emoji" === e.type || "customEmoji" === e.type || "soundboard" === e.type) && (t += 1), t > _) return !1
+    if (("emoji" === e.type || "customEmoji" === e.type || "soundboard" === e.type) && (t += 1), t > _) returnfalse
   }), t > _ || e.forEach(e => {
-    e.jumboable = !0
+    e.jumboable = true
   }), e
 }
 

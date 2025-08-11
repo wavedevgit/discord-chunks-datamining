@@ -1,8 +1,9 @@
 /** Chunk was on web.js **/
+/** chunk id: 825670, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n(98405)({
+require("./98405.js")({
   target: "Object",
-  stat: !0
+  stat: true
 }, {
-  hasOwn: n(77025)
+  hasOwn: require("./77025.js")
 })

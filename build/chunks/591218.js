@@ -1,27 +1,28 @@
 /** Chunk was on web.js **/
+/** chunk id: 591218, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => d
-}), n(415506), n(388685);
-var r = n(836560),
-  i = n(740197),
-  o = n(106617),
-  a = n(376398),
-  s = n(65154),
-  l = n(231338);
+}), require("./415506.js"), require("./388685.js");
+var Chunk836560 = require("./836560.js"),
+  Chunk740197 = require("./740197.js"),
+  Chunk106617 = require("./106617.js"),
+  Chunk376398 = require("./376398.js"),
+  Chunk65154 = require("./65154.js"),
+  Chunk231338 = require("./231338.js");
 
 function c(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
-let u = new o.Z;
-class d extends r.EventEmitter {
+let u = new Chunk106617.Z;
+class d extends Chunk836560.EventEmitter {
   destroy() {
-    null != this.stream && (u.release(this.stream), this.stream = null), null != this.streamId && (0, a.jC)(this.streamId), this.destroyed = !0
+    null != this.stream && (u.release(this.stream), this.stream = null), null != this.streamId && (0, Chunk376398.jC)(this.streamId), this.destroyed = true
   }
   getStreamId() {
     return this.streamId
@@ -37,18 +38,18 @@ class d extends r.EventEmitter {
     t.some(e => e.id === this.sourceId) && (n.deviceId = this.sourceId);
     try {
       let e = await u.acquire({
-        audio: !1,
+        audio: false,
         video: n
       });
       if (this.destroyed) throw u.release(e), Error("VideoInput: Already destroyed");
-      return this.emit("permission", !0), this.setStream(e)
+      return this.emit("permission", true), this.setStream(e)
     } catch (e) {
       if ("string" != typeof e) switch (e.name) {
         case "PermissionDeniedError":
         case "NotAllowedError":
-          throw this.emit("permission", !1), l.ET.PERMISSION_DENIED;
+          throw this.emit("permission", false), l.ET.PERMISSION_DENIED;
         case "PermissionDismissedError":
-          throw this.emit("permission", !1), l.ET.PERMISSION_DISMISSED;
+          throw this.emit("permission", false), l.ET.PERMISSION_DISMISSED;
         case "DevicesNotFoundError":
         case "NotFoundError":
           throw l.ET.NO_DEVICES_FOUND;
@@ -62,6 +63,6 @@ class d extends r.EventEmitter {
     return null != this.streamId && ((0, a.jC)(this.streamId), this.streamId = null), this.stream = e, e.onaddtrack = e => this.emit("add-video-track", e), e.getVideoTracks().length > 0 && (this.streamId = (0, a.N7)(e)), this.emit("stream", e), this.emit("video", this.getStreamId()), e
   }
   constructor(...e) {
-    super(...e), c(this, "stream", new MediaStream), c(this, "sourceId", s.Av), c(this, "streamId", null), c(this, "destroyed", !1)
+    super(...e), c(this, "stream", new MediaStream), c(this, "sourceId", s.Av), c(this, "streamId", null), c(this, "destroyed", false)
   }
 }

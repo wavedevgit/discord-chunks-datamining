@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 297961, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   listWrapper: "listWrapper_c656ac",
   list: "list_c656ac",
   noSearchResultsContainer: "noSearchResultsContainer_c656ac",

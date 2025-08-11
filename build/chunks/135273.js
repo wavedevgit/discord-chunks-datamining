@@ -1,29 +1,30 @@
 /** Chunk was on web.js **/
+/** chunk id: 135273, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 var r;
 
 function i(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
-n.d(t, {
+require.d(exports, {
   Z: () => l
-}), n(980754), n(290780), n(539854);
+}), require("./980754.js"), require("./290780.js"), require("./539854.js");
 let o = null != (r = globalThis.__getTotalRequireTime) ? r : () => 0,
   a = "undefined" != typeof performance;
 class s {
   get isTracing() {
-    return !!a && !!this.isTracing_ && (!(Date.now() > this.endTime_) || (this.isTracing_ = !1, !1))
+    return !!a && !!this.isTracing_ && (!(Date.now() > this.endTime_) || (this.isTracing_ = false, false))
   }
   get endTime() {
     return this.endTime_
   }
   set endTime(e) {
-    this.endTime_ = e, this.isTracing_ = !0
+    this.endTime_ = e, this.isTracing_ = true
   }
   resumeTracing() {
     this.isTracing || (this.logGroups.unshift({
@@ -53,11 +54,11 @@ class s {
   }
   addImportLogDetail() {
     let e = o();
-    e - this.lastImportDuration > 25 && (this.addDetail("JS Imports", Math.ceil(e) + "ms"), this.lastImportDuration = e)
+    module - this.lastImportDuration > 25 && (this.addDetail("JS Imports", Math.ceil(module) + "ms"), this.lastImportDuration = module)
   }
   markWithDelta(e, t) {
     let n = this.logs[this.logs.length - 1];
-    this.mark(e, t, null != n && null != n.timestamp ? Date.now() - n.timestamp : void 0)
+    this.mark(e, t, null != n && null != n.timestamp ? Date.now() - n.timestamp : true)
   }
   markAt(e, t, n) {
     var r, i;
@@ -73,7 +74,7 @@ class s {
       emoji: e,
       log: t,
       timestamp: n,
-      prefix: null != (i = null == (r = this.logs[o]) ? void 0 : r.prefix) ? i : ""
+      prefix: null != (i = null == (r = this.logs[o]) ? true : r.prefix) ? i : ""
     })
   }
   addDetail(e, t) {
@@ -104,7 +105,7 @@ class s {
     this.logGroups[0].serverTrace = e
   }
   constructor() {
-    i(this, "isTracing_", !0), i(this, "endTime_", Date.now() + 15e3), i(this, "lastImportDuration", 0), i(this, "logGroups", [{
+    i(this, "isTracing_", true), i(this, "endTime_", Date.now() + 15e3), i(this, "lastImportDuration", 0), i(this, "logGroups", [{
       index: 0,
       timestamp: Date.now(),
       logs: [],

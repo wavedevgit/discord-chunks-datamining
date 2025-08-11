@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 393113, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   clickable: "clickable_ef9ae7",
   imagePosition: "imagePosition_ef9ae7",
   aspectRatio: "aspectRatio_ef9ae7",

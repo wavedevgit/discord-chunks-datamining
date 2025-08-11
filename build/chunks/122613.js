@@ -1,22 +1,23 @@
 /** Chunk was on web.js **/
+/** chunk id: 122613, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => p
 });
-var r = n(592125),
-  i = n(594174),
-  o = n(636449),
-  a = n(337682),
-  s = n(566620),
-  l = n(224189),
-  c = n(574952);
+var Chunk592125 = require("./592125.js"),
+  Chunk594174 = require("./594174.js"),
+  Chunk636449 = require("./636449.js"),
+  Chunk337682 = require("./337682.js"),
+  Chunk566620 = require("./566620.js"),
+  Chunk224189 = require("./224189.js"),
+  Chunk574952 = require("./574952.js");
 
 function u(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -51,12 +52,12 @@ function _(e, t) {
 }
 async function p(e) {
   let t;
-  if (null == e.targetApplicationId) return !1;
-  let n = !1;
+  if (null == e.targetApplicationId) returnfalse;
+  let n = false;
   try {
     t = await (0, l.Z)(e.targetApplicationId, e.channelId), n = (0, o.R)()
   } catch (e) {
-    return !1
+    returnfalse
   }
   return (0, o.C)(n, () => h(_(d({}, e), {
     targetApplication: t
@@ -81,7 +82,7 @@ async function h(e) {
   return null != o && null != r.Z.getChannel(o) && null != y && null != t && (a.tZ(t.id), await (0, s.G6)({
     channelId: o,
     applicationId: t.id,
-    isStart: !0,
+    isStart: true,
     embeddedActivitiesManager: b,
     componentId: u,
     commandOrigin: d,

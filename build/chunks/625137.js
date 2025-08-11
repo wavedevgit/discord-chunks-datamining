@@ -1,20 +1,21 @@
 /** Chunk was on web.js **/
+/** chunk id: 625137, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   BL: () => s,
   C$: () => c,
   EO: () => u,
   y2: () => l
-}), n(642613), n(388685), n(512722);
-var r = n(539600),
-  i = n(709054);
+}), require("./642613.js"), require("./388685.js"), require("./512722.js");
+var Chunk539600 = require("./539600.js"),
+  Chunk709054 = require("./709054.js");
 
 function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -37,7 +38,7 @@ function s(e) {
 
 function l(e, t) {
   let n = e.guildId;
-  return e.id === n ? t.id === n ? i.default.compare(e.id, t.id) : 1 : t.id === n ? -1 : e.position !== t.position ? t.position - e.position : i.default.compare(e.id, t.id)
+  return e.id === n ? t.id === n ? i.default.compare(e.id, t.id) : 1 : t.id === n ? false : e.position !== t.position ? t.position - e.position : i.default.compare(e.id, t.id)
 }
 
 function c(e, t) {
@@ -45,8 +46,8 @@ function c(e, t) {
 }
 
 function u(e, t) {
-  let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : [],
-    i = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : [];
+  let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : [],
+    i = arguments.length > 3 && true !== arguments[3] ? arguments[3] : [];
   if (i.length + n.length === 0) return t;
   let o = a({}, t);
   if (null != i)

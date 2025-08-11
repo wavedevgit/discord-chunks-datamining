@@ -1,14 +1,15 @@
 /** Chunk was on web.js **/
+/** chunk id: 855796, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => f
 });
-var r = n(544891),
-  i = n(780384),
-  o = n(668781),
-  a = n(881052),
-  s = n(981631),
-  l = n(388032);
+var Chunk544891 = require("./544891.js"),
+  Chunk780384 = require("./780384.js"),
+  Chunk668781 = require("./668781.js"),
+  Chunk881052 = require("./881052.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk388032 = require("./388032.jsx");
 
 function c(e) {
   let t = new a.Hx(e).getAnyErrorMessage();
@@ -30,8 +31,8 @@ function u(e) {
     body: {
       type: o
     },
-    oldFormErrors: !0,
-    rejectWithError: !1
+    oldFormErrors: true,
+    rejectWithError: false
   }).then(() => {
     i()
   }).catch(e => (c(e), Promise.reject(e)))
@@ -45,8 +46,8 @@ async function d(e) {
   try {
     await r.tn.del({
       url: s.ANM.USER_GAME_RELATIONSHIP(t, n),
-      oldFormErrors: !0,
-      rejectWithError: !1
+      oldFormErrors: true,
+      rejectWithError: false
     }), i()
   } catch (e) {
     c(e)

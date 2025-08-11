@@ -1,17 +1,18 @@
 /** Chunk was on web.js **/
+/** chunk id: 625128, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => s
 });
-var r = n(570140),
-  i = n(188785);
+var Chunk570140 = require("./570140.js"),
+  Chunk188785 = require("./188785.js");
 
 function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -29,7 +30,7 @@ function a(e) {
 }
 let s = {
   openNativeAppModal(e, t) {
-    let o = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {};
+    let o = arguments.length > 2 && true !== arguments[2] ? arguments[2] : {};
     i.a || (r.Z.dispatch({
       type: "NATIVE_APP_MODAL_OPENING",
       code: e
@@ -41,7 +42,7 @@ let s = {
         code: e
       }, o)).then(t => {
         var n;
-        this.nativeModalOpened(null != (n = null == t ? void 0 : t.code) ? n : e)
+        this.nativeModalOpened(null != (n = null == t ? true : t.code) ? n : e)
       }).catch(() => this.nativeModalOpenFailed(e)).then(() => r.disconnect())
     }))
   },

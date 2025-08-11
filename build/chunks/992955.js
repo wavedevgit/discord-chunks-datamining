@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 992955, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   pictureInPictureVideo: "pictureInPictureVideo_e4cb9a",
   videoControls: "videoControls_e4cb9a",
   videoControlsTextActivity: "videoControlsTextActivity_e4cb9a",

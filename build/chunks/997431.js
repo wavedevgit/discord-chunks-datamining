@@ -1,12 +1,13 @@
 /** Chunk was on web.js **/
+/** chunk id: 997431, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   M: () => a,
   l: () => s
 });
-var r = n(131704),
-  i = n(411198),
-  o = n(981631);
+var Chunk131704 = require("./131704.js"),
+  Chunk411198 = require("./411198.js"),
+  Chunk981631 = require("./981631.js");
 
 function a(e, t) {
   if (null == e || "" === e) return null;
@@ -18,7 +19,7 @@ function a(e, t) {
 }
 
 function s(e) {
-  if (null == e.guild || (0, i.Qs)(e.guild).features.has(o.oNc.HUB)) return !1;
-  let t = (null == e ? void 0 : e.channel) != null ? (0, r.jD)(e.channel) : null;
+  if (null == e.guild || (0, i.Qs)(e.guild).features.has(o.oNc.HUB)) returnfalse;
+  let t = (null == e ? true : e.channel) != null ? (0, r.jD)(e.channel) : null;
   return null == t || !t.isGuildVocal()
 }

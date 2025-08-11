@@ -1,6 +1,7 @@
 /** Chunk was on 71879 **/
+/** chunk id: 381112, original params: e,t,n (module,exports,require) **/
 "use strict";
-e.exports = {
+module.exports = {
   container: "container_fc958f",
   footer: "footer_fc958f",
   footerChannelTitle: "footerChannelTitle_fc958f",

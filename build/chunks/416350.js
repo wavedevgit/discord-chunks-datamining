@@ -1,5 +1,6 @@
 /** Chunk was on 1272 **/
-e.exports = {
+/** chunk id: 416350, original params: e,t,n (module,exports,require) **/
+module.exports = {
   downloadProgressCircle: "downloadProgressCircle__35e86",
   hideGameUpdateProgressIndicator: "hideGameUpdateProgressIndicator__35e86",
   privateChannels: "privateChannels__35e86",

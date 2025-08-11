@@ -1,5 +1,6 @@
 /** Chunk was on 1272 **/
-n.d(t, {
+/** chunk id: 295424, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => r
 });
 

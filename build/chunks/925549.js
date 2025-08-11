@@ -1,9 +1,10 @@
 /** Chunk was on web.js **/
+/** chunk id: 925549, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => i
 });
-var r = n(570140);
+var Chunk570140 = require("./570140.js");
 let i = {
   updateChannelDimensions(e, t, n, i, o) {
     r.Z.wait(() => {
@@ -17,7 +18,7 @@ let i = {
     })
   },
   updateChannelListScroll(e, t) {
-    let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : [];
+    let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : [];
     r.Z.dispatch({
       type: "UPDATE_CHANNEL_LIST_DIMENSIONS",
       guildId: e,

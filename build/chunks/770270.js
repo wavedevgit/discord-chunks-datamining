@@ -1,10 +1,11 @@
 /** Chunk was on 22988 **/
-n.d(t, {
+/** chunk id: 770270, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   i: () => l,
   p: () => a
 });
-var r = n(981631),
-  i = n(388032);
+var Chunk981631 = require("./981631.js"),
+  Chunk388032 = require("./388032.jsx");
 
 function l(e) {
   switch (e) {

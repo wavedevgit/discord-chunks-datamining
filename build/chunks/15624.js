@@ -1,12 +1,13 @@
 /** Chunk was on web.js **/
+/** chunk id: 15624, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => a
 });
-var r = n(451478);
+var Chunk451478 = require("./451478.js");
 
 function i() {
-  return !0
+  returntrue
 }
 
 function o() {
@@ -15,7 +16,7 @@ function o() {
 let a = {
   canUIRequestGatewaySocket: i,
   getState: function() {
-    return r.Z.isAppFocused() ? "focused" : "unfocused"
+    return Chunk451478.Z.isAppFocused() ? "focused" : "unfocused"
   },
   useCanUIRequestGatewaySocket: o
 }

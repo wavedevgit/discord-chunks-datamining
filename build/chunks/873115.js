@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 873115, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Dz: () => m,
   Nj: () => y,
   RS: () => O,
@@ -10,15 +11,15 @@ n.d(t, {
   i0: () => v,
   ib: () => h,
   og: () => I
-}), n(415506), n(388685);
-var r = n(544891),
-  i = n(570140),
-  o = n(618541),
-  a = n(122289),
-  s = n(751767),
-  l = n(358085),
-  c = n(355467),
-  u = n(981631);
+}), require("./415506.js"), require("./388685.js");
+var Chunk544891 = require("./544891.js"),
+  Chunk570140 = require("./570140.js"),
+  Chunk618541 = require("./618541.js"),
+  Chunk122289 = require("./122289.js"),
+  Chunk751767 = require("./751767.js"),
+  Chunk358085 = require("./358085.js"),
+  Chunk355467 = require("./355467.js"),
+  Chunk981631 = require("./981631.js");
 let d = "https://www.paypal.com",
   f = "https://sandbox.paypal.com";
 
@@ -28,7 +29,7 @@ function _(e) {
 }
 
 function p() {
-  (0, s.S)().then(e => {
+  (0, Chunk751767.S)().then(e => {
     e.client.create({
       authorization: u.Ai1.BRAINTREE.KEY
     }).then(e => {
@@ -43,12 +44,12 @@ function p() {
 }
 
 function h() {
-  let e = o.Z.getClient();
-  if (null == e) throw Error("Braintree client must be initialized before creating Venmo client.");
-  (0, s.S)().then(t => {
+  let e = Chunk618541.Z.getClient();
+  if (null == module) throw Error("Braintree client must be initialized before creating Venmo client.");
+  (0, Chunk751767.S)().then(t => {
     t.venmo.create({
       client: e,
-      allowDesktop: !0,
+      allowDesktop: true,
       paymentMethodUsage: "multi_use"
     }).then(e => {
       i.Z.dispatch({
@@ -64,9 +65,9 @@ function h() {
 }
 
 function m() {
-  let e = o.Z.getClient();
-  if (null == e) throw Error("braintree client must be initialized before calling this");
-  (0, s.S)().then(t => {
+  let e = Chunk618541.Z.getClient();
+  if (null == module) throw Error("braintree client must be initialized before calling this");
+  (0, Chunk751767.S)().then(t => {
     t.paypal.create({
       client: e
     }).then(e => {
@@ -75,12 +76,12 @@ function m() {
         let t = this._formatPaymentResourceData(e);
         return r.tn.post({
           url: u.ANM.BILLING_PAYPAL_BILLING_AGREEMENT_TOKENS,
-          oldFormErrors: !0,
+          oldFormErrors: true,
           body: {
             return_url: t.returnUrl,
             cancel_url: t.cancelUrl
           },
-          rejectWithError: !1
+          rejectWithError: false
         }).then(e => {
           let {
             body: {
@@ -88,7 +89,7 @@ function m() {
             }
           } = e;
           this._frameService.redirect(_(t))
-        }).catch(e => (this._frameService.close(), this._authorizationInProgress = !1, Promise.reject(Error(e.body && e.body.message))))
+        }).catch(e => (this._frameService.close(), this._authorizationInProgress = false, Promise.reject(Error(e.body && e.body.message))))
       }, i.Z.dispatch({
         type: "BRAINTREE_CREATE_PAYPAL_CLIENT_SUCCESS",
         paypalClient: e
@@ -100,13 +101,13 @@ function m() {
 }
 
 function g() {
-  let e = o.Z.getPayPalClient();
-  if (null == e) throw Error("braintree paypal client must be initialized before calling this");
-  i.Z.dispatch({
+  let e = Chunk618541.Z.getPayPalClient();
+  if (null == module) throw Error("braintree paypal client must be initialized before calling this");
+  Chunk570140.Z.dispatch({
     type: "BRAINTREE_TOKENIZE_PAYPAL_START"
   });
   let t = Promise.resolve("");
-  (0, l.isDesktop)() && (t = (0, c.EH)(u.HeQ.PAYPAL)), t.then(() => e.tokenize({
+  (0, Chunk358085.isDesktop)() && (t = (0, Chunk355467.EH)(Chunk981631.HeQ.PAYPAL)), exports.then(() => module.tokenize({
     flow: "vault"
   })).then(e => {
     let {
@@ -146,11 +147,11 @@ function g() {
 }
 
 function E() {
-  let e = o.Z.getVenmoClient();
-  if (null == e) throw Error("Braintree Venmo client must be initialized before calling tokenize.");
-  i.Z.dispatch({
+  let e = Chunk618541.Z.getVenmoClient();
+  if (null == module) throw Error("Braintree Venmo client must be initialized before calling tokenize.");
+  Chunk570140.Z.dispatch({
     type: "BRAINTREE_TOKENIZE_VENMO_START"
-  }), e.tokenize().then(e => {
+  }), module.tokenize().then(e => {
     let {
       username: t
     } = e.details;
@@ -186,22 +187,22 @@ function b(e, t) {
 }
 
 function y() {
-  return b(o.Z.getPayPalClient(), {
+  return b(Chunk618541.Z.getPayPalClient(), {
     type: "BRAINTREE_TEARDOWN_PAYPAL_CLIENT"
   })
 }
 
 function O() {
-  return b(o.Z.getVenmoClient(), {
+  return b(Chunk618541.Z.getVenmoClient(), {
     type: "BRAINTREE_TEARDOWN_VENMO_CLIENT"
   })
 }
 
 function v() {
-  let e = o.Z.getLastURL();
-  null == e ? g() : (i.Z.dispatch({
+  let e = Chunk618541.Z.getLastURL();
+  null == module ? g() : (Chunk570140.Z.dispatch({
     type: "BRAINTREE_TOKENIZE_PAYPAL_START"
-  }), window.open(e))
+  }), window.open(module))
 }
 
 function I() {

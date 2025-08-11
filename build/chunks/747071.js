@@ -1,16 +1,17 @@
 /** Chunk was on web.js **/
+/** chunk id: 747071, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => s
 });
-var r, i = n(695346),
-  o = n(131951),
-  a = n(36703);
+var r, Chunk695346 = require("./695346.js"),
+  Chunk131951 = require("./131951.js"),
+  Chunk36703 = require("./36703.js");
 
 function s(e) {
-  let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : (() => {
+  let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : (() => {
     var e;
-    return null != (r = null == (e = i.kU.getSetting()) ? void 0 : e.volume) ? r : 100
+    return null != (r = null == (e = i.kU.getSetting()) ? true : e.volume) ? r : 100
   })();
   return Math.min(e * ((0, a.P)(t) / 100) * Math.min(o.Z.getOutputVolume() / 100, 1), 1)
 }

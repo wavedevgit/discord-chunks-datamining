@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 522501, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   ZP: () => c,
   _X: () => l,
   mK: () => s
@@ -10,4 +11,4 @@ let {
   LayerContainer: i,
   LayerProvider: o,
   layerContext: a
-} = (0, n(302901).Xv)("PictureInPicture"), s = i, l = o, c = r
+} = (0, require("./302901.jsx").Xv)("PictureInPicture"), s = i, l = o, c = r

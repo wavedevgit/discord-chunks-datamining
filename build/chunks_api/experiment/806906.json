@@ -1,1 +1,0 @@
-{"id":"806906","type":"experiment","data":{"kind":"user","id":"2025-06_nameplate_mobile_purchasing","label":"Nameplates Mobile Purchasing","commonTriggerPoint":"i.$P.CONNECTION_OPEN","defaultConfig":{"canPurchaseNameplates":false},"treatments":[{"id":1,"label":"Enable Mobile Purchasing","config":{"canPurchaseNameplates":false}}]},"fromModule":{"id":"1272"}}

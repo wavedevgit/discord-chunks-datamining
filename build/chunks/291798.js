@@ -1,5 +1,6 @@
 /** Chunk was on 34779 **/
-e.exports = {
+/** chunk id: 291798, original params: e,t,n (module,exports,require) **/
+module.exports = {
   flexColumn: "flexColumn__16b66",
   flexRow: "flexRow__16b66",
   assetsLargeImage: "assetsLargeImage__16b66",

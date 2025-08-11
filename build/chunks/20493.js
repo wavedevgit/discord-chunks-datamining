@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 20493, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   marginReset: "marginReset_fd297e",
   marginTop4: "marginTop4_fd297e",
   marginBottom4: "marginBottom4_fd297e",

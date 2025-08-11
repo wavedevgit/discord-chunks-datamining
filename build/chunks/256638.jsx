@@ -1,0 +1,544 @@
+/** Chunk was on web.js **/
+/** chunk id: 256638, original params: e,t,n (module,exports,re quire) **/
+"use strict";
+require.d(exports, {
+  Z: () => eM,
+  c: () => eD
+});
+var Chunk255367 = require("./255367.js"),
+  Chunk73800 = require("./73800.js"),
+  Chunk913527 = require("./913527.js"),
+  a = require.n(Chunk913527),
+  Chunk688642 = require("./688642.js"),
+  Chunk442837 = require("./442837.js"),
+  Chunk481060 = require("./481060.js"),
+  Chunk668781 = require("./668781.js"),
+  Chunk846027 = require("./846027.js"),
+  Chunk893776 = require("./893776.js"),
+  Chunk117266 = require("./117266.js"),
+  Chunk37234 = require("./37234.js"),
+  Chunk254854 = require("./254854.js"),
+  Chunk195500 = require("./195500.js"),
+  Chunk287734 = require("./287734.js"),
+  Chunk205355 = require("./205355.js"),
+  Chunk558381 = require("./558381.js"),
+  Chunk223245 = require("./223245.js"),
+  Chunk491428 = require("./491428.js"),
+  Chunk401430 = require("./401430.js"),
+  Chunk230711 = require("./230711.js"),
+  Chunk726542 = require("./726542.js"),
+  Chunk100527 = require("./100527.js"),
+  Chunk906732 = require("./906732.js"),
+  Chunk812206 = require("./812206.js"),
+  Chunk391650 = require("./391650.js"),
+  Chunk600164 = require("./600164.js"),
+  Chunk266454 = require("./266454.js"),
+  Chunk749277 = require("./749277.js"),
+  Chunk196068 = require("./196068.jsx"),
+  Chunk132144 = require("./132144.jsx"),
+  Chunk131130 = require("./131130.jsx"),
+  Chunk458725 = require("./458725.js"),
+  Chunk386146 = require("./386146.js"),
+  Chunk492435 = require("./492435.js"),
+  Chunk353926 = require("./353926.js"),
+  Chunk506357 = require("./506357.js"),
+  Chunk36459 = require("./36459.js"),
+  Chunk236069 = require("./236069.jsx"),
+  Chunk305325 = require("./305325.js"),
+  Chunk281956 = require("./281956.js"),
+  Chunk574650 = require("./574650.js"),
+  Chunk665302 = require("./665302.js"),
+  Chunk434404 = require("./434404.js"),
+  Chunk918658 = require("./918658.js"),
+  Chunk859428 = require("./859428.js"),
+  Chunk963249 = require("./963249.js"),
+  Chunk96320 = require("./96320.js"),
+  Chunk535278 = require("./535278.js"),
+  Chunk246965 = require("./246965.jsx"),
+  Chunk272008 = require("./272008.js"),
+  Chunk523255 = require("./523255.js"),
+  Chunk101879 = require("./101879.jsx"),
+  Chunk496729 = require("./496729.js"),
+  Chunk852923 = require("./852923.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk131951 = require("./131951.js"),
+  Chunk19780 = require("./19780.js"),
+  Chunk914010 = require("./914010.js"),
+  Chunk594174 = require("./594174.js"),
+  Chunk55563 = require("./55563.js"),
+  Chunk695103 = require("./695103.js"),
+  Chunk933429 = require("./933429.js"),
+  Chunk626135 = require("./626135.js"),
+  Chunk63063 = require("./63063.js"),
+  Chunk72924 = require("./72924.jsx"),
+  Chunk69499 = require("./69499.jsx"),
+  Chunk912193 = require("./912193.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk474936 = require("./474936.js"),
+  Chunk610674 = require("./610674.js"),
+  Chunk65154 = require("./65154.js"),
+  Chunk388032 = require("./388032.js"),
+  Chunk131715 = require("./131715.js");
+
+function eI(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+
+function eT(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      eI(e, t, n[t])
+    })
+  }
+  return e
+}
+
+function eS(e, t) {
+  var n = Object.keys(e);
+  if (Object.getOwnPropertySymbols) {
+    var r = Object.getOwnPropertySymbols(e);
+    t && (r = r.filter(function(t) {
+      return Object.getOwnPropertyDescriptor(e, t).enumerable
+    })), n.push.apply(n, r)
+  }
+  return n
+}
+
+function eA(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : eS(Object(t)).forEach(function(n) {
+    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+  }), e
+}
+let eN = e => {
+    var t;
+    let {
+      error: n,
+      location: i,
+      allowClick: o = false
+    } = e, a = null == (t = (0, M.hp)(n)) ? true : t.errorCode, s = eO.intl.formatToPlainString(eO.t["ejOT9/"], {
+      errorCode: a
+    }), {
+      avErrorUIEnabled: l
+    } = (0, k.JN)({
+      location: i
+    });
+    if (!l) return null;
+    let u = <c.Text variant={"text-sm/bold"} color={"currentColor"} tag={"span"} className={ev.errorCodeNoticeText} selectable={true}>{s}</c.Text>;
+    return o ? <c.P3F tag={"span"} className={ev.errorCodeNoticeClickable} onClick={() => o && open(e_.Z.getArticleURL(eg.BhN.AV_ERROR_CODES))}>{u}</c.P3F> : u
+  },
+  eC = () => <Chunk481060.qXd color={Chunk481060.DM8.DANGER}>{<Chunk481060.RyX onClick={() => {
+        eD()
+      }} />}{Chunk388032.intl.string(Chunk388032.t.o3zuY2)}{<eN error={Chunk458725.u.NO_INPUT_DEVICES} location={"AudioIssueNoticeInputDevices"} />}{<Chunk481060.u3T href={Chunk63063.Z.getArticleURL(Chunk981631.BhN.NO_INPUT_DETECTED)}>{Chunk388032.intl.string(Chunk388032.t.RYKKo6)}</Chunk481060.u3T>}</Chunk481060.qXd>,
+  eR = () => <Chunk481060.qXd color={Chunk481060.DM8.DANGER}>{<Chunk481060.RyX onClick={() => {
+        eD(), (0, Chunk912193.b)()
+      }} />}{Chunk388032.intl.string(Chunk388032.t.nCO9bG)}{<eN error={Chunk458725.u.NO_AUDIO_INPUT_DETECTED} location={"AudioIssueNoticeHelpdesk"} />}{<Chunk481060.u3T href={Chunk63063.Z.getArticleURL(Chunk981631.BhN.NO_INPUT_DETECTED)}>{Chunk388032.intl.string(Chunk388032.t.RYKKo6)}</Chunk481060.u3T>}</Chunk481060.qXd>,
+  eP = () => <Chunk481060.qXd color={Chunk481060.DM8.DANGER}>{<Chunk481060.RyX onClick={() => {
+        eD(), (0, Chunk912193.b)()
+      }} />}{Chunk388032.intl.string(Chunk388032.t.dNAJ19)}{<eN allowClick={true} error={Chunk458725.u.NO_AUDIO_INPUT_DETECTED} location={"AudioIssueNoticeMicTester"} />}{<Chunk481060.EyT onClick={() => {
+        (0, Chunk37234.jN)(Chunk981631.S9g.USER_SETTINGS), Chunk230711.Z.setSection(Chunk981631.oAB.VOICE)
+      }}>{Chunk388032.intl.string(Chunk388032.t.I6YlBw)}</Chunk481060.EyT>}</Chunk481060.qXd>;
+
+function ew(e, t) {
+  let n = {
+    notice_type: e
+  };
+  null != t && (n.guild_id = t), ef.default.track(eg.rMx.APP_NOTICE_VIEWED, n)
+}
+
+function eD(e) {
+  h.Z.dismiss(null != e ? {
+    untilAtLeast: a()(e)
+  } : true)
+}
+
+function eL(e) {
+  return null != e ? ed.m9[e] : null
+}
+let ex = Chunk73800.memo(function() {
+  var e, t;
+  let o = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser()),
+    h = (0, Chunk442837.e7)([Chunk914010.Z], () => Chunk914010.Z.getGuildId()),
+    S = (0, Chunk442837.e7)([Chunk933429.ZP], () => Chunk933429.ZP.getNotice()),
+    {
+      analyticsLocations: M
+    } = (0, Chunk906732.ZP)(),
+    k = null == Chunk100527 ? true : Chunk100527.type,
+    ef = (0, Chunk281956.J)(Chunk254854);
+  Chunk73800.useEffect(() => {
+    null != Chunk386146 && ew(Chunk386146, Chunk254854)
+  }, [Chunk386146, Chunk254854]), Chunk73800.useEffect(() => {
+    if (null != Chunk100527 && Chunk100527.type === Chunk981631.kVF.SURVEY && null != Chunk100527.metadata) {
+      let {
+        metadata: e
+      } = Chunk100527, t = Chunk353926.Z.getUserExperimentDescriptor(module.id);
+      null != exports && (0, Chunk492435.W9)(module.id, exports), (async () => {
+        var e, t;
+        (null == (e = Chunk100527.metadata) ? true : module.id) != null && await (0, Chunk491428.g8)(null == (t = Chunk100527.metadata) ? true : exports.id)
+      })()
+    }
+  }, [Chunk100527]);
+  let em = null != Chunk386146 ? Chunk933429.zD[Chunk386146] : null,
+    eI = null != Chunk386146 ? Chunk933429.o[Chunk386146] : null,
+    eS = null != Chunk386146 ? Chunk933429.nA[Chunk386146] : null,
+    eN = eL(Chunk386146);
+  if (null == Chunk100527) return null;
+  let {
+    useRecurringNotices: ex
+  } = Chunk96320.b.getCurrentConfig({
+    location: "AppNotice"
+  });
+  if (ex && null != Chunk912193 && (Chunk386146 === Chunk981631.kVF.PREMIUM_TIER_2_TRIAL_ENDING || Chunk386146 === Chunk981631.kVF.PREMIUM_TIER_2_DISCOUNT_ENDING)) return <Chunk132144.W dismissibleContent={Chunk912193} noticeType={Chunk100527.type} />;
+  if (null != eI) return <Chunk131130.q dismissibleContent={eI} noticeType={Chunk100527.type} />;
+  if (null != eS) return <Chunk196068.c dismissibleContent={eS} />;
+  if (null != eN) return <Chunk749277.A dismissibleContent={eN} noticeType={Chunk100527.type} />;
+  let eM = null == (e = Chunk100527.metadata) ? true : module.premiumType;
+  switch (Chunk100527.type) {
+    case Chunk981631.kVF.LURKING_GUILD:
+      return <Chunk859428.Z />;
+    case Chunk981631.kVF.PENDING_MEMBER:
+      return <Chunk574650.Z />;
+    case Chunk981631.kVF.INVITED_TO_SPEAK:
+      return <Chunk852923.Z />;
+    case Chunk981631.kVF.GUILD_RAID_NOTIFICATION:
+      let {
+        dismissUntil: ek
+      } = Chunk100527.metadata;
+      return <Chunk506357.Z onDismiss={() => eD(ek)} />;
+    case Chunk981631.kVF.WIN32_DEPRECATED_MESSAGE:
+      let {
+        dismissUntil: ej
+      } = Chunk100527.metadata;
+      return <Chunk481060.qXd color={Chunk481060.DM8.WARNING}>{<Chunk481060.RyX onClick={() => eD(ej)} noticeType={Chunk981631.kVF.WIN32_DEPRECATED_MESSAGE} />}{Chunk388032.intl.format(Chunk388032.t["08KQ1N"], {
+          helpCenterLink: Chunk63063.Z.getArticleURL(Chunk981631.BhN.WIN32_DEPRECATE)
+        })}</Chunk481060.qXd>;
+    case Chunk981631.kVF.WIN7_8_DEPRECATED_MESSAGE:
+      let {
+        dismissUntil: eU
+      } = Chunk100527.metadata;
+      return <Chunk481060.qXd color={Chunk481060.DM8.WARNING}>{<Chunk481060.RyX onClick={() => eD(eU)} noticeType={Chunk981631.kVF.WIN7_8_DEPRECATED_MESSAGE} />}{Chunk388032.intl.format(Chunk388032.t["8Je+dX"], {
+          helpCenterLink: Chunk63063.Z.getArticleURL(Chunk981631.BhN.WIN7_8_DEPRECATE)
+        })}</Chunk481060.qXd>;
+    case Chunk981631.kVF.MACOS_19_DEPRECATED_MESSAGE:
+      let {
+        dismissUntil: eG
+      } = Chunk100527.metadata;
+      return <Chunk481060.qXd color={Chunk481060.DM8.WARNING}>{<Chunk481060.RyX onClick={() => eD(eG)} noticeType={Chunk981631.kVF.MACOS_19_DEPRECATED_MESSAGE} />}{Chunk388032.intl.format(Chunk388032.t.q8VPLi, {
+          helpCenterLink: Chunk63063.Z.getArticleURL(Chunk981631.BhN.MACOS_19_DEPRECATE)
+        })}</Chunk481060.qXd>;
+    case Chunk981631.kVF.GENERIC:
+      return <Chunk481060.qXd color={Chunk481060.DM8.DEFAULT}>{<Chunk481060.RyX onClick={() => eD()} noticeType={Chunk981631.kVF.GENERIC} />}{Chunk100527.message}{null != Chunk100527.buttonText ? <Chunk481060.NoS onClick={Chunk100527.callback} noticeType={Chunk981631.kVF.GENERIC}>{Chunk100527.buttonText}</Chunk481060.NoS> : null}</Chunk481060.qXd>;
+    case Chunk981631.kVF.LAUNCH_GAME_FAILURE:
+      return <Chunk481060.qXd color={Chunk481060.DM8.DANGER}>{<Chunk481060.RyX onClick={() => eD()} noticeType={Chunk981631.kVF.LAUNCH_GAME_FAILURE} />}{Chunk100527.message}{null != Chunk100527.buttonText ? <Chunk481060.NoS onClick={Chunk100527.callback} noticeType={Chunk981631.kVF.LAUNCH_GAME_FAILURE}>{Chunk100527.buttonText}</Chunk481060.NoS> : null}</Chunk481060.qXd>;
+    case Chunk981631.kVF.VOICE_DISABLED:
+      return <Chunk481060.qXd color={Chunk481060.DM8.WARNING}>{<Chunk481060.RyX onClick={() => {
+            Chunk195500.Z.clearRemoteDisconnectVoiceChannelId(), eD()
+          }} noticeType={Chunk981631.kVF.VOICE_DISABLED} />}{Chunk388032.intl.string(Chunk388032.t.bOQ3jY)}{<Chunk481060.NoS onClick={() => {
+            let e = Chunk19780.Z.getRemoteDisconnectVoiceChannelId();
+            null != module && null != Chunk592125.Z.getChannel(module) && Chunk287734.default.selectVoiceChannel(module)
+          }} noticeType={Chunk981631.kVF.VOICE_DISABLED}>{Chunk388032.intl.string(Chunk388032.t.vD60Pj)}</Chunk481060.NoS>}</Chunk481060.qXd>;
+    case Chunk981631.kVF.VOICE_CONNECTED_LAST_SESSION:
+      return <Chunk481060.qXd color={Chunk481060.DM8.DEFAULT}>{<Chunk481060.RyX onClick={() => {
+            Chunk195500.Z.clearLastSessionVoiceChannelId(), eD()
+          }} noticeType={Chunk981631.kVF.VOICE_CONNECTED_LAST_SESSION} />}{Chunk388032.intl.string(Chunk388032.t.jY2lUF)}{<Chunk481060.NoS onClick={() => {
+            let e = Chunk19780.Z.getLastSessionVoiceChannelId();
+            null != module && null != Chunk592125.Z.getChannel(module) && Chunk287734.default.selectVoiceChannel(module)
+          }} noticeType={Chunk981631.kVF.VOICE_CONNECTED_LAST_SESSION}>{Chunk388032.intl.string(Chunk388032.t.vD60Pj)}</Chunk481060.NoS>}</Chunk481060.qXd>;
+    case Chunk981631.kVF.SPOTIFY_AUTO_PAUSED:
+      let eB = Chunk726542.Z.get(Chunk981631.ABu.SPOTIFY);
+      return <Chunk481060.qXd color={Chunk481060.DM8.DANGER}>{<Chunk481060.RyX onClick={() => eD()} noticeType={Chunk981631.kVF.SPOTIFY_AUTO_PAUSED} />}{<img alt={""} className={Chunk131715.platformIcon} src={eB.icon.whiteSVG} />}{Chunk388032.intl.string(Chunk388032.t["D8Cp7+"])}{<Chunk481060.NoS onClick={() => Chunk230711.Z.open(Chunk981631.oAB.VOICE)} noticeType={Chunk981631.kVF.SPOTIFY_AUTO_PAUSED}>{Chunk388032.intl.string(Chunk388032.t.NiTd0d)}</Chunk481060.NoS>}{<Chunk481060.eee className={Chunk131715.textLinkSmall} href={Chunk63063.Z.getArticleURL(Chunk981631.BhN.SPOTIFY_AUTO_PAUSED)} target={"_blank"}>{Chunk388032.intl.string(Chunk388032.t.CiqAIS)}</Chunk481060.eee>}</Chunk481060.qXd>;
+    case Chunk981631.kVF.UNCLAIMED_ACCOUNT:
+      return <Chunk481060.qXd color={Chunk481060.DM8.DEFAULT}>{Chunk388032.intl.string(Chunk388032.t["f+Zaoq"])}{<Chunk481060.NoS noticeType={Chunk981631.kVF.UNCLAIMED_ACCOUNT} onClick={() => Chunk626135 && null != Chunk254854 ? (0, Chunk305325.hk)(Chunk254854) : Chunk391650.j()}>{Chunk388032.intl.string(Chunk388032.t.fiNVio)}</Chunk481060.NoS>}</Chunk481060.qXd>;
+    case Chunk981631.kVF.UNVERIFIED_ACCOUNT:
+      return <Chunk481060.qXd color={Chunk481060.DM8.DEFAULT}>{Chunk388032.intl.string(Chunk388032.t["3sWbf3"])}{<Chunk481060.NoS noticeType={Chunk981631.kVF.UNVERIFIED_ACCOUNT} onClick={() => {
+            Chunk893776.Z.verifyResend(), Chunk668781.Z.show({
+              title: Chunk388032.intl.string(Chunk388032.t.LykQYm),
+              body: Chunk388032.intl.format(Chunk388032.t.azKEPz, {
+                email: null == Chunk913527 ? true : Chunk913527.email
+              }),
+              secondaryConfirmText: Chunk388032.intl.string(Chunk388032.t.oP5zGB),
+              onConfirmSecondary: Chunk391650.j
+            })
+          }}>{Chunk388032.intl.string(Chunk388032.t.WnX4Jy)}</Chunk481060.NoS>}</Chunk481060.qXd>;
+    case Chunk981631.kVF.SCHEDULED_MAINTENANCE:
+      if (null == Chunk100527.metadata) return null;
+      return <Chunk481060.qXd color={Chunk481060.DM8.DEFAULT}>{<Chunk481060.RyX onClick={() => Chunk205355.Z.ackScheduledMaintenance()} noticeType={Chunk981631.kVF.SCHEDULED_MAINTENANCE} />}{Chunk388032.intl.format(Chunk388032.t.yb96S0, Chunk100527.metadata)}{<Chunk481060.u3T href={"".concat(Chunk981631.yXt.STATUS, "/incidents/").concat(Chunk100527.metadata.id)}>{Chunk388032.intl.string(Chunk388032.t.hvVgAQ)}</Chunk481060.u3T>}</Chunk481060.qXd>;
+    case Chunk981631.kVF.NO_INPUT_DETECTED:
+      if (!Chunk131951.Z.supports(Chunk65154.AN.LOOPBACK)) return <eR />;
+      return <eP />;
+    case Chunk981631.kVF.NO_INPUT_DEVICES_DETECTED:
+      return <eC />;
+    case Chunk981631.kVF.HARDWARE_MUTE:
+      if (null == Chunk100527.metadata) return null;
+      let {
+        vendor: eZ, model: eF
+      } = Chunk100527.metadata;
+      return <Chunk481060.qXd color={Chunk481060.DM8.DANGER}>{Chunk388032.intl.format(Chunk388032.t.qoDex8, {
+          vendorName: eZ.name,
+          modelName: eF.name
+        })}{<Chunk481060.RyX onClick={() => {
+            Chunk846027.Z.setEnableHardwareMuteNotice(false), eD()
+          }} />}{<Chunk481060.u3T href={eF.url} target={"_blank"} rel={"noreferrer noopener"}>{Chunk388032.intl.string(Chunk388032.t["Yl/Rio"])}</Chunk481060.u3T>}</Chunk481060.qXd>;
+    case Chunk981631.kVF.STREAMER_MODE:
+      return <Chunk481060.qXd color={Chunk481060.DM8.STREAMER_MODE}>{<Chunk481060.RyX onClick={() => eD()} noticeType={Chunk981631.kVF.STREAMER_MODE} />}{Chunk388032.intl.string(Chunk388032.t.iEgBXl)}{<Chunk481060.NoS onClick={() => Chunk223245.Z.setEnabled(false)} noticeType={Chunk981631.kVF.STREAMER_MODE}>{Chunk388032.intl.string(Chunk388032.t.R9GHyc)}</Chunk481060.NoS>}</Chunk481060.qXd>;
+    case Chunk981631.kVF.H264_DISABLED:
+      return <Chunk481060.qXd color={Chunk481060.DM8.DANGER}>{<Chunk481060.RyX onClick={() => {
+            eD()
+          }} />}{Chunk388032.intl.string(Chunk388032.t.HcErZW)}{<Chunk481060.EyT onClick={() => {
+            (0, Chunk37234.jN)(Chunk981631.S9g.USER_SETTINGS), Chunk230711.Z.setSection(Chunk981631.oAB.VOICE)
+          }}>{Chunk388032.intl.string(Chunk388032.t["51hI/v"])}</Chunk481060.EyT>}</Chunk481060.qXd>;
+    case Chunk981631.kVF.DETECTED_OFF_PLATFORM_PREMIUM_PERK:
+      if (null == Chunk100527.metadata) return null;
+      let {
+        skuId: eV, applicationId: eH
+      } = Chunk100527.metadata, eY = Chunk55563.Z.get(eV), eW = Chunk812206.Z.getApplication(eH);
+      if (null == eY || null == eW) return null;
+      let eK = {
+        page: Chunk981631.ZY5.IN_APP
+      };
+      return <Chunk481060.qXd color={Chunk481060.DM8.PREMIUM_TIER_1}>{<Chunk481060.RyX onClick={() => Chunk117266.Z(eY.id)} noticeType={Chunk981631.kVF.DETECTED_OFF_PLATFORM_PREMIUM_PERK} />}{<Chunk481060.SrA size={"md"} color={"currentColor"} className={Chunk131715.premiumIcon} />}{Chunk388032.intl.format(Chunk388032.t["g3MU//"], {
+          applicationName: eW.name,
+          skuName: eY.name
+        })}{<Chunk481060.NoS noticeType={Chunk981631.kVF.DETECTED_OFF_PLATFORM_PREMIUM_PERK} onClick={() => (0, Chunk72924.S)({
+            applicationId: eW.id,
+            skuId: eY.id,
+            openPremiumPaymentModal: () => {
+              (0, Chunk963249.Z)({
+                initialPlanId: null,
+                subscriptionTier: Chunk474936.Si.TIER_2,
+                analyticsLocations: Chunk458725,
+                analyticsObject: eK
+              })
+            },
+            analyticsLocations: Chunk458725,
+            analyticsLocationObject: eK,
+            context: __OVERLAY__ ? Chunk981631.IlC.OVERLAY : Chunk981631.IlC.APP
+          }).then(() => Chunk117266.Z(eY.id))}>{Chunk388032.intl.string(Chunk388032.t.KEwPY2)}</Chunk481060.NoS>}</Chunk481060.qXd>;
+    case Chunk981631.kVF.DETECTED_OFF_PLATFORM_PREMIUM_PERK_UPSELL: {
+      if (null == Chunk100527.metadata) return null;
+      let {
+        skuId: e,
+        applicationId: t
+      } = Chunk100527.metadata, n = Chunk55563.Z.get(module), i = Chunk812206.Z.getApplication(exports);
+      if (null == require || null == Chunk73800) return null;
+      return <Chunk481060.qXd color={Chunk481060.DM8.PREMIUM_TIER_1}>{<Chunk481060.RyX onClick={() => eD()} noticeType={Chunk981631.kVF.DETECTED_OFF_PLATFORM_PREMIUM_PERK_UPSELL} />}{<Chunk481060.SrA size={"md"} color={"currentColor"} className={Chunk131715.premiumIcon} />}{Chunk388032.intl.format(Chunk388032.t.LquIKC, {
+          applicationName: Chunk73800.name,
+          skuName: require.name
+        })}{<Chunk481060.EyT><Chunk688642.rU onClick={() => eD()} to={{
+              pathname: Chunk981631.Z5c.APPLICATION_STORE_LISTING_SKU(require.id),
+              state: {
+                scrollRestoration: false
+              }
+            }}>{Chunk388032.intl.string(Chunk388032.t.hvVgAQ)}</Chunk688642.rU></Chunk481060.EyT>}</Chunk481060.qXd>
+    }
+    case Chunk981631.kVF.SURVEY: {
+      let e = Chunk100527.metadata;
+      if (null == module) return null;
+      let {
+        key: t,
+        prompt: n,
+        cta: i,
+        url: o
+      } = module;
+      return <Chunk481060.qXd color={Chunk481060.DM8.CUSTOM}>{<Chunk481060.RyX noticeType={Chunk981631.kVF.SURVEY} onClick={() => {
+            (0, Chunk491428.hZ)(exports, true)
+          }} />}{require}{<Chunk481060.NoS noticeType={Chunk981631.kVF.SURVEY} onClick={() => {
+            window.open(Chunk913527, "_blank"), (0, Chunk491428.hZ)(exports, false)
+          }}>{Chunk73800}</Chunk481060.NoS>}</Chunk481060.qXd>
+    }
+    case Chunk981631.kVF.CORRUPT_INSTALLATION:
+      return <Chunk481060.qXd color={Chunk481060.DM8.DANGER}>{Chunk388032.intl.string(Chunk388032.t.ugxmk5)}{<Chunk481060.u3T href={Chunk63063.Z.getArticleURL(Chunk981631.BhN.CORRUPT_INSTALLATION)} target={"_blank"}>{Chunk388032.intl.string(Chunk388032.t["6ik4Xl"])}</Chunk481060.u3T>}</Chunk481060.qXd>;
+    case Chunk981631.kVF.VIDEO_UNSUPPORTED_BROWSER:
+      return <Chunk481060.qXd color={Chunk481060.DM8.WARNING}>{<Chunk481060.RyX onClick={() => eD()} noticeType={Chunk981631.kVF.VIDEO_UNSUPPORTED_BROWSER} />}{Chunk388032.intl.string(Chunk388032.t.wVjKGh)}{<Chunk481060.NoS noticeType={Chunk981631.kVF.VIDEO_UNSUPPORTED_BROWSER} onClick={() => {
+            (0, Chunk481060.ZDy)(async () => {
+              let {
+                default: e
+              } = await require.e("74023").then(require.bind(require, 431583));
+              return t => (0, r.jsx)(e, eT({
+                source: "Video unsupported browser"
+              }, t))
+            })
+          }}>{Chunk388032.intl.string(Chunk388032.t["1WjMbG"])}</Chunk481060.NoS>}</Chunk481060.qXd>;
+    case Chunk981631.kVF.DISPATCH_ERROR:
+      if (null == Chunk100527.metadata) return null;
+      let {
+        error: ez
+      } = Chunk100527.metadata;
+      return <Chunk481060.qXd color={Chunk481060.DM8.DANGER}>{<Chunk481060.RyX onClick={() => eD()} noticeType={Chunk981631.kVF.DISPATCH_ERROR} />}{null == ez ? true : ez.displayMessage}{<Chunk481060.NoS noticeType={Chunk981631.kVF.DISPATCH_ERROR} onClick={() => (0, Chunk481060.ZDy)(async () => {
+            let {
+              default: e
+            } = await require.e("20212").then(require.bind(require, 915194));
+            return t => (0, r.jsx)(e, eT({}, t))
+          })}>{Chunk388032.intl.string(Chunk388032.t.hvVgAQ)}</Chunk481060.NoS>}</Chunk481060.qXd>;
+    case Chunk981631.kVF.DISPATCH_INSTALL_SCRIPT_PROGRESS:
+      if (null == Chunk100527.metadata) return null;
+      let {
+        progress: eq, total: eX, name: eQ
+      } = Chunk100527.metadata;
+      return <Chunk481060.qXd color={Chunk481060.DM8.DEFAULT}>{<Chunk481060.RyX onClick={() => eD()} noticeType={Chunk981631.kVF.DISPATCH_INSTALL_SCRIPT_PROGRESS} />}{<Chunk600164.Z justify={Chunk600164.Z.Justify.CENTER}>{null != eQ ? Chunk388032.intl.formatToPlainString(Chunk388032.t["pHj+z8"], {
+            name: "".concat(eQ),
+            progress: eq,
+            total: eX
+          }) : Chunk388032.intl.formatToPlainString(Chunk388032.t["lHZn+P"], {
+            progress: eq,
+            total: eX
+          })}{<Chunk481060.$jN type={Chunk481060.$jN.Type.PULSING_ELLIPSIS} className={Chunk131715.ellipsis} />}</Chunk600164.Z>}</Chunk481060.qXd>;
+    case Chunk981631.kVF.APPLICATION_TEST_MODE:
+      if (null == Chunk100527.metadata) return null;
+      if (null != Chunk695103.Z.testModeEmbeddedApplicationId) return <Chunk481060.qXd color={Chunk481060.DM8.WARNING}><Chunk600164.Z justify={Chunk600164.Z.Justify.CENTER} align={Chunk600164.Z.Align.CENTER}>{<div>{Chunk388032.intl.format(Chunk388032.t["1qxVe3"], {
+              applicationName: Chunk100527.metadata.applicationName
+            })}</div>}{<Chunk481060.RyX onClick={Chunk401430.mc} noticeType={Chunk981631.kVF.APPLICATION_TEST_MODE} />}</Chunk600164.Z></Chunk481060.qXd>;
+      return <Chunk481060.qXd color={Chunk481060.DM8.WARNING}><Chunk600164.Z justify={Chunk600164.Z.Justify.CENTER} align={Chunk600164.Z.Align.CENTER}>{<div>{Chunk388032.intl.format(Chunk388032.t.Fv5HrK, {
+              applicationName: Chunk100527.metadata.applicationName
+            })}</div>}{<Chunk69499.Z dropdownSize={Chunk69499.E.DropdownSizes.SMALL} className={Chunk131715.testModeSKUSelector} color={Chunk69499.E.Colors.WHITE} look={Chunk69499.E.Looks.OUTLINED} size={Chunk69499.E.Sizes.MIN} onSKUSelect={e => b.yt(e.id, {
+              analyticsSource: {
+                page: null,
+                section: eg.jXE.NOTIFICATION_BAR,
+                object: eg.qAy.NAVIGATION_LINK
+              }
+            })} applicationId={Chunk100527.metadata.applicationId}>{Chunk388032.intl.string(Chunk388032.t.Q5ZgpK)}</Chunk69499.Z>}{<Chunk481060.RyX onClick={Chunk401430.mc} noticeType={Chunk981631.kVF.APPLICATION_TEST_MODE} />}</Chunk600164.Z></Chunk481060.qXd>;
+    case Chunk981631.kVF.VIEWING_ROLES:
+      return <Chunk918658.Z />;
+    case Chunk981631.kVF.PREMIUM_UNCANCEL:
+      return <Chunk481060.qXd color={eM === Chunk474936.p9.TIER_1 ? Chunk481060.DM8.PREMIUM_TIER_1 : eM === Chunk474936.p9.TIER_0 ? Chunk481060.DM8.PREMIUM_TIER_0 : Chunk481060.DM8.PREMIUM_TIER_2}>{<Chunk481060.RyX noticeType={Chunk981631.kVF.PREMIUM_UNCANCEL} onClick={() => {
+            var e, t;
+            eD(null == (t = Chunk100527.metadata) || null == (e = exports.premiumSubscription) ? true : module.currentPeriodEnd)
+          }} />}{<Chunk481060.SrA size={"md"} color={"currentColor"} className={Chunk131715.premiumIcon} />}{eM === Chunk474936.p9.TIER_1 ? Chunk388032.intl.formatToPlainString(Chunk388032.t.fXv4ws, {
+          daysLeft: Chunk100527.metadata.daysLeft
+        }) : eM === Chunk474936.p9.TIER_0 ? Chunk388032.intl.formatToPlainString(Chunk388032.t.ZOHZMj, {
+          daysLeft: Chunk100527.metadata.daysLeft
+        }) : Chunk388032.intl.formatToPlainString(Chunk388032.t.outyHh, {
+          daysLeft: Chunk100527.metadata.daysLeft
+        })}{<Chunk481060.NoS noticeType={Chunk981631.kVF.PREMIUM_UNCANCEL} onClick={() => {
+            var e, t;
+            eD(null == (t = Chunk100527.metadata) || null == (e = exports.premiumSubscription) ? true : module.currentPeriodEnd), (0, Chunk481060.ZDy)(async () => {
+              let {
+                default: e
+              } = await Promise.all([require.e("8016"), require.e("17938"), require.e("84992"), require.e("81263")]).then(require.bind(require, 561623));
+              return t => (0, r.jsx)(e, eA(eT({}, t), {
+                daysLeft: S.metadata.daysLeft,
+                premiumType: eM,
+                analyticsSource: "Nag Bar",
+                premiumSubscription: S.metadata.premiumSubscription
+              }))
+            })
+          }}>{eM === Chunk474936.p9.TIER_1 ? Chunk388032.intl.string(Chunk388032.t.BkbUPD) : eM === Chunk474936.p9.TIER_0 ? Chunk388032.intl.string(Chunk388032.t.Px978f) : Chunk388032.intl.string(Chunk388032.t.LW5tCA)}</Chunk481060.NoS>}</Chunk481060.qXd>;
+    case Chunk981631.kVF.PREMIUM_PAST_DUE_ONE_TIME_PAYMENT:
+      let {
+        daysPastDue: eJ, dismissUntil: e$
+      } = Chunk100527.metadata;
+      return <Chunk481060.qXd color={Chunk481060.DM8.WARNING}>{<Chunk481060.RyX noticeType={Chunk386146} onClick={() => {
+            eD(e$)
+          }} />}{Chunk388032.intl.format(Chunk388032.t.zxU0Ki, {
+          daysPastDue: eJ
+        })}{<Chunk481060.NoS noticeType={Chunk981631.kVF.PREMIUM_PAST_DUE_ONE_TIME_PAYMENT} onClick={() => {
+            eD(e$), Chunk230711.Z.open(Chunk981631.oAB.SUBSCRIPTIONS)
+          }}>{Chunk388032.intl.string(Chunk388032.t.q8rxeX)}</Chunk481060.NoS>}</Chunk481060.qXd>;
+    case Chunk981631.kVF.PREMIUM_PAST_DUE_INVALID_PAYMENT:
+      return <Chunk481060.qXd color={Chunk481060.DM8.DANGER}>{<Chunk481060.RyX noticeType={Chunk981631.kVF.PREMIUM_PAST_DUE_INVALID_PAYMENT} onClick={() => {
+            var e, t;
+            eD(null == (t = Chunk100527.metadata) || null == (e = exports.premiumSubscription) ? true : module.currentPeriodEnd)
+          }} />}{Chunk388032.intl.string(Chunk388032.t.LlZaoa)}{<Chunk481060.NoS noticeType={Chunk981631.kVF.PREMIUM_PAST_DUE_INVALID_PAYMENT} onClick={() => {
+            var e, t;
+            eD(null == (t = Chunk100527.metadata) || null == (e = exports.premiumSubscription) ? true : module.currentPeriodEnd), Chunk230711.Z.open(Chunk981631.oAB.SUBSCRIPTIONS)
+          }}>{Chunk388032.intl.string(Chunk388032.t["Zpd+Ym"])}</Chunk481060.NoS>}</Chunk481060.qXd>;
+    case Chunk981631.kVF.PREMIUM_PAST_DUE_MISSING_PAYMENT:
+      return <Chunk481060.qXd color={Chunk481060.DM8.WARNING}>{<Chunk481060.RyX noticeType={Chunk981631.kVF.PREMIUM_PAST_DUE_MISSING_PAYMENT} onClick={() => {
+            var e, t;
+            eD(null == (t = Chunk100527.metadata) || null == (e = exports.premiumSubscription) ? true : module.currentPeriodEnd)
+          }} />}{Chunk388032.intl.string(Chunk388032.t["30YfCg"])}{<Chunk481060.NoS noticeType={Chunk981631.kVF.PREMIUM_PAST_DUE_MISSING_PAYMENT} onClick={() => {
+            var e, t;
+            eD(null == (t = Chunk100527.metadata) || null == (e = exports.premiumSubscription) ? true : module.currentPeriodEnd), Chunk230711.Z.open(Chunk981631.oAB.SUBSCRIPTIONS)
+          }}>{Chunk388032.intl.string(Chunk388032.t.U5pKWF)}</Chunk481060.NoS>}</Chunk481060.qXd>;
+    case Chunk981631.kVF.PREMIUM_MISSING_PAYMENT:
+      return <Chunk481060.qXd color={Chunk481060.DM8.WARNING}>{<Chunk481060.RyX noticeType={Chunk981631.kVF.PREMIUM_MISSING_PAYMENT} onClick={() => {
+            var e, t;
+            eD(null == (t = Chunk100527.metadata) || null == (e = exports.premiumSubscription) ? true : module.currentPeriodEnd)
+          }} />}{eM === Chunk474936.p9.TIER_1 ? Chunk388032.intl.formatToPlainString(Chunk388032.t.b6QUvb, {
+          daysLeft: Chunk100527.metadata.daysLeft
+        }) : eM === Chunk474936.p9.TIER_0 ? Chunk388032.intl.formatToPlainString(Chunk388032.t["tURZ/P"], {
+          daysLeft: Chunk100527.metadata.daysLeft
+        }) : Chunk388032.intl.formatToPlainString(Chunk388032.t.AyC74O, {
+          daysLeft: Chunk100527.metadata.daysLeft
+        })}{<Chunk481060.NoS noticeType={Chunk981631.kVF.PREMIUM_MISSING_PAYMENT} onClick={() => {
+            var e, t;
+            eD(null == (t = Chunk100527.metadata) || null == (e = exports.premiumSubscription) ? true : module.currentPeriodEnd), Chunk230711.Z.open(Chunk981631.oAB.SUBSCRIPTIONS)
+          }}>{eM === Chunk474936.p9.TIER_1 ? Chunk388032.intl.string(Chunk388032.t.lboF5O) : eM === Chunk474936.p9.TIER_0 ? Chunk388032.intl.string(Chunk388032.t["4UPwOj"]) : Chunk388032.intl.string(Chunk388032.t["P/VvGR"])}</Chunk481060.NoS>}</Chunk481060.qXd>;
+    case Chunk981631.kVF.BACK_TO_PREVIOUS_SCREEN:
+      return <Chunk665302.h buttonText={null != (t = Chunk100527.buttonText) ? exports : Chunk388032.intl.string(Chunk388032.t["/g10LC"])} onGoBack={Chunk100527.callback} onDismiss={() => eD()} showCloseButton={true} />;
+    case Chunk981631.kVF.AUTOMOD_QUARANTINED_USER_PROFILE: {
+      let e = {
+        page: Chunk981631.ZY5.IN_APP
+      };
+      return <Chunk236069.Z guildId={Chunk254854} analyticsLocations={Chunk458725} analyticsLocation={module} />
+    }
+    case Chunk981631.kVF.QUARANTINED:
+      return <Chunk481060.qXd color={Chunk481060.DM8.DANGER}>{Chunk388032.intl.string(Chunk388032.t.DVFJYW)}{<Chunk481060.u3T href={Chunk610674.Z} target={"_blank"}>{Chunk388032.intl.string(Chunk388032.t.kvHdFB)}</Chunk481060.u3T>}{<Chunk481060.eee href={Chunk63063.Z.getArticleURL(Chunk981631.BhN.QUARANTINE)} target={"_blank"} className={Chunk131715.quarantineLearnMoreLink}>{Chunk388032.intl.string(Chunk388032.t.hvVgAQ)}</Chunk481060.eee>}</Chunk481060.qXd>;
+    case Chunk981631.kVF.BLOCKED_BY_PROXY:
+      return <Chunk481060.qXd color={Chunk481060.DM8.WARNING}>{Chunk388032.intl.string(Chunk388032.t.Ugijzs)}{<Chunk481060.u3T href={"".concat(Chunk981631.yXt.STATUS)}>{Chunk388032.intl.string(Chunk388032.t.hvVgAQ)}</Chunk481060.u3T>}{<Chunk481060.RyX onClick={() => eD()} noticeType={Chunk981631.kVF.BLOCKED_BY_PROXY} />}</Chunk481060.qXd>;
+    case Chunk981631.kVF.AUTO_MODERATION_MENTION_RAID_DETECTION:
+      let {
+        dismissUntil: e0, decisionId: e1
+      } = Chunk100527.metadata;
+      return <Chunk481060.qXd color={Chunk481060.DM8.WARNING}>{<Chunk481060.RyX noticeType={Chunk981631.kVF.AUTO_MODERATION_MENTION_RAID_DETECTION} onClick={() => {
+            null != Chunk254854 && (0, Chunk36459.T9)(Chunk254854), eD(e0)
+          }} />}{Chunk388032.intl.string(Chunk388032.t.B8ruyc)}{<Chunk481060.EyT onClick={() => {
+            null != Chunk254854 && (0, Chunk36459.UE)(Chunk254854, e1, () => {
+              eD(e0), (0, Chunk36459.T9)(Chunk254854)
+            })
+          }}>{Chunk388032.intl.string(Chunk388032.t.oX14Eh)}</Chunk481060.EyT>}{null != Chunk254854 ? <Chunk481060.EyT onClick={() => Chunk434404.Z.open(Chunk254854, Chunk981631.pNK.GUILD_AUTOMOD, true, Chunk981631.KsC.AUTOMOD_MENTION_SPAM)}>{Chunk388032.intl.string(Chunk388032.t["1R7QIy"])}</Chunk481060.EyT> : null}</Chunk481060.qXd>;
+    case Chunk981631.kVF.SAFETY_USER_SENTIMENT_NAGBAR:
+      return <Chunk481060.qXd color={Chunk481060.DM8.BRAND}>{<Chunk481060.RyX noticeType={Chunk981631.kVF.SAFETY_USER_SENTIMENT_NAGBAR} onClick={() => {
+            Chunk523255.hZ(), eD()
+          }} />}{Chunk388032.intl.string(Chunk388032.t.I1nKfH)}{<Chunk481060.NoS noticeType={Chunk981631.kVF.SAFETY_USER_SENTIMENT_NAGBAR} onClick={() => {
+            (0, Chunk481060.ZDy)(async () => {
+              let {
+                default: e
+              } = await require.e("52432").then(require.bind(require, 349994));
+              return t => (0, r.jsx)(e, eT({}, t))
+            }), Chunk523255.hZ(), eD()
+          }}>{Chunk388032.intl.string(Chunk388032.t.l5xYnJ)}</Chunk481060.NoS>}</Chunk481060.qXd>;
+    case Chunk981631.kVF.PREMIUM_TIER_2_TRIAL_ENDING:
+      let e2 = a()().add(5, "days").toDate();
+      return <Chunk246965.Z dismissCurrentNotice={() => {
+          (0, Chunk266454.Q3)(Chunk933429.m9[Chunk981631.kVF.PREMIUM_TIER_2_TRIAL_ENDING]), eD(e2)
+        }} subscriptionTier={Chunk474936.Si.TIER_2} />;
+    case Chunk981631.kVF.PREMIUM_TIER_2_DISCOUNT_ENDING:
+      let e3 = a()().add(5, "days").toDate();
+      return <Chunk535278.Z dismissCurrentNotice={() => {
+          eD(e3)
+        }} subscriptionTier={Chunk474936.Si.TIER_2} />;
+    case Chunk981631.kVF.QUESTS_PROGRESS_INTERRUPTION:
+      return <Chunk481060.qXd color={Chunk481060.DM8.DANGER}>{<Chunk481060.RyX noticeType={Chunk981631.kVF.QUESTS_PROGRESS_INTERRUPTION} onClick={() => {
+            var e;
+            (null == (e = Chunk100527.metadata) ? true : module.streamKey) != null && (0, Chunk272008.nE)(Chunk100527.metadata.streamKey)
+          }} />}{Chunk388032.intl.string(Chunk388032.t.rOx44u)}</Chunk481060.qXd>;
+    case Chunk981631.kVF.BLOCK_USER_FEEDBACK_NAGBAR:
+      return <Chunk481060.qXd color={Chunk481060.DM8.BRAND}>{<Chunk481060.RyX onClick={() => {
+            var e;
+            eD(null == (e = Chunk100527.metadata) ? true : module.dismissUntil)
+          }} noticeType={Chunk981631.kVF.BLOCK_USER_FEEDBACK_NAGBAR} />}{Chunk388032.intl.string(Chunk388032.t["0klLS0"])}{<Chunk481060.NoS onClick={() => {
+            var e;
+            (0, Chunk496729.ZZ)(), eD(null == (e = Chunk100527.metadata) ? true : module.dismissUntil)
+          }} noticeType={Chunk981631.kVF.BLOCK_USER_FEEDBACK_NAGBAR}>{Chunk388032.intl.string(Chunk388032.t.e4y2VF)}</Chunk481060.NoS>}</Chunk481060.qXd>;
+    case Chunk981631.kVF.IGNORE_USER_FEEDBACK_NAGBAR:
+      return <Chunk101879.Z />;
+    default:
+      return null
+  }
+});
+
+function eM() {
+  let {
+    analyticsLocations: e
+  } = (0, Chunk906732.ZP)(Chunk100527.Z.NOTICE);
+  return <Chunk906732.Gt value={module}><ex /></Chunk906732.Gt>
+}

@@ -1,12 +1,13 @@
 /** Chunk was on 67244 **/
+/** chunk id: 665352, original params: e,t,r (module,exports,require) **/
 "use strict";
-r.d(t, {
+require.d(exports, {
   Z: () => i
 });
-var a = r(37484),
-  n = r(629990),
-  s = r(527628),
-  o = r(181568);
+var Chunk37484 = require("./37484.js"),
+  Chunk629990 = require("./629990.js"),
+  Chunk527628 = require("./527628.js"),
+  Chunk181568 = require("./181568.js");
 class i {
   constructor(e) {
     this.id = e.id, this.name = e.name, this.base = e.base ? i.get(e.base) : null, this.aliases = e.aliases, this.base && (this.fromBase = e.fromBase, this.toBase = e.toBase);
@@ -21,15 +22,15 @@ class i {
     this.formats.color?.id || (this.formats.color = {
       ...this.formats.color ?? {},
       id: e.cssId || this.id
-    }), e.gamutSpace ? this.gamutSpace = "self" === e.gamutSpace ? this : i.get(e.gamutSpace) : this.isPolar ? this.gamutSpace = this.base : this.gamutSpace = this, this.gamutSpace.isUnbounded && (this.inGamut = (e, t) => !0), this.referred = e.referred, Object.defineProperty(this, "path", {
+    }), e.gamutSpace ? this.gamutSpace = "self" === e.gamutSpace ? this : i.get(e.gamutSpace) : this.isPolar ? this.gamutSpace = this.base : this.gamutSpace = this, this.gamutSpace.isUnbounded && (this.inGamut = (e, t) => true), this.referred = e.referred, Object.defineProperty(this, "path", {
       value: (function(e) {
         let t = [e];
         for (let r = e; r = r.base;) t.push(r);
         return t
       })(this).reverse(),
-      writable: !1,
-      enumerable: !0,
-      configurable: !0
+      writable: false,
+      enumerable: true,
+      configurable: true
     }), s.Z.run("colorspace-init-end", this)
   }
   inGamut(e, {
@@ -42,11 +43,11 @@ class i {
     return e.every((e, a) => {
       let n = r[a];
       if ("angle" !== n.type && n.range) {
-        if (Number.isNaN(e)) return !0;
+        if (Number.isNaN(e)) returntrue;
         let [r, a] = n.range;
-        return (void 0 === r || e >= r - t) && (void 0 === a || e <= a + t)
+        return (true === r || e >= r - t) && (true === a || e <= a + t)
       }
-      return !0
+      returntrue
     })
   }
   get isUnbounded() {
@@ -57,8 +58,8 @@ class i {
   }
   get isPolar() {
     for (let e in this.coords)
-      if ("angle" === this.coords[e].type) return !0;
-    return !1
+      if ("angle" === this.coords[module].type) returntrue;
+    returnfalse
   }
   getFormat(e) {
     let t;
@@ -98,11 +99,11 @@ class i {
   getMinCoords() {
     let e = [];
     for (let t in this.coords) {
-      let r = this.coords[t],
-        a = r.range || r.refRange;
-      e.push(a?.min ?? 0)
+      let r = this.coords[exports],
+        a = require.range || require.refRange;
+      module.push(Chunk37484?.min ?? 0)
     }
-    return e
+    return module
   }
   static registry = {};
   static get all() {

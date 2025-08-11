@@ -1,22 +1,23 @@
 /** Chunk was on web.js **/
+/** chunk id: 605338, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => l
-}), n(997841);
-var r = n(81825),
-  i = n(397047),
-  o = n(630388),
-  a = n(474936);
+}), require("./997841.js");
+var Chunk81825 = require("./81825.js"),
+  Chunk397047 = require("./397047.js"),
+  Chunk630388 = require("./630388.js"),
+  Chunk474936 = require("./474936.js");
 
 function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
-class l extends r.Z {
+class l extends Chunk81825.Z {
   static createFromServer(e) {
     var t, n, r, i, o, a, s, c;
     return new l({
@@ -40,13 +41,13 @@ class l extends r.Z {
     })
   }
   get isThirdPartyOutbound() {
-    return this.promotionType === i.$.THIRD_PARTY_OUTBOUND
+    return this.promotionType === Chunk397047.$.THIRD_PARTY_OUTBOUND
   }
   get isBogo() {
-    return this.promotionType === i.$.BOGO
+    return this.promotionType === Chunk397047.$.BOGO
   }
   get isMarketingMoment() {
-    return this.promotionType === i.$.MARKETING_MOMENT
+    return this.promotionType === Chunk397047.$.MARKETING_MOMENT
   }
   hasFlag(e) {
     return (0, o.yE)(this.flags, e)
@@ -58,14 +59,14 @@ class l extends r.Z {
       case i.$.THIRD_PARTY_OUTBOUND:
         return this.outboundRestrictedCountries.includes(e);
       default:
-        return !1
+        returnfalse
     }
   }
   isRedeemableByTrialUsers() {
-    return this.hasFlag(a.TD.IS_OUTBOUND_REDEEMABLE_BY_TRIAL_USERS)
+    return this.hasFlag(Chunk474936.TD.IS_OUTBOUND_REDEEMABLE_BY_TRIAL_USERS)
   }
   constructor(e) {
     var t, n, r;
-    super(), s(this, "id", void 0), s(this, "trialId", void 0), s(this, "startDate", void 0), s(this, "endDate", void 0), s(this, "outboundRedemptionEndDate", void 0), s(this, "inboundHeaderText", void 0), s(this, "inboundBodyText", void 0), s(this, "inboundHelpCenterLink", void 0), s(this, "outboundTitle", void 0), s(this, "outboundRedemptionModalBody", void 0), s(this, "outboundTermsAndConditions", void 0), s(this, "outboundRedemptionPageLink", void 0), s(this, "outboundRedemptionUrlFormat", void 0), s(this, "flags", void 0), s(this, "inboundRestrictedCountries", void 0), s(this, "outboundRestrictedCountries", void 0), s(this, "promotionType", void 0), this.id = e.id, this.trialId = e.trialId, this.startDate = e.startDate, this.endDate = e.endDate, this.outboundRedemptionEndDate = e.outboundRedemptionEndDate, this.inboundHeaderText = e.inboundHeaderText, this.inboundBodyText = e.inboundBodyText, this.inboundHelpCenterLink = e.inboundHelpCenterLink, this.outboundTitle = e.outboundTitle, this.outboundRedemptionModalBody = e.outboundRedemptionModalBody, this.outboundTermsAndConditions = e.outboundTermsAndConditions, this.outboundRedemptionPageLink = e.outboundRedemptionPageLink, this.outboundRedemptionUrlFormat = e.outboundRedemptionUrlFormat, this.flags = null != (t = e.flags) ? t : 0, this.inboundRestrictedCountries = null != (n = e.inboundRestrictedCountries) ? n : [], this.outboundRestrictedCountries = null != (r = e.outboundRestrictedCountries) ? r : [], this.promotionType = e.promotionType
+    super(), s(this, "id", true), s(this, "trialId", true), s(this, "startDate", true), s(this, "endDate", true), s(this, "outboundRedemptionEndDate", true), s(this, "inboundHeaderText", true), s(this, "inboundBodyText", true), s(this, "inboundHelpCenterLink", true), s(this, "outboundTitle", true), s(this, "outboundRedemptionModalBody", true), s(this, "outboundTermsAndConditions", true), s(this, "outboundRedemptionPageLink", true), s(this, "outboundRedemptionUrlFormat", true), s(this, "flags", true), s(this, "inboundRestrictedCountries", true), s(this, "outboundRestrictedCountries", true), s(this, "promotionType", true), this.id = e.id, this.trialId = e.trialId, this.startDate = e.startDate, this.endDate = e.endDate, this.outboundRedemptionEndDate = e.outboundRedemptionEndDate, this.inboundHeaderText = e.inboundHeaderText, this.inboundBodyText = e.inboundBodyText, this.inboundHelpCenterLink = e.inboundHelpCenterLink, this.outboundTitle = e.outboundTitle, this.outboundRedemptionModalBody = e.outboundRedemptionModalBody, this.outboundTermsAndConditions = e.outboundTermsAndConditions, this.outboundRedemptionPageLink = e.outboundRedemptionPageLink, this.outboundRedemptionUrlFormat = e.outboundRedemptionUrlFormat, this.flags = null != (t = e.flags) ? t : 0, this.inboundRestrictedCountries = null != (n = e.inboundRestrictedCountries) ? n : [], this.outboundRestrictedCountries = null != (r = e.outboundRestrictedCountries) ? r : [], this.promotionType = e.promotionType
   }
 }

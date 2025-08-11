@@ -1,7 +1,8 @@
 /** Chunk was on web.js **/
+/** chunk id: 599552, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-var r = n(172367);
-e.exports = function(e) {
+var Chunk172367 = require("./172367.js");
+module.exports = function(e) {
   var t = e.getSelection(),
     n = t.getEndKey(),
     i = e.getCurrentContent().getBlockForKey(n).getLength();
@@ -11,8 +12,8 @@ e.exports = function(e) {
       anchorOffset: i,
       focusKey: n,
       focusOffset: i,
-      isBackward: !1
+      isBackward: false
     }),
-    forceSelection: !0
+    forceSelection: true
   })
 }

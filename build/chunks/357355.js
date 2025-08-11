@@ -1,18 +1,19 @@
 /** Chunk was on web.js **/
+/** chunk id: 357355, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => u
 });
-var r = n(442837),
-  i = n(570140);
+var Chunk442837 = require("./442837.js"),
+  Chunk570140 = require("./570140.js");
 let o = {
-  fetched: !1,
+  fetched: false,
   affinities: []
 };
 
 function a(e) {
   let {} = e;
-  o.fetched = !0
+  o.fetched = true
 }
 
 function s(e) {
@@ -23,9 +24,9 @@ function s(e) {
 }
 
 function l() {
-  o.fetched = !1, o.affinities = []
+  o.fetched = false, o.affinities = []
 }
-class c extends r.ZP.Store {
+class c extends Chunk442837.ZP.Store {
   get hasFetched() {
     return o.fetched
   }
@@ -33,7 +34,7 @@ class c extends r.ZP.Store {
     return o.affinities
   }
 }
-let u = new c(i.Z, {
+let u = new c(Chunk570140.Z, {
   BILLING_NITRO_AFFINITY_FETCHED: a,
   BILLING_NITRO_AFFINITY_FETCH_SUCCEEDED: s,
   LOGOUT: l

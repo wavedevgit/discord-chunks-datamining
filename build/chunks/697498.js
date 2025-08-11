@@ -1,12 +1,9 @@
 /** Chunk was on 89744 **/
-n.r(t), n.d(t, {
+/** chunk id: 697498, original params: e,t,n (module,exports,require) **/
+require.r(exports), require.d(exports, {
   default: () => l,
   messagesLoader: () => i
 });
-let {
-  createLoader: r
-} = n(515149), i = r({
-  "en-US": () => n.e("88651").then(n.bind(n, 25555))
-}, "en-US"), {
-  makeMessagesProxy: a
-} = n(515149), l = a(i)
+letChunk515149 = require("./515149.js"), i = r({
+  "en-US": () => require.e("88651").then(require.bind(require, 25555))
+}, "en-US"), Chunk515149 = require("./515149.js"), l = a(i)

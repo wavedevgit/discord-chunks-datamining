@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 581327, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   galleryContainer: "galleryContainer_d75751",
   gallery: "gallery_d75751",
   galleryItem: "galleryItem_d75751",

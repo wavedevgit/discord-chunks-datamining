@@ -1,15 +1,16 @@
 /** Chunk was on web.js **/
+/** chunk id: 330711, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => a
 });
-var r = n(973361),
-  i = n(627420);
-n(211604);
-let o = new i.ZP({
-  initialLocale: r.parse(document.cookie).locale,
+var Chunk973361 = require("./973361.js"),
+  Chunk627420 = require("./627420.js");
+require("./211604.js");
+let o = new Chunk627420.ZP({
+  initialLocale: Chunk973361.parse(document.cookie).locale,
   getMessages: e => n(292516)("./".concat(e)),
-  getLanguages: () => n(34859)
+  getLanguages: () => require("./34859.js")
 });
 o.addListener("locale", e => {
   document.cookie = "locale=".concat(e, ";path=/")

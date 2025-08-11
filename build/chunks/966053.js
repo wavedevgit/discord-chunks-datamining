@@ -1,5 +1,6 @@
 /** Chunk was on 75708 **/
-e.exports = {
+/** chunk id: 966053, original params: e,t,n (module,exports,require) **/
+module.exports = {
   slideAnimator: "slideAnimator_f8824b",
   title: "title_f8824b",
   formItem: "formItem_f8824b",

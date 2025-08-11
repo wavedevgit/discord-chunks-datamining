@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 215084, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   reactionTooltip: "reactionTooltip_b49891",
   reactionTooltipEmoji: "reactionTooltipEmoji_b49891",
   reactionTooltipText: "reactionTooltipText_b49891",

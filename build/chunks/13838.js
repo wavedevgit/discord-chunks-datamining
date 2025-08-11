@@ -1,32 +1,33 @@
 /** Chunk was on 1272 **/
-n.d(t, {
+/** chunk id: 13838, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => Z
-}), n(388685);
-var r = n(392711),
-  i = n.n(r),
-  l = n(243814),
-  a = n(902704),
-  o = n(622822),
-  s = n(812206),
-  c = n(594190),
-  u = n(601964),
-  d = n(199902),
-  p = n(592125),
-  f = n(271383),
-  h = n(430824),
-  g = n(131951),
-  m = n(19780),
-  b = n(594174),
-  _ = n(979651),
-  O = n(996106),
-  E = n(914946),
-  y = n(238679),
-  v = n(452426),
-  I = n(295424),
-  C = n(222263),
-  S = n(863141),
-  N = n(186901),
-  T = n(981631);
+}), require("./388685.js");
+var Chunk392711 = require("./392711.js"),
+  i = require.n(Chunk392711),
+  Chunk243814 = require("./243814.js"),
+  Chunk902704 = require("./902704.js"),
+  Chunk622822 = require("./622822.js"),
+  Chunk812206 = require("./812206.js"),
+  Chunk594190 = require("./594190.js"),
+  Chunk601964 = require("./601964.js"),
+  Chunk199902 = require("./199902.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk271383 = require("./271383.js"),
+  Chunk430824 = require("./430824.js"),
+  Chunk131951 = require("./131951.js"),
+  Chunk19780 = require("./19780.js"),
+  Chunk594174 = require("./594174.js"),
+  Chunk979651 = require("./979651.js"),
+  Chunk996106 = require("./996106.js"),
+  Chunk914946 = require("./914946.js"),
+  Chunk238679 = require("./238679.js"),
+  Chunk452426 = require("./452426.js"),
+  Chunk295424 = require("./295424.js"),
+  Chunk222263 = require("./222263.js"),
+  Chunk863141 = require("./863141.js"),
+  Chunk186901 = require("./186901.js"),
+  Chunk981631 = require("./981631.js");
 let P = e => (0, v.Z)(e).required().keys({
   channel_id: e.string().required()
 });
@@ -42,7 +43,7 @@ function j(e) {
   if (null == i || !(0, E.zM)(i, r.application.id, r.authorization.scopes)) throw new O.Z({
     errorCode: T.lTL.INVALID_CHANNEL
   }, "Invalid channel id: ".concat(n));
-  if ((0, o.aC)(i) && (null == (t = b.default.getCurrentUser()) ? void 0 : t.nsfwAllowed) !== !0) throw new O.Z({
+  if ((0, o.aC)(i) && (null == (t = b.default.getCurrentUser()) ? true : t.nsfwAllowed) !== true) throw new O.Z({
     errorCode: T.lTL.INVALID_CHANNEL
   }, "Invalid nsfw channel id: ".concat(i.id))
 }
@@ -61,8 +62,8 @@ function A(e) {
   }, "Invalid channel id: ".concat(t))
 }
 let Z = {
-  [T.zMe.GUILD_STATUS]: {
-    scope: l.x.RPC,
+  [Chunk981631.zMe.GUILD_STATUS]: {
+    scope: Chunk243814.x.RPC,
     validation: e => (0, v.Z)(e).required().keys({
       guild_id: e.string().required()
     }),
@@ -94,9 +95,9 @@ let Z = {
       }
     }
   },
-  [T.zMe.VOICE_STATE_CREATE]: {
+  [Chunk981631.zMe.VOICE_STATE_CREATE]: {
     scope: {
-      [N.Gp.ANY]: [l.x.RPC, l.x.RPC_VOICE_READ]
+      [Chunk186901.Gp.ANY]: [Chunk243814.x.RPC, Chunk243814.x.RPC_VOICE_READ]
     },
     validation: e => (0, v.Z)(e).required().keys({
       channel_id: e.string().required()
@@ -127,9 +128,9 @@ let Z = {
       }
     }
   },
-  [T.zMe.VOICE_STATE_DELETE]: {
+  [Chunk981631.zMe.VOICE_STATE_DELETE]: {
     scope: {
-      [N.Gp.ANY]: [l.x.RPC, l.x.RPC_VOICE_READ]
+      [Chunk186901.Gp.ANY]: [Chunk243814.x.RPC, Chunk243814.x.RPC_VOICE_READ]
     },
     validation: e => (0, v.Z)(e).required().keys({
       channel_id: e.string().required()
@@ -160,9 +161,9 @@ let Z = {
       }
     }
   },
-  [T.zMe.VOICE_STATE_UPDATE]: {
+  [Chunk981631.zMe.VOICE_STATE_UPDATE]: {
     scope: {
-      [N.Gp.ANY]: [l.x.RPC, l.x.RPC_VOICE_READ]
+      [Chunk186901.Gp.ANY]: [Chunk243814.x.RPC, Chunk243814.x.RPC_VOICE_READ]
     },
     validation: e => (0, v.Z)(e).required().keys({
       channel_id: e.string().required()
@@ -188,9 +189,9 @@ let Z = {
       }
     }
   },
-  [T.zMe.VOICE_CONNECTION_STATUS]: {
+  [Chunk981631.zMe.VOICE_CONNECTION_STATUS]: {
     scope: {
-      [N.Gp.ANY]: [l.x.RPC, l.x.RPC_VOICE_READ]
+      [Chunk186901.Gp.ANY]: [Chunk243814.x.RPC, Chunk243814.x.RPC_VOICE_READ]
     },
     handler: () => e => {
       let {
@@ -206,117 +207,117 @@ let Z = {
       return i().isEqual(r, t) || n(r), r
     }
   },
-  [T.zMe.MESSAGE_CREATE]: {
-    scope: l.x.RPC,
+  [Chunk981631.zMe.MESSAGE_CREATE]: {
+    scope: Chunk243814.x.RPC,
     validation: P,
     handler: j
   },
-  [T.zMe.MESSAGE_UPDATE]: {
-    scope: l.x.RPC,
+  [Chunk981631.zMe.MESSAGE_UPDATE]: {
+    scope: Chunk243814.x.RPC,
     validation: P,
     handler: j
   },
-  [T.zMe.MESSAGE_DELETE]: {
-    scope: l.x.RPC,
+  [Chunk981631.zMe.MESSAGE_DELETE]: {
+    scope: Chunk243814.x.RPC,
     validation: P,
     handler: j
   },
-  [T.zMe.SPEAKING_START]: {
+  [Chunk981631.zMe.SPEAKING_START]: {
     scope: {
-      [N.Gp.ANY]: [l.x.RPC, l.x.RPC_VOICE_READ, N.lH]
+      [Chunk186901.Gp.ANY]: [Chunk243814.x.RPC, Chunk243814.x.RPC_VOICE_READ, Chunk186901.lH]
     },
     validation: x,
     handler: A
   },
-  [T.zMe.SPEAKING_STOP]: {
+  [Chunk981631.zMe.SPEAKING_STOP]: {
     scope: {
-      [N.Gp.ANY]: [l.x.RPC, l.x.RPC_VOICE_READ, N.lH]
+      [Chunk186901.Gp.ANY]: [Chunk243814.x.RPC, Chunk243814.x.RPC_VOICE_READ, Chunk186901.lH]
     },
     validation: x,
     handler: A
   },
-  [T.zMe.GUILD_CREATE]: {
-    scope: l.x.RPC,
+  [Chunk981631.zMe.GUILD_CREATE]: {
+    scope: Chunk243814.x.RPC,
     handler() {}
   },
-  [T.zMe.CHANNEL_CREATE]: {
-    scope: l.x.RPC,
+  [Chunk981631.zMe.CHANNEL_CREATE]: {
+    scope: Chunk243814.x.RPC,
     handler() {}
   },
-  [T.zMe.GAME_JOIN]: {
+  [Chunk981631.zMe.GAME_JOIN]: {
     scope: {
-      [N.Gp.ANY]: [l.x.RPC, N.lH]
+      [Chunk186901.Gp.ANY]: [Chunk243814.x.RPC, Chunk186901.lH]
     },
     handler() {}
   },
-  [T.zMe.GAME_SPECTATE]: {
+  [Chunk981631.zMe.GAME_SPECTATE]: {
     scope: {
-      [N.Gp.ANY]: [l.x.RPC, N.lH]
+      [Chunk186901.Gp.ANY]: [Chunk243814.x.RPC, Chunk186901.lH]
     },
     handler() {}
   },
-  [T.zMe.ACTIVITY_JOIN]: {
+  [Chunk981631.zMe.ACTIVITY_JOIN]: {
     scope: {
-      [N.Gp.ANY]: [l.x.RPC, N.wE, N.lH]
+      [Chunk186901.Gp.ANY]: [Chunk243814.x.RPC, Chunk186901.wE, Chunk186901.lH]
     },
     handler() {}
   },
-  [T.zMe.ACTIVITY_JOIN_REQUEST]: {
+  [Chunk981631.zMe.ACTIVITY_JOIN_REQUEST]: {
     scope: {
-      [N.Gp.ANY]: [l.x.RPC, N.lH]
+      [Chunk186901.Gp.ANY]: [Chunk243814.x.RPC, Chunk186901.lH]
     },
     handler() {}
   },
-  [T.zMe.ACTIVITY_SPECTATE]: {
+  [Chunk981631.zMe.ACTIVITY_SPECTATE]: {
     scope: {
-      [N.Gp.ANY]: [l.x.RPC, N.wE, N.lH]
+      [Chunk186901.Gp.ANY]: [Chunk243814.x.RPC, Chunk186901.wE, Chunk186901.lH]
     },
     handler() {}
   },
-  [T.zMe.ACTIVITY_INVITE]: {
+  [Chunk981631.zMe.ACTIVITY_INVITE]: {
     scope: {
-      [N.Gp.ANY]: [l.x.RPC, N.lH]
+      [Chunk186901.Gp.ANY]: [Chunk243814.x.RPC, Chunk186901.lH]
     },
     handler() {}
   },
-  [T.zMe.ACTIVITY_PIP_MODE_UPDATE]: {
-    scope: void 0,
+  [Chunk981631.zMe.ACTIVITY_PIP_MODE_UPDATE]: {
+    scope: true,
     handler() {}
   },
-  [T.zMe.ACTIVITY_LAYOUT_MODE_UPDATE]: {
-    scope: void 0,
+  [Chunk981631.zMe.ACTIVITY_LAYOUT_MODE_UPDATE]: {
+    scope: true,
     handler() {}
   },
-  [T.zMe.ACTIVITY_INSTANCE_PARTICIPANTS_UPDATE]: y.gQ,
-  [T.zMe.THERMAL_STATE_UPDATE]: {
+  [Chunk981631.zMe.ACTIVITY_INSTANCE_PARTICIPANTS_UPDATE]: Chunk238679.gQ,
+  [Chunk981631.zMe.THERMAL_STATE_UPDATE]: {
     scope: {
-      [N.Gp.ANY]: [N.wE]
+      [Chunk186901.Gp.ANY]: [Chunk186901.wE]
     },
     handler() {}
   },
-  [T.zMe.ORIENTATION_UPDATE]: {
+  [Chunk981631.zMe.ORIENTATION_UPDATE]: {
     scope: {
-      [N.Gp.ANY]: [N.wE]
+      [Chunk186901.Gp.ANY]: [Chunk186901.wE]
     },
     handler() {}
   },
-  [T.zMe.VOICE_CHANNEL_SELECT]: {
-    scope: l.x.RPC,
+  [Chunk981631.zMe.VOICE_CHANNEL_SELECT]: {
+    scope: Chunk243814.x.RPC,
     handler() {}
   },
-  [T.zMe.NOTIFICATION_CREATE]: {
+  [Chunk981631.zMe.NOTIFICATION_CREATE]: {
     scope: {
-      [N.Gp.ALL]: [l.x.RPC, l.x.RPC_NOTIFICATIONS_READ]
+      [Chunk186901.Gp.ALL]: [Chunk243814.x.RPC, Chunk243814.x.RPC_NOTIFICATIONS_READ]
     },
     handler() {}
   },
-  [T.zMe.RELATIONSHIP_UPDATE]: {
-    scope: l.x.RELATIONSHIPS_READ,
+  [Chunk981631.zMe.RELATIONSHIP_UPDATE]: {
+    scope: Chunk243814.x.RELATIONSHIPS_READ,
     handler() {}
   },
-  [T.zMe.CURRENT_USER_UPDATE]: {
+  [Chunk981631.zMe.CURRENT_USER_UPDATE]: {
     scope: {
-      [N.Gp.ANY]: [N.lH, l.x.IDENTIFY]
+      [Chunk186901.Gp.ANY]: [Chunk186901.lH, Chunk243814.x.IDENTIFY]
     },
     handler: () => e => {
       let {
@@ -328,9 +329,9 @@ let Z = {
       return null == r.currentUser || null != t && (0, a.Z)(r, t) || n((0, S.Z)(r.currentUser)), r
     }
   },
-  [T.zMe.CURRENT_GUILD_MEMBER_UPDATE]: {
+  [Chunk981631.zMe.CURRENT_GUILD_MEMBER_UPDATE]: {
     scope: {
-      [N.Gp.ALL]: [l.x.IDENTIFY, l.x.GUILDS_MEMBERS_READ]
+      [Chunk186901.Gp.ALL]: [Chunk243814.x.IDENTIFY, Chunk243814.x.GUILDS_MEMBERS_READ]
     },
     handler(e) {
       let {
@@ -349,30 +350,30 @@ let Z = {
       }
     }
   },
-  [T.zMe.ENTITLEMENT_CREATE]: {
+  [Chunk981631.zMe.ENTITLEMENT_CREATE]: {
     scope: {
-      [N.Gp.ANY]: [N.lH, N.wE]
+      [Chunk186901.Gp.ANY]: [Chunk186901.lH, Chunk186901.wE]
     },
     handler() {}
   },
-  [T.zMe.ENTITLEMENT_DELETE]: {
+  [Chunk981631.zMe.ENTITLEMENT_DELETE]: {
     scope: {
-      [N.Gp.ANY]: [N.lH, N.wE]
+      [Chunk186901.Gp.ANY]: [Chunk186901.lH, Chunk186901.wE]
     },
     handler() {}
   },
-  [T.zMe.SCREENSHARE_STATE_UPDATE]: {
+  [Chunk981631.zMe.SCREENSHARE_STATE_UPDATE]: {
     scope: {
-      [N.Gp.ALL]: [N.lH, l.x.RPC_SCREENSHARE_READ]
+      [Chunk186901.Gp.ALL]: [Chunk186901.lH, Chunk243814.x.RPC_SCREENSHARE_READ]
     },
     handler: () => e => {
       var t;
       let {
         prevState: n,
         dispatch: r
-      } = e, l = d.Z.getStreamerActiveStreamMetadata(), a = (null == l ? void 0 : l.pid) != null ? c.ZP.getGameForPID(l.pid) : null, o = (null == a ? void 0 : a.id) != null ? s.Z.getApplication(a.id) : null, u = null != o ? (0, I.Z)(o) : null, p = null == l ? void 0 : l.sourceName, f = {
+      } = e, l = d.Z.getStreamerActiveStreamMetadata(), a = (null == l ? true : l.pid) != null ? c.ZP.getGameForPID(l.pid) : null, o = (null == a ? true : a.id) != null ? s.Z.getApplication(a.id) : null, u = null != o ? (0, I.Z)(o) : null, p = null == l ? true : l.sourceName, f = {
         active: null != l,
-        pid: null != (t = null == l ? void 0 : l.pid) ? t : null,
+        pid: null != (t = null == l ? true : l.pid) ? t : null,
         application: null != u ? {
           name: p
         } : null
@@ -380,9 +381,9 @@ let Z = {
       return i().isEqual(f, n) || r(f), f
     }
   },
-  [T.zMe.VIDEO_STATE_UPDATE]: {
+  [Chunk981631.zMe.VIDEO_STATE_UPDATE]: {
     scope: {
-      [N.Gp.ALL]: [N.lH, l.x.RPC_VIDEO_READ]
+      [Chunk186901.Gp.ALL]: [Chunk186901.lH, Chunk243814.x.RPC_VIDEO_READ]
     },
     handler: () => e => {
       let {

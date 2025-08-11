@@ -1,5 +1,6 @@
 /** Chunk was on web.js **/
-e.exports = function(e) {
+/** chunk id: 780910, original params: e (module,exports,re quire) **/
+module.exports = function(e) {
   let t = "[^\\(\\)\\[\\]\\{\\}\",'`;#|\\\\\\s]+",
     n = "(-|\\+)?\\d+([./]\\d+)?",
     r = n + "[+\\-]" + n + "i",
@@ -40,7 +41,7 @@ e.exports = function(e) {
       begin: "'" + t
     },
     d = {
-      endsWithParent: !0,
+      endsWithParent: true,
       relevance: 0
     },
     f = {
@@ -71,10 +72,10 @@ e.exports = function(e) {
       }],
       contains: [{
         begin: /lambda/,
-        endsWithParent: !0,
-        returnBegin: !0,
+        endsWithParent: true,
+        returnBegin: true,
         contains: [_, {
-          endsParent: !0,
+          endsParent: true,
           variants: [{
             begin: /\(/,
             end: /\)/

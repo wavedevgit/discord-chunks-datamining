@@ -1,6 +1,7 @@
 /** Chunk was on 67244 **/
+/** chunk id: 897401, original params: e,t (module,exports,require) **/
 "use strict";
-t.__esModule = !0, t.default = {
+exports.__esModule = true, exports.default = {
   scheme: "grayscale",
   author: "alexandre gavioli (https://github.com/alexx2/)",
   base00: "#101010",
@@ -19,4 +20,4 @@ t.__esModule = !0, t.default = {
   base0D: "#686868",
   base0E: "#747474",
   base0F: "#5e5e5e"
-}, e.exports = t.default
+}, module.exports = exports.default

@@ -1,17 +1,18 @@
 /** Chunk was on web.js **/
+/** chunk id: 360742, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => c
 });
-var r = n(81825),
-  i = n(598077);
+var Chunk81825 = require("./81825.js"),
+  Chunk598077 = require("./598077.js");
 
 function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -44,7 +45,7 @@ function l(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-class c extends r.Z {
+class c extends Chunk81825.Z {
   static createFromServer(e) {
     return new c(l(a({}, e), {
       user: new i.Z(e.user)
@@ -52,6 +53,6 @@ class c extends r.Z {
   }
   constructor(e) {
     var t;
-    super(), o(this, "id", void 0), o(this, "name", void 0), o(this, "type", void 0), o(this, "user", void 0), o(this, "displayName", void 0), this.id = e.id, this.name = e.name, this.type = e.type, this.user = e.user, this.displayName = null != (t = e.name_localized) ? t : e.name
+    super(), o(this, "id", true), o(this, "name", true), o(this, "type", true), o(this, "user", true), o(this, "displayName", true), this.id = e.id, this.name = e.name, this.type = e.type, this.user = e.user, this.displayName = null != (t = e.name_localized) ? t : e.name
   }
 }

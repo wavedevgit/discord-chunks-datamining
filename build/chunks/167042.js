@@ -1,10 +1,11 @@
 /** Chunk was on 34779 **/
-n.d(t, {
+/** chunk id: 167042, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   $: () => i
 });
-var r = n(51596);
+var Chunk51596 = require("./51596.js");
 let i = {
   binds: ["mod+k", "mod+t"],
-  comboKeysBindGlobal: !0,
-  action: () => ((0, r.$Z)("KEYBIND", ""), !1)
+  comboKeysBindGlobal: true,
+  action: () => ((0, Chunk51596.$Z)("KEYBIND", ""), false)
 }

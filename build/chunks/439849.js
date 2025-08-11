@@ -1,16 +1,17 @@
 /** Chunk was on web.js **/
+/** chunk id: 439849, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 let r;
-n.d(t, {
+require.d(exports, {
   F: () => p,
   Z: () => h
-}), n(704826), n(35282), n(539854), n(642613);
-var i = n(392711),
-  o = n.n(i),
-  a = n(579806),
-  s = n(710845),
-  l = n(358085),
-  c = n(998502);
+}), require("./704826.js"), require("./35282.js"), require("./539854.js"), require("./642613.js");
+var Chunk392711 = require("./392711.js"),
+  o = require.n(Chunk392711),
+  Chunk579806 = require("./579806.js"),
+  Chunk710845 = require("./710845.js"),
+  Chunk358085 = require("./358085.js"),
+  Chunk998502 = require("./998502.js");
 let u = [],
   d = "dosbox.exe";
 
@@ -24,22 +25,22 @@ function _(e) {
 
 function p(e) {
   e = f(e);
-  let t = !1;
+  let t = false;
   return (u.forEach(n => {
-    !t && e.startsWith(n) && (e = e.substr(n.length), t = !0)
-  }), t) ? e = e.includes(d) ? e.split("/").slice(-3).join("/") : e.split("/").slice(-2).join("/") : null
+    !t && e.startsWith(n) && (e = e.substr(n.length), t = true)
+  }), t) ? e = e.includes(d) ? e.split("/").slice(false).join("/") : e.split("/").slice(false).join("/") : null
 }
 async function h() {
   if (null != r) return r;
   try {
-    await c.ZP.ensureModule("discord_game_utils"), r = await c.ZP.requireModule("discord_game_utils")
+    await Chunk998502.ZP.ensureModule("discord_game_utils"), r = await Chunk998502.ZP.requireModule("discord_game_utils")
   } catch (e) {
-    new s.Z("GamesActionCreators").error("could not load discord_game_utils", e)
+    new Chunk710845.Z("GamesActionCreators").error("could not load discord_game_utils", module)
   }
-  if ((0, l.isWindows)()) {
-    let e = a.Z.process.env;
-    _(e.LOCALAPPDATA), _(e["PROGRAMFILES(X86)"]), _(e.PROGRAMFILES), _(e.PROGRAMW6432), _(e.PROGRAMDATA), _("/games/"), _("/steamlibrary/steamapps/common/")
+  if ((0, Chunk358085.isWindows)()) {
+    let e = Chunk579806.Z.process.env;
+    _(module.LOCALAPPDATA), _(module["PROGRAMFILES(X86)"]), _(module.PROGRAMFILES), _(module.PROGRAMW6432), _(module.PROGRAMDATA), _("/games/"), _("/steamlibrary/steamapps/common/")
   }
-  let e = a.Z.remoteApp.getPath;
-  return _(await e("home")), _(await e("appData")), _(await e("desktop")), _(await e("documents")), _(await e("downloads")), (u = o().uniq(u)).sort((e, t) => t.length - e.length), r
+  let e = Chunk579806.Z.remoteApp.getPath;
+  return _(await module("home")), _(await module("appData")), _(await module("desktop")), _(await module("documents")), _(await module("downloads")), (u = o().uniq(u)).sort((e, t) => t.length - e.length), r
 }

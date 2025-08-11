@@ -1,5 +1,6 @@
 /** Chunk was on 88934 **/
-e.exports = {
+/** chunk id: 754726, original params: e,t,n (module,exports,require) **/
+module.exports = {
   card: "card_c59071",
   cardHeader: "cardHeader_c59071",
   splashImage: "splashImage_c59071",

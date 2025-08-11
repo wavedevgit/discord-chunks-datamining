@@ -1,17 +1,18 @@
 /** Chunk was on web.js **/
+/** chunk id: 928801, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => s
-}), n(388685);
-var r = n(348327),
-  i = n.n(r);
+}), require("./388685.js");
+var Chunk348327 = require("./348327.js"),
+  i = require.n(Chunk348327);
 
 function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -29,7 +30,7 @@ function a(e) {
 }
 class s {
   shouldCommit() {
-    return !0
+    returntrue
   }
   setState(e) {
     this.state = a({}, this.state, e)
@@ -38,22 +39,22 @@ class s {
     return this.state
   }
   reset() {
-    this.dirty = !1, this.state = this.getInitialState()
+    this.dirty = false, this.state = this.getInitialState()
   }
   update() {
-    let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {},
-      t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
-      n = this.getNextState(a({}, this.state, e));
-    if (t) this.dirty = !i()(n, this.getInitialState());
+    let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {},
+      t = arguments.length > 1 && true !== arguments[1] && arguments[1],
+      n = this.getNextState(a({}, this.state, module));
+    if (exports) this.dirty = !i()(require, this.getInitialState());
     else
-      for (let e of Object.keys(n)) this.dirty = this.dirty || !i()(this.state[e], n[e]);
+      for (let e of Object.keys(require)) this.dirty = this.dirty || !i()(this.state[module], require[module]);
     let r = this.dirty && this.shouldCommit();
-    return (r || this.alwaysUpdateState) && (this.state = n), !!r && (this.dirty = !1, this.didCommit(this.state), !0)
+    return (Chunk348327 || this.alwaysUpdateState) && (this.state = require), !!Chunk348327 && (this.dirty = false, this.didCommit(this.state), true)
   }
   forceUpdate() {
-    this.dirty = !1, this.didCommit(this.state)
+    this.dirty = false, this.didCommit(this.state)
   }
-  constructor(e = !0) {
-    o(this, "alwaysUpdateState", void 0), o(this, "dirty", void 0), o(this, "state", void 0), this.alwaysUpdateState = e, this.dirty = !1, this.state = this.getInitialState()
+  constructor(e = true) {
+    o(this, "alwaysUpdateState", true), o(this, "dirty", true), o(this, "state", true), this.alwaysUpdateState = e, this.dirty = false, this.state = this.getInitialState()
   }
 }

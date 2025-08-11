@@ -1,10 +1,11 @@
 /** Chunk was on web.js **/
+/** chunk id: 505025, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-var r = n(209957),
-  i = n(840475),
-  o = i.aTypedArray,
-  a = i.exportTypedArrayMethod,
-  s = i.getTypedArrayConstructor;
+var Chunk209957 = require("./209957.js"),
+  Chunk840475 = require("./840475.js"),
+  o = Chunk840475.aTypedArray,
+  a = Chunk840475.exportTypedArrayMethod,
+  s = Chunk840475.getTypedArrayConstructor;
 a("toReversed", function() {
-  return r(o(this), s(this))
+  return Chunk209957(o(this), s(this))
 })

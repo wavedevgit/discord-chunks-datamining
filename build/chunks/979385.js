@@ -1,5 +1,6 @@
 /** Chunk was on 75708 **/
-e.exports = {
+/** chunk id: 979385, original params: e,t,n (module,exports,require) **/
+module.exports = {
   sensitivity: "sensitivity_ac7648",
   sliderBar: "sliderBar_ac7648",
   speaking: "speaking_ac7648",

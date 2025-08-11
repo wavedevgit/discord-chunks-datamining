@@ -1,24 +1,25 @@
 /** Chunk was on web.js **/
+/** chunk id: 603767, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => o
-}), n(388685);
-var r = n(126663);
+}), require("./388685.js");
+var Chunk126663 = require("./126663.js");
 
 function i(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
-class o extends r.FrameLoop {
+class o extends Chunk126663.FrameLoop {
   setRAF(e, t) {
     0 !== this.id && (this._cancelAnimationFrame(this.id), this.id = 0), this._requestAnimationFrame = e, this._cancelAnimationFrame = t, this.loop()
   }
   constructor(...e) {
-    super(...e), i(this, "_requestAnimationFrame", e => requestAnimationFrame(e)), i(this, "_cancelAnimationFrame", e => cancelAnimationFrame(e)), i(this, "writing", !1), i(this, "id", 0), i(this, "lastTime", 0), i(this, "animations", []), i(this, "priority", 0), i(this, "startQueue", new Set), i(this, "frameQueue", new Set), i(this, "writeQueue", new Set), i(this, "timeoutQueue", []), i(this, "addAnimation", e => {
+    super(...e), i(this, "_requestAnimationFrame", e => requestAnimationFrame(e)), i(this, "_cancelAnimationFrame", e => cancelAnimationFrame(e)), i(this, "writing", false), i(this, "id", 0), i(this, "lastTime", 0), i(this, "animations", []), i(this, "priority", 0), i(this, "startQueue", new Set), i(this, "frameQueue", new Set), i(this, "writeQueue", new Set), i(this, "timeoutQueue", []), i(this, "addAnimation", e => {
       let t = this.animations.indexOf(e);
       t < 0 && (t = this.animations.findIndex(t => t.priority > e.priority), this.animations.splice(0 != ~t ? t : this.animations.length, 0, e))
     }), i(this, "loop", () => {
@@ -39,7 +40,7 @@ class o extends r.FrameLoop {
         }), e > this.lastTime) {
         let t = Math.min(64, e - this.lastTime);
         this.lastTime = e, r.Globals.batchedUpdates(() => {
-          this.animations.length > 0 && (r.Globals.willAdvance(this.animations), this.animations = this.animations.filter(e => (this.priority = e.priority, e.idle || e.advance(t), !e.idle)), this.priority = 0), this.frameQueue.size > 0 && (this.frameQueue.forEach(t => t(e)), this.frameQueue.clear()), this.writeQueue.size > 0 && (this.writing = !0, this.writeQueue.forEach(t => t(e)), this.writeQueue.clear(), this.writing = !1)
+          this.animations.length > 0 && (r.Globals.willAdvance(this.animations), this.animations = this.animations.filter(e => (this.priority = e.priority, e.idle || e.advance(t), !e.idle)), this.priority = 0), this.frameQueue.size > 0 && (this.frameQueue.forEach(t => t(e)), this.frameQueue.clear()), this.writeQueue.size > 0 && (this.writing = true, this.writeQueue.forEach(t => t(e)), this.writeQueue.clear(), this.writing = false)
         })
       }
     }), i(this, "start", e => {

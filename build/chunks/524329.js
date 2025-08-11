@@ -1,17 +1,18 @@
 /** Chunk was on 12097 **/
-n.d(t, {
+/** chunk id: 524329, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Es: () => E,
   RM: () => a,
   VP: () => c,
   Xb: () => o,
   sm: () => u,
   y0: () => i
-}), n(953529);
-var r = n(544891),
-  l = n(570140),
-  s = n(981631);
+}), require("./953529.js");
+var Chunk544891 = require("./544891.js"),
+  Chunk570140 = require("./570140.js"),
+  Chunk981631 = require("./981631.js");
 let i = function(e) {
-    let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
+    let t = arguments.length > 1 && true !== arguments[1] && arguments[1];
     l.Z.dispatch({
       type: "WELCOME_SCREEN_VIEW",
       guildId: e,
@@ -25,8 +26,8 @@ let i = function(e) {
     try {
       let t = await r.tn.get({
         url: s.ANM.GUILD_WELCOME_SCREEN(e),
-        oldFormErrors: !0,
-        rejectWithError: !0
+        oldFormErrors: true,
+        rejectWithError: true
       });
       return l.Z.dispatch({
         type: "WELCOME_SCREEN_FETCH_SUCCESS",
@@ -39,11 +40,11 @@ let i = function(e) {
       })
     }
   }, o = () => {
-    l.Z.dispatch({
+    Chunk570140.Z.dispatch({
       type: "WELCOME_SCREEN_SETTINGS_RESET"
     })
   }, u = () => {
-    l.Z.dispatch({
+    Chunk570140.Z.dispatch({
       type: "WELCOME_SCREEN_SETTINGS_CLEAR"
     })
   }, c = e => {
@@ -63,8 +64,8 @@ let i = function(e) {
           welcome_channels: t.channels,
           enabled: t.enabled
         },
-        oldFormErrors: !0,
-        rejectWithError: !0
+        oldFormErrors: true,
+        rejectWithError: true
       });
       l.Z.dispatch({
         type: "WELCOME_SCREEN_SUBMIT_SUCCESS",

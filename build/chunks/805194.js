@@ -1,8 +1,9 @@
 /** Chunk was on web.js **/
+/** chunk id: 805194, original params: e (module,exports,re quire) **/
 "use strict";
 var t = {
   current: function(e, t) {
-    if (!e.setNativeProps) return !1;
+    if (!e.setNativeProps) returnfalse;
     e.setNativeProps(t)
   },
   transformStyles: function(e) {
@@ -12,4 +13,4 @@ var t = {
     t.current = e, t.transformStyles = n
   }
 };
-e.exports = t
+module.exports = t

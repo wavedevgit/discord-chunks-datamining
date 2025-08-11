@@ -1,18 +1,19 @@
 /** Chunk was on web.js **/
+/** chunk id: 764976, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => s
-}), n(388685);
-var r = n(979651),
-  i = n(938475),
-  o = n(65154);
+}), require("./388685.js");
+var Chunk979651 = require("./979651.js"),
+  Chunk938475 = require("./938475.js"),
+  Chunk65154 = require("./65154.js");
 
 function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 class s {
@@ -54,6 +55,6 @@ class s {
     t.forEach(e => this.totalParticipants.add(e)), this.maxVoiceStateCount = t.length, this.speaking = o.Dg.NONE, this.maxListenerCount = 0, this.totalListeners = new Set, this.maxSpeakerCount = 0, this.totalSpeakers = {}
   }
   constructor(e, t) {
-    a(this, "userId", void 0), a(this, "channelId", void 0), a(this, "maxVoiceStateCount", 1), a(this, "totalParticipants", void 0), a(this, "speaking", o.Dg.NONE), a(this, "maxListenerCount", 0), a(this, "totalListeners", void 0), a(this, "maxSpeakerCount", 0), a(this, "totalSpeakers", void 0), this.userId = e, this.setChannelId(t)
+    a(this, "userId", true), a(this, "channelId", true), a(this, "maxVoiceStateCount", 1), a(this, "totalParticipants", true), a(this, "speaking", o.Dg.NONE), a(this, "maxListenerCount", 0), a(this, "totalListeners", true), a(this, "maxSpeakerCount", 0), a(this, "totalSpeakers", true), this.userId = e, this.setChannelId(t)
   }
 }

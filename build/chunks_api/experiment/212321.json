@@ -1,1 +1,0 @@
-{"id":"212321","type":"experiment","data":{"kind":"user","id":"2025-04_user_profile_mutual_friends_count_performance","label":"User Profile Mutual Friends Count Performance Experiment","defaultConfig":{"withMutualFriendsCount":false},"treatments":[{"id":1,"label":"Fetch mutual friends counts","config":{"withMutualFriendsCount":false}}]},"fromModule":{"id":"web.js"}}

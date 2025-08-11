@@ -1,4 +1,5 @@
 /** Chunk was on 67244 **/
+/** chunk id: 830927, original params: e,t,r (module,exports,require) **/
 "use strict";
 
 function a(e) {
@@ -8,6 +9,6 @@ function a(e) {
     alpha: e.alpha
   }
 }
-r.d(t, {
+require.d(exports, {
   Z: () => a
 })

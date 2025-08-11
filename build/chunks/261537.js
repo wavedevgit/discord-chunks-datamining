@@ -1,4 +1,6 @@
-/** Chunk was on web.js **/ ! function(e, t) {
+/** Chunk was on web.js **/
+/** chunk id: 261537, original params: e,t,n (module,exports,re quire) **/
+! function(e, t) {
   t(n(913527))
 }(0, function(e) {
   "use strict";
@@ -57,17 +59,17 @@
       return "u" === e.charAt(1).toLowerCase()
     },
     meridiem: function(e, t, n) {
-      return e < 12 ? !0 === n ? "de" : "DE" : !0 === n ? "du" : "DU"
+      return e < 12 ? true === n ? "de" : "DE" : true === n ? "du" : "DU"
     },
     calendar: {
       sameDay: "[ma] LT[-kor]",
       nextDay: "[holnap] LT[-kor]",
       nextWeek: function() {
-        return r.call(this, !0)
+        return r.call(this, true)
       },
       lastDay: "[tegnap] LT[-kor]",
       lastWeek: function() {
-        return r.call(this, !1)
+        return r.call(this, false)
       },
       sameElse: "L"
     },

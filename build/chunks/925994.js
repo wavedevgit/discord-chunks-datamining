@@ -1,28 +1,29 @@
 /** Chunk was on web.js **/
+/** chunk id: 925994, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   sg: () => O,
   sk: () => b
-}), n(388685), n(539854), n(704826), n(35282);
-var r = n(512722),
-  i = n.n(r),
-  o = n(933557),
-  a = n(660199),
-  s = n(763296),
-  l = n(592125),
-  c = n(485386),
-  u = n(699516),
-  d = n(914010),
-  f = n(594174),
-  _ = n(51144),
-  p = n(887490);
+}), require("./388685.js"), require("./539854.js"), require("./704826.js"), require("./35282.js");
+var Chunk512722 = require("./512722.js"),
+  i = require.n(Chunk512722),
+  Chunk933557 = require("./933557.js"),
+  Chunk660199 = require("./660199.js"),
+  Chunk763296 = require("./763296.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk485386 = require("./485386.js"),
+  Chunk699516 = require("./699516.js"),
+  Chunk914010 = require("./914010.js"),
+  Chunk594174 = require("./594174.js"),
+  Chunk51144 = require("./51144.js"),
+  Chunk887490 = require("./887490.js");
 
 function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -61,7 +62,7 @@ function b(e, t) {
     mode: n,
     ignoreTrailingEmptyNodes: r,
     preventEmojiSurrogates: i
-  } = null != t ? t : {}, [o, a] = (null == t ? void 0 : t.range) != null ? p.M8.edges(t.range) : [void 0, void 0];
+  } = null != t ? t : {}, [o, a] = (null == t ? true : t.range) != null ? p.M8.edges(t.range) : [true, true];
   return y(e, {
     mode: n,
     start: o,
@@ -83,8 +84,8 @@ function y(e, t) {
     preventEmojiSurrogates: u
   } = null != t ? t : {}, d = e.length > 0 && !p.LC.isText(e[0]);
   null == s && (s = d ? "\n" : "");
-  let f = null != (n = null == o ? void 0 : o.path[0]) ? n : 0,
-    _ = null != (r = null == a ? void 0 : a.path[0]) ? r : e.length - 1;
+  let f = null != (n = null == o ? true : o.path[0]) ? n : 0,
+    _ = null != (r = null == a ? true : a.path[0]) ? r : e.length - 1;
   if (c)
     for (let t = _; t >= f; t--) {
       let n = e[t];
@@ -109,14 +110,14 @@ function y(e, t) {
     let r = null != o && t === f ? {
         path: o.path.slice(1),
         offset: o.offset
-      } : void 0,
+      } : true,
       s = O(n, {
         mode: i,
         start: r,
         end: null != a && t === _ ? {
           path: a.path.slice(1),
           offset: a.offset
-        } : void 0,
+        } : true,
         allowBlockQuotePrefix: null == o || null == a || !h && (!m || g),
         preventEmojiSurrogates: u
       });
@@ -129,8 +130,8 @@ function O(e, t) {
   let {
     mode: n,
     start: r,
-    allowBlockQuotePrefix: i = !1,
-    preventEmojiSurrogates: h = !1
+    allowBlockQuotePrefix: i = false,
+    preventEmojiSurrogates: h = false
   } = null != t ? t : {};
   if (p.LC.isText(e)) return v(e.text, t);
   switch (e.type) {
@@ -167,7 +168,7 @@ function O(e, t) {
       if ("raw" === n) return t;
       let r = l.Z.getChannel(e.channelId);
       if (null == r) return t;
-      return (0, o.F6)(r, f.default, u.Z, !0, !0)
+      return (0, o.F6)(r, f.default, u.Z, true, true)
     }
     case "soundboard": {
       let t = "<sound:".concat(e.guildId, ":").concat(e.soundId, ">");
@@ -182,7 +183,7 @@ function O(e, t) {
       let t = "<@&".concat(e.roleId, ">");
       if ("raw" === n) return t;
       let r = d.Z.getGuildId(),
-        i = null != r ? c.Z.getRole(r, e.roleId) : void 0;
+        i = null != r ? c.Z.getRole(r, e.roleId) : true;
       if (null == i) return t;
       return "@".concat(i.name)
     }
@@ -204,7 +205,7 @@ function O(e, t) {
     case "applicationCommand":
       return y(e.children, E(m({}, t), {
         separator: " ",
-        ignoreEmptyNodes: !0
+        ignoreEmptyNodes: true
       }));
     case "applicationCommandOption": {
       let n = y(e.children, t);
@@ -220,5 +221,5 @@ function v(e, t) {
     start: o,
     end: a
   } = null != t ? t : {};
-  return i()(null == o || 0 === o.path.length, "Invalid start provided to serializeText"), i()(null == a || 0 === a.path.length, "Invalid end provided to serializeText"), e.substring(null != (n = null == o ? void 0 : o.offset) ? n : 0, null != (r = null == a ? void 0 : a.offset) ? r : e.length)
+  return i()(null == o || 0 === o.path.length, "Invalid start provided to serializeText"), i()(null == a || 0 === a.path.length, "Invalid end provided to serializeText"), e.substring(null != (n = null == o ? true : o.offset) ? n : 0, null != (r = null == a ? true : a.offset) ? r : e.length)
 }

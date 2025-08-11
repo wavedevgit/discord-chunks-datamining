@@ -1,14 +1,15 @@
 /** Chunk was on 31835 **/
-n.d(r, {
+/** chunk id: 377176, original params: t,r,n (module,exports,require) **/
+require.d(exports, {
   f: () => o
 });
-var e = n(63063),
-  i = n(981631),
-  a = n(388032);
+var Chunk63063 = require("./63063.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk388032 = require("./388032.js");
 
 function o() {
-  return a.intl.format(a.t["+ALa7+"], {
-    fullTermsUrl: e.Z.getArticleURL(i.BhN.CREATOR_TERMS),
-    creatorRevenuePolicyUrl: e.Z.getArticleURL(i.BhN.CREATOR_POLICY)
+  return Chunk388032.intl.format(Chunk388032.t["+ALa7+"], {
+    fullTermsUrl: Chunk63063.Z.getArticleURL(Chunk981631.BhN.CREATOR_TERMS),
+    creatorRevenuePolicyUrl: Chunk63063.Z.getArticleURL(Chunk981631.BhN.CREATOR_POLICY)
   })
 }

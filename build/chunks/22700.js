@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 22700, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   userListItem: "userListItem_ec58fe",
   popoutDisabled: "popoutDisabled_ec58fe",
   userListItemTag: "userListItemTag_ec58fe",

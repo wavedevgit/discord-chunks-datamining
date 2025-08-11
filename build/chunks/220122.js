@@ -1,29 +1,30 @@
 /** Chunk was on web.js **/
+/** chunk id: 220122, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => g
 });
-var r = n(481060),
-  i = n(570140),
-  o = n(594190),
-  a = n(199902),
-  s = n(131951),
-  l = n(924557),
-  c = n(474639),
-  u = n(435064),
-  d = n(779618),
-  f = n(39604),
-  _ = n(356659),
-  p = n(388032);
+var Chunk481060 = require("./481060.js"),
+  Chunk570140 = require("./570140.js"),
+  Chunk594190 = require("./594190.js"),
+  Chunk199902 = require("./199902.js"),
+  Chunk131951 = require("./131951.js"),
+  Chunk924557 = require("./924557.js"),
+  Chunk474639 = require("./474639.js"),
+  Chunk435064 = require("./435064.js"),
+  Chunk779618 = require("./779618.js"),
+  Chunk39604 = require("./39604.js"),
+  Chunk356659 = require("./356659.js"),
+  Chunk388032 = require("./388032.js");
 let h = "CLIPS_IN_CALL_WARNING";
-class m extends c.Z {
+class m extends Chunk474639.Z {
   showClipsToast() {
-    (0, r.showToast)({
+    (0, Chunk481060.showToast)({
       id: h,
-      message: p.intl.string(p.t["d+41qK"]),
-      type: r.ToastType.CLIP,
+      message: Chunk388032.intl.string(Chunk388032.t["d+41qK"]),
+      type: Chunk481060.ToastType.CLIP,
       options: {
-        duration: _.G$
+        duration: Chunk356659.G$
       }
     })
   }
@@ -33,7 +34,7 @@ class m extends c.Z {
       n = u.Z.getSettings(),
       r = (n.clipsEnabled || n.decoupledClipsEnabled) && t,
       i = s.Z.getMediaEngine();
-    if (i.setClipBufferLength(r ? n.clipsLength / 1e3 : 0), (null == e ? void 0 : e.settings.decoupledClipsEnabled) === !0 && this.fireClipsInitEvent(), null == e || (null == e ? void 0 : e.settings.clipsQuality) != null) {
+    if (i.setClipBufferLength(r ? n.clipsLength / 1e3 : 0), (null == e ? true : e.settings.decoupledClipsEnabled) === true && this.fireClipsInitEvent(), null == e || (null == e ? true : e.settings.clipsQuality) != null) {
       let {
         frameRate: t,
         resolution: r
@@ -50,16 +51,16 @@ class m extends c.Z {
     null != t && (e.added.find(e => e.pid === t.pid) ? setTimeout(() => this.fireClipsInitEvent(), _.jp) : this.fireClipsInitEvent())
   }
   fireClipsInitEvent() {
-    if (!(0, d.Z)(s.Z)) return;
-    let e = (0, l.ln)(),
-      t = u.Z.getSettings();
-    if (!(t.clipsEnabled && e) || null != a.Z.getCurrentUserActiveStream()) return;
-    let n = o.ZP.getVisibleGame();
-    (null == n ? void 0 : n.pid) != null && (null == n ? void 0 : n.windowHandle) != null && null != n.name && "" !== n.name && i.Z.dispatch({
+    if (!(0, Chunk779618.Z)(Chunk131951.Z)) return;
+    let e = (0, Chunk924557.ln)(),
+      t = Chunk435064.Z.getSettings();
+    if (!(exports.clipsEnabled && module) || null != Chunk199902.Z.getCurrentUserActiveStream()) return;
+    let n = Chunk594190.ZP.getVisibleGame();
+    (null == require ? true : require.pid) != null && (null == require ? true : require.windowHandle) != null && null != require.name && "" !== require.name && Chunk570140.Z.dispatch({
       type: "CLIPS_INIT",
-      sourceId: "window:".concat(null == n ? void 0 : n.windowHandle),
-      applicationName: n.name,
-      quality: t.clipsQuality
+      sourceId: "window:".concat(null == require ? true : require.windowHandle),
+      applicationName: require.name,
+      quality: exports.clipsQuality
     })
   }
   handleMediaEngineSetHardwareEncoding(e) {
@@ -71,14 +72,14 @@ class m extends c.Z {
         clipsEnabled: e
       } = u.Z.getSettings();
       e && f.em({
-        clipsEnabled: !1
+        clipsEnabled: false
       })
     }
   }
   disableClips() {
-    f.em({
-      clipsEnabled: !1,
-      trackAnalytics: !1
+    Chunk39604.em({
+      clipsEnabled: false,
+      trackAnalytics: false
     })
   }
 }

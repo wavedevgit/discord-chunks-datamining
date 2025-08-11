@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 634690, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   fileWrapper: "fileWrapper__0ccae",
   file: "file__0ccae",
   fileInner: "fileInner__0ccae",

@@ -1,15 +1,16 @@
 /** Chunk was on web.js **/
+/** chunk id: 444591, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 
 function r(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
-n.d(t, {
+require.d(exports, {
   Z: () => i
 });
 class i {
@@ -20,7 +21,7 @@ class i {
       height: n
     } = e.getBoundingClientRect();
     this.svg.setAttribute("viewBox", "0 0 ".concat(t, " ").concat(n)), this.svg.setAttribute("width", "".concat(t)), this.svg.setAttribute("height", "".concat(n)), this.foreignObject.setAttribute("x", "0"), this.foreignObject.setAttribute("y", "0"), this.foreignObject.setAttribute("width", "".concat(t)), this.foreignObject.setAttribute("height", "".concat(n));
-    let r = e.cloneNode(!0);
+    let r = e.cloneNode(true);
     this.foreignObject.appendChild(r)
   }
   render(e) {
@@ -33,8 +34,8 @@ class i {
     null != this.foreignObject && (this.foreignObject.innerHTML = "")
   }
   constructor(e) {
-    r(this, "container", void 0), r(this, "svg", void 0), r(this, "foreignObject", void 0), this.container = null == e ? void 0 : e.createElement("div");
-    let t = this.svg = null == e ? void 0 : e.createElement("svg");
-    null != t && (t.style.contain = "paint"), this.foreignObject = null == e ? void 0 : e.createElement("foreignObject"), null != this.container && null != this.svg && null != this.foreignObject && (this.container.className = "drag-previewer", this.container.style.cssText = "z-index: 1000; filter: drop-shadow(0 0 0 var(--background-floating)) drop-shadow(var(--elevation-high))", this.svg.appendChild(this.foreignObject), this.container.appendChild(this.svg), null == e || e.body.appendChild(this.container))
+    r(this, "container", true), r(this, "svg", true), r(this, "foreignObject", true), this.container = null == e ? true : e.createElement("div");
+    let t = this.svg = null == e ? true : e.createElement("svg");
+    null != t && (t.style.contain = "paint"), this.foreignObject = null == e ? true : e.createElement("foreignObject"), null != this.container && null != this.svg && null != this.foreignObject && (this.container.className = "drag-previewer", this.container.style.cssText = "z-index: 1000; filter: drop-shadow(0 0 0 var(--background-floating)) drop-shadow(var(--elevation-high))", this.svg.appendChild(this.foreignObject), this.container.appendChild(this.svg), null == e || e.body.appendChild(this.container))
   }
 }

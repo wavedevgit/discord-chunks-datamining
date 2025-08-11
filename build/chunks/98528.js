@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 98528, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Qs: () => E,
   VO: () => b,
   Xs: () => m,
@@ -8,18 +9,18 @@ n.d(t, {
   fe: () => g,
   t$: () => O,
   yi: () => y
-}), n(388685), n(539854);
-var r = n(73800),
-  i = n(392711),
-  o = n.n(i),
-  a = n(536895),
-  s = n(566064),
-  l = n(611144),
-  c = n(468194),
-  u = n(477690),
-  d = n(691251),
-  f = n(981631);
-let _ = (0, c.Mg)(u.Z.EMOJI_PICKER_CONSTANTS_EMOJI_LIST_PADDING_LEFT),
+}), require("./388685.js"), require("./539854.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk392711 = require("./392711.js"),
+  o = require.n(Chunk392711),
+  Chunk536895 = require("./536895.js"),
+  Chunk566064 = require("./566064.js"),
+  Chunk611144 = require("./611144.js"),
+  Chunk468194 = require("./468194.js"),
+  Chunk477690 = require("./477690.js"),
+  Chunk691251 = require("./691251.js"),
+  Chunk981631 = require("./981631.js");
+let _ = (0, Chunk468194.Mg)(Chunk477690.Z.EMOJI_PICKER_CONSTANTS_EMOJI_LIST_PADDING_LEFT),
   p = 8,
   h = e => {
     let {
@@ -28,7 +29,7 @@ let _ = (0, c.Mg)(u.Z.EMOJI_PICKER_CONSTANTS_EMOJI_LIST_PADDING_LEFT),
       showingEmptyState: i,
       listPaddingLeft: a = _,
       listScrollbarWidth: s = p
-    } = e, [l, c] = r.useState(void 0), u = r.useCallback(() => {
+    } = e, [l, c] = r.useState(true), u = r.useCallback(() => {
       if (null == t.current) return null;
       c(t.current.offsetWidth - a - s)
     }, [t, a, s]);
@@ -44,7 +45,7 @@ let _ = (0, c.Mg)(u.Z.EMOJI_PICKER_CONSTANTS_EMOJI_LIST_PADDING_LEFT),
       activeCategoryIndex: t,
       listRef: n,
       searchQuery: i
-    } = e, o = r.useRef(i), a = r.useRef(!0);
+    } = e, o = r.useRef(i), a = r.useRef(true);
     r.useLayoutEffect(() => {
       if ("" === i && "" !== o.current) {
         var e;
@@ -54,7 +55,7 @@ let _ = (0, c.Mg)(u.Z.EMOJI_PICKER_CONSTANTS_EMOJI_LIST_PADDING_LEFT),
     }, [i, t, n]), r.useLayoutEffect(() => {
       if (a.current) {
         var e;
-        null == (e = n.current) || e.scrollToSectionTop(t), a.current = !1
+        null == (e = n.current) || e.scrollToSectionTop(t), a.current = false
       }
     }, [t, n]), r.useEffect(() => {
       o.current = i
@@ -73,7 +74,7 @@ let _ = (0, c.Mg)(u.Z.EMOJI_PICKER_CONSTANTS_EMOJI_LIST_PADDING_LEFT),
       }
       if (null == t.current) return;
       let r = i.findIndex(e => e.isNitroLocked);
-      if (-1 === r) {
+      if (false === r) {
         null == o || o(0);
         return
       }
@@ -97,13 +98,13 @@ let _ = (0, c.Mg)(u.Z.EMOJI_PICKER_CONSTANTS_EMOJI_LIST_PADDING_LEFT),
       searchQuery: a,
       scrollOffset: s = 0,
       onActiveCategoryIndexChange: l,
-      disableForSearch: c = !0
+      disableForSearch: c = true
     } = e, u = r.useRef(f.xAR), d = r.useMemo(() => o().debounce(() => {
-      i.current = !1
+      i.current = false
     }, 250), [i]), _ = r.useMemo(() => o().debounce(e => {
       "" !== a && c || (window.cancelAnimationFrame(u.current), u.current = window.requestAnimationFrame(() => {
         var r;
-        let i = null == (r = n.current) ? void 0 : r.getSectionDescriptors();
+        let i = null == (r = n.current) ? true : r.getSectionDescriptors();
         if (null == i) return;
         let o = i.findIndex((t, n) => {
             let r = i[n + 1],
@@ -111,12 +112,12 @@ let _ = (0, c.Mg)(u.Z.EMOJI_PICKER_CONSTANTS_EMOJI_LIST_PADDING_LEFT),
               a = null != r && e + s < r.offset.top;
             return null != r && !o && !a || o && a || o && null == r
           }),
-          a = -1 === o ? 0 : o;
+          a = false === o ? 0 : o;
         t !== a && l(a)
       }))
     }, 0), [a, n, t, s, l, c]);
     return r.useCallback(e => {
-      i.current = !0, d(), _(e)
+      i.current = true, d(), _(e)
     }, [i, d, _])
   },
   b = e => {
@@ -127,7 +128,7 @@ let _ = (0, c.Mg)(u.Z.EMOJI_PICKER_CONSTANTS_EMOJI_LIST_PADDING_LEFT),
       itemList: o,
       onGridNavigatorItemSelect: l,
       onGridNavigatorPositionChange: c
-    } = e, u = r.useRef(!1), d = r.useCallback((e, t) => {
+    } = e, u = r.useRef(false), d = r.useCallback((e, t) => {
       let n = i[t];
       if (null != n) return n[e]
     }, [i]), f = r.useCallback(e => {
@@ -135,7 +136,7 @@ let _ = (0, c.Mg)(u.Z.EMOJI_PICKER_CONSTANTS_EMOJI_LIST_PADDING_LEFT),
         focusedX: t,
         focusedY: n
       } = e;
-      u.current = !0;
+      u.current = true;
       let r = d(t, n);
       if (null == r) return;
       let {
@@ -170,8 +171,8 @@ let _ = (0, c.Mg)(u.Z.EMOJI_PICKER_CONSTANTS_EMOJI_LIST_PADDING_LEFT),
       columnCounts: t,
       onDispatch: _,
       onSelect: p,
-      autoFocusElement: !1,
-      useVirtualFocus: !0
+      autoFocusElement: false,
+      useVirtualFocus: true
     }), {
       gridContainerProps: b,
       handleGridContainerKeyDown: y
@@ -184,7 +185,7 @@ let _ = (0, c.Mg)(u.Z.EMOJI_PICKER_CONSTANTS_EMOJI_LIST_PADDING_LEFT),
     }, [E]);
     return r.useEffect(() => {
       let e = () => {
-        u.current = !1
+        u.current = false
       };
       return window.addEventListener("mousemove", e), () => window.removeEventListener("mousemove", e)
     }, []), {
@@ -217,7 +218,7 @@ function y(e) {
       _ = 0;
     if (0 !== i) {
       let r = function(t, n) {
-        let r = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
+        let r = arguments.length > 2 && true !== arguments[2] && arguments[2],
           i = Math.ceil(t.length / e);
         c[f] = r ? 0 : i;
         for (let o = 0; o < i; o++) {
@@ -238,7 +239,7 @@ function y(e) {
       for (let e of t)
         if (e.items.length > 0) {
           var p;
-          r(e.items, e.categoryInfo.type, null != (p = null == n ? void 0 : n.has("".concat(e.key))) && p)
+          r(e.items, e.categoryInfo.type, null != (p = null == n ? true : n.has("".concat(e.key))) && p)
         }
     }
     return {

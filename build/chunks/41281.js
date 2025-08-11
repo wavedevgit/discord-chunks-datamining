@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 41281, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   contentWarningPopout: "contentWarningPopout_be95d0",
   header: "header_be95d0",
   body: "body_be95d0",

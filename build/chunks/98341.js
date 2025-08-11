@@ -1,13 +1,14 @@
 /** Chunk was on 64248 **/
-t.d(e, {
+/** chunk id: 98341, original params: a,e,t (module,exports,require) **/
+require.d(exports, {
   Z: () => i
 });
-var n = t(799761);
+var Chunk799761 = require("./799761.js");
 let i = {
   ordinalNumber: function(a, e) {
     return Number(a) + "."
   },
-  era: (0, n.Z)({
+  era: (0, Chunk799761.Z)({
     values: {
       narrow: ["M\xd6", "MS"],
       abbreviated: ["M\xd6", "MS"],
@@ -15,7 +16,7 @@ let i = {
     },
     defaultWidth: "wide"
   }),
-  quarter: (0, n.Z)({
+  quarter: (0, Chunk799761.Z)({
     values: {
       narrow: ["1", "2", "3", "4"],
       abbreviated: ["1\xc7", "2\xc7", "3\xc7", "4\xc7"],
@@ -26,7 +27,7 @@ let i = {
       return Number(a) - 1
     }
   }),
-  month: (0, n.Z)({
+  month: (0, Chunk799761.Z)({
     values: {
       narrow: ["O", "Ş", "M", "N", "M", "H", "T", "A", "E", "E", "K", "A"],
       abbreviated: ["Oca", "Şub", "Mar", "Nis", "May", "Haz", "Tem", "Ağu", "Eyl", "Eki", "Kas", "Ara"],
@@ -34,7 +35,7 @@ let i = {
     },
     defaultWidth: "wide"
   }),
-  day: (0, n.Z)({
+  day: (0, Chunk799761.Z)({
     values: {
       narrow: ["P", "P", "S", "\xc7", "P", "C", "C"],
       short: ["Pz", "Pt", "Sa", "\xc7a", "Pe", "Cu", "Ct"],
@@ -43,7 +44,7 @@ let i = {
     },
     defaultWidth: "wide"
   }),
-  dayPeriod: (0, n.Z)({
+  dayPeriod: (0, Chunk799761.Z)({
     values: {
       narrow: {
         am: "\xf6\xf6",

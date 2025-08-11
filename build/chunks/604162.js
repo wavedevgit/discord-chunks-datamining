@@ -1,16 +1,17 @@
 /** Chunk was on 32249 **/
-n.d(t, {
+/** chunk id: 604162, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   G6: () => d,
   JC: () => c,
   qP: () => m,
   yv: () => u
-}), n(388685);
-var r = n(73800),
-  l = n(447543),
-  o = n(960904),
-  i = n(830121),
-  a = n(701190),
-  s = n(771845);
+}), require("./388685.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk447543 = require("./447543.js"),
+  Chunk960904 = require("./960904.js"),
+  Chunk830121 = require("./830121.js"),
+  Chunk701190 = require("./701190.js"),
+  Chunk771845 = require("./771845.js");
 let c = e => null != e.text;
 
 function u(e) {
@@ -20,7 +21,7 @@ function u(e) {
 }
 
 function d(e, t) {
-  let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : 2e3,
+  let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : 2e3,
     [l, o] = (0, r.useState)(e),
     i = (0, r.useRef)(null);
   return (0, r.useEffect)(() => () => {
@@ -35,7 +36,7 @@ async function m(e) {
   try {
     var t;
     let n = (0, i.zO)(e);
-    if (null == n || n.type !== o.g.INVITE) return !1;
+    if (null == n || n.type !== o.g.INVITE) returnfalse;
     let r = a.Z.getInvite(n.code);
     if (null == r) {
       let {
@@ -43,11 +44,11 @@ async function m(e) {
       } = await l.ZP.resolveInvite(n.code, "Markdown Link");
       r = e
     }
-    if (null == r) return !1;
+    if (null == r) returnfalse;
     let c = s.ZP.getFlattenedGuildIds(),
-      u = null == r || null == (t = r.guild) ? void 0 : t.id;
+      u = null == r || null == (t = r.guild) ? true : t.id;
     return null != u && c.includes(u)
   } catch (e) {
-    return !1
+    returnfalse
   }
 }

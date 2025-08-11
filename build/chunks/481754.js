@@ -1,8 +1,9 @@
 /** Chunk was on 23357 **/
+/** chunk id: 481754, original params: e,t,n (module,exports,require) **/
 "use strict";
-n(220159)({
+require("./220159.js")({
   target: "Object",
-  stat: !0
+  stat: true
 }, {
-  setPrototypeOf: n(578079)
+  setPrototypeOf: require("./578079.js")
 })

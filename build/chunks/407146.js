@@ -1,5 +1,6 @@
 /** Chunk was on 93886 **/
-a.d(t, {
+/** chunk id: 407146, original params: e,t,a (module,exports,require) **/
+require.d(exports, {
   b: () => n
 });
 let n = {
@@ -478,7 +479,7 @@ let n = {
     hex: "#ffffff",
     meta: {
       figma: {
-        ignore: !0
+        ignore: true
       }
     }
   },
@@ -486,7 +487,7 @@ let n = {
     hex: "#ffffff",
     meta: {
       figma: {
-        ignore: !0
+        ignore: true
       }
     }
   },
@@ -494,7 +495,7 @@ let n = {
     hex: "#ffffff",
     meta: {
       figma: {
-        ignore: !0
+        ignore: true
       }
     }
   },
@@ -502,7 +503,7 @@ let n = {
     hex: "#ffffff",
     meta: {
       figma: {
-        ignore: !0
+        ignore: true
       }
     }
   },
@@ -510,7 +511,7 @@ let n = {
     hex: "#ffffff",
     meta: {
       figma: {
-        ignore: !0
+        ignore: true
       }
     }
   },
@@ -518,7 +519,7 @@ let n = {
     hex: "#ffffff",
     meta: {
       figma: {
-        ignore: !0
+        ignore: true
       }
     }
   },
@@ -526,7 +527,7 @@ let n = {
     hex: "#ffffff",
     meta: {
       figma: {
-        ignore: !0
+        ignore: true
       }
     }
   },
@@ -534,7 +535,7 @@ let n = {
     hex: "#ffffff",
     meta: {
       figma: {
-        ignore: !0
+        ignore: true
       }
     }
   },
@@ -542,7 +543,7 @@ let n = {
     hex: "#ffffff",
     meta: {
       figma: {
-        ignore: !0
+        ignore: true
       }
     }
   },
@@ -550,7 +551,7 @@ let n = {
     hex: "#ffffff",
     meta: {
       figma: {
-        ignore: !0
+        ignore: true
       }
     }
   },
@@ -558,7 +559,7 @@ let n = {
     hex: "#ffffff",
     meta: {
       figma: {
-        ignore: !0
+        ignore: true
       }
     }
   },
@@ -566,7 +567,7 @@ let n = {
     hex: "#ffffff",
     meta: {
       figma: {
-        ignore: !0
+        ignore: true
       }
     }
   },
@@ -574,7 +575,7 @@ let n = {
     hex: "#ffffff",
     meta: {
       figma: {
-        ignore: !0
+        ignore: true
       }
     }
   },
@@ -585,7 +586,7 @@ let n = {
     hex: "#e8e8e8",
     meta: {
       figma: {
-        ignore: !0
+        ignore: true
       }
     }
   },
@@ -593,7 +594,7 @@ let n = {
     hex: "#cfcfcf",
     meta: {
       figma: {
-        ignore: !0
+        ignore: true
       }
     }
   },
@@ -601,7 +602,7 @@ let n = {
     hex: "#adadad",
     meta: {
       figma: {
-        ignore: !0
+        ignore: true
       }
     }
   },
@@ -609,7 +610,7 @@ let n = {
     hex: "#969696",
     meta: {
       figma: {
-        ignore: !0
+        ignore: true
       }
     }
   },
@@ -617,7 +618,7 @@ let n = {
     hex: "#838383",
     meta: {
       figma: {
-        ignore: !0
+        ignore: true
       }
     }
   },
@@ -625,7 +626,7 @@ let n = {
     hex: "#666666",
     meta: {
       figma: {
-        ignore: !0
+        ignore: true
       }
     }
   },
@@ -633,7 +634,7 @@ let n = {
     hex: "#5f5f5f",
     meta: {
       figma: {
-        ignore: !0
+        ignore: true
       }
     }
   },
@@ -641,7 +642,7 @@ let n = {
     hex: "#585858",
     meta: {
       figma: {
-        ignore: !0
+        ignore: true
       }
     }
   },
@@ -649,7 +650,7 @@ let n = {
     hex: "#4d4d4d",
     meta: {
       figma: {
-        ignore: !0
+        ignore: true
       }
     }
   },
@@ -657,7 +658,7 @@ let n = {
     hex: "#3b3b3b",
     meta: {
       figma: {
-        ignore: !0
+        ignore: true
       }
     }
   },
@@ -665,7 +666,7 @@ let n = {
     hex: "#262626",
     meta: {
       figma: {
-        ignore: !0
+        ignore: true
       }
     }
   },
@@ -673,7 +674,7 @@ let n = {
     hex: "#0d0d0d",
     meta: {
       figma: {
-        ignore: !0
+        ignore: true
       }
     }
   },
@@ -684,7 +685,7 @@ let n = {
     hex: "#f2f2f2",
     meta: {
       figma: {
-        ignore: !0
+        ignore: true
       }
     }
   },
@@ -692,7 +693,7 @@ let n = {
     hex: "#e8e8e8",
     meta: {
       figma: {
-        ignore: !0
+        ignore: true
       }
     }
   },
@@ -700,7 +701,7 @@ let n = {
     hex: "#dadada",
     meta: {
       figma: {
-        ignore: !0
+        ignore: true
       }
     }
   },
@@ -708,7 +709,7 @@ let n = {
     hex: "#cccccc",
     meta: {
       figma: {
-        ignore: !0
+        ignore: true
       }
     }
   },
@@ -716,7 +717,7 @@ let n = {
     hex: "#bdbdbd",
     meta: {
       figma: {
-        ignore: !0
+        ignore: true
       }
     }
   },
@@ -724,7 +725,7 @@ let n = {
     hex: "#acacac",
     meta: {
       figma: {
-        ignore: !0
+        ignore: true
       }
     }
   },
@@ -732,7 +733,7 @@ let n = {
     hex: "#999999",
     meta: {
       figma: {
-        ignore: !0
+        ignore: true
       }
     }
   },
@@ -740,7 +741,7 @@ let n = {
     hex: "#7a7a7a",
     meta: {
       figma: {
-        ignore: !0
+        ignore: true
       }
     }
   },
@@ -748,7 +749,7 @@ let n = {
     hex: "#666666",
     meta: {
       figma: {
-        ignore: !0
+        ignore: true
       }
     }
   },
@@ -756,7 +757,7 @@ let n = {
     hex: "#5c5c5c",
     meta: {
       figma: {
-        ignore: !0
+        ignore: true
       }
     }
   },
@@ -764,7 +765,7 @@ let n = {
     hex: "#333333",
     meta: {
       figma: {
-        ignore: !0
+        ignore: true
       }
     }
   },
@@ -772,7 +773,7 @@ let n = {
     hex: "#252525",
     meta: {
       figma: {
-        ignore: !0
+        ignore: true
       }
     }
   },
@@ -780,7 +781,7 @@ let n = {
     hex: "#141414",
     meta: {
       figma: {
-        ignore: !0
+        ignore: true
       }
     }
   },
@@ -791,7 +792,7 @@ let n = {
     hex: "#000000",
     meta: {
       figma: {
-        ignore: !0
+        ignore: true
       }
     }
   },
@@ -799,7 +800,7 @@ let n = {
     hex: "#000000",
     meta: {
       figma: {
-        ignore: !0
+        ignore: true
       }
     }
   },
@@ -807,7 +808,7 @@ let n = {
     hex: "#000000",
     meta: {
       figma: {
-        ignore: !0
+        ignore: true
       }
     }
   },
@@ -815,7 +816,7 @@ let n = {
     hex: "#000000",
     meta: {
       figma: {
-        ignore: !0
+        ignore: true
       }
     }
   },
@@ -823,7 +824,7 @@ let n = {
     hex: "#000000",
     meta: {
       figma: {
-        ignore: !0
+        ignore: true
       }
     }
   },
@@ -831,7 +832,7 @@ let n = {
     hex: "#000000",
     meta: {
       figma: {
-        ignore: !0
+        ignore: true
       }
     }
   },
@@ -839,7 +840,7 @@ let n = {
     hex: "#000000",
     meta: {
       figma: {
-        ignore: !0
+        ignore: true
       }
     }
   },
@@ -847,7 +848,7 @@ let n = {
     hex: "#000000",
     meta: {
       figma: {
-        ignore: !0
+        ignore: true
       }
     }
   },
@@ -855,7 +856,7 @@ let n = {
     hex: "#000000",
     meta: {
       figma: {
-        ignore: !0
+        ignore: true
       }
     }
   },
@@ -863,7 +864,7 @@ let n = {
     hex: "#000000",
     meta: {
       figma: {
-        ignore: !0
+        ignore: true
       }
     }
   },
@@ -871,7 +872,7 @@ let n = {
     hex: "#000000",
     meta: {
       figma: {
-        ignore: !0
+        ignore: true
       }
     }
   },
@@ -879,7 +880,7 @@ let n = {
     hex: "#000000",
     meta: {
       figma: {
-        ignore: !0
+        ignore: true
       }
     }
   },

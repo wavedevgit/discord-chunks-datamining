@@ -1,1 +1,0 @@
-{"id":"258555","type":"experiment","data":{"kind":"user","id":"2025-06_bogo_server_side_eligibility","label":"BOGO Server Side Eligibility","defaultConfig":{"getServerResult":false},"treatments":[{"id":1,"label":"Get BOGO Eligibility result from the marketing campaign eligibility API","config":{"getServerResult":false}}]},"fromModule":{"id":"web.js"}}

@@ -1,15 +1,16 @@
 /** Chunk was on web.js **/
+/** chunk id: 518738, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Kz: () => l,
   oC: () => u,
   p9: () => c
 });
-var r = n(73800),
-  i = n(442837),
-  o = n(485386),
-  a = n(430824),
-  s = n(829883);
+var Chunk73800 = require("./73800.js"),
+  Chunk442837 = require("./442837.js"),
+  Chunk485386 = require("./485386.js"),
+  Chunk430824 = require("./430824.js"),
+  Chunk829883 = require("./829883.js");
 
 function l(e, t) {
   var n;
@@ -37,7 +38,7 @@ function c(e) {
     role: d
   } = (0, i.cj)([a.Z, o.Z], () => ({
     guild: a.Z.getGuild(t),
-    role: null != n ? o.Z.getRole(t, n) : void 0
+    role: null != n ? o.Z.getRole(t, n) : true
   }), [t, n]);
   return r.useMemo(() => {
     if (null != u && null != n && (0, s._b)(u, d)) return l(d, c)

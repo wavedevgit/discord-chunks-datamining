@@ -1,16 +1,17 @@
 /** Chunk was on web.js **/
-e.exports = function(e) {
+/** chunk id: 625219, original params: e (module,exports,re quire) **/
+module.exports = function(e) {
   let t = {
     variants: [e.COMMENT("^[ \\t]*(?=#)", "$", {
       relevance: 0,
-      excludeBegin: !0
+      excludeBegin: true
     }), e.COMMENT("[;@]", "$", {
       relevance: 0
     }), e.C_LINE_COMMENT_MODE, e.C_BLOCK_COMMENT_MODE]
   };
   return {
     name: "ARM Assembly",
-    case_insensitive: !0,
+    case_insensitive: true,
     aliases: ["arm"],
     keywords: {
       $pattern: "\\.?" + e.IDENT_RE,

@@ -1,30 +1,31 @@
 /** Chunk was on web.js **/
+/** chunk id: 213609, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => I,
   h: () => v
 });
-var r = n(73800),
-  i = n(348327),
-  o = n.n(i),
-  a = n(97613),
-  s = n.n(a),
-  l = n(990547),
-  c = n(570140),
-  u = n(493773),
-  d = n(592125),
-  f = n(944486),
-  _ = n(914010),
-  p = n(626135),
-  h = n(367907),
-  m = n(565384);
+var Chunk73800 = require("./73800.js"),
+  Chunk348327 = require("./348327.js"),
+  o = require.n(Chunk348327),
+  Chunk97613 = require("./97613.js"),
+  s = require.n(Chunk97613),
+  Chunk990547 = require("./990547.js"),
+  Chunk570140 = require("./570140.js"),
+  Chunk493773 = require("./493773.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk944486 = require("./944486.js"),
+  Chunk914010 = require("./914010.js"),
+  Chunk626135 = require("./626135.js"),
+  Chunk367907 = require("./367907.js"),
+  Chunk565384 = require("./565384.js");
 
 function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -57,15 +58,15 @@ function y(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let O = (0, l.trackMaker)({
-  analyticEventConfigs: p.AnalyticEventConfigs,
-  dispatcher: c.Z,
+let O = (0, Chunk990547.trackMaker)({
+  analyticEventConfigs: Chunk626135.AnalyticEventConfigs,
+  dispatcher: Chunk570140.Z,
   TRACK_ACTION_NAME: "TRACK"
 });
 
 function v(e) {
   var t, n;
-  let r = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
+  let r = arguments.length > 1 && true !== arguments[1] && arguments[1],
     {
       name: i,
       type: o,
@@ -73,11 +74,11 @@ function v(e) {
     } = e;
   if (e.type === l.ImpressionTypes.MODAL && null == e.name && (0, m.Ez)().some(e => {
       var t;
-      return null == (t = e._stackContext) ? void 0 : t.isSlide
+      return null == (t = e._stackContext) ? true : t.isSlide
     })) return;
   (0, m.Ps)(e);
-  let s = null != (t = null == a ? void 0 : a.guild_id) ? t : _.Z.getGuildId(),
-    c = null != (n = null == a ? void 0 : a.channel_id) ? n : f.Z.getChannelId(s),
+  let s = null != (t = null == a ? true : a.guild_id) ? t : _.Z.getGuildId(),
+    c = null != (n = null == a ? true : a.channel_id) ? n : f.Z.getChannelId(s),
     u = (0, p.expandEventProperties)(E({
       impression_type: o,
       location: (0, m.k$)()
@@ -87,13 +88,13 @@ function v(e) {
 }
 
 function I(e) {
-  let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {
-      disableTrack: !1,
-      trackOnInitialLoad: !1
+  let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {
+      disableTrack: false,
+      trackOnInitialLoad: false
     },
-    n = arguments.length > 2 ? arguments[2] : void 0,
-    i = r.useRef(void 0),
-    a = r.useRef(void 0),
+    n = arguments.length > 2 ? arguments[2] : true,
+    i = r.useRef(true),
+    a = r.useRef(true),
     l = () => {
       let r = !o()(i.current, e);
       r && (i.current = e);

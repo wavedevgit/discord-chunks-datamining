@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 410992, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n(492189)("Uint8", function(e) {
+require("./492189.js")("Uint8", function(e) {
   return function(t, n, r) {
     return e(this, t, n, r)
   }

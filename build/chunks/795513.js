@@ -1,52 +1,53 @@
 /** Chunk was on web.js **/
+/** chunk id: 795513, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => c
 });
-var r = n(710845),
-  i = n(287328),
-  o = n(870078);
+var Chunk710845 = require("./710845.js"),
+  Chunk287328 = require("./287328.js"),
+  Chunk870078 = require("./870078.js");
 
 function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
-let s = new r.Z("KvCacheVersion");
+let s = new Chunk710845.Z("KvCacheVersion");
 class l {
   async okAsync(e) {
     let t = await i.Z.cache(e).get(o.aQ);
     return null == t ? null : t === o.Wj
   }
   canUseGuildVersions() {
-    return this.hasSuccessfullyConnected ? Promise.resolve(!0) : this.doesDatabaseVersionMatchJsConstants()
+    return this.hasSuccessfullyConnected ? Promise.resolve(true) : this.doesDatabaseVersionMatchJsConstants()
   }
   async doesDatabaseVersionMatchJsConstants() {
-    let e = i.Z.forceResyncVersion();
-    if (null == e) return !1;
-    let t = await e.get(o.LH),
-      n = null == t ? void 0 : t.version;
-    return n === o.pL || (s.info("KVStore version mismatch: ".concat(n, " vs ").concat(o.pL)), !1)
+    let e = Chunk287328.Z.forceResyncVersion();
+    if (null == module) returnfalse;
+    let t = await module.get(Chunk870078.LH),
+      n = null == exports ? true : exports.version;
+    return require === Chunk870078.pL || (s.info("KVStore version mismatch: ".concat(require, " vs ").concat(Chunk870078.pL)), false)
   }
   handleClear() {
-    this.hasSuccessfullyConnected = !1
+    this.hasSuccessfullyConnected = false
   }
   handleConnectionOpen() {
-    this.hasSuccessfullyConnected = !0
+    this.hasSuccessfullyConnected = true
   }
   handleWrite(e) {
-    this.hasSuccessfullyConnected = !0, i.Z.cacheTransaction(e).put(o.DQ, "\uD83D\uDC4B"), i.Z.cacheTransaction(e).put(o.aQ, o.Wj), i.Z.forceResyncVersionTransaction(e).put(o.LH, {
+    this.hasSuccessfullyConnected = true, i.Z.cacheTransaction(e).put(o.DQ, "\uD83D\uDC4B"), i.Z.cacheTransaction(e).put(o.aQ, o.Wj), i.Z.forceResyncVersionTransaction(e).put(o.LH, {
       version: o.pL
     })
   }
   resetInMemoryState() {
-    this.hasSuccessfullyConnected = !1
+    this.hasSuccessfullyConnected = false
   }
   constructor() {
-    a(this, "hasSuccessfullyConnected", !1), a(this, "actions", {
+    a(this, "hasSuccessfullyConnected", false), a(this, "actions", {
       BACKGROUND_SYNC: (e, t) => this.handleWrite(t),
       CONNECTION_OPEN: () => this.handleConnectionOpen(),
       WRITE_CACHES: (e, t) => this.handleWrite(t)

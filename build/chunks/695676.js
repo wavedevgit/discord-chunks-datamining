@@ -1,25 +1,26 @@
 /** Chunk was on web.js **/
+/** chunk id: 695676, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   gc: () => i,
   hH: () => a,
   uX: () => o
 });
-var r = n(73800),
+var Chunk73800 = require("./73800.js"),
   i = function(e) {
     return e.HOME = "home", e.LIST = "list", e.APPLICATION = "application", e
   }({});
-let o = r.createContext({
+let o = Chunk73800.createContext({
   history: [],
   discard: {},
-  currentView: void 0,
+  currentView: true,
   pushHistory: () => {},
   goBack: () => {},
-  getMostRecentHistoryItemByType: () => void 0,
-  isSlideReady: !1,
+  getMostRecentHistoryItemByType: () => true,
+  isSlideReady: false,
   setSlideReady: () => {}
 });
 
 function a() {
-  return r.useContext(o)
+  return Chunk73800.useContext(o)
 }

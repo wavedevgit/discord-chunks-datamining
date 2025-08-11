@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 61942, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   modalHeader: "modalHeader_c28af8",
   closeBtn: "closeBtn_c28af8",
   asset: "asset_c28af8",

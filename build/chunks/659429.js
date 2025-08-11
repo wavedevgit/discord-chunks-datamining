@@ -1,11 +1,12 @@
 /** Chunk was on 1272 **/
-n.d(t, {
+/** chunk id: 659429, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   $: () => o
 });
-var r = n(544891),
-  i = n(570140),
-  l = n(34756),
-  a = n(981631);
+var Chunk544891 = require("./544891.js"),
+  Chunk570140 = require("./570140.js"),
+  Chunk34756 = require("./34756.js"),
+  Chunk981631 = require("./981631.js");
 async function o(e) {
   i.Z.dispatch({
     type: "APPLICATION_ACTIVITY_STATISTICS_FETCH_START",
@@ -14,8 +15,8 @@ async function o(e) {
   try {
     let t = (await r.tn.get({
       url: a.ANM.APPLICATION_ACTIVITY_STATISTICS(e),
-      oldFormErrors: !0,
-      rejectWithError: !1
+      oldFormErrors: true,
+      rejectWithError: false
     })).body;
     return i.Z.dispatch({
       type: "APPLICATION_ACTIVITY_STATISTICS_FETCH_SUCCESS",

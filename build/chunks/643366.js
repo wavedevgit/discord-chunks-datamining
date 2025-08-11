@@ -1,12 +1,13 @@
 /** Chunk was on 69773 **/
-n.d(t, {
+/** chunk id: 643366, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Y: () => s
 });
-var a = n(73800),
-  r = n(110924),
-  o = n(626135),
-  i = n(497350),
-  l = n(981631);
+var Chunk73800 = require("./73800.js"),
+  Chunk110924 = require("./110924.js"),
+  Chunk626135 = require("./626135.js"),
+  Chunk497350 = require("./497350.js"),
+  Chunk981631 = require("./981631.js");
 
 function s(e) {
   let t = (0, r.Z)(e);
@@ -14,7 +15,7 @@ function s(e) {
     if (e === t) return;
     let n = null;
     "user-code-input" !== e.type && "handoff" !== e.type && (n = (0, i.B)(e.userCodeData.clientId)), o.default.track(l.rMx.DEVICE_LINK_STEP, {
-      previous_step: null == t ? void 0 : t.type,
+      previous_step: null == t ? true : t.type,
       current_step: e.type,
       platform_type: n
     })

@@ -1,10 +1,11 @@
 /** Chunk was on 23357 **/
+/** chunk id: 998102, original params: e,t,n (module,exports,require) **/
 "use strict";
-var r = n(220159),
-  o = n(486132).values;
-r({
+var Chunk220159 = require("./220159.js"),
+  o = require("./486132.js").values;
+Chunk220159({
   target: "Object",
-  stat: !0
+  stat: true
 }, {
   values: function(e) {
     return o(e)

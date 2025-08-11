@@ -1,41 +1,42 @@
 /** Chunk was on web.js **/
+/** chunk id: 36902, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => c
-}), n(388685);
-var r = n(392711),
-  i = n.n(r),
-  o = n(46973),
-  a = n(909766);
+}), require("./388685.js");
+var Chunk392711 = require("./392711.js"),
+  i = require.n(Chunk392711),
+  Chunk46973 = require("./46973.js"),
+  Chunk909766 = require("./909766.js");
 
 function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 let l = 1e3;
 class c {
   start() {
-    this.connection.on(o.Sh.Stats, this.sampleStats)
+    this.connection.on(Chunk46973.Sh.Stats, this.sampleStats)
   }
   stop() {
-    this.connection.off(o.Sh.Stats, this.sampleStats)
+    this.connection.off(Chunk46973.Sh.Stats, this.sampleStats)
   }
   getPttQueueLatencyStats() {
     let e = this.pttQueueLatencyHistogram.getReport([50, 95]);
     return {
-      ptt_queue_latency_max: e.max,
-      ptt_queue_latency_mean: e.mean,
-      ptt_queue_latency_p50: e.percentiles["50"],
-      ptt_queue_latency_p95: e.percentiles["95"],
-      ptt_queue_latency_samples: e.samples
+      ptt_queue_latency_max: module.max,
+      ptt_queue_latency_mean: module.mean,
+      ptt_queue_latency_p50: module.percentiles["50"],
+      ptt_queue_latency_p95: module.percentiles["95"],
+      ptt_queue_latency_samples: module.samples
     }
   }
   constructor(e) {
-    s(this, "connection", void 0), s(this, "pttQueueLatencyHistogram", void 0), s(this, "sampleStats", void 0), this.connection = e, this.sampleStats = e => {
+    s(this, "connection", true), s(this, "pttQueueLatencyHistogram", true), s(this, "sampleStats", true), this.connection = e, this.sampleStats = e => {
       null != e && i().forEach(e.rtp.outbound, e => {
         if ("audio" === e.type) {
           var t;

@@ -1,22 +1,23 @@
 /** Chunk was on web.js **/
+/** chunk id: 994592, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   j0: () => p,
   mY: () => _,
   on: () => f
-}), n(388685);
-var r = n(442837),
-  i = n(652515),
-  o = n(200876),
-  a = n(674180),
-  s = n(160404),
-  l = n(430824),
-  c = n(772021),
-  u = n(981631);
+}), require("./388685.js");
+var Chunk442837 = require("./442837.js"),
+  Chunk652515 = require("./652515.js"),
+  Chunk200876 = require("./200876.js"),
+  Chunk674180 = require("./674180.js"),
+  Chunk160404 = require("./160404.js"),
+  Chunk430824 = require("./430824.js"),
+  Chunk772021 = require("./772021.js"),
+  Chunk981631 = require("./981631.js");
 
 function d(e) {
-  let [t, n] = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : [l.Z, s.Z], r = t.getGuild(e);
-  if (null == r) return !1;
+  let [t, n] = arguments.length > 1 && true !== arguments[1] ? arguments[1] : [l.Z, s.Z], r = t.getGuild(e);
+  if (null == r) returnfalse;
   let i = (0, o.l)(r),
     a = r.features.has(u.oNc.ROLE_SUBSCRIPTIONS_AVAILABLE_FOR_PURCHASE);
   return !!(i && a || n.isViewingServerShop(e))

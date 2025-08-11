@@ -1,12 +1,13 @@
 /** Chunk was on 75708 **/
-n.d(t, {
+/** chunk id: 400332, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   U: () => a
 });
-var i = n(819640),
-  r = n(585483),
-  s = n(981631);
+var Chunk819640 = require("./819640.js"),
+  Chunk585483 = require("./585483.js"),
+  Chunk981631 = require("./981631.js");
 let a = {
   binds: ["mod+s"],
-  comboKeysBindGlobal: !0,
-  action: () => !(i.Z.getLayers().length > 0) && (r.S.dispatchToLastSubscribed(s.CkL.TOGGLE_STICKER_PICKER), !1)
+  comboKeysBindGlobal: true,
+  action: () => !(Chunk819640.Z.getLayers().length > 0) && (Chunk585483.S.dispatchToLastSubscribed(Chunk981631.CkL.TOGGLE_STICKER_PICKER), false)
 }

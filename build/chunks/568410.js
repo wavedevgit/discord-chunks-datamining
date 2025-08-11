@@ -1,5 +1,6 @@
 /** Chunk was on 3378 **/
-n.exports = {
+/** chunk id: 568410, original params: n,t,e (module,exports,require) **/
+module.exports = {
   confirmation: "confirmation__1051d",
   iconWrapper: "iconWrapper__1051d",
   statusTextContainer: "statusTextContainer__1051d",

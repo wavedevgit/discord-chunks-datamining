@@ -1,14 +1,15 @@
 /** Chunk was on web.js **/
+/** chunk id: 978519, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   r: () => u
-}), n(35282), n(73800), n(399606);
-var r = n(430824),
-  i = n(358085),
-  o = n(341653),
-  a = n(981631);
+}), require("./35282.js"), require("./73800.js"), require("./399606.js");
+var Chunk430824 = require("./430824.js"),
+  Chunk358085 = require("./358085.js"),
+  Chunk341653 = require("./341653.js"),
+  Chunk981631 = require("./981631.js");
 let s = "13.2",
-  l = [a.oNc.ROLE_SUBSCRIPTIONS_AVAILABLE_FOR_PURCHASE];
+  l = [Chunk981631.oNc.ROLE_SUBSCRIPTIONS_AVAILABLE_FOR_PURCHASE];
 
 function c(e, t) {
   let n = e.split(".").map(Number),
@@ -18,16 +19,16 @@ function c(e, t) {
     var o, a;
     let t = null != (o = n[e]) ? o : 0,
       i = null != (a = r[e]) ? a : 0;
-    if (t < i) return -1;
+    if (t < i) return false;
     if (t > i) return 1
   }
   return 0
 }
 
 function u(e) {
-  if (!(0, i.isIOS)()) return !1;
+  if (!(0, i.isIOS)()) returnfalse;
   let t = (0, o.e)();
-  if (null == t || -1 === c(t, s)) return !1;
+  if (null == t || false === c(t, s)) returnfalse;
   let n = r.Z.getGuild(e);
   return null != n && !!l.every(e => n.features.has(e))
 }

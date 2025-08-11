@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 408433, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   En: () => P,
   dY: () => S,
   eC: () => R,
@@ -9,16 +10,16 @@ n.d(t, {
   l3: () => A,
   o3: () => T,
   vP: () => C
-}), n(413496), n(433524), n(35282), n(953529), n(997841), n(190126), n(368063), n(65234), n(111804), n(490233), n(97749), n(388685), n(539854);
-var r = n(392711),
-  i = n.n(r),
-  o = n(913527),
-  a = n.n(o),
-  s = n(866442),
-  l = n(630388),
-  c = n(709054),
-  u = n(981631),
-  d = n(817384);
+}), require("./413496.js"), require("./433524.js"), require("./35282.js"), require("./953529.js"), require("./997841.js"), require("./190126.js"), require("./368063.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js"), require("./388685.js"), require("./539854.js");
+var Chunk392711 = require("./392711.js"),
+  i = require.n(Chunk392711),
+  Chunk913527 = require("./913527.js"),
+  a = require.n(Chunk913527),
+  Chunk866442 = require("./866442.js"),
+  Chunk630388 = require("./630388.js"),
+  Chunk709054 = require("./709054.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk817384 = require("./817384.js");
 let f = /sketchfab/i,
   _ = /^https:\/\/sketchfab\.com/i,
   p = /youtube|steam|imgur|vimeo|sketchfab|soundcloud|streamable|twitch|vid\.me|twitter/i,
@@ -36,7 +37,7 @@ function b(e) {
 }
 
 function y(e, t, n) {
-  if (null != t && f.test(t.name) || _.test(n.url)) return !1;
+  if (null != t && f.test(t.name) || _.test(n.url)) returnfalse;
   let r = null != n.proxy_url || /^https:/i.test(n.url);
   return null != e && c.default.extractTimestamp(e) < h && (r = r && null != t && p.test(t.name)), r
 }
@@ -63,7 +64,7 @@ function O(e) {
     description: s,
     srcIsAnimated: (0, l.yE)(null != c ? c : 0, u.FoC.IS_ANIMATED),
     flags: null != c ? c : 0,
-    contentType: null != d ? d : void 0
+    contentType: null != d ? d : true
   }
 }
 
@@ -90,7 +91,7 @@ function v(e, t, n) {
     }), null != n.provider && null != n.provider.name && (r.provider = {
       name: n.provider.name,
       url: n.provider.url
-    }), null != n.timestamp && (r.timestamp = a()(new Date(n.timestamp))), null != n.color && (r.color = (0, s.ho)(n.color, !0)), null != n.thumbnail && b(n.thumbnail)) switch (r.type) {
+    }), null != n.timestamp && (r.timestamp = a()(new Date(n.timestamp))), null != n.color && (r.color = (0, s.ho)(n.color, true)), null != n.thumbnail && b(n.thumbnail)) switch (r.type) {
     case u.hBH.ARTICLE:
     case u.hBH.IMAGE:
       r.image = O(n.thumbnail);
@@ -167,7 +168,7 @@ function C(e, t, n) {
   return null != t && null != n ? {
     maxMediaWidth: t,
     maxMediaHeight: n
-  } : (null == (r = e.provider) ? void 0 : r.name) === "TikTok" ? {
+  } : (null == (r = e.provider) ? true : r.name) === "TikTok" ? {
     maxMediaWidth: 400,
     maxMediaHeight: 450
   } : {

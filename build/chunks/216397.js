@@ -1,24 +1,25 @@
 /** Chunk was on 67244 **/
+/** chunk id: 216397, original params: e,t,r (module,exports,require) **/
 "use strict";
-r.d(t, {
+require.d(exports, {
   Z: () => c
 });
-var a = r(760919),
-  n = r(677524),
-  s = r(413668);
+var Chunk760919 = require("./760919.js"),
+  Chunk677524 = require("./677524.js"),
+  Chunk413668 = require("./413668.js");
 let o = [, , , ].fill("<percentage> | <number>[0, 255]"),
   i = [, , , ].fill("<number>[0, 255]"),
-  c = new a.Z({
+  c = new Chunk760919.Z({
     id: "srgb",
     name: "sRGB",
-    base: n.Z,
+    base: Chunk677524.Z,
     fromBase: e => e.map(e => {
-      let t = e < 0 ? -1 : 1,
+      let t = e < 0 ? false : 1,
         r = e * t;
       return r > .0031308 ? t * (1.055 * r ** (1 / 2.4) - .055) : 12.92 * e
     }),
     toBase: e => e.map(e => {
-      let t = e < 0 ? -1 : 1,
+      let t = e < 0 ? false : 1,
         r = e * t;
       return r <= .04045 ? e / 12.92 : t * ((r + .055) / 1.055) ** 2.4
     }),
@@ -28,24 +29,24 @@ let o = [, , , ].fill("<percentage> | <number>[0, 255]"),
       },
       rgb_number: {
         name: "rgb",
-        commas: !0,
+        commas: true,
         coords: i,
-        noAlpha: !0
+        noAlpha: true
       },
       color: {},
       rgba: {
         coords: o,
-        commas: !0,
-        lastAlpha: !0
+        commas: true,
+        lastAlpha: true
       },
       rgba_number: {
         name: "rgba",
-        commas: !0,
+        commas: true,
         coords: i
       },
       hex: {
         type: "custom",
-        toGamut: !0,
+        toGamut: true,
         test: e => /^#([a-f0-9]{3,4}){1,2}$/i.test(e),
         parse(e) {
           e.length <= 5 && (e = e.replace(/[a-f0-9]/gi, "$&$&"));
@@ -59,7 +60,7 @@ let o = [, , , ].fill("<percentage> | <number>[0, 255]"),
           }
         },
         serialize: (e, t, {
-          collapse: r = !0
+          collapse: r = true
         } = {}) => {
           t < 1 && e.push(t), e = e.map(e => Math.round(255 * e));
           let a = r && e.every(e => e % 17 == 0);

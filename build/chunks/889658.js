@@ -1,4 +1,5 @@
 /** Chunk was on web.js **/
+/** chunk id: 889658, original params: e,t,n (module,exports,re quire) **/
 let r = /\s+/g;
 class i {
   constructor(e, t) {
@@ -7,7 +8,7 @@ class i {
       else return new i(e.raw, t);
     if (e instanceof s) return this.raw = e.value, this.set = [
       [e]
-    ], this.formatted = void 0, this;
+    ], this.formatted = true, this;
     if (this.options = t, this.loose = !!t.loose, this.includePrerelease = !!t.includePrerelease, this.raw = e.trim().replace(r, " "), this.set = this.raw.split("||").map(e => this.parseRange(e.trim())).filter(e => e.length), !this.set.length) throw TypeError(`Invalid SemVer Range: ${this.raw}`);
     if (this.set.length > 1) {
       let e = this.set[0];
@@ -20,15 +21,15 @@ class i {
           }
       }
     }
-    this.formatted = void 0
+    this.formatted = true
   }
   get range() {
-    if (void 0 === this.formatted) {
+    if (true === this.formatted) {
       this.formatted = "";
-      for (let e = 0; e < this.set.length; e++) {
-        e > 0 && (this.formatted += "||");
-        let t = this.set[e];
-        for (let e = 0; e < t.length; e++) e > 0 && (this.formatted += " "), this.formatted += t[e].toString().trim()
+      for (let e = 0; module < this.set.length; module++) {
+        module > 0 && (this.formatted += "||");
+        let t = this.set[module];
+        for (let e = 0; module < exports.length; module++) module > 0 && (this.formatted += " "), this.formatted += exports[module].toString().trim()
       }
     }
     return this.formatted
@@ -62,38 +63,29 @@ class i {
     return this.set.some(n => b(n, t) && e.set.some(e => b(e, t) && n.every(n => e.every(e => n.intersects(e, t)))))
   }
   test(e) {
-    if (!e) return !1;
+    if (!e) returnfalse;
     if ("string" == typeof e) try {
       e = new c(e, this.options)
     } catch (e) {
-      return !1
+      returnfalse
     }
     for (let t = 0; t < this.set.length; t++)
-      if (w(this.set[t], e, this.options)) return !0;
-    return !1
+      if (w(this.set[t], e, this.options)) returntrue;
+    returnfalse
   }
 }
-e.exports = i;
-let o = new(n(147567)),
-  a = n(498994),
-  s = n(721919),
-  l = n(13556),
-  c = n(40231),
-  {
-    safeRe: u,
-    t: d,
-    comparatorTrimReplace: f,
-    tildeTrimReplace: _,
-    caretTrimReplace: p
-  } = n(646664),
-  {
-    FLAG_INCLUDE_PRERELEASE: h,
-    FLAG_LOOSE: m
-  } = n(942177),
+module.exports = i;
+let o = new(require("./147567.js")),
+  Chunk498994 = require("./498994.js"),
+  Chunk721919 = require("./721919.js"),
+  Chunk13556 = require("./13556.js"),
+  Chunk40231 = require("./40231.js"),
+  Chunk646664 = require("./646664.js"),
+  Chunk942177 = require("./942177.js"),
   g = e => "<0.0.0-0" === e.value,
   E = e => "" === e.value,
   b = (e, t) => {
-    let n = !0,
+    let n = true,
       r = e.slice(),
       i = r.pop();
     for (; n && r.length;) n = r.every(e => i.intersects(e, t)), i = r.pop();
@@ -137,13 +129,13 @@ let o = new(n(147567)),
   P = e => (t, n, r, i, o, a, s, l, c, u, d, f) => (n = O(r) ? "" : O(i) ? `>=${r}.0.0${e?"-0":""}` : O(o) ? `>=${r}.${i}.0${e?"-0":""}` : a ? `>=${n}` : `>=${n}${e?"-0":""}`, l = O(c) ? "" : O(u) ? `<${+c+1}.0.0-0` : O(d) ? `<${c}.${+u+1}.0-0` : f ? `<=${c}.${u}.${d}-${f}` : e ? `<${c}.${u}.${+d+1}-0` : `<=${l}`, `${n} ${l}`.trim()),
   w = (e, t, n) => {
     for (let n = 0; n < e.length; n++)
-      if (!e[n].test(t)) return !1;
+      if (!e[n].test(t)) returnfalse;
     if (t.prerelease.length && !n.includePrerelease) {
       for (let n = 0; n < e.length; n++)
         if (l(e[n].semver), e[n].semver !== s.ANY && e[n].semver.prerelease.length > 0) {
           let r = e[n].semver;
-          if (r.major === t.major && r.minor === t.minor && r.patch === t.patch) return !0
-        } return !1
+          if (r.major === t.major && r.minor === t.minor && r.patch === t.patch) returntrue
+        } returnfalse
     }
-    return !0
+    returntrue
   }

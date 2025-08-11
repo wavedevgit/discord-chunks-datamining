@@ -1,29 +1,30 @@
 /** Chunk was on web.js **/
+/** chunk id: 13245, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => I
-}), n(388685), n(415506);
-var r = n(772848),
-  i = n(570140),
-  o = n(318885),
-  a = n(710845),
-  s = n(444295),
-  l = n(486016),
-  c = n(837268),
-  u = n(355863),
-  d = n(449224),
-  f = n(451478),
-  _ = n(434529),
-  p = n(145597),
-  h = n(765250),
-  m = n(981631);
+}), require("./388685.js"), require("./415506.js");
+var Chunk772848 = require("./772848.js"),
+  Chunk570140 = require("./570140.js"),
+  Chunk318885 = require("./318885.js"),
+  Chunk710845 = require("./710845.js"),
+  Chunk444295 = require("./444295.js"),
+  Chunk486016 = require("./486016.js"),
+  Chunk837268 = require("./837268.js"),
+  Chunk355863 = require("./355863.js"),
+  Chunk449224 = require("./449224.js"),
+  Chunk451478 = require("./451478.js"),
+  Chunk434529 = require("./434529.js"),
+  Chunk145597 = require("./145597.js"),
+  Chunk765250 = require("./765250.js"),
+  Chunk981631 = require("./981631.js");
 
 function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -56,11 +57,11 @@ function y(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let O = new a.Z("OverlayActionCreators"),
+let O = new Chunk710845.Z("OverlayActionCreators"),
   v = {
     track(e) {
-      let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {},
-        n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
+      let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {},
+        n = arguments.length > 2 && true !== arguments[2] && arguments[2];
       (0, o.Q)(e, t, n)
     },
     overlayReady(e) {
@@ -70,14 +71,14 @@ let O = new a.Z("OverlayActionCreators"),
       })
     },
     overlayMounted() {
-      for (var e = arguments.length, t = Array(e), n = 0; n < e; n++) t[n] = arguments[n];
-      i.Z.dispatch({
+      for (var e = arguments.length, t = Array(module), n = 0; require < module; require++) exports[require] = arguments[require];
+      Chunk570140.Z.dispatch({
         type: "OVERLAY_MOUNTED",
-        nudges: t
+        nudges: exports
       })
     },
     setFocusedPID(e) {
-      let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
+      let t = arguments.length > 1 && true !== arguments[1] && arguments[1],
         n = t ? c.d5.UNTRACK_FOCUS : c.d5.TRACK_FOCUS;
       i.Z.dispatch({
         type: "OVERLAY_FOCUSED",
@@ -113,7 +114,7 @@ let O = new a.Z("OverlayActionCreators"),
       })
     },
     clearTrackedPids() {
-      i.Z.dispatch({
+      Chunk570140.Z.dispatch({
         type: "OVERLAY_RENDER_DEBUG_CLEAR_TRACKED_PIDS"
       })
     },
@@ -199,13 +200,13 @@ let O = new a.Z("OverlayActionCreators"),
       })
     },
     disableExternalLinkAlert() {
-      i.Z.dispatch({
+      Chunk570140.Z.dispatch({
         type: "OVERLAY_DISABLE_EXTERNAL_LINK_ALERT"
       })
     },
     startSession() {
       if (!__OVERLAY__) return void O.error("Attempting to start an overlay session outside of the overlay context");
-      i.Z.dispatch({
+      Chunk570140.Z.dispatch({
         type: "OVERLAY_START_SESSION"
       })
     },
@@ -216,7 +217,7 @@ let O = new a.Z("OverlayActionCreators"),
       })
     },
     deactivateAllRegions() {
-      i.Z.dispatch({
+      Chunk570140.Z.dispatch({
         type: "OVERLAY_DEACTIVATE_ALL_REGIONS"
       })
     },
@@ -227,7 +228,7 @@ let O = new a.Z("OverlayActionCreators"),
       })
     },
     updateNotificationStatus(e) {
-      let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : m._1z.DISMISSED;
+      let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : m._1z.DISMISSED;
       i.Z.dispatch({
         type: "OVERLAY_UPDATE_NOTIFICATION_STATUS",
         notificationId: e,
@@ -247,8 +248,8 @@ let O = new a.Z("OverlayActionCreators"),
         type: "OVERLAY_NOTIFICATION_EVENT",
         notificationType: e,
         action: t,
-        gameName: null != (n = null == o ? void 0 : o.name) ? n : null,
-        gameId: null != (r = null == o ? void 0 : o.id) ? r : null
+        gameName: null != (n = null == o ? true : o.name) ? n : null,
+        gameId: null != (r = null == o ? true : o.id) ? r : null
       })
     },
     setPinChat(e) {

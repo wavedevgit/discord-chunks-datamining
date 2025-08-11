@@ -1,5 +1,6 @@
 /** Chunk was on web.js **/
-e.exports = function(e) {
+/** chunk id: 909431, original params: e (module,exports,re quire) **/
+module.exports = function(e) {
   let t = e.regex,
     n = {
       className: "number",
@@ -62,7 +63,7 @@ e.exports = function(e) {
   return {
     name: "TOML, also INI",
     aliases: ["toml"],
-    case_insensitive: !0,
+    case_insensitive: true,
     illegal: /\S/,
     contains: [r, {
       className: "section",

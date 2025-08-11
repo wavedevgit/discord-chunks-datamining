@@ -1,5 +1,6 @@
 /** Chunk was on web.js **/
-e.exports = function(e) {
+/** chunk id: 666956, original params: e (module,exports,re quire) **/
+module.exports = function(e) {
   let t = "[a-zA-Z_][\\w.]*",
     n = "<\\?(lasso(script)?|=)",
     r = "\\]|\\?>",
@@ -17,7 +18,7 @@ e.exports = function(e) {
       begin: "\\[noprocess\\]",
       starts: {
         end: "\\[/noprocess\\]",
-        returnEnd: !0,
+        returnEnd: true,
         contains: [o]
       }
     },
@@ -67,7 +68,7 @@ e.exports = function(e) {
     }, {
       className: "class",
       beginKeywords: "define",
-      returnEnd: !0,
+      returnEnd: true,
       end: "\\(|=>",
       contains: [e.inherit(e.TITLE_MODE, {
         begin: t + "(=(?!>))?|[-+*/%](?!>)"
@@ -76,7 +77,7 @@ e.exports = function(e) {
   return {
     name: "Lasso",
     aliases: ["ls", "lassoscript"],
-    case_insensitive: !0,
+    case_insensitive: true,
     keywords: i,
     contains: [{
       className: "meta",
@@ -84,7 +85,7 @@ e.exports = function(e) {
       relevance: 0,
       starts: {
         end: "\\[|" + n,
-        returnEnd: !0,
+        returnEnd: true,
         relevance: 0,
         contains: [o]
       }
@@ -100,7 +101,7 @@ e.exports = function(e) {
           relevance: 0,
           starts: {
             end: "\\[noprocess\\]|" + n,
-            returnEnd: !0,
+            returnEnd: true,
             contains: [o]
           }
         }, a, s].concat(c)

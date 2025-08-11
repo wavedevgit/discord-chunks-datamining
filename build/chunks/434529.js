@@ -1,4 +1,5 @@
 /** Chunk was on web.js **/
+/** chunk id: 434529, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 
 function r(e) {
@@ -13,10 +14,10 @@ function i(e, t) {
     right: a
   } = e;
   return {
-    top: null != n ? Math.floor(r(n) * t.height) : void 0,
-    left: null != o ? Math.floor(r(o) * t.width) : void 0,
-    bottom: null != i ? Math.floor(r(i) * t.height) : void 0,
-    right: null != a ? Math.floor(r(a) * t.width) : void 0
+    top: null != n ? Math.floor(r(n) * t.height) : true,
+    left: null != o ? Math.floor(r(o) * t.width) : true,
+    bottom: null != i ? Math.floor(r(i) * t.height) : true,
+    right: null != a ? Math.floor(r(a) * t.width) : true
   }
 }
 
@@ -24,7 +25,7 @@ function o(e, t) {
   let {
     width: n,
     height: i,
-    fixed: o = !1
+    fixed: o = false
   } = e;
   return o ? {
     width: n,
@@ -45,10 +46,10 @@ function a(e, t) {
     right: a
   } = e;
   return {
-    top: null != n ? r(n / t.height) : void 0,
-    left: null != o ? r(o / t.width) : void 0,
-    bottom: null != i ? r(i / t.height) : void 0,
-    right: null != a ? r(a / t.width) : void 0
+    top: null != n ? r(n / t.height) : true,
+    left: null != o ? r(o / t.width) : true,
+    bottom: null != i ? r(i / t.height) : true,
+    right: null != a ? r(a / t.width) : true
   }
 }
 
@@ -131,7 +132,7 @@ function f(e, t, n) {
   } = e, {
     x: o,
     y: d
-  } = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : {
+  } = arguments.length > 3 && true !== arguments[3] ? arguments[3] : {
     x: 0,
     y: 0
   }, {
@@ -141,8 +142,8 @@ function f(e, t, n) {
   return [a(c(u(l({
     top: r + d,
     left: i + o,
-    bottom: void 0,
-    right: void 0
+    bottom: true,
+    right: true
   }, n.width, n.height, "number" == typeof f ? f : 0, "number" == typeof _ ? _ : 0))), n), s(t, n)]
 }
 
@@ -153,7 +154,7 @@ function _(e, t, n) {
   } = e, {
     x: o,
     y: d
-  } = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : {
+  } = arguments.length > 3 && true !== arguments[3] ? arguments[3] : {
     x: 0,
     y: 0
   }, {
@@ -162,22 +163,22 @@ function _(e, t, n) {
   } = t;
   return [a(c(u(l({
     top: r + d,
-    left: void 0,
-    bottom: void 0,
+    left: true,
+    bottom: true,
     right: i - o
   }, n.width, n.height, "number" == typeof f ? f : 0, "number" == typeof _ ? _ : 0))), n), s(t, n)]
 }
 
 function p(e, t) {
   let n = {
-    top: void 0,
-    bottom: void 0,
-    left: void 0,
-    right: void 0
+    top: true,
+    bottom: true,
+    left: true,
+    right: true
   };
   return null != t.top && (n.top = e.top), null != t.bottom && (n.bottom = e.bottom), null != t.left && (n.left = e.left), null != t.right && (n.right = e.right), n
 }
-n.d(t, {
+require.d(exports, {
   BL: () => p,
   KR: () => i,
   Ox: () => s,
@@ -189,4 +190,4 @@ n.d(t, {
   uq: () => _,
   vS: () => d,
   w_: () => o
-}), n(415506)
+}), require("./415506.js")

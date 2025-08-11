@@ -1,9 +1,10 @@
 /** Chunk was on web.js **/
+/** chunk id: 737746, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   U: () => i
 });
-var r = n(513431);
+var Chunk513431 = require("./513431.js");
 
 function i(e) {
   let t = getComputedStyle(document.documentElement).getPropertyValue("--space-".concat(e));

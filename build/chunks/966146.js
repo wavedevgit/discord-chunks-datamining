@@ -1,16 +1,17 @@
 /** Chunk was on web.js **/
+/** chunk id: 966146, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   x: () => a
-}), n(415506), n(388685), n(539854), n(642613);
-var r = n(65154);
+}), require("./415506.js"), require("./388685.js"), require("./539854.js"), require("./642613.js");
+var Chunk65154 = require("./65154.js");
 
 function i(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -28,7 +29,7 @@ function o(e) {
 }
 class a {
   getMaxSinkValue(e) {
-    let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 0;
+    let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : 0;
     if (e < 0) throw Error("getMaxSinkValue: Requested " + e);
     let n = this.orderedLadder[0].wantValue;
     for (let {
@@ -114,7 +115,7 @@ class a {
     return t
   }
   constructor(e = r.kS) {
-    i(this, "pixelBudget", void 0), i(this, "ladder", void 0), i(this, "orderedLadder", void 0);
+    i(this, "pixelBudget", true), i(this, "ladder", true), i(this, "orderedLadder", true);
     let {
       width: t,
       height: n

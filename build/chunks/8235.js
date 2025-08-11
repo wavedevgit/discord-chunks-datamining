@@ -1,4 +1,5 @@
 /** Chunk was on web.js **/
+/** chunk id: 8235, original params: e (module,exports,re quire) **/
 "use strict";
 var t = {
   isImage: function(e) {
@@ -13,4 +14,4 @@ var t = {
 function n(e) {
   return e.split("/")
 }
-e.exports = t
+module.exports = t

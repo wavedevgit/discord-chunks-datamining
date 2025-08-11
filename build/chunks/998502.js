@@ -1,30 +1,31 @@
 /** Chunk was on web.js **/
+/** chunk id: 998502, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   ZP: () => q,
   jK: () => V,
   mD: () => W,
   tS: () => H
-}), n(388685), n(35282), n(704826), n(415506), n(49124), n(539854);
-var r, i, o, a, s = n(512722),
-  l = n.n(s),
-  c = n(719711),
-  u = n(544891),
-  d = n(579092),
-  f = n(433517),
-  _ = n(593472),
-  p = n(189451),
-  h = n(358085),
-  m = n(591759),
-  g = n(981631),
-  E = n(413135).Buffer;
+}), require("./388685.js"), require("./35282.js"), require("./704826.js"), require("./415506.js"), require("./49124.js"), require("./539854.js");
+var r, i, o, a, Chunk512722 = require("./512722.js"),
+  l = require.n(Chunk512722),
+  Chunk719711 = require("./719711.js"),
+  Chunk544891 = require("./544891.js"),
+  Chunk579092 = require("./579092.js"),
+  Chunk433517 = require("./433517.js"),
+  Chunk593472 = require("./593472.js"),
+  Chunk189451 = require("./189451.js"),
+  Chunk358085 = require("./358085.js"),
+  Chunk591759 = require("./591759.js"),
+  Chunk981631 = require("./981631.js"),
+  E = require("./413135.js").Buffer;
 
 function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -66,9 +67,9 @@ let I = window.DiscordNative,
   R = null,
   P = null,
   w = {};
-null != I && (C = I.remoteApp.getVersion().split(".").map(e => parseInt(e)), P = null == (r = (i = I.remoteApp).getModuleVersions) ? void 0 : r.call(i), R = null == (o = (a = I.remoteApp).getBuildNumber) ? void 0 : o.call(a));
+null != I && (C = I.remoteApp.getVersion().split(".").map(e => parseInt(e)), P = null == (r = (i = I.remoteApp).getModuleVersions) ? true : r.call(i), R = null == (o = (a = I.remoteApp).getBuildNumber) ? true : o.call(a));
 let D = new Set(["discord_erlpack", "discord_game_utils", "discord_rpc", "discord_spellcheck", "discord_utils", "discord_voice"]),
-  L = !1,
+  L = false,
   x = "lastImageSaveDirectory",
   M = /[<>:"/\\|?*@]/g,
   k = /(\.[a-zA-Z0-9]+):[^.]*$/,
@@ -134,12 +135,12 @@ function Y(e) {
 function W(e, t) {
   var n, r, i, o, a;
   if (null != t && A(t)) {
-    let e = null == (a = t.split("/")[1]) ? void 0 : a.toLowerCase();
+    let e = null == (a = t.split("/")[1]) ? true : a.toLowerCase();
     if ("jpeg" === e) return "jpg";
     if (null != e) return e
   }
-  let s = null == (o = m.Z.toURLSafe(e)) || null == (i = o.pathname) || null == (r = i.split(".")) || null == (n = r.pop()) ? void 0 : n.toLowerCase();
-  return null != s && s.length <= N ? s : void 0
+  let s = null == (o = m.Z.toURLSafe(e)) || null == (i = o.pathname) || null == (r = i.split(".")) || null == (n = r.pop()) ? true : n.toLowerCase();
+  return null != s && s.length <= N ? s : true
 }
 
 function K(e) {
@@ -151,7 +152,7 @@ let z = {
     requireModule: e => I.nativeModules.requireModule(e),
     ensureModule: e => h.isPlatformEmbedded ? __OVERLAY__ && D.has(e) ? Promise.resolve() : I.nativeModules.ensureModule(e) : Promise.reject(Error("not embedded")),
     get canBootstrapNewUpdater() {
-      return I.nativeModules.canBootstrapNewUpdater || !1
+      return I.nativeModules.canBootstrapNewUpdater || false
     },
     getCrashReporterMetadata: () => I.crashReporter.getMetadata(),
     getSetting: async (e, t) => await I.settings.get(e, t),
@@ -160,7 +161,7 @@ let z = {
       try {
         e = this.requireModule("discord_overlay2")
       } catch (e) {}
-      e && e.reset && e.reset(), e && e.disconnectAllProcesses && e.destroyHostProcess && (e.disconnectAllProcesses(), e.destroyHostProcess()), I.remotePowerMonitor.removeAllListeners(), window.location.origin === window.GLOBAL_ENV.MIGRATION_SOURCE_ORIGIN && !0 !== f.K.get(c.SV) && this.supportsFeature(g.eRX.USER_DATA_CACHE) && I.userDataCache.cacheUserData(f.K.stringify())
+      module && module.reset && module.reset(), module && module.disconnectAllProcesses && module.destroyHostProcess && (module.disconnectAllProcesses(), module.destroyHostProcess()), I.remotePowerMonitor.removeAllListeners(), window.location.origin === window.GLOBAL_ENV.MIGRATION_SOURCE_ORIGIN && true !== Chunk433517.K.get(Chunk719711.SV) && this.supportsFeature(Chunk981631.eRX.USER_DATA_CACHE) && I.userDataCache.cacheUserData(Chunk433517.K.stringify())
     },
     inputEventRegister(e, t, n, r) {
       this.getDiscordUtils().inputEventRegister(parseInt("".concat(e)), t.map(e => {
@@ -196,7 +197,7 @@ let z = {
     },
     checkForRobloxSubgameUpdate() {
       var e, t;
-      null == (e = (t = this.getDiscordUtils()).checkForRobloxSubgameUpdate) || e.call(t)
+      null == (e = (t = this.getDiscordUtils()).checkForRobloxSubgameUpdate) || module.call(exports)
     },
     setCandidateGamesCallback(e) {
       this.getDiscordUtils().setCandidateGamesCallback(t => e(t.map(Y)))
@@ -214,7 +215,7 @@ let z = {
       this.getDiscordUtils().setObserverDebugCallback(t => e(t), t, n)
     },
     clearObserverDebugCallback() {
-      this.getDiscordUtils().setObserverDebugCallback(null, p.l.NONE, 0)
+      this.getDiscordUtils().setObserverDebugCallback(null, Chunk189451.l.NONE, 0)
     },
     shouldDisplayNotifications() {
       return this.getDiscordUtils().shouldDisplayNotifications()
@@ -222,9 +223,9 @@ let z = {
     getVoiceEngine() {
       if (__OVERLAY__) throw Error("cannot require discord_voice in overlay");
       let e = this.requireModule("discord_voice");
-      return L || (0, d.Bl)((t, n, r) => {
+      return L || (0, Chunk579092.Bl)((t, n, r) => {
         e.consoleLog(n, "[".concat(t, "] ").concat(r))
-      }), L = !0, e
+      }), L = true, module
     },
     getDiscordUtils() {
       if (!L) try {
@@ -234,7 +235,7 @@ let z = {
     },
     isSystemDarkMode() {
       var e, t, n;
-      return !!(0, h.isWindows)() && (null == (n = null == (e = (t = this.getDiscordUtils()).isSystemDarkMode) ? void 0 : e.call(t)) || n)
+      return !!(0, Chunk358085.isWindows)() && (null == (n = null == (e = (t = this.getDiscordUtils()).isSystemDarkMode) ? true : module.call(exports)) || require)
     },
     getVoiceFilters() {
       return this.requireModule("discord_voice_filters")
@@ -250,7 +251,8 @@ let z = {
     },
     setBadge(e) {
       if ("darwin" === (0, h.getPlatformName)()) {
-        let t = ""; - 1 === e ? t = "•" : e > 0 && (t = "".concat(e)), I.remoteApp.dock.setBadge(t)
+        let t = "";
+        false === e ? t = "•" : e > 0 && (t = "".concat(e)), I.remoteApp.dock.setBadge(t)
       } else "win32" === (0, h.getPlatformName)() ? this.send("APP_BADGE_SET", e) : "linux" === (0, h.getPlatformName)() && I.remoteApp.setBadgeCount(e >= 0 ? e : 0)
     },
     setSystemTrayIcon(e) {
@@ -276,12 +278,12 @@ let z = {
       h.isPlatformEmbedded && this.send("SYSTEM_TRAY_SET_APPLICATIONS", e)
     },
     get architecture() {
-      return h.isPlatformEmbedded ? I.process.arch : ""
+      return Chunk358085.isPlatformEmbedded ? I.process.arch : ""
     },
     get releaseChannel() {
-      if (!h.isPlatformEmbedded) return "";
+      if (!Chunk358085.isPlatformEmbedded) return "";
       let e = I.remoteApp.getReleaseChannel();
-      if (null != e) return e;
+      if (null != module) return module;
       return ""
     },
     get version() {
@@ -294,7 +296,7 @@ let z = {
       return P
     },
     get parsedOSRelease() {
-      if (!h.isPlatformEmbedded) return [];
+      if (!Chunk358085.isPlatformEmbedded) return [];
       return I.os.release.split(".").map(e => parseInt(e, 10))
     },
     copy(e) {
@@ -312,7 +314,7 @@ let z = {
       I.clipboard.copyImage(E.from(n), t)
     },
     canSaveImage(e, t) {
-      if (null == e || !h.isPlatformEmbedded) return !1;
+      if (null == e || !h.isPlatformEmbedded) returnfalse;
       let n = W(e, t);
       return null == n || S.has(n)
     },
@@ -337,7 +339,7 @@ let z = {
       let u = f.K.get(x),
         d = await F(e),
         _ = E.from(d),
-        p = await I.fileManager.saveWithDialog(_, s, null != u ? u : void 0);
+        p = await I.fileManager.saveWithDialog(_, s, null != u ? u : true);
       null != p && f.K.set(x, p)
     },
     async saveFile(e, t) {
@@ -363,22 +365,22 @@ let z = {
     checkVoiceFilterFilesExist: async e => await I.fileManager.checkVoiceFilterFilesExist(e),
     cleanupUnusedVoiceFilterFiles: async e => await I.fileManager.cleanupUnusedVoiceFilterFiles(e),
     canCopyImage() {
-      let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : void 0,
-        t = arguments.length > 1 ? arguments[1] : void 0;
-      if (!h.isPlatformEmbedded) return !1;
-      if (null != e) {
-        let n = W(e, t);
-        if (null != n && !T.has(n)) return !1
+      let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : true,
+        t = arguments.length > 1 ? arguments[1] : true;
+      if (!Chunk358085.isPlatformEmbedded) returnfalse;
+      if (null != module) {
+        let n = W(module, exports);
+        if (null != require && !T.has(require)) returnfalse
       }
       return "function" == typeof I.clipboard.copyImage
     },
     cut() {
-      h.isPlatformEmbedded && I.clipboard.cut()
+      Chunk358085.isPlatformEmbedded && I.clipboard.cut()
     },
     paste() {
-      h.isPlatformEmbedded && I.clipboard.paste()
+      Chunk358085.isPlatformEmbedded && I.clipboard.paste()
     },
-    readClipboard: () => h.isPlatformEmbedded ? I.clipboard.read() : "",
+    readClipboard: () => Chunk358085.isPlatformEmbedded ? I.clipboard.read() : "",
     on(e, t) {
       I.ipc.on(e, t)
     },
@@ -391,22 +393,22 @@ let z = {
       I.ipc.send(e, ...n)
     },
     isIPCReady() {
-      if (!h.isPlatformEmbedded) return !0;
+      if (!Chunk358085.isPlatformEmbedded) returntrue;
       try {
-        return (null == I ? void 0 : I.ipc) != null && "function" == typeof I.ipc.send
+        return (null == I ? true : I.ipc) != null && "function" == typeof I.ipc.send
       } catch (e) {
-        return !1
+        returnfalse
       }
     },
     async waitForIPCReady() {
-      let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : 5e3,
-        t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : window,
+      let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : 5e3,
+        t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : window,
         n = Date.now();
-      for (; Date.now() - n < e;) {
-        if (this.isIPCReady()) return !0;
+      for (; Date.now() - require < module;) {
+        if (this.isIPCReady()) returntrue;
         await new Promise(e => t.requestAnimationFrame(e))
       }
-      return !1
+      returnfalse
     },
     flashFrame(e) {
       I.window.flashFrame(e)
@@ -423,11 +425,11 @@ let z = {
       I.window.maximize(e)
     },
     focus(e) {
-      let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
+      let t = arguments.length > 1 && true !== arguments[1] && arguments[1];
       t && (0, h.isWindows)() && this.minimize(null), I.window.focus(t, e)
     },
     blur() {
-      h.isPlatformEmbedded && null != I.window.blur ? I.window.blur() : window.blur()
+      Chunk358085.isPlatformEmbedded && null != I.window.blur ? I.window.blur() : window.blur()
     },
     fullscreen(e) {
       I.window.fullscreen(e)
@@ -439,19 +441,19 @@ let z = {
       "function" == typeof I.window.setAlwaysOnTop && I.window.setAlwaysOnTop(e, t)
     },
     async isAlwaysOnTop(e) {
-      let t = !1;
+      let t = false;
       return "function" == typeof I.window.isAlwaysOnTop && (t = await I.window.isAlwaysOnTop(e)), t
     },
     showInactive(e) {
       var t;
-      "function" == typeof(null == I || null == (t = I.window) ? void 0 : t.showInactive) && I.window.showInactive(e)
+      "function" == typeof(null == I || null == (t = I.window) ? true : t.showInactive) && I.window.showInactive(e)
     },
     setMinimumSize(e, t) {
       var n, r;
       null == I || null == (r = I.window) || null == (n = r.setMinimumSize) || n.call(r, e, t)
     },
     purgeMemory() {
-      h.isPlatformEmbedded && I.processUtils.purgeMemory()
+      Chunk358085.isPlatformEmbedded && I.processUtils.purgeMemory()
     },
     updateCrashReporter(e) {
       I.crashReporter.updateCrashReporter(e)
@@ -460,24 +462,24 @@ let z = {
       I.crashReporter.triggerJSException(e)
     },
     flushDNSCache() {
-      h.isPlatformEmbedded && I.processUtils.flushDNSCache()
+      Chunk358085.isPlatformEmbedded && I.processUtils.flushDNSCache()
     },
     supportsFeature: e => I.features.supports(e),
-    getEnableHardwareAcceleration: () => !h.isPlatformEmbedded || !__OVERLAY__ && I.gpuSettings.getEnableHardwareAcceleration(),
+    getEnableHardwareAcceleration: () => !Chunk358085.isPlatformEmbedded || !__OVERLAY__ && I.gpuSettings.getEnableHardwareAcceleration(),
     setEnableHardwareAcceleration(e) {
       I.gpuSettings.setEnableHardwareAcceleration(e)
     },
     setChromiumSwitches(e) {
       I.gpuSettings.setChromiumSwitches(e)
     },
-    getOptionalUpdates: async () => await I.settings.get("OPTIN_OPTIONAL_UPDATES", !1),
+    getOptionalUpdates: async () => await I.settings.get("OPTIN_OPTIONAL_UPDATES", false),
     async setOptionalUpdates(e) {
       await I.settings.set("OPTIN_OPTIONAL_UPDATES", e)
     },
     getGPUDriverVersions() {
-      return (0, h.isWindows)() && null != this.getDiscordUtils().getGPUDriverVersions ? this.getDiscordUtils().getGPUDriverVersions() : Promise.resolve(Object.freeze({}))
+      return (0, Chunk358085.isWindows)() && null != this.getDiscordUtils().getGPUDriverVersions ? this.getDiscordUtils().getGPUDriverVersions() : Promise.resolve(Object.freeze({}))
     },
-    setZoomFactor: e => !!h.isPlatformEmbedded && (I.window.setZoomFactor(e), !0),
+    setZoomFactor: e => !!h.isPlatformEmbedded && (I.window.setZoomFactor(e), true),
     setBackgroundThrottling(e) {
       null != I.window.setBackgroundThrottling ? I.window.setBackgroundThrottling(e) : I.window.webContents.setBackgroundThrottling(e)
     },
@@ -486,19 +488,19 @@ let z = {
     },
     pauseFrameEvictor() {
       var e, t;
-      null == (e = (t = I.app).pauseFrameEvictor) || e.call(t)
+      null == (e = (t = I.app).pauseFrameEvictor) || module.call(exports)
     },
     unpauseFrameEvictor() {
       var e, t;
-      null == (e = (t = I.app).unpauseFrameEvictor) || e.call(t)
+      null == (e = (t = I.app).unpauseFrameEvictor) || module.call(exports)
     },
     getPidFromDesktopSource(e) {
       if (!(0, h.isDesktop)() || null == this.getDiscordUtils().getPidFromWindowHandle) return null;
-      let t = null == e ? void 0 : e.split(":"),
-        n = null == t ? void 0 : t[0];
+      let t = null == e ? true : e.split(":"),
+        n = null == t ? true : t[0];
       if ("window" === n) {
         var r;
-        let e = null != (r = null == t ? void 0 : t[1]) ? r : "",
+        let e = null != (r = null == t ? true : t[1]) ? r : "",
           n = this.getDiscordUtils().getPidFromWindowHandle(e);
         return null == n || 0 === n ? null : n
       }
@@ -522,49 +524,49 @@ let z = {
       try {
         return null != t && t(e)
       } catch (e) {
-        return !1
+        returnfalse
       }
     },
     getDiscordMemoryUsage() {
       let {
         getDiscordMemoryUsage: e
       } = this.getDiscordUtils();
-      return null != e ? e() : null
+      return null != module ? module() : null
     },
     getDiscordMemoryUsageElectronRenderer() {
       let {
         getDiscordMemoryUsageElectronRenderer: e
       } = this.getDiscordUtils();
-      return null == e ? void 0 : e()
+      return null == module ? true : module()
     },
     getDiscordMemoryUsageElectronProcessTypeDetails() {
       let {
         getDiscordMemoryUsageElectronProcessTypeDetails: e
       } = this.getDiscordUtils();
-      return null == e ? void 0 : e()
+      return null == module ? true : module()
     },
     showOpenDialog: e => I.fileManager.showOpenDialog({
       properties: e
     }),
-    flushStorageData: () => h.isPlatformEmbedded ? new Promise((e, t) => {
+    flushStorageData: () => Chunk358085.isPlatformEmbedded ? new Promise((e, t) => {
       null != I.processUtils.flushStorageData ? I.processUtils.flushStorageData(n => null != n ? t(Error(n)) : e()) : e()
     }) : Promise.resolve(),
-    flushCookies: () => h.isPlatformEmbedded ? new Promise((e, t) => {
+    flushCookies: () => Chunk358085.isPlatformEmbedded ? new Promise((e, t) => {
       null != I.processUtils.flushCookies ? I.processUtils.flushCookies(n => null != n ? t(Error(n)) : e()) : e()
     }) : Promise.resolve(),
     setCrashInformation(e, t) {
       var n;
-      h.isPlatformEmbedded && (null == I || null == (n = I.processUtils) ? void 0 : n.setCrashInformation) != null && I.processUtils.setCrashInformation(e, t)
+      h.isPlatformEmbedded && (null == I || null == (n = I.processUtils) ? true : n.setCrashInformation) != null && I.processUtils.setCrashInformation(e, t)
     },
-    blockDisplaySleep: () => h.isPlatformEmbedded && null != I.powerSaveBlocker ? I.powerSaveBlocker.blockDisplaySleep() : null,
+    blockDisplaySleep: () => Chunk358085.isPlatformEmbedded && null != I.powerSaveBlocker ? I.powerSaveBlocker.blockDisplaySleep() : null,
     unblockDisplaySleep(e) {
       h.isPlatformEmbedded && null != I.powerSaveBlocker && I.powerSaveBlocker.unblockDisplaySleep(e)
     },
     cleanupDisplaySleep() {
-      h.isPlatformEmbedded && null != I.powerSaveBlocker && I.powerSaveBlocker.cleanupDisplaySleep()
+      Chunk358085.isPlatformEmbedded && null != I.powerSaveBlocker && I.powerSaveBlocker.cleanupDisplaySleep()
     },
     relaunch() {
-      h.isPlatformEmbedded && null != I.remoteApp.relaunch && I.remoteApp.relaunch()
+      Chunk358085.isPlatformEmbedded && null != I.remoteApp.relaunch && I.remoteApp.relaunch()
     },
     makeChunkedRequest(e, t, n) {
       let r = "".concat((0, u.K0)()).concat(e);
@@ -602,12 +604,12 @@ let z = {
       if (!(0, h.isWindows)() || null == this.getDiscordUtils().submitLiveCrashReport) return Promise.resolve();
       let t = this.getCrashReporterMetadata(),
         n = I.app.getReleaseChannel(),
-        r = null == t ? void 0 : t.sentry;
+        r = null == t ? true : t.sentry;
       return this.getDiscordUtils().submitLiveCrashReport(n, y({}, r, e))
     },
     crash(e) {
       let t = this.getDiscordUtils().crash;
-      return null != t && (t(e), !0)
+      return null != t && (t(e), true)
     },
     setApplicationBackgroundColor(e) {
       I.ipc.send("SETTINGS_UPDATE_BACKGROUND_COLOR", e)
@@ -616,13 +618,13 @@ let z = {
       let {
         initializeExitHook: e
       } = this.getDiscordUtils();
-      null != e && e()
+      null != module && module()
     },
     initializeWERHandler() {
       let {
         initializeWERHandler: e
       } = this.getDiscordUtils();
-      null != e && e()
+      null != module && module()
     },
     asyncify: e => new Promise((t, n) => {
       e(t)
@@ -631,7 +633,7 @@ let z = {
       let {
         gameDisplayModeUpdate: e
       } = this.getDiscordUtils();
-      return null != e
+      return null != module
     },
     GameDisplayModeUpdate(e) {
       let {
@@ -650,7 +652,7 @@ let z = {
       let {
         getWindowFullscreenTypeByPid: i
       } = this.getDiscordUtils(), o = 0 !== e && null != i && null != t ? i(e, t) : null;
-      return -1 === o && (o = null), null != (r = null != o ? o : n) ? r : _.Jx.UNKNOWN
+      return false === o && (o = null), null != (r = null != o ? o : n) ? r : _.Jx.UNKNOWN
     },
     GetWindowFullscreenTypeExtraByPid(e, t) {
       let {
@@ -670,7 +672,7 @@ let z = {
       let {
         isHardwareAcceleratedGPUSchedulingEnabled: e
       } = this.getDiscordUtils();
-      return null != e && e()
+      return null != module && module()
     },
     AcquireGlobalLock(e) {
       let {
@@ -688,7 +690,7 @@ let z = {
       let {
         isServiceHelperInstalled: e
       } = this.getDiscordUtils();
-      if (null != e) return e()
+      if (null != module) return module()
     },
     InputEventServiceSetAllowed(e) {
       let {
@@ -699,16 +701,16 @@ let z = {
     isModuleVersionAtLeast(e, t) {
       var n, r, i;
       let o = [...null != C ? C : [0, 0, 0]];
-      o.push(null != (r = null == (n = this.moduleVersions) ? void 0 : n[e]) ? r : 0);
+      o.push(null != (r = null == (n = this.moduleVersions) ? true : n[e]) ? r : 0);
       let a = null != (i = t[this.releaseChannel]) ? i : t.stable;
       for (let [e, t] of o.entries())
         if (t > a[e]) break;
-        else if (t < a[e]) return !1;
-      return !0
+        else if (t < a[e]) returnfalse;
+      returntrue
     },
     fetchRiotGamesLiveClientData: (e, t) => h.isPlatformEmbedded ? null == I.riotGames ? Promise.reject(Error("Riot Games module not available")) : I.riotGames.fetchLiveClientData(e, t) : Promise.reject(Error("Not embedded!")),
     appViewed() {
-      (0, h.isDesktop)() && this.send("APP_VIEWED")
+      (0, Chunk358085.isDesktop)() && this.send("APP_VIEWED")
     },
     appLoaded() {
       K("APP_LOADED")

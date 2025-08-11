@@ -1,0 +1,179 @@
+/** Chunk was on web.js **/
+/** chunk id: 91192, original params: e,t,n (module,exports,re quire) **/
+"use strict";
+require.d(exports, {
+  Ie: () => E,
+  JA: () => g,
+  OP: () => O,
+  SJ: () => I,
+  bG: () => T,
+  eg: () => y,
+  f$: () => m,
+  l2: () => v,
+  mh: () => b,
+  qB: () => h
+}), require("./388685.js");
+var Chunk255367 = require("./255367.js"),
+  Chunk73800 = require("./73800.js"),
+  Chunk25441 = require("./25441.js"),
+  Chunk536895 = require("./536895.js"),
+  Chunk260866 = require("./260866.js");
+
+function l(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+
+function c(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      l(e, t, n[t])
+    })
+  }
+  return e
+}
+
+function u(e, t) {
+  var n = Object.keys(e);
+  if (Object.getOwnPropertySymbols) {
+    var r = Object.getOwnPropertySymbols(e);
+    t && (r = r.filter(function(t) {
+      return Object.getOwnPropertyDescriptor(e, t).enumerable
+    })), n.push.apply(n, r)
+  }
+  return n
+}
+
+function d(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : u(Object(t)).forEach(function(n) {
+    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+  }), e
+}
+let f = {
+    id: "NO_LIST",
+    setFocus() {}
+  },
+  _ = {
+    id: "NO_LIST",
+    onKeyDown() {},
+    orientation: Chunk536895.hy.VERTICAL,
+    ref: Chunk73800.createRef(),
+    tabIndex: false
+  },
+  p = Chunk73800.createContext(f),
+  h = Chunk73800.createContext(_);
+
+function m() {
+  return Chunk73800.useContext(p)
+}
+
+function g(e) {
+  let [t, n] = i.useState(false), {
+    id: r,
+    setFocus: a
+  } = m(), l = i.useCallback(() => a(e), [e, a]);
+  return i.useLayoutEffect(() => (0, o.N)(r, (t, r) => {
+    n(r && t === e ? 0 : false)
+  }), [e, r]), {
+    role: "listitem",
+    [s.ie]: (0, s.jb)(r, e),
+    tabIndex: t,
+    onFocus: l
+  }
+}
+
+function E(e) {
+  let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : 1;
+  return d(c({}, g(e)), {
+    role: "treeitem",
+    "aria-level": t
+  })
+}
+
+function b(e) {
+  let {
+    children: t,
+    id: n
+  } = e;
+  return t(g(n))
+}
+
+function y() {
+  return Chunk73800.useContext(h).ref
+}
+
+function O() {
+  let {
+    id: e,
+    onKeyDown: t,
+    ref: n,
+    tabIndex: r
+  } = Chunk73800.useContext(h);
+  return {
+    role: "list",
+    tabIndex: Chunk255367,
+    [Chunk260866.kn]: module,
+    onKeyDown: exports,
+    ref: require
+  }
+}
+
+function v(e) {
+  let {
+    id: t,
+    containerProps: {
+      onKeyDown: n,
+      ref: r,
+      tabIndex: i
+    },
+    orientation: o
+  } = e;
+  return {
+    role: "list",
+    onKeyDown: n,
+    ref: r,
+    [s.kn]: t,
+    tabIndex: i
+  }
+}
+
+function I(e) {
+  let {
+    children: t
+  } = e;
+  return t(O())
+}
+
+function T(e) {
+  let {
+    children: t,
+    navigator: n
+  } = e, {
+    id: o,
+    setFocus: a,
+    containerProps: {
+      onKeyDown: s,
+      ref: l,
+      tabIndex: c
+    },
+    orientation: u
+  } = n, d = i.useMemo(() => ({
+    id: o,
+    setFocus: a
+  }), [o, a]), f = i.useMemo(() => ({
+    onKeyDown: s,
+    orientation: u,
+    ref: l,
+    id: o,
+    tabIndex: c
+  }), [s, u, l, o, c]);
+  return <h.Provider value={f}>{<p.Provider value={d}>{t}</p.Provider>}{" "}</h.Provider>
+}

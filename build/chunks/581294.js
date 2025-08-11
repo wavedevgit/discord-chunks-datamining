@@ -1,5 +1,6 @@
 /** Chunk was on web.js **/
-e.exports = function(e) {
+/** chunk id: 581294, original params: e (module,exports,re quire) **/
+module.exports = function(e) {
   let t = /[a-zA-Z@][a-zA-Z0-9_]*/,
     n = {
       "variable.language": ["this", "super"],
@@ -51,7 +52,7 @@ e.exports = function(e) {
       className: "class",
       begin: "(" + r.keyword.join("|") + ")\\b",
       end: /(\{|$)/,
-      excludeEnd: !0,
+      excludeEnd: true,
       keywords: r,
       contains: [e.UNDERSCORE_TITLE_MODE]
     }, {

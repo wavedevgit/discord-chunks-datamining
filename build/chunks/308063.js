@@ -1,13 +1,14 @@
 /** Chunk was on web.js **/
+/** chunk id: 308063, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => c
 });
-var r = n(392711),
-  i = n.n(r),
-  o = n(544891),
-  a = n(570140),
-  s = n(981631);
+var Chunk392711 = require("./392711.js"),
+  i = require.n(Chunk392711),
+  Chunk544891 = require("./544891.js"),
+  Chunk570140 = require("./570140.js"),
+  Chunk981631 = require("./981631.js");
 let l = ["Spidey Bot", "Captain Hook"],
   c = {
     fetchForGuild(e) {
@@ -16,8 +17,8 @@ let l = ["Spidey Bot", "Captain Hook"],
         guildId: e
       }), o.tn.get({
         url: s.ANM.GUILD_WEBHOOKS(e),
-        oldFormErrors: !0,
-        rejectWithError: !1
+        oldFormErrors: true,
+        rejectWithError: false
       }).then(t => {
         let {
           body: n
@@ -45,8 +46,8 @@ let l = ["Spidey Bot", "Captain Hook"],
         channelId: t
       }), o.tn.get({
         url: s.ANM.CHANNEL_WEBHOOKS(t),
-        oldFormErrors: !0,
-        rejectWithError: !0
+        oldFormErrors: true,
+        rejectWithError: true
       }).then(n => {
         let {
           body: r
@@ -73,8 +74,8 @@ let l = ["Spidey Bot", "Captain Hook"],
       body: {
         name: n
       },
-      oldFormErrors: !0,
-      rejectWithError: !1
+      oldFormErrors: true,
+      rejectWithError: false
     }).then(t => {
       let {
         body: n
@@ -87,8 +88,8 @@ let l = ["Spidey Bot", "Captain Hook"],
     })),
     delete: (e, t) => o.tn.del({
       url: s.ANM.WEBHOOK(t),
-      oldFormErrors: !0,
-      rejectWithError: !1
+      oldFormErrors: true,
+      rejectWithError: false
     }).then(() => {
       a.Z.dispatch({
         type: "WEBHOOK_DELETE",
@@ -99,8 +100,8 @@ let l = ["Spidey Bot", "Captain Hook"],
     update: (e, t, n) => o.tn.patch({
       url: s.ANM.WEBHOOK(t),
       body: n,
-      oldFormErrors: !0,
-      rejectWithError: !1
+      oldFormErrors: true,
+      rejectWithError: false
     }).then(t => {
       let {
         body: n

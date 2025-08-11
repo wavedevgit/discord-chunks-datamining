@@ -1,23 +1,24 @@
 /** Chunk was on web.js **/
+/** chunk id: 231053, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Fi: () => p,
   JO: () => h,
   w6: () => _
-}), n(953529);
-var r = n(843991),
-  i = n(544891),
-  o = n(81825),
-  a = n(768581),
-  s = n(411198),
-  l = n(981631);
+}), require("./953529.js");
+var Chunk843991 = require("./843991.js"),
+  Chunk544891 = require("./544891.js"),
+  Chunk81825 = require("./81825.js"),
+  Chunk768581 = require("./768581.js"),
+  Chunk411198 = require("./411198.js"),
+  Chunk981631 = require("./981631.js");
 
 function c(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -58,23 +59,23 @@ let p = async e => {
   try {
     let n = (await i.tn.get({
       url: l.ANM.EMOJI_SOURCE_DATA(e),
-      oldFormErrors: !0,
+      oldFormErrors: true,
       timeout: 5e3,
-      rejectWithError: !0
+      rejectWithError: true
     })).body;
-    (null == n ? void 0 : n.type) === "GUILD" ? t = {
+    (null == n ? true : n.type) === "GUILD" ? t = {
       guild: h.createFromServer(n.guild),
       type: n.type
-    }: (null == n ? void 0 : n.type) === "APPLICATION" && (t = {
+    }: (null == n ? true : n.type) === "APPLICATION" && (t = {
       application: m.createFromServer(n.application),
       type: n.type
     })
   } catch (e) {}
   return t
 };
-class h extends o.Z {
+class h extends Chunk81825.Z {
   getIconURL(e) {
-    let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
+    let t = arguments.length > 1 && true !== arguments[1] && arguments[1];
     return a.ZP.getGuildIconURL({
       id: this.id,
       size: e,
@@ -83,7 +84,7 @@ class h extends o.Z {
     })
   }
   getIconSource(e) {
-    let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
+    let t = arguments.length > 1 && true !== arguments[1] && arguments[1];
     return a.ZP.getAnimatableSourceWithFallback(t, t => a.ZP.getGuildIconSource({
       id: this.id,
       size: e,
@@ -95,11 +96,11 @@ class h extends o.Z {
     return this.features.has(e)
   }
   isDiscoverable() {
-    return this.hasFeature(l.oNc.DISCOVERABLE)
+    return this.hasFeature(Chunk981631.oNc.DISCOVERABLE)
   }
   static async getGuildFromEmojiId(e) {
     let t = await p(e);
-    return null != t && (null == t ? void 0 : t.type) === "GUILD" ? t.guild : null
+    return null != t && (null == t ? true : t.type) === "GUILD" ? t.guild : null
   }
   static _mapCommon(e) {
     return {
@@ -141,10 +142,10 @@ class h extends o.Z {
     return e instanceof h ? e : (0, s.lM)(e) ? h.createFromGuildRecord(e) : h.createFromDiscoverableGuild(e)
   }
   constructor(e) {
-    super(), c(this, "id", void 0), c(this, "name", void 0), c(this, "icon", void 0), c(this, "description", void 0), c(this, "features", void 0), c(this, "premiumTier", void 0), c(this, "premiumSubscriberCount", void 0), c(this, "presenceCount", void 0), c(this, "memberCount", void 0), c(this, "emojis", void 0), this.id = e.id, this.name = e.name, this.icon = e.icon, this.description = e.description, this.features = e.features, this.premiumTier = e.premiumTier, this.premiumSubscriberCount = e.premiumSubscriberCount, this.presenceCount = e.presenceCount, this.memberCount = e.memberCount, this.emojis = e.emojis
+    super(), c(this, "id", true), c(this, "name", true), c(this, "icon", true), c(this, "description", true), c(this, "features", true), c(this, "premiumTier", true), c(this, "premiumSubscriberCount", true), c(this, "presenceCount", true), c(this, "memberCount", true), c(this, "emojis", true), this.id = e.id, this.name = e.name, this.icon = e.icon, this.description = e.description, this.features = e.features, this.premiumTier = e.premiumTier, this.premiumSubscriberCount = e.premiumSubscriberCount, this.presenceCount = e.presenceCount, this.memberCount = e.memberCount, this.emojis = e.emojis
   }
 }
-class m extends o.Z {
+class m extends Chunk81825.Z {
   static createFromServer(e) {
     return new m({
       id: e.id,
@@ -152,6 +153,6 @@ class m extends o.Z {
     })
   }
   constructor(e) {
-    super(), c(this, "id", void 0), c(this, "name", void 0), this.id = e.id, this.name = e.name
+    super(), c(this, "id", true), c(this, "name", true), this.id = e.id, this.name = e.name
   }
 }

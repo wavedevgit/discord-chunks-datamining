@@ -1,14 +1,15 @@
 /** Chunk was on 22988 **/
-n.d(t, {
+/** chunk id: 614342, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => d
 });
-var r = n(512722),
-  i = n.n(r),
-  l = n(782568),
-  a = n(434404),
-  s = n(144507),
-  o = n(981631),
-  c = n(388032);
+var Chunk512722 = require("./512722.js"),
+  i = require.n(Chunk512722),
+  Chunk782568 = require("./782568.js"),
+  Chunk434404 = require("./434404.js"),
+  Chunk144507 = require("./144507.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk388032 = require("./388032.jsx");
 
 function d(e) {
   let t = (0, s.MO)(e);
@@ -17,12 +18,12 @@ function d(e) {
       return {
         visibility: t, noticeText: c.intl.string(c.t["0Z2Qxs"]), ctaLabel: c.intl.string(c.t.BOJpl5), ctaClickable: null != e, onCtaClicked() {
           var t;
-          i()(null != e, "Guild must be not null open COMMUNITY settings"), a.Z.open(null != (t = null == e ? void 0 : e.id) ? t : "", o.pNK.COMMUNITY)
+          i()(null != e, "Guild must be not null open COMMUNITY settings"), a.Z.open(null != (t = null == e ? true : e.id) ? t : "", o.pNK.COMMUNITY)
         }
       };
     case s.d5.WAITLIST_ONLY:
       return {
-        visibility: t, noticeText: c.intl.string(c.t["5vz88P"]), ctaLabel: c.intl.string(c.t["6yjvmp"]), ctaClickable: !0, onCtaClicked() {
+        visibility: t, noticeText: c.intl.string(c.t["5vz88P"]), ctaLabel: c.intl.string(c.t["6yjvmp"]), ctaClickable: true, onCtaClicked() {
           (0, l.Z)("https://dis.gd/creators-waitlist")
         }
       };

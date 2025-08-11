@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 236691, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   stepBody: "stepBody_e4d803",
   bodyText: "bodyText_e4d803",
   invoice: "invoice_e4d803",

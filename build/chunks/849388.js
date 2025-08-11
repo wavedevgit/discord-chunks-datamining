@@ -1,5 +1,6 @@
 /** Chunk was on 89298 **/
-e.exports = {
+/** chunk id: 849388, original params: e,t,n (module,exports,require) **/
+module.exports = {
   panelContainer: "panelContainer_a83780",
   locked: "locked_a83780",
   buttonSection: "buttonSection_a83780",

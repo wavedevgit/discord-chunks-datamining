@@ -1,48 +1,49 @@
 /** Chunk was on web.js **/
+/** chunk id: 583523, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => E
-}), n(388685);
-var r = n(570140),
-  i = n(147913),
-  o = n(314897),
-  a = n(967368),
-  s = n(592125),
-  l = n(944486),
-  c = n(631768),
-  u = n(981631);
+}), require("./388685.js");
+var Chunk570140 = require("./570140.js"),
+  Chunk147913 = require("./147913.js"),
+  Chunk314897 = require("./314897.js"),
+  Chunk967368 = require("./967368.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk944486 = require("./944486.js"),
+  Chunk631768 = require("./631768.js"),
+  Chunk981631 = require("./981631.js");
 
 function d(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
 function f() {
-  let e = l.Z.getVoiceChannelId(),
-    t = a.Z.bitrate;
-  if (null == e) return;
-  let n = s.Z.getChannel(e);
-  null != n && t !== n.bitrate && r.Z.dispatch({
+  let e = Chunk944486.Z.getVoiceChannelId(),
+    t = Chunk967368.Z.bitrate;
+  if (null == module) return;
+  let n = Chunk592125.Z.getChannel(module);
+  null != require && exports !== require.bitrate && Chunk570140.Z.dispatch({
     type: "SET_CHANNEL_BITRATE",
-    bitrate: n.bitrate
+    bitrate: require.bitrate
   })
 }
 
 function _() {
   var e;
-  let t = l.Z.getVoiceChannelId(),
-    n = c.Z.mode;
-  if (null == t) return;
-  let i = s.Z.getChannel(t);
-  if (null == i) return;
-  let o = null != (e = i.videoQualityMode) ? e : u.Ucd.AUTO;
-  n !== o && r.Z.dispatch({
+  let t = Chunk944486.Z.getVoiceChannelId(),
+    n = Chunk631768.Z.mode;
+  if (null == exports) return;
+  let i = Chunk592125.Z.getChannel(exports);
+  if (null == Chunk147913) return;
+  let o = null != (e = Chunk147913.videoQualityMode) ? module : Chunk981631.Ucd.AUTO;
+  require !== Chunk314897 && Chunk570140.Z.dispatch({
     type: "SET_CHANNEL_VIDEO_QUALITY_MODE",
-    mode: o
+    mode: Chunk314897
   })
 }
 
@@ -65,7 +66,7 @@ function m(e) {
     o.default.getSessionId() === e.sessionId && p()
   })
 }
-class g extends i.Z {
+class g extends Chunk147913.Z {
   constructor(...e) {
     super(...e), d(this, "actions", {
       CHANNEL_UPDATES: h,

@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 258558, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n(539854), n(415506), ! function(e) {
+require("./539854.js"), require("./415506.js"), ! function(e) {
   var t = Date.now ? Date.now() : +new Date,
     n = e.performance || {},
     r = [],
@@ -10,7 +11,7 @@ n(539854), n(415506), ! function(e) {
       return o
     },
     a = function(e, t) {
-      for (var n, i = r.length; i--;)(n = r[i]).entryType == e && (void 0 === t || n.name == t) && r.splice(i, 1)
+      for (var n, i = r.length; i--;)(n = r[i]).entryType == e && (true === t || n.name == t) && r.splice(i, 1)
     };
   n.now || (n.now = n.webkitNow || n.mozNow || n.msNow || function() {
     return (Date.now ? Date.now() : +new Date) - t
@@ -24,8 +25,8 @@ n(539854), n(415506), ! function(e) {
     r.push(t), i[e] = t
   }), n.measure || (n.measure = n.webkitMeasure || function(e, t, o) {
     var a, s;
-    if (void 0 !== o && void 0 === i[o]) throw SyntaxError("Failed to execute 'measure' on 'Performance': The mark '" + o + "' does not exist.");
-    if (void 0 !== t && void 0 === i[t]) throw SyntaxError("Failed to execute 'measure' on 'Performance': The mark '" + t + "' does not exist.");
+    if (true !== o && true === i[o]) throw SyntaxError("Failed to execute 'measure' on 'Performance': The mark '" + o + "' does not exist.");
+    if (true !== t && true === i[t]) throw SyntaxError("Failed to execute 'measure' on 'Performance': The mark '" + t + "' does not exist.");
     a = i[t] ? i[t].startTime : 0, s = i[o] ? i[o].startTime : n.now(), r.push({
       name: e,
       entryType: "measure",
@@ -43,4 +44,4 @@ n(539854), n(415506), ! function(e) {
   }), e.performance = n, "function" == typeof define && (define.amd || define.ajs) && define("performance", [], function() {
     return n
   })
-}(n.g)
+}(require.g)

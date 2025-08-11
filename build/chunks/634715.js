@@ -1,5 +1,6 @@
 /** Chunk was on 90688 **/
-t.r(e.exports = {
+/** chunk id: 634715, original params: e,r,t (module,exports,require) **/
+require.r(module.exports = {
   qrCodeOverlay: "qrCodeOverlay_c28498",
   "size-40": "size-40_c28498",
   "size-60": "size-60_c28498",

@@ -1,2 +1,3 @@
 /** Chunk was on 79763 **/
-e.exports = JSON.parse('{"klSpfn":"Rediger indstillinger","NzUuLC":["+",[1,"count"]," ",[6,"count",{"one":["besked"],"other":["beskeder"]},0,"cardinal"]],"O+racX":"Der er ingen meddelelser.","dcpdhI":"V\xe6lg en besked for at g\xe5 til den.","VAK+h4":"Velkommen til dit meddelelsescenter!"}')
+/** chunk id: 837594, original params: e (module,exports,require) **/
+module.exports = JSON.parse('{"klSpfn":"Rediger indstillinger","NzUuLC":["+",[1,"count"]," ",[6,"count",{"one":["besked"],"other":["beskeder"]},0,"cardinal"]],"O+racX":"Der er ingen meddelelser.","dcpdhI":"V\xe6lg en besked for at g\xe5 til den.","VAK+h4":"Velkommen til dit meddelelsescenter!"}')

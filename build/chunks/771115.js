@@ -1,2 +1,3 @@
 /** Chunk was on 77609 **/
-o.exports = JSON.parse('{"+utqa2":["Gift Background Option: ",[1,"giftStyle"]],"B9XqQk":"Box","AJ4iio":"Cake","P5keo6":"Chest","w84vER":"Coffee","6dCq/v":"Cup","+HMF8v":"Nitroween","vd1fu7":"Holiday Box","aubYGR":"Holiday Cake","vjxYqa":"Holiday Chest","bHuJLS":"Holiday Coffee","M6cPwM":"Snow Globe","GzPel5":"Box"}')
+/** chunk id: 771115, original params: o (module,exports,require) **/
+module.exports = JSON.parse('{"+utqa2":["Gift Background Option: ",[1,"giftStyle"]],"B9XqQk":"Box","AJ4iio":"Cake","P5keo6":"Chest","w84vER":"Coffee","6dCq/v":"Cup","+HMF8v":"Nitroween","vd1fu7":"Holiday Box","aubYGR":"Holiday Cake","vjxYqa":"Holiday Chest","bHuJLS":"Holiday Coffee","M6cPwM":"Snow Globe","GzPel5":"Box"}')

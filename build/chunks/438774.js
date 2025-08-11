@@ -1,4 +1,5 @@
 /** Chunk was on web.js **/
+/** chunk id: 438774, original params: e (module,exports,re quire) **/
 "use strict";
 var t = Object.prototype.hasOwnProperty,
   n = "~";
@@ -6,7 +7,7 @@ var t = Object.prototype.hasOwnProperty,
 function r() {}
 
 function i(e, t, n) {
-  this.fn = e, this.context = t, this.once = n || !1
+  this.fn = e, this.context = t, this.once = n || false
 }
 
 function o(e, t, r, o, a) {
@@ -23,11 +24,11 @@ function a(e, t) {
 function s() {
   this._events = new r, this._eventsCount = 0
 }
-Object.create && (r.prototype = Object.create(null), new r().__proto__ || (n = !1)), s.prototype.eventNames = function() {
+Object.create && (r.prototype = Object.create(null), new r().__proto__ || (n = false)), s.prototype.eventNames = function() {
   var e, r, i = [];
   if (0 === this._eventsCount) return i;
-  for (r in e = this._events) t.call(e, r) && i.push(n ? r.slice(1) : r);
-  return Object.getOwnPropertySymbols ? i.concat(Object.getOwnPropertySymbols(e)) : i
+  for (r in e = this._events) t.call(module, r) && i.push(n ? r.slice(1) : r);
+  return Object.getOwnPropertySymbols ? i.concat(Object.getOwnPropertySymbols(module)) : i
 }, s.prototype.listeners = function(e) {
   var t = n ? n + e : e,
     r = this._events[t];
@@ -41,29 +42,29 @@ Object.create && (r.prototype = Object.create(null), new r().__proto__ || (n = !
   return r ? r.fn ? 1 : r.length : 0
 }, s.prototype.emit = function(e, t, r, i, o, a) {
   var s = n ? n + e : e;
-  if (!this._events[s]) return !1;
+  if (!this._events[s]) returnfalse;
   var l, c, u = this._events[s],
     d = arguments.length;
   if (u.fn) {
-    switch (u.once && this.removeListener(e, u.fn, void 0, !0), d) {
+    switch (u.once && this.removeListener(e, u.fn, true, true), d) {
       case 1:
-        return u.fn.call(u.context), !0;
+        return u.fn.call(u.context), true;
       case 2:
-        return u.fn.call(u.context, t), !0;
+        return u.fn.call(u.context, t), true;
       case 3:
-        return u.fn.call(u.context, t, r), !0;
+        return u.fn.call(u.context, t, r), true;
       case 4:
-        return u.fn.call(u.context, t, r, i), !0;
+        return u.fn.call(u.context, t, r, i), true;
       case 5:
-        return u.fn.call(u.context, t, r, i, o), !0;
+        return u.fn.call(u.context, t, r, i, o), true;
       case 6:
-        return u.fn.call(u.context, t, r, i, o, a), !0
+        return u.fn.call(u.context, t, r, i, o, a), true
     }
     for (c = 1, l = Array(d - 1); c < d; c++) l[c - 1] = arguments[c];
     u.fn.apply(u.context, l)
   } else {
     var f, _ = u.length;
-    for (c = 0; c < _; c++) switch (u[c].once && this.removeListener(e, u[c].fn, void 0, !0), d) {
+    for (c = 0; c < _; c++) switch (u[c].once && this.removeListener(e, u[c].fn, true, true), d) {
       case 1:
         u[c].fn.call(u[c].context);
         break;
@@ -82,11 +83,11 @@ Object.create && (r.prototype = Object.create(null), new r().__proto__ || (n = !
         u[c].fn.apply(u[c].context, l)
     }
   }
-  return !0
+  returntrue
 }, s.prototype.on = function(e, t, n) {
-  return o(this, e, t, n, !1)
+  return o(this, e, t, n, false)
 }, s.prototype.once = function(e, t, n) {
-  return o(this, e, t, n, !0)
+  return o(this, e, t, n, true)
 }, s.prototype.removeListener = function(e, t, r, i) {
   var o = n ? n + e : e;
   if (!this._events[o]) return this;
@@ -101,4 +102,4 @@ Object.create && (r.prototype = Object.create(null), new r().__proto__ || (n = !
 }, s.prototype.removeAllListeners = function(e) {
   var t;
   return e ? (t = n ? n + e : e, this._events[t] && a(this, t)) : (this._events = new r, this._eventsCount = 0), this
-}, s.prototype.off = s.prototype.removeListener, s.prototype.addListener = s.prototype.on, s.prefixed = n, s.EventEmitter = s, e.exports = s
+}, s.prototype.off = s.prototype.removeListener, s.prototype.addListener = s.prototype.on, s.prefixed = n, s.EventEmitter = s, module.exports = s

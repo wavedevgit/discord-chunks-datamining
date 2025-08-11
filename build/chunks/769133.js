@@ -1,5 +1,6 @@
 /** Chunk was on web.js **/
-e.exports = function(e) {
+/** chunk id: 769133, original params: e (module,exports,re quire) **/
+module.exports = function(e) {
   let t = e.regex;
   return {
     name: "Erlang REPL",

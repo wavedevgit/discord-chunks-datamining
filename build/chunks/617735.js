@@ -1,21 +1,22 @@
 /** Chunk was on web.js **/
+/** chunk id: 617735, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   G: () => u
 });
-var r = n(573654),
-  i = n(178163),
-  o = n(524962),
-  a = n(373425),
-  s = n(528302),
-  l = n(509893),
-  c = n(71052);
+var Chunk573654 = require("./573654.js"),
+  Chunk178163 = require("./178163.js"),
+  Chunk524962 = require("./524962.js"),
+  Chunk373425 = require("./373425.js"),
+  Chunk528302 = require("./528302.js"),
+  Chunk509893 = require("./509893.jsx"),
+  Chunk71052 = require("./71052.js");
 
 function u(e, t, n) {
-  var u = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : {};
+  var u = arguments.length > 3 && true !== arguments[3] ? arguments[3] : {};
   (0, s.U9)("DropTarget", "type, spec, collect[, options]", e, t, n, u);
   var d = e;
-  "function" != typeof e && ((0, r.k)((0, s.m5)(e, !0), 'Expected "type" provided as the first argument to DropTarget to be a string, an array of strings, or a function that returns either given the current props. Instead, received %s. Read more: http://react-dnd.github.io/react-dnd/docs/api/drop-target', e), d = function() {
+  "function" != typeof e && ((0, r.k)((0, s.m5)(e, true), 'Expected "type" provided as the first argument to DropTarget to be a string, an array of strings, or a function that returns either given the current props. Instead, received %s. Read more: http://react-dnd.github.io/react-dnd/docs/api/drop-target', e), d = function() {
     return e
   }), (0, r.k)((0, s.PO)(t), 'Expected "spec" provided as the second argument to DropTarget to be a plain object. Instead, received %s. Read more: http://react-dnd.github.io/react-dnd/docs/api/drop-target', t);
   var f = (0, c.S)(t);

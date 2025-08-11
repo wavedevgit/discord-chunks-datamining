@@ -1,5 +1,6 @@
 /** Chunk was on 22988 **/
-e.exports = {
+/** chunk id: 109303, original params: e,t,n (module,exports,require) **/
+module.exports = {
   bodyText: "bodyText__959cb",
   joinOptions: "joinOptions__959cb",
   joinOptionTab: "joinOptionTab__959cb",

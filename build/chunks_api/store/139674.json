@@ -1,1 +1,0 @@
-{"id":"139674","type":"store","data":{"name":"BlockedDomainStore","functions":[{"name":"initialize","args":[]},{"name":"getCurrentRevision","args":[]},{"name":"getBlockedDomainList","args":[]},{"name":"_isBlockedDomain","args":["e"]},{"name":"isBlockedDomain","args":["e"]}],"events":["BLOCKED_DOMAIN_LIST_FETCHED"]},"fromModule":{"id":"web.js"}}

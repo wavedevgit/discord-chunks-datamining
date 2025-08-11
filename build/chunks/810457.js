@@ -1,19 +1,20 @@
 /** Chunk was on web.js **/
+/** chunk id: 810457, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => c
-}), n(388685), n(387201), n(642613), n(539854);
-var r = n(392711),
-  i = n.n(r),
-  o = n(709054),
-  a = n(982183);
+}), require("./388685.js"), require("./387201.js"), require("./642613.js"), require("./539854.js");
+var Chunk392711 = require("./392711.js"),
+  i = require.n(Chunk392711),
+  Chunk709054 = require("./709054.js"),
+  Chunk982183 = require("./982183.js");
 
 function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 class l {
@@ -32,16 +33,16 @@ class l {
     this._messages = [...this._messages, ...n.filter(e => e.author.id !== r && o.default.age(e.id) < a.ib).map(e => ({
       id: e.id,
       channelId: e.channel_id,
-      guildId: null == t ? void 0 : t.guild_id,
+      guildId: null == t ? true : t.guild_id,
       kind: e.mentioned ? a.fL.MENTION : a.fL.ALL_MESSAGES_CHANNEL,
       message: e
-    }))], this._isSorted = !1, this.maybeTruncate()
+    }))], this._isSorted = false, this.maybeTruncate()
   }
   addMessages(e) {
-    this._messages = [...this._messages, ...e], this._isSorted = !1, this.maybeTruncate()
+    this._messages = [...this._messages, ...e], this._isSorted = false, this.maybeTruncate()
   }
   deleteMessages(e) {
-    return !!this._messages.some(t => e.includes(t.id)) && (this._messages = this._messages.filter(t => !e.includes(t.id)), !0)
+    return !!this._messages.some(t => e.includes(t.id)) && (this._messages = this._messages.filter(t => !e.includes(t.id)), true)
   }
   getMessages() {
     return this._isSorted || this.sortMessages(), this._messages
@@ -49,29 +50,29 @@ class l {
   sortMessages() {
     this._isSorted || (this._messages = i().sortedUniqBy(this._messages.toSorted((e, t) => {
       let n = o.default.compare(e.id, t.id);
-      return 0 !== n ? n : e.kind === a.fL.MENTION && t.kind !== a.fL.MENTION ? -1 : +(e.kind !== a.fL.MENTION && t.kind === a.fL.MENTION)
-    }), "id"), this._isSorted = !0)
+      return 0 !== n ? n : e.kind === a.fL.MENTION && t.kind !== a.fL.MENTION ? false : +(e.kind !== a.fL.MENTION && t.kind === a.fL.MENTION)
+    }), "id"), this._isSorted = true)
   }
   maybeTruncate() {
-    let e = a.AQ * (this._channelIds.size + 1) * 1.5;
-    if (this._messages.length <= e) return;
+    let e = Chunk982183.AQ * (this._channelIds.size + 1) * 1.5;
+    if (this._messages.length <= module) return;
     let t = {};
-    for (let e of this._messages) o.default.age(e.id) > a.ib || (null == t[e.channelId] && (t[e.channelId] = {
+    for (let e of this._messages) Chunk709054.default.age(module.id) > Chunk982183.ib || (null == exports[module.channelId] && (exports[module.channelId] = {
       mentions: [],
       messages: []
-    }), e.kind === a.fL.MENTION ? t[e.channelId].mentions.push(e) : t[e.channelId].messages.push(e));
+    }), module.kind === Chunk982183.fL.MENTION ? exports[module.channelId].mentions.push(module) : exports[module.channelId].messages.push(module));
     let n = [];
-    Object.values(t).forEach(e => {
+    Object.values(exports).forEach(e => {
       let t = [...e.mentions, ...e.messages].sort((e, t) => o.default.compare(e.id, t.id)).slice(-a.AQ),
         r = new Set,
         i = [];
       for (let e of t) r.add(e.id), i.push(e);
       for (let t of e.mentions) r.has(t.id) || i.push(t);
       n.push(...i)
-    }), this._messages = n, this._isSorted = !1
+    }), this._messages = require, this._isSorted = false
   }
   constructor() {
-    s(this, "_messages", []), s(this, "_isSorted", !0), s(this, "_channelIds", new Set)
+    s(this, "_messages", []), s(this, "_isSorted", true), s(this, "_channelIds", new Set)
   }
 }
 let c = l

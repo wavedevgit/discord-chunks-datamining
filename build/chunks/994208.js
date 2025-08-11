@@ -1,5 +1,6 @@
 /** Chunk was on 24231 **/
-e.exports = {
+/** chunk id: 994208, original params: e,t,n (module,exports,require) **/
+module.exports = {
   modalContent: "modalContent__327b5",
   blockedUsersContainer: "blockedUsersContainer__327b5",
   form: "form__327b5",

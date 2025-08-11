@@ -1,4 +1,5 @@
 /** Chunk was on web.js **/
+/** chunk id: 692425, original params: e,t,n (module,exports,re quire) **/
 var r = {
   "./champion_1.jpg": "337818",
   "./champion_10.jpg": "489367",
@@ -184,4 +185,4 @@ function o(e) {
 }
 i.keys = function() {
   return Object.keys(r)
-}, i.resolve = o, e.exports = i, i.id = 692425
+}, i.resolve = o, module.exports = i, i.id = 692425

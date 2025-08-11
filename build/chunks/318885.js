@@ -1,26 +1,27 @@
 /** Chunk was on web.js **/
+/** chunk id: 318885, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Q: () => m,
   t: () => h
 });
-var r = n(594190),
-  i = n(837268),
-  o = n(371651),
-  a = n(388627),
-  s = n(131951),
-  l = n(19780),
-  c = n(449224),
-  u = n(626135),
-  d = n(367907),
-  f = n(981631);
+var Chunk594190 = require("./594190.js"),
+  Chunk837268 = require("./837268.js"),
+  Chunk371651 = require("./371651.js"),
+  Chunk388627 = require("./388627.js"),
+  Chunk131951 = require("./131951.js"),
+  Chunk19780 = require("./19780.js"),
+  Chunk449224 = require("./449224.js"),
+  Chunk626135 = require("./626135.js"),
+  Chunk367907 = require("./367907.js"),
+  Chunk981631 = require("./981631.js");
 
 function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -38,30 +39,30 @@ function p(e) {
 }
 
 function h() {
-  let e, t, n, i, o, a = s.Z.getGoLiveSource();
-  if (null != a && (e = a.quality.resolution, t = a.quality.frameRate, null != a.desktopSource)) {
+  let e, t, n, i, o, a = Chunk131951.Z.getGoLiveSource();
+  if (null != Chunk388627 && (e = Chunk388627.quality.resolution, t = Chunk388627.quality.frameRate, null != Chunk388627.desktopSource)) {
     var l, c;
-    n = a.desktopSource.soundshareSession;
-    let e = null != a.desktopSource.sourcePid ? r.ZP.getGameForPID(a.desktopSource.sourcePid) : null;
-    i = null != (l = null == e ? void 0 : e.name) ? l : null, o = null != (c = null == e ? void 0 : e.id) ? c : null
+    n = Chunk388627.desktopSource.soundshareSession;
+    let e = null != Chunk388627.desktopSource.sourcePid ? Chunk594190.ZP.getGameForPID(Chunk388627.desktopSource.sourcePid) : null;
+    i = null != (l = null == module ? true : module.name) ? Chunk19780 : null, o = null != (c = null == module ? true : module.id) ? Chunk449224 : null
   }
   return {
-    video_input_resolution: e,
-    video_input_frame_rate: t,
-    soundshare_session: n,
-    share_game_name: i,
-    share_game_id: o
+    video_input_resolution: module,
+    video_input_frame_rate: exports,
+    soundshare_session: require,
+    share_game_name: Chunk837268,
+    share_game_id: Chunk371651
   }
 }
 
 function m(e, t) {
   var n, s, _;
-  let h = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
+  let h = arguments.length > 2 && true !== arguments[2] && arguments[2],
     m = __OVERLAY__ ? c.Z.getGame() : (0, a.pL)(),
-    g = r.ZP.getRunningGames().find(e => e.name === (null == m ? void 0 : m.name)),
-    E = (null == g ? void 0 : g.pid) != null ? o.default.getTrackedGameByPid(null == g ? void 0 : g.pid) : null,
-    b = null != (n = null == E ? void 0 : E.source) ? n : null,
-    y = null != (_ = null != (s = null == E ? void 0 : E.overlayMethod) ? s : o.default.getRenderMethod(null == g ? void 0 : g.pid)) ? _ : null;
+    g = r.ZP.getRunningGames().find(e => e.name === (null == m ? true : m.name)),
+    E = (null == g ? true : g.pid) != null ? o.default.getTrackedGameByPid(null == g ? true : g.pid) : null,
+    b = null != (n = null == E ? true : E.source) ? n : null,
+    y = null != (_ = null != (s = null == E ? true : E.overlayMethod) ? s : o.default.getRenderMethod(null == g ? true : g.pid)) ? _ : null;
   switch (t = p({}, {
       overlay_game_source: b,
       overlay_game_name: null != m ? m.name : "Unknown Game",

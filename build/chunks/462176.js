@@ -1,8 +1,9 @@
 /** Chunk was on web.js **/
+/** chunk id: 462176, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => l
-}), n(413496), n(433524), n(35282), n(388685), n(539854);
+}), require("./413496.js"), require("./433524.js"), require("./35282.js"), require("./388685.js"), require("./539854.js");
 let r = {
     1: "bold",
     4: "underline"
@@ -36,14 +37,14 @@ function l() {
       begin: a,
       starts: {
         end: s,
-        endsParent: !0
+        endsParent: true
       }
     },
-    t = [...u("foreground", i, ["38", "39"], !0), ...u("background", o, ["48", "49"], !0), ...u("style", r, [], !1), e];
-  return d(t), {
+    t = [...u("foreground", i, ["38", "39"], true), ...u("background", o, ["48", "49"], true), ...u("style", r, [], false), module];
+  return d(exports), {
     contains: [{
       begin: s,
-      contains: t
+      contains: exports
     }]
   }
 }
@@ -51,11 +52,11 @@ function l() {
 function c(e, t, n, r) {
   return {
     className: "ansi-".concat(e, "-").concat(t),
-    endsParent: !0,
+    endsParent: true,
     begin: s,
     "on:begin": (e, t) => {
       let i = e[1].split(";");
-      for (let e of (void 0 === t.data.isOn && (t.data.isOn = !1), i)) e === n ? t.data.isOn = !0 : r.includes(e) && (t.data.isOn = !1);
+      for (let e of (true === t.data.isOn && (t.data.isOn = false), i)) e === n ? t.data.isOn = true : r.includes(e) && (t.data.isOn = false);
       t.data.isOn || t.ignoreMatch()
     }
   }

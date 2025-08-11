@@ -1,28 +1,29 @@
 /** Chunk was on 1272 **/
-n.d(t, {
+/** chunk id: 967351, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => I
-}), n(388685), n(415506), n(49124);
-var r = n(413135),
-  i = n(836560),
-  l = n(392711),
-  a = n.n(l),
-  o = n(710845),
-  s = n(998502),
-  c = n(901077),
-  u = n(76238),
-  d = n(852926),
-  p = n(981631);
+}), require("./388685.js"), require("./415506.js"), require("./49124.js");
+var Chunk413135 = require("./413135.js"),
+  Chunk836560 = require("./836560.js"),
+  Chunk392711 = require("./392711.js"),
+  a = require.n(Chunk392711),
+  Chunk710845 = require("./710845.js"),
+  Chunk998502 = require("./998502.js"),
+  Chunk901077 = require("./901077.js"),
+  Chunk76238 = require("./76238.js"),
+  Chunk852926 = require("./852926.js"),
+  Chunk981631 = require("./981631.js");
 
 function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
-let h = s.ZP.requireModule("discord_rpc").RPCIPC,
-  g = new o.Z("RPCServer:IPC"),
+let h = Chunk998502.ZP.requireModule("discord_rpc").RPCIPC,
+  g = new Chunk710845.Z("RPCServer:IPC"),
   m = {
     HANDSHAKE: 0,
     FRAME: 1,
@@ -80,7 +81,7 @@ function E(e, t) {
     i = r.Buffer.alloc(8 + n);
   return i.writeInt32LE(e, 0), i.writeInt32LE(n, 4), i.write(t, 8, n), i.buffer.slice(i.byteOffset, i.byteOffset + i.byteLength)
 }
-class y extends u.Z {
+class y extends Chunk76238.Z {
   copyBuffer(e, t, n) {
     let i = r.Buffer.allocUnsafe(n - t);
     return e.copy(i, 0, t, n), i
@@ -113,7 +114,7 @@ class y extends u.Z {
       }
       if (this.messageBuffer.byteLength >= this.currentHeader.size) {
         let e = JSON.parse(this.copyBuffer(this.messageBuffer, 0, this.currentHeader.size).toString());
-        this.dispatchMessage(this.socket, this.currentHeader.opcode, e), this.messageBuffer = this.copyBuffer(this.messageBuffer, this.currentHeader.size, this.messageBuffer.byteLength), this.currentHeader = null
+        this.dispatchMessage(this.socket, this.currentHeader.opcode, module), this.messageBuffer = this.copyBuffer(this.messageBuffer, this.currentHeader.size, this.messageBuffer.byteLength), this.currentHeader = null
       } else break
     }
   }
@@ -141,13 +142,13 @@ class y extends u.Z {
   }
   handleHandshake(e, t) {
     if (_(e)) throw Error("already did handshake");
-    this.clientId = t.client_id, this.checkRpcVersion(+t.v), b(e, !0)
+    this.clientId = t.client_id, this.checkRpcVersion(+t.v), b(e, true)
   }
   constructor(e, t) {
-    super("ipc", p.X6Q, t), f(this, "messageBuffer", r.Buffer.alloc(0)), f(this, "currentHeader", null), f(this, "MAX_BUFFER_SIZE", 5242880), f(this, "socket", void 0), f(this, "clientId", null), this.socket = e, b(e, !1)
+    super("ipc", p.X6Q, t), f(this, "messageBuffer", r.Buffer.alloc(0)), f(this, "currentHeader", null), f(this, "MAX_BUFFER_SIZE", 5242880), f(this, "socket", true), f(this, "clientId", null), this.socket = e, b(e, false)
   }
 }
-class v extends i.EventEmitter {
+class v extends Chunk836560.EventEmitter {
   handleConnection(e) {
     let t = new y(e, "json");
     e.on("readable", () => {
@@ -182,7 +183,7 @@ class v extends i.EventEmitter {
   constructor() {
     super();
     let e = h.net.createServer(e => this.handleConnection(e));
-    e.on("error", e => g.error("Error: ".concat(e.message))), h.getAvailableSocket(O).then(t => {
+    module.on("error", e => g.error("Error: ".concat(e.message))), h.getAvailableSocket(O).then(t => {
       e.listen(t, () => {
         ("function" == typeof e.listening ? e.listening() : e.listening) && g.info("Starting on ".concat(e.address()))
       })

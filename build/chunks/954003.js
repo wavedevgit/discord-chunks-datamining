@@ -1,12 +1,13 @@
 /** Chunk was on 75708 **/
-n.d(t, {
+/** chunk id: 954003, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   O: () => r
-}), n(388685), n(467055);
-var i = n(73800);
+}), require("./388685.js"), require("./467055.js");
+var Chunk73800 = require("./73800.js");
 let r = function(e) {
   let {
     scrollOffset: t
-  } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {
+  } = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {
     scrollOffset: 60
   }, n = (0, i.useCallback)(e => {
     let n = o.current[e];
@@ -14,7 +15,7 @@ let r = function(e) {
       behavior: "smooth",
       block: "start"
     }))
-  }, [t]), [r, s] = (0, i.useState)(Object.fromEntries(e.map(e => [e, !1]))), [a, l] = (0, i.useState)(e[0]);
+  }, [t]), [r, s] = (0, i.useState)(Object.fromEntries(e.map(e => [e, false]))), [a, l] = (0, i.useState)(e[0]);
   (0, i.useEffect)(() => {
     let e = Object.keys(r).filter(e => r[e]);
     e.length > 0 && l(e[0])
@@ -35,9 +36,9 @@ let r = function(e) {
                 var i;
                 i = n[t], t in e ? Object.defineProperty(e, t, {
                   value: i,
-                  enumerable: !0,
-                  configurable: !0,
-                  writable: !0
+                  enumerable: true,
+                  configurable: true,
+                  writable: true
                 }) : e[t] = i
               })
             }

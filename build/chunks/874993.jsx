@@ -1,0 +1,105 @@
+/** Chunk was on 22988 **/
+/** chunk id: 874993, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
+  Z: () => C
+}), require("./388685.js"), require("./472816.js"), require("./794429.js"), require("./953529.js");
+var Chunk255367 = require("./255367.js"),
+  Chunk73800 = require("./73800.js"),
+  Chunk442837 = require("./442837.js"),
+  Chunk692547 = require("./692547.js"),
+  Chunk481060 = require("./481060.js"),
+  Chunk999382 = require("./999382.js"),
+  Chunk279542 = require("./279542.jsx"),
+  Chunk823379 = require("./823379.js"),
+  Chunk63063 = require("./63063.js"),
+  Chunk426563 = require("./426563.js"),
+  Chunk727072 = require("./727072.js"),
+  Chunk85960 = require("./85960.js"),
+  Chunk577330 = require("./577330.jsx"),
+  Chunk65912 = require("./65912.js"),
+  Chunk51248 = require("./51248.jsx"),
+  Chunk546513 = require("./546513.jsx"),
+  Chunk572456 = require("./572456.jsx"),
+  Chunk273504 = require("./273504.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk388032 = require("./388032.jsx"),
+  Chunk885655 = require("./885655.js");
+
+function C(e) {
+  var t, n;
+  let {
+    guildId: C,
+    setPreventNavigation: N = () => {}
+  } = e, {
+    editingRule: I,
+    setEditingRule: E
+  } = (0, f.V)(), {
+    guild: S,
+    subsection: T
+  } = (0, l.cj)([o.Z], () => o.Z.getProps()), P = null != (n = null != (t = null == S ? true : S.id) ? t : C) ? n : _.lds, w = null != I, [R] = (0, g.RD)(P), {
+    rulesByTriggerType: Z
+  } = (0, g.pH)(P), D = {
+    [p.vh.MEMBERS]: O.intl.string(O.t.sx4E5u),
+    [p.vh.CONTENT]: O.intl.string(O.t.fphZb2)
+  }, A = i.useMemo(() => Object.values(null != Z ? Z : {}).flat().filter(d.lm), [Z]), k = {
+    isInEditMode: w,
+    setEditingRule: E
+  }, L = i.useRef(k);
+  i.useEffect(() => {
+    L.current = k
+  }), i.useEffect(() => {
+    let {
+      isInEditMode: e,
+      setEditingRule: t
+    } = L.current;
+    e && t(null)
+  }, [P]);
+  let M = i.useCallback((e, t) => {
+      if (null != e) {
+        var n, r;
+        return null != (r = null == (n = A.find(t => {
+          let {
+            id: n
+          } = t;
+          return n === e
+        })) ? true : n.name) ? r : null
+      }
+      return null != t ? p.I6[t].getDefaultRuleName() : null
+    }, [A]),
+    G = i.useMemo(() => {
+      var e, t;
+      return M(null != (e = null == I ? true : I.id) ? e : null, null != (t = null == I ? true : I.triggerType) ? t : null)
+    }, [M, I]);
+  i.useEffect(() => {
+    N(w, (0, j.af)(G))
+  }, [N, w, G]);
+  let U = (0, p.Z6)(P),
+    B = e => <r.Fragment>{e.map(e => {
+        var t;
+        return (0, r.jsx)(x.Z, {
+          guildId: P,
+          triggerType: e,
+          rules: null != (t = Z[e]) ? t : [],
+          initWithEdit: T === _.KsC.AUTOMOD_MENTION_SPAM && e === v.fX.MENTION_SPAM
+        }, e)
+      })}</r.Fragment>;
+  return <s.hjN title={O.intl.string(O.t.uRelg4)} tag={"h1"}>{<div className={y.descriptionContainer}>{<s.hjN tag={"h3"} className={y.description} titleClassName={y.descriptionHeader}>{<s.Text variant={"text-md/medium"} color={"header-secondary"}>{O.intl.string(O.t.EwuSCQ)}</s.Text>}{<s.Text variant={"text-sm/medium"} className={y.helpUrl}>{O.intl.format(O.t["B+sgGh"], {
+            helpUrl: u.Z.getArticleURL(_.BhN.GUILD_AUTOMOD_BLOCKED_MESSAGE)
+          })}</s.Text>}</s.hjN>}{<div className={y.descriptionAvatarContainer}>{<s.qEK src={(0, m.j)()} size={s.EFr.SIZE_80} aria-label={O.intl.string(O.t.hG1StL)} />}{<s.IGR text={(0, r.jsxs)("div", {
+            className: y.automodBadgeText,
+            children: [(0, r.jsx)(s.sV5, {
+              size: "xxs",
+              color: "currentColor",
+              className: y.checkmarkIcon
+            }), (0, r.jsx)(s.Text, {
+              variant: "text-xs/bold",
+              className: y.automodText,
+              children: O.intl.string(O.t.hG1StL)
+            })]
+          })} color={a.Z.unsafe_rawColors.BRAND_500.css} className={y.textBadge} />}</div>}</div>}{R ? <h.Z /> : Object.entries(U).map(e => {
+      let [t, n] = e;
+      if (0 === n.length) return <i.Fragment />;
+      let l = null != D[t] ? <s.hjN tag={"h3"} className={y.categoryHeader}><s.Text variant={"text-lg/normal"} color={"header-primary"}>{D[t]}</s.Text></s.hjN> : null;
+      return <div className={y.categoryContainer}>{l}{B(n)}</div>
+    })}{null != S && <c.k0 guild={S} withDivider={false} className={y.explicitContentFilterSection} />}{<b.Z guildId={P} existingRules={A} />}{w && <div className={y.endSpacer} />}</s.hjN>
+}

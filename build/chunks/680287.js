@@ -1,13 +1,14 @@
 /** Chunk was on web.js **/
+/** chunk id: 680287, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => s
 });
-var r = n(865275),
-  i = n(237992),
-  o = n(959517),
-  a = n(388032);
-class s extends r.Z {
+var Chunk865275 = require("./865275.js"),
+  Chunk237992 = require("./237992.js"),
+  Chunk959517 = require("./959517.js"),
+  Chunk388032 = require("./388032.jsx");
+class s extends Chunk865275.Z {
   async uploadFiles(e) {
     super.upload(a.intl.string(a.t.jfKTen), e);
     let t = new Promise((e, t) => {
@@ -25,7 +26,7 @@ class s extends r.Z {
       n = new AbortController;
     try {
       if (this.files = e, this._aborted || (this._handleStart(() => n.abort()), !await this.compressAndCheckFileSize())) return t;
-      this.setUploadingTextForUI(), await (0, i.Z)(this.files, !0, this._recomputeProgress.bind(this))
+      this.setUploadingTextForUI(), await (0, i.Z)(this.files, true, this._recomputeProgress.bind(this))
     } catch (e) {
       throw this._handleException(e), {
         file: this._file,

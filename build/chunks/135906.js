@@ -1,11 +1,12 @@
 /** Chunk was on web.js **/
+/** chunk id: 135906, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => o
 });
-var r = n(871465);
+var Chunk871465 = require("./871465.js");
 let i = {
-  [r.YC.CLASSIC]: {
+  [Chunk871465.YC.CLASSIC]: {
     discodo: "discodo",
     message1: "message1",
     deafen: "deafen",
@@ -31,25 +32,25 @@ let i = {
     camera_off: "camera_off",
     camera_on: "camera_on"
   },
-  [r.YC.RETRO]: {
+  [Chunk871465.YC.RETRO]: {
     message1: "bit_message1"
   },
-  [r.YC.BUBBLE]: {
+  [Chunk871465.YC.BUBBLE]: {
     message1: "bop_message1"
   },
-  [r.YC.DUCKY]: {
+  [Chunk871465.YC.DUCKY]: {
     message1: "ducky_message1"
   },
-  [r.YC.LOFI]: {
+  [Chunk871465.YC.LOFI]: {
     message1: "lofi_message1"
   },
-  [r.YC.ASMR]: {
+  [Chunk871465.YC.ASMR]: {
     message1: "asmr_message1"
   },
-  [r.YC.DISCODO]: {
+  [Chunk871465.YC.DISCODO]: {
     message1: "discodo"
   },
-  [r.YC.HALLOWEEN]: {
+  [Chunk871465.YC.HALLOWEEN]: {
     call_calling: "halloween_call_calling",
     call_ringing: "halloween_call_ringing",
     message1: "halloween_message1",
@@ -61,7 +62,7 @@ let i = {
     user_join: "halloween_user_join",
     user_leave: "halloween_user_leave"
   },
-  [r.YC.WINTER_HOLIDAY]: {
+  [Chunk871465.YC.WINTER_HOLIDAY]: {
     call_calling: "winter_call_calling",
     call_ringing: "winter_call_ringing",
     deafen: "winter_deafen",

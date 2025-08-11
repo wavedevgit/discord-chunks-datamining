@@ -1,10 +1,11 @@
 /** Chunk was on web.js **/
+/** chunk id: 903772, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 
 function r() {
   let e = window;
-  return null != e.jQuery || null != e.$ || null != e.BetterDiscord || null != e.BdApi || null != e.rambox
+  return null != module.jQuery || null != module.$ || null != module.BetterDiscord || null != module.BdApi || null != module.rambox
 }
-n.d(t, {
+require.d(exports, {
   e: () => r
 })

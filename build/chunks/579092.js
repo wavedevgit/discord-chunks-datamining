@@ -1,19 +1,20 @@
 /** Chunk was on web.js **/
+/** chunk id: 579092, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Bl: () => c,
   Sm: () => u,
   Yd: () => d,
   _n: () => s
-}), n(388685);
-var r = n(351527);
+}), require("./388685.js");
+var Chunk351527 = require("./351527.js");
 
 function i(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 let o = "\nfont-weight: bold;\ncolor: purple;\n",
@@ -38,7 +39,7 @@ class d {
   }
   constructor(e = "default") {
     var t = this;
-    i(this, "name", void 0), i(this, "nativeLoggerEnabled", void 0), i(this, "logDangerously", function(e) {
+    i(this, "name", true), i(this, "nativeLoggerEnabled", true), i(this, "logDangerously", function(e) {
       for (var n = arguments.length, r = Array(n > 1 ? n - 1 : 0), i = 1; i < n; i++) r[i - 1] = arguments[i];
       a(t.name, "log", e, ...r), t.nativeLoggerEnabled && (null == l || l(t.name, "log", e, ...r))
     }), i(this, "log", function(e) {
@@ -69,6 +70,6 @@ class d {
     }), i(this, "fileOnly", function(e) {
       for (var n = arguments.length, r = Array(n > 1 ? n - 1 : 0), i = 1; i < n; i++) r[i - 1] = arguments[i];
       a(t.name, "file-only", e, ...r), t.nativeLoggerEnabled && (null == l || l(t.name, "file-only", e, ...r))
-    }), this.name = e, this.nativeLoggerEnabled = !1
+    }), this.name = e, this.nativeLoggerEnabled = false
   }
 }

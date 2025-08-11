@@ -1,17 +1,18 @@
 /** Chunk was on web.js **/
+/** chunk id: 261470, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 
 function r(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
-n.d(t, {
+require.d(exports, {
   Z: () => i
-}), n(415506);
+}), require("./415506.js");
 class i {
   get fails() {
     return this._fails
@@ -45,8 +46,8 @@ class i {
   cancel() {
     this._callback = null, null != this._timeoutId && (clearTimeout(this._timeoutId), this._timeoutId = null)
   }
-  constructor(e = 500, t = null, n = !0) {
-    if (r(this, "min", void 0), r(this, "max", void 0), r(this, "jitter", void 0), r(this, "_current", void 0), r(this, "_timeoutId", void 0), r(this, "_callback", void 0), r(this, "_fails", 0), e <= 0) throw Error("Backoff min value must be greater than zero or backoff will never back-off.");
+  constructor(e = 500, t = null, n = true) {
+    if (r(this, "min", true), r(this, "max", true), r(this, "jitter", true), r(this, "_current", true), r(this, "_timeoutId", true), r(this, "_callback", true), r(this, "_fails", 0), e <= 0) throw Error("Backoff min value must be greater than zero or backoff will never back-off.");
     this.min = e, this.max = null != t ? t : 10 * e, this.jitter = n, this._current = e
   }
 }

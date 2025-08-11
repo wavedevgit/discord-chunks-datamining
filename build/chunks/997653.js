@@ -1,41 +1,42 @@
 /** Chunk was on web.js **/
+/** chunk id: 997653, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Q: () => E
-}), n(35282);
-var r = n(264344),
-  i = n.n(r),
-  o = n(579092),
-  a = n(46973),
-  s = n(912095),
-  l = n(912978),
-  c = n(886848),
-  u = n(236842),
-  d = n(649318),
-  f = n(199857),
-  _ = n(65154),
-  p = n(436620);
+}), require("./35282.js");
+var Chunk264344 = require("./264344.js"),
+  i = require.n(Chunk264344),
+  Chunk579092 = require("./579092.js"),
+  Chunk46973 = require("./46973.js"),
+  Chunk912095 = require("./912095.js"),
+  Chunk912978 = require("./912978.js"),
+  Chunk886848 = require("./886848.js"),
+  Chunk236842 = require("./236842.js"),
+  Chunk649318 = require("./649318.js"),
+  Chunk199857 = require("./199857.js"),
+  Chunk65154 = require("./65154.js"),
+  Chunk436620 = require("./436620.js");
 
 function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
 function m(e) {
   return e.split("-")[0]
 }
-class g extends s.Z {
+class g extends Chunk912095.Z {
   destroy() {
     super.destroy(), this.pc.close()
   }
   setCodecs(e, t, n) {
     var r, i, o;
     let a;
-    (this.fpc.audioCodec !== e || this.fpc.videoCodec !== t) && (a = this.codecs.find(t => t.name === e), this.fpc.audioCodec = e, this.fpc.audioPayloadType = null != (r = null == a ? void 0 : a.payloadType) ? r : 0, a = this.codecs.find(e => e.name === t), this.fpc.videoCodec = t, this.fpc.videoPayloadType = null != (i = null == a ? void 0 : a.payloadType) ? i : 0, this.fpc.rtxPayloadType = null != (o = null == a ? void 0 : a.rtxPayloadType) ? o : 0, this.pc.negotiationNeeded())
+    (this.fpc.audioCodec !== e || this.fpc.videoCodec !== t) && (a = this.codecs.find(t => t.name === e), this.fpc.audioCodec = e, this.fpc.audioPayloadType = null != (r = null == a ? true : a.payloadType) ? r : 0, a = this.codecs.find(e => e.name === t), this.fpc.videoCodec = t, this.fpc.videoPayloadType = null != (i = null == a ? true : a.payloadType) ? i : 0, this.fpc.rtxPayloadType = null != (o = null == a ? true : a.rtxPayloadType) ? o : 0, this.pc.negotiationNeeded())
   }
   setStream(e) {
     this.fpc.direction = null != e ? d.Ns.SENDRECV : d.Ns.SENDONLY, this.pc.setStream(null != e ? e : null)
@@ -43,7 +44,7 @@ class g extends s.Z {
   createUser(e, t, n) {
     var r;
     if (0 === t) return void this.logger.warn("Attempting to create user ".concat(e, " with 0 audio SSRC"));
-    this.logger.info("Creating user: ".concat(e, " with audio SSRC: ").concat(t, " and video SSRCs: ").concat(null != (r = null == n ? void 0 : n.join(",")) ? r : 0));
+    this.logger.info("Creating user: ".concat(e, " with audio SSRC: ").concat(t, " and video SSRCs: ").concat(null != (r = null == n ? true : n.join(",")) ? r : 0));
     let i = null != n && n.length > 0 ? n[0] : 0;
     this.fpc.addStream(e, t, i)
   }
@@ -62,7 +63,7 @@ class g extends s.Z {
   }
   setVideoEncoderParameters(e) {}
   constructor(e) {
-    super(e), h(this, "pc", void 0), h(this, "fpc", void 0), h(this, "codecs", []), h(this, "logger", void 0), this.logger = new o.Yd("Connection(".concat(e.context, ")"));
+    super(e), h(this, "pc", true), h(this, "fpc", true), h(this, "codecs", []), h(this, "logger", true), this.logger = new o.Yd("Connection(".concat(e.context, ")"));
     let t = new l.Z;
     t.on("answer", e => this.pc.setRemoteDescription(e).catch(e => this.logger.error("Failed to set remote description (answer): ".concat(e)))), t.on("offer", e => {
       this.pc.setRemoteDescription(e).then(() => this.pc.createAnswer()).then(e => this.fpc.setRemoteDescription(e)).catch(e => this.logger.error("Failed to set remote description (offer): ".concat(e)))
@@ -82,7 +83,7 @@ class g extends s.Z {
       } = (0, d.Nl)(n);
       this.codecs = i;
       let c = (0, d.nX)(n);
-      t.outboundStreams = r, this.audioSSRC = o, t.extensions = c, this.videoStreamParameters[0].ssrc === s && this.videoStreamParameters[0].rtxSsrc === l && this.videoReady || (this.videoStreamParameters[0].ssrc = s, this.videoStreamParameters[0].rtxSsrc = l, this.emit(a.Sh.Video, this.userId, this.input.getVideoStreamId(), this.audioSSRC, this.videoStreamParameters[0].ssrc, this.videoStreamParameters[0].rtxSsrc, this.videoStreamParameters), this.videoReady = !0)
+      t.outboundStreams = r, this.audioSSRC = o, t.extensions = c, this.videoStreamParameters[0].ssrc === s && this.videoStreamParameters[0].rtxSsrc === l && this.videoReady || (this.videoStreamParameters[0].ssrc = s, this.videoStreamParameters[0].rtxSsrc = l, this.emit(a.Sh.Video, this.userId, this.input.getVideoStreamId(), this.audioSSRC, this.videoStreamParameters[0].ssrc, this.videoStreamParameters[0].rtxSsrc, this.videoStreamParameters), this.videoReady = true)
     }), n.once("offer", e => {
       let {
         sdp: t

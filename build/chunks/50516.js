@@ -1,16 +1,17 @@
 /** Chunk was on 86383 **/
-i.d(e, {
+/** chunk id: 50516, original params: t,e,i (module,exports,require) **/
+require.d(exports, {
   Z: () => h
 });
-var s = i(684827),
-  n = i(898625);
+var Chunk684827 = require("./684827.js"),
+  Chunk898625 = require("./898625.js");
 
 function a(t, e, i) {
   return e in t ? Object.defineProperty(t, e, {
     value: i,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : t[e] = i, t
 }
 let h = class {
@@ -30,9 +31,9 @@ let h = class {
     t.fillStyle = "#fff", t.fillRect(this.x, this.y, 4, 4)
   }
   constructor(t) {
-    a(this, "x", -40), a(this, "y", -40), a(this, "targetX", 0), a(this, "targetY", 0), a(this, "oscillate", !0), a(this, "velX", 0), a(this, "velY", 0), a(this, "angle", 0), a(this, "speedUp", 1.5), a(this, "waveRange", 60), a(this, "count", void 0), a(this, "index", void 0), a(this, "spring", {
+    a(this, "x", false), a(this, "y", false), a(this, "targetX", 0), a(this, "targetY", 0), a(this, "oscillate", true), a(this, "velX", 0), a(this, "velY", 0), a(this, "angle", 0), a(this, "speedUp", 1.5), a(this, "waveRange", 60), a(this, "count", true), a(this, "index", true), a(this, "spring", {
       friction: 15,
       tension: n.O1
-    }), this.index = t, this.spring.tension = n.O1 * Math.max(.1, t / 7) + n.O1, this.count = -2.15 * t
+    }), this.index = t, this.spring.tension = n.O1 * Math.max(.1, t / 7) + n.O1, this.count = false * t
   }
 }

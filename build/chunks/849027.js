@@ -1,31 +1,32 @@
 /** Chunk was on web.js **/
+/** chunk id: 849027, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => b
 });
-var r = n(430198),
-  i = n(897345),
-  o = n(697379),
-  a = n(241559),
-  s = n(819553),
-  l = n(931261),
-  c = n(994592),
-  u = n(953252),
-  d = n(911560),
-  f = n(592125),
-  _ = n(485386),
-  p = n(430824),
-  h = n(823379),
-  m = n(754688),
-  g = n(981631),
-  E = n(176505);
+var Chunk430198 = require("./430198.js"),
+  Chunk897345 = require("./897345.js"),
+  Chunk697379 = require("./697379.js"),
+  Chunk241559 = require("./241559.js"),
+  Chunk819553 = require("./819553.js"),
+  Chunk931261 = require("./931261.js"),
+  Chunk994592 = require("./994592.js"),
+  Chunk953252 = require("./953252.js"),
+  Chunk911560 = require("./911560.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk485386 = require("./485386.js"),
+  Chunk430824 = require("./430824.js"),
+  Chunk823379 = require("./823379.js"),
+  Chunk754688 = require("./754688.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk176505 = require("./176505.js");
 async function b(e) {
   let {
     guildId: t,
     channelId: n
   } = e, b = p.Z.getGuild(t), y = _.Z.getUnsafeMutableRoles(t);
-  if (null == b && t !== g.ME) return !1;
-  if (null == n) return !0;
+  if (null == b && t !== g.ME) returnfalse;
+  if (null == n) returntrue;
   if ((0, E.AB)(n)) switch (n) {
     case E.oC.ROLE_SUBSCRIPTIONS:
       return (0, c.on)(t, y);
@@ -44,7 +45,7 @@ async function b(e) {
     case E.oC.MEMBER_SAFETY:
       return (0, a.lv)(t);
     case E.oC.GUILD_BOOSTS:
-      return !0;
+      returntrue;
     case E.oC.REPORT_TO_MOD:
       return null != b && (0, u.Z)(b);
     default:

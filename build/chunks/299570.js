@@ -1,11 +1,12 @@
 /** Chunk was on web.js **/
+/** chunk id: 299570, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   T: () => o,
   t: () => a
 });
-var r = n(570140),
-  i = n(131951);
+var Chunk570140 = require("./570140.js"),
+  Chunk131951 = require("./131951.js");
 
 function o(e) {
   var t, n;
@@ -17,7 +18,7 @@ function o(e) {
 
 function a() {
   var e, t;
-  null == (t = i.Z.getMediaEngine()) || null == (e = t.releaseNativeDesktopVideoSourcePickerStream) || e.call(t), r.Z.dispatch({
+  null == (t = Chunk131951.Z.getMediaEngine()) || null == (e = exports.releaseNativeDesktopVideoSourcePickerStream) || module.call(exports), Chunk570140.Z.dispatch({
     type: "NATIVE_SCREEN_SHARE_PICKER_RELEASE"
   })
 }

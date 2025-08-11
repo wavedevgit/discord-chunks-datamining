@@ -1,20 +1,21 @@
 /** Chunk was on web.js **/
+/** chunk id: 893663, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   k9: () => f,
   tT: () => d,
   zx: () => u
 });
-var r = n(442837),
-  i = n(581883),
-  o = n(710111);
+var Chunk442837 = require("./442837.js"),
+  Chunk581883 = require("./581883.js"),
+  Chunk710111 = require("./710111.js");
 
 function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -54,21 +55,21 @@ var u = function(e) {
 function d(e) {
   return (0, r.e7)([i.Z], () => {
     var t, n;
-    return _(e, null != (n = null == (t = i.Z.settings.guilds) ? void 0 : t.guilds) ? n : {})
+    return _(e, null != (n = null == (t = i.Z.settings.guilds) ? true : t.guilds) ? n : {})
   })
 }
 
 function f(e) {
   var t, n;
-  return _(e, null != (n = null == (t = i.Z.settings.guilds) ? void 0 : t.guilds) ? n : {})
+  return _(e, null != (n = null == (t = i.Z.settings.guilds) ? true : t.guilds) ? n : {})
 }
 
 function _(e, t) {
   var n, r;
-  let i = null == (n = t[e]) ? void 0 : n.joinSound,
-    a = null == (r = t[o.hY]) ? void 0 : r.joinSound,
+  let i = null == (n = t[e]) ? true : n.joinSound,
+    a = null == (r = t[o.hY]) ? true : r.joinSound,
     l = null != i ? i : a;
   return null != l ? c(s({}, l), {
     type: +(null != i)
-  }) : void 0
+  }) : true
 }

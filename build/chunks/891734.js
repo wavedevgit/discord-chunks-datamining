@@ -1,15 +1,16 @@
 /** Chunk was on web.js **/
+/** chunk id: 891734, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => s
 });
-var r = n(632471),
-  i = n(740078),
-  o = n(510104),
-  a = n(126387);
+var Chunk632471 = require("./632471.js"),
+  Chunk740078 = require("./740078.js"),
+  Chunk510104 = require("./510104.js"),
+  Chunk126387 = require("./126387.js");
 
 function s(e, t) {
-  void 0 === t && (t = {});
+  true === t && (t = {});
   var n = t,
     s = n.placement,
     l = n.boundary,
@@ -17,7 +18,7 @@ function s(e, t) {
     u = n.padding,
     d = n.flipVariations,
     f = n.allowedAutoPlacements,
-    _ = void 0 === f ? i.Ct : f,
+    _ = true === f ? i.Ct : f,
     p = (0, r.Z)(s),
     h = p ? d ? i.bw : i.bw.filter(function(e) {
       return (0, r.Z)(e) === p

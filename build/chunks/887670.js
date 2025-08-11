@@ -1,5 +1,6 @@
 /** Chunk was on 73628 **/
-e.exports = {
+/** chunk id: 887670, original params: e,t,A (module,exports,require) **/
+module.exports = {
   imageSelectionContainer: "imageSelectionContainer_da21bd",
   clickableItem: "clickableItem_da21bd",
   uploadButton: "uploadButton_da21bd clickableItem_da21bd",

@@ -1,13 +1,14 @@
 /** Chunk was on 75708 **/
-n.d(t, {
+/** chunk id: 189509, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   z: () => a
 });
-var i = n(607070),
-  r = n(585483),
-  s = n(981631);
+var Chunk607070 = require("./607070.js"),
+  Chunk585483 = require("./585483.js"),
+  Chunk981631 = require("./981631.js");
 let a = {
   binds: ["return"],
   action() {
-    if (!i.Z.keyboardModeEnabled && r.S.hasSubscribers(s.CkL.MODAL_SUBMIT)) return r.S.dispatch(s.CkL.MODAL_SUBMIT), !1
+    if (!Chunk607070.Z.keyboardModeEnabled && Chunk585483.S.hasSubscribers(Chunk981631.CkL.MODAL_SUBMIT)) return Chunk585483.S.dispatch(Chunk981631.CkL.MODAL_SUBMIT), false
   }
 }

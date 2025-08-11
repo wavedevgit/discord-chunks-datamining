@@ -1,0 +1,102 @@
+/** Chunk was on 22988 **/
+/** chunk id: 548522, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
+  y: () => h
+}), require("./388685.js");
+var Chunk255367 = require("./255367.js"),
+  Chunk73800 = require("./73800.js"),
+  Chunk793030 = require("./793030.js"),
+  Chunk246364 = require("./246364.js"),
+  Chunk571728 = require("./571728.js"),
+  Chunk446945 = require("./446945.jsx"),
+  Chunk681460 = require("./681460.js"),
+  Chunk700833 = require("./700833.js"),
+  Chunk217472 = require("./217472.js"),
+  Chunk592286 = require("./592286.js"),
+  Chunk388032 = require("./388032.jsx"),
+  Chunk539482 = require("./539482.js");
+
+function h(e) {
+  var t;
+  let {
+    guild: n,
+    formFields: c
+  } = e, [h, b] = i.useState(c);
+  i.useEffect(() => b(c), [c]);
+  let x = null != (t = (0, s.A)({
+      guildId: n.id
+    })) ? t : 0,
+    [j, v] = i.useState(null),
+    _ = i.useMemo(() => null == h ? true : h.some(e => (0, a.J)(e)), [h]),
+    O = i.useMemo(() => h.length === m.nx, [h]),
+    y = i.useCallback(e => {
+      u.Z.setPendingMemberVerificationRules(n.id, e), b(e), null != j && v(null)
+    }, [j, n.id]),
+    C = i.useCallback(e => {
+      y([...h, e])
+    }, [h, y]),
+    N = i.useCallback(e => {
+      y([...h.slice(0, e), ...h.slice(e + 1)])
+    }, [h, y]),
+    I = i.useCallback((e, t) => {
+      if (h[e] === t) return;
+      let n = [...h];
+      n[e] = t, y(n)
+    }, [h, y]),
+    E = i.useCallback((e, t, n) => {
+      let r = h.indexOf(e),
+        i = [...h];
+      null != t && t !== r && (i.splice(r, 1), i.splice(t, 0, e), b(i)), n ? (y(i), null !== j && v(null)) : j !== t && v(t)
+    }, [j, h, y]);
+  return <r.Fragment>{<l.X6 variant={"text-xs/bold"} color={"text-muted"} className={p.title}>{g.intl.format(g.t["sm+75u"], {
+        currentCount: h.length,
+        maxCount: m.nx
+      })}</l.X6>}{h.map(e => (0, d.a0)({
+      dropHoveredIndex: j,
+      formField: e,
+      guild: n,
+      index: h.indexOf(e),
+      isDragEnabled: h.length > 1,
+      submittedGuildJoinRequestsCount: x,
+      removeFormField: N,
+      updateFormField: I,
+      updateFormFieldOrder: E,
+      canRemove: h.length > 1,
+      actionsLocation: "side",
+      fieldStyle: a.it.COMPACT
+    }))}{!O && <div className={p.addQuestionsContainer}><o.Z addFormField={C} guild={n} allowTerms={!_} /></div>}{!O && <f addFormField={C} />}</r.Fragment>
+}
+
+function f(e) {
+  let {
+    addFormField: t
+  } = e, n = i.useMemo(() => [{
+    text: g.intl.string(g.t.EOwiEh),
+    onClick: () => {
+      t({
+        field_type: a.QJ.TEXT_INPUT,
+        label: g.intl.string(g.t.EOwiEh),
+        required: true
+      })
+    }
+  }, {
+    text: g.intl.string(g.t.jqrNDg),
+    onClick: () => {
+      t({
+        field_type: a.QJ.TEXT_INPUT,
+        label: g.intl.string(g.t.jqrNDg),
+        required: true
+      })
+    }
+  }, {
+    text: g.intl.string(g.t.I5q8vr),
+    onClick: () => {
+      t({
+        field_type: a.QJ.TEXT_INPUT,
+        label: g.intl.string(g.t.I5q8vr),
+        required: true
+      })
+    }
+  }], [t]);
+  return <r.Fragment>{<l.X6 variant={"text-xs/bold"} color={"text-muted"} className={p.examplesHeader}>{g.intl.string(g.t.ID04cH)}</l.X6>}{<c.j pills={n} />}</r.Fragment>
+}

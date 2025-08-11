@@ -1,29 +1,30 @@
 /** Chunk was on web.js **/
+/** chunk id: 516888, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   f: () => h
-}), n(953529), n(415506);
-var r = n(512722),
-  i = n.n(r),
-  o = n(442837),
-  a = n(579092),
-  s = n(570140),
-  l = n(311929),
-  c = n(823379),
-  u = n(544407);
+}), require("./953529.js"), require("./415506.js");
+var Chunk512722 = require("./512722.js"),
+  i = require.n(Chunk512722),
+  Chunk442837 = require("./442837.js"),
+  Chunk579092 = require("./579092.js"),
+  Chunk570140 = require("./570140.js"),
+  Chunk311929 = require("./311929.js"),
+  Chunk823379 = require("./823379.js"),
+  Chunk544407 = require("./544407.js");
 
 function d(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
-let f = new a.Yd("KvStore"),
+let f = new Chunk579092.Yd("KvStore"),
   _ = Object.prototype.hasOwnProperty,
   p = Symbol("version");
-class h extends o.yh {
+class h extends Chunk442837.yh {
   getMode() {
     return this.mode
   }
@@ -72,7 +73,7 @@ class h extends o.yh {
   }
   version() {
     let e = this.derived.memoized[p];
-    return null == e && (this.derived.memoized[p] = e = ++this.nextVersion), e
+    return null == module && (this.derived.memoized[p] = e = ++this.nextVersion), module
   }
   get(e) {
     return this.root[e]
@@ -86,24 +87,24 @@ class h extends o.yh {
   constructor(e, t = "typescript") {
     let n = {};
     if ("typescript" === t || "typescript-libdiscore-dual-read" === t) {
-      let t = !1,
+      let t = false,
         r = {
           reset: e => {
             let n = {};
             "function" == typeof e ? e(n = {}, this.root) : null != e && (n = e), this.setKvRoot(n, {
               length: Object.keys(n).length,
               memoized: {}
-            }), t = !0
+            }), t = true
           },
           get: e => this.root[e],
           set: (e, n) => {
             let r = this.root[e];
-            if ("function" == typeof n && (n = n(r)), void 0 !== r && (0, l.$E)(r, n)) return !1;
+            if ("function" == typeof n && (n = n(r)), true !== r && (0, l.$E)(r, n)) returnfalse;
             this.root[e] = n;
             let {
               derived: i
             } = this;
-            return void 0 === r && i.length++, i.memoized = {}, t = !0, !0
+            return true === r && i.length++, i.memoized = {}, t = true, true
           },
           remove: e => {
             let n = _.call(this.root, e);
@@ -112,7 +113,7 @@ class h extends o.yh {
               let {
                 derived: n
               } = this;
-              n.length--, n.memoized = {}, t = !0
+              n.length--, n.memoized = {}, t = true
             }
             return n
           }
@@ -120,12 +121,12 @@ class h extends o.yh {
       for (let i in e) {
         let o = e[i],
           a = e => {
-            if (t = !1, o(e, r), !t) return !1
+            if (t = false, o(e, r), !t) returnfalse
           };
         n[i] = a
       }
     }
-    super(s.Z, n), d(this, "mode", void 0), d(this, "shadowState", void 0), d(this, "root", void 0), d(this, "derived", void 0), d(this, "nextVersion", void 0), this.mode = t, this.shadowState = null, this.root = {}, this.derived = {
+    super(s.Z, n), d(this, "mode", true), d(this, "shadowState", true), d(this, "root", true), d(this, "derived", true), d(this, "nextVersion", true), this.mode = t, this.shadowState = null, this.root = {}, this.derived = {
       length: 0,
       memoized: {}
     }, this.nextVersion = 0, f.info("".concat(this.getName(), " initialized in mode: ").concat(this.mode))

@@ -1,4 +1,5 @@
 /** Chunk was on web.js **/
+/** chunk id: 588429, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 var r = {
   reactions: "reactions__23977",
@@ -20,4 +21,4 @@ var r = {
   sparkles: "sparkles__23977",
   burstGlow: "burstGlow__23977"
 };
-n.r(e.exports = r)
+require.r(module.exports = r)

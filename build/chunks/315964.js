@@ -1,13 +1,14 @@
 /** Chunk was on 1272 **/
-n.d(t, {
+/** chunk id: 315964, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => a
 });
-var r = n(570140),
-  i = n(142497),
-  l = n(190378);
+var Chunk570140 = require("./570140.js"),
+  Chunk142497 = require("./142497.js"),
+  Chunk190378 = require("./190378.js");
 let a = {
   init() {
-    r.Z.subscribe("VOICE_CHANNEL_SELECT", e => {
+    Chunk570140.Z.subscribe("VOICE_CHANNEL_SELECT", e => {
       let {
         channelId: t
       } = e;

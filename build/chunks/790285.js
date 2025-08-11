@@ -1,13 +1,14 @@
 /** Chunk was on web.js **/
+/** chunk id: 790285, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   TG: () => l,
   wB: () => s,
   yt: () => a
 });
-var r = n(149765),
-  i = n(345162),
-  o = n(981631);
+var Chunk149765 = require("./149765.js"),
+  Chunk345162 = require("./345162.js"),
+  Chunk981631 = require("./981631.js");
 
 function a(e) {
   return (0, i.Fs)(e, o.Plq.VIEW_CHANNEL)

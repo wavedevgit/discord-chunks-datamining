@@ -1,5 +1,6 @@
 /** Chunk was on 49152 **/
-e.exports = {
+/** chunk id: 11847, original params: e,t,n (module,exports,require) **/
+module.exports = {
   placeholderPulse: "placeholderPulse_c8ffbb",
   container: "container_c8ffbb",
   membersWrap: "membersWrap_c8ffbb",

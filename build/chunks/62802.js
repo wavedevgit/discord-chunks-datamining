@@ -1,5 +1,6 @@
 /** Chunk was on 75708 **/
-e.exports = {
+/** chunk id: 62802, original params: e,t,n (module,exports,require) **/
+module.exports = {
   effect: "effect_adebba",
   username: "username_adebba",
   streaming: "streaming_adebba",

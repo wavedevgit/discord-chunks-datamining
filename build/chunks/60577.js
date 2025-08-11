@@ -1,15 +1,16 @@
 /** Chunk was on 49152 **/
-n.d(t, {
+/** chunk id: 60577, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => i
-}), n(388685);
-var r = n(73800);
+}), require("./388685.js");
+var Chunk73800 = require("./73800.js");
 
 function i() {
-  let [e, t] = (0, r.useState)(window.innerWidth >= 1132);
-  return (0, r.useEffect)(() => {
+  let [e, t] = (0, Chunk73800.useState)(window.innerWidth >= 1132);
+  return (0, Chunk73800.useEffect)(() => {
     let e = () => {
-      t(window.innerWidth >= 1132)
+      exports(window.innerWidth >= 1132)
     };
-    return e(), window.addEventListener("resize", e), () => window.removeEventListener("resize", e)
-  }, []), e
+    return module(), window.addEventListener("resize", module), () => window.removeEventListener("resize", module)
+  }, []), module
 }

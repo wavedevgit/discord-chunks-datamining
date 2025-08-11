@@ -1,5 +1,6 @@
 /** Chunk was on 87626 **/
-a.r(e.exports = {
+/** chunk id: 795177, original params: e,t,a (module,exports,require) **/
+require.r(module.exports = {
   localePicker: "localePicker_dda9b4",
   opener: "opener_dda9b4",
   openerOpen: "openerOpen_dda9b4",

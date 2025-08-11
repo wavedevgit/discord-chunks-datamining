@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 619820, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = function(e) {
+module.exports = function(e) {
   var t, r;
   if (t = n(618336), r = n(919089), "keypress" === e.type) {
     var i = String.fromCharCode(e.which);

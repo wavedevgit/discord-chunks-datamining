@@ -1,19 +1,20 @@
 /** Chunk was on web.js **/
+/** chunk id: 209747, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => a
 });
-var r = n(81825);
+var Chunk81825 = require("./81825.js");
 
 function i(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
-class o extends r.Z {
+class o extends Chunk81825.Z {
   static createFromServer(e, t) {
     return new o({
       id: e.id,
@@ -34,7 +35,7 @@ class o extends r.Z {
     return null == this.premiumGuildSubscription && !this.isOnCooldown()
   }
   constructor(e) {
-    super(), i(this, "id", void 0), i(this, "subscriptionId", void 0), i(this, "premiumGuildSubscription", void 0), i(this, "canceled", void 0), i(this, "cooldownEndsAt", void 0), i(this, "subscription", void 0), this.id = e.id, this.subscriptionId = e.subscriptionId, this.premiumGuildSubscription = e.premiumGuildSubscription, this.canceled = e.canceled, this.cooldownEndsAt = e.cooldownEndsAt, this.subscription = e.subscription
+    super(), i(this, "id", true), i(this, "subscriptionId", true), i(this, "premiumGuildSubscription", true), i(this, "canceled", true), i(this, "cooldownEndsAt", true), i(this, "subscription", true), this.id = e.id, this.subscriptionId = e.subscriptionId, this.premiumGuildSubscription = e.premiumGuildSubscription, this.canceled = e.canceled, this.cooldownEndsAt = e.cooldownEndsAt, this.subscription = e.subscription
   }
 }
 let a = o

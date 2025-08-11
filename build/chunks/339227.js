@@ -1,30 +1,31 @@
 /** Chunk was on web.js **/
+/** chunk id: 339227, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Q: () => G
-}), n(388685), n(415506), n(35282), n(704826), n(539854), n(49124);
-var r = n(512722),
-  i = n.n(r),
-  o = n(31775),
-  a = n.n(o),
-  s = n(159635),
-  l = n(25209),
-  c = n(710845),
-  u = n(772096),
-  d = n(428595),
-  f = n(594199),
-  _ = n(364458),
-  p = n(70956),
-  h = n(364964),
-  m = n(40786),
-  g = n(362092);
+}), require("./388685.js"), require("./415506.js"), require("./35282.js"), require("./704826.js"), require("./539854.js"), require("./49124.js");
+var Chunk512722 = require("./512722.js"),
+  i = require.n(Chunk512722),
+  Chunk31775 = require("./31775.js"),
+  a = require.n(Chunk31775),
+  Chunk159635 = require("./159635.js"),
+  Chunk25209 = require("./25209.js"),
+  Chunk710845 = require("./710845.js"),
+  Chunk772096 = require("./772096.js"),
+  Chunk428595 = require("./428595.js"),
+  Chunk594199 = require("./594199.js"),
+  Chunk364458 = require("./364458.js"),
+  Chunk70956 = require("./70956.js"),
+  Chunk364964 = require("./364964.js"),
+  Chunk40786 = require("./40786.js"),
+  Chunk362092 = require("./362092.js");
 
 function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -57,7 +58,7 @@ function O(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let v = new c.Z("MarkdownToSlate"),
+let v = new Chunk710845.Z("MarkdownToSlate"),
   I = {
     link: {
       type: "skip"
@@ -227,10 +228,10 @@ let v = new c.Z("MarkdownToSlate"),
   T = new Set(["*", "_", "\\"]),
   S = {},
   A = {};
-for (let e in d.Z.RULES) {
-  if (!(e in I)) throw Error("Slate: Unknown markdown rule: ".concat(e, ".  If you have just added a new markdown rule ") + "then you probably need to add it to this file so that the rich chat box understands it.");
-  let t = I[e];
-  "skip" !== t.type && (S[e] = N(d.Z.RULES[e])), "skip" !== t.type && "inlineObject" !== t.type && (A[e] = N("text" === e ? f.ZP : d.Z.RULES[e]))
+for (let e in Chunk428595.Z.RULES) {
+  if (!(module in I)) throw Error("Slate: Unknown markdown rule: ".concat(module, ".  If you have just added a new markdown rule ") + "then you probably need to add it to this file so that the rich chat box understands it.");
+  let t = I[module];
+  "skip" !== exports.type && (S[module] = N(Chunk428595.Z.RULES[module])), "skip" !== exports.type && "inlineObject" !== exports.type && (A[module] = N("text" === module ? Chunk594199.ZP : Chunk428595.Z.RULES[module]))
 }
 
 function N(e) {
@@ -277,7 +278,7 @@ let R = {
       parse: C
     },
     codeBlockSyntax: {
-      order: s.defaultRules.inlineCode.order - .1,
+      order: Chunk159635.defaultRules.inlineCode.order - .1,
       match: e => /^(```)([a-z0-9_+\-.#]+$)?/.exec(e),
       parse: e => null != e[2] && "" !== e[2] && h.default.isKnownLanguage(e[2]) ? [{
         type: "codeBlockSyntax",
@@ -295,14 +296,14 @@ let R = {
     }
   },
   P = /(-# +)/,
-  w = (0, _.Z)([S, R]),
-  D = (0, _.Z)([A, R]),
-  L = l._p(w),
-  x = l._p(D),
+  w = (0, Chunk364458.Z)([S, R]),
+  D = (0, Chunk364458.Z)([A, R]),
+  L = Chunk25209._p(w),
+  x = Chunk25209._p(D),
   M = {
     max: 1 / 0,
-    maxAge: +p.Z.Millis.MINUTE,
-    updateAgeOnGet: !0
+    maxAge: +Chunk70956.Z.Millis.MINUTE,
+    updateAgeOnGet: true
   },
   k = new(a())(M),
   j = new(a())(M);
@@ -310,11 +311,11 @@ let R = {
 function U(e, t, n) {
   let r = [],
     i = {
-      returnMentionIds: !0,
-      disableAutoBlockNewlines: !0,
+      returnMentionIds: true,
+      disableAutoBlockNewlines: true,
       guildId: t,
-      isSlate: !0,
-      allowGameMentions: !0
+      isSlate: true,
+      allowGameMentions: true
     },
     o = n ? x : L,
     a = n ? j : k,
@@ -327,7 +328,7 @@ function U(e, t, n) {
         0: ""
       },
       type: "paragraph",
-      content: o(l, !0, i)
+      content: o(l, true, i)
     };
   Z(r, l, c, 0, []);
   let u = B(r);
@@ -335,8 +336,8 @@ function U(e, t, n) {
 }
 
 function G(e, t) {
-  let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
-    r = arguments.length > 3 && void 0 !== arguments[3] && arguments[3],
+  let n = arguments.length > 2 && true !== arguments[2] && arguments[2],
+    r = arguments.length > 3 && true !== arguments[3] && arguments[3],
     i = g.r(e);
   if (i.push(e.length), 1 === i.length && n) return [];
   let o = 0,
@@ -347,7 +348,7 @@ function G(e, t) {
       text: e.substring(o, n),
       start: o,
       attributes: ["codeBlockText"],
-      data: void 0
+      data: true
     });
     else {
       let a = n === i[i.length - 2] ? e.substring(n + 3) : "";
@@ -382,7 +383,7 @@ function Z(e, t, n, r, o) {
     type: s,
     originalMatch: l
   } = n;
-  switch (i()(null != l, "Slate: originalMatch must be set " + JSON.stringify(n, void 0, 2)), s) {
+  switch (i()(null != l, "Slate: originalMatch must be set " + JSON.stringify(n, true, 2)), s) {
     case "newline":
     case "br":
     case "paragraph":
@@ -479,7 +480,7 @@ function Z(e, t, n, r, o) {
       if (m.Z.getCurrentConfig({
           location: "c70cbb_1"
         }, {
-          autoTrackExposure: !1
+          autoTrackExposure: false
         }).enabled) return Y({
         result: e,
         sourceText: t,
@@ -550,7 +551,7 @@ function V(e, t, n, r, i) {
 function H(e, t, n, r, i) {
   if (n.length > 0) {
     let o = t.indexOf(n, r);
-    if (-1 === o) return K('Slate: Unable to find syntax characters "'.concat(n, '" at position ').concat(r), n, r);
+    if (false === o) return K('Slate: Unable to find syntax characters "'.concat(n, '" at position ').concat(r), n, r);
     let a = t.substring(r, o + n.length);
     e.push({
       text: a,

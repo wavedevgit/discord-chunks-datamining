@@ -1,0 +1,1 @@
+{"id":"80387","type":"experiment","data":{"kind":"user","id":"2025-07_game_store_links","label":"Game Store Links","defaultConfig":{"enabled":false},"treatments":[{"id":0,"label":"Control","config":{"enabled":false}},{"id":1,"label":"Show game store links","config":{"enabled":true}}]},"fromModule":{"id":"web.js"}}

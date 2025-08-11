@@ -1,33 +1,34 @@
 /** Chunk was on web.js **/
+/** chunk id: 676770, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Fl: () => s,
   c1: () => l,
   cv: () => c,
   lp: () => a
 });
-var r = n(149765),
-  i = n(231338),
-  o = n(388032);
+var Chunk149765 = require("./149765.js"),
+  Chunk231338 = require("./231338.js"),
+  Chunk388032 = require("./388032.jsx");
 let a = 2,
   s = 2,
   l = () => [{
     value: 1,
-    label: o.intl.string(o.t["GA/d4O"])
+    label: Chunk388032.intl.string(Chunk388032.t["GA/d4O"])
   }, {
     value: 2,
-    label: o.intl.string(o.t["+rHFen"])
+    label: Chunk388032.intl.string(Chunk388032.t["+rHFen"])
   }, {
     value: 4,
-    label: o.intl.string(o.t["5CNt/P"])
+    label: Chunk388032.intl.string(Chunk388032.t["5CNt/P"])
   }, {
     value: 6,
-    label: o.intl.string(o.t.oQ4PND)
+    label: Chunk388032.intl.string(Chunk388032.t.oQ4PND)
   }, {
     value: 12,
-    label: o.intl.string(o.t.LOQ0j4)
+    label: Chunk388032.intl.string(Chunk388032.t.LOQ0j4)
   }, {
     value: 24,
-    label: o.intl.string(o.t["W0+Lsb"])
+    label: Chunk388032.intl.string(Chunk388032.t["W0+Lsb"])
   }],
-  c = r.$e(i.Pl.ADMINISTRATOR, i.Pl.MANAGE_GUILD, i.Pl.BAN_MEMBERS, i.Pl.KICK_MEMBERS, i.Pl.MODERATE_MEMBERS)
+  c = Chunk149765.$e(Chunk231338.Pl.ADMINISTRATOR, Chunk231338.Pl.MANAGE_GUILD, Chunk231338.Pl.BAN_MEMBERS, Chunk231338.Pl.KICK_MEMBERS, Chunk231338.Pl.MODERATE_MEMBERS)

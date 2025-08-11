@@ -1,5 +1,6 @@
 /** Chunk was on 12097 **/
-e.exports = {
+/** chunk id: 54433, original params: e,t,n (module,exports,require) **/
+module.exports = {
   auditLogItem: "auditLogItem_b2f52f",
   auditLogItemTitleContainer: "auditLogItemTitleContainer_b2f52f",
   auditLogItemTitle: "auditLogItemTitle_b2f52f",

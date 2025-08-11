@@ -1,9 +1,10 @@
 /** Chunk was on web.js **/
+/** chunk id: 525220, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Y: () => i
 });
-var r = n(73800);
+var Chunk73800 = require("./73800.js");
 
 function i(e) {
   return null == e || "string" == typeof e || "number" == typeof e || "boolean" == typeof e || r.isValidElement(e)

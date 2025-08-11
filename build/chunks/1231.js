@@ -1,10 +1,11 @@
 /** Chunk was on web.js **/
+/** chunk id: 1231, original params: e (module,exports,re quire) **/
 "use strict";
 
 function t(e, t) {
   return !!t && (e === t.documentElement || e === t.body)
 }
-e.exports = {
+module.exports = {
   getTop: function(e) {
     var n = e.ownerDocument;
     return t(e, n) ? n.body.scrollTop || n.documentElement.scrollTop : e.scrollTop

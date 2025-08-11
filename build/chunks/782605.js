@@ -1,20 +1,21 @@
 /** Chunk was on web.js **/
+/** chunk id: 782605, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   O: () => c,
   l: () => l
 });
-var r = n(594174),
-  i = n(63063),
-  o = n(74538),
-  a = n(981631),
-  s = n(388032);
+var Chunk594174 = require("./594174.js"),
+  Chunk63063 = require("./63063.js"),
+  Chunk74538 = require("./74538.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk388032 = require("./388032.jsx");
 
 function l(e) {
   switch (e) {
     case a.evJ.TOO_MANY_USER_GUILDS:
       let t = r.default.getCurrentUser(),
-        n = o.ZP.canUseIncreasedGuildCap(t) || (null == t ? void 0 : t.isStaff()) ? a.tHP : a.DZw;
+        n = o.ZP.canUseIncreasedGuildCap(t) || (null == t ? true : t.isStaff()) ? a.tHP : a.DZw;
       return {
         title: s.intl.formatToPlainString(s.t["ttJ/ho"], {
           quantity: n

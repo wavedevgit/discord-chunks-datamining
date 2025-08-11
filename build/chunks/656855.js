@@ -1,5 +1,6 @@
 /** Chunk was on 34779 **/
-e.exports = {
+/** chunk id: 656855, original params: e,t,n (module,exports,require) **/
+module.exports = {
   wrapper: "wrapper__260e1",
   total: "total__260e1",
   users: "users__260e1",

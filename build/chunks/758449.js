@@ -1,18 +1,19 @@
 /** Chunk was on web.js **/
+/** chunk id: 758449, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => u
-}), n(997841);
-var r = n(913527),
-  i = n.n(r),
-  o = n(81825);
+}), require("./997841.js");
+var Chunk913527 = require("./913527.js"),
+  i = require.n(Chunk913527),
+  Chunk81825 = require("./81825.js");
 
 function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -45,13 +46,13 @@ function c(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-class u extends o.Z {
+class u extends Chunk81825.Z {
   static createFromServer(e) {
     var t;
     return new u(c(s({}, e), {
       maxUses: e.max_uses,
       maxAge: e.max_age,
-      createdAt: i()(null != (t = e.created_at) ? t : void 0),
+      createdAt: i()(null != (t = e.created_at) ? t : true),
       targetType: e.target_type,
       targetUser: e.target_user,
       targetApplication: e.target_application
@@ -59,7 +60,7 @@ class u extends o.Z {
   }
   isExpired() {
     let e = this.maxAge;
-    return !!(e > 0 && i()(this.createdAt).add(e, "seconds").isBefore(Date.now())) || !1
+    return !!(module > 0 && i()(this.createdAt).add(module, "seconds").isBefore(Date.now())) || false
   }
   getExpiresAt() {
     return this.maxAge > 0 ? i()(this.createdAt).add(this.maxAge, "seconds").toDate() : 1 / 0
@@ -68,6 +69,6 @@ class u extends o.Z {
     return this.code
   }
   constructor(e) {
-    super(), a(this, "code", void 0), a(this, "temporary", void 0), a(this, "revoked", void 0), a(this, "uses", void 0), a(this, "maxUses", void 0), a(this, "maxAge", void 0), a(this, "createdAt", void 0), a(this, "channel", void 0), a(this, "guild", void 0), a(this, "inviter", void 0), a(this, "targetType", void 0), a(this, "targetUser", void 0), a(this, "targetApplication", void 0), a(this, "type", void 0), a(this, "flags", void 0), this.code = e.code || "", this.temporary = e.temporary || !1, this.revoked = e.revoked || !1, this.uses = e.uses || 0, this.maxUses = e.maxUses || 0, this.maxAge = e.maxAge || 0, this.createdAt = e.createdAt || new Date, this.channel = e.channel, this.guild = e.guild, this.inviter = e.inviter || null, this.targetType = e.targetType || null, this.targetUser = e.targetUser || null, this.targetApplication = e.targetApplication || null, this.type = e.type || null, this.flags = e.flags || 0
+    super(), a(this, "code", true), a(this, "temporary", true), a(this, "revoked", true), a(this, "uses", true), a(this, "maxUses", true), a(this, "maxAge", true), a(this, "createdAt", true), a(this, "channel", true), a(this, "guild", true), a(this, "inviter", true), a(this, "targetType", true), a(this, "targetUser", true), a(this, "targetApplication", true), a(this, "type", true), a(this, "flags", true), this.code = e.code || "", this.temporary = e.temporary || false, this.revoked = e.revoked || false, this.uses = e.uses || 0, this.maxUses = e.maxUses || 0, this.maxAge = e.maxAge || 0, this.createdAt = e.createdAt || new Date, this.channel = e.channel, this.guild = e.guild, this.inviter = e.inviter || null, this.targetType = e.targetType || null, this.targetUser = e.targetUser || null, this.targetApplication = e.targetApplication || null, this.type = e.type || null, this.flags = e.flags || 0
   }
 }

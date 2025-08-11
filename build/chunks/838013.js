@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 838013, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   singleItemWrapper: "singleItemWrapper_ed6d69",
   carousel: "carousel_ed6d69",
   item: "item_ed6d69",

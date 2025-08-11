@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 621600, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   $R: () => b,
   GA: () => T,
   I: () => A,
@@ -11,25 +12,25 @@ n.d(t, {
   rU: () => S,
   sK: () => v,
   wK: () => N
-}), n(997841), n(388685);
-var r = n(367907),
-  i = n(601992),
-  o = n(592125),
-  a = n(375954),
-  s = n(9156);
-n(626135);
-var l = n(630388),
-  c = n(981631),
-  u = n(468788),
-  d = n(490897),
-  f = n(526761);
+}), require("./997841.js"), require("./388685.js");
+var Chunk367907 = require("./367907.js"),
+  Chunk601992 = require("./601992.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk375954 = require("./375954.js"),
+  Chunk9156 = require("./9156.js");
+require("./626135.js");
+var Chunk630388 = require("./630388.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk468788 = require("./468788.js"),
+  Chunk490897 = require("./490897.js"),
+  Chunk526761 = require("./526761.js");
 
 function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -79,17 +80,17 @@ let E = {
     notifications: e => e === c.bL.ALL_MESSAGES ? "notifications set to all messages" : e === c.bL.ONLY_MENTIONS ? "notifications set to mentions" : e === c.bL.NO_MESSAGES ? "notifications set to nothing" : "notifications set to the default"
   },
   b = Object.freeze({
-    [c.bL.ALL_MESSAGES]: "All",
-    [c.bL.ONLY_MENTIONS]: "Mentions",
-    [c.bL.NO_MESSAGES]: "Nothing",
-    [c.bL.NULL]: null
+    [Chunk981631.bL.ALL_MESSAGES]: "All",
+    [Chunk981631.bL.ONLY_MENTIONS]: "Mentions",
+    [Chunk981631.bL.NO_MESSAGES]: "Nothing",
+    [Chunk981631.bL.NULL]: null
   });
 
 function y(e, t, n, o, a) {
   var s, d;
   let _ = function(e) {
       var t, n, r, i, o, a, s;
-      let l = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {},
+      let l = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {},
         c = null != l.mute_config && null != l.mute_config.end_time ? new Date(l.mute_config.end_time).getTime() : e.guild_muted_until,
         u = null != l.message_notifications ? b[l.message_notifications] : e.guild_message_notification_settings;
       return {
@@ -129,7 +130,7 @@ function y(e, t, n, o, a) {
 
 function O(e, t, n) {
   return r => {
-    if ("RETURN_PREVIOUS_WHEN_CHANGED" === n) return e[r] !== t[r] ? e[r] : void 0
+    if ("RETURN_PREVIOUS_WHEN_CHANGED" === n) return e[r] !== t[r] ? e[r] : true
   }
 }
 
@@ -150,18 +151,18 @@ function I(e) {
     location: S
   } = e, N = function(e) {
     var t, n;
-    let r = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {},
-      i = null != (t = r.muted) ? t : null == e ? void 0 : e.channel_is_muted,
-      o = null != r.message_notifications ? b[r.message_notifications] : null == e ? void 0 : e.channel_message_notification_settings,
-      a = null == h ? null : !0 === i || null != o;
+    let r = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {},
+      i = null != (t = r.muted) ? t : null == e ? true : e.channel_is_muted,
+      o = null != r.message_notifications ? b[r.message_notifications] : null == e ? true : e.channel_message_notification_settings,
+      a = null == h ? null : true === i || null != o;
     return {
       channel_is_muted: i,
       channel_is_overridden: a,
-      channel_flags: null != (n = r.flags) ? n : null == e ? void 0 : e.channel_flags,
+      channel_flags: null != (n = r.flags) ? n : null == e ? true : e.channel_flags,
       channel_message_notification_settings: o,
       channel_muted_until: v(r.mute_config)
     }
-  }, C = N(I), R = N(A(h, g), y), P = O(C, R, "RETURN_PREVIOUS_WHEN_CHANGED"), w = o.Z.getChannel(g), D = null != (n = P("channel_flags")) ? n : 0, L = (null != (s = R.channel_flags) ? s : 0) ^ D, x = 0 === (0, l.M1)(L, f.ic.FAVORITED, f.ic.OPT_IN_ENABLED), M = null != (d = null == (t = a.Z.getLastMessage(g)) ? void 0 : t.type) ? d : null;
+  }, C = N(I), R = N(A(h, g), y), P = O(C, R, "RETURN_PREVIOUS_WHEN_CHANGED"), w = o.Z.getChannel(g), D = null != (n = P("channel_flags")) ? n : 0, L = (null != (s = R.channel_flags) ? s : 0) ^ D, x = 0 === (0, l.M1)(L, f.ic.FAVORITED, f.ic.OPT_IN_ENABLED), M = null != (d = null == (t = a.Z.getLastMessage(g)) ? true : t.type) ? d : null;
   r.ZP.trackWithMetadata(c.rMx.NOTIFICATION_SETTINGS_UPDATED, m(p({}, R, i.Z.getStats(h)), {
     location: S,
     guild_id: h,

@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 212605, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => r
 });
 let r = {
@@ -9,6 +10,6 @@ let r = {
   sm: 18,
   md: 24,
   lg: 32,
-  custom: void 0,
+  custom: true,
   refresh_sm: 20
 }

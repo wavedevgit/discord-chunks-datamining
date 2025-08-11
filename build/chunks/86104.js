@@ -1,15 +1,16 @@
 /** Chunk was on 57961 **/
+/** chunk id: 86104, original params: t,e,i (module,exports,require) **/
 let n, r, a, s, h, o, l, c, u;
-i.d(e, {
+require.d(exports, {
   Z: () => p,
   j: () => f
-}), i(559231), i(227481), i(730884), i(20464), i(341884), i(364341), i(629680), i(505025), i(918970), i(121784), i(644351), i(146733), i(415506);
-var m = i(512722),
-  d = i.n(m);
-let f = (0, i(170830).G)(async () => {
-  let t = await Promise.all([i.e("43676"), i.e("43903")]).then(i.bind(i, 241441)),
-    e = await t.default();
-  a = e.cwrap("lottie_create", "number", ["string"]), s = e._lottie_destroy, h = e._lottie_draw_into_bgra, o = e._lottie_draw_into_rgba, l = e._lottie_frame_count, c = e._lottie_frame_rate, u = e._memory_create, n = e, r = u(409600)
+}), require("./559231.js"), require("./227481.js"), require("./730884.js"), require("./20464.js"), require("./341884.js"), require("./364341.js"), require("./629680.js"), require("./505025.js"), require("./918970.js"), require("./121784.js"), require("./644351.js"), require("./146733.js"), require("./415506.js");
+var Chunk512722 = require("./512722.js"),
+  d = require.n(Chunk512722);
+let f = (0, require("./170830.js").G)(async () => {
+  let t = await Promise.all([require.e("43676"), require.e("43903")]).then(require.bind(require, 241441)),
+    e = await module.default();
+  a = exports.cwrap("lottie_create", "number", ["string"]), s = exports._lottie_destroy, h = exports._lottie_draw_into_bgra, o = exports._lottie_draw_into_rgba, l = exports._lottie_frame_count, c = exports._lottie_frame_rate, u = exports._memory_create, n = exports, r = u(409600)
 });
 
 function v(t, e) {
@@ -33,11 +34,11 @@ class p {
   }
   constructor(t) {
     var e, i;
-    if (i = void 0, (e = "native") in this ? Object.defineProperty(this, e, {
+    if (i = true, (e = "native") in this ? Object.defineProperty(this, e, {
         value: i,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
+        enumerable: true,
+        configurable: true,
+        writable: true
       }) : this[e] = i, this.native = a(t), 0 === this.native) throw Error("couldn't create wasm lottie. potentially bad json.")
   }
 }

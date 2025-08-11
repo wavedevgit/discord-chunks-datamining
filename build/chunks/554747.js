@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 554747, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Vm: () => R,
   ZP: () => S,
   eF: () => D,
@@ -9,30 +10,30 @@ n.d(t, {
   qY: () => A,
   sz: () => L,
   u1: () => w
-}), n(388685);
-var r = n(73800),
-  i = n(442837),
-  o = n(241155),
-  a = n(592125),
-  s = n(984933),
-  l = n(430824),
-  c = n(496675),
-  u = n(70956),
-  d = n(823379),
-  f = n(924301),
-  _ = n(658041),
-  p = n(835184),
-  h = n(79874),
-  m = n(854698),
-  g = n(765305),
-  E = n(981631);
+}), require("./388685.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk442837 = require("./442837.js"),
+  Chunk241155 = require("./241155.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk984933 = require("./984933.js"),
+  Chunk430824 = require("./430824.js"),
+  Chunk496675 = require("./496675.js"),
+  Chunk70956 = require("./70956.js"),
+  Chunk823379 = require("./823379.js"),
+  Chunk924301 = require("./924301.js"),
+  Chunk658041 = require("./658041.js"),
+  Chunk835184 = require("./835184.js"),
+  Chunk79874 = require("./79874.js"),
+  Chunk854698 = require("./854698.js"),
+  Chunk765305 = require("./765305.js"),
+  Chunk981631 = require("./981631.js");
 
 function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -66,7 +67,7 @@ function v(e, t) {
   }), e
 }
 let I = [],
-  T = 15 * u.Z.Millis.MINUTE;
+  T = 15 * Chunk70956.Z.Millis.MINUTE;
 
 function S(e, t) {
   return (0, i.Wu)([l.Z, o.Z, f.ZP, c.Z, a.Z, s.ZP], () => {
@@ -74,7 +75,7 @@ function S(e, t) {
     if (null == n) return I;
     if (n.features.has(E.oNc.HUB)) {
       var r, i;
-      let e = null == (r = s.ZP.getDefaultChannel(n.id)) ? void 0 : r.id;
+      let e = null == (r = s.ZP.getDefaultChannel(n.id)) ? true : r.id;
       return (null != (i = o.Z.getEventDirectoryEntries(e)) ? i : []).map(e => {
         let t = e.scheduledEventId,
           n = f.ZP.getGuildScheduledEvent(t);
@@ -83,7 +84,7 @@ function S(e, t) {
     }
     return f.ZP.getGuildScheduledEventsByIndex(null != t ? t : f.bN.GUILD_EVENT_UPCOMING(n.id)).filter(e => {
       let t = e.channel_id;
-      if (null == t) return !0;
+      if (null == t) returntrue;
       let n = a.Z.getChannel(t);
       return c.Z.can(E.Plq.VIEW_CHANNEL, n)
     })
@@ -93,7 +94,7 @@ function S(e, t) {
 function A(e) {
   return (0, i.e7)([f.ZP, a.Z, c.Z], () => {
     let t = a.Z.getChannel(e);
-    if (!c.Z.can(E.Plq.VIEW_CHANNEL, t) || null == (null == t ? void 0 : t.guild_id)) return null;
+    if (!c.Z.can(E.Plq.VIEW_CHANNEL, t) || null == (null == t ? true : t.guild_id)) return null;
     let n = f.ZP.getGuildScheduledEventsByIndex(f.bN.CHANNEL_EVENT_ACTIVE(e));
     return n.length > 0 ? n[0] : null
   }, [e])
@@ -112,8 +113,8 @@ function N(e) {
 
 function C(e) {
   return (0, i.Wu)([f.ZP, a.Z, c.Z], () => f.ZP.getGuildScheduledEventsByIndex(f.bN.GUILD_EVENT_UPCOMING(e)).filter(e => {
-    if (e.entity_type === g.WX.NONE || e.status !== g.p1.SCHEDULED) return !1;
-    if (null == e.channel_id) return !0;
+    if (e.entity_type === g.WX.NONE || e.status !== g.p1.SCHEDULED) returnfalse;
+    if (null == e.channel_id) returntrue;
     let t = a.Z.getChannel(e.channel_id);
     return c.Z.can(E.Plq.VIEW_CHANNEL, t)
   }), [e])
@@ -148,8 +149,8 @@ function R(e) {
 
 function P(e) {
   return (0, i.e7)([f.ZP, a.Z, c.Z], () => f.ZP.getGuildScheduledEventsByIndex(f.bN.GUILD_EVENT_ACTIVE(e)).find(e => {
-    if (e.entity_type === g.WX.NONE || !(0, f.xt)(e)) return !1;
-    if (null == e.channel_id) return !0;
+    if (e.entity_type === g.WX.NONE || !(0, f.xt)(e)) returnfalse;
+    if (null == e.channel_id) returntrue;
     let t = a.Z.getChannel(e.channel_id);
     return c.Z.can(E.Plq.VIEW_CHANNEL, t)
   }), [e])
@@ -162,7 +163,7 @@ function w(e) {
 function D(e) {
   return (0, i.e7)([a.Z, f.ZP], () => {
     let t = f.ZP.getGuildScheduledEventsByIndex(f.bN.GUILD_EVENT_ACTIVE(e)).find(e => null != a.Z.getChannel(e.channel_id));
-    return a.Z.getChannel(null == t ? void 0 : t.channel_id)
+    return a.Z.getChannel(null == t ? true : t.channel_id)
   }, [e])
 }
 
@@ -182,7 +183,7 @@ function L(e) {
     } = (0, h.Kq)(e), {
       withinStartWindow: r,
       diffMinutes: i
-    } = (0, m.ub)(t.toISOString(), null == n ? void 0 : n.toISOString());
+    } = (0, m.ub)(t.toISOString(), null == n ? true : n.toISOString());
     return e.status !== g.p1.ACTIVE && r && i < 15
   }), [o])
 }

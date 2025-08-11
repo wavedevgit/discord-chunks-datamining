@@ -1,19 +1,20 @@
 /** Chunk was on web.js **/
+/** chunk id: 519554, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   b: () => c
-}), n(388685);
-var r = n(73800),
-  i = n(126663),
-  o = n(481060),
-  a = n(717495);
+}), require("./388685.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk126663 = require("./126663.js"),
+  Chunk481060 = require("./481060.js"),
+  Chunk717495 = require("./717495.js");
 
 function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -31,8 +32,8 @@ function l(e) {
 }
 
 function c(e, t) {
-  let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : "respect-motion-settings",
-    s = arguments.length > 3 ? arguments[3] : void 0,
+  let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : "respect-motion-settings",
+    s = arguments.length > 3 ? arguments[3] : true,
     c = r.useContext(o.Sfi).reducedMotion.enabled,
     u = t;
   "animate-always" !== n && ("respect-motion-settings" !== n || c) && (u = "function" == typeof t ? (e, n) => l({}, t(e, n), a.F) : t.map(e => l({}, e, a.F)));

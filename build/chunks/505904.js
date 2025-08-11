@@ -1,9 +1,10 @@
 /** Chunk was on web.js **/
+/** chunk id: 505904, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-var r = n(621796),
-  i = n(172367),
-  o = n(668370),
-  a = n(467159),
+var Chunk621796 = require("./621796.js"),
+  Chunk172367 = require("./172367.js"),
+  Chunk668370 = require("./668370.js"),
+  Chunk467159 = require("./467159.js"),
   s = {
     currentBlockContainsLink: function(e) {
       var t = e.getSelection(),
@@ -94,7 +95,7 @@ var r = n(621796),
       e.preventDefault();
       var u = l.getDepth();
       if (!e.shiftKey && u === n) return t;
-      var d = o(s, r, e.shiftKey ? -1 : 1, n);
+      var d = o(s, r, e.shiftKey ? false : 1, n);
       return i.push(t, d, "adjust-depth")
     },
     toggleBlockType: function(e, t) {
@@ -110,7 +111,7 @@ var r = n(621796),
           anchorOffset: n.getStartOffset(),
           focusKey: s,
           focusOffset: u.getLength(),
-          isBackward: !1
+          isBackward: false
         })
       }
       if (l.getBlockMap().skipWhile(function(e, t) {
@@ -154,4 +155,4 @@ var r = n(621796),
       return null
     }
   };
-e.exports = s
+module.exports = s

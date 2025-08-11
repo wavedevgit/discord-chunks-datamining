@@ -1,21 +1,22 @@
 /** Chunk was on web.js **/
+/** chunk id: 982439, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   q: () => d
 });
-var r = n(569545),
-  i = n(199902),
-  o = n(858340),
-  a = n(458725),
-  s = n(442741),
-  l = n(981631);
+var Chunk569545 = require("./569545.js"),
+  Chunk199902 = require("./199902.js"),
+  Chunk858340 = require("./858340.js"),
+  Chunk458725 = require("./458725.js"),
+  Chunk442741 = require("./442741.js"),
+  Chunk981631 = require("./981631.js");
 
 function c(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -33,10 +34,10 @@ function u(e) {
 }
 let d = {
   getActiveErrors: () => {
-    let e = i.Z.getCurrentUserActiveStream();
-    return null != e && null != o.Z.getHookError(l.K3D.SOUND) ? [u({
-      type: a.u.STREAM_SOUNDSHARE_FAILED
-    }, (0, s.rT)((0, r.V9)(e)))] : void 0
+    let e = Chunk199902.Z.getCurrentUserActiveStream();
+    return null != module && null != Chunk858340.Z.getHookError(Chunk981631.K3D.SOUND) ? [u({
+      type: Chunk458725.u.STREAM_SOUNDSHARE_FAILED
+    }, (0, Chunk442741.rT)((0, Chunk569545.V9)(module)))] : true
   },
   makeErrorContextKey: e => "".concat(e.streamKey, ":").concat(e.mediaSessionId)
 }

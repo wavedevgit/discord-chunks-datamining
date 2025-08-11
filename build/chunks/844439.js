@@ -1,18 +1,19 @@
 /** Chunk was on web.js **/
+/** chunk id: 844439, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   M: () => d,
   ZP: () => O
 });
-var r, i = n(442837),
-  o = n(570140);
+var r, Chunk442837 = require("./442837.js"),
+  Chunk570140 = require("./570140.js");
 
 function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -114,7 +115,7 @@ function E(e) {
   })
 }
 let b = Object.freeze([]);
-class y extends(r = i.ZP.Store) {
+class y extends(r = Chunk442837.ZP.Store) {
   getLastFetchTimeMs(e) {
     let {
       location: t,
@@ -153,8 +154,8 @@ class y extends(r = i.ZP.Store) {
     })]) ? t : b
   }
 }
-a(y, "displayName", void 0);
-let O = new y(o.Z, {
+a(y, "displayName", true);
+let O = new y(Chunk570140.Z, {
   APP_RECOMMENDATIONS_FETCH_RECOMMENDATIONS: m,
   APP_RECOMMENDATIONS_FETCH_RECOMMENDATIONS_SUCCESS: g,
   APP_RECOMMENDATIONS_FETCH_RECOMMENDATIONS_FAILURE: E

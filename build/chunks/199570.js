@@ -1,5 +1,6 @@
 /** Chunk was on 49152 **/
-e.exports = {
+/** chunk id: 199570, original params: e,t,n (module,exports,require) **/
+module.exports = {
   iframe: "iframe__49094",
   wrapper: "wrapper__49094",
   resizable: "resizable__49094",

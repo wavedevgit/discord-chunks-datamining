@@ -1,7 +1,8 @@
 /** Chunk was on web.js **/
-var r = n(423845),
+/** chunk id: 117806, original params: e,t,n (module,exports,re quire) **/
+var Chunk423845 = require("./423845.js"),
   i = 1,
   o = 4;
-e.exports = function(e) {
+module.exports = function(e) {
   return r(e, i | o)
 }

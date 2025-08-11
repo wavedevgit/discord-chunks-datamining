@@ -1,32 +1,33 @@
 /** Chunk was on web.js **/
+/** chunk id: 149770, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => p
-}), n(388685);
-var r = n(570140),
-  i = n(287734),
-  o = n(147913),
-  a = n(703656),
-  s = n(769654),
-  l = n(131951),
-  c = n(944486),
-  u = n(914010),
-  d = n(981631);
+}), require("./388685.js");
+var Chunk570140 = require("./570140.js"),
+  Chunk287734 = require("./287734.js"),
+  Chunk147913 = require("./147913.js"),
+  Chunk703656 = require("./703656.js"),
+  Chunk769654 = require("./769654.js"),
+  Chunk131951 = require("./131951.js"),
+  Chunk944486 = require("./944486.js"),
+  Chunk914010 = require("./914010.js"),
+  Chunk981631 = require("./981631.js");
 
 function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
-class _ extends o.Z {
+class _ extends Chunk147913.Z {
   handleGuildCreate(e) {
     let {
       guild: t
     } = e, n = c.Z.getChannelId(d.ME), r = c.Z.getVoiceChannelId();
-    t.id === n && (0, s.X)(t.id), t.id === r && !1 !== t.unavailable && null == r && i.default.selectVoiceChannel((0, c.C)(t.id))
+    t.id === n && (0, s.X)(t.id), t.id === r && false !== t.unavailable && null == r && i.default.selectVoiceChannel((0, c.C)(t.id))
   }
   handleChannelCreate(e) {
     let {
@@ -38,11 +39,11 @@ class _ extends o.Z {
     null == u.Z.getGuildId() && null != n && n === r && (0, a.uL)(d.Z5c.CHANNEL(d.ME, t.id)), null != n && n === c.Z.getVoiceChannelId() && i.default.selectVoiceChannel(t.id, l.Z.isVideoEnabled())
   }
   handleLogout() {
-    r.Z.dispatch({
+    Chunk570140.Z.dispatch({
       type: "VOICE_CHANNEL_SELECT",
       channelId: null,
       guildId: null,
-      video: !1,
+      video: false,
       currentVoiceChannelId: null
     })
   }

@@ -1,22 +1,23 @@
 /** Chunk was on web.js **/
+/** chunk id: 585483, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   S: () => s,
   b: () => a
-}), n(388685), n(539854);
-var r = n(836560);
-n(17089);
-var i = n(710845);
+}), require("./388685.js"), require("./539854.js");
+var Chunk836560 = require("./836560.js");
+require("./17089.js");
+var Chunk710845 = require("./710845.js");
 
 function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
-n(981631);
+require("./981631.js");
 class a {
   safeDispatch(e) {
     for (var t, n = arguments.length, r = Array(n > 1 ? n - 1 : 0), i = 1; i < n; i++) r[i - 1] = arguments[i];
@@ -43,7 +44,7 @@ class a {
     let t = this._savedDispatches[e];
     null != t && (t.forEach(t => {
       this.dispatch(e, t)
-    }), this._savedDispatches[e] = void 0)
+    }), this._savedDispatches[e] = true)
   }
   subscribe(e, t) {
     return this.emitter.listeners(e).indexOf(t) >= 0 ? new i.Z("ComponentDispatchUtils").warn("ComponentDispatch.subscribe: Attempting to add a duplicate listener", e) : (this.emitter.on(e, t), this._checkSavedDispatches(e)), this
@@ -72,7 +73,7 @@ class a {
     return this.unsubscribe("".concat(e, "_").concat(t), n)
   }
   constructor() {
-    o(this, "emitter", new r.EventEmitter), o(this, "_savedDispatches", {}), this.emitter.setMaxListeners(100)
+    o(this, "emitter", new Chunk836560.EventEmitter), o(this, "_savedDispatches", {}), this.emitter.setMaxListeners(100)
   }
 }
 let s = new a

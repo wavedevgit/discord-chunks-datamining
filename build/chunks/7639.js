@@ -1,5 +1,6 @@
 /** Chunk was on web.js **/
-e.exports = function(e) {
+/** chunk id: 7639, original params: e (module,exports,re quire) **/
+module.exports = function(e) {
   let t = e.regex,
     n = ["false", "synchronized", "int", "abstract", "float", "private", "char", "boolean", "static", "null", "if", "const", "for", "true", "while", "long", "throw", "strictfp", "finally", "protected", "import", "native", "final", "return", "void", "enum", "else", "extends", "implements", "break", "transient", "new", "catch", "instanceof", "byte", "super", "volatile", "case", "assert", "short", "package", "default", "double", "public", "try", "this", "switch", "continue", "throws", "privileged", "aspectOf", "adviceexecution", "proceed", "cflowbelow", "cflow", "initialization", "preinitialization", "staticinitialization", "withincode", "target", "within", "execution", "getWithinTypeName", "handler", "thisJoinPoint", "thisJoinPointStaticPart", "thisEnclosingJoinPointStaticPart", "declare", "parents", "warning", "error", "soft", "precedence", "thisAspectInstance"],
     r = ["get", "set", "args", "call"];
@@ -20,7 +21,7 @@ e.exports = function(e) {
       className: "class",
       beginKeywords: "aspect",
       end: /[{;=]/,
-      excludeEnd: !0,
+      excludeEnd: true,
       illegal: /[:;"\[\]]/,
       contains: [{
         beginKeywords: "extends implements pertypewithin perthis pertarget percflowbelow percflow issingleton"
@@ -28,13 +29,13 @@ e.exports = function(e) {
         begin: /\([^\)]*/,
         end: /[)]+/,
         keywords: n.concat(r),
-        excludeEnd: !1
+        excludeEnd: false
       }]
     }, {
       className: "class",
       beginKeywords: "class interface",
       end: /[{;=]/,
-      excludeEnd: !0,
+      excludeEnd: true,
       relevance: 0,
       keywords: "class interface",
       illegal: /[:"\[\]]/,
@@ -44,19 +45,19 @@ e.exports = function(e) {
     }, {
       beginKeywords: "pointcut after before around throwing returning",
       end: /[)]/,
-      excludeEnd: !1,
+      excludeEnd: false,
       illegal: /["\[\]]/,
       contains: [{
         begin: t.concat(e.UNDERSCORE_IDENT_RE, /\s*\(/),
-        returnBegin: !0,
+        returnBegin: true,
         contains: [e.UNDERSCORE_TITLE_MODE]
       }]
     }, {
       begin: /[:]/,
-      returnBegin: !0,
+      returnBegin: true,
       end: /[{;]/,
       relevance: 0,
-      excludeEnd: !1,
+      excludeEnd: false,
       keywords: n,
       illegal: /["\[\]]/,
       contains: [{
@@ -70,13 +71,13 @@ e.exports = function(e) {
     }, {
       className: "function",
       begin: /\w+ +\w+(\.\w+)?\s*\([^\)]*\)\s*((throws)[\w\s,]+)?[\{;]/,
-      returnBegin: !0,
+      returnBegin: true,
       end: /[{;=]/,
       keywords: n,
-      excludeEnd: !0,
+      excludeEnd: true,
       contains: [{
         begin: t.concat(e.UNDERSCORE_IDENT_RE, /\s*\(/),
-        returnBegin: !0,
+        returnBegin: true,
         relevance: 0,
         contains: [e.UNDERSCORE_TITLE_MODE]
       }, {

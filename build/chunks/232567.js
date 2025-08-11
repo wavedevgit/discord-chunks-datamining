@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 232567, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   $k: () => b,
   In: () => y,
   Lr: () => m,
@@ -8,54 +9,54 @@ n.d(t, {
   Sr: () => O,
   k: () => h,
   mB: () => g
-}), n(997841);
-var r = n(512722),
-  i = n.n(r),
-  o = n(525769),
-  a = n(544891),
-  s = n(570140),
-  l = n(881052),
-  c = n(710845),
-  u = n(598077),
-  d = n(594174),
-  f = n(573261),
-  _ = n(981631);
-let p = new c.Z("UserProfileModalActionCreators");
+}), require("./997841.js");
+var Chunk512722 = require("./512722.js"),
+  i = require.n(Chunk512722),
+  Chunk525769 = require("./525769.js"),
+  Chunk544891 = require("./544891.js"),
+  Chunk570140 = require("./570140.js"),
+  Chunk881052 = require("./881052.js"),
+  Chunk710845 = require("./710845.js"),
+  Chunk598077 = require("./598077.js"),
+  Chunk594174 = require("./594174.js"),
+  Chunk573261 = require("./573261.js"),
+  Chunk981631 = require("./981631.js");
+let p = new Chunk710845.Z("UserProfileModalActionCreators");
 
 function h() {
-  let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {},
+  let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {},
     {
-      withAnalyticsToken: t = !1
-    } = e;
-  return a.tn.get({
-    url: _.ANM.ME,
+      withAnalyticsToken: t = false
+    } = module;
+  return Chunk544891.tn.get({
+    url: Chunk981631.ANM.ME,
     query: {
-      with_analytics_token: t
+      with_analytics_token: exports
     },
-    oldFormErrors: !0,
-    rejectWithError: !1
+    oldFormErrors: true,
+    rejectWithError: false
   }).then(e => (s.Z.dispatch({
     type: "CURRENT_USER_UPDATE",
     user: e.body,
-    analyticsToken: t ? e.body.analytics_token : void 0
+    analyticsToken: t ? e.body.analytics_token : true
   }), new u.Z(e.body)))
 }
 
 function m() {
-  let e = !(arguments.length > 0) || void 0 === arguments[0] || arguments[0],
-    t = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1];
-  return f.Z.patch({
-    url: _.ANM.USER_AGREEMENTS,
+  let e = !(arguments.length > 0) || true === arguments[0] || arguments[0],
+    t = !(arguments.length > 1) || true === arguments[1] || arguments[1];
+  return Chunk573261.Z.patch({
+    url: Chunk981631.ANM.USER_AGREEMENTS,
     trackedActionData: {
-      event: o.a.USER_ACCEPT_AGREEMENTS
+      event: Chunk525769.a.USER_ACCEPT_AGREEMENTS
     },
     body: {
-      terms: e,
-      privacy: t
+      terms: module,
+      privacy: exports
     },
-    oldFormErrors: !0,
-    rejectWithError: !1
-  }).then(() => !0, () => !1)
+    oldFormErrors: true,
+    rejectWithError: false
+  }).then(() => true, () => false)
 }
 
 function g(e, t) {
@@ -64,11 +65,11 @@ function g(e, t) {
   let r = t ? n.flags | e : n.flags & ~e;
   return a.tn.patch({
     url: _.ANM.ME,
-    oldFormErrors: !0,
+    oldFormErrors: true,
     body: {
       flags: r
     },
-    rejectWithError: !1
+    rejectWithError: false
   })
 }
 
@@ -76,8 +77,8 @@ function E(e) {
   let t = d.default.getUser(e);
   return null != t ? Promise.resolve(t) : a.tn.get({
     url: _.ANM.USER(e),
-    oldFormErrors: !0,
-    rejectWithError: !1
+    oldFormErrors: true,
+    rejectWithError: false
   }).then(t => (s.Z.dispatch({
     type: "USER_UPDATE",
     user: t.body
@@ -100,7 +101,7 @@ async function y(e) {
     connectionsRoleId: c,
     joinRequestId: u,
     abortSignal: d
-  } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}, f = arguments.length > 2 ? arguments[2] : void 0, h = Date.now();
+  } = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {}, f = arguments.length > 2 ? arguments[2] : true, h = Date.now();
   s.Z.dispatch({
     type: "USER_PROFILE_FETCH_START",
     userId: e,
@@ -120,7 +121,7 @@ async function y(e) {
         join_request_id: u
       },
       signal: d,
-      rejectWithError: !0
+      rejectWithError: true
     });
     null == f || f(l.body, o), s.Z.dispatch({
       type: "USER_UPDATE",
@@ -135,7 +136,7 @@ async function y(e) {
       guildMember: l.body.guild_member
     })
   } catch (t) {
-    throw null != t && (null == t ? void 0 : t.body) != null && p.warn("fetchProfile error: ".concat(t.body.code, " - ").concat(t.body.message)), s.Z.dispatch({
+    throw null != t && (null == t ? true : t.body) != null && p.warn("fetchProfile error: ".concat(t.body.code, " - ").concat(t.body.message)), s.Z.dispatch({
       type: "USER_PROFILE_FETCH_FAILURE",
       apiError: new l.Hx(t),
       fetchStartedAt: h,
@@ -152,9 +153,9 @@ async function O(e, t) {
   try {
     let n = await a.tn.get({
       url: _.ANM.USER_RELATIONSHIPS(e),
-      oldFormErrors: !0,
+      oldFormErrors: true,
       signal: t,
-      rejectWithError: !1
+      rejectWithError: false
     });
     s.Z.dispatch({
       type: "MUTUAL_FRIENDS_FETCH_SUCCESS",
@@ -162,7 +163,7 @@ async function O(e, t) {
       mutualFriends: n.body
     })
   } catch (t) {
-    throw (null == t ? void 0 : t.body) != null && p.warn("fetchMutualFriends error: ".concat(t.body.code, " - ").concat(t.body.message)), s.Z.dispatch({
+    throw (null == t ? true : t.body) != null && p.warn("fetchMutualFriends error: ".concat(t.body.code, " - ").concat(t.body.message)), s.Z.dispatch({
       type: "MUTUAL_FRIENDS_FETCH_FAILURE",
       userId: e
     }), t

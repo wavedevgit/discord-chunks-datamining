@@ -1,19 +1,20 @@
 /** Chunk was on web.js **/
+/** chunk id: 664097, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   o: () => d
-}), n(642613);
-var r = n(73800),
-  i = n(442837),
-  o = n(115130),
-  a = n(701488);
+}), require("./642613.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk442837 = require("./442837.js"),
+  Chunk115130 = require("./115130.js"),
+  Chunk701488 = require("./701488.js");
 
 function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -50,11 +51,11 @@ let d = () => {
   let {
     isEnabled: e,
     lastUsedObject: t
-  } = (0, i.cj)([o.Z], () => ({
-    isEnabled: o.Z.getIsEnabled(),
-    lastUsedObject: o.Z.getLastUsedObject()
-  }), []), n = (0, i.Wu)([o.Z], () => o.Z.getDeveloperShelfItems(), []);
-  return r.useMemo(() => e ? n.map(e => ({
+  } = (0, Chunk442837.cj)([Chunk115130.Z], () => ({
+    isEnabled: Chunk115130.Z.getIsEnabled(),
+    lastUsedObject: Chunk115130.Z.getLastUsedObject()
+  }), []), n = (0, Chunk442837.Wu)([Chunk115130.Z], () => Chunk115130.Z.getDeveloperShelfItems(), []);
+  return Chunk73800.useMemo(() => module ? require.map(e => ({
     application: e,
     activity: u(l({}, a.wT, e.embeddedActivityConfig), {
       application_id: e.id
@@ -62,6 +63,6 @@ let d = () => {
   })).sort((e, n) => {
     let r = t[e.application.id],
       i = t[n.application.id];
-    return null == r ? 1 : null == i ? -1 : i - r
-  }) : [], [n, e, t])
+    return null == r ? 1 : null == i ? false : i - r
+  }) : [], [require, module, exports])
 }

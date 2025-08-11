@@ -1,11 +1,12 @@
 /** Chunk was on web.js **/
+/** chunk id: 664674, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => c
-}), n(388685);
-var r = n(381338),
-  i = n(99815);
-let o = new Set([i.E.LOL_MOST_PLAYED_CHAMPION_ID]);
+}), require("./388685.js");
+var Chunk381338 = require("./381338.js"),
+  Chunk99815 = require("./99815.js");
+let o = new Set([Chunk99815.E.LOL_MOST_PLAYED_CHAMPION_ID]);
 
 function a(e) {
   return e.reduce((e, t) => (e[t] = {
@@ -24,21 +25,21 @@ function s(e, t) {
     }, e), {})
   }
 }
-let l = Object.values(i.E),
+let l = Object.values(Chunk99815.E),
   c = {
     guild_id: "1266851512559210577",
     leaderboard_id: "1280436307230720000",
     interval_start: "1295808410419200000",
     interval_end: "1298345125478400000",
     guild_settings: {
-      sort_by_statistic_id: i.E.LOL_TOTAL_KILLS,
-      sort_desc: !0,
-      show_winner_crown: !0
+      sort_by_statistic_id: Chunk99815.E.LOL_TOTAL_KILLS,
+      sort_desc: true,
+      show_winner_crown: true
     },
     settings: {
-      sort_by_statistic_id: i.E.LOL_TOTAL_KILLS,
-      sort_desc: !0,
-      interval_type: r.q.WEEKLY,
+      sort_by_statistic_id: Chunk99815.E.LOL_TOTAL_KILLS,
+      sort_desc: true,
+      interval_type: Chunk381338.q.WEEKLY,
       statistics: a(l),
       application_id: "356869127241072640"
     },

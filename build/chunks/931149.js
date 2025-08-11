@@ -1,5 +1,6 @@
 /** Chunk was on 88358 **/
-t.exports = {
+/** chunk id: 931149, original params: t,e,n (module,exports,require) **/
+module.exports = {
   root: "root__11e4a",
   noScroll: "noScroll__11e4a",
   content: "content__11e4a",

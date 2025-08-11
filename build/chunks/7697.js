@@ -1,17 +1,18 @@
 /** Chunk was on 22347 **/
-n.d(e, {
+/** chunk id: 7697, original params: t,e,n (module,exports,require) **/
+require.d(exports, {
   Z: () => g
-}), n(388685);
-var l = n(73800),
-  i = n(392711),
-  r = n.n(i),
-  s = n(442837),
-  a = n(699682),
-  u = n(70956),
-  c = n(709054),
-  o = n(897285),
-  d = n(924301),
-  h = n(854698);
+}), require("./388685.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk392711 = require("./392711.js"),
+  r = require.n(Chunk392711),
+  Chunk442837 = require("./442837.js"),
+  Chunk699682 = require("./699682.js"),
+  Chunk70956 = require("./70956.js"),
+  Chunk709054 = require("./709054.js"),
+  Chunk897285 = require("./897285.js"),
+  Chunk924301 = require("./924301.js"),
+  Chunk854698 = require("./854698.js");
 
 function g(t, e, n) {
   let i = (0, s.e7)([d.ZP], () => d.ZP.getGuildScheduledEvent(t)),
@@ -27,13 +28,13 @@ function g(t, e, n) {
     o.Z.getGuildEventUserCounts(e, t, n)
   }, [t, e, m]);
   let v = l.useMemo(() => {
-    if (null == n || 0 === m.length || (null == i ? void 0 : i.scheduled_start_time) == null) return !1;
+    if (null == n || 0 === m.length || (null == i ? true : i.scheduled_start_time) == null) returnfalse;
     let t = new Date;
     t.setFullYear(t.getFullYear() + h.hn);
     let e = m[m.length - 1],
       l = (0, h.Ho)(n).after(e);
     return null != l && l <= t
-  }, [n, m, null == i ? void 0 : i.scheduled_start_time]);
+  }, [n, m, null == i ? true : i.scheduled_start_time]);
   return {
     recurrenceStartTimes: m,
     canViewMoreRecurrences: v,
@@ -41,7 +42,7 @@ function g(t, e, n) {
       if (null == n || null == i) return;
       let t = (0, h.Ho)(n),
         e = m[m.length - 1];
-      p([...m, ...(0, h.PJ)(4, t, e, !0)])
+      p([...m, ...(0, h.PJ)(4, t, e, true)])
     }
   }
 }

@@ -1,2 +1,3 @@
 /** Chunk was on web.js **/
-e.exports = Array.isArray
+/** chunk id: 290677, original params: e (module,exports,re quire) **/
+module.exports = Array.isArray

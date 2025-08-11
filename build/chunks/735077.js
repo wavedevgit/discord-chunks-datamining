@@ -1,5 +1,6 @@
 /** Chunk was on 68784 **/
-e.exports = {
+/** chunk id: 735077, original params: e,t,n (module,exports,require) **/
+module.exports = {
   content: "content_d97f89",
   questionInput: "questionInput_d97f89",
   hasError: "hasError_d97f89",

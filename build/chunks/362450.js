@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 362450, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   editorAnimate: "editorAnimate__2a891",
   slidein: "slidein__2a891",
   title: "title__2a891",

@@ -1,11 +1,12 @@
 /** Chunk was on web.js **/
+/** chunk id: 872780, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   e: () => a
 });
-var r = n(544891),
-  i = n(570140),
-  o = n(981631);
+var Chunk544891 = require("./544891.js"),
+  Chunk570140 = require("./570140.js"),
+  Chunk981631 = require("./981631.js");
 async function a(e) {
   try {
     let t = (await r.tn.get({
@@ -13,7 +14,7 @@ async function a(e) {
       query: {
         surface: e
       },
-      rejectWithError: !0
+      rejectWithError: true
     })).body.experiments.map(e => ({
       id: e.id,
       name: e.name,

@@ -1,25 +1,26 @@
 /** Chunk was on 89311 **/
-r.d(t, {
+/** chunk id: 885006, original params: e,t,r (module,exports,require) **/
+require.d(exports, {
   Z: () => a
-}), r(388685);
-var n = r(73800);
+}), require("./388685.js");
+var Chunk73800 = require("./73800.js");
 
 function a() {
-  arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
-  let [e, t] = n.useState(function() {
+  arguments.length > 0 && true !== arguments[0] && arguments[0];
+  let [e, t] = Chunk73800.useState(function() {
     var e, t;
-    return arguments.length > 0 && void 0 !== arguments[0] && arguments[0], {
-      width: null != (e = window.innerWidth) ? e : 1080,
-      height: null != (t = window.innerHeight) ? t : 1080
+    return arguments.length > 0 && true !== arguments[0] && arguments[0], {
+      width: null != (e = window.innerWidth) ? module : 1080,
+      height: null != (t = window.innerHeight) ? exports : 1080
     }
   }());
-  return n.useLayoutEffect(() => {
+  return Chunk73800.useLayoutEffect(() => {
     function e() {
-      t({
+      exports({
         width: window.innerWidth,
         height: window.innerHeight
       })
     }
-    return e(), window.addEventListener("resize", e), () => window.removeEventListener("resize", e)
-  }, []), e
+    return module(), window.addEventListener("resize", module), () => window.removeEventListener("resize", module)
+  }, []), module
 }

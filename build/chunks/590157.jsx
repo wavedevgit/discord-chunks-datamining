@@ -1,0 +1,43 @@
+/** Chunk was on 13616 **/
+/** chunk id: 590157, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
+  Z: () => g
+});
+var Chunk255367 = require("./255367.js"),
+  Chunk73800 = require("./73800.js"),
+  Chunk442837 = require("./442837.js"),
+  Chunk481060 = require("./481060.js"),
+  Chunk366598 = require("./366598.jsx"),
+  Chunk821864 = require("./821864.js"),
+  Chunk905753 = require("./905753.js"),
+  Chunk995390 = require("./995390.js"),
+  Chunk469880 = require("./469880.jsx"),
+  Chunk665578 = require("./665578.js"),
+  Chunk388032 = require("./388032.jsx"),
+  Chunk883685 = require("./883685.js");
+
+function g(e) {
+  let {
+    application: t,
+    canNavigate: n,
+    guildId: d
+  } = e, p = (0, l.e7)([c.Z], () => c.Z.isUnavailable());
+  return (r.useEffect(() => (s.I4(t.id), s.kZ), [t.id]), r.useEffect(() => {
+    s.gq(t.id, d, t.id), s.Sn(d, t.id)
+  }, [t.id, d]), p) ? null : <r.Fragment>{<a.Z icon={(0, i.jsx)(o.SsZ, {
+        size: "md",
+        color: "currentColor"
+      })} title={m.intl.string(m.t.RGoJND)} />}{<o.Text color={"text-muted"} variant={"text-sm/normal"}>{m.intl.string(m.t.sCkD3d)}</o.Text>}{<f guildId={d} applicationId={t.id} />}{<u.Z applicationIcon={t.icon} applicationName={t.name} canNavigate={n} guildId={d} />}</r.Fragment>
+}
+
+function f(e) {
+  let {
+    applicationId: t,
+    guildId: n
+  } = e, {
+    originalApplicationPermissions: r,
+    editedTargetPermissions: l,
+    selectedPermissionCount: o
+  } = (0, d.Z)(n, t);
+  return <div className={b.applicationPermissions}><p.Z applicationId={t} guildId={n} inModal={false} editedTargetPermissions={l} originalApplicationPermissions={r} selectedPermissionCount={o} /></div>
+}

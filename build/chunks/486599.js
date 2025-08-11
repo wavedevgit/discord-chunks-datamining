@@ -1,4 +1,6 @@
-/** Chunk was on web.js **/ ! function(e, t) {
+/** Chunk was on web.js **/
+/** chunk id: 486599, original params: e,t,n (module,exports,re quire) **/
+! function(e, t) {
   t(n(913527))
 }(0, function(e) {
   return e.defineLocale("sq", {
@@ -7,7 +9,7 @@
     weekdays: "E Diel_E H\xebn\xeb_E Mart\xeb_E M\xebrkur\xeb_E Enjte_E Premte_E Shtun\xeb".split("_"),
     weekdaysShort: "Die_H\xebn_Mar_M\xebr_Enj_Pre_Sht".split("_"),
     weekdaysMin: "D_H_Ma_M\xeb_E_P_Sh".split("_"),
-    weekdaysParseExact: !0,
+    weekdaysParseExact: true,
     meridiemParse: /PD|MD/,
     isPM: function(e) {
       return "M" === e.charAt(0)

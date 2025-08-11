@@ -1,7 +1,8 @@
 /** Chunk was on web.js **/
+/** chunk id: 547514, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-var r = n(751736)("iterator"),
-  i = !1;
+var r = require("./751736.js")("iterator"),
+  i = false;
 try {
   var o = 0,
     a = {
@@ -11,7 +12,7 @@ try {
         }
       },
       return: function() {
-        i = !0
+        i = true
       }
     };
   a[r] = function() {
@@ -20,20 +21,20 @@ try {
     throw 2
   })
 } catch (e) {}
-e.exports = function(e, t) {
+module.exports = function(e, t) {
   try {
-    if (!t && !i) return !1
+    if (!t && !i) returnfalse
   } catch (e) {
-    return !1
+    returnfalse
   }
-  var n = !1;
+  var n = false;
   try {
     var o = {};
     o[r] = function() {
       return {
         next: function() {
           return {
-            done: n = !0
+            done: n = true
           }
         }
       }

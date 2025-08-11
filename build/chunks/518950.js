@@ -1,24 +1,25 @@
 /** Chunk was on web.js **/
+/** chunk id: 518950, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => u
 });
-var r = n(73800),
-  i = n(442837),
-  o = n(481060),
-  a = n(1585),
-  s = n(125988),
-  l = n(594174),
-  c = n(287008);
+var Chunk73800 = require("./73800.js"),
+  Chunk442837 = require("./442837.js"),
+  Chunk481060 = require("./481060.js"),
+  Chunk1585 = require("./1585.jsx"),
+  Chunk125988 = require("./125988.js"),
+  Chunk594174 = require("./594174.js"),
+  Chunk287008 = require("./287008.js");
 
 function u(e) {
   let {
     userId: t,
     guildId: n,
     size: u,
-    showPending: d = !1,
-    showTryItOut: f = !1,
-    animateOnHover: _ = !1,
+    showPending: d = false,
+    showTryItOut: f = false,
+    animateOnHover: _ = false,
     avatarDecorationOverride: p,
     avatarOverride: h
   } = e, m = (0, i.e7)([l.default], () => l.default.getUser(t)), {
@@ -38,7 +39,7 @@ function u(e) {
     eventHandlers: v
   } = (0, s.Z)({
     user: m,
-    guildId: null != n ? n : void 0,
+    guildId: null != n ? n : true,
     size: (0, a.y9)(u),
     showPending: d,
     onlyAnimateOnHover: _,

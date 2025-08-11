@@ -1,13 +1,14 @@
 /** Chunk was on web.js **/
+/** chunk id: 388685, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-var r = n(127849),
-  i = n(259821),
-  o = n(901175),
-  a = n(366843),
-  s = n(436207),
-  l = n(25124),
-  c = n(751736)("iterator"),
-  u = a.values,
+var Chunk127849 = require("./127849.js"),
+  Chunk259821 = require("./259821.js"),
+  Chunk901175 = require("./901175.js"),
+  Chunk366843 = require("./366843.js"),
+  Chunk436207 = require("./436207.js"),
+  Chunk25124 = require("./25124.js"),
+  c = require("./751736.js")("iterator"),
+  u = Chunk366843.values,
   d = function(e, t) {
     if (e) {
       if (e[c] !== u) try {
@@ -15,7 +16,7 @@ var r = n(127849),
       } catch (t) {
         e[c] = u
       }
-      if (l(e, t, !0), i[t]) {
+      if (l(e, t, true), i[t]) {
         for (var n in a)
           if (e[n] !== a[n]) try {
             s(e, n, a[n])
@@ -25,5 +26,5 @@ var r = n(127849),
       }
     }
   };
-for (var f in i) d(r[f] && r[f].prototype, f);
-d(o, "DOMTokenList")
+for (var f in Chunk259821) d(Chunk127849[f] && Chunk127849[f].prototype, f);
+d(Chunk901175, "DOMTokenList")

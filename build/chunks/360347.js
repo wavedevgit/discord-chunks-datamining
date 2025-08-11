@@ -1,18 +1,19 @@
 /** Chunk was on web.js **/
+/** chunk id: 360347, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => l
 });
-var r = n(91896),
-  i = n(699516),
-  o = n(453542);
+var Chunk91896 = require("./91896.js"),
+  Chunk699516 = require("./699516.js"),
+  Chunk453542 = require("./453542.js");
 
 function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -31,11 +32,11 @@ function s(e) {
 
 function l() {
   return s({
-    num_friends: i.Z.getFriendCount(),
-    num_outgoing_requests: i.Z.getOutgoingCount(),
-    num_incoming_requests: i.Z.getPendingCount(),
-    num_game_friends: r.Z.getGameFriendCount(),
-    num_game_outgoing_requests: r.Z.getPendingOutgoingCount(),
-    num_game_incoming_requests: r.Z.getPendingIncomingCount()
-  }, (0, o.X)())
+    num_friends: Chunk699516.Z.getFriendCount(),
+    num_outgoing_requests: Chunk699516.Z.getOutgoingCount(),
+    num_incoming_requests: Chunk699516.Z.getPendingCount(),
+    num_game_friends: Chunk91896.Z.getGameFriendCount(),
+    num_game_outgoing_requests: Chunk91896.Z.getPendingOutgoingCount(),
+    num_game_incoming_requests: Chunk91896.Z.getPendingIncomingCount()
+  }, (0, Chunk453542.X)())
 }

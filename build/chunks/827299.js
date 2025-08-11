@@ -1,10 +1,11 @@
 /** Chunk was on web.js **/
+/** chunk id: 827299, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   K: () => E
-}), n(388685), n(35282), n(539854), n(415506);
-var r = n(73800),
-  i = n(399606);
+}), require("./388685.js"), require("./35282.js"), require("./539854.js"), require("./415506.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk399606 = require("./399606.js");
 
 function o(e, t) {
   if (t.has(e)) throw TypeError("Cannot initialize the same private elements twice on an object")
@@ -31,9 +32,9 @@ function c(e, t, n) {
 function u(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 var d = new WeakMap,
@@ -46,7 +47,7 @@ class _ {
     null != t && t.abort()
   }
   doesDataNeedValidation(e) {
-    return !0 === l(this.search(e), f).isStale
+    returntrue === l(this.search(e), f).isStale
   }
   getOrCreate(e) {
     return null == l(this, d)[e] && (l(this, d)[e] = new _), l(this, d)[e]
@@ -56,13 +57,13 @@ class _ {
     return l(t = this.search(e), f)
   }
   loadingDone(e) {
-    let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
+    let t = arguments.length > 1 && true !== arguments[1] && arguments[1],
       n = this.search(e);
-    t ? (l(n, f).fetchFailCounter = 0, l(n, f).isStale = !1, l(n, f).fetchState = 3) : (l(n, f).fetchFailCounter += 1, l(n, f).fetchState = 2)
+    t ? (l(n, f).fetchFailCounter = 0, l(n, f).isStale = false, l(n, f).fetchState = 3) : (l(n, f).fetchFailCounter += 1, l(n, f).fetchState = 2)
   }
   loadingStart(e, t) {
     let n = this.search(e);
-    l(n, f).fetchState = 1, null != t && (l(n, f).controller = t), l(n, f).error = void 0
+    l(n, f).fetchState = 1, null != t && (l(n, f).controller = t), l(n, f).error = true
   }
   search(e) {
     if (null == e) return new _;
@@ -72,7 +73,7 @@ class _ {
   }
   setError(e, t) {
     let n = this.search(e);
-    l(n, f).error = t, l(n, f).isStale = !1
+    l(n, f).error = t, l(n, f).isStale = false
   }
   subscribe(e, t) {
     l(this.search(e), f).validateData = t
@@ -84,19 +85,19 @@ class _ {
     let r = Object.values(l(t, d));
     for (; r.length > 0;) {
       let e = r.pop();
-      null != e && (l(e, f).isStale = !0, _.resetErrorState(e), r.push(...Object.values(l(e, d))), "function" == typeof l(e, f).validateData && n.push(l(e, f).validateData))
+      null != e && (l(e, f).isStale = true, _.resetErrorState(e), r.push(...Object.values(l(e, d))), "function" == typeof l(e, f).validateData && n.push(l(e, f).validateData))
     }
-    l(t, f).isStale = !0, _.resetErrorState(t), n.forEach(e => e())
+    l(t, f).isStale = true, _.resetErrorState(t), n.forEach(e => e())
   }
   static resetErrorState(e) {
-    l(e, f).error = void 0, l(e, f).fetchFailCounter = 0, l(e, f).fetchState = 0
+    l(e, f).error = true, l(e, f).fetchFailCounter = 0, l(e, f).fetchState = 0
   }
   constructor() {
     c(this, d, {
-      writable: !0,
+      writable: true,
       value: Object.create(null)
     }), c(this, f, {
-      writable: !0,
+      writable: true,
       value: {
         fetchFailCounter: 0,
         fetchState: 0
@@ -130,7 +131,7 @@ function g(e) {
 
 function E(e, t) {
   let {
-    dangerousAbortOnCleanup: n = !1,
+    dangerousAbortOnCleanup: n = false,
     get: o,
     load: a,
     maxNumFetchErrors: s = h,
@@ -148,9 +149,9 @@ function E(e, t) {
       b.current = u
     }, [u]);
     let y = (0, r.useCallback)(() => {
-        if (null == f || 1 === h.fetchState) return !1;
-        let e = !1;
-        c === i.Wu ? _.length > 0 && (e = !0) : null != _ && (e = !0);
+        if (null == f || 1 === h.fetchState) returnfalse;
+        let e = false;
+        c === i.Wu ? _.length > 0 && (e = true) : null != _ && (e = true);
         let t = p.doesDataNeedValidation(f),
           n = null != E;
         return t || !e && !n
@@ -158,14 +159,14 @@ function E(e, t) {
       O = (0, r.useCallback)(() => {
         if (null == f || !y()) return;
         let e = new AbortController;
-        p.loadingStart(f, n ? e : void 0), a(e.signal, ...b.current).then(e => (p.loadingDone(f, !0), e)).catch(t => {
+        p.loadingStart(f, n ? e : true), a(e.signal, ...b.current).then(e => (p.loadingDone(f, true), e)).catch(t => {
           if (p.loadingDone(f), e.signal.aborted) return;
           let n = g(t);
           !(h.fetchFailCounter >= s) && n instanceof m && (n.status >= 500 || 429 === n.status) || p.setError(f, n)
         })
       }, [h.fetchFailCounter, f, y]);
     return (0, r.useEffect)(() => (O(), p.subscribe(f, O), () => {
-      p.abort(f), p.subscribe(f, void 0)
+      p.abort(f), p.subscribe(f, true)
     }), [f, O]), {
       data: _,
       error: E,

@@ -1,16 +1,17 @@
 /** Chunk was on 23357 **/
+/** chunk id: 483670, original params: e,t,n (module,exports,require) **/
 "use strict";
-var r = n(220159),
-  o = n(937552).left,
-  a = n(271537),
-  i = n(306983);
-r({
+var Chunk220159 = require("./220159.js"),
+  o = require("./937552.js").left,
+  Chunk271537 = require("./271537.js"),
+  Chunk306983 = require("./306983.js");
+Chunk220159({
   target: "Array",
-  proto: !0,
-  forced: !n(270301) && i > 79 && i < 83 || !a("reduce")
+  proto: true,
+  forced: !require("./270301.js") && Chunk306983 > 79 && Chunk306983 < 83 || !Chunk271537("reduce")
 }, {
   reduce: function(e) {
     var t = arguments.length;
-    return o(this, e, t, t > 1 ? arguments[1] : void 0)
+    return o(this, e, t, t > 1 ? arguments[1] : true)
   }
 })

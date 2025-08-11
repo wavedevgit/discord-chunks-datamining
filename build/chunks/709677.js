@@ -1,5 +1,6 @@
 /** Chunk was on 13616 **/
-e.exports = {
+/** chunk id: 709677, original params: e,t,n (module,exports,require) **/
+module.exports = {
   divider: "divider__98b95",
   sectionHeader: "sectionHeader__98b95",
   emptyStateWrapper: "emptyStateWrapper__98b95",

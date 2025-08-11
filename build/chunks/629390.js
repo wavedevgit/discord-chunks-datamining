@@ -1,5 +1,6 @@
 /** Chunk was on 1272 **/
-e.exports = {
+/** chunk id: 629390, original params: e,t,n (module,exports,require) **/
+module.exports = {
   recommendationActivity: "recommendationActivity__450d3",
   players: "players__450d3",
   playerAvatar: "playerAvatar__450d3",

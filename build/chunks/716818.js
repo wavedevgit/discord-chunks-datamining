@@ -1,7 +1,8 @@
 /** Chunk was on web.js **/
+/** chunk id: 716818, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-var r = n(359282),
-  i = n(65183).Map;
+var Chunk359282 = require("./359282.js"),
+  i = require("./65183.js").Map;
 
 function o(e, t, n, o) {
   var a = e.getBlockMap(),
@@ -26,11 +27,11 @@ function o(e, t, n, o) {
     selectionAfter: t
   })
 }
-e.exports = {
+module.exports = {
   add: function(e, t, n) {
-    return o(e, t, n, !0)
+    return o(e, t, n, true)
   },
   remove: function(e, t, n) {
-    return o(e, t, n, !1)
+    return o(e, t, n, false)
   }
 }

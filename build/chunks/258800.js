@@ -1,7 +1,8 @@
 /** Chunk was on 68214 **/
+/** chunk id: 258800, original params: t,e,r (module,exports,require) **/
 "use strict";
-Object.defineProperty(e, "__esModule", {
-  value: !0
+Object.defineProperty(exports, "__esModule", {
+  value: true
 });
 var o = Object.assign || function(t) {
     for (var e = 1; e < arguments.length; e++) {
@@ -10,9 +11,9 @@ var o = Object.assign || function(t) {
     }
     return t
   },
-  n = u(r(639519)),
-  i = r(73800),
-  a = u(i);
+  n = u(require("./639519.js")),
+  Chunk73800 = require("./73800.js"),
+  a = u(Chunk73800);
 
 function u(t) {
   return t && t.__esModule ? t : {
@@ -29,7 +30,7 @@ var s = {
     viewBoxSize: n.default.number.isRequired,
     xmlns: n.default.string
   },
-  l = (0, i.forwardRef)(function(t, e) {
+  l = (0, Chunk73800.forwardRef)(function(t, e) {
     var r = t.bgColor,
       n = t.bgD,
       i = t.fgD,
@@ -56,6 +57,6 @@ var s = {
     }))
   });
 l.displayName = "QRCodeSvg", l.propTypes = s, l.defaultProps = {
-  title: void 0,
+  title: true,
   xmlns: "http://www.w3.org/2000/svg"
-}, e.default = l
+}, exports.default = l

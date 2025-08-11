@@ -1,4 +1,5 @@
 /** Chunk was on web.js **/
+/** chunk id: 952537, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 
 function r(e) {
@@ -11,6 +12,6 @@ function r(e) {
     joinTimestamp: e.join_timestamp
   }
 }
-n.d(t, {
+require.d(exports, {
   Z: () => r
-}), n(997841)
+}), require("./997841.js")

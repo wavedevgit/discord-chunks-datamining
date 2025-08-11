@@ -1,9 +1,10 @@
 /** Chunk was on web.js **/
+/** chunk id: 887937, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-var r = n(745872),
-  i = n(638934),
-  o = i(r("String.prototype.indexOf"));
-e.exports = function(e, t) {
+var Chunk745872 = require("./745872.js"),
+  Chunk638934 = require("./638934.js"),
+  o = Chunk638934(Chunk745872("String.prototype.indexOf"));
+module.exports = function(e, t) {
   var n = r(e, !!t);
-  return "function" == typeof n && o(e, ".prototype.") > -1 ? i(n) : n
+  return "function" == typeof n && o(e, ".prototype.") > false ? i(n) : n
 }

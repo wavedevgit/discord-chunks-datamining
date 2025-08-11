@@ -1,5 +1,6 @@
 /** Chunk was on web.js **/
-e.exports = function(e) {
+/** chunk id: 229609, original params: e (module,exports,re quire) **/
+module.exports = function(e) {
   let t = e.regex,
     n = {
       keyword: "in of on if for while finally var new function do return void else break catch instanceof with throw case default try this switch continue typeof delete let yield const export super debugger as async await import",
@@ -13,7 +14,7 @@ e.exports = function(e) {
       starts: {
         className: "string",
         end: "(:|=|;|,|//|/\\*|$)",
-        returnEnd: !0
+        returnEnd: true
       }
     },
     o = {
@@ -22,7 +23,7 @@ e.exports = function(e) {
       starts: {
         className: "string",
         end: "(\\(|:|=|;|,|//|/\\*|$)",
-        returnEnd: !0
+        returnEnd: true
       }
     },
     a = {
@@ -31,17 +32,17 @@ e.exports = function(e) {
       starts: {
         className: "string",
         end: r,
-        returnEnd: !1
+        returnEnd: false
       }
     },
     s = {
       begin: r + "\\s*:",
-      returnBegin: !0,
+      returnBegin: true,
       contains: [{
         className: "attribute",
         begin: r,
         end: "\\s*:",
-        excludeEnd: !0,
+        excludeEnd: true,
         relevance: 0
       }],
       relevance: 0
@@ -49,7 +50,7 @@ e.exports = function(e) {
     l = {
       begin: t.concat(r, /\s*\{/),
       end: /\{/,
-      returnBegin: !0,
+      returnBegin: true,
       relevance: 0,
       contains: [e.inherit(e.TITLE_MODE, {
         begin: r
@@ -58,7 +59,7 @@ e.exports = function(e) {
   return {
     name: "QML",
     aliases: ["qt"],
-    case_insensitive: !1,
+    case_insensitive: false,
     keywords: n,
     contains: [{
       className: "meta",
@@ -96,15 +97,15 @@ e.exports = function(e) {
       className: "function",
       beginKeywords: "function",
       end: /\{/,
-      excludeEnd: !0,
+      excludeEnd: true,
       contains: [e.inherit(e.TITLE_MODE, {
         begin: /[A-Za-z$_][0-9A-Za-z$_]*/
       }), {
         className: "params",
         begin: /\(/,
         end: /\)/,
-        excludeBegin: !0,
-        excludeEnd: !0,
+        excludeBegin: true,
+        excludeEnd: true,
         contains: [e.C_LINE_COMMENT_MODE, e.C_BLOCK_COMMENT_MODE]
       }],
       illegal: /\[|%/

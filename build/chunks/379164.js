@@ -1,19 +1,20 @@
 /** Chunk was on 34779 **/
-n.d(t, {
+/** chunk id: 379164, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => g
-}), n(388685);
-var r = n(570140),
-  i = n(447543),
-  l = n(87051),
-  o = n(18438),
-  s = n(44609),
-  a = n(731971),
-  c = n(695346),
-  u = n(626135),
-  d = n(782605),
-  h = n(621600),
-  p = n(88658),
-  f = n(981631);
+}), require("./388685.js");
+var Chunk570140 = require("./570140.js"),
+  Chunk447543 = require("./447543.js"),
+  Chunk87051 = require("./87051.js"),
+  Chunk18438 = require("./18438.js"),
+  Chunk44609 = require("./44609.js"),
+  Chunk731971 = require("./731971.js"),
+  Chunk695346 = require("./695346.js"),
+  Chunk626135 = require("./626135.js"),
+  Chunk782605 = require("./782605.js"),
+  Chunk621600 = require("./621600.js"),
+  Chunk88658 = require("./88658.js"),
+  Chunk981631 = require("./981631.js");
 let g = {
   acceptInvite(e) {
     let t = i.ZP.getInviteContext("Desktop Invite Modal", e),
@@ -39,7 +40,7 @@ let g = {
         } else {
           var t;
           let n = new Set((0, p.YK)());
-          n.add(null == (t = e.guild) ? void 0 : t.id), c.h2.updateSetting(Array.from(n))
+          n.add(null == (t = e.guild) ? true : t.id), c.h2.updateSetting(Array.from(n))
         }
         if (f) {
           if (c.SE.getSetting().includes(e.guild.id)) {
@@ -67,26 +68,26 @@ let g = {
     })
   },
   close() {
-    let e = (0, a.e7)(),
-      t = (0, a._J)();
-    if ((0, s.gY)({
+    let e = (0, Chunk731971.e7)(),
+      t = (0, Chunk731971._J)();
+    if ((0, Chunk44609.gY)({
         location: "closeInvite"
-      }) && (0, a.NQ)()) {
-      let n = (0, a.y)(),
-        r = (0, a.h6)(),
-        i = (0, a.U1)(),
-        l = (0, a.yS)(),
-        o = (0, a.aP)();
-      u.default.track(f.rMx.INVITE_ACCEPT_JOIN_SETTINGS_SET, {
-        invite_code: e,
-        guild_id: t,
-        nickname_present: null != n && n.length > 0,
-        dms_allowed: r,
-        activity_status_shown: i,
-        muted_server: l,
-        changed_from_default: o
+      }) && (0, Chunk731971.NQ)()) {
+      let n = (0, Chunk731971.y)(),
+        r = (0, Chunk731971.h6)(),
+        i = (0, Chunk731971.U1)(),
+        l = (0, Chunk731971.yS)(),
+        o = (0, Chunk731971.aP)();
+      Chunk626135.default.track(Chunk981631.rMx.INVITE_ACCEPT_JOIN_SETTINGS_SET, {
+        invite_code: module,
+        guild_id: exports,
+        nickname_present: null != require && require.length > 0,
+        dms_allowed: Chunk570140,
+        activity_status_shown: Chunk447543,
+        muted_server: Chunk87051,
+        changed_from_default: Chunk18438
       })
-    }(0, a.oE)(), r.Z.dispatch({
+    }(0, Chunk731971.oE)(), Chunk570140.Z.dispatch({
       type: "INVITE_MODAL_CLOSE"
     })
   }

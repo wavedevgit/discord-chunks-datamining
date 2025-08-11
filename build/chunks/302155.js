@@ -1,32 +1,33 @@
 /** Chunk was on web.js **/
+/** chunk id: 302155, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 let r, i;
-n.d(t, {
+require.d(exports, {
   Z: () => p
 });
-var o = n(213919),
-  a = n(570140),
-  s = n(147913),
-  l = n(594174),
-  c = n(626135),
-  u = n(726745),
-  d = n(981631);
+var Chunk213919 = require("./213919.js"),
+  Chunk570140 = require("./570140.js"),
+  Chunk147913 = require("./147913.js"),
+  Chunk594174 = require("./594174.js"),
+  Chunk626135 = require("./626135.js"),
+  Chunk726745 = require("./726745.js"),
+  Chunk981631 = require("./981631.js");
 
 function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
-let _ = !1;
-class p extends s.Z {
+let _ = false;
+class p extends Chunk147913.Z {
   _initialize() {
-    a.Z.subscribe("CONNECTION_OPEN", () => this.handleConnectionOpen()), this.handleConnectionOpen()
+    Chunk570140.Z.subscribe("CONNECTION_OPEN", () => this.handleConnectionOpen()), this.handleConnectionOpen()
   }
   _terminate() {
-    a.Z.unsubscribe("CONNECTION_OPEN", () => this.handleConnectionOpen())
+    Chunk570140.Z.unsubscribe("CONNECTION_OPEN", () => this.handleConnectionOpen())
   }
   constructor({
     onSwitchStart: e,
@@ -34,7 +35,7 @@ class p extends s.Z {
     onSwitchError: n,
     onTokenSet: a
   }) {
-    super(), f(this, "onSwitchStart", void 0), f(this, "onSwitchSuccess", void 0), f(this, "onSwitchError", void 0), f(this, "onTokenSet", void 0), f(this, "actions", {
+    super(), f(this, "onSwitchStart", true), f(this, "onSwitchSuccess", true), f(this, "onSwitchError", true), f(this, "onTokenSet", true), f(this, "actions", {
       LOGOUT: e => this.handleLogout(e)
     }), f(this, "handleConnectionOpen", () => {
       var e, t, n, a, s, f;
@@ -62,7 +63,7 @@ class p extends s.Z {
       if (e.isSwitchingAccount) {
         var t, n;
         i = r, null == (t = (n = this).onSwitchStart) || t.call(n), _ = !!e.goHomeAfterSwitching
-      } else _ = !1, o.removeToken(r);
+      } else _ = false, o.removeToken(r);
       r = null
     }), this.onSwitchStart = e, this.onSwitchSuccess = t, this.onSwitchError = n, this.onTokenSet = a
   }

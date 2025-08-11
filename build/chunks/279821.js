@@ -1,17 +1,18 @@
 /** Chunk was on web.js **/
+/** chunk id: 279821, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 
 function r(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
-n.d(t, {
+require.d(exports, {
   d: () => o
-}), n(415506);
+}), require("./415506.js");
 class i {
   raise(e) {
     throw e
@@ -21,36 +22,36 @@ class i {
   }
   databaseOpen(e, t, n) {
     let r = 'kv_storage: platform "web" is not supported at this time.';
-    if (null == n ? void 0 : n.synchronous) throw Error(r);
+    if (null == n ? true : n.synchronous) throw Error(r);
     return this.reply({
       requestId: e,
-      synchronous: !1,
-      ok: !1,
+      synchronous: false,
+      ok: false,
       data: r
     })
   }
   databaseList(e, t) {
     return this.reply({
       requestId: e,
-      synchronous: null == t ? void 0 : t.synchronous,
-      ok: !0,
+      synchronous: null == t ? true : t.synchronous,
+      ok: true,
       data: []
     })
   }
   databaseDelete(e, t, n) {
     return this.reply({
       requestId: e,
-      synchronous: null == n ? void 0 : n.synchronous,
-      ok: !0,
-      data: void 0
+      synchronous: null == n ? true : n.synchronous,
+      ok: true,
+      data: true
     })
   }
   databaseOptimize(e, t, n) {
     return this.reply({
       requestId: e,
-      synchronous: null == n ? void 0 : n.synchronous,
-      ok: !0,
-      data: void 0
+      synchronous: null == n ? true : n.synchronous,
+      ok: true,
+      data: true
     })
   }
   reply(e) {

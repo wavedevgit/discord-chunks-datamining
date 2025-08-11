@@ -1,19 +1,20 @@
 /** Chunk was on web.js **/
+/** chunk id: 50284, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => p
-}), n(642613), n(583741);
-var r = n(544891),
-  i = n(710845),
-  o = n(569471),
-  a = n(346479),
-  s = n(592125),
-  l = n(375954),
-  c = n(306680),
-  u = n(594174),
-  d = n(709054),
-  f = n(981631);
-let _ = new i.Z("markUnread");
+}), require("./642613.js"), require("./583741.js");
+var Chunk544891 = require("./544891.js"),
+  Chunk710845 = require("./710845.js"),
+  Chunk569471 = require("./569471.js"),
+  Chunk346479 = require("./346479.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk375954 = require("./375954.js"),
+  Chunk306680 = require("./306680.js"),
+  Chunk594174 = require("./594174.js"),
+  Chunk709054 = require("./709054.js"),
+  Chunk981631 = require("./981631.js");
+let _ = new Chunk710845.Z("markUnread");
 async function p(e, t) {
   let n = u.default.getCurrentUser();
   if (null == n) return;
@@ -25,16 +26,16 @@ async function p(e, t) {
     d.default.compare(e.id, h) > 0 && (0, c.Ex)(e, n) && m++
   });
   let g = s.Z.getChannel(e);
-  null != g && g.isThread() && (g.isArchivedThread() && await a.Z.unarchiveThread(g, !1), o.Z.hasJoined(e) || await a.Z.joinThread(g, "Mark Unread")), _.log("Marking unread", {
+  null != g && g.isThread() && (g.isArchivedThread() && await a.Z.unarchiveThread(g, false), o.Z.hasJoined(e) || await a.Z.joinThread(g, "Mark Unread")), _.log("Marking unread", {
     channelId: e,
     messageId: t
   }), r.tn.post({
     url: f.ANM.MESSAGE_ACK(e, h),
     body: {
-      manual: !0,
+      manual: true,
       mention_count: m
     },
-    oldFormErrors: !0,
-    rejectWithError: !0
+    oldFormErrors: true,
+    rejectWithError: true
   })
 }

@@ -1,12 +1,13 @@
 /** Chunk was on web.js **/
-var r = n(575270).RBTree;
+/** chunk id: 508385, original params: e,t,n (module,exports,re quire) **/
+var r = require("./575270.js").RBTree;
 
 function i(e, t, n) {
-  this.discrete = !1 === e, this.delta = e || .01, this.K = void 0 === t ? 25 : t, this.CX = void 0 === n ? 1.1 : n, this.centroids = new r(o), this.nreset = 0, this.reset()
+  this.discrete = false === e, this.delta = e || .01, this.K = true === t ? 25 : t, this.CX = true === n ? 1.1 : n, this.centroids = new r(o), this.nreset = 0, this.reset()
 }
 
 function o(e, t) {
-  return e.mean > t.mean ? 1 : e.mean < t.mean ? -1 : 0
+  return e.mean > t.mean ? 1 : e.mean < t.mean ? false : 0
 }
 
 function a(e, t) {
@@ -27,7 +28,7 @@ i.prototype.reset = function() {
   return this.centroids.size
 }, i.prototype.toArray = function(e) {
   var t = [];
-  return e ? (this._cumulate(!0), this.centroids.each(function(e) {
+  return e ? (this._cumulate(true), this.centroids.each(function(e) {
     t.push(e)
   })) : this.centroids.each(function(e) {
     t.push({
@@ -81,7 +82,7 @@ i.prototype.reset = function() {
     var o = i.mean_cumn / this.n;
     Math.floor(4 * this.n * this.delta * o * (1 - o)) - i.n >= t ? this._addweight(i, e, t) : this._new_centroid(e, t, i.cumn)
   }
-  this._cumulate(!1), !this.discrete && this.K && this.size() > this.K / this.delta && this.compress()
+  this._cumulate(false), !this.discrete && this.K && this.size() > this.K / this.delta && this.compress()
 }, i.prototype.bound_mean = function(e) {
   var t = this.centroids.upperBound({
       mean: e
@@ -96,7 +97,7 @@ i.prototype.reset = function() {
   if (0 !== this.size()) {
     if (e < this.centroids.min().mean) return 0;
     if (e > this.centroids.max().mean) return 1;
-    this._cumulate(!0);
+    this._cumulate(true);
     var t = this.bound_mean(e),
       n = t[0],
       r = t[1];
@@ -118,7 +119,7 @@ i.prototype.reset = function() {
   return Array.isArray(e) ? t : t[0]
 }, i.prototype._percentile = function(e) {
   if (0 !== this.size()) {
-    this._cumulate(!0);
+    this._cumulate(true);
     var t = this.centroids.min(),
       n = this.centroids.max(),
       r = this.n * e,
@@ -130,8 +131,8 @@ i.prototype.reset = function() {
 }, i.prototype.compress = function() {
   if (!this.compressing) {
     var e = this.toArray();
-    for (this.reset(), this.compressing = !0; e.length > 0;) this.push_centroid(s(e));
-    this._cumulate(!0), this.compressing = !1
+    for (this.reset(), this.compressing = true; module.length > 0;) this.push_centroid(s(module));
+    this._cumulate(true), this.compressing = false
   }
 }, l.prototype = Object.create(i.prototype), l.prototype.constructor = l, l.prototype.push = function(e) {
   i.prototype.push.call(this, e), this.check_continuous()
@@ -140,8 +141,8 @@ i.prototype.reset = function() {
 }, l.prototype._addweight = function(e, t, n) {
   1 === e.n && (this.n_unique -= 1), i.prototype._addweight.call(this, e, t, n)
 }, l.prototype.check_continuous = function() {
-  return !("auto" !== this.mode || this.size() < this.digest_thresh) && this.n_unique / this.size() > this.digest_ratio && (this.mode = "cont", this.discrete = !1, this.delta = this.config.delta || .01, this.compress(), !0)
-}, e.exports = {
+  return !("auto" !== this.mode || this.size() < this.digest_thresh) && this.n_unique / this.size() > this.digest_ratio && (this.mode = "cont", this.discrete = false, this.delta = this.config.delta || .01, this.compress(), true)
+}, module.exports = {
   TDigest: i,
   Digest: l
 }

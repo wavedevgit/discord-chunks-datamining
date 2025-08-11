@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 273254, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   separator: "separator_ae2544",
   infoTitle: "infoTitle_ae2544",
   infoBadge: "infoBadge_ae2544",

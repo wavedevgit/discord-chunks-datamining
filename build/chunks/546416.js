@@ -1,14 +1,15 @@
 /** Chunk was on web.js **/
+/** chunk id: 546416, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   V: () => i
 });
-var r = n(594190);
+var Chunk594190 = require("./594190.js");
 
 function i() {
-  let e = r.ZP.getCurrentGameForAnalytics();
+  let e = Chunk594190.ZP.getCurrentGameForAnalytics();
   return {
-    game_name: null != e ? e.name : null,
-    game_id: null != e ? e.id : null
+    game_name: null != module ? module.name : null,
+    game_id: null != module ? module.id : null
   }
 }

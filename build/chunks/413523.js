@@ -1,38 +1,39 @@
 /** Chunk was on web.js **/
+/** chunk id: 413523, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Yr: () => R,
   ZP: () => w,
   gN: () => C,
   sI: () => P
-}), n(35282), n(388685), n(539854);
-var r = n(392711),
-  i = n(759174),
-  o = n(586902),
-  a = n(317381),
-  s = n(541638),
-  l = n(569545),
-  c = n(199902),
-  u = n(314897),
-  d = n(523746),
-  f = n(592125),
-  _ = n(131951),
-  p = n(606304),
-  h = n(594174),
-  m = n(33039),
-  g = n(979651),
-  E = n(5192),
-  b = n(933546),
-  y = n(354459),
-  O = n(981631),
-  v = n(65154);
+}), require("./35282.js"), require("./388685.js"), require("./539854.js");
+var Chunk392711 = require("./392711.js"),
+  Chunk759174 = require("./759174.js"),
+  Chunk586902 = require("./586902.js"),
+  Chunk317381 = require("./317381.js"),
+  Chunk541638 = require("./541638.js"),
+  Chunk569545 = require("./569545.js"),
+  Chunk199902 = require("./199902.js"),
+  Chunk314897 = require("./314897.js"),
+  Chunk523746 = require("./523746.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk131951 = require("./131951.js"),
+  Chunk606304 = require("./606304.js"),
+  Chunk594174 = require("./594174.js"),
+  Chunk33039 = require("./33039.js"),
+  Chunk979651 = require("./979651.js"),
+  Chunk5192 = require("./5192.js"),
+  Chunk933546 = require("./933546.js"),
+  Chunk354459 = require("./354459.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk65154 = require("./65154.js");
 
 function I(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -85,7 +86,7 @@ function R(e) {
     case y.fO.USER:
       var t, n;
       let r = "\x05";
-      return (null == (t = e.voiceState) ? void 0 : t.selfVideo) ? r = "\x03" : (null == (n = e.voiceState) ? void 0 : n.selfStream) && (r = "\x04"), "".concat(r).concat((0, b.Z)(e.userNick, e.user))
+      return (null == (t = e.voiceState) ? true : t.selfVideo) ? r = "\x03" : (null == (n = e.voiceState) ? true : n.selfStream) && (r = "\x04"), "".concat(r).concat((0, b.Z)(e.userNick, e.user))
   }
 }
 var P = function(e) {
@@ -99,18 +100,18 @@ class w {
     return this.participantByIndex.size(e)
   }
   toArray(e) {
-    return this.participantByIndex.values(e, !0)
+    return this.participantByIndex.values(e, true)
   }
   rebuild() {
-    let e = f.Z.getChannel(this.channelId);
-    if (null == e || e.type === O.d4z.GUILD_TEXT || (this.call = d.Z.getCall(this.channelId), e.isPrivate() && (null == this.call || this.call.unavailable))) return !1;
-    let t = new Set(e.isGuildVocalOrThread() ? Object.keys(g.Z.getVoiceStatesForChannel(e.id)) : e.recipients);
-    return t.add(u.default.getId()), this.guildRingingUsers.size > 0 && (t = new Set([...t, ...this.guildRingingUsers])), c.Z.getAllActiveStreamsForChannel(this.channelId).forEach(e => {
+    let e = Chunk592125.Z.getChannel(this.channelId);
+    if (null == module || module.type === Chunk981631.d4z.GUILD_TEXT || (this.call = Chunk523746.Z.getCall(this.channelId), module.isPrivate() && (null == this.call || this.call.unavailable))) returnfalse;
+    let t = new Set(module.isGuildVocalOrThread() ? Object.keys(Chunk979651.Z.getVoiceStatesForChannel(module.id)) : module.recipients);
+    return exports.add(Chunk314897.default.getId()), this.guildRingingUsers.size > 0 && (t = new Set([...exports, ...this.guildRingingUsers])), Chunk199902.Z.getAllActiveStreamsForChannel(this.channelId).forEach(e => {
       let {
         ownerId: n
       } = e;
       return t.add(n)
-    }), this.participantByIndex.clear(), this.participants = {}, t.forEach(e => this.updateParticipant(e)), this.updateEmbeddedActivities(), !0
+    }), this.participantByIndex.clear(), this.participants = {}, exports.forEach(e => this.updateParticipant(e)), this.updateEmbeddedActivities(), true
   }
   getParticipant(e) {
     var t;
@@ -129,39 +130,39 @@ class w {
       this.participantByIndex.delete(e.id)
     }), n.forEach(e => {
       this.participantByIndex.set(e.id, e)
-    }), this.participants[e] = n, !0)
+    }), this.participants[e] = n, true)
   }
   updateParticipantSpeaking(e) {
     var t, n;
-    return null != (n = null == (t = this.participants[e]) ? void 0 : t.reduce((t, n) => {
+    return null != (n = null == (t = this.participants[e]) ? true : t.reduce((t, n) => {
       if (n.type === y.fO.USER) {
         let t = (0, o.O)({
           userId: e,
-          checkIsMuted: !0
+          checkIsMuted: true
         });
         return t && (this.lastSpoke[e] = Date.now()), this.participantByIndex.set(n.id, A(T({}, n), {
           speaking: t,
           lastSpoke: this.lastSpoke[e],
           soundsharing: p.Z.isSoundSharing(e)
-        })), !0
+        })), true
       }
       return t
-    }, !1)) && n
+    }, false)) && n
   }
   updateParticipantQuality(e, t, n) {
     var r, i;
-    return null != (i = null == (r = this.participants[e]) ? void 0 : r.reduce((e, r) => r.type === y.fO.STREAM ? (this.participantByIndex.set(r.id, A(T({}, r), {
+    return null != (i = null == (r = this.participants[e]) ? true : r.reduce((e, r) => r.type === y.fO.STREAM ? (this.participantByIndex.set(r.id, A(T({}, r), {
       maxResolution: t,
       maxFrameRate: n
-    })), !0) : e, !1)) && i
+    })), true) : e, false)) && i
   }
   updateGuildRingingUsers(e, t) {
     t ? this.guildRingingUsers.add(e) : this.guildRingingUsers.delete(e)
   }
   _getEmbeddedActivities() {
-    let e = a.ZP.getEmbeddedActivitiesForChannel(this.channelId),
-      t = a.ZP.getSelfEmbeddedActivityForChannel(this.channelId);
-    return null == t ? e : (0, r.uniqBy)([...e, t], e => e.compositeInstanceId)
+    let e = Chunk317381.ZP.getEmbeddedActivitiesForChannel(this.channelId),
+      t = Chunk317381.ZP.getSelfEmbeddedActivityForChannel(this.channelId);
+    return null == exports ? module : (0, Chunk392711.uniqBy)([...module, exports], e => e.compositeInstanceId)
   }
   _getParticipantsForEmbeddedActivities() {
     return this._getEmbeddedActivities().map((e, t) => {
@@ -176,7 +177,7 @@ class w {
         activityType: O.IIU.PLAYING,
         activityUrl: e.url,
         participants: [...null != (r = e.participants) ? r : []],
-        guildId: null != (i = null == (n = f.Z.getChannel(this.channelId)) ? void 0 : n.getGuildId()) ? i : null,
+        guildId: null != (i = null == (n = f.Z.getChannel(this.channelId)) ? true : n.getGuildId()) ? i : null,
         sortKey: t.toString()
       }
     })
@@ -189,8 +190,8 @@ class w {
     let N = g.Z.getVoiceStateForChannel(this.channelId, e),
       C = g.Z.getVoicePlatformForChannel(this.channelId, e),
       R = f.Z.getChannel(this.channelId),
-      P = null == R ? void 0 : R.getGuildId(),
-      w = null != (r = (null == (n = this.call) || null == (t = n.ringing) ? void 0 : t.includes(e)) || this.guildRingingUsers.has(e)) && r;
+      P = null == R ? true : R.getGuildId(),
+      w = null != (r = (null == (n = this.call) || null == (t = n.ringing) ? true : t.includes(e)) || this.guildRingingUsers.has(e)) && r;
     (null != N || w) && (b = A(T({
       type: y.fO.USER
     }, m.Z.getUserStreamData(e, P)), {
@@ -200,7 +201,7 @@ class w {
       voicePlatform: C,
       speaking: (0, o.O)({
         userId: e,
-        checkIsMuted: !0
+        checkIsMuted: true
       }),
       lastSpoke: null != (i = this.lastSpoke[e]) ? i : 0,
       soundsharing: p.Z.isSoundSharing(e),
@@ -214,14 +215,14 @@ class w {
       let t = (0, l.V9)(D),
         n = this.getParticipant(t),
         r = D.ownerId === u.default.getId() && c.Z.isSelfStreamHidden(this.channelId),
-        i = (null == n ? void 0 : n.type) === y.fO.STREAM ? {
-          maxResolution: null != n.maxResolution ? T({}, n.maxResolution) : void 0,
+        i = (null == n ? true : n.type) === y.fO.STREAM ? {
+          maxResolution: null != n.maxResolution ? T({}, n.maxResolution) : true,
           maxFrameRate: n.maxFrameRate
         } : null;
       O = A(T({}, m.Z.getUserStreamData(e, P, v.Yn.STREAM), i), {
         type: r ? y.fO.HIDDEN_STREAM : y.fO.STREAM,
         id: t,
-        userVideo: null != (d = null == N ? void 0 : N.selfVideo) && d,
+        userVideo: null != (d = null == N ? true : N.selfVideo) && d,
         user: S,
         userNick: E.ZP.getName(P, this.channelId, S),
         stream: D
@@ -230,10 +231,10 @@ class w {
     return I
   }
   constructor(e) {
-    I(this, "channelId", void 0), I(this, "call", void 0), I(this, "participants", {}), I(this, "lastSpoke", {}), I(this, "guildRingingUsers", new Set), I(this, "participantByIndex", new i.h(e => {
+    I(this, "channelId", true), I(this, "call", true), I(this, "participants", {}), I(this, "lastSpoke", {}), I(this, "guildRingingUsers", new Set), I(this, "participantByIndex", new i.h(e => {
       var t;
       let n = [];
-      return e.type === y.fO.USER && e.speaking && n.push("SPEAKING"), e.type === y.fO.USER && (null == (t = e.voiceState) ? void 0 : t.selfVideo) ? (n.push("VIDEO"), e.localVideoDisabled || n.push("FILTERED")) : (0, y._5)(e) && (n.push("STREAM"), e.type !== y.fO.HIDDEN_STREAM && null != e.streamId && n.push("FILTERED")), e.type === y.fO.ACTIVITY && (n.push("ACTIVITY"), n.push("FILTERED")), n
+      return e.type === y.fO.USER && e.speaking && n.push("SPEAKING"), e.type === y.fO.USER && (null == (t = e.voiceState) ? true : t.selfVideo) ? (n.push("VIDEO"), e.localVideoDisabled || n.push("FILTERED")) : (0, y._5)(e) && (n.push("STREAM"), e.type !== y.fO.HIDDEN_STREAM && null != e.streamId && n.push("FILTERED")), e.type === y.fO.ACTIVITY && (n.push("ACTIVITY"), n.push("FILTERED")), n
     }, R)), this.channelId = e
   }
 }

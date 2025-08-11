@@ -1,19 +1,20 @@
 /** Chunk was on 21153 **/
+/** chunk id: 549263, original params: e,t,r (module,exports,require) **/
 "use strict";
-r.d(t, {
+require.d(exports, {
   Z: () => p
 });
-var n = r(73800),
-  o = r(9196),
-  a = r(442626),
-  i = r(176213),
-  l = r(116850),
-  s = r(481615),
+var Chunk73800 = require("./73800.js"),
+  Chunk9196 = require("./9196.js"),
+  Chunk442626 = require("./442626.js"),
+  Chunk176213 = require("./176213.js"),
+  Chunk116850 = require("./116850.js"),
+  Chunk481615 = require("./481615.js"),
   u = function() {
     function e(e, t) {
       for (var r = 0; r < t.length; r++) {
         var n = t[r];
-        n.enumerable = n.enumerable || !1, n.configurable = !0, "value" in n && (n.writable = !0), Object.defineProperty(e, n.key, n)
+        n.enumerable = n.enumerable || false, n.configurable = true, "value" in n && (n.writable = true), Object.defineProperty(e, n.key, n)
       }
     }
     return function(t, r, n) {
@@ -73,9 +74,9 @@ var n = r(73800),
     return t.prototype = Object.create(e && e.prototype, {
       constructor: {
         value: t,
-        enumerable: !1,
-        writable: !0,
-        configurable: !0
+        enumerable: false,
+        writable: true,
+        configurable: true
       }
     }), e && (Object.setPrototypeOf ? Object.setPrototypeOf(t, e) : t.__proto__ = e), u(t, [{
       key: "render",
@@ -154,7 +155,7 @@ var n = r(73800),
               }
             }
           }, this.props, this.state),
-          r = void 0;
+          r = true;
         return "hex" === this.state.view ? r = n.createElement("div", {
           style: t.fields,
           className: "flexbox-fix"
@@ -282,7 +283,7 @@ var n = r(73800),
         } : null
       }
     }]), t
-  }(n.Component);
+  }(Chunk73800.Component);
 c.defaultProps = {
   view: "hex"
 };

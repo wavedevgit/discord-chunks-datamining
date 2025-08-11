@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 328908, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   GA: () => m,
   Hb: () => p,
   Hi: () => E,
@@ -13,17 +14,17 @@ n.d(t, {
   t0: () => I,
   z8: () => b
 });
-var r = n(97519),
-  i = n(731965),
-  o = n(626135),
-  a = n(981631);
+var Chunk97519 = require("./97519.js"),
+  Chunk731965 = require("./731965.js"),
+  Chunk626135 = require("./626135.js"),
+  Chunk981631 = require("./981631.js");
 
 function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -58,9 +59,9 @@ function u(e, t) {
 }
 let d = Object.freeze({
     messageSendConfetti: {},
-    messageReactionConfetti: void 0
+    messageReactionConfetti: true
   }),
-  f = (0, r.U)(() => d),
+  f = (0, Chunk97519.U)(() => d),
   _ = (e, t) => {
     o.default.track(a.rMx.CONFETTI_POTION_ENTRYPOINT_CLICKED, {
       location: t
@@ -73,8 +74,8 @@ let d = Object.freeze({
           messageSendConfetti: u(l({}, n), {
             [e]: {
               state: 0,
-              emoji: void 0,
-              hasAutoPopped: !1
+              emoji: true,
+              hasAutoPopped: false
             }
           })
         }
@@ -98,7 +99,7 @@ let d = Object.freeze({
   },
   m = e => {
     let t = f.getState();
-    null != t.messageSendConfetti[e] && 0 === t.messageSendConfetti[e].state && (t.messageSendConfetti[e].hasAutoPopped = !0)
+    null != t.messageSendConfetti[e] && 0 === t.messageSendConfetti[e].state && (t.messageSendConfetti[e].hasAutoPopped = true)
   };
 
 function g(e) {
@@ -126,13 +127,13 @@ function E(e, t) {
 function b(e) {
   return f(t => {
     var n;
-    return null == (n = t.messageSendConfetti[e]) ? void 0 : n.emoji
+    return null == (n = t.messageSendConfetti[e]) ? true : n.emoji
   })
 }
 
 function y(e) {
   var t;
-  return null == (t = f.getState().messageSendConfetti[e]) ? void 0 : t.emoji
+  return null == (t = f.getState().messageSendConfetti[e]) ? true : t.emoji
 }
 
 function O(e) {
@@ -144,9 +145,9 @@ function O(e) {
 }
 
 function v() {
-  return (0, i.j)(() => {
+  return (0, Chunk731965.j)(() => {
     f.setState(() => ({
-      messageReactionConfetti: void 0
+      messageReactionConfetti: true
     }))
   })
 }
@@ -158,13 +159,13 @@ function I(e, t, n) {
 function T(e, t) {
   return f(n => {
     var r;
-    return t ? n.messageReactionConfetti : null == (r = n.messageSendConfetti[e]) ? void 0 : r.emoji
+    return t ? n.messageReactionConfetti : null == (r = n.messageSendConfetti[e]) ? true : r.emoji
   })
 }
 
 function S(e) {
   return f(t => {
     let n = t.messageSendConfetti[e];
-    if ((null == n ? void 0 : n.state) === 0) return n.hasAutoPopped
+    if ((null == n ? true : n.state) === 0) return n.hasAutoPopped
   })
 }

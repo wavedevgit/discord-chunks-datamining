@@ -1,17 +1,18 @@
 /** Chunk was on web.js **/
+/** chunk id: 389303, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => c
-}), n(388685);
-var r = n(314897),
-  i = n(496675),
-  o = n(938475),
-  a = n(700785),
-  s = n(924301),
-  l = n(85243);
+}), require("./388685.js");
+var Chunk314897 = require("./314897.js"),
+  Chunk496675 = require("./496675.js"),
+  Chunk938475 = require("./938475.js"),
+  Chunk700785 = require("./700785.js"),
+  Chunk924301 = require("./924301.js"),
+  Chunk85243 = require("./85243.js");
 
 function c(e) {
-  if (!e.isGuildVoice() || s.ZP.getGuildScheduledEventsByIndex(s.bN.CHANNEL_EVENT_ACTIVE(e.id)).length < 1 || !i.Z.can(l.AN, e)) return !1;
+  if (!e.isGuildVoice() || s.ZP.getGuildScheduledEventsByIndex(s.bN.CHANNEL_EVENT_ACTIVE(e.id)).length < 1 || !i.Z.can(l.AN, e)) returnfalse;
   let t = new Set(o.ZP.getVoiceStatesForChannel(e).map(e => e.user.id)),
     n = r.default.getId();
   for (let r of t)
@@ -19,6 +20,6 @@ function c(e) {
         permission: l.AN,
         user: r,
         context: e
-      })) return !1;
-  return !0
+      })) returnfalse;
+  returntrue
 }

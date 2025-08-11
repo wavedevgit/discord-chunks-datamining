@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 527379, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Dr: () => m,
   YO: () => p,
   _X: () => g,
@@ -8,14 +9,14 @@ n.d(t, {
   nb: () => E,
   zO: () => _
 });
-var r = n(570140),
-  i = n(434404),
-  o = n(703656),
-  a = n(430824),
-  s = n(241559),
-  l = n(327999),
-  c = n(981631),
-  u = n(176505);
+var Chunk570140 = require("./570140.js"),
+  Chunk434404 = require("./434404.js"),
+  Chunk703656 = require("./703656.js"),
+  Chunk430824 = require("./430824.js"),
+  Chunk241559 = require("./241559.js"),
+  Chunk327999 = require("./327999.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk176505 = require("./176505.js");
 
 function d(e, t) {
   if (null == e) return {};
@@ -69,7 +70,7 @@ async function m(e, t) {
 function g(e) {
   let t = (0, s.lv)(e),
     n = a.Z.getGuild(e);
-  return !!t && null != n && (n.features.has(c.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL) || n.features.has(c.oNc.COMMUNITY) || n.features.has(c.oNc.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY) ? (0, o.uL)(c.Z5c.CHANNEL(e, u.oC.MEMBER_SAFETY)) : i.Z.open(n.id, c.pNK.MEMBERS), !0)
+  return !!t && null != n && (n.features.has(c.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL) || n.features.has(c.oNc.COMMUNITY) || n.features.has(c.oNc.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY) ? (0, o.uL)(c.Z5c.CHANNEL(e, u.oC.MEMBER_SAFETY)) : i.Z.open(n.id, c.pNK.MEMBERS), true)
 }
 async function E(e, t) {
   let n = await (0, l._2)(e, t);

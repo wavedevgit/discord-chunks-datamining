@@ -1,5 +1,6 @@
 /** Chunk was on web.js **/
-e.exports = function(e) {
+/** chunk id: 253906, original params: e (module,exports,re quire) **/
+module.exports = function(e) {
   let t = e.regex,
     n = /[a-zA-Z_$][a-zA-Z0-9_$]*/,
     r = t.concat(n, t.concat("(\\.", n, ")*")),
@@ -39,7 +40,7 @@ e.exports = function(e) {
     }, {
       beginKeywords: "function",
       end: /[{;]/,
-      excludeEnd: !0,
+      excludeEnd: true,
       illegal: /\S/,
       contains: [e.inherit(e.TITLE_MODE, {
         className: "title.function"

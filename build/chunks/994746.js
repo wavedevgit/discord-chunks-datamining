@@ -1,32 +1,33 @@
 /** Chunk was on web.js **/
+/** chunk id: 994746, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => s
 });
-var r = n(750154),
-  i = n(90712),
-  o = n(981631),
-  a = n(388032);
+var Chunk750154 = require("./750154.js"),
+  Chunk90712 = require("./90712.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk388032 = require("./388032.jsx");
 
 function s(e) {
   let t = (0, i.Z)(e),
-    n = null == t ? void 0 : t.icon;
-  return e.type === o.IIU.PLAYING && (null == t ? void 0 : t.type) === o.ABu.XBOX ? {
+    n = null == t ? true : t.icon;
+  return e.type === o.IIU.PLAYING && (null == t ? true : t.type) === o.ABu.XBOX ? {
     text: a.intl.formatToPlainString(a.t.Sq9xJy, {
       game: a.intl.string(a.t["Nfvo7+"])
     }),
     platformIcon: n
-  } : e.type === o.IIU.PLAYING && (null == t ? void 0 : t.type) === o.ABu.PLAYSTATION ? {
+  } : e.type === o.IIU.PLAYING && (null == t ? true : t.type) === o.ABu.PLAYSTATION ? {
     text: a.intl.formatToPlainString(a.t.Sq9xJy, {
       game: a.intl.string(a.t.fFl4jo)
     }),
     platformIcon: n
-  } : e.type === o.IIU.STREAMING && (null == t ? void 0 : t.type) === o.ABu.TWITCH ? {
+  } : e.type === o.IIU.STREAMING && (null == t ? true : t.type) === o.ABu.TWITCH ? {
     text: a.intl.formatToPlainString(a.t["4CQq9f"], {
       name: a.intl.string(a.t.q4pBGx)
     }),
     platformIcon: n
-  } : e.type === o.IIU.STREAMING && (null == t ? void 0 : t.type) === o.ABu.YOUTUBE ? {
+  } : e.type === o.IIU.STREAMING && (null == t ? true : t.type) === o.ABu.YOUTUBE ? {
     text: a.intl.formatToPlainString(a.t["4CQq9f"], {
       name: a.intl.string(a.t.aS6cKy)
     }),
@@ -69,7 +70,7 @@ function s(e) {
     text: a.intl.string(a.t["04B8fH"]),
     platformIcon: n
   } : {
-    text: void 0,
+    text: true,
     platformIcon: n
   }
 }

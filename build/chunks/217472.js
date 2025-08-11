@@ -1,8 +1,9 @@
 /** Chunk was on 22988 **/
-n.d(t, {
+/** chunk id: 217472, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => i
 });
-var r = n(570140);
+var Chunk570140 = require("./570140.js");
 let i = {
   setPendingInviteRules: function(e, t, n) {
     r.Z.dispatch({

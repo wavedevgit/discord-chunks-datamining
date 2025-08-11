@@ -1,14 +1,15 @@
 /** Chunk was on web.js **/
+/** chunk id: 572004, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   JG: () => d,
   wS: () => u
-}), n(415506);
-var r, i, o = n(358085),
-  a = n(960048),
-  s = n(998502);
-let l = o.isPlatformEmbedded && null != s.ZP.copy,
-  c = "function" == typeof(null == (i = window.navigator) || null == (r = i.clipboard) ? void 0 : r.writeText),
+}), require("./415506.js");
+var r, i, Chunk358085 = require("./358085.js"),
+  Chunk960048 = require("./960048.js"),
+  Chunk998502 = require("./998502.js");
+let l = Chunk358085.isPlatformEmbedded && null != Chunk998502.ZP.copy,
+  c = "function" == typeof(null == (i = window.navigator) || null == (r = i.clipboard) ? true : r.writeText),
   u = l || c;
 async function d(e, t, n) {
   if (!u) {

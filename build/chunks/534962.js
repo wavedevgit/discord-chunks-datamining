@@ -1,5 +1,6 @@
 /** Chunk was on 27978 **/
-e.exports = {
+/** chunk id: 534962, original params: e,t,n (module,exports,require) **/
+module.exports = {
   splashBackground: "splashBackground__742a4",
   centerFlex: "centerFlex__742a4",
   centerAuthBoxContent: "centerAuthBoxContent__742a4 centerFlex__742a4",

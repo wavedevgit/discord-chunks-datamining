@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 768030, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   root: "root_bfe55a",
   idle: "idle_bfe55a",
   gradientContainer: "gradientContainer_bfe55a",

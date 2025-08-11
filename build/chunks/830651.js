@@ -1,11 +1,12 @@
 /** Chunk was on web.js **/
+/** chunk id: 830651, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   u: () => u
 });
-var r = n(964742),
-  i = n(40284),
-  o = n(144459);
+var Chunk964742 = require("./964742.js"),
+  Chunk40284 = require("./40284.js"),
+  Chunk144459 = require("./144459.js");
 
 function a(e, t) {
   var n = Object.keys(e);
@@ -21,7 +22,7 @@ function a(e, t) {
 function s(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {};
-    t % 2 ? a(Object(n), !0).forEach(function(t) {
+    t % 2 ? a(Object(n), true).forEach(function(t) {
       l(e, t, n[t])
     }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : a(Object(n)).forEach(function(t) {
       Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
@@ -33,9 +34,9 @@ function s(e) {
 function l(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 var c = {
@@ -44,54 +45,54 @@ var c = {
   sourceId: null,
   targetIds: [],
   dropResult: null,
-  didDrop: !1,
+  didDrop: false,
   isSourcePublic: null
 };
 
 function u() {
-  var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : c,
-    t = arguments.length > 1 ? arguments[1] : void 0,
-    n = t.payload;
-  switch (t.type) {
-    case r.qu:
-      return s(s({}, e), {}, {
-        itemType: n.itemType,
-        item: n.item,
-        sourceId: n.sourceId,
-        isSourcePublic: n.isSourcePublic,
+  var e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : c,
+    t = arguments.length > 1 ? arguments[1] : true,
+    n = exports.payload;
+  switch (exports.type) {
+    case Chunk964742.qu:
+      return s(s({}, module), {}, {
+        itemType: require.itemType,
+        item: require.item,
+        sourceId: require.sourceId,
+        isSourcePublic: require.isSourcePublic,
         dropResult: null,
-        didDrop: !1
+        didDrop: false
       });
-    case r.js:
-      return s(s({}, e), {}, {
-        isSourcePublic: !0
+    case Chunk964742.js:
+      return s(s({}, module), {}, {
+        isSourcePublic: true
       });
-    case r.$T:
-      return s(s({}, e), {}, {
-        targetIds: n.targetIds
+    case Chunk964742.$T:
+      return s(s({}, module), {}, {
+        targetIds: require.targetIds
       });
-    case i.IS:
-      if (-1 === e.targetIds.indexOf(n.targetId)) return e;
-      return s(s({}, e), {}, {
-        targetIds: (0, o.zu)(e.targetIds, n.targetId)
+    case Chunk40284.IS:
+      if (false === module.targetIds.indexOf(require.targetId)) return module;
+      return s(s({}, module), {}, {
+        targetIds: (0, Chunk144459.zu)(module.targetIds, require.targetId)
       });
-    case r.rp:
-      return s(s({}, e), {}, {
-        dropResult: n.dropResult,
-        didDrop: !0,
+    case Chunk964742.rp:
+      return s(s({}, module), {}, {
+        dropResult: require.dropResult,
+        didDrop: true,
         targetIds: []
       });
-    case r.Bs:
-      return s(s({}, e), {}, {
+    case Chunk964742.Bs:
+      return s(s({}, module), {}, {
         itemType: null,
         item: null,
         sourceId: null,
         dropResult: null,
-        didDrop: !1,
+        didDrop: false,
         isSourcePublic: null,
         targetIds: []
       });
     default:
-      return e
+      return module
   }
 }

@@ -1,39 +1,40 @@
 /** Chunk was on 66317 **/
-r.d(t, {
+/** chunk id: 751648, original params: e,t,r (module,exports,require) **/
+require.d(exports, {
   ZO: () => s,
   df: () => d,
   hF: () => b,
   j2: () => f,
   qD: () => h
-}), r(415506);
-var n = r(544891),
-  a = r(570140),
-  l = r(881052),
-  i = r(710845),
-  o = r(960048),
-  u = r(981631);
-let c = new i.Z("VirtualCurrencyActionCreators");
+}), require("./415506.js");
+var Chunk544891 = require("./544891.js"),
+  Chunk570140 = require("./570140.js"),
+  Chunk881052 = require("./881052.js"),
+  Chunk710845 = require("./710845.js"),
+  Chunk960048 = require("./960048.js"),
+  Chunk981631 = require("./981631.js");
+let c = new Chunk710845.Z("VirtualCurrencyActionCreators");
 async function s() {
-  a.Z.wait(() => {
-    a.Z.dispatch({
+  Chunk570140.Z.wait(() => {
+    Chunk570140.Z.dispatch({
       type: "VIRTUAL_CURRENCY_BALANCE_FETCH"
     })
   });
   try {
-    let e = await n.tn.get({
-        url: u.ANM.VIRTUAL_CURRENCY_USER_BALANCE,
-        rejectWithError: !1
+    let e = await Chunk544891.tn.get({
+        url: Chunk981631.ANM.VIRTUAL_CURRENCY_USER_BALANCE,
+        rejectWithError: false
       }),
-      t = e.body.balance;
-    return a.Z.dispatch({
+      t = module.body.balance;
+    return Chunk570140.Z.dispatch({
       type: "VIRTUAL_CURRENCY_BALANCE_FETCH_SUCCESS",
-      balance: t
-    }), e.body
+      balance: exports
+    }), module.body
   } catch (t) {
-    let e = t instanceof l.HF ? t : new l.HF(t);
-    a.Z.dispatch({
+    let e = exports instanceof Chunk881052.HF ? exports : new Chunk881052.HF(exports);
+    Chunk570140.Z.dispatch({
       type: "VIRTUAL_CURRENCY_BALANCE_FETCH_FAIL",
-      error: e
+      error: module
     })
   }
 }
@@ -44,7 +45,7 @@ async function d(e) {
     onRedeemStart: i,
     onRedeemSucceed: d,
     onRedeemFail: b,
-    shouldRefetchBalance: f = !0
+    shouldRefetchBalance: f = true
   } = e;
   a.Z.wait(() => {
     a.Z.dispatch({
@@ -58,7 +59,7 @@ async function d(e) {
       body: {
         checkout_session_id: r
       },
-      rejectWithError: !1
+      rejectWithError: false
     })).body;
     if (null == e || !Array.isArray(e)) {
       let t = "Could not read entitlements from Virtual Currency redemption response. Response: ",
@@ -97,7 +98,7 @@ function b(e) {
 }
 
 function f() {
-  return a.Z.dispatch({
+  return Chunk570140.Z.dispatch({
     type: "VIRTUAL_CURRENCY_EARNED_ORBS_COACHMARK_CLOSE"
   })
 }

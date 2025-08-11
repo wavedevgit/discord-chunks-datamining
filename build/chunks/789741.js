@@ -1,9 +1,10 @@
 /** Chunk was on web.js **/
+/** chunk id: 789741, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   p: () => i
 });
-var r = n(554887),
+var Chunk554887 = require("./554887.js"),
   i = function(e) {
     (0, r.G)(function() {
       requestAnimationFrame(e)

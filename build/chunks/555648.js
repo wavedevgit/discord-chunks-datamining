@@ -1,14 +1,15 @@
 /** Chunk was on web.js **/
+/** chunk id: 555648, original params: e (module,exports,re quire) **/
 "use strict";
-e.exports = function(e) {
+module.exports = function(e) {
   try {
     return {
-      error: !1,
+      error: false,
       value: e()
     }
   } catch (e) {
     return {
-      error: !0,
+      error: true,
       value: e
     }
   }

@@ -1,14 +1,15 @@
 /** Chunk was on 1272 **/
-n.d(t, {
+/** chunk id: 905534, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => s
-}), n(49124), n(358797);
-var r = n(626135),
-  i = n(996106),
-  l = n(34954),
-  a = n(986768),
-  o = n(981631);
+}), require("./49124.js"), require("./358797.js");
+var Chunk626135 = require("./626135.js"),
+  Chunk996106 = require("./996106.js"),
+  Chunk34954 = require("./34954.js"),
+  Chunk986768 = require("./986768.js"),
+  Chunk981631 = require("./981631.js");
 let s = {
-  [o.Etm.SUBSCRIBE]: {
+  [Chunk981631.Etm.SUBSCRIBE]: {
     async handler(e) {
       let {
         server: t,
@@ -30,7 +31,7 @@ let s = {
         }), null != u.validation) {
         let e = await t.getJoi();
         if (null != e.validate(c, u.validation(e), {
-            convert: !1
+            convert: false
           }).error) throw new i.Z({
           errorCode: o.lTL.INVALID_PAYLOAD
         }, "Invalid subscription parameters provided")
@@ -49,7 +50,7 @@ let s = {
       })
     }
   },
-  [o.Etm.UNSUBSCRIBE]: {
+  [Chunk981631.Etm.UNSUBSCRIBE]: {
     handler(e) {
       let {
         server: t,

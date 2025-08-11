@@ -1,5 +1,6 @@
 /** Chunk was on 1272 **/
-e.exports = {
+/** chunk id: 442122, original params: e,t,n (module,exports,require) **/
+module.exports = {
   channelName: "channelName__7c7a6",
   username: "username__7c7a6",
   kvContainer: "kvContainer__7c7a6",

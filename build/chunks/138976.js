@@ -1,24 +1,25 @@
 /** Chunk was on 75708 **/
-n.d(t, {
+/** chunk id: 138976, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   O: () => a
 });
-var i = n(904245),
-  r = n(306680),
-  s = n(944486);
+var Chunk904245 = require("./904245.js"),
+  Chunk306680 = require("./306680.js"),
+  Chunk944486 = require("./944486.js");
 let a = {
   binds: ["shift+pageup"],
-  comboKeysBindGlobal: !0,
+  comboKeysBindGlobal: true,
   action() {
-    let e = s.Z.getChannelId();
-    if (null != e) {
-      let t = r.ZP.ackMessageId(e);
-      null != t && r.ZP.getOldestUnreadTimestamp(e) > 0 && i.Z.jumpToMessage({
-        channelId: e,
-        messageId: t,
+    let e = Chunk944486.Z.getChannelId();
+    if (null != module) {
+      let t = Chunk306680.ZP.ackMessageId(module);
+      null != exports && Chunk306680.ZP.getOldestUnreadTimestamp(module) > 0 && Chunk904245.Z.jumpToMessage({
+        channelId: module,
+        messageId: exports,
         offset: 1,
         context: "Keyboard Shortcut"
       })
     }
-    return !1
+    returnfalse
   }
 }

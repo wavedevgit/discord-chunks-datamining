@@ -1,25 +1,26 @@
 /** Chunk was on web.js **/
+/** chunk id: 90641, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => g
 });
-var r = n(570140),
-  i = n(668781),
-  o = n(287734),
-  a = n(881052),
-  s = n(314897),
-  l = n(592125),
-  c = n(979651),
-  u = n(352954),
-  d = n(630759),
-  f = n(760373),
-  _ = n(981631),
-  p = n(388032);
+var Chunk570140 = require("./570140.js"),
+  Chunk668781 = require("./668781.js"),
+  Chunk287734 = require("./287734.js"),
+  Chunk881052 = require("./881052.js"),
+  Chunk314897 = require("./314897.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk979651 = require("./979651.js"),
+  Chunk352954 = require("./352954.js"),
+  Chunk630759 = require("./630759.js"),
+  Chunk760373 = require("./760373.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk388032 = require("./388032.js");
 
 function h() {
-  let e = c.Z.getVoiceStateForUser(s.default.getId()),
-    t = l.Z.getChannel(null == e ? void 0 : e.channelId);
-  return s.default.getSessionId() === (null == e ? void 0 : e.sessionId) && null != t && t.type !== _.d4z.GUILD_STAGE_VOICE ? t.id : null
+  let e = Chunk979651.Z.getVoiceStateForUser(Chunk314897.default.getId()),
+    t = Chunk592125.Z.getChannel(null == module ? true : module.channelId);
+  return Chunk314897.default.getSessionId() === (null == module ? true : module.sessionId) && null != exports && exports.type !== Chunk981631.d4z.GUILD_STAGE_VOICE ? exports.id : null
 }
 async function m(e, t) {
   if (e) {
@@ -34,7 +35,7 @@ async function m(e, t) {
       let e = new a.Hx(t);
       r.Z.dispatch({
         type: "SECURE_FRAMES_SETTINGS_UPDATE",
-        persistentCodesEnabled: !1
+        persistentCodesEnabled: false
       }), i.Z.show({
         title: p.intl.string(p.t.R0RpRU),
         body: null != (n = e.getAnyErrorMessage()) ? n : p.intl.string(p.t.eAn6z8)
@@ -47,7 +48,7 @@ async function m(e, t) {
 }
 let g = {
   clearUploadedKeyVersions: function() {
-    r.Z.dispatch({
+    Chunk570140.Z.dispatch({
       type: "SECURE_FRAMES_UPLOADED_KEY_VERSION_CLEAR"
     })
   },

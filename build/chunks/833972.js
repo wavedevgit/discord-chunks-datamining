@@ -1,5 +1,6 @@
 /** Chunk was on 1272 **/
-e.exports = {
+/** chunk id: 833972, original params: e,t,n (module,exports,require) **/
+module.exports = {
   table: "table_adb41f",
   header: "header_adb41f",
   nameCell: "nameCell_adb41f",

@@ -1,25 +1,26 @@
 /** Chunk was on web.js **/
+/** chunk id: 222044, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => h
-}), n(190126), n(368063), n(65234), n(111804), n(490233), n(97749), n(388685), n(539854);
-var r = n(147913),
-  i = n(339085),
-  o = n(592125),
-  a = n(768581),
-  s = n(176354),
-  l = n(176505),
-  c = n(149203);
+}), require("./190126.js"), require("./368063.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js"), require("./388685.js"), require("./539854.js");
+var Chunk147913 = require("./147913.js"),
+  Chunk339085 = require("./339085.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk768581 = require("./768581.js"),
+  Chunk176354 = require("./176354.js"),
+  Chunk176505 = require("./176505.js"),
+  Chunk149203 = require("./149203.js");
 
 function u(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
-let d = new Worker(new URL("/assets/" + n.u("80493"), n.b));
+let d = new Worker(new URL("/assets/" + require.u("80493"), require.b));
 
 function f(e) {
   return new Promise(t => {
@@ -40,23 +41,23 @@ function f(e) {
 function _(e) {
   let t = [],
     n = e.defaultReactionEmoji;
-  if ((null == n ? void 0 : n.emojiId) != null) {
+  if ((null == n ? true : n.emojiId) != null) {
     var r, o;
     t.push(a.ZP.getEmojiURL({
       id: n.emojiId,
-      animated: null != (o = null == (r = i.ZP.getUsableCustomEmojiById(n.emojiId)) ? void 0 : r.animated) && o,
+      animated: null != (o = null == (r = i.ZP.getUsableCustomEmojiById(n.emojiId)) ? true : r.animated) && o,
       size: c.kV.reaction
     }))
-  } else(null == n ? void 0 : n.emojiName) != null && t.push(s.ZP.getURL(n.emojiName));
+  } else(null == n ? true : n.emojiName) != null && t.push(s.ZP.getURL(n.emojiName));
   return e.availableTags.forEach(e => {
     null != e.emojiId ? t.push(a.ZP.getEmojiURL({
       id: e.emojiId,
-      animated: !1,
+      animated: false,
       size: c.kV.reaction
     })) : null != e.emojiName && t.push(s.ZP.getURL(e.emojiName))
   }), t
 }
-class p extends r.Z {
+class p extends Chunk147913.Z {
   handleChannelPreload(e) {
     let {
       channelId: t

@@ -1,33 +1,34 @@
 /** Chunk was on web.js **/
+/** chunk id: 877519, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => y
-}), n(388685);
-var r = n(147913),
-  i = n(15624),
-  o = n(70956),
-  a = n(272008),
-  s = n(569984),
-  l = n(497505),
-  c = n(937797),
-  u = n(573196),
-  d = n(977156),
-  f = n(46140);
+}), require("./388685.js");
+var Chunk147913 = require("./147913.js"),
+  Chunk15624 = require("./15624.js"),
+  Chunk70956 = require("./70956.js"),
+  Chunk272008 = require("./272008.js"),
+  Chunk569984 = require("./569984.js"),
+  Chunk497505 = require("./497505.js"),
+  Chunk937797 = require("./937797.js"),
+  Chunk573196 = require("./573196.js"),
+  Chunk977156 = require("./977156.js"),
+  Chunk46140 = require("./46140.js");
 
 function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
-let p = o.Z.Millis.DAY,
-  h = 30 * o.Z.Millis.MINUTE,
-  m = 5 * o.Z.Millis.SECOND,
-  g = 5 * o.Z.Millis.MINUTE,
-  E = 12 * o.Z.Millis.HOUR;
-class b extends r.Z {
+let p = Chunk70956.Z.Millis.DAY,
+  h = 30 * Chunk70956.Z.Millis.MINUTE,
+  m = 5 * Chunk70956.Z.Millis.SECOND,
+  g = 5 * Chunk70956.Z.Millis.MINUTE,
+  E = 12 * Chunk70956.Z.Millis.HOUR;
+class b extends Chunk147913.Z {
   _fetch(e) {
     if ((0, d.cB)({
         location: f.dr.QUESTS_MANAGER

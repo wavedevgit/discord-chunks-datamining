@@ -1,7 +1,8 @@
 /** Chunk was on web.js **/
+/** chunk id: 152477, original params: e (module,exports,re quire) **/
 "use strict";
 var t = "-";
-e.exports = {
+module.exports = {
   encode: function(e, n, r) {
     return e + t + n + t + r
   },

@@ -1,15 +1,16 @@
 /** Chunk was on web.js **/
+/** chunk id: 496158, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   D: () => a
 });
-var r = n(73800),
-  i = n(430824);
+var Chunk73800 = require("./73800.js"),
+  Chunk430824 = require("./430824.js");
 
 function o(e) {
   return "contextless" === e.type ? {
-    channel: void 0,
-    guild: void 0
+    channel: true,
+    guild: true
   } : {
     channel: e.channel,
     guild: i.Z.getGuild(e.channel.guild_id)

@@ -1,5 +1,6 @@
 /** Chunk was on web.js **/
-e.exports = function(e) {
+/** chunk id: 195942, original params: e (module,exports,re quire) **/
+module.exports = function(e) {
   let t = ["bool", "byte", "i16", "i32", "i64", "double", "string", "binary"];
   return {
     name: "Thrift",
@@ -15,8 +16,8 @@ e.exports = function(e) {
       illegal: /\n/,
       contains: [e.inherit(e.TITLE_MODE, {
         starts: {
-          endsWithParent: !0,
-          excludeEnd: !0
+          endsWithParent: true,
+          excludeEnd: true
         }
       })]
     }, {

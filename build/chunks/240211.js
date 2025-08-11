@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 240211, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   notice: "notice__6e2b9",
   isMobile: "isMobile__6e2b9",
   button: "button__6e2b9",

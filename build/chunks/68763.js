@@ -1,5 +1,6 @@
 /** Chunk was on web.js **/
-e.exports = function(e) {
+/** chunk id: 68763, original params: e (module,exports,re quire) **/
+module.exports = function(e) {
   let t = "[a-z'][a-zA-Z0-9_']*",
     n = "(" + t + ":" + t + "|" + t + ")",
     r = {
@@ -18,7 +19,7 @@ e.exports = function(e) {
     s = {
       begin: n + "\\(",
       end: "\\)",
-      returnBegin: !0,
+      returnBegin: true,
       relevance: 0,
       contains: [{
         begin: n,
@@ -26,8 +27,8 @@ e.exports = function(e) {
       }, {
         begin: "\\(",
         end: "\\)",
-        endsWithParent: !0,
-        returnEnd: !0,
+        endsWithParent: true,
+        returnEnd: true,
         relevance: 0
       }]
     },
@@ -47,7 +48,7 @@ e.exports = function(e) {
     d = {
       begin: "#" + e.UNDERSCORE_IDENT_RE,
       relevance: 0,
-      returnBegin: !0,
+      returnBegin: true,
       contains: [{
         begin: "#" + e.UNDERSCORE_IDENT_RE,
         relevance: 0
@@ -128,7 +129,7 @@ e.exports = function(e) {
       className: "function",
       begin: "^" + t + "\\s*\\(",
       end: "->",
-      returnBegin: !0,
+      returnBegin: true,
       illegal: "\\(|#|//|/\\*|\\\\|:|;",
       contains: [E, e.inherit(e.TITLE_MODE, {
         begin: t
@@ -142,8 +143,8 @@ e.exports = function(e) {
       begin: "^-",
       end: "\\.",
       relevance: 0,
-      excludeEnd: !0,
-      returnBegin: !0,
+      excludeEnd: true,
+      returnBegin: true,
       keywords: {
         $pattern: "-" + e.IDENT_RE,
         keyword: g.map(e => `${e}|1.5`).join(" ")

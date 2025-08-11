@@ -1,8 +1,9 @@
 /** Chunk was on web.js **/
+/** chunk id: 232096, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => o
-}), n(388685);
+}), require("./388685.js");
 let r = [
     ["position", "absolute"],
     ["top", "-100px"],
@@ -17,15 +18,15 @@ let r = [
   ];
 
 function o() {
-  let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "",
+  let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : "",
     t = document.createElement("div"),
     n = document.createElement("div");
-  for (let [e, n] of r) t.style[e] = n;
-  for (let [e, t] of i) n.style[e] = t;
-  t.appendChild(n), document.body.appendChild(t), t.className = e;
+  for (let [e, n] of r) exports.style[module] = require;
+  for (let [e, t] of i) require.style[module] = exports;
+  exports.appendChild(require), document.body.appendChild(exports), exports.className = module;
   let o = {
-    width: t.offsetWidth - t.clientWidth,
-    height: t.offsetHeight - t.clientHeight
+    width: exports.offsetWidth - exports.clientWidth,
+    height: exports.offsetHeight - exports.clientHeight
   };
-  return document.body.removeChild(t), o
+  return document.body.removeChild(exports), o
 }

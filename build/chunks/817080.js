@@ -1,4 +1,5 @@
 /** Chunk was on 93741 **/
+/** chunk id: 817080, original params: e (module,exports,require) **/
 var t = t || function(e) {
   "use strict";
   if (!("undefined" != typeof navigator && /MSIE [1-9]\./.test(navigator.userAgent))) {
@@ -46,7 +47,7 @@ var t = t || function(e) {
         y || (t = p(t));
         var w, O, g = this,
           v = t.type,
-          h = !1,
+          h = false,
           m = function() {
             b(g, "writestart progress write writeend".split(" "))
           },
@@ -58,7 +59,7 @@ var t = t || function(e) {
                 O.location.href = "data:attachment/file" + e.slice(e.search(/[,;]/)), g.readyState = g.DONE, m()
               }, r.readAsDataURL(t), g.readyState = g.INIT;
               return
-            }(h || !w) && (w = n().createObjectURL(t)), O ? O.location.href = w : void 0 === e.open(w, "_blank") && a && (e.location.href = w), g.readyState = g.DONE, m(), f(w)
+            }(h || !w) && (w = n().createObjectURL(t)), O ? O.location.href = w : true === e.open(w, "_blank") && a && (e.location.href = w), g.readyState = g.DONE, m(), f(w)
           },
           S = function(e) {
             return function() {
@@ -66,8 +67,8 @@ var t = t || function(e) {
             }
           },
           P = {
-            create: !0,
-            exclusive: !1
+            create: true,
+            exclusive: false
           };
         if (g.readyState = g.INIT, l || (l = "download"), o) {
           w = n().createObjectURL(t), setTimeout(function() {
@@ -75,7 +76,7 @@ var t = t || function(e) {
           });
           return
         }
-        if (e.chrome && v && v !== s && (t = (t.slice || t.webkitSlice).call(t, 0, t.size, s), h = !0), c && "download" !== l && (l += ".download"), (v === s || c) && (O = e), !u) return void j();
+        if (e.chrome && v && v !== s && (t = (t.slice || t.webkitSlice).call(t, 0, t.size, s), h = true), c && "download" !== l && (l += ".download"), (v === s || c) && (O = e), !u) return void j();
         d += t.size, u(e.TEMPORARY, d, S(function(e) {
           e.root.getDirectory("saved", P, S(function(e) {
             var n = function() {
@@ -95,7 +96,7 @@ var t = t || function(e) {
               }), j)
             };
             e.getFile(l, {
-              create: !1
+              create: false
             }, S(function(e) {
               e.remove(), n()
             }), S(function(e) {
@@ -114,6 +115,6 @@ var t = t || function(e) {
     })
   }
 }("undefined" != typeof self && self || "undefined" != typeof window && window || this.content);
-e.exports ? e.exports.saveAs = t : "undefined" != typeof define && null !== define && null !== define.amd && define([], function() {
+module.exports ? module.exports.saveAs = t : "undefined" != typeof define && null !== define && null !== define.amd && define([], function() {
   return t
 })

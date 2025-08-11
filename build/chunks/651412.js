@@ -1,5 +1,6 @@
 /** Chunk was on 22988 **/
-e.exports = {
+/** chunk id: 651412, original params: e,t,n (module,exports,require) **/
+module.exports = {
   descriptionBox: "descriptionBox__981f7",
   descriptionSection: "descriptionSection__981f7",
   descriptionRow: "descriptionRow__981f7",

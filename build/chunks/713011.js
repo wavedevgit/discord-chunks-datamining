@@ -1,10 +1,11 @@
 /** Chunk was on web.js **/
+/** chunk id: 713011, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   F: () => o
 });
-var r = n(573654),
-  i = n(964742);
+var Chunk573654 = require("./573654.js"),
+  Chunk964742 = require("./964742.js");
 
 function o(e) {
   return function() {
@@ -12,7 +13,7 @@ function o(e) {
       n = e.getRegistry();
     a(t);
     var r = t.getSourceId();
-    return null != r && (n.getSource(r, !0).endDrag(t, r), n.unpinSource()), {
+    return null != r && (n.getSource(r, true).endDrag(t, r), n.unpinSource()), {
       type: i.Bs
     }
   }

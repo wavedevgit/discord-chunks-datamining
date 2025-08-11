@@ -1,12 +1,13 @@
 /** Chunk was on web.js **/
+/** chunk id: 798140, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 
 function r(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -33,7 +34,7 @@ function a(e) {
 function s(e) {
   return null == e.end_time ? null : new Date(e.end_time).getTime() - Date.now()
 }
-n.d(t, {
+require.d(exports, {
   Cl: () => a,
   ZP: () => l,
   m$: () => o
@@ -43,14 +44,14 @@ class l {
     Object.values(this.timers).forEach(e => clearTimeout(e)), this.timers = {}
   }
   setTimer(e, t, n) {
-    if (null == e || null == t) return !1;
+    if (null == e || null == t) returnfalse;
     let r = s(t);
-    return null != r && (r <= 0 || (this.timers[e] = setTimeout(n, Math.max(0, r)), !1))
+    return null != r && (r <= 0 || (this.timers[e] = setTimeout(n, Math.max(0, r)), false))
   }
   clearTimer(e) {
     null != e && e in this.timers && (clearTimeout(this.timers[e]), delete this.timers[e])
   }
   constructor() {
-    r(this, "timers", void 0), this.timers = {}
+    r(this, "timers", true), this.timers = {}
   }
 }

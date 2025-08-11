@@ -1,13 +1,14 @@
 /** Chunk was on web.js **/
+/** chunk id: 709054, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.r(t), n.d(t, {
-  DISCORD_EPOCH: () => o.cj,
-  SnowflakeSequence: () => o.Tk,
+require.r(exports), require.d(exports, {
+  DISCORD_EPOCH: () => Chunk67423.cj,
+  SnowflakeSequence: () => Chunk67423.Tk,
   default: () => s
 });
-var r = n(392711),
-  i = n.n(r),
-  o = n(67423);
+var Chunk392711 = require("./392711.js"),
+  i = require.n(Chunk392711),
+  Chunk67423 = require("./67423.js");
 
 function a(e) {
   return e

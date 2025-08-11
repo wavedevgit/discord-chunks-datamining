@@ -1,5 +1,6 @@
 /** Chunk was on 75708 **/
-n.d(t, {
+/** chunk id: 668826, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   KH: () => l,
   TD: () => d,
   YM: () => h,
@@ -9,11 +10,11 @@ n.d(t, {
   jA: () => p,
   xD: () => o,
   yW: () => m
-}), n(35282);
-var i = n(544891),
-  r = n(570140),
-  s = n(120421),
-  a = n(981631);
+}), require("./35282.js");
+var Chunk544891 = require("./544891.js"),
+  Chunk570140 = require("./570140.js"),
+  Chunk120421 = require("./120421.js"),
+  Chunk981631 = require("./981631.js");
 
 function l(e, t) {
   return r.Z.dispatch({
@@ -53,7 +54,7 @@ function u(e, t) {
 }
 
 function m() {
-  return r.Z.dispatch({
+  return Chunk570140.Z.dispatch({
     type: "CLICKER_GAME_RESET"
   })
 }
@@ -81,7 +82,7 @@ async function h(e) {
       body: {
         prize_hash: e.id.split("").reduce((e, t) => e + Number.parseInt(t), 0)
       },
-      rejectWithError: !0
+      rejectWithError: true
     }), r.Z.dispatch({
       type: "CLICKER_GAME_REDEEM_PRIZE_SUCCESS"
     })

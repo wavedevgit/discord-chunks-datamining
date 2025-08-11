@@ -1,5 +1,6 @@
 /** Chunk was on web.js **/
-e.exports = function(e) {
+/** chunk id: 545241, original params: e (module,exports,re quire) **/
+module.exports = function(e) {
   let t = "a-zA-Z_\\-!.?+*=<>&#'",
     n = "[" + t + "][" + t + "0-9/;:]*",
     r = {
@@ -44,7 +45,7 @@ e.exports = function(e) {
       end: "\\)"
     },
     p = {
-      endsWithParent: !0,
+      endsWithParent: true,
       relevance: 0
     },
     h = {

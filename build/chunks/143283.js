@@ -1,9 +1,10 @@
 /** Chunk was on web.js **/
-var r = n(54640),
+/** chunk id: 143283, original params: e,t,n (module,exports,re quire) **/
+var Chunk54640 = require("./54640.js"),
   i = function() {
-    var e = /[^.]+$/.exec(r && r.keys && r.keys.IE_PROTO || "");
-    return e ? "Symbol(src)_1." + e : ""
+    var e = /[^.]+$/.exec(Chunk54640 && Chunk54640.keys && Chunk54640.keys.IE_PROTO || "");
+    return module ? "Symbol(src)_1." + module : ""
   }();
-e.exports = function(e) {
+module.exports = function(e) {
   return !!i && i in e
 }

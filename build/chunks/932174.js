@@ -1,19 +1,20 @@
 /** Chunk was on 27278 **/
-t.d(n, {
+/** chunk id: 932174, original params: e,n,t (module,exports,require) **/
+require.d(exports, {
   Z: () => a
 });
-var r = t(73800),
-  o = t(442837),
-  i = t(522474),
-  l = t(981631);
+var Chunk73800 = require("./73800.js"),
+  Chunk442837 = require("./442837.js"),
+  Chunk522474 = require("./522474.js"),
+  Chunk981631 = require("./981631.js");
 
 function a() {
-  let e = (0, o.e7)([i.Z], () => i.Z.getWindow(l.KJ3.ACTIVITY_POPOUT)),
-    n = r.useMemo(() => null == e ? void 0 : e.window.document, [e]),
-    t = r.useMemo(() => null == n ? void 0 : n.getElementById("app-mount"), [n]);
+  let e = (0, Chunk442837.e7)([Chunk522474.Z], () => Chunk522474.Z.getWindow(Chunk981631.KJ3.ACTIVITY_POPOUT)),
+    n = Chunk73800.useMemo(() => null == module ? true : module.window.document, [module]),
+    t = Chunk73800.useMemo(() => null == exports ? true : exports.getElementById("app-mount"), [exports]);
   return {
-    popoutWindow: e,
-    currentDocument: n,
-    rootNode: t
+    popoutWindow: module,
+    currentDocument: exports,
+    rootNode: require
   }
 }

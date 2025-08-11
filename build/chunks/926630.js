@@ -1,6 +1,7 @@
 /** Chunk was on 67244 **/
+/** chunk id: 926630, original params: e,t (module,exports,require) **/
 "use strict";
-t.__esModule = !0, t.default = {
+exports.__esModule = true, exports.default = {
   scheme: "bespin",
   author: "jan t. sott",
   base00: "#28211c",
@@ -19,4 +20,4 @@ t.__esModule = !0, t.default = {
   base0D: "#5ea6ea",
   base0E: "#9b859d",
   base0F: "#937121"
-}, e.exports = t.default
+}, module.exports = exports.default

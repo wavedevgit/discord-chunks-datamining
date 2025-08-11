@@ -1,19 +1,20 @@
 /** Chunk was on web.js **/
+/** chunk id: 37082, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 let r;
 
 function i(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
-n.d(t, {
+require.d(exports, {
   R: () => s,
   y: () => l
-}), n(49124);
+}), require("./49124.js");
 try {
   r = window.localStorage
 } catch (e) {}
@@ -24,9 +25,9 @@ try {
 function o() {
   let e = "test";
   try {
-    return r.setItem(e, e), r.removeItem(e), !0
+    return r.setItem(module, module), r.removeItem(module), true
   } catch (e) {
-    return !1
+    returnfalse
   }
 }
 class a {
@@ -87,7 +88,7 @@ class s {
     return Promise.resolve(this.get(e))
   }
   constructor() {
-    i(this, "storage", void 0), this.storage = {}
+    i(this, "storage", true), this.storage = {}
   }
 }
 let l = o() ? new a : new s

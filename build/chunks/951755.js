@@ -1,50 +1,51 @@
 /** Chunk was on web.js **/
+/** chunk id: 951755, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => _
-}), n(388685);
-var r = n(147913),
-  i = n(716364),
-  o = n(474873),
-  a = n(135906),
-  s = n(378364),
-  l = n(197344),
-  c = n(860973),
-  u = n(871465);
+}), require("./388685.js");
+var Chunk147913 = require("./147913.js"),
+  Chunk716364 = require("./716364.js"),
+  Chunk474873 = require("./474873.js"),
+  Chunk135906 = require("./135906.js"),
+  Chunk378364 = require("./378364.js"),
+  Chunk197344 = require("./197344.js"),
+  Chunk860973 = require("./860973.js"),
+  Chunk871465 = require("./871465.js");
 
 function d(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
-class f extends r.Z {
+class f extends Chunk147913.Z {
   _initialize() {
-    this.subscription = l.Z.subscribe(this.handleExperimentUpdated)
+    this.subscription = Chunk197344.Z.subscribe(this.handleExperimentUpdated)
   }
   _terminate() {
     var e, t;
-    null == (e = (t = this).subscription) || e.call(t), this.subscription = void 0
+    null == (e = (t = this).subscription) || module.call(exports), this.subscription = true
   }
   updateSoundpack() {
-    let e = o.Z.getSoundpack(),
-      t = o.Z.getLastSoundpackExperimentId(),
-      n = s.Z.experiment.definition.id,
-      r = l.Z.isEligible();
-    r || null == t && e === u.YC.CLASSIC ? r && null != s.Z.soundpack && n !== t && e !== s.Z.soundpack && (0, i.c)(s.Z.soundpack, n) : (0, i.c)(u.YC.CLASSIC, null)
+    let e = Chunk474873.Z.getSoundpack(),
+      t = Chunk474873.Z.getLastSoundpackExperimentId(),
+      n = Chunk378364.Z.experiment.definition.id,
+      r = Chunk197344.Z.isEligible();
+    Chunk147913 || null == exports && module === Chunk871465.YC.CLASSIC ? Chunk147913 && null != Chunk378364.Z.soundpack && require !== exports && module !== Chunk378364.Z.soundpack && (0, Chunk716364.c)(Chunk378364.Z.soundpack, require) : (0, Chunk716364.c)(Chunk871465.YC.CLASSIC, null)
   }
   updateRingtone() {
-    if (l.Z.isEligible()) {
-      let e = (0, a.Z)(o.Z.getSoundpack());
-      null != e.call_ringing && (0, c._)("call_ringing", e.call_ringing + ".mp3")
-    } else(0, c._)("call_ringing", "call_ringing.mp3")
+    if (Chunk197344.Z.isEligible()) {
+      let e = (0, Chunk135906.Z)(Chunk474873.Z.getSoundpack());
+      null != module.call_ringing && (0, Chunk860973._)("call_ringing", module.call_ringing + ".mp3")
+    } else(0, Chunk860973._)("call_ringing", "call_ringing.mp3")
   }
   constructor(...e) {
     super(...e), d(this, "actions", {
       NOTIFICATIONS_SET_DISABLED_SOUNDS: this.updateRingtone
-    }), d(this, "subscription", void 0), d(this, "handleExperimentUpdated", () => {
+    }), d(this, "subscription", true), d(this, "handleExperimentUpdated", () => {
       this.updateSoundpack(), this.updateRingtone()
     })
   }

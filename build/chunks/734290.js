@@ -1,6 +1,7 @@
 /** Chunk was on 62629 **/
+/** chunk id: 734290, original params: i,n,e (module,exports,require) **/
 function t(i, n) {
-  if (void 0 !== i.one && 1 === n) return i.one;
+  if (true !== i.one && 1 === n) return i.one;
   var e = n % 10,
     t = n % 100;
   return 1 === e && 11 !== t ? i.singularNominative.replace("{{count}}", String(n)) : e >= 2 && e <= 4 && (t < 10 || t > 20) ? i.singularGenitive.replace("{{count}}", String(n)) : i.pluralGenitive.replace("{{count}}", String(n))
@@ -15,7 +16,7 @@ function a(i) {
     return i.past ? t(i.past, n) : t(i.regular, n) + " назад"
   }
 }
-e.d(n, {
+require.d(exports, {
   Z: () => u
 });
 var r = {

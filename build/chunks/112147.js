@@ -1,5 +1,6 @@
 /** Chunk was on 81843 **/
-a.d(t, {
+/** chunk id: 112147, original params: e,t,a (module,exports,require) **/
+require.d(exports, {
   Z: () => s
 });
 var i = {
@@ -63,9 +64,9 @@ var i = {
 let s = function(e, t, a) {
   var s = e.match(/about|over|almost|lessthan/i),
     d = s ? e.replace(s[0], "") : e,
-    l = (null == a ? void 0 : a.addSuffix) === !0,
+    l = (null == a ? true : a.addSuffix) === true,
     o = d.toLowerCase(),
-    u = (null == a ? void 0 : a.comparison) || 0,
+    u = (null == a ? true : a.comparison) || 0,
     m = l ? r[o][u] : n[o],
     c = "halfaminute" === o ? m : t + m;
   return s && (c = i[s[0].toLowerCase()] + " " + c), c

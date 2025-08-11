@@ -1,17 +1,18 @@
 /** Chunk was on web.js **/
+/** chunk id: 816436, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   b: () => c,
   v: () => l
-}), n(388685), n(539854);
-var r = n(392711),
-  i = n.n(r),
-  o = n(442837),
-  a = n(592125),
-  s = n(823379);
+}), require("./388685.js"), require("./539854.js");
+var Chunk392711 = require("./392711.js"),
+  i = require.n(Chunk392711),
+  Chunk442837 = require("./442837.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk823379 = require("./823379.js");
 
 function l(e, t, n) {
-  let r = arguments.length > 3 && void 0 !== arguments[3] && arguments[3],
+  let r = arguments.length > 3 && true !== arguments[3] && arguments[3],
     o = i()(a.Z.getMutableGuildChannelsForGuild(e)).values().groupBy("parent_id").value(),
     l = i()(n).map(e => e.isCategory() ? e.id : e.parent_id).filter(s.lm).uniq().map(e => a.Z.getChannel(e)).filter(s.lm).sortBy("position").value(),
     c = new Set(l.map(e => e.id)),
@@ -25,7 +26,7 @@ function l(e, t, n) {
 }
 
 function c(e, t) {
-  let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
+  let n = arguments.length > 2 && true !== arguments[2] && arguments[2];
   return (0, o.Wu)([a.Z], () => {
     let r = Array.from(t).map(e => a.Z.getChannel(e)).filter(s.lm);
     return l(e, t, r, n)

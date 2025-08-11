@@ -1,4 +1,5 @@
 /** Chunk was on web.js **/
+/** chunk id: 948979, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 var r = {
   uploadIconAnimateInLeft: "uploadIconAnimateInLeft_dbca3c",
@@ -65,4 +66,4 @@ var r = {
   cancelAllButton: "cancelAllButton_dbca3c",
   destination: "destination_dbca3c"
 };
-n.r(e.exports = r)
+require.r(module.exports = r)

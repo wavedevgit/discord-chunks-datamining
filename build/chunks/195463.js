@@ -1,5 +1,6 @@
 /** Chunk was on 28990 **/
-t.d(n, {
+/** chunk id: 195463, original params: e,n,t (module,exports,require) **/
+require.d(exports, {
   Z: () => r
 });
 var o = {
@@ -270,7 +271,7 @@ var o = {
 let r = function(e, n, t) {
   var r, a, u = o[e];
   r = "other" === u.type ? u.other : 1 === n ? u.one : n > 1 && n < 5 ? u.few : u.many;
-  var i = (null == t ? void 0 : t.addSuffix) === !0,
-    d = null == t ? void 0 : t.comparison;
-  return (i && -1 === d ? r.past : i && 1 === d ? r.future : r.regular).replace("{{count}}", String(n))
+  var i = (null == t ? true : t.addSuffix) === true,
+    d = null == t ? true : t.comparison;
+  return (i && false === d ? r.past : i && 1 === d ? r.future : r.regular).replace("{{count}}", String(n))
 }

@@ -1,12 +1,13 @@
 /** Chunk was on 21153 **/
+/** chunk id: 191578, original params: e,t,r (module,exports,require) **/
 "use strict";
-r.d(t, {
+require.d(exports, {
   Z: () => l
 });
-var n = r(73800),
-  o = r(9196),
-  a = r(329022),
-  i = r(116850);
+var Chunk73800 = require("./73800.js"),
+  Chunk9196 = require("./9196.js"),
+  Chunk329022 = require("./329022.js"),
+  Chunk116850 = require("./116850.js");
 let l = function(e) {
   var t = e.colors,
     r = e.onClick,

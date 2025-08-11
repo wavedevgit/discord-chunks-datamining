@@ -1,11 +1,12 @@
 /** Chunk was on 67244 **/
+/** chunk id: 566162, original params: e,t,r (module,exports,require) **/
 "use strict";
-r.d(t, {
+require.d(exports, {
   Z: () => s
 });
-var a = r(665352),
-  n = r(855930);
-let s = new a.Z({
+var Chunk665352 = require("./665352.js"),
+  Chunk855930 = require("./855930.js");
+let s = new Chunk665352.Z({
   id: "hsv",
   name: "HSV",
   coords: {
@@ -23,7 +24,7 @@ let s = new a.Z({
       name: "Value"
     }
   },
-  base: n.Z,
+  base: Chunk855930.Z,
   fromBase(e) {
     let [t, r, a] = e, n = (a /= 100) + (r /= 100) * Math.min(a, 1 - a);
     return [t, 0 === n ? 0 : 200 * (1 - a / n), 100 * n]

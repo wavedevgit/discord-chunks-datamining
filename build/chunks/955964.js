@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 955964, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   metadata: "metadata__857bf",
   libraryLink: "libraryLink__857bf",
   libraryIcon: "libraryIcon__857bf",

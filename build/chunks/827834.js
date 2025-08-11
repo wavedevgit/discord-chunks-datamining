@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 827834, original params: e,t (module,exports,re quire) **/
 "use strict";
-t.default = function() {
+exports.default = function() {
   function e(e, t, n, r, i, o) {
     this.message = e, this.expected = t, this.found = n, this.offset = r, this.line = i, this.column = o, this.name = "SyntaxError"
   }
@@ -96,7 +97,7 @@ t.default = function() {
       P = function(e) {
         return {
           type: e.type,
-          ordinal: !1,
+          ordinal: false,
           offset: e.offset || 0,
           options: e.options
         }
@@ -110,7 +111,7 @@ t.default = function() {
       L = function(e) {
         return {
           type: e.type,
-          ordinal: !0,
+          ordinal: true,
           offset: e.offset || 0,
           options: e.options
         }
@@ -257,7 +258,7 @@ t.default = function() {
       eT = {
         line: 1,
         column: 1,
-        seenCR: !1
+        seenCR: false
       },
       eS = 0,
       eA = [],
@@ -270,12 +271,12 @@ t.default = function() {
     function eC(e) {
       function n(e, n, r) {
         var i, o;
-        for (i = n; i < r; i++) "\n" === (o = t.charAt(i)) ? (!e.seenCR && e.line++, e.column = 1, e.seenCR = !1) : "\r" === o || "\u2028" === o || "\u2029" === o ? (e.line++, e.column = 1, e.seenCR = !0) : (e.column++, e.seenCR = !1)
+        for (i = n; i < r; i++) "\n" === (o = t.charAt(i)) ? (!e.seenCR && e.line++, e.column = 1, e.seenCR = false) : "\r" === o || "\u2028" === o || "\u2029" === o ? (e.line++, e.column = 1, e.seenCR = true) : (e.column++, e.seenCR = false)
       }
       return eI !== e && (eI > e && (eI = 0, eT = {
         line: 1,
         column: 1,
-        seenCR: !1
+        seenCR: false
       }), n(eT, eI, e), eI = e), eT
     }
 
@@ -287,7 +288,7 @@ t.default = function() {
       function o(e) {
         var t = 1;
         for (e.sort(function(e, t) {
-            return e.description < t.description ? -1 : +(e.description > t.description)
+            return e.description < t.description ? false : +(e.description > t.description)
           }); t < e.length;) e[t - 1] === e[t] ? e.splice(t, 1) : t++
       }
 
@@ -308,7 +309,7 @@ t.default = function() {
         }
         var r, i = Array(e.length);
         for (r = 0; r < e.length; r++) i[r] = e[r].description;
-        return "Expected " + (e.length > 1 ? i.slice(0, -1).join(", ") + " or " + i[e.length - 1] : i[0]) + " but " + (t ? '"' + n(t) + '"' : "end of input") + " found."
+        return "Expected " + (e.length > 1 ? i.slice(0, false).join(", ") + " or " + i[e.length - 1] : i[0]) + " but " + (t ? '"' + n(t) + '"' : "end of input") + " found."
       }
       var s = eC(i),
         l = i < t.length ? t.charAt(i) : null;
@@ -483,8 +484,8 @@ t.default = function() {
       this.constructor = e
     }
     n.prototype = t.prototype, e.prototype = new n
-  }(e, Error), {
-    SyntaxError: e,
-    parse: t
+  }(module, Error), {
+    SyntaxError: module,
+    parse: exports
   }
 }()

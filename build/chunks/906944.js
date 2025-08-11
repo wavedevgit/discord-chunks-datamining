@@ -1,4 +1,5 @@
 /** Chunk was on web.js **/
+/** chunk id: 906944, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 var r = {
   menu: "menu_c1e9c4",
@@ -38,4 +39,4 @@ var r = {
   sparkles: "sparkles_c1e9c4",
   radioIcon: "radioIcon_c1e9c4"
 };
-n.r(e.exports = r)
+require.r(module.exports = r)

@@ -1,31 +1,32 @@
 /** Chunk was on web.js **/
+/** chunk id: 886196, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => f
-}), n(388685);
-var r = n(570140),
-  i = n(147913),
-  o = n(70956),
-  a = n(875527),
-  s = n(709706),
-  l = n(358820);
+}), require("./388685.js");
+var Chunk570140 = require("./570140.js"),
+  Chunk147913 = require("./147913.js"),
+  Chunk70956 = require("./70956.js"),
+  Chunk875527 = require("./875527.js"),
+  Chunk709706 = require("./709706.js"),
+  Chunk358820 = require("./358820.js");
 
 function c(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
 function u() {
-  return (0, a.wt)({
+  return (0, Chunk875527.wt)({
     location: "VoiceFiltersCatalogManager",
-    autoTrackExposure: !1
+    autoTrackExposure: false
   })
 }
-class d extends i.Z {
+class d extends Chunk147913.Z {
   _initialize() {}
   _terminate() {
     clearTimeout(this.rolloverTimeout), clearTimeout(this.refreshTimeout)
@@ -35,28 +36,28 @@ class d extends i.Z {
     this._scheduleNextRollover(), this._scheduleRefresh()
   }
   handlePostConnectionOpen() {
-    u() && (0, l.wV)()
+    u() && (0, Chunk358820.wV)()
   }
   _scheduleNextRollover() {
     clearTimeout(this.rolloverTimeout);
-    let e = s.Z.getLimitedTimeVoices();
-    if (null == e) return;
-    let t = new Date(e.current_set_end).getTime() - new Date().getTime(),
-      n = new Date(e.next_set_end).getTime() - new Date().getTime();
-    t > 0 ? this.rolloverTimeout = setTimeout(() => {
-      r.Z.dispatch({
+    let e = Chunk709706.Z.getLimitedTimeVoices();
+    if (null == module) return;
+    let t = new Date(module.current_set_end).getTime() - new Date().getTime(),
+      n = new Date(module.next_set_end).getTime() - new Date().getTime();
+    exports > 0 ? this.rolloverTimeout = setTimeout(() => {
+      Chunk570140.Z.dispatch({
         type: "VOICE_FILTER_UPDATE_LIMITED_TIME_VOICES"
       }), this._scheduleNextRollover()
-    }, t) : n > 0 && (this.rolloverTimeout = setTimeout(() => {
-      r.Z.dispatch({
+    }, exports) : require > 0 && (this.rolloverTimeout = setTimeout(() => {
+      Chunk570140.Z.dispatch({
         type: "VOICE_FILTER_UPDATE_LIMITED_TIME_VOICES"
       })
-    }, n))
+    }, require))
   }
   _scheduleRefresh() {
     clearTimeout(this.refreshTimeout), this.refreshTimeout = setTimeout(() => {
-      (0, l.wV)()
-    }, o.Z.Millis.DAY)
+      (0, Chunk358820.wV)()
+    }, Chunk70956.Z.Millis.DAY)
   }
   constructor(...e) {
     super(...e), c(this, "actions", {

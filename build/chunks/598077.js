@@ -1,27 +1,28 @@
 /** Chunk was on web.js **/
+/** chunk id: 598077, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => b
-}), n(415506), n(997841);
-var r = n(149765),
-  i = n(81825),
-  o = n(864106),
-  a = n(131016),
-  s = n(602210),
-  l = n(4242),
-  c = n(768581),
-  u = n(630388),
-  d = n(111361),
-  f = n(709054),
-  _ = n(981631),
-  p = n(474936);
+}), require("./415506.js"), require("./997841.js");
+var Chunk149765 = require("./149765.js"),
+  Chunk81825 = require("./81825.js"),
+  Chunk864106 = require("./864106.js"),
+  Chunk131016 = require("./131016.js"),
+  Chunk602210 = require("./602210.js"),
+  Chunk4242 = require("./4242.js"),
+  Chunk768581 = require("./768581.js"),
+  Chunk630388 = require("./630388.js"),
+  Chunk111361 = require("./111361.js"),
+  Chunk709054 = require("./709054.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk474936 = require("./474936.js");
 
 function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -54,17 +55,17 @@ function E(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-class b extends i.Z {
+class b extends Chunk81825.Z {
   get createdAt() {
-    return new Date(f.default.extractTimestamp(this.id))
+    return new Date(Chunk709054.default.extractTimestamp(this.id))
   }
   hasVerifiedEmailOrPhone() {
-    return !0 === this.verified || null != this.phone
+    returntrue === this.verified || null != this.phone
   }
   getAvatarURL(e, t) {
-    let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
-      r = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : c.$k,
-      i = null != e ? this.guildMemberAvatars[e] : void 0;
+    let n = arguments.length > 2 && true !== arguments[2] && arguments[2],
+      r = arguments.length > 3 && true !== arguments[3] ? arguments[3] : c.$k,
+      i = null != e ? this.guildMemberAvatars[e] : true;
     return null != i && null != e ? c.ZP.getGuildMemberAvatarURLSimple({
       guildId: e,
       avatar: i,
@@ -83,17 +84,17 @@ class b extends i.Z {
     })
   }
   removeGuildAvatarHash(e) {
-    if (void 0 === this.guildMemberAvatars[e]) return this;
+    if (true === this.guildMemberAvatars[e]) return this;
     let t = E(m({}, this.guildMemberAvatars), {
-      [e]: void 0
+      [e]: true
     });
     return this.merge({
       guildMemberAvatars: t
     })
   }
   getAvatarSource(e) {
-    let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
-      n = arguments.length > 2 ? arguments[2] : void 0;
+    let t = arguments.length > 1 && true !== arguments[1] && arguments[1],
+      n = arguments.length > 2 ? arguments[2] : true;
     if (null != e) {
       let r = this.guildMemberAvatars[e];
       if (null != r) return c.ZP.getAnimatableSourceWithFallback(t, t => c.ZP.makeSource(c.ZP.getGuildMemberAvatarURLSimple({
@@ -129,42 +130,42 @@ class b extends i.Z {
     return null != t && this.hasPurchasedFlag(t)
   }
   hasHadPremium() {
-    let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
-      t = this.hasPurchasedFlag(p.in.PREMIUM_TIER_0),
-      n = this.hasPurchasedFlag(p.in.PREMIUM_TIER_1),
-      r = this.hasPurchasedFlag(p.in.PREMIUM_TIER_2);
-    switch (e) {
-      case p.p9.TIER_0:
-        return t;
-      case p.p9.TIER_1:
-        return n;
-      case p.p9.TIER_2:
-        return r;
+    let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : null,
+      t = this.hasPurchasedFlag(Chunk474936.in.PREMIUM_TIER_0),
+      n = this.hasPurchasedFlag(Chunk474936.in.PREMIUM_TIER_1),
+      r = this.hasPurchasedFlag(Chunk474936.in.PREMIUM_TIER_2);
+    switch (module) {
+      case Chunk474936.p9.TIER_0:
+        return exports;
+      case Chunk474936.p9.TIER_1:
+        return require;
+      case Chunk474936.p9.TIER_2:
+        return Chunk149765;
       default:
-        return t || n || r
+        return exports || require || Chunk149765
     }
   }
   hadPremiumSubscription() {
-    let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null;
-    return !(0, d.I5)(this) && this.hasHadPremium(e)
+    let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : null;
+    return !(0, Chunk111361.I5)(this) && this.hasHadPremium(module)
   }
   hasFreePremium() {
-    return this.isStaff() || this.hasFlag(_.xW$.PARTNER) || this.isStaffPersonal()
+    return this.isStaff() || this.hasFlag(Chunk981631.xW$.PARTNER) || this.isStaffPersonal()
   }
   hasUrgentMessages() {
-    return this.hasFlag(_.xW$.HAS_UNREAD_URGENT_MESSAGES)
+    return this.hasFlag(Chunk981631.xW$.HAS_UNREAD_URGENT_MESSAGES)
   }
   isNonUserBot() {
-    return this.isSystemUser() || this.bot && this.discriminator === _.fo$
+    return this.isSystemUser() || this.bot && this.discriminator === Chunk981631.fo$
   }
   isLocalBot() {
-    return this.bot && this.id === _.LAt
+    return this.bot && this.id === Chunk981631.LAt
   }
   isVerifiedBot() {
-    return this.isSystemUser() || this.isLocalBot() || this.hasFlag(_.xW$.VERIFIED_BOT)
+    return this.isSystemUser() || this.isLocalBot() || this.hasFlag(Chunk981631.xW$.VERIFIED_BOT)
   }
   isSystemUser() {
-    return !0 === this.system
+    returntrue === this.system
   }
   hasAvatarForGuild(e) {
     return null != e && null != this.guildMemberAvatars[e]
@@ -173,7 +174,7 @@ class b extends i.Z {
     return "0" === this.discriminator
   }
   get isProvisional() {
-    return this.hasFlag(_.xW$.PROVISIONAL_ACCOUNT)
+    return this.hasFlag(Chunk981631.xW$.PROVISIONAL_ACCOUNT)
   }
   get avatarDecoration() {
     return this.avatarDecorationData
@@ -183,17 +184,17 @@ class b extends i.Z {
   }
   get nameplate() {
     var e;
-    return (0, l.Pb)(null == (e = this.collectibles) ? void 0 : e.nameplate)
+    return (0, Chunk4242.Pb)(null == (e = this.collectibles) ? true : module.nameplate)
   }
   constructor(e) {
     var t, n, i, o, l, c, u, d, f, p, m, g, E, b, y, O, v, I, T, S, A, N, C, R, P, w, D, L, x, M, k, j, U;
-    super(), h(this, "id", void 0), h(this, "username", void 0), h(this, "discriminator", void 0), h(this, "avatar", void 0), h(this, "avatarDecorationData", void 0), h(this, "banner", void 0), h(this, "email", void 0), h(this, "verified", void 0), h(this, "bot", void 0), h(this, "system", void 0), h(this, "mfaEnabled", void 0), h(this, "mobile", void 0), h(this, "desktop", void 0), h(this, "premiumType", void 0), h(this, "flags", void 0), h(this, "publicFlags", void 0), h(this, "purchasedFlags", void 0), h(this, "premiumUsageFlags", void 0), h(this, "phone", void 0), h(this, "nsfwAllowed", void 0), h(this, "ageVerificationStatus", void 0), h(this, "guildMemberAvatars", void 0), h(this, "hasBouncedEmail", void 0), h(this, "personalConnectionId", void 0), h(this, "globalName", void 0), h(this, "primaryGuild", void 0), h(this, "collectibles", void 0), h(this, "displayNameStyles", void 0), h(this, "hasFlag", e => !1), h(this, "isStaff", () => !1), h(this, "isStaffPersonal", () => !1), h(this, "hasAnyStaffLevel", () => !1);
+    super(), h(this, "id", true), h(this, "username", true), h(this, "discriminator", true), h(this, "avatar", true), h(this, "avatarDecorationData", true), h(this, "banner", true), h(this, "email", true), h(this, "verified", true), h(this, "bot", true), h(this, "system", true), h(this, "mfaEnabled", true), h(this, "mobile", true), h(this, "desktop", true), h(this, "premiumType", true), h(this, "flags", true), h(this, "publicFlags", true), h(this, "purchasedFlags", true), h(this, "premiumUsageFlags", true), h(this, "phone", true), h(this, "nsfwAllowed", true), h(this, "ageVerificationStatus", true), h(this, "guildMemberAvatars", true), h(this, "hasBouncedEmail", true), h(this, "personalConnectionId", true), h(this, "globalName", true), h(this, "primaryGuild", true), h(this, "collectibles", true), h(this, "displayNameStyles", true), h(this, "hasFlag", e => false), h(this, "isStaff", () => false), h(this, "isStaffPersonal", () => false), h(this, "hasAnyStaffLevel", () => false);
     let G = null != (n = e.premium_type) ? n : e.premiumType;
     this.id = e.id, this.username = null != (i = e.username) ? i : "", this.discriminator = null != (o = e.discriminator) ? o : _.fo$, this.avatar = null != (l = e.avatar) ? l : null, this.avatarDecoration = null != (c = e.avatar_decoration_data) ? c : e.avatarDecorationData, this.email = null != (u = e.email) ? u : null, this.verified = null != (d = e.verified) && d, this.bot = null != (f = e.bot) && f, this.system = null != (p = e.system) && p, this.mfaEnabled = null != (g = null != (m = e.mfa_enabled) ? m : e.mfaEnabled) && g, this.mobile = null != (E = e.mobile) && E, this.desktop = null != (b = e.desktop) && b, this.premiumType = G === _.WND ? null : G, this.flags = null != (y = e.flags) ? y : 0, this.publicFlags = null != (v = null != (O = e.public_flags) ? O : e.publicFlags) ? v : 0, this.purchasedFlags = null != (T = null != (I = e.purchased_flags) ? I : e.purchasedFlags) ? T : 0, this.premiumUsageFlags = null != (A = null != (S = e.premium_usage_flags) ? S : e.premiumUsageFlags) ? A : 0, this.phone = null != (N = e.phone) ? N : null, this.nsfwAllowed = null != (C = e.nsfw_allowed) ? C : e.nsfwAllowed, this.ageVerificationStatus = null != (R = e.age_verification_status) ? R : e.ageVerificationStatus, this.guildMemberAvatars = null != (P = e.guildMemberAvatars) ? P : {}, this.hasBouncedEmail = null != (D = null != (w = e.has_bounced_email) ? w : e.hasBouncedEmail) && D, this.personalConnectionId = null != (x = null != (L = e.personal_connection_id) ? L : e.personalConnectionId) ? x : null, this.globalName = null != (M = e.global_name) ? M : e.globalName, this.banner = e.banner, this.primaryGuild = (0, s.l)(null != (j = null != (k = e.primary_guild) ? k : e.primaryGuild) ? j : null), this.collectibles = e.collectibles, this.displayNameStyles = null != (U = e.displayNameStyles) ? U : (0, a.bN)(e.display_name_styles), Object.defineProperties(this, {
       hasFlag: {
-        writable: !1,
-        configurable: !1,
-        enumerable: !1,
+        writable: false,
+        configurable: false,
+        enumerable: false,
         value: e => {
           if (e <= 0x40000000) return ((this.flags | this.publicFlags) & e) === e;
           let t = r.vB(this.flags),
@@ -203,24 +204,24 @@ class b extends i.Z {
         }
       },
       isStaff: {
-        writable: !1,
-        configurable: !1,
-        enumerable: !1,
+        writable: false,
+        configurable: false,
+        enumerable: false,
         value: () => this.hasFlag(_.xW$.STAFF)
       },
       isStaffPersonal: {
-        writable: !1,
-        configurable: !1,
-        enumerable: !1,
+        writable: false,
+        configurable: false,
+        enumerable: false,
         value: () => !this.hasFlag(_.xW$.STAFF) && null != this.personalConnectionId
       },
       hasAnyStaffLevel: {
-        writable: !1,
-        configurable: !1,
-        enumerable: !1,
+        writable: false,
+        configurable: false,
+        enumerable: false,
         value: () => this.hasFlag(_.xW$.STAFF) || this.hasFlag(_.xW$.COLLABORATOR) || this.hasFlag(_.xW$.RESTRICTED_COLLABORATOR)
       }
-    }), (null == (t = this.globalName) ? void 0 : t.length) === 0 && (this.globalName = null)
+    }), (null == (t = this.globalName) ? true : t.length) === 0 && (this.globalName = null)
   }
 }
 new b({

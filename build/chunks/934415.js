@@ -1,9 +1,10 @@
 /** Chunk was on web.js **/
+/** chunk id: 934415, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   EO: () => G,
   LY: () => k,
-  Nj: () => o.Z,
+  Nj: () => Chunk90463.Z,
   a5: () => x,
   c4: () => L,
   g7: () => w,
@@ -15,30 +16,30 @@ n.d(t, {
   rt: () => R,
   wR: () => j,
   wl: () => M
-}), n(415506), n(539854), n(388685);
-var r = n(149765),
-  i = n(911969),
-  o = n(90463),
-  a = n(968358),
-  s = n(874748),
-  l = n(590415),
-  c = n(131704),
-  u = n(592125),
-  d = n(984933),
-  f = n(496675),
-  _ = n(944486),
-  p = n(938475),
-  h = n(700785),
-  m = n(709054);
-n(51144);
-var g = n(981631),
-  E = n(474936),
-  b = n(388032);
+}), require("./415506.js"), require("./539854.js"), require("./388685.js");
+var Chunk149765 = require("./149765.js"),
+  Chunk911969 = require("./911969.js"),
+  Chunk90463 = require("./90463.js"),
+  Chunk968358 = require("./968358.js"),
+  Chunk874748 = require("./874748.js"),
+  Chunk590415 = require("./590415.js"),
+  Chunk131704 = require("./131704.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk984933 = require("./984933.js"),
+  Chunk496675 = require("./496675.js"),
+  Chunk944486 = require("./944486.js"),
+  Chunk938475 = require("./938475.js"),
+  Chunk700785 = require("./700785.js"),
+  Chunk709054 = require("./709054.js");
+require("./51144.js");
+var Chunk981631 = require("./981631.js"),
+  Chunk474936 = require("./474936.js"),
+  Chunk388032 = require("./388032.jsx");
 let {
   GUILD_VOICE: y,
   GUILD_CATEGORY: O,
   GUILD_STAGE_VOICE: v
-} = g.d4z;
+} = Chunk981631.d4z;
 
 function I(e, t) {
   return e === t || e === O
@@ -65,7 +66,7 @@ function S(e, t, n) {
 }
 
 function A(e, t, n) {
-  let r = arguments.length > 3 && void 0 !== arguments[3] && arguments[3],
+  let r = arguments.length > 3 && true !== arguments[3] && arguments[3],
     o = [];
   return (n.length > 0 || r) && o.push(T(e, t, i.BN.ROLE)), n.forEach(e => {
     o.push(S(e, t, i.BN.ROLE))
@@ -93,12 +94,12 @@ function P(e, t, n) {
   var r, i;
   let o = e.getGuildId(),
     s = n.getGuild(o),
-    l = null != (r = null == s ? void 0 : s.maxVideoChannelUsers) ? r : -1,
-    c = null != (i = null == s ? void 0 : s.maxStageVideoChannelUsers) ? i : -1,
+    l = null != (r = null == s ? true : s.maxVideoChannelUsers) ? r : false,
+    c = null != (i = null == s ? true : s.maxStageVideoChannelUsers) ? i : false,
     u = p.ZP.countVoiceStatesForChannel(e.id),
     d = p.ZP.getVoiceStatesForChannel(e),
     _ = f.Z.can(g.Plq.MOVE_MEMBERS, e) && f.Z.can(g.Plq.CONNECT, e),
-    h = !1;
+    h = false;
   h = e.type === v ? null != o && (t.hasVideo(e.id) || (0, a.a)(d)) && c > 0 && u >= c : null != o && t.hasVideo(e.id) && l > 0 && u >= l + +!!_;
   let m = e.userLimit > 0 && u >= e.userLimit;
   return h || m && !_

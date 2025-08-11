@@ -1,21 +1,22 @@
 /** Chunk was on 1272 **/
-n.d(t, {
+/** chunk id: 852926, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   GC: () => _,
   _X: () => b,
   br: () => h,
   em: () => m,
   jU: () => g
 });
-var r = n(13245),
-  i = n(837268),
-  l = n(371651),
-  a = n(610394),
-  o = n(998502),
-  s = n(13140),
-  c = n(996106),
-  u = n(914946),
-  d = n(186901),
-  p = n(981631);
+var Chunk13245 = require("./13245.js"),
+  Chunk837268 = require("./837268.js"),
+  Chunk371651 = require("./371651.js"),
+  Chunk610394 = require("./610394.js"),
+  Chunk998502 = require("./998502.js"),
+  Chunk13140 = require("./13140.js"),
+  Chunk996106 = require("./996106.js"),
+  Chunk914946 = require("./914946.js"),
+  Chunk186901 = require("./186901.js"),
+  Chunk981631 = require("./981631.js");
 let f = ["207646673902501888"];
 
 function h(e) {
@@ -26,12 +27,12 @@ function g(e) {
   return null == e ? {
     lock: p.VqG,
     context: p.IlC.APP
-  } : h(e) ? (r.Z.setInputLocked(!1, e), {
+  } : h(e) ? (r.Z.setInputLocked(false, e), {
     lock() {
-      r.Z.setInputLocked(!0, e)
+      r.Z.setInputLocked(true, e)
     },
     context: p.IlC.POPOUT
-  }) : (o.ZP.focus(null, !0), {
+  }) : (o.ZP.focus(null, true), {
     lock() {
       o.ZP.setForegroundProcess(e)
     },
@@ -45,7 +46,7 @@ let m = async (e, t, n) => {
   }, "No Client ID Specified"));
   let r = o.ZP.releaseChannel !== p.R5N.CANARY && !f.includes(n) && e.transport !== d.He.POST_MESSAGE;
   return await (0, u.vv)(n, r), (0, u.YS)(e, n, t)
-}, b = () => (0, u.tr)(e => {
+}, b = () => (0, Chunk914946.tr)(e => {
   let t = [];
   return null != e.modeOptions.shortcut && Array.isArray(e.modeOptions.shortcut) && (t = e.modeOptions.shortcut.map(e => {
     var t;

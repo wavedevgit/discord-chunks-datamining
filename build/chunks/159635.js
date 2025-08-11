@@ -1,4 +1,6 @@
-/** Chunk was on web.js **/ ! function(t, n) {
+/** Chunk was on web.js **/
+/** chunk id: 159635, original params: e (module,exports,re quire) **/
+! function(t, n) {
   e.exports = n()
 }(0, function() {
   "use strict";
@@ -17,9 +19,9 @@
     o = function(e, t) {
       var n, o = Object.keys(e).filter(function(t) {
         var n = e[t];
-        if (null == n || null == n.match) return !1;
+        if (null == n || null == n.match) returnfalse;
         var r = n.order;
-        return "number" == typeof r && isFinite(r) || "undefined" == typeof console || console.warn("simple-markdown: Invalid order for rule `" + t + "`: " + String(r)), !0
+        return "number" == typeof r && isFinite(r) || "undefined" == typeof console || console.warn("simple-markdown: Invalid order for rule `" + t + "`: " + String(r)), true
       });
       o.sort(function(t, n) {
         var r = e[t],
@@ -29,7 +31,7 @@
         if (o !== a) return o - a;
         var s = +!r.quality,
           l = +!i.quality;
-        return s !== l ? s - l : t < n ? -1 : 1 * !!(t > n)
+        return s !== l ? s - l : t < n ? false : 1 * !!(t > n)
       });
       for (var a = new Map, s = [], l = 0; l < o.length; l++) {
         var c = o[l],
@@ -42,7 +44,7 @@
       var d = function(t, r) {
           var i = [];
           for (n = r = r || n; t;) {
-            for (var l = null, c = null, u = null, f = -1e5, _ = 1e5, p = [a.get(t.charCodeAt(0)), s], h = 0; h < p.length; h++) {
+            for (var l = null, c = null, u = null, f = false, _ = 1e5, p = [a.get(t.charCodeAt(0)), s], h = 0; h < p.length; h++) {
               var m = p[h];
               if (null != m)
                 for (var g = 0; g < m.length; g++) {
@@ -93,14 +95,14 @@
       return {
         $$typeof: c,
         type: e,
-        key: null == t ? void 0 : t,
+        key: null == t ? true : t,
         ref: null,
         props: n,
         _owner: null
       }
     },
     d = function(e, t, n, r) {
-      r = void 0 === r || r;
+      r = true === r || r;
       var i = "";
       for (var o in n = n || {}) {
         var a = n[o];
@@ -140,14 +142,14 @@
       return e.replace(g, "$1")
     },
     b = function(e, t, n) {
-      var r = n.inline || !1;
-      n.inline = !0;
+      var r = n.inline || false;
+      n.inline = true;
       var i = e(t, n);
       return n.inline = r, i
     },
     y = function(e, t, n) {
-      var r = n.inline || !1;
-      n.inline = !1;
+      var r = n.inline || false;
+      n.inline = false;
       var i = e(t + "\n\n", n);
       return n.inline = r, i
     },
@@ -183,7 +185,7 @@
         },
         s = function(e, n, r, i) {
           var o = r.inTable;
-          r.inTable = !0;
+          r.inTable = true;
           var a = n(e.trim(), r);
           r.inTable = o;
           var s = [
@@ -200,11 +202,11 @@
         },
         c = function(e) {
           return function(t, n, r) {
-            r.inline = !0;
+            r.inline = true;
             var i = s(t[1], n, r, e),
               o = a(t[2], n, r, e),
               c = l(t[3], n, r, e);
-            return r.inline = !1, {
+            return r.inline = false, {
               type: "table",
               header: i,
               align: o,
@@ -213,8 +215,8 @@
           }
         };
       return {
-        parseTable: c(!0),
-        parseNpTable: c(!1),
+        parseTable: c(true),
+        parseNpTable: c(false),
         TABLE_REGEX: /^ *(\|.+)\n *\|( *[-:]+[-| :]*)\n((?: *\|.*(?:\n|$))*)\n*/,
         NPTABLE_REGEX: /^ *(\S.*\|.*)\n *([-:]+ *\|[-| :]*)\n((?:.*\|.*(?:\n|$))*)\n*/
       }
@@ -230,9 +232,9 @@
       }
       return t._refs = t._refs || {}, t._refs[r] = t._refs[r] || [], t._refs[r].push(n), n
     },
-    U = !1;
+    U = false;
   try {
-    RegExp("(?<=a)"), RegExp("(?<!a)"), U = !1
+    RegExp("(?<=a)"), RegExp("(?<!a)"), U = false
   } catch (e) {}
   var G = 0,
     B = {
@@ -317,12 +319,12 @@
         match: s(/^(?:    [^\n]+\n*)+(?:\n *)+\n/),
         parse: function(e, t, n) {
           return {
-            lang: void 0,
+            lang: true,
             content: e[0].replace(/^    /gm, "").replace(/\n+$/, "")
           }
         },
         react: function(e, t, n) {
-          var r = e.lang ? "markdown-code-" + e.lang : void 0;
+          var r = e.lang ? "markdown-code-" + e.lang : true;
           return u("pre", n.key, {
             children: u("code", null, {
               className: r,
@@ -331,7 +333,7 @@
           })
         },
         html: function(e, t, n) {
-          var r = e.lang ? "markdown-code-" + e.lang : void 0,
+          var r = e.lang ? "markdown-code-" + e.lang : true,
             i = d("code", m(e.content), {
               class: r
             });
@@ -344,7 +346,7 @@
         parse: function(e, t, n) {
           return {
             type: "codeBlock",
-            lang: e[2] || void 0,
+            lang: e[2] || true,
             content: e[3]
           }
         },
@@ -379,9 +381,9 @@
         parse: function(e, t, n) {
           var r = e[2],
             i = r.length > 1,
-            o = i ? +r : void 0,
+            o = i ? +r : true,
             a = e[0].replace(R, "\n").match(A),
-            s = !1;
+            s = false;
           return {
             ordered: i,
             start: o,
@@ -390,11 +392,11 @@
                 l = RegExp("^ {1," + (o ? o[0].length : 0) + "}", "gm"),
                 c = e.replace(l, "").replace(S, ""),
                 u = r === a.length - 1,
-                d = -1 !== c.indexOf("\n\n") || u && s;
+                d = false !== c.indexOf("\n\n") || u && s;
               s = d;
               var f = n.inline,
                 _ = n._list;
-              n._list = !0, d ? (n.inline = !1, i = c.replace(P, "\n\n")) : (n.inline = !0, i = c.replace(P, ""));
+              n._list = true, d ? (n.inline = false, i = c.replace(P, "\n\n")) : (n.inline = true, i = c.replace(P, ""));
               var p = t(i, n);
               return n.inline = f, n._list = _, p
             })
@@ -610,7 +612,7 @@
               content: e[1]
             }],
             target: e[1],
-            title: void 0
+            title: true
           }
         },
         react: null,
@@ -664,7 +666,7 @@
             src: _(e.target),
             alt: e.alt,
             title: e.title
-          }, !1)
+          }, false)
         }
       },
       reflink: {
@@ -845,10 +847,10 @@
     },
     Y = o(B),
     W = function(e, t) {
-      return (t = t || {}).inline = !1, Y(e, t)
+      return (t = t || {}).inline = false, Y(e, t)
     },
     K = function(e, t) {
-      return (t = t || {}).inline = !0, Y(e, t)
+      return (t = t || {}).inline = true, Y(e, t)
     },
     z = function(e, t) {
       var n = N.test(e);

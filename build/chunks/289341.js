@@ -1,19 +1,20 @@
 /** Chunk was on 1272 **/
-n.d(t, {
+/** chunk id: 289341, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => g
-}), n(35282), n(388685), n(190126), n(368063), n(65234), n(111804), n(490233), n(97749);
-var r = n(73800),
-  i = n(442837),
-  l = n(668781),
-  a = n(493683),
-  o = n(100527),
-  s = n(906732),
-  c = n(835473),
-  u = n(703656),
-  d = n(594174),
-  p = n(122613),
-  f = n(649256),
-  h = n(388032);
+}), require("./35282.js"), require("./388685.js"), require("./190126.js"), require("./368063.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk442837 = require("./442837.js"),
+  Chunk668781 = require("./668781.js"),
+  Chunk493683 = require("./493683.js"),
+  Chunk100527 = require("./100527.js"),
+  Chunk906732 = require("./906732.js"),
+  Chunk835473 = require("./835473.js"),
+  Chunk703656 = require("./703656.js"),
+  Chunk594174 = require("./594174.js"),
+  Chunk122613 = require("./122613.js"),
+  Chunk649256 = require("./649256.js"),
+  Chunk388032 = require("./388032.js");
 
 function g(e) {
   var t, n;
@@ -23,7 +24,7 @@ function g(e) {
     analyticsLocations: b
   } = (0, s.ZP)([...m, o.Z.ACTIVITY_DETAIL_PAGE]), {
     applicationId: _
-  } = g.params, [O] = (0, c.Z)([_]), E = null == O || null == (t = O.bot) ? void 0 : t.id, y = (0, i.e7)([d.default], () => d.default.getCurrentUser());
+  } = g.params, [O] = (0, c.Z)([_]), E = null == O || null == (t = O.bot) ? true : t.id, y = (0, i.e7)([d.default], () => d.default.getCurrentUser());
   return r.useEffect(() => {
     null != E && null != y && (async () => {
       try {
@@ -32,7 +33,7 @@ function g(e) {
           n = await a.Z.openPrivateChannel({
             recipientIds: E
           }),
-          r = null != (e = t.searchParams.get("referrer_id")) ? e : void 0,
+          r = null != (e = t.searchParams.get("referrer_id")) ? e : true,
           {
             customId: i
           } = await (0, f.ur)(_, t.searchParams.get("link_id"), t.searchParams.get("custom_id"));

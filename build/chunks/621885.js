@@ -1,5 +1,6 @@
 /** Chunk was on 22988 **/
-e.exports = {
+/** chunk id: 621885, original params: e,t,n (module,exports,require) **/
+module.exports = {
   label: "label__27da5",
   createLabel: "createLabel__27da5",
   labelIcon: "labelIcon__27da5",

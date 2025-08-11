@@ -1,5 +1,6 @@
 /** Chunk was on web.js **/
+/** chunk id: 967776, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   loadingPopout: "loadingPopout__58f1c"
 }

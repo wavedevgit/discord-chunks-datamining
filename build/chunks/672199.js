@@ -1,17 +1,18 @@
 /** Chunk was on 89298 **/
-n.d(t, {
+/** chunk id: 672199, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => f
 });
-var i = n(13245),
-  r = n(45114),
-  o = n(562224),
-  l = n(145597),
-  a = n(620954),
-  s = n(987650),
-  c = n(981631),
-  u = n(37113),
-  d = n(388032),
-  p = n(704483);
+var Chunk13245 = require("./13245.js"),
+  Chunk45114 = require("./45114.js"),
+  Chunk562224 = require("./562224.js"),
+  Chunk145597 = require("./145597.js"),
+  Chunk620954 = require("./620954.js"),
+  Chunk987650 = require("./987650.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk37113 = require("./37113.js"),
+  Chunk388032 = require("./388032.jsx"),
+  Chunk704483 = require("./704483.js");
 
 function f(e, t, n, f) {
   let h = t.username,
@@ -48,7 +49,7 @@ function f(e, t, n, f) {
         section: c.jXE.OVERLAY,
         object: c.qAy.ACK_DECLINE_REQUEST_TO_STREAM,
         objectType: c.Qqv.ACK_SEMI_AUTOMATIC
-      }, !0, !0), i.Z.updateNotificationStatus(n), O("decline")
+      }, true, true), i.Z.updateNotificationStatus(n), O("decline")
     },
     onDismissClick: () => {
       O("dismiss")

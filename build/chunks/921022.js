@@ -1,15 +1,16 @@
 /** Chunk was on web.js **/
+/** chunk id: 921022, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => o
 });
-var r = n(73800),
-  i = n(710251);
+var Chunk73800 = require("./73800.js"),
+  Chunk710251 = require("./710251.js");
 
 function o(e) {
   let {
     delay: t,
-    disable: n = !1
+    disable: n = false
   } = e, o = (0, i.Z)();
   r.useEffect(() => {
     if (t <= 0 || n) return;

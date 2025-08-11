@@ -1,19 +1,20 @@
 /** Chunk was on web.js **/
+/** chunk id: 931261, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   g: () => h,
   s: () => m
 });
-var r = n(399606),
-  i = n(637853),
-  o = n(160404),
-  a = n(592125),
-  s = n(430824),
-  l = n(563534),
-  c = n(199689),
-  u = n(460347),
-  d = n(981631),
-  f = n(176505);
+var Chunk399606 = require("./399606.js"),
+  Chunk637853 = require("./637853.js"),
+  Chunk160404 = require("./160404.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk430824 = require("./430824.js"),
+  Chunk563534 = require("./563534.js"),
+  Chunk199689 = require("./199689.js"),
+  Chunk460347 = require("./460347.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk176505 = require("./176505.js");
 
 function _(e) {
   var t;
@@ -26,23 +27,23 @@ function _(e) {
 function p(e, t) {
   let n = t.getMutableGuildChannelsForGuild(e);
   for (let e in n)
-    if (n[e].hasFlag(f.zZ.IS_GUILD_RESOURCE_CHANNEL)) return !0;
-  return !1
+    if (n[e].hasFlag(f.zZ.IS_GUILD_RESOURCE_CHANNEL)) returntrue;
+  returnfalse
 }
 
 function h(e) {
   let t = (0, u.Z)(e);
   return (0, r.e7)([a.Z, s.Z, o.Z], () => {
-    if (__OVERLAY__ || e === d.ME || e === d.I_8) return !1;
+    if (__OVERLAY__ || e === d.ME || e === d.I_8) returnfalse;
     let n = s.Z.getGuild(e);
-    return !!(null == n ? void 0 : n.features.has(d.oNc.COMMUNITY)) && (o.Z.isFullServerPreview(e) ? _(n) : (0, i.wC)(e) ? t || p(e, a.Z) : !!(0, c.Z)(n) && (t || p(e, a.Z)))
+    return !!(null == n ? true : n.features.has(d.oNc.COMMUNITY)) && (o.Z.isFullServerPreview(e) ? _(n) : (0, i.wC)(e) ? t || p(e, a.Z) : !!(0, c.Z)(n) && (t || p(e, a.Z)))
   }, [e, t])
 }
 
 function m(e) {
   let t = s.Z.getGuild(e),
     n = o.Z.isFullServerPreview(e);
-  if (null == t || __OVERLAY__ || e === d.ME || e === d.I_8) return !1;
+  if (null == t || __OVERLAY__ || e === d.ME || e === d.I_8) returnfalse;
   if (n) return _(t);
   let r = (0, i.wC)(e) && t.features.has(d.oNc.GUILD_ONBOARDING) && t.features.has(d.oNc.GUILD_SERVER_GUIDE);
   return (t.features.has(d.oNc.GUILD_ONBOARDING) && t.features.has(d.oNc.GUILD_SERVER_GUIDE) || r) && t.features.has(d.oNc.COMMUNITY)

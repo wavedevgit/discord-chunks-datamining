@@ -1,27 +1,28 @@
 /** Chunk was on 49152 **/
-n.d(t, {
+/** chunk id: 576171, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => h
 });
-var r = n(73800),
-  i = n(442837),
-  l = n(445384),
-  a = n(420438),
-  s = n(271383),
-  o = n(430824),
-  c = n(594174),
-  u = n(981631),
-  d = n(440493);
+var Chunk73800 = require("./73800.js"),
+  Chunk442837 = require("./442837.js"),
+  Chunk445384 = require("./445384.js"),
+  Chunk420438 = require("./420438.js"),
+  Chunk271383 = require("./271383.js"),
+  Chunk430824 = require("./430824.js"),
+  Chunk594174 = require("./594174.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk440493 = require("./440493.js");
 
 function h(e) {
   let t = (0, i.e7)([o.Z, a.Z, c.default, s.ZP], () => {
     let t = o.Z.getGuild(e);
-    if ((null == t ? void 0 : t.features.has(u.oNc.HUB)) !== !0 || !0 === a.Z.hasViewedPrompt(d.r.REAL_NAME_PROMPT, t.id)) return null;
+    if ((null == t ? true : t.features.has(u.oNc.HUB)) !== true || true === a.Z.hasViewedPrompt(d.r.REAL_NAME_PROMPT, t.id)) return null;
     let n = c.default.getCurrentUser();
     if (null == n) return null;
-    let r = s.ZP.getMember(t.id, null == n ? void 0 : n.id);
-    return (null == r ? void 0 : r.nick) == null
+    let r = s.ZP.getMember(t.id, null == n ? true : n.id);
+    return (null == r ? true : r.nick) == null
   });
   return r.useEffect(() => {
     null != e && null != t && (t || l.Z.viewPrompt(d.r.REAL_NAME_PROMPT, e))
-  }, [t, e]), !0 === t
+  }, [t, e]), true === t
 }

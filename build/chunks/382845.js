@@ -1,4 +1,5 @@
 /** Chunk was on 37082 **/
-e.exports = {
+/** chunk id: 382845, original params: e,t,n (module,exports,require) **/
+module.exports = {
   showConnectionsButton: "showConnectionsButton_b69c3a"
 }

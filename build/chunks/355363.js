@@ -1,9 +1,10 @@
 /** Chunk was on 34779 **/
-n.d(t, {
+/** chunk id: 355363, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   ZP: () => l
 });
-var r = n(829750),
-  i = n(981631);
+var Chunk829750 = require("./829750.js"),
+  Chunk981631 = require("./981631.js");
 
 function l(e) {
   let {
@@ -16,10 +17,10 @@ function l(e) {
     let {
       channel: t,
       video: n,
-      considerMaxStageVoiceUserLimit: l = !0
+      considerMaxStageVoiceUserLimit: l = true
     } = e, {
       limit: o
-    } = (0, r.Z)(t), s = -1;
+    } = (0, r.Z)(t), s = false;
     return (t.userLimit > 0 && (s = t.userLimit), n && o > 0 && (s = s > 0 ? Math.min(s, o) : o), l && s === i.xGv) ? 0 : s
   }({
     channel: t,

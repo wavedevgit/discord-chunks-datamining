@@ -1,24 +1,25 @@
 /** Chunk was on web.js **/
+/** chunk id: 458772, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => d
-}), n(388685), n(467055);
-var r = n(442837),
-  i = n(570140),
-  o = n(710845),
-  a = n(93093);
+}), require("./388685.js"), require("./467055.js");
+var Chunk442837 = require("./442837.js"),
+  Chunk570140 = require("./570140.js"),
+  Chunk710845 = require("./710845.js"),
+  Chunk93093 = require("./93093.js");
 
 function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
-let l = new o.Z("BasicChannelCacheStore"),
-  c = !1;
-class u extends r.ZP.Store {
+let l = new Chunk710845.Z("BasicChannelCacheStore"),
+  c = false;
+class u extends Chunk442837.ZP.Store {
   hasChannel(e) {
     return this.channels.has(e)
   }
@@ -40,7 +41,7 @@ class u extends r.ZP.Store {
     this.delete(e)
   }
   initialize() {
-    this.waitFor(a.Z)
+    this.waitFor(Chunk93093.Z)
   }
   handleCacheLoadedLazy(e) {
     for (let [t, n] of(this.guilds = new Map, this.channels = new Map, e.basicGuildChannels))
@@ -62,7 +63,7 @@ class u extends r.ZP.Store {
     this.guilds.delete(e)
   }
   constructor() {
-    super(i.Z, {
+    super(Chunk570140.Z, {
       CACHE_LOADED_LAZY_NO_CACHE: e => this.handleCacheLoadedLazyNoCache(e),
       CACHE_LOADED_LAZY: e => this.handleCacheLoadedLazy(e),
       CONNECTION_OPEN: e => this.handleConnectionOpen(e),

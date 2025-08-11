@@ -1,34 +1,35 @@
 /** Chunk was on 1272 **/
-n.d(t, {
+/** chunk id: 46832, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => O
-}), n(388685), n(539854);
-var r = n(836560),
-  i = n(317381),
-  l = n(16609),
-  a = n(626135),
-  o = n(585483),
-  s = n(70956),
-  c = n(996106),
-  u = n(631467),
-  d = n(452426),
-  p = n(186901),
-  f = n(981631);
+}), require("./388685.js"), require("./539854.js");
+var Chunk836560 = require("./836560.js"),
+  Chunk317381 = require("./317381.js"),
+  Chunk16609 = require("./16609.js"),
+  Chunk626135 = require("./626135.js"),
+  Chunk585483 = require("./585483.js"),
+  Chunk70956 = require("./70956.js"),
+  Chunk996106 = require("./996106.js"),
+  Chunk631467 = require("./631467.js"),
+  Chunk452426 = require("./452426.js"),
+  Chunk186901 = require("./186901.js"),
+  Chunk981631 = require("./981631.js");
 
 function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
-let g = 10 * s.Z.Millis.SECOND,
+let g = 10 * Chunk70956.Z.Millis.SECOND,
   m = new Map,
   b = new Set,
   _ = (e, t, n) => {
     n([u.Z.CLOSE, t], e)
   };
-class O extends r.EventEmitter {
+class O extends Chunk836560.EventEmitter {
   routeEvent(e, t, n, r) {
     if (!Array.isArray(n)) return void console.warn("[PostMessageTransport] Protocol error: event data should be an Array!");
     let [i, l] = n;
@@ -56,10 +57,10 @@ class O extends r.EventEmitter {
   }
   constructor(e, t, r, s) {
     var u;
-    super(), u = this, h(this, "validateSocketClient", void 0), h(this, "logger", void 0), h(this, "createPostMessageProxySocket", void 0), h(this, "onFrameHandled", void 0), h(this, "handshakeFailureTimeoutId", void 0), h(this, "disconnectSocket", function(e, t) {
+    super(), u = this, h(this, "validateSocketClient", true), h(this, "logger", true), h(this, "createPostMessageProxySocket", true), h(this, "onFrameHandled", true), h(this, "handshakeFailureTimeoutId", true), h(this, "disconnectSocket", function(e, t) {
       var n, r;
-      let i = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
-      u.emit("disconnect", e, i ? void 0 : t), e.close(t.code, null != (n = t.message) ? n : "Unknown");
+      let i = arguments.length > 2 && true !== arguments[2] && arguments[2];
+      u.emit("disconnect", e, i ? true : t), e.close(t.code, null != (n = t.message) ? n : "Unknown");
       let [l] = null != (r = Array.from(m.entries()).find(t => {
         let [n, r] = t;
         return r === e
@@ -93,7 +94,7 @@ class O extends r.EventEmitter {
       null != i && null != r && (this.disconnectSocket(i, {
         code: f.$VG.CLOSE_NORMAL,
         message: "iFrame gone"
-      }, !0), m.delete(r))
+      }, true), m.delete(r))
     }), h(this, "handleMessage", (e, t, n) => {
       let r = m.get(t);
       try {
@@ -103,7 +104,7 @@ class O extends r.EventEmitter {
         null != r ? this.disconnectSocket(r, {
           code: e.code,
           message: e.message
-        }, !0) : _(t, {
+        }, true) : _(t, {
           code: e.code,
           message: e.message
         }, n)

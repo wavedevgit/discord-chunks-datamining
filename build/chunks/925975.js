@@ -1,24 +1,25 @@
 /** Chunk was on web.js **/
+/** chunk id: 925975, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   g: () => g
-}), n(781311), n(388685), n(35282), n(704826), n(804061);
-var r = n(159635),
-  i = n.n(r),
-  o = n(969812),
-  a = n(904245),
-  s = n(367907),
-  l = n(339085),
-  c = n(222677),
-  u = n(995774),
-  d = n(695346),
-  f = n(375954),
-  _ = n(981631);
+}), require("./781311.js"), require("./388685.js"), require("./35282.js"), require("./704826.js"), require("./804061.js");
+var Chunk159635 = require("./159635.js"),
+  i = require.n(Chunk159635),
+  Chunk969812 = require("./969812.js"),
+  Chunk904245 = require("./904245.js"),
+  Chunk367907 = require("./367907.js"),
+  Chunk339085 = require("./339085.js"),
+  Chunk222677 = require("./222677.js"),
+  Chunk995774 = require("./995774.js"),
+  Chunk695346 = require("./695346.js"),
+  Chunk375954 = require("./375954.js"),
+  Chunk981631 = require("./981631.js");
 let p = /\\([*?+/])/g,
   h = {
     tts: {
       action: () => ({
-        tts: d.OW.getSetting()
+        tts: Chunk695346.OW.getSetting()
       })
     },
     me: {
@@ -61,7 +62,7 @@ let p = /\\([*?+/])/g,
         if (n || !f.Z.hasPresent(r.id)) return;
         let i = f.Z.getMessages(r.id).last();
         if (null == i || null == i.id) return;
-        let o = l.ZP.getDisambiguatedEmojiContext(r.guild_id).getByName(e.trim().slice(2, -1));
+        let o = l.ZP.getDisambiguatedEmojiContext(r.guild_id).getByName(e.trim().slice(2, false));
         if (null != o) return (0, c.rU)(r.id, i.id, (0, u.g1)(o)), {
           content: ""
         }
@@ -80,7 +81,7 @@ let p = /\\([*?+/])/g,
         if (null == s || null == s.id) return {
           content: ""
         };
-        let [l, c, u, d] = Array.from(null != (n = e.match(this.match.regex)) ? n : []), _ = null != (r = null == d ? void 0 : d.split("")) ? r : [];
+        let [l, c, u, d] = Array.from(null != (n = e.match(this.match.regex)) ? n : []), _ = null != (r = null == d ? true : d.split("")) ? r : [];
         c = c.replace(p, (e, t) => t), u = u.replace(p, (e, t) => t);
         let h = _.includes("g") ? s.content.replaceAll(c, u) : s.content.replace(c, u);
         return (null == h || "" === h.trim()) && 0 === s.attachments.length ? a.Z.deleteMessage(o.id, s.id) : h !== s.content && a.Z.editMessage(o.id, s.id, {
@@ -108,7 +109,7 @@ function g(e, t) {
     let i = h[r];
     if (null != i.match) {
       var n;
-      if (null == (n = i.match.regex) ? void 0 : n.test(e)) return m(r, i, e, t);
+      if (null == (n = i.match.regex) ? true : n.test(e)) return m(r, i, e, t);
       continue
     }
     if (d.dN.getSetting() && "/" === e[0]) {

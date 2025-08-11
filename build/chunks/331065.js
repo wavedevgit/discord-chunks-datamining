@@ -1,17 +1,18 @@
 /** Chunk was on web.js **/
+/** chunk id: 331065, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => c
-}), n(953529);
-var r = n(81825),
-  i = n(156570);
+}), require("./953529.js");
+var Chunk81825 = require("./81825.js"),
+  Chunk156570 = require("./156570.js");
 
 function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -44,7 +45,7 @@ function l(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-class c extends r.Z {
+class c extends Chunk81825.Z {
   static createFromServer(e) {
     return new c({
       subscriptions: e.subscriptions.map(e => i.Z.createFromServer(c.convertStoreListing(e))),
@@ -55,10 +56,10 @@ class c extends r.Z {
     var t;
     return l(a({}, e), {
       summary: e.summary.default,
-      description: null == (t = e.description) ? void 0 : t.default
+      description: null == (t = e.description) ? true : t.default
     })
   }
   constructor(e) {
-    super(), o(this, "subscriptions", void 0), o(this, "otps", void 0), this.subscriptions = e.subscriptions, this.otps = e.otps
+    super(), o(this, "subscriptions", true), o(this, "otps", true), this.subscriptions = e.subscriptions, this.otps = e.otps
   }
 }

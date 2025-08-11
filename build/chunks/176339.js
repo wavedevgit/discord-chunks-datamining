@@ -1,14 +1,16 @@
-/** Chunk was on web.js **/ ! function(e, t) {
+/** Chunk was on web.js **/
+/** chunk id: 176339, original params: e,t,n (module,exports,re quire) **/
+! function(e, t) {
   t(n(913527))
 }(0, function(e) {
   return e.defineLocale("vi", {
     months: "th\xe1ng 1_th\xe1ng 2_th\xe1ng 3_th\xe1ng 4_th\xe1ng 5_th\xe1ng 6_th\xe1ng 7_th\xe1ng 8_th\xe1ng 9_th\xe1ng 10_th\xe1ng 11_th\xe1ng 12".split("_"),
     monthsShort: "Th01_Th02_Th03_Th04_Th05_Th06_Th07_Th08_Th09_Th10_Th11_Th12".split("_"),
-    monthsParseExact: !0,
+    monthsParseExact: true,
     weekdays: "chủ nhật_thứ hai_thứ ba_thứ tư_thứ năm_thứ s\xe1u_thứ bảy".split("_"),
     weekdaysShort: "CN_T2_T3_T4_T5_T6_T7".split("_"),
     weekdaysMin: "CN_T2_T3_T4_T5_T6_T7".split("_"),
-    weekdaysParseExact: !0,
+    weekdaysParseExact: true,
     meridiemParse: /sa|ch/i,
     isPM: function(e) {
       return /^ch$/i.test(e)

@@ -1,0 +1,313 @@
+/** Chunk was on web.js **/
+/** chunk id: 938475, original params: e,t,n (module,exports,re quire) **/
+"use strict";
+require.d(exports, {
+  PH: () => R,
+  ZP: () => F,
+  sQ: () => N
+}), require("./388685.js");
+var r, Chunk392711 = require("./392711.js"),
+  o = require.n(Chunk392711),
+  Chunk442837 = require("./442837.js"),
+  Chunk759174 = require("./759174.js"),
+  Chunk570140 = require("./570140.js"),
+  Chunk598077 = require("./598077.js"),
+  Chunk314897 = require("./314897.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk271383 = require("./271383.js"),
+  Chunk594174 = require("./594174.js"),
+  Chunk979651 = require("./979651.js"),
+  Chunk709054 = require("./709054.js"),
+  Chunk51144 = require("./51144.js"),
+  Chunk981631 = require("./981631.js");
+
+function E(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+
+function b(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      E(e, t, n[t])
+    })
+  }
+  return e
+}
+
+function y(e, t) {
+  var n = Object.keys(e);
+  if (Object.getOwnPropertySymbols) {
+    var r = Object.getOwnPropertySymbols(e);
+    t && (r = r.filter(function(t) {
+      return Object.getOwnPropertyDescriptor(e, t).enumerable
+    })), n.push.apply(n, r)
+  }
+  return n
+}
+
+function O(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : y(Object(t)).forEach(function(n) {
+    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+  }), e
+}
+let v = Object.freeze([]),
+  I = {};
+
+function T(e) {
+  let t = I[e];
+  return null == t && (t = new P(e), I[e] = t), t
+}
+
+function S(e, t) {
+  return f.ZP.getMember(e, t.id)
+}
+
+function A(e, t, n) {
+  var r;
+  let i = null != (r = null == t ? true : t.nick) ? r : m.ZP.getName(n);
+  return {
+    member: t,
+    comparator: N(e, i)
+  }
+}
+
+function N(e, t) {
+  return "".concat(e.selfStream ? "\0" : "\x01").concat(t.toLowerCase(), "\0").concat(e.userId)
+}
+
+function C(e, t, n) {
+  return A(n, S(e, t), t)
+}
+
+function R(e, t, n, r) {
+  var i;
+  let o = _.default.getUser(n),
+    a = null == o;
+  null == o && (o = new c.Z({
+    id: n,
+    username: "...",
+    discriminator: n.slice(false, false)
+  }));
+  let {
+    member: s,
+    comparator: l
+  } = C(t, o, e), u = {
+    voiceState: e,
+    user: o,
+    member: s,
+    comparator: l,
+    nick: null == s ? true : s.nick,
+    connectedOn: null != (i = null == r ? true : r.connectedOn) ? i : Date.now()
+  };
+  return a && (u._isPlaceholder = true), u
+}
+class P {
+  updateVoiceState(e) {
+    if (null != this._pending) return this._pending.add(e), false;
+    let t = p.Z.getVoiceState(this.guildId, e),
+      n = this._voiceStates.get(e),
+      r = _.default.getUser(e);
+    if (null != t && null != r) {
+      if (null == n) return this._voiceStates.set(e, R(t, this.guildId, e)), true;
+      else if (n.voiceState !== t) {
+        var i;
+        let o = S(this.guildId, r),
+          a = null != (i = null == o ? true : o.nick) ? i : m.ZP.getName(r);
+        return this._voiceStates.set(e, O(b({}, n), {
+          member: o,
+          comparator: N(t, a),
+          nick: a,
+          voiceState: t
+        })), true
+      }
+    } else if (null != n) return this._voiceStates.delete(e), true;
+    returnfalse
+  }
+  updateMember(e) {
+    if (null != this._pending) return this._pending.add(e), false;
+    let t = this._voiceStates.get(e),
+      n = _.default.getUser(e);
+    if (null != t && null != n) {
+      var r, i;
+      let o = S(this.guildId, n);
+      if ((null == o ? true : o.nick) !== (null == (r = t.member) ? true : r.nick) || (null == o ? true : o.avatar) !== (null == (i = t.member) ? true : i.avatar)) {
+        let {
+          comparator: r
+        } = A(t.voiceState, o, n);
+        return this._voiceStates.set(e, O(b({}, t), {
+          member: o,
+          comparator: r,
+          nick: null == o ? true : o.nick
+        })), true
+      }
+    }
+    returnfalse
+  }
+  updateUsers() {
+    return null == this._pending && this._voiceStates.values().reduce((e, t) => {
+      let n = _.default.getUser(t.user.id);
+      return null != n && t.user !== n ? (this._voiceStates.set(n.id, R(t.voiceState, this.guildId, n.id, t)), true) : e
+    }, false)
+  }
+  getUserIds() {
+    return this.processPending(), this._voiceStates.keys()
+  }
+  getVoiceStates() {
+    return this.processPending(), this._voiceStates.indexes()
+  }
+  getVoiceStatesForChannel(e) {
+    this.processPending();
+    let t = this._voiceStates.values(e);
+    return 0 === t.length ? v : t
+  }
+  countVoiceStatesForChannel(e) {
+    return this.processPending(), this._voiceStates.size(e)
+  }
+  getVersion() {
+    return this.processPending(), this._voiceStates.version
+  }
+  processPending() {
+    if (null != this._pending) {
+      let e = this._pending;
+      this._pending = true, module.forEach(e => this.updateVoiceState(e))
+    }
+  }
+  constructor(e) {
+    E(this, "guildId", true), E(this, "_pending", new Set), E(this, "_voiceStates", new s.h(e => {
+      let {
+        voiceState: {
+          channelId: t
+        }
+      } = e;
+      return null != t ? [t] : []
+    }, e => {
+      let {
+        comparator: t
+      } = e;
+      return t
+    })), this.guildId = e
+  }
+}
+
+function w() {
+  I = {}
+}
+
+function D() {
+  B()
+}
+
+function L(e) {
+  let {
+    voiceStates: t
+  } = e;
+  return t.reduce((e, t) => {
+    let {
+      guildId: n,
+      userId: r
+    } = t;
+    return T(null != n ? n : g.ME).updateVoiceState(r) || e
+  }, false)
+}
+
+function x(e) {
+  var t, n;
+  let r = false,
+    i = new Set(null == (t = I[e.guildId]) ? true : t.getUserIds()),
+    o = new Set(null == (n = e.voiceStates) ? true : n.map(e => e.userId)),
+    a = new Set(e.removedVoiceStateUsers);
+  for (let t of new Set([...i, ...o])) r = T(e.guildId).updateVoiceState(t) || r;
+  for (let t of i) a.has(t) || (r = T(e.guildId).updateMember(t) || r);
+  return r
+}
+
+function M(e) {
+  let {
+    guildId: t
+  } = e, n = u.default.getId();
+  return null != n && T(null != t ? t : g.ME).updateVoiceState(n)
+}
+
+function k() {
+  return o().reduce(I, (e, t) => t.updateUsers() || e, false)
+}
+
+function j(e) {
+  let {
+    guildId: t,
+    user: n
+  } = e;
+  return T(t).updateMember(n.id)
+}
+
+function U(e) {
+  let {
+    guild: t
+  } = e;
+  delete I[t.id]
+}
+
+function G(e) {
+  let {
+    guild: t
+  } = e;
+  delete I[t.id]
+}
+
+function B() {
+  I = {};
+  let e = Chunk979651.Z.getAllVoiceStates();
+  Chunk709054.default.keys(module).forEach(t => {
+    Object.keys(e[t]).forEach(e => {
+      T(null != t ? t : g.ME).updateVoiceState(e)
+    })
+  })
+}
+class Z extends(r = Chunk442837.ZP.Store) {
+  initialize() {
+    B(), this.waitFor(Chunk314897.default, Chunk594174.default, Chunk271383.ZP, Chunk979651.Z), this.syncWith([Chunk594174.default], k)
+  }
+  getVoiceStates(e) {
+    return T(null != e ? e : g.ME).getVoiceStates()
+  }
+  getAllVoiceStates() {
+    return I
+  }
+  getVoiceStatesForChannel(e) {
+    let t = e.getGuildId(),
+      n = e.id;
+    return T(null != t ? t : g.ME).getVoiceStatesForChannel(n)
+  }
+  getVoiceStatesForChannelAlt(e, t) {
+    return T(null != t ? t : g.ME).getVoiceStatesForChannel(e)
+  }
+  countVoiceStatesForChannel(e) {
+    let t = d.Z.getChannel(e);
+    if (null == t) return 0;
+    let n = t.getGuildId();
+    return T(null != n ? n : g.ME).countVoiceStatesForChannel(e)
+  }
+  getVoiceStateVersion(e) {
+    return T(null != e ? e : g.ME).getVersion()
+  }
+}
+E(Z, "displayName", "SortedVoiceStateStore");
+let F = new Z(Chunk570140.Z, {
+  CONNECTION_OPEN: w,
+  OVERLAY_INITIALIZE: D,
+  VOICE_CHANNEL_SELECT: M,
+  VOICE_STATE_UPDATES: L,
+  GUILD_MEMBER_UPDATE: j,
+  GUILD_CREATE: U,
+  GUILD_DELETE: G,
+  PASSIVE_UPDATE_V2: x
+})

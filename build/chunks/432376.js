@@ -1,4 +1,5 @@
 /** Chunk was on web.js **/
+/** chunk id: 432376, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 
 function r(e) {
@@ -12,13 +13,13 @@ function r(e) {
     communicationDisabled: s,
     isActiveChannelOrUnarchivableThread: l,
     isAutomodQuarantined: c
-  } = e, u = t.isPrivate(), d = t.isSystemDM(), f = (!0 === i || u) && !d && l, _ = (n || u) && l, p = o || a || !_ || !0 === s || !0 === c;
+  } = e, u = t.isPrivate(), d = t.isSystemDM(), f = (true === i || u) && !d && l, _ = (n || u) && l, p = o || a || !_ || true === s || true === c;
   return {
     disableReactionReads: !r,
     disableReactionCreates: o || a || !_ || !f,
     disableReactionUpdates: p
   }
 }
-n.d(t, {
+require.d(exports, {
   Z: () => r
 })

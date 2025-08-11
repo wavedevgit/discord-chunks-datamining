@@ -1,20 +1,21 @@
 /** Chunk was on web.js **/
+/** chunk id: 553385, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   N7: () => f,
   XP: () => p,
   j8: () => _,
   z$: () => h
 });
-var r = n(544891),
-  i = n(430742),
-  o = n(904245),
-  a = n(623292),
-  s = n(592125),
-  l = n(703558),
-  c = n(375954),
-  u = n(585483),
-  d = n(981631);
+var Chunk544891 = require("./544891.js"),
+  Chunk430742 = require("./430742.js"),
+  Chunk904245 = require("./904245.js"),
+  Chunk623292 = require("./623292.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk703558 = require("./703558.js"),
+  Chunk375954 = require("./375954.js"),
+  Chunk585483 = require("./585483.js"),
+  Chunk981631 = require("./981631.js");
 
 function f(e) {
   r.tn.post({
@@ -22,18 +23,18 @@ function f(e) {
     body: {
       guild_ids: e
     },
-    rejectWithError: !0
+    rejectWithError: true
   })
 }
 
 function _(e) {
-  let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : d.uaV.GUILD_DEADCHAT_REVIVE_PROMPT;
+  let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : d.uaV.GUILD_DEADCHAT_REVIVE_PROMPT;
   r.tn.post({
     url: d.ANM.FORCE_SEND_PROMPT(e),
     body: {
       prompt_type: t
     },
-    rejectWithError: !0
+    rejectWithError: true
   })
 }
 async function p(e, t, n) {
@@ -46,21 +47,21 @@ async function p(e, t, n) {
         message_id: n
       }
     },
-    rejectWithError: !1
+    rejectWithError: false
   }), m(t)
 }
 async function h(e) {
   let t = await r.tn.patch({
     url: d.ANM.UPDATE_GAMING_STATS(e.channel_id, e.id),
-    rejectWithError: !1
+    rejectWithError: false
   });
   if (null != t.text && "" !== t.text) {
     let n = s.Z.getChannel(e.channel_id);
     null != n && ((0, a.fE)({
       channel: n,
       message: e,
-      shouldMention: !1,
-      showMentionToggle: !1
+      shouldMention: false,
+      showMentionToggle: false
     }), m(n.id)), i.Z.saveDraft(e.channel_id, t.text, l.d.ChannelMessage)
   }
 }

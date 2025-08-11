@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 126838, original params: e (module,exports,re quire) **/
 "use strict";
-e.exports = function(e, t, n, r, i) {
+module.exports = function(e, t, n, r, i) {
   var o, a = this;
   a.directMap[e + ":" + n] = t;
   var s = (e = e.replace(/\s+/g, " ")).split(" ");

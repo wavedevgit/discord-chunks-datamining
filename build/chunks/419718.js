@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 419718, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   soundButtonWrapper: "soundButtonWrapper__9be63",
   soundButton: "soundButton__9be63",
   focused: "focused__9be63",

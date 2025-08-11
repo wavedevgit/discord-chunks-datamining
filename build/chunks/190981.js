@@ -1,5 +1,6 @@
 /** Chunk was on 86872 **/
-e.exports = {
+/** chunk id: 190981, original params: e,n,t (module,exports,require) **/
+module.exports = {
   editProfileContainer: "editProfileContainer__42179",
   opened: "opened__42179",
   customizationSection: "customizationSection__42179",

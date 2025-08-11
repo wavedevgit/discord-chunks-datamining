@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 857595, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Ej: () => v,
   Nc: () => E,
   Qj: () => _,
@@ -22,13 +23,13 @@ n.d(t, {
   u1: () => S,
   vW: () => R
 });
-var r = n(570140),
-  i = n(153867),
-  o = n(626135),
-  a = n(607070),
-  s = n(981631),
-  l = n(969943),
-  c = n(611480);
+var Chunk570140 = require("./570140.js"),
+  Chunk153867 = require("./153867.js"),
+  Chunk626135 = require("./626135.js"),
+  Chunk607070 = require("./607070.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk969943 = require("./969943.js"),
+  Chunk611480 = require("./611480.js");
 
 function u(e) {
   r.Z.dispatch({
@@ -38,10 +39,10 @@ function u(e) {
 }
 
 function d() {
-  let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null;
-  r.Z.dispatch({
+  let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : null;
+  Chunk570140.Z.dispatch({
     type: "ACCESSIBILITY_SET_MESSAGE_GROUP_SPACING",
-    messageGroupSpacing: e
+    messageGroupSpacing: module
   })
 }
 
@@ -53,35 +54,35 @@ function f(e) {
 }
 
 function _() {
-  r.Z.dispatch({
+  Chunk570140.Z.dispatch({
     type: "ACCESSIBILITY_KEYBOARD_MODE_ENABLE"
-  }), o.default.track(s.rMx.KEYBOARD_MODE_TOGGLED, {
-    enabled: !0
+  }), Chunk626135.default.track(Chunk981631.rMx.KEYBOARD_MODE_TOGGLED, {
+    enabled: true
   })
 }
 
 function p() {
-  r.Z.dispatch({
+  Chunk570140.Z.dispatch({
     type: "ACCESSIBILITY_KEYBOARD_MODE_DISABLE"
-  }), o.default.track(s.rMx.KEYBOARD_MODE_TOGGLED, {
-    enabled: !1
+  }), Chunk626135.default.track(Chunk981631.rMx.KEYBOARD_MODE_TOGGLED, {
+    enabled: false
   })
 }
 
 function h() {
-  r.Z.dispatch({
+  Chunk570140.Z.dispatch({
     type: "ACCESSIBILITY_DESATURATE_ROLES_TOGGLE"
   })
 }
 
 function m() {
-  r.Z.dispatch({
+  Chunk570140.Z.dispatch({
     type: "ACCESSIBILITY_DARK_SIDEBAR_TOGGLE"
   })
 }
 
 function g() {
-  r.Z.dispatch({
+  Chunk570140.Z.dispatch({
     type: "KEYBOARD_NAVIGATION_EXPLAINER_MODAL_SEEN"
   })
 }
@@ -109,11 +110,11 @@ function y(e) {
   let n = a.Z.useReducedMotion;
   !t && n ? i.ZP.applySettingsOverride({
     gifAutoPlay: {
-      value: !1,
+      value: false,
       reasonKey: l.mX.REDUCED_MOTION
     },
     animateEmoji: {
-      value: !1,
+      value: false,
       reasonKey: l.mX.REDUCED_MOTION
     },
     animateStickers: {
@@ -168,13 +169,13 @@ function A(e) {
 }
 
 function N() {
-  r.Z.dispatch({
+  Chunk570140.Z.dispatch({
     type: "ACCESSIBILITY_SUBMIT_BUTTON_TOGGLE"
   })
 }
 
 function C() {
-  r.Z.dispatch({
+  Chunk570140.Z.dispatch({
     type: "ACCESSIBILITY_SYNC_PROFILE_THEME_WITH_USER_THEME_TOGGLE"
   })
 }

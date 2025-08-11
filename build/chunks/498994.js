@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 498994, original params: e (module,exports,re quire) **/
 let t = Object.freeze({
-    loose: !0
+    loose: true
   }),
   n = Object.freeze({});
-e.exports = e => e ? "object" != typeof e ? t : e : n
+module.exports = e => e ? "object" != typeof e ? t : e : n

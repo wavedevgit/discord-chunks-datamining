@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 350327, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   CM: () => I,
   Cf: () => O,
   ID: () => v,
@@ -16,23 +17,23 @@ n.d(t, {
   x3: () => R,
   z5: () => T
 });
-var r = n(544891),
-  i = n(570140),
-  o = n(881052),
-  a = n(957730),
-  s = n(695346),
-  l = n(594174),
-  c = n(626135),
-  u = n(956664),
-  d = n(981631),
-  f = n(474936);
+var Chunk544891 = require("./544891.js"),
+  Chunk570140 = require("./570140.js"),
+  Chunk881052 = require("./881052.js"),
+  Chunk957730 = require("./957730.js"),
+  Chunk695346 = require("./695346.js"),
+  Chunk594174 = require("./594174.js"),
+  Chunk626135 = require("./626135.js"),
+  Chunk956664 = require("./956664.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk474936 = require("./474936.js");
 
 function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -57,10 +58,10 @@ function h(e) {
 }
 async function m(e, t) {
   var n, c, u;
-  let f = null == (n = l.default.getCurrentUser()) ? void 0 : n.id;
+  let f = null == (n = l.default.getCurrentUser()) ? true : n.id;
   if (null == f) return;
   let _ = s.dN.getSetting();
-  null != e.bio && _ && (e.bio = a.ZP.parse(void 0, e.bio).content);
+  null != e.bio && _ && (e.bio = a.ZP.parse(true, e.bio).content);
   try {
     i.Z.dispatch({
       type: "USER_PROFILE_UPDATE_START",
@@ -69,11 +70,11 @@ async function m(e, t) {
     let n = await r.tn.patch({
       url: null != t ? d.ANM.USER_GUILD_PROFILE(t, d.ME) : d.ANM.USER_PROFILE(d.ME),
       body: e,
-      rejectWithError: !1
+      rejectWithError: false
     });
     if (n.ok) {
-      let e = null == (c = n.body.profile_effect) ? void 0 : c.id,
-        t = null == (u = n.body.profile_effect) ? void 0 : u.expires_at;
+      let e = null == (c = n.body.profile_effect) ? true : c.id,
+        t = null == (u = n.body.profile_effect) ? true : u.expires_at;
       i.Z.dispatch(p({
         type: "USER_PROFILE_UPDATE_SUCCESS",
         userId: f,
@@ -101,7 +102,7 @@ async function m(e, t) {
 
 function g(e, t) {
   var n;
-  let r = null == (n = l.default.getCurrentUser()) ? void 0 : n.id;
+  let r = null == (n = l.default.getCurrentUser()) ? true : n.id;
   null != r && i.Z.dispatch({
     type: "USER_PROFILE_PIN_BADGES_ON_CLIENT",
     badges: e,
@@ -111,13 +112,13 @@ function g(e, t) {
 }
 
 function E() {
-  i.Z.dispatch({
+  Chunk570140.Z.dispatch({
     type: "USER_SETTINGS_RESET_PENDING_PROFILE_CHANGES"
   })
 }
 
 function b(e) {
-  (null == e ? void 0 : e.startsWith("https:")) === !0 ? fetch(e).then(e => e.blob()).then(e => (0, u.fD)(e)).then(e => y(e)) : null != e && y(e)
+  (null == e ? true : e.startsWith("https:")) === true ? fetch(e).then(e => e.blob()).then(e => (0, u.fD)(e)).then(e => y(e)) : null != e && y(e)
 }
 
 function y(e) {

@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 130802, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   voiceFiltersPopout: "voiceFiltersPopout_e2f668",
   wide: "wide_e2f668",
   notResizable: "notResizable_e2f668",

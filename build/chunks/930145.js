@@ -1,17 +1,18 @@
 /** Chunk was on web.js **/
+/** chunk id: 930145, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   A: () => o
 });
-var r = n(198584),
-  i = n(350167);
+var Chunk198584 = require("./198584.js"),
+  Chunk350167 = require("./350167.js");
 class o {
   static open(e, t) {
     return i.r.executeAsync("database_open", n => {
       var i;
       return r.d.databaseOpen(n, {
         database: e,
-        invalidateDisabledHandles: null != (i = null == t ? void 0 : t.invalidateDisabledHandles) && i
+        invalidateDisabledHandles: null != (i = null == t ? true : t.invalidateDisabledHandles) && i
       })
     })
   }
@@ -19,9 +20,9 @@ class o {
     var n;
     return r.d.databaseOpen(null, {
       database: e,
-      invalidateDisabledHandles: null != (n = null == t ? void 0 : t.invalidateDisabledHandles) && n
+      invalidateDisabledHandles: null != (n = null == t ? true : t.invalidateDisabledHandles) && n
     }, {
-      synchronous: !0
+      synchronous: true
     })
   }
   static delete(e) {
@@ -30,7 +31,7 @@ class o {
     }))
   }
   static async list() {
-    return (await i.r.executeAsync("database_list", e => r.d.databaseList(e))).map(e => e.data)
+    return (await Chunk350167.r.executeAsync("database_list", e => r.d.databaseList(e))).map(e => e.data)
   }
   static optimize(e) {
     return i.r.executeAsync("database_optimize", t => r.d.databaseOptimize(t, {

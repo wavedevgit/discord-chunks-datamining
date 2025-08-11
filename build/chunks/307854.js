@@ -1,33 +1,34 @@
 /** Chunk was on web.js **/
+/** chunk id: 307854, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   s: () => f
 });
-var r = n(731889),
-  i = n(573736),
-  o = n(101284),
-  a = n(394798),
-  s = n(622916),
-  l = n(112797),
-  c = n(99342);
+var Chunk731889 = require("./731889.js"),
+  Chunk573736 = require("./573736.js"),
+  Chunk101284 = require("./101284.js"),
+  Chunk394798 = require("./394798.js"),
+  Chunk622916 = require("./622916.js"),
+  Chunk112797 = require("./112797.js"),
+  Chunk99342 = require("./99342.js");
 let u = 100;
 class d {
   constructor() {
-    this._notifyingListeners = !1, this._scopeListeners = [], this._eventProcessors = [], this._breadcrumbs = [], this._attachments = [], this._user = {}, this._tags = {}, this._extra = {}, this._contexts = {}, this._sdkProcessingMetadata = {}, this._propagationContext = (0, r.Q)()
+    this._notifyingListeners = false, this._scopeListeners = [], this._eventProcessors = [], this._breadcrumbs = [], this._attachments = [], this._user = {}, this._tags = {}, this._extra = {}, this._contexts = {}, this._sdkProcessingMetadata = {}, this._propagationContext = (0, Chunk731889.Q)()
   }
   clone() {
     let e = new d;
-    return e._breadcrumbs = [...this._breadcrumbs], e._tags = {
+    return module._breadcrumbs = [...this._breadcrumbs], module._tags = {
       ...this._tags
-    }, e._extra = {
+    }, module._extra = {
       ...this._extra
-    }, e._contexts = {
+    }, module._contexts = {
       ...this._contexts
-    }, e._user = this._user, e._level = this._level, e._session = this._session, e._transactionName = this._transactionName, e._fingerprint = this._fingerprint, e._eventProcessors = [...this._eventProcessors], e._requestSession = this._requestSession, e._attachments = [...this._attachments], e._sdkProcessingMetadata = {
+    }, module._user = this._user, module._level = this._level, module._session = this._session, module._transactionName = this._transactionName, module._fingerprint = this._fingerprint, module._eventProcessors = [...this._eventProcessors], module._requestSession = this._requestSession, module._attachments = [...this._attachments], module._sdkProcessingMetadata = {
       ...this._sdkProcessingMetadata
-    }, e._propagationContext = {
+    }, module._propagationContext = {
       ...this._propagationContext
-    }, e._client = this._client, e._lastEventId = this._lastEventId, (0, c.D)(e, (0, c.Y)(this)), e
+    }, module._client = this._client, module._lastEventId = this._lastEventId, (0, Chunk99342.D)(module, (0, Chunk99342.Y)(this)), module
   }
   setClient(e) {
     this._client = e
@@ -49,10 +50,10 @@ class d {
   }
   setUser(e) {
     return this._user = e || {
-      email: void 0,
-      id: void 0,
-      ip_address: void 0,
-      username: void 0
+      email: true,
+      id: true,
+      ip_address: true,
+      username: true
     }, this._session && (0, l.CT)(this._session, {
       user: e
     }), this._notifyScopeListeners(), this
@@ -133,7 +134,7 @@ class d {
     }, s && Object.keys(s).length && (this._user = s), c && (this._level = c), u.length && (this._fingerprint = u), d && (this._propagationContext = d), r && (this._requestSession = r), this
   }
   clear() {
-    return this._breadcrumbs = [], this._tags = {}, this._extra = {}, this._user = {}, this._contexts = {}, this._level = void 0, this._transactionName = void 0, this._fingerprint = void 0, this._requestSession = void 0, this._session = void 0, (0, c.D)(this, void 0), this._attachments = [], this._propagationContext = (0, r.Q)(), this._notifyScopeListeners(), this
+    return this._breadcrumbs = [], this._tags = {}, this._extra = {}, this._user = {}, this._contexts = {}, this._level = true, this._transactionName = true, this._fingerprint = true, this._requestSession = true, this._session = true, (0, Chunk99342.D)(this, true), this._attachments = [], this._propagationContext = (0, Chunk731889.Q)(), this._notifyScopeListeners(), this
   }
   addBreadcrumb(e, t) {
     let n = "number" == typeof t ? t : u;
@@ -171,7 +172,7 @@ class d {
       propagationContext: this._propagationContext,
       sdkProcessingMetadata: this._sdkProcessingMetadata,
       transactionName: this._transactionName,
-      span: (0, c.Y)(this)
+      span: (0, Chunk99342.Y)(this)
     }
   }
   setSDKProcessingMetadata(e) {
@@ -216,9 +217,9 @@ class d {
     }, this) : s.kg.warn("No client configured on scope - will not capture event!"), n
   }
   _notifyScopeListeners() {
-    this._notifyingListeners || (this._notifyingListeners = !0, this._scopeListeners.forEach(e => {
+    this._notifyingListeners || (this._notifyingListeners = true, this._scopeListeners.forEach(e => {
       e(this)
-    }), this._notifyingListeners = !1)
+    }), this._notifyingListeners = false)
   }
 }
 let f = d

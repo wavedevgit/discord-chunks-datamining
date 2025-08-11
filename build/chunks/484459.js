@@ -1,37 +1,38 @@
 /** Chunk was on web.js **/
+/** chunk id: 484459, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => _
 });
-var r = n(570140),
-  i = n(232567),
-  o = n(220082),
-  a = n(275759),
-  s = n(365943),
-  l = n(592125),
-  c = n(271383),
-  u = n(621853),
-  d = n(120569);
+var Chunk570140 = require("./570140.js"),
+  Chunk232567 = require("./232567.js"),
+  Chunk220082 = require("./220082.js"),
+  Chunk275759 = require("./275759.js"),
+  Chunk365943 = require("./365943.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk271383 = require("./271383.js"),
+  Chunk621853 = require("./621853.js"),
+  Chunk120569 = require("./120569.js");
 let f = 6e4;
 
 function _(e, t) {
   var n, _, p, h;
   let {
     type: m,
-    withMutualGuilds: g = !1,
-    withMutualFriendsCount: E = !1,
-    withMutualFriends: b = !1,
-    dispatchWait: y = !1,
-    waitForRefetch: O = !0,
+    withMutualGuilds: g = false,
+    withMutualFriendsCount: E = false,
+    withMutualFriends: b = false,
+    dispatchWait: y = false,
+    waitForRefetch: O = true,
     guildId: v,
     channelId: I,
     joinRequestId: T,
     abortSignal: S
-  } = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {};
+  } = arguments.length > 2 && true !== arguments[2] ? arguments[2] : {};
   if ("" === e || u.Z.isFetchingProfile(e, v)) return Promise.resolve();
   let A = u.Z.getUserProfile(e),
-    N = Date.now() - (null != (h = null == A ? void 0 : A.fetchEndedAt) ? h : 0) >= f;
-  if (((null == A || null == (n = A.fetchError) ? void 0 : n.status) === 404 || (null == A || null == (_ = A.fetchError) ? void 0 : _.status) === 429) && !N) return Promise.resolve();
+    N = Date.now() - (null != (h = null == A ? true : A.fetchEndedAt) ? h : 0) >= f;
+  if (((null == A || null == (n = A.fetchError) ? true : n.status) === 404 || (null == A || null == (_ = A.fetchError) ? true : _.status) === 429) && !N) return Promise.resolve();
   let C = u.Z.getGuildMemberProfile(e, v),
     R = u.Z.getMutualGuilds(e),
     P = u.Z.getMutualFriends(e),
@@ -54,7 +55,7 @@ function _(e, t) {
     connectionsRoleId: null == v || null == (p = (0, a.Ur)({
       guildMember: c.ZP.getMember(v, e),
       channel: l.Z.getChannel(I)
-    })) ? void 0 : p.id
+    })) ? true : p.id
   };
   if (y) return r.Z.wait(() => (0, i.In)(e, j, d.Z)), Promise.resolve();
   let U = (0, i.In)(e, j, d.Z);

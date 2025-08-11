@@ -1,12 +1,13 @@
 /** Chunk was on 88934 **/
-n.d(t, {
+/** chunk id: 88693, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   U: () => o
 });
-var r = n(73800),
-  a = n(49898),
-  i = n(794916);
-let l = 20 + a.GLOBAL_DISCOVERY_SEARCH_BAR_WIDTH_PX - a.GLOBAL_DISCOVERY_SEARCH_BAR_ICON_WIDTH_PX,
-  s = 20 + a.GLOBAL_DISCOVERY_SEARCH_BAR_WIDTH_PX + a.GLOBAL_DISCOVERY_SEARCH_BAR_ICON_WIDTH_PX;
+var Chunk73800 = require("./73800.js"),
+  Chunk49898 = require("./49898.js"),
+  Chunk794916 = require("./794916.js");
+let l = 20 + Chunk49898.GLOBAL_DISCOVERY_SEARCH_BAR_WIDTH_PX - Chunk49898.GLOBAL_DISCOVERY_SEARCH_BAR_ICON_WIDTH_PX,
+  s = 20 + Chunk49898.GLOBAL_DISCOVERY_SEARCH_BAR_WIDTH_PX + Chunk49898.GLOBAL_DISCOVERY_SEARCH_BAR_ICON_WIDTH_PX;
 
 function o(e) {
   let {
@@ -34,7 +35,7 @@ function o(e) {
   }, [n, o, c]);
   return {
     onTabsAvailableWidthChange: d,
-    tabsClassName: o === a.GlobalDiscoverySearchBarState.FLOATING ? i.floatingSearchTabsMask : void 0,
+    tabsClassName: o === a.GlobalDiscoverySearchBarState.FLOATING ? i.floatingSearchTabsMask : true,
     onCollapsedSearchBarClick: u,
     onSearchBarBlur: p
   }

@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 829907, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   DH: () => C,
   H8: () => A,
   HD: () => f,
@@ -12,16 +13,16 @@ n.d(t, {
   qT: () => P,
   qc: () => S,
   sS: () => g
-}), n(388685);
-var r = n(593472),
-  i = n(710845),
-  o = n(594190),
-  a = n(77498),
-  s = n(998502),
-  l = n(41534),
-  c = n(837268),
-  u = n(32300);
-let d = new i.Z("OverlayRenderUtils"),
+}), require("./388685.js");
+var Chunk593472 = require("./593472.js"),
+  Chunk710845 = require("./710845.js"),
+  Chunk594190 = require("./594190.js"),
+  Chunk77498 = require("./77498.js"),
+  Chunk998502 = require("./998502.js"),
+  Chunk41534 = require("./41534.js"),
+  Chunk837268 = require("./837268.js"),
+  Chunk32300 = require("./32300.js");
+let d = new Chunk710845.Z("OverlayRenderUtils"),
   f = 5e3;
 
 function _(e) {
@@ -33,18 +34,18 @@ function p(e) {
 }
 
 function h(e) {
-  let [t] = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : [o.ZP], n = t.getGameForPID(e);
+  let [t] = arguments.length > 1 && true !== arguments[1] ? arguments[1] : [o.ZP], n = t.getGameForPID(e);
   try {
     return null == n ? s.ZP.GetWindowFullscreenTypeByPid(e) : s.ZP.GetWindowFullscreenTypeByPid(n.pid, n.name, n.fullscreenType)
   } catch (t) {
     var i;
-    return d.error("Error getting overlay fullscreen type for pid ".concat(e, ": ").concat(t)), (0, l.D1)(t, c.gl.OutOfProcess), null != (i = null == n ? void 0 : n.fullscreenType) ? i : r.Jx.UNKNOWN
+    return d.error("Error getting overlay fullscreen type for pid ".concat(e, ": ").concat(t)), (0, l.D1)(t, c.gl.OutOfProcess), null != (i = null == n ? true : n.fullscreenType) ? i : r.Jx.UNKNOWN
   }
 }
 
 function m(e) {
-  let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 1,
-    [n] = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : [o.ZP];
+  let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : 1,
+    [n] = arguments.length > 2 && true !== arguments[2] ? arguments[2] : [o.ZP];
   return new Promise(r => {
     setTimeout(() => {
       r(h(e, [n]))
@@ -93,14 +94,14 @@ let y = {
   },
   O = new Set(["762434991303950386", "367827983903490050", "1124351860376096858"]),
   v = 16,
-  I = !0;
+  I = true;
 async function T(e) {
   var t;
-  let n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : v,
+  let n = arguments.length > 1 && true !== arguments[1] ? arguments[1] : v,
     r = await m(e, n),
     i = o.ZP.getGameForPID(e);
   if (null == i || null == i.name) return r;
-  let s = null == (t = a.Z.getGameByName(i.name)) ? void 0 : t.id;
+  let s = null == (t = a.Z.getGameByName(i.name)) ? true : t.id;
   if (null == s) return r;
   let l = y[s];
   return null != l ? l(e, i, r) : r
@@ -108,7 +109,7 @@ async function T(e) {
 
 function S(e) {
   var t;
-  let n = null == (t = a.Z.getGameByName(e.name)) ? void 0 : t.id;
+  let n = null == (t = a.Z.getGameByName(e.name)) ? true : t.id;
   return null != n && O.has(n)
 }
 
@@ -116,36 +117,36 @@ function A(e) {
   let t = o.ZP.getGameForPID(e);
   return null != t && null != t.name && S(t)
 }
-let N = new Set([r.Jx.UNKNOWN, r.Jx.FULLSCREEN]);
+let N = new Set([Chunk593472.Jx.UNKNOWN, Chunk593472.Jx.FULLSCREEN]);
 
 function C(e, t, n) {
-  if (e.overlayMethod !== c.gl.OutOfProcess && e.overlayMethod !== c.gl.OutOfProcessLimitedInteraction) return !1;
-  if (!n) return !0;
+  if (e.overlayMethod !== c.gl.OutOfProcess && e.overlayMethod !== c.gl.OutOfProcessLimitedInteraction) returnfalse;
+  if (!n) returntrue;
   switch (t) {
     case r.Jx.UNKNOWN:
       return N.has(e.previousFullscreenType);
     case r.Jx.FULLSCREEN:
-      return !0
+      returntrue
   }
-  return !1
+  returnfalse
 }
 
 function R(e, t, n) {
-  if (e.overlayMethod !== c.gl.Hook || !n) return !1;
+  if (e.overlayMethod !== c.gl.Hook || !n) returnfalse;
   switch (t) {
     case r.Jx.UNKNOWN:
     case r.Jx.MINIMIZED:
     case r.Jx.FULLSCREEN:
-      return !1
+      returnfalse
   }
-  return !0
+  returntrue
 }
 
 function P(e) {
   return null == e ? {
     source: c.d0.DEFAULT,
-    enabledOOP: !1,
-    enabledLegacy: !1,
+    enabledOOP: false,
+    enabledLegacy: false,
     overlayMethod: c.gl.Disabled
   } : (0, o.b6)(e, I)
 }

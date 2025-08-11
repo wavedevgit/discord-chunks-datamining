@@ -1,8 +1,9 @@
 /** Chunk was on web.js **/
+/** chunk id: 488437, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-var r = n(706165),
-  i = n(260674)(),
-  o = n(815329),
+var Chunk706165 = require("./706165.js"),
+  i = require("./260674.js")(),
+  Chunk815329 = require("./815329.js"),
   a = {
     assert: function(e, t) {
       if (!e || "object" != typeof e && "function" != typeof e) throw new o("`O` is not an object");
@@ -28,4 +29,4 @@ var r = n(706165),
       r || (r = {}, i.set(e, r)), r["$" + t] = n
     }
   };
-Object.freeze && Object.freeze(a), e.exports = a
+Object.freeze && Object.freeze(a), module.exports = a

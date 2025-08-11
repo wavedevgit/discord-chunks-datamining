@@ -1,16 +1,17 @@
 /** Chunk was on web.js **/
+/** chunk id: 781792, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   e: () => l
-}), n(997841);
-var r = n(544891),
-  i = n(570140),
-  o = n(962086),
-  a = n(160404),
-  s = n(981631);
+}), require("./997841.js");
+var Chunk544891 = require("./544891.js"),
+  Chunk570140 = require("./570140.js"),
+  Chunk962086 = require("./962086.js"),
+  Chunk160404 = require("./160404.js"),
+  Chunk981631 = require("./981631.js");
 
 function l(e, t) {
-  let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
+  let n = arguments.length > 2 && true !== arguments[2] && arguments[2];
   return a.Z.isFullServerPreview(e) ? void(0, o.aq)(e, {
     memberOptions: t
   }) : (i.Z.dispatch({
@@ -21,7 +22,7 @@ function l(e, t) {
   }), r.tn.patch({
     url: s.ANM.SET_GUILD_MEMBER(e),
     body: t,
-    oldFormErrors: !!n || void 0,
-    rejectWithError: !1
+    oldFormErrors: !!n || true,
+    rejectWithError: false
   }))
 }

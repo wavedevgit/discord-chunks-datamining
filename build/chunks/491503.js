@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 491503, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   guildStatus: "guildStatus_f9f04c",
   guildIcon: "guildIcon_f9f04c",
   guildName: "guildName_f9f04c",

@@ -1,11 +1,12 @@
 /** Chunk was on web.js **/
+/** chunk id: 570220, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   f6: () => a
-}), n(415506);
-var r = n(73800),
-  i = n(836560);
-class o extends i.EventEmitter {
+}), require("./415506.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk836560 = require("./836560.js");
+class o extends Chunk836560.EventEmitter {
   on() {
     return this
   }
@@ -19,9 +20,9 @@ class o extends i.EventEmitter {
     return this
   }
   emit() {
-    return !1
+    returnfalse
   }
 }
 let {
   Provider: a
-} = r.createContext(new o)
+} = Chunk73800.createContext(new o)

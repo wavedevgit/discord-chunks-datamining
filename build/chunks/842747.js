@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 842747, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   container: "container__394db",
   chipletContainer: "chipletContainer__394db",
   chipletParent: "chipletParent__394db",

@@ -1,3 +1,4 @@
 /** Chunk was on web.js **/
+/** chunk id: 284456, original params: e (module,exports,re quire) **/
 "use strict";
-e.exports = ReferenceError
+module.exports = ReferenceError

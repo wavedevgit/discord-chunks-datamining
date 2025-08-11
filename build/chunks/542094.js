@@ -1,32 +1,33 @@
 /** Chunk was on web.js **/
+/** chunk id: 542094, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   JS: () => I,
   Qv: () => N,
   ZP: () => S,
   fD: () => A,
   w1: () => C
-}), n(997841), n(704826), n(35282);
-var r = n(493683),
-  i = n(911969),
-  o = n(906732),
-  a = n(835473),
-  s = n(510839),
-  l = n(813370),
-  c = n(630388),
-  u = n(358085),
-  d = n(317381),
-  f = n(638880),
-  _ = n(122613),
-  p = n(619915),
-  h = n(16609),
-  m = n(761122),
-  g = n(361213),
-  E = n(716600),
-  b = n(952561),
-  y = n(778569),
-  O = n(701488),
-  v = n(981631),
+}), require("./997841.js"), require("./704826.js"), require("./35282.js");
+var Chunk493683 = require("./493683.js"),
+  Chunk911969 = require("./911969.js"),
+  Chunk906732 = require("./906732.js"),
+  Chunk835473 = require("./835473.js"),
+  Chunk510839 = require("./510839.js"),
+  Chunk813370 = require("./813370.js"),
+  Chunk630388 = require("./630388.js"),
+  Chunk358085 = require("./358085.js"),
+  Chunk317381 = require("./317381.js"),
+  Chunk638880 = require("./638880.js"),
+  Chunk122613 = require("./122613.js"),
+  Chunk619915 = require("./619915.js"),
+  Chunk16609 = require("./16609.js"),
+  Chunk761122 = require("./761122.js"),
+  Chunk361213 = require("./361213.js"),
+  Chunk716600 = require("./716600.js"),
+  Chunk952561 = require("./952561.js"),
+  Chunk778569 = require("./778569.js"),
+  Chunk701488 = require("./701488.js"),
+  Chunk981631 = require("./981631.js"),
   I = function(e) {
     return e[e.START = 0] = "START", e[e.JOIN = 1] = "JOIN", e[e.LEAVE = 2] = "LEAVE", e
   }({});
@@ -51,7 +52,7 @@ function S(e) {
     applicationId: _.id,
     size: l,
     names: s
-  }), I = null != h.activity_preview_video_asset_id ? (0, g.Z)(_.id, h.activity_preview_video_asset_id) : null, S = (0, p.ZP)("channel" === n.type ? n.channel : void 0).find(e => {
+  }), I = null != h.activity_preview_video_asset_id ? (0, g.Z)(_.id, h.activity_preview_video_asset_id) : null, S = (0, p.ZP)("channel" === n.type ? n.channel : true).find(e => {
     let {
       embeddedActivity: t
     } = e;
@@ -85,15 +86,15 @@ function A(e, t) {
   let r = null != (n = e.flags) ? n : 0;
   if (!((0, c.yE)(r, v.udG.EMBEDDED_RELEASED) || (0, c.yE)(r, v.udG.EMBEDDED_FIRST_PARTY))) return;
   let i = t.client_platform_config[(0, m.Z)((0, u.getOS)())].release_phase;
-  return O.eB.includes(i) ? i.replace("_", " ").replace(/(^\w|\s\w)/g, e => e.toUpperCase()) : void 0
+  return O.eB.includes(i) ? i.replace("_", " ").replace(/(^\w|\s\w)/g, e => e.toUpperCase()) : true
 }
 
 function N(e) {
   let {
     context: t,
     applicationId: n,
-    fetchesApplication: r = !0
-  } = e, i = 0, o = "channel" === t.type ? t.channel : void 0, s = (0, E.Z)(), l = (0, b.Z)({
+    fetchesApplication: r = true
+  } = e, i = 0, o = "channel" === t.type ? t.channel : true, s = (0, E.Z)(), l = (0, b.Z)({
     fetchesApplication: r
   }), c = (0, a.q)(n, r), u = (0, p.ZP)(o).find(e => {
     let {
@@ -102,8 +103,8 @@ function N(e) {
     return null != c && c.id === t.applicationId
   });
   if (null == c) return i;
-  let d = (0, h.p)(null == s ? void 0 : s.location);
-  return null != o && d === o.id && (null == l ? void 0 : l.id) === c.id ? i = 2 : null != u && (i = 1), i
+  let d = (0, h.p)(null == s ? true : s.location);
+  return null != o && d === o.id && (null == l ? true : l.id) === c.id ? i = 2 : null != u && (i = 1), i
 }
 
 function C(e) {
@@ -119,11 +120,11 @@ function C(e) {
     commandOrigin: m,
     sectionName: g,
     source: b,
-    fetchesApplication: y = !0,
+    fetchesApplication: y = true,
     customId: O,
     referrerId: v,
     onConfirmActivityLaunchChecksAlertOpen: I
-  } = e, T = null != (t = null == n ? void 0 : n.id) ? t : "", S = N({
+  } = e, T = null != (t = null == n ? true : n.id) ? t : "", S = N({
     context: a,
     applicationId: T,
     fetchesApplication: y
@@ -148,11 +149,11 @@ function C(e) {
           } catch (e) {}
           return
         }
-        let e = "channel" === a.type ? a.channel.id : void 0;
+        let e = "channel" === a.type ? a.channel.id : true;
         if (null != i) try {
           e = await r.Z.openPrivateChannel({
             recipientIds: i,
-            navigateToChannel: !0
+            navigateToChannel: true
           })
         } catch (e) {
           return
@@ -169,7 +170,7 @@ function C(e) {
           customId: O,
           referrerId: v,
           onConfirmActivityLaunchChecksAlertOpen: I
-        }).then(e => e && (null == p ? void 0 : p({
+        }).then(e => e && (null == p ? true : p({
           applicationId: T
         })))
       };
@@ -177,7 +178,7 @@ function C(e) {
       return async () => {
         d.ZP.isLaunchingActivity() || await (0, f.Z)({
           applicationId: T,
-          activityChannelId: "channel" === a.type ? a.channel.id : void 0,
+          activityChannelId: "channel" === a.type ? a.channel.id : true,
           locationObject: c,
           analyticsLocations: A,
           componentId: h,
@@ -185,7 +186,7 @@ function C(e) {
           source: b,
           customId: O,
           referrerId: v
-        }).then(e => e && (null == p ? void 0 : p({
+        }).then(e => e && (null == p ? true : p({
           applicationId: T
         })))
       };

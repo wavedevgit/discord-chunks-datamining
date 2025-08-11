@@ -1,1 +1,0 @@
-{"id":"364226","type":"experiment","data":{"kind":"user","id":"2024-02_safety_hub_guild_violation_in_app_appeals","label":"Safety Hub Guild Violation In App Appeals","defaultConfig":{"enabled":false},"treatments":[{"id":1,"label":"Allow guild violations to be applied using the new appeals ingestion flow","config":{"enabled":false}}]},"fromModule":{"id":"3940"}}

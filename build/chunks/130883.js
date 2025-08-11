@@ -1,13 +1,10 @@
 /** Chunk was on web.js **/
+/** chunk id: 130883, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.r(t), n.d(t, {
+require.r(exports), require.d(exports, {
   default: () => a,
   messagesLoader: () => i
 });
-let {
-  createLoader: r
-} = n(515149), i = r({
-  "en-US": () => n.e("46339").then(n.bind(n, 909632))
-}, "en-US"), {
-  makeMessagesProxy: o
-} = n(515149), a = o(i)
+letChunk515149 = require("./515149.js"), i = r({
+  "en-US": () => require.e("46339").then(require.bind(require, 909632))
+}, "en-US"), Chunk515149 = require("./515149.js"), a = o(i)

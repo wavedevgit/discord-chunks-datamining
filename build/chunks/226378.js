@@ -1,19 +1,20 @@
 /** Chunk was on web.js **/
+/** chunk id: 226378, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   NL: () => d
 });
-var r = n(73800),
-  i = n(595519),
-  o = n(527805),
-  a = n(388032);
+var Chunk73800 = require("./73800.js"),
+  Chunk595519 = require("./595519.js"),
+  Chunk527805 = require("./527805.js"),
+  Chunk388032 = require("./388032.js");
 
 function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -69,19 +70,19 @@ function f(e) {
     currentEmbeddedActivity: r,
     channel: s
   } = e, c = null == t, d = {
-    disabled: !1,
+    disabled: false,
     isJoinAction: !c,
     text: c ? a.intl.string(a.t.I0v0Qk) : a.intl.string(a.t.sqe0ho),
-    tooltip: void 0
+    tooltip: true
   }, f = (0, i.WS)(s);
   if (null != t && null != r && t.launchId === r.launchId) return u(l({}, d), {
-    disabled: !0,
+    disabled: true,
     text: a.intl.string(a.t.DPfdsr),
     tooltip: a.intl.string(a.t.wJNK8P)
   });
   if (c) return u(l({}, d), {
     disabled: !f,
-    tooltip: f ? void 0 : a.intl.string(a.t.f41E1t)
+    tooltip: f ? true : a.intl.string(a.t.f41E1t)
   });
   if (null != n && n !== o.Fw.CAN_JOIN) {
     let e;
@@ -111,7 +112,7 @@ function f(e) {
         e = a.intl.string(a.t.Etp6uL)
     }
     return u(l({}, d), {
-      disabled: !0,
+      disabled: true,
       tooltip: e
     })
   }

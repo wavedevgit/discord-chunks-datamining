@@ -1,7 +1,8 @@
 /** Chunk was on web.js **/
-let r = n(40231),
-  i = n(889658);
-e.exports = (e, t, n) => {
+/** chunk id: 436741, original params: e,t,n (module,exports,re quire) **/
+let Chunk40231 = require("./40231.js"),
+  Chunk889658 = require("./889658.js");
+module.exports = (e, t, n) => {
   let o = null,
     a = null,
     s = null;
@@ -11,6 +12,6 @@ e.exports = (e, t, n) => {
     return null
   }
   return e.forEach(e => {
-    s.test(e) && (!o || -1 === a.compare(e)) && (a = new r(o = e, n))
+    s.test(e) && (!o || false === a.compare(e)) && (a = new r(o = e, n))
   }), o
 }

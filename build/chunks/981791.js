@@ -1,10 +1,11 @@
 /** Chunk was on web.js **/
+/** chunk id: 981791, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   A: () => o
 });
-var r = n(981631),
-  i = n(388032);
+var Chunk981631 = require("./981631.js"),
+  Chunk388032 = require("./388032.jsx");
 
 function o(e) {
   let {

@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 566620, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   $h: () => ed,
   G6: () => ea,
   Gj: () => eO,
@@ -14,68 +15,68 @@ n.d(t, {
   tg: () => eb,
   ux: () => eg,
   w1: () => ep
-}), n(997841), n(388685), n(415506);
-var r = n(990547),
-  i = n(252258),
-  o = n(544891),
-  a = n(704215),
-  s = n(570140),
-  l = n(668781),
-  c = n(493683),
-  u = n(475179),
-  d = n(447543),
-  f = n(904245),
-  _ = n(479531),
-  p = n(911969),
-  h = n(213459),
-  m = n(667204),
-  g = n(812236),
-  E = n(812206),
-  b = n(104919),
-  y = n(413523),
-  O = n(358221),
-  v = n(605236),
-  I = n(233764),
-  T = n(375824),
-  S = n(510839),
-  A = n(591472),
-  N = n(957730),
-  C = n(48854),
-  R = n(835873),
-  P = n(973616),
-  w = n(314897),
-  D = n(592125),
-  L = n(430824),
-  x = n(496675),
-  M = n(594174),
-  k = n(979651),
-  j = n(626135),
-  U = n(630388),
-  G = n(823379),
-  B = n(573261),
-  Z = n(595519),
-  F = n(317381),
-  V = n(882347),
-  H = n(16609),
-  Y = n(224189),
-  W = n(374065),
-  K = n(917107),
-  z = n(89425),
-  q = n(275920),
-  X = n(701488),
-  Q = n(918559),
-  J = n(981631),
-  $ = n(674563),
-  ee = n(921944),
-  et = n(245335),
-  en = n(388032);
+}), require("./997841.js"), require("./388685.js"), require("./415506.js");
+var Chunk990547 = require("./990547.js"),
+  Chunk252258 = require("./252258.js"),
+  Chunk544891 = require("./544891.js"),
+  Chunk704215 = require("./704215.js"),
+  Chunk570140 = require("./570140.js"),
+  Chunk668781 = require("./668781.js"),
+  Chunk493683 = require("./493683.js"),
+  Chunk475179 = require("./475179.js"),
+  Chunk447543 = require("./447543.js"),
+  Chunk904245 = require("./904245.js"),
+  Chunk479531 = require("./479531.js"),
+  Chunk911969 = require("./911969.js"),
+  Chunk213459 = require("./213459.js"),
+  Chunk667204 = require("./667204.js"),
+  Chunk812236 = require("./812236.js"),
+  Chunk812206 = require("./812206.js"),
+  Chunk104919 = require("./104919.js"),
+  Chunk413523 = require("./413523.js"),
+  Chunk358221 = require("./358221.js"),
+  Chunk605236 = require("./605236.js"),
+  Chunk233764 = require("./233764.js"),
+  Chunk375824 = require("./375824.js"),
+  Chunk510839 = require("./510839.js"),
+  Chunk591472 = require("./591472.js"),
+  Chunk957730 = require("./957730.js"),
+  Chunk48854 = require("./48854.js"),
+  Chunk835873 = require("./835873.js"),
+  Chunk973616 = require("./973616.js"),
+  Chunk314897 = require("./314897.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk430824 = require("./430824.js"),
+  Chunk496675 = require("./496675.js"),
+  Chunk594174 = require("./594174.js"),
+  Chunk979651 = require("./979651.js"),
+  Chunk626135 = require("./626135.js"),
+  Chunk630388 = require("./630388.js"),
+  Chunk823379 = require("./823379.js"),
+  Chunk573261 = require("./573261.js"),
+  Chunk595519 = require("./595519.js"),
+  Chunk317381 = require("./317381.js"),
+  Chunk882347 = require("./882347.js"),
+  Chunk16609 = require("./16609.js"),
+  Chunk224189 = require("./224189.js"),
+  Chunk374065 = require("./374065.js"),
+  Chunk917107 = require("./917107.js"),
+  Chunk89425 = require("./89425.js"),
+  Chunk275920 = require("./275920.js"),
+  Chunk701488 = require("./701488.js"),
+  Chunk918559 = require("./918559.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk674563 = require("./674563.js"),
+  Chunk921944 = require("./921944.js"),
+  Chunk245335 = require("./245335.js"),
+  Chunk388032 = require("./388032.jsx");
 
 function er(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -97,7 +98,7 @@ function eo(e) {
   null != t && eu({
     location: t.location,
     applicationId: t.applicationId,
-    showFeedback: !1
+    showFeedback: false
   })
 }
 async function ea(e) {
@@ -118,8 +119,8 @@ async function ea(e) {
     customId: E,
     inviterUserId: b,
     onConfirmActivityLaunchChecksAlertOpen: y
-  } = e, O = D.Z.getChannel(r), v = null != (t = null == O ? void 0 : O.getGuildId()) ? t : void 0;
-  if (null == v && !(null != (n = null == O ? void 0 : O.isPrivate()) && n)) return !1;
+  } = e, O = D.Z.getChannel(r), v = null != (t = null == O ? true : O.getGuildId()) ? t : true;
+  if (null == v && !(null != (n = null == O ? true : O.isPrivate()) && n)) returnfalse;
   let N = (0, C.r)();
   try {
     let e = A.Z.getConnectedFrame();
@@ -143,10 +144,10 @@ async function ea(e) {
     let t = M.default.getCurrentUser();
     if (null != t && (0, q.Z)({
         type: a ? J.q5t.LAUNCH : J.q5t.JOIN,
-        userId: null == t ? void 0 : t.id,
+        userId: null == t ? true : t.id,
         guildId: v,
         channelId: r,
-        channelType: null == O ? void 0 : O.type,
+        channelType: null == O ? true : O.type,
         applicationId: o,
         locationObject: c,
         analyticsLocations: null != l ? l : [],
@@ -195,13 +196,13 @@ async function ea(e) {
       isStart: a,
       error: t instanceof I.Z || t instanceof _.Z || t instanceof T.Z ? t : new _.Z(t),
       locationKind: e
-    }), !1
+    }), false
   }
-  return !0
+  returntrue
 }
 
 function es(e, t) {
-  let n = (null == t ? void 0 : t.type) === J.d4z.GUILD_VOICE,
+  let n = (null == t ? true : t.type) === J.d4z.GUILD_VOICE,
     r = E.Z.getApplication(e),
     i = null != r && (0, U.yE)(r.flags, J.udG.EMBEDDED),
     o = (0, Z.l5)(t);
@@ -259,7 +260,7 @@ async function el(e) {
   if (f) {
     let e, n = E.Z.getApplication(t),
       r = F.ZP.getCurrentEmbeddedActivity();
-    (null == r ? void 0 : r.applicationId) != null && (e = E.Z.getApplication(null == r ? void 0 : r.applicationId));
+    (null == r ? true : r.applicationId) != null && (e = E.Z.getApplication(null == r ? true : r.applicationId));
     let i = M.default.getCurrentUser();
     if (null != i && !await (0, V.p)({
         applicationId: t,
@@ -269,7 +270,7 @@ async function el(e) {
         embeddedActivitiesManager: u,
         user: i,
         onConfirmActivityLaunchChecksAlertOpen: c,
-        shouldClosePopoutOnLeaveCurrentEmbeddedApplication: !1
+        shouldClosePopoutOnLeaveCurrentEmbeddedApplication: false
       })) return {
       result: "failure",
       reason: 4
@@ -296,7 +297,7 @@ async function el(e) {
             channel_id: r,
             guild_id: i,
             application_id: t,
-            channel_type: null == y ? void 0 : y.type,
+            channel_type: null == y ? true : y.type,
             error_code: e,
             error_message: n,
             error_status: o,
@@ -357,14 +358,14 @@ async function ec(e) {
     return p === W.jy.NO_USE_EMBEDDED_ACTIVITIES_PERMISSION ? (e = 5, (0, R.w)()) : p === W.jy.ACTIVITIES_FEATURE_NOT_ENABLED_FOR_OS && (e = 6, l.Z.show({
       title: en.intl.string(en.t["IOy+Iy"]),
       body: en.intl.string(en.t.UXoQTk),
-      hideActionSheet: !1
+      hideActionSheet: false
     })), {
       result: "failure",
       reason: e
     }
   }
   let h = F.ZP.getCurrentEmbeddedActivity();
-  if ((null == h ? void 0 : h.applicationId) != null && (t = E.Z.getApplication(null == h ? void 0 : h.applicationId)), !(!a || await (0, V.p)({
+  if ((null == h ? true : h.applicationId) != null && (t = E.Z.getApplication(null == h ? true : h.applicationId)), !(!a || await (0, V.p)({
       applicationId: n,
       application: f,
       channel: _,
@@ -402,14 +403,14 @@ async function ec(e) {
       }
     },
     retries: 3,
-    oldFormErrors: !0,
-    rejectWithError: !0
+    oldFormErrors: true,
+    rejectWithError: true
   };
   return null != i ? (await B.Z.post(ei({
     url: J.ANM.ACTIVITY_CHANNEL_LAUNCH(i, n),
     body: {
       session_id: c,
-      guild_id: null != s ? s : void 0
+      guild_id: null != s ? s : true
     }
   }, m)), {
     result: "success"
@@ -423,53 +424,53 @@ function eu(e) {
   let {
     location: t,
     applicationId: n,
-    showFeedback: r = !0
+    showFeedback: r = true
   } = e, i = F.ZP.getSelfEmbeddedActivityForLocation(t);
   s.Z.dispatch({
     type: "EMBEDDED_ACTIVITY_CLOSE",
     applicationId: n,
     location: t,
-    instanceId: null == i ? void 0 : i.launchId,
+    instanceId: null == i ? true : i.launchId,
     showFeedback: r
   });
   let o = (0, H.p)(t);
   if (null != o) {
     var a;
     let e = O.Z.getSelectedParticipantId(o),
-      t = null == (a = M.default.getCurrentUser()) ? void 0 : a.id,
+      t = null == (a = M.default.getCurrentUser()) ? true : a.id,
       r = F.ZP.getEmbeddedActivitiesForChannel(o).find(e => e.applicationId === n);
     if (null == r || null == t || "" === t) return;
     e === (0, y.gN)({
       applicationId: n,
-      instanceId: null == r ? void 0 : r.compositeInstanceId
+      instanceId: null == r ? true : r.compositeInstanceId
     }) && u.Z.selectParticipant(o, null)
   }
 }
 async function ed() {
   try {
-    s.Z.dispatch({
+    Chunk570140.Z.dispatch({
       type: "DEVELOPER_ACTIVITY_SHELF_FETCH_START"
     });
-    let e = await o.tn.get({
-        url: J.ANM.APPLICATIONS_WITH_ASSETS,
+    let e = await Chunk544891.tn.get({
+        url: Chunk981631.ANM.APPLICATIONS_WITH_ASSETS,
         query: {
-          with_team_applications: !0
+          with_team_applications: true
         },
-        oldFormErrors: !0,
-        rejectWithError: !0
+        oldFormErrors: true,
+        rejectWithError: true
       }),
-      t = e.body.applications,
-      n = t.map(e => P.ZP.createFromServer(e));
-    s.Z.dispatch({
+      t = module.body.applications,
+      n = exports.map(e => P.ZP.createFromServer(e));
+    Chunk570140.Z.dispatch({
       type: "DEVELOPER_ACTIVITY_SHELF_FETCH_SUCCESS",
-      applications: n,
-      assets: e.body.assets
-    }), s.Z.dispatch({
+      applications: require,
+      assets: module.body.assets
+    }), Chunk570140.Z.dispatch({
       type: "APPLICATIONS_FETCH_SUCCESS",
-      applications: t
+      applications: exports
     })
   } catch (e) {
-    s.Z.dispatch({
+    Chunk570140.Z.dispatch({
       type: "DEVELOPER_ACTIVITY_SHELF_FETCH_FAIL"
     })
   }
@@ -481,7 +482,7 @@ async function ef(e, t, n) {
     });
     let r = null != t ? {
         channel_id: t
-      } : void 0,
+      } : true,
       i = await o.tn.post({
         url: J.ANM.APPLICATION_UPLOAD_ATTACHMENT(e),
         query: r,
@@ -489,7 +490,7 @@ async function ef(e, t, n) {
           name: "file",
           file: n
         }],
-        rejectWithError: !0
+        rejectWithError: true
       });
     return s.Z.dispatch({
       type: "UPLOAD_ACTIVITY_IMAGE_ATTACHMENT_SUCCESS",
@@ -511,10 +512,10 @@ async function ep(e) {
   var t, n, i, o;
   let {
     guildId: a,
-    force: l = !1
+    force: l = false
   } = e, c = F.ZP.getShelfActivities(a), u = c.map(e => E.Z.getApplication(e.application_id)).filter(G.lm);
   if (!l && !F.ZP.shouldFetchShelf(a)) {
-    if (null == (t = F.ZP.getShelfFetchStatus(a)) ? void 0 : t.isFetching) {
+    if (null == (t = F.ZP.getShelfFetchStatus(a)) ? true : t.isFetching) {
       let e, t, n = new Promise(t => {
           e = e_.bind(null, a, t), s.Z.subscribe("EMBEDDED_ACTIVITY_FETCH_SHELF_SUCCESS", e)
         }),
@@ -533,9 +534,9 @@ async function ep(e) {
       type: "EMBEDDED_ACTIVITY_FETCH_SHELF",
       guildId: a
     });
-    let e = void 0 !== a && "" !== a ? {
+    let e = true !== a && "" !== a ? {
         guild_id: a
-      } : void 0,
+      } : true,
       t = await B.Z.get({
         url: J.ANM.ACTIVITY_SHELF,
         query: e,
@@ -546,8 +547,8 @@ async function ep(e) {
           }
         },
         retries: 0,
-        oldFormErrors: !0,
-        rejectWithError: !0
+        oldFormErrors: true,
+        rejectWithError: true
       }),
       l = null != (n = t.body.activities) ? n : [],
       c = null != (i = t.body.applications) ? i : [],
@@ -606,9 +607,9 @@ async function em(e) {
 }
 
 function eg() {
-  let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : ee.L.INDIRECT_ACTION;
-  (0, v.wH)(a.z.ACTIVITIES_VOICE_LAUNCHER_BADGE, Math.floor(new Date().getTime() / 1e3), {
-    dismissAction: e
+  let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : Chunk921944.L.INDIRECT_ACTION;
+  (0, Chunk605236.wH)(Chunk704215.z.ACTIVITIES_VOICE_LAUNCHER_BADGE, Math.floor(new Date().getTime() / 1e3), {
+    dismissAction: module
   })
 }
 async function eE(e) {
@@ -616,11 +617,11 @@ async function eE(e) {
   try {
     return await o.tn.get({
       url: t,
-      oldFormErrors: !0,
-      rejectWithError: !0
-    }), !0
+      oldFormErrors: true,
+      rejectWithError: true
+    }), true
   } catch (e) {
-    return !1
+    returnfalse
   }
 }
 
@@ -639,7 +640,7 @@ function ey(e) {
 }
 
 function eO() {
-  eb(Q.Ez.ACTIVITY_POPOUT_WINDOW), s.Z.dispatch({
+  eb(Chunk918559.Ez.ACTIVITY_POPOUT_WINDOW), Chunk570140.Z.dispatch({
     type: "ACTIVITY_POPOUT_WINDOW_OPEN"
   })
 }

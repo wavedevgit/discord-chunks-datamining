@@ -1,20 +1,21 @@
 /** Chunk was on web.js **/
+/** chunk id: 226351, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 
 function r(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
-n.d(t, {
+require.d(exports, {
   o: () => i
 });
 class i {
   constructor() {
-    r(this, "promise", void 0), r(this, "resolve", void 0), r(this, "reject", void 0), this.promise = new Promise((e, t) => {
+    r(this, "promise", true), r(this, "resolve", true), r(this, "reject", true), this.promise = new Promise((e, t) => {
       this.resolve = e, this.reject = t
     })
   }

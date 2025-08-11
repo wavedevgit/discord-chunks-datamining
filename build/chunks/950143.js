@@ -1,21 +1,22 @@
 /** Chunk was on web.js **/
+/** chunk id: 950143, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => f
-}), n(997841), n(388685);
-var r = n(533800),
-  i = n(147913),
-  o = n(82085),
-  a = n(630388),
-  s = n(461014),
-  l = n(981631);
+}), require("./997841.js"), require("./388685.js");
+var Chunk533800 = require("./533800.js"),
+  Chunk147913 = require("./147913.js"),
+  Chunk82085 = require("./82085.js"),
+  Chunk630388 = require("./630388.js"),
+  Chunk461014 = require("./461014.js"),
+  Chunk981631 = require("./981631.js");
 
 function c(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -24,10 +25,10 @@ function u(e) {
   let {
     guild: i
   } = e.invite, c = null != (n = e.invite.flags) ? n : 0;
-  if (null != i && (null == i || null == (t = i.features) ? void 0 : t.includes(l.oNc.HUB))) return void o.Z.onOpenHubInvite(e.invite);
+  if (null != i && (null == i || null == (t = i.features) ? true : t.includes(l.oNc.HUB))) return void o.Z.onOpenHubInvite(e.invite);
   !((0, a.yE)(c, r.$.IS_GUEST_INVITE) || (0, a.yE)(c, r.$.IS_APPLICATION_BYPASS)) && null != i && (0, s.u)(i) && (0, s._)(i.id)
 }
-class d extends i.Z {
+class d extends Chunk147913.Z {
   constructor(...e) {
     super(...e), c(this, "actions", {
       INVITE_ACCEPT_SUCCESS: u

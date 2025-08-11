@@ -1,12 +1,13 @@
 /** Chunk was on 87626 **/
-a.d(t, {
+/** chunk id: 431138, original params: e,t,a (module,exports,require) **/
+require.d(exports, {
   r: () => n
 });
 let n = {
-  ASSET_SOCIAL_TWITTER: a(647928),
-  ASSET_SOCIAL_FACEBOOK: a(728372),
-  ASSET_SOCIAL_INSTAGRAM: a(247479),
-  ICON_TRANSLATE: a(765341),
-  ICON_ARROW_DOWN: a(699828),
-  ASSET_LOGO_DISCORD_SVG: a(219787)
+  ASSET_SOCIAL_TWITTER: require("./647928.js"),
+  ASSET_SOCIAL_FACEBOOK: require("./728372.js"),
+  ASSET_SOCIAL_INSTAGRAM: require("./247479.js"),
+  ICON_TRANSLATE: require("./765341.js"),
+  ICON_ARROW_DOWN: require("./699828.js"),
+  ASSET_LOGO_DISCORD_SVG: require("./219787.js")
 }

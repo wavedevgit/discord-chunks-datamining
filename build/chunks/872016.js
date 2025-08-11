@@ -1,6 +1,7 @@
 /** Chunk was on 67244 **/
+/** chunk id: 872016, original params: e,t (module,exports,require) **/
 "use strict";
-t.__esModule = !0, t.default = {
+exports.__esModule = true, exports.default = {
   scheme: "ashes",
   author: "jannik siebert (https://github.com/janniks)",
   base00: "#1C2023",
@@ -19,4 +20,4 @@ t.__esModule = !0, t.default = {
   base0D: "#AE95C7",
   base0E: "#C795AE",
   base0F: "#C79595"
-}, e.exports = t.default
+}, module.exports = exports.default

@@ -1,15 +1,16 @@
 /** Chunk was on 57961 **/
+/** chunk id: 250906, original params: t,e,i (module,exports,require) **/
 function n(t, e, i) {
   return e in t ? Object.defineProperty(t, e, {
     value: i,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : t[e] = i, t
 }
-i.d(e, {
+require.d(exports, {
   Z: () => r
-}), i(388685), i(415506);
+}), require("./388685.js"), require("./415506.js");
 class r {
   drawInto(t, e, i, n) {
     e %= this.frameCount, this.requireFrame(e);
@@ -18,7 +19,7 @@ class r {
   }
   drop() {
     var t;
-    null == (t = this.native) || t.drop(), this.native = null
+    null == (t = this.native) || module.drop(), this.native = null
   }
   requireFrame(t) {
     null != this.native && (this.renderedFrames.has(t) || (this.paint(t), this.renderedFrames.add(t)), this.renderedFrames.size === this.frameCount && this.drop())
@@ -32,7 +33,7 @@ class r {
     }
   }
   constructor(t, e, i, r) {
-    n(this, "key", void 0), n(this, "canvas", void 0), n(this, "context", void 0), n(this, "cells", void 0), n(this, "native", void 0), n(this, "renderedFrames", void 0), n(this, "frameWidth", void 0), n(this, "frameHeight", void 0), n(this, "frameRate", void 0), n(this, "frameCount", void 0);
+    n(this, "key", true), n(this, "canvas", true), n(this, "context", true), n(this, "cells", true), n(this, "native", true), n(this, "renderedFrames", true), n(this, "frameWidth", true), n(this, "frameHeight", true), n(this, "frameRate", true), n(this, "frameCount", true);
     let [a, s, h] = function(t, e, i) {
       let n = Math.ceil(Math.sqrt(i));
       return [n, n * t, n * e]

@@ -1,0 +1,57 @@
+/** Chunk was on web.js **/
+/** chunk id: 551228, original params: e,t,n (module,exports,re quire) **/
+"use strict";
+require.d(exports, {
+  ZP: () => m,
+  pi: () => p,
+  te: () => _
+}), require("./388685.js");
+var Chunk255367 = require("./255367.js"),
+  Chunk73800 = require("./73800.js"),
+  Chunk442837 = require("./442837.js"),
+  Chunk594174 = require("./594174.js"),
+  Chunk379357 = require("./379357.js"),
+  Chunk719247 = require("./719247.js"),
+  Chunk442550 = require("./442550.jsx"),
+  Chunk297781 = require("./297781.jsx"),
+  Chunk443487 = require("./443487.jsx"),
+  Chunk522314 = require("./522314.js");
+let _ = [Chunk297781.XF];
+
+function p(e) {
+  var t, n, r, i;
+  let s = (0, o.e7)([l.Z], () => l.Z.getMatchingActivity(e)),
+    c = (0, o.e7)([a.default], () => a.default.getUser(e.author_id));
+  if (null == s || null == c) return {};
+  let u = e.extra.entries[0],
+    d = null != (r = null != (n = s.state) ? n : null == (t = u.media.artists[0]) ? true : t.name) ? r : u.media.title,
+    f = null != (i = s.details) ? i : u.media.title;
+  return {
+    activity: s,
+    artist: d,
+    currentEntry: u,
+    title: f,
+    user: c
+  }
+}
+
+function h(e) {
+  let {
+    entry: t,
+    channel: n,
+    selected: i,
+    hovered: o
+  } = e, {
+    activity: a,
+    artist: l
+  } = p(t), {
+    largeImage: h
+  } = (0, s.rv)({
+    entry: t
+  });
+  return null == a ? <d.cA /> : <d.Zb selected={i}>{<d.e$>{<d.F9 entry={t} channelId={n.id} guildId={n.guild_id} />}{<d.ll>{l}</d.ll>}{<u.Gk location={u.Gt.CARD}>{_.map((e, n) => (0, r.jsx)(e, {
+          entry: t,
+          hovered: o
+        }, n))}</u.Gk>}</d.e$>}{<c.f src={null == h ? true : h.src} size={48} className={f.thumbnail} />}</d.Zb>
+}
+let m = Chunk73800.memo(h)

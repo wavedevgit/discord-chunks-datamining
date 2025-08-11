@@ -1,10 +1,11 @@
 /** Chunk was on 9354 **/
-n.d(e, {
+/** chunk id: 781208, original params: t,e,n (module,exports,require) **/
+require.d(exports, {
   $l: () => c,
   RI: () => i,
   Ud: () => l
 });
-var r = n(388032);
+var Chunk388032 = require("./388032.jsx");
 let i = "https://discord.com/community/securing-your-server",
   l = ["MESSAGE_SPAM", "DM_SPAM", "MENTION_SPAM", "SUSPICIOUS_USERS", "SETTINGS_SPAM"],
   c = t => {

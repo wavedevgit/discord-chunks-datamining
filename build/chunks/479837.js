@@ -1,48 +1,49 @@
 /** Chunk was on 1272 **/
-n.d(t, {
+/** chunk id: 479837, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   r: () => b
 });
-var r = n(846027),
-  i = n(365023),
-  l = n(565799),
-  a = n(501655),
-  o = n(368442),
-  s = n(829750),
-  c = n(560688),
-  u = n(173507),
-  d = n(592125),
-  p = n(131951),
-  f = n(19780),
-  h = n(594174),
-  g = n(981631),
-  m = n(65154);
+var Chunk846027 = require("./846027.js"),
+  Chunk365023 = require("./365023.js"),
+  Chunk565799 = require("./565799.js"),
+  Chunk501655 = require("./501655.js"),
+  Chunk368442 = require("./368442.js"),
+  Chunk829750 = require("./829750.js"),
+  Chunk560688 = require("./560688.js"),
+  Chunk173507 = require("./173507.jsx"),
+  Chunk592125 = require("./592125.js"),
+  Chunk131951 = require("./131951.js"),
+  Chunk19780 = require("./19780.js"),
+  Chunk594174 = require("./594174.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk65154 = require("./65154.js");
 
 function b() {
   var e, t;
-  if (!(0, i.l)()) return;
-  let n = p.Z.isVideoEnabled(),
-    b = Object.values(p.Z.getVideoDevices())[0],
-    _ = !1 === (null == (t = null == b ? void 0 : b.disabled) || t),
-    O = p.Z.supportsInApp(m.AN.VIDEO) && p.Z.supportsInApp(m.AN.DESKTOP_CAPTURE),
-    E = d.Z.getChannel(f.Z.getChannelId()),
-    y = null == (e = h.default.getCurrentUser()) ? void 0 : e.id;
+  if (!(0, Chunk365023.l)()) return;
+  let n = Chunk131951.Z.isVideoEnabled(),
+    b = Object.values(Chunk131951.Z.getVideoDevices())[0],
+    _ = false === (null == (t = null == b ? true : b.disabled) || exports),
+    O = Chunk131951.Z.supportsInApp(Chunk65154.AN.VIDEO) && Chunk131951.Z.supportsInApp(Chunk65154.AN.DESKTOP_CAPTURE),
+    E = Chunk592125.Z.getChannel(Chunk19780.Z.getChannelId()),
+    y = null == (e = Chunk594174.default.getCurrentUser()) ? true : module.id;
   if (null == E || null == y) return;
   let {
     reachedLimit: v
-  } = (0, s.t)(E);
+  } = (0, Chunk829750.t)(E);
   if (!v) {
     if (E.isGuildStageVoice()) {
-      let e = l.Z.getMutableParticipants(E.id, a.pV.SPEAKER),
-        t = null == e ? void 0 : e.find(e => {
+      let e = Chunk565799.Z.getMutableParticipants(E.id, Chunk501655.pV.SPEAKER),
+        t = null == module ? true : module.find(e => {
           let {
             user: t
           } = e;
           return t.id === y
         });
-      if (!(0, o.tu)(E.guild_id) || !O || null == t || t.voiceState.suppress) return
+      if (!(0, Chunk368442.tu)(E.guild_id) || !O || null == exports || exports.voiceState.suppress) return
     }
-    return n ? r.Z.setVideoEnabled(!1) : !n && _ ? (0, u.Z)(() => {
-      r.Z.setVideoEnabled(!0)
-    }, g.IlC.APP, !0) : _ || (0, c.Z)(), !1
+    return require ? Chunk846027.Z.setVideoEnabled(false) : !require && _ ? (0, Chunk173507.Z)(() => {
+      Chunk846027.Z.setVideoEnabled(true)
+    }, Chunk981631.IlC.APP, true) : _ || (0, Chunk560688.Z)(), false
   }
 }

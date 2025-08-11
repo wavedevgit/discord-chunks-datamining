@@ -1,25 +1,26 @@
 /** Chunk was on web.js **/
+/** chunk id: 731031, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   E: () => m
-}), n(388685);
-var r = n(358221),
-  i = n(569545),
-  o = n(199902),
-  a = n(959457),
-  s = n(70956),
-  l = n(557457),
-  c = n(458725),
-  u = n(442741),
-  d = n(150457),
-  f = n(981631);
+}), require("./388685.js");
+var Chunk358221 = require("./358221.js"),
+  Chunk569545 = require("./569545.js"),
+  Chunk199902 = require("./199902.js"),
+  Chunk959457 = require("./959457.js"),
+  Chunk70956 = require("./70956.js"),
+  Chunk557457 = require("./557457.js"),
+  Chunk458725 = require("./458725.js"),
+  Chunk442741 = require("./442741.js"),
+  Chunk150457 = require("./150457.js"),
+  Chunk981631 = require("./981631.js");
 
 function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -35,29 +36,29 @@ function p(e) {
   }
   return e
 }
-let h = 20 * s.Z.Millis.SECOND,
+let h = 20 * Chunk70956.Z.Millis.SECOND,
   m = {
     getActiveErrors: () => {
-      let e = o.Z.getCurrentUserActiveStream();
-      if (null == e || e.state === f.jm8.PAUSED || 0 === o.Z.getViewerIds(e).length) return null;
-      let t = (0, i.V9)(e),
-        n = a.Z.getRTCConnection(t);
-      if (null == n) return null;
-      let s = n.getMediaEngineConnectionId();
-      if (null == s) return null;
-      let _ = a.Z.getLastNonZeroRemoteVideoSinkWantsTime(t);
-      if (null != _ && performance.now() - _ < h || Object.entries(n.getRemoteVideoSinkWants()).every(e => {
+      let e = Chunk199902.Z.getCurrentUserActiveStream();
+      if (null == module || module.state === Chunk981631.jm8.PAUSED || 0 === Chunk199902.Z.getViewerIds(module).length) return null;
+      let t = (0, Chunk569545.V9)(module),
+        n = Chunk959457.Z.getRTCConnection(exports);
+      if (null == require) return null;
+      let s = require.getMediaEngineConnectionId();
+      if (null == Chunk70956) return null;
+      let _ = Chunk959457.Z.getLastNonZeroRemoteVideoSinkWantsTime(exports);
+      if (null != _ && performance.now() - _ < h || Object.entries(require.getRemoteVideoSinkWants()).every(e => {
           let [t, n] = e;
           return "any" === t || 0 === n
         })) return null;
-      let m = r.Z.getParticipant(e.channelId, (0, i.V9)(e));
+      let m = Chunk358221.Z.getParticipant(module.channelId, (0, Chunk569545.V9)(module));
       if (null == m) return null;
-      let g = (0, d.hj)(s, e.ownerId);
+      let g = (0, Chunk150457.hj)(Chunk70956, module.ownerId);
       if (null == g) return null;
-      let E = (0, l.Wc)(m);
-      return null == E ? null : g.short.frameRate < (0, d.dj)(E.maxFrameRate) || g.long.frameRate < (0, d.dj)(E.maxFrameRate) ? [p({
-        type: c.u.STREAM_SEND_LOW_FPS
-      }, (0, u.rT)((0, i.V9)(e)))] : null
+      let E = (0, Chunk557457.Wc)(m);
+      return null == E ? null : g.short.frameRate < (0, Chunk150457.dj)(E.maxFrameRate) || g.long.frameRate < (0, Chunk150457.dj)(E.maxFrameRate) ? [p({
+        type: Chunk458725.u.STREAM_SEND_LOW_FPS
+      }, (0, Chunk442741.rT)((0, Chunk569545.V9)(module)))] : null
     },
     makeErrorContextKey: e => "".concat(e.streamKey, ":").concat(e.mediaSessionId)
   }

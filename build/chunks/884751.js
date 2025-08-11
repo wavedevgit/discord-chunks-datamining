@@ -1,5 +1,6 @@
 /** Chunk was on 89298 **/
-e.exports = {
+/** chunk id: 884751, original params: e,t,n (module,exports,require) **/
+module.exports = {
   videoList: "videoList__95c18",
   vertical: "vertical__95c18",
   tile: "tile__95c18",

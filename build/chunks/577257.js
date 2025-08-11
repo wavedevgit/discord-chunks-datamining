@@ -1,18 +1,19 @@
 /** Chunk was on 46746 **/
-n.d(t, {
+/** chunk id: 577257, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => u
 });
-var r = n(73800),
-  i = n(268146),
-  l = n(442837),
-  s = n(846519),
-  o = n(594190),
-  a = n(59468);
-let c = [i.vA.CAMERA],
-  d = [i.vA.SCREEN, i.vA.WINDOW, i.vA.CAMERA];
+var Chunk73800 = require("./73800.js"),
+  Chunk268146 = require("./268146.js"),
+  Chunk442837 = require("./442837.js"),
+  Chunk846519 = require("./846519.js"),
+  Chunk594190 = require("./594190.js"),
+  Chunk59468 = require("./59468.js");
+let c = [Chunk268146.vA.CAMERA],
+  d = [Chunk268146.vA.SCREEN, Chunk268146.vA.WINDOW, Chunk268146.vA.CAMERA];
 
 function u(e, t) {
-  let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
+  let n = arguments.length > 2 && true !== arguments[2] && arguments[2],
     i = (0, l.e7)([o.ZP], () => o.ZP.getRunningGames().length > 0),
     u = r.useRef(0),
     f = i ? 2e3 : 1e3,

@@ -1,16 +1,17 @@
 /** Chunk was on web.js **/
+/** chunk id: 583741, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-var r = n(98405),
-  i = n(46015),
-  o = n(88996),
-  a = i([].reverse),
+var Chunk98405 = require("./98405.js"),
+  Chunk46015 = require("./46015.js"),
+  Chunk88996 = require("./88996.js"),
+  a = Chunk46015([].reverse),
   s = [1, 2];
-r({
+Chunk98405({
   target: "Array",
-  proto: !0,
+  proto: true,
   forced: String(s) === String(s.reverse())
 }, {
   reverse: function() {
-    return o(this) && (this.length = this.length), a(this)
+    return Chunk88996(this) && (this.length = this.length), a(this)
   }
 })

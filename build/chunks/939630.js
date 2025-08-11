@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 939630, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   pulseBackgroundDark: "pulseBackgroundDark__11664",
   pulseBackgroundLight: "pulseBackgroundLight__11664",
   pulseForegroundRing: "pulseForegroundRing__11664",

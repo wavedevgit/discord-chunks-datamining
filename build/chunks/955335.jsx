@@ -1,0 +1,64 @@
+/** Chunk was on 77803 **/
+/** chunk id: 955335, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
+  r: () => p
+});
+var Chunk255367 = require("./255367.js");
+require("./73800.js");
+var Chunk481060 = require("./481060.js"),
+  Chunk630388 = require("./630388.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk388032 = require("./388032.jsx"),
+  Chunk729463 = require("./729463.js");
+
+function u(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      var r;
+      r = n[t], t in e ? Object.defineProperty(e, t, {
+        value: r,
+        enumerable: true,
+        configurable: true,
+        writable: true
+      }) : e[t] = r
+    })
+  }
+  return e
+}
+
+function c(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
+    var n = Object.keys(e);
+    if (Object.getOwnPropertySymbols) {
+      var r = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, r)
+    }
+    return n
+  })(Object(t)).forEach(function(n) {
+    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+  }), e
+}
+let d = {
+  size: "md",
+  color: Chunk481060.TVs.colors.INTERACTIVE_NORMAL
+};
+
+function p(e) {
+  let {
+    subscriptions: t,
+    color: n = "text-default"
+  } = e, p = t.some(e => (0, l.yE)(e.skuFlags, o.l4R.APPLICATION_GUILD_SUBSCRIPTION));
+  return <i.X6q variant={"heading-lg/semibold"} color={n} className={a.heading}>{p ? (0, r.jsxs)(r.Fragment, {
+      children: [(0, r.jsx)(i.QTo, c(u({}, d), {
+        color: "currentColor"
+      })), s.intl.string(s.t.XIhSoq)]
+    }) : (0, r.jsxs)(r.Fragment, {
+      children: [(0, r.jsx)(i.tBG, c(u({}, d), {
+        color: "currentColor"
+      })), s.intl.string(s.t.dxfZpq)]
+    })}</i.X6q>
+}

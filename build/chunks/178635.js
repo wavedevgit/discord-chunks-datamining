@@ -1,29 +1,30 @@
 /** Chunk was on web.js **/
+/** chunk id: 178635, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   R: () => v,
   Z: () => w
-}), n(539854), n(388685);
-var r = n(392711),
-  i = n(433517),
-  o = n(147913),
-  a = n(536442),
-  s = n(810788),
-  l = n(759209),
-  c = n(695346),
-  u = n(19780),
-  d = n(115470),
-  f = n(250454),
-  _ = n(102824),
-  p = n(681926),
-  h = n(531578);
+}), require("./539854.js"), require("./388685.js");
+var Chunk392711 = require("./392711.js"),
+  Chunk433517 = require("./433517.js"),
+  Chunk147913 = require("./147913.js"),
+  Chunk536442 = require("./536442.js"),
+  Chunk810788 = require("./810788.js"),
+  Chunk759209 = require("./759209.js"),
+  Chunk695346 = require("./695346.js"),
+  Chunk19780 = require("./19780.js"),
+  Chunk115470 = require("./115470.js"),
+  Chunk250454 = require("./250454.js"),
+  Chunk102824 = require("./102824.js"),
+  Chunk681926 = require("./681926.js"),
+  Chunk531578 = require("./531578.js");
 
 function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -62,90 +63,90 @@ let y = 200,
     cooldown: 864e5
   },
   v = {
-    [h.nw.VOICE]: b(g({}, O), {
-      group: h.FB.AV,
-      hotspot: a.v6.VOICE_CALL_FEEDBACK,
+    [Chunk531578.nw.VOICE]: b(g({}, O), {
+      group: Chunk531578.FB.AV,
+      hotspot: Chunk536442.v6.VOICE_CALL_FEEDBACK,
       storageKey: "lastVoiceFeedback",
-      feedbackType: h.nw.VOICE,
+      feedbackType: Chunk531578.nw.VOICE,
       eligibilityChecks: [C]
     }),
-    [h.nw.STREAM]: b(g({}, O), {
-      group: h.FB.AV,
-      hotspot: a.v6.REPORT_PROBLEM_POST_STREAM,
+    [Chunk531578.nw.STREAM]: b(g({}, O), {
+      group: Chunk531578.FB.AV,
+      hotspot: Chunk536442.v6.REPORT_PROBLEM_POST_STREAM,
       storageKey: "lastStreamFeedback",
-      feedbackType: h.nw.STREAM
+      feedbackType: Chunk531578.nw.STREAM
     }),
-    [h.nw.VIDEO_BACKGROUND]: b(g({}, O), {
-      group: h.FB.AV,
-      hotspot: a.v6.VIDEO_BACKGROUND_FEEDBACK,
+    [Chunk531578.nw.VIDEO_BACKGROUND]: b(g({}, O), {
+      group: Chunk531578.FB.AV,
+      hotspot: Chunk536442.v6.VIDEO_BACKGROUND_FEEDBACK,
       storageKey: "lastVideoBackgroundFeedback",
-      feedbackType: h.nw.VIDEO_BACKGROUND
+      feedbackType: Chunk531578.nw.VIDEO_BACKGROUND
     }),
-    [h.nw.ACTIVITY]: {
+    [Chunk531578.nw.ACTIVITY]: {
       cooldown: 0,
       chance: .5,
-      group: h.FB.AV,
-      hotspot: a.v6.POST_ACTIVITY_FEEDBACK,
+      group: Chunk531578.FB.AV,
+      hotspot: Chunk536442.v6.POST_ACTIVITY_FEEDBACK,
       storageKey: "lastActivityFeedback",
-      feedbackType: h.nw.ACTIVITY
+      feedbackType: Chunk531578.nw.ACTIVITY
     },
-    [h.nw.IN_APP_REPORTS]: {
+    [Chunk531578.nw.IN_APP_REPORTS]: {
       cooldown: 1728e5,
       chance: .5,
-      group: h.FB.SAFETY,
-      hotspot: a.v6.IN_APP_REPORTS_FEEDBACK,
+      group: Chunk531578.FB.SAFETY,
+      hotspot: Chunk536442.v6.IN_APP_REPORTS_FEEDBACK,
       storageKey: "inAppReportsFeedback",
-      feedbackType: h.nw.IN_APP_REPORTS
+      feedbackType: Chunk531578.nw.IN_APP_REPORTS
     },
-    [h.nw.USER_DM_MUTE]: {
+    [Chunk531578.nw.USER_DM_MUTE]: {
       cooldown: 6048e5,
       chance: 1,
-      group: h.FB.SAFETY,
-      hotspot: a.v6.USER_DM_MUTE_FEEDBACK,
+      group: Chunk531578.FB.SAFETY,
+      hotspot: Chunk536442.v6.USER_DM_MUTE_FEEDBACK,
       storageKey: "userDmMute",
-      feedbackType: h.nw.USER_DM_MUTE
+      feedbackType: Chunk531578.nw.USER_DM_MUTE
     },
-    [h.nw.BLOCK_USER]: {
+    [Chunk531578.nw.BLOCK_USER]: {
       cooldown: 0,
       chance: 1,
-      group: h.FB.SAFETY,
-      hotspot: a.v6.BLOCK_USER_FEEDBACK,
+      group: Chunk531578.FB.SAFETY,
+      hotspot: Chunk536442.v6.BLOCK_USER_FEEDBACK,
       storageKey: "blockUser",
-      feedbackType: h.nw.BLOCK_USER
+      feedbackType: Chunk531578.nw.BLOCK_USER
     },
-    [h.nw.VOICE_FILTER]: b(g({}, O), {
-      group: h.FB.AV,
-      hotspot: a.v6.VOICE_FILTER_FEEDBACK,
+    [Chunk531578.nw.VOICE_FILTER]: b(g({}, O), {
+      group: Chunk531578.FB.AV,
+      hotspot: Chunk536442.v6.VOICE_FILTER_FEEDBACK,
       storageKey: "lastVoiceFilterFeedback",
-      feedbackType: h.nw.VOICE_FILTER,
+      feedbackType: Chunk531578.nw.VOICE_FILTER,
       eligibilityChecks: [C]
     }),
-    [h.nw.SEARCH_RESULTS]: b(g({}, O), {
-      group: h.FB.SEARCH,
-      hotspot: a.v6.SEARCH_RESULTS_FEEDBACK,
+    [Chunk531578.nw.SEARCH_RESULTS]: b(g({}, O), {
+      group: Chunk531578.FB.SEARCH,
+      hotspot: Chunk536442.v6.SEARCH_RESULTS_FEEDBACK,
       storageKey: "searchResultsFeedback",
-      feedbackType: h.nw.SEARCH_RESULTS,
+      feedbackType: Chunk531578.nw.SEARCH_RESULTS,
       eligibilityChecks: [R]
     }),
-    [h.nw.AGE_VERIFICATION]: {
+    [Chunk531578.nw.AGE_VERIFICATION]: {
       cooldown: 0,
       chance: 1,
-      group: h.FB.SAFETY,
-      hotspot: a.v6.AGE_VERIFICATION_FEEDBACK,
+      group: Chunk531578.FB.SAFETY,
+      hotspot: Chunk536442.v6.AGE_VERIFICATION_FEEDBACK,
       storageKey: "ageVerificationFeedback",
-      feedbackType: h.nw.AGE_VERIFICATION
+      feedbackType: Chunk531578.nw.AGE_VERIFICATION
     }
   };
 
 function I(e) {
   var t, n;
-  if (__OVERLAY__) return !1;
+  if (__OVERLAY__) returnfalse;
   let {
     overrideEligibility: r
   } = (0, _.j)({
     location: "FeedbackManager"
   });
-  if (r) return !0;
+  if (r) returntrue;
   let i = null != (t = d.Z.getFeedbackConfig(e)) ? t : v[e],
     o = [S, T],
     {
@@ -167,7 +168,7 @@ function T(e) {
   if (!t) return s.Z.hasHotspot(e.hotspot);
   {
     var n;
-    let t = null == (n = c.A2.getSetting()[e.feedbackType]) ? void 0 : n.optOutExpiryTime,
+    let t = null == (n = c.A2.getSetting()[e.feedbackType]) ? true : n.optOutExpiryTime,
       r = null != t && !Number.isNaN(t) && Date.now() < t,
       i = !s.Z.hasHotspot(e.hotspot);
     return i && !r && c.A2.updateSetting(t => b(g({}, t), {
@@ -190,8 +191,8 @@ function A(e, t) {
   });
   if (n) {
     var o, a, s;
-    let n, l = null == (o = c.A2.getSetting()[t.feedbackType]) ? void 0 : o.lastImpressionTime;
-    return (null == l || Number.isNaN(l)) && null != t.storageKey && (null == (n = null != (a = i.K.get(t.storageKey)) ? a : void 0) || Number.isNaN(n) || c.A2.updateSetting(e => b(g({}, e), {
+    let n, l = null == (o = c.A2.getSetting()[t.feedbackType]) ? true : o.lastImpressionTime;
+    return (null == l || Number.isNaN(l)) && null != t.storageKey && (null == (n = null != (a = i.K.get(t.storageKey)) ? a : true) || Number.isNaN(n) || c.A2.updateSetting(e => b(g({}, e), {
       [t.feedbackType]: b(g({}, e[t.feedbackType]), {
         lastImpressionTime: n
       })
@@ -201,7 +202,7 @@ function A(e, t) {
     let n = i.K.get(t.storageKey);
     if (null != n) return n + e.cooldown < Date.now()
   }
-  return !0
+  returntrue
 }
 
 function N(e) {
@@ -211,8 +212,8 @@ function N(e) {
       } = t;
       return n === e.group
     }))
-    if (!A(e, t)) return !1;
-  return !0
+    if (!A(e, t)) returnfalse;
+  returntrue
 }
 
 function C(e) {
@@ -243,7 +244,7 @@ function P(e) {
     null != t && i.K.set(t, Date.now())
   }
 }
-class w extends o.Z {
+class w extends Chunk147913.Z {
   possiblyShowFeedbackModal(e, t, n) {
     if (!I(e) || null != this.feedbackTypeToShow && h.b5[this.feedbackTypeToShow] < h.b5[e]) {
       null == n || n();

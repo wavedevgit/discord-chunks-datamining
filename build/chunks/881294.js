@@ -1,24 +1,25 @@
 /** Chunk was on 88934 **/
-n.d(t, {
+/** chunk id: 881294, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   nu: () => p,
   qF: () => h,
   rf: () => m,
   zZ: () => u
-}), n(190126), n(368063), n(65234), n(111804), n(490233), n(97749), n(388685), n(35282);
-var r = n(860911),
-  a = n(442837),
-  i = n(703656),
-  l = n(314897),
-  s = n(594174),
-  o = n(626135),
-  c = n(258971),
-  d = n(981631);
+}), require("./190126.js"), require("./368063.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js"), require("./388685.js"), require("./35282.js");
+var Chunk860911 = require("./860911.js"),
+  Chunk442837 = require("./442837.js"),
+  Chunk703656 = require("./703656.js"),
+  Chunk314897 = require("./314897.js"),
+  Chunk594174 = require("./594174.js"),
+  Chunk626135 = require("./626135.js"),
+  Chunk258971 = require("./258971.js"),
+  Chunk981631 = require("./981631.js");
 
 function u(e, t) {
   var n, r, a;
   let i = c.z8.getField("sessionId"),
     l = c.z8.getField("guildId"),
-    d = null == (n = c.z8.getField("entrypoint")) ? void 0 : n.name,
+    d = null == (n = c.z8.getField("entrypoint")) ? true : n.name,
     u = s.default.getCurrentUser(),
     p = (r = function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -30,9 +31,9 @@ function u(e, t) {
           var r;
           r = n[t], t in e ? Object.defineProperty(e, t, {
             value: r,
-            enumerable: !0,
-            configurable: !0,
-            writable: !0
+            enumerable: true,
+            configurable: true,
+            writable: true
           }) : e[t] = r
         })
       }
@@ -41,7 +42,7 @@ function u(e, t) {
       guild_id: l,
       directory_session_id: i,
       source: d,
-      user_id: null == u ? void 0 : u.id
+      user_id: null == u ? true : u.id
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
@@ -56,23 +57,23 @@ function u(e, t) {
 }
 
 function p() {
-  return (0, a.e7)([l.default], () => l.default.isAuthenticated())
+  return (0, Chunk442837.e7)([Chunk314897.default], () => Chunk314897.default.isAuthenticated())
 }
 
 function m() {
-  let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {},
+  let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {},
     t = new URL(location.href);
-  for (let n in e) {
-    let r = e[n];
-    t.searchParams.set(n, r)
+  for (let n in module) {
+    let r = module[require];
+    exports.searchParams.set(require, Chunk860911)
   }
-  let n = t.pathname + t.search,
-    a = (0, r.Ui)(n, !1);
-  (0, i.uL)(a)
+  let n = exports.pathname + exports.search,
+    a = (0, Chunk860911.Ui)(require, false);
+  (0, Chunk703656.uL)(Chunk442837)
 }
 
 function h() {
   let e = new URL(location.href),
-    t = "?redirect_to=".concat(encodeURIComponent(e.pathname + e.search));
-  (0, i.uL)(d.Z5c.REGISTER + t)
+    t = "?redirect_to=".concat(encodeURIComponent(module.pathname + module.search));
+  (0, Chunk703656.uL)(Chunk981631.Z5c.REGISTER + exports)
 }

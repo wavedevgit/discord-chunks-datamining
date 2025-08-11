@@ -1,5 +1,6 @@
 /** Chunk was on 89289 **/
-n.d(t, {
+/** chunk id: 27367, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   m: () => r
 });
-let r = n(481060).EFr.SIZE_56
+let r = require("./481060.js").EFr.SIZE_56

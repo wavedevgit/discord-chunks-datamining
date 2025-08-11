@@ -1,22 +1,23 @@
 /** Chunk was on web.js **/
+/** chunk id: 662896, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => a
-}), n(388685);
-var r = n(287328);
+}), require("./388685.js");
+var Chunk287328 = require("./287328.js");
 
 function i(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 class o {
   async getAll() {
-    let e = r.Z.guildsRequiringDeletedIdsSync();
-    return null == e ? new Set : new Set((await e.getMany()).map(e => e.id))
+    let e = Chunk287328.Z.guildsRequiringDeletedIdsSync();
+    return null == module ? new Set : new Set((await module.getMany()).map(e => e.id))
   }
   handleConnectionOpen(e, t) {
     let {

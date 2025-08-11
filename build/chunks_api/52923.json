@@ -1,0 +1,1 @@
+{"id":"52923","type":"experiment","data":{"kind":"user","id":"2025-04_keyframe_on_join","label":"Emit a keyframe when a new user joins the MLS group","defaultConfig":{"enabled":false},"treatments":[{"id":1,"label":"Enable","config":{"enabled":true}}]},"fromModule":{"id":"web.js"}}

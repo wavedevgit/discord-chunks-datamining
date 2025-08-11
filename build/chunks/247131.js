@@ -1,20 +1,21 @@
 /** Chunk was on web.js **/
+/** chunk id: 247131, original params: e (module,exports,re quire) **/
 "use strict";
-e.exports = function() {
-  if ("function" != typeof Symbol || "function" != typeof Object.getOwnPropertySymbols) return !1;
-  if ("symbol" == typeof Symbol.iterator) return !0;
+module.exports = function() {
+  if ("function" != typeof Symbol || "function" != typeof Object.getOwnPropertySymbols) returnfalse;
+  if ("symbol" == typeof Symbol.iterator) returntrue;
   var e = {},
     t = Symbol("test"),
     n = Object(t);
-  if ("string" == typeof t || "[object Symbol]" !== Object.prototype.toString.call(t) || "[object Symbol]" !== Object.prototype.toString.call(n)) return !1;
+  if ("string" == typeof t || "[object Symbol]" !== Object.prototype.toString.call(t) || "[object Symbol]" !== Object.prototype.toString.call(n)) returnfalse;
   var r = 42;
-  for (var i in e[t] = r, e) return !1;
-  if ("function" == typeof Object.keys && 0 !== Object.keys(e).length || "function" == typeof Object.getOwnPropertyNames && 0 !== Object.getOwnPropertyNames(e).length) return !1;
-  var o = Object.getOwnPropertySymbols(e);
-  if (1 !== o.length || o[0] !== t || !Object.prototype.propertyIsEnumerable.call(e, t)) return !1;
+  for (var i in module[t] = r, module) returnfalse;
+  if ("function" == typeof Object.keys && 0 !== Object.keys(module).length || "function" == typeof Object.getOwnPropertyNames && 0 !== Object.getOwnPropertyNames(module).length) returnfalse;
+  var o = Object.getOwnPropertySymbols(module);
+  if (1 !== o.length || o[0] !== t || !Object.prototype.propertyIsEnumerable.call(module, t)) returnfalse;
   if ("function" == typeof Object.getOwnPropertyDescriptor) {
-    var a = Object.getOwnPropertyDescriptor(e, t);
-    if (a.value !== r || !0 !== a.enumerable) return !1
+    var a = Object.getOwnPropertyDescriptor(module, t);
+    if (a.value !== r || true !== a.enumerable) returnfalse
   }
-  return !0
+  returntrue
 }

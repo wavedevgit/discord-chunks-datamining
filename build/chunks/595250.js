@@ -1,9 +1,10 @@
 /** Chunk was on 21153 **/
+/** chunk id: 595250, original params: e,t,r (module,exports,require) **/
 "use strict";
-r.d(t, {
+require.d(exports, {
   Z: () => o
 });
-var n = r(195168);
+var Chunk195168 = require("./195168.js");
 let o = function() {
-  return n.Z.Date.now()
+  return Chunk195168.Z.Date.now()
 }

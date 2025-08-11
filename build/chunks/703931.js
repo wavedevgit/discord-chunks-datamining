@@ -1,4 +1,5 @@
 /** Chunk was on web.js **/
+/** chunk id: 703931, original params: e (module,exports,re quire) **/
 "use strict";
 var t = {
   current: {
@@ -9,4 +10,4 @@ var t = {
     t.current = e
   }
 };
-e.exports = t
+module.exports = t

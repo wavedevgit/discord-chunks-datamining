@@ -1,13 +1,14 @@
 /** Chunk was on 99989 **/
-n.d(e, {
+/** chunk id: 295866, original params: t,e,n (module,exports,require) **/
+require.d(exports, {
   D0: () => c,
   kY: () => l,
   lE: () => i
 });
-var r = n(570140);
+var Chunk570140 = require("./570140.js");
 
 function l() {
-  r.Z.dispatch({
+  Chunk570140.Z.dispatch({
     type: "SPELLCHECK_TOGGLE"
   })
 }

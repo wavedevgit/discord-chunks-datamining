@@ -1,8 +1,9 @@
 /** Chunk was on 1272 **/
-n.d(t, {
+/** chunk id: 908711, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => i
 });
-var r = n(408841);
+var Chunk408841 = require("./408841.js");
 let i = {
-  [n(981631).Etm.SEND_GENERIC_EVENT]: r.n
+  [require("./981631.js").Etm.SEND_GENERIC_EVENT]: Chunk408841.n
 }

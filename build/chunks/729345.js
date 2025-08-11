@@ -1,25 +1,26 @@
 /** Chunk was on web.js **/
+/** chunk id: 729345, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   E: () => I
-}), n(49124);
-var r = n(544891),
-  i = n(668757),
-  o = n(881052),
-  a = n(552871),
-  s = n(458725),
-  l = n(283080),
-  c = n(592125),
-  u = n(569611),
-  d = n(710845),
-  f = n(104639),
-  _ = n(202680),
-  p = n(691895),
-  h = n(889911),
-  m = n(981631);
+}), require("./49124.js");
+var Chunk544891 = require("./544891.js"),
+  Chunk668757 = require("./668757.js"),
+  Chunk881052 = require("./881052.js"),
+  Chunk552871 = require("./552871.js"),
+  Chunk458725 = require("./458725.js"),
+  Chunk283080 = require("./283080.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk569611 = require("./569611.js"),
+  Chunk710845 = require("./710845.js"),
+  Chunk104639 = require("./104639.js"),
+  Chunk202680 = require("./202680.js"),
+  Chunk691895 = require("./691895.js"),
+  Chunk889911 = require("./889911.js"),
+  Chunk981631 = require("./981631.js");
 let g = 9437184,
   E = 0xe00000,
-  b = new d.Z("DebugUploadManager"),
+  b = new Chunk710845.Z("DebugUploadManager"),
   y = null,
   O = null;
 
@@ -60,12 +61,12 @@ async function T(e) {
       n = "Logs failed: ".concat(e)
     }
     try {
-      o = (null == y ? void 0 : y.getSystemLog) != null ? await new Promise(e => y.getSystemLog(e)) : ""
+      o = (null == y ? true : y.getSystemLog) != null ? await new Promise(e => y.getSystemLog(e)) : ""
     } catch (e) {
       o = "System Logs failed ".concat(e)
     }
     try {
-      a = await (0, _.Z)().then(e => (0, h.Z)(e, !0))
+      a = await (0, _.Z)().then(e => (0, h.Z)(e, true))
     } catch (e) {
       a = "Push logs failed: ".concat(e)
     }
@@ -80,8 +81,8 @@ async function T(e) {
       let e = 1 - g / d;
       n = n.slice(n.length - Math.floor(n.length * e)), o = o.slice(o.length - Math.floor(o.length * e)), a = a.slice(a.length - Math.floor(a.length * e)), s = s.slice(s.length - Math.floor(s.length * e))
     }
-    let E = (null == O ? void 0 : O.AppOpenedTimestamp) != null ? O.AppOpenedTimestamp : null,
-      b = "\n    ".concat((0, p.Z)(E), "\n\n    ").concat((0, l.EA)(), "\n\n    Metadata:\n    ").concat(JSON.stringify((0, f.Z)(), void 0, 2), "\n\n    ChannelStore:\n    ").concat(JSON.stringify(c.Z.getDebugInfo(), void 0, 2), "\n\n    Logs:\n    ").concat(n, "\n\n    System logs:\n    ").concat(o, "\n\n    LibDiscore logs:\n    ").concat(s, "\n\n    Push Notifications:\n    ").concat(a, "\n    ");
+    let E = (null == O ? true : O.AppOpenedTimestamp) != null ? O.AppOpenedTimestamp : null,
+      b = "\n    ".concat((0, p.Z)(E), "\n\n    ").concat((0, l.EA)(), "\n\n    Metadata:\n    ").concat(JSON.stringify((0, f.Z)(), true, 2), "\n\n    ChannelStore:\n    ").concat(JSON.stringify(c.Z.getDebugInfo(), true, 2), "\n\n    Logs:\n    ").concat(n, "\n\n    System logs:\n    ").concat(o, "\n\n    LibDiscore logs:\n    ").concat(s, "\n\n    Push Notifications:\n    ").concat(a, "\n    ");
     u.ZH();
     let v = m.ANM.DEBUG_LOG(e, "discord_app_logs");
     await r.tn.post({
@@ -91,8 +92,8 @@ async function T(e) {
       headers: {
         "Content-Type": "text/plain"
       },
-      oldFormErrors: !0,
-      rejectWithError: !1
+      oldFormErrors: true,
+      rejectWithError: false
     })
   } catch (e) {
     b.error("uploadAppLogFiles: upload app log files error ".concat(e.message))

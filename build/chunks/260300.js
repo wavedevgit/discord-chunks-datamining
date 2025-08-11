@@ -1,11 +1,12 @@
 /** Chunk was on web.js **/
+/** chunk id: 260300, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => a
 });
-var r = n(544891),
-  i = n(570140),
-  o = n(981631);
+var Chunk544891 = require("./544891.js"),
+  Chunk570140 = require("./570140.js"),
+  Chunk981631 = require("./981631.js");
 let a = {
   show(e, t) {
     i.Z.wait(() => i.Z.dispatch({
@@ -26,17 +27,17 @@ let a = {
       tutorialId: e
     })), r.tn.put({
       url: o.ANM.TUTORIAL_INDICATOR(e),
-      oldFormErrors: !0,
-      rejectWithError: !0
+      oldFormErrors: true,
+      rejectWithError: true
     })
   },
   suppressAll() {
-    i.Z.dispatch({
+    Chunk570140.Z.dispatch({
       type: "TUTORIAL_INDICATOR_SUPPRESS_ALL"
-    }), r.tn.post({
-      url: o.ANM.TUTORIAL_INDICATORS_SUPPRESS,
-      oldFormErrors: !0,
-      rejectWithError: !0
+    }), Chunk544891.tn.post({
+      url: Chunk981631.ANM.TUTORIAL_INDICATORS_SUPPRESS,
+      oldFormErrors: true,
+      rejectWithError: true
     })
   }
 }

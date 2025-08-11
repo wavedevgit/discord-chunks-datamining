@@ -1,23 +1,24 @@
 /** Chunk was on web.js **/
+/** chunk id: 177523, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
-  KV: () => a.KV,
+require.d(exports, {
+  KV: () => Chunk509848.KV,
   ZP: () => _
-}), n(388685);
-var r = n(392711),
-  i = n.n(r),
-  o = n(846519),
-  a = n(509848),
-  s = n(483019),
-  l = n(945689),
-  c = n(981631);
+}), require("./388685.js");
+var Chunk392711 = require("./392711.js"),
+  i = require.n(Chunk392711),
+  Chunk846519 = require("./846519.js"),
+  Chunk509848 = require("./509848.js"),
+  Chunk483019 = require("./483019.js"),
+  Chunk945689 = require("./945689.js"),
+  Chunk981631 = require("./981631.js");
 
 function u(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -90,15 +91,15 @@ class _ {
     return !!f(e) && this._channels.subscribe(e, t, n)
   }
   subscribeToMemberUpdates(e) {
-    if (!f(e)) return !1;
+    if (!f(e)) returnfalse;
     this._enqueue(e, {
-      member_updates: !0
+      member_updates: true
     }), this._memberUpdates.add(e)
   }
   unsubscribeFromMemberUpdates(e) {
-    if (!f(e)) return !1;
+    if (!f(e)) returnfalse;
     this._enqueue(e, {
-      member_updates: !1
+      member_updates: false
     })
   }
   subscribeThreadMemberList(e, t, n) {
@@ -109,11 +110,11 @@ class _ {
   }
   subscribeToGuild(e) {
     this._subscribeToFeature(e, this._typing, {
-      typing: !0
+      typing: true
     }), this._subscribeToFeature(e, this._activities, {
-      activities: !0
+      activities: true
     }), this._subscribeToFeature(e, this._threads, {
-      threads: !0
+      threads: true
     })
   }
   _subscribeToFeature(e, t, n) {
@@ -126,6 +127,6 @@ class _ {
       channels: t
     }))), u(this, "_threadMemberLists", new l.Z((e, t) => this._enqueue(e, {
       thread_member_lists: t
-    }))), u(this, "_typing", new Set), u(this, "_threads", new Set), u(this, "_activities", new Set), u(this, "_memberUpdates", new Set), u(this, "_subscribed", new Set), u(this, "_pending", {}), u(this, "_flush", new o.sW(0, () => this.flush())), u(this, "_onChange", void 0), this._onChange = e
+    }))), u(this, "_typing", new Set), u(this, "_threads", new Set), u(this, "_activities", new Set), u(this, "_memberUpdates", new Set), u(this, "_subscribed", new Set), u(this, "_pending", {}), u(this, "_flush", new o.sW(0, () => this.flush())), u(this, "_onChange", true), this._onChange = e
   }
 }

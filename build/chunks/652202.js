@@ -1,5 +1,6 @@
 /** Chunk was on 67544 **/
-e.exports = {
+/** chunk id: 652202, original params: e,t,n (module,exports,require) **/
+module.exports = {
   winScreen: "winScreen_bf2110",
   header: "header_bf2110",
   ground: "ground_bf2110",

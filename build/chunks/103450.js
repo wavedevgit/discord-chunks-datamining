@@ -1,44 +1,45 @@
 /** Chunk was on web.js **/
+/** chunk id: 103450, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   e: () => G
-}), n(388685);
-var r = n(73800),
-  i = n(442837),
-  o = n(278323),
-  a = n(224706),
-  s = n(287734),
-  l = n(2052),
-  c = n(317381),
-  u = n(638880),
-  d = n(255621),
-  f = n(16609),
-  _ = n(452634),
-  p = n(527805),
-  h = n(620662),
-  m = n(841784),
-  g = n(275920),
-  E = n(906732),
-  b = n(835473),
-  y = n(813370),
-  O = n(592745),
-  v = n(592125),
-  I = n(757266),
-  T = n(650774),
-  S = n(430824),
-  A = n(283595),
-  N = n(496675),
-  C = n(699516),
-  R = n(944486),
-  P = n(594174),
-  w = n(979651),
-  D = n(181106),
-  L = n(417363),
-  x = n(358085),
-  M = n(804739),
-  k = n(981631),
-  j = n(701488),
-  U = n(388032);
+}), require("./388685.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk442837 = require("./442837.js"),
+  Chunk278323 = require("./278323.js"),
+  Chunk224706 = require("./224706.js"),
+  Chunk287734 = require("./287734.js"),
+  Chunk2052 = require("./2052.js"),
+  Chunk317381 = require("./317381.js"),
+  Chunk638880 = require("./638880.js"),
+  Chunk255621 = require("./255621.js"),
+  Chunk16609 = require("./16609.js"),
+  Chunk452634 = require("./452634.js"),
+  Chunk527805 = require("./527805.js"),
+  Chunk620662 = require("./620662.js"),
+  Chunk841784 = require("./841784.js"),
+  Chunk275920 = require("./275920.js"),
+  Chunk906732 = require("./906732.js"),
+  Chunk835473 = require("./835473.js"),
+  Chunk813370 = require("./813370.js"),
+  Chunk592745 = require("./592745.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk757266 = require("./757266.js"),
+  Chunk650774 = require("./650774.js"),
+  Chunk430824 = require("./430824.js"),
+  Chunk283595 = require("./283595.js"),
+  Chunk496675 = require("./496675.js"),
+  Chunk699516 = require("./699516.js"),
+  Chunk944486 = require("./944486.js"),
+  Chunk594174 = require("./594174.js"),
+  Chunk979651 = require("./979651.js"),
+  Chunk181106 = require("./181106.js"),
+  Chunk417363 = require("./417363.js"),
+  Chunk358085 = require("./358085.js"),
+  Chunk804739 = require("./804739.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk701488 = require("./701488.js"),
+  Chunk388032 = require("./388032.js");
 
 function G(e) {
   var t, n;
@@ -53,13 +54,13 @@ function G(e) {
     {
       analyticsLocations: W
     } = (0, E.ZP)(null != Y ? Y : []),
-    [K, z] = r.useState(!1),
-    q = null != (t = null == Z ? void 0 : Z.applicationId) ? t : null == B ? void 0 : B.application_id,
+    [K, z] = r.useState(false),
+    q = null != (t = null == Z ? true : Z.applicationId) ? t : null == B ? true : B.application_id,
     X = null != Z || (0, m.Z)(B),
     Q = (0, i.e7)([P.default], () => P.default.getCurrentUser()),
-    J = F.id === (null == Q ? void 0 : Q.id),
+    J = F.id === (null == Q ? true : Q.id),
     $ = (0, _.Z)({
-      channelId: (0, f.p)(null == Z ? void 0 : Z.location),
+      channelId: (0, f.p)(null == Z ? true : Z.location),
       userId: F.id,
       activity: B
     }),
@@ -75,7 +76,7 @@ function G(e) {
         applicationId: t,
         location: n
       } = e;
-      return (t === (null == B ? void 0 : B.application_id) || t === (null == Z ? void 0 : Z.applicationId)) && (0, f.p)(n) === $
+      return (t === (null == B ? true : B.application_id) || t === (null == Z ? true : Z.applicationId)) && (0, f.p)(n) === $
     })),
     en = (0, i.e7)([D.Z], () => null != B && null != B.application_id && D.Z.getState(B.application_id, k.mFx.JOIN) === k.OcF.LOADING),
     er = (0, b.q)(q),
@@ -102,9 +103,9 @@ function G(e) {
       PermissionStore: N.Z
     })),
     es = (0, i.e7)([c.ZP], () => {
-      if (Array.from(c.ZP.getSelfEmbeddedActivities().values()).some(e => e.applicationId === (null == Z ? void 0 : Z.applicationId) && e.location.id === (null == Z ? void 0 : Z.location.id))) return !0;
+      if (Array.from(c.ZP.getSelfEmbeddedActivities().values()).some(e => e.applicationId === (null == Z ? true : Z.applicationId) && e.location.id === (null == Z ? true : Z.location.id))) returntrue;
       let e = c.ZP.getCurrentEmbeddedActivity();
-      return null != e && e.applicationId === (null == B ? void 0 : B.application_id)
+      return null != e && e.applicationId === (null == B ? true : B.application_id)
     }),
     el = (0, l.O)();
   if (X && null == Z && (null == B || !(0, h.Z)(B, k.xjy.CONTEXTLESS))) return null;
@@ -115,7 +116,7 @@ function G(e) {
   eu ? ec || ee || null == B || (G = U.intl.formatToPlainString(U.t.SqJBnJ, {
     name: B.name
   })) : G = U.intl.string(U.t["0OiwfH"]);
-  let ef = null != (n = null == Z ? void 0 : Z.launchId) ? n : null == B ? void 0 : B.session_id,
+  let ef = null != (n = null == Z ? true : Z.launchId) ? n : null == B ? true : B.session_id,
     e_ = async (e, t) => {
       if (null == ef || null == q) return;
       let n = (0, h.Z)(t, k.xjy.EMBEDDED),
@@ -136,20 +137,20 @@ function G(e) {
         (0, g.Z)({
           type: k.q5t.JOIN,
           userId: e.id,
-          guildId: null == i ? void 0 : i.guild_id,
+          guildId: null == i ? true : i.guild_id,
           channelId: r,
-          channelType: null == i ? void 0 : i.type,
+          channelType: null == i ? true : i.type,
           applicationId: q,
-          partyId: null != t ? null == t || null == (o = t.party) ? void 0 : o.id : "",
+          partyId: null != t ? null == t || null == (o = t.party) ? true : o.id : "",
           locationObject: el.location,
           analyticsLocations: W
         })
       }
     }, ep = async () => {
-      let e = !1;
+      let e = false;
       async function t() {
         let e;
-        z(!0), null != B && (e = await o.Z.sendActivityInviteUser({
+        z(true), null != B && (e = await o.Z.sendActivityInviteUser({
           type: k.mFx.JOIN_REQUEST,
           userId: F.id,
           activity: B,

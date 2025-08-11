@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 322274, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   indicator: "indicator_ffc7aa",
   animationContainer: "animationContainer_ffc7aa",
   animating: "animating_ffc7aa",

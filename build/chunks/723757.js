@@ -1,14 +1,15 @@
 /** Chunk was on 67244 **/
+/** chunk id: 723757, original params: e,t,r (module,exports,require) **/
 "use strict";
-r.d(t, {
+require.d(exports, {
   Z: () => s
 });
-var a = r(760919),
-  n = r(365938);
-let s = new a.Z({
+var Chunk760919 = require("./760919.js"),
+  Chunk365938 = require("./365938.js");
+let s = new Chunk760919.Z({
   id: "rec2020",
   name: "REC.2020",
-  base: n.Z,
+  base: Chunk365938.Z,
   toBase: e => e.map(function(e) {
     return e < .08124285829863151 ? e / 4.5 : Math.pow((e + 1.09929682680944 - 1) / 1.09929682680944, 1 / .45)
   }),

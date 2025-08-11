@@ -1,0 +1,97 @@
+/** Chunk was on web.js **/
+/** chunk id: 800966, original params: e,t,n (module,exports,re quire) **/
+"use strict";
+require.d(exports, {
+  h: () => v
+});
+var Chunk255367 = require("./255367.js");
+require("./73800.js");
+var Chunk120356 = require("./120356.js"),
+  o = require.n(Chunk120356),
+  Chunk990547 = require("./990547.js"),
+  Chunk755721 = require("./755721.js"),
+  Chunk481060 = require("./481060.js"),
+  Chunk213609 = require("./213609.js"),
+  Chunk626135 = require("./626135.js"),
+  Chunk738672 = require("./738672.jsx"),
+  Chunk981631 = require("./981631.js"),
+  Chunk388032 = require("./388032.jsx"),
+  Chunk504619 = require("./504619.js");
+
+function h(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+
+function m() {
+  return (m = Object.assign || function(e) {
+    for (var t = 1; t < arguments.length; t++) {
+      var n = arguments[t];
+      for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
+    }
+    return e
+  }).apply(this, arguments)
+}
+
+function g(e) {
+  if (null == e) throw TypeError("Cannot destructure " + e);
+  return e
+}
+
+function E(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      h(e, t, n[t])
+    })
+  }
+  return e
+}
+
+function b(e, t) {
+  var n = Object.keys(e);
+  if (Object.getOwnPropertySymbols) {
+    var r = Object.getOwnPropertySymbols(e);
+    t && (r = r.filter(function(t) {
+      return Object.getOwnPropertyDescriptor(e, t).enumerable
+    })), n.push.apply(n, r)
+  }
+  return n
+}
+
+function y(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : b(Object(t)).forEach(function(n) {
+    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+  }), e
+}
+
+function O(e) {
+  let {
+    hidden: t,
+    onDismiss: n
+  } = e;
+  return (0, c.Z)({
+    type: a.ImpressionTypes.VIEW,
+    name: a.ImpressionNames.HD_STREAMING_POPOUT
+  }, {
+    disableTrack: t
+  }, [t]), <div className={o()(p.popoutContainer, {
+      [p.hidden]: t
+    })}>{<img className={p.image} src={"https://cdn.discordapp.com/assets/premium/roadblocks/hd_streaming.png"} alt={"HD Streaming Nitro Perk"} />}{<s.zx className={p.closeButton} aria-label={_.intl.string(_.t.cpT0Cg)} look={s.zx.Looks.BLANK} size={s.zx.Sizes.NONE} onClick={() => {
+        n(), u.default.track(f.rMx.HD_STREAMING_POPOUT_DISMISSED)
+      }}><l.Dio size={"xs"} className={p.closeIcon} color={"white"} /></s.zx>}{<div className={p.infoContainerParent}><div className={p.infoContainer}>{<l.Text className={p.infoText} variant={"text-sm/medium"}>{_.intl.format(_.t.ruvD7u, {})}</l.Text>}{<div className={p.poweredByNitroContainer}>{<l.SrA size={"xs"} />}{<l.Text className={p.infoText} variant={"text-sm/medium"}>{_.intl.string(_.t["BMw+7O"])}</l.Text>}</div>}</div></div>}</div>
+}
+
+function v(e) {
+  var t = m({}, g(e));
+  return <d.h{...y(E({}, t), {
+    renderComponent: e => (0, r.jsx)(O, E({}, e))
+  })} />
+}

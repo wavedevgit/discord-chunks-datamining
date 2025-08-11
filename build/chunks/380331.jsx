@@ -1,0 +1,213 @@
+/** Chunk was on web.js **/
+/** chunk id: 380331, original params: e,t,n (module,exports,re quire) **/
+"use strict";
+require.d(exports, {
+  Z: () => z
+}), require("./388685.js");
+var Chunk255367 = require("./255367.js"),
+  Chunk73800 = require("./73800.js"),
+  Chunk120356 = require("./120356.js"),
+  a = require.n(Chunk120356),
+  Chunk392711 = require("./392711.js"),
+  l = require.n(Chunk392711),
+  Chunk91192 = require("./91192.jsx"),
+  Chunk442837 = require("./442837.js"),
+  Chunk477690 = require("./477690.js"),
+  Chunk481060 = require("./481060.js"),
+  Chunk2052 = require("./2052.js"),
+  Chunk607070 = require("./607070.js"),
+  Chunk806966 = require("./806966.js"),
+  Chunk254494 = require("./254494.jsx"),
+  Chunk593618 = require("./593618.js"),
+  Chunk451478 = require("./451478.js"),
+  Chunk626135 = require("./626135.js"),
+  Chunk624138 = require("./624138.js"),
+  Chunk543241 = require("./543241.js"),
+  Chunk883661 = require("./883661.js"),
+  Chunk880949 = require("./880949.js"),
+  Chunk784222 = require("./784222.js"),
+  Chunk149203 = require("./149203.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk957825 = require("./957825.js"),
+  Chunk388032 = require("./388032.js"),
+  Chunk171166 = require("./171166.js");
+
+function P(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+
+function w(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      P(e, t, n[t])
+    })
+  }
+  return e
+}
+
+function D(e, t) {
+  var n = Object.keys(e);
+  if (Object.getOwnPropertySymbols) {
+    var r = Object.getOwnPropertySymbols(e);
+    t && (r = r.filter(function(t) {
+      return Object.getOwnPropertyDescriptor(e, t).enumerable
+    })), n.push.apply(n, r)
+  }
+  return n
+}
+
+function L(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : D(Object(t)).forEach(function(n) {
+    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+  }), e
+}
+let x = (0, Chunk624138.Mg)(Chunk477690.Z.EMOJI_PICKER_CONSTANTS_GUILD_CATEGORY_ICON_SIZE),
+  M = (0, Chunk624138.Mg)(Chunk477690.Z.EMOJI_PICKER_CONSTANTS_GUILD_CATEGORY_ICON_MARGIN_VERICAL),
+  k = (0, Chunk624138.Mg)(Chunk477690.Z.EMOJI_PICKER_CONSTANTS_UNICODE_CATEGORY_ICON_SIZE),
+  j = (0, Chunk624138.Mg)(Chunk477690.Z.EMOJI_PICKER_CONSTANTS_UNICODE_CATEGORY_ICON_MARGIN_VERTICAL),
+  U = (0, Chunk624138.Mg)(Chunk477690.Z.EMOJI_PICKER_CONSTANTS_UNICODE_CATEGORY_ICON_PADDING),
+  G = (0, Chunk624138.Mg)(Chunk171166.__invalid_unicodeCategoryShortcutHeight),
+  B = (0, Chunk624138.Mg)(Chunk477690.Z.EMOJI_PICKER_CONSTANTS_CATEGORY_SEPARATOR_SIZE),
+  Z = (0, Chunk624138.Mg)(Chunk477690.Z.EMOJI_PICKER_CONSTANTS_CATEGORY_SEPARATOR_MARGIN_VERTICAL),
+  F = k + M + 2 * U,
+  V = x + M,
+  H = V + (B + 2 * Z),
+  Y = k + j + 2 * U,
+  W = 7;
+
+function K(e) {
+  let {
+    activeIndex: t,
+    categoryIndex: n,
+    analyticsContext: o,
+    categories: s,
+    category: l,
+    handleCategorySelect: u,
+    isWindowFocused: d,
+    useReducedMotion: _
+  } = e, p = (0, c.JA)("expression-guild-".concat(n)), h = l.type === S.En.GUILD ? null : l.id, m = t === n, E = l.type === S.En.GUILD ? l.guild : null, y = <f.P3F{...L(w({}, p), {
+    "aria-label": (0, O.Nf)(l, E),
+    className: a()({
+      [R.categoryItemGuildCategory]: null != E,
+      [R.categoryItemDefaultCategory]: null == E,
+      [R.categoryItemDefaultCategorySelected]: null == E && m,
+      [R.categoryItemRecentEmoji]: l.type === S.En.RECENT
+    }),
+    onClick: () => {
+      null != E && b.default.track(A.rMx.EXPRESSION_PICKER_CATEGORY_SELECTED, {
+        location: null == o ? true : o.location,
+        tab: N.X1.EMOJI,
+        guild_id: E.id
+      }), u(n)
+    },
+    children: [null != E ? (0, r.jsx)(I.Z, {
+      guild: E,
+      isSelected: m,
+      shouldAnimate: !_ && d,
+      isLocked: l.isNitroLocked
+    }) : null, null == E && null != h ? (0, r.jsx)(v.Z, {
+      categoryId: h,
+      className: R.categoryIcon,
+      height: k,
+      width: k,
+      size: "custom"
+    }) : null]
+  })} />, T = s[n + 1], C = null != T && l.type === S.En.GUILD && T.type !== S.En.GUILD;
+  return null != E ? <i.Fragment>{<g.Z guild={E} includeActivity={false}><div>{y}</div></g.Z>}{C ? <hr className={R.guildCategorySeparator} /> : null}</i.Fragment> : y
+}
+let z = e => {
+  let {
+    className: t,
+    emojiListRef: n,
+    sectionDescriptors: o,
+    intention: s,
+    channel: c,
+    shouldShowSoundmojiInEmojiPicker: d = false,
+    showOnlyUnicode: g = false
+  } = e, b = h.kJ.useStore(e => e.activeCategoryIndex), y = (0, T.Ni)({
+    sectionDescriptors: o,
+    emojiListRef: n
+  }), v = (0, _.O)(), I = (0, O.kI)(s, c, null == c ? true : c.guild_id, d), A = i.useMemo(() => g ? (0, O.ZF)() : I, [I, g]), N = i.useRef(null), P = (0, u.e7)([E.Z], () => E.Z.isFocused()), w = (0, u.e7)([p.Z], () => p.Z.useReducedMotion, []), D = i.useMemo(() => l().memoize((e, t) => {
+    let n = A[t];
+    if (null != n) return <K activeIndex={b} analyticsContext={v} categories={A} category={n} categoryIndex={t} handleCategorySelect={y} isWindowFocused={P} useReducedMotion={w} />
+  }), [b, v, A, y, P, w]), L = i.useMemo(() => [8, 8, 0, 8], []), x = i.useCallback((e, t) => {
+    let n = A[t];
+    if (n.type === S.En.RECENT) return F;
+    if (n.type === S.En.GUILD) {
+      let e = A[t + 1];
+      return null != e && e.type !== S.En.GUILD ? H : V
+    }
+    return Y
+  }, [A]), {
+    nonUnicodeCategoryCount: U,
+    firstUnicodeCategoryIndex: z,
+    firstUnicodeCategoryOffsetTop: q,
+    rowCountBySection: X
+  } = i.useMemo(() => {
+    let e = 0,
+      t = 0,
+      n = 0,
+      r = 0;
+    A.forEach(i => {
+      i.type === S.En.GUILD ? (t += 1, n += 1) : i.type === S.En.UNICODE ? r += 1 : (e += 1, t += 1)
+    });
+    let i = F + t * V + H;
+    return {
+      nonUnicodeCategoryCount: t,
+      firstUnicodeCategoryIndex: t,
+      firstUnicodeCategoryOffsetTop: i,
+      rowCountBySection: [e, n, r]
+    }
+  }, [A]), [Q, J] = i.useState(true);
+  i.useLayoutEffect(() => {
+    J(U >= W)
+  }, [U]);
+  let $ = i.useCallback(e => {
+      var t;
+      let n = null == (t = N.current) ? true : t.getListDimensions();
+      null != n && (e + n.height - B >= q ? J(false) : J(true))
+    }, [q]),
+    ee = i.useCallback(e => {
+      var t;
+      e(z), null == (t = N.current) || t.scrollTo(q)
+    }, [q, z]),
+    et = i.useCallback((e, t) => {
+      let n = A[e];
+      if (null == n) return 0;
+      let r = Q ? G : 0;
+      if (n.type === S.En.RECENT) return t ? 0 : j;
+      if (n.type === S.En.GUILD) {
+        let n = A[e + 1];
+        return null != n && n.type !== S.En.GUILD ? t ? B + false * Z + M + r : M : t ? r : M
+      }
+      return t ? M + r : 2 * M
+    }, [A, Q]),
+    en = i.useMemo(() => function(e, t) {
+      return <i.Fragment>{t}</i.Fragment>
+    }, []),
+    er = Q ? "shortcut" : "hiddenshortcut";
+  return <m.Z categoryListRef={N} expressionsListRef={n} className={t} store={h.kJ} categories={A} listPadding={L} onScroll={$} renderCategoryListItem={D} renderSection={en} rowCount={A.length} categoryHeight={x} getScrollOffsetForIndex={et} rowCountBySection={X}>{e => U >= W && (0, r.jsx)(f.P3F, {
+      "aria-hidden": !Q,
+      "aria-label": C.intl.string(C.t.dT0ct7),
+      className: a()(R.unicodeShortcut, {
+        [R.unicodeShortcutInvisible]: !Q
+      }),
+      tabIndex: Q ? 0 : false,
+      onClick: () => ee(e),
+      children: (0, r.jsx)(f.EO4, {
+        size: "custom",
+        color: "currentColor",
+        height: k,
+        width: k
+      })
+    }, er)}</m.Z>
+}

@@ -1,5 +1,6 @@
 /** Chunk was on 54597 **/
-n.d(t, {
+/** chunk id: 764260, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Gf: () => N,
   Jf: () => p,
   OW: () => _,
@@ -12,10 +13,10 @@ n.d(t, {
   lO: () => r,
   sI: () => s,
   we: () => f
-}), n(953529), n(388685);
-var i = n(570140),
-  a = n(749210),
-  o = n(228643);
+}), require("./953529.js"), require("./388685.js");
+var Chunk570140 = require("./570140.js"),
+  Chunk749210 = require("./749210.js"),
+  Chunk228643 = require("./228643.js");
 
 function s(e) {
   i.Z.dispatch({
@@ -25,7 +26,7 @@ function s(e) {
 }
 
 function l() {
-  i.Z.dispatch({
+  Chunk570140.Z.dispatch({
     type: "GUILD_SETTINGS_ROLES_INIT"
   })
 }
@@ -114,10 +115,10 @@ async function N(e, t, n, s, l) {
       let n = t.pop();
       null != n && "" !== n.name && await a.Z.updateRole(e, n.id, {
         name: n.name,
-        description: null != (r = n.description) ? r : void 0,
+        description: null != (r = n.description) ? r : true,
         permissions: n.permissions,
         color: n.color,
-        colors: null != (c = n.colors) ? c : void 0,
+        colors: null != (c = n.colors) ? c : true,
         hoist: n.hoist,
         mentionable: n.mentionable,
         icon: n.icon,
@@ -135,7 +136,7 @@ async function N(e, t, n, s, l) {
   } catch (e) {
     i.Z.dispatch({
       type: "GUILD_SETTINGS_ROLES_SAVE_FAIL",
-      message: null != (_ = null == (d = e.body) ? void 0 : d.message) ? _ : Object.values(e.body)[0]
+      message: null != (_ = null == (d = e.body) ? true : d.message) ? _ : Object.values(e.body)[0]
     })
   }
 }

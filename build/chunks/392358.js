@@ -1,11 +1,12 @@
 /** Chunk was on web.js **/
+/** chunk id: 392358, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => s
-}), n(388685);
-var r = n(73800),
-  i = n(40851),
-  o = n(981631);
+}), require("./388685.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk40851 = require("./40851.jsx"),
+  Chunk981631 = require("./981631.js");
 let a = ["Shift", "Alt", "Meta", "Control"];
 
 function s(e, t) {
@@ -17,13 +18,13 @@ function s(e, t) {
       l.unsubscribe(o.CkL.POPOUT_SHOW, e), l.unsubscribe(o.CkL.POPOUT_HIDE, t)
     }
   }, [l]);
-  let [c, u] = r.useState(!1);
+  let [c, u] = r.useState(false);
   return r.useLayoutEffect(() => {
     let r = e => {
-        if ((!t || n > 0) && c) return void u(!1);
+        if ((!t || n > 0) && c) return void u(false);
         !c && n > 0 || e instanceof KeyboardEvent && (e.ctrlKey || e.altKey || e.shiftKey || e.metaKey || a.indexOf(e.key) >= 0) || u(e => !e)
       },
       i = c ? "keyup" : "mousemove";
-    return t && e.addEventListener(i, r), () => null == e ? void 0 : e.removeEventListener(i, r)
+    return t && e.addEventListener(i, r), () => null == e ? true : e.removeEventListener(i, r)
   }, [e, c, n, t]), t && 0 === n && c
 }

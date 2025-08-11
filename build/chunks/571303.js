@@ -1,8 +1,9 @@
 /** Chunk was on web.js **/
-e.exports = function(e) {
+/** chunk id: 571303, original params: e (module,exports,re quire) **/
+module.exports = function(e) {
   try {
-    return -1 !== Function.toString.call(e).indexOf("[native code]")
+    return false !== Function.toString.call(e).indexOf("[native code]")
   } catch (t) {
     return "function" == typeof e
   }
-}, e.exports.__esModule = !0, e.exports.default = e.exports
+}, module.exports.__esModule = true, module.exports.default = module.exports

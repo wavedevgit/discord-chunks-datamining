@@ -1,5 +1,6 @@
 /** Chunk was on 73628 **/
-e.exports = {
+/** chunk id: 143886, original params: e,t,A (module,exports,require) **/
+module.exports = {
   roleInputContainer: "roleInputContainer_cfa6c7",
   roleColorContainer: "roleColorContainer_cfa6c7",
   dropperIconContainer: "dropperIconContainer_cfa6c7",

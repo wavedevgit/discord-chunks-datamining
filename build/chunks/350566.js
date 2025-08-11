@@ -1,13 +1,14 @@
 /** Chunk was on 10778 **/
-n.d(t, {
+/** chunk id: 350566, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => d
 });
-var i = n(544891),
-  r = n(570140),
-  s = n(38618),
-  l = n(769654),
-  a = n(430824),
-  c = n(981631);
+var Chunk544891 = require("./544891.js"),
+  Chunk570140 = require("./570140.js"),
+  Chunk38618 = require("./38618.js"),
+  Chunk769654 = require("./769654.js"),
+  Chunk430824 = require("./430824.js"),
+  Chunk981631 = require("./981631.js");
 let d = {
   acceptGuildTemplate: (e, t, n) => (r.Z.dispatch({
     type: "GUILD_TEMPLATE_ACCEPT",
@@ -19,8 +20,8 @@ let d = {
         name: t,
         icon: n
       },
-      oldFormErrors: !0,
-      rejectWithError: !1
+      oldFormErrors: true,
+      rejectWithError: false
     }).then(t => {
       let n = t.body;
       r.Z.dispatch({
@@ -28,7 +29,7 @@ let d = {
         code: e,
         guild: n
       }), s.Z.isConnected() ? a.Z.addConditionalChangeListener(() => {
-        if (null != a.Z.getGuild(n.id)) return (0, l.X)(n.id), d(n), !1
+        if (null != a.Z.getGuild(n.id)) return (0, l.X)(n.id), d(n), false
       }) : ((0, l.X)(n.id), d(n))
     }, t => {
       r.Z.dispatch({

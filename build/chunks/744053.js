@@ -1,5 +1,6 @@
 /** Chunk was on 99133 **/
-A.exports = {
+/** chunk id: 744053, original params: A,t,e (module,exports,require) **/
+module.exports = {
   container: "container_fcf29c",
   flexContainer: "flexContainer_fcf29c",
   shrinkingContainer: "shrinkingContainer_fcf29c",

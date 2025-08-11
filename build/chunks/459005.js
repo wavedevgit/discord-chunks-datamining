@@ -1,19 +1,20 @@
 /** Chunk was on web.js **/
+/** chunk id: 459005, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   JV: () => s,
   aA: () => l,
   mA: () => _,
   ug: () => a
-}), n(388685);
-var r = n(392711);
+}), require("./388685.js");
+var Chunk392711 = require("./392711.js");
 
 function i(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -63,7 +64,7 @@ let c = Object.freeze({
   });
 class _ {
   reset() {
-    this._timeTracking = (0, r.cloneDeep)(c), this._timingStats = (0, r.cloneDeep)(u), this._measurements = (0, r.cloneDeep)(d), this._eventCounts = (0, r.cloneDeep)(f)
+    this._timeTracking = (0, Chunk392711.cloneDeep)(c), this._timingStats = (0, Chunk392711.cloneDeep)(u), this._measurements = (0, Chunk392711.cloneDeep)(d), this._eventCounts = (0, Chunk392711.cloneDeep)(f)
   }
   clearTime(e) {
     this._timeTracking[e] = null
@@ -111,9 +112,9 @@ class _ {
     return o({}, Object.entries(this._eventCounts).reduce((e, t) => {
       let [n, r] = t;
       return e["count_".concat(n)] = "".concat(r), e
-    }, {}), e, t)
+    }, {}), module, exports)
   }
   constructor() {
-    i(this, "_timeTracking", (0, r.cloneDeep)(c)), i(this, "_timingStats", (0, r.cloneDeep)(u)), i(this, "_measurements", (0, r.cloneDeep)(d)), i(this, "_eventCounts", (0, r.cloneDeep)(f)), i(this, "_enabled", !1)
+    i(this, "_timeTracking", (0, Chunk392711.cloneDeep)(c)), i(this, "_timingStats", (0, Chunk392711.cloneDeep)(u)), i(this, "_measurements", (0, Chunk392711.cloneDeep)(d)), i(this, "_eventCounts", (0, Chunk392711.cloneDeep)(f)), i(this, "_enabled", false)
   }
 }

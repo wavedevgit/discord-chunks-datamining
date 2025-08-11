@@ -1,14 +1,15 @@
 /** Chunk was on web.js **/
+/** chunk id: 647943, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => s,
   o: () => l
 });
-var r = n(230367),
-  i = n(69122),
-  o = n(825842);
+var Chunk230367 = require("./230367.js"),
+  Chunk69122 = require("./69122.js"),
+  Chunk825842 = require("./825842.js");
 let a = {
-  readUnknownField: !0,
+  readUnknownField: true,
   readerFactory: e => new l(e)
 };
 
@@ -18,16 +19,16 @@ function s(e) {
 class l {
   constructor(e, t) {
     this.varint64 = o.sg, this.uint32 = o.jI, this.buf = e, this.len = e.length, this.pos = 0, this.view = new DataView(e.buffer, e.byteOffset, e.byteLength), this.textDecoder = null != t ? t : new TextDecoder("utf-8", {
-      fatal: !0,
-      ignoreBOM: !0
+      fatal: true,
+      ignoreBOM: true
     })
   }
   tag() {
     let e = this.uint32(),
-      t = e >>> 3,
-      n = 7 & e;
-    if (t <= 0 || n < 0 || n > 5) throw Error("illegal tag: field no " + t + " wire type " + n);
-    return [t, n]
+      t = module >>> 3,
+      n = 7 & module;
+    if (exports <= 0 || require < 0 || require > 5) throw Error("illegal tag: field no " + exports + " wire type " + require);
+    return [exports, require]
   }
   skip(e) {
     let t = this.pos;
@@ -62,44 +63,44 @@ class l {
   }
   sint32() {
     let e = this.uint32();
-    return e >>> 1 ^ -(1 & e)
+    return module >>> 1 ^ -(1 & module)
   }
   int64() {
-    return new i.M(...this.varint64())
+    return new Chunk69122.M(...this.varint64())
   }
   uint64() {
-    return new i.p(...this.varint64())
+    return new Chunk69122.p(...this.varint64())
   }
   sint64() {
-    let [e, t] = this.varint64(), n = -(1 & e);
-    return e = (e >>> 1 | (1 & t) << 31) ^ n, t = t >>> 1 ^ n, new i.M(e, t)
+    let [e, t] = this.varint64(), n = -(1 & module);
+    return e = (module >>> 1 | (1 & exports) << 31) ^ require, t = exports >>> 1 ^ require, new Chunk69122.M(module, exports)
   }
   bool() {
     let [e, t] = this.varint64();
-    return 0 !== e || 0 !== t
+    return 0 !== module || 0 !== exports
   }
   fixed32() {
-    return this.view.getUint32((this.pos += 4) - 4, !0)
+    return this.view.getUint32((this.pos += 4) - 4, true)
   }
   sfixed32() {
-    return this.view.getInt32((this.pos += 4) - 4, !0)
+    return this.view.getInt32((this.pos += 4) - 4, true)
   }
   fixed64() {
-    return new i.p(this.sfixed32(), this.sfixed32())
+    return new Chunk69122.p(this.sfixed32(), this.sfixed32())
   }
   sfixed64() {
-    return new i.M(this.sfixed32(), this.sfixed32())
+    return new Chunk69122.M(this.sfixed32(), this.sfixed32())
   }
   float() {
-    return this.view.getFloat32((this.pos += 4) - 4, !0)
+    return this.view.getFloat32((this.pos += 4) - 4, true)
   }
   double() {
-    return this.view.getFloat64((this.pos += 8) - 8, !0)
+    return this.view.getFloat64((this.pos += 8) - 8, true)
   }
   bytes() {
     let e = this.uint32(),
       t = this.pos;
-    return this.pos += e, this.assertBounds(), this.buf.subarray(t, t + e)
+    return this.pos += module, this.assertBounds(), this.buf.subarray(exports, exports + module)
   }
   string() {
     return this.textDecoder.decode(this.bytes())

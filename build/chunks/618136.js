@@ -1,11 +1,12 @@
 /** Chunk was on web.js **/
+/** chunk id: 618136, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => a
-}), n(388685);
-var r = n(436660),
-  i = n(887490),
-  o = n(42530);
+}), require("./388685.js");
+var Chunk436660 = require("./436660.js"),
+  Chunk887490 = require("./887490.js"),
+  Chunk42530 = require("./42530.js");
 
 function a(e) {
   let {
@@ -17,13 +18,13 @@ function a(e) {
   }, e.onChange = () => {
     if (i.Ew.isValid(e, e.selection) || (e.selection = s(e)), null != e.selection) {
       let t, n, [a, s] = i.M8.edges(e.selection),
-        l = !1;
+        l = false;
       for (; null != a && null != (t = i.bN.getParentVoid(e, a)) && !o.On.includes(t[0].type);) a = i.bN.before(e, a, {
         unit: "offset"
-      }), l = !0;
+      }), l = true;
       for (; null != s && null != (n = i.bN.getParentVoid(e, s)) && !o.On.includes(n[0].type);) s = i.bN.after(e, s, {
         unit: "offset"
-      }), l = !0;
+      }), l = true;
       l && null != a && null != s && (i.M8.isForward(e.selection) ? r.Q.select(e, {
         anchor: a,
         focus: s

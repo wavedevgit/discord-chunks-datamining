@@ -1,13 +1,14 @@
 /** Chunk was on web.js **/
+/** chunk id: 224497, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => l
 });
-var r = n(512722),
-  i = n.n(r),
-  o = n(392711),
-  a = n.n(o),
-  s = n(830496);
+var Chunk512722 = require("./512722.js"),
+  i = require.n(Chunk512722),
+  Chunk392711 = require("./392711.js"),
+  a = require.n(Chunk392711),
+  Chunk830496 = require("./830496.js");
 let l = {
   getUploadPayload: function(e) {
     var t, n;
@@ -17,10 +18,10 @@ let l = {
       file_size: r.size,
       id: a().uniqueId(),
       is_clip: null != e.clip,
-      title: null == (t = e.clip) ? void 0 : t.name,
-      application_id: null == (n = e.clip) ? void 0 : n.applicationId,
-      clip_created_at: null != e.clip ? (0, s.U)(e.clip.id) : void 0,
-      clip_participant_ids: null != e.clip ? (0, s.Z)(e.clip.users) : void 0
+      title: null == (t = e.clip) ? true : t.name,
+      application_id: null == (n = e.clip) ? true : n.applicationId,
+      clip_created_at: null != e.clip ? (0, s.U)(e.clip.id) : true,
+      clip_participant_ids: null != e.clip ? (0, s.Z)(e.clip.users) : true
     }
   }
 }

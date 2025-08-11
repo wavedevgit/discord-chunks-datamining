@@ -1,12 +1,13 @@
 /** Chunk was on web.js **/
-e.exports = function(e) {
+/** chunk id: 265816, original params: e (module,exports,re quire) **/
+module.exports = function(e) {
   let t = {
       className: "params",
       begin: /\(/,
       end: /\)/,
       contains: [{
         begin: /[\w-]+ *=/,
-        returnBegin: !0,
+        returnBegin: true,
         relevance: 0,
         contains: [{
           className: "attr",

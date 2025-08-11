@@ -1,15 +1,16 @@
 /** Chunk was on 56035 **/
-n.d(t, {
+/** chunk id: 586826, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   p: () => o
 });
-var l = n(94171),
-  a = n(362383),
-  i = n(731965),
-  r = n(174727);
-let s = (0, a.F)(e => ({
+var Chunk94171 = require("./94171.js"),
+  Chunk362383 = require("./362383.js"),
+  Chunk731965 = require("./731965.js"),
+  Chunk174727 = require("./174727.js");
+let s = (0, Chunk362383.F)(e => ({
   audio: null,
   file: null,
-  loading: !1,
+  loading: false,
   loadAudioFromFile: async t => {
     if ((0, i.j)(() => e({
         file: t,
@@ -19,7 +20,7 @@ let s = (0, a.F)(e => ({
     let n = await (0, r.lj)(t);
     null != n && (0, i.j)(() => e({
       audio: n,
-      loading: !1
+      loading: false
     }))
   },
   maxVolume: 1,
@@ -38,5 +39,5 @@ function o() {
     loadAudioFromFile: e.loadAudioFromFile,
     maxVolume: e.maxVolume,
     setMaxVolume: e.setMaxVolume
-  }), l.X)
+  }), Chunk94171.X)
 }

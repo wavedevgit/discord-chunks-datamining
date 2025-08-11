@@ -1,11 +1,12 @@
 /** Chunk was on web.js **/
+/** chunk id: 596464, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-var r = n(94553).notEmptyKey;
+var r = require("./94553.js").notEmptyKey;
 
 function i(e, t) {
   return r(t) && "MUTABLE" === e.__get(t).getMutability() ? t : null
 }
-e.exports = function(e, t) {
+module.exports = function(e, t) {
   if (t.isCollapsed()) {
     var n, r = t.getAnchorKey(),
       o = t.getAnchorOffset();

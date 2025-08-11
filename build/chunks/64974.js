@@ -1,11 +1,12 @@
 /** Chunk was on 1272 **/
-n.d(t, {
+/** chunk id: 64974, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => r
 });
 let r = {
-  [n(231338).Et.GET_PLATFORM_BEHAVIORS]: {
+  [require("./231338.js").Et.GET_PLATFORM_BEHAVIORS]: {
     handler: () => ({
-      iosKeyboardResizesView: !0
+      iosKeyboardResizesView: true
     })
   }
 }

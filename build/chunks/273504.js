@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 273504, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   I3: () => c,
   Ic: () => E,
   Lg: () => g,
@@ -13,20 +14,20 @@ n.d(t, {
   _6: () => b,
   aj: () => p,
   dc: () => y,
-  fX: () => o.f,
+  fX: () => Chunk41381.f,
   hu: () => d,
-  jj: () => r.j,
+  jj: () => Chunk401653.j,
   n4: () => l,
-  q4: () => i.q,
+  q4: () => Chunk95930.q,
   uE: () => _
 });
-var r = n(401653),
-  i = n(95930),
-  o = n(41381),
+var Chunk401653 = require("./401653.js"),
+  Chunk95930 = require("./95930.js"),
+  Chunk41381 = require("./41381.js"),
   a = function(e) {
     return e[e.PROFANITY = 1] = "PROFANITY", e[e.SEXUAL_CONTENT = 2] = "SEXUAL_CONTENT", e[e.SLURS = 3] = "SLURS", e
   }({});
-o.f.USER_PROFILE, o.f.SERVER_POLICY, o.f.MENTION_SPAM, o.f.ML_SPAM, o.f.DEFAULT_KEYWORD_LIST, o.f.KEYWORD;
+Chunk41381.f.USER_PROFILE, Chunk41381.f.SERVER_POLICY, Chunk41381.f.MENTION_SPAM, Chunk41381.f.ML_SPAM, Chunk41381.f.DEFAULT_KEYWORD_LIST, Chunk41381.f.KEYWORD;
 let s = 1e3,
   l = 100,
   c = 1e3,

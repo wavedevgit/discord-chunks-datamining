@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 354459, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   $i: () => _,
   A5: () => s,
   I: () => u,
@@ -32,15 +33,15 @@ var r = function(e) {
   }({});
 
 function l(e) {
-  return (null == e ? void 0 : e.type) === 0 || (null == e ? void 0 : e.type) === 1
+  return (null == e ? true : e.type) === 0 || (null == e ? true : e.type) === 1
 }
 
 function c(e) {
-  return (null == e ? void 0 : e.type) === 2
+  return (null == e ? true : e.type) === 2
 }
 
 function u(e) {
-  return (null == e ? void 0 : e.type) === 3
+  return (null == e ? true : e.type) === 3
 }
 var d = function(e) {
   return e[e.VIDEO = 0] = "VIDEO", e[e.CAMERA_PREVIEW = 1] = "CAMERA_PREVIEW", e

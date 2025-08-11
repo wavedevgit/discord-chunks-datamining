@@ -1,8 +1,9 @@
 /** Chunk was on web.js **/
+/** chunk id: 250010, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-var r = n(214788),
-  i = n(551558),
-  o = n(65183).OrderedMap,
+var Chunk214788 = require("./214788.js"),
+  Chunk551558 = require("./551558.js"),
+  o = require("./65183.js").OrderedMap,
   a = function(e) {
     var t, n = {};
     return o(e.withMutations(function(e) {
@@ -33,6 +34,6 @@ var r = n(214788),
       return [t, e.set("key", t)]
     }))
   };
-e.exports = function(e) {
+module.exports = function(e) {
   return e.first() instanceof r ? a(e) : s(e)
 }

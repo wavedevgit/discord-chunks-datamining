@@ -1,4 +1,5 @@
 /** Chunk was on 23357 **/
+/** chunk id: 569314, original params: e,t,n (module,exports,require) **/
 "use strict";
-var r = n(673574).match(/AppleWebKit\/(\d+)\./);
-e.exports = !!r && +r[1]
+var r = require("./673574.js").match(/AppleWebKit\/(\d+)\./);
+module.exports = !!r && +r[1]

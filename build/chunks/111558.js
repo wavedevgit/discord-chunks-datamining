@@ -1,5 +1,6 @@
 /** Chunk was on 22988 **/
-e.exports = {
+/** chunk id: 111558, original params: e,t,n (module,exports,require) **/
+module.exports = {
   enableSwitch: "enableSwitch__3c9fa",
   divider: "divider__3c9fa",
   openPageButton: "openPageButton__3c9fa",

@@ -1,8 +1,9 @@
 /** Chunk was on web.js **/
+/** chunk id: 726475, original params: e (module,exports,re quire) **/
 function t(e, n = {}) {
   return n.variants = e, n
 }
-e.exports = function(e) {
+module.exports = function(e) {
   let n = e.regex,
     r = "[A-Za-z0-9_$]+",
     i = t([e.C_LINE_COMMENT_MODE, e.C_BLOCK_COMMENT_MODE, e.COMMENT("/\\*\\*", "\\*/", {
@@ -68,7 +69,7 @@ e.exports = function(e) {
     }, {
       className: "symbol",
       begin: "^[ 	]*" + n.lookahead(r + ":"),
-      excludeBegin: !0,
+      excludeBegin: true,
       end: r + ":",
       relevance: 0
     }],

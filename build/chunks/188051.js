@@ -1,11 +1,12 @@
 /** Chunk was on 75708 **/
-n.d(t, {
+/** chunk id: 188051, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   w: () => s
 });
-var i = n(481060),
-  r = n(423932);
+var Chunk481060 = require("./481060.js"),
+  Chunk423932 = require("./423932.js");
 let s = {
   binds: ["mod+alt+shift+w"],
-  comboKeysBindGlobal: !0,
-  action: () => ((0, r.Z)(i.pTH), !1)
+  comboKeysBindGlobal: true,
+  action: () => ((0, Chunk423932.Z)(Chunk481060.pTH), false)
 }

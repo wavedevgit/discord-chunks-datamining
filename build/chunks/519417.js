@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 519417, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   "outgoing-call-pulse": "outgoing-call-pulse__2f4f7",
   wrapper: "wrapper__2f4f7",
   ringing: "ringing__2f4f7",

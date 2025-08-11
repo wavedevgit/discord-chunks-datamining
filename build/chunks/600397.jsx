@@ -1,0 +1,45 @@
+/** Chunk was on web.js **/
+/** chunk id: 600397, original params: e,t,n (module,exports,re quire) **/
+"use strict";
+require.d(exports, {
+  Z: () => p
+});
+var Chunk255367 = require("./255367.js");
+require("./73800.js");
+var Chunk657707 = require("./657707.js"),
+  Chunk835473 = require("./835473.js"),
+  Chunk925329 = require("./925329.js"),
+  Chunk63063 = require("./63063.js"),
+  Chunk739566 = require("./739566.js"),
+  Chunk942951 = require("./942951.js"),
+  Chunk834129 = require("./834129.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk388032 = require("./388032.jsx"),
+  Chunk768921 = require("./768921.js");
+
+function p(e) {
+  let {
+    message: t,
+    channel: n,
+    author: p,
+    compact: h
+  } = e, {
+    nick: m
+  } = (0, l.Sw)(p, n), g = (0, c.l)({
+    user: p,
+    channelId: n.id,
+    guildId: true,
+    messageId: true
+  })(), E = (0, o.q)(t.applicationId);
+  if (null == E) return null;
+  let b = f.intl.format(f.t.m7Lwam, {
+    username: m,
+    usernameHook: g,
+    gameName: E.name,
+    gameIconHook: e => <span className={_.gameContainer}>{<a.Z game={E} size={a.Z.Sizes.XXSMALL} className={_.inlineIcon} />}{" "}{e}</span>,
+    helpdeskArticle: s.Z.getArticleURL(d.BhN.SOCIAL_LAYER_CONNECTIONS)
+  });
+  return <u.Z iconNode={(0, r.jsx)(i.iWm, {
+      size: "sm"
+    })} compact={h} contentClassName={_.content}><div>{b}</div></u.Z>
+}

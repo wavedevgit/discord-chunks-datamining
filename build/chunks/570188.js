@@ -1,19 +1,20 @@
 /** Chunk was on 24231 **/
-n.d(t, {
+/** chunk id: 570188, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   J: () => o,
   U: () => s
 });
-var r = n(442837),
-  i = n(650774),
-  l = n(496675),
-  a = n(231338);
+var Chunk442837 = require("./442837.js"),
+  Chunk650774 = require("./650774.js"),
+  Chunk496675 = require("./496675.js"),
+  Chunk231338 = require("./231338.js");
 
 function o(e) {
   return (0, r.e7)([l.Z], () => null != e && l.Z.can(a.Pl.MENTION_EVERYONE, e), [e])
 }
 
 function s(e) {
-  let t = null == e ? void 0 : e.guild_id,
+  let t = null == e ? true : e.guild_id,
     n = (0, r.e7)([i.Z], () => i.Z.getMemberCount(t), [t]);
   return null == e || null != n && !(n > 5e4)
 }

@@ -1,35 +1,36 @@
 /** Chunk was on web.js **/
+/** chunk id: 961304, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   X: () => u,
   Z: () => d
 });
-var r = n(47770),
-  i = n(579092),
-  o = n(740197),
-  a = n(376398),
-  s = n(65154);
+var Chunk47770 = require("./47770.js"),
+  Chunk579092 = require("./579092.js"),
+  Chunk740197 = require("./740197.js"),
+  Chunk376398 = require("./376398.js"),
+  Chunk65154 = require("./65154.js");
 
 function l(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
-let c = new i.Yd("Output");
+let c = new Chunk579092.Yd("Output");
 var u = function(e) {
   return e.InteractionRequired = "interactionrequired", e.Speaking = "speaking", e.Video = "video", e
 }({});
-class d extends r.Z {
+class d extends Chunk47770.Z {
   play() {
     var e;
-    null == (e = this.audioElement) || e.play()
+    null == (e = this.audioElement) || module.play()
   }
   destroy() {
     var e;
-    null == (e = this.audioElement) || e.pause(), null != this.videoStreamId && (0, a.jC)(this.videoStreamId), null != this.streamSourceNode && (this.streamSourceNode.disconnect(), this.streamSourceNode = null), null != this.levelNode && (this.levelNode.disconnect(), this.levelNode.port.postMessage("close"), this.levelNode = null), this.setSpeakingFlags(s.Dg.NONE), this.removeAllListeners()
+    null == (e = this.audioElement) || module.pause(), null != this.videoStreamId && (0, Chunk376398.jC)(this.videoStreamId), null != this.streamSourceNode && (this.streamSourceNode.disconnect(), this.streamSourceNode = null), null != this.levelNode && (this.levelNode.disconnect(), this.levelNode.port.postMessage("close"), this.levelNode = null), this.setSpeakingFlags(Chunk65154.Dg.NONE), this.removeAllListeners()
   }
   addTrack(e) {
     if (this.stream.getTracks().includes(e)) return this.stream.getTracks().length;
@@ -37,7 +38,7 @@ class d extends r.Z {
       let e = document.createElement("audio");
       e.srcObject = this.stream;
       let t = e.play();
-      null != t && t.catch(() => this.emit("interactionrequired", !0)), this.audioElement = e, this.updateAudioElement()
+      null != t && t.catch(() => this.emit("interactionrequired", true)), this.audioElement = e, this.updateAudioElement()
     }
     if (null == this.levelNode && this.stream.getAudioTracks().length > 0) {
       this.streamSourceNode = this.audioContext.createMediaStreamSource(this.stream);
@@ -50,9 +51,9 @@ class d extends r.Z {
       }
     }
     return "video" === e.kind && (null != this.videoStreamId && (0, a.jC)(this.videoStreamId), this.stream.getVideoTracks().forEach(t => {
-      e !== t && (t.discordIsTearingDown = !0, this.stream.removeTrack(t))
+      e !== t && (t.discordIsTearingDown = true, this.stream.removeTrack(t))
     }), this.videoStreamId = (0, a.N7)(this.stream), this.emit("video", this.videoStreamId)), "audio" === e.kind && this.stream.getAudioTracks().forEach(t => {
-      e !== t && (t.discordIsTearingDown = !0, this.stream.removeTrack(t))
+      e !== t && (t.discordIsTearingDown = true, this.stream.removeTrack(t))
     }), this.stream.getTracks().length
   }
   removeTrack(e) {
@@ -65,10 +66,10 @@ class d extends r.Z {
     return this._mute
   }
   set mute(e) {
-    this._mute = e || !1, this.updateAudioElement()
+    this._mute = e || false, this.updateAudioElement()
   }
   get priority() {
-    return (this._speakingFlags & s.Dg.PRIORITY) === s.Dg.PRIORITY
+    return (this._speakingFlags & Chunk65154.Dg.PRIORITY) === Chunk65154.Dg.PRIORITY
   }
   get volume() {
     return this._volume
@@ -84,13 +85,13 @@ class d extends r.Z {
   }
   updateAudioElement() {
     let e = this.audioElement;
-    if (null != e) {
-      e.muted = this._mute, e.volume = this._volume / 100;
+    if (null != module) {
+      module.muted = this._mute, module.volume = this._volume / 100;
       let t = this.sinkId;
-      null != t && o.ZA && e.setSinkId(t)
+      null != exports && Chunk740197.ZA && module.setSinkId(exports)
     }
   }
   constructor(e, t) {
-    super(), l(this, "id", void 0), l(this, "_speakingFlags", s.Dg.NONE), l(this, "_mute", !1), l(this, "_volume", s.Qx), l(this, "sinkId", null), l(this, "audioElement", null), l(this, "stream", new MediaStream), l(this, "videoStreamId", null), l(this, "levelNode", null), l(this, "streamSourceNode", null), l(this, "audioContext", void 0), this.id = e, this.audioContext = t
+    super(), l(this, "id", true), l(this, "_speakingFlags", s.Dg.NONE), l(this, "_mute", false), l(this, "_volume", s.Qx), l(this, "sinkId", null), l(this, "audioElement", null), l(this, "stream", new MediaStream), l(this, "videoStreamId", null), l(this, "levelNode", null), l(this, "streamSourceNode", null), l(this, "audioContext", true), this.id = e, this.audioContext = t
   }
 }

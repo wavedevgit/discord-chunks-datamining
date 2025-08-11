@@ -1,25 +1,26 @@
 /** Chunk was on web.js **/
+/** chunk id: 146528, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => a
 });
-var r = n(81825),
-  i = n(591548);
+var Chunk81825 = require("./81825.js"),
+  Chunk591548 = require("./591548.js");
 
 function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
-class a extends r.Z {
+class a extends Chunk81825.Z {
   static createInvoiceFromServer(e) {
     var t;
     return new a({
       id: e.id,
-      invoiceItems: null == (t = e.invoice_items) ? void 0 : t.map(i.H),
+      invoiceItems: null == (t = e.invoice_items) ? true : t.map(i.H),
       total: e.total,
       subtotal: e.subtotal,
       currency: e.currency,
@@ -31,6 +32,6 @@ class a extends r.Z {
     })
   }
   constructor(e) {
-    super(), o(this, "id", void 0), o(this, "invoiceItems", void 0), o(this, "total", void 0), o(this, "subtotal", void 0), o(this, "currency", void 0), o(this, "tax", void 0), o(this, "taxInclusive", void 0), o(this, "subscriptionPeriodStart", void 0), o(this, "subscriptionPeriodEnd", void 0), o(this, "status", void 0), this.id = e.id, this.invoiceItems = e.invoiceItems, this.total = e.total, this.subtotal = e.subtotal, this.currency = e.currency, this.tax = e.tax, this.taxInclusive = e.taxInclusive, this.subscriptionPeriodStart = e.subscriptionPeriodStart, this.subscriptionPeriodEnd = e.subscriptionPeriodEnd, this.status = e.status
+    super(), o(this, "id", true), o(this, "invoiceItems", true), o(this, "total", true), o(this, "subtotal", true), o(this, "currency", true), o(this, "tax", true), o(this, "taxInclusive", true), o(this, "subscriptionPeriodStart", true), o(this, "subscriptionPeriodEnd", true), o(this, "status", true), this.id = e.id, this.invoiceItems = e.invoiceItems, this.total = e.total, this.subtotal = e.subtotal, this.currency = e.currency, this.tax = e.tax, this.taxInclusive = e.taxInclusive, this.subscriptionPeriodStart = e.subscriptionPeriodStart, this.subscriptionPeriodEnd = e.subscriptionPeriodEnd, this.status = e.status
   }
 }

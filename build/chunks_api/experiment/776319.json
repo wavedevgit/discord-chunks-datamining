@@ -1,1 +1,0 @@
-{"id":"776319","type":"experiment","data":{"kind":"user","id":"2023-11_uu_one_click","label":"Unique Username one click","defaultConfig":{"enabled":false},"treatments":[{"id":1,"label":"Enable one click","config":{"enabled":false}}]},"fromModule":{"id":"web.js"}}

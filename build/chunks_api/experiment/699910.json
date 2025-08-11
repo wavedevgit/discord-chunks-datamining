@@ -1,1 +1,0 @@
-{"id":"699910","type":"experiment","data":{"kind":"user","id":"2024-08_collectibles_expiry_modal","label":"Collectibles Expiry Experiment","defaultConfig":{"expiryModalEnabled":false},"treatments":[{"id":1,"label":"Enable collectibles expiry modal","config":{"expiryModalEnabled":false}}]},"fromModule":{"id":"1272"}}

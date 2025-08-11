@@ -1,20 +1,21 @@
 /** Chunk was on web.js **/
+/** chunk id: 515270, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   L6: () => C,
   ZP: () => h,
   iF: () => N
-}), n(388685), n(539854), n(35282), n(704826);
-var r = n(466332),
-  i = n(31775),
-  o = n.n(i),
-  a = n(70956),
-  s = n(364964),
-  l = n(53529),
-  c = n(925994),
-  u = n(436660),
-  d = n(887490),
-  f = n(42530);
+}), require("./388685.js"), require("./539854.js"), require("./35282.js"), require("./704826.js");
+var Chunk466332 = require("./466332.js"),
+  Chunk31775 = require("./31775.js"),
+  o = require.n(Chunk31775),
+  Chunk70956 = require("./70956.js"),
+  Chunk364964 = require("./364964.js"),
+  Chunk53529 = require("./53529.js"),
+  Chunk925994 = require("./925994.js"),
+  Chunk436660 = require("./436660.js"),
+  Chunk887490 = require("./887490.js"),
+  Chunk42530 = require("./42530.js");
 let _ = new Set(["line"]),
   p = /^[a-z0-9_+\-.#]+$/i;
 
@@ -77,7 +78,7 @@ function b(e, t, n, r, i) {
 function y(e, t) {
   for (let n of t) {
     let [t, r] = n.blockEntry, i = O(n);
-    (null == t ? void 0 : t.codeBlockState) != i && u.Q.setNodes(e, {
+    (null == t ? true : t.codeBlockState) != i && u.Q.setNodes(e, {
       codeBlockState: i
     }, {
       at: r
@@ -97,10 +98,10 @@ function O(e) {
 
 function v(e) {
   let t = [],
-    n = !1;
+    n = false;
   for (let i of e) {
     let o = i === e[e.length - 1];
-    if ((i.closesCodeBlock || o) && (n && o && !i.closesCodeBlock && t.push(i), n = !1, t.length > 0)) {
+    if ((i.closesCodeBlock || o) && (n && o && !i.closesCodeBlock && t.push(i), n = false, t.length > 0)) {
       let e = t.map(e => (0, c.sg)(e.blockEntry[0])).join("\n"),
         n = t[0].lang;
       if (null != n && null != r.Z.getLanguage(n)) {
@@ -136,13 +137,13 @@ function v(e) {
       }
       t = []
     }
-    n && t.push(i), i.opensCodeBlock && (n = !0)
+    n && t.push(i), i.opensCodeBlock && (n = true)
   }
 }
 let I = {
     max: 1 / 0,
-    maxAge: +a.Z.Millis.MINUTE,
-    updateAgeOnGet: !0
+    maxAge: +Chunk70956.Z.Millis.MINUTE,
+    updateAgeOnGet: true
   },
   T = new(o())(I);
 
@@ -150,7 +151,7 @@ function S(e, t) {
   let n = "".concat(e, "-").concat(t),
     r = T.get(n);
   if (null != r) return r;
-  let i = s.default.highlight(t, e, !1);
+  let i = s.default.highlight(t, e, false);
   if (null == i || i.illegal) return null;
   let o = i.value.split("\n");
   return T.set(n, o), o
@@ -195,13 +196,13 @@ function N(e, t) {
     let e = i[0].text;
     d.C0.equals(i[1], t.path) && (e = e.substring(0, t.offset));
     let o = e.match(/```/g);
-    n += null != (r = null == o ? void 0 : o.length) ? r : 0
+    n += null != (r = null == o ? true : o.length) ? r : 0
   }
   return n % 2 != 0
 }
 
 function C(e) {
-  if (null == e.selection) return !1;
+  if (null == e.selection) returnfalse;
   let t = d.M8.start(e.selection);
   return N(e, t)
 }

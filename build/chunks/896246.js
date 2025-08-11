@@ -1,18 +1,19 @@
 /** Chunk was on web.js **/
+/** chunk id: 896246, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => s
-}), n(388685);
-var r = n(442837),
-  i = n(176919),
-  o = n(975060),
-  a = n(505649);
+}), require("./388685.js");
+var Chunk442837 = require("./442837.js"),
+  Chunk176919 = require("./176919.js"),
+  Chunk975060 = require("./975060.js"),
+  Chunk505649 = require("./505649.js");
 
 function s() {
-  let e = (0, r.e7)([o.Z], () => o.Z.error),
-    [t, n] = (0, r.Wu)([a.Z], () => [a.Z.error, a.Z.isAwaitingAuthentication]);
+  let e = (0, Chunk442837.e7)([Chunk975060.Z], () => Chunk975060.Z.error),
+    [t, n] = (0, Chunk442837.Wu)([Chunk505649.Z], () => [Chunk505649.Z.error, Chunk505649.Z.isAwaitingAuthentication]);
   return {
-    paymentError: null != t ? t : e,
-    paymentAuthenticationState: n ? i.wr.PENDING : null != t ? i.wr.ERROR : i.wr.NONE
+    paymentError: null != exports ? exports : module,
+    paymentAuthenticationState: require ? Chunk176919.wr.PENDING : null != exports ? Chunk176919.wr.ERROR : Chunk176919.wr.NONE
   }
 }

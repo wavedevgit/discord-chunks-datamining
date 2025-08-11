@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 675478, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   BU: () => L,
   Cd: () => j,
   DZ: () => P,
@@ -9,39 +10,39 @@ n.d(t, {
   Z1: () => B,
   aj: () => w,
   bE: () => F,
-  fy: () => y.fy,
+  fy: () => Chunk526761.fy,
   hW: () => R,
   m9: () => U,
   nm: () => x,
   sr: () => Z,
   w9: () => G
-}), n(415506), n(388685), n(410992), n(227481), n(730884), n(20464), n(341884), n(364341), n(629680), n(505025), n(918970), n(121784), n(644351), n(146733);
-var r = n(512722),
-  i = n.n(r),
-  o = n(544891),
-  a = n(704215),
-  s = n(377108),
-  l = n(524437),
-  c = n(433517),
-  u = n(570140),
-  d = n(710845),
-  f = n(428967),
-  _ = n(605236),
-  p = n(626135),
-  h = n(70956),
-  m = n(915486),
-  g = n(262847),
-  E = n(581883),
-  b = n(48481),
-  y = n(526761),
-  O = n(981631);
+}), require("./415506.js"), require("./388685.js"), require("./410992.js"), require("./227481.js"), require("./730884.js"), require("./20464.js"), require("./341884.js"), require("./364341.js"), require("./629680.js"), require("./505025.js"), require("./918970.js"), require("./121784.js"), require("./644351.js"), require("./146733.js");
+var Chunk512722 = require("./512722.js"),
+  i = require.n(Chunk512722),
+  Chunk544891 = require("./544891.js"),
+  Chunk704215 = require("./704215.js"),
+  Chunk377108 = require("./377108.js"),
+  Chunk524437 = require("./524437.js"),
+  Chunk433517 = require("./433517.js"),
+  Chunk570140 = require("./570140.js"),
+  Chunk710845 = require("./710845.js"),
+  Chunk428967 = require("./428967.js"),
+  Chunk605236 = require("./605236.js"),
+  Chunk626135 = require("./626135.js"),
+  Chunk70956 = require("./70956.js"),
+  Chunk915486 = require("./915486.js"),
+  Chunk262847 = require("./262847.js"),
+  Chunk581883 = require("./581883.js"),
+  Chunk48481 = require("./48481.js"),
+  Chunk526761 = require("./526761.js"),
+  Chunk981631 = require("./981631.js");
 
 function v(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -62,9 +63,9 @@ let T = 5e3,
   A = Date.now();
 
 function N() {}
-u.Z.subscribe("CONNECTION_OPEN", () => {
+Chunk570140.Z.subscribe("CONNECTION_OPEN", () => {
   A = Date.now()
-}), u.Z.subscribe("CONNECTION_CLOSED", () => {
+}), Chunk570140.Z.subscribe("CONNECTION_CLOSED", () => {
   A = Date.now()
 }), "undefined" != typeof document && (document.addEventListener("mousedown", () => {
   A = 0
@@ -73,7 +74,7 @@ u.Z.subscribe("CONNECTION_OPEN", () => {
 }));
 class C {
   getEditInfo() {
-    return E.Z.getFullState()[this.type]
+    return Chunk581883.Z.getFullState()[this.type]
   }
   getCurrentValue() {
     return this.getEditInfo().proto
@@ -85,7 +86,7 @@ class C {
     let i = r.T(),
       o = this.getCurrentValue()[e],
       a = null != o ? i.fromBinary(i.toBinary(o), b.Uc) : i.create();
-    if (!1 === t(a)) return;
+    if (false === t(a)) return;
     let s = this.ProtoClass.create();
     s[e] = a, __OVERLAY__ ? u.Z.dispatch({
       type: "USER_SETTINGS_PROTO_ENQUEUE_UPDATE",
@@ -95,9 +96,9 @@ class C {
       },
       delaySeconds: n,
       jitter: n === y.fy.AUTOMATED || n === y.fy.DAILY,
-      partial: !0,
-      resetEditInfo: !1,
-      local: !0
+      partial: true,
+      resetEditInfo: false,
+      local: true
     }) : (this.logger.log("Updating ".concat(String(e), " with delay ").concat(n)), this.markDirty(s, {
       delaySeconds: n,
       jitter: n === y.fy.AUTOMATED || n === y.fy.DAILY
@@ -112,17 +113,17 @@ class C {
       timeout: r.timeout
     };
     if (!r.loaded) throw Error("Cannot edit user settings proto because we have not yet loaded the stored version from the DB");
-    !1 !== t.dispatch && u.Z.dispatch({
+    false !== t.dispatch && u.Z.dispatch({
       type: "USER_SETTINGS_PROTO_UPDATE",
       settings: {
         type: this.type,
         proto: e
       },
-      partial: !0,
-      local: !0
+      partial: true,
+      local: true
     });
     let a = null != (n = t.delaySeconds) ? n : 0;
-    if (null != o.timeout && a < r.timeoutDelay && !r.rateLimited && (clearTimeout(o.timeout), o.timeout = void 0), null == o.timeout) {
+    if (null != o.timeout && a < r.timeoutDelay && !r.rateLimited && (clearTimeout(o.timeout), o.timeout = true), null == o.timeout) {
       let e = a * h.Z.Millis.SECOND;
       t.jitter && (e += Math.floor(Math.random() * Math.min(e, 30 * h.Z.Millis.SECOND))), this.logger.log("Scheduling save from markDirty"), o.timeout = setTimeout(this.persistChanges, e), o.timeoutDelay = a
     }
@@ -139,11 +140,11 @@ class C {
   }
   saveLastSendTime() {
     var e;
-    let t = null != (e = c.K.get(S)) ? e : {};
-    t[this.type] = Date.now(), c.K.set(S, t)
+    let t = null != (e = Chunk433517.K.get(S)) ? module : {};
+    exports[this.type] = Date.now(), Chunk433517.K.set(S, exports)
   }
   loadIfUncached(e, t) {
-    E.Z.hasLoaded(e) && !0 !== t || this.loadIfNecessary(t)
+    E.Z.hasLoaded(e) && true !== t || this.loadIfNecessary(t)
   }
   async loadIfNecessary(e) {
     if (__OVERLAY__) return void u.Z.dispatch({
@@ -155,7 +156,7 @@ class C {
     } = this.getEditInfo();
     if (e || !t.loaded && !t.loading) {
       this.logger.log("Loading proto"), this.dispatchChanges({
-        loading: !0
+        loading: true
       });
       try {
         let {
@@ -164,11 +165,11 @@ class C {
           }
         } = await o.tn.get({
           url: O.ANM.USER_SETTINGS_PROTO(this.type),
-          rejectWithError: !1
+          rejectWithError: false
         }), n = (0, b.d5)(this.ProtoClass, t);
         if (null == n) return void this.dispatchChanges({
-          loading: !1,
-          loaded: !0
+          loading: false,
+          loaded: true
         });
         let r = g.Z[this.type],
           {
@@ -183,11 +184,11 @@ class C {
             proto: n
           },
           resetEditInfo: a || e,
-          local: !1
+          local: false
         }), a && this.markDirtyFromMigration(i, s), n
       } catch (e) {
         throw this.dispatchChanges({
-          loading: !1
+          loading: false
         }), e
       }
     }
@@ -195,9 +196,9 @@ class C {
   markDirtyFromMigration(e, t) {
     i()(!__OVERLAY__, "this cannot run in the overlay"), this.logger.log("Marking dirty due to migrates"), i()(null == this.getEditInfo().editInfo.offlineEditDataVersion, "offline changes are not supported with migrations"), this.markDirty(e, {
       cleanup: t,
-      dispatch: !1,
+      dispatch: false,
       delaySeconds: y.fy.AUTOMATED,
-      jitter: !0
+      jitter: true
     })
   }
   markDirtyIfHasPendingChange(e) {
@@ -207,7 +208,7 @@ class C {
       } = e;
       return t()
     }) && this.markDirty(this.ProtoClass.create(), {
-      dispatch: !1,
+      dispatch: false,
       delaySeconds: 0,
       cleanup: e
     })
@@ -217,16 +218,16 @@ class C {
     let {
       editInfo: e
     } = this.getEditInfo();
-    i()(null != e.protoToSave, "protoToSave cannot be null"), i()(null != e.offlineEditDataVersion, "offlineEditDataVersion cannot be null"), i()(null == e.timeout, "timeout must not be set already");
+    i()(null != module.protoToSave, "protoToSave cannot be null"), i()(null != module.offlineEditDataVersion, "offlineEditDataVersion cannot be null"), i()(null == module.timeout, "timeout must not be set already");
     let t = T + Math.floor(Math.random() * T),
-      n = setTimeout(this.persistChanges, t);
+      n = setTimeout(this.persistChanges, exports);
     this.dispatchChanges({
-      timeout: n,
-      timeoutDelay: t
+      timeout: require,
+      timeoutDelay: exports
     })
   }
   constructor(e, t) {
-    v(this, "ProtoClass", void 0), v(this, "type", void 0), v(this, "logger", void 0), v(this, "beforeSendCallbacks", void 0), v(this, "lastSendTime", void 0), v(this, "persistChanges", void 0), this.ProtoClass = e, this.type = t, this.beforeSendCallbacks = [], this.lastSendTime = 0, this.persistChanges = async () => {
+    v(this, "ProtoClass", true), v(this, "type", true), v(this, "logger", true), v(this, "beforeSendCallbacks", true), v(this, "lastSendTime", true), v(this, "persistChanges", true), this.ProtoClass = e, this.type = t, this.beforeSendCallbacks = [], this.lastSendTime = 0, this.persistChanges = async () => {
       i()(!__OVERLAY__, "this cannot run in the overlay"), this.logger.log("Persisting proto");
       let {
         editInfo: e
@@ -250,7 +251,7 @@ class C {
             settings: t,
             required_data_version: e.offlineEditDataVersion
           },
-          rejectWithError: !1
+          rejectWithError: false
         });
         n.out_of_date && this.logger.log("Proto was out of date, discarding changes"), this.getEditInfo().editInfo.cleanupFuncs.forEach(e => e());
         let r = (0, b.d5)(this.ProtoClass, n.settings);
@@ -261,9 +262,9 @@ class C {
             proto: r,
             type: this.type
           },
-          resetEditInfo: !0,
-          wasSaved: !0,
-          local: !1
+          resetEditInfo: true,
+          wasSaved: true,
+          local: false
         })
       } catch (e) {
         var n;
@@ -273,20 +274,20 @@ class C {
           isNaN(t) && (t = 60);
           let n = setTimeout(this.persistChanges, Math.min(30 * h.Z.Millis.SECOND, t * h.Z.Millis.SECOND));
           this.dispatchChanges({
-            rateLimited: !0,
+            rateLimited: true,
             timeout: n
           })
-        } else if (400 === e.status && (null == (n = e.body) ? void 0 : n.code) === O.evJ.INVALID_USER_SETTINGS_DATA) throw this.logger.log("Reloading do to invalid data"), this.loadIfNecessary(!0), e;
+        } else if (400 === e.status && (null == (n = e.body) ? true : n.code) === O.evJ.INVALID_USER_SETTINGS_DATA) throw this.logger.log("Reloading do to invalid data"), this.loadIfNecessary(true), e;
         else throw this.logger.log("Unknown user settings error"), e
       }
     }, this.logger = new d.Z(this.ProtoClass.typeName)
   }
 }
-let R = new C(l.o8, y.yP.PRELOADED_USER_SETTINGS),
-  P = new C(s.ji, y.yP.FRECENCY_AND_FAVORITES_SETTINGS),
+let R = new C(Chunk524437.o8, Chunk526761.yP.PRELOADED_USER_SETTINGS),
+  P = new C(Chunk377108.ji, Chunk526761.yP.FRECENCY_AND_FAVORITES_SETTINGS),
   w = {
-    [y.yP.PRELOADED_USER_SETTINGS]: R,
-    [y.yP.FRECENCY_AND_FAVORITES_SETTINGS]: P
+    [Chunk526761.yP.PRELOADED_USER_SETTINGS]: R,
+    [Chunk526761.yP.FRECENCY_AND_FAVORITES_SETTINGS]: P
   };
 
 function D(e, t, n) {
@@ -299,7 +300,7 @@ function L(e, t, n, r) {
 
 function x(e) {
   return M(e), R.updateAsync("userContent", t => {
-    if ((0, m.jl)(t.dismissedContents, e)) return !1;
+    if ((0, m.jl)(t.dismissedContents, e)) returnfalse;
     t.dismissedContents = (0, m.GV)(t.dismissedContents, e)
   }, y.fy.INFREQUENT_USER_ACTION)
 }
@@ -312,7 +313,7 @@ function M(e) {
 
 function k(e) {
   var t;
-  let n = null == (t = E.Z.settings.userContent) ? void 0 : t.dismissedContents;
+  let n = null == (t = E.Z.settings.userContent) ? true : t.dismissedContents;
   return null != n && (0, m.jl)(n, e)
 }
 async function j(e, t) {
@@ -328,7 +329,7 @@ async function U(e, t, n) {
 
 function G(e) {
   return R.updateAsync("userContent", t => {
-    if (!(0, m.jl)(t.dismissedContents, e)) return !1;
+    if (!(0, m.jl)(t.dismissedContents, e)) returnfalse;
     t.dismissedContents = (0, m.jx)(t.dismissedContents, e)
   }, y.fy.INFREQUENT_USER_ACTION)
 }
@@ -344,7 +345,7 @@ function B(e) {
 function Z() {
   return R.updateAsync("userContent", e => {
     e.dismissedContents = new Uint8Array, e.recurringDismissibleContentStates = {}
-  }, y.fy.INFREQUENT_USER_ACTION)
+  }, Chunk526761.fy.INFREQUENT_USER_ACTION)
 }
 
 function F() {
@@ -352,5 +353,5 @@ function F() {
     let t = new Uint8Array;
     for (let n of f.V_)(0, f.O2)(n) ? t = (0, m.GV)(t, n) : e.recurringDismissibleContentStates[n] = (0, _.F8)(n);
     e.dismissedContents = t
-  }, y.fy.INFREQUENT_USER_ACTION)
+  }, Chunk526761.fy.INFREQUENT_USER_ACTION)
 }

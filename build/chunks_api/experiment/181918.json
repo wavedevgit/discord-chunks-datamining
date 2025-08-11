@@ -1,1 +1,0 @@
-{"id":"181918","type":"experiment","data":{"kind":"user","id":"2025-03_enhanced_role_colors","label":"Enhanced Role Colors","commonTriggerPoint":"s.$P.CONNECTION_OPEN","defaultConfig":{"enabled":false},"treatments":[{"id":1,"label":"enabled","config":{"enabled":false}}]},"fromModule":{"id":"web.js"}}

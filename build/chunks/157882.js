@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 157882, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   ripple: "ripple_c6367b",
   row: "row_c6367b",
   sticker: "sticker_c6367b",

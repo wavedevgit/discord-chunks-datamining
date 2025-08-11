@@ -1,12 +1,13 @@
 /** Chunk was on 23357 **/
+/** chunk id: 639129, original params: e,t,n (module,exports,require) **/
 "use strict";
-var r = n(220159),
-  o = n(764908),
+var Chunk220159 = require("./220159.js"),
+  Chunk764908 = require("./764908.js"),
   a = Date,
-  i = o(a.prototype.getTime);
-r({
+  i = Chunk764908(a.prototype.getTime);
+Chunk220159({
   target: "Date",
-  stat: !0
+  stat: true
 }, {
   now: function() {
     return i(new a)

@@ -1,44 +1,45 @@
 /** Chunk was on 63141 **/
-n.d(t, {
+/** chunk id: 692546, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => E
-}), n(388685);
-var i, r = n(73800),
-  o = n(392711),
-  l = n.n(o),
-  s = n(374470),
-  a = n(902704),
-  c = n(846519),
-  d = n(13245),
-  u = n(808506),
-  h = n(372679),
-  p = n(671999),
-  f = n(358085);
+}), require("./388685.js");
+var i, Chunk73800 = require("./73800.js"),
+  Chunk392711 = require("./392711.js"),
+  l = require.n(Chunk392711),
+  Chunk374470 = require("./374470.js"),
+  Chunk902704 = require("./902704.js"),
+  Chunk846519 = require("./846519.js"),
+  Chunk13245 = require("./13245.js"),
+  Chunk808506 = require("./808506.js"),
+  Chunk372679 = require("./372679.js"),
+  Chunk671999 = require("./671999.js"),
+  Chunk358085 = require("./358085.js");
 
 function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 let m = {
     x: 0,
     y: 0
   },
-  y = !1;
+  y = false;
 
 function O(e) {
   let {
     clientX: t,
     clientY: n
   } = e;
-  y = !0, m.x = t, m.y = n
+  y = true, m.x = t, m.y = n
 }
 let v = new Map;
 
 function _(e, t) {
-  if (null == t) v.delete(e), 0 === v.size && (window.removeEventListener("mousemove", O), y = !1);
+  if (null == t) v.delete(e), 0 === v.size && (window.removeEventListener("mousemove", O), y = false);
   else {
     let n = v.get(e);
     if (null != n && (0, a.Z)(n.zone, t.zone)) return;
@@ -74,11 +75,11 @@ function _(e, t) {
       }), n = e, b || (n.setClickZoneCallback((e, t, n) => {
         let i = v.get(e);
         null != i && (y || (m.x = t, m.y = n), i.instance.click())
-      }), b = !0)
+      }), b = true)
     }
 }
-let b = !1;
-class E extends(i = r.PureComponent) {
+let b = false;
+class E extends(i = Chunk73800.PureComponent) {
   componentDidMount() {
     this.props.observe ? this.observeZone() : this.updateZone()
   }
@@ -92,14 +93,14 @@ class E extends(i = r.PureComponent) {
     t !== e.observe && (t ? this.observeZone() : this.interval.stop())
   }
   render() {
-    return r.Children.only(this.props.children)
+    return Chunk73800.Children.only(this.props.children)
   }
   observeZone() {
     this.updateZone(), this.interval.start(this.props.observeInterval, this.updateZone)
   }
   click() {
-    let e = (0, p.B)("click", m.x, m.y);
-    (0, p.J)(e, m.x, m.y)
+    let e = (0, Chunk671999.B)("click", m.x, m.y);
+    (0, Chunk671999.J)(module, m.x, m.y)
   }
   constructor(...e) {
     super(...e), g(this, "zone", l().uniqueId("ClickArea")), g(this, "interval", new c.Xp), g(this, "updateZone", () => {
@@ -126,6 +127,6 @@ class E extends(i = r.PureComponent) {
   }
 }
 g(E, "defaultProps", {
-  observe: !0,
+  observe: true,
   observeInterval: 1e3
 })

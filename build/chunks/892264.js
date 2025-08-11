@@ -1,27 +1,28 @@
 /** Chunk was on web.js **/
+/** chunk id: 892264, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => p
-}), n(388685);
-var r = n(355467),
-  i = n(496929),
-  o = n(147913),
-  a = n(594174),
-  s = n(351402),
-  l = n(78839),
-  c = n(580130),
-  u = n(111361),
-  d = n(474936);
+}), require("./388685.js");
+var Chunk355467 = require("./355467.js"),
+  Chunk496929 = require("./496929.js"),
+  Chunk147913 = require("./147913.js"),
+  Chunk594174 = require("./594174.js"),
+  Chunk351402 = require("./351402.js"),
+  Chunk78839 = require("./78839.js"),
+  Chunk580130 = require("./580130.js"),
+  Chunk111361 = require("./111361.js"),
+  Chunk474936 = require("./474936.js");
 
 function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
-class _ extends o.Z {
+class _ extends Chunk147913.Z {
   constructor(...e) {
     super(...e), f(this, "actions", {
       POST_CONNECTION_OPEN: () => {
@@ -33,12 +34,12 @@ class _ extends o.Z {
       if ((0, u.I5)(e)) {
         l.Z.hasFetchedSubscriptions() || t || await (0, r.jg)();
         let e = l.Z.getPremiumSubscription();
-        (null == e ? void 0 : e.paymentSourceId) != null || c.Z.applicationIdsFetched.has(d.CL) || await (0, i.yD)(d.CL)
+        (null == e ? true : e.paymentSourceId) != null || c.Z.applicationIdsFetched.has(d.CL) || await (0, i.yD)(d.CL)
       }
     }), f(this, "maybeFetchMostRecentSubscription", () => {
       var e;
       let t = a.default.getCurrentUser(),
-        n = (0, u.xI)(null != (e = null == t ? void 0 : t.premiumType) ? e : null, d.p9.TIER_1),
+        n = (0, u.xI)(null != (e = null == t ? true : t.premiumType) ? e : null, d.p9.TIER_1),
         i = l.Z.getIsFetchingMostRecentSubscription();
       null != t && n && t.hasHadPremium() && !i && (0, r.ou)()
     }), f(this, "maybeFetchCountryCode", async () => {

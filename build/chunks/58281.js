@@ -1,5 +1,6 @@
 /** Chunk was on web.js **/
-e.exports = function(e) {
+/** chunk id: 58281, original params: e (module,exports,re quire) **/
+module.exports = function(e) {
   let t = e.regex,
     n = {
       keyword: ["assert", "else", "if", "in", "inherit", "let", "or", "rec", "then", "with"],
@@ -55,7 +56,7 @@ e.exports = function(e) {
     f = {
       beforeMatch: /(^|\{|;)\s*/,
       begin: RegExp(`${i}(\\.${i})*\\s*=(?!=)`),
-      returnBegin: !0,
+      returnBegin: true,
       relevance: 0,
       contains: [{
         scope: "attr",

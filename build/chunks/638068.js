@@ -1,5 +1,6 @@
 /** Chunk was on 75708 **/
-e.exports = {
+/** chunk id: 638068, original params: e,t,n (module,exports,require) **/
+module.exports = {
   giftButton: "giftButton__82222",
   innerGiftButton: "innerGiftButton__82222",
   buttonText: "buttonText__82222",

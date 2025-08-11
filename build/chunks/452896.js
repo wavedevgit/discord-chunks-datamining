@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 452896, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   J: () => r
 });
 let r = "8.22.0"

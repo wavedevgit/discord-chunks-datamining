@@ -1,13 +1,14 @@
 /** Chunk was on web.js **/
+/** chunk id: 54480, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   m: () => l
 });
-var r = n(442837),
-  i = n(780384),
-  o = n(410030),
-  a = n(592125),
-  s = n(436952);
+var Chunk442837 = require("./442837.js"),
+  Chunk780384 = require("./780384.js"),
+  Chunk410030 = require("./410030.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk436952 = require("./436952.js");
 
 function l(e) {
   let {
@@ -22,7 +23,7 @@ function l(e) {
     location: t
   }).lightMode, d = (0, i.wj)((0, o.ZP)()), f = (0, r.e7)([a.Z], () => a.Z.getChannel(n));
   return {
-    canAccessPicker: l && (d || u) && (null == f ? void 0 : f.isChatWallpaperEnabled) === !0,
+    canAccessPicker: l && (d || u) && (null == f ? true : f.isChatWallpaperEnabled) === true,
     entryPoint: c,
     isChatWallpaperSetterExperimentEnabled: l,
     isDarkTheme: d

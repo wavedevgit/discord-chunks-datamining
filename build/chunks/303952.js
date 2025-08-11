@@ -1,11 +1,12 @@
 /** Chunk was on web.js **/
+/** chunk id: 303952, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   a: () => o,
   n: () => a
 });
-var r = n(626135),
-  i = n(981631),
+var Chunk626135 = require("./626135.js"),
+  Chunk981631 = require("./981631.js"),
   o = function(e) {
     return e.SHOP_MOUNTED = "shop_mounted", e.CATEGORIES_FETCH_STARTED = "categories_fetch_started", e.CATEGORIES_FETCH_COMPLETED = "categories_fetch_completed", e.SHOP_HOME_FETCH_STARTED = "shop_home_fetch_started", e.SHOP_HOME_FETCH_COMPLETED = "shop_home_fetch_completed", e.SHOP_RENDERED = "shop_rendered", e
   }({});

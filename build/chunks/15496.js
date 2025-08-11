@@ -1,3 +1,4 @@
 /** Chunk was on web.js **/
-let r = n(40231);
-e.exports = (e, t, n) => new r(e, n).compare(new r(t, n))
+/** chunk id: 15496, original params: e,t,n (module,exports,re quire) **/
+let Chunk40231 = require("./40231.js");
+module.exports = (e, t, n) => new r(e, n).compare(new r(t, n))

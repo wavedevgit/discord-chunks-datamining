@@ -1,12 +1,13 @@
 /** Chunk was on web.js **/
+/** chunk id: 797342, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   n: () => s
 });
-var r = n(442837),
-  i = n(594174),
-  o = n(26033),
-  a = n(593294);
+var Chunk442837 = require("./442837.js"),
+  Chunk594174 = require("./594174.js"),
+  Chunk26033 = require("./26033.js"),
+  Chunk593294 = require("./593294.js");
 
 function s(e) {
   var t, n, s, l, c;
@@ -16,18 +17,18 @@ function s(e) {
       embeddedActivity: f
     } = (0, a.Z)(e);
   if (null == d) return {
-    isRich: !1,
-    appName: (0, o.dX)(e) ? e.extra.game_name : void 0,
+    isRich: false,
+    appName: (0, o.dX)(e) ? e.extra.game_name : true,
     user: u,
-    activity: void 0,
-    embeddedActivity: void 0,
-    state: void 0,
-    details: void 0,
-    party: void 0
+    activity: true,
+    embeddedActivity: true,
+    state: true,
+    details: true,
+    party: true
   };
-  let _ = (null == (t = d.assets) ? void 0 : t.large_image) != null || (null == (n = d.assets) ? void 0 : n.small_image) != null,
-    p = (null == (s = d.assets) ? void 0 : s.large_text) != null || (null == (l = d.assets) ? void 0 : l.small_text) != null,
-    h = null != (c = d.name) ? c : "game_name" in e.extra ? e.extra.game_name : void 0,
+  let _ = (null == (t = d.assets) ? true : t.large_image) != null || (null == (n = d.assets) ? true : n.small_image) != null,
+    p = (null == (s = d.assets) ? true : s.large_text) != null || (null == (l = d.assets) ? true : l.small_text) != null,
+    h = null != (c = d.name) ? c : "game_name" in e.extra ? e.extra.game_name : true,
     m = d.details,
     g = d.state,
     E = d.party;

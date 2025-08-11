@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 563967, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   profileEffectContainer: "profileEffectContainer_a84142",
   profileEffectBackground: "profileEffectBackground_a84142",
   nameplateContainer: "nameplateContainer_a84142",

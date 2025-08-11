@@ -1,16 +1,17 @@
 /** Chunk was on web.js **/
+/** chunk id: 280481, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-var r = n(112493).IteratorPrototype,
-  i = n(713411),
-  o = n(530575),
-  a = n(25124),
-  s = n(933121),
+var r = require("./112493.js").IteratorPrototype,
+  Chunk713411 = require("./713411.js"),
+  Chunk530575 = require("./530575.js"),
+  Chunk25124 = require("./25124.js"),
+  Chunk933121 = require("./933121.js"),
   l = function() {
     return this
   };
-e.exports = function(e, t, n, c) {
+module.exports = function(e, t, n, c) {
   var u = t + " Iterator";
   return e.prototype = i(r, {
     next: o(+!c, n)
-  }), a(e, u, !1, !0), s[u] = l, e
+  }), a(e, u, false, true), s[u] = l, e
 }

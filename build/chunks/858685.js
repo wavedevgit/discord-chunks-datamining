@@ -1,4 +1,6 @@
-/** Chunk was on web.js **/ ! function(e, t) {
+/** Chunk was on web.js **/
+/** chunk id: 858685, original params:  (module,exports,re quire) **/
+! function(e, t) {
   "use strict";
   if ("IntersectionObserver" in e && "IntersectionObserverEntry" in e && "intersectionRatio" in e.IntersectionObserverEntry.prototype) {
     "isIntersecting" in e.IntersectionObserverEntry.prototype || Object.defineProperty(e.IntersectionObserverEntry.prototype, "isIntersecting", {
@@ -42,11 +44,11 @@
   }
 
   function s(e, t, n, r) {
-    "function" == typeof e.addEventListener ? e.addEventListener(t, n, r || !1) : "function" == typeof e.attachEvent && e.attachEvent("on" + t, n)
+    "function" == typeof e.addEventListener ? e.addEventListener(t, n, r || false) : "function" == typeof e.attachEvent && e.attachEvent("on" + t, n)
   }
 
   function l(e, t, n, r) {
-    "function" == typeof e.removeEventListener ? e.removeEventListener(t, n, r || !1) : "function" == typeof e.detatchEvent && e.detatchEvent("on" + t, n)
+    "function" == typeof e.removeEventListener ? e.removeEventListener(t, n, r || false) : "function" == typeof e.detatchEvent && e.detatchEvent("on" + t, n)
   }
 
   function c(e, t) {
@@ -94,17 +96,17 @@
 
   function f(e, t) {
     for (var n = t; n;) {
-      if (n == e) return !0;
+      if (n == e) returntrue;
       n = _(n)
     }
-    return !1
+    returnfalse
   }
 
   function _(e) {
     var t = e.parentNode;
     return t && 11 == t.nodeType && t.host ? t.host : t
   }
-  i.prototype.THROTTLE_TIMEOUT = 100, i.prototype.POLL_INTERVAL = null, i.prototype.USE_MUTATION_OBSERVER = !0, i.prototype.observe = function(e) {
+  i.prototype.THROTTLE_TIMEOUT = 100, i.prototype.POLL_INTERVAL = null, i.prototype.USE_MUTATION_OBSERVER = true, i.prototype.observe = function(e) {
     if (!this._observationTargets.some(function(t) {
         return t.element == e
       })) {
@@ -140,14 +142,14 @@
     });
     return t[1] = t[1] || t[0], t[2] = t[2] || t[0], t[3] = t[3] || t[1], t
   }, i.prototype._monitorIntersections = function() {
-    !this._monitoringIntersections && (this._monitoringIntersections = !0, this.POLL_INTERVAL ? this._monitoringInterval = setInterval(this._checkForIntersections, this.POLL_INTERVAL) : (s(e, "resize", this._checkForIntersections, !0), s(t, "scroll", this._checkForIntersections, !0), this.USE_MUTATION_OBSERVER && "MutationObserver" in e && (this._domObserver = new MutationObserver(this._checkForIntersections), this._domObserver.observe(t, {
-      attributes: !0,
-      childList: !0,
-      characterData: !0,
-      subtree: !0
+    !this._monitoringIntersections && (this._monitoringIntersections = true, this.POLL_INTERVAL ? this._monitoringInterval = setInterval(this._checkForIntersections, this.POLL_INTERVAL) : (s(e, "resize", this._checkForIntersections, true), s(t, "scroll", this._checkForIntersections, true), this.USE_MUTATION_OBSERVER && "MutationObserver" in e && (this._domObserver = new MutationObserver(this._checkForIntersections), this._domObserver.observe(t, {
+      attributes: true,
+      childList: true,
+      characterData: true,
+      subtree: true
     }))))
   }, i.prototype._unmonitorIntersections = function() {
-    this._monitoringIntersections && (this._monitoringIntersections = !1, clearInterval(this._monitoringInterval), this._monitoringInterval = null, l(e, "resize", this._checkForIntersections, !0), l(t, "scroll", this._checkForIntersections, !0), this._domObserver && (this._domObserver.disconnect(), this._domObserver = null))
+    this._monitoringIntersections && (this._monitoringIntersections = false, clearInterval(this._monitoringInterval), this._monitoringInterval = null, l(e, "resize", this._checkForIntersections, true), l(t, "scroll", this._checkForIntersections, true), this._domObserver && (this._domObserver.disconnect(), this._domObserver = null))
   }, i.prototype._checkForIntersections = function() {
     var e = this._rootIsInDom(),
       t = e ? this._getRootRect() : d();
@@ -168,11 +170,11 @@
     }, this), this._queuedEntries.length && this._callback(this.takeRecords(), this)
   }, i.prototype._computeTargetAndRootIntersection = function(n, r) {
     if ("none" != e.getComputedStyle(n).display) {
-      for (var i = u(n), o = i, a = _(n), s = !1; !s;) {
+      for (var i = u(n), o = i, a = _(n), s = false; !s;) {
         var l = null,
           d = 1 == a.nodeType ? e.getComputedStyle(a) : {};
         if ("none" == d.display) return;
-        if (a == this.root || a == t ? (s = !0, l = r) : a != t.body && a != t.documentElement && "visible" != d.overflow && (l = u(a)), l && !(o = c(l, o))) break;
+        if (a == this.root || a == t ? (s = true, l = r) : a != t.body && a != t.documentElement && "visible" != d.overflow && (l = u(a)), l && !(o = c(l, o))) break;
         a = _(a)
       }
       return o
@@ -205,12 +207,12 @@
       };
     return n.width = n.right - n.left, n.height = n.bottom - n.top, n
   }, i.prototype._hasCrossedThreshold = function(e, t) {
-    var n = e && e.isIntersecting ? e.intersectionRatio || 0 : -1,
-      r = t.isIntersecting ? t.intersectionRatio || 0 : -1;
+    var n = e && e.isIntersecting ? e.intersectionRatio || 0 : false,
+      r = t.isIntersecting ? t.intersectionRatio || 0 : false;
     if (n !== r)
       for (var i = 0; i < this.thresholds.length; i++) {
         var o = this.thresholds[i];
-        if (o == n || o == r || o < n != o < r) return !0
+        if (o == n || o == r || o < n != o < r) returntrue
       }
   }, i.prototype._rootIsInDom = function() {
     return !this.root || f(t, this.root)
@@ -219,6 +221,7 @@
   }, i.prototype._registerInstance = function() {
     0 > n.indexOf(this) && n.push(this)
   }, i.prototype._unregisterInstance = function() {
-    var e = n.indexOf(this); - 1 != e && n.splice(e, 1)
+    var e = n.indexOf(this);
+    false != e && n.splice(e, 1)
   }, e.IntersectionObserver = i, e.IntersectionObserverEntry = r
 }(window, document)

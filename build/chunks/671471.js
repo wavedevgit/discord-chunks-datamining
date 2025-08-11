@@ -1,5 +1,6 @@
 /** Chunk was on web.js **/
-e.exports = function(e) {
+/** chunk id: 671471, original params: e (module,exports,re quire) **/
+module.exports = function(e) {
   let t = e.regex,
     n = e.COMMENT("//", "$", {
       contains: [{
@@ -103,9 +104,9 @@ e.exports = function(e) {
     E = {
       className: "function",
       begin: "(" + a + "[\\*&\\s]+)+" + _,
-      returnBegin: !0,
+      returnBegin: true,
       end: /[{;=]/,
-      excludeEnd: !0,
+      excludeEnd: true,
       keywords: p,
       illegal: /[^\w\s\*&:<>.]/,
       contains: [{
@@ -114,7 +115,7 @@ e.exports = function(e) {
         relevance: 0
       }, {
         begin: _,
-        returnBegin: !0,
+        returnBegin: true,
         contains: [f],
         relevance: 0
       }, {
@@ -122,7 +123,7 @@ e.exports = function(e) {
         relevance: 0
       }, {
         begin: /:/,
-        endsWithParent: !0,
+        endsWithParent: true,
         contains: [c, u]
       }, {
         relevance: 0,

@@ -1,11 +1,12 @@
 /** Chunk was on 21153 **/
+/** chunk id: 836202, original params: e,t,r (module,exports,require) **/
 "use strict";
-r.d(t, {
+require.d(exports, {
   Z: () => l
 });
-var n = r(73800),
-  o = r(9196),
-  a = r(116850),
+var Chunk73800 = require("./73800.js"),
+  Chunk9196 = require("./9196.js"),
+  Chunk116850 = require("./116850.js"),
   i = function(e) {
     var t = e.color,
       r = e.onClick,
@@ -61,4 +62,4 @@ i.defaultProps = {
   circleSize: 28,
   circleSpacing: 14
 };
-let l = (0, o.handleHover)(i)
+let l = (0, Chunk9196.handleHover)(i)

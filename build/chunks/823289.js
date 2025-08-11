@@ -1,28 +1,29 @@
 /** Chunk was on web.js **/
+/** chunk id: 823289, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => _
 });
-var r = n(286379),
-  i = n(797614),
-  o = n(626135),
-  a = n(446276),
-  s = n(46140),
-  l = n(981631);
+var Chunk286379 = require("./286379.js"),
+  Chunk797614 = require("./797614.js"),
+  Chunk626135 = require("./626135.js"),
+  Chunk446276 = require("./446276.js"),
+  Chunk46140 = require("./46140.js"),
+  Chunk981631 = require("./981631.js");
 
 function c(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 let u = 3e4,
   d = .1;
 class f {
   isEligible() {
-    return (0, a.M)(s.dr.QUESTS_BAR)
+    return (0, Chunk446276.M)(Chunk46140.dr.QUESTS_BAR)
   }
   clearTimeoutTimer() {
     null != this.timeoutTimer && (clearTimeout(this.timeoutTimer), this.timeoutTimer = null)
@@ -39,11 +40,11 @@ class f {
   }
   startTracking(e) {
     this.isEligible() && (this.clearTracking(), this.startTime = performance.now(), this.questId = e, this.timeoutTimer = setTimeout(() => {
-      this.stopTracking(e, !0)
+      this.stopTracking(e, true)
     }, u))
   }
   stopTracking(e) {
-    let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
+    let t = arguments.length > 1 && true !== arguments[1] && arguments[1];
     if (!this.isEligible() || null === this.startTime || this.questId !== e) return;
     let n = t ? u : Math.round(performance.now() - this.startTime);
     this.clearTracking(), this.sendMetric(e, t, n)

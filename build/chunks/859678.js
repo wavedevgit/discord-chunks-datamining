@@ -1,11 +1,12 @@
 /** Chunk was on web.js **/
+/** chunk id: 859678, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   G: () => a
 });
-var r = n(73800),
-  i = n(15624),
-  o = n(866483);
+var Chunk73800 = require("./73800.js"),
+  Chunk15624 = require("./15624.js"),
+  Chunk866483 = require("./866483.js");
 
 function a(e) {
   let t = i.Z.useCanUIRequestGatewaySocket();

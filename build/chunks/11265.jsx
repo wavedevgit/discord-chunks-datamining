@@ -1,0 +1,84 @@
+/** Chunk was on 22988 **/
+/** chunk id: 11265, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
+  Z: () => m
+}), require("./388685.js");
+var Chunk255367 = require("./255367.js"),
+  Chunk73800 = require("./73800.js"),
+  Chunk120356 = require("./120356.js"),
+  a = require.n(Chunk120356),
+  Chunk126663 = require("./126663.js"),
+  Chunk481060 = require("./481060.js"),
+  Chunk393238 = require("./393238.js"),
+  Chunk388032 = require("./388032.js"),
+  Chunk212787 = require("./212787.js");
+let m = Chunk73800.memo(function(e) {
+  var t, n;
+  let {
+    renderHeader: l,
+    children: m,
+    isExpanded: g,
+    isStuck: p,
+    onExpand: h,
+    disableAnimation: f,
+    disableBackground: b
+  } = e, [x, j] = i.useState(true), [v, _] = i.useState(false), {
+    ref: O,
+    height: y = 0
+  } = (0, c.ZP)(), {
+    ref: C,
+    height: N = 0
+  } = (0, c.ZP)(), [I, E] = i.useState(g), S = (0, o.q_F)({
+    height: I ? N + y : y,
+    config: (t = function(e) {
+      for (var t = 1; t < arguments.length; t++) {
+        var n = null != arguments[t] ? arguments[t] : {},
+          r = Object.keys(n);
+        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+          return Object.getOwnPropertyDescriptor(n, e).enumerable
+        }))), r.forEach(function(t) {
+          var r;
+          r = n[t], t in e ? Object.defineProperty(e, t, {
+            value: r,
+            enumerable: true,
+            configurable: true,
+            writable: true
+          }) : e[t] = r
+        })
+      }
+      return e
+    }({}, s.config.stiff), n = n = {
+      clamp: true
+    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
+      var n = Object.keys(e);
+      if (Object.getOwnPropertySymbols) {
+        var r = Object.getOwnPropertySymbols(e);
+        n.push.apply(n, r)
+      }
+      return n
+    })(Object(n)).forEach(function(e) {
+      Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
+    }), t),
+    onStart: () => {
+      _(false)
+    },
+    onRest: () => {
+      _(true)
+    }
+  }, x || f ? "animate-never" : "respect-motion-settings");
+  return i.useLayoutEffect(() => {
+    _(false), E(g)
+  }, [g]), i.useLayoutEffect(() => {
+    let e = setTimeout(() => {
+      j(false)
+    }, 100);
+    return () => clearTimeout(e)
+  }, []), <o.P3F className={a()(u.editCard, {
+      [u.toggled]: g,
+      [u.noBackground]: b
+    })}><s.animated.div className={a()(u.contentExpandContainer, {
+        [u.showOverflow]: g && v
+      })} style={S}>{<o.P3F innerRef={O} onClick={p ? true : h} className={a()(u.innerHeader, {
+          [u.toggled]: g && p
+        })} aria-label={d.intl.string(d.t.dcl9MT)}>{l}</o.P3F>}{<div ref={C}>{m}</div>}</s.animated.div></o.P3F>
+})

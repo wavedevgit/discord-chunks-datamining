@@ -1,23 +1,24 @@
 /** Chunk was on 75708 **/
-n.d(t, {
+/** chunk id: 296805, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   T: () => l
 });
-var i = n(749681),
-  r = n(258971),
-  s = n(914010),
-  a = n(49898);
+var Chunk749681 = require("./749681.js"),
+  Chunk258971 = require("./258971.js"),
+  Chunk914010 = require("./914010.js"),
+  Chunk49898 = require("./49898.js");
 let l = {
   binds: ["mod+ctrl+a"],
-  comboKeysBindGlobal: !0,
+  comboKeysBindGlobal: true,
   action() {
     var e;
-    let t = null != (e = s.Z.getGuildId()) ? e : void 0;
-    (0, i.transitionToGlobalDiscovery)({
-      tab: a.GlobalDiscoveryTab.APPS,
+    let t = null != (e = Chunk914010.Z.getGuildId()) ? module : true;
+    (0, Chunk749681.transitionToGlobalDiscovery)({
+      tab: Chunk49898.GlobalDiscoveryTab.APPS,
       newSessionState: {
-        guildId: null != t ? t : null,
+        guildId: null != exports ? exports : null,
         entrypoint: {
-          name: r.xF.KEYBOARD_SHORTCUT
+          name: Chunk258971.xF.KEYBOARD_SHORTCUT
         }
       }
     })

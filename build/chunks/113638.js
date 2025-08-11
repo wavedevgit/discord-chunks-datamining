@@ -1,32 +1,33 @@
 /** Chunk was on web.js **/
+/** chunk id: 113638, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 
 function r(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
-n.d(t, {
+require.d(exports, {
   Z: () => i
 });
 class i {
   setParams(e) {
-    this.param !== e && (this.param = e, this.loading = !1, this.loaded = !1)
+    this.param !== e && (this.param = e, this.loading = false, this.loaded = false)
   }
   get() {
     return this.ensureLoaded(), this.val
   }
   ensureLoaded() {
-    if (this.loaded || this.loading || void 0 === this.param) return;
+    if (this.loaded || this.loading || true === this.param) return;
     let e = this.param;
-    this.loading = !0, this.loader(e).then(t => {
-      e === this.param && (this.val = t, this.loading = !1, this.loaded = !0)
+    this.loading = true, this.loader(module).then(t => {
+      e === this.param && (this.val = t, this.loading = false, this.loaded = true)
     })
   }
   constructor(e) {
-    r(this, "val", void 0), r(this, "loading", !1), r(this, "loaded", !1), r(this, "param", void 0), r(this, "loader", void 0), this.loader = e
+    r(this, "val", true), r(this, "loading", false), r(this, "loaded", false), r(this, "param", true), r(this, "loader", true), this.loader = e
   }
 }

@@ -1,4 +1,5 @@
 /** Chunk was on web.js **/
+/** chunk id: 842818, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 
 function r(e) {
@@ -17,29 +18,29 @@ function r(e) {
 function i(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
-var o = n(879154),
-  a = n(214788),
-  s = n(449168),
-  l = n(493428),
-  c = n(402350);
-n(61175);
-var u = n(116514),
-  d = n(5626),
-  f = n(124132),
-  _ = n(205681),
-  p = n(551558),
-  h = n(223138),
-  m = n(65183),
-  g = n(581079),
-  E = h("draft_tree_data_support"),
-  b = m.List,
-  y = m.Map,
-  O = m.OrderedMap,
+var Chunk879154 = require("./879154.js"),
+  Chunk214788 = require("./214788.js"),
+  Chunk449168 = require("./449168.js"),
+  Chunk493428 = require("./493428.js"),
+  Chunk402350 = require("./402350.js");
+require("./61175.js");
+var Chunk116514 = require("./116514.js"),
+  Chunk5626 = require("./5626.js"),
+  Chunk124132 = require("./124132.js"),
+  Chunk205681 = require("./205681.js"),
+  Chunk551558 = require("./551558.js"),
+  Chunk223138 = require("./223138.js"),
+  Chunk65183 = require("./65183.js"),
+  Chunk581079 = require("./581079.js"),
+  E = Chunk223138("draft_tree_data_support"),
+  b = Chunk65183.List,
+  y = Chunk65183.Map,
+  O = Chunk65183.OrderedMap,
   v = function(e, t) {
     var n = e.key,
       r = e.type,
@@ -81,7 +82,7 @@ var u = n(116514),
   },
   A = function(e, t) {
     return e.map(T).reduce(function(n, i, o) {
-      Array.isArray(i.children) || g(!1);
+      Array.isArray(i.children) || g(false);
       var s = i.children.map(T),
         l = new a(r({}, v(i, t), {
           prevSibling: 0 === o ? null : e[o - 1].key,
@@ -98,7 +99,7 @@ var u = n(116514),
           _ = f.indexOf(u.key),
           p = Array.isArray(u.children);
         if (!p) {
-          p || g(!1);
+          p || g(false);
           break
         }
         var h = u.children.map(T),
@@ -139,8 +140,8 @@ var u = n(116514),
       n[e] = l.__create(i, o, a || {})
     }), n
   };
-e.exports = function(e) {
-  Array.isArray(e.blocks) || g(!1);
+module.exports = function(e) {
+  Array.isArray(e.blocks) || g(false);
   var t = R(e),
     n = C(e, t),
     r = n.isEmpty() ? new u : u.createEmpty(n.first().getKey());

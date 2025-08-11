@@ -1,4 +1,5 @@
 /** Chunk was on web.js **/
-var r = n(940151),
+/** chunk id: 573401, original params: e,t,n (module,exports,re quire) **/
+var Chunk940151 = require("./940151.js"),
   i = "object" == typeof self && self && self.Object === Object && self;
-e.exports = r || i || Function("return this")()
+module.exports = Chunk940151 || i || Function("return this")()

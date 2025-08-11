@@ -1,22 +1,23 @@
 /** Chunk was on 37886 **/
-n.d(t, {
+/** chunk id: 798733, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => a,
   f: () => c
 });
-var o, r = n(388032),
+var o, Chunk388032 = require("./388032.jsx"),
   c = ((o = {}).COULD_NOT_FIND = "I couldn't find what I was looking for", o.CONFUSING_LANGUAGE = "I found the language confusing", o.OTHER = "Other", o);
 
 function a() {
   return [{
-    label: r.intl.string(r.t.cigGCQ),
+    label: Chunk388032.intl.string(Chunk388032.t.cigGCQ),
     code: 2,
     value: "I couldn't find what I was looking for"
   }, {
-    label: r.intl.string(r.t.ZyXA0t),
+    label: Chunk388032.intl.string(Chunk388032.t.ZyXA0t),
     code: 3,
     value: "I found the language confusing"
   }, {
-    label: r.intl.string(r.t["emlT9/"]),
+    label: Chunk388032.intl.string(Chunk388032.t["emlT9/"]),
     code: 1,
     value: "Other"
   }]

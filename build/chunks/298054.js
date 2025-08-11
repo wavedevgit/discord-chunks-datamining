@@ -1,18 +1,19 @@
 /** Chunk was on web.js **/
+/** chunk id: 298054, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-Object.defineProperty(t, "__esModule", {
-  value: !0
-}), t.IntlManager = t.DEFAULT_LOCALE = void 0;
-let r = n(180660),
-  i = n(593269),
-  o = n(734606);
-t.DEFAULT_LOCALE = "en-US";
+Object.defineProperty(exports, "__esModule", {
+  value: true
+}), exports.IntlManager = exports.DEFAULT_LOCALE = true;
+let Chunk180660 = require("./180660.js"),
+  Chunk593269 = require("./593269.js"),
+  Chunk734606 = require("./734606.js");
+exports.DEFAULT_LOCALE = "en-US";
 class a {
   constructor({
     initialLocale: e = t.DEFAULT_LOCALE,
     defaultLocale: n = t.DEFAULT_LOCALE,
     formatConfig: i = r.DEFAULT_FORMAT_CONFIG,
-    forceLookupMatcher: a = !1
+    forceLookupMatcher: a = false
   }) {
     this.onLocaleChange = e => (this._localeSubscriptions.add(e), () => this._localeSubscriptions.delete(e)), this.currentLocale = e, this.defaultLocale = n, this.formatConfig = i, this._forceLookupMatcher = a, this.data = (0, o.makeDataFormatters)([this.currentLocale, this.defaultLocale], this.formatConfig, this._forceLookupMatcher), this._localeSubscriptions = new Set
   }
@@ -45,4 +46,4 @@ class a {
     return (0, i.bindFormatValues)(e, t.ast, [this.currentLocale, this.defaultLocale], this.data, this.formatConfig, n)
   }
 }
-t.IntlManager = a
+exports.IntlManager = a

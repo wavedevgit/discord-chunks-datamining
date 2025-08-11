@@ -1,21 +1,22 @@
 /** Chunk was on 22988 **/
-n.d(t, {
+/** chunk id: 457414, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   S: () => c,
   w: () => f
 });
-var r = n(481060),
-  i = n(925221),
-  l = n(236413),
-  a = n(85960),
-  s = n(273504),
-  o = n(388032);
+var Chunk481060 = require("./481060.js"),
+  Chunk925221 = require("./925221.js"),
+  Chunk236413 = require("./236413.js"),
+  Chunk85960 = require("./85960.js"),
+  Chunk273504 = require("./273504.js"),
+  Chunk388032 = require("./388032.jsx");
 let c = e => {
     switch (e) {
       case s.fX.KEYWORD:
       case s.fX.USER_PROFILE:
-        return !0;
+        returntrue;
       default:
-        return !1
+        returnfalse
     }
   },
   d = e => {
@@ -26,14 +27,14 @@ let c = e => {
       case s.fX.MENTION_SPAM:
       case s.fX.SERVER_POLICY:
       case s.fX.USER_PROFILE:
-        return !0;
+        returntrue;
       default:
-        return !1
+        returnfalse
     }
   },
   u = (e, t) => {
     var n;
-    return null != (n = null == t ? void 0 : t.name) ? n : a.I6[e].getDefaultRuleName()
+    return null != (n = null == t ? true : t.name) ? n : a.I6[e].getDefaultRuleName()
   },
   m = (e, t) => {
     if ((0, l.Vb)(t) && (0, l.DO)(t)) return t.triggerMetadata.regexPatterns.length > 0 ? o.intl.formatToPlainString(o.t.xZUvxc, {

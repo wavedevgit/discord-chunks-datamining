@@ -1,22 +1,23 @@
 /** Chunk was on web.js **/
+/** chunk id: 985518, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Ct: () => u,
   UP: () => l,
   ZP: () => f,
   rj: () => c
-}), n(539854), n(388685);
-var r = n(929991),
-  i = n(480739),
-  o = n(228392),
-  a = n(6496);
+}), require("./539854.js"), require("./388685.js");
+var Chunk929991 = require("./929991.js"),
+  Chunk480739 = require("./480739.js"),
+  Chunk228392 = require("./228392.js"),
+  Chunk6496 = require("./6496.js");
 
 function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -52,7 +53,7 @@ function d(e) {
     additionalTimes: l
   })
 }
-class f extends i.zQ {
+class f extends Chunk480739.zQ {
   constructor({
     guildId: e,
     channelId: t,
@@ -63,7 +64,7 @@ class f extends i.zQ {
       windowId: n,
       isPaused: r,
       id: l(t)
-    }), s(this, "guildId", void 0), s(this, "channelId", void 0), s(this, "sessionId", void 0), s(this, "createFlushSeenItemsFunction", e => {
+    }), s(this, "guildId", true), s(this, "channelId", true), s(this, "sessionId", true), s(this, "createFlushSeenItemsFunction", e => {
       let t = this.trackedFeedItems,
         n = this.channelId,
         r = {

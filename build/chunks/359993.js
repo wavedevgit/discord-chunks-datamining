@@ -1,18 +1,19 @@
 /** Chunk was on 88934 **/
-n.d(t, {
+/** chunk id: 359993, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => o
-}), n(539854), n(388685);
-var r = n(73800),
-  a = n(442837),
-  i = n(38618),
-  l = n(430824),
-  s = n(204298);
+}), require("./539854.js"), require("./388685.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk442837 = require("./442837.js"),
+  Chunk38618 = require("./38618.js"),
+  Chunk430824 = require("./430824.js"),
+  Chunk204298 = require("./204298.js");
 
 function o(e) {
   let {
     application: t,
-    showMutualGuilds: n = !0
-  } = e, o = (0, a.e7)([s.Z], () => s.Z.getGuildIdsForApplication(null == t ? void 0 : t.id), [t]), c = (0, a.e7)([i.Z], () => i.Z.isConnected());
+    showMutualGuilds: n = true
+  } = e, o = (0, a.e7)([s.Z], () => s.Z.getGuildIdsForApplication(null == t ? true : t.id), [t]), c = (0, a.e7)([i.Z], () => i.Z.isConnected());
   return r.useMemo(() => {
     let e = [];
     if (!c || !n || null == o || null == t) return e;

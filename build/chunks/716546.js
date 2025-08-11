@@ -1,41 +1,42 @@
 /** Chunk was on web.js **/
+/** chunk id: 716546, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => c
-}), n(388685);
-var r = n(668781),
-  i = n(998502),
-  o = n(58406),
-  a = n(761274);
+}), require("./388685.js");
+var Chunk668781 = require("./668781.js"),
+  Chunk998502 = require("./998502.js"),
+  Chunk58406 = require("./58406.js"),
+  Chunk761274 = require("./761274.js");
 
 function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
-class l extends o.g {
+class l extends Chunk58406.g {
   requestPermissionCore(e, t) {
     var n;
-    return this.asyncify(null == (n = this.nativeUtils) ? void 0 : n.nativePermssionRequestAuthorization, e, t)
+    return this.asyncify(null == (n = this.nativeUtils) ? true : n.nativePermssionRequestAuthorization, e, t)
   }
   hasPermissionCore(e, t) {
     var n;
-    return this.asyncify(null == (n = this.nativeUtils) ? void 0 : n.nativePermssionHasAuthorization, e, t)
+    return this.asyncify(null == (n = this.nativeUtils) ? true : n.nativePermssionHasAuthorization, e, t)
   }
   asyncify(e, t, n) {
     let r = l.requestTypeLookup[t];
-    if (void 0 === r) return Promise.resolve(!0);
+    if (true === r) return Promise.resolve(true);
     let i = () => null == e ? Promise.resolve(a.NZ.AUTHORIZED) : new Promise((t, n) => e(t, r));
     return this.requestAuthorization(t, i, n)
   }
   openSettings(e) {
     var t;
-    if ((null == (t = this.nativeUtils) ? void 0 : t.nativePermissionOpenSettings) == null) return;
+    if ((null == (t = this.nativeUtils) ? true : t.nativePermissionOpenSettings) == null) return;
     let n = l.requestTypeLookup[e];
-    void 0 !== n && this.nativeUtils.nativePermissionOpenSettings(n)
+    true !== n && this.nativeUtils.nativePermissionOpenSettings(n)
   }
   didHavePermission(e) {
     return this.storage.hasPermission(e)
@@ -61,10 +62,10 @@ class l extends o.g {
   }
 }
 s(l, "requestTypeLookup", {
-  [a.Eu.CAMERA]: i.jK.Camera,
-  [a.Eu.AUDIO]: i.jK.Microphone,
-  [a.Eu.PHOTOS]: i.jK.Photo,
-  [a.Eu.INPUT_MONITORING]: i.jK.InputMonitoring,
-  [a.Eu.SCREEN_RECORDING]: i.jK.ScreenRecording
+  [Chunk761274.Eu.CAMERA]: Chunk998502.jK.Camera,
+  [Chunk761274.Eu.AUDIO]: Chunk998502.jK.Microphone,
+  [Chunk761274.Eu.PHOTOS]: Chunk998502.jK.Photo,
+  [Chunk761274.Eu.INPUT_MONITORING]: Chunk998502.jK.InputMonitoring,
+  [Chunk761274.Eu.SCREEN_RECORDING]: Chunk998502.jK.ScreenRecording
 });
 let c = new l

@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 45114, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   CZ: () => m,
   FT: () => b,
   In: () => d,
@@ -9,20 +10,20 @@ n.d(t, {
   iV: () => h,
   jT: () => g,
   y5: () => p
-}), n(388685), n(539854);
-var r = n(570140),
-  i = n(601070),
-  o = n(131704),
-  a = n(592125),
-  s = n(324067),
-  l = n(594174),
-  c = n(709054),
-  u = n(981631);
+}), require("./388685.js"), require("./539854.js");
+var Chunk570140 = require("./570140.js"),
+  Chunk601070 = require("./601070.js"),
+  Chunk131704 = require("./131704.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk324067 = require("./324067.js"),
+  Chunk594174 = require("./594174.js"),
+  Chunk709054 = require("./709054.js"),
+  Chunk981631 = require("./981631.js");
 
 function d(e, t) {
-  let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
-    i = arguments.length > 3 && void 0 !== arguments[3] && arguments[3],
-    o = arguments.length > 4 ? arguments[4] : void 0;
+  let n = arguments.length > 2 && true !== arguments[2] && arguments[2],
+    i = arguments.length > 3 && true !== arguments[3] && arguments[3],
+    o = arguments.length > 4 ? arguments[4] : true;
   r.Z.dispatch({
     type: "CHANNEL_ACK",
     channelId: e,
@@ -35,8 +36,8 @@ function d(e, t) {
 }
 
 function f(e, t) {
-  let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
-    r = arguments.length > 3 && void 0 !== arguments[3] && arguments[3],
+  let n = arguments.length > 2 && true !== arguments[2] && arguments[2],
+    r = arguments.length > 3 && true !== arguments[3] && arguments[3],
     l = a.Z.getChannel(e);
   if (null == l || null == l.guild_id) return;
   let c = s.Z.getCategories(l.guild_id);
@@ -60,7 +61,7 @@ function f(e, t) {
 }
 
 function _(e, t) {
-  e.isCategory() ? f(e.id, t, !0, !0) : e.isForumLikeChannel() ? d(e.id, t, !0, !0, c.default.fromTimestamp(Date.now())) : d(e.id, t, !0, !0)
+  e.isCategory() ? f(e.id, t, true, true) : e.isForumLikeChannel() ? d(e.id, t, true, true, c.default.fromTimestamp(Date.now())) : d(e.id, t, true, true)
 }
 
 function p(e, t) {
@@ -101,16 +102,16 @@ function E(e, t, n) {
     id: e,
     ackType: t,
     ackedId: n,
-    local: !1
+    local: false
   })
 }
 
 function b(e, t) {
   var n;
-  null != (null == (n = l.default.getCurrentUser()) ? void 0 : n.id) && r.Z.dispatch({
+  null != (null == (n = l.default.getCurrentUser()) ? true : n.id) && r.Z.dispatch({
     type: "USER_NON_CHANNEL_ACK",
     ackType: e,
     ackedId: t,
-    local: !1
+    local: false
   })
 }

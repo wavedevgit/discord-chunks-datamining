@@ -1,4 +1,5 @@
 /** Chunk was on web.js **/
+/** chunk id: 979605, original params: e (module,exports,re quire) **/
 var t = Object.prototype.hasOwnProperty;
 
 function n(e) {
@@ -33,7 +34,7 @@ function a(e, n, o) {
       return
     } e.size++, e[l] = new i(n, o, l)
 }
-e.exports = n, n.prototype.forEach = function(e, t) {
+module.exports = n, n.prototype.forEach = function(e, t) {
   t = t || this, Object.keys(this._data).forEach(function(n) {
     "size" !== n && e.call(t, this._data[n].value, this._data[n].key)
   }, this)
@@ -49,19 +50,19 @@ e.exports = n, n.prototype.forEach = function(e, t) {
   t && (delete this._data[t._index], this._data.size--)
 }, n.prototype.clear = function() {
   var e = Object.create(null);
-  e.size = 0, Object.defineProperty(this, "_data", {
-    value: e,
-    enumerable: !1,
-    configurable: !0,
-    writable: !1
+  module.size = 0, Object.defineProperty(this, "_data", {
+    value: module,
+    enumerable: false,
+    configurable: true,
+    writable: false
   })
 }, Object.defineProperty(n.prototype, "size", {
   get: function() {
     return this._data.size
   },
   set: function(e) {},
-  enumerable: !0,
-  configurable: !0
+  enumerable: true,
+  configurable: true
 }), n.prototype.values = n.prototype.keys = n.prototype.entries = function() {
   throw Error("iterators are not implemented in this version")
 }

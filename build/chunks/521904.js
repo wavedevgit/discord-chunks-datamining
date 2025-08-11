@@ -1,11 +1,12 @@
 /** Chunk was on web.js **/
+/** chunk id: 521904, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   V: () => i
 });
 let {
   Themes: r
-} = n(15202).V, i = {
+} = require("./15202.js").V, i = {
   SemanticColors: {
     ACTIVITY_CARD_BACKGROUND: {
       category: "generic",

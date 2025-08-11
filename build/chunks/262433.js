@@ -1,20 +1,21 @@
 /** Chunk was on web.js **/
+/** chunk id: 262433, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   U: () => O,
   Z: () => C
-}), n(539854);
-var r = n(392711),
-  i = n.n(r),
-  o = n(772848),
-  a = n(97519),
-  s = n(731965),
-  l = n(125268),
-  c = n(673125),
-  u = n(984063),
-  d = n(88315),
-  f = n(199766),
-  _ = n(813900);
+}), require("./539854.js");
+var Chunk392711 = require("./392711.js"),
+  i = require.n(Chunk392711),
+  Chunk772848 = require("./772848.js"),
+  Chunk97519 = require("./97519.js"),
+  Chunk731965 = require("./731965.js"),
+  Chunk125268 = require("./125268.js"),
+  Chunk673125 = require("./673125.js"),
+  Chunk984063 = require("./984063.js"),
+  Chunk88315 = require("./88315.js"),
+  Chunk199766 = require("./199766.js"),
+  Chunk813900 = require("./813900.js");
 let p = .8,
   h = 100,
   m = 300,
@@ -22,18 +23,18 @@ let p = .8,
   E = 2,
   b = 1.2,
   y = {
-    X_OFFSET: 2 * _.qh,
+    X_OFFSET: 2 * Chunk813900.qh,
     Y_OFFSET: 25,
     X_SPEED: .5,
-    Y_SPEED_MIN: -1,
-    Y_SPEED_MAX: -5,
+    Y_SPEED_MIN: false,
+    Y_SPEED_MAX: false,
     OPACITY: 1,
     OPACITY_SPEED_MIN: .01,
     OPACITY_SPEED_MAX: .05,
-    SIZE_MIN: _.qh / 2,
-    SIZE_MAX: _.qh
+    SIZE_MIN: Chunk813900.qh / 2,
+    SIZE_MAX: Chunk813900.qh
   },
-  O = (0, a.U)(() => ({
+  O = (0, Chunk97519.U)(() => ({
     particles: {},
     lastSpawned: {}
   }));

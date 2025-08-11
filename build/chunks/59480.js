@@ -1,11 +1,12 @@
 /** Chunk was on web.js **/
+/** chunk id: 59480, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   a: () => a
-}), n(388685), n(539854);
-var r = n(271383),
-  i = n(594174),
-  o = n(981631);
+}), require("./388685.js"), require("./539854.js");
+var Chunk271383 = require("./271383.js"),
+  Chunk594174 = require("./594174.js"),
+  Chunk981631 = require("./981631.js");
 class a {
   static fromMessage(e, t, n, r) {
     let [i, o] = a.deriveMemberUsers(e, n);
@@ -20,7 +21,7 @@ class a {
   }
   static deriveMemberUsers(e, t) {
     var n, a, s, l;
-    let c = new Set([null == (n = t.author) ? void 0 : n.id, null == (a = t.interaction) ? void 0 : a.user.id, ...null != (l = null == (s = t.mentions) ? void 0 : s.map(e => e.id)) ? l : []]),
+    let c = new Set([null == (n = t.author) ? true : n.id, null == (a = t.interaction) ? true : a.user.id, ...null != (l = null == (s = t.mentions) ? true : s.map(e => e.id)) ? l : []]),
       u = [],
       d = [];
     for (let t of c) {

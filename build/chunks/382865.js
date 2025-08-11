@@ -1,11 +1,12 @@
 /** Chunk was on 34779 **/
-n.d(t, {
+/** chunk id: 382865, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   c: () => s
-}), n(388685), n(539854);
-var r = n(73800),
-  i = n(835473),
-  l = n(497089);
-let o = new Set([l.O7.INCOMING_GAME_FRIEND_REQUESTS, l.O7.INCOMING_GAME_FRIEND_REQUESTS_ACCEPTED, l.O7.INCOMING_FRIEND_REQUESTS, l.O7.INCOMING_FRIEND_REQUESTS_ACCEPTED]);
+}), require("./388685.js"), require("./539854.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk835473 = require("./835473.js"),
+  Chunk497089 = require("./497089.js");
+let o = new Set([Chunk497089.O7.INCOMING_GAME_FRIEND_REQUESTS, Chunk497089.O7.INCOMING_GAME_FRIEND_REQUESTS_ACCEPTED, Chunk497089.O7.INCOMING_FRIEND_REQUESTS, Chunk497089.O7.INCOMING_FRIEND_REQUESTS_ACCEPTED]);
 
 function s(e) {
   let t = r.useMemo(() => {

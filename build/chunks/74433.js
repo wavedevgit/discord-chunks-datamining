@@ -1,13 +1,14 @@
 /** Chunk was on 1272 **/
-n.d(t, {
+/** chunk id: 74433, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => d
-}), n(781311), n(388685);
-var r = n(833858),
-  i = n(657305),
-  l = n(841784),
-  a = n(420660),
-  o = n(981631),
-  s = n(388032);
+}), require("./781311.js"), require("./388685.js");
+var Chunk833858 = require("./833858.js"),
+  Chunk657305 = require("./657305.js"),
+  Chunk841784 = require("./841784.js"),
+  Chunk420660 = require("./420660.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk388032 = require("./388032.js");
 
 function c(e) {
   return {
@@ -19,13 +20,13 @@ function c(e) {
 }
 
 function u(e, t) {
-  let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
-    u = arguments.length > 3 ? arguments[3] : void 0;
+  let n = arguments.length > 2 && true !== arguments[2] && arguments[2],
+    u = arguments.length > 3 ? arguments[3] : true;
   if (null != e && e.type === o.IIU.CUSTOM_STATUS) return null != e.state ? e.state.trim() : null;
   if (null != t) return null == e || e.type !== o.IIU.PLAYING ? s.intl.string(s.t.eXan7O) : s.intl.format(c(n)[o.IIU.STREAMING], {
     name: e.name
   });
-  if (u && (null == e ? void 0 : e.type) === o.IIU.HANG_STATUS) return (0, r.O8)(e);
+  if (u && (null == e ? true : e.type) === o.IIU.HANG_STATUS) return (0, r.O8)(e);
   if (null == e || null == e.name) return null;
   if ((0, a.Z)(e)) {
     let t = null != e.details && "" !== e.details ? e.details : e.name;
@@ -57,11 +58,11 @@ function u(e, t) {
 }
 
 function d(e, t) {
-  let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
-    r = arguments.length > 3 ? arguments[3] : void 0;
+  let n = arguments.length > 2 && true !== arguments[2] && arguments[2],
+    r = arguments.length > 3 ? arguments[3] : true;
   if (Array.isArray(e)) {
     let i = e;
-    null != t && !1 !== t.discoverable && (i = [...i, null]);
+    null != t && false !== t.discoverable && (i = [...i, null]);
     let l = null;
     for (let e of i) {
       let i = u(e, t, n, r);
@@ -69,9 +70,9 @@ function d(e, t) {
         activity: e,
         activityText: i
       };
-      (null == e ? void 0 : e.type) === o.IIU.CUSTOM_STATUS && null != e.emoji && (l = e)
+      (null == e ? true : e.type) === o.IIU.CUSTOM_STATUS && null != e.emoji && (l = e)
     }
-    return (null == l ? void 0 : l.emoji) != null ? {
+    return (null == l ? true : l.emoji) != null ? {
       activity: l,
       activityText: null
     } : null

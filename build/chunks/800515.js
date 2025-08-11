@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 800515, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   settingsWrapper: "settingsWrapper_c9e42f",
   osx: "osx_c9e42f",
   backButton: "backButton_c9e42f",

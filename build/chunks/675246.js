@@ -1,4 +1,5 @@
 /** Chunk was on web.js **/
+/** chunk id: 675246, original params: e (module,exports,re quire) **/
 "use strict";
 
 function t(e, t) {
@@ -12,9 +13,9 @@ function t(e, t) {
         s: o,
         n: function() {
           return i >= e.length ? {
-            done: !0
+            done: true
           } : {
-            done: !1,
+            done: false,
             value: e[i++]
           }
         },
@@ -26,8 +27,8 @@ function t(e, t) {
     }
     throw TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")
   }
-  var a, s = !0,
-    l = !1;
+  var a, s = true,
+    l = false;
   return {
     s: function() {
       r = r.call(e)
@@ -37,7 +38,7 @@ function t(e, t) {
       return s = e.done, e
     },
     e: function(e) {
-      l = !0, a = e
+      l = true, a = e
     },
     f: function() {
       try {
@@ -52,7 +53,7 @@ function t(e, t) {
 function n(e, t) {
   if (e) {
     if ("string" == typeof e) return r(e, t);
-    var n = Object.prototype.toString.call(e).slice(8, -1);
+    var n = Object.prototype.toString.call(e).slice(8, false);
     if ("Object" === n && e.constructor && (n = e.constructor.name), "Map" === n || "Set" === n) return Array.from(e);
     if ("Arguments" === n || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return r(e, t)
   }
@@ -69,10 +70,10 @@ function i() {
 }
 for (var o = 0, a = ["use", "on", "once", "set", "query", "type", "accept", "auth", "withCredentials", "sortQuery", "retry", "ok", "redirects", "timeout", "buffer", "serialize", "parse", "ca", "key", "pfx", "cert", "disableTLSCerts"]; o < a.length; o++) {
   let e = a[o];
-  i.prototype[e] = function() {
+  i.prototype[module] = function() {
     for (var t = arguments.length, n = Array(t), r = 0; r < t; r++) n[r] = arguments[r];
     return this._defaults.push({
-      fn: e,
+      fn: module,
       args: n
     }), this
   }
@@ -89,4 +90,4 @@ i.prototype._setDefaults = function(e) {
   } finally {
     r.f()
   }
-}, e.exports = i
+}, module.exports = i

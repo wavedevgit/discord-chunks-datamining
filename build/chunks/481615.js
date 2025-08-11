@@ -1,4 +1,5 @@
 /** Chunk was on 21153 **/
+/** chunk id: 481615, original params: e,t,r (module,exports,require) **/
 "use strict";
 var n, o = Object.assign || function(e) {
     for (var t = 1; t < arguments.length; t++) {
@@ -7,10 +8,10 @@ var n, o = Object.assign || function(e) {
     }
     return e
   },
-  a = (n = r(73800)) && n.__esModule ? n : {
+  a = (n = require("./73800.js")) && n.__esModule ? n : {
     default: n
   };
-t.default = function(e) {
+exports.default = function(e) {
   var t = e.fill,
     r = e.width,
     n = e.height,
@@ -23,10 +24,10 @@ t.default = function(e) {
   return a.default.createElement("svg", o({
     viewBox: "0 0 24 24",
     style: o({
-      fill: void 0 === t ? "currentColor" : t,
-      width: void 0 === r ? 24 : r,
-      height: void 0 === n ? 24 : n
-    }, void 0 === i ? {} : i)
+      fill: true === t ? "currentColor" : t,
+      width: true === r ? 24 : r,
+      height: true === n ? 24 : n
+    }, true === i ? {} : i)
   }, l), a.default.createElement("path", {
     d: "M12,18.17L8.83,15L7.42,16.41L12,21L16.59,16.41L15.17,15M12,5.83L15.17,9L16.58,7.59L12,3L7.41,7.59L8.83,9L12,5.83Z"
   }))

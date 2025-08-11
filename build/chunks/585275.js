@@ -1,34 +1,35 @@
 /** Chunk was on web.js **/
+/** chunk id: 585275, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 let r;
-n.d(t, {
+require.d(exports, {
   Z: () => B
-}), n(259475), n(227481), n(730884), n(20464), n(341884), n(364341), n(629680), n(505025), n(918970), n(121784), n(644351), n(146733), n(415506), n(457542);
-var i = n(512722),
-  o = n.n(i),
-  a = n(392711),
-  s = n.n(a),
-  l = n(544891),
-  c = n(992774),
-  u = n(649754),
-  d = n(376398),
-  f = n(846519),
-  _ = n(570140),
-  p = n(710845),
-  h = n(695346),
-  m = n(199902),
-  g = n(314897),
-  E = n(358085),
-  b = n(998502),
-  y = n(569545),
-  O = n(70722),
-  v = n(981631),
-  I = n(65154);
+}), require("./259475.js"), require("./227481.js"), require("./730884.js"), require("./20464.js"), require("./341884.js"), require("./364341.js"), require("./629680.js"), require("./505025.js"), require("./918970.js"), require("./121784.js"), require("./644351.js"), require("./146733.js"), require("./415506.js"), require("./457542.js");
+var Chunk512722 = require("./512722.js"),
+  o = require.n(Chunk512722),
+  Chunk392711 = require("./392711.js"),
+  s = require.n(Chunk392711),
+  Chunk544891 = require("./544891.js"),
+  Chunk992774 = require("./992774.js"),
+  Chunk649754 = require("./649754.js"),
+  Chunk376398 = require("./376398.js"),
+  Chunk846519 = require("./846519.js"),
+  Chunk570140 = require("./570140.js"),
+  Chunk710845 = require("./710845.js"),
+  Chunk695346 = require("./695346.js"),
+  Chunk199902 = require("./199902.js"),
+  Chunk314897 = require("./314897.js"),
+  Chunk358085 = require("./358085.js"),
+  Chunk998502 = require("./998502.js"),
+  Chunk569545 = require("./569545.js"),
+  Chunk70722 = require("./70722.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk65154 = require("./65154.js");
 let T = 3e5,
   S = 6e4,
   A = {},
-  N = new f.V7,
-  C = !1,
+  N = new Chunk846519.V7,
+  C = false,
   R = window.document.createElement("canvas"),
   P = 512,
   w = 288;
@@ -36,7 +37,7 @@ R.width = 512, R.height = w;
 let D = R.getContext("2d");
 
 function L() {
-  N.stop(), null != r && (u.Z.removeSink(r, A), r = null)
+  N.stop(), null != r && (Chunk649754.Z.removeSink(r, A), r = null)
 }
 let x = s().debounce((e, t, n, r) => {
   k(e, (0, y.V9)({
@@ -84,8 +85,8 @@ async function k(e, t) {
       body: {
         thumbnail: r
       },
-      oldFormErrors: !0,
-      rejectWithError: !1
+      oldFormErrors: true,
+      rejectWithError: false
     })
   } catch (t) {
     new p.Z("ApplicationStreamPreviewUploadManager").error("Failed to post stream preview", t), r === e && N.start(S, n);
@@ -97,9 +98,9 @@ async function k(e, t) {
 function j(e, t) {
   let n = 0;
   return (E.isPlatformEmbedded ? G : U)(e, e => {
-    if (new Uint32Array(e.data.buffer).some(e => 0 !== e)) return !0;
+    if (new Uint32Array(e.data.buffer).some(e => 0 !== e)) returntrue;
     if (++n > t) throw Error("Timed out awaiting non-black frame after ".concat(t, " frames"));
-    return !1
+    returnfalse
   })
 }
 
@@ -115,7 +116,7 @@ function U(e, t) {
   return new Promise((e, n) => {
     o.ontimeupdate = () => {
       null == s || s.drawImage(o, 0, 0, a.width, a.height);
-      let r = null == s ? void 0 : s.getImageData(0, 0, a.width, a.height);
+      let r = null == s ? true : s.getImageData(0, 0, a.width, a.height);
       try {
         null != r && t(r) && e(r)
       } catch (e) {
@@ -129,7 +130,7 @@ function U(e, t) {
 
 function G(e, t) {
   let n = (0, c.zS)(),
-    i = (null == n ? void 0 : n.getNextVideoOutputFrame) != null;
+    i = (null == n ? true : n.getNextVideoOutputFrame) != null;
   return new Promise((o, a) => {
     let s = e => {
       try {
@@ -147,7 +148,7 @@ function G(e, t) {
 }
 let B = {
   init() {
-    _.Z.subscribe("CONNECTION_OPEN", L), _.Z.subscribe("LOGOUT", L), _.Z.subscribe("STREAM_DELETE", L), _.Z.subscribe("RTC_CONNECTION_VIDEO", e => {
+    Chunk570140.Z.subscribe("CONNECTION_OPEN", L), Chunk570140.Z.subscribe("LOGOUT", L), Chunk570140.Z.subscribe("STREAM_DELETE", L), Chunk570140.Z.subscribe("RTC_CONNECTION_VIDEO", e => {
       let {
         guildId: t,
         channelId: n,
@@ -156,7 +157,7 @@ let B = {
         context: a
       } = e;
       null == o || a !== I.Yn.STREAM || i !== g.default.getId() || __OVERLAY__ || (L(), r = o, x(o, t, n, i))
-    }), _.Z.subscribe("MEDIA_ENGINE_VIDEO_STATE_CHANGED", e => {
+    }), Chunk570140.Z.subscribe("MEDIA_ENGINE_VIDEO_STATE_CHANGED", e => {
       let {
         videoState: t
       } = e;

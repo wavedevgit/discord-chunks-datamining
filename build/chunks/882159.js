@@ -1,11 +1,12 @@
 /** Chunk was on web.js **/
+/** chunk id: 882159, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Re: () => o,
   Zq: () => a,
   kK: () => i
 });
-var r = n(49691);
+var Chunk49691 = require("./49691.js");
 
 function i(e) {
   var t = (0, r.Z)(e).Element;
@@ -18,7 +19,7 @@ function o(e) {
 }
 
 function a(e) {
-  if ("undefined" == typeof ShadowRoot) return !1;
+  if ("undefined" == typeof ShadowRoot) returnfalse;
   var t = (0, r.Z)(e).ShadowRoot;
   return e instanceof t || e instanceof ShadowRoot
 }

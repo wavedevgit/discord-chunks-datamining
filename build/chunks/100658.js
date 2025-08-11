@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 100658, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   chat: "chat_f75fb0",
   threadSidebarOpen: "threadSidebarOpen_f75fb0",
   form: "form_f75fb0",

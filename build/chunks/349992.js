@@ -1,21 +1,22 @@
 /** Chunk was on web.js **/
+/** chunk id: 349992, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   t: () => o
 });
-var r = n(436759),
-  i = n(240773);
+var Chunk436759 = require("./436759.js"),
+  Chunk240773 = require("./240773.js");
 
 function o(e) {
   let t = {};
   for (let n of (Object.defineProperty(t, i.C, {
-      enumerable: !1,
+      enumerable: false,
       value: e
     }), e.fields)) {
     let e = n.localName;
     if (!n.opt)
       if (n.oneof) t[n.oneof] = {
-        oneofKind: void 0
+        oneofKind: true
       };
       else if (n.repeat) t[e] = [];
     else switch (n.kind) {

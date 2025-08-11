@@ -1,10 +1,11 @@
 /** Chunk was on 61323 **/
-a.d(t, {
+/** chunk id: 37291, original params: e,t,a (module,exports,require) **/
+require.d(exports, {
   Z: () => s,
   p: () => l
-}), a(388685);
-var n = a(238675);
-let s = Object.entries(n.sJ).map(e => {
+}), require("./388685.js");
+var Chunk238675 = require("./238675.js");
+let s = Object.entries(Chunk238675.sJ).map(e => {
     let [t, a] = e;
     return {
       label: t,
@@ -13,7 +14,7 @@ let s = Object.entries(n.sJ).map(e => {
   }).filter(function(e) {
     return "string" != typeof e.value
   }),
-  l = Object.entries(n.fw).map(e => {
+  l = Object.entries(Chunk238675.fw).map(e => {
     let [t, a] = e;
     return {
       label: t,

@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 923167, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   eventStatusContainer: "eventStatusContainer__29021",
   isRecurring: "isRecurring__29021",
   eventStatusLabel: "eventStatusLabel__29021",

@@ -1,8 +1,9 @@
 /** Chunk was on web.js **/
+/** chunk id: 822635, original params: e,t (module,exports,re quire) **/
 "use strict";
 var n = {}.propertyIsEnumerable,
   r = Object.getOwnPropertyDescriptor;
-t.f = r && !n.call({
+exports.f = r && !n.call({
   1: 2
 }, 1) ? function(e) {
   var t = r(this, e);

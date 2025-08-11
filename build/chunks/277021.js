@@ -1,13 +1,14 @@
 /** Chunk was on 33811 **/
-i.d(t, {
+/** chunk id: 277021, original params: e,t,i (module,exports,require) **/
+require.d(exports, {
   Q: () => r
 });
-var a = i(544891),
-  n = i(981631);
+var Chunk544891 = require("./544891.js"),
+  Chunk981631 = require("./981631.js");
 async function r() {
-  return (await a.tn.post({
-    url: n.ANM.AGE_ASSURANCE_TEST,
+  return (await Chunk544891.tn.post({
+    url: Chunk981631.ANM.AGE_ASSURANCE_TEST,
     body: {},
-    rejectWithError: !1
+    rejectWithError: false
   })).body
 }

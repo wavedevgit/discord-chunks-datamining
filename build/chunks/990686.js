@@ -1,11 +1,12 @@
 /** Chunk was on 77025 **/
-n.d(t, {
+/** chunk id: 990686, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   i: () => a
 });
-var r = n(442837),
-  i = n(430824),
-  l = n(944163),
-  s = n(981631);
+var Chunk442837 = require("./442837.js"),
+  Chunk430824 = require("./430824.js"),
+  Chunk944163 = require("./944163.js"),
+  Chunk981631 = require("./981631.js");
 
 function a(e) {
   let {
@@ -14,10 +15,10 @@ function a(e) {
   return (0, r.e7)([l.Z, i.Z], () => {
     var e;
     let n = l.Z.get(t),
-      r = null == n ? void 0 : n.guild,
+      r = null == n ? true : n.guild,
       a = i.Z.getGuild(t),
-      o = null == a ? void 0 : a.verificationLevel,
-      c = null == r ? void 0 : r.verification_level;
+      o = null == a ? true : a.verificationLevel,
+      c = null == r ? true : r.verification_level;
     return null != (e = null != o ? o : c) ? e : s.sFg.NONE
   }, [t])
 }

@@ -1,25 +1,26 @@
 /** Chunk was on 19083 **/
-i.r(o), i.d(o, {
+/** chunk id: 353182, original params: e,o,i (module,exports,require) **/
+require.r(exports), require.d(exports, {
   init: () => t
 });
-var n = i(846428);
+var Chunk846428 = require("./846428.js");
 
 function t() {
   window.DiscordDevSession = {
     start: s,
     stop: r,
-    started: !1
+    started: false
   }
 }
 
 function s() {
   if (null == window.GLOBAL_ENV.DEV_SESSION_KEY) return void console.log("Meticulous token not found");
-  (0, n.Rl)({
+  (0, Chunk846428.Rl)({
     recordingToken: window.GLOBAL_ENV.DEV_SESSION_KEY,
-    isProduction: !1
-  }), null != window.DiscordDevSession && (window.DiscordDevSession.started = !0), console.log("Meticulous session recording started")
+    isProduction: false
+  }), null != window.DiscordDevSession && (window.DiscordDevSession.started = true), console.log("Meticulous session recording started")
 }
 
 function r() {
-  (0, n.rk)(), null != window.DiscordDevSession && (window.DiscordDevSession.started = !1)
+  (0, Chunk846428.rk)(), null != window.DiscordDevSession && (window.DiscordDevSession.started = false)
 }

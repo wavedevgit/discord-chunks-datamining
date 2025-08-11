@@ -1,22 +1,23 @@
 /** Chunk was on web.js **/
+/** chunk id: 496207, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => c
-}), n(388685);
-var r = n(147913),
-  i = n(914010),
-  o = n(558217),
-  a = n(185923);
+}), require("./388685.js");
+var Chunk147913 = require("./147913.js"),
+  Chunk914010 = require("./914010.js"),
+  Chunk558217 = require("./558217.js"),
+  Chunk185923 = require("./185923.js");
 
 function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
-class l extends r.Z {
+class l extends Chunk147913.Z {
   handleInteraction(e) {
     let {
       interaction: t

@@ -1,11 +1,12 @@
 /** Chunk was on web.js **/
+/** chunk id: 697227, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   V: () => a,
   W: () => o
 });
-var r = n(512722),
-  i = n.n(r);
+var Chunk512722 = require("./512722.js"),
+  i = require.n(Chunk512722);
 
 function o(e) {
   let t = e.items;
@@ -14,6 +15,6 @@ function o(e) {
 
 function a(e) {
   var t;
-  let n = null == e || null == (t = e.renewalMutations) ? void 0 : t.items;
-  if (null != n) return i()(n.length <= 1, "more than 1 renewal mutation for role subscription"), null == n ? void 0 : n[0].planId
+  let n = null == e || null == (t = e.renewalMutations) ? true : t.items;
+  if (null != n) return i()(n.length <= 1, "more than 1 renewal mutation for role subscription"), null == n ? true : n[0].planId
 }

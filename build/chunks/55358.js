@@ -1,12 +1,13 @@
 /** Chunk was on web.js **/
+/** chunk id: 55358, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   C: () => o
 });
-var r = n(570140),
-  i = n(550385);
+var Chunk570140 = require("./570140.js"),
+  Chunk550385 = require("./550385.js");
 let o = () => {
-  (0, i.Ll)(), r.Z.dispatch({
+  (0, Chunk550385.Ll)(), Chunk570140.Z.dispatch({
     type: "CLIENT_THEMES_EDITOR_CLOSE"
   })
 }

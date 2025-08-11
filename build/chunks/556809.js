@@ -1,27 +1,28 @@
 /** Chunk was on web.js **/
+/** chunk id: 556809, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => g
-}), n(388685);
-var r = n(147913),
-  i = n(710845),
-  o = n(522474),
-  a = n(145597),
-  s = n(41534),
-  l = n(32300),
-  c = n(371651),
-  u = n(610394),
-  d = n(501787);
+}), require("./388685.js");
+var Chunk147913 = require("./147913.js"),
+  Chunk710845 = require("./710845.js"),
+  Chunk522474 = require("./522474.js"),
+  Chunk145597 = require("./145597.js"),
+  Chunk41534 = require("./41534.js"),
+  Chunk32300 = require("./32300.js"),
+  Chunk371651 = require("./371651.js"),
+  Chunk610394 = require("./610394.js"),
+  Chunk501787 = require("./501787.js");
 
 function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
-let _ = new i.Z("OverlayWindowRAFManager"),
+let _ = new Chunk710845.Z("OverlayWindowRAFManager"),
   p = window.requestAnimationFrame.bind(window),
   h = e => {
     try {
@@ -35,12 +36,12 @@ let _ = new i.Z("OverlayWindowRAFManager"),
     }
     return p(e)
   };
-class m extends r.Z {
+class m extends Chunk147913.Z {
   handlePatchOverlayWindowRaf() {
     let {
       enabled: e
-    } = (0, l.td)("OverlayWindowRAFManager");
-    !e || __OVERLAY__ || (window.requestAnimationFrame = h)
+    } = (0, Chunk32300.td)("OverlayWindowRAFManager");
+    !module || __OVERLAY__ || (window.requestAnimationFrame = h)
   }
   _terminate() {
     window.requestAnimationFrame = p

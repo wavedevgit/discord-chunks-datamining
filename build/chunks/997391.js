@@ -1,7 +1,8 @@
 /** Chunk was on 50448 **/
+/** chunk id: 997391, original params: t,r,n (module,exports,require) **/
 "use strict";
-var e = n(394370)("iterator"),
-  o = !1;
+var e = require("./394370.js")("iterator"),
+  o = false;
 try {
   var i = 0,
     u = {
@@ -11,7 +12,7 @@ try {
         }
       },
       return: function() {
-        o = !0
+        o = true
       }
     };
   u[e] = function() {
@@ -20,20 +21,20 @@ try {
     throw 2
   })
 } catch (t) {}
-t.exports = function(t, r) {
+module.exports = function(t, r) {
   try {
-    if (!r && !o) return !1
+    if (!r && !o) returnfalse
   } catch (t) {
-    return !1
+    returnfalse
   }
-  var n = !1;
+  var n = false;
   try {
     var i = {};
     i[e] = function() {
       return {
         next: function() {
           return {
-            done: n = !0
+            done: n = true
           }
         }
       }

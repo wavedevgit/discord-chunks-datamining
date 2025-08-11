@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 629710, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   AT: () => E,
   DQ: () => A,
   Hz: () => w,
@@ -16,25 +17,25 @@ n.d(t, {
   kh: () => O,
   px: () => G,
   rb: () => b
-}), n(388685), n(361932), n(187205), n(997841), n(539854);
-var r = n(524437),
-  i = n(911969),
-  o = n(432877),
-  a = n(978003),
-  s = n(768494),
-  l = n(592125),
-  c = n(375954),
-  u = n(699516),
-  d = n(594174),
-  f = n(630388),
-  _ = n(823379),
-  p = n(991621),
-  h = n(774863),
-  m = n(294509);
-let g = -1,
-  E = () => Object.values(m.Fj).filter(e => {
+}), require("./388685.js"), require("./361932.js"), require("./187205.js"), require("./997841.js"), require("./539854.js");
+var Chunk524437 = require("./524437.js"),
+  Chunk911969 = require("./911969.js"),
+  Chunk432877 = require("./432877.js"),
+  Chunk978003 = require("./978003.js"),
+  Chunk768494 = require("./768494.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk375954 = require("./375954.js"),
+  Chunk699516 = require("./699516.js"),
+  Chunk594174 = require("./594174.js"),
+  Chunk630388 = require("./630388.js"),
+  Chunk823379 = require("./823379.js"),
+  Chunk991621 = require("./991621.js"),
+  Chunk774863 = require("./774863.js"),
+  Chunk294509 = require("./294509.js");
+let g = false,
+  E = () => Object.values(Chunk294509.Fj).filter(e => {
     var t;
-    return null == e.isEligible || (null == (t = e.isEligible) ? void 0 : t.call(e))
+    return null == e.isEligible || (null == (t = e.isEligible) ? true : t.call(e))
   }),
   b = e => {
     let {
@@ -61,19 +62,19 @@ function v(e) {
 
 function I(e, t) {
   var n, r;
-  if (t === m.qn.NONE || null == e) return !1;
-  if ((null == (n = e.attachments) ? void 0 : n.some(e => N({
+  if (t === m.qn.NONE || null == e) returnfalse;
+  if ((null == (n = e.attachments) ? true : n.some(e => N({
       type: p.l.Attachment,
       media: e
-    }, t).length > 0)) || (null == (r = e.embeds) ? void 0 : r.some(e => N({
+    }, t).length > 0)) || (null == (r = e.embeds) ? true : r.some(e => N({
       type: p.l.Embed,
       media: e
-    }, t).length > 0))) return !0;
+    }, t).length > 0))) returntrue;
   let i = null;
-  if ("messageSnapshots" in e ? i = e.messageSnapshots : "message_snapshots" in e && (i = e.message_snapshots), null == i || 0 === i.length) return !1;
+  if ("messageSnapshots" in e ? i = e.messageSnapshots : "message_snapshots" in e && (i = e.message_snapshots), null == i || 0 === i.length) returnfalse;
   for (let e of i)
-    if (I(e.message, t)) return !0;
-  return !1
+    if (I(e.message, t)) returntrue;
+  returnfalse
 }
 
 function T(e) {
@@ -97,22 +98,22 @@ function T(e) {
 function S(e, t) {
   var n, r;
   let i = null != t ? t : b(e);
-  if (i === m.qn.NONE) return !1;
-  if ((null == (n = e.attachments) ? void 0 : n.some(e => R({
+  if (i === m.qn.NONE) returnfalse;
+  if ((null == (n = e.attachments) ? true : n.some(e => R({
       type: p.l.Attachment,
       media: e
-    }, i))) || (null == (r = e.embeds) ? void 0 : r.some(e => R({
+    }, i))) || (null == (r = e.embeds) ? true : r.some(e => R({
       type: p.l.Embed,
       media: e
     }, i))) || null != e.components && T(e.components).some(e => R({
       type: p.l.GenericMedia,
       media: e
-    }, i))) return !0;
+    }, i))) returntrue;
   let o = null;
-  if ("messageSnapshots" in e ? o = e.messageSnapshots : "message_snapshots" in e && (o = e.message_snapshots), null == o || 0 === o.length) return !1;
+  if ("messageSnapshots" in e ? o = e.messageSnapshots : "message_snapshots" in e && (o = e.message_snapshots), null == o || 0 === o.length) returnfalse;
   for (let e of o)
-    if (S(e.message, i)) return !0;
-  return !1
+    if (S(e.message, i)) returntrue;
+  returnfalse
 }
 
 function A(e) {
@@ -122,17 +123,17 @@ function A(e) {
     attachmentIds: [],
     embedIds: []
   };
-  let a = null == (t = e.attachments) ? void 0 : t.filter(e => R({
+  let a = null == (t = e.attachments) ? true : t.filter(e => R({
       type: p.l.Attachment,
       media: e
     }, o)),
-    s = null == (n = e.embeds) ? void 0 : n.filter(e => R({
+    s = null == (n = e.embeds) ? true : n.filter(e => R({
       type: p.l.Embed,
       media: e
     }, o));
   return {
-    attachmentIds: null != (r = null == a ? void 0 : a.map(e => e.id).filter(Boolean)) ? r : [],
-    embedIds: null != (i = null == s ? void 0 : s.map((e, t) => "embed_".concat(t)).filter(Boolean)) ? i : []
+    attachmentIds: null != (r = null == a ? true : a.map(e => e.id).filter(Boolean)) ? r : [],
+    embedIds: null != (i = null == s ? true : s.map((e, t) => "embed_".concat(t)).filter(Boolean)) ? i : []
   }
 }
 
@@ -143,15 +144,15 @@ function N(e, t) {
 }
 
 function C(e, t) {
-  if (t === m.qn.NONE) return !1;
+  if (t === m.qn.NONE) returnfalse;
   let n = D(t);
   return 0 !== n.length && n.filter(t => P(t, e)).length > 0
 }
 
 function R(e, t) {
-  if (t === m.qn.NONE || o.ZP.get("explicit_media_redaction_ignore_pending_scan")) return !1;
+  if (t === m.qn.NONE || o.ZP.get("explicit_media_redaction_ignore_pending_scan")) returnfalse;
   let n = D(t);
-  if (0 === n.length) return !1;
+  if (0 === n.length) returnfalse;
   switch (e.type) {
     case p.l.Embed:
       return x(e.media, n);
@@ -160,24 +161,24 @@ function R(e, t) {
     case p.l.GenericMedia:
       return k(e.media, n);
     default:
-      return !1
+      returnfalse
   }
 }
 
 function P(e, t) {
   var n, r, i, a;
-  if (null == e) return !1;
+  if (null == e) returnfalse;
   let s = m.Fj[e];
-  if (null != s.devSettingKey && o.ZP.get(s.devSettingKey)) return !0;
+  if (null != s.devSettingKey && o.ZP.get(s.devSettingKey)) returntrue;
   switch (t.type) {
     case p.l.Embed:
       return (0, f.yE)(null != (n = t.media.flags) ? n : 0, s.embedFlag);
     case p.l.Attachment:
       return (0, f.yE)(null != (r = t.media.flags) ? r : 0, s.attachmentFlag);
     case p.l.GenericMedia:
-      return (0, f.yE)(null != (a = null == (i = t.media.contentScanMetadata) ? void 0 : i.flags) ? a : 0, s.genericMediaFlag);
+      return (0, f.yE)(null != (a = null == (i = t.media.contentScanMetadata) ? true : i.flags) ? a : 0, s.genericMediaFlag);
     default:
-      return !1
+      returnfalse
   }
 }
 
@@ -201,7 +202,7 @@ function D(e) {
 }
 
 function L(e, t) {
-  let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : [l.Z, u.Z],
+  let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : [l.Z, u.Z],
     [r, i] = n,
     o = r.getChannel(e),
     a = d.default.getCurrentUser();
@@ -213,7 +214,7 @@ function x(e, t) {
   return !(0 === t.length || null == e || 0 === t.filter(t => !P(t, {
     type: p.l.Embed,
     media: e
-  })).length || "video" in e && null != e.video && (null == (n = e.video) ? void 0 : n.width) === 0 && (null == (r = e.video) ? void 0 : r.height) === 0 || "thumbnail" in e && null != e.thumbnail && (null == (i = e.thumbnail) ? void 0 : i.width) === 0 && (null == (o = e.thumbnail) ? void 0 : o.height) === 0 || "image" in e && null != e.image && (null == (a = e.image) ? void 0 : a.width) === 0 && (null == (s = e.image) ? void 0 : s.height) === 0 || "images" in e && (null == (l = e.images) ? void 0 : l.some(e => null != e && 0 === e.width && 0 === e.height))) && j(B(e), t)
+  })).length || "video" in e && null != e.video && (null == (n = e.video) ? true : n.width) === 0 && (null == (r = e.video) ? true : r.height) === 0 || "thumbnail" in e && null != e.thumbnail && (null == (i = e.thumbnail) ? true : i.width) === 0 && (null == (o = e.thumbnail) ? true : o.height) === 0 || "image" in e && null != e.image && (null == (a = e.image) ? true : a.width) === 0 && (null == (s = e.image) ? true : s.height) === 0 || "images" in e && (null == (l = e.images) ? true : l.some(e => null != e && 0 === e.width && 0 === e.height))) && j(B(e), t)
 }
 
 function M(e, t) {
@@ -229,7 +230,7 @@ function k(e, t) {
   return 0 !== t.length && 0 !== t.filter(t => !P(t, {
     type: p.l.GenericMedia,
     media: e
-  })).length && j(null == (n = e.contentScanMetadata) ? void 0 : n.version, t)
+  })).length && j(null == (n = e.contentScanMetadata) ? true : n.version, t)
 }
 
 function j(e, t) {
@@ -251,8 +252,8 @@ function G(e) {
   };
   if ("channel_id" in e && (r = e.channel_id), "messageReference" in e && (0, a.Z)(e) && null != e.messageReference) {
     let n = c.Z.getMessage(e.messageReference.channel_id, e.messageReference.message_id);
-    null != n && (i = null == (t = n.author) ? void 0 : t.id)
-  } else "author" in e ? i = null == (n = e.author) ? void 0 : n.id : "author_id" in e && (i = e.author_id);
+    null != n && (i = null == (t = n.author) ? true : t.id)
+  } else "author" in e ? i = null == (n = e.author) ? true : n.id : "author_id" in e && (i = e.author_id);
   return {
     channelId: r,
     authorId: i

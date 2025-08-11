@@ -1,1 +1,0 @@
-{"id":"19790","type":"experiment","data":{"id":"2025-07_custom_theme_mobile_rendering","kind":"user","label":"Custom Theme Mobile Rendering","defaultConfig":{"enabled":false},"commonTriggerPoint":"i.$P.CONNECTION_OPEN","treatments":[{"id":1,"label":"Enables custom theme rendering on mobile","config":{"enabled":false}}]},"fromModule":{"id":"web.js"}}

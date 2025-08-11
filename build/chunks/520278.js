@@ -1,5 +1,6 @@
 /** Chunk was on 27458 **/
-r.d(t, {
+/** chunk id: 520278, original params: e,t,r (module,exports,require) **/
+require.d(exports, {
   J: () => n
 });
 
@@ -9,7 +10,7 @@ function n(e, t, r, n) {
   } = e.useExperiment({
     location: n
   }, {
-    autoTrackExposure: !1
+    autoTrackExposure: false
   });
   return !!r.config.features.includes(t) && (e.trackExposure({
     location: n

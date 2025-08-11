@@ -1,23 +1,24 @@
 /** Chunk was on 9343 **/
-n.d(t, {
+/** chunk id: 393869, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   i: () => i,
   w: () => l
 });
-var s = n(990547),
-  a = n(573261),
-  r = n(981631);
+var Chunk990547 = require("./990547.js"),
+  Chunk573261 = require("./573261.js"),
+  Chunk981631 = require("./981631.js");
 
 function i() {
-  let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
-  return a.Z.put({
-    url: r.ANM.USER_EMAIL,
+  let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
+  return Chunk573261.Z.put({
+    url: Chunk981631.ANM.USER_EMAIL,
     trackedActionData: {
-      event: s.NetworkActionNames.USER_ACCOUNT_EMAIL_CHANGE_SEND_CODE,
+      event: Chunk990547.NetworkActionNames.USER_ACCOUNT_EMAIL_CHANGE_SEND_CODE,
       properties: {
-        is_resend: e
+        is_resend: module
       }
     },
-    rejectWithError: !1
+    rejectWithError: false
   })
 }
 async function l(e) {
@@ -29,6 +30,6 @@ async function l(e) {
     trackedActionData: {
       event: s.NetworkActionNames.USER_ACCOUNT_EMAIL_CHANGE_VERIFY_CODE
     },
-    rejectWithError: !1
+    rejectWithError: false
   })).body
 }

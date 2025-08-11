@@ -1,5 +1,6 @@
 /** Chunk was on web.js **/
-e.exports = function(e) {
+/** chunk id: 792465, original params: e (module,exports,re quire) **/
+module.exports = function(e) {
   let t = e.regex,
     n = /(?![A-Za-z0-9])(?![$])/,
     r = t.concat(/[a-zA-Z_\x7f-\xff][a-zA-Z0-9_\x7f-\xff]*/, n),
@@ -174,7 +175,7 @@ e.exports = function(e) {
       }]
     };
   return {
-    case_insensitive: !1,
+    case_insensitive: false,
     keywords: b,
     contains: [C, e.HASH_COMMENT_MODE, e.COMMENT("//", "$"), e.COMMENT("/\\*", "\\*/", {
       contains: [{
@@ -190,7 +191,7 @@ e.exports = function(e) {
         contains: [{
           match: /\?>/,
           scope: "meta",
-          endsParent: !0
+          endsParent: true
         }]
       }
     }, s, {
@@ -207,19 +208,19 @@ e.exports = function(e) {
       relevance: 0,
       beginKeywords: "fn function",
       end: /[;{]/,
-      excludeEnd: !0,
+      excludeEnd: true,
       illegal: "[$%\\[]",
       contains: [{
         beginKeywords: "use"
       }, e.UNDERSCORE_TITLE_MODE, {
         begin: "=>",
-        endsParent: !0
+        endsParent: true
       }, {
         scope: "params",
         begin: "\\(",
         end: "\\)",
-        excludeBegin: !0,
-        excludeEnd: !0,
+        excludeBegin: true,
+        excludeEnd: true,
         keywords: b,
         contains: ["self", C, a, I, e.C_BLOCK_COMMENT_MODE, p, h]
       }]
@@ -234,7 +235,7 @@ e.exports = function(e) {
       }],
       relevance: 0,
       end: /\{/,
-      excludeEnd: !0,
+      excludeEnd: true,
       contains: [{
         beginKeywords: "extends implements"
       }, e.UNDERSCORE_TITLE_MODE]

@@ -1,37 +1,38 @@
 /** Chunk was on web.js **/
+/** chunk id: 868158, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Eb: () => D,
   Fx: () => M,
   IM: () => L,
   J2: () => Z,
   r$: () => w
-}), n(539854), n(388685), n(415506);
-var r = n(512722),
-  i = n.n(r),
-  o = n(392711),
-  a = n.n(o),
-  s = n(287328),
-  l = n(406966),
-  c = n(795513),
-  u = n(591526),
-  d = n(261875),
-  f = n(768433),
-  _ = n(710845),
-  p = n(339085),
-  h = n(926491),
-  m = n(131704),
-  g = n(485386),
-  E = n(430824),
-  b = n(411198),
-  y = n(625137);
+}), require("./539854.js"), require("./388685.js"), require("./415506.js");
+var Chunk512722 = require("./512722.js"),
+  i = require.n(Chunk512722),
+  Chunk392711 = require("./392711.js"),
+  a = require.n(Chunk392711),
+  Chunk287328 = require("./287328.js"),
+  Chunk406966 = require("./406966.js"),
+  Chunk795513 = require("./795513.js"),
+  Chunk591526 = require("./591526.js"),
+  Chunk261875 = require("./261875.js"),
+  Chunk768433 = require("./768433.js"),
+  Chunk710845 = require("./710845.js"),
+  Chunk339085 = require("./339085.js"),
+  Chunk926491 = require("./926491.js"),
+  Chunk131704 = require("./131704.js"),
+  Chunk485386 = require("./485386.js"),
+  Chunk430824 = require("./430824.js"),
+  Chunk411198 = require("./411198.js"),
+  Chunk625137 = require("./625137.js");
 
 function O(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -82,7 +83,7 @@ function A(e, t) {
   for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let N = new _.Z("ReadyPayloadUtils"),
+let N = new Chunk710845.Z("ReadyPayloadUtils"),
   C = {},
   R = null,
   P = {};
@@ -94,12 +95,12 @@ function w(e, t) {
       merged_presences: o
     } = e,
     a = S(e, ["guilds", "merged_members", "merged_presences"]);
-  let s = k(P, null == o ? void 0 : o.friends),
-    l = null != (n = null == r ? void 0 : r.map((e, t) => {
-      let n = k(P, null == o ? void 0 : o.guilds[t]),
-        r = k(P, null == i ? void 0 : i[t]);
+  let s = k(P, null == o ? true : o.friends),
+    l = null != (n = null == r ? true : r.map((e, t) => {
+      let n = k(P, null == o ? true : o.guilds[t]),
+        r = k(P, null == i ? true : i[t]);
       return T(v({}, e), {
-        unavailable: void 0 === e.voice_states,
+        unavailable: true === e.voice_states,
         presences: n,
         members: r
       })
@@ -110,7 +111,7 @@ function w(e, t) {
       presences: e.presences,
       activity_instances: e.activity_instances,
       voice_states: e.voice_states,
-      unavailable: !1
+      unavailable: false
     }));
   return null != c && l.push(c), P = {}, T(v({}, a), {
     presences: s,
@@ -119,9 +120,9 @@ function w(e, t) {
 }
 
 function D() {
-  let e = s.Z.database(),
-    t = (0, f.O)() ? l.Z.getCommittedVersions() : Promise.resolve({});
-  return Promise.all([t, (0, f.O)() ? u.Z.getGuildIds() : Promise.resolve(new Set), null != e ? c.Z.okAsync(e) : Promise.resolve(!1)]).then(e => {
+  let e = Chunk287328.Z.database(),
+    t = (0, Chunk768433.O)() ? Chunk406966.Z.getCommittedVersions() : Promise.resolve({});
+  return Promise.all([exports, (0, Chunk768433.O)() ? Chunk591526.Z.getGuildIds() : Promise.resolve(new Set), null != module ? Chunk795513.Z.okAsync(module) : Promise.resolve(false)]).then(e => {
     let [t, n, r] = e;
     return {
       guildVersions: t,
@@ -146,7 +147,7 @@ function L(e, t, n) {
     let t = e.recipient_ids;
     null != t && (e.recipients = t.map(e => (i()(null != P[e], "Missing user in compressed ready payload"), P[e]))), delete e.recipient_ids
   });
-  let _ = null != (r = null == u ? void 0 : u.map((e, t) => !0 === e.unavailable ? e : (e.members = k(P, null == c ? void 0 : c[t]), B(e)))) ? r : [],
+  let _ = null != (r = null == u ? true : u.map((e, t) => true === e.unavailable ? e : (e.members = k(P, null == c ? true : c[t]), B(e)))) ? r : [],
     p = x(t, u, e => B(e));
   return null != p && _.push(p), T(v({}, d), {
     users: o,
@@ -164,10 +165,10 @@ function x(e, t, n) {
 function M(e, t) {
   var n, r, i;
   let o = E.Z.getGuild(e.id),
-    a = Z(e, null == o ? void 0 : {
+    a = Z(e, null == o ? true : {
       properties: b.dS(o),
       roles: g.Z.getRolesSnapshot(o.id),
-      emojis: null != (r = null == (n = p.ZP.getGuilds()[o.id]) ? void 0 : n.rawEmojis) ? r : null,
+      emojis: null != (r = null == (n = p.ZP.getGuilds()[o.id]) ? true : n.rawEmojis) ? r : null,
       stickers: null != (i = h.Z.getRawStickersByGuild().get(o.id)) ? i : null
     });
   return R = {
@@ -191,7 +192,7 @@ function j(e) {
 }
 
 function U(e) {
-  null != s.Z.database() && !1 === e.databaseOk && d.Z.replaceDisableAllDatabases("ReadyPayloadUtils: database was not ok"), C = {};
+  null != s.Z.database() && false === e.databaseOk && d.Z.replaceDisableAllDatabases("ReadyPayloadUtils: database was not ok"), C = {};
   let t = E.Z.getGuildsArray(),
     n = p.ZP.getGuilds(),
     r = h.Z.getRawStickersByGuild();
@@ -200,7 +201,7 @@ function U(e) {
     s.id in e.guildVersions && e.guildChannels.has(s.id) && (C[s.id] = {
       properties: b.dS(s),
       roles: g.Z.getRolesSnapshot(s.id),
-      emojis: null != (o = null == (i = n[s.id]) ? void 0 : i.rawEmojis) ? o : null,
+      emojis: null != (o = null == (i = n[s.id]) ? true : i.rawEmojis) ? o : null,
       stickers: null != (a = r.get(s.id)) ? a : null
     })
   }
@@ -245,7 +246,7 @@ function B(e) {
       op: "full_sync",
       items: e.stickers
     },
-    threads: null != (i = null == (r = e.threads) ? void 0 : r.map(t => (0, m.q_)(t, e.id))) ? i : [],
+    threads: null != (i = null == (r = e.threads) ? true : r.map(t => (0, m.q_)(t, e.id))) ? i : [],
     threadMessages: F(e.threads),
     channels: {
       op: "full_sync",
@@ -260,7 +261,7 @@ function B(e) {
     dataMode: e.data_mode,
     channels: {
       op: "update",
-      writes: null != (o = null == (t = e.partial_updates.channels) ? void 0 : t.map(t => (0, m.q_)(t, e.id))) ? o : [],
+      writes: null != (o = null == (t = e.partial_updates.channels) ? true : t.map(t => (0, m.q_)(t, e.id))) ? o : [],
       deletes: null != (a = e.partial_updates.deleted_channel_ids) ? a : []
     },
     channelTimestampUpdates: e.channel_updates,
@@ -276,7 +277,7 @@ function B(e) {
     stage_instances: e.stage_instances,
     stickers: G(c.stickers, e.partial_updates.stickers, e.partial_updates.deleted_sticker_ids),
     unableToSyncDeletes: e.unable_to_sync_deletes,
-    threads: null != (l = null == (n = e.threads) ? void 0 : n.map(t => (0, m.q_)(t, e.id))) ? l : [],
+    threads: null != (l = null == (n = e.threads) ? true : n.map(t => (0, m.q_)(t, e.id))) ? l : [],
     threadMessages: F(e.threads),
     version: e.version,
     hasThreadsSubscription: e.has_threads_subscription
@@ -296,7 +297,7 @@ function Z(e, t) {
     properties: e.properties,
     roles: e.roles,
     stage_instances: e.stage_instances,
-    threads: null != (o = null == (i = e.threads) ? void 0 : i.map(t => (0, m.q_)(t, e.id))) ? o : [],
+    threads: null != (o = null == (i = e.threads) ? true : i.map(t => (0, m.q_)(t, e.id))) ? o : [],
     threadMessages: F(e.threads),
     presences: e.presences,
     activity_instances: e.activity_instances,
@@ -321,7 +322,7 @@ function Z(e, t) {
     id: e.id,
     channels: {
       op: "update",
-      writes: null != (a = null == (n = e.partial_updates.channels) ? void 0 : n.map(t => (0, m.q_)(t, e.id))) ? a : [],
+      writes: null != (a = null == (n = e.partial_updates.channels) ? true : n.map(t => (0, m.q_)(t, e.id))) ? a : [],
       deletes: null != (s = e.partial_updates.deleted_channel_ids) ? s : []
     },
     channelTimestampUpdates: e.channel_updates,
@@ -339,7 +340,7 @@ function Z(e, t) {
     stage_instances: e.stage_instances,
     stickers: G(t.stickers, e.partial_updates.stickers, e.partial_updates.deleted_sticker_ids),
     unableToSyncDeletes: e.unable_to_sync_deletes,
-    threads: null != (c = null == (r = e.threads) ? void 0 : r.map(t => (0, m.q_)(t, e.id))) ? c : [],
+    threads: null != (c = null == (r = e.threads) ? true : r.map(t => (0, m.q_)(t, e.id))) ? c : [],
     threadMessages: F(e.threads),
     voice_states: e.voice_states,
     version: e.version,

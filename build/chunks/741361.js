@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 741361, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Aj: () => s,
   S1: () => c,
   d$: () => l,
@@ -8,12 +9,12 @@ n.d(t, {
   kU: () => d,
   kY: () => a
 });
-var r = n(570140),
-  i = n(156699),
-  o = n(493683);
+var Chunk570140 = require("./570140.js"),
+  Chunk156699 = require("./156699.js"),
+  Chunk493683 = require("./493683.js");
 async function a(e, t, n, o) {
   let a = e.getGuildId();
-  if (null != a && t === a && !await (0, i.u)(e, o, n)) return !1;
+  if (null != a && t === a && !await (0, i.u)(e, o, n)) returnfalse;
   r.Z.dispatch({
     type: "CHANNEL_SETTINGS_PERMISSIONS_UPDATE_PERMISSION",
     id: t,
@@ -37,7 +38,7 @@ function l(e) {
 }
 
 function c() {
-  r.Z.dispatch({
+  Chunk570140.Z.dispatch({
     type: "CHANNEL_SETTINGS_PERMISSIONS_INIT"
   })
 }

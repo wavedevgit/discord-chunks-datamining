@@ -1,11 +1,12 @@
 /** Chunk was on web.js **/
-e.exports = function(e) {
+/** chunk id: 726109, original params: e (module,exports,re quire) **/
+module.exports = function(e) {
   let t = "\\[",
     n = "\\]";
   return {
     name: "Inform 7",
     aliases: ["i7"],
-    case_insensitive: !0,
+    case_insensitive: true,
     keywords: {
       keyword: "thing room person man woman animal container supporter backdrop door scenery open closed locked inside gender is are say understand kind of rule"
     },

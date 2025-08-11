@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 471356, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-let r = n(423906);
+let Chunk423906 = require("./423906.js");
 class i extends Error {
   constructor(e) {
     super(e), this.name = "TimeoutError"
@@ -26,4 +27,4 @@ let o = (e, t, n) => new Promise((o, a) => {
     clearTimeout(s)
   })
 });
-e.exports = o, e.exports.default = o, e.exports.TimeoutError = i
+module.exports = o, module.exports.default = o, module.exports.TimeoutError = i

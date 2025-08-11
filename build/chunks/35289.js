@@ -1,5 +1,6 @@
 /** Chunk was on 87626 **/
-a.r(e.exports = {
+/** chunk id: 35289, original params: e,t,a (module,exports,require) **/
+require.r(module.exports = {
   header: "header__659bf",
   headerInner: "headerInner__659bf",
   hamburgerButton: "hamburgerButton__659bf",

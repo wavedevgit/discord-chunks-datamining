@@ -1,9 +1,10 @@
 /** Chunk was on 58023 **/
-n.d(t, {
+/** chunk id: 356685, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   X: () => i
 });
-var r = n(544891),
-  l = n(981631);
+var Chunk544891 = require("./544891.js"),
+  Chunk981631 = require("./981631.js");
 async function i(e, t, n) {
   return (await r.tn.get({
     url: l.ANM.DIRECTORY_ENTRIES_BROADCAST_INFO(e),
@@ -11,6 +12,6 @@ async function i(e, t, n) {
       type: t,
       entity_id: n
     },
-    rejectWithError: !1
+    rejectWithError: false
   })).body
 }

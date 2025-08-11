@@ -1,12 +1,13 @@
 /** Chunk was on web.js **/
+/** chunk id: 658041, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   M: () => s
 });
-var r = n(913527),
-  i = n.n(r),
-  o = n(709054),
-  a = n(765305);
+var Chunk913527 = require("./913527.js"),
+  i = require.n(Chunk913527),
+  Chunk709054 = require("./709054.js"),
+  Chunk765305 = require("./765305.js");
 
 function s(e, t, n, r) {
   let s = i()(),
@@ -20,7 +21,7 @@ function s(e, t, n, r) {
       let e = i()(t),
         n = e.isBetween(c.start, c.end),
         o = e.isBetween(i()(l).subtract(a.zV, "days"), l);
-      return n || o && !r ? void 0 : a.X_.EVENT_STARTING_SOON
+      return n || o && !r ? true : a.X_.EVENT_STARTING_SOON
     }
     return a.X_.EVENT_STARTING_SOON
   }

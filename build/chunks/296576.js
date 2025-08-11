@@ -1,5 +1,6 @@
 /** Chunk was on 75708 **/
-e.exports = {
+/** chunk id: 296576, original params: e,t,n (module,exports,require) **/
+module.exports = {
   labelSpacing: "labelSpacing__5f04d",
   applyChangesButton: "applyChangesButton__5f04d",
   markdown: "markdown__5f04d",

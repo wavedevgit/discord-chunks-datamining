@@ -1,11 +1,12 @@
 /** Chunk was on web.js **/
+/** chunk id: 533379, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   R: () => a
 });
-var r = n(442837),
-  i = n(998698),
-  o = n(873387);
+var Chunk442837 = require("./442837.js"),
+  Chunk998698 = require("./998698.js"),
+  Chunk873387 = require("./873387.js");
 
 function a(e) {
   let {
@@ -16,7 +17,7 @@ function a(e) {
   } = (0, r.cj)([i.Z], () => {
     var e;
     return {
-      activeCommand: (null == (e = n.commands) ? void 0 : e.enabled) ? i.Z.getActiveCommand(t.id) : null
+      activeCommand: (null == (e = n.commands) ? true : e.enabled) ? i.Z.getActiveCommand(t.id) : null
     }
   });
   return null == s && a

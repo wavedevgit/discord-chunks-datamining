@@ -1,5 +1,6 @@
 /** Chunk was on 1272 **/
-e.exports = {
+/** chunk id: 87671, original params: e,t,n (module,exports,require) **/
+module.exports = {
   container: "container__955a3",
   dragRegion: "dragRegion__955a3",
   bannerAsset: "bannerAsset__955a3",

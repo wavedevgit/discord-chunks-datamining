@@ -1,16 +1,17 @@
 /** Chunk was on web.js **/
+/** chunk id: 738774, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Ol: () => l,
   Q6: () => c,
   cu: () => u,
   m8: () => d,
   uq: () => s
 });
-var r = n(289393),
-  i = n(430824),
-  o = n(308636),
-  a = n(981631);
+var Chunk289393 = require("./289393.js"),
+  Chunk430824 = require("./430824.js"),
+  Chunk308636 = require("./308636.js"),
+  Chunk981631 = require("./981631.js");
 
 function s(e) {
   return null != e && e.includes(o.o.NEW_PURCHASES_DISABLED)
@@ -18,11 +19,11 @@ function s(e) {
 
 function l(e) {
   var t;
-  if (null == e) return !1;
+  if (null == e) returnfalse;
   let n = r.Z.getMonetizationRestrictionsFetchState(e),
     o = r.Z.getMonetizationRestrictions(e),
     l = i.Z.getGuild(e);
-  return n === r.M.FETCHED ? s(o) : null == (t = null == l ? void 0 : l.features.has(a.oNc.CREATOR_MONETIZABLE_RESTRICTED)) || t
+  return n === r.M.FETCHED ? s(o) : null == (t = null == l ? true : l.features.has(a.oNc.CREATOR_MONETIZABLE_RESTRICTED)) || t
 }
 
 function c(e) {
@@ -31,11 +32,11 @@ function c(e) {
 
 function u(e) {
   var t;
-  if (null == e) return !1;
+  if (null == e) returnfalse;
   let n = r.Z.getMonetizationRestrictionsFetchState(e),
     o = r.Z.getMonetizationRestrictions(e),
     s = i.Z.getGuild(e);
-  return n === r.M.FETCHED ? c(o) : null == (t = null == s ? void 0 : s.features.has(a.oNc.CREATOR_MONETIZABLE_RESTRICTED)) || t
+  return n === r.M.FETCHED ? c(o) : null == (t = null == s ? true : s.features.has(a.oNc.CREATOR_MONETIZABLE_RESTRICTED)) || t
 }
 
 function d(e) {

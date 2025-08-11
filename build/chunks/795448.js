@@ -1,15 +1,16 @@
 /** Chunk was on web.js **/
+/** chunk id: 795448, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Gk: () => s,
   Ni: () => a,
   PV: () => o,
   d$: () => i
 });
-var r = n(570140);
+var Chunk570140 = require("./570140.js");
 
 function i() {
-  r.Z.dispatch({
+  Chunk570140.Z.dispatch({
     type: "FRIENDS_LIST_GIFT_INTENTS_SHOWN"
   })
 }
@@ -29,7 +30,7 @@ function a(e) {
 }
 
 function s() {
-  r.Z.dispatch({
+  Chunk570140.Z.dispatch({
     type: "FRIENDS_TAB_BADGE_DISMISS"
   })
 }

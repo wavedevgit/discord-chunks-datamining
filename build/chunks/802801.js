@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 802801, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n(42547), e.exports = function(e, t) {
+require("./42547.js"), module.exports = function(e, t) {
   var n, r = e.getSelection(),
     i = r.getStartKey(),
     o = r.getStartOffset(),

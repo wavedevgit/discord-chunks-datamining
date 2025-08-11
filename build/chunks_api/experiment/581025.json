@@ -1,1 +1,0 @@
-{"id":"581025","type":"experiment","data":{"kind":"user","id":"2024-09_friend_anniversaries_metrics","label":"Friend Anniversaries Metrics","defaultConfig":{"enabled":false},"treatments":[{"id":1,"label":"Friend anniversaries metrics enabled","config":{"enabled":false}}]},"fromModule":{"id":"web.js"}}

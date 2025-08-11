@@ -1,15 +1,16 @@
 /** Chunk was on web.js **/
+/** chunk id: 806729, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => u
-}), n(388685), n(467055);
-var r = n(73800),
-  i = n(392711),
-  o = n(442837),
-  a = n(699682),
-  s = n(752048),
-  l = n(771845),
-  c = n(621853);
+}), require("./388685.js"), require("./467055.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk392711 = require("./392711.js"),
+  Chunk442837 = require("./442837.js"),
+  Chunk699682 = require("./699682.js"),
+  Chunk752048 = require("./752048.js"),
+  Chunk771845 = require("./771845.js"),
+  Chunk621853 = require("./621853.js");
 
 function u(e) {
   let [t, n, u, d, f] = (0, o.Wu)([c.Z], () => [c.Z.getMutualFriendsCount(e.id), c.Z.getMutualFriends(e.id), c.Z.getMutualGuilds(e.id), c.Z.isFetchingProfile(e.id), c.Z.isFetchingFriends(e.id)]), _ = (0, o.e7)([s.Z], () => s.Z.getUserAffinitiesMap()), p = (0, o.e7)([l.ZP], () => l.ZP.getFlattenedGuildIds()), h = (0, r.useMemo)(() => null == n || n.length < 2 ? n : (0, i.sortBy)(n, e => {
@@ -17,7 +18,7 @@ function u(e) {
     let {
       user: r
     } = e;
-    return -((null != (n = null == (t = _.get(r.id)) ? void 0 : t.communicationProbability) ? n : -1) * 1)
+    return -((null != (n = null == (t = _.get(r.id)) ? true : t.communicationProbability) ? n : false) * 1)
   }), [n, _]), m = (0, r.useMemo)(() => {
     if (null == u || u.length < 2) return u;
     let e = Object.fromEntries(p.map((e, t) => [e, t]));

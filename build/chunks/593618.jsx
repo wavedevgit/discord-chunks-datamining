@@ -1,0 +1,248 @@
+/** Chunk was on web.js **/
+/** chunk id: 593618, original params: e,t,n (module,exports,re quire) **/
+"use strict";
+require.d(exports, {
+  K: () => z,
+  Z: () => q
+}), require("./361932.js"), require("./187205.js"), require("./388685.js");
+var Chunk255367 = require("./255367.js"),
+  Chunk73800 = require("./73800.js"),
+  Chunk120356 = require("./120356.js"),
+  a = require.n(Chunk120356),
+  Chunk392711 = require("./392711.js"),
+  l = require.n(Chunk392711),
+  Chunk442837 = require("./442837.js"),
+  Chunk481060 = require("./481060.js"),
+  Chunk456100 = require("./456100.js"),
+  Chunk317381 = require("./317381.js"),
+  Chunk884338 = require("./884338.js"),
+  Chunk470883 = require("./470883.js"),
+  Chunk666188 = require("./666188.js"),
+  Chunk372769 = require("./372769.jsx"),
+  Chunk523751 = require("./523751.jsx"),
+  Chunk246364 = require("./246364.js"),
+  Chunk746916 = require("./746916.js"),
+  Chunk965638 = require("./965638.js"),
+  Chunk160404 = require("./160404.js"),
+  Chunk777861 = require("./777861.js"),
+  Chunk565799 = require("./565799.js"),
+  Chunk501655 = require("./501655.js"),
+  Chunk517334 = require("./517334.js"),
+  Chunk344185 = require("./344185.js"),
+  Chunk199902 = require("./199902.js"),
+  Chunk984933 = require("./984933.js"),
+  Chunk699516 = require("./699516.js"),
+  Chunk9156 = require("./9156.js"),
+  Chunk594174 = require("./594174.js"),
+  Chunk938475 = require("./938475.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk388032 = require("./388032.jsx"),
+  Chunk714509 = require("./714509.js"),
+  Chunk375613 = require("./375613.js");
+
+function j(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+
+function U(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      j(e, t, n[t])
+    })
+  }
+  return e
+}
+
+function G(e, t) {
+  if (null == e) return {};
+  var n, r, i = B(e, t);
+  if (Object.getOwnPropertySymbols) {
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+  }
+  return i
+}
+
+function B(e, t) {
+  if (null == e) return {};
+  var n, r, i = {},
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+  return i
+}
+
+function Z(e) {
+  let t = e.id,
+    n = (0, c.Wu)([C.ZP, A.Z], () => [...C.ZP.getChannels(t)[C.Zb].filter(e => {
+      let {
+        channel: t
+      } = e;
+      return t.type === L.d4z.GUILD_VOICE
+    }).map(e => {
+      let {
+        channel: t
+      } = e;
+      return t.id
+    }), ...Object.values(A.Z.getThreadsForGuild(t)).flatMap(e => Object.keys(e))], [t]),
+    r = (0, S.ZP)(t),
+    o = i.useMemo(() => r.map(e => e.id), [r]),
+    a = (0, c.e7)([D.ZP], () => D.ZP.getVoiceStates(t), [t]),
+    s = (0, c.Wu)([R.Z], () => R.Z.getBlockedOrIgnoredIDs()),
+    u = l().flatMap(n, t => {
+      var n;
+      if (t === e.afkChannelId) return [];
+      let r = (null != (n = a[t]) ? n : []).map(e => {
+        let {
+          user: t
+        } = e;
+        return t
+      });
+      return (0, p.dq)(r, s)
+    }),
+    d = (0, c.Wu)([I.Z], () => l().flatMap(o, t => {
+      if (t === e.afkChannelId) return [];
+      let n = I.Z.getMutableParticipants(t, T.pV.SPEAKER).filter(e => e.type === T.Ui.VOICE).map(e => {
+        let {
+          user: t
+        } = e;
+        return t
+      });
+      return (0, p.dq)(n, s)
+    })),
+    _ = (0, c.e7)([I.Z], () => {
+      let e = 0;
+      for (let t of o) e += I.Z.getParticipantCount(t, T.pV.AUDIENCE);
+      return e
+    }),
+    h = (0, c.Wu)([N.Z], () => {
+      let e = N.Z.getAllApplicationStreams().filter(e => e.guildId === t).map(e => e.ownerId);
+      return (0, p._j)(e, s)
+    }, [s, t]),
+    m = (0, c.Wu)([f.ZP], () => {
+      let e = f.ZP.getEmbeddedActivitiesForGuild(t).flatMap(e => Array.from(e.userIds));
+      return (0, p._j)(e, s)
+    }, [t, s]),
+    g = (0, c.Wu)([w.default], () => {
+      let e = m.map(e => w.default.getUser(e));
+      return (0, p.dq)(e)
+    }, [m]),
+    E = (0, c.Wu)([w.default], () => h.map(e => w.default.getUser(e)), [h]),
+    b = u.filter(e => !h.includes(e.id) && !m.includes(e.id)),
+    y = (0, p.dq)(b),
+    O = E.filter(e => null != e && !m.includes(e.id)),
+    v = d.length > 0 || b.length > 0 || O.length > 0 || g.length > 0;
+  return {
+    voiceUsersToShow: y,
+    stageSpeakers: d,
+    numStageListeners: _,
+    streamUsersToShow: O,
+    embeddedActivitiesUsers: g,
+    hasActivity: v
+  }
+}
+
+function F(e, t, n) {
+  return 0 === t.length ? null : <div className={M.row}>{<e className={M.activityIcon} color={"currentColor"} />}{<_.ZP guildId={n} users={t} max={6} />}</div>
+}
+
+function V(e, t, n) {
+  return 0 === t.length ? null : <div className={M.row}>{<u.ewx size={"lg"} color={"currentColor"} className={M.activityIcon} />}{<_.ZP guildId={e} users={t} max={3} />}{<div className={M.stageListenerPill}>{<u.VWR size={"xs"} color={"currentColor"} />}{<u.Text className={M.stageListenerCount} color={"text-default"} variant={"text-xs/normal"}>{n}</u.Text>}</div>}</div>
+}
+
+function H(e) {
+  let {
+    muteConfig: t,
+    className: n
+  } = e;
+  return (null == t ? true : t.end_time) == null ? <u.Text variant={"text-xs/normal"} color={"text-muted"} className={n}>{x.intl.string(x.t.fpKdS0)}</u.Text> : <v.Z muteConfig={t} className={n} />
+}
+
+function Y(e) {
+  let {
+    guild: t
+  } = e, n = t.id, {
+    enabled: i
+  } = d.c.useExperiment({
+    location: "GuildTooltip"
+  }, {
+    autoTrackExposure: true
+  }), {
+    voiceUsersToShow: o,
+    stageSpeakers: s,
+    numStageListeners: l,
+    streamUsersToShow: f,
+    embeddedActivitiesUsers: _
+  } = Z(t), p = F(u.gj8, o, n), h = V(n, s, l), m = F(u.hGI, f, n), g = F(i ? u.iWm : u.nG3, _, n), {
+    isMuted: E,
+    muteConfig: b
+  } = (0, c.cj)([P.ZP], () => ({
+    isMuted: P.ZP.isMuted(n),
+    muteConfig: P.ZP.getMuteConfig(n)
+  }), [n]), y = null != p || null != m;
+  return <r.Fragment>{h}{p}{m}{g}{E ? <H muteConfig={b} className={a()(M.muteText, {
+        [M.muteTextWithActivity]: y
+      })} /> : null}</r.Fragment>
+}
+
+function W(e) {
+  switch (e) {
+    case E.wB.SUBMITTED:
+      return x.intl.string(x.t["9KFC9/"]);
+    case E.wB.REJECTED:
+      return x.intl.string(x.t["TQY/RU"]);
+    case E.wB.APPROVED:
+      return x.intl.string(x.t.WXHcq6);
+    default:
+      return x.intl.string(x.t.fjHFCw)
+  }
+}
+
+function K(e) {
+  let {
+    guildJoinRequestStatus: t
+  } = e;
+  return <u.Text className={M.viewAsRolesWarning} color={"text-default"} variant={"text-xs/normal"}>{W(t)}</u.Text>
+}
+
+function z(e) {
+  let {
+    guild: t,
+    includeActivity: n = true
+  } = e, i = (0, h.Z)(t), o = (0, b.E)(t), s = null != o ? <K guildJoinRequestStatus={o} /> : null, l = n ? <Y guild={t} /> : null, d = (0, c.e7)([O.Z], () => O.Z.isViewingRoles(t.id)), f = null != s ? s : l, _ = (0, y.Ij)(t);
+  return <r.Fragment>{<div className={a()(M.row, M.rowGuildName)}>{i ? <g.Z guild={t} className={M.rowIconV2} /> : <m.Z guild={t} size={20} className={M.rowIcon} />}{<span className={a()(M.guildNameText, {
+          [M.guildNameTextLimitedSize]: null != l
+        })}>{t.name}</span>}</div>}{_ ? <u.Text className={M.invitesDisabledTooltip} color={"header-secondary"} variant={"text-sm/medium"}>{x.intl.string(x.t["2n0/Fh"])}</u.Text> : null}{d ? <u.Text className={M.viewAsRolesWarning} color={"text-default"} variant={"text-xs/normal"}>{x.intl.string(x.t["5LwN8/"])}</u.Text> : f}</r.Fragment>
+}
+
+function q(e) {
+  let {
+    guild: t,
+    disabled: n = false,
+    "aria-label": o = false,
+    children: a,
+    includeActivity: s = true
+  } = e;
+  return <u.ua7 hideOnClick={true} spacing={12} position={"right"} text={n ? null : (0, r.jsx)(z, {
+      guild: t,
+      includeActivity: s
+    })} aria-label={o} tooltipClassName={k.listItemTooltip} tooltipContentClassName={k.listItemTooltipContent}>{e => {
+      var {
+        onFocus: t,
+        onBlur: n
+      } = e, o = G(e, ["onFocus", "onBlur"]);
+      return (0, r.jsx)("div", {
+        onFocus: t,
+        onBlur: n,
+        children: i.cloneElement(i.Children.only(a), U({}, o))
+      })
+    }}</u.ua7>
+}

@@ -1,31 +1,32 @@
 /** Chunk was on web.js **/
+/** chunk id: 997383, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => S
-}), n(388685), n(704826), n(35282), n(781311), n(457542), n(539854), n(190126), n(368063), n(65234), n(111804), n(490233), n(97749), n(642613);
-var r = n(392711),
-  i = n.n(r),
-  o = n(159635),
-  a = n.n(o),
-  s = n(159299),
-  l = n(675478),
-  c = n(709302),
-  u = n(984933),
-  d = n(699516),
-  f = n(594174),
-  _ = n(483360),
-  p = n(892880),
-  h = n(591759),
-  m = n(279779),
-  g = n(620490),
-  E = n(727785);
+}), require("./388685.js"), require("./704826.js"), require("./35282.js"), require("./781311.js"), require("./457542.js"), require("./539854.js"), require("./190126.js"), require("./368063.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js"), require("./642613.js");
+var Chunk392711 = require("./392711.js"),
+  i = require.n(Chunk392711),
+  Chunk159635 = require("./159635.js"),
+  a = require.n(Chunk159635),
+  Chunk159299 = require("./159299.js"),
+  Chunk675478 = require("./675478.js"),
+  Chunk709302 = require("./709302.js"),
+  Chunk984933 = require("./984933.js"),
+  Chunk699516 = require("./699516.js"),
+  Chunk594174 = require("./594174.js"),
+  Chunk483360 = require("./483360.js"),
+  Chunk892880 = require("./892880.js"),
+  Chunk591759 = require("./591759.js"),
+  Chunk279779 = require("./279779.js"),
+  Chunk620490 = require("./620490.js"),
+  Chunk727785 = require("./727785.js");
 
 function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -50,7 +51,7 @@ function T(e, t) {
 }
 class S {
   createSearchContext() {
-    null == this.userSearchContext && (this.userSearchContext = m.Z.getUserSearchContext(this.parseUserResults, this._limit))
+    null == this.userSearchContext && (this.userSearchContext = Chunk279779.Z.getUserSearchContext(this.parseUserResults, this._limit))
   }
   setLimit(e) {
     let {
@@ -66,10 +67,10 @@ class S {
   }
   _isAsyncSearch() {
     var e, t;
-    return this._include(E.h8.USER) && (null == (t = this.options) || null == (e = t.userFilters) ? void 0 : e.thread) != null
+    return this._include(Chunk727785.h8.USER) && (null == (t = this.options) || null == (e = exports.userFilters) ? true : module.thread) != null
   }
   setOptions(e) {
-    let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
+    let t = arguments.length > 1 && true !== arguments[1] && arguments[1];
     t ? this.options = y({}, this.options, e) : this.options = e, null != this.options.blacklist ? this._userBlacklist = Array.from(this.options.blacklist).map(e => e.startsWith("user:") ? e.replace("user:", "") : "").filter(e => "" !== e) : this._userBlacklist = null
   }
   search(e, t) {
@@ -84,24 +85,24 @@ class S {
     let {
       userSearchContext: e
     } = this;
-    null != e && e.clearQuery(), this.results = [], this._userResults = [], this._groupDMResults = [], this._textChannelResults = [], this._voiceChannelResults = [], this._guildResults = [], this._applicationResults = [], this._linkResults = [], this._inAppNavigations = []
+    null != module && module.clearQuery(), this.results = [], this._userResults = [], this._groupDMResults = [], this._textChannelResults = [], this._voiceChannelResults = [], this._guildResults = [], this._applicationResults = [], this._linkResults = [], this._inAppNavigations = []
   }
   clean() {
     this.clear(), this.destroy(), this.query = "", this.updateAllResults()
   }
   pause() {
     var e, t;
-    null == (t = this.userSearchContext) || null == (e = t.unsubscribe) || e.call(t)
+    null == (t = this.userSearchContext) || null == (e = exports.unsubscribe) || module.call(exports)
   }
   resume() {
     var e, t;
-    null == (t = this.userSearchContext) || null == (e = t.subscribe) || e.call(t)
+    null == (t = this.userSearchContext) || null == (e = exports.subscribe) || module.call(exports)
   }
   destroy() {
     let {
       userSearchContext: e
     } = this;
-    null != e && (e.destroy(), this.userSearchContext = null)
+    null != module && (module.destroy(), this.userSearchContext = null)
   }
   queryTextChannels(e, t) {
     if (!this._include(E.h8.TEXT_CHANNEL)) return [];
@@ -109,12 +110,12 @@ class S {
       {
         blacklist: r
       } = this.options,
-      i = null != r ? e => !r.has("channel:".concat(e.id)) : void 0;
+      i = null != r ? e => !r.has("channel:".concat(e.id)) : true;
     return _.ZP.queryChannels({
       query: e,
       guildId: null,
       limit: t,
-      fuzzy: !0,
+      fuzzy: true,
       filter: i,
       boosters: n
     })
@@ -128,7 +129,7 @@ class S {
       query: e,
       guildId: n,
       limit: t,
-      fuzzy: !0,
+      fuzzy: true,
       type: u.Zb,
       boosters: r
     })
@@ -139,11 +140,11 @@ class S {
       {
         blacklist: r
       } = this.options,
-      i = null != r ? e => !r.has("guild:".concat(e.id)) : void 0;
+      i = null != r ? e => !r.has("guild:".concat(e.id)) : true;
     return _.ZP.queryGuilds({
       query: e,
       limit: t,
-      fuzzy: !0,
+      fuzzy: true,
       filter: i,
       boosters: n
     })
@@ -156,16 +157,16 @@ class S {
     let {
       userFilters: i
     } = this.options, o = T(E.h8.USER, this.options);
-    if ((null == i ? void 0 : i.thread) != null) {
+    if ((null == i ? true : i.thread) != null) {
       let t = s.Z.getMemberListSections(i.thread),
         r = [];
       for (let e in t) {
         let n = t[e];
         for (let e of n.userIds) {
           var a, l, c;
-          (null == i || !i.friends || d.Z.isFriend(e)) && (null != (c = null == (a = this._userBlacklist) ? void 0 : a.includes(e)) && c || r.push({
+          (null == i || !i.friends || d.Z.isFriend(e)) && (null != (c = null == (a = this._userBlacklist) ? true : a.includes(e)) && c || r.push({
             userId: e,
-            nick: null == (l = n.usersById[e]) ? void 0 : l.displayName
+            nick: null == (l = n.usersById[e]) ? true : l.displayName
           }))
         }
       }
@@ -177,7 +178,7 @@ class S {
       });
       return
     }
-    void 0 !== t && p.Z.requestMembers(t, e, 100), r.setLimit(n), r.setQuery({
+    true !== t && p.Z.requestMembers(t, e, 100), r.setLimit(n), r.setQuery({
       query: e,
       filters: i,
       blacklist: this._userBlacklist,
@@ -188,11 +189,11 @@ class S {
     if (!this._include(E.h8.GROUP_DM)) return [];
     let {
       blacklist: n
-    } = this.options, r = T(E.h8.GROUP_DM, this.options), i = null != n ? e => !n.has("channel:".concat(e.id)) : void 0;
+    } = this.options, r = T(E.h8.GROUP_DM, this.options), i = null != n ? e => !n.has("channel:".concat(e.id)) : true;
     return _.ZP.queryGroupDMs({
       query: e,
       limit: t,
-      fuzzy: !0,
+      fuzzy: true,
       filter: i,
       boosters: r
     })
@@ -201,7 +202,7 @@ class S {
     return this._include(E.h8.APPLICATION) ? _.ZP.queryApplications({
       query: e,
       limit: t,
-      fuzzy: !0
+      fuzzy: true
     }) : []
   }
   queryLink(e, t) {
@@ -228,11 +229,11 @@ class S {
     return this._include(E.h8.IN_APP_NAVIGATION) ? _.ZP.queryInAppNavigations({
       query: e,
       limit: t,
-      fuzzy: !0
+      fuzzy: true
     }) : []
   }
   constructor(e, t, n = O, r = v) {
-    b(this, "query", ""), b(this, "options", v), b(this, "results", []), b(this, "_userResults", []), b(this, "_groupDMResults", []), b(this, "_textChannelResults", []), b(this, "_voiceChannelResults", []), b(this, "_guildResults", []), b(this, "_applicationResults", []), b(this, "_linkResults", []), b(this, "_inAppNavigations", []), b(this, "_asyncTimeout", void 0), b(this, "userSearchContext", void 0), b(this, "onResultsChange", void 0), b(this, "resultTypes", void 0), b(this, "_userBlacklist", null), b(this, "_limit", void 0), b(this, "parseUserResults", e => {
+    b(this, "query", ""), b(this, "options", v), b(this, "results", []), b(this, "_userResults", []), b(this, "_groupDMResults", []), b(this, "_textChannelResults", []), b(this, "_voiceChannelResults", []), b(this, "_guildResults", []), b(this, "_applicationResults", []), b(this, "_linkResults", []), b(this, "_inAppNavigations", []), b(this, "_asyncTimeout", true), b(this, "userSearchContext", true), b(this, "onResultsChange", true), b(this, "resultTypes", true), b(this, "_userBlacklist", null), b(this, "_limit", true), b(this, "parseUserResults", e => {
       let {
         results: t
       } = e;
@@ -248,13 +249,13 @@ class S {
             type: E.h8.USER,
             record: t,
             score: (0, _.mB)(n),
-            comparator: null != r ? r : void 0
+            comparator: null != r ? r : true
           })
         }
         this._userResults.length > this._limit && (this._userResults.length = this._limit), this.updateAllResults()
       }
     }), b(this, "updateAllResults", () => {
       clearTimeout(this._asyncTimeout), this.results = i()([...this._userResults, ...this._groupDMResults, ...this._textChannelResults, ...this._voiceChannelResults, ...this._guildResults, ...this._linkResults, ...this._inAppNavigations]).uniqBy(e => "".concat(e.type, "-").concat(e.record.id)).sort(g.Z).value(), this.onResultsChange(this.results, this.query)
-    }), this.onResultsChange = e, this.setOptions(r, !0), this._limit = n, this.createSearchContext(), this.setResultTypes(t)
+    }), this.onResultsChange = e, this.setOptions(r, true), this._limit = n, this.createSearchContext(), this.setResultTypes(t)
   }
 }

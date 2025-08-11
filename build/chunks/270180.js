@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 270180, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   shinyButton: "shinyButton__6a443",
   buttonShine: "buttonShine__6a443",
   Shine: "Shine__6a443",

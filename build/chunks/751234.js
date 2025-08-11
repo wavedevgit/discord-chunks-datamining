@@ -1,5 +1,6 @@
 /** Chunk was on 63141 **/
-n.r(e.exports = {
+/** chunk id: 751234, original params: e,t,n (module,exports,require) **/
+require.r(module.exports = {
   content: "content__777cc",
   staticSize: "staticSize__777cc",
   widget: "widget__777cc",

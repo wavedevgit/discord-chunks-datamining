@@ -1,5 +1,6 @@
 /** Chunk was on web.js **/
-e.exports = function(e) {
+/** chunk id: 542932, original params: e (module,exports,re quire) **/
+module.exports = function(e) {
   let t = e.regex,
     n = {
       begin: "^'{3,}[ \\t]*$",
@@ -88,7 +89,7 @@ e.exports = function(e) {
       className: "meta",
       begin: "^:.+?:",
       end: "\\s",
-      excludeEnd: !0,
+      excludeEnd: true,
       relevance: 10
     }, {
       className: "meta",
@@ -136,7 +137,7 @@ e.exports = function(e) {
       relevance: 0
     }, n, {
       begin: "(link:)?(http|https|ftp|file|irc|image:?):\\S+?\\[[^[]*?\\]",
-      returnBegin: !0,
+      returnBegin: true,
       contains: [{
         begin: "(link|image:?):",
         relevance: 0
@@ -149,8 +150,8 @@ e.exports = function(e) {
         className: "string",
         begin: "\\[",
         end: "\\]",
-        excludeBegin: !0,
-        excludeEnd: !0,
+        excludeBegin: true,
+        excludeEnd: true,
         relevance: 0
       }],
       relevance: 10

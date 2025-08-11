@@ -1,3 +1,4 @@
 /** Chunk was on 50448 **/
+/** chunk id: 322562, original params: t,r,n (module,exports,require) **/
 "use strict";
-n(882674)("observable")
+require("./882674.js")("observable")

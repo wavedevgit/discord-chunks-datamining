@@ -1,17 +1,18 @@
 /** Chunk was on web.js **/
+/** chunk id: 824690, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => a
-}), n(388685);
-var r = n(73800),
-  i = n(695346),
-  o = n(36703);
+}), require("./388685.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk695346 = require("./695346.js"),
+  Chunk36703 = require("./36703.js");
 
 function a() {
-  let [e, t] = r.useState(i.AY.getSetting());
+  let [e, t] = Chunk73800.useState(Chunk695346.AY.getSetting());
   return {
-    volume: e,
-    onVolumeChange: r.useCallback(e => {
+    volume: module,
+    onVolumeChange: Chunk73800.useCallback(e => {
       let n = (0, o.A)(e);
       t(n), i.AY.updateSetting(n)
     }, [])

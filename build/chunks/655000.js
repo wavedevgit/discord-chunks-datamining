@@ -1,9 +1,10 @@
 /** Chunk was on web.js **/
+/** chunk id: 655000, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-var r = n(621796),
-  i = n(172367),
-  o = n(148727);
-e.exports = function(e) {
+var Chunk621796 = require("./621796.js"),
+  Chunk172367 = require("./172367.js"),
+  Chunk148727 = require("./148727.js");
+module.exports = function(e) {
   var t, n, a = e.getSelection();
   if (!a.isCollapsed()) return e;
   var s = a.getAnchorOffset();

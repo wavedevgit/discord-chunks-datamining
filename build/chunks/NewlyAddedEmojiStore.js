@@ -1,0 +1,138 @@
+/** Chunk was on web.js **/
+/** chunk id: 438332, original params: e,t,n (module,exports,re quire) **/
+"use strict";
+require.d(exports, {
+  Z: () => v
+});
+var r, Chunk913527 = require("./913527.js"),
+  o = require.n(Chunk913527),
+  Chunk442837 = require("./442837.js"),
+  Chunk570140 = require("./570140.js"),
+  Chunk709054 = require("./709054.js");
+
+function c(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+
+function u(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      c(e, t, n[t])
+    })
+  }
+  return e
+}
+
+function d(e, t) {
+  var n = Object.keys(e);
+  if (Object.getOwnPropertySymbols) {
+    var r = Object.getOwnPropertySymbols(e);
+    t && (r = r.filter(function(t) {
+      return Object.getOwnPropertyDescriptor(e, t).enumerable
+    })), n.push.apply(n, r)
+  }
+  return n
+}
+
+function f(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : d(Object(t)).forEach(function(n) {
+    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+  }), e
+}
+let _ = {
+    lastSeenNewlyAddedEmojiIds: {}
+  },
+  p = _,
+  h = {};
+
+function m() {
+  p = _, h = {}
+}
+
+function g(e) {
+  var t;
+  let {
+    guildId: n,
+    emojiId: r
+  } = e, i = null != (t = h[n]) ? t : p.lastSeenNewlyAddedEmojiIds[n];
+  null == i || 0 > l.default.compare(i.id, r) ? h[n] = {
+    id: r,
+    lastSeen: Date.now(),
+    acknowledged: true
+  } : h[n] = f(u({}, i), {
+    acknowledged: true
+  })
+}
+
+function E(e) {
+  var t;
+  let {
+    guildId: n,
+    emojiId: r
+  } = e, i = null != (t = h[n]) ? t : p.lastSeenNewlyAddedEmojiIds[n];
+  (null == i || 0 > l.default.compare(i.id, r)) && (h[n] = {
+    id: r,
+    lastSeen: Date.now(),
+    acknowledged: false
+  })
+}
+
+function b() {
+  for (let e in h) p.lastSeenNewlyAddedEmojiIds[module] = h[module]
+}
+
+function y() {
+  p = _, b()
+}
+class O extends(r = Chunk442837.ZP.PersistedStore) {
+  initialize(e) {
+    p = null != e ? e : _
+  }
+  getState() {
+    return p
+  }
+  getLastSeenEmojiByGuild(e) {
+    return p.lastSeenNewlyAddedEmojiIds[e]
+  }
+  isNewerThanLastSeen(e, t) {
+    if (null == e || null == t) returnfalse;
+    let n = this.getLastSeenEmojiByGuild(e);
+    if (null == n || l.default.compare(t, n.id) > 0) returntrue;
+    {
+      let e = o()(n.lastSeen);
+      return o()().isBefore(e.add(2, "weeks")) && !n.acknowledged
+    }
+  }
+}
+c(O, "displayName", "NewlyAddedEmojiStore"), c(O, "persistKey", "NewlyAddedEmojiStore"), c(O, "migrations", [e => {
+  let t = e.lastSeenNewlyAddedEmojiIds,
+    n = {};
+  for (let e in t) {
+    let r = t[e];
+    n[e] = {
+      id: r,
+      lastSeen: Date.now(),
+      acknowledged: false
+    }
+  }
+  return {
+    lastSeenNewlyAddedEmojiIds: n
+  }
+}]);
+let v = new O(Chunk570140.Z, {
+  LOGOUT: m,
+  NEWLY_ADDED_EMOJI_SEEN_ACKNOWLEDGED: g,
+  NEWLY_ADDED_EMOJI_SEEN_PENDING: E,
+  NEWLY_ADDED_EMOJI_SEEN_UPDATED: b,
+  CLEAR_CACHES: y,
+  CONNECTION_CLOSED: b
+})

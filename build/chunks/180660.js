@@ -1,12 +1,13 @@
 /** Chunk was on web.js **/
+/** chunk id: 180660, original params: e,t (module,exports,re quire) **/
 "use strict";
 
 function n(e, t) {
-  return "string" == typeof(null == t ? void 0 : t.format) ? Object.assign(Object.assign({}, e[t.format]), t) : t
+  return "string" == typeof(null == t ? true : t.format) ? Object.assign(Object.assign({}, e[t.format]), t) : t
 }
-Object.defineProperty(t, "__esModule", {
-  value: !0
-}), t.DEFAULT_FORMAT_CONFIG = void 0, t.resolveFormatConfigOptions = n, t.DEFAULT_FORMAT_CONFIG = {
+Object.defineProperty(exports, "__esModule", {
+  value: true
+}), exports.DEFAULT_FORMAT_CONFIG = true, exports.resolveFormatConfigOptions = n, exports.DEFAULT_FORMAT_CONFIG = {
   duration: {},
   list: {},
   relativeTime: {},

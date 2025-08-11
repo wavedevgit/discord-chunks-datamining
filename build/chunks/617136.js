@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 617136, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Ic: () => x,
   O5: () => k,
   Zk: () => j,
@@ -11,32 +12,32 @@ n.d(t, {
   jZ: () => D,
   mH: () => P,
   uk: () => C
-}), n(388685);
-var r = n(73800),
-  i = n(772848),
-  o = n(516796),
-  a = n(930446),
-  s = n(367907),
-  l = n(186102),
-  c = n(857192),
-  u = n(819640),
-  d = n(626135),
-  f = n(358085),
-  _ = n(915750),
-  p = n(509212),
-  h = n(569984),
-  m = n(497505),
-  g = n(977156),
-  E = n(566078),
-  b = n(46140),
-  y = n(981631);
+}), require("./388685.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk772848 = require("./772848.js"),
+  Chunk516796 = require("./516796.js"),
+  Chunk930446 = require("./930446.js"),
+  Chunk367907 = require("./367907.js"),
+  Chunk186102 = require("./186102.js"),
+  Chunk857192 = require("./857192.js"),
+  Chunk819640 = require("./819640.js"),
+  Chunk626135 = require("./626135.js"),
+  Chunk358085 = require("./358085.js"),
+  Chunk915750 = require("./915750.js"),
+  Chunk509212 = require("./509212.js"),
+  Chunk569984 = require("./569984.js"),
+  Chunk497505 = require("./497505.js"),
+  Chunk977156 = require("./977156.js"),
+  Chunk566078 = require("./566078.js"),
+  Chunk46140 = require("./46140.js"),
+  Chunk981631 = require("./981631.js");
 
 function O(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -69,8 +70,8 @@ function T(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let S = Object.keys(m.jn),
-  A = new Set([y.rMx.QUEST_CONTENT_VIEWED, y.rMx.QUEST_CONTENT_CLICKED]);
+let S = Object.keys(Chunk497505.jn),
+  A = new Set([Chunk981631.rMx.QUEST_CONTENT_VIEWED, Chunk981631.rMx.QUEST_CONTENT_CLICKED]);
 
 function N(e) {
   var t;
@@ -79,7 +80,7 @@ function N(e) {
 
 function C(e) {
   var t, n, r;
-  return (null == (t = e.userStatus) ? void 0 : t.claimedAt) != null ? "COMPLETED_CLAIMED" : (null == (n = e.userStatus) ? void 0 : n.completedAt) != null ? "COMPLETED" : (null == (r = e.userStatus) ? void 0 : r.enrolledAt) != null ? "ENROLLED" : "NONE"
+  return (null == (t = e.userStatus) ? true : t.claimedAt) != null ? "COMPLETED_CLAIMED" : (null == (n = e.userStatus) ? true : n.completedAt) != null ? "COMPLETED" : (null == (r = e.userStatus) ? true : r.enrolledAt) != null ? "ENROLLED" : "NONE"
 }
 
 function R(e, t, n) {
@@ -108,7 +109,7 @@ function w(e) {
     event: n,
     properties: r,
     trackGuildAndChannelMetadata: i,
-    shouldExtendSession: o = !1,
+    shouldExtendSession: o = false,
     sourceQuestContent: a
   } = e, l = h.Z.quests.get(t);
   if (null == l || (0, g.X7)({
@@ -133,7 +134,7 @@ async function L(e) {
     questContentPosition: a,
     questContentRowIndex: s,
     impressionId: c,
-    trackGuildAndChannelMetadata: u = !1,
+    trackGuildAndChannelMetadata: u = false,
     sourceQuestContent: d
   } = e, _ = h.Z.getQuest(t), m = await (0, o.S)();
   w({
@@ -174,26 +175,26 @@ function x(e) {
 }
 
 function M() {
-  let e = (0, _.WD)();
-  return r.useCallback(t => {
+  let e = (0, Chunk915750.WD)();
+  return Chunk73800.useCallback(t => {
     w(T(v({}, t), {
       properties: T(v({}, t.properties), {
-        impression_id: null == e ? void 0 : e.getId()
+        impression_id: null == e ? true : e.getId()
       })
     }))
-  }, [e])
+  }, [module])
 }
 
 function k() {
   let e = M();
-  return r.useCallback(t => {
+  return Chunk73800.useCallback(t => {
     let {
       questId: n,
       questContent: r,
       questContentCTA: a,
       questContentPosition: s,
       questContentRowIndex: c,
-      trackGuildAndChannelMetadata: u = !1,
+      trackGuildAndChannelMetadata: u = false,
       sourceQuestContent: d
     } = t, _ = h.Z.getQuest(n);
     (0, o.S)().then(t => {
@@ -211,7 +212,7 @@ function k() {
         sourceQuestContent: d
       })
     })
-  }, [e])
+  }, [module])
 }
 
 function j(e, t) {

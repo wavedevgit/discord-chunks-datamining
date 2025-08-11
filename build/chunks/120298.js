@@ -1,18 +1,19 @@
 /** Chunk was on 79764 **/
-n.d(t, {
+/** chunk id: 120298, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   M: () => o
 });
-var i = n(43236),
-  s = n(103714),
-  l = n(940328),
-  a = n(888395),
-  r = n(389028);
+var Chunk43236 = require("./43236.js"),
+  Chunk103714 = require("./103714.js"),
+  Chunk940328 = require("./940328.js"),
+  Chunk888395 = require("./888395.js"),
+  Chunk389028 = require("./389028.js");
 let o = {
-  CREATE: l,
-  HUB_SCHOOL_CLUB: n(142390),
-  HUB_STUDY: a,
-  HUB_CLASS: n(425506),
-  HUB_SOCIAL: r,
-  HUB_MAJOR: s,
-  HUB_DORM: i
+  CREATE: Chunk940328,
+  HUB_SCHOOL_CLUB: require("./142390.js"),
+  HUB_STUDY: Chunk888395,
+  HUB_CLASS: require("./425506.js"),
+  HUB_SOCIAL: Chunk389028,
+  HUB_MAJOR: Chunk103714,
+  HUB_DORM: Chunk43236
 }

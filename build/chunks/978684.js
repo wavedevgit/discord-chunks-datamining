@@ -1,27 +1,28 @@
 /** Chunk was on web.js **/
+/** chunk id: 978684, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   J: () => d,
   Z: () => _
-}), n(388685);
-var r = n(298444),
-  i = n(570140),
-  o = n(447543),
-  a = n(147913),
-  s = n(314897),
-  l = n(358085),
-  c = n(981631);
+}), require("./388685.js");
+var Chunk298444 = require("./298444.js"),
+  Chunk570140 = require("./570140.js"),
+  Chunk447543 = require("./447543.js"),
+  Chunk147913 = require("./147913.js"),
+  Chunk314897 = require("./314897.js"),
+  Chunk358085 = require("./358085.js"),
+  Chunk981631 = require("./981631.js");
 
 function u(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 let d = "guestInviteToAccept";
-class f extends a.Z {
+class f extends Chunk147913.Z {
   constructor(...e) {
     super(...e), u(this, "actions", {
       POST_CONNECTION_OPEN: () => this.handleConnectionOpen()

@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 54816, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   ripple: "ripple__43deb",
   bounce: "bounce__43deb",
   gifFavoriteButton: "gifFavoriteButton__43deb",

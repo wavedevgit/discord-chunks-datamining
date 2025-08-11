@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 619914, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   stickerPreviews: "stickerPreviews_a4cf0b",
   stickerPreviewContainer: "stickerPreviewContainer_a4cf0b",
   stickerPreview: "stickerPreview_a4cf0b",

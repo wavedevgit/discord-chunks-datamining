@@ -1,5 +1,6 @@
 /** Chunk was on 19083 **/
-i.d(o, {
+/** chunk id: 846428, original params: e,o,i (module,exports,require) **/
+require.d(exports, {
   Rl: () => t,
   rk: () => r
 });
@@ -22,18 +23,18 @@ let n = e => null == e ? "v1" : `v/${e}`,
     isProduction: a,
     version: _
   }) => {
-    let E = !1;
+    let E = false;
     return new Promise((w, p) => {
       let S = r ?? 2e3;
       S > 0 && setTimeout(() => {
-        E = !0, w({
+        E = true, w({
           stopRecording: async () => {}
         })
       }, S);
       let R = document.createElement("script");
       R.type = "text/javascript", R.src = new URL(`${null!=_?"record/":""}${n(_??null)}/meticulous-manual-init.js`, d || "https://snippet.meticulous.ai").href;
       let O = window;
-      O.METICULOUS_RECORDING_TOKEN = o ?? e, void 0 !== i && (O.METICULOUS_UPLOAD_INTERVAL_MS = i), void 0 !== s && (O.METICULOUS_APP_COMMIT_HASH = s), void 0 !== t && (O.METICULOUS_SNAPSHOT_LINKED_STYLESHEETS = t), void 0 !== c && (O.METICULOUS_FORCE_RECORDING = c), void 0 !== a && (O.METICULOUS_IS_PRODUCTION_ENVIRONMENT = a), null != u && u.length > 0 && (O.METICULOUS_NETWORK_RESPONSE_SANITIZERS = u), null != l && l.length > 0 && (O.METICULOUS_RECORDER_MIDDLEWARE_V1 = l), R.onload = function() {
+      O.METICULOUS_RECORDING_TOKEN = o ?? e, true !== i && (O.METICULOUS_UPLOAD_INTERVAL_MS = i), true !== s && (O.METICULOUS_APP_COMMIT_HASH = s), true !== t && (O.METICULOUS_SNAPSHOT_LINKED_STYLESHEETS = t), true !== c && (O.METICULOUS_FORCE_RECORDING = c), true !== a && (O.METICULOUS_IS_PRODUCTION_ENVIRONMENT = a), null != u && u.length > 0 && (O.METICULOUS_NETWORK_RESPONSE_SANITIZERS = u), null != l && l.length > 0 && (O.METICULOUS_RECORDER_MIDDLEWARE_V1 = l), R.onload = function() {
         if (E) return void console.debug("Meticulous snippet abandoned due to max blocking time reached.");
         let e = window.__meticulous?.initialiseRecorder;
         if ("function" != typeof e) return void p("Meticulous recorder failed to initialise.");
@@ -55,5 +56,5 @@ let n = e => null == e ? "v1" : `v/${e}`,
     })
   }, r = async () => {
     let e = window?.__meticulous?.earlyNetworkRecorder?.dispose;
-    e && await e()
+    module && await module()
   }

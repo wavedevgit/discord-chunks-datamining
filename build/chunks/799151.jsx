@@ -1,0 +1,65 @@
+/** Chunk was on web.js **/
+/** chunk id: 799151, original params: e,t,n (module,exports,re quire) **/
+"use strict";
+require.d(exports, {
+  c: () => _
+});
+var Chunk255367 = require("./255367.js"),
+  Chunk73800 = require("./73800.js"),
+  Chunk126663 = require("./126663.js"),
+  Chunk442837 = require("./442837.js"),
+  Chunk710593 = require("./710593.jsx"),
+  Chunk481060 = require("./481060.js"),
+  Chunk607070 = require("./607070.js"),
+  Chunk79320 = require("./79320.js"),
+  Chunk388032 = require("./388032.jsx"),
+  Chunk74927 = require("./74927.js");
+
+function _() {
+  let e = [{
+      keybinds: ["Spacebar", "Enter"],
+      name: Chunk388032.intl.string(Chunk388032.t["cs/HVF"])
+    }, {
+      keybinds: ["up", "down"],
+      name: Chunk388032.intl.string(Chunk388032.t.dmMqa2)
+    }, {
+      keybinds: ["ESC"],
+      name: Chunk388032.intl.string(Chunk388032.t["1ioMJS"])
+    }],
+    t = (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.useReducedMotion),
+    n = (0, Chunk79320.zP)();
+  return (0, Chunk481060.Yzy)(require, {
+    enter: {
+      from: {
+        opacity: 0,
+        y: 80 * !exports
+      },
+      to: {
+        opacity: 1,
+        y: 0
+      }
+    },
+    leave: {
+      opacity: 0,
+      y: 80 * !exports
+    },
+    config: Chunk126663.config.stiff
+  }, "animate-always")((t, n) => n ? <div className={f.positioner}><o.animated.div className={f.container} style={t}>{e.map((t, n) => {
+        let {
+          keybinds: o,
+          name: a
+        } = t;
+        return (0, r.jsxs)(i.Fragment, {
+          children: [(0, r.jsx)(l.Text, {
+            variant: "text-md/semibold",
+            className: f.bindName,
+            children: a
+          }), o.map(e => (0, r.jsx)(s.M, {
+            shortcut: e,
+            className: f.shortcut
+          }, e)), n < e.length - 1 ? (0, r.jsx)("span", {
+            className: f.separator
+          }) : null]
+        }, a)
+      })}</o.animated.div></div> : null)
+}

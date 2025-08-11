@@ -1,41 +1,42 @@
 /** Chunk was on web.js **/
+/** chunk id: 89425, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => f
-}), n(415506);
-var r = n(430198),
-  i = n(557135),
-  o = n(66999),
-  a = n(592125),
-  s = n(496675),
-  l = n(944486),
-  c = n(979651);
+}), require("./415506.js");
+var Chunk430198 = require("./430198.js"),
+  Chunk557135 = require("./557135.js"),
+  Chunk66999 = require("./66999.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk496675 = require("./496675.js"),
+  Chunk944486 = require("./944486.js"),
+  Chunk979651 = require("./979651.js");
 let u = 1e4;
 class d extends Error {}
 async function f(e) {
   let {
     channelId: t,
     timeoutMs: n = u,
-    bypassChangeModal: f = !1
+    bypassChangeModal: f = false
   } = e, _ = a.Z.getChannel(t);
   if (null == _ || !await i.Z.handleVoiceConnect({
-      bypassGuildIdCheck: !0,
+      bypassGuildIdCheck: true,
       bypassChangeModal: f,
       channel: _,
       connected: c.Z.isInChannel(t),
       needSubscriptionToAccess: (0, o.$)(t, a.Z, r.Z, s.Z).needSubscriptionToAccess
-    })) return !1;
+    })) returnfalse;
   let p = new Promise((e, r) => {
     let i = setTimeout(() => {
       r(new d("Joining voice channel has timed out."))
     }, n);
-    l.Z.addConditionalChangeListener(() => l.Z.getVoiceChannelId() !== t || (clearTimeout(i), e(), !1))
+    l.Z.addConditionalChangeListener(() => l.Z.getVoiceChannelId() !== t || (clearTimeout(i), e(), false))
   });
   try {
     await p
   } catch (e) {
-    if (e instanceof d) return !1;
+    if (e instanceof d) returnfalse;
     throw e
   }
-  return !0
+  returntrue
 }

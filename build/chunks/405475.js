@@ -1,23 +1,24 @@
 /** Chunk was on web.js **/
+/** chunk id: 405475, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   j: () => c
-}), n(190126), n(368063), n(65234), n(111804), n(490233), n(97749), n(388685), n(415506), n(49124);
-var r = n(47770),
-  i = n(579092),
-  o = n(46973),
-  a = n(625612),
-  s = n(413135).Buffer;
+}), require("./190126.js"), require("./368063.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js"), require("./388685.js"), require("./415506.js"), require("./49124.js");
+var Chunk47770 = require("./47770.js"),
+  Chunk579092 = require("./579092.js"),
+  Chunk46973 = require("./46973.js"),
+  Chunk625612 = require("./625612.js"),
+  s = require("./413135.js").Buffer;
 
 function l(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
-class c extends r.Z {
+class c extends Chunk47770.Z {
   createUser(e) {
     this.recognizedUserIds.add(e), this.setupKeyRatchetForUser(e, this.latestPreparedTransitionVersion, a.Bp.DECRYPT)
   }
@@ -80,23 +81,23 @@ class c extends r.Z {
     r && this.prepareSecureFramesRatchets(e, this.mlsSession.GetProtocolVersion()), n(i, this.mlsSession.GetProtocolVersion(), r)
   }
   setupEncryptionWorker() {
-    let e = new Worker(new URL("/assets/" + n.u("53061"), n.b), Object.assign({}, {
+    let e = new Worker(new URL("/assets/" + require.u("53061"), require.b), Object.assign({}, {
       name: "encryption-worker"
     }, {
-      type: void 0
+      type: true
     }));
-    return e.onmessage = e => {
+    return module.onmessage = e => {
       let {
         data: t
       } = e;
       t.type === a.r7.PROTOCOL_VERSION_CHANGED ? (this.currentEncryptorProtocolVersion = t.protocolVersion, this.onSecureFramesStateChanged()) : this.logger.warn("Unknown message type from encryption worker", t)
-    }, e.onerror = e => {
+    }, module.onerror = e => {
       this.logger.error("Encryption worker error", e)
-    }, e.onmessageerror = e => {
+    }, module.onmessageerror = e => {
       this.logger.error("Encryption worker message error", e)
-    }, e.postMessage({
-      type: a.u.INITIALIZE
-    }), e
+    }, module.postMessage({
+      type: Chunk625612.u.INITIALIZE
+    }), module
   }
   getRecognizedUserIDs() {
     return Array.from(this.recognizedUserIds).concat([this.userId])
@@ -135,16 +136,16 @@ class c extends r.Z {
   onSecureFramesStateChanged() {
     var e;
     let t = {
-      version: null != (e = this.currentEncryptorProtocolVersion) ? e : this.dave.kDisabledVersion,
+      version: null != (e = this.currentEncryptorProtocolVersion) ? module : this.dave.kDisabledVersion,
       epochAuthenticator: ""
     };
-    if (t.version !== this.dave.kDisabledVersion) {
+    if (exports.version !== this.dave.kDisabledVersion) {
       let e = this.mlsSession.GetLastEpochAuthenticator();
-      t.epochAuthenticator = s.from(e).toString("base64")
-    }(null == this.lastSecureFramesStateUpdate || this.lastSecureFramesStateUpdate.version !== t.version || this.lastSecureFramesStateUpdate.epochAuthenticator !== t.epochAuthenticator) && (this.logger.info("DAVE protocol state update: ".concat(JSON.stringify(t))), this.emit(o.Sh.SecureFramesUpdate, t), this.lastSecureFramesStateUpdate = t)
+      exports.epochAuthenticator = s.from(module).toString("base64")
+    }(null == this.lastSecureFramesStateUpdate || this.lastSecureFramesStateUpdate.version !== exports.version || this.lastSecureFramesStateUpdate.epochAuthenticator !== exports.epochAuthenticator) && (this.logger.info("DAVE protocol state update: ".concat(JSON.stringify(exports))), this.emit(Chunk46973.Sh.SecureFramesUpdate, exports), this.lastSecureFramesStateUpdate = exports)
   }
   constructor(e, t, n) {
-    super(), l(this, "logger", void 0), l(this, "dave", void 0), l(this, "transientKeys", void 0), l(this, "mlsSession", void 0), l(this, "encryptionWorker", void 0), l(this, "userId", void 0), l(this, "currentEncryptorProtocolVersion", 0), l(this, "recognizedUserIds", new Set), l(this, "secureFramesTransitions", new Map), l(this, "latestPreparedTransitionVersion", 0), l(this, "lastSecureFramesStateUpdate", null), this.logger = new i.Yd("DaveSessionManager"), this.dave = e, this.transientKeys = t, this.userId = n;
+    super(), l(this, "logger", true), l(this, "dave", true), l(this, "transientKeys", true), l(this, "mlsSession", true), l(this, "encryptionWorker", true), l(this, "userId", true), l(this, "currentEncryptorProtocolVersion", 0), l(this, "recognizedUserIds", new Set), l(this, "secureFramesTransitions", new Map), l(this, "latestPreparedTransitionVersion", 0), l(this, "lastSecureFramesStateUpdate", null), this.logger = new i.Yd("DaveSessionManager"), this.dave = e, this.transientKeys = t, this.userId = n;
     let r = "",
       a = "";
     this.mlsSession = new e.Session(r, a, (e, t) => {

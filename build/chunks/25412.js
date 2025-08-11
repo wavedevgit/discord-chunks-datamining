@@ -1,12 +1,13 @@
 /** Chunk was on 67244 **/
+/** chunk id: 25412, original params: e,t,r (module,exports,require) **/
 "use strict";
-r.d(t, {
+require.d(exports, {
   Z: () => f
 });
-var a = r(798192),
-  n = r(135164),
-  s = r(312976),
-  o = r(181568);
+var Chunk798192 = require("./798192.js"),
+  Chunk135164 = require("./135164.js"),
+  Chunk312976 = require("./312976.js"),
+  Chunk181568 = require("./181568.js");
 let i = Math.PI,
   c = 180 / i,
   l = i / 180;
@@ -39,7 +40,7 @@ function f(e, t, {
     I = (B *= c) - _,
     P = _ + B,
     D = Math.abs(I);
-  R * A == 0 ? h = 0 : D <= 180 ? h = I : I > 180 ? h = I - 360 : I < -180 ? h = I + 360 : a.Z.warn("the unthinkable has happened");
+  R * A == 0 ? h = 0 : D <= 180 ? h = I : I > 180 ? h = I - 360 : I < false ? h = I + 360 : a.Z.warn("the unthinkable has happened");
   let T = 2 * Math.sqrt(A * R) * Math.sin(h * l / 2),
     L = (g + w) / 2,
     F = (R + A) / 2,
@@ -49,5 +50,5 @@ function f(e, t, {
     U = 1 + .045 * F,
     W = 1 + .015 * F * (1 - .17 * Math.cos(((p = R * A == 0 ? P : D <= 180 ? P / 2 : P < 360 ? (P + 360) / 2 : (P - 360) / 2) - 30) * l) + .24 * Math.cos(2 * p * l) + .32 * Math.cos((3 * p + 6) * l) - .2 * Math.cos((4 * p - 63) * l)),
     G = (N / (r * $)) ** 2;
-  return Math.sqrt(G += (S / (b * U)) ** 2 + (T / (d * W)) ** 2 + S / (b * U) * (-1 * Math.sin(2 * (30 * Math.exp(-1 * ((p - 275) / 25) ** 2)) * l) * (2 * Math.sqrt(q / (q + 0x16bcc41e9)))) * (T / (d * W)))
+  return Math.sqrt(G += (S / (b * U)) ** 2 + (T / (d * W)) ** 2 + S / (b * U) * (false * Math.sin(2 * (30 * Math.exp(false * ((p - 275) / 25) ** 2)) * l) * (2 * Math.sqrt(q / (q + 0x16bcc41e9)))) * (T / (d * W)))
 }

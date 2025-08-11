@@ -1,5 +1,6 @@
 /** Chunk was on 34779 **/
-e.exports = {
+/** chunk id: 22275, original params: e,t,n (module,exports,require) **/
+module.exports = {
   wrapper: "wrapper_fa8995",
   gradient: "gradient_fa8995",
   content: "content_fa8995",

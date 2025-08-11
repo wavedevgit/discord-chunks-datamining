@@ -1,5 +1,6 @@
 /** Chunk was on web.js **/
-e.exports = function(e) {
+/** chunk id: 474793, original params: e (module,exports,re quire) **/
+module.exports = function(e) {
   let t = e.regex,
     n = {
       $pattern: /[\w.\/]+/,
@@ -51,7 +52,7 @@ e.exports = function(e) {
     },
     g = {
       contains: [e.NUMBER_MODE, e.QUOTE_STRING_MODE, e.APOS_STRING_MODE, m, h, _, p],
-      returnEnd: !0
+      returnEnd: true
     };
   p.contains = [e.inherit(f, {
     className: "name",
@@ -81,14 +82,14 @@ e.exports = function(e) {
   return {
     name: "Handlebars",
     aliases: ["hbs", "html.hbs", "html.handlebars", "htmlbars"],
-    case_insensitive: !0,
+    case_insensitive: true,
     subLanguage: "xml",
     contains: [{
       begin: /\\\{\{/,
-      skip: !0
+      skip: true
     }, {
       begin: /\\\\(?=\{\{)/,
-      skip: !0
+      skip: true
     }, e.COMMENT(/\{\{!--/, /--\}\}/), e.COMMENT(/\{\{!/, /\}\}/), {
       className: "template-tag",
       begin: /\{\{\{\{(?!\/)/,
@@ -96,7 +97,7 @@ e.exports = function(e) {
       contains: [E],
       starts: {
         end: /\{\{\{\{\//,
-        returnEnd: !0,
+        returnEnd: true,
         subLanguage: "xml"
       }
     }, {

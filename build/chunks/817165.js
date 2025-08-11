@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 817165, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   splashContainer: "splashContainer__0bef9",
   splashContainerHorizontal: "splashContainerHorizontal__0bef9",
   priceOs: "priceOs__0bef9",

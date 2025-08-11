@@ -1,4 +1,5 @@
 /** Chunk was on 27381 **/
+/** chunk id: 998985, original params: a,e,t (module,exports,require) **/
 function i(a) {
   return a.replace(/sekuntia?/, "sekunnin")
 }
@@ -22,7 +23,7 @@ function r(a) {
 function l(a) {
   return a.replace(/(vuosi|vuotta)/, "vuoden")
 }
-t.d(e, {
+require.d(exports, {
   Z: () => k
 });
 var s = {

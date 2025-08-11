@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 874577, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   draggableContainer: "draggableContainer_f86e69",
   container: "container_f86e69",
   closeContainer: "closeContainer_f86e69",

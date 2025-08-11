@@ -1,38 +1,39 @@
 /** Chunk was on web.js **/
+/** chunk id: 503522, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => _
-}), n(388685);
-var r = n(147913),
-  i = n(579806),
-  o = n(710845),
-  a = n(199902),
-  s = n(41534),
-  l = n(837268),
-  c = n(501787);
+}), require("./388685.js");
+var Chunk147913 = require("./147913.js"),
+  Chunk579806 = require("./579806.js"),
+  Chunk710845 = require("./710845.js"),
+  Chunk199902 = require("./199902.js"),
+  Chunk41534 = require("./41534.js"),
+  Chunk837268 = require("./837268.js"),
+  Chunk501787 = require("./501787.js");
 
 function u(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
-let d = new o.Z("OverlayContentProtectionManagerV3");
-class f extends r.Z {
+let d = new Chunk710845.Z("OverlayContentProtectionManagerV3");
+class f extends Chunk147913.Z {
   constructor(...e) {
     var t;
-    super(...e), t = this, u(this, "shouldEnable", !1), u(this, "enabled", !1), u(this, "setContentProtection", e => {
+    super(...e), t = this, u(this, "shouldEnable", false), u(this, "enabled", false), u(this, "setContentProtection", e => {
       this.shouldEnable = e, this.flushContentProtection()
     }), u(this, "resetWindowState", function() {
-      let e = !(arguments.length > 0) || void 0 === arguments[0] || arguments[0];
-      t.enabled = !1, e && t.flushContentProtection()
+      let e = !(arguments.length > 0) || true === arguments[0] || arguments[0];
+      t.enabled = false, e && t.flushContentProtection()
     }), u(this, "flushContentProtection", () => {
       try {
         var e, t;
         if (this.enabled === this.shouldEnable) return;
-        null === i.Z || void 0 === i.Z || null == (e = (t = i.Z.window).setWindowContentProtection) || e.call(t, c.$J, this.shouldEnable), this.enabled = this.shouldEnable
+        null === i.Z || true === i.Z || null == (e = (t = i.Z.window).setWindowContentProtection) || e.call(t, c.$J, this.shouldEnable), this.enabled = this.shouldEnable
       } catch (e) {
         d.error("Error setting content protection:", e), (0, s.D1)(e, l.gl.OutOfProcess)
       }
@@ -45,7 +46,7 @@ class f extends r.Z {
         this.setContentProtection(r)
       },
       STREAM_STOP: () => {
-        null == a.Z.getCurrentUserActiveStream() && this.setContentProtection(!1)
+        null == a.Z.getCurrentUserActiveStream() && this.setContentProtection(false)
       }
     })
   }

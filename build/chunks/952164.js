@@ -1,15 +1,16 @@
 /** Chunk was on web.js **/
+/** chunk id: 952164, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   KK: () => l,
   Z5: () => u,
   aG: () => c,
   d$: () => d
-}), n(415506);
-var r = n(358085),
-  i = n(18323),
-  o = n(647162),
-  a = n(616922);
+}), require("./415506.js");
+var Chunk358085 = require("./358085.js"),
+  Chunk18323 = require("./18323.js"),
+  Chunk647162 = require("./647162.js"),
+  Chunk616922 = require("./616922.js");
 
 function s(e, t, n) {
   let s;
@@ -25,7 +26,7 @@ function s(e, t, n) {
 }
 
 function l() {
-  window.open(a.C7.PREMIUM_SITE)
+  window.open(Chunk616922.C7.PREMIUM_SITE)
 }
 
 function c(e) {
@@ -35,7 +36,7 @@ function c(e) {
     metadata: r
   } = e;
   if (null == n) return;
-  let o = (0, a.c8)(null != (t = null == r ? void 0 : r.type) ? t : a.Hw.TRACK);
+  let o = (0, a.c8)(null != (t = null == r ? true : r.type) ? t : a.Hw.TRACK);
   if (null == o) return;
   let s = i.Z.isProtocolRegistered() ? a.C7.PLAYER_OPEN(o, n) : a.C7.WEB_OPEN(o, n);
   window.open(s)
@@ -48,7 +49,7 @@ function u(e, t) {
       album_id: r
     } = t;
     return {
-      resourceType: (0, a.c8)(null == (n = e.metadata) ? void 0 : n.type) === a.Hw.EPISODE ? a.Hw.SHOW : a.Hw.ALBUM,
+      resourceType: (0, a.c8)(null == (n = e.metadata) ? true : n.type) === a.Hw.EPISODE ? a.Hw.SHOW : a.Hw.ALBUM,
       resourceId: r
     }
   })

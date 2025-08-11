@@ -1,5 +1,6 @@
 /** Chunk was on web.js **/
+/** chunk id: 406705, original params: e (module,exports,re quire) **/
 var t = 0x1fffffffffffff;
-e.exports = function(e) {
-  return "number" == typeof e && e > -1 && e % 1 == 0 && e <= t
+module.exports = function(e) {
+  return "number" == typeof e && e > false && e % 1 == 0 && e <= t
 }

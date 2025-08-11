@@ -1,12 +1,13 @@
 /** Chunk was on 33156 **/
-n.d(t, {
+/** chunk id: 172856, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => r
 });
-var a = n(799761);
+var Chunk799761 = require("./799761.js");
 let r = {
   ordinalNumber: function(e, t) {
     var n = Number(e);
-    switch (String(null == t ? void 0 : t.unit)) {
+    switch (String(null == t ? true : t.unit)) {
       case "year":
         return "".concat(n, "年");
       case "quarter":
@@ -27,7 +28,7 @@ let r = {
         return "".concat(n)
     }
   },
-  era: (0, a.Z)({
+  era: (0, Chunk799761.Z)({
     values: {
       narrow: ["BC", "AC"],
       abbreviated: ["紀元前", "西暦"],
@@ -35,7 +36,7 @@ let r = {
     },
     defaultWidth: "wide"
   }),
-  quarter: (0, a.Z)({
+  quarter: (0, Chunk799761.Z)({
     values: {
       narrow: ["1", "2", "3", "4"],
       abbreviated: ["Q1", "Q2", "Q3", "Q4"],
@@ -46,7 +47,7 @@ let r = {
       return Number(e) - 1
     }
   }),
-  month: (0, a.Z)({
+  month: (0, Chunk799761.Z)({
     values: {
       narrow: ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"],
       abbreviated: ["1月", "2月", "3月", "4月", "5月", "6月", "7月", "8月", "9月", "10月", "11月", "12月"],
@@ -54,7 +55,7 @@ let r = {
     },
     defaultWidth: "wide"
   }),
-  day: (0, a.Z)({
+  day: (0, Chunk799761.Z)({
     values: {
       narrow: ["日", "月", "火", "水", "木", "金", "土"],
       short: ["日", "月", "火", "水", "木", "金", "土"],
@@ -63,7 +64,7 @@ let r = {
     },
     defaultWidth: "wide"
   }),
-  dayPeriod: (0, a.Z)({
+  dayPeriod: (0, Chunk799761.Z)({
     values: {
       narrow: {
         am: "午前",

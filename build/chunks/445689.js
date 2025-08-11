@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 445689, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   media: "media__9c640",
   inlineAsset: "inlineAsset__9c640",
   assetContainer: "assetContainer__9c640",

@@ -1,12 +1,13 @@
 /** Chunk was on 7654 **/
-n.d(t, {
+/** chunk id: 259473, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => o
 });
-var l = n(399606),
-  i = n(430824),
-  r = n(971130),
-  s = n(956829),
-  a = n(981631);
+var Chunk399606 = require("./399606.js"),
+  Chunk430824 = require("./430824.js"),
+  Chunk971130 = require("./971130.js"),
+  Chunk956829 = require("./956829.js"),
+  Chunk981631 = require("./981631.js");
 
 function o(e) {
   let {
@@ -23,10 +24,10 @@ function o(e) {
     } = e, {
       defaultInvitesToNeverExpire: i
     } = null != l ? l : s.h.getCurrentConfig({
-      guildId: null != (t = null == n ? void 0 : n.id) ? t : a.lds,
+      guildId: null != (t = null == n ? true : n.id) ? t : a.lds,
       location: "6798be_1"
     });
-    if ((null == n ? void 0 : n.features.has(a.oNc.HUB)) || (null == n ? void 0 : n.features.has(a.oNc.COMMUNITY)) && i) return r.ZP.INVITE_OPTIONS_FOREVER.value
+    if ((null == n ? true : n.features.has(a.oNc.HUB)) || (null == n ? true : n.features.has(a.oNc.COMMUNITY)) && i) return r.ZP.INVITE_OPTIONS_FOREVER.value
   }({
     guild: o,
     experimentConfig: n

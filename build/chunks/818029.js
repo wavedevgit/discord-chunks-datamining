@@ -1,5 +1,6 @@
 /** Chunk was on web.js **/
-e.exports = function(e) {
+/** chunk id: 818029, original params: e (module,exports,re quire) **/
+module.exports = function(e) {
   let t = e.regex,
     n = {
       keyword: "abort acronym acronyms alias all and assign binary card diag display else eq file files for free ge gt if integer le loop lt maximizing minimizing model models ne negative no not option options or ord positive prod put putpage puttl repeat sameas semicont semiint smax smin solve sos1 sos2 sum system table then until using while xor yes",
@@ -10,8 +11,8 @@ e.exports = function(e) {
       className: "params",
       begin: /\(/,
       end: /\)/,
-      excludeBegin: !0,
-      excludeEnd: !0
+      excludeBegin: true,
+      excludeEnd: true
     },
     i = {
       className: "symbol",
@@ -42,9 +43,9 @@ e.exports = function(e) {
     s = /[a-z0-9&#*=?@\\><:,()$[\]_.{}!+%^-]+/,
     l = {
       begin: /[a-z][a-z0-9_]*(\([a-z0-9_, ]*\))?[ \t]+/,
-      excludeBegin: !0,
+      excludeBegin: true,
       end: "$",
-      endsWithParent: !0,
+      endsWithParent: true,
       contains: [o, a, {
         className: "comment",
         begin: t.concat(s, t.anyNumberOfTimes(t.concat(/[ ]+/, s))),
@@ -54,13 +55,13 @@ e.exports = function(e) {
   return {
     name: "GAMS",
     aliases: ["gms"],
-    case_insensitive: !0,
+    case_insensitive: true,
     keywords: n,
     contains: [e.COMMENT(/^\$ontext/, /^\$offtext/), {
       className: "meta",
       begin: "^\\$[a-z0-9]+",
       end: "$",
-      returnBegin: !0,
+      returnBegin: true,
       contains: [{
         className: "keyword",
         begin: "^\\$[a-z0-9]+"
@@ -72,7 +73,7 @@ e.exports = function(e) {
     }, {
       beginKeywords: "table",
       end: ";",
-      returnBegin: !0,
+      returnBegin: true,
       contains: [{
         beginKeywords: "table",
         end: "$",
@@ -81,7 +82,7 @@ e.exports = function(e) {
     }, {
       className: "function",
       begin: /^[a-z][a-z0-9_,\-+' ()$]+\.{2}/,
-      returnBegin: !0,
+      returnBegin: true,
       contains: [{
         className: "title",
         begin: /^[a-z0-9_]+/

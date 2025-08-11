@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 398032, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   applicationEducation: "applicationEducation__526cc",
   sectionLabel: "sectionLabel__526cc",
   entry: "entry__526cc",

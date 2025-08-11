@@ -1,10 +1,11 @@
 /** Chunk was on web.js **/
+/** chunk id: 933513, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 
 function r(e) {
-  let t = null == e ? void 0 : e.activeElement;
-  return ["INPUT", "TEXTAREA"].includes(null == t ? void 0 : t.tagName) || (null == t ? void 0 : t.isContentEditable)
+  let t = null == e ? true : e.activeElement;
+  return ["INPUT", "TEXTAREA"].includes(null == t ? true : t.tagName) || (null == t ? true : t.isContentEditable)
 }
-n.d(t, {
+require.d(exports, {
   Z: () => r
 })

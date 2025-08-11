@@ -1,21 +1,22 @@
 /** Chunk was on web.js **/
+/** chunk id: 376918, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Qt: () => f,
   _H: () => p,
   a7: () => d
 });
-var r = n(367907),
-  i = n(373228),
-  o = n(626135),
-  a = n(981631);
+var Chunk367907 = require("./367907.js"),
+  Chunk373228 = require("./373228.js"),
+  Chunk626135 = require("./626135.js"),
+  Chunk981631 = require("./981631.js");
 
 function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -53,9 +54,9 @@ function d(e, t, n) {
   var i, s, c;
   o.default.track(a.rMx.CHANNEL_AUTOCOMPLETE_OPEN, u(l({}, (0, r.v_)(t), (0, r.hH)(t.guild_id)), {
     autocomplete_type: e,
-    num_emoji_results: null != (i = null == n ? void 0 : n.numEmojiResults) ? i : 0,
-    num_locked_emoji_results: null != (s = null == n ? void 0 : n.numLockedEmojiResults) ? s : 0,
-    num_sticker_results: null != (c = null == n ? void 0 : n.numStickerResults) ? c : 0
+    num_emoji_results: null != (i = null == n ? true : n.numEmojiResults) ? i : 0,
+    num_locked_emoji_results: null != (s = null == n ? true : n.numLockedEmojiResults) ? s : 0,
+    num_sticker_results: null != (c = null == n ? true : n.numStickerResults) ? c : 0
   }))
 }
 
@@ -64,13 +65,13 @@ function f(e, t, n, i) {
   o.default.track(a.rMx.CHANNEL_AUTOCOMPLETE_SELECTED, u(l({}, (0, r.v_)(n), (0, r.hH)(n.guild_id)), {
     autocomplete_type: e,
     selection_type: t,
-    emoji_id: null == i ? void 0 : i.emojiId,
-    sticker_id: null == i ? void 0 : i.stickerId,
-    num_emoji_results: null != (s = null == i ? void 0 : i.numEmojiResults) ? s : 0,
-    num_sticker_results: null != (c = null == i ? void 0 : i.numStickerResults) ? c : 0,
-    emoji_name: null != (d = null == i ? void 0 : i.expressionName) ? d : "",
-    is_custom: null != (f = null == i ? void 0 : i.isCustom) && f,
-    is_animated: null != (_ = null == i ? void 0 : i.isAnimated) && _
+    emoji_id: null == i ? true : i.emojiId,
+    sticker_id: null == i ? true : i.stickerId,
+    num_emoji_results: null != (s = null == i ? true : i.numEmojiResults) ? s : 0,
+    num_sticker_results: null != (c = null == i ? true : i.numStickerResults) ? c : 0,
+    emoji_name: null != (d = null == i ? true : i.expressionName) ? d : "",
+    is_custom: null != (f = null == i ? true : i.isCustom) && f,
+    is_animated: null != (_ = null == i ? true : i.isAnimated) && _
   }))
 }
 

@@ -1,28 +1,29 @@
 /** Chunk was on web.js **/
+/** chunk id: 604151, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   h: () => E
 });
-var r = n(952265),
-  i = n(570140),
-  o = n(281956),
-  a = n(200498),
-  s = n(368442),
-  l = n(672339),
-  c = n(653175),
-  u = n(592125),
-  d = n(430824),
-  f = n(607744),
-  _ = n(944486),
-  p = n(979651),
-  h = n(934415);
+var Chunk952265 = require("./952265.js"),
+  Chunk570140 = require("./570140.js"),
+  Chunk281956 = require("./281956.js"),
+  Chunk200498 = require("./200498.js"),
+  Chunk368442 = require("./368442.js"),
+  Chunk672339 = require("./672339.js"),
+  Chunk653175 = require("./653175.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk430824 = require("./430824.js"),
+  Chunk607744 = require("./607744.js"),
+  Chunk944486 = require("./944486.js"),
+  Chunk979651 = require("./979651.js"),
+  Chunk934415 = require("./934415.js");
 
 function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -39,11 +40,11 @@ function g(e) {
   return e
 }
 let E = function(e, t) {
-  let m = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
-    E = arguments.length > 3 && void 0 !== arguments[3] && arguments[3],
+  let m = arguments.length > 2 && true !== arguments[2] && arguments[2],
+    E = arguments.length > 3 && true !== arguments[3] && arguments[3],
     {
-      lockVoiceStateForResume: b = !1
-    } = arguments.length > 4 && void 0 !== arguments[4] ? arguments[4] : {},
+      lockVoiceStateForResume: b = false
+    } = arguments.length > 4 && true !== arguments[4] ? arguments[4] : {},
     y = u.Z.getChannel(e),
     O = p.Z.getCurrentClientVoiceChannelId(null != t ? t : null) === e,
     v = null != y ? f.Z.getCheck(y.guild_id) : null;

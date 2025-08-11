@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 744217, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   root: "root__2dbe1",
   previewCamera: "previewCamera__2dbe1",
   previewRoot: "previewRoot__2dbe1",

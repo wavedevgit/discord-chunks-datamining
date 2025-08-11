@@ -1,11 +1,12 @@
 /** Chunk was on web.js **/
+/** chunk id: 966434, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => a
 });
-var r = n(668781),
-  i = n(624138),
-  o = n(388032);
+var Chunk668781 = require("./668781.js"),
+  Chunk624138 = require("./624138.js"),
+  Chunk388032 = require("./388032.jsx");
 
 function a(e, t, n, a) {
   var s;
@@ -16,8 +17,8 @@ function a(e, t, n, a) {
     onConfirm: n,
     onCancel: a,
     body: o.intl.format(o.t["5/Xorq"], {
-      currentApplicationName: null != (s = null == e ? void 0 : e.name) ? s : o.intl.string(o.t.G99XFh),
-      currentApplicationChannelName: (0, i.Ew)(null == t ? void 0 : t.name) ? o.intl.string(o.t.OGUjmp) : null == t ? void 0 : t.name
+      currentApplicationName: null != (s = null == e ? true : e.name) ? s : o.intl.string(o.t.G99XFh),
+      currentApplicationChannelName: (0, i.Ew)(null == t ? true : t.name) ? o.intl.string(o.t.OGUjmp) : null == t ? true : t.name
     })
   })
 }

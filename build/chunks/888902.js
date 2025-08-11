@@ -1,22 +1,23 @@
 /** Chunk was on 35535 **/
-t.exports = function() {
+/** chunk id: 888902, original params: t (module,exports,require) **/
+module.exports = function() {
   "use strict";
 
   function t() {
-    this.dataPoints_ = [], this.color_ = "red", this.isVisible_ = !0, this.cacheStartTime_ = null, this.cacheStepSize_ = 0, this.cacheValues_ = []
+    this.dataPoints_ = [], this.color_ = "red", this.isVisible_ = true, this.cacheStartTime_ = null, this.cacheStepSize_ = 0, this.cacheValues_ = []
   }
 
   function i(t, i) {
     this.time = t, this.value = i
   }
-  return t.prototype = {
+  return module.prototype = {
     toJSON: function() {
       if (this.dataPoints_.length < 1) return {};
-      for (var t = [], i = 0; i < this.dataPoints_.length; ++i) t.push(this.dataPoints_[i].value);
+      for (var t = [], i = 0; i < this.dataPoints_.length; ++i) module.push(this.dataPoints_[i].value);
       return {
         startTime: this.dataPoints_[0].time,
         endTime: this.dataPoints_[this.dataPoints_.length - 1].time,
-        values: JSON.stringify(t)
+        values: JSON.stringify(module)
       }
     },
     addPoint: function(t, e) {
@@ -52,5 +53,5 @@ t.exports = function() {
       }
       return s
     }
-  }, t
+  }, module
 }()

@@ -1,17 +1,18 @@
 /** Chunk was on 19726 **/
-n.d(i, {
+/** chunk id: 499747, original params: e,i,n (module,exports,require) **/
+require.d(exports, {
   Z: () => t
 });
-var o = n(475637);
+var Chunk475637 = require("./475637.js");
 let t = {
-  ordinalNumber: (0, n(925300).Z)({
+  ordinalNumber: (0, require("./925300.js").Z)({
     matchPattern: /^(\d+)?/i,
     parsePattern: /\d+/i,
     valueCallback: function(e) {
       return parseInt(e, 10)
     }
   }),
-  era: (0, o.Z)({
+  era: (0, Chunk475637.Z)({
     matchPatterns: {
       narrow: /^(p\.?\s*n\.?\s*e\.?\s*|n\.?\s*e\.?\s*)/i,
       abbreviated: /^(p\.?\s*n\.?\s*e\.?\s*|n\.?\s*e\.?\s*)/i,
@@ -23,7 +24,7 @@ let t = {
     },
     defaultParseWidth: "any"
   }),
-  quarter: (0, o.Z)({
+  quarter: (0, Chunk475637.Z)({
     matchPatterns: {
       narrow: /^[1234]/i,
       abbreviated: /^(I|II|III|IV)\s*kw\.?/i,
@@ -39,7 +40,7 @@ let t = {
       return e + 1
     }
   }),
-  month: (0, o.Z)({
+  month: (0, Chunk475637.Z)({
     matchPatterns: {
       narrow: /^[slmkcwpg]/i,
       abbreviated: /^(sty|lut|mar|kwi|maj|cze|lip|sie|wrz|pa(ź|z)|lis|gru)/i,
@@ -52,7 +53,7 @@ let t = {
     },
     defaultParseWidth: "any"
   }),
-  day: (0, o.Z)({
+  day: (0, Chunk475637.Z)({
     matchPatterns: {
       narrow: /^[npwścs]/i,
       short: /^(nie|pon|wto|(ś|s)ro|czw|pi(ą|a)|sob)/i,
@@ -67,7 +68,7 @@ let t = {
     },
     defaultParseWidth: "any"
   }),
-  dayPeriod: (0, o.Z)({
+  dayPeriod: (0, Chunk475637.Z)({
     matchPatterns: {
       narrow: /^(^a$|^p$|pó(ł|l)n\.?|o\s*pó(ł|l)n\.?|po(ł|l)\.?|w\s*po(ł|l)\.?|po\s*po(ł|l)\.?|rano|wiecz\.?|noc|w\s*nocy)/i,
       any: /^(am|pm|pó(ł|l)noc|o\s*pó(ł|l)nocy|po(ł|l)udnie|w\s*po(ł|l)udnie|popo(ł|l)udnie|po\s*po(ł|l)udniu|rano|wieczór|wieczorem|noc|w\s*nocy)/i

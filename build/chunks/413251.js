@@ -1,17 +1,18 @@
 /** Chunk was on web.js **/
+/** chunk id: 413251, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => c
 });
-var r = n(73800),
-  i = n(442837),
-  o = n(384275),
-  a = n(728345),
-  s = n(812206),
-  l = n(881998);
+var Chunk73800 = require("./73800.js"),
+  Chunk442837 = require("./442837.js"),
+  Chunk384275 = require("./384275.js"),
+  Chunk728345 = require("./728345.js"),
+  Chunk812206 = require("./812206.js"),
+  Chunk881998 = require("./881998.js");
 
 function c(e) {
-  let t = (null == e ? void 0 : e.require_application_authorization) ? e.application_id : null,
+  let t = (null == e ? true : e.require_application_authorization) ? e.application_id : null,
     {
       authorizationsFetchState: n,
       applicationOAuth2Token: c
@@ -20,13 +21,13 @@ function c(e) {
       applicationOAuth2Token: l.Z.getNewestTokenForApplication(t)
     })),
     u = (0, i.e7)([s.Z], () => s.Z.getApplication(t)),
-    d = (0, i.e7)([s.Z], () => s.Z.getApplication(null == u ? void 0 : u.parentId));
+    d = (0, i.e7)([s.Z], () => s.Z.getApplication(null == u ? true : u.parentId));
   (0, r.useEffect)(() => {
     null != t && n === l.M.NOT_FETCHED && o.Z.fetch()
   }, [n, t]), (0, r.useEffect)(() => {
-    null != t && null == u && n === l.M.FETCHED && a.ZP.fetchApplications([t], !1)
+    null != t && null == u && n === l.M.FETCHED && a.ZP.fetchApplications([t], false)
   }, [t, c, n, u]), (0, r.useEffect)(() => {
-    null != u && null != u.parentId && null == d && n === l.M.FETCHED && a.ZP.fetchApplications([u.parentId], !1)
+    null != u && null != u.parentId && null == d && n === l.M.FETCHED && a.ZP.fetchApplications([u.parentId], false)
   }, [u, n, d]);
   let f = null != u && (null == u.parentId || null != d);
   return {

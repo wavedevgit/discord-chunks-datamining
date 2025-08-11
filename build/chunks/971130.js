@@ -1,24 +1,25 @@
 /** Chunk was on 49049 **/
+/** chunk id: 971130, original params: t,e,n (module,exports,require) **/
 let I;
-n.d(e, {
+require.d(exports, {
   Sz: () => R,
   Vg: () => v,
   ZP: () => C,
   an: () => U,
   bm: () => f,
   rh: () => y
-}), n(539854), n(388685);
-var i, r = n(317381),
-  l = n(592125),
-  O = n(271383),
-  u = n(306680),
-  _ = n(699516),
-  T = n(594174),
-  a = n(55589),
-  s = n(483360),
-  N = n(981631),
-  S = n(245335),
-  E = n(388032);
+}), require("./539854.js"), require("./388685.js");
+var i, Chunk317381 = require("./317381.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk271383 = require("./271383.js"),
+  Chunk306680 = require("./306680.js"),
+  Chunk699516 = require("./699516.js"),
+  Chunk594174 = require("./594174.js"),
+  Chunk55589 = require("./55589.js"),
+  Chunk483360 = require("./483360.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk245335 = require("./245335.js"),
+  Chunk388032 = require("./388032.jsx");
 
 function o(t) {
   for (var e = 1; e < arguments.length; e++) {
@@ -30,9 +31,9 @@ function o(t) {
       var I;
       I = n[e], e in t ? Object.defineProperty(t, e, {
         value: I,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
+        enumerable: true,
+        configurable: true,
+        writable: true
       }) : t[e] = I
     })
   }
@@ -51,7 +52,7 @@ function P(t, e) {
     Object.defineProperty(t, n, Object.getOwnPropertyDescriptor(e, n))
   }), t
 }
-I = n(603617);
+I = require("./603617.js");
 var f = ((i = {}).GROUP_DM = "GROUP_DM", i.DM = "DM", i.FRIEND = "FRIEND", i.CHANNEL = "CHANNEL", i);
 let g = (t, e) => null != t && O.ZP.isMember(t, e),
   m = t => {
@@ -72,7 +73,7 @@ let g = (t, e) => null != t && O.ZP.isMember(t, e),
         !(null == n || g(i, n.id)) && (r.add(n.id), l.push({
           type: "FRIEND",
           item: n,
-          isSuggested: !0
+          isSuggested: true
         }), O.numFriends++)
       }
   },
@@ -90,7 +91,7 @@ let g = (t, e) => null != t && O.ZP.isMember(t, e),
         null != e && (I.push({
           type: "CHANNEL",
           item: e,
-          isSuggested: !0
+          isSuggested: true
         }), i.numChannels++)
       }
   },
@@ -113,7 +114,7 @@ let g = (t, e) => null != t && O.ZP.isMember(t, e),
         r.push({
           type: "GROUP_DM",
           item: a,
-          isSuggested: !1
+          isSuggested: false
         }), O.numGroupDms++, S++;
         continue
       }
@@ -125,7 +126,7 @@ let g = (t, e) => null != t && O.ZP.isMember(t, e),
         i.add(t.id), r.push({
           type: "DM",
           item: t,
-          isSuggested: !1
+          isSuggested: false
         }), O.numDms++, S++
       }
     }
@@ -146,7 +147,7 @@ let g = (t, e) => null != t && O.ZP.isMember(t, e),
       !(null == O || g(I, O.id)) && (r.push({
         type: "FRIEND",
         item: O,
-        isSuggested: !1
+        isSuggested: false
       }), l.numFriends++)
     }
   },
@@ -160,7 +161,7 @@ let g = (t, e) => null != t && O.ZP.isMember(t, e),
     i === S.Iq.EMBEDDED_APPLICATION && s.ZP.queryChannels({
       query: e,
       limit: 3,
-      guildId: void 0
+      guildId: true
     }).forEach(t => {
       let {
         record: e,
@@ -169,7 +170,7 @@ let g = (t, e) => null != t && O.ZP.isMember(t, e),
       n.push({
         type: "CHANNEL",
         item: e,
-        isSuggested: !1,
+        isSuggested: false,
         score: i
       }), I.numChannels++
     })
@@ -195,7 +196,7 @@ let g = (t, e) => null != t && O.ZP.isMember(t, e),
       null != _ && null != u.ZP.lastMessageId(_) && (I.add(e.id), i.push({
         type: "DM",
         item: e,
-        isSuggested: !1,
+        isSuggested: false,
         score: O
       }), r.numDms++)
     })
@@ -209,7 +210,7 @@ let g = (t, e) => null != t && O.ZP.isMember(t, e),
     s.ZP.queryGroupDMs({
       query: e,
       limit: 50,
-      fuzzy: !1
+      fuzzy: false
     }).forEach(t => {
       let {
         record: e,
@@ -218,7 +219,7 @@ let g = (t, e) => null != t && O.ZP.isMember(t, e),
       n.push({
         type: "GROUP_DM",
         item: e,
-        isSuggested: !1,
+        isSuggested: false,
         score: i
       }), I.numGroupDms++
     })
@@ -234,7 +235,7 @@ let g = (t, e) => null != t && O.ZP.isMember(t, e),
     s.ZP.queryFriends({
       query: e,
       limit: 500,
-      _fuzzy: !1
+      _fuzzy: false
     }).forEach(t => {
       let {
         record: e,
@@ -243,7 +244,7 @@ let g = (t, e) => null != t && O.ZP.isMember(t, e),
       !(i.has(e.id) || r.has(e.id)) && (r.add(e.id), n.push({
         type: "FRIEND",
         item: e,
-        isSuggested: !1,
+        isSuggested: false,
         score: l
       }), I.numFriends++)
     })
@@ -275,14 +276,14 @@ function U(t) {
       counts: T
     };
     n === S.Iq.EMBEDDED_APPLICATION && (c(P(o({}, t), {
-      includeGroupDms: !1,
+      includeGroupDms: false,
       limit: 1
     })), d(P(o({}, t), {
       suggestedChannelIds: r
     }))), m(P(o({}, t), {
       suggestedUserIds: i
     })), c(P(o({}, t), {
-      includeGroupDms: !0
+      includeGroupDms: true
     })), p(t)
   } else {
     let t = {

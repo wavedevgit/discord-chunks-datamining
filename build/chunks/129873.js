@@ -1,22 +1,23 @@
 /** Chunk was on web.js **/
+/** chunk id: 129873, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   B: () => _
-}), n(539854);
-var r = n(569545),
-  i = n(199902),
-  o = n(314897),
-  a = n(959457),
-  s = n(458725),
-  l = n(442741),
-  c = n(150457);
+}), require("./539854.js");
+var Chunk569545 = require("./569545.js"),
+  Chunk199902 = require("./199902.js"),
+  Chunk314897 = require("./314897.js"),
+  Chunk959457 = require("./959457.js"),
+  Chunk458725 = require("./458725.js"),
+  Chunk442741 = require("./442741.js"),
+  Chunk150457 = require("./150457.js");
 
 function u(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -34,9 +35,9 @@ function d(e) {
 }
 let f = 10,
   _ = {
-    getActiveErrors: () => (0, c.LN)() ? i.Z.getAllActiveStreams().reduce((e, t) => {
+    getActiveErrors: () => (0, Chunk150457.LN)() ? Chunk199902.Z.getAllActiveStreams().reduce((e, t) => {
       var n;
-      let i = null == (n = a.Z.getRTCConnection((0, r.V9)(t))) ? void 0 : n.getMediaEngineConnectionId();
+      let i = null == (n = a.Z.getRTCConnection((0, r.V9)(t))) ? true : n.getMediaEngineConnectionId();
       if (null == i || t.ownerId === o.default.getId()) return e;
       let u = (0, c.hj)(i, t.ownerId);
       return null == u || (100 * u.short.packetLossRate > f || 100 * u.long.packetLossRate > f) && e.push(d({

@@ -1,24 +1,25 @@
 /** Chunk was on 22988 **/
-n.d(t, {
+/** chunk id: 743475, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   BG: () => h,
   DO: () => b,
   pt: () => f
-}), n(388685);
-var r = n(570140),
-  i = n(668781),
-  l = n(881052),
-  a = n(45966),
-  s = n(637853),
-  o = n(592125),
-  c = n(823379),
-  d = n(889369),
-  u = n(570961),
-  m = n(208665),
-  g = n(290511),
-  p = n(388032);
+}), require("./388685.js");
+var Chunk570140 = require("./570140.js"),
+  Chunk668781 = require("./668781.js"),
+  Chunk881052 = require("./881052.js"),
+  Chunk45966 = require("./45966.js"),
+  Chunk637853 = require("./637853.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk823379 = require("./823379.js"),
+  Chunk889369 = require("./889369.js"),
+  Chunk570961 = require("./570961.js"),
+  Chunk208665 = require("./208665.js"),
+  Chunk290511 = require("./290511.js"),
+  Chunk388032 = require("./388032.jsx");
 
 function h() {
-  r.Z.dispatch({
+  Chunk570140.Z.dispatch({
     type: "GUILD_SETTINGS_DEFAULT_CHANNELS_RESET"
   })
 }

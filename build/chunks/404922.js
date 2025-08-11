@@ -1,5 +1,6 @@
 /** Chunk was on 22988 **/
-e.exports = {
+/** chunk id: 404922, original params: e,t,n (module,exports,require) **/
+module.exports = {
   popoutContainer: "popoutContainer_a912c3",
   customColorsHeader: "customColorsHeader_a912c3",
   colorSwatch: "colorSwatch_a912c3",

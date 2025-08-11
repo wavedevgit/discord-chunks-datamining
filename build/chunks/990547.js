@@ -1,19 +1,20 @@
 /** Chunk was on web.js **/
+/** chunk id: 990547, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 let r, i;
-n.r(t), n.d(t, {
-  AnalyticsActionHandlers: () => b.X,
-  Impression: () => y.Impression,
-  ImpressionGroups: () => y.A,
-  ImpressionNames: () => O.z,
-  ImpressionSchema: () => O.ImpressionSchema,
-  ImpressionTypes: () => y.n,
-  NetworkActionNames: () => O.a,
-  StandardAnalyticsLocation: () => y.StandardAnalyticsLocation,
-  StandardAnalyticsSchemaNameMap: () => O.StandardAnalyticsSchemaNameMap,
-  TypedEventProperties: () => y.TypedEventProperties,
-  analyticsTrackingStoreMaker: () => b.l,
-  encodeProperties: () => E.Z,
+require.r(exports), require.d(exports, {
+  AnalyticsActionHandlers: () => Chunk699407.X,
+  Impression: () => Chunk20281.Impression,
+  ImpressionGroups: () => Chunk20281.A,
+  ImpressionNames: () => Chunk525769.z,
+  ImpressionSchema: () => Chunk525769.ImpressionSchema,
+  ImpressionTypes: () => Chunk20281.n,
+  NetworkActionNames: () => Chunk525769.a,
+  StandardAnalyticsLocation: () => Chunk20281.StandardAnalyticsLocation,
+  StandardAnalyticsSchemaNameMap: () => Chunk525769.StandardAnalyticsSchemaNameMap,
+  TypedEventProperties: () => Chunk20281.TypedEventProperties,
+  analyticsTrackingStoreMaker: () => Chunk699407.l,
+  encodeProperties: () => Chunk947486.Z,
   extendSuperProperties: () => z,
   getCampaignParams: () => L,
   getDevice: () => U,
@@ -22,31 +23,31 @@ n.r(t), n.d(t, {
   getSuperPropertiesBase64: () => Q,
   isThrottled: () => K,
   trackMaker: () => q
-}), n(35282), n(704826), n(413496), n(433524), n(388685);
-var o, a = n(348327),
-  s = n.n(a),
-  l = n(512722),
-  c = n.n(l),
-  u = n(264344),
-  d = n.n(u);
-n(804098);
-var f = n(903772),
-  _ = n(627420),
-  p = n(433517),
-  h = n(298444),
-  m = n(979675),
-  g = n(923452),
-  E = n(947486),
-  b = n(699407),
-  y = n(20281),
-  O = n(525769);
+}), require("./35282.js"), require("./704826.js"), require("./413496.js"), require("./433524.js"), require("./388685.js");
+var o, Chunk348327 = require("./348327.js"),
+  s = require.n(Chunk348327),
+  Chunk512722 = require("./512722.js"),
+  c = require.n(Chunk512722),
+  Chunk264344 = require("./264344.js"),
+  d = require.n(Chunk264344);
+require("./804098.js");
+var Chunk903772 = require("./903772.js"),
+  Chunk627420 = require("./627420.js"),
+  Chunk433517 = require("./433517.js"),
+  Chunk298444 = require("./298444.js"),
+  Chunk979675 = require("./979675.js"),
+  Chunk923452 = require("./923452.js"),
+  Chunk947486 = require("./947486.js"),
+  Chunk699407 = require("./699407.js"),
+  Chunk20281 = require("./20281.js"),
+  Chunk525769 = require("./525769.js");
 
 function v(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -91,8 +92,8 @@ if (null != P) {
     a = P.os.arch,
     s = P.os.appArch,
     l = P.remoteApp.getReleaseChannel(),
-    c = (0, _.qf)();
-  switch (n) {
+    c = (0, Chunk627420.qf)();
+  switch (require) {
     case "win32":
       e = "Windows";
       break;
@@ -103,23 +104,23 @@ if (null != P) {
       e = "Linux";
       break;
     default:
-      e = n
+      e = require
   }
   if (r = {
-      os: e,
+      os: module,
       browser: "Discord Client",
-      release_channel: l || "unknown",
-      client_version: t,
+      release_channel: Chunk512722 || "unknown",
+      client_version: exports,
       os_version: i,
-      os_arch: a,
+      os_arch: Chunk348327,
       app_arch: s,
       system_locale: c,
-      has_client_mods: (0, f.e)(),
-      client_launch_id: g.s
-    }, (null == (o = d().name) ? void 0 : o.toLocaleLowerCase()) === "electron" && (r.browser_user_agent = d().ua || "", r.browser_version = d().version || ""), "linux" === n) {
+      has_client_mods: (0, Chunk903772.e)(),
+      client_launch_id: Chunk923452.s
+    }, (null == (o = d().name) ? true : o.toLocaleLowerCase()) === "electron" && (r.browser_user_agent = d().ua || "", r.browser_version = d().version || ""), "linux" === require) {
     let e = P.crashReporter.getMetadata();
-    r.window_manager = e.wm, r.distro = e.distro
-  } else "darwin" === n ? r.os_sdk_version = null == i ? void 0 : i.split(".")[0] : "win32" === n && (r.os_sdk_version = null == i ? void 0 : i.split(".")[2])
+    r.window_manager = module.wm, r.distro = module.distro
+  } else "darwin" === require ? r.os_sdk_version = null == i ? true : i.split(".")[0] : "win32" === require && (r.os_sdk_version = null == i ? true : i.split(".")[2])
 }
 let w = "utm_source utm_medium utm_campaign utm_content utm_term".split(" ");
 
@@ -140,20 +141,20 @@ function L(e) {
 
 function x() {
   let e = document.referrer;
-  return 0 === e.search("https?://(.*)google.([^/?]*)") ? "google" : 0 === e.search("https?://(.*)bing.com") ? "bing" : 0 === e.search("https?://(.*)yahoo.com") ? "yahoo" : 0 === e.search("https?://(.*)duckduckgo.com") ? "duckduckgo" : null
+  return 0 === module.search("https?://(.*)google.([^/?]*)") ? "google" : 0 === module.search("https?://(.*)bing.com") ? "bing" : 0 === module.search("https?://(.*)yahoo.com") ? "yahoo" : 0 === module.search("https?://(.*)duckduckgo.com") ? "duckduckgo" : null
 }
 
 function M() {
   let e = {},
     t = document.referrer,
     n = x(),
-    r = "yahoo" !== n ? "q" : "p";
-  if (null != n) {
-    e.search_engine = n;
-    let i = D(t, r);
-    i.length > 0 && (e.mp_keyword = i)
+    r = "yahoo" !== require ? "q" : "p";
+  if (null != require) {
+    module.search_engine = require;
+    let i = D(exports, r);
+    i.length > 0 && (module.mp_keyword = i)
   }
-  return e
+  return module
 }
 
 function k() {
@@ -163,18 +164,18 @@ function k() {
   } = window.navigator, {
     opera: n
   } = window;
-  if (n) return /Mini/.test(e) ? "Opera Mini" : "Opera";
-  if (/(BlackBerry|PlayBook|BB10)/i.test(e)) return "BlackBerry";
-  if (/FBIOS/.test(e)) return "Facebook Mobile";
-  if (/CriOS/.test(e)) return "Chrome iOS";
-  if (/Apple/.test(t)) return /Mobile/.test(e) || null != window.navigator.maxTouchPoints && window.navigator.maxTouchPoints > 2 ? "Mobile Safari" : "Safari";
-  else if (/Android/.test(e)) return /Chrome/.test(e) ? "Android Chrome" : "Android Mobile";
-  else if (/Edge/.test(e)) return "Edge";
-  else if (/Chrome/.test(e)) return "Chrome";
-  else if (/Konqueror/.test(e)) return "Konqueror";
-  else if (/Firefox/.test(e)) return "Firefox";
-  else if (/MSIE|Trident\//.test(e)) return "Internet Explorer";
-  else if (/Gecko/.test(e)) return "Mozilla";
+  if (require) return /Mini/.test(module) ? "Opera Mini" : "Opera";
+  if (/(BlackBerry|PlayBook|BB10)/i.test(module)) return "BlackBerry";
+  if (/FBIOS/.test(module)) return "Facebook Mobile";
+  if (/CriOS/.test(module)) return "Chrome iOS";
+  if (/Apple/.test(exports)) return /Mobile/.test(module) || null != window.navigator.maxTouchPoints && window.navigator.maxTouchPoints > 2 ? "Mobile Safari" : "Safari";
+  else if (/Android/.test(module)) return /Chrome/.test(module) ? "Android Chrome" : "Android Mobile";
+  else if (/Edge/.test(module)) return "Edge";
+  else if (/Chrome/.test(module)) return "Chrome";
+  else if (/Konqueror/.test(module)) return "Konqueror";
+  else if (/Firefox/.test(module)) return "Firefox";
+  else if (/MSIE|Trident\//.test(module)) return "Internet Explorer";
+  else if (/Gecko/.test(module)) return "Mozilla";
   else return ""
 }
 
@@ -182,12 +183,12 @@ function j() {
   let {
     userAgent: e
   } = window.navigator;
-  if (/Windows/i.test(e)) return /Phone/.test(e) ? "Windows Mobile" : "Windows";
-  if (/(iPhone|iPad|iPod)/.test(e)) return "iOS";
-  if (/Android/.test(e)) return "Android";
-  if (/(BlackBerry|PlayBook|BB10)/i.test(e)) return "BlackBerry";
-  if (/Mac/i.test(e)) return null != window.navigator.maxTouchPoints && window.navigator.maxTouchPoints > 2 ? "iOS" : "Mac OS X";
-  else if (/Linux/i.test(e)) return "Linux";
+  if (/Windows/i.test(module)) return /Phone/.test(module) ? "Windows Mobile" : "Windows";
+  if (/(iPhone|iPad|iPod)/.test(module)) return "iOS";
+  if (/Android/.test(module)) return "Android";
+  if (/(BlackBerry|PlayBook|BB10)/i.test(module)) return "BlackBerry";
+  if (/Mac/i.test(module)) return null != window.navigator.maxTouchPoints && window.navigator.maxTouchPoints > 2 ? "iOS" : "Mac OS X";
+  else if (/Linux/i.test(module)) return "Linux";
   else return ""
 }
 
@@ -195,22 +196,22 @@ function U() {
   let {
     userAgent: e
   } = window.navigator;
-  if (/(BlackBerry|PlayBook|BB10)/i.test(e)) return "BlackBerry";
-  if (/Windows Phone/i.test(e)) return "Windows Phone";
-  if (/Android/.test(e)) return "Android";
-  if (/iPhone/.test(e)) return "iPhone";
-  if (/iPad/.test(e)) return "iPad";
+  if (/(BlackBerry|PlayBook|BB10)/i.test(module)) return "BlackBerry";
+  if (/Windows Phone/i.test(module)) return "Windows Phone";
+  if (/Android/.test(module)) return "Android";
+  if (/iPhone/.test(module)) return "iPhone";
+  if (/iPad/.test(module)) return "iPad";
   else return ""
 }
 
 function G() {
   let e = document.referrer.split("/");
-  return e.length >= 3 ? e[2] : ""
+  return module.length >= 3 ? module[2] : ""
 }
 
 function B() {
   let e = {};
-  return e.os = j(), e.browser = k(), e.device = U(), e.system_locale = (0, _.qf)(), e.has_client_mods = (0, f.e)(), e
+  return module.os = j(), module.browser = k(), module.device = U(), module.system_locale = (0, Chunk627420.qf)(), module.has_client_mods = (0, Chunk903772.e)(), module
 }
 
 function Z() {
@@ -219,13 +220,13 @@ function Z() {
     browser_user_agent: window.navigator.userAgent || "",
     browser_version: d().version || ""
   }), {
-    os_version: null != (t = null === d() || void 0 === d() || null == (e = d().os) ? void 0 : e.version) ? t : ""
+    os_version: null != (t = null === d() || true === d() || null == (e = d().os) ? true : module.version) ? exports : ""
   })
 }
 
 function F() {
   let e = {};
-  return e.referrer = document.referrer, e.referring_domain = G(), e = I({}, e, L(window.location.href), M())
+  return module.referrer = document.referrer, module.referring_domain = G(), e = I({}, module, L(window.location.href), M())
 }
 
 function V(e, t) {
@@ -234,12 +235,12 @@ function V(e, t) {
 }
 
 function H() {
-  let e = p.K.get(A);
-  null == e && (e = B(), p.K.set(A, e));
-  let t = p.K.get(N);
-  null == t && (t = F(), p.K.set(N, t));
-  let n = h.x.get(N);
-  return null == n && (n = V(F(), "_current"), h.x.set(N, n)), I({}, e, Z(), t, n)
+  let e = Chunk433517.K.get(A);
+  null == module && (e = B(), Chunk433517.K.set(A, module));
+  let t = Chunk433517.K.get(N);
+  null == exports && (t = F(), Chunk433517.K.set(N, exports));
+  let n = Chunk298444.x.get(N);
+  return null == require && (n = V(F(), "_current"), Chunk298444.x.set(N, require)), I({}, module, Z(), exports, require)
 }
 
 function Y() {
@@ -253,11 +254,11 @@ function W() {
   var e, t;
   let n = {},
     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
-  r && (null == n.release_channel || "" === n.release_channel) && (n.release_channel = r.split("-")[0]);
+  r && (null == require.release_channel || "" === require.release_channel) && (require.release_channel = r.split("-")[0]);
   let i = parseInt("429655", 10);
-  isNaN(i) || (n.client_build_number = i);
-  let o = null == P || null == (e = (t = P.remoteApp).getBuildNumber) ? void 0 : e.call(t);
-  return isNaN(o) || (n.native_build_number = o), n.client_event_source = Y(), n.has_client_mods = (0, f.e)(), n.client_launch_id = g.s, n
+  isNaN(i) || (require.client_build_number = i);
+  let o = null == P || null == (e = (t = P.remoteApp).getBuildNumber) ? true : module.call(exports);
+  return isNaN(o) || (require.native_build_number = o), require.client_event_source = Y(), require.has_client_mods = (0, Chunk903772.e)(), require.client_launch_id = Chunk923452.s, require
 }
 
 function K(e) {
@@ -280,8 +281,8 @@ let q = e => {
     TRACK_ACTION_NAME: i
   } = e, o = (0, m.$)(r, i);
   return function(e, r) {
-    let i = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {};
-    if (null != n.g.isServerRendering && !0 === n.g.isServerRendering) return Promise.resolve();
+    let i = arguments.length > 2 && true !== arguments[2] ? arguments[2] : {};
+    if (null != n.g.isServerRendering && true === n.g.isServerRendering) return Promise.resolve();
     let a = null != r ? r : {},
       l = t[e];
     if ("function" == typeof l) {
@@ -300,7 +301,7 @@ let q = e => {
         C[t] = Date.now() + l.throttlePeriod
       } else if ("throttlePercent" in l) {
       if (Math.random() > l.throttlePercent) return Promise.resolve()
-    } else c()(!1, "Unsupported analytics event config: ".concat(l));
+    } else c()(false, "Unsupported analytics event config: ".concat(l));
     return o(e, r, i)
   }
 };

@@ -1,0 +1,1 @@
+{"id":"556178","type":"experiment","data":{"kind":"guild","id":"2023-09_gaming_stats_setup","label":"Gaming stats exposure setup","defaultConfig":{"trackGamingStats":false},"treatments":[{"id":1,"label":"trigger gaming stats data","config":{"trackGamingStats":true}}]},"fromModule":{"id":"web.js"}}

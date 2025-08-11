@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 903276, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   text: "text_c8b06d",
   textLeft: "textLeft_c8b06d text_c8b06d",
   textRight: "textRight_c8b06d text_c8b06d",

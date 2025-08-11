@@ -1,18 +1,19 @@
 /** Chunk was on web.js **/
+/** chunk id: 475674, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => s
-}), n(388685), n(642613);
-var r = n(442837),
-  i = n(458725),
-  o = n(915525);
+}), require("./388685.js"), require("./642613.js");
+var Chunk442837 = require("./442837.js"),
+  Chunk458725 = require("./458725.js"),
+  Chunk915525 = require("./915525.js");
 let a = {
-  [i.u.STREAM_SOUNDSHARE_FAILED]: 0,
-  [i.u.STREAM_SEND_HIGH_PACKET_LOSS]: 1,
-  [i.u.STREAM_VIEW_HIGH_PACKET_LOSS]: 1,
-  [i.u.STREAM_SEND_LOW_FPS]: 2,
-  [i.u.STREAM_VIEW_LOW_FPS]: 2,
-  [i.u.STREAM_BAD_NETWORK_QUALITY]: 3
+  [Chunk458725.u.STREAM_SOUNDSHARE_FAILED]: 0,
+  [Chunk458725.u.STREAM_SEND_HIGH_PACKET_LOSS]: 1,
+  [Chunk458725.u.STREAM_VIEW_HIGH_PACKET_LOSS]: 1,
+  [Chunk458725.u.STREAM_SEND_LOW_FPS]: 2,
+  [Chunk458725.u.STREAM_VIEW_LOW_FPS]: 2,
+  [Chunk458725.u.STREAM_BAD_NETWORK_QUALITY]: 3
 };
 
 function s(e) {
@@ -22,6 +23,6 @@ function s(e) {
       var n, r;
       return (null != (n = a[e.type]) ? n : 0) - (null != (r = a[t.type]) ? r : 0)
     })[0];
-    return null == e ? void 0 : e.type
+    return null == e ? true : e.type
   }, [t])
 }

@@ -1,13 +1,14 @@
 /** Chunk was on web.js **/
+/** chunk id: 48854, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   r: () => a
 });
-var r = n(709054);
+var Chunk709054 = require("./709054.js");
 let i = 0,
-  o = new r.SnowflakeSequence;
+  o = new Chunk709054.SnowflakeSequence;
 
 function a() {
   let e = Date.now();
-  return i !== e && (o.reset(), i = e), r.default.fromTimestampWithSequence(e, o)
+  return i !== module && (o.reset(), i = module), Chunk709054.default.fromTimestampWithSequence(module, o)
 }

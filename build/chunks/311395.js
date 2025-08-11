@@ -1,17 +1,18 @@
 /** Chunk was on web.js **/
+/** chunk id: 311395, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => f
-}), n(314940);
-var r = n(73800),
-  i = n(278074),
-  o = n(979554),
-  a = n(399606),
-  s = n(626135),
-  l = n(597688),
-  c = n(884697),
-  u = n(981631),
-  d = n(474936);
+}), require("./314940.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk278074 = require("./278074.js"),
+  Chunk979554 = require("./979554.js"),
+  Chunk399606 = require("./399606.js"),
+  Chunk626135 = require("./626135.js"),
+  Chunk597688 = require("./597688.js"),
+  Chunk884697 = require("./884697.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk474936 = require("./474936.js");
 let f = e => {
   let t = (0, a.e7)([l.Z], () => l.Z.products);
   return (0, r.useCallback)(n => {
@@ -20,9 +21,9 @@ let f = e => {
       skuId: a
     } = n, l = t.get(a);
     s.default.track(u.rMx.PREMIUM_FEATURE_TRY_OUT, {
-      feature_name: (0, i.EQ)(r).with(o.Z.AVATAR_DECORATION, () => d.QP.AVATAR_DECORATION).with(o.Z.PROFILE_EFFECT, () => d.QP.PROFILE_EFFECT).otherwise(() => void 0),
+      feature_name: (0, i.EQ)(r).with(o.Z.AVATAR_DECORATION, () => d.QP.AVATAR_DECORATION).with(o.Z.PROFILE_EFFECT, () => d.QP.PROFILE_EFFECT).otherwise(() => true),
       feature_tier: (0, c.G1)(l) ? d.h1.FREE : d.h1.PREMIUM_STANDARD,
-      feature_selection: null == l ? void 0 : l.name,
+      feature_selection: null == l ? true : l.name,
       location_stack: e
     })
   }, [t, e])

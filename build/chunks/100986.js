@@ -1,16 +1,17 @@
 /** Chunk was on web.js **/
+/** chunk id: 100986, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => f
 });
-var r = n(594190),
-  i = n(592125),
-  o = n(19780),
-  a = n(944486),
-  s = n(626135),
-  l = n(710111),
-  c = n(981631),
-  u = n(474936);
+var Chunk594190 = require("./594190.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk19780 = require("./19780.js"),
+  Chunk944486 = require("./944486.js"),
+  Chunk626135 = require("./626135.js"),
+  Chunk710111 = require("./710111.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk474936 = require("./474936.js");
 
 function d(e, t) {
   return e.guildId === l.X8 ? "default" : t ? "custom-external" : "custom"
@@ -19,10 +20,10 @@ function d(e, t) {
 function f(e, t, n, f) {
   var _;
   let p = i.Z.getChannel(a.Z.getVoiceChannelId()),
-    h = null == p ? void 0 : p.getGuildId(),
+    h = null == p ? true : p.getGuildId(),
     m = o.Z.getMediaSessionId(),
     g = o.Z.getRTCConnectionId(),
-    E = null == (_ = r.ZP.getCurrentGameForAnalytics()) ? void 0 : _.name,
+    E = null == (_ = r.ZP.getCurrentGameForAnalytics()) ? true : _.name,
     b = h !== n.guildId && n.guildId !== l.X8,
     y = d(n, b);
   s.default.track(c.rMx.PREMIUM_FEATURE_USAGE, {

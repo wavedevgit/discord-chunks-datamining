@@ -1,27 +1,28 @@
 /** Chunk was on 1272 **/
-n.d(t, {
+/** chunk id: 647656, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => O
-}), n(388685), n(997841), n(415506), n(35282);
-var r = n(392711),
-  i = n.n(r),
-  l = n(243814),
-  a = n(734959),
-  o = n(570140),
-  s = n(212517),
-  c = n(812206),
-  u = n(813370),
-  d = n(626135),
-  p = n(81063),
-  f = n(70956),
-  h = n(996106),
-  g = n(452426),
-  m = n(186901),
-  b = n(981631);
+}), require("./388685.js"), require("./997841.js"), require("./415506.js"), require("./35282.js");
+var Chunk392711 = require("./392711.js"),
+  i = require.n(Chunk392711),
+  Chunk243814 = require("./243814.js"),
+  Chunk734959 = require("./734959.js"),
+  Chunk570140 = require("./570140.js"),
+  Chunk212517 = require("./212517.js"),
+  Chunk812206 = require("./812206.js"),
+  Chunk813370 = require("./813370.js"),
+  Chunk626135 = require("./626135.js"),
+  Chunk81063 = require("./81063.js"),
+  Chunk70956 = require("./70956.js"),
+  Chunk996106 = require("./996106.js"),
+  Chunk452426 = require("./452426.js"),
+  Chunk186901 = require("./186901.js"),
+  Chunk981631 = require("./981631.js");
 let _ = ["349134787773988865"],
   O = {
-    [b.Etm.SET_ACTIVITY]: {
+    [Chunk981631.Etm.SET_ACTIVITY]: {
       scope: {
-        [m.Gp.ANY]: [l.x.RPC, l.x.RPC_ACTIVITIES_WRITE, m.lH]
+        [Chunk186901.Gp.ANY]: [Chunk243814.x.RPC, Chunk243814.x.RPC_ACTIVITIES_WRITE, Chunk186901.lH]
       },
       validation: e => (0, g.Z)(e).required().keys({
         pid: e.number().min(0),
@@ -90,7 +91,7 @@ let _ = ["349134787773988865"],
         a.application_id = E;
         let y = r.transport === m.He.POST_MESSAGE;
         a.platform = y ? b.M7m.EMBEDDED : b.M7m.DESKTOP;
-        let v = c.Z.getApplication(null != E ? E : void 0),
+        let v = c.Z.getApplication(null != E ? E : true),
           I = 0;
         null != v && (0, u.g)(v) && y && (I |= (0, s.ZW)(I));
         let C = (0, s.S5)(a, y);
@@ -142,9 +143,9 @@ let _ = ["349134787773988865"],
             status_display_type: a.status_display_type,
             details: null != (i = a.details) ? i : "",
             state: null != (s = a.state) ? s : "",
-            has_urls: null != a.state_url || null != a.details_url || (null == (t = a.assets) ? void 0 : t.large_url) != null || (null == (n = a.assets) ? void 0 : n.small_url) != null
+            has_urls: null != a.state_url || null != a.details_url || (null == (t = a.assets) ? true : t.large_url) != null || (null == (n = a.assets) ? true : n.small_url) != null
           };
-          return null != p && (h.has_match_secret = !!p.match, h.has_join_secret = !!p.join), null != S && (h.has_images = !!(S.large_image || S.small_image)), null != f && (h.party_max = null != f.size && f.size[1] > 0 ? f.size[1] : void 0, h.party_id = f.id), d.default.track(b.rMx.ACTIVITY_UPDATED, h), a
+          return null != p && (h.has_match_secret = !!p.match, h.has_join_secret = !!p.join), null != S && (h.has_images = !!(S.large_image || S.small_image)), null != f && (h.party_max = null != f.size && f.size[1] > 0 ? f.size[1] : true, h.party_id = f.id), d.default.track(b.rMx.ACTIVITY_UPDATED, h), a
         })
       }
     }

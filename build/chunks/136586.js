@@ -1,5 +1,6 @@
 /** Chunk was on web.js **/
-e.exports = function(e) {
+/** chunk id: 136586, original params: e (module,exports,re quire) **/
+module.exports = function(e) {
   return {
     name: "PHP template",
     subLanguage: "xml",
@@ -10,25 +11,25 @@ e.exports = function(e) {
       contains: [{
         begin: "/\\*",
         end: "\\*/",
-        skip: !0
+        skip: true
       }, {
         begin: 'b"',
         end: '"',
-        skip: !0
+        skip: true
       }, {
         begin: "b'",
         end: "'",
-        skip: !0
+        skip: true
       }, e.inherit(e.APOS_STRING_MODE, {
         illegal: null,
         className: null,
         contains: null,
-        skip: !0
+        skip: true
       }), e.inherit(e.QUOTE_STRING_MODE, {
         illegal: null,
         className: null,
         contains: null,
-        skip: !0
+        skip: true
       })]
     }]
   }

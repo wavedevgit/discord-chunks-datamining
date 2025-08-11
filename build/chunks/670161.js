@@ -1,5 +1,6 @@
 /** Chunk was on 34779 **/
-e.exports = {
+/** chunk id: 670161, original params: e,t,n (module,exports,require) **/
+module.exports = {
   chatWheelMouseInput: "chatWheelMouseInput_adfa30",
   chatWheel: "chatWheel_adfa30",
   chatWheelBackground: "chatWheelBackground_adfa30",

@@ -1,6 +1,7 @@
 /** Chunk was on 71879 **/
+/** chunk id: 773967, original params: e,t,n (module,exports,require) **/
 "use strict";
-e.exports = {
+module.exports = {
   container: "container_cba043",
   header: "header_cba043",
   text: "text_cba043",

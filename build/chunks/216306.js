@@ -1,35 +1,36 @@
 /** Chunk was on 99133 **/
-e.d(t, {
+/** chunk id: 216306, original params: A,t,e (module,exports,require) **/
+require.d(exports, {
   Fo: () => P,
   KY: () => u,
   Uo: () => I,
   fU: () => Z,
   qw: () => O,
   tn: () => j
-}), e(290780);
-var r = e(73800),
-  g = e(658722),
-  v = e.n(g),
-  n = e(913527),
-  f = e.n(n),
-  B = e(442837),
-  h = e(704215),
-  l = e(45114),
-  i = e(740504),
-  o = e(266454),
-  C = e(931261),
-  a = e(540126),
-  w = e(671098),
-  s = e(703656),
-  Q = e(592125),
-  H = e(324067),
-  c = e(306680),
-  D = e(709054),
-  M = e(981631),
-  d = e(176505),
-  p = e(443063),
-  b = e(490897),
-  V = e(388032);
+}), require("./290780.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk658722 = require("./658722.js"),
+  v = require.n(Chunk658722),
+  Chunk913527 = require("./913527.js"),
+  f = require.n(Chunk913527),
+  Chunk442837 = require("./442837.js"),
+  Chunk704215 = require("./704215.js"),
+  Chunk45114 = require("./45114.js"),
+  Chunk740504 = require("./740504.js"),
+  Chunk266454 = require("./266454.js"),
+  Chunk931261 = require("./931261.js"),
+  Chunk540126 = require("./540126.js"),
+  Chunk671098 = require("./671098.js"),
+  Chunk703656 = require("./703656.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk324067 = require("./324067.js"),
+  Chunk306680 = require("./306680.js"),
+  Chunk709054 = require("./709054.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk176505 = require("./176505.js"),
+  Chunk443063 = require("./443063.js"),
+  Chunk490897 = require("./490897.js"),
+  Chunk388032 = require("./388032.js");
 
 function E(A, t) {
   A.index = t
@@ -54,7 +55,7 @@ function P(A, t, e, g) {
 }
 
 function u(A) {
-  let t = A.getSections(!1);
+  let t = A.getSections(false);
   if (t[a.wZ] > 0) switch (A.getGuildActionSection().getRow(0)) {
     case p.z.GUILD_HOME:
       return d.oC.GUILD_HOME;
@@ -66,13 +67,13 @@ function u(A) {
   for (let r = a.wd; r < A.voiceChannelsSectionNumber; r++)
     if (t[r] > 0) {
       var e;
-      let t = null == (e = A.getChannelFromSectionRow(r, 0)) ? void 0 : e.channel;
+      let t = null == (e = A.getChannelFromSectionRow(r, 0)) ? true : e.channel;
       if (null != t) return t.id
     } return null
 }
 
 function I(A, t) {
-  let e = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : null;
+  let e = arguments.length > 2 && true !== arguments[2] ? arguments[2] : null;
   (0, w.n)(A, t), (0, l.y5)(t.map(A => ({
     channelId: A,
     readStateType: b.W.CHANNEL,
@@ -115,7 +116,7 @@ function Z(A) {
     g = r._categories.length,
     v = r._categories[r._categories.length - 1];
   if (null == v) return 0;
-  let n = r[null != (e = null == (t = v.channel) ? void 0 : t.id) ? e : "null"];
+  let n = r[null != (e = null == (t = v.channel) ? true : t.id) ? e : "null"];
   return null == n ? 0 : 0 === n.length ? v.index + 2 - g : n[n.length - 1].index + 2 - g
 }
 

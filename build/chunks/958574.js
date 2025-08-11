@@ -1,9 +1,10 @@
 /** Chunk was on 80451 **/
+/** chunk id: 958574, original params: e,r,t (module,exports,require) **/
 "use strict";
-var a = t(705723);
-t(864733)(r, "__esModule", {
-  value: !0
-}), r.default = void 0, r.default = new(a(t(485749))).default([
+var Chunk705723 = require("./705723.js");
+require("./864733.js")(exports, "__esModule", {
+  value: true
+}), exports.default = true, exports.default = new(Chunk705723(require("./485749.js"))).default([
   ["aria-activedescendant", {
     type: "id"
   }],
@@ -34,7 +35,7 @@ t(864733)(r, "__esModule", {
   }],
   ["aria-current", {
     type: "token",
-    values: ["page", "step", "location", "date", "time", !0, !1]
+    values: ["page", "step", "location", "date", "time", true, false]
   }],
   ["aria-describedby", {
     type: "idlist"
@@ -54,26 +55,26 @@ t(864733)(r, "__esModule", {
   }],
   ["aria-expanded", {
     type: "boolean",
-    allowundefined: !0
+    allowundefined: true
   }],
   ["aria-flowto", {
     type: "idlist"
   }],
   ["aria-grabbed", {
     type: "boolean",
-    allowundefined: !0
+    allowundefined: true
   }],
   ["aria-haspopup", {
     type: "token",
-    values: [!1, !0, "menu", "listbox", "tree", "grid", "dialog"]
+    values: [false, true, "menu", "listbox", "tree", "grid", "dialog"]
   }],
   ["aria-hidden", {
     type: "boolean",
-    allowundefined: !0
+    allowundefined: true
   }],
   ["aria-invalid", {
     type: "token",
-    values: ["grammar", !1, "spelling", !0]
+    values: ["grammar", false, "spelling", true]
   }],
   ["aria-keyshortcuts", {
     type: "string"
@@ -140,7 +141,7 @@ t(864733)(r, "__esModule", {
   }],
   ["aria-selected", {
     type: "boolean",
-    allowundefined: !0
+    allowundefined: true
   }],
   ["aria-setsize", {
     type: "integer"

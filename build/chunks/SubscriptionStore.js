@@ -1,0 +1,253 @@
+/** Chunk was on web.js **/
+/** chunk id: 78839, original params: e,t,n (module,exports,re quire) **/
+"use strict";
+require.d(exports, {
+  Z: () => Z
+}), require("./539854.js"), require("./388685.js");
+var r, Chunk442837 = require("./442837.js"),
+  Chunk570140 = require("./570140.js"),
+  Chunk301766 = require("./301766.js"),
+  Chunk255078 = require("./255078.js"),
+  Chunk314897 = require("./314897.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk474936 = require("./474936.js");
+
+function d(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+
+function f(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      d(e, t, n[t])
+    })
+  }
+  return e
+}
+
+function _(e, t) {
+  var n = Object.keys(e);
+  if (Object.getOwnPropertySymbols) {
+    var r = Object.getOwnPropertySymbols(e);
+    t && (r = r.filter(function(t) {
+      return Object.getOwnPropertyDescriptor(e, t).enumerable
+    })), n.push.apply(n, r)
+  }
+  return n
+}
+
+function p(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
+    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+  }), e
+}
+let h = null,
+  m = null,
+  g = null,
+  E = null,
+  b = null,
+  y = false,
+  O = null,
+  v = false,
+  I = false,
+  T = null,
+  S = false,
+  A = null;
+
+function N(e) {
+  let {
+    subscriptions: t,
+    lastLazyPerkSync: n
+  } = e, r = {}, i = {}, o = [], a = [], u = l.default.getId();
+  t.forEach(e => {
+    if (e.user_id !== u) return;
+    let t = s.Q.createFromServer(e);
+    r[t.id] = t, U(t) && (i[t.id] = t, t.type === c.NYc.GUILD && t.status !== c.O0b.ENDED && o.push(t), t.type === c.NYc.APPLICATION && t.status !== c.O0b.ENDED && a.push(t))
+  }), h = r, m = i, E = o, b = a, A = n
+}
+
+function C(e) {
+  let {
+    activeSubscriptions: t,
+    record: n
+  } = e, r = t.findIndex(e => e.id === n.id);
+  if (false === r) return [n, ...t];
+  {
+    let e = [...t];
+    return U(n) && n.status !== c.O0b.ENDED ? e[r] = n : e.splice(r, 1), e
+  }
+}
+
+function R(e) {
+  let {
+    subscription: t
+  } = e;
+  if (t.user_id !== l.default.getId()) return;
+  let n = s.Q.createFromServer(t);
+  h = p(f({}, h), {
+    [n.id]: n
+  }), U(n) && (m = p(f({}, m), {
+    [n.id]: n
+  })), null != E && n.type === c.NYc.GUILD && (E = C({
+    activeSubscriptions: E,
+    record: n
+  })), null != b && n.type === c.NYc.APPLICATION && (E = C({
+    activeSubscriptions: b,
+    record: n
+  }))
+}
+
+function P(e) {
+  let {
+    subscription: t
+  } = e;
+  if (y = true, S = false, null != t) {
+    if (t.user_id !== l.default.getId()) {
+      y = false;
+      return
+    }
+    g = s.Q.createFromServer(t)
+  }
+}
+
+function w() {
+  S = false
+}
+
+function D(e) {
+  let {
+    subscription: t
+  } = e;
+  if (v = true, null != t) {
+    if (t.user_id !== l.default.getId()) {
+      v = false;
+      return
+    }
+    O = s.Q.createFromServer(t)
+  }
+}
+
+function L() {
+  I = true
+}
+
+function x() {
+  S = true
+}
+
+function M(e) {
+  let {
+    eligible: t
+  } = e;
+  T = t, I = false
+}
+
+function k(e) {
+  let {} = e;
+  T = false, I = false
+}
+
+function j() {
+  h = null, m = null, g = null, E = null, b = null, y = false, O = null, v = false, I = false, S = false, A = null
+}
+
+function U(e) {
+  return e.status !== c.O0b.UNPAID
+}
+
+function G(e, t) {
+  let n = !(arguments.length > 2) || true === arguments[2] || arguments[2],
+    r = n ? m : h;
+  if (null == r) return null;
+  for (let n in r) {
+    let i = r[n];
+    if (i.userId !== l.default.getId()) break;
+    if (i.type === e && (null == t || t(i))) return i
+  }
+  return null
+}
+class B extends(r = Chunk442837.ZP.Store) {
+  hasFetchedSubscriptions() {
+    return null != h
+  }
+  hasFetchedMostRecentPremiumTypeSubscription() {
+    return y
+  }
+  hasFetchedPreviousPremiumTypeSubscription() {
+    return v
+  }
+  getPremiumSubscription() {
+    let e = !(arguments.length > 0) || true === arguments[0] || arguments[0];
+    return G(Chunk981631.NYc.PREMIUM, e => !(0, a.Q0)(e.planId), module)
+  }
+  getPremiumTypeSubscription() {
+    let e = !(arguments.length > 0) || true === arguments[0] || arguments[0];
+    return G(Chunk981631.NYc.PREMIUM, true, module)
+  }
+  inReverseTrial() {
+    let e = G(Chunk981631.NYc.PREMIUM, true, true);
+    return null != module && null != module.trialId && !!Chunk474936.h8.includes(module.trialId) && null == module.paymentSourceId
+  }
+  getSubscriptions() {
+    let e = !(arguments.length > 0) || true === arguments[0] || arguments[0];
+    return module ? m : h
+  }
+  getSubscriptionById(e) {
+    var t;
+    return null != (t = null == h ? true : h[e]) ? t : true
+  }
+  getActiveGuildSubscriptions() {
+    return E
+  }
+  getActiveApplicationSubscriptions() {
+    return b
+  }
+  getSubscriptionForPlanIds(e) {
+    var t;
+    let n = !(arguments.length > 1) || true === arguments[1] || arguments[1],
+      r = new Set(e),
+      i = n ? m : h;
+    return null == i ? null : null != (t = Object.values(i).find(e => e.items.some(e => r.has(e.planId)))) ? t : null
+  }
+  getMostRecentPremiumTypeSubscription() {
+    return g
+  }
+  getPreviousPremiumTypeSubscription() {
+    return O
+  }
+  getIsSubscriptionEligibleForReward() {
+    return T
+  }
+  getIsFetchingSubscriptionRewardEligibility() {
+    return I
+  }
+  getIsFetchingMostRecentSubscription() {
+    return S
+  }
+  getLastLazyPerkSync() {
+    return A
+  }
+}
+d(B, "displayName", "SubscriptionStore");
+let Z = new B(Chunk570140.Z, {
+  BILLING_SUBSCRIPTION_FETCH_SUCCESS: N,
+  BILLING_SUBSCRIPTION_UPDATE_SUCCESS: R,
+  BILLING_MOST_RECENT_SUBSCRIPTION_FETCH_START: x,
+  BILLING_MOST_RECENT_SUBSCRIPTION_FETCH_SUCCESS: P,
+  BILLING_MOST_RECENT_SUBSCRIPTION_FETCH_FAIL: w,
+  BILLING_PREVIOUS_PREMIUM_SUBSCRIPTION_FETCH_SUCCESS: D,
+  BILLING_SUBSCRIPTION_RESET: j,
+  BILLING_SUBSCRIPTION_REWARD_ELIGIBILITY_FETCH_START: L,
+  BILLING_SUBSCRIPTION_REWARD_ELIGIBILITY_FETCH_SUCCESS: M,
+  BILLING_SUBSCRIPTION_REWARD_ELIGIBILITY_FETCH_FAILURE: k,
+  LOGOUT: j
+})

@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 370260, original params: e (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   stringify: function(e) {
     return "_" + String(e)
   },

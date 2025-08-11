@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 922127, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   discriminator: "discriminator__78c91",
   username: "username__78c91",
   tag: "tag__78c91",

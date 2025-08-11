@@ -1,10 +1,11 @@
 /** Chunk was on web.js **/
+/** chunk id: 866138, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-Object.defineProperty(t, "__esModule", {
-  value: !0
-}), t.stringFormatter = t.StringBuilder = void 0, t.formatToPlainString = o;
-let r = n(593269);
-class i extends r.FormatBuilder {
+Object.defineProperty(exports, "__esModule", {
+  value: true
+}), exports.stringFormatter = exports.StringBuilder = true, exports.formatToPlainString = o;
+let Chunk593269 = require("./593269.js");
+class i extends Chunk593269.FormatBuilder {
   constructor() {
     super(...arguments), this.result = ""
   }
@@ -25,7 +26,7 @@ class i extends r.FormatBuilder {
 function o(e, t) {
   return "string" == typeof e ? e : this.bindFormatValues(i, e, t)[0]
 }
-t.StringBuilder = i, t.stringFormatter = {
+exports.StringBuilder = i, exports.stringFormatter = {
   format: o,
   builder: i
 }

@@ -1,2 +1,3 @@
 /** Chunk was on 30703 **/
-a.exports = JSON.parse('{"+utqa2":["Opci\xf3n de fondo del regalo: ",[1,"giftStyle"]],"B9XqQk":"Caja","AJ4iio":"Tarta","P5keo6":"Cofre","w84vER":"Caf\xe9","6dCq/v":"Taza","+HMF8v":"Nitroween","vd1fu7":"Caja festiva","aubYGR":"Tarta festiva","vjxYqa":"Cofre festivo","bHuJLS":"Caf\xe9 festivo","M6cPwM":"Bola de nieve de cristal","GzPel5":"Caja"}')
+/** chunk id: 585101, original params: a (module,exports,require) **/
+module.exports = JSON.parse('{"+utqa2":["Opci\xf3n de fondo del regalo: ",[1,"giftStyle"]],"B9XqQk":"Caja","AJ4iio":"Tarta","P5keo6":"Cofre","w84vER":"Caf\xe9","6dCq/v":"Taza","+HMF8v":"Nitroween","vd1fu7":"Caja festiva","aubYGR":"Tarta festiva","vjxYqa":"Cofre festivo","bHuJLS":"Caf\xe9 festivo","M6cPwM":"Bola de nieve de cristal","GzPel5":"Caja"}')

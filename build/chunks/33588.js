@@ -1,6 +1,7 @@
 /** Chunk was on 45620 **/
+/** chunk id: 33588, original params: e,t,n (module,exports,require) **/
 "use strict";
-e.exports = {
+module.exports = {
   shopCard: "shopCard_c3d04b",
   shopCardDark: "shopCardDark_c3d04b shopCard_c3d04b",
   shopCardHighlighted: "shopCardHighlighted_c3d04b",

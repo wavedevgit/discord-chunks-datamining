@@ -1,19 +1,20 @@
 /** Chunk was on web.js **/
+/** chunk id: 480086, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   u: () => g
-}), n(388685);
-var r = n(73800),
-  i = n(442837),
-  o = n(481060),
-  a = n(835473),
-  s = n(77498),
-  l = n(626135),
-  c = n(877481),
-  u = n(669764),
-  d = n(80387),
-  f = n(981631),
-  _ = n(388032);
+}), require("./388685.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk442837 = require("./442837.js"),
+  Chunk481060 = require("./481060.js"),
+  Chunk835473 = require("./835473.js"),
+  Chunk77498 = require("./77498.js"),
+  Chunk626135 = require("./626135.js"),
+  Chunk877481 = require("./877481.js"),
+  Chunk669764 = require("./669764.js"),
+  Chunk80387 = require("./80387.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk388032 = require("./388032.jsx");
 let p = {
     "356875762940379136": "https://worldofwarcraft.blizzard.com",
     "615752773690064908": "https://worldofwarcraft.blizzard.com",
@@ -55,19 +56,19 @@ function g(e, t) {
   } = d.m.useExperiment({
     location: "useGameStoreLink"
   }, {
-    autoTrackExposure: !1
-  }), [g, E] = (0, r.useState)(!1);
+    autoTrackExposure: false
+  }), [g, E] = (0, r.useState)(false);
   (0, r.useEffect)(() => {
     c.Z.isProtocolRegistered("steam").then(E)
   }, []);
   let b = (0, a.q)(e),
     y = (0, i.e7)([s.Z], () => null != b ? s.Z.getGameByName(b.name) : null),
-    O = null != (n = (0, a.q)(null == y ? void 0 : y.id)) ? n : b,
+    O = null != (n = (0, a.q)(null == y ? true : y.id)) ? n : b,
     v = (0, i.e7)([u.Z], () => null != O ? u.Z.getGame(O.id) : null),
     I = (0, r.useMemo)(() => {
       var e, t, n;
       if (null == O) return null;
-      let r = null != (n = null != (t = null == (e = O.thirdPartySkus.find(e => e.distributor === f.GQo.STEAM)) ? void 0 : e.id) ? t : null == v ? void 0 : v.steam_id) ? n : null;
+      let r = null != (n = null != (t = null == (e = O.thirdPartySkus.find(e => e.distributor === f.GQo.STEAM)) ? true : e.id) ? t : null == v ? true : v.steam_id) ? n : null;
       return {
         app: O,
         steamSku: r

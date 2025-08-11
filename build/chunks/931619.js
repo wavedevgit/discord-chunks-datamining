@@ -1,13 +1,14 @@
 /** Chunk was on web.js **/
+/** chunk id: 931619, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 let r;
 
 function i(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -40,19 +41,19 @@ function s(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-n.d(t, {
+require.d(exports, {
   Z: () => u
-}), n(539854), r = n(538036).Z;
+}), require("./539854.js"), r = require("./538036.js").Z;
 let l = [],
-  c = !1,
+  c = false,
   u = s(o({}, r), {
     awaitOnline: () => new Promise(e => {
       if (r.isOnline()) return e();
       {
         if (l.push(e), c) return;
-        c = !0;
+        c = true;
         let t = () => {
-          l.forEach(e => e()), l.length = 0, c = !1, r.removeOnlineCallback(t)
+          l.forEach(e => e()), l.length = 0, c = false, r.removeOnlineCallback(t)
         };
         r.addOnlineCallback(t)
       }

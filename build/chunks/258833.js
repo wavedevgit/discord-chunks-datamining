@@ -1,19 +1,20 @@
 /** Chunk was on web.js **/
+/** chunk id: 258833, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => S
-}), n(388685);
-var r = n(147913),
-  i = n(460181),
-  o = n(474873),
-  a = n(523746),
-  s = n(592125),
-  l = n(292959),
-  c = n(944486),
-  u = n(246946),
-  d = n(979651),
-  f = n(938475),
-  _ = n(358221);
+}), require("./388685.js");
+var Chunk147913 = require("./147913.js"),
+  Chunk460181 = require("./460181.js"),
+  Chunk474873 = require("./474873.js"),
+  Chunk523746 = require("./523746.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk292959 = require("./292959.js"),
+  Chunk944486 = require("./944486.js"),
+  Chunk246946 = require("./246946.js"),
+  Chunk979651 = require("./979651.js"),
+  Chunk938475 = require("./938475.js"),
+  Chunk358221 = require("./358221.js");
 
 function p(e, t) {
   if (t.has(e)) throw TypeError("Cannot initialize the same private elements twice on an object")
@@ -53,20 +54,20 @@ function y(e, t, n) {
 function O(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
-let v = (0, i.uk)("call_calling", o.Z.getSoundpack());
+let v = (0, Chunk460181.uk)("call_calling", Chunk474873.Z.getSoundpack());
 var I = new WeakMap;
-class T extends r.Z {
+class T extends Chunk147913.Z {
   _initialize() {
-    this.stores = new Map().set(a.Z, this.handleRingUpdate).set(l.Z, this.handleRingUpdate).set(u.Z, this.handleRingUpdate).set(d.Z, this.handleRingUpdate).set(_.Z, this.handleChannelRTCStoreChange).set(o.Z, this.handleSoundpackUpdate)
+    this.stores = new Map().set(Chunk523746.Z, this.handleRingUpdate).set(Chunk292959.Z, this.handleRingUpdate).set(Chunk246946.Z, this.handleRingUpdate).set(Chunk979651.Z, this.handleRingUpdate).set(Chunk358221.Z, this.handleChannelRTCStoreChange).set(Chunk474873.Z, this.handleSoundpackUpdate)
   }
   constructor(...e) {
     super(...e), b(this, I, {
-      writable: !0,
+      writable: true,
       value: new Set
     }), O(this, "actions", {
       GUILD_LOCAL_RING_START: e => this.handleGuildRingStart(e),
@@ -80,7 +81,7 @@ class T extends r.Z {
     }), O(this, "handleRingUpdate", () => {
       var e, t;
       let n = c.Z.getVoiceChannelId(),
-        r = null != (t = null == (e = s.Z.getChannel(n)) ? void 0 : e.guild_id) ? t : null,
+        r = null != (t = null == (e = s.Z.getChannel(n)) ? true : e.guild_id) ? t : null,
         i = a.Z.getCalls().some(e => e.ringing.length > 0 && d.Z.getCurrentClientVoiceChannelId(null) === e.channelId);
       this._handleRing(i || E(this, I).size > 0, r)
     }), O(this, "handleGuildRingStart", e => {

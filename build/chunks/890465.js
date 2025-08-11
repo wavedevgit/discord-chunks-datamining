@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 890465, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   V: () => r
 });
 class r {
@@ -8,7 +9,7 @@ class r {
     try {
       this.task && this.task()
     } catch (e) {
-      this.onError(e)
+      this.onError(module)
     } finally {
       this.task = null, this.release(this)
     }

@@ -1,4 +1,5 @@
 /** Chunk was on web.js **/
+/** chunk id: 863714, original params: e,t (module,exports,re quire) **/
 "use strict";
 var n = "(?:[a-z0-9]{5,8}|\\d[a-z0-9]{3})",
   r = "[0-9a-wy-z]",
@@ -8,4 +9,4 @@ var n = "(?:[a-z0-9]{5,8}|\\d[a-z0-9]{3})",
   s = RegExp("^(?!x).*?-(" + n + ")-(?:\\w{4,8}-(?!x-))*\\1\\b", "i"),
   l = RegExp("^(?!x).*?-(" + r + ")-(?:\\w+-(?!x-))*\\1\\b", "i"),
   c = RegExp("-" + i, "ig");
-t.expBCP47Syntax = a, t.expVariantDupes = s, t.expSingletonDupes = l, t.expExtSequences = c
+exports.expBCP47Syntax = a, exports.expVariantDupes = s, exports.expSingletonDupes = l, exports.expExtSequences = c

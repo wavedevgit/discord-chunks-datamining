@@ -1,30 +1,31 @@
 /** Chunk was on web.js **/
+/** chunk id: 955132, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   GC: () => I,
   RR: () => v,
   Wb: () => O
 });
-var r = n(570140),
-  i = n(579806),
-  o = n(15624),
-  a = n(710845),
-  s = n(314897),
-  l = n(626135),
-  c = n(931619),
-  u = n(358085),
-  d = n(548570),
-  f = n(616810),
-  _ = n(755278),
-  p = n(866483),
-  h = n(58);
+var Chunk570140 = require("./570140.js"),
+  Chunk579806 = require("./579806.js"),
+  Chunk15624 = require("./15624.js"),
+  Chunk710845 = require("./710845.js"),
+  Chunk314897 = require("./314897.js"),
+  Chunk626135 = require("./626135.js"),
+  Chunk931619 = require("./931619.js"),
+  Chunk358085 = require("./358085.js"),
+  Chunk548570 = require("./548570.js"),
+  Chunk616810 = require("./616810.js"),
+  Chunk755278 = require("./755278.js"),
+  Chunk866483 = require("./866483.js"),
+  Chunk58 = require("./58.js");
 
 function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -57,36 +58,36 @@ function b(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let y = new a.Z("ConnectionStore"),
-  O = new d.Z,
-  v = new f.Z(O),
-  I = new _.Z(O);
+let y = new Chunk710845.Z("ConnectionStore"),
+  O = new Chunk548570.Z,
+  v = new Chunk616810.Z(O),
+  I = new Chunk755278.Z(O);
 O.handleIdentify = () => {
-  let e = s.default.getToken();
+  let e = Chunk314897.default.getToken();
   if (y.verbose("handleIdentify called", {
-      hasToken: null != e
-    }), null == e) return null;
-  let t = o.Z.getState(),
-    n = h.Z.getLatestTaskRunOn(),
-    r = null != n ? (Date.now() - n) / 1e3 : null,
+      hasToken: null != module
+    }), null == module) return null;
+  let t = Chunk15624.Z.getState(),
+    n = Chunk58.Z.getLatestTaskRunOn(),
+    r = null != require ? (Date.now() - require) / 1e3 : null,
     i = {
-      token: e,
-      properties: b(g({}, l.default.getSuperProperties()), {
-        client_app_state: t,
-        is_fast_connect: !1,
-        latest_headless_tasks: h.Z.getHeadlessTasks(),
-        latest_headless_task_run_seconds_before: r,
-        gateway_connect_reasons: p.Pf()
+      token: module,
+      properties: b(g({}, Chunk626135.default.getSuperProperties()), {
+        client_app_state: exports,
+        is_fast_connect: false,
+        latest_headless_tasks: Chunk58.Z.getHeadlessTasks(),
+        latest_headless_task_run_seconds_before: Chunk570140,
+        gateway_connect_reasons: Chunk866483.Pf()
       }),
       presence: v.getInitialState()
     };
-  return h.Z.clear(), i
-}, (0, u.isDesktop)() && i.Z.remotePowerMonitor.on("resume", () => {
+  return Chunk58.Z.clear(), Chunk579806
+}, (0, Chunk358085.isDesktop)() && Chunk579806.Z.remotePowerMonitor.on("resume", () => {
   O.expeditedHeartbeat(5e3, "power monitor resumed")
-}), c.Z.addOfflineCallback(() => {
-  h.Z.recordStartHeadlessTask("GatewaySocket.offline"), O.networkStateChange(15e3, "network detected offline.", !1)
-}), c.Z.addOnlineCallback(() => {
-  h.Z.recordStartHeadlessTask("GatewaySocket.online"), O.networkStateChange(5e3, "network detected online.")
+}), Chunk931619.Z.addOfflineCallback(() => {
+  Chunk58.Z.recordStartHeadlessTask("GatewaySocket.offline"), O.networkStateChange(15e3, "network detected offline.", false)
+}), Chunk931619.Z.addOnlineCallback(() => {
+  Chunk58.Z.recordStartHeadlessTask("GatewaySocket.online"), O.networkStateChange(5e3, "network detected online.")
 }), O.on("disconnect", e => {
   let {
     code: t,

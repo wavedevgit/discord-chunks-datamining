@@ -1,20 +1,21 @@
 /** Chunk was on 67244 **/
+/** chunk id: 394900, original params: e,t,r (module,exports,require) **/
 "use strict";
-r.d(t, {
+require.d(exports, {
   Z: () => u
 });
-var a = r(37484),
-  n = r(665352),
-  s = r(798192),
-  o = r(181568),
-  i = r(103671),
-  c = r(262281),
-  l = r(830927);
+var Chunk37484 = require("./37484.js"),
+  Chunk665352 = require("./665352.js"),
+  Chunk798192 = require("./798192.js"),
+  Chunk181568 = require("./181568.js"),
+  Chunk103671 = require("./103671.js"),
+  Chunk262281 = require("./262281.js"),
+  Chunk830927 = require("./830927.js");
 
 function u(e, {
   precision: t = s.Z.precision,
   format: r = "default",
-  inGamut: f = !0,
+  inGamut: f = true,
   ...b
 } = {}) {
   let d;
@@ -22,7 +23,7 @@ function u(e, {
   let h = r;
   r = e.space.getFormat(r) ?? e.space.getFormat("default") ?? n.Z.DEFAULT_FORMAT;
   let p = e.coords.slice();
-  if ((f ||= r.toGamut) && !(0, i.Z)(e) && (p = (0, c.Z)((0, l.Z)(e), !0 === f ? void 0 : f).coords), "custom" === r.type)
+  if ((f ||= r.toGamut) && !(0, i.Z)(e) && (p = (0, c.Z)((0, l.Z)(e), true === f ? true : f).coords), "custom" === r.type)
     if (b.precision = t, r.serialize) d = r.serialize(p, e.alpha, b);
     else throw TypeError(`format ${h} can only be used to parse colors, not for serialization`);
   else {

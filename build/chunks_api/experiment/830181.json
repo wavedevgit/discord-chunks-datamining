@@ -1,1 +1,0 @@
-{"id":"830181","type":"experiment","data":{"kind":"user","id":"2025-03_preload_user_profile_for_popout_performance","label":"Preload User Profile for Popout Performance Experiment","defaultConfig":{"waitForRefetch":false},"treatments":[{"id":1,"label":"Do not wait for refetches to show user profile popout","config":{"waitForRefetch":false}}]},"fromModule":{"id":"web.js"}}

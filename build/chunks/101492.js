@@ -1,13 +1,14 @@
 /** Chunk was on 8102 **/
-i.d(t, {
+/** chunk id: 101492, original params: e,t,i (module,exports,require) **/
+require.d(exports, {
   Z: () => a
 });
-var n = i(442837),
-  l = i(674525),
-  r = i(388032);
+var Chunk442837 = require("./442837.js"),
+  Chunk674525 = require("./674525.js"),
+  Chunk388032 = require("./388032.js");
 let a = {
-  title: () => r.intl.string(r.t["KzCF//"]),
-  description: () => r.intl.string(r.t["1ScBCw"]),
-  canCreateGuild: !1,
-  useIsGuildSupported: () => (0, n.e7)([l.Z], () => e => l.Z.getEligibleGuildsForNagActivate().includes(e.id), [])
+  title: () => Chunk388032.intl.string(Chunk388032.t["KzCF//"]),
+  description: () => Chunk388032.intl.string(Chunk388032.t["1ScBCw"]),
+  canCreateGuild: false,
+  useIsGuildSupported: () => (0, Chunk442837.e7)([Chunk674525.Z], () => e => l.Z.getEligibleGuildsForNagActivate().includes(e.id), [])
 }

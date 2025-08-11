@@ -1,18 +1,19 @@
 /** Chunk was on web.js **/
+/** chunk id: 192079, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   ER: () => d,
   kk: () => f,
   s$: () => _
-}), n(388685), n(392711);
-var r = n(19780),
-  i = n(5192),
-  o = n(700785),
-  a = n(427679),
-  s = n(157925),
-  l = n(981631),
-  c = n(71080),
-  u = n(388032);
+}), require("./388685.js"), require("./392711.js");
+var Chunk19780 = require("./19780.js"),
+  Chunk5192 = require("./5192.js"),
+  Chunk700785 = require("./700785.js"),
+  Chunk427679 = require("./427679.js"),
+  Chunk157925 = require("./157925.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk71080 = require("./71080.js"),
+  Chunk388032 = require("./388032.js");
 
 function d(e, t, n, r) {
   let o = t[0],
@@ -45,9 +46,9 @@ function _(e) {
   return {
     channel_id: e.id,
     guild_id: e.guild_id,
-    topic: null == t ? void 0 : t.topic,
+    topic: null == t ? true : t.topic,
     media_session_id: r.Z.getMediaSessionId(),
     request_to_speak_state: o.Uu(l.Plq.REQUEST_TO_SPEAK, e) ? s.BM.EVERYONE : s.BM.NO_ONE,
-    stage_instance_id: null == t ? void 0 : t.id
+    stage_instance_id: null == t ? true : t.id
   }
 }

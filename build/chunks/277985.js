@@ -1,10 +1,11 @@
 /** Chunk was on web.js **/
+/** chunk id: 277985, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => o
 });
-var r = n(302463),
-  i = n(981631);
+var Chunk302463 = require("./302463.js"),
+  Chunk981631 = require("./981631.js");
 class o {
   getCreateAttachmentURL(e) {
     return i.ANM.GUILD_PRODUCT_CREATE_ATTACHMENT_UPLOAD(e)
@@ -16,12 +17,12 @@ class o {
     return r.ve
   }
   getMaxAttachmentsCount() {
-    return r.pt
+    return Chunk302463.pt
   }
   getMaxTotalAttachmentSize() {
-    return r.S5
+    return Chunk302463.S5
   }
   get shouldReactNativeCompressUploads() {
-    return !1
+    returnfalse
   }
 }

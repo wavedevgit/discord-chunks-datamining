@@ -1,4 +1,5 @@
 /** Chunk was on web.js **/
+/** chunk id: 161796, original params: e (module,exports,re quire) **/
 function t(e) {
   var t;
   return "number" == typeof e ? e >>> 0 === e && e >= 0 && e <= 0xffffffff ? e : null : (t = l.hex6.exec(e)) ? parseInt(t[1] + "ff", 16) >>> 0 : _.hasOwnProperty(e) ? _[e] : (t = l.rgb.exec(e)) ? (c(t[1]) << 24 | c(t[2]) << 16 | c(t[3]) << 8 | 255) >>> 0 : (t = l.rgba.exec(e)) ? (c(t[1]) << 24 | c(t[2]) << 16 | c(t[3]) << 8 | d(t[4])) >>> 0 : (t = l.hex3.exec(e)) ? parseInt(t[1] + t[1] + t[2] + t[2] + t[3] + t[3] + "ff", 16) >>> 0 : (t = l.hex8.exec(e)) ? parseInt(t[1], 16) >>> 0 : (t = l.hex4.exec(e)) ? parseInt(t[1] + t[1] + t[2] + t[2] + t[3] + t[3] + t[4] + t[4], 16) >>> 0 : (t = l.hsl.exec(e)) ? (255 | r(u(t[1]), f(t[2]), f(t[3]))) >>> 0 : (t = l.hsla.exec(e)) ? (r(u(t[1]), f(t[2]), f(t[3])) | d(t[4])) >>> 0 : null
@@ -211,4 +212,4 @@ t.rgba = function(e) {
     b: Math.round((65280 & e) >>> 8),
     a: ((255 & e) >>> 0) / 255
   }
-}, e.exports = t
+}, module.exports = t

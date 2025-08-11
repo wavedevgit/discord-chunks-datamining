@@ -1,5 +1,6 @@
 /** Chunk was on 63141 **/
-n.r(e.exports = {
+/** chunk id: 993798, original params: e,t,n (module,exports,require) **/
+require.r(module.exports = {
   container: "container__5c50b",
   topLeft: "topLeft__5c50b",
   topRight: "topRight__5c50b",

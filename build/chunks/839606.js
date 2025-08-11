@@ -1,18 +1,19 @@
 /** Chunk was on web.js **/
+/** chunk id: 839606, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   B: () => a,
   j: () => o
 });
-var r = n(97519),
-  i = n(731965),
+var Chunk97519 = require("./97519.js"),
+  Chunk731965 = require("./731965.js"),
   o = function(e) {
     return e[e.DEFAULT = 0] = "DEFAULT", e[e.COACHMARK = 1] = "COACHMARK", e
   }({});
-let a = (0, r.U)(e => ({
-  activePickerChannelId: void 0,
-  previewWallpaperId: void 0,
-  lastShownChatWallpaperPickerType: void 0,
+let a = (0, Chunk97519.U)(e => ({
+  activePickerChannelId: true,
+  previewWallpaperId: true,
+  lastShownChatWallpaperPickerType: true,
   openPickerForChannel: t => (0, i.j)(() => {
     e({
       activePickerChannelId: t
@@ -20,8 +21,8 @@ let a = (0, r.U)(e => ({
   }),
   closePicker: () => (0, i.j)(() => {
     e({
-      activePickerChannelId: void 0,
-      previewWallpaperId: void 0
+      activePickerChannelId: true,
+      previewWallpaperId: true
     })
   }),
   setPreviewWallpaperId: t => (0, i.j)(() => {

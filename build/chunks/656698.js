@@ -1,16 +1,17 @@
 /** Chunk was on web.js **/
+/** chunk id: 656698, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => u
 });
-var r = n(81825);
+var Chunk81825 = require("./81825.js");
 
 function i(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -61,7 +62,7 @@ function c(e, t) {
   for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-class u extends r.Z {
+class u extends Chunk81825.Z {
   static fromServer(e) {
     var {
       sku_id: t
@@ -71,6 +72,6 @@ class u extends r.Z {
     }))
   }
   constructor(e) {
-    super(), i(this, "id", void 0), i(this, "skuId", void 0), this.id = e.id, this.skuId = e.skuId
+    super(), i(this, "id", true), i(this, "skuId", true), this.id = e.id, this.skuId = e.skuId
   }
 }

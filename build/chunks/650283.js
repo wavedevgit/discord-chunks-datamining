@@ -1,5 +1,6 @@
 /** Chunk was on web.js **/
-e.exports = function(e) {
+/** chunk id: 650283, original params: e (module,exports,re quire) **/
+module.exports = function(e) {
   let t = "[A-Za-zА-Яа-яёЁ_][A-Za-zА-Яа-яёЁ_0-9]+",
     n = "далее возврат вызватьисключение выполнить для если и из или иначе иначеесли исключение каждого конецесли конецпопытки конеццикла не новый перейти перем по пока попытка прервать продолжить тогда цикл экспорт ",
     r = "загрузитьизфайла вебклиент вместо внешнеесоединение клиент конецобласти мобильноеприложениеклиент мобильноеприложениесервер наклиенте наклиентенасервере наклиентенасерверебезконтекста насервере насерверебезконтекста область перед после сервер толстыйклиентобычноеприложение толстыйклиентуправляемоеприложение тонкийклиент ",
@@ -19,8 +20,8 @@ e.exports = function(e) {
     u = {
       begin: "'",
       end: "'",
-      excludeBegin: !0,
-      excludeEnd: !0,
+      excludeBegin: true,
+      excludeEnd: true,
       contains: [{
         className: "number",
         begin: "\\d{4}([\\.\\\\/:-]?\\d{2}){0,5}"
@@ -46,7 +47,7 @@ e.exports = function(e) {
       className: "symbol",
       begin: "~",
       end: ";|:",
-      excludeEnd: !0
+      excludeEnd: true
     },
     h = {
       className: "function",
@@ -61,13 +62,13 @@ e.exports = function(e) {
       contains: [{
         begin: "\\(",
         end: "\\)",
-        endsParent: !0,
+        endsParent: true,
         contains: [{
           className: "params",
           begin: t,
           end: ",",
-          excludeEnd: !0,
-          endsWithParent: !0,
+          excludeEnd: true,
+          endsWithParent: true,
           keywords: {
             $pattern: t,
             keyword: "знач",
@@ -81,7 +82,7 @@ e.exports = function(e) {
     };
   return {
     name: "1C:Enterprise",
-    case_insensitive: !0,
+    case_insensitive: true,
     keywords: {
       $pattern: t,
       keyword: n,

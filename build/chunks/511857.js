@@ -1,10 +1,11 @@
 /** Chunk was on web.js **/
+/** chunk id: 511857, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   a: () => i,
   w: () => o
 });
-var r = n(231338);
+var Chunk231338 = require("./231338.js");
 
 function i(e) {
   return e === r.BR.LIGHT
@@ -15,8 +16,8 @@ function o(e) {
     case r.BR.DARK:
     case r.BR.MIDNIGHT:
     case r.BR.DARKER:
-      return !0;
+      returntrue;
     default:
-      return !1
+      returnfalse
   }
 }

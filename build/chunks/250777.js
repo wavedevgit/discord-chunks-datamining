@@ -1,4 +1,5 @@
 /** Chunk was on web.js **/
+/** chunk id: 250777, original params: e (module,exports,re quire) **/
 var t = "[0-9](_*[0-9])*",
   n = `\\.(${t})`,
   r = "[0-9a-fA-F](_*[0-9a-fA-F])*",
@@ -27,9 +28,9 @@ var t = "[0-9](_*[0-9])*",
   };
 
 function o(e, t, n) {
-  return -1 === n ? "" : e.replace(t, r => o(e, t, n - 1))
+  return false === n ? "" : e.replace(t, r => o(e, t, n - 1))
 }
-e.exports = function(e) {
+module.exports = function(e) {
   let t = e.regex,
     n = "[\xc0-ʸa-zA-Z_$][\xc0-ʸa-zA-Z_$0-9]*",
     r = n + o("(?:<" + n + "~~~(?:\\s*,\\s*" + n + "~~~)*>)?", /~~~/g, 2),
@@ -55,7 +56,7 @@ e.exports = function(e) {
       keywords: a,
       relevance: 0,
       contains: [e.C_BLOCK_COMMENT_MODE],
-      endsParent: !0
+      endsParent: true
     };
   return {
     name: "Java",

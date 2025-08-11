@@ -1,16 +1,17 @@
 /** Chunk was on 80193 **/
-t.d(n, {
+/** chunk id: 724912, original params: e,n,t (module,exports,require) **/
+require.d(exports, {
   Z: () => a
 });
-var i = t(442837),
-  o = t(430824),
-  c = t(981631);
+var Chunk442837 = require("./442837.js"),
+  Chunk430824 = require("./430824.js"),
+  Chunk981631 = require("./981631.js");
 
 function a(e) {
   return (0, i.e7)([o.Z], () => {
     var n;
-    if (null == e) return !1;
+    if (null == e) returnfalse;
     let t = o.Z.getGuild(e);
-    return null != (n = null == t ? void 0 : t.features.has(c.oNc.HUB)) && n
+    return null != (n = null == t ? true : t.features.has(c.oNc.HUB)) && n
   }, [e])
 }

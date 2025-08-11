@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 95072, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   root: "root_c8dbe9",
   sprite: "sprite_c8dbe9",
   participant: "participant_c8dbe9",

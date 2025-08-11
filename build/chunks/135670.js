@@ -1,18 +1,19 @@
 /** Chunk was on web.js **/
+/** chunk id: 135670, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => c
-}), n(415506), n(388685);
-var r = n(47770),
-  i = n(46973),
-  o = n(65154);
+}), require("./415506.js"), require("./388685.js");
+var Chunk47770 = require("./47770.js"),
+  Chunk46973 = require("./46973.js"),
+  Chunk65154 = require("./65154.js");
 
 function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -23,9 +24,9 @@ function s(e) {
 function l(e) {
   return null
 }
-class c extends r.Z {
+class c extends Chunk47770.Z {
   destroy() {
-    this.emit(i.aB.Destroy), this.removeAllListeners()
+    this.emit(Chunk46973.aB.Destroy), this.removeAllListeners()
   }
   interact() {}
   supported() {
@@ -65,7 +66,7 @@ class c extends r.Z {
     return Promise.reject(Error("getCodecSurvey is not implemented for MediaEngineDummy"))
   }
   getAudioSubsystem() {
-    return o.iA.STANDARD
+    return Chunk65154.iA.STANDARD
   }
   getAudioLayer() {
     return ""
@@ -73,10 +74,10 @@ class c extends r.Z {
   setGoLiveSource(e, t) {}
   setClipsSource(e) {}
   setClipsQualitySettings(e, t, n) {
-    return !1
+    returnfalse
   }
   setDesktopSource(e) {
-    arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : o.Yn.DEFAULT
+    arguments.length > 1 && true !== arguments[1] ? arguments[1] : o.Yn.DEFAULT
   }
   setSoundshareSource(e, t, n) {}
   getDesktopSource() {
@@ -105,7 +106,7 @@ class c extends r.Z {
   queueAudioSubsystem(e) {}
   setOffloadAdmControls(e) {}
   getDebugLogging() {
-    return !1
+    returnfalse
   }
   setDebugLogging(e) {}
   writeAudioDebugState() {
@@ -113,7 +114,7 @@ class c extends r.Z {
   }
   setLoopback(e, t) {}
   getLoopback() {
-    return !1
+    returnfalse
   }
   setH264Enabled(e) {}
   setAv1Enabled(e) {}

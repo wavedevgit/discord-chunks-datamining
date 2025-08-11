@@ -1,11 +1,12 @@
 /** Chunk was on web.js **/
+/** chunk id: 622916, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Cf: () => l,
   kg: () => c
 });
-var r = n(176984),
-  i = n(899517);
+var Chunk176984 = require("./176984.js"),
+  Chunk899517 = require("./899517.js");
 let o = "Sentry Logger ",
   a = ["debug", "info", "warn", "error", "log", "assert", "trace"],
   s = {};
@@ -28,23 +29,23 @@ function l(e) {
   }
 }
 let c = function() {
-  let e = !1,
+  let e = false,
     t = {
       enable: () => {
-        e = !0
+        e = true
       },
       disable: () => {
-        e = !1
+        e = false
       },
-      isEnabled: () => e
+      isEnabled: () => module
     };
-  return r.X ? a.forEach(n => {
+  return Chunk176984.X ? a.forEach(n => {
     t[n] = (...t) => {
       e && l(() => {
         i.n.console[n](`${o}[${n}]:`, ...t)
       })
     }
   }) : a.forEach(e => {
-    t[e] = () => void 0
-  }), t
+    t[e] = () => true
+  }), exports
 }()

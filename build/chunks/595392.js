@@ -1,5 +1,6 @@
 /** Chunk was on 45620 **/
+/** chunk id: 595392, original params: e,t,n (module,exports,require) **/
 "use strict";
-e.exports = {
+module.exports = {
   orbPriceTag: "orbPriceTag__5dbac"
 }

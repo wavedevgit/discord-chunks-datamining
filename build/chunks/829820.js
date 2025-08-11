@@ -1,40 +1,41 @@
 /** Chunk was on web.js **/
+/** chunk id: 829820, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Fe: () => O,
   Ih: () => y,
   Lz: () => v
-}), n(388685);
-var r = n(73800),
-  i = n(442837),
-  o = n(846519),
-  a = n(110924),
-  s = n(314897),
-  l = n(70956),
-  c = n(51144),
-  u = n(768419),
-  d = n(300020),
-  f = n(456190),
-  _ = n(239470),
-  p = n(894344),
-  h = n(203777),
-  m = n(616922);
-let g = 30 * l.Z.Millis.SECOND;
+}), require("./388685.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk442837 = require("./442837.js"),
+  Chunk846519 = require("./846519.js"),
+  Chunk110924 = require("./110924.js"),
+  Chunk314897 = require("./314897.js"),
+  Chunk70956 = require("./70956.js"),
+  Chunk51144 = require("./51144.js"),
+  Chunk768419 = require("./768419.js"),
+  Chunk300020 = require("./300020.js"),
+  Chunk456190 = require("./456190.js"),
+  Chunk239470 = require("./239470.js"),
+  Chunk894344 = require("./894344.js"),
+  Chunk203777 = require("./203777.js"),
+  Chunk616922 = require("./616922.js");
+let g = 30 * Chunk70956.Z.Millis.SECOND;
 
 function E(e) {
   let {
     currentUserTrackId: t,
     syncingWithUser: n,
     syncingWithParty: i
-  } = e, [s, l] = r.useState(!1), [c] = r.useState(() => new o.V7), u = (0, a.Z)(t);
+  } = e, [s, l] = r.useState(false), [c] = r.useState(() => new o.V7), u = (0, a.Z)(t);
   r.useEffect(() => {
-    s && (t !== u || n || i) && (l(!1), c.stop())
+    s && (t !== u || n || i) && (l(false), c.stop())
   }, [t, u, n, i, s, c]);
   let d = r.useCallback(() => {
-      l(!0), c.start(g, () => l(!1))
+      l(true), c.start(g, () => l(false))
     }, [c]),
     f = r.useCallback(() => {
-      l(!1), c.stop()
+      l(false), c.stop()
     }, [c]);
   return r.useEffect(() => () => c.stop(), [c]), {
     loading: s,

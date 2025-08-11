@@ -1,5 +1,6 @@
 /** Chunk was on 93886 **/
-e.exports = {
+/** chunk id: 909291, original params: e,t,a (module,exports,require) **/
+module.exports = {
   collapsablePane: "collapsablePane__7ed4d",
   collapsablePaneHeader: "collapsablePaneHeader__7ed4d",
   collapsiblePaneList: "collapsiblePaneList__7ed4d",

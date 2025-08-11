@@ -1,5 +1,6 @@
 /** Chunk was on 49508 **/
-n.d(e, {
+/** chunk id: 546791, original params: t,e,n (module,exports,require) **/
+require.d(exports, {
   LI: () => o,
   Qr: () => s,
   f0: () => _,
@@ -7,16 +8,16 @@ n.d(e, {
   jV: () => T,
   lx: () => E,
   t3: () => u
-}), n(388685);
-var i = n(913527),
-  r = n.n(i),
-  l = n(292352),
-  a = n(916723),
-  d = n(388032);
+}), require("./388685.js");
+var Chunk913527 = require("./913527.js"),
+  r = require.n(Chunk913527),
+  Chunk292352 = require("./292352.js"),
+  Chunk916723 = require("./916723.js"),
+  Chunk388032 = require("./388032.jsx");
 let u = () => ({
-    today: d.intl.string(a.default.VjIAQU),
-    yesterday: d.intl.string(a.default["2a8xHR"]),
-    days: a.default.Xt6oND
+    today: Chunk388032.intl.string(Chunk916723.default.VjIAQU),
+    yesterday: Chunk388032.intl.string(Chunk916723.default["2a8xHR"]),
+    days: Chunk916723.default.Xt6oND
   }),
   s = t => t ? {
     today: d.intl.string(a.default["2AtcIi"]),

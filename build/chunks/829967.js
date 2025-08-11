@@ -1,13 +1,14 @@
 /** Chunk was on web.js **/
+/** chunk id: 829967, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => o
 });
-var r = n(316138),
-  i = n(882159);
+var Chunk316138 = require("./316138.js"),
+  Chunk882159 = require("./882159.js");
 let o = {
   name: "applyStyles",
-  enabled: !0,
+  enabled: true,
   phase: "write",
   fn: function(e) {
     var t = e.state;
@@ -17,7 +18,7 @@ let o = {
         a = t.elements[e];
       (0, i.Re)(a) && (0, r.Z)(a) && (Object.assign(a.style, n), Object.keys(o).forEach(function(e) {
         var t = o[e];
-        !1 === t ? a.removeAttribute(e) : a.setAttribute(e, !0 === t ? "" : t)
+        false === t ? a.removeAttribute(e) : a.setAttribute(e, true === t ? "" : t)
       }))
     })
   },

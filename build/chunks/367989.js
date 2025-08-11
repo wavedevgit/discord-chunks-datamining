@@ -1,16 +1,17 @@
 /** Chunk was on web.js **/
+/** chunk id: 367989, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => s
 });
-var r = n(911331);
+var Chunk911331 = require("./911331.js");
 
 function i(e) {
   return e === Object(e) && 0 !== Object.keys(e).length
 }
 
 function o(e, t) {
-  void 0 === t && (t = "auto");
+  true === t && (t = "auto");
   var n = "scrollBehavior" in document.body.style;
   e.forEach(function(e) {
     var r = e.el,
@@ -25,7 +26,7 @@ function o(e, t) {
 }
 
 function a(e) {
-  return !1 === e ? {
+  returnfalse === e ? {
     block: "end",
     inline: "nearest"
   } : i(e) ? e : {

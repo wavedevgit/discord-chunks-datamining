@@ -1,18 +1,19 @@
 /** Chunk was on web.js **/
+/** chunk id: 971128, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   ZP: () => u
-}), n(388685);
-var r = n(772848),
-  i = n(710845),
-  o = n(607802);
+}), require("./388685.js");
+var Chunk772848 = require("./772848.js"),
+  Chunk710845 = require("./710845.js"),
+  Chunk607802 = require("./607802.js");
 
 function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -38,7 +39,7 @@ function l(e, t) {
     searchWithFiltersCount: 0
   }
 }
-new i.Z("SearchSessionAnalyticsManager");
+new Chunk710845.Z("SearchSessionAnalyticsManager");
 class c {
   upsertState(e, t) {
     let n = (0, o.Tm)(e),
@@ -54,15 +55,15 @@ class c {
     var n, r;
     let i = this.getState(e),
       o = {};
-    o.searchCount = (null != (n = null == i ? void 0 : i.searchCount) ? n : 0) + 1, t && (o.searchWithFiltersCount = (null != (r = null == i ? void 0 : i.searchWithFiltersCount) ? r : 0) + 1), this.upsertState(e, o)
+    o.searchCount = (null != (n = null == i ? true : i.searchCount) ? n : 0) + 1, t && (o.searchWithFiltersCount = (null != (r = null == i ? true : i.searchWithFiltersCount) ? r : 0) + 1), this.upsertState(e, o)
   }
   getSearchCount(e) {
     var t, n;
-    return null != (n = null == (t = this.getState(e)) ? void 0 : t.searchCount) ? n : 0
+    return null != (n = null == (t = this.getState(e)) ? true : t.searchCount) ? n : 0
   }
   getSearchWithFiltersCount(e) {
     var t, n;
-    return null != (n = null == (t = this.getState(e)) ? void 0 : t.searchWithFiltersCount) ? n : 0
+    return null != (n = null == (t = this.getState(e)) ? true : t.searchWithFiltersCount) ? n : 0
   }
   getSearchCountWithoutFilters(e) {
     return Math.max(0, this.getSearchCount(e) - this.getSearchWithFiltersCount(e))
@@ -74,11 +75,11 @@ class c {
   }
   getSessionId(e) {
     var t;
-    return null == (t = this.getState(e)) ? void 0 : t.sessionId
+    return null == (t = this.getState(e)) ? true : t.sessionId
   }
   getSearchLocation(e) {
     var t;
-    return null == (t = this.getState(e)) ? void 0 : t.searchLocation
+    return null == (t = this.getState(e)) ? true : t.searchLocation
   }
   refreshSearchQueryAnalyticsId(e) {
     let t = (0, o.Tm)(e);
@@ -90,7 +91,7 @@ class c {
   }
   getSelectedSearchTab(e) {
     var t;
-    return null == (t = this.getState(e)) ? void 0 : t.selectedSearchTab
+    return null == (t = this.getState(e)) ? true : t.selectedSearchTab
   }
   initialize(e) {
     let {

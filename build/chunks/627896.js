@@ -1,16 +1,17 @@
 /** Chunk was on 22173 **/
-n.d(t, {
+/** chunk id: 627896, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   x: () => a
-}), n(388685);
-var r = n(73800);
+}), require("./388685.js");
+var Chunk73800 = require("./73800.js");
 
 function a(e, t, n) {
   let a = r.useRef(null),
-    [s, l] = r.useState(!1),
+    [s, l] = r.useState(false),
     i = r.useCallback(() => {
       if (e && null !== a.current) {
         var n;
-        l((null == (n = a.current) ? void 0 : n.offsetHeight) > 2.5 * t)
+        l((null == (n = a.current) ? true : n.offsetHeight) > 2.5 * t)
       }
     }, [l, e, t]);
   return r.useLayoutEffect(() => {

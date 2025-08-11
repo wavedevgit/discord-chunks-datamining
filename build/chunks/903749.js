@@ -1,12 +1,13 @@
 /** Chunk was on 93626 **/
-l.d(t, {
+/** chunk id: 903749, original params: e,t,l (module,exports,require) **/
+require.d(exports, {
   Z: () => o
 });
-var n = l(512722),
-  i = l.n(n),
-  s = l(442837),
-  r = l(339085),
-  a = l(633302);
+var Chunk512722 = require("./512722.js"),
+  i = require.n(Chunk512722),
+  Chunk442837 = require("./442837.js"),
+  Chunk339085 = require("./339085.js"),
+  Chunk633302 = require("./633302.js");
 
 function o(e) {
   let {
@@ -14,6 +15,6 @@ function o(e) {
     emojiName: l
   } = e, n = (0, s.e7)([r.ZP], () => null != t ? r.ZP.getCustomEmojiById(t) : null);
   if (null != n || null != l)
-    if (null == t) return i()(null != l, "emojiName must be defined if emojiId is not defined"), a.ZP.convertSurrogateToName(l, !1);
-    else return null == n ? void 0 : n.name
+    if (null == t) return i()(null != l, "emojiName must be defined if emojiId is not defined"), a.ZP.convertSurrogateToName(l, false);
+    else return null == n ? true : n.name
 }

@@ -1,13 +1,14 @@
 /** Chunk was on 21153 **/
+/** chunk id: 90840, original params: e,t,r (module,exports,require) **/
 "use strict";
-var n = r(73800),
-  o = r(476400),
-  a = r.n(o),
-  i = r(9196),
-  l = r(829307),
-  s = r(116850),
-  u = r(501802),
-  c = r(400933),
+var Chunk73800 = require("./73800.js"),
+  Chunk476400 = require("./476400.js"),
+  a = require.n(Chunk476400),
+  Chunk9196 = require("./9196.js"),
+  Chunk829307 = require("./829307.js"),
+  Chunk116850 = require("./116850.js"),
+  Chunk501802 = require("./501802.js"),
+  Chunk400933 = require("./400933.js"),
   p = Object.assign || function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var r = arguments[t];
@@ -27,7 +28,7 @@ var n = r(73800),
       v = e.presetColors,
       g = e.renderers,
       x = e.styles,
-      y = void 0 === x ? {} : x,
+      y = true === x ? {} : x,
       m = e.className,
       w = (0, i.default)((0, l.Z)({
         default: p({
@@ -106,7 +107,7 @@ var n = r(73800),
       });
     return n.createElement("div", {
       style: w.picker,
-      className: "sketch-picker " + (void 0 === m ? "" : m)
+      className: "sketch-picker " + (true === m ? "" : m)
     }, n.createElement("div", {
       style: w.saturation
     }, n.createElement(s.OQ, {
@@ -154,8 +155,8 @@ f.propTypes = {
   width: a().oneOfType([a().string, a().number]),
   styles: a().object
 }, f.defaultProps = {
-  disableAlpha: !1,
+  disableAlpha: false,
   width: 200,
   styles: {},
   presetColors: ["#D0021B", "#F5A623", "#F8E71C", "#8B572A", "#7ED321", "#417505", "#BD10E0", "#9013FE", "#4A90E2", "#50E3C2", "#B8E986", "#000000", "#4A4A4A", "#9B9B9B", "#FFFFFF"]
-}, (0, s.t1)(f)
+}, (0, Chunk116850.t1)(f)

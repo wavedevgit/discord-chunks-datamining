@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 368844, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Ah: () => O,
   CB: () => w,
   aU: () => N,
@@ -8,25 +9,25 @@ n.d(t, {
   eL: () => R,
   vg: () => P,
   zy: () => C
-}), n(953529), n(997841), n(388685), n(361932), n(187205);
-var r = n(73800),
-  i = n(911969),
-  o = n(292419),
-  a = n(768494),
-  s = n(406432),
-  l = n(144140),
-  c = n(695346),
-  u = n(592125),
-  d = n(375954),
-  f = n(594174),
-  _ = n(630388),
-  p = n(823379),
-  h = n(709054),
-  m = n(591759),
-  g = n(981631);
+}), require("./953529.js"), require("./997841.js"), require("./388685.js"), require("./361932.js"), require("./187205.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk911969 = require("./911969.js"),
+  Chunk292419 = require("./292419.js"),
+  Chunk768494 = require("./768494.js"),
+  Chunk406432 = require("./406432.js"),
+  Chunk144140 = require("./144140.js"),
+  Chunk695346 = require("./695346.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk375954 = require("./375954.js"),
+  Chunk594174 = require("./594174.js"),
+  Chunk630388 = require("./630388.js"),
+  Chunk823379 = require("./823379.js"),
+  Chunk709054 = require("./709054.js"),
+  Chunk591759 = require("./591759.js"),
+  Chunk981631 = require("./981631.js");
 
 function E(e) {
-  if (null == e) return !1;
+  if (null == e) returnfalse;
   let {
     filename: t,
     height: n,
@@ -48,9 +49,9 @@ var O = function(e) {
 
 function v(e) {
   var t, n;
-  let r = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : c.x4.getSetting();
+  let r = arguments.length > 1 && true !== arguments[1] ? arguments[1] : c.x4.getSetting();
   if (!r) return [];
-  let i = (null == e || null == (t = e.messageSnapshots[0]) ? void 0 : t.moderatorReport) != null ? null == e || null == (n = e.messageSnapshots[0]) ? void 0 : n.message.attachments : null == e ? void 0 : e.attachments;
+  let i = (null == e || null == (t = e.messageSnapshots[0]) ? true : t.moderatorReport) != null ? null == e || null == (n = e.messageSnapshots[0]) ? true : n.message.attachments : null == e ? true : e.attachments;
   return null == e || null == i ? [] : i.filter(y).map((e, t) => {
     var n;
     let {
@@ -100,7 +101,7 @@ function T(e, t) {
   let i = c.RS.useSetting(),
     o = c.NA.useSetting();
   if (null == e) return [];
-  let a = (null == (n = e.messageSnapshots[0]) ? void 0 : n.moderatorReport) != null ? null == (r = e.messageSnapshots[0]) ? void 0 : r.message.embeds : e.embeds;
+  let a = (null == (n = e.messageSnapshots[0]) ? true : n.moderatorReport) != null ? null == (r = e.messageSnapshots[0]) ? true : r.message.embeds : e.embeds;
   return i && o && null != a ? a.map((e, n) => {
     var r;
     let i = null != (r = e.image) ? r : e.thumbnail;
@@ -156,7 +157,7 @@ function A(e, t) {
     height: null != (r = e.height) ? r : 0,
     width: null != (i = e.width) ? i : 0,
     spoiler: t,
-    contentScanVersion: null == (n = e.contentScanMetadata) ? void 0 : n.version,
+    contentScanVersion: null == (n = e.contentScanMetadata) ? true : n.version,
     flags: 0,
     srcIsAnimated: (0, _.yE)(e.flags, a.hR.IS_ANIMATED),
     isVideo: "VIDEO" === o,
@@ -166,7 +167,7 @@ function A(e, t) {
 }
 
 function N(e, t) {
-  let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
+  let n = arguments.length > 2 && true !== arguments[2] && arguments[2],
     i = C(e, n);
   return r.useMemo(() => {
     if (null == t) return [];
@@ -201,9 +202,9 @@ function P(e, t) {
 function w(e, t) {
   var n;
   let r = u.Z.getChannel(t);
-  if (null == r) return !1;
+  if (null == r) returnfalse;
   let i = d.Z.getMessage(r.id, h.default.castChannelIdAsMessageId(r.id));
-  return null != i && e.length > 0 && null != e.find(e => e.isImage || e.isVideo) && r.isForumPost() && r.ownerId === (null == (n = f.default.getCurrentUser()) ? void 0 : n.id) && 0 === l.Z.getCount(r.id) && (0 === i.attachments.length || null == i.attachments.find(e => E(e) || b(e)))
+  return null != i && e.length > 0 && null != e.find(e => e.isImage || e.isVideo) && r.isForumPost() && r.ownerId === (null == (n = f.default.getCurrentUser()) ? true : n.id) && 0 === l.Z.getCount(r.id) && (0 === i.attachments.length || null == i.attachments.find(e => E(e) || b(e)))
 }
 
 function D(e) {
@@ -211,7 +212,7 @@ function D(e) {
     containsVideo: e.containsVideo || t.isVideo,
     containsGif: e.containsGif || (0, s.d$)(t.src)
   }), {
-    containsVideo: !1,
-    containsGif: !1
+    containsVideo: false,
+    containsGif: false
   })
 }

@@ -1,15 +1,16 @@
 /** Chunk was on web.js **/
+/** chunk id: 458631, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-var r = n(98405),
-  i = n(46015),
-  o = n(201390),
+var Chunk98405 = require("./98405.js"),
+  Chunk46015 = require("./46015.js"),
+  Chunk201390 = require("./201390.js"),
   a = RangeError,
   s = String.fromCharCode,
   l = String.fromCodePoint,
-  c = i([].join);
-r({
+  c = Chunk46015([].join);
+Chunk98405({
   target: "String",
-  stat: !0,
+  stat: true,
   arity: 1,
   forced: !!l && 1 !== l.length
 }, {

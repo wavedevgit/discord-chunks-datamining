@@ -1,10 +1,11 @@
 /** Chunk was on 88934 **/
-n.d(t, {
+/** chunk id: 493646, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   K: () => l,
   v: () => i
 });
-var r = n(979007),
-  a = n(388032);
+var Chunk979007 = require("./979007.js"),
+  Chunk388032 = require("./388032.jsx");
 
 function i(e) {
   switch (e.id) {
@@ -24,7 +25,7 @@ function i(e) {
 
 function l() {
   return {
-    id: r.GLOBAL_DISCOVERY_APPS_FEATURED_CATEGORY_ID,
-    name: a.intl.string(a.t.ijDDw8)
+    id: Chunk979007.GLOBAL_DISCOVERY_APPS_FEATURED_CATEGORY_ID,
+    name: Chunk388032.intl.string(Chunk388032.t.ijDDw8)
   }
 }

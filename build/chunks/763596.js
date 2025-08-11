@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 763596, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   i: () => r
 });
 let r = ["api_connection_error", "api_error", "authentication_error", "card_error", "idempotency_error", "invalid_request_error", "rate_limit_error", "validation_error"]

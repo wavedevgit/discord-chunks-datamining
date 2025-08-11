@@ -1,15 +1,16 @@
 /** Chunk was on web.js **/
+/** chunk id: 90712, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => u
-}), n(388685);
-var r = n(726542),
-  i = n(394821),
-  o = n(503438),
-  a = n(834353),
-  s = n(802856),
-  l = n(981631);
-let c = new Set([l.ABu.LEAGUE_OF_LEGENDS, l.ABu.ROBLOX, l.ABu.TWITCH, l.ABu.YOUTUBE]);
+}), require("./388685.js");
+var Chunk726542 = require("./726542.js"),
+  Chunk394821 = require("./394821.js"),
+  Chunk503438 = require("./503438.js"),
+  Chunk834353 = require("./834353.js"),
+  Chunk802856 = require("./802856.js"),
+  Chunk981631 = require("./981631.js");
+let c = new Set([Chunk981631.ABu.LEAGUE_OF_LEGENDS, Chunk981631.ABu.ROBLOX, Chunk981631.ABu.TWITCH, Chunk981631.ABu.YOUTUBE]);
 
 function u(e) {
   if ((0, o.Z)(e)) return r.Z.get(l.ABu.SPOTIFY);

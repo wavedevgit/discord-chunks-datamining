@@ -1,15 +1,16 @@
 /** Chunk was on web.js **/
+/** chunk id: 250889, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   H: () => o,
   Z: () => a
 });
-var r = n(726542),
-  i = n(973616);
+var Chunk726542 = require("./726542.js"),
+  Chunk973616 = require("./973616.js");
 let o = "xbox:";
-class a extends i.ZP {
+class a extends Chunk973616.ZP {
   getIconURL() {
-    return r.Z.get("xbox").icon.lightPNG
+    return Chunk726542.Z.get("xbox").icon.lightPNG
   }
   constructor(e) {
     super(e), this.id = "".concat(o).concat(e.name), this.name = e.name

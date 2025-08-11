@@ -1,0 +1,123 @@
+/** Chunk was on 34779 **/
+/** chunk id: 311352, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
+  Z: () => E
+});
+var Chunk255367 = require("./255367.js"),
+  Chunk73800 = require("./73800.js"),
+  Chunk399606 = require("./399606.js"),
+  Chunk704215 = require("./704215.js"),
+  Chunk481060 = require("./481060.js"),
+  Chunk239091 = require("./239091.js"),
+  Chunk906732 = require("./906732.js"),
+  Chunk522651 = require("./522651.js"),
+  Chunk765585 = require("./765585.js"),
+  Chunk870569 = require("./870569.js"),
+  Chunk819640 = require("./819640.js"),
+  Chunk556296 = require("./556296.js"),
+  Chunk13140 = require("./13140.js"),
+  Chunk924557 = require("./924557.js"),
+  Chunk435064 = require("./435064.js"),
+  Chunk39604 = require("./39604.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk388032 = require("./388032.js"),
+  Chunk856587 = require("./856587.js");
+
+function v(e) {
+  (0, a.jW)(e, async () => {
+    let {
+      default: e
+    } = await n.e("21960").then(n.bind(n, 999466));
+    return t => <e{...function(e) {
+      for (var t = 1; t < arguments.length; t++) {
+        var n = null != arguments[t] ? arguments[t] : {},
+          r = Object.keys(n);
+        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+          return Object.getOwnPropertyDescriptor(n, e).enumerable
+        }))), r.forEach(function(t) {
+          var r;
+          r = n[t], t in e ? Object.defineProperty(e, t, {
+            value: r,
+            enumerable: true,
+            configurable: true,
+            writable: true
+          }) : e[t] = r
+        })
+      }
+      return e
+    }({}, t)} />
+  })
+}
+let j = e => {
+    let {
+      keybindString: t,
+      children: n,
+      targetElementRef: i
+    } = e, l = (e, t) => {
+      e.stopPropagation(), e.preventDefault(), null == t || t()
+    };
+    return <s.yRy targetElementRef={i} shouldShow={false} position={"top"} align={"center"} renderPopout={e => {
+        let {
+          closePopout: n
+        } = e;
+        return (0, r.jsx)(d.Z, {
+          dismissibleContent: o.z.CLIPS_ONBOARDING_CLIP_BUTTON_COACHMARK,
+          shouldUseHorizontalButtons: true,
+          inlineArt: true,
+          artClassName: C.clipsEducationArt,
+          position: "top",
+          header: (0, r.jsx)("div", {
+            className: C.header,
+            children: y.intl.format(y.t["o+srEx"], {
+              keybind: t,
+              keybindHook: () => (0, r.jsx)("span", {
+                className: C.keybindHintKeys,
+                children: (0, r.jsx)(s.M2$, {
+                  className: C.keybindShortcut,
+                  shortcut: t
+                })
+              })
+            })
+          }),
+          headerClassName: C.clipsEducationHeader,
+          body: (0, r.jsx)(s.Text, {
+            variant: "text-sm/normal",
+            color: "always-white",
+            className: C.bodyText,
+            children: y.intl.format(y.t.DWeRm5, {
+              keybindHook: () => (0, r.jsx)("div", {
+                className: C.keyCombo,
+                children: t
+              }),
+              keybind: t
+            })
+          }),
+          onClose: e => {
+            l(e, n)
+          }
+        })
+      }}>{() => n}</s.yRy>
+  },
+  E = () => {
+    let e = Chunk73800.useRef(null),
+      {
+        parentAnalyticsLocation: t
+      } = (0, Chunk906732.ZP)(),
+      n = (0, Chunk399606.e7)([Chunk819640.Z], () => Chunk819640.Z.hasLayers()),
+      o = (0, Chunk924557.Go)(),
+      {
+        clipsEnabled: a,
+        isAtMaxSavingClipsOperations: d
+      } = (0, Chunk399606.cj)([Chunk435064.Z], () => ({
+        clipsEnabled: Chunk435064.Z.getSettings().clipsEnabled,
+        isAtMaxSavingClipsOperations: Chunk435064.Z.getIsAtMaxSaveClipOperations()
+      })),
+      C = (0, Chunk399606.e7)([Chunk556296.ZP], () => Chunk556296.ZP.getKeybindForAction(Chunk981631.kg4.SAVE_CLIP));
+    if (!(Chunk704215 && Chunk239091) || null == Chunk856587 || require) return null;
+    let E = Chunk13140.BB(Chunk856587.shortcut, true);
+    return <j keybindString={E} targetElementRef={module}><Chunk870569.Z ref={module} disabled={Chunk765585} tooltipText={null != Chunk856587 ? Chunk388032.intl.formatToPlainString(Chunk388032.t.HIMcv7, {
+          hotkey: Chunk13140.BB(null == Chunk856587 ? true : Chunk856587.shortcut, true)
+        }) : Chunk388032.intl.string(Chunk388032.t.s52pjo)} onClick={() => {
+          (0, Chunk39604.C1)(), (0, Chunk522651.v)(exports, Chunk522651.d.CLIP)
+        }} onContextMenu={v} icon={Chunk481060.AlX} /></j>
+  }

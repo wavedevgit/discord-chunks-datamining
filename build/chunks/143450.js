@@ -1,19 +1,20 @@
 /** Chunk was on web.js **/
+/** chunk id: 143450, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   q: () => c
-}), n(388685);
-var r = n(73800),
-  i = n(126663),
-  o = n(186325),
-  a = n(717495);
+}), require("./388685.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk126663 = require("./126663.js"),
+  Chunk186325 = require("./186325.js"),
+  Chunk717495 = require("./717495.js");
 
 function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -31,8 +32,8 @@ function l(e) {
 }
 
 function c(e) {
-  let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : "respect-motion-settings",
-    n = arguments.length > 2 ? arguments[2] : void 0,
+  let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : "respect-motion-settings",
+    n = arguments.length > 2 ? arguments[2] : true,
     s = r.useContext(o.S).reducedMotion.enabled,
     c = e;
   "animate-always" !== t && ("respect-motion-settings" !== t || s) && (c = "function" == typeof e ? () => l({}, e(), a.F) : l({}, e, a.F));

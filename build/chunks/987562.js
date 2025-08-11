@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 987562, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   CE: () => d,
   F5: () => u,
   L$: () => m,
@@ -12,12 +13,12 @@ n.d(t, {
   os: () => g,
   pv: () => s,
   wO: () => p
-}), n(388685);
-var r = n(704215),
-  i = n(70956),
-  o = n(594654),
-  a = n(388032);
-let s = 6 * i.Z.Millis.DAYS_30;
+}), require("./388685.js");
+var Chunk704215 = require("./704215.js"),
+  Chunk70956 = require("./70956.js"),
+  Chunk594654 = require("./594654.js"),
+  Chunk388032 = require("./388032.jsx");
+let s = 6 * Chunk70956.Z.Millis.DAYS_30;
 var l = function(e) {
   return e.TOO_MANY_NOTIFICATIONS = "too_many_notifications", e.TEMPORARY_BREAK = "temporary_break", e.ANNOYING = "annoying", e.UNSAFE = "unsafe", e.SPAM = "spam", e.OTHER = "other", e
 }({});
@@ -25,22 +26,22 @@ var l = function(e) {
 function c() {
   return [{
     value: "too_many_notifications",
-    label: a.intl.string(a.t.bQHhT0)
+    label: Chunk388032.intl.string(Chunk388032.t.bQHhT0)
   }, {
     value: "temporary_break",
-    label: a.intl.string(a.t.OuPkvL)
+    label: Chunk388032.intl.string(Chunk388032.t.OuPkvL)
   }, {
     value: "annoying",
-    label: a.intl.string(a.t["3kmAMD"])
+    label: Chunk388032.intl.string(Chunk388032.t["3kmAMD"])
   }, {
     value: "unsafe",
-    label: a.intl.string(a.t.nmW7jI)
+    label: Chunk388032.intl.string(Chunk388032.t.nmW7jI)
   }, {
     value: "spam",
-    label: a.intl.string(a.t.cCPYjo)
+    label: Chunk388032.intl.string(Chunk388032.t.cCPYjo)
   }, {
     value: "other",
-    label: a.intl.string(a.t["7ZIIJy"])
+    label: Chunk388032.intl.string(Chunk388032.t["7ZIIJy"])
   }]
 }
 var u = function(e) {
@@ -50,16 +51,16 @@ var u = function(e) {
 function d() {
   return [{
     value: "confusion",
-    label: a.intl.string(a.t["64Oph4"])
+    label: Chunk388032.intl.string(Chunk388032.t["64Oph4"])
   }, {
     value: "does_not_achieve_wants",
-    label: a.intl.string(a.t["wH5R/v"])
+    label: Chunk388032.intl.string(Chunk388032.t["wH5R/v"])
   }, {
     value: "hard_to_access",
-    label: a.intl.string(a.t["4uZBRk"])
+    label: Chunk388032.intl.string(Chunk388032.t["4uZBRk"])
   }, {
     value: "something_else",
-    label: a.intl.string(a.t.YicFbG)
+    label: Chunk388032.intl.string(Chunk388032.t.YicFbG)
   }]
 }
 var f = function(e) {
@@ -69,16 +70,16 @@ var f = function(e) {
 function _() {
   return [{
     value: "confusion",
-    label: a.intl.string(a.t.IumZmp)
+    label: Chunk388032.intl.string(Chunk388032.t.IumZmp)
   }, {
     value: "does_not_achieve_wants",
-    label: a.intl.string(a.t.mXkYyc)
+    label: Chunk388032.intl.string(Chunk388032.t.mXkYyc)
   }, {
     value: "hard_to_access",
-    label: a.intl.string(a.t.eg1hVF)
+    label: Chunk388032.intl.string(Chunk388032.t.eg1hVF)
   }, {
     value: "something_else",
-    label: a.intl.string(a.t.WAYoT0)
+    label: Chunk388032.intl.string(Chunk388032.t.WAYoT0)
   }]
 }
 var p = function(e) {
@@ -116,4 +117,4 @@ function h(e) {
 var m = function(e) {
   return e.GET_STARTED = "age_verification_get_started", e.KID_STARTED = "age_verification_kid_started", e
 }({});
-let g = [r.z.AGE_VERIFICATION_SURVEY_MODAL_CLOSE, r.z.AGE_VERIFICATION_SURVEY_MODAL_GET_STARTED]
+let g = [Chunk704215.z.AGE_VERIFICATION_SURVEY_MODAL_CLOSE, Chunk704215.z.AGE_VERIFICATION_SURVEY_MODAL_GET_STARTED]

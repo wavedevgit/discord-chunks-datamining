@@ -1,0 +1,24 @@
+/** Chunk was on 75708 **/
+/** chunk id: 743612, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
+  Z: () => o
+}), require("./953529.js");
+var Chunk255367 = require("./255367.js");
+require("./73800.js");
+var Chunk120356 = require("./120356.js"),
+  s = require.n(Chunk120356),
+  Chunk481060 = require("./481060.js"),
+  Chunk593595 = require("./593595.js");
+let o = e => {
+  var t, n, r, o;
+  let {
+    title: c,
+    shouldShowElement: d,
+    cardVariantStyleInfo: u,
+    description: m,
+    titleClassName: p = "",
+    subtitle: g = "",
+    subtitleClassName: h
+  } = e;
+  return <i.Fragment>{<a.X6q variant={"heading-xl/extrabold"} className={s()(l.cardHeading, p)}>{c}</a.X6q>}{"" !== g && (null == d || d(null == u ? true : u.subtitle)) && <div className={h}>{<a.Text variant={null != (r = null == u || null == (t = u.subtitle) ? true : t.textVariant) ? r : "text-sm/normal"}>{g}</a.Text>}{null != m && <a.Text variant={null != (o = null == u || null == (n = u.description) ? true : n.textVariant) ? o : "text-sm/normal"}><i.Fragment>{<br />}{m}</i.Fragment></a.Text>}</div>}</i.Fragment>
+}

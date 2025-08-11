@@ -1,26 +1,27 @@
 /** Chunk was on web.js **/
+/** chunk id: 985754, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   W: () => o
 });
-var r = n(981631),
-  i = n(388032);
+var Chunk981631 = require("./981631.js"),
+  Chunk388032 = require("./388032.jsx");
 let o = {
-  [r.HeQ.CARD]: () => i.intl.string(i.t["ei5/p6"]),
-  [r.HeQ.PAYPAL]: () => i.intl.string(i.t["2dgEq6"]),
-  [r.HeQ.SOFORT]: () => i.intl.string(i.t["edKX//"]),
-  [r.HeQ.GIROPAY]: () => i.intl.string(i.t["y+0MQU"]),
-  [r.HeQ.PRZELEWY24]: () => i.intl.string(i.t.u25uLy),
-  [r.HeQ.PAYSAFE_CARD]: () => i.intl.string(i.t.boznHB),
-  [r.HeQ.GCASH]: () => i.intl.string(i.t.PjehcH),
-  [r.HeQ.GRABPAY_MY]: () => i.intl.string(i.t.T5davL),
-  [r.HeQ.MOMO_WALLET]: () => i.intl.string(i.t.J0A1Vl),
-  [r.HeQ.VENMO]: () => i.intl.string(i.t.jYOezc),
-  [r.HeQ.KAKAOPAY]: () => i.intl.string(i.t.CSVexs),
-  [r.HeQ.GOPAY_WALLET]: () => i.intl.string(i.t["43J8JC"]),
-  [r.HeQ.BANCONTACT]: () => i.intl.string(i.t["1ITkfn"]),
-  [r.HeQ.EPS]: () => i.intl.string(i.t["5BSDU1"]),
-  [r.HeQ.IDEAL]: () => i.intl.string(i.t.nSbwqK),
-  [r.HeQ.CASH_APP]: () => i.intl.string(i.t["+rbTmJ"]),
-  [r.HeQ.APPLE]: () => i.intl.string(i.t.RFi12t)
+  [Chunk981631.HeQ.CARD]: () => Chunk388032.intl.string(Chunk388032.t["ei5/p6"]),
+  [Chunk981631.HeQ.PAYPAL]: () => Chunk388032.intl.string(Chunk388032.t["2dgEq6"]),
+  [Chunk981631.HeQ.SOFORT]: () => Chunk388032.intl.string(Chunk388032.t["edKX//"]),
+  [Chunk981631.HeQ.GIROPAY]: () => Chunk388032.intl.string(Chunk388032.t["y+0MQU"]),
+  [Chunk981631.HeQ.PRZELEWY24]: () => Chunk388032.intl.string(Chunk388032.t.u25uLy),
+  [Chunk981631.HeQ.PAYSAFE_CARD]: () => Chunk388032.intl.string(Chunk388032.t.boznHB),
+  [Chunk981631.HeQ.GCASH]: () => Chunk388032.intl.string(Chunk388032.t.PjehcH),
+  [Chunk981631.HeQ.GRABPAY_MY]: () => Chunk388032.intl.string(Chunk388032.t.T5davL),
+  [Chunk981631.HeQ.MOMO_WALLET]: () => Chunk388032.intl.string(Chunk388032.t.J0A1Vl),
+  [Chunk981631.HeQ.VENMO]: () => Chunk388032.intl.string(Chunk388032.t.jYOezc),
+  [Chunk981631.HeQ.KAKAOPAY]: () => Chunk388032.intl.string(Chunk388032.t.CSVexs),
+  [Chunk981631.HeQ.GOPAY_WALLET]: () => Chunk388032.intl.string(Chunk388032.t["43J8JC"]),
+  [Chunk981631.HeQ.BANCONTACT]: () => Chunk388032.intl.string(Chunk388032.t["1ITkfn"]),
+  [Chunk981631.HeQ.EPS]: () => Chunk388032.intl.string(Chunk388032.t["5BSDU1"]),
+  [Chunk981631.HeQ.IDEAL]: () => Chunk388032.intl.string(Chunk388032.t.nSbwqK),
+  [Chunk981631.HeQ.CASH_APP]: () => Chunk388032.intl.string(Chunk388032.t["+rbTmJ"]),
+  [Chunk981631.HeQ.APPLE]: () => Chunk388032.intl.string(Chunk388032.t.RFi12t)
 }

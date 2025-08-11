@@ -1,4 +1,5 @@
 /** Chunk was on web.js **/
+/** chunk id: 993135, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 var r = {
   art: "art_c6e099",
@@ -11,4 +12,4 @@ var r = {
   outerButton: "outerButton_c6e099",
   button: "button_c6e099"
 };
-n.r(e.exports = r)
+require.r(module.exports = r)

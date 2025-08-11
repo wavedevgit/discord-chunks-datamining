@@ -1,27 +1,28 @@
 /** Chunk was on web.js **/
-var r = n(990393),
+/** chunk id: 907287, original params: e,t,n (module,exports,re quire) **/
+var Chunk990393 = require("./990393.js"),
   i = 1,
   o = Object.prototype.hasOwnProperty;
-e.exports = function(e, t, n, a, s, l) {
+module.exports = function(e, t, n, a, s, l) {
   var c = n & i,
     u = r(e),
     d = u.length;
-  if (d != r(t).length && !c) return !1;
+  if (d != r(t).length && !c) returnfalse;
   for (var f = d; f--;) {
     var _ = u[f];
-    if (!(c ? _ in t : o.call(t, _))) return !1
+    if (!(c ? _ in t : o.call(t, _))) returnfalse
   }
   var p = l.get(e),
     h = l.get(t);
   if (p && h) return p == t && h == e;
-  var m = !0;
+  var m = true;
   l.set(e, t), l.set(t, e);
   for (var g = c; ++f < d;) {
     var E = e[_ = u[f]],
       b = t[_];
     if (a) var y = c ? a(b, E, _, t, e, l) : a(E, b, _, e, t, l);
-    if (!(void 0 === y ? E === b || s(E, b, n, a, l) : y)) {
-      m = !1;
+    if (!(true === y ? E === b || s(E, b, n, a, l) : y)) {
+      m = false;
       break
     }
     g || (g = "constructor" == _)
@@ -29,7 +30,7 @@ e.exports = function(e, t, n, a, s, l) {
   if (m && !g) {
     var O = e.constructor,
       v = t.constructor;
-    O != v && "constructor" in e && "constructor" in t && !("function" == typeof O && O instanceof O && "function" == typeof v && v instanceof v) && (m = !1)
+    O != v && "constructor" in e && "constructor" in t && !("function" == typeof O && O instanceof O && "function" == typeof v && v instanceof v) && (m = false)
   }
   return l.delete(e), l.delete(t), m
 }

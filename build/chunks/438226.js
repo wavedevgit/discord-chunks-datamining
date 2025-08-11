@@ -1,13 +1,14 @@
 /** Chunk was on web.js **/
+/** chunk id: 438226, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   HV: () => l,
   IS: () => a,
   VY: () => c
-}), n(804061), n(704826), n(35282);
-var r = n(5192),
-  i = n(561308),
-  o = n(388032);
+}), require("./804061.js"), require("./704826.js"), require("./35282.js");
+var Chunk5192 = require("./5192.js"),
+  Chunk561308 = require("./561308.js"),
+  Chunk388032 = require("./388032.jsx");
 let a = (e, t) => o.intl.formatToPlainString(o.t.tAwI1t, {
     username: t.username,
     activity: e.extra.game_name
@@ -18,7 +19,7 @@ let a = (e, t) => o.intl.formatToPlainString(o.t.tAwI1t, {
   },
   l = (e, t, n) => {
     let i = s(e),
-      a = r.ZP.getName(null == t ? void 0 : t.guild_id, null == t ? void 0 : t.id, n),
+      a = r.ZP.getName(null == t ? true : t.guild_id, null == t ? true : t.id, n),
       l = e.extra.game_name;
     return o.intl.formatToMarkdownString(i, {
       gameName: l,
@@ -34,8 +35,8 @@ let a = (e, t) => o.intl.formatToPlainString(o.t.tAwI1t, {
     } = e, l = (0, i.kr)(t) ? o.t.QaUWPT : o.t["7j/5mp"];
     return o.intl.formatToMarkdownString(l, {
       gameName: t.extra.game_name,
-      user1: r.ZP.getName(null == n ? void 0 : n.guild_id, null == n ? void 0 : n.id, a[0]),
-      user2: r.ZP.getName(null == n ? void 0 : n.guild_id, null == n ? void 0 : n.id, a[1]),
+      user1: r.ZP.getName(null == n ? true : n.guild_id, null == n ? true : n.id, a[0]),
+      user2: r.ZP.getName(null == n ? true : n.guild_id, null == n ? true : n.id, a[1]),
       countOthers: s
     }).replaceAll("*", "")
   }

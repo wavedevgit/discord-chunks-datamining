@@ -1,20 +1,21 @@
 /** Chunk was on web.js **/
+/** chunk id: 423343, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   K: () => c
-}), n(539854);
-var r = n(392711),
-  i = n.n(r),
-  o = n(379649),
-  a = n(126168),
-  s = n(981631);
+}), require("./539854.js");
+var Chunk392711 = require("./392711.js"),
+  i = require.n(Chunk392711),
+  Chunk379649 = require("./379649.js"),
+  Chunk126168 = require("./126168.js"),
+  Chunk981631 = require("./981631.js");
 
 function l(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 class c {
@@ -28,18 +29,18 @@ class c {
     }))
   }
   getVoiceConnectionSuccessStats() {
-    let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : (0, o.zO)(),
-      t = this.getStateDurations(e),
+    let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : (0, Chunk379649.zO)(),
+      t = this.getStateDurations(module),
       n = e => i().sumBy(t, t => t.state === e ? t.durationMs : 0);
     return {
-      state_awaiting_endpoint_ms: n(s.hes.AWAITING_ENDPOINT),
-      state_authenticating_ms: n(s.hes.AUTHENTICATING),
-      state_connecting_ms: n(s.hes.CONNECTING),
-      state_disconnected_ms: n(s.hes.DISCONNECTED),
-      state_ice_checking_ms: n(s.hes.ICE_CHECKING),
-      state_no_route_ms: n(s.hes.NO_ROUTE),
-      state_rtc_connecting_ms: n(s.hes.RTC_CONNECTING),
-      state_rtc_disconnected_ms: n(s.hes.RTC_DISCONNECTED)
+      state_awaiting_endpoint_ms: require(Chunk981631.hes.AWAITING_ENDPOINT),
+      state_authenticating_ms: require(Chunk981631.hes.AUTHENTICATING),
+      state_connecting_ms: require(Chunk981631.hes.CONNECTING),
+      state_disconnected_ms: require(Chunk981631.hes.DISCONNECTED),
+      state_ice_checking_ms: require(Chunk981631.hes.ICE_CHECKING),
+      state_no_route_ms: require(Chunk981631.hes.NO_ROUTE),
+      state_rtc_connecting_ms: require(Chunk981631.hes.RTC_CONNECTING),
+      state_rtc_disconnected_ms: require(Chunk981631.hes.RTC_DISCONNECTED)
     }
   }
   getStateDurations(e) {

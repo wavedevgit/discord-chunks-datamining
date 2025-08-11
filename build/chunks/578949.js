@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 578949, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   pageControlContainer: "pageControlContainer_c15210",
   pageControl: "pageControl_c15210",
   pageButton: "pageButton_c15210",

@@ -1,8 +1,9 @@
 /** Chunk was on 1272 **/
-n.d(t, {
+/** chunk id: 900255, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   x: () => i
-}), n(642613), n(583741);
-var r = n(709054);
+}), require("./642613.js"), require("./583741.js");
+var Chunk709054 = require("./709054.js");
 
 function i(e) {
   return e.sort((e, t) => r.default.compare(e.lastMessageId, t.lastMessageId)).reverse()

@@ -1,16 +1,17 @@
 /** Chunk was on web.js **/
+/** chunk id: 47770, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => o
-}), n(388685);
-var r = n(836560);
+}), require("./388685.js");
+var Chunk836560 = require("./836560.js");
 
 function i(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 class o {
@@ -44,6 +45,6 @@ class o {
     return this.emitter.listenerCount(e)
   }
   constructor() {
-    i(this, "emitter", new r.EventEmitter)
+    i(this, "emitter", new Chunk836560.EventEmitter)
   }
 }

@@ -1,11 +1,12 @@
 /** Chunk was on web.js **/
+/** chunk id: 509883, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   _: () => c
 });
-var r = n(573654),
-  i = n(964742),
-  o = n(144459);
+var Chunk573654 = require("./573654.js"),
+  Chunk964742 = require("./964742.js"),
+  Chunk144459 = require("./144459.js");
 
 function a(e, t) {
   var n = Object.keys(e);
@@ -21,7 +22,7 @@ function a(e, t) {
 function s(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {};
-    t % 2 ? a(Object(n), !0).forEach(function(t) {
+    t % 2 ? a(Object(n), true).forEach(function(t) {
       l(e, t, n[t])
     }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : a(Object(n)).forEach(function(t) {
       Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
@@ -33,15 +34,15 @@ function s(e) {
 function l(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
 function c(e) {
   return function() {
-    var t = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {},
+    var t = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {},
       n = e.getMonitor(),
       r = e.getRegistry();
     u(n), _(n).forEach(function(o, a) {
@@ -63,12 +64,12 @@ function u(e) {
 
 function d(e, t, n, r) {
   var i = n.getTarget(e),
-    o = i ? i.drop(r, e) : void 0;
-  return f(o), void 0 === o && (o = 0 === t ? {} : r.getDropResult()), o
+    o = i ? i.drop(r, e) : true;
+  return f(o), true === o && (o = 0 === t ? {} : r.getDropResult()), o
 }
 
 function f(e) {
-  (0, r.k)(void 0 === e || (0, o.Kn)(e), "Drop result must either be an object or undefined.")
+  (0, r.k)(true === e || (0, o.Kn)(e), "Drop result must either be an object or undefined.")
 }
 
 function _(e) {

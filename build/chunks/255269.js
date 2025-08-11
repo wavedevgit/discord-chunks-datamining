@@ -1,23 +1,24 @@
 /** Chunk was on web.js **/
+/** chunk id: 255269, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => s,
   _: () => l
 });
-var r = n(399606),
-  i = n(695346),
-  o = n(496675),
-  a = n(981631);
+var Chunk399606 = require("./399606.js"),
+  Chunk695346 = require("./695346.js"),
+  Chunk496675 = require("./496675.js"),
+  Chunk981631 = require("./981631.js");
 
 function s(e, t) {
   switch (e) {
     case a.A2N.ALWAYS:
-      return !0;
+      returntrue;
     case a.A2N.IF_MODERATOR:
       return t;
     case a.A2N.ON_CLICK:
     default:
-      return !1
+      returnfalse
   }
 }
 

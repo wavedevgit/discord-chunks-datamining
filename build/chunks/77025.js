@@ -1,8 +1,9 @@
 /** Chunk was on web.js **/
+/** chunk id: 77025, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-var r = n(46015),
-  i = n(527160),
-  o = r({}.hasOwnProperty);
-e.exports = Object.hasOwn || function(e, t) {
+var Chunk46015 = require("./46015.js"),
+  Chunk527160 = require("./527160.js"),
+  o = Chunk46015({}.hasOwnProperty);
+module.exports = Object.hasOwn || function(e, t) {
   return o(i(e), t)
 }

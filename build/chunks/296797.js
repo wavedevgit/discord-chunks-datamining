@@ -1,16 +1,17 @@
 /** Chunk was on 49152 **/
-n.d(t, {
+/** chunk id: 296797, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => h
 });
-var r = n(73800),
-  i = n(592125),
-  l = n(944486),
-  a = n(585483),
-  s = n(16609),
-  o = n(917107),
-  c = n(89425),
-  u = n(197386),
-  d = n(981631);
+var Chunk73800 = require("./73800.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk944486 = require("./944486.js"),
+  Chunk585483 = require("./585483.js"),
+  Chunk16609 = require("./16609.js"),
+  Chunk917107 = require("./917107.js"),
+  Chunk89425 = require("./89425.js"),
+  Chunk197386 = require("./197386.js"),
+  Chunk981631 = require("./981631.js");
 
 function h(e) {
   let {
@@ -26,7 +27,7 @@ function h(e) {
         channelId: r
       });
       let a = i.Z.getChannel(r),
-        d = null == a ? void 0 : a.guild_id;
+        d = null == a ? true : a.guild_id;
       setTimeout(() => {
         (0, u.Z)(d, n), null == t || t()
       }, 0)

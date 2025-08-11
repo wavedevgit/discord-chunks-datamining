@@ -1,9 +1,10 @@
 /** Chunk was on web.js **/
+/** chunk id: 682751, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => u
 });
-var r = n(799761),
+var Chunk799761 = require("./799761.js"),
   i = {
     narrow: ["B", "A"],
     abbreviated: ["BC", "AD"],
@@ -103,26 +104,26 @@ let u = {
     }
     return n + "th"
   },
-  era: (0, r.Z)({
+  era: (0, Chunk799761.Z)({
     values: i,
     defaultWidth: "wide"
   }),
-  quarter: (0, r.Z)({
+  quarter: (0, Chunk799761.Z)({
     values: o,
     defaultWidth: "wide",
     argumentCallback: function(e) {
       return e - 1
     }
   }),
-  month: (0, r.Z)({
+  month: (0, Chunk799761.Z)({
     values: a,
     defaultWidth: "wide"
   }),
-  day: (0, r.Z)({
+  day: (0, Chunk799761.Z)({
     values: s,
     defaultWidth: "wide"
   }),
-  dayPeriod: (0, r.Z)({
+  dayPeriod: (0, Chunk799761.Z)({
     values: l,
     defaultWidth: "wide",
     formattingValues: c,

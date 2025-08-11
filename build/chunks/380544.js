@@ -1,5 +1,6 @@
 /** Chunk was on 22988 **/
-e.exports = {
+/** chunk id: 380544, original params: e,t,n (module,exports,require) **/
+module.exports = {
   paymentInfoGroup: "paymentInfoGroup_c0544c",
   metricsContainer: "metricsContainer_c0544c",
   metricCard: "metricCard_c0544c",

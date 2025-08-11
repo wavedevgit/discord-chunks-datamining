@@ -1,12 +1,13 @@
 /** Chunk was on 21153 **/
+/** chunk id: 59788, original params: e,t,r (module,exports,require) **/
 "use strict";
-r.d(t, {
+require.d(exports, {
   Z: () => a
 });
-var n = r(73800),
-  o = r(9196);
+var Chunk73800 = require("./73800.js"),
+  Chunk9196 = require("./9196.js");
 let a = function() {
-  var e = (0, o.default)({
+  var e = (0, Chunk9196.default)({
     default: {
       triangle: {
         width: 0,
@@ -43,15 +44,15 @@ let a = function() {
       }
     }
   });
-  return n.createElement("div", {
-    style: e.pointer
-  }, n.createElement("div", {
-    style: e.left
-  }, n.createElement("div", {
-    style: e.leftInside
-  })), n.createElement("div", {
-    style: e.right
-  }, n.createElement("div", {
-    style: e.rightInside
+  return Chunk73800.createElement("div", {
+    style: module.pointer
+  }, Chunk73800.createElement("div", {
+    style: module.left
+  }, Chunk73800.createElement("div", {
+    style: module.leftInside
+  })), Chunk73800.createElement("div", {
+    style: module.right
+  }, Chunk73800.createElement("div", {
+    style: module.rightInside
   })))
 }

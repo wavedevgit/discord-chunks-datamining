@@ -1,11 +1,12 @@
 /** Chunk was on web.js **/
+/** chunk id: 37234, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Ou: () => a,
   jN: () => i,
   xf: () => o
 });
-var r = n(570140);
+var Chunk570140 = require("./570140.js");
 
 function i(e) {
   r.Z.dispatch({
@@ -15,13 +16,13 @@ function i(e) {
 }
 
 function o() {
-  r.Z.dispatch({
+  Chunk570140.Z.dispatch({
     type: "LAYER_POP"
   })
 }
 
 function a() {
-  r.Z.dispatch({
+  Chunk570140.Z.dispatch({
     type: "LAYER_POP_ALL"
   })
 }

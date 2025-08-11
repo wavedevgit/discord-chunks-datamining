@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 74538, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Af: () => V,
   Ap: () => ew,
   BK: () => q,
@@ -8,11 +9,11 @@ n.d(t, {
   EK: () => tD,
   EO: () => tt,
   Gf: () => er,
-  I5: () => A.I5,
+  I5: () => Chunk111361.I5,
   JE: () => eX,
   JP: () => $,
   L7: () => ee,
-  M5: () => A.M5,
+  M5: () => Chunk111361.M5,
   MY: () => eJ,
   N1: () => eA,
   PK: () => ek,
@@ -59,48 +60,48 @@ n.d(t, {
   v6: () => eL,
   v9: () => e5,
   xG: () => tF,
-  yd: () => A.yd,
+  yd: () => Chunk111361.yd,
   yg: () => tk,
   zL: () => ed,
   zV: () => eB
-}), n(415506), n(49124), n(388685), n(290780), n(539854);
-var r = n(512722),
-  i = n.n(r),
-  o = n(913527),
-  a = n.n(o),
-  s = n(442837),
-  l = n(782568),
-  c = n(927359),
-  u = n(710845),
-  d = n(491819),
-  f = n(803905),
-  _ = n(790060),
-  p = n(301766),
-  h = n(594174),
-  m = n(351402),
-  g = n(853872),
-  E = n(509545),
-  b = n(78839),
-  y = n(122289),
-  O = n(55935),
-  v = n(70956),
-  I = n(424218),
-  T = n(358085),
-  S = n(380684),
-  A = n(111361),
-  N = n(937615),
-  C = n(981631),
-  R = n(334431),
-  P = n(474936),
-  w = n(231338),
-  D = n(388032);
+}), require("./415506.js"), require("./49124.js"), require("./388685.js"), require("./290780.js"), require("./539854.js");
+var Chunk512722 = require("./512722.js"),
+  i = require.n(Chunk512722),
+  Chunk913527 = require("./913527.js"),
+  a = require.n(Chunk913527),
+  Chunk442837 = require("./442837.js"),
+  Chunk782568 = require("./782568.js"),
+  Chunk927359 = require("./927359.js"),
+  Chunk710845 = require("./710845.js"),
+  Chunk491819 = require("./491819.js"),
+  Chunk803905 = require("./803905.js"),
+  Chunk790060 = require("./790060.js"),
+  Chunk301766 = require("./301766.js"),
+  Chunk594174 = require("./594174.js"),
+  Chunk351402 = require("./351402.js"),
+  Chunk853872 = require("./853872.js"),
+  Chunk509545 = require("./509545.js"),
+  Chunk78839 = require("./78839.js"),
+  Chunk122289 = require("./122289.js"),
+  Chunk55935 = require("./55935.js"),
+  Chunk70956 = require("./70956.js"),
+  Chunk424218 = require("./424218.js"),
+  Chunk358085 = require("./358085.js"),
+  Chunk380684 = require("./380684.js"),
+  Chunk111361 = require("./111361.js"),
+  Chunk937615 = require("./937615.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk334431 = require("./334431.js"),
+  Chunk474936 = require("./474936.js"),
+  Chunk231338 = require("./231338.js"),
+  Chunk388032 = require("./388032.js");
 
 function L(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -143,17 +144,17 @@ let j = {
     PAYMENT_SOURCE_MANAGEMENT: "https://play.google.com/store/paymentmethods",
     BILLING_HISTORY: "https://play.google.com/store/account/orderhistory"
   },
-  G = new u.Z("PremiumUtils.tsx"),
+  G = new Chunk710845.Z("PremiumUtils.tsx"),
   B = {
-    [P.Xh.NONE_MONTH]: [P.Xh.NONE_YEAR, P.Xh.PREMIUM_YEAR_TIER_2, P.Xh.PREMIUM_MONTH_TIER_2, P.Xh.PREMIUM_YEAR_TIER_1, P.Xh.PREMIUM_MONTH_TIER_1],
-    [P.Xh.NONE_YEAR]: [P.Xh.PREMIUM_YEAR_TIER_2, P.Xh.PREMIUM_MONTH_TIER_2, P.Xh.PREMIUM_YEAR_TIER_1, P.Xh.PREMIUM_MONTH_TIER_1],
-    [P.Xh.PREMIUM_MONTH_TIER_0]: [P.Xh.PREMIUM_YEAR_TIER_2, P.Xh.PREMIUM_MONTH_TIER_2, P.Xh.PREMIUM_YEAR_TIER_1, P.Xh.PREMIUM_MONTH_TIER_1, P.Xh.PREMIUM_YEAR_TIER_0],
-    [P.Xh.PREMIUM_YEAR_TIER_0]: [P.Xh.PREMIUM_YEAR_TIER_2, P.Xh.PREMIUM_MONTH_TIER_2, P.Xh.PREMIUM_YEAR_TIER_1, P.Xh.PREMIUM_MONTH_TIER_1],
-    [P.Xh.PREMIUM_MONTH_TIER_1]: [P.Xh.PREMIUM_YEAR_TIER_2, P.Xh.PREMIUM_MONTH_TIER_2, P.Xh.PREMIUM_YEAR_TIER_1],
-    [P.Xh.PREMIUM_YEAR_TIER_1]: [P.Xh.PREMIUM_YEAR_TIER_2],
-    [P.Xh.PREMIUM_MONTH_TIER_2]: [P.Xh.PREMIUM_YEAR_TIER_2],
-    [P.Xh.PREMIUM_YEAR_TIER_2]: [],
-    ALL: [P.Xh.NONE_MONTH, P.Xh.NONE_YEAR, P.Xh.PREMIUM_YEAR_TIER_2, P.Xh.PREMIUM_MONTH_TIER_2, P.Xh.PREMIUM_YEAR_TIER_1, P.Xh.PREMIUM_MONTH_TIER_1, P.Xh.PREMIUM_YEAR_TIER_0, P.Xh.PREMIUM_MONTH_TIER_0]
+    [Chunk474936.Xh.NONE_MONTH]: [Chunk474936.Xh.NONE_YEAR, Chunk474936.Xh.PREMIUM_YEAR_TIER_2, Chunk474936.Xh.PREMIUM_MONTH_TIER_2, Chunk474936.Xh.PREMIUM_YEAR_TIER_1, Chunk474936.Xh.PREMIUM_MONTH_TIER_1],
+    [Chunk474936.Xh.NONE_YEAR]: [Chunk474936.Xh.PREMIUM_YEAR_TIER_2, Chunk474936.Xh.PREMIUM_MONTH_TIER_2, Chunk474936.Xh.PREMIUM_YEAR_TIER_1, Chunk474936.Xh.PREMIUM_MONTH_TIER_1],
+    [Chunk474936.Xh.PREMIUM_MONTH_TIER_0]: [Chunk474936.Xh.PREMIUM_YEAR_TIER_2, Chunk474936.Xh.PREMIUM_MONTH_TIER_2, Chunk474936.Xh.PREMIUM_YEAR_TIER_1, Chunk474936.Xh.PREMIUM_MONTH_TIER_1, Chunk474936.Xh.PREMIUM_YEAR_TIER_0],
+    [Chunk474936.Xh.PREMIUM_YEAR_TIER_0]: [Chunk474936.Xh.PREMIUM_YEAR_TIER_2, Chunk474936.Xh.PREMIUM_MONTH_TIER_2, Chunk474936.Xh.PREMIUM_YEAR_TIER_1, Chunk474936.Xh.PREMIUM_MONTH_TIER_1],
+    [Chunk474936.Xh.PREMIUM_MONTH_TIER_1]: [Chunk474936.Xh.PREMIUM_YEAR_TIER_2, Chunk474936.Xh.PREMIUM_MONTH_TIER_2, Chunk474936.Xh.PREMIUM_YEAR_TIER_1],
+    [Chunk474936.Xh.PREMIUM_YEAR_TIER_1]: [Chunk474936.Xh.PREMIUM_YEAR_TIER_2],
+    [Chunk474936.Xh.PREMIUM_MONTH_TIER_2]: [Chunk474936.Xh.PREMIUM_YEAR_TIER_2],
+    [Chunk474936.Xh.PREMIUM_YEAR_TIER_2]: [],
+    ALL: [Chunk474936.Xh.NONE_MONTH, Chunk474936.Xh.NONE_YEAR, Chunk474936.Xh.PREMIUM_YEAR_TIER_2, Chunk474936.Xh.PREMIUM_MONTH_TIER_2, Chunk474936.Xh.PREMIUM_YEAR_TIER_1, Chunk474936.Xh.PREMIUM_MONTH_TIER_1, Chunk474936.Xh.PREMIUM_YEAR_TIER_0, Chunk474936.Xh.PREMIUM_MONTH_TIER_0]
   },
   Z = 2592e6;
 var F = function(e) {
@@ -166,11 +167,11 @@ function V(e) {
 
 function H(e) {
   var t;
-  let n = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
-    r = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
-    i = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : void 0,
-    o = !(arguments.length > 4) || void 0 === arguments[4] || arguments[4],
-    a = null != (t = g.Z.defaultPaymentSourceId) ? t : void 0,
+  let n = arguments.length > 1 && true !== arguments[1] && arguments[1],
+    r = arguments.length > 2 && true !== arguments[2] && arguments[2],
+    i = arguments.length > 3 && true !== arguments[3] ? arguments[3] : true,
+    o = !(arguments.length > 4) || true === arguments[4] || arguments[4],
+    a = null != (t = g.Z.defaultPaymentSourceId) ? t : true,
     s = b.Z.getPremiumTypeSubscription();
   return null != s && null != s.paymentSourceId && (a = s.paymentSourceId), Y(e, n, r, {
     paymentSourceId: a,
@@ -179,10 +180,10 @@ function H(e) {
 }
 
 function Y(e) {
-  let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
-    n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
-    r = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : {},
-    i = !(arguments.length > 4) || void 0 === arguments[4] || arguments[4],
+  let t = arguments.length > 1 && true !== arguments[1] && arguments[1],
+    n = arguments.length > 2 && true !== arguments[2] && arguments[2],
+    r = arguments.length > 3 && true !== arguments[3] ? arguments[3] : {},
+    i = !(arguments.length > 4) || true === arguments[4] || arguments[4],
     {
       paymentSourceId: o,
       currency: a
@@ -243,7 +244,7 @@ function K(e) {
   let {
     paymentSourceId: t,
     purchaseType: n
-  } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {
+  } = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {
     purchaseType: C.tuJ.DEFAULT
   }, r = W(e, n);
   if (null != t) {
@@ -280,7 +281,7 @@ function z(e) {
     paymentSourceId: t,
     purchaseType: n,
     currency: r
-  } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {
+  } = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {
     purchaseType: C.tuJ.DEFAULT
   }, i = K(e, {
     paymentSourceId: t,
@@ -302,7 +303,7 @@ function X(e, t, n) {
       currency: t,
       amount: 0,
       tax: 0,
-      taxInclusive: !1
+      taxInclusive: false
     },
     a = (0, d.MY)(e);
   null != a && (r = P.GP[a.planId].premiumType);
@@ -310,7 +311,7 @@ function X(e, t, n) {
     l = (0, A.yd)(r, P.p9.TIER_2);
   for (let r of e) {
     let e;
-    i = P.Z1.has(r.planId) ? l : !P.dJ.has(r.planId) && s, e = void 0 === n ? H(r.planId, i, !1, t) : Y(r.planId, i, !1, {
+    i = P.Z1.has(r.planId) ? l : !P.dJ.has(r.planId) && s, e = true === n ? H(r.planId, i, false, t) : Y(r.planId, i, false, {
       paymentSourceId: n,
       currency: t
     }), o.amount += e.amount * r.quantity
@@ -351,9 +352,9 @@ function $(e) {
 }
 
 function ee(e, t, n) {
-  let r = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : 1,
-    i = arguments.length > 4 && void 0 !== arguments[4] && arguments[4],
-    o = arguments.length > 5 && void 0 !== arguments[5] ? arguments[5] : P.p9.TIER_2;
+  let r = arguments.length > 3 && true !== arguments[3] ? arguments[3] : 1,
+    i = arguments.length > 4 && true !== arguments[4] && arguments[4],
+    o = arguments.length > 5 && true !== arguments[5] ? arguments[5] : P.p9.TIER_2;
   if (t || n) switch (e) {
     case P.rV.MONTH:
       let a = D.intl.formatToPlainString(o === P.p9.TIER_0 ? D.t.NPKsLy : D.t.poEovb, {
@@ -404,9 +405,9 @@ function en(e) {
 }
 
 function er(e) {
-  let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
-    n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
-    r = arguments.length > 3 ? arguments[3] : void 0;
+  let t = arguments.length > 1 && true !== arguments[1] && arguments[1],
+    n = arguments.length > 2 && true !== arguments[2] && arguments[2],
+    r = arguments.length > 3 ? arguments[3] : true;
   switch (e) {
     case P.Xh.PREMIUM_MONTH_TIER_0:
       return t ? D.intl.format(D.t.TZXHNj, {
@@ -499,7 +500,7 @@ function ea(e, t) {
 }
 
 function es(e) {
-  let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
+  let t = arguments.length > 1 && true !== arguments[1] && arguments[1];
   switch (e) {
     case P.Xh.PREMIUM_MONTH_TIER_0:
     case P.Xh.PREMIUM_YEAR_TIER_0:
@@ -522,7 +523,7 @@ function es(e) {
 }
 
 function el(e) {
-  let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
+  let t = arguments.length > 1 && true !== arguments[1] && arguments[1];
   switch (e) {
     case P.p9.TIER_0:
       return t ? "Basic" : D.intl.string(D.t["t9uG/v"]);
@@ -544,7 +545,7 @@ function ec(e) {
     activeDiscountInfo: b,
     renewalInvoicePreview: y,
     hasFractionalPremiumWithSub: v
-  } = e, I = P.GP[p], T = tR(H(I.id), I.interval), S = eG(_) || null == _.paymentSourceId && !_.isPurchasedExternally && !(null == (t = h.default.getCurrentUser()) ? void 0 : t.hasFreePremium()), A = null != m && null == _.paymentGateway, N = _.status === C.O0b.UNPAID && null !== _.latestInvoice && (null == (n = _.latestInvoice) ? void 0 : n.status) === C.hUK.OPEN, R = S ? C.O0b.CANCELED : N ? C.O0b.UNPAID : _.status, w = null == (o = null != (i = null == y ? void 0 : y.taxInclusive) ? i : null == (r = _.latestInvoice) ? void 0 : r.taxInclusive) || o, L = P.cb + (g ? eE(_.additionalPlans) : 0), x = A ? w ? D.intl.format(D.t["cd+hqK"], {
+  } = e, I = P.GP[p], T = tR(H(I.id), I.interval), S = eG(_) || null == _.paymentSourceId && !_.isPurchasedExternally && !(null == (t = h.default.getCurrentUser()) ? true : t.hasFreePremium()), A = null != m && null == _.paymentGateway, N = _.status === C.O0b.UNPAID && null !== _.latestInvoice && (null == (n = _.latestInvoice) ? true : n.status) === C.hUK.OPEN, R = S ? C.O0b.CANCELED : N ? C.O0b.UNPAID : _.status, w = null == (o = null != (i = null == y ? true : y.taxInclusive) ? i : null == (r = _.latestInvoice) ? true : r.taxInclusive) || o, L = P.cb + (g ? eE(_.additionalPlans) : 0), x = A ? w ? D.intl.format(D.t["cd+hqK"], {
     price: m
   }) : D.intl.format(D.t.NUkcpK, {
     price: m
@@ -697,16 +698,16 @@ function ec(e) {
           });
         default:
           return E ? p === P.Xh.PREMIUM_YEAR_TIER_2 ? D.intl.format(D.t["+qqh6u"], {
-            percent: null != (s = null == b ? void 0 : b.percentage) ? s : P.Bo,
+            percent: null != (s = null == b ? true : b.percentage) ? s : P.Bo,
             regularPrice: T
           }) : w ? D.intl.formatToPlainString(D.t["3Ziutb"], {
-            percent: null != (c = null == b ? void 0 : b.percentage) ? c : P.M_,
+            percent: null != (c = null == b ? true : b.percentage) ? c : P.M_,
             regularPrice: T,
-            numMonths: null != (u = null == b ? void 0 : b.duration) ? u : P.rt
+            numMonths: null != (u = null == b ? true : b.duration) ? u : P.rt
           }) : D.intl.formatToPlainString(D.t["G6+XOT"], {
-            percent: null != (d = null == b ? void 0 : b.percentage) ? d : P.M_,
+            percent: null != (d = null == b ? true : b.percentage) ? d : P.M_,
             regularPrice: T,
-            numMonths: null != (f = null == b ? void 0 : b.duration) ? f : P.rt
+            numMonths: null != (f = null == b ? true : b.duration) ? f : P.rt
           }) : k
       }
     default:
@@ -719,10 +720,10 @@ function eu(e) {
     renewalInvoicePreview: t,
     subscription: n,
     planId: r,
-    includePremiumGuilds: o = !1,
-    hasDiscountApplied: a = !1,
+    includePremiumGuilds: o = false,
+    hasDiscountApplied: a = false,
     activeDiscountInfo: s,
-    hasFractionalPremiumWithSub: l = !1
+    hasFractionalPremiumWithSub: l = false
   } = e, c = E.Z.get(r);
   return i()(null != c, "Missing plan"), ec({
     subscription: n,
@@ -740,14 +741,14 @@ function ed(e) {
   let {
     planId: t,
     additionalPlans: n
-  } = e, r = (0, p.Q0)(t) ? null : er(t), i = null == n ? void 0 : n.find(e => {
+  } = e, r = (0, p.Q0)(t) ? null : er(t), i = null == n ? true : n.find(e => {
     let {
       planId: t
     } = e;
     return P.Z1.has(t)
-  }), o = (null == i ? void 0 : i.planId) === P.Xh.PREMIUM_MONTH_GUILD || (null == i ? void 0 : i.planId) === P.Xh.PREMIUM_YEAR_GUILD ? D.t.Pi5yMD : null, a = null != o ? D.intl.formatToPlainString(o, {
-    num: null == i ? void 0 : i.quantity
-  }) : void 0;
+  }), o = (null == i ? true : i.planId) === P.Xh.PREMIUM_MONTH_GUILD || (null == i ? true : i.planId) === P.Xh.PREMIUM_YEAR_GUILD ? D.t.Pi5yMD : null, a = null != o ? D.intl.formatToPlainString(o, {
+    num: null == i ? true : i.quantity
+  }) : true;
   if (null != r && null != a) return D.intl.formatToPlainString(D.t.FN5T9v, {
     premiumDescription: r,
     premiumGuildDescription: a
@@ -770,7 +771,7 @@ function e_(e) {
     defaultPlanId: o
   } = e;
   if (null == t || !n) return [];
-  let a = void 0 !== o && t === P.GP[o].skuId ? o : void 0,
+  let a = true !== o && t === P.GP[o].skuId ? o : true,
     s = [];
   switch (t) {
     case P.Si.TIER_0:
@@ -796,7 +797,7 @@ function e_(e) {
     default:
       throw Error("Unexpected SKU: ".concat(t))
   }
-  if (void 0 !== a) {
+  if (true !== a) {
     let e = s.indexOf(a);
     s.splice(e, 1), s.unshift(a)
   }
@@ -858,7 +859,7 @@ function eE(e) {
   });
   return null != n ? n.quantity : 0
 }
-let eb = new Set([P.Xh.NONE_MONTH, P.Xh.NONE_3_MONTH, P.Xh.NONE_6_MONTH, P.Xh.NONE_YEAR, P.Xh.PREMIUM_MONTH_TIER_0, P.Xh.PREMIUM_MONTH_TIER_1, P.Xh.PREMIUM_MONTH_TIER_2, P.Xh.PREMIUM_YEAR_TIER_0, P.Xh.PREMIUM_YEAR_TIER_1, P.Xh.PREMIUM_YEAR_TIER_2, P.Xh.PREMIUM_3_MONTH_TIER_2, P.Xh.PREMIUM_6_MONTH_TIER_2]);
+let eb = new Set([Chunk474936.Xh.NONE_MONTH, Chunk474936.Xh.NONE_3_MONTH, Chunk474936.Xh.NONE_6_MONTH, Chunk474936.Xh.NONE_YEAR, Chunk474936.Xh.PREMIUM_MONTH_TIER_0, Chunk474936.Xh.PREMIUM_MONTH_TIER_1, Chunk474936.Xh.PREMIUM_MONTH_TIER_2, Chunk474936.Xh.PREMIUM_YEAR_TIER_0, Chunk474936.Xh.PREMIUM_YEAR_TIER_1, Chunk474936.Xh.PREMIUM_YEAR_TIER_2, Chunk474936.Xh.PREMIUM_3_MONTH_TIER_2, Chunk474936.Xh.PREMIUM_6_MONTH_TIER_2]);
 
 function ey(e) {
   return eb.has(e)
@@ -878,14 +879,14 @@ function eI(e) {
 
 function eT(e) {
   var t, n, r, i, o;
-  if (e.isPurchasedViaApple && (null == (t = e.metadata) ? void 0 : t.apple_grace_period_expires_date) != null) {
+  if (e.isPurchasedViaApple && (null == (t = e.metadata) ? true : t.apple_grace_period_expires_date) != null) {
     let t = a()(e.metadata.apple_grace_period_expires_date);
     return {
       days: a().duration(t.diff(e.currentPeriodStart)).days(),
       expiresDate: t
     }
   }
-  if (e.isPurchasedViaGoogle && (null == (n = e.metadata) ? void 0 : n.google_grace_period_expires_date) != null && (null == (r = e.metadata) ? void 0 : r.google_original_expires_date) != null) {
+  if (e.isPurchasedViaGoogle && (null == (n = e.metadata) ? true : n.google_grace_period_expires_date) != null && (null == (r = e.metadata) ? true : r.google_original_expires_date) != null) {
     let t = a()(e.metadata.google_grace_period_expires_date),
       n = a()(e.metadata.google_original_expires_date);
     return {
@@ -900,8 +901,8 @@ function eT(e) {
       expiresDate: a()(e.currentPeriodStart).add(t, "days")
     }
   }
-  if ((null == (i = e.metadata) ? void 0 : i.grace_period_expires_date) != null) return {
-    days: a()(null == (o = e.metadata) ? void 0 : o.grace_period_expires_date).diff(e.currentPeriodStart, "days"),
+  if ((null == (i = e.metadata) ? true : i.grace_period_expires_date) != null) return {
+    days: a()(null == (o = e.metadata) ? true : o.grace_period_expires_date).diff(e.currentPeriodStart, "days"),
     expiresDate: a()(e.metadata.grace_period_expires_date)
   };
   {
@@ -914,11 +915,11 @@ function eT(e) {
 }
 
 function eS(e, t) {
-  let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : null,
-    r = arguments.length > 3 && void 0 !== arguments[3] && arguments[3],
-    i = arguments.length > 4 && void 0 !== arguments[4] ? arguments[4] : {
-      isFractionalPremiumActive: !1,
-      fetched: !0,
+  let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : null,
+    r = arguments.length > 3 && true !== arguments[3] && arguments[3],
+    i = arguments.length > 4 && true !== arguments[4] ? arguments[4] : {
+      isFractionalPremiumActive: false,
+      fetched: true,
       fractionalState: P.a$.NONE,
       startsAt: a()(0),
       endsAt: a()(0),
@@ -953,7 +954,7 @@ function eS(e, t) {
   if (e.status === C.O0b.PAST_DUE) {
     var l, c;
     let t = eT(e).expiresDate;
-    return (e.isPurchasedViaGoogle && (null == (l = e.metadata) ? void 0 : l.google_grace_period_expires_date) != null && (t = a()(e.metadata.google_grace_period_expires_date)), e.isPurchasedViaApple && (null == (c = e.metadata) ? void 0 : c.apple_grace_period_expires_date) != null && (t = a()(e.metadata.apple_grace_period_expires_date)), e.isPurchasedExternally) ? D.intl.format(D.t.U2hb3d, {
+    return (e.isPurchasedViaGoogle && (null == (l = e.metadata) ? true : l.google_grace_period_expires_date) != null && (t = a()(e.metadata.google_grace_period_expires_date)), e.isPurchasedViaApple && (null == (c = e.metadata) ? true : c.apple_grace_period_expires_date) != null && (t = a()(e.metadata.apple_grace_period_expires_date)), e.isPurchasedExternally) ? D.intl.format(D.t.U2hb3d, {
       endDate: t.toDate(),
       paymentGatewayName: w.Vz[e.paymentGateway],
       paymentSourceLink: eX(e.paymentGateway, "PAYMENT_SOURCE_MANAGEMENT")
@@ -998,14 +999,14 @@ function eS(e, t) {
 }
 
 function eA(e, t, n, r) {
-  let i = a()(r ? void 0 : e);
+  let i = a()(r ? true : e);
   if (t.length > 0) {
     let e = tZ(t);
     i = i.add(e, "hours")
   }
-  if (!r && void 0 !== n) {
+  if (!r && true !== n) {
     let e = a()(),
-      t = n.diff(e, "hours", !0);
+      t = n.diff(e, "hours", true);
     t > 0 && (i = i.add(t, "hours"))
   }
   return i.toDate()
@@ -1037,7 +1038,7 @@ function eP(e) {
 }
 
 function ew(e) {
-  if (null == e) return !1;
+  if (null == e) returnfalse;
   let t = g.Z.getPaymentSource(e);
   return null != t && w.Uk.has(t.type)
 }
@@ -1075,7 +1076,7 @@ function ex(e) {
     null != e && (p = e.amount)
   }
   s = null != s ? s : (0, N.T4)(p, o.currency);
-  let h = null == (r = null != (n = null == l ? void 0 : l.taxInclusive) ? n : null == (t = o.latestInvoice) ? void 0 : t.taxInclusive) || r;
+  let h = null == (r = null != (n = null == l ? true : l.taxInclusive) ? n : null == (t = o.latestInvoice) ? true : t.taxInclusive) || r;
   if (eL(o)) return o.isPurchasedViaGoogle ? D.intl.format(D.t["3/WTrK"], {
     quantity: _
   }) : h ? D.intl.format(D.t["0ozBSE"], {
@@ -1119,10 +1120,10 @@ function ex(e) {
 }
 
 function eM(e, t, n) {
-  let r = arguments.length > 3 && void 0 !== arguments[3] && arguments[3],
-    i = null != t ? Y(e.id, !1, r, t) : H(e.id, !1, r),
+  let r = arguments.length > 3 && true !== arguments[3] && arguments[3],
+    i = null != t ? Y(e.id, false, r, t) : H(e.id, false, r),
     o = (0, N.T4)(i.amount, i.currency);
-  return e.currency !== w.pK.USD && !0 === n && (o = o.concat("*")), o
+  return e.currency !== w.pK.USD && true === n && (o = o.concat("*")), o
 }
 
 function ek(e, t, n) {
@@ -1179,7 +1180,7 @@ function eZ(e, t, n) {
       } = e;
       return t === n.id
     }),
-    i = null == r ? Y(n.id, !1, !1, {
+    i = null == r ? Y(n.id, false, false, {
       paymentSourceId: t.paymentSourceId,
       currency: t.currency
     }).amount : r.amount;
@@ -1212,7 +1213,7 @@ function eF(e, t, n, r) {
       }
     }), t
   }
-  return Y(a.id, (0, A.I5)(r), !1, i)
+  return Y(a.id, (0, A.I5)(r), false, i)
 }
 
 function eV(e) {
@@ -1291,7 +1292,7 @@ function eW(e) {
   let {
     intervalType: t = P.rV.MONTH,
     intervalCount: n = 1,
-    capitalize: r = !1
+    capitalize: r = false
   } = e;
   switch (t) {
     case P.rV.DAY:
@@ -1336,7 +1337,7 @@ function eK(e) {
     if (i === _.R.TREATMENT_1) {
       let e = w.pK.USD;
       try {
-        e = H(P.Xh.PREMIUM_MONTH_TIER_2, !1, !1, void 0, !1).currency
+        e = H(P.Xh.PREMIUM_MONTH_TIER_2, false, false, true, false).currency
       } catch (e) {}
       let r = (0, N.T4)(0, e, {
         maximumFractionDigits: 0
@@ -1420,7 +1421,7 @@ function eq(e) {
   let {
     intervalType: t = P.rV.MONTH,
     intervalCount: n = 1,
-    capitalize: r = !1
+    capitalize: r = false
   } = e;
   switch (t) {
     case P.rV.DAY:
@@ -1463,13 +1464,13 @@ function eX(e, t) {
 }
 
 function eQ(e, t) {
-  return (0, A.I5)(e) || eB(null == t ? void 0 : t.status)
+  return (0, A.I5)(e) || eB(null == t ? true : t.status)
 }
 
 function eJ(e, t) {
   var n, r;
   let i = [],
-    o = (null != (r = null == (n = e.renewalMutations) ? void 0 : n.items) ? r : e.items).find(e => P.dJ.has(e.planId));
+    o = (null != (r = null == (n = e.renewalMutations) ? true : n.items) ? r : e.items).find(e => P.dJ.has(e.planId));
   return null != o && i.push(o), i.push(...t), i.map(t => {
     for (let n of e.items)
       if (t.planId === n.planId) return x({}, n, t);
@@ -1484,8 +1485,8 @@ function e$(e) {
 function e0(e, t, n, r) {
   var o, a;
   i()(r.has(t), "Expected planId in group");
-  let s = !1,
-    l = (null != (a = null == (o = e.renewalMutations) ? void 0 : o.items) ? a : e.items).map(e => r.has(e.planId) ? (s = !0, k(x({}, e), {
+  let s = false,
+    l = (null != (a = null == (o = e.renewalMutations) ? true : o.items) ? a : e.items).map(e => r.has(e.planId) ? (s = true, k(x({}, e), {
       quantity: n,
       planId: t
     })) : e);
@@ -1527,12 +1528,12 @@ function e3(e) {
 }
 
 function e5(e) {
-  let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {
-      useSpace: !0
+  let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {
+      useSpace: true
     },
     n = P.a1[e].fileSize;
   return (0, I.BU)(n / 1024, {
-    useKibibytes: !0,
+    useKibibytes: true,
     useSpace: t.useSpace
   })
 }
@@ -1699,8 +1700,8 @@ function tw(e) {
 }
 
 function tD() {
-  let e = (0, s.e7)([h.default], () => h.default.getCurrentUser());
-  return (0, A.M5)(e, P.p9.TIER_2)
+  let e = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser());
+  return (0, Chunk111361.M5)(module, Chunk474936.p9.TIER_2)
 }
 
 function tL(e) {
@@ -1712,7 +1713,7 @@ function tx(e) {
 }
 
 function tM() {
-  return P.tL
+  return Chunk474936.tL
 }
 
 function tk(e) {
@@ -1756,20 +1757,20 @@ function tF(e) {
 }
 
 function tV(e) {
-  let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
-    n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {};
+  let t = arguments.length > 1 && true !== arguments[1] && arguments[1],
+    n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : {};
   if (e.interval !== P.rV.YEAR) return;
   let r = P.IW[e.skuId];
   if (null == r) return;
-  let i = Y(r, !1, t, n),
-    o = Y(e.id, !1, t, n);
+  let i = Y(r, false, t, n),
+    o = Y(e.id, false, t, n);
   if (0 !== i.amount) return Math.floor(100 * (1 - o.amount / (12 * i.amount)))
 }
 let tH = Object.freeze({
   isNewUser: tt,
-  isPremiumAtLeast: A.yd,
-  isPremium: A.I5,
-  isPremiumExactly: A.M5,
+  isPremiumAtLeast: Chunk111361.yd,
+  isPremium: Chunk111361.I5,
+  isPremiumExactly: Chunk111361.M5,
   isPremiumEligible: tB,
   getPrice: Y,
   getDefaultPrice: H,
@@ -1787,7 +1788,7 @@ let tH = Object.freeze({
   isPremiumSku: ef,
   getClosestUpgrade: eg,
   getIntervalMonths: ea,
-  getUserMaxFileSize: S.h,
+  getUserMaxFileSize: Chunk380684.h,
   getSkuIdForPlan: ep,
   getSkuIdForPremiumType: eh,
   getNumIncludedPremiumGuildSubscriptionSlots: eI,
@@ -1796,7 +1797,7 @@ let tH = Object.freeze({
   getUnactivatedFractionalPremiumDurationString: eN,
   isSwitchingPlansDisabled: eC,
   getSwitchingPlansDisabledMessage: eR,
-  isNoneSubscription: p.Q0,
+  isNoneSubscription: Chunk301766.Q0,
   getPlanIdFromInvoice: ej,
   getStatusFromInvoice: eU,
   isBaseSubscriptionCanceled: eG,

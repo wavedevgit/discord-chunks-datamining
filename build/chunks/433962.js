@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 433962, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   embedHorizontal: "embedHorizontal_a8b53f",
   embedVertical: "embedVertical_a8b53f",
   loading: "loading_a8b53f",

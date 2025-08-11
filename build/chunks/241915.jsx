@@ -1,0 +1,327 @@
+/** Chunk was on web.js **/
+/** chunk id: 241915, original params: e,t,n (module,exports,re quire) **/
+"use strict";
+require.d(exports, {
+  Z: () => A,
+  _: () => T
+}), require("./388685.js");
+var r, Chunk255367 = require("./255367.js"),
+  Chunk73800 = require("./73800.js"),
+  Chunk120356 = require("./120356.js"),
+  s = require.n(Chunk120356),
+  Chunk392711 = require("./392711.js"),
+  Chunk347469 = require("./347469.js"),
+  Chunk689425 = require("./689425.js"),
+  Chunk522501 = require("./522501.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk354459 = require("./354459.js"),
+  Chunk189152 = require("./189152.js");
+
+function h(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+
+function m(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      h(e, t, n[t])
+    })
+  }
+  return e
+}
+let g = 200,
+  E = 40,
+  b = {
+    top: 80,
+    bottom: 132,
+    left: 80
+  },
+  y = {
+    [Chunk981631.VD2.TOP_RIGHT]: Chunk189152.resizeHandleTopRight,
+    [Chunk981631.VD2.TOP_LEFT]: Chunk189152.resizeHandleTopLeft,
+    [Chunk981631.VD2.BOTTOM_LEFT]: Chunk189152.resizeHandleBottomLeft,
+    [Chunk981631.VD2.BOTTOM_RIGHT]: Chunk189152.resizeHandleBottomRight
+  },
+  O = {
+    [Chunk981631.VD2.TOP_RIGHT]: Chunk347469.y.HORIZONTAL_LEFT,
+    [Chunk981631.VD2.TOP_LEFT]: Chunk347469.y.HORIZONTAL_RIGHT,
+    [Chunk981631.VD2.BOTTOM_LEFT]: Chunk347469.y.HORIZONTAL_RIGHT,
+    [Chunk981631.VD2.BOTTOM_RIGHT]: Chunk347469.y.HORIZONTAL_LEFT
+  };
+
+function v(e, t) {
+  let n = Math.round(e / E) * E;
+  return (0, l.clamp)(n, t.minWidth, t.maxWidth)
+}
+
+function I(e) {
+  let {
+    resizableNode: t,
+    onResize: n,
+    onResizeEnd: r,
+    resizeConfig: a,
+    position: l
+  } = e, u = (0, c.Z)({
+    minDimension: a.minWidth,
+    maxDimension: a.maxWidth + E / 2,
+    resizableDomNodeRef: t,
+    onElementResize: n,
+    onElementResizeEnd: r,
+    orientation: O[l],
+    usePointerEvents: true
+  }), d = o.useCallback(e => {
+    e.stopPropagation(), u(e)
+  }, [u]);
+  return <div onMouseDown={d} className={s()(p.resizeHandle, y[l])} />
+}
+class T extends(r = Chunk73800.PureComponent) {
+  componentDidMount() {
+    this.setPosition(this.props.position)
+  }
+  componentDidUpdate(e) {
+    if (null != this.props.width && null != this.props.resizeConfig && e.width !== this.props.width) {
+      var t, n;
+      let r = null != (n = null != (t = this._width) ? t : e.width) ? n : this.props.width;
+      this._width = this.props.width, null != this._innerDivRef.current && (Math.abs(r - this._width) > E && (this._innerDivRef.current.style.transition = "none"), this._innerDivRef.current.style.width = "".concat(this.props.width, "px"))
+    }(e.edgeOffsetTop !== this.props.edgeOffsetTop || e.edgeOffsetLeft !== this.props.edgeOffsetLeft || e.edgeOffsetBottom !== this.props.edgeOffsetBottom || e.edgeOffsetRight !== this.props.edgeOffsetRight || e.maxX !== this.props.maxX || e.maxY !== this.props.maxY || e.dockedRect !== this.props.dockedRect || e.roundCorners !== this.props.roundCorners) && (this.ensureIsInPosition(), this.ensureWidth())
+  }
+  componentWillUnmount() {
+    var e;
+    null == (e = this._resizeObserver) || module.disconnect()
+  }
+  getPosition(e) {
+    let t = this._innerDivRef.current;
+    if (null != t) {
+      let e = t.getBoundingClientRect();
+      this._boundWidth = e.width, this._boundHeight = e.height
+    }
+    let {
+      edgeOffsetTop: n,
+      edgeOffsetLeft: r,
+      edgeOffsetBottom: i,
+      edgeOffsetRight: o,
+      maxX: a,
+      maxY: s,
+      dockedRect: l,
+      getDockedRectPositionY: c
+    } = this.props, u = Math.round(n), d = Math.round(s - i - this._boundHeight), _ = Math.round(r), p = Math.round(a - o - this._boundWidth);
+    if (null != l) {
+      var h, m, g;
+      return {
+        y: null != (m = null != (h = null == c ? true : c(l.y)) ? h : l.y) ? m : 0,
+        x: null != (g = null == l ? true : l.x) ? g : 0
+      }
+    }
+    switch (e) {
+      case f.VD2.TOP_LEFT:
+        return {
+          y: u, x: _
+        };
+      case f.VD2.BOTTOM_LEFT:
+        return {
+          y: d, x: _
+        };
+      case f.VD2.TOP_RIGHT:
+        return {
+          y: u, x: p
+        };
+      default:
+        return {
+          y: d, x: p
+        }
+    }
+  }
+  setPosition(e) {
+    var t;
+    let {
+      x: n,
+      y: r
+    } = this.getPosition(e);
+    null == (t = this._draggable) || t.setPosition(n, r)
+  }
+  animateToPosition(e, t) {
+    var n;
+    let {
+      x: r,
+      y: i
+    } = this.getPosition(e);
+    null == (n = this._draggable) || n.animateToPosition(r, i, {}, t)
+  }
+  calculateDecayingPosition(e, t, n, r) {
+    return {
+      x: e + n * g,
+      y: t + r * g
+    }
+  }
+  getXOffset() {
+    let {
+      position: e,
+      edgeOffsetLeft: t,
+      edgeOffsetRight: n
+    } = this.props;
+    switch (module) {
+      case Chunk981631.VD2.TOP_LEFT:
+      case Chunk981631.VD2.BOTTOM_LEFT:
+        return -exports;
+      default:
+        return require
+    }
+  }
+  getYOffset() {
+    let {
+      position: e,
+      edgeOffsetTop: t,
+      edgeOffsetBottom: n
+    } = this.props;
+    switch (module) {
+      case Chunk981631.VD2.TOP_LEFT:
+      case Chunk981631.VD2.TOP_RIGHT:
+        return -exports;
+      default:
+        return require
+    }
+  }
+  getWidth() {
+    var e, t;
+    let {
+      width: n
+    } = this.props;
+    return null != (t = null != (e = this._width) ? module : require) ? exports : Chunk354459.l8[Chunk354459.cL.VIDEO]
+  }
+  get inPopout() {
+    return this.props.appContext === Chunk981631.IlC.POPOUT
+  }
+  render() {
+    let {
+      maxX: e,
+      maxY: t,
+      dockedRect: n,
+      hidden: r,
+      roundCorners: o,
+      className: a,
+      position: l,
+      resizeConfig: c
+    } = this.props, d = this.getWidth(), f = {};
+    return null != require ? f = {
+      transform: "translate3d(".concat(require.x, ", ").concat(require.y, ", 0)"),
+      width: require.width,
+      height: require.height
+    } : null != Chunk347469 && (f = {
+      width: Chunk522501,
+      transition: this.state.isResizing ? "none" : "width 0.2s ease-in-out"
+    }), <Chunk689425.Z dragAnywhere={true} ref={this.handleSetDraggableRef} className={s()(Chunk189152.pictureInPictureWindow, Chunk120356, {
+        [Chunk189152.hidden]: r,
+        [Chunk189152.borderRadius]: Chunk73800
+      })} maxX={module} maxY={exports} disabled={null != require} onDragStart={this.handleDragStart} onDrag={this.handleDrag} onDragEnd={this.handleDragEnd}>{<div ref={this.handleSetInnerDivRef} style={Chunk981631}>{this.props.children}</div>}{null != Chunk347469 ? <I onResize={this.handleResize} onResizeEnd={this.handleResizeEnd} resizableNode={this._innerDivRef} resizeConfig={Chunk347469} position={Chunk392711} /> : null}</Chunk689425.Z>
+  }
+  constructor(...e) {
+    super(...e), h(this, "state", {
+      isResizing: false
+    }), h(this, "_draggable", true), h(this, "_innerDivRef", o.createRef()), h(this, "_resizeObserver", true), h(this, "_width", null), h(this, "_boundWidth", 0), h(this, "_boundHeight", 0), h(this, "_velocityX", 0), h(this, "_velocityY", 0), h(this, "_lastMoveTime", true), h(this, "_lastMoveX", 0), h(this, "_lastMoveY", 0), h(this, "ensureIsInPosition", () => {
+      this.setPosition(this.props.position)
+    }), h(this, "ensureWidth", () => {
+      let {
+        onResize: e,
+        edgeOffsetLeft: t,
+        edgeOffsetRight: n,
+        maxX: r,
+        resizeConfig: i
+      } = this.props;
+      if (null == i) return;
+      let o = v(r - (t + n), i);
+      this.getWidth() > o && (this._width = o, null == e || e(o))
+    }), h(this, "handleSetInnerDivRef", e => {
+      this._innerDivRef.current = e;
+      let t = null == e ? true : e.ownerDocument.defaultView;
+      if (null != e && null != t) {
+        var n;
+        this._resizeObserver = new t.ResizeObserver(this.ensureIsInPosition), null == (n = this._resizeObserver) || n.observe(e)
+      }
+    }), h(this, "handleSetDraggableRef", e => {
+      this._draggable = e
+    }), h(this, "handleResize", e => {
+      this._width = e, this.state.isResizing || this.setState({
+        isResizing: true
+      })
+    }), h(this, "handleResizeEnd", e => {
+      let {
+        onResize: t,
+        resizeConfig: n
+      } = this.props;
+      if (null == n) return;
+      let r = v(e, n);
+      this._width = r, null == t || t(r), this.setState({
+        isResizing: false
+      }), this.ensureWidth()
+    }), h(this, "handleDragStart", (e, t) => {
+      var n, r;
+      this._velocityX = 0, this._velocityY = 0, this._lastMoveX = e, this._lastMoveY = t, this._lastMoveTime = new Date, null == (n = (r = this.props).onDragStart) || n.call(r, e, t)
+    }), h(this, "handleDrag", (e, t) => {
+      let n = new Date,
+        r = Number(n) - Number(this._lastMoveTime);
+      0 !== r && (this._velocityX = (e - this._lastMoveX) / r, this._velocityY = (t - this._lastMoveY) / r, this._lastMoveX = e, this._lastMoveY = t, this._lastMoveTime = n)
+    }), h(this, "handleDragEnd", (e, t) => {
+      var n, r;
+      let i, {
+          maxX: o,
+          maxY: a
+        } = this.props,
+        s = this.calculateDecayingPosition(e, t, this._velocityX, this._velocityY),
+        l = true,
+        c = true;
+      if (s.x > o / 2 && (c = false), s.y > a / 2 && (l = false), i = l && c ? f.VD2.TOP_LEFT : l && !c ? f.VD2.TOP_RIGHT : !l && c ? f.VD2.BOTTOM_LEFT : f.VD2.BOTTOM_RIGHT, this.animateToPosition(i, this.ensureIsInPosition), i !== this.props.position) {
+        let {
+          id: e,
+          onMove: t
+        } = this.props;
+        null == t || t(e, i)
+      }
+      null == (n = (r = this.props).onDragEnd) || n.call(r, e, t)
+    })
+  }
+}
+h(T, "defaultProps", {
+  hidden: false,
+  roundCorners: true
+});
+let S = e => {
+    let {
+      selectedPIPWindow: t,
+      pipWindows: n,
+      pipWidth: r,
+      maxX: a,
+      maxY: l,
+      onWindowMove: c,
+      onWindowResize: u,
+      dockedRect: _,
+      pictureInPictureComponents: h,
+      appContext: g,
+      roundCorners: E,
+      resizeConfig: y,
+      className: O,
+      getDockedRectPositionY: v
+    } = e, [I, S] = o.useState(false), A = o.useMemo(() => null == t ? null : n.map(e => {
+      if (e.id !== t.id && e.component !== f.NYg.ACTIVITY && e.component !== f.NYg.FRAME) return null;
+      let n = "string" == typeof e.component ? h[e.component] : e.component;
+      return <n{...m({
+        width: r
+      }, e.props)} />
+    }), [n, t, r, h]), N = o.useCallback(() => {
+      S(true)
+    }, []), C = o.useCallback(() => {
+      S(false)
+    }, []), R = o.useMemo(() => n.some(e => e.component === f.NYg.ACTIVITY), [n]), P = o.useMemo(() => n.some(e => e.component === f.NYg.FRAME), [n]);
+    return null == t ? <d.ZP><div className={p.pictureInPicture} /></d.ZP> : <d.ZP><div className={s()(p.pictureInPicture, {
+          [p.dragging]: I
+        }, O)}><T appContext={g} position={t.position} id={t.id} hidden={t.hidden} onMove={c} onResize={u} onDragStart={N} onDragEnd={C} maxX={a} maxY={l} width={r} dockedRect={_} getDockedRectPositionY={v} edgeOffsetTop={b.top} edgeOffsetBottom={b.bottom} edgeOffsetLeft={b.left} edgeOffsetRight={b.top} roundCorners={E} resizeConfig={R || P ? true : y}>{A}</T></div></d.ZP>
+  },
+  A = Chunk73800.memo(S)

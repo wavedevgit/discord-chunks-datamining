@@ -1,5 +1,6 @@
 /** Chunk was on 91850 **/
-e.exports = {
+/** chunk id: 752420, original params: e,t,n (module,exports,require) **/
+module.exports = {
   videoPaused: "videoPaused_afb275",
   warningCircle: "warningCircle_afb275"
 }

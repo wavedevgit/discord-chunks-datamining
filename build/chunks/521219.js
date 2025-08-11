@@ -1,12 +1,13 @@
 /** Chunk was on 22988 **/
-e.exports = {
+/** chunk id: 521219, original params: e,t,n (module,exports,require) **/
+module.exports = {
   emptyRoles: "emptyRoles__5f97b",
   emptyRolesText: "emptyRolesText__5f97b",
   roleRow: "roleRow__5f97b",
   roleRowDragging: "roleRowDragging__5f97b",
   dragIcon: "dragIcon__5f97b",
   roleNameContainer: "roleNameContainer__5f97b",
-  shield: "shield__5f97b " + n(361585).desaturateUserColors,
+  shield: "shield__5f97b " + require("./361585.js").desaturateUserColors,
   roleIcon: "roleIcon__5f97b",
   lock: "lock__5f97b",
   subscriptionRoleIcon: "subscriptionRoleIcon__5f97b",

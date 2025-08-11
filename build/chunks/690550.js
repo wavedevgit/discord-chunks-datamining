@@ -1,9 +1,10 @@
 /** Chunk was on 86915 **/
+/** chunk id: 690550, original params: e,t,n (module,exports,require) **/
 "use strict";
-e.exports = {
+module.exports = {
   settingCard: "settingCard__1a4ef",
   active: "active__1a4ef",
-  shield: "shield__1a4ef " + n(361585).desaturateUserColors,
+  shield: "shield__1a4ef " + require("./361585.js").desaturateUserColors,
   cardIcon: "cardIcon__1a4ef",
   cardFolder: "cardFolder__1a4ef",
   adminWarning: "adminWarning__1a4ef",

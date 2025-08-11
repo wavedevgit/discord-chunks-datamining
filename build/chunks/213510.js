@@ -1,5 +1,6 @@
 /** Chunk was on 46746 **/
-e.exports = {
+/** chunk id: 213510, original params: e,t,n (module,exports,require) **/
+module.exports = {
   guildScroller: "guildScroller__1dfb8",
   guildRow: "guildRow__1dfb8",
   guildIcon: "guildIcon__1dfb8",

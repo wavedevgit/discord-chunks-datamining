@@ -1,10 +1,11 @@
 /** Chunk was on web.js **/
+/** chunk id: 262847, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => i
 });
-var r = n(526761);
+var Chunk526761 = require("./526761.js");
 let i = {
-  [r.yP.PRELOADED_USER_SETTINGS]: [],
-  [r.yP.FRECENCY_AND_FAVORITES_SETTINGS]: []
+  [Chunk526761.yP.PRELOADED_USER_SETTINGS]: [],
+  [Chunk526761.yP.FRECENCY_AND_FAVORITES_SETTINGS]: []
 }

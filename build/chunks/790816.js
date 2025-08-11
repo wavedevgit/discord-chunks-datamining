@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 790816, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   headerBackground: "headerBackground_b66356",
   tier2HeaderBackground: "tier2HeaderBackground_b66356 headerBackground_b66356",
   snow: "snow_b66356",

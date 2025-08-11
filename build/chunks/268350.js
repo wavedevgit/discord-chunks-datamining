@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 268350, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   $p: () => T,
   FQ: () => I,
   Il: () => S,
@@ -12,30 +13,30 @@ n.d(t, {
   lY: () => C,
   pk: () => A,
   qB: () => w
-}), n(953529), n(539854);
-var r = n(392711),
-  i = n.n(r),
-  o = n(544891),
-  a = n(570140),
-  s = n(668781),
-  l = n(38618),
-  c = n(706454),
-  u = n(675478),
-  d = n(598077),
-  f = n(486472),
-  _ = n(594174),
-  p = n(73346),
-  h = n(926491),
-  m = n(981631),
-  g = n(526761),
-  E = n(388032);
+}), require("./953529.js"), require("./539854.js");
+var Chunk392711 = require("./392711.js"),
+  i = require.n(Chunk392711),
+  Chunk544891 = require("./544891.js"),
+  Chunk570140 = require("./570140.js"),
+  Chunk668781 = require("./668781.js"),
+  Chunk38618 = require("./38618.js"),
+  Chunk706454 = require("./706454.js"),
+  Chunk675478 = require("./675478.js"),
+  Chunk598077 = require("./598077.js"),
+  Chunk486472 = require("./486472.js"),
+  Chunk594174 = require("./594174.js"),
+  Chunk73346 = require("./73346.js"),
+  Chunk926491 = require("./926491.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk526761 = require("./526761.js"),
+  Chunk388032 = require("./388032.js");
 
 function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -73,7 +74,7 @@ let I = async (e, t) => {
     body: n
   } = await (0, p.Kb)({
     url: m.ANM.STICKER_PACK(e),
-    rejectWithError: !1
+    rejectWithError: false
   });
   return a.Z.dispatch({
     type: "STICKER_PACK_FETCH_SUCCESS",
@@ -83,11 +84,11 @@ let I = async (e, t) => {
   }), n
 }, T = async function() {
   let {
-    locale: e = c.default.locale
-  } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
-  if (h.Z.isFetchingStickerPacks || h.Z.hasLoadedStickerPacks) return;
-  a.Z.wait(() => {
-    a.Z.dispatch({
+    locale: e = Chunk706454.default.locale
+  } = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {};
+  if (Chunk926491.Z.isFetchingStickerPacks || Chunk926491.Z.hasLoadedStickerPacks) return;
+  Chunk570140.Z.wait(() => {
+    Chunk570140.Z.dispatch({
       type: "STICKER_PACKS_FETCH_START"
     })
   });
@@ -95,23 +96,23 @@ let I = async (e, t) => {
     body: {
       sticker_packs: t
     }
-  } = await o.tn.get({
-    url: m.ANM.STICKER_PACKS,
+  } = await Chunk544891.tn.get({
+    url: Chunk981631.ANM.STICKER_PACKS,
     query: {
-      locale: e
+      locale: module
     },
-    rejectWithError: !1
+    rejectWithError: false
   });
-  a.Z.dispatch({
+  Chunk570140.Z.dispatch({
     type: "STICKER_PACKS_FETCH_SUCCESS",
-    packs: t
+    packs: exports
   })
 }, S = async e => {
   let {
     body: t
   } = await o.tn.get({
     url: m.ANM.STICKER(e),
-    rejectWithError: !1
+    rejectWithError: false
   });
   a.Z.dispatch({
     type: "STICKER_FETCH_SUCCESS",
@@ -122,7 +123,7 @@ let I = async (e, t) => {
     body: t
   } = await o.tn.get({
     url: m.ANM.GUILD_STICKER_PACKS(e),
-    rejectWithError: !1
+    rejectWithError: false
   });
   a.Z.dispatch({
     type: "GUILD_STICKERS_FETCH_SUCCESS",
@@ -134,14 +135,14 @@ let I = async (e, t) => {
 }, N = async e => {
   await o.tn.del({
     url: m.ANM.GUILD_STICKER(e.guild_id, e.id),
-    rejectWithError: !1
+    rejectWithError: false
   })
 }, C = async e => {
   let {
     guildId: t
   } = e, n = await o.tn.post({
     url: m.ANM.GUILD_STICKER_PACKS(t),
-    body: "web" === e.platform ? e.body : void 0,
+    body: "web" === e.platform ? e.body : true,
     fields: "mobile" === e.platform ? [{
       name: "name",
       value: e.name
@@ -151,7 +152,7 @@ let I = async (e, t) => {
     }, {
       name: "description",
       value: e.description
-    }] : void 0,
+    }] : true,
     attachments: "mobile" === e.platform ? [{
       name: "file",
       file: {
@@ -159,8 +160,8 @@ let I = async (e, t) => {
         name: e.name,
         type: e.mimeType
       }
-    }] : void 0,
-    rejectWithError: !1
+    }] : true,
+    rejectWithError: false
   });
   return a.Z.dispatch({
     type: "GUILD_STICKERS_CREATE_SUCCESS",
@@ -172,7 +173,7 @@ let I = async (e, t) => {
 }, R = async (e, t, n) => (await o.tn.patch({
   url: m.ANM.GUILD_STICKER(e, t),
   body: n,
-  rejectWithError: !1
+  rejectWithError: false
 })).body;
 
 function P(e, t, n) {
@@ -202,7 +203,7 @@ function L(e) {
     body: E.intl.formatToPlainString(E.t.JaIyFh, {
       count: g.oX
     })
-  }), !1) : !t.stickerIds.includes(e) && void t.stickerIds.push(e), g.fy.INFREQUENT_USER_ACTION)
+  }), false) : !t.stickerIds.includes(e) && void t.stickerIds.push(e), g.fy.INFREQUENT_USER_ACTION)
 }
 
 function x(e) {

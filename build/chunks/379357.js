@@ -1,24 +1,25 @@
 /** Chunk was on web.js **/
+/** chunk id: 379357, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   FO: () => y,
   YC: () => O,
   rv: () => b
-}), n(388685), n(781311);
-var r = n(726542),
-  i = n(394821),
-  o = n(834353),
-  a = n(802856),
-  s = n(835473),
-  l = n(210753),
-  c = n(750154),
-  u = n(81063),
-  d = n(768581),
-  f = n(26033),
-  _ = n(593294),
-  p = n(981631),
-  h = n(701488),
-  m = n(388032);
+}), require("./388685.js"), require("./781311.js");
+var Chunk726542 = require("./726542.js"),
+  Chunk394821 = require("./394821.js"),
+  Chunk834353 = require("./834353.js"),
+  Chunk802856 = require("./802856.js"),
+  Chunk835473 = require("./835473.js"),
+  Chunk210753 = require("./210753.js"),
+  Chunk750154 = require("./750154.js"),
+  Chunk81063 = require("./81063.js"),
+  Chunk768581 = require("./768581.js"),
+  Chunk26033 = require("./26033.js"),
+  Chunk593294 = require("./593294.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk701488 = require("./701488.js"),
+  Chunk388032 = require("./388032.js");
 
 function g(e) {
   return (0, f.dU)(e) && e.extra.entries.length > 0 ? {
@@ -28,12 +29,12 @@ function g(e) {
     alt: e.extra.media_title
   } : (0, f.KF)(e) ? {
     src: e.extra.media.image_url
-  } : void 0
+  } : true
 }
 
 function E(e) {
-  let t = null == e ? void 0 : e.getIconURL(h.Si.LARGE),
-    n = null == e ? void 0 : e.name;
+  let t = null == e ? true : e.getIconURL(h.Si.LARGE),
+    n = null == e ? true : e.name;
   if (null != t) return {
     src: t,
     alt: null == n ? m.intl.string(m.t["2B/phI"]) : m.intl.formatToPlainString(m.t.tiKyYm, {
@@ -46,7 +47,7 @@ function b(e) {
   var t;
   let {
     entry: n,
-    showCoverImage: r = !0
+    showCoverImage: r = true
   } = e, {
     activity: i,
     activityApplication: o,
@@ -58,21 +59,21 @@ function b(e) {
     largeImage: u
   } = y(i, null != a ? a : o), {
     coverImageUrl: d
-  } = (0, l.$)(null == (t = null != a ? a : o) ? void 0 : t.id), f = g(n);
+  } = (0, l.$)(null == (t = null != a ? a : o) ? true : t.id), f = g(n);
   return null != s ? {
     largeImage: s,
     smallImage: c
   } : null != f ? {
     largeImage: f,
-    smallImage: void 0
+    smallImage: true
   } : null != d && r ? {
     largeImage: {
       src: d
     },
-    smallImage: void 0
+    smallImage: true
   } : {
     largeImage: u,
-    smallImage: void 0
+    smallImage: true
   }
 }
 
@@ -90,14 +91,14 @@ function y(e, t) {
     let t = (0, c.rq)(e),
       n = null != t ? d.ZP.getGuildIconURL({
         id: t.guildId,
-        icon: null == e || null == (s = e.assets) ? void 0 : s.small_image,
+        icon: null == e || null == (s = e.assets) ? true : s.small_image,
         size: h.Si.SMALL
-      }) : void 0;
+      }) : true;
     return {
       largeImage: null != n ? {
         src: n
-      } : void 0,
-      smallImage: void 0
+      } : true,
+      smallImage: true
     }
   }
   if (null == n && (0, a.Z)(e)) return {
@@ -105,14 +106,14 @@ function y(e, t) {
       src: r.Z.get(p.ABu.XBOX).icon.customPNG,
       alt: m.intl.string(m.t["Nfvo7+"])
     },
-    smallImage: void 0
+    smallImage: true
   };
   if (null == n && null == i && (0, o.Z)(e)) return {
     largeImage: {
       src: r.Z.get(p.ABu.PLAYSTATION).icon.lightPNG,
       alt: m.intl.string(m.t.fFl4jo)
     },
-    smallImage: void 0
+    smallImage: true
   };
   let l = E(t);
   return null != l ? {
@@ -120,29 +121,29 @@ function y(e, t) {
     smallImage: i
   } : {
     largeImage: i,
-    smallImage: void 0
+    smallImage: true
   }
 }
 
 function O(e, t) {
   var n, r, o, a, l, c, d, f;
-  let _ = (0, s.q)(null == e ? void 0 : e.application_id);
+  let _ = (0, s.q)(null == e ? true : e.application_id);
   if (null == e) return {
-    largeImage: void 0,
-    smallImage: void 0
+    largeImage: true,
+    smallImage: true
   };
-  let p = null == e || null == (n = e.assets) ? void 0 : n.large_image,
+  let p = null == e || null == (n = e.assets) ? true : n.large_image,
     m = null != p ? {
       src: (0, u.xF)(e.application_id, p, [h.Si.LARGE, h.Si.LARGE]),
-      text: null == (o = e.assets) || null == (r = o.large_text) ? void 0 : r.trim(),
-      url: null == (a = e.assets) ? void 0 : a.large_url
-    } : void 0,
-    g = (0, i.Z)(e) || null == e || null == (l = e.assets) ? void 0 : l.small_image,
+      text: null == (o = e.assets) || null == (r = o.large_text) ? true : r.trim(),
+      url: null == (a = e.assets) ? true : a.large_url
+    } : true,
+    g = (0, i.Z)(e) || null == e || null == (l = e.assets) ? true : l.small_image,
     b = null != g ? {
       src: (0, u.xF)(e.application_id, g, [h.Si.LARGE, h.Si.LARGE]),
-      text: null == (d = e.assets) || null == (c = d.small_text) ? void 0 : c.trim(),
-      url: null == (f = e.assets) ? void 0 : f.small_url
-    } : void 0;
+      text: null == (d = e.assets) || null == (c = d.small_text) ? true : c.trim(),
+      url: null == (f = e.assets) ? true : f.small_url
+    } : true;
   return {
     largeImage: null != m ? m : E(null != t ? t : _),
     smallImage: b

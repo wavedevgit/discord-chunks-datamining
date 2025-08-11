@@ -1,26 +1,27 @@
 /** Chunk was on 82096 **/
-n.d(t, {
+/** chunk id: 183584, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   IN: () => a,
   oZ: () => c
-}), n(255367), n(73800);
-var r = n(570140),
-  l = n(610394);
-n(238246), n(788983), n(592125), n(19780);
-var i = n(237997);
-n(998502), n(487029);
-var o = n(710111);
-n(981631), n(388032);
+}), require("./255367.js"), require("./73800.js");
+var Chunk570140 = require("./570140.js"),
+  Chunk610394 = require("./610394.js");
+require("./238246.js"), require("./788983.js"), require("./592125.js"), require("./19780.js");
+var Chunk237997 = require("./237997.js");
+require("./998502.js"), require("./487029.js");
+var Chunk710111 = require("./710111.js");
+require("./981631.js"), require("./388032.js");
 let s = {
-  width: o.FW.width,
-  height: o.FW.height,
-  resizable: !1,
-  movable: !1,
-  alwaysOnTop: !0,
-  frame: !1,
-  transparent: !0,
-  hasShadow: !1,
-  skipTaskbar: !0,
-  menubar: !0,
+  width: Chunk710111.FW.width,
+  height: Chunk710111.FW.height,
+  resizable: false,
+  movable: false,
+  alwaysOnTop: true,
+  frame: false,
+  transparent: true,
+  hasShadow: false,
+  skipTaskbar: true,
+  menubar: true,
   backgroundColor: "#00000000",
   titleBarStyle: null
 };
@@ -30,12 +31,12 @@ function a(e, t) {
     o = i.default.disableClickableRegions;
   n || o || r.Z.dispatch({
     type: "OVERLAY_SET_INPUT_LOCKED",
-    locked: !1,
+    locked: false,
     pid: t
   }), r.Z.dispatch({
     type: "SOUNDBOARD_SET_OVERLAY_ENABLED",
     pid: t,
-    enabled: !0,
+    enabled: true,
     keepOpen: e
   })
 }
@@ -44,14 +45,14 @@ function c(e) {
   r.Z.dispatch({
     type: "SOUNDBOARD_SET_OVERLAY_ENABLED",
     pid: e,
-    enabled: !1
+    enabled: false
   });
   let t = l.ZP.isOverlayV3EnabledForPID(e),
     n = i.default.disableClickableRegions;
   i.default.isLocked(e) || t || n || r.Z.dispatch({
     type: "OVERLAY_SET_INPUT_LOCKED",
-    locked: !0,
+    locked: true,
     pid: e
   })
 }
-o.FW.padding, s.width, s.height
+Chunk710111.FW.padding, s.width, s.height

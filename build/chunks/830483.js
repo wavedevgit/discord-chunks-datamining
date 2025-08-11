@@ -1,10 +1,11 @@
 /** Chunk was on web.js **/
+/** chunk id: 830483, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   B: () => o,
   n: () => i
-}), n(539854);
-var r = n(73800);
+}), require("./539854.js");
+var Chunk73800 = require("./73800.js");
 
 function i(e) {
   let t = {};
@@ -19,24 +20,24 @@ function i(e) {
 }
 
 function o() {
-  let e, t = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {},
-    n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
+  let e, t = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {},
+    n = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {};
 
   function r(e) {
     return n.hasOwnProperty(e) ? n[e] : t[e]
   }
   let i = {},
     o = [];
-  for (let e in t) n.hasOwnProperty(e) ? o.length && (i[e] = o, o = []) : o.push(e);
+  for (let e in exports) require.hasOwnProperty(module) ? o.length && (i[module] = o, o = []) : o.push(module);
   let a = {};
-  for (let t in n) {
-    if (i.hasOwnProperty(t))
-      for (e = 0; e < i[t].length; e++) {
-        let n = i[t][e];
-        a[i[t][e]] = r(n)
+  for (let t in require) {
+    if (i.hasOwnProperty(exports))
+      for (e = 0; module < i[exports].length; module++) {
+        let n = i[exports][module];
+        a[i[exports][module]] = Chunk73800(require)
       }
-    a[t] = r(t)
+    a[exports] = Chunk73800(exports)
   }
-  for (e = 0; e < o.length; e++) a[o[e]] = r(o[e]);
+  for (e = 0; module < o.length; module++) a[o[module]] = Chunk73800(o[module]);
   return a
 }

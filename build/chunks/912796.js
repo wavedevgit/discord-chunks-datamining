@@ -1,4 +1,5 @@
 /** Chunk was on web.js **/
+/** chunk id: 912796, original params: e (module,exports,re quire) **/
 function t(e) {
   return e instanceof Map ? e.clear = e.delete = e.set = function() {
     throw Error("map is read-only")
@@ -12,10 +13,10 @@ function t(e) {
 }
 class n {
   constructor(e) {
-    void 0 === e.data && (e.data = {}), this.data = e.data, this.isMatchIgnored = !1
+    true === e.data && (e.data = {}), this.data = e.data, this.isMatchIgnored = false
   }
   ignoreMatch() {
-    this.isMatchIgnored = !0
+    this.isMatchIgnored = true
   }
 }
 
@@ -133,7 +134,7 @@ class d extends u {
     return new l(this, this.options).value()
   }
   finalize() {
-    return this.closeAllNodes(), !0
+    return this.closeAllNodes(), true
   }
 }
 
@@ -246,7 +247,7 @@ let I = /\b\B/,
       scope: "doctag",
       begin: "[ ]*(?=(TODO|FIXME|NOTE|BUG|OPTIMIZE|HACK|XXX):)",
       end: /(TODO|FIXME|NOTE|BUG|OPTIMIZE|HACK|XXX):/,
-      excludeBegin: !0,
+      excludeBegin: true,
       relevance: 0
     });
     let o = E("I", "a", "is", "so", "us", "to", "at", "if", "in", "it", "on", /[A-Za-z]+['](d|ve|re|ll|t|s|n)/, /[A-Za-z]+[-][a-z]+/, /[A-Za-z][a-z]{2,}/);
@@ -335,11 +336,11 @@ function V(e, t) {
 }
 
 function H(e, t) {
-  void 0 !== e.className && (e.scope = e.className, delete e.className)
+  true !== e.className && (e.scope = e.className, delete e.className)
 }
 
 function Y(e, t) {
-  t && e.beginKeywords && (e.begin = "\\b(" + e.beginKeywords.split(" ").join("|") + ")(?!\\.)(?=\\b|\\s)", e.__beforeBegin = V, e.keywords = e.keywords || e.beginKeywords, delete e.beginKeywords, void 0 === e.relevance && (e.relevance = 0))
+  t && e.beginKeywords && (e.begin = "\\b(" + e.beginKeywords.split(" ").join("|") + ")(?!\\.)(?=\\b|\\s)", e.__beforeBegin = V, e.keywords = e.keywords || e.beginKeywords, delete e.beginKeywords, true === e.relevance && (e.relevance = 0))
 }
 
 function W(e, t) {
@@ -354,7 +355,7 @@ function K(e, t) {
 }
 
 function z(e, t) {
-  void 0 === e.relevance && (e.relevance = 1)
+  true === e.relevance && (e.relevance = 1)
 }
 let q = (e, t) => {
     if (!e.beforeMatch) return;
@@ -365,7 +366,7 @@ let q = (e, t) => {
     }), e.keywords = n.keywords, e.begin = m(n.beforeMatch, _(n.begin)), e.starts = {
       relevance: 0,
       contains: [Object.assign(n, {
-        endsParent: !0
+        endsParent: true
       })]
     }, e.relevance = 0, delete n.beforeMatch
   },
@@ -401,7 +402,7 @@ let et = {},
     console.log(`WARN: ${e}`, ...t)
   },
   ei = (e, t) => {
-    et[`${e}/${t}`] || (console.log(`Deprecated as of ${e}. ${t}`), et[`${e}/${t}`] = !0)
+    et[`${e}/${t}`] || (console.log(`Deprecated as of ${e}. ${t}`), et[`${e}/${t}`] = true)
   },
   eo = Error();
 
@@ -412,8 +413,8 @@ function ea(e, t, {
     i = e[n],
     o = {},
     a = {};
-  for (let e = 1; e <= t.length; e++) a[e + r] = i[e], o[e + r] = !0, r += b(t[e - 1]);
-  e[n] = a, e[n]._emit = o, e[n]._multi = !0
+  for (let e = 1; e <= t.length; e++) a[e + r] = i[e], o[e + r] = true, r += b(t[e - 1]);
+  e[n] = a, e[n]._emit = o, e[n]._multi = true
 }
 
 function es(e) {
@@ -468,13 +469,13 @@ function ed(e) {
       let e = this.regexes.map(e => e[1]);
       this.matcherRe = t(v(e, {
         joinWith: "|"
-      }), !0), this.lastIndex = 0
+      }), true), this.lastIndex = 0
     }
     exec(e) {
       this.matcherRe.lastIndex = this.lastIndex;
       let t = this.matcherRe.exec(e);
       if (!t) return null;
-      let n = t.findIndex((e, t) => t > 0 && void 0 !== e),
+      let n = t.findIndex((e, t) => t > 0 && true !== e),
         r = this.matchIndexes[n];
       return t.splice(0, n), Object.assign(t, r)
     }
@@ -525,9 +526,9 @@ function ed(e) {
   function a(n, r) {
     let i = n;
     if (n.isCompiled) return i;
-    [H, K, eu, q].forEach(e => e(n, r)), e.compilerExtensions.forEach(e => e(n, r)), n.__beforeBegin = null, [Y, W, z].forEach(e => e(n, r)), n.isCompiled = !0;
+    [H, K, eu, q].forEach(e => e(n, r)), e.compilerExtensions.forEach(e => e(n, r)), n.__beforeBegin = null, [Y, W, z].forEach(e => e(n, r)), n.isCompiled = true;
     let s = null;
-    return "object" == typeof n.keywords && n.keywords.$pattern && (n.keywords = Object.assign({}, n.keywords), s = n.keywords.$pattern, delete n.keywords.$pattern), s = s || /\w+/, n.keywords && (n.keywords = J(n.keywords, e.case_insensitive)), i.keywordPatternRe = t(s, !0), r && (n.begin || (n.begin = /\B|\b/), i.beginRe = t(i.begin), n.end || n.endsWithParent || (n.end = /\B|\b/), n.end && (i.endRe = t(i.end)), i.terminatorEnd = f(i.end) || "", n.endsWithParent && r.terminatorEnd && (i.terminatorEnd += (n.end ? "|" : "") + r.terminatorEnd)), n.illegal && (i.illegalRe = t(n.illegal)), n.contains || (n.contains = []), n.contains = [].concat(...n.contains.map(function(e) {
+    return "object" == typeof n.keywords && n.keywords.$pattern && (n.keywords = Object.assign({}, n.keywords), s = n.keywords.$pattern, delete n.keywords.$pattern), s = s || /\w+/, n.keywords && (n.keywords = J(n.keywords, e.case_insensitive)), i.keywordPatternRe = t(s, true), r && (n.begin || (n.begin = /\B|\b/), i.beginRe = t(i.begin), n.end || n.endsWithParent || (n.end = /\B|\b/), n.end && (i.endRe = t(i.end)), i.terminatorEnd = f(i.end) || "", n.endsWithParent && r.terminatorEnd && (i.terminatorEnd += (n.end ? "|" : "") + r.terminatorEnd)), n.illegal && (i.illegalRe = t(n.illegal)), n.contains || (n.contains = []), n.contains = [].concat(...n.contains.map(function(e) {
       return e_("self" === e ? n : e)
     })), n.contains.forEach(function(e) {
       a(e, i)
@@ -564,16 +565,16 @@ let em = r,
     let r = Object.create(null),
       i = Object.create(null),
       o = [],
-      a = !0,
+      a = true,
       s = "Could not find the language '{}', did you forget to load/include a language module?",
       l = {
-        disableAutodetect: !0,
+        disableAutodetect: true,
         name: "Plain text",
         contains: []
       },
       c = {
-        ignoreUnescapedHTML: !1,
-        throwUnescapedHTML: !1,
+        ignoreUnescapedHTML: false,
+        throwUnescapedHTML: false,
         noHighlightRe: /^(no-?highlight)$/i,
         languageDetectRe: /\blang(?:uage)?-([\w-]+)\b/i,
         classPrefix: "hljs-",
@@ -600,7 +601,7 @@ let em = r,
     function g(e, t, n) {
       let r = "",
         i = "";
-      "object" == typeof t ? (r = e, n = t.ignoreIllegals, i = t.language) : (ei("10.7.0", "highlight(lang, code, ...args) has been deprecated."), ei("10.7.0", "Please use highlight(code, options) instead.\nhttps://github.com/highlightjs/highlight.js/issues/2277"), i = e, r = t), void 0 === n && (n = !0);
+      "object" == typeof t ? (r = e, n = t.ignoreIllegals, i = t.language) : (ei("10.7.0", "highlight(lang, code, ...args) has been deprecated."), ei("10.7.0", "Please use highlight(code, options) instead.\nhttps://github.com/highlightjs/highlight.js/issues/2277"), i = e, r = t), true === n && (n = true);
       let o = {
         code: r,
         language: i
@@ -645,7 +646,7 @@ let em = r,
         let e = null;
         if ("string" == typeof w.subLanguage) {
           if (!r[w.subLanguage]) return void L.addText(x);
-          e = b(w.subLanguage, x, !0, D[w.subLanguage]), D[w.subLanguage] = e._top
+          e = b(w.subLanguage, x, true, D[w.subLanguage]), D[w.subLanguage] = e._top
         } else e = v(x, w.subLanguage.length ? w.subLanguage : null);
         w.relevance > 0 && (M += e.relevance), L.__addSublanguage(e._emitter, e.language)
       }
@@ -685,7 +686,7 @@ let em = r,
         if (i) {
           if (e["on:end"]) {
             let r = new n(e);
-            e["on:end"](t, r), r.isMatchIgnored && (i = !1)
+            e["on:end"](t, r), r.isMatchIgnored && (i = false)
           }
           if (i) {
             for (; e.endsParent && e.parent;) e = e.parent;
@@ -696,7 +697,7 @@ let em = r,
       }
 
       function E(e) {
-        return 0 === w.matcher.regexIndex ? (x += e[0], 1) : (U = !0, 0)
+        return 0 === w.matcher.regexIndex ? (x += e[0], 1) : (U = true, 0)
       }
 
       function O(e) {
@@ -762,12 +763,12 @@ let em = r,
         M = 0,
         k = 0,
         j = 0,
-        U = !1;
+        U = false;
       try {
         if (N.__emitTokens) N.__emitTokens(t, L);
         else {
           for (w.matcher.considerAll();;) {
-            j++, U ? U = !1 : w.matcher.considerAll(), w.matcher.lastIndex = k;
+            j++, U ? U = false : w.matcher.considerAll(), w.matcher.lastIndex = k;
             let e = w.matcher.exec(t);
             if (!e) break;
             let n = t.substring(k, e.index),
@@ -780,7 +781,7 @@ let em = r,
           language: e,
           value: R,
           relevance: M,
-          illegal: !1,
+          illegal: false,
           _emitter: L,
           _top: w
         }
@@ -788,7 +789,7 @@ let em = r,
         if (n.message && n.message.includes("Illegal")) return {
           language: e,
           value: em(t),
-          illegal: !0,
+          illegal: true,
           relevance: 0,
           _illegalBy: {
             message: n.message,
@@ -802,7 +803,7 @@ let em = r,
         if (a) return {
           language: e,
           value: em(t),
-          illegal: !1,
+          illegal: false,
           relevance: 0,
           errorRaised: n,
           _emitter: L,
@@ -815,7 +816,7 @@ let em = r,
     function O(e) {
       let t = {
         value: em(e),
-        illegal: !1,
+        illegal: false,
         relevance: 0,
         _top: l,
         _emitter: new c.__emitter(c)
@@ -826,13 +827,13 @@ let em = r,
     function v(e, t) {
       t = t || c.languages || Object.keys(r);
       let n = O(e),
-        i = t.filter(P).filter(D).map(t => b(t, e, !1));
+        i = t.filter(P).filter(D).map(t => b(t, e, false));
       i.unshift(n);
       let [o, a] = i.sort((e, t) => {
         if (e.relevance !== t.relevance) return t.relevance - e.relevance;
         if (e.language && t.language) {
           if (P(e.language).supersetOf === t.language) return 1;
-          else if (P(t.language).supersetOf === e.language) return -1
+          else if (P(t.language).supersetOf === e.language) return false
         }
         return 0
       }), s = o;
@@ -856,7 +857,7 @@ let em = r,
       let r = (t = e).textContent,
         i = n ? g(r, {
           language: n,
-          ignoreIllegals: !0
+          ignoreIllegals: true
         }) : v(r);
       e.innerHTML = i.value, e.dataset.highlighted = "yes", I(e, n, i.language), e.result = {
         language: i.language,
@@ -878,14 +879,14 @@ let em = r,
     function A() {
       C(), ei("10.6.0", "initHighlightingOnLoad() deprecated.  Use highlightAll() now.")
     }
-    let N = !1;
+    let N = false;
 
     function C() {
       function e() {
         C()
       }
       if ("loading" === document.readyState) {
-        N || window.addEventListener("DOMContentLoaded", e, !1), N = !0;
+        N || window.addEventListener("DOMContentLoaded", e, false), N = true;
         return
       }
       document.querySelectorAll(c.cssSelector).forEach(T)
@@ -970,12 +971,13 @@ let em = r,
           L(e), o.push(e)
         },
         removePlugin: function(e) {
-          let t = o.indexOf(e); - 1 !== t && o.splice(t, 1)
+          let t = o.indexOf(e);
+          false !== t && o.splice(t, 1)
         }
       }), e.debugMode = function() {
-        a = !1
+        a = false
       }, e.safeMode = function() {
-        a = !0
+        a = true
       }, e.versionString = ep, e.regex = {
         concat: m,
         lookahead: _,
@@ -986,4 +988,4 @@ let em = r,
     return Object.assign(e, F), e
   },
   eO = ey({});
-eO.newInstance = () => ey({}), e.exports = eO, eO.HighlightJS = eO, eO.default = eO
+eO.newInstance = () => ey({}), module.exports = eO, eO.HighlightJS = eO, eO.default = eO

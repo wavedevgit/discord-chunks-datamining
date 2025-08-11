@@ -1,5 +1,6 @@
 /** Chunk was on 1272 **/
-e.exports = {
+/** chunk id: 787205, original params: e,t,n (module,exports,require) **/
+module.exports = {
   inset: "inset_bf1984",
   outer: "outer_bf1984",
   padded: "padded_bf1984",

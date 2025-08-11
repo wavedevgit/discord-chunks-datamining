@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 441234, original params: e (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   2: "need dictionary",
   1: "stream end",
   0: "",

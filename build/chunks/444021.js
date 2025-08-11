@@ -1,5 +1,6 @@
 /** Chunk was on 12097 **/
-e.exports = {
+/** chunk id: 444021, original params: e,t,n (module,exports,require) **/
+module.exports = {
   permissionsGroupContainer: "permissionsGroupContainer__3f11f",
   permissionItemContainer: "permissionItemContainer__3f11f",
   permissionsItemContainer: "permissionsItemContainer__3f11f",

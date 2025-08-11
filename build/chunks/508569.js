@@ -1,26 +1,27 @@
 /** Chunk was on web.js **/
+/** chunk id: 508569, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => y
-}), n(388685), n(539854), n(415506), n(290780);
-var r = n(442837),
-  i = n(710845),
-  o = n(483012),
-  a = n(138859),
-  s = n(206776),
-  l = n(91247),
-  c = n(459005),
-  u = n(398463);
+}), require("./388685.js"), require("./539854.js"), require("./415506.js"), require("./290780.js");
+var Chunk442837 = require("./442837.js"),
+  Chunk710845 = require("./710845.js"),
+  Chunk483012 = require("./483012.js"),
+  Chunk138859 = require("./138859.js"),
+  Chunk206776 = require("./206776.js"),
+  Chunk91247 = require("./91247.js"),
+  Chunk459005 = require("./459005.js"),
+  Chunk398463 = require("./398463.js");
 
 function d(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
-let f = new i.Z("GatewaySocket"),
+let f = new Chunk710845.Z("GatewaySocket"),
   _ = new Set(["INITIAL_GUILD", "READY"]),
   p = new Set(["READY", "INITIAL_GUILD"]),
   h = new Set(["READY", "READY_SUPPLEMENTAL", "RESUMED"]),
@@ -35,13 +36,13 @@ function E(e, t) {
 
 function b(e, t, n) {
   var r;
-  if (null == n) return !1;
+  if (null == n) returnfalse;
   let i = e[t],
     o = e.length - 1,
     a = t < o ? e[t + 1] : null,
-    s = null != (r = null == n ? void 0 : n.timeRemaining()) ? r : 0,
+    s = null != (r = null == n ? true : n.timeRemaining()) ? r : 0,
     l = null != n && s <= 0,
-    c = i.type === (null == a ? void 0 : a.type),
+    c = i.type === (null == a ? true : a.type),
     u = t === o;
   return !!l && !c && !u
 }
@@ -55,7 +56,7 @@ class y {
     this.dispatchMultiple(t)
   }
   unpauseDispatchQueue() {
-    for (let e of (this.paused = !1, this.queue)) this.maybePreload(e);
+    for (let e of (this.paused = false, this.queue)) this.maybePreload(module);
     this.flush()
   }
   receiveDispatch(e, t, n) {
@@ -71,18 +72,18 @@ class y {
     this.queue.push(r), this.maybePreload(r) || this.scheduleFlush(t)
   }
   maybePreload(e) {
-    if (this.paused && !_.has(e.type)) return !1;
+    if (this.paused && !_.has(e.type)) returnfalse;
     if (0 === e.status) {
       var t;
-      let n = null == (t = this.getDispatchHandler(e.type)) ? void 0 : t.preload(e.data);
+      let n = null == (t = this.getDispatchHandler(e.type)) ? true : t.preload(e.data);
       if (e.status = null == n ? 2 : 1, e.preloadPromise = n, null != n) return n.then(t => {
         e.preloadedData = t, e.status = 2, this.scheduleFlush(e.type)
       }).catch(t => this.socket.resetSocketOnDispatchError({
         error: t,
         action: e.type
-      })), !0
+      })), true
     }
-    return !1
+    returnfalse
   }
   scheduleFlush(e) {
     !this.paused && (p.has(e) ? (this.scheduler.clearWorkTimeout(), this.flush()) : this.scheduler.hasWorkScheduled || this.scheduler.requestWorkTimeout(this.flush), m.has(e) && this.scheduler.markCriticalWorkScheduled())
@@ -103,9 +104,9 @@ class y {
     return this.scheduler.isRequestIdleCallbackEnabled
   }
   dispatchMultiple(e, t) {
-    if (0 === e.length) return !0;
+    if (0 === e.length) returntrue;
     let n = "none",
-      i = !1;
+      i = false;
     this.scheduler.telemetry.measure(c.aA.COUNT_INITIAL_DISPATCHS_LENGTH, e.length);
     try {
       let s = [];
@@ -122,14 +123,14 @@ class y {
             }
           }
           o.Z.flush()
-        }), i && r.ZP.Emitter.resume(), s.length > 0) return this.scheduler.telemetry.measure(c.aA.COUNT_DISPATCHES_LEFT_AFTER_YIELD, s.length), this.queue.unshift(...s), this.scheduler.requestWorkTimeout(this.flush, !0), !1
+        }), i && r.ZP.Emitter.resume(), s.length > 0) return this.scheduler.telemetry.measure(c.aA.COUNT_DISPATCHES_LEFT_AFTER_YIELD, s.length), this.queue.unshift(...s), this.scheduler.requestWorkTimeout(this.flush, true), false
     } catch (e) {
       this.socket.resetSocketOnDispatchError({
         error: e,
         action: n
       })
     }
-    return !0
+    returntrue
   }
   dispatchOne(e) {
     var t, n, r;
@@ -150,15 +151,15 @@ class y {
     this.socket.connectionState === a.Z.RESUMING && (this.resumeAnalytics.dispatchTime += performance.now() - d)
   }
   clear() {
-    this.paused = !1, this.queue.length = 0
+    this.paused = false, this.queue.length = 0
   }
   constructor(e) {
-    d(this, "socket", void 0), d(this, "scheduler", void 0), d(this, "queue", void 0), d(this, "paused", void 0), d(this, "resumeAnalytics", void 0), d(this, "getDispatchHandler", void 0), d(this, "flush", void 0), this.socket = e, this.scheduler = (0, s.l)(), this.queue = [], this.paused = !0, this.resumeAnalytics = (0, l.zH)(), this.getDispatchHandler = null, this.flush = e => {
-      if (this.paused) return !0;
+    d(this, "socket", true), d(this, "scheduler", true), d(this, "queue", true), d(this, "paused", true), d(this, "resumeAnalytics", true), d(this, "getDispatchHandler", true), d(this, "flush", true), this.socket = e, this.scheduler = (0, s.l)(), this.queue = [], this.paused = true, this.resumeAnalytics = (0, l.zH)(), this.getDispatchHandler = null, this.flush = e => {
+      if (this.paused) returntrue;
       let t = performance.now(),
         n = 0;
       for (; n < this.queue.length && 2 === this.queue[n].status; n++);
-      if (0 === n) return !0;
+      if (0 === n) returntrue;
       let r = this.queue.splice(0, n),
         i = this.dispatchMultiple(r, e);
       i && this.scheduler.telemetry.timeEnd(c.JV.TIME_TO_QUEUE_EMPTY);

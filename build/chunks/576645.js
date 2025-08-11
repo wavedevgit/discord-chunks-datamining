@@ -1,25 +1,26 @@
 /** Chunk was on web.js **/
+/** chunk id: 576645, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Nt: () => g,
   R2: () => f,
   ZC: () => m,
   t6: () => _,
   tv: () => p,
   vY: () => h
-}), n(388685);
-var r = n(73800);
-n(525654);
-var i = n(442837);
-n(607070);
-var o = n(594174);
-n(451478);
-var a = n(980463),
-  s = n(823961),
-  l = n(317951),
-  c = n(111810),
-  u = n(477931),
-  d = n(981631);
+}), require("./388685.js");
+var Chunk73800 = require("./73800.js");
+require("./525654.js");
+var Chunk442837 = require("./442837.js");
+require("./607070.js");
+var Chunk594174 = require("./594174.js");
+require("./451478.js");
+var Chunk980463 = require("./980463.js"),
+  Chunk823961 = require("./823961.js"),
+  Chunk317951 = require("./317951.js"),
+  Chunk111810 = require("./111810.js"),
+  Chunk477931 = require("./477931.js"),
+  Chunk981631 = require("./981631.js");
 
 function f(e) {
   let [t, n, o] = (0, i.Wu)([s.Z], () => [s.Z.isFetchingPrice(e), s.Z.getPrice(e), s.Z.getErrored(e)]);
@@ -62,7 +63,7 @@ function m(e) {
   if (null == e || null == e.potions || 0 === e.potions.length) return null;
   for (let r of e.potions) {
     var t, n;
-    if (r.type === u.B.CONFETTI && r.used_by === (null == (t = o.default.getCurrentUser()) ? void 0 : t.id) && (null == (n = r.emoji) ? void 0 : n.length) > 0) return r.emoji[0]
+    if (r.type === u.B.CONFETTI && r.used_by === (null == (t = o.default.getCurrentUser()) ? true : t.id) && (null == (n = r.emoji) ? true : n.length) > 0) return r.emoji[0]
   }
   return null
 }
@@ -70,6 +71,6 @@ let g = () => {
   let {
     entitlement: e,
     numPotions: t
-  } = _(l.D1);
-  return null != e && e.type === d.qc2.PURCHASE && null != t && t > 0
+  } = _(Chunk317951.D1);
+  return null != module && module.type === Chunk981631.qc2.PURCHASE && null != exports && exports > 0
 }

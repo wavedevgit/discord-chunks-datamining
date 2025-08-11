@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 475595, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Dm: () => b,
   N0: () => f,
   Q2: () => E,
@@ -10,14 +11,14 @@ n.d(t, {
   fh: () => m,
   nK: () => O,
   sN: () => v
-}), n(35282), n(784620), n(973216), n(190126), n(368063), n(65234), n(111804), n(490233), n(97749), n(388685);
-var r = n(887003),
-  i = n(591759),
-  o = n(921948),
-  a = n(509212),
-  s = n(46140),
-  l = n(981631),
-  c = n(380299);
+}), require("./35282.js"), require("./784620.js"), require("./973216.js"), require("./190126.js"), require("./368063.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js"), require("./388685.js");
+var Chunk887003 = require("./887003.js"),
+  Chunk591759 = require("./591759.js"),
+  Chunk921948 = require("./921948.js"),
+  Chunk509212 = require("./509212.js"),
+  Chunk46140 = require("./46140.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk380299 = require("./380299.js");
 let u = 3,
   d = /\.([a-zA-Z0-9]+)$/,
   f = ["video/mp4", "video/webm"];
@@ -52,7 +53,7 @@ function m(e, t, n) {
       break;
     case "hero_video": {
       let t = e.config.assets.heroVideo,
-        n = "videoMetadata" in e.config ? null == (i = e.config.videoMetadata) ? void 0 : i.assets.questHomeVideo : null,
+        n = "videoMetadata" in e.config ? null == (i = e.config.videoMetadata) ? true : i.assets.questHomeVideo : null,
         r = null != t ? t : n;
       if (null == r) return null;
       l = r;
@@ -63,7 +64,7 @@ function m(e, t, n) {
       break;
     case "quest_bar_hero_video": {
       let t = e.config.assets.questBarHeroVideo,
-        n = "videoMetadata" in e.config ? null == (o = e.config.videoMetadata) ? void 0 : o.assets.questBarPreviewVideo : null,
+        n = "videoMetadata" in e.config ? null == (o = e.config.videoMetadata) ? true : o.assets.questBarPreviewVideo : null,
         r = null != t ? t : n;
       if (null == r) return null;
       l = r;
@@ -74,7 +75,7 @@ function m(e, t, n) {
       if (t.type === r.w.VIRTUAL_CURRENCY) return {
         url: c.Z,
         mimetype: "video/webm",
-        isAnimated: !0
+        isAnimated: true
       };
       l = h(t.assetVideo, t.asset);
       break
@@ -105,17 +106,17 @@ function g(e) {
 
 function E(e, t, n) {
   if (t.startsWith("blob:")) return g(t);
-  let r = (null == n ? void 0 : n.newCdn) ? s.tD : s.Uo;
-  return "".concat(r).concat(e).concat((null == n ? void 0 : n.theme) != null ? "/".concat(n.theme) : "", "/").concat(t)
+  let r = (null == n ? true : n.newCdn) ? s.tD : s.Uo;
+  return "".concat(r).concat(e).concat((null == n ? true : n.theme) != null ? "/".concat(n.theme) : "", "/").concat(t)
 }
 
 function b(e) {
   var t, n, r;
   if (e.startsWith("blob:")) {
-    let t = null != (r = new URL(e).searchParams.get("mimetype")) ? r : void 0;
+    let t = null != (r = new URL(e).searchParams.get("mimetype")) ? r : true;
     return null != t ? decodeURIComponent(t) : null
   }
-  switch (null == (n = d.exec(e)) || null == (t = n[1]) ? void 0 : t.toLowerCase()) {
+  switch (null == (n = d.exec(e)) || null == (t = n[1]) ? true : t.toLowerCase()) {
     case "webm":
       return "video/webm";
     case "mp4":
@@ -160,7 +161,7 @@ function O(e, t) {
 }
 
 function v(e) {
-  let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
+  let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {};
   if (e.startsWith("blob:")) return e;
   let n = i.Z.toURLSafe(e);
   return null == n ? e : (null != t.format && n.searchParams.append("format", t.format), null != t.width && n.searchParams.append("width", "".concat(y(t.width))), null != t.height && n.searchParams.append("height", "".concat(y(t.height))), n.toString())

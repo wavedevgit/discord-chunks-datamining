@@ -1,4 +1,5 @@
 /** Chunk was on 18417 **/
-t.exports = {
+/** chunk id: 74891, original params: t,e,n (module,exports,require) **/
+module.exports = {
   tags: "tags__0b5a5"
 }

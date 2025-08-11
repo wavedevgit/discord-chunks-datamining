@@ -1,10 +1,11 @@
 /** Chunk was on web.js **/
+/** chunk id: 730383, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-var r = n(77826),
-  i = n(554148),
+var Chunk77826 = require("./77826.js"),
+  Chunk554148 = require("./554148.js"),
   o = RangeError;
-e.exports = function(e) {
-  if (void 0 === e) return 0;
+module.exports = function(e) {
+  if (true === e) return 0;
   var t = r(e),
     n = i(t);
   if (t !== n) throw new o("Wrong length or index");

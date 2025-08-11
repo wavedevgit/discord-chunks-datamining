@@ -1,0 +1,123 @@
+/** Chunk was on 34779 **/
+/** chunk id: 520116, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
+  Z: () => x
+}), require("./539854.js");
+var Chunk255367 = require("./255367.js"),
+  Chunk73800 = require("./73800.js"),
+  Chunk913527 = require("./913527.js"),
+  o = require.n(Chunk913527),
+  Chunk91192 = require("./91192.jsx"),
+  Chunk755721 = require("./755721.js"),
+  Chunk481060 = require("./481060.js"),
+  Chunk135938 = require("./135938.js"),
+  Chunk554838 = require("./554838.js"),
+  Chunk493892 = require("./493892.js"),
+  Chunk661824 = require("./661824.js"),
+  Chunk37772 = require("./37772.jsx"),
+  Chunk695346 = require("./695346.js"),
+  Chunk314897 = require("./314897.js"),
+  Chunk594174 = require("./594174.js"),
+  Chunk55935 = require("./55935.js"),
+  Chunk655354 = require("./655354.js"),
+  Chunk809780 = require("./809780.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk388032 = require("./388032.jsx"),
+  Chunk563142 = require("./563142.js");
+let E = {
+  left: 4,
+  right: false
+};
+
+function S(e) {
+  var t, n, l;
+  let {
+    channel: o,
+    message: a,
+    compact: u,
+    isGroupStart: d,
+    treatSpam: h,
+    gotoChannel: p
+  } = e, g = (0, s.JA)(null != (t = a.id) ? t : ""), m = i.useCallback(e => {
+    if ("ArrowLeft" === e.key) {
+      var t;
+      null == (t = document.querySelector('[data-recents-channel="'.concat(o.id, '"]'))) || t.focus()
+    }
+  }, [o.id]);
+  return <c.tEY offset={E}><div{...n = function(e) {
+      for (var t = 1; t < arguments.length; t++) {
+        var n = null != arguments[t] ? arguments[t] : {},
+          r = Object.keys(n);
+        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+          return Object.getOwnPropertyDescriptor(n, e).enumerable
+        }))), r.forEach(function(t) {
+          var r;
+          r = n[t], t in e ? Object.defineProperty(e, t, {
+            value: r,
+            enumerable: true,
+            configurable: true,
+            writable: true
+          }) : e[t] = r
+        })
+      }
+      return e
+    }({
+      className: j.messageContainer,
+      onKeyDown: m
+    }, g), l = l = {
+      children: [(0, r.jsx)(_.Z, {
+        className: j.jumpButton,
+        onJump: e => p(e, a.id)
+      }), (0, r.jsx)(f.Z, {
+        id: a.id,
+        message: a,
+        channel: o,
+        className: j.message,
+        compact: u,
+        animateAvatar: false,
+        isGroupStart: d,
+        onKeyDown: m,
+        treatSpam: h
+      })]
+    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
+      var n = Object.keys(e);
+      if (Object.getOwnPropertySymbols) {
+        var r = Object.getOwnPropertySymbols(e);
+        n.push.apply(n, r)
+      }
+      return n
+    })(Object(l)).forEach(function(e) {
+      Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(l, e))
+    }), n} /></c.tEY>
+}
+
+function x(e) {
+  var t, n;
+  let {
+    channel: i,
+    channelRecord: l,
+    gotoChannel: s
+  } = e, {
+    enabled: f
+  } = u.Z.useExperiment({
+    location: "20e3b0_1"
+  }, {
+    autoTrackExposure: false
+  }), _ = g.jU.useSetting(), E = (0, h.P1)(l), x = false, I = 0 === i.messages.length || o()(i.messages[0].timestamp).isSame(o()(), "day"), P = null != (n = null == (t = b.default.getUser(m.default.getId())) ? true : t.hasFlag(C.xW$.SPAMMER)) && n, N = [];
+  if (!i.collapsed) {
+    let e = null,
+      t = null,
+      n = i.messages.slice(0, y.hC);
+    n.forEach(n => {
+      if (!I && (null == e || !e.isSame(n.timestamp, "day"))) {
+        let t = (0, O.vc)(n.timestamp, "LL");
+        N.push(<p.Z className={j.divider}>{t}</p.Z>), e = o()(n.timestamp)
+      }
+      let i = null == t || (0, d.Z)(l, t, n);
+      t = n, x = x || (0, h.DQ)(n), N.push(<S channel={l} message={n} compact={_} isGroupStart={i} treatSpam={!P && f && (0, h.DQ)(n) && E} gotoChannel={s} />)
+    }), i.messages.length >= y.hC && N.push(<a.zx color={a.zx.Colors.LINK} look={a.zx.Looks.LINK} onClick={e => s(e, n[n.length - 1].id)}>{v.intl.string(v.t["9OB9ho"])}{" ›"}</a.zx>), 0 === N.length && (N = [<c.$jN />])
+  }
+  return x && E && u.Z.trackExposure({
+    location: "20e3b0_2"
+  }), <div className={j.messages}>{N}</div>
+}

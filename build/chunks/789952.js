@@ -1,11 +1,12 @@
 /** Chunk was on web.js **/
+/** chunk id: 789952, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.r(t), n.d(t, {
+require.r(exports), require.d(exports, {
   hasDomParent: () => a,
   isDOMRangeCollapsed: () => s,
   normalizeDOMPoint: () => l
-}), n(415506), n(388685);
-var r = n(650557);
+}), require("./415506.js"), require("./388685.js");
+var Chunk650557 = require("./650557.js");
 
 function i(e) {
   return f(e) ? {
@@ -20,9 +21,9 @@ function i(e) {
     focusOffset: e.endOffset
   }
 }
-let o = !1;
+let o = false;
 {
-  r.F3.toSlateRange = (e, t, n) => {
+  Chunk650557.F3.toSlateRange = (e, t, n) => {
     let {
       exactMatch: o,
       suppressThrow: a
@@ -49,8 +50,8 @@ let o = !1;
       focus: p
     } : null
   };
-  let e = r.F3.toSlatePoint;
-  r.F3.toSlatePoint = (t, n, r) => {
+  let e = Chunk650557.F3.toSlatePoint;
+  Chunk650557.F3.toSlatePoint = (t, n, r) => {
     let {
       exactMatch: i,
       suppressThrow: o,
@@ -59,23 +60,23 @@ let o = !1;
     i || (n = l(n, a));
     try {
       return e(t, n, {
-        exactMatch: !0,
+        exactMatch: true,
         suppressThrow: o
       })
     } catch (e) {
       if (o) return null;
       throw e
     }
-  }, o = !0
+  }, o = true
 }
 
 function a(e, t) {
-  if (null == t) return !1;
+  if (null == t) returnfalse;
   for (; null != e;) {
-    if (e === t) return !0;
+    if (e === t) returntrue;
     e = e.parentNode
   }
-  return !1
+  returnfalse
 }
 
 function s(e, t, n, r) {
@@ -96,18 +97,18 @@ function l(e, t) {
 function c(e, t, n) {
   let {
     childNodes: r
-  } = e, i = r[t], o = t, a = !1, s = !1;
+  } = e, i = r[t], o = t, a = false, s = false;
   for (;
     (u(i) || d(i) && 0 === i.childNodes.length || d(i) && "false" === i.getAttribute("contenteditable")) && (!a || !s);) {
     if (o >= r.length) {
-      a = !0, o = t - 1, n = "backward";
+      a = true, o = t - 1, n = "backward";
       continue
     }
     if (o < 0) {
-      s = !0, o = t + 1, n = "forward";
+      s = true, o = t + 1, n = "forward";
       continue
     }
-    i = r[o], t = o, o += "forward" === n ? 1 : -1
+    i = r[o], t = o, o += "forward" === n ? 1 : false
   }
   return [i, t]
 }

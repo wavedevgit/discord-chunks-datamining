@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 893354, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   flex: "flex_abf706",
   alignStart: "alignStart_abf706",
   alignEnd: "alignEnd_abf706",

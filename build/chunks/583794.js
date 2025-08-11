@@ -1,12 +1,13 @@
 /** Chunk was on web.js **/
+/** chunk id: 583794, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 
 function r(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -39,14 +40,14 @@ function a(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-n.d(t, {
+require.d(exports, {
   Z: () => s
-}), n(388685);
+}), require("./388685.js");
 class s {
   traceEvent(e, t) {
     let n, r = this._report,
       i = ["detached", "waiting", "attached", "started", "playing", "silence"];
-    void 0 !== r[n = "soundshare_state_transition" === t.type ? "soundshare_state_transition_".concat(i[t.newState], "_count") : "".concat(t.type, "_count")] ? r[n] < 32767 && r[n]++ : r.soundshare_unknown_event_count++, "pid" in t && (0 === r.soundshare_first_pid && (r.soundshare_first_pid = t.pid), r.soundshare_last_pid = t.pid, this._pids.add(t.pid)), null != e && (null == r.soundshare_first_session && (r.soundshare_first_session = e), r.soundshare_last_session = e)
+    true !== r[n = "soundshare_state_transition" === t.type ? "soundshare_state_transition_".concat(i[t.newState], "_count") : "".concat(t.type, "_count")] ? r[n] < 32767 && r[n]++ : r.soundshare_unknown_event_count++, "pid" in t && (0 === r.soundshare_first_pid && (r.soundshare_first_pid = t.pid), r.soundshare_last_pid = t.pid, this._pids.add(t.pid)), null != e && (null == r.soundshare_first_session && (r.soundshare_first_session = e), r.soundshare_last_session = e)
   }
   getStats() {
     return a(i({}, this._report), {
@@ -54,7 +55,7 @@ class s {
     })
   }
   constructor() {
-    r(this, "_report", void 0), r(this, "_pids", void 0), this._report = {
+    r(this, "_report", true), r(this, "_pids", true), this._report = {
       soundshare_attach_requested_count: 0,
       soundshare_capturing_count: 0,
       soundshare_capture_stopped_count: 0,

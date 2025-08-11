@@ -1,1 +1,0 @@
-{"id":"896835","type":"experiment","data":{"kind":"user","id":"2024-09_hd_streaming_potion","label":"Consumable HD Streaming Experiment","defaultConfig":{"enabled":false},"treatments":[{"id":0,"label":"Control","config":{"enabled":false}},{"id":1,"label":"Treatment","config":{"enabled":false}}]},"fromModule":{"id":"web.js"}}

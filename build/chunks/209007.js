@@ -1,5 +1,6 @@
 /** Chunk was on web.js **/
+/** chunk id: 209007, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   gifTag: "gifTag_f60819"
 }

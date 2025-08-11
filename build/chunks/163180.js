@@ -1,5 +1,6 @@
 /** Chunk was on web.js **/
-e.exports = function(e) {
+/** chunk id: 163180, original params: e (module,exports,re quire) **/
+module.exports = function(e) {
   let t = "[a-zA-Z_\\-+\\*\\/<=>&#][a-zA-Z0-9_\\-+*\\/<=>&#!]*",
     n = "\\|[^]*?\\|",
     r = "(-|\\+)?\\d+(\\.\\d+|\\/\\d+)?((d|e|f|l|s|D|E|F|L|S)(\\+|-)?\\d+)?",
@@ -76,7 +77,7 @@ e.exports = function(e) {
       end: "\\)"
     },
     m = {
-      endsWithParent: !0,
+      endsWithParent: true,
       relevance: 0
     };
   return h.contains = [{

@@ -1,16 +1,17 @@
 /** Chunk was on web.js **/
+/** chunk id: 806185, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => l
 });
-var r = n(264181);
+var Chunk264181 = require("./264181.js");
 
 function i(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -51,6 +52,6 @@ class l {
     }))
   }
   constructor(e) {
-    i(this, "title", void 0), i(this, "body", void 0), i(this, "avatar", void 0), i(this, "decorations", void 0), i(this, "dismissibleContent", void 0), i(this, "version", void 0), i(this, "refTargetBackground", void 0), this.type = r.Z.COACHTIP, this.title = e.title, this.body = e.body, this.avatar = e.avatar, this.decorations = e.decorations, this.dismissibleContent = e.dismissibleContent, this.version = e.version, this.refTargetBackground = e.refTargetBackground
+    i(this, "title", true), i(this, "body", true), i(this, "avatar", true), i(this, "decorations", true), i(this, "dismissibleContent", true), i(this, "version", true), i(this, "refTargetBackground", true), this.type = r.Z.COACHTIP, this.title = e.title, this.body = e.body, this.avatar = e.avatar, this.decorations = e.decorations, this.dismissibleContent = e.dismissibleContent, this.version = e.version, this.refTargetBackground = e.refTargetBackground
   }
 }

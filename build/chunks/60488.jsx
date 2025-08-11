@@ -1,0 +1,76 @@
+/** Chunk was on 66317 **/
+/** chunk id: 60488, original params: e,t,r (module,exports,require) **/
+require.d(exports, {
+  v: () => o
+});
+var Chunk255367 = require("./255367.js"),
+  Chunk73800 = require("./73800.js"),
+  Chunk709014 = require("./709014.js");
+let i = {
+    earn: {
+      name: "earn",
+      start: 0,
+      duration: 180
+    },
+    spend: {
+      name: "spend",
+      start: 240,
+      duration: 180
+    }
+  },
+  o = e => {
+    let t = a.useRef(null),
+      o = a.useRef(e);
+    o.current = e;
+    let u = a.useMemo(() => () => {
+        null != t.current && t.current.play(e)
+      }, [e]),
+      c = a.useCallback(e => {
+        var a, u;
+        return <l.L{...a = function(e) {
+          for (var t = 1; t < arguments.length; t++) {
+            var r = null != arguments[t] ? arguments[t] : {},
+              n = Object.keys(r);
+            "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
+              return Object.getOwnPropertyDescriptor(r, e).enumerable
+            }))), n.forEach(function(t) {
+              var n;
+              n = r[t], t in e ? Object.defineProperty(e, t, {
+                value: n,
+                enumerable: true,
+                configurable: true,
+                writable: true
+              }) : e[t] = n
+            })
+          }
+          return e
+        }({}, e), u = u = {
+          src: () => r.e("44980").then(r.t.bind(r, 304306, 19)),
+          ref: t,
+          initialAnimation: o.current,
+          markers: i
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(a, Object.getOwnPropertyDescriptors(u)) : (function(e, t) {
+          var r = Object.keys(e);
+          if (Object.getOwnPropertySymbols) {
+            var n = Object.getOwnPropertySymbols(e);
+            r.push.apply(r, n)
+          }
+          return r
+        })(Object(u)).forEach(function(e) {
+          Object.defineProperty(a, e, Object.getOwnPropertyDescriptor(u, e))
+        }), a} />
+      }, []);
+    return {
+      events: {},
+      play: u,
+      getDuration: a.useCallback(() => {
+        var e;
+        return null == (e = t.current) ? true : e.getDuration()
+      }, []),
+      getCurrentFrame: a.useCallback(() => {
+        var e, r;
+        return null != (r = null == (e = t.current) ? true : e.getCurrentFrame()) ? r : null
+      }, []),
+      Component: c
+    }
+  }

@@ -1,5 +1,6 @@
 /** Chunk was on web.js **/
-e.exports = function(e) {
+/** chunk id: 96518, original params: e (module,exports,re quire) **/
+module.exports = function(e) {
   let t = {
       className: "variable",
       begin: /\b_+[a-zA-Z]\w*/
@@ -47,7 +48,7 @@ e.exports = function(e) {
     };
   return {
     name: "SQF",
-    case_insensitive: !0,
+    case_insensitive: true,
     keywords: {
       keyword: i,
       built_in: a,

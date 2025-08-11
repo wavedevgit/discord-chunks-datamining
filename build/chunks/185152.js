@@ -1,2 +1,0 @@
-/** Chunk was on 13460 **/
-s.exports = JSON.parse('{"+tTysr":"Adicionar cor","8ZcEfn":"Cores","xlXkaG":"Intensidade de cor","dZkwg4":"Dire\xe7\xe3o do gradiente","AsmU8/":"Personalize o seu tema","xRdYAQ":"Os temas personalizados [Beta] n\xe3o est\xe3o dispon\xedveis nos dispositivos m\xf3veis.","2hAz8f":"Personalize o seu tema","23QUzs":"Novidade! Temas personalizados","TRCE4u":"Expresse seu humor com combina\xe7\xf5es de cores infinitas. Experimente agora, apenas com Nitro."}')

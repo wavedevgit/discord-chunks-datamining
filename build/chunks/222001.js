@@ -1,5 +1,6 @@
 /** Chunk was on 1272 **/
-e.exports = {
+/** chunk id: 222001, original params: e,t,n (module,exports,require) **/
+module.exports = {
   emptyStateContainer: "emptyStateContainer__5ec2f",
   peopleList: "peopleList__5ec2f",
   searchBar: "searchBar__5ec2f",

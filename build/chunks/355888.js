@@ -1,13 +1,14 @@
 /** Chunk was on web.js **/
+/** chunk id: 355888, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => l
 });
-var r = n(780384),
-  i = n(410030),
-  o = n(629935),
-  a = n(436952),
-  s = n(461762);
+var Chunk780384 = require("./780384.js"),
+  Chunk410030 = require("./410030.js"),
+  Chunk629935 = require("./629935.js"),
+  Chunk436952 = require("./436952.js"),
+  Chunk461762 = require("./461762.js");
 
 function l(e) {
   let t = (0, r.wj)((0, i.ZP)()),
@@ -21,7 +22,7 @@ function l(e) {
     var u, d;
     let e = null != (u = n.token_mix_amount) ? u : 100;
     l = (0, o.W4)({
-      enabled: !0,
+      enabled: true,
       primaryColor: c,
       secondaryColor: null != (d = n.secondary_color) ? d : c,
       isDarkTheme: t,

@@ -1,23 +1,24 @@
 /** Chunk was on web.js **/
+/** chunk id: 572691, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => _
-}), n(539854);
-var r = n(97613),
-  i = n.n(r),
-  o = n(570140),
-  a = n(777639),
-  s = n(272423),
-  l = n(808663),
-  c = n(178535),
-  u = n(981631);
+}), require("./539854.js");
+var Chunk97613 = require("./97613.js"),
+  i = require.n(Chunk97613),
+  Chunk570140 = require("./570140.js"),
+  Chunk777639 = require("./777639.js"),
+  Chunk272423 = require("./272423.js"),
+  Chunk808663 = require("./808663.js"),
+  Chunk178535 = require("./178535.js"),
+  Chunk981631 = require("./981631.js");
 
 function d(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -35,9 +36,9 @@ function f(e) {
 }
 let _ = {
   push(e, t) {
-    let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : i()("modal"),
-      r = arguments.length > 3 ? arguments[3] : void 0,
-      a = arguments.length > 4 && void 0 !== arguments[4] ? arguments[4] : u.IlC.APP;
+    let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : i()("modal"),
+      r = arguments.length > 3 ? arguments[3] : true,
+      a = arguments.length > 4 && true !== arguments[4] ? arguments[4] : u.IlC.APP;
     return (0, s.Ll)(f({
       key: n,
       modal: (0, c.Z)(e, {}, t, n)
@@ -50,8 +51,8 @@ let _ = {
     }), n
   },
   pushLazy(e, t) {
-    let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : i()("modal"),
-      r = arguments.length > 3 ? arguments[3] : void 0,
+    let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : i()("modal"),
+      r = arguments.length > 3 ? arguments[3] : true,
       o = (0, a.D)();
     return null != o && o.isReady() ? (e instanceof Promise ? e.then(e => {
       let {
@@ -65,12 +66,12 @@ let _ = {
       type: "MODAL_UPDATE",
       key: e,
       props: {},
-      partial: !0,
+      partial: true,
       animation: t
     })
   },
   pop() {
-    (0, s.GZ)(), o.Z.dispatch({
+    (0, Chunk272423.GZ)(), Chunk570140.Z.dispatch({
       type: "MODAL_POP"
     })
   },
@@ -82,25 +83,25 @@ let _ = {
     })
   },
   popAll() {
-    (0, s.lE)(), o.Z.dispatch({
+    (0, Chunk272423.lE)(), Chunk570140.Z.dispatch({
       type: "MODAL_POP_ALL"
-    }), o.Z.dispatch({
+    }), Chunk570140.Z.dispatch({
       type: "EMAIL_VERIFICATION_MODAL_CLOSE"
-    }), o.Z.dispatch({
+    }), Chunk570140.Z.dispatch({
       type: "GUILD_SETTINGS_CLOSE"
-    }), o.Z.dispatch({
+    }), Chunk570140.Z.dispatch({
       type: "HIDE_ACTION_SHEET"
-    }), o.Z.dispatch({
+    }), Chunk570140.Z.dispatch({
       type: "DISPLAYED_INVITE_CLEAR"
-    }), o.Z.dispatch({
+    }), Chunk570140.Z.dispatch({
       type: "NOTIFICATION_SETTINGS_MODAL_CLOSE"
-    }), o.Z.dispatch({
+    }), Chunk570140.Z.dispatch({
       type: "QUICKSWITCHER_HIDE"
-    }), o.Z.dispatch({
+    }), Chunk570140.Z.dispatch({
       type: "USER_SETTINGS_MODAL_CLOSE"
-    }), o.Z.dispatch({
+    }), Chunk570140.Z.dispatch({
       type: "CONNECTIONS_GRID_MODAL_HIDE"
-    }), o.Z.dispatch({
+    }), Chunk570140.Z.dispatch({
       type: "USER_PROFILE_MODAL_CLOSE"
     })
   }

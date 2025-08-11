@@ -1,10 +1,11 @@
 /** Chunk was on web.js **/
+/** chunk id: 881706, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   v: () => a
-}), n(388685), n(413496), n(433524), n(35282);
-var r = n(591759);
-let i = new Set(n(821445)),
+}), require("./388685.js"), require("./413496.js"), require("./433524.js"), require("./35282.js");
+var Chunk591759 = require("./591759.js");
+let i = new Set(require("./821445.js")),
   o = {
     "github.com": RegExp("/releases\\S*/download|archive/refs/\\S*|/i/raw/i/\\S*|/user-attachments\\S*"),
     "bitbucket.org": RegExp("/downloads\\S*/[^/]*"),
@@ -42,6 +43,6 @@ function a(e) {
   if (null == d) return null;
   let _ = d.split(".");
   if (_.length < 2) return null;
-  let p = null == (t = _.pop()) ? void 0 : t.toLowerCase();
+  let p = null == (t = _.pop()) ? true : t.toLowerCase();
   return null != p && i.has(p) ? p : null
 }

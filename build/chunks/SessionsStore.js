@@ -1,0 +1,66 @@
+/** Chunk was on web.js **/
+/** chunk id: 797258, original params: e,t,n (module,exports,re quire) **/
+"use strict";
+require.d(exports, {
+  Z: () => p
+});
+var r, Chunk392711 = require("./392711.js"),
+  o = require.n(Chunk392711),
+  Chunk442837 = require("./442837.js"),
+  Chunk570140 = require("./570140.js"),
+  Chunk314897 = require("./314897.js");
+
+function c(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+let u = Object.freeze([]),
+  d = {};
+
+function f(e) {
+  d = {}, e.sessions.forEach(e => {
+    d[e.sessionId] = e
+  })
+}
+class _ extends(r = Chunk442837.ZP.Store) {
+  initialize() {
+    this.waitFor(Chunk314897.default)
+  }
+  getSessions() {
+    return d
+  }
+  getSession() {
+    let e = Chunk314897.default.getSessionId();
+    return null != module ? this.getSessionById(module) : null
+  }
+  getRemoteActivities() {
+    let e = Chunk314897.default.getSessionId(),
+      t = o().find(d, t => t.active && t.sessionId !== e);
+    return null != exports ? exports.activities : u
+  }
+  getHiddenActivities() {
+    let e = Chunk314897.default.getSessionId(),
+      t = o().find(d, t => t.active && t.sessionId !== e);
+    return null != exports && null != exports.hiddenActivities ? exports.hiddenActivities : u
+  }
+  getSessionById(e) {
+    return d[e]
+  }
+  getActiveSession() {
+    return o().find(d, e => {
+      let {
+        active: t
+      } = e;
+      return t
+    })
+  }
+}
+c(_, "displayName", "SessionsStore");
+let p = new _(Chunk570140.Z, {
+  CONNECTION_OPEN: f,
+  SESSIONS_REPLACE: f
+})

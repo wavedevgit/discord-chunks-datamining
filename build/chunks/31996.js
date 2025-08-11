@@ -1,13 +1,14 @@
 /** Chunk was on web.js **/
+/** chunk id: 31996, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Q: () => c
-}), n(388685);
-var r = n(544891),
-  i = n(570140),
-  o = n(430824),
-  a = n(356264),
-  s = n(981631);
+}), require("./388685.js");
+var Chunk544891 = require("./544891.js"),
+  Chunk570140 = require("./570140.js"),
+  Chunk430824 = require("./430824.js"),
+  Chunk356264 = require("./356264.js"),
+  Chunk981631 = require("./981631.js");
 let l = new Set;
 async function c(e) {
   if (null == o.Z.getGuild(e) && null == a.Z.getGuildOrStatus(e) && !l.has(e)) {
@@ -18,7 +19,7 @@ async function c(e) {
     try {
       let t = (await r.tn.get({
         url: s.ANM.GUILD_BASIC(e),
-        rejectWithError: !0
+        rejectWithError: true
       })).body;
       i.Z.dispatch({
         type: "BASIC_GUILD_FETCH_SUCCESS",

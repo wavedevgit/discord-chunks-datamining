@@ -1,35 +1,36 @@
 /** Chunk was on 75708 **/
-n.d(t, {
+/** chunk id: 51596, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   $Z: () => D,
   Cp: () => Z,
   F_: () => A,
   Se: () => L,
   tF: () => k,
   yC: () => w
-}), n(413496), n(433524), n(35282), n(704826), n(388685);
-var i = n(481060),
-  r = n(570140),
-  s = n(493683),
-  a = n(475179),
-  l = n(925549),
-  o = n(287734),
-  c = n(230711),
-  d = n(212819),
-  u = n(815372),
-  m = n(336197),
-  p = n(359110),
-  g = n(769654),
-  h = n(722589),
-  f = n(131704),
-  b = n(592125),
-  x = n(283595),
-  _ = n(944486),
-  j = n(914010),
-  E = n(626135),
-  C = n(777754),
-  O = n(823385),
-  v = n(981631),
-  S = n(176505);
+}), require("./413496.js"), require("./433524.js"), require("./35282.js"), require("./704826.js"), require("./388685.js");
+var Chunk481060 = require("./481060.js"),
+  Chunk570140 = require("./570140.js"),
+  Chunk493683 = require("./493683.js"),
+  Chunk475179 = require("./475179.js"),
+  Chunk925549 = require("./925549.js"),
+  Chunk287734 = require("./287734.js"),
+  Chunk230711 = require("./230711.js"),
+  Chunk212819 = require("./212819.js"),
+  Chunk815372 = require("./815372.js"),
+  Chunk336197 = require("./336197.js"),
+  Chunk359110 = require("./359110.js"),
+  Chunk769654 = require("./769654.js"),
+  Chunk722589 = require("./722589.js"),
+  Chunk131704 = require("./131704.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk283595 = require("./283595.js"),
+  Chunk944486 = require("./944486.js"),
+  Chunk914010 = require("./914010.js"),
+  Chunk626135 = require("./626135.js"),
+  Chunk777754 = require("./777754.js"),
+  Chunk823385 = require("./823385.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk176505 = require("./176505.js");
 
 function T(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -41,24 +42,24 @@ function T(e) {
       var i;
       i = n[t], t in e ? Object.defineProperty(e, t, {
         value: i,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
+        enumerable: true,
+        configurable: true,
+        writable: true
       }) : e[t] = i
     })
   }
   return e
 }
 let I = () => Promise.resolve();
-I = n(346329).playApplication;
+I = require("./346329.js").playApplication;
 let N = Object.freeze({
-    [d.xQ.USER]: d.h8.USER,
-    [d.xQ.TEXT_CHANNEL]: d.h8.TEXT_CHANNEL,
-    [d.xQ.VOICE_CHANNEL]: d.h8.VOICE_CHANNEL,
-    [d.xQ.GUILD]: d.h8.GUILD,
-    [d.xQ.APPLICATION]: d.h8.APPLICATION
+    [Chunk212819.xQ.USER]: Chunk212819.h8.USER,
+    [Chunk212819.xQ.TEXT_CHANNEL]: Chunk212819.h8.TEXT_CHANNEL,
+    [Chunk212819.xQ.VOICE_CHANNEL]: Chunk212819.h8.VOICE_CHANNEL,
+    [Chunk212819.xQ.GUILD]: Chunk212819.h8.GUILD,
+    [Chunk212819.xQ.APPLICATION]: Chunk212819.h8.APPLICATION
   }),
-  y = new RegExp("^".concat(d.xQ.USER, "|").concat(d.xQ.TEXT_CHANNEL, "|").concat(d.xQ.VOICE_CHANNEL, "|\\").concat(d.xQ.GUILD, "|\\").concat(d.xQ.APPLICATION));
+  y = new RegExp("^".concat(Chunk212819.xQ.USER, "|").concat(Chunk212819.xQ.TEXT_CHANNEL, "|").concat(Chunk212819.xQ.VOICE_CHANNEL, "|\\").concat(Chunk212819.xQ.GUILD, "|\\").concat(Chunk212819.xQ.APPLICATION));
 
 function A(e) {
   var t;
@@ -75,9 +76,9 @@ function P(e, t) {
     queryMode: i,
     query: r,
     maxQueryLength: s
-  } = O.Z.getProps(), a = j.Z.getGuildId(), l = _.Z.getChannelId(a), o = n[(0, d.gJ)(d.a8.DOWN, -1, n)], c = C.Z.isEmail(r), u = C.Z.isPhoneNumber(r), m = C.Z.isUserTagLike(r), p = null != l && (0, S.AB)(l), g = e => null == e ? null : e.type === d.h8.IN_APP_NAVIGATION ? e.type + "_" + e.record.type : e.type, h = {
-    current_channel_id: p ? void 0 : l,
-    current_channel_static_route: p ? l : void 0,
+  } = O.Z.getProps(), a = j.Z.getGuildId(), l = _.Z.getChannelId(a), o = n[(0, d.gJ)(d.a8.DOWN, false, n)], c = C.Z.isEmail(r), u = C.Z.isPhoneNumber(r), m = C.Z.isUserTagLike(r), p = null != l && (0, S.AB)(l), g = e => null == e ? null : e.type === d.h8.IN_APP_NAVIGATION ? e.type + "_" + e.record.type : e.type, h = {
+    current_channel_id: p ? true : l,
+    current_channel_static_route: p ? l : true,
     current_guild_id: a,
     query_mode: null != i ? i : "GENERAL",
     query_length: r.length,
@@ -124,14 +125,14 @@ function P(e, t) {
 }
 
 function R() {
-  r.Z.dispatch({
+  Chunk570140.Z.dispatch({
     type: "QUICKSWITCHER_HIDE"
   })
 }
 
 function D() {
-  let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "KEYBIND",
-    t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : "";
+  let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : "KEYBIND",
+    t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : "";
   ! function(e) {
     let t;
     if (O.Z.isOpen()) return;
@@ -147,13 +148,13 @@ function D() {
       current_channel_id: i,
       current_channel_type: t
     })
-  }(e), r.Z.dispatch(T({
+  }(module), Chunk570140.Z.dispatch(T({
     type: "QUICKSWITCHER_SHOW"
-  }, A(t)))
+  }, A(exports)))
 }
 
 function Z() {
-  P(v.rMx.QUICKSWITCHER_CLOSED), R()
+  P(Chunk981631.rMx.QUICKSWITCHER_CLOSED), R()
 }
 
 function w(e) {
@@ -170,7 +171,7 @@ function k(e) {
 }
 
 function L(e) {
-  let t, n = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
+  let t, n = arguments.length > 1 && true !== arguments[1] && arguments[1];
   R(), (0, i.pTH)(), P(v.rMx.QUICKSWITCHER_RESULT_SELECTED, e);
   let {
     type: f,
@@ -181,7 +182,7 @@ function L(e) {
   switch (f) {
     case d.h8.GUILD:
       (0, g.X)(_.id, {
-        navigationReplace: !0
+        navigationReplace: true
       });
       break;
     case d.h8.TEXT_CHANNEL:
@@ -189,15 +190,15 @@ function L(e) {
         state: {
           analyticsSource: j
         },
-        navigationReplace: !0
+        navigationReplace: true
       });
       break;
     case d.h8.VOICE_CHANNEL:
-      null != (t = b.Z.getChannel(_.id)) && (n ? a.Z.updateChatOpen(_.id, !0) : o.default.selectVoiceChannel(_.id), (0, p.Kh)(t.id, {
+      null != (t = b.Z.getChannel(_.id)) && (n ? a.Z.updateChatOpen(_.id, true) : o.default.selectVoiceChannel(_.id), (0, p.Kh)(t.id, {
         state: {
           analyticsSource: j
         },
-        navigationReplace: !0
+        navigationReplace: true
       }));
       break;
     case d.h8.USER:
@@ -208,7 +209,7 @@ function L(e) {
       break;
     case d.h8.GROUP_DM:
       (0, p.Kh)(_.id, {
-        navigationReplace: !0
+        navigationReplace: true
       }), l.Z.channelListScrollTo(v.ME, _.id);
       break;
     case d.h8.APPLICATION:
@@ -222,18 +223,18 @@ function L(e) {
       break;
     case d.h8.LINK:
       (0, m.Z)(_.path, {
-        navigationReplace: !0
+        navigationReplace: true
       });
       break;
     case d.h8.IN_APP_NAVIGATION:
       if (e.record.type === u.Ky.SETTINGS) {
         let t = (0, h.default)(e.record.path);
         null != t && c.Z.open(t.section, t.subsection, {
-          openWithoutBackstack: !1,
+          openWithoutBackstack: false,
           impressionSource: t.source
         })
       } else(0, m.Z)(_.path, {
-        navigationReplace: !0
+        navigationReplace: true
       })
   }
   r.Z.dispatch({

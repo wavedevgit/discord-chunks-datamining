@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 58178, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   dots: "dots__5ad89",
   themed: "themed__5ad89"
 }

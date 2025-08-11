@@ -1,4 +1,5 @@
 /** Chunk was on web.js **/
+/** chunk id: 559122, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 var r = {
   "heading-sm/normal": "heading-sm/normal_a45028",
@@ -74,4 +75,4 @@ var r = {
   md: "md_a45028 text-md/normal_a45028",
   disabled: "disabled_a45028"
 };
-n.r(e.exports = r)
+require.r(module.exports = r)

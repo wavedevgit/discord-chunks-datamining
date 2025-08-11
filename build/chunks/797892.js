@@ -1,5 +1,6 @@
 /** Chunk was on 38804 **/
-e.exports = {
+/** chunk id: 797892, original params: e,n,t (module,exports,require) **/
+module.exports = {
   connectedAccounts: "connectedAccounts_e6abe8",
   connectedAccountsColumn: "connectedAccountsColumn_e6abe8",
   connectedAccountContainer: "connectedAccountContainer_e6abe8",

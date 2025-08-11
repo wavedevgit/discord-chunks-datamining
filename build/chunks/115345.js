@@ -1,51 +1,52 @@
 /** Chunk was on web.js **/
+/** chunk id: 115345, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   F6: () => U,
   _Y: () => Q,
   cG: () => G,
   ly: () => B,
   oL: () => X,
   vo: () => V
-}), n(388685), n(997841), n(415506);
-var r = n(73800),
-  i = n(392711),
-  o = n.n(i),
-  a = n(442837),
-  s = n(433517),
-  l = n(570140),
-  c = n(668781),
-  u = n(87051),
-  d = n(181945),
-  f = n(149071),
-  _ = n(516373),
-  p = n(480294),
-  h = n(650774),
-  m = n(888369),
-  g = n(430824),
-  E = n(771845),
-  b = n(9156),
-  y = n(626135),
-  O = n(630388),
-  v = n(823379),
-  I = n(960048),
-  T = n(709054),
-  S = n(223683),
-  A = n(630114),
-  N = n(506712),
-  C = n(468788),
-  R = n(789662),
-  P = n(981631),
-  w = n(490897),
-  D = n(526761),
-  L = n(388032);
+}), require("./388685.js"), require("./997841.js"), require("./415506.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk392711 = require("./392711.js"),
+  o = require.n(Chunk392711),
+  Chunk442837 = require("./442837.js"),
+  Chunk433517 = require("./433517.js"),
+  Chunk570140 = require("./570140.js"),
+  Chunk668781 = require("./668781.js"),
+  Chunk87051 = require("./87051.js"),
+  Chunk181945 = require("./181945.js"),
+  Chunk149071 = require("./149071.js"),
+  Chunk516373 = require("./516373.js"),
+  Chunk480294 = require("./480294.js"),
+  Chunk650774 = require("./650774.js"),
+  Chunk888369 = require("./888369.js"),
+  Chunk430824 = require("./430824.js"),
+  Chunk771845 = require("./771845.js"),
+  Chunk9156 = require("./9156.js"),
+  Chunk626135 = require("./626135.js"),
+  Chunk630388 = require("./630388.js"),
+  Chunk823379 = require("./823379.js"),
+  Chunk960048 = require("./960048.js"),
+  Chunk709054 = require("./709054.js"),
+  Chunk223683 = require("./223683.js"),
+  Chunk630114 = require("./630114.js"),
+  Chunk506712 = require("./506712.js"),
+  Chunk468788 = require("./468788.js"),
+  Chunk789662 = require("./789662.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk490897 = require("./490897.js"),
+  Chunk526761 = require("./526761.js"),
+  Chunk388032 = require("./388032.js");
 
 function x(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -103,30 +104,30 @@ function U(e, t) {
 
 function G(e, t) {
   return g.Z.getGuildsArray().some(n => {
-    let [r] = p.Z.hasConsented(P.pjP.PERSONALIZATION) ? (0, N.q)(n, R.nf, e, t, !1) : (0, N.A)(n, e);
+    let [r] = p.Z.hasConsented(P.pjP.PERSONALIZATION) ? (0, N.q)(n, R.nf, e, t, false) : (0, N.A)(n, e);
     return r === R.AR.UseGreyDot
   })
 }
 
 function B() {
-  let e = g.Z.getGuildsArray(),
+  let e = Chunk430824.Z.getGuildsArray(),
     t = {};
-  for (let i of e) {
+  for (let i of module) {
     var n, r;
-    let e = null != (r = (null != (n = b.ZP.getAllSettings().userGuildSettings[i.id]) ? n : {}).flags) ? r : 0;
-    e = (0, O.mB)(e, D.vc.UNREADS_ALL_MESSAGES, !0), e = (0, O.mB)(e, D.vc.UNREADS_ONLY_MENTIONS, !1), t[i.id] = {
-      flags: e
+    let e = null != (r = (null != (n = Chunk9156.ZP.getAllSettings().userGuildSettings[Chunk392711.id]) ? require : {}).flags) ? Chunk73800 : 0;
+    e = (0, Chunk630388.mB)(module, Chunk526761.vc.UNREADS_ALL_MESSAGES, true), e = (0, Chunk630388.mB)(module, Chunk526761.vc.UNREADS_ONLY_MENTIONS, false), exports[Chunk392711.id] = {
+      flags: module
     }
   }
-  W(t), y.default.track(P.rMx.NOTIFICATION_MIGRATION_COMPLETED, {
-    auto_migrated: !0,
-    num_unread_guids_after: e.filter(e => m.default.hasUnread(e.id)).length
+  W(exports), Chunk626135.default.track(Chunk981631.rMx.NOTIFICATION_MIGRATION_COMPLETED, {
+    auto_migrated: true,
+    num_unread_guids_after: module.filter(e => m.default.hasUnread(e.id)).length
   })
 }
 
 function Z(e, t, n, r, i) {
   var o;
-  let [a, s, l] = p.Z.hasConsented(P.pjP.PERSONALIZATION) ? (0, N.q)(e, t, n, r, !0) : (0, N.A)(e, n), c = null != (o = n.filter(t => t.guild_id === e.id)[0]) ? o : {}, u = (0, A.Z)(e, null != i ? i : a, c, r, t);
+  let [a, s, l] = p.Z.hasConsented(P.pjP.PERSONALIZATION) ? (0, N.q)(e, t, n, r, true) : (0, N.A)(e, n), c = null != (o = n.filter(t => t.guild_id === e.id)[0]) ? o : {}, u = (0, A.Z)(e, null != i ? i : a, c, r, t);
   return {
     guildId: e.id,
     mode: a,
@@ -151,7 +152,7 @@ function F(e, t) {
     i = E.ZP.getFlattenedGuildIds(),
     a = o().sortBy(Object.values(e), e => {
       let t = i.indexOf(e.guildId);
-      return -1 === t ? i.length : t
+      return false === t ? i.length : t
     }),
     s = [
       ["Use Grey Dot", new Set([R.AR.UseGreyDot])],
@@ -174,13 +175,13 @@ function F(e, t) {
 }
 
 function V(e) {
-  let [t, n] = r.useState(!1), [i, o] = r.useState(!1), a = r.useCallback(async t => {
+  let [t, n] = r.useState(false), [i, o] = r.useState(false), a = r.useCallback(async t => {
     if (i) throw Error("Already submitted notifications migration");
-    n(!0);
+    n(true);
     try {
-      await H(t, e), o(!0)
+      await H(t, e), o(true)
     } finally {
-      n(!1)
+      n(false)
     }
   }, [i, e]);
   return {
@@ -208,7 +209,7 @@ async function H(e, t) {
     let o = Object.values(e).filter(e => e.actions.some(e => e.needsMarkedAsRead)).map(e => e.guildId);
     if (o.length > 0) {
       let e = setTimeout(n, 5e3);
-      (0, d.Z)(o, void 0, () => {
+      (0, d.Z)(o, true, () => {
         l.Z.dispatch({
           type: "RECOMPUTE_READ_STATES"
         }), clearTimeout(e), n()
@@ -240,7 +241,7 @@ function Y(e) {
     };
   return () => {
     y.default.track(P.rMx.NOTIFICATION_MIGRATION_COMPLETED, j(M({}, n), {
-      auto_migrated: !0,
+      auto_migrated: true,
       pre_selected_server_ids: Object.values(e).filter(e => e.mode === R.AR.UseGreyDot).map(e => e.guildId),
       final_selected_server_ids: t.map(e => e.plan.guildId),
       num_unread_guids_after: T.default.keys(e).filter(e => m.default.hasUnread(e)).length,
@@ -256,7 +257,7 @@ function Y(e) {
   }
 }
 async function W(e) {
-  await K(() => z()), await K(() => u.Z.setAccountFlag(C.c.USE_NEW_NOTIFICATIONS, !0));
+  await K(() => z()), await K(() => u.Z.setAccountFlag(C.c.USE_NEW_NOTIFICATIONS, true));
   let t = await K(() => f.Z.saveUserGuildSettingsBulk(e));
   l.Z.dispatch({
     type: "USER_GUILD_SETTINGS_FULL_UPDATE",
@@ -274,8 +275,8 @@ async function K(e) {
   return await e()
 }
 async function z() {
-  let e = await (0, S.Tn)();
-  e.length > 0 ? await q() && (0, S.dt)(e) : (0, S.$U)("Backup from ".concat(new Date().toLocaleDateString()))
+  let e = await (0, Chunk223683.Tn)();
+  module.length > 0 ? await q() && (0, Chunk223683.dt)(module) : (0, Chunk223683.$U)("Backup from ".concat(new Date().toLocaleDateString()))
 }
 
 function q() {
@@ -285,27 +286,27 @@ function q() {
       body: "It looks like you already have one notification settings backup. Would you like us to delete the old backup and take a new one, or skip taking a new backup and keep the old one?",
       confirmText: "Take New Backup",
       cancelText: "Skip Backup",
-      onConfirm: () => e(!0),
-      onCancel: () => e(!1)
+      onConfirm: () => e(true),
+      onCancel: () => e(false)
     })
   })
 }
 async function X() {
-  s.K.set("turnedOffNewNotifications", !0), y.default.track(P.rMx.NOTIFICATION_MIGRATION_OPTOUT, {
-    num_guilds_with_new_setting: g.Z.getGuildsArray().filter(e => b.ZP.resolveGuildUnreadSetting(e) === w.i.ONLY_MENTIONS).length
+  Chunk433517.K.set("turnedOffNewNotifications", true), Chunk626135.default.track(Chunk981631.rMx.NOTIFICATION_MIGRATION_OPTOUT, {
+    num_guilds_with_new_setting: Chunk430824.Z.getGuildsArray().filter(e => b.ZP.resolveGuildUnreadSetting(e) === w.i.ONLY_MENTIONS).length
   });
-  let e = await (0, S.Tn)(),
-    t = o().sortBy(e, e => new Date(e.recorded_at).getTime());
-  if (t.length > 0) {
-    let e = t[t.length - 1];
+  let e = await (0, Chunk223683.Tn)(),
+    t = o().sortBy(module, e => new Date(e.recorded_at).getTime());
+  if (exports.length > 0) {
+    let e = exports[exports.length - 1];
     await new Promise(t => c.Z.show({
       title: "Please Confirm",
       body: "This will turn off the new notification system and restore your " + "notification settings to a backup created on ".concat(new Date(e.recorded_at).toLocaleDateString()),
       onConfirm: t,
       cancelText: "Cancel",
       onCancel: () => {}
-    })), await (0, S.xx)(e.id), await u.Z.setAccountFlag(C.c.USE_NEW_NOTIFICATIONS, !1)
-  } else await u.Z.setAccountFlag(C.c.USE_NEW_NOTIFICATIONS, !1)
+    })), await (0, Chunk223683.xx)(module.id), await Chunk87051.Z.setAccountFlag(Chunk468788.c.USE_NEW_NOTIFICATIONS, false)
+  } else await Chunk87051.Z.setAccountFlag(Chunk468788.c.USE_NEW_NOTIFICATIONS, false)
 }
 
 function Q(e) {
@@ -323,11 +324,11 @@ function Q(e) {
       num_month_opens: Number(null != (o = e.one_month_opens) ? o : 0),
       num_three_month_opens: Number(null != (s = e.three_month_opens) ? s : 0),
       num_six_month_opens: Number(null != (l = e.six_month_opens) ? l : 0),
-      num_messages: Number(null != (c = null == h ? void 0 : h.num_messages) ? c : 0),
-      num_year_voice_joins: Number(null != (u = null == p ? void 0 : p.year_opens) ? u : 0),
-      num_month_voice_joins: Number(null != (d = null == p ? void 0 : p.one_month_opens) ? d : 0),
-      num_three_month_voice_joins: Number(null != (f = null == p ? void 0 : p.three_month_opens) ? f : 0),
-      num_six_month_voice_joins: Number(null != (_ = null == p ? void 0 : p.six_month_opens) ? _ : 0)
+      num_messages: Number(null != (c = null == h ? true : h.num_messages) ? c : 0),
+      num_year_voice_joins: Number(null != (u = null == p ? true : p.year_opens) ? u : 0),
+      num_month_voice_joins: Number(null != (d = null == p ? true : p.one_month_opens) ? d : 0),
+      num_three_month_voice_joins: Number(null != (f = null == p ? true : p.three_month_opens) ? f : 0),
+      num_six_month_voice_joins: Number(null != (_ = null == p ? true : p.six_month_opens) ? _ : 0)
     }
   }).filter(v.lm)
 }

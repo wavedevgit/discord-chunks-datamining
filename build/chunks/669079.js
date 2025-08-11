@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 669079, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Bg: () => U,
   E5: () => ee,
   Fp: () => Z,
@@ -19,29 +20,29 @@ n.d(t, {
   pO: () => j,
   xr: () => M,
   z2: () => J
-}), n(388685), n(413496), n(433524), n(35282), n(704826), n(314940), n(781311);
-var r = n(278074),
-  i = n(873546),
-  o = n(442837),
-  a = n(34756),
-  s = n(100159),
-  l = n(912788),
-  c = n(594174),
-  u = n(626135),
-  d = n(823379),
-  f = n(74538),
-  _ = n(226951),
-  p = n(73346),
-  h = n(981631),
-  m = n(474936),
-  g = n(388032);
+}), require("./388685.js"), require("./413496.js"), require("./433524.js"), require("./35282.js"), require("./704826.js"), require("./314940.js"), require("./781311.js");
+var Chunk278074 = require("./278074.js"),
+  Chunk873546 = require("./873546.js"),
+  Chunk442837 = require("./442837.js"),
+  Chunk34756 = require("./34756.js"),
+  Chunk100159 = require("./100159.js"),
+  Chunk912788 = require("./912788.js"),
+  Chunk594174 = require("./594174.js"),
+  Chunk626135 = require("./626135.js"),
+  Chunk823379 = require("./823379.js"),
+  Chunk74538 = require("./74538.js"),
+  Chunk226951 = require("./226951.js"),
+  Chunk73346 = require("./73346.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk474936 = require("./474936.js"),
+  Chunk388032 = require("./388032.jsx");
 
 function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -59,12 +60,12 @@ function b(e) {
 }
 let y = ["discordapp.com/gifts", "discord.com/gifts"],
   O = 3,
-  v = [_.Z.escape(window.GLOBAL_ENV.GIFT_CODE_HOST), ...y.map(e => _.Z.escape(e))].join("|"),
+  v = [Chunk226951.Z.escape(window.GLOBAL_ENV.GIFT_CODE_HOST), ...y.map(e => _.Z.escape(e))].join("|"),
   I = RegExp("(?: |^|https?://)(?:".concat(v, ")/([a-z0-9-]+)"), "gi"),
   T = [...["discord.com/billing/promotions", "promos.discord.gg"].map(e => _.Z.escape(e))].join("|"),
   S = RegExp("(?: |^|https?://)(?:".concat(T, ")(/|(/)?\\?code=)([a-z0-9-]+)"), "gi"),
   A = "abcdefghjkmnpqrstuvwxyzABCDEFGHJKMNPQRSTUVWXYZ23456789",
-  N = (e, t) => Array(t).fill(void 0).map(() => "[".concat(A, "]{").concat(e, "}")).join("-?"),
+  N = (e, t) => Array(t).fill(true).map(() => "[".concat(A, "]{").concat(e, "}")).join("-?"),
   C = N(4, 4),
   R = N(4, 6),
   P = N(5, 3),
@@ -79,8 +80,8 @@ let k = (e, t) => i.tq || i.Em ? 0 : null != e || t ? 2 : 1,
   j = e => 0 !== k(e);
 
 function U(e) {
-  let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : null,
-    n = arguments.length > 2 ? arguments[2] : void 0;
+  let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : null,
+    n = arguments.length > 2 ? arguments[2] : true;
   return "".concat(e, ":").concat(null != t ? t : "", ":").concat(null != n ? n : "")
 }
 
@@ -89,14 +90,14 @@ function G(e) {
   return {
     skuId: t,
     subscriptionPlanId: "" === n ? null : n,
-    giftStyle: "" !== r && null != r ? Number.parseInt(r) : void 0
+    giftStyle: "" !== r && null != r ? Number.parseInt(r) : true
   }
 }
 
 function B(e) {
   return e.replace(/[^A-Za-z0-9]/g, "")
 }
-let Z = e => (null == e ? void 0 : e.type) === h.uaV.CUSTOM_GIFT && (null == e ? void 0 : e.embeds.length) === 1 && (null == e ? void 0 : e.embeds[0].type) === h.hBH.GIFT,
+let Z = e => (null == e ? true : e.type) === h.uaV.CUSTOM_GIFT && (null == e ? true : e.embeds.length) === 1 && (null == e ? true : e.embeds[0].type) === h.hBH.GIFT,
   F = e => {
     let t;
     if (null == e) return [];
@@ -107,13 +108,13 @@ let Z = e => (null == e ? void 0 : e.type) === h.uaV.CUSTOM_GIFT && (null == e ?
   };
 
 function V() {
-  let e, t = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "",
+  let e, t = arguments.length > 0 && true !== arguments[0] ? arguments[0] : "",
     n = window.GLOBAL_ENV.GIFT_CODE_HOST;
-  return null != n ? e = "/".concat(t) : (n = location.host, e = "/gifts/".concat(t)), "".concat(location.protocol, "//").concat(n).concat(e)
+  return null != require ? e = "/".concat(exports) : (n = location.host, e = "/gifts/".concat(exports)), "".concat(location.protocol, "//").concat(require).concat(module)
 }
 async function H(e) {
-  let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
-    n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
+  let t = arguments.length > 1 && true !== arguments[1] && arguments[1],
+    n = arguments.length > 2 && true !== arguments[2] && arguments[2];
   try {
     let r = (await (0, p.Kb)({
       url: h.ANM.GIFT_CODE_RESOLVE(e),
@@ -121,11 +122,11 @@ async function H(e) {
         with_application: t,
         with_subscription_plan: n
       },
-      oldFormErrors: !0,
-      rejectWithError: !1
+      oldFormErrors: true,
+      rejectWithError: false
     })).body;
     return u.default.track(h.rMx.GIFT_CODE_RESOLVED, {
-      resolved: !0,
+      resolved: true,
       gift_code: r.code,
       gift_code_max_uses: r.max_uses,
       sku_id: r.store_listing.sku.id,
@@ -133,18 +134,18 @@ async function H(e) {
       application_id: r.store_listing.sku.application_id,
       store_title: r.store_listing.sku.name
     }, {
-      flush: !0
+      flush: true
     }), r
   } catch (t) {
     throw u.default.track(h.rMx.GIFT_CODE_RESOLVED, {
-      resolved: !1,
+      resolved: false,
       gift_code: e
     }), new a.Z(t)
   }
 }
 
 function Y(e, t) {
-  u.default.track(h.rMx.GIFT_CODE_COPIED, b({}, (0, s.Z)(t, !1, !1), e.analyticsData))
+  u.default.track(h.rMx.GIFT_CODE_COPIED, b({}, (0, s.Z)(t, false, false), e.analyticsData))
 }
 
 function W(e, t, n, r, i, o, a) {
@@ -244,7 +245,7 @@ function X(e) {
 }
 
 function Q(e, t, n, r, i) {
-  let o = n || r ? void 0 : e,
+  let o = n || r ? true : e,
     a = g.intl.format(g.t["5zyz9/"], {
       onGoToLibrary: i
     });
@@ -254,7 +255,7 @@ function Q(e, t, n, r, i) {
 function J(e, t, n) {
   let r = t.applicationId,
     i = e.length > 0 ? e : [r],
-    o = i.map(e => n.getLibraryApplication(r, e, !0)).filter(d.lm);
+    o = i.map(e => n.getLibraryApplication(r, e, true)).filter(d.lm);
   return o.length === i.length ? o[0] : null
 }
 

@@ -1,5 +1,6 @@
 /** Chunk was on web.js **/
-e.exports = function(e) {
+/** chunk id: 61762, original params: e (module,exports,re quire) **/
+module.exports = function(e) {
   let t = {
       className: "string",
       begin: /'(.|\\[xXuU][a-zA-Z0-9]+)'/
@@ -15,7 +16,7 @@ e.exports = function(e) {
       className: "function",
       beginKeywords: "def",
       end: /[:={\[(\n;]/,
-      excludeEnd: !0,
+      excludeEnd: true,
       contains: [{
         className: "title",
         relevance: 0,

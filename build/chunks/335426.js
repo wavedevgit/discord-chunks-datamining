@@ -1,5 +1,6 @@
 /** Chunk was on 34779 **/
-e.exports = {
+/** chunk id: 335426, original params: e,t,n (module,exports,require) **/
+module.exports = {
   blobContainer: "blobContainer_e5445c",
   pill: "pill_e5445c",
   sorting: "sorting_e5445c",

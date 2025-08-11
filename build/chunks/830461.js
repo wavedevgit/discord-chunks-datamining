@@ -1,13 +1,14 @@
 /** Chunk was on 46746 **/
-n.d(t, {
+/** chunk id: 830461, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   _: () => s
-}), n(388685);
-var r = n(224706),
-  i = n(594190),
-  l = n(823379);
+}), require("./388685.js");
+var Chunk224706 = require("./224706.js"),
+  Chunk594190 = require("./594190.js"),
+  Chunk823379 = require("./823379.js");
 async function s() {
-  let e = i.ZP.getRunningGames();
-  return (await Promise.all(e.map(async e => {
+  let e = Chunk594190.ZP.getRunningGames();
+  return (await Promise.all(module.map(async e => {
     let t;
     if (null == e.name) return null;
     try {
@@ -23,5 +24,5 @@ async function s() {
       name: i,
       url: "data:image/bmp;base64,".concat(l)
     } : null
-  }))).filter(l.lm)
+  }))).filter(Chunk823379.lm)
 }

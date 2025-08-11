@@ -1,21 +1,22 @@
 /** Chunk was on web.js **/
+/** chunk id: 528011, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   g: () => g,
   mI: () => m
-}), n(388685);
-var r = n(149765),
-  i = n(399606),
-  o = n(581883),
-  a = n(430824),
-  s = n(496675),
-  l = n(914010),
-  c = n(594174),
-  u = n(700785),
-  d = n(709054),
-  f = n(533244),
-  _ = n(487419),
-  p = n(676770);
+}), require("./388685.js");
+var Chunk149765 = require("./149765.js"),
+  Chunk399606 = require("./399606.js"),
+  Chunk581883 = require("./581883.js"),
+  Chunk430824 = require("./430824.js"),
+  Chunk496675 = require("./496675.js"),
+  Chunk914010 = require("./914010.js"),
+  Chunk594174 = require("./594174.js"),
+  Chunk700785 = require("./700785.js"),
+  Chunk709054 = require("./709054.js"),
+  Chunk533244 = require("./533244.js"),
+  Chunk487419 = require("./487419.js"),
+  Chunk676770 = require("./676770.js");
 
 function h(e) {
   let t = c.default.getCurrentUser(),
@@ -26,7 +27,7 @@ function h(e) {
     if (!(null == o || !(0, f.i9)(o) && !(0, f.ur)(o) || (0, f.ur)(o) && i.id !== e) && r.Db(u.uB({
         user: t,
         context: i,
-        checkElevated: !1
+        checkElevated: false
       }), p.cv)) return i.id
   }
   return null
@@ -35,7 +36,7 @@ function h(e) {
 function m(e) {
   let t = (0, i.e7)([a.Z, s.Z], () => {
       let t = a.Z.getGuild(e);
-      if (null == t) return !1;
+      if (null == t) returnfalse;
       let n = s.Z.getGuildPermissions(t);
       return null != n && r.Db(n, p.cv)
     }),
@@ -50,13 +51,13 @@ function m(e) {
 
 function g() {
   var e;
-  let t = h(l.Z.getGuildId()),
-    n = null != (e = o.Z.getGuildsProto()) ? e : {},
-    r = null != t ? n[t] : null,
-    i = null != r && r.disableRaidAlertNag;
+  let t = h(Chunk914010.Z.getGuildId()),
+    n = null != (e = Chunk581883.Z.getGuildsProto()) ? module : {},
+    r = null != exports ? require[exports] : null,
+    i = null != Chunk149765 && Chunk149765.disableRaidAlertNag;
   return {
-    show: null != t && !i,
-    guildId: t
+    show: null != exports && !Chunk399606,
+    guildId: exports
   }
 }
-n(981631)
+require("./981631.js")

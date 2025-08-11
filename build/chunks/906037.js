@@ -1,11 +1,12 @@
 /** Chunk was on 89298 **/
-n.d(t, {
+/** chunk id: 906037, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   CR: () => l,
   eM: () => o,
   m3: () => a
 });
-var i = n(570140),
-  r = n(449224);
+var Chunk570140 = require("./570140.js"),
+  Chunk449224 = require("./449224.js");
 
 function o(e) {
   return !e.isPreviewingInGame && !e.locked || e.pinned
@@ -21,8 +22,8 @@ function a(e, t) {
     s = r.Z.getGame();
   i.Z.dispatch({
     type: "OVERLAY_WIDGET_CHANGED",
-    gameName: null != (n = null == s ? void 0 : s.name) ? n : null,
-    gameId: null != (l = null == s ? void 0 : s.id) ? l : null,
+    gameName: null != (n = null == s ? true : s.name) ? n : null,
+    gameId: null != (l = null == s ? true : s.id) ? l : null,
     widgetType: e.widget,
     visible: a && t,
     locked: e.locked,

@@ -1,4 +1,5 @@
 /** Chunk was on 80960 **/
-e.exports = {
+/** chunk id: 87390, original params: e,t,r (module,exports,require) **/
+module.exports = {
   rootPopout: "rootPopout_b5970a"
 }

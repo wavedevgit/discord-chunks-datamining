@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 87894, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   DJ: () => s,
   U0: () => u,
   W_: () => o,
@@ -11,7 +12,7 @@ n.d(t, {
   jc: () => l,
   uq: () => i
 });
-var r = n(497505);
+var Chunk497505 = require("./497505.js");
 
 function i(e) {
   return [r.jn.GIFT_INVENTORY_FOR_YOU, r.jn.GIFT_INVENTORY_OTHER].includes(e)
@@ -28,7 +29,7 @@ function a(e) {
   } = e, {
     userStatus: r
   } = t;
-  return (null == r ? void 0 : r.enrolledAt) != null && null == r.completedAt || o(n)
+  return (null == r ? true : r.enrolledAt) != null && null == r.completedAt || o(n)
 }
 let s = 100,
   l = 20,

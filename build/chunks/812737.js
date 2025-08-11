@@ -1,4 +1,5 @@
 /** Chunk was on web.js **/
+/** chunk id: 812737, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 var r = {
   icon: "icon_f34534",
@@ -23,4 +24,4 @@ var r = {
   noIcon: "noIcon_f34534",
   noAcronym: "noAcronym_f34534"
 };
-n.r(e.exports = r)
+require.r(module.exports = r)

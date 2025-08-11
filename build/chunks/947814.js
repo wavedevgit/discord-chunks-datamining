@@ -1,3 +1,4 @@
 /** Chunk was on 23357 **/
+/** chunk id: 947814, original params: e,t,n (module,exports,require) **/
 "use strict";
-n(481754), e.exports = n(981994).Object.setPrototypeOf
+require("./481754.js"), module.exports = require("./981994.js").Object.setPrototypeOf

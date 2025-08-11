@@ -1,10 +1,11 @@
 /** Chunk was on 69788 **/
-n.d(t, {
+/** chunk id: 986849, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => i
 });
-var a = n(261168);
+var Chunk261168 = require("./261168.js");
 let i = {
-  date: (0, a.Z)({
+  date: (0, Chunk261168.Z)({
     formats: {
       full: "EEEE, do MMMM y",
       long: "do MMMM y",
@@ -13,7 +14,7 @@ let i = {
     },
     defaultWidth: "full"
   }),
-  time: (0, a.Z)({
+  time: (0, Chunk261168.Z)({
     formats: {
       full: "HH:mm:ss zzzz",
       long: "HH:mm:ss z",
@@ -22,7 +23,7 @@ let i = {
     },
     defaultWidth: "full"
   }),
-  dateTime: (0, a.Z)({
+  dateTime: (0, Chunk261168.Z)({
     formats: {
       full: "{{date}} 'um' {{time}}",
       long: "{{date}} 'um' {{time}}",

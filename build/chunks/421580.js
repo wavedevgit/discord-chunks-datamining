@@ -1,5 +1,6 @@
 /** Chunk was on 10667 **/
-e.d(n, {
+/** chunk id: 421580, original params: t,n,e (module,exports,require) **/
+require.d(exports, {
   x: () => i
-}), e(388685);
+}), require("./388685.js");
 var o, i = ((o = {}).PLAYSTATION = "https://discord.com/connections/playstation/link", o.PLAYSTATION_STAGING = "https://discord.com/connections/playstation-stg/link", o)

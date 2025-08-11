@@ -1,21 +1,22 @@
 /** Chunk was on 65652 **/
-t.d(n, {
+/** chunk id: 548647, original params: e,n,t (module,exports,require) **/
+require.d(exports, {
   n: () => x
 });
-var i = t(73800),
-  a = t(442837),
-  s = t(626135),
-  l = t(236289),
-  r = t(451284),
-  o = t(613734),
-  c = t(800530),
-  d = t(981631);
+var Chunk73800 = require("./73800.js"),
+  Chunk442837 = require("./442837.js"),
+  Chunk626135 = require("./626135.js"),
+  Chunk236289 = require("./236289.js"),
+  Chunk451284 = require("./451284.js"),
+  Chunk613734 = require("./613734.js"),
+  Chunk800530 = require("./800530.js"),
+  Chunk981631 = require("./981631.js");
 let x = () => {
-  let e = (0, a.e7)([l.Z], () => l.Z.getAppealClassificationId()),
-    n = (0, o.YG)(null != e ? e : d.lds),
-    t = (0, r.P)(),
-    x = (0, a.e7)([l.Z], () => l.Z.getIsDsaEligible());
-  return i.useCallback(i => {
+  let e = (0, Chunk442837.e7)([Chunk236289.Z], () => Chunk236289.Z.getAppealClassificationId()),
+    n = (0, Chunk613734.YG)(null != module ? module : Chunk981631.lds),
+    t = (0, Chunk451284.P)(),
+    x = (0, Chunk442837.e7)([Chunk236289.Z], () => Chunk236289.Z.getIsDsaEligible());
+  return Chunk73800.useCallback(i => {
     s.default.track(d.rMx.SAFETY_HUB_ACTION, {
       action: i,
       account_standing: t.state,
@@ -24,5 +25,5 @@ let x = () => {
       is_dsa_eligible: x,
       violation_type: n.violationType
     })
-  }, [t.state, e, n, x])
+  }, [require.state, module, exports, x])
 }

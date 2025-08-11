@@ -1,5 +1,6 @@
 /** Chunk was on web.js **/
-e.exports = function(e) {
+/** chunk id: 79168, original params: e (module,exports,re quire) **/
+module.exports = function(e) {
   let t = "[A-Za-z_\\u00A1-\\uFFFF][A-Za-z_0-9\\u00A1-\\uFFFF]*",
     n = {
       $pattern: t,

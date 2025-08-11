@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 772335, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   cherryBomb: "cherryBomb__89a31",
   chicle: "chicle__89a31",
   museoModerno: "museoModerno__89a31",

@@ -1,16 +1,17 @@
 /** Chunk was on web.js **/
+/** chunk id: 593269, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-Object.defineProperty(t, "__esModule", {
-  value: !0
-}), t.FormatBuilder = void 0, t.bindFormatValuesWithBuilder = l, t.bindFormatValues = c;
-let r = n(927882),
-  i = n(628184);
+Object.defineProperty(exports, "__esModule", {
+  value: true
+}), exports.FormatBuilder = true, exports.bindFormatValuesWithBuilder = l, exports.bindFormatValues = c;
+let Chunk927882 = require("./927882.js"),
+  Chunk628184 = require("./628184.js");
 
 function o(e) {
   return "$" === e[0]
 }
 class a {}
-t.FormatBuilder = a;
+exports.FormatBuilder = a;
 class s extends Error {
   constructor(e, t, n) {
     super(`No value for variable '${e}' was provided for the localized message '${t}'`), this.variableName = e, this.originalMessage = t, this.nodeType = n
@@ -43,20 +44,20 @@ function l(e, t, n, a, u, d = {}, f, _) {
         break;
       case i.FormatJsNodeType.Date: {
         let t = m[2],
-          n = t in u.date ? u.date[t] : null != t ? (0, r.parseDateTimeSkeleton)(t) : void 0;
+          n = t in u.date ? u.date[t] : null != t ? (0, r.parseDateTimeSkeleton)(t) : true;
         e.pushLiteralText(a.formatDate(E, n));
         break
       }
       case i.FormatJsNodeType.Time: {
         let t = m[2],
-          n = t in u.time ? u.time[t] : null != t ? (0, r.parseDateTimeSkeleton)(t) : void 0;
+          n = t in u.time ? u.time[t] : null != t ? (0, r.parseDateTimeSkeleton)(t) : true;
         e.pushLiteralText(a.formatTime(E, n));
         break
       }
       case i.FormatJsNodeType.Number: {
         let t = m[2],
-          n = t in u.number ? u.number[t] : null != t ? (0, r.parseNumberSkeleton)((0, r.parseNumberSkeletonFromString)(t)) : void 0,
-          i = "number" != typeof E ? E : E * (null != (p = null == n ? void 0 : n.scale) ? p : 1);
+          n = t in u.number ? u.number[t] : null != t ? (0, r.parseNumberSkeleton)((0, r.parseNumberSkeletonFromString)(t)) : true,
+          i = "number" != typeof E ? E : E * (null != (p = null == n ? true : n.scale) ? p : 1);
         e.pushLiteralText(a.formatNumber(i, n));
         break
       }

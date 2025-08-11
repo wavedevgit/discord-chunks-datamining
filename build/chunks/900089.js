@@ -1,20 +1,21 @@
 /** Chunk was on web.js **/
+/** chunk id: 900089, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Fw: () => i,
   RC: () => o,
   gs: () => a
 });
-var r = n(692547);
+var Chunk692547 = require("./692547.js");
 
 function i(e) {
   return r.Z.unsafe_rawColors[e].css
 }
 
 function o() {
-  return r.Z.themes
+  return Chunk692547.Z.themes
 }
 
 function a() {
-  return r.Z.radii
+  return Chunk692547.Z.radii
 }

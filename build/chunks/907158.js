@@ -1,14 +1,15 @@
 /** Chunk was on 50448 **/
+/** chunk id: 907158, original params: t,r,n (module,exports,require) **/
 "use strict";
-var e = n(998659).charAt,
-  o = n(565130),
-  i = n(89416),
-  u = n(689591),
-  s = n(787899),
+var e = require("./998659.js").charAt,
+  Chunk565130 = require("./565130.js"),
+  Chunk89416 = require("./89416.js"),
+  Chunk689591 = require("./689591.js"),
+  Chunk787899 = require("./787899.js"),
   c = "String Iterator",
-  f = i.set,
-  a = i.getterFor(c);
-u(String, "String", function(t) {
+  f = Chunk89416.set,
+  a = Chunk89416.getterFor(c);
+Chunk689591(String, "String", function(t) {
   f(this, {
     type: c,
     string: o(t),
@@ -16,7 +17,7 @@ u(String, "String", function(t) {
   })
 }, function() {
   var t, r = a(this),
-    n = r.string,
-    o = r.index;
-  return o >= n.length ? s(void 0, !0) : (t = e(n, o), r.index += t.length, s(t, !1))
+    n = exports.string,
+    o = exports.index;
+  return Chunk565130 >= require.length ? Chunk787899(true, true) : (t = e(require, Chunk565130), exports.index += module.length, Chunk787899(module, false))
 })

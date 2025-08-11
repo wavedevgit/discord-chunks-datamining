@@ -1,50 +1,51 @@
 /** Chunk was on web.js **/
+/** chunk id: 277358, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => b
-}), n(388685);
-var r = n(570140),
-  i = n(147913),
-  o = n(70956),
-  a = n(358085),
-  s = n(998502),
-  l = n(104755),
-  c = n(355281),
-  u = n(817788),
-  d = n(509003),
-  f = n(802512),
-  _ = n(981631);
+}), require("./388685.js");
+var Chunk570140 = require("./570140.js"),
+  Chunk147913 = require("./147913.js"),
+  Chunk70956 = require("./70956.js"),
+  Chunk358085 = require("./358085.js"),
+  Chunk998502 = require("./998502.js"),
+  Chunk104755 = require("./104755.js"),
+  Chunk355281 = require("./355281.js"),
+  Chunk817788 = require("./817788.js"),
+  Chunk509003 = require("./509003.js"),
+  Chunk802512 = require("./802512.js"),
+  Chunk981631 = require("./981631.js");
 
 function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
-let h = 3 * o.Z.Millis.DAY,
-  m = 7 * o.Z.Millis.DAY,
+let h = 3 * Chunk70956.Z.Millis.DAY,
+  m = 7 * Chunk70956.Z.Millis.DAY,
   g = {
     joinGameLogPrefix: "[FLog::GameJoinLoadTime] Report game_join_loadtime:",
     joinGameFields: [{
       regex: "universeid:([0-9]+)",
-      key: u.SQ.UNIVERSE_ID
+      key: Chunk817788.SQ.UNIVERSE_ID
     }, {
       regex: "placeid:([0-9]+)",
-      key: u.SQ.PLACE_ID
+      key: Chunk817788.SQ.PLACE_ID
     }, {
       regex: "userid:([0-9]+)",
-      key: u.SQ.USER_ID
+      key: Chunk817788.SQ.USER_ID
     }, {
       regex: "sid:([0-9a-zA-Z-]+)",
-      key: u.SQ.JOB_ID
+      key: Chunk817788.SQ.JOB_ID
     }],
     leaveGameLogPrefix: "[FLog::SingleSurfaceApp] returnToLuaApp:"
   };
-class E extends i.Z {
+class E extends Chunk147913.Z {
   _initialize() {
-    this.stores = new Map().set(f.Z, () => this.handleRobloxSubgameStoreChanged())
+    this.stores = new Map().set(Chunk802512.Z, () => this.handleRobloxSubgameStoreChanged())
   }
   constructor(...e) {
     super(...e), p(this, "currentInterval_", null), p(this, "currentSubgameInfo_", null), p(this, "actions", {

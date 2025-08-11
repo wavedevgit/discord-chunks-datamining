@@ -1,13 +1,14 @@
 /** Chunk was on web.js **/
+/** chunk id: 338336, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 let r, i;
-n.d(t, {
+require.d(exports, {
   Z: () => l,
   r: () => c
 });
-var o = n(824096),
-  a = n(626135),
-  s = n(981631);
+var Chunk824096 = require("./824096.js"),
+  Chunk626135 = require("./626135.js"),
+  Chunk981631 = require("./981631.js");
 
 function l(e, t, n) {
   let {
@@ -20,8 +21,8 @@ function l(e, t, n) {
   a.default.track(s.rMx.VIDEO_TOGGLED, {
     video_toggle_reason: t,
     toggled_user_id: e,
-    rtc_connection_id: null == r ? void 0 : r(),
-    media_session_id: null == i ? void 0 : i(),
+    rtc_connection_id: null == r ? true : r(),
+    media_session_id: null == i ? true : i(),
     video_health_manager_window_length: l ? c : null,
     video_health_manager_poor_fps_ratio: l ? u : null,
     video_health_manager_fps_threshold: l ? d : null,

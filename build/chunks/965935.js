@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 965935, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   gameIcon: "gameIcon__5a366",
   gameMessageTooltip: "gameMessageTooltip__5a366",
   gameMessageTooltipContent: "gameMessageTooltipContent__5a366",

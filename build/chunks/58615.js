@@ -1,5 +1,6 @@
 /** Chunk was on 68214 **/
-var o = r(338091);
+/** chunk id: 58615, original params: t,e,r (module,exports,require) **/
+var Chunk338091 = require("./338091.js");
 
 function n(t) {
   this.mode = o.MODE_8BIT_BYTE, this.data = t
@@ -11,4 +12,4 @@ n.prototype = {
   write: function(t) {
     for (var e = 0; e < this.data.length; e++) t.put(this.data.charCodeAt(e), 8)
   }
-}, t.exports = n
+}, module.exports = n

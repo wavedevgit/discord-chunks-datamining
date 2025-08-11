@@ -1,8 +1,9 @@
 /** Chunk was on web.js **/
+/** chunk id: 653192, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-var r = n(370260),
-  i = n(733359).strlen;
-e.exports = function(e, t) {
+var Chunk370260 = require("./370260.js"),
+  i = require("./733359.js").strlen;
+module.exports = function(e, t) {
   var n = [];
   return e.findEntityRanges(function(e) {
     return !!e.getEntity()

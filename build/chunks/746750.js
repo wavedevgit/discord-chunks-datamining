@@ -1,2 +1,3 @@
 /** Chunk was on 34334 **/
-e.exports = JSON.parse('{"klSpfn":"Be\xe1ll\xedt\xe1sok szerkeszt\xe9se","NzUuLC":["+",[1,"count"]," ",[6,"count",{"one":["\xfczenet"],"other":["\xfczenet"]},0,"cardinal"]],"O+racX":"Nincsenek \xe9rtes\xedt\xe9sek.","dcpdhI":"V\xe1lassz egy \xfczenetet, hogy oda tudj navig\xe1lni.","VAK+h4":"\xdcdv az \xc9rtes\xedt\xe9si k\xf6zpontban!"}')
+/** chunk id: 746750, original params: e (module,exports,require) **/
+module.exports = JSON.parse('{"klSpfn":"Be\xe1ll\xedt\xe1sok szerkeszt\xe9se","NzUuLC":["+",[1,"count"]," ",[6,"count",{"one":["\xfczenet"],"other":["\xfczenet"]},0,"cardinal"]],"O+racX":"Nincsenek \xe9rtes\xedt\xe9sek.","dcpdhI":"V\xe1lassz egy \xfczenetet, hogy oda tudj navig\xe1lni.","VAK+h4":"\xdcdv az \xc9rtes\xedt\xe9si k\xf6zpontban!"}')

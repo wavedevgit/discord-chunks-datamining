@@ -1,6 +1,7 @@
 /** Chunk was on 68464 **/
+/** chunk id: 549607, original params: i,a,n (module,exports,require) **/
 "use strict";
-i.exports = {
+module.exports = {
   classificationContainer: "classificationContainer_a48d6b",
   classificationHeader: "classificationHeader_a48d6b",
   classificationActionsTakenContainer: "classificationActionsTakenContainer_a48d6b",

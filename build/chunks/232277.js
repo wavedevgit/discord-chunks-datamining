@@ -1,5 +1,6 @@
 /** Chunk was on 226 **/
-t.exports = {
+/** chunk id: 232277, original params: t,e,s (module,exports,require) **/
+module.exports = {
   splash: "splash__15293",
   gameIcon: "gameIcon__15293",
   gameName: "gameName__15293",

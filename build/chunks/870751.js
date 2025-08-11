@@ -1,5 +1,6 @@
 /** Chunk was on 22988 **/
-e.exports = {
+/** chunk id: 870751, original params: e,t,n (module,exports,require) **/
+module.exports = {
   applicationBody: "applicationBody__864b0",
   form: "form__864b0",
   twoColumnContainer: "twoColumnContainer__864b0",

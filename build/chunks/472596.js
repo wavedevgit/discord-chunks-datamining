@@ -1,5 +1,6 @@
 /** Chunk was on 12097 **/
-n.d(t, {
+/** chunk id: 472596, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   RE: () => d,
   RN: () => A,
   po: () => m,
@@ -7,14 +8,14 @@ n.d(t, {
   xb: () => I,
   zq: () => T
 });
-var r, l = n(73800),
-  s = n(399606),
-  i = n(906732),
-  a = n(892001),
-  o = n(485386),
-  u = n(430824),
-  c = n(594174),
-  E = n(91047);
+var r, Chunk73800 = require("./73800.js"),
+  Chunk399606 = require("./399606.js"),
+  Chunk906732 = require("./906732.js"),
+  Chunk892001 = require("./892001.js"),
+  Chunk485386 = require("./485386.js"),
+  Chunk430824 = require("./430824.js"),
+  Chunk594174 = require("./594174.js"),
+  Chunk91047 = require("./91047.jsx");
 let d = (e, t) => {
   let {
     guildId: n,
@@ -58,7 +59,7 @@ function A(e, t, n) {
       guildId: e.guildId,
       analyticsLocations: null != t ? [t] : r,
       onCloseContextMenu: n,
-      showTransferOwnershipItem: !0
+      showTransferOwnershipItem: true
     }))
   }, [e, n, r, t])
 }

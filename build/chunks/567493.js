@@ -1,30 +1,31 @@
 /** Chunk was on web.js **/
+/** chunk id: 567493, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   KF: () => m,
   hQ: () => g,
   im: () => p
-}), n(388685), n(361932), n(187205), n(539854);
-var r = n(73800),
-  i = n(661869),
-  o = n(876215),
-  a = n(884439),
-  s = n(442837),
-  l = n(271383),
-  c = n(158776),
-  u = n(709054),
-  d = n(107866),
-  f = n(206583);
+}), require("./388685.js"), require("./361932.js"), require("./187205.js"), require("./539854.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk661869 = require("./661869.js"),
+  Chunk876215 = require("./876215.js"),
+  Chunk884439 = require("./884439.js"),
+  Chunk442837 = require("./442837.js"),
+  Chunk271383 = require("./271383.js"),
+  Chunk158776 = require("./158776.js"),
+  Chunk709054 = require("./709054.js"),
+  Chunk107866 = require("./107866.js"),
+  Chunk206583 = require("./206583.js");
 let _ = (e, t) => {
   let n = e.filter(e => null != e.activity.application_id && f.yh.includes(e.activity.application_id)),
     r = t.filter(e => null != e.activity.application_id && f.yh.includes(e.activity.application_id));
-  if (n.length !== r.length) return !1;
+  if (n.length !== r.length) returnfalse;
   let i = new Set(n.map(e => "".concat(e.userId, "-").concat(e.activity.session_id, "-").concat(e.activity.application_id))),
     o = new Set(r.map(e => "".concat(e.userId, "-").concat(e.activity.session_id, "-").concat(e.activity.application_id)));
-  if (i.size !== o.size) return !1;
+  if (i.size !== o.size) returnfalse;
   for (let e of i)
-    if (!o.has(e)) return !1;
-  return !0
+    if (!o.has(e)) returnfalse;
+  returntrue
 };
 
 function p(e) {
@@ -39,7 +40,7 @@ function h(e, t) {
     var r, s, c;
     let d = t.userId;
     if (null == d || !l.ZP.isMember(e, d) || null == t.activity.application_id || "" === t.activity.name) return;
-    let f = null != (c = null != (s = null == (r = t.activity.timestamps) ? void 0 : r.start) ? s : t.activity.created_at) ? c : Date.now(),
+    let f = null != (c = null != (s = null == (r = t.activity.timestamps) ? true : r.start) ? s : t.activity.created_at) ? c : Date.now(),
       _ = {
         id: u.default.fromTimestamp(f),
         author_id: d,
@@ -49,7 +50,7 @@ function h(e, t) {
         expires_at: new Date(Date.now() + 3e5).toISOString(),
         traits: [{
           type: a.N.IS_LIVE,
-          is_live: !0
+          is_live: true
         }, {
           type: a.N.DURATION_SECONDS,
           duration_seconds: Math.floor((Date.now() - f) / 1e3)
@@ -58,7 +59,7 @@ function h(e, t) {
           type: "gamescom_demo_content_extra",
           game_name: t.activity.name,
           application_id: t.activity.application_id,
-          is_gamescom_demo_content: !0
+          is_gamescom_demo_content: true
         }
       };
     n.push(_)

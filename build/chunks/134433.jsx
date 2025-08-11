@@ -1,0 +1,42 @@
+/** Chunk was on web.js **/
+/** chunk id: 134433, original params: e,t,n (module,exports,re quire) **/
+"use strict";
+require.d(exports, {
+  Z: () => m
+}), require("./388685.js");
+var Chunk255367 = require("./255367.js");
+require("./73800.js");
+var Chunk120356 = require("./120356.js"),
+  o = require.n(Chunk120356),
+  Chunk866442 = require("./866442.js"),
+  Chunk442837 = require("./442837.js"),
+  Chunk692547 = require("./692547.js"),
+  Chunk481060 = require("./481060.js"),
+  Chunk607070 = require("./607070.js"),
+  Chunk393951 = require("./393951.js"),
+  Chunk181071 = require("./181071.js");
+let _ = Chunk692547.Z.unsafe_rawColors.PRIMARY_300,
+  p = Chunk692547.Z.unsafe_rawColors.WHITE_500,
+  h = Chunk692547.Z.unsafe_rawColors.PRIMARY_630;
+
+function m(e) {
+  let {
+    color: t,
+    size: n,
+    forcedIconColor: i,
+    className: l,
+    iconClassName: m
+  } = e, [g, E] = (0, s.Wu)([u.Z], () => [u.Z.desaturateUserColors, u.Z.saturation]), b = (0, c.dQu)(_).hex(), y = null != t ? t : b, O = (0, a.ho)((0, a._i)(y), false, g ? E : null), v = (0, c.dQu)(p).hex(), I = (0, c.dQu)(h).hex(), T = null != i ? i : (0, d.B)({
+    backgroundColor: y,
+    colors: [v, I]
+  }), S = n / 8;
+  return <div style={{
+      background: O,
+      width: n,
+      height: n,
+      borderRadius: n,
+      lineHeight: "".concat(n, "px")
+    }} className={l}><c.xPt size={"custom"} color={T} className={o()(f.linkIcon, m)} width={n - 2 * S} height={n - 2 * S} style={{
+        margin: S
+      }} /></div>
+}

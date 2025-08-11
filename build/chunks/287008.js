@@ -1,23 +1,24 @@
 /** Chunk was on web.js **/
+/** chunk id: 287008, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => u
 });
-var r = n(73800),
-  i = n(442837),
-  o = n(654904),
-  a = n(643879),
-  s = n(271383),
-  l = n(369111),
-  c = n(442552);
+var Chunk73800 = require("./73800.js"),
+  Chunk442837 = require("./442837.js"),
+  Chunk654904 = require("./654904.js"),
+  Chunk643879 = require("./643879.js"),
+  Chunk271383 = require("./271383.js"),
+  Chunk369111 = require("./369111.js"),
+  Chunk442552 = require("./442552.js");
 
 function u(e) {
   let {
     user: t,
     guildId: n,
     size: u,
-    showPending: d = !1,
-    animateOnHover: f = !1,
+    showPending: d = false,
+    animateOnHover: f = false,
     avatarOverride: _
   } = e, {
     onMouseEnter: p,
@@ -30,12 +31,12 @@ function u(e) {
     image: g,
     canAnimate: m,
     size: u
-  }) : void 0, b = void 0 !== _ ? _ : E, y = (0, i.e7)([s.ZP], () => null != n && null != t ? s.ZP.getMember(n, t.id) : null);
+  }) : true, b = true !== _ ? _ : E, y = (0, i.e7)([s.ZP], () => null != n && null != t ? s.ZP.getMember(n, t.id) : null);
   return {
     avatarSrc: r.useMemo(() => null != t ? (0, o.SG)(b, y, t, {
       canAnimate: m,
       size: u
-    }) : void 0, [b, y, t, m, u]),
+    }) : true, [b, y, t, m, u]),
     isAvatarAnimating: m,
     eventHandlers: {
       onMouseEnter: p,

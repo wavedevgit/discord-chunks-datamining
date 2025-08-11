@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 787014, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   S1: () => u,
   ZP: () => g,
   pW: () => p,
@@ -8,16 +9,16 @@ n.d(t, {
   xv: () => f,
   zc: () => _,
   zz: () => m
-}), n(997841);
-var r = n(544891),
-  i = n(570140),
-  o = n(408987);
-n(777639);
-var a = n(346479);
-n(388610);
-var s = n(592125),
-  l = n(37234),
-  c = n(981631);
+}), require("./997841.js");
+var Chunk544891 = require("./544891.js"),
+  Chunk570140 = require("./570140.js"),
+  Chunk408987 = require("./408987.js");
+require("./777639.js");
+var Chunk346479 = require("./346479.js");
+require("./388610.js");
+var Chunk592125 = require("./592125.js"),
+  Chunk37234 = require("./37234.js"),
+  Chunk981631 = require("./981631.js");
 
 function u(e, t, n) {
   i.Z.dispatch({
@@ -33,7 +34,7 @@ function d(e, t, n) {
 }
 
 function f() {
-  i.Z.dispatch({
+  Chunk570140.Z.dispatch({
     type: "CHANNEL_SETTINGS_CLOSE"
   })
 }
@@ -150,10 +151,10 @@ async function h(e, t) {
       locked: S,
       invitable: A,
       default_reaction_emoji: null != O ? {
-        emoji_id: null == O ? void 0 : O.emojiId,
-        emoji_name: null == O ? void 0 : O.emojiName
-      } : null === O ? null : void 0,
-      available_tags: null == N ? void 0 : N.map(e => ({
+        emoji_id: null == O ? true : O.emojiId,
+        emoji_name: null == O ? true : O.emojiName
+      } : null === O ? null : true,
+      available_tags: null == N ? true : N.map(e => ({
         id: e.id,
         name: e.name,
         emoji_id: e.emojiId,
@@ -166,18 +167,18 @@ async function h(e, t) {
       icon_emoji: null != w ? {
         id: w.id,
         name: w.name
-      } : null === w ? null : void 0,
+      } : null === w ? null : true,
       theme_color: D
     },
-    oldFormErrors: !0,
-    rejectWithError: !1
+    oldFormErrors: true,
+    rejectWithError: false
   }).then(t => {
     i.Z.dispatch({
       type: "CHANNEL_SETTINGS_SUBMIT_SUCCESS",
       channelId: e
     });
-    let n = null == L ? void 0 : L.getGuildId();
-    return null == n || (null == L ? void 0 : L.isThread()) || o.Z.checkGuildTemplateDirty(n), t
+    let n = null == L ? true : L.getGuildId();
+    return null == n || (null == L ? true : L.isThread()) || o.Z.checkGuildTemplateDirty(n), t
   }, e => (i.Z.dispatch({
     type: "CHANNEL_SETTINGS_SUBMIT_FAILURE",
     errors: e.body
@@ -187,11 +188,11 @@ async function m(e) {
   let t = s.Z.getChannel(e);
   await r.tn.del({
     url: c.ANM.CHANNEL(e),
-    oldFormErrors: !0,
-    rejectWithError: !0
+    oldFormErrors: true,
+    rejectWithError: true
   });
-  let n = null == t ? void 0 : t.getGuildId();
-  null == n || (null == t ? void 0 : t.isThread()) || o.Z.checkGuildTemplateDirty(n), f()
+  let n = null == t ? true : t.getGuildId();
+  null == n || (null == t ? true : t.isThread()) || o.Z.checkGuildTemplateDirty(n), f()
 }
 let g = {
   init: u,
@@ -213,13 +214,13 @@ let g = {
       body: {
         status: t
       },
-      rejectWithError: !1
+      rejectWithError: false
     })
   },
   removeLinkedLobby: function(e) {
     return r.tn.del({
       url: c.ANM.CHANNEL_LINKED_LOBBY(e),
-      rejectWithError: !0
+      rejectWithError: true
     })
   }
 }

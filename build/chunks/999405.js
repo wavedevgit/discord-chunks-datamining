@@ -1,14 +1,15 @@
 /** Chunk was on 50448 **/
+/** chunk id: 999405, original params: t,r,n (module,exports,require) **/
 "use strict";
-var e = n(178476),
-  o = n(459341),
-  i = n(394370),
-  u = n(181794),
-  s = i("species");
-t.exports = function(t) {
+var Chunk178476 = require("./178476.js"),
+  Chunk459341 = require("./459341.js"),
+  Chunk394370 = require("./394370.js"),
+  Chunk181794 = require("./181794.js"),
+  s = Chunk394370("species");
+module.exports = function(t) {
   var r = e(t);
   u && r && !r[s] && o(r, s, {
-    configurable: !0,
+    configurable: true,
     get: function() {
       return this
     }

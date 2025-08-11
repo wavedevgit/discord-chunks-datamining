@@ -1,24 +1,25 @@
 /** Chunk was on web.js **/
+/** chunk id: 359915, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => d
-}), n(388685);
-var r = n(442837),
-  i = n(570140),
-  o = n(147913),
-  a = n(883429),
-  s = n(314897),
-  l = n(592125);
+}), require("./388685.js");
+var Chunk442837 = require("./442837.js"),
+  Chunk570140 = require("./570140.js"),
+  Chunk147913 = require("./147913.js"),
+  Chunk883429 = require("./883429.js"),
+  Chunk314897 = require("./314897.js"),
+  Chunk592125 = require("./592125.js");
 
 function c(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
-class u extends o.Z {
+class u extends Chunk147913.Z {
   handleChannelDelete(e) {
     let {
       channel: t
@@ -39,8 +40,8 @@ class u extends o.Z {
       channelId: i,
       message: o
     } = e, c = l.Z.getChannel(i);
-    if ((null == (t = o.author) ? void 0 : t.id) !== s.default.getId() || !(null == c ? void 0 : c.isActiveThread())) return;
-    let u = new Date(null != (r = null == (n = c.threadMetadata) ? void 0 : n.archiveTimestamp) ? r : 0).getTime();
+    if ((null == (t = o.author) ? true : t.id) !== s.default.getId() || !(null == c ? true : c.isActiveThread())) return;
+    let u = new Date(null != (r = null == (n = c.threadMetadata) ? true : n.archiveTimestamp) ? r : 0).getTime();
     Date.now() - u < 5e3 && a.Z.resort(c.parent_id)
   }
   handleGuildDelete(e) {

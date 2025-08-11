@@ -1,5 +1,6 @@
 /** Chunk was on 6583 **/
-n.d(t, {
+/** chunk id: 994420, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => o
 });
 
@@ -8,6 +9,6 @@ function o() {
     var e = !Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function() {}))
   } catch (e) {}
   return (o = function() {
-    return !!e
+    return !!module
   })()
 }

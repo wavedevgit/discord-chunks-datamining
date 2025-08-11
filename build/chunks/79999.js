@@ -1,16 +1,17 @@
 /** Chunk was on web.js **/
+/** chunk id: 79999, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 
 function r(e, t) {
   e.prototype = Object.create(t.prototype), e.prototype.constructor = e, e.__proto__ = t
 }
-var i = n(749791),
-  o = n(963956),
-  a = n(152477),
-  s = n(65183),
-  l = n(73800),
-  c = n(606166);
-s.List, e.exports = function(e) {
+var Chunk749791 = require("./749791.js"),
+  Chunk963956 = require("./963956.js"),
+  Chunk152477 = require("./152477.js"),
+  Chunk65183 = require("./65183.js"),
+  Chunk73800 = require("./73800.js"),
+  Chunk606166 = require("./606166.js");
+Chunk65183.List, module.exports = function(e) {
   function t() {
     return e.apply(this, arguments) || this
   }
@@ -66,10 +67,10 @@ s.List, e.exports = function(e) {
     return l.createElement("div", {
       "data-offset-key": a.encode(m, 0, 0),
       className: c({
-        "public/DraftStyleDefault/block": !0,
+        "public/DraftStyleDefault/block": true,
         "public/DraftStyleDefault/ltr": "LTR" === d,
         "public/DraftStyleDefault/rtl": "RTL" === d
       })
     }, b)
   }, t
-}(l.Component)
+}(Chunk73800.Component)

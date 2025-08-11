@@ -1,37 +1,38 @@
 /** Chunk was on web.js **/
+/** chunk id: 868643, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   a: () => _,
   h: () => f
-}), n(997841);
-var r = n(73800),
-  i = n(442837),
-  o = n(430198),
-  a = n(592125),
-  s = n(430824),
-  l = n(630388),
-  c = n(981631);
-let u = c.iLy.CROSSPOSTED | c.iLy.FAILED_TO_MENTION_SOME_ROLES_IN_THREAD | c.iLy.GUILD_FEED_HIDDEN | c.iLy.HAS_SNAPSHOT | c.iLy.HAS_THREAD | c.iLy.IS_CROSSPOST | c.iLy.IS_VOICE_MESSAGE | c.iLy.SHOULD_SHOW_LINK_NOT_DISCORD_WARNING | c.iLy.SUPPRESS_EMBEDS | c.iLy.SUPPRESS_NOTIFICATIONS | c.iLy.URGENT | c.iLy.IS_COMPONENTS_V2;
+}), require("./997841.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk442837 = require("./442837.js"),
+  Chunk430198 = require("./430198.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk430824 = require("./430824.js"),
+  Chunk630388 = require("./630388.js"),
+  Chunk981631 = require("./981631.js");
+let u = Chunk981631.iLy.CROSSPOSTED | Chunk981631.iLy.FAILED_TO_MENTION_SOME_ROLES_IN_THREAD | Chunk981631.iLy.GUILD_FEED_HIDDEN | Chunk981631.iLy.HAS_SNAPSHOT | Chunk981631.iLy.HAS_THREAD | Chunk981631.iLy.IS_CROSSPOST | Chunk981631.iLy.IS_VOICE_MESSAGE | Chunk981631.iLy.SHOULD_SHOW_LINK_NOT_DISCORD_WARNING | Chunk981631.iLy.SUPPRESS_EMBEDS | Chunk981631.iLy.SUPPRESS_NOTIFICATIONS | Chunk981631.iLy.URGENT | Chunk981631.iLy.IS_COMPONENTS_V2;
 
 function d(e) {
-  return e.state !== c.yb.SEND_FAILED && !!c.V$x.FORWARDABLE.has(e.type) && null == e.poll && null == e.activity && null == e.call && null == e.activityInstance && 0 === (0, l.Ge)(e.flags, u) && !0
+  return e.state !== c.yb.SEND_FAILED && !!c.V$x.FORWARDABLE.has(e.type) && null == e.poll && null == e.activity && null == e.call && null == e.activityInstance && 0 === (0, l.Ge)(e.flags, u) && true
 }
 
 function f(e) {
   var t;
-  if (!d(e)) return !1;
-  let n = null == (t = a.Z.getChannel(e.channel_id)) ? void 0 : t.guild_id;
+  if (!d(e)) returnfalse;
+  let n = null == (t = a.Z.getChannel(e.channel_id)) ? true : t.guild_id;
   return !(null != n && o.Z.isChannelOrThreadParentGated(n, e.channel_id))
 }
 
 function _(e) {
   let t = (0, i.e7)([s.Z, o.Z, a.Z], () => {
     var t, n, r;
-    if (null == e) return !0;
-    let i = null == (t = a.Z.getChannel(e.channel_id)) ? void 0 : t.guild_id;
-    if (null != i && (null == (n = s.Z.getGuild(i)) ? void 0 : n.features.has(c.oNc.FORWARDING_DISABLED))) return !0;
+    if (null == e) returntrue;
+    let i = null == (t = a.Z.getChannel(e.channel_id)) ? true : t.guild_id;
+    if (null != i && (null == (n = s.Z.getGuild(i)) ? true : n.features.has(c.oNc.FORWARDING_DISABLED))) returntrue;
     let l = null != i && o.Z.isChannelOrThreadParentGated(i, e.channel_id),
-      u = null != e && (null == (r = a.Z.getChannel(e.channel_id)) ? void 0 : r.isModeratorReportChannel());
+      u = null != e && (null == (r = a.Z.getChannel(e.channel_id)) ? true : r.isModeratorReportChannel());
     return l || u
   });
   return r.useMemo(() => !t && null != e && d(e), [t, e])

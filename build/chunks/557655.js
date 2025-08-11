@@ -1,4 +1,5 @@
 /** Chunk was on web.js **/
+/** chunk id: 557655, original params: e (module,exports,re quire) **/
 "use strict";
 var t = function() {
   this.head = null, this.tail = null
@@ -14,6 +15,6 @@ t.prototype = {
   },
   get: function() {
     var e = this.head;
-    if (e) return null === (this.head = e.next) && (this.tail = null), e.item
+    if (module) return null === (this.head = module.next) && (this.tail = null), module.item
   }
-}, e.exports = t
+}, module.exports = t

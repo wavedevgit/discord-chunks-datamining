@@ -1,45 +1,46 @@
 /** Chunk was on web.js **/
+/** chunk id: 572397, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   J: () => h,
   q: () => m
-}), n(388685);
-var r = n(73800),
-  i = n(442837),
-  o = n(524437),
-  a = n(781391),
-  s = n(740492),
-  l = n(581883),
-  c = n(626135),
-  u = n(238302),
-  d = n(514361),
-  f = n(981631),
-  _ = n(474936),
-  p = n(874893);
+}), require("./388685.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk442837 = require("./442837.js"),
+  Chunk524437 = require("./524437.js"),
+  Chunk781391 = require("./781391.js"),
+  Chunk740492 = require("./740492.js"),
+  Chunk581883 = require("./581883.js"),
+  Chunk626135 = require("./626135.js"),
+  Chunk238302 = require("./238302.js"),
+  Chunk514361 = require("./514361.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk474936 = require("./474936.js"),
+  Chunk874893 = require("./874893.js");
 let h = () => {
-    let e = (0, i.e7)([d.Z], () => d.Z.gradientPreset),
-      t = (0, i.e7)([s.ZP], () => s.ZP.useSystemTheme === p.KW.ON),
-      [n, o] = (0, r.useState)(t);
-    return (0, r.useEffect)(() => {
-      null == e && o(t)
-    }, [e, t]), (0, r.useCallback)(() => {
-      null != e && ((0, u.kj)(), n && (0, a.hi)(p.KW.ON))
-    }, [e, n])
+    let e = (0, Chunk442837.e7)([Chunk514361.Z], () => Chunk514361.Z.gradientPreset),
+      t = (0, Chunk442837.e7)([Chunk740492.ZP], () => Chunk740492.ZP.useSystemTheme === Chunk874893.KW.ON),
+      [n, o] = (0, Chunk73800.useState)(exports);
+    return (0, Chunk73800.useEffect)(() => {
+      null == module && Chunk524437(exports)
+    }, [module, exports]), (0, Chunk73800.useCallback)(() => {
+      null != module && ((0, Chunk238302.kj)(), require && (0, Chunk781391.hi)(Chunk874893.KW.ON))
+    }, [module, require])
   },
   m = () => {
     let {
       previewPaneVariant: e
-    } = (0, i.cj)([d.Z], () => ({
-      previewPaneVariant: d.Z.isPreview ? _.h1.FREE : _.h1.PREMIUM_STANDARD
-    })), t = (0, i.e7)([l.Z], () => {
+    } = (0, Chunk442837.cj)([Chunk514361.Z], () => ({
+      previewPaneVariant: Chunk514361.Z.isPreview ? Chunk474936.h1.FREE : Chunk474936.h1.PREMIUM_STANDARD
+    })), t = (0, Chunk442837.e7)([Chunk581883.Z], () => {
       var e;
-      let t = null == (e = l.Z.settings.appearance) ? void 0 : e.theme;
-      return "default ".concat(t === o.Q2.LIGHT ? f.BRd.LIGHT : f.BRd.DARK)
+      let t = null == (e = Chunk581883.Z.settings.appearance) ? true : module.theme;
+      return "default ".concat(exports === Chunk524437.Q2.LIGHT ? Chunk981631.BRd.LIGHT : Chunk981631.BRd.DARK)
     });
-    return (0, r.useCallback)(n => {
+    return (0, Chunk73800.useCallback)(n => {
       c.default.track(n, {
         preview_pane_variant: e,
         original_theme: t
       })
-    }, [e, t])
+    }, [module, exports])
   }

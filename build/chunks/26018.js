@@ -1,4 +1,5 @@
 /** Chunk was on web.js **/
+/** chunk id: 26018, original params: e (module,exports,re quire) **/
 "use strict";
 var t = "%[a-f0-9]{2}",
   n = RegExp("(" + t + ")|([^%]+?)", "gi"),
@@ -44,7 +45,7 @@ function a(e) {
   }
   return e
 }
-e.exports = function(e) {
+module.exports = function(e) {
   if ("string" != typeof e) throw TypeError("Expected `encodedURI` to be of type `string`, got `" + typeof e + "`");
   try {
     return e = e.replace(/\+/g, " "), decodeURIComponent(e)

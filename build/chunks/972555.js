@@ -1,5 +1,6 @@
 /** Chunk was on web.js **/
-e.exports = function(e) {
+/** chunk id: 972555, original params: e (module,exports,re quire) **/
+module.exports = function(e) {
   let t = {
       className: "number",
       begin: "[1-9][0-9]*",

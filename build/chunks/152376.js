@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 152376, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   C1: () => A,
   Mo: () => N,
   QG: () => C,
@@ -8,30 +9,30 @@ n.d(t, {
   _U: () => w,
   dM: () => R,
   k$: () => T
-}), n(388685);
-var r = n(392711),
-  i = n(524437),
-  o = n(570140),
-  a = n(87051),
-  s = n(367907),
-  l = n(962086),
-  c = n(160404),
-  u = n(149071),
-  d = n(675478),
-  f = n(592125),
-  _ = n(9156),
-  p = n(626135),
-  h = n(630388),
-  m = n(621600),
-  g = n(981631),
-  E = n(526761);
+}), require("./388685.js");
+var Chunk392711 = require("./392711.js"),
+  Chunk524437 = require("./524437.js"),
+  Chunk570140 = require("./570140.js"),
+  Chunk87051 = require("./87051.js"),
+  Chunk367907 = require("./367907.js"),
+  Chunk962086 = require("./962086.js"),
+  Chunk160404 = require("./160404.js"),
+  Chunk149071 = require("./149071.js"),
+  Chunk675478 = require("./675478.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk9156 = require("./9156.js"),
+  Chunk626135 = require("./626135.js"),
+  Chunk630388 = require("./630388.js"),
+  Chunk621600 = require("./621600.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk526761 = require("./526761.js");
 
 function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -69,7 +70,7 @@ function I(e, t, n, r) {
   if (null == e) return;
   if (c.Z.isFullServerPreview(e)) return void(0, l.zS)(e, n ? [t] : [], n ? [] : [t]);
   let i = _.ZP.getChannelIdFlags(e, t);
-  n || (i = (0, h.mB)(i, E.ic.FAVORITED, !1));
+  n || (i = (0, h.mB)(i, E.ic.FAVORITED, false));
   let a = (0, m.I)(e, t),
     d = {
       flags: (0, h.mB)(i, E.ic.OPT_IN_ENABLED, n)
@@ -103,18 +104,18 @@ function T(e, t, n, r) {
   if (null == e) return;
   if (c.Z.isFullServerPreview(e)) {
     (0, l.zS)(e, n ? [t] : [], n ? [] : [t]), (0, l.aq)(e, {
-      optInEnabled: !0
+      optInEnabled: true
     });
     return
   }
   let i = _.ZP.getChannelIdFlags(e, t);
-  n || (i = (0, h.mB)(i, E.ic.FAVORITED, !1));
+  n || (i = (0, h.mB)(i, E.ic.FAVORITED, false));
   let a = (0, m.I)(e, t),
     d = {
       flags: (0, h.mB)(i, E.ic.OPT_IN_ENABLED, n)
     };
   if (!_.ZP.isOptInEnabled(e)) {
-    let n = (0, h.mB)(_.ZP.getGuildFlags(e), E.vc.OPT_IN_CHANNELS_ON, !0);
+    let n = (0, h.mB)(_.ZP.getGuildFlags(e), E.vc.OPT_IN_CHANNELS_ON, true);
     u.Z.saveUserGuildSettingsBulk({
       [e]: {
         channel_overrides: {
@@ -154,15 +155,15 @@ async function S(e, t) {
     updates: t
   })
 }
-let A = (0, r.debounce)((e, t) => S(e, t), 1e3);
+let A = (0, Chunk392711.debounce)((e, t) => S(e, t), 1e3);
 
 function N(e, t) {
-  let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
-    r = arguments.length > 3 ? arguments[3] : void 0;
+  let n = arguments.length > 2 && true !== arguments[2] && arguments[2],
+    r = arguments.length > 3 ? arguments[3] : true;
   if (null == e) return;
   if (c.Z.isFullServerPreview(e)) {
     (0, l.zS)(e, t, []), n && (0, l.aq)(e, {
-      optInEnabled: !0
+      optInEnabled: true
     });
     return
   }
@@ -170,10 +171,10 @@ function N(e, t) {
   if (t.forEach(t => {
       let n = _.ZP.getChannelIdFlags(e, t);
       i[t] = {
-        flags: (0, h.mB)(n, E.ic.OPT_IN_ENABLED, !0)
+        flags: (0, h.mB)(n, E.ic.OPT_IN_ENABLED, true)
       }
     }), n) {
-    let t = (0, h.mB)(_.ZP.getGuildFlags(e), E.vc.OPT_IN_CHANNELS_ON, !0);
+    let t = (0, h.mB)(_.ZP.getGuildFlags(e), E.vc.OPT_IN_CHANNELS_ON, true);
     a.Z.updateGuildAndChannelNotificationSettings(e, {
       flags: t,
       channel_overrides: i
@@ -203,7 +204,7 @@ function C(e, t, n) {
 function R(e, t, n, r) {
   if (null == e || c.Z.isFullServerPreview(e)) return;
   let i = _.ZP.getChannelIdFlags(e, t);
-  !(0, h.yE)(i, E.ic.OPT_IN_ENABLED) && n && (i = (0, h.mB)(i, E.ic.OPT_IN_ENABLED, !0)), a.Z.updateChannelOverrideSettings(e, t, {
+  !(0, h.yE)(i, E.ic.OPT_IN_ENABLED) && n && (i = (0, h.mB)(i, E.ic.OPT_IN_ENABLED, true)), a.Z.updateChannelOverrideSettings(e, t, {
     flags: (0, h.mB)(i, E.ic.FAVORITED, n)
   }, m.UE.favorited(n)), p.default.track(g.rMx.CHANNEL_LIST_UPDATED, v(y({}, (0, s.hH)(e)), {
     action_type: n ? "favorited" : "unfavorited",
@@ -212,7 +213,7 @@ function R(e, t, n, r) {
 }
 
 function P(e) {
-  (0, d.PS)(e, e => (!(0, h.yE)(e.guildOnboardingProgress, i.nI.GUILD_NOTICE_CLEARED) || !!(0, h.yE)(e.guildOnboardingProgress, i.nI.GUILD_NOTICE_SHOWN)) && (e.guildOnboardingProgress = (0, h.pj)(e.guildOnboardingProgress, i.nI.GUILD_NOTICE_CLEARED), e.guildOnboardingProgress = (0, h.mB)(e.guildOnboardingProgress, i.nI.GUILD_NOTICE_SHOWN, !1), !0), d.fy.INFREQUENT_USER_ACTION)
+  (0, d.PS)(e, e => (!(0, h.yE)(e.guildOnboardingProgress, i.nI.GUILD_NOTICE_CLEARED) || !!(0, h.yE)(e.guildOnboardingProgress, i.nI.GUILD_NOTICE_SHOWN)) && (e.guildOnboardingProgress = (0, h.pj)(e.guildOnboardingProgress, i.nI.GUILD_NOTICE_CLEARED), e.guildOnboardingProgress = (0, h.mB)(e.guildOnboardingProgress, i.nI.GUILD_NOTICE_SHOWN, false), true), d.fy.INFREQUENT_USER_ACTION)
 }
 
 function w(e, t) {

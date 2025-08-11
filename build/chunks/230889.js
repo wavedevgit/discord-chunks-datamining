@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 230889, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   nitroTopDividerContainer: "nitroTopDividerContainer_b3fb5f",
   nitroTopDividerUpper: "nitroTopDividerUpper_b3fb5f",
   nitroTopDividerShadow: "nitroTopDividerShadow_b3fb5f",

@@ -1,16 +1,17 @@
 /** Chunk was on web.js **/
+/** chunk id: 97008, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => l
-}), n(415506);
-var r = n(141795),
-  i = n(476326),
-  o = n(956664),
-  a = n(693824);
+}), require("./415506.js");
+var Chunk141795 = require("./141795.js"),
+  Chunk476326 = require("./476326.js"),
+  Chunk956664 = require("./956664.js"),
+  Chunk693824 = require("./693824.js");
 class s {
   toDataUrl(e) {
-    let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : "png",
-      n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : 1;
+    let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : "png",
+      n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : 1;
     return e.toDataURL(t, n)
   }
   async exportCanvas(e, t) {
@@ -36,7 +37,7 @@ class s {
       return new r.nH({
         file: u,
         platform: i.ow.WEB,
-        isThumbnail: !1,
+        isThumbnail: false,
         origin: "unknown:canvas_export"
       }, n)
     }

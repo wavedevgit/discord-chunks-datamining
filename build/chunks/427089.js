@@ -1,5 +1,6 @@
 /** Chunk was on web.js **/
-e.exports = function(e) {
+/** chunk id: 427089, original params: e (module,exports,re quire) **/
+module.exports = function(e) {
   let t = e.regex,
     n = {
       className: "meta",
@@ -51,23 +52,23 @@ e.exports = function(e) {
       className: "class",
       beginKeywords: "class object trait type",
       end: /[:={\[\n;]/,
-      excludeEnd: !0,
+      excludeEnd: true,
       contains: [e.C_LINE_COMMENT_MODE, e.C_BLOCK_COMMENT_MODE, {
         beginKeywords: "extends with",
         relevance: 10
       }, {
         begin: /\[/,
         end: /\]/,
-        excludeBegin: !0,
-        excludeEnd: !0,
+        excludeBegin: true,
+        excludeEnd: true,
         relevance: 0,
         contains: [o, e.C_LINE_COMMENT_MODE, e.C_BLOCK_COMMENT_MODE]
       }, {
         className: "params",
         begin: /\(/,
         end: /\)/,
-        excludeBegin: !0,
-        excludeEnd: !0,
+        excludeBegin: true,
+        excludeEnd: true,
         relevance: 0,
         contains: [o, e.C_LINE_COMMENT_MODE, e.C_BLOCK_COMMENT_MODE]
       }, a]

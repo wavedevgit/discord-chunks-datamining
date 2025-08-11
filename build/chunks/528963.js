@@ -1,19 +1,20 @@
 /** Chunk was on web.js **/
+/** chunk id: 528963, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => a
 });
-var r = n(544891),
-  i = n(570140),
-  o = n(981631);
+var Chunk544891 = require("./544891.js"),
+  Chunk570140 = require("./570140.js"),
+  Chunk981631 = require("./981631.js");
 let a = {
   createChannelFollower: (e, t) => r.tn.post({
     url: o.ANM.CHANNEL_FOLLOWERS(t),
     body: {
       webhook_channel_id: e
     },
-    oldFormErrors: !0,
-    rejectWithError: !1
+    oldFormErrors: true,
+    rejectWithError: false
   }),
   async fetchChannelFollowerStats(e) {
     i.Z.dispatch({
@@ -25,8 +26,8 @@ let a = {
         body: {
           channel_id: e
         },
-        oldFormErrors: !0,
-        rejectWithError: !0
+        oldFormErrors: true,
+        rejectWithError: true
       });
       i.Z.dispatch({
         type: "CHANNEL_FOLLOWER_STATS_FETCH_SUCCESS",

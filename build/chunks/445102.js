@@ -1,10 +1,11 @@
 /** Chunk was on 58703 **/
-n.d(t, {
+/** chunk id: 445102, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => l
 });
-var o = n(311473),
-  r = n(131951),
-  i = n(626135);
+var Chunk311473 = require("./311473.js"),
+  Chunk131951 = require("./131951.js"),
+  Chunk626135 = require("./626135.js");
 async function l(e, t) {
   let {
     rating: n,
@@ -25,9 +26,9 @@ async function l(e, t) {
         var o;
         o = n[t], t in e ? Object.defineProperty(e, t, {
           value: o,
-          enumerable: !0,
-          configurable: !0,
-          writable: !0
+          enumerable: true,
+          configurable: true,
+          writable: true
         }) : e[t] = o
       })
     }
@@ -48,9 +49,9 @@ async function l(e, t) {
     automatic_gain_control_enabled: b.automaticGainControl,
     voice_output_volume: b.outputVolume,
     noise_cancellation_enabled: h,
-    input_device_name: null == p ? void 0 : p.name,
-    output_device_name: null == _ ? void 0 : _.name,
-    video_device_name: null == g ? void 0 : g.name,
+    input_device_name: null == p ? true : p.name,
+    output_device_name: null == _ ? true : _.name,
+    video_device_name: null == g ? true : g.name,
     audio_subsystem: v,
     audio_layer: y,
     automatic_audio_subsystem: b.automaticAudioSubsystem,

@@ -1,18 +1,19 @@
 /** Chunk was on web.js **/
+/** chunk id: 71080, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   EQ: () => d,
   IG: () => _,
   aC: () => c,
   kf: () => f,
   m$: () => u
 });
-var r = n(230711),
-  i = n(197062),
-  o = n(727866),
-  a = n(63063),
-  s = n(981631),
-  l = n(388032),
+var Chunk230711 = require("./230711.js"),
+  Chunk197062 = require("./197062.js"),
+  Chunk727866 = require("./727866.js"),
+  Chunk63063 = require("./63063.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk388032 = require("./388032.js"),
   c = function(e) {
     return e[e.EMPTY_STATE = 0] = "EMPTY_STATE", e[e.ADMINISTRATOR = 1] = "ADMINISTRATOR", e[e.ROLE = 2] = "ROLE", e[e.OWNER = 3] = "OWNER", e[e.MEMBER = 4] = "MEMBER", e[e.USER = 5] = "USER", e[e.GUILD = 6] = "GUILD", e
   }({}),
@@ -98,7 +99,7 @@ function _(e, t, n) {
           case s.d4z.GUILD_CATEGORY:
             return l.t.IjeLur;
           case s.d4z.GUILD_FORUM:
-            return (null == n ? void 0 : n.createPostsDisabled) && !e.isMediaChannel() ? i.Z.getForumChannelPermissionText() : l.t.LG9VAg;
+            return (null == n ? true : n.createPostsDisabled) && !e.isMediaChannel() ? i.Z.getForumChannelPermissionText() : l.t.LG9VAg;
           case s.d4z.GUILD_MEDIA:
             return l.t.LG9VAg;
           case s.d4z.GUILD_ANNOUNCEMENT:
@@ -106,7 +107,7 @@ function _(e, t, n) {
               articleURL: a.Z.getArticleURL(s.BhN.ANNOUNCEMENT_CHANNELS)
             });
           case s.d4z.GUILD_VOICE:
-            return o.Z.getTextInVoiceSendMessageChannelPermissionText(null == n ? void 0 : n.sendMessagesDisabled);
+            return o.Z.getTextInVoiceSendMessageChannelPermissionText(null == n ? true : n.sendMessagesDisabled);
           default:
             return l.t.WQ6zpa
         }
@@ -180,7 +181,7 @@ function _(e, t, n) {
           case s.d4z.GUILD_CATEGORY:
             return l.t["cJRv/v"];
           case s.d4z.GUILD_VOICE:
-            return o.Z.getTextInVoiceReadMessageHistoryChannelPermissionText(null == n ? void 0 : n.readMessageHistoryDisabled);
+            return o.Z.getTextInVoiceReadMessageHistoryChannelPermissionText(null == n ? true : n.readMessageHistoryDisabled);
           case s.d4z.GUILD_FORUM:
           case s.d4z.GUILD_MEDIA:
             return l.t.RqCc7u;

@@ -1,14 +1,15 @@
 /** Chunk was on 92078 **/
-t.d(r, {
+/** chunk id: 153002, original params: n,r,t (module,exports,require) **/
+require.d(exports, {
   e: () => o
 });
 
 function e(n, r, t) {
   return r in n ? Object.defineProperty(n, r, {
     value: t,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : n[r] = t, n
 }
 var o = function() {
@@ -16,34 +17,34 @@ var o = function() {
 
   function r(n, t) {
     if (!(this instanceof r)) throw TypeError("Cannot call a class as a function");
-    e(this, "spec", void 0), e(this, "monitor", void 0), this.spec = n, this.monitor = t
+    e(this, "spec", true), e(this, "monitor", true), this.spec = n, this.monitor = t
   }
   return n = [{
       key: "canDrop",
       value: function() {
         var n = this.spec,
           r = this.monitor;
-        return !n.canDrop || n.canDrop(r.getItem(), r)
+        return !module.canDrop || module.canDrop(exports.getItem(), exports)
       }
     }, {
       key: "hover",
       value: function() {
         var n = this.spec,
           r = this.monitor;
-        n.hover && n.hover(r.getItem(), r)
+        module.hover && module.hover(exports.getItem(), exports)
       }
     }, {
       key: "drop",
       value: function() {
         var n = this.spec,
           r = this.monitor;
-        if (n.drop) return n.drop(r.getItem(), r)
+        if (module.drop) return module.drop(exports.getItem(), exports)
       }
     }],
     function(n, r) {
       for (var t = 0; t < r.length; t++) {
         var e = r[t];
-        e.enumerable = e.enumerable || !1, e.configurable = !0, "value" in e && (e.writable = !0), Object.defineProperty(n, e.key, e)
+        e.enumerable = e.enumerable || false, e.configurable = true, "value" in e && (e.writable = true), Object.defineProperty(n, e.key, e)
       }
-    }(r.prototype, n), r
+    }(exports.prototype, module), exports
 }()

@@ -1,0 +1,78 @@
+/** Chunk was on 22988 **/
+/** chunk id: 509026, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
+  Z: () => h
+});
+var Chunk255367 = require("./255367.js");
+require("./73800.js");
+var Chunk442837 = require("./442837.js"),
+  Chunk481060 = require("./481060.js"),
+  Chunk471613 = require("./471613.js"),
+  Chunk29605 = require("./29605.jsx"),
+  Chunk345861 = require("./345861.jsx"),
+  Chunk723047 = require("./723047.js"),
+  Chunk443106 = require("./443106.js"),
+  Chunk796814 = require("./796814.js"),
+  Chunk388032 = require("./388032.jsx");
+
+function g(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      var r;
+      r = n[t], t in e ? Object.defineProperty(e, t, {
+        value: r,
+        enumerable: true,
+        configurable: true,
+        writable: true
+      }) : e[t] = r
+    })
+  }
+  return e
+}
+
+function p(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
+    var n = Object.keys(e);
+    if (Object.getOwnPropertySymbols) {
+      var r = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, r)
+    }
+    return n
+  })(Object(t)).forEach(function(n) {
+    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+  }), e
+}
+
+function h(e) {
+  let {
+    guild: t
+  } = e, h = (0, i.e7)([a.Z], () => a.Z.isUploadingEmoji()), f = (0, u.Z)(t.id), b = (0, d.Z)(t) - f.length, x = (0, c.mY)();
+  return <l.hjN title={m.intl.string(m.t.LDT0Q0)} disabled={x}>{<l.R94 type={l.R94.Types.DESCRIPTION} disabled={x}>{m.intl.format(m.t.H9Jxp6, {
+        maxSlots: (0, d.Z)(t)
+      })}</l.R94>}{<l.LZC size={16} />}{<o.Z onChange={(e, i) => {
+        null != e && null != i && (0, l.ZDy)(async () => {
+          let {
+            CreateEmojiWithRolesModal: l
+          } = await n.e("9007").then(n.bind(n, 604623));
+          return n => (0, r.jsx)(l, p(g({}, n), {
+            data: e,
+            file: i,
+            guildId: t.id
+          }))
+        })
+      }} buttonCTA={m.intl.string(m.t.AuPtoq)} submitting={h} disabled={x || h || 0 === b} />}{<l.LZC size={24} />}{<s.L3 title={m.intl.string(m.t.lu1ZQ0)} maxSlots={(0, d.Z)(t)} emojiCount={f.length} />}{<s.FT guild={t} emojis={f} onEdit={(e, t) => {
+        (0, l.ZDy)(async () => {
+          let {
+            UpdateEmojiRolesModal: i
+          } = await n.e("9007").then(n.bind(n, 604623));
+          return n => (0, r.jsx)(i, p(g({}, n), {
+            emoji: e,
+            guildId: t
+          }))
+        })
+      }} editingDisabled={x} />}</l.hjN>
+}

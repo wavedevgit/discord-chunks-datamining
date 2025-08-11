@@ -1,20 +1,21 @@
 /** Chunk was on 45620 **/
+/** chunk id: 780475, original params: e,t,n (module,exports,require) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   EB: () => h,
   MV: () => f,
   q3: () => b
-}), n(388685);
-var r = n(73800),
-  l = n(442837),
-  a = n(100527),
-  i = n(906732),
-  o = n(626135),
-  s = n(74538),
-  c = n(328347),
-  u = n(215023),
-  d = n(981631),
-  p = n(474936);
+}), require("./388685.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk442837 = require("./442837.js"),
+  Chunk100527 = require("./100527.js"),
+  Chunk906732 = require("./906732.js"),
+  Chunk626135 = require("./626135.js"),
+  Chunk74538 = require("./74538.js"),
+  Chunk328347 = require("./328347.js"),
+  Chunk215023 = require("./215023.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk474936 = require("./474936.js");
 let g = e => {
     switch (e) {
       case u.AW.ORBS:
@@ -63,7 +64,7 @@ let g = e => {
         source: r,
         page_session_id: e,
         page_type: t === u.AW.CATALOG ? "full" : t,
-        category: t === u.AW.HOME ? void 0 : n
+        category: t === u.AW.HOME ? true : n
       })
     }, [i, e, t, n, c, l, a, s, p])
   },

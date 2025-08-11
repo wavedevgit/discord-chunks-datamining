@@ -1,8 +1,9 @@
 /** Chunk was on web.js **/
-e.exports = function(e) {
+/** chunk id: 131691, original params: e (module,exports,re quire) **/
+module.exports = function(e) {
   return {
     name: "N1QL",
-    case_insensitive: !0,
+    case_insensitive: true,
     contains: [{
       beginKeywords: "build create index delete drop explain infer|10 insert merge prepare select update upsert|10",
       end: /;/,

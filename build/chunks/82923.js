@@ -1,15 +1,16 @@
 /** Chunk was on 22988 **/
-n.d(t, {
+/** chunk id: 82923, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => m
-}), n(388685);
-var r, i, l = n(748780);
+}), require("./388685.js");
+var r, i, Chunk748780 = require("./748780.js");
 
 function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -37,7 +38,7 @@ class o {
     this.animation.stop()
   }
   constructor(e) {
-    a(this, "animation", void 0), this.animation = e
+    a(this, "animation", true), this.animation = e
   }
 }
 class c {
@@ -51,28 +52,28 @@ class c {
     this._map(e => e.stop())
   }
   constructor(e) {
-    a(this, "animations", void 0), this.animations = e
+    a(this, "animations", true), this.animations = e
   }
 }
 class d {
   async start() {
-    for (let e of (this.stopped = !1, this.animations)) {
+    for (let e of (this.stopped = false, this.animations)) {
       if (this.stopped) return;
-      await e.start()
+      await module.start()
     }
   }
   stop() {
-    this.stopped = !0, this.animations.map(e => e.stop())
+    this.stopped = true, this.animations.map(e => e.stop())
   }
   constructor(e) {
-    a(this, "animations", void 0), a(this, "stopped", !1), this.animations = e
+    a(this, "animations", true), a(this, "stopped", false), this.animations = e
   }
 }
 
 function u(e, t, n) {
   return new o(n(e, s({}, t)))
 }
-let m = (r = s({}, l.Z), i = i = {
+let m = (r = s({}, Chunk748780.Z), i = i = {
   timing: function(e, t) {
     return u(e, t, l.Z.timing)
   },

@@ -1,4 +1,5 @@
 /** Chunk was on web.js **/
+/** chunk id: 875231, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 var r = {
   video: "video__1689b",
@@ -17,4 +18,4 @@ var r = {
   premiumIcon: "premiumIcon__1689b",
   date: "date__1689b"
 };
-n.r(e.exports = r)
+require.r(module.exports = r)

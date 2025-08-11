@@ -1,17 +1,18 @@
 /** Chunk was on web.js **/
+/** chunk id: 421673, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   cK: () => N
-}), n(642613);
-var r = n(658722),
-  i = n.n(r),
-  o = n(954955),
-  a = n.n(o),
-  s = n(339085),
-  l = n(633302),
-  c = n(626135),
-  u = n(242291),
-  d = n(981631);
+}), require("./642613.js");
+var Chunk658722 = require("./658722.js"),
+  i = require.n(Chunk658722),
+  Chunk954955 = require("./954955.js"),
+  a = require.n(Chunk954955),
+  Chunk339085 = require("./339085.js"),
+  Chunk633302 = require("./633302.js"),
+  Chunk626135 = require("./626135.js"),
+  Chunk242291 = require("./242291.js"),
+  Chunk981631 = require("./981631.js");
 let f = 100,
   _ = 8,
   p = 7,
@@ -48,14 +49,14 @@ function A(e, t, n, r) {
   let a = 0,
     c = t.name.toLocaleLowerCase(),
     d = null != t.emojiId ? s.ZP.getCustomEmojiById(t.emojiId) : null,
-    O = null != t.emojiName ? l.ZP.convertSurrogateToName(t.emojiName, !1) : null,
+    O = null != t.emojiName ? l.ZP.convertSurrogateToName(t.emojiName, false) : null,
     v = null != O ? l.ZP.getByName(O) : null,
-    I = null != d ? [d.name] : null != (o = null == v ? void 0 : v.names) ? o : [];
+    I = null != d ? [d.name] : null != (o = null == v ? true : v.names) ? o : [];
   return e === c && (a += _), I.includes(e) && (a += p), c.startsWith(e) && (a += h), I.some(t => t.startsWith(e)) && (a += m), c.endsWith(e) && (a += g), I.some(t => t.endsWith(e)) && (a += E), i()(e, t.name.toLocaleLowerCase()) && (a += b), I.some(t => i()(e, t)) && (a += y), a > 0 && (0, u.Nq)(n, t, r) && (a += f), a
 }
 
 function N(e, t, n, r, i) {
-  let o = t.reduce((t, o) => (v(i, null == r ? void 0 : r.id), t[o.soundId] = A(e.toLocaleLowerCase(), o, n, r), t), {}),
+  let o = t.reduce((t, o) => (v(i, null == r ? true : r.id), t[o.soundId] = A(e.toLocaleLowerCase(), o, n, r), t), {}),
     a = t.filter(e => o[e.soundId] > 0).sort((e, t) => o[t.soundId] - o[e.soundId]);
-  return I(a, i, null == r ? void 0 : r.id, e), a
+  return I(a, i, null == r ? true : r.id, e), a
 }

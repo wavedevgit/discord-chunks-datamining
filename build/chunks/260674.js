@@ -1,11 +1,12 @@
 /** Chunk was on web.js **/
+/** chunk id: 260674, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-var r = n(815329),
-  i = n(48511),
-  o = n(323240),
-  a = n(579040),
-  s = n(594077) || a || o;
-e.exports = function() {
+var Chunk815329 = require("./815329.js"),
+  Chunk48511 = require("./48511.js"),
+  Chunk323240 = require("./323240.js"),
+  Chunk579040 = require("./579040.js"),
+  s = require("./594077.js") || Chunk579040 || Chunk323240;
+module.exports = function() {
   var e, t = {
     assert: function(e) {
       if (!t.has(e)) throw new r("Side channel does not contain " + i(e))
@@ -23,5 +24,5 @@ e.exports = function() {
       e || (e = s()), e.set(t, n)
     }
   };
-  return t
+  return exports
 }

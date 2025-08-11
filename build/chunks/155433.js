@@ -1,10 +1,11 @@
 /** Chunk was on 75708 **/
-n.d(t, {
+/** chunk id: 155433, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   P: () => s
 });
-var i = n(481060),
-  r = n(388032);
+var Chunk481060 = require("./481060.js"),
+  Chunk388032 = require("./388032.js");
 
 function s() {
-  (0, i.showToast)((0, i.createToast)(r.intl.string(r.t["TGg/2t"]), i.ToastType.FAILURE))
+  (0, Chunk481060.showToast)((0, Chunk481060.createToast)(Chunk388032.intl.string(Chunk388032.t["TGg/2t"]), Chunk481060.ToastType.FAILURE))
 }

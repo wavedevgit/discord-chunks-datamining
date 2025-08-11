@@ -1,26 +1,27 @@
 /** Chunk was on web.js **/
+/** chunk id: 786074, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => o
 });
-var r = n(490983),
-  i = n(388032);
+var Chunk490983 = require("./490983.js"),
+  Chunk388032 = require("./388032.jsx");
 let o = {
   MENTION_EVERYONE: () => ({
     test: "everyone",
     text: "@everyone",
-    description: i.intl.string(i.t.lHC4z8)
+    description: Chunk388032.intl.string(Chunk388032.t.lHC4z8)
   }),
   MENTION_HERE: () => ({
     test: "here",
     text: "@here",
-    description: i.intl.string(i.t.OE6mOz)
+    description: Chunk388032.intl.string(Chunk388032.t.OE6mOz)
   }),
   MENTION_GAME: () => ({
     test: "game",
     text: "@game",
     inlineAutocompleteType: "gameMentionInput",
-    description: i.intl.string(i.t["1kR88/"])
+    description: Chunk388032.intl.string(Chunk388032.t["1kR88/"])
   }),
-  LAUNCHABLE_APPLICATIONS: () => r.Z.launchableApplicationViewItems
+  LAUNCHABLE_APPLICATIONS: () => Chunk490983.Z.launchableApplicationViewItems
 }

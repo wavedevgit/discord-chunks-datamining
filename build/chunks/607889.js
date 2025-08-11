@@ -1,16 +1,17 @@
 /** Chunk was on web.js **/
+/** chunk id: 607889, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => s
 });
-var r = n(217942);
+var Chunk217942 = require("./217942.js");
 
 function i(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 let o = 500,
@@ -20,10 +21,10 @@ class s {
     if (null == this.animationDetails) return this.value;
     let e = performance.now() - this.animationDetails.animationStart,
       t = this.value < this.animationDetails.lastValue ? a : o;
-    return e > t ? (this.animationDetails = null, this.value) : this.value < this.animationDetails.lastValue ? r.easeOutQuint(e, this.animationDetails.lastValue, this.value, t) : r.easeOutBack(e, this.animationDetails.lastValue, this.value, t, 4)
+    return module > exports ? (this.animationDetails = null, this.value) : this.value < this.animationDetails.lastValue ? Chunk217942.easeOutQuint(module, this.animationDetails.lastValue, this.value, exports) : Chunk217942.easeOutBack(module, this.animationDetails.lastValue, this.value, exports, 4)
   }
   animateTo(e) {
-    this.isReset = !1, this.value !== e && (this.animationDetails = {
+    this.isReset = false, this.value !== e && (this.animationDetails = {
       lastValue: this.value,
       animationStart: performance.now()
     }, this.value = e)
@@ -32,9 +33,9 @@ class s {
     return null != this.animationDetails
   }
   reset() {
-    this.animateTo(0), this.isReset = !0
+    this.animateTo(0), this.isReset = true
   }
   constructor(e) {
-    i(this, "value", void 0), i(this, "animationDetails", void 0), i(this, "isReset", void 0), this.value = e, this.animationDetails = null, this.isReset = !1
+    i(this, "value", true), i(this, "animationDetails", true), i(this, "isReset", true), this.value = e, this.animationDetails = null, this.isReset = false
   }
 }

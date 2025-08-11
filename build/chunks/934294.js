@@ -1,5 +1,6 @@
 /** Chunk was on web.js **/
-e.exports = function(e) {
+/** chunk id: 934294, original params: e (module,exports,re quire) **/
+module.exports = function(e) {
   let t = e.regex,
     n = "[A-Za-z_][0-9A-Za-z_]*",
     r = {
@@ -40,14 +41,14 @@ e.exports = function(e) {
   let c = s.contains.concat([e.C_BLOCK_COMMENT_MODE, e.C_LINE_COMMENT_MODE]);
   return {
     name: "ArcGIS Arcade",
-    case_insensitive: !0,
+    case_insensitive: true,
     keywords: r,
     contains: [e.APOS_STRING_MODE, e.QUOTE_STRING_MODE, l, e.C_LINE_COMMENT_MODE, e.C_BLOCK_COMMENT_MODE, o, a, {
       begin: /[{,]\s*/,
       relevance: 0,
       contains: [{
         begin: n + "\\s*:",
-        returnBegin: !0,
+        returnBegin: true,
         relevance: 0,
         contains: [{
           className: "attr",
@@ -61,7 +62,7 @@ e.exports = function(e) {
       contains: [e.C_LINE_COMMENT_MODE, e.C_BLOCK_COMMENT_MODE, e.REGEXP_MODE, {
         className: "function",
         begin: "(\\(.*?\\)|" + n + ")\\s*=>",
-        returnBegin: !0,
+        returnBegin: true,
         end: "\\s*=>",
         contains: [{
           className: "params",
@@ -72,8 +73,8 @@ e.exports = function(e) {
           }, {
             begin: /\(/,
             end: /\)/,
-            excludeBegin: !0,
-            excludeEnd: !0,
+            excludeBegin: true,
+            excludeEnd: true,
             keywords: r,
             contains: c
           }]
@@ -83,7 +84,7 @@ e.exports = function(e) {
     }, {
       beginKeywords: "function",
       end: /\{/,
-      excludeEnd: !0,
+      excludeEnd: true,
       contains: [e.inherit(e.TITLE_MODE, {
         className: "title.function",
         begin: n
@@ -91,8 +92,8 @@ e.exports = function(e) {
         className: "params",
         begin: /\(/,
         end: /\)/,
-        excludeBegin: !0,
-        excludeEnd: !0,
+        excludeBegin: true,
+        excludeEnd: true,
         contains: c
       }],
       illegal: /\[|%/

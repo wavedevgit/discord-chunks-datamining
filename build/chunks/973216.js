@@ -1,19 +1,20 @@
 /** Chunk was on web.js **/
+/** chunk id: 973216, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-var r = n(98405),
-  i = n(527160),
-  o = n(914331),
-  a = n(77826),
-  s = n(967333);
-r({
+var Chunk98405 = require("./98405.js"),
+  Chunk527160 = require("./527160.js"),
+  Chunk914331 = require("./914331.js"),
+  Chunk77826 = require("./77826.js"),
+  Chunk967333 = require("./967333.js");
+Chunk98405({
   target: "Array",
-  proto: !0
+  proto: true
 }, {
   at: function(e) {
     var t = i(this),
       n = o(t),
       r = a(e),
       s = r >= 0 ? r : n + r;
-    return s < 0 || s >= n ? void 0 : t[s]
+    return s < 0 || s >= n ? true : t[s]
   }
-}), s("at")
+}), Chunk967333("at")

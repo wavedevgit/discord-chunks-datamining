@@ -1,37 +1,38 @@
 /** Chunk was on web.js **/
+/** chunk id: 177692, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Mn: () => d
-}), n(539854), n(415506);
-var r = n(668757),
-  i = n(511495),
-  o = n(710845),
-  a = n(626135),
-  s = n(894276),
-  l = n(981631);
-let c = new o.Z("libdiscore"),
-  u = !1;
+}), require("./539854.js"), require("./415506.js");
+var Chunk668757 = require("./668757.js"),
+  Chunk511495 = require("./511495.js"),
+  Chunk710845 = require("./710845.js"),
+  Chunk626135 = require("./626135.js"),
+  Chunk894276 = require("./894276.js"),
+  Chunk981631 = require("./981631.js");
+let c = new Chunk710845.Z("libdiscore"),
+  u = false;
 async function d() {
   if (!u) {
     try {
-      await (0, i.e)();
-      let e = (0, r.rs)(6, 7);
-      c.info("The answer for life the universe and everything is:", e), f()
+      await (0, Chunk511495.e)();
+      let e = (0, Chunk668757.rs)(6, 7);
+      c.info("The answer for life the universe and everything is:", module), f()
     } catch (e) {
-      p(e)
+      p(module)
     }
-    u = !0
+    u = true
   }
 }
 
 function f() {
   let e = [];
-  s.Re.forEach(t => {
+  Chunk894276.Re.forEach(t => {
     let n = t.getEnabledFeatureName();
     null != n && e.push(n)
-  }), a.default.track(l.rMx.LIBDISCORE_LOADED, {
-    success: !0,
-    experimental_features: e
+  }), Chunk626135.default.track(Chunk981631.rMx.LIBDISCORE_LOADED, {
+    success: true,
+    experimental_features: module
   })
 }
 
@@ -45,7 +46,7 @@ function p(e) {
   c.error("Failed to execute smoke test:", e);
   let t = _(e);
   a.default.track(l.rMx.LIBDISCORE_LOADED, {
-    success: !1,
+    success: false,
     error: t
   })
 }

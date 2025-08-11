@@ -1,16 +1,17 @@
 /** Chunk was on web.js **/
+/** chunk id: 587177, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => o
 });
-var r = n(311850);
+var Chunk311850 = require("./311850.js");
 
 function i(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 class o {
@@ -33,6 +34,6 @@ class o {
     })
   }
   constructor(e) {
-    i(this, "prices", void 0), i(this, "type", void 0), i(this, "premiumType", void 0), i(this, "name", void 0), i(this, "skuId", void 0), i(this, "summary", void 0), this.prices = e.prices, this.type = e.type, this.premiumType = e.premiumType, this.name = e.name, this.skuId = e.skuId, this.summary = e.summary
+    i(this, "prices", true), i(this, "type", true), i(this, "premiumType", true), i(this, "name", true), i(this, "skuId", true), i(this, "summary", true), this.prices = e.prices, this.type = e.type, this.premiumType = e.premiumType, this.name = e.name, this.skuId = e.skuId, this.summary = e.summary
   }
 }

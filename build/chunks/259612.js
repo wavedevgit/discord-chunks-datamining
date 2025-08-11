@@ -1,10 +1,11 @@
 /** Chunk was on web.js **/
+/** chunk id: 259612, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   R: () => o,
   W: () => i
-}), n(415506);
-var r = n(356659);
+}), require("./415506.js");
+var Chunk356659 = require("./356659.js");
 
 function i(e) {
   let t = document.createElement("canvas");
@@ -15,7 +16,7 @@ function i(e) {
 }
 async function o(e, t) {
   let n = document.createElement("video");
-  n.muted = !0, n.src = e, n.currentTime = t, await n.play(), n.pause();
+  n.muted = true, n.src = e, n.currentTime = t, await n.play(), n.pause();
   let i = Math.min(r.f_ / n.videoWidth, r.wD / n.videoHeight),
     o = n.videoWidth * i,
     a = n.videoHeight * i,

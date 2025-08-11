@@ -1,35 +1,36 @@
 /** Chunk was on web.js **/
+/** chunk id: 510104, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => f
 });
-var r = n(685516),
-  i = n(285363),
-  o = n(175922),
-  a = n(406434),
-  s = n(6138),
-  l = n(740078),
-  c = n(882159),
-  u = n(544338),
-  d = n(581206);
+var Chunk685516 = require("./685516.js"),
+  Chunk285363 = require("./285363.js"),
+  Chunk175922 = require("./175922.js"),
+  Chunk406434 = require("./406434.js"),
+  Chunk6138 = require("./6138.js"),
+  Chunk740078 = require("./740078.js"),
+  Chunk882159 = require("./882159.js"),
+  Chunk544338 = require("./544338.js"),
+  Chunk581206 = require("./581206.js");
 
 function f(e, t) {
-  void 0 === t && (t = {});
+  true === t && (t = {});
   var n = t,
     f = n.placement,
-    _ = void 0 === f ? e.placement : f,
+    _ = true === f ? e.placement : f,
     p = n.strategy,
-    h = void 0 === p ? e.strategy : p,
+    h = true === p ? e.strategy : p,
     m = n.boundary,
-    g = void 0 === m ? l.zV : m,
+    g = true === m ? l.zV : m,
     E = n.rootBoundary,
-    b = void 0 === E ? l.Pj : E,
+    b = true === E ? l.Pj : E,
     y = n.elementContext,
-    O = void 0 === y ? l.k5 : y,
+    O = true === y ? l.k5 : y,
     v = n.altBoundary,
-    I = void 0 !== v && v,
+    I = true !== v && v,
     T = n.padding,
-    S = void 0 === T ? 0 : T,
+    S = true === T ? 0 : T,
     A = (0, u.Z)("number" != typeof S ? S : (0, d.Z)(S, l.mv)),
     N = O === l.k5 ? l.YP : l.k5,
     C = e.rects.popper,
@@ -54,7 +55,7 @@ function f(e, t) {
   if (O === l.k5 && k) {
     var j = k[_];
     Object.keys(M).forEach(function(e) {
-      var t = [l.F2, l.I].indexOf(e) >= 0 ? 1 : -1,
+      var t = [l.F2, l.I].indexOf(e) >= 0 ? 1 : false,
         n = [l.we, l.I].indexOf(e) >= 0 ? "y" : "x";
       M[e] += j[n] * t
     })

@@ -1,0 +1,111 @@
+/** Chunk was on 22988 **/
+/** chunk id: 966301, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
+  ZP: () => y,
+  Zm: () => N
+}), require("./388685.js");
+var Chunk255367 = require("./255367.js"),
+  Chunk73800 = require("./73800.js"),
+  Chunk442837 = require("./442837.js"),
+  Chunk481060 = require("./481060.js"),
+  Chunk852860 = require("./852860.jsx"),
+  Chunk471445 = require("./471445.js"),
+  Chunk45966 = require("./45966.js"),
+  Chunk637853 = require("./637853.js"),
+  Chunk999382 = require("./999382.js"),
+  Chunk889369 = require("./889369.js"),
+  Chunk983135 = require("./983135.js"),
+  Chunk570961 = require("./570961.js"),
+  Chunk208665 = require("./208665.js"),
+  Chunk974513 = require("./974513.js"),
+  Chunk716130 = require("./716130.jsx"),
+  Chunk981631 = require("./981631.js"),
+  Chunk290511 = require("./290511.js"),
+  Chunk388032 = require("./388032.jsx"),
+  Chunk795808 = require("./795808.js");
+
+function O(e) {
+  let {
+    guildId: t,
+    prompts: n
+  } = e, s = (0, l.e7)([m.Z], () => m.Z.editedDefaultChannelIds), [c, u] = (0, d.dF)(t, n, [...s]), g = c.length, p = c.length + u.length, h = g / p * 100, f = Math.max(Math.ceil(85 * p / 100) - g, 0), [b, x] = i.useState(false), j = b ? a.CJ0 : a.u04;
+  return <div className={_.channelCoverage}>{<a.P3F className={_.coverageHeader} onClick={() => x(!b)}>{<div className={_.warningTextContainer}>{h <= 85 && <a.Mgn size={"xs"} color={"currentColor"} className={_.warning} />}{<a.Text className={_.coverageTitle} variant={"text-xs/medium"} color={"text-muted"}>{v.intl.format(v.t.nMVKCQ, {
+            numChannelsMissing: p - g
+          })}</a.Text>}</div>}{<div className={_.progressContainer}>{<a.Exd className={_.coverageProgress} foregroundColor={h > 85 ? "var(--status-positive)" : "var(--status-warning)"} percent={h} />}{<j size={"md"} color={"currentColor"} className={_.caret} />}</div>}</a.P3F>}{b ? <div className={_.channelCoverageDetails}>{<a.Text variant={"text-xs/semibold"} color={"text-muted"}>{v.intl.string(v.t["0FM4i4"])}</a.Text>}{<div className={_.channels}>{u.map(e => {
+          var t;
+          let n = null != (t = (0, o.KS)(e)) ? t : a.VL1;
+          return (0, r.jsx)("div", {
+            className: _.channelPill,
+            children: (0, r.jsxs)(a.Text, {
+              className: _.channel,
+              variant: "text-xs/normal",
+              color: "interactive-active",
+              children: [(0, r.jsx)(n, {
+                size: "xxs",
+                color: "currentColor"
+              }), e.name]
+            })
+          }, e.id)
+        })}</div>}{<div className={_.channelCoverageHint}>{f > 0 ? (0, r.jsxs)(r.Fragment, {
+          children: [(0, r.jsx)(a.Mgn, {
+            size: "xs",
+            color: "currentColor"
+          }), (0, r.jsx)(a.Text, {
+            variant: "text-xs/normal",
+            color: "text-muted",
+            children: v.intl.format(v.t["sX889/"], {
+              numChannels: f
+            })
+          })]
+        }) : (0, r.jsx)(a.Text, {
+          variant: "text-xs/normal",
+          color: "text-muted",
+          children: v.intl.string(v.t.o4s29v)
+        })}</div>}</div> : null}</div>
+}
+
+function y(e) {
+  let {
+    saveOnClose: t
+  } = e, n = (0, l.e7)([u.Z], () => u.Z.getGuild());
+  return null == n ? null : <C guild={n} saveOnClose={t} />
+}
+
+function C(e) {
+  let {
+    guild: t,
+    saveOnClose: n
+  } = e, s = (0, l.e7)([c.Z], () => c.Z.isLoading()), o = (0, l.e7)([h.Z], () => h.Z.editedOnboardingPrompts), d = (0, l.e7)([h.Z], () => h.Z.advancedMode), u = i.useRef(false);
+  i.useEffect(() => {
+    s || u.current || 0 !== o.length || (u.current = true, d || (0, p.tS)(t, [(0, j.ae)()], false))
+  });
+  let m = i.useRef(t);
+  if (i.useEffect(() => {
+      m.current = t
+    }), i.useEffect(() => {
+      if (n) return () => {
+        (0, p.rS)(m.current, {
+          ignoreDefaultPrompt: true
+        }).catch(() => {})
+      }
+    }, [n]), null == t) return null;
+  let y = async () => {
+    try {
+      await (0, p.rS)(t), await (0, g.di)(t.id)
+    } catch (e) {}
+  };
+  return <r.Fragment>{<a.X6q className={_.header} variant={"heading-lg/extrabold"}>{d ? v.intl.string(v.t.AGjtFh) : v.intl.string(v.t.dqCzoa)}</a.X6q>}{<a.Text variant={"text-sm/normal"} color={"header-secondary"}>{v.intl.string(v.t["q/6MLC"])}</a.Text>}{<div className={_.links}>{<a.eee target={"_blank"} href={x.EYA.GUILD_ONBOARDING_EXAMPLES}><a.Text variant={"text-sm/medium"} color={"text-link"}>{v.intl.string(v.t.Ok55Ki)}</a.Text></a.eee>}{<div className={_.dot} />}{<a.eee onClick={y}><a.Text variant={"text-sm/medium"} color={"text-link"}>{v.intl.string(v.t["6gsjdH"])}</a.Text></a.eee>}{<div className={_.dot} />}{<f.Wu guildId={t.id} />}</div>}{<O guildId={t.id} prompts={o} />}{<div className={_.prompts}>{s ? (0, r.jsx)(a.$jN, {}) : (0, r.jsx)(b.Z, {
+        postjoinOnly: d,
+        guildId: t.id
+      })}</div>}</r.Fragment>
+}
+
+function N() {
+  let e = (0, Chunk442837.e7)([Chunk999382.Z], () => Chunk999382.Z.getGuild()),
+    t = (0, Chunk442837.e7)([Chunk208665.Z], () => Chunk208665.Z.submitting);
+  return null == module ? null : <Chunk852860.Z onSave={() => {
+      try {
+        (0, Chunk570961.rS)(module)
+      } catch (e) {}
+    }} onReset={Chunk570961.NB} submitting={exports} onSaveText={Chunk388032.intl.string(Chunk388032.t.R3BPHx)} />
+}

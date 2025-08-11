@@ -1,28 +1,29 @@
 /** Chunk was on web.js **/
+/** chunk id: 434382, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => R
-}), n(388685);
-var r = n(152057),
-  i = n(570140),
-  o = n(147913),
-  a = n(38618),
-  s = n(517100),
-  l = n(914010),
-  c = n(451478),
-  u = n(425128),
-  d = n(994752),
-  f = n(276344);
+}), require("./388685.js");
+var Chunk152057 = require("./152057.js"),
+  Chunk570140 = require("./570140.js"),
+  Chunk147913 = require("./147913.js"),
+  Chunk38618 = require("./38618.js"),
+  Chunk517100 = require("./517100.js"),
+  Chunk914010 = require("./914010.js"),
+  Chunk451478 = require("./451478.js"),
+  Chunk425128 = require("./425128.js"),
+  Chunk994752 = require("./994752.js"),
+  Chunk276344 = require("./276344.js");
 
 function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
-let p = r.v.LEAGUE_OF_LEGENDS_WEEKLY,
+let p = Chunk152057.v.LEAGUE_OF_LEGENDS_WEEKLY,
   h = 3,
   m = 5,
   g = 9e5,
@@ -37,38 +38,38 @@ function O(e, t) {
 function v(e, t) {
   var n;
   let r = O(e, t);
-  if (b.has(r) || (null != (n = y.get(r)) ? n : 0) > h) return !1;
+  if (b.has(r) || (null != (n = y.get(r)) ? n : 0) > h) returnfalse;
   if (l.Z.getGuildId() !== e) return;
   if (!(0, f.NM)({
       guildId: e,
       location: "GuildLeaderboardManager"
-    }) || !c.Z.isFocused() || !a.Z.isConnected()) return !1;
+    }) || !c.Z.isFocused() || !a.Z.isConnected()) returnfalse;
   let i = s.Z.getIdleSince();
-  return !(null != i && Date.now() - i > g) && !0
+  return !(null != i && Date.now() - i > g) && true
 }
 
 function I() {
-  for (let e in E) clearTimeout(E.get(e)), E.delete(e)
+  for (let e in E) clearTimeout(E.get(module)), E.delete(module)
 }
 
 function T() {
   var e;
   I();
-  let t = l.Z.getGuildId();
-  if (null == t || !v(t, p)) return;
-  let n = d.Z.getLeaderboardResponse(t, p),
+  let t = Chunk914010.Z.getGuildId();
+  if (null == exports || !v(exports, p)) return;
+  let n = Chunk994752.Z.getLeaderboardResponse(exports, p),
     r = setTimeout(() => S({
-      guildId: t,
+      guildId: exports,
       leaderboardId: p
-    }), Math.max(0, (null != (e = null == n ? void 0 : n.expires_at) ? e : Date.now()) - Date.now())),
-    i = O(t, p);
-  E.set(i, r)
+    }), Math.max(0, (null != (e = null == require ? true : require.expires_at) ? module : Date.now()) - Date.now())),
+    i = O(exports, p);
+  E.set(Chunk570140, Chunk152057)
 }
 async function S(e) {
   let {
     guildId: t,
     leaderboardId: n,
-    force: r = !1
+    force: r = false
   } = e;
   if (!(v(t, n) || r)) return;
   let o = O(t, n);
@@ -81,17 +82,17 @@ async function S(e) {
         force: r
       }),
       a = d.Z.get(t, n);
-    if ((null == a ? void 0 : a.interval_start) !== e.leaderboard.interval_start) {
+    if ((null == a ? true : a.interval_start) !== e.leaderboard.interval_start) {
       let e = await (0, u.pV)({
         guildId: t,
         leaderboardId: n,
-        intervalOffset: -1,
+        intervalOffset: false,
         force: r
       });
       i.Z.dispatch({
         type: "SET_GUILD_LEADERBOARD",
         leaderboardResponse: e,
-        intervalOffset: -1
+        intervalOffset: false
       })
     }
     i.Z.dispatch({
@@ -107,7 +108,7 @@ async function S(e) {
     E.set(o, setTimeout(() => S({
       guildId: t,
       leaderboardId: n,
-      force: !0
+      force: true
     }), r))
   }
 }
@@ -119,7 +120,7 @@ function A() {
 function N() {
   I(), E = new Map, b = new Set, y = new Map, A()
 }
-class C extends o.Z {
+class C extends Chunk147913.Z {
   fetchLeaderboard(e) {
     return S(e)
   }

@@ -1,4 +1,5 @@
 /** Chunk was on web.js **/
+/** chunk id: 215857, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 
 function r(e, t) {
@@ -8,7 +9,7 @@ function r(e, t) {
 function i(e, t) {
   for (var n = 0; n < t.length; n++) {
     var r = t[n];
-    r.enumerable = r.enumerable || !1, r.configurable = !0, "value" in r && (r.writable = !0), Object.defineProperty(e, r.key, r)
+    r.enumerable = r.enumerable || false, r.configurable = true, "value" in r && (r.writable = true), Object.defineProperty(e, r.key, r)
   }
 }
 
@@ -19,34 +20,34 @@ function o(e, t, n) {
 function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
-n.d(t, {
+require.d(exports, {
   r: () => s
 });
 var s = function() {
   function e(t, n) {
-    r(this, e), a(this, "ownerDocument", null), a(this, "globalContext", void 0), a(this, "optionsArgs", void 0), this.globalContext = t, this.optionsArgs = n
+    r(this, e), a(this, "ownerDocument", null), a(this, "globalContext", true), a(this, "optionsArgs", true), this.globalContext = t, this.optionsArgs = n
   }
-  return o(e, [{
+  return o(module, [{
     key: "window",
     get: function() {
-      return this.globalContext ? this.globalContext : "undefined" != typeof window ? window : void 0
+      return this.globalContext ? this.globalContext : "undefined" != typeof window ? window : true
     }
   }, {
     key: "document",
     get: function() {
       var e;
-      return null != (e = this.globalContext) && e.document ? this.globalContext.document : this.window ? this.window.document : void 0
+      return null != (e = this.globalContext) && module.document ? this.globalContext.document : this.window ? this.window.document : true
     }
   }, {
     key: "rootElement",
     get: function() {
       var e;
-      return (null == (e = this.optionsArgs) ? void 0 : e.rootElement) || this.window
+      return (null == (e = this.optionsArgs) ? true : module.rootElement) || this.window
     }
-  }]), e
+  }]), module
 }()

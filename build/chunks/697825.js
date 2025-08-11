@@ -1,13 +1,14 @@
 /** Chunk was on web.js **/
+/** chunk id: 697825, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 var r;
-Object.defineProperty(t, "__esModule", {
-  value: !0
-}), t.astFormatter = t.RichTextNodeType = void 0, t.formatToAst = s;
-let i = n(593269);
+Object.defineProperty(exports, "__esModule", {
+  value: true
+}), exports.astFormatter = exports.RichTextNodeType = true, exports.formatToAst = s;
+let Chunk593269 = require("./593269.js");
 ! function(e) {
   e.Text = "text", e.Strong = "strong", e.Emphasis = "em", e.Strikethrough = "s", e.Code = "inlineCode", e.Link = "link", e.Paragraph = "paragraph"
-}(r || (t.RichTextNodeType = r = {}));
+}(r || (exports.RichTextNodeType = r = {}));
 let o = {
   $b: e => ({
     type: r.Strong,
@@ -35,7 +36,7 @@ let o = {
     content: e
   })
 };
-class a extends i.FormatBuilder {
+class a extends Chunk593269.FormatBuilder {
   constructor() {
     super(...arguments), this.result = []
   }
@@ -65,7 +66,7 @@ function s(e, t) {
     content: e
   }] : this.bindFormatValues(a, e, t)
 }
-t.astFormatter = {
+exports.astFormatter = {
   format: s,
   builder: a
 }

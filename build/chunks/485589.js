@@ -1,12 +1,13 @@
 /** Chunk was on 80451 **/
+/** chunk id: 485589, original params: e,r,t (module,exports,require) **/
 "use strict";
-var a = t(705723);
-t(864733)(r, "__esModule", {
-  value: !0
-}), r.roleElements = r.elementRoles = r.roles = r.dom = r.aria = void 0;
-var o = a(t(958574)),
-  n = a(t(310143)),
-  l = a(t(690416)),
-  i = a(t(876386)),
-  s = a(t(34790));
-r.aria = o.default, r.dom = n.default, r.roles = l.default, r.elementRoles = i.default, r.roleElements = s.default
+var Chunk705723 = require("./705723.js");
+require("./864733.js")(exports, "__esModule", {
+  value: true
+}), exports.roleElements = exports.elementRoles = exports.roles = exports.dom = exports.aria = true;
+var o = Chunk705723(require("./958574.js")),
+  n = Chunk705723(require("./310143.js")),
+  l = Chunk705723(require("./690416.js")),
+  i = Chunk705723(require("./876386.js")),
+  s = Chunk705723(require("./34790.js"));
+exports.aria = o.default, exports.dom = n.default, exports.roles = l.default, exports.elementRoles = i.default, exports.roleElements = s.default

@@ -1,3 +1,4 @@
 /** Chunk was on web.js **/
+/** chunk id: 349374, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = n.p + "249d0a057895c668.woff2"
+module.exports = require.p + "249d0a057895c668.woff2"

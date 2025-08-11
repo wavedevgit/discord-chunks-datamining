@@ -1,15 +1,16 @@
 /** Chunk was on web.js **/
+/** chunk id: 1627, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => c
 });
-var r = n(481060),
-  i = n(703656),
-  o = n(302155),
-  a = n(71509),
-  s = n(981631),
-  l = n(388032);
-let c = new o.Z({
+var Chunk481060 = require("./481060.js"),
+  Chunk703656 = require("./703656.js"),
+  Chunk302155 = require("./302155.js"),
+  Chunk71509 = require("./71509.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk388032 = require("./388032.js");
+let c = new Chunk302155.Z({
   onSwitchSuccess(e, t) {
     setTimeout(() => {
       t && (0, i.uL)(s.Z5c.ME), (0, r.showToast)((0, r.createToast)(l.intl.formatToPlainString(l.t.wx7O3N, {
@@ -18,9 +19,9 @@ let c = new o.Z({
     }, 100)
   },
   onSwitchError() {
-    (0, r.showToast)((0, r.createToast)(l.intl.string(l.t.pqvKWF), r.ToastType.FAILURE))
+    (0, Chunk481060.showToast)((0, Chunk481060.createToast)(Chunk388032.intl.string(Chunk388032.t.pqvKWF), Chunk481060.ToastType.FAILURE))
   },
   onTokenSet() {
-    (0, r.Mr3)(a.Ui), (0, r.Mr3)(a._5)
+    (0, Chunk481060.Mr3)(Chunk71509.Ui), (0, Chunk481060.Mr3)(Chunk71509._5)
   }
 })

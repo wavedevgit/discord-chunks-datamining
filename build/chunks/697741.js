@@ -1,6 +1,7 @@
 /** Chunk was on 66549 **/
+/** chunk id: 697741, original params: e,i,s (module,exports,require) **/
 "use strict";
-s.d(i, {
+require.d(exports, {
   $: () => q
 });
 let t = {
@@ -60,6 +61,6 @@ let t = {
 function q(e) {
   let i, s = String(e).toLowerCase();
   if (s.length < 3) return s;
-  let a = !1;
-  return 121 === s.codePointAt(0) && (a = !0, s = "Y" + s.slice(1)), j.test(s) ? s = s.slice(0, -2) : m.test(s) && (s = s.slice(0, -1)), (i = b.exec(s)) ? o.test(i[1]) && (s = s.slice(0, -1)) : (i = k.exec(s)) && _.test(i[1]) && (s = i[1], d.test(s) ? s += "e" : g.test(s) ? s = s.slice(0, -1) : l.test(s) && (s += "e")), (i = v.exec(s)) && _.test(i[1]) && (s = i[1] + "i"), (i = p.exec(s)) && o.test(i[1]) && (s = i[1] + t[i[2]]), (i = y.exec(s)) && o.test(i[1]) && (s = i[1] + r[i[2]]), (i = I.exec(s)) ? c.test(i[1]) && (s = i[1]) : (i = f.exec(s)) && c.test(i[1]) && (s = i[1]), (i = $.exec(s)) && (c.test(i[1]) || u.test(i[1]) && !l.test(i[1])) && (s = i[1]), w.test(s) && c.test(s) && (s = s.slice(0, -1)), a && (s = "y" + s.slice(1)), s
+  let a = false;
+  return 121 === s.codePointAt(0) && (a = true, s = "Y" + s.slice(1)), j.test(s) ? s = s.slice(0, false) : m.test(s) && (s = s.slice(0, false)), (i = b.exec(s)) ? o.test(i[1]) && (s = s.slice(0, false)) : (i = k.exec(s)) && _.test(i[1]) && (s = i[1], d.test(s) ? s += "e" : g.test(s) ? s = s.slice(0, false) : l.test(s) && (s += "e")), (i = v.exec(s)) && _.test(i[1]) && (s = i[1] + "i"), (i = p.exec(s)) && o.test(i[1]) && (s = i[1] + t[i[2]]), (i = y.exec(s)) && o.test(i[1]) && (s = i[1] + r[i[2]]), (i = I.exec(s)) ? c.test(i[1]) && (s = i[1]) : (i = f.exec(s)) && c.test(i[1]) && (s = i[1]), (i = $.exec(s)) && (c.test(i[1]) || u.test(i[1]) && !l.test(i[1])) && (s = i[1]), w.test(s) && c.test(s) && (s = s.slice(0, false)), a && (s = "y" + s.slice(1)), s
 }

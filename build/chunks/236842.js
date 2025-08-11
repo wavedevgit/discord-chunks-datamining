@@ -1,22 +1,23 @@
 /** Chunk was on web.js **/
+/** chunk id: 236842, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => l
-}), n(35282), n(388685), n(415506);
-var r = n(836560),
-  i = n(579092),
-  o = n(436620);
+}), require("./35282.js"), require("./388685.js"), require("./415506.js");
+var Chunk836560 = require("./836560.js"),
+  Chunk579092 = require("./579092.js"),
+  Chunk436620 = require("./436620.js");
 
 function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
-let s = new i.Yd("PeerConnection");
-class l extends r.EventEmitter {
+let s = new Chunk579092.Yd("PeerConnection");
+class l extends Chunk836560.EventEmitter {
   setBitRate(e) {
     this.bitrate !== e && (this.bitrate = e, this.negotiationNeeded())
   }
@@ -39,18 +40,18 @@ class l extends r.EventEmitter {
     return null != this.pc && /connected|completed/.test(this.pc.iceConnectionState)
   }
   setStream(e) {
-    let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
+    let t = arguments.length > 1 && true !== arguments[1] && arguments[1],
       n = this.pc,
       r = "closed" === this.iceConnectionState,
-      i = !1;
-    null == this.stream || r || (this.senders.forEach(e => n.removeTrack(e)), i = !0), this.stream = e, this.senders = [], null == e || r || (this.senders = [...e.getAudioTracks().map(t => n.addTrack(t, e)), ...e.getVideoTracks().map(t => n.addTrack(t, e))], i = !0), i && !t && this.negotiationNeeded()
+      i = false;
+    null == this.stream || r || (this.senders.forEach(e => n.removeTrack(e)), i = true), this.stream = e, this.senders = [], null == e || r || (this.senders = [...e.getAudioTracks().map(t => n.addTrack(t, e)), ...e.getVideoTracks().map(t => n.addTrack(t, e))], i = true), i && !t && this.negotiationNeeded()
   }
   createOffer() {
     let e = this.pc;
-    return e.createOffer(this.makeOfferAnswerOptions()).then(t => e.setLocalDescription(this.mungeLocalDescription(t))).then(() => {
-      let t = e.localDescription;
-      if (null == t) throw Error("localDescription is null");
-      return this.emit("offer", t), t
+    return module.createOffer(this.makeOfferAnswerOptions()).then(t => e.setLocalDescription(this.mungeLocalDescription(t))).then(() => {
+      let t = module.localDescription;
+      if (null == exports) throw Error("localDescription is null");
+      return this.emit("offer", exports), exports
     }).catch(t => {
       if ("have-remote-offer" === e.signalingState) return s.error(t), this.createOffer();
       throw t
@@ -58,20 +59,20 @@ class l extends r.EventEmitter {
   }
   createAnswer() {
     let e = this.pc;
-    return e.createAnswer(this.makeOfferAnswerOptions()).then(t => e.setLocalDescription(this.mungeLocalDescription(t))).then(() => {
-      let t = e.localDescription;
-      if (null == t) throw Error("localDescription is null");
-      return this.emit("answer", t), t
+    return module.createAnswer(this.makeOfferAnswerOptions()).then(t => e.setLocalDescription(this.mungeLocalDescription(t))).then(() => {
+      let t = module.localDescription;
+      if (null == exports) throw Error("localDescription is null");
+      return this.emit("answer", exports), exports
     }).catch(t => {
       throw s.warn("PeerConnection#createAnswer: Attempted to set local description in state: ".concat(e.signalingState)), t
     })
   }
   negotiationNeeded() {
     if (this.negotiating) {
-      this._negotiationNeeded = !0;
+      this._negotiationNeeded = true;
       return
     }
-    this.negotiating = !0, this._negotiationNeeded = !1, this.createOffer()
+    this.negotiating = true, this._negotiationNeeded = false, this.createOffer()
   }
   setRemoteDescription(e) {
     return this.pc.setRemoteDescription(e)
@@ -81,9 +82,9 @@ class l extends r.EventEmitter {
   }
   makeOfferAnswerOptions() {
     return {
-      offerToReceiveAudio: !0,
-      offerToReceiveVideo: o.U8,
-      iceRestart: !1
+      offerToReceiveAudio: true,
+      offerToReceiveVideo: Chunk436620.U8,
+      iceRestart: false
     }
   }
   mungeLocalDescription(e) {
@@ -103,14 +104,14 @@ class l extends r.EventEmitter {
     }, this.emit("addtrack", e, t))
   }
   constructor(e) {
-    super(), a(this, "bitrate", void 0), a(this, "pc", void 0), a(this, "stream", null), a(this, "senders", []), a(this, "negotiating", !1), a(this, "_negotiationNeeded", !1), a(this, "handlePeerConnectionStateChange", () => {
+    super(), a(this, "bitrate", true), a(this, "pc", true), a(this, "stream", null), a(this, "senders", []), a(this, "negotiating", false), a(this, "_negotiationNeeded", false), a(this, "handlePeerConnectionStateChange", () => {
       let e = this.peerConnectionState;
       s.info("peerConnectionState =>", e), "connecting" === e ? "connected" === this.iceConnectionState ? this.emit(e) : this.emit(this.iceConnectionState) : this.emit(e)
     }), a(this, "handleIceConnectionStateChange", () => {
       let e = this.iceConnectionState;
       s.info("iceConnectionState =>", e), "completed" === e && (e = "connected"), this.emit(e)
     }), a(this, "handleSignalingStateChange", () => {
-      s.info("signalingState => ".concat(this.signalingState, ", negotiation needed: ").concat(this._negotiationNeeded.toString())), "stable" === this.signalingState && (this.negotiating = !1, this._negotiationNeeded && this.negotiationNeeded())
+      s.info("signalingState => ".concat(this.signalingState, ", negotiation needed: ").concat(this._negotiationNeeded.toString())), "stable" === this.signalingState && (this.negotiating = false, this._negotiationNeeded && this.negotiationNeeded())
     }), a(this, "handleIceGatheringStateChange", () => {
       s.info("iceGatheringState =>", this.iceGatheringState)
     }), a(this, "handleTrack", e => {

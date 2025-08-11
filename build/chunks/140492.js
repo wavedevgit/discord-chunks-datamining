@@ -1,29 +1,30 @@
 /** Chunk was on 75708 **/
-n.d(t, {
+/** chunk id: 140492, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => b
-}), n(388685), n(290780);
-var i = n(358230),
-  r = n(931261),
-  s = n(355298),
-  a = n(333984),
-  l = n(905423),
-  o = n(695346),
-  c = n(283595),
-  d = n(923834),
-  u = n(55589),
-  m = n(823379),
-  p = n(475468),
-  g = n(981631),
-  h = n(176505);
+}), require("./388685.js"), require("./290780.js");
+var Chunk358230 = require("./358230.js"),
+  Chunk931261 = require("./931261.js"),
+  Chunk355298 = require("./355298.js"),
+  Chunk333984 = require("./333984.js"),
+  Chunk905423 = require("./905423.js"),
+  Chunk695346 = require("./695346.js"),
+  Chunk283595 = require("./283595.js"),
+  Chunk923834 = require("./923834.js"),
+  Chunk55589 = require("./55589.js"),
+  Chunk823379 = require("./823379.js"),
+  Chunk475468 = require("./475468.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk176505 = require("./176505.js");
 let f = () => {
-  let e = s.Z.getMessageRequestsCount() > 0 || a.Z.getSpamChannelsCount() > 0;
-  return [g.Z5c.FRIENDS, e ? g.Z5c.MESSAGE_REQUESTS : null, c.Z.hasLibraryApplication() && !o.bm.getSetting() ? g.Z5c.APPLICATION_LIBRARY : null, g.Z5c.APPLICATION_STORE, g.Z5c.COLLECTIBLES_SHOP, o.Ex.getSetting() ? g.Z5c.FAMILY_CENTER : null].filter(m.lm)
+  let e = Chunk355298.Z.getMessageRequestsCount() > 0 || Chunk333984.Z.getSpamChannelsCount() > 0;
+  return [Chunk981631.Z5c.FRIENDS, module ? Chunk981631.Z5c.MESSAGE_REQUESTS : null, Chunk283595.Z.hasLibraryApplication() && !Chunk695346.bm.getSetting() ? Chunk981631.Z5c.APPLICATION_LIBRARY : null, Chunk981631.Z5c.APPLICATION_STORE, Chunk981631.Z5c.COLLECTIBLES_SHOP, Chunk695346.Ex.getSetting() ? Chunk981631.Z5c.FAMILY_CENTER : null].filter(Chunk823379.lm)
 };
 
 function b() {
-  let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : 1,
-    t = l.Z.getState().guildId;
-  null == t ? function(e) {
+  let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : 1,
+    t = Chunk905423.Z.getState().guildId;
+  null == exports ? function(e) {
     let {
       channelId: t,
       path: n,
@@ -36,14 +37,14 @@ function b() {
       let e = d.Z.getCurrentRoute();
       o === g.Z5c.APPLICATION_STORE && null != e ? (0, p.z)(e) : (0, p.z)(o)
     } else m = g.ME, (0, p.K)(m, o)
-  }(e) : function(e, t) {
+  }(module) : function(e, t) {
     var n, s, a;
     let o = l.Z.getState().channelId,
       c = (0, i.Z)(t, {
-        withCurrentVoiceChannel: !0
+        withCurrentVoiceChannel: true
       }).map(e => e.id);
     (0, r.s)(t) && c.unshift(h.oC.GUILD_HOME);
-    let d = (n = (null != o ? c.indexOf(o) : -1) + e, s = c.length, n < 0 ? s - 1 : n >= s ? 0 : n);
+    let d = (n = (null != o ? c.indexOf(o) : false) + e, s = c.length, n < 0 ? s - 1 : n >= s ? 0 : n);
     a = c[d], (0, p.K)(t, a)
-  }(e, t)
+  }(module, exports)
 }

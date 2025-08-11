@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 726074, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   as: () => o,
   tX: () => s
 });
@@ -23,7 +24,7 @@ function a(e) {
     n = new i(e),
     r = document.createTextNode("");
   return n.observe(r, {
-      characterData: !0
+      characterData: true
     }),
     function() {
       r.data = t = -t

@@ -1,9 +1,10 @@
 /** Chunk was on web.js **/
-e.exports = function(e) {
+/** chunk id: 175709, original params: e (module,exports,re quire) **/
+module.exports = function(e) {
   return {
     name: "STEP Part 21",
     aliases: ["p21", "step", "stp"],
-    case_insensitive: !0,
+    case_insensitive: true,
     keywords: {
       $pattern: "[A-Z_][A-Z0-9_.]*",
       keyword: ["HEADER", "ENDSEC", "DATA"]

@@ -1,18 +1,19 @@
 /** Chunk was on 89298 **/
-n.d(t, {
+/** chunk id: 692701, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => h
-}), n(642613), n(388685);
-var i = n(73800),
-  r = n(884439),
-  o = n(442837),
-  l = n(567409),
-  a = n(740589),
-  s = n(752048),
-  c = n(70956),
-  u = n(709054),
-  d = n(26033),
-  p = n(561308);
-let f = c.Z.Millis.WEEK;
+}), require("./642613.js"), require("./388685.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk884439 = require("./884439.js"),
+  Chunk442837 = require("./442837.js"),
+  Chunk567409 = require("./567409.js"),
+  Chunk740589 = require("./740589.js"),
+  Chunk752048 = require("./752048.js"),
+  Chunk70956 = require("./70956.js"),
+  Chunk709054 = require("./709054.js"),
+  Chunk26033 = require("./26033.js"),
+  Chunk561308 = require("./561308.js");
+let f = Chunk70956.Z.Millis.WEEK;
 
 function h(e, t) {
   let n = (0, l.N)(e),
@@ -26,7 +27,7 @@ function h(e, t) {
     return "recency" === c ? t.sort((e, t) => u.default.compare(t.id, e.id)) : "art" === c ? t.sort((e, t) => g(r, t) - g(r, e)) : t
   }, [n, e, c, r])
 }
-let m = 30 * c.Z.Seconds.MINUTE;
+let m = 30 * Chunk70956.Z.Seconds.MINUTE;
 
 function g(e, t) {
   let n = t.participants;
@@ -34,7 +35,7 @@ function g(e, t) {
   let i = Math.max(...n.map(t => {
       var n;
       let i = e.get(t);
-      return (null != (n = null == i ? void 0 : i.communicationProbability) ? n : 0) + 1e-4
+      return (null != (n = null == i ? true : i.communicationProbability) ? n : 0) + 1e-4
     })),
     o = Math.exp(-(u.default.age(t.id) / 1e3 / m * .01)),
     l = t.traits.some(e => e.type !== r.N.DURATION_SECONDS),

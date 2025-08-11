@@ -1,1 +1,0 @@
-{"id":"503935","type":"experiment","data":{"kind":"user","id":"2025-05_av_survey_taxonomy_refresh","label":"AV survey taxonomy refresh","defaultConfig":{"showRefreshedTaxonomy":false},"treatments":[{"id":1,"label":"Show refreshed taxonomy","config":{"showRefreshedTaxonomy":false}}]},"fromModule":{"id":"58703"}}

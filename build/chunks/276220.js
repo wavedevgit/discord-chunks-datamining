@@ -1,5 +1,6 @@
 /** Chunk was on 89311 **/
-e.exports = {
+/** chunk id: 276220, original params: e,t,r (module,exports,require) **/
+module.exports = {
   similarGames: "similarGames_a02225",
   similarGameImageWrapper: "similarGameImageWrapper_a02225",
   similarGameImageClickable: "similarGameImageClickable_a02225 similarGameImageWrapper_a02225",

@@ -1,15 +1,16 @@
 /** Chunk was on 75708 **/
-n.d(t, {
+/** chunk id: 570408, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   I: () => s
 });
-var i = n(585483),
-  r = n(981631);
+var Chunk585483 = require("./585483.js"),
+  Chunk981631 = require("./981631.js");
 let s = {
   binds: ["mod+f"],
-  comboKeysBindGlobal: !0,
+  comboKeysBindGlobal: true,
   action(e) {
     e.preventDefault(), e.stopPropagation(), i.S.dispatch(r.CkL.FOCUS_SEARCH, {
-      prefillCurrentChannel: !0
+      prefillCurrentChannel: true
     })
   }
 }

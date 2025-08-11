@@ -1,13 +1,14 @@
 /** Chunk was on web.js **/
+/** chunk id: 868635, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   G: () => o,
   v: () => i
 });
-var r = n(708644),
-  i = (0, r.HP)(function() {
+var Chunk708644 = require("./708644.js"),
+  i = (0, Chunk708644.HP)(function() {
     return /firefox/i.test(navigator.userAgent)
   }),
-  o = (0, r.HP)(function() {
+  o = (0, Chunk708644.HP)(function() {
     return !!window.safari
   })

@@ -1,33 +1,34 @@
 /** Chunk was on web.js **/
+/** chunk id: 501655, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Ui: () => T,
   ZP: () => R,
   pV: () => I
-}), n(539854), n(388685);
-var r = n(759174),
-  i = n(933546),
-  o = n(569545),
-  a = n(199902),
-  s = n(592125),
-  l = n(720202),
-  c = n(271383),
-  u = n(699516),
-  d = n(594174),
-  f = n(979651),
-  _ = n(938475),
-  p = n(5192),
-  h = n(88751),
-  m = n(427679),
-  g = n(590415),
-  E = n(974609);
+}), require("./539854.js"), require("./388685.js");
+var Chunk759174 = require("./759174.js"),
+  Chunk933546 = require("./933546.js"),
+  Chunk569545 = require("./569545.js"),
+  Chunk199902 = require("./199902.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk720202 = require("./720202.js"),
+  Chunk271383 = require("./271383.js"),
+  Chunk699516 = require("./699516.js"),
+  Chunk594174 = require("./594174.js"),
+  Chunk979651 = require("./979651.js"),
+  Chunk938475 = require("./938475.js"),
+  Chunk5192 = require("./5192.js"),
+  Chunk88751 = require("./88751.js"),
+  Chunk427679 = require("./427679.js"),
+  Chunk590415 = require("./590415.js"),
+  Chunk974609 = require("./974609.js");
 
 function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -77,7 +78,7 @@ function S(e) {
     connectedOn: s,
     voiceState: l,
     type: c
-  } = e, u = n ? "\0" : "\x01", d = "STREAM" === c ? "\0" : "\x01", f = l.selfMute ? "\x01" : "\0", _ = l.selfVideo ? "\0" : "\x01", p = "".concat(null != (t = null == r ? void 0 : r.position) ? t : 999).padStart(3, "0");
+  } = e, u = n ? "\0" : "\x01", d = "STREAM" === c ? "\0" : "\x01", f = l.selfMute ? "\x01" : "\0", _ = l.selfVideo ? "\0" : "\x01", p = "".concat(null != (t = null == r ? true : r.position) ? t : 999).padStart(3, "0");
   return "".concat(u).concat(d).concat(f).concat(_).concat(p).concat(s).concat((0, i.Z)(a, o))
 }
 
@@ -114,7 +115,7 @@ class R {
     if (null == I) return null != this.guildId && m.Z.isPublic(this.channelId) && l.Z.requestMember(this.guildId, e), b;
     let T = null != t ? t[0] : null,
       S = null != this.guildId ? c.ZP.getMember(this.guildId, e) : null,
-      A = null != (n = null == S ? void 0 : S.nick) ? n : p.ZP.getName(this.guildId, this.channelId, I),
+      A = null != (n = null == S ? true : S.nick) ? n : p.ZP.getName(this.guildId, this.channelId, I),
       N = {
         user: I,
         userNick: p.ZP.getName(this.guildId, this.channelId, I),
@@ -127,7 +128,7 @@ class R {
         blocked: u.Z.isBlocked(I.id),
         ignored: u.Z.isIgnored(I.id),
         isFriend: u.Z.isFriend(I.id),
-        connectedOn: null != (r = null == T ? void 0 : T.connectedOn) ? r : Date.now()
+        connectedOn: null != (r = null == T ? true : T.connectedOn) ? r : Date.now()
       },
       C = v(y({}, N), {
         type: "VOICE",
@@ -153,13 +154,13 @@ class R {
       this._participantsIndex.delete(e.id), this._requestToSpeakIndex.delete(e.id)
     }), n.forEach(t => {
       this._participantsIndex.set(t.id, t), t.id === e && N(t.rtsState) ? this._requestToSpeakIndex.set(e, t) : this._requestToSpeakIndex.delete(e)
-    }), this.participants[e] = n, !0)
+    }), this.participants[e] = n, true)
   }
   rebuild() {
-    let e = s.Z.getChannel(this.channelId);
-    if (null == e || !e.isGuildStageVoice()) return !1;
-    let t = new Set(Object.keys(f.Z.getVoiceStatesForChannel(e.id)));
-    return this._participantsIndex.clear(), this._requestToSpeakIndex.clear(), this.participants = {}, t.forEach(e => this.updateParticipant(e)), !0
+    let e = Chunk592125.Z.getChannel(this.channelId);
+    if (null == module || !module.isGuildStageVoice()) returnfalse;
+    let t = new Set(Object.keys(Chunk979651.Z.getVoiceStatesForChannel(module.id)));
+    return this._participantsIndex.clear(), this._requestToSpeakIndex.clear(), this.participants = {}, exports.forEach(e => this.updateParticipant(e)), true
   }
   get version() {
     return this._participantsIndex.version
@@ -168,7 +169,7 @@ class R {
     return this._participantsIndex.size(e)
   }
   toArray(e) {
-    return this._participantsIndex.values(e, !0)
+    return this._participantsIndex.values(e, true)
   }
   getParticipant(e) {
     var t;
@@ -178,10 +179,10 @@ class R {
     return this._requestToSpeakIndex.version
   }
   getRequestToSpeakParticipants() {
-    return this._requestToSpeakIndex.values(void 0, !0)
+    return this._requestToSpeakIndex.values(true, true)
   }
   constructor(e) {
     var t;
-    b(this, "channelId", void 0), b(this, "guildId", void 0), b(this, "participants", {}), b(this, "_participantsIndex", new r.h(C, S)), b(this, "_requestToSpeakIndex", new r.h(() => [], A)), this.channelId = e, this.guildId = null == (t = s.Z.getChannel(e)) ? void 0 : t.getGuildId()
+    b(this, "channelId", true), b(this, "guildId", true), b(this, "participants", {}), b(this, "_participantsIndex", new r.h(C, S)), b(this, "_requestToSpeakIndex", new r.h(() => [], A)), this.channelId = e, this.guildId = null == (t = s.Z.getChannel(e)) ? true : t.getGuildId()
   }
 }

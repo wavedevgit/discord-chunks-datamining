@@ -1,19 +1,20 @@
 /** Chunk was on web.js **/
+/** chunk id: 756315, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => _
 });
-var r = n(379649),
-  i = n(846519),
-  o = n(361291),
-  a = n(981631);
+var Chunk379649 = require("./379649.js"),
+  Chunk846519 = require("./846519.js"),
+  Chunk361291 = require("./361291.js"),
+  Chunk981631 = require("./981631.js");
 
 function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -49,7 +50,7 @@ function u(e, t) {
 let d = 1e3;
 
 function f(e) {
-  let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 0;
+  let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : 0;
   return null != e ? Math.round(e) : t
 }
 class _ {
@@ -57,11 +58,11 @@ class _ {
     let {
       resolution: e,
       fps: t
-    } = o.Z.getState();
-    this._targetResolution = e, this._targetFPS = t, this._statInterval.start(d, this._sampleStats), this._lastLayoutChanged = (0, r.zO)()
+    } = Chunk361291.Z.getState();
+    this._targetResolution = module, this._targetFPS = exports, this._statInterval.start(d, this._sampleStats), this._lastLayoutChanged = (0, Chunk379649.zO)()
   }
   stop() {
-    this._statInterval.stop(), this._streamEnd = (0, r.zO)(), this._incrementLayout(this._lastLayout, (this._streamEnd - this._lastLayoutChanged) / 1e3)
+    this._statInterval.stop(), this._streamEnd = (0, Chunk379649.zO)(), this._incrementLayout(this._lastLayout, (this._streamEnd - this._lastLayoutChanged) / 1e3)
   }
   layoutChange(e) {
     if (e === this._lastLayout || null != this._streamEnd) return;
@@ -74,22 +75,22 @@ class _ {
   getStats() {
     let e = {
       num_layout_changes: this._layoutChanges,
-      duration_layout_fullscreen: f(this._layoutBuckets[a.hVg.FULL_SCREEN]),
-      duration_layout_theatre: f(this._layoutBuckets[a.hVg.THEATRE]),
-      duration_layout_pip: f(this._layoutBuckets[a.hVg.PIP]),
-      duration_layout_popout: f(this._layoutBuckets[a.hVg.POPOUT]),
-      duration_layout_portrait: f(this._layoutBuckets[a.hVg.PORTRAIT]),
-      duration_layout_landscape: f(this._layoutBuckets[a.hVg.LANDSCAPE]),
-      duration_layout_minimized: f(this._layoutBuckets[a.hVg.MINIMIZED])
+      duration_layout_fullscreen: f(this._layoutBuckets[Chunk981631.hVg.FULL_SCREEN]),
+      duration_layout_theatre: f(this._layoutBuckets[Chunk981631.hVg.THEATRE]),
+      duration_layout_pip: f(this._layoutBuckets[Chunk981631.hVg.PIP]),
+      duration_layout_popout: f(this._layoutBuckets[Chunk981631.hVg.POPOUT]),
+      duration_layout_portrait: f(this._layoutBuckets[Chunk981631.hVg.PORTRAIT]),
+      duration_layout_landscape: f(this._layoutBuckets[Chunk981631.hVg.LANDSCAPE]),
+      duration_layout_minimized: f(this._layoutBuckets[Chunk981631.hVg.MINIMIZED])
     };
-    return this._isSender ? u(l({}, e), {
+    return this._isSender ? u(l({}, module), {
       target_fps: this._targetFPS,
       target_resolution_height: this._targetResolution,
       stream_settings_changed: this._streamSettingsChanged
-    }) : e
+    }) : module
   }
   constructor(e, t) {
-    s(this, "_statInterval", void 0), s(this, "_isSender", void 0), s(this, "_streamEnd", void 0), s(this, "_targetResolution", 0), s(this, "_targetFPS", 0), s(this, "_streamSettingsChanged", !1), s(this, "_lastLayout", void 0), s(this, "_lastLayoutChanged", 0), s(this, "_layoutChanges", 0), s(this, "_layoutBuckets", void 0), s(this, "_incrementLayout", (e, t) => {
+    s(this, "_statInterval", true), s(this, "_isSender", true), s(this, "_streamEnd", true), s(this, "_targetResolution", 0), s(this, "_targetFPS", 0), s(this, "_streamSettingsChanged", false), s(this, "_lastLayout", true), s(this, "_lastLayoutChanged", 0), s(this, "_layoutChanges", 0), s(this, "_layoutBuckets", true), s(this, "_incrementLayout", (e, t) => {
       null == this._layoutBuckets[e] && (this._layoutBuckets[e] = 0), this._layoutBuckets[e] += t
     }), s(this, "_sampleStats", () => {
       let {

@@ -1,6 +1,7 @@
 /** Chunk was on 71879 **/
+/** chunk id: 767905, original params: e,t,n (module,exports,require) **/
 "use strict";
-e.exports = {
+module.exports = {
   container: "container__1ad33",
   author: "author__1ad33",
   closeIcon: "closeIcon__1ad33",

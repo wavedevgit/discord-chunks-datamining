@@ -1,22 +1,23 @@
 /** Chunk was on web.js **/
+/** chunk id: 630242, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   R: () => g
-}), n(388685);
-var r = n(73800),
-  i = n(442837),
-  o = n(704215),
-  a = n(211644),
-  s = n(266454),
-  l = n(243778),
-  c = n(592125),
-  u = n(944486),
-  d = n(626135),
-  f = n(436952),
-  _ = n(839606),
-  p = n(54480),
-  h = n(981631),
-  m = n(921944);
+}), require("./388685.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk442837 = require("./442837.js"),
+  Chunk704215 = require("./704215.js"),
+  Chunk211644 = require("./211644.js"),
+  Chunk266454 = require("./266454.js"),
+  Chunk243778 = require("./243778.jsx"),
+  Chunk592125 = require("./592125.js"),
+  Chunk944486 = require("./944486.js"),
+  Chunk626135 = require("./626135.js"),
+  Chunk436952 = require("./436952.js"),
+  Chunk839606 = require("./839606.js"),
+  Chunk54480 = require("./54480.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk921944 = require("./921944.js");
 
 function g(e) {
   let {
@@ -32,8 +33,8 @@ function g(e) {
   } = (0, i.cj)([c.Z], () => {
     let e = c.Z.getChannel(y);
     return {
-      isChatWallpaperEnabled: null == e ? void 0 : e.isChatWallpaperEnabled,
-      channelType: null == e ? void 0 : e.type
+      isChatWallpaperEnabled: null == e ? true : e.isChatWallpaperEnabled,
+      channelType: null == e ? true : e.type
     }
   }), {
     canAccessPicker: I,
@@ -43,9 +44,9 @@ function g(e) {
   } = (0, p.m)({
     location: "useChatWallpaperPickerConfig",
     channelId: y
-  }), N = I && !t, [C, R] = (0, l.US)(N ? [o.z.CHAT_WALLPAPERS_DM_LIST_COACHMARK] : [], void 0, !0), P = C === o.z.CHAT_WALLPAPERS_DM_LIST_COACHMARK, [w, D] = (0, l.US)(P ? [o.z.CHAT_WALLPAPERS_PICKER_COACHMARK] : []), L = (0, a.ZP)(e => e.recentlyShown[0]), x = (0, s.Nj)(o.z.CHAT_WALLPAPERS_PICKER_COACHMARK);
+  }), N = I && !t, [C, R] = (0, l.US)(N ? [o.z.CHAT_WALLPAPERS_DM_LIST_COACHMARK] : [], true, true), P = C === o.z.CHAT_WALLPAPERS_DM_LIST_COACHMARK, [w, D] = (0, l.US)(P ? [o.z.CHAT_WALLPAPERS_PICKER_COACHMARK] : []), L = (0, a.ZP)(e => e.recentlyShown[0]), x = (0, s.Nj)(o.z.CHAT_WALLPAPERS_PICKER_COACHMARK);
   if (r.useMemo(() => {
-      S && !0 === O && !x && w !== o.z.CHAT_WALLPAPERS_PICKER_COACHMARK && d.default.track(h.rMx.CHAT_WALLPAPER_PICKER_COACHMARK_NOT_SHOW_REASON, {
+      S && true === O && !x && w !== o.z.CHAT_WALLPAPERS_PICKER_COACHMARK && d.default.track(h.rMx.CHAT_WALLPAPER_PICKER_COACHMARK_NOT_SHOW_REASON, {
         channel_id: y,
         channel_type: v,
         is_settings_open: t,
@@ -61,7 +62,7 @@ function g(e) {
       pickerType: e,
       markDismissed: M ? e => {
         D(e), T === f.FN.TOOLBAR && R(m.L.INDIRECT_ACTION)
-      } : void 0
+      } : true
     }
   }
 }

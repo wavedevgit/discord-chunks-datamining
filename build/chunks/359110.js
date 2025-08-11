@@ -1,24 +1,25 @@
 /** Chunk was on web.js **/
+/** chunk id: 359110, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Kh: () => _,
   ad: () => p
 });
-var r = n(512722),
-  i = n.n(r),
-  o = n(493683),
-  a = n(475179),
-  s = n(727429),
-  l = n(592125),
-  c = n(703656),
-  u = n(981631);
+var Chunk512722 = require("./512722.js"),
+  i = require.n(Chunk512722),
+  Chunk493683 = require("./493683.js"),
+  Chunk475179 = require("./475179.js"),
+  Chunk727429 = require("./727429.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk703656 = require("./703656.js"),
+  Chunk981631 = require("./981631.js");
 
 function d(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -40,14 +41,14 @@ function _(e, t) {
   if (null == n) return;
   let r = (0, s.e)(n);
   o.Z.preload(n.guild_id, n.id), (0, c.uL)(u.Z5c.CHANNEL(r, n.id), f({
-    openChannel: !0
-  }, t)), (null == t ? void 0 : t.openTextInVoiceIfVoiceChannel) && n.isGuildVocal() && a.Z.updateChatOpen(n.id, !0)
+    openChannel: true
+  }, t)), (null == t ? true : t.openTextInVoiceIfVoiceChannel) && n.isGuildVocal() && a.Z.updateChatOpen(n.id, true)
 }
 
 function p(e, t) {
   i()(null != e.parent_id, "Thread must have a parent ID.");
   let n = (0, s.e)(e);
   (0, c.uL)(u.Z5c.CHANNEL(n, e.id), f({
-    openChannel: !0
+    openChannel: true
   }, t))
 }

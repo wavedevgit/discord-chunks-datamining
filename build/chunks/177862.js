@@ -1,12 +1,13 @@
 /** Chunk was on web.js **/
+/** chunk id: 177862, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   $l: () => o,
   C2: () => s,
   J$: () => a,
   wR: () => i,
   x2: () => r
-}), n(388032);
+}), require("./388032.js");
 var r = function(e) {
     return e.BUG = "BUG", e.ALLOWED = "ALLOWED", e.MENTION_RAID_REMOVE_RESTRICTION = "MENTION_RAID_REMOVE_RESTRICTION", e
   }({}),

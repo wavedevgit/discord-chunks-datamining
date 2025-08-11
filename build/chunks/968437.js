@@ -1,34 +1,35 @@
 /** Chunk was on web.js **/
+/** chunk id: 968437, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   WD: () => c,
   nt: () => l
 });
-var r = n(404759),
-  i = n.n(r);
-n(913527);
-var o = n(70956),
-  a = n(124368),
-  s = n(388032);
+var Chunk404759 = require("./404759.js"),
+  i = require.n(Chunk404759);
+require("./913527.js");
+var Chunk70956 = require("./70956.js"),
+  Chunk124368 = require("./124368.js"),
+  Chunk388032 = require("./388032.jsx");
 
 function l() {
   return [{
-    label: s.intl.string(s.t.cs8A1d),
-    value: o.Z.Minutes.HOUR
+    label: Chunk388032.intl.string(Chunk388032.t.cs8A1d),
+    value: Chunk70956.Z.Minutes.HOUR
   }, {
-    label: s.intl.string(s.t.zFKbrK),
-    value: o.Z.Minutes.DAY
+    label: Chunk388032.intl.string(Chunk388032.t.zFKbrK),
+    value: Chunk70956.Z.Minutes.DAY
   }, {
-    label: s.intl.string(s.t.TmPIZW),
-    value: 3 * o.Z.Minutes.DAY
+    label: Chunk388032.intl.string(Chunk388032.t.TmPIZW),
+    value: 3 * Chunk70956.Z.Minutes.DAY
   }, {
-    label: s.intl.string(s.t["/7i2en"]),
-    value: o.Z.Minutes.WEEK
+    label: Chunk388032.intl.string(Chunk388032.t["/7i2en"]),
+    value: Chunk70956.Z.Minutes.WEEK
   }]
 }
 
 function c(e, t) {
   var n;
-  return null != (n = null != t ? t : null == e ? void 0 : e.defaultAutoArchiveDuration) ? n : a.AX
+  return null != (n = null != t ? t : null == e ? true : e.defaultAutoArchiveDuration) ? n : a.AX
 }
-o.Z.Minutes.HOUR, o.Z.Minutes.DAY, o.Z.Minutes.DAY, o.Z.Minutes.WEEK, i()(() => l().map(e => e.value))
+Chunk70956.Z.Minutes.HOUR, Chunk70956.Z.Minutes.DAY, Chunk70956.Z.Minutes.DAY, Chunk70956.Z.Minutes.WEEK, i()(() => l().map(e => e.value))

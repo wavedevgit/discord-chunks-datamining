@@ -1,10 +1,11 @@
 /** Chunk was on 22347 **/
-n.d(e, {
+/** chunk id: 187443, original params: t,e,n (module,exports,require) **/
+require.d(exports, {
   u: () => s
-}), n(539854), n(73800);
-var l = n(481060),
-  i = n(285784),
-  r = n(388032);
+}), require("./539854.js"), require("./73800.js");
+var Chunk481060 = require("./481060.js"),
+  Chunk285784 = require("./285784.js"),
+  Chunk388032 = require("./388032.js");
 
 function s(t) {
   let {
@@ -13,7 +14,7 @@ function s(t) {
     rsvped: s,
     onRsvpClick: a,
     onGoToGuildClick: u,
-    isDetailsView: c = !1,
+    isDetailsView: c = false,
     isMember: o,
     onJoinGuildClick: d,
     guildName: h,

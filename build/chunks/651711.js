@@ -1,27 +1,28 @@
 /** Chunk was on 22988 **/
-n.d(t, {
+/** chunk id: 651711, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => u
-}), n(539854), n(642613);
-var r = n(73800),
-  i = n(782568),
-  l = n(635142),
-  a = n(63063),
-  s = n(500047),
-  o = n(431516),
-  c = n(981631),
-  d = n(388032);
+}), require("./539854.js"), require("./642613.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk782568 = require("./782568.js"),
+  Chunk635142 = require("./635142.js"),
+  Chunk63063 = require("./63063.js"),
+  Chunk500047 = require("./500047.jsx"),
+  Chunk431516 = require("./431516.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk388032 = require("./388032.jsx");
 
 function u(e) {
   let {
     onEligibilityBecameStale: t,
     actions: n,
     sortedByIneligible: u
-  } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}, {
+  } = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {}, {
     isUserMFAEnabled: m,
     isModerationMFAEnabled: g
   } = (0, o.N)(), p = r.useCallback(async () => {
     var e, r;
-    m ? g || await (null == n || null == (r = n.onRequireModeratorMFAClick) ? void 0 : r.call(n)) : await (null == n || null == (e = n.onEnableMFAClick) ? void 0 : e.call(n)), null == t || t()
+    m ? g || await (null == n || null == (r = n.onRequireModeratorMFAClick) ? true : r.call(n)) : await (null == n || null == (e = n.onEnableMFAClick) ? true : e.call(n)), null == t || t()
   }, [m, g, t, n]), h = (0, s.R)({
     onEnableMFAClick: p
   });
@@ -38,8 +39,8 @@ function u(e) {
         communityGuidelinesUrl: a.Z.getArticleURL(c.BhN.PUBLIC_GUILD_GUILDLINES)
       }),
       checked: e.noRecentViolations,
-      actionLabel: s ? d.intl.string(d.t.xU2fl5) : void 0,
-      actionHandler: s ? () => (0, i.Z)(a.Z.getSubmitRequestURL()) : void 0
+      actionLabel: s ? d.intl.string(d.t.xU2fl5) : true,
+      actionHandler: s ? () => (0, i.Z)(a.Z.getSubmitRequestURL()) : true
     }];
     if (null != t && null != e.meetsOwnerAgeRequirement && o.push({
         key: "owner_age_requirement",
@@ -84,8 +85,8 @@ function u(e) {
         description: d.intl.string(d.t["5ZqX+v"]),
         checked: e.notNSFW
       }), null != e.hasEnabled2FA) {
-      let t = !e.hasEnabled2FA && !m && (null == n ? void 0 : n.onEnableMFAClick) != null,
-        r = !e.hasEnabled2FA && !g && (null == n ? void 0 : n.onRequireModeratorMFAClick) != null,
+      let t = !e.hasEnabled2FA && !m && (null == n ? true : n.onEnableMFAClick) != null,
+        r = !e.hasEnabled2FA && !g && (null == n ? true : n.onRequireModeratorMFAClick) != null,
         i = t || r;
       o.push({
         key: "2fa_requirement",
@@ -95,10 +96,10 @@ function u(e) {
           enableMFAHook: h
         }),
         checked: e.hasEnabled2FA,
-        actionLabel: i ? d.intl.string(d.t.BU4Dio) : void 0,
-        actionHandler: i ? p : void 0
+        actionLabel: i ? d.intl.string(d.t.BU4Dio) : true,
+        actionHandler: i ? p : true
       })
     }
-    return !0 === u && o.sort(e => e.checked ? 0 : -1), o
+    returntrue === u && o.sort(e => e.checked ? 0 : false), o
   }, [e, u, m, n, g, h, p])
 }

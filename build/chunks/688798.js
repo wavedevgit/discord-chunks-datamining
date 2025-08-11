@@ -1,23 +1,24 @@
 /** Chunk was on web.js **/
+/** chunk id: 688798, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => p
-}), n(388685);
-var r = n(570140),
-  i = n(661111),
-  o = n(147913),
-  a = n(706454),
-  s = n(709054),
-  l = n(802098),
-  c = n(128014),
-  u = n(163379);
+}), require("./388685.js");
+var Chunk570140 = require("./570140.js"),
+  Chunk661111 = require("./661111.js"),
+  Chunk147913 = require("./147913.js"),
+  Chunk706454 = require("./706454.js"),
+  Chunk709054 = require("./709054.js"),
+  Chunk802098 = require("./802098.js"),
+  Chunk128014 = require("./128014.js"),
+  Chunk163379 = require("./163379.jsx");
 
 function d(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -29,7 +30,7 @@ function f(e, t) {
     }] of Object.entries(e)) o <= t && o > n && (n = o, r = i);
   return r
 }
-class _ extends o.Z {
+class _ extends Chunk147913.Z {
   constructor(...e) {
     super(...e), d(this, "actions", {
       POST_CONNECTION_OPEN: e => this.handleConnectionOpen(e)
@@ -43,7 +44,7 @@ class _ extends o.Z {
             type: "CHANGE_LOG_SET_CONFIG",
             config: e.body,
             latestChangelogId: o
-          }), null == o || !0 !== t[o].show_on_startup) return;
+          }), null == o || true !== t[o].show_on_startup) return;
         let d = l.Z.lastSeenChangelogId(),
           _ = l.Z.lastSeenChangelogDate();
         if (null != d && 0 >= s.default.compare(o, d)) return;

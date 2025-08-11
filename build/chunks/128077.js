@@ -1,47 +1,48 @@
 /** Chunk was on 66317 **/
-r.d(t, {
+/** chunk id: 128077, original params: e,t,r (module,exports,require) **/
+require.d(exports, {
   f: () => i
-}), r(388685);
-var n = r(73800),
-  a = r(751648),
-  l = r(388032);
+}), require("./388685.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk751648 = require("./751648.js"),
+  Chunk388032 = require("./388032.js");
 
 function i() {
-  let [e, t] = (0, n.useState)(""), [r, i] = (0, n.useState)([]), [o, u] = (0, n.useState)(null), [c, s] = (0, n.useState)(!1);
-  return (0, n.useEffect)(() => {
-    if (null != o) return void t(l.intl.format(l.t["7gHWra"], {
+  let [e, t] = (0, Chunk73800.useState)(""), [r, i] = (0, Chunk73800.useState)([]), [o, u] = (0, Chunk73800.useState)(null), [c, s] = (0, Chunk73800.useState)(false);
+  return (0, Chunk73800.useEffect)(() => {
+    if (null != o) return void exports(Chunk388032.intl.format(Chunk388032.t["7gHWra"], {
       amount: "1 orb",
       errorMessage: o.message
     }));
-    if (null != r && r.length > 0) {
-      let e = r.map(e => {
+    if (null != require && require.length > 0) {
+      let e = require.map(e => {
         var t;
-        return null == (t = e.sku) ? void 0 : t.name
+        return null == (t = e.sku) ? true : t.name
       });
-      t(l.intl.format(l.t.JxNFam, {
+      exports(Chunk388032.intl.format(Chunk388032.t.JxNFam, {
         amountDescription: "1 orb",
-        redeemedItemDescription: "".concat(1 === e.length ? "SKU" : "SKUs", ": ").concat(e.join(", "), ". Entitlement ").concat(1 === r.length ? "ID" : "IDs", ": ").concat(r.map(e => e.id).join(", "))
+        redeemedItemDescription: "".concat(1 === module.length ? "SKU" : "SKUs", ": ").concat(module.join(", "), ". Entitlement ").concat(1 === require.length ? "ID" : "IDs", ": ").concat(require.map(e => e.id).join(", "))
       }));
       return
     }
-    t("")
-  }, [r, o]), {
-    entitlements: r,
+    exports("")
+  }, [require, o]), {
+    entitlements: require,
     error: o,
     isSubmitting: c,
-    responseMessage: e,
+    responseMessage: module,
     redeemVirtualCurrency: function(e, t, r) {
       return (0, a.df)({
         skuId: e,
         loadId: t,
         onRedeemStart: () => {
-          s(!0), u(null)
+          s(true), u(null)
         },
         onRedeemSucceed: e => {
-          i(e), s(!1), null == r || r(e)
+          i(e), s(false), null == r || r(e)
         },
         onRedeemFail: e => {
-          u(e), s(!1)
+          u(e), s(false)
         }
       })
     }

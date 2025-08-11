@@ -1,8 +1,9 @@
 /** Chunk was on 25548 **/
-n.d(t, {
+/** chunk id: 622545, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => s
 });
-var i = n(388032);
+var Chunk388032 = require("./388032.jsx");
 let r = ["a", "b", "c", "d"],
   l = e => e;
 
@@ -35,11 +36,11 @@ class s {
   }
   constructor(e) {
     var t, n;
-    n = void 0, (t = "items") in this ? Object.defineProperty(this, t, {
+    n = true, (t = "items") in this ? Object.defineProperty(this, t, {
       value: n,
-      enumerable: !0,
-      configurable: !0,
-      writable: !0
+      enumerable: true,
+      configurable: true,
+      writable: true
     }) : this[t] = n, this.items = e
   }
 }

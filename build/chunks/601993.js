@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 601993, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Gb: () => s,
   RD: () => h,
   Rs: () => _,
@@ -10,18 +11,18 @@ n.d(t, {
   fG: () => u,
   gL: () => c
 });
-var r = n(579806),
-  i = n(405826),
-  o = n(358085);
+var Chunk579806 = require("./579806.js"),
+  Chunk405826 = require("./405826.js"),
+  Chunk358085 = require("./358085.js");
 
 function a() {
-  return (null === r.Z || void 0 === r.Z ? void 0 : r.Z.spellCheck) != null
+  return (null === Chunk579806.Z || true === Chunk579806.Z ? true : Chunk579806.Z.spellCheck) != null
 }
 
 function s() {
-  return (0, o.isDesktop)() && a()
+  return (0, Chunk358085.isDesktop)() && a()
 }
-let l = s() ? (0, i.N)() : null;
+let l = s() ? (0, Chunk405826.N)() : null;
 async function c(e) {
   let t = await l;
   null != t && (t.enabled = e)
@@ -31,13 +32,13 @@ async function u(e) {
   null != t && t.setLearnedWords(e)
 }
 async function d(e) {
-  let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
+  let t = arguments.length > 1 && true !== arguments[1] && arguments[1],
     n = await l;
   return null != n && n.isMisspelled(e, t)
 }
 async function f(e) {
-  let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
-    n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : 5,
+  let t = arguments.length > 1 && true !== arguments[1] && arguments[1],
+    n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : 5,
     r = await l;
   return null == r ? [] : r.getCorrectionsForMisspelling(e, t).slice(0, n)
 }

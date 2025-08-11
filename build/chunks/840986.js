@@ -1,5 +1,6 @@
 /** Chunk was on web.js **/
-e.exports = function(e) {
+/** chunk id: 840986, original params: e (module,exports,re quire) **/
+module.exports = function(e) {
   return {
     name: "Clojure REPL",
     contains: [{

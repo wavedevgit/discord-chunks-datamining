@@ -1,10 +1,11 @@
 /** Chunk was on 85668 **/
-n.d(e, {
+/** chunk id: 988158, original params: t,e,n (module,exports,require) **/
+require.d(exports, {
   X: () => r,
   h: () => i
-}), n(704826), n(35282), n(388685);
-var a = n(73800),
-  l = n(902676);
+}), require("./704826.js"), require("./35282.js"), require("./388685.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk902676 = require("./902676.js");
 
 function i(t) {
   let {
@@ -29,7 +30,7 @@ function r(t) {
     onConfirm: l,
     onCancel: r,
     onClose: s
-  } = t, [o, c] = a.useState(!1), {
+  } = t, [o, c] = a.useState(false), {
     protocol: d,
     authorityPrefix: x,
     hostname: m,

@@ -1,17 +1,18 @@
 /** Chunk was on web.js **/
+/** chunk id: 506712, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   A: () => _,
   q: () => d
-}), n(583741);
-var r = n(392711),
-  i = n.n(r),
-  o = n(131704),
-  a = n(592125),
-  s = n(580005),
-  l = n(650774),
-  c = n(70956),
-  u = n(789662);
+}), require("./583741.js");
+var Chunk392711 = require("./392711.js"),
+  i = require.n(Chunk392711),
+  Chunk131704 = require("./131704.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk580005 = require("./580005.js"),
+  Chunk650774 = require("./650774.js"),
+  Chunk70956 = require("./70956.js"),
+  Chunk789662 = require("./789662.js");
 
 function d(e, t, n, r, i) {
   var o, s, c, d;
@@ -74,13 +75,13 @@ function _(e, t) {
     f = s.Z.getFrequentlyWithoutFetchingLatest().filter(t => t instanceof o.Sf && t.guild_id === e.id),
     _ = f.filter(e => {
       var t, n;
-      let r = null != (n = null == (t = s.Z.frecencyWithoutFetchingLatest.usageHistory[e.id]) ? void 0 : t.recentUses) ? n : [];
+      let r = null != (n = null == (t = s.Z.frecencyWithoutFetchingLatest.usageHistory[e.id]) ? true : t.recentUses) ? n : [];
       return 0 !== r.length && r[r.length - 1] >= d
     }),
     p = _.length >= 5,
     h = f.reduce((e, t) => {
       var n, r;
-      return e + (null != (r = null == (n = s.Z.frecencyWithoutFetchingLatest.usageHistory[t.id]) ? void 0 : n.totalUses) ? r : 0)
+      return e + (null != (r = null == (n = s.Z.frecencyWithoutFetchingLatest.usageHistory[t.id]) ? true : n.totalUses) ? r : 0)
     }, 0),
     m = "\n- **Local**:\n    - Guild Visits: ".concat(h, "\n    - Channels: ").concat(f.length, "\n    - Recent Channels: ").concat(_.length, "\n");
   return i.messages === u.XR.High || a > 1e3 ? [u.AR.UseGreyDot, p, "SuggestGreyDot" + m] : [u.AR.KeepAsIs, p, "KeepAsIs" + m]

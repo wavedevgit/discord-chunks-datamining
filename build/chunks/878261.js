@@ -1,10 +1,11 @@
 /** Chunk was on web.js **/
+/** chunk id: 878261, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 
 function r(e, t) {
   e.prototype = Object.create(t.prototype), e.prototype.constructor = e, e.__proto__ = t
 }
-e.exports = function(e) {
+module.exports = function(e) {
   function t() {
     return e.apply(this, arguments) || this
   }
@@ -17,7 +18,7 @@ e.exports = function(e) {
   }, n.getData = function() {
     return this.get("data")
   }, t
-}((0, n(65183).Record)({
+}((0, require("./65183.js").Record)({
   type: "TOKEN",
   mutability: "IMMUTABLE",
   data: Object

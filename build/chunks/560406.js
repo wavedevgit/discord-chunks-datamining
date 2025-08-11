@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 560406, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-var r = n(46015),
+var Chunk46015 = require("./46015.js"),
   i = 0x7fffffff,
   o = 36,
   a = 1,
@@ -15,15 +16,15 @@ var r = n(46015),
   h = "Overflow: input needs wider integers to process",
   m = 35,
   g = RangeError,
-  E = r(p.exec),
+  E = Chunk46015(p.exec),
   b = Math.floor,
   y = String.fromCharCode,
-  O = r("".charCodeAt),
-  v = r([].join),
-  I = r([].push),
-  T = r("".replace),
-  S = r("".split),
-  A = r("".toLowerCase),
+  O = Chunk46015("".charCodeAt),
+  v = Chunk46015([].join),
+  I = Chunk46015([].push),
+  T = Chunk46015("".replace),
+  S = Chunk46015("".split),
+  A = Chunk46015("".toLowerCase),
   N = function(e) {
     for (var t = [], n = 0, r = e.length; n < r;) {
       var i = O(e, n++);
@@ -73,7 +74,7 @@ var r = n(46015),
     }
     return v(r, "")
   };
-e.exports = function(e) {
+module.exports = function(e) {
   var t, n, r = [],
     i = S(T(A(e), p, "."), ".");
   for (t = 0; t < i.length; t++) I(r, E(_, n = i[t]) ? "xn--" + P(n) : n);

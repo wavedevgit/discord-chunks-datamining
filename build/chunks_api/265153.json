@@ -1,0 +1,1 @@
+{"id":"265153","type":"experiment","data":{"kind":"guild","id":"2025-07_mobile_member_applications","label":"Mobile Members Application Reviews","defaultConfig":{"enabled":false},"treatments":[{"id":1,"label":"User review membership applications","config":{"enabled":true}}]},"fromModule":{"id":"web.js"}}

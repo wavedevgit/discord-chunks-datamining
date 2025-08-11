@@ -1,8 +1,9 @@
 /** Chunk was on 21153 **/
+/** chunk id: 673046, original params: e,t (module,exports,require) **/
 "use strict";
-Object.defineProperty(t, "__esModule", {
-  value: !0
-}), t.calculateChange = function(e, t, r) {
+Object.defineProperty(exports, "__esModule", {
+  value: true
+}), exports.calculateChange = function(e, t, r) {
   var n = r.getBoundingClientRect(),
     o = n.width,
     a = n.height,

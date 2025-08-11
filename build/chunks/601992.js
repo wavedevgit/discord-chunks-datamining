@@ -1,18 +1,19 @@
 /** Chunk was on web.js **/
+/** chunk id: 601992, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   R: () => l,
   Z: () => y
 });
-var r = n(442837),
-  i = n(570140),
-  o = n(271383),
-  a = n(9156),
-  s = n(594174);
+var Chunk442837 = require("./442837.js"),
+  Chunk570140 = require("./570140.js"),
+  Chunk271383 = require("./271383.js"),
+  Chunk9156 = require("./9156.js"),
+  Chunk594174 = require("./594174.js");
 
 function l(e, t) {
   var n;
-  let r = null == (n = s.default.getCurrentUser()) ? void 0 : n.id,
+  let r = null == (n = s.default.getCurrentUser()) ? true : n.id,
     l = a.ZP.isSuppressEveryoneEnabled(t),
     c = a.ZP.isSuppressRolesEnabled(t),
     u = null != e.mentions && e.mentions.some(e => e.id === r),
@@ -23,7 +24,7 @@ function l(e, t) {
     guildId: t,
     mentioned: u,
     roleMentioned: f && !c,
-    everyoneMentioned: !0 === e.mention_everyone && !l
+    everyoneMentioned: true === e.mention_everyone && !l
   })
 }
 let c = null,
@@ -37,10 +38,10 @@ let c = null,
 
 function g() {
   let e = e => null != e && Date.now() - e < 6e4;
-  for (let t in e(c) || (c = null), e(u) || (u = null), e(d) || (d = null), e(f) || (f = null), _) e(_[t]) || delete _[t];
-  for (let t in p) e(p[t]) || delete p[t];
-  for (let t in m) e(m[t]) || delete m[t];
-  for (let t in h) e(h[t]) || delete h[t]
+  for (let t in module(c) || (c = null), module(u) || (u = null), module(d) || (d = null), module(f) || (f = null), _) module(_[exports]) || delete _[exports];
+  for (let t in p) module(p[exports]) || delete p[exports];
+  for (let t in m) module(m[exports]) || delete m[exports];
+  for (let t in h) module(h[exports]) || delete h[exports]
 }
 
 function E(e) {
@@ -52,14 +53,14 @@ function E(e) {
   } = e, o = Date.now();
   c = o, null != t && (_[t] = o), n && (u = o, null != t && (p[t] = o)), r && (d = o, null != t && (m[t] = o)), i && (f = o, null != t && (h[t] = o))
 }
-class b extends r.ZP.Store {
+class b extends Chunk442837.ZP.Store {
   getGlobalStats() {
     let e = e => null == e ? null : Math.floor((Date.now() - e) / 1e3);
     return {
-      approx_seconds_since_last_notification: e(c),
-      approx_seconds_since_last_mention: e(u),
-      approx_seconds_since_last_role_mention: e(d),
-      approx_seconds_since_last_everyone_mention: e(f)
+      approx_seconds_since_last_notification: module(c),
+      approx_seconds_since_last_mention: module(u),
+      approx_seconds_since_last_role_mention: module(d),
+      approx_seconds_since_last_everyone_mention: module(f)
     }
   }
   getStats(e) {
@@ -76,7 +77,7 @@ class b extends r.ZP.Store {
     }
   }
 }
-let y = new b(i.Z, {
+let y = new b(Chunk570140.Z, {
   CONNECTION_OPEN: g,
   MESSAGE_NOTIFICATION_SHOWN: E
 })

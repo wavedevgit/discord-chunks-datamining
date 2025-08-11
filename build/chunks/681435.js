@@ -1,26 +1,27 @@
 /** Chunk was on 1272 **/
-n.d(t, {
+/** chunk id: 681435, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => g
-}), n(388685);
-var r = n(73800),
-  i = n(115434),
-  l = n(264181),
-  a = n(442837),
-  o = n(704215),
-  s = n(481060),
-  c = n(243778),
-  u = n(874703),
-  d = n(794324),
-  p = n(302800),
-  f = n(921944);
+}), require("./388685.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk115434 = require("./115434.js"),
+  Chunk264181 = require("./264181.js"),
+  Chunk442837 = require("./442837.js"),
+  Chunk704215 = require("./704215.js"),
+  Chunk481060 = require("./481060.js"),
+  Chunk243778 = require("./243778.jsx"),
+  Chunk874703 = require("./874703.js"),
+  Chunk794324 = require("./794324.js"),
+  Chunk302800 = require("./302800.js"),
+  Chunk921944 = require("./921944.js");
 let h = (e, t) => {
     var n, r, i, a, o, s, c, u;
-    if ((null == t ? void 0 : t.type) === l.Z.COACHTIP || e.hasPreviewAssets) {
+    if ((null == t ? true : t.type) === l.Z.COACHTIP || e.hasPreviewAssets) {
       let i = null != t ? {
         title: () => t.title,
         body: () => t.body,
         assetIds: t.decorations,
-        entrypointBackgroundStyle: null == (n = t.refTargetBackground) ? void 0 : n.style
+        entrypointBackgroundStyle: null == (n = t.refTargetBackground) ? true : n.style
       } : {
         title: () => "",
         assetIds: []
@@ -35,9 +36,9 @@ let h = (e, t) => {
             var r;
             r = n[t], t in e ? Object.defineProperty(e, t, {
               value: r,
-              enumerable: !0,
-              configurable: !0,
-              writable: !0
+              enumerable: true,
+              configurable: true,
+              writable: true
             }) : e[t] = r
           })
         }
@@ -63,7 +64,7 @@ let h = (e, t) => {
         Object.defineProperty(c, e, Object.getOwnPropertyDescriptor(u, e))
       }), c
     }
-    if ((null == t ? void 0 : t.type) === l.Z.COACHMARK) {
+    if ((null == t ? true : t.type) === l.Z.COACHMARK) {
       let e = t.refTargetBackground;
       return {
         type: p.k2.COACHMARK,
@@ -71,10 +72,10 @@ let h = (e, t) => {
         body: () => t.body,
         assetDark: t.assetDark,
         assetLight: t.assetLight,
-        entrypointBackgroundStyle: null == e ? void 0 : e.style,
+        entrypointBackgroundStyle: null == e ? true : e.style,
         entryPointBackgroundAssets: {
-          srcDarkHovered: null == e || null == (a = e.asset) || null == (i = a.hovered) ? void 0 : i.dark,
-          srcLightHovered: null == e || null == (s = e.asset) || null == (o = s.hovered) ? void 0 : o.light
+          srcDarkHovered: null == e || null == (a = e.asset) || null == (i = a.hovered) ? true : i.dark,
+          srcLightHovered: null == e || null == (s = e.asset) || null == (o = s.hovered) ? true : o.light
         }
       }
     }
@@ -82,14 +83,14 @@ let h = (e, t) => {
   },
   g = () => {
     var e;
-    let t = (0, a.e7)([u.Z], () => u.Z.getMarketingBySurface(i.K.DESKTOP_SHOP_BUTTON)),
-      n = !(0, s.$sL)(),
-      [l, p] = (0, c.XR)(n ? o.z.COLLECTIBLES_SHOP_ENTRY_MARKETING : null, null != (e = null == t ? void 0 : t.version) ? e : 0, void 0, !0),
-      g = (0, d.mB)(t),
-      m = null != l ? h(g, t) : null,
-      b = r.useCallback(() => {
-        null != m && p(f.L.AUTO)
-      }, [m, p]);
+    let t = (0, Chunk442837.e7)([Chunk874703.Z], () => Chunk874703.Z.getMarketingBySurface(Chunk115434.K.DESKTOP_SHOP_BUTTON)),
+      n = !(0, Chunk481060.$sL)(),
+      [l, p] = (0, Chunk243778.XR)(require ? Chunk704215.z.COLLECTIBLES_SHOP_ENTRY_MARKETING : null, null != (e = null == exports ? true : exports.version) ? module : 0, true, true),
+      g = (0, Chunk794324.mB)(exports),
+      m = null != Chunk264181 ? h(g, exports) : null,
+      b = Chunk73800.useCallback(() => {
+        null != m && Chunk302800(Chunk921944.L.AUTO)
+      }, [m, Chunk302800]);
     return {
       shopButtonDisplayOptions: m,
       dismissShopButtonDC: b

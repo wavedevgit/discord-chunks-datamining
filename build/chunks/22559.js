@@ -1,5 +1,6 @@
 /** Chunk was on 37082 **/
-e.exports = {
+/** chunk id: 22559, original params: e,t,n (module,exports,require) **/
+module.exports = {
   microphoneUnit: "microphoneUnit_de2d78",
   microphoneUnitHeader: "microphoneUnitHeader_de2d78",
   warningCircle: "warningCircle_de2d78",

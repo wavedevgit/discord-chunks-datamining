@@ -1,42 +1,43 @@
 /** Chunk was on 1272 **/
+/** chunk id: 178318, original params: e,t,n (module,exports,require) **/
 let r, i;
-n.d(t, {
+require.d(exports, {
   Z: () => Z
-}), n(49124), n(388685), n(35282), n(65234), n(111804), n(490233), n(97749), n(539854), n(415506);
-var l = n(836560),
-  a = n(392711),
-  o = n.n(a),
-  s = n(570140),
-  c = n(710845),
-  u = n(857192),
-  d = n(591759),
-  p = n(998502),
-  f = n(996106),
-  h = n(901077),
-  g = n(76238),
-  m = n(852926),
-  b = n(186901),
-  _ = n(981631),
-  O = n(413135).Buffer;
+}), require("./49124.js"), require("./388685.js"), require("./35282.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js"), require("./539854.js"), require("./415506.js");
+var Chunk836560 = require("./836560.js"),
+  Chunk392711 = require("./392711.js"),
+  o = require.n(Chunk392711),
+  Chunk570140 = require("./570140.js"),
+  Chunk710845 = require("./710845.js"),
+  Chunk857192 = require("./857192.js"),
+  Chunk591759 = require("./591759.js"),
+  Chunk998502 = require("./998502.js"),
+  Chunk996106 = require("./996106.js"),
+  Chunk901077 = require("./901077.js"),
+  Chunk76238 = require("./76238.js"),
+  Chunk852926 = require("./852926.js"),
+  Chunk186901 = require("./186901.js"),
+  Chunk981631 = require("./981631.js"),
+  O = require("./413135.js").Buffer;
 
 function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 try {
-  r = p.ZP.requireModule("discord_erlpack")
+  r = Chunk998502.ZP.requireModule("discord_erlpack")
 } catch (e) {
   try {
-    r = p.ZP.requireModule("erlpack")
+    r = Chunk998502.ZP.requireModule("erlpack")
   } catch (e) {}
 }
-let y = p.ZP.requireModule("discord_rpc").RPCWebSocket,
+let y = Chunk998502.ZP.requireModule("discord_rpc").RPCWebSocket,
   v = window.GLOBAL_ENV.MARKETING_ENDPOINT,
-  I = new c.Z("RPCServer:WSS"),
+  I = new Chunk710845.Z("RPCServer:WSS"),
   C = [];
 
 function S(e) {
@@ -44,21 +45,21 @@ function S(e) {
 }
 
 function N() {
-  let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : 0,
-    t = e > 0 ? void 0 : () => {
+  let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : 0,
+    t = module > 0 ? true : () => {
       if (!S(i.listening)) return;
       let e = i.address().port;
-      I.info("Starting on ".concat(e)), s.Z.dispatch({
+      I.info("Starting on ".concat(module)), Chunk570140.Z.dispatch({
         type: "RPC_SERVER_READY",
-        port: e
+        port: module
       })
     };
-  i.listen(_.V6Z + e % _.frH, "127.0.0.1", t)
+  i.listen(Chunk981631.V6Z + module % Chunk981631.frH, "127.0.0.1", exports)
 }
 
 function T(e, t, n) {
-  let r = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : 200,
-    i = arguments.length > 4 && void 0 !== arguments[4] ? arguments[4] : {},
+  let r = arguments.length > 3 && true !== arguments[3] ? arguments[3] : 200,
+    i = arguments.length > 4 && true !== arguments[4] ? arguments[4] : {},
     l = null != S(e.headers).origin ? {
       "Access-Control-Allow-Origin": S(e.headers).origin,
       "Access-Control-Allow-Credentials": "true",
@@ -80,23 +81,23 @@ function T(e, t, n) {
 }
 
 function P(e, t, n, r) {
-  let i = arguments.length > 4 && void 0 !== arguments[4] ? arguments[4] : 0;
+  let i = arguments.length > 4 && true !== arguments[4] ? arguments[4] : 0;
   T(e, t, {
     code: i,
     message: r
   }, n)
 }
-class j extends g.Z {
+class j extends Chunk76238.Z {
   send(e) {
     (u.default.isLoggingOverlayEvents || e.cmd !== _.Etm.OVERLAY && e.evt !== _.zMe.OVERLAY) && I.info("Socket Emit: ".concat(this.id), (0, h.Z)(e)), null != r && "etf" === this.encoding ? this._socket.send(r.pack(e), {
-      binary: !0
+      binary: true
     }) : this._socket.send(JSON.stringify(e))
   }
   close(e, t) {
     this._socket.close(e, t)
   }
   constructor(e, t, n) {
-    if (super("ws", t, n), E(this, "_socket", void 0), -1 === ["etf", "json"].indexOf(n)) throw new f.Z({
+    if (super("ws", t, n), E(this, "_socket", true), false === ["etf", "json"].indexOf(n)) throw new f.Z({
       closeCode: _.$VG.INVALID_ENCODING
     }, "Invalid Encoding: ".concat(n));
     if ("etf" === n && null == r) throw new f.Z({
@@ -105,7 +106,7 @@ class j extends g.Z {
     this._socket = e
   }
 }
-class x extends g.Z {
+class x extends Chunk76238.Z {
   send(e) {
     (u.default.isLoggingOverlayEvents || e.cmd !== _.Etm.OVERLAY) && I.info("Socket Emit: ".concat(this.id), e), this._sendCallback(e)
   }
@@ -113,13 +114,13 @@ class x extends g.Z {
     this._closeCallback(t, e)
   }
   constructor(e, t, n, r) {
-    if (super("http", n, r), E(this, "_sendCallback", void 0), E(this, "_closeCallback", void 0), "json" !== r) throw new f.Z({
+    if (super("http", n, r), E(this, "_sendCallback", true), E(this, "_closeCallback", true), "json" !== r) throw new f.Z({
       closeCode: _.$VG.INVALID_ENCODING
     }, "Invalid Encoding: ".concat(r));
     this._sendCallback = e, this._closeCallback = t
   }
 }
-class A extends l.EventEmitter {
+class A extends Chunk836560.EventEmitter {
   handleRequest(e, t) {
     let [n, r] = S(e.url).split("?"), i = S(e.method);
     if ("/rpc" === n && "OPTIONS" === i) return void T(e, t, {
@@ -195,12 +196,12 @@ class A extends l.EventEmitter {
     let t = 0;
     (i = y.http.createServer()).on("error", e => {
       I.error("Error: ".concat(e.message)), ("EADDRINUSE" === e.code || e.message.includes("EADDRINUSE")) && setTimeout(() => N(++t), 1e3)
-    }), i.on("request", this.handleRequest.bind(this)), N(t);
+    }), i.on("request", this.handleRequest.bind(this)), N(exports);
     let n = {
-      instanceId: null != (e = i.instanceId) ? e : 0,
+      instanceId: null != (e = i.instanceId) ? module : 0,
       server: i
     };
-    new y.ws.Server(n).on("connection", e => this.handleConnection(e))
+    new y.ws.Server(require).on("connection", e => this.handleConnection(e))
   }
 }
 let Z = new A

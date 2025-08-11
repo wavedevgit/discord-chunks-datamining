@@ -1,32 +1,33 @@
 /** Chunk was on 1272 **/
-n.d(t, {
+/** chunk id: 635395, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => y
-}), n(388685);
-var r = n(73800),
-  i = n(442837),
-  l = n(846027),
-  a = n(230711),
-  o = n(91896),
-  s = n(849862),
-  c = n(888369),
-  u = n(131951),
-  d = n(292959),
-  p = n(19780),
-  f = n(699516),
-  h = n(606304),
-  g = n(358085),
-  m = n(998502),
-  b = n(981631);
-let _ = (0, g.isMac)() ? null : "DEFAULT";
-class O extends r.PureComponent {
+}), require("./388685.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk442837 = require("./442837.js"),
+  Chunk846027 = require("./846027.js"),
+  Chunk230711 = require("./230711.js"),
+  Chunk91896 = require("./91896.js"),
+  Chunk849862 = require("./849862.js"),
+  Chunk888369 = require("./888369.js"),
+  Chunk131951 = require("./131951.js"),
+  Chunk292959 = require("./292959.js"),
+  Chunk19780 = require("./19780.js"),
+  Chunk699516 = require("./699516.js"),
+  Chunk606304 = require("./606304.js"),
+  Chunk358085 = require("./358085.js"),
+  Chunk998502 = require("./998502.js"),
+  Chunk981631 = require("./981631.js");
+let _ = (0, Chunk358085.isMac)() ? null : "DEFAULT";
+class O extends Chunk73800.PureComponent {
   componentDidMount() {
-    m.ZP.setSystemTrayIcon(this.getIcon())
+    Chunk998502.ZP.setSystemTrayIcon(this.getIcon())
   }
   componentDidUpdate() {
-    m.ZP.setSystemTrayIcon(this.getIcon())
+    Chunk998502.ZP.setSystemTrayIcon(this.getIcon())
   }
   componentWillUnmount() {
-    m.ZP.setSystemTrayIcon(_)
+    Chunk998502.ZP.setSystemTrayIcon(_)
   }
   render() {
     return null
@@ -44,28 +45,28 @@ class O extends r.PureComponent {
       return (0, g.isMac)() && !r ? l : (0, g.isLinux)() || !r ? (i && (l = "UNREAD"), l) : l = e ? "DEAFENED" : t ? "MUTED" : n ? "SPEAKING" : "CONNECTED"
     }, t in this ? Object.defineProperty(this, t, {
       value: n,
-      enumerable: !0,
-      configurable: !0,
-      writable: !0
+      enumerable: true,
+      configurable: true,
+      writable: true
     }) : this[t] = n
   }
 }
 let E = () => null;
-g.isPlatformEmbedded && (m.ZP.on("SYSTEM_TRAY_TOGGLE_MUTE", () => l.Z.toggleSelfMute({
+Chunk358085.isPlatformEmbedded && (Chunk998502.ZP.on("SYSTEM_TRAY_TOGGLE_MUTE", () => Chunk846027.Z.toggleSelfMute({
   location: "System Tray"
-})), m.ZP.on("SYSTEM_TRAY_TOGGLE_DEAFEN", () => l.Z.toggleSelfDeaf()), m.ZP.on("SYSTEM_TRAY_OPEN_VOICE_SETTINGS", () => {
-  a.Z.open(b.oAB.VOICE)
-}), E = i.ZP.connectStores([p.Z, u.Z, h.Z, c.default, f.Z, d.Z, o.Z], () => {
-  let e = c.default.getTotalMentionCount(),
-    t = c.default.hasAnyUnread(),
-    n = (0, s.m$)([f.Z, o.Z]),
-    r = !d.Z.getDisableUnreadBadge() && !!(t || e + n > 0);
+})), Chunk998502.ZP.on("SYSTEM_TRAY_TOGGLE_DEAFEN", () => Chunk846027.Z.toggleSelfDeaf()), Chunk998502.ZP.on("SYSTEM_TRAY_OPEN_VOICE_SETTINGS", () => {
+  Chunk230711.Z.open(Chunk981631.oAB.VOICE)
+}), E = Chunk442837.ZP.connectStores([Chunk19780.Z, Chunk131951.Z, Chunk606304.Z, Chunk888369.default, Chunk699516.Z, Chunk292959.Z, Chunk91896.Z], () => {
+  let e = Chunk888369.default.getTotalMentionCount(),
+    t = Chunk888369.default.hasAnyUnread(),
+    n = (0, Chunk849862.m$)([Chunk699516.Z, Chunk91896.Z]),
+    r = !Chunk292959.Z.getDisableUnreadBadge() && !!(exports || module + require > 0);
   return {
-    connected: p.Z.isConnected(),
-    speaking: h.Z.isCurrentUserSpeaking(),
-    muted: u.Z.isSelfMute() || u.Z.isSelfMutedTemporarily(),
-    deafened: u.Z.isSelfDeaf(),
-    unread: r
+    connected: Chunk19780.Z.isConnected(),
+    speaking: Chunk606304.Z.isCurrentUserSpeaking(),
+    muted: Chunk131951.Z.isSelfMute() || Chunk131951.Z.isSelfMutedTemporarily(),
+    deafened: Chunk131951.Z.isSelfDeaf(),
+    unread: Chunk73800
   }
 })(O));
 let y = E

@@ -1,12 +1,13 @@
 /** Chunk was on web.js **/
+/** chunk id: 801814, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 
 function r(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -27,7 +28,7 @@ function i() {
 function o(e) {
   return "host" === e
 }
-n.d(t, {
+require.d(exports, {
   Z: () => a
 });
 class a {
@@ -61,7 +62,7 @@ class a {
       r = "".concat(n, "_download_ms_").concat(e.name),
       i = "".concat(n, "_bytes_").concat(e.name),
       a = Number((BigInt(e.now) - t.startTime + BigInt(999999)) / BigInt(1e6)),
-      s = !1 === e.receivedBytes ? 0 : e.receivedBytes;
+      s = false === e.receivedBytes ? 0 : e.receivedBytes;
     t.foreground ? (this._report.foreground_download_ms_total += a, this._report.foreground_bytes_total += s) : (this._report.background_download_ms_total += a, this._report.background_bytes_total += s), this.incrementReportField(r, a), this.incrementReportField(i, s), delete this._downloadingModules[e.name]
   }
   handleInstallingModule(e) {
@@ -84,7 +85,7 @@ class a {
       i = "min_version_".concat(e.name),
       a = "max_version_".concat(e.name),
       s = Number((BigInt(e.now) - t.startTime + BigInt(999999)) / BigInt(1e6));
-    t.foreground ? this._report.foreground_install_ms_total += s : this._report.background_install_ms_total += s, this.incrementReportField(r, s), this.setReportFieldMinimum(i, t.oldVersion), e.succeeded ? (!0 === e.delta ? this._report.num_delta_installed++ : this._report.num_full_installed++, this.setReportFieldMaximum(a, t.newVersion)) : this._report.num_failed++, delete this._installingModules[e.name]
+    t.foreground ? this._report.foreground_install_ms_total += s : this._report.background_install_ms_total += s, this.incrementReportField(r, s), this.setReportFieldMinimum(i, t.oldVersion), e.succeeded ? (true === e.delta ? this._report.num_delta_installed++ : this._report.num_full_installed++, this.setReportFieldMaximum(a, t.newVersion)) : this._report.num_failed++, delete this._installingModules[e.name]
   }
   trackEvent(e) {
     switch (e.type) {
@@ -111,6 +112,6 @@ class a {
     return this._report.num_full_installed + this._report.num_failed + this._report.num_delta_installed + this._report.foreground_bytes_total + this._report.background_bytes_total !== 0 && !(Object.keys(this._installingModules).length > 0) && !(Object.keys(this._downloadingModules).length > 0)
   }
   constructor() {
-    r(this, "_installingModules", {}), r(this, "_downloadingModules", {}), r(this, "_report", void 0), this._report = i()
+    r(this, "_installingModules", {}), r(this, "_downloadingModules", {}), r(this, "_report", true), this._report = i()
   }
 }

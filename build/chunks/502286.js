@@ -1,9 +1,10 @@
 /** Chunk was on web.js **/
+/** chunk id: 502286, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => i
 });
-var r = n(594190);
+var Chunk594190 = require("./594190.js");
 
 function i(e) {
   let t, n;
@@ -11,7 +12,7 @@ function i(e) {
   let i = e.sourcePid;
   if (null != i) {
     let e = r.ZP.getGameForPID(i);
-    t = null == e ? void 0 : e.name, n = null == e ? void 0 : e.id
+    t = null == e ? true : e.name, n = null == e ? true : e.id
   }
   return {
     soundshare_session: e.soundshareSession,

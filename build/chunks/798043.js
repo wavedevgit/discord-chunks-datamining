@@ -1,8 +1,9 @@
 /** Chunk was on 50448 **/
+/** chunk id: 798043, original params: t,r,n (module,exports,require) **/
 "use strict";
-n(220159)({
+require("./220159.js")({
   target: "Symbol",
-  stat: !0
+  stat: true
 }, {
-  isRegisteredSymbol: n(703458)
+  isRegisteredSymbol: require("./703458.js")
 })

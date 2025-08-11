@@ -1,14 +1,15 @@
 /** Chunk was on web.js **/
+/** chunk id: 981312, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   U: () => o
 });
-var r = n(442837),
-  i = n(594174);
+var Chunk442837 = require("./442837.js"),
+  Chunk594174 = require("./594174.js");
 
 function o() {
-  return !1 === (0, r.e7)([i.default], () => {
+  returnfalse === (0, Chunk442837.e7)([Chunk594174.default], () => {
     var e;
-    return null == (e = i.default.getCurrentUser()) ? void 0 : e.nsfwAllowed
+    return null == (e = Chunk594174.default.getCurrentUser()) ? true : module.nsfwAllowed
   })
 }

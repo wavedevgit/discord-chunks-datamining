@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 290511, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   FN: () => E,
   NE: () => c,
   NO: () => u,
@@ -19,10 +20,10 @@ n.d(t, {
   md: () => p,
   qm: () => f,
   yZ: () => v
-}), n(953529);
-var r = n(348327),
-  i = n.n(r),
-  o = n(388032);
+}), require("./953529.js");
+var Chunk348327 = require("./348327.js"),
+  i = require.n(Chunk348327),
+  Chunk388032 = require("./388032.js");
 
 function a(e, t) {
   if (null == e) return {};
@@ -61,7 +62,7 @@ var g = function(e) {
   }({});
 
 function y(e) {
-  if (e.options.length > 0) return !1;
+  if (e.options.length > 0) returnfalse;
   let t = O(),
     {
       id: n
@@ -77,11 +78,11 @@ function y(e) {
 function O() {
   return {
     id: String(Date.now()),
-    title: o.intl.string(o.t.vY91Cw),
+    title: Chunk388032.intl.string(Chunk388032.t.vY91Cw),
     options: [],
-    singleSelect: !1,
-    required: !1,
-    inOnboarding: !0,
+    singleSelect: false,
+    required: false,
+    inOnboarding: true,
     type: 0
   }
 }
@@ -91,8 +92,8 @@ function v(e) {
     id: String(Date.now()),
     title: "",
     options: [],
-    singleSelect: !1,
-    required: !1,
+    singleSelect: false,
+    required: false,
     inOnboarding: e,
     type: 0
   }
@@ -108,9 +109,9 @@ function I(e) {
         channel_ids: e.channelIds,
         role_ids: e.roleIds,
         emoji: e.emoji,
-        emoji_id: null == (t = e.emoji) ? void 0 : t.id,
-        emoji_name: null == (n = e.emoji) ? void 0 : n.name,
-        emoji_animated: null == (r = e.emoji) ? void 0 : r.animated,
+        emoji_id: null == (t = e.emoji) ? true : t.id,
+        emoji_name: null == (n = e.emoji) ? true : n.name,
+        emoji_animated: null == (r = e.emoji) ? true : r.animated,
         title: e.title,
         description: e.description
       }

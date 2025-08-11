@@ -1,5 +1,6 @@
 /** Chunk was on 75708 **/
-e.exports = {
+/** chunk id: 468590, original params: e,t,n (module,exports,require) **/
+module.exports = {
   payment: "payment_e9cb00",
   hoverablePayment: "hoverablePayment_e9cb00 payment_e9cb00",
   summaryInfo: "summaryInfo_e9cb00",

@@ -1,44 +1,45 @@
 /** Chunk was on 75708 **/
-n.d(t, {
+/** chunk id: 326528, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   b: () => d
 });
-var i = n(481060),
-  r = n(358085),
-  s = n(991346),
-  a = n(168308),
-  l = n(726985),
-  o = n(332325),
-  c = n(388032);
+var Chunk481060 = require("./481060.js"),
+  Chunk358085 = require("./358085.js"),
+  Chunk991346 = require("./991346.js"),
+  Chunk168308 = require("./168308.js"),
+  Chunk726985 = require("./726985.js"),
+  Chunk332325 = require("./332325.js"),
+  Chunk388032 = require("./388032.js");
 
 function d() {
-  let e = (0, a.bC)(),
-    t = (0, s.Gj)(l.s6.GAMES);
+  let e = (0, Chunk168308.bC)(),
+    t = (0, Chunk991346.Gj)(Chunk726985.s6.GAMES);
   let n = [{
-    id: o.Z.MY_GAMES,
-    title: c.intl.string(c.t["5DMgp6"]),
-    icon: i.xoD,
-    predicate: () => !r.isPlatformEmbedded,
-    setting: l.s6.GAMES_MY_GAMES
+    id: Chunk332325.Z.MY_GAMES,
+    title: Chunk388032.intl.string(Chunk388032.t["5DMgp6"]),
+    icon: Chunk481060.xoD,
+    predicate: () => !Chunk358085.isPlatformEmbedded,
+    setting: Chunk726985.s6.GAMES_MY_GAMES
   }, {
-    id: o.Z.CLIPS,
-    title: c.intl.string(c.t.z2jK6e),
-    icon: i.AlX,
-    setting: l.s6.GAMES_CLIPS
+    id: Chunk332325.Z.CLIPS,
+    title: Chunk388032.intl.string(Chunk388032.t.z2jK6e),
+    icon: Chunk481060.AlX,
+    setting: Chunk726985.s6.GAMES_CLIPS
   }, {
-    id: o.Z.OVERLAY,
-    title: c.intl.string(c.t.bNqkDw),
-    icon: i.n6r,
-    predicate: () => !e,
-    setting: l.s6.GAMES_OVERLAY
+    id: Chunk332325.Z.OVERLAY,
+    title: Chunk388032.intl.string(Chunk388032.t.bNqkDw),
+    icon: Chunk481060.n6r,
+    predicate: () => !module,
+    setting: Chunk726985.s6.GAMES_OVERLAY
   }, {
-    id: o.Z.ACTIVITY_PRIVACY,
-    title: c.intl.string(c.t.Cq98yM),
-    icon: i.qOE,
-    setting: l.s6.GAMES_ACTIVITY_PRIVACY
+    id: Chunk332325.Z.ACTIVITY_PRIVACY,
+    title: Chunk388032.intl.string(Chunk388032.t.Cq98yM),
+    icon: Chunk481060.qOE,
+    setting: Chunk726985.s6.GAMES_ACTIVITY_PRIVACY
   }].filter(e => null == e.predicate || !e.predicate());
-  if (null != t && t.size > 0) {
-    let e = n.filter(e => t.has(e.setting));
-    return e.length > 0 ? e : n
+  if (null != exports && exports.size > 0) {
+    let e = require.filter(e => t.has(e.setting));
+    return module.length > 0 ? module : require
   }
-  return n
+  return require
 }

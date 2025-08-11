@@ -1,30 +1,31 @@
 /** Chunk was on web.js **/
+/** chunk id: 51062, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => v
-}), n(388685);
-var r = n(73800),
-  i = n(710251),
-  o = n(442837),
-  a = n(456007),
-  s = n(998698),
-  l = n(541716),
-  c = n(887490),
-  u = n(271383),
-  d = n(496675),
-  f = n(246946),
-  _ = n(594174),
-  p = n(106824),
-  h = n(691841),
-  m = n(981631),
-  g = n(185923);
+}), require("./388685.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk710251 = require("./710251.js"),
+  Chunk442837 = require("./442837.js"),
+  Chunk456007 = require("./456007.js"),
+  Chunk998698 = require("./998698.js"),
+  Chunk541716 = require("./541716.js"),
+  Chunk887490 = require("./887490.js"),
+  Chunk271383 = require("./271383.js"),
+  Chunk496675 = require("./496675.js"),
+  Chunk246946 = require("./246946.js"),
+  Chunk594174 = require("./594174.js"),
+  Chunk106824 = require("./106824.js"),
+  Chunk691841 = require("./691841.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk185923 = require("./185923.js");
 
 function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -66,7 +67,7 @@ function v(e, t, n) {
   } = e, [D, L] = r.useState(() => (0, p.PA)()), x = (0, i.Z)(), M = (0, o.e7)([u.ZP, _.default], () => {
     var e, t;
     let n = _.default.getCurrentUser();
-    return null != (t = null != P.guild_id && null != n ? null == (e = u.ZP.getMember(P.guild_id, n.id)) ? void 0 : e.isPending : null) && t
+    return null != (t = null != P.guild_id && null != n ? null == (e = u.ZP.getMember(P.guild_id, n.id)) ? true : e.isPending : null) && t
   }), {
     canMentionEveryone: k,
     hidePersonalInformation: j
@@ -84,22 +85,22 @@ function v(e, t, n) {
     scrollerRef: n,
     state: D,
     onFocus: e => Y.setSelectedIndex(e)
-  }), Z = null == (E = e.editorRef.current) ? void 0 : E.getCurrentWord(), F = null == (y = e.editorRef.current) ? void 0 : y.getSlateEditor(), V = null;
-  null != F && (V = null != (A = null == (S = c.bN.getSelectedParentOfType(F, p.un)) ? void 0 : S[0]) ? A : null);
+  }), Z = null == (E = e.editorRef.current) ? true : E.getCurrentWord(), F = null == (y = e.editorRef.current) ? true : y.getSlateEditor(), V = null;
+  null != F && (V = null != (A = null == (S = c.bN.getSelectedParentOfType(F, p.un)) ? true : S[0]) ? A : null);
   let H = O(b({}, e), {
       navigator: B,
       activeCommand: U,
       activeCommandOption: G,
       activeInlineAutocompleteInput: V,
-      canMentionUsers: null != (N = null == (v = w.users) ? void 0 : v.allowMentioning) && N,
+      canMentionUsers: null != (N = null == (v = w.users) ? true : v.allowMentioning) && N,
       canMentionEveryone: k,
       hidePersonalInformation: j,
       hideMentionDescription: w === l.Ie.RULES_INPUT,
       emojiIntention: w === l.Ie.RULES_INPUT ? g.Hz.COMMUNITY_CONTENT : g.Hz.CHAT,
-      currentWord: null != (C = null == Z ? void 0 : Z.word) ? C : "",
-      currentWordIsAtStart: (null == Z ? void 0 : Z.isAtStart) === !0,
+      currentWord: null != (C = null == Z ? true : Z.word) ? C : "",
+      currentWordIsAtStart: (null == Z ? true : Z.isAtStart) === true,
       optionText: null != G ? (0, a.KF)({
-        [G.name]: null != (R = null == (I = e.editorRef.current) ? void 0 : I.getCurrentCommandOptionValue()) ? R : []
+        [G.name]: null != (R = null == (I = e.editorRef.current) ? true : I.getCurrentCommandOptionValue()) ? R : []
       }, G.name) : ""
     }),
     [Y] = r.useState(() => new p.ZP(H));
@@ -112,7 +113,7 @@ function v(e, t, n) {
     }
   }, [x, Y]), r.useEffect(() => {
     var e;
-    let t = null == (e = D.query) ? void 0 : e.typeInfo.stores;
+    let t = null == (e = D.query) ? true : e.typeInfo.stores;
     if (null != t) {
       let e = () => Y.queryResults();
       for (let n of t) n.addChangeListener(e);
@@ -120,5 +121,5 @@ function v(e, t, n) {
         for (let n of t) n.removeChangeListener(e)
       }
     }
-  }, [Y, null == (T = D.query) ? void 0 : T.typeInfo]), [D, Y, B]
+  }, [Y, null == (T = D.query) ? true : T.typeInfo]), [D, Y, B]
 }

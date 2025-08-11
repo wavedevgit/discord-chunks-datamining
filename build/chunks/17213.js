@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 17213, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   wrapper: "wrapper_ac2cfb",
   icon: "icon_ac2cfb",
   close: "close_ac2cfb",

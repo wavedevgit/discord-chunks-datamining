@@ -1,27 +1,28 @@
 /** Chunk was on web.js **/
+/** chunk id: 152089, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   FW: () => f,
   fZ: () => p,
   py: () => h
-}), n(388685), n(415506);
-var r = n(512722),
-  i = n.n(r),
-  o = n(911969),
-  a = n(581364),
-  s = n(752305),
-  l = n(255963),
-  c = n(365704),
-  u = n(590921),
-  d = n(185923);
+}), require("./388685.js"), require("./415506.js");
+var Chunk512722 = require("./512722.js"),
+  i = require.n(Chunk512722),
+  Chunk911969 = require("./911969.js"),
+  Chunk581364 = require("./581364.js"),
+  Chunk752305 = require("./752305.js"),
+  Chunk255963 = require("./255963.js"),
+  Chunk365704 = require("./365704.js"),
+  Chunk590921 = require("./590921.js"),
+  Chunk185923 = require("./185923.js");
 
 function f(e) {
   var t;
   let {
     activeCommandOption: n,
-    canMentionUsers: r = !0,
-    canMentionRoles: i = !0,
-    canMentionChannels: l = !0,
+    canMentionUsers: r = true,
+    canMentionRoles: i = true,
+    canMentionChannels: l = true,
     canMentionEveryone: c,
     useNewSlashCommands: d,
     canOnlyUseTextCommands: f,
@@ -43,11 +44,11 @@ function f(e) {
       user: u.h3.DENY
     },
     commands: u.L8.DISABLED,
-    allowStickers: !0 === _,
-    allowSoundmoji: !0 === p,
+    allowStickers: true === _,
+    allowSoundmoji: true === p,
     forNonStringCommandOption: null != n && n.type !== o.jw.STRING,
-    hideMentionDescription: !0 === h,
-    hidePersonalInformation: !0 === m,
+    hideMentionDescription: true === h,
+    hidePersonalInformation: true === m,
     chatInputType: g,
     emojiIntention: E,
     sendMessage: y,
@@ -69,14 +70,14 @@ function f(e) {
     },
     getCommandOptionValues: () => {
       var e;
-      return null == (e = b.current) ? void 0 : e.getCommandOptionValues()
+      return null == (e = b.current) ? true : e.getCommandOptionValues()
     }
   };
   if (null != n) {
     let e = (0, a.$z)(n);
-    e.canMentionChannels && (I.mentions.channel = u.nS.ALLOW_SELECTABLE), e.canMentionEveryone && (I.mentions.global = e.canMentionHere ? u.VV.ALLOW_EVERYONE_OR_HERE : u.VV.ALLOW_EVERYONE), e.canMentionRoles && (I.mentions.role = e.canMentionNonMentionableRoles ? u.Fw.ALLOW_ALL : u.Fw.ALLOW_MENTIONABLE), e.canMentionUsers && (I.mentions.user = e.canMentionAnyGuildUser ? u.h3.ALLOW_GUILD : u.h3.ALLOW_CHANNEL), I.hideMentionDescription = !0
+    e.canMentionChannels && (I.mentions.channel = u.nS.ALLOW_SELECTABLE), e.canMentionEveryone && (I.mentions.global = e.canMentionHere ? u.VV.ALLOW_EVERYONE_OR_HERE : u.VV.ALLOW_EVERYONE), e.canMentionRoles && (I.mentions.role = e.canMentionNonMentionableRoles ? u.Fw.ALLOW_ALL : u.Fw.ALLOW_MENTIONABLE), e.canMentionUsers && (I.mentions.user = e.canMentionAnyGuildUser ? u.h3.ALLOW_GUILD : u.h3.ALLOW_CHANNEL), I.hideMentionDescription = true
   } else l && (I.mentions.channel = u.nS.ALLOW_SELECTABLE), i && (I.mentions.role = u.Fw.ALLOW_MENTIONABLE), r && (I.mentions.user = u.h3.ALLOW_CHANNEL), c && (I.mentions.global = u.VV.ALLOW_EVERYONE_OR_HERE);
-  return (null == (t = g.commands) ? void 0 : t.enabled) && (d ? I.commands = f ? u.L8.NEW_TEXT_ONLY : u.L8.NEW : I.commands = u.L8.OLD_BUILT_INS), null != n && null != n.channelTypes && (I.allowedChannelTypes = n.channelTypes), I
+  return (null == (t = g.commands) ? true : t.enabled) && (d ? I.commands = f ? u.L8.NEW_TEXT_ONLY : u.L8.NEW : I.commands = u.L8.OLD_BUILT_INS), null != n && null != n.channelTypes && (I.allowedChannelTypes = n.channelTypes), I
 }
 
 function _(e) {
@@ -89,7 +90,7 @@ function _(e) {
     options: a
   } = e, s = c.W[t];
   if (null != s.sentinel) {
-    if (!i.startsWith(s.sentinel)) return !1;
+    if (!i.startsWith(s.sentinel)) returnfalse;
     i = i.substring(s.sentinel.length)
   }
   return null == s.matches || !!s.matches(n, r, i, o, a)
@@ -117,7 +118,7 @@ function p(e) {
             channel: t,
             guild: n,
             query: s,
-            isAtStart: !1,
+            isAtStart: false,
             options: r
           })) {
           m = {
@@ -132,7 +133,7 @@ function p(e) {
           channel: t,
           guild: n,
           query: f,
-          isAtStart: !1,
+          isAtStart: false,
           options: r
         })) return {
         type: e,
@@ -145,7 +146,7 @@ function p(e) {
           channel: t,
           guild: n,
           query: f,
-          isAtStart: !1,
+          isAtStart: false,
           options: r
         })) return {
         type: e,
@@ -158,13 +159,13 @@ function p(e) {
           channel: t,
           guild: n,
           query: s,
-          isAtStart: !0,
+          isAtStart: true,
           options: r
         })) {
         m = {
           type: e,
           typeInfo: I,
-          query: s.substring(null != (E = null == (g = I.sentinel) ? void 0 : g.length) ? E : 0)
+          query: s.substring(null != (E = null == (g = I.sentinel) ? true : g.length) ? E : 0)
         };
         break
       }
@@ -196,7 +197,7 @@ function p(e) {
         m = {
           type: e,
           typeInfo: I,
-          query: o.substring(null != (y = null == (b = I.sentinel) ? void 0 : b.length) ? y : 0)
+          query: o.substring(null != (y = null == (b = I.sentinel) ? true : b.length) ? y : 0)
         };
         break
       }
@@ -216,7 +217,7 @@ function p(e) {
       m = {
         type: e,
         typeInfo: I,
-        query: o.substring(null != (v = null == (O = I.sentinel) ? void 0 : O.length) ? v : 0)
+        query: o.substring(null != (v = null == (O = I.sentinel) ? true : O.length) ? v : 0)
       };
       break
     }

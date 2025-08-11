@@ -1,5 +1,6 @@
 /** Chunk was on 67127 **/
-e.exports = {
+/** chunk id: 64684, original params: e,t,n (module,exports,require) **/
+module.exports = {
   verifyConnectedAccount: "verifyConnectedAccount_fb52a4",
   logos: "logos_fb52a4",
   logosDivider: "logosDivider_fb52a4",

@@ -1,1 +1,0 @@
-{"id":"880398","type":"experiment","data":{"kind":"user","id":"2025-06_mobile_shop_card_v2","label":"Mobile Shop Card V2","defaultConfig":{"showMobileShopCardV2":false},"commonTriggerPoint":"l.$P.COLLECTIBLES_SHOP_OPEN","treatments":[{"id":1,"label":"Use mobile shop card v2","config":{"showMobileShopCardV2":false}}]},"fromModule":{"id":"45620"}}

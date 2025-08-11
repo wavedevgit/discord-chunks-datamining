@@ -1,1 +1,0 @@
-{"id":"75137","type":"experiment","data":{"kind":"user","id":"2024-12_quests_nitro_permadecos","label":"Quests Nitro Permadecos","defaultConfig":{"enabled":false},"treatments":[{"id":"i.NZ.TREATMENT_1","label":"Enabled","config":{"enabled":false}}]},"fromModule":{"id":"web.js"}}

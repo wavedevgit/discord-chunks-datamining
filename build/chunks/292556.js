@@ -1,18 +1,19 @@
 /** Chunk was on web.js **/
+/** chunk id: 292556, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.r(t), n.d(t, {
+require.r(exports), require.d(exports, {
   default: () => u
 });
-var r = n(570140),
-  i = n(626135),
-  o = n(981631);
+var Chunk570140 = require("./570140.js"),
+  Chunk626135 = require("./626135.js"),
+  Chunk981631 = require("./981631.js");
 
 function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -129,7 +130,7 @@ let u = {
     })
   },
   clickedNotification() {
-    r.Z.dispatch({
+    Chunk570140.Z.dispatch({
       type: "NOTIFICATION_CLICK"
     })
   }

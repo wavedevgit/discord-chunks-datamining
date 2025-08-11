@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 734506, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   questRewardTile: "questRewardTile__28141",
   rewardHighlight: "rewardHighlight__28141",
   questRewardTileInteractive: "questRewardTileInteractive__28141",

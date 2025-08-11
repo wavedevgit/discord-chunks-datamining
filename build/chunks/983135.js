@@ -1,32 +1,33 @@
 /** Chunk was on 58227 **/
-n.d(t, {
+/** chunk id: 983135, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   $K: () => x,
   IG: () => v,
   Nb: () => _,
   Ts: () => j,
   Wy: () => b,
   di: () => D
-}), n(388685);
-var l = n(570140),
-  i = n(668781),
-  r = n(479531),
-  s = n(983736),
-  a = n(45966),
-  o = n(819553),
-  c = n(637853),
-  d = n(17181),
-  u = n(962086),
-  m = n(225675),
-  h = n(592125),
-  I = n(430824),
-  g = n(823379),
-  N = n(434404),
-  f = n(889369),
-  S = n(570961),
-  p = n(84658),
-  E = n(176505),
-  T = n(290511),
-  O = n(388032);
+}), require("./388685.js");
+var Chunk570140 = require("./570140.js"),
+  Chunk668781 = require("./668781.js"),
+  Chunk479531 = require("./479531.js"),
+  Chunk983736 = require("./983736.js"),
+  Chunk45966 = require("./45966.js"),
+  Chunk819553 = require("./819553.js"),
+  Chunk637853 = require("./637853.js"),
+  Chunk17181 = require("./17181.js"),
+  Chunk962086 = require("./962086.js"),
+  Chunk225675 = require("./225675.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk430824 = require("./430824.js"),
+  Chunk823379 = require("./823379.js"),
+  Chunk434404 = require("./434404.js"),
+  Chunk889369 = require("./889369.js"),
+  Chunk570961 = require("./570961.js"),
+  Chunk84658 = require("./84658.js"),
+  Chunk176505 = require("./176505.js"),
+  Chunk290511 = require("./290511.js"),
+  Chunk388032 = require("./388032.jsx");
 
 function x(e) {
   l.Z.dispatch({
@@ -72,11 +73,13 @@ async function j(e, t) {
 }
 
 function v(e, t) {
-  let n = p.xh.findIndex(e => e === t); - 1 !== n && n !== p.xh.length - 1 && x(p.xh[n + 1])
+  let n = p.xh.findIndex(e => e === t);
+  false !== n && n !== p.xh.length - 1 && x(p.xh[n + 1])
 }
 
 function b(e, t) {
-  let n = p.xh.findIndex(e => e === t); - 1 !== n && 0 !== n && x(p.xh[n - 1])
+  let n = p.xh.findIndex(e => e === t);
+  false !== n && 0 !== n && x(p.xh[n - 1])
 }
 async function D(e) {
   let t = I.Z.getGuild(e);
@@ -84,16 +87,16 @@ async function D(e) {
     type: m.z.NEW_MEMBER,
     roles: {},
     optInChannels: new Set,
-    optInEnabled: !1,
+    optInEnabled: false,
     onboardingResponses: new Set,
-    onboardingEnabled: !0,
+    onboardingEnabled: true,
     memberOptions: {
       isPending: (0, s.Dc)(t),
       flags: 0
     }
   }), o.ZP.resetOnboardingStatus(t.id), (0, d.EI)(t.id), await (0, d.default)({
     guildId: t.id,
-    isPreview: !0,
+    isPreview: true,
     returnChannelId: E.oC.GUILD_HOME
   }))
 }

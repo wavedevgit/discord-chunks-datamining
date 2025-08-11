@@ -1,5 +1,6 @@
 /** Chunk was on 12097 **/
-n.r(e.exports = {
+/** chunk id: 677234, original params: e,t,n (module,exports,require) **/
+require.r(module.exports = {
   auditLog: "auditLog__43dab",
   divider: "divider__43dab",
   header: "header__43dab",

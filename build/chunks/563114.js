@@ -1,14 +1,15 @@
 /** Chunk was on web.js **/
+/** chunk id: 563114, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   T: () => l,
   Z: () => p
-}), n(388685), n(704826), n(35282);
-var r = n(336317),
-  i = n(768581),
-  o = n(302221),
-  a = n(956664),
-  s = n(753090);
+}), require("./388685.js"), require("./704826.js"), require("./35282.js");
+var Chunk336317 = require("./336317.js"),
+  Chunk768581 = require("./768581.js"),
+  Chunk302221 = require("./302221.js"),
+  Chunk956664 = require("./956664.js"),
+  Chunk753090 = require("./753090.js");
 let l = new Set(["™", "™️", "\xa9", "\xa9️", "\xae", "\xae️"]);
 
 function c(e) {
@@ -28,7 +29,7 @@ function u(e) {
 function d(e) {
   let {
     palette: t,
-    shouldProcessMobileColors: n = !1
+    shouldProcessMobileColors: n = false
   } = e;
   return t
 }
@@ -40,10 +41,10 @@ async function f(e) {
   t = null != n ? i.ZP.getEmojiURL({
     id: n,
     size: 32,
-    animated: !1
+    animated: false
   }) : c(r);
   let s = await (0, a.OF)(t);
-  return null == s ? void 0 : s.map(e => {
+  return null == s ? true : s.map(e => {
     let [t, n, r] = e;
     return (0, o.vq)(t, n, r)
   })
@@ -57,7 +58,7 @@ function _(e) {
   } = e
 }
 let p = {
-  getURL: s.Z.makeMemoizer(c),
+  getURL: Chunk753090.Z.makeMemoizer(c),
   filterUnsupportedEmojis: u,
   applyPlatformToThemedEmojiColorPalette: d,
   getEmojiColors: f,

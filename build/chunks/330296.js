@@ -1,7 +1,8 @@
 /** Chunk was on web.js **/
+/** chunk id: 330296, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-var r = n(733359),
-  i = n(720379),
+var Chunk733359 = require("./733359.js"),
+  Chunk720379 = require("./720379.js"),
   o = function(e, t) {
     return e === t
   },
@@ -23,7 +24,7 @@ function l(e, t, n) {
     })
   }), s
 }
-e.exports = function(e) {
+module.exports = function(e) {
   var t = e.getCharacterList().map(function(e) {
       return e.getStyle()
     }).toList(),

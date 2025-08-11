@@ -1,7 +1,8 @@
 /** Chunk was on web.js **/
+/** chunk id: 186868, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-var r = n(434431),
+var Chunk434431 = require("./434431.js"),
   i = Math.floor;
-e.exports = Number.isInteger || function(e) {
+module.exports = Number.isInteger || function(e) {
   return !r(e) && isFinite(e) && i(e) === e
 }

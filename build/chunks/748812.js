@@ -1,7 +1,8 @@
 /** Chunk was on 22988 **/
-e.exports = {
+/** chunk id: 748812, original params: e,t,n (module,exports,require) **/
+module.exports = {
   creatorGuildCarousel: "creatorGuildCarousel__2485e",
-  guildCard: "guildCard__2485e " + n(551131).card,
+  guildCard: "guildCard__2485e " + require("./551131.js").card,
   guildCardHeader: "guildCardHeader__2485e",
   guildCardHeaderAvatar: "guildCardHeaderAvatar__2485e",
   guildCardHeaderTitle: "guildCardHeaderTitle__2485e",

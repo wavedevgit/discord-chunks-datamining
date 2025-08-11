@@ -1,18 +1,19 @@
 /** Chunk was on web.js **/
+/** chunk id: 794934, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   I: () => s
 });
-var r = n(87290),
-  i = n(685816),
-  o = n(565669);
+var Chunk87290 = require("./87290.js"),
+  Chunk685816 = require("./685816.js"),
+  Chunk565669 = require("./565669.js");
 
 function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 class s {
@@ -20,6 +21,6 @@ class s {
     return new s(e)
   }
   constructor(e) {
-    a(this, "subblocks", void 0), this.type = i.z.FEATURED, this.subblocks = e.subblocks.map(e => e.type === r.O.CATEGORY ? o.H.fromServer(e) : e)
+    a(this, "subblocks", true), this.type = i.z.FEATURED, this.subblocks = e.subblocks.map(e => e.type === r.O.CATEGORY ? o.H.fromServer(e) : e)
   }
 }

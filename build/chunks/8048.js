@@ -1,17 +1,18 @@
 /** Chunk was on 57961 **/
-i.r(e), i.d(e, {
+/** chunk id: 8048, original params: t,e,i (module,exports,require) **/
+require.r(exports), require.d(exports, {
   default: () => o
 });
-var n = i(512722),
-  r = i.n(n),
-  a = i(839766);
+var Chunk512722 = require("./512722.js"),
+  r = require.n(Chunk512722),
+  Chunk839766 = require("./839766.js");
 
 function s(t, e, i) {
   return e in t ? Object.defineProperty(t, e, {
     value: i,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : t[e] = i, t
 }
 let h = "undefined" != typeof WorkerGlobalScope && self instanceof WorkerGlobalScope;
@@ -30,10 +31,10 @@ class o {
     this.canvasContext.clearRect(0, 0, this.canvas.width, this.canvas.height)
   }
   draw(t) {
-    return null != this.animation && (this.clear(), this.animation.drawInto(this.canvasContext, t, this.canvas.width, this.canvas.height), !0)
+    return null != this.animation && (this.clear(), this.animation.drawInto(this.canvasContext, t, this.canvas.width, this.canvas.height), true)
   }
   drop() {
-    this.animate = !1, this.scheduleOrCancelTick(), a.Z.drop(this.key), this.animation = null, this.dropped = !0
+    this.animate = false, this.scheduleOrCancelTick(), Chunk839766.Z.drop(this.key), this.animation = null, this.dropped = true
   }
   scheduleOrCancelTick() {
     this.dropped || (this.hasInitialFrame ? this.requestAnimationFrame(this.animate && this.visible ? this.onAnimationTick : null) : this.requestAnimationFrame(this.onInitialAnimationTick))
@@ -51,10 +52,10 @@ class o {
     onInitialDraw: c,
     onError: u
   }) {
-    s(this, "canvas", void 0), s(this, "canvasContext", void 0), s(this, "animation", null), s(this, "dropped", void 0), s(this, "currentFrame", void 0), s(this, "currentFrameTime", void 0), s(this, "frameDuration", void 0), s(this, "key", void 0), s(this, "animate", void 0), s(this, "visible", void 0), s(this, "requestAnimationFrameId", void 0), s(this, "hasInitialFrame", void 0), s(this, "onInitialDraw", void 0), s(this, "onError", void 0), s(this, "onInitialAnimationTick", t => {
+    s(this, "canvas", true), s(this, "canvasContext", true), s(this, "animation", null), s(this, "dropped", true), s(this, "currentFrame", true), s(this, "currentFrameTime", true), s(this, "frameDuration", true), s(this, "key", true), s(this, "animate", true), s(this, "visible", true), s(this, "requestAnimationFrameId", true), s(this, "hasInitialFrame", true), s(this, "onInitialDraw", true), s(this, "onError", true), s(this, "onInitialAnimationTick", t => {
       if (this.requestAnimationFrameId = null, (performance.now() - t < 30 || h) && this.draw(0)) {
         var e;
-        this.resumeAnimation(), null == (e = this.onInitialDraw) || e.call(this), this.hasInitialFrame = !0
+        this.resumeAnimation(), null == (e = this.onInitialDraw) || e.call(this), this.hasInitialFrame = true
       }
       this.scheduleOrCancelTick()
     }), s(this, "onAnimationTick", t => {
@@ -64,7 +65,7 @@ class o {
       i > 0 && ((e - t < 12 || h) && (this.draw(this.currentFrame), this.currentFrame += i), this.currentFrameTime += i * this.frameDuration), this.scheduleOrCancelTick()
     });
     let m = t.getContext("2d");
-    r()(null != m, "couldn't get canvas 2d context."), this.canvas = t, this.canvasContext = m, this.animation = null, this.dropped = !1, this.currentFrame = 0, this.currentFrameTime = 0, this.frameDuration = 1e3, this.animate = l, this.visible = o, this.requestAnimationFrameId = null, this.hasInitialFrame = !1, this.onInitialDraw = c, this.onError = u, this.key = "".concat(e, ":").concat(t.width, ":").concat(t.height), a.Z.create(this.key, t.width, t.height, i, n).then(t => {
+    r()(null != m, "couldn't get canvas 2d context."), this.canvas = t, this.canvasContext = m, this.animation = null, this.dropped = false, this.currentFrame = 0, this.currentFrameTime = 0, this.frameDuration = 1e3, this.animate = l, this.visible = o, this.requestAnimationFrameId = null, this.hasInitialFrame = false, this.onInitialDraw = c, this.onError = u, this.key = "".concat(e, ":").concat(t.width, ":").concat(t.height), a.Z.create(this.key, t.width, t.height, i, n).then(t => {
       null != t && (this.dropped ? a.Z.drop(this.key) : (this.animation = t, this.frameDuration = 1e3 / t.frameRate, this.scheduleOrCancelTick()))
     }).catch(t => {
       null == u || u()

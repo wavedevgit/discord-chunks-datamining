@@ -1,0 +1,38 @@
+/** Chunk was on 37082 **/
+/** chunk id: 899457, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
+  Z: () => i,
+  a: () => a
+});
+var r, Chunk255367 = require("./255367.js");
+require("./73800.js");
+var Chunk481060 = require("./481060.js"),
+  a = ((r = {})[r.UNENROLLED = 0] = "UNENROLLED", r[r.ENROLLED = 1] = "ENROLLED", r[r.COMPLETED_25 = 2] = "COMPLETED_25", r[r.COMPLETED_50 = 3] = "COMPLETED_50", r[r.COMPLETED_75 = 4] = "COMPLETED_75", r[r.COMPLETED_100 = 5] = "COMPLETED_100", r[r.CLAIMED = 6] = "CLAIMED", r);
+let i = function(e) {
+  let {
+    onChange: t,
+    value: n
+  } = e;
+  return <o.xJW>{<o.vwX tag={o.RB0.H5}>{"User State"}</o.vwX>}{<o.R94><o.PhF aria-label={"User State"} options={[{
+          label: "Unenrolled",
+          value: 0
+        }, {
+          label: "Enrolled",
+          value: 1
+        }, {
+          label: "25% Complete",
+          value: 2
+        }, {
+          label: "50% Complete",
+          value: 3
+        }, {
+          label: "75% Complete",
+          value: 4
+        }, {
+          label: "100% Complete",
+          value: 5
+        }, {
+          label: "Claimed",
+          value: 6
+        }]} isSelected={e => e === n} select={t} serialize={String} /></o.R94>}</o.xJW>
+}

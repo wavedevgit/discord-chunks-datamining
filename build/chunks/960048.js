@@ -1,19 +1,20 @@
 /** Chunk was on web.js **/
+/** chunk id: 960048, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => f
-}), n(388685), n(415506);
-var r = n(464847),
-  i = n(289182),
-  o = n(358085),
-  a = n(998502);
+}), require("./388685.js"), require("./415506.js");
+var Chunk464847 = require("./464847.js"),
+  Chunk289182 = require("./289182.js"),
+  Chunk358085 = require("./358085.js"),
+  Chunk998502 = require("./998502.js");
 
 function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -49,15 +50,15 @@ function u(e, t) {
 
 function d() {
   var e, t, n, r, i, s;
-  let l = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
-  o.isPlatformEmbedded && a.ZP.updateCrashReporter({
-    user_id: null != (e = l.id) ? e : "",
-    username: null != (t = l.username) ? t : "",
-    email: null != (n = l.email) ? n : "",
+  let l = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {};
+  Chunk358085.isPlatformEmbedded && Chunk998502.ZP.updateCrashReporter({
+    user_id: null != (e = l.id) ? module : "",
+    username: null != (t = l.username) ? exports : "",
+    email: null != (n = l.email) ? require : "",
     sentry: {
       user: {
-        id: null != (r = l.id) ? r : "",
-        username: null != (i = l.username) ? i : "",
+        id: null != (r = l.id) ? Chunk464847 : "",
+        username: null != (i = l.username) ? Chunk289182 : "",
         email: null != (s = l.email) ? s : ""
       }
     }
@@ -76,7 +77,7 @@ let f = {
   },
   clearUser() {
     var e;
-    null == (e = window.DiscordSentry) || e.getCurrentScope().setUser(null), d()
+    null == (e = window.DiscordSentry) || module.getCurrentScope().setUser(null), d()
   },
   setTags(e) {
     var t;
@@ -101,11 +102,11 @@ let f = {
       var n;
       t.setExtras(o.extra), t.setTag("crash", "true"), t.setLevel("fatal"), t.addEventProcessor(e => {
         var t, n;
-        let r = null == (n = e.exception) || null == (t = n.values) ? void 0 : t[0];
+        let r = null == (n = e.exception) || null == (t = n.values) ? true : t[0];
         return null != r && (r.mechanism = u(l({}, r.mechanism), {
-          handled: !1
+          handled: false
         })), e
-      }), r = null == (n = window.DiscordSentry) ? void 0 : n.captureException(e)
+      }), r = null == (n = window.DiscordSentry) ? true : n.captureException(e)
     }), r
   },
   captureMessage(e, t) {

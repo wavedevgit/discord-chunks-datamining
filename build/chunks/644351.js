@@ -1,15 +1,16 @@
 /** Chunk was on web.js **/
+/** chunk id: 644351, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-var r = n(98405),
-  i = n(127849),
-  o = n(391246),
-  a = n(108015),
+var Chunk98405 = require("./98405.js"),
+  Chunk127849 = require("./127849.js"),
+  Chunk391246 = require("./391246.js"),
+  Chunk108015 = require("./108015.js"),
   s = "ArrayBuffer",
-  l = o[s];
-r({
-  global: !0,
-  constructor: !0,
-  forced: i[s] !== l
+  l = Chunk391246[s];
+Chunk98405({
+  global: true,
+  constructor: true,
+  forced: Chunk127849[s] !== l
 }, {
   ArrayBuffer: l
-}), a(s)
+}), Chunk108015(s)

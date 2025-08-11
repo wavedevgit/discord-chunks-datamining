@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 883658, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   checkboxWrapper: "checkboxWrapper_f525d3",
   row: "row_f525d3",
   checked: "checked_f525d3",

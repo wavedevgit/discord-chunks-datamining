@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 39300, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   defaultColor: "defaultColor__4bd52",
   lineClamp1: "lineClamp1__4bd52",
   lineClamp2Plus: "lineClamp2Plus__4bd52",

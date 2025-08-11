@@ -1,9 +1,10 @@
 /** Chunk was on web.js **/
+/** chunk id: 72689, original params: e (module,exports,re quire) **/
 "use strict";
 var t = String.prototype.replace,
   n = /%20/g,
   r = "RFC3986";
-e.exports = {
+module.exports = {
   default: r,
   formatters: {
     RFC1738: function(e) {

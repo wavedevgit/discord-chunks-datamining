@@ -1,16 +1,17 @@
 /** Chunk was on web.js **/
+/** chunk id: 252982, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => a
 });
-var r = n(81825);
+var Chunk81825 = require("./81825.js");
 
 function i(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -26,10 +27,10 @@ function o(e) {
   }
   return e
 }
-class a extends r.Z {
+class a extends Chunk81825.Z {
   constructor(e) {
     var t, n;
-    super(), i(this, "id", void 0), i(this, "layoutId", void 0), i(this, "type", void 0), i(this, "anchor", void 0), i(this, "size", void 0), i(this, "minSize", void 0), i(this, "pinned", void 0), i(this, "zIndex", void 0), i(this, "opacity", void 0), i(this, "meta", void 0), this.id = e.id || "", this.layoutId = e.layoutId || "", this.type = e.type;
+    super(), i(this, "id", true), i(this, "layoutId", true), i(this, "type", true), i(this, "anchor", true), i(this, "size", true), i(this, "minSize", true), i(this, "pinned", true), i(this, "zIndex", true), i(this, "opacity", true), i(this, "meta", true), this.id = e.id || "", this.layoutId = e.layoutId || "", this.type = e.type;
     let {
       top: r,
       left: a,
@@ -39,7 +40,7 @@ class a extends r.Z {
       top: 0,
       left: 0
     };
-    "number" == typeof s ? r = void 0 : s = void 0, "number" == typeof l ? a = void 0 : l = void 0, this.anchor = {
+    "number" == typeof s ? r = true : s = true, "number" == typeof l ? a = true : l = true, this.anchor = {
       top: r,
       left: a,
       bottom: s,
@@ -48,8 +49,8 @@ class a extends r.Z {
       width: 0,
       height: 0
     }, e.size), this.minSize = o({
-      width: void 0,
-      height: void 0
+      width: true,
+      height: true
     }, e.minSize), this.pinned = !!e.pinned, this.zIndex = e.zIndex || 0, this.opacity = null != (n = e.opacity) ? n : 1, this.meta = o({}, e.meta)
   }
 }

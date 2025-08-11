@@ -1,16 +1,17 @@
 /** Chunk was on 75708 **/
-n.d(t, {
+/** chunk id: 620212, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   U: () => l
 });
-var i = n(592125),
-  r = n(944486),
-  s = n(585483),
-  a = n(981631);
+var Chunk592125 = require("./592125.js"),
+  Chunk944486 = require("./944486.js"),
+  Chunk585483 = require("./585483.js"),
+  Chunk981631 = require("./981631.js");
 let l = {
   binds: ["mod+shift+u"],
-  comboKeysBindGlobal: !0,
+  comboKeysBindGlobal: true,
   action() {
-    let e = i.Z.getChannel(r.Z.getChannelId());
-    return null == e || e.isManaged() || s.S.dispatch(a.CkL.UPLOAD_FILE), !1
+    let e = Chunk592125.Z.getChannel(Chunk944486.Z.getChannelId());
+    return null == module || module.isManaged() || Chunk585483.S.dispatch(Chunk981631.CkL.UPLOAD_FILE), false
   }
 }

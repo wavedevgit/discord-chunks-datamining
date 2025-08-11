@@ -1,25 +1,26 @@
 /** Chunk was on web.js **/
+/** chunk id: 230711, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => g
-}), n(415506);
-var r = n(544891),
-  i = n(433517),
-  o = n(570140),
-  a = n(330055),
-  s = n(663389),
-  l = n(546796),
-  c = n(37234),
-  u = n(981631),
-  d = n(792101),
-  f = n(388032);
+}), require("./415506.js");
+var Chunk544891 = require("./544891.js"),
+  Chunk433517 = require("./433517.js"),
+  Chunk570140 = require("./570140.js"),
+  Chunk330055 = require("./330055.js"),
+  Chunk663389 = require("./663389.js"),
+  Chunk546796 = require("./546796.js"),
+  Chunk37234 = require("./37234.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk792101 = require("./792101.js"),
+  Chunk388032 = require("./388032.js");
 
 function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -54,20 +55,20 @@ function m(e, t) {
 }
 let g = {
   open() {
-    let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
-      t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : null,
-      n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {
-        openWithoutBackstack: !1
+    let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : null,
+      t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : null,
+      n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : {
+        openWithoutBackstack: false
       };
-    o.Z.dispatch(p({
+    Chunk570140.Z.dispatch(p({
       type: "USER_SETTINGS_MODAL_OPEN",
-      section: e,
-      subsection: t
-    }, n)), (0, c.jN)(u.S9g.USER_SETTINGS)
+      section: module,
+      subsection: exports
+    }, require)), (0, Chunk37234.jN)(Chunk981631.S9g.USER_SETTINGS)
   },
   init: function(e) {
-    let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : null,
-      n = arguments.length > 2 ? arguments[2] : void 0;
+    let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : null,
+      n = arguments.length > 2 ? arguments[2] : true;
     o.Z.dispatch(p({
       type: "USER_SETTINGS_MODAL_INIT",
       section: e,
@@ -75,14 +76,14 @@ let g = {
     }, n))
   },
   close() {
-    let e = s.Z.onClose;
-    o.Z.dispatch({
+    let e = Chunk663389.Z.onClose;
+    Chunk570140.Z.dispatch({
       type: "USER_SETTINGS_MODAL_CLOSE"
-    }), null != e && e()
+    }), null != module && module()
   },
   setSection(e) {
-    let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : null,
-      n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {};
+    let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : null,
+      n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : {};
     o.Z.dispatch(p({
       type: "USER_SETTINGS_MODAL_SET_SECTION",
       section: e,
@@ -108,12 +109,12 @@ let g = {
     })
   },
   submitComplete() {
-    o.Z.dispatch({
+    Chunk570140.Z.dispatch({
       type: "USER_SETTINGS_MODAL_SUBMIT_COMPLETE"
     })
   },
   reset() {
-    o.Z.dispatch({
+    Chunk570140.Z.dispatch({
       type: "USER_SETTINGS_MODAL_RESET"
     })
   },
@@ -141,7 +142,7 @@ let g = {
           avatar: h,
           new_password: g
         }, e), {
-          discriminator: null != E && "" !== E ? E : void 0
+          discriminator: null != E && "" !== E ? E : true
         }),
         o = i.K.get(u.JkL),
         a = (0, d.xJ)();
@@ -149,12 +150,12 @@ let g = {
       let l = i.K.get(u.scU);
       return null != d.mv && null != l && (t.push_voip_provider = d.mv, t.push_voip_token = l), r.tn.patch({
         url: u.ANM.ME,
-        oldFormErrors: !0,
+        oldFormErrors: true,
         body: t,
-        rejectWithError: !1
+        rejectWithError: false
       })
     }, {
-      checkEnabled: !1,
+      checkEnabled: false,
       modalProps: {
         title: f.intl.string(f.t.clQc1d)
       },
@@ -174,7 +175,7 @@ let g = {
       }), o.Z.dispatch({
         type: "CURRENT_USER_UPDATE",
         user: t
-      }), void 0 !== h && (0, a.Z)({
+      }), true !== h && (0, a.Z)({
         avatarHash: t.avatar
       }), null != g && o.Z.dispatch({
         type: "USER_PASSWORD_UPDATE",

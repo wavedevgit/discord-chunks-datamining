@@ -1,25 +1,26 @@
 /** Chunk was on web.js **/
+/** chunk id: 749349, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => c
 });
-var r = n(317770),
-  i = n(626135),
-  o = n(358085),
-  a = n(998502),
-  s = n(981631);
-class l extends r.Z {
+var Chunk317770 = require("./317770.js"),
+  Chunk626135 = require("./626135.js"),
+  Chunk358085 = require("./358085.js"),
+  Chunk998502 = require("./998502.js"),
+  Chunk981631 = require("./981631.js");
+class l extends Chunk317770.Z {
   _initialize() {
-    o.isPlatformEmbedded && (a.ZP.on("APP_PUSH_ANALYTICS", (e, t) => {
+    Chunk358085.isPlatformEmbedded && (Chunk998502.ZP.on("APP_PUSH_ANALYTICS", (e, t) => {
       this._handleEventResponse(t)
     }), this.processModuleEvents())
   }
   _terminate() {}
   processModuleEvents() {
     try {
-      a.ZP.send("APP_GET_ANALYTICS_EVENTS")
+      Chunk998502.ZP.send("APP_GET_ANALYTICS_EVENTS")
     } catch (e) {
-      console.error("[analytics] failed to send analytics events query: ".concat(e))
+      console.error("[analytics] failed to send analytics events query: ".concat(module))
     }
   }
   _handleEventResponse(e) {

@@ -1,9 +1,10 @@
 /** Chunk was on web.js **/
+/** chunk id: 314794, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   a: () => r,
   k: () => i
-}), n(388685);
+}), require("./388685.js");
 var r = function(e) {
   return e.PREMIUM_TIER_2_1_HOUR = "1271583180566036480", e.PREMIUM_TIER_2_1_DAY = "1298745361602449479", e.PREMIUM_TIER_2_3_DAY = "1333912750274904064", e
 }({});

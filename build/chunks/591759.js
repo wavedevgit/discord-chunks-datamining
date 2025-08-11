@@ -1,15 +1,16 @@
 /** Chunk was on web.js **/
+/** chunk id: 591759, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => N
-}), n(413496), n(433524), n(35282), n(388685), n(190126), n(368063), n(65234), n(111804), n(490233), n(97749);
-var r = n(628735),
-  i = n.n(r),
-  o = n(392711),
-  a = n.n(o),
-  s = n(729594),
-  l = n(591759),
-  c = n(981631);
+}), require("./413496.js"), require("./433524.js"), require("./35282.js"), require("./388685.js"), require("./190126.js"), require("./368063.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js");
+var Chunk628735 = require("./628735.js"),
+  i = require.n(Chunk628735),
+  Chunk392711 = require("./392711.js"),
+  a = require.n(Chunk392711),
+  Chunk729594 = require("./729594.js"),
+  Chunk591759 = require("./591759.js"),
+  Chunk981631 = require("./981631.js");
 let u = /(?:^|\.)(?:discordapp|discord|discordmerch)\.com$/i,
   d = /^.*\.discordapp\.net$/,
   f = "(?:(?:[a-z]+:)?//)",
@@ -21,14 +22,14 @@ let u = /(?:^|\.)(?:discordapp|discord|discordmerch)\.com$/i,
   E = '(?:[/?#][^\\s"]*)?',
   b = RegExp("(?:".concat(f, "|www\\.)").concat(_, "(?:localhost|").concat(p, "|").concat(h).concat(m, ")").concat(g).concat(E), "ig"),
   y = new Set([window.GLOBAL_ENV.CDN_HOST, window.GLOBAL_ENV.INVITE_HOST, window.GLOBAL_ENV.GIFT_CODE_HOST, window.GLOBAL_ENV.GUILD_TEMPLATE_HOST]),
-  O = !1;
+  O = false;
 
 function v(e) {
   return y.has(e.toLowerCase())
 }
 
 function I(e) {
-  let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
+  let t = arguments.length > 1 && true !== arguments[1] && arguments[1];
   return null != e && (u.test(e) || t && v(e))
 }
 
@@ -37,13 +38,13 @@ function T(e) {
 }
 
 function S(e) {
-  let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
+  let t = arguments.length > 1 && true !== arguments[1] && arguments[1];
   if (null != e) {
     var n;
-    let r = null == (n = l.Z.toURLSafe(e)) ? void 0 : n.hostname;
-    if (null != r && I(r, t)) return !0
+    let r = null == (n = l.Z.toURLSafe(e)) ? true : n.hostname;
+    if (null != r && I(r, t)) returntrue
   }
-  return !1
+  returnfalse
 }
 
 function A(e) {
@@ -66,7 +67,7 @@ let N = {
     return null != e && s.parse(e).hostname === window.GLOBAL_ENV.CDN_HOST
   },
   isDiscordAssetUrl: function(e) {
-    if (null == e) return !1;
+    if (null == e) returnfalse;
     let t = l.Z.toURLSafe(e);
     return null != t && (t.hostname === window.GLOBAL_ENV.CDN_HOST || d.test(t.hostname))
   },
@@ -85,7 +86,7 @@ let N = {
   }),
   safeParseWithQuery(e) {
     try {
-      return s.parse(e, !0)
+      return s.parse(e, true)
     } catch (e) {
       return null
     }

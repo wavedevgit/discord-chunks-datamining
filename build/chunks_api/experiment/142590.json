@@ -1,1 +1,0 @@
-{"id":"142590","type":"experiment","data":{"id":"2025-06_video_quest_card_short_description","kind":"user","label":"Video Quest Card Description","defaultConfig":{"enabled":false},"treatments":[{"id":1,"label":"Video Quest Card Short Description","config":{"enabled":false}}]},"fromModule":{"id":"web.js"}}

@@ -1,21 +1,22 @@
 /** Chunk was on web.js **/
+/** chunk id: 433883, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   E: () => p
 });
-var r = n(450109),
-  i = n(131951),
-  o = n(19780),
-  a = n(70956),
-  s = n(458725),
-  l = n(442741);
+var Chunk450109 = require("./450109.js"),
+  Chunk131951 = require("./131951.js"),
+  Chunk19780 = require("./19780.js"),
+  Chunk70956 = require("./70956.js"),
+  Chunk458725 = require("./458725.js"),
+  Chunk442741 = require("./442741.js");
 
 function c(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -32,17 +33,17 @@ function u(e) {
   return e
 }
 let d = 30,
-  f = 10 * a.Z.Millis.SECOND,
+  f = 10 * Chunk70956.Z.Millis.SECOND,
   _ = 30,
   p = {
     getActiveErrors: () => {
       var e, t, n, a, c, p;
-      if ((null != (c = null == (e = o.Z.getRTCConnection()) ? void 0 : e.getDurationSeconds()) ? c : 0) < d || performance.now() - i.Z.getLastAudioInputDeviceChangeTimestamp() < f) return;
-      let h = null != (p = null == (n = r.Z.getConnectionStats(null == (a = o.Z.getRTCConnection()) ? void 0 : a.getMediaEngineConnectionId())) || null == (t = n.stats.rtp.outbound.find(e => "audio" === e.type)) ? void 0 : t.sampleRateMismatchPercent) ? p : 0;
+      if ((null != (c = null == (e = Chunk19780.Z.getRTCConnection()) ? true : module.getDurationSeconds()) ? c : 0) < d || performance.now() - Chunk131951.Z.getLastAudioInputDeviceChangeTimestamp() < f) return;
+      let h = null != (p = null == (n = Chunk450109.Z.getConnectionStats(null == (a = Chunk19780.Z.getRTCConnection()) ? true : Chunk70956.getMediaEngineConnectionId())) || null == (t = require.stats.rtp.outbound.find(e => "audio" === e.type)) ? true : exports.sampleRateMismatchPercent) ? p : 0;
       if (Math.abs(h) > _) return [u({
-        type: s.u.AUDIO_CAPTURE_SAMPLE_RATE_MISMATCH,
+        type: Chunk458725.u.AUDIO_CAPTURE_SAMPLE_RATE_MISMATCH,
         audioCaptureSampleRateMismatchPercent: h
-      }, (0, l.Y9)())]
+      }, (0, Chunk442741.Y9)())]
     },
     makeErrorContextKey: e => "".concat(e.mediaSessionId, ":").concat(e.audioInputDeviceName)
   }

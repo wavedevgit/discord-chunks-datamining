@@ -1,0 +1,321 @@
+/** Chunk was on web.js **/
+/** chunk id: 502109, original params: e,t,n (module,exports,re quire) **/
+"use strict";
+require.d(exports, {
+  Ch: () => A,
+  Tr: () => S
+}), require("./642613.js"), require("./388685.js");
+var Chunk255367 = require("./255367.js"),
+  Chunk73800 = require("./73800.js"),
+  Chunk120356 = require("./120356.js"),
+  a = require.n(Chunk120356),
+  Chunk680018 = require("./680018.js"),
+  Chunk481060 = require("./481060.js"),
+  Chunk710845 = require("./710845.js"),
+  Chunk219929 = require("./219929.jsx"),
+  Chunk626135 = require("./626135.js"),
+  Chunk526167 = require("./526167.js"),
+  Chunk358085 = require("./358085.js"),
+  Chunk622999 = require("./622999.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk388032 = require("./388032.jsx"),
+  Chunk844424 = require("./844424.js");
+
+function E(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+
+function b(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      E(e, t, n[t])
+    })
+  }
+  return e
+}
+
+function y(e, t) {
+  if (null == e) return {};
+  var n, r, i = O(e, t);
+  if (Object.getOwnPropertySymbols) {
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+  }
+  return i
+}
+
+function O(e, t) {
+  if (null == e) return {};
+  var n, r, i = {},
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+  return i
+}
+let v = new Chunk710845.Z("PaymentRequest"),
+  I = Object.values({
+    applePay: "applePay",
+    googlePay: "googlePay",
+    link: "link",
+    browserCard: "browserCard"
+  });
+class T extends Chunk73800.Component {
+  componentDidMount() {
+    if (!(0, Chunk358085.isDesktop)()) {
+      if (!this.isBrowserCompatible()) return void this.onPaymentRequestFailure();
+      this.disableWallets = I.filter(e => e !== this.paymentRequestWallet).sort(), (0, Chunk622999.d2)().then(e => {
+        this.initPaymentRequest(e)
+      })
+    }
+  }
+  validatePaymentRequest() {
+    let {
+      paymentRequest: e,
+      canMakePaymentResult: t
+    } = this.state;
+    if (null == module) {
+      let e = "Payment request is not ready";
+      return v.error(module), {
+        available: false,
+        errorMessage: module
+      }
+    }
+    if (null == exports) {
+      let e = "Payment request is unavailable or has not been set up in this browser. ";
+      return v.error(module, "Stripe CanMakePaymentResult: ", exports), {
+        available: false,
+        errorMessage: module
+      }
+    }
+    return {
+      available: true,
+      errorMessage: null
+    }
+  }
+  initPaymentRequestCallback(e) {
+    let {
+      available: t
+    } = this.validatePaymentRequest();
+    t ? this.onValidPaymentRequest() : this.onPaymentRequestFailure()
+  }
+  onPaymentRequestFailure() {
+    true !== this.props.onPaymentRequestFailure && this.props.onPaymentRequestFailure()
+  }
+  trackAnalyticsEvent(e) {
+    let {
+      paymentRequestPaymentContext: t
+    } = this.props;
+    if (true === t) return null;
+    let {
+      contextMetadata: n,
+      activitySessionId: r
+    } = t, i = {
+      load_id: n.loadId,
+      payment_request_wallet: this.paymentRequestWallet,
+      activity_session_id: r
+    };
+    d.default.track(e, i)
+  }
+  onValidPaymentRequest() {
+    this.trackAnalyticsEvent(Chunk981631.rMx.PAYMENT_REQUEST_LOADED), true !== this.props.onValidPaymentRequest && this.props.onValidPaymentRequest()
+  }
+  renderButton(e) {
+    var {
+      iconType: t,
+      buttonText: n
+    } = e, i = y(e, ["iconType", "buttonText"]);
+    return <s.z{...b({
+      fullWidth: true,
+      onClick: this.attemptPaymentRequest,
+      text: n,
+      loading: this.state.submitting,
+      icon: () => {
+        var e;
+        return (0, r.jsx)(u.ZP, {
+          className: null != (e = this.props.iconClassName) ? e : g.buttonIcon,
+          type: t
+        })
+      }
+    }, i)} />
+  }
+  renderConnectorView() {
+    return <div className={this.props.className}>{<Chunk219929.ZP type={Chunk219929.ZP.Types.PAYMENT_REQUEST} size={Chunk219929.Uy.MEDIUM} className={Chunk844424.paymentRequestIcon} />}{<Chunk481060.Text variant={"text-md/medium"} className={Chunk844424.connectionInstructions}>{Chunk388032.intl.string(Chunk388032.t.f19PPT)}</Chunk481060.Text>}</div>
+  }
+  renderMain() {
+    return this.props.renderConnectorView ? this.renderConnectorView() : this.renderButton({
+      iconType: Chunk219929.ZP.Types.PAYMENT_REQUEST,
+      buttonText: Chunk388032.intl.string(Chunk388032.t.f19PPT),
+      loading: !(0, Chunk358085.isDesktop)() && this.state.submitting
+    })
+  }
+  render() {
+    if ((0, Chunk358085.isDesktop)()) return this.renderMain();
+    if (this.state.submitting) return this.props.loadingComponent;
+    let {
+      available: e
+    } = this.validatePaymentRequest();
+    return module ? this.renderMain() : null
+  }
+  constructor(...e) {
+    super(...e), E(this, "initialState", {
+      submitting: true,
+      paymentRequest: null,
+      canMakePaymentResult: null
+    }), E(this, "state", b({}, this.initialState)), E(this, "disableWallets", []), E(this, "initPaymentRequest", async e => {
+      if (null == e) return;
+      this.setState({
+        submitting: true,
+        paymentRequest: null,
+        canMakePaymentResult: null
+      });
+      let t = e.paymentRequest({
+        country: "US",
+        currency: "usd",
+        total: {
+          label: this.props.paymentLabel,
+          amount: 0,
+          pending: true
+        },
+        disableWallets: this.disableWallets,
+        requestPayerName: true
+      });
+      null != this.props.paymentRequestRef && (this.props.paymentRequestRef.current = t);
+      let {
+        onStripePaymentMethodReceived: n
+      } = this.props;
+      t.on("paymentmethod", e => {
+        let {
+          complete: t,
+          paymentMethod: r
+        } = e;
+        n(r), this.trackAnalyticsEvent(h.rMx.PAYMENT_REQUEST_COMPLETED), t("success")
+      }), t.on("cancel", () => {
+        n(null)
+      });
+      let r = await t.canMakePayment();
+      return v.info("PaymentRequest availablity check", r), this.setState({
+        submitting: false,
+        paymentRequest: t,
+        canMakePaymentResult: r
+      }, () => {
+        this.initPaymentRequestCallback(r)
+      }), r
+    }), E(this, "attemptPaymentRequest", () => {
+      if ((0, _.isDesktop)()) return void this.props.onChooseType(h.HeQ.PAYMENT_REQUEST, this.paymentRequestWallet);
+      let {
+        available: e
+      } = this.validatePaymentRequest();
+      if (!e) return void this.onPaymentRequestFailure();
+      let {
+        paymentRequest: t
+      } = this.state;
+      e && null != t && (t.show(), this.props.onChooseType(h.HeQ.PAYMENT_REQUEST, this.paymentRequestWallet))
+    })
+  }
+}
+class S extends T {
+  isBrowserCompatible() {
+    return (0, Chunk526167.vu)() >= 61
+  }
+  validatePaymentRequest() {
+    if (!this.isBrowserCompatible()) {
+      let e = "Browser does not support Google Pay";
+      return v.warn(module), {
+        available: false,
+        errorMessage: module
+      }
+    }
+    let {
+      paymentRequest: e,
+      canMakePaymentResult: t
+    } = this.state;
+    if (null == module) {
+      let e = "Payment request is not ready";
+      return v.error(module), {
+        available: false,
+        errorMessage: module
+      }
+    }
+    if (null == exports || !exports.googlePay) {
+      let e = "Google Pay is unavailable or has not been set up in this browser. ";
+      return v.error(module, "Stripe CanMakePaymentResult: ", exports), {
+        available: false,
+        errorMessage: module
+      }
+    }
+    return {
+      available: true,
+      errorMessage: null
+    }
+  }
+  renderConnectorView() {
+    return <div className={this.props.className}>{<Chunk219929.ZP type={Chunk219929.ZP.Types.G_PAY} size={Chunk219929.Uy.MEDIUM} className={Chunk844424.paymentRequestIcon} />}{<Chunk481060.Text variant={"text-md/medium"} className={Chunk844424.connectionInstructions}>{Chunk388032.intl.string(Chunk388032.t.ueoGeX)}</Chunk481060.Text>}</div>
+  }
+  renderMain() {
+    return this.props.renderConnectorView ? this.renderConnectorView() : this.renderButton({
+      iconType: Chunk219929.ZP.Types.G_PAY,
+      buttonText: Chunk388032.intl.string(Chunk388032.t.p2jr2N),
+      loading: !(0, Chunk358085.isDesktop)() && this.state.submitting
+    })
+  }
+  constructor(...e) {
+    super(...e), E(this, "state", b({}, this.initialState)), E(this, "paymentRequestWallet", "googlePay")
+  }
+}
+class A extends T {
+  isBrowserCompatible() {
+    return (0, Chunk526167.G6)()
+  }
+  validatePaymentRequest() {
+    if (!this.isBrowserCompatible()) {
+      let e = "Browser does not support Apple Pay";
+      return v.warn(module), {
+        available: false,
+        errorMessage: module
+      }
+    }
+    let {
+      paymentRequest: e,
+      canMakePaymentResult: t
+    } = this.state;
+    if (null == module) {
+      let e = "Payment request is not ready";
+      return v.error(module), {
+        available: false,
+        errorMessage: module
+      }
+    }
+    if (null == exports || !exports.applePay) {
+      let e = "Apple Pay is unavailable or has not been set up in this browser. ";
+      return v.error(module, "Apple Pay Stripe CanMakePaymentResult: ", exports), {
+        available: false,
+        errorMessage: module
+      }
+    }
+    return {
+      available: true,
+      errorMessage: null
+    }
+  }
+  renderConnectorView() {
+    return <div className={this.props.className}>{<Chunk219929.ZP type={Chunk219929.ZP.Types.APPLE} size={Chunk219929.Uy.MEDIUM} className={a()(Chunk844424.paymentRequestIcon, Chunk844424.appleConnectorIcon)} />}{<Chunk481060.Text variant={"text-md/medium"} className={Chunk844424.connectionInstructions}>{Chunk388032.intl.string(Chunk388032.t.iv8pQU)}</Chunk481060.Text>}</div>
+  }
+  renderMain() {
+    return this.props.renderConnectorView ? this.renderConnectorView() : this.renderButton({
+      iconType: Chunk219929.ZP.Types.APPLE_LIGHT,
+      buttonText: Chunk388032.intl.string(Chunk388032.t.xdGS1t),
+      loading: !(0, Chunk358085.isDesktop)() && this.state.submitting
+    })
+  }
+  constructor(...e) {
+    super(...e), E(this, "state", b({}, this.initialState)), E(this, "paymentRequestWallet", "applePay")
+  }
+}

@@ -1,20 +1,21 @@
 /** Chunk was on web.js **/
+/** chunk id: 753143, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => f,
   r: () => _
-}), n(415506), n(388685);
-var r = n(73800),
-  i = n(134158),
-  o = n(924428),
-  a = n(151973);
+}), require("./415506.js"), require("./388685.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk134158 = require("./134158.js"),
+  Chunk924428 = require("./924428.js"),
+  Chunk151973 = require("./151973.js");
 
 function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -51,7 +52,7 @@ let d = Object.freeze({
   spacerTop: 0,
   totalHeight: 0,
   items: [],
-  isSidebarVisible: !1
+  isSidebarVisible: false
 });
 
 function f(e) {
@@ -84,7 +85,7 @@ function f(e) {
   for (let e of A) {
     if (0 === C) break;
     if ("footer" === e.type || "header" === e.type || null == e.anchorId) continue;
-    let t = "row" === e.type ? e.row : void 0;
+    let t = "row" === e.type ? e.row : true;
     if (e.offsetTop >= C) {
       N = {
         id: e.anchorId,
@@ -134,9 +135,9 @@ function _(e) {
     } = i();
     if (null == n || null == n.row || null == e || null == a || 0 === r) return;
     let s = t => {
-      if (t < 0 || t >= o.sections[n.section] || a(n.section, n.row) !== n.id) return !1;
+      if (t < 0 || t >= o.sections[n.section] || a(n.section, n.row) !== n.id) returnfalse;
       let [i] = o.computeScrollPosition(n.section, t), s = i - n.scrollOffset;
-      return r !== s && (e.scrollTop = s), !0
+      return r !== s && (e.scrollTop = s), true
     };
     !s(n.row) && (s(n.row - 1) || s(n.row + 1))
   }, [s])

@@ -1,7 +1,8 @@
 /** Chunk was on web.js **/
+/** chunk id: 920267, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-var r = n(172367);
-e.exports = function(e, t, n) {
+var Chunk172367 = require("./172367.js");
+module.exports = function(e, t, n) {
   var i = r.undo(t);
   if ("spellcheck-change" === t.getLastChangeType()) {
     var o = i.getCurrentContent();

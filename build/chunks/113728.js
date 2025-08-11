@@ -1,5 +1,6 @@
 /** Chunk was on 1272 **/
-e.exports = {
+/** chunk id: 113728, original params: e,t,n (module,exports,require) **/
+module.exports = {
   main: "main_c08b38",
   fullBorderWithGradient: "fullBorderWithGradient_c08b38",
   artwork: "artwork_c08b38",

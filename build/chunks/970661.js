@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 970661, original params: e,t (module,exports,re quire) **/
 "use strict";
-t.extend = r;
+exports.extend = r;
 var n = Object.prototype.hasOwnProperty;
 
 function r(e) {
@@ -10,4 +11,4 @@ function r(e) {
       for (o in i) n.call(i, o) && (e[o] = i[o]);
   return e
 }
-t.hop = n
+exports.hop = n

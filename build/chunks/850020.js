@@ -1,12 +1,13 @@
 /** Chunk was on 25548 **/
-n.d(t, {
+/** chunk id: 850020, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   K: () => o
 });
-var i = n(73800),
-  r = n(442837),
-  l = n(271383),
-  a = n(346811),
-  s = n(4242);
+var Chunk73800 = require("./73800.js"),
+  Chunk442837 = require("./442837.js"),
+  Chunk271383 = require("./271383.js"),
+  Chunk346811 = require("./346811.js"),
+  Chunk4242 = require("./4242.js");
 
 function o(e) {
   let {
@@ -21,7 +22,7 @@ function o(e) {
   return (0, i.useMemo)(() => {
     var e;
     if (null == t) return;
-    let i = (0, s.Pb)(null == d || null == (e = d.collectibles) ? void 0 : e.nameplate);
+    let i = (0, s.Pb)(null == d || null == (e = d.collectibles) ? true : e.nameplate);
     return null != n && c && null != i ? i : t.nameplate
   }, [d, n, c, t])
 }

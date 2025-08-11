@@ -1,0 +1,1 @@
+{"id":"209114","type":"experiment","data":{"kind":"user","id":"2025-08_always_guild_media","label":"Always Show Guild Media","defaultConfig":{"enabled":false},"treatments":[{"id":1,"label":"Show guild media for muted guilds","config":{"enabled":true}}]},"fromModule":{"id":"34779"}}

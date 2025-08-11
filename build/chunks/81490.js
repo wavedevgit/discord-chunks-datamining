@@ -1,17 +1,18 @@
 /** Chunk was on 71879 **/
+/** chunk id: 81490, original params: e,t,n (module,exports,require) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => l
-}), n(388685);
-var r = n(73800),
-  i = n(393903),
-  a = n(448986);
+}), require("./388685.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk393903 = require("./393903.js"),
+  Chunk448986 = require("./448986.js");
 let l = () => {
-  let [e, t] = r.useState(400), n = (0, a.Z)(e => {
+  let [e, t] = Chunk73800.useState(400), n = (0, Chunk448986.Z)(e => {
     t(e.target.clientWidth)
   });
   return {
-    containerRef: (0, i.y)(n),
-    containerWidth: e
+    containerRef: (0, Chunk393903.y)(require),
+    containerWidth: module
   }
 }

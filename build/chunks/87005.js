@@ -1,28 +1,29 @@
 /** Chunk was on web.js **/
+/** chunk id: 87005, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   f: () => g
-}), n(388685), n(539854);
-var r = n(73800),
-  i = n(243814),
-  o = n(442837),
-  a = n(384275),
-  s = n(911969),
-  l = n(10718),
-  c = n(812236),
-  u = n(148958),
-  d = n(881998);
-n(445392);
-var f = n(783097),
-  _ = n(701488),
-  p = n(689079);
+}), require("./388685.js"), require("./539854.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk243814 = require("./243814.js"),
+  Chunk442837 = require("./442837.js"),
+  Chunk384275 = require("./384275.js"),
+  Chunk911969 = require("./911969.js"),
+  Chunk10718 = require("./10718.js"),
+  Chunk812236 = require("./812236.js"),
+  Chunk148958 = require("./148958.js"),
+  Chunk881998 = require("./881998.js");
+require("./445392.js");
+var Chunk783097 = require("./783097.js"),
+  Chunk701488 = require("./701488.js"),
+  Chunk689079 = require("./689079.js");
 let h = {
-    commandTypes: [s.yU.CHAT, s.yU.PRIMARY_ENTRY_POINT]
+    commandTypes: [Chunk911969.yU.CHAT, Chunk911969.yU.PRIMARY_ENTRY_POINT]
   },
   m = {
     placeholderCount: 0,
-    limit: p.tn,
-    includeFrecency: !0
+    limit: Chunk689079.tn,
+    includeFrecency: true
   };
 
 function g(e) {

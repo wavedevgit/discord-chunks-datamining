@@ -1,4 +1,5 @@
 /** Chunk was on web.js **/
+/** chunk id: 654298, original params: e (module,exports,re quire) **/
 "use strict";
 
 function t(e) {
@@ -8,7 +9,7 @@ function t(e) {
 function n(e) {
   return (e - 8) * 3 + 25
 }
-e.exports = {
+module.exports = {
   fromOrigamiTensionAndFriction: function(e, r) {
     return {
       tension: t(e),

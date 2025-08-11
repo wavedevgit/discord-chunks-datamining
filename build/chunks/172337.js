@@ -1,16 +1,17 @@
 /** Chunk was on 8102 **/
-i.d(t, {
+/** chunk id: 172337, original params: e,t,i (module,exports,require) **/
+require.d(exports, {
   Z: () => d
 });
-var n = i(442837),
-  l = i(353926),
-  r = i(496675),
-  a = i(923726),
-  s = i(981631),
-  u = i(388032);
+var Chunk442837 = require("./442837.js"),
+  Chunk353926 = require("./353926.js"),
+  Chunk496675 = require("./496675.js"),
+  Chunk923726 = require("./923726.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk388032 = require("./388032.js");
 let d = {
-  title: () => u.intl.string(u.t.aTFQKi),
-  description: () => u.intl.string(u.t.oTbFQk),
-  canCreateGuild: !1,
-  useIsGuildSupported: () => (0, n.e7)([l.Z, r.Z], () => e => e.features.has(s.oNc.ROLE_SUBSCRIPTIONS_ENABLED) && !e.features.has(s.oNc.CREATOR_MONETIZABLE_RESTRICTED) && r.Z.can(s.Plq.ADMINISTRATOR, e) && (0, a.$F)() && (0, a.hQ)(e.id), [])
+  title: () => Chunk388032.intl.string(Chunk388032.t.aTFQKi),
+  description: () => Chunk388032.intl.string(Chunk388032.t.oTbFQk),
+  canCreateGuild: false,
+  useIsGuildSupported: () => (0, Chunk442837.e7)([Chunk353926.Z, Chunk496675.Z], () => e => e.features.has(s.oNc.ROLE_SUBSCRIPTIONS_ENABLED) && !e.features.has(s.oNc.CREATOR_MONETIZABLE_RESTRICTED) && r.Z.can(s.Plq.ADMINISTRATOR, e) && (0, a.$F)() && (0, a.hQ)(e.id), [])
 }

@@ -1,11 +1,12 @@
 /** Chunk was on web.js **/
+/** chunk id: 187506, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   M: () => a
-}), n(388685);
-var r = n(876215),
-  i = n(911969);
-let o = new Set([r.s.TOP_ARTIST, r.s.TOP_GAME, r.s.PLAYED_GAME, r.s.WATCHED_MEDIA, r.s.LISTENED_SESSION, r.s.LAUNCHED_ACTIVITY]);
+}), require("./388685.js");
+var Chunk876215 = require("./876215.js"),
+  Chunk911969 = require("./911969.js");
+let o = new Set([Chunk876215.s.TOP_ARTIST, Chunk876215.s.TOP_GAME, Chunk876215.s.PLAYED_GAME, Chunk876215.s.WATCHED_MEDIA, Chunk876215.s.LISTENED_SESSION, Chunk876215.s.LAUNCHED_ACTIVITY]);
 
 function a(e) {
   var t;

@@ -1,21 +1,22 @@
 /** Chunk was on 49152 **/
-n.d(t, {
+/** chunk id: 602034, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => m,
   r: () => y
 });
-var r = n(73800),
-  i = n(94171),
-  l = n(430742),
-  a = n(904245),
-  s = n(166459),
-  o = n(531643),
-  c = n(680287),
-  u = n(470623),
-  d = n(957730),
-  h = n(703558),
-  p = n(117530),
-  f = n(928477),
-  g = n(388032);
+var Chunk73800 = require("./73800.js"),
+  Chunk94171 = require("./94171.js"),
+  Chunk430742 = require("./430742.js"),
+  Chunk904245 = require("./904245.js"),
+  Chunk166459 = require("./166459.js"),
+  Chunk531643 = require("./531643.jsx"),
+  Chunk680287 = require("./680287.js"),
+  Chunk470623 = require("./470623.jsx"),
+  Chunk957730 = require("./957730.js"),
+  Chunk703558 = require("./703558.js"),
+  Chunk117530 = require("./117530.js"),
+  Chunk928477 = require("./928477.js"),
+  Chunk388032 = require("./388032.jsx");
 
 function m(e) {
   let {
@@ -27,15 +28,15 @@ function m(e) {
     onThreadCreated: m,
     useDefaultThreadName: b
   } = e, y = r.useCallback((e, t, n, r) => {
-    a.Z.sendMessage(e.id, d.ZP.parse(e, n), void 0, {
-      eagerDispatch: !1,
+    a.Z.sendMessage(e.id, d.ZP.parse(e, n), true, {
+      eagerDispatch: false,
       stickerIds: r,
       attachmentsToUpload: t,
       onAttachmentUploadError: (r, i, a, c) => {
         var u;
         (0, o.openUploadError)({
           title: g.intl.string(g.t.B3vFdX),
-          help: null != (u = null == c ? void 0 : c.message) ? u : g.intl.string(g.t.zMEjJi)
+          help: null != (u = null == c ? true : c.message) ? u : g.intl.string(g.t.zMEjJi)
         }), "" !== n && "" === h.Z.getDraft(e.id, h.d.FirstThreadMessage) && l.Z.saveDraft(e.id, n, h.d.FirstThreadMessage), 0 === p.Z.getUploadCount(e.id, h.d.FirstThreadMessage) && s.Z.setUploads({
           channelId: e.id,
           uploads: t,

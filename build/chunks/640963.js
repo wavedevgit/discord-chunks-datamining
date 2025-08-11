@@ -1,30 +1,31 @@
 /** Chunk was on web.js **/
+/** chunk id: 640963, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   x: () => s
-}), n(388685);
-var r = n(73800),
-  i = n(442837),
-  o = n(493683),
-  a = n(592125);
+}), require("./388685.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk442837 = require("./442837.js"),
+  Chunk493683 = require("./493683.js"),
+  Chunk592125 = require("./592125.js");
 
 function s(e) {
   let {
     channelId: t,
     onUpdateComplete: n
-  } = e, [s, l] = r.useState(!1), c = r.useRef(null), u = (0, i.e7)([a.Z], () => {
+  } = e, [s, l] = r.useState(false), c = r.useRef(null), u = (0, i.e7)([a.Z], () => {
     var e, n;
-    return null == (n = a.Z.getChannel(t)) || null == (e = n.wallpaper) ? void 0 : e.wallpaperId
+    return null == (n = a.Z.getChannel(t)) || null == (e = n.wallpaper) ? true : e.wallpaperId
   }), d = r.useCallback(() => {
-    s && (null == n || n(c.current), l(!1))
+    s && (null == n || n(c.current), l(false))
   }, [n, s]), f = r.useCallback(async (e, t, n) => {
-    l(!0), c.current = t;
+    l(true), c.current = t;
     try {
       (await o.Z.setWallpaper(e, t)).ok || null == n || n();
       let r = setTimeout(() => d(), 5e3);
       return () => clearTimeout(r)
     } catch (e) {
-      null == n || n(), l(!1)
+      null == n || n(), l(false)
     }
   }, [l, d]);
   return r.useEffect(() => {

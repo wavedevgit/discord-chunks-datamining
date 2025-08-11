@@ -1,5 +1,6 @@
 /** Chunk was on web.js **/
-e.exports = function(e) {
+/** chunk id: 232523, original params: e (module,exports,re quire) **/
+module.exports = function(e) {
   return {
     name: "Shell Session",
     aliases: ["console", "shellsession"],

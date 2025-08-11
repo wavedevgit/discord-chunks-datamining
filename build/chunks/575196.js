@@ -1,15 +1,16 @@
 /** Chunk was on web.js **/
+/** chunk id: 575196, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   e3: () => l,
   gj: () => O,
   yf: () => v
-}), n(539854), n(388685);
-var r = n(688619),
-  i = n.n(r),
-  o = n(691324),
-  a = n(780384),
-  s = n(629935);
+}), require("./539854.js"), require("./388685.js");
+var Chunk688619 = require("./688619.js"),
+  i = require.n(Chunk688619),
+  Chunk691324 = require("./691324.js"),
+  Chunk780384 = require("./780384.js"),
+  Chunk629935 = require("./629935.js");
 let l = "custom-theme-background",
   c = .05,
   u = .9,
@@ -18,7 +19,7 @@ let l = "custom-theme-background",
   _ = 60,
   p = .4,
   h = 30,
-  m = -.2,
+  m = false,
   g = 30,
   E = 40,
   b = .1,
@@ -48,7 +49,7 @@ function v(e, t) {
   let n = o.b[e.colors[0].token].hex,
     r = o.b[e.colors[e.colors.length - 1].token].hex,
     i = (0, s.W4)({
-      enabled: !0,
+      enabled: true,
       primaryColor: n,
       secondaryColor: r,
       isDarkTheme: (0, a.wj)(e.theme)

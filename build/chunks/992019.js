@@ -1,5 +1,6 @@
 /** Chunk was on 61526 **/
-e.exports = {
+/** chunk id: 992019, original params: e,t,n (module,exports,require) **/
+module.exports = {
   centeringWrapper: "centeringWrapper__10841",
   timelineContainer: "timelineContainer__10841",
   playPauseButtonWrapper: "playPauseButtonWrapper__10841",

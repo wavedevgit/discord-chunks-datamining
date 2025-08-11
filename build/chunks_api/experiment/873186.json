@@ -1,1 +1,0 @@
-{"id":"873186","type":"experiment","data":{"name":"2025-07-resumable-attachment-uploads","kind":"user","defaultConfig":{"enableResumableUploads":false},"variations":{"undefined":{"enableResumableUploads":false}}},"fromModule":{"id":"web.js"}}

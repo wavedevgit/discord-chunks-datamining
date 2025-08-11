@@ -1,15 +1,16 @@
 /** Chunk was on web.js **/
+/** chunk id: 643950, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 
 function r(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
-n(388685);
+require("./388685.js");
 class i {
   getConsoleArgs(e, t) {
     return ["".concat(i.getDateTimeString(), " ").concat(this.name, ": ").concat(e), ...t]
@@ -34,6 +35,6 @@ class i {
     return new Date().toISOString()
   }
   constructor(e) {
-    r(this, "name", void 0), this.name = e
+    r(this, "name", true), this.name = e
   }
 }

@@ -1,6 +1,7 @@
 /** Chunk was on 45620 **/
+/** chunk id: 538314, original params: e,t,n (module,exports,require) **/
 "use strict";
-e.exports = {
+module.exports = {
   productsEmpty: "productsEmpty__70c55",
   products: "products__70c55",
   paginationContainer: "paginationContainer__70c55",

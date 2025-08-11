@@ -1,13 +1,14 @@
 /** Chunk was on web.js **/
+/** chunk id: 482853, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-var r = n(98405),
-  i = n(1266).findLast,
-  o = n(967333);
-r({
+var Chunk98405 = require("./98405.js"),
+  i = require("./1266.js").findLast,
+  Chunk967333 = require("./967333.js");
+Chunk98405({
   target: "Array",
-  proto: !0
+  proto: true
 }, {
   findLast: function(e) {
-    return i(this, e, arguments.length > 1 ? arguments[1] : void 0)
+    return i(this, e, arguments.length > 1 ? arguments[1] : true)
   }
-}), o("findLast")
+}), Chunk967333("findLast")

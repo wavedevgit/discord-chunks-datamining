@@ -1,3 +1,4 @@
 /** Chunk was on 50448 **/
+/** chunk id: 477572, original params: t,r,n (module,exports,require) **/
 "use strict";
-t.exports = n(889878)
+module.exports = require("./889878.js")

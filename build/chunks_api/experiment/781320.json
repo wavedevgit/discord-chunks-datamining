@@ -1,1 +1,0 @@
-{"id":"781320","type":"experiment","data":{"kind":"user","id":"2025-03_permadecos_marketing","label":"Permadecos Marketing","defaultConfig":{"enabled":false},"treatments":[{"id":1,"label":"Enabled","config":{"enabled":false}}]},"fromModule":{"id":"web.js"}}

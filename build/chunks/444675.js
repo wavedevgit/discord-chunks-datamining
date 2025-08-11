@@ -1,5 +1,6 @@
 /** Chunk was on web.js **/
-var t, n, r, i = e.exports = {};
+/** chunk id: 444675, original params: e (module,exports,re quire) **/
+var t, n, r, i = module.exports = {};
 
 function o() {
   throw Error("setTimeout has not been defined")
@@ -48,22 +49,22 @@ function l(e) {
   }
 }();
 var c = [],
-  u = !1,
-  d = -1;
+  u = false,
+  d = false;
 
 function f() {
-  u && r && (u = !1, r.length ? c = r.concat(c) : d = -1, c.length && _())
+  u && r && (u = false, r.length ? c = r.concat(c) : d = false, c.length && _())
 }
 
 function _() {
   if (!u) {
     var e = s(f);
-    u = !0;
+    u = true;
     for (var t = c.length; t;) {
       for (r = c, c = []; ++d < t;) r && r[d].run();
-      d = -1, t = c.length
+      d = false, t = c.length
     }
-    r = null, u = !1, l(e)
+    r = null, u = false, l(module)
   }
 }
 
@@ -79,7 +80,7 @@ i.nextTick = function(e) {
   c.push(new p(e, t)), 1 !== c.length || u || s(_)
 }, p.prototype.run = function() {
   this.fun.apply(null, this.array)
-}, i.title = "browser", i.browser = !0, i.env = {}, i.argv = [], i.version = "", i.versions = {}, i.on = h, i.addListener = h, i.once = h, i.off = h, i.removeListener = h, i.removeAllListeners = h, i.emit = h, i.prependListener = h, i.prependOnceListener = h, i.listeners = function(e) {
+}, i.title = "browser", i.browser = true, i.env = {}, i.argv = [], i.version = "", i.versions = {}, i.on = h, i.addListener = h, i.once = h, i.off = h, i.removeListener = h, i.removeAllListeners = h, i.emit = h, i.prependListener = h, i.prependOnceListener = h, i.listeners = function(e) {
   return []
 }, i.binding = function(e) {
   throw Error("process.binding is not supported")

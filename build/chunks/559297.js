@@ -1,4 +1,5 @@
 /** Chunk was on web.js **/
+/** chunk id: 559297, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 var r = {
   pill: "pill_a2c9e8",
@@ -14,4 +15,4 @@ var r = {
   close: "close_a2c9e8",
   tooltipPill: "tooltipPill_a2c9e8"
 };
-n.r(e.exports = r)
+require.r(module.exports = r)

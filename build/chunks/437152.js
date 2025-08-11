@@ -1,27 +1,28 @@
 /** Chunk was on 34779 **/
-n.d(t, {
+/** chunk id: 437152, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   E: () => c,
   N: () => u
 });
-var r = n(704215),
-  i = n(433517),
-  l = n(605236),
-  o = n(70956),
-  s = n(921944);
+var Chunk704215 = require("./704215.js"),
+  Chunk433517 = require("./433517.js"),
+  Chunk605236 = require("./605236.js"),
+  Chunk70956 = require("./70956.js"),
+  Chunk921944 = require("./921944.js");
 let a = "doNotShowReorderModal";
 
 function c() {
-  (0, l.Ow)(r.z.CHANNEL_REORDER_MODAL_DISMISS_SETTING, {
-    dismissAction: s.L.USER_DISMISS
+  (0, Chunk605236.Ow)(Chunk704215.z.CHANNEL_REORDER_MODAL_DISMISS_SETTING, {
+    dismissAction: Chunk921944.L.USER_DISMISS
   })
 }
 
 function u() {
-  null != i.K.get(a) && i.K.remove(a);
+  null != Chunk433517.K.get(a) && Chunk433517.K.remove(a);
   let {
     isDismissed: e
-  } = (0, l.Fo)(r.z.CHANNEL_REORDER_MODAL_DISMISS_SETTING, {
-    cooldownDurationMs: o.Z.Millis.WEEK
+  } = (0, Chunk605236.Fo)(Chunk704215.z.CHANNEL_REORDER_MODAL_DISMISS_SETTING, {
+    cooldownDurationMs: Chunk70956.Z.Millis.WEEK
   });
-  return !e
+  return !module
 }

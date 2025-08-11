@@ -1,5 +1,6 @@
 /** Chunk was on 1272 **/
-e.exports = {
+/** chunk id: 512231, original params: e,t,n (module,exports,require) **/
+module.exports = {
   wrapper: "wrapper_a6f654",
   installationPath: "installationPath_a6f654",
   installationPathEditing: "installationPathEditing_a6f654",

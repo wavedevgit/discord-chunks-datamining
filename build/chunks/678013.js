@@ -1,6 +1,7 @@
 /** Chunk was on 50448 **/
+/** chunk id: 678013, original params: t (module,exports,require) **/
 "use strict";
-t.exports = {
+module.exports = {
   CSSRuleList: 0,
   CSSStyleDeclaration: 0,
   CSSValueList: 0,

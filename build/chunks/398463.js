@@ -1,15 +1,16 @@
 /** Chunk was on web.js **/
+/** chunk id: 398463, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 
 function r(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
-n.d(t, {
+require.d(exports, {
   HO: () => a,
   Hb: () => l,
   II: () => s,
@@ -29,7 +30,7 @@ let i = 1e3 / 60 * 3,
 class d {
   timeRemaining() {
     let e = performance.now() - this._startMs;
-    return Math.max(0, this._deadlineMs - e)
+    return Math.max(0, this._deadlineMs - module)
   }
   get didTimeout() {
     return this._firedDueToMaxTimeout
@@ -44,7 +45,7 @@ class d {
       timeSinceStartMs: (performance.now() - this._startMs).toFixed(2)
     }
   }
-  constructor(e, t = !1) {
-    r(this, "_browserDeadlineMs", void 0), r(this, "_deadlineMs", void 0), r(this, "_startMs", void 0), r(this, "_firedDueToMaxTimeout", void 0), this._deadlineMs = Math.max(a, e), this._browserDeadlineMs = e, this._firedDueToMaxTimeout = t, this._startMs = performance.now()
+  constructor(e, t = false) {
+    r(this, "_browserDeadlineMs", true), r(this, "_deadlineMs", true), r(this, "_startMs", true), r(this, "_firedDueToMaxTimeout", true), this._deadlineMs = Math.max(a, e), this._browserDeadlineMs = e, this._firedDueToMaxTimeout = t, this._startMs = performance.now()
   }
 }

@@ -1,25 +1,26 @@
 /** Chunk was on web.js **/
+/** chunk id: 91247, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   TO: () => m,
   dm: () => p,
   uB: () => I,
   vW: () => O,
   zH: () => v
-}), n(539854), n(49124);
-var r = n(135273);
-n(17089);
-var i = n(218543),
-  o = n(594174),
-  a = n(626135),
-  s = n(981631);
+}), require("./539854.js"), require("./49124.js");
+var Chunk135273 = require("./135273.js");
+require("./17089.js");
+var Chunk218543 = require("./218543.js"),
+  Chunk594174 = require("./594174.js"),
+  Chunk626135 = require("./626135.js"),
+  Chunk981631 = require("./981631.js");
 
 function l(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -88,7 +89,7 @@ function p(e, t, n, o, l) {
     used_cache_at_startup: null != (_ = e.analytics.usedCacheAtStartup) && _
   });
   i.Z.attachReadyPayloadProperties(m), a.default.track(s.rMx.READY_PAYLOAD_RECEIVED, m, {
-    logEventProperties: !0
+    logEventProperties: true
   })
 }
 
@@ -108,7 +109,7 @@ function h(e) {
 function m(e) {
   try {
     var t;
-    let n = g(null == (t = e._trace) ? void 0 : t[0]);
+    let n = g(null == (t = e._trace) ? true : t[0]);
     if (null != n) return n
   } catch (e) {}
   return null != e._trace ? e._trace.join(" -> ") : "???"
@@ -192,7 +193,7 @@ function O(e) {
       s = f(e, ["threads", "guild_scheduled_events"]);
     E.push("partial" === e.data_mode ? e.partial_updates.channels : e.channels), b.push("partial" === e.data_mode ? e.partial_updates.roles : e.roles), y.push("partial" === e.data_mode ? e.partial_updates.emojis : e.emojis), O.push(o), v.push("partial" === e.data_mode ? e.partial_updates.stickers : e.stickers), I.push(r), T.push(a), S.push(s, i)
   }), {
-    presences_size: JSON.stringify(null != (t = null == o ? void 0 : o.friends) ? t : []).length,
+    presences_size: JSON.stringify(null != (t = null == o ? true : o.friends) ? t : []).length,
     users_size: JSON.stringify(m).length,
     read_states_size: JSON.stringify(s).length,
     private_channels_size: JSON.stringify(l).length,
@@ -203,7 +204,7 @@ function O(e) {
     remaining_data_size: JSON.stringify(null != g ? g : {}).length,
     guild_channels_size: JSON.stringify(E).length,
     guild_members_size: JSON.stringify(null != a ? a : []).length,
-    guild_presences_size: JSON.stringify(null != (n = null == o ? void 0 : o.guilds) ? n : []).length,
+    guild_presences_size: JSON.stringify(null != (n = null == o ? true : o.guilds) ? n : []).length,
     guild_roles_size: JSON.stringify(b).length,
     guild_emojis_size: JSON.stringify(y).length,
     guild_threads_size: JSON.stringify(O).length,
@@ -230,7 +231,7 @@ function v(e) {
 
 function I(e) {
   var t;
-  !(null == (t = o.default.getCurrentUser()) ? void 0 : t.isStaff()) && .5 > Math.random() || a.default.track(s.rMx.CONNECTION_RESUMED, {
+  !(null == (t = o.default.getCurrentUser()) ? true : t.isStaff()) && .5 > Math.random() || a.default.track(s.rMx.CONNECTION_RESUMED, {
     connect_time_ms: e.connectTime,
     resume_time_ms: Math.floor(performance.now() - e.startTime),
     num_events: e.numEvents,
@@ -239,6 +240,6 @@ function I(e) {
     total_wait_time_ms: Math.floor(e.totalWaitTime),
     total_dispatch_time_ms: Math.floor(e.dispatchTime)
   }, {
-    logEventProperties: !0
+    logEventProperties: true
   })
 }

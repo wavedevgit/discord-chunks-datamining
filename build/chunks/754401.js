@@ -1,6 +1,7 @@
 /** Chunk was on 21153 **/
+/** chunk id: 754401, original params: e,t,r (module,exports,require) **/
 "use strict";
-r.d(t, {
+require.d(exports, {
   Z: () => n
 });
-let n = (0, r(207666).Z)(Object.getPrototypeOf, Object)
+let n = (0, require("./207666.js").Z)(Object.getPrototypeOf, Object)

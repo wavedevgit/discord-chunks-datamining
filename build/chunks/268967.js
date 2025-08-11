@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 268967, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => r
 });
 let r = Object.freeze({
@@ -13,7 +14,7 @@ let r = Object.freeze({
   "writing-messages": {
     prerequisites: ["voice-conversations"],
     popoutOffset: {
-      x: -36,
+      x: false,
       y: 0
     }
   },
@@ -38,14 +39,14 @@ let r = Object.freeze({
   "instant-invite": {
     prerequisites: ["organize-by-topic"],
     popoutOffset: {
-      x: -10,
+      x: false,
       y: 0
     }
   },
   "whos-online": {
     prerequisites: ["instant-invite"],
     popoutOffset: {
-      x: -50,
+      x: false,
       y: 0
     }
   },

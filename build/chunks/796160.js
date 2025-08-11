@@ -1,6 +1,7 @@
 /** Chunk was on 67244 **/
+/** chunk id: 796160, original params: e,t (module,exports,require) **/
 "use strict";
-t.__esModule = !0, t.default = {
+exports.__esModule = true, exports.default = {
   scheme: "twilight",
   author: "david hart (http://hart-dev.com)",
   base00: "#1e1e1e",
@@ -19,4 +20,4 @@ t.__esModule = !0, t.default = {
   base0D: "#7587a6",
   base0E: "#9b859d",
   base0F: "#9b703f"
-}, e.exports = t.default
+}, module.exports = exports.default

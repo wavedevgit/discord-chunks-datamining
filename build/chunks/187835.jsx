@@ -1,0 +1,44 @@
+/** Chunk was on 34779 **/
+/** chunk id: 187835, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
+  Z: () => a
+});
+var Chunk255367 = require("./255367.js");
+require("./73800.js");
+var Chunk481060 = require("./481060.js"),
+  Chunk603592 = require("./603592.js"),
+  Chunk388032 = require("./388032.js");
+let s = "DOWNLOAD_APPS";
+
+function a() {
+  let e = (0, Chunk481060.s9z)(e => (0, i.DEQ)(e, s));
+  return <Chunk603592.Z id={"app-download-button"} onClick={() => {
+      (0, Chunk481060.ZDy)(async () => {
+        let {
+          default: e
+        } = await require.e("74023").then(require.bind(require, 431583));
+        return t => (0, r.jsx)(e, function(e) {
+          for (var t = 1; t < arguments.length; t++) {
+            var n = null != arguments[t] ? arguments[t] : {},
+              r = Object.keys(n);
+            "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+              return Object.getOwnPropertyDescriptor(n, e).enumerable
+            }))), r.forEach(function(t) {
+              var r;
+              r = n[t], t in e ? Object.defineProperty(e, t, {
+                value: r,
+                enumerable: true,
+                configurable: true,
+                writable: true
+              }) : e[t] = r
+            })
+          }
+          return e
+        }({
+          source: "Guilds"
+        }, t))
+      }, {
+        modalKey: s
+      })
+    }} selected={module} tooltip={Chunk388032.intl.string(Chunk388032.t.Z7jwrK)} icon={Chunk481060._8t} />
+}

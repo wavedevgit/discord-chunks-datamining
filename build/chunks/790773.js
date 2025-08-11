@@ -1,5 +1,6 @@
 /** Chunk was on 1272 **/
-e.exports = {
+/** chunk id: 790773, original params: e,t,n (module,exports,require) **/
+module.exports = {
   wrapper: "wrapper__27106",
   svg: "svg__27106",
   path: "path__27106",

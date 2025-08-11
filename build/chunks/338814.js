@@ -1,5 +1,6 @@
 /** Chunk was on web.js **/
-e.exports = function(e) {
+/** chunk id: 338814, original params: e (module,exports,re quire) **/
+module.exports = function(e) {
   let t = e.regex,
     n = {},
     r = {
@@ -72,7 +73,7 @@ e.exports = function(e) {
     p = {
       className: "function",
       begin: /\w[\w\d_]*\s*\(\s*\)\s*\{/,
-      returnBegin: !0,
+      returnBegin: true,
       contains: [e.inherit(e.TITLE_MODE, {
         begin: /\w[\w\d_]*/
       })],

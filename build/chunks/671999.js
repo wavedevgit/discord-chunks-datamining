@@ -1,4 +1,5 @@
 /** Chunk was on web.js **/
+/** chunk id: 671999, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 
 function r(e, t, n) {
@@ -7,7 +8,7 @@ function r(e, t, n) {
     screenY: n,
     clientX: t,
     clientY: n,
-    bubbles: !0,
+    bubbles: true,
     view: window
   })
 }
@@ -17,7 +18,7 @@ function i(e, t, n) {
   if (null == r) throw Error();
   r.dispatchEvent(e)
 }
-n.d(t, {
+require.d(exports, {
   B: () => r,
   J: () => i
-}), n(415506)
+}), require("./415506.js")

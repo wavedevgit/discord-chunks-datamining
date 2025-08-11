@@ -1,5 +1,6 @@
 /** Chunk was on 28990 **/
-t.d(n, {
+/** chunk id: 70651, original params: e,n,t (module,exports,require) **/
+require.d(exports, {
   Z: () => a
 });
 var o = ["neděli", "ponděl\xed", "\xfater\xfd", "středu", "čtvrtek", "p\xe1tek", "sobotu"],

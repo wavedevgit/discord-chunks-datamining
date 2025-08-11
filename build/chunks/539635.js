@@ -1,6 +1,7 @@
 /** Chunk was on 67244 **/
+/** chunk id: 539635, original params: e,t (module,exports,require) **/
 "use strict";
-t.__esModule = !0, t.default = {
+exports.__esModule = true, exports.default = {
   scheme: "shapeshifter",
   author: "tyler benziger (http://tybenz.com)",
   base00: "#000000",
@@ -19,4 +20,4 @@ t.__esModule = !0, t.default = {
   base0D: "#3b48e3",
   base0E: "#f996e2",
   base0F: "#69542d"
-}, e.exports = t.default
+}, module.exports = exports.default

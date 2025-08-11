@@ -1,32 +1,33 @@
 /** Chunk was on web.js **/
+/** chunk id: 395727, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => d
-}), n(388685);
-var r = n(317770),
-  i = n(626135),
-  o = n(358085),
-  a = n(998502),
-  s = n(801814),
-  l = n(981631);
+}), require("./388685.js");
+var Chunk317770 = require("./317770.js"),
+  Chunk626135 = require("./626135.js"),
+  Chunk358085 = require("./358085.js"),
+  Chunk998502 = require("./998502.js"),
+  Chunk801814 = require("./801814.js"),
+  Chunk981631 = require("./981631.js");
 
 function c(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
-class u extends r.Z {
+class u extends Chunk317770.Z {
   _initialize() {
-    o.isPlatformEmbedded && (a.ZP.on("UPDATE_DOWNLOADED", () => this.processModuleEvents()), a.ZP.on("MODULE_INSTALLED", (e, t, n) => this.processModuleEvents()), a.ZP.on("UPDATER_HISTORY_RESPONSE", (e, t) => {
+    Chunk358085.isPlatformEmbedded && (Chunk998502.ZP.on("UPDATE_DOWNLOADED", () => this.processModuleEvents()), Chunk998502.ZP.on("MODULE_INSTALLED", (e, t, n) => this.processModuleEvents()), Chunk998502.ZP.on("UPDATER_HISTORY_RESPONSE", (e, t) => {
       this._handleHistoryResponse(t)
     }), this.processModuleEvents())
   }
   _terminate() {}
   processModuleEvents() {
-    a.ZP.send("UPDATER_HISTORY_QUERY_AND_TRUNCATE")
+    Chunk998502.ZP.send("UPDATER_HISTORY_QUERY_AND_TRUNCATE")
   }
   _handleHistoryResponse(e) {
     if (null == e) return;

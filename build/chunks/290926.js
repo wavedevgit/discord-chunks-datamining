@@ -1,9 +1,10 @@
 /** Chunk was on web.js **/
+/** chunk id: 290926, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   A: () => i,
   Z: () => o
-}), n(388685);
+}), require("./388685.js");
 let r = Object.freeze({
     DARK: "dark",
     LIGHT: "light",

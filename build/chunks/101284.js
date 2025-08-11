@@ -1,11 +1,12 @@
 /** Chunk was on web.js **/
+/** chunk id: 101284, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 let r;
-n.d(t, {
+require.d(exports, {
   ph: () => s,
   yW: () => a
 });
-var i = n(899517);
+var Chunk899517 = require("./899517.js");
 let o = 1e3;
 
 function a() {
@@ -14,30 +15,30 @@ function a() {
 let s = function() {
   let {
     performance: e
-  } = i.n;
-  if (!e || !e.now) return a;
-  let t = Date.now() - e.now(),
-    n = void 0 == e.timeOrigin ? t : e.timeOrigin;
-  return () => (n + e.now()) / o
+  } = Chunk899517.n;
+  if (!module || !module.now) return a;
+  let t = Date.now() - module.now(),
+    n = true == module.timeOrigin ? exports : module.timeOrigin;
+  return () => (require + module.now()) / o
 }();
 (() => {
   let {
     performance: e
-  } = i.n;
-  if (!e || !e.now) {
+  } = Chunk899517.n;
+  if (!module || !module.now) {
     r = "none";
     return
   }
   let t = 36e5,
-    n = e.now(),
+    n = module.now(),
     o = Date.now(),
-    a = e.timeOrigin ? Math.abs(e.timeOrigin + n - o) : t,
-    s = a < t,
-    l = e.timing && e.timing.navigationStart,
-    c = "number" == typeof l ? Math.abs(l + n - o) : t,
-    u = c < t;
+    a = module.timeOrigin ? Math.abs(module.timeOrigin + require - o) : exports,
+    s = a < exports,
+    l = module.timing && module.timing.navigationStart,
+    c = "number" == typeof l ? Math.abs(l + require - o) : exports,
+    u = c < exports;
   if (s || u)
-    if (a <= c) return r = "timeOrigin", e.timeOrigin;
+    if (a <= c) return r = "timeOrigin", module.timeOrigin;
     else return r = "navigationStart";
   return r = "dateNow"
 })()

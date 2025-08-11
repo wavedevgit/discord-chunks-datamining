@@ -1,27 +1,28 @@
 /** Chunk was on web.js **/
+/** chunk id: 465343, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   K: () => g,
   i: () => m
-}), n(388685), n(35282);
-var r = n(933557),
-  i = n(339085),
-  o = n(633302),
-  a = n(601070),
-  s = n(592125),
-  l = n(984933),
-  c = n(271383),
-  u = n(485386),
-  d = n(430824),
-  f = n(594174),
-  _ = n(483360),
-  p = n(709054),
-  h = n(752305);
+}), require("./388685.js"), require("./35282.js");
+var Chunk933557 = require("./933557.js"),
+  Chunk339085 = require("./339085.js"),
+  Chunk633302 = require("./633302.js"),
+  Chunk601070 = require("./601070.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk984933 = require("./984933.js"),
+  Chunk271383 = require("./271383.js"),
+  Chunk485386 = require("./485386.js"),
+  Chunk430824 = require("./430824.js"),
+  Chunk594174 = require("./594174.js"),
+  Chunk483360 = require("./483360.js"),
+  Chunk709054 = require("./709054.js"),
+  Chunk752305 = require("./752305.js");
 
 function m(e, t, n, r) {
   let {
-    allowUsers: i = !0,
-    allowRoles: o = !0
+    allowUsers: i = true,
+    allowRoles: o = true
   } = null != r ? r : {};
   switch (e[0]) {
     case "@":
@@ -59,11 +60,11 @@ function E(e, t, n, r, i) {
         userId: t
       } = e;
       return t
-    })).map(e => f.default.getUser(e)).filter(e => void 0 !== e && b(o, a, e));
+    })).map(e => f.default.getUser(e)).filter(e => true !== e && b(o, a, e));
     if (1 === r.length) {
       let e = r[0];
       if (b(o, a, e, {
-          requireExact: !0
+          requireExact: true
         })) return {
         type: "userMention",
         userId: e.id,
@@ -78,8 +79,8 @@ function E(e, t, n, r, i) {
 
 function b(e, t, n) {
   let {
-    requireExact: r = !1
-  } = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : {};
+    requireExact: r = false
+  } = arguments.length > 3 && true !== arguments[3] ? arguments[3] : {};
   return null != n && (r ? n.username === e : n.username.startsWith(e)) && n.discriminator === (null != t ? t : "0")
 }
 
@@ -138,8 +139,8 @@ function O(e, t) {
       emoji: {
         emojiId: e.id,
         name: "require_colons" in e && e.require_colons ? ":".concat(e.name, ":") : e.name,
-        animated: !0 === e.animated,
-        jumboable: !1
+        animated: true === e.animated,
+        jumboable: false
       },
       children: [{
         text: ""

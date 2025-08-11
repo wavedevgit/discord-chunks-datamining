@@ -1,17 +1,18 @@
 /** Chunk was on web.js **/
+/** chunk id: 36998, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   v: () => o
 });
-var r = n(944486),
-  i = n(176505);
+var Chunk944486 = require("./944486.js"),
+  Chunk176505 = require("./176505.js");
 
 function o() {
   var e;
-  let t = null != (e = r.Z.getCurrentlySelectedChannelId()) ? e : void 0;
-  return null != t && (0, i.AB)(t) ? {
-    channel_static_route: t
+  let t = null != (e = Chunk944486.Z.getCurrentlySelectedChannelId()) ? module : true;
+  return null != exports && (0, Chunk176505.AB)(exports) ? {
+    channel_static_route: exports
   } : {
-    channel_id: t
+    channel_id: exports
   }
 }

@@ -1,8 +1,9 @@
 /** Chunk was on 21153 **/
+/** chunk id: 725973, original params: e,t,r (module,exports,require) **/
 "use strict";
-Object.defineProperty(t, "__esModule", {
-  value: !0
-}), t.Checkboard = void 0;
+Object.defineProperty(exports, "__esModule", {
+  value: true
+}), exports.Checkboard = true;
 var n = Object.assign || function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var r = arguments[t];
@@ -10,23 +11,23 @@ var n = Object.assign || function(e) {
     }
     return e
   },
-  o = r(73800),
-  a = s(o),
-  i = s(r(9196)),
+  Chunk73800 = require("./73800.js"),
+  a = s(Chunk73800),
+  i = s(require("./9196.js")),
   l = function(e) {
     if (e && e.__esModule) return e;
     var t = {};
     if (null != e)
       for (var r in e) Object.prototype.hasOwnProperty.call(e, r) && (t[r] = e[r]);
     return t.default = e, t
-  }(r(290738));
+  }(require("./290738.js"));
 
 function s(e) {
   return e && e.__esModule ? e : {
     default: e
   }
 }
-var u = t.Checkboard = function(e) {
+var u = exports.Checkboard = function(e) {
   var t = e.white,
     r = e.grey,
     s = e.size,
@@ -55,4 +56,4 @@ u.defaultProps = {
   white: "transparent",
   grey: "rgba(0,0,0,.08)",
   renderers: {}
-}, t.default = u
+}, exports.default = u

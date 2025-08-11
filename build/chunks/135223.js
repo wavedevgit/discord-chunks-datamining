@@ -1,17 +1,18 @@
 /** Chunk was on web.js **/
+/** chunk id: 135223, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => c
-}), n(388685), n(539854);
-var r = n(341702),
-  i = n(887490);
+}), require("./388685.js"), require("./539854.js");
+var Chunk341702 = require("./341702.js"),
+  Chunk887490 = require("./887490.js");
 
 function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -37,7 +38,7 @@ function c(e, t, n) {
   let {
     entries: u,
     serializedChildren: d
-  } = i.q.markdown(o, n, !0), f = [];
+  } = i.q.markdown(o, n, true), f = [];
   for (let t = 0; t < u.length; t++) {
     let n = u[t];
     if (n.attributes.length > 0 && n.text.length > 0) {
@@ -50,14 +51,14 @@ function c(e, t, n) {
         _ = i.bN.nodes(e, {
           at: l,
           mode: "lowest",
-          voids: !1
+          voids: false
         }),
         p = {};
       for (let e of n.attributes)
-        if (p[e] = !0, "syntaxBefore" === e && null != s)
-          for (let e of s.attributes) p["before_".concat(e)] = !0;
+        if (p[e] = true, "syntaxBefore" === e && null != s)
+          for (let e of s.attributes) p["before_".concat(e)] = true;
         else if ("syntaxAfter" === e && null != o)
-        for (let e of o.attributes) p["after_".concat(e)] = !0;
+        for (let e of o.attributes) p["after_".concat(e)] = true;
       for (let [t, n] of _) {
         let t = {
           anchor: i.bN.start(e, n),

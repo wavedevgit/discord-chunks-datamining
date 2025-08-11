@@ -1,0 +1,93 @@
+/** Chunk was on 22988 **/
+/** chunk id: 310800, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
+  Z: () => j
+});
+var Chunk255367 = require("./255367.js");
+require("./73800.js");
+var Chunk755721 = require("./755721.js"),
+  Chunk481060 = require("./481060.js"),
+  Chunk724598 = require("./724598.js"),
+  Chunk674180 = require("./674180.js"),
+  Chunk572004 = require("./572004.js"),
+  Chunk495437 = require("./495437.js"),
+  Chunk267101 = require("./267101.js"),
+  Chunk863663 = require("./863663.js"),
+  Chunk676651 = require("./676651.js"),
+  Chunk613810 = require("./613810.js"),
+  Chunk391181 = require("./391181.js"),
+  Chunk388032 = require("./388032.js"),
+  Chunk520880 = require("./520880.js");
+let b = "guild-product-listings-header";
+
+function x(e) {
+  let {
+    guildId: t,
+    handleCreateOrEditProduct: i
+  } = e, m = (0, d.ue)(t, {
+    publishedOnly: false
+  }), {
+    shouldRestrictUpdatingCreatorMonetizationSettings: x
+  } = (0, s.gX)(t), j = e => {
+    (0, c.Je)(t, e, {
+      published: false
+    })
+  }, v = (e, i) => {
+    (0, l.ZDy)(async () => {
+      let {
+        default: l
+      } = await n.e("95925").then(n.bind(n, 673078));
+      return n => <l{...function(e) {
+        for (var t = 1; t < arguments.length; t++) {
+          var n = null != arguments[t] ? arguments[t] : {},
+            r = Object.keys(n);
+          "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+            return Object.getOwnPropertyDescriptor(n, e).enumerable
+          }))), r.forEach(function(t) {
+            var r;
+            r = n[t], t in e ? Object.defineProperty(e, t, {
+              value: r,
+              enumerable: true,
+              configurable: true,
+              writable: true
+            }) : e[t] = r
+          })
+        }
+        return e
+      }({
+        guildId: t,
+        productId: e,
+        productName: i
+      }, n)} />
+    })
+  }, _ = (e, t) => {
+    (0, o.JG)((0, u.ar)(e, t))
+  }, O = m.length > 0;
+  return <r.Fragment>{<l.vwX className={f.productListingsHeader} id={b}>{O ? h.intl.string(h.t.RwuStb) : h.intl.string(h.t.WKMcMT)}</l.vwX>}{O ? <ul className={f.productListings} aria-labelledby={b}>{m.map(e => (0, r.jsx)("li", {
+        children: (0, r.jsx)(p.Z, {
+          guildId: t,
+          product: e,
+          onEditProduct: () => i(e.id),
+          onUnpublishProduct: () => j(e.id),
+          onDeleteProduct: () => v(e.id, e.name),
+          onCopyProductLink: () => _(t, e.id),
+          onTestDownload: () => g.Z.open({
+            guildId: t,
+            productId: e.id
+          }),
+          onReportProduct: () => {},
+          disabled: x
+        })
+      }, e.id))}</ul> : <a.Z guildId={t} showCTA={false} responsive={false} />}</r.Fragment>
+}
+
+function j(e) {
+  let {
+    guildId: t
+  } = e, {
+    shouldRestrictUpdatingCreatorMonetizationSettings: n
+  } = (0, s.gX)(t), a = e => {
+    m.h(t, e)
+  };
+  return <r.Fragment>{<i.zx className={f.addButton} innerClassName={f.addButtonInner} onClick={() => a(null)} disabled={n}>{<l.qJs size={"custom"} color={"currentColor"} width={20} height={20} aria-hidden={true} />}{<l.LZC size={6} horizontal={true} />}{h.intl.string(h.t.riG6DQ)}</i.zx>}{<l.LZC size={24} />}{<x guildId={t} handleCreateOrEditProduct={a} />}</r.Fragment>
+}

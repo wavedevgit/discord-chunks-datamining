@@ -1,19 +1,20 @@
 /** Chunk was on 45620 **/
+/** chunk id: 361110, original params: e,t,n (module,exports,require) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   f: () => a
-}), n(388685);
-var r = n(73800),
-  l = n(979554);
+}), require("./388685.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk979554 = require("./979554.js");
 let a = e => {
   let [t, n] = (0, r.useState)(null);
   return {
     previewingVariantIndex: t,
     handleEntering: (0, r.useCallback)(t => {
-      (null == e ? void 0 : e.type) === l.Z.VARIANTS_GROUP && n(t)
-    }, [null == e ? void 0 : e.type]),
+      (null == e ? true : e.type) === l.Z.VARIANTS_GROUP && n(t)
+    }, [null == e ? true : e.type]),
     handleLeaving: (0, r.useCallback)(() => {
-      (null == e ? void 0 : e.type) === l.Z.VARIANTS_GROUP && n(null)
-    }, [null == e ? void 0 : e.type])
+      (null == e ? true : e.type) === l.Z.VARIANTS_GROUP && n(null)
+    }, [null == e ? true : e.type])
   }
 }

@@ -1,25 +1,26 @@
 /** Chunk was on web.js **/
+/** chunk id: 498187, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => b
 });
-var r = n(876215),
-  i = n(758713),
-  o = n(835473),
-  a = n(810568),
-  s = n(168524),
-  l = n(561308),
-  c = n(206583),
-  u = n(96513),
-  d = n(701488),
-  f = n(388032);
+var Chunk876215 = require("./876215.js"),
+  Chunk758713 = require("./758713.js"),
+  Chunk835473 = require("./835473.js"),
+  Chunk810568 = require("./810568.js"),
+  Chunk168524 = require("./168524.js"),
+  Chunk561308 = require("./561308.js"),
+  Chunk206583 = require("./206583.js"),
+  Chunk96513 = require("./96513.js"),
+  Chunk701488 = require("./701488.js"),
+  Chunk388032 = require("./388032.jsx");
 
 function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -53,11 +54,11 @@ function m(e, t) {
   }), e
 }
 let g = {
-    [i.z.XBOX]: c.kG.XBOX,
-    [i.z.PLAYSTATION]: c.kG.PLAYSTATION
+    [Chunk758713.z.XBOX]: Chunk206583.kG.XBOX,
+    [Chunk758713.z.PLAYSTATION]: Chunk206583.kG.PLAYSTATION
   },
   E = {
-    [u._.EMBED]: a.m1.Embed
+    [Chunk96513._.EMBED]: Chunk810568.m1.Embed
   };
 
 function b(e) {
@@ -67,7 +68,7 @@ function b(e) {
       baseEntryData: c
     } = e,
     u = (0, o.q)(i.extra.application_id),
-    _ = null == u ? void 0 : u.getIconURL(d.Si.LARGE),
+    _ = null == u ? true : u.getIconURL(d.Si.LARGE),
     h = i.extra.game_name;
   if (null != i.extra.platform) {
     let e = g[i.extra.platform];
@@ -82,7 +83,7 @@ function b(e) {
         location: b,
         applicationId: i.extra.application_id,
         source: b,
-        trackEntryPointImpression: !0,
+        trackEntryPointImpression: true,
         sourceUserId: i.author_id
       }),
       ariaDescription: f.intl.formatToPlainString(f.t["9sZWVl"], {

@@ -1,27 +1,28 @@
 /** Chunk was on web.js **/
+/** chunk id: 373370, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   CR: () => L,
   DD: () => P
-}), n(953529), n(388685);
-var r = n(73800),
-  i = n(442837),
-  o = n(594174),
-  a = n(111361),
-  s = n(509212),
-  l = n(113434),
-  c = n(5881),
-  u = n(566078),
-  d = n(46140),
-  f = n(474936),
-  _ = n(388032);
+}), require("./953529.js"), require("./388685.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk442837 = require("./442837.js"),
+  Chunk594174 = require("./594174.js"),
+  Chunk111361 = require("./111361.js"),
+  Chunk509212 = require("./509212.js"),
+  Chunk113434 = require("./113434.js"),
+  Chunk5881 = require("./5881.js"),
+  Chunk566078 = require("./566078.js"),
+  Chunk46140 = require("./46140.js"),
+  Chunk474936 = require("./474936.js"),
+  Chunk388032 = require("./388032.js");
 
 function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -54,7 +55,7 @@ function g(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let E = (0, c.T)({});
+let E = (0, Chunk5881.T)({});
 
 function b(e, t, n) {
   return n ? _.intl.formatToParts(e, t) : _.intl.formatToPlainString(e, t)
@@ -149,7 +150,7 @@ function I(e) {
 function T(e, t, n, r) {
   var i;
   let o, a = u.r.build(e.config).defaultWatchVideoTask,
-    l = null != (i = null == a ? void 0 : a.messages.videoTitle) ? i : "video",
+    l = null != (i = null == a ? true : a.messages.videoTitle) ? i : "video",
     c = u.r.build(e.config).defaultRewardNameWithArticle,
     f = (0, s.f$)(e.config),
     p = (0, s._p)(e.config);
@@ -279,9 +280,9 @@ function P(e) {
   }), s = (0, i.e7)([o.default], () => o.default.getCurrentUser()), c = (0, l.Jf)(t);
   return R(g(h({}, e), {
     connectedConsoleLinkOnClick: a,
-    withoutMarkdown: !1,
+    withoutMarkdown: false,
     currentUser: s,
-    thirdPartyTaskDetails: null != c ? c : void 0
+    thirdPartyTaskDetails: null != c ? c : true
   }))
 }
 

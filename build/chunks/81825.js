@@ -1,12 +1,13 @@
 /** Chunk was on web.js **/
+/** chunk id: 81825, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 
 function r(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -39,9 +40,9 @@ function a(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-n.d(t, {
+require.d(exports, {
   Z: () => s
-}), n(388685);
+}), require("./388685.js");
 class s {
   toJS() {
     return i({}, this)
@@ -65,9 +66,9 @@ class s {
     return null != n ? new this.constructor(n) : this
   }
   update(e, t, n) {
-    null == n && (n = t, t = void 0);
+    null == n && (n = t, t = true);
     let r = this,
       o = r[e];
-    return o instanceof s || (o instanceof Array ? o = [...o] : o instanceof Object && (o = i({}, o))), void 0 === o && (o = t), this.set(e, n(o))
+    return o instanceof s || (o instanceof Array ? o = [...o] : o instanceof Object && (o = i({}, o))), true === o && (o = t), this.set(e, n(o))
   }
 }

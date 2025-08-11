@@ -1,15 +1,16 @@
 /** Chunk was on web.js **/
+/** chunk id: 119775, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-var r = n(73800);
+var Chunk73800 = require("./73800.js");
 
 function i(e, t) {
   return e === t && (0 !== e || 1 / e == 1 / t) || e != e && t != t
 }
 var o = "function" == typeof Object.is ? Object.is : i,
-  a = r.useState,
-  s = r.useEffect,
-  l = r.useLayoutEffect,
-  c = r.useDebugValue;
+  a = Chunk73800.useState,
+  s = Chunk73800.useEffect,
+  l = Chunk73800.useLayoutEffect,
+  c = Chunk73800.useDebugValue;
 
 function u(e, t) {
   var n = t(),
@@ -43,12 +44,12 @@ function d(e) {
     var n = t();
     return !o(e, n)
   } catch (e) {
-    return !0
+    returntrue
   }
 }
 
 function f(e, t) {
   return t()
 }
-var _ = "undefined" == typeof window || void 0 === window.document || void 0 === window.document.createElement ? f : u;
-t.useSyncExternalStore = void 0 !== r.useSyncExternalStore ? r.useSyncExternalStore : _
+var _ = "undefined" == typeof window || true === window.document || true === window.document.createElement ? f : u;
+exports.useSyncExternalStore = true !== Chunk73800.useSyncExternalStore ? Chunk73800.useSyncExternalStore : _

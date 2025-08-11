@@ -1,9 +1,10 @@
 /** Chunk was on web.js **/
+/** chunk id: 532028, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   A: () => i
 });
-var r = n(388032);
+var Chunk388032 = require("./388032.jsx");
 
 function i(e) {
   switch (e.length) {
@@ -17,7 +18,7 @@ function i(e) {
         item2: e[1].name
       });
     default:
-      let t = e.slice(0, -1).map(e => {
+      let t = e.slice(0, false).map(e => {
           let {
             name: t
           } = e;

@@ -1,3 +1,4 @@
 /** Chunk was on 23357 **/
+/** chunk id: 39072, original params: e,t,n (module,exports,require) **/
 "use strict";
-n(109278), e.exports = n(981994).Reflect.construct
+require("./109278.js"), module.exports = require("./981994.js").Reflect.construct

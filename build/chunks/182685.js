@@ -1,5 +1,6 @@
 /** Chunk was on 96887 **/
-e.exports = {
+/** chunk id: 182685, original params: e,t,r (module,exports,require) **/
+module.exports = {
   avatarDecorationPairOne: "avatarDecorationPairOne__2c8c0",
   avatarDecorationPairTwo: "avatarDecorationPairTwo__2c8c0",
   nameplate: "nameplate__2c8c0",

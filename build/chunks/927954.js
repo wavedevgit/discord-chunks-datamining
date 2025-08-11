@@ -1,9 +1,10 @@
 /** Chunk was on 22988 **/
-n.d(t, {
+/** chunk id: 927954, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => l
-}), n(388685);
-var r = n(73800),
-  i = n(388032);
+}), require("./388685.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk388032 = require("./388032.jsx");
 
 function l(e) {
   let [t, n] = r.useState(i.intl.string(i.t.jBSYCA));

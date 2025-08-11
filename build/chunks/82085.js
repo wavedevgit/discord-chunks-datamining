@@ -1,10 +1,11 @@
 /** Chunk was on web.js **/
+/** chunk id: 82085, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => o
 });
-var r = n(703656),
-  i = n(981631);
+var Chunk703656 = require("./703656.js"),
+  Chunk981631 = require("./981631.js");
 let o = {
   onOpenHubInvite(e) {
     let {

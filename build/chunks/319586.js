@@ -1,5 +1,6 @@
 /** Chunk was on 99133 **/
-e.r(A.exports = {
+/** chunk id: 319586, original params: A,t,e (module,exports,require) **/
+require.r(module.exports = {
   standardSidebarView: "standardSidebarView__23e6b",
   withUpsell: "withUpsell__23e6b",
   sidebarRegion: "sidebarRegion__23e6b",

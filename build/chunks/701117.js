@@ -1,10 +1,11 @@
 /** Chunk was on web.js **/
+/** chunk id: 701117, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 let r;
-n.d(t, {
+require.d(exports, {
   y: () => s
-}), n(49124);
-var i = n(37082);
+}), require("./49124.js");
+var Chunk37082 = require("./37082.js");
 try {
   r = window.sessionStorage
 } catch (e) {}
@@ -15,9 +16,9 @@ try {
 function o() {
   let e = "test";
   try {
-    return r.setItem(e, e), r.removeItem(e), !0
+    return r.setItem(module, module), r.removeItem(module), true
   } catch (e) {
-    return !1
+    returnfalse
   }
 }
 class a {
@@ -40,4 +41,4 @@ class a {
     r.clear()
   }
 }
-let s = o() ? new a : new i.R
+let s = o() ? new a : new Chunk37082.R

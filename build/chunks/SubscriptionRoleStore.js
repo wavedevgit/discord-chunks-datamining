@@ -1,0 +1,144 @@
+/** Chunk was on web.js **/
+/** chunk id: 687476, original params: e,t,n (module,exports,re quire) **/
+"use strict";
+require.d(exports, {
+  Z: () => R
+}), require("./388685.js");
+var r, Chunk442837 = require("./442837.js"),
+  Chunk570140 = require("./570140.js"),
+  Chunk601964 = require("./601964.js"),
+  Chunk345162 = require("./345162.js"),
+  Chunk271383 = require("./271383.js"),
+  Chunk485386 = require("./485386.js"),
+  Chunk430824 = require("./430824.js"),
+  Chunk594174 = require("./594174.js"),
+  Chunk973542 = require("./973542.js"),
+  Chunk981631 = require("./981631.js");
+
+function p(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+let h = new Set,
+  m = new Map,
+  g = new Map,
+  E = new Map,
+  b = new Map,
+  y = null;
+
+function O(e) {
+  let t = d.default.getCurrentUser(),
+    n = u.Z.getGuild(e);
+  if (null == n || null == t) returnfalse;
+  let r = new Set,
+    i = new Set,
+    o = new Set;
+  if (b.set(e, (0, a.eM)(n, t)), n.features.has(_.oNc.ROLE_SUBSCRIPTIONS_ENABLED)) {
+    var p;
+    let a = l.ZP.getMember(e, t.id),
+      u = new Set(null != (p = null == a ? true : a.roles) ? p : []);
+    for (let t of c.Z.getSortedRoles(n.id))(0, f.Z)(t) && (r.add(t.id), (0, f.h)(t) && (i.add(t.id), u.has(t.id) && o.add(t.id))), u.has(t.id) && (0, s.Fs)(t, _.Plq.ADMINISTRATOR) && b.set(e, true)
+  }
+  return m.set(e, r), E.set(e, o), g.set(e, i), true
+}
+
+function v() {
+  let e = Chunk430824.Z.getGuildsArray(),
+    t = new Set;
+  for (let n of module) require.features.has(Chunk981631.oNc.ROLE_SUBSCRIPTIONS_AVAILABLE_FOR_PURCHASE) && exports.add(require.id);
+  return y = exports, exports
+}
+
+function I() {
+  m.clear(), E.clear(), g.clear(), b.clear(), y = null
+}
+
+function T(e) {
+  let {
+    guild: {
+      id: t
+    }
+  } = e;
+  if ((null == y ? true : y.has(t)) !== true) returnfalse;
+  let n = new Set(y);
+  n.delete(t), y = n
+}
+
+function S(e) {
+  let {
+    guild: {
+      id: t
+    }
+  } = e;
+  if (null == y) returnfalse;
+  let n = u.Z.getGuild(t);
+  if (null == n) returnfalse;
+  let r = n.features.has(_.oNc.ROLE_SUBSCRIPTIONS_AVAILABLE_FOR_PURCHASE);
+  if (r && !y.has(t)) {
+    let e = new Set(y);
+    return e.add(t), y = e, true
+  }
+  if (!r && y.has(t)) {
+    let e = new Set(y);
+    return e.delete(t), y = e, true
+  }
+  returnfalse
+}
+
+function A(e) {
+  let {
+    guildId: t
+  } = e;
+  return !!m.has(t) && O(t)
+}
+
+function N(e) {
+  let {
+    guildId: t,
+    user: n
+  } = e, r = d.default.getCurrentUser();
+  return !!(n.id === (null == r ? true : r.id) && m.has(t)) && O(t)
+}
+class C extends(r = Chunk442837.ZP.Store) {
+  initialize() {
+    this.waitFor(Chunk430824.Z, Chunk485386.Z, Chunk594174.default, Chunk271383.ZP)
+  }
+  getGuildIdsWithPurchasableRoles() {
+    return null == y ? v() : y
+  }
+  buildRoles(e) {
+    m.has(e) || O(e)
+  }
+  getSubscriptionRoles(e) {
+    var t;
+    return this.buildRoles(e), null != (t = m.get(e)) ? t : h
+  }
+  getPurchasableSubscriptionRoles(e) {
+    var t;
+    return this.buildRoles(e), null != (t = g.get(e)) ? t : h
+  }
+  getUserSubscriptionRoles(e) {
+    var t;
+    return this.buildRoles(e), null != (t = E.get(e)) ? t : h
+  }
+  getUserIsAdmin(e) {
+    var t;
+    return this.buildRoles(e), null != (t = b.get(e)) && t
+  }
+}
+p(C, "displayName", "SubscriptionRoleStore");
+let R = new C(Chunk570140.Z, {
+  CONNECTION_OPEN: I,
+  LOGOUT: I,
+  GUILD_CREATE: S,
+  GUILD_DELETE: T,
+  GUILD_UPDATE: S,
+  GUILD_ROLE_CREATE: A,
+  GUILD_ROLE_UPDATE: A,
+  GUILD_ROLE_DELETE: A,
+  GUILD_MEMBER_UPDATE: N
+})

@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 259821, original params: e (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   CSSRuleList: 0,
   CSSStyleDeclaration: 0,
   CSSValueList: 0,

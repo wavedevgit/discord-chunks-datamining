@@ -1,5 +1,6 @@
 /** Chunk was on 55183 **/
-e.exports = {
+/** chunk id: 233966, original params: e,t,r (module,exports,require) **/
+module.exports = {
   icon: "icon_b4019a",
   notAllowedIcon: "notAllowedIcon_b4019a icon_b4019a",
   effectGridItem: "effectGridItem_b4019a",

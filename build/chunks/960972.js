@@ -1,5 +1,6 @@
 /** Chunk was on 89298 **/
-e.exports = {
+/** chunk id: 960972, original params: e,t,n (module,exports,require) **/
+module.exports = {
   videoDev: "videoDev_eb35c5",
   overlay: "overlay_eb35c5",
   overlayBackground: "overlayBackground_eb35c5",

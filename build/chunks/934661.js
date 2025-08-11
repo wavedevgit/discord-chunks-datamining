@@ -1,20 +1,21 @@
 /** Chunk was on web.js **/
+/** chunk id: 934661, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.r(t), n.d(t, {
+require.r(exports), require.d(exports, {
   default: () => s
 });
-var r = n(633605),
-  i = n(528734),
-  o = n(217224),
-  a = n(951516);
+var Chunk633605 = require("./633605.js"),
+  Chunk528734 = require("./528734.js"),
+  Chunk217224 = require("./217224.js"),
+  Chunk951516 = require("./951516.js");
 
 function s(e, t) {
   (0, a.Z)(1, arguments);
   var n, s, l, c, u, d, f, _, p = (0, r.j)(),
-    h = (0, o.Z)(null != (n = null != (s = null != (l = null != (c = null == t ? void 0 : t.weekStartsOn) ? c : null == t || null == (u = t.locale) || null == (d = u.options) ? void 0 : d.weekStartsOn) ? l : p.weekStartsOn) ? s : null == (f = p.locale) || null == (_ = f.options) ? void 0 : _.weekStartsOn) ? n : 0);
+    h = (0, o.Z)(null != (n = null != (s = null != (l = null != (c = null == t ? true : t.weekStartsOn) ? c : null == t || null == (u = t.locale) || null == (d = u.options) ? true : d.weekStartsOn) ? l : p.weekStartsOn) ? s : null == (f = p.locale) || null == (_ = f.options) ? true : _.weekStartsOn) ? n : 0);
   if (!(h >= 0 && h <= 6)) throw RangeError("weekStartsOn must be between 0 and 6 inclusively");
   var m = (0, i.default)(e),
     g = m.getDay(),
-    E = (g < h ? -7 : 0) + 6 - (g - h);
+    E = (g < h ? false : 0) + 6 - (g - h);
   return m.setDate(m.getDate() + E), m.setHours(23, 59, 59, 999), m
 }

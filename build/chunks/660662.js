@@ -1,15 +1,16 @@
 /** Chunk was on web.js **/
+/** chunk id: 660662, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   P$: () => a,
   gD: () => s,
   mH: () => o,
   vK: () => l
-}), n(388685);
-var r = n(522942),
-  i = n(342905);
-let o = [r.m.SOLID, r.m.GRADIENT, r.m.NEON, r.m.TOON, r.m.POP],
-  a = [i.C.DEFAULT, i.C.ZILLA_SLAB, i.C.CHERRY_BOMB, i.C.CHICLE, i.C.MUSEO_MODERNO, i.C.NEO_CASTEL, i.C.PIXELIFY, i.C.SINISTRE],
+}), require("./388685.js");
+var Chunk522942 = require("./522942.js"),
+  Chunk342905 = require("./342905.js");
+let o = [Chunk522942.m.SOLID, Chunk522942.m.GRADIENT, Chunk522942.m.NEON, Chunk522942.m.TOON, Chunk522942.m.POP],
+  a = [Chunk342905.C.DEFAULT, Chunk342905.C.ZILLA_SLAB, Chunk342905.C.CHERRY_BOMB, Chunk342905.C.CHICLE, Chunk342905.C.MUSEO_MODERNO, Chunk342905.C.NEO_CASTEL, Chunk342905.C.PIXELIFY, Chunk342905.C.SINISTRE],
   s = [1628845, 2417517, 1874155, 0xc32aff, 0xfc1965, 0xc6a615, 695675, 1027403, 747943, 0xa913e5, 0xda0149, 0xf93722],
   l = [
     [2797222, 16762e3],

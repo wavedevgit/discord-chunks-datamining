@@ -1,5 +1,6 @@
 /** Chunk was on 83264 **/
-e.exports = {
+/** chunk id: 147972, original params: e,t,r (module,exports,require) **/
+module.exports = {
   outerContentWrapper: "outerContentWrapper__91747",
   innerContentWrapper: "innerContentWrapper__91747",
   quizResultHeading: "quizResultHeading__91747",

@@ -1,15 +1,16 @@
 /** Chunk was on web.js **/
+/** chunk id: 209930, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-var r = n(198392),
-  i = n(621796),
-  o = n(172367),
-  a = n(630685),
-  s = n(961271),
-  l = n(992456),
-  c = n(534978),
-  u = n(319630),
-  d = n(352582),
-  f = n(467159);
+var Chunk198392 = require("./198392.js"),
+  Chunk621796 = require("./621796.js"),
+  Chunk172367 = require("./172367.js"),
+  Chunk630685 = require("./630685.js"),
+  Chunk961271 = require("./961271.js"),
+  Chunk992456 = require("./992456.js"),
+  Chunk534978 = require("./534978.js"),
+  Chunk319630 = require("./319630.js"),
+  Chunk352582 = require("./352582.js"),
+  Chunk467159 = require("./467159.js");
 
 function _(e, t) {
   var n = null,
@@ -28,13 +29,13 @@ function _(e, t) {
 }
 
 function p(e) {
-  e._internalDrag = !1;
+  e._internalDrag = false;
   var t = e.editorContainer;
   if (t) {
     var n = new MouseEvent("mouseup", {
       view: u(t),
-      bubbles: !0,
-      cancelable: !0
+      bubbles: true,
+      cancelable: true
     });
     t.dispatchEvent(n)
   }
@@ -49,7 +50,7 @@ function m(e, t, n) {
   var r = i.insertText(e.getCurrentContent(), t, n, e.getCurrentInlineStyle());
   return o.push(e, r, "insert-fragment")
 }
-e.exports = {
+module.exports = {
   onDragEnd: function(e) {
     e.exitCurrentMode(), p(e)
   },

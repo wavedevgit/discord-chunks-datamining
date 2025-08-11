@@ -1,21 +1,22 @@
 /** Chunk was on 33648 **/
-n.d(t, {
+/** chunk id: 859155, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => f
-}), n(415506);
-var l = n(991637),
-  r = n.n(l),
-  a = n(388123),
-  i = n(904245),
-  s = n(797394),
-  o = n(957730),
-  c = n(592125),
-  u = n(496675),
-  d = n(784384);
+}), require("./415506.js");
+var Chunk991637 = require("./991637.js"),
+  r = require.n(Chunk991637),
+  Chunk388123 = require("./388123.js"),
+  Chunk904245 = require("./904245.js"),
+  Chunk797394 = require("./797394.js"),
+  Chunk957730 = require("./957730.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk496675 = require("./496675.js"),
+  Chunk784384 = require("./784384.js");
 let h = {
     async sendForward(e, t, n) {
       let l = c.Z.getChannel(t),
         r = c.Z.getChannel(e.channel_id),
-        h = (null == n ? void 0 : n.isICYMIGameContentForwarding) ? s.KF : null == r ? void 0 : r.guild_id;
+        h = (null == n ? true : n.isICYMIGameContentForwarding) ? s.KF : null == r ? true : r.guild_id;
       if (null == r && null == h) throw Error("Unable to find original channel for message");
       if (null == l) throw Error("Unable to find destination channel for message");
       let f = o.ZP.parse(l, ""),
@@ -24,15 +25,15 @@ let h = {
           channel_id: e.channel_id,
           message_id: e.id,
           type: a.U.FORWARD,
-          forward_only: (null == n ? void 0 : n.onlyAttachmentIds) != null || (null == n ? void 0 : n.onlyEmbedIndices) != null ? {
+          forward_only: (null == n ? true : n.onlyAttachmentIds) != null || (null == n ? true : n.onlyEmbedIndices) != null ? {
             attachment_ids: n.onlyAttachmentIds,
             embed_indices: n.onlyEmbedIndices
-          } : void 0
+          } : true
         };
-      await i.Z.sendMessage(l.id, f, !1, {
+      await i.Z.sendMessage(l.id, f, false, {
         messageReference: m,
-        eagerDispatch: !1
-      }), (null == n ? void 0 : n.withMessage) == null || (0, d.pU)(l, u.Z) || await i.Z.sendMessage(l.id, o.ZP.parse(l, n.withMessage), !1)
+        eagerDispatch: false
+      }), (null == n ? true : n.withMessage) == null || (0, d.pU)(l, u.Z) || await i.Z.sendMessage(l.id, o.ZP.parse(l, n.withMessage), false)
     },
     sendForwards: (e, t, n) => r()(t.map(t => h.sendForward(e, t, n)))
   },

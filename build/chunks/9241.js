@@ -1,5 +1,6 @@
 /** Chunk was on web.js **/
-e.exports = function(e) {
+/** chunk id: 9241, original params: e (module,exports,re quire) **/
+module.exports = function(e) {
   let t = e.regex,
     n = "([a-zA-Z_]\\w*[!?=]?|[-+~]@|<<|>>|=~|===?|<=>|[<>]=?|\\*\\*|[-/+%^&*~`|]|\\[\\]=?)",
     r = t.either(/\b([A-Z]+[a-z0-9]+)+/, /\b([A-Z]+[a-z0-9]+)+[A-Z]+/),
@@ -114,8 +115,8 @@ e.exports = function(e) {
         className: "params",
         begin: /\(/,
         end: /(?=\))/,
-        excludeBegin: !0,
-        endsParent: !0,
+        excludeBegin: true,
+        endsParent: true,
         keywords: o
       }]
     },
@@ -178,8 +179,8 @@ e.exports = function(e) {
       className: "params",
       begin: /\|(?!=)/,
       end: /\|/,
-      excludeBegin: !0,
-      excludeEnd: !0,
+      excludeBegin: true,
+      excludeEnd: true,
       relevance: 0,
       keywords: o
     }, {

@@ -1,19 +1,20 @@
 /** Chunk was on 3277 **/
-n.r(t), n.d(t, {
+/** chunk id: 604871, original params: e,t,n (module,exports,require) **/
+require.r(exports), require.d(exports, {
   default: () => u
 });
-var i = n(375288),
-  a = n(457763),
-  r = n(334906),
-  o = n(99887),
-  d = n(354382);
+var Chunk375288 = require("./375288.js"),
+  Chunk457763 = require("./457763.js"),
+  Chunk334906 = require("./334906.js"),
+  Chunk99887 = require("./99887.js"),
+  Chunk354382 = require("./354382.js");
 let u = {
   code: "hi",
-  formatDistance: i.Z,
-  formatLong: a.Z,
-  formatRelative: r.Z,
-  localize: o.ZP,
-  match: d.Z,
+  formatDistance: Chunk375288.Z,
+  formatLong: Chunk457763.Z,
+  formatRelative: Chunk334906.Z,
+  localize: Chunk99887.ZP,
+  match: Chunk354382.Z,
   options: {
     weekStartsOn: 0,
     firstWeekContainsDate: 4

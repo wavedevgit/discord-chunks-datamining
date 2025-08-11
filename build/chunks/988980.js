@@ -1,12 +1,13 @@
 /** Chunk was on web.js **/
+/** chunk id: 988980, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => a,
   q: () => s
 });
-var r = n(73800),
-  i = n(812206),
-  o = n(701488);
+var Chunk73800 = require("./73800.js"),
+  Chunk812206 = require("./812206.js"),
+  Chunk701488 = require("./701488.js");
 
 function a(e) {
   return r.useMemo(() => s(e), [e])
@@ -14,5 +15,5 @@ function a(e) {
 
 function s(e) {
   var t, n;
-  return !(null != e && o.P9.includes(null != e ? e : "")) || (null == (n = i.Z.getApplication(e)) || null == (t = n.embeddedActivityConfig) ? void 0 : t.legacy_responsive_aspect_ratio)
+  return !(null != e && o.P9.includes(null != e ? e : "")) || (null == (n = i.Z.getApplication(e)) || null == (t = n.embeddedActivityConfig) ? true : t.legacy_responsive_aspect_ratio)
 }

@@ -1,0 +1,25 @@
+/** Chunk was on 13616 **/
+/** chunk id: 741247, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
+  default: () => c,
+  e: () => s
+});
+var Chunk255367 = require("./255367.js");
+require("./73800.js");
+var Chunk481060 = require("./481060.js"),
+  Chunk239091 = require("./239091.js"),
+  Chunk241635 = require("./241635.jsx"),
+  Chunk388032 = require("./388032.jsx");
+
+function s(e, t) {
+  return (0, o.Z)(e, t).length > 0
+}
+
+function c(e) {
+  let {
+    role: t,
+    guild: n,
+    onSelect: s
+  } = e, c = (0, o.Z)(n, t);
+  return 0 === c.length ? null : <r.v2r navId={"guild-settings-role-context"} aria-label={a.intl.string(a.t["337Ja2"])} onClose={l.Zy} onSelect={s}>{c}</r.v2r>
+}

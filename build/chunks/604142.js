@@ -1,5 +1,6 @@
 /** Chunk was on 63942 **/
-e.exports = {
+/** chunk id: 604142, original params: e,n,t (module,exports,require) **/
+module.exports = {
   endScreenOverlay: "endScreenOverlay_afedfc",
   "animate-fade-in": "animate-fade-in_afedfc",
   endScreenImageBackground: "endScreenImageBackground_afedfc",

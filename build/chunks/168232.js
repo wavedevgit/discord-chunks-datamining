@@ -1,20 +1,21 @@
 /** Chunk was on web.js **/
+/** chunk id: 168232, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   G: () => f,
   QI: () => u,
   VR: () => d,
   dU: () => c,
   jX: () => l
-}), n(997841);
-var r = n(512722),
-  i = n.n(r),
-  o = n(630388),
-  a = n(48541),
-  s = n(981631);
+}), require("./997841.js");
+var Chunk512722 = require("./512722.js"),
+  i = require.n(Chunk512722),
+  Chunk630388 = require("./630388.js"),
+  Chunk48541 = require("./48541.js"),
+  Chunk981631 = require("./981631.js");
 
 function l(e, t, n) {
-  e || void 0 === t || i()(n === t, "Premium type should not change for non-staff users")
+  e || true === t || i()(n === t, "Premium type should not change for non-staff users")
 }
 
 function c(e) {
@@ -22,15 +23,15 @@ function c(e) {
 }
 
 function u(e) {
-  let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : void 0;
+  let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : true;
   return c(t) === a.C.DEVELOPMENT || window.GLOBAL_ENV.RELEASE_CHANNEL === a.C.STAGING || null != e && (e.isStaff() || e.isStaffPersonal())
 }
 
 function d(e) {
-  let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : void 0;
+  let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : true;
   return c(t) === a.C.DEVELOPMENT || window.GLOBAL_ENV.RELEASE_CHANNEL === a.C.STAGING || null != e && (!!(null != e.flags && (0, o.yE)(e.flags, s.xW$.STAFF)) || null != e.personal_connection_id)
 }
 
 function f(e) {
-  return void 0 !== e && e === s.WND ? null : e
+  return true !== e && e === s.WND ? null : e
 }

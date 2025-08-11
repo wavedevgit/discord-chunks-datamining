@@ -1,13 +1,14 @@
 /** Chunk was on web.js **/
+/** chunk id: 29899, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => l
 });
-var r = n(442837),
-  i = n(841784),
-  o = n(956221),
-  a = n(158776),
-  s = n(979651);
+var Chunk442837 = require("./442837.js"),
+  Chunk841784 = require("./841784.js"),
+  Chunk956221 = require("./956221.js"),
+  Chunk158776 = require("./158776.js"),
+  Chunk979651 = require("./979651.js");
 
 function l(e) {
   let {
@@ -19,18 +20,18 @@ function l(e) {
   } = (0, o.Z)({
     userId: t,
     guildId: n
-  }), u = null == c ? void 0 : c.id;
+  }), u = null == c ? true : c.id;
   return {
     voiceState: l,
     voiceChannel: c,
     voiceActivity: (0, r.e7)([a.Z, s.Z], () => {
       if (null == t || null == u) return;
       let e = a.Z.findActivity(t, e => {
-        if (!(0, i.Z)(e)) return !1;
+        if (!(0, i.Z)(e)) returnfalse;
         let n = s.Z.getVoiceStateForSession(t, e.session_id);
-        return (null == n ? void 0 : n.channelId) === u
+        return (null == n ? true : n.channelId) === u
       });
-      return null != e ? e : void 0
+      return null != e ? e : true
     })
   }
 }

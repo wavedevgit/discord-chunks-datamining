@@ -1,5 +1,6 @@
 /** Chunk was on 46746 **/
-e.exports = {
+/** chunk id: 554431, original params: e,t,n (module,exports,require) **/
+module.exports = {
   wrapper: "wrapper_d5ee5c",
   content: "content_d5ee5c",
   gameTile: "gameTile_d5ee5c",

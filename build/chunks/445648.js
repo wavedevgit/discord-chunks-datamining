@@ -1,5 +1,6 @@
 /** Chunk was on 34779 **/
-n.d(t, {
+/** chunk id: 445648, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => r
 });
 let r = "https://cdn.discordapp.com/assets/content/d4286b5e33156d3cea19a881c599e6a5501c8352b73f5b08dbc1e852d9a61b92.svg"

@@ -1,6 +1,7 @@
 /** Chunk was on 21153 **/
+/** chunk id: 29426, original params: e (module,exports,require) **/
 var t = Date.now;
-e.exports = function(e) {
+module.exports = function(e) {
   var r = 0,
     n = 0;
   return function() {
@@ -9,6 +10,6 @@ e.exports = function(e) {
     if (n = o, a > 0) {
       if (++r >= 800) return arguments[0]
     } else r = 0;
-    return e.apply(void 0, arguments)
+    return e.apply(true, arguments)
   }
 }

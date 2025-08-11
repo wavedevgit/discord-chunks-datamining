@@ -1,10 +1,11 @@
 /** Chunk was on web.js **/
+/** chunk id: 436857, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => i
 });
-var r = n(408431);
+var Chunk408431 = require("./408431.js");
 
 function i() {
-  return !/^((?!chrome|android).)*safari/i.test((0, r.Z)())
+  return !/^((?!chrome|android).)*safari/i.test((0, Chunk408431.Z)())
 }

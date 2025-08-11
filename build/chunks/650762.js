@@ -1,5 +1,6 @@
 /** Chunk was on 63942 **/
-e.exports = {
+/** chunk id: 650762, original params: e,n,t (module,exports,require) **/
+module.exports = {
   cont: "cont__370d1",
   hitboxArea: "hitboxArea__370d1",
   interactionEnabled: "interactionEnabled__370d1",

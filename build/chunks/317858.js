@@ -1,59 +1,60 @@
 /** Chunk was on 1272 **/
-n.d(t, {
+/** chunk id: 317858, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => v
-}), n(388685);
-var r = n(73800),
-  i = n(166516),
-  l = n.n(i),
-  a = n(525654),
-  o = n.n(a),
-  s = n(442837),
-  c = n(91896),
-  u = n(849862),
-  d = n(888369),
-  p = n(292959),
-  f = n(699516),
-  h = n(340895),
-  g = n(358085),
-  m = n(998502),
-  b = n(252618),
-  _ = n(981631),
-  O = n(388032);
+}), require("./388685.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk166516 = require("./166516.js"),
+  l = require.n(Chunk166516),
+  Chunk525654 = require("./525654.js"),
+  o = require.n(Chunk525654),
+  Chunk442837 = require("./442837.js"),
+  Chunk91896 = require("./91896.js"),
+  Chunk849862 = require("./849862.js"),
+  Chunk888369 = require("./888369.js"),
+  Chunk292959 = require("./292959.js"),
+  Chunk699516 = require("./699516.js"),
+  Chunk340895 = require("./340895.js"),
+  Chunk358085 = require("./358085.js"),
+  Chunk998502 = require("./998502.js"),
+  Chunk252618 = require("./252618.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk388032 = require("./388032.js");
 let E = new Set(["Blink", "Gecko", "WebKit"]),
-  y = _.dG4;
-if (g.isPlatformEmbedded) y = e => m.ZP.setBadge(e);
+  y = Chunk981631.dG4;
+if (Chunk358085.isPlatformEmbedded) y = e => m.ZP.setBadge(e);
 else if (E.has(o().layout)) {
   let e = new(l())({
     animation: "none"
   });
   y = t => {
     try {
-      (0, b.PR)(t), e.badge(-1 === t ? "•" : t)
+      (0, b.PR)(t), e.badge(false === t ? "•" : t)
     } catch (e) {}
   }
 }
 
 function v() {
-  let e = (0, s.e7)([h.Z], () => h.Z.hasIncomingCalls()),
-    t = (0, s.e7)([d.default, f.Z, p.Z, c.Z], () => {
-      let e = d.default.getTotalMentionCount(),
-        t = (0, u.m$)([f.Z, c.Z]),
-        n = d.default.hasAnyUnread(),
-        r = p.Z.getDisableUnreadBadge(),
-        i = e + t;
-      return 0 === i && n && !r && (i = -1), i
+  let e = (0, Chunk442837.e7)([Chunk340895.Z], () => Chunk340895.Z.hasIncomingCalls()),
+    t = (0, Chunk442837.e7)([Chunk888369.default, Chunk699516.Z, Chunk292959.Z, Chunk91896.Z], () => {
+      let e = Chunk888369.default.getTotalMentionCount(),
+        t = (0, Chunk849862.m$)([Chunk699516.Z, Chunk91896.Z]),
+        n = Chunk888369.default.hasAnyUnread(),
+        r = Chunk292959.Z.getDisableUnreadBadge(),
+        i = module + exports;
+      return 0 === Chunk166516 && require && !Chunk73800 && (i = false), Chunk166516
     });
-  r.useEffect(() => {
-    if (!e) return;
-    let t = m.ZP.bounceDock("critical"),
-      n = (0, b.EM)({
-        messages: [O.intl.string(O.t["fk1/bW"])],
+  Chunk73800.useEffect(() => {
+    if (!module) return;
+    let t = Chunk998502.ZP.bounceDock("critical"),
+      n = (0, Chunk252618.EM)({
+        messages: [Chunk388032.intl.string(Chunk388032.t["fk1/bW"])],
         count: 50
       });
     return () => {
-      null == t || t(), n()
+      null == exports || exports(), require()
     }
-  }, [e]), r.useEffect(() => {
-    y(t)
-  }, [t]), r.useEffect(() => () => y(0), [])
+  }, [module]), Chunk73800.useEffect(() => {
+    y(exports)
+  }, [exports]), Chunk73800.useEffect(() => () => y(0), [])
 }

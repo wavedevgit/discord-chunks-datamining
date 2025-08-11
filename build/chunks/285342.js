@@ -1,5 +1,6 @@
 /** Chunk was on web.js **/
-e.exports = function(e) {
+/** chunk id: 285342, original params: e (module,exports,re quire) **/
+module.exports = function(e) {
   let t = {
     className: "literal",
     begin: /[+-]+/,
@@ -13,7 +14,7 @@ e.exports = function(e) {
         match: /[ ]+[^\[\]\.,\+\-<> \r\n]/,
         relevance: 0
       }],
-      returnEnd: !0,
+      returnEnd: true,
       relevance: 0
     }), {
       className: "title",

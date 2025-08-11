@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 590433, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Cl: () => f,
   GN: () => _,
   L9: () => s,
@@ -10,9 +11,9 @@ n.d(t, {
   hL: () => u,
   tr: () => l
 });
-var r = n(63063),
-  i = n(981631),
-  o = n(388032),
+var Chunk63063 = require("./63063.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk388032 = require("./388032.jsx"),
   a = function(e) {
     return e[e.DURATION_60_SEC = 60] = "DURATION_60_SEC", e[e.DURATION_5_MIN = 300] = "DURATION_5_MIN", e[e.DURATION_10_MIN = 600] = "DURATION_10_MIN", e[e.DURATION_1_HOUR = 3600] = "DURATION_1_HOUR", e[e.DURATION_1_DAY = 86400] = "DURATION_1_DAY", e[e.DURATION_1_WEEK = 604800] = "DURATION_1_WEEK", e
   }({});
@@ -54,7 +55,7 @@ let l = () => Object.keys(a).filter(e => isNaN(Number(e))).map(e => {
       value: a[e]
     }
   }),
-  c = r.Z.getArticleURL(i.BhN.DISABLE_GUILD_COMMUNICATION),
+  c = Chunk63063.Z.getArticleURL(Chunk981631.BhN.DISABLE_GUILD_COMMUNICATION),
   u = "GuildCommunicationDisabledDismissedGuilds",
   d = "Set Communication Disabled Modal",
   f = "Clear Communication Disabled Modal",

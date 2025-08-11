@@ -1,14 +1,15 @@
 /** Chunk was on web.js **/
+/** chunk id: 271579, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   WS: () => m,
   ZP: () => E,
   zS: () => g
-}), n(413496), n(433524), n(35282), n(190126), n(368063), n(65234), n(111804), n(490233), n(97749), n(388685);
-var r = n(264344),
-  i = n.n(r),
-  o = n(772848),
-  a = n(511266);
+}), require("./413496.js"), require("./433524.js"), require("./35282.js"), require("./190126.js"), require("./368063.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js"), require("./388685.js");
+var Chunk264344 = require("./264344.js"),
+  i = require.n(Chunk264344),
+  Chunk772848 = require("./772848.js"),
+  Chunk511266 = require("./511266.js");
 
 function s(e, t) {
   if (null == e) return {};
@@ -37,14 +38,14 @@ let c = "com.discord",
 function h() {
   var e, t;
   let n = ["WebView", "(iPhone|iPod|iPad)(?!.*Safari/)"],
-    r = RegExp("(".concat(n.join("|"), ")"), "ig"),
-    o = (null === i() || void 0 === i() || null == (e = i().ua) ? void 0 : e.match(r)) != null,
-    a = (null === i() || void 0 === i() ? void 0 : i().name) === "Safari" && !o;
-  return (null === i() || void 0 === i() || null == (t = i().os) ? void 0 : t.family) !== "iOS" || a
+    r = RegExp("(".concat(require.join("|"), ")"), "ig"),
+    o = (null === i() || true === i() || null == (e = i().ua) ? true : module.match(Chunk264344)) != null,
+    a = (null === i() || true === i() ? true : i().name) === "Safari" && !Chunk772848;
+  return (null === i() || true === i() || null == (t = i().os) ? true : exports.family) !== "iOS" || Chunk511266
 }
 
 function m() {
-  return (0, o.Z)()
+  return (0, Chunk772848.Z)()
 }
 
 function g(e) {
@@ -59,7 +60,7 @@ function g(e) {
       o = new URL(i).searchParams,
       a = n ? t.get("utm_source") : t.get("pid"),
       s = {
-        utmSource: null != a ? a : void 0
+        utmSource: null != a ? a : true
       };
     for (let [e, t] of o.entries()) s[e] = t;
     return s
@@ -84,7 +85,7 @@ function E(e, t) {
     y = +!!h(),
     O = null != o ? encodeURIComponent(o) : null,
     v = null != l ? encodeURIComponent(l) : null;
-  if ((null == (r = window) || null == (n = r.location) ? void 0 : n.hash) === "#test") {
+  if ((null == (r = window) || null == (n = r.location) ? true : n.hash) === "#test") {
     let e = "".concat(_, "/").concat(p, "/?deep_link_value=").concat(E, "&pid=").concat(i, "&af_og_description=").concat(b, "&af_force_deeplink=").concat(y);
     return null != O && (e += "&af_android_url=".concat(O)), null != v && (e += "&af_ios_url=".concat(v)), console.log("Redirecting to ".concat(e)), e
   } {

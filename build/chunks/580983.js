@@ -1,7 +1,8 @@
 /** Chunk was on web.js **/
+/** chunk id: 580983, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-var r = n(621049),
+var Chunk621049 = require("./621049.js"),
   i = Function.prototype.call;
-e.exports = r ? i.bind(i) : function() {
+module.exports = Chunk621049 ? i.bind(i) : function() {
   return i.apply(i, arguments)
 }

@@ -1,5 +1,6 @@
 /** Chunk was on 18494 **/
-e.exports = {
+/** chunk id: 720848, original params: e,t,n (module,exports,require) **/
+module.exports = {
   channelOptionWrapper: "channelOptionWrapper_f9ff5f",
   icon: "icon_f9ff5f",
   inputWrapper: "inputWrapper_f9ff5f",

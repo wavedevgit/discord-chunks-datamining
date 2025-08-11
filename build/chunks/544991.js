@@ -1,4 +1,5 @@
 /** Chunk was on web.js **/
+/** chunk id: 544991, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 
 function r(e, t) {
@@ -6,6 +7,6 @@ function r(e, t) {
   for (var n in t) Object.prototype.hasOwnProperty.call(t, n) && (e[n] = t[n]);
   return e
 }
-n.d(t, {
+require.d(exports, {
   Z: () => r
 })

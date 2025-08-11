@@ -1,27 +1,28 @@
 /** Chunk was on web.js **/
+/** chunk id: 213053, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => y
-}), n(388685);
-var r = n(73800),
-  i = n(120356),
-  o = n.n(i),
-  a = n(866442),
-  s = n(442837),
-  l = n(481060),
-  c = n(607070),
-  u = n(629935),
-  d = n(168551),
-  f = n(168631),
-  _ = n(579132),
-  p = n(228168);
+}), require("./388685.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk120356 = require("./120356.js"),
+  o = require.n(Chunk120356),
+  Chunk866442 = require("./866442.js"),
+  Chunk442837 = require("./442837.js"),
+  Chunk481060 = require("./481060.js"),
+  Chunk607070 = require("./607070.js"),
+  Chunk629935 = require("./629935.js"),
+  Chunk168551 = require("./168551.js"),
+  Chunk168631 = require("./168631.js"),
+  Chunk579132 = require("./579132.js"),
+  Chunk228168 = require("./228168.js");
 
 function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -38,10 +39,10 @@ function m(e) {
   return e
 }
 let g = {
-    [p.lY.POPOUT]: "user-profile-popout",
-    [p.lY.MODAL]: "user-profile-modal",
-    [p.lY.MODAL_V2]: "user-profile-modal-v2",
-    [p.lY.SIDEBAR]: "user-profile-sidebar"
+    [Chunk228168.lY.POPOUT]: "user-profile-popout",
+    [Chunk228168.lY.MODAL]: "user-profile-modal",
+    [Chunk228168.lY.MODAL_V2]: "user-profile-modal-v2",
+    [Chunk228168.lY.SIDEBAR]: "user-profile-sidebar"
   },
   E = "custom-user-profile-theme",
   b = Object.freeze({
@@ -58,8 +59,8 @@ function y(e) {
     themeType: n,
     primaryColor: i,
     secondaryColor: p,
-    forceUserTheme: h = !1
-  } = e, [y, O] = (0, s.Wu)([c.Z], () => [c.Z.desaturateUserColors, c.Z.syncProfileThemeWithUserTheme]), v = (0, _.f)(t), I = O || h ? null == v ? void 0 : v.overlaySyncedWithUserTheme : null == v ? void 0 : v.overlay;
+    forceUserTheme: h = false
+  } = e, [y, O] = (0, s.Wu)([c.Z], () => [c.Z.desaturateUserColors, c.Z.syncProfileThemeWithUserTheme]), v = (0, _.f)(t), I = O || h ? null == v ? true : v.overlaySyncedWithUserTheme : null == v ? true : v.overlay;
   return {
     profileThemeStyle: (0, r.useMemo)(() => {
       if (null == i || null == p || null == v || null == I) return b;
@@ -69,9 +70,9 @@ function y(e) {
         "--profile-gradient-secondary-color": e(p),
         "--profile-gradient-overlay-color": I,
         "--profile-gradient-button-color": e((0, f.ZB)(i)),
-        "--profile-gradient-modal-background-color": e((0, f.oU)(i, p, O || h ? t : void 0))
+        "--profile-gradient-modal-background-color": e((0, f.oU)(i, p, O || h ? t : true))
       }, (0, u.W4)({
-        enabled: !0,
+        enabled: true,
         primaryColor: i,
         secondaryColor: p,
         isDarkTheme: (0, l.wjy)(t),
@@ -79,8 +80,8 @@ function y(e) {
       }))
     }, [i, p, v, I, O, h, t, y]),
     profileThemeClassName: o()((0, l.QeD)(t), null != n ? {
-      [g[n]]: !0
-    } : void 0, {
+      [g[n]]: true
+    } : true, {
       [d.e3]: null != i,
       [E]: null != i
     })

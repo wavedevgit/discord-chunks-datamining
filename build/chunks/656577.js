@@ -1,23 +1,24 @@
 /** Chunk was on web.js **/
+/** chunk id: 656577, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   ec: () => p,
   l4: () => E,
   zj: () => b
 });
-var r = n(524437),
-  i = n(695346),
-  o = n(594174),
-  a = n(704454);
-n(721360);
-var s = n(973005);
+var Chunk524437 = require("./524437.js"),
+  Chunk695346 = require("./695346.js"),
+  Chunk594174 = require("./594174.js"),
+  Chunk704454 = require("./704454.js");
+require("./721360.js");
+var Chunk973005 = require("./973005.js");
 
 function l(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -34,37 +35,37 @@ function c(e) {
   return e
 }
 let u = {
-    [s.TI.DISABLED.valueOf()]: r.Q4.SHOW,
-    [s.TI.NON_FRIENDS.valueOf()]: r.Q4.SHOW,
-    [s.TI.FRIENDS_AND_NON_FRIENDS.valueOf()]: r.Q4.BLOCK
+    [Chunk973005.TI.DISABLED.valueOf()]: Chunk524437.Q4.SHOW,
+    [Chunk973005.TI.NON_FRIENDS.valueOf()]: Chunk524437.Q4.SHOW,
+    [Chunk973005.TI.FRIENDS_AND_NON_FRIENDS.valueOf()]: Chunk524437.Q4.BLOCK
   },
   d = {
-    [s.TI.DISABLED.valueOf()]: r.Q4.SHOW,
-    [s.TI.NON_FRIENDS.valueOf()]: r.Q4.BLOCK,
-    [s.TI.FRIENDS_AND_NON_FRIENDS.valueOf()]: r.Q4.BLOCK
+    [Chunk973005.TI.DISABLED.valueOf()]: Chunk524437.Q4.SHOW,
+    [Chunk973005.TI.NON_FRIENDS.valueOf()]: Chunk524437.Q4.BLOCK,
+    [Chunk973005.TI.FRIENDS_AND_NON_FRIENDS.valueOf()]: Chunk524437.Q4.BLOCK
   },
   f = {
-    [s.TI.DISABLED.valueOf()]: r.Q4.BLUR,
-    [s.TI.NON_FRIENDS.valueOf()]: r.Q4.BLUR,
-    [s.TI.FRIENDS_AND_NON_FRIENDS.valueOf()]: r.Q4.BLOCK
+    [Chunk973005.TI.DISABLED.valueOf()]: Chunk524437.Q4.BLUR,
+    [Chunk973005.TI.NON_FRIENDS.valueOf()]: Chunk524437.Q4.BLUR,
+    [Chunk973005.TI.FRIENDS_AND_NON_FRIENDS.valueOf()]: Chunk524437.Q4.BLOCK
   },
   _ = {
-    [s.TI.DISABLED.valueOf()]: r.Q4.BLUR,
-    [s.TI.NON_FRIENDS.valueOf()]: r.Q4.BLOCK,
-    [s.TI.FRIENDS_AND_NON_FRIENDS.valueOf()]: r.Q4.BLOCK
+    [Chunk973005.TI.DISABLED.valueOf()]: Chunk524437.Q4.BLUR,
+    [Chunk973005.TI.NON_FRIENDS.valueOf()]: Chunk524437.Q4.BLOCK,
+    [Chunk973005.TI.FRIENDS_AND_NON_FRIENDS.valueOf()]: Chunk524437.Q4.BLOCK
   },
   p = e => {
     let {
       setting: t,
-      isDm: n = !1,
-      isFriend: i = !1
+      isDm: n = false,
+      isFriend: i = false
     } = e;
     if (null != t && t !== r.Q4.UNSET_EXPLICIT_CONTENT_REDACTION) return t;
     let s = o.default.getCurrentUser();
     return (0, a.bc)("resolveSettingWithDefaults") ? g({
       isDm: n,
       isFriend: i
-    }) : (0, a.g2)("resolveSettingWithDefaults") ? r.Q4.BLUR : (null == s ? void 0 : s.nsfwAllowed) === !1 ? m({
+    }) : (0, a.g2)("resolveSettingWithDefaults") ? r.Q4.BLUR : (null == s ? true : s.nsfwAllowed) === false ? m({
       isDm: n,
       isFriend: i
     }) : h({
@@ -74,8 +75,8 @@ let u = {
   },
   h = e => {
     let {
-      isDm: t = !1,
-      isFriend: n = !1
+      isDm: t = false,
+      isFriend: n = false
     } = e;
     if (!t) return r.Q4.SHOW;
     let o = i.UP.getSetting();
@@ -83,8 +84,8 @@ let u = {
   },
   m = e => {
     let {
-      isDm: t = !1,
-      isFriend: n = !1
+      isDm: t = false,
+      isFriend: n = false
     } = e;
     if (!t) return r.Q4.BLUR;
     let o = i.UP.getSetting();
@@ -92,8 +93,8 @@ let u = {
   },
   g = e => {
     let {
-      isDm: t = !1,
-      isFriend: n = !1
+      isDm: t = false,
+      isFriend: n = false
     } = e;
     return t && !n ? r.Q4.BLOCK : r.Q4.BLUR
   },
@@ -101,16 +102,16 @@ let u = {
     let t = null != e ? e : i.Sh.getSetting();
     return {
       explicitContentGuilds: p({
-        setting: null == t ? void 0 : t.explicitContentGuilds
+        setting: null == t ? true : t.explicitContentGuilds
       }),
       explicitContentNonFriendDm: p({
-        setting: null == t ? void 0 : t.explicitContentNonFriendDm,
-        isDm: !0
+        setting: null == t ? true : t.explicitContentNonFriendDm,
+        isDm: true
       }),
       explicitContentFriendDm: p({
-        setting: null == t ? void 0 : t.explicitContentFriendDm,
-        isDm: !0,
-        isFriend: !0
+        setting: null == t ? true : t.explicitContentFriendDm,
+        isDm: true,
+        isFriend: true
       })
     }
   },

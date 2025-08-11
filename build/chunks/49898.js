@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 49898, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.r(t), n.d(t, {
+require.r(exports), require.d(exports, {
   GLOBAL_DISCOVERY_DEFAULT_TAB: () => s,
   GLOBAL_DISCOVERY_SEARCH_BAR_ICON_WIDTH_PX: () => l,
   GLOBAL_DISCOVERY_SEARCH_BAR_WIDTH_PX: () => c,

@@ -1,12 +1,13 @@
 /** Chunk was on web.js **/
+/** chunk id: 881952, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Nd: () => o,
   bk: () => i,
   d3: () => a,
   oP: () => s
 });
-var r = n(246364);
+var Chunk246364 = require("./246364.js");
 
 function i(e) {
   return e === r.wB.APPROVED || e === r.wB.REJECTED

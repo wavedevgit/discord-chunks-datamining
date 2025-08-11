@@ -1,20 +1,21 @@
 /** Chunk was on web.js **/
+/** chunk id: 621319, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Gy: () => l,
   H7: () => s,
   U5: () => a,
   en: () => c
 });
-var r = n(544891),
-  i = n(570140),
-  o = n(981631);
+var Chunk544891 = require("./544891.js"),
+  Chunk570140 = require("./570140.js"),
+  Chunk981631 = require("./981631.js");
 
 function a(e) {
   return r.tn.get({
     url: o.ANM.GUILD_VANITY_URL(e),
-    oldFormErrors: !0,
-    rejectWithError: !0
+    oldFormErrors: true,
+    rejectWithError: true
   }).then(e => {
     let {
       body: {
@@ -33,7 +34,7 @@ function a(e) {
 }
 
 function s() {
-  i.Z.dispatch({
+  Chunk570140.Z.dispatch({
     type: "GUILD_SETTINGS_VANITY_URL_RESET"
   })
 }
@@ -51,8 +52,8 @@ function c(e, t, n) {
     body: {
       code: t
     },
-    oldFormErrors: !0,
-    rejectWithError: !1
+    oldFormErrors: true,
+    rejectWithError: false
   }).then(e => {
     let {
       body: {
@@ -69,7 +70,7 @@ function c(e, t, n) {
     if (i.Z.dispatch({
         type: "GUILD_SETTINGS_VANITY_URL_ERROR",
         error: e.body
-      }), null == n ? void 0 : n.throwErr) throw e;
+      }), null == n ? true : n.throwErr) throw e;
     return e
   })
 }

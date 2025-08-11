@@ -1,8 +1,9 @@
 /** Chunk was on web.js **/
+/** chunk id: 912913, original params: e,t (module,exports,re quire) **/
 "use strict";
-Object.defineProperty(t, "__esModule", {
-  value: !0
-}), t.dataFormatterCache = void 0;
+Object.defineProperty(exports, "__esModule", {
+  value: true
+}), exports.dataFormatterCache = true;
 class n {
   constructor() {
     this.dateTime = new Map, this.duration = new Map, this.list = new Map, this.number = new Map, this.pluralRules = new Map, this.relativeTime = new Map
@@ -36,4 +37,4 @@ class n {
     return JSON.stringify(e)
   }
 }
-t.dataFormatterCache = new n
+exports.dataFormatterCache = new n

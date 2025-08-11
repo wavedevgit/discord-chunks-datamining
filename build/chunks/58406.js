@@ -1,21 +1,22 @@
 /** Chunk was on web.js **/
+/** chunk id: 58406, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   g: () => d
-}), n(415506);
-var r = n(626135),
-  i = n(823967),
-  o = n(281058),
-  a = n(761274),
-  s = n(981631),
-  l = n(388032);
+}), require("./415506.js");
+var Chunk626135 = require("./626135.js"),
+  Chunk823967 = require("./823967.js"),
+  Chunk281058 = require("./281058.js"),
+  Chunk761274 = require("./761274.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk388032 = require("./388032.js");
 
 function c(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -68,11 +69,11 @@ class d {
   }
   static defaultNativePermissionsRequestOptions(e) {
     let t = {
-      showAuthorizationError: !0
+      showAuthorizationError: true
     };
     return null == e ? t : u({}, t, e)
   }
   constructor() {
-    c(this, "storage", new o.Z)
+    c(this, "storage", new Chunk281058.Z)
   }
 }

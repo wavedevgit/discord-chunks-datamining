@@ -1,4 +1,5 @@
 /** Chunk was on 93157 **/
+/** chunk id: 36793, original params: t,e,o (module,exports,require) **/
 function n(t) {
   let {
     image: e,
@@ -118,7 +119,7 @@ function i(t, e, o) {
     maxDimensions: _
   })
 }
-o.d(e, {
+require.d(exports, {
   Ae: () => i,
   GS: () => n,
   PT: () => a

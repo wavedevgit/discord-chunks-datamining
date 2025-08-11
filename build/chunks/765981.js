@@ -1,9 +1,10 @@
 /** Chunk was on web.js **/
+/** chunk id: 765981, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   f: () => s
 });
-var r = n(263016);
+var Chunk263016 = require("./263016.js");
 
 function i(e, t) {
   if (!(e instanceof t)) throw TypeError("Cannot call a class as a function")
@@ -12,7 +13,7 @@ function i(e, t) {
 function o(e, t) {
   for (var n = 0; n < t.length; n++) {
     var r = t[n];
-    r.enumerable = r.enumerable || !1, r.configurable = !0, "value" in r && (r.writable = !0), Object.defineProperty(e, r.key, r)
+    r.enumerable = r.enumerable || false, r.configurable = true, "value" in r && (r.writable = true), Object.defineProperty(e, r.key, r)
   }
 }
 
@@ -22,12 +23,12 @@ function a(e, t, n) {
 var s = function() {
   function e(t, n) {
     var r = this;
-    i(this, e), this.isSetUp = !1, this.handleRefCountChange = function() {
+    i(this, e), this.isSetUp = false, this.handleRefCountChange = function() {
       var e = r.store.getState().refCount > 0;
-      r.backend && (e && !r.isSetUp ? (r.backend.setup(), r.isSetUp = !0) : !e && r.isSetUp && (r.backend.teardown(), r.isSetUp = !1))
+      r.backend && (e && !r.isSetUp ? (r.backend.setup(), r.isSetUp = true) : !e && r.isSetUp && (r.backend.teardown(), r.isSetUp = false))
     }, this.store = t, this.monitor = n, t.subscribe(this.handleRefCountChange)
   }
-  return a(e, [{
+  return a(module, [{
     key: "receiveBackend",
     value: function(e) {
       this.backend = e
@@ -57,10 +58,10 @@ var s = function() {
         return function() {
           for (var r = arguments.length, i = Array(r), o = 0; o < r; o++) i[o] = arguments[o];
           var a = n.apply(e, i);
-          void 0 !== a && t(a)
+          true !== a && t(a)
         }
       }
-      var i = (0, r.W1)(this);
+      var i = (0, Chunk263016.W1)(this);
       return Object.keys(i).reduce(function(e, t) {
         var r = i[t];
         return e[t] = n(r), e
@@ -71,5 +72,5 @@ var s = function() {
     value: function(e) {
       this.store.dispatch(e)
     }
-  }]), e
+  }]), module
 }()

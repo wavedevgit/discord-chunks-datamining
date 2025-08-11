@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 303737, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   GN: () => O,
   be: () => y,
   g4: () => E,
@@ -8,20 +9,20 @@ n.d(t, {
   r4: () => v,
   sO: () => T,
   yL: () => I
-}), n(539854), n(388685), n(993155), n(953529);
-var r = n(991637),
-  i = n.n(r),
-  o = n(399606),
-  a = n(570140),
-  s = n(333848),
-  l = n(592125),
-  c = n(923726),
-  u = n(289393),
-  d = n(944537),
-  f = n(144507),
-  _ = n(853439),
-  p = n(981631),
-  h = n(176505);
+}), require("./539854.js"), require("./388685.js"), require("./993155.js"), require("./953529.js");
+var Chunk991637 = require("./991637.js"),
+  i = require.n(Chunk991637),
+  Chunk399606 = require("./399606.js"),
+  Chunk570140 = require("./570140.js"),
+  Chunk333848 = require("./333848.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk923726 = require("./923726.js"),
+  Chunk289393 = require("./289393.js"),
+  Chunk944537 = require("./944537.js"),
+  Chunk144507 = require("./144507.js"),
+  Chunk853439 = require("./853439.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk176505 = require("./176505.js");
 i().shim();
 let m = {};
 
@@ -35,18 +36,18 @@ function E(e, t, n) {
   let r = (0, o.e7)([u.Z], () => u.Z.getSubscriptionListingsForGuild(e)),
     i = (0, d.n)(t => t.editStateIdsForGroup[e]),
     a = (0, d.n)(e => e.listings);
-  if (void 0 === n || void 0 === t) return null;
+  if (true === n || true === t) return null;
   let s = r.filter(e => !e.soft_deleted && !e.archived).map(e => e.subscription_plans[0].price),
     l = [];
-  void 0 !== i && i.forEach(e => {
+  true !== i && i.forEach(e => {
     let t = a[e],
-      n = null == t ? void 0 : t.priceTier;
+      n = null == t ? true : t.priceTier;
     null != n && l.push(n)
   });
   let c = new Set(l.concat(s));
   if (!c.has(n)) return null;
   let f = t.indexOf(n);
-  if (-1 === f) return null;
+  if (false === f) return null;
   let _ = [];
   for (let e = f + 1; e < t.length && (c.has(t[e]) || _.push(t[e]), 3 !== _.length); e++);
   return _
@@ -58,7 +59,7 @@ function b(e) {
     r = new Set;
   null != t && t.forEach(e => {
     var t;
-    let i = null == (t = n[e]) ? void 0 : t.channelBenefits;
+    let i = null == (t = n[e]) ? true : t.channelBenefits;
     null == i || i.forEach(e => {
       null != _.Z.getChannel(e.ref_id) && r.add(e.ref_id)
     })
@@ -108,13 +109,14 @@ async function v(e, t) {
         i = d.n.getState().listings;
       null != r && r.forEach(e => {
         var n;
-        let r = null == (n = i[e]) ? void 0 : n.channelBenefits;
+        let r = null == (n = i[e]) ? true : n.channelBenefits;
         null == r || r.forEach(e => {
           e.ref_id === o && (e.ref_id = t.id)
         })
       })
     } else if (null != t) {
-      let e = t.findIndex(e => e.ref_id === o); - 1 !== e && (null == t || t.splice(e, 1))
+      let e = t.findIndex(e => e.ref_id === o);
+      false !== e && (null == t || t.splice(e, 1))
     }
   })
 }
@@ -122,7 +124,7 @@ async function v(e, t) {
 function I(e, t) {
   var n, r;
   let i = d.n.getState().listings[e],
-    o = null == i ? void 0 : i.usedTemplate;
+    o = null == i ? true : i.usedTemplate;
   if (null == o) return {
     templateCategory: null,
     hasChangeFromTemplate: null
@@ -133,16 +135,16 @@ function I(e, t) {
     hasChangeFromTemplate: null
   };
   let s = a.listings[0];
-  if ((null == i ? void 0 : i.name) !== s.name || (null == i ? void 0 : i.description) !== s.description || (null == i ? void 0 : i.priceTier) !== s.price_tier || (null == i ? void 0 : i.image) !== s.image || (null == i ? void 0 : i.roleColor) !== s.role_color || (null == i || null == (n = i.channelBenefits) ? void 0 : n.length) !== s.channels.length || (null == i || null == (r = i.intangibleBenefits) ? void 0 : r.length) !== s.additional_perks.length) return {
+  if ((null == i ? true : i.name) !== s.name || (null == i ? true : i.description) !== s.description || (null == i ? true : i.priceTier) !== s.price_tier || (null == i ? true : i.image) !== s.image || (null == i ? true : i.roleColor) !== s.role_color || (null == i || null == (n = i.channelBenefits) ? true : n.length) !== s.channels.length || (null == i || null == (r = i.intangibleBenefits) ? true : r.length) !== s.additional_perks.length) return {
     templateCategory: a.category,
-    hasChangeFromTemplate: !0
+    hasChangeFromTemplate: true
   };
   for (let e = 0; e < s.channels.length; e++) {
     let t = i.channelBenefits[e],
       n = s.channels[e];
     if (t.name !== n.name || t.description !== n.description || t.emoji_name !== n.emoji_name) return {
       templateCategory: a.category,
-      hasChangeFromTemplate: !0
+      hasChangeFromTemplate: true
     }
   }
   for (let e = 0; e < s.additional_perks.length; e++) {
@@ -150,12 +152,12 @@ function I(e, t) {
       n = s.additional_perks[e];
     if (t.name !== n.name || t.description !== n.description || t.emoji_name !== n.emoji_name) return {
       templateCategory: a.category,
-      hasChangeFromTemplate: !0
+      hasChangeFromTemplate: true
     }
   }
   return {
     templateCategory: a.category,
-    hasChangeFromTemplate: !1
+    hasChangeFromTemplate: false
   }
 }
 

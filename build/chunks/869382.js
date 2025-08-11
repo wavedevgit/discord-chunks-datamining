@@ -1,11 +1,12 @@
 /** Chunk was on 91315 **/
-n.d(t, {
+/** chunk id: 869382, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   N: () => o
 });
-var r = n(97519),
-  l = n(296574),
-  a = n(731965);
-let s = (0, r.U)((0, l.tJ)((e, t) => ({
+var Chunk97519 = require("./97519.js"),
+  Chunk296574 = require("./296574.js"),
+  Chunk731965 = require("./731965.js");
+let s = (0, Chunk97519.U)((0, Chunk296574.tJ)((e, t) => ({
     channelShowResolvedFlags: {},
     setShowResolvedFlags: (t, n) => (0, a.j)(() => {
       e(e => {
@@ -21,9 +22,9 @@ let s = (0, r.U)((0, l.tJ)((e, t) => ({
                 var r;
                 r = n[t], t in e ? Object.defineProperty(e, t, {
                   value: r,
-                  enumerable: !0,
-                  configurable: !0,
-                  writable: !0
+                  enumerable: true,
+                  configurable: true,
+                  writable: true
                 }) : e[t] = r
               })
             }
@@ -49,13 +50,13 @@ let s = (0, r.U)((0, l.tJ)((e, t) => ({
     }
   }), {
     name: "report-to-mod-channel-storage",
-    storage: (0, l.FL)(() => localStorage)
+    storage: (0, Chunk296574.FL)(() => localStorage)
   })),
   o = e => {
     var t;
     let n = s();
     return null == e ? {
-      showResolvedFlags: !0,
+      showResolvedFlags: true,
       setShowResolvedFlags: () => {}
     } : {
       showResolvedFlags: null == (t = n.getShowResolvedFlags(e)) || t,

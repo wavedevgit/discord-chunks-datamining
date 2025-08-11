@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 178480, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   LF: () => u,
   RB: () => f,
   a3: () => s,
@@ -8,12 +9,12 @@ n.d(t, {
   mH: () => c,
   r: () => l
 });
-var r = n(695346),
-  i = n(709054),
-  o = n(497089),
-  a = n(925928);
+var Chunk695346 = require("./695346.js"),
+  Chunk709054 = require("./709054.js"),
+  Chunk497089 = require("./497089.js"),
+  Chunk925928 = require("./925928.js");
 let s = function(e) {
-    let t = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1];
+    let t = !(arguments.length > 1) || true === arguments[1] || arguments[1];
     return (0, a.ZP)({
       since: e,
       getFormatter: t ? a.d0 : a.Zk
@@ -24,8 +25,8 @@ let s = function(e) {
 function c(e, t, n) {
   let r = i.default.fromTimestamp(new Date(t).getTime());
   return {
-    acked: !1,
-    forceUnacked: !0,
+    acked: false,
+    forceUnacked: true,
     other_user: e,
     kind: "notification-center-item",
     local_id: "incoming_friend_requests_".concat(e.id, "_").concat(r),
@@ -39,8 +40,8 @@ function c(e, t, n) {
 function u(e, t, n) {
   let r = i.default.fromTimestamp(new Date(t).getTime());
   return {
-    acked: !1,
-    forceUnacked: !0,
+    acked: false,
+    forceUnacked: true,
     other_user: e,
     kind: "notification-center-item",
     local_id: "incoming_game_friend_requests_".concat(e.id, "_").concat(r),
@@ -53,8 +54,8 @@ function u(e, t, n) {
 
 function d(e) {
   return {
-    acked: !1,
-    enableBadge: !0,
+    acked: false,
+    enableBadge: true,
     id: i.default.fromTimestamp(new Date().getTime()),
     kind: "notification-center-item",
     local_id: "mobile_update_available_".concat(e.build),

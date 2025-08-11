@@ -1,14 +1,15 @@
 /** Chunk was on web.js **/
+/** chunk id: 880251, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   E: () => c
 });
-var r = n(73800),
-  i = n(361213),
-  o = n(778569),
-  a = n(783097),
-  s = n(768581),
-  l = n(758199);
+var Chunk73800 = require("./73800.js"),
+  Chunk361213 = require("./361213.js"),
+  Chunk778569 = require("./778569.js"),
+  Chunk783097 = require("./783097.js"),
+  Chunk768581 = require("./768581.js"),
+  Chunk758199 = require("./758199.jsx");
 
 function c(e) {
   let {
@@ -16,7 +17,7 @@ function c(e) {
   } = e, n = (0, a.ye)(e), {
     url: c
   } = (0, o.Z)({
-    applicationId: n ? e.id : void 0,
+    applicationId: n ? e.id : true,
     size: 600,
     names: ["embedded_cover"]
   });
@@ -30,18 +31,18 @@ function c(e) {
         id: t.id,
         banner: e,
         size: 512,
-        canAnimate: !1
+        canAnimate: false
       }), (0, s.xR)(e) && null == c && (o = (0, s.aN)({
         id: t.id,
         banner: e,
         size: 512,
-        canAnimate: !0
+        canAnimate: true
       }))
     }
     if (n) {
       let t = (0, a.yJ)(e);
       null != c && (r = c, u = l.u.ACTIVITY);
-      let n = null == t ? void 0 : t.activity_preview_video_asset_id;
+      let n = null == t ? true : t.activity_preview_video_asset_id;
       null != n && (o = (0, i.Z)(e.id, n), u = l.u.ACTIVITY)
     }
     return {

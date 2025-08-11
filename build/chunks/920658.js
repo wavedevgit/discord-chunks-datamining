@@ -1,8 +1,9 @@
 /** Chunk was on 19726 **/
-n.d(i, {
+/** chunk id: 920658, original params: e,i,n (module,exports,require) **/
+require.d(exports, {
   Z: () => c
 });
-var o = n(757490),
+var Chunk757490 = require("./757490.js"),
   t = {
     masculine: "ostatni",
     feminine: "ostatnia"

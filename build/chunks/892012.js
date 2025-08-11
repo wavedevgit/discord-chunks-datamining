@@ -1,5 +1,6 @@
 /** Chunk was on 1272 **/
-e.exports = {
+/** chunk id: 892012, original params: e,t,n (module,exports,require) **/
+module.exports = {
   button: "button__95fb7",
   innerButton: "innerButton__95fb7",
   nitroIconSubHeader: "nitroIconSubHeader__95fb7",

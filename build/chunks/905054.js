@@ -1,5 +1,6 @@
 /** Chunk was on web.js **/
-e.exports = function(e) {
+/** chunk id: 905054, original params: e (module,exports,re quire) **/
+module.exports = function(e) {
   let t = e.regex,
     n = ["div", "mod", "in", "and", "or", "not", "xor", "asserterror", "begin", "case", "do", "downto", "else", "end", "exit", "for", "local", "if", "of", "repeat", "then", "to", "until", "while", "with", "var"],
     r = "false true",
@@ -57,7 +58,7 @@ e.exports = function(e) {
     };
   return {
     name: "C/AL",
-    case_insensitive: !0,
+    case_insensitive: true,
     keywords: {
       keyword: n,
       literal: r

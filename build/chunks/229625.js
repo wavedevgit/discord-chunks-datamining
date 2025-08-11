@@ -1,13 +1,14 @@
 /** Chunk was on 21153 **/
+/** chunk id: 229625, original params: e,t,r (module,exports,require) **/
 "use strict";
-var n = r(73800),
-  o = r(476400),
-  a = r.n(o),
-  i = r(9196),
-  l = r(329022),
-  s = r(829307),
-  u = r(116850),
-  c = r(584205),
+var Chunk73800 = require("./73800.js"),
+  Chunk476400 = require("./476400.js"),
+  a = require.n(Chunk476400),
+  Chunk9196 = require("./9196.js"),
+  Chunk329022 = require("./329022.js"),
+  Chunk829307 = require("./829307.js"),
+  Chunk116850 = require("./116850.js"),
+  Chunk584205 = require("./584205.js"),
   p = function(e) {
     var t = e.width,
       r = e.colors,
@@ -92,7 +93,7 @@ var n = r(73800),
             transform: "rotate(180deg)"
           }
         }
-      }, void 0 === p ? {} : p), {
+      }, true === p ? {} : p), {
         "hide-triangle": "hide" === u,
         "top-left-triangle": "top-left" === u,
         "top-right-triangle": "top-right" === u,
@@ -107,7 +108,7 @@ var n = r(73800),
       };
     return n.createElement("div", {
       style: d.card,
-      className: "github-picker " + (void 0 === f ? "" : f)
+      className: "github-picker " + (true === f ? "" : f)
     }, n.createElement("div", {
       style: d.triangleShadow
     }), n.createElement("div", {
@@ -131,4 +132,4 @@ p.propTypes = {
   colors: ["#B80000", "#DB3E00", "#FCCB00", "#008B02", "#006B76", "#1273DE", "#004DCF", "#5300EB", "#EB9694", "#FAD0C3", "#FEF3BD", "#C1E1C5", "#BEDADC", "#C4DEF6", "#BED3F3", "#D4C4FB"],
   triangle: "top-left",
   styles: {}
-}, (0, u.t1)(p)
+}, (0, Chunk116850.t1)(p)

@@ -1,1 +1,0 @@
-{"id":"494573","type":"experiment","data":{"kind":"user","id":"2025-07_search_mobile_xdm_channel_filters","label":"Search Mobile XDM Channel Filters","defaultConfig":{"enabled":false},"treatments":[{"id":1,"label":"Enabled","config":{"enabled":false}}]},"fromModule":{"id":"web.js"}}

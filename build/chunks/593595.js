@@ -1,5 +1,6 @@
 /** Chunk was on 75708 **/
-e.exports = {
+/** chunk id: 593595, original params: e,t,n (module,exports,require) **/
+module.exports = {
   hoverWrapper: "hoverWrapper_b5493b",
   flipCardContainer: "flipCardContainer_b5493b",
   noFlipCardContainer: "noFlipCardContainer_b5493b",

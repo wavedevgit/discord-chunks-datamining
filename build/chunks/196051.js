@@ -1,13 +1,14 @@
 /** Chunk was on web.js **/
+/** chunk id: 196051, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Bo: () => a,
   Ct: () => l,
   LA: () => o,
   NB: () => s,
   cP: () => i
 });
-var r = n(570140);
+var Chunk570140 = require("./570140.js");
 
 function i(e, t, n, i, o) {
   r.Z.dispatch({
@@ -37,7 +38,7 @@ function a(e, t) {
 }
 
 function s() {
-  r.Z.dispatch({
+  Chunk570140.Z.dispatch({
     type: "STOP_SPEAKING"
   })
 }

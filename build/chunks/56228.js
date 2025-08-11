@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 56228, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   enabled: "enabled_f4f0eb",
   attachmentImage: "attachmentImage_f4f0eb",
   radioBackground: "radioBackground_f4f0eb",

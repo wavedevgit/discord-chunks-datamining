@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 36459, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   $Y: () => v,
   JK: () => b,
   Je: () => y,
@@ -9,18 +10,18 @@ n.d(t, {
   Xx: () => I,
   mm: () => O,
   qY: () => E
-}), n(388685);
-var r = n(544891),
-  i = n(570140),
-  o = n(367907),
-  a = n(430824),
-  s = n(496675),
-  l = n(823379),
-  c = n(709054),
-  u = n(177862),
-  d = n(787824),
-  f = n(226192),
-  _ = n(981631);
+}), require("./388685.js");
+var Chunk544891 = require("./544891.js"),
+  Chunk570140 = require("./570140.js"),
+  Chunk367907 = require("./367907.js"),
+  Chunk430824 = require("./430824.js"),
+  Chunk496675 = require("./496675.js"),
+  Chunk823379 = require("./823379.js"),
+  Chunk709054 = require("./709054.js"),
+  Chunk177862 = require("./177862.js"),
+  Chunk787824 = require("./787824.js"),
+  Chunk226192 = require("./226192.js"),
+  Chunk981631 = require("./981631.js");
 
 function p(e) {
   return {
@@ -78,7 +79,7 @@ async function E(e) {
     n = await r.tn.post({
       url: _.ANM.GUILD_AUTOMOD_VALIDATE_RULE(e.guildId),
       body: t,
-      rejectWithError: !1
+      rejectWithError: false
     });
   return (0, d.C)(n.body)
 }
@@ -87,7 +88,7 @@ async function b(e) {
   return delete t.id, g((await r.tn.post({
     url: _.ANM.GUILD_AUTOMOD_RULES(e.guildId),
     body: t,
-    rejectWithError: !1
+    rejectWithError: false
   })).body)
 }
 async function y(e) {
@@ -95,19 +96,19 @@ async function y(e) {
   return g((await r.tn.patch({
     url: _.ANM.GUILD_AUTOMOD_RULE(e.guildId, e.id),
     body: t,
-    rejectWithError: !1
+    rejectWithError: false
   })).body)
 }
 async function O(e, t) {
   return await r.tn.del({
     url: _.ANM.GUILD_AUTOMOD_RULE(t, e),
-    rejectWithError: !1
-  }), !0
+    rejectWithError: false
+  }), true
 }
 async function v(e) {
   let t = await r.tn.get({
     url: _.ANM.GUILD_AUTOMOD_RULES(e),
-    rejectWithError: !1
+    rejectWithError: false
   });
   return Array.isArray(t.body) ? t.body.map(g) : []
 }
@@ -119,7 +120,7 @@ async function I(e, t, n) {
       channel_id: t.id,
       alert_action_type: n
     },
-    rejectWithError: !1
+    rejectWithError: false
   })
 }
 
@@ -132,7 +133,7 @@ function T(e, t, n) {
       decision_id: t
     }), r.tn.post({
       url: _.ANM.GUILD_AUTOMOD_CLEAR_MENTION_RAID(e),
-      rejectWithError: !0
+      rejectWithError: true
     }), n()
   };
   (0, f.UV)(l)

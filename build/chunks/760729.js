@@ -1,16 +1,17 @@
 /** Chunk was on web.js **/
+/** chunk id: 760729, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   $: () => a
-}), n(35282);
-var r = n(381129),
-  i = n(981631),
-  o = n(388032);
+}), require("./35282.js");
+var Chunk381129 = require("./381129.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk388032 = require("./388032.jsx");
 let a = [{
   check(e, t, n) {
-    if (!n || null == t.getGuildId()) return !1;
+    if (!n || null == t.getGuildId()) returnfalse;
     let i = r.Z.extractEveryoneRole(e, t);
-    if (null == i || !r.Z.shouldShowEveryoneGuard(i, t)) return !1;
+    if (null == i || !r.Z.shouldShowEveryoneGuard(i, t)) returnfalse;
     let a = r.Z.everyoneMemberCount(i, t),
       s = Math.pow(10, Math.floor(Math.log10(a))),
       l = o.t["47E5R0"];
@@ -24,8 +25,8 @@ let a = [{
   },
   analyticsType: "@Everyone Warning",
   animation: {
-    dark: () => n.e("83323").then(n.t.bind(n, 510465, 19)),
-    light: () => n.e("36052").then(n.t.bind(n, 570227, 19))
+    dark: () => require.e("83323").then(require.t.bind(require, 510465, 19)),
+    light: () => require.e("36052").then(require.t.bind(require, 570227, 19))
   }
 }, {
   check: e => !!i.Jn9.test(e) && {

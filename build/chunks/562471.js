@@ -1,5 +1,6 @@
 /** Chunk was on web.js **/
-e.exports = function(e) {
+/** chunk id: 562471, original params: e (module,exports,re quire) **/
+module.exports = function(e) {
   let t = "(_?[ui](8|16|32|64|128))?",
     n = "(_?f(32|64))?",
     r = "[a-zA-Z_]\\w*[!?=]?|[-+~]@|<<|>>|[=!]~|===?|<=>|[<>]=?|\\*\\*|[-/+%^&*~|]|//|//=|&[-+*]=?|&\\*\\*|\\[\\][=?]?",
@@ -181,7 +182,7 @@ e.exports = function(e) {
       end: /\B\b/,
       contains: [e.inherit(e.TITLE_MODE, {
         begin: r,
-        endsParent: !0
+        endsParent: true
       })]
     }, {
       className: "function",
@@ -189,7 +190,7 @@ e.exports = function(e) {
       end: /\B\b/,
       contains: [e.inherit(e.TITLE_MODE, {
         begin: r,
-        endsParent: !0
+        endsParent: true
       })],
       relevance: 2
     }, {

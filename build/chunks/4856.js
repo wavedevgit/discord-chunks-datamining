@@ -1,5 +1,6 @@
 /** Chunk was on 75708 **/
-e.exports = {
+/** chunk id: 4856, original params: e,t,n (module,exports,require) **/
+module.exports = {
   banner: "banner__84995",
   bannerBackgroundImage: "bannerBackgroundImage__84995",
   image: "image__84995",

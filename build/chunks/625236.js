@@ -1,18 +1,19 @@
 /** Chunk was on 1272 **/
-n.d(t, {
+/** chunk id: 625236, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   B: () => u
-}), n(388685);
-var r = n(786761),
-  i = n(23750),
-  l = n(306680),
-  a = n(709054);
+}), require("./388685.js");
+var Chunk786761 = require("./786761.js"),
+  Chunk23750 = require("./23750.js"),
+  Chunk306680 = require("./306680.js"),
+  Chunk709054 = require("./709054.js");
 
 function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -47,19 +48,19 @@ class u {
   }
   messageGeneration(e, t) {
     let n = this.messages.get(e);
-    return null == n ? -1 / 0 : n.generation !== t && null != n.message && n.message.id === l.ZP.lastMessageId(e) ? (this.messages.set(e, c(s({}, n), {
+    return null == n ? false / 0 : n.generation !== t && null != n.message && n.message.id === l.ZP.lastMessageId(e) ? (this.messages.set(e, c(s({}, n), {
       generation: t
     })), t) : n.generation
   }
   messageId(e) {
     var t, n;
     let r = this.messages.get(e);
-    return null != (n = null == r || null == (t = r.message) ? void 0 : t.id) ? n : null
+    return null != (n = null == r || null == (t = r.message) ? true : t.id) ? n : null
   }
   messageRecord(e) {
     var t;
     let n = this.messages.get(e);
-    return null == n || null == n.message || n.message instanceof i.ZP || (n.message = (0, r.e5)(n.message)), null != (t = null == n ? void 0 : n.message) ? t : null
+    return null == n || null == n.message || n.message instanceof i.ZP || (n.message = (0, r.e5)(n.message)), null != (t = null == n ? true : n.message) ? t : null
   }
   has(e) {
     return this.messages.has(e)
@@ -73,7 +74,7 @@ class u {
   putNew(e, t, n) {
     var r, i, l;
     let o = this.messages.get(e);
-    null != t && (i = t.id, null == (l = null == o || null == (r = o.message) ? void 0 : r.id) || a.default.compare(i, l) > 0) && this.put(e, t, n)
+    null != t && (i = t.id, null == (l = null == o || null == (r = o.message) ? true : r.id) || a.default.compare(i, l) > 0) && this.put(e, t, n)
   }
   putMany(e, t) {
     for (let n of e) this.put(n.channel_id, n, t)
@@ -83,7 +84,7 @@ class u {
     if (null == e.id || null == e.channel_id) return;
     let n = e.channel_id,
       l = this.messages.get(n);
-    if ((null == l || null == (t = l.message) ? void 0 : t.id) !== e.id) return;
+    if ((null == l || null == (t = l.message) ? true : t.id) !== e.id) return;
     let a = l.message instanceof i.ZP ? (0, r.wi)(l.message, e) : (0, r.gx)(l.message, e);
     this.messages.set(n, c(s({}, l), {
       message: a
@@ -93,6 +94,6 @@ class u {
     this.messages.delete(e)
   }
   constructor() {
-    o(this, "localNeeded", !0), o(this, "messages", new Map)
+    o(this, "localNeeded", true), o(this, "messages", new Map)
   }
 }

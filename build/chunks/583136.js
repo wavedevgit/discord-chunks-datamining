@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 583136, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   guildInviteContainer: "guildInviteContainer__083ae",
   clickable: "clickable__083ae",
   cardHeightMeasure: "cardHeightMeasure__083ae",

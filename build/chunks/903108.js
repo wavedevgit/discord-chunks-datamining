@@ -1,16 +1,17 @@
 /** Chunk was on 49152 **/
-n.d(t, {
+/** chunk id: 903108, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => h
 });
-var r = n(442837),
-  i = n(358221),
-  l = n(430824),
-  a = n(496675),
-  s = n(431328),
-  o = n(501655),
-  c = n(146085),
-  u = n(368442),
-  d = n(981631);
+var Chunk442837 = require("./442837.js"),
+  Chunk358221 = require("./358221.js"),
+  Chunk430824 = require("./430824.js"),
+  Chunk496675 = require("./496675.js"),
+  Chunk431328 = require("./431328.js"),
+  Chunk501655 = require("./501655.js"),
+  Chunk146085 = require("./146085.js"),
+  Chunk368442 = require("./368442.js"),
+  Chunk981631 = require("./981631.js");
 
 function h(e) {
   var t;
@@ -20,7 +21,7 @@ function h(e) {
     f = (0, u.PK)(e.id),
     g = (0, r.e7)([l.Z], () => l.Z.getGuild(e.guild_id), [e.guild_id]),
     m = (0, r.e7)([a.Z], () => a.Z.can(c.yP, e), [e]),
-    b = null != (t = null == g ? void 0 : g.maxStageVideoChannelUsers) ? t : 0,
+    b = null != (t = null == g ? true : g.maxStageVideoChannelUsers) ? t : 0,
     y = !(null != g && g.features.has(d.oNc.COMMUNITY)) && b > d.RcX;
   return f && !n && m && !y && h + p >= b
 }

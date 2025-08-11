@@ -1,1 +1,0 @@
-{"id":"942766","type":"experiment","data":{"kind":"user","id":"2025-01_remove_emoji_effects","label":"Remove emoji effects","defaultConfig":{"removeEmojiEffects":false},"commonTriggerPoint":"i.$P.VOICE_CALL","treatments":[{"id":1,"label":"Remove emoji effects","config":{"removeEmojiEffects":false}}]},"fromModule":{"id":"web.js"}}

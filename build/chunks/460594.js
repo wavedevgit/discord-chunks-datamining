@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 460594, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   positionLayer: "positionLayer__08434",
   positionLayerDefaultAlignLeft: "positionLayerDefaultAlignLeft__08434",
   positionLayerDefaultAlignRight: "positionLayerDefaultAlignRight__08434",

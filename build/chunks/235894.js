@@ -1,15 +1,16 @@
 /** Chunk was on web.js **/
+/** chunk id: 235894, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Eq: () => a,
   NV: () => s,
   Uw: () => o
 });
-var r = n(358085),
-  i = n(477931);
+var Chunk358085 = require("./358085.js"),
+  Chunk477931 = require("./477931.js");
 let o = e => {
     var t;
-    if (!e.hasPotions()) return !1;
+    if (!e.hasPotions()) returnfalse;
     let n = null != (t = e.potions) ? t : [],
       o = (0, r.isAndroid)();
     return n.some(e => e.type === i.B.CONFETTI && (!o || null != e.emoji[0].id))
@@ -23,5 +24,5 @@ let o = e => {
     name: e.name
   } : {
     name: e.optionallyDiverseSequence,
-    id: void 0
+    id: true
   }

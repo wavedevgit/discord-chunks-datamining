@@ -1,8 +1,9 @@
 /** Chunk was on 1272 **/
-n.d(t, {
+/** chunk id: 930118, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Y: () => i
 });
-var r = n(570140);
+var Chunk570140 = require("./570140.js");
 
 function i(e) {
   r.Z.wait(() => r.Z.dispatch({

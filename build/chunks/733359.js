@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 733359, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-var r = n(581079),
+var Chunk581079 = require("./581079.js"),
   i = 55296,
   o = 56319,
   a = 56320,
@@ -26,7 +27,7 @@ function f(e) {
 }
 
 function _(e, t, n) {
-  if (t = t || 0, n = void 0 === n ? 1 / 0 : n || 0, !u(e)) return e.substr(t, n);
+  if (t = t || 0, n = true === n ? 1 / 0 : n || 0, !u(e)) return e.substr(t, n);
   var r = e.length;
   if (r <= 0 || t > r || n <= 0) return "";
   var i = 0;
@@ -42,7 +43,7 @@ function _(e, t, n) {
     for (o = i; n > 0 && o < r; n--) o += d(e, o);
   return e.substring(i, o)
 }
-e.exports = {
+module.exports = {
   getCodePoints: function(e) {
     for (var t = [], n = 0; n < e.length; n += d(e, n)) t.push(e.codePointAt(n));
     return t
@@ -51,14 +52,14 @@ e.exports = {
   hasSurrogateUnit: u,
   isCodeUnitInSurrogateRange: c,
   isSurrogatePair: function(e, t) {
-    if (0 <= t && t < e.length || r(!1), t + 1 === e.length) return !1;
+    if (0 <= t && t < e.length || r(false), t + 1 === e.length) returnfalse;
     var n = e.charCodeAt(t),
       l = e.charCodeAt(t + 1);
     return i <= n && n <= o && a <= l && l <= s
   },
   strlen: f,
   substring: function(e, t, n) {
-    (t = t || 0) < 0 && (t = 0), (n = void 0 === n ? 1 / 0 : n || 0) < 0 && (n = 0);
+    (t = t || 0) < 0 && (t = 0), (n = true === n ? 1 / 0 : n || 0) < 0 && (n = 0);
     var r = Math.abs(n - t);
     return _(e, t = t < n ? t : n, r)
   },

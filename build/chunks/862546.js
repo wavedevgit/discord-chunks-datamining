@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 862546, original params: e (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   option: "alt",
   command: "meta",
   return: "enter",

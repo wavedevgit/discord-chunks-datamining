@@ -1,26 +1,27 @@
 /** Chunk was on 1272 **/
-n.d(t, {
+/** chunk id: 986768, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   V: () => s
 });
-var r = n(317381),
-  i = n(107105);
-n(817938);
-var l = n(238679),
-  a = n(981631),
-  o = n(701488);
+var Chunk317381 = require("./317381.js"),
+  Chunk107105 = require("./107105.js");
+require("./817938.js");
+var Chunk238679 = require("./238679.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk701488 = require("./701488.js");
 
 function s(e, t, n) {
   var s, c;
   switch (t) {
     case a.zMe.ACTIVITY_PIP_MODE_UPDATE: {
-      let t = null == (s = e.application) ? void 0 : s.id,
+      let t = null == (s = e.application) ? true : s.id,
         n = null != t ? r.ZP.getLayoutModeForApp(t) : null;
       return null != n ? {
         is_pip_mode: n !== o.cE.FOCUSED
       } : null
     }
     case a.zMe.ACTIVITY_LAYOUT_MODE_UPDATE: {
-      let t = null == (c = e.application) ? void 0 : c.id,
+      let t = null == (c = e.application) ? true : c.id,
         n = null != t ? r.ZP.getLayoutModeForApp(t) : null;
       return null != n ? {
         layout_mode: n

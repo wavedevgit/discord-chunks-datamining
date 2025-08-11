@@ -1,13 +1,14 @@
 /** Chunk was on web.js **/
+/** chunk id: 587272, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Am: () => s,
   MW: () => u,
   Mf: () => c,
   Or: () => i,
   Wv: () => a,
   ko: () => l
-}), n(35282), n(73800);
+}), require("./35282.js"), require("./73800.js");
 let r = ["gif", "webp", "png", "apng"];
 
 function i(e) {
@@ -15,7 +16,7 @@ function i(e) {
 }
 
 function o(e) {
-  if (!i(e) || null == e.src) return !1;
+  if (!i(e) || null == e.src) returnfalse;
   let t = e.src.toLowerCase().split(".").pop();
   return null != t && r.includes(t)
 }

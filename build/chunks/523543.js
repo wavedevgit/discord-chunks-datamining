@@ -1,5 +1,6 @@
 /** Chunk was on web.js **/
-e.exports = function(e) {
+/** chunk id: 523543, original params: e (module,exports,re quire) **/
+module.exports = function(e) {
   let t = e.regex,
     n = e.COMMENT("--", "$"),
     r = {
@@ -54,7 +55,7 @@ e.exports = function(e) {
   };
   return {
     name: "SQL",
-    case_insensitive: !0,
+    case_insensitive: true,
     illegal: /[{}]|<\//,
     keywords: {
       $pattern: /\b[\w\.]+/,

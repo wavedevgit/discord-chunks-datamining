@@ -1,15 +1,16 @@
 /** Chunk was on web.js **/
+/** chunk id: 804739, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Q: () => a,
   t: () => s
 });
-var r = n(780570),
-  i = n(358085),
-  o = n(998502);
+var Chunk780570 = require("./780570.js"),
+  Chunk358085 = require("./358085.js"),
+  Chunk998502 = require("./998502.js");
 
 function a() {
-  return (0, i.isWindows)() && "arm64" !== o.ZP.architecture || (0, i.isMac)()
+  return (0, Chunk358085.isWindows)() && "arm64" !== Chunk998502.ZP.architecture || (0, Chunk358085.isMac)()
 }
 
 function s(e) {
@@ -21,7 +22,7 @@ function s(e) {
     applicationId: a,
     branchId: s
   } = e;
-  if (o.isConnected(a) || (null == s && (s = a), i.isLaunchable(a, s))) return !0;
+  if (o.isConnected(a) || (null == s && (s = a), i.isLaunchable(a, s))) returntrue;
   let l = t.getLibraryApplication(a, s);
   return !(null != l && (0, r.Je)(l)) && n.isLaunchable(a)
 }

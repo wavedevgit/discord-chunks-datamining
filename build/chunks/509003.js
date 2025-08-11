@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 509003, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   I8: () => p,
   Jc: () => g,
   LK: () => m,
@@ -9,20 +10,20 @@ n.d(t, {
   sD: () => h,
   x3: () => d,
   yA: () => f
-}), n(49124);
-var r = n(392711),
-  i = n.n(r),
-  o = n(594190),
-  a = n(817788),
-  s = n(981631),
-  l = n(388032);
+}), require("./49124.js");
+var Chunk392711 = require("./392711.js"),
+  i = require.n(Chunk392711),
+  Chunk594190 = require("./594190.js"),
+  Chunk817788 = require("./817788.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk388032 = require("./388032.jsx");
 
 function c(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -42,7 +43,7 @@ function u(e) {
 function d(e) {
   if (e.distributor === s.GQo.ROBLOX && null != e.sku) {
     var t, n;
-    return "".concat(e.sku, ":").concat(null != (n = null == (t = e.gameMetadata) ? void 0 : t[a.wF.PLACE_ID]) ? n : "")
+    return "".concat(e.sku, ":").concat(null != (n = null == (t = e.gameMetadata) ? true : t[a.wF.PLACE_ID]) ? n : "")
   }
   return null
 }
@@ -56,8 +57,8 @@ function _(e, t) {
   let l = u({}, e),
     c = t.subgameInfo,
     d = t.application,
-    f = Number(null == (n = e.gameMetadata) ? void 0 : n[a.wF.ROBLOX_TIME_STARTED]);
-  if ((isNaN(f) || 0 === f) && (f = null != (r = e.start) ? r : Date.now()), null == c) E(e) && (l.id = a.eB, l.name = s.EOG[s.GQo.ROBLOX]), l.gameMetadata = void 0, l.sku = void 0, l.start = f, l.lastFocused = Math.floor(f / 1e3);
+    f = Number(null == (n = e.gameMetadata) ? true : n[a.wF.ROBLOX_TIME_STARTED]);
+  if ((isNaN(f) || 0 === f) && (f = null != (r = e.start) ? r : Date.now()), null == c) E(e) && (l.id = a.eB, l.name = s.EOG[s.GQo.ROBLOX]), l.gameMetadata = true, l.sku = true, l.start = f, l.lastFocused = Math.floor(f / 1e3);
   else {
     let t = {};
     null != d && (0, o.ik)({
@@ -66,7 +67,7 @@ function _(e, t) {
     }) && (0, o.ik)({
       exePath: e.exePath,
       name: s.EOG[s.GQo.ROBLOX]
-    }) ? (l.id = d.id, l.name = d.id, l.gameName = d.name, l.start = Date.now(), l.lastFocused = Math.floor(Date.now() / 1e3)) : (l.id = a.eB, l.name = s.EOG[s.GQo.ROBLOX], l.start = f), t[a.wF.ROBLOX_TIME_STARTED] = f.toString(), l.sku = null != (i = c.universeId) ? i : void 0, null != c.placeId && (t[a.wF.PLACE_ID] = c.placeId), null != c.jobId && (t[a.wF.JOB_ID] = c.jobId), null != c.robloxUserId && (t[a.wF.ROBLOX_USER_ID] = c.robloxUserId), l.gameMetadata = Object.keys(t).length > 0 ? t : void 0
+    }) ? (l.id = d.id, l.name = d.id, l.gameName = d.name, l.start = Date.now(), l.lastFocused = Math.floor(Date.now() / 1e3)) : (l.id = a.eB, l.name = s.EOG[s.GQo.ROBLOX], l.start = f), t[a.wF.ROBLOX_TIME_STARTED] = f.toString(), l.sku = null != (i = c.universeId) ? i : true, null != c.placeId && (t[a.wF.PLACE_ID] = c.placeId), null != c.jobId && (t[a.wF.JOB_ID] = c.jobId), null != c.robloxUserId && (t[a.wF.ROBLOX_USER_ID] = c.robloxUserId), l.gameMetadata = Object.keys(t).length > 0 ? t : true
   }
   return l
 }
@@ -97,7 +98,7 @@ function m(e) {
 
 function g(e) {
   var t;
-  if (e.type !== s.IIU.PLAYING || (null == (t = e.metadata) ? void 0 : t.distributor) !== s.GQo.ROBLOX || e.application_id === a.eB) return e;
+  if (e.type !== s.IIU.PLAYING || (null == (t = e.metadata) ? true : t.distributor) !== s.GQo.ROBLOX || e.application_id === a.eB) return e;
   let n = Number(e.sync_id),
     r = u({}, e);
   return r.application_id = a.eB, r.name = s.EOG[s.GQo.ROBLOX], isNaN(n) || (r.timestamps = {

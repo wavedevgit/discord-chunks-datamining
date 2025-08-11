@@ -1,4 +1,5 @@
 /** Chunk was on web.js **/
+/** chunk id: 112457, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 
 function r(e, t) {
@@ -27,7 +28,7 @@ function a(e) {
     n = e.initialClientOffset;
   return t && n ? i(t, n) : null
 }
-n.d(t, {
+require.d(exports, {
   YY: () => o,
   ar: () => a
 })

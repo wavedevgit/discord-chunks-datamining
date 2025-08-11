@@ -1,2 +1,3 @@
 /** Chunk was on web.js **/
-e.exports = n(573401).Uint8Array
+/** chunk id: 139069, original params: e,t,n (module,exports,re quire) **/
+module.exports = require("./573401.js").Uint8Array

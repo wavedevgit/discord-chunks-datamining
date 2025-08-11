@@ -1,5 +1,6 @@
 /** Chunk was on web.js **/
-e.exports = function(e) {
+/** chunk id: 207579, original params: e (module,exports,re quire) **/
+module.exports = function(e) {
   return {
     name: "Vala",
     keywords: {
@@ -11,7 +12,7 @@ e.exports = function(e) {
       className: "class",
       beginKeywords: "class interface namespace",
       end: /\{/,
-      excludeEnd: !0,
+      excludeEnd: true,
       illegal: "[^,:\\n\\s\\.]",
       contains: [e.UNDERSCORE_TITLE_MODE]
     }, e.C_LINE_COMMENT_MODE, e.C_BLOCK_COMMENT_MODE, {

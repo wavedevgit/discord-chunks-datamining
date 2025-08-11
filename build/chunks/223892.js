@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 223892, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   DB: () => a,
   Lm: () => h,
   Ob: () => d,
@@ -9,29 +10,29 @@ n.d(t, {
   gS: () => _,
   mG: () => p
 });
-var r = n(586072),
-  i = n(981631);
+var Chunk586072 = require("./586072.js"),
+  Chunk981631 = require("./981631.js");
 
 function o() {
   let {
     isUserEligibleForCreatorMonetization: e
-  } = r.bT.useExperiment({
+  } = Chunk586072.bT.useExperiment({
     location: "e3bb71_1"
   }, {
-    autoTrackExposure: !1
+    autoTrackExposure: false
   });
-  return e
+  return module
 }
 
 function a() {
   let {
     isUserEligibleForCreatorMonetization: e
-  } = r.bT.getCurrentConfig({
+  } = Chunk586072.bT.getCurrentConfig({
     location: "e3bb71_2"
   }, {
-    autoTrackExposure: !1
+    autoTrackExposure: false
   });
-  return e
+  return module
 }
 
 function s(e) {
@@ -41,13 +42,13 @@ function s(e) {
     guildId: null != e ? e : i.lds,
     location: "e3bb71_3"
   }, {
-    autoTrackExposure: !0
+    autoTrackExposure: true
   }), {
     enableFastMonetizationOnboardingForUser: n
   } = r.AC.useExperiment({
     location: "e3bb71_4"
   }, {
-    autoTrackExposure: !1
+    autoTrackExposure: false
   });
   return null != e && t && n
 }
@@ -72,7 +73,7 @@ function c(e) {
   } = r.AC.useExperiment({
     location: "e3bb71_7"
   }, {
-    autoTrackExposure: !1
+    autoTrackExposure: false
   });
   return null != e && e.features.has(i.oNc.CREATOR_MONETIZABLE_WHITEGLOVE) && t
 }
@@ -87,13 +88,13 @@ function u(e) {
 }
 
 function d(e) {
-  let t = s(null == e ? void 0 : e.id),
+  let t = s(null == e ? true : e.id),
     n = c(e);
   return t || n
 }
 
 function f(e) {
-  return l(null == e ? void 0 : e.id) || u(e)
+  return l(null == e ? true : e.id) || u(e)
 }
 
 function _(e) {
@@ -103,7 +104,7 @@ function _(e) {
     guildId: null != e ? e : i.lds,
     location: "e3bb71_9"
   }, {
-    autoTrackExposure: !1
+    autoTrackExposure: false
   });
   return t
 }
@@ -121,10 +122,10 @@ function p(e) {
 function h() {
   let {
     enableCreatorMonetizationNagActivateForUser: e
-  } = r.aC.getCurrentConfig({
+  } = Chunk586072.aC.getCurrentConfig({
     location: "e3bb71_11"
   }, {
-    autoTrackExposure: !0
+    autoTrackExposure: true
   });
-  return e
+  return module
 }

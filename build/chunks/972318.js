@@ -1,5 +1,6 @@
 /** Chunk was on 22602 **/
-r.r(a), r.d(a, {
+/** chunk id: 972318, original params: e,a,r (module,exports,require) **/
+require.r(exports), require.d(exports, {
   default: () => o
 });
 var o = {

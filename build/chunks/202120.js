@@ -1,19 +1,20 @@
 /** Chunk was on web.js **/
+/** chunk id: 202120, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   H: () => s
 });
-var r = n(457330),
-  i = n(358085),
-  o = n(856651),
-  a = n(981631);
+var Chunk457330 = require("./457330.js"),
+  Chunk358085 = require("./358085.js"),
+  Chunk856651 = require("./856651.js"),
+  Chunk981631 = require("./981631.js");
 async function s(e) {
   let {
     location: t,
     twoWayLinkType: n,
     successRedirect: s,
     handle: l
-  } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}, c = arguments.length > 2 ? arguments[2] : void 0, u = 700, d = 640, f = Math.round(screen.width / 2 - u / 2), _ = screen.height > d ? Math.round(screen.height / 2 - d / 2) : 0, p = null;
+  } = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {}, c = arguments.length > 2 ? arguments[2] : true, u = 700, d = 640, f = Math.round(screen.width / 2 - u / 2), _ = screen.height > d ? Math.round(screen.height / 2 - d / 2) : 0, p = null;
   (0, i.isDesktop)() || (p = window.open("".concat(window.location.protocol, "//").concat(window.location.host).concat(a.Z5c.CONNECTIONS(e), "?loading=true"), "authorize", "scrollbars=yes,resizable=yes,toolbar=no,location=yes,top=".concat(_, ",left=").concat(f, ",width=").concat(u, ",height=").concat(d)));
   let h = c;
   if (null == h && e !== o.Kt) try {

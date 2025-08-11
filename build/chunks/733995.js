@@ -1,5 +1,6 @@
 /** Chunk was on web.js **/
-e.exports = function(e) {
+/** chunk id: 733995, original params: e (module,exports,re quire) **/
+module.exports = function(e) {
   let t = {
       className: "string",
       contains: [e.BACKSLASH_ESCAPE],
@@ -34,7 +35,7 @@ e.exports = function(e) {
       className: "function",
       beginKeywords: "function fn",
       end: /[;{]/,
-      excludeEnd: !0,
+      excludeEnd: true,
       illegal: /\$|\[|%/,
       contains: [n, {
         className: "params",
@@ -47,7 +48,7 @@ e.exports = function(e) {
       className: "class",
       beginKeywords: "class interface",
       end: /\{/,
-      excludeEnd: !0,
+      excludeEnd: true,
       illegal: /[:($"]/,
       contains: [{
         beginKeywords: "extends implements"

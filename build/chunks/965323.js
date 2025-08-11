@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 965323, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   scopes: "scopes__29337",
   noDivider: "noDivider__29337",
   scope: "scope__29337",

@@ -1,4 +1,5 @@
 /** Chunk was on web.js **/
+/** chunk id: 406954, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 
 function r(...e) {
@@ -6,6 +7,6 @@ function r(...e) {
     for (let n of e) "function" == typeof n && n(...t)
   }
 }
-n.d(t, {
+require.d(exports, {
   t: () => r
 })

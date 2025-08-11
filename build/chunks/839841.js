@@ -1,4 +1,5 @@
 /** Chunk was on 27278 **/
-e.exports = {
+/** chunk id: 839841, original params: e,n,t (module,exports,require) **/
+module.exports = {
   iframe: "iframe__8c55d"
 }

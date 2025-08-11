@@ -1,4 +1,5 @@
 /** Chunk was on web.js **/
+/** chunk id: 985430, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 var r = {
   "heading-sm/normal": "heading-sm/normal_b717a1",
@@ -89,4 +90,4 @@ var r = {
   faded: "faded_b717a1",
   error: "error_b717a1"
 };
-n.r(e.exports = r)
+require.r(module.exports = r)

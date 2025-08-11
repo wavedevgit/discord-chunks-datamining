@@ -1,5 +1,6 @@
 /** Chunk was on 82875 **/
-e.exports = {
+/** chunk id: 862173, original params: e,n,t (module,exports,require) **/
+module.exports = {
   recurrences: "recurrences__4fb8c",
   heading: "heading__4fb8c",
   scroller: "scroller__4fb8c",

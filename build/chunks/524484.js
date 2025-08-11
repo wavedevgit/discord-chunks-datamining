@@ -1,12 +1,13 @@
 /** Chunk was on web.js **/
+/** chunk id: 524484, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 
 function r(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -39,13 +40,13 @@ function a(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-n.d(t, {
+require.d(exports, {
   Hn: () => s,
   JR: () => d,
   oZ: () => l,
   qi: () => c,
   u4: () => f
-}), n(388685);
+}), require("./388685.js");
 var s = function(e) {
     return e[e.CHAT_INPUT = 0] = "CHAT_INPUT", e[e.REACTION = 1] = "REACTION", e[e.MEMBER_USER = 2] = "MEMBER_USER", e[e.CALL_TILE = 3] = "CALL_TILE", e
   }({}),

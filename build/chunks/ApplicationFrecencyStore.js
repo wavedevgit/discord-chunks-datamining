@@ -1,0 +1,135 @@
+/** Chunk was on web.js **/
+/** chunk id: 822245, original params: e,t,n (module,exports,re quire) **/
+"use strict";
+require.d(exports, {
+  Z: () => N
+}), require("./539854.js");
+var r, Chunk392711 = require("./392711.js"),
+  o = require.n(Chunk392711),
+  Chunk442837 = require("./442837.js"),
+  Chunk570140 = require("./570140.js"),
+  Chunk911969 = require("./911969.js"),
+  Chunk704907 = require("./704907.js"),
+  Chunk317381 = require("./317381.js"),
+  Chunk581883 = require("./581883.js"),
+  Chunk674563 = require("./674563.js"),
+  Chunk526761 = require("./526761.js");
+
+function p(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+
+function h(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      p(e, t, n[t])
+    })
+  }
+  return e
+}
+
+function m(e, t) {
+  var n = Object.keys(e);
+  if (Object.getOwnPropertySymbols) {
+    var r = Object.getOwnPropertySymbols(e);
+    t && (r = r.filter(function(t) {
+      return Object.getOwnPropertyDescriptor(e, t).enumerable
+    })), n.push.apply(n, r)
+  }
+  return n
+}
+
+function g(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
+    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+  }), e
+}
+let E = [Chunk911969.yU.CHAT, Chunk911969.yU.PRIMARY_ENTRY_POINT],
+  b = {
+    pendingUsages: []
+  },
+  y = new Chunk704907.ZP({
+    computeBonus: () => 100,
+    computeWeight: e => e <= 3 ? 100 : e <= 15 ? 70 : e <= 30 ? 50 : e <= 45 ? 30 : e <= 80 ? 10 : 1,
+    lookupKey: e => e,
+    afterCompute: () => {},
+    numFrequentlyItems: Chunk674563.yP
+  });
+
+function O(e) {
+  let {
+    settings: {
+      type: t
+    },
+    wasSaved: n
+  } = e;
+  if (t !== _.yP.FRECENCY_AND_FAVORITES_SETTINGS || !n) returnfalse;
+  b.pendingUsages = []
+}
+
+function v(e) {
+  var t;
+  let {
+    command: n
+  } = e;
+  if (!E.includes(n.type) || (null == (t = u.ZP.getLaunchState(n.applicationId)) ? true : t.isLaunching)) returnfalse;
+  T(n.applicationId)
+}
+
+function I(e) {
+  let {
+    applicationId: t
+  } = e;
+  T(t)
+}
+
+function T(e) {
+  b.pendingUsages.push({
+    key: e,
+    timestamp: Date.now()
+  }), y.track(e), y.compute()
+}
+
+function S() {
+  var e, t;
+  let n = null != (t = null == (e = Chunk581883.Z.frecencyWithoutFetchingLatest.applicationFrecency) ? true : module.applications) ? exports : {};
+  y.overwriteHistory(o().mapValues(require, e => g(h({}, e), {
+    recentUses: e.recentUses.map(Number).filter(e => e > 0)
+  })), b.pendingUsages)
+}
+class A extends(r = Chunk442837.ZP.PersistedStore) {
+  initialize(e) {
+    null != e && (b = e), this.waitFor(u.ZP), this.syncWith([d.Z], S)
+  }
+  getState() {
+    return b
+  }
+  hasPendingUsage() {
+    return b.pendingUsages.length > 0
+  }
+  getApplicationFrecencyWithoutLoadingLatest() {
+    return y
+  }
+  getScoreWithoutLoadingLatest(e) {
+    var t;
+    return null != (t = y.getScore(e)) ? t : 0
+  }
+  getTopApplicationsWithoutLoadingLatest() {
+    return y.frequently
+  }
+}
+p(A, "displayName", "ApplicationFrecencyStore"), p(A, "persistKey", "ApplicationFrecency");
+let N = new A(Chunk570140.Z, {
+  APPLICATION_COMMAND_USED: v,
+  EMBEDDED_ACTIVITY_OPEN: I,
+  USER_SETTINGS_PROTO_UPDATE: O
+})

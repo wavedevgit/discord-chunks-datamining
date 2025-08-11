@@ -1,14 +1,15 @@
 /** Chunk was on web.js **/
+/** chunk id: 362267, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => c
 });
-var r = n(442837),
-  i = n(780384),
-  o = n(410030),
-  a = n(358221),
-  s = n(944486),
-  l = n(981631);
+var Chunk442837 = require("./442837.js"),
+  Chunk780384 = require("./780384.js"),
+  Chunk410030 = require("./410030.js"),
+  Chunk358221 = require("./358221.js"),
+  Chunk944486 = require("./944486.js"),
+  Chunk981631 = require("./981631.js");
 
 function c(e, t) {
   let n = (0, r.e7)([s.Z], () => s.Z.getVoiceChannelId()),

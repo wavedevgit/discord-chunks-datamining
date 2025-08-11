@@ -1,5 +1,6 @@
 /** Chunk was on 22988 **/
-e.exports = {
+/** chunk id: 186667, original params: e,t,n (module,exports,require) **/
+module.exports = {
   grid: "grid__4cbea",
   traitWrapper: "traitWrapper__4cbea",
   traitRemoveButton: "traitRemoveButton__4cbea",

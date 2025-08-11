@@ -1,21 +1,22 @@
 /** Chunk was on 89744 **/
-n.d(t, {
+/** chunk id: 845077, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   PA: () => l,
   Wl: () => c
 });
-var r = n(990547);
-n(479531);
-var i = n(573261),
-  a = n(981631);
+var Chunk990547 = require("./990547.js");
+require("./479531.js");
+var Chunk573261 = require("./573261.js"),
+  Chunk981631 = require("./981631.js");
 async function l() {
-  let e = await i.Z.get({
-    url: a.ANM.SAFETY_FLOWS_TASK,
+  let e = await Chunk573261.Z.get({
+    url: Chunk981631.ANM.SAFETY_FLOWS_TASK,
     trackedActionData: {
-      event: r.NetworkActionNames.USER_VERIFY
+      event: Chunk990547.NetworkActionNames.USER_VERIFY
     },
-    rejectWithError: !1
+    rejectWithError: false
   });
-  return 204 === e.status ? null : e.body
+  return 204 === module.status ? null : module.body
 }
 async function c(e) {
   return (await i.Z.post({
@@ -24,6 +25,6 @@ async function c(e) {
     trackedActionData: {
       event: r.NetworkActionNames.USER_VERIFY
     },
-    rejectWithError: !0
+    rejectWithError: true
   })).body
 }

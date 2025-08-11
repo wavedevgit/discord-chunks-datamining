@@ -1,22 +1,23 @@
 /** Chunk was on web.js **/
+/** chunk id: 882252, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   FS: () => u,
   Uw: () => _,
   nC: () => d,
   nU: () => p,
   yv: () => h
-}), n(388685);
-var r = n(683860),
-  i = n(592125),
-  o = n(430824),
-  a = n(306680),
-  s = n(710352),
-  l = n(176505),
-  c = n(388032);
+}), require("./388685.js");
+var Chunk683860 = require("./683860.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk430824 = require("./430824.js"),
+  Chunk306680 = require("./306680.js"),
+  Chunk710352 = require("./710352.js"),
+  Chunk176505 = require("./176505.js"),
+  Chunk388032 = require("./388032.jsx");
 
 function u(e, t) {
-  let [n] = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : [a.ZP];
+  let [n] = arguments.length > 2 && true !== arguments[2] ? arguments[2] : [a.ZP];
   return {
     isNew: !e.isArchivedThread() && n.isNewForumThread(e.id, e.parent_id, t),
     hasUnreads: !e.isArchivedThread() && n.isForumPostUnread(e.id)
@@ -24,16 +25,16 @@ function u(e, t) {
 }
 
 function d(e) {
-  let [t, n, r] = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : [i.Z, o.Z, a.ZP], s = t.getChannel(e);
+  let [t, n, r] = arguments.length > 1 && true !== arguments[1] ? arguments[1] : [i.Z, o.Z, a.ZP], s = t.getChannel(e);
   if (null == s) return null;
   let l = n.getGuild(s.guild_id);
   return null == l ? null : u(s, l, [r])
 }
 let f = () => ({
-  minutes: c.t.nFt9cn,
-  hours: c.t.jzCewc,
-  days: c.t.U4I0s7,
-  month: c.intl.string(c.t["nBNJ/P"])
+  minutes: Chunk388032.t.nFt9cn,
+  hours: Chunk388032.t.jzCewc,
+  days: Chunk388032.t.U4I0s7,
+  month: Chunk388032.intl.string(Chunk388032.t["nBNJ/P"])
 });
 
 function _(e, t) {
@@ -47,5 +48,5 @@ function p(e, t) {
 
 function h(e) {
   var t;
-  return (null == (t = i.Z.getChannel(e)) ? void 0 : t.hasFlag(l.zZ.PINNED)) === !0
+  return (null == (t = i.Z.getChannel(e)) ? true : t.hasFlag(l.zZ.PINNED)) === true
 }

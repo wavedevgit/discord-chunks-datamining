@@ -1,4 +1,5 @@
 /** Chunk was on web.js **/
+/** chunk id: 954859, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 var r = {
   formText: "formText_ddd181",
@@ -14,4 +15,4 @@ var r = {
   error: "error_ddd181 description_ddd181 formText_ddd181",
   success: "success_ddd181 description_ddd181 formText_ddd181"
 };
-n.r(e.exports = r)
+require.r(module.exports = r)

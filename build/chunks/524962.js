@@ -1,9 +1,10 @@
 /** Chunk was on web.js **/
+/** chunk id: 524962, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   H: () => c
 });
-var r = n(573654);
+var Chunk573654 = require("./573654.js");
 
 function i(e, t) {
   if (!(e instanceof t)) throw TypeError("Cannot call a class as a function")
@@ -12,7 +13,7 @@ function i(e, t) {
 function o(e, t) {
   for (var n = 0; n < t.length; n++) {
     var r = t[n];
-    r.enumerable = r.enumerable || !1, r.configurable = !0, "value" in r && (r.writable = !0), Object.defineProperty(e, r.key, r)
+    r.enumerable = r.enumerable || false, r.configurable = true, "value" in r && (r.writable = true), Object.defineProperty(e, r.key, r)
   }
 }
 
@@ -23,17 +24,17 @@ function a(e, t, n) {
 function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
-var l = !1,
+var l = false,
   c = function() {
     function e(t) {
-      i(this, e), s(this, "internalMonitor", void 0), s(this, "targetId", null), this.internalMonitor = t.getMonitor()
+      i(this, e), s(this, "internalMonitor", true), s(this, "targetId", null), this.internalMonitor = t.getMonitor()
     }
-    return a(e, [{
+    return a(module, [{
       key: "receiveHandlerId",
       value: function(e) {
         this.targetId = e
@@ -51,12 +52,12 @@ var l = !1,
     }, {
       key: "canDrop",
       value: function() {
-        if (!this.targetId) return !1;
-        (0, r.k)(!l, "You may not call monitor.canDrop() inside your canDrop() implementation. Read more: http://react-dnd.github.io/react-dnd/docs/api/drop-target-monitor");
+        if (!this.targetId) returnfalse;
+        (0, Chunk573654.k)(!l, "You may not call monitor.canDrop() inside your canDrop() implementation. Read more: http://react-dnd.github.io/react-dnd/docs/api/drop-target-monitor");
         try {
-          return l = !0, this.internalMonitor.canDropOnTarget(this.targetId)
+          return l = true, this.internalMonitor.canDropOnTarget(this.targetId)
         } finally {
-          l = !1
+          l = false
         }
       }
     }, {
@@ -109,5 +110,5 @@ var l = !1,
       value: function() {
         return this.internalMonitor.getDifferenceFromInitialOffset()
       }
-    }]), e
+    }]), module
   }()

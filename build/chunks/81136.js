@@ -1,9 +1,10 @@
 /** Chunk was on 1272 **/
-n.d(t, {
+/** chunk id: 81136, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   Z: () => i
 });
-var r = n(580747);
+var Chunk580747 = require("./580747.js");
 let i = () => ({
-  noCache: (0, r.Z)("shop_disable_cache"),
-  includeUnpublished: (0, r.Z)("shop_include_unpublished")
+  noCache: (0, Chunk580747.Z)("shop_disable_cache"),
+  includeUnpublished: (0, Chunk580747.Z)("shop_include_unpublished")
 })

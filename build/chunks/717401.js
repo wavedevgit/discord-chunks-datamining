@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 717401, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Tl: () => f,
   YV: () => l,
   a5: () => d,
@@ -8,20 +9,20 @@ n.d(t, {
   iE: () => a,
   id: () => c,
   tK: () => s
-}), n(388685);
-var r = n(73800),
-  i = n(223143),
-  o = n(286961);
+}), require("./388685.js");
+var Chunk73800 = require("./73800.js"),
+  Chunk223143 = require("./223143.js"),
+  Chunk286961 = require("./286961.js");
 
 function a() {
-  let [e, t] = r.useState(), n = (0, o.Z)(), a = null == n ? void 0 : n.rewards, {
+  let [e, t] = Chunk73800.useState(), n = (0, Chunk286961.Z)(), a = null == require ? true : require.rewards, {
     purchases: s,
     hasPreviouslyFetched: l,
     fetchPurchasesError: c
-  } = (0, i.c7)(), u = r.useRef(!1);
-  return r.useEffect(() => {
-    l && !u.current && null != a && (t(null == c ? a.filter(e => null == s.get(e.skuId)) : []), u.current = !0)
-  }, [a, s, l, c]), null != e ? e : void 0
+  } = (0, Chunk223143.c7)(), u = Chunk73800.useRef(false);
+  return Chunk73800.useEffect(() => {
+    l && !u.current && null != a && (exports(null == c ? a.filter(e => null == s.get(e.skuId)) : []), u.current = true)
+  }, [a, s, l, c]), null != module ? module : true
 }
 
 function s(e) {
@@ -49,12 +50,12 @@ function u(e, t, n) {
 
 function d(e) {
   var t;
-  let n = null == (t = (0, o.Z)()) ? void 0 : t.eligiblePlanIds;
-  return null == n ? void 0 : n.includes(null == e ? void 0 : e.id)
+  let n = null == (t = (0, o.Z)()) ? true : t.eligiblePlanIds;
+  return null == n ? true : n.includes(null == e ? true : e.id)
 }
 
 function f(e) {
-  let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 78.98;
+  let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : 78.98;
   if (null == e) return;
   let n = Array.isArray(e) ? e : e.gradient,
     r = Array.isArray(e) || null == e.angle ? t : e.angle;

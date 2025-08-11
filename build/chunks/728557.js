@@ -1,4 +1,5 @@
 /** Chunk was on 63141 **/
-e.exports = {
+/** chunk id: 728557, original params: e,t,n (module,exports,require) **/
+module.exports = {
   key: "key__1728a"
 }

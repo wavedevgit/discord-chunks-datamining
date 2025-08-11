@@ -1,0 +1,52 @@
+/** Chunk was on 75708 **/
+/** chunk id: 277329, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
+  Z: () => b
+});
+var Chunk255367 = require("./255367.js");
+require("./73800.js");
+var Chunk442837 = require("./442837.js"),
+  Chunk481060 = require("./481060.js"),
+  Chunk230711 = require("./230711.js"),
+  Chunk574755 = require("./574755.js"),
+  Chunk663389 = require("./663389.js"),
+  Chunk309739 = require("./309739.js"),
+  Chunk293389 = require("./293389.js"),
+  Chunk327885 = require("./327885.js"),
+  Chunk326528 = require("./326528.js"),
+  Chunk332325 = require("./332325.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk388032 = require("./388032.js"),
+  Chunk881328 = require("./881328.js");
+
+function b() {
+  let e = (0, Chunk326528.b)(),
+    t = (0, Chunk442837.e7)([Chunk663389.Z], () => Chunk663389.Z.getSubsection()),
+    n = null != exports && module.some(e => e.id === t) ? exports : module[0].id;
+  return <Chunk255367.Fragment>{<Chunk481060.X6q className={Chunk881328.heading} variant={"heading-xl/semibold"}>{Chunk388032.intl.string(Chunk388032.t.URyqtL)}</Chunk481060.X6q>}{<Chunk481060.njP className={Chunk881328.tabBar} selectedItem={require} onItemSelect={e => {
+        a.Z.setSection(g.oAB.GAMES, e)
+      }} orientation={"horizontal"} type={"top"} look={"brand"}>{module.map(e => (0, i.jsxs)(s.njP.Item, {
+        className: f.tab,
+        id: e.id,
+        "aria-label": e.title,
+        children: [(0, i.jsx)(e.icon, {
+          className: f.tabIcon,
+          color: "currentColor"
+        }), (0, i.jsx)("div", {
+          className: f.iconTitle,
+          children: e.title
+        })]
+      }, e.id))}</Chunk481060.njP>}{(() => {
+      switch (require) {
+        case Chunk332325.Z.CLIPS:
+          return <Chunk574755.Z className={Chunk881328.body} showHeader={false} />;
+        case Chunk332325.Z.OVERLAY:
+          return <Chunk327885.Z className={Chunk881328.body} showHeader={false} />;
+        case Chunk332325.Z.ACTIVITY_PRIVACY:
+          return <Chunk309739.Z className={Chunk881328.body} showHeader={false} />;
+        case Chunk332325.Z.MY_GAMES:
+        default:
+          return <Chunk293389.Z className={Chunk881328.body} showHeader={false} />
+      }
+    })()}</Chunk255367.Fragment>
+}

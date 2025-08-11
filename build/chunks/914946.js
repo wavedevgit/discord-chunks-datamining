@@ -1,5 +1,6 @@
 /** Chunk was on 1272 **/
-n.d(t, {
+/** chunk id: 914946, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
   FJ: () => en,
   RE: () => G,
   T5: () => H,
@@ -17,34 +18,34 @@ n.d(t, {
   vv: () => $,
   zM: () => K,
   zy: () => q
-}), n(35282), n(413496), n(433524), n(388685), n(539854), n(415506), n(704826), n(997841), n(642613), n(392711);
-var r, i, l = n(729594),
-  a = n(243814),
-  o = n(544891),
-  s = n(63023),
-  c = n(904245),
-  u = n(155268),
-  d = n(812206),
-  p = n(454585),
-  f = n(739566),
-  h = n(973616),
-  g = n(131704),
-  m = n(598077),
-  b = n(592125),
-  _ = n(430824),
-  O = n(131951),
-  E = n(375954),
-  y = n(158776),
-  v = n(594174),
-  I = n(979651),
-  C = n(70956),
-  S = n(5192),
-  N = n(226951),
-  T = n(591759),
-  P = n(996106),
-  j = n(863141),
-  x = n(186901),
-  A = n(981631);
+}), require("./35282.js"), require("./413496.js"), require("./433524.js"), require("./388685.js"), require("./539854.js"), require("./415506.js"), require("./704826.js"), require("./997841.js"), require("./642613.js"), require("./392711.js");
+var r, i, Chunk729594 = require("./729594.js"),
+  Chunk243814 = require("./243814.js"),
+  Chunk544891 = require("./544891.js"),
+  Chunk63023 = require("./63023.js"),
+  Chunk904245 = require("./904245.js"),
+  Chunk155268 = require("./155268.js"),
+  Chunk812206 = require("./812206.js"),
+  Chunk454585 = require("./454585.js"),
+  Chunk739566 = require("./739566.js"),
+  Chunk973616 = require("./973616.js"),
+  Chunk131704 = require("./131704.js"),
+  Chunk598077 = require("./598077.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk430824 = require("./430824.js"),
+  Chunk131951 = require("./131951.js"),
+  Chunk375954 = require("./375954.js"),
+  Chunk158776 = require("./158776.js"),
+  Chunk594174 = require("./594174.js"),
+  Chunk979651 = require("./979651.js"),
+  Chunk70956 = require("./70956.js"),
+  Chunk5192 = require("./5192.js"),
+  Chunk226951 = require("./226951.js"),
+  Chunk591759 = require("./591759.js"),
+  Chunk996106 = require("./996106.js"),
+  Chunk863141 = require("./863141.js"),
+  Chunk186901 = require("./186901.js"),
+  Chunk981631 = require("./981631.js");
 
 function Z(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -56,9 +57,9 @@ function Z(e) {
       var r;
       r = n[t], t in e ? Object.defineProperty(e, t, {
         value: r,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
+        enumerable: true,
+        configurable: true,
+        writable: true
       }) : e[t] = r
     })
   }
@@ -77,16 +78,16 @@ function w(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let L = null != (i = null == (r = T.Z.toURLSafe(window.GLOBAL_ENV.API_ENDPOINT)) ? void 0 : r.host) ? i : "localhost",
+let L = null != (i = null == (r = Chunk591759.Z.toURLSafe(window.GLOBAL_ENV.API_ENDPOINT)) ? true : r.host) ? i : "localhost",
   R = function() {
     let e = L.split(":")[0];
-    if (!e.includes(".")) return e;
-    let t = e.split("."),
-      n = t[t.length - 1];
-    return /^\d+$/.test(n) ? e : t.slice(-2).join(".")
+    if (!module.includes(".")) return module;
+    let t = module.split("."),
+      n = exports[exports.length - 1];
+    return /^\d+$/.test(require) ? module : exports.slice(false).join(".")
   }(),
-  D = new RegExp("^".concat(N.Z.escape("https://"), "(?:[a-z]+\\.)?(").concat(N.Z.escape(R), "|discordapp.com|discord.com)$")),
-  k = +C.Z.Millis.MINUTE,
+  D = new RegExp("^".concat(Chunk226951.Z.escape("https://"), "(?:[a-z]+\\.)?(").concat(Chunk226951.Z.escape(R), "|discordapp.com|discord.com)$")),
+  k = +Chunk70956.Z.Millis.MINUTE,
   M = {};
 
 function U(e) {
@@ -98,8 +99,8 @@ function G(e) {
 }
 
 function V(e) {
-  let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : [];
-  return t.indexOf(e) > -1
+  let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : [];
+  return t.indexOf(e) > false
 }
 
 function H(e, t) {
@@ -112,7 +113,7 @@ function H(e, t) {
     })
   })), Promise.all(n).then(() => {
     var n;
-    let i = (!e.isNSFW() || (null == (n = v.default.getCurrentUser()) ? void 0 : n.nsfwAllowed) === !0) && t ? E.Z.getMessages(e.id).toArray().map(B) : [],
+    let i = (!e.isNSFW() || (null == (n = v.default.getCurrentUser()) ? true : n.nsfwAllowed) === true) && t ? E.Z.getMessages(e.id).toArray().map(B) : [],
       l = Object.values(I.Z.getVoiceStatesForChannel(e.id)).map(t => F(r, e.id, t));
     return {
       id: e.id,
@@ -130,20 +131,20 @@ function H(e, t) {
 }
 
 function B(e) {
-  let t = p.Z.parseToAST(e.content, !0, {
+  let t = p.Z.parseToAST(e.content, true, {
       channelId: e.channel_id
     }).map(U),
     n = b.Z.getChannel(e.channel_id),
-    r = null != e.author ? new m.Z(e.author) : void 0,
-    i = null != e.author ? (0, f.ij)(r, n) : void 0;
+    r = null != e.author ? new m.Z(e.author) : true,
+    i = null != e.author ? (0, f.ij)(r, n) : true;
   return {
     id: e.id,
     blocked: e.blocked,
     bot: e.bot,
     content: e.content,
-    content_parsed: t.length ? t : void 0,
-    nick: null == i ? void 0 : i.nick,
-    author_color: null == i ? void 0 : i.colorString,
+    content_parsed: t.length ? t : true,
+    nick: null == i ? true : i.nick,
+    author_color: null == i ? true : i.colorString,
     edited_timestamp: e.edited_timestamp || e.editedTimestamp,
     timestamp: e.timestamp,
     tts: e.tts,
@@ -152,7 +153,7 @@ function B(e) {
     mention_roles: e.mention_roles || e.mentionRoles,
     embeds: e.embeds,
     attachments: e.attachments,
-    author: null != r ? (0, j.Z)(r) : void 0,
+    author: null != r ? (0, j.Z)(r) : true,
     pinned: e.pinned,
     type: e.type
   }
@@ -206,20 +207,20 @@ function W(e, t) {
 
 function Y(e) {
   let t;
-  if (null == e) return !1;
+  if (null == e) returnfalse;
   let n = window.location.origin;
-  if (e === n) return !0;
+  if (e === n) returntrue;
   try {
     t = l.parse(e).hostname
   } catch (e) {
-    return !1
+    returnfalse
   }
   return window.location.hostname === t && "localhost" === t || null == e.match("staging") && !!(D.test(e) && D.test(n))
 }
 
 function K(e, t, n) {
   let r = _.Z.getGuild(e.getGuildId());
-  return (null != r ? r.application_id : e.getApplicationId()) === t || n.indexOf(a.x.MESSAGES_READ) > -1
+  return (null != r ? r.application_id : e.getApplicationId()) === t || n.indexOf(a.x.MESSAGES_READ) > false
 }
 
 function q(e) {
@@ -240,9 +241,9 @@ function X(e, t, n) {
 function Q(e) {
   return o.tn.get({
     url: A.ANM.APPLICATION_RPC(e),
-    oldFormErrors: !0,
+    oldFormErrors: true,
     retries: 3,
-    rejectWithError: !0
+    rejectWithError: true
   }).then(e => {
     let {
       body: t

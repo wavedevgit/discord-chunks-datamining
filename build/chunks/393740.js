@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 393740, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-e.exports = {
+module.exports = {
   eventPromptsContainer: "eventPromptsContainer__1405b",
   controlButton: "controlButton__1405b",
   wrapper: "wrapper__1405b",

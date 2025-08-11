@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
+/** chunk id: 592286, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   N4: () => _,
   Pn: () => p,
   RS: () => f,
@@ -12,10 +13,10 @@ n.d(t, {
   mb: () => c,
   nx: () => o,
   tL: () => d
-}), n(388685);
-var r = n(246364);
-r.QJ.VERIFICATION, r.QJ.TERMS;
-let i = new Set([r.QJ.MULTIPLE_CHOICE, r.QJ.TEXT_INPUT, r.QJ.PARAGRAPH]),
+}), require("./388685.js");
+var Chunk246364 = require("./246364.js");
+Chunk246364.QJ.VERIFICATION, Chunk246364.QJ.TERMS;
+let i = new Set([Chunk246364.QJ.MULTIPLE_CHOICE, Chunk246364.QJ.TEXT_INPUT, Chunk246364.QJ.PARAGRAPH]),
   o = 5,
   a = 16,
   s = 300,

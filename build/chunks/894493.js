@@ -1,5 +1,6 @@
 /** Chunk was on web.js **/
-e.exports = function(e) {
+/** chunk id: 894493, original params: e (module,exports,re quire) **/
+module.exports = function(e) {
   let t = e.regex,
     n = /[dualxmsipngr]{0,12}/,
     r = {
@@ -55,7 +56,7 @@ e.exports = function(e) {
     },
     f = (e, r, i) => t.concat(t.concat("(?:", e, ")"), r, /(?:\\.|[^\\\/])*?/, i, n),
     _ = [s, e.HASH_COMMENT_MODE, e.COMMENT(/^=\w/, /=cut/, {
-      endsWithParent: !0
+      endsWithParent: true
     }), o, {
       className: "string",
       contains: c,
@@ -109,7 +110,7 @@ e.exports = function(e) {
         className: "regexp",
         variants: [{
           begin: d("s|tr|y", t.either(...u, {
-            capture: !0
+            capture: true
           }))
         }, {
           begin: d("s|tr|y", "\\(", "\\)")
@@ -128,7 +129,7 @@ e.exports = function(e) {
           begin: f("(?:m|qr)?", /\//, /\//)
         }, {
           begin: f("m|qr", t.either(...u, {
-            capture: !0
+            capture: true
           }), /\1/)
         }, {
           begin: f("m|qr", /\(/, /\)/)
@@ -142,14 +143,14 @@ e.exports = function(e) {
       className: "function",
       beginKeywords: "sub method",
       end: "(\\s*\\(.*?\\))?[;{]",
-      excludeEnd: !0,
+      excludeEnd: true,
       relevance: 5,
       contains: [e.TITLE_MODE, a]
     }, {
       className: "class",
       beginKeywords: "class",
       end: "[;{]",
-      excludeEnd: !0,
+      excludeEnd: true,
       relevance: 5,
       contains: [e.TITLE_MODE, a, l]
     }, {

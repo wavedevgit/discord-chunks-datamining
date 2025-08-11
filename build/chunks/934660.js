@@ -1,17 +1,18 @@
 /** Chunk was on web.js **/
+/** chunk id: 934660, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-var r = n(166691),
-  i = r("String.prototype.valueOf"),
+var Chunk166691 = require("./166691.js"),
+  i = Chunk166691("String.prototype.valueOf"),
   o = function(e) {
     try {
-      return i(e), !0
+      return i(e), true
     } catch (e) {
-      return !1
+      returnfalse
     }
   },
-  a = r("Object.prototype.toString"),
+  a = Chunk166691("Object.prototype.toString"),
   s = "[object String]",
-  l = n(195653)();
-e.exports = function(e) {
+  l = require("./195653.js")();
+module.exports = function(e) {
   return "string" == typeof e || !!e && "object" == typeof e && (l ? o(e) : a(e) === s)
 }

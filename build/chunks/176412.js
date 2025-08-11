@@ -1,40 +1,41 @@
 /** Chunk was on web.js **/
+/** chunk id: 176412, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Bm: () => w,
   P7: () => P,
   X: () => D,
   ae: () => R
 });
-var r = n(73800),
-  i = n(392711),
-  o = n.n(i),
-  a = n(442837),
-  s = n(25209),
-  l = n(755721),
-  c = n(2052),
-  u = n(542094),
-  d = n(513202),
-  f = n(367907),
-  _ = n(213459),
-  p = n(895924),
-  h = n(691424),
-  m = n(428595),
-  g = n(364458),
-  E = n(585483),
-  b = n(499254),
-  y = n(541099),
-  O = n(827498),
-  v = n(346683),
-  I = n(981631),
-  T = n(388032);
+var Chunk73800 = require("./73800.js"),
+  Chunk392711 = require("./392711.js"),
+  o = require.n(Chunk392711),
+  Chunk442837 = require("./442837.js"),
+  Chunk25209 = require("./25209.js"),
+  Chunk755721 = require("./755721.js"),
+  Chunk2052 = require("./2052.js"),
+  Chunk542094 = require("./542094.js"),
+  Chunk513202 = require("./513202.js"),
+  Chunk367907 = require("./367907.js"),
+  Chunk213459 = require("./213459.js"),
+  Chunk895924 = require("./895924.js"),
+  Chunk691424 = require("./691424.js"),
+  Chunk428595 = require("./428595.js"),
+  Chunk364458 = require("./364458.js"),
+  Chunk585483 = require("./585483.js"),
+  Chunk499254 = require("./499254.js"),
+  Chunk541099 = require("./541099.js"),
+  Chunk827498 = require("./827498.js"),
+  Chunk346683 = require("./346683.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk388032 = require("./388032.js");
 
 function S(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
+    enumerable: true,
+    configurable: true,
+    writable: true
   }) : e[t] = n, e
 }
 
@@ -63,18 +64,18 @@ let N = function(e, t) {
       })
     }
     return e
-  }({}, m.Z.RULES.commandMention), {
+  }({}, Chunk428595.Z.RULES.commandMention), {
     parse: (e, t, n) => ({
       content: m.Z.RULES.commandMention.parse(e, t, n).content
     })
   }),
-  C = o().pick((0, g.Z)([m.Z.RULES, {
+  C = o().pick((0, Chunk364458.Z)([Chunk428595.Z.RULES, {
     commandMention: N
-  }, (0, h.Z)({
-    enableBuildOverrides: !1,
-    enableEmojiClick: !1
+  }, (0, Chunk691424.Z)({
+    enableBuildOverrides: false,
+    enableEmojiClick: false
   })]), ["commandMention", "customEmoji", "em", "emoji", "emoticon", "highlight", "inlineCode", "looseEm", "s", "strong", "text", "timestamp", "u", "spoiler"]),
-  R = s.w4(C);
+  R = Chunk25209.w4(C);
 
 function P(e) {
   let {
@@ -83,10 +84,10 @@ function P(e) {
     location: i,
     sectionName: o,
     commandName: s,
-    autoDismissOnClick: h = !0,
+    autoDismissOnClick: h = true,
     launchingComponentId: m,
-    submitting: g = !1,
-    fetchesApplication: E = !0,
+    submitting: g = false,
+    fetchesApplication: E = true,
     onConfirmActivityLaunchChecksAlertOpen: S
   } = e, A = (0, c.O)(), N = (0, u.Qv)({
     context: t,
@@ -94,7 +95,7 @@ function P(e) {
     fetchesApplication: E
   }), C = (0, v.Q)(N), R = (0, a.e7)([y.Z], () => y.Z.entrypoint()), P = r.useMemo(() => {
     var e, r, i;
-    if ("channel" !== t.type) return null != (i = null == (e = n.bot) ? void 0 : e.id) ? i : null == (r = (0, _.If)(t, n.id).descriptor) ? void 0 : r.botId
+    if ("channel" !== t.type) return null != (i = null == (e = n.bot) ? true : e.id) ? i : null == (r = (0, _.If)(t, n.id).descriptor) ? true : r.botId
   }, [t, n.id, n.bot]), w = (0, u.w1)({
     application: n,
     botUserIdForAppDM: P,
@@ -136,8 +137,8 @@ function w(e, t) {
         source: t
       })
     }, 400, {
-      leading: !1,
-      trailing: !0
+      leading: false,
+      trailing: true
     }), []);
   r.useEffect(() => {
     null != e && o(e, n)

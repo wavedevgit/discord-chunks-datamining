@@ -1,66 +1,67 @@
 /** Chunk was on web.js **/
+/** chunk id: 63985, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-n.d(t, {
+require.d(exports, {
   Z: () => p
 });
-var r = n(678916),
-  i = n(190378),
-  o = n(388032),
-  a = n(388785),
-  s = n(601080),
-  l = n(68037),
-  c = n(355198),
-  u = n(221226),
-  d = n(979954),
-  f = n(197231),
-  _ = n(48539);
+var Chunk678916 = require("./678916.js"),
+  Chunk190378 = require("./190378.js"),
+  Chunk388032 = require("./388032.js"),
+  Chunk388785 = require("./388785.js"),
+  Chunk601080 = require("./601080.js"),
+  Chunk68037 = require("./68037.js"),
+  Chunk355198 = require("./355198.js"),
+  Chunk221226 = require("./221226.js"),
+  Chunk979954 = require("./979954.js"),
+  Chunk197231 = require("./197231.js"),
+  Chunk48539 = require("./48539.js");
 let p = () => ({
-  [r.dp.OPTION_1]: {
-    id: r.dp.OPTION_1,
-    source: l.Z,
-    name: o.intl.string(o.t.SHUTBg)
+  [Chunk678916.dp.OPTION_1]: {
+    id: Chunk678916.dp.OPTION_1,
+    source: Chunk68037.Z,
+    name: Chunk388032.intl.string(Chunk388032.t.SHUTBg)
   },
-  [r.dp.OPTION_2]: {
-    id: r.dp.OPTION_2,
-    source: u.Z,
-    name: o.intl.string(o.t.UxTcIi)
+  [Chunk678916.dp.OPTION_2]: {
+    id: Chunk678916.dp.OPTION_2,
+    source: Chunk221226.Z,
+    name: Chunk388032.intl.string(Chunk388032.t.UxTcIi)
   },
-  [r.dp.OPTION_3]: {
-    id: r.dp.OPTION_3,
-    source: d.Z,
-    name: o.intl.string(o.t.HFBsc3)
+  [Chunk678916.dp.OPTION_3]: {
+    id: Chunk678916.dp.OPTION_3,
+    source: Chunk979954.Z,
+    name: Chunk388032.intl.string(Chunk388032.t.HFBsc3)
   },
-  [r.dp.OPTION_4]: {
-    id: r.dp.OPTION_4,
-    source: f.Z,
-    name: o.intl.string(o.t["/Dl3+f"])
+  [Chunk678916.dp.OPTION_4]: {
+    id: Chunk678916.dp.OPTION_4,
+    source: Chunk197231.Z,
+    name: Chunk388032.intl.string(Chunk388032.t["/Dl3+f"])
   },
-  [r.dp.OPTION_7]: {
-    id: r.dp.OPTION_7,
-    source: a.Z,
-    name: o.intl.string(o.t["PM+DU1"]),
-    isVideo: !0,
-    hotspotLocation: i.v.ANIMATED_VIDEO_BG_CAPERNITE_DAY_NEW
+  [Chunk678916.dp.OPTION_7]: {
+    id: Chunk678916.dp.OPTION_7,
+    source: Chunk388785.Z,
+    name: Chunk388032.intl.string(Chunk388032.t["PM+DU1"]),
+    isVideo: true,
+    hotspotLocation: Chunk190378.v.ANIMATED_VIDEO_BG_CAPERNITE_DAY_NEW
   },
-  [r.dp.OPTION_8]: {
-    id: r.dp.OPTION_8,
-    source: s.Z,
-    name: o.intl.string(o.t["3zoBh4"]),
-    isVideo: !0,
-    hotspotLocation: i.v.ANIMATED_VIDEO_BG_CAPERNITE_NIGHT_NEW
+  [Chunk678916.dp.OPTION_8]: {
+    id: Chunk678916.dp.OPTION_8,
+    source: Chunk601080.Z,
+    name: Chunk388032.intl.string(Chunk388032.t["3zoBh4"]),
+    isVideo: true,
+    hotspotLocation: Chunk190378.v.ANIMATED_VIDEO_BG_CAPERNITE_NIGHT_NEW
   },
-  [r.dp.OPTION_9]: {
-    id: r.dp.OPTION_9,
-    source: c.Z,
-    name: o.intl.string(o.t["1gKhX1"]),
-    isVideo: !0,
-    hotspotLocation: i.v.ANIMATED_VIDEO_BG_HACKER_DEN_NEW
+  [Chunk678916.dp.OPTION_9]: {
+    id: Chunk678916.dp.OPTION_9,
+    source: Chunk355198.Z,
+    name: Chunk388032.intl.string(Chunk388032.t["1gKhX1"]),
+    isVideo: true,
+    hotspotLocation: Chunk190378.v.ANIMATED_VIDEO_BG_HACKER_DEN_NEW
   },
-  [r.dp.OPTION_10]: {
-    id: r.dp.OPTION_10,
-    source: _.Z,
-    name: o.intl.string(o.t.TSTgyM),
-    isVideo: !0,
-    hotspotLocation: i.v.ANIMATED_VIDEO_BG_WUMPICE_NEW
+  [Chunk678916.dp.OPTION_10]: {
+    id: Chunk678916.dp.OPTION_10,
+    source: Chunk48539.Z,
+    name: Chunk388032.intl.string(Chunk388032.t.TSTgyM),
+    isVideo: true,
+    hotspotLocation: Chunk190378.v.ANIMATED_VIDEO_BG_WUMPICE_NEW
   }
 })
