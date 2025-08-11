@@ -248,6 +248,7 @@ function w(e) {
           [A.enhancedPrimaryActions]: eo
         }),
         children: [null != q ? (0, r.jsx)(l.zx, {
+          "data-migration-pending": true,
           className: a()(A.secondaryAction, X, {
             [A.enhancedSecondaryAction]: eo
           }),

@@ -10,7 +10,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk120356 = require("./120356.js"),
   i = require.n(Chunk120356),
   Chunk512722 = require("./512722.js"),
-  c = require.n(Chunk512722),
+  d = require.n(Chunk512722),
   Chunk597312 = require("./597312.js"),
   Chunk442837 = require("./442837.js"),
   Chunk755721 = require("./755721.js"),
@@ -37,24 +37,24 @@ function I(e) {
   let {
     numOfSelectedUsers: t,
     anySelected: s
-  } = e, n = (0, b.Z)({
+  } = e, r = (0, b.Z)({
     numNewSelected: t,
     anySelected: s
   });
-  return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsxs)("div", {
+  return (0, n.jsxs)(n.Fragment, {
+    children: [(0, n.jsxs)("div", {
       className: y.title,
-      children: [(0, r.jsx)(O, {
+      children: [(0, n.jsx)(O, {
         className: y.titleImage
-      }), (0, r.jsx)(h.X6q, {
+      }), (0, n.jsx)(h.X6q, {
         variant: "heading-xl/bold",
         children: Z.intl.string(Z.t.Lm2nFR)
       })]
-    }), (0, r.jsx)(h.Text, {
+    }), (0, n.jsx)(h.Text, {
       className: y.description,
       variant: "text-md/medium",
       color: "header-secondary",
-      children: n
+      children: r
     })]
   })
 }
@@ -91,32 +91,33 @@ function F(e) {
   let {
     onClose: t
   } = e;
-  return (0, r.jsxs)("div", {
+  return (0, n.jsxs)("div", {
     className: y.erroredContainer,
-    children: [(0, r.jsxs)("div", {
+    children: [(0, n.jsxs)("div", {
       className: i()(y.erroredHeader, y.headerSeparator),
-      children: [(0, r.jsx)("div", {
+      children: [(0, n.jsx)("div", {
         className: y.title,
-        children: (0, r.jsx)(h.X6q, {
+        children: (0, n.jsx)(h.X6q, {
           variant: "heading-xl/bold",
           children: Z.intl.string(Z.t.a9HOKi)
         })
-      }), (0, r.jsx)(h.Text, {
+      }), (0, n.jsx)(h.Text, {
         className: y.description,
         variant: "text-md/medium",
         color: "header-secondary",
         children: Z.intl.string(Z.t.JjjeZW)
       })]
-    }), (0, r.jsx)("div", {
+    }), (0, n.jsx)("div", {
       className: y.erroredContent,
-      children: (0, r.jsx)(h.Eep, {
+      children: (0, n.jsx)(h.Eep, {
         src: R,
         width: 178,
         height: 190
       })
-    }), (0, r.jsx)("div", {
+    }), (0, n.jsx)("div", {
       className: i()(y.footer, y.footerSeparator),
-      children: (0, r.jsx)(u.zx, {
+      children: (0, n.jsx)(u.zx, {
+        "data-migration-pending": true,
         className: y.submit,
         onClick: () => t(),
         children: Z.intl.string(Z.t.wpSqAQ)
@@ -128,53 +129,54 @@ function F(e) {
 function M(e) {
   let {
     onShare: t
-  } = e, s = (0, o.e7)([N.Z], () => N.Z.getRecipientStatus()), [a, l] = n.useState([]), [c, d] = n.useState(new Set), [f, x] = n.useState(false);
-  return n.useEffect(() => {
+  } = e, s = (0, o.e7)([N.Z], () => N.Z.getRecipientStatus()), [a, l] = r.useState([]), [d, c] = r.useState(new Set), [f, x] = r.useState(false);
+  return r.useEffect(() => {
     (async () => {
       let e = [];
-      for (let [t, r] of s)
-        if (r === v.Fe.PENDING) {
+      for (let [t, n] of s)
+        if (n === v.Fe.PENDING) {
           let s = await (0, m.PR)(t);
           e.push(s)
         } l(e)
     })()
-  }, [s]), (0, r.jsxs)("div", {
+  }, [s]), (0, n.jsxs)("div", {
     className: y.remindContainer,
-    children: [(0, r.jsxs)("div", {
+    children: [(0, n.jsxs)("div", {
       className: i()(y.remindHeader, y.headerSeparator),
-      children: [(0, r.jsxs)("div", {
+      children: [(0, n.jsxs)("div", {
         className: y.title,
-        children: [(0, r.jsx)(O, {
+        children: [(0, n.jsx)(O, {
           className: y.titleImage
-        }), (0, r.jsx)(h.X6q, {
+        }), (0, n.jsx)(h.X6q, {
           variant: "heading-xl/bold",
           children: Z.intl.string(Z.t.SY9tyM)
         })]
-      }), (0, r.jsx)(h.Text, {
+      }), (0, n.jsx)(h.Text, {
         className: y.description,
         variant: "text-md/medium",
         color: "header-secondary",
         children: Z.intl.string(Z.t.mPmPrq)
       })]
-    }), (0, r.jsx)("div", {
+    }), (0, n.jsx)("div", {
       className: y.list,
-      children: a.map(e => (0, r.jsx)(w.Z, {
+      children: a.map(e => (0, n.jsx)(w.Z, {
         user: e,
-        checked: c.has(e),
+        checked: d.has(e),
         onChange: (e, t) => {
-          d(s => {
-            let r = new Set(s);
-            return t ? r.add(e) : r.delete(e), r
+          c(s => {
+            let n = new Set(s);
+            return t ? n.add(e) : n.delete(e), n
           })
         }
       }, e.id))
-    }), (0, r.jsx)("div", {
+    }), (0, n.jsx)("div", {
       className: i()(y.footer, y.footerSeparator),
-      children: (0, r.jsx)(u.zx, {
+      children: (0, n.jsx)(u.zx, {
+        "data-migration-pending": true,
         className: y.submit,
         disabled: f,
         onClick: async () => {
-          x(true), await t([...c.values()]), x(false)
+          x(true), await t([...d.values()]), x(false)
         },
         children: Z.intl.string(Z.t.ItpQxs)
       })
@@ -186,12 +188,12 @@ function O(e) {
   let {
     className: t
   } = e;
-  return "light" === (0, o.e7)([j.Z], () => j.Z.theme) ? (0, r.jsx)(h.Eep, {
+  return "light" === (0, o.e7)([j.Z], () => j.Z.theme) ? (0, n.jsx)(h.Eep, {
     className: t,
     src: P,
     width: 55,
     height: 38
-  }) : (0, r.jsx)(h.Eep, {
+  }) : (0, n.jsx)(h.Eep, {
     className: t,
     src: C,
     width: 55,
@@ -202,7 +204,7 @@ let T = function(e) {
   let {
     onClose: t,
     onShare: s
-  } = e, a = (0, o.e7)([N.Z], () => N.Z.getReferralsRemaining()), [l, m] = n.useState(""), j = (0, x.Z)(l, 400), [v, b] = n.useState(new Map), [P, R] = n.useState(false), {
+  } = e, a = (0, o.e7)([N.Z], () => N.Z.getReferralsRemaining()), [l, m] = r.useState(""), j = (0, x.Z)(l, 400), [v, b] = r.useState(new Map), [P, R] = r.useState(false), {
     eligibleUsers: E,
     fetchUsers: C,
     hasError: O,
@@ -211,25 +213,25 @@ let T = function(e) {
   } = (0, S.q)({
     searchQuery: j,
     selectedUsers: v
-  }), G = n.useMemo(() => [...v.keys()].filter(e => !z.has(e)), [v, z]);
-  c()(null != a, "Referrals remaining should not be null");
+  }), G = r.useMemo(() => [...v.keys()].filter(e => !z.has(e)), [v, z]);
+  d()(null != a, "Referrals remaining should not be null");
   let Q = (0, g.O)(e => {
     e && !T && C()
   });
-  if (O) return (0, r.jsx)(F, {
+  if (O) return (0, n.jsx)(F, {
     onClose: t
   });
-  if (0 === a) return (0, r.jsx)(M, {
+  if (0 === a) return (0, n.jsx)(M, {
     onShare: s
   });
   let D = j.length > 0 && 0 === E.length;
-  return (0, r.jsxs)("div", {
-    children: [(0, r.jsxs)("div", {
+  return (0, n.jsxs)("div", {
+    children: [(0, n.jsxs)("div", {
       className: i()(y.header, y.headerSeparator),
-      children: [D ? (0, r.jsx)(k, {}) : (0, r.jsx)(I, {
+      children: [D ? (0, n.jsx)(k, {}) : (0, n.jsx)(I, {
         numOfSelectedUsers: G.length,
         anySelected: v.size > 0
-      }), (0, r.jsx)(f.Z, {
+      }), (0, n.jsx)(f.Z, {
         className: y.searchbar,
         size: f.Z.Sizes.MEDIUM,
         tags: [...v.values()].map(e => p.ZP.getName(e)),
@@ -238,30 +240,31 @@ let T = function(e) {
         onRemoveTag: e => {
           b(t => {
             let s = [...t.values()][e],
-              r = new Map(t);
-            return r.delete(s.id), r
+              n = new Map(t);
+            return n.delete(s.id), n
           })
         },
         onQueryChange: m
       })]
-    }), D ? (0, r.jsx)(q, {}) : (0, r.jsxs)(d.w0, {
+    }), D ? (0, n.jsx)(q, {}) : (0, n.jsxs)(c.w0, {
       className: y.list,
-      children: [E.map(e => (0, r.jsx)(w.Z, {
+      children: [E.map(e => (0, n.jsx)(w.Z, {
         disabled: [...v.values()].filter(e => !z.has(e.id)).length >= a && !v.has(e.id) && !z.has(e.id),
         checked: v.has(e.id),
         user: e,
         onChange: (e, t) => {
           b(s => {
-            let r = new Map(s);
-            return t ? r.set(e.id, e) : r.delete(e.id), r
+            let n = new Map(s);
+            return t ? n.set(e.id, e) : n.delete(e.id), n
           })
         }
-      }, e.id)), T && (0, r.jsx)(h.$jN, {}), (0, r.jsx)("div", {
+      }, e.id)), T && (0, n.jsx)(h.$jN, {}), (0, n.jsx)("div", {
         ref: Q
       })]
-    }), (0, r.jsx)("div", {
+    }), (0, n.jsx)("div", {
       className: i()(y.footer, y.footerSeparator),
-      children: (0, r.jsx)(u.zx, {
+      children: (0, n.jsx)(u.zx, {
+        "data-migration-pending": true,
         className: y.submit,
         disabled: 0 === v.size && !D || P,
         onClick: async () => {

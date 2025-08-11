@@ -79,6 +79,7 @@ function O(e) {
   return (0, i.jsxs)("div", {
     className: E.contents,
     children: [(0, i.jsx)(o.M0o, {
+      "data-migration-pending": true,
       className: E.closeButton,
       tooltip: j.intl.string(j.t.cpT0Cg),
       color: o.YX$.TERTIARY,
@@ -102,6 +103,7 @@ function O(e) {
         timeMilestone: null == (t = (0, p.q)(C.id, C.tenureReqNumMonths)) ? true : t.toLocaleLowerCase()
       })
     }), (0, i.jsx)(l.zx, {
+      "data-migration-pending": true,
       className: E.checkItOutButton,
       color: l.Tt.WHITE,
       size: l.Ph.SMALL,

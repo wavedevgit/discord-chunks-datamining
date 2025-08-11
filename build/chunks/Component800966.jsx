@@ -91,6 +91,7 @@ function O(e) {
       src: "https://cdn.discordapp.com/assets/premium/roadblocks/hd_streaming.png",
       alt: "HD Streaming Nitro Perk"
     }), (0, r.jsx)(s.zx, {
+      "data-migration-pending": true,
       className: p.closeButton,
       "aria-label": _.intl.string(_.t.cpT0Cg),
       look: s.zx.Looks.BLANK,

@@ -66,6 +66,7 @@ let b = e => {
       },
       showGradient: true
     }), 0 !== E.length && (null == (n = null == A ? true : A.descriptionCta) ? true : n.hideOnHoverComponent) !== true && null != O && (0, i.jsx)(a.zx, {
+      "data-migration-pending": true,
       className: x,
       onClick: O,
       children: E

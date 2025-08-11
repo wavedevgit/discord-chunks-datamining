@@ -171,6 +171,7 @@ function G(e) {
       }
     }),
     I = (0, i.jsx)(m.zx, {
+      "data-migration-pending": true,
       look: m.zx.Looks.LINK,
       color: (0, d.ap)(j) ? m.zx.Colors.PRIMARY : m.zx.Colors.WHITE,
       onClick: o,
@@ -420,6 +421,7 @@ let ee = e => {
               0 === V ? M(z.R.WHAT_YOU_LOSE) : M(z.R.PAUSE_CONFIRM)
             }
           }), (0, i.jsx)(m.zx, {
+            "data-migration-pending": true,
             look: m.zx.Looks.LINK,
             color: (0, d.wj)(I) ? m.zx.Colors.WHITE : m.zx.Colors.PRIMARY,
             onClick: l,
@@ -461,6 +463,7 @@ let ee = e => {
             text: er ? W.intl.string(W.t.PfnxqK) : W.intl.string(W.t["3PatS0"]),
             onClick: () => M(z.R.CONFIRM)
           }), (0, i.jsx)(m.zx, {
+            "data-migration-pending": true,
             look: m.zx.Looks.LINK,
             color: (0, d.wj)(I) ? m.zx.Colors.WHITE : m.zx.Colors.PRIMARY,
             onClick: () => $(w),

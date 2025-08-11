@@ -71,6 +71,7 @@ let v = e => {
         text: t
       })
     }) : (0, i.jsx)(u.zx, {
+      "data-migration-pending": true,
       look: u.iL.OUTLINED,
       color: m,
       className: a()(j.bentoBoxButton, c ? j.bentoBoxButtonWhite : j.bentoBoxButtonBrand),

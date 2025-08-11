@@ -142,6 +142,7 @@ function E(e) {
     button: () => {
       let e = Date.now();
       return (0, r.jsxs)(o.gtL, {
+        "data-migration-pending": true,
         className: m.button,
         innerClassName: m.innerButton,
         wrapperClassName: m.tier2Gradient,

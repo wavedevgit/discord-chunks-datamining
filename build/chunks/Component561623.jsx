@@ -81,7 +81,7 @@ let A = e => {
       analyticsLocations: (0, p.ZP)(d.Z.PREMIUM_UNCANCEL_MODAL),
       analyticsLocation: d.Z.PREMIUM_UNCANCEL_MODAL
     }),
-    H = (0, i.e7)([b.Z], () => (0, g.oE)(W), [W]),
+    H = (0, i.e7)([b.Z], () => (0, P.oE)(W), [W]),
     q = (0, i.e7)([b.Z], () => b.Z.isFetchingForSKU(K)),
     J = null == X || null == (E = X.invoiceItems) || null == (N = E.find(e => e.subscriptionPlanId === W)) || null == (F = N.discounts) || null == (A = F.find(e => e.type === s.eW.SUBSCRIPTION_PLAN)) ? true : A.amount,
     $ = null != H ? (0, h.aS)(H.id, false, false, V) : null,
@@ -174,7 +174,7 @@ let A = e => {
             disabled: q,
             onClick: () => {
               if (null != U) {
-                let e = (0, P.tD)(W, U.currency, null == G ? true : G.id);
+                let e = (0, g.tD)(W, U.currency, null == G ? true : G.id);
                 null != G && G.id === U.paymentSourceId && e ? (u.O5(U, Y, S.Sbl.UNCANCEL_WINBACK_MODAL), D(true)) : (B.onClose(), (0, f.Z)({
                   initialPlanId: W,
                   analyticsLocations: Y,
@@ -183,6 +183,7 @@ let A = e => {
               }
             }
           }), (0, t.jsx)(l.zx, {
+            "data-migration-pending": true,
             look: l.zx.Looks.LINK,
             color: (0, a.wj)(R) ? l.zx.Colors.WHITE : l.zx.Colors.PRIMARY,
             onClick: B.onClose,

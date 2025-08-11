@@ -18,6 +18,7 @@ let u = e => {
     previousComponent: n
   } = e;
   return (0, i.jsx)(s.gtL, {
+    "data-migration-pending": true,
     color: r.Tt.CUSTOM,
     onlyShineOnHover: true,
     shineSize: s.rHe.SMALL,

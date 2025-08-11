@@ -119,6 +119,7 @@ let y = function(e) {
           onClick: c
         } = a;
         return (0, r.jsxs)(l.gtL, g(h({
+          "data-migration-pending": true,
           disabled: x.disabled,
           onClick: c,
           innerClassName: _.premiumSubscribeButton,

@@ -160,6 +160,7 @@ class Z extends Chunk73800.Component {
       className: Chunk481398.buttonContainer,
       children: [(0, Chunk255367.jsx)("div", {
         children: (0, Chunk255367.jsx)(Chunk755721.zx, {
+          "data-migration-pending": true,
           disabled: exports,
           color: Chunk755721.zx.Colors.BRAND,
           size: Chunk755721.zx.Sizes.SMALL,

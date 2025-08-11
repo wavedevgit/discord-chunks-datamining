@@ -33,12 +33,12 @@ let O = e => {
     displayProfile: h
   } = e, {
     analyticsLocations: S
-  } = (0, c.ZP)(s.Z.TIERED_TENURE_BADGES_MODAL), M = (0, o.Dt)(), P = Object.values(x.vK), R = (0, p.SI)(null == h ? true : h.userId), U = (0, p.Rw)(), y = g.default.getCurrentUser(), I = null != (n = (0, p.a1)(null != (t = null == h ? true : h.userId) ? t : null == y ? true : y.id)) ? n : new Date, B = (0, b.yd)(null == y ? true : y.premiumType, x.p9.TIER_2), D = P.map(e => {
+  } = (0, o.ZP)(s.Z.TIERED_TENURE_BADGES_MODAL), M = (0, c.Dt)(), P = Object.values(x.vK), R = (0, p.SI)(null == h ? true : h.userId), U = (0, p.Rw)(), y = g.default.getCurrentUser(), I = null != (n = (0, p.a1)(null != (t = null == h ? true : h.userId) ? t : null == y ? true : y.id)) ? n : new Date, B = (0, b.yd)(null == y ? true : y.premiumType, x.p9.TIER_2), D = P.map(e => {
     let {
       id: t,
       nameUnformatted: n,
       tenureReqNumMonths: a
-    } = e, u = T.intl.string(n), d = (0, E.J)(t), s = (0, _.q)(t, a), c = null == h, o = c && (null == U ? true : U.id) === t, m = !c && (null == R ? true : R.id) === t, g = o && (null == U ? true : U.status) === p.Vq.EARNED, b = o && (null == U ? true : U.status) === p.Vq.UPCOMING, v = m || g;
+    } = e, u = T.intl.string(n), d = (0, E.J)(t), s = (0, _.q)(t, a), o = null == h, c = o && (null == U ? true : U.id) === t, m = !o && (null == R ? true : R.id) === t, g = c && (null == U ? true : U.status) === p.Vq.EARNED, b = c && (null == U ? true : U.status) === p.Vq.UPCOMING, v = m || g;
     return (0, l.jsxs)("div", {
       className: r()(j.badge, {
         [j.earnedBadge]: v || b
@@ -111,6 +111,7 @@ let O = e => {
           className: j.badgeList,
           children: D
         }), null != h && h.userId !== (null == y ? true : y.id) && (0, l.jsx)(d.gtL, {
+          "data-migration-pending": true,
           className: j.learnMoreButton,
           onClick: w,
           children: T.intl.string(T.t.hvVgAQ)

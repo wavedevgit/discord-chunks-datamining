@@ -45,6 +45,7 @@ let d = function(e) {
           }), (0, t.jsxs)("div", {
             className: c.churnFooterCTAs,
             children: [(0, t.jsxs)(i.gtL, {
+              "data-migration-pending": true,
               className: c.churnFooterClaimCTA,
               innerClassName: c.churnFooterClaimCTAInner,
               look: a.iL.OUTLINED,

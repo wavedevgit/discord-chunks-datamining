@@ -109,6 +109,7 @@ function ei(e) {
         variant: "text-md/normal",
         children: s
       }), (0, t.jsx)(p.zx, {
+        "data-migration-pending": true,
         look: p.zx.Looks.LINK,
         color: p.zx.Colors.LINK,
         size: p.zx.Sizes.NONE,

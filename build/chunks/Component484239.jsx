@@ -57,6 +57,7 @@ let u = e => {
     }), null != h && (0, i.jsxs)("div", {
       className: d.cardIllustrationNoHover,
       children: [h, 0 !== b.length && null != g && (0, i.jsx)(a.zx, {
+        "data-migration-pending": true,
         className: u,
         fullWidth: true,
         onClick: g,

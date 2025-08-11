@@ -183,6 +183,7 @@ function j(e) {
       }), (0, r.jsxs)("div", {
         className: P.ctaContainer,
         children: [(0, r.jsx)(u.zx, {
+          "data-migration-pending": true,
           className: P.secondaryCTA,
           size: u.zx.Sizes.SMALL,
           color: u.zx.Colors.CUSTOM,

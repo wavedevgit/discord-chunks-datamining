@@ -164,6 +164,7 @@ function G(e) {
   return (0, r.jsxs)("div", {
     className: L.footer,
     children: [(0, r.jsx)(p.zx, {
+      "data-migration-pending": true,
       onClick: n,
       size: p.zx.Sizes.SMALL,
       look: p.iL.BLANK,
