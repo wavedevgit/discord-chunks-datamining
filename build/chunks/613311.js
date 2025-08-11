@@ -614,7 +614,7 @@ let ef = (0, _.Z)((0, O.Z)(o.ZP.connectStores([L.Z, x.Z, j.default, U.Z, k.Z, D.
   } else if (null == i) {
     if (null == l) throw Error("Needs applicationId or skuId");
     null != (r = y.Z.getApplication(l)) && (t = r.destinationSkuId), n = null != t ? D.Z.get(t) : null
-  }(null == n ? void 0 : n.flags) != null && (0, H.yE)(n.flags, el.l4R.STICKER_PACK) && (n = null);
+  }(null == n ? void 0 : n.flags) != null && (0, H.yE)(n.flags, el.l4R.STICKER) && (n = null);
   let c = null != l && (M.Z.inTestModeForApplication(l) || E.Z.inDevModeForApplication(l));
   return {
     skuId: t,

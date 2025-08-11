@@ -36,7 +36,7 @@ function p(e) {
   }, [h, g, E, T]), i.useEffect(() => {
     if (v || p || null == y) return;
     let e = b[y];
-    return O && (null == e ? void 0 : e.productLine) === _.POd.COLLECTIBLES ? void t(u.h8.GIFT_CUSTOMIZATION) : 0 === Object.keys(m).length ? void t(u.h8.ADD_PAYMENT_STEPS) : void t(u.h8.REVIEW)
+    return O && ((null == e ? void 0 : e.productLine) === _.POd.COLLECTIBLES || (null == e ? void 0 : e.productLine) === _.POd.APPLICATION) ? void t(u.h8.GIFT_CUSTOMIZATION) : 0 === Object.keys(m).length ? void t(u.h8.ADD_PAYMENT_STEPS) : void t(u.h8.REVIEW)
   }, [v, p, t, m, O, b, y]), v) ? (0, r.jsx)(f.Z, {}) : p ? (0, r.jsx)(a.Vq, {
     onClose: n
   }) : null != S ? (0, r.jsx)(d.Z, {

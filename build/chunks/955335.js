@@ -1,44 +1,44 @@
 /** Chunk was on 77803 **/
-t.d(n, {
+n.d(t, {
   r: () => p
 });
-var r = t(255367);
-t(73800);
-var i = t(481060),
-  l = t(630388),
-  s = t(981631),
-  o = t(388032),
-  u = t(729463);
+var r = n(255367);
+n(73800);
+var i = n(481060),
+  l = n(630388),
+  o = n(981631),
+  s = n(388032),
+  a = n(729463);
 
-function a(e) {
-  for (var n = 1; n < arguments.length; n++) {
-    var t = null != arguments[n] ? arguments[n] : {},
-      r = Object.keys(t);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(t, e).enumerable
-    }))), r.forEach(function(n) {
+function u(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
       var r;
-      r = t[n], n in e ? Object.defineProperty(e, n, {
+      r = n[t], t in e ? Object.defineProperty(e, t, {
         value: r,
         enumerable: !0,
         configurable: !0,
         writable: !0
-      }) : e[n] = r
+      }) : e[t] = r
     })
   }
   return e
 }
 
-function c(e, n) {
-  return n = null != n ? n : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : (function(e, n) {
-    var t = Object.keys(e);
+function c(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
+    var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
       var r = Object.getOwnPropertySymbols(e);
-      t.push.apply(t, r)
+      n.push.apply(n, r)
     }
-    return t
-  })(Object(n)).forEach(function(t) {
-    Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
+    return n
+  })(Object(t)).forEach(function(n) {
+    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 let d = {
@@ -48,21 +48,21 @@ let d = {
 
 function p(e) {
   let {
-    subscriptions: n,
-    color: t = "text-default"
-  } = e, p = n.some(e => (0, l.yE)(e.skuFlags, s.l4R.APPLICATION_GUILD_SUBSCRIPTION));
+    subscriptions: t,
+    color: n = "text-default"
+  } = e, p = t.some(e => (0, l.yE)(e.skuFlags, o.l4R.APPLICATION_GUILD_SUBSCRIPTION));
   return (0, r.jsx)(i.X6q, {
     variant: "heading-lg/semibold",
-    color: t,
-    className: u.heading,
+    color: n,
+    className: a.heading,
     children: p ? (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(i.QTo, c(a({}, d), {
+      children: [(0, r.jsx)(i.QTo, c(u({}, d), {
         color: "currentColor"
-      })), o.intl.string(o.t.XIhSoq)]
+      })), s.intl.string(s.t.XIhSoq)]
     }) : (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(i.tBG, c(a({}, d), {
+      children: [(0, r.jsx)(i.tBG, c(u({}, d), {
         color: "currentColor"
-      })), o.intl.string(o.t.dxfZpq)]
+      })), s.intl.string(s.t.dxfZpq)]
     })
   })
 }

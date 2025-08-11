@@ -674,7 +674,7 @@ class el extends(i = s.PureComponent) {
         let {
           payment: e
         } = this.props;
-        return null == e.sku || !(0, U.yE)(e.sku.flags, H.l4R.STICKER_PACK)
+        return null == e.sku || !(0, U.yE)(e.sku.flags, H.l4R.STICKER)
       }
     }, {
       rule: "SUBSCRIPTION_TYPE",

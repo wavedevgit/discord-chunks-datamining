@@ -1,6 +1,6 @@
 /**
   Module ID: 83372
-  Original File Name: 70a7af518759a6a9
+  Original File Name: 46dc9644f2635d45
 **/
 .wrapper__14403 {
     align-items: center;
@@ -135,6 +135,12 @@
     border-top: 1px solid var(--border-subtle)
 }
 
+.buttonGroup__3564f {
+    align-items: center;
+    display: flex;
+    gap: 8px
+}
+
 .heading__66230 {
     align-items: center;
     display: flex;
@@ -179,4 +185,4 @@
     gap: 5px
 }
 
-/*# sourceMappingURL=70a7af518759a6a9.css.map*/
+/*# sourceMappingURL=46dc9644f2635d45.css.map*/

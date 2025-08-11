@@ -1,0 +1,48 @@
+/**
+  Module ID: 61670
+  Original File Name: 68c5a20e168f594a
+**/
+.stepBody_fa6a46 {
+    display: flex;
+    gap: var(--size-32);
+    min-height: 400px
+}
+
+.bodyColumnLeft_fa6a46 {
+    gap: var(--size-16)
+}
+
+.bodyColumnLeft_fa6a46,.bodyColumnRight_fa6a46 {
+    display: flex;
+    flex: 1;
+    flex-direction: column
+}
+
+.bodyColumnRight_fa6a46 {
+    gap: var(--size-24)
+}
+
+.title_fa6a46 {
+    margin-bottom: var(--size-8)
+}
+
+.sendTo_fa6a46 {
+    margin-right: var(--size-16);
+    margin-top: var(--size-24)
+}
+
+.subtitle_fa6a46 {
+    margin-bottom: var(--size-24)
+}
+
+.customGiftMessageWrapper_fa6a46 {
+    margin-top: auto
+}
+
+.customGiftMessage_fa6a46 {
+    background: var(--custom-background-secondary);
+    border-radius: var(--size-8);
+    padding: var(--size-12)
+}
+
+/*# sourceMappingURL=68c5a20e168f594a.css.map*/

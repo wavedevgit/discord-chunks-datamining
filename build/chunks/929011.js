@@ -80,11 +80,13 @@ function h(e) {
   let {
     appId: t,
     skuId: n,
-    analyticsLocations: r
+    analyticsLocations: r,
+    isGift: i
   } = e;
   (0, a.Z)({
     applicationId: t,
     skuId: n,
-    analyticsLocations: r
+    analyticsLocations: r,
+    isGift: null != i && i
   })
 }

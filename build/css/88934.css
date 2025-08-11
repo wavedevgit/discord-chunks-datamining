@@ -1,6 +1,6 @@
 /**
   Module ID: 88934
-  Original File Name: 9c6ad67fa63a65dc
+  Original File Name: 2011aaef368d1428
 **/
 @value headerBarHeight 60px;
 
@@ -2117,6 +2117,12 @@
     border-top: 1px solid var(--border-subtle)
 }
 
+.buttonGroup__3564f {
+    align-items: center;
+    display: flex;
+    gap: 8px
+}
+
 .heading__66230 {
     align-items: center;
     display: flex;
@@ -2544,4 +2550,4 @@
     width: 22px
 }
 
-/*# sourceMappingURL=9c6ad67fa63a65dc.css.map*/
+/*# sourceMappingURL=2011aaef368d1428.css.map*/
