@@ -27,19 +27,19 @@ function g(e) {
     premiumType: n,
     onClose: g,
     confettiCanvas: C,
-    userWasChurned: j = false,
-    userDiscountOffer: E
-  } = e, O = (0, l.ZP)(), P = (0, s.wj)(O) ? y : h, v = r.useRef(null), [N, I] = r.useState(false), T = (0, p._)(t, f.Xh.PREMIUM_MONTH_TIER_2, E), S = (0, d.aS)(f.Xh.PREMIUM_MONTH_TIER_2, false, false, {
+    userWasChurned: E = false,
+    userDiscountOffer: j
+  } = e, O = (0, l.ZP)(), P = (0, s.wj)(O) ? y : h, N = r.useRef(null), [v, I] = r.useState(false), T = (0, p._)(t, f.Xh.PREMIUM_MONTH_TIER_2, j), R = (0, d.aS)(f.Xh.PREMIUM_MONTH_TIER_2, false, false, {
     currency: t.currency,
     paymentSourceId: t.paymentSourceId
-  }), R = (0, m.T4)(S.amount, S.currency), w = (0, a.e7)([c.Z], () => c.Z.useReducedMotion);
+  }), S = (0, m.T4)(R.amount, R.currency), w = (0, a.e7)([c.Z], () => c.Z.useReducedMotion);
   if (r.useEffect(() => {
-      null != v.current && null != T && I(true)
-    }, [v, N, T]), null == E || null == T) return null;
+      null != N.current && null != T && I(true)
+    }, [N, v, T]), null == j || null == T) return null;
   let D = b.intl.format(b.t.gPzMHR, {
-      numMonths: E.discount.user_usage_limit,
+      numMonths: j.discount.user_usage_limit,
       discountedPrice: T,
-      regularPrice: R
+      regularPrice: S
     }),
     k = (0, i.jsx)("div", {
       className: x.whatYouLoseButtonContainer,
@@ -55,7 +55,7 @@ function g(e) {
       className: x.cancellationHeader,
       onClose: g
     }), (0, i.jsx)("div", {
-      ref: v,
+      ref: N,
       children: (0, i.jsx)(o.hzk, {
         "data-migration-pending": true,
         className: x.body,
@@ -68,7 +68,7 @@ function g(e) {
               className: x.nitroIcon
             }), (0, i.jsx)(o.X6q, {
               variant: "heading-xl/bold",
-              children: j ? b.intl.string(b.t.gOOPaG) : b.intl.string(b.t.PZSyRk)
+              children: E ? b.intl.string(b.t.gOOPaG) : b.intl.string(b.t.PZSyRk)
             })]
           }), (0, i.jsx)("div", {
             className: x.bodyString,
@@ -76,8 +76,8 @@ function g(e) {
           }), k]
         }) : (0, i.jsx)(o.$jN, {})
       })
-    }), !w && N && (0, i.jsx)(u.Z, {
-      confettiTarget: v.current,
+    }), !w && v && (0, i.jsx)(u.Z, {
+      confettiTarget: N.current,
       confettiCanvas: C,
       confettiVelocityMultiplier: .75
     })]

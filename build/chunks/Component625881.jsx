@@ -1,7 +1,7 @@
 /** Chunk was on 81709 **/
 /** chunk id: 625881, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => j
+  Z: () => E
 }), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -22,31 +22,31 @@ var Chunk255367 = require("./255367.js"),
   Chunk828576 = require("./828576.js"),
   Chunk982404 = require("./982404.js"),
   Chunk299156 = require("./299156.js");
-let j = function(e) {
+let E = function(e) {
   let {
     premiumSubscription: t,
     premiumType: n,
     onClose: a,
-    onConfirm: j,
-    userDiscountOffer: E
-  } = e, [O, P] = r.useState(false), [v, N] = r.useState(false), I = async e => {
+    onConfirm: E,
+    userDiscountOffer: j
+  } = e, [O, P] = r.useState(false), [N, v] = r.useState(false), I = async e => {
     try {
-      N(true), P(false), await o.tn.post({
+      v(true), P(false), await o.tn.post({
         url: x.ANM.USER_OFFER_REDEEM,
         body: {
           user_discount_offer_id: e
         },
         rejectWithError: true
-      }), j()
+      }), E()
     } catch (e) {
       P(true)
     }
-    N(false)
-  }, T = (0, u.ZP)(), S = (0, l.wj)(T) ? g : C, R = (0, _._)(t, b.Xh.PREMIUM_MONTH_TIER_2, E), w = (0, m.aS)(b.Xh.PREMIUM_MONTH_TIER_2, false, false, {
+    v(false)
+  }, T = (0, u.ZP)(), R = (0, l.wj)(T) ? g : C, S = (0, _._)(t, b.Xh.PREMIUM_MONTH_TIER_2, j), w = (0, m.aS)(b.Xh.PREMIUM_MONTH_TIER_2, false, false, {
     currency: t.currency,
     paymentSourceId: t.paymentSourceId
   }), D = (0, p.T4)(w.amount, w.currency);
-  return null == E ? null : (0, i.jsxs)(i.Fragment, {
+  return null == j ? null : (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(f.Z, {
       premiumType: n,
       onClose: a
@@ -58,19 +58,19 @@ let j = function(e) {
         children: [(0, i.jsx)(c.X6q, {
           variant: "heading-xl/bold",
           children: y.intl.format(y.t.q9Vxu7, {
-            percent: E.discount.amount
+            percent: j.discount.amount
           })
         }), (0, i.jsxs)("div", {
           className: h.confirmDiscountDescription,
           children: [(0, i.jsx)("img", {
             alt: "",
-            src: S,
+            src: R,
             className: h.confirmDiscountIcon
           }), (0, i.jsx)(c.Text, {
             variant: "text-sm/medium",
             children: y.intl.format(y.t.Eq1RHB, {
-              percent: E.discount.amount,
-              numMonths: E.discount.user_usage_limit,
+              percent: j.discount.amount,
+              numMonths: j.discount.user_usage_limit,
               price: D
             })
           })]
@@ -80,9 +80,9 @@ let j = function(e) {
             variant: "text-xs/semibold",
             className: h.confirmDiscountLegaleseText,
             children: y.intl.format(y.t.hrGTjI, {
-              discountedPrice: R,
-              billingPeriod: (0, m.JP)(E.discount.user_usage_limit_interval),
-              numMonths: E.discount.user_usage_limit,
+              discountedPrice: S,
+              billingPeriod: (0, m.JP)(j.discount.user_usage_limit_interval),
+              numMonths: j.discount.user_usage_limit,
               fullPrice: D,
               helpdeskArticle: d.Z.getArticleURL(x.BhN.PAID_TERMS)
             })
@@ -107,8 +107,8 @@ let j = function(e) {
             variant: "primary",
             size: "sm",
             text: y.intl.string(y.t.CKSuZG),
-            loading: v,
-            onClick: () => I(E.id)
+            loading: N,
+            onClick: () => I(j.id)
           })]
         })]
       })
