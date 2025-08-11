@@ -1,12 +1,16 @@
-const fs = require("fs/promises");
-const beautify = require("js-beautify/js").js;
-const cssbueatify = require("cssbeautify");
-const { writeFile } = require("fs");
-const getModules = require("./utils/getModules.js");
-const { getChunks, formatCode } = require("./utils/getChunks.js");
-const determineType = require("./utils/getChunkType.js");
-const acorn = require("acorn");
-const walk = require("acorn-walk");
+import fs from "fs/promises";
+import jsBeautify from "js-beautify";
+import cssbueatify from "cssbeautify";
+import getModules from "./utils/getModules.js";
+import { getChunks, formatCode } from "./utils/getChunks.js";
+import determineType from "./utils/getChunkType.js";
+import * as acorn from "acorn";
+import * as walk from "acorn-walk";
+import { readAbleCode } from "./utils/toreadAbleCode.js";
+import { reverseJsxFromString } from "./utils/reverseJsx.js";
+import { generators } from "./utils/makeChunkName.js";
+
+const { js: beautify } = jsBeautify;
 
 const base = "https://canary.discord.com";
 async function getText(url) {
@@ -45,14 +49,12 @@ async function main() {
   console.log("Scraping list of modules");
   const web = await getText(webjs);
   const modules = getModules(web);
-  await save(
-    "./build/web.js",
-    beautify(web, { indent_size: 2, space_in_empty_paren: true })
-  );
+
   await save("modules.json", JSON.stringify(modules, null, 4));
   console.log("! Done scraping list of modules");
   const everyChunks = {};
   const timeTaken1 = await perf(async () => {
+    return;
     for (let cssFile in modules.css) {
       const stylesheet = await getText(asset(modules.css[cssFile] + ".css"));
       await fs.writeFile(
@@ -64,28 +66,35 @@ async function main() {
       );
     }
   }, "Saving every css file");
+  const jsxChunks = [];
+  let reactExportsChunk;
+  let reactChunk;
+  let name = "";
   const timeTaken2 = await perf(async () => {
-    for (let jsFile in modules.js) {
-      const js = await getText(asset(modules.js[jsFile] + ".js"));
-      const chunks = getChunks(js, jsFile, modules.js[jsFile]);
-      console.log(Object.keys(chunks).length, "Chunks on", "module", jsFile);
-      for (let chunk in chunks) {
-        everyChunks[chunk] = chunks[chunk];
-        await fs.writeFile(
-          "./build/chunks/" + chunk + ".js",
-          beautify(chunks[chunk], {
-            indent_size: 2,
-            space_in_empty_paren: true,
+    async function processInBatches(items, batchSize) {
+      let results = [];
+      for (let i = 0; i < items.length; i += batchSize) {
+        const batch = items.slice(i, i + batchSize);
+        const chunkResults = await Promise.all(
+          batch.map(async ([jsFile, path]) => {
+            const js = await getText(asset(path + ".js"));
+            return getChunks(js, jsFile, path);
           })
         );
+        results.push(...chunkResults);
       }
+      return results;
     }
+    const chunkArray = await processInBatches(Object.entries(modules.js), 5); // 5 at a time
+
+    let chunks = Object.assign({}, ...chunkArray);
+
+    console.log("done chunks from other modules, at web.js now");
     // handle web.js differently as it does not with acorn
     const chunkStart = web.indexOf("var __webpack_modules__=");
     const chunkEnd = web.indexOf(",__webpack_module_cache__={};");
     const chunk = web.slice(chunkStart, chunkEnd);
-    const ast = acorn.parse(chunk, { ecmaVersion: "latest" });
-    const chunks = {};
+    const ast = acorn.parse(chunk, { ecmaVersion: "latest", locations: true });
     walk.simple(ast, {
       VariableDeclaration(node) {
         if (node.declarations[0].id.name !== "__webpack_modules__") return;
@@ -94,18 +103,25 @@ async function main() {
           const chunkNode = prop.value.body;
           const chunkCode = chunk.slice(chunkNode.start, chunkNode.end);
           const codeFormatted = formatCode(chunkCode);
-          chunks[key] = `/** Chunk was on web.js **/\n` + codeFormatted;
+          chunks[key] =
+            `/** Chunk was on web.js **/\n` +
+            `/** chunk id: ${key}, original params: ${prop.value.params
+              .map((p) => p.name || p.value)
+              .join(",")} (module,exports,re quire) **/\n` +
+            readAbleCode(
+              prop.value.params.map((p) => p.name || p.value),
+              codeFormatted,
+              key
+            );
         }
       },
     });
+    console.log("web.js done");
     for (let chunk in chunks) {
       everyChunks[chunk] = chunks[chunk];
-      await fs.writeFile(
-        "./build/chunks/" + chunk + ".js",
-        beautify(chunks[chunk], { indent_size: 2, space_in_empty_paren: true })
-      );
     }
   }, "Scraping chunks from every module");
+  const names = {};
   const timeTaken3 = await perf(async () => {
     console.log("Chunks amount", everyChunks.length);
     const languagesChunks = {};
@@ -113,13 +129,11 @@ async function main() {
     let remaining = everyChunks.length;
     for (let chunk in everyChunks) {
       remaining -= 1;
-      console.clear();
-      console.log(`${remaining} Chunks left.`);
-      console.log("Parsing chunk", chunk);
       const [type, chunkData] = determineType(
         everyChunks[chunk],
         chunk,
-        languagesChunks
+        languagesChunks,
+        jsxChunks
       );
       const data = {
         id: chunk,
@@ -132,8 +146,6 @@ async function main() {
             .split(" ")[1],
         },
       };
-      if (data.type !== "unknown")
-        console.log("Chunk ", data.id, data.type, data.data);
       if (data.type === "intl-loader") {
         for (let language in data.data.languages) {
           languagesChunks[data.data.languages[language].chunkId] = language;
@@ -142,10 +154,32 @@ async function main() {
       if (!all[data.type]) all[data.type] = [];
       all[data.type].push({ id: data.id, data: data.data });
       await fs.writeFile(
-        "./build/chunks_api/" + data.type + "/" + data.id + ".json",
+        "./build/chunks_api/" + data.id + ".json",
         JSON.stringify(data),
         "utf-8"
       );
+      if (data.type === "experiment") {
+        names[chunk] =
+          generators.experiment(
+            data.data.id || data.data.name,
+            data.data.kind,
+            !!data.data.variations ? "apex" : "normal"
+          ) || chunk;
+      }
+
+      if (data.type === "buildInfo") {
+        console.log(data);
+        names[chunk] = "buildInfo";
+      }
+      if (data.type === "component") {
+        names[chunk] = `Component${chunk}`;
+      }
+      if (data.type === "store") {
+        names[chunk] = data.data.name.replaceAll(" ", "");
+      }
+      if (data.type === "intl-messages-definitions") {
+        names[chunk] = `IntlMessagesDefinitions${data.data.language}_${chunk}`;
+      }
     }
     for (let chunk of all["unknown"]) {
       try {
@@ -165,7 +199,6 @@ async function main() {
               .split(" ")[1],
           },
         };
-        if (data.type !== "unknown") console.log("Chunk ", data.id, data.type);
         all[data.type].push({ id: data.id, data: data.data });
       } catch {}
     }
@@ -176,10 +209,47 @@ async function main() {
       "utf-8"
     );
   }, "Generating json list of chunks");
+  const timeTaken4 = await perf(async () => {
+    for (let [chunk, name] of Object.entries(names)) {
+      if (everyChunks[chunk].includes(`require("./${chunk}.js")`)) {
+        if (name === "react_exports") {
+          names[chunk] = "react";
+        }
+        console.log(chunk, name);
+        everyChunks[chunk] = everyChunks[chunk]
+          .replaceAll(`${chunk}.js`, `${name}.js`)
+          .replaceAll(`Chunk${chunk}`, name);
+      }
+    }
+    for (let chunk in everyChunks) {
+      let code = beautify(everyChunks[chunk], {
+        indent_size: 2,
+        space_in_empty_paren: true,
+      });
+      // check if chunk is component
+      if (code.includes(".jsx)(") || code.includes(".jsxs)(")) {
+        jsxChunks.push(chunk);
+        code = reverseJsxFromString(code);
+      }
+
+      for (let chunk of jsxChunks) {
+        if (code.includes(`"./${chunk}.js"`)) {
+          code = code.replaceAll(`"./${chunk}.js"`, `"./${chunk}.jsx"`);
+        }
+      }
+      await fs.writeFile(
+        "./build/chunks/" +
+          (names[chunk] || chunk) +
+          "." +
+          (jsxChunks.includes(chunk) ? "jsx" : "js"),
+        code
+      );
+    }
+  }, "Saving chunks and renaming with readable names");
   await fs.writeFile("./build/modules.json", JSON.stringify(modules), "utf-8");
   console.log(
     "* Done, scraping build!, Estimated Time taken " +
-      (timeTaken1 + timeTaken2 + timeTaken3) +
+      (timeTaken1 + timeTaken2 + timeTaken3 + timeTaken4) +
       "s"
   );
 }

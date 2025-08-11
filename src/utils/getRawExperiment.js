@@ -1,6 +1,6 @@
-const acorn = require("acorn");
-const walk = require("acorn-walk");
-const generate = require("escodegen");
+import * as acorn from "acorn";
+import * as walk from "acorn-walk";
+import generate from "escodegen";
 function parseValue(node) {
   if (node.type === "ArrayExpression")
     return node.elements.map((el) => parseValue(el));
@@ -16,11 +16,24 @@ function parseValue(node) {
   return generate.generate(node);
 }
 function getRawExperiment(code) {
-  const ast = acorn.parse(code, { ecmaVersion: "latest" });
+  let ast;
+  try {
+    ast = acorn.parse(code, { ecmaVersion: "latest" });
+  } catch (err) {
+    console.log(code, err);
+    process.kill(0);
+  }
   let result = {};
   walk.simple(ast, {
     ObjectExpression(node) {
-      const keys = ["label", "id", "kind", "treatments"];
+      const keys = [
+        "label",
+        "id",
+        "kind",
+        "treatments",
+        "variations",
+        "defaultConfig",
+      ];
       if (
         !node.properties
           .map((prop) => prop.key.name)
@@ -33,4 +46,4 @@ function getRawExperiment(code) {
   return result;
 }
 
-module.exports = getRawExperiment;
+export default getRawExperiment;

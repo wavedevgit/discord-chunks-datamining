@@ -1,5 +1,5 @@
-const acorn = require("acorn");
-const walk = require("acorn-walk");
+import * as acorn from "acorn";
+import * as walk from "acorn-walk";
 
 function getModules(code) {
   const ast = acorn.parse(code, { ecmaVersion: "latest" });
@@ -40,4 +40,4 @@ function getModules(code) {
   return result;
 }
 
-module.exports = getModules;
+export default getModules;

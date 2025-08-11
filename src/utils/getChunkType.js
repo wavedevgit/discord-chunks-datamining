@@ -1,12 +1,17 @@
-const acorn = require("acorn");
-const walk = require("acorn-walk");
-const getRawExperiment = require("./getRawExperiment.js");
+import * as acorn from "acorn";
+import * as walk from "acorn-walk";
+import getRawExperiment from "./getRawExperiment.js";
 
 function getStoreClassFunctionsAndDispatchEvents(code) {
   try {
     const functions = [];
     const events = [];
-    const ast = acorn.parse(code, { ecmaVersion: "latest" });
+    let ast;
+    try {
+      ast = acorn.parse(code, { ecmaVersion: "latest" });
+    } catch {
+      console.log(code);
+    }
     walk.simple(ast, {
       // get functions of the store
       ClassDeclaration(node) {
@@ -126,18 +131,20 @@ function getIntlMessages(code) {
       },
     });
     return messages;
-  } catch {
+  } catch (e) {
+    console.log(e);
     return {};
   }
 }
 // determines chunk type based on code
-function determineType(code, id, languagesChunks) {
+function determineType(code, id, languagesChunks, jsxChunks) {
+  if (jsxChunks.includes(id)) return ["component", {}];
   if (
-    code.includes(".p + '") ||
-    code.includes(".default = 'https://cdn.discordapp.com/assets")
+    code.includes('.p + "') ||
+    code.includes('.default = "https://cdn.discordapp.com/assets')
   ) {
     const match = code.match(
-      /(\.p \+ '(?<fileName>.+?)'|\.default = '(?<url>.+?)')/
+      /(\.p \+ "(?<fileName>.+?)"|\.default = "(?<url>.+?)")/
     );
     return [
       "assets",
@@ -148,10 +155,10 @@ function determineType(code, id, languagesChunks) {
       },
     ];
   }
+
   if (
     code.includes("label:") &&
-    code.includes("treatments:") &&
-    code.includes("id:")
+    code.includes("defaultConfig:") & code.includes("kind:")
   ) {
     return ["experiment", getRawExperiment(code)];
   }
@@ -202,4 +209,4 @@ function determineType(code, id, languagesChunks) {
   }
   return ["unknown", {}];
 }
-module.exports = determineType;
+export default determineType;
