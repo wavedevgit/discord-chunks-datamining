@@ -3,7 +3,6 @@ import * as walk from "acorn-walk";
 import MagicString from "magic-string";
 import { capitalizeFirstLetter } from "./makeChunkName.js";
 import { preserved } from "./preservedKeyWords.js";
-import { continueStatement } from "@babel/types";
 function readAbleCode(params, code, id) {
   let ast;
   try {
