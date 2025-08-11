@@ -25,7 +25,7 @@ jobs:
             - run: npm init -y
             - name: Run script
               run: |
-                  npm i acorn acorn-walk js-beautify cssbeautify escodegen && bash ./scrape.sh
+                  npm i acorn acorn-walk js-beautify magic-string cssbeautify escodegen && bash ./scrape.sh
             - name: set email
               run: |
                   git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
