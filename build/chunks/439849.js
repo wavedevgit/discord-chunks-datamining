@@ -20,7 +20,7 @@ function f(e) {
 }
 
 function _(e) {
-  null != e && "" !== e && ((e = f(e)).endsWith("/") || (e += "/"), u.push(e))
+  null != e && "" !== e && ((e = f(e)).endsWith("/") || (e += "/"), u.push(e), (0, l.isLinux)() && u.push("/var" + e))
 }
 
 function p(e) {
@@ -45,7 +45,7 @@ async function h() {
   if ((0, Chunk358085.isWindows)()) {
     let e = Chunk579806.Z.process.env;
     _(module.LOCALAPPDATA), _(module["PROGRAMFILES(X86)"]), _(module.PROGRAMFILES), _(module.PROGRAMW6432), _(module.PROGRAMDATA), _("/games/"), _("/steamlibrary/steamapps/common/")
-  } else(0, Chunk358085.isMac)() && _("/Applications");
+  } else(0, Chunk358085.isMac)() ? _("/Applications") : (0, Chunk358085.isLinux)() && (_("/app/bin"), _("/usr/bin"), _("/usr/local/bin"));
   let e = Chunk579806.Z.remoteApp.getPath;
   return _(await module("home")), _(await module("appData")), _(await module("desktop")), _(await module("documents")), _(await module("downloads")), (u = o().uniq(u)).sort((e, t) => t.length - e.length), r
 }
