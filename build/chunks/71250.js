@@ -1,9 +1,6 @@
 /** Chunk was on 28382 **/
-/** chunk id: 71250, original params: e,t,n (module,exports,require) **/
+/** chunk id: 71250, original params: t,e,n (module,exports,require) **/
 module.exports = {
-  center: "center__47458",
-  textCenter: "textCenter__47458",
-  button: "button__47458",
   options: "options__47458",
   optionContainer: "optionContainer__47458",
   optionContainerOther: "optionContainerOther__47458",
