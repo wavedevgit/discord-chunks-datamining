@@ -5,7 +5,7 @@ require.d(exports, {
 }), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
-  Chunk126663 = require("./126663.js"),
+  Chunk717976 = require("./717976.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk619915 = require("./619915.js"),
@@ -153,7 +153,7 @@ class M extends Chunk73800.PureComponent {
       }(require, ["onDragStart"]),
       {
         guild: l
-      } = Chunk126663,
+      } = Chunk717976,
       {
         controller: a,
         renderBanner: c,
@@ -185,7 +185,7 @@ class M extends Chunk73800.PureComponent {
       }) : null,
       children: [(0, Chunk255367.jsx)("div", {
         className: Chunk506098.channelList,
-        children: null != Chunk442837 ? (0, Chunk255367.jsx)(Chunk680089, (e = L({}, Chunk126663), t = t = {
+        children: null != Chunk442837 ? (0, Chunk255367.jsx)(Chunk680089, (e = L({}, Chunk717976), t = t = {
           guild: Chunk442837,
           disableManageChannels: true,
           onScroll: null != Chunk442837 && null != Chunk442837.banner ? this.handleScroll : null

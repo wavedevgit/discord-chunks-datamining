@@ -8,7 +8,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
-  Chunk126663 = require("./126663.js"),
+  Chunk717976 = require("./717976.js"),
   Chunk722770 = require("./722770.js"),
   Chunk846519 = require("./846519.js"),
   Chunk755721 = require("./755721.js"),
@@ -90,7 +90,7 @@ function k(e, t) {
   return i
 }
 let j = 1e3,
-  U = (0, Chunk126663.animated)(Chunk481060.CJ0),
+  U = (0, Chunk717976.animated)(Chunk481060.CJ0),
   G = e => {
     var {
       quest: t,

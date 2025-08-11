@@ -5,7 +5,7 @@ require.d(exports, {
 }), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
-  Chunk126663 = require("./126663.js"),
+  Chunk717976 = require("./717976.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk313201 = require("./313201.js"),
@@ -95,8 +95,8 @@ function C() {
   var e, t;
   let n = (0, Chunk442837.e7)([Chunk120421.Z], () => Chunk120421.Z.lifetimePoints),
     [o, i] = (0, Chunk284539.Z)(Chunk477839.yN.LEVELING),
-    c = null != (e = null == Chunk126663 ? true : Chunk126663.lastLevelClaimed) ? module : 0,
-    P = null != (t = null == Chunk126663 ? true : Chunk126663.pointsWhenUnlocked) ? exports : require,
+    c = null != (e = null == Chunk717976 ? true : Chunk717976.lastLevelClaimed) ? module : 0,
+    P = null != (t = null == Chunk717976 ? true : Chunk717976.pointsWhenUnlocked) ? exports : require,
     C = require - P,
     Z = function e(t, n) {
       return t >= N(n) ? e(t, n + 1) : n
@@ -115,7 +115,7 @@ function C() {
     }), (0, Chunk668826.KH)(Chunk477839.yN.LEVELING, M), R()
   }, [k, M, R, Chunk481060]);
   return (0, Chunk73800.useEffect)(() => {
-    (null == Chunk126663 ? true : Chunk126663.pointsWhenUnlocked) == null && Chunk481060({
+    (null == Chunk717976 ? true : Chunk717976.pointsWhenUnlocked) == null && Chunk481060({
       pointsWhenUnlocked: require
     })
   }, []), (0, Chunk255367.jsxs)("div", {

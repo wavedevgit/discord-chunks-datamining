@@ -394,11 +394,11 @@ class tu extends Chunk73800.PureComponent {
     }
     return (0, i.jsxs)(i.Fragment, {
       children: [(0, i.jsx)(eu.Z, {
-        groupName: e7.R.ACCOUNT_NAME_ZONE,
+        groupName: e4.R.ACCOUNT_NAME_ZONE,
         targetElementRef: this.avatarWithPopoutRef
       }), (0, i.jsx)(z.ZP, {
         contentTypes: n.avatar,
-        groupName: e7.R.ACCOUNT_NAME_ZONE,
+        groupName: e4.R.ACCOUNT_NAME_ZONE,
         children: t => {
           let {
             visibleContent: n,
@@ -1165,7 +1165,7 @@ function tf(e) {
                   "aria-label": tt.intl.string(tt.t.Hapb4O),
                   disabled: l,
                   onClick: e => {
-                    s(e7.L.INDIRECT_ACTION), n(e), null != A && !q && P ? (0, eA.$)(() => X(true)) : X(!q)
+                    s(e4.L.INDIRECT_ACTION), n(e), null != A && !q && P ? (0, eA.$)(() => X(true)) : X(!q)
                   }
                 }, r));
                 return null != o ? (0, i.jsx)(f.yRy, {

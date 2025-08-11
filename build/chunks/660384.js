@@ -3,7 +3,7 @@
 require.d(exports, {
   Z: () => a
 });
-var Chunk126663 = require("./126663.js");
+var Chunk717976 = require("./717976.js");
 class a {
   handleScroll(e) {
     this.top.set(e.currentTarget.scrollTop)
@@ -13,7 +13,7 @@ class a {
   }
   constructor() {
     var e;
-    e = new Chunk126663.SpringValue(0), "top" in this ? Object.defineProperty(this, "top", {
+    e = new Chunk717976.SpringValue(0), "top" in this ? Object.defineProperty(this, "top", {
       value: module,
       enumerable: true,
       configurable: true,

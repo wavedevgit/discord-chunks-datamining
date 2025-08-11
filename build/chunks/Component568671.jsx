@@ -21,7 +21,7 @@ function d() {
       (0, Chunk481060.ZDy)(async () => {
         let {
           default: e
-        } = await Promise.all([require.e("68214"), require.e("90688")]).then(require.bind(require, 978305));
+        } = await Promise.all([require.e("35992"), require.e("90688")]).then(require.bind(require, 978305));
         return t => (0, i.jsx)(e, function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},

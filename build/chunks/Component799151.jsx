@@ -6,7 +6,7 @@ require.d(exports, {
 });
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
-  Chunk126663 = require("./126663.js"),
+  Chunk717976 = require("./717976.js"),
   Chunk442837 = require("./442837.js"),
   Chunk710593 = require("./710593.jsx"),
   Chunk481060 = require("./481060.js"),
@@ -43,7 +43,7 @@ function _() {
       opacity: 0,
       y: 80 * !exports
     },
-    config: Chunk126663.config.stiff
+    config: Chunk717976.config.stiff
   }, "animate-always")((t, n) => n ? (0, r.jsx)("div", {
     className: f.positioner,
     children: (0, r.jsx)(o.animated.div, {

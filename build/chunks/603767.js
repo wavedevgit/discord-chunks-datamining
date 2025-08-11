@@ -4,7 +4,7 @@
 require.d(exports, {
   Z: () => o
 }), require("./388685.js");
-var Chunk126663 = require("./126663.js");
+var Chunk717976 = require("./717976.js");
 
 function i(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -14,7 +14,7 @@ function i(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class o extends Chunk126663.FrameLoop {
+class o extends Chunk717976.FrameLoop {
   setRAF(e, t) {
     0 !== this.id && (this._cancelAnimationFrame(this.id), this.id = 0), this._requestAnimationFrame = e, this._cancelAnimationFrame = t, this.loop()
   }

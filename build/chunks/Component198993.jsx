@@ -9,7 +9,7 @@ var n, o, a, Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk120356 = require("./120356.js"),
   c = require.n(Chunk120356),
-  Chunk353515 = require("./353515.js"),
+  Chunk569499 = require("./569499.js"),
   Chunk634715 = require("./634715.js");
 
 function f(e, r, t) {
@@ -68,7 +68,7 @@ class b extends(o = Chunk73800.PureComponent) {
         backgroundColor: n.bgColor
       },
       className: c()(Chunk634715.qrCodeContainer, exports),
-      children: (0, Chunk255367.jsx)(Chunk353515.default, C({
+      children: (0, Chunk255367.jsx)(Chunk569499.default, C({
         value: require,
         level: "M"
       }, n))
