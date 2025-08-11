@@ -98,7 +98,7 @@ let k = function(e) {
     titleId: t
   } = e, {
     analyticsLocations: n
-  } = (0, h.ZP)(f.Z.FRIENDS_LIST), {
+  } = (0, f.ZP)(h.Z.FRIENDS_LIST), {
     rows: l,
     section: u
   } = (0, o.cj)([_.ZP], () => _.ZP.getState()), L = (0, o.e7)([O.Z], () => O.Z.isFocused()), {
@@ -234,7 +234,7 @@ let k = function(e) {
   });
   let $ = "" !== U[u],
     ee = 0 === z.length && $;
-  return (0, r.jsx)(h.Gt, {
+  return (0, r.jsx)(f.Gt, {
     value: n,
     children: (0, r.jsxs)(p.Z, {
       section: P.jXE.FRIENDS_LIST,

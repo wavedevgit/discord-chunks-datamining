@@ -28,14 +28,14 @@ function g(e) {
       var t, n;
       return (null == (t = e.game) ? true : t.name) != null && (0, a.isGameApplicationType)(null == (n = e.game) ? true : n.type)
     }).map(e => e.game.name);
-    a.default.track(f.rMx.OPEN_POPOUT, {
+    a.default.track(h.rMx.OPEN_POPOUT, {
       type: "Now Playing Card Popout",
       games_detected: e
     })
   }), (0, r.jsxs)(i.v2r, {
     navId: "now-playing-menu",
     onClose: n,
-    "aria-label": h.intl.string(h.t.ogxXGh),
+    "aria-label": f.intl.string(f.t.ogxXGh),
     onSelect: g,
     children: [m, (0, r.jsxs)(i.kSQ, {
       children: [b, _]

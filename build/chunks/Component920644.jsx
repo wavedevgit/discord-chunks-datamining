@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 920644, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => f
 });
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
@@ -15,13 +15,13 @@ var Chunk990547 = require("./990547.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk274978 = require("./274978.js");
 
-function f() {
+function h() {
   (0, Chunk758119.qV)(), (0, Chunk703656.uL)(Chunk981631.Z5c.LOGIN, {
     source: "existing_user_age_gate_underage"
   })
 }
 
-function h(e) {
+function f(e) {
   let {
     underageMessage: t,
     transitionState: o
@@ -72,7 +72,7 @@ function h(e) {
         size: "sm",
         text: d.intl.string(d.t.szzQ6O),
         fullWidth: true,
-        onClick: f
+        onClick: h
       })
     })]
   })

@@ -45,7 +45,7 @@ function P(e) {
     setIsHovered: A,
     onMouseEnter: Z,
     onMouseLeave: w
-  } = (0, h.Z)(200, 300), {
+  } = (0, f.Z)(200, 300), {
     enableEmojiCTA: L
   } = _.w.useExperiment({
     location: "GiftIntentActionButton"
@@ -72,7 +72,7 @@ function P(e) {
       m.default.track(I.rMx.GIFT_INTENT_ACTION_BUTTON_CLICKED, {
         gift_intent_type: n,
         affinity: null == r ? true : r.communicationProbability
-      }), (0, f.Z)({
+      }), (0, h.Z)({
         isGift: true,
         initialPlanId: null,
         giftRecipient: t,

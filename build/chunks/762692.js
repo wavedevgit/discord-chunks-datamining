@@ -17,7 +17,7 @@ let u = {
       languageCode: u,
       offset: d,
       limit: p,
-      withCounts: f
+      withCounts: h
     } = t;
     l.Z.dispatch({
       type: "GLOBAL_DISCOVERY_SERVERS_SEARCH_START",
@@ -34,17 +34,17 @@ let u = {
             offset: d,
             limit: p,
             language_code: u,
-            with_counts: f
+            with_counts: h
           },
           oldFormErrors: true,
           rejectWithError: false
         }),
         i = t.body.guilds.map(o.Iv),
         a = t.body.total_count;
-      if (f) {
-        var h;
+      if (h) {
+        var f;
         let n = [];
-        null == (h = t.body.categories) || h.slice(0, 8).forEach(e => {
+        null == (f = t.body.categories) || f.slice(0, 8).forEach(e => {
           let {
             id: t,
             count: r
@@ -71,7 +71,7 @@ let u = {
         error: t,
         willRequestRetry: false,
         isRequestRetry: false
-      }), f && l.Z.dispatch({
+      }), h && l.Z.dispatch({
         type: "GLOBAL_DISCOVERY_SERVERS_SEARCH_COUNT_SUCCESS",
         query: e,
         categoryCounts: []

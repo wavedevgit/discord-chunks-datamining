@@ -178,7 +178,7 @@ function P(e) {
       b.default.track(O.rMx.CHANGE_LOG_CLOSED, {
         change_log_id: R,
         seconds_open: Math.round((Date.now() - e) / 1e3)
-      }), null != P && (0, h.Q3)(P, {
+      }), null != P && (0, f.Q3)(P, {
         dismissAction: E.L.DISMISS
       })
     }
@@ -199,7 +199,7 @@ function P(e) {
         variant: "display-md",
         className: a()(v.headerText, A),
         children: x
-      }), "video" === l.type ? (0, r.jsx)(f.Z, {
+      }), "video" === l.type ? (0, r.jsx)(h.Z, {
         className: a()(v.video, N),
         autoPlay: !H,
         loop: true,

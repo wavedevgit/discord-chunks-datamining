@@ -44,9 +44,9 @@ function _(e, t, n) {
 }
 
 function O() {
-  let e = Chunk430824.Z.getGuildsArray().filter(e => e.features.has(f.oNc.HUB)),
+  let e = Chunk430824.Z.getGuildsArray().filter(e => e.features.has(h.oNc.HUB)),
     t = e => {
-      u.default.track(f.rMx.ADD_FRIEND_OTHER_PLACES_HUB_CLICKED, {
+      u.default.track(h.rMx.ADD_FRIEND_OTHER_PLACES_HUB_CLICKED, {
         guild_id: e
       }), (0, s.X)(e)
     };

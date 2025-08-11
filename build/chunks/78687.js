@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 78687, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => f
 }), require("./388685.js"), require("./539854.js"), require("./35282.js");
 var Chunk392711 = require("./392711.js"),
   i = require.n(Chunk392711),
@@ -14,7 +14,7 @@ var Chunk392711 = require("./392711.js"),
   Chunk981631 = require("./981631.js");
 let p = "selectedChannelGuildFrecency";
 
-function f(e) {
+function h(e) {
   let {
     state: t
   } = l.ZP.PersistedStore.migrateAndReadStoreState("GIFFavoritesStore", [e => null == e ? {
@@ -35,10 +35,10 @@ function f(e) {
     }
   })
 }
-let h = [{
+let f = [{
   version: 2,
   run(e) {
-    let t = f(1);
+    let t = h(1);
     if (0 === t.length) returnfalse;
     for (let {
         url: n,
@@ -86,7 +86,7 @@ let h = [{
   version: 6,
   run(e) {
     null == e.favoriteGifs && (e.favoriteGifs = a.wK.create()), null == e.favoriteGifs.gifs && (e.favoriteGifs.gifs = {});
-    let t = f(1);
+    let t = h(1);
     if (0 === t.length) returnfalse;
     i()(e.favoriteGifs.gifs).values().sortBy("order").forEach((e, n) => e.order = t.length + 1 + n);
     let n = a.wK.toBinary(e.favoriteGifs).length,

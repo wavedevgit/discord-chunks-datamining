@@ -77,8 +77,8 @@ let y = Chunk442837.ZP.connectStores([Chunk55563.Z, Chunk594174.default, Chunk55
     sku: t
   } = e;
   return {
-    socialReasons: (0, g.Gg)(t.id, f.Z, d.default, c.Z, p.Z),
-    nonSocialReasons: (0, g.Ww)(t.id, f.Z, h.Z),
+    socialReasons: (0, g.Gg)(t.id, h.Z, d.default, c.Z, p.Z),
+    nonSocialReasons: (0, g.Ww)(t.id, h.Z, f.Z),
     hidePersonalInformation: u.Z.hidePersonalInformation
   }
 })(E)

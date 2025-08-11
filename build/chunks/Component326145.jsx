@@ -35,7 +35,7 @@ function y(e) {
       guildId: t,
       returnChannelId: n
     }))
-  }, [t, n]), C = (0, o.e7)([f.Z], () => f.Z.getGuild(t)), S = i.useMemo(() => null == C ? null : h.ZP.getGuildSplashURL({
+  }, [t, n]), C = (0, o.e7)([h.Z], () => h.Z.getGuild(t)), S = i.useMemo(() => null == C ? null : f.ZP.getGuildSplashURL({
     id: C.id,
     splash: C.splash
   }), [C]), N = (0, d.N)(S);

@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 403763, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => f
 }), require("./388685.js");
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
@@ -15,15 +15,15 @@ var Chunk392711 = require("./392711.js"),
 let d = new Set(["DisplayPort"]),
   p = "connected-device-modal";
 
-function f() {
+function h() {
   let e;
   if ((0, Chunk481060.nfh)(p)) return;
   let t = Chunk131951.Z.getInputDeviceId(),
     i = Chunk131951.Z.getOutputDeviceId();
   if (Chunk34828.Z.getState().neverShowModal || l().isEmpty(Chunk34828.Z.lastDeviceConnected)) return;
-  let f = (0, Chunk34828.X)(Chunk131951.Z.getInputDevices()[exports]),
-    h = (0, Chunk34828.X)(Chunk131951.Z.getOutputDevices()[Chunk392711]);
-  if (l().some(Chunk34828.Z.lastDeviceConnected, e => d.has(e.displayName) || e.displayName === f || e.displayName === h)) return;
+  let h = (0, Chunk34828.X)(Chunk131951.Z.getInputDevices()[exports]),
+    f = (0, Chunk34828.X)(Chunk131951.Z.getOutputDevices()[Chunk392711]);
+  if (l().some(Chunk34828.Z.lastDeviceConnected, e => d.has(e.displayName) || e.displayName === h || e.displayName === f)) return;
   let g = l().some(Chunk34828.Z.lastDeviceConnected, e => o.Z.isCertified(c.Z.inputDevices[e.displayName]) || o.Z.isCertified(c.Z.outputDevices[e.displayName]));
   if ((exports === Chunk65154.w5 && Chunk34828.Z.lastInputSystemDevice.justChanged || Chunk392711 === Chunk65154.w5 && Chunk34828.Z.lastOutputSystemDevice.justChanged) && !g) return;
   let m = l().first(Object.keys(Chunk34828.Z.lastDeviceConnected)),
@@ -48,8 +48,8 @@ function f() {
     modalKey: p
   })))
 }
-let h = {
+let f = {
   init() {
-    Chunk34828.Z.addChangeListener(f)
+    Chunk34828.Z.addChangeListener(h)
   }
 }

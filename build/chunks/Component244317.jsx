@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 244317, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => h
 }), require("./35282.js"), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -14,10 +14,10 @@ var Chunk255367 = require("./255367.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk278812 = require("./278812.js");
 
-function f(e) {
+function h(e) {
   let {
     applicationId: t
-  } = e.match.params, [f, h] = i.useState(false), g = i.useRef(false), [m, b] = i.useState(null), _ = !o.isPlatformEmbedded && !l.tq && !f;
+  } = e.match.params, [h, f] = i.useState(false), g = i.useRef(false), [m, b] = i.useState(null), _ = !o.isPlatformEmbedded && !l.tq && !h;
   return (i.useEffect(() => {
     _ && true !== g.current && (Promise.resolve().then(n.bind(n, 536285)).then(e => {
       let {
@@ -44,7 +44,7 @@ function f(e) {
     }), (0, r.jsx)(a.zxk, {
       variant: "primary",
       text: d.intl.string(d.t.fIv16O),
-      onClick: () => h(true)
+      onClick: () => f(true)
     })]
   }) : (0, r.jsxs)("div", {
     className: p.container,

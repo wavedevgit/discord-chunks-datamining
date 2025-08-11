@@ -73,7 +73,7 @@ let Z = {
           guild_id: t
         }
       } = e;
-      if (null == h.Z.getGuild(t)) throw new O.Z({
+      if (null == f.Z.getGuild(t)) throw new O.Z({
         errorCode: T.lTL.INVALID_GUILD
       }, "Invalid guild id: ".concat(t));
       return e => {
@@ -81,7 +81,7 @@ let Z = {
         let {
           prevState: r,
           dispatch: l
-        } = e, a = h.Z.getGuild(t);
+        } = e, a = f.Z.getGuild(t);
         if (null == a) return;
         let o = {
           guild: {
@@ -344,7 +344,7 @@ let Z = {
           prevState: n,
           dispatch: r
         } = e, i = {
-          currentGuildMember: f.ZP.getSelfMember(t)
+          currentGuildMember: h.ZP.getSelfMember(t)
         };
         return null == i.currentGuildMember || null != n && (0, a.Z)(i, n) || r((0, C.Z)(i.currentGuildMember)), i
       }
@@ -371,14 +371,14 @@ let Z = {
       let {
         prevState: n,
         dispatch: r
-      } = e, l = d.Z.getStreamerActiveStreamMetadata(), a = (null == l ? true : l.pid) != null ? c.ZP.getGameForPID(l.pid) : null, o = (null == a ? true : a.id) != null ? s.Z.getApplication(a.id) : null, u = null != o ? (0, I.Z)(o) : null, p = null == l ? true : l.sourceName, f = {
+      } = e, l = d.Z.getStreamerActiveStreamMetadata(), a = (null == l ? true : l.pid) != null ? c.ZP.getGameForPID(l.pid) : null, o = (null == a ? true : a.id) != null ? s.Z.getApplication(a.id) : null, u = null != o ? (0, I.Z)(o) : null, p = null == l ? true : l.sourceName, h = {
         active: null != l,
         pid: null != (t = null == l ? true : l.pid) ? t : null,
         application: null != u ? {
           name: p
         } : null
       };
-      return i().isEqual(f, n) || r(f), f
+      return i().isEqual(h, n) || r(h), h
     }
   },
   [Chunk981631.zMe.VIDEO_STATE_UPDATE]: {

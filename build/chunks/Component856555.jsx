@@ -52,11 +52,11 @@ function m(e, t) {
   return i
 }
 let b = e => (0, r.jsx)(d.M4, g({
-    titleText: f.intl.string(f.t["duN28/"]),
-    descriptionText: f.intl.string(f.t["Veu++f"]),
-    ctaText: f.intl.string(f.t.F4SoLC),
+    titleText: h.intl.string(h.t["duN28/"]),
+    descriptionText: h.intl.string(h.t["Veu++f"]),
+    ctaText: h.intl.string(h.t.F4SoLC),
     customIconSrcs: {
-      static: h.Z
+      static: f.Z
     }
   }, e)),
   _ = () => {
@@ -101,12 +101,12 @@ let b = e => (0, r.jsx)(d.M4, g({
       null != t && null != t.current && t.current.scrollToTop({
         animate: true
       })
-    }, [t]), f = (0, a.Nj)(l.z.VIRTUAL_CURRENCY_DISCOVERY_ONBOARDING_COACHMARK), {
-      shouldShow: h,
+    }, [t]), h = (0, a.Nj)(l.z.VIRTUAL_CURRENCY_DISCOVERY_ONBOARDING_COACHMARK), {
+      shouldShow: f,
       closeCoachmarkIfOpen: g
     } = (0, d.M)({
       onboardingCoachmarkType: "shop",
-      prevCoachmarksDismissed: f,
+      prevCoachmarksDismissed: h,
       onShowCoachmarkHandler: u
     }), m = i.useCallback(() => g("CTA_CLICK"), [g]), b = i.useCallback(() => {
       (0, s.Y)({
@@ -116,7 +116,7 @@ let b = e => (0, r.jsx)(d.M4, g({
       }), g()
     }, [g]);
     return n ? {
-      shouldShow: h,
+      shouldShow: f,
       closeCoachmarkIfOpen: g,
       onHandleScroll: o,
       positionControlRef: r,

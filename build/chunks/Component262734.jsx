@@ -34,12 +34,12 @@ function I(e) {
     width: 0,
     height: 0
   }), T = i.useCallback(() => {
-    (0, h.eU)({
+    (0, f.eU)({
       applicationId: t.applicationId,
       layoutMode: b.U.PIP
     })
   }, [t.applicationId]), P = i.useCallback(() => {
-    (0, h.xT)({
+    (0, f.xT)({
       applicationId: t.applicationId
     })
   }, [t.applicationId]);
@@ -55,7 +55,7 @@ function I(e) {
     return e.observe(C.current), () => e.disconnect()
   }, []), i.useEffect(() => {
     let e = e => {
-      null == I.current || I.current.contains(e.target) || l || (0, h.eU)({
+      null == I.current || I.current.contains(e.target) || l || (0, f.eU)({
         applicationId: t.applicationId,
         layoutMode: b.U.PIP
       })
@@ -92,7 +92,7 @@ function I(e) {
             onClick: T,
             iconComponent: s.dOc,
             themeable: true
-          }), (0, r.jsx)(f.Z, {
+          }), (0, r.jsx)(h.Z, {
             appContext: _.IlC.APP,
             applicationId: n.id,
             shouldPrioritizeGroupPlusIcon: true,

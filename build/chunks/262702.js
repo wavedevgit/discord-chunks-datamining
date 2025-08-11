@@ -14,7 +14,7 @@ var Chunk570140 = require("./570140.js"),
   Chunk131951 = require("./131951.js"),
   Chunk590415 = require("./590415.js");
 
-function f(e, t, n) {
+function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -22,7 +22,7 @@ function f(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class h extends Chunk317770.Z {
+class f extends Chunk317770.Z {
   _initialize() {
     Chunk570140.Z.subscribe("VOICE_STATE_UPDATES", this.handleVoiceStateUpdates)
   }
@@ -30,7 +30,7 @@ class h extends Chunk317770.Z {
     Chunk570140.Z.unsubscribe("VOICE_STATE_UPDATES", this.handleVoiceStateUpdates)
   }
   constructor(...e) {
-    super(...e), f(this, "handleVoiceStateUpdates", e => {
+    super(...e), h(this, "handleVoiceStateUpdates", e => {
       let {
         voiceStates: t
       } = e, n = c.default.getId();
@@ -38,12 +38,12 @@ class h extends Chunk317770.Z {
         var t;
         e.userId === n && (null == (t = u.Z.getChannel(e.channelId)) ? true : t.isGuildStageVoice()) && (0, p.gf)(e) !== p.xO.ON_STAGE && (this.handleStopStream(e), this.handleStopUserVideo())
       })
-    }), f(this, "handleStopStream", e => {
+    }), h(this, "handleStopStream", e => {
       let t = s.Z.getActiveStreamForUser(e.userId, e.guildId);
       null != t && (0, l.g)((0, o.V9)(t), false)
-    }), f(this, "handleStopUserVideo", () => {
+    }), h(this, "handleStopUserVideo", () => {
       d.Z.isVideoEnabled() && i.Z.setVideoEnabled(false)
     })
   }
 }
-let g = new h
+let g = new f

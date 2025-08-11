@@ -17,7 +17,7 @@ var Chunk907862 = require("./907862.js"),
   Chunk712793 = require("./712793.js"),
   Chunk295234 = require("./295234.js");
 
-function h(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -46,7 +46,7 @@ let g = e => {
       body: u.intl.string(u.t["JICo+/"]),
       targetElementRef: t,
       asset: (0, r.jsx)("img", {
-        src: f.Z,
+        src: h.Z,
         alt: ""
       }),
       size: "md",
@@ -67,7 +67,7 @@ let g = e => {
             let {
               default: e
             } = await Promise.all([n.e("83667"), n.e("86346")]).then(n.bind(n, 656139));
-            return t => (0, r.jsx)(e, h({}, t))
+            return t => (0, r.jsx)(e, f({}, t))
           })
         }
       }],
@@ -106,7 +106,7 @@ let g = e => {
       allowOverflow: true,
       children: e => {
         var n, i;
-        return (0, r.jsx)("div", (n = h({}, e), i = i = {
+        return (0, r.jsx)("div", (n = f({}, e), i = i = {
           children: t
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
           var n = Object.keys(e);

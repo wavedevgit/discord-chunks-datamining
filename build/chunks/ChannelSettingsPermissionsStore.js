@@ -118,7 +118,7 @@ let Z = new A(Chunk570140.Z, {
     let {
       section: t
     } = e;
-    if (null != C || t !== h.CoT.PERMISSIONS) returnfalse;
+    if (null != C || t !== f.CoT.PERMISSIONS) returnfalse;
     x()
   },
   CHANNEL_SETTINGS_PERMISSIONS_INIT: x,
@@ -134,7 +134,7 @@ let Z = new A(Chunk570140.Z, {
       deny: i
     }), v = _(b({}, v), {
       [t]: l
-    }), O.add(t), E = h.QZA.OPEN, y = !o().isEqual(v, I), r = d.o4(C, S)
+    }), O.add(t), E = f.QZA.OPEN, y = !o().isEqual(v, I), r = d.o4(C, S)
   },
   CHANNEL_SETTINGS_PERMISSIONS_SELECT_PERMISSION: function(e) {
     let {
@@ -159,7 +159,7 @@ let Z = new A(Chunk570140.Z, {
     if (null == C) returnfalse;
     let n = false;
     for (let e of t) false !== function(e) {
-      if (null == C || C.id !== e || null == (C = f.Z.getChannel(e))) returnfalse;
+      if (null == C || C.id !== e || null == (C = h.Z.getChannel(e))) returnfalse;
       S = p.Z.getCategory();
       let t = C.getGuildId();
       if (null == t) returnfalse;
@@ -178,7 +178,7 @@ let Z = new A(Chunk570140.Z, {
     let {
       silent: t
     } = e;
-    t ? E = h.QZA.OPEN : (E = h.QZA.CLOSED, x())
+    t ? E = f.QZA.OPEN : (E = f.QZA.CLOSED, x())
   },
   CHANNEL_SETTINGS_PERMISSIONS_SET_ADVANCED_MODE: function(e) {
     let {

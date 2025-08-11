@@ -102,7 +102,7 @@ async function N(e, t, n) {
     [o, {
       disclosures: s,
       allAcked: c
-    }] = await Promise.all([(0, f.Ww)({
+    }] = await Promise.all([(0, h.Ww)({
       clientId: u,
       scopes: M,
       responseType: y,
@@ -121,8 +121,8 @@ async function N(e, t, n) {
       errorCode: v.lTL.OAUTH2_ERROR
     }, "OAuth2 Authorization Error: ".concat((null == e ? true : e.message) || "Unknown Error"))
   }
-  if (Z === h.s.NONE && null != o && o.authorized && c) try {
-    return (await (0, f.Iq)({
+  if (Z === f.s.NONE && null != o && o.authorized && c) try {
+    return (await (0, h.Iq)({
       authorize: true,
       clientId: u,
       scopes: M,

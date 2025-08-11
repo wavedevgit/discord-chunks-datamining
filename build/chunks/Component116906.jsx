@@ -53,11 +53,11 @@ function I(e) {
   }), k = (0, l.e7)([a.Z], () => a.Z.isFetchingUserOutbox(t.id)), D = t.id === n.id, G = (0, l.e7)([s.Z, c.Z], () => {
     let e = D ? s.Z.getStatus() : c.Z.getStatus(t.id);
     return e === i.Skl.OFFLINE || e === i.Skl.INVISIBLE
-  }), R = S.length > 0 || null != w, M = N && null == w && null == L && null != C, B = !G && (R || M), U = A.length > 0;
-  return B || U || !k ? (0, r.jsxs)(i.zJl, {
+  }), B = S.length > 0 || null != w, M = N && null == w && null == L && null != C, R = !G && (B || M), U = A.length > 0;
+  return R || U || !k ? (0, r.jsxs)(i.zJl, {
     className: O.scroller,
     fade: true,
-    children: [B ? (0, r.jsx)(p.Z, {
+    children: [R ? (0, r.jsx)(p.Z, {
       "aria-label": v.intl.string(v.t.J6STd3),
       children: (0, r.jsxs)("ul", {
         className: O.activityList,

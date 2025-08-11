@@ -35,7 +35,7 @@ function T(e) {
     guild: t,
     onClick: l,
     onView: o
-  } = e, [h, g] = i.useState(false), [O, T] = i.useState(false), [P, j] = i.useState(false), x = i.useRef(null), A = i.useCallback(async () => {
+  } = e, [f, g] = i.useState(false), [O, T] = i.useState(false), [P, j] = i.useState(false), x = i.useRef(null), A = i.useCallback(async () => {
     T(true);
     try {
       await l(t.id)
@@ -43,8 +43,8 @@ function T(e) {
       T(false)
     }
   }, [t.id, l]), Z = i.useCallback(e => {
-    e && !h && (g(true), null == o || o(t.id))
-  }, [t.id, h, o]), w = i.useCallback(e => {
+    e && !f && (g(true), null == o || o(t.id))
+  }, [t.id, f, o]), w = i.useCallback(e => {
     (0, u.jW)(e, async () => {
       let {
         default: e
@@ -112,9 +112,9 @@ function T(e) {
     }), (0, r.jsx)(s.$, {
       innerRef: x,
       onChange: Z,
-      active: !h,
+      active: !f,
       threshold: .55,
-      children: (0, r.jsxs)(f.Z, {
+      children: (0, r.jsxs)(h.Z, {
         ref: x,
         className: I.card,
         onClick: A,
@@ -231,7 +231,7 @@ function j(e) {
   } = e, o = i.useRef(null == t), s = i.useCallback((e, t, n, i) => null == t.guildId ? (0, r.jsx)(g.Z, {
     state: n,
     cleanUp: i,
-    children: (0, r.jsx)(h.Z, {
+    children: (0, r.jsx)(f.Z, {
       className: I.placeholder
     })
   }, e) : (0, r.jsx)(g.Z, {

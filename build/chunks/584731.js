@@ -19,7 +19,7 @@ function u(e, t, n) {
 }
 let d = false / 0,
   p = new Chunk710845.Z("MessagePreviewStore");
-class f extends Chunk442837.ZP.Store {
+class h extends Chunk442837.ZP.Store {
   isLatest(e, t) {
     var n;
     let r = this.guilds.get(null != e ? e : null);
@@ -122,4 +122,4 @@ class f extends Chunk442837.ZP.Store {
     }), u(this, "guilds", new Map), u(this, "generation", 0)
   }
 }
-new f
+new h

@@ -13,8 +13,9 @@ function a(e) {
   var {
     user: t,
     widget: n,
-    isGameFetching: a
-  } = e, c = function(e, t) {
+    isGameFetching: a,
+    showHeaderActionButtons: c
+  } = e, s = function(e, t) {
     if (null == e) return {};
     var n, r, l = function(e, t) {
       if (null == e) return {};
@@ -28,12 +29,13 @@ function a(e) {
       for (r = 0; r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n])
     }
     return l
-  }(e, ["user", "widget", "isGameFetching"]);
-  let s = n.games.length >= l.k.played_games;
+  }(e, ["user", "widget", "isGameFetching", "showHeaderActionButtons"]);
+  let d = n.games.length >= l.k.played_games;
   return (0, r.jsx)(i.Z, {
     userId: t.id,
     widgetType: n.type,
-    reachedMaxGamesLimit: s,
+    reachedMaxGamesLimit: d,
+    showHeaderActionButtons: c,
     children: (0, r.jsx)(o.Z, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
@@ -55,6 +57,6 @@ function a(e) {
       games: n.games,
       userId: t.id,
       isGameFetching: a
-    }, c))
+    }, s))
   })
 }

@@ -77,11 +77,11 @@ class m extends Chunk73800.PureComponent {
       clicked: false
     }), g(this, "handleInstallDownload", () => {
       d.Z.isConnected() ? o.Z.show({
-        title: f.intl.string(f.t.tiu1l5),
-        body: f.intl.string(f.t["zK+lqa"]),
+        title: h.intl.string(h.t.tiu1l5),
+        body: h.intl.string(h.t["zK+lqa"]),
         onConfirm: this.doUpdate,
-        cancelText: f.intl.string(f.t["ETE/oK"]),
-        confirmText: f.intl.string(f.t["QDX/qq"]),
+        cancelText: h.intl.string(h.t["ETE/oK"]),
+        confirmText: h.intl.string(h.t["QDX/qq"]),
         confirmVariant: "critical-primary"
       }) : this.doUpdate()
     }), g(this, "doUpdate", () => {

@@ -201,7 +201,7 @@ function ee(e) {
                       user: n,
                       displayProfile: eI,
                       themeType: X.lY.MODAL_V2
-                    }), (0, r.jsx)(R.Z, {
+                    }), (0, r.jsx)(B.Z, {
                       userId: n.id,
                       onClose: eu,
                       className: $.toast
@@ -283,12 +283,12 @@ function ee(e) {
                     }), n.id === ee.id && (0, r.jsx)(L.Z, {
                       isPremiumUser: (0, I.I5)(ee),
                       onInteraction: eu
-                    }), (0, r.jsx)(B.Z, {
+                    }), (0, r.jsx)(R.Z, {
                       user: n,
                       className: $.profileBanner
                     }), (0, r.jsx)("div", {
                       className: $.profileButtons,
-                      children: (0, r.jsx)(W.Z, {
+                      children: (0, r.jsx)(H.Z, {
                         user: n,
                         currentUser: ee,
                         guildId: et,
@@ -323,7 +323,7 @@ function ee(e) {
                     }), ek.length > 0 && (0, r.jsx)(z.Z, {
                       heading: Q.intl.string(Q.t["3fe7U1"]),
                       scrollIntoView: ea === X.Tb.CONNECTIONS,
-                      children: (0, r.jsx)(H.Z, {
+                      children: (0, r.jsx)(W.Z, {
                         connections: ek,
                         userId: n.id,
                         className: $.profileAppConnections

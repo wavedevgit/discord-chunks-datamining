@@ -35,7 +35,7 @@ let P = (0, Chunk73800.memo)(function(e) {
   } = e, [Z, w] = (0, i.useState)(false), [L, R] = (0, i.useState)(24), [D, k] = (0, i.useState)(false), M = (0, i.useRef)(null), U = (0, i.useRef)(null), G = (0, i.useRef)(null), V = (0, c.e7)([m.default], () => m.default.getCurrentUser()), {
     ref: H,
     height: B = 0
-  } = (0, p.ZP)(), F = (0, f.ZP)(), z = (0, O.B6)(null == (t = A.userStatus) ? true : t.claimedAt, {
+  } = (0, p.ZP)(), F = (0, h.ZP)(), z = (0, O.B6)(null == (t = A.userStatus) ? true : t.claimedAt, {
     month: "numeric",
     day: "numeric"
   }), W = null != (j = null == (n = A.userStatus) ? true : n.claimedTier) ? j : 0, Y = A.config.rewards[W], K = (null == Y ? true : Y.type) === s.w.FRACTIONAL_PREMIUM, q = (null == Y ? true : Y.type) === s.w.COLLECTIBLE, X = (null == Y ? true : Y.type) === s.w.VIRTUAL_CURRENCY, Q = null == Y || null == (P = Y.collectibleProduct) || null == (l = P.items) ? true : l[0], J = (null == Q ? true : Q.type) === o.Z.AVATAR_DECORATION ? Q : null;
@@ -120,7 +120,7 @@ let P = (0, Chunk73800.memo)(function(e) {
         style: {
           top: L
         },
-        children: (0, r.jsx)(h.Z, {
+        children: (0, r.jsx)(f.Z, {
           avatarDecorationOverride: J,
           user: V,
           guildId: null

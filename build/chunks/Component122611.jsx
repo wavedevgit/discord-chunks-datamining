@@ -36,8 +36,8 @@ function P(e) {
   var t;
   let {
     guild: n
-  } = e, [p, h] = i.useState(null != (t = o.K.get(C.Iv)) ? t : 0), g = e => {
-    o.K.set(C.Iv, e), h(e)
+  } = e, [p, f] = i.useState(null != (t = o.K.get(C.Iv)) ? t : 0), g = e => {
+    o.K.set(C.Iv, e), f(e)
   }, m = (0, l.Wu)(C.HG, () => C.XN.filter(e => {
     let {
       dismissibleContentType: t,
@@ -57,7 +57,7 @@ function P(e) {
       }, o = (() => {
         switch (t) {
           case a.z.CHANNEL_NOTICE_HUBLINK:
-            return (0, r.jsx)(f.Z, {
+            return (0, r.jsx)(h.Z, {
               guild: n,
               markAsDismissed: l
             });
@@ -127,7 +127,7 @@ let j = e => {
         guild: t
       });
     case I.R.HUB_STUDY_ROOM:
-      return (0, r.jsx)(h.Z, {
+      return (0, r.jsx)(f.Z, {
         guild: t
       })
   }

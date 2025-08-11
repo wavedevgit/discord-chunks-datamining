@@ -21,13 +21,13 @@ function p(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let f = new Set,
-  h = new Set,
+let h = new Set,
+  f = new Set,
   g = null;
 
 function m() {
-  for (let e of f) Chunk846027.Z.setDisableLocalVideo(module, Chunk981631.ZUi.MANUAL_ENABLED, Chunk65154.Yn.DEFAULT, false);
-  h.clear(), f.clear()
+  for (let e of h) Chunk846027.Z.setDisableLocalVideo(module, Chunk981631.ZUi.MANUAL_ENABLED, Chunk65154.Yn.DEFAULT, false);
+  f.clear(), h.clear()
 }
 class b extends Chunk317770.Z {
   _initialize() {
@@ -47,15 +47,15 @@ class b extends Chunk317770.Z {
       p = c.Z.isVisible(),
       g = o.Z.getWindowVisible(u.KJ3.CHANNEL_CALL_POPOUT),
       m = s.Z.isLocalVideoDisabled(t, n),
-      b = h.has(t);
-    !l || p || g || m || b || (f.add(t), i.Z.setDisableLocalVideo(t, u.ZUi.DISABLED, n, false))
+      b = f.has(t);
+    !l || p || g || m || b || (h.add(t), i.Z.setDisableLocalVideo(t, u.ZUi.DISABLED, n, false))
   }
   handleManualLocalVideoToggle(e) {
     let {
       userId: t,
       persist: n
     } = e;
-    n && (h.add(t), f.delete(t))
+    n && (f.add(t), h.delete(t))
   }
   constructor(...e) {
     super(...e), p(this, "handleWindowVisibilityChange", e => {

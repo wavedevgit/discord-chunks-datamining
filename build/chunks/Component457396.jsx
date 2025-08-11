@@ -107,11 +107,11 @@ let V = e => {
       {
         fractionalState: ed,
         startsAt: ep,
-        endsAt: ef
+        endsAt: eh
       } = (0, d.Z)({
         forceFetch: true
       }),
-      [eh, eg] = (0, h.bf)(ed !== k.a$.NONE ? o.z.FRACTIONAL_NITRO_DURATION_LEFT_PILL : null, {
+      [ef, eg] = (0, f.bf)(ed !== k.a$.NONE ? o.z.FRACTIONAL_NITRO_DURATION_LEFT_PILL : null, {
         showAfterTimestamp: ep.valueOf(),
         cooldownDurationMs: 0
       }),
@@ -121,14 +121,14 @@ let V = e => {
       eb = (null == en ? true : en.trial_id) === k.a7,
       e_ = [];
     (0, p.Kl)() && (el && e_.push(o.z.BOGO_2025_NITRO_TAB_BADGE), em && e_.push(o.z.VOICE_FILTER_EARLY_ACCESS_PREMIUM_TAB_BADGE), ei && e_.push(o.z.Q2_2025_MARKETING_MOMENT_NITRO_TAB_BADGE_V2));
-    let [eO, eE] = (0, h.US)(e_, true, true);
+    let [eO, eE] = (0, f.US)(e_, true, true);
     if (i.useEffect(() => {
         true === F && null != eO && eE(U.L.AUTO_DISMISS)
       }, [eE, F, eO]), !V({
         selected: F
       })) return null;
     let ey = () => {
-      eh === o.z.FRACTIONAL_NITRO_DURATION_LEFT_PILL && eg(U.L.TAKE_ACTION), b.default.track(M.rMx.NITRO_TAB_VISITED, {
+      ef === o.z.FRACTIONAL_NITRO_DURATION_LEFT_PILL && eg(U.L.TAKE_ACTION), b.default.track(M.rMx.NITRO_TAB_VISITED, {
         badge_decorator: O,
         has_premium: Q
       }), null != eO && eE(U.L.USER_DISMISS)
@@ -136,7 +136,7 @@ let V = e => {
     if (ed === k.a$.NONE || ei || (O = 7, n = (0, r.jsx)(S.Z, {
         className: "",
         startsAt: ep,
-        endsAt: ef,
+        endsAt: eh,
         messageStyle: u.aj.SHORT_TIME,
         upperCase: true
       })), el) n = (0, r.jsx)(P.Z, {}), O = 0;
@@ -152,7 +152,7 @@ let V = e => {
       badgeCopy: G.intl.string(G.t.y2b7CA),
       offerExpiresAt: null
     }), O = 2) : ei ? (n = (0, r.jsx)(w.S, {
-      expiresAt: ef
+      expiresAt: eh
     }), O = 4) : null != eo ? (n = (0, r.jsx)(D.Z, {
       copy: eo,
       showStars: false
@@ -162,7 +162,7 @@ let V = e => {
       includesAmountOff: false
     }), O = 3) : null == en || eb ? eu && (n = (0, r.jsx)(Z.l, {
       isSelected: F,
-      onSelect: () => (0, f.Q3)(o.z.REFERRAL_PROGRAM_PREMIUM_TAB_BADGE, {
+      onSelect: () => (0, h.Q3)(o.z.REFERRAL_PROGRAM_PREMIUM_TAB_BADGE, {
         dismissAction: U.L.TAKE_ACTION
       })
     }), O = 6) : (n = (0, r.jsx)(A.$H, {

@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 960275, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => f
 }), require("./388685.js");
 var Chunk570140 = require("./570140.js"),
   Chunk317770 = require("./317770.js"),
@@ -21,7 +21,7 @@ function d(e, t, n) {
   }) : e[t] = n, e
 }
 let p = new Set;
-class f extends Chunk317770.Z {
+class h extends Chunk317770.Z {
   _initialize() {
     Chunk570140.Z.subscribe("MESSAGE_CREATE", this.handleMessageCreate), Chunk570140.Z.subscribe("POGGERMODE_SETTINGS_UPDATE", this.handleSettingsUpdate)
   }
@@ -45,12 +45,12 @@ class f extends Chunk317770.Z {
         }
       } = e;
       if (!c.Z.isEnabled()) returnfalse;
-      let f = l.default.getId();
-      if ((null == d ? true : d.find(e => e.id === f)) != null ? (0, a.T)(s.hn.PING_ME) : (null != (t = null == d ? true : d.length) ? t : 0) > 0 && (null == r ? true : r.id) === f && (0, a.T)(s.hn.PING_SOMEONE), !(0, u.wU)(null == r ? true : r.id, f, i, p)) returnfalse;
-      let h = u.ZP.getMostRecentMessageCombo(n),
+      let h = l.default.getId();
+      if ((null == d ? true : d.find(e => e.id === h)) != null ? (0, a.T)(s.hn.PING_ME) : (null != (t = null == d ? true : d.length) ? t : 0) > 0 && (null == r ? true : r.id) === h && (0, a.T)(s.hn.PING_SOMEONE), !(0, u.wU)(null == r ? true : r.id, h, i, p)) returnfalse;
+      let f = u.ZP.getMostRecentMessageCombo(n),
         {
           combo: g
-        } = null != h ? h : {};
+        } = null != f ? f : {};
       if (null == g) returnfalse;
       Object.values(s.hn).forEach(e => {
         if (null != o.Z.getUnlocked(e)) return;
@@ -61,4 +61,4 @@ class f extends Chunk317770.Z {
     })
   }
 }
-let h = new f
+let f = new h

@@ -21,14 +21,14 @@ function o(e) {
   let p = null != (0, a.jA)({
       applicationId: d.id
     }) ? i.u1M : i.z1l,
-    f = false;
+    h = false;
 
-  function h(e) {
-    u(e, f)
+  function f(e) {
+    u(e, h)
   }
 
   function g() {
-    f = true
+    h = true
   }(0, i.ZDy)(async () => {
     let {
       default: e
@@ -56,13 +56,13 @@ function o(e) {
       linkId: s,
       message: c,
       onCopyLink: g,
-      onShare: h
+      onShare: f
     }, n))
   }, {
     modalKey: "activity-share-moment-modal",
     contextKey: p,
     onCloseCallback: () => {
-      u(false, f)
+      u(false, h)
     }
   })
 }

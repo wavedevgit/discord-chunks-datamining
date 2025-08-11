@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 738762, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => h
 });
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -32,21 +32,21 @@ function p(e) {
   return e
 }
 
-function f(e) {
+function h(e) {
   let t = arguments.length > 1 && true !== arguments[1] && arguments[1],
     {
       priorityMembers: n,
-      partiedMembers: f
+      partiedMembers: h
     } = e,
-    h = i.useContext(c.AnalyticsContext),
+    f = i.useContext(c.AnalyticsContext),
     g = n.map(e => {
       let {
         user: t
       } = e;
       return t.id
     }),
-    m = 1 === f.length && 1 === n.length,
-    b = n.length - f.length > 0;
+    m = 1 === h.length && 1 === n.length,
+    b = n.length - h.length > 0;
   return (m || t) && !b && 0 !== g.length ? (0, r.jsx)(l.sNh, {
     id: "message",
     action: function() {
@@ -55,7 +55,7 @@ function f(e) {
       }).then(t => {
         var n, r;
         return o.ZP.trackWithMetadata(u.rMx.ACTIVITY_FEED_DM_VISITED, p({
-          source: (n = p({}, h.location), r = r = {
+          source: (n = p({}, f.location), r = r = {
             object: u.qAy.LIST_ITEM
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
             var n = Object.keys(e);

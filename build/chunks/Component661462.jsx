@@ -41,7 +41,7 @@ function m(e) {
   }) : l === u.oh.MUTUAL_GUILDS ? (0, r.jsx)(s.Z, {
     user: t,
     onClose: p
-  }) : l === u.oh.WIDGETS ? (0, r.jsx)(d.Z, {
+  }) : l === u.oh.WIDGETS ? (0, r.jsx)(d.C, {
     user: t,
     guildId: f,
     channelId: m

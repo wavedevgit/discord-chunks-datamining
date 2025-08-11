@@ -116,7 +116,7 @@ let v = {
         }
       } = e;
       if (!r) return o.default.selectVoiceChannel(null), null;
-      let _ = f.Z.getVoiceChannelId();
+      let _ = h.Z.getVoiceChannelId();
       if (null != _ && _ !== r && false === l) throw new m.Z({
         errorCode: y.lTL.SELECT_VOICE_FORCE_REQUIRED
       }, "User is already joined to a voice channel.");
@@ -135,7 +135,7 @@ let v = {
       }).then(e => {
         let [t, n] = e;
         if (n.guild_id) {
-          if ((0, g.rY)(t, h.Z, d.Z)) throw new m.Z({
+          if ((0, g.rY)(t, f.Z, d.Z)) throw new m.Z({
             errorCode: y.lTL.INVALID_CHANNEL
           }, "Channel is full");
           if (!p.Z.can(y.Plq.CONNECT, t)) throw new m.Z({
@@ -153,7 +153,7 @@ let v = {
     handler(e) {
       let {
         socket: t
-      } = e, n = f.Z.getVoiceChannelId(), r = null != n ? u.Z.getChannel(n) : null;
+      } = e, n = h.Z.getVoiceChannelId(), r = null != n ? u.Z.getChannel(n) : null;
       return null != r ? (0, b.T5)(r, (0, b.zM)(r, t.application.id, t.authorization.scopes)) : null
     }
   },

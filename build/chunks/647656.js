@@ -73,10 +73,10 @@ let _ = ["349134787773988865"],
           },
           isSocketConnected: g
         } = e;
-        if (![m.He.IPC, m.He.WEBSOCKET, m.He.POST_MESSAGE].includes(r.transport)) throw new h.Z({
+        if (![m.He.IPC, m.He.WEBSOCKET, m.He.POST_MESSAGE].includes(r.transport)) throw new f.Z({
           errorCode: b.lTL.INVALID_COMMAND
         }, 'command not available from "'.concat(r.transport, '" transport'));
-        if (null == l && m.He.IPC === r.transport) throw new h.Z({
+        if (null == l && m.He.IPC === r.transport) throw new f.Z({
           errorCode: b.lTL.INVALID_COMMAND
         }, "nonzero pid required");
         if (null == a) return o.Z.dispatch({
@@ -106,18 +106,18 @@ let _ = ["349134787773988865"],
         } = a;
         if (null == x && (a.type = b.IIU.PLAYING), null != T) {
           let e = i().values(T).filter(e => !!e);
-          if (null != N && i().intersection(e, [N.id]).length > 0 && !_.includes(r.application.id)) throw new h.Z({
+          if (null != N && i().intersection(e, [N.id]).length > 0 && !_.includes(r.application.id)) throw new f.Z({
             errorCode: b.lTL.INVALID_ACTIVITY_SECRET
           }, "secrets cannot match the party id");
-          if (i().uniq(e).length < e.length) throw new h.Z({
+          if (i().uniq(e).length < e.length) throw new f.Z({
             errorCode: b.lTL.INVALID_ACTIVITY_SECRET
           }, "secrets must be unique");
-          if (null != j) throw new h.Z({
+          if (null != j) throw new f.Z({
             errorCode: b.lTL.INVALID_ACTIVITY_SECRET
           }, "secrets cannot currently be sent with buttons")
         }
         if (null != j && (O.button_urls = j.map(e => e.url), a.buttons = j.map(e => e.label)), a.metadata = O, null != P)
-          for (let e of Object.keys(P)) Date.now().toString().length - P[e].toString().length > 2 && (P[e] = Math.floor(P[e] * f.Z.Millis.SECOND));
+          for (let e of Object.keys(P)) Date.now().toString().length - P[e].toString().length > 2 && (P[e] = Math.floor(P[e] * h.Z.Millis.SECOND));
         if (null == S) n = Promise.resolve([]);
         else {
           if (null == r.application || null == r.application.id) throw Error();
@@ -135,8 +135,8 @@ let _ = ["349134787773988865"],
           });
           let {
             secrets: p,
-            party: f
-          } = a, h = {
+            party: h
+          } = a, f = {
             application_id: r.application.id,
             type: a.type,
             name: a.name,
@@ -145,7 +145,7 @@ let _ = ["349134787773988865"],
             state: null != (s = a.state) ? s : "",
             has_urls: null != a.state_url || null != a.details_url || (null == (t = a.assets) ? true : t.large_url) != null || (null == (n = a.assets) ? true : n.small_url) != null
           };
-          return null != p && (h.has_match_secret = !!p.match, h.has_join_secret = !!p.join), null != S && (h.has_images = !!(S.large_image || S.small_image)), null != f && (h.party_max = null != f.size && f.size[1] > 0 ? f.size[1] : true, h.party_id = f.id), d.default.track(b.rMx.ACTIVITY_UPDATED, h), a
+          return null != p && (f.has_match_secret = !!p.match, f.has_join_secret = !!p.join), null != S && (f.has_images = !!(S.large_image || S.small_image)), null != h && (f.party_max = null != h.size && h.size[1] > 0 ? h.size[1] : true, f.party_id = h.id), d.default.track(b.rMx.ACTIVITY_UPDATED, f), a
         })
       }
     }

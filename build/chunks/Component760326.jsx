@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 760326, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => h
 });
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
@@ -14,7 +14,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk29504 = require("./29504.js"),
   Chunk932478 = require("./932478.js");
-let f = e => {
+let h = e => {
   let t = (0, r.jsx)(i.M2$, {
     shortcut: l.$.binds["0"],
     keyClassName: d.key

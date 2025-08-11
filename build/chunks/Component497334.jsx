@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 497334, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  S: () => f
+  S: () => h
 });
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
@@ -15,7 +15,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk441393 = require("./441393.js");
 
-function f(e) {
+function h(e) {
   let {
     expiresAt: t
   } = e, n = (0, s.ZP)(t, s.aj.SHORT_TIME), i = (0, c.zu)(a.z.Q2_2025_MARKETING_MOMENT_NITRO_TAB_BADGE_V2);

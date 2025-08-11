@@ -32,8 +32,8 @@ function p(e) {
   }
   return e
 }
-let f = "premium_tier_gradient",
-  h = "smaller_sparkle_gradient";
+let h = "premium_tier_gradient",
+  f = "smaller_sparkle_gradient";
 
 function g(e) {
   var t, n, {
@@ -66,7 +66,7 @@ function g(e) {
     xmlns: "http://www.w3.org/2000/svg",
     children: [(0, r.jsx)("defs", {
       children: (0, r.jsxs)("linearGradient", {
-        id: f,
+        id: h,
         x1: "0%",
         y1: "0%",
         x2: "100%",
@@ -83,7 +83,7 @@ function g(e) {
         })]
       })
     }), (0, r.jsxs)("linearGradient", {
-      id: h,
+      id: f,
       x1: "-4.95474",
       y1: "5.44067",
       x2: "11.2384",
@@ -131,10 +131,10 @@ function m(e) {
     children: [m ? (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(g, {
         foreground: d.sparkleStar1,
-        color: "url(#".concat(h, ")")
+        color: "url(#".concat(f, ")")
       }), (0, r.jsx)(g, {
         foreground: d.sparkleStar2,
-        color: "url(#".concat(f, ")")
+        color: "url(#".concat(h, ")")
       })]
     }) : null, (0, r.jsx)(u.mn, {
       text: _,

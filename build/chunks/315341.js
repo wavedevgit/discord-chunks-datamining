@@ -119,7 +119,7 @@ let b = [{
   cleanup() {}
 }, {
   version: 9,
-  run: e => (c.qc.hasHiddenHotspot(c.v6.MULTI_ACCOUNT_TOOLTIP) && o.K.set(h.Ip, "true"), m(e, c.v6.MULTI_ACCOUNT_TOOLTIP, i.z.ACCOUNT_MULTIACCOUNT_TOOLTIP)),
+  run: e => (c.qc.hasHiddenHotspot(c.v6.MULTI_ACCOUNT_TOOLTIP) && o.K.set(f.Ip, "true"), m(e, c.v6.MULTI_ACCOUNT_TOOLTIP, i.z.ACCOUNT_MULTIACCOUNT_TOOLTIP)),
   cleanup() {}
 }, {
   version: 10,
@@ -127,7 +127,7 @@ let b = [{
     var t;
     let n = m(e, c.v6.HUB_LINK_CHANNEL_NOTICE, i.z.CHANNEL_NOTICE_HUBLINK),
       r = null != (t = o.K.get("channelNotices")) ? t : {};
-    returnfalse === r[f.vID.INVITE] && g(e, i.z.CHANNEL_NOTICE_INVITE) && (n = true), false === r[f.vID.QUICKSWITCHER] && g(e, i.z.CHANNEL_NOTICE_QUICKSWITCHER) && (n = true), false === r[f.vID.GUILD_BOOSTING] && g(e, i.z.CHANNEL_NOTICE_PREMIUM_GUILD_SUBSCRIPTION) && (n = true), n
+    returnfalse === r[h.vID.INVITE] && g(e, i.z.CHANNEL_NOTICE_INVITE) && (n = true), false === r[h.vID.QUICKSWITCHER] && g(e, i.z.CHANNEL_NOTICE_QUICKSWITCHER) && (n = true), false === r[h.vID.GUILD_BOOSTING] && g(e, i.z.CHANNEL_NOTICE_PREMIUM_GUILD_SUBSCRIPTION) && (n = true), n
   },
   cleanup() {
     Chunk433517.K.remove("channelNotices")

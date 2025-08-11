@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 118470, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => f
 }), require("./388685.js"), require("./539854.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -15,13 +15,13 @@ var Chunk255367 = require("./255367.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk466389 = require("./466389.js");
 
-function h(e) {
+function f(e) {
   let t, {
       guild: n
     } = e,
-    h = (0, u.h6)(n),
+    f = (0, u.h6)(n),
     g = () => (0, c.sB)(n.id),
-    m = i.useMemo(() => new Set(h.map(e => e.applicationId)), [h]),
+    m = i.useMemo(() => new Set(f.map(e => e.applicationId)), [f]),
     b = (0, l.Wu)([a.Z], () => {
       let e = [];
       for (let t of m) {
@@ -44,7 +44,7 @@ function h(e) {
     onDismissed: g,
     message: t,
     type: d.vID.APPLICATION_SUBSCRIPTION_EXPIRATION,
-    image: f,
+    image: h,
     onClick: () => {
       g(), s.Z.open(n.id, d.pNK.INTEGRATIONS)
     },

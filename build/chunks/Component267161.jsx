@@ -87,7 +87,7 @@ function z() {
     c = null != Chunk73800 ? Chunk73800 : null == Chunk97519 ? true : Chunk97519.guild_id,
     d = (0, Chunk442837.e7)([Chunk430824.Z], () => Chunk430824.Z.getGuild(Chunk230711), [Chunk230711]),
     p = (0, Chunk916069.Z)(),
-    f = (0, Chunk370774.D)(),
+    h = (0, Chunk370774.D)(),
     {
       application: m,
       isFrameInFocusedMode: _
@@ -160,7 +160,7 @@ let W = Chunk73800.memo(function() {
       autoTrackExposure: false
     }),
     u = !exports && module,
-    h = null !== require && Chunk114858 === Chunk821020.u3.TITLE_BAR_LEFT,
+    f = null !== require && Chunk114858 === Chunk821020.u3.TITLE_BAR_LEFT,
     g = null === require;
   Chunk73800.useLayoutEffect(() => {
     Chunk998502.ZP.setMinimumSize(Chunk741764.J, Chunk741764.N)
@@ -204,7 +204,7 @@ let W = Chunk73800.memo(function() {
                 color: "currentColor"
               })
             })]
-          }), h && (0, r.jsx)(I.Z, {
+          }), f && (0, r.jsx)(I.Z, {
             focusSectionProps: "NOTIFICATIONS_INBOX" === T ? e : true
           })]
         }),

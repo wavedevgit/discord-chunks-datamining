@@ -25,7 +25,7 @@ function E(e) {
   var t, n;
   let {
     analyticsLocations: i
-  } = (0, s.ZP)(o.Z.ACTIVITY_PANEL), l = (0, h.Z)(e => {
+  } = (0, s.ZP)(o.Z.ACTIVITY_PANEL), l = (0, f.Z)(e => {
     let {
       guildId: t
     } = e;

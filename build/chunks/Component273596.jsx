@@ -54,15 +54,15 @@ function j(e) {
     onGuildCardClick: l
   } = e, {
     guildIds: s,
-    loading: f,
+    loading: h,
     searchResultsQuery: I,
     loadMore: j,
     searchCategoryId: x
   } = (0, b.f)({
     loadId: t
-  }), A = 0 === s.length && !f, Z = i.useContext(d.AnalyticsContext), [w, L] = i.useState((0, m.PM)()), [R, D] = i.useState(true), k = i.useRef(R), [M, U] = i.useState(3), G = i.useRef(M), V = i.useRef(null), H = i.useCallback(e => {
-    if (null != e && !A && !f) 336 * (s.length / M) <= e.height && j()
-  }, [A, f, s.length, M, j]), B = i.useCallback(e => {
+  }), A = 0 === s.length && !h, Z = i.useContext(d.AnalyticsContext), [w, L] = i.useState((0, m.PM)()), [R, D] = i.useState(true), k = i.useRef(R), [M, U] = i.useState(3), G = i.useRef(M), V = i.useRef(null), H = i.useCallback(e => {
+    if (null != e && !A && !h) 336 * (s.length / M) <= e.height && j()
+  }, [A, h, s.length, M, j]), B = i.useCallback(e => {
     let t = e.contentRect;
     if (null == t) return;
     let n = t.width;
@@ -78,13 +78,13 @@ function j(e) {
       loadId: t,
       searchId: w,
       query: I,
-      guildResults: s.map(h.Z.getGuild).filter(p.lm),
+      guildResults: s.map(f.Z.getGuild).filter(p.lm),
       analyticsContext: Z,
       categoryId: x
     })
   }, [Z, s, t, x, w, I]);
   let z = i.useCallback(e => n(e, x), [n, x]),
-    W = i.useMemo(() => f ? [s.length, 0] : [s.length], [s.length, f]),
+    W = i.useMemo(() => h ? [s.length, 0] : [s.length], [s.length, h]),
     Y = i.useCallback((e, n, i) => {
       switch (e) {
         case 0:
