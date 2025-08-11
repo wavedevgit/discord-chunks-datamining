@@ -13,9 +13,10 @@ var Chunk793030 = require("./793030.js"),
 function c(e) {
   var {
     children: t,
-    showHeaderActionButtons: n = true,
-    reachedMaxGamesLimit: c
-  } = e, s = function(e, t) {
+    widget: n,
+    showHeaderActionButtons: c = true,
+    reachedMaxGamesLimit: s
+  } = e, d = function(e, t) {
     if (null == e) return {};
     var n, r, l = function(e, t) {
       if (null == e) return {};
@@ -29,11 +30,11 @@ function c(e) {
       for (r = 0; r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n])
     }
     return l
-  }(e, ["children", "showHeaderActionButtons", "reachedMaxGamesLimit"]);
-  let d = (0, i.Dt)();
+  }(e, ["children", "widget", "showHeaderActionButtons", "reachedMaxGamesLimit"]);
+  let u = (0, i.Dt)();
   return (0, r.jsx)("section", {
     className: a.container,
-    "aria-labelledby": d,
+    "aria-labelledby": u,
     children: (0, r.jsx)(l.y5, {
       component: (0, r.jsx)(o.Z, function(e) {
         for (var t = 1; t < arguments.length; t++) {
@@ -53,10 +54,11 @@ function c(e) {
         }
         return e
       }({
-        headingId: d,
-        reachedMaxGamesLimit: c,
-        showHeaderActionButtons: n
-      }, s)),
+        headingId: u,
+        widget: n,
+        reachedMaxGamesLimit: s,
+        showHeaderActionButtons: c
+      }, d)),
       children: t
     })
   })

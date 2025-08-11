@@ -22,14 +22,15 @@ let m = {
 };
 
 function p(e) {
+  var t;
   let {
-    userId: t,
-    widgetType: n,
+    userId: n,
     headingId: p,
-    reachedMaxGamesLimit: g,
-    showHeaderActionButtons: b
-  } = e, j = (0, o.e7)([c.default], () => c.default.getId() === t), h = m[n](), x = j ? n === i.l.FAVORITE_GAMES ? u.intl.string(u.t.wiXdER) : u.intl.format(u.t["zR1+09"], {
-    numGames: l.k[n]
+    widget: g,
+    reachedMaxGamesLimit: b,
+    showHeaderActionButtons: j
+  } = e, h = (0, o.e7)([c.default], () => c.default.getId() === n), x = m[g.type](), y = h ? (t = g.type) === i.l.FAVORITE_GAMES ? u.intl.string(u.t.wiXdER) : u.intl.format(u.t["zR1+09"], {
+    numGames: l.k[t]
   }) : true;
   return (0, r.jsxs)("div", {
     className: f.headerRow,
@@ -39,19 +40,19 @@ function p(e) {
         variant: "heading-sm/medium",
         color: "text-default",
         id: p,
-        children: h
-      }), null != x && (0, r.jsx)(a.Text, {
+        children: x
+      }), null != y && (0, r.jsx)(a.Text, {
         variant: "text-xs/normal",
         color: "text-secondary",
-        children: x
+        children: y
       })]
-    }), j && b && (0, r.jsxs)("div", {
+    }), h && j && (0, r.jsxs)("div", {
       className: f.actions,
       children: [(0, r.jsx)(s.Z, {
-        disabled: g,
-        widgetType: n
+        disabled: b,
+        widgetType: g.type
       }), (0, r.jsx)(d.Z, {
-        widgetType: n
+        widget: g
       })]
     })]
   })

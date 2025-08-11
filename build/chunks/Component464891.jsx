@@ -307,7 +307,7 @@ function en(e) {
       icon: p.application.icon,
       size: x,
       fallbackAvatar: false
-    })) ? t : M : null != p.webhookId && null != p.author.avatar ? P.ZP.getUserAvatarURL({
+    })) ? t : M : null != p.webhookId ? P.ZP.getUserAvatarURL({
       avatar: p.author.avatar,
       id: p.author.id,
       discriminator: p.author.discriminator,
