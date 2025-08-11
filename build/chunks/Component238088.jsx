@@ -1,7 +1,7 @@
 /** Chunk was on 37979 **/
 /** chunk id: 238088, original params: e,t,l (module,exports,require) **/
 require.d(exports, {
-  default: () => j
+  default: () => I
 }), require("./388685.js"), require("./539854.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -22,7 +22,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk325507 = require("./325507.js");
 
-function S(e) {
+function y(e) {
   for (var t = 1; t < arguments.length; t++) {
     var l = null != arguments[t] ? arguments[t] : {},
       n = Object.keys(l);
@@ -41,7 +41,7 @@ function S(e) {
   return e
 }
 
-function F(e) {
+function f(e) {
   let {
     index: t,
     query: l,
@@ -51,7 +51,7 @@ function F(e) {
     handleRemoveDateFilter: o
   } = e, u = i()(), d = i()("2015-05-15");
   return (0, n.jsxs)("div", {
-    className: y.dateFilter,
+    className: S.dateFilter,
     children: [(0, n.jsx)(c.q4e, {
       options: s,
       value: l.query,
@@ -61,7 +61,7 @@ function F(e) {
           index: t
         })
       },
-      className: y.dateFilterSelect
+      className: S.dateFilterSelect
     }), (0, n.jsx)(c.Wrb, {
       value: l.date,
       onSelect: e => {
@@ -76,21 +76,21 @@ function F(e) {
       onClick: () => {
         o(t)
       },
-      className: y.removeDateFilterButton,
-      "aria-label": f.intl.formatToPlainString(f.t["2LwBlJ"], {
+      className: S.removeDateFilterButton,
+      "aria-label": F.intl.formatToPlainString(F.t["2LwBlJ"], {
         filterNumber: t + 1
       }),
       children: (0, n.jsx)(c.XHJ, {
         size: "md",
         color: "currentColor",
-        className: y.trashIcon,
+        className: S.trashIcon,
         "aria-hidden": true
       })
     })]
   })
 }
 
-function _(e) {
+function E(e) {
   let {
     options: t,
     dates: l,
@@ -100,18 +100,18 @@ function _(e) {
     handleRemoveDateFilter: s
   } = e, o = l.length < 4;
   return (0, n.jsxs)("div", {
-    className: y.filterSection,
+    className: S.filterSection,
     children: [(0, n.jsx)(c.Text, {
       variant: "text-md/medium",
       color: "text-primary",
-      className: y.label,
-      children: f.intl.string(f.t.oesnws)
+      className: S.label,
+      children: F.intl.string(F.t.oesnws)
     }), (0, n.jsx)(c.Text, {
       variant: "text-sm/medium",
       color: "text-secondary",
-      className: y.sublabel,
-      children: f.intl.string(f.t.A2DY6O)
-    }), l.map((e, l) => (0, n.jsx)(F, {
+      className: S.sublabel,
+      children: F.intl.string(F.t.A2DY6O)
+    }), l.map((e, l) => (0, n.jsx)(f, {
       options: t,
       index: l,
       query: e,
@@ -121,14 +121,14 @@ function _(e) {
     }, e.id)), o && (0, n.jsx)(c.zxk, {
       variant: "secondary",
       fullWidth: true,
-      text: f.intl.string(f.t.iP9YpK),
+      text: F.intl.string(F.t.iP9YpK),
       icon: c.BRu,
       onClick: i
     })]
   })
 }
 
-function v(e) {
+function _(e) {
   let {
     label: t,
     sublabel: l,
@@ -148,12 +148,12 @@ function v(e) {
     children: [(0, n.jsx)(c.Text, {
       variant: "text-md/medium",
       color: "text-primary",
-      className: y.label,
+      className: S.label,
       children: t
     }), (0, n.jsx)(c.Text, {
       variant: "text-sm/medium",
       color: "text-secondary",
-      className: y.sublabel,
+      className: S.sublabel,
       children: l
     }), (0, n.jsx)(c.VcW, {
       multi: true,
@@ -170,44 +170,44 @@ function v(e) {
   })
 }
 
-function j(e) {
+function I(e) {
   let {
     transitionState: t,
     onClose: l,
     searchContext: a
-  } = e, i = (0, d.Dt)(), F = r.useMemo(() => (0, p.s5)(a), [a]), j = (0, s.e7)([h.Z, x.Z], () => {
+  } = e, i = (0, d.Dt)(), f = r.useMemo(() => (0, C.s5)(a), [a]), I = (0, s.e7)([h.Z, x.Z], () => {
     let e = h.Z.getChannel(x.Z.getChannelId());
-    return null != e ? (0, p.nl)(e) : "general"
-  }), T = (0, C.I)(a), {
-    searchFilters: E
-  } = (0, m.hE)(T), I = r.useMemo(() => (0, p.nI)(T), [T]), O = r.useMemo(() => [...E[b.dCx.FILTER_BEFORE], ...E[b.dCx.FILTER_AFTER], ...E[b.dCx.FILTER_ON]], [E]), {
-    options: R,
-    query: N,
+    return null != e ? (0, C.nl)(e) : "general"
+  }), T = (0, p.I)(a), {
+    searchFilters: v
+  } = (0, m.hE)(T), R = r.useMemo(() => (0, C.nI)(T), [T]), j = r.useMemo(() => [...v[b.dCx.FILTER_BEFORE], ...v[b.dCx.FILTER_AFTER], ...v[b.dCx.FILTER_ON]], [v]), {
+    options: N,
+    query: O,
     setQuery: k,
     setQueryString: L,
-    handleClearFilter: P,
-    getApplyQueryString: D
-  } = (0, m.HJ)(a, b.dCx.FILTER_FROM, E[b.dCx.FILTER_FROM]), {
-    options: Q,
-    query: M,
+    handleClearFilter: M,
+    getApplyQueryString: P
+  } = (0, m.HJ)(a, b.dCx.FILTER_FROM, v[b.dCx.FILTER_FROM]), {
+    options: D,
+    query: Q,
     setQuery: q,
     setQueryString: A,
     handleClearFilter: w,
     getApplyQueryString: B
-  } = (0, m.HJ)(a, b.dCx.FILTER_MENTIONS, E[b.dCx.FILTER_MENTIONS]), H = (0, m.Zc)(F), Z = (0, p.R6)(a), {
+  } = (0, m.HJ)(a, b.dCx.FILTER_MENTIONS, v[b.dCx.FILTER_MENTIONS]), H = (0, m.Zc)(f), Z = (0, C.R6)(a), {
     options: z,
     query: J,
     setQuery: W,
     handleClearFilter: K,
     getApplyQueryString: Y
-  } = (0, m.Z2)(a, E[b.dCx.FILTER_HAS]), {
+  } = (0, m.Z2)(a, v[b.dCx.FILTER_HAS]), {
     options: U,
     query: V,
     setQuery: X,
     setQueryString: G,
     handleClearFilter: $,
     getApplyQueryString: ee
-  } = (0, m.ur)(a, E[b.dCx.FILTER_IN]), et = r.useCallback(e => {
+  } = (0, m.ur)(a, v[b.dCx.FILTER_IN]), et = r.useCallback(e => {
     if (null == e) return;
     let t = h.Z.getChannel(e.value);
     if (null == t) return;
@@ -226,16 +226,15 @@ function j(e) {
     handleRemoveDateFilter: eo,
     handleClearDateFilter: ec,
     getDateQueryString: eu
-  } = (0, m.fI)(O), ed = r.useMemo(() => N.length + M.length + J.length + V.length + er.length, [N, M, J, V, er]), eh = r.useCallback(() => {
-    if (0 === ed && 0 === I.length) return void l();
-    let e = D(b.dCx.FILTER_FROM),
+  } = (0, m.fI)(j), ed = r.useMemo(() => O.length + Q.length + J.length + V.length + er.length, [O, Q, J, V, er]), eh = r.useMemo(() => !(0, m.Ek)(O, v[b.dCx.FILTER_FROM]) || !(0, m.Ek)(Q, v[b.dCx.FILTER_MENTIONS]) || !(0, m.Ek)(V, v[b.dCx.FILTER_IN]) || !(0, m.Ek)(J, v[b.dCx.FILTER_HAS]) || !(0, m.LE)(er, j), [O, v, Q, J, V, er, j]), ex = r.useCallback(() => {
+    let e = P(b.dCx.FILTER_FROM),
       t = B(b.dCx.FILTER_MENTIONS),
       n = Y(b.dCx.FILTER_HAS),
       r = ee(b.dCx.FILTER_IN),
       a = eu(),
       i = [];
     null != e && i.push(e), null != t && i.push(t), null != n && i.push(n), null != r && i.push(r), null != a && i.push(a);
-    let s = [...i, I].join(" ");
+    let s = [...i, R].join(" ");
     g.S.dispatch(b.CkL.SET_SEARCH_QUERY, {
       query: s,
       anchor: 0,
@@ -243,74 +242,75 @@ function j(e) {
       performSearch: true,
       replace: true
     }), l()
-  }, [eu, D, Y, ee, B, I, ed, l]), ex = r.useCallback(() => {
-    P(), w(), K(), $(), ec()
-  }, [P, w, K, $, ec]);
+  }, [eu, P, Y, ee, B, R, l]), eg = r.useCallback(() => {
+    M(), w(), K(), $(), ec()
+  }, [M, w, K, $, ec]);
   return (0, n.jsxs)(o.Modal, {
     transitionState: t,
     onClose: l,
     "aria-labelledby": i,
-    title: f.intl.string(f.t.F8a0W1),
+    title: F.intl.string(F.t.F8a0W1),
     actions: [{
       variant: "secondary",
-      text: f.intl.string(f.t["ETE/oK"]),
+      text: F.intl.string(F.t["ETE/oK"]),
       onClick: l
     }, {
       variant: "primary",
-      text: f.intl.string(f.t.qDzapq),
-      onClick: eh
+      text: F.intl.string(F.t.qDzapq),
+      onClick: ex,
+      disabled: !eh
     }],
     actionBarInput: (0, n.jsx)(c.P3F, {
-      onClick: ex,
-      className: y.clearFilters,
+      onClick: eg,
+      className: S.clearFilters,
       children: (0, n.jsxs)(c.Text, {
         variant: "text-sm/medium",
         color: ed > 0 ? "text-brand" : "text-tertiary",
-        children: [f.intl.string(f.t.YfwFu7), " ", ed > 0 && "(".concat(ed, ")")]
+        children: [F.intl.string(F.t.YfwFu7), " ", ed > 0 && "(".concat(ed, ")")]
       })
     }),
-    children: [(0, n.jsx)(v, S({
-      label: f.intl.string(f.t.Qz6eOT),
-      sublabel: f.intl.string(f.t["2JyXnJ"]),
-      textPlaceholder: f.intl.string(f.t.V4WMj4),
-      value: N,
+    children: [(0, n.jsx)(_, y({
+      label: F.intl.string(F.t.Qz6eOT),
+      sublabel: F.intl.string(F.t["2JyXnJ"]),
+      textPlaceholder: F.intl.string(F.t.V4WMj4),
+      value: O,
       onChange: k,
       onSearchChange: L,
-      options: R
-    }, H)), Z && (0, n.jsx)(v, {
-      label: f.intl.string(f.t["kLrM/v"]),
-      sublabel: f.intl.string(f.t.x8cC09),
-      textPlaceholder: f.intl.formatToPlainString(f.t.K4l509, {
-        channelName: j
+      options: N
+    }, H)), Z && (0, n.jsx)(_, {
+      label: F.intl.string(F.t["kLrM/v"]),
+      sublabel: F.intl.string(F.t.x8cC09),
+      textPlaceholder: F.intl.formatToPlainString(F.t.K4l509, {
+        channelName: I
       }),
       value: V,
       onChange: X,
       onSearchChange: G,
       options: U,
-      containerClassName: y.filterSection,
+      containerClassName: S.filterSection,
       filter: false,
       closeOnSelect: false,
       renderOptionPrefix: et
-    }), (0, n.jsx)(v, S({
-      label: f.intl.string(f.t.HEBnRU),
-      sublabel: f.intl.string(f.t.PdfTqa),
-      textPlaceholder: f.intl.string(f.t.zka3aG),
-      value: M,
+    }), (0, n.jsx)(_, y({
+      label: F.intl.string(F.t.HEBnRU),
+      sublabel: F.intl.string(F.t.PdfTqa),
+      textPlaceholder: F.intl.string(F.t.zka3aG),
+      value: Q,
       onChange: q,
       onSearchChange: A,
-      options: Q,
-      containerClassName: y.filterSection
-    }, H)), (0, n.jsx)(v, {
-      label: f.intl.string(f.t["892qg4"]),
-      sublabel: f.intl.string(f.t["Oa//IC"]),
-      textPlaceholder: f.intl.string(f.t.tROvHB),
+      options: D,
+      containerClassName: S.filterSection
+    }, H)), (0, n.jsx)(_, {
+      label: F.intl.string(F.t["892qg4"]),
+      sublabel: F.intl.string(F.t["Oa//IC"]),
+      textPlaceholder: F.intl.string(F.t.tROvHB),
       value: J,
       onChange: W,
       options: z,
-      containerClassName: y.filterSection,
+      containerClassName: S.filterSection,
       filter: true,
       closeOnSelect: false
-    }), (0, n.jsx)(_, {
+    }), (0, n.jsx)(E, {
       options: el,
       dates: en,
       handleDateQueryChange: ea,

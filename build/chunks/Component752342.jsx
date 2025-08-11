@@ -1,7 +1,7 @@
 /** Chunk was on 11776 **/
 /** chunk id: 752342, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => S
+  Z: () => w
 }), require("./388685.js");
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
@@ -32,29 +32,29 @@ var Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk405666 = require("./405666.js");
 
-function S(e) {
+function w(e) {
   let {
     user: t,
     currentUser: n,
-    guildId: S,
-    channelId: w,
+    guildId: w,
+    channelId: S,
     messageId: A,
     roleId: C,
     sessionId: L,
     initialSection: D,
     initialSubsection: k,
-    transitionState: R,
-    openedAt: G,
-    onClose: B,
-    sourceAnalyticsLocations: M = []
-  } = e, U = S === T.ME ? true : S, F = (0, u.ZP)(t.id, U), V = s.ZP.getName(U, w, t), Y = (0, c.Dt)(), {
+    transitionState: B,
+    openedAt: R,
+    onClose: M,
+    sourceAnalyticsLocations: G = []
+  } = e, U = w === N.ME ? true : w, F = (0, u.ZP)(t.id, U), V = s.ZP.getName(U, S, t), Y = (0, c.Dt)(), {
     analyticsLocations: H
-  } = (0, a.ZP)([...M, o.Z.USER_PROFILE_MODAL]), W = (0, d.ZB)({
+  } = (0, a.ZP)([...G, o.Z.USER_PROFILE_MODAL]), W = (0, d.ZB)({
     layout: "MODAL",
     userId: t.id,
     sourceSessionId: L,
     guildId: U,
-    channelId: w,
+    channelId: S,
     messageId: A,
     roleId: C
   }), z = (0, P.Z)(t);
@@ -62,13 +62,13 @@ function S(e) {
     value: H,
     children: (0, r.jsx)(d.Mt, {
       value: W,
-      openedAt: G,
+      openedAt: R,
       fetchStartedAt: null == F ? true : F.fetchStartedAt,
       fetchEndedAt: null == F ? true : F.fetchEndedAt,
       isLoaded: null == F ? true : F.isLoaded,
       children: (0, r.jsx)(l.Y0X, {
         "data-migration-pending": true,
-        transitionState: R,
+        transitionState: B,
         className: E.root,
         hideShadow: true,
         "aria-labelledby": Y,
@@ -77,7 +77,7 @@ function S(e) {
           component: (0, r.jsx)(l.nn4, {
             children: (0, r.jsx)(l.H, {
               id: Y,
-              children: N.intl.format(N.t.KRe1Fh, {
+              children: T.intl.format(T.t.KRe1Fh, {
                 name: V
               })
             })
@@ -90,7 +90,7 @@ function S(e) {
               children: (0, r.jsx)(x.Z, {
                 user: t,
                 guildId: U,
-                onCloseProfile: B
+                onCloseProfile: M
               })
             }), (0, r.jsxs)("div", {
               children: [(0, r.jsx)(p.Z, {
@@ -103,14 +103,14 @@ function S(e) {
                   user: t,
                   displayProfile: F,
                   guildId: U,
-                  channelId: w,
+                  channelId: S,
                   themeType: Z.lY.MODAL
                 }), (0, r.jsx)(_.Z, {
                   location: "BotUserProfileModal",
                   user: t,
                   themeType: Z.lY.MODAL,
-                  hasEntered: R === l.Dvm.ENTERED,
-                  onCloseProfile: B,
+                  hasEntered: B === l.Dvm.ENTERED,
+                  onCloseProfile: M,
                   disableToolbar: true
                 }), (0, r.jsxs)("div", {
                   className: E.headerButtons,
@@ -147,7 +147,7 @@ function S(e) {
                 tags: (0, r.jsx)(m.Z, {
                   displayProfile: F,
                   themeType: Z.lY.MODAL,
-                  onClose: B
+                  onClose: M
                 })
               }), (0, r.jsx)(I.Z, {
                 user: t,
@@ -157,7 +157,7 @@ function S(e) {
                 items: z,
                 initialSection: null != D ? D : Z.oh.BOT_INFO,
                 initialSubsection: k,
-                onClose: B
+                onClose: M
               })]
             })]
           })

@@ -13,10 +13,15 @@ var Chunk296009 = require("./296009.js"),
   Chunk148444 = require("./148444.js");
 
 function d() {
-  return (0, Chunk447448.k)({
-    location: "DevToolsWidgetsPanel",
-    autoTrackExposure: false
-  }) ? (0, Chunk255367.jsx)("div", {
+  let e = (0, Chunk447448.k)({
+      location: "DevToolsWidgetsPanel",
+      autoTrackExposure: false
+    }),
+    t = e => {
+      let t = (0, s.np)(e);
+      (0, s.ES)(e, t.applicationId)
+    };
+  return module ? (0, Chunk255367.jsx)("div", {
     className: Chunk148444.container,
     children: (0, Chunk255367.jsxs)(Chunk481060.hjN, {
       children: [(0, Chunk255367.jsx)(Chunk481060.vwX, {
@@ -27,20 +32,20 @@ function d() {
         className: Chunk148444.buttonGroup,
         children: [(0, Chunk255367.jsx)(Chunk481060.zxk, {
           variant: "primary",
-          text: "Favorite Game Widget",
-          onClick: () => (0, Chunk86419.qH)(Chunk296009.l.FAVORITE_GAMES)
+          text: "Add Favorite Game",
+          onClick: () => exports(Chunk296009.l.FAVORITE_GAMES)
         }), (0, Chunk255367.jsx)(Chunk481060.zxk, {
           variant: "primary",
-          text: "Current Game Widget",
-          onClick: () => (0, Chunk86419.qH)(Chunk296009.l.CURRENT_GAMES)
+          text: "Add Current Game",
+          onClick: () => exports(Chunk296009.l.CURRENT_GAMES)
         }), (0, Chunk255367.jsx)(Chunk481060.zxk, {
           variant: "primary",
-          text: "Want to Play Game Widget",
-          onClick: () => (0, Chunk86419.qH)(Chunk296009.l.WANT_TO_PLAY_GAMES)
+          text: "Add Want to Play Game",
+          onClick: () => exports(Chunk296009.l.WANT_TO_PLAY_GAMES)
         }), (0, Chunk255367.jsx)(Chunk481060.zxk, {
           variant: "primary",
-          text: "Played Game Widget",
-          onClick: () => (0, Chunk86419.qH)(Chunk296009.l.PLAYED_GAMES)
+          text: "Add Played Game",
+          onClick: () => exports(Chunk296009.l.PLAYED_GAMES)
         }), (0, Chunk255367.jsx)(Chunk481060.zxk, {
           variant: "active",
           text: "Show Empty State",

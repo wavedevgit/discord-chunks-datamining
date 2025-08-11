@@ -50,17 +50,17 @@ function I(e) {
     channelId: I,
     messageId: P,
     roleId: Z,
-    transitionState: T,
-    openedAt: N,
+    transitionState: N,
+    openedAt: T,
     onHide: E,
-    sourceAnalyticsLocations: S = []
-  } = e, w = n === y.ME ? true : n, A = (0, l.e7)([d.Z], () => d.Z.isBlocked(t.id)), {
+    sourceAnalyticsLocations: w = []
+  } = e, S = n === y.ME ? true : n, A = (0, l.e7)([d.Z], () => d.Z.isBlocked(t.id)), {
     analyticsLocations: C
-  } = (0, c.ZP)([...S, A ? a.Z.BLOCKED_PROFILE_MODAL : a.Z.IGNORED_PROFILE_MODAL]), L = (0, f.ZB)({
+  } = (0, c.ZP)([...w, A ? a.Z.BLOCKED_PROFILE_MODAL : a.Z.IGNORED_PROFILE_MODAL]), L = (0, f.ZB)({
     layout: "MODAL_V2",
     userId: t.id,
     showGuildProfile: true,
-    guildId: w,
+    guildId: S,
     channelId: I,
     messageId: P,
     roleId: Z
@@ -70,22 +70,22 @@ function I(e) {
   }, {
     icon: o.owK,
     description: v.intl.string(A ? v.t.QxrDY2 : v.t.W6fjkZ)
-  }], k = (0, p.ZP)(t.id, w), R = u.ZP.getName(null == k ? true : k.guildId, I, t), G = v.intl.formatToPlainString(v.t.KRe1Fh, {
-    name: R
+  }], k = (0, p.ZP)(t.id, S), B = u.ZP.getName(null == k ? true : k.guildId, I, t), R = v.intl.formatToPlainString(v.t.KRe1Fh, {
+    name: B
   });
   return (0, r.jsx)(c.Gt, {
     value: C,
     children: (0, r.jsx)(f.Mt, {
       value: L,
-      openedAt: N,
+      openedAt: T,
       fetchStartedAt: null == k ? true : k.fetchStartedAt,
       fetchEndedAt: null == k ? true : k.fetchEndedAt,
       isLoaded: null == k ? true : k.isLoaded,
       children: (0, r.jsx)(o.Y0X, {
         "data-migration-pending": true,
-        transitionState: T,
+        transitionState: N,
         className: O.root,
-        "aria-label": G,
+        "aria-label": R,
         parentComponent: "RestrictedUserProfileModalV2",
         children: (0, r.jsxs)(b.Z, {
           user: t,
@@ -97,7 +97,7 @@ function I(e) {
             className: O.content,
             children: [(0, r.jsx)(g.Z, {
               user: t,
-              guildId: w,
+              guildId: S,
               iconColor: o.TVs.colors.TEXT_DEFAULT
             }), (0, r.jsxs)("div", {
               className: O.textContainer,
@@ -109,7 +109,7 @@ function I(e) {
                 variant: "text-md/medium",
                 color: "text-default",
                 children: v.intl.format(A ? v.t.T7QiLi : v.t.MnEow8, {
-                  username: R
+                  username: B
                 })
               })]
             }), (0, r.jsx)("div", {

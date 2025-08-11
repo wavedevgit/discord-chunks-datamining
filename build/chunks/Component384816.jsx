@@ -34,14 +34,14 @@ function I(e) {
     subsection: P,
     onClose: Z
   } = e, {
-    trackUserProfileAction: T
-  } = (0, f.KZ)(), N = (0, l.e7)([d.Z], () => d.Z.getGuildId()), E = (0, a.Y)({
+    trackUserProfileAction: N
+  } = (0, f.KZ)(), T = (0, l.e7)([d.Z], () => d.Z.getGuildId()), E = (0, a.Y)({
     userId: t.id
-  }), S = (0, l.e7)([u.Z], () => u.Z.hidePersonalInformation), w = (0, l.e7)([s.default], () => s.default.locale), A = (0, p.Z)(t.id), C = (0, m.Z)(t.id);
+  }), w = (0, l.e7)([u.Z], () => u.Z.hidePersonalInformation), S = (0, l.e7)([s.default], () => s.default.locale), A = (0, p.Z)(t.id), C = (0, m.Z)(t.id);
   return (0, r.jsxs)(i.zJl, {
     fade: true,
     className: _.scroller,
-    children: [(null == I ? true : I.bio) != null && (null == I ? true : I.bio) !== "" && !S && (0, r.jsx)(g.Z, {
+    children: [(null == I ? true : I.bio) != null && (null == I ? true : I.bio) !== "" && !w && (0, r.jsx)(g.Z, {
       userBio: I.bio,
       setLineClamp: false
     }), (null == I ? true : I.guildId) != null && (0, r.jsx)(y.Z, {
@@ -78,20 +78,20 @@ function I(e) {
         connectedAccounts: A,
         className: _.connections,
         userId: t.id,
-        locale: w
+        locale: S
       })
     }), C.length > 0 && (0, r.jsx)(x.Z, {
       heading: O.intl.string(O.t.PHjkRE),
       children: C.map(e => (0, r.jsx)(b.tH, {
         className: _.appsConnections,
         applicationRoleConnection: e,
-        locale: w,
+        locale: S,
         onApplicationClicked: () => {
-          T({
+          N({
             action: "PRESS_APP_CONNECTION"
           }), Z()
         },
-        selectedGuildId: null != N ? N : true
+        selectedGuildId: null != T ? T : true
       }, e.application.id))
     }), (0, r.jsx)(x.Z, {
       heading: O.intl.string(O.t["mQKv+v"]),
@@ -100,7 +100,7 @@ function I(e) {
         userId: t.id,
         className: _.note,
         autoFocus: P === v.Tb.NOTE,
-        onUpdate: () => T({
+        onUpdate: () => N({
           action: "SET_NOTE"
         })
       })

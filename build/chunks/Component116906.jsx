@@ -33,16 +33,16 @@ function I(e) {
     displayProfile: I,
     guildId: P,
     subsection: Z,
-    onClose: T
+    onClose: N
   } = e, {
-    voiceActivityStatusEnabled: N
+    voiceActivityStatusEnabled: T
   } = (0, o.U)({
     location: "UserProfileModalActivity"
   }), E = (0, u.b)({
     location: "UserProfileModalActivity"
   }), {
-    live: S,
-    recent: w,
+    live: w,
+    recent: S,
     stream: A
   } = (0, f.Z)(t.id), {
     voiceChannel: C,
@@ -50,23 +50,23 @@ function I(e) {
   } = (0, m.Z)({
     userId: t.id,
     guildId: P
-  }), D = (0, l.e7)([a.Z], () => a.Z.isFetchingUserOutbox(t.id)), k = t.id === n.id, R = (0, l.e7)([s.Z, c.Z], () => {
+  }), D = (0, l.e7)([a.Z], () => a.Z.isFetchingUserOutbox(t.id)), k = t.id === n.id, B = (0, l.e7)([s.Z, c.Z], () => {
     let e = k ? s.Z.getStatus() : c.Z.getStatus(t.id);
     return e === i.Skl.OFFLINE || e === i.Skl.INVISIBLE
-  }), G = S.length > 0 || null != A, B = N && null == A && null == L && null != C, M = !R && (G || B), U = w.length > 0;
-  return M || U || !D ? (0, r.jsxs)(i.zJl, {
+  }), R = w.length > 0 || null != A, M = T && null == A && null == L && null != C, G = !B && (R || M), U = S.length > 0;
+  return G || U || !D ? (0, r.jsxs)(i.zJl, {
     className: O.scroller,
     fade: true,
-    children: [M ? (0, r.jsx)(p.Z, {
+    children: [G ? (0, r.jsx)(p.Z, {
       "aria-label": v.intl.string(v.t.J6STd3),
       children: (0, r.jsxs)("ul", {
         className: O.activityList,
-        children: [!E && B && (0, r.jsx)("li", {
+        children: [!E && M && (0, r.jsx)("li", {
           children: (0, r.jsx)(h.Z, {
             user: t,
             currentUser: n,
             voiceChannel: C,
-            onClose: T
+            onClose: N
           })
         }), null != A && (0, r.jsx)("li", {
           children: (0, r.jsx)(j.Z, {
@@ -74,15 +74,15 @@ function I(e) {
             user: t,
             currentUser: n,
             stream: A,
-            onClose: T,
+            onClose: N,
             profileGuildId: null == I ? true : I.guildId
           })
-        }), S.map((e, l) => (0, r.jsx)("li", {
+        }), w.map((e, l) => (0, r.jsx)("li", {
           children: (0, r.jsx)(g.Z, {
             user: t,
             currentUser: n,
             activity: e,
-            onClose: T,
+            onClose: N,
             profileGuildId: null == I ? true : I.guildId
           })
         }, "live-".concat(l)))]
@@ -98,14 +98,14 @@ function I(e) {
       scrollIntoView: Z === x.Tb.RECENT_ACTIVITY,
       children: (0, r.jsx)("ul", {
         className: O.activityList,
-        children: w.map(e => (0, r.jsx)("li", {
+        children: S.map(e => (0, r.jsx)("li", {
           children: (0, r.jsx)(b.Z, {
             location: "UserProfileModalActivity",
             user: t,
             currentUser: n,
             entry: e,
             profileGuildId: null == I ? true : I.guildId,
-            onClose: T
+            onClose: N
           })
         }, e.id))
       })

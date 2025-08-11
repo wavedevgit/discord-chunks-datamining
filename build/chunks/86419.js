@@ -4,11 +4,12 @@
 require.d(exports, {
   ES: () => S,
   X6: () => N,
+  np: () => E,
   qH: () => I,
   tk: () => C,
   vH: () => A,
   y8: () => T
-}), require("./388685.js"), require("./642613.js"), require("./539854.js");
+}), require("./388685.js"), require("./642613.js");
 var Chunk296009 = require("./296009.js"),
   Chunk224706 = require("./224706.js"),
   Chunk594174 = require("./594174.js"),
@@ -75,91 +76,74 @@ function E(e) {
   return e === r.l.FAVORITE_GAMES && (i.comment = Math.random() > .5 ? m(u.x) : true), e === r.l.CURRENT_GAMES && (i.tags = Math.random() > .3 ? g(u.T, Math.floor(3 * Math.random()) + 1) : true), i
 }
 
-function b(e) {
+function b() {
+  var e, t;
+  if (Chunk224724.Z.hasPendingChanges()) return null != (e = Chunk224724.Z.getPendingWidgets()) ? module : [];
+  {
+    let e = Chunk594174.default.getCurrentUser(),
+      n = null != module ? Chunk621853.Z.getUserProfile(module.id) : null;
+    return null != (t = null == require ? true : require.widgets) ? exports : []
+  }
+}
+
+function y(e) {
   return e.sort((e, t) => c.rR.indexOf(e.type) - c.rR.indexOf(t.type))
 }
 
-function y(e, t) {
-  let n = {
+function O(e) {
+  let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : [];
+  return h(_({}, {
     id: e
-  };
-  return e === r.l.FAVORITE_GAMES ? h(_({}, n), {
-    type: r.l.FAVORITE_GAMES,
-    game: t
-  }) : h(_({}, n), {
+  }), {
     type: e,
     games: t
   })
 }
 
-function O(e, t) {
+function v(e, t) {
   let n = e.filter(e => e.type !== t.type);
-  return b([t, ...n])
-}
-
-function v() {
-  var e, t;
-  let n;
-  if (Chunk224724.Z.hasPendingChanges()) n = null != (e = Chunk224724.Z.getPendingWidgets()) ? module : [];
-  else {
-    let e = Chunk594174.default.getCurrentUser(),
-      r = null != module ? Chunk621853.Z.getUserProfile(module.id) : null;
-    n = null != (t = null == Chunk296009 ? true : Chunk296009.widgets) ? exports : []
-  }
-  return require
+  return y([t, ...n])
 }
 
 function I(e) {
-  let t, n = v(),
-    o = n.find(t => t.type === e);
-  if (null != o)
-    if (e === r.l.FAVORITE_GAMES) t = E(e);
-    else {
-      let n = o.games || [];
-      if (n.length >= c.Xe[e]) return;
-      t = [...n, E(e)]
-    }
-  else t = e === r.l.FAVORITE_GAMES ? E(e) : [E(e)];
-  let a = O(n, y(e, t));
-  s.Z.setPendingWidgets(a);
-  let l = [];
-  e === r.l.FAVORITE_GAMES ? l.push(t.applicationId) : t.forEach(e => {
-    l.push(e.applicationId)
-  }), i.Z.getDetectableGamesSupplemental(l)
+  let t = b();
+  if (null != t.find(t => t.type === e)) return;
+  let n = O(e);
+  s.Z.setPendingWidgets(y([n, ...t]))
 }
 
 function T(e) {
-  let t = v().filter(t => t.type !== e);
+  let t = b().filter(t => t.type !== e);
   s.Z.setPendingWidgets(t)
 }
 
 function S(e, t) {
-  let n, o = v(),
+  let n, o = b(),
     a = o.find(t => t.type === e),
     l = c.Xe[e];
-  if (null != a)
-    if (e === r.l.FAVORITE_GAMES);
-    else {
-      var u;
-      if (((null == (u = a.games) ? true : u.length) || 0) >= l) return
-    } let d = {
+  if (null != a) {
+    var u, d;
+    if ((null != (d = null == (u = a.games) ? true : u.length) ? d : 0) >= l) return
+  }
+  let f = {
     applicationId: t
   };
-  n = null != a ? e === r.l.FAVORITE_GAMES ? d : [...a.games || [], d] : e === r.l.FAVORITE_GAMES ? d : [d];
-  let f = O(o, y(e, n));
-  s.Z.setPendingWidgets(f), i.Z.getDetectableGamesSupplemental([t])
+  n = null != a ? e === r.l.FAVORITE_GAMES ? [f] : [...a.games || [], f] : [f];
+  let _ = v(o, O(e, n));
+  s.Z.setPendingWidgets(_), i.Z.getDetectableGamesSupplemental([t])
 }
 
 function A(e) {
-  let t, n = e => ({
-    game_id: e.applicationId,
-    comment: e.comment,
-    tags: e.tags
-  });
-  return t = e.type === r.l.FAVORITE_GAMES ? [n(e.game)] : e.games.map(n), {
+  let t = e => ({
+      game_id: e.applicationId,
+      comment: e.comment,
+      tags: e.tags
+    }),
+    n = e.games.map(t);
+  return {
     data: {
       type: e.type,
-      games: t
+      games: n
     }
   }
 }
