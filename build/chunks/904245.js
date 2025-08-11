@@ -704,7 +704,7 @@ let eG = {
     async sendMessage(e, t) {
       var n;
       let r = !(arguments.length > 2) || true === arguments[2] || arguments[2],
-        i = arguments.length > 3 && true !== arguments[3] ? arguments[3] : {};
+        i = arguments.length > 3 ? arguments[3] : true;
       if (t.reaction) return Promise.resolve();
       let o = await (0, X.Z)(e);
       if (null != o) return eB.sendMessage(o, t, r, i);
@@ -797,7 +797,7 @@ let eG = {
     }),
     sendStickers(e, t) {
       let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : "",
-        r = arguments.length > 3 && true !== arguments[3] ? arguments[3] : {},
+        r = arguments.length > 3 ? arguments[3] : true,
         i = arguments.length > 4 && true !== arguments[4] && arguments[4];
       return eB._sendMessage(e, {
         content: n,
@@ -822,7 +822,10 @@ let eG = {
           message_reference: r
         },
         oldFormErrors: true,
-        rejectWithError: false
+        rejectWithError: false,
+        context: {
+          location: eI.dy.GREET
+        }
       }).then(n => (j.Z.donateSentMessage(n.body.content, e), eB.receiveMessage(e, n.body), s.Z.dispatch({
         type: "STICKER_TRACK_USAGE",
         stickerIds: [t]
@@ -842,7 +845,8 @@ let eG = {
         validNonShortcutEmojis: [],
         invalidEmojis: []
       }, eC(eA({}, n), {
-        poll: t
+        poll: t,
+        location: eI.dy.POLL_CREATION
       }))
     },
     validateMessage(e, t, n) {

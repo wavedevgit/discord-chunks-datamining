@@ -539,7 +539,7 @@ class tc extends Chunk73800.PureComponent {
         null != O && (null != O.content && (t = O.content), null != O.tts && (g = O.tts));
         let v = eu.ZP.parse(d, t);
         v.tts = v.tts || g, null != l && (v.content = "", v.components = l);
-        let I = p.Z.getSendMessageOptions({
+        let I = tn(te({}, p.Z.getSendMessageOptions({
           content: t,
           channelId: d.id,
           uploads: n,
@@ -549,8 +549,10 @@ class tc extends Chunk73800.PureComponent {
           pendingReply: f,
           confettiPotionEmoji: i,
           scheduledTimestamp: null == (a = this.props.pendingScheduledMessage) ? true : a.scheduledTimestamp
+        })), {
+          location: e4.dy.CHAT_INPUT
         });
-        if (I.location = e4.dy.CHAT_INPUT, null != c && (I.announcementSendOptions = c), null != l && (I.flags = (0, eV.pj)(null != (E = I.flags) ? E : 0, e5.iLy.IS_COMPONENTS_V2)), s) return p.Z.sendMessage(d.id, v, true, I), (0, eb.A6)(d.id), {
+        if (null != c && (I.announcementSendOptions = c), null != l && (I.flags = (0, eV.pj)(null != (E = I.flags) ? E : 0, e5.iLy.IS_COMPONENTS_V2)), s) return p.Z.sendMessage(d.id, v, true, I), (0, eb.A6)(d.id), {
           shouldClear: false,
           shouldRefocus: true
         };

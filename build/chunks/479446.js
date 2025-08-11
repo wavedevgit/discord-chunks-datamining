@@ -2,9 +2,9 @@
 /** chunk id: 479446, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Ou: () => f,
-  SR: () => u,
-  YD: () => d
+  Ou: () => _,
+  SR: () => d,
+  YD: () => f
 }), require("./415506.js");
 var Chunk512722 = require("./512722.js"),
   i = require.n(Chunk512722),
@@ -13,10 +13,11 @@ var Chunk512722 = require("./512722.js"),
   Chunk957730 = require("./957730.js"),
   Chunk592125 = require("./592125.js"),
   Chunk669079 = require("./669079.js"),
-  u = function(e) {
+  Chunk959517 = require("./959517.js"),
+  d = function(e) {
     return e.ACTION = "action", e.LOOP = "loop", e.IDLE = "idle", e
   }({});
-let d = async (e, t) => {
+let f = async (e, t) => {
   if (null == t) throw Error("giftCode must be defined");
   if (null == e) throw Error("Recipient must be defined");
   let n = await o.Z.openPrivateChannel({
@@ -28,6 +29,7 @@ let d = async (e, t) => {
     }),
     r = (0, c.Nz)(t);
   return a.Z.sendMessage(n.id, s.ZP.parse(n, r), true, {
-    isGiftLinkSentOnBehalfOfUser: true
+    isGiftLinkSentOnBehalfOfUser: true,
+    location: u.dy.GIFTING
   })
-}, f = e => {}
+}, _ = e => {}

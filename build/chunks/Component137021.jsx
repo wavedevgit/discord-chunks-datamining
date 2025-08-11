@@ -1,7 +1,7 @@
 /** Chunk was on 83098 **/
 /** chunk id: 137021, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => E
+  default: () => j
 }), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -19,55 +19,56 @@ var Chunk255367 = require("./255367.js"),
   Chunk572004 = require("./572004.js"),
   Chunk823379 = require("./823379.js"),
   Chunk207003 = require("./207003.jsx"),
+  Chunk959517 = require("./959517.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk277580 = require("./277580.js"),
   Chunk621054 = require("./621054.js");
 
-function E(e) {
+function j(e) {
   let {
     applicationId: t,
     customId: n,
-    linkId: E,
-    message: j,
-    onClose: Z,
-    onCopyLink: O,
-    onShare: _,
-    transitionState: P
-  } = e, [C] = (0, c.Z)([t]), L = (0, a.e7)([h.default], () => h.default.getCurrentUser()), [T, N] = l.useState(false), [w, D] = l.useState(""), [R, M] = l.useState("");
+    linkId: j,
+    message: Z,
+    onClose: O,
+    onCopyLink: _,
+    onShare: P,
+    transitionState: C
+  } = e, [L] = (0, c.Z)([t]), T = (0, a.e7)([h.default], () => h.default.getCurrentUser()), [N, w] = l.useState(false), [D, R] = l.useState(""), [M, k] = l.useState("");
   l.useEffect(() => {
-    M((0, o.H)({
+    k((0, o.H)({
       applicationId: t,
-      referrerId: null == L ? true : L.id,
+      referrerId: null == T ? true : T.id,
       customId: n,
-      linkId: E
+      linkId: j
     }))
-  }, [t, L, n, E, M]);
-  let k = l.useRef(0),
-    [A, I] = l.useState([]),
-    U = A.length,
-    H = U >= 5;
+  }, [t, T, n, j, k]);
+  let A = l.useRef(0),
+    [I, U] = l.useState([]),
+    H = I.length,
+    F = H >= 5;
   l.useEffect(() => {
-    if ("" === w) {
+    if ("" === D) {
       var e;
-      null == (e = q.current) || e.focus()
+      null == (e = z.current) || e.focus()
     }
-  }, [w]);
-  let F = l.useCallback(() => {
-      D("")
-    }, [D]),
-    q = l.useRef(null),
+  }, [D]);
+  let q = l.useCallback(() => {
+      R("")
+    }, [R]),
+    z = l.useRef(null),
     {
-      results: z,
-      updateSearchText: G
+      results: G,
+      updateSearchText: V
     } = (0, b.s)({
-      selectedDestinations: A,
+      selectedDestinations: I,
       includeMissingDMs: true
     }),
     W = l.useCallback(e => {
-      D(e), G(e)
-    }, [D, G]),
-    V = l.useCallback(e => {
-      I(t => {
+      R(e), V(e)
+    }, [R, V]),
+    X = l.useCallback(e => {
+      U(t => {
         let n = t.findIndex(t => {
           let {
             type: n,
@@ -75,75 +76,77 @@ function E(e) {
           } = t;
           return n === e.type && r === e.id
         });
-        if (false === n) return H ? t : (D(""), k.current += 1, [e, ...t]);
+        if (false === n) return F ? t : (R(""), A.current += 1, [e, ...t]);
         let r = [...t];
-        return r.splice(n, 1), k.current += 1, r
+        return r.splice(n, 1), A.current += 1, r
       })
-    }, [H]),
-    X = l.useCallback(async e => {
-      if (null == C) return;
-      let t = x.intl.formatToMarkdownString(x.t.dZJpdH, {
-          applicationName: C.name,
-          link: R
+    }, [F]),
+    J = l.useCallback(async e => {
+      if (null == L) return;
+      let t = v.intl.formatToMarkdownString(v.t.dZJpdH, {
+          applicationName: L.name,
+          link: M
         }),
-        n = "".concat(j, "\n\n").concat(t);
-      N(true), (await Promise.all(e.map(f.qx))).filter(g.lm).forEach(async e => {
+        n = "".concat(Z, "\n\n").concat(t);
+      w(true), (await Promise.all(e.map(f.qx))).filter(g.lm).forEach(async e => {
         let t = p.Z.getChannel(e);
-        null != t && await u.Z.sendMessage(e, d.ZP.parse(t, n), false)
-      }), (0, i.showToast)((0, i.createToast)(x.intl.formatToPlainString(x.t.jQULqK, {
-        applicationName: C.name
-      }), i.ToastType.SUCCESS)), _(true), Z()
-    }, [j, R, Z, _, C]),
-    J = l.useCallback(() => {
-      (0, m.JG)(R, () => {
-        O(), (0, i.showToast)((0, i.createToast)(x.intl.string(x.t["t5VZ8/"]), i.ToastType.SUCCESS))
+        null != t && await u.Z.sendMessage(e, d.ZP.parse(t, n), false, {
+          location: x.dy.ACTIVITY_SHARE
+        })
+      }), (0, s.showToast)((0, s.createToast)(v.intl.formatToPlainString(v.t.jQULqK, {
+        applicationName: L.name
+      }), s.ToastType.SUCCESS)), P(true), O()
+    }, [Z, M, O, P, L]),
+    Q = l.useCallback(() => {
+      (0, m.JG)(M, () => {
+        _(), (0, s.showToast)((0, s.createToast)(v.intl.string(v.t["t5VZ8/"]), s.ToastType.SUCCESS))
       })
-    }, [R, O]),
-    Q = z.length > 0 ? (0, r.jsx)(y.Q, {
+    }, [M, _]),
+    B = G.length > 0 ? (0, r.jsx)(y.Q, {
       paddingBottom: 8,
       paddingTop: 8,
-      rowData: z,
-      handleToggleDestination: V,
-      selectedDestinations: A,
-      disableSelection: H
+      rowData: G,
+      handleToggleDestination: X,
+      selectedDestinations: I,
+      disableSelection: F
     }) : (0, r.jsxs)("div", {
-      className: v.noResults,
+      className: S.noResults,
       children: [(0, r.jsx)("img", {
-        className: v.noResultsImg,
-        src: S,
+        className: S.noResultsImg,
+        src: E,
         alt: ""
-      }), (0, r.jsx)(i.Text, {
+      }), (0, r.jsx)(s.Text, {
         variant: "text-md/normal",
         color: "text-muted",
-        children: x.intl.string(x.t.V6nAfH)
+        children: v.intl.string(v.t.V6nAfH)
       })]
     });
-  return (0, r.jsx)(s.Modal, {
-    transitionState: P,
-    onClose: Z,
-    title: x.intl.string(x.t.r9qKo6),
-    subtitle: j,
+  return (0, r.jsx)(i.Modal, {
+    transitionState: C,
+    onClose: O,
+    title: v.intl.string(v.t.r9qKo6),
+    subtitle: Z,
     size: "md",
-    input: (0, r.jsx)(i.E1j, {
-      ref: q,
-      query: w,
+    input: (0, r.jsx)(s.E1j, {
+      ref: z,
+      query: D,
       onChange: W,
-      onClear: F,
-      placeholder: x.intl.string(x.t["5h0QOD"]),
-      "aria-label": x.intl.string(x.t["5h0QOD"]),
+      onClear: q,
+      placeholder: v.intl.string(v.t["5h0QOD"]),
+      "aria-label": v.intl.string(v.t["5h0QOD"]),
       autoFocus: true
     }),
     actions: [{
-      text: x.intl.string(x.t.WqhZsr),
+      text: v.intl.string(v.t.WqhZsr),
       variant: "secondary",
-      onClick: J
+      onClick: Q
     }, {
-      text: x.intl.string(x.t.TXNS7e),
+      text: v.intl.string(v.t.TXNS7e),
       variant: "primary",
-      onClick: () => X(A),
-      loading: T,
-      disabled: !(U > 0)
+      onClick: () => J(I),
+      loading: N,
+      disabled: !(H > 0)
     }],
-    children: Q
+    children: B
   })
 }

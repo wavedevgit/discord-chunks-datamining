@@ -2,10 +2,11 @@
 /** chunk id: 622822, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
+  Gb: () => P,
   I8: () => C,
   Kt: () => O,
   RW: () => N,
-  T5: () => P,
+  T5: () => w,
   Yt: () => b,
   a1: () => v,
   aC: () => R,
@@ -99,7 +100,11 @@ function R(e) {
   return e.isNSFW() || null != n && (0, a.Y2)(n)
 }
 
-function P() {
+function P(e) {
+  return null != e && e.isNSFW()
+}
+
+function w() {
   let e = Chunk594174.default.getCurrentUser();
   return null != module && null == module.nsfwAllowed
 }

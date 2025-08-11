@@ -14,13 +14,15 @@ function o(e) {
     content: n,
     entry: o,
     whenReady: a,
-    doNotNotifyOnError: s
-  } = e, l = i.ZP.parse(t, n), c = {
+    doNotNotifyOnError: s,
+    location: l
+  } = e, c = i.ZP.parse(t, n), u = {
     unverified_content: o
   };
-  return r.Z.sendMessage(t.id, l, a, {
-    contentInventoryEntry: c,
-    doNotNotifyOnError: s
+  return r.Z.sendMessage(t.id, c, a, {
+    contentInventoryEntry: u,
+    doNotNotifyOnError: s,
+    location: l
   })
 }
 
@@ -29,9 +31,11 @@ function a(e) {
     channel: t,
     content: n,
     whenReady: o,
-    doNotNotifyOnError: a
-  } = e, s = i.ZP.parse(t, n);
-  return r.Z.sendMessage(t.id, s, o, {
-    doNotNotifyOnError: a
+    doNotNotifyOnError: a,
+    location: s
+  } = e, l = i.ZP.parse(t, n);
+  return r.Z.sendMessage(t.id, l, o, {
+    doNotNotifyOnError: a,
+    location: s
   })
 }

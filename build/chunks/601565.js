@@ -1,30 +1,30 @@
 /** Chunk was on 83098 **/
 /** chunk id: 601565, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => s
+  Z: () => i
 }), require("./388685.js"), require("./35282.js"), require("./781311.js");
 var Chunk73800 = require("./73800.js"),
   Chunk211266 = require("./211266.js"),
   Chunk212819 = require("./212819.js");
 
-function s(e) {
+function i(e) {
   let {
     searchOptions: t
-  } = e, [n, s] = r.useState({
+  } = e, [n, i] = r.useState({
     results: [],
     query: ""
-  }), i = (0, l.Z)(() => {
+  }), s = (0, l.Z)(() => {
     let e = new a.ZP((e, t) => {
-      s({
+      i({
         results: e,
         query: t
       })
     });
     return e.setLimit(20), e.search(""), e
   });
-  return r.useEffect(() => () => i.destroy(), [i]), r.useEffect(() => {
-      null != t && t !== i.options && i.setOptions(t)
-    }, [i, t]),
+  return r.useEffect(() => () => s.destroy(), [s]), r.useEffect(() => {
+      null != t && t !== s.options && s.setOptions(t)
+    }, [s, t]),
     function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
@@ -49,7 +49,7 @@ function s(e) {
           query: n,
           resultTypes: r
         } = e;
-        null != i.resultTypes && (t = i.resultTypes, r.length === t.size && r.every(e => t.has(e))) || (i.setResultTypes(r), i.setLimit(1 === r.length ? 50 : 20)), i.search("" === n.trim() ? "" : n)
-      }, [i])
+        null != s.resultTypes && (t = s.resultTypes, r.length === t.size && r.every(e => t.has(e))) || (s.setResultTypes(r), s.setLimit(1 === r.length ? 50 : 20)), s.search("" === n.trim() ? "" : n)
+      }, [s])
     }, n)
 }

@@ -2,7 +2,7 @@
 /** chunk id: 698305, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => u
+  Z: () => d
 }), require("./415506.js");
 var Chunk493683 = require("./493683.js"),
   Chunk904245 = require("./904245.js"),
@@ -10,38 +10,43 @@ var Chunk493683 = require("./493683.js"),
   Chunk656709 = require("./656709.js"),
   Chunk957730 = require("./957730.js"),
   Chunk592125 = require("./592125.js"),
-  Chunk838440 = require("./838440.js");
-let u = async e => {
+  Chunk838440 = require("./838440.js"),
+  Chunk959517 = require("./959517.js");
+let d = async e => {
   let {
     userId: t,
     content: n,
-    location: u,
-    openChannel: d = true,
-    whenReady: f,
-    entry: _
+    location: d,
+    openChannel: f = true,
+    whenReady: _ = false,
+    entry: p
   } = e, {
-    valid: p,
-    failureReason: h
+    valid: h,
+    failureReason: m
   } = await (0, c.v)({
     type: o.Ie.NORMAL,
     content: n,
     channel: null
   });
-  if (!p) throw Error(h);
-  let m = d ? await r.Z.openPrivateChannel({
+  if (!h) throw Error(m);
+  let g = f ? await r.Z.openPrivateChannel({
       recipientIds: t,
-      location: u
+      location: d
     }) : await r.Z.getOrEnsurePrivateChannel(t),
-    g = l.Z.getChannel(m);
-  if (null == g) throw Error("Failed to open private channel");
-  if (null != _)(0, a.p)({
-    channel: g,
+    E = l.Z.getChannel(g);
+  if (null == E) throw Error("Failed to open private channel");
+  if (null != p)(0, a.p)({
+    channel: E,
     content: n,
-    entry: _,
-    whenReady: f
+    entry: p,
+    whenReady: _,
+    doNotNotifyOnError: false,
+    location: u.dy.USER_PROFILE
   });
   else {
-    let e = s.ZP.parse(g, n);
-    return i.Z.sendMessage(g.id, e, f)
+    let e = s.ZP.parse(E, n);
+    return i.Z.sendMessage(E.id, e, _, {
+      location: u.dy.USER_PROFILE
+    })
   }
 }

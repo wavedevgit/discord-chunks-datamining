@@ -1,8 +1,8 @@
 /** Chunk was on 49152 **/
 /** chunk id: 602034, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => m,
-  r: () => y
+  Z: () => b,
+  r: () => x
 });
 var Chunk73800 = require("./73800.js"),
   Chunk94171 = require("./94171.js"),
@@ -16,27 +16,29 @@ var Chunk73800 = require("./73800.js"),
   Chunk703558 = require("./703558.js"),
   Chunk117530 = require("./117530.js"),
   Chunk928477 = require("./928477.js"),
+  Chunk959517 = require("./959517.js"),
   Chunk388032 = require("./388032.jsx");
 
-function m(e) {
+function b(e) {
   let {
     parentChannel: t,
     parentMessageId: n,
     threadSettings: i,
     privateThreadMode: c,
     location: u,
-    onThreadCreated: m,
-    useDefaultThreadName: b
-  } = e, y = r.useCallback((e, t, n, r) => {
+    onThreadCreated: b,
+    useDefaultThreadName: y
+  } = e, x = r.useCallback((e, t, n, r) => {
     a.Z.sendMessage(e.id, d.ZP.parse(e, n), true, {
       eagerDispatch: false,
+      location: g.dy.THREAD_CREATION,
       stickerIds: r,
       attachmentsToUpload: t,
       onAttachmentUploadError: (r, i, a, c) => {
         var u;
         (0, o.openUploadError)({
-          title: g.intl.string(g.t.B3vFdX),
-          help: null != (u = null == c ? true : c.message) ? u : g.intl.string(g.t.zMEjJi)
+          title: m.intl.string(m.t.B3vFdX),
+          help: null != (u = null == c ? true : c.message) ? u : m.intl.string(m.t.zMEjJi)
         }), "" !== n && "" === h.Z.getDraft(e.id, h.d.FirstThreadMessage) && l.Z.saveDraft(e.id, n, h.d.FirstThreadMessage), 0 === p.Z.getUploadCount(e.id, h.d.FirstThreadMessage) && s.Z.setUploads({
           channelId: e.id,
           uploads: t,
@@ -51,12 +53,12 @@ function m(e) {
     threadSettings: i,
     privateThreadMode: c,
     location: u,
-    onThreadCreated: m,
-    useDefaultThreadName: b,
-    uploadHandler: y
+    onThreadCreated: b,
+    useDefaultThreadName: y,
+    uploadHandler: x
   })
 }
-async function b(e) {
+async function y(e) {
   let t = new c.Z,
     n = await t.uploadFiles(e);
   return {
@@ -65,7 +67,7 @@ async function b(e) {
   }
 }
 
-function y(e) {
+function x(e) {
   let {
     parentChannel: t
   } = e, {
@@ -85,6 +87,6 @@ function y(e) {
     parentChannel: t,
     name: n,
     appliedTags: r,
-    upload: b
+    upload: y
   })
 }

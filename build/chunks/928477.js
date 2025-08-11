@@ -2,13 +2,13 @@
 /** chunk id: 928477, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  JA: () => k,
-  Jw: () => w,
-  Od: () => M,
-  Wj: () => U,
-  gK: () => j,
-  oD: () => L,
-  vH: () => D
+  JA: () => j,
+  Jw: () => D,
+  Od: () => k,
+  Wj: () => G,
+  gK: () => U,
+  oD: () => x,
+  vH: () => L
 }), require("./35282.js"), require("./704826.js"), require("./539854.js"), require("./388685.js");
 var Chunk73800 = require("./73800.js"),
   Chunk544891 = require("./544891.js"),
@@ -37,33 +37,34 @@ var Chunk73800 = require("./73800.js"),
   Chunk456077 = require("./456077.js"),
   Chunk124368 = require("./124368.js"),
   Chunk981631 = require("./981631.js"),
+  Chunk959517 = require("./959517.js"),
   Chunk388032 = require("./388032.jsx"),
-  w = function(e) {
+  D = function(e) {
     return e[e.Disabled = 1] = "Disabled", e[e.Enabled = 2] = "Enabled", e[e.PrivateOnly = 3] = "PrivateOnly", e
   }({});
 
-function D(e) {
+function L(e) {
   let t = (0, A.NE)(e);
   return (0, A.Xu)(e) ? t ? 2 : 3 : 1
 }
 
-function L(e, t) {
+function x(e, t) {
   var n;
   return 3 === t || null != (n = e.isPrivate) && n
 }
 
-function x(e, t) {
+function M(e, t) {
   return e.length > t ? e.substring(0, t) + "..." : e
 }
 
-function M(e, t) {
+function k(e, t) {
   var n, r, i, o, a, s, l;
   let c = null == t ? null : b.Z.getMessage(e.id, t),
     u = null != (a = null == c || null == (r = c.embeds) || null == (n = r[0]) ? true : n.rawTitle) ? a : "",
     d = null != (s = null == c || null == (o = c.poll) || null == (i = o.question) ? true : i.text) ? s : "";
-  if ("" !== u) return x(u, 40);
+  if ("" !== u) return M(u, 40);
   {
-    if ("" !== d) return x(d, 80);
+    if ("" !== d) return M(d, 80);
     let t = p.ZP.unparse(null != (l = null == c ? true : c.content) ? l : "", e.id, true),
       n = (0, N.Z)(t.split("\n")[0], true);
     n = n.replace(/^[ #-]+/, "");
@@ -82,11 +83,11 @@ function M(e, t) {
       if (t.length > 40) break;
       i = t
     }
-    return x(i, 40)
+    return M(i, 40)
   }
 }
 
-function k(e) {
+function j(e) {
   let {
     parentChannel: t,
     parentMessageId: n,
@@ -100,15 +101,15 @@ function k(e) {
   return r.useCallback(async (e, r, _) => {
     var p;
     let h = null == n,
-      m = L(o, a),
+      m = x(o, a),
       b = null != (p = o.name) ? p : "";
     if ("" === b && d) {
-      let e = M(t, n);
-      b = "" !== e ? e : P.intl.string(P.t["7Xm5QE"])
+      let e = k(t, n);
+      b = "" !== e ? e : w.intl.string(w.t["7Xm5QE"])
     }
     let y = (0, S.WD)(t),
       O = g.Z.getChannel(I.default.castMessageIdAsChannelId(n)),
-      v = await B(t, [], true, () => {
+      v = await Z(t, [], true, () => {
         let e = null != n ? R.ANM.CHANNEL_MESSAGE_THREADS(t.id, n) : R.ANM.CHANNEL_THREADS(t.id);
         return i.tn.post({
           url: e,
@@ -121,12 +122,12 @@ function k(e) {
           rejectWithError: false
         })
       });
-    v !== O && (s.Z.clearDraft(t.id, E.d.ThreadSettings), s.Z.clearDraft(t.id, E.d.FirstThreadMessage), null == u || u(v), (h || e.length > 0 || null != r && r.length > 0 || null != _ && _.length > 0) && G(v, e, r, _, f)), c.Z.clearAll(t.id, E.d.FirstThreadMessage)
+    v !== O && (s.Z.clearDraft(t.id, E.d.ThreadSettings), s.Z.clearDraft(t.id, E.d.FirstThreadMessage), null == u || u(v), (h || e.length > 0 || null != r && r.length > 0 || null != _ && _.length > 0) && B(v, e, r, _, f)), c.Z.clearAll(t.id, E.d.FirstThreadMessage)
   }, [t, n, o, u, a, l, d, f])
 }
 
-function j(e, t, n, r, o) {
-  return B(e, [], true, () => i.tn.post({
+function U(e, t, n, r, o) {
+  return Z(e, [], true, () => i.tn.post({
     url: R.ANM.CHANNEL_THREADS(e.id),
     body: {
       name: t,
@@ -138,7 +139,7 @@ function j(e, t, n, r, o) {
   }))
 }
 
-function U(e) {
+function G(e) {
   let {
     parentChannel: t,
     name: n,
@@ -180,7 +181,7 @@ function U(e) {
         reason: r
       }), i
     }
-    let A = await B(t, a, p, () => i.tn.post({
+    let A = await Z(t, a, p, () => i.tn.post({
       url: O,
       body: I,
       rejectWithError: false
@@ -193,17 +194,21 @@ function U(e) {
   }, [t, n, o, l, a, u])
 }
 
-function G(e, t, n, r, i) {
+function B(e, t, n, r, i) {
   if (null != i && null != r && r.length > 0) i(e, r, t, n);
-  else if (null != n && n.length > 0) return l.Z.sendStickers(e.id, n, t);
-  else return l.Z.sendMessage(e.id, p.ZP.parse(e, t))
+  else if (null != n && n.length > 0) return l.Z.sendStickers(e.id, n, t, {
+    location: P.dy.THREAD_CREATION
+  });
+  else return l.Z.sendMessage(e.id, p.ZP.parse(e, t), true, {
+    location: P.dy.THREAD_CREATION
+  })
 }
-async function B(e, t, n, r) {
+async function Z(e, t, n, r) {
   let i, s = e.isForumLikeChannel();
   try {
     i = await r(), null == i.body ? a.Z.show({
-      title: P.intl.string(P.t.j2d6Ki),
-      body: P.intl.string(P.t.fEptJC)
+      title: w.intl.string(w.t.j2d6Ki),
+      body: w.intl.string(w.t.fEptJC)
     }) : (o.Z.dispatch({
       type: "SLOWMODE_RESET_COOLDOWN",
       slowmodeType: y.S.CreateThread,
@@ -215,12 +220,12 @@ async function B(e, t, n, r) {
   } catch (r) {
     var c, f, p, m, E, b, v, I, T;
     if ((null == (c = r.body) ? true : c.code) === R.evJ.TOO_MANY_THREADS) a.Z.show({
-      title: s ? P.intl.string(P.t.vWNFk5) : P.intl.string(P.t["1KEdvL"]),
-      body: s ? P.intl.string(P.t.KGaiEB) : P.intl.string(P.t.P0wT5e)
+      title: s ? w.intl.string(w.t.vWNFk5) : w.intl.string(w.t["1KEdvL"]),
+      body: s ? w.intl.string(w.t.KGaiEB) : w.intl.string(w.t.P0wT5e)
     });
     else if ((null == (f = r.body) ? true : f.code) === R.evJ.TOO_MANY_ANNOUNCEMENT_THREADS) a.Z.show({
-      title: P.intl.string(P.t["1KEdvL"]),
-      body: P.intl.string(P.t.jDMxz8)
+      title: w.intl.string(w.t["1KEdvL"]),
+      body: w.intl.string(w.t.jDMxz8)
     });
     else if ((null == (p = r.body) ? true : p.code) === R.evJ.SLOWMODE_RATE_LIMITED) {
       let t = null != (b = r.body.retry_after) ? b : 0;
@@ -231,8 +236,8 @@ async function B(e, t, n, r) {
         cooldownMs: t * O.Z.Millis.SECOND
       })
     } else if (429 === r.status) a.Z.show({
-      title: s ? P.intl.string(P.t.vWNFk5) : P.intl.string(P.t["1KEdvL"]),
-      body: P.intl.string(P.t["Whhv4+"])
+      title: s ? w.intl.string(w.t.vWNFk5) : w.intl.string(w.t["1KEdvL"]),
+      body: w.intl.string(w.t["Whhv4+"])
     });
     else if (C.fZ.has(null == (m = r.body) ? true : m.code)) throw r;
     else if (C.RN.has(null == (E = r.body) ? true : E.code)) {
@@ -264,8 +269,8 @@ async function B(e, t, n, r) {
         })
       })
     } else a.Z.show({
-      title: P.intl.string(P.t.j2d6Ki),
-      body: P.intl.string(P.t.fEptJC)
+      title: w.intl.string(w.t.j2d6Ki),
+      body: w.intl.string(w.t.fEptJC)
     })
   }
   let S = await new Promise((e, t) => {

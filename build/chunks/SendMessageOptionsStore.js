@@ -2,12 +2,13 @@
 /** chunk id: 111618, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => u
+  Z: () => p
 });
 var r, Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js");
+  Chunk570140 = require("./570140.js"),
+  Chunk959517 = require("./959517.js");
 
-function a(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -15,21 +16,57 @@ function a(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let s = {};
 
 function l(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      s(e, t, n[t])
+    })
+  }
+  return e
+}
+
+function c(e, t) {
+  var n = Object.keys(e);
+  if (Object.getOwnPropertySymbols) {
+    var r = Object.getOwnPropertySymbols(e);
+    t && (r = r.filter(function(t) {
+      return Object.getOwnPropertyDescriptor(e, t).enumerable
+    })), n.push.apply(n, r)
+  }
+  return n
+}
+
+function u(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : c(Object(t)).forEach(function(n) {
+    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+  }), e
+}
+let d = {};
+
+function f(e) {
   let {
     message: t,
     sendMessageOptions: n
   } = e;
-  null != n && (s[t.id] = n), null != t.nonce && t.nonce in s && delete s[t.nonce]
+  if (null != n) {
+    var r;
+    d[t.id] = u(l({}, n), {
+      location: null != (r = n.location) ? r : a.dy.OTHER
+    })
+  }
+  null != t.nonce && t.nonce in d && delete d[t.nonce]
 }
-class c extends(r = Chunk442837.ZP.Store) {
+class _ extends(r = Chunk442837.ZP.Store) {
   getOptions(e) {
-    return s[e]
+    return d[e]
   }
 }
-a(c, "displayName", "SendMessageOptionsStore");
-let u = new c(Chunk570140.Z, {
-  MESSAGE_CREATE: l
+s(_, "displayName", "SendMessageOptionsStore");
+let p = new _(Chunk570140.Z, {
+  MESSAGE_CREATE: f
 })

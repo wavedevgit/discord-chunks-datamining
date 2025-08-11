@@ -2,7 +2,7 @@
 /** chunk id: 278323, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => d
+  Z: () => f
 });
 var Chunk544891 = require("./544891.js"),
   Chunk570140 = require("./570140.js"),
@@ -11,8 +11,9 @@ var Chunk544891 = require("./544891.js"),
   Chunk592125 = require("./592125.js"),
   Chunk493683 = require("./493683.js"),
   Chunk904245 = require("./904245.js"),
-  Chunk981631 = require("./981631.js");
-let d = {
+  Chunk981631 = require("./981631.js"),
+  Chunk959517 = require("./959517.js");
+let f = {
   updateActivity(e) {
     let {
       applicationId: t,
@@ -75,24 +76,25 @@ let d = {
       activity: r,
       content: i,
       targetUserId: l,
-      location: d
-    } = e, f = s.Z.getChannel(t);
-    if (null == f) return Promise.resolve(null);
-    let _ = a.ZP.parse(f, null != i ? i : "");
-    return c.Z.sendMessage(f.id, _, false, {
+      location: f
+    } = e, _ = s.Z.getChannel(t);
+    if (null == _) return Promise.resolve(null);
+    let p = a.ZP.parse(_, null != i ? i : "");
+    return c.Z.sendMessage(_.id, p, false, {
       activityAction: {
         type: n,
         activity: r,
         targetUserId: l
-      }
+      },
+      location: d.dy.ACTIVITY_SHARE
     }).then(e => (o.ZP.trackWithMetadata(u.rMx.INVITE_SENT, {
-      location: d,
+      location: f,
       invite_type: r.type === u.IIU.LISTENING ? u.dAT.SPOTIFY : u.dAT.APPLICATION,
       application_id: r.application_id,
-      guild_id: f.getGuildId(),
-      channel_id: f.id,
+      guild_id: _.getGuildId(),
+      channel_id: _.id,
       message_id: null != e ? e.body.id : null
-    }), Promise.resolve(f)), e => Promise.reject(e))
+    }), Promise.resolve(_)), e => Promise.reject(e))
   },
   sendActivityInviteUser(e) {
     let {
