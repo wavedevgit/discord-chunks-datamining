@@ -20,30 +20,30 @@ let p = Chunk73800.forwardRef(function(e, t) {
     onClose: p,
     transitionState: R,
     reason: m
-  } = e, I = (0, r.e7)([u.default], () => u.default.getCurrentUser()), f = (0, r.e7)([h.Z], () => h.Z.getAction()), [C, g] = i.useState(null), [y, _] = i.useState(null), [P, b] = i.useState(null), [x, j] = i.useState(false), v = i.useCallback(async e => {
+  } = e, I = (0, r.e7)([u.default], () => u.default.getCurrentUser()), C = (0, r.e7)([h.Z], () => h.Z.getAction()), [f, g] = i.useState(null), [y, _] = i.useState(null), [P, b] = i.useState(null), [x, j] = i.useState(false), v = i.useCallback(async e => {
     j(true);
     try {
-      d.Z.isPhoneReverification(I, f) ? await a.Z.beginReverifyPhone(e, m) : await a.Z.beginAddPhone(e, m), b(null), g(e)
+      d.Z.isPhoneReverification(I, C) ? await a.Z.beginReverifyPhone(e, m) : await a.Z.beginAddPhone(e, m), b(null), g(e)
     } catch (e) {
       b(new o.Z(e))
     }
     j(false)
-  }, [I, m, f]), N = i.useCallback(async e => {
-    if (null != C && null != I) {
+  }, [I, m, C]), N = i.useCallback(async e => {
+    if (null != f && null != I) {
       j(true);
       try {
         let {
           token: t
-        } = await a.Z.verifyPhone(C, e);
+        } = await a.Z.verifyPhone(f, e);
         b(null), _(t)
       } catch (e) {
         b(new o.Z(e))
       }
       j(false)
     }
-  }, [I, C]), O = i.useCallback(async e => {
-    null != y && (d.Z.isPhoneReverification(I, f) ? await a.Z.reverifyPhone(y, e, m) : await a.Z.addPhone(y, e, m), null == n || n(), p())
-  }, [n, p, y, m, I, f]);
+  }, [I, f]), O = i.useCallback(async e => {
+    null != y && (d.Z.isPhoneReverification(I, C) ? await a.Z.reverifyPhone(y, e, m) : await a.Z.addPhone(y, e, m), null == n || n(), p())
+  }, [n, p, y, m, I, C]);
   return null != y ? (0, s.jsx)(l.Z, {
     onClose: p,
     transitionState: R,
@@ -54,7 +54,7 @@ let p = Chunk73800.forwardRef(function(e, t) {
     transitionState: R,
     error: null == P ? true : P.getAnyErrorMessage(),
     working: x,
-    validPhone: null != C,
+    validPhone: null != f,
     onAddPhone: v,
     onVerifyPhone: N
   })

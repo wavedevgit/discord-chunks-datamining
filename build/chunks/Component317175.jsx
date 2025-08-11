@@ -1,7 +1,7 @@
 /** Chunk was on 76540 **/
 /** chunk id: 317175, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => C
+  Z: () => f
 }), require("./361932.js"), require("./187205.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -19,7 +19,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk939175 = require("./939175.js"),
   Chunk20795 = require("./20795.js");
 
-function f(e, t, n) {
+function C(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -27,7 +27,7 @@ function f(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class C extends Chunk73800.PureComponent {
+class f extends Chunk73800.PureComponent {
   renderItems() {
     let {
       query: e
@@ -70,7 +70,7 @@ class C extends Chunk73800.PureComponent {
           "function" == typeof Object.getOwnPropertySymbols && (s = s.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
           }))), s.forEach(function(t) {
-            f(e, t, n[t])
+            C(e, t, n[t])
           })
         }
         return e
@@ -111,15 +111,15 @@ class C extends Chunk73800.PureComponent {
     })
   }
   constructor(e) {
-    super(e), f(this, "onChangeQuery", e => {
+    super(e), C(this, "onChangeQuery", e => {
       this.setState({
         query: e
       })
-    }), f(this, "onClearQuery", () => {
+    }), C(this, "onClearQuery", () => {
       this.setState({
         query: ""
       })
-    }), f(this, "onClick", e => {
+    }), C(this, "onClick", e => {
       var t, n;
       null == (t = (n = this.props).onClick) || t.call(n, e)
     }), this.state = {

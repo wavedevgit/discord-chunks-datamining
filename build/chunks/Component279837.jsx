@@ -54,10 +54,11 @@ class h extends(s = Chunk73800.PureComponent) {
             className: Chunk460268.spacing,
             children: [(0, Chunk255367.jsx)(Chunk481060.oil, {
               type: "password",
-              autoComplete: "off",
+              autoComplete: "current-password",
               autoFocus: true,
               value: u,
-              onChange: this.handlePasswordChange
+              onChange: this.handlePasswordChange,
+              required: true
             }), null != c && "" !== c ? (0, Chunk255367.jsxs)(Chunk481060.Text, {
               variant: "text-xs/normal",
               color: "text-danger",

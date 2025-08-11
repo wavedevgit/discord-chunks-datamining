@@ -19,7 +19,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk893354 = require("./893354.js"),
   Chunk20493 = require("./20493.js");
 
-function f(e, t, n) {
+function C(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -27,7 +27,7 @@ function f(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class C extends Chunk73800.PureComponent {
+class f extends Chunk73800.PureComponent {
   async componentDidMount() {
     let [e, {
       default: t
@@ -48,12 +48,12 @@ class C extends Chunk73800.PureComponent {
       error: i,
       working: r,
       transitionState: o,
-      validPhone: f
+      validPhone: C
     } = this.props;
     return e = null != Chunk73800 && "" !== Chunk73800 ? (0, Chunk255367.jsx)("div", {
       className: l()(Chunk282287.description, Chunk282287.error, Chunk20493.marginBottom20),
       children: Chunk73800
-    }) : f ? (0, Chunk255367.jsx)("div", {
+    }) : C ? (0, Chunk255367.jsx)("div", {
       className: l()(Chunk282287.description, Chunk20493.marginBottom20),
       children: Chunk388032.intl.string(Chunk388032.t["4qMI6O"])
     }) : (0, Chunk255367.jsxs)(Chunk255367.Fragment, {
@@ -64,7 +64,7 @@ class C extends Chunk73800.PureComponent {
         className: l()(Chunk282287.description, Chunk20493.marginBottom20),
         children: Chunk388032.intl.format(Chunk388032.t["3BTmqa"], {})
       })]
-    }), t = f ? (0, Chunk255367.jsxs)(Chunk600164.Z, {
+    }), t = C ? (0, Chunk255367.jsxs)(Chunk600164.Z, {
       className: Chunk282287.field,
       direction: Chunk600164.Z.Direction.VERTICAL,
       align: Chunk600164.Z.Align.CENTER,
@@ -82,7 +82,7 @@ class C extends Chunk73800.PureComponent {
       className: Chunk282287.field,
       onSubmit: this.handleAddPhone,
       submitting: Chunk120356
-    }), n = f ? Chunk388032.intl.string(Chunk388032.t.Xclkxs) : Chunk388032.intl.string(Chunk388032.t.uR76s7), (0, Chunk255367.jsxs)(Chunk481060.Y0X, {
+    }), n = C ? Chunk388032.intl.string(Chunk388032.t.Xclkxs) : Chunk388032.intl.string(Chunk388032.t.uR76s7), (0, Chunk255367.jsxs)(Chunk481060.Y0X, {
       impression: {
         impressionName: Chunk990547.ImpressionNames.USER_VERIFY_PHONE
       },
@@ -101,9 +101,9 @@ class C extends Chunk73800.PureComponent {
     })
   }
   constructor(e) {
-    super(e), f(this, "_animItem", null), f(this, "_lottieRef", true), f(this, "headerId", (0, o.Z)()), f(this, "setLottieRef", e => {
+    super(e), C(this, "_animItem", null), C(this, "_lottieRef", true), C(this, "headerId", (0, o.Z)()), C(this, "setLottieRef", e => {
       this._lottieRef = e
-    }), f(this, "handleAddPhone", e => {
+    }), C(this, "handleAddPhone", e => {
       this.state.animated || null == this._animItem ? this.setState({
         phone: e
       }) : (this._animItem.play(), this.setState({
@@ -114,12 +114,12 @@ class C extends Chunk73800.PureComponent {
         onAddPhone: t
       } = this.props;
       null == t || t(e)
-    }), f(this, "handleVerifyPhone", e => {
+    }), C(this, "handleVerifyPhone", e => {
       let {
         onVerifyPhone: t
       } = this.props;
       null == t || t(e)
-    }), f(this, "handleResendCode", () => {
+    }), C(this, "handleResendCode", () => {
       let {
         onAddPhone: e
       } = this.props;
@@ -130,4 +130,4 @@ class C extends Chunk73800.PureComponent {
     }
   }
 }
-let g = C
+let g = f

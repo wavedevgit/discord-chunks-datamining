@@ -69,29 +69,38 @@ function p(e) {
         children: [(0, i.jsx)(a.xJW, {
           title: u.intl.string(u.t.WBqMRU),
           error: null == A || null == (t = A.password) ? true : t[0],
+          required: true,
           children: (0, i.jsx)(a.oil, {
             type: "password",
             value: j,
             onChange: E,
-            inputRef: R
+            inputRef: R,
+            autoComplete: "current-password",
+            required: true
           })
         }), (0, i.jsx)(a.xJW, {
           className: m.newPassword,
           title: u.intl.string(u.t["8dM4FB"]),
           error: null != (g = null != (p = null == A || null == (n = A.new_password) ? true : n[0]) ? p : T) ? g : true,
+          required: true,
           children: (0, i.jsx)(a.oil, {
             type: "password",
             value: C,
-            onChange: O
+            onChange: O,
+            autoComplete: "new-password",
+            required: true
           })
         }), (0, i.jsx)(a.xJW, {
           className: m.newPassword,
           title: u.intl.string(u.t.iQG2KC),
           error: null != N ? N : true,
+          required: true,
           children: (0, i.jsx)(a.oil, {
             type: "password",
             value: v,
-            onChange: S
+            onChange: S,
+            autoComplete: "new-password",
+            required: true
           })
         })]
       }), (0, i.jsxs)(a.mzw, {
