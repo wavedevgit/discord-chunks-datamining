@@ -36,12 +36,12 @@ function C(e) {
   } = (0, c.ZP)(r, s.Z.EDIT_NAMEPLATE_MODAL), {
     available: m,
     purchased: _,
-    isFetchingCategories: y,
+    isFetchingCategories: O,
     isFetchingPurchases: C
-  } = (0, d.yV)("NameplateModal"), P = y || C && 0 === _.length;
+  } = (0, d.yV)("NameplateModal"), P = O || C && 0 === _.length;
   return (0, a.useEffect)(() => {
-    v.default.track(O.rMx.OPEN_MODAL, {
-      type: O.jXE.NAMEPLATE_CUSTOMIZATION,
+    v.default.track(g.rMx.OPEN_MODAL, {
+      type: g.jXE.NAMEPLATE_CUSTOMIZATION,
       location_stack: h
     })
   }, [h]), null == b ? null : (0, n.jsx)(c.Gt, {
@@ -52,7 +52,7 @@ function C(e) {
       parentComponent: "NameplateModal",
       "data-migration-pending": true,
       children: P ? (0, n.jsx)(i.$jN, {
-        className: g.spinner,
+        className: y.spinner,
         type: i.$jN.Type.SPINNING_CIRCLE
       }) : (0, n.jsx)(j, {
         user: b,
@@ -72,17 +72,17 @@ function j(e) {
   let {
     user: f,
     available: v,
-    purchased: O,
+    purchased: g,
     analyticsLocations: C,
     onClose: j,
     guildId: P,
     initialSelectedNameplate: E
-  } = e, x = (0, l.e7)([h.ZP], () => null != P && null != f ? h.ZP.getMember(P, f.id) : null), S = null != P ? null == x || null == (r = x.collectibles) || null == (t = r.nameplate) ? true : t.skuId : null == f || null == (d = f.collectibles) || null == (c = d.nameplate) ? true : c.skuId, w = O.find(e => e.skuId === S), {
+  } = e, x = (0, l.e7)([h.ZP], () => null != P && null != f ? h.ZP.getMember(P, f.id) : null), S = null != P ? null == x || null == (r = x.collectibles) || null == (t = r.nameplate) ? true : t.skuId : null == f || null == (d = f.collectibles) || null == (c = d.nameplate) ? true : c.skuId, w = g.find(e => e.skuId === S), {
     pendingNameplate: R
   } = (0, b.Zx)(f, P), [I, A] = (0, a.useState)(() => {
     var e;
     return true !== R ? R : null != (e = null != E ? E : w) ? e : null
-  }), N = (null == I ? true : I.skuId) === (true === R ? null == w ? true : w.skuId : null == R ? true : R.skuId), [k, T] = (0, a.useState)(() => null != I && O.some(e => e.id === I.id)), D = (0, a.useCallback)(e => {
+  }), N = (null == I ? true : I.skuId) === (true === R ? null == w ? true : w.skuId : null == R ? true : R.skuId), [k, T] = (0, a.useState)(() => null != I && g.some(e => e.id === I.id)), D = (0, a.useCallback)(e => {
     j(), (0, u.mK)({
       analyticsLocations: C,
       analyticsSource: s.Z.EDIT_NAMEPLATE_MODAL,
@@ -91,17 +91,20 @@ function j(e) {
   }, [C, j]);
   return (0, n.jsxs)(n.Fragment, {
     children: [(0, n.jsxs)(i.xBx, {
+      "data-migration-pending": true,
       separator: false,
-      className: g.header,
+      className: y.header,
       children: [(0, n.jsx)(i.X6q, {
         variant: "heading-lg/semibold",
-        children: y.intl.string(y.t.BwdeMz)
+        children: O.intl.string(O.t.BwdeMz)
       }), (0, n.jsx)(i.olH, {
-        className: g.closeButton,
+        "data-migration-pending": true,
+        className: y.closeButton,
         onClick: j
       })]
     }), (0, n.jsxs)(i.hzk, {
-      className: g.content,
+      "data-migration-pending": true,
+      className: y.content,
       scrollbarType: "none",
       children: [(0, n.jsx)(_.Z, {
         selected: I,
@@ -110,7 +113,7 @@ function j(e) {
         },
         onOpenShop: D,
         available: v,
-        purchased: O
+        purchased: g
       }), (0, n.jsx)(m.Z, {
         user: f,
         guildId: P,
@@ -118,10 +121,11 @@ function j(e) {
         purchased: k
       })]
     }), (0, n.jsxs)(i.mzw, {
-      className: g.modalFooter,
+      "data-migration-pending": true,
+      className: y.modalFooter,
       children: [k || null == I ? (0, n.jsx)(i.zxk, {
         variant: "primary",
-        text: y.intl.string(y.t.Jh8fJy),
+        text: O.intl.string(O.t.Jh8fJy),
         disabled: N,
         onClick: () => {
           null != P ? (0, p.RH)(I) : (0, o.Rx)(I), j()
@@ -129,10 +133,10 @@ function j(e) {
       }) : (0, n.jsx)(i.zxk, {
         variant: "primary",
         onClick: () => D(null == I ? true : I.skuId),
-        text: y.intl.string(y.t.fYfGgI)
+        text: O.intl.string(O.t.fYfGgI)
       }), (0, n.jsx)(i.zxk, {
         variant: "secondary",
-        text: y.intl.string(y.t.mDcKND),
+        text: O.intl.string(O.t.mDcKND),
         onClick: j
       })]
     })]

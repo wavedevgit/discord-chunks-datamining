@@ -2,12 +2,11 @@
 /** chunk id: 832820, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => y
+  Z: () => b
 }), require("./704826.js"), require("./35282.js"), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk793030 = require("./793030.js"),
-  Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk596454 = require("./596454.jsx"),
   Chunk962293 = require("./962293.jsx"),
@@ -21,97 +20,91 @@ var Chunk255367 = require("./255367.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk521338 = require("./521338.js");
 
-function b(e) {
+function E(e) {
   let {
     emojiConfetti: t
   } = e, n = i.useMemo(() => null == t ? null : null == t.id ? t.optionallyDiverseSequence : t.name, [t]);
-  return null == t ? (0, r.jsx)(s.EO4, {
+  return null == t ? (0, r.jsx)(a.EO4, {
     size: "sm",
     color: "currentColor"
-  }) : (0, r.jsx)(l.Z, {
+  }) : (0, r.jsx)(s.Z, {
     animated: false,
     emojiId: t.id,
     emojiName: n
   })
 }
-let y = function(e) {
+let b = function(e) {
   let {
     channel: t
-  } = e, n = (0, u.z8)(t.id), l = (0, u.OG)(t.id), {
-    entitlement: y,
-    numPotions: O
-  } = (0, h.t6)(f.D1), v = i.useCallback(e => {
-    (0, u.Hi)(e, t.id)
-  }, [t.id]), I = i.useCallback(() => {
-    (0, u.GA)(t.id)
-  }, [t.id]), T = i.useMemo(() => null != n ? n.name.replace(/_/g, " ") : "", [n]), S = i.useCallback(() => {
-    (0, u.Hb)(t.id)
-  }, [t.id]), A = i.useMemo(() => null != O && O > 0 ? (null == y ? true : y.type) === m.qc2.DEVELOPER_GIFT ? g.intl.format(g.t["b+P6ra"], {
-    numPotions: O
-  }) : g.intl.format(g.t.RiQ4cn, {
-    numPotions: O
-  }) : g.intl.string(g.t.hvVgAQ), [O, y]), [N, C] = i.useState(false === l);
+  } = e, n = (0, c.z8)(t.id), s = (0, c.OG)(t.id), {
+    entitlement: b,
+    numPotions: y
+  } = (0, p.t6)(d.D1), O = i.useCallback(e => {
+    (0, c.Hi)(e, t.id)
+  }, [t.id]), v = i.useCallback(() => {
+    (0, c.GA)(t.id)
+  }, [t.id]), I = i.useMemo(() => null != n ? n.name.replace(/_/g, " ") : "", [n]), T = i.useCallback(() => {
+    (0, c.Hb)(t.id)
+  }, [t.id]), S = i.useMemo(() => null != y && y > 0 ? (null == b ? true : b.type) === h.qc2.DEVELOPER_GIFT ? m.intl.format(m.t["b+P6ra"], {
+    numPotions: y
+  }) : m.intl.format(m.t.RiQ4cn, {
+    numPotions: y
+  }) : m.intl.string(m.t.hvVgAQ), [y, b]), [A, N] = i.useState(false === s);
   i.useEffect(() => {
-    false === l && I()
-  }, [l, I]);
-  let R = i.useCallback(() => {
-      C(false)
+    false === s && v()
+  }, [s, v]);
+  let C = i.useCallback(() => {
+      N(false)
     }, []),
-    P = i.useCallback(e => {
-      v(e), C(false)
-    }, [v]),
-    w = i.useCallback(() => {
-      (0, _.s)({
+    R = i.useCallback(e => {
+      O(e), N(false)
+    }, [O]),
+    P = i.useCallback(() => {
+      (0, f.s)({
         channelId: t.id,
         onRedeem: () => {},
         buttonUseState: "apply",
-        source: d.YD.MessageConfettiBar
+        source: u.YD.MessageConfettiBar
       })
     }, [t.id]),
-    D = i.useRef(null);
+    w = i.useRef(null);
   return (0, r.jsxs)("div", {
-    className: E.bar,
-    children: [(0, r.jsx)(p.Z, {
+    className: g.bar,
+    children: [(0, r.jsx)(_.Z, {
       channel: t,
-      shouldShow: N,
-      onRequestClose: R,
-      setEmojiConfetti: P,
-      positionRef: D,
+      shouldShow: A,
+      onRequestClose: C,
+      setEmojiConfetti: R,
+      positionRef: w,
       position: "top",
       align: "left",
-      children: () => (0, r.jsxs)(s.P3F, {
-        innerRef: D,
-        onClick: () => C(!N),
-        className: E.emojiSelectContainer,
+      children: () => (0, r.jsxs)(a.P3F, {
+        innerRef: w,
+        onClick: () => N(!A),
+        className: g.emojiSelectContainer,
         children: [(0, r.jsx)("div", {
-          className: E.emojiIconContainer,
-          children: (0, r.jsx)(b, {
+          className: g.emojiIconContainer,
+          children: (0, r.jsx)(E, {
             emojiConfetti: null != n ? n : true
           })
         }), (0, r.jsx)(o.xv, {
           variant: "text-sm/medium",
-          children: null == n ? g.intl.string(g.t.mzfiGR) : g.intl.format(g.t.Hcd9OT, {
-            emojiName: T
+          children: null == n ? m.intl.string(m.t.mzfiGR) : m.intl.format(m.t.Hcd9OT, {
+            emojiName: I
           })
         })]
       })
     }), (0, r.jsxs)("div", {
-      className: E.end,
-      children: [(0, r.jsx)(a.zx, {
-        look: a.zx.Looks.LINK,
-        size: a.zx.Sizes.SMALL,
-        onClick: w,
-        color: a.zx.Colors.TRANSPARENT,
-        className: E.learnMoreButton,
-        children: (0, r.jsx)(o.xv, {
-          variant: "text-sm/medium",
-          children: A
-        })
+      className: g.end,
+      children: [(0, r.jsx)(a.zxk, {
+        onClick: P,
+        text: S,
+        variant: "primary"
       }), (0, r.jsx)("div", {
-        className: E.separator,
+        className: g.separator,
         "aria-hidden": true
-      }), (0, r.jsx)(c.B, {
-        onClick: S
+      }), (0, r.jsx)(l.B, {
+        onClick: T
       })]
     })]
   })

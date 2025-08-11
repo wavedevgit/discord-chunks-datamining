@@ -85,16 +85,19 @@ function C(e) {
   });
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)(a.xBx, {
+      "data-migration-pending": true,
       separator: false,
       className: N.modalHeader,
       children: [(0, r.jsx)(a.X6q, {
         variant: "heading-lg/semibold",
         children: A.intl.string(A.t.HykynZ)
       }), (0, r.jsx)(a.olH, {
+        "data-migration-pending": true,
         className: N.modalCloseButton,
         onClick: f
       })]
     }), (0, r.jsxs)(a.hzk, {
+      "data-migration-pending": true,
       className: N.modalContent,
       scrollbarType: "none",
       children: [(0, r.jsx)(I.Z, {
@@ -111,6 +114,7 @@ function C(e) {
         avatarDecorationOverride: D
       })]
     }), (0, r.jsxs)(a.mzw, {
+      "data-migration-pending": true,
       className: N.modalFooter,
       children: [Y(), H ? (0, r.jsx)(h.Z, {
         product: x,

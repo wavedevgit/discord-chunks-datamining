@@ -40,31 +40,34 @@ function S(e) {
     selectedProfileEffectId: f,
     selectedProfileEffectItem: h
   } = e, b = (0, p.M)(), j = b && (0, u.G1)(r);
-  return (0, n.jsxs)(o.mzw, {
-    className: _.modalFooter,
-    children: [null != i && (!(0, u.qS)(i) || d) || null === f ? (0, n.jsx)(o.zxk, {
-      variant: "primary",
-      text: E.intl.string(E.t.Jh8fJy),
-      onClick: l,
-      disabled: a
-    }) : d || !(0, u.G1)(r) ? (0, n.jsx)(o.zxk, {
-      variant: "primary",
-      text: E.intl.string(E.t.fYfGgI),
-      onClick: () => c(null == h ? true : h.skuId)
-    }) : (0, n.jsx)(g.Z, {
-      subscriptionTier: P.Si.TIER_2,
-      showGradient: b,
-      textOptions: {
-        textOverride: y.ZP.isPremium(t) ? E.intl.string(E.t.KXLX7u) : b ? E.intl.string(E.t.pj0XBA) : E.intl.string(E.t.mr4K7O)
-      }
-    }), j ? (0, n.jsx)(m.Z, {
-      product: r,
-      onSecondaryClick: s
-    }) : (0, n.jsx)(o.zxk, {
-      variant: "secondary",
-      text: E.intl.string(E.t["ETE/oK"]),
-      onClick: s
-    })]
+  return (0, n.jsx)(n.Fragment, {
+    children: (0, n.jsxs)(o.mzw, {
+      "data-migration-pending": true,
+      className: _.modalFooter,
+      children: [null != i && (!(0, u.qS)(i) || d) || null === f ? (0, n.jsx)(o.zxk, {
+        variant: "primary",
+        text: E.intl.string(E.t.Jh8fJy),
+        onClick: l,
+        disabled: a
+      }) : d || !(0, u.G1)(r) ? (0, n.jsx)(o.zxk, {
+        variant: "primary",
+        text: E.intl.string(E.t.fYfGgI),
+        onClick: () => c(null == h ? true : h.skuId)
+      }) : (0, n.jsx)(g.Z, {
+        subscriptionTier: P.Si.TIER_2,
+        showGradient: b,
+        textOptions: {
+          textOverride: y.ZP.isPremium(t) ? E.intl.string(E.t.KXLX7u) : b ? E.intl.string(E.t.pj0XBA) : E.intl.string(E.t.mr4K7O)
+        }
+      }), j ? (0, n.jsx)(m.Z, {
+        product: r,
+        onSecondaryClick: s
+      }) : (0, n.jsx)(o.zxk, {
+        variant: "secondary",
+        text: E.intl.string(E.t["ETE/oK"]),
+        onClick: s
+      })]
+    })
   })
 }
 
@@ -102,16 +105,19 @@ function C(e) {
   }, [g, f]);
   return (0, n.jsxs)(n.Fragment, {
     children: [(0, n.jsxs)(o.xBx, {
+      "data-migration-pending": true,
       separator: false,
       className: _.modalHeader,
       children: [(0, n.jsx)(o.X6q, {
         variant: "heading-lg/semibold",
         children: E.intl.string(E.t["/6nv6O"])
       }), (0, n.jsx)(o.olH, {
+        "data-migration-pending": true,
         className: _.modalCloseButton,
         onClick: f
       })]
     }), (0, n.jsxs)(o.hzk, {
+      "data-migration-pending": true,
       className: _.modalContent,
       children: [(0, n.jsx)(O.Z, {
         user: t,
