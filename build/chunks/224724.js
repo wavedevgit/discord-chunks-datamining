@@ -2,50 +2,62 @@
 /** chunk id: 224724, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => _
+  Z: () => E
 });
-var Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js");
-let o = null,
-  a = false;
+var Chunk392711 = require("./392711.js"),
+  i = require.n(Chunk392711),
+  Chunk442837 = require("./442837.js"),
+  Chunk570140 = require("./570140.js"),
+  Chunk594174 = require("./594174.js"),
+  Chunk621853 = require("./621853.js");
+let c = null,
+  u = null,
+  d = false;
 
-function s(e) {
+function f(e) {
   let {
     widgets: t
   } = e;
-  o = t
+  if (c = t, null === u) {
+    let e = s.default.getCurrentUser();
+    if (null != e) {
+      var n;
+      let t = l.Z.getUserProfile(e.id);
+      u = null != (n = null == t ? true : t.widgets) ? n : []
+    }
+  }
 }
 
-function l() {
-  o = null
+function _() {
+  c = null, u = null
 }
 
-function c(e) {
-  a = true
+function p(e) {
+  d = true
 }
 
-function u(e) {
-  a = false, null !== o && (o = null)
+function h(e) {
+  d = false, null !== c && (u = c, c = null)
 }
 
-function d(e) {
-  a = false
+function m(e) {
+  d = false
 }
-class f extends Chunk442837.ZP.Store {
+class g extends Chunk442837.ZP.Store {
   getPendingWidgets() {
-    return o
+    return c
   }
   hasPendingChanges() {
-    return null !== o
+    return null !== c && (null === u || !i().isEqual(c, u))
   }
   get isSubmitting() {
-    return a
+    return d
   }
 }
-let _ = new f(Chunk570140.Z, {
-  WIDGET_PENDING_SET: s,
-  WIDGET_PENDING_SAVE_START: c,
-  WIDGET_PENDING_SAVE_SUCCESS: u,
-  WIDGET_PENDING_SAVE_FAILURE: d,
-  WIDGET_PENDING_CLEAR: l
+let E = new g(Chunk570140.Z, {
+  WIDGET_PENDING_SET: f,
+  WIDGET_PENDING_SAVE_START: p,
+  WIDGET_PENDING_SAVE_SUCCESS: h,
+  WIDGET_PENDING_SAVE_FAILURE: m,
+  WIDGET_PENDING_CLEAR: _
 })

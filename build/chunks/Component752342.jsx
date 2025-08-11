@@ -37,38 +37,38 @@ function S(e) {
     user: t,
     currentUser: n,
     guildId: S,
-    channelId: A,
-    messageId: w,
+    channelId: w,
+    messageId: A,
     roleId: C,
     sessionId: L,
-    initialSection: k,
-    initialSubsection: D,
-    transitionState: G,
-    openedAt: B,
-    onClose: M,
-    sourceAnalyticsLocations: R = []
-  } = e, U = S === T.ME ? true : S, F = (0, u.ZP)(t.id, U), V = s.ZP.getName(U, A, t), Y = (0, c.Dt)(), {
+    initialSection: D,
+    initialSubsection: k,
+    transitionState: R,
+    openedAt: G,
+    onClose: B,
+    sourceAnalyticsLocations: M = []
+  } = e, U = S === T.ME ? true : S, F = (0, u.ZP)(t.id, U), V = s.ZP.getName(U, w, t), Y = (0, c.Dt)(), {
     analyticsLocations: H
-  } = (0, a.ZP)([...R, o.Z.USER_PROFILE_MODAL]), W = (0, d.ZB)({
+  } = (0, a.ZP)([...M, o.Z.USER_PROFILE_MODAL]), W = (0, d.ZB)({
     layout: "MODAL",
     userId: t.id,
     sourceSessionId: L,
     guildId: U,
-    channelId: A,
-    messageId: w,
+    channelId: w,
+    messageId: A,
     roleId: C
   }), z = (0, P.Z)(t);
   return (0, r.jsx)(a.Gt, {
     value: H,
     children: (0, r.jsx)(d.Mt, {
       value: W,
-      openedAt: B,
+      openedAt: G,
       fetchStartedAt: null == F ? true : F.fetchStartedAt,
       fetchEndedAt: null == F ? true : F.fetchEndedAt,
       isLoaded: null == F ? true : F.isLoaded,
       children: (0, r.jsx)(l.Y0X, {
         "data-migration-pending": true,
-        transitionState: G,
+        transitionState: R,
         className: E.root,
         hideShadow: true,
         "aria-labelledby": Y,
@@ -90,7 +90,7 @@ function S(e) {
               children: (0, r.jsx)(x.Z, {
                 user: t,
                 guildId: U,
-                onCloseProfile: M
+                onCloseProfile: B
               })
             }), (0, r.jsxs)("div", {
               children: [(0, r.jsx)(p.Z, {
@@ -103,14 +103,14 @@ function S(e) {
                   user: t,
                   displayProfile: F,
                   guildId: U,
-                  channelId: A,
+                  channelId: w,
                   themeType: Z.lY.MODAL
                 }), (0, r.jsx)(_.Z, {
                   location: "BotUserProfileModal",
                   user: t,
                   themeType: Z.lY.MODAL,
-                  hasEntered: G === l.Dvm.ENTERED,
-                  onCloseProfile: M,
+                  hasEntered: R === l.Dvm.ENTERED,
+                  onCloseProfile: B,
                   disableToolbar: true
                 }), (0, r.jsxs)("div", {
                   className: E.headerButtons,
@@ -147,7 +147,7 @@ function S(e) {
                 tags: (0, r.jsx)(m.Z, {
                   displayProfile: F,
                   themeType: Z.lY.MODAL,
-                  onClose: M
+                  onClose: B
                 })
               }), (0, r.jsx)(I.Z, {
                 user: t,
@@ -155,9 +155,9 @@ function S(e) {
                 displayProfile: F,
                 guildId: U,
                 items: z,
-                initialSection: null != k ? k : Z.oh.BOT_INFO,
-                initialSubsection: D,
-                onClose: M
+                initialSection: null != D ? D : Z.oh.BOT_INFO,
+                initialSubsection: k,
+                onClose: B
               })]
             })]
           })

@@ -42,38 +42,38 @@ function I(e) {
     location: "UserProfileModalActivity"
   }), {
     live: S,
-    recent: A,
-    stream: w
+    recent: w,
+    stream: A
   } = (0, f.Z)(t.id), {
     voiceChannel: C,
     voiceActivity: L
   } = (0, m.Z)({
     userId: t.id,
     guildId: P
-  }), k = (0, l.e7)([a.Z], () => a.Z.isFetchingUserOutbox(t.id)), D = t.id === n.id, G = (0, l.e7)([s.Z, c.Z], () => {
-    let e = D ? s.Z.getStatus() : c.Z.getStatus(t.id);
+  }), D = (0, l.e7)([a.Z], () => a.Z.isFetchingUserOutbox(t.id)), k = t.id === n.id, R = (0, l.e7)([s.Z, c.Z], () => {
+    let e = k ? s.Z.getStatus() : c.Z.getStatus(t.id);
     return e === i.Skl.OFFLINE || e === i.Skl.INVISIBLE
-  }), B = S.length > 0 || null != w, M = N && null == w && null == L && null != C, R = !G && (B || M), U = A.length > 0;
-  return R || U || !k ? (0, r.jsxs)(i.zJl, {
+  }), G = S.length > 0 || null != A, B = N && null == A && null == L && null != C, M = !R && (G || B), U = w.length > 0;
+  return M || U || !D ? (0, r.jsxs)(i.zJl, {
     className: O.scroller,
     fade: true,
-    children: [R ? (0, r.jsx)(p.Z, {
+    children: [M ? (0, r.jsx)(p.Z, {
       "aria-label": v.intl.string(v.t.J6STd3),
       children: (0, r.jsxs)("ul", {
         className: O.activityList,
-        children: [!E && M && (0, r.jsx)("li", {
+        children: [!E && B && (0, r.jsx)("li", {
           children: (0, r.jsx)(h.Z, {
             user: t,
             currentUser: n,
             voiceChannel: C,
             onClose: T
           })
-        }), null != w && (0, r.jsx)("li", {
+        }), null != A && (0, r.jsx)("li", {
           children: (0, r.jsx)(j.Z, {
             location: "UserProfileModalActivity",
             user: t,
             currentUser: n,
-            stream: w,
+            stream: A,
             onClose: T,
             profileGuildId: null == I ? true : I.guildId
           })
@@ -89,7 +89,7 @@ function I(e) {
       })
     }) : null, U ? (0, r.jsx)(p.Z, {
       heading: v.intl.string(v.t.M0zgnZ),
-      introText: D ? v.intl.format(v.t["4bk9Ag"], {
+      introText: k ? v.intl.format(v.t["4bk9Ag"], {
         learnMoreHook: (e, t) => (0, r.jsx)(i.eee, {
           href: d.Z.getArticleURL(y.BhN.ACTIVITY_STATUS_SETTINGS),
           children: e
@@ -98,7 +98,7 @@ function I(e) {
       scrollIntoView: Z === x.Tb.RECENT_ACTIVITY,
       children: (0, r.jsx)("ul", {
         className: O.activityList,
-        children: A.map(e => (0, r.jsx)("li", {
+        children: w.map(e => (0, r.jsx)("li", {
           children: (0, r.jsx)(b.Z, {
             location: "UserProfileModalActivity",
             user: t,

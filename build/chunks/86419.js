@@ -2,11 +2,12 @@
 /** chunk id: 86419, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  ES: () => I,
-  X6: () => S,
-  qH: () => v,
-  tk: () => A,
-  vH: () => T
+  ES: () => S,
+  X6: () => N,
+  qH: () => I,
+  tk: () => C,
+  vH: () => A,
+  y8: () => T
 }), require("./388685.js"), require("./642613.js"), require("./539854.js");
 var Chunk296009 = require("./296009.js"),
   Chunk224706 = require("./224706.js"),
@@ -96,56 +97,60 @@ function O(e, t) {
   return b([t, ...n])
 }
 
-function v(e) {
-  var t, n;
-  let u, d;
-  if (l.Z.hasPendingChanges()) u = null != (t = l.Z.getPendingWidgets()) ? t : [];
+function v() {
+  var e, t;
+  let n;
+  if (Chunk224724.Z.hasPendingChanges()) n = null != (e = Chunk224724.Z.getPendingWidgets()) ? module : [];
   else {
-    let e = o.default.getCurrentUser(),
-      t = null != e ? a.Z.getUserProfile(e.id) : null;
-    u = null != (n = null == t ? true : t.widgets) ? n : []
+    let e = Chunk594174.default.getCurrentUser(),
+      r = null != module ? Chunk621853.Z.getUserProfile(module.id) : null;
+    n = null != (t = null == Chunk296009 ? true : Chunk296009.widgets) ? exports : []
   }
-  let f = u.find(t => t.type === e);
-  if (null != f)
-    if (e === r.l.FAVORITE_GAMES) d = E(e);
-    else {
-      let t = f.games || [];
-      if (t.length >= c.Xe[e]) return;
-      d = [...t, E(e)]
-    }
-  else d = e === r.l.FAVORITE_GAMES ? E(e) : [E(e)];
-  let _ = O(u, y(e, d));
-  s.Z.setPendingWidgets(_);
-  let p = [];
-  e === r.l.FAVORITE_GAMES ? p.push(d.applicationId) : d.forEach(e => {
-    p.push(e.applicationId)
-  }), i.Z.getDetectableGamesSupplemental(p)
+  return require
 }
 
-function I(e, t) {
-  var n, u, d;
-  let f, _;
-  if (l.Z.hasPendingChanges()) f = null != (n = l.Z.getPendingWidgets()) ? n : [];
-  else {
-    let e = o.default.getCurrentUser(),
-      t = null != e ? a.Z.getUserProfile(e.id) : null;
-    f = null != (u = null == t ? true : t.widgets) ? u : []
-  }
-  let p = f.find(t => t.type === e),
-    h = c.Xe[e];
-  if (null != p) {
-    if (e === r.l.FAVORITE_GAMES);
-    else if (((null == (d = p.games) ? true : d.length) || 0) >= h) return
-  }
-  let m = {
-    applicationId: t
-  };
-  _ = null != p ? e === r.l.FAVORITE_GAMES ? m : [...p.games || [], m] : e === r.l.FAVORITE_GAMES ? m : [m];
-  let g = O(f, y(e, _));
-  s.Z.setPendingWidgets(g), i.Z.getDetectableGamesSupplemental([t])
+function I(e) {
+  let t, n = v(),
+    o = n.find(t => t.type === e);
+  if (null != o)
+    if (e === r.l.FAVORITE_GAMES) t = E(e);
+    else {
+      let n = o.games || [];
+      if (n.length >= c.Xe[e]) return;
+      t = [...n, E(e)]
+    }
+  else t = e === r.l.FAVORITE_GAMES ? E(e) : [E(e)];
+  let a = O(n, y(e, t));
+  s.Z.setPendingWidgets(a);
+  let l = [];
+  e === r.l.FAVORITE_GAMES ? l.push(t.applicationId) : t.forEach(e => {
+    l.push(e.applicationId)
+  }), i.Z.getDetectableGamesSupplemental(l)
 }
 
 function T(e) {
+  let t = v().filter(t => t.type !== e);
+  s.Z.setPendingWidgets(t)
+}
+
+function S(e, t) {
+  let n, o = v(),
+    a = o.find(t => t.type === e),
+    l = c.Xe[e];
+  if (null != a)
+    if (e === r.l.FAVORITE_GAMES);
+    else {
+      var u;
+      if (((null == (u = a.games) ? true : u.length) || 0) >= l) return
+    } let d = {
+    applicationId: t
+  };
+  n = null != a ? e === r.l.FAVORITE_GAMES ? d : [...a.games || [], d] : e === r.l.FAVORITE_GAMES ? d : [d];
+  let f = O(o, y(e, n));
+  s.Z.setPendingWidgets(f), i.Z.getDetectableGamesSupplemental([t])
+}
+
+function A(e) {
   let t, n = e => ({
     game_id: e.applicationId,
     comment: e.comment,
@@ -158,7 +163,7 @@ function T(e) {
     }
   }
 }
-async function S() {
+async function N() {
   let e = Chunk224724.Z.getPendingWidgets();
   if (null !== module) try {
     await Chunk592183.Z.savePendingWidgets(module)
@@ -166,7 +171,7 @@ async function S() {
     console.error("Failed to save sample widgets:", module)
   }
 }
-async function A() {
+async function C() {
   try {
     await Chunk592183.Z.savePendingWidgets([])
   } catch (e) {
