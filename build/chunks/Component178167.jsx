@@ -11,19 +11,19 @@ var Chunk255367 = require("./255367.js"),
   Chunk59662 = require("./59662.js"),
   Chunk254204 = require("./254204.js");
 
-function u(e) {
+function c(e) {
   let {
     icon: t,
     onClick: n,
-    disabled: o
+    disabled: l
   } = e;
-  return (0, i.jsx)(l.zx, {
-    look: l.zx.Looks.BLANK,
-    size: l.zx.Sizes.NONE,
-    className: c.topBarButton,
-    innerClassName: c.iconButtonInner,
+  return (0, i.jsx)(s.zx, {
+    look: s.zx.Looks.BLANK,
+    size: s.zx.Sizes.NONE,
+    className: u.topBarButton,
+    innerClassName: u.iconButtonInner,
     onClick: n,
-    disabled: o,
+    disabled: l,
     children: (0, i.jsx)(t, {
       size: "sm"
     })
@@ -35,27 +35,27 @@ function d(e) {
     onClose: t
   } = e, {
     history: n,
-    activeIndex: l,
+    activeIndex: s,
     forward: d,
     back: f
-  } = (0, s.t)();
+  } = (0, r.t)();
   return (0, i.jsx)("div", {
-    className: c.topBar,
+    className: u.topBar,
     children: (0, i.jsx)(a.TF, {
       leading: (0, i.jsxs)("div", {
-        className: c.arrowButtons,
-        children: [(0, i.jsx)(u, {
-          icon: r.whL,
-          disabled: 0 === l,
+        className: u.arrowButtons,
+        children: [(0, i.jsx)(c, {
+          icon: o.whL,
+          disabled: 0 === s,
           onClick: f
-        }), (0, i.jsx)(u, {
-          icon: r.ZSh,
-          disabled: l === n.length - 1,
+        }), (0, i.jsx)(c, {
+          icon: o.ZSh,
+          disabled: s === n.length - 1,
           onClick: d
         })]
       }),
-      trailing: o.tq && (0, i.jsx)(u, {
-        icon: r.Dio,
+      trailing: l.tq && (0, i.jsx)(c, {
+        icon: o.Dio,
         onClick: t
       })
     })

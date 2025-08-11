@@ -1,12 +1,12 @@
 /** Chunk was on 36878 **/
 /** chunk id: 985230, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  ZP: () => s
+  ZP: () => u
 });
 var Chunk657707 = require("./657707.js"),
   Chunk509613 = require("./509613.js"),
   Chunk388032 = require("./388032.jsx");
-let r = (0, Chunk509613.k4)("Voice", {
+let o = (0, Chunk509613.k4)("Voice", {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.K3lovL),
     layout: []
   }),
@@ -14,8 +14,12 @@ let r = (0, Chunk509613.k4)("Voice", {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.FlNoSU),
     layout: []
   }),
-  s = (0, Chunk509613.wf)("VoiceAndVideo", {
+  r = (0, Chunk509613.x1)("VoiceAndVideoPane", {
+    useTitle: () => Chunk388032.intl.string(Chunk388032.t.B1fFpa),
+    layout: [o, a]
+  }),
+  u = (0, Chunk509613.wf)("VoiceAndVideo", {
     icon: Chunk657707.S6n,
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.B1fFpa),
-    layout: [r, a]
+    layout: [r]
   })

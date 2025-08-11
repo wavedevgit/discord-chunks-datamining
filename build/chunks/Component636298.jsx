@@ -1,12 +1,12 @@
 /** Chunk was on 36878 **/
 /** chunk id: 636298, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => g
+  Z: () => v
 });
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk120356 = require("./120356.js"),
-  r = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk873546 = require("./873546.js"),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
@@ -14,14 +14,14 @@ var Chunk255367 = require("./255367.js"),
   Chunk36361 = require("./36361.jsx"),
   Chunk134439 = require("./134439.js");
 
-function m(e) {
+function g(e) {
   let {
     icon: t,
     onClick: n
   } = e;
-  return (0, i.jsx)(s.zx, {
-    look: s.zx.Looks.BLANK,
-    size: s.zx.Sizes.ICON,
+  return (0, i.jsx)(r.zx, {
+    look: r.zx.Looks.BLANK,
+    size: r.zx.Sizes.ICON,
     className: f.contentHeaderButton,
     innerClassName: f.iconButtonInner,
     onClick: n,
@@ -31,51 +31,51 @@ function m(e) {
   })
 }
 
-function x(e) {
+function m(e) {
   let {
     title: t,
     onClose: n,
-    setShowNavigationMobile: o
+    setShowNavigationMobile: l
   } = e;
   return (0, i.jsxs)("div", {
     className: f.contentHeader,
     children: [(0, i.jsxs)("div", {
       className: f.contentHeaderLeft,
-      children: [a.tq && (0, i.jsx)(m, {
-        icon: c.yFM,
-        onClick: () => o(true)
-      }), (0, i.jsx)(c.X6q, {
+      children: [a.tq && (0, i.jsx)(g, {
+        icon: u.yFM,
+        onClick: () => l(true)
+      }), (0, i.jsx)(u.X6q, {
         variant: "heading-md/normal",
         color: "header-secondary",
         children: t
       })]
-    }), !a.tq && (0, i.jsx)(m, {
-      icon: c.Uz9,
+    }), !a.tq && (0, i.jsx)(g, {
+      icon: u.Uz9,
       onClick: n
     })]
   })
 }
-let g = Chunk73800.memo(function(e) {
+let v = Chunk73800.memo(function(e) {
   let {
     onClose: t,
     setShowNavigationMobile: n,
-    setting: o
-  } = e, l = o.useTitle(), {
-    showNavigationMobile: s
-  } = (0, u.t)();
+    setting: l
+  } = e, s = l.useTitle(), {
+    showNavigationMobile: r
+  } = (0, c.t)();
   return (0, i.jsxs)("div", {
-    className: r()(f.content, {
+    className: o()(f.content, {
       [f.mobile]: a.tq,
-      [f.mobileNavigationOpen]: s
+      [f.mobileNavigationOpen]: r
     }),
-    children: [(0, i.jsx)(x, {
-      title: l,
+    children: [(0, i.jsx)(m, {
+      title: s,
       onClose: t,
       setShowNavigationMobile: n
-    }), (0, i.jsx)(c.w0Z, {
+    }), (0, i.jsx)(u.w0Z, {
       className: f.contentScroller,
       children: (0, i.jsx)(d.Z, {
-        node: o
+        node: l
       })
     })]
   })

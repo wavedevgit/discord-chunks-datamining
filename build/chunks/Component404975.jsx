@@ -5,7 +5,7 @@ require.d(exports, {
 }), require("./35282.js");
 var Chunk255367 = require("./255367.js"),
   Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk873546 = require("./873546.js"),
   Chunk481060 = require("./481060.js"),
   Chunk59662 = require("./59662.js"),
@@ -17,17 +17,17 @@ function f(e) {
   let {
     root: t,
     header: n,
-    footer: o
+    footer: l
   } = e, {
     showNavigationMobile: f
-  } = (0, s.t)();
+  } = (0, r.t)();
   return (0, i.jsxs)("div", {
-    className: l()(d.sidebar, {
-      [d.mobile]: r.tq,
+    className: s()(d.sidebar, {
+      [d.mobile]: o.tq,
       [d.mobileNavigationOpen]: f
     }),
     children: [null != n && (0, i.jsx)(n, {}), (0, i.jsx)(a.E1j, {
-      placeholder: u.intl.string(u.t["5h0QOD"]),
+      placeholder: c.intl.string(c.t["5h0QOD"]),
       query: "",
       onChange: () => {},
       className: d.search
@@ -38,15 +38,15 @@ function f(e) {
         className: d.nav,
         children: (0, i.jsx)("ul", {
           children: t.layout.map(e => (0, i.jsx)("li", {
-            children: (0, i.jsx)(c.Z, {
+            children: (0, i.jsx)(u.Z, {
               node: e
             })
           }, e.key))
         })
       })
-    }), null != o && (0, i.jsx)("footer", {
+    }), null != l && (0, i.jsx)("footer", {
       className: d.footer,
-      children: (0, i.jsx)(o, {})
+      children: (0, i.jsx)(l, {})
     })]
   })
 }
