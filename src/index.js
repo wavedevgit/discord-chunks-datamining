@@ -128,12 +128,14 @@ async function main() {
     const all = {};
     let remaining = everyChunks.length;
 
-    // check if chunk is component
-    if (code.includes(".jsx)(") || code.includes(".jsxs)(")) {
-      jsxChunks.push(chunk);
-      code = reverseJsxFromString(code);
-    }
     for (let chunk in everyChunks) {
+      // check if chunk is component
+      if (
+        everyChunks[chunk].includes(".jsx)(") ||
+        everyChunks[chunk].includes(".jsxs)(")
+      ) {
+        jsxChunks.push(chunk);
+      }
       remaining -= 1;
       const [type, chunkData] = determineType(
         everyChunks[chunk],
