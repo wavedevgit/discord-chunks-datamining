@@ -218,23 +218,28 @@ class q extends Chunk73800.PureComponent {
     return null
   }
   renderResults() {
-    let {
-      query: e
-    } = this.state, {
-      results: t
-    } = this.props;
-    return 0 === exports.length && module.length > 0 ? (0, Chunk255367.jsx)(B, {}) : 0 === exports.length ? null : (0, Chunk255367.jsx)(Chunk481060._2F, {
-      innerId: this._listId,
-      innerRole: "listbox",
-      "aria-label": Chunk388032.intl.string(Chunk388032.t.Wef5Dg),
-      ref: this.scrollerRef,
-      sectionHeight: 0,
-      rowHeight: 34,
-      paddingBottom: G.bottom,
-      sections: [exports.length],
-      className: Chunk298746.scroller,
-      renderRow: this.renderRow,
-      renderSection: this.renderSection
+    return (0, Chunk255367.jsx)("div", {
+      className: Chunk298746.resultsArea,
+      children: (() => {
+        let {
+          query: e
+        } = this.state, {
+          results: t
+        } = this.props;
+        return 0 === exports.length && module.length > 0 ? (0, Chunk255367.jsx)(B, {}) : 0 === exports.length ? null : (0, Chunk255367.jsx)(Chunk481060._2F, {
+          innerId: this._listId,
+          innerRole: "listbox",
+          "aria-label": Chunk388032.intl.string(Chunk388032.t.Wef5Dg),
+          ref: this.scrollerRef,
+          sectionHeight: 0,
+          rowHeight: 34,
+          paddingBottom: G.bottom,
+          sections: [exports.length],
+          className: Chunk298746.scroller,
+          renderRow: this.renderRow,
+          renderSection: this.renderSection
+        })
+      })()
     })
   }
   focusNode(e) {
