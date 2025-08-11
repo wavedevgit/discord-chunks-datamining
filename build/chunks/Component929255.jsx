@@ -101,11 +101,11 @@ let j = e => {
     setCategoryRef: T
   } = e, P = (0, d.FF)("CollectiblesBrowse"), L = l.useRef(null), k = (0, p.S)(e => e.hasDefaultFilters()), I = (0, u.sp)(), {
     handlePageChange: N,
-    currentPage: w
+    currentPage: A
   } = (0, _.h)({
     scrollerRef: x,
     sortedCategories: j
-  }), A = l.useCallback(e => {
+  }), w = l.useCallback(e => {
     c.default.track(E.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
       collectibles_shop_session_id: null == I ? true : I.sessionId,
       page_section: null == I ? true : I.pageSection,
@@ -192,14 +192,14 @@ let j = e => {
         tab: b
       }, b) : (0, r.jsx)(u.k0, {
         newValue: {
-          pageIndex: w
+          pageIndex: A
         },
         children: (0, r.jsx)(f.Z, {
           isFullScreen: t,
           sortedCategories: j,
           setCategoryRef: T,
-          currentPage: w,
-          handlePageChange: A
+          currentPage: A,
+          handlePageChange: w
         })
       })]
     })

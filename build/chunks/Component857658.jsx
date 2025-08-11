@@ -225,7 +225,7 @@ function x(e) {
       }), (0, r.jsxs)("div", {
         className: O.trailingIcons,
         children: [null != c && (0, r.jsx)(p.ua7, {
-          text: y.intl.string(b.default["8QXO8v"]),
+          text: y.intl.string(b.default["NCFz+P"]),
           tooltipClassName: O.eyeDropperTooltip,
           children: e => (0, r.jsx)(_.h, S(I({
             variant: "icon-only",
@@ -233,16 +233,16 @@ function x(e) {
           }, e), {
             onClick: j,
             icon: d.i,
-            "aria-label": y.intl.string(b.default["8QXO8v"])
+            "aria-label": y.intl.string(b.default["NCFz+P"])
           }))
         }), Z && (0, r.jsx)(p.ua7, {
-          text: y.intl.string(b.default["rTik5+"]),
+          text: y.intl.string(y.t.N86XcH),
           children: e => (0, r.jsx)(_.h, S(I({}, e), {
             variant: "icon-only",
             size: "sm",
             onClick: () => G(v),
             icon: p.V_R,
-            "aria-label": y.intl.string(b.default["rTik5+"])
+            "aria-label": y.intl.string(y.t.N86XcH)
           }))
         })]
       })]

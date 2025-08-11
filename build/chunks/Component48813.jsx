@@ -39,17 +39,17 @@ let S = [Chunk981631.O0b.PAST_DUE, Chunk981631.O0b.PAUSED, Chunk981631.O0b.BILLI
       onClose: D,
       transitionState: k,
       premiumSubscription: A,
-      discountPrimary: L
+      discountPrimary: M
     } = e, {
-      initialStep: M
+      initialStep: L
     } = e, U = r.useRef(new a.qA), [B, Z] = r.useState(null), z = null == (t = (0, _.Af)(A)) ? true : t.planId, F = null != z ? _.ZP.getPremiumType(z) : null;
     o()(null != F, "Should not be cancelling Nitro without premiumType");
     let Y = F === N.p9.TIER_0 || F === N.p9.TIER_1 || F === N.p9.TIER_2;
-    null == M && (M = Y ? j.R.WHAT_YOU_LOSE : j.R.CONFIRM);
-    let [H, W, X, q] = (0, v.q)(M, A, w), V = (0, m.Q)(), G = (0, x.UV)(), {
+    null == L && (L = Y ? j.R.WHAT_YOU_LOSE : j.R.CONFIRM);
+    let [H, W, X, q] = (0, v.q)(L, A, w), V = (0, m.Q)(), G = (0, x.UV)(), {
       churnUserDiscountOffer: K,
       isFetchingChurnDiscountOffer: J
-    } = (0, x.WR)(!G || H !== j.R.WHAT_YOU_LOSE), Q = (0, y._)(A, N.Xh.PREMIUM_MONTH_TIER_2, K), [$] = (0, b.ED)({
+    } = (0, x.WR)(!G || null != A.canceledAt && H !== j.R.CONFIRM_DISCOUNT), Q = (0, y._)(A, N.Xh.PREMIUM_MONTH_TIER_2, K), [$] = (0, b.ED)({
       subscriptionId: A.id,
       items: (0, _.Ue)(null != (s = null == (n = A.renewalMutations) ? true : n.items) ? s : A.items),
       renewal: true,
@@ -132,7 +132,7 @@ let S = [Chunk981631.O0b.PAST_DUE, Chunk981631.O0b.PAUSED, Chunk981631.O0b.BILLI
           analyticsLocations: w,
           analyticsLocation: R,
           confettiCanvas: B,
-          discountPrimary: L,
+          discountPrimary: M,
           churnUserDiscountOffer: K,
           isFetchingChurnDiscountOffer: G && J,
           fullPrice: en,

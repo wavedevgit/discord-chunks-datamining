@@ -2,8 +2,10 @@
 /** chunk id: 937579, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
+  Qe: () => _,
   Tf: () => f,
-  ab: () => _
+  ab: () => h,
+  ev: () => p
 });
 var Chunk544891 = require("./544891.js"),
   Chunk704215 = require("./704215.js"),
@@ -56,8 +58,44 @@ async function f(e) {
     }
   }
 }
+async function _() {
+  Chunk570140.Z.dispatch({
+    type: "BILLING_USER_OFFER_FETCH_START"
+  });
+  try {
+    var e;
+    let t = null != (e = (await Chunk544891.tn.get({
+      url: Chunk981631.ANM.CHURN_USER_OFFER,
+      rejectWithError: true
+    })).body.offer) ? module : null;
+    return Chunk570140.Z.dispatch({
+      type: "BILLING_USER_OFFER_FETCH_SUCCESS",
+      userDiscountOffer: exports
+    }), {
+      userDiscountOffer: exports
+    }
+  } catch (e) {
+    Chunk570140.Z.dispatch({
+      type: "BILLING_USER_OFFER_FETCH_FAIL"
+    })
+  }
+}
+async function p() {
+  let e = null;
+  try {
+    var t;
+    e = null != (t = (await Chunk544891.tn.post({
+      url: Chunk981631.ANM.CHURN_USER_OFFER,
+      rejectWithError: true
+    })).body.offer) ? exports : null, null != module && Chunk570140.Z.dispatch({
+      type: "BILLING_USER_OFFER_FETCH_SUCCESS",
+      userDiscountOffer: module
+    })
+  } catch (e) {}
+  return module
+}
 
-function _(e, t) {
+function h(e, t) {
   let n = null != e && null == e.expires_at ? e.id : true,
     i = null != t && null == t.expires_at ? t.id : true;
   if (true !== n || true !== i) return r.tn.post({

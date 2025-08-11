@@ -4,8 +4,9 @@
 require.d(exports, {
   B4: () => O,
   Nx: () => h,
-  UV: () => y,
-  WR: () => b,
+  UV: () => b,
+  WR: () => E,
+  Yi: () => y,
   lr: () => g,
   t7: () => m
 }), require("./388685.js");
@@ -13,14 +14,14 @@ var Chunk73800 = require("./73800.js"),
   Chunk913527 = require("./913527.js"),
   o = require.n(Chunk913527),
   Chunk442837 = require("./442837.js"),
-  Chunk544891 = require("./544891.js"),
+  Chunk911969 = require("./911969.js"),
   Chunk78839 = require("./78839.js"),
   Chunk775412 = require("./775412.js"),
   Chunk695349 = require("./695349.js"),
+  Chunk937579 = require("./937579.js"),
   Chunk104494 = require("./104494.js"),
   Chunk639119 = require("./639119.js"),
-  Chunk474936 = require("./474936.js"),
-  Chunk981631 = require("./981631.js");
+  Chunk474936 = require("./474936.js");
 
 function h() {
   let e = (0, Chunk639119.N)(),
@@ -37,46 +38,37 @@ let m = () => {
   },
   g = () => {
     var e;
-    let t = (0, Chunk442837.e7)([Chunk78839.Z], () => Chunk78839.Z.getPremiumTypeSubscription());
-    switch (null == exports || null == (e = exports.metadata) ? true : module.active_discount_id) {
+    let t = (0, Chunk442837.e7)([Chunk78839.Z], () => Chunk78839.Z.getPremiumTypeSubscription()),
+      n = null == exports || null == (e = exports.metadata) ? true : module.active_discount_id;
+    switch (require) {
       case Chunk474936.dT:
       case Chunk474936.rB:
         return {
-          duration: 1, percentage: 30
+          duration: 1, percentage: 30, discountId: require
         };
       case Chunk474936.dB:
       case Chunk474936.hs:
       case Chunk474936.RU:
         return {
-          duration: 3, percentage: 30
+          duration: 3, percentage: 30, discountId: require
         };
       case Chunk474936.ih:
         return {
-          duration: 1, percentage: 40
+          duration: 1, percentage: 40, discountId: require
         };
       case Chunk474936.gW:
         return {
-          duration: 1, percentage: 20
+          duration: 1, percentage: 20, discountId: require
         };
       case Chunk474936.Nl:
         return {
-          duration: 1, percentage: 25
+          duration: 1, percentage: 25, discountId: require
         };
       default:
         return
     }
   },
-  E = async () => {
-    let e = null;
-    try {
-      var t;
-      e = null != (t = (await Chunk544891.tn.post({
-        url: Chunk981631.ANM.CHURN_USER_OFFER,
-        rejectWithError: true
-      })).body.offer) ? exports : null
-    } catch (e) {}
-    return module
-  }, b = e => {
+  E = e => {
     let [t, n] = r.useState(false), [i, o] = r.useState(false), [a, s] = r.useState(null);
     if (e) return {
       churnUserDiscountOffer: a,
@@ -85,7 +77,7 @@ let m = () => {
     let l = () => {
       n(true), o(false)
     };
-    return i || t || (o(true), E().then(e => {
+    return i || t || (o(true), (0, d.ev)().then(e => {
       s(e), l()
     }).catch(e => {
       l()
@@ -93,10 +85,28 @@ let m = () => {
       churnUserDiscountOffer: a,
       isFetchingChurnDiscountOffer: i
     }
-  }, y = () => {
+  },
+  b = () => {
     let e = (0, Chunk442837.e7)([Chunk78839.Z], () => Chunk78839.Z.getPremiumTypeSubscription()),
       t = m(),
       n = null !== module && module.hasPremiumNitroMonthly,
       r = !!(null == module ? true : module.hasActiveTrial);
     return require && !Chunk73800 && !exports
-  }, O = () => (0, Chunk695349.W)()
+  },
+  y = e => {
+    for (let t of e.invoiceItems) {
+      let e = t.discounts.find(e => e.type === s.eW.SUBSCRIPTION_PLAN);
+      if (null != e) switch (e.discount_id) {
+        case p.dT:
+          return {
+            duration: 1, percentage: e.percentage_amount, discountId: e.discount_id
+          };
+        case p.dB:
+          return {
+            duration: 3, percentage: e.percentage_amount, discountId: e.discount_id
+          }
+      }
+    }
+    return null
+  },
+  O = () => (0, Chunk695349.W)()

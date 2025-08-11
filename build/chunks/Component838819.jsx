@@ -2,7 +2,7 @@
 /** chunk id: 838819, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.r(exports), require.d(exports, {
-  default: () => F
+  default: () => M
 }), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -53,10 +53,10 @@ let D = e => {
       return window.addEventListener("keydown", e), () => window.removeEventListener("keydown", e)
     }, [n, a, r]), t
   },
-  F = function(e) {
+  M = function(e) {
     let {
       isFullScreen: t = true,
-      tab: n = w.AW.HOME
+      tab: n = A.AW.HOME
     } = e;
     (0, b.z)(f.f);
     let a = (0, p.Z)((0, o.Z)()),
@@ -67,19 +67,19 @@ let D = e => {
         location: "CollectiblesShop"
       }),
       {
-        closeIntroToOrbsClaimedCoachmark: F
+        closeIntroToOrbsClaimedCoachmark: M
       } = (0, m.Z)({
         location: "CollectiblesShop"
       });
     l.useEffect(() => () => {
-      F()
-    }, [a, F]);
+      M()
+    }, [a, M]);
     let {
-      onClose: M
+      onClose: F
     } = (0, I.Db)(), {
       currentTab: H,
       hasFilters: W
-    } = (0, T.S)(), V = l.useMemo(() => n === w.AW.HOME && H && W() ? H : n, [n, H, W]), {
+    } = (0, T.S)(), V = l.useMemo(() => n === A.AW.HOME && H && W() ? H : n, [n, H, W]), {
       categories: U,
       refreshCategories: z
     } = (0, y.ZP)({
@@ -114,9 +114,9 @@ let D = e => {
     l.useEffect(() => {
       en()
     }, [en]), l.useEffect(() => {
-      t || (0, d.Y)(A.Z5c.COLLECTIBLES_SHOP)
+      t || (0, d.Y)(w.Z5c.COLLECTIBLES_SHOP)
     }, [t]);
-    let er = (0, s.e7)([_.Z], () => _.Z.getLayers().includes(A.S9g.COLLECTIBLES_SHOP)),
+    let er = (0, s.e7)([_.Z], () => _.Z.getLayers().includes(w.S9g.COLLECTIBLES_SHOP)),
       el = l.useRef(null),
       ea = l.useRef(null);
     (0, u.Tbt)(el);
@@ -140,10 +140,10 @@ let D = e => {
         newValue: {
           sessionId: a,
           pageCategory: Y,
-          pageSize: w.kN
+          pageSize: A.kN
         },
         children: (0, r.jsx)(D, {
-          onClose: M,
+          onClose: F,
           shouldAddEventListener: t && !er,
           children: (0, r.jsxs)("div", {
             className: i()(R.shop, {
@@ -154,14 +154,14 @@ let D = e => {
             children: [(0, r.jsx)(k.I, {
               isFullScreen: t,
               isLayer: er,
-              onClose: M,
+              onClose: F,
               handleTransition: et,
               selectedTab: $
             }), (0, r.jsx)("div", {
               className: i()(R.shopViewWrapper, {
-                [R.visible]: ee === w.f7.VISIBLE,
-                [R.in]: ee === w.f7.IN,
-                [R.out]: ee === w.f7.OUT
+                [R.visible]: ee === A.f7.VISIBLE,
+                [R.in]: ee === A.f7.IN,
+                [R.out]: ee === A.f7.OUT
               }),
               children: (0, r.jsx)(P.Z, {
                 tab: $,

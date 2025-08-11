@@ -37,31 +37,32 @@ let P = e => {
     sortedSkuIds: P,
     numVisibleItems: L,
     hasSorting: k,
-    tab: I
-  } = e, N = (0, o.e7)([d.default], () => d.default.getCurrentUser()), w = b.ZP.canUseCollectibles(N), {
-    enableShopTakeOver: A
+    tab: I,
+    buttonContainerClassName: N
+  } = e, A = (0, o.e7)([d.default], () => d.default.getCurrentUser()), w = b.ZP.canUseCollectibles(A), {
+    enableShopTakeOver: B
   } = _.Z.useConfig({
     location: "FeedBlock"
   }), {
-    sortType: B,
-    setSortType: R,
-    sortedItems: Z,
-    sortOptions: D,
+    sortType: R,
+    setSortType: Z,
+    sortedItems: D,
+    sortOptions: M,
     shuffleProducts: F,
-    showRecommendationOption: M
-  } = (0, v.N)(P, w), H = (0, S.St)(Z), W = (0, o.e7)([u.Z], () => u.Z.useReducedMotion), V = (0, o.e7)([p.Z], () => p.Z.isFocused()), U = !W && V, {
-    animationPhase: z,
-    startAnimation: G
-  } = (0, E.y)(), q = (0, h.sp)(), K = null != (t = null == q ? true : q.sessionId) ? t : "", Y = l.useRef(null), X = l.useCallback(e => {
-    G({
+    showRecommendationOption: H
+  } = (0, v.N)(P, w), W = (0, S.St)(D), V = (0, o.e7)([u.Z], () => u.Z.useReducedMotion), U = (0, o.e7)([p.Z], () => p.Z.isFocused()), z = !V && U, {
+    animationPhase: G,
+    startAnimation: q
+  } = (0, E.y)(), K = (0, h.sp)(), Y = null != (t = null == K ? true : K.sessionId) ? t : "", X = l.useRef(null), J = l.useCallback(e => {
+    q({
       isShuffling: false,
-      onOutroComplete: () => R(e)
+      onOutroComplete: () => Z(e)
     }), g.default.track(y.rMx.COLLECTIBLES_SHOP_FEED_SORT_CHANGED, {
-      page_session_id: K,
+      page_session_id: Y,
       sort_type: e
     })
-  }, [G, R, K]);
-  return null == N ? null : (0, r.jsxs)("div", {
+  }, [q, Z, Y]);
+  return null == A ? null : (0, r.jsxs)("div", {
     className: i()(T.popularPicksSection, T.centeredSection),
     children: [(0, r.jsxs)("div", {
       className: T.blockHeader,
@@ -70,7 +71,7 @@ let P = e => {
         children: [(0, r.jsx)(s.X6q, {
           variant: "heading-lg/semibold",
           children: a
-        }), M && (0, r.jsx)(s.ua7, {
+        }), H && (0, r.jsx)(s.ua7, {
           text: x.intl.string(x.t["3taPdn"]),
           position: "top",
           "aria-label": x.intl.string(x.t["3taPdn"]),
@@ -113,48 +114,54 @@ let P = e => {
         })]
       }), k ? (0, r.jsxs)("div", {
         className: i()(T.headerRight, {
-          [j.shopTakeOver]: A
+          [j.shopTakeOver]: B
         }),
         children: [(0, r.jsx)(s.Text, {
           variant: "text-md/medium",
           children: x.intl.string(x.t.uaX709)
-        }), (0, r.jsx)(s.PhF, {
-          className: T.sortSelect,
-          options: D,
-          select: X,
-          isSelected: e => e === B,
-          serialize: e => e,
-          popoutClassName: i()({
-            [j.shopTakeOver]: A
+        }), (0, r.jsx)("div", {
+          className: N,
+          children: (0, r.jsx)(s.PhF, {
+            options: M,
+            select: J,
+            className: T.sortSelect,
+            popoutClassName: i()({
+              [j.shopTakeOver]: B
+            }),
+            isSelected: e => e === R,
+            serialize: e => e
           })
-        }), (0, r.jsx)(s.zxk, {
-          variant: "secondary",
-          text: x.intl.string(x.t.X3tnc3),
-          buttonRef: Y,
-          onClick: () => {
-            G({
-              isShuffling: true,
-              onOutroComplete: F,
-              returnRef: Y
-            }), g.default.track(y.rMx.COLLECTIBLES_SHOP_FEED_SHUFFLE_CLICKED, {
-              page_session_id: K
-            })
-          },
-          disabled: z !== E.g.MOUNTED && z !== E.g.FINISHED
+        }), (0, r.jsx)("div", {
+          className: N,
+          children: (0, r.jsx)(s.zxk, {
+            variant: "secondary",
+            text: x.intl.string(x.t.X3tnc3),
+            buttonRef: X,
+            onClick: () => {
+              q({
+                isShuffling: true,
+                onOutroComplete: F,
+                returnRef: X
+              }), g.default.track(y.rMx.COLLECTIBLES_SHOP_FEED_SHUFFLE_CLICKED, {
+                page_session_id: Y
+              })
+            },
+            disabled: G !== E.g.MOUNTED && G !== E.g.FINISHED
+          })
         })]
       }) : null]
     }), (0, r.jsx)("div", {
       className: T.feed,
       children: n ? (0, r.jsx)(r.Fragment, {
         children: [...Array(12)].map((e, t) => (0, r.jsx)(O.K, {}, t + 1))
-      }) : H.slice(0, L).map((e, t) => {
+      }) : W.slice(0, L).map((e, t) => {
         let n, l = m.Z.getCategoryForProduct(e.skuId);
         if (null == e || null == l) return null;
-        if (U)
-          if (z === E.g.SHUFFLE_OUT) return (0, r.jsx)("div", {
+        if (z)
+          if (G === E.g.SHUFFLE_OUT) return (0, r.jsx)("div", {
             className: T.shuffleOutro
           }, "".concat(e.skuId, "-").concat(t));
-          else z === E.g.SORT_OUT ? n = T.sortChangedOutro : z === E.g.SHUFFLE_IN ? n = T.shuffleIntro : z === E.g.SORT_IN && (n = T.sortChangedIntro);
+          else G === E.g.SORT_OUT ? n = T.sortChangedOutro : G === E.g.SHUFFLE_IN ? n = T.shuffleIntro : G === E.g.SORT_IN && (n = T.sortChangedIntro);
         return (0, r.jsx)(h.k0, {
           newValue: {
             tilePosition: t,
@@ -164,7 +171,7 @@ let P = e => {
           children: (0, r.jsx)(C.Z, {
             product: e,
             category: l,
-            user: N,
+            user: A,
             tab: I,
             className: n
           })

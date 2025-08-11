@@ -39,18 +39,18 @@ function N(e) {
   let {
     isFetchingCategories: n,
     isFullScreen: N,
-    scrollerRef: w,
-    tab: A
+    scrollerRef: A,
+    tab: w
   } = e, B = (0, p.sp)(), R = null != (t = null == B ? true : B.sessionId) ? t : "", {
     noCache: Z,
     includeUnpublished: D
-  } = (0, v.Z)(), F = (0, i.e7)([u.default], () => u.default.getCurrentUser()), M = (0, i.e7)([g.Z], () => g.Z.productsWithVariantsAsGroup), [H, W] = l.useState(1), V = () => {
+  } = (0, v.Z)(), M = (0, i.e7)([u.default], () => u.default.getCurrentUser()), F = (0, i.e7)([g.Z], () => g.Z.productsWithVariantsAsGroup), [H, W] = l.useState(1), V = () => {
     var e;
-    null == w || null == (e = w.current) || e.scrollToTop({
+    null == A || null == (e = A.current) || e.scrollToTop({
       animate: true
     })
   }, U = (0, c.Fg)(), z = (0, o.ap)(U), [G, q, K] = l.useMemo(() => {
-    switch (A) {
+    switch (w) {
       case O.AW.AVATAR_DECORATIONS:
         return [E.intl.string(E.t.dRZYND), z ? T.Z : j.Z, a.Z.AVATAR_DECORATION];
       case O.AW.PROFILE_EFFECTS:
@@ -60,15 +60,15 @@ function N(e) {
       case O.AW.BUNDLES:
         return [E.intl.string(E.t.FYFppq), z ? x.Z : y.Z, a.Z.BUNDLE]
     }
-  }, [A, z]), Y = (0, f.a)(), X = l.useMemo(() => Y(M.filter(e => {
+  }, [w, z]), Y = (0, f.a)(), X = l.useMemo(() => Y(F.filter(e => {
     var t;
     return e.type === K || e.type === a.Z.VARIANTS_GROUP && (null == (t = e.variants) ? true : t.some(e => e.type === K)) === true
-  })), [M, K, Y]), J = (0, b.l)(X);
+  })), [F, K, Y]), J = (0, b.l)(X);
   return (l.useEffect(() => {
     (0, h.n)({
       sessionId: R,
       checkpoint: h.a.SHOP_MOUNTED,
-      tab: A,
+      tab: w,
       isFullScreen: N,
       unpublishedCategoriesShown: D,
       cacheDisabled: Z
@@ -77,12 +77,12 @@ function N(e) {
     n || (0, h.n)({
       sessionId: R,
       checkpoint: h.a.SHOP_RENDERED,
-      tab: A,
+      tab: w,
       isFullScreen: N,
       unpublishedCategoriesShown: D,
       cacheDisabled: Z
     })
-  }, [R, N, D, Z, n, A]), n || null == F) ? (0, r.jsx)(m.Z, {}) : (0, r.jsxs)(r.Fragment, {
+  }, [R, N, D, Z, n, w]), n || null == M) ? (0, r.jsx)(m.Z, {}) : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       style: {
         backgroundImage: "url(".concat(q, ")")
@@ -102,9 +102,9 @@ function N(e) {
           },
           children: (0, r.jsx)(_.Z, {
             product: e,
-            user: F,
+            user: M,
             category: n,
-            tab: A
+            tab: w
           }, e.skuId)
         }, e.skuId)
       })
@@ -122,8 +122,8 @@ function N(e) {
               page_category: null == B ? true : B.pageCategory,
               page_index: e,
               page_size: 40,
-              cta_name: "".concat(A, " page ").concat(e),
-              page_type: A
+              cta_name: "".concat(w, " page ").concat(e),
+              page_type: w
             }), W(e), V()
           },
           disablePaginationGap: true

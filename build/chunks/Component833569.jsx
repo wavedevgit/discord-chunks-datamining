@@ -304,7 +304,7 @@ function J(e) {
             analyticsLocation: l
           })
         }
-      }), (0, i.jsx)(M.Z, {
+      }), (0, i.jsx)(L.Z, {
         onClick: a
       })]
     })]
@@ -384,7 +384,7 @@ let ee = e => {
   null == y && (y = T ? z.R.WHAT_YOU_LOSE : z.R.CONFIRM);
   let {
     analyticsLocations: R
-  } = (0, x.ZP)(u, b.Z.PREMIUM_SUBSCRIPTION_CANCELLATION_MODAL), [w, M, U, B] = (0, F.q)(y, a, u), [V, K] = r.useState(null);
+  } = (0, x.ZP)(u, b.Z.PREMIUM_SUBSCRIPTION_CANCELLATION_MODAL), [w, L, U, B] = (0, F.q)(y, a, u), [V, K] = r.useState(null);
   (0, Z.w)(a, l, false);
   let $ = e => {
       l(), C.default.track(H.rMx.CANCELLATION_FLOW_STEP, q({
@@ -399,7 +399,7 @@ let ee = e => {
     {
       churnUserDiscountOffer: et,
       isFetchingChurnDiscountOffer: en
-    } = (0, N.WR)(!ee || w !== z.R.WHAT_YOU_LOSE),
+    } = (0, N.WR)(!ee || null != a.canceledAt && w !== z.R.CONFIRM_DISCOUNT),
     ei = (0, S.Z)(),
     er = "US" === ei.ipCountryCode && "CA" === ei.ipSubdivisionCode;
   switch (w) {
@@ -407,7 +407,7 @@ let ee = e => {
       n = (0, i.jsx)(A.of, {
         premiumSubscription: a,
         premiumType: v,
-        setStep: M,
+        setStep: L,
         onClose: () => $(w),
         pauseDuration: V,
         setPauseDuration: K,
@@ -418,7 +418,7 @@ let ee = e => {
             text: W.intl.string(W.t["3PatS0"]),
             disabled: null === V,
             onClick: () => {
-              0 === V ? M(z.R.WHAT_YOU_LOSE) : M(z.R.PAUSE_CONFIRM)
+              0 === V ? L(z.R.WHAT_YOU_LOSE) : L(z.R.PAUSE_CONFIRM)
             }
           }), (0, i.jsx)(m.zx, {
             "data-migration-pending": true,
@@ -444,14 +444,14 @@ let ee = e => {
       n = (0, i.jsx)(A.Sz, {
         premiumSubscription: a,
         premiumType: v,
-        setStep: M,
+        setStep: L,
         onClose: () => $(w),
         analyticsLocation: _,
         pauseDuration: V
       });
       break;
     case z.R.WHAT_YOU_LOSE:
-      n = (0, i.jsx)(L.Z, {
+      n = (0, i.jsx)(M.Z, {
         premiumType: v,
         titleText: W.intl.string(W.t.PWq8TE),
         subtitleText: W.intl.format(W.t.nsGVzs, {}),
@@ -461,7 +461,7 @@ let ee = e => {
           children: [(0, i.jsx)(p.zxk, {
             variant: "primary",
             text: er ? W.intl.string(W.t.PfnxqK) : W.intl.string(W.t["3PatS0"]),
-            onClick: () => M(z.R.CONFIRM)
+            onClick: () => L(z.R.CONFIRM)
           }), (0, i.jsx)(m.zx, {
             "data-migration-pending": true,
             look: m.zx.Looks.LINK,
@@ -471,8 +471,8 @@ let ee = e => {
           })]
         }),
         onClose: () => $(w),
-        onDiscountClaim: () => M(z.R.CONFIRM_DISCOUNT),
-        onContinue: () => M(z.R.CONFIRM),
+        onDiscountClaim: () => L(z.R.CONFIRM_DISCOUNT),
+        onContinue: () => L(z.R.CONFIRM),
         isLoading: ee && en,
         churnUserDiscountOffer: et,
         analyticsLocations: R
@@ -482,7 +482,7 @@ let ee = e => {
       n = (0, i.jsx)(G, {
         premiumSubscription: a,
         premiumType: v,
-        setStep: M,
+        setStep: L,
         onClose: () => $(w),
         whatYouLoseExperienceEnabled: T,
         analyticsLocation: _
@@ -492,7 +492,7 @@ let ee = e => {
       n = (0, i.jsx)(J, {
         premiumSubscription: a,
         premiumType: v,
-        onBack: () => M(z.R.CONFIRM),
+        onBack: () => L(z.R.CONFIRM),
         onClose: () => $(w),
         analyticsLocation: _
       });
@@ -502,7 +502,7 @@ let ee = e => {
         premiumSubscription: a,
         premiumType: v,
         onClose: () => $(w),
-        onConfirm: () => M(z.R.DISCOUNT_APPLIED),
+        onConfirm: () => L(z.R.DISCOUNT_APPLIED),
         userDiscountOffer: et
       });
       break;

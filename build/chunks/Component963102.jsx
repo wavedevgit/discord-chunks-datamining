@@ -147,8 +147,8 @@ function N(e) {
     onClose: a,
     selectedTab: g,
     handleTransition: f
-  } = e, y = (0, p.ZP)(), N = (0, s.e7)([O.default], () => O.default.getCurrentUser()), w = (null == N ? true : N.isStaff()) || (null == N ? true : N.isStaffPersonal()) || false, {
-    enabled: A
+  } = e, y = (0, p.ZP)(), N = (0, s.e7)([O.default], () => O.default.getCurrentUser()), A = (null == N ? true : N.isStaff()) || (null == N ? true : N.isStaffPersonal()) || false, {
+    enabled: w
   } = (0, _.WX)({
     location: "collectibles_shop_header_bar"
   }), B = [{
@@ -158,7 +158,7 @@ function N(e) {
     tab: j.AW.CATALOG,
     displayText: P.intl.string(P.t.Ah5sJi)
   }];
-  A && B.push({
+  w && B.push({
     tab: j.AW.ORBS,
     displayText: P.intl.string(P.t.EBYkzs)
   });
@@ -173,7 +173,7 @@ function N(e) {
         fromContent: o.j.ORBS_BALANCE_MENU
       })
     }, [R, t, Z]),
-    F = (0, S.eN)("collectibles_shop_header_bar");
+    M = (0, S.eN)("collectibles_shop_header_bar");
   return (0, r.jsx)(c.f6W, {
     theme: y,
     children: e => (0, r.jsxs)(b.Z, {
@@ -181,8 +181,8 @@ function N(e) {
       className: i()(e, L.headerBar, {
         [L.fullscreenHeaderBar]: t
       }),
-      innerClassname: A ? L.headerBarInner : true,
-      toolbar: t || !w ? null : (0, r.jsx)(l.Fragment, {}),
+      innerClassname: w ? L.headerBarInner : true,
+      toolbar: t || !A ? null : (0, r.jsx)(l.Fragment, {}),
       children: [(0, r.jsxs)(c.P3F, {
         className: L.shopHomeLink,
         onClick: () => f(j.AW.HOME),
@@ -211,12 +211,12 @@ function N(e) {
             handleTransition: f
           }, t)
         })
-      }), (A || t || F) && (0, r.jsxs)("div", {
+      }), (w || t || M) && (0, r.jsxs)("div", {
         className: L.alignedRightContent,
-        children: [F && (0, r.jsx)(x.Z, {
+        children: [M && (0, r.jsx)(x.Z, {
           handleTransition: f,
           selectedTab: g
-        }), A && (0, r.jsx)(v.V9, {
+        }), w && (0, r.jsx)(v.V9, {
           anchorPillType: t ? "SHOP_FULLSCREEN" : "SHOP",
           analyticsPage: Z,
           cardAlignment: v.V9.CardAlignment.END,

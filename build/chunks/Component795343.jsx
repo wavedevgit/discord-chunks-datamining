@@ -39,8 +39,8 @@ function S(e) {
     skus: k,
     currentPage: I,
     totalCount: N,
-    isFetchingResults: w
-  } = (0, b.a)(), A = (0, o.Wu)([p.Z], () => p.Z.getProductsBySkus(k)), B = l.useCallback(() => {
+    isFetchingResults: A
+  } = (0, b.a)(), w = (0, o.Wu)([p.Z], () => p.Z.getProductsBySkus(k)), B = l.useCallback(() => {
     var e;
     null == S || null == (e = S.current) || e.scrollToTop({
       animate: true
@@ -50,7 +50,7 @@ function S(e) {
     B()
   }, [R, B]);
   let Z = (0, g.a)(),
-    D = l.useMemo(() => Z(A), [Z, A]);
+    D = l.useMemo(() => Z(w), [Z, w]);
   l.useEffect(() => {
     n || (0, h.n)({
       sessionId: j,
@@ -61,14 +61,14 @@ function S(e) {
       cacheDisabled: T
     })
   }, [j, a, P, T, n, y]);
-  let F = l.useRef(null),
+  let M = l.useRef(null),
     {
-      setQueryPageSize: M,
+      setQueryPageSize: F,
       setQueryPageOffset: H,
       queryPageSize: W
     } = (0, f.S)(),
     [V, U] = l.useState(false),
-    z = n || w || null == L;
+    z = n || A || null == L;
   l.useEffect(() => {
     if (z) return void U(false);
     D.length > 0 && U(true)
@@ -76,10 +76,10 @@ function S(e) {
   let G = W > 0 && !z && 0 === D.length;
   l.useEffect(() => {
     let e = new ResizeObserver(() => {
-      null != F.current && M(Math.floor(5 * getComputedStyle(F.current).gridTemplateColumns.split(/\s+/).length))
+      null != M.current && F(Math.floor(5 * getComputedStyle(M.current).gridTemplateColumns.split(/\s+/).length))
     });
-    if (null != F.current) return e.observe(F.current), () => e.disconnect()
-  }, [M]);
+    if (null != M.current) return e.observe(M.current), () => e.disconnect()
+  }, [F]);
   let q = l.useCallback(e => {
     u.default.track(C.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
       collectibles_shop_session_id: null == x ? true : x.sessionId,
@@ -100,7 +100,7 @@ function S(e) {
         className: i()(E.products, {
           [E.loadIn]: V
         }),
-        ref: F,
+        ref: M,
         children: [z && [...Array(W)].map((e, t) => (0, r.jsx)(m.K, {}, t)), !z && D.map((e, t) => {
           let n = p.Z.getCategory(e.categorySkuId);
           return null == n ? null : (0, r.jsx)(d.k0, {
