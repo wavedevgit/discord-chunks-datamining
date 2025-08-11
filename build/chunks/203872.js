@@ -43,6 +43,6 @@ function f() {
         },
         minContrastRatio: d[n]
       }
-    }), exports
+    }), exports[Chunk522942.m.GLOW] = exports[Chunk522942.m.GRADIENT], exports
   }, [module])
 }
