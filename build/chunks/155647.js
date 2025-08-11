@@ -22,8 +22,8 @@ function u(e) {
   return r.useMemo(() => null != e ? function(e) {
     let t = [];
     return Object.entries(d).forEach(n => {
-      let [r, l] = n;
-      (null == l.eligibleReportSubtypes || l.eligibleReportSubtypes.includes(e)) && t.push(r)
+      let [r, i] = n;
+      (null == i.eligibleReportSubtypes || i.eligibleReportSubtypes.includes(e)) && t.push(r)
     }), 0 === t.length ? null : t
   }(e) : null, [e])
 }
@@ -35,8 +35,8 @@ function m(e, t) {
       let {
         predicate: n,
         eligibleChannelTypes: r
-      } = e, l = null == n || (null == n ? true : n()) === true, i = null == t || null == r || r.includes(t);
-      return l && i
+      } = e, i = null == n || (null == n ? true : n()) === true, l = null == t || null == r || r.includes(t);
+      return i && l
     }(n, t) ? null : n
-  })(e, t)).filter(l.lm), [e, t])
+  })(e, t)).filter(i.lm), [e, t])
 }

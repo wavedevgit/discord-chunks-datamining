@@ -19,34 +19,34 @@ let c = e => {
       onBackClicked: p,
       isModeratorReport: g
     } = e,
-    x = l.useRef(null),
-    _ = null != n && "cancel" !== n.type,
-    b = m && (null == n ? true : n.type) !== "done",
-    h = _ || b;
-  if (l.useEffect(() => {
+    _ = i.useRef(null),
+    b = null != n && "cancel" !== n.type,
+    h = m && (null == n ? true : n.type) !== "done",
+    x = b || h;
+  if (i.useEffect(() => {
       if ((null == n ? true : n.type) === "submit" || (null == n ? true : n.type) === "done") {
         var e;
-        null == (e = x.current) || e.focus()
+        null == (e = _.current) || e.focus()
       }
-    }, [null == n ? true : n.type]), !h) return null;
+    }, [null == n ? true : n.type]), !x) return null;
   let f = s.intl.string(s.t.i4jeWV);
-  return (null == n ? true : n.type) === "submit" ? (t = "critical-primary", f = g ? s.intl.string(o.default.ZUyreX) : s.intl.string(s.t["G+vU8/"])) : (null == n ? true : n.type) === "next" ? f = s.intl.string(s.t.PDTjLC) : (null == n ? true : n.type) === "cancel" && (f = s.intl.string(s.t["ETE/oK"]), t = "secondary"), (0, r.jsx)(i.mzw, {
+  return (null == n ? true : n.type) === "submit" ? (t = "critical-primary", f = g ? s.intl.string(o.default.ZUyreX) : s.intl.string(s.t["G+vU8/"])) : (null == n ? true : n.type) === "next" ? f = s.intl.string(s.t.PDTjLC) : (null == n ? true : n.type) === "cancel" && (f = s.intl.string(s.t["ETE/oK"]), t = "secondary"), (0, r.jsx)(l.mzw, {
     "data-migration-pending": true,
     direction: a.Z.Direction.HORIZONTAL,
-    children: (0, r.jsxs)(i.hE2, {
-      fullWidth: b && _,
-      children: [b && (0, r.jsx)(i.zxk, {
+    children: (0, r.jsxs)(l.hE2, {
+      fullWidth: h && b,
+      children: [h && (0, r.jsx)(l.zxk, {
         onClick: p,
         variant: "secondary",
         disabled: c,
         text: s.intl.string(s.t["13/7kZ"])
-      }), _ && (0, r.jsx)(i.zxk, {
+      }), b && (0, r.jsx)(l.zxk, {
         onClick: () => {
           null != n && u(n)
         },
         variant: t,
         disabled: c || d,
-        buttonRef: x,
+        buttonRef: _,
         text: f
       })]
     })

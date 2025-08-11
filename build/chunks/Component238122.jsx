@@ -19,13 +19,13 @@ let u = e => {
         subtitle: m,
         placeholder: p,
         rows: g,
-        character_limit: x,
-        pattern: _
+        character_limit: _,
+        pattern: b
       },
-      onChange: b,
-      initialText: h,
+      onChange: h,
+      initialText: x,
       isRequired: f
-    } = e, v = l.useRef(a.Z.reactParserFor((t = function(e) {
+    } = e, v = i.useRef(a.Z.reactParserFor((t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -53,34 +53,34 @@ let u = e => {
       return n
     })(Object(n)).forEach(function(e) {
       Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
-    }), t))), [j, y] = l.useState(""), [O, Z] = l.useState(null);
-    l.useEffect(() => {
+    }), t))), [j, y] = i.useState(""), [O, Z] = i.useState(null);
+    i.useEffect(() => {
       var e;
-      y(null != (e = null == h ? true : h.value) ? e : "")
-    }, [h]);
-    let I = l.useCallback(e => {
-      let t = null != _ ? new RegExp(_) : null;
-      null == t || t.test(e) ? null != e && (Z(null), y(e), b({
+      y(null != (e = null == x ? true : x.value) ? e : "")
+    }, [x]);
+    let I = i.useCallback(e => {
+      let t = null != b ? new RegExp(b) : null;
+      null == t || t.test(e) ? null != e && (Z(null), y(e), h({
         value: e,
         isValid: true
-      })) : (Z(o.intl.string(o.t["24xrGR"])), b({
+      })) : (Z(o.intl.string(o.t["24xrGR"])), h({
         value: e,
         isValid: false
       }))
-    }, [b, _]);
+    }, [h, b]);
     return (0, r.jsxs)("div", {
       className: d.marginBottom8,
       children: [null != u && (0, r.jsx)("div", {
         className: d.marginBottom8,
-        children: (0, r.jsxs)(i.Text, {
+        children: (0, r.jsxs)(l.Text, {
           variant: "text-sm/bold",
           children: [u, f && (0, r.jsx)("span", {
             className: c.required,
             children: "*"
           })]
         })
-      }), (0, r.jsx)(i.Kx8, {
-        maxLength: x,
+      }), (0, r.jsx)(l.Kx8, {
+        maxLength: _,
         onChange: I,
         value: j,
         error: O,
@@ -88,7 +88,7 @@ let u = e => {
         placeholder: p,
         autoFocus: true
       }), null != m && (0, r.jsx)("div", {
-        children: (0, r.jsx)(i.Text, {
+        children: (0, r.jsx)(l.Text, {
           variant: "text-sm/normal",
           children: v.current(m)
         })
@@ -99,18 +99,18 @@ let u = e => {
     let {
       elements: t,
       onChange: n,
-      state: l
-    } = e, i = t.map(e => {
+      state: i
+    } = e, l = t.map(e => {
       var t;
-      let i = e.name;
+      let l = e.name;
       return (0, r.jsx)(u, {
         data: e.data,
-        onChange: e => n(i, e.value, e.isValid),
-        initialText: null != (t = null == l ? true : l[i]) ? t : true,
+        onChange: e => n(l, e.value, e.isValid),
+        initialText: null != (t = null == i ? true : i[l]) ? t : true,
         isRequired: e.should_submit_data
-      }, i)
+      }, l)
     });
     return (0, r.jsx)("div", {
-      children: i
+      children: l
     })
   }

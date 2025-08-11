@@ -13,7 +13,7 @@ let Chunk848304 = require("./848304.js"),
     } = e;
     return (null == t ? true : t.type) !== "success" ? null : (0, r.jsx)("img", {
       alt: "",
-      src: i,
-      className: l.successImg
+      src: l,
+      className: i.successImg
     })
   }

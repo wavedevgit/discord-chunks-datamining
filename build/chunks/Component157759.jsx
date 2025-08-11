@@ -6,7 +6,6 @@ require.d(exports, {
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk442837 = require("./442837.js"),
-  Chunk755721 = require("./755721.js"),
   Chunk668781 = require("./668781.js"),
   Chunk367907 = require("./367907.js"),
   Chunk434404 = require("./434404.js"),
@@ -22,56 +21,55 @@ let h = e => {
   let {
     application: t,
     reportId: n
-  } = e, [h, f] = l.useState(false), [v, j] = l.useState(false), y = (0, i.e7)([x.Z, m.Z], () => {
+  } = e, [h, x] = i.useState(false), [f, v] = i.useState(false), j = (0, l.e7)([g.Z, u.Z], () => {
     var e;
-    return null == (e = m.Z.getChannel(x.Z.getChannelId())) ? true : e.guild_id
-  }), [O, Z] = l.useState(null);
-  l.useEffect(() => {
-    null != O && (f(true), j(true))
-  }, [O]), l.useEffect(() => {
-    if (null == y) return;
+    return null == (e = u.Z.getChannel(g.Z.getChannelId())) ? true : e.guild_id
+  }), [y, O] = i.useState(null);
+  i.useEffect(() => {
+    null != y && (x(true), v(true))
+  }, [y]), i.useEffect(() => {
+    if (null == j) return;
     let e = false;
     return (async () => {
       let n = null;
       try {
-        n = await (0, d.i)(y)
+        n = await (0, c.i)(j)
       } catch (e) {}
       if (e || null == n) return;
       let r = n.find(e => {
         var n;
         return (null == (n = e.application) ? true : n.id) === t.id
       });
-      null != r && Z(r)
+      null != r && O(r)
     })(), () => {
       e = true
     }
-  }, [y, t.id]);
-  let I = l.useCallback(() => {
-      j(false), o.ZP.trackWithMetadata(_.rMx.IAR_REMOVE_APP_BUTTON_CLICKED, {
-        guild_id: y,
+  }, [j, t.id]);
+  let Z = i.useCallback(() => {
+      v(false), s.ZP.trackWithMetadata(_.rMx.IAR_REMOVE_APP_BUTTON_CLICKED, {
+        guild_id: j,
         application_id: t.id,
         report_id: n
-      }), null != y && null != O && c.Z.disableIntegration(y, O.id).catch(() => {
-        s.Z.show({
+      }), null != j && null != y && o.Z.disableIntegration(j, y.id).catch(() => {
+        a.Z.show({
           title: b.intl.string(b.t.wYqMmJ),
           body: b.intl.string(b.t.A4Mnsr)
         })
       })
-    }, [t.id, y, O, n]),
-    C = (0, i.e7)([g.Z, p.Z], () => {
-      let e = p.Z.getGuild(y);
+    }, [t.id, j, y, n]),
+    I = (0, l.e7)([p.Z, m.Z], () => {
+      let e = m.Z.getGuild(j);
       if (null == e) returnfalse;
-      let n = g.Z.can(_.Plq.MANAGE_GUILD, e),
-        r = null == t.bot || g.Z.canManageUser(_.Plq.MANAGE_GUILD, t.bot.id, e);
+      let n = p.Z.can(_.Plq.MANAGE_GUILD, e),
+        r = null == t.bot || p.Z.canManageUser(_.Plq.MANAGE_GUILD, t.bot.id, e);
       return n && r
     });
-  return null != t && null != y && h && C ? (0, r.jsx)(u.ZP, {
+  return null != t && null != j && h && I ? (0, r.jsx)(d.JZ, {
     title: b.intl.string(b.t["WV/CsL"]),
     description: b.intl.string(b.t["FlcC+/"]),
-    buttonText: v ? b.intl.string(b.t.aCJlq6) : b.intl.string(b.t["6I1F3t"]),
-    buttonDisabled: !v,
-    buttonColor: v ? a.zx.Colors.RED : a.zx.Colors.WHITE,
-    buttonLook: v ? a.zx.Looks.FILLED : a.zx.Looks.LINK,
-    onButtonPress: I
+    buttonText: f ? b.intl.string(b.t.aCJlq6) : b.intl.string(b.t["6I1F3t"]),
+    buttonDisabled: !f,
+    onButtonPress: Z,
+    buttonVariant: f ? "critical-primary" : "secondary"
   }) : null
 }

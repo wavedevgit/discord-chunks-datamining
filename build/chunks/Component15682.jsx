@@ -15,16 +15,16 @@ let a = e => {
       selected: s
     } = e;
     return (0, r.jsx)("div", {
-      className: i.checkboxRow,
-      children: (0, r.jsxs)(l.XZJ, {
-        type: l.XZJ.Types.INVERTED,
+      className: l.checkboxRow,
+      children: (0, r.jsxs)(i.XZJ, {
+        type: i.XZJ.Types.INVERTED,
         onChange: () => t(),
         value: s,
-        children: [(0, r.jsx)(l.Text, {
+        children: [(0, r.jsx)(i.Text, {
           color: "interactive-active",
           variant: "text-md/semibold",
           children: n
-        }), null != a ? (0, r.jsx)(l.Text, {
+        }), null != a ? (0, r.jsx)(i.Text, {
           color: "interactive-active",
           variant: "text-sm/normal",
           children: a
@@ -36,18 +36,18 @@ let a = e => {
     let {
       element: t,
       state: n,
-      onChange: l
+      onChange: i
     } = e;
     if ((null == t ? true : t.type) !== "checkbox") return null;
     let {
-      data: i
+      data: l
     } = t;
     return (0, r.jsx)("div", {
-      children: i.map((e, t) => {
-        let [i, s, o] = e;
+      children: l.map((e, t) => {
+        let [l, s, o] = e;
         return (0, r.jsx)(a, {
-          onChange: () => l(i, s),
-          selected: i in n,
+          onChange: () => i(l, s),
+          selected: l in n,
           label: s,
           subtitle: o
         }, "".concat(t, "+button"))

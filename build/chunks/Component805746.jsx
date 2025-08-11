@@ -1,12 +1,11 @@
 /** Chunk was on 54844 **/
 /** chunk id: 805746, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => x
+  Z: () => g
 }), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk442837 = require("./442837.js"),
-  Chunk755721 = require("./755721.js"),
   Chunk384275 = require("./384275.js"),
   Chunk317381 = require("./317381.js"),
   Chunk513202 = require("./513202.jsx"),
@@ -15,39 +14,38 @@ var Chunk255367 = require("./255367.js"),
   Chunk881998 = require("./881998.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
-let x = e => {
+let g = e => {
   let {
     application: t,
     reportId: n
-  } = e, [x, _] = l.useState(false), b = (0, i.e7)([m.Z], () => m.Z.getNewestTokenForApplication(t.id));
-  l.useEffect(() => {
+  } = e, [g, _] = i.useState(false), b = (0, l.e7)([u.Z], () => u.Z.getNewestTokenForApplication(t.id));
+  i.useEffect(() => {
     null != b && _(true)
   }, [b]);
-  let h = l.useRef(false);
-  l.useEffect(() => {
-    h.current || (s.Z.fetch(), h.current = true)
+  let h = i.useRef(false);
+  i.useEffect(() => {
+    h.current || (a.Z.fetch(), h.current = true)
   }, []);
-  let f = (0, i.e7)([o.ZP], () => o.ZP.getSelfEmbeddedActivities()),
-    v = l.useCallback(() => {
-      if (_(false), d.ZP.trackWithMetadata(p.rMx.IAR_DEAUTHORIZE_APP_BUTTON_CLICKED, {
+  let x = (0, l.e7)([s.ZP], () => s.ZP.getSelfEmbeddedActivities()),
+    f = i.useCallback(() => {
+      if (_(false), c.ZP.trackWithMetadata(m.rMx.IAR_DEAUTHORIZE_APP_BUTTON_CLICKED, {
           application_id: t.id,
           report_id: n
         }), null == b) return;
-      s.Z.delete(b.id);
-      let e = f.get(t.id);
-      null != e && c.Z.leaveActivity({
+      a.Z.delete(b.id);
+      let e = x.get(t.id);
+      null != e && o.Z.leaveActivity({
         location: e.location,
         applicationId: t.id,
         showFeedback: false
       })
-    }, [t.id, b, f, n]);
-  return null == t ? null : (0, r.jsx)(u.ZP, {
-    title: g.intl.string(g.t.ygG62N),
-    description: g.intl.string(g.t.S51EKi),
-    buttonText: x ? g.intl.string(g.t.xXpoGR) : g.intl.string(g.t.JsiUnJ),
-    buttonDisabled: !x,
-    buttonColor: x ? a.zx.Colors.RED : a.zx.Colors.WHITE,
-    buttonLook: x ? a.zx.Looks.FILLED : a.zx.Looks.LINK,
-    onButtonPress: v
+    }, [t.id, b, x, n]);
+  return null == t ? null : (0, r.jsx)(d.JZ, {
+    title: p.intl.string(p.t.ygG62N),
+    description: p.intl.string(p.t.S51EKi),
+    buttonText: g ? p.intl.string(p.t.xXpoGR) : p.intl.string(p.t.JsiUnJ),
+    buttonDisabled: !g,
+    onButtonPress: f,
+    buttonVariant: g ? "critical-primary" : "secondary"
   })
 }

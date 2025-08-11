@@ -46,7 +46,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk130883 = require("./130883.js"),
   Chunk88309 = require("./88309.js");
 
-function X(e) {
+function V(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -64,9 +64,9 @@ function X(e) {
   }
   return e
 }
-let q = ["user_urf", "message_urf", "guild_urf"];
+let X = ["user_urf", "message_urf", "guild_urf"];
 
-function H(e, t) {
+function q(e, t) {
   let {
     elements: n
   } = e;
@@ -78,7 +78,7 @@ function H(e, t) {
   })
 }
 
-function V(e, t) {
+function H(e, t) {
   let {
     elements: n
   } = e;
@@ -94,38 +94,38 @@ let Q = e => {
     node: t,
     reportType: n,
     reportSubType: Q,
-    history: K,
-    onSelectChild: J,
+    history: J,
+    onSelectChild: K,
     onModalClose: Y,
     onSubmit: $,
     multiSelect: ee,
     reportId: et,
     textInput: en
-  } = e, er = H(t, "checkbox"), el = H(t, "text_line_resource"), ei = V(t, "external_link"), ea = V(t, "free_text"), es = V(t, "dropdown"), eo = H(t, "text"), ec = i.s.REPORT_TO_MOD.has(n.name), [ed, eu] = l.useState(false), [em, ep] = l.useState(false), [eg, ex] = l.useState(""), [e_, eb] = l.useState(() => ({})), [eh, ef] = l.useState(() => ({})), ev = l.useMemo(() => "message" === n.name ? n.record.channel_id : true, [n]), ej = l.useCallback(e => ({
+  } = e, er = q(t, "checkbox"), ei = q(t, "text_line_resource"), el = H(t, "external_link"), ea = H(t, "free_text"), es = H(t, "dropdown"), eo = q(t, "text"), ec = l.s.REPORT_TO_MOD.has(n.name), [ed, eu] = i.useState(false), [em, ep] = i.useState(false), [eg, e_] = i.useState(""), [eb, eh] = i.useState(() => ({})), [ex, ef] = i.useState(() => ({})), ev = i.useMemo(() => "message" === n.name ? n.record.channel_id : true, [n]), ej = i.useCallback(e => ({
     nodeRef: t.id,
     destination: e,
-    textInput: null != ea || null != es ? eh : true,
+    textInput: null != ea || null != es ? ex : true,
     multiSelect: null != er ? {
       name: er.name,
-      state: e_
+      state: eb
     } : true
-  }), [t, ea, es, er, e_, eh]), ey = l.useMemo(() => (0, c.VP)(ea, es, er, eh, e_), [ea, es, er, eh, e_]), eO = function(e, t) {
+  }), [t, ea, es, er, eb, ex]), ey = i.useMemo(() => (0, c.VP)(ea, es, er, ex, eb), [ea, es, er, ex, eb]), eO = function(e, t) {
     let n = !(arguments.length > 2) || true === arguments[2] || arguments[2],
-      r = X({}, eh);
+      r = V({}, ex);
     r[e] = {
       value: t,
       isValid: n
     }, ef(r)
   }, eZ = e => {
-    J(ej(e))
+    K(ej(e))
   };
-  l.useEffect(() => {
-    null != ee && eb(ee), null != en && ef(en)
-  }, [ee, en]), l.useEffect(() => {
+  i.useEffect(() => {
+    null != ee && eh(ee), null != en && ef(en)
+  }, [ee, en]), i.useEffect(() => {
     if (null != er) {
       let e = er.data;
       if (null != e)
-        for (let [t, n, r, l] of e) l && eb(e => (function(e, t) {
+        for (let [t, n, r, i] of e) i && eh(e => (function(e, t) {
           return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {
@@ -136,18 +136,18 @@ let Q = e => {
           })(Object(t)).forEach(function(n) {
             Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
           }), e
-        })(X({}, e), {
+        })(V({}, e), {
           [t]: n
         }))
     }
   }, [er]);
   let eI = e => {
-      e === G.evJ.INVALID_FORM_BODY ? ex(z.intl.string(z.t.VjAAuL)) : ec ? ex(z.intl.string(W.default.psKFdH)) : ex(z.intl.string(z.t.h6D8V1))
+      e === G.evJ.INVALID_FORM_BODY ? e_(W.intl.string(W.t.VjAAuL)) : ec ? e_(W.intl.string(F.default.psKFdH)) : e_(W.intl.string(W.t.h6D8V1))
     },
-    eC = () => {
+    eS = () => {
       let t = ["", e.successNodeId];
       $(ej(t)).then(() => {
-        ex(""), eZ(t)
+        e_(""), eZ(t)
       }).catch(e => {
         var t;
         eI(null == (t = e.body) ? true : t.code)
@@ -155,42 +155,42 @@ let Q = e => {
         eu(false)
       })
     };
-  l.useEffect(() => {
+  i.useEffect(() => {
     t.is_auto_submit && !em && (ep(true), $(ej(["", t.id])))
   }, [t.is_auto_submit, em, $, ej, t.id]);
-  let eS = (0, o.fW)(Q),
-    eN = null != H(t, "ignore_users") && ("message" === n.name || "first_dm" === n.name || "user" === n.name);
+  let eC = (0, o.fW)(Q),
+    eN = null != q(t, "ignore_users") && ("message" === n.name || "first_dm" === n.name || "user" === n.name);
   return (0, r.jsxs)("div", {
-    className: F.container,
+    className: z.container,
     children: [(0, r.jsxs)(a.xBx, {
       "data-migration-pending": true,
       separator: false,
       direction: s.Z.Direction.VERTICAL,
-      className: F.header,
+      className: z.header,
       children: [(0, r.jsx)(M.Z, {
-        element: H(t, "success")
+        element: q(t, "success")
       }), (0, r.jsx)(I.Z, {
         node: t,
         isModeratorReport: ec
-      }), (0, r.jsx)(S.Z, {
+      }), (0, r.jsx)(C.Z, {
         node: t
       })]
     }), (0, r.jsxs)(a.hzk, {
       "data-migration-pending": true,
-      className: F.body,
-      children: [null != el && (0, r.jsx)(L.Z, {
-        element: el
+      className: z.body,
+      children: [null != ei && (0, r.jsx)(B.Z, {
+        element: ei
       }), null != eo && (0, r.jsx)(A.Z, {
         element: eo
-      }), null != H(t, "message_preview") && ("message" === n.name || "first_dm" === n.name || "report_to_mod_message" === n.name) && (0, r.jsx)(T.Z, {
+      }), null != q(t, "message_preview") && ("message" === n.name || "first_dm" === n.name || "report_to_mod_message" === n.name) && (0, r.jsx)(T.Z, {
         message: n.record
-      }), null != H(t, "user_preview") && "user" === n.name ? (0, r.jsx)(B.Z, {
+      }), null != q(t, "user_preview") && "user" === n.name ? (0, r.jsx)(U.Z, {
         user: n.record
-      }) : null, null != H(t, "guild_preview") && "guild" === n.name ? (0, r.jsx)(O.Z, {
+      }) : null, null != q(t, "guild_preview") && "guild" === n.name ? (0, r.jsx)(O.Z, {
         guild: n.record
-      }) : null, null != H(t, "breadcrumbs") && (0, r.jsx)(p.Z, {
+      }) : null, null != q(t, "breadcrumbs") && (0, r.jsx)(p.Z, {
         isModeratorReport: ec,
-        history: K
+        history: J
       }), function(e) {
         let {
           elements: t
@@ -199,79 +199,79 @@ let Q = e => {
           let {
             type: t
           } = e;
-          return U.O.includes(t)
+          return L.O.includes(t)
         })
       }(t) && (0, r.jsxs)(k.Z, {
-        children: [eN && (0, r.jsx)(C.Z, {
+        children: [eN && (0, r.jsx)(S.Z, {
           user: "user" === n.name ? n.record : n.record.author,
           channelId: ev,
           reportId: et
-        }), null != H(t, "block_users") && ("message" === n.name || "first_dm" === n.name || "user" === n.name || "report_to_mod_message" === n.name || "application" === n.name && null != n.record.bot) && (0, r.jsx)(m.Z, {
+        }), null != q(t, "block_users") && ("message" === n.name || "first_dm" === n.name || "user" === n.name || "report_to_mod_message" === n.name || "application" === n.name && null != n.record.bot) && (0, r.jsx)(m.Z, {
           user: "application" === n.name ? n.record.bot : "user" === n.name ? n.record : n.record.author,
           channelId: ev,
           reportId: et,
           reportType: n
-        }), !eN && null != H(t, "mute_users") && ("message" === n.name || "first_dm" === n.name || "user" === n.name || "report_to_mod_message" === n.name) && (0, r.jsx)(E.Z, {
+        }), !eN && null != q(t, "mute_users") && ("message" === n.name || "first_dm" === n.name || "user" === n.name || "report_to_mod_message" === n.name) && (0, r.jsx)(E.Z, {
           user: "user" === n.name ? n.record : n.record.author,
           channelId: ev,
           reportId: et
-        }), null != H(t, "delete_message") && ("message" === n.name || "report_to_mod_message" === n.name) && (0, r.jsx)(_.Z, {
+        }), null != q(t, "delete_message") && ("message" === n.name || "report_to_mod_message" === n.name) && (0, r.jsx)(b.Z, {
           message: n.record,
           reportId: et
-        }), null != H(t, "leave_guild") && "guild" === n.name && (0, r.jsx)(N.Z, {
+        }), null != q(t, "leave_guild") && "guild" === n.name && (0, r.jsx)(N.Z, {
           guildId: n.record.id,
           reportId: et
-        }), null != H(t, "deauthorize_app") && "application" === n.name && (0, r.jsx)(x.Z, {
+        }), null != q(t, "deauthorize_app") && "application" === n.name && (0, r.jsx)(_.Z, {
           application: n.record,
           reportId: et
-        }), null != H(t, "deauthorize_app") && "application" === n.name && (0, r.jsx)(D.Z, {
+        }), null != q(t, "deauthorize_app") && "application" === n.name && (0, r.jsx)(R.Z, {
           application: n.record,
           reportId: et
         })]
-      }), null != H(t, "settings_upsells") && ("message" === n.name || "report_to_mod_message" === n.name) && null != eS && (0, r.jsx)(R.Z, {
-        settingsUpsells: eS,
+      }), null != q(t, "settings_upsells") && ("message" === n.name || "report_to_mod_message" === n.name) && null != eC && (0, r.jsx)(w.Z, {
+        settingsUpsells: eC,
         channelId: n.record.channel_id,
         onModalClose: Y,
         reportId: et,
         reportType: n,
         reportSubType: Q
-      }), null != H(t, "channel_preview") && "stage_channel" === n.name && (0, r.jsx)(w.Z, {
+      }), null != q(t, "channel_preview") && "stage_channel" === n.name && (0, r.jsx)(D.Z, {
         stageInstance: n.record
-      }), null != H(t, "guild_scheduled_event_preview") && "guild_scheduled_event" === n.name && (0, r.jsx)(Z.Z, {
+      }), null != q(t, "guild_scheduled_event_preview") && "guild_scheduled_event" === n.name && (0, r.jsx)(Z.Z, {
         event: n.record
-      }), null != H(t, "guild_directory_entry_preview") && "guild_directory_entry" === n.name && (0, r.jsx)(j.Z, {
+      }), null != q(t, "guild_directory_entry_preview") && "guild_directory_entry" === n.name && (0, r.jsx)(j.Z, {
         entry: n.record
-      }), null != H(t, "guild_discovery_preview") && "guild_discovery" === n.name && (0, r.jsx)(y.Z, {
+      }), null != q(t, "guild_discovery_preview") && "guild_discovery" === n.name && (0, r.jsx)(y.Z, {
         entry: n.record
-      }), null != H(t, "app_preview") && "application" === n.name && (0, r.jsx)(u.Z, {
+      }), null != q(t, "app_preview") && "application" === n.name && (0, r.jsx)(u.Z, {
         entry: n.record
       }), null != er && (0, r.jsx)(P.Z, {
         element: er,
         onChange: (e, t) => {
-          let n = X({}, e_);
-          e in e_ ? delete n[e] : n[e] = t, eb(n)
+          let n = V({}, eb);
+          e in eb ? delete n[e] : n[e] = t, eh(n)
         },
-        state: e_
-      }), q.includes(n.name) && null != es && es.length > 0 && (0, r.jsx)(b.Z, {
+        state: eb
+      }), X.includes(n.name) && null != es && es.length > 0 && (0, r.jsx)(h.Z, {
         elements: es,
         onChange: eO,
-        state: eh
-      }), q.includes(n.name) && null != ea && ea.length > 0 && (0, r.jsx)(v.Z, {
+        state: ex
+      }), X.includes(n.name) && null != ea && ea.length > 0 && (0, r.jsx)(v.Z, {
         elements: ea,
         onChange: eO,
-        state: eh
+        state: ex
       }), (0, r.jsxs)("div", {
-        className: F.listContainer,
+        className: z.listContainer,
         children: [(0, r.jsx)(g.Z, {
           node: t,
           onSelectChild: eZ
-        }), null != ei && ei.length > 0 ? (0, r.jsx)(f.Z, {
-          elements: ei
+        }), null != el && el.length > 0 ? (0, r.jsx)(f.Z, {
+          elements: el
         }) : null]
-      }), (0, r.jsx)(h.Z, {
+      }), (0, r.jsx)(x.Z, {
         errorMessage: eg,
         onClose: () => {
-          ex("")
+          e_("")
         }
       })]
     }), (0, r.jsx)(d.Z, {
@@ -289,14 +289,14 @@ let Q = e => {
             eZ(["", e.target]);
             break;
           case "submit":
-            eu(true), eC()
+            eu(true), eS()
         }
       },
       onBackClicked: e.onNavigateBack,
-      canNavigateBack: K.length > 0
+      canNavigateBack: J.length > 0
     }), (0, r.jsx)(a.olH, {
       "data-migration-pending": true,
-      className: F.closeButton,
+      className: z.closeButton,
       onClick: Y
     })]
   })

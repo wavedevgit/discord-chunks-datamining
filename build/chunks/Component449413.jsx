@@ -15,7 +15,7 @@ let c = e => {
     node: {
       info: c
     }
-  } = e, d = l.useRef(a.Z.reactParserFor((t = function(e) {
+  } = e, d = i.useRef(a.Z.reactParserFor((t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -44,9 +44,9 @@ let c = e => {
   })(Object(n)).forEach(function(e) {
     Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
   }), t)));
-  return null == c ? null : (0, r.jsx)(i.Wn, {
+  return null == c ? null : (0, r.jsx)(l.Wn, {
     className: o.infoBox,
-    messageType: i.QYI.INFO,
+    messageType: l.QYI.INFO,
     children: d.current(c)
   })
 }

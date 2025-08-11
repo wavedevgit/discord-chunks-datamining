@@ -16,11 +16,11 @@ let m = e => {
   let {
     guildId: t,
     reportId: n
-  } = e, [m, p] = l.useState(false), g = c.Z.getGuild(t), x = null != g;
-  l.useEffect(() => {
-    p(!x)
-  }, [x]);
-  let _ = l.useCallback(() => {
+  } = e, [m, p] = i.useState(false), g = c.Z.getGuild(t), _ = null != g;
+  i.useEffect(() => {
+    p(!_)
+  }, [_]);
+  let b = i.useCallback(() => {
     p(true), a.ZP.trackWithMetadata(d.rMx.IAR_LEAVE_GUILD_BUTTON_CLICKED, {
       guild_id: t,
       report_id: n
@@ -35,9 +35,9 @@ let m = e => {
     buttonDisabled: m,
     buttonVariant: "critical-primary",
     onButtonPress: () => {
-      (0, i.h7j)(e => {
+      (0, l.h7j)(e => {
         var t, n;
-        return (0, r.jsx)(i.ConfirmModal, (t = function(e) {
+        return (0, r.jsx)(l.ConfirmModal, (t = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
               r = Object.keys(n);
@@ -60,9 +60,9 @@ let m = e => {
           }),
           confirmText: u.intl.string(u.t.J2TBi4),
           cancelText: u.intl.string(u.t["ETE/oK"]),
-          onConfirm: _
+          onConfirm: b
         }, e), n = n = {
-          children: (0, r.jsx)(i.Text, {
+          children: (0, r.jsx)(l.Text, {
             variant: "text-md/normal",
             children: u.intl.format(u.t.ZEXC0t, {
               name: g.name

@@ -2,7 +2,7 @@
 /** chunk id: 748610, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => g
 }), require("./388685.js"), require("./415506.js");
 var Chunk392711 = require("./392711.js"),
   i = require.n(Chunk392711),
@@ -41,14 +41,18 @@ function _(e) {
   e.pinned = t
 }
 
-function p() {
-  returnfalse
+function p(e) {
+  return e === u.I_8 ? null : e
 }
 
 function h() {
+  returnfalse
+}
+
+function m() {
   returntrue
 }
-let m = {
+let g = {
   fetchTabMessages: function(e) {
     let {
       searchContext: t,
@@ -56,44 +60,44 @@ let m = {
       searchQueryString: r,
       pagination: l,
       trackExactTotalHits: d,
-      getId: p,
-      getLimit: h,
-      onFetchStart: m,
-      onFetchSuccess: g,
-      searchMode: E = u.QIO.NEWEST
-    } = e, b = (0, s.kG)(r), y = (0, s.$G)(b);
-    _(y);
-    let O = f({}, y, (0, s.zH)(E)),
-      v = (0, s.s5)(t);
-    null != v && (0, s.jW)(O, v);
-    let I = c.Z.create({
+      getId: h,
+      getLimit: m,
+      onFetchStart: g,
+      onFetchSuccess: E,
+      searchMode: b = u.QIO.NEWEST
+    } = e, y = (0, s.kG)(r), O = (0, s.$G)(y);
+    _(O);
+    let v = f({}, O, (0, s.zH)(b)),
+      I = (0, s.s5)(t);
+    null != I && (0, s.jW)(v, I);
+    let T = c.Z.create({
       id: (0, s.Tm)(t),
       searchContext: t,
-      searchQuery: O,
+      searchQuery: v,
       searchTabs: n,
-      getLimit: h,
+      getLimit: m,
       pagination: l,
       trackExactTotalHits: d
     });
-    null == m || m({
+    null == g || g({
       searchContext: t,
       searchQueryString: r,
-      searchQuery: O
+      searchQuery: v
     });
-    let T = n.map(e => p(e));
+    let S = n.map(e => h(e));
     return o.Z.dispatch({
       type: "SEARCH_MESSAGES_START",
-      ids: T
-    }), I.fetch(e => {
+      ids: S
+    }), T.fetch(e => {
       let {
         body: n
       } = e, r = Object.entries(n.tabs);
       o.Z.dispatch({
         type: "SEARCH_MESSAGES_SUCCESS",
-        guildId: v,
+        guildId: p(I),
         data: r.map(e => {
           var t, r, o;
-          let [s, l] = e, c = p(s), u = l.cursor;
+          let [s, l] = e, c = h(s), u = l.cursor;
           return {
             id: c,
             analyticsId: n.analytics_id,
@@ -107,19 +111,19 @@ let m = {
             documentsIndexed: n.documents_indexed
           }
         })
-      }), null == g || g({
+      }), null == E || E({
         searchContext: t,
         tabEntries: r
       })
     }, () => {
       o.Z.dispatch({
         type: "SEARCH_MESSAGES_INDEXING",
-        ids: T
+        ids: S
       })
     }, e => {
       o.Z.dispatch({
         type: "SEARCH_MESSAGES_FAILURE",
-        ids: T,
+        ids: S,
         error: e
       })
     }), true
@@ -144,7 +148,7 @@ let m = {
       var t, n, r;
       o.Z.dispatch({
         type: "SEARCH_MESSAGES_SUCCESS",
-        guildId: i,
+        guildId: p(i),
         data: [{
           id: c,
           analyticsId: e.body.analytics_id,
@@ -188,7 +192,7 @@ let m = {
     })
   },
   addNativeSearchHistoryItem: function(e, t) {
-    if (!p() || e.type !== u.aib.DMS && e.type !== u.aib.GUILD) return;
+    if (!h() || e.type !== u.aib.DMS && e.type !== u.aib.GUILD) return;
     let n = (0, s.Tm)(e);
     o.Z.dispatch({
       type: "SEARCH_HISTORY_NATIVE_ADD_ITEM",
@@ -197,7 +201,7 @@ let m = {
     })
   },
   removeNativeSearchHistoryItem: function(e, t) {
-    if (!p()) return;
+    if (!h()) return;
     let n = (0, s.Tm)(e);
     o.Z.dispatch({
       type: "SEARCH_HISTORY_NATIVE_REMOVE_ITEM",
@@ -206,7 +210,7 @@ let m = {
     })
   },
   clearNativeSearchHistory: function(e) {
-    if (!p()) return;
+    if (!h()) return;
     let t = (0, s.Tm)(e);
     o.Z.dispatch({
       type: "SEARCH_HISTORY_NATIVE_CLEAR_ITEMS",
@@ -214,7 +218,7 @@ let m = {
     })
   },
   addWebSearchHistoryItem: function(e, t) {
-    if (!h()) return;
+    if (!m()) return;
     let n = (0, s.Tm)(e);
     o.Z.dispatch({
       type: "SEARCH_HISTORY_WEB_ADD_ITEM",
@@ -223,7 +227,7 @@ let m = {
     })
   },
   removeWebSearchHistoryItem: function(e, t) {
-    if (!h()) return;
+    if (!m()) return;
     let n = (0, s.Tm)(e);
     o.Z.dispatch({
       type: "SEARCH_HISTORY_WEB_REMOVE_ITEM",
@@ -232,7 +236,7 @@ let m = {
     })
   },
   clearWebSearchHistory: function(e) {
-    if (!h()) return;
+    if (!m()) return;
     let t = (0, s.Tm)(e);
     o.Z.dispatch({
       type: "SEARCH_HISTORY_WEB_CLEAR_ITEMS",

@@ -22,21 +22,21 @@ var Chunk255367 = require("./255367.js"),
 let f = e => {
   let {
     message: t
-  } = e, n = (0, o.ZP)(t), f = (0, i.e7)([x.Z], () => x.Z.getChannel(t.channel_id)), v = l.useMemo(() => (0, s.Z)(t), [t]), {
+  } = e, n = (0, o.ZP)(t), f = (0, l.e7)([_.Z], () => _.Z.getChannel(t.channel_id)), v = i.useMemo(() => (0, s.Z)(t), [t]), {
     content: j
   } = (0, p.Z)(v, {
     hideSimpleEmbedContent: false
-  }), y = g.jU.useSetting(), O = l.useCallback(() => {
+  }), y = g.jU.useSetting(), O = i.useCallback(() => {
     let {
       leadingIcon: e,
       trailingIcon: n
     } = (0, m.f)(t, j, false, false, "", {
-      leadingIconClass: h.attachmentIcon,
-      trailingIconClass: h.attachmentIcon,
-      iconSize: _.WW
+      leadingIconClass: x.attachmentIcon,
+      trailingIconClass: x.attachmentIcon,
+      iconSize: b.WW
     });
     return (0, r.jsxs)("div", {
-      className: h.contentContainer,
+      className: x.contentContainer,
       children: [e, (0, r.jsx)(d.ZP, {
         message: t,
         content: j,
@@ -45,13 +45,13 @@ let f = e => {
     })
   }, [t, j, y]);
   return null == f ? null : (0, r.jsxs)("div", {
-    className: h.container,
+    className: x.container,
     children: [(0, r.jsx)(a.X6q, {
-      className: h.header,
+      className: x.header,
       variant: "heading-sm/semibold",
-      children: b.intl.string(b.t.iouM3d)
+      children: h.intl.string(h.t.iouM3d)
     }), (0, r.jsx)(a.Ttm, {
-      className: h.messagePreviewContainer,
+      className: x.messagePreviewContainer,
       children: (0, r.jsx)(c.Z, {
         childrenMessageContent: O(),
         childrenHeader: (0, r.jsx)(u.ZP, {

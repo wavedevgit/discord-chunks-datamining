@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
 var Chunk120356 = require("./120356.js"),
-  i = require.n(Chunk120356),
+  l = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk259580 = require("./259580.jsx"),
   Chunk88309 = require("./88309.js"),
@@ -15,14 +15,14 @@ let d = e => {
     let {
       child: t,
       onClick: n
-    } = e, [l] = t;
+    } = e, [i] = t;
     return (0, r.jsxs)(a.P3F, {
-      className: i()(c.childButton, o.listElement),
+      className: l()(c.childButton, o.listElement),
       onClick: () => n(t),
       children: [(0, r.jsx)(a.Text, {
         className: c.childText,
         variant: "text-md/semibold",
-        children: l
+        children: i
       }), (0, r.jsx)(s.Z, {
         className: c.childIcon,
         direction: s.Z.Directions.RIGHT
@@ -37,15 +37,15 @@ let d = e => {
       onSelectChild: n
     } = e;
     if (null == t || 0 === t.length) return null;
-    let l = t.map(e => {
-      let [t, l] = e;
+    let i = t.map(e => {
+      let [t, i] = e;
       return (0, r.jsx)(d, {
         child: e,
         onClick: n
-      }, "".concat(t, "+").concat(l))
+      }, "".concat(t, "+").concat(i))
     });
     return (0, r.jsx)("div", {
       className: o.listElementWrapper,
-      children: l
+      children: i
     })
   }

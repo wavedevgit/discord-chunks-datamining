@@ -15,21 +15,21 @@ let s = e => {
   } = e;
   return null == t || "" === t ? null : (0, r.jsxs)("div", {
     className: a.errorContainer,
-    children: [(0, r.jsx)(l.Mgn, {
+    children: [(0, r.jsx)(i.Mgn, {
       size: "custom",
       color: "currentColor",
       width: 20,
       height: 20,
       className: a.errorIcon
-    }), (0, r.jsx)(l.Text, {
+    }), (0, r.jsx)(i.Text, {
       className: a.errorText,
       variant: "text-sm/normal",
       children: t
-    }), (0, r.jsx)(l.P3F, {
+    }), (0, r.jsx)(i.P3F, {
       onClick: () => {
         n()
       },
-      "aria-label": i.intl.string(i.t.WAI6xs),
+      "aria-label": l.intl.string(l.t.WAI6xs),
       className: a.closeIcon
     })]
   })

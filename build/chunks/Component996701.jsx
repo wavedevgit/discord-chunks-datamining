@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
 var Chunk120356 = require("./120356.js"),
-  i = require.n(Chunk120356),
+  l = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk782568 = require("./782568.js"),
   Chunk388032 = require("./388032.jsx"),
@@ -17,13 +17,13 @@ let u = e => {
     data: {
       url: t,
       link_text: n,
-      link_description: l,
+      link_description: i,
       is_localized: o
     }
   } = e;
   return o ? (0, r.jsxs)(a.P3F, {
     role: "link",
-    className: i()(d.linkButton, c.listElement),
+    className: l()(d.linkButton, c.listElement),
     onClick: () => {
       (0, s.Z)(t)
     },
@@ -33,10 +33,10 @@ let u = e => {
         className: d.__invalid_linkText,
         variant: "text-md/semibold",
         children: n
-      }), null != l && "" !== l && (0, r.jsx)(a.Text, {
+      }), null != i && "" !== i && (0, r.jsx)(a.Text, {
         variant: "text-md/normal",
         color: "text-muted",
-        children: l
+        children: i
       })]
     }), (0, r.jsx)(a.Gr1, {
       size: "sm",
@@ -64,15 +64,15 @@ function m(e) {
         data: n
       }, "external-link+".concat(t))
     }),
-    l = t.some(e => {
+    i = t.some(e => {
       let {
         data: t
       } = e;
       return t.is_header_hidden
     });
   return (0, r.jsxs)("div", {
-    className: i()(d.linksContainer, c.listElementWrapper),
-    children: [!l && (0, r.jsx)(a.X6q, {
+    className: l()(d.linksContainer, c.listElementWrapper),
+    children: [!i && (0, r.jsx)(a.X6q, {
       variant: "heading-sm/semibold",
       color: "header-secondary",
       className: d.header,

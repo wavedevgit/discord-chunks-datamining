@@ -19,11 +19,11 @@ function m(e) {
       data: {
         title: t,
         body: n,
-        sms: i,
+        sms: l,
         is_localized: m
       }
     }
-  } = e, [p, g] = l.useState(false), x = l.useRef(o.Z.reactParserFor(o.Z.defaultRules));
+  } = e, [p, g] = i.useState(false), _ = i.useRef(o.Z.reactParserFor(o.Z.defaultRules));
   return m ? (0, r.jsxs)("div", {
     className: u.container,
     children: [(0, r.jsx)(s.X6q, {
@@ -34,7 +34,7 @@ function m(e) {
     }), (0, r.jsx)(s.Text, {
       variant: "text-sm/normal",
       className: u.bodyText,
-      children: x.current(n)
+      children: _.current(n)
     }), (0, r.jsx)("div", {
       children: (0, r.jsxs)("div", {
         className: a()(u.smsNumberContainer, {
@@ -44,7 +44,7 @@ function m(e) {
           variant: "text-md/normal",
           selectable: true,
           className: u.smsNumberText,
-          children: i
+          children: l
         }), (0, r.jsx)("div", {
           "data-button-hoisted-classname-wrapper": true,
           className: u.__invalid_trailingButton,
@@ -53,7 +53,7 @@ function m(e) {
             size: "sm",
             text: p ? d.intl.string(d.t["t5VZ8/"]) : d.intl.string(d.t.OpuAlJ),
             onClick: () => {
-              (0, c.JG)(i, () => g(true))
+              (0, c.JG)(l, () => g(true))
             }
           })
         })]

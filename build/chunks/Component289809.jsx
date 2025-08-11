@@ -18,15 +18,15 @@ function o(e) {
         is_localized: o
       }
     }
-  } = e, c = l.useRef(a.Z.reactParserFor(a.Z.defaultRules));
+  } = e, c = i.useRef(a.Z.reactParserFor(a.Z.defaultRules));
   return o && (null != t || null != n) ? (0, r.jsxs)("div", {
     className: s.container,
-    children: [null != t && (0, r.jsx)(i.X6q, {
+    children: [null != t && (0, r.jsx)(l.X6q, {
       variant: "heading-sm/semibold",
       color: "header-secondary",
       className: s.header,
       children: t
-    }), null != n && (0, r.jsx)(i.Text, {
+    }), null != n && (0, r.jsx)(l.Text, {
       variant: "text-sm/normal",
       className: s.bodyText,
       children: c.current(n)

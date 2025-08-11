@@ -11,17 +11,17 @@ var Chunk392711 = require("./392711.js"),
   Chunk130883 = require("./130883.js"),
   Chunk646727 = require("./646727.js");
 let c = e => {
-  let t = (0, l.flatMap)(e.history, e => {
+  let t = (0, i.flatMap)(e.history, e => {
     var t;
     let {
       destination: [n],
       multiSelect: r
-    } = e, l = [null, null], i = Object.values(null != (t = null == r ? true : r.state) ? t : {});
-    return i.length > 0 && (l[0] = i.join(", ")), "" !== n && (l[1] = n), l
+    } = e, i = [null, null], l = Object.values(null != (t = null == r ? true : r.state) ? t : {});
+    return l.length > 0 && (i[0] = l.join(", ")), "" !== n && (i[1] = n), i
   }).filter(e => null != e);
   return 0 === t.length ? null : (0, r.jsxs)("div", {
     className: o.container,
-    children: [(0, r.jsx)(i.X6q, {
+    children: [(0, r.jsx)(l.X6q, {
       className: o.breadcrumbsHeader,
       color: "header-secondary",
       variant: "heading-sm/semibold",
@@ -30,7 +30,7 @@ let c = e => {
       className: o.breadcrumbContainer,
       children: [(0, r.jsx)("div", {
         className: o.breadcrumbDot
-      }), (0, r.jsx)(i.Text, {
+      }), (0, r.jsx)(l.Text, {
         variant: "text-md/normal",
         className: o.breadcrumbText,
         children: e

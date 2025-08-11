@@ -6,7 +6,6 @@ require.d(exports, {
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk442837 = require("./442837.js"),
-  Chunk755721 = require("./755721.js"),
   Chunk194359 = require("./194359.js"),
   Chunk367907 = require("./367907.js"),
   Chunk681678 = require("./681678.js"),
@@ -22,25 +21,24 @@ let _ = e => {
     channelId: n,
     reportId: _,
     reportType: b
-  } = e, h = (0, i.e7)([m.Z], () => m.Z.isBlocked(t.id), [t.id]), f = (0, i.e7)([u.Z], () => u.Z.getChannel(n), [n]), v = l.useMemo(() => p.ZP.getName(null == f ? true : f.guild_id, null == f ? true : f.id, t), [f, t]), j = l.useCallback(() => {
-    o.ZP.trackWithMetadata(g.rMx.IAR_BLOCK_USER_BUTTON_CLICKED, {
+  } = e, h = (0, l.e7)([u.Z], () => u.Z.isBlocked(t.id), [t.id]), x = (0, l.e7)([d.Z], () => d.Z.getChannel(n), [n]), f = i.useMemo(() => m.ZP.getName(null == x ? true : x.guild_id, null == x ? true : x.id, t), [x, t]), v = i.useCallback(() => {
+    s.ZP.trackWithMetadata(p.rMx.IAR_BLOCK_USER_BUTTON_CLICKED, {
       other_user_id: t.id,
       report_id: _
-    }), s.Z.blockUser(t.id, {
+    }), a.Z.blockUser(t.id, {
       location: "ReportMenuBlockUser-iOS"
     }).then(() => {
-      c.Z.showBlockSuccessToast(t.id, n)
+      o.Z.showBlockSuccessToast(t.id, n)
     })
   }, [t, _, n]);
-  return (0, r.jsx)(d.ZP, {
-    title: x.intl.formatToPlainString(x.t["Q1o/f3"], {
-      username: v
+  return (0, r.jsx)(c.JZ, {
+    title: g.intl.formatToPlainString(g.t["Q1o/f3"], {
+      username: f
     }),
-    description: x.intl.string(x.t.G08MKi),
-    buttonText: h ? x.intl.string(x.t.ot2tSk) : x.intl.string(x.t["l+7PZW"]),
+    description: g.intl.string(g.t.G08MKi),
+    buttonText: h ? g.intl.string(g.t.ot2tSk) : g.intl.string(g.t["l+7PZW"]),
     buttonDisabled: h,
-    onButtonPress: j,
-    buttonColor: "application" === b.name && h ? a.zx.Colors.WHITE : a.zx.Colors.RED,
-    buttonLook: "application" === b.name && h ? a.zx.Looks.LINK : a.zx.Looks.FILLED
+    onButtonPress: v,
+    buttonVariant: "application" === b.name && h ? "secondary" : "critical-primary"
   })
 }
