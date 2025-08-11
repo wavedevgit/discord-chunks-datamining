@@ -2,16 +2,17 @@
 /** chunk id: 823289, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => _
+  Z: () => p
 });
 var Chunk286379 = require("./286379.js"),
+  Chunk15624 = require("./15624.js"),
   Chunk797614 = require("./797614.js"),
   Chunk626135 = require("./626135.js"),
   Chunk446276 = require("./446276.js"),
   Chunk46140 = require("./46140.js"),
   Chunk981631 = require("./981631.js");
 
-function c(e, t, n) {
+function u(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -19,9 +20,9 @@ function c(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let u = 3e4,
-  d = .1;
-class f {
+let d = 3e4,
+  f = .1;
+class _ {
   isEligible() {
     return (0, Chunk446276.M)(Chunk46140.dr.QUESTS_BAR)
   }
@@ -29,10 +30,10 @@ class f {
     null != this.timeoutTimer && (clearTimeout(this.timeoutTimer), this.timeoutTimer = null)
   }
   sendMetric(e, t, n) {
-    Math.random() > d || (i.Z.distribution({
+    Math.random() > f || (o.Z.distribution({
       name: r.V.QUEST_BAR_RENDER_DELAY,
       tags: ["quest_id:".concat(e), "timeout:".concat(t)]
-    }, n), o.default.track(l.rMx.QUEST_BAR_RENDER_DELAY, {
+    }, n), a.default.track(c.rMx.QUEST_BAR_RENDER_DELAY, {
       quest_id: e,
       timeout: t,
       duration: n
@@ -41,19 +42,23 @@ class f {
   startTracking(e) {
     this.isEligible() && (this.clearTracking(), this.startTime = performance.now(), this.questId = e, this.timeoutTimer = setTimeout(() => {
       this.stopTracking(e, true)
-    }, u))
+    }, d))
   }
   stopTracking(e) {
     let t = arguments.length > 1 && true !== arguments[1] && arguments[1];
-    if (!this.isEligible() || null === this.startTime || this.questId !== e) return;
-    let n = t ? u : Math.round(performance.now() - this.startTime);
-    this.clearTracking(), this.sendMetric(e, t, n)
+    if (this.isEligible() && null !== this.startTime && this.questId === e) {
+      if ("focused" === i.Z.getState()) {
+        let n = Math.min(t ? d : Math.round(performance.now() - this.startTime), d);
+        this.sendMetric(e, t, n)
+      }
+      this.clearTracking()
+    }
   }
   clearTracking() {
     this.clearTimeoutTimer(), this.startTime = null, this.questId = null
   }
   constructor() {
-    c(this, "startTime", null), c(this, "questId", null), c(this, "timeoutTimer", null)
+    u(this, "startTime", null), u(this, "questId", null), u(this, "timeoutTimer", null)
   }
 }
-let _ = new f
+let p = new _
