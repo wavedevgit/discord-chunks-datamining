@@ -29,7 +29,7 @@ function m(e) {
     widget: g,
     reachedMaxGamesLimit: b,
     disableInteraction: j = false
-  } = e, x = (0, o.e7)([c.default], () => c.default.getId() === n), h = p[g.type](), y = x ? (t = g.type) === i.l.FAVORITE_GAMES ? u.intl.string(u.t.wiXdER) : u.intl.format(u.t["zR1+09"], {
+  } = e, y = (0, o.e7)([c.default], () => c.default.getId() === n), x = p[g.type](), h = y ? (t = g.type) === i.l.FAVORITE_GAMES ? u.intl.string(u.t.wiXdER) : u.intl.format(u.t["zR1+09"], {
     numGames: l.k[t]
   }) : true;
   return (0, r.jsxs)("div", {
@@ -40,13 +40,13 @@ function m(e) {
         variant: "heading-sm/medium",
         color: "text-default",
         id: m,
-        children: h
-      }), null != y && (0, r.jsx)(a.Text, {
+        children: x
+      }), null != h && (0, r.jsx)(a.Text, {
         variant: "text-xs/normal",
         color: "text-secondary",
-        children: y
+        children: h
       })]
-    }), x && !j && (0, r.jsxs)("div", {
+    }), y && !j && (0, r.jsxs)("div", {
       className: f.actions,
       children: [(0, r.jsx)(s.Z, {
         disabled: b,

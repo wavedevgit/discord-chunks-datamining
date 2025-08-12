@@ -23,15 +23,15 @@ function p(e) {
   } = e, g = (0, i.e7)([s.Z], () => s.Z.hidePersonalInformation), {
     loading: b,
     note: j
-  } = (0, c.Z)(p), x = l.useRef(null);
+  } = (0, c.Z)(p), y = l.useRef(null);
   return (l.useEffect(() => {
     if (!t || g) return;
-    let e = x.current;
+    let e = y.current;
     (null == e ? true : e.selectionStart) != null && (e.focus(), e.setSelection(e.value.length, e.value.length))
   }, [t, g]), g) ? null : (0, r.jsx)("div", {
     className: n,
     children: (0, r.jsx)(o.lcI, {
-      ref: x,
+      ref: y,
       className: f.textarea,
       disabled: b,
       placeholder: b ? u.intl.string(u.t["WLKx//"]) : u.intl.string(u.t.VBhOe3),

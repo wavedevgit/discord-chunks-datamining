@@ -1,7 +1,7 @@
 /** Chunk was on 11776 **/
 /** chunk id: 740628, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => v
+  Z: () => O
 }), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -21,7 +21,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk301150 = require("./301150.js"),
   Chunk923243 = require("./923243.js");
 
-function y(e) {
+function h(e) {
   let {
     section: t,
     subsection: n,
@@ -64,7 +64,7 @@ function y(e) {
   })
 }
 
-function v(e) {
+function O(e) {
   var t, n, d;
   let {
     user: u,
@@ -72,8 +72,8 @@ function v(e) {
     displayProfile: p,
     guildId: m,
     items: g,
-    initialSection: v = b.oh.USER_INFO,
-    initialSubsection: O,
+    initialSection: O = b.oh.USER_INFO,
+    initialSubsection: v,
     onClose: _
   } = e, {
     trackUserProfileAction: I
@@ -85,9 +85,9 @@ function v(e) {
       let {
         section: t
       } = e;
-      return t === v
+      return t === O
     })) ? true : t.section) ? d : null == (n = g[0]) ? true : n.section,
-    subsection: O
+    subsection: v
   });
   l.useEffect(() => {
     null == g.find(e => e.section === E) && T({
@@ -105,20 +105,20 @@ function v(e) {
     })
   }, [I, T]);
   return P ? (0, r.jsx)("div", {
-    className: h.container,
+    className: x.container,
     children: (0, r.jsxs)("div", {
-      className: x.empty,
+      className: y.empty,
       children: [(0, r.jsx)("div", {
-        className: x.emptyIconStreamerMode
+        className: y.emptyIconStreamerMode
       }), (0, r.jsx)("div", {
-        className: x.emptyText,
+        className: y.emptyText,
         children: j.intl.string(j.t.Br1ls7)
       })]
     })
   }) : (0, r.jsxs)("div", {
-    className: h.container,
+    className: x.container,
     children: [(0, r.jsx)(o.n, {
-      className: h.tabBar,
+      className: x.tabBar,
       type: "top",
       selectedItem: E,
       onItemSelect: N,
@@ -128,7 +128,7 @@ function v(e) {
           text: n
         } = e;
         return (0, r.jsx)(o.n.Item, {
-          className: h.tabBarItem,
+          className: x.tabBarItem,
           id: t,
           "aria-label": n,
           children: (0, r.jsx)(a.Text, {
@@ -137,7 +137,7 @@ function v(e) {
           })
         }, t)
       })
-    }), (0, r.jsx)(y, {
+    }), (0, r.jsx)(h, {
       items: g,
       section: E,
       subsection: Z,

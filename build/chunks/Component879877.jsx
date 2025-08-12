@@ -16,29 +16,29 @@ function u(e) {
   let {
     tags: t
   } = e, n = null == t ? true : t.filter(e => null != (0, c.z)(e)), i = (0, l.useRef)(new Map), o = (0, l.useRef)(null), [s, u] = (0, l.useState)(0), [b, j] = (0, l.useState)(false), {
-    trackUserProfileAction: x
-  } = (0, a.KZ)(), h = g(o, n, i, u);
-  if ((0, l.useEffect)(() => (h(), window.addEventListener("resize", h), () => {
-      window.removeEventListener("resize", h)
-    }), [h, null == n ? true : n.join("")]), null == n || 0 === n.length) return null;
-  let y = b ? n : n.slice(0, n.length - s);
+    trackUserProfileAction: y
+  } = (0, a.KZ)(), x = g(o, n, i, u);
+  if ((0, l.useEffect)(() => (x(), window.addEventListener("resize", x), () => {
+      window.removeEventListener("resize", x)
+    }), [x, null == n ? true : n.join("")]), null == n || 0 === n.length) return null;
+  let h = b ? n : n.slice(0, n.length - s);
   return (0, r.jsxs)("div", {
     className: d.tagListContainer,
-    children: [y.map(e => (0, r.jsx)(f, {
+    children: [h.map(e => (0, r.jsx)(f, {
       tag: e,
       ref: t => {
         null != t && i.current.set(e, t)
       }
     }, e)), s > 0 && (b ? (0, r.jsx)(m, {
       onClick: () => {
-        j(false), x({
+        j(false), y({
           action: "COLLAPSE_GAME_TAGS"
         })
       }
     }) : (0, r.jsx)(p, {
       numHidden: s,
       onClick: () => {
-        j(true), x({
+        j(true), y({
           action: "EXPAND_GAME_TAGS"
         })
       },

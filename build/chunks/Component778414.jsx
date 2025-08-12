@@ -1,8 +1,8 @@
 /** Chunk was on 11776 **/
 /** chunk id: 778414, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  C: () => y,
-  Z: () => x
+  C: () => h,
+  Z: () => y
 });
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
@@ -39,7 +39,7 @@ function j(e) {
   return e
 }
 
-function x(e) {
+function y(e) {
   var {
     widget: t
   } = e, n = function(e, t) {
@@ -79,7 +79,7 @@ function x(e) {
   }
 }
 
-function h(e) {
+function x(e) {
   let {
     user: t,
     guildId: n,
@@ -89,7 +89,7 @@ function h(e) {
     isGameFetching: u
   } = (0, c.Z)(o), f = (0, i.e7)([a.default], () => a.default.getId() === t.id);
   return 0 === d.length && f ? (0, r.jsx)(g.Z, {}) : (0, r.jsxs)(r.Fragment, {
-    children: [d.map(e => (0, r.jsx)(x, {
+    children: [d.map(e => (0, r.jsx)(y, {
       widget: e,
       user: t,
       guildId: n,
@@ -99,10 +99,10 @@ function h(e) {
   })
 }
 
-function y(e) {
+function h(e) {
   return (0, r.jsx)(o.Ttm, {
     className: b.scroller,
     fade: true,
-    children: (0, r.jsx)(h, j({}, e))
+    children: (0, r.jsx)(x, j({}, e))
   })
 }

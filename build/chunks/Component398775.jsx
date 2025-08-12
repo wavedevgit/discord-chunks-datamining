@@ -2,7 +2,7 @@
 /** chunk id: 398775, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Sz: () => O,
-  of: () => j
+  of: () => E
 }), require("./539854.js"), require("./388685.js"), require("./642613.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -23,7 +23,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk714421 = require("./714421.js");
-async function E(e) {
+async function j(e) {
   let {
     premiumSubscription: t,
     pauseDuration: n,
@@ -45,7 +45,7 @@ async function E(e) {
   }
 }
 
-function j(e) {
+function E(e) {
   let {
     premiumType: t,
     onClose: n,
@@ -125,29 +125,29 @@ function O(e) {
     analyticsLocation: d
   } = e, [m, b] = r.useState(false), {
     analyticsLocations: x
-  } = (0, _.ZP)(), [j, O] = r.useState(false), P = (0, p.ZP)(), N = null, v = null, I = [h.O0b.PAST_DUE, h.O0b.PAUSED].includes(t.status) ? t.currentPeriodStart : t.currentPeriodEnd, T = s()(I).add(o, "days").toDate();
+  } = (0, _.ZP)(), [E, O] = r.useState(false), P = (0, p.ZP)(), v = null, N = null, I = [h.O0b.PAST_DUE, h.O0b.PAUSED].includes(t.status) ? t.currentPeriodStart : t.currentPeriodEnd, T = s()(I).add(o, "days").toDate();
   switch (t.status) {
     case h.O0b.PAST_DUE:
-      v = g.intl.format(g.t["xaS18/"], {
+      N = g.intl.format(g.t["xaS18/"], {
         pauseDuration: o,
         resumeDate: T
       });
       break;
     case h.O0b.PAUSED:
-      v = g.intl.format(g.t.Vur3FR, {
+      N = g.intl.format(g.t.Vur3FR, {
         resumeDate: T
       });
       break;
     default:
-      v = g.intl.format(g.t.W85vFB, {
+      N = g.intl.format(g.t.W85vFB, {
         pauseDate: I,
         resumeDate: T,
         pauseDuration: o
       })
   }
-  return N = (0, i.jsx)("div", {
+  return v = (0, i.jsx)("div", {
     className: C.body,
-    children: v
+    children: N
   }), (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(y.Z, {
       premiumType: n,
@@ -167,7 +167,7 @@ function O(e) {
       children: [m ? (0, i.jsx)(u.kzN, {
         className: C.errorBlock,
         children: g.intl.string(g.t["5mlOCQ"])
-      }) : null, N]
+      }) : null, v]
     }), (0, i.jsx)(u.mzw, {
       justify: f.Z.Justify.START,
       children: (0, i.jsxs)("div", {
@@ -175,9 +175,9 @@ function O(e) {
         children: [(0, i.jsx)(u.zxk, {
           variant: "critical-primary",
           text: g.intl.string(g.t["cY+Ooa"]),
-          disabled: j || null == o,
+          disabled: E || null == o,
           onClick: async () => {
-            await E({
+            await j({
               premiumSubscription: t,
               pauseDuration: o,
               setIsCancelling: O,

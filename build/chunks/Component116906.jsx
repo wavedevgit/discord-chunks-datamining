@@ -42,38 +42,38 @@ function I(e) {
     location: "UserProfileModalActivity"
   }), {
     live: S,
-    recent: A,
-    stream: w
+    recent: w,
+    stream: A
   } = (0, f.Z)(t.id), {
     voiceChannel: C,
     voiceActivity: L
   } = (0, p.Z)({
     userId: t.id,
     guildId: P
-  }), R = (0, l.e7)([a.Z], () => a.Z.isFetchingUserOutbox(t.id)), D = t.id === n.id, M = (0, l.e7)([s.Z, c.Z], () => {
-    let e = D ? s.Z.getStatus() : c.Z.getStatus(t.id);
+  }), D = (0, l.e7)([a.Z], () => a.Z.isFetchingUserOutbox(t.id)), R = t.id === n.id, k = (0, l.e7)([s.Z, c.Z], () => {
+    let e = R ? s.Z.getStatus() : c.Z.getStatus(t.id);
     return e === i.Skl.OFFLINE || e === i.Skl.INVISIBLE
-  }), k = S.length > 0 || null != w, G = T && null == w && null == L && null != C, B = !M && (k || G), U = A.length > 0;
-  return B || U || !R ? (0, r.jsxs)(i.zJl, {
-    className: O.scroller,
+  }), M = S.length > 0 || null != A, G = T && null == A && null == L && null != C, B = !k && (M || G), U = w.length > 0;
+  return B || U || !D ? (0, r.jsxs)(i.zJl, {
+    className: v.scroller,
     fade: true,
     children: [B ? (0, r.jsx)(m.Z, {
-      "aria-label": v.intl.string(v.t.J6STd3),
+      "aria-label": O.intl.string(O.t.J6STd3),
       children: (0, r.jsxs)("ul", {
-        className: O.activityList,
+        className: v.activityList,
         children: [!N && G && (0, r.jsx)("li", {
-          children: (0, r.jsx)(x.Z, {
+          children: (0, r.jsx)(y.Z, {
             user: t,
             currentUser: n,
             voiceChannel: C,
             onClose: Z
           })
-        }), null != w && (0, r.jsx)("li", {
+        }), null != A && (0, r.jsx)("li", {
           children: (0, r.jsx)(j.Z, {
             location: "UserProfileModalActivity",
             user: t,
             currentUser: n,
-            stream: w,
+            stream: A,
             onClose: Z,
             profileGuildId: null == I ? true : I.guildId
           })
@@ -88,17 +88,17 @@ function I(e) {
         }, "live-".concat(l)))]
       })
     }) : null, U ? (0, r.jsx)(m.Z, {
-      heading: v.intl.string(v.t.M0zgnZ),
-      introText: D ? v.intl.format(v.t["4bk9Ag"], {
+      heading: O.intl.string(O.t.M0zgnZ),
+      introText: R ? O.intl.format(O.t["4bk9Ag"], {
         learnMoreHook: (e, t) => (0, r.jsx)(i.eee, {
-          href: d.Z.getArticleURL(y.BhN.ACTIVITY_STATUS_SETTINGS),
+          href: d.Z.getArticleURL(h.BhN.ACTIVITY_STATUS_SETTINGS),
           children: e
         }, t)
       }) : true,
-      scrollIntoView: E === h.Tb.RECENT_ACTIVITY,
+      scrollIntoView: E === x.Tb.RECENT_ACTIVITY,
       children: (0, r.jsx)("ul", {
-        className: O.activityList,
-        children: A.map(e => (0, r.jsx)("li", {
+        className: v.activityList,
+        children: w.map(e => (0, r.jsx)("li", {
           children: (0, r.jsx)(b.Z, {
             location: "UserProfileModalActivity",
             user: t,

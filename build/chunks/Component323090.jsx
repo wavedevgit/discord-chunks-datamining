@@ -1,7 +1,7 @@
 /** Chunk was on 11776 **/
 /** chunk id: 323090, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => x
 });
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
@@ -21,14 +21,14 @@ var Chunk442837 = require("./442837.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk349966 = require("./349966.js");
 
-function h(e) {
+function x(e) {
   let {
     user: t,
     currentUser: n,
-    displayProfile: h,
-    guildId: y,
-    subsection: v,
-    onClose: O
+    displayProfile: x,
+    guildId: h,
+    subsection: O,
+    onClose: v
   } = e, {
     trackUserProfileAction: _
   } = (0, s.KZ)(), I = (0, l.e7)([d.Z], () => {
@@ -37,35 +37,35 @@ function h(e) {
   }), P = (0, l.e7)([a.Z, c.Z], () => a.Z.getChannel(c.Z.getChannelId()));
   return (0, r.jsxs)(i.zJl, {
     fade: true,
-    className: x.scroller,
-    children: [(null == h ? true : h.bio) != null && (null == h ? true : h.bio) !== "" && (0, r.jsx)(f.Z, {
-      userBio: h.bio,
+    className: y.scroller,
+    children: [(null == x ? true : x.bio) != null && (null == x ? true : x.bio) !== "" && (0, r.jsx)(f.Z, {
+      userBio: x.bio,
       setLineClamp: false
     }), (null == I ? true : I.popularApplicationCommandIds) != null && null != P && (0, r.jsx)(u.Z, {
       applicationId: I.id,
       commandIds: I.popularApplicationCommandIds,
       channel: P,
-      guildId: y,
-      onClick: O
-    }), (null == h ? true : h.guildId) != null && (0, r.jsx)(g.Z, {
+      guildId: h,
+      onClick: v
+    }), (null == x ? true : x.guildId) != null && (0, r.jsx)(g.Z, {
       user: t,
       currentUser: n,
-      guildId: h.guildId,
-      scrollIntoView: v === b.Tb.ROLES
+      guildId: x.guildId,
+      scrollIntoView: O === b.Tb.ROLES
     }), (0, r.jsx)(m.Z, {
       heading: j.intl.string(j.t["A//N4u"]),
       children: (0, r.jsx)(p.Z, {
         userId: t.id,
-        guildId: y,
+        guildId: h,
         tooltipDelay: b.vB
       })
     }), (0, r.jsx)(m.Z, {
       heading: j.intl.string(j.t["mQKv+v"]),
-      scrollIntoView: v === b.Tb.NOTE,
+      scrollIntoView: O === b.Tb.NOTE,
       children: (0, r.jsx)(o.Z, {
         userId: t.id,
-        className: x.note,
-        autoFocus: v === b.Tb.NOTE,
+        className: y.note,
+        autoFocus: O === b.Tb.NOTE,
         onUpdate: () => _({
           action: "SET_NOTE"
         })

@@ -25,15 +25,15 @@ function g(e) {
   } = e, {
     mutualFriends: j
   } = (0, s.Z)(t), {
-    analyticsLocations: x
+    analyticsLocations: y
   } = (0, a.ZP)(), {
-    context: h,
-    trackUserProfileAction: y
-  } = (0, c.KZ)(), v = (0, o.Z)();
+    context: x,
+    trackUserProfileAction: h
+  } = (0, c.KZ)(), O = (0, o.Z)();
   l.useEffect(() => {
-    (0, d.Z)(t.id, v)
-  }, [t.id, v]);
-  let O = e => {
+    (0, d.Z)(t.id, O)
+  }, [t.id, O]);
+  let v = e => {
     var t, n;
     (0, u.openUserProfileModal)((t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -52,9 +52,9 @@ function g(e) {
         })
       }
       return e
-    }({}, h), n = n = {
+    }({}, x), n = n = {
       userId: e,
-      sourceAnalyticsLocations: x
+      sourceAnalyticsLocations: y
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
@@ -92,9 +92,9 @@ function g(e) {
         guildId: n,
         channelId: g,
         onSelect: () => {
-          null == b || b(), y({
+          null == b || b(), h({
             action: "PRESS_MUTUAL_FRIEND"
-          }), O(l.id)
+          }), v(l.id)
         }
       }, t)
     })

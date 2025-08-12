@@ -59,13 +59,13 @@ function m(e) {
     items: g,
     initialSection: b,
     initialSubsection: j,
-    onClose: x
+    onClose: y
   } = e, {
-    trackUserProfileAction: h
+    trackUserProfileAction: x
   } = (0, o.KZ)(), [{
-    section: y,
-    subsection: v,
-    text: O
+    section: h,
+    subsection: O,
+    text: v
   }, _] = l.useState((n = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
@@ -110,9 +110,9 @@ function m(e) {
       children: (0, r.jsx)(i.njP, {
         type: "top",
         look: "custom",
-        selectedItem: y,
+        selectedItem: h,
         onItemSelect: e => {
-          h({
+          x({
             action: "PRESS_SECTION",
             section: e
           }), _(t => {
@@ -128,8 +128,8 @@ function m(e) {
         }, e.section))
       })
     }), (0, r.jsx)(i.njP.Panel, {
-      id: y,
-      "aria-label": O,
+      id: h,
+      "aria-label": v,
       className: f.tabBarPanel,
       children: (0, r.jsx)(p, {
         user: c,
@@ -137,9 +137,9 @@ function m(e) {
         displayProfile: d,
         guildId: u,
         channelId: m,
-        section: y,
-        subsection: v,
-        onClose: x
+        section: h,
+        subsection: O,
+        onClose: y
       })
     })]
   })

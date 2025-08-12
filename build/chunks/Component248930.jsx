@@ -1,7 +1,7 @@
 /** Chunk was on 11776 **/
 /** chunk id: 248930, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => y
+  Z: () => h
 });
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -21,14 +21,14 @@ var Chunk255367 = require("./255367.js"),
   Chunk228168 = require("./228168.js"),
   Chunk227832 = require("./227832.js");
 
-function y(e) {
+function h(e) {
   let {
     user: t,
     entry: n,
     profileGuildId: i,
-    className: y,
-    onClose: v,
-    hideContextMenu: O = false
+    className: h,
+    onClose: O,
+    hideContextMenu: v = false
   } = e, _ = l.useRef(null), {
     analyticsLocations: I
   } = (0, c.ZP)(a.Z.USER_PROFILE_RECENT_ACTIVITY_CARD), {
@@ -46,7 +46,7 @@ function y(e) {
     value: I,
     children: (0, r.jsx)(g.Z, {
       targetElementRef: _,
-      sourceType: x.n_.ACTIVITY,
+      sourceType: y.n_.ACTIVITY,
       user: t,
       children: (0, r.jsx)(f.Z, {
         user: t,
@@ -55,30 +55,30 @@ function y(e) {
         sourceId: n.id,
         entry: n,
         onAction: T,
-        sourceType: x.n_.ACTIVITY,
+        sourceType: y.n_.ACTIVITY,
         children: () => (0, r.jsx)(p.Z, {
           ref: _,
           user: t,
-          className: h.toolbarContainer,
+          className: x.toolbarContainer,
           interactionSourceId: n.id,
-          sourceType: x.n_.ACTIVITY,
+          sourceType: y.n_.ACTIVITY,
           onAction: T,
           onShowToolbar: () => T({
             action: "HOVER_ACTIVITY_CARD"
           }),
-          renderMoreButtonPopout: O ? true : e => (0, r.jsx)(j.Z, {
+          renderMoreButtonPopout: v ? true : e => (0, r.jsx)(j.Z, {
             display: "recent",
             entry: n,
             user: t,
-            onClose: v,
+            onClose: O,
             children: e
           }),
           children: (0, r.jsx)(b.Z, {
             entry: n,
             user: t,
-            onClose: v,
-            className: o()(y, {
-              [h.hoisted]: E === x.n_.ACTIVITY && Z === n.id
+            onClose: O,
+            className: o()(h, {
+              [x.hoisted]: E === y.n_.ACTIVITY && Z === n.id
             })
           })
         })

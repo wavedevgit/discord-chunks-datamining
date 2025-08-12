@@ -54,67 +54,67 @@ function I(e) {
     openedAt: T,
     onHide: N,
     sourceAnalyticsLocations: S = []
-  } = e, A = n === y.ME ? true : n, w = (0, l.e7)([d.Z], () => d.Z.isBlocked(t.id)), {
+  } = e, w = n === h.ME ? true : n, A = (0, l.e7)([d.Z], () => d.Z.isBlocked(t.id)), {
     analyticsLocations: C
-  } = (0, c.ZP)([...S, w ? a.Z.BLOCKED_PROFILE_MODAL : a.Z.IGNORED_PROFILE_MODAL]), L = (0, f.ZB)({
+  } = (0, c.ZP)([...S, A ? a.Z.BLOCKED_PROFILE_MODAL : a.Z.IGNORED_PROFILE_MODAL]), L = (0, f.ZB)({
     layout: "MODAL_V2",
     userId: t.id,
     showGuildProfile: true,
-    guildId: A,
+    guildId: w,
     channelId: I,
     messageId: P,
     roleId: E
-  }), R = [{
+  }), D = [{
     icon: o.owK,
-    description: v.intl.string(v.t.kcuWvb)
+    description: O.intl.string(O.t.kcuWvb)
   }, {
     icon: o.owK,
-    description: v.intl.string(w ? v.t.QxrDY2 : v.t.W6fjkZ)
-  }], D = (0, m.ZP)(t.id, A), M = u.ZP.getName(null == D ? true : D.guildId, I, t), k = v.intl.formatToPlainString(v.t.KRe1Fh, {
-    name: M
+    description: O.intl.string(A ? O.t.QxrDY2 : O.t.W6fjkZ)
+  }], R = (0, m.ZP)(t.id, w), k = u.ZP.getName(null == R ? true : R.guildId, I, t), M = O.intl.formatToPlainString(O.t.KRe1Fh, {
+    name: k
   });
   return (0, r.jsx)(c.Gt, {
     value: C,
     children: (0, r.jsx)(f.Mt, {
       value: L,
       openedAt: T,
-      fetchStartedAt: null == D ? true : D.fetchStartedAt,
-      fetchEndedAt: null == D ? true : D.fetchEndedAt,
-      isLoaded: null == D ? true : D.isLoaded,
+      fetchStartedAt: null == R ? true : R.fetchStartedAt,
+      fetchEndedAt: null == R ? true : R.fetchEndedAt,
+      isLoaded: null == R ? true : R.isLoaded,
       children: (0, r.jsx)(o.Y0X, {
         "data-migration-pending": true,
         transitionState: Z,
-        className: O.root,
-        "aria-label": k,
+        className: v.root,
+        "aria-label": M,
         parentComponent: "RestrictedUserProfileModalV2",
         children: (0, r.jsxs)(b.Z, {
           user: t,
-          displayProfile: D,
-          themeType: h.lY.MODAL_V2,
+          displayProfile: R,
+          themeType: x.lY.MODAL_V2,
           children: [(0, r.jsx)("div", {
-            className: O.background
+            className: v.background
           }), (0, r.jsxs)("div", {
-            className: O.content,
+            className: v.content,
             children: [(0, r.jsx)(g.Z, {
               user: t,
-              guildId: A,
+              guildId: w,
               iconColor: o.TVs.colors.TEXT_DEFAULT
             }), (0, r.jsxs)("div", {
-              className: O.textContainer,
+              className: v.textContainer,
               children: [(0, r.jsx)(o.X6q, {
                 variant: "heading-xl/bold",
                 color: "text-default",
-                children: v.intl.string(v.t.b33pLC)
+                children: O.intl.string(O.t.b33pLC)
               }), (0, r.jsx)(o.Text, {
                 variant: "text-md/medium",
                 color: "text-default",
-                children: v.intl.format(w ? v.t.T7QiLi : v.t.MnEow8, {
-                  username: M
+                children: O.intl.format(A ? O.t.T7QiLi : O.t.MnEow8, {
+                  username: k
                 })
               })]
             }), (0, r.jsx)("div", {
-              className: O.safetyTable,
-              children: R.map((e, t) => {
+              className: v.safetyTable,
+              children: D.map((e, t) => {
                 let {
                   icon: n,
                   description: l
@@ -128,12 +128,12 @@ function I(e) {
               })
             }), (0, r.jsxs)(o.Kqy, {
               align: "center",
-              children: [(0, r.jsx)(x.Z, {
+              children: [(0, r.jsx)(y.Z, {
                 size: i.Ph.MEDIUM,
-                isBlocked: w,
+                isBlocked: A,
                 onClick: () => {
                   N(), (0, p.pQ)(_({
-                    action: w ? "VIEW_BLOCKED_PROFILE" : "VIEW_IGNORED_PROFILE",
+                    action: A ? "VIEW_BLOCKED_PROFILE" : "VIEW_IGNORED_PROFILE",
                     analyticsLocations: C
                   }, L))
                 }
